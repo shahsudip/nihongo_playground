@@ -49,6 +49,9 @@ const ResultsPage = () => {
               Start {nextDifficulty} &rarr;
             </button>
           )}
+          <Link to="/profile" className="action-button profile">
+            View Full History
+          </Link>
 
           <Link to="/" className="action-button home">
             Back to Home

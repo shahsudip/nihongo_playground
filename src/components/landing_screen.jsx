@@ -13,6 +13,9 @@ const LandingPage = () => {
           <Link to="/levels" className="start-quiz-button-new">
             Nihongo Playground (Start Quiz!)
           </Link>
+            <Link to="/profile" className="profile-button-home">
+              View Profile
+            </Link>
         </header>
       </div>
     </div>
