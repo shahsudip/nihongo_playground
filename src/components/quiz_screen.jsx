@@ -6,10 +6,6 @@ import { useSrsQuiz } from '../logic/quiz_logic_hook.jsx';
 
 
 
-import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { quizData } from '../data/quizData.js';
-import { useSrsQuiz } from '../hooks/useSrsQuiz.js';
 
 // --- Sub-Component: ScoreCounter ---
 const ScoreCounter = ({ correct, incorrect, mastered, total }) => (

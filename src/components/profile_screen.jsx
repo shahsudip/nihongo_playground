@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './ProfilePage.css'; // We'll add styles for this
 
 const ProfilePage = () => {
   const [history, setHistory] = useState([]);
