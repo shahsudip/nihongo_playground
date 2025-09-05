@@ -6,9 +6,12 @@ import { useSrsQuiz } from '../logic/quiz_logic_hook.jsx';
 
 
 
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { quizData } from '../data/quizData.js';
+import { useSrsQuiz } from '../hooks/useSrsQuiz.js';
 
-
-// --- ScoreCounter Sub-Component ---
+// --- Sub-Component: ScoreCounter ---
 const ScoreCounter = ({ correct, incorrect, mastered, total }) => (
   <div className="score-counter-container">
     <div className="score-item correct">Correct: <span>{correct}</span></div>
@@ -17,7 +20,7 @@ const ScoreCounter = ({ correct, incorrect, mastered, total }) => (
   </div>
 );
 
-// --- Completion Modal Sub-Component ---
+// --- Sub-Component: Final Completion Modal ---
 const CompletionModal = ({ score, total, onContinue }) => (
   <div className="modal-overlay">
     <div className="modal-content">
@@ -31,23 +34,58 @@ const CompletionModal = ({ score, total, onContinue }) => (
   </div>
 );
 
-// --- Quiz Sub-Component ---
-const Quiz = ({ quizContent, quizTitle, quizType, onComplete }) => {
-  const {
-    currentCard,
-    currentOptions,
-    masteredCount,
-    totalCorrect,
-    totalIncorrect,
-    deckSize,
-    handleAnswer,
-    isComplete,
-    isLoading,
-  } = useSrsQuiz(quizContent, quizType);
+// --- Sub-Component: First Pass Modal ---
+const FirstPassModal = ({ onContinueReview, onEndTest }) => (
+  <div className="modal-overlay">
+    <div className="modal-content">
+      <h2>First Round Complete!</h2>
+      <p className="modal-description">
+        You've seen every question once. Continue to the review round to master the words, or end the test now.
+      </p>
+      <div className="modal-actions">
+        <button onClick={onEndTest} className="action-button home">
+          End Test
+        </button>
+        <button onClick={onContinueReview} className="action-button next-level">
+          Continue Review
+        </button>
+      </div>
+    </div>
+  </div>
+);
+
+// --- Sub-Component: The Quiz View ---
+const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onLogicUpdate }) => {
+  const navigate = useNavigate();
+  const [showFirstPassModal, setShowFirstPassModal] = useState(false);
+
+  const quizState = useSrsQuiz(quizContent, quizType);
+  const { currentCard, currentOptions, handleAnswer, acknowledgeFirstPass, ...restOfState } = quizState;
 
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
+  
+  useEffect(() => {
+    if (restOfState.isFirstPassComplete && !restOfState.hasAcknowledgedFirstPass) {
+      setShowFirstPassModal(true);
+    }
+    if (restOfState.isComplete) {
+      setTimeout(() => {
+        onComplete(restOfState.totalCorrect, restOfState.totalCorrect + restOfState.totalIncorrect);
+      }, 500);
+    }
+  }, [restOfState, onComplete]);
 
+  const handleContinueReview = () => {
+    setShowFirstPassModal(false);
+    acknowledgeFirstPass();
+  };
+
+  const handleEndTest = () => {
+    setShowFirstPassModal(false);
+    navigate('/');
+  };
+  
   const handleOptionClick = (option) => {
     if (isAnswered) return;
     setSelectedOption(option);
@@ -59,45 +97,35 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete }) => {
       setSelectedOption(null);
     }, 1000);
   };
-  
-  useEffect(() => {
-    if (isComplete) {
-      setTimeout(() => {
-        onComplete(totalCorrect, totalCorrect + totalIncorrect);
-      }, 500);
-    }
-  }, [isComplete, onComplete, totalCorrect, totalIncorrect]);
 
-  if (isLoading) return <div className="loading-text">Loading Quiz...</div>;
-  if (isComplete || !currentCard) return <div className="loading-text">Quiz Complete! Navigating...</div>;
+  if (restOfState.isLoading) return <div className="loading-text">Loading Quiz...</div>;
+  if (restOfState.isComplete || !currentCard) return <div className="loading-text">Quiz Complete! Navigating...</div>;
 
   return (
-    <div className="quiz-card">
-      <h1 className="quiz-title">{quizTitle}</h1>
-      <ScoreCounter 
-        correct={totalCorrect} 
-        incorrect={totalIncorrect} 
-        mastered={masteredCount}
-        total={deckSize}
-      />
-      <h2 className="question-text">{currentCard.questionText}</h2>
-      <div className="options-grid">
-        {currentOptions.map((option, index) => {
-          const isCorrectAnswer = option === currentCard.answer;
-          const isSelected = selectedOption === option;
-          let buttonClass = 'option-button';
-          if (isAnswered) {
-            if (isCorrectAnswer) buttonClass += ' correct';
-            else if (isSelected) buttonClass += ' incorrect';
-          }
-          return (
-            <button key={index} onClick={() => handleOptionClick(option)} className={buttonClass} disabled={isAnswered}>
-              {option}
-            </button>
-          );
-        })}
+    <>
+      <div className="quiz-card">
+        <h1 className="quiz-title">{quizTitle}</h1>
+        <ScoreCounter {...restOfState} />
+        <h2 className="question-text">{currentCard.questionText}</h2>
+        <div className="options-grid">
+          {currentOptions.map((option, index) => {
+            const isCorrectAnswer = option === currentCard.answer;
+            const isSelected = selectedOption === option;
+            let buttonClass = 'option-button';
+            if (isAnswered) {
+              if (isCorrectAnswer) buttonClass += ' correct';
+              else if (isSelected) buttonClass += ' incorrect';
+            }
+            return (
+              <button key={index} onClick={() => handleOptionClick(option)} className={buttonClass} disabled={isAnswered}>
+                {option}
+              </button>
+            );
+          })}
+        </div>
       </div>
-    </div>
+      {showFirstPassModal && <FirstPassModal onContinueReview={handleContinueReview} onEndTest={handleEndTest} />}
+    </>
   );
 };
 
@@ -121,20 +149,43 @@ const QuizPage = () => {
   
   const onQuizComplete = (finalScoreValue, totalAttempts) => {
     const storageKey = `quiz-progress-${level}-${category}`;
-    setFinalScore({ score: finalScoreValue, total: totalAttempts });
+    
     if (selectedDifficulty === 'easy' && unlockedDifficulty === 'easy') {
       localStorage.setItem(storageKey, 'medium');
     } else if (selectedDifficulty === 'medium' && unlockedDifficulty === 'medium') {
       localStorage.setItem(storageKey, 'hard');
     }
+    
+    const newResult = {
+      id: Date.now(),
+      level,
+      category,
+      difficulty: selectedDifficulty,
+      score: finalScoreValue,
+      total: totalAttempts,
+      timestamp: new Date().toISOString(),
+    };
+    
+    const history = JSON.parse(localStorage.getItem('quizHistory')) || [];
+    history.push(newResult);
+    localStorage.setItem('quizHistory', JSON.stringify(history));
+
+    setFinalScore({ score: finalScoreValue, total: totalAttempts });
     setShowCompletionModal(true);
   };
   
   const handleModalContinue = () => {
+    const stateToProps = {
+        score: finalScore.score,
+        total: finalScore.total,
+        level,
+        category,
+        completedDifficulty: selectedDifficulty,
+    };
     setShowCompletionModal(false);
-    navigate('/results', { state: { ...finalScore, level, category, completedDifficulty: selectedDifficulty } });
+    navigate('/results', { state: stateToProps });
   };
-
+  
   const renderDifficultySelection = () => {
     const categoryData = quizData[level]?.[category];
     if (!categoryData) {
