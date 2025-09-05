@@ -11,6 +11,8 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "homepage": "https://shahsudip.github.io/nihongo_playground.github.io/",
+
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
