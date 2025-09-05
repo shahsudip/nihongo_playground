@@ -270,6 +270,39 @@ body {
     color: #e2e8f0;
     margin-bottom: 40px;
 }
+
+/* Styles for the new Score Counter */
+.score-counter-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #4a5568;
+  font-size: 1rem;
+}
+
+.score-item {
+  color: #a0aec0;
+}
+
+.score-item span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 8px;
+}
+
+.score-item.correct span {
+  color: #48bb78; /* Green */
+}
+
+.score-item.incorrect span {
+  color: #f56565; /* Red */
+}
+
+.score-item.mastered span {
+  color: #4299e1; /* Blue */
+}
 .options-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
