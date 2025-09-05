@@ -6,7 +6,9 @@ import { useSrsQuiz } from '../logic/quiz_logic_hook.jsx';
 
 
 
-// --- スコアカウンター コンポーネント ---
+
+
+// --- ScoreCounter Sub-Component ---
 const ScoreCounter = ({ correct, incorrect, mastered, total }) => (
   <div className="score-counter-container">
     <div className="score-item correct">Correct: <span>{correct}</span></div>
@@ -15,7 +17,21 @@ const ScoreCounter = ({ correct, incorrect, mastered, total }) => (
   </div>
 );
 
-// --- クイズ本体のコンポーネント ---
+// --- Completion Modal Sub-Component ---
+const CompletionModal = ({ score, total, onContinue }) => (
+  <div className="modal-overlay">
+    <div className="modal-content">
+      <h2>Quiz Complete!</h2>
+      <p className="modal-score-text">Your Final Score:</p>
+      <div className="modal-score-display">{score} / {total}</div>
+      <button onClick={onContinue} className="action-button next-level">
+        See Full Results &rarr;
+      </button>
+    </div>
+  </div>
+);
+
+// --- Quiz Sub-Component ---
 const Quiz = ({ quizContent, quizTitle, quizType, onComplete }) => {
   const {
     currentCard,
@@ -26,11 +42,11 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete }) => {
     deckSize,
     handleAnswer,
     isComplete,
+    isLoading,
   } = useSrsQuiz(quizContent, quizType);
 
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
-  const navigate = useNavigate();
 
   const handleOptionClick = (option) => {
     if (isAnswered) return;
@@ -46,13 +62,14 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete }) => {
   
   useEffect(() => {
     if (isComplete) {
-      onComplete(totalCorrect, totalCorrect + totalIncorrect);
+      setTimeout(() => {
+        onComplete(totalCorrect, totalCorrect + totalIncorrect);
+      }, 500);
     }
   }, [isComplete, onComplete, totalCorrect, totalIncorrect]);
 
-  if (!currentCard && !isComplete) {
-    return <div className="loading-text">Loading Quiz...</div>;
-  }
+  if (isLoading) return <div className="loading-text">Loading Quiz...</div>;
+  if (isComplete || !currentCard) return <div className="loading-text">Quiz Complete! Navigating...</div>;
 
   return (
     <div className="quiz-card">
@@ -84,13 +101,14 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete }) => {
   );
 };
 
-// --- メインページコンポーネント (難易度選択を処理) ---
+// --- Main Page Component ---
 const QuizPage = () => {
   const { level, category } = useParams();
   const navigate = useNavigate();
-
   const [selectedDifficulty, setSelectedDifficulty] = useState(null);
   const [unlockedDifficulty, setUnlockedDifficulty] = useState('easy');
+  const [showCompletionModal, setShowCompletionModal] = useState(false);
+  const [finalScore, setFinalScore] = useState({ score: 0, total: 0 });
   
   const difficulties = ['easy', 'medium', 'hard'];
   const difficultyMap = { easy: 1, medium: 2, hard: 3 };
@@ -98,19 +116,23 @@ const QuizPage = () => {
   useEffect(() => {
     const storageKey = `quiz-progress-${level}-${category}`;
     const savedProgress = localStorage.getItem(storageKey);
-    if (savedProgress) {
-      setUnlockedDifficulty(savedProgress);
-    }
+    if (savedProgress) setUnlockedDifficulty(savedProgress);
   }, [level, category]);
   
-  const onQuizComplete = (finalScore, totalAttempts) => {
+  const onQuizComplete = (finalScoreValue, totalAttempts) => {
     const storageKey = `quiz-progress-${level}-${category}`;
+    setFinalScore({ score: finalScoreValue, total: totalAttempts });
     if (selectedDifficulty === 'easy' && unlockedDifficulty === 'easy') {
       localStorage.setItem(storageKey, 'medium');
     } else if (selectedDifficulty === 'medium' && unlockedDifficulty === 'medium') {
       localStorage.setItem(storageKey, 'hard');
     }
-    navigate('/results', { state: { score: finalScore, total: totalAttempts } });
+    setShowCompletionModal(true);
+  };
+  
+  const handleModalContinue = () => {
+    setShowCompletionModal(false);
+    navigate('/results', { state: { ...finalScore, level, category, completedDifficulty: selectedDifficulty } });
   };
 
   const renderDifficultySelection = () => {
@@ -119,15 +141,11 @@ const QuizPage = () => {
         return (
              <div className="quiz-card">
                 <h1>Content for "{category}" not found!</h1>
-                <button onClick={() => navigate('/levels')} className="back-to-levels-button">
-                    &larr; Back to Categories
-                </button>
+                <button onClick={() => navigate('/levels')} className="back-to-levels-button">&larr; Back to Categories</button>
             </div>
-        )
+        );
     }
-
     const unlockedLevelNum = difficultyMap[unlockedDifficulty];
-
     return (
       <div className="difficulty-selection-container">
         <h1 className="difficulty-title">{level.toUpperCase()} - {category.charAt(0).toUpperCase() + category.slice(1)}</h1>
@@ -136,24 +154,15 @@ const QuizPage = () => {
             const currentLevelNum = difficultyMap[difficulty];
             const isLocked = currentLevelNum > unlockedLevelNum;
             const hasContent = categoryData[difficulty]?.quiz_content?.length > 0;
-
             return (
-              <button
-                key={difficulty}
-                className={`difficulty-button ${isLocked || !hasContent ? 'locked' : ''}`}
-                disabled={isLocked || !hasContent}
-                onClick={() => setSelectedDifficulty(difficulty)}
-                title={!hasContent ? "No questions for this difficulty yet" : ""}
-              >
+              <button key={difficulty} className={`difficulty-button ${isLocked || !hasContent ? 'locked' : ''}`} disabled={isLocked || !hasContent} onClick={() => setSelectedDifficulty(difficulty)} title={!hasContent ? "No questions for this difficulty yet" : ""}>
                 {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}
                 {(isLocked || !hasContent) && <span className="lock-icon">?</span>}
               </button>
             );
           })}
         </div>
-        <button onClick={() => navigate('/levels')} className="back-to-levels-button">
-          &larr; Back to Categories
-        </button>
+        <button onClick={() => navigate('/levels')} className="back-to-levels-button">&larr; Back to Categories</button>
       </div>
     );
   };
@@ -167,6 +176,7 @@ const QuizPage = () => {
   return (
     <div className="quiz-container">
       {!selectedDifficulty ? renderDifficultySelection() : renderQuiz()}
+      {showCompletionModal && <CompletionModal score={finalScore.score} total={finalScore.total} onContinue={handleModalContinue} />}
     </div>
   );
 };

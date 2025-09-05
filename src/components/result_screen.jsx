@@ -1,27 +1,64 @@
 import React from 'react';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation, Link, useNavigate } from 'react-router-dom';
 
 const ResultsPage = () => {
   const location = useLocation();
-  const { score, total } = location.state || { score: 0, total: 0 }; // Default values if state is not passed
+  const navigate = useNavigate();
+  const { 
+    score = 0, 
+    total = 0,
+    level,
+    category,
+    completedDifficulty,
+  } = location.state || {};
 
   const percentage = total > 0 ? ((score / total) * 100).toFixed(0) : 0;
+  
+  // Logic to determine the next difficulty
+  let nextDifficulty = null;
+  if (completedDifficulty === 'easy') nextDifficulty = 'medium';
+  if (completedDifficulty === 'medium') nextDifficulty = 'hard';
+
+  // Check if the next difficulty level actually has content
+  const nextLevelHasContent = nextDifficulty && quizData[level]?.[category]?.[nextDifficulty]?.quiz_content?.length > 0;
+
 
   return (
     <div className="results-container">
       <div className="results-card">
-        <h1 className="results-title">Quiz Complete!</h1>
-        <p className="score-text">Your Score</p>
-        <p className="score-display">{score} / {total}</p>
+        <h1 className="results-title">Quiz Results</h1>
+        <p className="score-text">{level.toUpperCase()} - {category} ({completedDifficulty})</p>
         <div className="percentage-circle">
-          <span>{percentage}%</span>
+          <span>{score} / {total}</span>
         </div>
-        <Link to="/" className="home-button">
-          Back to Home
-        </Link>
+        <p className="percentage-text">{percentage}% Correct</p>
+
+        <div className="results-actions">
+          <button 
+            onClick={() => navigate(`/quiz/${level}/${category}`)} 
+            className="action-button restart"
+          >
+            Play Again
+          </button>
+          
+          {nextLevelHasContent && (
+             <button 
+              onClick={() => navigate(`/quiz/${level}/${category}`)} 
+              className="action-button next-level"
+            >
+              Start {nextDifficulty} &rarr;
+            </button>
+          )}
+
+          <Link to="/" className="action-button home">
+            Back to Home
+          </Link>
+        </div>
       </div>
     </div>
   );
 };
+
+
 
 export default ResultsPage;
