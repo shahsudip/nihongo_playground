@@ -3,6 +3,8 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://shahsudip.github.io/nihongo_playground.github.io/",
+
   "scripts": {
     "predeploy": "npm run build ",
     "deploy": "gh-pages -d dist",
