@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocation, Link, useNavigate } from 'react-router-dom';
+import { quizData } from '../data/quizData.js'; // <-- 1. IMPORT the real quiz data
 
 const ResultsPage = () => {
   const location = useLocation();
@@ -22,12 +23,11 @@ const ResultsPage = () => {
   // Check if the next difficulty level actually has content
   const nextLevelHasContent = nextDifficulty && quizData[level]?.[category]?.[nextDifficulty]?.quiz_content?.length > 0;
 
-
   return (
     <div className="results-container">
       <div className="results-card">
         <h1 className="results-title">Quiz Results</h1>
-        <p className="score-text">{level.toUpperCase()} - {category} ({completedDifficulty})</p>
+        <p className="score-text">{level?.toUpperCase()} - {category} ({completedDifficulty})</p>
         <div className="percentage-circle">
           <span>{score} / {total}</span>
         </div>
@@ -49,10 +49,11 @@ const ResultsPage = () => {
               Start {nextDifficulty} &rarr;
             </button>
           )}
+
           <Link to="/profile" className="action-button profile">
             View Full History
           </Link>
-
+          
           <Link to="/" className="action-button home">
             Back to Home
           </Link>
@@ -62,6 +63,6 @@ const ResultsPage = () => {
   );
 };
 
-
+// 2. The dummy quizData object that was here has been REMOVED.
 
 export default ResultsPage;

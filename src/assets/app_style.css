@@ -378,25 +378,3 @@ body {
   font-size: 2rem;
  }
 }
-
-/* --- RESPONSIVE OVERRIDE for Score Counter --- */
-/* This media query targets small mobile screens */
-@media (max-width: 480px) {
-  .score-counter-container {
-    /* Adjust spacing for a tighter fit */
-    padding-bottom: 10px;
-    gap: 10px; /* Reduce the space between items */
-    justify-content: center; /* Center the items */
-  }
-
-  .score-item {
-    /* Decrease the font size of the labels */
-    font-size: 0.8rem;
-  }
-
-  .score-item span {
-    /* Decrease the font size of the numbers */
-    font-size: 1rem;
-    margin-left: 4px; /* Reduce space next to the number */
-  }
-}
