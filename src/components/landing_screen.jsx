@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo_transparent.png'; // The logo is imported here
+import logo from '../assets/unnamed.png'; // The logo is imported here
 
 const LandingPage = () => {
   useEffect(() => {
