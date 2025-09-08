@@ -147,5 +147,6 @@ export const useSrsQuiz = (vocabularyList, quizType = 'kanji') => {
     hasAcknowledgedFirstPass,
     acknowledgeFirstPass,
     firstPassStats,
+    unseenCount: unseenQueue.length,
   };
 };
