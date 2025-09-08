@@ -6,8 +6,13 @@ const LevelSelectionPage = () => {
   const [selectedLevel, setSelectedLevel] = useState(null);
   const navigate = useNavigate(); // Use navigate for the back button
 
-  const levels = ['n5', 'n4', 'n3', 'n2', 'n1'];
-  const categories = ['vocabulary', 'kanji', 'grammar', 'reading'];
+  const levels = [
+    { name: 'n5', title: 'Beginner', description: 'Start with the basics of Japanese grammar and vocabulary.' },
+    { name: 'n4', title: 'Elementary', description: 'Build upon your foundational knowledge of the language.' },
+    { name: 'n3', title: 'Intermediate', description: 'Bridge the gap to conversational, everyday Japanese.' },
+    { name: 'n2', title: 'Upper-Intermediate', description: 'Tackle more complex grammar and nuanced vocabulary.' },
+    { name: 'n1', title: 'Advanced', description: 'Challenge yourself with native-level content and expressions.' },
+  ];  const categories = ['vocabulary', 'kanji', 'grammar', 'reading'];
 
   const renderCategorySelection = () => {
     return (
@@ -30,10 +35,9 @@ const LevelSelectionPage = () => {
   const renderLevelSelection = () => {
     return (
       <div className="level-selection-view">
-        <h1 className="level-title">Select Your Path</h1>
         <div className="level-grid">
 
-          {/* --- NEW CREATOR CARD --- */}
+          {/* Creator Card is now the first item in the grid */}
           <Link to="/create" className="level-card creator-card">
             <div className="creator-card-content">
               <h3>Create Quiz from Image</h3>
@@ -41,16 +45,15 @@ const LevelSelectionPage = () => {
             </div>
           </Link>
 
-          {/* --- Standard Level Cards --- */}
+          {/* Standard Level Cards */}
           {levels.map((level) => (
-            <button key={level} onClick={() => setSelectedLevel(level)} className="level-card">
-              {level.toUpperCase()}
+            <button key={level.name} onClick={() => setSelectedLevel(level.name)} className="level-card">
+              <span className="level-card-name">{level.name.toUpperCase()}</span>
+              <h3 className="level-card-title">{level.title}</h3>
+              <p className="level-card-description">{level.description}</p>
             </button>
           ))}
         </div>
-        <button onClick={() => navigate('/')} className="back-to-levels-button">
-          &larr; Back to Home
-        </button>
       </div>
     );
   };

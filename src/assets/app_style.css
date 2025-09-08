@@ -127,16 +127,18 @@ body {
 
 @keyframes floatUp {
   0% {
-    transform: translateY(100vh) scale(0.8);
+    transform: translateY(100vh);
     opacity: 0;
   }
-  20%, 80% {
-    opacity: 1;
-    transform: translateY(0vh) scale(1);
+  10% {
+    opacity: 1; /* Fade in quickly at the bottom */
+  }
+  90% {
+    opacity: 1; /* Stay visible for the journey up */
   }
   100% {
-    transform: translateY(-20vh) scale(1.2);
-    opacity: 0;
+    transform: translateY(-10vh);
+    opacity: 0; /* Fade out gracefully as it leaves the top */
   }
 }
 
@@ -190,4 +192,18 @@ body {
   font-size: 1rem;
   color: var(--text-medium);
   font-weight: normal;
+}
+.level-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted min-width for better spacing */
+  align-items: stretch; /* This ensures all cards in a row have the same height */
+}
+
+.creator-card {
+  /* grid-column: 1 / -1; <-- DELETE THIS LINE */
+  border: 2px dashed var(--surface-light);
+  background: transparent;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 25px;
 }
