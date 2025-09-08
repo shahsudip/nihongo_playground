@@ -57,7 +57,7 @@ const FirstPassModal = ({ score, total, onContinueReview, onEndQuiz }) => {
 
 // --- Sub-Component: The Quiz View ---
 // This is the only part you need to replace.
-const Quiz = ({ quizContent, quizTitle,  level, category, quizType, onComplete }) => {
+const Quiz = ({ quizContent, quizTitle,  level, category, quizType, onComplete,onEndQuizEarly }) => {
   const navigate = useNavigate();
   const [showFirstPassModal, setShowFirstPassModal] = useState(false);
 
@@ -97,8 +97,7 @@ const Quiz = ({ quizContent, quizTitle,  level, category, quizType, onComplete }
     acknowledgeFirstPass();
   };
 
-  const handleEndQuiz = () => {
-    setShowFirstPassModal(false);
+  const handleEndQuizEarly = (stats) => {
     navigate('/results', {
       state: {
         score: firstPassStats.score,
@@ -163,7 +162,7 @@ const Quiz = ({ quizContent, quizTitle,  level, category, quizType, onComplete }
           score={firstPassStats.score}
           total={firstPassStats.total}
           onContinueReview={handleContinueReview}
-          onEndQuiz={handleEndQuiz}
+          onEndQuiz={() => onEndQuizEarly(firstPassStats)}
         />
       )}
     </>
@@ -224,7 +223,7 @@ const QuizPage = () => {
         completedDifficulty: selectedDifficulty,
     };
     setShowCompletionModal(false);
-    navigate('/profile', { state: stateToProps });
+    navigate('/', { state: stateToProps });
   };
   
   const renderDifficultySelection = () => {
@@ -270,6 +269,7 @@ const QuizPage = () => {
         category={category}
         difficulty={selectedDifficulty}
         onComplete={onQuizComplete}
+        onEndQuizEarly={handleEndQuizEarly}
       />;
   };
 
