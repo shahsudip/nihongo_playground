@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png'; // The logo is imported here
-import JapaneseText from '../components/functions/JapaneseText'; // <-- 1. Import the new component
+import logo from '../assets/logo_transparent.png'; // The logo is imported here
+import JapaneseText from '../components/functions/no_translate.jsx'; // <-- 1. Import the new component
 
 
 const LandingPage = () => {
