@@ -7,8 +7,10 @@
  --background-dark: #1a202c;
  --background-light: #2d3748;
  --surface-light: #4a5568;
- --feedback-correct: #48bb78;
- --feedback-incorrect: #f56565;
+  --feedback-correct: #48bb78;
+  --feedback-incorrect: #f56565;
+  --feedback-new: #4299e1;      /* Blue for "New" items */
+  --feedback-mastered: #9f7aea; /* Purple for "Mastered" items */
 }
 
 /* === GLOBAL STYLES === */
@@ -433,5 +435,76 @@ body {
   }
   .modal-actions .action-button {
     max-width: 100%;
+  }
+}
+
+/* --- UPDATED: Results Page Button Layout --- */
+.results-actions {
+  /* Change from a single column to a 2x2 Grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+  gap: 15px; /* Sets the space between all buttons */
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Base style for all buttons on this screen */
+.action-button {
+  display: block;
+  padding: 15px 10px; /* Adjusted padding for grid */
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: transform 0.2s, background-color 0.2s, border-color 0.2s;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.action-button:hover {
+  transform: translateY(-2px);
+}
+
+/* --- Button Color Hierarchy --- */
+
+/* Primary Action: Bright green for the most important next step */
+.action-button.next-level {
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
+}
+.action-button.next-level:hover {
+  background-color: var(--primary-green-dark);
+}
+
+/* Secondary Action: Solid color, less prominent */
+.action-button.restart {
+  background-color: var(--surface-light);
+  border-color: var(--surface-light);
+}
+.action-button.restart:hover {
+  background-color: #718096; /* A slightly lighter hover for this button */
+}
+
+/* Tertiary Actions: Outline/ghost style for lower priority actions */
+.action-button.profile,
+.action-button.home {
+  background-color: transparent;
+  border-color: var(--surface-light);
+  color: var(--text-medium);
+}
+.action-button.profile:hover,
+.action-button.home:hover {
+  background-color: var(--surface-light);
+  color: var(--text-light);
+}
+
+
+/* --- Responsive Stacking for Small Mobile --- */
+@media (max-width: 480px) {
+  .results-actions {
+    /* Switch back to a single column on very small screens */
+    grid-template-columns: 1fr;
   }
 }
