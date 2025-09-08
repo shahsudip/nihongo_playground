@@ -379,6 +379,31 @@ body {
  }
 }
 
+/* --- Styles for Modal Actions Layout --- */
+.modal-actions {
+  display: flex; /* Make buttons arrange horizontally */
+  justify-content: center; /* Center them in the modal */
+  gap: 20px; /* Add space between the buttons */
+  margin-top: 30px; /* Add some space above the buttons */
+}
+
+/* Ensure action buttons in modals behave nicely in this flex container */
+.modal-actions .action-button {
+  flex: 1; /* Allow buttons to grow and fill available space */
+  max-width: 200px; /* Limit their maximum width */
+}
+
+/* --- Responsive adjustment for very small screens --- */
+@media (max-width: 480px) {
+  .modal-actions {
+    flex-direction: column; /* Stack buttons vertically on very small screens */
+    gap: 15px; /* Adjust gap for vertical stacking */
+  }
+  .modal-actions .action-button {
+    max-width: 100%; /* Allow buttons to take full width when stacked */
+  }
+}
+
 /* Add this new rule for the unseen counter */
 .score-item.unseen span {
   color: var(--action-blue); /* This uses the blue color variable */
