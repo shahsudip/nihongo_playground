@@ -63,6 +63,4 @@ const ResultsPage = () => {
   );
 };
 
-// 2. The dummy quizData object that was here has been REMOVED.
-
 export default ResultsPage;

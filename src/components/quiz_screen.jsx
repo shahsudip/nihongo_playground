@@ -31,28 +31,32 @@ const CompletionModal = ({ score, total, onContinue }) => (
 );
 
 // --- Sub-Component: First Pass Modal ---
-const FirstPassModal = ({ onContinueReview, onEndTest }) => (
-  <div className="modal-overlay">
-    <div className="modal-content">
-      <h2>First Round Complete!</h2>
-      <p className="modal-description">
-        You've seen every question once. Continue to the review round to master the words, or end the test now.
-      </p>
-      <div className="modal-actions">
-        <button onClick={onEndTest} className="action-button home">
-          End Test
-        </button>
-        <button onClick={onContinueReview} className="action-button next-level">
-          Continue Review
-        </button>
+const FirstPassModal = ({ score, total, onContinueReview, onEndQuiz }) => {
+  return (
+    <div className="modal-overlay">
+      <div className="modal-content">
+        <h2>First Round Complete!</h2>
+        <p className="modal-score-text">Current Score:</p>
+        <div className="modal-score-display">{score} / {total}</div>
+        <p className="modal-description">
+          Continue to the review round to master the words.
+        </p>
+        <div className="modal-actions">
+          <button onClick={onEndQuiz} className="action-button home">
+            End Quiz
+          </button>
+          <button onClick={onContinueReview} className="action-button next-level">
+            Continue Review
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 // --- Sub-Component: The Quiz View ---
 // This is the only part you need to replace.
-const Quiz = ({ quizContent, quizTitle, quizType, onComplete }) => {
+const Quiz = ({ quizContent, quizTitle,  level, category, quizType, onComplete }) => {
   const navigate = useNavigate();
   const [showFirstPassModal, setShowFirstPassModal] = useState(false);
 
@@ -62,11 +66,12 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete }) => {
     currentCard, 
     currentOptions, 
     handleAnswer, 
-    acknowledgeFirstPass, 
     isComplete, 
     isLoading, 
-    isFirstPassComplete, 
-    hasAcknowledgedFirstPass 
+    firstPassStats,
+    isFirstPassComplete,
+    hasAcknowledgedFirstPass,
+    acknowledgeFirstPass,
   } = quizState;
 
   const [selectedOption, setSelectedOption] = useState(null);
@@ -90,7 +95,15 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete }) => {
 
   const handleEndTest = () => {
     setShowFirstPassModal(false);
-    navigate('/');
+    navigate('/results', {
+      state: {
+        score: firstPassStats.score,
+        total: firstPassStats.total,
+        level: level,
+        category: category,
+        completedDifficulty: difficulty,
+      },
+    });
   };
   
   const handleOptionClick = (option) => {
@@ -140,7 +153,14 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete }) => {
           })}
         </div>
       </div>
-      {showFirstPassModal && <FirstPassModal onContinueReview={handleContinueReview} onEndTest={handleEndTest} />}
+      {showFirstPassModal && (
+        <FirstPassModal
+          score={firstPassStats.score}
+          total={firstPassStats.total}
+          onContinueReview={handleContinueReview}
+          onEndQuiz={handleEndQuiz}
+        />
+      )}
     </>
   );
 };
@@ -237,7 +257,15 @@ const QuizPage = () => {
   const renderQuiz = () => {
     const quizContent = quizData[level]?.[category]?.[selectedDifficulty]?.quiz_content;
     const quizTitle = quizData[level]?.[category]?.[selectedDifficulty]?.title;
-    return <Quiz quizContent={quizContent} quizTitle={quizTitle} quizType={category} onComplete={onQuizComplete} />;
+    return <Quiz
+        quizContent={quizContent}
+        quizTitle={quizTitle}
+        quizType={category}
+        level={level}
+        category={category}
+        difficulty={selectedDifficulty}
+        onComplete={onQuizComplete}
+      />;
   };
 
   return (

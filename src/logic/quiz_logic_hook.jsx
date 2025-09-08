@@ -21,6 +21,11 @@ export const useSrsQuiz = (vocabularyList, quizType = 'kanji') => {
   const [totalCorrect, setTotalCorrect] = useState(0);
   const [totalIncorrect, setTotalIncorrect] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+  const [isFirstPassComplete, setIsFirstPassComplete] = useState(false);
+  const [hasAcknowledgedFirstPass, setHasAcknowledgedFirstPass] = useState(false);
+  
+  // --- NEW STATE: To store the score from the first pass ---
+  const [firstPassStats, setFirstPassStats] = useState({ score: 0, total: 0 });
 
   const initializeDeck = useCallback(() => {
     const initialisedDeck = vocabularyList.map((item, index) => ({
@@ -36,6 +41,9 @@ export const useSrsQuiz = (vocabularyList, quizType = 'kanji') => {
     setTotalCorrect(0);
     setTotalIncorrect(0);
     setCurrentCard(null);
+    setIsFirstPassComplete(false);
+    setHasAcknowledgedFirstPass(false);
+    setFirstPassStats({ score: 0, total: 0 });
   }, [vocabularyList]);
 
   const selectNextCard = useCallback(() => {
@@ -47,6 +55,11 @@ export const useSrsQuiz = (vocabularyList, quizType = 'kanji') => {
       nextCardId = newLearningQueue.shift();
     } else if (newUnseenQueue.length > 0) {
       nextCardId = newUnseenQueue.shift();
+      if (newUnseenQueue.length === 0 && deck.length > 0) {
+        // --- NEW LOGIC: Capture the score when the first pass completes ---
+        setFirstPassStats({ score: totalCorrect, total: totalCorrect + totalIncorrect });
+        setIsFirstPassComplete(true);
+      }
     } else if (masteredCount < deck.length) {
       const reviewQueue = deck.filter(card => !card.isMastered).map(card => card.id);
       if (reviewQueue.length > 0) {
@@ -114,6 +127,9 @@ export const useSrsQuiz = (vocabularyList, quizType = 'kanji') => {
       setIsLoading(false);
     }
   }, [deck, currentCard, selectNextCard]);
+   const acknowledgeFirstPass = () => {
+    setHasAcknowledgedFirstPass(true);
+  };
 
   const isComplete = masteredCount === deck.length && deck.length > 0;
 
@@ -127,5 +143,9 @@ export const useSrsQuiz = (vocabularyList, quizType = 'kanji') => {
     handleAnswer,
     isComplete,
     isLoading,
+    isFirstPassComplete,
+    hasAcknowledgedFirstPass,
+    acknowledgeFirstPass,
+    firstPassStats,
   };
 };
