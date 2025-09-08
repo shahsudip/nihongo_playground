@@ -11,6 +11,7 @@ import { useSrsQuiz } from '../logic/quiz_logic_hook.jsx';
 const ScoreCounter = ({ correct, incorrect, mastered, total }) => (
   <div className="score-counter-container">
     <div className="score-item correct">Correct: <span>{correct}</span></div>
+    <div className="score-item unseen">New: <span>{unseen}</span></div>
     <div className="score-item incorrect">Incorrect: <span>{incorrect}</span></div>
     <div className="score-item mastered">Mastered: <span>{mastered} / {total}</span></div>
   </div>
@@ -62,6 +63,8 @@ const Quiz = ({ quizContent, quizTitle,  level, category, quizType, onComplete }
 
   // Get all state from our custom hook
   const quizState = useSrsQuiz(quizContent, quizType);
+  const { unseenCount, ...restOfState } = quizState;
+
   const { 
     currentCard, 
     currentOptions, 
@@ -76,6 +79,7 @@ const Quiz = ({ quizContent, quizTitle,  level, category, quizType, onComplete }
 
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
+
   
   useEffect(() => {
     if (isFirstPassComplete && !hasAcknowledgedFirstPass) {
@@ -129,6 +133,7 @@ const Quiz = ({ quizContent, quizTitle,  level, category, quizType, onComplete }
         {/* --- THIS IS THE FIX --- */}
         {/* We now pass the props with the correct names */}
         <ScoreCounter 
+          unseen={unseenCount}
           correct={quizState.totalCorrect} 
           incorrect={quizState.totalIncorrect} 
           mastered={quizState.masteredCount}

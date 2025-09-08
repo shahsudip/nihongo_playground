@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation, Link, useNavigate } from 'react-router-dom';
-import { quizData } from '../data/quiz_data.js'; // <-- 1. IMPORT the real quiz data
+import { quizData } from '../data/quiz_data.jsx'; // <-- 1. IMPORT the real quiz data
 
 const ResultsPage = () => {
   const location = useLocation();
