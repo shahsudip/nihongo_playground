@@ -378,6 +378,7 @@ body {
   font-size: 2rem;
  }
 }
+
 /* Add this new rule for the unseen counter */
 .score-item.unseen span {
   color: var(--action-blue); /* This uses the blue color variable */

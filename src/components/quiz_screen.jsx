@@ -8,7 +8,7 @@ import { useSrsQuiz } from '../logic/quiz_logic_hook.jsx';
 
 
 // --- Sub-Component: ScoreCounter ---
-const ScoreCounter = ({ correct, incorrect, mastered, total }) => (
+const ScoreCounter = ({ correct, incorrect, mastered, total,unseen }) => (
   <div className="score-counter-container">
     <div className="score-item correct">Correct: <span>{correct}</span></div>
     <div className="score-item unseen">New: <span>{unseen}</span></div>
