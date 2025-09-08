@@ -7,12 +7,11 @@ import LevelSelectionPage from './components/level_selection_screen.jsx';
 import QuizPage from './components/quiz_screen.jsx';
 import ResultsPage from './components/result_screen.jsx';
 import ProfilePage from './components/profile_screen.jsx';
-import MainLayout from './components/main_layout.jsx';
 
 function App() {
   return (
     <Router>
-      <Routes element={<MainLayout />}>
+      <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/levels" element={<LevelSelectionPage />} />
