@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo_transparent.png'; // The logo is imported here
 import JapaneseText from '../components/functions/no_translate.jsx'; // <-- 1. Import the new component
 
 
@@ -34,20 +33,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page-wrapper">
       <div id="background-characters"></div>
-      
-      {/* --- This is the complete header section --- */}
-      <header className="main-header">
-        <div className="logo-container">
-          {/* --- The logo is used here --- */}
-          <img src={logo} alt="Nihongo Playground Logo" className="logo-image" />
-          <Link to="/" className="logo-title">Nihongo Playground</Link>
-        </div>
-        <nav className="main-nav">
-          <Link to="/" className="nav-link">Home</Link>
-          <Link to="/levels" className="nav-link">Practice</Link>
-          <Link to="/profile" className="nav-link">Profile</Link>
-        </nav>
-      </header>
+    
       
       <div className="content-overlay expressive-content">
         <h1 className="expressive-title">

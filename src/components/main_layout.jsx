@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import logo from '../assets/logo-green.png';
+import logo from '../assets/logo_transparent.png';
 
 // This is the header we originally designed for the Landing Page
 const MainHeader = () => (
@@ -11,8 +11,9 @@ const MainHeader = () => (
     </div>
     <nav className="main-nav">
       <Link to="/" className="nav-link">Home</Link>
+      <Link to="/levels" className="nav-link">Practice Test</Link>
       <Link to="/profile" className="nav-link">Profile</Link>
-      <Link to="/levels" className="nav-link">Test</Link>
+      
     </nav>
   </header>
 );
