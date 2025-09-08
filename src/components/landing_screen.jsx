@@ -12,7 +12,7 @@ const LandingPage = () => {
       container.removeChild(container.firstChild);
     }
     
-    const chars = '�����������������������������������������������������������ÂĂłƂǂȂɂʂ˂̂͂΂ςЂт҂ӂԂՂւׂ؂قڂۂ܂݂ނ߂������������������ΐ��؋��y���O�l�ܘZ������\�S�疜�N�l�q���j�w���k������';
+    const chars = 'あいうえおかがきぎくぐけげこごさざしじすずせぜそぞただちぢつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもやゆよらりるれろわをん日月火水木金土一二三四五六七八九十百千万年人子女男学先南北東西京';
     const charCount = 100;
 
     for (let i = 0; i < charCount; i++) {
@@ -56,7 +56,7 @@ const LandingPage = () => {
         </p>
         <div className="home-actions">
           <Link to="/levels" className="start-quiz-button-new">
-            �N�C�Y���n�߂�I (Start Quiz!)
+            クイズを始める！ (Start Quiz!)
           </Link>
           <Link to="/profile" className="profile-button-home">
             View Profile
