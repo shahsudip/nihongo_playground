@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo_transparent.png'; // The logo is imported here
-import JapaneseText from '../components/functions/no_translate.jsx'; // <-- 1. Import the new component
-
 
 const LandingPage = () => {
   useEffect(() => {
@@ -11,9 +9,6 @@ const LandingPage = () => {
 
     // Clear any existing characters
     while (container.firstChild) {
-       const span = document.createElement('span');
-      // --- ADD THIS LINE ---
-      span.className = 'notranslate'; // Prevents translation of background characters
       container.removeChild(container.firstChild);
     }
     
@@ -61,9 +56,9 @@ const LandingPage = () => {
         </p>
         <div className="home-actions">
           <Link to="/levels" className="start-quiz-button-new">
-            {}
-            <JapaneseText>クイズを始める！</JapaneseText> (Start Quiz!)
+            クイズを始める！ (Start Quiz!)
           </Link>
+
         </div>
       </div>
     </div>
