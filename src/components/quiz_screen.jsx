@@ -97,17 +97,7 @@ const Quiz = ({ quizContent, quizTitle,  level, category, quizType, onComplete,o
     acknowledgeFirstPass();
   };
 
-  const handleEndQuizEarly = (stats) => {
-    navigate('/results', {
-      state: {
-        score: firstPassStats.score,
-        total: firstPassStats.total,
-        level: level,
-        category: category,
-        completedDifficulty: difficulty,
-      },
-    });
-  };
+  
   
   const handleOptionClick = (option) => {
     if (isAnswered) return;
@@ -215,17 +205,20 @@ const QuizPage = () => {
   };
   
   const handleModalContinue = () => {
-    const stateToProps = {
-        score: finalScore.score,
-        total: finalScore.total,
-        level,
-        category,
-        completedDifficulty: selectedDifficulty,
-    };
-    setShowCompletionModal(false);
-    navigate('/', { state: stateToProps });
+   setShowCompletionModal(false);
+        navigate('/');
   };
-  
+  const handleEndQuizEarly = (stats) => {
+    navigate('/results', {
+      state: {
+        score: firstPassStats.score,
+        total: firstPassStats.total,
+        level: level,
+        category: category,
+        completedDifficulty: difficulty,
+      },
+    });
+  };
   const renderDifficultySelection = () => {
     const categoryData = quizData[level]?.[category];
     if (!categoryData) {
