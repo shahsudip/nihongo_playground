@@ -33,7 +33,7 @@ const LandingPage = () => {
       {/* --- This is the complete header section --- */}
       <header className="main-header">
         <div className="logo-container">
-          {/* --- The logo is used here --- */}
+          {}
           <img src={logo} alt="Nihongo Playground Logo" className="logo-image" />
           <Link to="/" className="logo-title">Nihongo Playground</Link>
         </div>
