@@ -51,26 +51,37 @@ const FirstPassModal = ({ onContinueReview, onEndTest }) => (
 );
 
 // --- Sub-Component: The Quiz View ---
-const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onLogicUpdate }) => {
+// This is the only part you need to replace.
+const Quiz = ({ quizContent, quizTitle, quizType, onComplete }) => {
   const navigate = useNavigate();
   const [showFirstPassModal, setShowFirstPassModal] = useState(false);
 
+  // Get all state from our custom hook
   const quizState = useSrsQuiz(quizContent, quizType);
-  const { currentCard, currentOptions, handleAnswer, acknowledgeFirstPass, ...restOfState } = quizState;
+  const { 
+    currentCard, 
+    currentOptions, 
+    handleAnswer, 
+    acknowledgeFirstPass, 
+    isComplete, 
+    isLoading, 
+    isFirstPassComplete, 
+    hasAcknowledgedFirstPass 
+  } = quizState;
 
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
   
   useEffect(() => {
-    if (restOfState.isFirstPassComplete && !restOfState.hasAcknowledgedFirstPass) {
+    if (isFirstPassComplete && !hasAcknowledgedFirstPass) {
       setShowFirstPassModal(true);
     }
-    if (restOfState.isComplete) {
+    if (isComplete) {
       setTimeout(() => {
-        onComplete(restOfState.totalCorrect, restOfState.totalCorrect + restOfState.totalIncorrect);
+        onComplete(quizState.totalCorrect, quizState.totalCorrect + quizState.totalIncorrect);
       }, 500);
     }
-  }, [restOfState, onComplete]);
+  }, [isFirstPassComplete, hasAcknowledgedFirstPass, isComplete, onComplete, quizState.totalCorrect, quizState.totalIncorrect]);
 
   const handleContinueReview = () => {
     setShowFirstPassModal(false);
@@ -94,14 +105,23 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onLogicUpdate }) =
     }, 1000);
   };
 
-  if (restOfState.isLoading) return <div className="loading-text">Loading Quiz...</div>;
-  if (restOfState.isComplete || !currentCard) return <div className="loading-text">Quiz Complete! Navigating...</div>;
+  if (isLoading) return <div className="loading-text">Loading Quiz...</div>;
+  if (isComplete || !currentCard) return <div className="loading-text">Quiz Complete! Navigating...</div>;
 
   return (
     <>
       <div className="quiz-card">
         <h1 className="quiz-title">{quizTitle}</h1>
-        <ScoreCounter {...restOfState} />
+        
+        {/* --- THIS IS THE FIX --- */}
+        {/* We now pass the props with the correct names */}
+        <ScoreCounter 
+          correct={quizState.totalCorrect} 
+          incorrect={quizState.totalIncorrect} 
+          mastered={quizState.masteredCount}
+          total={quizState.deckSize}
+        />
+        
         <h2 className="question-text">{currentCard.questionText}</h2>
         <div className="options-grid">
           {currentOptions.map((option, index) => {
