@@ -7,11 +7,11 @@ const LevelSelectionPage = () => {
   const navigate = useNavigate(); // Use navigate for the back button
 
   const levels = [
-    { name: 'n5', title: 'Beginner', description: 'Start with the basics of Japanese grammar and vocabulary.' },
-    { name: 'n4', title: 'Elementary', description: 'Build upon your foundational knowledge of the language.' },
-    { name: 'n3', title: 'Intermediate', description: 'Bridge the gap to conversational, everyday Japanese.' },
-    { name: 'n2', title: 'Upper-Intermediate', description: 'Tackle more complex grammar and nuanced vocabulary.' },
-    { name: 'n1', title: 'Advanced', description: 'Challenge yourself with native-level content and expressions.' },
+    { name: 'n5', title: 'Beginner' },
+    { name: 'n4', title: 'Elementary'},
+    { name: 'n3', title: 'Intermediate' },
+    { name: 'n2', title: 'Upper-Intermediate' },
+    { name: 'n1', title: 'Advanced' },
   ];  const categories = ['vocabulary', 'kanji', 'grammar', 'reading'];
 
   const renderCategorySelection = () => {
