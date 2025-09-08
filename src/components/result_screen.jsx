@@ -1,66 +1,55 @@
-import React from 'react';
-import { useLocation, Link, useNavigate } from 'react-router-dom';
-import { quizData } from '../data/quiz_data.jsx'; // <-- 1. IMPORT the real quiz data
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+// Make sure you have a dedicated CSS file or these styles are in app_styles.css
+// import './ProfilePage.css'; 
 
-const ResultsPage = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const { 
-    score = 0, 
-    total = 0,
-    level,
-    category,
-    completedDifficulty,
-  } = location.state || {};
+const ProfilePage = () => {
+  const [history, setHistory] = useState([]);
 
-  const percentage = total > 0 ? ((score / total) * 100).toFixed(0) : 0;
-  
-  // Logic to determine the next difficulty
-  let nextDifficulty = null;
-  if (completedDifficulty === 'easy') nextDifficulty = 'medium';
-  if (completedDifficulty === 'medium') nextDifficulty = 'hard';
-
-  // Check if the next difficulty level actually has content
-  const nextLevelHasContent = nextDifficulty && quizData[level]?.[category]?.[nextDifficulty]?.quiz_content?.length > 0;
+  useEffect(() => {
+    const savedHistory = JSON.parse(localStorage.getItem('quizHistory')) || [];
+    
+    // --- FIX 1: Create a copy of the array before sorting ---
+    const sortedHistory = [...savedHistory].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+    
+    setHistory(sortedHistory);
+  }, []);
 
   return (
-    <div className="results-container">
-      <div className="results-card">
-        <h1 className="results-title">Quiz Results</h1>
-        <p className="score-text">{level?.toUpperCase()} - {category} ({completedDifficulty})</p>
-        <div className="percentage-circle">
-          <span>{score} / {total}</span>
+    <div className="profile-container">
+      <h1 className="profile-title">Quiz History</h1>
+      {history.length === 0 ? (
+        <div className="no-history-card">
+          <p>You haven't completed any quizzes yet.</p>
+          <Link to="/levels" className="action-button next-level">Start a Quiz!</Link>
         </div>
-        <p className="percentage-text">{percentage}% Correct</p>
-
-        <div className="results-actions">
-          <button 
-            onClick={() => navigate(`/quiz/${level}/${category}`)} 
-            className="action-button restart"
-          >
-            Play Again
-          </button>
-          
-          {nextLevelHasContent && (
-             <button 
-              onClick={() => navigate(`/quiz/${level}/${category}`)} 
-              className="action-button next-level"
-            >
-              Start {nextDifficulty} &rarr;
-            </button>
-          )}
-
-          <Link to="/profile" className="action-button profile">
-            View Full History
-          </Link>
-          
-          <Link to="/" className="action-button home">
-            Back to Home
-          </Link>
+      ) : (
+        <div className="history-list">
+          {history.map((item) => (
+            <div key={item.id} className="history-item">
+              <div className="history-item-header">
+                {/* --- FIX 2: Added optional chaining (?.) for safety --- */}
+                <h3>{item?.level?.toUpperCase()} - {item?.category} ({item?.difficulty})</h3>
+                <span className="history-item-date">
+                  {new Date(item.timestamp).toLocaleDateString()}
+                </span>
+              </div>
+              <div className="history-item-body">
+                <p>Score: <strong>{item?.score} / {item?.total}</strong></p>
+                <div className="progress-bar-container">
+                  <div 
+                    className="progress-bar-fill" 
+                    // Added a check to prevent division by zero
+                    style={{ width: `${item.total > 0 ? (item.score / item.total) * 100 : 0}%` }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-      </div>
+      )}
     </div>
   );
 };
 
-export default ResultsPage;
+export default ProfilePage;
