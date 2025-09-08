@@ -93,7 +93,7 @@ const Quiz = ({ quizContent, quizTitle,  level, category, quizType, onComplete }
     acknowledgeFirstPass();
   };
 
-  const handleEndTest = () => {
+  const handleEndQuiz = () => {
     setShowFirstPassModal(false);
     navigate('/results', {
       state: {
