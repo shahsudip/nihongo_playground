@@ -39,8 +39,8 @@ const LandingPage = () => {
         </div>
         <nav className="main-nav">
           <Link to="/" className="nav-link">Home</Link>
+          <Link to="/levels" className="nav-link">Practice</Link>
           <Link to="/profile" className="nav-link">Profile</Link>
-          <Link to="/levels" className="nav-link">Test</Link>
         </nav>
       </header>
       
@@ -57,9 +57,6 @@ const LandingPage = () => {
         <div className="home-actions">
           <Link to="/levels" className="start-quiz-button-new">
             クイズを始める！ (Start Quiz!)
-          </Link>
-          <Link to="/profile" className="profile-button-home">
-            View Profile
           </Link>
         </div>
       </div>

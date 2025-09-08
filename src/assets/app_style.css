@@ -145,3 +145,49 @@ body {
   position: relative;
   z-index: 1;
 }
+
+/* --- Styles for the new Creator Card --- */
+.level-grid {
+  /* Use CSS Grid's auto-fit to handle different card sizes gracefully */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.creator-card {
+  /* Make the creator card span the full width of the grid */
+  grid-column: 1 / -1; 
+  border: 2px dashed var(--surface-light);
+  background: transparent;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+}
+
+.creator-card:hover {
+  border-color: var(--primary-green);
+  background-color: rgba(88, 167, 0, 0.1);
+  transform: translateY(0); /* Override the default hover effect */
+}
+
+/* Add a large "+" icon using CSS */
+.creator-card::before {
+  content: '+';
+  font-size: 4rem;
+  font-weight: 200;
+  color: var(--primary-green);
+  margin-right: 25px;
+  line-height: 1;
+}
+
+.creator-card-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  color: var(--text-light);
+}
+
+.creator-card-content p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-medium);
+  font-weight: normal;
+}
