@@ -8,7 +8,7 @@ import { useSrsQuiz } from '../logic/quiz_logic_hook.jsx';
 
 
 // --- Sub-Component: ScoreCounter ---
-const ScoreCounter = ({ correct, incorrect, mastered, total,unseen }) => (
+const ScoreCounter = ({ correct, incorrect, mastered, total, unseen }) => (
   <div className="score-counter-container">
     <div className="score-item correct">Correct: <span>{correct}</span></div>
     <div className="score-item unseen">New: <span>{unseen}</span></div>
@@ -57,7 +57,7 @@ const FirstPassModal = ({ score, total, onContinueReview, onEndQuiz }) => {
 
 // --- Sub-Component: The Quiz View ---
 // This is the only part you need to replace.
-const Quiz = ({ quizContent, quizTitle,  level, category, quizType, onComplete,onEndQuizEarly }) => {
+const Quiz = ({ quizContent, quizTitle, level, category, quizType, onComplete, onEndQuizEarly }) => {
   const navigate = useNavigate();
   const [showFirstPassModal, setShowFirstPassModal] = useState(false);
 
@@ -65,12 +65,12 @@ const Quiz = ({ quizContent, quizTitle,  level, category, quizType, onComplete,o
   const quizState = useSrsQuiz(quizContent, quizType);
   const { unseenCount, ...restOfState } = quizState;
 
-  const { 
-    currentCard, 
-    currentOptions, 
-    handleAnswer, 
-    isComplete, 
-    isLoading, 
+  const {
+    currentCard,
+    currentOptions,
+    handleAnswer,
+    isComplete,
+    isLoading,
     firstPassStats,
     isFirstPassComplete,
     hasAcknowledgedFirstPass,
@@ -80,7 +80,7 @@ const Quiz = ({ quizContent, quizTitle,  level, category, quizType, onComplete,o
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
 
-  
+
   useEffect(() => {
     if (isFirstPassComplete && !hasAcknowledgedFirstPass) {
       setShowFirstPassModal(true);
@@ -97,8 +97,8 @@ const Quiz = ({ quizContent, quizTitle,  level, category, quizType, onComplete,o
     acknowledgeFirstPass();
   };
 
-  
-  
+
+
   const handleOptionClick = (option) => {
     if (isAnswered) return;
     setSelectedOption(option);
@@ -118,17 +118,17 @@ const Quiz = ({ quizContent, quizTitle,  level, category, quizType, onComplete,o
     <>
       <div className="quiz-card">
         <h1 className="quiz-title">{quizTitle}</h1>
-        
+
         {/* --- THIS IS THE FIX --- */}
         {/* We now pass the props with the correct names */}
-        <ScoreCounter 
+        <ScoreCounter
           unseen={unseenCount}
-          correct={quizState.totalCorrect} 
-          incorrect={quizState.totalIncorrect} 
+          correct={quizState.totalCorrect}
+          incorrect={quizState.totalIncorrect}
           mastered={quizState.masteredCount}
           total={quizState.deckSize}
         />
-        
+
         <h2 className="question-text">{currentCard.questionText}</h2>
         <div className="options-grid">
           {currentOptions.map((option, index) => {
@@ -167,7 +167,7 @@ const QuizPage = () => {
   const [unlockedDifficulty, setUnlockedDifficulty] = useState('easy');
   const [showCompletionModal, setShowCompletionModal] = useState(false);
   const [finalScore, setFinalScore] = useState({ score: 0, total: 0 });
-  
+
   const difficulties = ['easy', 'medium', 'hard'];
   const difficultyMap = { easy: 1, medium: 2, hard: 3 };
 
@@ -176,16 +176,16 @@ const QuizPage = () => {
     const savedProgress = localStorage.getItem(storageKey);
     if (savedProgress) setUnlockedDifficulty(savedProgress);
   }, [level, category]);
-  
+
   const onQuizComplete = (finalScoreValue, totalAttempts) => {
     const storageKey = `quiz-progress-${level}-${category}`;
-    
+
     if (selectedDifficulty === 'easy' && unlockedDifficulty === 'easy') {
       localStorage.setItem(storageKey, 'medium');
     } else if (selectedDifficulty === 'medium' && unlockedDifficulty === 'medium') {
       localStorage.setItem(storageKey, 'hard');
     }
-    
+
     const newResult = {
       id: Date.now(),
       level,
@@ -195,7 +195,7 @@ const QuizPage = () => {
       total: totalAttempts,
       timestamp: new Date().toISOString(),
     };
-    
+
     const history = JSON.parse(localStorage.getItem('quizHistory')) || [];
     history.push(newResult);
     localStorage.setItem('quizHistory', JSON.stringify(history));
@@ -203,10 +203,10 @@ const QuizPage = () => {
     setFinalScore({ score: finalScoreValue, total: totalAttempts });
     setShowCompletionModal(true);
   };
-  
+
   const handleModalContinue = () => {
-   setShowCompletionModal(false);
-        navigate('/');
+    setShowCompletionModal(false);
+    navigate('/');
   };
   const handleEndQuizEarly = (stats) => {
     navigate('/results', {
@@ -222,12 +222,12 @@ const QuizPage = () => {
   const renderDifficultySelection = () => {
     const categoryData = quizData[level]?.[category];
     if (!categoryData) {
-        return (
-             <div className="quiz-card">
-                <h1>Content for "{category}" not found!</h1>
-                <button onClick={() => navigate('/levels')} className="back-to-levels-button">&larr; Back to Categories</button>
-            </div>
-        );
+      return (
+        <div className="quiz-card">
+          <h1>Content for "{category}" not found!</h1>
+          <button onClick={() => navigate('/levels')} className="back-to-levels-button">&larr; Back to Categories</button>
+        </div>
+      );
     }
     const unlockedLevelNum = difficultyMap[unlockedDifficulty];
     return (
@@ -250,20 +250,20 @@ const QuizPage = () => {
       </div>
     );
   };
-  
+
   const renderQuiz = () => {
     const quizContent = quizData[level]?.[category]?.[selectedDifficulty]?.quiz_content;
     const quizTitle = quizData[level]?.[category]?.[selectedDifficulty]?.title;
     return <Quiz
-        quizContent={quizContent}
-        quizTitle={quizTitle}
-        quizType={category}
-        level={level}
-        category={category}
-        difficulty={selectedDifficulty}
-        onComplete={onQuizComplete}
-        onEndQuizEarly={handleEndQuizEarly}
-      />;
+      quizContent={quizContent}
+      quizTitle={quizTitle}
+      quizType={category}
+      level={level}
+      category={category}
+      difficulty={selectedDifficulty}
+      onComplete={onQuizComplete}
+      onEndQuizEarly={handleEndQuizEarly}
+    />;
   };
 
   return (
