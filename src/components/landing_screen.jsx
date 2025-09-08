@@ -1,22 +1,67 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo-green.png'; // The logo is imported here
 
 const LandingPage = () => {
-  // The animation useEffect from the previous example can be added back here if desired
+  useEffect(() => {
+    const container = document.getElementById('background-characters');
+    if (!container) return;
+
+    // Clear any existing characters
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
+    
+    const chars = 'あいうえおかがきぎくぐけげこごさざしじすずせぜそぞただちぢつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもやゆよらりるれろわをん日月火水木金土一二三四五六七八九十百千万年人子女男学先南北東西京';
+    const charCount = 100;
+
+    for (let i = 0; i < charCount; i++) {
+      const span = document.createElement('span');
+      span.textContent = chars[Math.floor(Math.random() * chars.length)];
+      span.style.left = `${Math.random() * 100}vw`;
+      span.style.fontSize = `${1 + Math.random() * 2}rem`;
+      span.style.animationDuration = `${15 + Math.random() * 20}s`;
+      span.style.animationDelay = `${Math.random() * -30}s`;
+      container.appendChild(span);
+    }
+  }, []);
+
   return (
     <div className="landing-page-wrapper">
-      <div id="background-characters"></div> {/* Container for animated background */}
-      <div className="content-overlay">
-        <header className="hero-section-new">
-          <h1 className="hero-title-new">譌･譛ｬ隱槭メ繝｣繝ｬ繝ｳ繧ｸ �ｯ�ｵ</h1>
-          <p className="hero-subtitle-new">Master Japanese, One Question at a Time.</p>
+      <div id="background-characters"></div>
+      
+      {/* --- This is the complete header section --- */}
+      <header className="main-header">
+        <div className="logo-container">
+          {/* --- The logo is used here --- */}
+          <img src={logo} alt="Nihongo Playground Logo" className="logo-image" />
+          <Link to="/" className="logo-title">Nihongo Playground</Link>
+        </div>
+        <nav className="main-nav">
+          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/profile" className="nav-link">Profile</Link>
+          <Link to="/levels" className="nav-link">Test</Link>
+        </nav>
+      </header>
+      
+      <div className="content-overlay expressive-content">
+        <h1 className="expressive-title">
+          <span>Master</span>
+          <span>Japanese,</span>
+          <span>One Quiz</span>
+          <span>at a Time.</span>
+        </h1>
+        <p className="expressive-subtitle">
+          From essential Kana to complex Kanji, your personal dojo for mastering the Japanese language awaits.
+        </p>
+        <div className="home-actions">
           <Link to="/levels" className="start-quiz-button-new">
-            Nihongo Playground (Start Quiz!)
+            クイズを始める！ (Start Quiz!)
           </Link>
-            <Link to="/profile" className="profile-button-home">
-              View Profile
-            </Link>
-        </header>
+          <Link to="/profile" className="profile-button-home">
+            View Profile
+          </Link>
+        </div>
       </div>
     </div>
   );
