@@ -25,7 +25,7 @@ body {
 /* === LANDING PAGE & HEADER === */
 .landing-page-wrapper { position: relative; width: 100vw; height: 100vh; overflow: hidden; display: flex; justify-content: center; align-items: center; }
 .main-header { position: absolute; top: 0; left: 0; width: 100%; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; z-index: 10; box-sizing: border-box; }
-.logo-container { display: flex; align-items: center; gap: 15px; }
+.logo-container { display: flex; align-items: center; gap: 15px;color:transparent; }
 .logo-image { height: 50px; width: auto; }
 .logo-title { font-size: 1.5rem; font-weight: bold; color: #fff; text-decoration: none; background: linear-gradient(90deg, #a5d6a7, var(--primary-green), var(--text-light)); background-size: 200% 200%; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; animation: gradient-animation 4s ease infinite; }
 .main-nav { display: flex; gap: 30px; }
