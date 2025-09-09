@@ -13,9 +13,11 @@ const MainHeader = () => (
     </div>
     <nav className="main-nav">
       {/* --- CHANGE THESE from <Link> to <NavLink> --- */}
+      
       <NavLink to="/" className="nav-link">Home</NavLink>
+      <NavLink to="/levels" className="nav-link">Practice</NavLink>
       <NavLink to="/profile" className="nav-link">Profile</NavLink>
-      <NavLink to="/levels" className="nav-link">Test</NavLink>
+      
     </nav>
   </header>
 );
