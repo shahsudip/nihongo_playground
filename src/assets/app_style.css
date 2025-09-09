@@ -538,6 +538,42 @@ body {
   .modal-actions { flex-direction: column; gap: 15px; }
   .modal-actions .action-button { max-width: 100%; }
 }
+
+/* === SCROLLABLE CUSTOM QUIZ LIST FIX === */
+
+/* This targets the list container within the main profile content area */
+.profile-main-content .history-list {
+  /*
+    Set a max-height tall enough for two cards plus the space between them.
+    You can adjust this pixel value slightly if needed.
+  */
+  max-height: 410px;
+
+  /* This adds a scrollbar only when the list grows beyond the max-height */
+  overflow-y: auto;
+
+  /* This adds some space on the right so the scrollbar doesn't cover the cards */
+  padding-right: 15px;
+}
+
+/* (Optional) Adds consistent styling to the new scrollbar */
+.profile-main-content .history-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.profile-main-content .history-list::-webkit-scrollbar-track {
+  background: var(--background-dark);
+  border-radius: 10px;
+}
+
+.profile-main-content .history-list::-webkit-scrollbar-thumb {
+  background-color: var(--surface-light);
+  border-radius: 10px;
+}
+
+.profile-main-content .history-list::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-green);
+}
 /* This adds a margin to every card except the very last one */
 .custom-quiz-card:not(:last-child) {
   margin-bottom: 10px;
