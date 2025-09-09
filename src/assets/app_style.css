@@ -80,7 +80,7 @@ body {
 }
 .level-card:hover { transform: translateY(-5px); background-color: var(--primary-green); }
 .category-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.category-card { background: var(--background-light); color: var(--text-light); text-decoration: none; font-size: 1.5rem; padding: 30px 20px; border-radius: 10px; transition: transform 0.2s, background-color 0.2s; }
+.category-card { background: var(--background-light); color: var(--text-light); text-decoration: none; font-size: 1.5rem; padding: 15px 10px; border-radius: 10px; transition: transform 0.2s, background-color 0.2s; }
 .category-card:hover { transform: translateY(-5px); background-color: var(--surface-light); }
 
 
