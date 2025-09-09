@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { quizData as staticQuizData } from '../data/quiz_data.js';
+import { quizData as staticQuizData } from '../data/quiz_data.jsx';
 
 export const useQuizManager = () => {
   const [allQuizzes, setAllQuizzes] = useState([]);
