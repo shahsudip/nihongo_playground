@@ -216,10 +216,52 @@ const QuizPage = () => {
     navigate('/profile');
   };
   
-  const handleEndQuizEarly = (stats) => {
-    const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
-    navigate('/profile', { state: { score: stats.score, total: stats.total, quizId: quizId } });
+// The NEW and IMPROVED logic
+const handleEndQuizEarly = (stats) => {
+  // 1. Determine the unique ID for the quiz being played
+  const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
+  
+  // 2. Find the quiz's title (needed for the history record)
+  let quizTitle = "Custom Quiz";
+  if (isCustomQuiz) {
+    const customQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
+    const quiz = customQuizzes.find(q => q.id === level);
+    if(quiz) quizTitle = quiz.title;
+  } else {
+    const standardQuiz = staticQuizData[level]?.[category]?.[selectedDifficulty];
+    if(standardQuiz) quizTitle = standardQuiz.title;
+  }
+
+  // 3. Create a new result object with the partial score
+  const newResult = {
+    quizId: quizId,
+    id: Date.now(),
+    title: quizTitle,
+    level: isCustomQuiz ? level : level,
+    category,
+    difficulty: isCustomQuiz ? 'custom' : selectedDifficulty,
+    score: stats.score, // Use the score from the first pass
+    total: stats.total, // Use the total from the first pass
+    timestamp: new Date().toISOString(),
   };
+
+  // 4. Update localStorage (this logic is identical to onQuizComplete)
+  const history = JSON.parse(localStorage.getItem('quizHistory')) || [];
+  const recordIndex = history.findIndex(item => item.quizId === quizId);
+  const updatedHistory = [...history];
+
+  if (recordIndex > -1) {
+    // If a record exists, update it with the new partial score
+    updatedHistory[recordIndex] = newResult;
+  } else {
+    // This case is unlikely for a retry, but good to have
+    updatedHistory.push(newResult);
+  }
+  localStorage.setItem('quizHistory', JSON.stringify(updatedHistory));
+
+  // 5. Navigate the user back to the profile to see the updated list
+  navigate('/profile');
+};
 
   const renderDifficultySelection = () => {
     const categoryData = staticQuizData[level]?.[category];

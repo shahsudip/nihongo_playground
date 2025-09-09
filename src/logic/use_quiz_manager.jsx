@@ -47,7 +47,7 @@ export const useQuizManager = () => {
           let latestResult = null;
           if (completedQuizMap.has(uniqueId)) {
             const result = completedQuizMap.get(uniqueId);
-            status = result.score === result.total ? 'mastered' : 'incomplete';
+            status = result.score === result.total ||result.score>=result.total ? 'mastered' : 'incomplete';
             latestResult = result.fullRecord;
           }
 
