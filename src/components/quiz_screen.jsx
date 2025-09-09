@@ -112,6 +112,7 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly }) 
   );
 };
 
+
 // --- Main Page Component ---
 const QuizPage = () => {
   const { level, category } = useParams();
@@ -122,7 +123,6 @@ const QuizPage = () => {
   const [unlockedDifficulty, setUnlockedDifficulty] = useState('easy');
   const [showCompletionModal, setShowCompletionModal] = useState(false);
   const [finalScore, setFinalScore] = useState({ score: 0, total: 0 });
-  const [quizAttemptId, setQuizAttemptId] = useState(Date.now()); // <<< FIX: Add state for unique attempt ID
 
   const difficulties = ['easy', 'medium', 'hard'];
   const difficultyMap = { easy: 1, medium: 2, hard: 3 };
@@ -157,8 +157,7 @@ const QuizPage = () => {
     }
   }, [level, category, isCustomQuiz]);
 
-  const onQuizComplete = (finalScoreValue, totalAttempts) => {
-    const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
+   const onQuizComplete = (finalScoreValue, totalAttempts) => {
     if (!isCustomQuiz) {
       const storageKey = `quiz-progress-${level}-${category}`;
       if (selectedDifficulty === 'easy' && unlockedDifficulty === 'easy') {
@@ -168,19 +167,25 @@ const QuizPage = () => {
       }
     }
     
+    const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
+    const history = JSON.parse(localStorage.getItem('quizHistory')) || [];
+    
     let quizTitle = "Custom Quiz";
     if (isCustomQuiz) {
-      const customQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
-      const quiz = customQuizzes.find(q => q.id === level);
-      if(quiz) quizTitle = quiz.title;
+        const customQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
+        const quiz = customQuizzes.find(q => q.id === level);
+        if(quiz) quizTitle = quiz.title;
     } else {
-      const standardQuiz = staticQuizData[level]?.[category]?.[selectedDifficulty];
-      if(standardQuiz) quizTitle = standardQuiz.title;
+        const standardQuiz = staticQuizData[level]?.[category]?.[selectedDifficulty];
+        if(standardQuiz) quizTitle = standardQuiz.title;
     }
     
+    // Find the index of the existing record for this quiz
+    const recordIndex = history.findIndex(item => item.quizId === quizId);
+
     const newResult = {
       quizId: quizId,
-      id: Date.now(),
+      id: recordIndex > -1 ? history[recordIndex].id : Date.now(), // Reuse original ID if found
       title: quizTitle,
       level: isCustomQuiz ? level : level,
       category,
@@ -190,14 +195,16 @@ const QuizPage = () => {
       timestamp: new Date().toISOString(),
     };
     
-    const history = JSON.parse(localStorage.getItem('quizHistory')) || [];
-    const recordIndex = history.findIndex(item => item.quizId === quizId);
-    const updatedHistory = [...history];
+    const updatedHistory = [...history]; // Create a mutable copy
+
     if (recordIndex > -1) {
+      // If a record was found, UPDATE it at its original position
       updatedHistory[recordIndex] = newResult;
     } else {
+      // If no record was found (as a fallback), add a new one
       updatedHistory.push(newResult);
     }
+    
     localStorage.setItem('quizHistory', JSON.stringify(updatedHistory));
     setFinalScore({ score: finalScoreValue, total: totalAttempts });
     setShowCompletionModal(true);
@@ -228,30 +235,20 @@ const QuizPage = () => {
             const isLocked = currentLevelNum > unlockedLevelNum;
             const hasContent = categoryData[difficulty]?.quiz_content?.length > 0;
             return (
-              <button 
-                key={difficulty} 
-                className={`difficulty-button ${isLocked || !hasContent ? 'locked' : ''}`} 
-                disabled={isLocked || !hasContent} 
-                onClick={() => {
-                  setSelectedDifficulty(difficulty);
-                  setQuizAttemptId(Date.now()); // <<< FIX: Set new ID on click
-                }} 
-                title={!hasContent ? "No questions for this difficulty yet" : ""}
-              >
+              <button key={difficulty} className={`difficulty-button ${isLocked || !hasContent ? 'locked' : ''}`} disabled={isLocked || !hasContent} onClick={() => setSelectedDifficulty(difficulty)} title={!hasContent ? "No questions for this difficulty yet" : ""}>
                 {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}
                 {(isLocked || !hasContent) && <span className="lock-icon">?</span>}
               </button>
             );
           })}
         </div>
+        {/* Redundant button removed for cleaner UI */}
       </div>
     );
   };
   
   const renderQuiz = () => {
     let quizContent, quizTitle;
-    const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
-
     if (isCustomQuiz) {
       const customQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
       const quiz = customQuizzes.find(q => q.id === level);
@@ -264,29 +261,7 @@ const QuizPage = () => {
       quizContent = standardQuiz.quiz_content;
       quizTitle = standardQuiz.title;
     }
-      if (!quizContent || quizContent.length === 0) {
-      return (
-        <div className="quiz-card">
-          <h1>No Questions Found!</h1>
-          <p style={{color: 'var(--text-medium)'}}>
-            Please check your data file to make sure a `quiz_content` array with questions exists for this quiz.
-          </p>
-        </div>
-      );
-    }
-    return (
-      <Quiz
-        key={`${quizId}-${quizAttemptId}`} // <<< FIX: Create a unique key for each attempt
-        quizContent={quizContent}
-        quizTitle={quizTitle}
-        quizType={category}
-        onComplete={onQuizComplete}
-        onEndQuizEarly={handleEndQuizEarly}
-        level={level}
-        category={category}
-        difficulty={selectedDifficulty}
-      />
-    );
+    return <Quiz quizContent={quizContent} quizTitle={quizTitle} quizType={category} onComplete={onQuizComplete} onEndQuizEarly={handleEndQuizEarly} />;
   };
 
   return (
