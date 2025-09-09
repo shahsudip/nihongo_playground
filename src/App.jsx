@@ -7,9 +7,6 @@ import LevelSelectionPage from './components/level_selection_screen.jsx';
 import QuizPage from './components/quiz_screen.jsx';
 import ResultsPage from './components/result_screen.jsx';
 import ProfilePage from './components/profile_screen.jsx';
-import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import './assets/app_style.css'; // Global styles
 
 // Import the MainLayout component
 import MainLayout from './components/MainLayout.jsx';
