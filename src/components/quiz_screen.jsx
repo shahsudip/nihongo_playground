@@ -183,7 +183,6 @@ const QuizPage = () => {
       return (
         <div className="quiz-card">
           <h1>Content for "{category}" not found!</h1>
-          <button onClick={() => navigate('/levels')} className="back-to-levels-button">&larr; Back to Categories</button>
         </div>
       );
     }
@@ -204,7 +203,6 @@ const QuizPage = () => {
             );
           })}
         </div>
-        <button onClick={() => navigate('/levels')} className="back-to-levels-button">&larr; Back to Categories</button>
       </div>
     );
   };

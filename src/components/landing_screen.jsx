@@ -12,7 +12,7 @@ const LandingPage = () => {
       container.removeChild(container.firstChild);
     }
     
-    const chars = 'あいうえおかがきぎくぐけげこごさざしじすずせぜそぞただちぢつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもやゆよらりるれろわをん日月火水木金土一二三四五六七八九十百千万年人子女男学先南北東西京';
+    const chars = 'あい�?えおかがきぎくぐけげこごさざしじすずせぜそぞただちぢつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめも�?�?よらりるれろわをん日月火水木金土一二三四五�?��?八九十百�?�?年人子女男学先南北東西京';
     const charCount = 100;
 
     for (let i = 0; i < charCount; i++) {
@@ -30,20 +30,6 @@ const LandingPage = () => {
     <div className="landing-page-wrapper">
       <div id="background-characters"></div>
       
-      {/* --- This is the complete header section --- */}
-      <header className="main-header">
-        <div className="logo-container">
-          {}
-          <img src={logo} alt="Nihongo Playground Logo" className="logo-image" />
-          <Link to="/" className="logo-title">Nihongo Playground</Link>
-        </div>
-        <nav className="main-nav">
-          <Link to="/" className="nav-link">Home</Link>
-          <Link to="/levels" className="nav-link">Practice</Link>
-          <Link to="/profile" className="nav-link">Profile</Link>
-        </nav>
-      </header>
-      
       <div className="content-overlay expressive-content">
         <h1 className="expressive-title">
           <span>Master</span>
@@ -56,7 +42,7 @@ const LandingPage = () => {
         </p>
         <div className="home-actions">
           <Link to="/levels" className="start-quiz-button-new">
-            クイズを始める！ (Start Quiz!)
+            クイズを始める�? (Start Quiz!)
           </Link>
 
         </div>

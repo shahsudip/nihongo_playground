@@ -502,12 +502,7 @@ body {
 
 
 /* --- Responsive Stacking for Small Mobile --- */
-@media (max-width: 480px) {
-  .results-actions {
-    /* Switch back to a single column on very small screens */
-    grid-template-columns: 1fr;
-  }
-}
+
 
 
 /* Styles for the inline creator on the Profile Page */

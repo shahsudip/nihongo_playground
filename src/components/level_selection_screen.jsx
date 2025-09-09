@@ -17,9 +17,7 @@ const LevelSelectionPage = () => {
   const renderCategorySelection = () => {
     return (
       <div className="category-selection-view">
-        <button onClick={() => setSelectedLevel(null)} className="back-button">
-          &larr; Back to Levels
-        </button>
+      
         <h1 className="category-title">{selectedLevel.toUpperCase()} Quizzes</h1>
         <div className="category-grid">
           {categories.map((category) => (
