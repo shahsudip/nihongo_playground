@@ -256,6 +256,16 @@ const QuizPage = () => {
       quizContent = standardQuiz.quiz_content;
       quizTitle = standardQuiz.title;
     }
+      if (!quizContent || quizContent.length === 0) {
+      return (
+        <div className="quiz-card">
+          <h1>No Questions Found!</h1>
+          <p style={{color: 'var(--text-medium)'}}>
+            Please check your data file to make sure a `quiz_content` array with questions exists for this quiz.
+          </p>
+        </div>
+      );
+    }
     return (
       <Quiz
         key={quizId} // The key is now guaranteed to have a value
