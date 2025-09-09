@@ -52,18 +52,23 @@ body {
 /* === GENERAL BUTTONS & CARDS === */
 .start-quiz-button-new { display: inline-block; background-color: var(--primary-green); color: white; padding: 20px 40px; text-decoration: none; font-size: 1.5rem; border-radius: 35px; font-weight: bold; border: none; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; box-shadow: 0 8px 20px rgba(88, 167, 0, 0.4); }
 .start-quiz-button-new:hover { background-color: var(--primary-green-dark); transform: translateY(-5px) scale(1.02); box-shadow: 0 12px 25px rgba(88, 167, 0, 0.6); }
-
 /* === LEVEL & CATEGORY SELECTION === */
+
 .level-selection-container { display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
 .level-title, .category-title { font-size: 3rem; color: var(--primary-green); margin-bottom: 50px; text-shadow: 0 0 10px rgba(88, 167, 0, 0.5); }
-.level-grid { display: grid;    grid-template-columns: repeat(2, 1fr);gap: 25px; }
+.level-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  width: 100%;
+  max-width: 800px;
+}
 .level-card {
   background: var(--background-light);
   color: var(--text-light);
   text-decoration: none;
-  font-size: 1.8rem; /* MODIFICATION 2: Slightly smaller font size */
   font-weight: bold;
-  padding: 15px 10px; /* MODIFICATION 2: Reduced padding */
+  padding: 25px 20px;
   border-radius: 10px;
   text-align: center;
   transition: transform 0.2s ease, background-color 0.2s ease;
@@ -71,17 +76,56 @@ body {
   border: none;
   cursor: pointer;
   font-family: inherit;
-  max-width: 350px; /* MODIFICATION 2: Set a max-width */
-  margin: 0 auto; /* MODIFICATION 2: Center card in grid cell */
+  margin: 0 auto;
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.level-grid .level-card:last-child {
-  /* Make the last item start at column line 1 and end at the last line (-1) */
-  grid-column: 1 / -1;
+.level-card-name {
+  font-size: 2.5rem;
 }
 .level-card:hover { transform: translateY(-5px); background-color: var(--primary-green); }
+
+.creator-card {
+  grid-column: 1 / -1; /* Span full width */
+  border: 2px dashed var(--surface-light);
+  background: transparent;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+}
+.creator-card:hover {
+  border-color: var(--primary-green);
+  background-color: rgba(88, 167, 0, 0.1);
+  transform: translateY(0); /* Override the default hover effect */
+}
+/* Add a large "+" icon using CSS */
+.creator-card::before {
+  content: '+';
+  font-size: 4rem;
+  font-weight: 200;
+  color: var(--primary-green);
+  margin-right: 25px;
+  line-height: 1;
+}
+.creator-card-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  color: var(--text-light);
+}
+.creator-card-content p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-medium);
+  font-weight: normal;
+}
 .category-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.category-card { background: var(--background-light); color: var(--text-light); text-decoration: none; font-size: 1.5rem; padding: 15px 10px; border-radius: 10px; transition: transform 0.2s, background-color 0.2s; }
+.category-card { background: var(--background-light); color: var(--text-light); text-decoration: none; font-size: 1.5rem; padding: 30px 20px; border-radius: 10px; transition: transform 0.2s, background-color 0.2s; }
 .category-card:hover { transform: translateY(-5px); background-color: var(--surface-light); }
+
 
 
 /* === DIFFICULTY SELECTION === */
