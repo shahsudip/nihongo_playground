@@ -112,7 +112,6 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly }) 
   );
 };
 
-
 // --- Main Page Component ---
 const QuizPage = () => {
   const { level, category } = useParams();
@@ -157,7 +156,8 @@ const QuizPage = () => {
     }
   }, [level, category, isCustomQuiz]);
 
-   const onQuizComplete = (finalScoreValue, totalAttempts) => {
+  const onQuizComplete = (finalScoreValue, totalAttempts) => {
+    const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
     if (!isCustomQuiz) {
       const storageKey = `quiz-progress-${level}-${category}`;
       if (selectedDifficulty === 'easy' && unlockedDifficulty === 'easy') {
@@ -167,25 +167,19 @@ const QuizPage = () => {
       }
     }
     
-    const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
-    const history = JSON.parse(localStorage.getItem('quizHistory')) || [];
-    
     let quizTitle = "Custom Quiz";
     if (isCustomQuiz) {
-        const customQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
-        const quiz = customQuizzes.find(q => q.id === level);
-        if(quiz) quizTitle = quiz.title;
+      const customQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
+      const quiz = customQuizzes.find(q => q.id === level);
+      if(quiz) quizTitle = quiz.title;
     } else {
-        const standardQuiz = staticQuizData[level]?.[category]?.[selectedDifficulty];
-        if(standardQuiz) quizTitle = standardQuiz.title;
+      const standardQuiz = staticQuizData[level]?.[category]?.[selectedDifficulty];
+      if(standardQuiz) quizTitle = standardQuiz.title;
     }
     
-    // Find the index of the existing record for this quiz
-    const recordIndex = history.findIndex(item => item.quizId === quizId);
-
     const newResult = {
       quizId: quizId,
-      id: recordIndex > -1 ? history[recordIndex].id : Date.now(), // Reuse original ID if found
+      id: Date.now(),
       title: quizTitle,
       level: isCustomQuiz ? level : level,
       category,
@@ -195,16 +189,14 @@ const QuizPage = () => {
       timestamp: new Date().toISOString(),
     };
     
-    const updatedHistory = [...history]; // Create a mutable copy
-
+    const history = JSON.parse(localStorage.getItem('quizHistory')) || [];
+    const recordIndex = history.findIndex(item => item.quizId === quizId);
+    const updatedHistory = [...history];
     if (recordIndex > -1) {
-      // If a record was found, UPDATE it at its original position
       updatedHistory[recordIndex] = newResult;
     } else {
-      // If no record was found (as a fallback), add a new one
       updatedHistory.push(newResult);
     }
-    
     localStorage.setItem('quizHistory', JSON.stringify(updatedHistory));
     setFinalScore({ score: finalScoreValue, total: totalAttempts });
     setShowCompletionModal(true);
@@ -242,13 +234,16 @@ const QuizPage = () => {
             );
           })}
         </div>
-        {/* Redundant button removed for cleaner UI */}
       </div>
     );
   };
   
   const renderQuiz = () => {
     let quizContent, quizTitle;
+    // --- THIS IS THE FIX ---
+    // The quizId variable is now correctly defined within the scope of this function.
+    const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
+
     if (isCustomQuiz) {
       const customQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
       const quiz = customQuizzes.find(q => q.id === level);
@@ -261,8 +256,9 @@ const QuizPage = () => {
       quizContent = standardQuiz.quiz_content;
       quizTitle = standardQuiz.title;
     }
-    return <Quiz
-        key={quizId} // This key forces a full reset when the quiz changes
+    return (
+      <Quiz
+        key={quizId} // The key is now guaranteed to have a value
         quizContent={quizContent}
         quizTitle={quizTitle}
         quizType={category}
@@ -271,7 +267,8 @@ const QuizPage = () => {
         level={level}
         category={category}
         difficulty={selectedDifficulty}
-    />;
+      />
+    );
   };
 
   return (
