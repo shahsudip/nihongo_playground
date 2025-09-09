@@ -7,11 +7,11 @@ const LevelSelectionPage = () => {
   const navigate = useNavigate(); // Use navigate for the back button
 
   const levels = [
-    { name: 'n5', title: 'Beginner' },
-    { name: 'n4', title: 'Elementary'},
-    { name: 'n3', title: 'Intermediate' },
-    { name: 'n2', title: 'Upper-Intermediate' },
-    { name: 'n1', title: 'Advanced' },
+    { name: 'n5' },
+    { name: 'n4'},
+    { name: 'n3' },
+    { name: 'n2' },
+    { name: 'n1' },
   ];  const categories = ['vocabulary', 'kanji', 'grammar', 'reading'];
 
   const renderCategorySelection = () => {
@@ -47,8 +47,7 @@ const LevelSelectionPage = () => {
           {levels.map((level) => (
             <button key={level.name} onClick={() => setSelectedLevel(level.name)} className="level-card">
               <span className="level-card-name">{level.name.toUpperCase()}</span>
-              <h3 className="level-card-title">{level.title}</h3>
-              <p className="level-card-description">{level.description}</p>
+          
             </button>
           ))}
         </div>
