@@ -157,7 +157,7 @@ const QuizPage = () => {
     }
   }, [level, category, isCustomQuiz]);
 
-  const onQuizComplete = (finalScoreValue, totalAttempts) => {
+   const onQuizComplete = (finalScoreValue, totalAttempts) => {
     if (!isCustomQuiz) {
       const storageKey = `quiz-progress-${level}-${category}`;
       if (selectedDifficulty === 'easy' && unlockedDifficulty === 'easy') {
@@ -170,8 +170,6 @@ const QuizPage = () => {
     const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
     const history = JSON.parse(localStorage.getItem('quizHistory')) || [];
     
-    // --- THIS IS THE FIX ---
-    // Find the correct quiz title from the correct data source
     let quizTitle = "Custom Quiz";
     if (isCustomQuiz) {
         const customQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
@@ -182,10 +180,13 @@ const QuizPage = () => {
         if(standardQuiz) quizTitle = standardQuiz.title;
     }
     
+    // Find the index of the existing record for this quiz
+    const recordIndex = history.findIndex(item => item.quizId === quizId);
+
     const newResult = {
       quizId: quizId,
-      id: Date.now(),
-      title: quizTitle, // Use the correct title
+      id: recordIndex > -1 ? history[recordIndex].id : Date.now(), // Reuse original ID if found
+      title: quizTitle,
       level: isCustomQuiz ? level : level,
       category,
       difficulty: isCustomQuiz ? 'custom' : selectedDifficulty,
@@ -193,15 +194,18 @@ const QuizPage = () => {
       total: totalAttempts,
       timestamp: new Date().toISOString(),
     };
+    
+    const updatedHistory = [...history]; // Create a mutable copy
 
-    const recordIndex = history.findIndex(item => item.quizId === quizId);
     if (recordIndex > -1) {
-      history[recordIndex] = newResult;
+      // If a record was found, UPDATE it at its original position
+      updatedHistory[recordIndex] = newResult;
     } else {
-      history.push(newResult);
+      // If no record was found (as a fallback), add a new one
+      updatedHistory.push(newResult);
     }
     
-    localStorage.setItem('quizHistory', JSON.stringify(history));
+    localStorage.setItem('quizHistory', JSON.stringify(updatedHistory));
     setFinalScore({ score: finalScoreValue, total: totalAttempts });
     setShowCompletionModal(true);
   };
