@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import JapaneseText from '../components/JapaneseText';
-import { quizData as staticQuizData } from '../data/quiz_data.js';
+import JapaneseText from '../components/JapaneseText.jsx';
+import { quizData as staticQuizData } from '../data/quiz_data.jsx';
 
 // Helper function to parse the comma-separated text
 const parseCsvToQuizContent = (csvText) => {
