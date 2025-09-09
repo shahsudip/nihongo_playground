@@ -218,7 +218,7 @@ const QuizPage = () => {
   
   const handleEndQuizEarly = (stats) => {
     const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
-    navigate('/results', { state: { score: stats.score, total: stats.total, quizId: quizId } });
+    navigate('/profile', { state: { score: stats.score, total: stats.total, quizId: quizId } });
   };
 
   const renderDifficultySelection = () => {
