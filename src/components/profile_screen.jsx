@@ -44,11 +44,22 @@ const ProfilePage = () => {
       tag: newQuizTag,
       quiz_content: quizContent,
     };
+    
     const updatedQuizzes = [...customQuizzes, newQuiz];
     setCustomQuizzes(updatedQuizzes);
     localStorage.setItem('customQuizzes', JSON.stringify(updatedQuizzes));
     setNewQuizTitle('');
     setCsvText('');
+  };
+    const handleDeleteQuiz = (quizIdToDelete) => {
+    // Create a new array excluding the quiz with the matching ID
+    const updatedQuizzes = customQuizzes.filter(quiz => quiz.id !== quizIdToDelete);
+
+    // Update the state
+    setCustomQuizzes(updatedQuizzes);
+
+    // Update localStorage to make the deletion permanent
+    localStorage.setItem('customQuizzes', JSON.stringify(updatedQuizzes));
   };
   
   const filteredList = useMemo(() => {
@@ -132,6 +143,16 @@ const ProfilePage = () => {
                   const creationDate = new Date(parseInt(quiz.id.split('-')[1])).toLocaleDateString();
                   return (
                     <div key={quiz.id} className="history-item custom-quiz-card">
+                    {/* --- ADD THE DELETE BUTTON HERE --- */}
+                    <button
+                      onClick={() => handleDeleteQuiz(quiz.id)}
+                      className="delete-quiz-button"
+                      aria-label="Delete quiz"
+                    >
+                      🗑️
+                    </button>
+              
+                 
                       <p className="custom-quiz-date">{creationDate}</p>
                       <h3 className="custom-quiz-title">{quiz.title}</h3>
                       <div className="custom-quiz-meta">
