@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import JapaneseText from '../components/JapaneseText.jsx';
-import { useQuizManager } from '../logic/use_quiz_manager.js';
+import { useQuizManager } from '../logic/use_quiz_manager.jsx';
 
 const parseCsvToQuizContent = (csvText) => {
   if (!csvText) return [];
