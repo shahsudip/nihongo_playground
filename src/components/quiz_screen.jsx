@@ -122,6 +122,7 @@ const QuizPage = () => {
   const [unlockedDifficulty, setUnlockedDifficulty] = useState('easy');
   const [showCompletionModal, setShowCompletionModal] = useState(false);
   const [finalScore, setFinalScore] = useState({ score: 0, total: 0 });
+  const [quizAttemptId, setQuizAttemptId] = useState(Date.now()); // <<< FIX: Add state for unique attempt ID
 
   const difficulties = ['easy', 'medium', 'hard'];
   const difficultyMap = { easy: 1, medium: 2, hard: 3 };
@@ -227,7 +228,16 @@ const QuizPage = () => {
             const isLocked = currentLevelNum > unlockedLevelNum;
             const hasContent = categoryData[difficulty]?.quiz_content?.length > 0;
             return (
-              <button key={difficulty} className={`difficulty-button ${isLocked || !hasContent ? 'locked' : ''}`} disabled={isLocked || !hasContent} onClick={() => setSelectedDifficulty(difficulty)} title={!hasContent ? "No questions for this difficulty yet" : ""}>
+              <button 
+                key={difficulty} 
+                className={`difficulty-button ${isLocked || !hasContent ? 'locked' : ''}`} 
+                disabled={isLocked || !hasContent} 
+                onClick={() => {
+                  setSelectedDifficulty(difficulty);
+                  setQuizAttemptId(Date.now()); // <<< FIX: Set new ID on click
+                }} 
+                title={!hasContent ? "No questions for this difficulty yet" : ""}
+              >
                 {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}
                 {(isLocked || !hasContent) && <span className="lock-icon">?</span>}
               </button>
@@ -240,8 +250,6 @@ const QuizPage = () => {
   
   const renderQuiz = () => {
     let quizContent, quizTitle;
-    // --- THIS IS THE FIX ---
-    // The quizId variable is now correctly defined within the scope of this function.
     const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
 
     if (isCustomQuiz) {
@@ -268,7 +276,7 @@ const QuizPage = () => {
     }
     return (
       <Quiz
-        key={quizId} // The key is now guaranteed to have a value
+        key={`${quizId}-${quizAttemptId}`} // <<< FIX: Create a unique key for each attempt
         quizContent={quizContent}
         quizTitle={quizTitle}
         quizType={category}
