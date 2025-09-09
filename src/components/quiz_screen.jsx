@@ -261,7 +261,17 @@ const QuizPage = () => {
       quizContent = standardQuiz.quiz_content;
       quizTitle = standardQuiz.title;
     }
-    return <Quiz quizContent={quizContent} quizTitle={quizTitle} quizType={category} onComplete={onQuizComplete} onEndQuizEarly={handleEndQuizEarly} />;
+    return <Quiz
+        key={quizId} // This key forces a full reset when the quiz changes
+        quizContent={quizContent}
+        quizTitle={quizTitle}
+        quizType={category}
+        onComplete={onQuizComplete}
+        onEndQuizEarly={handleEndQuizEarly}
+        level={level}
+        category={category}
+        difficulty={selectedDifficulty}
+    />;
   };
 
   return (
