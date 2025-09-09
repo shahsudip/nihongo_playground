@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { quizData as staticQuizData } from '../data/quiz_data.js'; // Renamed for clarity
-import { useSrsQuiz } from '../hooks/quiz_logic_hook.js';
+import { useSrsQuiz } from '../logic/quiz_logic_hook.js';
 
 // --- Sub-Component: ScoreCounter ---
 const ScoreCounter = ({ correct, incorrect, mastered, total, unseen }) => (
