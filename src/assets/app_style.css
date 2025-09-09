@@ -210,7 +210,7 @@ body {
 
 .custom-quiz-card {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   background: var(--background-light);
   border-radius: 12px;
   display: flex;
@@ -270,8 +270,8 @@ body {
 }
 
 .custom-quiz-actions .action-button {
-  width: 80%;
-  max-width: 250px;
+  display: flex;
+  justify-content: center;
 }
 
 .filter-tabs {
@@ -341,6 +341,7 @@ body {
   max-height: 55vh; /* Sets maximum height to 55% of the viewport height */
   overflow-y: auto;   /* Adds a vertical scrollbar ONLY when needed */
   padding-right: 10px;/* Adds a little space for the scrollbar */
+  gap: 15px;
 }
 
 .profile-sidebar .history-list::-webkit-scrollbar {
@@ -535,4 +536,14 @@ body {
 @media (max-width: 480px) {
   .modal-actions { flex-direction: column; gap: 15px; }
   .modal-actions .action-button { max-width: 100%; }
+}
+/* This adds a margin to every card except the very last one */
+.custom-quiz-card:not(:last-child) {
+  margin-bottom: 20px;
+}
+/* Add spacing between custom quiz cards */
+.profile-main-content .history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* This adds 20px of space between each card */
 }
