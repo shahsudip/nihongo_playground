@@ -178,12 +178,14 @@ body {
   grid-template-columns: 2fr 1fr; 
   gap: 30px;
   align-items: start;
+  height: calc(100vh - 80px);
+
 }
 
 .profile-main-content {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .profile-sidebar {
