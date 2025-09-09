@@ -5,10 +5,12 @@ import { useSrsQuiz } from '../logic/quiz_logic_hook.jsx';
 
 
 
-// --- Sub-Components (ScoreCounter, CompletionModal, FirstPassModal, Quiz) ---
-// NOTE: These sub-components are unchanged from the last full version.
-// They are included here for completeness of the file.
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { quizData as staticQuizData } from '../data/quizData.js';
+import { useSrsQuiz } from '../hooks/useSrsQuiz.js';
 
+// --- Sub-Component: ScoreCounter ---
 const ScoreCounter = ({ correct, incorrect, mastered, total, unseen }) => (
   <div className="score-counter-container">
     <div className="score-item unseen">New: <span>{unseen}</span></div>
@@ -18,6 +20,7 @@ const ScoreCounter = ({ correct, incorrect, mastered, total, unseen }) => (
   </div>
 );
 
+// --- Sub-Component: Final Completion Modal ---
 const CompletionModal = ({ score, total, onContinue }) => (
   <div className="modal-overlay">
     <div className="modal-content">
@@ -29,6 +32,7 @@ const CompletionModal = ({ score, total, onContinue }) => (
   </div>
 );
 
+// --- Sub-Component: First Pass Modal ---
 const FirstPassModal = ({ score, total, onContinueReview, onEndQuiz }) => (
   <div className="modal-overlay">
     <div className="modal-content">
@@ -44,8 +48,8 @@ const FirstPassModal = ({ score, total, onContinueReview, onEndQuiz }) => (
   </div>
 );
 
+// --- Sub-Component: The Quiz View ---
 const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly }) => {
-  const navigate = useNavigate();
   const [showFirstPassModal, setShowFirstPassModal] = useState(false);
   const quizState = useSrsQuiz(quizContent, quizType);
   const { currentCard, currentOptions, handleAnswer, acknowledgeFirstPass, isComplete, isLoading, isFirstPassComplete, hasAcknowledgedFirstPass, firstPassStats, totalCorrect, totalIncorrect, masteredCount, deckSize, unseenCount } = quizState;
@@ -53,15 +57,19 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly }) 
   const [isAnswered, setIsAnswered] = useState(false);
 
   useEffect(() => {
-    if (isFirstPassComplete && !hasAcknowledgedFirstPass) setShowFirstPassModal(true);
-    if (isComplete) onComplete(totalCorrect, totalCorrect + totalIncorrect);
+    if (isFirstPassComplete && !hasAcknowledgedFirstPass) {
+      setShowFirstPassModal(true);
+    }
+    if (isComplete) {
+      onComplete(totalCorrect, totalCorrect + totalIncorrect);
+    }
   }, [isFirstPassComplete, hasAcknowledgedFirstPass, isComplete, onComplete, totalCorrect, totalIncorrect]);
 
   const handleContinueReview = () => {
     setShowFirstPassModal(false);
     acknowledgeFirstPass();
   };
-
+  
   const handleOptionClick = (option) => {
     if (isAnswered) return;
     setSelectedOption(option);
@@ -81,7 +89,13 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly }) 
     <>
       <div className="quiz-card">
         <h1 className="quiz-title">{quizTitle}</h1>
-        <ScoreCounter correct={totalCorrect} incorrect={totalIncorrect} mastered={masteredCount} total={deckSize} unseen={unseenCount} />
+        <ScoreCounter 
+          correct={totalCorrect} 
+          incorrect={totalIncorrect} 
+          mastered={masteredCount}
+          total={deckSize}
+          unseen={unseenCount}
+        />
         <h2 className="question-text">{currentCard.questionText}</h2>
         <div className="options-grid">
           {currentOptions.map((option, index) => {
@@ -92,7 +106,11 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly }) 
               if (isCorrectAnswer) buttonClass += ' correct';
               else if (isSelected) buttonClass += ' incorrect';
             }
-            return (<button key={index} onClick={() => handleOptionClick(option)} className={buttonClass} disabled={isAnswered}>{option}</button>);
+            return (
+              <button key={index} onClick={() => handleOptionClick(option)} className={buttonClass} disabled={isAnswered}>
+                {option}
+              </button>
+            );
           })}
         </div>
       </div>
@@ -100,6 +118,7 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly }) 
     </>
   );
 };
+
 
 // --- Main Page Component ---
 const QuizPage = () => {
@@ -116,6 +135,28 @@ const QuizPage = () => {
   const difficultyMap = { easy: 1, medium: 2, hard: 3 };
 
   useEffect(() => {
+    if (selectedDifficulty || isCustomQuiz) {
+      const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
+      const history = JSON.parse(localStorage.getItem('quizHistory')) || [];
+      const hasBeenStarted = history.some(item => item.quizId === quizId);
+      if (!hasBeenStarted) {
+        const newRecord = {
+          quizId: quizId,
+          id: Date.now(),
+          level: isCustomQuiz ? level : level,
+          category: category,
+          difficulty: isCustomQuiz ? 'custom' : selectedDifficulty,
+          score: 0,
+          total: 1,
+          timestamp: new Date().toISOString(),
+        };
+        const updatedHistory = [...history, newRecord];
+        localStorage.setItem('quizHistory', JSON.stringify(updatedHistory));
+      }
+    }
+  }, [selectedDifficulty, isCustomQuiz, level, category]);
+
+  useEffect(() => {
     if (!isCustomQuiz) {
       const storageKey = `quiz-progress-${level}-${category}`;
       const savedProgress = localStorage.getItem(storageKey);
@@ -124,7 +165,6 @@ const QuizPage = () => {
   }, [level, category, isCustomQuiz]);
 
   const onQuizComplete = (finalScoreValue, totalAttempts) => {
-    const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
     if (!isCustomQuiz) {
       const storageKey = `quiz-progress-${level}-${category}`;
       if (selectedDifficulty === 'easy' && unlockedDifficulty === 'easy') {
@@ -134,27 +174,40 @@ const QuizPage = () => {
       }
     }
     
-    const allQuizzes = JSON.parse(localStorage.getItem('allQuizzes')) || [];
-    const quizInfo = allQuizzes.find(q => q.uniqueId === quizId) || {};
+    const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
+    const history = JSON.parse(localStorage.getItem('quizHistory')) || [];
+    
+    // --- THIS IS THE FIX ---
+    // Find the correct quiz title from the correct data source
+    let quizTitle = "Custom Quiz";
+    if (isCustomQuiz) {
+        const customQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
+        const quiz = customQuizzes.find(q => q.id === level);
+        if(quiz) quizTitle = quiz.title;
+    } else {
+        const standardQuiz = staticQuizData[level]?.[category]?.[selectedDifficulty];
+        if(standardQuiz) quizTitle = standardQuiz.title;
+    }
     
     const newResult = {
-      quizId,
+      quizId: quizId,
       id: Date.now(),
-      title: quizInfo.title || "Quiz",
-      level: isCustomQuiz ? 'Custom' : level,
+      title: quizTitle, // Use the correct title
+      level: isCustomQuiz ? level : level,
       category,
-      difficulty: isCustomQuiz ? 'N/A' : selectedDifficulty,
+      difficulty: isCustomQuiz ? 'custom' : selectedDifficulty,
       score: finalScoreValue,
       total: totalAttempts,
       timestamp: new Date().toISOString(),
     };
-    const history = JSON.parse(localStorage.getItem('quizHistory')) || [];
+
     const recordIndex = history.findIndex(item => item.quizId === quizId);
     if (recordIndex > -1) {
       history[recordIndex] = newResult;
     } else {
       history.push(newResult);
     }
+    
     localStorage.setItem('quizHistory', JSON.stringify(history));
     setFinalScore({ score: finalScoreValue, total: totalAttempts });
     setShowCompletionModal(true);
@@ -192,6 +245,7 @@ const QuizPage = () => {
             );
           })}
         </div>
+        {/* Redundant button removed for cleaner UI */}
       </div>
     );
   };
