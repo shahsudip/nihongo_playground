@@ -156,10 +156,8 @@ const QuizPage = () => {
     }
   }, [level, category, isCustomQuiz]);
 
-// Find this function in your src/pages/QuizPage.jsx and replace it completely.
-
   const onQuizComplete = (finalScoreValue, totalAttempts) => {
-    // This part for unlocking standard quizzes is correct and remains the same.
+    const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
     if (!isCustomQuiz) {
       const storageKey = `quiz-progress-${level}-${category}`;
       if (selectedDifficulty === 'easy' && unlockedDifficulty === 'easy') {
@@ -169,52 +167,41 @@ const QuizPage = () => {
       }
     }
     
-    // 1. Create the consistent, unique ID for the quiz that was just played.
-    const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
-    const history = JSON.parse(localStorage.getItem('quizHistory')) || [];
-    
-    // 2. Find the correct title for the quiz from its original data source.
     let quizTitle = "Custom Quiz";
     if (isCustomQuiz) {
-        const customQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
-        const quiz = customQuizzes.find(q => q.id === level);
-        if(quiz) quizTitle = quiz.title;
+      const customQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
+      const quiz = customQuizzes.find(q => q.id === level);
+      if(quiz) quizTitle = quiz.title;
     } else {
-        const standardQuiz = staticQuizData[level]?.[category]?.[selectedDifficulty];
-        if(standardQuiz) quizTitle = standardQuiz.title;
+      const standardQuiz = staticQuizData[level]?.[category]?.[selectedDifficulty];
+      if(standardQuiz) quizTitle = standardQuiz.title;
     }
     
-    // 3. Find the index of the existing record for this quiz in your history.
-    const recordIndex = history.findIndex(item => item.quizId === quizId);
-
-    // 4. Create the new, updated result object.
     const newResult = {
       quizId: quizId,
-      // If we found a record, reuse its original unique timestamp ID. Otherwise, create a new one.
-      id: recordIndex > -1 ? history[recordIndex].id : Date.now(),
+      id: Date.now(),
       title: quizTitle,
       level: isCustomQuiz ? level : level,
       category,
       difficulty: isCustomQuiz ? 'custom' : selectedDifficulty,
       score: finalScoreValue,
       total: totalAttempts,
-      timestamp: new Date().toISOString(), // Always update to the latest attempt time
+      timestamp: new Date().toISOString(),
     };
     
-    const updatedHistory = [...history]; // Create a safe copy of the history
-
-    // 5. If a record was found (recordIndex is not -1), UPDATE it. Otherwise, add it.
+    const history = JSON.parse(localStorage.getItem('quizHistory')) || [];
+    const recordIndex = history.findIndex(item => item.quizId === quizId);
+    const updatedHistory = [...history];
     if (recordIndex > -1) {
       updatedHistory[recordIndex] = newResult;
     } else {
-      updatedHistory.push(newResult); 
+      updatedHistory.push(newResult);
     }
-    
-    // 6. Save the corrected history and show the completion modal.
     localStorage.setItem('quizHistory', JSON.stringify(updatedHistory));
     setFinalScore({ score: finalScoreValue, total: totalAttempts });
     setShowCompletionModal(true);
   };
+
   const handleModalContinue = () => {
     setShowCompletionModal(false);
     navigate('/profile');
