@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
+import JapaneseText from '../components/JapaneseText';
+import { quizData as staticQuizData } from '../data/quiz_data.js';
 
+// Helper function to parse the comma-separated text
 const parseCsvToQuizContent = (csvText) => {
   if (!csvText) return [];
   return csvText.split('\n').slice(1).map(line => line.trim()).filter(line => line)
@@ -16,9 +19,7 @@ const ProfilePage = () => {
   const [newQuizTitle, setNewQuizTitle] = useState('');
   const [newQuizTag, setNewQuizTag] = useState('vocabulary');
   const [csvText, setCsvText] = useState('');
-  
-  // --- NEW: State for the history filter ---
-  const [activeFilter, setActiveFilter] = useState('all');
+  const [activeFilter, setActiveFilter] = useState('mastered');
 
   useEffect(() => {
     const savedHistory = JSON.parse(localStorage.getItem('quizHistory')) || [];
@@ -50,30 +51,76 @@ const ProfilePage = () => {
     setCsvText('');
   };
   
-  // --- NEW: Memoized filtering logic for quiz history ---
-  const filteredHistory = useMemo(() => {
-    switch (activeFilter) {
-      case 'mastered':
-        return history.filter(item => item.score === item.total);
-      case 'incomplete':
-        return history.filter(item => item.score > 0 && item.score < item.total);
-      case 'incorrect':
-        return history.filter(item => item.score === 0);
-      case 'all':
-      default:
-        return history;
+  const filteredList = useMemo(() => {
+    if (activeFilter === 'mastered') {
+      return history.filter(item => item.score === item.total);
     }
-  }, [history, activeFilter]);
+    if (activeFilter === 'incomplete') {
+      return history.filter(item => item.score < item.total);
+    }
+    if (activeFilter === 'unattended') {
+      const allPossibleQuizzes = [];
+      Object.keys(staticQuizData).forEach(level => {
+        Object.keys(staticQuizData[level]).forEach(category => {
+          Object.keys(staticQuizData[level][category]).forEach(difficulty => {
+            allPossibleQuizzes.push({
+              id: `${level}-${category}-${difficulty}`,
+              title: staticQuizData[level][category][difficulty].title,
+              level, category, difficulty
+            });
+          });
+        });
+      });
+      customQuizzes.forEach(quiz => {
+        allPossibleQuizzes.push({
+          id: quiz.id,
+          title: quiz.title,
+          level: quiz.id,
+          category: quiz.tag,
+          difficulty: 'custom'
+        });
+      });
+      const completedQuizIds = new Set(history.map(item => {
+        if (item.level.startsWith('custom-')) return item.level;
+        return `${item.level}-${item.category}-${item.difficulty}`;
+      }));
+      return allPossibleQuizzes.filter(quiz => !completedQuizIds.has(quiz.id));
+    }
+    return [];
+  }, [history, customQuizzes, activeFilter]);
 
   return (
     <div className="profile-container">
       <h1 className="profile-title">My Dashboard</h1>
       <div className="profile-grid-container">
-
         <div className="profile-main-content">
           <div className="profile-section">
             <h2 className="profile-subtitle">Create a New Quiz</h2>
-            <div className="creator-form-inline">{/* ... Creator Form JSX ... */}</div>
+            <div className="creator-form-inline">
+              <input 
+                type="text" 
+                value={newQuizTitle} 
+                onChange={(e) => setNewQuizTitle(e.target.value)} 
+                placeholder="Enter Quiz Title (e.g., Chapter 1 Vocab)" 
+              />
+              <div className="tag-selector">
+                <button className={`tag-button ${newQuizTag === 'vocabulary' ? 'active' : ''}`} onClick={() => setNewQuizTag('vocabulary')}>
+                  <JapaneseText>語彙</JapaneseText> (Vocab)
+                </button>
+                <button className={`tag-button ${newQuizTag === 'kanji' ? 'active' : ''}`} onClick={() => setNewQuizTag('kanji')}>
+                  <JapaneseText>漢字</JapaneseText> (Kanji)
+                </button>
+              </div>
+              <textarea 
+                value={csvText}
+                onChange={(e) => setCsvText(e.target.value)}
+                placeholder="Paste your list here...&#10;Format: English Meaning,Kanji,Hiragana"
+                rows="8"
+              ></textarea>
+              <button onClick={handleCreateQuiz} className="action-button next-level create-button">
+                Create and Save Quiz
+              </button>
+            </div>
           </div>
           <div className="profile-section">
             <h2 className="profile-subtitle">My Custom Quizzes</h2>
@@ -101,29 +148,28 @@ const ProfilePage = () => {
             )}
           </div>
         </div>
-
         <div className="profile-sidebar">
           <div className="profile-section">
-            <h2 className="profile-subtitle">Recent Quiz History</h2>
-            
-            {/* --- NEW: Filter Tabs --- */}
+            <h2 className="profile-subtitle">Quiz Status</h2>
             <div className="filter-tabs">
-              <button onClick={() => setActiveFilter('all')} className={activeFilter === 'all' ? 'active' : ''}>All</button>
               <button onClick={() => setActiveFilter('mastered')} className={activeFilter === 'mastered' ? 'active' : ''}>Mastered</button>
               <button onClick={() => setActiveFilter('incomplete')} className={activeFilter === 'incomplete' ? 'active' : ''}>Incomplete</button>
-              <button onClick={() => setActiveFilter('incorrect')} className={activeFilter === 'incorrect' ? 'active' : ''}>Incorrect</button>
+              <button onClick={() => setActiveFilter('unattended')} className={activeFilter === 'unattended' ? 'active' : ''}>Unattended</button>
             </div>
-            
-            {filteredHistory.length === 0 ? (
+            {filteredList.length === 0 ? (
               <div className="no-history-card">
-                <p className="empty-state-text">No quiz results for this filter.</p>
-                {history.length === 0 && <Link to="/levels" className="action-button next-level">Start a Quiz!</Link>}
+                <p className="empty-state-text">No quizzes match this filter.</p>
+                {history.length === 0 && activeFilter !== 'unattended' && <Link to="/levels" className="action-button next-level">Start a Quiz!</Link>}
               </div>
             ) : (
               <div className="history-list">
-                {filteredHistory.map((item) => {
-                  const isMastered = item.score === item.total;
-                  return (
+                {filteredList.map((item) => (
+                  activeFilter === 'unattended' ? (
+                    <div key={item.id} className="history-item unattended-item">
+                       <h3>{item.title}</h3>
+                       <Link to={`/quiz/${item.level}/${item.category}`} className="action-button next-level">Start Quiz</Link>
+                    </div>
+                  ) : (
                     <div key={item.id} className="history-item">
                       <div className="history-item-header">
                         <h3>{item?.level?.toUpperCase()} - {item?.category} ({item?.difficulty})</h3>
@@ -133,15 +179,14 @@ const ProfilePage = () => {
                         <p>Score: <strong>{item?.score} / {item?.total}</strong></p>
                         <div className="progress-bar-container"><div className="progress-bar-fill" style={{ width: `${item.total > 0 ? (item.score / item.total) * 100 : 0}%` }}></div></div>
                       </div>
-                      {/* --- NEW: Conditional Retry Button --- */}
-                      {!isMastered && (
+                      {! (item.score === item.total) && (
                         <div className="history-item-actions">
                           <Link to={`/quiz/${item.level}/${item.category}`} className="action-button restart">Retry Quiz</Link>
                         </div>
                       )}
                     </div>
-                  );
-                })}
+                  )
+                ))}
               </div>
             )}
           </div>
