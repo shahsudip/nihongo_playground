@@ -539,11 +539,8 @@ body {
 }
 /* This adds a margin to every card except the very last one */
 .custom-quiz-card:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-/* Add spacing between custom quiz cards */
-.profile-main-content .history-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* This adds 20px of space between each card */
+.history-list :not(:last-child) {
+  margin-bottom: 10px;
 }
