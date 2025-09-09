@@ -56,14 +56,14 @@ body {
 /* === LEVEL & CATEGORY SELECTION === */
 .level-selection-container { display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
 .level-title, .category-title { font-size: 3rem; color: var(--primary-green); margin-bottom: 50px; text-shadow: 0 0 10px rgba(88, 167, 0, 0.5); }
-.level-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; width: 100%; max-width: 800px; align-items: stretch; }
+.level-grid { display: grid;    grid-template-columns: repeat(2, 1fr);gap: 25px; }
 .level-card {
   background: var(--background-light);
   color: var(--text-light);
   text-decoration: none;
   font-size: 1.8rem; /* MODIFICATION 2: Slightly smaller font size */
   font-weight: bold;
-  padding: 25px 20px; /* MODIFICATION 2: Reduced padding */
+  padding: 15px 10px; /* MODIFICATION 2: Reduced padding */
   border-radius: 10px;
   text-align: center;
   transition: transform 0.2s ease, background-color 0.2s ease;
@@ -73,6 +73,10 @@ body {
   font-family: inherit;
   max-width: 350px; /* MODIFICATION 2: Set a max-width */
   margin: 0 auto; /* MODIFICATION 2: Center card in grid cell */
+}
+.level-grid .level-card:last-child {
+  /* Make the last item start at column line 1 and end at the last line (-1) */
+  grid-column: 1 / -1;
 }
 .level-card:hover { transform: translateY(-5px); background-color: var(--primary-green); }
 .category-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
