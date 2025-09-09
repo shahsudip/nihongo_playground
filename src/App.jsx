@@ -9,7 +9,7 @@ import ResultsPage from './components/result_screen.jsx';
 import ProfilePage from './components/profile_screen.jsx';
 
 // Import the MainLayout component
-import MainLayout from './components/MainLayout.jsx';
+import MainLayout from './components/main_layout.jsx';
 
 
 function App() {
