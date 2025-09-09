@@ -601,3 +601,39 @@ body {
   transform: scale(1.1);
 }
 
+/* Styles the position of the date and badge on the card header */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Base style for the status badge itself */
+.status-badge {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 15px;
+  text-transform: capitalize;
+}
+
+/* --- Unique Colors for Each Status --- */
+
+/* Green for Mastered */
+.status-badge.status-mastered { 
+  background-color: rgba(72, 187, 120, 0.2);
+  color: #68d391; 
+}
+
+/* Blue for Incomplete */
+.status-badge.status-incomplete { 
+  background-color: rgba(66, 153, 225, 0.2);
+  color: #70b3f0; 
+}
+
+/* Gray for Unattended */
+.status-badge.status-unattended { 
+  background-color: rgba(74, 85, 104, 0.2);
+  color: var(--text-medium); 
+}

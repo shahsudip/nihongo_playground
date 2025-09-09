@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import JapaneseText from '../components/JapaneseText.jsx';
-import { useQuizManager } from '../hooks/useQuizManager.js'; // The central data source
+import { useQuizManager } from '../hooks/use_quiz_manager.jsx'; // The central data source
 
 const parseCsvToQuizContent = (csvText) => {
   if (!csvText) return [];
