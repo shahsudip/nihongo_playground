@@ -12,12 +12,8 @@ const parseCsvToQuizContent = (csvText) => {
 };
 
 const ProfilePage = () => {
-  const navigate = useNavigate();
-  // State for displaying existing data
   const [history, setHistory] = useState([]);
   const [customQuizzes, setCustomQuizzes] = useState([]);
-
-  // State for the new quiz creation form
   const [newQuizTitle, setNewQuizTitle] = useState('');
   const [newQuizTag, setNewQuizTag] = useState('vocabulary');
   const [csvText, setCsvText] = useState('');
@@ -34,7 +30,6 @@ const ProfilePage = () => {
       alert('Please provide a title and paste your vocabulary list.');
       return;
     }
-
     const quizContent = parseCsvToQuizContent(csvText);
     if (quizContent.length === 0) {
       alert('Could not parse any questions. Please check the format.');
@@ -45,25 +40,20 @@ const ProfilePage = () => {
       id: `custom-${Date.now()}`,
       title: newQuizTitle,
       tag: newQuizTag,
-      easy: { title: `${newQuizTitle} (Easy)`, quiz_content: quizContent },
-      medium: { title: `${newQuizTitle} (Medium)`, quiz_content: [] },
-      hard: { title: `${newQuizTitle} (Hard)`, quiz_content: [] },
+      quiz_content: quizContent,
     };
 
     const updatedQuizzes = [...customQuizzes, newQuiz];
-    setCustomQuizzes(updatedQuizzes); // Update the state to instantly show the new quiz
-    localStorage.setItem('customQuizzes', JSON.stringify(updatedQuizzes)); // Save to storage
-
-    // Clear the form for the next entry
+    setCustomQuizzes(updatedQuizzes);
+    localStorage.setItem('customQuizzes', JSON.stringify(updatedQuizzes));
     setNewQuizTitle('');
     setCsvText('');
   };
 
   return (
     <div className="profile-container">
-      <h1 className="profile-title">My Profile</h1>
+      <h1 className="profile-title">My Profile & Quizzes</h1>
 
-      {/* --- Create Quiz Section --- */}
       <div className="profile-section">
         <h2 className="profile-subtitle">Create a New Quiz</h2>
         <div className="creator-form-inline">
@@ -75,10 +65,10 @@ const ProfilePage = () => {
           />
           <div className="tag-selector">
             <button className={`tag-button ${newQuizTag === 'vocabulary' ? 'active' : ''}`} onClick={() => setNewQuizTag('vocabulary')}>
-             (Vocab)
+               Vocab
             </button>
             <button className={`tag-button ${newQuizTag === 'kanji' ? 'active' : ''}`} onClick={() => setNewQuizTag('kanji')}>
-            (Kanji)
+            Kanji
             </button>
           </div>
           <textarea 
@@ -93,7 +83,6 @@ const ProfilePage = () => {
         </div>
       </div>
 
-      {/* --- Custom Quizzes Section --- */}
       <div className="profile-section">
         <h2 className="profile-subtitle">My Custom Quizzes</h2>
         {customQuizzes.length === 0 ? (
@@ -107,13 +96,10 @@ const ProfilePage = () => {
                   <span className="history-item-tag">{quiz.tag}</span>
                 </div>
                 <div className="history-item-body">
-                  <p>{quiz.easy.quiz_content.length} terms</p>
-                  <Link 
-        to={`/quiz/custom/${quiz.id}`} 
-        className="action-button restart"
-      >
-        Start Quiz
-      </Link>
+                  <p>{quiz.quiz_content.length} terms</p>
+                  <Link to={`/quiz/${quiz.id}/${quiz.tag}`} className="action-button restart">
+                    Start Quiz
+                  </Link>
                 </div>
               </div>
             ))}
@@ -121,7 +107,6 @@ const ProfilePage = () => {
         )}
       </div>
 
-      {/* --- Quiz History Section --- */}
       <div className="profile-section">
         <h2 className="profile-subtitle">Recent Quiz History</h2>
         {history.length === 0 ? (
