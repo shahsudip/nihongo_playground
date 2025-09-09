@@ -102,6 +102,39 @@ body {
 .history-item-header { border-bottom: 1px solid var(--surface-light); }
 .progress-bar-container { background: var(--surface-light); }
 .progress-bar-fill { background-color: var(--primary-green); }
+/* --- New Profile Page Two-Column Layout --- */
+.profile-grid-container {
+  display: grid;
+  /* Create two columns: the first takes up 2 parts, the second takes up 1 part */
+  grid-template-columns: 2fr 1fr; 
+  gap: 30px;
+  align-items: start; /* Align items to the top of their grid area */
+}
+
+.profile-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Space between creator and custom quiz list */
+}
+
+.profile-sidebar {
+  background-color: var(--background-dark); /* Slightly darker background for contrast */
+  padding: 20px;
+  border-radius: 12px;
+  position: sticky; /* Makes the sidebar stick on screen while scrolling */
+  top: 120px; /* Position below the sticky header */
+}
+
+/* --- Responsive adjustment for the new layout --- */
+@media (max-width: 992px) {
+  .profile-grid-container {
+    /* Switch to a single column on tablet and mobile */
+    grid-template-columns: 1fr;
+  }
+  .profile-sidebar {
+    position: static; /* Unstick the sidebar on mobile */
+  }
+}
 
 /* --- Other misc styles from previous steps --- */
 @keyframes gradient-animation { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }

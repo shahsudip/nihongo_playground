@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import JapaneseText from '../components/functions/no_translate.jsx'; // Make sure this component exists
+import JapaneseText from '../components/JapaneseText';
 
-// Helper function to parse the comma-separated text
 const parseCsvToQuizContent = (csvText) => {
   if (!csvText) return [];
   return csvText.split('\n').slice(1).map(line => line.trim()).filter(line => line)
@@ -22,7 +21,6 @@ const ProfilePage = () => {
   useEffect(() => {
     const savedHistory = JSON.parse(localStorage.getItem('quizHistory')) || [];
     const savedQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
-    // FIX: Create a safe copy of the array before sorting to avoid mutation
     setHistory([...savedHistory].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp)));
     setCustomQuizzes(savedQuizzes);
   }, []);
@@ -37,14 +35,12 @@ const ProfilePage = () => {
       alert('Could not parse any questions. Please check the format.');
       return;
     }
-
     const newQuiz = {
       id: `custom-${Date.now()}`,
       title: newQuizTitle,
       tag: newQuizTag,
       quiz_content: quizContent,
     };
-
     const updatedQuizzes = [...customQuizzes, newQuiz];
     setCustomQuizzes(updatedQuizzes);
     localStorage.setItem('customQuizzes', JSON.stringify(updatedQuizzes));
@@ -54,85 +50,96 @@ const ProfilePage = () => {
 
   return (
     <div className="profile-container">
-      <h1 className="profile-title">My Profile & Quizzes</h1>
+      <h1 className="profile-title">My Dashboard</h1>
 
-      <div className="profile-section">
-        <h2 className="profile-subtitle">Create a New Quiz</h2>
-        <div className="creator-form-inline">
-          <input 
-            type="text" 
-            value={newQuizTitle} 
-            onChange={(e) => setNewQuizTitle(e.target.value)} 
-            placeholder="Enter Quiz Title (e.g., Chapter 1 Vocab)" 
-          />
-          <div className="tag-selector">
-            <button className={`tag-button ${newQuizTag === 'vocabulary' ? 'active' : ''}`} onClick={() => setNewQuizTag('vocabulary')}>
-               <JapaneseText>語彙</JapaneseText> (Vocab)
-            </button>
-            <button className={`tag-button ${newQuizTag === 'kanji' ? 'active' : ''}`} onClick={() => setNewQuizTag('kanji')}>
-               <JapaneseText>漢字</JapaneseText> (Kanji)
-            </button>
-          </div>
-          <textarea 
-            value={csvText}
-            onChange={(e) => setCsvText(e.target.value)}
-            placeholder="Paste your list here...&#10;Format: English Meaning,Kanji,Hiragana"
-            rows="8"
-          ></textarea>
-          <button onClick={handleCreateQuiz} className="action-button next-level create-button">
-            Create and Save Quiz
-          </button>
-        </div>
-      </div>
+      {/* --- NEW: Grid container for the two-column layout --- */}
+      <div className="profile-grid-container">
 
-      <div className="profile-section">
-        <h2 className="profile-subtitle">My Custom Quizzes</h2>
-        {customQuizzes.length === 0 ? (
-          <p className="empty-state-text">Your created quizzes will appear here.</p>
-        ) : (
-          <div className="history-list">
-            {customQuizzes.map((quiz) => (
-              <div key={quiz.id} className="history-item custom-quiz-item">
-                <div className="history-item-header">
-                  <h3>{quiz.title}</h3>
-                  <span className="history-item-tag">{quiz.tag}</span>
-                </div>
-                <div className="history-item-body">
-                  {/* --- THIS IS THE FIX --- */}
-                  {/* Check that quiz.quiz_content exists before trying to read its length */}
-                  <p>{quiz.quiz_content?.length || 0} terms</p>
-                  <Link to={`/quiz/${quiz.id}/${quiz.tag}`} className="action-button restart">
-                    Start Quiz
-                  </Link>
-                </div>
+        {/* --- Column 1: Main Content --- */}
+        <div className="profile-main-content">
+          <div className="profile-section">
+            <h2 className="profile-subtitle">Create a New Quiz</h2>
+            <div className="creator-form-inline">
+              <input 
+                type="text" 
+                value={newQuizTitle} 
+                onChange={(e) => setNewQuizTitle(e.target.value)} 
+                placeholder="Enter Quiz Title (e.g., Chapter 1 Vocab)" 
+              />
+              <div className="tag-selector">
+                <button className={`tag-button ${newQuizTag === 'vocabulary' ? 'active' : ''}`} onClick={() => setNewQuizTag('vocabulary')}>
+                  <JapaneseText>語彙</JapaneseText> (Vocab)
+                </button>
+                <button className={`tag-button ${newQuizTag === 'kanji' ? 'active' : ''}`} onClick={() => setNewQuizTag('kanji')}>
+                  <JapaneseText>漢字</JapaneseText> (Kanji)
+                </button>
               </div>
-            ))}
+              <textarea 
+                value={csvText}
+                onChange={(e) => setCsvText(e.target.value)}
+                placeholder="Paste your list here...&#10;Format: English Meaning,Kanji,Hiragana"
+                rows="8"
+              ></textarea>
+              <button onClick={handleCreateQuiz} className="action-button next-level create-button">
+                Create and Save Quiz
+              </button>
+            </div>
           </div>
-        )}
-      </div>
-
-      <div className="profile-section">
-        <h2 className="profile-subtitle">Recent Quiz History</h2>
-        {history.length === 0 ? (
-          <p className="empty-state-text">Your completed quiz scores will appear here.</p>
-        ) : (
-          <div className="history-list">
-            {history.map((item) => (
-              <div key={item.id} className="history-item">
-                <div className="history-item-header">
-                  <h3>{item?.level?.toUpperCase()} - {item?.category} ({item?.difficulty})</h3>
-                  <span className="history-item-date">{new Date(item.timestamp).toLocaleDateString()}</span>
-                </div>
-                <div className="history-item-body">
-                  <p>Score: <strong>{item?.score} / {item?.total}</strong></p>
-                  <div className="progress-bar-container">
-                    <div className="progress-bar-fill" style={{ width: `${item.total > 0 ? (item.score / item.total) * 100 : 0}%` }}></div>
+          <div className="profile-section">
+            <h2 className="profile-subtitle">My Custom Quizzes</h2>
+            {customQuizzes.length === 0 ? (
+              <p className="empty-state-text">Your created quizzes will appear here.</p>
+            ) : (
+              <div className="history-list">
+                {customQuizzes.map((quiz) => (
+                  <div key={quiz.id} className="history-item custom-quiz-item">
+                    <div className="history-item-header">
+                      <h3>{quiz.title}</h3>
+                      <span className="history-item-tag">{quiz.tag}</span>
+                    </div>
+                    <div className="history-item-body">
+                      <p>{quiz.quiz_content?.length || 0} terms</p>
+                      <Link to={`/quiz/${quiz.id}/${quiz.tag}`} className="action-button restart">
+                        Start Quiz
+                      </Link>
+                    </div>
                   </div>
-                </div>
+                ))}
               </div>
-            ))}
+            )}
           </div>
-        )}
+        </div>
+
+        {/* --- Column 2: Sidebar --- */}
+        <div className="profile-sidebar">
+          <div className="profile-section">
+            <h2 className="profile-subtitle">Recent Quiz History</h2>
+            {history.length === 0 ? (
+              <div className="no-history-card">
+                 <p className="empty-state-text">Your completed quiz scores will appear here.</p>
+                 <Link to="/levels" className="action-button next-level">Start a Quiz!</Link>
+              </div>
+            ) : (
+              <div className="history-list">
+                {history.map((item) => (
+                  <div key={item.id} className="history-item">
+                    <div className="history-item-header">
+                      <h3>{item?.level?.toUpperCase()} - {item?.category} ({item?.difficulty})</h3>
+                      <span className="history-item-date">{new Date(item.timestamp).toLocaleDateString()}</span>
+                    </div>
+                    <div className="history-item-body">
+                      <p>Score: <strong>{item?.score} / {item?.total}</strong></p>
+                      <div className="progress-bar-container">
+                        <div className="progress-bar-fill" style={{ width: `${item.total > 0 ? (item.score / item.total) * 100 : 0}%` }}></div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+
       </div>
     </div>
   );
