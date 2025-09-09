@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import JapaneseText from '../components/JapaneseText.jsx';
-import { useQuizManager } from '../logic/use_quiz_manager.jsx';
+import { useQuizManager } from '../hooks/useQuizManager.js'; // The central data source
 
 const parseCsvToQuizContent = (csvText) => {
   if (!csvText) return [];
@@ -35,19 +35,22 @@ const ProfilePage = () => {
       tag: newQuizTag,
       quiz_content: quizContent,
     };
-    const customQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
-    const updatedQuizzes = [...customQuizzes, newQuiz];
+    const currentQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
+    const updatedQuizzes = [...currentQuizzes, newQuiz];
     localStorage.setItem('customQuizzes', JSON.stringify(updatedQuizzes));
-    window.location.reload(); // Reload to see new quiz in the list
+    window.location.reload(); // Reload to force the hook to get the latest data
   };
   
   const filteredList = useMemo(() => {
     if (isLoading) return [];
+
     if (activeFilter === 'unattended') {
       return allQuizzes.filter(q => q.status === 'unattended');
     }
+    
     // For mastered/incomplete, we only show quizzes that have a history record
     const historyQuizzes = allQuizzes.filter(q => q.status !== 'unattended');
+    
     if (activeFilter === 'mastered') {
       return historyQuizzes.filter(item => item.status === 'mastered');
     }
@@ -115,9 +118,7 @@ const ProfilePage = () => {
             </div>
             {isLoading ? <p className="empty-state-text">Loading...</p> : (
               filteredList.length === 0 ? (
-                <div className="no-history-card">
-                  <p className="empty-state-text">No quizzes match this filter.</p>
-                </div>
+                <div className="no-history-card"><p className="empty-state-text">No quizzes match this filter.</p></div>
               ) : (
                 <div className="history-list">
                   {filteredList.map((item) => (
@@ -130,11 +131,13 @@ const ProfilePage = () => {
                       <div key={item.uniqueId} className="history-item">
                         <div className="history-item-header">
                           <h3>{item.title}</h3>
-                          <span className="history-item-date">{new Date(item.timestamp).toLocaleDateString()}</span>
+                          {/* Use the latestResult for the timestamp */}
+                          <span className="history-item-date">{new Date(item.latestResult.timestamp).toLocaleDateString()}</span>
                         </div>
                         <div className="history-item-body">
-                          <p>Score: <strong>{item.score} / {item.total}</strong></p>
-                          <div className="progress-bar-container"><div className="progress-bar-fill" style={{ width: `${item.total > 0 ? (item.score / item.total) * 100 : 0}%` }}></div></div>
+                          {/* Use the latestResult for the score */}
+                          <p>Score: <strong>{item.latestResult.score} / {item.latestResult.total}</strong></p>
+                          <div className="progress-bar-container"><div className="progress-bar-fill" style={{ width: `${item.latestResult.total > 0 ? (item.latestResult.score / item.latestResult.total) * 100 : 0}%` }}></div></div>
                         </div>
                         {item.status !== 'mastered' && (
                           <div className="history-item-actions">
