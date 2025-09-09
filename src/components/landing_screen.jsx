@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo_transparent.png'; // The logo is imported here
 
 const LandingPage = () => {
   useEffect(() => {
@@ -12,7 +11,7 @@ const LandingPage = () => {
       container.removeChild(container.firstChild);
     }
     
-    const chars = 'あい�?えおかがきぎくぐけげこごさざしじすずせぜそぞただちぢつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめも�?�?よらりるれろわをん日月火水木金土一二三四五�?��?八九十百�?�?年人子女男学先南北東西京';
+    const chars = '縺ゅ＞縺�縺医♀縺九′縺阪℃縺上＄縺代￡縺薙＃縺輔＊縺励§縺吶★縺帙●縺昴◇縺溘□縺｡縺｢縺､縺･縺ｦ縺ｧ縺ｨ縺ｩ縺ｪ縺ｫ縺ｬ縺ｭ縺ｮ縺ｯ縺ｰ縺ｱ縺ｲ縺ｳ縺ｴ縺ｵ縺ｶ縺ｷ縺ｸ縺ｹ縺ｺ縺ｻ縺ｼ縺ｽ縺ｾ縺ｿ繧繧√ｂ繧�繧�繧医ｉ繧翫ｋ繧後ｍ繧上ｒ繧捺律譛育↓豌ｴ譛ｨ驥大悄荳莠御ｸ牙屁莠泌�ｭ荳�蜈ｫ荵晏香逋ｾ蜊�荳�蟷ｴ莠ｺ蟄仙･ｳ逕ｷ蟄ｦ蜈亥漉蛹玲擲隘ｿ莠ｬ';
     const charCount = 100;
 
     for (let i = 0; i < charCount; i++) {
@@ -42,7 +41,7 @@ const LandingPage = () => {
         </p>
         <div className="home-actions">
           <Link to="/levels" className="start-quiz-button-new">
-            クイズを始める�? (Start Quiz!)
+            繧ｯ繧､繧ｺ繧貞ｧ九ａ繧具ｼ� (Start Quiz!)
           </Link>
 
         </div>

@@ -61,6 +61,7 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly }) 
   const handleContinueReview = () => {
     setShowFirstPassModal(false);
     acknowledgeFirstPass();
+    navigate('/profile');
   };
   
   const handleOptionClick = (option) => {
