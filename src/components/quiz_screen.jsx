@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { quizData as staticQuizData } from '../data/quizData.js';
-import { useSrsQuiz } from '../hooks/useSrsQuiz.js';
+import { quizData as staticQuizData } from '../data/quiz_data.jsx'; // Renamed for clarity
+import { useSrsQuiz } from '../logic/quiz_logic_hook.jsx';
+
 
 // --- Sub-Components (ScoreCounter, CompletionModal, FirstPassModal, Quiz) ---
 // These are unchanged and included for completeness.
