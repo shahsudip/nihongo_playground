@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import JapaneseText from '../components/functions/no_translate.jsx'; // Make sure this component exists
 
 // Helper function to parse the comma-separated text
 const parseCsvToQuizContent = (csvText) => {
@@ -21,7 +22,8 @@ const ProfilePage = () => {
   useEffect(() => {
     const savedHistory = JSON.parse(localStorage.getItem('quizHistory')) || [];
     const savedQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
-    setHistory(savedHistory.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp)));
+    // FIX: Create a safe copy of the array before sorting to avoid mutation
+    setHistory([...savedHistory].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp)));
     setCustomQuizzes(savedQuizzes);
   }, []);
 
@@ -65,10 +67,10 @@ const ProfilePage = () => {
           />
           <div className="tag-selector">
             <button className={`tag-button ${newQuizTag === 'vocabulary' ? 'active' : ''}`} onClick={() => setNewQuizTag('vocabulary')}>
-               Vocab
+               <JapaneseText>語彙</JapaneseText> (Vocab)
             </button>
             <button className={`tag-button ${newQuizTag === 'kanji' ? 'active' : ''}`} onClick={() => setNewQuizTag('kanji')}>
-            Kanji
+               <JapaneseText>漢字</JapaneseText> (Kanji)
             </button>
           </div>
           <textarea 
@@ -96,7 +98,9 @@ const ProfilePage = () => {
                   <span className="history-item-tag">{quiz.tag}</span>
                 </div>
                 <div className="history-item-body">
-                  <p>{quiz.quiz_content.length} terms</p>
+                  {/* --- THIS IS THE FIX --- */}
+                  {/* Check that quiz.quiz_content exists before trying to read its length */}
+                  <p>{quiz.quiz_content?.length || 0} terms</p>
                   <Link to={`/quiz/${quiz.id}/${quiz.tag}`} className="action-button restart">
                     Start Quiz
                   </Link>
