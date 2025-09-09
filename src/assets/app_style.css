@@ -637,3 +637,13 @@ body {
   background-color: rgba(74, 85, 104, 0.2);
   color: var(--text-medium); 
 }
+/* This styles the link when the page is active */
+.nav-link.active {
+  color: var(--text-light); /* Makes the active link text brighter */
+}
+
+/* This makes the green underline appear on the active link */
+.nav-link.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
