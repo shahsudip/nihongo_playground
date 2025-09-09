@@ -166,6 +166,8 @@ const QuizPage = () => {
   const [unlockedDifficulty, setUnlockedDifficulty] = useState('easy');
   const [showCompletionModal, setShowCompletionModal] = useState(false);
   const [finalScore, setFinalScore] = useState({ score: 0, total: 0 });
+  const isCustomQuiz = level === 'custom';
+
 
   const difficulties = ['easy', 'medium', 'hard'];
   const difficultyMap = { easy: 1, medium: 2, hard: 3 };
@@ -271,6 +273,46 @@ const QuizPage = () => {
       {showCompletionModal && <CompletionModal score={finalScore.score} total={finalScore.total} onContinue={handleModalContinue} />}
     </div>
   );
+
+
+  
 };
+// --- NEW Function to render a custom quiz directly ---
+  const renderCustomQuiz = () => {
+    const customQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
+    const quiz = customQuizzes.find(q => q.id === quizId);
+
+    if (!quiz) {
+      return (
+        <div className="quiz-card">
+          <h1>Custom Quiz Not Found!</h1>
+          <Link to="/profile" className="action-button">&larr; Back to Profile</Link>
+        </div>
+      );
+    }
+    
+    // For now, custom quizzes only have an "easy" tier
+    const quizContent = quiz.easy.quiz_content;
+    const quizTitle = quiz.easy.title;
+    const quizType = quiz.tag;
+
+    return <Quiz quizContent={quizContent} quizTitle={quizTitle} quizType={quizType} onComplete={onQuizComplete} />;
+  };
+
+  return (
+    <div className="quiz-container">
+      {isCustomQuiz ? (
+        // If it's a custom quiz, render it directly
+        renderCustomQuiz()
+      ) : (
+        // Otherwise, show the standard difficulty selection flow
+        !selectedDifficulty ? renderDifficultySelection() : renderStandardQuiz()
+      )}
+      {showCompletionModal && <CompletionModal score={finalScore.score} total={finalScore.total} onContinue={handleModalContinue} />}
+    </div>
+  );
+
+
+
 
 export default QuizPage;

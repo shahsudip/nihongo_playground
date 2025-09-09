@@ -8,20 +8,27 @@ import QuizPage from './components/quiz_screen.jsx';
 import ResultsPage from './components/result_screen.jsx';
 import ProfilePage from './components/profile_screen.jsx';
 
+
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/levels" element={<LevelSelectionPage />} />
-        <Route path="/quiz/:level/:category" element={<QuizPage />} />
-        <Route path="/results" element={<ResultsPage />} />
+
+        <Route element={<MainLayout />}>
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/levels" element={<LevelSelectionPage />} />
+          <Route path="/create" element={<CreateQuizPage />} />
+          {/* Route for standard N-level quizzes */}
+          <Route path="/quiz/:level/:category" element={<QuizPage />} />
+          {/* NEW Route for custom quizzes */}
+          <Route path="/quiz/custom/:quizId" element={<QuizPage />} />
+          <Route path="/results" element={<ResultsPage />} />
+        </Route>
       </Routes>
     </Router>
   );
 }
-
 
 
 export default App;

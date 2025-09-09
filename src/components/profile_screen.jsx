@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import JapaneseText from '../components/functions/no_translate.jsx';
 
 // Helper function to parse the comma-separated text
 const parseCsvToQuizContent = (csvText) => {
@@ -76,10 +75,10 @@ const ProfilePage = () => {
           />
           <div className="tag-selector">
             <button className={`tag-button ${newQuizTag === 'vocabulary' ? 'active' : ''}`} onClick={() => setNewQuizTag('vocabulary')}>
-              <JapaneseText>Œêœb</JapaneseText> (Vocab)
+             (Vocab)
             </button>
             <button className={`tag-button ${newQuizTag === 'kanji' ? 'active' : ''}`} onClick={() => setNewQuizTag('kanji')}>
-              <JapaneseText>Š¿Žš</JapaneseText> (Kanji)
+            (Kanji)
             </button>
           </div>
           <textarea 
@@ -109,7 +108,12 @@ const ProfilePage = () => {
                 </div>
                 <div className="history-item-body">
                   <p>{quiz.easy.quiz_content.length} terms</p>
-                  <button onClick={() => alert('Starting custom quiz...')} className="action-button restart">Start Quiz</button>
+                  <Link 
+        to={`/quiz/custom/${quiz.id}`} 
+        className="action-button restart"
+      >
+        Start Quiz
+      </Link>
                 </div>
               </div>
             ))}
