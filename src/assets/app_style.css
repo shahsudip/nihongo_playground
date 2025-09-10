@@ -584,8 +584,8 @@ body {
 }
 .delete-quiz-button {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 25px;
+  left: 10px;
   background: none;
   border: none;
   font-size: 1.2rem; /* Adjust icon size */

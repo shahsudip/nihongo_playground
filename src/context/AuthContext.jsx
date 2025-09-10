@@ -1,51 +1,79 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { auth, db } from '../firebaseConfig.js'; // Import both auth and the database
+import { auth, db } from '../firebaseConfig.js';
 import { onAuthStateChanged, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
-import { doc, setDoc, serverTimestamp } from 'firebase/firestore'; // Import Firestore functions
+import { doc, setDoc, getDocs, collection, serverTimestamp, writeBatch } from 'firebase/firestore';
+import { quizData as staticQuizData } from '../data/quiz_data.jsx'; // Your local data
+import { ADMIN_UID } from '../adminConfig.jsx'; // Your admin ID
 
-// Create the context
 const AuthContext = React.createContext();
 
-// Custom hook to use the auth context
 export function useAuth() {
   return useContext(AuthContext);
 }
 
-// Provider component that wraps your app
 export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // The login function is now async to handle the database operation
+  // This function pushes the local quiz data to the global Firestore collection.
+  // It only runs if the user is the admin and the collection is empty.
+  const seedStandardQuizzes = async () => {
+    try {
+      const quizzesRef = collection(db, 'quizzes');
+      const existingQuizzesSnapshot = await getDocs(quizzesRef);
+
+      // Only seed data if the global collection is empty
+      if (existingQuizzesSnapshot.empty) {
+        console.log("Seeding standard quizzes to global collection...");
+        const batch = writeBatch(db);
+
+        Object.keys(staticQuizData).forEach(level => {
+          Object.keys(staticQuizData[level]).forEach(category => {
+            Object.keys(staticQuizData[level][category]).forEach(difficulty => {
+              const quizId = `${level}-${category}-${difficulty}`;
+              const quizDocRef = doc(db, 'quizzes', quizId);
+              const quizDetails = staticQuizData[level][category][difficulty];
+              batch.set(quizDocRef, {
+                ...quizDetails,
+                level,
+                category,
+                difficulty,
+                type: 'standard', // Mark this as a standard quiz
+              });
+            });
+          });
+        });
+        await batch.commit();
+        console.log("Standard quizzes have been successfully seeded.");
+      }
+    } catch (error) {
+      console.error("Error seeding standard quizzes:", error);
+    }
+  };
+
   async function loginWithGoogle() {
     try {
       const provider = new GoogleAuthProvider();
       const userCredential = await signInWithPopup(auth, provider);
       const user = userCredential.user;
 
-      // --- THIS IS THE NEW DATABASE LOGIC ---
-      // After a successful login, create a user document in Firestore.
       if (user) {
-        // Create a reference to the document for this user.
-        // The document will be named with the user's unique UID.
         const userDocRef = doc(db, "users", user.uid);
-
-        // Use setDoc with { merge: true } as an "upsert".
-        // It creates the document if it's new, or updates it without
-        // overwriting existing data if the user logs in again.
         await setDoc(userDocRef, {
           uid: user.uid,
           email: user.email,
           displayName: user.displayName,
-          lastLogin: serverTimestamp(), // Records the time of the last login
+          lastLogin: serverTimestamp(),
         }, { merge: true });
-      }
-      
-      return userCredential;
 
+        // If the logged-in user is the admin, run the seeding function
+        if (user.uid === ADMIN_UID) {
+          await seedStandardQuizzes();
+        }
+      }
+      return userCredential;
     } catch (error) {
       console.error("Error during Google sign-in:", error);
-      // Re-throw the error so the UI component can handle it
       throw error;
     }
   }
@@ -62,11 +90,7 @@ export function AuthProvider({ children }) {
     return unsubscribe;
   }, []);
 
-  const value = {
-    currentUser,
-    loginWithGoogle,
-    logout
-  };
+  const value = { currentUser, loginWithGoogle, logout };
 
   return (
     <AuthContext.Provider value={value}>
