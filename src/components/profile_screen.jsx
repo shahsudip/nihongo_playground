@@ -32,6 +32,7 @@ const ProfilePage = () => {
     } catch (error) {
       console.error("Failed to log out", error);
       alert("Failed to log out. Please try again.");
+      navigate('/profile');
     }
   };
 
