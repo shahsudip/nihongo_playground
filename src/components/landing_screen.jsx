@@ -6,21 +6,27 @@ import logo from '../assets/logo_transparent.png';
 const LandingPage = () => {
   const { loginWithGoogle, currentUser } = useAuth();
   const navigate = useNavigate();
+
+  // This useEffect hook handles the initial check.
   useEffect(() => {
+    // If a user is found, redirect to the practice/levels page.
     if (currentUser) {
       navigate('/levels');
     }
-  }, [currentUser, navigate]);
+  }, [currentUser, navigate]); // This runs whenever the user's login status changes.
 
   const handleGoogleSignIn = async () => {
     try {
       await loginWithGoogle();
+      // After a successful sign-in, the useEffect above will automatically
+      // detect the new currentUser and redirect to '/levels'.
     } catch (error) {
       console.error("Failed to log in with Google", error);
       alert("Failed to sign in. Please try again.");
     }
   };
 
+  // If there's no user, the component renders the landing page content.
   return (
     <div className="landing-page-wrapper">
       <div id="background-characters"></div>
@@ -51,3 +57,4 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
+
