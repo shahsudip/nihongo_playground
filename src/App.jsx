@@ -21,7 +21,7 @@ function ProtectedRoute({ children }) {
   return currentUser ? children : <Navigate to="/login" />;
 }
 
-function App() {
+export default function App() {
   return (
     <Router basename={import.meta.env.BASE_URL}>
       <Routes>
