@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import JapaneseText from '../components/JapaneseText.jsx';
-import { useQuizManager } from '../logic/use_quiz_manager.jsx';
+import { useQuizManager } from '../hooks/useQuizManager.jsx';
 import { useAuth } from '../context/AuthContext.jsx'; // <-- THIS IS THE FIX
 import { db } from '../firebaseConfig.js';
-import { collection, addDoc } from 'firebase/firestore';
+import { collection, addDoc, doc, deleteDoc } from 'firebase/firestore';
 
 const parseCsvToQuizContent = (csvText) => {
   if (!csvText) return [];
@@ -24,19 +24,10 @@ const ProfilePage = () => {
   const [activeFilter, setActiveFilter] = useState('mastered');
 
   const handleCreateQuiz = async () => {
-    if (!currentUser) {
-      alert("You must be logged in to create a quiz.");
-      return;
-    }
-    if (!newQuizTitle.trim() || !csvText.trim()) {
-      alert('Please provide a title and paste your vocabulary list.');
-      return;
-    }
+    if (!currentUser) { alert("You must be logged in to create a quiz."); return; }
+    if (!newQuizTitle.trim() || !csvText.trim()) { alert('Please provide a title and paste your vocabulary list.'); return; }
     const quizContent = parseCsvToQuizContent(csvText);
-    if (quizContent.length === 0) {
-      alert('Could not parse any questions. Please check the format.');
-      return;
-    }
+    if (quizContent.length === 0) { alert('Could not parse any questions. Please check the format.'); return; }
     
     try {
       const newQuizData = {
@@ -46,14 +37,26 @@ const ProfilePage = () => {
         createdAt: new Date().toISOString(),
         userId: currentUser.uid
       };
-
       const userQuizzesColRef = collection(db, 'users', currentUser.uid, 'customQuizzes');
       await addDoc(userQuizzesColRef, newQuizData);
       window.location.reload();
-
     } catch (error) {
       console.error("Error creating quiz:", error);
-      alert("Failed to create quiz. Please try again.");
+      alert("Failed to create quiz.");
+    }
+  };
+
+  const handleDeleteQuiz = async (quizIdToDelete) => {
+    if (!currentUser) { alert("You must be logged in to delete a quiz."); return; }
+    if (!window.confirm("Are you sure you want to delete this quiz? This cannot be undone.")) return;
+
+    try {
+      const quizDocRef = doc(db, 'users', currentUser.uid, 'customQuizzes', quizIdToDelete);
+      await deleteDoc(quizDocRef);
+      window.location.reload();
+    } catch (error) {
+      console.error("Error deleting quiz:", error);
+      alert("Failed to delete quiz.");
     }
   };
   
@@ -104,6 +107,7 @@ const ProfilePage = () => {
                     const creationDate = new Date(quiz.createdAt).toLocaleDateString();
                     return (
                       <div key={quiz.uniqueId} className="history-item custom-quiz-card">
+                        <button onClick={() => handleDeleteQuiz(quiz.uniqueId)} className="delete-quiz-button" aria-label="Delete quiz">??</button>
                         <div className="card-header">
                           <p className="custom-quiz-date">{creationDate}</p>
                           <span className={`status-badge status-${quiz.status}`}>{quiz.status}</span>
