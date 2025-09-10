@@ -2,6 +2,8 @@ import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import JapaneseText from '../components/JapaneseText.jsx';
 import { useQuizManager } from '../logic/use_quiz_manager.jsx'; // The central data source
+import { useAuth } from '../context/AuthContext.jsx'; // <-- THIS IS THE FIX
+
 
 const parseCsvToQuizContent = (csvText) => {
   if (!csvText) return [];
@@ -14,6 +16,8 @@ const parseCsvToQuizContent = (csvText) => {
 
 const ProfilePage = () => {
   const { allQuizzes, isLoading } = useQuizManager();
+  const { currentUser } = useAuth(); // Get the currently logged-in user
+
   const [newQuizTitle, setNewQuizTitle] = useState('');
   const [newQuizTag, setNewQuizTag] = useState('vocabulary');
   const [csvText, setCsvText] = useState('');
@@ -64,7 +68,9 @@ const ProfilePage = () => {
 
   return (
     <div className="profile-container">
-      <h1 className="profile-title">My Dashboard</h1>
+      <h1 className="profile-title">
+        Welcome, {currentUser?.displayName || 'Student'}!
+      </h1>
       <div className="profile-grid-container">
         <div className="profile-main-content">
           <div className="profile-section">
@@ -72,8 +78,8 @@ const ProfilePage = () => {
             <div className="creator-form-inline">
               <input type="text" value={newQuizTitle} onChange={(e) => setNewQuizTitle(e.target.value)} placeholder="Enter Quiz Title (e.g., Chapter 1 Vocab)" />
               <div className="tag-selector">
-                <button className={`tag-button ${newQuizTag === 'vocabulary' ? 'active' : ''}`} onClick={() => setNewQuizTag('vocabulary')}><JapaneseText>語彙</JapaneseText> (Vocab)</button>
-                <button className={`tag-button ${newQuizTag === 'kanji' ? 'active' : ''}`} onClick={() => setNewQuizTag('kanji')}><JapaneseText>漢字</JapaneseText> (Kanji)</button>
+                <button className={`tag-button ${newQuizTag === 'vocabulary' ? 'active' : ''}`} onClick={() => setNewQuizTag('vocabulary')}><JapaneseText>語�?</JapaneseText> (Vocab)</button>
+                <button className={`tag-button ${newQuizTag === 'kanji' ? 'active' : ''}`} onClick={() => setNewQuizTag('kanji')}><JapaneseText>漢�?</JapaneseText> (Kanji)</button>
               </div>
               <textarea value={csvText} onChange={(e) => setCsvText(e.target.value)} placeholder="Paste your list here...&#10;Format: English Meaning,Kanji,Hiragana" rows="8"></textarea>
               <button onClick={handleCreateQuiz} className="action-button next-level create-button">Create and Save Quiz</button>
