@@ -1,5 +1,7 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { useAuth } from './context/AuthContext.jsx'; // <-- THIS IS THE FIX
+
 import './assets/app_style.css'; // Global styles
 
 import LandingPage from './components/landing_screen.jsx';
