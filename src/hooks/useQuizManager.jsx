@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { quizData as staticQuizData } from '../data/quizData.js';
+import { quizData as staticQuizData } from '../data/quiz_data.js';
 import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
 import { collection, query, where, getDocs } from 'firebase/firestore';
