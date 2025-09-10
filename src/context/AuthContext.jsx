@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { auth, db } from '../firebaseConfig.js';
 import { onAuthStateChanged, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
 import { doc, setDoc, getDocs, collection, serverTimestamp, writeBatch } from 'firebase/firestore';
-import { quizData as staticQuizData } from '../data/quiz_data.js'; // Your local data file
+import { quizData as staticQuizData } from '../data/quiz_data.jsx'; // Your local data file
 import { ADMIN_UID } from '../adminConfig.js'; // Your admin ID
 
 const AuthContext = React.createContext();
