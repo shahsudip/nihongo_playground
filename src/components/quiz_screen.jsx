@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useSrsQuiz } from '../hooks/quiz_logic_hook.jsx';
-import { useAuth } from '../context/AuthContext.jsx';
+import { useAuth } from '../contexts/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc, setDoc, collection, query, where, getDocs } from 'firebase/firestore';
 import { formatDateTime } from '../utils/formatters.jsx';
-import LoadingSpinner from '../utils/loading_spinner.jsx';
+import LoadingSpinner from '../components/LoadingSpinner.jsx';
 
 // --- Sub-Component: ScoreCounter ---
 const ScoreCounter = ({ score, attempts, mastered, numberOfQuestions, unseen }) => (
@@ -109,7 +109,7 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly, qu
 
 // --- Main Page Component ---
 
-// NEW: Universal helper function to format quiz data consistently
+// Universal helper function to format quiz data consistently
 const transformQuizContent = (rawContent = [], category) => {
   if (category === 'kanji') {
     return rawContent.map(item => ({
@@ -129,7 +129,11 @@ const QuizPage = () => {
   const { level, category } = useParams();
   const navigate = useNavigate();
   const { currentUser, isAdmin } = useAuth();
-  const isCustomQuiz = level.startsWith('custom-');
+
+  // FIX: This is the definitive fix. We identify a custom quiz by checking if the 'level'
+  // is NOT one of the standard, predefined levels.
+  const standardLevels = ['n5', 'n4', 'n3', 'n2', 'n1'];
+  const isCustomQuiz = level && !standardLevels.includes(level);
 
   const [loading, setLoading] = useState(true);
   const [selectedDifficulty, setSelectedDifficulty] = useState(null);
@@ -288,7 +292,6 @@ const QuizPage = () => {
     );
   };
   
-  // REFACTORED: This function now uses the universal transform helper
   const renderQuiz = () => {
     let rawContent, quizTitle;
 
@@ -320,8 +323,6 @@ const QuizPage = () => {
     return <LoadingSpinner />;
   }
 
-  // FIX: This main render logic correctly shows the quiz directly for custom quizzes,
-  // and shows the difficulty selection screen only for standard quizzes.
   return (
     <div className="quiz-container">
       {isCustomQuiz ? (
