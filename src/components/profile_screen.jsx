@@ -11,7 +11,7 @@ const parseCsvToQuizContent = (csvText) => {
   if (!csvText) return [];
   return csvText.split('\n').slice(1).map(line => line.trim()).filter(line => line)
     .map(line => {
-      const [meaning, kanji, hiragana] = line.split(',');
+      const [hiragana, meaning, kanji ] = line.split(',');
       return { kanji: kanji || '', hiragana: hiragana || '', meaning: meaning || '' };
     });
 };
