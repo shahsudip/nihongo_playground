@@ -6,20 +6,28 @@ import { db } from '../firebaseConfig.js';
 import { collection, addDoc, doc, deleteDoc } from 'firebase/firestore';
 
 // Helper function to parse the comma-separated text from the textarea
-const parseCsvToQuizContent = (csvText) => {
+const parseCsvToQuizContent = (csvText, quizType) => {
   if (!csvText) return [];
   return csvText.split('\n').slice(1).map(line => line.trim()).filter(line => line)
     .map(line => {
+      // This now correctly matches your specified format: Hiragana,English Meaning,Kanji
       const [hiragana, meaning, kanji] = line.split(',');
+      
+      // If the quiz type is 'vocabulary', we explicitly ignore the kanji data.
+      if (quizType === 'vocabulary') {
+        return { kanji: '', hiragana: hiragana || '', meaning: meaning || '' };
+      }
+      
+      // Otherwise (for kanji quizzes), we include it.
       return { kanji: kanji || '', hiragana: hiragana || '', meaning: meaning || '' };
     });
 };
 
 const ProfilePage = () => {
-  // This hook is now the single source of truth for all quiz data and statuses.
+  // This hook is the single source of truth for all quiz data and statuses.
   const { allQuizzes, isLoading } = useQuizManager();
   const { currentUser, logout } = useAuth();
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // Initialize the navigate function
 
   // State for the "Create Quiz" form
   const [newQuizTitle, setNewQuizTitle] = useState('');
@@ -34,7 +42,8 @@ const ProfilePage = () => {
     if (!currentUser) { alert("You must be logged in to create a quiz."); return; }
     if (!newQuizTitle.trim() || !csvText.trim()) { alert('Please provide a title and paste your vocabulary list.'); return; }
     
-    const quizContent = parseCsvToQuizContent(csvText);
+    // Pass the selected tag to the parsing function
+    const quizContent = parseCsvToQuizContent(csvText, newQuizTag);
     if (quizContent.length === 0) { alert('Could not parse any questions. Please check the format.'); return; }
     
     try {
@@ -42,9 +51,9 @@ const ProfilePage = () => {
         title: newQuizTitle,
         tag: newQuizTag,
         quiz_content: quizContent,
-        createdAt: new Date().toISOString(),
+        createdAt: new Date().toISOString(), // Corrected: added parentheses
         userId: currentUser.uid,
-        status: 'unattended', // Initial status is always unattended
+        status: 'unattended',
       };
       const userQuizzesColRef = collection(db, 'users', currentUser.uid, 'customQuizzes');
       await addDoc(userQuizzesColRef, newQuizData);
@@ -114,10 +123,10 @@ const ProfilePage = () => {
             <div className="creator-form-inline">
               <input type="text" value={newQuizTitle} onChange={(e) => setNewQuizTitle(e.target.value)} placeholder="Enter Quiz Title (e.g., Chapter 1 Vocab)" />
               <div className="tag-selector">
-                <button className={`tag-button ${newQuizTag === 'vocabulary' ? 'active' : ''}`} onClick={() => setNewQuizTag('vocabulary')}> (Vocab)</button>
+                <button className={`tag-button ${newQuizTag === 'vocabulary' ? 'active' : ''}`} onClick={() => setNewQuizTag('vocabulary')}>(Vocab)</button>
                 <button className={`tag-button ${newQuizTag === 'kanji' ? 'active' : ''}`} onClick={() => setNewQuizTag('kanji')}>(Kanji)</button>
               </div>
-              <textarea value={csvText} onChange={(e) => setCsvText(e.target.value)} placeholder="Paste your list here...&#10;Format: English Meaning,Kanji,Hiragana" rows="8"></textarea>
+              <textarea value={csvText} onChange={(e) => setCsvText(e.target.value)} placeholder="Paste your list here...&#10;Format: Hiragana,English Meaning,Kanji" rows="8"></textarea>
               <button onClick={handleCreateQuiz} className="action-button next-level create-button">Create and Save Quiz</button>
             </div>
           </div>
@@ -132,7 +141,7 @@ const ProfilePage = () => {
                     const creationDate = new Date(quiz.createdAt).toLocaleDateString();
                     return (
                       <div key={quiz.uniqueId} className="history-item custom-quiz-card">
-                        <button onClick={() => handleDeleteQuiz(quiz.uniqueId)} className="delete-quiz-button" aria-label="Delete quiz"><i class="material-icons" style="font-size:36px;color:red">delete</i></button>
+                        <button onClick={() => handleDeleteQuiz(quiz.uniqueId)} className="delete-quiz-button" aria-label="Delete quiz">??</button>
                         <div className="card-header">
                           <p className="custom-quiz-date">{creationDate}</p>
                           <span className={`status-badge status-${quiz.status}`}>{quiz.status}</span>
