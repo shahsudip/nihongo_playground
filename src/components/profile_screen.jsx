@@ -17,18 +17,30 @@ const parseCsvToQuizContent = (csvText) => {
 
 const ProfilePage = () => {
   const { allQuizzes, isLoading } = useQuizManager();
-  const { currentUser } = useAuth();
+  const { currentUser, logout } = useAuth();
+
   const [newQuizTitle, setNewQuizTitle] = useState('');
   const [newQuizTag, setNewQuizTag] = useState('vocabulary');
   const [csvText, setCsvText] = useState('');
   const [activeFilter, setActiveFilter] = useState('mastered');
+
+  // This function handles the logout process
+  const handleLogout = async () => {
+    try {
+      await logout();
+      navigate('/login'); // Redirect to the login page after a successful logout
+    } catch (error) {
+      console.error("Failed to log out", error);
+      alert("Failed to log out. Please try again.");
+    }
+  };
 
   const handleCreateQuiz = async () => {
     if (!currentUser) { alert("You must be logged in to create a quiz."); return; }
     if (!newQuizTitle.trim() || !csvText.trim()) { alert('Please provide a title and paste your vocabulary list.'); return; }
     const quizContent = parseCsvToQuizContent(csvText);
     if (quizContent.length === 0) { alert('Could not parse any questions. Please check the format.'); return; }
-    
+
     try {
       const newQuizData = {
         title: newQuizTitle,
@@ -59,7 +71,7 @@ const ProfilePage = () => {
       alert("Failed to delete quiz.");
     }
   };
-  
+
   const filteredList = useMemo(() => {
     if (isLoading) return [];
     if (activeFilter === 'unattended') {
@@ -144,8 +156,8 @@ const ProfilePage = () => {
                   {filteredList.map((item) => (
                     activeFilter === 'unattended' ? (
                       <div key={item.uniqueId} className="history-item unattended-item">
-                         <h3>{item.title}</h3>
-                         <Link to={`/quiz/${item.level}/${item.category}`} className="action-button next-level">Start Quiz</Link>
+                        <h3>{item.title}</h3>
+                        <Link to={`/quiz/${item.level}/${item.category}`} className="action-button next-level">Start Quiz</Link>
                       </div>
                     ) : (
                       <div key={item.uniqueId} className="history-item">
@@ -170,6 +182,11 @@ const ProfilePage = () => {
             )}
           </div>
         </div>
+      </div>
+      <div className="profile-logout-section">
+        <button onClick={handleLogout} className="action-button home logout-button">
+          Logout
+        </button>
       </div>
     </div>
   );

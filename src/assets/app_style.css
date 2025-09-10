@@ -647,3 +647,14 @@ body {
   transform: scaleX(1);
   transform-origin: bottom center;
 }
+
+.profile-logout-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--background-light);
+}
+.logout-button {
+  max-width: 200px;
+}

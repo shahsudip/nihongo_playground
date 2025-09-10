@@ -1,26 +1,16 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import { useAuth } from './context/AuthContext.jsx'; // <-- THIS IS THE FIX
-
-import './assets/app_style.css'; // Global styles
-
+import { useAuth } from './context/AuthContext.jsx';
+import './assets/app_style.css';
 import LandingPage from './components/landing_screen.jsx';
 import LevelSelectionPage from './components/level_selection_screen.jsx';
 import QuizPage from './components/quiz_screen.jsx';
 import ResultsPage from './components/result_screen.jsx';
 import ProfilePage from './components/profile_screen.jsx';
-
-// Import the MainLayout component
 import MainLayout from './components/main_layout.jsx';
-
-
-import LoginPage from './components/LoginPage.jsx'; // Import the new login page
-// ... other page imports
-
-// A wrapper to protect routes that require a user to be logged in
 function ProtectedRoute({ children }) {
   const { currentUser } = useAuth();
-  return currentUser ? children : <Navigate to="/login" />;
+  return currentUser ? children : <Navigate to="/" />;
 }
 
 export default function App() {
@@ -28,8 +18,6 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/login" element={<LoginPage />} />
-
         <Route element={<MainLayout />}>
           <Route 
             path="/profile" 
@@ -37,8 +25,7 @@ export default function App() {
               <ProtectedRoute>
                 <ProfilePage />
               </ProtectedRoute>
-            } 
-          />
+            }/>
           <Route path="/levels" element={<LevelSelectionPage />} />
           <Route path="/quiz/:level/:category" element={<QuizPage />} />
           <Route path="/results" element={<ResultsPage />} />
