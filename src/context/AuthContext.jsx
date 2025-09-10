@@ -3,7 +3,7 @@ import { auth, db } from '../firebaseConfig.js';
 import { onAuthStateChanged, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
 import { doc, setDoc, getDocs, collection, serverTimestamp, writeBatch } from 'firebase/firestore';
 import { quizData as staticQuizData } from '../data/quiz_data.jsx'; // Your local data file
-import { ADMIN_UID } from '../adminConfig.jsx'; // Your admin ID
+import { ADMIN_UID } from '../admin_config.jsx/'; // Your admin ID
 
 const AuthContext = React.createContext();
 
