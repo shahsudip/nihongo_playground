@@ -28,7 +28,7 @@ const ProfilePage = () => {
   const handleLogout = async () => {
     try {
       await logout();
-      navigate('/login'); // Redirect to the login page after a successful logout
+      navigate('/'); // Redirect to the login page after a successful logout
     } catch (error) {
       console.error("Failed to log out", error);
       alert("Failed to log out. Please try again.");
