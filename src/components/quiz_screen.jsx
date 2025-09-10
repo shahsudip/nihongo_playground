@@ -4,8 +4,8 @@ import { useSrsQuiz } from '../hooks/quiz_logic_hook.jsx';
 import { useAuth } from '../contexts/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc, setDoc, collection, query, where, getDocs } from 'firebase/firestore';
-import { formatDateTime } from '../utils/formatters.jsx'; // <-- IMPORT THE NEW FUNCTION
-import LoadingSpinner from '../utils/loading_spinner.jsx'; // <-- IMPORT THE LOADING SPINNER
+import { formatDateTime } from '../utils/formatters.jsx';
+import LoadingSpinner from '../components/LoadingSpinner.jsx'; // Assuming the spinner is a reusable component
 
 // --- Sub-Component: ScoreCounter ---
 const ScoreCounter = ({ score, attempts, mastered, numberOfQuestions, unseen }) => (
@@ -79,8 +79,10 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly, qu
     setTimeout(() => { handleAnswer(isCorrect); setIsAnswered(false); setSelectedOption(null); }, 1000);
   };
 
-  if (isLoading) return  <LoadingSpinner />;
-  if (isComplete || !currentCard) return <LoadingSpinner />;;
+  // Use the spinner for internal quiz logic loading and completion transitions
+  if (isLoading || isComplete || !currentCard) {
+    return <LoadingSpinner />;
+  }
 
   return (
     <>
@@ -129,7 +131,11 @@ const QuizPage = () => {
   const difficultyMap = { easy: 1, medium: 2, hard: 3 };
 
   useEffect(() => {
-    if (!currentUser) return;
+    if (!currentUser) {
+        // Keep showing the spinner if the user auth state is still loading
+        setLoading(true);
+        return;
+    }
     const fetchQuizData = async () => {
       setLoading(true);
       try {
@@ -141,6 +147,7 @@ const QuizPage = () => {
             setSelectedDifficulty('custom');
           } else {
             console.error("Custom quiz not found!");
+            setCustomQuizData(null); // Explicitly set to null on error
           }
         } else {
           const progressDocRef = doc(db, 'users', currentUser.uid, 'quizProgress', `${level}-${category}`);
@@ -175,7 +182,6 @@ const QuizPage = () => {
         const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
         const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', quizId);
         const partialResult = { ...quizStateRef.current, timestamp: new Date().toISOString(), status: 'incomplete' };
-        console.log(`User interrupted quiz. Saving state...`);
         await setDoc(historyDocRef, partialResult, { merge: true });
       };
       saveIncompleteState();
@@ -254,12 +260,8 @@ const QuizPage = () => {
                 <span className="difficulty-action-text">{buttonText}</span>
                 {history && (
                   <div className="difficulty-details">
-                    <span className={`difficulty-status-badge status-${history.status}`}>
-                      {history.status === 'completed' ? `✓ ${history.score}/${history.total}` : `Paused: ${history.score}/${history.total}`}
-                    </span>
-                    <span className="difficulty-timestamp">
-                      {formatDateTime(history.timestamp)}
-                    </span>
+                    <span className={`difficulty-status-badge status-${history.status}`}>{history.status === 'completed' ? `✓ ${history.score}/${history.total}` : `Paused: ${history.score}/${history.total}`}</span>
+                    <span className="difficulty-timestamp">{formatDateTime(history.timestamp)}</span>
                   </div>
                 )}
                 {isLocked && <span className="lock-icon">🔒</span>}
@@ -274,7 +276,15 @@ const QuizPage = () => {
   const renderQuiz = () => {
     let quizContent, quizTitle, quizType;
     if (isCustomQuiz) {
-        if (!customQuizData) return <h1>Custom Quiz Not Found!</h1>;
+        if (!customQuizData) {
+            // This is an error state, not a loading state. Show a user-friendly message.
+            return (
+                <div className="quiz-card">
+                    <h1>Custom Quiz Not Found</h1>
+                    <p>This quiz may have been deleted or the link is incorrect. Please go back to your profile.</p>
+                </div>
+            );
+        }
         quizTitle = customQuizData.title;
         quizType = category;
         const rawContent = customQuizData.quiz_content || [];
@@ -285,7 +295,10 @@ const QuizPage = () => {
         }
     } else {
         const standardQuiz = quizData[selectedDifficulty];
-        if (!standardQuiz) return <h1>Quiz Content Not Found!</h1>;
+        if (!standardQuiz) {
+            // This can happen briefly between selection and re-render, show spinner.
+            return <LoadingSpinner />;
+        }
         quizContent = standardQuiz.quiz_content;
         quizTitle = standardQuiz.title;
         quizType = category;
@@ -293,8 +306,11 @@ const QuizPage = () => {
     return <Quiz quizContent={quizContent} quizTitle={quizTitle} quizType={quizType} onComplete={onQuizComplete} onEndQuizEarly={handleEndQuizEarly} quizStateRef={quizStateRef} />;
   };
 
-  if (loading) return <LoadingSpinner />;
-  if (!currentUser) return <LoadingSpinner />;
+  // This is the main loading gate for the entire page.
+  // It waits for the initial data fetch to complete and for the user to be identified.
+  if (loading || !currentUser) {
+    return <LoadingSpinner />;
+  }
 
   return (
     <div className="quiz-container">
