@@ -12,17 +12,31 @@ import ProfilePage from './components/profile_screen.jsx';
 import MainLayout from './components/main_layout.jsx';
 
 
+import LoginPage from './components/LoginPage.jsx'; // Import the new login page
+// ... other page imports
+
+// A wrapper to protect routes that require a user to be logged in
+function ProtectedRoute({ children }) {
+  const { currentUser } = useAuth();
+  return currentUser ? children : <Navigate to="/login" />;
+}
+
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <Routes>
-        {/* Route 1: The Landing Page stands alone without the main nav bar */}
         <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<LoginPage />} />
 
-        {/* Route 2: A parent route that uses MainLayout */}
-        {/* Any page inside here will have the global navigation bar */}
         <Route element={<MainLayout />}>
-          <Route path="/profile" element={<ProfilePage />} />
+          <Route 
+            path="/profile" 
+            element={
+              <ProtectedRoute>
+                <ProfilePage />
+              </ProtectedRoute>
+            } 
+          />
           <Route path="/levels" element={<LevelSelectionPage />} />
           <Route path="/quiz/:level/:category" element={<QuizPage />} />
           <Route path="/results" element={<ResultsPage />} />
@@ -31,5 +45,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
