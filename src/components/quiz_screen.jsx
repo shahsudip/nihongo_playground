@@ -5,7 +5,7 @@ import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc, setDoc, collection, query, where, getDocs } from 'firebase/firestore';
 import { formatDateTime } from '../utils/formatters.jsx';
-import LoadingSpinner from '../utils/loading_spinner.jsx'; // Assuming the spinner is a reusable component
+import LoadingSpinner from '../utils/loading_spinner.jsx';
 
 // --- Sub-Component: ScoreCounter ---
 const ScoreCounter = ({ score, attempts, mastered, numberOfQuestions, unseen }) => (
@@ -79,7 +79,6 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly, qu
     setTimeout(() => { handleAnswer(isCorrect); setIsAnswered(false); setSelectedOption(null); }, 1000);
   };
 
-  // Use the spinner for internal quiz logic loading and completion transitions
   if (isLoading || isComplete || !currentCard) {
     return <LoadingSpinner />;
   }
@@ -112,7 +111,7 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly, qu
 const QuizPage = () => {
   const { level, category } = useParams();
   const navigate = useNavigate();
-  const { currentUser } = useAuth();
+  const { currentUser, isAdmin } = useAuth();
   const isCustomQuiz = level.startsWith('custom-');
 
   const [loading, setLoading] = useState(true);
@@ -132,9 +131,8 @@ const QuizPage = () => {
 
   useEffect(() => {
     if (!currentUser) {
-        // Keep showing the spinner if the user auth state is still loading
-        setLoading(true);
-        return;
+      setLoading(true);
+      return;
     }
     const fetchQuizData = async () => {
       setLoading(true);
@@ -144,10 +142,10 @@ const QuizPage = () => {
           const quizDocSnap = await getDoc(quizDocRef);
           if (quizDocSnap.exists()) {
             setCustomQuizData({ id: quizDocSnap.id, ...quizDocSnap.data() });
-            setSelectedDifficulty('custom');
+            setSelectedDifficulty('custom'); // Set state to indicate a quiz is active
           } else {
             console.error("Custom quiz not found!");
-            setCustomQuizData(null); // Explicitly set to null on error
+            setCustomQuizData(null);
           }
         } else {
           const progressDocRef = doc(db, 'users', currentUser.uid, 'quizProgress', `${level}-${category}`);
@@ -252,7 +250,7 @@ const QuizPage = () => {
             const history = quizHistory[difficulty];
             const currentLevelNum = difficultyMap[difficulty];
             const buttonText = history ? 'Retry' : 'Start';
-            const isLocked = currentLevelNum > unlockedLevelNum;
+            const isLocked = !isAdmin && currentLevelNum > unlockedLevelNum;
             const hasContent = quizData[difficulty]?.quiz_content?.length > 0;
             return (
               <button key={difficulty} className={`difficulty-button ${isLocked || !hasContent ? 'locked' : ''}`} disabled={isLocked || !hasContent} onClick={() => handleDifficultySelect(difficulty)}>
@@ -277,7 +275,6 @@ const QuizPage = () => {
     let quizContent, quizTitle, quizType;
     if (isCustomQuiz) {
         if (!customQuizData) {
-            // This is an error state, not a loading state. Show a user-friendly message.
             return (
                 <div className="quiz-card">
                     <h1>Custom Quiz Not Found</h1>
@@ -296,7 +293,6 @@ const QuizPage = () => {
     } else {
         const standardQuiz = quizData[selectedDifficulty];
         if (!standardQuiz) {
-            // This can happen briefly between selection and re-render, show spinner.
             return <LoadingSpinner />;
         }
         quizContent = standardQuiz.quiz_content;
@@ -306,15 +302,19 @@ const QuizPage = () => {
     return <Quiz quizContent={quizContent} quizTitle={quizTitle} quizType={quizType} onComplete={onQuizComplete} onEndQuizEarly={handleEndQuizEarly} quizStateRef={quizStateRef} />;
   };
 
-  // This is the main loading gate for the entire page.
-  // It waits for the initial data fetch to complete and for the user to be identified.
   if (loading || !currentUser) {
     return <LoadingSpinner />;
   }
 
+  // *** UPDATED RENDER LOGIC ***
+  // This now correctly handles the custom quiz case, bypassing the difficulty selection.
   return (
     <div className="quiz-container">
-      {(!selectedDifficulty) ? renderDifficultySelection() : renderQuiz()}
+      {isCustomQuiz ? (
+        renderQuiz()
+      ) : (
+        !selectedDifficulty ? renderDifficultySelection() : renderQuiz()
+      )}
       {showCompletionModal && <CompletionModal score={finalScore.score} total={finalScore.total} onContinue={handleModalContinue} />}
     </div>
   );
