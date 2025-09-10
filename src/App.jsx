@@ -4,7 +4,7 @@ import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { useAuth } from './context/AuthContext.jsx';
 import './assets/app_style.css';
 
-import MainLayout from './components/MainLayout.jsx';
+import MainLayout from './components/main_layout.jsx';
 import LandingPage from './components/landing_screen.jsx';
 import LevelSelectionPage from './components/level_selection_screen.jsx';
 import QuizPage from './components/quiz_screen.jsx';

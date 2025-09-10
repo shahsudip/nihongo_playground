@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { quizData as staticQuizData } from '../data/quiz_data.jsx';
 import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
-import { collection, query, where, getDocs } from 'firebase/firestore';
+import { collection, query, getDocs } from 'firebase/firestore';
 
 export const useQuizManager = () => {
   const { currentUser } = useAuth();
@@ -10,26 +10,26 @@ export const useQuizManager = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // This function now fetches all data from Firestore
     const fetchAllData = async () => {
+      // If no user is logged in, there's no data to fetch.
       if (!currentUser) {
-        setAllQuizzes([]); // No user, no data
+        setAllQuizzes([]);
         setIsLoading(false);
         return;
       }
 
       try {
-        // 1. Fetch user's custom quizzes from Firestore
+        // 1. Fetch the user's custom quizzes from their subcollection in Firestore.
         const customQuizzesRef = collection(db, 'users', currentUser.uid, 'customQuizzes');
         const customQuizzesSnapshot = await getDocs(customQuizzesRef);
         const customQuizzes = customQuizzesSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
 
-        // 2. Fetch user's quiz history from Firestore
+        // 2. Fetch the user's quiz history from their subcollection in Firestore.
         const historyRef = collection(db, 'users', currentUser.uid, 'quizHistory');
         const historySnapshot = await getDocs(historyRef);
         const history = historySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
         
-        // 3. De-duplicate the history to get only the latest result for each quiz
+        // 3. De-duplicate the history to get only the most recent result for each quiz.
         const sortedHistory = [...history].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
         const deduplicatedHistory = [];
         const seenQuizIds = new Set();
@@ -45,8 +45,10 @@ export const useQuizManager = () => {
           completedQuizMap.set(item.quizId, { score: item.score, total: item.total, fullRecord: item });
         });
 
-        // 4. Process and unify all quizzes into a single list
+        // 4. Process and unify all quizzes (static + custom) into a single list with status flags.
         const unifiedQuizzes = [];
+
+        // Process static (N-level) quizzes
         Object.keys(staticQuizData).forEach(level => {
           Object.keys(staticQuizData[level]).forEach(category => {
             Object.keys(staticQuizData[level][category]).forEach(difficulty => {
@@ -68,6 +70,7 @@ export const useQuizManager = () => {
           });
         });
 
+        // Process custom quizzes fetched from Firestore
         customQuizzes.forEach(quiz => {
           const uniqueId = quiz.id;
           let status = 'unattended';
@@ -79,7 +82,8 @@ export const useQuizManager = () => {
           }
           unifiedQuizzes.push({
             uniqueId, type: 'custom', title: quiz.title,
-            level: quiz.id, category: quiz.tag, difficulty: null, status, latestResult,
+            level: quiz.id, // The 'level' for routing is the document ID
+            category: quiz.tag, difficulty: null, status, latestResult,
             createdAt: quiz.createdAt,
             quiz_content: quiz.quiz_content,
           });
@@ -87,14 +91,15 @@ export const useQuizManager = () => {
 
         setAllQuizzes(unifiedQuizzes);
       } catch (error) {
-        console.error("Error fetching quiz data:", error);
+        console.error("Error fetching quiz data from Firestore:", error);
       } finally {
         setIsLoading(false);
       }
     };
 
     fetchAllData();
-  }, [currentUser]); // Re-run this logic if the user logs in or out
+  }, [currentUser]); // This logic re-runs whenever the user logs in or out
 
   return { allQuizzes, isLoading };
 };
+

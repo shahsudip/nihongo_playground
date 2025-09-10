@@ -1,11 +1,12 @@
 import React, { useState, useMemo } from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // <-- 1. Import useNavigate
+import { Link, useNavigate } from 'react-router-dom';
 import JapaneseText from '../components/JapaneseText.jsx';
 import { useQuizManager } from '../hooks/useQuizManager.jsx';
 import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
 import { collection, addDoc, doc, deleteDoc } from 'firebase/firestore';
 
+// Helper function to parse the comma-separated text from the textarea
 const parseCsvToQuizContent = (csvText) => {
   if (!csvText) return [];
   return csvText.split('\n').slice(1).map(line => line.trim()).filter(line => line)
@@ -16,29 +17,24 @@ const parseCsvToQuizContent = (csvText) => {
 };
 
 const ProfilePage = () => {
+  // This hook is now the single source of truth for all quiz data and statuses.
   const { allQuizzes, isLoading } = useQuizManager();
   const { currentUser, logout } = useAuth();
-  const navigate = useNavigate(); // <-- 2. Initialize the navigate function
+  const navigate = useNavigate();
+
+  // State for the "Create Quiz" form
   const [newQuizTitle, setNewQuizTitle] = useState('');
   const [newQuizTag, setNewQuizTag] = useState('vocabulary');
   const [csvText, setCsvText] = useState('');
+  
+  // State for the sidebar filter
   const [activeFilter, setActiveFilter] = useState('mastered');
 
-  // This function now correctly uses the navigate hook
-  const handleLogout = async () => {
-    try {
-      await logout();
-      navigate('/'); // Redirect to the landing page on success
-    } catch (error) {
-      console.error("Failed to log out", error);
-      alert("Failed to log out. Please try again.");
-      // We no longer navigate on failure, to prevent crashes.
-    }
-  };
-
+  // Function to save a new custom quiz to Firestore
   const handleCreateQuiz = async () => {
     if (!currentUser) { alert("You must be logged in to create a quiz."); return; }
     if (!newQuizTitle.trim() || !csvText.trim()) { alert('Please provide a title and paste your vocabulary list.'); return; }
+    
     const quizContent = parseCsvToQuizContent(csvText);
     if (quizContent.length === 0) { alert('Could not parse any questions. Please check the format.'); return; }
     
@@ -52,13 +48,14 @@ const ProfilePage = () => {
       };
       const userQuizzesColRef = collection(db, 'users', currentUser.uid, 'customQuizzes');
       await addDoc(userQuizzesColRef, newQuizData);
-      window.location.reload();
+      window.location.reload(); // Reload to force the useQuizManager to refetch
     } catch (error) {
       console.error("Error creating quiz:", error);
       alert("Failed to create quiz.");
     }
   };
 
+  // Function to delete a custom quiz from Firestore
   const handleDeleteQuiz = async (quizIdToDelete) => {
     if (!currentUser) { alert("You must be logged in to delete a quiz."); return; }
     if (!window.confirm("Are you sure you want to delete this quiz? This cannot be undone.")) return;
@@ -73,6 +70,18 @@ const ProfilePage = () => {
     }
   };
   
+  // Function to handle logging out
+  const handleLogout = async () => {
+    try {
+      await logout();
+      navigate('/');
+    } catch (error) {
+      console.error("Failed to log out", error);
+      alert("Failed to log out.");
+    }
+  };
+  
+  // Memoized logic to filter the main list for the sidebar
   const filteredList = useMemo(() => {
     if (isLoading) return [];
     if (activeFilter === 'unattended') {
@@ -88,6 +97,7 @@ const ProfilePage = () => {
     return [];
   }, [allQuizzes, activeFilter, isLoading]);
 
+  // Memoized logic to get only the custom quizzes for the main content area
   const customQuizzes = useMemo(() => allQuizzes.filter(q => q.type === 'custom'), [allQuizzes]);
 
   return (
