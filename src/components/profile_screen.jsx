@@ -1,9 +1,10 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import JapaneseText from '../components/JapaneseText.jsx';
-import { useQuizManager } from '../logic/use_quiz_manager.jsx'; // The central data source
+import { useQuizManager } from '../hooks/useQuizManager.js';
 import { useAuth } from '../context/AuthContext.jsx'; // <-- THIS IS THE FIX
-
+import { db } from '../firebaseConfig.js';
+import { collection, addDoc } from 'firebase/firestore';
 
 const parseCsvToQuizContent = (csvText) => {
   if (!csvText) return [];
@@ -16,14 +17,17 @@ const parseCsvToQuizContent = (csvText) => {
 
 const ProfilePage = () => {
   const { allQuizzes, isLoading } = useQuizManager();
-  const { currentUser } = useAuth(); // Get the currently logged-in user
-
+  const { currentUser } = useAuth();
   const [newQuizTitle, setNewQuizTitle] = useState('');
   const [newQuizTag, setNewQuizTag] = useState('vocabulary');
   const [csvText, setCsvText] = useState('');
   const [activeFilter, setActiveFilter] = useState('mastered');
 
-  const handleCreateQuiz = () => {
+  const handleCreateQuiz = async () => {
+    if (!currentUser) {
+      alert("You must be logged in to create a quiz.");
+      return;
+    }
     if (!newQuizTitle.trim() || !csvText.trim()) {
       alert('Please provide a title and paste your vocabulary list.');
       return;
@@ -33,28 +37,32 @@ const ProfilePage = () => {
       alert('Could not parse any questions. Please check the format.');
       return;
     }
-    const newQuiz = {
-      id: `custom-${Date.now()}`,
-      title: newQuizTitle,
-      tag: newQuizTag,
-      quiz_content: quizContent,
-    };
-    const currentQuizzes = JSON.parse(localStorage.getItem('customQuizzes')) || [];
-    const updatedQuizzes = [...currentQuizzes, newQuiz];
-    localStorage.setItem('customQuizzes', JSON.stringify(updatedQuizzes));
-    window.location.reload(); // Reload to force the hook to get the latest data
+    
+    try {
+      const newQuizData = {
+        title: newQuizTitle,
+        tag: newQuizTag,
+        quiz_content: quizContent,
+        createdAt: new Date().toISOString(),
+        userId: currentUser.uid
+      };
+
+      const userQuizzesColRef = collection(db, 'users', currentUser.uid, 'customQuizzes');
+      await addDoc(userQuizzesColRef, newQuizData);
+      window.location.reload();
+
+    } catch (error) {
+      console.error("Error creating quiz:", error);
+      alert("Failed to create quiz. Please try again.");
+    }
   };
   
   const filteredList = useMemo(() => {
     if (isLoading) return [];
-
     if (activeFilter === 'unattended') {
       return allQuizzes.filter(q => q.status === 'unattended');
     }
-    
-    // For mastered/incomplete, we only show quizzes that have a history record
     const historyQuizzes = allQuizzes.filter(q => q.status !== 'unattended');
-    
     if (activeFilter === 'mastered') {
       return historyQuizzes.filter(item => item.status === 'mastered');
     }
@@ -78,8 +86,8 @@ const ProfilePage = () => {
             <div className="creator-form-inline">
               <input type="text" value={newQuizTitle} onChange={(e) => setNewQuizTitle(e.target.value)} placeholder="Enter Quiz Title (e.g., Chapter 1 Vocab)" />
               <div className="tag-selector">
-                <button className={`tag-button ${newQuizTag === 'vocabulary' ? 'active' : ''}`} onClick={() => setNewQuizTag('vocabulary')}><JapaneseText>èªžå½?</JapaneseText> (Vocab)</button>
-                <button className={`tag-button ${newQuizTag === 'kanji' ? 'active' : ''}`} onClick={() => setNewQuizTag('kanji')}><JapaneseText>æ¼¢å­?</JapaneseText> (Kanji)</button>
+                <button className={`tag-button ${newQuizTag === 'vocabulary' ? 'active' : ''}`} onClick={() => setNewQuizTag('vocabulary')}><JapaneseText>Œêœb</JapaneseText> (Vocab)</button>
+                <button className={`tag-button ${newQuizTag === 'kanji' ? 'active' : ''}`} onClick={() => setNewQuizTag('kanji')}><JapaneseText>Š¿Žš</JapaneseText> (Kanji)</button>
               </div>
               <textarea value={csvText} onChange={(e) => setCsvText(e.target.value)} placeholder="Paste your list here...&#10;Format: English Meaning,Kanji,Hiragana" rows="8"></textarea>
               <button onClick={handleCreateQuiz} className="action-button next-level create-button">Create and Save Quiz</button>
@@ -87,30 +95,32 @@ const ProfilePage = () => {
           </div>
           <div className="profile-section">
             <h2 className="profile-subtitle">My Custom Quizzes</h2>
-            {customQuizzes.length === 0 ? (
-              <p className="empty-state-text">Your created quizzes will appear here.</p>
-            ) : (
-              <div className="history-list">
-                {customQuizzes.map((quiz) => {
-                  const creationDate = new Date(parseInt(quiz.uniqueId.split('-')[1])).toLocaleDateString();
-                  return (
-                    <div key={quiz.uniqueId} className="history-item custom-quiz-card">
-                      <div className="card-header">
-                        <p className="custom-quiz-date">{creationDate}</p>
-                        <span className={`status-badge status-${quiz.status}`}>{quiz.status}</span>
+            {isLoading ? <p className="empty-state-text">Loading quizzes...</p> : (
+              customQuizzes.length === 0 ? (
+                <p className="empty-state-text">Your created quizzes will appear here.</p>
+              ) : (
+                <div className="history-list">
+                  {customQuizzes.map((quiz) => {
+                    const creationDate = new Date(quiz.createdAt).toLocaleDateString();
+                    return (
+                      <div key={quiz.uniqueId} className="history-item custom-quiz-card">
+                        <div className="card-header">
+                          <p className="custom-quiz-date">{creationDate}</p>
+                          <span className={`status-badge status-${quiz.status}`}>{quiz.status}</span>
+                        </div>
+                        <h3 className="custom-quiz-title">{quiz.title}</h3>
+                        <div className="custom-quiz-meta">
+                          <span className={`meta-tag tag-${quiz.category}`}>{quiz.category}</span>
+                          <span className="meta-count">{quiz.quiz_content?.length || 0} terms</span>
+                        </div>
+                        <div className="custom-quiz-actions">
+                          <Link to={`/quiz/${quiz.level}/${quiz.category}`} className="action-button next-level">Start Quiz</Link>
+                        </div>
                       </div>
-                      <h3 className="custom-quiz-title">{quiz.title}</h3>
-                      <div className="custom-quiz-meta">
-                        <span className={`meta-tag tag-${quiz.category}`}>{quiz.category}</span>
-                        <span className="meta-count">{quiz.quiz_content?.length || 0} terms</span>
-                      </div>
-                      <div className="custom-quiz-actions">
-                        <Link to={`/quiz/${quiz.level}/${quiz.category}`} className="action-button next-level">Start Quiz</Link>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
+                    );
+                  })}
+                </div>
+              )
             )}
           </div>
         </div>
@@ -118,9 +128,9 @@ const ProfilePage = () => {
           <div className="profile-section">
             <h2 className="profile-subtitle">Quiz Status</h2>
             <div className="filter-tabs">
-              <button onClick={() => setActiveFilter('mastered')} className={activeFilter === 'mastered' ? 'active' : ''}>Mastered</button>
-              <button onClick={() => setActiveFilter('incomplete')} className={activeFilter === 'incomplete' ? 'active' : ''}>Incomplete</button>
-              <button onClick={() => setActiveFilter('unattended')} className={activeFilter === 'unattended' ? 'active' : ''}>Unattended</button>
+              <button onClick={() => setActiveFilter('mastered')} className={`filter-mastered ${activeFilter === 'mastered' ? 'active' : ''}`}>Mastered</button>
+              <button onClick={() => setActiveFilter('incomplete')} className={`filter-incomplete ${activeFilter === 'incomplete' ? 'active' : ''}`}>Incomplete</button>
+              <button onClick={() => setActiveFilter('unattended')} className={`filter-unattended ${activeFilter === 'unattended' ? 'active' : ''}`}>Unattended</button>
             </div>
             {isLoading ? <p className="empty-state-text">Loading...</p> : (
               filteredList.length === 0 ? (
@@ -137,11 +147,9 @@ const ProfilePage = () => {
                       <div key={item.uniqueId} className="history-item">
                         <div className="history-item-header">
                           <h3>{item.title}</h3>
-                          {/* Use the latestResult for the timestamp */}
                           <span className="history-item-date">{new Date(item.latestResult.timestamp).toLocaleDateString()}</span>
                         </div>
                         <div className="history-item-body">
-                          {/* Use the latestResult for the score */}
                           <p>Score: <strong>{item.latestResult.score} / {item.latestResult.total}</strong></p>
                           <div className="progress-bar-container"><div className="progress-bar-fill" style={{ width: `${item.latestResult.total > 0 ? (item.latestResult.score / item.latestResult.total) * 100 : 0}%` }}></div></div>
                         </div>
@@ -164,3 +172,4 @@ const ProfilePage = () => {
 };
 
 export default ProfilePage;
+
