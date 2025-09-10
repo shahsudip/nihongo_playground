@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
-import logo from '../assets/logo-transparent.png';
+import logo from '../assets/logo_transparent.png';
 
 const LandingPage = () => {
   const { loginWithGoogle, currentUser } = useAuth();

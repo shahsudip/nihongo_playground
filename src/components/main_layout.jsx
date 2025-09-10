@@ -1,13 +1,8 @@
 import React from 'react';
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext.jsx'; // Import the authentication context
-import logo from '../assets/logo_transparent.png'; // Using your specified logo path
+import logo from '../assets/logo_transparent.png';
 
 const MainHeader = () => {
-  // Get the current user and logout function from our Auth context
-  const navigate = useNavigate();
-
-
   return (
     <header className="main-header">
       <div className="logo-container">
