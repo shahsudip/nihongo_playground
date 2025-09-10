@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom'; // <-- 1. Import useNavigate
 import JapaneseText from '../components/JapaneseText.jsx';
 import { useQuizManager } from '../hooks/useQuizManager.jsx';
-import { useAuth } from '../context/AuthContext.jsx'; // <-- THIS IS THE FIX
+import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
 import { collection, addDoc, doc, deleteDoc } from 'firebase/firestore';
 
@@ -18,21 +18,21 @@ const parseCsvToQuizContent = (csvText) => {
 const ProfilePage = () => {
   const { allQuizzes, isLoading } = useQuizManager();
   const { currentUser, logout } = useAuth();
-
+  const navigate = useNavigate(); // <-- 2. Initialize the navigate function
   const [newQuizTitle, setNewQuizTitle] = useState('');
   const [newQuizTag, setNewQuizTag] = useState('vocabulary');
   const [csvText, setCsvText] = useState('');
   const [activeFilter, setActiveFilter] = useState('mastered');
 
-  // This function handles the logout process
+  // This function now correctly uses the navigate hook
   const handleLogout = async () => {
     try {
       await logout();
-      navigate('/'); // Redirect to the login page after a successful logout
+      navigate('/'); // Redirect to the landing page on success
     } catch (error) {
       console.error("Failed to log out", error);
       alert("Failed to log out. Please try again.");
-      navigate('/profile');
+      // We no longer navigate on failure, to prevent crashes.
     }
   };
 
@@ -41,7 +41,7 @@ const ProfilePage = () => {
     if (!newQuizTitle.trim() || !csvText.trim()) { alert('Please provide a title and paste your vocabulary list.'); return; }
     const quizContent = parseCsvToQuizContent(csvText);
     if (quizContent.length === 0) { alert('Could not parse any questions. Please check the format.'); return; }
-
+    
     try {
       const newQuizData = {
         title: newQuizTitle,
@@ -72,7 +72,7 @@ const ProfilePage = () => {
       alert("Failed to delete quiz.");
     }
   };
-
+  
   const filteredList = useMemo(() => {
     if (isLoading) return [];
     if (activeFilter === 'unattended') {
@@ -157,8 +157,8 @@ const ProfilePage = () => {
                   {filteredList.map((item) => (
                     activeFilter === 'unattended' ? (
                       <div key={item.uniqueId} className="history-item unattended-item">
-                        <h3>{item.title}</h3>
-                        <Link to={`/quiz/${item.level}/${item.category}`} className="action-button next-level">Start Quiz</Link>
+                         <h3>{item.title}</h3>
+                         <Link to={`/quiz/${item.level}/${item.category}`} className="action-button next-level">Start Quiz</Link>
                       </div>
                     ) : (
                       <div key={item.uniqueId} className="history-item">
