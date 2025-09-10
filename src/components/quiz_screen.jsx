@@ -108,6 +108,23 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly, qu
 };
 
 // --- Main Page Component ---
+
+// NEW: Universal helper function to format quiz data consistently
+const transformQuizContent = (rawContent = [], category) => {
+  if (category === 'kanji') {
+    return rawContent.map(item => ({
+      questionText: item.kanji,
+      answer: `${item.hiragana} (${item.meaning})`
+    }));
+  } else { // Default to 'vocabulary'
+    return rawContent.map(item => ({
+      questionText: item.meaning,
+      answer: item.hiragana
+    }));
+  }
+};
+
+
 const QuizPage = () => {
   const { level, category } = useParams();
   const navigate = useNavigate();
@@ -142,7 +159,7 @@ const QuizPage = () => {
           const quizDocSnap = await getDoc(quizDocRef);
           if (quizDocSnap.exists()) {
             setCustomQuizData({ id: quizDocSnap.id, ...quizDocSnap.data() });
-            setSelectedDifficulty('custom'); // Set state to indicate a quiz is active
+            setSelectedDifficulty('custom');
           } else {
             console.error("Custom quiz not found!");
             setCustomQuizData(null);
@@ -271,43 +288,40 @@ const QuizPage = () => {
     );
   };
   
+  // REFACTORED: This function now uses the universal transform helper
   const renderQuiz = () => {
-    let quizContent, quizTitle, quizType;
+    let rawContent, quizTitle;
+
     if (isCustomQuiz) {
-        if (!customQuizData) {
-            return (
-                <div className="quiz-card">
-                    <h1>Custom Quiz Not Found</h1>
-                    <p>This quiz may have been deleted or the link is incorrect. Please go back to your profile.</p>
-                </div>
-            );
-        }
-        quizTitle = customQuizData.title;
-        quizType = category;
-        const rawContent = customQuizData.quiz_content || [];
-        if (category === 'kanji') {
-            quizContent = rawContent.map(item => ({ questionText: item.kanji, answer: item.meaning }));
-        } else {
-            quizContent = rawContent.map(item => ({ questionText: item.meaning, answer: item.hiragana }));
-        }
+      if (!customQuizData) {
+        return (
+          <div className="quiz-card">
+            <h1>Custom Quiz Not Found</h1>
+            <p>This quiz may have been deleted or the link is incorrect.</p>
+          </div>
+        );
+      }
+      quizTitle = customQuizData.title;
+      rawContent = customQuizData.quiz_content;
     } else {
-        const standardQuiz = quizData[selectedDifficulty];
-        if (!standardQuiz) {
-            return <LoadingSpinner />;
-        }
-        quizContent = standardQuiz.quiz_content;
-        quizTitle = standardQuiz.title;
-        quizType = category;
+      const standardQuiz = quizData[selectedDifficulty];
+      if (!standardQuiz) {
+        return <LoadingSpinner />;
+      }
+      quizTitle = standardQuiz.title;
+      rawContent = standardQuiz.quiz_content;
     }
-    return <Quiz quizContent={quizContent} quizTitle={quizTitle} quizType={quizType} onComplete={onQuizComplete} onEndQuizEarly={handleEndQuizEarly} quizStateRef={quizStateRef} />;
+    
+    const quizContent = transformQuizContent(rawContent, category);
+    return <Quiz quizContent={quizContent} quizTitle={quizTitle} quizType={category} onComplete={onQuizComplete} onEndQuizEarly={handleEndQuizEarly} quizStateRef={quizStateRef} />;
   };
 
   if (loading || !currentUser) {
     return <LoadingSpinner />;
   }
 
-  // *** UPDATED RENDER LOGIC ***
-  // This now correctly handles the custom quiz case, bypassing the difficulty selection.
+  // FIX: This main render logic correctly shows the quiz directly for custom quizzes,
+  // and shows the difficulty selection screen only for standard quizzes.
   return (
     <div className="quiz-container">
       {isCustomQuiz ? (
