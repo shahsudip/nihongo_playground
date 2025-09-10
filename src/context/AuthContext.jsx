@@ -2,8 +2,8 @@ import React, { useContext, useState, useEffect } from 'react';
 import { auth, db } from '../firebaseConfig.js';
 import { onAuthStateChanged, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
 import { doc, setDoc, getDocs, collection, serverTimestamp, writeBatch } from 'firebase/firestore';
-import { quizData as staticQuizData } from '../data/quiz_data.jsx'; // Your local data
-import { ADMIN_UID } from '../adminConfig.jsx'; // Your admin ID
+import { quizData as staticQuizData } from '../data/quiz_data.js'; // Your local data file
+import { ADMIN_UID } from '../adminConfig.js'; // Your admin ID
 
 const AuthContext = React.createContext();
 
@@ -22,9 +22,9 @@ export function AuthProvider({ children }) {
       const quizzesRef = collection(db, 'quizzes');
       const existingQuizzesSnapshot = await getDocs(quizzesRef);
 
-      // Only seed data if the global collection is empty
+      // Only seed data if the global collection is empty to prevent overwriting.
       if (existingQuizzesSnapshot.empty) {
-        console.log("Seeding standard quizzes to global collection...");
+        console.log("Global 'quizzes' collection is empty. Seeding standard quizzes...");
         const batch = writeBatch(db);
 
         Object.keys(staticQuizData).forEach(level => {
@@ -33,6 +33,7 @@ export function AuthProvider({ children }) {
               const quizId = `${level}-${category}-${difficulty}`;
               const quizDocRef = doc(db, 'quizzes', quizId);
               const quizDetails = staticQuizData[level][category][difficulty];
+              
               batch.set(quizDocRef, {
                 ...quizDetails,
                 level,
@@ -44,7 +45,9 @@ export function AuthProvider({ children }) {
           });
         });
         await batch.commit();
-        console.log("Standard quizzes have been successfully seeded.");
+        console.log("Standard quizzes have been successfully seeded to the global collection.");
+      } else {
+        console.log("Global 'quizzes' collection already contains data. Seeding skipped.");
       }
     } catch (error) {
       console.error("Error seeding standard quizzes:", error);
@@ -66,7 +69,7 @@ export function AuthProvider({ children }) {
           lastLogin: serverTimestamp(),
         }, { merge: true });
 
-        // If the logged-in user is the admin, run the seeding function
+        // If the logged-in user is the admin, run the seeding function.
         if (user.uid === ADMIN_UID) {
           await seedStandardQuizzes();
         }

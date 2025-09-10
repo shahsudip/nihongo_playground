@@ -1,7 +1,4 @@
-// --- DATA LAYER ---
-// This file contains all quiz data, structured by JLPT level, 
-// quiz type (kanji, vocabulary), and difficulty.
-// This structure is scalable for adding more levels and categories later.
+
 
 export const quizData = {
   n5: {
@@ -556,9 +553,9 @@ export const quizData = {
       hard: {
         title: "N4 Kanji Vocabulary (Hard)",
         quiz_content: [
-          // This section would contain the most difficult or less frequent N4 words.
-          // For now, it is empty as the list provided has been distributed among easy/medium.
-          // It can be populated as more advanced N4 words are studied.
+          { kanji: '‹cˆõ', hiragana: '‚¬‚¢‚ñ', meaning: 'member of parliament' },
+          { kanji: '‹c‰ï', hiragana: '‚¬‚©‚¢', meaning: 'assembly, parliament' },
+          { kanji: '‹`–±', hiragana: '‚¬‚Þ', meaning: 'duty, obligation' },
         ]
       }
     }
