@@ -1,6 +1,5 @@
 import React, { useState, useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import JapaneseText from '../components/JapaneseText.jsx';
 import { useQuizManager } from '../hooks/useQuizManager.jsx';
 import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
@@ -11,7 +10,7 @@ const parseCsvToQuizContent = (csvText) => {
   if (!csvText) return [];
   return csvText.split('\n').slice(1).map(line => line.trim()).filter(line => line)
     .map(line => {
-      const [hiragana, english, kanji] = line.split(',');
+      const [hiragana, meaning, kanji] = line.split(',');
       return { kanji: kanji || '', hiragana: hiragana || '', meaning: meaning || '' };
     });
 };
@@ -115,8 +114,8 @@ const ProfilePage = () => {
             <div className="creator-form-inline">
               <input type="text" value={newQuizTitle} onChange={(e) => setNewQuizTitle(e.target.value)} placeholder="Enter Quiz Title (e.g., Chapter 1 Vocab)" />
               <div className="tag-selector">
-                <button className={`tag-button ${newQuizTag === 'vocabulary' ? 'active' : ''}`} onClick={() => setNewQuizTag('vocabulary')}><JapaneseText>Œêœb</JapaneseText> (Vocab)</button>
-                <button className={`tag-button ${newQuizTag === 'kanji' ? 'active' : ''}`} onClick={() => setNewQuizTag('kanji')}><JapaneseText>Š¿Žš</JapaneseText> (Kanji)</button>
+                <button className={`tag-button ${newQuizTag === 'vocabulary' ? 'active' : ''}`} onClick={() => setNewQuizTag('vocabulary')}> (Vocab)</button>
+                <button className={`tag-button ${newQuizTag === 'kanji' ? 'active' : ''}`} onClick={() => setNewQuizTag('kanji')}>(Kanji)</button>
               </div>
               <textarea value={csvText} onChange={(e) => setCsvText(e.target.value)} placeholder="Paste your list here...&#10;Format: English Meaning,Kanji,Hiragana" rows="8"></textarea>
               <button onClick={handleCreateQuiz} className="action-button next-level create-button">Create and Save Quiz</button>
@@ -133,7 +132,7 @@ const ProfilePage = () => {
                     const creationDate = new Date(quiz.createdAt).toLocaleDateString();
                     return (
                       <div key={quiz.uniqueId} className="history-item custom-quiz-card">
-                        <button onClick={() => handleDeleteQuiz(quiz.uniqueId)} className="delete-quiz-button" aria-label="Delete quiz">??</button>
+                        <button onClick={() => handleDeleteQuiz(quiz.uniqueId)} className="delete-quiz-button" aria-label="Delete quiz"><i class="material-icons" style="font-size:36px;color:red">delete</i></button>
                         <div className="card-header">
                           <p className="custom-quiz-date">{creationDate}</p>
                           <span className={`status-badge status-${quiz.status}`}>{quiz.status}</span>
@@ -141,7 +140,7 @@ const ProfilePage = () => {
                         <h3 className="custom-quiz-title">{quiz.title}</h3>
                         <div className="custom-quiz-meta">
                           <span className={`meta-tag tag-${quiz.category}`}>{quiz.category}</span>
-                          <span className="meta-count">{quiz.quiz_content?.length || 0} terms</span>
+                          <span className="meta-count">{quiz.quiz_content?.length || 0} questions</span>
                         </div>
                         <div className="custom-quiz-actions">
                           <Link to={`/quiz/${quiz.level}/${quiz.category}`} className="action-button next-level">Start Quiz</Link>
