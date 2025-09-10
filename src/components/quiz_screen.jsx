@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useSrsQuiz } from '../hooks/quiz_logic_hook.jsx';
-import { useAuth } from '../context/AuthContext.jsx';
+import { useAuth } from '../contexts/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc, setDoc, collection, query, where, getDocs } from 'firebase/firestore';
 
-// --- Sub-Component: ScoreCounter ---
-const ScoreCounter = ({ correct, incorrect, mastered, total, unseen }) => (
+// --- Sub-Component: ScoreCounter (Updated Labels and Props) ---
+const ScoreCounter = ({ score, attempts, mastered, numberOfQuestions, unseen }) => (
   <div className="score-counter-container">
     <div className="score-item unseen">New: <span>{unseen}</span></div>
-    <div className="score-item correct">Correct: <span>{correct}</span></div>
-    <div className="score-item incorrect">Incorrect: <span>{incorrect}</span></div>
-    <div className="score-item mastered">Mastered: <span>{mastered} / {total}</span></div>
+    <div className="score-item correct">Score: <span>{score}</span></div>
+    <div className="score-item incorrect">Attempts: <span>{attempts}</span></div>
+    <div className="score-item mastered">Mastered: <span>{mastered} / {numberOfQuestions}</span></div>
   </div>
 );
 
@@ -43,28 +43,42 @@ const FirstPassModal = ({ score, total, onContinueReview, onEndQuiz }) => (
   </div>
 );
 
-// --- Sub-Component: The Quiz View ---
+// --- Sub-Component: The Quiz View (Updated with new variable names) ---
 const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly, quizStateRef }) => {
   const [showFirstPassModal, setShowFirstPassModal] = useState(false);
   const quizState = useSrsQuiz(quizContent, quizType);
-  const { currentCard, currentOptions, handleAnswer, acknowledgeFirstPass, isComplete, isLoading, isFirstPassComplete, hasAcknowledgedFirstPass, firstPassStats, totalCorrect, totalIncorrect, masteredCount, deckSize, unseenCount } = quizState;
+  // Rename variables on destructuring
+  const { currentCard, currentOptions, handleAnswer, acknowledgeFirstPass, isComplete, isLoading, isFirstPassComplete, hasAcknowledgedFirstPass, firstPassStats, totalCorrect: score, totalIncorrect: attempts, masteredCount, deckSize: numberOfQuestions, unseenCount } = quizState;
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
 
-  // Report real-time progress back to the parent component via a ref
+  // Report real-time progress with new variable names
   useEffect(() => {
     if (quizStateRef) {
       quizStateRef.current = {
-        score: totalCorrect,
-        total: totalCorrect + totalIncorrect || deckSize,
+        score: score,
+        total: score + attempts || numberOfQuestions,
+        attempts: attempts,
+        mastered: masteredCount,
+        unseen: unseenCount,
+        numberOfQuestions: numberOfQuestions
       };
     }
-  }, [totalCorrect, totalIncorrect, deckSize, quizStateRef]);
+  }, [score, attempts, masteredCount, unseenCount, numberOfQuestions, quizStateRef]);
 
   useEffect(() => {
     if (isFirstPassComplete && !hasAcknowledgedFirstPass) setShowFirstPassModal(true);
-    if (isComplete) onComplete(totalCorrect, totalCorrect + totalIncorrect);
-  }, [isFirstPassComplete, hasAcknowledgedFirstPass, isComplete, onComplete, totalCorrect, totalIncorrect]);
+    if (isComplete) {
+      // Pass the final, detailed stats object with new names on completion
+      onComplete({
+        score: score,
+        total: score + attempts,
+        attempts: attempts,
+        mastered: masteredCount,
+        unseen: unseenCount
+      });
+    }
+  }, [isFirstPassComplete, hasAcknowledgedFirstPass, isComplete, onComplete, score, attempts, masteredCount, unseenCount]);
 
   const handleContinueReview = () => {
     setShowFirstPassModal(false);
@@ -90,7 +104,7 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly, qu
     <>
       <div className="quiz-card">
         <h1 className="quiz-title">{quizTitle}</h1>
-        <ScoreCounter correct={totalCorrect} incorrect={totalIncorrect} mastered={masteredCount} total={deckSize} unseen={unseenCount} />
+        <ScoreCounter score={score} attempts={attempts} mastered={masteredCount} numberOfQuestions={numberOfQuestions} unseen={unseenCount} />
         <h2 className="question-text">{currentCard.questionText}</h2>
         <div className="options-grid">
           {currentOptions.map((option, index) => {
@@ -110,11 +124,11 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly, qu
   );
 };
 
-// --- Main Page Component ---
+// --- Main Page Component (Updated with new variable names) ---
 const QuizPage = () => {
   const { level, category } = useParams();
   const navigate = useNavigate();
-  const { currentUser, isAdmin } = useAuth();
+  const { currentUser } = useAuth();
   const isCustomQuiz = level.startsWith('custom-');
 
   const [loading, setLoading] = useState(true);
@@ -126,7 +140,7 @@ const QuizPage = () => {
   const [customQuizData, setCustomQuizData] = useState(null);
   const [quizHistory, setQuizHistory] = useState({});
 
-  const quizStateRef = useRef({ score: 0, total: 0 });
+  const quizStateRef = useRef({});
   const isQuizCompletedRef = useRef(false);
 
   const difficulties = ['easy', 'medium', 'hard'];
@@ -167,67 +181,58 @@ const QuizPage = () => {
 
   useEffect(() => {
     return () => {
-      if (isAdmin || isQuizCompletedRef.current || !selectedDifficulty || !currentUser || isCustomQuiz) {
+      if (isQuizCompletedRef.current || !selectedDifficulty || !currentUser || isCustomQuiz) {
         return;
       }
       
       const saveIncompleteState = async () => {
         const quizId = `${level}-${category}-${selectedDifficulty}`;
         const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', quizId);
-        const { score, total } = quizStateRef.current;
         
         const partialResult = {
-          score,
-          total,
+          ...quizStateRef.current, // Contains new names: score, attempts, etc.
           timestamp: new Date().toISOString(),
           status: 'incomplete',
         };
         
-        console.log(`User interrupted quiz. Saving state: ${score}/${total}`);
+        console.log(`User interrupted quiz. Saving state...`);
         await setDoc(historyDocRef, partialResult, { merge: true });
       };
 
       saveIncompleteState();
     };
-  }, [selectedDifficulty, currentUser, isAdmin, level, category, isCustomQuiz]);
+  }, [selectedDifficulty, currentUser, level, category, isCustomQuiz]);
 
   const handleDifficultySelect = async (difficulty) => {
-    if (!currentUser || isAdmin) {
-        setSelectedDifficulty(difficulty);
-        return;
-    };
-
+    if (!currentUser) return;
+    
     const quizId = `${level}-${category}-${difficulty}`;
     const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', quizId);
     
     isQuizCompletedRef.current = false;
-    quizStateRef.current = { score: 0, total: 0 };
+    quizStateRef.current = {};
+
+    const baseRecord = {
+      quizId,
+      title: quizData[difficulty]?.title || "Quiz",
+      level, category, difficulty,
+      timestamp: new Date().toISOString(),
+      status: 'incomplete', 
+    };
 
     if (!quizHistory[difficulty]) {
-      const newRecord = {
-        quizId,
-        title: quizData[difficulty]?.title || "Quiz",
-        level, category, difficulty,
-        score: 0,
-        total: quizData[difficulty]?.quiz_content?.length || 1,
-        timestamp: new Date().toISOString(),
-        status: 'incomplete', 
-      };
+      const newRecord = { ...baseRecord, score: 0, total: quizData[difficulty]?.quiz_content?.length || 1, attempts: 0, mastered: 0, unseen: 0 };
       await setDoc(historyDocRef, newRecord);
     } else {
-        await setDoc(historyDocRef, { status: 'incomplete', timestamp: new Date().toISOString() }, { merge: true });
+      await setDoc(historyDocRef, baseRecord, { merge: true });
     }
 
     setSelectedDifficulty(difficulty);
   };
   
-  const onQuizComplete = async (finalScoreValue, totalAttempts) => {
+  const onQuizComplete = async (finalStats) => {
     isQuizCompletedRef.current = true;
-    if (!currentUser || isAdmin) {
-        setFinalScore({ score: finalScoreValue, total: totalAttempts });
-        setShowCompletionModal(true);
-        return;
-    };
+    if (!currentUser) return;
     
     const progressDocRef = doc(db, 'users', currentUser.uid, 'quizProgress', `${level}-${category}`);
     if (selectedDifficulty === 'easy' && unlockedDifficulty === 'easy') await setDoc(progressDocRef, { unlocked: 'medium' });
@@ -236,30 +241,27 @@ const QuizPage = () => {
     const quizId = `${level}-${category}-${selectedDifficulty}`;
     const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', quizId);
     const finalResult = {
-      score: finalScoreValue,
-      total: totalAttempts,
+      ...finalStats, // The detailed stats object with new names
       timestamp: new Date().toISOString(),
       status: 'completed',
     };
     
     await setDoc(historyDocRef, finalResult, { merge: true });
     
-    setFinalScore({ score: finalScoreValue, total: totalAttempts });
+    setFinalScore({ score: finalStats.score, total: finalStats.total });
     setShowCompletionModal(true);
   };
   
   const handleEndQuizEarly = async (stats) => {
     isQuizCompletedRef.current = true;
-    if (!currentUser || isAdmin) {
-        navigate('/profile');
-        return;
-    };
+    if (!currentUser) return;
 
     const quizId = `${level}-${category}-${selectedDifficulty}`;
     const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', quizId);
     const partialResult = {
       score: stats.score,
       total: stats.total,
+      attempts: stats.total - stats.score,
       timestamp: new Date().toISOString(),
       status: 'incomplete',
     };
@@ -283,7 +285,7 @@ const QuizPage = () => {
             const history = quizHistory[difficulty];
             const currentLevelNum = difficultyMap[difficulty];
             const buttonText = history ? 'Retry' : 'Start';
-            const isLocked = !isAdmin && currentLevelNum > unlockedLevelNum;
+            const isLocked = currentLevelNum > unlockedLevelNum;
             const hasContent = quizData[difficulty]?.quiz_content?.length > 0;
             
             return (
