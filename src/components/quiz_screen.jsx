@@ -5,7 +5,7 @@ import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc, setDoc, collection, query, where, getDocs } from 'firebase/firestore';
 import { formatDateTime } from '../utils/formatters.jsx';
-import LoadingSpinner from '../components/LoadingSpinner.jsx'; // Assuming the spinner is a reusable component
+import LoadingSpinner from '../utils/loading_spinner.jsx'; // Assuming the spinner is a reusable component
 
 // --- Sub-Component: ScoreCounter ---
 const ScoreCounter = ({ score, attempts, mastered, numberOfQuestions, unseen }) => (
