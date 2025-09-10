@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import JapaneseText from '../components/JapaneseText.jsx';
-import { useQuizManager } from '../hooks/useQuizManager.jsx';
+import { useQuizManager } from '../hooks/useQuizManager.js';
 import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
 import { collection, addDoc, doc, deleteDoc } from 'firebase/firestore';
@@ -11,7 +11,7 @@ const parseCsvToQuizContent = (csvText) => {
   if (!csvText) return [];
   return csvText.split('\n').slice(1).map(line => line.trim()).filter(line => line)
     .map(line => {
-      const [hiragana, meaning, kanji ] = line.split(',');
+      const [hiragana, english, kanji] = line.split(',');
       return { kanji: kanji || '', hiragana: hiragana || '', meaning: meaning || '' };
     });
 };
@@ -44,11 +44,14 @@ const ProfilePage = () => {
         tag: newQuizTag,
         quiz_content: quizContent,
         createdAt: new Date().toISOString(),
-        userId: currentUser.uid
+        userId: currentUser.uid,
+        status: 'unattended', // Initial status is always unattended
       };
       const userQuizzesColRef = collection(db, 'users', currentUser.uid, 'customQuizzes');
       await addDoc(userQuizzesColRef, newQuizData);
-      window.location.reload(); // Reload to force the useQuizManager to refetch
+      // Clear the form on successful creation. The real-time listener will update the list automatically.
+      setNewQuizTitle('');
+      setCsvText('');
     } catch (error) {
       console.error("Error creating quiz:", error);
       alert("Failed to create quiz.");
@@ -63,7 +66,7 @@ const ProfilePage = () => {
     try {
       const quizDocRef = doc(db, 'users', currentUser.uid, 'customQuizzes', quizIdToDelete);
       await deleteDoc(quizDocRef);
-      window.location.reload();
+      // The real-time listener will automatically remove the quiz from the view.
     } catch (error) {
       console.error("Error deleting quiz:", error);
       alert("Failed to delete quiz.");
@@ -195,9 +198,7 @@ const ProfilePage = () => {
         </div>
       </div>
       <div className="profile-logout-section">
-        <button onClick={handleLogout} className="action-button home logout-button">
-          Logout
-        </button>
+        <button onClick={handleLogout} className="action-button home logout-button">Logout</button>
       </div>
     </div>
   );
