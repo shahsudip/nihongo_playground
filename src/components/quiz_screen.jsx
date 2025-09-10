@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useSrsQuiz } from '../hooks/quiz_logic_hook.jsx';
-import { useAuth } from '../context/AuthContext.jsx';
+import { useAuth } from '../contexts/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc, setDoc, collection, query, where, getDocs } from 'firebase/firestore';
+import { formatDateTime } from '../utils/formatters.jsx'; // <-- IMPORT THE NEW FUNCTION
+import LoadingSpinner from '../utils/loading_spinner.jsx'; // <-- IMPORT THE LOADING SPINNER
 
-// --- Sub-Component: ScoreCounter (Updated Labels and Props) ---
+// --- Sub-Component: ScoreCounter ---
 const ScoreCounter = ({ score, attempts, mastered, numberOfQuestions, unseen }) => (
   <div className="score-counter-container">
     <div className="score-item unseen">New: <span>{unseen}</span></div>
@@ -77,8 +79,8 @@ const Quiz = ({ quizContent, quizTitle, quizType, onComplete, onEndQuizEarly, qu
     setTimeout(() => { handleAnswer(isCorrect); setIsAnswered(false); setSelectedOption(null); }, 1000);
   };
 
-  if (isLoading) return <div className="loading-text">Loading Quiz...</div>;
-  if (isComplete || !currentCard) return <div className="loading-text">Quiz Complete! Navigating...</div>;
+  if (isLoading) return  <LoadingSpinner />;
+  if (isComplete || !currentCard) return <LoadingSpinner />;;
 
   return (
     <>
@@ -136,13 +138,11 @@ const QuizPage = () => {
           const quizDocSnap = await getDoc(quizDocRef);
           if (quizDocSnap.exists()) {
             setCustomQuizData({ id: quizDocSnap.id, ...quizDocSnap.data() });
-            // For custom quizzes, we go straight to the quiz
-            setSelectedDifficulty('custom'); 
+            setSelectedDifficulty('custom');
           } else {
             console.error("Custom quiz not found!");
           }
         } else {
-          // Standard quiz fetching logic
           const progressDocRef = doc(db, 'users', currentUser.uid, 'quizProgress', `${level}-${category}`);
           const progressSnap = await getDoc(progressDocRef);
           if (progressSnap.exists()) setUnlockedDifficulty(progressSnap.data().unlocked);
@@ -171,11 +171,9 @@ const QuizPage = () => {
   useEffect(() => {
     return () => {
       if (isQuizCompletedRef.current || !selectedDifficulty || !currentUser) return;
-      
       const saveIncompleteState = async () => {
         const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
         const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', quizId);
-        
         const partialResult = { ...quizStateRef.current, timestamp: new Date().toISOString(), status: 'incomplete' };
         console.log(`User interrupted quiz. Saving state...`);
         await setDoc(historyDocRef, partialResult, { merge: true });
@@ -186,15 +184,11 @@ const QuizPage = () => {
 
   const handleDifficultySelect = async (difficulty) => {
     if (!currentUser) return;
-    
     const quizId = `${level}-${category}-${difficulty}`;
     const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', quizId);
-    
     isQuizCompletedRef.current = false;
     quizStateRef.current = {};
-
     const baseRecord = { quizId, title: quizData[difficulty]?.title || "Quiz", level, category, difficulty, timestamp: new Date().toISOString(), status: 'incomplete' };
-
     if (!quizHistory[difficulty]) {
       const newRecord = { ...baseRecord, score: 0, total: quizData[difficulty]?.quiz_content?.length || 1, attempts: 0, mastered: 0, unseen: 0 };
       await setDoc(historyDocRef, newRecord);
@@ -207,19 +201,14 @@ const QuizPage = () => {
   const onQuizComplete = async (finalStats) => {
     isQuizCompletedRef.current = true;
     if (!currentUser) return;
-    
-    // Unlock logic only applies to standard quizzes
     if (!isCustomQuiz) {
         const progressDocRef = doc(db, 'users', currentUser.uid, 'quizProgress', `${level}-${category}`);
         if (selectedDifficulty === 'easy' && unlockedDifficulty === 'easy') await setDoc(progressDocRef, { unlocked: 'medium' });
         else if (selectedDifficulty === 'medium' && unlockedDifficulty === 'medium') await setDoc(progressDocRef, { unlocked: 'hard' });
     }
-
     const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
     const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', quizId);
     const finalResult = { ...finalStats, timestamp: new Date().toISOString(), status: 'completed' };
-    
-    // For a custom quiz, ensure the base details are included on completion
     if (isCustomQuiz) {
         finalResult.quizId = level;
         finalResult.title = customQuizData.title;
@@ -227,7 +216,6 @@ const QuizPage = () => {
         finalResult.category = category;
         finalResult.difficulty = 'custom';
     }
-    
     await setDoc(historyDocRef, finalResult, { merge: true });
     setFinalScore({ score: finalStats.score, total: finalStats.total });
     setShowCompletionModal(true);
@@ -236,11 +224,9 @@ const QuizPage = () => {
   const handleEndQuizEarly = async (stats) => {
     isQuizCompletedRef.current = true;
     if (!currentUser) return;
-
     const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
     const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', quizId);
     const partialResult = { score: stats.score, total: stats.total, attempts: stats.total - stats.score, timestamp: new Date().toISOString(), status: 'incomplete' };
-    
     await setDoc(historyDocRef, partialResult, { merge: true });
     navigate('/profile');
   };
@@ -251,7 +237,6 @@ const QuizPage = () => {
   };
 
   const renderDifficultySelection = () => {
-    // This function will not be rendered for custom quizzes
     const unlockedLevelNum = difficultyMap[unlockedDifficulty];
     return (
       <div className="difficulty-selection-container">
@@ -267,7 +252,16 @@ const QuizPage = () => {
               <button key={difficulty} className={`difficulty-button ${isLocked || !hasContent ? 'locked' : ''}`} disabled={isLocked || !hasContent} onClick={() => handleDifficultySelect(difficulty)}>
                 <span className="difficulty-main-text">{difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}</span>
                 <span className="difficulty-action-text">{buttonText}</span>
-                {history && <span className={`difficulty-status-badge status-${history.status}`}>{history.status === 'completed' ? `✓ ${history.score}/${history.total}` : `Paused: ${history.score}/${history.total}`}</span>}
+                {history && (
+                  <div className="difficulty-details">
+                    <span className={`difficulty-status-badge status-${history.status}`}>
+                      {history.status === 'completed' ? `✓ ${history.score}/${history.total}` : `Paused: ${history.score}/${history.total}`}
+                    </span>
+                    <span className="difficulty-timestamp">
+                      {formatDateTime(history.timestamp)}
+                    </span>
+                  </div>
+                )}
                 {isLocked && <span className="lock-icon">🔒</span>}
               </button>
             );
@@ -279,27 +273,15 @@ const QuizPage = () => {
   
   const renderQuiz = () => {
     let quizContent, quizTitle, quizType;
-
     if (isCustomQuiz) {
         if (!customQuizData) return <h1>Custom Quiz Not Found!</h1>;
-        
         quizTitle = customQuizData.title;
         quizType = category;
-
-        // --- DYNAMIC QUIZ GENERATION LOGIC ---
         const rawContent = customQuizData.quiz_content || [];
         if (category === 'kanji') {
-            // Kanji Quiz: Question is Kanji, Answer is Meaning
-            quizContent = rawContent.map(item => ({
-                questionText: item.kanji,
-                answer: item.meaning
-            }));
-        } else { // Default to 'vocabulary'
-            // Vocabulary Quiz: Question is Meaning, Answer is Hiragana
-            quizContent = rawContent.map(item => ({
-                questionText: item.meaning,
-                answer: item.hiragana
-            }));
+            quizContent = rawContent.map(item => ({ questionText: item.kanji, answer: item.meaning }));
+        } else {
+            quizContent = rawContent.map(item => ({ questionText: item.meaning, answer: item.hiragana }));
         }
     } else {
         const standardQuiz = quizData[selectedDifficulty];
@@ -311,8 +293,8 @@ const QuizPage = () => {
     return <Quiz quizContent={quizContent} quizTitle={quizTitle} quizType={quizType} onComplete={onQuizComplete} onEndQuizEarly={handleEndQuizEarly} quizStateRef={quizStateRef} />;
   };
 
-  if (loading) return <div className="loading-text">Loading Quiz Data...</div>;
-  if (!currentUser) return <div className="loading-text">Please log in to play a quiz.</div>;
+  if (loading) return <LoadingSpinner />;
+  if (!currentUser) return <LoadingSpinner />;
 
   return (
     <div className="quiz-container">

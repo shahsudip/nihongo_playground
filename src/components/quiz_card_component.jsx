@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import LoadingSpinner from '../utils/loading_spinner.jsx';
 
 // --- UI COMPONENT ---
 // Displays the current Kanji question and the 2x2 grid of options.
@@ -41,7 +42,7 @@ export default function QuizCard({ card, options, isAnswered, onOptionSelect }) 
   };
 
   if (!card) {
-    return <div>Loading...</div>;
+    return <LoadingSpinner />;
   }
 
   return (

@@ -658,3 +658,93 @@ body {
 .logout-button {
   max-width: 200px;
 }
+
+.datetime-display .date-part {
+  color: #2980b9; /* A professional blue */
+  font-weight: 500;
+}
+
+.datetime-display .time-part {
+  color: #8e44ad; /* A rich purple */
+  margin-left: 8px;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/* Optional: Add a container for better layout on the quiz button */
+.difficulty-details {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+
+/* The main overlay that covers the page and blurs the background */
+.loading-overlay {
+  /* Positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+
+  /* Centering the content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* The blur effect */
+  background-color: rgba(255, 255, 255, 0.1); /* Slight white tint */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* For Safari support */
+}
+
+/* Container for the spinner and text */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* The animated circular spinner */
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  
+  /* The spinner "track" */
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  
+  /* The moving part of the spinner */
+  border-top-color: #ffffff;
+  
+  /* The animation */
+  animation: spin 1s linear infinite;
+}
+
+/* The text below the spinner */
+.loading-text {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+/* Keyframe animation for the spinner's rotation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
