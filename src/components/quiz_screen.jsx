@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useSrsQuiz } from '../hooks/quiz_logic_hook.jsx';
-import { useAuth } from '../contexts/AuthContext.jsx';
+import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc, setDoc, collection, query, where, getDocs } from 'firebase/firestore';
 import { formatDateTime } from '../utils/formatters.jsx';
-import LoadingSpinner from '../components/LoadingSpinner.jsx';
+import LoadingSpinner from './loading_spinner.jsx';
 
 // --- Sub-Component: ScoreCounter ---
 const ScoreCounter = ({ score, attempts, mastered, numberOfQuestions, unseen }) => (
