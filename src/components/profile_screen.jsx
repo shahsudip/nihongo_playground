@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import JapaneseText from '../components/JapaneseText.jsx';
-import { useQuizManager } from '../hooks/useQuizManager.js';
+import { useQuizManager } from '../logic/use_quiz_manager.js';
 import { useAuth } from '../context/AuthContext.jsx'; // <-- THIS IS THE FIX
 import { db } from '../firebaseConfig.js';
 import { collection, addDoc } from 'firebase/firestore';
