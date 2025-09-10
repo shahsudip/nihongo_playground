@@ -10,54 +10,40 @@ const parseCsvToQuizContent = (csvText, quizType) => {
   if (!csvText) return [];
   return csvText.split('\n').slice(1).map(line => line.trim()).filter(line => line)
     .map(line => {
-      // This now correctly matches your specified format: Hiragana,English Meaning,Kanji
       const [hiragana, meaning, kanji] = line.split(',');
-      
-      // If the quiz type is 'vocabulary', we explicitly ignore the kanji data.
       if (quizType === 'vocabulary') {
         return { kanji: '', hiragana: hiragana || '', meaning: meaning || '' };
       }
-      
-      // Otherwise (for kanji quizzes), we include it.
       return { kanji: kanji || '', hiragana: hiragana || '', meaning: meaning || '' };
     });
 };
 
 const ProfilePage = () => {
-  // This hook is the single source of truth for all quiz data and statuses.
   const { allQuizzes, isLoading } = useQuizManager();
   const { currentUser, logout } = useAuth();
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate();
 
-  // State for the "Create Quiz" form
   const [newQuizTitle, setNewQuizTitle] = useState('');
   const [newQuizTag, setNewQuizTag] = useState('vocabulary');
   const [csvText, setCsvText] = useState('');
-  
-  // State for the sidebar filter
   const [activeFilter, setActiveFilter] = useState('mastered');
 
-  // Function to save a new custom quiz to Firestore
   const handleCreateQuiz = async () => {
     if (!currentUser) { alert("You must be logged in to create a quiz."); return; }
     if (!newQuizTitle.trim() || !csvText.trim()) { alert('Please provide a title and paste your vocabulary list.'); return; }
-    
-    // Pass the selected tag to the parsing function
     const quizContent = parseCsvToQuizContent(csvText, newQuizTag);
     if (quizContent.length === 0) { alert('Could not parse any questions. Please check the format.'); return; }
-    
     try {
       const newQuizData = {
         title: newQuizTitle,
         tag: newQuizTag,
         quiz_content: quizContent,
-        createdAt: new Date().toISOString(), // Corrected: added parentheses
+        createdAt: new Date().toISOString(),
         userId: currentUser.uid,
         status: 'unattended',
       };
       const userQuizzesColRef = collection(db, 'users', currentUser.uid, 'customQuizzes');
       await addDoc(userQuizzesColRef, newQuizData);
-      // Clear the form on successful creation. The real-time listener will update the list automatically.
       setNewQuizTitle('');
       setCsvText('');
     } catch (error) {
@@ -66,22 +52,18 @@ const ProfilePage = () => {
     }
   };
 
-  // Function to delete a custom quiz from Firestore
   const handleDeleteQuiz = async (quizIdToDelete) => {
     if (!currentUser) { alert("You must be logged in to delete a quiz."); return; }
     if (!window.confirm("Are you sure you want to delete this quiz? This cannot be undone.")) return;
-
     try {
       const quizDocRef = doc(db, 'users', currentUser.uid, 'customQuizzes', quizIdToDelete);
       await deleteDoc(quizDocRef);
-      // The real-time listener will automatically remove the quiz from the view.
     } catch (error) {
       console.error("Error deleting quiz:", error);
       alert("Failed to delete quiz.");
     }
   };
-  
-  // Function to handle logging out
+
   const handleLogout = async () => {
     try {
       await logout();
@@ -91,8 +73,7 @@ const ProfilePage = () => {
       alert("Failed to log out.");
     }
   };
-  
-  // Memoized logic to filter the main list for the sidebar
+
   const filteredList = useMemo(() => {
     if (isLoading) return [];
     if (activeFilter === 'unattended') {
@@ -108,14 +89,11 @@ const ProfilePage = () => {
     return [];
   }, [allQuizzes, activeFilter, isLoading]);
 
-  // Memoized logic to get only the custom quizzes for the main content area
   const customQuizzes = useMemo(() => allQuizzes.filter(q => q.type === 'custom'), [allQuizzes]);
 
   return (
     <div className="profile-container">
-      <h1 className="profile-title">
-        Welcome, {currentUser?.displayName || 'Student'}!
-      </h1>
+      <h1 className="profile-title">Welcome, {currentUser?.displayName || 'Student'}!</h1>
       <div className="profile-grid-container">
         <div className="profile-main-content">
           <div className="profile-section">
@@ -141,7 +119,10 @@ const ProfilePage = () => {
                     const creationDate = new Date(quiz.createdAt).toLocaleDateString();
                     return (
                       <div key={quiz.uniqueId} className="history-item custom-quiz-card">
-                        <button onClick={() => handleDeleteQuiz(quiz.uniqueId)} className="delete-quiz-button" aria-label="Delete quiz">??</button>
+                        {/* --- THIS IS THE RESTORED DELETE BUTTON --- */}
+                        <button onClick={() => handleDeleteQuiz(quiz.uniqueId)} className="delete-quiz-button" aria-label="Delete quiz">
+                          <i className="material-icons" style={{ fontSize: '36px', color: 'red' }}>delete</i>
+                        </button>
                         <div className="card-header">
                           <p className="custom-quiz-date">{creationDate}</p>
                           <span className={`status-badge status-${quiz.status}`}>{quiz.status}</span>
