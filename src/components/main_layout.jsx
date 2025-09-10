@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext'; // Import the authentication context
+import { useAuth } from '../context/AuthContext.jsx'; // Import the authentication context
 import logo from '../assets/logo_transparent.png'; // Using your specified logo path
 
 const MainHeader = () => {
