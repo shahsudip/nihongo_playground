@@ -1,67 +1,69 @@
 import React, { useState, useEffect } from 'react';
-import LoadingSpinner from '../utils/loading_spinner.jsx';
+import LoadingSpinner from '../utils/loading_spinner.jsx'; // Corrected path assumption
 
 // --- UI COMPONENT ---
-// Displays the current Kanji question and the 2x2 grid of options.
+// Displays the current question and the grid of options for any quiz type.
 
 export default function QuizCard({ card, options, isAnswered, onOptionSelect }) {
-  const [selectedOptionId, setSelectedOptionId] = useState(null);
+  const [selectedOption, setSelectedOption] = useState(null);
 
   // Reset the visual selection when a new card is loaded
   useEffect(() => {
-    setSelectedOptionId(null);
+    setSelectedOption(null);
   }, [card]);
 
   const handleSelect = (option) => {
     // Prevent changing the answer after one has been submitted
     if (!isAnswered) {
-      setSelectedOptionId(option.id);
-      onOptionSelect(option);
+      setSelectedOption(option);
+      onOptionSelect(option); // The option is now the full answer string
     }
   };
 
-  // Determines the CSS class for the button based on the answer state
+  // REFACTORED: Determines the CSS class based on the new string-based answer format
   const getButtonClass = (option) => {
-    // Default class before any answer is given
     if (!isAnswered) {
       return 'option-button';
     }
     
     // After answering, highlight the correct answer in green
-    if (option.id === card.id) {
-        return 'option-button correct';
+    if (option === card.answer) {
+      return 'option-button correct';
     }
 
-    // If the selected answer was incorrect, highlight it in red
-    if (selectedOptionId === option.id) {
-        return 'option-button incorrect';
+    // If this option was selected and it was incorrect, highlight it in red
+    if (selectedOption === option) {
+      return 'option-button incorrect';
     }
 
-    // Otherwise, just a standard button
+    // Otherwise, it's an unselected, incorrect option
     return 'option-button';
   };
 
+  // The loading spinner will show if the card object isn't ready
   if (!card) {
     return <LoadingSpinner />;
   }
 
   return (
     <div className="quiz-card">
-      <div className="kanji-display">{card.kanji}</div>
+      {/* UPDATED: Displays the universal "questionText" field */}
+      <div className="question-display">{card.questionText}</div>
+      
       <div className="options-grid">
-        {options.map((option) => (
+        {/* UPDATED: Maps over an array of simple strings for the options */}
+        {options.map((option, index) => (
           <button
-            key={option.id}
+            key={index}
             className={getButtonClass(option)}
             onClick={() => handleSelect(option)}
             disabled={isAnswered}
           >
-            <div className="option-hiragana">{option.hiragana}</div>
-            <div className="option-meaning">({option.meaning})</div>
+            {/* The entire option string is now displayed directly */}
+            {option}
           </button>
         ))}
       </div>
     </div>
   );
 }
-
