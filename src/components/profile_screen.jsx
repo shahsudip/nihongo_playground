@@ -7,31 +7,22 @@ import { formatDateTime } from '../utils/formatters.jsx';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 
 // --- UPDATED HELPER FUNCTION ---
-// This function now intelligently detects and handles the presence of a header row.
 const parseCsvToQuizContent = (csvText, quizType) => {
   if (!csvText) return [];
-
-  // Clean up lines and remove any empty ones
   const lines = csvText.split('\n').map(line => line.trim()).filter(line => line);
   if (lines.length === 0) return [];
-
-  // Check if the first line looks like a header (case-insensitive)
   const firstLine = lines[0].toLowerCase();
   const hasHeader = firstLine.includes('hiragana') || firstLine.includes('meaning') || firstLine.includes('kanji');
-  
-  // If a header is found, process all lines after it. Otherwise, process all lines.
   const dataLines = hasHeader ? lines.slice(1) : lines;
 
   return dataLines.map(line => {
       const [hiragana, meaning, kanji] = line.split(',').map(s => s.trim());
-      // For vocabulary, kanji is optional
       if (quizType === 'vocabulary') {
         return { kanji: kanji || '', hiragana: hiragana || '', meaning: meaning || '' };
       }
       return { kanji: kanji || '', hiragana: hiragana || '', meaning: meaning || '' };
     });
 };
-
 
 const ProfilePage = () => {
   const { currentUser, logout } = useAuth();
@@ -45,7 +36,7 @@ const ProfilePage = () => {
 
   const [newQuizTitle, setNewQuizTitle] = useState('');
   const [newQuizTag, setNewQuizTag] = useState('vocabulary');
-  const [csvText, setCsvText] = useState(''); // Start with an empty textarea
+  const [csvText, setCsvText] = useState('');
   const [activeFilter, setActiveFilter] = useState('mastered');
 
   // --- Data Fetching for the Logged-in User ---
@@ -58,19 +49,16 @@ const ProfilePage = () => {
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        // 1. Fetch all standard quizzes (for the 'unattended' list)
         const standardQuizzesQuery = query(collection(db, 'quizzes'));
         const standardQuizzesSnapshot = await getDocs(standardQuizzesQuery);
         const standardQuizzesData = standardQuizzesSnapshot.docs.map(doc => ({ ...doc.data(), id: doc.id }));
         setStandardQuizzes(standardQuizzesData);
         
-        // 2. Fetch user-specific custom quizzes
         const customQuizzesQuery = query(collection(db, 'users', currentUser.uid, 'customQuizzes'), orderBy('createdAt', 'desc'));
         const customQuizzesSnapshot = await getDocs(customQuizzesQuery);
         const customQuizzesData = customQuizzesSnapshot.docs.map(doc => ({ ...doc.data(), id: doc.id }));
         setCustomQuizzes(customQuizzesData);
         
-        // 3. Fetch user-specific quiz history
         const historyQuery = query(collection(db, 'users', currentUser.uid, 'quizHistory'));
         const historySnapshot = await getDocs(historyQuery);
         const historyData = historySnapshot.docs.map(doc => ({ ...doc.data(), id: doc.id }));
@@ -103,20 +91,15 @@ const ProfilePage = () => {
         userId: currentUser.uid,
       };
       const userQuizzesColRef = collection(db, 'users', currentUser.uid, 'customQuizzes');
-      // No need to await if we optimistically update the UI
-      addDoc(userQuizzesColRef, newQuizData);
+      const docRef = await addDoc(userQuizzesColRef, newQuizData);
       
-      // Optimistic UI update
-      const tempId = `temp-${Date.now()}`;
-      setCustomQuizzes(prevQuizzes => [{...newQuizData, id: tempId}, ...prevQuizzes]);
-
+      setCustomQuizzes(prevQuizzes => [{...newQuizData, id: docRef.id}, ...prevQuizzes]);
       setNewQuizTitle('');
       setCsvText('');
 
     } catch (error) {
       console.error("Error creating quiz:", error);
       alert("Failed to create quiz.");
-      // Revert optimistic update on error if needed
     }
   };
 
@@ -124,13 +107,11 @@ const ProfilePage = () => {
     if (!currentUser) { alert("You must be logged in to delete a quiz."); return; }
     if (!window.confirm("Are you sure you want to delete this quiz? This cannot be undone.")) return;
     try {
-      // Optimistic UI update
       setCustomQuizzes(prevQuizzes => prevQuizzes.filter(q => q.id !== quizIdToDelete));
       await deleteDoc(doc(db, 'users', currentUser.uid, 'customQuizzes', quizIdToDelete));
     } catch (error) {
       console.error("Error deleting quiz:", error);
       alert("Failed to delete quiz.");
-      // Revert optimistic update on error if needed
     }
   };
 
@@ -146,21 +127,23 @@ const ProfilePage = () => {
 
   // --- Memoized Filtering Logic ---
   const filteredList = useMemo(() => {
-    const historyMap = new Map(quizHistory.map(h => [h.quizId, h]));
+    // --- FIX 1: Use the history item's own ID as the key ---
+    const historyMap = new Map(quizHistory.map(h => [h.id, h]));
 
     if (activeFilter === 'unattended') {
       const standardUnattended = standardQuizzes.filter(q => !historyMap.has(q.id));
       const customUnattended = customQuizzes.filter(q => !historyMap.has(q.id));
-      return [...standardUnattended, ...customUnattended];
+      return [...standardUnattended, ...customUnattended].sort((a,b) => (a.title > b.title) ? 1 : -1);
     }
     
     const attendedQuizzes = quizHistory.map(historyItem => {
-      let baseQuiz = standardQuizzes.find(q => q.id === historyItem.quizId) || customQuizzes.find(q => q.id === historyItem.quizId);
+      // --- FIX 2: Match the quiz ID to the history item's own ID ---
+      let baseQuiz = standardQuizzes.find(q => q.id === historyItem.id) || customQuizzes.find(q => q.id === historyItem.id);
       return baseQuiz ? { ...baseQuiz, latestResult: historyItem } : null;
     }).filter(Boolean);
 
     if (activeFilter === 'mastered') {
-      return attendedQuizzes.filter(item => item.latestResult.status === 'completed');
+      return attendedQuizzes.filter(item => item.latestResult.status === 'mastered');
     }
     if (activeFilter === 'incomplete') {
       return attendedQuizzes.filter(item => item.latestResult.status === 'incomplete');
@@ -196,7 +179,8 @@ const ProfilePage = () => {
             ) : (
               <div className="history-list">
                 {customQuizzes.map((quiz) => {
-                  const historyRecord = quizHistory.find(h => h.quizId === quiz.id);
+                  // --- FIX 3: Find the history record by matching its ID to the quiz's ID ---
+                  const historyRecord = quizHistory.find(h => h.id === quiz.id);
                   const status = historyRecord?.status || 'unattended';
                   const quizLink = `/quiz/${quiz.id}/${quiz.tag}`;
                   
@@ -253,7 +237,7 @@ const ProfilePage = () => {
                         <p>Score: <strong>{item.latestResult.score} / {item.latestResult.total}</strong></p>
                         <div className="progress-bar-container"><div className="progress-bar-fill" style={{ width: `${item.latestResult.total > 0 ? (item.latestResult.score / item.latestResult.total) * 100 : 0}%` }}></div></div>
                       </div>
-                      {item.latestResult.status !== 'completed' && (
+                      {item.latestResult.status !== 'mastered' && (
                         <div className="history-item-actions">
                           <Link to={itemLink} className="action-button restart">Retry Quiz</Link>
                         </div>

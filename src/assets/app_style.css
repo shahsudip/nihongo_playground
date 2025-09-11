@@ -584,11 +584,11 @@ body {
 }
 .delete-quiz-button {
   position: absolute;
-  top: 25px;
-  left: 10px;
+  top: 45px;
+  right: 35px;
   background: none;
   border: none;
-  font-size: 1.2rem; /* Adjust icon size */
+  font-size: 1.5rem; /* Adjust icon size */
   color: var(--feedback-incorrect);
   cursor: pointer;
   padding: 5px;
@@ -611,7 +611,7 @@ body {
 
 /* Base style for the status badge itself */
 .status-badge {
-  font-size: 0.8rem;
+  font-size: 1.0rem;
   font-weight: bold;
   padding: 4px 10px;
   border-radius: 15px;
@@ -648,27 +648,41 @@ body {
   transform-origin: bottom center;
 }
 
+/* --- Logout Button Section --- */
 .profile-logout-section {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid var(--background-light);
+  margin-top: 2rem;
 }
+
 .logout-button {
-  max-width: 200px;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: var(--accent-red);
+  color: var(--text-light);
+  border: none; /* Ensure no other borders are interfering */
+  cursor: pointer;
+  
+  /* ADD THIS: Makes the background color change smoothly */
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* FIX: Make the selector more specific to guarantee it applies on hover */
+.action-button.logout-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
 }
 
 .datetime-display .date-part {
-  color: #2980b9; /* A professional blue */
+  color: #f4f5f7; /* A professional blue */
   font-weight: 500;
+  font-size: 0.7em;
+
 }
 
 .datetime-display .time-part {
-  color: #8e44ad; /* A rich purple */
+  color: #f9fbfc; /* A rich purple */
   margin-left: 8px;
-  font-size: 0.9em;
-  font-style: italic;
+  font-size: 0.7em;
 }
 
 /* Optional: Add a container for better layout on the quiz button */
@@ -747,4 +761,61 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+/* --- Updated Difficulty Button Styles --- */
+
+.difficulty-button {
+  position: relative; /* Acts as an anchor for the corner elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15px;
+  min-height: 120px; /* Ensures consistent button height */
+}
+
+/* Positions the status badge (e.g., 'incomplete') in the top-left corner */
+.difficulty-status-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  /* Reuses the existing badge styles for color */
+}
+
+/* This is the new container for the centered Title and Score */
+.difficulty-main {
+  display: flex;
+  align-items: baseline; /* Aligns the bottom of the text */
+  gap: 15px;
+  text-align: center;
+}
+
+.difficulty-main-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Positions the timestamp in the bottom-right corner */
+.difficulty-timestamp {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-medium);
+}
+
+/* Keep the lock icon centered when no history is present */
+.difficulty-button .lock-icon {
+  font-size: 1.5rem;
+}
+/* Add this for the mastered button state */
+.difficulty-button.mastered {
+  background-color: #e0f2fe; /* A light, celebratory blue */
+  border-color: #0284c7;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+.difficulty-button.mastered:hover {
+  background-color: #e0f2fe; /* Prevent hover effect */
+  transform: none;
 }

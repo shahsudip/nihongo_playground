@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext.jsx'; // Import the authentication context
 import logo from '../assets/logo_transparent.png'; // Using your specified logo path
 
 const MainHeader = () => {
@@ -15,7 +14,6 @@ const MainHeader = () => {
         <NavLink to="/" className="logo-title">Nihongo Playground</NavLink>
       </div>
       <nav className="main-nav">
-        <NavLink to="/" className="nav-link">Home</NavLink>
         <NavLink to="/levels" className="nav-link">Practice</NavLink>
         {<NavLink to="/profile" className="nav-link">Profile</NavLink>}
         
