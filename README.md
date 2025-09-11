@@ -55,7 +55,7 @@ You need to have [Node.js](https://nodejs.org/) and `npm` (or `yarn`) installed 
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    git clone [https://github.com/shahsudip/nihongo_playground.git](https://github.com/shahsudip/nihongo_playground.git)
     cd your-repo-name
     ```
 
