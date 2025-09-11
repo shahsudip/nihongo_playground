@@ -234,7 +234,7 @@ const ProfilePage = () => {
                         <span className="history-item-date">{formatDateTime(item.latestResult.timestamp)}</span>
                       </div>
                       <div className="history-item-body">
-                        <p>Score: <strong>{item.latestResult.score} / {item.latestResult.total}</strong></p>
+                        <p>Score: <strong>{item.latestResult.score} / {item.latestResult.numberOfQuestions}</strong></p>
                         <div className="progress-bar-container"><div className="progress-bar-fill" style={{ width: `${item.latestResult.total > 0 ? (item.latestResult.score / item.latestResult.total) * 100 : 0}%` }}></div></div>
                       </div>
                       {item.latestResult.status !== 'mastered' && (
