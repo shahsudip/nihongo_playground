@@ -2,7 +2,7 @@
 
 An interactive web application for learning Japanese Kanji and vocabulary through dynamic, SRS-based quizzes. This project is built with React and Firebase, focusing on a clean user interface and effective learning tools.
 
-**[Live Demo Link Here]**
+**[[Live Demo Link Here](https://shahsudip.github.io/nihongo_playground/#/levels)]**
 
 ---
 ## Screenshots
