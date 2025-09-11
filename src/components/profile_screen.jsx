@@ -21,7 +21,7 @@ const parseCsvToQuizContent = (csvText, quizType) => {
         return { kanji: kanji || '', hiragana: hiragana || '', meaning: meaning || '' };
       }
       return { kanji: kanji || '', hiragana: hiragana || '', meaning: meaning || '' };
-    });
+    }); 
 };
 
 const ProfilePage = () => {
