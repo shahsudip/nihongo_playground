@@ -1,0 +1,34 @@
+# .github/workflows/scraper.yml
+
+name: Hourly Scrape
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    # This tells all steps in this job to run inside the 'scraper' folder
+    defaults:
+      run:
+        working-directory: ./scraper-test
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install # This now runs inside ./scraper
+
+      - name: Run scraper script
+        run: node index.js # This also runs inside ./scraper
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
