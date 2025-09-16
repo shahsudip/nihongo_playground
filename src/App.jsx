@@ -10,6 +10,7 @@ import LevelSelectionPage from './components/level_selection_screen.jsx';
 import QuizPage from './components/quiz_screen.jsx';
 import ResultsPage from './components/result_screen.jsx';
 import ProfilePage from './components/profile_screen.jsx';
+import ExerciseGridPage from './components/exercise_grid_screen.jsx';
 
 // This component protects routes that require a user to be logged in
 function ProtectedRoute({ children }) {
@@ -23,24 +24,28 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        
+
         {/* All other pages use the MainLayout and are protected */}
         <Route element={<MainLayout />}>
-          <Route 
-            path="/profile" 
-            element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} 
+          <Route
+            path="/profile"
+            element={<ProtectedRoute><ProfilePage /></ProtectedRoute>}
           />
-          <Route 
-            path="/levels" 
-            element={<ProtectedRoute><LevelSelectionPage /></ProtectedRoute>} 
+          <Route
+            path="/levels"
+            element={<ProtectedRoute><LevelSelectionPage /></ProtectedRoute>}
           />
-          <Route 
-            path="/quiz/:level/:category" 
-            element={<ProtectedRoute><QuizPage /></ProtectedRoute>} 
+          <Route
+            path="/quiz/:level/:category"
+            element={<ProtectedRoute><QuizPage /></ProtectedRoute>}
           />
-          <Route 
-            path="/results" 
-            element={<ProtectedRoute><ResultsPage /></ProtectedRoute>} 
+          <Route
+            path="/levels/:level/:category/exercises"
+            element={<ProtectedRoute><ExerciseGridPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/results"
+            element={<ProtectedRoute><ResultsPage /></ProtectedRoute>}
           />
         </Route>
       </Routes>

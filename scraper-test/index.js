@@ -1,54 +1,37 @@
 // scraper/index.js
+
 const { initializeApp, cert } = require('firebase-admin/app');
-const { getFirestore } = require('firebase-admin/firestore');
+const { getFirestore, FieldValue } = require('firebase-admin/firestore');
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 puppeteer.use(StealthPlugin());
 
-console.log('JLPT Quiz Scraper started with Stealth Mode.');
+initializeApp({ credential: cert(JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT)) });
+const db = getFirestore();
+const BASE_URL = 'https://japanesetest4you.com';
 
-try {
-  const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-  initializeApp({ credential: cert(serviceAccount) });
-  const db = getFirestore();
-  console.log('Firestore initialized successfully.');
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-  async function scrapeAndSave() {
-    const url = 'https://japanesetest4you.com/japanese-language-proficiency-test-jlpt-n5-grammar-exercise-1/';
-    console.log(`Launching STEALTH browser and navigating to: ${url}`);
-    
-    const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
-    
-    // --- THIS IS THE CORRECTED LINE ---
-    const page = await browser.newPage(); 
-    
-    console.log('Going to page...');
+async function scrapeQuizPage(browser, url) {
+  const page = await browser.newPage();
+  try {
+    console.log(`  Scraping page: ${url}`);
     await page.goto(url, { waitUntil: 'networkidle0' });
-    console.log('Page loaded successfully.');
 
     const quizData = await page.evaluate(() => {
       const mainContent = document.querySelector('div.entry.clearfix');
       if (!mainContent) return null;
 
       const allParagraphs = Array.from(mainContent.querySelectorAll('p'));
-      
       let questions = [];
       let answers = {};
       let vocabulary = [];
-      
-      let parsingMode = 'questions'; // Modes: 'questions', 'answers', 'vocab'
+      let parsingMode = 'questions';
 
       allParagraphs.forEach(p => {
         const strongText = p.querySelector('strong')?.innerText || '';
-
-        if (strongText.includes('Answer Key')) {
-          parsingMode = 'answers';
-          return;
-        }
-        if (strongText.includes('New words')) {
-          parsingMode = 'vocab';
-          return;
-        }
+        if (strongText.includes('Answer Key')) { parsingMode = 'answers'; return; }
+        if (strongText.includes('New words')) { parsingMode = 'vocab'; return; }
 
         if (parsingMode === 'questions' && p.querySelector('input[type="radio"]')) {
           const innerHTML = p.innerHTML;
@@ -70,7 +53,7 @@ try {
           if (match) {
             const questionNum = parseInt(match[1], 10);
             const answerNum = parseInt(match[2], 10);
-            answers[questionNum] = answerNum - 1; // Store as 0-based index
+            answers[questionNum] = answerNum - 1;
           }
         } else if (parsingMode === 'vocab') {
           const text = p.innerText;
@@ -81,7 +64,7 @@ try {
               vocabulary.push({
                 japanese: termMatch[1].trim(),
                 romaji: termMatch[2].trim(),
-                english: english.trim()
+                english: english ? english.trim() : ''
               });
             }
           }
@@ -95,37 +78,88 @@ try {
       return {
         title: document.title.split('|')[0].trim(),
         sourceUrl: window.location.href,
-        questions: questions,
-        vocabulary: vocabulary
+        questions,
+        vocabulary,
       };
     });
-
-    await browser.close();
-    
-    if (!quizData || quizData.questions.length === 0) {
-      console.log('Failed to scrape complete quiz data. The website structure may have changed.');
-      return;
-    }
-
-    console.log(`Successfully scraped: ${quizData.questions.length} questions and ${quizData.vocabulary.length} vocabulary words.`);
-
-    const collectionRef = db.collection('jlpt-n5-quizzes');
-    console.log(`Saving quiz "${quizData.title}" to Firestore...`);
-    await collectionRef.add(quizData);
-    console.log('Successfully saved complete quiz to Firestore.');
+    return quizData;
+  } finally {
+    await page.close();
   }
-
-  scrapeAndSave()
-    .then(() => {
-      console.log('Scrape and save process finished.');
-      process.exit(0);
-    })
-    .catch((error) => {
-      console.error('Unhandled error in scrapeAndSave:', error);
-      process.exit(1);
-    });
-
-} catch (error) {
-  console.error('Critical error during script initialization:', error);
-  process.exit(1);
 }
+
+async function discoverExerciseUrls(browser, categoryUrl) {
+  const exerciseUrls = new Set();
+  let nextUrl = categoryUrl;
+  const page = await browser.newPage();
+  try {
+    while (nextUrl) {
+      console.log(`  Discovering links on: ${nextUrl}`);
+      await page.goto(nextUrl, { waitUntil: 'networkidle0' });
+      const urlsOnPage = await page.evaluate(() =>
+        Array.from(document.querySelectorAll('div.posts-listing article h2 a')).map(a => a.href)
+      );
+      urlsOnPage.forEach(url => exerciseUrls.add(url));
+      nextUrl = await page.evaluate(() => document.querySelector('a.next.page-numbers')?.href || null);
+    }
+  } catch (error) {
+    console.log(`  Could not access category page ${categoryUrl}, it might not exist. Skipping.`)
+  } finally {
+    await page.close();
+  }
+  return Array.from(exerciseUrls);
+}
+
+async function runMasterScrape() {
+  const levels = ['n5', 'n4', 'n3', 'n2', 'n1'];
+  const categories = ['grammar', 'kanji', 'vocabulary', 'reading'];
+  const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+
+  try {
+    for (const level of levels) {
+      for (const category of categories) {
+        const categoryUrl = `${BASE_URL}/category/jlpt-${level}/jlpt-${level}-${category}-test/`;
+        console.log(`\nProcessing Category: ${level.toUpperCase()} ${category.toUpperCase()}`);
+        
+        const exerciseUrls = await discoverExerciseUrls(browser, categoryUrl);
+        console.log(`  Found ${exerciseUrls.length} exercises.`);
+         if (exerciseUrls.length > 0) {
+          const metadataRef = db.collection('jlpt').doc(level).collection(category).doc('--metadata--');
+          await metadataRef.set({
+            totalExercises: exerciseUrls.length,
+            lastScraped: FieldValue.serverTimestamp()
+          }, { merge: true });
+          console.log(`  Saved metadata: ${exerciseUrls.length} total exercises.`);
+        }
+        
+        for (const url of exerciseUrls) {
+          const quizData = await scrapeQuizPage(browser, url);
+          if (quizData && quizData.questions.length > 0) {
+            const exerciseNum = quizData.title.split(' ').pop();
+            const docId = `${level}-${category}-exercise-${exerciseNum}`;
+            
+            const docRef = db.collection('jlpt').doc(docId);
+            await docRef.set({
+              ...quizData,
+              level,
+              category,
+              exercise: exerciseNum,
+              scrapedAt: FieldValue.serverTimestamp()
+            }, { merge: true });
+            
+            console.log(`    -> Saved/Updated: ${docId}`);
+          } else {
+            console.log(`    -> Skipped (no data found): ${url}`);
+          }
+          await sleep(500);
+        }
+      }
+    }
+  } finally {
+    await browser.close();
+  }
+}
+
+runMasterScrape()
+  .then(() => console.log('\nMaster Scrape finished successfully!'))
+  .catch((error) => console.error('\nA critical error occurred during the master scrape:', error));
