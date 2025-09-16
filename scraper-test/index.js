@@ -1,144 +1,133 @@
-// functions/index.js
-
-const { onCall } = require('firebase-functions/v2/https');
-const { initializeApp, cert } = require('firebase-admin/app');
-const { getFirestore } = require('firebase-admin/firestore');
-const puppeteer = require('puppeteer-extra');
-const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+import { initializeApp, cert } from 'firebase-admin/app';
+import { getFirestore } from 'firebase-admin/firestore';
+import puppeteer from 'puppeteer-extra';
+import StealthPlugin from 'puppeteer-extra-plugin-stealth';
 
 // Use stealth plugin to avoid blocking
 puppeteer.use(StealthPlugin());
 
-// Initialize Firebase Admin SDK
-// This is done once when the function instance starts
-try {
-  initializeApp();
-} catch (e) {
-  console.log('App already initialized.');
-}
+
+const LEVELS = ['n5', 'n4', 'n3', 'n2', 'n1'];
+const CATEGORIES = ['grammar', 'vocabulary', 'kanji', 'reading-comprehension'];
+const BASE_URL = 'https://japanesetest4you.com/japanese-language-proficiency-test-jlpt-';
+// --- END CONFIGURATION ---
+
+// Initialize Firebase Admin
+initializeApp({ credential: cert(serviceAccount) });
 const db = getFirestore();
+console.log('Firestore initialized successfully.');
 
-exports.triggerExerciseScraper = onCall({
-  // Increase timeout and memory for Puppeteer
-  timeoutSeconds: 300,
-  memory: '1GiB',
-}, async (request) => {
-  const { level, category, exercise } = request.data;
-
-  // 1. --- VALIDATE INPUT ---
-  if (!level || !category || !exercise) {
-    console.error('Validation failed: Missing level, category, or exercise.');
-    throw new functions.https.HttpsError(
-      'invalid-argument',
-      'The function must be called with "level", "category", and "exercise" arguments.'
-    );
-  }
-
-  // 2. --- DYNAMICALLY CONSTRUCT THE URL ---
-  const url = `https://japanesetest4you.com/japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${exercise}/`;
-  console.log(`Scraping URL: ${url}`);
-
-  let browser;
+/**
+ * Scrapes a single exercise page.
+ * @param {import('puppeteer').Page} page - The Puppeteer page object.
+ * @param {string} url - The URL to scrape.
+ * @returns {Promise<object|null>} The scraped quiz data or null if scraping fails.
+ */
+async function scrapePage(page, url) {
   try {
-    browser = await puppeteer.launch({ args: ['--no-sandbox'] });
-    const page = await browser.newPage();
-    await page.goto(url, { waitUntil: 'networkidle0' });
-    console.log(`Page loaded successfully for exercise ${exercise}.`);
+    await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
 
     const quizData = await page.evaluate(() => {
-        const mainContent = document.querySelector('div.entry.clearfix');
-        if (!mainContent) return null;
+      const mainContent = document.querySelector('div.entry.clearfix');
+      if (!mainContent) return null;
 
-        const allParagraphs = Array.from(mainContent.querySelectorAll('p'));
+      const title = document.title.split('|')[0].trim();
+      const allParagraphs = Array.from(mainContent.querySelectorAll('p'));
+      
+      let questions = [];
+      let answers = {};
+      let vocabulary = [];
+      let parsingMode = 'questions';
+
+      allParagraphs.forEach(p => {
+        const strongText = p.querySelector('strong')?.innerText || '';
+
+        if (strongText.includes('Answer Key')) parsingMode = 'answers';
+        else if (strongText.includes('New words')) parsingMode = 'vocab';
         
-        let questions = [];
-        let answers = {};
-        let vocabulary = [];
-        
-        let parsingMode = 'questions'; // Modes: 'questions', 'answers', 'vocab'
-
-        allParagraphs.forEach(p => {
-          const strongText = p.querySelector('strong')?.innerText || '';
-
-          if (strongText.includes('Answer Key')) {
-            parsingMode = 'answers';
-            return;
+        if (parsingMode === 'questions' && p.querySelector('input[type="radio"]')) {
+          const parts = p.innerHTML.split('<br>');
+          const questionText = parts[0].trim();
+          const options = parts.slice(1).map(part => {
+            const tempEl = document.createElement('div');
+            tempEl.innerHTML = part;
+            return tempEl.textContent.trim();
+          }).filter(Boolean);
+          if (questionText && options.length > 0) questions.push({ questionText, options });
+        } else if (parsingMode === 'answers') {
+          const match = p.innerText.match(/Question (\d+): (\d+)/);
+          if (match) answers[parseInt(match[1])] = parseInt(match[2]) - 1; // 0-based
+        } else if (parsingMode === 'vocab') {
+          const text = p.innerText;
+          if (text.includes(':')) {
+            const [term, english] = text.split(/:(.*)/s);
+            const termMatch = term.match(/(.*) \((.*)\)/);
+            if (termMatch) vocabulary.push({
+              japanese: termMatch[1].trim(),
+              romaji: termMatch[2].trim(),
+              english: english.trim()
+            });
           }
-          if (strongText.includes('New words')) {
-            parsingMode = 'vocab';
-            return;
-          }
+        }
+      });
 
-          if (parsingMode === 'questions' && p.querySelector('input[type="radio"]')) {
-            const innerHTML = p.innerHTML;
-            const parts = innerHTML.split('<br>');
-            const questionText = parts[0].trim();
-            const options = [];
-            for (let i = 1; i < parts.length; i++) {
-              const tempEl = document.createElement('div');
-              tempEl.innerHTML = parts[i];
-              const optionText = tempEl.textContent.trim();
-              if (optionText) options.push(optionText);
-            }
-            if (questionText && options.length > 0) {
-              questions.push({ questionText, options });
-            }
-          } else if (parsingMode === 'answers') {
-            const text = p.innerText;
-            const match = text.match(/Question (\d+): (\d+)/);
-            if (match) {
-              const questionNum = parseInt(match[1], 10);
-              const answerNum = parseInt(match[2], 10);
-              answers[questionNum] = answerNum - 1; // Store as 0-based index
-            }
-          } else if (parsingMode === 'vocab') {
-            const text = p.innerText;
-            if (text && text.includes(':')) {
-              const [term, english] = text.split(/:(.*)/s);
-              const termMatch = term.match(/(.*) \((.*)\)/);
-              if (termMatch) {
-                vocabulary.push({
-                  japanese: termMatch[1].trim(),
-                  romaji: termMatch[2].trim(),
-                  english: english.trim()
-                });
-              }
-            }
-          }
-        });
+      questions.forEach((q, index) => {
+        q.correctOptionIndex = answers[index + 1];
+      });
 
-        questions.forEach((q, index) => {
-          q.correctOptionIndex = answers[index + 1];
-        });
+      if (questions.length === 0) return null; // Page exists but is not a valid quiz
 
-        return {
-          title: document.title.split('|')[0].trim(),
-          sourceUrl: window.location.href,
-          questions: questions,
-          vocabulary: vocabulary
-        };
+      return { title, sourceUrl: window.location.href, questions, vocabulary };
     });
-    
-    if (!quizData || quizData.questions.length === 0) {
-        throw new Error('Failed to scrape complete quiz data. The website structure may have changed.');
-    }
 
-    // 3. --- SAVE TO THE CORRECT FIRESTORE PATH ---
-    const docId = `exercise-${exercise}`;
-    const docRef = db.collection('jlpt').doc(level).collection(category).doc(docId);
-    
-    console.log(`Saving quiz "${quizData.title}" to Firestore at path: ${docRef.path}`);
-    await docRef.set(quizData);
-
-    console.log('Successfully saved complete quiz to Firestore.');
-    return { status: 'success', message: `Successfully scraped and saved JLPT ${level} ${category} exercise ${exercise}.` };
-
+    return quizData;
   } catch (error) {
-    console.error('Error during scraping process:', error);
-    throw new functions.https.HttpsError('internal', 'Failed to scrape the website.', error.message);
-  } finally {
-    if (browser) {
-      await browser.close();
+    console.error(`Error processing URL ${url}:`, error.message);
+    return null;
+  }
+}
+
+/**
+ * Main function to orchestrate the scraping of all content.
+ */
+async function scrapeAll() {
+  console.log('🚀 Starting full site scrape...');
+  const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
+  
+  for (const level of LEVELS) {
+    for (const category of CATEGORIES) {
+      let exerciseNum = 1;
+      let consecutiveFailures = 0;
+      
+      console.log(`\n--- Scraping Level: ${level.toUpperCase()}, Category: ${category} ---`);
+
+      while (consecutiveFailures < 3) { // Stop after 3 consecutive empty pages
+        const url = `${BASE_URL}${level}-${category}-exercise-${exerciseNum}/`;
+        const page = await browser.newPage();
+        
+        console.log(`Attempting to scrape: ${url}`);
+        const quizData = await scrapePage(page, url);
+        
+        if (quizData) {
+          consecutiveFailures = 0; // Reset counter on success
+          const docId = `exercise-${exerciseNum}`;
+          const docRef = db.collection('jlpt').doc(level).collection(category).doc(docId);
+          await docRef.set(quizData);
+          console.log(`✅ Successfully scraped and saved: ${level}/${category}/${docId}`);
+        } else {
+          consecutiveFailures++;
+          console.log(`- No valid quiz data found. (Failure ${consecutiveFailures}/3)`);
+        }
+        
+        await page.close();
+        exerciseNum++;
+      }
+      console.log(`Finished category ${category}. Found ${exerciseNum - 1 - consecutiveFailures} exercises.`);
     }
   }
-});
+
+  await browser.close();
+  console.log('\n🎉 Full scrape completed!');
+}
+
+scrapeAll().catch(console.error);
