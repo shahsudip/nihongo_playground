@@ -1,70 +1,63 @@
 // scraper/index.js
 const { initializeApp, cert } = require('firebase-admin/app');
 const { getFirestore } = require('firebase-admin/firestore');
-const axios = require('axios');
-const cheerio = require('cheerio');
+const puppeteer = require('puppeteer'); // Use Puppeteer instead of axios/cheerio
 
-console.log('Script started.');
+console.log('Script started with Puppeteer.');
 
 try {
-  // Initialize Firebase using the secret from GitHub Actions
   const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-  initializeApp({
-    credential: cert(serviceAccount)
-  });
+  initializeApp({ credential: cert(serviceAccount) });
   const db = getFirestore();
-  console.log('Firestore initialized successfully.'); // <-- ADDED LOG
+  console.log('Firestore initialized successfully.');
 
   async function scrapeAndSave() {
     const url = 'https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB';
-    console.log(`Fetching data from: ${url}`); // <-- ADDED LOG
-    
-    // Fetch HTML of the page
-    const { data } = await axios.get(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
-      }
-    });
-    console.log('Successfully fetched HTML data.'); // <-- ADDED LOG
-    
-    // Load HTML into cheerio
-    const $ = cheerio.load(data);
+    console.log(`Launching browser and navigating to: ${url}`);
 
-    const articles = [];
-    // The selector for Google News articles often changes. We are checking for a common, more modern one.
-    $('a[href*="./articles/"]').each((index, element) => {
-      const title = $(element).text();
-      // Make sure the title is not empty
-      if (title) {
-        articles.push({ title, scrapedAt: new Date() });
-      }
+    const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+    const page = await browser.newPage();
+    await page.goto(url, { waitUntil: 'networkidle0' });
+    console.log('Page loaded successfully.');
+
+    // Wait for the article links to be visible on the page
+    await page.waitForSelector('article a');
+
+    const articles = await page.evaluate(() => {
+      const articlesArray = [];
+      // This code runs inside the browser
+      document.querySelectorAll('article a').forEach(element => {
+        const title = element.innerText;
+        if (title) { // Make sure the title is not empty
+          articlesArray.push({ title, scrapedAt: new Date().toISOString() });
+        }
+      });
+      return articlesArray;
     });
 
-    console.log(`Number of articles found: ${articles.length}`); // <-- CRITICAL LOG
+    await browser.close();
+    console.log(`Number of articles found: ${articles.length}`);
 
     if (articles.length === 0) {
-      console.log('No articles found. The website structure may have changed. Exiting.');
-      return; // Exit if no articles are found
+      console.log('No articles found even with Puppeteer. Exiting.');
+      return;
     }
 
-    // Save to Firestore
     const collectionRef = db.collection('scrapedArticles');
-    console.log('Preparing to write articles to Firestore...'); // <-- ADDED LOG
-    for (const article of articles) {
+    for (const article of articles.slice(0, 10)) { // Limit to 10 to be safe
       await collectionRef.add(article);
-      console.log(`- Wrote: ${article.title}`); // <-- ADDED LOG
     }
-    console.log(`Successfully saved ${articles.length} articles to Firestore.`);
+    console.log(`Successfully saved ${Math.min(10, articles.length)} articles to Firestore.`);
   }
 
   scrapeAndSave()
     .then(() => {
-        console.log('Scrape and save process finished.');
-        process.exit(0);
+      console.log('Scrape and save process finished.');
+      process.exit(0);
     })
     .catch((error) => {
-        console.error('Unhandled error in scrapeAndSave:', error);
-        process.exit(1);
+      console.error('Unhandled error in scrapeAndSave:', error);
+      process.exit(1);
     });
 
 } catch (error) {
