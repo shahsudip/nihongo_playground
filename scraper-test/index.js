@@ -1,8 +1,7 @@
 import puppeteer from "puppeteer";
-import { db } from '../firebaseConfig.js'; // Make sure this path is correct
 
 const BASE_URL = "https://www.japanesetest4you.com/";
-const LEVELS = ["n5"];
+const LEVELS = ["n5"]; // ✅ only test for N5
 const TEST_CATEGORIES = ["kanji", "grammar", "vocabulary", "listening"];
 
 /**
@@ -12,7 +11,7 @@ async function scrapeTestPage(page, url, category) {
   try {
     await page.goto(url, { waitUntil: "domcontentloaded", timeout: 20000 });
 
-    // Example selector check (adjust per site)
+    // Example: grab text from inside content
     const questions = await page.$$eval(".entry-content p", (nodes) =>
       nodes.map((n) => n.innerText.trim()).filter((t) => t.length > 0)
     );
@@ -45,19 +44,11 @@ async function scrapeAllTests(browser) {
     for (const category of TEST_CATEGORIES) {
       let exerciseNum = 1,
         consecutiveFailures = 0;
-      const collectionName = `${category}-test`;
       console.log(
-        `\n--- Scraping Level: ${level.toUpperCase()}, Category: ${collectionName} ---`
+        `\n--- Scraping Level: ${level.toUpperCase()}, Category: ${category}-test ---`
       );
 
       while (consecutiveFailures < 3) {
-        const docId = `exercise-${exerciseNum}`;
-        const docRef = db
-          .collection("jlpt")
-          .doc(level)
-          .collection(collectionName)
-          .doc(docId);
-
         const urlFormats = [
           `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${exerciseNum}/`,
           `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${String(
@@ -78,16 +69,14 @@ async function scrapeAllTests(browser) {
 
         if (quizData) {
           consecutiveFailures = 0;
-          console.log(`\n✅ FOUND DATA for ${docRef.path}`);
+          console.log(`\n✅ FOUND DATA`);
           console.log(JSON.stringify(quizData, null, 2));
           console.log(`--- END OF DATA ---`);
         } else {
           consecutiveFailures++;
           const currentUrl = triedUrls.join(" OR ");
           const pageContent = await page.content();
-          const bodyText = pageContent
-            .replace(/\s+/g, " ")
-            .slice(0, 300);
+          const bodyText = pageContent.replace(/\s+/g, " ").slice(0, 300);
 
           console.log(
             `⚠️  No valid quiz data found at [${currentUrl}] (Failure ${consecutiveFailures}/3).`
