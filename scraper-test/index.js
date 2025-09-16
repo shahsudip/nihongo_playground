@@ -18,7 +18,7 @@ const db = getFirestore();
 console.log('Firestore initialized successfully.');
 
 // =================================================================
-// SECTION 1: SCRAPER FOR INDIVIDUAL EXERCISE TESTS
+// SECTION 1: SCRAPER FOR INDIVIDUAL EXERCISE TESTS (No Changes)
 // =================================================================
 
 async function scrapeTestPage(page, url, category) {
@@ -124,46 +124,74 @@ async function scrapeAllTests(browser) {
 
 
 // =================================================================
-// SECTION 2: SCRAPER FOR VOCABULARY & GRAMMAR LISTS
+// SECTION 2: SCRAPER FOR VOCABULARY & GRAMMAR LISTS (Vocabulary Updated)
 // =================================================================
 
 async function scrapeVocabularyLists(browser) {
   console.log('\n🚀 Starting scrape of main vocabulary lists...');
   for (const level of LEVELS) {
-    const collectionName = 'vocabulary_list';
-    const docId = 'full-list';
-    const docRef = db.collection('jlpt').doc(level).collection(collectionName).doc(docId);
-    const docSnap = await docRef.get();
-
-    if (docSnap.exists) {
-      console.log(`- Skipping ${level}/${collectionName}, data already exists.`);
-      continue;
-    }
-
     const url = `${BASE_URL}jlpt-${level}-vocabulary-list/`;
     const page = await browser.newPage();
-    console.log(`Attempting to scrape: ${url}`);
+    console.log(`Attempting to scrape and LOG: ${url}`);
 
     try {
         await page.goto(url, { waitUntil: 'networkidle0' });
         const vocabList = await page.evaluate(() => {
-            const rows = Array.from(document.querySelectorAll('div.entry.clearfix table tr'));
-            return rows.slice(1).map(row => {
-                const cells = row.querySelectorAll('td');
-                if (cells.length < 3) return null;
-                return {
-                    japanese: cells[0]?.innerText.trim(),
-                    reading: cells[1]?.innerText.trim(),
-                    english: cells[2]?.innerText.trim(),
-                };
-            }).filter(Boolean);
+            const paragraphs = Array.from(document.querySelectorAll('div.entry.clearfix p'));
+            const words = [];
+
+            for (const p of paragraphs) {
+                const text = p.innerText.trim();
+                
+                // Only process paragraphs that contain a colon, which separates the word from the definition
+                if (!text.includes(':')) {
+                    continue;
+                }
+                
+                // Skip known non-data lines
+                if (text.toLowerCase().includes('jlpt n')) continue;
+
+                // Split the line at the colon to separate Japanese/Romaji from English
+                const parts = text.split(/:(.*)/s);
+                if (parts.length < 2) continue;
+                
+                const japaneseAndRomaji = parts[0].trim();
+                const english = parts[1].trim();
+
+                let japanese = '';
+                let romaji = '';
+
+                // Find Romaji in parentheses
+                const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
+                if (romajiMatch) {
+                    romaji = romajiMatch[1].trim();
+                    // The Japanese part is everything before the parentheses
+                    japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
+                } else {
+                    // If no parentheses, the whole thing is the Japanese part
+                    japanese = japaneseAndRomaji;
+                    romaji = ''; // Keep romaji empty as requested
+                }
+
+                words.push({
+                    japanese: japanese,
+                    romaji: romaji,
+                    english: english,
+                });
+            }
+            return words;
         });
 
         if (vocabList.length > 0) {
-            await docRef.set({ title: `JLPT ${level.toUpperCase()} Vocabulary List`, words: vocabList });
-            console.log(`✅ Successfully saved: ${level}/${collectionName}/${docId}`);
+            // --- MODIFIED: Log data instead of writing to DB ---
+            console.log(`\n--- PARSED DATA FOR ${level.toUpperCase()} ---`);
+            console.log(vocabList);
+            console.log(`--- END OF ${level.toUpperCase()} DATA ---`);
+            console.log(`ℹ️ Found ${vocabList.length} words. Data was logged and NOT saved to Firestore.`);
+            // The line below is commented out as requested.
+            // await db.collection('jlpt').doc(level).collection('vocabulary_list').doc('full-list').set({ title: `JLPT ${level.toUpperCase()} Vocabulary List`, words: vocabList });
         } else {
-            console.log(`- No vocabulary table found for ${level}.`);
+            console.log(`- No vocabulary data found for ${level}.`);
         }
     } catch (error) {
         console.error(`Failed to scrape ${url}:`, error.message);
@@ -266,7 +294,7 @@ async function scrapeGrammarLists(browser) {
 }
 
 // =================================================================
-// SECTION 3: MAIN EXECUTION
+// SECTION 3: MAIN EXECUTION (No Changes)
 // =================================================================
 
 async function main() {
