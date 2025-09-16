@@ -1,7 +1,5 @@
 name: Deploy Vite app to GitHub Pages
-permissions:
-  contents: read
-  id-token: write
+
 on:
   push:
     branches:
