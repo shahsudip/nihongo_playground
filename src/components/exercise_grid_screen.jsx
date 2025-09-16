@@ -1,24 +1,23 @@
 // src/components/ExerciseListPage.jsx
 
-
-
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { db } from '../firebaseConfig.js';
+import { db } from '../firebaseConfig.js'; // Make sure this path is correct
 import { doc, onSnapshot } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 
 /**
- * A new, internal component to handle loading and displaying the selected quiz.
- * This contains all the logic from your old quiz_screen.jsx.
+ * Internal component to handle loading and displaying the selected quiz.
  */
 const QuizView = ({ level, category, exercise, onBack }) => {
   const [quizData, setQuizData] = useState(null);
   const [status, setStatus] = useState('checking'); // checking, scraping, ready, error
 
   useEffect(() => {
-    const docId = `${level}-${category}-exercise-${exercise}`;
-    const docRef = doc(db, 'quizzes', docId);
+    // --- THIS IS THE CORRECTED DATABASE PATH ---
+    const docId = `exercise-${exercise}`;
+    const docRef = doc(db, 'jlpt', level, category, docId);
+    // --- END OF CORRECTION ---
 
     const unsubscribe = onSnapshot(docRef, (docSnap) => {
       if (docSnap.exists()) {
@@ -59,7 +58,6 @@ const QuizView = ({ level, category, exercise, onBack }) => {
           <>
             <h1 className="page-title">{quizData.title}</h1>
             <button className="card start-button">Start Quiz</button>
-            {/* The interactive quiz UI would go here */}
           </>
         );
       case 'error':
@@ -78,26 +76,24 @@ const QuizView = ({ level, category, exercise, onBack }) => {
 };
 
 /**
- * This is the main component that decides whether to show the grid or the quiz.
+ * Main component that decides whether to show the grid or the quiz.
  */
 const ExerciseGridPage = () => {
   const { level, category } = useParams();
   const [selectedExercise, setSelectedExercise] = useState(null);
   const exerciseCount = 15;
 
-  // If an exercise has been selected, show the QuizView
   if (selectedExercise) {
     return (
       <QuizView
         level={level}
         category={category}
         exercise={selectedExercise}
-        onBack={() => setSelectedExercise(null)} // Pass a function to go back
+        onBack={() => setSelectedExercise(null)}
       />
     );
   }
 
-  // Otherwise, show the grid of exercise numbers
   return (
     <div className="selection-container">
       <Link to={`/levels/${level}/${category}`} className="back-button">← Back</Link>
@@ -106,7 +102,6 @@ const ExerciseGridPage = () => {
         {Array.from({ length: exerciseCount }, (_, i) => i + 1).map((num) => (
           <button
             key={num}
-            // Instead of a Link, this button now sets the state
             onClick={() => setSelectedExercise(num.toString())}
             className="card exercise-card"
           >
