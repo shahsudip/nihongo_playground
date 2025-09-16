@@ -1,5 +1,7 @@
 // scraper/index.js
-
+process.env.LEVEL = 'n5';
+process.env.CATEGORY = 'kanji';
+process.env.EXERCISE = '1';
 const { initializeApp, cert } = require('firebase-admin/app');
 const { getFirestore, FieldValue } = require('firebase-admin/firestore');
 const puppeteer = require('puppeteer-extra');
