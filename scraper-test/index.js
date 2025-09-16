@@ -94,7 +94,7 @@ async function runTargetedScrape() {
 
   // Build the dynamic URL for the single exercise
   const slug = `jlpt-${level}-${category}-exercise-${exercise.padStart(2, '0')}`;
-  const url = `${BASE_URL}/${slug}/`;
+  const url = `${BASE_URL}${slug}/`;
   const docId = `exercise-${exercise}`; // The ID for the document within the subcollection
 
   console.log(`Scraping URL: ${url}`);
