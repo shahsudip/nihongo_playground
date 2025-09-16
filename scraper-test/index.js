@@ -118,7 +118,7 @@ async function runMasterScrape() {
   try {
     for (const level of levels) {
       for (const category of categories) {
-        const categoryUrl = `${BASE_URL}/category/jlpt-${level}/jlpt-${level}-${category}-test/`;
+        const categoryUrl = `${BASE_URL}/category/jlpt-${level}/jlpt-${level}-${category}-test/excercises-1`;
         console.log(`\nProcessing Category: ${level.toUpperCase()} ${category.toUpperCase()}`);
         
         const exerciseUrls = await discoverExerciseUrls(browser, categoryUrl);
