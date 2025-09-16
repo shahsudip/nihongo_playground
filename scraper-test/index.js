@@ -10,7 +10,7 @@ puppeteer.use(StealthPlugin());
 
 initializeApp({ credential: cert(JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT)) });
 const db = getFirestore();
-const BASE_URL = 'https://japanesetest4you.com';
+const BASE_URL = 'https://japanesetest4you.com/japanese-language-proficiency-test-';
 
 // This function scrapes a single page. It remains the same.
 async function scrapeQuizPage(browser, url) {
