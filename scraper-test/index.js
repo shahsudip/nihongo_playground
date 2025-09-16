@@ -13,12 +13,13 @@ const TEST_CATEGORIES = ['grammar', 'vocabulary', 'kanji', 'reading'];
 const BASE_URL = 'https://japanesetest4you.com/';
 // --- END CONFIGURATION ---
 
+// Firestore init is kept for path generation, but no data will be written.
 initializeApp({ credential: cert(serviceAccount) });
 const db = getFirestore();
-console.log('Firestore initialized successfully.');
+console.log('Firestore initialized successfully. RUNNING IN LOG-ONLY MODE.');
 
 // =================================================================
-// SECTION 1: SCRAPER FOR INDIVIDUAL EXERCISE TESTS (No Changes)
+// SECTION 1: SCRAPER FOR INDIVIDUAL EXERCISE TESTS
 // =================================================================
 
 async function scrapeTestPage(page, url, category) {
@@ -94,13 +95,16 @@ async function scrapeAllTests(browser) {
       while (consecutiveFailures < 3) {
         const docId = `exercise-${exerciseNum}`;
         const docRef = db.collection('jlpt').doc(level).collection(collectionName).doc(docId);
+
+        // This check is now for logging purposes, to simulate skipping
         const docSnap = await docRef.get();
         if (docSnap.exists) {
-          console.log(`- Skipping ${level}/${collectionName}/${docId}, data already exists.`);
+          console.log(`- Skipping ${docRef.path}, data already exists in DB.`);
           consecutiveFailures = 0;
           exerciseNum++;
           continue;
         }
+        
         const url = `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${exerciseNum}/`;
         const page = await browser.newPage();
         console.log(`Attempting to scrape: ${url}`);
@@ -108,8 +112,11 @@ async function scrapeAllTests(browser) {
         
         if (quizData) {
           consecutiveFailures = 0;
-          await docRef.set(quizData);
-          console.log(`✅ Successfully saved: ${level}/${collectionName}/${docId}`);
+          // --- MODIFIED: Log data instead of writing to DB ---
+          console.log(`\n--- WOULD SAVE TO: ${docRef.path} ---`);
+          console.log(quizData);
+          console.log(`--- END OF DATA ---`);
+          // await docRef.set(quizData); // DB write is disabled
         } else {
           consecutiveFailures++;
           console.log(`- No valid quiz data found. (Failure ${consecutiveFailures}/3)`);
@@ -124,72 +131,61 @@ async function scrapeAllTests(browser) {
 
 
 // =================================================================
-// SECTION 2: SCRAPER FOR VOCABULARY & GRAMMAR LISTS (Vocabulary Updated)
+// SECTION 2: SCRAPER FOR VOCABULARY & GRAMMAR LISTS
 // =================================================================
 
 async function scrapeVocabularyLists(browser) {
   console.log('\n🚀 Starting scrape of main vocabulary lists...');
   for (const level of LEVELS) {
+    const collectionName = 'vocabulary_list';
+    const docId = 'full-list';
+    const docRef = db.collection('jlpt').doc(level).collection(collectionName).doc(docId);
+
+    const docSnap = await docRef.get();
+    if (docSnap.exists) {
+      console.log(`- Skipping ${docRef.path}, data already exists in DB.`);
+      continue;
+    }
+
     const url = `${BASE_URL}jlpt-${level}-vocabulary-list/`;
     const page = await browser.newPage();
-    console.log(`Attempting to scrape and LOG: ${url}`);
+    console.log(`Attempting to scrape: ${url}`);
 
     try {
         await page.goto(url, { waitUntil: 'networkidle0' });
         const vocabList = await page.evaluate(() => {
             const paragraphs = Array.from(document.querySelectorAll('div.entry.clearfix p'));
             const words = [];
-
             for (const p of paragraphs) {
                 const text = p.innerText.trim();
-                
-                // Only process paragraphs that contain a colon, which separates the word from the definition
-                if (!text.includes(':')) {
-                    continue;
-                }
-                
-                // Skip known non-data lines
-                if (text.toLowerCase().includes('jlpt n')) continue;
-
-                // Split the line at the colon to separate Japanese/Romaji from English
+                if (!text.includes(':') || text.toLowerCase().includes('jlpt n')) continue;
                 const parts = text.split(/:(.*)/s);
                 if (parts.length < 2) continue;
                 
                 const japaneseAndRomaji = parts[0].trim();
                 const english = parts[1].trim();
+                let japanese = '', romaji = '';
 
-                let japanese = '';
-                let romaji = '';
-
-                // Find Romaji in parentheses
                 const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
                 if (romajiMatch) {
                     romaji = romajiMatch[1].trim();
-                    // The Japanese part is everything before the parentheses
                     japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
                 } else {
-                    // If no parentheses, the whole thing is the Japanese part
                     japanese = japaneseAndRomaji;
-                    romaji = ''; // Keep romaji empty as requested
+                    romaji = '';
                 }
-
-                words.push({
-                    japanese: japanese,
-                    romaji: romaji,
-                    english: english,
-                });
+                words.push({ japanese, romaji, english });
             }
             return words;
         });
 
         if (vocabList.length > 0) {
+            const dataToSave = { title: `JLPT ${level.toUpperCase()} Vocabulary List`, words: vocabList };
             // --- MODIFIED: Log data instead of writing to DB ---
-            console.log(`\n--- PARSED DATA FOR ${level.toUpperCase()} ---`);
-            console.log(vocabList);
-            console.log(`--- END OF ${level.toUpperCase()} DATA ---`);
-            console.log(`ℹ️ Found ${vocabList.length} words. Data was logged and NOT saved to Firestore.`);
-            // The line below is commented out as requested.
-            // await db.collection('jlpt').doc(level).collection('vocabulary_list').doc('full-list').set({ title: `JLPT ${level.toUpperCase()} Vocabulary List`, words: vocabList });
+            console.log(`\n--- WOULD SAVE TO: ${docRef.path} ---`);
+            console.log(dataToSave);
+            console.log(`--- END OF DATA ---`);
+            // await docRef.set(dataToSave); // DB write is disabled
         } else {
             console.log(`- No vocabulary data found for ${level}.`);
         }
@@ -208,34 +204,22 @@ async function scrapeGrammarDetailPage(page, url) {
         return await page.evaluate(() => {
             const content = document.querySelector('div.entry.clearfix');
             if (!content) return null;
-
             const title = content.querySelector('h1.page-title')?.innerText.trim() || document.title.split('|')[0].trim();
             const paragraphs = Array.from(content.querySelectorAll('p'));
-            
             let meaning = '', formation = '', currentSection = '';
             const examples = [];
-
             for (const p of paragraphs) {
                 const strongText = p.querySelector('strong')?.innerText.toLowerCase() || '';
                 if (strongText.includes('meaning')) { currentSection = 'meaning'; continue; }
                 if (strongText.includes('formation')) { currentSection = 'formation'; continue; }
                 if (strongText.includes('example sentences')) { currentSection = 'examples'; continue; }
-                
                 const text = p.innerText.trim();
                 if (!text) continue;
-
                 if (currentSection === 'meaning') meaning += text + '\n';
                 else if (currentSection === 'formation') formation += text + '\n';
                 else if (currentSection === 'examples') examples.push(text);
             }
-            
-            return {
-                title,
-                meaning: meaning.trim(),
-                formation: formation.trim(),
-                examples,
-                sourceUrl: window.location.href,
-            };
+            return { title, meaning: meaning.trim(), formation: formation.trim(), examples, sourceUrl: window.location.href };
         });
     } catch (error) {
         console.error(`Failed to scrape detail page ${url}:`, error.message);
@@ -271,19 +255,23 @@ async function scrapeGrammarLists(browser) {
     for (const link of detailLinks) {
         const slug = link.url.split('/').filter(Boolean).pop();
         const docRef = db.collection('jlpt').doc(level).collection(collectionName).doc(slug);
+        
         const docSnap = await docRef.get();
-
         if (docSnap.exists) {
-            console.log(`- Skipping ${slug}, data already exists.`);
+            console.log(`- Skipping ${docRef.path}, data already exists in DB.`);
             continue;
         }
 
         const detailPage = await browser.newPage();
         console.log(`Scraping detail: ${link.title}`);
         const grammarData = await scrapeGrammarDetailPage(detailPage, link.url);
+        
         if (grammarData && grammarData.examples.length > 0) {
-            await docRef.set(grammarData);
-            console.log(`✅ Successfully saved: ${slug}`);
+            // --- MODIFIED: Log data instead of writing to DB ---
+            console.log(`\n--- WOULD SAVE TO: ${docRef.path} ---`);
+            console.log(grammarData);
+            console.log(`--- END OF DATA ---`);
+            // await docRef.set(grammarData); // DB write is disabled
         } else {
             console.log(`- No valid data or examples found for ${slug}.`);
         }
@@ -293,8 +281,9 @@ async function scrapeGrammarLists(browser) {
   console.log('✅ Finished scraping all grammar lists.');
 }
 
+
 // =================================================================
-// SECTION 3: MAIN EXECUTION (No Changes)
+// SECTION 3: MAIN EXECUTION
 // =================================================================
 
 async function main() {
