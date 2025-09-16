@@ -927,3 +927,11 @@ body {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+/* Add to your main app_style.css or ExerciseListPage.css */
+
+.exercise-list-title span {
+  font-size: 1.5rem;
+  color: var(--text-medium);
+  margin-left: 15px;
+  font-weight: 500;
+}
