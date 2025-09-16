@@ -18,13 +18,14 @@ try {
     console.log(`Launching STEALTH browser and navigating to: ${url}`);
     
     const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
-    const page = await puppeteer.newPage();
+    
+    // --- THIS IS THE CORRECTED LINE ---
+    const page = await browser.newPage(); 
     
     console.log('Going to page...');
     await page.goto(url, { waitUntil: 'networkidle0' });
     console.log('Page loaded successfully.');
 
-    // This new logic extracts questions, answers, and vocabulary all at once.
     const quizData = await page.evaluate(() => {
       const mainContent = document.querySelector('div.entry.clearfix');
       if (!mainContent) return null;
@@ -40,7 +41,6 @@ try {
       allParagraphs.forEach(p => {
         const strongText = p.querySelector('strong')?.innerText || '';
 
-        // Switch parsing mode based on headers
         if (strongText.includes('Answer Key')) {
           parsingMode = 'answers';
           return;
@@ -49,8 +49,6 @@ try {
           parsingMode = 'vocab';
           return;
         }
-
-        // --- PARSE BASED ON MODE ---
 
         if (parsingMode === 'questions' && p.querySelector('input[type="radio"]')) {
           const innerHTML = p.innerHTML;
@@ -77,7 +75,7 @@ try {
         } else if (parsingMode === 'vocab') {
           const text = p.innerText;
           if (text && text.includes(':')) {
-            const [term, english] = text.split(/:(.*)/s); // Split only on the first colon
+            const [term, english] = text.split(/:(.*)/s);
             const termMatch = term.match(/(.*) \((.*)\)/);
             if (termMatch) {
               vocabulary.push({
@@ -90,7 +88,6 @@ try {
         }
       });
 
-      // Combine answers into the questions array
       questions.forEach((q, index) => {
         q.correctOptionIndex = answers[index + 1];
       });
@@ -112,7 +109,6 @@ try {
 
     console.log(`Successfully scraped: ${quizData.questions.length} questions and ${quizData.vocabulary.length} vocabulary words.`);
 
-    // Save the entire quiz object as a single document
     const collectionRef = db.collection('jlpt-n5-quizzes');
     console.log(`Saving quiz "${quizData.title}" to Firestore...`);
     await collectionRef.add(quizData);
