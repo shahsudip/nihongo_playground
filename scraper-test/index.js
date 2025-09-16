@@ -8,7 +8,8 @@ console.log('JLPT Quiz Scraper started with Stealth Mode.');
 
 // --- CONFIGURATION ---
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-const LEVELS = ['n5', 'n4', 'n3', 'n2', 'n1'];
+// ✅ Restrict scraping to N5 only
+const LEVELS = ['n5'];  
 const TEST_CATEGORIES = ['grammar', 'vocabulary', 'kanji', 'reading']; 
 const BASE_URL = 'https://japanesetest4you.com/';
 // --- END CONFIGURATION ---
@@ -139,10 +140,21 @@ async function scrapeAllTests(browser) {
       while (consecutiveFailures < 3) {
         const docId = `exercise-${exerciseNum}`;
         const docRef = db.collection('jlpt').doc(level).collection(collectionName).doc(docId);
-        const url = `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${exerciseNum}/`;
+        
+        // ✅ Try both URL formats: exercise-1 and exercise-01
+        const urlFormats = [
+          `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${exerciseNum}/`,
+          `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${String(exerciseNum).padStart(2, '0')}/`
+        ];
+        
+        let quizData = null;
         const page = await browser.newPage();
-        console.log(`Attempting to scrape: ${url}`);
-        const quizData = await scrapeTestPage(page, url, category);
+        for (const url of urlFormats) {
+          console.log(`Attempting to scrape: ${url}`);
+          quizData = await scrapeTestPage(page, url, category);
+          if (quizData) break; // stop if valid data found
+        }
+
         if (quizData) {
           consecutiveFailures = 0;
           console.log(`\n--- WOULD SAVE TO: ${docRef.path} ---`);
@@ -303,10 +315,9 @@ async function scrapeGrammarLists(browser) {
     try {
         console.log(`Fetching links from: ${listUrl}`);
         await page.goto(listUrl, { waitUntil: 'networkidle0' });
-        // CORRECTED: The links are in <p> tags, not <ul>
         detailLinks = await page.evaluate(() => 
             Array.from(document.querySelectorAll('div.entry.clearfix p a'))
-                 .filter(a => a.href.includes('/flashcard/')) // Filter only for flashcard links
+                 .filter(a => a.href.includes('/flashcard/'))
                  .map(a => ({ url: a.href, title: a.innerText }))
         );
         console.log(`Found ${detailLinks.length} grammar points for ${level.toUpperCase()}.`);
