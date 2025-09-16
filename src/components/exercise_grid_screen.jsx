@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { db } from '../firebaseConfig.js';
 import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
-import './ExerciseListPage.css';
 
 const ExerciseListPage = () => {
   const { level, category } = useParams();
