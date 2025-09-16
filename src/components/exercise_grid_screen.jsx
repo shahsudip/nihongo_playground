@@ -1,15 +1,10 @@
 // src/components/ExerciseListPage.jsx
 
+
+
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { db } from '../firebaseConfig.js';
-import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
-
-// src/components/exercise_grid_screen.jsx
-
-import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { db } from '../firebase/config'; // Adjust path if needed
 import { doc, onSnapshot } from 'firebase/firestore';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 
