@@ -1,4 +1,3 @@
-// scraper/index.js
 const { initializeApp, cert } = require('firebase-admin/app');
 const { getFirestore } = require('firebase-admin/firestore');
 const puppeteer = require('puppeteer-extra');
@@ -7,17 +6,13 @@ puppeteer.use(StealthPlugin());
 
 console.log('JLPT Quiz Scraper started with Stealth Mode.');
 
-  const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-
-
-
-
+// --- CONFIGURATION ---
+const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 const LEVELS = ['n5', 'n4', 'n3', 'n2', 'n1'];
-const CATEGORIES = ['grammar', 'vocabulary', 'kanji', 'reading-comprehension'];
+const CATEGORIES = ['grammar', 'vocabulary', 'kanji', 'reading']; 
 const BASE_URL = 'https://japanesetest4you.com/japanese-language-proficiency-test-jlpt-';
 // --- END CONFIGURATION ---
 
-// Initialize Firebase Admin
 initializeApp({ credential: cert(serviceAccount) });
 const db = getFirestore();
 console.log('Firestore initialized successfully.');
@@ -26,13 +21,14 @@ console.log('Firestore initialized successfully.');
  * Scrapes a single exercise page.
  * @param {import('puppeteer').Page} page - The Puppeteer page object.
  * @param {string} url - The URL to scrape.
+ * @param {string} category - The current category being scraped.
  * @returns {Promise<object|null>} The scraped quiz data or null if scraping fails.
  */
-async function scrapePage(page, url) {
+async function scrapePage(page, url, category) {
   try {
     await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
 
-    const quizData = await page.evaluate(() => {
+    const quizData = await page.evaluate((currentCategory) => {
       const mainContent = document.querySelector('div.entry.clearfix');
       if (!mainContent) return null;
 
@@ -62,7 +58,7 @@ async function scrapePage(page, url) {
         } else if (parsingMode === 'answers') {
           const match = p.innerText.match(/Question (\d+): (\d+)/);
           if (match) answers[parseInt(match[1])] = parseInt(match[2]) - 1; // 0-based
-        } else if (parsingMode === 'vocab') {
+        } else if (parsingMode === 'vocab' && currentCategory === 'vocabulary') {
           const text = p.innerText;
           if (text.includes(':')) {
             const [term, english] = text.split(/:(.*)/s);
@@ -80,10 +76,10 @@ async function scrapePage(page, url) {
         q.correctOptionIndex = answers[index + 1];
       });
 
-      if (questions.length === 0) return null; // Page exists but is not a valid quiz
+      if (questions.length === 0) return null;
 
       return { title, sourceUrl: window.location.href, questions, vocabulary };
-    });
+    }, category);
 
     return quizData;
   } catch (error) {
@@ -106,19 +102,31 @@ async function scrapeAll() {
       
       console.log(`\n--- Scraping Level: ${level.toUpperCase()}, Category: ${category} ---`);
 
-      while (consecutiveFailures < 3) { // Stop after 3 consecutive empty pages
+      while (consecutiveFailures < 3) {
+        const docId = `exercise-${exerciseNum}`;
+        const docPath = `${level}/${category}/${docId}`;
+        const docRef = db.collection('jlpt').doc(level).collection(category).doc(docId);
+
+        // --- NEW: Check if document already exists ---
+        const docSnap = await docRef.get();
+        if (docSnap.exists) {
+          console.log(`- Skipping ${docPath}, data already exists.`);
+          consecutiveFailures = 0; // Reset failures as we found a valid (existing) item
+          exerciseNum++;
+          continue; // Move to the next exercise number
+        }
+        // --- END NEW ---
+
         const url = `${BASE_URL}${level}-${category}-exercise-${exerciseNum}/`;
         const page = await browser.newPage();
         
         console.log(`Attempting to scrape: ${url}`);
-        const quizData = await scrapePage(page, url);
+        const quizData = await scrapePage(page, url, category);
         
         if (quizData) {
-          consecutiveFailures = 0; // Reset counter on success
-          const docId = `exercise-${exerciseNum}`;
-          const docRef = db.collection('jlpt').doc(level).collection(category).doc(docId);
+          consecutiveFailures = 0;
           await docRef.set(quizData);
-          console.log(`✅ Successfully scraped and saved: ${level}/${category}/${docId}`);
+          console.log(`✅ Successfully scraped and saved: ${docPath}`);
         } else {
           consecutiveFailures++;
           console.log(`- No valid quiz data found. (Failure ${consecutiveFailures}/3)`);
