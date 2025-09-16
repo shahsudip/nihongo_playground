@@ -1,7 +1,9 @@
 # .github/workflows/scraper.yml
 
 name: Hourly Scrape
-
+permissions:
+  contents: read
+  id-token: write
 on:
   workflow_dispatch:
   schedule:
