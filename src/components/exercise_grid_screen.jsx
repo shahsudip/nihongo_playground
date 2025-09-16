@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { db } from '../../firebase/config';
+import { db } from '../firebaseConfig.js';
 import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
 import './ExerciseListPage.css';
 
