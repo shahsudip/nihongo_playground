@@ -1,9 +1,9 @@
 // scraper/index.js
 const { initializeApp, cert } = require('firebase-admin/app');
 const { getFirestore } = require('firebase-admin/firestore');
-const puppeteer = require('puppeteer'); // Use Puppeteer instead of axios/cheerio
+const puppeteer = require('puppeteer');
 
-console.log('Script started with Puppeteer.');
+console.log('JLPT Quiz Scraper started.');
 
 try {
   const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
@@ -12,42 +12,64 @@ try {
   console.log('Firestore initialized successfully.');
 
   async function scrapeAndSave() {
-    const url = 'https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx1YlY4U0FtVnVHZ0pWVXlnQVAB';
+    // 1. UPDATED URL
+    const url = 'https://japanesetest4you.com/japanese-language-proficiency-test-jlpt-n5-grammar-exercise-1/';
     console.log(`Launching browser and navigating to: ${url}`);
-
+    
     const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
     const page = await browser.newPage();
     await page.goto(url, { waitUntil: 'networkidle0' });
     console.log('Page loaded successfully.');
 
-    // Wait for the article links to be visible on the page
-    await page.waitForSelector('article a');
+    // 2. UPDATED SCRAPING LOGIC
+    const quizData = await page.evaluate(() => {
+      const data = [];
+      // Select all the <p> tags inside the main content div
+      const questionParagraphs = document.querySelectorAll('div.entry.clearfix p');
 
-    const articles = await page.evaluate(() => {
-      const articlesArray = [];
-      // This code runs inside the browser
-      document.querySelectorAll('article a').forEach(element => {
-        const title = element.innerText;
-        if (title) { // Make sure the title is not empty
-          articlesArray.push({ title, scrapedAt: new Date().toISOString() });
+      questionParagraphs.forEach(p => {
+        // We only care about paragraphs that contain radio button inputs
+        if (p.querySelector('input[type="radio"]')) {
+          const innerHTML = p.innerHTML;
+          const parts = innerHTML.split('<br>');
+          
+          const questionText = parts[0].trim(); // The question is the text before the first <br>
+          
+          const options = [];
+          // The rest of the parts are the options
+          for (let i = 1; i < parts.length; i++) {
+            // Create a temporary element to easily strip HTML tags (like <input>)
+            const tempEl = document.createElement('div');
+            tempEl.innerHTML = parts[i];
+            const optionText = tempEl.textContent.trim();
+            if (optionText) {
+              options.push(optionText);
+            }
+          }
+          
+          if (questionText && options.length > 0) {
+            data.push({ question: questionText, options: options });
+          }
         }
       });
-      return articlesArray;
+      return data;
     });
 
     await browser.close();
-    console.log(`Number of articles found: ${articles.length}`);
+    console.log(`Number of questions found: ${quizData.length}`);
 
-    if (articles.length === 0) {
-      console.log('No articles found even with Puppeteer. Exiting.');
+    if (quizData.length === 0) {
+      console.log('No questions found. The website structure may have changed.');
       return;
     }
 
-    const collectionRef = db.collection('scrapedArticles');
-    for (const article of articles.slice(0, 10)) { // Limit to 10 to be safe
-      await collectionRef.add(article);
+    // 3. SAVE TO A NEW FIRESTORE COLLECTION
+    const collectionRef = db.collection('jlpt-n5-quizzes');
+    console.log(`Preparing to write ${quizData.length} questions to Firestore...`);
+    for (const question of quizData) {
+      await collectionRef.add(question);
     }
-    console.log(`Successfully saved ${Math.min(10, articles.length)} articles to Firestore.`);
+    console.log(`Successfully saved ${quizData.length} questions to the 'jlpt-n5-quizzes' collection.`);
   }
 
   scrapeAndSave()
