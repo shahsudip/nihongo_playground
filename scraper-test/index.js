@@ -1,5 +1,5 @@
 import puppeteer from "puppeteer";
-import { db } from "./firebaseConfig.js"; // adjust your path
+import { db } from '../firebaseConfig.js'; // Make sure this path is correct
 
 const BASE_URL = "https://www.japanesetest4you.com/";
 const LEVELS = ["n5"];
