@@ -25,59 +25,125 @@ console.log('Firestore initialized successfully. RUNNING IN LOG-ONLY MODE.');
 async function scrapeTestPage(page, url, category) {
   try {
     await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
-    const quizData = await page.evaluate((currentCategory) => {
-      const mainContent = document.querySelector('div.entry.clearfix');
-      if (!mainContent) return null;
 
-      const title = document.title.split('|')[0].trim();
-      const allParagraphs = Array.from(mainContent.querySelectorAll('p'));
-      
-      let questions = [], answers = {}, vocabulary = [], readingPassage = '';
-      let parsingMode = 'questions';
+    if (category === 'reading') {
+        return await page.evaluate(() => {
+            const content = document.querySelector('div.entry.clearfix');
+            if (!content) return null;
 
-      if (currentCategory === 'reading') {
-        const firstQuestionIndex = allParagraphs.findIndex(p => p.querySelector('input[type="radio"]'));
-        if (firstQuestionIndex > 0) {
-          readingPassage = allParagraphs.slice(0, firstQuestionIndex).map(p => p.innerText).join('\n\n');
-        }
-      }
+            const title = document.title.split('|')[0].trim();
+            const passages = [];
+            let currentPassage = null;
 
-      allParagraphs.forEach(p => {
-        const strongText = p.querySelector('strong')?.innerText || '';
-        if (strongText.includes('Answer Key')) parsingMode = 'answers';
-        else if (strongText.includes('New words')) parsingMode = 'vocab';
-        
-        if (parsingMode === 'questions' && p.querySelector('input[type="radio"]')) {
-          const parts = p.innerHTML.split('<br>');
-          const questionText = parts[0].trim();
-          const options = parts.slice(1).map(part => {
-            const tempEl = document.createElement('div');
-            tempEl.innerHTML = part;
-            return tempEl.textContent.trim();
-          }).filter(Boolean);
-          if (questionText && options.length > 0) questions.push({ questionText, options });
-        } else if (parsingMode === 'answers') {
-          const match = p.innerText.match(/Question (\d+): (\d+)/);
-          if (match) answers[parseInt(match[1])] = parseInt(match[2]) - 1;
-        } else if (parsingMode === 'vocab') {
-          const text = p.innerText;
-          if (text.includes(':')) {
-            const [term, english] = text.split(/:(.*)/s);
-            const termMatch = term.match(/(.*) \((.*)\)/);
-            if (termMatch) vocabulary.push({
-              japanese: termMatch[1].trim(),
-              romaji: termMatch[2].trim(),
-              english: english.trim()
+            content.childNodes.forEach(node => {
+                if (node.nodeType === Node.ELEMENT_NODE) {
+                    const el = node;
+                    const strongText = el.querySelector('strong')?.innerText || '';
+                    if (el.tagName === 'P' && strongText.startsWith('Reading Passage')) {
+                        if (currentPassage) passages.push(currentPassage);
+                        currentPassage = {
+                            passageTitle: strongText.trim(),
+                            passageImage: '',
+                            passageText: '',
+                            questions: [],
+                        };
+                        return;
+                    }
+
+                    if (currentPassage) {
+                        if (el.tagName === 'FIGURE') {
+                            currentPassage.passageImage = el.querySelector('img')?.src || '';
+                        }
+                        else if (el.tagName === 'P' && el.querySelector('input[type="radio"]')) {
+                            const innerHTML = el.innerHTML;
+                            const parts = innerHTML.split('<br>').map(part => {
+                                const tempEl = document.createElement('div');
+                                tempEl.innerHTML = part;
+                                return tempEl.textContent.trim();
+                            });
+                            const questionText = parts[0] || '';
+                            const options = parts.slice(1).filter(Boolean);
+                            const questionNumber = parseInt(questionText.match(/^(\d+)/)?.[1] || '0', 10);
+                            
+                            currentPassage.questions.push({ questionNumber, questionText, options });
+                        }
+                        else if (el.tagName === 'P' && el.innerText.trim()) {
+                            if (!el.querySelector('input[type="radio"]')) {
+                                currentPassage.passageText += el.innerText.trim() + '\n';
+                            }
+                        }
+                    }
+                }
             });
-          }
-        }
-      });
+            if (currentPassage) passages.push(currentPassage);
 
-      questions.forEach((q, index) => { q.correctOptionIndex = answers[index + 1]; });
-      if (questions.length === 0) return null;
-      return { title, sourceUrl: window.location.href, readingPassage, questions, vocabulary };
-    }, category);
-    return quizData;
+            const answers = {};
+            const allParagraphs = Array.from(content.querySelectorAll('p'));
+            let isAnswerKeySection = false;
+            for (const p of allParagraphs) {
+                const strongText = p.querySelector('strong')?.innerText || '';
+                if (strongText.includes('Answer Key')) isAnswerKeySection = true;
+                if (isAnswerKeySection) {
+                    const text = p.innerText;
+                    const match = text.match(/Question\s*(\d+):\s*(\d+)/);
+                    if (match) answers[parseInt(match[1])] = parseInt(match[2]) - 1;
+                }
+            }
+
+            passages.forEach(passage => {
+                passage.passageText = passage.passageText.trim();
+                passage.questions.forEach(q => {
+                    if (answers[q.questionNumber] !== undefined) q.correctOptionIndex = answers[q.questionNumber];
+                });
+            });
+
+            if (passages.length === 0) return null;
+            return { title, sourceUrl: window.location.href, passages };
+        });
+    } else {
+        return await page.evaluate((currentCategory) => {
+            const mainContent = document.querySelector('div.entry.clearfix');
+            if (!mainContent) return null;
+            const title = document.title.split('|')[0].trim();
+            const allParagraphs = Array.from(mainContent.querySelectorAll('p'));
+            let questions = [], answers = {}, vocabulary = [];
+            let parsingMode = 'questions';
+
+            allParagraphs.forEach(p => {
+                const strongText = p.querySelector('strong')?.innerText || '';
+                if (strongText.includes('Answer Key')) parsingMode = 'answers';
+                else if (strongText.includes('New words')) parsingMode = 'vocab';
+                
+                if (parsingMode === 'questions' && p.querySelector('input[type="radio"]')) {
+                    const parts = p.innerHTML.split('<br>');
+                    const questionText = parts[0].trim();
+                    const options = parts.slice(1).map(part => {
+                        const tempEl = document.createElement('div');
+                        tempEl.innerHTML = part;
+                        return tempEl.textContent.trim();
+                    }).filter(Boolean);
+                    if (questionText && options.length > 0) questions.push({ questionText, options });
+                } else if (parsingMode === 'answers') {
+                    const match = p.innerText.match(/Question (\d+): (\d+)/);
+                    if (match) answers[parseInt(match[1])] = parseInt(match[2]) - 1;
+                } else if (parsingMode === 'vocab') {
+                    const text = p.innerText;
+                    if (text.includes(':')) {
+                        const [term, english] = text.split(/:(.*)/s);
+                        const termMatch = term.match(/(.*) \((.*)\)/);
+                        if (termMatch) vocabulary.push({
+                            japanese: termMatch[1].trim(),
+                            romaji: termMatch[2].trim(),
+                            english: english.trim()
+                        });
+                    }
+                }
+            });
+            questions.forEach((q, index) => { q.correctOptionIndex = answers[index + 1]; });
+            if (questions.length === 0) return null;
+            return { title, sourceUrl: window.location.href, questions, vocabulary };
+        }, category);
+    }
   } catch (error) {
     console.error(`Error processing URL ${url}:`, error.message);
     return null;
@@ -95,15 +161,6 @@ async function scrapeAllTests(browser) {
       while (consecutiveFailures < 3) {
         const docId = `exercise-${exerciseNum}`;
         const docRef = db.collection('jlpt').doc(level).collection(collectionName).doc(docId);
-
-        // This check is now for logging purposes, to simulate skipping
-        const docSnap = await docRef.get();
-        if (docSnap.exists) {
-          console.log(`- Skipping ${docRef.path}, data already exists in DB.`);
-          consecutiveFailures = 0;
-          exerciseNum++;
-          continue;
-        }
         
         const url = `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${exerciseNum}/`;
         const page = await browser.newPage();
@@ -114,7 +171,7 @@ async function scrapeAllTests(browser) {
           consecutiveFailures = 0;
           // --- MODIFIED: Log data instead of writing to DB ---
           console.log(`\n--- WOULD SAVE TO: ${docRef.path} ---`);
-          console.log(quizData);
+          console.log(JSON.stringify(quizData, null, 2)); // Pretty print JSON
           console.log(`--- END OF DATA ---`);
           // await docRef.set(quizData); // DB write is disabled
         } else {
@@ -140,12 +197,6 @@ async function scrapeVocabularyLists(browser) {
     const collectionName = 'vocabulary_list';
     const docId = 'full-list';
     const docRef = db.collection('jlpt').doc(level).collection(collectionName).doc(docId);
-
-    const docSnap = await docRef.get();
-    if (docSnap.exists) {
-      console.log(`- Skipping ${docRef.path}, data already exists in DB.`);
-      continue;
-    }
 
     const url = `${BASE_URL}jlpt-${level}-vocabulary-list/`;
     const page = await browser.newPage();
@@ -183,7 +234,7 @@ async function scrapeVocabularyLists(browser) {
             const dataToSave = { title: `JLPT ${level.toUpperCase()} Vocabulary List`, words: vocabList };
             // --- MODIFIED: Log data instead of writing to DB ---
             console.log(`\n--- WOULD SAVE TO: ${docRef.path} ---`);
-            console.log(dataToSave);
+            console.log(JSON.stringify(dataToSave, null, 2)); // Pretty print JSON
             console.log(`--- END OF DATA ---`);
             // await docRef.set(dataToSave); // DB write is disabled
         } else {
@@ -256,12 +307,6 @@ async function scrapeGrammarLists(browser) {
         const slug = link.url.split('/').filter(Boolean).pop();
         const docRef = db.collection('jlpt').doc(level).collection(collectionName).doc(slug);
         
-        const docSnap = await docRef.get();
-        if (docSnap.exists) {
-            console.log(`- Skipping ${docRef.path}, data already exists in DB.`);
-            continue;
-        }
-
         const detailPage = await browser.newPage();
         console.log(`Scraping detail: ${link.title}`);
         const grammarData = await scrapeGrammarDetailPage(detailPage, link.url);
@@ -269,7 +314,7 @@ async function scrapeGrammarLists(browser) {
         if (grammarData && grammarData.examples.length > 0) {
             // --- MODIFIED: Log data instead of writing to DB ---
             console.log(`\n--- WOULD SAVE TO: ${docRef.path} ---`);
-            console.log(grammarData);
+            console.log(JSON.stringify(grammarData, null, 2)); // Pretty print JSON
             console.log(`--- END OF DATA ---`);
             // await docRef.set(grammarData); // DB write is disabled
         } else {
