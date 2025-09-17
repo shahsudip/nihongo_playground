@@ -6,21 +6,14 @@ puppeteer.use(StealthPlugin());
 
 console.log('JLPT Quiz Scraper started with Stealth Mode.');
 
-// --- CONFIGURATION ---
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-// ✅ Restrict scraping to N5 only
 const LEVELS = ['n5'];
 const TEST_CATEGORIES = ['grammar', 'vocabulary', 'kanji', 'reading'];
 const BASE_URL = 'https://japanesetest4you.com/';
-// --- END CONFIGURATION ---
 
 initializeApp({ credential: cert(serviceAccount) });
 const db = getFirestore();
 console.log('Firestore initialized successfully. RUNNING IN LOG-ONLY MODE.');
-
-// =================================================================
-// SECTION 1: SCRAPER FOR INDIVIDUAL EXERCISE TESTS
-// =================================================================
 
 async function scrapeTestPage(page, url, category) {
   try {
@@ -30,11 +23,11 @@ async function scrapeTestPage(page, url, category) {
       const content = document.querySelector('div.entry.clearfix');
       if (!content) return null;
       const title = document.title.split('|')[0].trim();
-      let passages = [], questions = [], answers = {}, vocabulary = [];
+      let passages = [], questions = [], answers = {};
+
       let parsingMode = 'questions';
       let expectedQuestionNumber = 1;
 
-      // Parse all paragraphs first to collect questions and vocabulary
       const allParagraphs = Array.from(content.querySelectorAll('p'));
 
       if (currentCategory === 'reading') {
@@ -43,10 +36,11 @@ async function scrapeTestPage(page, url, category) {
           if (node.nodeType !== Node.ELEMENT_NODE) return;
           const el = node;
           const strongText = el.querySelector('strong')?.innerText?.trim() || '';
+
           if (el.tagName === 'P' && strongText.startsWith('Reading Passage')) {
             if (currentPassage) passages.push(currentPassage);
             currentPassage = { passageTitle: strongText, passageImage: '', passageText: '', questions: [] };
-            expectedQuestionNumber = 1; // Reset for each passage
+            expectedQuestionNumber = 1;
             return;
           }
           if (currentPassage) {
@@ -72,7 +66,7 @@ async function scrapeTestPage(page, url, category) {
               }
               questionText = questionText.replace(/^\d+\.\s*/, '').trim();
               if (questionText) {
-                currentPassage.questions.push({ questionNumber, questionText, options, correctOption: null });
+                currentPassage.questions.push({ questionNumber, questionText, options, correctOption: null, vocabulary: [] });
                 expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
               }
             } else if (el.tagName === 'P' && el.innerText.trim() && !el.querySelector('input[type="radio"]')) {
@@ -86,6 +80,7 @@ async function scrapeTestPage(page, url, category) {
           const strongText = p.querySelector('strong')?.innerText?.trim() || '';
           if (strongText.includes('Answer Key')) parsingMode = 'answers';
           else if (strongText.includes('New words')) parsingMode = 'vocab';
+
           if (parsingMode === 'questions' && p.querySelector('input[type="radio"]')) {
             const innerHTML = p.innerHTML;
             const parts = innerHTML.split('<br>').map(part => {
@@ -109,26 +104,19 @@ async function scrapeTestPage(page, url, category) {
               questions.push({ questionNumber, questionText, options, correctOption: null });
               expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
             }
-          } else if (parsingMode === 'vocab') {
-            const text = p.innerText.trim();
-            if (text.includes(':')) {
-              const [term, english] = text.split(/:(.*)/s);
-              const termMatch = term.match(/(.*) \((.*)\)/);
-              if (termMatch) vocabulary.push({ japanese: termMatch[1].trim(), romaji: termMatch[2].trim(), english: english.trim() });
-            }
           }
         });
       }
 
-      // Parse answer key
-      parsingMode = 'initial';
       allParagraphs.forEach(p => {
         const strongText = p.querySelector('strong')?.innerText?.trim() || '';
         if (strongText.includes('Answer Key')) parsingMode = 'answers';
+
         if (parsingMode === 'answers') {
           const text = p.innerText.trim();
-          const match = text.match(/Question\s*(\d+):\s*(\d+)/i);
-          if (match) {
+          const regex = /Question\s*(\d+):\s*(\d+)/gi;
+          let match;
+          while ((match = regex.exec(text)) !== null) {
             const questionNum = parseInt(match[1], 10);
             const answerIndex = parseInt(match[2], 10) - 1;
             answers[questionNum] = answerIndex;
@@ -136,21 +124,16 @@ async function scrapeTestPage(page, url, category) {
         }
       });
 
-      // Map answers to questions
       if (currentCategory === 'reading') {
         passages.forEach(passage => {
           passage.passageText = passage.passageText.trim();
-          passage.questions = passage.questions.filter(q => {
+          passage.questions.forEach(q => {
             if (answers[q.questionNumber] !== undefined) {
               const correctIndex = answers[q.questionNumber];
               if (correctIndex >= 0 && correctIndex < q.options.length) {
-                q.correctOption = {
-                  index: correctIndex,
-                  text: q.options[correctIndex] || ''
-                };
+                q.correctOption = { index: correctIndex, text: q.options[correctIndex] || '' };
               }
             }
-            return q.questionText && q.options.length > 0;
           });
         });
         if (passages.every(p => p.questions.length === 0)) return null;
@@ -160,16 +143,13 @@ async function scrapeTestPage(page, url, category) {
           if (answers[q.questionNumber] !== undefined) {
             const correctIndex = answers[q.questionNumber];
             if (correctIndex >= 0 && correctIndex < q.options.length) {
-              q.correctOption = {
-                index: correctIndex,
-                text: q.options[correctIndex] || ''
-              };
+              q.correctOption = { index: correctIndex, text: q.options[correctIndex] || '' };
             }
           }
           return q.questionText && q.options.length > 0;
         });
         if (questions.length === 0) return null;
-        return { title, sourceUrl: window.location.href, questions, vocabulary };
+        return { title, sourceUrl: window.location.href, questions };
       }
     }, category);
   } catch (error) {
@@ -191,7 +171,6 @@ async function scrapeAllTests(browser) {
         const docId = `exercise-${exerciseNum}`;
         const docRef = db.collection('jlpt').doc(level).collection(collectionName).doc(docId);
 
-        // Try both URL formats: exercise-1 and exercise-01
         const urlFormats = [
           `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${exerciseNum}/`,
           `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${String(exerciseNum).padStart(2, '0')}/`
@@ -205,7 +184,7 @@ async function scrapeAllTests(browser) {
           console.log(`Attempting to scrape: ${url}`);
           triedUrls.push(url);
           quizData = await scrapeTestPage(page, url, category);
-          if (quizData) break; // stop if valid data found
+          if (quizData) break;
         }
 
         if (quizData) {
@@ -216,30 +195,7 @@ async function scrapeAllTests(browser) {
         } else {
           consecutiveFailures++;
           const currentUrl = triedUrls.join(' OR ');
-
           console.log(`- No valid quiz data found at [${currentUrl}] (Failure ${consecutiveFailures}/3).`);
-
-          // Diagnostic: fetch status / sample content for each tried URL
-          for (const url of triedUrls) {
-            try {
-              const resp = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 15000 });
-              const status = resp ? resp.status() : null;
-              const pageContent = await page.content();
-              const bodyText = pageContent.replace(/\s+/g, ' ').slice(0, 300);
-
-              console.log(`  ↳ Diagnostic for ${url}: HTTP status ${status}`);
-              if (status === 404 || bodyText.toLowerCase().includes('not found') || bodyText.includes('404')) {
-                console.log('    ↳ Reason: Page returned 404 / Not Found.');
-              } else if (!bodyText || bodyText.trim().length === 0) {
-                console.log('    ↳ Reason: Empty page content.');
-              } else {
-                console.log('    ↳ Reason: Page loaded but no questions detected. Sample content:', bodyText);
-              }
-            } catch (err) {
-              console.log(`    ↳ Navigation/diagnostic failed for ${url}: ${err.message}`);
-            }
-          }
-
           if (consecutiveFailures === 3) {
             console.log(`❌ Giving up on: ${currentUrl}`);
             failedUrls.push(currentUrl);
@@ -253,7 +209,6 @@ async function scrapeAllTests(browser) {
   }
 
   console.log('✅ Finished scraping all exercise tests.');
-
   if (failedUrls.length > 0) {
     console.log('\n📌 SUMMARY: The following URLs failed to be scraped:');
     failedUrls.forEach((u) => console.log(' - ' + u));
@@ -261,10 +216,6 @@ async function scrapeAllTests(browser) {
     console.log('\n🎉 All URLs scraped successfully (no permanent failures).');
   }
 }
-
-// =================================================================
-// SECTION 2: SCRAPER FOR VOCABULARY & GRAMMAR LISTS
-// =================================================================
 
 async function scrapeVocabularyLists(browser) {
   console.log('\n🚀 Starting scrape of main vocabulary lists...');
@@ -332,7 +283,6 @@ async function scrapeGrammarDetailPage(page, url) {
 
       for (const node of childNodes) {
         if (node.nodeType !== Node.ELEMENT_NODE) continue;
-
         const el = node;
         if (el.tagName !== 'P') continue;
 
@@ -438,17 +388,11 @@ async function scrapeGrammarLists(browser) {
   console.log('✅ Finished scraping all grammar lists.');
 }
 
-// =================================================================
-// SECTION 3: MAIN EXECUTION
-// =================================================================
-
 async function main() {
   const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
-
   await scrapeAllTests(browser);
   await scrapeVocabularyLists(browser);
   await scrapeGrammarLists(browser);
-
   await browser.close();
   console.log('\n🎉 Full scrape process completed!');
 }
