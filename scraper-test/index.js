@@ -23,7 +23,7 @@ async function scrapeTestPage(page, url, category) {
       const content = document.querySelector('div.entry.clearfix');
       if (!content) return null;
       const title = document.title.split('|')[0].trim();
-      let passages = [], questions = [], answers = {}, vocabulary = [];
+      let passages = [], questions = [], answers = {};
 
       let parsingMode = 'questions';
       let expectedQuestionNumber = 1;
@@ -66,7 +66,7 @@ async function scrapeTestPage(page, url, category) {
               }
               questionText = questionText.replace(/^\d+\.\s*/, '').trim();
               if (questionText) {
-                currentPassage.questions.push({ questionNumber, questionText, options, correctOption: null });
+                currentPassage.questions.push({ questionNumber, questionText, options, correctOption: null, vocabulary: [] });
                 expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
               }
             } else if (el.tagName === 'P' && el.innerText.trim() && !el.querySelector('input[type="radio"]')) {
@@ -79,6 +79,7 @@ async function scrapeTestPage(page, url, category) {
         allParagraphs.forEach(p => {
           const strongText = p.querySelector('strong')?.innerText?.trim() || '';
           if (strongText.includes('Answer Key')) parsingMode = 'answers';
+          else if (strongText.includes('New words')) parsingMode = 'vocab';
 
           if (parsingMode === 'questions' && p.querySelector('input[type="radio"]')) {
             const innerHTML = p.innerHTML;
@@ -110,17 +111,6 @@ async function scrapeTestPage(page, url, category) {
       allParagraphs.forEach(p => {
         const strongText = p.querySelector('strong')?.innerText?.trim() || '';
         if (strongText.includes('Answer Key')) parsingMode = 'answers';
-        else if (strongText.includes('New words') && currentCategory === 'reading') {
-          // Parse vocabulary for reading tests only
-          const text = p.innerText.trim();
-          if (text.includes(':')) {
-            const [term, english] = text.split(/:(.*)/s);
-            const termMatch = term.match(/(.*) \((.*)\)/);
-            if (termMatch) {
-              vocabulary.push({ japanese: termMatch[1].trim(), romaji: termMatch[2].trim(), english: english.trim() });
-            }
-          }
-        }
 
         if (parsingMode === 'answers') {
           const text = p.innerText.trim();
@@ -147,7 +137,7 @@ async function scrapeTestPage(page, url, category) {
           });
         });
         if (passages.every(p => p.questions.length === 0)) return null;
-        return { title, sourceUrl: window.location.href, passages, vocabulary };
+        return { title, sourceUrl: window.location.href, passages };
       } else {
         questions = questions.filter(q => {
           if (answers[q.questionNumber] !== undefined) {
