@@ -1,3 +1,5 @@
+// src/hooks/quiz_logic_hook.jsx
+
 import { useState, useEffect, useCallback } from "react";
 
 // Helper function to shuffle an array
@@ -10,8 +12,8 @@ const shuffleArray = (array) => {
   return newArray;
 };
 
-// Spaced Repetition Quiz Hook
-export const useSrsQuiz = (vocabularyList, quizType = "kanji") => {
+// Spaced Repetition Quiz Hook - Universal Version
+export const useSrsQuiz = (cardList) => {
   const [deck, setDeck] = useState([]);
   const [unseenQueue, setUnseenQueue] = useState([]);
   const [learningQueue, setLearningQueue] = useState([]);
@@ -22,13 +24,15 @@ export const useSrsQuiz = (vocabularyList, quizType = "kanji") => {
   const [isLoading, setIsLoading] = useState(true);
   const [isFirstPassComplete, setIsFirstPassComplete] = useState(false);
   const [hasAcknowledgedFirstPass, setHasAcknowledgedFirstPass] = useState(false);
-
-  // store score after first pass
   const [firstPassStats, setFirstPassStats] = useState({ score: 0, total: 0 });
 
-  // Initialize deck
+  // Initialize or reset the entire quiz state with the provided list of cards
   const initializeDeck = useCallback(() => {
-    const initializedDeck = vocabularyList.map((item, index) => ({
+    if (!cardList || cardList.length === 0) {
+      setIsLoading(false);
+      return;
+    }
+    const initializedDeck = cardList.map((item, index) => ({
       ...item,
       id: index,
       correctStreak: 0,
@@ -44,125 +48,84 @@ export const useSrsQuiz = (vocabularyList, quizType = "kanji") => {
     setIsFirstPassComplete(false);
     setHasAcknowledgedFirstPass(false);
     setFirstPassStats({ score: 0, total: 0 });
-  }, [vocabularyList]);
+  }, [cardList]);
 
-  // Select next card
+  // Core SRS logic to select the next card to display
   const selectNextCard = useCallback(() => {
     let nextCardId = -1;
     let newLearningQueue = [...learningQueue];
     let newUnseenQueue = [...unseenQueue];
 
+    // Priority 1: Review incorrect cards from the learning queue
     if (newLearningQueue.length > 0) {
       nextCardId = newLearningQueue.shift();
-    } else if (newUnseenQueue.length > 0) {
+    } 
+    // Priority 2: Show new, unseen cards
+    else if (newUnseenQueue.length > 0) {
       nextCardId = newUnseenQueue.shift();
-      if (newUnseenQueue.length === 0 && deck.length > 0) {
-        // First pass complete
-        setFirstPassStats({
-          score: totalCorrect,
-          total: totalCorrect + totalIncorrect,
-        });
+      // Check if this is the last unseen card, marking the end of the first round
+      if (newUnseenQueue.length === 0 && deck.length > 0 && !isFirstPassComplete) {
+        setFirstPassStats({ score: totalCorrect, total: totalCorrect + totalIncorrect });
         setIsFirstPassComplete(true);
       }
-    } else if (masteredCount < deck.length) {
-      const reviewQueue = deck
-        .filter((card) => !card.isMastered)
-        .map((card) => card.id);
-      if (reviewQueue.length > 0) {
-        newLearningQueue = shuffleArray(reviewQueue);
+    } 
+    // Priority 3: If no new cards, create a review session of non-mastered cards
+    else if (masteredCount < deck.length) {
+      const reviewPool = deck.filter((card) => !card.isMastered).map((card) => card.id);
+      if (reviewPool.length > 0) {
+        newLearningQueue = shuffleArray(reviewPool);
         nextCardId = newLearningQueue.shift();
       }
     }
 
     if (nextCardId !== -1) {
       const nextCard = deck.find((c) => c.id === nextCardId);
-
-      let questionText = "";
-      let correctAnswer = "";
-      let distractors = [];
-
-      if (quizType === "vocabulary") {
-        questionText = nextCard.meaning;
-        correctAnswer = nextCard.hiragana;
-        distractors = deck
-          .filter((item) => item.id !== nextCard.id)
-          .map((item) => item.hiragana);
-      } else {
-        // Kanji quiz
-        questionText = nextCard.kanji || nextCard.hiragana;
-        correctAnswer = `${nextCard.hiragana} (${nextCard.meaning})`;
-        distractors = deck
-          .filter((item) => item.id !== nextCard.id)
-          .map((item) => `${item.hiragana} (${item.meaning})`);
-      }
-
-      const options = shuffleArray([
-        correctAnswer,
-        ...shuffleArray(distractors).slice(0, 3),
-      ]);
-
-      setCurrentCard({
-        ...nextCard,
-        questionText,
-        answer: correctAnswer,
-        options,
-      });
-      setLearningQueue(newLearningQueue);
-      setUnseenQueue(newUnseenQueue);
+      setCurrentCard({ ...nextCard, options: shuffleArray(nextCard.options) });
     } else {
+      // No more cards to show
       setCurrentCard(null);
     }
-  }, [
-    deck,
-    learningQueue,
-    unseenQueue,
-    masteredCount,
-    quizType,
-    totalCorrect,
-    totalIncorrect,
-  ]);
 
-  // Handle user answer
+    setLearningQueue(newLearningQueue);
+    setUnseenQueue(newUnseenQueue);
+  }, [deck, learningQueue, unseenQueue, masteredCount, isFirstPassComplete, totalCorrect, totalIncorrect]);
+
+  // Handles updating card state based on user's answer
   const handleAnswer = (isCorrect) => {
+    if (!currentCard) return;
     const cardId = currentCard.id;
+
     if (isCorrect) {
       setTotalCorrect((prev) => prev + 1);
     } else {
       setTotalIncorrect((prev) => prev + 1);
+      // If incorrect, add card back to the learning queue for immediate review
+      setLearningQueue((prev) => shuffleArray([...prev, cardId]));
     }
 
     const updatedDeck = deck.map((card) => {
       if (card.id === cardId) {
         const newStreak = isCorrect ? card.correctStreak + 1 : 0;
-        const isNowMastered = newStreak >= 2;
+        const isNowMastered = newStreak >= 2; // Mastered after 2 correct answers in a row
         if (isNowMastered && !card.isMastered) {
           setMasteredCount((prev) => prev + 1);
         }
-        return {
-          ...card,
-          correctStreak: newStreak,
-          isMastered: isNowMastered,
-        };
+        return { ...card, correctStreak: newStreak, isMastered: isNowMastered };
       }
       return card;
     });
 
     setDeck(updatedDeck);
-
-    if (!isCorrect) {
-      setLearningQueue((prev) => shuffleArray([...prev, cardId]));
-    }
-
     selectNextCard();
   };
 
+  // Main effect to kickstart the quiz
   useEffect(() => {
-    if (vocabularyList && vocabularyList.length > 0) {
-      setIsLoading(true);
-      initializeDeck();
-    }
-  }, [vocabularyList, initializeDeck]);
+    setIsLoading(true);
+    initializeDeck();
+  }, [cardList, initializeDeck]);
 
+  // Effect to select the first card once the deck is ready
   useEffect(() => {
     if (deck.length > 0 && !currentCard) {
       selectNextCard();
@@ -172,6 +135,7 @@ export const useSrsQuiz = (vocabularyList, quizType = "kanji") => {
 
   const acknowledgeFirstPass = () => {
     setHasAcknowledgedFirstPass(true);
+    selectNextCard(); // Immediately select the next card for the review round
   };
 
   const isComplete = masteredCount === deck.length && deck.length > 0;
@@ -182,6 +146,7 @@ export const useSrsQuiz = (vocabularyList, quizType = "kanji") => {
     totalCorrect,
     totalIncorrect,
     deckSize: deck.length,
+    unseenCount: unseenQueue.length,
     handleAnswer,
     isComplete,
     isLoading,
@@ -189,6 +154,5 @@ export const useSrsQuiz = (vocabularyList, quizType = "kanji") => {
     hasAcknowledgedFirstPass,
     acknowledgeFirstPass,
     firstPassStats,
-    unseenCount: unseenQueue.length,
   };
 };

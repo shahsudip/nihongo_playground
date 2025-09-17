@@ -1,116 +1,107 @@
-// src/components/ExerciseListPage.jsx
+// src/pages/ExerciseListPage.jsx
 
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { db } from '../firebaseConfig.js'; // Make sure this path is correct
-import { doc, onSnapshot } from 'firebase/firestore';
-import { getFunctions, httpsCallable } from 'firebase/functions';
+import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
+import { db } from '../firebaseConfig';
+import { collection, getDocs, query, where } from 'firebase/firestore';
+import LoadingSpinner from '../utils/loading_spinner.jsx';
+import { formatDateTime } from '../utils/formatters.jsx';
 
-/**
- * Internal component to handle loading and displaying the selected quiz.
- */
-const QuizView = ({ level, category, exercise, onBack }) => {
-  const [quizData, setQuizData] = useState(null);
-  const [status, setStatus] = useState('checking'); // checking, scraping, ready, error
+const ExerciseListPage = () => {
+  const { level, category } = useParams();
+  const { currentUser } = useAuth();
+  const navigate = useNavigate();
+
+  const [loading, setLoading] = useState(true);
+  const [exercises, setExercises] = useState([]);
+  const [history, setHistory] = useState({});
 
   useEffect(() => {
-    // --- THIS IS THE CORRECTED DATABASE PATH ---
-    const docId = `exercise-${exercise}`;
-    const docRef = doc(db, 'jlpt', level, category, docId);
-    // --- END OF CORRECTION ---
+    if (!currentUser) return;
 
-    const unsubscribe = onSnapshot(docRef, (docSnap) => {
-      if (docSnap.exists()) {
-        setQuizData(docSnap.data());
-        setStatus('ready');
-      } else {
-        if (status === 'checking') {
-          setStatus('scraping');
-          const functions = getFunctions();
-          const triggerExerciseScraper = httpsCallable(functions, 'triggerExerciseScraper');
-          triggerExerciseScraper({ level, category, exercise })
-            .catch(err => {
-              console.error("Scraper trigger failed:", err);
-              setStatus('error');
-            });
-        }
+    const fetchData = async () => {
+      try {
+        const exerciseCollectionPath = `jlpt/${level}/${category}-test`;
+        const exerciseSnapshot = await getDocs(collection(db, exerciseCollectionPath));
+        const fetchedExercises = exerciseSnapshot.docs
+          .map(doc => ({ id: doc.id, ...doc.data() }))
+          .sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }));
+        setExercises(fetchedExercises);
+
+        const historyQuery = query(
+          collection(db, `users/${currentUser.uid}/quizHistory`),
+          where('level', '==', level),
+          where('category', '==', category)
+        );
+        const historySnapshot = await getDocs(historyQuery);
+        const fetchedHistory = {};
+        historySnapshot.forEach(doc => {
+          const quizId = doc.data().quizId || '';
+          const match = quizId.match(/exercise-(\d+)/);
+          if (match) {
+            const exerciseId = `exercise-${match[1]}`;
+            fetchedHistory[exerciseId] = doc.data();
+          }
+        });
+        setHistory(fetchedHistory);
+
+      } catch (error) {
+        console.error("Error fetching exercise data:", error);
+      } finally {
+        setLoading(false);
       }
-    }, (error) => {
-      console.error("Firestore error:", error);
-      setStatus('error');
-    });
+    };
 
-    return () => unsubscribe();
-  }, [level, category, exercise, status]);
+    fetchData();
+  }, [level, category, currentUser]);
 
-  const renderContent = () => {
-    switch (status) {
-      case 'scraping':
-        return (
-          <>
-            <h1 className="page-title">Fetching Quiz Data...</h1>
-            <p className="info-text">Please wait a moment while we retrieve this exercise for the first time.</p>
-            <div className="loader"></div>
-          </>
-        );
-      case 'ready':
-        return (
-          <>
-            <h1 className="page-title">{quizData.title}</h1>
-            <button className="card start-button">Start Quiz</button>
-          </>
-        );
-      case 'error':
-        return <h1 className="page-title">Error Loading Quiz</h1>;
-      default: // 'checking'
-        return <div className="loader"></div>;
-    }
-  };
+  if (loading) return <LoadingSpinner />;
 
   return (
-    <div className="selection-container">
-      <button onClick={onBack} className="back-button">← Back to Exercises</button>
-      {renderContent()}
-    </div>
-  );
-};
+    <div className="exercise-list-container">
+      <div className="exercise-list-header">
+        <button onClick={() => navigate(-1)} className="back-button">← Back</button>
+        <h1 className="exercise-list-title">{level.toUpperCase()} - {category} Exercises</h1>
+      </div>
+      <div className="exercise-grid">
+        {exercises.map(exercise => {
+          const exerciseHistory = history[exercise.id];
+          const isMastered = exerciseHistory?.status === 'mastered';
+          const hasContent = exercise.questions && exercise.questions.length > 0;
+          const quizLink = `/quiz/jlpt/${level}/${category}/${exercise.id}`;
+          const title = exercise.title || exercise.id.replace('-', ' ');
 
-/**
- * Main component that decides whether to show the grid or the quiz.
- */
-const ExerciseGridPage = () => {
-  const { level, category } = useParams();
-  const [selectedExercise, setSelectedExercise] = useState(null);
-  const exerciseCount = 15;
-
-  if (selectedExercise) {
-    return (
-      <QuizView
-        level={level}
-        category={category}
-        exercise={selectedExercise}
-        onBack={() => setSelectedExercise(null)}
-      />
-    );
-  }
-
-  return (
-    <div className="selection-container">
-      <Link to={`/levels/${level}/${category}`} className="back-button">← Back</Link>
-      <h1 className="page-title">Select an Exercise</h1>
-      <div className="grid three-col">
-        {Array.from({ length: exerciseCount }, (_, i) => i + 1).map((num) => (
-          <button
-            key={num}
-            onClick={() => setSelectedExercise(num.toString())}
-            className="card exercise-card"
-          >
-            {num}
-          </button>
-        ))}
+          return (
+            <Link
+              to={quizLink}
+              key={exercise.id}
+              className={`difficulty-button ${isMastered ? 'mastered' : ''} ${!hasContent ? 'locked' : ''}`}
+              onClick={(e) => { if (isMastered || !hasContent) e.preventDefault(); }}
+            >
+              {exerciseHistory ? (
+                <>
+                  <span className={`difficulty-status-badge status-badge status-${exerciseHistory.status}`}>{exerciseHistory.status}</span>
+                  <div className="difficulty-main">
+                    <span className="difficulty-main-text">{title}</span>
+                    <span className="difficulty-score">{`${exerciseHistory.score}/${exerciseHistory.total}`}</span>
+                  </div>
+                  <div className="difficulty-timestamp">
+                    {formatDateTime(exerciseHistory.timestamp)}
+                  </div>
+                </>
+              ) : (
+                <div className="difficulty-main">
+                  <span className="difficulty-main-text">{hasContent ? `${title}` : title}</span>
+                  {!hasContent && <span className="lock-icon">🔒</span>}
+                </div>
+              )}
+            </Link>
+          );
+        })}
       </div>
     </div>
   );
 };
 
-export default ExerciseGridPage;
+export default ExerciseListPage;

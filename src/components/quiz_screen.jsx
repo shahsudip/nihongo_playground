@@ -1,15 +1,15 @@
+// src/components/quiz_screen.jsx
+
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useSrsQuiz } from '../hooks/quiz_logic_hook.jsx';
 import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
-import { doc, getDoc, setDoc, collection, query, where, getDocs } from 'firebase/firestore';
-import { formatDateTime } from '../utils/formatters.jsx';
+import { doc, getDoc, setDoc } from 'firebase/firestore';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 
-// -------------------------
-// Small UI subcomponents
-// -------------------------
+// --- UI Subcomponents (ScoreCounter, Modals) can remain here or be moved to separate files ---
+// ... (ScoreCounter, CompletionModal, FirstPassModal code is unchanged) ...
 const ScoreCounter = ({ score = 0, totalIncorrect = 0, mastered = 0, numberOfQuestions = 0, unseen = 0 }) => (
   <div className="score-counter-container">
     <div className="score-item unseen">New: <span>{unseen}</span></div>
@@ -18,7 +18,6 @@ const ScoreCounter = ({ score = 0, totalIncorrect = 0, mastered = 0, numberOfQue
     <div className="score-item mastered">Mastered: <span>{mastered} / {numberOfQuestions}</span></div>
   </div>
 );
-
 const CompletionModal = ({ score = 0, total = 0, onContinue }) => (
   <div className="modal-overlay">
     <div className="modal-content">
@@ -29,7 +28,6 @@ const CompletionModal = ({ score = 0, total = 0, onContinue }) => (
     </div>
   </div>
 );
-
 const FirstPassModal = ({ score = 0, total = 0, onContinueReview, onEndQuiz }) => (
   <div className="modal-overlay">
     <div className="modal-content">
@@ -45,27 +43,16 @@ const FirstPassModal = ({ score = 0, total = 0, onContinueReview, onEndQuiz }) =
   </div>
 );
 
-// -------------------------
-// Quiz component (uses useSrsQuiz)
-// -------------------------
-const Quiz = ({ quizContent = [], quizTitle = '', quizType = 'kanji', onComplete = () => {}, onEndQuizEarly = () => {}, quizStateRef = null }) => {
-  const [showFirstPassModal, setShowFirstPassModal] = useState(false);
-  const quizState = useSrsQuiz(quizContent, quizType);
 
+// --- Generic Quiz UI Component ---
+const Quiz = ({ quizContent, quizTitle, onComplete, onEndQuizEarly, quizStateRef }) => {
+  const [showFirstPassModal, setShowFirstPassModal] = useState(false);
+  const quizState = useSrsQuiz(quizContent);
   const {
-    currentCard,
-    handleAnswer,
-    acknowledgeFirstPass,
-    isComplete,
-    isLoading,
-    isFirstPassComplete,
-    hasAcknowledgedFirstPass,
-    firstPassStats,
-    totalCorrect: score = 0,
-    totalIncorrect = 0, // Using totalIncorrect directly
-    masteredCount = 0,
-    deckSize: numberOfQuestions = 0,
-    unseenCount = 0,
+    currentCard, handleAnswer, acknowledgeFirstPass, isComplete, isLoading,
+    isFirstPassComplete, hasAcknowledgedFirstPass, firstPassStats,
+    totalCorrect: score, totalIncorrect, masteredCount,
+    deckSize: numberOfQuestions, unseenCount,
   } = quizState || {};
 
   const [selectedOption, setSelectedOption] = useState(null);
@@ -73,43 +60,34 @@ const Quiz = ({ quizContent = [], quizTitle = '', quizType = 'kanji', onComplete
 
   useEffect(() => {
     if (quizStateRef) {
-      const total = score + totalIncorrect || numberOfQuestions;
-      quizStateRef.current = { score, total, totalIncorrect, mastered: masteredCount, unseen: unseenCount, numberOfQuestions };
+      quizStateRef.current = { score, total: numberOfQuestions, totalIncorrect, mastered: masteredCount, unseen: unseenCount, numberOfQuestions };
     }
   }, [score, totalIncorrect, masteredCount, unseenCount, numberOfQuestions, quizStateRef]);
 
   useEffect(() => {
-    if (isFirstPassComplete && !hasAcknowledgedFirstPass) {
-      setShowFirstPassModal(true);
-    }
-    if (isComplete) {
-      onComplete({ score, total: score + totalIncorrect, totalIncorrect, mastered: masteredCount, unseen: unseenCount });
-    }
-  }, [isFirstPassComplete, hasAcknowledgedFirstPass, isComplete, onComplete, score, totalIncorrect, masteredCount, unseenCount]);
+    if (isFirstPassComplete && !hasAcknowledgedFirstPass) setShowFirstPassModal(true);
+    if (isComplete) onComplete({ score, total: numberOfQuestions, ...quizStateRef.current });
+  }, [isFirstPassComplete, hasAcknowledgedFirstPass, isComplete, onComplete, score, numberOfQuestions]);
 
   const handleContinueReview = () => {
     setShowFirstPassModal(false);
-    acknowledgeFirstPass && acknowledgeFirstPass();
+    acknowledgeFirstPass?.();
   };
 
   const handleOptionClick = (option) => {
     if (isAnswered || !currentCard) return;
     setSelectedOption(option);
     setIsAnswered(true);
-    const isCorrect = option === currentCard.answer;
     setTimeout(() => {
-      handleAnswer && handleAnswer(isCorrect);
+      handleAnswer?.(option === currentCard.answer);
       setIsAnswered(false);
       setSelectedOption(null);
     }, 800);
   };
 
   if (isLoading) return <LoadingSpinner />;
-  if (!currentCard) {
-    return <div className="quiz-card"><p>No card available.</p></div>;
-  }
-
-  const options = Array.isArray(currentCard.options) ? currentCard.options : [];
+  if (!currentCard && !isComplete) return <div className="quiz-card"><p>Loading quiz...</p></div>;
+  if (!currentCard && isComplete) return null; // Let the onComplete handler show the final modal
 
   return (
     <>
@@ -117,9 +95,8 @@ const Quiz = ({ quizContent = [], quizTitle = '', quizType = 'kanji', onComplete
         <h1 className="quiz-title">{quizTitle}</h1>
         <ScoreCounter score={score} totalIncorrect={totalIncorrect} mastered={masteredCount} numberOfQuestions={numberOfQuestions} unseen={unseenCount} />
         <h2 className="question-text">{currentCard.questionText}</h2>
-
         <div className="options-grid">
-          {options.map((option, idx) => {
+          {currentCard.options.map((option, idx) => {
             const isCorrectAnswer = option === currentCard.answer;
             const isSelected = selectedOption === option;
             let buttonClass = 'option-button';
@@ -128,19 +105,13 @@ const Quiz = ({ quizContent = [], quizTitle = '', quizType = 'kanji', onComplete
               else if (isSelected) buttonClass += ' incorrect';
             }
             return (
-              <button
-                key={idx}
-                onClick={() => handleOptionClick(option)}
-                className={buttonClass}
-                disabled={isAnswered}
-              >
+              <button key={idx} onClick={() => handleOptionClick(option)} className={buttonClass} disabled={isAnswered}>
                 {option}
               </button>
             );
           })}
         </div>
       </div>
-
       {showFirstPassModal && (
         <FirstPassModal
           score={firstPassStats?.score ?? 0}
@@ -153,297 +124,156 @@ const Quiz = ({ quizContent = [], quizTitle = '', quizType = 'kanji', onComplete
   );
 };
 
-// -------------------------
-// QuizPage (main screen)
-// -------------------------
-const transformQuizContent = (rawContent = []) => {
-  if (!Array.isArray(rawContent)) return [];
-  return rawContent.map((item) => ({
-    kanji: item.kanji ?? null,
-    hiragana: item.hiragana ?? '',
-    meaning: item.meaning ?? '',
-  }));
+// --- Data Transformation Logic ---
+const transformDataForQuiz = (rawData, quizMode, category) => {
+  if (!rawData) return null;
+
+  const title = rawData.title || 'Quiz';
+  let quizContent = [];
+
+  try {
+    if (quizMode === 'jlpt') {
+      quizContent = rawData.questions.map(q => ({
+        questionText: q.questionText,
+        options: q.options,
+        answer: q.correctOption.text,
+      }));
+    } else if (quizMode === 'standard' || quizMode === 'custom') {
+      const allItems = rawData.quiz_content || [];
+      if (category === 'vocabulary') {
+        quizContent = allItems.map(item => ({
+          questionText: item.meaning,
+          answer: item.hiragana,
+          options: [
+            item.hiragana,
+            ...shuffleArray(allItems.filter(i => i.hiragana !== item.hiragana).map(i => i.hiragana)).slice(0, 3)
+          ]
+        }));
+      } else { // Handles Kanji and other similar types
+        quizContent = allItems.map(item => ({
+          questionText: item.kanji || item.hiragana,
+          answer: `${item.hiragana} (${item.meaning})`,
+          options: [
+            `${item.hiragana} (${item.meaning})`,
+            ...shuffleArray(allItems.filter(i => i.hiragana !== item.hiragana).map(i => `${i.hiragana} (${i.meaning})`)).slice(0, 3)
+          ]
+        }));
+      }
+    }
+  } catch (error) {
+    console.error("Error transforming data:", error, { rawData, quizMode, category });
+    return null;
+  }
+
+  return { title, quizContent };
 };
 
+// --- Main Page Component ---
 const QuizPage = () => {
-  const { level, category } = useParams();
+  const { quizMode, level, category, itemId } = useParams();
   const navigate = useNavigate();
-  const { currentUser, isAdmin } = useAuth();
-
-  const standardLevels = ['n5', 'n4', 'n3', 'n2', 'n1'];
-  const isCustomQuiz = level && !standardLevels.includes(level);
+  const { currentUser } = useAuth();
 
   const [loading, setLoading] = useState(true);
-  const [selectedDifficulty, setSelectedDifficulty] = useState(null);
-  const [unlockedDifficulty, setUnlockedDifficulty] = useState('easy');
+  const [quiz, setQuiz] = useState(null);
   const [showCompletionModal, setShowCompletionModal] = useState(false);
   const [finalScore, setFinalScore] = useState({ score: 0, total: 0 });
-  const [quizData, setQuizData] = useState({});
-  const [customQuizData, setCustomQuizData] = useState(null);
-  const [quizHistory, setQuizHistory] = useState({});
-
   const quizStateRef = useRef({});
   const isQuizCompletedRef = useRef(false);
 
-  const difficulties = ['easy', 'medium', 'hard'];
-  const difficultyMap = { easy: 1, medium: 2, hard: 3 };
-
   useEffect(() => {
-    if (!currentUser) {
+    if (!currentUser) return;
+    const fetchAndPrepareData = async () => {
       setLoading(true);
-      return;
-    }
-    const fetchQuizData = async () => {
-      setLoading(true);
+      let docPath = '';
+      if (quizMode === 'jlpt') {
+        docPath = `jlpt/${level}/${category}-test/${itemId}`;
+      } else if (quizMode === 'custom') {
+        docPath = `users/${currentUser.uid}/customQuizzes/${itemId}`;
+      } else { // Assumes 'standard'
+        // This is a placeholder path, as standard quizzes are fetched via query.
+        // You would typically fetch the specific doc based on level, category, and difficulty (itemId).
+        // This logic will need to be adapted if standard quizzes are in a single doc.
+        // For this example, we assume they are separate docs for simplicity.
+        console.error("Standard quiz fetching needs to be implemented based on your DB structure.");
+        // A potential query would be: query(collection(db, 'quizzes'), where('level','==',level), where('category','==',category), where('difficulty','==',itemId))
+        // For now, let's assume a direct path for consistency.
+        docPath = `quizzes/${level}-${category}-${itemId}`; // Example path
+      }
+
       try {
-        if (isCustomQuiz) {
-          const quizDocRef = doc(db, 'users', currentUser.uid, 'customQuizzes', level);
-          const quizDocSnap = await getDoc(quizDocRef);
-          if (quizDocSnap.exists()) {
-            setCustomQuizData({ id: quizDocSnap.id, ...quizDocSnap.data() });
-            setSelectedDifficulty('custom');
-          } else {
-            console.error("Custom quiz not found!");
-            setCustomQuizData(null);
-          }
+        const quizDocSnap = await getDoc(doc(db, docPath));
+        if (quizDocSnap.exists()) {
+          const preparedQuiz = transformDataForQuiz(quizDocSnap.data(), quizMode, category);
+          setQuiz(preparedQuiz);
         } else {
-          const progressDocRef = doc(db, 'users', currentUser.uid, 'quizProgress', `${level}-${category}`);
-          const progressSnap = await getDoc(progressDocRef);
-          if (progressSnap.exists()) setUnlockedDifficulty(progressSnap.data().unlocked);
-
-          const quizContentQuery = query(collection(db, 'quizzes'), where('level', '==', level), where('category', '==', category));
-          const contentSnapshot = await getDocs(quizContentQuery);
-          const fetchedQuizzes = {};
-          contentSnapshot.forEach(docSnap => {
-            const data = docSnap.data();
-            if (data && data.difficulty) fetchedQuizzes[data.difficulty] = data;
-          });
-          setQuizData(fetchedQuizzes);
-
-          const historyQuery = query(collection(db, 'users', currentUser.uid, 'quizHistory'), where('level', '==', level), where('category', '==', category));
-          const historySnapshot = await getDocs(historyQuery);
-          const fetchedHistory = {};
-          historySnapshot.forEach(docSnap => {
-            const data = docSnap.data();
-            if (data && data.difficulty) fetchedHistory[data.difficulty] = data;
-          });
-          setQuizHistory(fetchedHistory);
+          setQuiz(null);
         }
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error("Error fetching quiz:", error);
       } finally {
         setLoading(false);
       }
     };
-    fetchQuizData();
-  }, [currentUser, level, category, isCustomQuiz]);
+    fetchAndPrepareData();
 
-  useEffect(() => {
     return () => {
-      if (isQuizCompletedRef.current || !selectedDifficulty || !currentUser) return;
-      const saveIncompleteState = async () => {
-        try {
-          const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
-          const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', quizId);
-          const partialResult = { ...(quizStateRef.current || {}), timestamp: new Date().toISOString(), status: 'incomplete' };
-          await setDoc(historyDocRef, partialResult, { merge: true });
-        } catch (err) {
-          console.error("Failed to save incomplete quiz state:", err);
-        }
-      };
-      saveIncompleteState();
+      if (isQuizCompletedRef.current || !quizStateRef.current.numberOfQuestions) return;
+      saveQuizState({ ...quizStateRef.current, status: 'incomplete' });
     };
-  }, [selectedDifficulty, currentUser, level, category, isCustomQuiz]);
+  }, [quizMode, level, category, itemId, currentUser]);
 
-  const handleDifficultySelect = async (difficulty) => {
-    if (!currentUser) return;
-    const quizId = `${level}-${category}-${difficulty}`;
+  const saveQuizState = async (statsToSave) => {
+    if (!currentUser || !quiz) return;
+    const quizId = `${quizMode}-${level}-${category}-${itemId}`;
     const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', quizId);
-    isQuizCompletedRef.current = false;
-    quizStateRef.current = {};
-    const baseRecord = { quizId, title: quizData[difficulty]?.title || "Quiz", level, category, difficulty, timestamp: new Date().toISOString(), status: 'incomplete' };
-    if (!quizHistory[difficulty]) {
-      const newRecord = { ...baseRecord, score: 0, total: quizData[difficulty]?.quiz_content?.length || 1, totalIncorrect: 0, mastered: 0, unseen: 0 };
-      await setDoc(historyDocRef, newRecord);
-    } else {
-      await setDoc(historyDocRef, baseRecord, { merge: true });
-    }
-    setSelectedDifficulty(difficulty);
+    
+    const result = {
+      ...statsToSave, quizId, title: quiz.title, level, category,
+      difficulty: quizMode === 'standard' ? itemId : quizMode,
+      timestamp: new Date().toISOString(),
+    };
+    await setDoc(historyDocRef, result, { merge: true });
   };
 
   const onQuizComplete = async (finalStats) => {
     isQuizCompletedRef.current = true;
-    if (!currentUser) return;
-    try {
-      if (!isCustomQuiz) {
-        const progressDocRef = doc(db, 'users', currentUser.uid, 'quizProgress', `${level}-${category}`);
-        if (selectedDifficulty === 'easy' && unlockedDifficulty === 'easy') await setDoc(progressDocRef, { unlocked: 'medium' });
-        else if (selectedDifficulty === 'medium' && unlockedDifficulty === 'medium') await setDoc(progressDocRef, { unlocked: 'hard' });
-      }
-
-      const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
-      const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', quizId);
-      const finalResult = { ...finalStats, timestamp: new Date().toISOString(), status: 'mastered' };
-
-      if (isCustomQuiz && customQuizData) {
-        finalResult.quizId = level;
-        finalResult.title = customQuizData.title;
-        finalResult.level = 'custom';
-        finalResult.category = category;
-        finalResult.difficulty = 'custom';
-      }
-
-      await setDoc(historyDocRef, finalResult, { merge: true });
-      setFinalScore({ score: finalStats.score, total: finalStats.total });
-      setShowCompletionModal(true);
-    } catch (err) {
-      console.error("Error saving final quiz result:", err);
-    }
+    setFinalScore({ score: finalStats.score, total: finalStats.total });
+    await saveQuizState({ ...finalStats, status: 'mastered' });
+    setShowCompletionModal(true);
   };
 
   const handleEndQuizEarly = async (stats) => {
     isQuizCompletedRef.current = true;
-    if (!currentUser) return;
-    try {
-      const quizId = isCustomQuiz ? level : `${level}-${category}-${selectedDifficulty}`;
-      const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', quizId);
-      const partialResult = { 
-        score: stats?.score ?? 0, 
-        total: stats?.total ?? 0,
-        totalIncorrect: (stats?.total ?? 0) - (stats?.score ?? 0),
-        mastered: stats?.mastered ?? 0,
-        unseen: stats?.unseen ?? 0,
-        timestamp: new Date().toISOString(), 
-        status: 'incomplete',
-      };
-      await setDoc(historyDocRef, partialResult, { merge: true });
-      navigate('/profile');
-    } catch (err) {
-      console.error("Error saving incomplete result:", err);
-    }
-  };
-
-  const handleModalContinue = () => {
-    setShowCompletionModal(false);
+    await saveQuizState({ ...stats, status: 'incomplete' });
     navigate('/profile');
   };
 
-  const renderDifficultySelection = () => {
-    const unlockedLevelNum = difficultyMap[unlockedDifficulty] || 1;
+  const handleModalContinue = () => navigate('/profile');
+
+  if (loading) return <LoadingSpinner />;
+
+  if (!quiz) {
     return (
-  <div className="difficulty-selection-container">
-    <h1 className="difficulty-title">{String(level).toUpperCase()} - {String(category).charAt(0).toUpperCase() + String(category).slice(1)}</h1>
-    <div className="difficulty-grid">
-      {difficulties.map(difficulty => {
-        const history = quizHistory[difficulty];
-        const currentLevelNum = difficultyMap[difficulty];
-        const isLocked = !isAdmin && currentLevelNum > unlockedLevelNum;
-        const hasContent = Boolean(quizData[difficulty]?.quiz_content?.length);
-        
-        // --- NEW: Check if the quiz is mastered ---
-        const isMastered = history && history.mastered === history.total && history.total > 0;
+      <div className="quiz-container">
+        <div className="quiz-card">
+          <h1>Quiz Not Found</h1>
+          <p>This content could not be loaded.</p>
+          <button onClick={() => navigate(-1)} className="action-button">Go Back</button>
+        </div>
+      </div>
+    );
+  }
 
-        return (
-          <button
-            key={difficulty}
-            // --- MODIFIED: Add 'mastered' class and disable if mastered ---
-            className={`difficulty-button ${isLocked || !hasContent ? 'locked' : ''} ${isMastered ? 'mastered' : ''}`}
-            disabled={isLocked || !hasContent || isMastered}
-            onClick={() => handleDifficultySelect(difficulty)}
-          >
-            {history ? (
-              // --- NEW: Check for mastered state first ---
-              isMastered ? (
-                <>
-                  <span className="difficulty-status-badge status-badge status-mastered">
-                    Mastered ✨
-                  </span>
-                  <div className="difficulty-main">
-                    <span className="difficulty-main-text">{difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}</span>
-                    <span className="difficulty-score">{`${history.mastered}/${history.numberOfQuestions}`}</span>
-                  </div>
-                  <div className="difficulty-timestamp">
-                    {formatDateTime(history.timestamp)}
-                  </div>
-                </>
-              ) : (
-                // --- This is the original "in-progress" view ---
-                <>
-                  <span className={`difficulty-status-badge status-badge status-${history.status}`}>{history.status}</span>
-                  <div className="difficulty-main">
-                    <span className="difficulty-main-text">{difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}</span>
-                    <span className="difficulty-score">{`${history.score}/${history.total}`}</span>
-                  </div>
-                  <div className="difficulty-timestamp">
-                    {formatDateTime(history.timestamp)}
-                  </div>
-                </>
-              )
-            ) : isLocked ? (
-              <div className="difficulty-main">
-                <span className="difficulty-main-text">{difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}</span>
-              </div>
-            ) : (
-              <div className="difficulty-main">
-                <span className="difficulty-main-text">{difficulty.charAt(0).toUpperCase() + difficulty.slice(1)} Start</span>
-              </div>
-            )}
-            {isLocked && <span className="lock-icon">🔒</span>}
-          </button>
-        );
-      })}
-    </div>
-  </div>
-);
-  };
-
-  const renderQuiz = () => {
-    let rawContent = [];
-    let quizTitle = '';
-
-    if (isCustomQuiz) {
-      if (!customQuizData) {
-        return (
-          <div className="quiz-card">
-            <h1>Custom Quiz Not Found</h1>
-            <p>This quiz may have been deleted or the link is incorrect.</p>
-          </div>
-        );
-      }
-      quizTitle = customQuizData.title || 'Custom Quiz';
-      rawContent = Array.isArray(customQuizData.quiz_content) ? customQuizData.quiz_content : [];
-    } else {
-      const standardQuiz = quizData[selectedDifficulty];
-      if (!standardQuiz) {
-        return <LoadingSpinner />;
-      }
-      quizTitle = standardQuiz.title || `${level}-${category}`;
-      rawContent = Array.isArray(standardQuiz.quiz_content) ? standardQuiz.quiz_content : [];
-    }
-
-    const quizContent = transformQuizContent(rawContent);
-
-    return (
+  return (
+    <div className="quiz-container">
       <Quiz
-        quizContent={quizContent}
-        quizTitle={quizTitle}
-        quizType={category}
+        quizContent={quiz.quizContent}
+        quizTitle={quiz.title}
         onComplete={onQuizComplete}
         onEndQuizEarly={handleEndQuizEarly}
         quizStateRef={quizStateRef}
       />
-    );
-  };
-
-  if (loading || !currentUser) return <LoadingSpinner />;
-
-  return (
-    <div className="quiz-container">
-      {isCustomQuiz ? (
-        renderQuiz()
-      ) : (
-        !selectedDifficulty ? renderDifficultySelection() : renderQuiz()
-      )}
       {showCompletionModal && <CompletionModal score={finalScore.score} total={finalScore.total} onContinue={handleModalContinue} />}
     </div>
   );

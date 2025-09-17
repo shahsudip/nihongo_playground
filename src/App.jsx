@@ -35,8 +35,8 @@ export default function App() {
             path="/levels"
             element={<ProtectedRoute><LevelSelectionPage /></ProtectedRoute>}
           />
-          <Route
-            path="/quiz/:level/:category"
+          <Route 
+            path="/quiz/:quizMode/:level/:category/:itemId" 
             element={<ProtectedRoute><QuizPage /></ProtectedRoute>}
           />
           <Route
