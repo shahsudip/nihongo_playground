@@ -32,80 +32,145 @@ async function scrapeTestPage(page, url, category) {
 
       if (currentCategory === 'reading') {
         let currentPassage = null;
+        let currentQuestionInPassage = null;
+
+        const commitCurrentQuestionInPassage = () => {
+          if (currentQuestionInPassage && currentPassage) {
+            currentQuestionInPassage.questionText = currentQuestionInPassage.questionText.replace(/^\d+\.\s*/, '').trim();
+            if (currentQuestionInPassage.questionText || currentQuestionInPassage.options.length > 0) {
+              delete currentQuestionInPassage.inputName;
+              currentPassage.questions.push(currentQuestionInPassage);
+            }
+            currentQuestionInPassage = null;
+          }
+        };
+
         content.childNodes.forEach(node => {
           if (node.nodeType !== Node.ELEMENT_NODE) return;
           const el = node;
           const strongText = el.querySelector('strong')?.innerText?.trim() || '';
 
           if (el.tagName === 'P' && strongText.startsWith('Reading Passage')) {
+            commitCurrentQuestionInPassage();
             if (currentPassage) passages.push(currentPassage);
             currentPassage = { passageTitle: strongText, passageImage: '', passageText: '', questions: [] };
             expectedQuestionNumber = 1;
             return;
           }
+
           if (currentPassage) {
-            if (el.tagName === 'FIGURE') {
-              currentPassage.passageImage = el.querySelector('img')?.src || '';
-            } else if (el.tagName === 'P' && el.querySelector('input[type="radio"]')) {
+            const hasRadio = el.tagName === 'P' && el.querySelector('input[type="radio"]');
+
+            if (hasRadio) {
+              const inputName = el.querySelector('input[type="radio"]').getAttribute('name');
               const innerHTML = el.innerHTML;
               const parts = innerHTML.split('<br>').map(part => {
                 const tempEl = document.createElement('div');
                 tempEl.innerHTML = part;
-                const inputs = tempEl.querySelectorAll('input');
-                inputs.forEach(input => input.remove());
+                tempEl.querySelectorAll('input').forEach(input => input.remove());
                 return tempEl.textContent.trim();
               }).filter(Boolean);
-              let questionText = parts[0] || '';
-              const options = parts.slice(1).filter(Boolean);
-              let questionNumber = parseInt(questionText.match(/^(\d+)\./)?.[1], 10);
-              if (!questionNumber) {
-                const inputName = el.querySelector('input[type="radio"]')?.getAttribute('name');
-                questionNumber = inputName && inputName.match(/quest(\d+)/i)
-                  ? parseInt(inputName.match(/quest(\d+)/i)[1], 10) + 1
-                  : expectedQuestionNumber;
-              }
-              questionText = questionText.replace(/^\d+\.\s*/, '').trim();
-              if (questionText) {
-                currentPassage.questions.push({ questionNumber, questionText, options, correctOption: null, vocabulary: [] });
+
+              if (parts.length === 0) return;
+
+              const potentialQuestionText = parts[0] || '';
+              const startsWithNumber = /^\d+\./.test(potentialQuestionText);
+              const isContinuation = currentQuestionInPassage && currentQuestionInPassage.inputName === inputName && !startsWithNumber;
+
+              if (isContinuation) {
+                currentQuestionInPassage.options.push(...parts);
+              } else {
+                commitCurrentQuestionInPassage();
+                let questionNumber = parseInt(potentialQuestionText.match(/^(\d+)\./)?.[1], 10);
+                if (!questionNumber) {
+                  const inputNameMatch = inputName && inputName.match(/quest(\d+)/i);
+                  questionNumber = inputNameMatch ? parseInt(inputNameMatch[1], 10) + 1 : expectedQuestionNumber;
+                }
+                currentQuestionInPassage = {
+                  questionNumber,
+                  questionText: potentialQuestionText,
+                  options: parts.slice(1),
+                  correctOption: null,
+                  inputName: inputName,
+                  vocabulary: []
+                };
                 expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
               }
-            } else if (el.tagName === 'P' && el.innerText.trim() && !el.querySelector('input[type="radio"]')) {
-              currentPassage.passageText += el.innerText.trim() + '\n';
+            } else {
+              commitCurrentQuestionInPassage();
+              if (el.tagName === 'FIGURE') {
+                currentPassage.passageImage = el.querySelector('img')?.src || '';
+              } else if (el.tagName === 'P' && el.innerText.trim()) {
+                currentPassage.passageText += el.innerText.trim() + '\n';
+              }
             }
           }
         });
+        commitCurrentQuestionInPassage();
         if (currentPassage) passages.push(currentPassage);
       } else {
+        let currentQuestion = null;
+        const commitCurrentQuestion = () => {
+          if (currentQuestion) {
+            currentQuestion.questionText = currentQuestion.questionText.replace(/^\d+\.\s*/, '').trim();
+            if (currentQuestion.questionText || currentQuestion.options.length > 0) {
+              delete currentQuestion.inputName;
+              questions.push(currentQuestion);
+            }
+            currentQuestion = null;
+          }
+        };
+
         allParagraphs.forEach(p => {
           const strongText = p.querySelector('strong')?.innerText?.trim() || '';
-          if (strongText.includes('Answer Key')) parsingMode = 'answers';
-          else if (strongText.includes('New words')) parsingMode = 'vocab';
+          if (strongText.includes('Answer Key') || strongText.includes('New words')) {
+            commitCurrentQuestion();
+            parsingMode = strongText.includes('Answer Key') ? 'answers' : 'vocab';
+            return;
+          }
+          if (parsingMode !== 'questions') return;
 
-          if (parsingMode === 'questions' && p.querySelector('input[type="radio"]')) {
+          const hasRadio = p.querySelector('input[type="radio"]');
+          if (hasRadio) {
+            const inputName = hasRadio.getAttribute('name');
             const innerHTML = p.innerHTML;
             const parts = innerHTML.split('<br>').map(part => {
               const tempEl = document.createElement('div');
               tempEl.innerHTML = part;
-              const inputs = tempEl.querySelectorAll('input');
-              inputs.forEach(input => input.remove());
+              tempEl.querySelectorAll('input').forEach(input => input.remove());
               return tempEl.textContent.trim();
             }).filter(Boolean);
-            let questionText = parts[0] || '';
-            const options = parts.slice(1).filter(Boolean);
-            let questionNumber = parseInt(questionText.match(/^(\d+)\./)?.[1], 10);
-            if (!questionNumber) {
-              const inputName = p.querySelector('input[type="radio"]')?.getAttribute('name');
-              questionNumber = inputName && inputName.match(/quest(\d+)/i)
-                ? parseInt(inputName.match(/quest(\d+)/i)[1], 10) + 1
-                : expectedQuestionNumber;
-            }
-            questionText = questionText.replace(/^\d+\.\s*/, '').trim();
-            if (questionText) {
-              questions.push({ questionNumber, questionText, options, correctOption: null });
+
+            if (parts.length === 0) return;
+
+            const potentialQuestionText = parts[0] || '';
+            const startsWithNumber = /^\d+\./.test(potentialQuestionText);
+            const isContinuation = currentQuestion && currentQuestion.inputName === inputName && !startsWithNumber;
+
+            if (isContinuation) {
+              currentQuestion.options.push(...parts);
+            } else {
+              commitCurrentQuestion();
+              let questionNumber = parseInt(potentialQuestionText.match(/^(\d+)\./)?.[1], 10);
+              if (!questionNumber) {
+                questionNumber = inputName && inputName.match(/quest(\d+)/i)
+                  ? parseInt(inputName.match(/quest(\d+)/i)[1], 10) + 1
+                  : expectedQuestionNumber;
+              }
+              currentQuestion = {
+                questionNumber,
+                questionText: potentialQuestionText,
+                options: parts.slice(1),
+                correctOption: null,
+                inputName: inputName
+              };
               expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
             }
+          } else {
+            commitCurrentQuestion();
           }
         });
+        commitCurrentQuestion();
       }
 
       allParagraphs.forEach(p => {
@@ -146,7 +211,7 @@ async function scrapeTestPage(page, url, category) {
               q.correctOption = { index: correctIndex, text: q.options[correctIndex] || '' };
             }
           }
-          return q.questionText && q.options.length > 0;
+          return q.questionText || q.options.length > 0;
         });
         if (questions.length === 0) return null;
         return { title, sourceUrl: window.location.href, questions };
