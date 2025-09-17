@@ -33,16 +33,14 @@ async function scrapeTestPage(page, url, category) {
       if (currentCategory === 'reading') {
         let currentPassage = null;
         let currentQuestionInPassage = null;
-        let readingContentMode = 'passage'; // Can be 'passage' or 'vocab'
+        let readingContentMode = 'passage'; // Can be 'passage', 'vocab', or 'answers'
 
         const commitCurrentQuestionInPassage = () => {
           if (currentQuestionInPassage && currentPassage) {
-            // Clean question text of number prefixes and 「しつもん」
             currentQuestionInPassage.questionText = currentQuestionInPassage.questionText
               .replace(/^\d+\.\s*/, '')
               .replace(/「しつもん」/g, '')
               .trim();
-
             if (currentQuestionInPassage.questionText || currentQuestionInPassage.options.length > 0) {
               delete currentQuestionInPassage.inputName;
               currentPassage.questions.push(currentQuestionInPassage);
@@ -65,9 +63,9 @@ async function scrapeTestPage(page, url, category) {
             readingContentMode = 'passage';
             return;
           }
-          if (el.tagName === 'P' && strongText.includes('New words')) {
+          if (el.tagName === 'P' && (strongText.includes('New words') || strongText.includes('Answer Key'))) {
             commitCurrentQuestionInPassage();
-            readingContentMode = 'vocab';
+            readingContentMode = strongText.includes('New words') ? 'vocab' : 'answers';
             return;
           }
 
@@ -120,8 +118,7 @@ async function scrapeTestPage(page, url, category) {
                   questionText: potentialQuestionText,
                   options: parts.slice(1),
                   correctOption: null,
-                  inputName: inputName,
-                  vocabulary: []
+                  inputName: inputName
                 };
                 expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
               }
@@ -141,12 +138,10 @@ async function scrapeTestPage(page, url, category) {
         let currentQuestion = null;
         const commitCurrentQuestion = () => {
           if (currentQuestion) {
-            // Clean question text of number prefixes and 「しつもん」
             currentQuestion.questionText = currentQuestion.questionText
               .replace(/^\d+\.\s*/, '')
               .replace(/「しつもん」/g, '')
               .trim();
-
             if (currentQuestion.questionText || currentQuestion.options.length > 0) {
               delete currentQuestion.inputName;
               questions.push(currentQuestion);
