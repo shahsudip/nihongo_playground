@@ -6,14 +6,15 @@ puppeteer.use(StealthPlugin());
 
 console.log('JLPT Quiz Scraper started with Stealth Mode.');
 
+// Ensure your FIREBASE_SERVICE_ACCOUNT environment variable is set correctly
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-const LEVELS = ['n5'];
+const LEVELS = ['n5', 'n4'];
 const TEST_CATEGORIES = ['grammar', 'vocabulary', 'kanji', 'reading'];
 const BASE_URL = 'https://japanesetest4you.com/';
 
 initializeApp({ credential: cert(serviceAccount) });
 const db = getFirestore();
-console.log('Firestore initialized successfully. RUNNING IN LOG-ONLY MODE.');
+console.log('Firestore initialized successfully. Database writes are enabled.');
 
 async function scrapeTestPage(page, url, category) {
   try {
@@ -281,20 +282,27 @@ async function scrapeAllTests(browser) {
 
   for (const level of LEVELS) {
     for (const category of TEST_CATEGORIES) {
-      // ADDED DEBUG LOG:
-      console.log(`\n[DEBUG] Starting main loop for category: "${category}"`);
       let exerciseNum = 1, consecutiveFailures = 0;
       const collectionName = `${category}-test`;
-      console.log(`--- Scraping Level: ${level.toUpperCase()}, Category: ${collectionName} ---`);
+      console.log(`\n--- Scraping Level: ${level.toUpperCase()}, Category: ${collectionName} ---`);
       while (consecutiveFailures < 3) {
         const docId = `exercise-${exerciseNum}`;
         const docRef = db.collection('jlpt').doc(level).collection(collectionName).doc(docId);
+
+        // Check if document already exists
+        const docSnapshot = await docRef.get();
+        if (docSnapshot.exists) {
+          console.log(`- Document ${docRef.path} already exists. Skipping.`);
+          exerciseNum++;
+          consecutiveFailures = 0; // Reset failures as this isn't an error
+          continue;
+        }
 
         const urlStrings = [
           `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${exerciseNum}/`,
           `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${String(exerciseNum).padStart(2, '0')}/`
         ];
-        const urlFormats = [...new Set(urlStrings)];
+        const urlFormats = [...new Set(urlStrings)]; // Remove duplicate URLs
 
         let quizData = null;
         const page = await browser.newPage();
@@ -309,9 +317,12 @@ async function scrapeAllTests(browser) {
 
         if (quizData) {
           consecutiveFailures = 0;
-          console.log(`\n--- WOULD SAVE TO: ${docRef.path} ---`);
-          console.log(JSON.stringify(quizData, null, 2));
-          console.log(`--- END OF DATA ---`);
+          try {
+            await docRef.set(quizData);
+            console.log(`✅ Successfully saved data to ${docRef.path}`);
+          } catch (error) {
+            console.error(`🔥 Failed to save data to ${docRef.path}:`, error);
+          }
         } else {
           consecutiveFailures++;
           const currentUrl = triedUrls.join(' OR ');
@@ -343,6 +354,14 @@ async function scrapeVocabularyLists(browser) {
     const collectionName = 'vocabulary_list';
     const docId = 'full-list';
     const docRef = db.collection('jlpt').doc(level).collection(collectionName).doc(docId);
+
+    // Check if document already exists
+    const docSnapshot = await docRef.get();
+    if (docSnapshot.exists) {
+      console.log(`- Vocabulary list ${docRef.path} already exists. Skipping.`);
+      continue;
+    }
+
     const url = `${BASE_URL}jlpt-${level}-vocabulary-list/`;
     const page = await browser.newPage();
     console.log(`Attempting to scrape: ${url}`);
@@ -372,9 +391,12 @@ async function scrapeVocabularyLists(browser) {
       });
       if (vocabList.length > 0) {
         const dataToSave = { title: `JLPT ${level.toUpperCase()} Vocabulary List`, words: vocabList };
-        console.log(`\n--- WOULD SAVE TO: ${docRef.path} ---`);
-        console.log(JSON.stringify(dataToSave, null, 2));
-        console.log(`--- END OF DATA ---`);
+        try {
+          await docRef.set(dataToSave);
+          console.log(`✅ Successfully saved vocabulary list to ${docRef.path}`);
+        } catch (error) {
+          console.error(`🔥 Failed to save data to ${docRef.path}:`, error);
+        }
       } else {
         console.log(`- No vocabulary data found for ${level}.`);
       }
@@ -393,7 +415,6 @@ async function scrapeGrammarDetailPage(page, url) {
     return await page.evaluate(() => {
       const content = document.querySelector('div.entry.clearfix');
       if (!content) return null;
-
       const title = content.querySelector('h1.page-title')?.innerText.trim() || document.title.split('|')[0].trim();
       const childNodes = Array.from(content.childNodes);
 
@@ -491,14 +512,24 @@ async function scrapeGrammarLists(browser) {
       const slug = link.url.split('/').filter(Boolean).pop();
       const docRef = db.collection('jlpt').doc(level).collection(collectionName).doc(slug);
 
+      // Check if document already exists
+      const docSnapshot = await docRef.get();
+      if (docSnapshot.exists) {
+        console.log(`- Grammar point ${docRef.path} already exists. Skipping.`);
+        continue;
+      }
+
       const detailPage = await browser.newPage();
       console.log(`Scraping detail: ${link.title}`);
       const grammarData = await scrapeGrammarDetailPage(detailPage, link.url);
 
       if (grammarData && grammarData.examples.length > 0) {
-        console.log(`\n--- WOULD SAVE TO: ${docRef.path} ---`);
-        console.log(JSON.stringify(grammarData, null, 2));
-        console.log(`--- END OF DATA ---`);
+        try {
+          await docRef.set(grammarData);
+          console.log(`✅ Successfully saved grammar point to ${docRef.path}`);
+        } catch (error) {
+          console.error(`🔥 Failed to save data to ${docRef.path}:`, error);
+        }
       } else {
         console.log(`- No valid data or examples found for ${slug}.`);
       }
