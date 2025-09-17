@@ -26,101 +26,91 @@ async function scrapeTestPage(page, url, category) {
   try {
     await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
 
-    if (category === 'reading') {
-      return await page.evaluate(() => {
-        const content = document.querySelector('div.entry.clearfix');
-        if (!content) return null;
-        const title = document.title.split('|')[0].trim();
-        const passages = [];
+    return await page.evaluate((currentCategory) => {
+      const content = document.querySelector('div.entry.clearfix');
+      if (!content) return null;
+      const title = document.title.split('|')[0].trim();
+      let passages = [], questions = [], answers = {}, vocabulary = [];
+      let parsingMode = 'questions';
+      let expectedQuestionNumber = 1;
+
+      // Parse all paragraphs first to collect questions and vocabulary
+      const allParagraphs = Array.from(content.querySelectorAll('p'));
+
+      if (currentCategory === 'reading') {
         let currentPassage = null;
         content.childNodes.forEach(node => {
-          if (node.nodeType === Node.ELEMENT_NODE) {
-            const el = node;
-            const strongText = el.querySelector('strong')?.innerText || '';
-            if (el.tagName === 'P' && strongText.startsWith('Reading Passage')) {
-              if (currentPassage) passages.push(currentPassage);
-              currentPassage = { passageTitle: strongText.trim(), passageImage: '', passageText: '', questions: [] };
-              return;
-            }
-            if (currentPassage) {
-              if (el.tagName === 'FIGURE') {
-                currentPassage.passageImage = el.querySelector('img')?.src || '';
-              } else if (el.tagName === 'P' && el.querySelector('input[type="radio"]')) {
-                const innerHTML = el.innerHTML;
-                const parts = innerHTML.split('<br>').map(part => {
-                  const tempEl = document.createElement('div');
-                  tempEl.innerHTML = part;
-                  return tempEl.textContent.trim();
-                });
-                const questionText = parts[0] || '';
-                const options = parts.slice(1).filter(Boolean);
-                const questionNumber = parseInt(questionText.match(/^(\d+)/)?.[1] || '0', 10);
-                currentPassage.questions.push({ questionNumber, questionText, options, correctOption: null });
-              } else if (el.tagName === 'P' && el.innerText.trim()) {
-                if (!el.querySelector('input[type="radio"]')) {
-                  currentPassage.passageText += el.innerText.trim() + '\n';
-                }
+          if (node.nodeType !== Node.ELEMENT_NODE) return;
+          const el = node;
+          const strongText = el.querySelector('strong')?.innerText?.trim() || '';
+          if (el.tagName === 'P' && strongText.startsWith('Reading Passage')) {
+            if (currentPassage) passages.push(currentPassage);
+            currentPassage = { passageTitle: strongText, passageImage: '', passageText: '', questions: [] };
+            expectedQuestionNumber = 1; // Reset for each passage
+            return;
+          }
+          if (currentPassage) {
+            if (el.tagName === 'FIGURE') {
+              currentPassage.passageImage = el.querySelector('img')?.src || '';
+            } else if (el.tagName === 'P' && el.querySelector('input[type="radio"]')) {
+              const innerHTML = el.innerHTML;
+              const parts = innerHTML.split('<br>').map(part => {
+                const tempEl = document.createElement('div');
+                tempEl.innerHTML = part;
+                const inputs = tempEl.querySelectorAll('input');
+                inputs.forEach(input => input.remove());
+                return tempEl.textContent.trim();
+              }).filter(Boolean);
+              let questionText = parts[0] || '';
+              const options = parts.slice(1).filter(Boolean);
+              let questionNumber = parseInt(questionText.match(/^(\d+)\./)?.[1], 10);
+              if (!questionNumber) {
+                const inputName = el.querySelector('input[type="radio"]')?.getAttribute('name');
+                questionNumber = inputName && inputName.match(/quest(\d+)/i)
+                  ? parseInt(inputName.match(/quest(\d+)/i)[1], 10) + 1
+                  : expectedQuestionNumber;
               }
+              questionText = questionText.replace(/^\d+\.\s*/, '').trim();
+              if (questionText) {
+                currentPassage.questions.push({ questionNumber, questionText, options, correctOption: null });
+                expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
+              }
+            } else if (el.tagName === 'P' && el.innerText.trim() && !el.querySelector('input[type="radio"]')) {
+              currentPassage.passageText += el.innerText.trim() + '\n';
             }
           }
         });
         if (currentPassage) passages.push(currentPassage);
-        const answers = {};
-        const allParagraphs = Array.from(content.querySelectorAll('p'));
-        let isAnswerKeySection = false;
-        for (const p of allParagraphs) {
-          const strongText = p.querySelector('strong')?.innerText || '';
-          if (strongText.includes('Answer Key')) isAnswerKeySection = true;
-          if (isAnswerKeySection) {
-            const text = p.innerText;
-            const match = text.match(/Question\s*(\d+):\s*(\d+)/);
-            if (match) answers[parseInt(match[1])] = parseInt(match[2]) - 1;
-          }
-        }
-        passages.forEach(passage => {
-          passage.passageText = passage.passageText.trim();
-          passage.questions.forEach(q => {
-            if (answers[q.questionNumber] !== undefined) {
-              const correctIndex = answers[q.questionNumber];
-              q.correctOption = {
-                index: correctIndex,
-                text: q.options[correctIndex] || ''
-              };
-            }
-          });
-        });
-        if (passages.length === 0) return null;
-        return { title, sourceUrl: window.location.href, passages };
-      });
-    } else {
-      return await page.evaluate((currentCategory) => {
-        const mainContent = document.querySelector('div.entry.clearfix');
-        if (!mainContent) return null;
-        const title = document.title.split('|')[0].trim();
-        const allParagraphs = Array.from(mainContent.querySelectorAll('p'));
-        let questions = [], answers = {}, vocabulary = [];
-        let parsingMode = 'questions';
+      } else {
         allParagraphs.forEach(p => {
-          const strongText = p.querySelector('strong')?.innerText || '';
+          const strongText = p.querySelector('strong')?.innerText?.trim() || '';
           if (strongText.includes('Answer Key')) parsingMode = 'answers';
           else if (strongText.includes('New words')) parsingMode = 'vocab';
           if (parsingMode === 'questions' && p.querySelector('input[type="radio"]')) {
-            const parts = p.innerHTML.split('<br>');
-            const questionText = parts[0].trim();
-            const options = parts.slice(1).map(part => {
+            const innerHTML = p.innerHTML;
+            const parts = innerHTML.split('<br>').map(part => {
               const tempEl = document.createElement('div');
               tempEl.innerHTML = part;
+              const inputs = tempEl.querySelectorAll('input');
+              inputs.forEach(input => input.remove());
               return tempEl.textContent.trim();
             }).filter(Boolean);
-            if (questionText && options.length > 0) {
-              const questionNumber = parseInt(questionText.match(/^(\d+)/)?.[1] || '0', 10) || (questions.length + 1);
-              questions.push({ questionNumber, questionText, options, correctOption: null });
+            let questionText = parts[0] || '';
+            const options = parts.slice(1).filter(Boolean);
+            let questionNumber = parseInt(questionText.match(/^(\d+)\./)?.[1], 10);
+            if (!questionNumber) {
+              const inputName = p.querySelector('input[type="radio"]')?.getAttribute('name');
+              questionNumber = inputName && inputName.match(/quest(\d+)/i)
+                ? parseInt(inputName.match(/quest(\d+)/i)[1], 10) + 1
+                : expectedQuestionNumber;
             }
-          } else if (parsingMode === 'answers') {
-            const match = p.innerText.match(/Question\s*(\d+):\s*(\d+)/);
-            if (match) answers[parseInt(match[1])] = parseInt(match[2]) - 1;
+            questionText = questionText.replace(/^\d+\.\s*/, '').trim();
+            if (questionText) {
+              questions.push({ questionNumber, questionText, options, correctOption: null });
+              expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
+            }
           } else if (parsingMode === 'vocab') {
-            const text = p.innerText;
+            const text = p.innerText.trim();
             if (text.includes(':')) {
               const [term, english] = text.split(/:(.*)/s);
               const termMatch = term.match(/(.*) \((.*)\)/);
@@ -128,19 +118,60 @@ async function scrapeTestPage(page, url, category) {
             }
           }
         });
-        questions.forEach(q => {
+      }
+
+      // Parse answer key
+      parsingMode = 'initial';
+      allParagraphs.forEach(p => {
+        const strongText = p.querySelector('strong')?.innerText?.trim() || '';
+        if (strongText.includes('Answer Key')) parsingMode = 'answers';
+        if (parsingMode === 'answers') {
+          const text = p.innerText.trim();
+          const match = text.match(/Question\s*(\d+):\s*(\d+)/i);
+          if (match) {
+            const questionNum = parseInt(match[1], 10);
+            const answerIndex = parseInt(match[2], 10) - 1;
+            answers[questionNum] = answerIndex;
+          }
+        }
+      });
+
+      // Map answers to questions
+      if (currentCategory === 'reading') {
+        passages.forEach(passage => {
+          passage.passageText = passage.passageText.trim();
+          passage.questions = passage.questions.filter(q => {
+            if (answers[q.questionNumber] !== undefined) {
+              const correctIndex = answers[q.questionNumber];
+              if (correctIndex >= 0 && correctIndex < q.options.length) {
+                q.correctOption = {
+                  index: correctIndex,
+                  text: q.options[correctIndex] || ''
+                };
+              }
+            }
+            return q.questionText && q.options.length > 0;
+          });
+        });
+        if (passages.every(p => p.questions.length === 0)) return null;
+        return { title, sourceUrl: window.location.href, passages };
+      } else {
+        questions = questions.filter(q => {
           if (answers[q.questionNumber] !== undefined) {
             const correctIndex = answers[q.questionNumber];
-            q.correctOption = {
-              index: correctIndex,
-              text: q.options[correctIndex] || ''
-            };
+            if (correctIndex >= 0 && correctIndex < q.options.length) {
+              q.correctOption = {
+                index: correctIndex,
+                text: q.options[correctIndex] || ''
+              };
+            }
           }
+          return q.questionText && q.options.length > 0;
         });
         if (questions.length === 0) return null;
         return { title, sourceUrl: window.location.href, questions, vocabulary };
-      }, category);
-    }
+      }
+    }, category);
   } catch (error) {
     console.error(`Error processing URL ${url}:`, error.message);
     return null;
@@ -373,10 +404,9 @@ async function scrapeGrammarLists(browser) {
     try {
       console.log(`Fetching links from: ${listUrl}`);
       await page.goto(listUrl, { waitUntil: 'networkidle0' });
-      // CORRECTED: The links are in <p> tags, not <ul>
       detailLinks = await page.evaluate(() =>
         Array.from(document.querySelectorAll('div.entry.clearfix p a'))
-          .filter(a => a.href.includes('/flashcard/')) // Filter only for flashcard links
+          .filter(a => a.href.includes('/flashcard/'))
           .map(a => ({ url: a.href, title: a.innerText }))
       );
       console.log(`Found ${detailLinks.length} grammar points for ${level.toUpperCase()}.`);
