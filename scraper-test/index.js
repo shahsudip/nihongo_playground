@@ -7,7 +7,7 @@ puppeteer.use(StealthPlugin());
 console.log('JLPT Quiz Scraper started with Stealth Mode.');
 
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-const LEVELS = ['n5', 'n4'];
+const LEVELS = ['n5'];
 const TEST_CATEGORIES = ['grammar', 'vocabulary', 'kanji', 'reading'];
 const BASE_URL = 'https://japanesetest4you.com/';
 
@@ -23,7 +23,7 @@ async function scrapeTestPage(page, url, category) {
       const content = document.querySelector('div.entry.clearfix');
       if (!content) return null;
       const title = document.title.split('|')[0].trim();
-      let passages = [], questions = [], answers = {};
+      let passages = [], questions = [], answers = {}, vocab = [];
 
       let parsingMode = 'questions';
       let expectedQuestionNumber = 1;
@@ -33,10 +33,16 @@ async function scrapeTestPage(page, url, category) {
       if (currentCategory === 'reading') {
         let currentPassage = null;
         let currentQuestionInPassage = null;
+        let readingContentMode = 'passage'; // Can be 'passage' or 'vocab'
 
         const commitCurrentQuestionInPassage = () => {
           if (currentQuestionInPassage && currentPassage) {
-            currentQuestionInPassage.questionText = currentQuestionInPassage.questionText.replace(/^\d+\.\s*/, '').trim();
+            // Clean question text of number prefixes and 「しつもん」
+            currentQuestionInPassage.questionText = currentQuestionInPassage.questionText
+              .replace(/^\d+\.\s*/, '')
+              .replace(/「しつもん」/g, '')
+              .trim();
+
             if (currentQuestionInPassage.questionText || currentQuestionInPassage.options.length > 0) {
               delete currentQuestionInPassage.inputName;
               currentPassage.questions.push(currentQuestionInPassage);
@@ -50,17 +56,43 @@ async function scrapeTestPage(page, url, category) {
           const el = node;
           const strongText = el.querySelector('strong')?.innerText?.trim() || '';
 
+          // --- Mode Switchers ---
           if (el.tagName === 'P' && strongText.startsWith('Reading Passage')) {
             commitCurrentQuestionInPassage();
             if (currentPassage) passages.push(currentPassage);
             currentPassage = { passageTitle: strongText, passageImage: '', passageText: '', questions: [] };
             expectedQuestionNumber = 1;
+            readingContentMode = 'passage';
+            return;
+          }
+          if (el.tagName === 'P' && strongText.includes('New words')) {
+            commitCurrentQuestionInPassage();
+            readingContentMode = 'vocab';
             return;
           }
 
-          if (currentPassage) {
+          // --- Content Processing based on Mode ---
+          if (readingContentMode === 'vocab' && el.tagName === 'P') {
+            const text = el.innerText.trim();
+            if (text.includes(':')) {
+              const parts = text.split(/:(.*)/s);
+              if (parts.length < 2) return;
+              const japaneseAndRomaji = parts[0].trim();
+              const english = parts[1].trim();
+              let japanese = '', romaji = '';
+              const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
+              if (romajiMatch) {
+                romaji = romajiMatch[1].trim();
+                japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
+              } else {
+                japanese = japaneseAndRomaji;
+              }
+              if (japanese && english) {
+                vocab.push({ japanese, romaji, english });
+              }
+            }
+          } else if (readingContentMode === 'passage' && currentPassage) {
             const hasRadio = el.tagName === 'P' && el.querySelector('input[type="radio"]');
-
             if (hasRadio) {
               const inputName = el.querySelector('input[type="radio"]').getAttribute('name');
               const innerHTML = el.innerHTML;
@@ -70,13 +102,10 @@ async function scrapeTestPage(page, url, category) {
                 tempEl.querySelectorAll('input').forEach(input => input.remove());
                 return tempEl.textContent.trim();
               }).filter(Boolean);
-
               if (parts.length === 0) return;
-
               const potentialQuestionText = parts[0] || '';
               const startsWithNumber = /^\d+\./.test(potentialQuestionText);
               const isContinuation = currentQuestionInPassage && currentQuestionInPassage.inputName === inputName && !startsWithNumber;
-
               if (isContinuation) {
                 currentQuestionInPassage.options.push(...parts);
               } else {
@@ -112,7 +141,12 @@ async function scrapeTestPage(page, url, category) {
         let currentQuestion = null;
         const commitCurrentQuestion = () => {
           if (currentQuestion) {
-            currentQuestion.questionText = currentQuestion.questionText.replace(/^\d+\.\s*/, '').trim();
+            // Clean question text of number prefixes and 「しつもん」
+            currentQuestion.questionText = currentQuestion.questionText
+              .replace(/^\d+\.\s*/, '')
+              .replace(/「しつもん」/g, '')
+              .trim();
+
             if (currentQuestion.questionText || currentQuestion.options.length > 0) {
               delete currentQuestion.inputName;
               questions.push(currentQuestion);
@@ -128,6 +162,29 @@ async function scrapeTestPage(page, url, category) {
             parsingMode = strongText.includes('Answer Key') ? 'answers' : 'vocab';
             return;
           }
+
+          if (parsingMode === 'vocab') {
+            const text = p.innerText.trim();
+            if (text.includes(':')) {
+              const parts = text.split(/:(.*)/s);
+              if (parts.length < 2) return;
+              const japaneseAndRomaji = parts[0].trim();
+              const english = parts[1].trim();
+              let japanese = '', romaji = '';
+              const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
+              if (romajiMatch) {
+                romaji = romajiMatch[1].trim();
+                japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
+              } else {
+                japanese = japaneseAndRomaji;
+              }
+              if (japanese && english) {
+                vocab.push({ japanese, romaji, english });
+              }
+            }
+            return;
+          }
+
           if (parsingMode !== 'questions') return;
 
           const hasRadio = p.querySelector('input[type="radio"]');
@@ -140,13 +197,10 @@ async function scrapeTestPage(page, url, category) {
               tempEl.querySelectorAll('input').forEach(input => input.remove());
               return tempEl.textContent.trim();
             }).filter(Boolean);
-
             if (parts.length === 0) return;
-
             const potentialQuestionText = parts[0] || '';
             const startsWithNumber = /^\d+\./.test(potentialQuestionText);
             const isContinuation = currentQuestion && currentQuestion.inputName === inputName && !startsWithNumber;
-
             if (isContinuation) {
               currentQuestion.options.push(...parts);
             } else {
@@ -176,7 +230,6 @@ async function scrapeTestPage(page, url, category) {
       allParagraphs.forEach(p => {
         const strongText = p.querySelector('strong')?.innerText?.trim() || '';
         if (strongText.includes('Answer Key')) parsingMode = 'answers';
-
         if (parsingMode === 'answers') {
           const text = p.innerText.trim();
           const regex = /Question\s*(\d+):\s*(\d+)/gi;
@@ -202,7 +255,9 @@ async function scrapeTestPage(page, url, category) {
           });
         });
         if (passages.every(p => p.questions.length === 0)) return null;
-        return { title, sourceUrl: window.location.href, passages };
+        const result = { title, sourceUrl: window.location.href, passages };
+        if (vocab.length > 0) result.vocab = vocab;
+        return result;
       } else {
         questions = questions.filter(q => {
           if (answers[q.questionNumber] !== undefined) {
@@ -214,7 +269,9 @@ async function scrapeTestPage(page, url, category) {
           return q.questionText || q.options.length > 0;
         });
         if (questions.length === 0) return null;
-        return { title, sourceUrl: window.location.href, questions };
+        const result = { title, sourceUrl: window.location.href, questions };
+        if (vocab.length > 0) result.vocab = vocab;
+        return result;
       }
     }, category);
   } catch (error) {
