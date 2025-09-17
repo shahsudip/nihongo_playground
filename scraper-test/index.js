@@ -281,17 +281,20 @@ async function scrapeAllTests(browser) {
 
   for (const level of LEVELS) {
     for (const category of TEST_CATEGORIES) {
+      // ADDED DEBUG LOG:
+      console.log(`\n[DEBUG] Starting main loop for category: "${category}"`);
       let exerciseNum = 1, consecutiveFailures = 0;
       const collectionName = `${category}-test`;
-      console.log(`\n--- Scraping Level: ${level.toUpperCase()}, Category: ${collectionName} ---`);
+      console.log(`--- Scraping Level: ${level.toUpperCase()}, Category: ${collectionName} ---`);
       while (consecutiveFailures < 3) {
         const docId = `exercise-${exerciseNum}`;
         const docRef = db.collection('jlpt').doc(level).collection(collectionName).doc(docId);
 
-        const urlFormats = [
+        const urlStrings = [
           `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${exerciseNum}/`,
           `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${String(exerciseNum).padStart(2, '0')}/`
         ];
+        const urlFormats = [...new Set(urlStrings)];
 
         let quizData = null;
         const page = await browser.newPage();
