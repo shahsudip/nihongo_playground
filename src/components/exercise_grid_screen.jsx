@@ -1,5 +1,3 @@
-// src/pages/ExerciseListPage.jsx
-
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
@@ -32,16 +30,16 @@ const ExerciseListPage = () => {
         const historyQuery = query(
           collection(db, `users/${currentUser.uid}/quizHistory`),
           where('level', '==', level),
-          where('category', '==', category)
+          where('category', '==', category),
+          where('type', '==', 'jlpt')
         );
         const historySnapshot = await getDocs(historyQuery);
         const fetchedHistory = {};
         historySnapshot.forEach(doc => {
-          const quizId = doc.data().quizId || '';
-          const match = quizId.match(/exercise-(\d+)/);
-          if (match) {
-            const exerciseId = `exercise-${match[1]}`;
-            fetchedHistory[exerciseId] = doc.data();
+          const data = doc.data();
+          const key = data.exerciseId || doc.id;
+          if (key) {
+            fetchedHistory[key] = data;
           }
         });
         setHistory(fetchedHistory);
@@ -60,39 +58,73 @@ const ExerciseListPage = () => {
 
   return (
     <div className="exercise-list-container">
-      <div className="exercise-list-header">
         <button onClick={() => navigate(-1)} className="back-button">← Back</button>
+      <div className="exercise-list-header">
         <h1 className="exercise-list-title">{level.toUpperCase()} - {category} Exercises</h1>
       </div>
+
       <div className="exercise-grid">
         {exercises.map(exercise => {
           const exerciseHistory = history[exercise.id];
+          const title = exercise.id.replace(/-/g, ' ');
+          
+          // --- FIX 1: Handle both data structures (standard and reading test) ---
+          const isReadingTest = category === 'reading-test' && exercise.passages;
+          let hasContent, totalQuestions;
+
+          if (isReadingTest) {
+            // For reading tests, check for questions inside the passages array
+            hasContent = exercise.passages.some(p => p.questions && p.questions.length > 0);
+            totalQuestions = exercise.passages.reduce((sum, p) => sum + (p.questions?.length || 0), 0);
+          } else {
+            // For all other tests, use the original check
+            hasContent = exercise.questions && exercise.questions.length > 0;
+            totalQuestions = exercise.questions?.length || 0;
+          }
+          
           const isMastered = exerciseHistory?.status === 'mastered';
-          const hasContent = exercise.questions && exercise.questions.length > 0;
-          const quizLink = `/quiz/jlpt/${level}/${category}/${exercise.id}`;
-          const title = exercise.title || exercise.id.replace('-', ' ');
+
+          // --- FIX 2: Use the correctly calculated totalQuestions ---
+          const navigationState = {
+            quizId: exercise.id,
+            quizTitle: title,
+            level,
+            category,
+            type: 'jlpt',
+            totalQuestions: totalQuestions
+          };
 
           return (
             <Link
-              to={quizLink}
+              to={`/quiz/${exercise.id}`}
+              state={navigationState}
               key={exercise.id}
               className={`difficulty-button ${isMastered ? 'mastered' : ''} ${!hasContent ? 'locked' : ''}`}
               onClick={(e) => { if (isMastered || !hasContent) e.preventDefault(); }}
             >
               {exerciseHistory ? (
-                <>
-                  <span className={`difficulty-status-badge status-badge status-${exerciseHistory.status}`}>{exerciseHistory.status}</span>
-                  <div className="difficulty-main">
-                    <span className="difficulty-main-text">{title}</span>
-                    <span className="difficulty-score">{`${exerciseHistory.score}/${exerciseHistory.total}`}</span>
-                  </div>
-                  <div className="difficulty-timestamp">
-                    {formatDateTime(exerciseHistory.timestamp)}
-                  </div>
-                </>
+                isMastered ? (
+                  <>
+                    <span className="difficulty-status-badge status-badge status-mastered">Mastered ✨</span>
+                    <div className="difficulty-main">
+                      <span className="difficulty-main-text">{title}</span>
+                      <span className="difficulty-score">{`${exerciseHistory.score}/${exerciseHistory.total}`}</span>
+                    </div>
+                    <div className="difficulty-timestamp">{formatDateTime(exerciseHistory.timestamp)}</div>
+                  </>
+                ) : (
+                  <>
+                    <span className={`difficulty-status-badge status-badge status-${exerciseHistory.status}`}>{exerciseHistory.status}</span>
+                    <div className="difficulty-main">
+                      <span className="difficulty-main-text">{title}</span>
+                      <span className="difficulty-score">{`${exerciseHistory.score}/${exerciseHistory.total}`}</span>
+                    </div>
+                    <div className="difficulty-timestamp">{formatDateTime(exerciseHistory.timestamp)}</div>
+                  </>
+                )
               ) : (
                 <div className="difficulty-main">
-                  <span className="difficulty-main-text">{hasContent ? `${title}` : title}</span>
+                  <span className="difficulty-main-text">{title}</span>
                   {!hasContent && <span className="lock-icon">🔒</span>}
                 </div>
               )}
@@ -105,3 +137,4 @@ const ExerciseListPage = () => {
 };
 
 export default ExerciseListPage;
+

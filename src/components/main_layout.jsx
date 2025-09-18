@@ -26,7 +26,7 @@ const MainLayout = () => {
   return (
     <>
       <MainHeader />
-      <main>
+      <main className="content-overlay main-content-container">
         <Outlet />
       </main>
     </>

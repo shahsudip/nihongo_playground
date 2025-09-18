@@ -55,7 +55,7 @@ body {
 /* === LEVEL & CATEGORY SELECTION === */
 
 .level-selection-container { display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
-.level-title, .category-title { font-size: 3rem; color: var(--primary-green); margin-bottom: 50px; text-shadow: 0 0 10px rgba(88, 167, 0, 0.5); }
+.level-title, .category-title { font-size: 2rem; color: var(--primary-green); margin-bottom: 30px; text-align: center; }
 .level-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -135,8 +135,26 @@ body {
 .difficulty-button { background: var(--background-light); color: var(--text-light); border: 2px solid var(--surface-light); font-size: 1.8rem; font-weight: bold; padding: 25px; border-radius: 10px; cursor: pointer; transition: background-color 0.2s, transform 0.2s; display: flex; justify-content: center; align-items: center; gap: 15px; }
 .difficulty-button:not(:disabled):hover { background-color: var(--surface-light); transform: translateY(-3px); }
 .difficulty-button.locked { background-color: var(--background-dark); color: var(--surface-light); cursor: not-allowed; border-color: var(--background-light); }
-.back-to-levels-button { background: none; border: none; color: var(--text-medium); cursor: pointer; font-size: 1rem; }
-.back-to-levels-button:hover { color: white; }
+.back-button {  
+  width: 100%;
+  padding: 15px 20px;
+  margin-top: 40px; /* Adds space above the button */
+  
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: inherit;
+  
+  background-color: transparent;
+  color: var(--text-medium);
+  border: 1px solid var(--surface-light);
+  border-radius: 8px;
+  
+  cursor: pointer;
+  text-align: center;
+  
+  transition: background-color 0.2s ease, color 0.2s ease; }
+.back-button:hover { background-color: var(--surface-light);
+  color: var(--text-light);}
 
 /* === QUIZ PAGE === */
 .quiz-container { display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
@@ -611,7 +629,7 @@ body {
 
 /* Base style for the status badge itself */
 .status-badge {
-  font-size: 1.0rem;
+  font-size: 0.8rem;
   font-weight: bold;
   padding: 4px 10px;
   border-radius: 15px;
@@ -799,7 +817,7 @@ body {
   position: absolute;
   bottom: 10px;
   right: 15px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: var(--text-medium);
 }
@@ -822,55 +840,89 @@ body {
 /* src/pages/ExerciseListPage.css */
 
 .exercise-list-container {
-  width: 100%;
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 20px;
+ width: 100%;
+ max-width: 1100px;
+ margin: 40px auto;
+ padding: 20px;
 }
 
 .exercise-list-header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-  position: relative;
-  justify-content: center;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ margin-bottom: 40px;
+ position: relative;
+ justify-content: center;
 }
 
-.exercise-list-title {
-  /* This will use global styles like .profile-title */
-  /* Add any overrides here if needed */
-  text-transform: capitalize;
+/* --- FIX: This selector is now more specific --- */
+/* By including the parent container, this rule will now override any global h1 styles. */
+.exercise-list-container .exercise-list-title {
+ text-transform: capitalize;
+ border-bottom: none !important; /* This will now be correctly applied */
 }
 
 /* This is the unique 3-column grid layout for this page */
 .exercise-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  width: 100%;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 20px;
+width: 100%;
 }
 
 /* Make the text inside the reused difficulty-button a bit smaller 
   so it fits nicely within the 3-column layout.
 */
 .exercise-grid .difficulty-main-text {
-  font-size: 1.25rem;
+ font-size: 1.25rem;
 }
 
 .exercise-grid .difficulty-score {
-  font-size: 1.1rem;
+ font-size: 1.1rem;
 }
 
 /* Responsive Styles for the grid */
 @media (max-width: 992px) {
-  .exercise-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+ .exercise-grid {
+  grid-template-columns: repeat(2, 1fr);
+ }
 }
 
 @media (max-width: 600px) {
-  .exercise-grid {
-    grid-template-columns: 1fr;
-  }
+ .exercise-grid {
+  grid-template-columns: 1fr;
+ }
+}
+
+/* src/pages/DifficultySelectionPage.css */
+
+.difficulty-selection-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.difficulty-title {
+  /* This will inherit from your app_style.css */
+  margin-bottom: 40px;
+}
+
+.difficulty-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.selection-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
 }

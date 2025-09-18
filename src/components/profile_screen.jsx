@@ -6,7 +6,6 @@ import { collection, query, getDocs, addDoc, doc, deleteDoc, orderBy } from 'fir
 import { formatDateTime } from '../utils/formatters.jsx';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 
-// --- UPDATED HELPER FUNCTION ---
 const parseCsvToQuizContent = (csvText, quizType) => {
   if (!csvText) return [];
   const lines = csvText.split('\n').map(line => line.trim()).filter(line => line);
@@ -16,36 +15,29 @@ const parseCsvToQuizContent = (csvText, quizType) => {
   const dataLines = hasHeader ? lines.slice(1) : lines;
 
   return dataLines.map(line => {
-      const [hiragana, meaning, kanji] = line.split(',').map(s => s.trim());
-      if (quizType === 'vocabulary') {
-        return { kanji: kanji || '', hiragana: hiragana || '', meaning: meaning || '' };
-      }
-      return { kanji: kanji || '', hiragana: hiragana || '', meaning: meaning || '' };
-    }); 
+    const [hiragana, meaning, kanji] = line.split(',').map(s => s.trim());
+    return { kanji: kanji || '', hiragana: hiragana || '', meaning: meaning || '' };
+  });
 };
 
 const ProfilePage = () => {
   const { currentUser, logout } = useAuth();
   const navigate = useNavigate();
 
-  // --- State Management ---
   const [standardQuizzes, setStandardQuizzes] = useState([]);
   const [customQuizzes, setCustomQuizzes] = useState([]);
   const [quizHistory, setQuizHistory] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-
   const [newQuizTitle, setNewQuizTitle] = useState('');
   const [newQuizTag, setNewQuizTag] = useState('vocabulary');
   const [csvText, setCsvText] = useState('');
   const [activeFilter, setActiveFilter] = useState('mastered');
 
-  // --- Data Fetching for the Logged-in User ---
   useEffect(() => {
     if (!currentUser) {
       setIsLoading(false);
       return;
     }
-
     const fetchData = async () => {
       setIsLoading(true);
       try {
@@ -73,8 +65,6 @@ const ProfilePage = () => {
     fetchData();
   }, [currentUser]);
 
-
-  // --- Event Handlers ---
   const handleCreateQuiz = async () => {
     if (!currentUser) { alert("You must be logged in to create a quiz."); return; }
     if (!newQuizTitle.trim() || !csvText.trim()) { alert('Please provide a title and paste your vocabulary list.'); return; }
@@ -96,7 +86,6 @@ const ProfilePage = () => {
       setCustomQuizzes(prevQuizzes => [{...newQuizData, id: docRef.id}, ...prevQuizzes]);
       setNewQuizTitle('');
       setCsvText('');
-
     } catch (error) {
       console.error("Error creating quiz:", error);
       alert("Failed to create quiz.");
@@ -125,21 +114,32 @@ const ProfilePage = () => {
     }
   };
 
-  // --- Memoized Filtering Logic ---
   const filteredList = useMemo(() => {
-    // --- FIX 1: Use the history item's own ID as the key ---
-    const historyMap = new Map(quizHistory.map(h => [h.id, h]));
+    const historyMap = new Map(quizHistory.map(h => [h.quizId || h.id, h]));
 
     if (activeFilter === 'unattended') {
       const standardUnattended = standardQuizzes.filter(q => !historyMap.has(q.id));
       const customUnattended = customQuizzes.filter(q => !historyMap.has(q.id));
-      return [...standardUnattended, ...customUnattended].sort((a,b) => (a.title > b.title) ? 1 : -1);
+      return [...standardUnattended, ...customUnattended].sort((a, b) => (a.title > b.title) ? 1 : -1);
     }
     
     const attendedQuizzes = quizHistory.map(historyItem => {
-      // --- FIX 2: Match the quiz ID to the history item's own ID ---
-      let baseQuiz = standardQuizzes.find(q => q.id === historyItem.id) || customQuizzes.find(q => q.id === historyItem.id);
-      return baseQuiz ? { ...baseQuiz, latestResult: historyItem } : null;
+      const quizId = historyItem.quizId || historyItem.exerciseId || historyItem.id;
+      let baseQuiz = standardQuizzes.find(q => q.id === quizId) || customQuizzes.find(q => q.id === quizId);
+
+      if (baseQuiz) {
+        return { ...baseQuiz, latestResult: historyItem };
+      }
+      
+      if (historyItem.type === 'jlpt') {
+        const title = `${historyItem.level?.toUpperCase()} ${historyItem.category} - ${historyItem.id?.replace('-', ' ')}`;
+        return {
+          id: quizId, title, type: 'jlpt',
+          level: historyItem.level, category: historyItem.category,
+          latestResult: historyItem
+        };
+      }
+      return null;
     }).filter(Boolean);
 
     if (activeFilter === 'mastered') {
@@ -179,10 +179,15 @@ const ProfilePage = () => {
             ) : (
               <div className="history-list">
                 {customQuizzes.map((quiz) => {
-                  // --- FIX 3: Find the history record by matching its ID to the quiz's ID ---
-                  const historyRecord = quizHistory.find(h => h.id === quiz.id);
+                  const historyRecord = quizHistory.find(h => (h.quizId || h.id) === quiz.id);
                   const status = historyRecord?.status || 'unattended';
-                  const quizLink = `/quiz/${quiz.id}/${quiz.tag}`;
+                  const quizLink = `/quiz/${quiz.id}`;
+                  const quizState = {
+                    quizId: quiz.id,
+                    quizTitle: quiz.title,
+                    type: 'custom',
+                    totalQuestions: quiz.quiz_content?.length || 0
+                  };
                   
                   return (
                     <div key={quiz.id} className="history-item custom-quiz-card">
@@ -199,7 +204,7 @@ const ProfilePage = () => {
                         <span className="meta-count">{quiz.quiz_content?.length || 0} questions</span>
                       </div>
                       <div className="custom-quiz-actions">
-                        <Link to={quizLink} className="action-button next-level">Start Quiz</Link>
+                        <Link to={quizLink} state={quizState} className="action-button next-level">Start Quiz</Link>
                       </div>
                     </div>
                   );
@@ -221,11 +226,35 @@ const ProfilePage = () => {
             ) : (
               <div className="history-list">
                 {filteredList.map((item) => {
-                  const itemLink = item.userId ? `/quiz/${item.id}/${item.tag}` : `/quiz/${item.level}/${item.category}`;
+                  let itemLink, itemState;
+                  const quizId = item.id;
+                  itemLink = `/quiz/${quizId}`;
+                  
+                  if (item.type === 'jlpt') {
+                    itemState = {
+                      quizId, quizTitle: item.title,
+                      level: item.level, category: item.category,
+                      type: 'jlpt',
+                    };
+                  } else if (item.userId) { // Custom quiz
+                    itemState = {
+                      quizId, quizTitle: item.title,
+                      type: 'custom',
+                      totalQuestions: item.quiz_content?.length || 0,
+                    };
+                  } else { // Standard quiz
+                    itemState = {
+                      quizId, quizTitle: item.title,
+                      level: item.level, category: item.category,
+                      difficulty: item.difficulty, type: 'standard',
+                      totalQuestions: item.quiz_content?.length || 0,
+                    };
+                  }
+
                   return activeFilter === 'unattended' ? (
                     <div key={item.id} className="history-item unattended-item">
                       <h3>{item.title}</h3>
-                      <Link to={itemLink} className="action-button next-level">Start Quiz</Link>
+                      <Link to={itemLink} state={itemState} className="action-button next-level">Start Quiz</Link>
                     </div>
                   ) : (
                     <div key={item.id} className="history-item">
@@ -234,12 +263,12 @@ const ProfilePage = () => {
                         <span className="history-item-date">{formatDateTime(item.latestResult.timestamp)}</span>
                       </div>
                       <div className="history-item-body">
-                        <p>Score: <strong>{item.latestResult.score} / {item.latestResult.numberOfQuestions}</strong></p>
+                        <p>Score: <strong>{item.latestResult.score} / {item.latestResult.total}</strong></p>
                         <div className="progress-bar-container"><div className="progress-bar-fill" style={{ width: `${item.latestResult.total > 0 ? (item.latestResult.score / item.latestResult.total) * 100 : 0}%` }}></div></div>
                       </div>
                       {item.latestResult.status !== 'mastered' && (
                         <div className="history-item-actions">
-                          <Link to={itemLink} className="action-button restart">Retry Quiz</Link>
+                          <Link to={itemLink} state={itemState} className="action-button restart">Retry Quiz</Link>
                         </div>
                       )}
                     </div>
