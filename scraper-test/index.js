@@ -7,7 +7,7 @@ puppeteer.use(StealthPlugin());
 console.log('JLPT Quiz Scraper started with Stealth Mode.');
 
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-const LEVELS = ['n5'];
+const LEVELS = ['n5', 'n4'];
 const TEST_CATEGORIES = ['grammar', 'vocabulary', 'kanji', 'reading'];
 const BASE_URL = 'https://japanesetest4you.com/';
 
@@ -24,125 +24,129 @@ async function scrapeTestPage(page, url, category) {
       if (!content) return null;
       const title = document.title.split('|')[0].trim();
       let passages = [], questions = [], answers = {}, vocab = [];
-      let parsingMode = 'questions';
-      const allParagraphs = Array.from(content.querySelectorAll('p'));
+      let parsingMode = 'questions';
+      const allParagraphs = Array.from(content.querySelectorAll('p'));
 
+      // --- FIX 2: REWRITTEN PARSER FOR READING TESTS ---
       if (currentCategory === 'reading') {
-        let currentPassage = null;
-        let currentQuestion = null;
-        let mode = 'seeking';
-        let questionCounter = 1;
+        let currentPassage = null;
+        let currentQuestion = null;
+        let mode = 'seeking'; 
+        let questionCounter = 1;
 
-        const commitQuestion = () => {
-            if (currentQuestion && currentPassage) {
-                currentQuestion.questionText = currentQuestion.questionText.replace(/「しつもん」/g, '').trim();
-                if (currentQuestion.questionText || currentQuestion.options.length > 0) {
-                    currentPassage.questions.push(currentQuestion);
-                }
+        const commitQuestion = () => {
+          if (currentQuestion && currentPassage) {
+            currentQuestion.questionText = currentQuestion.questionText.replace(/「しつもん」/g, '').trim();
+            if (currentQuestion.questionText || currentQuestion.options.length > 0) {
+              currentPassage.questions.push(currentQuestion);
+            }
+          }
+          currentQuestion = null;
+        };
+
+        const commitPassage = () => {
+          commitQuestion();
+          if (currentPassage) {
+            passages.push(currentPassage);
+          }
+          currentPassage = null;
+        };
+        
+        const allNodes = Array.from(content.childNodes);
+
+        for (const node of allNodes) {
+          if (node.nodeType !== Node.ELEMENT_NODE) continue;
+
+          const el = node;
+          const text = el.innerText?.trim();
+          const strongText = el.querySelector('strong')?.innerText?.trim() || '';
+
+          if (strongText.startsWith('Reading Passage')) {
+            commitPassage();
+            currentPassage = { passageTitle: strongText, passageImage: '', passageText: '', questions: [] };
+            mode = 'passage';
+            continue;
+          } else if (strongText.includes('Answer Key')) {
+            mode = 'answers';
+          } else if (strongText.includes('New words')) {
+            mode = 'vocab';
+          }
+
+          if (mode === 'passage' || mode === 'question' || mode === 'options') {
+            if (el.tagName === 'FIGURE') {
+              if (currentQuestion) {
+                currentQuestion.questionImage = el.querySelector('img')?.src || '';
+              } else if (currentPassage) {
+                currentPassage.passageImage = el.querySelector('img')?.src || '';
+              }
+            } else if (el.tagName === 'P') {
+              const isQuestionMarker = text.includes('しつもん') || /「\d+」には、なにをいれますか/.test(text);
+              if (isQuestionMarker) {
+                commitQuestion();
+                currentQuestion = { questionNumber: questionCounter++, questionText: text, options: [], correctOption: null };
+                mode = 'options';
+              } else if (mode === 'options' && currentQuestion) {
+                const optionsFromP = el.innerHTML.split('<br>').map(part => {
+                  const tempDiv = document.createElement('div');
+                  tempDiv.innerHTML = part;
+                  tempDiv.querySelectorAll('input').forEach(i => i.remove());
+                  return tempDiv.textContent.trim();
+                }).filter(Boolean);
+                currentQuestion.options.push(...optionsFromP);
+              } else if (mode === 'passage' && currentPassage) {
+                currentPassage.passageText += text + '\n';
+              }
+            }
+          } else if (mode === 'answers') {
+            const answerText = el.innerText.trim();
+            const answerMatches = [...answerText.matchAll(/Question\s*(\d+):\s*(\d+)/gi)];
+            for (const match of answerMatches) {
+              const questionNum = parseInt(match[1], 10);
+              const answerIndex = parseInt(match[2], 10) - 1;
+              answers[questionNum] = answerIndex;
+            }
+          } else if (mode === 'vocab') {
+            // --- FIX 3: CORRECT VOCABULARY PARSING ---
+            const lines = el.innerText.trim().split('\n');
+            for (const line of lines) {
+              if (line.includes(':')) {
+                const parts = line.split(/:(.*)/s);
+                if (parts.length < 2) continue;
+                const japaneseAndRomaji = parts[0].trim();
+                const english = parts[1].trim();
+                let japanese = '', romaji = '';
+                const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
+                if (romajiMatch) {
+                  romaji = romajiMatch[1].trim();
+                  japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
+                } else {
+                  japanese = japaneseAndRomaji;
+                }
+                if (japanese && english) {
+                  vocab.push({ japanese, romaji, english });
+                }
+              }
             }
-            currentQuestion = null;
-        };
+          }
+        }
+        commitPassage();
 
-        const commitPassage = () => {
-            commitQuestion();
-            if (currentPassage) {
-                passages.push(currentPassage);
-            }
-            currentPassage = null;
-        };
-        
-        const allNodes = Array.from(content.childNodes);
-
-        for (const node of allNodes) {
-            if (node.nodeType !== Node.ELEMENT_NODE) continue;
-
-            const el = node;
-            const text = el.innerText?.trim();
-            const strongText = el.querySelector('strong')?.innerText?.trim() || '';
-
-            if (strongText.startsWith('Reading Passage')) {
-                commitPassage();
-                currentPassage = { passageTitle: strongText, passageImage: '', passageText: '', questions: [] };
-                mode = 'passage';
-                continue;
-            } else if (strongText.includes('Answer Key')) {
-                mode = 'answers';
-            } else if (strongText.includes('New words')) {
-                mode = 'vocab';
-            }
-
-            if (mode === 'passage' || mode === 'question' || mode === 'options') {
-                if (el.tagName === 'FIGURE') {
-                    if (currentQuestion) {
-                        currentQuestion.questionImage = el.querySelector('img')?.src || '';
-                    } else if (currentPassage) {
-                        currentPassage.passageImage = el.querySelector('img')?.src || '';
-                    }
-                } else if (el.tagName === 'P') {
-                    const questionMarker = text.match(/「(\d+|しつもん)」/);
-                    if (questionMarker) {
-                        commitQuestion();
-                        currentQuestion = { questionNumber: questionCounter++, questionText: text, options: [], correctOption: null };
-                        mode = 'options';
-                    } else if (mode === 'options' && currentQuestion) {
-                        const optionsFromP = el.innerHTML.split('<br>').map(part => {
-                            const tempDiv = document.createElement('div');
-                            tempDiv.innerHTML = part;
-                            tempDiv.querySelectorAll('input').forEach(i => i.remove());
-                            return tempDiv.textContent.trim();
-                        }).filter(Boolean);
-                        currentQuestion.options.push(...optionsFromP);
-                    } else if (mode === 'passage' && currentPassage) {
-                        currentPassage.passageText += text + '\n';
-                    }
-                }
-            } else if (mode === 'answers') {
-                const answerText = el.innerText.trim();
-                const answerMatches = [...answerText.matchAll(/Question\s*(\d+):\s*(\d+)/gi)];
-                for (const match of answerMatches) {
-                    const questionNum = parseInt(match[1], 10);
-                    const answerIndex = parseInt(match[2], 10) - 1;
-                    answers[questionNum] = answerIndex;
-                }
-            } else if (mode === 'vocab') {
-                const vocabText = el.innerText.trim();
-                if (vocabText.includes(':')) {
-                    const parts = vocabText.split(/:(.*)/s);
-                    if (parts.length < 2) continue;
-                    const japaneseAndRomaji = parts[0].trim();
-                    const english = parts[1].trim();
-                    let japanese = '', romaji = '';
-                    const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
-                    if (romajiMatch) {
-                        romaji = romajiMatch[1].trim();
-                        japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
-                    } else {
-                        japanese = japaneseAndRomaji;
-                    }
-                    if (japanese && english) {
-                        vocab.push({ japanese, romaji, english });
-                    }
-                }
-            }
-        }
-        commitPassage();
-
-        let questionIndex = 1;
-        passages.forEach(passage => {
-            passage.passageText = passage.passageText.trim();
-            passage.questions.forEach(q => {
-                if (answers[questionIndex] !== undefined) {
-                    const correctIndex = answers[questionIndex];
-                    if (correctIndex >= 0 && correctIndex < q.options.length) {
-                        q.correctOption = { index: correctIndex, text: q.options[correctIndex] };
-                    }
-                }
-                q.questionNumber = questionIndex;
-                questionIndex++;
-            });
-        });
-        if (passages.length === 0 || passages.every(p => p.questions.length === 0)) return null;
-        return { title, sourceUrl: window.location.href, passages, vocab };
+        let questionIndex = 1;
+        passages.forEach(passage => {
+          passage.passageText = passage.passageText.trim();
+          passage.questions.forEach(q => {
+            if (answers[questionIndex] !== undefined) {
+              const correctIndex = answers[questionIndex];
+              if (correctIndex >= 0 && correctIndex < q.options.length) {
+                q.correctOption = { index: correctIndex, text: q.options[correctIndex] };
+              }
+            }
+            q.questionNumber = questionIndex;
+            questionIndex++;
+          });
+        });
+        if (passages.length === 0 || passages.every(p => p.questions.length === 0)) return null;
+        return { title, sourceUrl: window.location.href, passages, vocab };
       
       } else {
         // --- RESTORED: This is the original, working logic for non-reading categories ---
@@ -151,9 +155,7 @@ async function scrapeTestPage(page, url, category) {
         const commitCurrentQuestion = () => {
           if (currentQuestion) {
             currentQuestion.questionText = currentQuestion.questionText
-              .replace(/^\d+\.\s*/, '')
-              .replace(/「しつもん」/g, '')
-              .trim();
+              .replace(/^\d+\.\s*/, '').replace(/「しつもん」/g, '').trim();
             if (currentQuestion.questionText || currentQuestion.options.length > 0) {
               delete currentQuestion.inputName;
               questions.push(currentQuestion);
@@ -161,7 +163,6 @@ async function scrapeTestPage(page, url, category) {
             currentQuestion = null;
           }
         };
-
         allParagraphs.forEach(p => {
           const strongText = p.querySelector('strong')?.innerText?.trim() || '';
           if (strongText.includes('Answer Key') || strongText.includes('New words')) {
@@ -169,31 +170,30 @@ async function scrapeTestPage(page, url, category) {
             parsingMode = strongText.includes('Answer Key') ? 'answers' : 'vocab';
             return;
           }
-
           if (parsingMode === 'vocab') {
-            const text = p.innerText.trim();
-            if (text.includes(':')) {
-              const parts = text.split(/:(.*)/s);
-              if (parts.length < 2) return;
-              const japaneseAndRomaji = parts[0].trim();
-              const english = parts[1].trim();
-              let japanese = '', romaji = '';
-              const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
-              if (romajiMatch) {
-                romaji = romajiMatch[1].trim();
-                japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
-              } else {
-                japanese = japaneseAndRomaji;
-              }
-              if (japanese && english) {
-                vocab.push({ japanese, romaji, english });
-              }
-            }
+            const lines = p.innerText.trim().split('\n');
+            for (const line of lines) {
+              if (line.includes(':')) {
+                const parts = line.split(/:(.*)/s);
+                if (parts.length < 2) continue;
+                const japaneseAndRomaji = parts[0].trim();
+                const english = parts[1].trim();
+                let japanese = '', romaji = '';
+                const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
+                if (romajiMatch) {
+                  romaji = romajiMatch[1].trim();
+                  japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
+                } else {
+                  japanese = japaneseAndRomaji;
+                }
+                if (japanese && english) {
+                  vocab.push({ japanese, romaji, english });
+                }
+              }
+            }
             return;
           }
-
           if (parsingMode !== 'questions') return;
-
           const hasRadio = p.querySelector('input[type="radio"]');
           if (hasRadio) {
             const inputName = hasRadio.getAttribute('name');
@@ -215,15 +215,12 @@ async function scrapeTestPage(page, url, category) {
               let questionNumber = parseInt(potentialQuestionText.match(/^(\d+)\./)?.[1], 10);
               if (!questionNumber) {
                 questionNumber = inputName && inputName.match(/quest(\d+)/i)
-                  ? parseInt(inputName.match(/quest(\d+)/i)[1], 10)
+                  ? parseInt(inputName.match(/quest(\d+)/i)[1])
                   : expectedQuestionNumber;
               }
               currentQuestion = {
-                questionNumber,
-                questionText: potentialQuestionText,
-                options: parts.slice(1),
-                correctOption: null,
-                inputName: inputName
+                questionNumber, questionText: potentialQuestionText,
+                options: parts.slice(1), correctOption: null, inputName: inputName
               };
               expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
             }
@@ -232,22 +229,20 @@ async function scrapeTestPage(page, url, category) {
           }
         });
         commitCurrentQuestion();
-        
-        allParagraphs.forEach(p => {
-          const strongText = p.querySelector('strong')?.innerText?.trim() || '';
-          if (strongText.includes('Answer Key')) parsingMode = 'answers';
-          if (parsingMode === 'answers') {
-            const text = p.innerText.trim();
-            const regex = /Question\s*(\d+):\s*(\d+)/gi;
-            let match;
-            while ((match = regex.exec(text)) !== null) {
-              const questionNum = parseInt(match[1], 10);
-              const answerIndex = parseInt(match[2], 10) - 1;
-              answers[questionNum] = answerIndex;
-            }
-          }
-        });
-
+        allParagraphs.forEach(p => {
+          const strongText = p.querySelector('strong')?.innerText?.trim() || '';
+          if (strongText.includes('Answer Key')) parsingMode = 'answers';
+          if (parsingMode === 'answers') {
+            const text = p.innerText.trim();
+            const regex = /Question\s*(\d+):\s*(\d+)/gi;
+            let match;
+            while ((match = regex.exec(text)) !== null) {
+              const questionNum = parseInt(match[1], 10);
+              const answerIndex = parseInt(match[2], 10) - 1;
+              answers[questionNum] = answerIndex;
+            }
+          }
+        });
         questions.forEach(q => {
           if (answers[q.questionNumber] !== undefined) {
             const correctIndex = answers[q.questionNumber];
@@ -256,8 +251,7 @@ async function scrapeTestPage(page, url, category) {
             }
           }
         });
-
-        questions = questions.filter(q => q.questionText || q.options.length > 0);
+        questions = questions.filter(q => q.questionText || q.options.length > 0);
         if (questions.length === 0) return null;
         const result = { title, sourceUrl: window.location.href, questions };
         if (vocab.length > 0) result.vocab = vocab;
@@ -282,7 +276,6 @@ async function scrapeAllTests(browser) {
       while (consecutiveFailures < 3) {
         const docId = `exercise-${exerciseNum}`;
         const docRef = db.collection('jlpt').doc(level).collection(collectionName).doc(docId);
-
         const docSnapshot = await docRef.get();
         if (docSnapshot.exists) {
           console.log(`- Document ${docRef.path} already exists. Skipping.`);
@@ -298,7 +291,6 @@ async function scrapeAllTests(browser) {
           `${BASE_URL}jlpt-${level}-${category}-exercise-${exerciseNum}/`
         ];
         const urlFormats = [...new Set(urlStrings)];
-
         let quizData = null;
         const page = await browser.newPage();
         const triedUrls = [];
@@ -322,20 +314,18 @@ async function scrapeAllTests(browser) {
           }
         } else {
           consecutiveFailures++;
-          const currentUrl = triedUrls[triedUrls.length -1];
+          const currentUrl = triedUrls[triedUrls.length - 1];
           console.log(`- No valid quiz data found at [${currentUrl}] (Failure ${consecutiveFailures}/3).`);
           if (consecutiveFailures === 3) {
             console.log(`❌ Giving up on exercise number ${exerciseNum} for ${level} ${category}.`);
             failedUrls.push(currentUrl);
           }
         }
-
         await page.close();
         exerciseNum++;
       }
     }
   }
-
   console.log('✅ Finished scraping all exercise tests.');
   if (failedUrls.length > 0) {
     console.log('\n📌 SUMMARY: The following URL patterns failed after 3 attempts:');
@@ -345,20 +335,17 @@ async function scrapeAllTests(browser) {
   }
 }
 
-
 async function scrapeVocabularyLists(browser) {
   console.log('\n🚀 Starting scrape of main vocabulary lists...');
   for (const level of LEVELS) {
     const collectionName = 'vocabulary_list';
     const docId = 'full-list';
     const docRef = db.collection('jlpt').doc(level).collection(collectionName).doc(docId);
-
     const docSnapshot = await docRef.get();
     if (docSnapshot.exists) {
       console.log(`- Vocabulary list ${docRef.path} already exists. Skipping.`);
       continue;
     }
-
     const url = `${BASE_URL}jlpt-${level}-vocabulary-list/`;
     const page = await browser.newPage();
     console.log(`Attempting to scrape: ${url}`);
@@ -414,19 +401,15 @@ async function scrapeGrammarDetailPage(page, url) {
       if (!content) return null;
       const title = content.querySelector('h1.page-title')?.innerText.trim() || document.title.split('|')[0].trim();
       const childNodes = Array.from(content.childNodes);
-
       let meaning = '', formation = '';
       const examples = [];
       let currentSection = '';
-
       for (const node of childNodes) {
         if (node.nodeType !== Node.ELEMENT_NODE) continue;
         const el = node;
         if (el.tagName !== 'P') continue;
-
         const strongText = el.querySelector('strong')?.innerText.toLowerCase() || '';
         const text = el.innerText.trim();
-
         if (strongText.includes('meaning')) {
           currentSection = 'meaning';
           meaning += text.replace(/meaning:/i, '').trim();
@@ -441,9 +424,7 @@ async function scrapeGrammarDetailPage(page, url) {
           currentSection = 'examples';
           continue;
         }
-
         if (!text) continue;
-
         if (currentSection === 'meaning' && !strongText) {
           meaning += '\n' + text;
         } else if (currentSection === 'formation' && !strongText) {
@@ -454,7 +435,6 @@ async function scrapeGrammarDetailPage(page, url) {
             tempEl.innerHTML = line;
             return tempEl.textContent.trim();
           }).filter(Boolean);
-
           if (lines.length >= 2) {
             examples.push({
               japanese: lines[0] || '',
@@ -464,7 +444,6 @@ async function scrapeGrammarDetailPage(page, url) {
           }
         }
       }
-
       return {
         title,
         meaning: meaning.trim(),
@@ -482,13 +461,11 @@ async function scrapeGrammarDetailPage(page, url) {
 async function scrapeGrammarLists(browser) {
   console.log('\n🚀 Starting scrape of main grammar lists...');
   const collectionName = 'grammar_list';
-
   for (const level of LEVELS) {
     console.log(`\n--- Scraping Grammar List for Level: ${level.toUpperCase()} ---`);
     const listUrl = `${BASE_URL}jlpt-${level}-grammar-list/`;
     const page = await browser.newPage();
     let detailLinks = [];
-
     try {
       console.log(`Fetching links from: ${listUrl}`);
       await page.goto(listUrl, { waitUntil: 'networkidle0' });
@@ -508,7 +485,6 @@ async function scrapeGrammarLists(browser) {
     for (const link of detailLinks) {
       const slug = link.url.split('/').filter(Boolean).pop();
       const docRef = db.collection('jlpt').doc(level).collection(collectionName).doc(slug);
-
       const docSnapshot = await docRef.get();
       if (docSnapshot.exists) {
         console.log(`- Grammar point ${docRef.path} already exists. Skipping.`);
