@@ -7,7 +7,7 @@ puppeteer.use(StealthPlugin());
 console.log('JLPT Quiz Scraper started with Stealth Mode.');
 
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-const LEVELS = ['n5', 'n4'];
+const LEVELS = ['n5'];
 const TEST_CATEGORIES = ['grammar', 'vocabulary', 'kanji', 'reading'];
 const BASE_URL = 'https://japanesetest4you.com/';
 
