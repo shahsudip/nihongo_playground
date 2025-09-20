@@ -18,7 +18,7 @@ console.log('JLPT Quiz Scraper started with Stealth Mode.');
 
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
-const LEVELS = ['n5'];
+const LEVELS = ['n5','n4','n3','n2','n1'];
 
 const TEST_CATEGORIES = ['grammar', 'vocabulary', 'kanji', 'reading'];
 
