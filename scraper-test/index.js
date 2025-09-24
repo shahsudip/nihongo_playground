@@ -199,6 +199,7 @@ async function scrapeTestPage(page, url, category) {
           }
         };
 
+        const allParagraphs = content.querySelectorAll('p');
         allParagraphs.forEach(p => {
           const strongText = p.querySelector('strong')?.innerText?.trim() || '';
           if (strongText.includes('Answer Key') || strongText.includes('New words')) {
@@ -270,7 +271,7 @@ async function scrapeTestPage(page, url, category) {
         });
         commitCurrentQuestion();
         
-        const answerKeyNode = allParagraphs.find(p => p.querySelector('strong')?.innerText.trim().startsWith('Answer Key'));
+        const answerKeyNode = Array.from(allParagraphs).find(p => p.querySelector('strong')?.innerText.trim().startsWith('Answer Key'));
         if(answerKeyNode){
             const answerText = answerKeyNode.innerText.trim();
             const regex = /Question\s*(\d+):\s*(\d+)/gi;
