@@ -8,7 +8,7 @@ console.log('JLPT Quiz Scraper started with Stealth Mode.');
 
 // Ensure your FIREBASE_SERVICE_ACCOUNT environment variable is set correctly
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-const LEVELS = ['n5'];
+const LEVELS = ['n5', 'n4'];
 const TEST_CATEGORIES = ['grammar', 'vocabulary', 'kanji', 'reading'];
 const BASE_URL = 'https://japanesetest4you.com/';
 
@@ -25,7 +25,7 @@ async function scrapeTestPage(page, url, category) {
       if (!content) return null;
       const title = document.title.split('|')[0].trim();
       let passages = [], questions = [], answers = {}, vocab = [];
-
+      
       const parseVocabLine = (line) => {
         if (line && line.includes(':')) {
             const parts = line.split(/:(.*)/s);
@@ -182,6 +182,7 @@ async function scrapeTestPage(page, url, category) {
         
       } else {
         // --- PARSING LOGIC FOR NON-READING CATEGORIES (No Changes) ---
+        let parsingMode = 'questions';
         let currentQuestion = null;
         let expectedQuestionNumber = 1;
         const commitCurrentQuestion = () => {
@@ -269,21 +270,18 @@ async function scrapeTestPage(page, url, category) {
         });
         commitCurrentQuestion();
         
-        allParagraphs.forEach(p => {
-          const strongText = p.querySelector('strong')?.innerText?.trim() || '';
-          if (strongText.includes('Answer Key')) parsingMode = 'answers';
-          if (parsingMode === 'answers') {
-            const text = p.innerText.trim();
+        const answerKeyNode = allParagraphs.find(p => p.querySelector('strong')?.innerText.trim().startsWith('Answer Key'));
+        if(answerKeyNode){
+            const answerText = answerKeyNode.innerText.trim();
             const regex = /Question\s*(\d+):\s*(\d+)/gi;
             let match;
-            while ((match = regex.exec(text)) !== null) {
+            while ((match = regex.exec(answerText)) !== null) {
               const questionNum = parseInt(match[1], 10);
               const answerIndex = parseInt(match[2], 10) - 1;
               answers[questionNum] = answerIndex;
             }
-          }
-        });
-
+        }
+        
         questions.forEach(q => {
           if (answers[q.questionNumber] !== undefined) {
             const correctIndex = answers[q.questionNumber];
@@ -294,7 +292,7 @@ async function scrapeTestPage(page, url, category) {
         });
 
         questions = questions.filter(q => q.questionText || q.options.length > 0);
-        if (questions.length === 0) return null;
+        if (questions.length === 0 && vocab.length === 0) return null;
         const result = { title, sourceUrl: window.location.href, questions };
         if (vocab.length > 0) result.vocab = vocab;
         return result;
