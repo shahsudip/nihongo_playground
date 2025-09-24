@@ -63,6 +63,49 @@ async function scrapeTestPage(page, url, category) {
           currentQuestion = null;
         };
 
+
+        // Post-process passageText to extract embedded questions
+        if (currentPassage && currentPassage.passageText) {
+          const passageLines = currentPassage.passageText.trim().split('\n').map(line => line.trim()).filter(Boolean);
+          let questionText = '';
+          let options = [];
+
+          for (let line of passageLines) {
+            if (/「\d+」には、なにをいれますか/.test(line)) {
+              if (questionText && options.length > 0) {
+                commitQuestion();
+                currentQuestion = {
+                  questionNumber: globalQuestionCounter++,
+                  questionText: questionText,
+                  options: options,
+                  correctOption: null
+                };
+                mode = 'options';
+              }
+              questionText = line.replace(/「しつもん」/g, '').trim();
+              options = [];
+            } else if (questionText && options.length < 4) { // Assuming max 4 options
+              options.push(line);
+            }
+          }
+
+          if (questionText && options.length > 0) {
+            commitQuestion();
+            currentQuestion = {
+              questionNumber: globalQuestionCounter++,
+              questionText: questionText,
+              options: options,
+              correctOption: null
+            };
+            mode = 'options';
+          }
+
+          // Update passageText to exclude the extracted questions
+          currentPassage.passageText = passageLines
+            .filter(line => !/「\d+」には、なにをいれますか/.test(line) && !line.match(/^(きのう|よる|かいしゃ|日よう日|しかし|それでは|ちょうど|じゃあ|まで|から|でも|ながら|とおく|ちかく|とおい|ちかい)$/))
+            .join('\n');
+        }
+
         const commitPassage = () => {
           commitQuestion();
           if (currentPassage) {
