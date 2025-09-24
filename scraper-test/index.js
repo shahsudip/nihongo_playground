@@ -20,7 +20,7 @@ const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
 const LEVELS = ['n5'];
 
-const TEST_CATEGORIES = ['reading'];
+const TEST_CATEGORIES = ['reading','grammar', 'vocabulary', 'kanji'];
 
 const BASE_URL = 'https://japanesetest4you.com/';
 
