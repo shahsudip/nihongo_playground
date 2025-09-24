@@ -63,7 +63,7 @@ async function scrapeTestPage(page, url, category) {
       if (currentCategory === 'reading') {
         let currentPassage = null;
         let currentQuestionInPassage = null;
-        let readingContentMode = 'passage';
+        let readingContentMode = 'passage'; 
 
         const commitCurrentQuestionInPassage = () => {
           if (currentQuestionInPassage && currentPassage) {
