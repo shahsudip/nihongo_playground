@@ -121,29 +121,43 @@ async function scrapeTestPage(page, url, category) {
                   }).filter(Boolean);
                   if (parts.length === 0) return;
                   
-                  // FIX for Exercise 12: Question text might be in a preceding 'p' tag
-                  let potentialQuestionText = parts[0] || '';
-                  if (!potentialQuestionText.includes('しつもん')) {
+                  // FIX for Exercise 12: More robust question/option parsing
+                  let questionText = '';
+                  let options = [];
+                  
+                  // Case 1: Question is inside the same <p> as the radio buttons
+                  if ((parts[0] || '').includes('しつもん')) {
+                      questionText = parts[0];
+                      options = parts.slice(1);
+                  } 
+                  // Case 2: Question is in the preceding <p> tag
+                  else {
                       let previousNode = el.previousElementSibling;
-                      if(previousNode && previousNode.innerText.includes('しつもん')){
-                         potentialQuestionText = previousNode.innerText.trim();
+                      if (previousNode && previousNode.innerText.includes('しつもん')) {
+                          questionText = previousNode.innerText.trim();
+                          options = parts; // All parts are options
+                      } else {
+                          // Fallback for unexpected structures
+                          questionText = parts[0] || '';
+                          options = parts.slice(1);
                       }
                   }
 
-                  const startsWithNumber = /^\d+\./.test(potentialQuestionText);
+                  const startsWithNumber = /^\d+\./.test(questionText);
                   const isContinuation = currentQuestionInPassage && currentQuestionInPassage.inputName === inputName && !startsWithNumber;
+                  
                   if (isContinuation) {
-                    currentQuestionInPassage.options.push(...parts);
+                    currentQuestionInPassage.options.push(...options);
                   } else {
                     commitCurrentQuestionInPassage();
-                    let qNumMatch = potentialQuestionText.match(/^(\d+)\./);
+                    let qNumMatch = questionText.match(/^(\d+)\./);
                     let qNumFromName = inputName && inputName.match(/quest(\d+)/i);
                     let questionNumber = qNumMatch ? parseInt(qNumMatch[1],10) : (qNumFromName ? parseInt(qNumFromName[1], 10) + 1 : expectedQuestionNumber);
                     
                     currentQuestionInPassage = {
                       questionNumber,
-                      questionText: potentialQuestionText,
-                      options: parts.slice(0), // Take all parts as options initially
+                      questionText: questionText,
+                      options: options,
                       correctOption: null,
                       inputName: inputName
                     };
@@ -153,7 +167,7 @@ async function scrapeTestPage(page, url, category) {
                   commitCurrentQuestionInPassage();
                   if (el.tagName === 'FIGURE') {
                     currentPassage.passageImage = el.querySelector('img')?.src || '';
-                  } else if (el.tagName === 'P' && !el.querySelector('input[type="radio"]') && el.innerText.trim()) {
+                  } else if (el.tagName === 'P' && !el.innerText.includes('しつもん') && el.innerText.trim()) {
                     currentPassage.passageText += el.innerText.trim() + '\n';
                   }
                 }
@@ -375,8 +389,8 @@ async function scrapeTestPage(page, url, category) {
             }
           });
         });
-        // FIX for Exercise 13: Ensure data is returned even if question parsing is imperfect
-        if (passages.length === 0 && vocab.length === 0) return null;
+        // FIX for Exercise 13: A page is valid if it has passages with text OR a vocab list.
+        if (passages.every(p => !p.passageText.trim()) && vocab.length === 0) return null;
         const result = { title, sourceUrl: window.location.href, passages };
         if (vocab.length > 0) result.vocab = vocab;
         return result;
