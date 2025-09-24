@@ -56,7 +56,7 @@ async function scrapeTestPage(page, url, category) {
         const hasRadioButtons = !!content.querySelector('input[type="radio"]');
 
         if (hasRadioButtons) {
-            // --- PARSING LOGIC FOR PAGES WITH RADIO BUTTONS (Original Method) ---
+            // --- PARSING LOGIC FOR PAGES WITH RADIO BUTTONS (Original Method for Ex 12) ---
             let currentPassage = null;
             let currentQuestionInPassage = null;
             let readingContentMode = 'passage';
@@ -120,7 +120,16 @@ async function scrapeTestPage(page, url, category) {
                     return tempEl.textContent.trim();
                   }).filter(Boolean);
                   if (parts.length === 0) return;
-                  const potentialQuestionText = parts[0] || '';
+                  
+                  // FIX for Exercise 12: Question text might be in a preceding 'p' tag
+                  let potentialQuestionText = parts[0] || '';
+                  if (!potentialQuestionText.includes('しつもん')) {
+                      let previousNode = el.previousElementSibling;
+                      if(previousNode && previousNode.innerText.includes('しつもん')){
+                         potentialQuestionText = previousNode.innerText.trim();
+                      }
+                  }
+
                   const startsWithNumber = /^\d+\./.test(potentialQuestionText);
                   const isContinuation = currentQuestionInPassage && currentQuestionInPassage.inputName === inputName && !startsWithNumber;
                   if (isContinuation) {
@@ -134,7 +143,7 @@ async function scrapeTestPage(page, url, category) {
                     currentQuestionInPassage = {
                       questionNumber,
                       questionText: potentialQuestionText,
-                      options: parts.slice(1),
+                      options: parts.slice(0), // Take all parts as options initially
                       correctOption: null,
                       inputName: inputName
                     };
@@ -144,7 +153,7 @@ async function scrapeTestPage(page, url, category) {
                   commitCurrentQuestionInPassage();
                   if (el.tagName === 'FIGURE') {
                     currentPassage.passageImage = el.querySelector('img')?.src || '';
-                  } else if (el.tagName === 'P' && el.innerText.trim()) {
+                  } else if (el.tagName === 'P' && !el.querySelector('input[type="radio"]') && el.innerText.trim()) {
                     currentPassage.passageText += el.innerText.trim() + '\n';
                   }
                 }
@@ -159,7 +168,6 @@ async function scrapeTestPage(page, url, category) {
             let questionCounter = 0;
             const childNodes = Array.from(content.childNodes);
 
-            // First, parse the unique answer key format on these pages.
             const answerKeyNode = childNodes.find(node => node.nodeType === Node.ELEMENT_NODE && node.textContent.includes('Answer Key:'));
             if (answerKeyNode) {
                 const answerLines = answerKeyNode.innerHTML.split('<br>').map(line => {
@@ -170,14 +178,11 @@ async function scrapeTestPage(page, url, category) {
                 answerLines.forEach(line => {
                     const match = line.match(/Question\s*(\d+):\s*(\d+)/);
                     if (match) {
-                        const questionNum = parseInt(match[1], 10);
-                        const answerIndex = parseInt(match[2], 10) - 1;
-                        answers[questionNum] = answerIndex;
+                        answers[parseInt(match[1], 10)] = parseInt(match[2], 10) - 1;
                     }
                 });
             }
 
-            // Now, parse passages and questions.
             for (let i = 0; i < childNodes.length; i++) {
                 const node = childNodes[i];
                 if (node.nodeType !== Node.ELEMENT_NODE) continue;
@@ -213,24 +218,20 @@ async function scrapeTestPage(page, url, category) {
                             let options = [];
                             
                             const lines = html.split('<br>').map(line => {
-                                const temp = document.createElement('div');
-                                temp.innerHTML = line;
-                                return temp.textContent.trim();
+                                const temp = document.createElement('div'); temp.innerHTML = line; return temp.textContent.trim();
                             }).filter(Boolean);
 
-                            if (lines.length > 1) { // Question and options in the same <p>
+                            if (lines.length > 1) {
                                 questionText = lines[0];
                                 options = lines.slice(1);
-                            } else { // Question in this <p>, options in the next one
+                            } else {
                                 questionText = text;
                                 const nextNode = childNodes[i + 1];
-                                if (nextNode && nextNode.nodeType === Node.ELEMENT_NODE && nextNode.tagName === 'P') {
+                                if (nextNode && nextNode.nodeType === Node.ELEMENT_NODE && nextNode.tagName === 'P' && !nextNode.querySelector('strong')) {
                                     options = nextNode.innerHTML.split('<br>').map(line => {
-                                        const temp = document.createElement('div');
-                                        temp.innerHTML = line;
-                                        return temp.textContent.trim();
+                                        const temp = document.createElement('div'); temp.innerHTML = line; return temp.textContent.trim();
                                     }).filter(Boolean);
-                                    i++; // Skip the next node since we've processed it
+                                    i++;
                                 }
                             }
                             
@@ -238,7 +239,7 @@ async function scrapeTestPage(page, url, category) {
                                 questionNumber: questionCounter,
                                 questionText: questionText,
                                 options: options,
-                                correctOption: null // Will be filled later
+                                correctOption: null
                             });
                         } else {
                             currentPassage.passageText += text + '\n';
@@ -247,9 +248,7 @@ async function scrapeTestPage(page, url, category) {
                 } else if (contentMode === 'vocab' && node.tagName === 'P') {
                     if (node.innerHTML.includes('<br>')) {
                         const lines = node.innerHTML.split('<br>').map(line => {
-                            const tempEl = document.createElement('div');
-                            tempEl.innerHTML = line;
-                            return tempEl.textContent.trim();
+                            const tempEl = document.createElement('div'); tempEl.innerHTML = line; return tempEl.textContent.trim();
                         }).filter(Boolean);
                         lines.forEach(line => {
                            const vocabItem = parseVocabLine(line);
@@ -270,9 +269,7 @@ async function scrapeTestPage(page, url, category) {
         const commitCurrentQuestion = () => {
           if (currentQuestion) {
             currentQuestion.questionText = currentQuestion.questionText
-              .replace(/^\d+\.\s*/, '')
-              .replace(/「しつもん」/g, '')
-              .trim();
+              .replace(/^\d+\.\s*/, '').replace(/「しつもん」/g, '').trim();
             if (currentQuestion.questionText || currentQuestion.options.length > 0) {
               delete currentQuestion.inputName;
               questions.push(currentQuestion);
@@ -288,13 +285,10 @@ async function scrapeTestPage(page, url, category) {
             parsingMode = strongText.includes('Answer Key') ? 'answers' : 'vocab';
             return;
           }
-
           if (parsingMode === 'vocab') {
             if (p.innerHTML.includes('<br>')) {
                 const lines = p.innerHTML.split('<br>').map(line => {
-                    const tempEl = document.createElement('div');
-                    tempEl.innerHTML = line;
-                    return tempEl.textContent.trim();
+                    const tempEl = document.createElement('div'); tempEl.innerHTML = line; return tempEl.textContent.trim();
                 }).filter(Boolean);
                 lines.forEach(line => {
                     const vocabItem = parseVocabLine(line);
@@ -307,44 +301,49 @@ async function scrapeTestPage(page, url, category) {
             }
             return;
           }
-
           if (parsingMode !== 'questions') return;
-
           const hasRadio = p.querySelector('input[type="radio"]');
-          if (hasRadio) {
-            const inputName = hasRadio.getAttribute('name');
-            const innerHTML = p.innerHTML;
-            const parts = innerHTML.split('<br>').map(part => {
-              const tempEl = document.createElement('div');
-              tempEl.innerHTML = part;
-              tempEl.querySelectorAll('input').forEach(input => input.remove());
-              return tempEl.textContent.trim();
-            }).filter(Boolean);
-            if (parts.length === 0) return;
-            const potentialQuestionText = parts[0] || '';
-            const startsWithNumber = /^\d+\./.test(potentialQuestionText);
-            const isContinuation = currentQuestion && currentQuestion.inputName === inputName && !startsWithNumber;
-            if (isContinuation) {
-              currentQuestion.options.push(...parts);
-            } else {
-              commitCurrentQuestion();
-              let questionNumber = parseInt(potentialQuestionText.match(/^(\d+)\./)?.[1], 10);
-              if (!questionNumber) {
-                questionNumber = inputName && inputName.match(/quest(\d+)/i)
-                  ? parseInt(inputName.match(/quest(\d+)/i)[1], 10) + 1
-                  : expectedQuestionNumber;
-              }
-              currentQuestion = {
-                questionNumber,
-                questionText: potentialQuestionText,
-                options: parts.slice(1),
-                correctOption: null,
-                inputName: inputName
-              };
-              expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
-            }
+          if(hasRadio){
+             const inputName = hasRadio.getAttribute('name');
+             const innerHTML = p.innerHTML;
+             const parts = innerHTML.split('<br>').map(part => {
+                const tempEl = document.createElement('div');
+                tempEl.innerHTML = part;
+                tempEl.querySelectorAll('input').forEach(input => input.remove());
+                return tempEl.textContent.trim();
+             }).filter(Boolean);
+             if (parts.length === 0) return;
+             
+             let potentialQuestionText = parts[0] || '';
+             const startsWithNumber = /^\d+\./.test(potentialQuestionText);
+
+             if (!startsWithNumber && !potentialQuestionText.includes('しつもん')) {
+                 let previousNode = p.previousElementSibling;
+                 if(previousNode && previousNode.innerText.includes('しつもん')){
+                    potentialQuestionText = previousNode.innerText.trim();
+                 }
+             }
+
+             const isContinuation = currentQuestion && currentQuestion.inputName === inputName && !startsWithNumber;
+             if (isContinuation) {
+               currentQuestion.options.push(...parts);
+             } else {
+               commitCurrentQuestion();
+               let questionNumber = parseInt(potentialQuestionText.match(/^(\d+)\./)?.[1], 10);
+               if (!questionNumber) {
+                 questionNumber = inputName && inputName.match(/quest(\d+)/i) ? parseInt(inputName.match(/quest(\d+)/i)[1], 10) + 1 : expectedQuestionNumber;
+               }
+               currentQuestion = {
+                 questionNumber,
+                 questionText: potentialQuestionText,
+                 options: parts.slice(potentialQuestionText.includes('しつもん') ? 1 : 0),
+                 correctOption: null,
+                 inputName: inputName
+               };
+               expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
+             }
           } else {
-            commitCurrentQuestion();
+             commitCurrentQuestion();
           }
         });
         commitCurrentQuestion();
@@ -354,14 +353,12 @@ async function scrapeTestPage(page, url, category) {
       allParagraphs.forEach(p => {
         const strongText = p.querySelector('strong')?.innerText?.trim() || '';
         if (strongText.includes('Answer Key')) parsingMode = 'answers';
-        if (parsingMode === 'answers' && !strongText.includes('Answer Key:')) { // Avoid re-parsing the new format key
+        if (parsingMode === 'answers' && !strongText.includes('Answer Key:')) {
           const text = p.innerText.trim();
           const regex = /Question\s*(\d+):\s*(\d+)/gi;
           let match;
           while ((match = regex.exec(text)) !== null) {
-            const questionNum = parseInt(match[1], 10);
-            const answerIndex = parseInt(match[2], 10) - 1;
-            answers[questionNum] = answerIndex;
+            answers[parseInt(match[1], 10)] = parseInt(match[2], 10) - 1;
           }
         }
       });
@@ -378,7 +375,8 @@ async function scrapeTestPage(page, url, category) {
             }
           });
         });
-        if (passages.every(p => p.questions.length === 0) && vocab.length === 0) return null;
+        // FIX for Exercise 13: Ensure data is returned even if question parsing is imperfect
+        if (passages.length === 0 && vocab.length === 0) return null;
         const result = { title, sourceUrl: window.location.href, passages };
         if (vocab.length > 0) result.vocab = vocab;
         return result;
