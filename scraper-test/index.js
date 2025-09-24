@@ -65,6 +65,67 @@ async function scrapeTestPage(page, url, category) {
 
         const commitPassage = () => {
           commitQuestion();
+          if (currentPassage && currentPassage.passageText) {
+            const passageLines = currentPassage.passageText.trim().split('\n').map(line => line.trim()).filter(Boolean);
+            let questionText = '';
+            let options = [];
+            let questionNumber = globalQuestionCounter;
+
+            for (let line of passageLines) {
+              if (/「\d+」には、なにをいれますか/.test(line) || line.includes('「しつもん」')) {
+                if (questionText && options.length > 0) {
+                  commitQuestion();
+                  currentQuestion = {
+                    questionNumber: questionNumber++,
+                    questionText: questionText.trim(),
+                    options: options.slice(0, 4), // Limit to 4 options
+                    correctOption: null
+                  };
+                  if (answers[currentQuestion.questionNumber]) {
+                    let correctIndex = currentQuestion.options.findIndex(opt => opt === answers[currentQuestion.questionNumber]);
+                    if (correctIndex === -1) {
+                      correctIndex = parseInt(answers[currentQuestion.questionNumber], 10) - 1;
+                    }
+                    if (correctIndex >= 0 && correctIndex < currentQuestion.options.length) {
+                      currentQuestion.correctOption = { index: correctIndex, text: currentQuestion.options[correctIndex] };
+                    }
+                  }
+                  currentPassage.questions.push(currentQuestion);
+                  currentQuestion = null;
+                }
+                questionText = line.replace(/「しつもん」/g, '').trim();
+                options = [];
+              } else if (questionText && options.length < 4) {
+                options.push(line);
+              }
+            }
+
+            if (questionText && options.length > 0) {
+              commitQuestion();
+              currentQuestion = {
+                questionNumber: questionNumber++,
+                questionText: questionText.trim(),
+                options: options.slice(0, 4),
+                correctOption: null
+              };
+              if (answers[currentQuestion.questionNumber]) {
+                let correctIndex = currentQuestion.options.findIndex(opt => opt === answers[currentQuestion.questionNumber]);
+                if (correctIndex === -1) {
+                  correctIndex = parseInt(answers[currentQuestion.questionNumber], 10) - 1;
+                }
+                if (correctIndex >= 0 && correctIndex < currentQuestion.options.length) {
+                  currentQuestion.correctOption = { index: correctIndex, text: currentQuestion.options[correctIndex] };
+                }
+              }
+              currentPassage.questions.push(currentQuestion);
+              currentQuestion = null;
+            }
+
+            // Update passageText to exclude the extracted questions and options
+            currentPassage.passageText = passageLines
+              .filter(line => !/「\d+」には、なにをいれますか/.test(line) && !line.includes('「しつもん」') && !line.match(/^(きのう|よる|かいしゃ|日よう日|しかし|それでは|ちょうど|じゃあ|まで|から|でも|ながら|とおく|ちかく|とおい|ちかい|１|２|３|４|５|６|７|８|１５０ページ|２００ページ|２５０ページ)$/))
+              .join('\n');
+          }
           if (currentPassage) {
             passages.push(currentPassage);
           }
@@ -189,69 +250,6 @@ async function scrapeTestPage(page, url, category) {
           }
         }
         commitPassage();
-
-        // Post-process passageText to extract embedded questions
-        if (currentPassage && currentPassage.passageText) {
-          const passageLines = currentPassage.passageText.trim().split('\n').map(line => line.trim()).filter(Boolean);
-          let questionText = '';
-          let options = [];
-          let questionNumber = globalQuestionCounter;
-
-          for (let line of passageLines) {
-            if (/「\d+」には、なにをいれますか/.test(line) || line.includes('「しつもん」')) {
-              if (questionText && options.length > 0) {
-                commitQuestion();
-                currentQuestion = {
-                  questionNumber: questionNumber++,
-                  questionText: questionText.trim(),
-                  options: options.slice(0, 4), // Limit to 4 options
-                  correctOption: null
-                };
-                if (answers[currentQuestion.questionNumber]) {
-                  let correctIndex = currentQuestion.options.findIndex(opt => opt === answers[currentQuestion.questionNumber]);
-                  if (correctIndex === -1) {
-                    correctIndex = parseInt(answers[currentQuestion.questionNumber], 10) - 1;
-                  }
-                  if (correctIndex >= 0 && correctIndex < currentQuestion.options.length) {
-                    currentQuestion.correctOption = { index: correctIndex, text: currentQuestion.options[correctIndex] };
-                  }
-                }
-                currentPassage.questions.push(currentQuestion);
-                currentQuestion = null;
-              }
-              questionText = line.replace(/「しつもん」/g, '').trim();
-              options = [];
-            } else if (questionText && options.length < 4) {
-              options.push(line);
-            }
-          }
-
-          if (questionText && options.length > 0) {
-            commitQuestion();
-            currentQuestion = {
-              questionNumber: questionNumber++,
-              questionText: questionText.trim(),
-              options: options.slice(0, 4),
-              correctOption: null
-            };
-            if (answers[currentQuestion.questionNumber]) {
-              let correctIndex = currentQuestion.options.findIndex(opt => opt === answers[currentQuestion.questionNumber]);
-              if (correctIndex === -1) {
-                correctIndex = parseInt(answers[currentQuestion.questionNumber], 10) - 1;
-              }
-              if (correctIndex >= 0 && correctIndex < currentQuestion.options.length) {
-                currentQuestion.correctOption = { index: correctIndex, text: currentQuestion.options[correctIndex] };
-              }
-            }
-            currentPassage.questions.push(currentQuestion);
-            currentQuestion = null;
-          }
-
-          // Update passageText to exclude the extracted questions and options
-          currentPassage.passageText = passageLines
-            .filter(line => !/「\d+」には、なにをいれますか/.test(line) && !line.includes('「しつもん」') && !line.match(/^(きのう|よる|かいしゃ|日よう日|しかし|それでは|ちょうど|じゃあ|まで|から|でも|ながら|とおく|ちかく|とおい|ちかい|１|２|３|４|５|６|７|８|１５０ページ|２００ページ|２５０ページ)$/))
-            .join('\n');
-        }
 
         passages.forEach(passage => {
           passage.passageText = passage.passageText.trim();
