@@ -133,6 +133,11 @@ async function scrapeTestPage(page, url, category) {
                   // Case 2: Question is in the preceding <p> tag
                   else {
                       let previousNode = el.previousElementSibling;
+                      // Look backwards past non-paragraph tags like <figure>
+                      while (previousNode && (previousNode.tagName !== 'P' || !previousNode.innerText.includes('しつもん'))) {
+                          previousNode = previousNode.previousElementSibling;
+                      }
+
                       if (previousNode && previousNode.innerText.includes('しつもん')) {
                           questionText = previousNode.innerText.trim();
                           options = parts; // All parts are options
@@ -251,7 +256,7 @@ async function scrapeTestPage(page, url, category) {
                             
                             currentPassage.questions.push({
                                 questionNumber: questionCounter,
-                                questionText: questionText,
+                                questionText: questionText.replace(/「しつもん」/g, '').trim(),
                                 options: options,
                                 correctOption: null
                             });
@@ -333,6 +338,9 @@ async function scrapeTestPage(page, url, category) {
 
              if (!startsWithNumber && !potentialQuestionText.includes('しつもん')) {
                  let previousNode = p.previousElementSibling;
+                 while (previousNode && (previousNode.tagName !== 'P' || !previousNode.innerText.includes('しつもん'))) {
+                    previousNode = previousNode.previousElementSibling;
+                 }
                  if(previousNode && previousNode.innerText.includes('しつもん')){
                     potentialQuestionText = previousNode.innerText.trim();
                  }
@@ -390,7 +398,9 @@ async function scrapeTestPage(page, url, category) {
           });
         });
         // FIX for Exercise 13: A page is valid if it has passages with text OR a vocab list.
-        if (passages.every(p => !p.passageText.trim()) && vocab.length === 0) return null;
+        if (passages.length === 0 && vocab.length === 0) return null;
+        if (passages.every(p => !p.passageText.trim() && p.questions.length === 0) && vocab.length === 0) return null;
+
         const result = { title, sourceUrl: window.location.href, passages };
         if (vocab.length > 0) result.vocab = vocab;
         return result;
@@ -452,6 +462,18 @@ async function scrapeAllTests(browser) {
           triedUrls.push(url);
           quizData = await scrapeTestPage(page, url, category);
           if (quizData) break;
+        }
+
+        // --- DEBUGGING LOGIC ---
+        // For exercises 12 and 13, log the data but do not save it to the database yet.
+        if (exerciseNum === 12 || exerciseNum === 13) {
+            console.log(`--- DEBUG LOG FOR ${docId} ---`);
+            console.log(JSON.stringify(quizData, null, 2));
+            console.log(`--- END DEBUG LOG FOR ${docId} ---`);
+            // Skip saving to the database for these exercises
+            await page.close();
+            exerciseNum++;
+            continue; 
         }
 
         if (quizData) {
