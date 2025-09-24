@@ -355,15 +355,15 @@ async function scrapeAllTests(browser) {
           }
         }
 
-        if (exerciseNum === 12 || exerciseNum === 13) {
-          console.log(`--- DEBUG LOG FOR ${docId} ---`);
-          console.log(JSON.stringify(quizData, null, 2));
-          console.log(`--- END DEBUG LOG FOR ${docId} ---`);
-          await page.close();
-          exerciseNum++;
-          consecutiveFailures = 0;
-          continue;
-        }
+        // if (exerciseNum === 12 || exerciseNum === 13) {
+        //   console.log(`--- DEBUG LOG FOR ${docId} ---`);
+        //   console.log(JSON.stringify(quizData, null, 2));
+        //   console.log(`--- END DEBUG LOG FOR ${docId} ---`);
+        //   await page.close();
+        //   exerciseNum++;
+        //   consecutiveFailures = 0;
+        //   continue;
+        // }
 
         if (quizData) {
           consecutiveFailures = 0;
