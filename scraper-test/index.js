@@ -107,15 +107,19 @@ async function scrapeTestPage(page, url, category) {
 
               if (isQuestionMarker && !hasRadioButtons) {
                 commitQuestion();
-                // Split the paragraph text to isolate question and options
+                // Handle new format: question and options in same <p> tag, separated by \n
                 const lines = text.split('\n').map(line => line.trim()).filter(Boolean);
-                if (lines.length > 0) {
+                if (lines.length > 0 && /「\d+」には、なにをいれますか/.test(lines[0])) {
                   currentQuestion = {
                     questionNumber: globalQuestionCounter++,
                     questionText: lines[0].replace(/「しつもん」/g, '').trim(),
                     options: lines.slice(1),
                     correctOption: null
                   };
+                  mode = 'options';
+                } else {
+                  // Original logic for other question formats
+                  currentQuestion = { questionNumber: globalQuestionCounter++, questionText: text, options: [], correctOption: null };
                   mode = 'options';
                 }
               } else if (hasRadioButtons || (mode === 'options' && currentQuestion)) {
@@ -132,7 +136,7 @@ async function scrapeTestPage(page, url, category) {
                 }).filter(Boolean);
 
                 if (optionsFromP.length > 0 && optionsFromP[0].includes('しつもん')) {
-                  currentQuestion.questionText = optionsFromP[0].replace(/「しつもん」/g, '').trim();
+                  currentQuestion.questionText = optionsFromP[0];
                   currentQuestion.options.push(...optionsFromP.slice(1));
                 } else {
                   if (currentQuestion.questionText.trim() === '') {
@@ -186,30 +190,6 @@ async function scrapeTestPage(page, url, category) {
         }
         commitPassage();
 
-        passages.forEach(passage => {
-          passage.passageText = passage.passageText.trim();
-          passage.questions.forEach(q => {
-            const correctTextOrIndex = answers[q.questionNumber];
-            if (correctTextOrIndex !== undefined) {
-              let correctIndex = q.options.findIndex(opt => opt === correctTextOrIndex);
-              if (correctIndex === -1) {
-                const potentialIndex = parseInt(correctTextOrIndex, 10) - 1;
-                if (!isNaN(potentialIndex) && potentialIndex >= 0 && potentialIndex < q.options.length) {
-                  correctIndex = potentialIndex;
-                }
-              }
-              if (correctIndex !== -1) {
-                q.correctOption = { index: correctIndex, text: q.options[correctIndex] };
-              }
-            }
-          });
-        });
-
-        if (passages.every(p => !p.passageText.trim() && p.questions.length === 0) && vocab.length === 0) return null;
-
-        const result = { title, sourceUrl: window.location.href, passages };
-        if (vocab.length > 0) result.vocab = vocab;
-        return result;
       } else {
         // --- PARSING LOGIC FOR NON-READING CATEGORIES ---
         let parsingMode = 'questions';
