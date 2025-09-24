@@ -102,7 +102,7 @@ async function scrapeTestPage(page, url, category) {
                 currentPassage.passageImage = el.querySelector('img')?.src || '';
               }
             } else if (el.tagName === 'P') {
-              const isQuestionMarker = text.includes('しつもん') || /「[０-９]+」には、なにをいれますか/.test(text);
+              const isQuestionMarker = text.includes('しつもん') || /「[0-9０-９]+」には、なにをいれますか/.test(text);
               const hasRadioButtons = !!el.querySelector('input[type="radio"]');
 
               if (isQuestionMarker && !hasRadioButtons) {
@@ -134,7 +134,7 @@ async function scrapeTestPage(page, url, category) {
                 } else {
                   if (currentQuestion.questionText.trim() === '') {
                     let previousNode = el.previousElementSibling;
-                    while (previousNode && (previousNode.tagName !== 'P' || !previousNode.innerText.includes('しつもん') && ! /「[０-９]+」には、なにをいれますか/.test(previousNode.innerText))) {
+                    while (previousNode && (previousNode.tagName !== 'P' || !previousNode.innerText.includes('しつもん'))) {
                       previousNode = previousNode.previousElementSibling;
                     }
                     if (previousNode) {
@@ -156,14 +156,12 @@ async function scrapeTestPage(page, url, category) {
               return temp.textContent.trim();
             });
             lines.forEach(line => {
-              const match = line.match(/Question\s*(\d+):\s*(.*)/);
+              const match = line.match(/Question\s*(\d+):\s*(\d+)\s*\(.*=>\s*(.*?)\)/);
               if (match) {
                 const qNum = parseInt(match[1], 10);
-                let answerText = match[2].trim();
-                if (answerText.includes('=>')) {
-                  answerText = answerText.split('=>')[1].replace(/<[^>]*>/g, '').replace(/\)$/, '').trim();
-                }
-                answers[qNum] = answerText;
+                const correctIndex = parseInt(match[2], 10) - 1;
+                let correctText = match[3].trim().replace(/[\(\)]/g, '').trim();
+                answers[qNum] = { index: correctIndex, text: correctText };
               }
             });
           } else if (mode === 'vocab' && el.tagName === 'P') {
@@ -186,8 +184,12 @@ async function scrapeTestPage(page, url, category) {
         passages.forEach(passage => {
           passage.passageText = passage.passageText.trim();
           passage.questions.forEach(q => {
-            const correctTextOrIndex = answers[q.questionNumber];
-            if (correctTextOrIndex !== undefined) {
+            const correctInfo = answers[q.questionNumber];
+            if (correctInfo !== undefined) {
+              q.correctOption = { index: correctInfo.index, text: correctInfo.text };
+            } else if (answers[q.questionNumber] !== undefined) {
+              // Fallback to original logic if not object
+              const correctTextOrIndex = answers[q.questionNumber];
               let correctIndex = q.options.findIndex(opt => opt === correctTextOrIndex);
               if (correctIndex === -1) {
                 const potentialIndex = parseInt(correctTextOrIndex, 10) - 1;
@@ -312,6 +314,7 @@ async function scrapeTestPage(page, url, category) {
     return null;
   }
 }
+
 // [Rest of the code (scrapeAllTests, scrapeVocabularyLists, scrapeGrammarDetailPage, scrapeGrammarLists, main) remains unchanged]
 async function scrapeAllTests(browser) {
   console.log('🚀 Starting scrape of all exercise tests...');
@@ -355,15 +358,15 @@ async function scrapeAllTests(browser) {
           }
         }
 
-        // if (exerciseNum === 12 || exerciseNum === 13) {
-        //   console.log(`--- DEBUG LOG FOR ${docId} ---`);
-        //   console.log(JSON.stringify(quizData, null, 2));
-        //   console.log(`--- END DEBUG LOG FOR ${docId} ---`);
-        //   await page.close();
-        //   exerciseNum++;
-        //   consecutiveFailures = 0;
-        //   continue;
-        // }
+        if (exerciseNum === 12 || exerciseNum === 13) {
+          console.log(`--- DEBUG LOG FOR ${docId} ---`);
+          console.log(JSON.stringify(quizData, null, 2));
+          console.log(`--- END DEBUG LOG FOR ${docId} ---`);
+          await page.close();
+          exerciseNum++;
+          consecutiveFailures = 0;
+          continue;
+        }
 
         if (quizData) {
           consecutiveFailures = 0;
