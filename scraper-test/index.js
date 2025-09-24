@@ -65,67 +65,6 @@ async function scrapeTestPage(page, url, category) {
 
         const commitPassage = () => {
           commitQuestion();
-          if (currentPassage && currentPassage.passageText) {
-            const passageLines = currentPassage.passageText.trim().split('\n').map(line => line.trim()).filter(Boolean);
-            let questionText = '';
-            let options = [];
-            let questionNumber = globalQuestionCounter;
-
-            for (let line of passageLines) {
-              if (/「\d+」には、なにをいれますか/.test(line) || line.includes('「しつもん」')) {
-                if (questionText && options.length > 0) {
-                  commitQuestion();
-                  currentQuestion = {
-                    questionNumber: questionNumber++,
-                    questionText: questionText.trim(),
-                    options: options.slice(0, 4), // Limit to 4 options
-                    correctOption: null
-                  };
-                  if (answers[currentQuestion.questionNumber]) {
-                    let correctIndex = currentQuestion.options.findIndex(opt => opt === answers[currentQuestion.questionNumber]);
-                    if (correctIndex === -1) {
-                      correctIndex = parseInt(answers[currentQuestion.questionNumber], 10) - 1;
-                    }
-                    if (correctIndex >= 0 && correctIndex < currentQuestion.options.length) {
-                      currentQuestion.correctOption = { index: correctIndex, text: currentQuestion.options[correctIndex] };
-                    }
-                  }
-                  currentPassage.questions.push(currentQuestion);
-                  currentQuestion = null;
-                }
-                questionText = line.replace(/「しつもん」/g, '').trim();
-                options = [];
-              } else if (questionText && options.length < 4) {
-                options.push(line);
-              }
-            }
-
-            if (questionText && options.length > 0) {
-              commitQuestion();
-              currentQuestion = {
-                questionNumber: questionNumber++,
-                questionText: questionText.trim(),
-                options: options.slice(0, 4),
-                correctOption: null
-              };
-              if (answers[currentQuestion.questionNumber]) {
-                let correctIndex = currentQuestion.options.findIndex(opt => opt === answers[currentQuestion.questionNumber]);
-                if (correctIndex === -1) {
-                  correctIndex = parseInt(answers[currentQuestion.questionNumber], 10) - 1;
-                }
-                if (correctIndex >= 0 && correctIndex < currentQuestion.options.length) {
-                  currentQuestion.correctOption = { index: correctIndex, text: currentQuestion.options[correctIndex] };
-                }
-              }
-              currentPassage.questions.push(currentQuestion);
-              currentQuestion = null;
-            }
-
-            // Update passageText to exclude the extracted questions and options
-            currentPassage.passageText = passageLines
-              .filter(line => !/「\d+」には、なにをいれますか/.test(line) && !line.includes('「しつもん」') && !line.match(/^(きのう|よる|かいしゃ|日よう日|しかし|それでは|ちょうど|じゃあ|まで|から|でも|ながら|とおく|ちかく|とおい|ちかい|１|２|３|４|５|６|７|８|１５０ページ|２００ページ|２５０ページ)$/))
-              .join('\n');
-          }
           if (currentPassage) {
             passages.push(currentPassage);
           }
@@ -163,26 +102,19 @@ async function scrapeTestPage(page, url, category) {
                 currentPassage.passageImage = el.querySelector('img')?.src || '';
               }
             } else if (el.tagName === 'P') {
-              const isQuestionMarker = text.includes('しつもん') || /「\d+」には、なにをいれますか/.test(text);
+              const isQuestionMarker = text.includes('しつもん') || /「[0-9０-９]+」には、なにをいれますか/.test(text);
               const hasRadioButtons = !!el.querySelector('input[type="radio"]');
 
               if (isQuestionMarker && !hasRadioButtons) {
                 commitQuestion();
-                // Handle new format: question and options in same <p> tag, separated by \n
                 const lines = text.split('\n').map(line => line.trim()).filter(Boolean);
-                if (lines.length > 0 && /「\d+」には、なにをいれますか/.test(lines[0])) {
-                  currentQuestion = {
-                    questionNumber: globalQuestionCounter++,
-                    questionText: lines[0].replace(/「しつもん」/g, '').trim(),
-                    options: lines.slice(1),
-                    correctOption: null
-                  };
-                  mode = 'options';
-                } else {
-                  // Original logic for other question formats
-                  currentQuestion = { questionNumber: globalQuestionCounter++, questionText: text, options: [], correctOption: null };
-                  mode = 'options';
-                }
+                currentQuestion = {
+                  questionNumber: globalQuestionCounter++,
+                  questionText: lines[0].replace(/「しつもん」/g, '').trim(),
+                  options: lines.slice(1),
+                  correctOption: null
+                };
+                mode = 'options';
               } else if (hasRadioButtons || (mode === 'options' && currentQuestion)) {
                 if (!currentQuestion) {
                   commitQuestion();
@@ -224,14 +156,12 @@ async function scrapeTestPage(page, url, category) {
               return temp.textContent.trim();
             });
             lines.forEach(line => {
-              const match = line.match(/Question\s*(\d+):\s*(.*)/);
+              const match = line.match(/Question\s*(\d+):\s*(\d+)\s*\(.*=>\s*(.*?)\)/);
               if (match) {
                 const qNum = parseInt(match[1], 10);
-                let answerText = match[2].trim();
-                if (answerText.includes('=>')) {
-                  answerText = answerText.split('=>')[1].replace(/<[^>]*>/g, '').trim();
-                }
-                answers[qNum] = answerText;
+                const correctIndex = parseInt(match[2], 10) - 1;
+                let correctText = match[3].trim().replace(/[\(\)]/g, '').trim();
+                answers[qNum] = { index: correctIndex, text: correctText };
               }
             });
           } else if (mode === 'vocab' && el.tagName === 'P') {
@@ -254,8 +184,12 @@ async function scrapeTestPage(page, url, category) {
         passages.forEach(passage => {
           passage.passageText = passage.passageText.trim();
           passage.questions.forEach(q => {
-            const correctTextOrIndex = answers[q.questionNumber];
-            if (correctTextOrIndex !== undefined) {
+            const correctInfo = answers[q.questionNumber];
+            if (correctInfo !== undefined) {
+              q.correctOption = { index: correctInfo.index, text: correctInfo.text };
+            } else if (answers[q.questionNumber] !== undefined) {
+              // Fallback to original logic if not object
+              const correctTextOrIndex = answers[q.questionNumber];
               let correctIndex = q.options.findIndex(opt => opt === correctTextOrIndex);
               if (correctIndex === -1) {
                 const potentialIndex = parseInt(correctTextOrIndex, 10) - 1;
