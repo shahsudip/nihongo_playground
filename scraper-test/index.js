@@ -48,7 +48,6 @@ async function scrapeTestPage(page, url, category) {
       };
 
       if (currentCategory === 'reading') {
-        // This is a new, more robust state-machine based parser
         let currentPassage = null;
         let currentQuestion = null;
         let mode = 'seeking'; // seeking, passage, question, options, vocab, answers
@@ -57,7 +56,7 @@ async function scrapeTestPage(page, url, category) {
         const commitQuestion = () => {
             if (currentQuestion && currentPassage) {
                 currentQuestion.questionText = currentQuestion.questionText.replace(/「しつもん」/g, '').trim();
-                if (currentQuestion.questionText || currentQuestion.options.length > 0) {
+                if (currentQuestion.questionText && (currentQuestion.questionText.trim() !== '' || currentQuestion.options.length > 0)) {
                     currentPassage.questions.push(currentQuestion);
                 }
             }
@@ -74,14 +73,14 @@ async function scrapeTestPage(page, url, category) {
 
         const allNodes = Array.from(content.childNodes);
 
-        for (const node of allNodes) {
+        for (let i = 0; i < allNodes.length; i++) {
+            const node = allNodes[i];
             if (node.nodeType !== Node.ELEMENT_NODE) continue;
 
             const el = node;
             const text = el.innerText?.trim();
             const strongText = el.querySelector('strong')?.innerText?.trim() || '';
 
-            // --- Mode Switching ---
             if (strongText.startsWith('Reading Passage')) {
                 commitPassage();
                 currentPassage = { passageTitle: strongText, passageImage: '', passageText: '', questions: [] };
@@ -95,7 +94,6 @@ async function scrapeTestPage(page, url, category) {
                 mode = 'vocab';
             }
 
-            // --- Data Processing based on Mode ---
             if (mode === 'passage' || mode === 'question' || mode === 'options') {
                 if (el.tagName === 'FIGURE') {
                     if (currentQuestion) {
@@ -112,7 +110,7 @@ async function scrapeTestPage(page, url, category) {
                         currentQuestion = { questionNumber: globalQuestionCounter++, questionText: text, options: [], correctOption: null };
                         mode = 'options';
                     } else if (hasRadioButtons || (mode === 'options' && currentQuestion)) {
-                        if (!currentQuestion) { 
+                        if (!currentQuestion) {
                              commitQuestion();
                              currentQuestion = { questionNumber: globalQuestionCounter++, questionText: " ", options: [], correctOption: null };
                         }
@@ -128,7 +126,7 @@ async function scrapeTestPage(page, url, category) {
                              currentQuestion.questionText = optionsFromP[0];
                              currentQuestion.options.push(...optionsFromP.slice(1));
                          } else {
-                            if (currentQuestion.questionText === " ") {
+                            if (currentQuestion.questionText.trim() === "") {
                                 let previousNode = el.previousElementSibling;
                                 while(previousNode && (previousNode.tagName !== 'P' || !previousNode.innerText.includes('しつもん'))) {
                                     previousNode = previousNode.previousElementSibling;
@@ -139,7 +137,6 @@ async function scrapeTestPage(page, url, category) {
                             }
                             currentQuestion.options.push(...optionsFromP);
                          }
-
                         mode = 'options'; 
                     } else if (mode === 'passage' && currentPassage) {
                         currentPassage.passageText += text + '\n';
@@ -181,16 +178,14 @@ async function scrapeTestPage(page, url, category) {
         commitPassage();
         
       } else {
-        // --- PARSING LOGIC FOR NON-READING CATEGORIES (No Changes) ---
+        // --- PARSING LOGIC FOR NON-READING CATEGORIES ---
         let parsingMode = 'questions';
         let currentQuestion = null;
         let expectedQuestionNumber = 1;
         const commitCurrentQuestion = () => {
           if (currentQuestion) {
             currentQuestion.questionText = currentQuestion.questionText
-              .replace(/^\d+\.\s*/, '')
-              .replace(/「しつもん」/g, '')
-              .trim();
+              .replace(/^\d+\.\s*/, '').replace(/「しつもん」/g, '').trim();
             if (currentQuestion.questionText || currentQuestion.options.length > 0) {
               delete currentQuestion.inputName;
               questions.push(currentQuestion);
@@ -198,7 +193,6 @@ async function scrapeTestPage(page, url, category) {
             currentQuestion = null;
           }
         };
-
         const allParagraphs = content.querySelectorAll('p');
         allParagraphs.forEach(p => {
           const strongText = p.querySelector('strong')?.innerText?.trim() || '';
@@ -207,7 +201,6 @@ async function scrapeTestPage(page, url, category) {
             parsingMode = strongText.includes('Answer Key') ? 'answers' : 'vocab';
             return;
           }
-
           if (parsingMode === 'vocab') {
             const text = p.innerText.trim();
             if (text.includes(':')) {
@@ -229,9 +222,7 @@ async function scrapeTestPage(page, url, category) {
             }
             return;
           }
-
           if (parsingMode !== 'questions') return;
-
           const hasRadio = p.querySelector('input[type="radio"]');
           if (hasRadio) {
             const inputName = hasRadio.getAttribute('name');
@@ -252,17 +243,9 @@ async function scrapeTestPage(page, url, category) {
               commitCurrentQuestion();
               let questionNumber = parseInt(potentialQuestionText.match(/^(\d+)\./)?.[1], 10);
               if (!questionNumber) {
-                questionNumber = inputName && inputName.match(/quest(\d+)/i)
-                  ? parseInt(inputName.match(/quest(\d+)/i)[1])
-                  : expectedQuestionNumber;
+                questionNumber = inputName && inputName.match(/quest(\d+)/i) ? parseInt(inputName.match(/quest(\d+)/i)[1]) : expectedQuestionNumber;
               }
-              currentQuestion = {
-                questionNumber,
-                questionText: potentialQuestionText,
-                options: parts.slice(1),
-                correctOption: null,
-                inputName: inputName
-              };
+              currentQuestion = { questionNumber, questionText: potentialQuestionText, options: parts.slice(1), correctOption: null, inputName: inputName };
               expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
             }
           } else {
@@ -270,19 +253,15 @@ async function scrapeTestPage(page, url, category) {
           }
         });
         commitCurrentQuestion();
-        
         const answerKeyNode = Array.from(allParagraphs).find(p => p.querySelector('strong')?.innerText.trim().startsWith('Answer Key'));
         if(answerKeyNode){
             const answerText = answerKeyNode.innerText.trim();
             const regex = /Question\s*(\d+):\s*(\d+)/gi;
             let match;
             while ((match = regex.exec(answerText)) !== null) {
-              const questionNum = parseInt(match[1], 10);
-              const answerIndex = parseInt(match[2], 10) - 1;
-              answers[questionNum] = answerIndex;
+              answers[parseInt(match[1], 10)] = parseInt(match[2], 10) - 1;
             }
         }
-        
         questions.forEach(q => {
           if (answers[q.questionNumber] !== undefined) {
             const correctIndex = answers[q.questionNumber];
@@ -291,7 +270,6 @@ async function scrapeTestPage(page, url, category) {
             }
           }
         });
-
         questions = questions.filter(q => q.questionText || q.options.length > 0);
         if (questions.length === 0 && vocab.length === 0) return null;
         const result = { title, sourceUrl: window.location.href, questions };
@@ -299,16 +277,15 @@ async function scrapeTestPage(page, url, category) {
         return result;
       }
 
-      // --- UNIVERSAL ANSWER LINKING ---
       if (currentCategory === 'reading') {
         passages.forEach(passage => {
           passage.passageText = passage.passageText.trim();
           passage.questions.forEach(q => {
-            const correctText = answers[q.questionNumber];
-            if (correctText !== undefined) {
-              let correctIndex = q.options.findIndex(opt => opt === correctText);
+            const correctTextOrIndex = answers[q.questionNumber];
+            if (correctTextOrIndex !== undefined) {
+              let correctIndex = q.options.findIndex(opt => opt === correctTextOrIndex);
               if (correctIndex === -1) {
-                  const potentialIndex = parseInt(correctText, 10) - 1;
+                  const potentialIndex = parseInt(correctTextOrIndex, 10) - 1;
                   if (!isNaN(potentialIndex) && potentialIndex >= 0 && potentialIndex < q.options.length) {
                        correctIndex = potentialIndex;
                   }
