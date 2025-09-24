@@ -132,7 +132,7 @@ const ProfilePage = () => {
       }
       
       if (historyItem.type === 'jlpt') {
-        const title = `${historyItem.level?.toUpperCase()} ${historyItem.category} - ${historyItem.id?.replace('-', ' ')}`;
+        const title = `${historyItem.id?.replace('-', ' ')}`;
         return {
           id: quizId, title, type: 'jlpt',
           level: historyItem.level, category: historyItem.category,

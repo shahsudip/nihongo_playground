@@ -21,6 +21,7 @@ const ExerciseListPage = () => {
     const fetchData = async () => {
       try {
         const exerciseCollectionPath = `jlpt/${level}/${category}-test`;
+        console.log(`Fetching exercises from: ${exerciseCollectionPath}`);
         const exerciseSnapshot = await getDocs(collection(db, exerciseCollectionPath));
         const fetchedExercises = exerciseSnapshot.docs
           .map(doc => ({ id: doc.id, ...doc.data() }))
@@ -37,9 +38,11 @@ const ExerciseListPage = () => {
         const fetchedHistory = {};
         historySnapshot.forEach(doc => {
           const data = doc.data();
-          const key = data.exerciseId || doc.id;
+          const key = data.quizId;
           if (key) {
             fetchedHistory[key] = data;
+          } else {
+            console.warn('Missing quizId in document:', doc.id);
           }
         });
         setHistory(fetchedHistory);
@@ -58,7 +61,7 @@ const ExerciseListPage = () => {
 
   return (
     <div className="exercise-list-container">
-        <button onClick={() => navigate(-1)} className="back-button">← Back</button>
+      <button onClick={() => navigate(-1)} className="back-button">← Back</button>
       <div className="exercise-list-header">
         <h1 className="exercise-list-title">{level.toUpperCase()} - {category} Exercises</h1>
       </div>
@@ -68,35 +71,49 @@ const ExerciseListPage = () => {
           const exerciseHistory = history[exercise.id];
           const title = exercise.id.replace(/-/g, ' ');
           
-          // --- FIX 1: Handle both data structures (standard and reading test) ---
-          const isReadingTest = category === 'reading-test' && exercise.passages;
-          let hasContent, totalQuestions;
+          const isReadingTest = category === 'reading' && exercise.passages;
+          let hasContent;
 
           if (isReadingTest) {
-            // For reading tests, check for questions inside the passages array
             hasContent = exercise.passages.some(p => p.questions && p.questions.length > 0);
-            totalQuestions = exercise.passages.reduce((sum, p) => sum + (p.questions?.length || 0), 0);
           } else {
-            // For all other tests, use the original check
             hasContent = exercise.questions && exercise.questions.length > 0;
-            totalQuestions = exercise.questions?.length || 0;
           }
           
           const isMastered = exerciseHistory?.status === 'mastered';
+          
+          // --- THIS IS THE ONLY CHANGE ---
+          // It determines the link and data to pass based on whether it's a reading test.
+          let linkTo, navigationState;
 
-          // --- FIX 2: Use the correctly calculated totalQuestions ---
-          const navigationState = {
-            quizId: exercise.id,
-            quizTitle: title,
-            level,
-            category,
-            type: 'jlpt',
-            totalQuestions: totalQuestions
-          };
+          if (isReadingTest) {
+            // For reading tests, navigate to the new reading quiz route 
+            // and pass the full exercise data.
+            linkTo = `/reading-quiz/${exercise.id}`;
+            navigationState = {
+              quizId: exercise.id,
+              quizTitle: title,
+              level,
+              category,
+              type: 'jlpt',
+              quizData: exercise 
+            };
+          } else {
+            // For all other tests, use the original navigation logic.
+            linkTo = `/quiz/${exercise.id}`;
+            navigationState = {
+              quizId: exercise.id,
+              quizTitle: title,
+              level,
+              category,
+              type: 'jlpt',
+              totalQuestions: exercise.questions?.length || 0
+            };
+          }
 
           return (
             <Link
-              to={`/quiz/${exercise.id}`}
+              to={linkTo}
               state={navigationState}
               key={exercise.id}
               className={`difficulty-button ${isMastered ? 'mastered' : ''} ${!hasContent ? 'locked' : ''}`}

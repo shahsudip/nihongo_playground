@@ -32,6 +32,8 @@ const JlptQuizPage = () => {
     type = 'jlpt' // Default to 'jlpt' for this page
   } = state || {};
 
+    const historyDocId = quizId && level && category ? `${level}-${category}-${quizId}` : null;
+
   const [showCompletionModal, setShowCompletionModal] = useState(false);
   const [finalScore, setFinalScore] = useState({ score: 0, total: 0 });
 
@@ -40,12 +42,13 @@ const JlptQuizPage = () => {
 
   useEffect(() => {
     return () => {
-      if (isQuizCompletedRef.current || !quizId || !currentUser) return;
+      if (isQuizCompletedRef.current || !historyDocId  || !currentUser) return;
       const saveIncompleteState = async () => {
         try {
-          const historyDocRef = doc(db, "users", currentUser.uid, "quizHistory", quizId);
+          const historyDocRef = doc(db, "users", currentUser.uid, "quizHistory", historyDocId);
           const partialResult = {
             ...(quizStateRef.current || {}),
+            quizId,
             timestamp: new Date().toISOString(),
             status: "incomplete",
             level,
@@ -59,13 +62,13 @@ const JlptQuizPage = () => {
       };
       saveIncompleteState();
     };
-  }, [quizId, currentUser, level, category, type]);
+  },[historyDocId, currentUser, level, category, type, quizId]); 
 
   const onQuizComplete = async (finalStats) => {
     isQuizCompletedRef.current = true;
-    if (!currentUser) return;
+        if (!currentUser || !historyDocId) return;
     try {
-      const historyDocRef = doc(db, "users", currentUser.uid, "quizHistory", quizId);
+      const historyDocRef = doc(db, "users", currentUser.uid, "quizHistory", historyDocId);
       const finalResult = {
         ...finalStats,
         quizId,
@@ -85,9 +88,9 @@ const JlptQuizPage = () => {
 
   const handleEndQuizEarly = async (stats) => {
     isQuizCompletedRef.current = true;
-    if (!currentUser) return;
+        if (!currentUser || !historyDocId) return;
     try {
-      const historyDocRef = doc(db, "users", currentUser.uid, "quizHistory", quizId);
+      const historyDocRef = doc(db, "users", currentUser.uid, "quizHistory", historyDocId);
       const partialResult = {
         ...stats,
         quizId,

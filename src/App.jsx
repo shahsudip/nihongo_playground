@@ -1,5 +1,4 @@
 import React from 'react';
-// --- THIS IS THE FIX: We need to import 'Navigate' here ---
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './context/AuthContext.jsx';
 import './assets/app_style.css';
@@ -12,6 +11,8 @@ import ResultsPage from './components/result_screen.jsx';
 import ProfilePage from './components/profile_screen.jsx';
 import ExerciseGridPage from './components/exercise_grid_screen.jsx';
 import StandardQuizPage from './components/standard_quiz_screen.jsx';
+import ReadingQuizPage from './components/ReadingQUizPage.jsx';
+
 
 // This component protects routes that require a user to be logged in
 function ProtectedRoute({ children }) {
@@ -32,7 +33,7 @@ export default function App() {
             path="/profile"
             element={<ProtectedRoute><ProfilePage /></ProtectedRoute>}
           />
- <Route
+          <Route
             path="/levels"
             element={<ProtectedRoute><LevelSelectionPage /></ProtectedRoute>}
           />
@@ -55,6 +56,11 @@ export default function App() {
           <Route
             path="/quiz/:quizId"
             element={<ProtectedRoute><JlptQuizPage /></ProtectedRoute>}
+          />
+
+          <Route
+            path="/reading-quiz/:quizId"
+            element={<ProtectedRoute><ReadingQuizPage /></ProtectedRoute>}
           />
           <Route
             path="/results"

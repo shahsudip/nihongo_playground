@@ -926,3 +926,235 @@ width: 100%;
   align-items: center;
   width: max-content;
 }
+
+.reading-quiz-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.reading-quiz-container .quiz-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.reading-quiz-container .quiz-main-title {
+    font-size: 2.5rem;
+    color: var(--text-light);
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.reading-quiz-container .quiz-body {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.passage-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: sticky;
+    top: 40px;
+}
+
+.passage-button {
+    width: 100%;
+    padding: 15px 20px;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: left;
+    color: var(--text-medium);
+    background-color: var(--background-light);
+    border: 1px solid var(--surface-light);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    position: relative;
+}
+
+.passage-button:hover {
+    background-color: var(--surface-light);
+    color: var(--text-light);
+}
+
+.passage-button.active {
+    background-color: var(--primary-green);
+    color: white;
+    border-color: var(--primary-green-dark);
+}
+
+.active-question-indicator {
+    height: 10px;
+    width: 10px;
+    background-color: var(--feedback-new);
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(66, 153, 225, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(66, 153, 225, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(66, 153, 225, 0); }
+}
+
+.content-area {
+    background-color: var(--background-light);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.passage-content {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--surface-light);
+    margin-bottom: 30px;
+}
+
+.passage-title {
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    margin: 0 0 15px 0;
+}
+
+.passage-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    white-space: pre-wrap;
+}
+
+.question-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.carousel-arrow {
+    background-color: var(--surface-light);
+    color: var(--text-light);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    flex-shrink: 0;
+    line-height: 50px;
+}
+
+.carousel-arrow:hover:not(:disabled) {
+    background-color: #718096;
+}
+
+.carousel-arrow:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.question-content {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.question-text {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.option-button:disabled:not(.correct):not(.incorrect) {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: var(--surface-light);
+}
+.option-button:disabled:not(.correct):not(.incorrect):hover {
+    transform: none;
+}
+
+@media (max-width: 992px) {
+    .reading-quiz-container .quiz-body {
+        grid-template-columns: 1fr;
+    }
+    .passage-list {
+        position: static;
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 15px;
+    }
+    .passage-button {
+        white-space: nowrap;
+    }
+}
+
+/* Styles for the vocabulary highlighting feature */
+
+/* The highlighted word itself (the "tag") */
+.highlighted-vocab {
+    position: relative; /* This is necessary for positioning the tooltip */
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.25em; /* Slightly larger for emphasis */
+    display: inline-block; /* Ensures proper hover area */
+}
+
+/* The tooltip that appears on hover */
+.vocab-tooltip {
+    visibility: hidden; /* Hidden by default */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    /* Tooltip appearance */
+    width: 240px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: normal; /* Reset font weight inside tooltip */
+    font-size: 14px;
+    line-height: 1.6;
+
+    /* Positioning */
+    position: absolute;
+    z-index: 10;
+    bottom: 140%; /* Position above the highlighted text */
+    left: 50%;
+    transform: translateX(-50%); /* Center the tooltip */
+
+    /* Box shadow for depth */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Tooltip paragraph styling */
+.vocab-tooltip p {
+    margin: 5px 0;
+}
+
+/* The small arrow pointing down from the tooltip */
+.vocab-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+/* Show the tooltip when hovering over the highlighted word */
+.highlighted-vocab:hover .vocab-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
