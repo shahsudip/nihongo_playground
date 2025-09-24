@@ -8,7 +8,7 @@ console.log('JLPT Quiz Scraper started with Stealth Mode.');
 
 // Ensure your FIREBASE_SERVICE_ACCOUNT environment variable is set correctly
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-const LEVELS = ['n5', 'n4'];
+const LEVELS = ['n5'];
 const TEST_CATEGORIES = ['grammar', 'vocabulary', 'kanji', 'reading'];
 const BASE_URL = 'https://japanesetest4you.com/';
 
@@ -65,13 +65,14 @@ async function scrapeTestPage(page, url, category) {
 
 
         // Post-process passageText to extract embedded questions
+        // Post-process passageText to extract embedded questions
         if (currentPassage && currentPassage.passageText) {
           const passageLines = currentPassage.passageText.trim().split('\n').map(line => line.trim()).filter(Boolean);
           let questionText = '';
           let options = [];
 
           for (let line of passageLines) {
-            if (/「\d+」には、なにをいれますか/.test(line)) {
+            if (/「\d+」には、なにをいれますか/.test(line) || line.includes('「しつもん」')) {
               if (questionText && options.length > 0) {
                 commitQuestion();
                 currentQuestion = {
@@ -80,7 +81,10 @@ async function scrapeTestPage(page, url, category) {
                   options: options,
                   correctOption: null
                 };
-                mode = 'options';
+                // Set correctOption from answers if available
+                if (answers[currentQuestion.questionNumber]) {
+                  currentQuestion.correctOption = answers[currentQuestion.questionNumber];
+                }
               }
               questionText = line.replace(/「しつもん」/g, '').trim();
               options = [];
@@ -97,12 +101,14 @@ async function scrapeTestPage(page, url, category) {
               options: options,
               correctOption: null
             };
-            mode = 'options';
+            if (answers[currentQuestion.questionNumber]) {
+              currentQuestion.correctOption = answers[currentQuestion.questionNumber];
+            }
           }
 
-          // Update passageText to exclude the extracted questions
+          // Update passageText to exclude the extracted questions and options
           currentPassage.passageText = passageLines
-            .filter(line => !/「\d+」には、なにをいれますか/.test(line) && !line.match(/^(きのう|よる|かいしゃ|日よう日|しかし|それでは|ちょうど|じゃあ|まで|から|でも|ながら|とおく|ちかく|とおい|ちかい)$/))
+            .filter(line => !/「\d+」には、なにをいれますか/.test(line) && !line.includes('「しつもん」') && !line.match(/^(きのう|よる|かいしゃ|日よう日|しかし|それでは|ちょうど|じゃあ|まで|から|でも|ながら|とおく|ちかく|とおい|ちかい)$/))
             .join('\n');
         }
 
@@ -204,18 +210,17 @@ async function scrapeTestPage(page, url, category) {
               const temp = document.createElement('div');
               temp.innerHTML = line;
               return temp.textContent.trim();
-            });
+            }).filter(Boolean);
             lines.forEach(line => {
-              const match = line.match(/Question\s*(\d+):\s*(.*)/);
+              const match = line.match(/Question\s*(\d+):\s*(\d+)\s*\((.*?)=>\s*(.*?)\)/);
               if (match) {
                 const qNum = parseInt(match[1], 10);
-                let answerText = match[2].trim();
-                if (answerText.includes('=>')) {
-                  answerText = answerText.split('=>')[1].replace(/<[^>]*>/g, '').trim();
-                }
-                answers[qNum] = answerText;
+                const correctIndex = parseInt(match[2], 10) - 1; // Convert to 0-based index
+                const correctText = match[4].trim(); // Extract the correct answer text
+                answers[qNum] = { index: correctIndex, text: correctText };
               }
             });
+
           } else if (mode === 'vocab' && el.tagName === 'P') {
             const lines = el.innerHTML.split('<br>').map(line => {
               const tempDiv = document.createElement('div');
