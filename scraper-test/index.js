@@ -31,20 +31,13 @@ async function scrapeTestPage(page, url, category) {
 
       const allParagraphs = Array.from(content.querySelectorAll('p'));
 
-      /**
-       * Parses a single line of text to extract Japanese, Romaji, and English.
-       * @param {string} line - The line of text to parse.
-       * @returns {object|null} - The parsed vocab item or null if invalid.
-       */
       const parseVocabLine = (line) => {
           if (line && line.includes(':')) {
               const parts = line.split(/:(.*)/s);
               if (parts.length < 2) return null;
-
               const japaneseAndRomaji = parts[0].trim();
               const english = parts[1].trim();
               let japanese = '', romaji = '';
-
               const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
               if (romajiMatch) {
                   romaji = romajiMatch[1].trim();
@@ -52,7 +45,6 @@ async function scrapeTestPage(page, url, category) {
               } else {
                   japanese = japaneseAndRomaji;
               }
-
               if (japanese && english) {
                   return { japanese, romaji, english };
               }
@@ -61,109 +53,219 @@ async function scrapeTestPage(page, url, category) {
       };
 
       if (currentCategory === 'reading') {
-        let currentPassage = null;
-        let currentQuestionInPassage = null;
-        let readingContentMode = 'passage'; 
+        const hasRadioButtons = !!content.querySelector('input[type="radio"]');
 
-        const commitCurrentQuestionInPassage = () => {
-          if (currentQuestionInPassage && currentPassage) {
-            currentQuestionInPassage.questionText = currentQuestionInPassage.questionText
-              .replace(/^\d+\.\s*/, '')
-              .replace(/「しつもん」/g, '')
-              .trim();
-            if (currentQuestionInPassage.questionText || currentQuestionInPassage.options.length > 0) {
-              delete currentQuestionInPassage.inputName;
-              currentPassage.questions.push(currentQuestionInPassage);
-            }
-            currentQuestionInPassage = null;
-          }
-        };
+        if (hasRadioButtons) {
+            // --- PARSING LOGIC FOR PAGES WITH RADIO BUTTONS (Original Method) ---
+            let currentPassage = null;
+            let currentQuestionInPassage = null;
+            let readingContentMode = 'passage';
 
-        content.childNodes.forEach(node => {
-          if (node.nodeType !== Node.ELEMENT_NODE) return;
-          const el = node;
-          const strongText = el.querySelector('strong')?.innerText?.trim() || '';
+            const commitCurrentQuestionInPassage = () => {
+              if (currentQuestionInPassage && currentPassage) {
+                currentQuestionInPassage.questionText = currentQuestionInPassage.questionText
+                  .replace(/^\d+\.\s*/, '').replace(/「しつもん」/g, '').trim();
+                if (currentQuestionInPassage.questionText || currentQuestionInPassage.options.length > 0) {
+                  delete currentQuestionInPassage.inputName;
+                  currentPassage.questions.push(currentQuestionInPassage);
+                }
+                currentQuestionInPassage = null;
+              }
+            };
 
-          if (el.tagName === 'P' && strongText.startsWith('Reading Passage')) {
+            content.childNodes.forEach(node => {
+              if (node.nodeType !== Node.ELEMENT_NODE) return;
+              const el = node;
+              const strongText = el.querySelector('strong')?.innerText?.trim() || '';
+
+              if (el.tagName === 'P' && strongText.startsWith('Reading Passage')) {
+                commitCurrentQuestionInPassage();
+                if (currentPassage) passages.push(currentPassage);
+                currentPassage = { passageTitle: strongText, passageImage: '', passageText: '', questions: [] };
+                expectedQuestionNumber = 1;
+                readingContentMode = 'passage';
+                return;
+              }
+              if (el.tagName === 'P' && (strongText.includes('New words') || strongText.includes('Answer Key'))) {
+                commitCurrentQuestionInPassage();
+                readingContentMode = strongText.includes('New words') ? 'vocab' : 'answers';
+                return;
+              }
+
+              if (readingContentMode === 'vocab' && el.tagName === 'P') {
+                if (el.innerHTML.includes('<br>')) {
+                    const lines = el.innerHTML.split('<br>').map(line => {
+                        const tempEl = document.createElement('div');
+                        tempEl.innerHTML = line;
+                        return tempEl.textContent.trim();
+                    }).filter(Boolean);
+                    lines.forEach(line => {
+                        const vocabItem = parseVocabLine(line);
+                        if (vocabItem) vocab.push(vocabItem);
+                    });
+                } else {
+                    const text = el.innerText.trim();
+                    const vocabItem = parseVocabLine(text);
+                    if (vocabItem) vocab.push(vocabItem);
+                }
+              } else if (readingContentMode === 'passage' && currentPassage) {
+                const hasRadio = el.tagName === 'P' && el.querySelector('input[type="radio"]');
+                if (hasRadio) {
+                  const inputName = el.querySelector('input[type="radio"]').getAttribute('name');
+                  const innerHTML = el.innerHTML;
+                  const parts = innerHTML.split('<br>').map(part => {
+                    const tempEl = document.createElement('div');
+                    tempEl.innerHTML = part;
+                    tempEl.querySelectorAll('input').forEach(input => input.remove());
+                    return tempEl.textContent.trim();
+                  }).filter(Boolean);
+                  if (parts.length === 0) return;
+                  const potentialQuestionText = parts[0] || '';
+                  const startsWithNumber = /^\d+\./.test(potentialQuestionText);
+                  const isContinuation = currentQuestionInPassage && currentQuestionInPassage.inputName === inputName && !startsWithNumber;
+                  if (isContinuation) {
+                    currentQuestionInPassage.options.push(...parts);
+                  } else {
+                    commitCurrentQuestionInPassage();
+                    let qNumMatch = potentialQuestionText.match(/^(\d+)\./);
+                    let qNumFromName = inputName && inputName.match(/quest(\d+)/i);
+                    let questionNumber = qNumMatch ? parseInt(qNumMatch[1],10) : (qNumFromName ? parseInt(qNumFromName[1], 10) + 1 : expectedQuestionNumber);
+                    
+                    currentQuestionInPassage = {
+                      questionNumber,
+                      questionText: potentialQuestionText,
+                      options: parts.slice(1),
+                      correctOption: null,
+                      inputName: inputName
+                    };
+                    expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
+                  }
+                } else {
+                  commitCurrentQuestionInPassage();
+                  if (el.tagName === 'FIGURE') {
+                    currentPassage.passageImage = el.querySelector('img')?.src || '';
+                  } else if (el.tagName === 'P' && el.innerText.trim()) {
+                    currentPassage.passageText += el.innerText.trim() + '\n';
+                  }
+                }
+              }
+            });
             commitCurrentQuestionInPassage();
             if (currentPassage) passages.push(currentPassage);
-            currentPassage = { passageTitle: strongText, passageImage: '', passageText: '', questions: [] };
-            expectedQuestionNumber = 1;
-            readingContentMode = 'passage';
-            return;
-          }
-          if (el.tagName === 'P' && (strongText.includes('New words') || strongText.includes('Answer Key'))) {
-            commitCurrentQuestionInPassage();
-            readingContentMode = strongText.includes('New words') ? 'vocab' : 'answers';
-            return;
-          }
+        } else {
+            // --- PARSING LOGIC FOR PAGES WITHOUT RADIO BUTTONS (Exercise 13 Method) ---
+            let currentPassage = null;
+            let contentMode = 'passage';
+            let questionCounter = 0;
+            const childNodes = Array.from(content.childNodes);
 
-          if (readingContentMode === 'vocab' && el.tagName === 'P') {
-            // DYNAMIC PARSING: Check if the paragraph contains multiple lines or a single line.
-            if (el.innerHTML.includes('<br>')) {
-                // New method: multiple vocab items in one <p> separated by <br>
-                const htmlContent = el.innerHTML;
-                const lines = htmlContent.split('<br>').map(line => {
-                    const tempEl = document.createElement('div');
-                    tempEl.innerHTML = line;
-                    return tempEl.textContent.trim();
-                }).filter(Boolean);
-                lines.forEach(line => {
-                    const vocabItem = parseVocabLine(line);
-                    if (vocabItem) vocab.push(vocabItem);
+            // First, parse the unique answer key format on these pages.
+            const answerKeyNode = childNodes.find(node => node.nodeType === Node.ELEMENT_NODE && node.textContent.includes('Answer Key:'));
+            if (answerKeyNode) {
+                const answerLines = answerKeyNode.innerHTML.split('<br>').map(line => {
+                    const temp = document.createElement('div');
+                    temp.innerHTML = line;
+                    return temp.textContent.trim();
                 });
-            } else {
-                // Old method: one vocab item per <p>
-                const text = el.innerText.trim();
-                const vocabItem = parseVocabLine(text);
-                if (vocabItem) vocab.push(vocabItem);
+                answerLines.forEach(line => {
+                    const match = line.match(/Question\s*(\d+):\s*(\d+)/);
+                    if (match) {
+                        const questionNum = parseInt(match[1], 10);
+                        const answerIndex = parseInt(match[2], 10) - 1;
+                        answers[questionNum] = answerIndex;
+                    }
+                });
             }
-          } else if (readingContentMode === 'passage' && currentPassage) {
-            const hasRadio = el.tagName === 'P' && el.querySelector('input[type="radio"]');
-            if (hasRadio) {
-              const inputName = el.querySelector('input[type="radio"]').getAttribute('name');
-              const innerHTML = el.innerHTML;
-              const parts = innerHTML.split('<br>').map(part => {
-                const tempEl = document.createElement('div');
-                tempEl.innerHTML = part;
-                tempEl.querySelectorAll('input').forEach(input => input.remove());
-                return tempEl.textContent.trim();
-              }).filter(Boolean);
-              if (parts.length === 0) return;
-              const potentialQuestionText = parts[0] || '';
-              const startsWithNumber = /^\d+\./.test(potentialQuestionText);
-              const isContinuation = currentQuestionInPassage && currentQuestionInPassage.inputName === inputName && !startsWithNumber;
-              if (isContinuation) {
-                currentQuestionInPassage.options.push(...parts);
-              } else {
-                commitCurrentQuestionInPassage();
-                let questionNumber = parseInt(potentialQuestionText.match(/^(\d+)\./)?.[1], 10);
-                if (!questionNumber) {
-                  const inputNameMatch = inputName && inputName.match(/quest(\d+)/i);
-                  questionNumber = inputNameMatch ? parseInt(inputNameMatch[1], 10) + 1 : expectedQuestionNumber;
+
+            // Now, parse passages and questions.
+            for (let i = 0; i < childNodes.length; i++) {
+                const node = childNodes[i];
+                if (node.nodeType !== Node.ELEMENT_NODE) continue;
+
+                const strongText = node.querySelector('strong')?.innerText?.trim() || '';
+
+                if (strongText.startsWith('Reading Passage')) {
+                    if (currentPassage) passages.push(currentPassage);
+                    currentPassage = { passageTitle: strongText, passageImage: '', passageText: '', questions: [] };
+                    contentMode = 'passage';
+                    continue;
                 }
-                currentQuestionInPassage = {
-                  questionNumber,
-                  questionText: potentialQuestionText,
-                  options: parts.slice(1),
-                  correctOption: null,
-                  inputName: inputName
-                };
-                expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
-              }
-            } else {
-              commitCurrentQuestionInPassage();
-              if (el.tagName === 'FIGURE') {
-                currentPassage.passageImage = el.querySelector('img')?.src || '';
-              } else if (el.tagName === 'P' && el.innerText.trim()) {
-                currentPassage.passageText += el.innerText.trim() + '\n';
-              }
+                if (strongText.includes('New words')) {
+                    contentMode = 'vocab';
+                    continue;
+                }
+                if (strongText.includes('Answer Key')) {
+                    contentMode = 'answers';
+                    continue;
+                }
+
+                if (contentMode === 'passage' && currentPassage) {
+                    if (node.tagName === 'FIGURE') {
+                        currentPassage.passageImage = node.querySelector('img')?.src || '';
+                    } else if (node.tagName === 'P') {
+                        const text = node.innerText.trim();
+                        const html = node.innerHTML;
+                        const isQuestion = text.includes('には、なにをいれますか。') || text.includes('「しつもん」');
+
+                        if (isQuestion) {
+                            questionCounter++;
+                            let questionText = '';
+                            let options = [];
+                            
+                            const lines = html.split('<br>').map(line => {
+                                const temp = document.createElement('div');
+                                temp.innerHTML = line;
+                                return temp.textContent.trim();
+                            }).filter(Boolean);
+
+                            if (lines.length > 1) { // Question and options in the same <p>
+                                questionText = lines[0];
+                                options = lines.slice(1);
+                            } else { // Question in this <p>, options in the next one
+                                questionText = text;
+                                const nextNode = childNodes[i + 1];
+                                if (nextNode && nextNode.nodeType === Node.ELEMENT_NODE && nextNode.tagName === 'P') {
+                                    options = nextNode.innerHTML.split('<br>').map(line => {
+                                        const temp = document.createElement('div');
+                                        temp.innerHTML = line;
+                                        return temp.textContent.trim();
+                                    }).filter(Boolean);
+                                    i++; // Skip the next node since we've processed it
+                                }
+                            }
+                            
+                            currentPassage.questions.push({
+                                questionNumber: questionCounter,
+                                questionText: questionText,
+                                options: options,
+                                correctOption: null // Will be filled later
+                            });
+                        } else {
+                            currentPassage.passageText += text + '\n';
+                        }
+                    }
+                } else if (contentMode === 'vocab' && node.tagName === 'P') {
+                    if (node.innerHTML.includes('<br>')) {
+                        const lines = node.innerHTML.split('<br>').map(line => {
+                            const tempEl = document.createElement('div');
+                            tempEl.innerHTML = line;
+                            return tempEl.textContent.trim();
+                        }).filter(Boolean);
+                        lines.forEach(line => {
+                           const vocabItem = parseVocabLine(line);
+                           if(vocabItem) vocab.push(vocabItem);
+                        });
+                    } else {
+                        const text = node.innerText.trim();
+                        const vocabItem = parseVocabLine(text);
+                        if (vocabItem) vocab.push(vocabItem);
+                    }
+                }
             }
-          }
-        });
-        commitCurrentQuestionInPassage();
-        if (currentPassage) passages.push(currentPassage);
+            if (currentPassage) passages.push(currentPassage);
+        }
       } else {
+        // --- PARSING LOGIC FOR NON-READING CATEGORIES ---
         let currentQuestion = null;
         const commitCurrentQuestion = () => {
           if (currentQuestion) {
@@ -188,10 +290,8 @@ async function scrapeTestPage(page, url, category) {
           }
 
           if (parsingMode === 'vocab') {
-             // DYNAMIC PARSING: Check if the paragraph contains multiple lines or a single line.
             if (p.innerHTML.includes('<br>')) {
-                const htmlContent = p.innerHTML;
-                const lines = htmlContent.split('<br>').map(line => {
+                const lines = p.innerHTML.split('<br>').map(line => {
                     const tempEl = document.createElement('div');
                     tempEl.innerHTML = line;
                     return tempEl.textContent.trim();
@@ -250,10 +350,11 @@ async function scrapeTestPage(page, url, category) {
         commitCurrentQuestion();
       }
 
+      // --- UNIVERSAL ANSWER LINKING ---
       allParagraphs.forEach(p => {
         const strongText = p.querySelector('strong')?.innerText?.trim() || '';
         if (strongText.includes('Answer Key')) parsingMode = 'answers';
-        if (parsingMode === 'answers') {
+        if (parsingMode === 'answers' && !strongText.includes('Answer Key:')) { // Avoid re-parsing the new format key
           const text = p.innerText.trim();
           const regex = /Question\s*(\d+):\s*(\d+)/gi;
           let match;
@@ -264,7 +365,7 @@ async function scrapeTestPage(page, url, category) {
           }
         }
       });
-
+      
       if (currentCategory === 'reading') {
         passages.forEach(passage => {
           passage.passageText = passage.passageText.trim();
@@ -277,7 +378,7 @@ async function scrapeTestPage(page, url, category) {
             }
           });
         });
-        if (passages.every(p => p.questions.length === 0)) return null;
+        if (passages.every(p => p.questions.length === 0) && vocab.length === 0) return null;
         const result = { title, sourceUrl: window.location.href, passages };
         if (vocab.length > 0) result.vocab = vocab;
         return result;
