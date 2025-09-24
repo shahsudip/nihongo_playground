@@ -25,191 +25,191 @@ async function scrapeTestPage(page, url, category) {
       if (!content) return null;
       const title = document.title.split('|')[0].trim();
       let passages = [], questions = [], answers = {}, vocab = [];
-      
+
       const parseVocabLine = (line) => {
         if (line && line.includes(':')) {
-            const parts = line.split(/:(.*)/s);
-            if (parts.length < 2) return null;
-            const japaneseAndRomaji = parts[0].trim();
-            const english = parts[1].trim();
-            let japanese = '', romaji = '';
-            const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
-            if (romajiMatch) {
-                romaji = romajiMatch[1].trim();
-                japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
-            } else {
-                japanese = japaneseAndRomaji;
-            }
-            if (japanese && english) {
-                return { japanese, romaji, english };
-            }
+          const parts = line.split(/:(.*)/s);
+          if (parts.length < 2) return null;
+          const japaneseAndRomaji = parts[0].trim();
+          const english = parts[1].trim();
+          let japanese = '', romaji = '';
+          const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
+          if (romajiMatch) {
+            romaji = romajiMatch[1].trim();
+            japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
+          } else {
+            japanese = japaneseAndRomaji;
+          }
+          if (japanese && english) {
+            return { japanese, romaji, english };
+          }
         }
         return null;
       };
 
       if (currentCategory === 'reading') {
-  let currentPassage = null;
-  let currentQuestion = null;
-  let mode = 'seeking'; // seeking, passage, question, options, vocab, answers
-  let globalQuestionCounter = 1;
+        let currentPassage = null;
+        let currentQuestion = null;
+        let mode = 'seeking'; // seeking, passage, question, options, vocab, answers
+        let globalQuestionCounter = 1;
 
-  const commitQuestion = () => {
-    if (currentQuestion && currentPassage) {
-      currentQuestion.questionText = currentQuestion.questionText.replace(/「しつもん」/g, '').trim();
-      if (currentQuestion.questionText && (currentQuestion.questionText.trim() !== '' || currentQuestion.options.length > 0)) {
-        currentPassage.questions.push(currentQuestion);
-      }
-    }
-    currentQuestion = null;
-  };
+        const commitQuestion = () => {
+          if (currentQuestion && currentPassage) {
+            currentQuestion.questionText = currentQuestion.questionText.replace(/「しつもん」/g, '').trim();
+            if (currentQuestion.questionText && (currentQuestion.questionText.trim() !== '' || currentQuestion.options.length > 0)) {
+              currentPassage.questions.push(currentQuestion);
+            }
+          }
+          currentQuestion = null;
+        };
 
-  const commitPassage = () => {
-    commitQuestion();
-    if (currentPassage) {
-      passages.push(currentPassage);
-    }
-    currentPassage = null;
-  };
-
-  const allNodes = Array.from(content.childNodes);
-
-  for (let i = 0; i < allNodes.length; i++) {
-    const node = allNodes[i];
-    if (node.nodeType !== Node.ELEMENT_NODE) continue;
-
-    const el = node;
-    const text = el.innerText?.trim();
-    const strongText = el.querySelector('strong')?.innerText?.trim() || '';
-
-    if (strongText.startsWith('Reading Passage')) {
-      commitPassage();
-      currentPassage = { passageTitle: strongText, passageImage: '', passageText: '', questions: [] };
-      mode = 'passage';
-      continue;
-    } else if (strongText.includes('Answer Key')) {
-      commitPassage();
-      mode = 'answers';
-    } else if (strongText.includes('New words')) {
-      commitPassage();
-      mode = 'vocab';
-    }
-
-    if (mode === 'passage' || mode === 'question' || mode === 'options') {
-      if (el.tagName === 'FIGURE') {
-        if (currentQuestion) {
-          currentQuestion.questionImage = el.querySelector('img')?.src || '';
-        } else if (currentPassage) {
-          currentPassage.passageImage = el.querySelector('img')?.src || '';
-        }
-      } else if (el.tagName === 'P') {
-        const isQuestionMarker = text.match(/「\d+」には、なにをいれますか/) || text.includes('しつもん');
-        const hasRadioButtons = !!el.querySelector('input[type="radio"]');
-
-        if (isQuestionMarker && !hasRadioButtons) {
+        const commitPassage = () => {
           commitQuestion();
-          // Split the text to isolate question and options
-          const lines = text.split('\n').map(line => line.trim()).filter(Boolean);
-          currentQuestion = {
-            questionNumber: globalQuestionCounter++,
-            questionText: lines[0] || '',
-            options: lines.slice(1),
-            correctOption: null
-          };
-          mode = 'options';
-        } else if (hasRadioButtons || (mode === 'options' && currentQuestion)) {
-          if (!currentQuestion) {
-            currentQuestion = { questionNumber: globalQuestionCounter++, questionText: '', options: [], correctOption: null };
+          if (currentPassage) {
+            passages.push(currentPassage);
+          }
+          currentPassage = null;
+        };
+
+        const allNodes = Array.from(content.childNodes);
+
+        for (let i = 0; i < allNodes.length; i++) {
+          const node = allNodes[i];
+          if (node.nodeType !== Node.ELEMENT_NODE) continue;
+
+          const el = node;
+          const text = el.innerText?.trim();
+          const strongText = el.querySelector('strong')?.innerText?.trim() || '';
+
+          if (strongText.startsWith('Reading Passage')) {
+            commitPassage();
+            currentPassage = { passageTitle: strongText, passageImage: '', passageText: '', questions: [] };
+            mode = 'passage';
+            continue;
+          } else if (strongText.includes('Answer Key')) {
+            commitPassage();
+            mode = 'answers';
+          } else if (strongText.includes('New words')) {
+            commitPassage();
+            mode = 'vocab';
           }
 
-          const optionsFromP = el.innerHTML.split(/<br>|\n/).map(part => {
-            const tempDiv = document.createElement('div');
-            tempDiv.innerHTML = part;
-            tempDiv.querySelectorAll('input').forEach(i => i.remove());
-            return tempDiv.textContent.trim();
-          }).filter(Boolean);
-
-          // Check if the paragraph contains the question text
-          if (optionsFromP.length > 0 && optionsFromP[0].match(/「\d+」には、なにをいれますか/)) {
-            currentQuestion.questionText = optionsFromP[0];
-            currentQuestion.options.push(...optionsFromP.slice(1));
-          } else {
-            // If no question text in this paragraph, look for previous question text
-            if (currentQuestion.questionText.trim() === '') {
-              let previousNode = el.previousElementSibling;
-              while (previousNode && (previousNode.tagName !== 'P' || !previousNode.innerText.match(/「\d+」には、なにをいれますか/))) {
-                previousNode = previousNode.previousElementSibling;
+          if (mode === 'passage' || mode === 'question' || mode === 'options') {
+            if (el.tagName === 'FIGURE') {
+              if (currentQuestion) {
+                currentQuestion.questionImage = el.querySelector('img')?.src || '';
+              } else if (currentPassage) {
+                currentPassage.passageImage = el.querySelector('img')?.src || '';
               }
-              if (previousNode) {
-                currentQuestion.questionText = previousNode.innerText.split('\n')[0].trim();
+            } else if (el.tagName === 'P') {
+              const isQuestionMarker = text.match(/「\d+」には、なにをいれますか/) || text.includes('しつもん');
+              const hasRadioButtons = !!el.querySelector('input[type="radio"]');
+
+              if (isQuestionMarker && !hasRadioButtons) {
+                commitQuestion();
+                // Split the text to isolate question and options
+                const lines = text.split('\n').map(line => line.trim()).filter(Boolean);
+                currentQuestion = {
+                  questionNumber: globalQuestionCounter++,
+                  questionText: lines[0] || '',
+                  options: lines.slice(1),
+                  correctOption: null
+                };
+                mode = 'options';
+              } else if (hasRadioButtons || (mode === 'options' && currentQuestion)) {
+                if (!currentQuestion) {
+                  currentQuestion = { questionNumber: globalQuestionCounter++, questionText: '', options: [], correctOption: null };
+                }
+
+                const optionsFromP = el.innerHTML.split(/<br>|\n/).map(part => {
+                  const tempDiv = document.createElement('div');
+                  tempDiv.innerHTML = part;
+                  tempDiv.querySelectorAll('input').forEach(i => i.remove());
+                  return tempDiv.textContent.trim();
+                }).filter(Boolean);
+
+                // Check if the paragraph contains the question text
+                if (optionsFromP.length > 0 && optionsFromP[0].match(/「\d+」には、なにをいれますか/)) {
+                  currentQuestion.questionText = optionsFromP[0];
+                  currentQuestion.options.push(...optionsFromP.slice(1));
+                } else {
+                  // If no question text in this paragraph, look for previous question text
+                  if (currentQuestion.questionText.trim() === '') {
+                    let previousNode = el.previousElementSibling;
+                    while (previousNode && (previousNode.tagName !== 'P' || !previousNode.innerText.match(/「\d+」には、なにをいれますか/))) {
+                      previousNode = previousNode.previousElementSibling;
+                    }
+                    if (previousNode) {
+                      currentQuestion.questionText = previousNode.innerText.split('\n')[0].trim();
+                    }
+                  }
+                  currentQuestion.options.push(...optionsFromP);
+                }
+                mode = 'options';
+              } else if (mode === 'passage' && currentPassage) {
+                currentPassage.passageText += text + '\n';
               }
             }
-            currentQuestion.options.push(...optionsFromP);
-          }
-          mode = 'options';
-        } else if (mode === 'passage' && currentPassage) {
-          currentPassage.passageText += text + '\n';
-        }
-      }
-    } else if (mode === 'answers' && el.tagName === 'P') {
-      const answerHtml = el.innerHTML;
-      const lines = answerHtml.split('<br>').map(line => {
-        const temp = document.createElement('div');
-        temp.innerHTML = line;
-        return temp.textContent.trim();
-      });
-      lines.forEach(line => {
-        const match = line.match(/Question\s*(\d+):\s*(.*)/);
-        if (match) {
-          const qNum = parseInt(match[1], 10);
-          let answerText = match[2].trim();
-          if (answerText.includes('=>')) {
-            answerText = answerText.split('=>')[1].replace(/<[^>]*>/g, '').trim();
-          }
-          answers[qNum] = answerText;
-        }
-      });
-    } else if (mode === 'vocab' && el.tagName === 'P') {
-      const lines = el.innerHTML.split('<br>').map(line => {
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = line;
-        return tempDiv.textContent.trim();
-      }).filter(Boolean);
+          } else if (mode === 'answers' && el.tagName === 'P') {
+            const answerHtml = el.innerHTML;
+            const lines = answerHtml.split('<br>').map(line => {
+              const temp = document.createElement('div');
+              temp.innerHTML = line;
+              return temp.textContent.trim();
+            });
+            lines.forEach(line => {
+              const match = line.match(/Question\s*(\d+):\s*(.*)/);
+              if (match) {
+                const qNum = parseInt(match[1], 10);
+                let answerText = match[2].trim();
+                if (answerText.includes('=>')) {
+                  answerText = answerText.split('=>')[1].replace(/<[^>]*>/g, '').trim();
+                }
+                answers[qNum] = answerText;
+              }
+            });
+          } else if (mode === 'vocab' && el.tagName === 'P') {
+            const lines = el.innerHTML.split('<br>').map(line => {
+              const tempDiv = document.createElement('div');
+              tempDiv.innerHTML = line;
+              return tempDiv.textContent.trim();
+            }).filter(Boolean);
 
-      for (const line of lines) {
-        const vocabItem = parseVocabLine(line);
-        if (vocabItem) {
-          vocab.push(vocabItem);
-        }
-      }
-    }
-  }
-  commitPassage();
-
-  passages.forEach(passage => {
-    passage.passageText = passage.passageText.trim();
-    passage.questions.forEach(q => {
-      const correctTextOrIndex = answers[q.questionNumber];
-      if (correctTextOrIndex !== undefined) {
-        let correctIndex = q.options.findIndex(opt => opt === correctTextOrIndex);
-        if (correctIndex === -1) {
-          const potentialIndex = parseInt(correctTextOrIndex, 10) - 1;
-          if (!isNaN(potentialIndex) && potentialIndex >= 0 && potentialIndex < q.options.length) {
-            correctIndex = potentialIndex;
+            for (const line of lines) {
+              const vocabItem = parseVocabLine(line);
+              if (vocabItem) {
+                vocab.push(vocabItem);
+              }
+            }
           }
         }
-        if (correctIndex !== -1) {
-          q.correctOption = { index: correctIndex, text: q.options[correctIndex] };
-        }
-      }
-    });
-  });
+        commitPassage();
 
-  if (passages.every(p => !p.passageText.trim() && p.questions.length === 0) && vocab.length === 0) return null;
+        passages.forEach(passage => {
+          passage.passageText = passage.passageText.trim();
+          passage.questions.forEach(q => {
+            const correctTextOrIndex = answers[q.questionNumber];
+            if (correctTextOrIndex !== undefined) {
+              let correctIndex = q.options.findIndex(opt => opt === correctTextOrIndex);
+              if (correctIndex === -1) {
+                const potentialIndex = parseInt(correctTextOrIndex, 10) - 1;
+                if (!isNaN(potentialIndex) && potentialIndex >= 0 && potentialIndex < q.options.length) {
+                  correctIndex = potentialIndex;
+                }
+              }
+              if (correctIndex !== -1) {
+                q.correctOption = { index: correctIndex, text: q.options[correctIndex] };
+              }
+            }
+          });
+        });
 
-  const result = { title, sourceUrl: window.location.href, passages };
-  if (vocab.length > 0) result.vocab = vocab;
-  return result;
-} else {
+        if (passages.every(p => !p.passageText.trim() && p.questions.length === 0) && vocab.length === 0) return null;
+
+        const result = { title, sourceUrl: window.location.href, passages };
+        if (vocab.length > 0) result.vocab = vocab;
+        return result;
+      } else {
         // --- PARSING LOGIC FOR NON-READING CATEGORIES ---
         let parsingMode = 'questions';
         let currentQuestion = null;
@@ -286,13 +286,13 @@ async function scrapeTestPage(page, url, category) {
         });
         commitCurrentQuestion();
         const answerKeyNode = Array.from(allParagraphs).find(p => p.querySelector('strong')?.innerText.trim().startsWith('Answer Key'));
-        if(answerKeyNode){
-            const answerText = answerKeyNode.innerText.trim();
-            const regex = /Question\s*(\d+):\s*(\d+)/gi;
-            let match;
-            while ((match = regex.exec(answerText)) !== null) {
-              answers[parseInt(match[1], 10)] = parseInt(match[2], 10) - 1;
-            }
+        if (answerKeyNode) {
+          const answerText = answerKeyNode.innerText.trim();
+          const regex = /Question\s*(\d+):\s*(\d+)/gi;
+          let match;
+          while ((match = regex.exec(answerText)) !== null) {
+            answers[parseInt(match[1], 10)] = parseInt(match[2], 10) - 1;
+          }
         }
         questions.forEach(q => {
           if (answers[q.questionNumber] !== undefined) {
@@ -310,165 +310,165 @@ async function scrapeTestPage(page, url, category) {
       }
 
       if (currentCategory === 'reading') {
-  let currentPassage = null;
-  let currentQuestion = null;
-  let mode = 'seeking'; // seeking, passage, question, options, vocab, answers
-  let globalQuestionCounter = 1;
+        let currentPassage = null;
+        let currentQuestion = null;
+        let mode = 'seeking'; // seeking, passage, question, options, vocab, answers
+        let globalQuestionCounter = 1;
 
-  const commitQuestion = () => {
-    if (currentQuestion && currentPassage) {
-      currentQuestion.questionText = currentQuestion.questionText.replace(/「しつもん」/g, '').trim();
-      if (currentQuestion.questionText && (currentQuestion.questionText.trim() !== '' || currentQuestion.options.length > 0)) {
-        currentPassage.questions.push(currentQuestion);
-      }
-    }
-    currentQuestion = null;
-  };
+        const commitQuestion = () => {
+          if (currentQuestion && currentPassage) {
+            currentQuestion.questionText = currentQuestion.questionText.replace(/「しつもん」/g, '').trim();
+            if (currentQuestion.questionText && (currentQuestion.questionText.trim() !== '' || currentQuestion.options.length > 0)) {
+              currentPassage.questions.push(currentQuestion);
+            }
+          }
+          currentQuestion = null;
+        };
 
-  const commitPassage = () => {
-    commitQuestion();
-    if (currentPassage) {
-      passages.push(currentPassage);
-    }
-    currentPassage = null;
-  };
-
-  const allNodes = Array.from(content.childNodes);
-
-  for (let i = 0; i < allNodes.length; i++) {
-    const node = allNodes[i];
-    if (node.nodeType !== Node.ELEMENT_NODE) continue;
-
-    const el = node;
-    const text = el.innerText?.trim();
-    const strongText = el.querySelector('strong')?.innerText?.trim() || '';
-
-    if (strongText.startsWith('Reading Passage')) {
-      commitPassage();
-      currentPassage = { passageTitle: strongText, passageImage: '', passageText: '', questions: [] };
-      mode = 'passage';
-      continue;
-    } else if (strongText.includes('Answer Key')) {
-      commitPassage();
-      mode = 'answers';
-    } else if (strongText.includes('New words')) {
-      commitPassage();
-      mode = 'vocab';
-    }
-
-    if (mode === 'passage' || mode === 'question' || mode === 'options') {
-      if (el.tagName === 'FIGURE') {
-        if (currentQuestion) {
-          currentQuestion.questionImage = el.querySelector('img')?.src || '';
-        } else if (currentPassage) {
-          currentPassage.passageImage = el.querySelector('img')?.src || '';
-        }
-      } else if (el.tagName === 'P') {
-        const isQuestionMarker = text.match(/「\d+」には、なにをいれますか/) || text.includes('しつもん');
-        const hasRadioButtons = !!el.querySelector('input[type="radio"]');
-
-        if (isQuestionMarker && !hasRadioButtons) {
+        const commitPassage = () => {
           commitQuestion();
-          currentQuestion = { questionNumber: globalQuestionCounter++, questionText: text.split('\n')[0].trim(), options: [], correctOption: null };
-          // Split options from the same paragraph if they follow the question
-          const lines = text.split('\n').slice(1).map(line => line.trim()).filter(Boolean);
-          currentQuestion.options.push(...lines);
-          mode = 'options';
-        } else if (hasRadioButtons || (mode === 'options' && currentQuestion)) {
-          if (!currentQuestion) {
-            commitQuestion();
-            currentQuestion = { questionNumber: globalQuestionCounter++, questionText: '', options: [], correctOption: null };
+          if (currentPassage) {
+            passages.push(currentPassage);
+          }
+          currentPassage = null;
+        };
+
+        const allNodes = Array.from(content.childNodes);
+
+        for (let i = 0; i < allNodes.length; i++) {
+          const node = allNodes[i];
+          if (node.nodeType !== Node.ELEMENT_NODE) continue;
+
+          const el = node;
+          const text = el.innerText?.trim();
+          const strongText = el.querySelector('strong')?.innerText?.trim() || '';
+
+          if (strongText.startsWith('Reading Passage')) {
+            commitPassage();
+            currentPassage = { passageTitle: strongText, passageImage: '', passageText: '', questions: [] };
+            mode = 'passage';
+            continue;
+          } else if (strongText.includes('Answer Key')) {
+            commitPassage();
+            mode = 'answers';
+          } else if (strongText.includes('New words')) {
+            commitPassage();
+            mode = 'vocab';
           }
 
-          const optionsFromP = el.innerHTML.split('<br>').map(part => {
-            const tempDiv = document.createElement('div');
-            tempDiv.innerHTML = part;
-            tempDiv.querySelectorAll('input').forEach(i => i.remove());
-            return tempDiv.textContent.trim();
-          }).filter(Boolean);
-
-          // Check if the paragraph contains the question text
-          if (optionsFromP.length > 0 && optionsFromP[0].match(/「\d+」には、なにをいれますか/)) {
-            currentQuestion.questionText = optionsFromP[0];
-            currentQuestion.options.push(...optionsFromP.slice(1));
-          } else {
-            // If no question text in this paragraph, look for the previous question text
-            if (currentQuestion.questionText.trim() === '') {
-              let previousNode = el.previousElementSibling;
-              while (previousNode && (previousNode.tagName !== 'P' || !previousNode.innerText.match(/「\d+」には、なにをいれますか/))) {
-                previousNode = previousNode.previousElementSibling;
+          if (mode === 'passage' || mode === 'question' || mode === 'options') {
+            if (el.tagName === 'FIGURE') {
+              if (currentQuestion) {
+                currentQuestion.questionImage = el.querySelector('img')?.src || '';
+              } else if (currentPassage) {
+                currentPassage.passageImage = el.querySelector('img')?.src || '';
               }
-              if (previousNode) {
-                currentQuestion.questionText = previousNode.innerText.split('\n')[0].trim();
+            } else if (el.tagName === 'P') {
+              const isQuestionMarker = text.match(/「\d+」には、なにをいれますか/) || text.includes('しつもん');
+              const hasRadioButtons = !!el.querySelector('input[type="radio"]');
+
+              if (isQuestionMarker && !hasRadioButtons) {
+                commitQuestion();
+                currentQuestion = { questionNumber: globalQuestionCounter++, questionText: text.split('\n')[0].trim(), options: [], correctOption: null };
+                // Split options from the same paragraph if they follow the question
+                const lines = text.split('\n').slice(1).map(line => line.trim()).filter(Boolean);
+                currentQuestion.options.push(...lines);
+                mode = 'options';
+              } else if (hasRadioButtons || (mode === 'options' && currentQuestion)) {
+                if (!currentQuestion) {
+                  commitQuestion();
+                  currentQuestion = { questionNumber: globalQuestionCounter++, questionText: '', options: [], correctOption: null };
+                }
+
+                const optionsFromP = el.innerHTML.split('<br>').map(part => {
+                  const tempDiv = document.createElement('div');
+                  tempDiv.innerHTML = part;
+                  tempDiv.querySelectorAll('input').forEach(i => i.remove());
+                  return tempDiv.textContent.trim();
+                }).filter(Boolean);
+
+                // Check if the paragraph contains the question text
+                if (optionsFromP.length > 0 && optionsFromP[0].match(/「\d+」には、なにをいれますか/)) {
+                  currentQuestion.questionText = optionsFromP[0];
+                  currentQuestion.options.push(...optionsFromP.slice(1));
+                } else {
+                  // If no question text in this paragraph, look for the previous question text
+                  if (currentQuestion.questionText.trim() === '') {
+                    let previousNode = el.previousElementSibling;
+                    while (previousNode && (previousNode.tagName !== 'P' || !previousNode.innerText.match(/「\d+」には、なにをいれますか/))) {
+                      previousNode = previousNode.previousElementSibling;
+                    }
+                    if (previousNode) {
+                      currentQuestion.questionText = previousNode.innerText.split('\n')[0].trim();
+                    }
+                  }
+                  currentQuestion.options.push(...optionsFromP);
+                }
+                mode = 'options';
+              } else if (mode === 'passage' && currentPassage) {
+                currentPassage.passageText += text + '\n';
               }
             }
-            currentQuestion.options.push(...optionsFromP);
-          }
-          mode = 'options';
-        } else if (mode === 'passage' && currentPassage) {
-          currentPassage.passageText += text + '\n';
-        }
-      }
-    } else if (mode === 'answers' && el.tagName === 'P') {
-      const answerHtml = el.innerHTML;
-      const lines = answerHtml.split('<br>').map(line => {
-        const temp = document.createElement('div');
-        temp.innerHTML = line;
-        return temp.textContent.trim();
-      });
-      lines.forEach(line => {
-        const match = line.match(/Question\s*(\d+):\s*(.*)/);
-        if (match) {
-          const qNum = parseInt(match[1], 10);
-          let answerText = match[2].trim();
-          if (answerText.includes('=>')) {
-            answerText = answerText.split('=>')[1].replace(/<[^>]*>/g, '').trim();
-          }
-          answers[qNum] = answerText;
-        }
-      });
-    } else if (mode === 'vocab' && el.tagName === 'P') {
-      const lines = el.innerHTML.split('<br>').map(line => {
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = line;
-        return tempDiv.textContent.trim();
-      }).filter(Boolean);
+          } else if (mode === 'answers' && el.tagName === 'P') {
+            const answerHtml = el.innerHTML;
+            const lines = answerHtml.split('<br>').map(line => {
+              const temp = document.createElement('div');
+              temp.innerHTML = line;
+              return temp.textContent.trim();
+            });
+            lines.forEach(line => {
+              const match = line.match(/Question\s*(\d+):\s*(.*)/);
+              if (match) {
+                const qNum = parseInt(match[1], 10);
+                let answerText = match[2].trim();
+                if (answerText.includes('=>')) {
+                  answerText = answerText.split('=>')[1].replace(/<[^>]*>/g, '').trim();
+                }
+                answers[qNum] = answerText;
+              }
+            });
+          } else if (mode === 'vocab' && el.tagName === 'P') {
+            const lines = el.innerHTML.split('<br>').map(line => {
+              const tempDiv = document.createElement('div');
+              tempDiv.innerHTML = line;
+              return tempDiv.textContent.trim();
+            }).filter(Boolean);
 
-      for (const line of lines) {
-        const vocabItem = parseVocabLine(line);
-        if (vocabItem) {
-          vocab.push(vocabItem);
-        }
-      }
-    }
-  }
-  commitPassage();
-
-  passages.forEach(passage => {
-    passage.passageText = passage.passageText.trim();
-    passage.questions.forEach(q => {
-      const correctTextOrIndex = answers[q.questionNumber];
-      if (correctTextOrIndex !== undefined) {
-        let correctIndex = q.options.findIndex(opt => opt === correctTextOrIndex);
-        if (correctIndex === -1) {
-          const potentialIndex = parseInt(correctTextOrIndex, 10) - 1;
-          if (!isNaN(potentialIndex) && potentialIndex >= 0 && potentialIndex < q.options.length) {
-            correctIndex = potentialIndex;
+            for (const line of lines) {
+              const vocabItem = parseVocabLine(line);
+              if (vocabItem) {
+                vocab.push(vocabItem);
+              }
+            }
           }
         }
-        if (correctIndex !== -1) {
-          q.correctOption = { index: correctIndex, text: q.options[correctIndex] };
-        }
+        commitPassage();
+
+        passages.forEach(passage => {
+          passage.passageText = passage.passageText.trim();
+          passage.questions.forEach(q => {
+            const correctTextOrIndex = answers[q.questionNumber];
+            if (correctTextOrIndex !== undefined) {
+              let correctIndex = q.options.findIndex(opt => opt === correctTextOrIndex);
+              if (correctIndex === -1) {
+                const potentialIndex = parseInt(correctTextOrIndex, 10) - 1;
+                if (!isNaN(potentialIndex) && potentialIndex >= 0 && potentialIndex < q.options.length) {
+                  correctIndex = potentialIndex;
+                }
+              }
+              if (correctIndex !== -1) {
+                q.correctOption = { index: correctIndex, text: q.options[correctIndex] };
+              }
+            }
+          });
+        });
+
+        if (passages.every(p => !p.passageText.trim() && p.questions.length === 0) && vocab.length === 0) return null;
+
+        const result = { title, sourceUrl: window.location.href, passages };
+        if (vocab.length > 0) result.vocab = vocab;
+        return result;
       }
-    });
-  });
-
-  if (passages.every(p => !p.passageText.trim() && p.questions.length === 0) && vocab.length === 0) return null;
-
-  const result = { title, sourceUrl: window.location.href, passages };
-  if (vocab.length > 0) result.vocab = vocab;
-  return result;
-}
     }, category);
   } catch (error) {
     console.error(`Error processing URL ${url}:`, error.message);
@@ -517,15 +517,15 @@ async function scrapeAllTests(browser) {
             break;
           }
         }
-        
+
         if (exerciseNum === 12 || exerciseNum === 13) {
-            console.log(`--- DEBUG LOG FOR ${docId} ---`);
-            console.log(JSON.stringify(quizData, null, 2));
-            console.log(`--- END DEBUG LOG FOR ${docId} ---`);
-            await page.close();
-            exerciseNum++;
-            consecutiveFailures = 0; 
-            continue; 
+          console.log(`--- DEBUG LOG FOR ${docId} ---`);
+          console.log(JSON.stringify(quizData, null, 2));
+          console.log(`--- END DEBUG LOG FOR ${docId} ---`);
+          await page.close();
+          exerciseNum++;
+          consecutiveFailures = 0;
+          continue;
         }
 
         if (quizData) {
