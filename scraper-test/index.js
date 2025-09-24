@@ -345,16 +345,26 @@ async function scrapeTestPage(page, url, category) {
                 currentPassage.passageImage = el.querySelector('img')?.src || '';
               }
             } else if (el.tagName === 'P') {
-              const isQuestionMarker = text.match(/「\d+」には、なにをいれますか/) || text.includes('しつもん');
+              const isQuestionMarker = text.includes('しつもん') || /「\d+」には、なにをいれますか/.test(text);
               const hasRadioButtons = !!el.querySelector('input[type="radio"]');
 
               if (isQuestionMarker && !hasRadioButtons) {
                 commitQuestion();
-                currentQuestion = { questionNumber: globalQuestionCounter++, questionText: text.split('\n')[0].trim(), options: [], correctOption: null };
-                // Split options from the same paragraph if they follow the question
-                const lines = text.split('\n').slice(1).map(line => line.trim()).filter(Boolean);
-                currentQuestion.options.push(...lines);
-                mode = 'options';
+                // Handle new format: question and options in same <p> tag, separated by \n
+                const lines = text.split('\n').map(line => line.trim()).filter(Boolean);
+                if (lines.length > 0 && /「\d+」には、なにをいれますか/.test(lines[0])) {
+                  currentQuestion = {
+                    questionNumber: globalQuestionCounter++,
+                    questionText: lines[0].replace(/「しつもん」/g, '').trim(),
+                    options: lines.slice(1),
+                    correctOption: null
+                  };
+                  mode = 'options';
+                } else {
+                  // Original logic for other question formats
+                  currentQuestion = { questionNumber: globalQuestionCounter++, questionText: text, options: [], correctOption: null };
+                  mode = 'options';
+                }
               } else if (hasRadioButtons || (mode === 'options' && currentQuestion)) {
                 if (!currentQuestion) {
                   commitQuestion();
@@ -368,25 +378,23 @@ async function scrapeTestPage(page, url, category) {
                   return tempDiv.textContent.trim();
                 }).filter(Boolean);
 
-                // Check if the paragraph contains the question text
-                if (optionsFromP.length > 0 && optionsFromP[0].match(/「\d+」には、なにをいれますか/)) {
+                if (optionsFromP.length > 0 && optionsFromP[0].includes('しつもん')) {
                   currentQuestion.questionText = optionsFromP[0];
                   currentQuestion.options.push(...optionsFromP.slice(1));
                 } else {
-                  // If no question text in this paragraph, look for the previous question text
                   if (currentQuestion.questionText.trim() === '') {
                     let previousNode = el.previousElementSibling;
-                    while (previousNode && (previousNode.tagName !== 'P' || !previousNode.innerText.match(/「\d+」には、なにをいれますか/))) {
+                    while (previousNode && (previousNode.tagName !== 'P' || !previousNode.innerText.includes('しつもん'))) {
                       previousNode = previousNode.previousElementSibling;
                     }
                     if (previousNode) {
-                      currentQuestion.questionText = previousNode.innerText.split('\n')[0].trim();
+                      currentQuestion.questionText = previousNode.innerText.trim();
                     }
                   }
                   currentQuestion.options.push(...optionsFromP);
                 }
                 mode = 'options';
-              } else if (mode === 'passage' && currentPassage) {
+              } else if (mode === 'passage' && currentPassage && !isQuestionMarker) {
                 currentPassage.passageText += text + '\n';
               }
             }
