@@ -1,38 +1,20 @@
 const { initializeApp, cert } = require('firebase-admin/app');
-
 const { getFirestore } = require('firebase-admin/firestore');
-
 const puppeteer = require('puppeteer-extra');
-
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
-
 puppeteer.use(StealthPlugin());
-
-
 
 console.log('JLPT Quiz Scraper started with Stealth Mode.');
 
-
-
 // Ensure your FIREBASE_SERVICE_ACCOUNT environment variable is set correctly
-
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-
 const LEVELS = ['n5'];
-
-const TEST_CATEGORIES = ['reading','grammar', 'vocabulary', 'kanji'];
-
+const TEST_CATEGORIES = ['reading', 'grammar', 'vocabulary', 'kanji'];
 const BASE_URL = 'https://japanesetest4you.com/';
 
-
-
 initializeApp({ credential: cert(serviceAccount) });
-
 const db = getFirestore();
-
 console.log('Firestore initialized successfully. Database writes are enabled.');
-
-
 
 async function scrapeTestPage(page, url, category) {
   try {
@@ -125,7 +107,6 @@ async function scrapeTestPage(page, url, category) {
 
               if (isQuestionMarker && !hasRadioButtons) {
                 commitQuestion();
-                // Handle new format: question and options in same <p> tag, separated by \n
                 const lines = text.split('\n').map(line => line.trim()).filter(Boolean);
                 if (lines.length > 0 && /「\d+」には、なにをいれますか/.test(lines[0])) {
                   currentQuestion = {
@@ -136,7 +117,6 @@ async function scrapeTestPage(page, url, category) {
                   };
                   mode = 'options';
                 } else {
-                  // Original logic for other question formats
                   currentQuestion = { questionNumber: globalQuestionCounter++, questionText: text, options: [], correctOption: null };
                   mode = 'options';
                 }
@@ -179,16 +159,18 @@ async function scrapeTestPage(page, url, category) {
               const temp = document.createElement('div');
               temp.innerHTML = line;
               return temp.textContent.trim();
-            });
+            }).filter(Boolean);
             lines.forEach(line => {
-              const match = line.match(/Question\s*(\d+):\s*(.*)/);
+              // Parse the new answer format: "Question X: Y (answer text)"
+              const match = line.match(/Question\s*(\d+):\s*(\d+)\s*\(([^)]+)\)/i);
               if (match) {
                 const qNum = parseInt(match[1], 10);
-                let answerText = match[2].trim();
-                if (answerText.includes('=>')) {
-                  answerText = answerText.split('=>')[1].replace(/<[^>]*>/g, '').trim();
-                }
-                answers[qNum] = answerText;
+                const optionIndex = parseInt(match[2], 10) - 1; // Convert to 0-based index
+                // Extract the marked/underlined text from the answer
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = line;
+                const markedText = tempDiv.querySelector('mark, [style*="text-decoration: underline"]')?.textContent.trim() || match[3].trim();
+                answers[qNum] = { index: optionIndex, text: markedText };
               }
             });
           } else if (mode === 'vocab' && el.tagName === 'P') {
@@ -222,16 +204,19 @@ async function scrapeTestPage(page, url, category) {
                 currentQuestion = {
                   questionNumber: questionNumber++,
                   questionText: questionText.trim(),
-                  options: options.slice(0, 4), // Limit to 4 options
+                  options: options.slice(0, 4),
                   correctOption: null
                 };
                 if (answers[currentQuestion.questionNumber]) {
-                  let correctIndex = currentQuestion.options.findIndex(opt => opt === answers[currentQuestion.questionNumber]);
-                  if (correctIndex === -1) {
-                    correctIndex = parseInt(answers[currentQuestion.questionNumber], 10) - 1;
+                  const answer = answers[currentQuestion.questionNumber];
+                  let correctIndex = answer.index;
+                  if (correctIndex < 0 || correctIndex >= currentQuestion.options.length) {
+                    correctIndex = currentQuestion.options.findIndex(opt => opt.includes(answer.text));
                   }
                   if (correctIndex >= 0 && correctIndex < currentQuestion.options.length) {
                     currentQuestion.correctOption = { index: correctIndex, text: currentQuestion.options[correctIndex] };
+                  } else {
+                    console.warn(`No matching option for question ${currentQuestion.questionNumber}: ${JSON.stringify(answer)}`);
                   }
                 }
                 currentPassage.questions.push(currentQuestion);
@@ -253,19 +238,21 @@ async function scrapeTestPage(page, url, category) {
               correctOption: null
             };
             if (answers[currentQuestion.questionNumber]) {
-              let correctIndex = currentQuestion.options.findIndex(opt => opt === answers[currentQuestion.questionNumber]);
-              if (correctIndex === -1) {
-                correctIndex = parseInt(answers[currentQuestion.questionNumber], 10) - 1;
+              const answer = answers[currentQuestion.questionNumber];
+              let correctIndex = answer.index;
+              if (correctIndex < 0 || correctIndex >= currentQuestion.options.length) {
+                correctIndex = currentQuestion.options.findIndex(opt => opt.includes(answer.text));
               }
               if (correctIndex >= 0 && correctIndex < currentQuestion.options.length) {
                 currentQuestion.correctOption = { index: correctIndex, text: currentQuestion.options[correctIndex] };
+              } else {
+                console.warn(`No matching option for question ${currentQuestion.questionNumber}: ${JSON.stringify(answer)}`);
               }
             }
             currentPassage.questions.push(currentQuestion);
             currentQuestion = null;
           }
 
-          // Update passageText to exclude the extracted questions and options
           currentPassage.passageText = passageLines
             .filter(line => !/「\d+」には、なにをいれますか/.test(line) && !line.includes('「しつもん」') && !line.match(/^(きのう|よる|かいしゃ|日よう日|しかし|それでは|ちょうど|じゃあ|まで|から|でも|ながら|とおく|ちかく|とおい|ちかい|１|２|３|４|５|６|７|８|１５０ページ|２００ページ|２５０ページ)$/))
             .join('\n');
@@ -274,17 +261,16 @@ async function scrapeTestPage(page, url, category) {
         passages.forEach(passage => {
           passage.passageText = passage.passageText.trim();
           passage.questions.forEach(q => {
-            const correctTextOrIndex = answers[q.questionNumber];
-            if (correctTextOrIndex !== undefined) {
-              let correctIndex = q.options.findIndex(opt => opt === correctTextOrIndex);
-              if (correctIndex === -1) {
-                const potentialIndex = parseInt(correctTextOrIndex, 10) - 1;
-                if (!isNaN(potentialIndex) && potentialIndex >= 0 && potentialIndex < q.options.length) {
-                  correctIndex = potentialIndex;
-                }
+            const answer = answers[q.questionNumber];
+            if (answer) {
+              let correctIndex = answer.index;
+              if (correctIndex < 0 || correctIndex >= q.options.length) {
+                correctIndex = q.options.findIndex(opt => opt.includes(answer.text));
               }
-              if (correctIndex !== -1) {
+              if (correctIndex >= 0 && correctIndex < q.options.length) {
                 q.correctOption = { index: correctIndex, text: q.options[correctIndex] };
+              } else {
+                console.warn(`No matching option for question ${q.questionNumber}: ${JSON.stringify(answer)}`);
               }
             }
           });
@@ -322,20 +308,9 @@ async function scrapeTestPage(page, url, category) {
           if (parsingMode === 'vocab') {
             const text = p.innerText.trim();
             if (text.includes(':')) {
-              const parts = text.split(/:(.*)/s);
-              if (parts.length < 2) return;
-              const japaneseAndRomaji = parts[0].trim();
-              const english = parts[1].trim();
-              let japanese = '', romaji = '';
-              const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
-              if (romajiMatch) {
-                romaji = romajiMatch[1].trim();
-                japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
-              } else {
-                japanese = japaneseAndRomaji;
-              }
-              if (japanese && english) {
-                vocab.push({ japanese, romaji, english });
+              const vocabItem = parseVocabLine(text);
+              if (vocabItem) {
+                vocab.push(vocabItem);
               }
             }
             return;
@@ -373,18 +348,37 @@ async function scrapeTestPage(page, url, category) {
         commitCurrentQuestion();
         const answerKeyNode = Array.from(allParagraphs).find(p => p.querySelector('strong')?.innerText.trim().startsWith('Answer Key'));
         if (answerKeyNode) {
-          const answerText = answerKeyNode.innerText.trim();
-          const regex = /Question\s*(\d+):\s*(\d+)/gi;
-          let match;
-          while ((match = regex.exec(answerText)) !== null) {
-            answers[parseInt(match[1], 10)] = parseInt(match[2], 10) - 1;
-          }
+          const answerHtml = answerKeyNode.innerHTML;
+          const lines = answerHtml.split('<br>').map(line => {
+            const temp = document.createElement('div');
+            temp.innerHTML = line;
+            return temp.textContent.trim();
+          }).filter(Boolean);
+          lines.forEach(line => {
+            // Parse the new answer format: "Question X: Y (answer text)"
+            const match = line.match(/Question\s*(\d+):\s*(\d+)\s*\(([^)]+)\)/i);
+            if (match) {
+              const qNum = parseInt(match[1], 10);
+              const optionIndex = parseInt(match[2], 10) - 1; // Convert to 0-based index
+              // Extract the marked/underlined text from the answer
+              const tempDiv = document.createElement('div');
+              tempDiv.innerHTML = line;
+              const markedText = tempDiv.querySelector('mark, [style*="text-decoration: underline"]')?.textContent.trim() || match[3].trim();
+              answers[qNum] = { index: optionIndex, text: markedText };
+            }
+          });
         }
         questions.forEach(q => {
-          if (answers[q.questionNumber] !== undefined) {
-            const correctIndex = answers[q.questionNumber];
+          const answer = answers[q.questionNumber];
+          if (answer) {
+            let correctIndex = answer.index;
+            if (correctIndex < 0 || correctIndex >= q.options.length) {
+              correctIndex = q.options.findIndex(opt => opt.includes(answer.text));
+            }
             if (correctIndex >= 0 && correctIndex < q.options.length) {
-              q.correctOption = { index: correctIndex, text: q.options[correctIndex] || '' };
+              q.correctOption = { index: correctIndex, text: q.options[correctIndex] };
+            } else {
+              console.warn(`No matching option for question ${q.questionNumber}: ${JSON.stringify(answer)}`);
             }
           }
         });
@@ -401,7 +395,6 @@ async function scrapeTestPage(page, url, category) {
   }
 }
 
-// [Rest of the code (scrapeAllTests, scrapeVocabularyLists, scrapeGrammarDetailPage, scrapeGrammarLists, main) remains unchanged]
 async function scrapeAllTests(browser) {
   console.log('🚀 Starting scrape of all exercise tests...');
   const failedUrls = [];
@@ -456,8 +449,10 @@ async function scrapeAllTests(browser) {
 
         if (quizData) {
           consecutiveFailures = 0;
+          // Log the full quizData object
+          console.log(JSON.stringify(quizData, null, 2));
           try {
-            await docRef.set(quizData);
+            await docRef.set(quizData); // Save the full quizData to Firestore
             console.log(`✅ Successfully saved data to ${docRef.path}`);
           } catch (error) {
             console.error(`🔥 Failed to save data to ${docRef.path}:`, error);
