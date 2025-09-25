@@ -20,7 +20,7 @@ const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
 const LEVELS = ['n5', 'n4', 'n3', 'n2', 'n1'];
 
-const TEST_CATEGORIES = ['reading', 'grammar', 'vocabulary', 'kanji'];
+const TEST_CATEGORIES = ['reading','grammar', 'vocabulary', 'kanji'];
 
 const BASE_URL = 'https://japanesetest4you.com/';
 
@@ -57,27 +57,6 @@ async function scrapeTestPage(page, url, category) {
       let parsingMode = 'questions';
 
       let expectedQuestionNumber = 1;
-
-      function processVocabLine(text, vocab) {
-        if (!text.includes(':')) return;
-        const parts = text.split(/:(.*)/s);
-        if (parts.length < 2) return;
-
-        const japaneseAndRomaji = parts[0].trim();
-        const english = parts[1].trim();
-
-        let japanese = '', romaji = '';
-        const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
-        if (romajiMatch) {
-          romaji = romajiMatch[1].trim();
-          japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
-        } else {
-          japanese = japaneseAndRomaji;
-        }
-
-        if (japanese && english) vocab.push({ japanese, romaji, english });
-      }
-
 
 
 
@@ -341,17 +320,47 @@ async function scrapeTestPage(page, url, category) {
 
 
 
-          if (parsingMode === 'vocab' || readingContentMode === 'vocab') {
-            const html = p ? p.innerHTML : el.innerHTML;
-            const lines = html.split('<br>').map(line => line.trim()).filter(Boolean);
+          if (parsingMode === 'vocab') {
 
-            lines.forEach(line => {
-              const cleanLine = line.replace(/<\/?[^>]+(>|$)/g, '').trim(); // strip tags
-              processVocabLine(cleanLine, vocab);
-            });
+            const text = p.innerText.trim();
+
+            if (text.includes(':')) {
+
+              const parts = text.split(/:(.*)/s);
+
+              if (parts.length < 2) return;
+
+              const japaneseAndRomaji = parts[0].trim();
+
+              const english = parts[1].trim();
+
+              let japanese = '', romaji = '';
+
+              const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
+
+              if (romajiMatch) {
+
+                romaji = romajiMatch[1].trim();
+
+                japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
+
+              } else {
+
+                japanese = japaneseAndRomaji;
+
+              }
+
+              if (japanese && english) {
+
+                vocab.push({ japanese, romaji, english });
+
+              }
+
+            }
+
             return;
-          }
 
+          }
 
 
 
@@ -542,9 +551,6 @@ async function scrapeTestPage(page, url, category) {
   }
 
 }
-
-
-
 
 
 
