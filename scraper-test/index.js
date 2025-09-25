@@ -46,20 +46,20 @@ async function scrapeTestPage(page, url, category) {
       let passages = [], questions = [], answers = {}, vocab = [];
       let parsingMode = 'questions';
       let expectedQuestionNumber = 1;
-      
+
       const parseVocabLine = (line) => {
         if (line && line.includes(':')) {
-            const parts = line.split(/:(.*)/s);
-            if (parts.length < 2) return null;
-            const japaneseAndRomaji = parts[0].trim();
-            const english = parts[1].trim();
-            let japanese = '', romaji = '';
-            const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
-            if (romajiMatch) {
-                romaji = romajiMatch[1].trim();
-                japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
-            } else { japanese = japaneseAndRomaji; }
-            if (japanese && english) { return { japanese, romaji, english }; }
+          const parts = line.split(/:(.*)/s);
+          if (parts.length < 2) return null;
+          const japaneseAndRomaji = parts[0].trim();
+          const english = parts[1].trim();
+          let japanese = '', romaji = '';
+          const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
+          if (romajiMatch) {
+            romaji = romajiMatch[1].trim();
+            japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
+          } else { japanese = japaneseAndRomaji; }
+          if (japanese && english) { return { japanese, romaji, english }; }
         }
         return null;
       };
@@ -82,12 +82,12 @@ async function scrapeTestPage(page, url, category) {
         };
 
         const parseOptionsFromElement = (element, containsRadioButtons) => {
-            return element.innerHTML.split('<br>').map(part => {
-                const tempEl = document.createElement('div');
-                tempEl.innerHTML = part;
-                if (containsRadioButtons) { tempEl.querySelectorAll('input').forEach(i => i.remove()); }
-                return tempEl.textContent.trim();
-            }).filter(Boolean);
+          return element.innerHTML.split('<br>').map(part => {
+            const tempEl = document.createElement('div');
+            tempEl.innerHTML = part;
+            if (containsRadioButtons) { tempEl.querySelectorAll('input').forEach(i => i.remove()); }
+            return tempEl.textContent.trim();
+          }).filter(Boolean);
         };
 
         content.childNodes.forEach(node => {
@@ -99,6 +99,20 @@ async function scrapeTestPage(page, url, category) {
           if (!currentPassage && el.tagName === 'P' && strongText && !strongText.toLowerCase().startsWith('reading passage')) {
             mainInstruction = textContent; return;
           }
+          // --- START: ADDITION #1 ---
+          // NEW: Also treat Japanese instructions as a passage header.
+          const isJapaneseHeader = textContent.includes('つぎの文を読んで') || textContent.includes('次の文章を読んで');
+          if (el.tagName === 'P' && isJapaneseHeader) {
+            commitCurrentQuestionInPassage();
+            if (currentPassage) passages.push(currentPassage); // Save the previous passage if it exists
+            // Create a new passage using the Japanese text as the title/instruction
+            currentPassage = { passageTitle: 'Passage', mainInstruction: textContent, passageImage: '', passageText: '', questions: [] };
+            expectedQuestionNumber = 1;
+            pendingQuestionText = null;
+            parsingMode = 'passage';
+            return;
+          }
+          // --- END: ADDITION #1 ---
 
           if (el.tagName === 'P' && strongText.toLowerCase().startsWith('reading passage')) {
             commitCurrentQuestionInPassage();
@@ -112,16 +126,27 @@ async function scrapeTestPage(page, url, category) {
             commitCurrentQuestionInPassage();
             parsingMode = strongText.includes('New words') ? 'vocab' : 'answers'; return;
           }
-          
+
           if (parsingMode === 'vocab') {
-             const lines = el.innerHTML.split('<br>').map(line => {
-                const tempDiv = document.createElement('div'); tempDiv.innerHTML = line; return tempDiv.textContent.trim();
+            const lines = el.innerHTML.split('<br>').map(line => {
+              const tempDiv = document.createElement('div'); tempDiv.innerHTML = line; return tempDiv.textContent.trim();
             }).filter(Boolean);
             for (const line of lines) {
-                const vocabItem = parseVocabLine(line);
-                if (vocabItem) vocab.push(vocabItem);
+              const vocabItem = parseVocabLine(line);
+              if (vocabItem) vocab.push(vocabItem);
             }
           } else if (parsingMode === 'passage') {
+            // --- START: ADDITION #2 ---
+            // NEW: Safety net to create a default passage if none exists when a question is found.
+            const isQuestionElement = el.querySelector('input[type="radio"]') || isQuestionText;
+            if (!currentPassage && isQuestionElement) {
+              currentPassage = { passageTitle: 'Reading Passage 1 (Default)', passageImage: '', passageText: '', questions: [] };
+              if (mainInstruction) {
+                currentPassage.mainInstruction = mainInstruction;
+                mainInstruction = null;
+              }
+            }
+            // --- END: ADDITION #2 ---
             const hasRadioButtons = el.querySelector('input[type="radio"]');
             const isQuestionText = textContent.includes('しつもん') || textContent.includes('には、なにをいれますか');
 
@@ -212,10 +237,10 @@ async function scrapeTestPage(page, url, category) {
           if (hasRadio) {
             const inputName = hasRadio.getAttribute('name');
             const parts = p.innerHTML.split('<br>').map(part => {
-                const tempEl = document.createElement('div');
-                tempEl.innerHTML = part;
-                tempEl.querySelectorAll('input').forEach(input => input.remove());
-                return tempEl.textContent.trim();
+              const tempEl = document.createElement('div');
+              tempEl.innerHTML = part;
+              tempEl.querySelectorAll('input').forEach(input => input.remove());
+              return tempEl.textContent.trim();
             }).filter(Boolean);
             if (parts.length === 0) return;
             const potentialQuestionText = parts[0] || '';
@@ -267,23 +292,23 @@ async function scrapeTestPage(page, url, category) {
           });
         });
         if (passages.length > 0 && passages.some(p => p.questions.length > 0)) {
-            const result = { title, sourceUrl: window.location.href, passages };
-            if (vocab.length > 0) result.vocab = vocab;
-            return result;
+          const result = { title, sourceUrl: window.location.href, passages };
+          if (vocab.length > 0) result.vocab = vocab;
+          return result;
         } return null;
       } else {
         questions.forEach(q => {
-            if (answers[q.questionNumber] !== undefined) {
-                const correctIndex = answers[q.questionNumber];
-                if (correctIndex >= 0 && correctIndex < q.options.length) {
-                    q.correctOption = { index: correctIndex, text: q.options[correctIndex] || '' };
-                }
+          if (answers[q.questionNumber] !== undefined) {
+            const correctIndex = answers[q.questionNumber];
+            if (correctIndex >= 0 && correctIndex < q.options.length) {
+              q.correctOption = { index: correctIndex, text: q.options[correctIndex] || '' };
             }
+          }
         });
         if (questions.length > 0) {
-            const result = { title, sourceUrl: window.location.href, questions };
-            if (vocab.length > 0) result.vocab = vocab;
-            return result;
+          const result = { title, sourceUrl: window.location.href, questions };
+          if (vocab.length > 0) result.vocab = vocab;
+          return result;
         } return null;
       }
     }, category);
