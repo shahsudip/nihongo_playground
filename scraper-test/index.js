@@ -44,9 +44,9 @@ async function scrapeTestPage(page, url, category) {
 
       const title = document.title.split('|')[0].trim();
       let passages = [], questions = [], answers = {}, vocab = [];
-      let parsingMode = 'passage';
+      let parsingMode = 'questions';
       let expectedQuestionNumber = 1;
-
+      
       const parseVocabLine = (line) => {
         if (line && line.includes(':')) {
             const parts = line.split(/:(.*)/s);
@@ -80,7 +80,6 @@ async function scrapeTestPage(page, url, category) {
             currentQuestionInPassage = null;
           }
         };
-
         const parseOptionsFromElement = (element, containsRadioButtons) => {
             return element.innerHTML.split('<br>').map(part => {
                 const tempEl = document.createElement('div');
@@ -89,39 +88,32 @@ async function scrapeTestPage(page, url, category) {
                 return tempEl.textContent.trim();
             }).filter(Boolean);
         };
-
         content.childNodes.forEach(node => {
           if (node.nodeType !== Node.ELEMENT_NODE) return;
           const el = node;
           const strongText = el.querySelector('strong')?.innerText?.trim() || '';
           const textContent = el.innerText.trim();
-
           const isJapaneseHeader = textContent.includes('つぎの文を読んで') || textContent.includes('次の文章を読んで');
           const isEnglishHeader = strongText.toLowerCase().startsWith('reading passage');
 
-          // 1. Handle Passage Headers (English or Japanese)
           if (el.tagName === 'P' && (isEnglishHeader || isJapaneseHeader)) {
             commitCurrentQuestionInPassage();
             if (currentPassage) passages.push(currentPassage);
-            currentPassage = { passageTitle: isEnglishHeader ? strongText : 'Reading Passage', passageImage: '', passageText: '', questions: [] };
+            const passageTitle = isEnglishHeader ? strongText : 'Reading Passage';
+            currentPassage = { passageTitle, passageImage: '', passageText: '', questions: [] };
             if (mainInstruction) { currentPassage.mainInstruction = mainInstruction; mainInstruction = null; }
             if (isJapaneseHeader) { currentPassage.mainInstruction = textContent; }
             expectedQuestionNumber = 1; pendingQuestionText = null; parsingMode = 'passage'; return;
           }
-
-          // 2. Capture Main Instruction if it appears first
           if (!currentPassage && el.tagName === 'P' && strongText) {
             mainInstruction = textContent; return;
           }
-
-          // 3. Handle Mode Switches to Vocab/Answers
           if (el.tagName === 'P' && (strongText.includes('New words') || strongText.includes('Answer Key'))) {
             commitCurrentQuestionInPassage();
             parsingMode = strongText.includes('New words') ? 'vocab' : 'answers'; return;
           }
-
           if (parsingMode === 'vocab' && el.tagName === 'P') {
-             const lines = el.innerHTML.split('<br>').map(line => {
+            const lines = el.innerHTML.split('<br>').map(line => {
                 const tempDiv = document.createElement('div'); tempDiv.innerHTML = line; return tempDiv.textContent.trim();
             }).filter(Boolean);
             for (const line of lines) {
@@ -130,17 +122,12 @@ async function scrapeTestPage(page, url, category) {
             }
           } else if (parsingMode === 'passage') {
             const hasRadioButtons = el.querySelector('input[type="radio"]');
-            const isQuestionText = textContent.includes('しつもん') || textContent.includes('には、なにをいれますか') || /^\d+\./.test(textContent);
-
-            // 4. Safety Net: Create a default passage if a question is found first
+            const isQuestionText = textContent.includes('しつもん') || textContent.includes('には、なにをいれますか') || /^\d+\.\s*/.test(textContent);
             if (!currentPassage && isQuestionText) {
-                currentPassage = { passageTitle: 'Reading Passage (Default)', passageImage: '', passageText: '', questions: [] };
-                if (mainInstruction) { currentPassage.mainInstruction = mainInstruction; mainInstruction = null; }
+              currentPassage = { passageTitle: 'Reading Passage (Default)', passageImage: '', passageText: '', questions: [] };
+              if (mainInstruction) { currentPassage.mainInstruction = mainInstruction; mainInstruction = null; }
             }
-
-            if (!currentPassage) return; // Cannot proceed without a passage
-
-            // 5. Parse Questions and Content
+            if (!currentPassage) return;
             if (isQuestionText && !hasRadioButtons) {
               pendingQuestionText = textContent; return;
             }
@@ -156,33 +143,19 @@ async function scrapeTestPage(page, url, category) {
               }
             }
             if (hasRadioButtons) {
-              if (pendingQuestionText) {
-                const options = parseOptionsFromElement(el, true);
-                const inputName = el.querySelector('input[type="radio"]').getAttribute('name');
-                const qNumMatch = inputName && inputName.match(/quest(\d+)/i);
-                const questionNumber = qNumMatch ? parseInt(qNumMatch[1], 10) : expectedQuestionNumber++;
-                currentPassage.questions.push({
-                  questionNumber, questionText: pendingQuestionText.replace(/「しつもん」|^\d+\.\s*/g, '').trim(), options, correctOption: null
-                });
-                pendingQuestionText = null;
-              } else {
-                const inputName = el.querySelector('input[type="radio"]').getAttribute('name');
-                const parts = parseOptionsFromElement(el, true);
-                if (parts.length === 0) return;
-                const potentialQuestionText = parts[0] || '';
-                const isContinuation = currentQuestionInPassage && currentQuestionInPassage.inputName === inputName && !/^\d+\./.test(potentialQuestionText);
-                if (isContinuation) {
-                  currentQuestionInPassage.options.push(...parts);
-                } else {
-                  commitCurrentQuestionInPassage();
-                  let qNumMatch = potentialQuestionText.match(/^(\d+)\./);
-                  let inputMatch = inputName.match(/quest(\d+)/i);
-                  let questionNumber = qNumMatch ? parseInt(qNumMatch[1], 10) : (inputMatch ? parseInt(inputMatch[1], 10) : expectedQuestionNumber++);
-                  currentQuestionInPassage = {
-                    questionNumber, questionText: potentialQuestionText, options: parts.slice(1), correctOption: null, inputName: inputName
-                  };
-                }
-              }
+              const parts = parseOptionsFromElement(el, true);
+              const questionText = pendingQuestionText ? pendingQuestionText : parts.shift() || '';
+              const options = parts;
+              const inputName = el.querySelector('input[type="radio"]').getAttribute('name');
+              const qNumMatch = (inputName && inputName.match(/quest(\d+)/i)) || (questionText.match(/^(\d+)\./));
+              const questionNumber = qNumMatch ? parseInt(qNumMatch[1], 10) : expectedQuestionNumber++;
+              currentPassage.questions.push({
+                questionNumber,
+                questionText: questionText.replace(/「しつもん」|^\d+\.\s*/g, '').trim(),
+                options,
+                correctOption: null,
+              });
+              pendingQuestionText = null;
             } else if (el.tagName === 'FIGURE') {
               currentPassage.passageImage = el.querySelector('img')?.src || '';
             } else if (el.tagName === 'P' && textContent) {
@@ -190,10 +163,9 @@ async function scrapeTestPage(page, url, category) {
             }
           }
         });
-        commitCurrentQuestionInPassage();
         if (currentPassage) passages.push(currentPassage);
       } else {
-        // === YOUR ORIGINAL, WORKING CODE FOR NON-READING TESTS ===
+        // === YOUR ORIGINAL, WORKING CODE FOR NON-READING TESTS (RESTORED) ===
         let currentQuestion = null;
         const allParagraphs = Array.from(content.querySelectorAll('p'));
         const commitCurrentQuestion = () => {
@@ -223,10 +195,10 @@ async function scrapeTestPage(page, url, category) {
           if (hasRadio) {
             const inputName = hasRadio.getAttribute('name');
             const parts = p.innerHTML.split('<br>').map(part => {
-              const tempEl = document.createElement('div');
-              tempEl.innerHTML = part;
-              tempEl.querySelectorAll('input').forEach(input => input.remove());
-              return tempEl.textContent.trim();
+                const tempEl = document.createElement('div');
+                tempEl.innerHTML = part;
+                tempEl.querySelectorAll('input').forEach(input => input.remove());
+                return tempEl.textContent.trim();
             }).filter(Boolean);
             if (parts.length === 0) return;
             const potentialQuestionText = parts[0] || '';
@@ -278,23 +250,23 @@ async function scrapeTestPage(page, url, category) {
           });
         });
         if (passages.length > 0 && passages.some(p => p.questions.length > 0)) {
-          const result = { title, sourceUrl: window.location.href, passages };
-          if (vocab.length > 0) result.vocab = vocab;
-          return result;
+            const result = { title, sourceUrl: window.location.href, passages };
+            if (vocab.length > 0) result.vocab = vocab;
+            return result;
         } return null;
       } else {
         questions.forEach(q => {
-          if (answers[q.questionNumber] !== undefined) {
-            const correctIndex = answers[q.questionNumber];
-            if (correctIndex >= 0 && correctIndex < q.options.length) {
-              q.correctOption = { index: correctIndex, text: q.options[correctIndex] || '' };
+            if (answers[q.questionNumber] !== undefined) {
+                const correctIndex = answers[q.questionNumber];
+                if (correctIndex >= 0 && correctIndex < q.options.length) {
+                    q.correctOption = { index: correctIndex, text: q.options[correctIndex] || '' };
+                }
             }
-          }
         });
         if (questions.length > 0) {
-          const result = { title, sourceUrl: window.location.href, questions };
-          if (vocab.length > 0) result.vocab = vocab;
-          return result;
+            const result = { title, sourceUrl: window.location.href, questions };
+            if (vocab.length > 0) result.vocab = vocab;
+            return result;
         } return null;
       }
     }, category);
@@ -351,6 +323,7 @@ async function scrapeAllTests(browser) {
 
         const urlStrings = [
 
+          `${BASE_URL}${level}-${category}-${exerciseNum}/`,
           `${BASE_URL}jlpt-${level}-${category}-${exerciseNum}/`,
           `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${String(exerciseNum).padStart(2, '0')}/`,
           `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${exerciseNum}/`
