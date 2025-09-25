@@ -136,7 +136,10 @@ async function scrapeTestPage(page, url, category) {
 
           const strongText = el.querySelector('strong')?.innerText?.trim() || '';
 
-
+          // NEW: Safely skip the introductory paragraph before any other logic runs.
+          if (!currentPassage && el.tagName === 'P' && strongText && !strongText.toLowerCase().startsWith('reading passage')) {
+            return; // Ignore this element and move to the next one.
+          }
 
           // --- Mode Switchers ---
 
@@ -289,8 +292,8 @@ async function scrapeTestPage(page, url, category) {
               if (el.tagName === 'FIGURE') {
                 //currentPassage.passageImage = el.querySelector('img')?.src || '';
                 if (currentPassage) {
-                currentPassage.passageImage = el.querySelector('img')?.src || '';
-            }
+                  currentPassage.passageImage = el.querySelector('img')?.src || '';
+                }
               } else if (currentPassage && el.tagName === 'P' && el.innerText.trim()) {
                 currentPassage.passageText += el.innerText.trim() + '\n';
               }
