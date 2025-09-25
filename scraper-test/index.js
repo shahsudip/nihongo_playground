@@ -34,7 +34,6 @@ console.log('Firestore initialized successfully. Database writes are enabled.');
 
 
 
-// --- This is the complete and corrected function ---
 async function scrapeTestPage(page, url, category) {
   try {
     await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
@@ -66,7 +65,6 @@ async function scrapeTestPage(page, url, category) {
       };
 
       if (currentCategory === 'reading') {
-        // This is the final, unified parser for ALL reading tests
         let currentPassage = null;
         let pendingQuestionText = null;
         let mainInstruction = null;
@@ -82,6 +80,7 @@ async function scrapeTestPage(page, url, category) {
             currentQuestionInPassage = null;
           }
         };
+
         const parseOptionsFromElement = (element, containsRadioButtons) => {
             return element.innerHTML.split('<br>').map(part => {
                 const tempEl = document.createElement('div');
@@ -90,14 +89,17 @@ async function scrapeTestPage(page, url, category) {
                 return tempEl.textContent.trim();
             }).filter(Boolean);
         };
+
         content.childNodes.forEach(node => {
           if (node.nodeType !== Node.ELEMENT_NODE) return;
           const el = node;
           const strongText = el.querySelector('strong')?.innerText?.trim() || '';
           const textContent = el.innerText.trim();
+
           if (!currentPassage && el.tagName === 'P' && strongText && !strongText.toLowerCase().startsWith('reading passage')) {
-            mainInstruction = strongText; return;
+            mainInstruction = textContent; return;
           }
+
           if (el.tagName === 'P' && strongText.toLowerCase().startsWith('reading passage')) {
             commitCurrentQuestionInPassage();
             if (currentPassage) passages.push(currentPassage);
@@ -105,17 +107,28 @@ async function scrapeTestPage(page, url, category) {
             if (mainInstruction) { currentPassage.mainInstruction = mainInstruction; mainInstruction = null; }
             expectedQuestionNumber = 1; pendingQuestionText = null; parsingMode = 'passage'; return;
           }
+
           if (el.tagName === 'P' && (strongText.includes('New words') || strongText.includes('Answer Key'))) {
             commitCurrentQuestionInPassage();
             parsingMode = strongText.includes('New words') ? 'vocab' : 'answers'; return;
           }
-          if (parsingMode === 'vocab') { /* ... */ }
-          else if (parsingMode === 'passage') {
+          
+          if (parsingMode === 'vocab') {
+             const lines = el.innerHTML.split('<br>').map(line => {
+                const tempDiv = document.createElement('div'); tempDiv.innerHTML = line; return tempDiv.textContent.trim();
+            }).filter(Boolean);
+            for (const line of lines) {
+                const vocabItem = parseVocabLine(line);
+                if (vocabItem) vocab.push(vocabItem);
+            }
+          } else if (parsingMode === 'passage') {
             const hasRadioButtons = el.querySelector('input[type="radio"]');
             const isQuestionText = textContent.includes('しつもん') || textContent.includes('には、なにをいれますか');
+
             if (isQuestionText && !hasRadioButtons) {
               pendingQuestionText = textContent; return;
             }
+
             if (pendingQuestionText && !isQuestionText && el.tagName === 'P' && el.innerHTML.includes('<br>')) {
               const options = parseOptionsFromElement(el, false);
               if (options.length > 0 && options[0] && currentPassage) {
@@ -127,6 +140,7 @@ async function scrapeTestPage(page, url, category) {
                 pendingQuestionText = null; return;
               }
             }
+
             if (hasRadioButtons) {
               if (pendingQuestionText) {
                 const options = parseOptionsFromElement(el, true);
@@ -167,9 +181,8 @@ async function scrapeTestPage(page, url, category) {
         });
         commitCurrentQuestionInPassage();
         if (currentPassage) passages.push(currentPassage);
-
       } else {
-        // === THIS IS YOUR ORIGINAL, RESTORED CODE FOR NON-READING TESTS ===
+        // === YOUR ORIGINAL, WORKING CODE FOR NON-READING TESTS ===
         let currentQuestion = null;
         const allParagraphs = Array.from(content.querySelectorAll('p'));
         const commitCurrentQuestion = () => {
@@ -257,8 +270,7 @@ async function scrapeTestPage(page, url, category) {
             const result = { title, sourceUrl: window.location.href, passages };
             if (vocab.length > 0) result.vocab = vocab;
             return result;
-        }
-        return null;
+        } return null;
       } else {
         questions.forEach(q => {
             if (answers[q.questionNumber] !== undefined) {
@@ -272,8 +284,7 @@ async function scrapeTestPage(page, url, category) {
             const result = { title, sourceUrl: window.location.href, questions };
             if (vocab.length > 0) result.vocab = vocab;
             return result;
-        }
-        return null;
+        } return null;
       }
     }, category);
   } catch (error) {
@@ -281,7 +292,6 @@ async function scrapeTestPage(page, url, category) {
     return null;
   }
 }
-
 
 
 async function scrapeAllTests(browser) {
