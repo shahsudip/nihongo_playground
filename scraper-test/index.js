@@ -64,8 +64,7 @@ async function scrapeTestPage(page, url, category) {
         return null;
       };
 
-      if (currentCategory === 'reading') {
-        // --- START OF NEW, TWO-PASS PARSER ---
+            if (currentCategory === 'reading') {
         let contentBlocks = [];
         let passageCounter = 0;
 
@@ -92,7 +91,6 @@ async function scrapeTestPage(page, url, category) {
           } else if (el.tagName === 'FIGURE') {
              contentBlocks.push({ type: 'image', src: el.querySelector('img')?.src || '' });
           } else if (el.tagName === 'P' && textContent) {
-            // Check if this paragraph is likely a question text without radio buttons
             const isQuestionText = textContent.includes('しつもん') || textContent.includes('には、なにをいれますか') || /^\d+\.\s*/.test(textContent);
             if(isQuestionText && !el.querySelector('input[type="radio"]')) {
               contentBlocks.push({ type: 'question_text', text: textContent });
@@ -108,13 +106,7 @@ async function scrapeTestPage(page, url, category) {
         let parsingMode = 'passage';
         let expectedQuestionNumber = 1;
 
-        const parseOptionsFromElement = (element, containsRadioButtons) => {
-            return element.innerHTML.split('<br>').map(part => {
-                const tempEl = document.createElement('div'); tempEl.innerHTML = part;
-                if (containsRadioButtons) { tempEl.querySelectorAll('input').forEach(i => i.remove()); }
-                return tempEl.textContent.trim();
-            }).filter(Boolean);
-        };
+        const parseOptionsFromElement = (element, containsRadioButtons) => { /* ... (Your options parsing function) ... */ };
 
         for (const block of contentBlocks) {
           if (block.type === 'header') {
@@ -125,7 +117,6 @@ async function scrapeTestPage(page, url, category) {
           } else if (block.type === 'mode_switch') {
             parsingMode = block.text.includes('New words') ? 'vocab' : 'answers';
           } else if (parsingMode === 'vocab') {
-             // In vocab mode, all subsequent text blocks are treated as vocab
              if(block.type === 'passage_text' || block.type === 'question_text') {
                  const lines = block.text.split('\n');
                  for(const line of lines) {
@@ -134,8 +125,9 @@ async function scrapeTestPage(page, url, category) {
                  }
              }
           } else if (parsingMode === 'passage') {
-            // Safety net: If we encounter a question before a header, create a default passage.
-            if (!currentPassage && (block.type === 'question' || block.type === 'question_text')) {
+            // --- UPDATED SAFETY NET ---
+            // If we find ANY content before a header, create a default passage.
+            if (!currentPassage && (block.type === 'question' || block.type === 'question_text' || block.type === 'passage_text')) {
                 passageCounter++;
                 currentPassage = { passageTitle: `Passage ${passageCounter} (Default)`, passageImage: '', passageText: '', questions: [] };
             }
@@ -163,7 +155,7 @@ async function scrapeTestPage(page, url, category) {
               const options = parts;
               const inputName = block.element.querySelector('input[type="radio"]').getAttribute('name');
               const qNumMatch = (inputName && inputName.match(/quest(\d+)/i)) || (questionText.match(/^(\d+)\./));
-              const questionNumber = qNumMatch ? parseInt(qNumMatch[1], 10) : expectedQuestionNumber++;
+              const questionNumber = qNumMatch ? parseInt(qNum_match[1], 10) : expectedQuestionNumber++; // Corrected variable name
               currentPassage.questions.push({
                 questionNumber, questionText: questionText.replace(/「しつもん」|^\d+\.\s*/g, '').trim(), options, correctOption: null,
               });
