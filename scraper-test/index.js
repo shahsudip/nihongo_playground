@@ -403,7 +403,7 @@ async function scrapeVocabularyLists(browser) {
   }
 }
 
-// ===================== MAIN EXECUTION =====================
+// ===================== MAIN EXECUTION ===================== ii[] 
 (async () => {
   const browser = await puppeteer.launch({
     headless: true,
