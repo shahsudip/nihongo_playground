@@ -324,6 +324,7 @@ async function scrapeAllTests(browser) {
         const urlStrings = [
 
           `${BASE_URL}${level}-${category}-exercise-${exerciseNum}/`,
+          `${BASE_URL}jlpt-${level}-${category}-exercise-${exerciseNum}/`,
           `${BASE_URL}jlpt-${level}-${category}-${exerciseNum}/`,
           `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${String(exerciseNum).padStart(2, '0')}/`,
           `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${exerciseNum}/`
