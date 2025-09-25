@@ -91,6 +91,8 @@ async function scrapeTestPage(page, url, category) {
         let currentQuestionInPassage = null;
 
         let readingContentMode = 'passage'; // Can be 'passage', 'vocab', or 'answers'
+        let pendingQuestionText = null;
+
 
 
 
@@ -145,6 +147,7 @@ async function scrapeTestPage(page, url, category) {
             expectedQuestionNumber = 1;
 
             readingContentMode = 'passage';
+            pendingQuestionText = null;
 
             return;
 
@@ -180,98 +183,89 @@ async function scrapeTestPage(page, url, category) {
             }
 
           } else if (readingContentMode === 'passage' && currentPassage) {
+            // NEW: Check for a standalone question paragraph first
+            const hasRadioButtons = el.querySelector('input[type="radio"]');
+            const isStandaloneQuestion = el.tagName === 'P' && el.innerText.trim().includes('しつもん') && !hasRadioButtons;
 
-            const hasRadio = el.tagName === 'P' && el.querySelector('input[type="radio"]');
-
-            if (hasRadio) {
-
-              const inputName = el.querySelector('input[type="radio"]').getAttribute('name');
-
-              const innerHTML = el.innerHTML;
-
-              const parts = innerHTML.split('<br>').map(part => {
-
-                const tempEl = document.createElement('div');
-
-                tempEl.innerHTML = part;
-
-                tempEl.querySelectorAll('input').forEach(input => input.remove());
-
-                return tempEl.textContent.trim();
-
-              }).filter(Boolean);
-
-              if (parts.length === 0) return;
-              let potentialQuestionText = '';
-              let options = [];
-
-              // Check if the first line is just the "shitsumon" tag.
-              if (parts.length > 1 && parts[0].includes('しつもん')) {
-                // If so, the second line is the question.
-                potentialQuestionText = parts[1];
-                // And the rest are the options.
-                options = parts.slice(2);
-              } else {
-                // Otherwise, use the original logic.
-                potentialQuestionText = parts[0] || '';
-                options = parts.slice(1);
-              }
-
-              const startsWithNumber = /^\d+\./.test(potentialQuestionText);
-              const isContinuation = currentQuestion && currentQuestion.inputName === inputName && !startsWithNumber;
-
-              if (isContinuation) {
-
-                currentQuestionInPassage.options.push(...parts);
-
-              } else {
-
-                commitCurrentQuestionInPassage();
-
-                let questionNumber = parseInt(potentialQuestionText.match(/^(\d+)\./)?.[1], 10);
-
-                if (!questionNumber) {
-
-                  const inputNameMatch = inputName && inputName.match(/quest(\d+)/i);
-
-                  questionNumber = inputNameMatch ? parseInt(inputNameMatch[1], 10) + 1 : expectedQuestionNumber;
-
-                }
-
-                currentQuestionInPassage = {
-
-                  questionNumber,
-
-                  questionText: potentialQuestionText,
-
-                  options: parts.slice(1),
-
-                  correctOption: null,
-
-                  inputName: inputName
-
-                };
-
-                expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
-
-              }
-
-            } else {
-
-              commitCurrentQuestionInPassage();
-
-              if (el.tagName === 'FIGURE') {
-
-                currentPassage.passageImage = el.querySelector('img')?.src || '';
-
-              } else if (el.tagName === 'P' && el.innerText.trim()) {
-
-                currentPassage.passageText += el.innerText.trim() + '\n';
-
-              }
-
+            if (isStandaloneQuestion) {
+              // This is the special case: store the text and move to the next element
+              pendingQuestionText = el.innerText.trim();
+              return; // Stop processing this node and go to the next one
             }
 
+            // YOUR ORIGINAL hasRadio CHECK IS PRESERVED
+            const hasRadio = el.tagName === 'P' && hasRadioButtons;
+
+            if (hasRadio) {
+              // *** MAIN FIX IS HERE ***
+              if (pendingQuestionText) {
+                // --- A) NEW PARSER FOR SPECIAL CASE ---
+                // If we have pending text, it means the question was in a separate <p>.
+                const options = el.innerHTML.split('<br>').map(part => {
+                  const tempEl = document.createElement('div');
+                  tempEl.innerHTML = part;
+                  tempEl.querySelectorAll('input').forEach(input => input.remove());
+                  return tempEl.textContent.trim();
+                }).filter(Boolean);
+
+                const inputName = el.querySelector('input[type="radio"]').getAttribute('name');
+                const inputNameMatch = inputName && inputName.match(/quest(\d+)/i);
+                const questionNumber = inputNameMatch ? parseInt(inputNameMatch[1], 10) : expectedQuestionNumber;
+
+                const newQuestion = {
+                  questionNumber,
+                  questionText: pendingQuestionText.replace(/「しつもん」/g, '').trim(),
+                  options: options,
+                  correctOption: null,
+                };
+                currentPassage.questions.push(newQuestion);
+                pendingQuestionText = null; // IMPORTANT: Reset after use
+                expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
+
+              } else {
+                // --- B) YOUR ORIGINAL PARSER IS PRESERVED ---
+                // If no pending text, run your original logic for combined <p> tags.
+                const inputName = el.querySelector('input[type="radio"]').getAttribute('name');
+                const innerHTML = el.innerHTML;
+                const parts = innerHTML.split('<br>').map(part => {
+                  const tempEl = document.createElement('div');
+                  tempEl.innerHTML = part;
+                  tempEl.querySelectorAll('input').forEach(input => input.remove());
+                  return tempEl.textContent.trim();
+                }).filter(Boolean);
+                if (parts.length === 0) return;
+                const potentialQuestionText = parts[0] || '';
+                const startsWithNumber = /^\d+\./.test(potentialQuestionText);
+                const isContinuation = currentQuestionInPassage && currentQuestionInPassage.inputName === inputName && !startsWithNumber;
+
+                if (isContinuation) {
+                  currentQuestionInPassage.options.push(...parts);
+                } else {
+                  commitCurrentQuestionInPassage();
+                  let questionNumber = parseInt(potentialQuestionText.match(/^(\d+)\./)?.[1], 10);
+                  if (!questionNumber) {
+                    const inputNameMatch = inputName && inputName.match(/quest(\d+)/i);
+                    questionNumber = inputNameMatch ? parseInt(inputNameMatch[1], 10) + 1 : expectedQuestionNumber;
+                  }
+                  currentQuestionInPassage = {
+                    questionNumber,
+                    questionText: potentialQuestionText,
+                    options: parts.slice(1),
+                    correctOption: null,
+                    inputName: inputName
+                  };
+                  expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
+                }
+              }
+            } else {
+              // This is your original 'else' block
+              commitCurrentQuestionInPassage();
+              if (el.tagName === 'FIGURE') {
+                currentPassage.passageImage = el.querySelector('img')?.src || '';
+              } else if (el.tagName === 'P' && el.innerText.trim()) {
+                currentPassage.passageText += el.innerText.trim() + '\n';
+              }
+            }
           }
 
         });
@@ -1076,7 +1070,7 @@ async function scrapeGrammarLists(browser) {
 
       }
 
-      await detailPage.close();   
+      await detailPage.close();
 
     }
 
