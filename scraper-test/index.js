@@ -34,557 +34,252 @@ console.log('Firestore initialized successfully. Database writes are enabled.');
 
 
 
+// --- This is the complete and corrected function ---
 async function scrapeTestPage(page, url, category) {
-
   try {
-
     await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
 
-
-
     return await page.evaluate((currentCategory) => {
-
       const content = document.querySelector('div.entry.clearfix');
-
       if (!content) return null;
 
       const title = document.title.split('|')[0].trim();
-
       let passages = [], questions = [], answers = {}, vocab = [];
+      let parsingMode = 'questions';
+      let expectedQuestionNumber = 1;
+      
       const parseVocabLine = (line) => {
         if (line && line.includes(':')) {
-          const parts = line.split(/:(.*)/s);
-          if (parts.length < 2) return null;
-          const japaneseAndRomaji = parts[0].trim();
-          const english = parts[1].trim();
-          let japanese = '', romaji = '';
-          const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
-          if (romajiMatch) {
-            romaji = romajiMatch[1].trim();
-            japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
-          } else {
-            japanese = japaneseAndRomaji;
-          }
-          if (japanese && english) {
-            return { japanese, romaji, english };
-          }
+            const parts = line.split(/:(.*)/s);
+            if (parts.length < 2) return null;
+            const japaneseAndRomaji = parts[0].trim();
+            const english = parts[1].trim();
+            let japanese = '', romaji = '';
+            const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
+            if (romajiMatch) {
+                romaji = romajiMatch[1].trim();
+                japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
+            } else { japanese = japaneseAndRomaji; }
+            if (japanese && english) { return { japanese, romaji, english }; }
         }
         return null;
       };
 
-
-
-      let parsingMode = 'questions';
-
-      let expectedQuestionNumber = 1;
-
-
-
-      const allParagraphs = Array.from(content.querySelectorAll('p'));
-
-
-
       if (currentCategory === 'reading') {
-
+        // This is the final, unified parser for ALL reading tests
         let currentPassage = null;
-
+        let pendingQuestionText = null;
+        let mainInstruction = null;
         let currentQuestionInPassage = null;
 
-        let readingContentMode = 'passage'; // Can be 'passage', 'vocab', or 'answers'
-        let pendingQuestionText = null;
-
-
-
-
         const commitCurrentQuestionInPassage = () => {
-
           if (currentQuestionInPassage && currentPassage) {
-
-            currentQuestionInPassage.questionText = currentQuestionInPassage.questionText
-
-              .replace(/^\d+\.\s*/, '')
-
-              .replace(/「しつもん」/g, '')
-
-              .trim();
-
+            currentQuestionInPassage.questionText = currentQuestionInPassage.questionText.replace(/^\d+\.\s*/, '').replace(/「しつもん」/g, '').trim();
             if (currentQuestionInPassage.questionText || currentQuestionInPassage.options.length > 0) {
-
               delete currentQuestionInPassage.inputName;
-
               currentPassage.questions.push(currentQuestionInPassage);
-
             }
-
             currentQuestionInPassage = null;
-
           }
-
         };
-
-        const isQuestionParagraph = (el) => {
-          if (el.tagName !== 'P') return false;
-          const text = el.innerText.trim();
-          return text.includes('しつもん') || text.includes('には、なにをいれますか');
-        };
-
-        content.childNodes.forEach(node => {
-
-          if (node.nodeType !== Node.ELEMENT_NODE) return;
-
-          const el = node;
-
-          const strongText = el.querySelector('strong')?.innerText?.trim() || '';
-
-          // NEW: Safely skip the introductory paragraph before any other logic runs.
-          if (!currentPassage && el.tagName === 'P' && strongText && !strongText.toLowerCase().startsWith('reading passage')) {
-            return; // Ignore this element and move to the next one.
-          }
-
-          // --- Mode Switchers ---
-
-          if (el.tagName === 'P' && strongText.startsWith('Reading Passage')) {
-
-            commitCurrentQuestionInPassage();
-
-            if (currentPassage) passages.push(currentPassage);
-
-            currentPassage = { passageTitle: strongText, passageImage: '', passageText: '', questions: [] };
-
-            expectedQuestionNumber = 1;
-
-            readingContentMode = 'passage';
-            pendingQuestionText = null;
-
-            return;
-
-          }
-
-          if (el.tagName === 'P' && (strongText.includes('New words') || strongText.includes('Answer Key'))) {
-
-            commitCurrentQuestionInPassage();
-
-            readingContentMode = strongText.includes('New words') ? 'vocab' : 'answers';
-
-            return;
-
-          }
-
-
-
-          // --- Content Processing based on Mode ---
-
-          if (readingContentMode === 'vocab' && el.tagName === 'P') {
-
-            const lines = el.innerHTML.split('<br>').map(line => {
-              const tempDiv = document.createElement('div');
-              tempDiv.innerHTML = line;
-              return tempDiv.textContent.trim();
-            }).filter(Boolean);
-
-            for (const line of lines) {
-              const vocabItem = parseVocabLine(line);
-              if (vocabItem) {
-                vocab.push(vocabItem);
-              }
-            }
-
-          } // --- START: Replace your block with this carefully constructed version ---
-          else if (readingContentMode === 'passage' && currentPassage) {
-            // --- SETUP: These variables help decide which parser to use ---
-            const hasRadioButtons = el.querySelector('input[type="radio"]');
-            const textContent = el.innerText.trim();
-            const isQuestionText = textContent.includes('しつもん') || textContent.includes('には、なにをいれますか');
-
-            // --- PARSER 1 (NEW): Handles questions with plain-text options (like Exercise 13) ---
-            // This is a PURE ADDITION. It runs first to catch the new case.
-            // Step 1.A: Find a paragraph that IS a question but does NOT have radio buttons.
-            if (isQuestionText && !hasRadioButtons) {
-              pendingQuestionText = textContent;
-              return; // Save the question and move to the next element to find its options.
-            }
-            // Step 1.B: If we have a pending question, this must be its plain-text options.
-            if (pendingQuestionText && !isQuestionText && el.tagName === 'P' && el.innerHTML.includes('<br>')) {
-              const options = el.innerHTML.split('<br>').map(part => {
+        const parseOptionsFromElement = (element, containsRadioButtons) => {
+            return element.innerHTML.split('<br>').map(part => {
                 const tempEl = document.createElement('div');
                 tempEl.innerHTML = part;
+                if (containsRadioButtons) { tempEl.querySelectorAll('input').forEach(i => i.remove()); }
                 return tempEl.textContent.trim();
-              }).filter(Boolean);
-
-              if (options.length > 0 && options[0]) {
-                const newQuestion = {
-                  questionNumber: expectedQuestionNumber,
+            }).filter(Boolean);
+        };
+        content.childNodes.forEach(node => {
+          if (node.nodeType !== Node.ELEMENT_NODE) return;
+          const el = node;
+          const strongText = el.querySelector('strong')?.innerText?.trim() || '';
+          const textContent = el.innerText.trim();
+          if (!currentPassage && el.tagName === 'P' && strongText && !strongText.toLowerCase().startsWith('reading passage')) {
+            mainInstruction = strongText; return;
+          }
+          if (el.tagName === 'P' && strongText.toLowerCase().startsWith('reading passage')) {
+            commitCurrentQuestionInPassage();
+            if (currentPassage) passages.push(currentPassage);
+            currentPassage = { passageTitle: strongText, passageImage: '', passageText: '', questions: [] };
+            if (mainInstruction) { currentPassage.mainInstruction = mainInstruction; mainInstruction = null; }
+            expectedQuestionNumber = 1; pendingQuestionText = null; parsingMode = 'passage'; return;
+          }
+          if (el.tagName === 'P' && (strongText.includes('New words') || strongText.includes('Answer Key'))) {
+            commitCurrentQuestionInPassage();
+            parsingMode = strongText.includes('New words') ? 'vocab' : 'answers'; return;
+          }
+          if (parsingMode === 'vocab') { /* ... */ }
+          else if (parsingMode === 'passage') {
+            const hasRadioButtons = el.querySelector('input[type="radio"]');
+            const isQuestionText = textContent.includes('しつもん') || textContent.includes('には、なにをいれますか');
+            if (isQuestionText && !hasRadioButtons) {
+              pendingQuestionText = textContent; return;
+            }
+            if (pendingQuestionText && !isQuestionText && el.tagName === 'P' && el.innerHTML.includes('<br>')) {
+              const options = parseOptionsFromElement(el, false);
+              if (options.length > 0 && options[0] && currentPassage) {
+                currentPassage.questions.push({
+                  questionNumber: expectedQuestionNumber++,
                   questionText: pendingQuestionText.replace(/「しつもん」/g, '').trim(),
-                  options: options,
-                  correctOption: null,
-                };
-                currentPassage.questions.push(newQuestion);
-                pendingQuestionText = null; // Reset!
-                expectedQuestionNumber++;
-                return; // This question is done; move to the next element.
+                  options: options, correctOption: null,
+                });
+                pendingQuestionText = null; return;
               }
             }
-
-            // --- PARSER 2 & 3 (YOURS): Handles all cases with radio buttons ---
-            // If the new parser above did not run, your original code block is executed below.
-            // This entire block is YOUR original logic, preserved without changes.
-            const hasRadio = el.tagName === 'P' && hasRadioButtons;
-            if (hasRadio) {
+            if (hasRadioButtons) {
               if (pendingQuestionText) {
-                // YOUR PARSER for separated questions and radio options (like Exercise 12)
-                const options = el.innerHTML.split('<br>').map(part => {
-                  const tempEl = document.createElement('div');
-                  tempEl.innerHTML = part;
-                  tempEl.querySelectorAll('input').forEach(input => input.remove());
-                  return tempEl.textContent.trim();
-                }).filter(Boolean);
-
+                const options = parseOptionsFromElement(el, true);
                 const inputName = el.querySelector('input[type="radio"]').getAttribute('name');
-                const inputNameMatch = inputName && inputName.match(/quest(\d+)/i);
-                const questionNumber = inputNameMatch ? parseInt(inputNameMatch[1], 10) : expectedQuestionNumber;
-
-                const newQuestion = {
-                  questionNumber,
-                  questionText: pendingQuestionText.replace(/「しつもん」/g, '').trim(),
-                  options: options,
-                  correctOption: null,
-                };
-                currentPassage.questions.push(newQuestion);
+                const qNumMatch = inputName && inputName.match(/quest(\d+)/i);
+                const questionNumber = qNumMatch ? parseInt(qNumMatch[1], 10) : expectedQuestionNumber++;
+                if (currentPassage) currentPassage.questions.push({
+                  questionNumber, questionText: pendingQuestionText.replace(/「しつもん」|^\d+\.\s*/g, '').trim(), options, correctOption: null
+                });
                 pendingQuestionText = null;
-                expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
               } else {
-                // YOUR PARSER for combined questions and radio options (your original implementation)
                 const inputName = el.querySelector('input[type="radio"]').getAttribute('name');
-                const innerHTML = el.innerHTML;
-                const parts = innerHTML.split('<br>').map(part => {
-                  const tempEl = document.createElement('div');
-                  tempEl.innerHTML = part;
-                  tempEl.querySelectorAll('input').forEach(input => input.remove());
-                  return tempEl.textContent.trim();
-                }).filter(Boolean);
+                const parts = parseOptionsFromElement(el, true);
                 if (parts.length === 0) return;
                 const potentialQuestionText = parts[0] || '';
-                const startsWithNumber = /^\d+\./.test(potentialQuestionText);
-                const isContinuation = currentQuestionInPassage && currentQuestionInPassage.inputName === inputName && !startsWithNumber;
-
+                const isContinuation = currentQuestionInPassage && currentQuestionInPassage.inputName === inputName && !/^\d+\./.test(potentialQuestionText);
                 if (isContinuation) {
                   currentQuestionInPassage.options.push(...parts);
                 } else {
                   commitCurrentQuestionInPassage();
-                  let questionNumber = parseInt(potentialQuestionText.match(/^(\d+)\./)?.[1], 10);
-                  if (!questionNumber) {
-                    const inputNameMatch = inputName && inputName.match(/quest(\d+)/i);
-                    questionNumber = inputNameMatch ? parseInt(inputNameMatch[1], 10) + 1 : expectedQuestionNumber;
-                  }
+                  let qNumMatch = potentialQuestionText.match(/^(\d+)\./);
+                  let inputMatch = inputName.match(/quest(\d+)/i);
+                  let questionNumber = qNumMatch ? parseInt(qNumMatch[1], 10) : (inputMatch ? parseInt(inputMatch[1], 10) : expectedQuestionNumber++);
                   currentQuestionInPassage = {
-                    questionNumber,
-                    questionText: potentialQuestionText,
-                    options: parts.slice(1),
-                    correctOption: null,
-                    inputName: inputName
+                    questionNumber, questionText: potentialQuestionText, options: parts.slice(1), correctOption: null, inputName: inputName
                   };
-                  expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
                 }
               }
-            } else {
-              // YOUR ORIGINAL 'else' logic for passage text and images.
+            } else if (currentPassage) {
               commitCurrentQuestionInPassage();
               if (el.tagName === 'FIGURE') {
-                //currentPassage.passageImage = el.querySelector('img')?.src || '';
-                if (currentPassage) {
-                  currentPassage.passageImage = el.querySelector('img')?.src || '';
-                }
-              } else if (currentPassage && el.tagName === 'P' && el.innerText.trim()) {
-                currentPassage.passageText += el.innerText.trim() + '\n';
+                currentPassage.passageImage = el.querySelector('img')?.src || '';
+              } else if (el.tagName === 'P' && textContent) {
+                currentPassage.passageText += textContent + '\n';
               }
             }
           }
-          // --- END: Replacement block ---
-
         });
-
         commitCurrentQuestionInPassage();
-
         if (currentPassage) passages.push(currentPassage);
 
       } else {
-
+        // === THIS IS YOUR ORIGINAL, RESTORED CODE FOR NON-READING TESTS ===
         let currentQuestion = null;
-
+        const allParagraphs = Array.from(content.querySelectorAll('p'));
         const commitCurrentQuestion = () => {
-
           if (currentQuestion) {
-
-            currentQuestion.questionText = currentQuestion.questionText
-
-              .replace(/^\d+\.\s*/, '')
-
-              .replace(/「しつもん」/g, '')
-
-              .trim();
-
+            currentQuestion.questionText = currentQuestion.questionText.replace(/^\d+\.\s*/, '').replace(/「しつもん」/g, '').trim();
             if (currentQuestion.questionText || currentQuestion.options.length > 0) {
-
               delete currentQuestion.inputName;
-
               questions.push(currentQuestion);
-
             }
-
             currentQuestion = null;
-
           }
-
         };
-
-
-
         allParagraphs.forEach(p => {
-
           const strongText = p.querySelector('strong')?.innerText?.trim() || '';
-
           if (strongText.includes('Answer Key') || strongText.includes('New words')) {
-
             commitCurrentQuestion();
-
             parsingMode = strongText.includes('Answer Key') ? 'answers' : 'vocab';
-
             return;
-
           }
-
-
-
           if (parsingMode === 'vocab') {
-
-            const text = p.innerText.trim();
-
-            if (text.includes(':')) {
-
-              const parts = text.split(/:(.*)/s);
-
-              if (parts.length < 2) return;
-
-              const japaneseAndRomaji = parts[0].trim();
-
-              const english = parts[1].trim();
-
-              let japanese = '', romaji = '';
-
-              const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
-
-              if (romajiMatch) {
-
-                romaji = romajiMatch[1].trim();
-
-                japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
-
-              } else {
-
-                japanese = japaneseAndRomaji;
-
-              }
-
-              if (japanese && english) {
-
-                vocab.push({ japanese, romaji, english });
-
-              }
-
-            }
-
+            const vocabItem = parseVocabLine(p.innerText.trim());
+            if (vocabItem) vocab.push(vocabItem);
             return;
-
           }
-
-
-
           if (parsingMode !== 'questions') return;
-
-
-
           const hasRadio = p.querySelector('input[type="radio"]');
-
           if (hasRadio) {
-
             const inputName = hasRadio.getAttribute('name');
-
-            const innerHTML = p.innerHTML;
-
-            const parts = innerHTML.split('<br>').map(part => {
-
-              const tempEl = document.createElement('div');
-
-              tempEl.innerHTML = part;
-
-              tempEl.querySelectorAll('input').forEach(input => input.remove());
-
-              return tempEl.textContent.trim();
-
+            const parts = p.innerHTML.split('<br>').map(part => {
+                const tempEl = document.createElement('div');
+                tempEl.innerHTML = part;
+                tempEl.querySelectorAll('input').forEach(input => input.remove());
+                return tempEl.textContent.trim();
             }).filter(Boolean);
-
             if (parts.length === 0) return;
-
             const potentialQuestionText = parts[0] || '';
-
-            const startsWithNumber = /^\d+\./.test(potentialQuestionText);
-
-            const isContinuation = currentQuestion && currentQuestion.inputName === inputName && !startsWithNumber;
-
+            const isContinuation = currentQuestion && currentQuestion.inputName === inputName && !/^\d+\./.test(potentialQuestionText);
             if (isContinuation) {
-
               currentQuestion.options.push(...parts);
-
             } else {
-
               commitCurrentQuestion();
-
-              let questionNumber = parseInt(potentialQuestionText.match(/^(\d+)\./)?.[1], 10);
-
-              if (!questionNumber) {
-
-                questionNumber = inputName && inputName.match(/quest(\d+)/i)
-
-                  ? parseInt(inputName.match(/quest(\d+)/i)[1], 10) + 1
-
-                  : expectedQuestionNumber;
-
-              }
-
+              let qNumMatch = potentialQuestionText.match(/^(\d+)\./);
+              let inputMatch = inputName.match(/quest(\d+)/i);
+              let questionNumber = qNumMatch ? parseInt(qNumMatch[1], 10) : (inputMatch ? parseInt(inputMatch[1], 10) + 1 : expectedQuestionNumber++);
               currentQuestion = {
-
-                questionNumber,
-
-                questionText: potentialQuestionText,
-
-                options: parts.slice(1),
-
-                correctOption: null,
-
-                inputName: inputName
-
+                questionNumber, questionText: potentialQuestionText, options: parts.slice(1), correctOption: null, inputName: inputName
               };
-
-              expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
-
             }
-
           } else {
-
             commitCurrentQuestion();
-
           }
-
         });
-
         commitCurrentQuestion();
-
       }
 
-
-
+      // Universal Answer Key Parsing
+      const allParagraphs = Array.from(content.querySelectorAll('p'));
       allParagraphs.forEach(p => {
-
+        const text = p.innerText.trim();
         const strongText = p.querySelector('strong')?.innerText?.trim() || '';
-
         if (strongText.includes('Answer Key')) parsingMode = 'answers';
-
         if (parsingMode === 'answers') {
-
-          const text = p.innerText.trim();
-
           const regex = /Question\s*(\d+):\s*(\d+)/gi;
-
           let match;
-
           while ((match = regex.exec(text)) !== null) {
-
-            const questionNum = parseInt(match[1], 10);
-
-            const answerIndex = parseInt(match[2], 10) - 1;
-
-            answers[questionNum] = answerIndex;
-
+            answers[parseInt(match[1], 10)] = parseInt(match[2], 10) - 1;
           }
-
         }
-
       });
 
-
-
+      // Final result assembly
       if (currentCategory === 'reading') {
-
         passages.forEach(passage => {
-
           passage.passageText = passage.passageText.trim();
-
           passage.questions.forEach(q => {
-
             if (answers[q.questionNumber] !== undefined) {
-
               const correctIndex = answers[q.questionNumber];
-
               if (correctIndex >= 0 && correctIndex < q.options.length) {
-
                 q.correctOption = { index: correctIndex, text: q.options[correctIndex] || '' };
-
               }
-
             }
-
           });
-
         });
-
-        if (passages.every(p => p.questions.length === 0)) return null;
-
-        const result = { title, sourceUrl: window.location.href, passages };
-
-        if (vocab.length > 0) result.vocab = vocab;
-
-        return result;
-
+        if (passages.length > 0 && passages.some(p => p.questions.length > 0)) {
+            const result = { title, sourceUrl: window.location.href, passages };
+            if (vocab.length > 0) result.vocab = vocab;
+            return result;
+        }
+        return null;
       } else {
-
-        questions = questions.filter(q => {
-
-          if (answers[q.questionNumber] !== undefined) {
-
-            const correctIndex = answers[q.questionNumber];
-
-            if (correctIndex >= 0 && correctIndex < q.options.length) {
-
-              q.correctOption = { index: correctIndex, text: q.options[correctIndex] || '' };
-
+        questions.forEach(q => {
+            if (answers[q.questionNumber] !== undefined) {
+                const correctIndex = answers[q.questionNumber];
+                if (correctIndex >= 0 && correctIndex < q.options.length) {
+                    q.correctOption = { index: correctIndex, text: q.options[correctIndex] || '' };
+                }
             }
-
-          }
-
-          return q.questionText || q.options.length > 0;
-
         });
-
-        if (questions.length === 0) return null;
-
-        const result = { title, sourceUrl: window.location.href, questions };
-
-        if (vocab.length > 0) result.vocab = vocab;
-
-        return result;
-
+        if (questions.length > 0) {
+            const result = { title, sourceUrl: window.location.href, questions };
+            if (vocab.length > 0) result.vocab = vocab;
+            return result;
+        }
+        return null;
       }
-
     }, category);
-
   } catch (error) {
-
     console.error(`Error processing URL ${url}:`, error.message);
-
     return null;
-
   }
-
 }
 
 
