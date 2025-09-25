@@ -1076,7 +1076,7 @@ async function scrapeGrammarLists(browser) {
 
       }
 
-      await detailPage.close();
+      await detailPage.close();   
 
     }
 
