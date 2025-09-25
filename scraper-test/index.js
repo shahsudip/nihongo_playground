@@ -122,7 +122,11 @@ async function scrapeTestPage(page, url, category) {
 
         };
 
-
+ const isQuestionParagraph = (el) => {
+        if (el.tagName !== 'P') return false;
+        const text = el.innerText.trim();
+        return text.includes('しつもん') || text.includes('には、なにをいれますか');
+    };
 
         content.childNodes.forEach(node => {
 
@@ -186,6 +190,35 @@ async function scrapeTestPage(page, url, category) {
             // NEW: Check for a standalone question paragraph first
             const hasRadioButtons = el.querySelector('input[type="radio"]');
             const isStandaloneQuestion = el.tagName === 'P' && el.innerText.trim().includes('しつもん') && !hasRadioButtons;
+             // --- START: NEW PARSER for questions WITHOUT radio buttons ---
+            if (isQuestionParagraph(el)) {
+                // If we find a question, store its text and wait for the next paragraph (the options).
+                pendingQuestionText = el.innerText.trim();
+                return; // Go to the next node
+            }
+
+              if (pendingQuestionText && el.tagName === 'P' && !strongText.startsWith('Reading Passage')) {
+                const options = el.innerHTML.split('<br>').map(part => {
+                    const tempEl = document.createElement('div');
+                    tempEl.innerHTML = part;
+                    return tempEl.textContent.trim();
+                }).filter(Boolean);
+
+                // Make sure we actually found options before committing.
+                if (options.length > 0) {
+                     const questionNumber = expectedQuestionNumber;
+                     const newQuestion = {
+                         questionNumber,
+                         questionText: pendingQuestionText.replace(/「しつもん」/g, '').trim(),
+                         options: options,
+                         correctOption: null,
+                     };
+                     currentPassage.questions.push(newQuestion);
+                     pendingQuestionText = null; // Reset after use!
+                     expectedQuestionNumber++;
+                     return; // Question processed, go to the next node.
+                }
+            }
 
             if (isStandaloneQuestion) {
               // This is the special case: store the text and move to the next element
