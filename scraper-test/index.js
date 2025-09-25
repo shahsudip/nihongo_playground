@@ -20,7 +20,7 @@ const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
 const LEVELS = ['n5', 'n4', 'n3', 'n2', 'n1'];
 
-const TEST_CATEGORIES = ['reading','grammar', 'vocabulary', 'kanji'];
+const TEST_CATEGORIES = ['reading', 'grammar', 'vocabulary', 'kanji'];
 
 const BASE_URL = 'https://japanesetest4you.com/';
 
@@ -51,23 +51,23 @@ async function scrapeTestPage(page, url, category) {
       const title = document.title.split('|')[0].trim();
 
       let passages = [], questions = [], answers = {}, vocab = [];
-const parseVocabLine = (line) => {
+      const parseVocabLine = (line) => {
         if (line && line.includes(':')) {
-            const parts = line.split(/:(.*)/s);
-            if (parts.length < 2) return null;
-            const japaneseAndRomaji = parts[0].trim();
-            const english = parts[1].trim();
-            let japanese = '', romaji = '';
-            const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
-            if (romajiMatch) {
-                romaji = romajiMatch[1].trim();
-                japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
-            } else {
-                japanese = japaneseAndRomaji;
-            }
-            if (japanese && english) {
-                return { japanese, romaji, english };
-            }
+          const parts = line.split(/:(.*)/s);
+          if (parts.length < 2) return null;
+          const japaneseAndRomaji = parts[0].trim();
+          const english = parts[1].trim();
+          let japanese = '', romaji = '';
+          const romajiMatch = japaneseAndRomaji.match(/\((.*)\)/);
+          if (romajiMatch) {
+            romaji = romajiMatch[1].trim();
+            japanese = japaneseAndRomaji.replace(/\(.*\)/, '').trim();
+          } else {
+            japanese = japaneseAndRomaji;
+          }
+          if (japanese && english) {
+            return { japanese, romaji, english };
+          }
         }
         return null;
       };
@@ -166,18 +166,18 @@ const parseVocabLine = (line) => {
 
           if (readingContentMode === 'vocab' && el.tagName === 'P') {
 
-                            const lines = el.innerHTML.split('<br>').map(line => {
-                    const tempDiv = document.createElement('div');
-                    tempDiv.innerHTML = line;
-                    return tempDiv.textContent.trim();
-                }).filter(Boolean);
+            const lines = el.innerHTML.split('<br>').map(line => {
+              const tempDiv = document.createElement('div');
+              tempDiv.innerHTML = line;
+              return tempDiv.textContent.trim();
+            }).filter(Boolean);
 
-                for (const line of lines) {
-                    const vocabItem = parseVocabLine(line);
-                    if (vocabItem) {
-                        vocab.push(vocabItem);
-                    }
-                }
+            for (const line of lines) {
+              const vocabItem = parseVocabLine(line);
+              if (vocabItem) {
+                vocab.push(vocabItem);
+              }
+            }
 
           } else if (readingContentMode === 'passage' && currentPassage) {
 
@@ -202,12 +202,23 @@ const parseVocabLine = (line) => {
               }).filter(Boolean);
 
               if (parts.length === 0) return;
+              let potentialQuestionText = '';
+              let options = [];
 
-              const potentialQuestionText = parts[0] || '';
+              // Check if the first line is just the "shitsumon" tag.
+              if (parts.length > 1 && parts[0].includes('しつもん')) {
+                // If so, the second line is the question.
+                potentialQuestionText = parts[1];
+                // And the rest are the options.
+                options = parts.slice(2);
+              } else {
+                // Otherwise, use the original logic.
+                potentialQuestionText = parts[0] || '';
+                options = parts.slice(1);
+              }
 
               const startsWithNumber = /^\d+\./.test(potentialQuestionText);
-
-              const isContinuation = currentQuestionInPassage && currentQuestionInPassage.inputName === inputName && !startsWithNumber;
+              const isContinuation = currentQuestion && currentQuestion.inputName === inputName && !startsWithNumber;
 
               if (isContinuation) {
 
