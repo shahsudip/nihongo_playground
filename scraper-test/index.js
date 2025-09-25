@@ -405,7 +405,10 @@ async function scrapeVocabularyLists(browser) {
 
 // ===================== MAIN EXECUTION =====================
 (async () => {
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
   try {
     await scrapeAllTests(browser);
     await scrapeVocabularyLists(browser);
@@ -416,3 +419,4 @@ async function scrapeVocabularyLists(browser) {
     console.log('🔚 Puppeteer browser closed. Scraper finished.');
   }
 })();
+
