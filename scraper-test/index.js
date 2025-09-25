@@ -201,7 +201,7 @@ async function scrapeTestPage(page, url, category) {
               return; // Save the question and move to the next element to find its options.
             }
             // Step 1.B: If we have a pending question, this must be its plain-text options.
-if (pendingQuestionText && !isQuestionText && el.tagName === 'P' && el.innerHTML.includes('<br>')) {
+            if (pendingQuestionText && !isQuestionText && el.tagName === 'P' && el.innerHTML.includes('<br>')) {
               const options = el.innerHTML.split('<br>').map(part => {
                 const tempEl = document.createElement('div');
                 tempEl.innerHTML = part;
@@ -629,7 +629,7 @@ async function scrapeAllTests(browser) {
 
         const urlStrings = [
 
-          `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${exerciseNum}/`,
+          `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-${exerciseNum}/`,
 
           `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${String(exerciseNum).padStart(2, '0')}/`
 
