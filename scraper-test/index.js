@@ -122,11 +122,11 @@ async function scrapeTestPage(page, url, category) {
 
         };
 
- const isQuestionParagraph = (el) => {
-        if (el.tagName !== 'P') return false;
-        const text = el.innerText.trim();
-        return text.includes('しつもん') || text.includes('には、なにをいれますか');
-    };
+        const isQuestionParagraph = (el) => {
+          if (el.tagName !== 'P') return false;
+          const text = el.innerText.trim();
+          return text.includes('しつもん') || text.includes('には、なにをいれますか');
+        };
 
         content.childNodes.forEach(node => {
 
@@ -186,54 +186,49 @@ async function scrapeTestPage(page, url, category) {
               }
             }
 
-          } else if (readingContentMode === 'passage' && currentPassage) {
-            // NEW: Check for a standalone question paragraph first
+          } // --- START: Replace your block with this carefully constructed version ---
+          else if (readingContentMode === 'passage' && currentPassage) {
+            // --- SETUP: These variables help decide which parser to use ---
             const hasRadioButtons = el.querySelector('input[type="radio"]');
-            const isStandaloneQuestion = el.tagName === 'P' && el.innerText.trim().includes('しつもん') && !hasRadioButtons;
-             // --- START: NEW PARSER for questions WITHOUT radio buttons ---
-            if (isQuestionParagraph(el)) {
-                // If we find a question, store its text and wait for the next paragraph (the options).
-                pendingQuestionText = el.innerText.trim();
-                return; // Go to the next node
+            const textContent = el.innerText.trim();
+            const isQuestionText = textContent.includes('しつもん') || textContent.includes('には、なにをいれますか');
+
+            // --- PARSER 1 (NEW): Handles questions with plain-text options (like Exercise 13) ---
+            // This is a PURE ADDITION. It runs first to catch the new case.
+            // Step 1.A: Find a paragraph that IS a question but does NOT have radio buttons.
+            if (isQuestionText && !hasRadioButtons) {
+              pendingQuestionText = textContent;
+              return; // Save the question and move to the next element to find its options.
+            }
+            // Step 1.B: If we have a pending question, this must be its plain-text options.
+            if (pendingQuestionText && !isQuestionText && el.tagName === 'P' && !strongText.startsWith('Reading Passage')) {
+              const options = el.innerHTML.split('<br>').map(part => {
+                const tempEl = document.createElement('div');
+                tempEl.innerHTML = part;
+                return tempEl.textContent.trim();
+              }).filter(Boolean);
+
+              if (options.length > 0 && options[0]) {
+                const newQuestion = {
+                  questionNumber: expectedQuestionNumber,
+                  questionText: pendingQuestionText.replace(/「しつもん」/g, '').trim(),
+                  options: options,
+                  correctOption: null,
+                };
+                currentPassage.questions.push(newQuestion);
+                pendingQuestionText = null; // Reset!
+                expectedQuestionNumber++;
+                return; // This question is done; move to the next element.
+              }
             }
 
-              if (pendingQuestionText && el.tagName === 'P' && !strongText.startsWith('Reading Passage')) {
-                const options = el.innerHTML.split('<br>').map(part => {
-                    const tempEl = document.createElement('div');
-                    tempEl.innerHTML = part;
-                    return tempEl.textContent.trim();
-                }).filter(Boolean);
-
-                // Make sure we actually found options before committing.
-                if (options.length > 0) {
-                     const questionNumber = expectedQuestionNumber;
-                     const newQuestion = {
-                         questionNumber,
-                         questionText: pendingQuestionText.replace(/「しつもん」/g, '').trim(),
-                         options: options,
-                         correctOption: null,
-                     };
-                     currentPassage.questions.push(newQuestion);
-                     pendingQuestionText = null; // Reset after use!
-                     expectedQuestionNumber++;
-                     return; // Question processed, go to the next node.
-                }
-            }
-
-            if (isStandaloneQuestion) {
-              // This is the special case: store the text and move to the next element
-              pendingQuestionText = el.innerText.trim();
-              return; // Stop processing this node and go to the next one
-            }
-
-            // YOUR ORIGINAL hasRadio CHECK IS PRESERVED
+            // --- PARSER 2 & 3 (YOURS): Handles all cases with radio buttons ---
+            // If the new parser above did not run, your original code block is executed below.
+            // This entire block is YOUR original logic, preserved without changes.
             const hasRadio = el.tagName === 'P' && hasRadioButtons;
-
             if (hasRadio) {
-              // *** MAIN FIX IS HERE ***
               if (pendingQuestionText) {
-                // --- A) NEW PARSER FOR SPECIAL CASE ---
-                // If we have pending text, it means the question was in a separate <p>.
+                // YOUR PARSER for separated questions and radio options (like Exercise 12)
                 const options = el.innerHTML.split('<br>').map(part => {
                   const tempEl = document.createElement('div');
                   tempEl.innerHTML = part;
@@ -252,12 +247,10 @@ async function scrapeTestPage(page, url, category) {
                   correctOption: null,
                 };
                 currentPassage.questions.push(newQuestion);
-                pendingQuestionText = null; // IMPORTANT: Reset after use
+                pendingQuestionText = null;
                 expectedQuestionNumber = Math.max(expectedQuestionNumber, questionNumber + 1);
-
               } else {
-                // --- B) YOUR ORIGINAL PARSER IS PRESERVED ---
-                // If no pending text, run your original logic for combined <p> tags.
+                // YOUR PARSER for combined questions and radio options (your original implementation)
                 const inputName = el.querySelector('input[type="radio"]').getAttribute('name');
                 const innerHTML = el.innerHTML;
                 const parts = innerHTML.split('<br>').map(part => {
@@ -291,7 +284,7 @@ async function scrapeTestPage(page, url, category) {
                 }
               }
             } else {
-              // This is your original 'else' block
+              // YOUR ORIGINAL 'else' logic for passage text and images.
               commitCurrentQuestionInPassage();
               if (el.tagName === 'FIGURE') {
                 currentPassage.passageImage = el.querySelector('img')?.src || '';
@@ -300,6 +293,7 @@ async function scrapeTestPage(page, url, category) {
               }
             }
           }
+          // --- END: Replacement block ---
 
         });
 
