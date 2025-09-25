@@ -287,8 +287,11 @@ async function scrapeTestPage(page, url, category) {
               // YOUR ORIGINAL 'else' logic for passage text and images.
               commitCurrentQuestionInPassage();
               if (el.tagName === 'FIGURE') {
+                //currentPassage.passageImage = el.querySelector('img')?.src || '';
+                if (currentPassage) {
                 currentPassage.passageImage = el.querySelector('img')?.src || '';
-              } else if (el.tagName === 'P' && el.innerText.trim()) {
+            }
+              } else if (currentPassage && el.tagName === 'P' && el.innerText.trim()) {
                 currentPassage.passageText += el.innerText.trim() + '\n';
               }
             }
@@ -630,8 +633,8 @@ async function scrapeAllTests(browser) {
         const urlStrings = [
 
           `${BASE_URL}jlpt-${level}-${category}-${exerciseNum}/`,
-
           `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${String(exerciseNum).padStart(2, '0')}/`
+          `${BASE_URL}japanese-language-proficiency-test-jlpt-${level}-${category}-exercise-${exerciseNum}/`
 
         ];
 
