@@ -93,25 +93,35 @@ async function scrapeTestPage(page, url, category) {
           const el = node;
           const strongText = el.querySelector('strong')?.innerText?.trim() || '';
           const textContent = el.innerText.trim();
+          
+          // --- LOGIC TO DETECT HEADERS ---
           const isJapaneseHeader = textContent.includes('つぎの文を読んで') || textContent.includes('次の文章を読んで');
           const isEnglishHeader = strongText.toLowerCase().startsWith('reading passage');
+          // NEW: Check for "問題" (Problem) headers
+          const isProblemHeader = strongText.startsWith('問題');
 
-          if (el.tagName === 'P' && (isEnglishHeader || isJapaneseHeader)) {
-            commitCurrentQuestionInPassage();
+          // 1. Handle All Passage Headers
+          if (el.tagName === 'P' && (isEnglishHeader || isJapaneseHeader || isProblemHeader)) {
             if (currentPassage) passages.push(currentPassage);
-            const passageTitle = isEnglishHeader ? strongText : 'Reading Passage';
+            // UPDATED: Use the correct text for the passage title
+            const passageTitle = isEnglishHeader ? strongText : (isProblemHeader ? strongText : 'Reading Passage');
             currentPassage = { passageTitle, passageImage: '', passageText: '', questions: [] };
             if (mainInstruction) { currentPassage.mainInstruction = mainInstruction; mainInstruction = null; }
-            if (isJapaneseHeader) { currentPassage.mainInstruction = textContent; }
+            if (isJapaneseHeader || isProblemHeader) { currentPassage.mainInstruction = textContent; }
             expectedQuestionNumber = 1; pendingQuestionText = null; parsingMode = 'passage'; return;
           }
+
+          // 2. Capture Main Instruction if it appears first
           if (!currentPassage && el.tagName === 'P' && strongText) {
             mainInstruction = textContent; return;
           }
+
+          // 3. Handle Mode Switches to Vocab/Answers
           if (el.tagName === 'P' && (strongText.includes('New words') || strongText.includes('Answer Key'))) {
-            commitCurrentQuestionInPassage();
             parsingMode = strongText.includes('New words') ? 'vocab' : 'answers'; return;
           }
+          
+          // 4. Process Vocab or Passage Content
           if (parsingMode === 'vocab' && el.tagName === 'P') {
             const lines = el.innerHTML.split('<br>').map(line => {
                 const tempDiv = document.createElement('div'); tempDiv.innerHTML = line; return tempDiv.textContent.trim();
@@ -123,11 +133,13 @@ async function scrapeTestPage(page, url, category) {
           } else if (parsingMode === 'passage') {
             const hasRadioButtons = el.querySelector('input[type="radio"]');
             const isQuestionText = textContent.includes('しつもん') || textContent.includes('には、なにをいれますか') || /^\d+\.\s*/.test(textContent);
+            
             if (!currentPassage && isQuestionText) {
               currentPassage = { passageTitle: 'Reading Passage (Default)', passageImage: '', passageText: '', questions: [] };
               if (mainInstruction) { currentPassage.mainInstruction = mainInstruction; mainInstruction = null; }
             }
             if (!currentPassage) return;
+
             if (isQuestionText && !hasRadioButtons) {
               pendingQuestionText = textContent; return;
             }
