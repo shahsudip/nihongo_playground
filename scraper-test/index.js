@@ -165,7 +165,7 @@ async function scrapeTestPage(page, url, category) {
         }
         if (currentPassage) passages.push(currentPassage);
 
-      } else {
+      } else { 
         // === YOUR ORIGINAL, WORKING CODE FOR NON-READING TESTS (RESTORED) ===
         let currentQuestion = null;
         const allParagraphs = Array.from(content.querySelectorAll('p'));
