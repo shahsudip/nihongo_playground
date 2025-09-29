@@ -12,6 +12,9 @@ import ProfilePage from './components/profile_screen.jsx';
 import ExerciseGridPage from './components/exercise_grid_screen.jsx';
 import StandardQuizPage from './components/standard_quiz_screen.jsx';
 import ReadingQuizPage from './components/ReadingQUizPage.jsx';
+import QuizPage from './components/standard_quiz_screen.jsx';
+import VocabularyListPage from './components/VocabularyListPage.jsx';
+import FlashcardViewer from './components/FlashcardViewer.jsx';
 
 
 // This component protects routes that require a user to be logged in
@@ -57,11 +60,17 @@ export default function App() {
             path="/quiz/:quizId"
             element={<ProtectedRoute><JlptQuizPage /></ProtectedRoute>}
           />
+          <Route
+            path="/custom-quiz/:quizId"
+            element={<ProtectedRoute><QuizPage /></ProtectedRoute>}
+          />
 
           <Route
             path="/reading-quiz/:quizId"
             element={<ProtectedRoute><ReadingQuizPage /></ProtectedRoute>}
           />
+      <Route path="/flashcards/:level/vocabulary_list" element={<VocabularyListPage />} />
+      <Route path="/flashcards/:level/vocabulary_list/:chunkIndex" element={<FlashcardViewer />} />
           <Route
             path="/results"
             element={<ProtectedRoute><ResultsPage /></ProtectedRoute>}

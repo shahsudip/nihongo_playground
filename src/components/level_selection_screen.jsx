@@ -41,6 +41,13 @@ const LevelSelectionPage = () => {
             {cat.charAt(0).toUpperCase() + cat.slice(1)} Test
           </Link>
         ))}
+                <Link to={`/flashcards/${level}/vocabulary_list`} className="category-card flashcard-mode">
+          Vocabulary List
+        </Link>
+
+        <Link to={`/flashcards/${level}/grammar_list`} className="category-card flashcard-mode">
+          Grammar List
+        </Link>
       </div>
     </div>
   );

@@ -181,7 +181,7 @@ const ProfilePage = () => {
                 {customQuizzes.map((quiz) => {
                   const historyRecord = quizHistory.find(h => (h.quizId || h.id) === quiz.id);
                   const status = historyRecord?.status || 'unattended';
-                  const quizLink = `/quiz/${quiz.id}`;
+                  const quizLink = `/custom-quiz/${quiz.id}`;
                   const quizState = {
                     quizId: quiz.id,
                     quizTitle: quiz.title,

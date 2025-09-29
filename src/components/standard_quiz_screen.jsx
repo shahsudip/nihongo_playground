@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate,useLocation } from 'react-router-dom';
 import { useSrsQuiz } from '../hooks/quiz_logic_hook.jsx';
 import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
@@ -168,6 +168,8 @@ const transformQuizContent = (rawContent = []) => {
 const QuizPage = () => {
   const { level, category } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
+
   const { currentUser, isAdmin } = useAuth();
 
   const standardLevels = ['n5', 'n4', 'n3', 'n2', 'n1'];
@@ -196,8 +198,8 @@ const QuizPage = () => {
     const fetchQuizData = async () => {
       setLoading(true);
       try {
-        if (isCustomQuiz) {
-          const quizDocRef = doc(db, 'users', currentUser.uid, 'customQuizzes', level);
+        if (location.state?.type === 'custom' || isCustomQuiz) {
+          const quizDocRef = doc(db, 'users', currentUser.uid, 'customQuizzes', quizId);;
           const quizDocSnap = await getDoc(quizDocRef);
           if (quizDocSnap.exists()) {
             setCustomQuizData({ id: quizDocSnap.id, ...quizDocSnap.data() });
