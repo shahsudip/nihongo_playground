@@ -6,7 +6,6 @@ import { collection, doc, getDoc, setDoc } from 'firebase/firestore';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 
 const FlashcardViewer = () => {
-  // Get all URL parameters, including the new chunkIndex
   const { level, type, chunkIndex } = useParams(); 
   const navigate = useNavigate();
   const { currentUser } = useAuth();
@@ -23,8 +22,6 @@ const FlashcardViewer = () => {
   useEffect(() => {
     if (!currentUser) return;
     
-    // FIX: Determine the collection type based on the URL parameter.
-    // We default to 'vocabulary_list' as it's the main implementation.
     const collectionType = type || 'vocabulary_list';
     const quizId = `${level}-${collectionType}-${chunkIndex}`;
     historyDocRef.current = doc(db, 'users', currentUser.uid, 'quizHistory', quizId);
@@ -41,7 +38,6 @@ const FlashcardViewer = () => {
           if (collectionType === 'vocabulary_list') {
             words = data.words || [];
           }
-          // (Future logic for grammar_list could go here)
 
           const index = parseInt(chunkIndex, 10);
           const CHUNK_SIZE = 100;
@@ -51,11 +47,13 @@ const FlashcardViewer = () => {
 
           totalCountRef.current = chunkWords.length;
 
+          // UPDATED: Create card objects with meaning and romaji for the back
           const fetchedCards = chunkWords.map(word => ({
-            id: word.kanji || word.japanese,
-            front: word.kanji || word.japanese,
-            back: word.meaning,
-            subtext: word.kanji ? word.japanese : null
+            id: word.japanese, // Use japanese as a unique ID for the session
+            front: word.japanese,
+            back_meaning: word.english, // Use 'english' field from scraped data
+            back_romaji: word.romaji,   // Add the 'romaji' field
+            subtext: null               // No separate subtext for vocab lists
           }));
           
           setCards(fetchedCards);
@@ -129,8 +127,11 @@ const FlashcardViewer = () => {
 
   return (
     <div className="flashcard-container">
+       <div className="viewer-top-bar" style={{ width: '100%', maxWidth: '500px', textAlign: 'left', marginBottom: '1rem' }}>
+         <button onClick={() => navigate(-1)} className="back-button">← Back</button>
+       </div>
       <div className="flashcard-header">
-        <h1>{type.replace('_', ' ')} - List {parseInt(chunkIndex, 10) + 1}</h1>
+        <h1>{(type || "").replace('_', ' ')} - List {parseInt(chunkIndex, 10) + 1}</h1>
         <div className="flashcard-progress">
           Progress: {coveredInSession.size} / {cards.length}
         </div>
@@ -142,16 +143,16 @@ const FlashcardViewer = () => {
             <p className="flashcard-text">{currentCard.front}</p>
             {currentCard.subtext && <p className="flashcard-subtext">{currentCard.subtext}</p>}
           </div>
+          {/* UPDATED: The back of the card now shows meaning and romaji */}
           <div className="flashcard-face flashcard-back">
             {isCardCovered && <span className="status-badge status-mastered covered-badge">✓</span>}
-            <p className="flashcard-text">{currentCard.back}</p>
+            <p className="flashcard-subtext">{currentCard.back_meaning}</p>
+            {currentCard.back_romaji && <p className="flashcard-subtext">{currentCard.back_romaji}</p>}
           </div>
         </div>
       </div>
       <div className="flashcard-navigation">
         <button onClick={handlePrev} className="nav-button">← Prev</button>
-        {/* ADDED: Back button that navigates to the previous screen */}
-        <button onClick={() => navigate(-1)} className="nav-button back-button">Back to List</button>
         <button onClick={handleNext} className="nav-button">Next →</button>
       </div>
     </div>

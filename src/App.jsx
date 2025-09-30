@@ -12,9 +12,11 @@ import ProfilePage from './components/profile_screen.jsx';
 import ExerciseGridPage from './components/exercise_grid_screen.jsx';
 import StandardQuizPage from './components/standard_quiz_screen.jsx';
 import ReadingQuizPage from './components/ReadingQUizPage.jsx';
-import QuizPage from './components/standard_quiz_screen.jsx';
+//import QuizPage from './components/standard_quiz_screen.jsx';
 import VocabularyListPage from './components/VocabularyListPage.jsx';
 import FlashcardViewer from './components/FlashcardViewer.jsx';
+import GrammarListPage from './components/grammar_list_page.jsx';
+import GrammarStudyPage from './components/grammar_study_page.jsx';
 
 
 // This component protects routes that require a user to be logged in
@@ -62,15 +64,24 @@ export default function App() {
           />
           <Route
             path="/custom-quiz/:quizId"
-            element={<ProtectedRoute><QuizPage /></ProtectedRoute>}
+            element={<ProtectedRoute><StandardQuizPage /></ProtectedRoute>}
           />
 
           <Route
             path="/reading-quiz/:quizId"
             element={<ProtectedRoute><ReadingQuizPage /></ProtectedRoute>}
           />
-      <Route path="/flashcards/:level/vocabulary_list" element={<VocabularyListPage />} />
-      <Route path="/flashcards/:level/vocabulary_list/:chunkIndex" element={<FlashcardViewer />} />
+          <Route path="/flashcards/:level/vocabulary_list" element={<ProtectedRoute><VocabularyListPage /></ProtectedRoute>} />
+          <Route path="/flashcards/:level/vocabulary_list/:chunkIndex" element={<ProtectedRoute><FlashcardViewer /></ProtectedRoute>} />
+
+          <Route 
+            path="/grammar-list/:level" 
+            element={<ProtectedRoute><GrammarListPage /></ProtectedRoute>} 
+          />
+          <Route 
+            path="/study/grammar/:level/:slug" 
+            element={<ProtectedRoute><GrammarStudyPage /></ProtectedRoute>} 
+          />
           <Route
             path="/results"
             element={<ProtectedRoute><ResultsPage /></ProtectedRoute>}

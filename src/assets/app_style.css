@@ -1173,6 +1173,7 @@ width: 100%;
   min-height: 80vh;
   padding: 20px;
   width: 100%;
+  margin-top: 20px;
 }
 
 /*
@@ -1259,13 +1260,13 @@ width: 100%;
 }
 
 .flashcard-text {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
   margin: 0;
 }
 
 .flashcard-subtext {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: var(--text-medium);
   margin-top: 15px;
 }
@@ -1357,4 +1358,143 @@ width: 100%;
   .nav-button {
       padding: 12px 15px;
   }
+}
+.grammar-study-container {
+  width: 100%;
+   margin: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grammar-details-card {
+  background-color: var(--background-light);
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 100px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.grammar-title {
+  font-size: 2.5rem;
+  color: var(--primary-green);
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.grammar-section h2 {
+  font-size: 1.2rem;
+  color: var(--text-medium);
+  border-bottom: 1px solid var(--surface-light);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.grammar-section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.example-carousel {
+  text-align: center;
+}
+
+.example-carousel h2 {
+  font-size: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+/* Re-using flashcard styles for the example card */
+.flashcard {
+  width: 100%;
+  height: 250px;
+  perspective: 1000px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flashcard.is-flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+.flashcard-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.flashcard-front {
+  background-color: #fff;
+  color: #333;
+}
+
+.flashcard-back {
+  background-color: var(--surface-light);
+  color: var(--text-light);
+  transform: rotateY(180deg);
+}
+
+.flashcard-text {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+.flashcard-text.english {
+  font-size: 1.5rem;
+}
+
+.flashcard-subtext {
+  font-size: 1.2rem;
+  color: var(--text-medium);
+  margin-top: 15px;
+}
+
+.carousel-navigation {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.carousel-navigation button {
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--surface-light);
+  color: var(--text-light);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.carousel-navigation button:hover:not(:disabled) {
+  background-color: var(--primary-green);
+}
+
+.carousel-navigation button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }

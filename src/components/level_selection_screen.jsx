@@ -45,7 +45,7 @@ const LevelSelectionPage = () => {
           Vocabulary List
         </Link>
 
-        <Link to={`/flashcards/${level}/grammar_list`} className="category-card flashcard-mode">
+        <Link to={`/grammar-list/${level}`} className="category-card flashcard-mode">
           Grammar List
         </Link>
       </div>
