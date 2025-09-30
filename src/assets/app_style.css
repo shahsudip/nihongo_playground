@@ -1411,6 +1411,8 @@ width: 100%;
 /* Re-using flashcard styles for the example card */
 .flashcard {
   width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
   height: 250px;
   perspective: 1000px;
   cursor: pointer;

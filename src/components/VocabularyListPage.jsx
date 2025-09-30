@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { db } from '../firebaseConfig';
-import { useAuth } from '../context/AuthContext';
+import { db } from '../firebaseConfig'; 
+import { useAuth } from '../context/AuthContext'; 
 import { collection, doc, getDoc, getDocs, setDoc, query, where } from 'firebase/firestore';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 import { formatDateTime } from '../utils/formatters.jsx';
@@ -14,6 +14,7 @@ const VocabularyListPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [wordChunks, setWordChunks] = useState([]);
   const [history, setHistory] = useState({});
+  const [error, setError] = useState(null); // New state for error messages
 
   const CHUNK_SIZE = 100;
 
@@ -22,17 +23,27 @@ const VocabularyListPage = () => {
 
     const fetchData = async () => {
       setIsLoading(true);
+      setError(null); // Reset error on new fetch
       try {
-        const listDocRef = doc(db, 'jlpt', level, 'vocabulary_list', 'full-list');
+        const listDocPath = `jlpt/${level}/vocabulary_list/full-list`;
+        console.log(`DEBUG: Attempting to fetch vocabulary list from: ${listDocPath}`);
+        
+        const listDocRef = doc(db, listDocPath);
         const listDocSnap = await getDoc(listDocRef);
 
         if (listDocSnap.exists()) {
           const words = listDocSnap.data().words || [];
+          if (words.length === 0) {
+            setError(`The vocabulary list for ${level.toUpperCase()} was found, but it's empty.`);
+          }
           const chunks = [];
           for (let i = 0; i < words.length; i += CHUNK_SIZE) {
             chunks.push(words.slice(i, i + CHUNK_SIZE));
           }
           setWordChunks(chunks);
+        } else {
+            // Provide a clear error message if the document doesn't exist
+            setError(`No vocabulary list found for ${level.toUpperCase()}. Please ensure the scraper has run successfully for this level.`);
         }
 
         const historyQuery = query(
@@ -47,8 +58,9 @@ const VocabularyListPage = () => {
         });
         setHistory(historyData);
 
-      } catch (error) {
-        console.error("Error fetching vocabulary list:", error);
+      } catch (err) {
+        console.error("Error fetching vocabulary list:", err);
+        setError("An error occurred while fetching data. Check the console for details.");
       } finally {
         setIsLoading(false);
       }
@@ -59,16 +71,8 @@ const VocabularyListPage = () => {
 
   const handleChunkClick = async (chunkIndex, chunk) => {
     if (!currentUser) return;
-
     const quizId = `${level}-vocabulary_list-${chunkIndex}`;
     const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', quizId);
-    const isMastered = history[quizId]?.coveredCount === history[quizId]?.totalCount;
-
-    // Prevent navigation if the list is already mastered
-    if (isMastered) {
-      return;
-    }
-
     try {
       await setDoc(historyDocRef, {
         quizId: quizId,
@@ -78,10 +82,9 @@ const VocabularyListPage = () => {
         title: `Vocabulary List ${chunkIndex + 1}`,
         timestamp: new Date().toISOString(),
         status: 'incomplete',
-        coveredCount: 0,
+        coveredCount: 0, 
         totalCount: chunk.length,
       }, { merge: true });
-
       navigate(`/flashcards/${level}/vocabulary_list/${chunkIndex}`);
     } catch (error) {
       console.error("Error setting initial quiz history:", error);
@@ -96,6 +99,10 @@ const VocabularyListPage = () => {
       <div className="exercise-list-header">
         <h1 className="exercise-list-title">{level.toUpperCase()} - Vocabulary Lists</h1>
       </div>
+
+      {/* Display the error message if one exists */}
+      {error && <p className="empty-state-text" style={{color: 'var(--feedback-incorrect)'}}>{error}</p>}
+      
       <div className="exercise-grid">
         {wordChunks.map((chunk, index) => {
           const quizId = `${level}-vocabulary_list-${index}`;

@@ -26,19 +26,34 @@ const GrammarListPage = () => {
         const querySnapshot = await getDocs(q);
 
         if (querySnapshot.empty) {
-          setError(`No grammar points found for ${level.toUpperCase()}. Please check if the data has been scraped correctly.`);
+          setError(`No grammar points found for ${level.toUpperCase()}.`);
         }
 
-        const points = querySnapshot.docs.map(doc => ({
-          id: doc.id,
-          ...doc.data()
-        })).sort((a, b) => a.title.localeCompare(b.title));
+        const points = querySnapshot.docs.map(doc => {
+          const data = doc.data();
+          let shortTitle = data.title;
+          if (data.title && data.title.includes(':')) {
+            let relevantPart = data.title.split(':')[1];
+            if (relevantPart) {
+              if (relevantPart.includes('–')) {
+                shortTitle = relevantPart.split('–')[0].trim();
+              } else {
+                shortTitle = relevantPart.trim();
+              }
+            }
+          }
+          return {
+            id: doc.id, // The raw, encoded ID
+            ...data,
+            title: shortTitle 
+          };
+        }).sort((a, b) => a.title.localeCompare(b.title));
         
         setGrammarPoints(points);
 
       } catch (err) {
-        console.error("Firestore error while fetching grammar list:", err);
-        setError("An error occurred while fetching the grammar list. Check the console for details.");
+        console.error("Firestore error:", err);
+        setError("An error occurred while fetching the grammar list.");
       } finally {
         setIsLoading(false);
       }
@@ -60,15 +75,19 @@ const GrammarListPage = () => {
 
       <div className="exercise-grid">
         {grammarPoints.map(point => (
+          // --- THIS IS THE CHANGE ---
+          // We now pass the entire 'point' object in the link's state.
           <Link
             key={point.id}
             to={`/study/grammar/${level}/${point.id}`}
+            state={{ grammarPointData: point }} // Pass the data directly
             className="difficulty-button"
           >
             <div className="difficulty-main">
               <span className="difficulty-main-text" style={{ fontSize: '1.2rem', textAlign: 'center' }}>{point.title}</span>
             </div>
           </Link>
+          // --- END OF CHANGE ---
         ))}
       </div>
     </div>
