@@ -10,7 +10,6 @@ console.log('MLC JLPT Quiz Scraper started.');
 // Ensure your FIREBASE_SERVICE_ACCOUNT environment variable is set correctly
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
-// --- Configuration for the MLC Japanese Website ---
 const LEVELS = ['n5', 'n4', 'n3', 'n2', 'n1'];
 const CATEGORIES = ['kanji', 'grammar', 'katakana'];
 const BASE_URL = 'http://www.mlcjapanese.co.jp/';
@@ -23,12 +22,12 @@ console.log('Firestore initialized for MLC scraper.');
 /**
  * Parses the unique HTML structure of mlcjapanese.co.jp quizzes.
  * @param {object} page - The Puppeteer page object.
- * @returns {Promise<object|null>} - The scraped quiz data or null on failure.
+ * @returns {Promise<object|null>} - The scraped quiz data or a debug object on failure.
  */
 async function scrapeMlcTestPage(page) {
   return await page.evaluate(() => {
     const titleElement = document.querySelector('h1.entry-title');
-    if (!titleElement) return null;
+    if (!titleElement) return { error: 'Title element (h1.entry-title) not found.' };
 
     const title = titleElement.innerText.trim();
     const questions = [];
@@ -42,12 +41,19 @@ async function scrapeMlcTestPage(page) {
       const correctAnum = parseInt(match[2], 10);
       answerMap.set(qNum, correctAnum - 1);
     }
+    if (answerMap.size === 0) {
+        return { error: 'Could not parse any answers from the inline JavaScript.' };
+    }
 
-    const contentElement = document.querySelector('div[id^="sp-html-src-"]');
-    if (!contentElement) return null;
+    // --- THIS IS THE FIX ---
+    // The selector now specifically targets the div that contains the <form> tags.
+    const contentElement = document.querySelector('div[id^="sp-html-src-"]:has(form)');
+    if (!contentElement) return { error: 'Main content element containing forms was not found.' };
     
-    // --- FIX 1: This regex now handles both standard and full-width spaces ---
     const questionBlocks = contentElement.innerHTML.split(/Q:\d+[ \t　]+/).slice(1);
+    if (questionBlocks.length === 0) {
+        return { error: 'Could not split the page content into question blocks.' };
+    }
 
     questionBlocks.forEach((block, index) => {
       const questionNumber = index + 1;
@@ -86,7 +92,7 @@ async function scrapeMlcTestPage(page) {
       }
     });
 
-    if (questions.length === 0) return null;
+    if (questions.length === 0) return { error: 'Successfully split into blocks, but no questions were parsed.' };
     
     return {
       title,
@@ -136,23 +142,22 @@ async function scrapeAllMlcTests(browser) {
             const response = await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
             if (!response.ok()) {
                 console.log(`- Page not found (404): ${url}`);
-                continue; // Skip to the next iteration
+                continue;
             }
 
             const quizData = await scrapeMlcTestPage(page);
 
-            if (quizData) {
+            if (quizData && !quizData.error) {
                 await docRef.set(quizData);
                 console.log(`✅ Successfully saved data to ${docRef.path}`);
             } else {
-                console.log(`- No valid quiz data found at ${url}.`);
+                console.log(`- No valid quiz data found at ${url}. Reason: ${quizData?.error || 'Unknown parsing error.'}`);
             }
         } catch (error) {
             if (!error.message.includes('net::ERR_ABORTED')) {
                 console.error(`Error processing URL ${url}:`, error.message);
             }
         } finally {
-            // --- FIX 2: Add a safety check before closing the page ---
             if (!page.isClosed()) {
                 await page.close();
             }
