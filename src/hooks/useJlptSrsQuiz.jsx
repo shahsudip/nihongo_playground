@@ -12,7 +12,8 @@ const shuffleArray = (array) => {
   return newArray;
 };
 
-export function useJlptSrsQuiz(quizId, level, category) {
+// --- CHANGE: The hook now accepts a 'source' argument ---
+export function useJlptSrsQuiz(quizId, level, category, source) {
   const [deck, setDeck] = useState([]);
   const [unseenQueue, setUnseenQueue] = useState([]);
   const [learningQueue, setLearningQueue] = useState([]);
@@ -25,25 +26,38 @@ export function useJlptSrsQuiz(quizId, level, category) {
   const [hasAcknowledgedFirstPass, setHasAcknowledgedFirstPass] = useState(false);
   const [firstPassStats, setFirstPassStats] = useState({ score: 0, total: 0 });
 
-  // Fetches and initializes the deck. This part is correct.
   useEffect(() => {
-    if (!quizId || !level || !category) return;
+    if (!quizId || !level) return;
     const fetchAndInitialize = async () => {
       setIsLoading(true);
       try {
-        const docPath = `jlpt/${level}/${category}-test/${quizId}`;
+        // --- THIS IS THE MAIN LOGIC CHANGE ---
+        // It builds the correct Firestore path based on the 'source'.
+        let docPath;
+        if (source === 'mlc') {
+          // For MLC quizzes, the category is part of the quizId, so we only need level and quizId.
+          docPath = `jlpt-mlc/${level}/quizzes/${quizId}`;
+        } else {
+          // This is the original path for 'japanesetest4you' quizzes.
+          docPath = `jlpt/${level}/${category}-test/${quizId}`;
+        }
+        
+        console.log(`Fetching quiz data from: ${docPath}`); // For debugging
         const quizDoc = await getDoc(doc(db, docPath));
+        
         if (quizDoc.exists()) {
           const questions = quizDoc.data().questions || [];
           const initializedDeck = questions.map((item, index) => ({
             ...item,
             id: index,
-            answer: item.correctOption.text,
+            // Safety check for correctOption to prevent crashes
+            answer: item.correctOption ? item.correctOption.text : '',
             correctStreak: 0,
             isMastered: false,
           }));
           setDeck(initializedDeck);
           setUnseenQueue(shuffleArray([...Array(initializedDeck.length).keys()]));
+          // Reset all state for the new quiz
           setLearningQueue([]);
           setMasteredCount(0);
           setTotalCorrect(0);
@@ -51,15 +65,16 @@ export function useJlptSrsQuiz(quizId, level, category) {
           setCurrentCard(null);
           setIsFirstPassComplete(false);
           setHasAcknowledgedFirstPass(false);
+        } else {
+            console.error(`Quiz document not found at path: ${docPath}`);
         }
       } catch (err) {
         console.error("Error fetching JLPT quiz:", err);
       }
     };
     fetchAndInitialize();
-  }, [quizId, level, category]);
+  }, [quizId, level, category, source]); // --- CHANGE: 'source' is added to the dependency array
 
-  // Selects the next card to display
   const selectNextCard = useCallback(() => {
     let nextCardId = -1;
     let newLearningQueue = [...learningQueue];
@@ -69,7 +84,6 @@ export function useJlptSrsQuiz(quizId, level, category) {
       nextCardId = newLearningQueue.shift();
     } else if (newUnseenQueue.length > 0) {
       nextCardId = newUnseenQueue.shift();
-      // --- FIX 1: The logic for setting isFirstPassComplete is REMOVED from here ---
     } else if (masteredCount < deck.length) {
       const reviewQueue = deck.filter((card) => !card.isMastered).map((card) => card.id);
       if (reviewQueue.length > 0) {
@@ -88,8 +102,8 @@ export function useJlptSrsQuiz(quizId, level, category) {
     }
   }, [deck, learningQueue, unseenQueue, masteredCount]);
 
-  // Handles the user's answer
   const handleAnswer = (isCorrect) => {
+    if (!currentCard) return;
     const cardId = currentCard.id;
     if (isCorrect) {
       setTotalCorrect((prev) => prev + 1);
@@ -118,26 +132,24 @@ export function useJlptSrsQuiz(quizId, level, category) {
     selectNextCard();
   };
 
-  // Starts the quiz once the deck is ready
   useEffect(() => {
     if (deck.length > 0 && !currentCard) {
       selectNextCard();
       setIsLoading(false);
+    } else if (deck.length > 0 && currentCard) {
+        setIsLoading(false);
     }
   }, [deck, currentCard, selectNextCard]);
 
-  // --- FIX 2: This new useEffect reliably detects when the first pass is complete ---
   useEffect(() => {
-    // This condition is met only after loading is done and the user has answered the last "unseen" card.
     if (!isLoading && deck.length > 0 && unseenQueue.length === 0 && !isFirstPassComplete) {
       setFirstPassStats({
         score: totalCorrect,
         total: totalCorrect + totalIncorrect,
       });
-      setIsFirstPassComplete(true); // This will now correctly trigger your modal
+      setIsFirstPassComplete(true);
     }
   }, [unseenQueue.length, deck.length, isLoading, isFirstPassComplete, totalCorrect, totalIncorrect]);
-
 
   const acknowledgeFirstPass = () => {
     setHasAcknowledgedFirstPass(true);

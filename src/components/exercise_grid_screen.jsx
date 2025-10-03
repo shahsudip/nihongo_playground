@@ -19,15 +19,52 @@ const ExerciseListPage = () => {
     if (!currentUser) return;
 
     const fetchData = async () => {
+      setLoading(true);
       try {
-        const exerciseCollectionPath = `jlpt/${level}/${category}-test`;
-        console.log(`Fetching exercises from: ${exerciseCollectionPath}`);
-        const exerciseSnapshot = await getDocs(collection(db, exerciseCollectionPath));
-        const fetchedExercises = exerciseSnapshot.docs
-          .map(doc => ({ id: doc.id, ...doc.data() }))
-          .sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }));
-        setExercises(fetchedExercises);
+        let allExercises = [];
 
+        // Fetches original JLPT data
+        const originalPath = `jlpt/${level}/${category}-test`;
+        const originalQuery = query(collection(db, originalPath));
+        const originalSnapshot = await getDocs(originalQuery);
+        const originalExercises = originalSnapshot.docs.map(doc => ({
+          id: doc.id,
+          source: 'japanesetest4you',
+          ...doc.data()
+        }));
+        allExercises.push(...originalExercises);
+
+        // Fetches new MLC data
+        if (category === 'kanji' || category === 'grammar' || category === 'vocabulary') {
+          const mlcPath = `jlpt-mlc/${level}/quizzes`;
+          let filterPrefix = category;
+          if (category === 'vocabulary') {
+            filterPrefix = 'katakana';
+          }
+          const mlcQuery = query(collection(db, mlcPath));
+          const mlcSnapshot = await getDocs(mlcQuery);
+          const mlcExercises = mlcSnapshot.docs
+            .filter(doc => doc.id.startsWith(filterPrefix))
+            .map(doc => ({
+              id: doc.id,
+              source: 'mlc', 
+              ...doc.data(),
+              title: `${doc.data().title} (MLC)`
+            }));
+          allExercises.push(...mlcExercises);
+        }
+
+        // Sorts the combined list
+        allExercises.sort((a, b) => {
+            const numA = parseInt(a.id.split('-').pop(), 10);
+            const numB = parseInt(b.id.split('-').pop(), 10);
+            return numA - numB;
+        });
+
+        setExercises(allExercises);
+
+        // --- THIS IS THE FIX ---
+        // The history fetching logic has been restored to your original, working version.
         const historyQuery = query(
           collection(db, `users/${currentUser.uid}/quizHistory`),
           where('level', '==', level),
@@ -38,14 +75,16 @@ const ExerciseListPage = () => {
         const fetchedHistory = {};
         historySnapshot.forEach(doc => {
           const data = doc.data();
-          const key = data.quizId;
+          const key = data.quizId; // Using the quizId field from inside the document
           if (key) {
             fetchedHistory[key] = data;
           } else {
-            console.warn('Missing quizId in document:', doc.id);
+            // Fallback for any older records that might not have the field
+            fetchedHistory[doc.id] = data; 
           }
         });
         setHistory(fetchedHistory);
+        // --- END OF FIX ---
 
       } catch (error) {
         console.error("Error fetching exercise data:", error);
@@ -69,8 +108,13 @@ const ExerciseListPage = () => {
       <div className="exercise-grid">
         {exercises.map(exercise => {
           const exerciseHistory = history[exercise.id];
-          const title = exercise.id.replace(/-/g, ' ');
-          
+ let title;
+          if (exercise.source === 'mlc') {
+            const exerciseNumber = exercise.id.split('-').pop();
+            title = `Quiz ${exerciseNumber}`;
+          } else {
+            title = exercise.id.replace(/-/g, ' ');
+          }          
           const isReadingTest = category === 'reading' && exercise.passages;
           let hasContent;
 
@@ -82,13 +126,9 @@ const ExerciseListPage = () => {
           
           const isMastered = exerciseHistory?.status === 'mastered';
           
-          // --- THIS IS THE ONLY CHANGE ---
-          // It determines the link and data to pass based on whether it's a reading test.
           let linkTo, navigationState;
 
           if (isReadingTest) {
-            // For reading tests, navigate to the new reading quiz route 
-            // and pass the full exercise data.
             linkTo = `/reading-quiz/${exercise.id}`;
             navigationState = {
               quizId: exercise.id,
@@ -99,7 +139,6 @@ const ExerciseListPage = () => {
               quizData: exercise 
             };
           } else {
-            // For all other tests, use the original navigation logic.
             linkTo = `/quiz/${exercise.id}`;
             navigationState = {
               quizId: exercise.id,
@@ -107,6 +146,7 @@ const ExerciseListPage = () => {
               level,
               category,
               type: 'jlpt',
+              source: exercise.source,
               totalQuestions: exercise.questions?.length || 0
             };
           }

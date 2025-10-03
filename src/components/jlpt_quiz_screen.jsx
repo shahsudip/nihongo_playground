@@ -24,15 +24,18 @@ const JlptQuizPage = () => {
   const navigate = useNavigate();
   const { currentUser } = useAuth();
 
+  // --- CHANGE: The 'source' is now extracted from the navigation state ---
   const {
     quizId,
     quizTitle = "",
     level = "",
     category = "",
-    type = 'jlpt' // Default to 'jlpt' for this page
+    type = 'jlpt',
+    source = 'japanesetest4you' // Default to the original source if not provided
   } = state || {};
 
-    const historyDocId = quizId && level && category ? `${level}-${category}-${quizId}` : null;
+  // Use the quizId directly for the history document ID, which is more reliable.
+  const historyDocId = quizId || null;
 
   const [showCompletionModal, setShowCompletionModal] = useState(false);
   const [finalScore, setFinalScore] = useState({ score: 0, total: 0 });
@@ -121,6 +124,7 @@ const JlptQuizPage = () => {
         quizTitle={quizTitle}
         level={level}
         category={category}
+        source={source} // --- CHANGE: Pass the 'source' down as a prop ---
         onComplete={onQuizComplete}
         onEndQuizEarly={handleEndQuizEarly}
         quizStateRef={quizStateRef}
@@ -137,3 +141,4 @@ const JlptQuizPage = () => {
 };
 
 export default JlptQuizPage;
+

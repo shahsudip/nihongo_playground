@@ -26,7 +26,8 @@ const FirstPassModal = ({ score, total, onContinueReview, onEndQuiz }) => (
   </div>
 );
 
-const JlptQuiz = ({ quizId, quizTitle = "", level, category, onComplete, onEndQuizEarly, quizStateRef }) => {
+// --- CHANGE: Component now accepts 'source' as a prop ---
+const JlptQuiz = ({ quizId, quizTitle = "", level, category, source, onComplete, onEndQuizEarly, quizStateRef }) => {
   const {
     currentCard,
     handleAnswer,
@@ -41,7 +42,7 @@ const JlptQuiz = ({ quizId, quizTitle = "", level, category, onComplete, onEndQu
     masteredCount,
     unseenCount,
     deckSize: numberOfQuestions,
-  } = useJlptSrsQuiz(quizId, level, category);
+  } = useJlptSrsQuiz(quizId, level, category, source); // --- CHANGE: 'source' is passed to the hook ---
 
   const [showFirstPassModal, setShowFirstPassModal] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
@@ -93,12 +94,15 @@ const JlptQuiz = ({ quizId, quizTitle = "", level, category, onComplete, onEndQu
       <FirstPassModal
         score={firstPassStats?.score ?? 0}
         total={firstPassStats?.total ?? 0}
-        onContinueReview={acknowledgeFirstPass}
+        onContinueReview={() => {
+          setShowFirstPassModal(false);
+          acknowledgeFirstPass();
+        }}
         onEndQuiz={() => onEndQuizEarly(quizStateRef.current)}
       />
     );
   }
-  if (!currentCard) return <div className="quiz-card"><p>No card available.</p></div>;
+  if (!currentCard) return <div className="quiz-card"><p>No card available. Could not load quiz content.</p></div>;
 
   const options = Array.isArray(currentCard.options) ? currentCard.options : [];
 
@@ -131,20 +135,9 @@ const JlptQuiz = ({ quizId, quizTitle = "", level, category, onComplete, onEndQu
           })}
         </div>
       </div>
-
-      {showFirstPassModal && (
-        <FirstPassModal
-          score={firstPassStats?.score ?? 0}
-          total={firstPassStats?.total ?? 0}
-          onContinueReview={() => {
-            setShowFirstPassModal(false);
-            acknowledgeFirstPass();
-          }}
-          onEndQuiz={() => onEndQuizEarly(quizStateRef.current)}
-        />
-      )}
     </>
   );
 };
 
 export default JlptQuiz;
+
