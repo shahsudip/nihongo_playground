@@ -68,10 +68,14 @@ async function scrapeLevelIndexPage(page, url) {
                                .join(' ')
                                .replace(/\s+/g, ' ')
                                .trim();
+
+            const urlParts = link.href.split('/').filter(Boolean);
+            const slug = urlParts.slice(-3).join('-'); // e.g., N3-202412-1
             
             results[collectionName].push({
               title: title || link.innerText.trim(),
               url: link.href,
+              slug: slug // Use this clean slug as the doc ID
             });
           });
         }
@@ -90,7 +94,7 @@ async function scrapeLevelIndexPage(page, url) {
  */
 async function scrapeTestContentPage(page, url, testTitle) {
   try {
-    console.log(`      L Scraping content from: ${url}`);
+    console.log(`      L Scraping content from: ${url}`); // This log shows the URL being visited
     await page.goto(url, { waitUntil: 'networkidle0' });
     
     const quizData = await page.evaluate(() => {
@@ -101,10 +105,18 @@ async function scrapeTestContentPage(page, url, testTitle) {
       let currentQuestions = [];
       let currentSectionHeader = "General Questions"; // Default
 
-      // Helper to get clean inner text, ignoring <font> tags
+      // Helper to get clean inner text
       const cleanText = (el) => {
         if (!el) return "";
-        return el.innerText.trim();
+        // Get text, preferring the last <font> tag if it exists, otherwise innerText
+        const fonts = el.querySelectorAll('font');
+        let text;
+        if (fonts.length > 0) {
+            text = fonts[fonts.length - 1].innerText.trim();
+        } else {
+            text = el.innerText.trim();
+        }
+        return text.replace(/\s+/g, ' '); // Consolidate whitespace
       };
 
       form.childNodes.forEach(node => {
@@ -112,27 +124,28 @@ async function scrapeTestContentPage(page, url, testTitle) {
 
         // Check for new section header
         if (node.classList.contains('big_item')) {
-          // If we have questions from the previous section, save them
           if (currentQuestions.length > 0) {
             sections.push({ sectionTitle: currentSectionHeader, questions: currentQuestions });
           }
-          // Start a new section
           currentSectionHeader = cleanText(node);
           currentQuestions = [];
         } 
         // Check for a question
         else if (node.classList.contains('question_list')) {
           try {
-            // 1. Get Question Number from the *next* sibling: <div id="diemsoX">
-            const diemsoEl = node.nextElementSibling;
-            if (!diemsoEl || !diemsoEl.id.startsWith('diemso')) return;
-            const questionNumber = parseInt(diemsoEl.id.replace('diemso', ''), 10);
-
+            // 1. Get Question Number
+            let qNumNode = node.nextElementSibling;
+            while(qNumNode && qNumNode.nodeType !== Node.ELEMENT_NODE) {
+                qNumNode = qNumNode.nextElementSibling;
+            }
+            if (!qNumNode || !qNumNode.id.startsWith('diemso')) return;
+            const questionNumber = parseInt(qNumNode.id.replace('diemso', ''), 10);
+            
             // 2. Get Question Text
             const questionText = cleanText(node);
             
-            // 3. Find Options Container (can be 1 or 2 rows)
-            let optionsEl = diemsoEl.nextElementSibling;
+            // 3. Find Options Container
+            let optionsEl = qNumNode.nextElementSibling;
             while (optionsEl && !optionsEl.classList.contains('answer_2row') && !optionsEl.classList.contains('answer_1row')) {
               optionsEl = optionsEl.nextElementSibling;
             }
@@ -146,16 +159,14 @@ async function scrapeTestContentPage(page, url, testTitle) {
             while (answerEl && !answerEl.id.startsWith('AS')) {
               answerEl = answerEl.nextElementSibling;
             }
-            // Check if answer element ID matches the question number
             if (!answerEl || answerEl.id !== `AS${questionNumber}`) return; 
             
-            const correctOptionIndex = parseInt(cleanText(answerEl), 10) - 1; // It's a 1-based index
+            const correctOptionIndex = parseInt(cleanText(answerEl), 10) - 1;
             
-            if (correctOptionIndex < 0 || correctOptionIndex >= options.length) return; // Invalid answer
+            if (correctOptionIndex < 0 || correctOptionIndex >= options.length) return;
             
             const correctOptionText = options[correctOptionIndex];
             
-            // Add the fully parsed question to the current section
             currentQuestions.push({
               questionNumber,
               questionText,
@@ -171,28 +182,26 @@ async function scrapeTestContentPage(page, url, testTitle) {
         }
       });
       
-      // Push the last section's questions
       if (currentQuestions.length > 0) {
         sections.push({ sectionTitle: currentSectionHeader, questions: currentQuestions });
       }
       
-      // Create a flat array of questions, just like the old scraper
       const flatQuestions = sections.flatMap(s => s.questions);
 
       return {
         sourceUrl: window.location.href,
-        sections: sections,     // Contains data grouped by "問題１", "問題２", etc.
-        questions: flatQuestions // A flat array for easy compatibility
+        sections: sections,
+        questions: flatQuestions 
       };
     });
     
     if (quizData) {
-      quizData.title = testTitle; // Add the title from the index page
+      quizData.title = testTitle; 
     }
     return quizData;
     
   } catch (error) {
-    console.error(`Error processing URL ${url}`, error.message);
+    console.error(`Error processing URL ${url}:`, error.message);
     return null;
   }
 }
@@ -230,11 +239,17 @@ async function main() {
         // 3. Loop through each test in that category
         for (const testLink of tests) {
           
-          // Use the test's title from the webpage as the document ID
-          const docId = testLink.title;
+          const docId = testLink.slug;
+          if (!docId) {
+             console.log(`    - (SKIPPED) Invalid slug for test: ${testLink.title}`);
+             continue;
+          }
+          
           const docRef = db.collection('jlpt').doc(level.toLowerCase()).collection(collectionName).doc(docId);
           
-          console.log(`    - Test: ${testLink.title}`);
+          console.log(`    - Test: ${testLink.title} (Saving to ID: ${docId})`);
+          // *** NEW LOG LINE ADDED HERE ***
+          console.log(`      L URL: ${testLink.url}`); // This explicitly logs the URL
           
           // 4. Scrape the actual content of the test page
           const testData = await scrapeTestContentPage(page, testLink.url, testLink.title);
