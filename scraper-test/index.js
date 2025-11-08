@@ -20,9 +20,9 @@ console.log('Firestore initialized successfully. SAVING TO FIRESTORE (LIVE MODE)
  * Generates a clean, English title from the collection and slug.
  */
 function generateEnglishTitle(collectionName, slug) {
-  const parts = slug.split('-'); // e.g., ['N3', '202412', '1']
+  const parts = slug.split('-');
   const level = parts[0] || 'Unknown';
-  const date = parts.slice(1).join('-'); // e.g., '202412-1'
+  const date = parts.slice(1).join('-');
   
   let category = "Test";
   if (collectionName.includes('vocabulary')) category = 'Vocabulary Test';
@@ -34,45 +34,31 @@ function generateEnglishTitle(collectionName, slug) {
 
 
 /**
- * Scrapes all test links for a specific JLPT level and maps them to
- * our database collection names.
+ * Scrapes all test links for a specific JLPT level.
  */
 async function scrapeLevelIndexPage(page, url) {
   try {
     await page.goto(url, { waitUntil: 'networkidle0' });
 
     return await page.evaluate((generateTitleFuncStr) => {
-      // Re-create the function inside evaluate()
       const generateEnglishTitle = new Function('return ' + generateTitleFuncStr)();
-
       const results = {
-        'vocabulary-test': [],
-        'grammar-test': [],
-        'reading-test': [],
-        'kanji-test': [],
-        'listening-test': []
+        'vocabulary-test': [], 'grammar-test': [], 'reading-test': [],
+        'kanji-test': [], 'listening-test': []
       };
 
       const mapCategoryToCollectionName = (categoryName) => {
         const normalizedCategory = categoryName.toLowerCase();
-        if (normalizedCategory.includes('vocabulary') || normalizedCategory.includes('文字語彙')) {
-          return 'vocabulary-test';
-        }
-        if (normalizedCategory.includes('grammar') || normalizedCategory.includes('文法')) {
-          return 'grammar-test';
-        }
-        if (normalizedCategory.includes('listen') || normalizedCategory.includes('聴解')) {
-          return 'listening-test';
-        }
+        if (normalizedCategory.includes('vocabulary') || normalizedCategory.includes('文字語彙')) return 'vocabulary-test';
+        if (normalizedCategory.includes('grammar') || normalizedCategory.includes('文法')) return 'grammar-test';
+        if (normalizedCategory.includes('listen') || normalizedCategory.includes('聴解')) return 'listening-test';
         return null;
       };
 
       const categoryTitles = document.querySelectorAll('.middle_content .title-item-home h3');
-
       categoryTitles.forEach(titleElement => {
         const categoryName = titleElement.innerText.trim();
         const collectionName = mapCategoryToCollectionName(categoryName);
-        
         if (!collectionName) return;
 
         let listContainer = titleElement.closest('.title-item-home').nextElementSibling;
@@ -84,22 +70,14 @@ async function scrapeLevelIndexPage(page, url) {
           const links = listContainer.querySelectorAll('.cell a.card-body');
           links.forEach(link => {
             const urlParts = link.href.split('/').filter(Boolean);
-            const slug = urlParts.slice(-3).join('-'); // e.g., N3-202412-1
-            
-            // Generate a clean English title
+            const slug = urlParts.slice(-3).join('-');
             const englishTitle = generateEnglishTitle(collectionName, slug);
-            
-            results[collectionName].push({
-              title: englishTitle,
-              url: link.href,
-              slug: slug // Use this clean slug as the doc ID
-            });
+            results[collectionName].push({ title: englishTitle, url: link.href, slug: slug });
           });
         }
       });
-
       return results;
-    }, generateEnglishTitle.toString()); // Pass the function as a string
+    }, generateEnglishTitle.toString());
   } catch (error) {
     console.error(`Error processing URL ${url}:`, error.message);
     return null;
@@ -107,7 +85,7 @@ async function scrapeLevelIndexPage(page, url) {
 }
 
 /**
- * Scrapes the actual content (questions, options, answers) of a single test page.
+ * Scrapes the actual content (headers, passages, audio, questions) of a single test page.
  */
 async function scrapeTestContentPage(page, url, testTitle) {
   try {
@@ -118,31 +96,63 @@ async function scrapeTestContentPage(page, url, testTitle) {
       const form = document.querySelector('form[name="dttn"]');
       if (!form) return null;
 
-      const sections = [];
-      let currentQuestions = [];
-      let currentSectionHeader = "General Questions"; // Default
+      const contentBlocks = [];
 
-      // This gets the raw text content and ignores any <font> tags from auto-translate
       const cleanText = (el) => {
         if (!el) return "";
         return el.innerText.trim().replace(/\s+/g, ' ');
       };
+      
+      const getFullSrc = (el) => {
+          if (!el) return "";
+          return new URL(el.src, window.location.href).href;
+      };
 
+      // Loop through all child nodes of the form to preserve order
       form.childNodes.forEach(node => {
-        if (node.nodeType !== Node.ELEMENT_NODE) return; // Skip text nodes, comments
+        if (node.nodeType !== Node.ELEMENT_NODE) return;
 
-        // Check for new section header
+        // --- 1. Find Section Headers & Audio ---
         if (node.classList.contains('big_item')) {
-          if (currentQuestions.length > 0) {
-            sections.push({ sectionTitle: currentSectionHeader, questions: currentQuestions });
+          const headerNodeClone = node.cloneNode(true);
+          const iframeInHeader = headerNodeClone.querySelector('iframe');
+          if (iframeInHeader) iframeInHeader.remove();
+          
+          contentBlocks.push({
+            type: 'section-header',
+            text: cleanText(headerNodeClone)
+          });
+          
+          const audioIframe = node.querySelector('iframe');
+          if (audioIframe) {
+            contentBlocks.push({
+              type: 'audio',
+              src: audioIframe.src
+            });
           }
-          currentSectionHeader = cleanText(node);
-          currentQuestions = [];
-        } 
-        // Check for a question
+        }
+        
+        // *** NEW: Added logic for Reading Passages ***
+        else if (node.classList.contains('question_content')) {
+          contentBlocks.push({
+            type: 'passage',
+            // We save the innerHTML to preserve formatting (<b>, <br>, etc.)
+            htmlContent: node.innerHTML
+          });
+        }
+        
+        // --- 3. Find Questions & Images ---
         else if (node.classList.contains('question_list')) {
           try {
-            // 1. Get Question Number
+            // Check for an image *inside* the question block
+            const imgEl = node.querySelector('img');
+            if (imgEl) {
+              contentBlocks.push({
+                type: 'image',
+                src: getFullSrc(imgEl)
+              });
+            }
+
             let qNumNode = node.nextElementSibling;
             while(qNumNode && (qNumNode.nodeType !== Node.ELEMENT_NODE || !qNumNode.id.startsWith('diemso'))) {
                 qNumNode = qNumNode.nextElementSibling;
@@ -150,20 +160,16 @@ async function scrapeTestContentPage(page, url, testTitle) {
             if (!qNumNode) return;
             const questionNumber = parseInt(qNumNode.id.replace('diemso', ''), 10);
             
-            // 2. Get Question Text
             const questionText = cleanText(node);
             
-            // 3. Find Options Container
             let optionsEl = qNumNode.nextElementSibling;
             while (optionsEl && !optionsEl.classList.contains('answer_2row') && !optionsEl.classList.contains('answer_1row')) {
               optionsEl = optionsEl.nextElementSibling;
             }
             if (!optionsEl) return;
 
-            // 4. Get Options
-            const options = Array.from(optionsEl.querySelectorAll('div.answers')).map(opt => cleanText(opt));
+            let options = Array.from(optionsEl.querySelectorAll('div.answers')).map(opt => cleanText(opt));
 
-            // 5. Find Answer
             let answerEl = optionsEl.nextElementSibling;
             while (answerEl && !answerEl.id.startsWith('AS')) {
               answerEl = answerEl.nextElementSibling;
@@ -172,11 +178,33 @@ async function scrapeTestContentPage(page, url, testTitle) {
             
             const correctOptionIndex = parseInt(cleanText(answerEl), 10) - 1;
             
+            let transcript = null;
+            
+            const isEmptyOptions = options.length > 0 && options.every(opt => /^\d+\)\s*$/.test(opt.trim()));
+            
+            if (isEmptyOptions) {
+              let gtEl = answerEl.nextElementSibling;
+              while(gtEl && (gtEl.nodeType !== Node.ELEMENT_NODE || !gtEl.id.startsWith('GT'))) {
+                gtEl = gtEl.nextElementSibling;
+              }
+              
+              if (gtEl) {
+                const gtText = gtEl.innerText;
+                transcript = gtText;
+                
+                const newOptions = (gtText.match(/\d+[．.]\s.*(?=\n|$)/g) || []).map(opt => opt.trim());
+                if (newOptions.length > 0) {
+                  options = newOptions;
+                }
+              }
+            }
+
             if (correctOptionIndex < 0 || correctOptionIndex >= options.length) return;
             
-            const correctOptionText = options[correctOptionIndex];
+            const correctOptionText = options[correctOptionIndex] || "";
             
-            currentQuestions.push({
+            const questionData = {
+              type: 'question',
               questionNumber,
               questionText,
               options,
@@ -184,28 +212,28 @@ async function scrapeTestContentPage(page, url, testTitle) {
                 index: correctOptionIndex,
                 text: correctOptionText
               }
-            });
+            };
+            
+            if (transcript) {
+              questionData.transcript = transcript;
+            }
+            
+            contentBlocks.push(questionData);
+
           } catch (e) {
-            console.log('Error parsing a question node: ' + e.message);
+            console.log(`Error parsing a question node (Number ${questionNumber || 'unknown'}): ${e.message}`);
           }
         }
       });
       
-      if (currentQuestions.length > 0) {
-        sections.push({ sectionTitle: currentSectionHeader, questions: currentQuestions });
-      }
-      
-      const flatQuestions = sections.flatMap(s => s.questions);
-
       return {
         sourceUrl: window.location.href,
-        sections: sections,
-        questions: flatQuestions 
+        contentBlocks: contentBlocks
       };
     });
     
     if (quizData) {
-      quizData.title = testTitle; // Add the clean, generated English title
+      quizData.title = testTitle;
     }
     return quizData;
     
@@ -230,7 +258,6 @@ async function main() {
     const page = await browser.newPage();
     
     try {
-      // 1. Scrape the list of test links for this level
       const levelCategoryMap = await scrapeLevelIndexPage(page, levelUrl);
 
       if (!levelCategoryMap) {
@@ -239,15 +266,12 @@ async function main() {
         continue;
       }
 
-      // 2. Loop through each category we found
       for (const [collectionName, tests] of Object.entries(levelCategoryMap)) {
         if (tests.length === 0) continue; 
         
         console.log(`  [+] Found ${tests.length} tests for category: ${collectionName}`);
         
-        // 3. Loop through each test in that category
         for (const testLink of tests) {
-          
           const docId = testLink.slug;
           if (!docId) {
              console.log(`    - (SKIPPED) Invalid slug for test: ${testLink.title}`);
@@ -259,11 +283,9 @@ async function main() {
           console.log(`    - Test: ${testLink.title} (Saving to ID: ${docId})`);
           console.log(`      L URL: ${testLink.url}`);
           
-          // 4. Scrape the actual content of the test page
           const testData = await scrapeTestContentPage(page, testLink.url, testLink.title);
           
-          // *** MODIFIED: This now saves to Firestore ***
-          if (testData && testData.questions.length > 0) {
+          if (testData && testData.contentBlocks.length > 0) {
             try {
               await docRef.set(testData);
               console.log(`      L SUCCESS: Saved to ${docRef.path}`);
@@ -271,7 +293,7 @@ async function main() {
               console.error(`      L FAILED to save to ${docRef.path}:`, saveError.message);
             }
           } else {
-            console.log(`      L (SKIPPED) No questions found at: ${testLink.url}`);
+            console.log(`      L (SKIPPED) No content blocks found at: ${testLink.url}`);
           }
         }
       }
