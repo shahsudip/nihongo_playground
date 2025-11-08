@@ -3,9 +3,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { db } from "../firebaseConfig.js";
 import { doc, getDoc } from "firebase/firestore";
 
-// --- Define your sub-components ---
-// These are styled by the new CSS in app_style.css
-
 const SectionHeader = ({ text }) => {
   return <h2 className="section-header">{text}</h2>;
 };
@@ -33,9 +30,37 @@ const Passage = ({ htmlContent }) => {
 };
 
 const Question = ({ block }) => {
+  const renderUnderlinedText = () => {
+    const { questionText, underlinedText } = block;
+
+    // If no underlined text, or it's not in the question, return plain text
+    if (!underlinedText || !questionText || !questionText.includes(underlinedText)) {
+      return questionText;
+    }
+
+    // Split the text by the part to be underlined.
+    // The regex ( ) creates a capturing group, so the underlined text is kept in the array.
+    try {
+      const parts = questionText.split(new RegExp(`(${underlinedText})`, 'g'));
+
+      return (
+        <>
+          {parts.map((part, i) => 
+            part === underlinedText ? <u key={i}>{part}</u> : part
+          )}
+        </>
+      );
+    } catch (e) {
+      // Fallback if regex fails (e.g., special characters in underlinedText)
+      console.error("Regex error in renderUnderlinedText:", e);
+      return questionText;
+    }
+  };
   return (
     <div className="question-block">
-      <p className="question-text">{block.questionText}</p>
+      <p className="question-text">
+        {renderUnderlinedText()}
+      </p>
       <div className="options-list">
         {block.options.map((option, index) => (
           <div key={index} className="option">
