@@ -17,6 +17,24 @@ const db = getFirestore();
 console.log('Firestore initialized successfully. RUNNING IN LOG-ONLY MODE.');
 
 /**
+ * Generates a clean, English title from the collection and slug.
+ * Example: ('vocabulary-test', 'N3-202412-1') => 'N3 Vocabulary Test (2024-12-1)'
+ */
+function generateEnglishTitle(collectionName, slug) {
+  const parts = slug.split('-'); // e.g., ['N3', '202412', '1']
+  const level = parts[0] || 'Unknown';
+  const date = parts.slice(1).join('-'); // e.g., '202412-1'
+  
+  let category = "Test";
+  if (collectionName.includes('vocabulary')) category = 'Vocabulary Test';
+  if (collectionName.includes('grammar')) category = 'Grammar/Reading Test';
+  if (collectionName.includes('listening')) category = 'Listening Test';
+  
+  return `${level.toUpperCase()} ${category} (${date})`;
+}
+
+
+/**
  * Scrapes all test links for a specific JLPT level and maps them to
  * our database collection names.
  */
@@ -24,7 +42,10 @@ async function scrapeLevelIndexPage(page, url) {
   try {
     await page.goto(url, { waitUntil: 'networkidle0' });
 
-    return await page.evaluate(() => {
+    return await page.evaluate((generateTitleFuncStr) => {
+      // Re-create the function inside evaluate()
+      const generateEnglishTitle = new Function('return ' + generateTitleFuncStr)();
+
       const results = {
         'vocabulary-test': [],
         'grammar-test': [],
@@ -63,17 +84,14 @@ async function scrapeLevelIndexPage(page, url) {
         if (listContainer && listContainer.classList.contains('list_dethi')) {
           const links = listContainer.querySelectorAll('.cell a.card-body');
           links.forEach(link => {
-            const title = Array.from(link.querySelectorAll('font'))
-                               .map(f => f.innerText.trim())
-                               .join(' ')
-                               .replace(/\s+/g, ' ')
-                               .trim();
-
             const urlParts = link.href.split('/').filter(Boolean);
             const slug = urlParts.slice(-3).join('-'); // e.g., N3-202412-1
             
+            // Generate a clean English title
+            const englishTitle = generateEnglishTitle(collectionName, slug);
+            
             results[collectionName].push({
-              title: title || link.innerText.trim(),
+              title: englishTitle,
               url: link.href,
               slug: slug // Use this clean slug as the doc ID
             });
@@ -82,7 +100,7 @@ async function scrapeLevelIndexPage(page, url) {
       });
 
       return results;
-    });
+    }, generateEnglishTitle.toString()); // Pass the function as a string
   } catch (error) {
     console.error(`Error processing URL ${url}:`, error.message);
     return null;
@@ -94,7 +112,7 @@ async function scrapeLevelIndexPage(page, url) {
  */
 async function scrapeTestContentPage(page, url, testTitle) {
   try {
-    console.log(`      L Scraping content from: ${url}`); // This log shows the URL being visited
+    console.log(`      L Scraping content from: ${url}`);
     await page.goto(url, { waitUntil: 'networkidle0' });
     
     const quizData = await page.evaluate(() => {
@@ -105,18 +123,10 @@ async function scrapeTestContentPage(page, url, testTitle) {
       let currentQuestions = [];
       let currentSectionHeader = "General Questions"; // Default
 
-      // Helper to get clean inner text
+      // This gets the raw text content and ignores any <font> tags from auto-translate
       const cleanText = (el) => {
         if (!el) return "";
-        // Get text, preferring the last <font> tag if it exists, otherwise innerText
-        const fonts = el.querySelectorAll('font');
-        let text;
-        if (fonts.length > 0) {
-            text = fonts[fonts.length - 1].innerText.trim();
-        } else {
-            text = el.innerText.trim();
-        }
-        return text.replace(/\s+/g, ' '); // Consolidate whitespace
+        return el.innerText.trim().replace(/\s+/g, ' ');
       };
 
       form.childNodes.forEach(node => {
@@ -135,10 +145,10 @@ async function scrapeTestContentPage(page, url, testTitle) {
           try {
             // 1. Get Question Number
             let qNumNode = node.nextElementSibling;
-            while(qNumNode && qNumNode.nodeType !== Node.ELEMENT_NODE) {
+            while(qNumNode && (qNumNode.nodeType !== Node.ELEMENT_NODE || !qNumNode.id.startsWith('diemso'))) {
                 qNumNode = qNumNode.nextElementSibling;
             }
-            if (!qNumNode || !qNumNode.id.startsWith('diemso')) return;
+            if (!qNumNode) return;
             const questionNumber = parseInt(qNumNode.id.replace('diemso', ''), 10);
             
             // 2. Get Question Text
@@ -196,7 +206,7 @@ async function scrapeTestContentPage(page, url, testTitle) {
     });
     
     if (quizData) {
-      quizData.title = testTitle; 
+      quizData.title = testTitle; // Add the clean, generated English title
     }
     return quizData;
     
@@ -245,11 +255,11 @@ async function main() {
              continue;
           }
           
-          const docRef = db.collection('jlpt').doc(level.toLowerCase()).collection(collectionName).doc(docId);
+          // *** MODIFIED: Using 'practice-test' as the new root collection ***
+          const docRef = db.collection('practice-test').doc(level.toLowerCase()).collection(collectionName).doc(docId);
           
           console.log(`    - Test: ${testLink.title} (Saving to ID: ${docId})`);
-          // *** NEW LOG LINE ADDED HERE ***
-          console.log(`      L URL: ${testLink.url}`); // This explicitly logs the URL
+          console.log(`      L URL: ${testLink.url}`);
           
           // 4. Scrape the actual content of the test page
           const testData = await scrapeTestContentPage(page, testLink.url, testLink.title);
