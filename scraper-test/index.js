@@ -192,7 +192,7 @@ async function scrapeTestContentPage(page, url, testTitle) {
     return quizData;
     
   } catch (error) {
-    console.error(`Error processing URL ${url}:`, error.message);
+    console.error(`Error processing URL ${url}`, error.message);
     return null;
   }
 }
