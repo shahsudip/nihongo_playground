@@ -14,11 +14,10 @@ const BASE_URL = 'https://dethitiengnhat.com';
 
 initializeApp({ credential: cert(serviceAccount) });
 const db = getFirestore();
-console.log('Firestore initialized successfully. RUNNING IN LOG-ONLY MODE.');
+console.log('Firestore initialized successfully. SAVING TO FIRESTORE (LIVE MODE).');
 
 /**
  * Generates a clean, English title from the collection and slug.
- * Example: ('vocabulary-test', 'N3-202412-1') => 'N3 Vocabulary Test (2024-12-1)'
  */
 function generateEnglishTitle(collectionName, slug) {
   const parts = slug.split('-'); // e.g., ['N3', '202412', '1']
@@ -255,7 +254,6 @@ async function main() {
              continue;
           }
           
-          // *** MODIFIED: Using 'practice-test' as the new root collection ***
           const docRef = db.collection('practice-test').doc(level.toLowerCase()).collection(collectionName).doc(docId);
           
           console.log(`    - Test: ${testLink.title} (Saving to ID: ${docId})`);
@@ -264,9 +262,14 @@ async function main() {
           // 4. Scrape the actual content of the test page
           const testData = await scrapeTestContentPage(page, testLink.url, testLink.title);
           
+          // *** MODIFIED: This now saves to Firestore ***
           if (testData && testData.questions.length > 0) {
-            console.log(`      L (LOG-ONLY) Would save content to: ${docRef.path}`);
-            console.log(JSON.stringify(testData, null, 2));
+            try {
+              await docRef.set(testData);
+              console.log(`      L SUCCESS: Saved to ${docRef.path}`);
+            } catch (saveError) {
+              console.error(`      L FAILED to save to ${docRef.path}:`, saveError.message);
+            }
           } else {
             console.log(`      L (SKIPPED) No questions found at: ${testLink.url}`);
           }
