@@ -18,6 +18,12 @@ import FlashcardViewer from './components/FlashcardViewer.jsx';
 import GrammarListPage from './components/grammar_list_page.jsx';
 import GrammarStudyPage from './components/grammar_study_page.jsx';
 
+// --- NEW IMPORTS FOR PRACTICE TEST FLOW ---
+import PracticeCategoryPage from './components/PracticeCategoryPage.jsx';
+import PracticeTestListPage from './components/PracticeTestListPage.jsx';
+import TestTakerPage from './components/TestTakerPage.jsx';
+// --- END NEW IMPORTS ---
+
 
 // This component protects routes that require a user to be logged in
 function ProtectedRoute({ children }) {
@@ -86,9 +92,24 @@ export default function App() {
             path="/results"
             element={<ProtectedRoute><ResultsPage /></ProtectedRoute>}
           />
+          
+          {/* --- NEW ROUTES FOR PRACTICE TEST FLOW --- */}
+          <Route
+            path="/level/:levelId/practice-test"
+            element={<ProtectedRoute><PracticeCategoryPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/level/:levelId/practice-test/:categoryId"
+            element={<ProtectedRoute><PracticeTestListPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/level/:levelId/practice-test/:categoryId/:testId"
+            element={<ProtectedRoute><TestTakerPage /></ProtectedRoute>}
+          />
+          {/* --- END NEW ROUTES --- */}
+
         </Route>
       </Routes>
     </Router>
   );
 }
-

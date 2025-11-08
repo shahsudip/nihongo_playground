@@ -116,7 +116,9 @@ async function scrapeTestContentPage(page, url, testTitle) {
         if (node.classList.contains('big_item')) {
           const headerNodeClone = node.cloneNode(true);
           const iframeInHeader = headerNodeClone.querySelector('iframe');
+          const audioInHeader = headerNodeClone.querySelector('audio');
           if (iframeInHeader) iframeInHeader.remove();
+          if (audioInHeader) audioInHeader.remove();
           
           contentBlocks.push({
             type: 'section-header',
@@ -124,27 +126,35 @@ async function scrapeTestContentPage(page, url, testTitle) {
           });
           
           const audioIframe = node.querySelector('iframe');
+          const audioTag = node.querySelector('audio');
+
           if (audioIframe) {
             contentBlocks.push({
               type: 'audio',
               src: audioIframe.src
             });
+          } else if (audioTag) {
+            const sourceTag = audioTag.querySelector('source');
+            if (sourceTag) {
+              contentBlocks.push({
+                type: 'audio',
+                src: getFullSrc(sourceTag)
+              });
+            }
           }
         }
         
-        // *** NEW: Added logic for Reading Passages ***
+        // --- 2. Find Passages ---
         else if (node.classList.contains('question_content')) {
           contentBlocks.push({
             type: 'passage',
-            // We save the innerHTML to preserve formatting (<b>, <br>, etc.)
-            htmlContent: node.innerHTML
+            htmlContent: node.innerHTML // Keep HTML for passages
           });
         }
         
         // --- 3. Find Questions & Images ---
         else if (node.classList.contains('question_list')) {
           try {
-            // Check for an image *inside* the question block
             const imgEl = node.querySelector('img');
             if (imgEl) {
               contentBlocks.push({
@@ -160,7 +170,11 @@ async function scrapeTestContentPage(page, url, testTitle) {
             if (!qNumNode) return;
             const questionNumber = parseInt(qNumNode.id.replace('diemso', ''), 10);
             
-            const questionText = cleanText(node);
+            // *** UPDATED ***
+            const questionText = cleanText(node); // Get the full plain text
+            const underlinedEl = node.querySelector('u');
+            const underlinedText = underlinedEl ? cleanText(underlinedEl) : null; // Get *only* the underlined text
+            // *** END UPDATE ***
             
             let optionsEl = qNumNode.nextElementSibling;
             while (optionsEl && !optionsEl.classList.contains('answer_2row') && !optionsEl.classList.contains('answer_1row')) {
@@ -206,7 +220,10 @@ async function scrapeTestContentPage(page, url, testTitle) {
             const questionData = {
               type: 'question',
               questionNumber,
-              questionText,
+              // *** UPDATED ***
+              questionText: questionText,
+              underlinedText: underlinedText,
+              // *** END UPDATE ***
               options,
               correctOption: {
                 index: correctOptionIndex,

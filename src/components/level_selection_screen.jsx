@@ -41,13 +41,21 @@ const LevelSelectionPage = () => {
             {cat.charAt(0).toUpperCase() + cat.slice(1)} Test
           </Link>
         ))}
-                <Link to={`/flashcards/${level}/vocabulary_list`} className="category-card flashcard-mode">
+            <Link to={`/flashcards/${level}/vocabulary_list`} className="category-card flashcard-mode">
           Vocabulary List
         </Link>
 
         <Link to={`/grammar-list/${level}`} className="category-card flashcard-mode">
           Grammar List
         </Link>
+
+        {/* --- NEW PRACTICE TEST BUTTON ADDED HERE --- */}
+        {/* It uses your existing 'category-card' class for consistent styling */}
+        <Link to={`/level/${level}/practice-test`} className="category-card">
+          Practice Test
+        </Link>
+        {/* --- END NEW BUTTON --- */}
+
       </div>
     </div>
   );
