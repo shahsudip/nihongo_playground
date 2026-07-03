@@ -2,6 +2,8 @@ import React from 'react';
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './context/AuthContext.jsx';
 import './assets/app_style.css';
+import './assets/book_features.css';
+import './assets/restored_tests.css';
 
 import MainLayout from './components/main_layout.jsx';
 import LandingPage from './components/landing_screen.jsx';
@@ -24,6 +26,16 @@ import PracticeTestListPage from './components/PracticeTestListPage.jsx';
 import TestTakerPage from './components/TestTakerPage.jsx';
 // --- END NEW IMPORTS ---
 
+// --- BOOK COLLECTION IMPORTS ---
+import BookListPage from './components/BookListPage.jsx';
+import BookChapterListPage from './components/BookChapterListPage.jsx';
+import BookQuizTakerPage from './components/BookQuizTakerPage.jsx';
+
+// --- PRACTICE SETS ---
+import './assets/practice_sets.css';
+import PracticeSetsListPage from './components/PracticeSetsListPage.jsx';
+import PracticeSetDetailsPage from './components/PracticeSetDetailsPage.jsx';
+import PracticeSetQuizPage from './components/PracticeSetQuizPage.jsx';
 
 // This component protects routes that require a user to be logged in
 function ProtectedRoute({ children }) {
@@ -107,6 +119,34 @@ export default function App() {
             element={<ProtectedRoute><TestTakerPage /></ProtectedRoute>}
           />
           {/* --- END NEW ROUTES --- */}
+
+          {/* --- BOOK COLLECTION ROUTES --- */}
+          <Route
+            path="/books"
+            element={<ProtectedRoute><BookListPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/books/:bookId"
+            element={<ProtectedRoute><BookChapterListPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/books/:bookId/chapters/:chapterId"
+            element={<ProtectedRoute><BookQuizTakerPage /></ProtectedRoute>}
+          />
+
+          {/* --- PRACTICE SETS ROUTES --- */}
+          <Route
+            path="/practice-sets"
+            element={<ProtectedRoute><PracticeSetsListPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/practice-sets/:setId"
+            element={<ProtectedRoute><PracticeSetDetailsPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/practice-sets/:setId/:sectionId"
+            element={<ProtectedRoute><PracticeSetQuizPage /></ProtectedRoute>}
+          />
 
         </Route>
       </Routes>

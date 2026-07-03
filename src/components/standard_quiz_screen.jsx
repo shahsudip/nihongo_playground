@@ -11,11 +11,11 @@ import LoadingSpinner from '../utils/loading_spinner.jsx';
 // Small UI subcomponents
 // -------------------------
 const ScoreCounter = ({ score = 0, totalIncorrect = 0, mastered = 0, numberOfQuestions = 0, unseen = 0 }) => (
-  <div className="score-counter-container">
-    <div className="score-item unseen">New: <span>{unseen}</span></div>
-    <div className="score-item correct">Score: <span>{score}</span></div>
-    <div className="score-item incorrect">Incorrect: <span>{totalIncorrect}</span></div>
-    <div className="score-item mastered">Mastered: <span>{mastered} / {numberOfQuestions}</span></div>
+  <div className="exam-stats-row">
+    <div className="exam-stat"><span className="stat-dot new"></span> New: {unseen}</div>
+    <div className="exam-stat"><span className="stat-dot score"></span> Score: {score}</div>
+    <div className="exam-stat"><span className="stat-dot incorrect"></span> Incorrect: {totalIncorrect}</div>
+    <div className="exam-stat"><span className="stat-dot mastered"></span> Mastered: {mastered}/{numberOfQuestions}</div>
   </div>
 );
 
@@ -66,6 +66,7 @@ const Quiz = ({ quizContent = [], quizTitle = '', quizType = 'kanji', onComplete
     masteredCount = 0,
     deckSize: numberOfQuestions = 0,
     unseenCount = 0,
+    deck = [],
   } = quizState || {};
 
   const [selectedOption, setSelectedOption] = useState(null);
@@ -113,32 +114,77 @@ const Quiz = ({ quizContent = [], quizTitle = '', quizType = 'kanji', onComplete
 
   return (
     <>
-      <div className="quiz-card">
-        <h1 className="quiz-title">{quizTitle}</h1>
-        <ScoreCounter score={score} totalIncorrect={totalIncorrect} mastered={masteredCount} numberOfQuestions={numberOfQuestions} unseen={unseenCount} />
-        <h2 className="question-text">{currentCard.questionText}</h2>
+      <div className="quiz-layout-v2">
+        <div className="quiz-main-column">
+          <div className="exam-card">
+            
+            <div className="exam-header">
+              <h1 className="exam-title">{quizTitle}</h1>
+              <div className="exam-progress-wrapper">
+                <div className="exam-progress-texts">
+                  <span className="exam-q-num">Question {masteredCount + 1} of {numberOfQuestions}</span>
+                  <span className="exam-q-pct">{numberOfQuestions > 0 ? Math.round((masteredCount / numberOfQuestions) * 100) : 0}%</span>
+                </div>
+                <div className="exam-progress-bar">
+                  <div className="exam-progress-fill" style={{ width: `${numberOfQuestions > 0 ? (masteredCount / numberOfQuestions) * 100 : 0}%` }}></div>
+                </div>
+              </div>
+            </div>
 
-        <div className="options-grid">
-          {options.map((option, idx) => {
-            const isCorrectAnswer = option === currentCard.answer;
-            const isSelected = selectedOption === option;
-            let buttonClass = 'option-button';
-            if (isAnswered) {
-              if (isCorrectAnswer) buttonClass += ' correct';
-              else if (isSelected) buttonClass += ' incorrect';
-            }
-            return (
-              <button
-                key={idx}
-                onClick={() => handleOptionClick(option)}
-                className={buttonClass}
-                disabled={isAnswered}
-              >
-                {option}
-              </button>
-            );
-          })}
+            <ScoreCounter score={score} totalIncorrect={totalIncorrect} mastered={masteredCount} numberOfQuestions={numberOfQuestions} unseen={unseenCount} />
+
+            <div className="exam-question-area">
+              <div className="exam-question-label">Q{masteredCount + 1}</div>
+              <h2 className="exam-question-text">{currentCard.questionText}</h2>
+            </div>
+
+            <div className="exam-options-list">
+              {options.map((option, idx) => {
+                const isCorrectAnswer = option === currentCard.answer;
+                const isSelected = selectedOption === option;
+                let buttonClass = 'exam-option-btn';
+                if (isAnswered) {
+                  if (isCorrectAnswer) buttonClass += ' correct';
+                  else if (isSelected) buttonClass += ' incorrect';
+                  else buttonClass += ' disabled';
+                }
+                return (
+                  <button
+                    key={idx}
+                    onClick={() => handleOptionClick(option)}
+                    className={buttonClass}
+                    disabled={isAnswered}
+                  >
+                    <span className="exam-option-number">{idx + 1}</span>
+                    <span className="exam-option-text">{option}</span>
+                    {isAnswered && isCorrectAnswer && <span className="exam-option-icon">〇</span>}
+                    {isAnswered && isSelected && !isCorrectAnswer && <span className="exam-option-icon">✕</span>}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
         </div>
+
+        {/* Question Navigator */}
+        {deck.length > 0 && (
+          <div className="exam-navigator-sidebar">
+            <h3 className="exam-nav-title">Questions</h3>
+            <div className="exam-nav-grid">
+              {deck.map((card, idx) => {
+                let dotClass = 'exam-nav-dot';
+                if (card.isMastered) dotClass += ' mastered';
+                else if (card.correctStreak > 0) dotClass += ' in-progress';
+                if (currentCard && currentCard.id === card.id) dotClass += ' current';
+                return (
+                  <button key={idx} className={dotClass} title={`Q${idx + 1}`}>
+                    {idx + 1}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
       </div>
 
       {showFirstPassModal && (

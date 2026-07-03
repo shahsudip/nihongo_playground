@@ -190,5 +190,6 @@ export const useSrsQuiz = (vocabularyList, quizType = "kanji") => {
     acknowledgeFirstPass,
     firstPassStats,
     unseenCount: unseenQueue.length,
+    deck,
   };
 };

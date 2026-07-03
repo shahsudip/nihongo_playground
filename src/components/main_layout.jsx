@@ -15,8 +15,8 @@ const MainHeader = () => {
       </div>
       <nav className="main-nav">
         <NavLink to="/levels" className="nav-link">Practice</NavLink>
-        {<NavLink to="/profile" className="nav-link">Profile</NavLink>}
-        
+        <NavLink to="/books" className="nav-link">Books</NavLink>
+        <NavLink to="/profile" className="nav-link">Profile</NavLink>
       </nav>
     </header>
   );
