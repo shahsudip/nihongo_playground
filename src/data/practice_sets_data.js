@@ -24,7 +24,7 @@ export const practiceSetsBook = {
                 "つつんで",
                 "しずんで"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -36,7 +36,7 @@ export const practiceSetsBook = {
                 "ぶし",
                 "ぶじ"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -48,7 +48,7 @@ export const practiceSetsBook = {
                 "とうき",
                 "どうき"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -60,7 +60,7 @@ export const practiceSetsBook = {
                 "して",
                 "きて"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -72,7 +72,7 @@ export const practiceSetsBook = {
                 "けん",
                 "げん"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -84,7 +84,7 @@ export const practiceSetsBook = {
                 "すなお",
                 "まっすぐ"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -96,7 +96,7 @@ export const practiceSetsBook = {
                 "たな",
                 "はこ"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -108,7 +108,7 @@ export const practiceSetsBook = {
                 "そうぎょう",
                 "かいぎょう"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -120,7 +120,7 @@ export const practiceSetsBook = {
                 "幸福",
                 "広福"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -132,7 +132,7 @@ export const practiceSetsBook = {
                 "改良",
                 "改善"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -144,7 +144,7 @@ export const practiceSetsBook = {
                 "沿って",
                 "沼って"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -156,7 +156,7 @@ export const practiceSetsBook = {
                 "借す",
                 "課す"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -180,7 +180,7 @@ export const practiceSetsBook = {
                 "物語",
                 "物毎"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -192,7 +192,7 @@ export const practiceSetsBook = {
                 "アイデア",
                 "カルチャー"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -204,7 +204,7 @@ export const practiceSetsBook = {
                 "停止",
                 "中止"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -216,7 +216,7 @@ export const practiceSetsBook = {
                 "指図",
                 "構成"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -228,7 +228,7 @@ export const practiceSetsBook = {
                 "やいて",
                 "こいで"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -240,7 +240,7 @@ export const practiceSetsBook = {
                 "以下",
                 "以降"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -276,7 +276,7 @@ export const practiceSetsBook = {
                 "見出し",
                 "見返し"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -300,7 +300,7 @@ export const practiceSetsBook = {
                 "どこまでも",
                 "どこか"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -312,7 +312,7 @@ export const practiceSetsBook = {
                 "事故",
                 "殺人"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -324,7 +324,7 @@ export const practiceSetsBook = {
                 "きびしい",
                 "やさしい"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -336,7 +336,7 @@ export const practiceSetsBook = {
                 "楽だ",
                 "痛い"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -348,7 +348,7 @@ export const practiceSetsBook = {
                 "ある程度は",
                 "前よりもっと"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -360,7 +360,7 @@ export const practiceSetsBook = {
                 "人から聞いて伝えた",
                 "考えて発表した"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -384,7 +384,7 @@ export const practiceSetsBook = {
                 "その人と別れてから、何度もその人のことを<u>くり返し</u>た。",
                 "練習のために、先生が言ったことを何度も<u>くり返し</u>た。"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -396,7 +396,7 @@ export const practiceSetsBook = {
                 "私の家のとなりに、新しい家が<u>生えた</u>。",
                 "働きすぎたために、病気が<u>生えました</u>。"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -408,7 +408,7 @@ export const practiceSetsBook = {
                 "朝と夜、体のためにかならず<u>トレーニング</u>している。",
                 "この車は、デザインだけではなく<u>トレーニング</u>がとてもよい。"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -420,7 +420,7 @@ export const practiceSetsBook = {
                 "病院に入院して、<u>努力</u>を回復した。",
                 "ぜひとも<u>努力</u>のよい社員がほしい。"
               ],
-              "correctIndex": 2,
+              "correctIndex": -1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -432,7 +432,7 @@ export const practiceSetsBook = {
                 "私は友だちが少ないので、友だちの多い人が<u>なつかしい</u>。",
                 "みんなの前で失敗して、とても<u>なつかしかった</u>。"
               ],
-              "correctIndex": 2,
+              "correctIndex": -1,
               "sectionType": "vocabulary-kanji"
             }
           ]
@@ -450,7 +450,7 @@ export const practiceSetsBook = {
                 "いまにも",
                 "いまをも"
               ],
-              "correctIndex": 3,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -462,7 +462,7 @@ export const practiceSetsBook = {
                 "にしろ",
                 "こそ"
               ],
-              "correctIndex": 2,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -474,7 +474,7 @@ export const practiceSetsBook = {
                 "ばかりに",
                 "ところに"
               ],
-              "correctIndex": 2,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -486,7 +486,7 @@ export const practiceSetsBook = {
                 "後を",
                 "後で"
               ],
-              "correctIndex": 3,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -498,7 +498,7 @@ export const practiceSetsBook = {
                 "もらった",
                 "もらえ"
               ],
-              "correctIndex": 1,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -510,7 +510,7 @@ export const practiceSetsBook = {
                 "行ったの",
                 "行こうの"
               ],
-              "correctIndex": 0,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -522,7 +522,7 @@ export const practiceSetsBook = {
                 "下がった",
                 "下がって"
               ],
-              "correctIndex": 2,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -534,7 +534,7 @@ export const practiceSetsBook = {
                 "返す",
                 "返して"
               ],
-              "correctIndex": 3,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -546,7 +546,7 @@ export const practiceSetsBook = {
                 "上はを",
                 "上から"
               ],
-              "correctIndex": 2,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -558,7 +558,7 @@ export const practiceSetsBook = {
                 "いらっしゃいます",
                 "ございます"
               ],
-              "correctIndex": 3,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -570,7 +570,7 @@ export const practiceSetsBook = {
                 "うかがわれました",
                 "うかがいました"
               ],
-              "correctIndex": 2,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -582,7 +582,7 @@ export const practiceSetsBook = {
                 "会いに行ったのに",
                 "会いに行ったため"
               ],
-              "correctIndex": 0,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -594,7 +594,7 @@ export const practiceSetsBook = {
                 "酒を飲むこともあるだろう",
                 "酒を飲むこともないだろう"
               ],
-              "correctIndex": 1,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -606,7 +606,7 @@ export const practiceSetsBook = {
                 "して",
                 "待ち合わせは"
               ],
-              "correctIndex": 1,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -618,7 +618,7 @@ export const practiceSetsBook = {
                 "輝く",
                 "開けると"
               ],
-              "correctIndex": 2,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -630,7 +630,7 @@ export const practiceSetsBook = {
                 "引き受けて",
                 "この仕事を"
               ],
-              "correctIndex": 2,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -642,7 +642,7 @@ export const practiceSetsBook = {
                 "うちに",
                 "の"
               ],
-              "correctIndex": 3,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -654,7 +654,7 @@ export const practiceSetsBook = {
                 "今までで",
                 "最高"
               ],
-              "correctIndex": 2,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -666,7 +666,7 @@ export const practiceSetsBook = {
                 "あった",
                 "ある"
               ],
-              "correctIndex": 1,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -678,7 +678,7 @@ export const practiceSetsBook = {
                 "次からは",
                 "次までは"
               ],
-              "correctIndex": 0,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -690,7 +690,7 @@ export const practiceSetsBook = {
                 "増えてありそうだ",
                 "増えてあるそうだ"
               ],
-              "correctIndex": 3,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -702,7 +702,7 @@ export const practiceSetsBook = {
                 "a たとえば ／ b など",
                 "a たぶん ／ b であれば"
               ],
-              "correctIndex": 0,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -714,7 +714,7 @@ export const practiceSetsBook = {
                 "すぐに決められなかった",
                 "すぐに決められなかっただろう<u>問題 1 (Vocabulary / Kanji Reading)</u>2"
               ],
-              "correctIndex": 3,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             }
           ]
@@ -739,7 +739,7 @@ export const practiceSetsBook = {
                 "ついて",
                 "さいて"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -751,7 +751,7 @@ export const practiceSetsBook = {
                 "ぶつう",
                 "ふうづう"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -763,7 +763,7 @@ export const practiceSetsBook = {
                 "しゃっきん",
                 "しゃくきん"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -787,7 +787,7 @@ export const practiceSetsBook = {
                 "ちょう",
                 "はら"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -799,7 +799,7 @@ export const practiceSetsBook = {
                 "きたく",
                 "きだく"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -883,7 +883,7 @@ export const practiceSetsBook = {
                 "複雑",
                 "服雑"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -895,7 +895,7 @@ export const practiceSetsBook = {
                 "文句",
                 "文言"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -907,7 +907,7 @@ export const practiceSetsBook = {
                 "コーラス",
                 "スピーチ"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -919,7 +919,7 @@ export const practiceSetsBook = {
                 "利用",
                 "応用"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -931,7 +931,7 @@ export const practiceSetsBook = {
                 "感想",
                 "意志"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -943,7 +943,7 @@ export const practiceSetsBook = {
                 "攻めて",
                 "守って"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -955,7 +955,7 @@ export const practiceSetsBook = {
                 "同様",
                 "同級"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -979,7 +979,7 @@ export const practiceSetsBook = {
                 "カープ",
                 "ドロップ"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -991,7 +991,7 @@ export const practiceSetsBook = {
                 "手回し",
                 "手続き"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1003,7 +1003,7 @@ export const practiceSetsBook = {
                 "飲食",
                 "許可"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1027,7 +1027,7 @@ export const practiceSetsBook = {
                 "戦争",
                 "平和"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1051,7 +1051,7 @@ export const practiceSetsBook = {
                 "気が強い",
                 "気が弱い"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1087,7 +1087,7 @@ export const practiceSetsBook = {
                 "やわらかい",
                 "かたい"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1111,7 +1111,7 @@ export const practiceSetsBook = {
                 "今日は早めにおふろに水を<u>こめて</u>ください。",
                 "手紙は、気持ちを<u>こめて</u>書きなさい。"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1123,7 +1123,7 @@ export const practiceSetsBook = {
                 "彼女の顔にはよい<u>ルート</u>が出ていた。",
                 "<u>ルート</u>をしたまま、おふろに入らないでください。"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1147,7 +1147,7 @@ export const practiceSetsBook = {
                 "外国で1人で生活していたら、<u>うらやましく</u>なった。",
                 "母の作った料理が<u>うらやましい</u>ので、たくさん食べた。<u>Answer List</u>4"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             }
           ]
@@ -1189,7 +1189,7 @@ export const practiceSetsBook = {
                 "ばかりは",
                 "中は"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -1201,7 +1201,7 @@ export const practiceSetsBook = {
                 "ところがある",
                 "ものがある"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -1213,7 +1213,7 @@ export const practiceSetsBook = {
                 "さらに",
                 "上に"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -1225,7 +1225,7 @@ export const practiceSetsBook = {
                 "前と",
                 "前は"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -1237,7 +1237,7 @@ export const practiceSetsBook = {
                 "うちを",
                 "うちまでに"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -1249,7 +1249,7 @@ export const practiceSetsBook = {
                 "ひききり",
                 "ひきかけ"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -1261,7 +1261,7 @@ export const practiceSetsBook = {
                 "しなくて",
                 "しなくては"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -1273,7 +1273,7 @@ export const practiceSetsBook = {
                 "ああいう",
                 "どういう"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -1297,7 +1297,7 @@ export const practiceSetsBook = {
                 "見に行くところがない",
                 "見に行くどころではない"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -1321,7 +1321,7 @@ export const practiceSetsBook = {
                 "ばかり",
                 "私"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -1333,7 +1333,7 @@ export const practiceSetsBook = {
                 "いる",
                 "過ごして"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -1345,7 +1345,7 @@ export const practiceSetsBook = {
                 "なのか",
                 "何時ごろ"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -1357,7 +1357,7 @@ export const practiceSetsBook = {
                 "いろいろな",
                 "だけ"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -1369,7 +1369,7 @@ export const practiceSetsBook = {
                 "する",
                 "かわって"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -1393,7 +1393,7 @@ export const practiceSetsBook = {
                 "あるくらいだ",
                 "あるはずがないのだ"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -1417,7 +1417,7 @@ export const practiceSetsBook = {
                 "あんなふうな",
                 "どんなような"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -1454,7 +1454,7 @@ export const practiceSetsBook = {
                 "さって",
                 "ちって"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1466,7 +1466,7 @@ export const practiceSetsBook = {
                 "まんそぐ",
                 "まんぞぐ"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1478,7 +1478,7 @@ export const practiceSetsBook = {
                 "きゅこう",
                 "きゅうこう"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1490,7 +1490,7 @@ export const practiceSetsBook = {
                 "けんしき",
                 "いしき"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1502,7 +1502,7 @@ export const practiceSetsBook = {
                 "さい",
                 "ざい"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1514,7 +1514,7 @@ export const practiceSetsBook = {
                 "こうこく",
                 "こうくう"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1526,7 +1526,7 @@ export const practiceSetsBook = {
                 "いき",
                 "みず"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1538,7 +1538,7 @@ export const practiceSetsBook = {
                 "ぎんし",
                 "ぎんじ"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1550,7 +1550,7 @@ export const practiceSetsBook = {
                 "豊富",
                 "広富"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1562,7 +1562,7 @@ export const practiceSetsBook = {
                 "安記",
                 "暗記"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1574,7 +1574,7 @@ export const practiceSetsBook = {
                 "供えて",
                 "背えて"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1586,7 +1586,7 @@ export const practiceSetsBook = {
                 "矢う",
                 "央う"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1598,7 +1598,7 @@ export const practiceSetsBook = {
                 "興味",
                 "興見"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1610,7 +1610,7 @@ export const practiceSetsBook = {
                 "夫婦",
                 "婦夫"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1646,7 +1646,7 @@ export const practiceSetsBook = {
                 "開いて",
                 "吹いて"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1658,7 +1658,7 @@ export const practiceSetsBook = {
                 "あげて",
                 "受けて"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1670,7 +1670,7 @@ export const practiceSetsBook = {
                 "解答",
                 "正解"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1694,7 +1694,7 @@ export const practiceSetsBook = {
                 "コンクール",
                 "コメント"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1706,7 +1706,7 @@ export const practiceSetsBook = {
                 "手出し",
                 "手抜き"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1718,7 +1718,7 @@ export const practiceSetsBook = {
                 "救助",
                 "感謝"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1730,7 +1730,7 @@ export const practiceSetsBook = {
                 "さっそく",
                 "はっきり"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1742,7 +1742,7 @@ export const practiceSetsBook = {
                 "体温",
                 "健康"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1754,7 +1754,7 @@ export const practiceSetsBook = {
                 "肯定 的",
                 "否定 的"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1766,7 +1766,7 @@ export const practiceSetsBook = {
                 "注意して",
                 "切断して"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1778,7 +1778,7 @@ export const practiceSetsBook = {
                 "否定した",
                 "そのままにした"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1790,7 +1790,7 @@ export const practiceSetsBook = {
                 "正確に",
                 "だいたい"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1814,7 +1814,7 @@ export const practiceSetsBook = {
                 "どうも午後は、よい天気にかわるような<u>気に入る</u>。",
                 "会社に着いてから、さいふがないことに<u>気に入った</u>。"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1826,7 +1826,7 @@ export const practiceSetsBook = {
                 "たまごと牛乳をよく<u>まぜて</u>ください。",
                 "顔をよく<u>まぜて</u>から、外に出かけましょう。"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1838,7 +1838,7 @@ export const practiceSetsBook = {
                 "昔にくらべて、<u>現実</u>はきびしい時代だと思います。",
                 "とても<u>現実</u>とは思えないニュースを聞いた。"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -1892,7 +1892,7 @@ export const practiceSetsBook = {
                 "だと",
                 "だとして"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -1916,7 +1916,7 @@ export const practiceSetsBook = {
                 "ごとに",
                 "からには"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -1952,7 +1952,7 @@ export const practiceSetsBook = {
                 "熱いうちに",
                 "熱いうちが"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -1976,7 +1976,7 @@ export const practiceSetsBook = {
                 "である",
                 "だったら"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -1988,7 +1988,7 @@ export const practiceSetsBook = {
                 "食べたまま",
                 "食べたばかり"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -2000,7 +2000,7 @@ export const practiceSetsBook = {
                 "治るというところ",
                 "治るというほど"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -2012,7 +2012,7 @@ export const practiceSetsBook = {
                 "降っていたにもかかわらず",
                 "降っていたにしては"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -2048,7 +2048,7 @@ export const practiceSetsBook = {
                 "まいります",
                 "よろしく"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -2084,7 +2084,7 @@ export const practiceSetsBook = {
                 "対する",
                 "態度は"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -2096,7 +2096,7 @@ export const practiceSetsBook = {
                 "a によると ／ b 表しているそうだ",
                 "a にかかわらず ／ b 表したわけだ"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -2108,7 +2108,7 @@ export const practiceSetsBook = {
                 "感じないでもない",
                 "感じがちな"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -2120,7 +2120,7 @@ export const practiceSetsBook = {
                 "につれて",
                 "に対して"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -2132,7 +2132,7 @@ export const practiceSetsBook = {
                 "新しいキャラクター",
                 "人気があるキャラクター"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -2144,7 +2144,7 @@ export const practiceSetsBook = {
                 "つけてみたい",
                 "つけてほしい<u>Answer List</u>2"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             }
           ]
@@ -2169,7 +2169,7 @@ export const practiceSetsBook = {
                 "ついて",
                 "とどいて"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2181,7 +2181,7 @@ export const practiceSetsBook = {
                 "てきど",
                 "てきどう"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2193,7 +2193,7 @@ export const practiceSetsBook = {
                 "でちょう",
                 "でっちょう"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2205,7 +2205,7 @@ export const practiceSetsBook = {
                 "ととのう",
                 "うたがう"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2217,7 +2217,7 @@ export const practiceSetsBook = {
                 "ゆき",
                 "ゆうき"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2253,7 +2253,7 @@ export const practiceSetsBook = {
                 "ていじ",
                 "てんじ"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2265,7 +2265,7 @@ export const practiceSetsBook = {
                 "前力",
                 "総力"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2289,7 +2289,7 @@ export const practiceSetsBook = {
                 "理論",
                 "議論"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2301,7 +2301,7 @@ export const practiceSetsBook = {
                 "迎えて",
                 "歓えて"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2313,7 +2313,7 @@ export const practiceSetsBook = {
                 "予習",
                 "複習"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2325,7 +2325,7 @@ export const practiceSetsBook = {
                 "手麻",
                 "手誠"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2337,7 +2337,7 @@ export const practiceSetsBook = {
                 "キャリア",
                 "スケジュール"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2349,7 +2349,7 @@ export const practiceSetsBook = {
                 "贈って",
                 "払って"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2373,7 +2373,7 @@ export const practiceSetsBook = {
                 "なやんで",
                 "病んで"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2385,7 +2385,7 @@ export const practiceSetsBook = {
                 "賛成",
                 "賛同"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2397,7 +2397,7 @@ export const practiceSetsBook = {
                 "乗り越して",
                 "乗り出して"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2421,7 +2421,7 @@ export const practiceSetsBook = {
                 "見立て",
                 "見かけ"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2433,7 +2433,7 @@ export const practiceSetsBook = {
                 "確認",
                 "調査"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2457,7 +2457,7 @@ export const practiceSetsBook = {
                 "得意",
                 "上等"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2493,7 +2493,7 @@ export const practiceSetsBook = {
                 "適当な",
                 "素直な"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2517,7 +2517,7 @@ export const practiceSetsBook = {
                 "前からの",
                 "最近出会った"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2541,7 +2541,7 @@ export const practiceSetsBook = {
                 "地面をもっと深く植えて<u>ください。</u>",
                 "来年、新しい家を植えよう<u>と思います。</u>"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2565,7 +2565,7 @@ export const practiceSetsBook = {
                 "絵や音楽など、技術<u>がとても好きだ。</u>",
                 "1日で家を建てるなんて、まるで技術<u>のようだ。</u>"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2595,7 +2595,7 @@ export const practiceSetsBook = {
                 "までの",
                 "までに"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -2607,7 +2607,7 @@ export const practiceSetsBook = {
                 "から",
                 "ばかり"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -2619,7 +2619,7 @@ export const practiceSetsBook = {
                 "だけで",
                 "だけなら"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -2631,7 +2631,7 @@ export const practiceSetsBook = {
                 "悪いことと",
                 "悪さで"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -2643,7 +2643,7 @@ export const practiceSetsBook = {
                 "見るほど",
                 "見たほど"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -2655,7 +2655,7 @@ export const practiceSetsBook = {
                 "始めよう",
                 "始め"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -2667,7 +2667,7 @@ export const practiceSetsBook = {
                 "食べきれない",
                 "食べきりがない"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -2679,7 +2679,7 @@ export const practiceSetsBook = {
                 "帰っておりました",
                 "お帰りいたしました"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -2691,7 +2691,7 @@ export const practiceSetsBook = {
                 "あり得る",
                 "あり得た"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -2727,7 +2727,7 @@ export const practiceSetsBook = {
                 "落ちたかもしれない",
                 "落ちようがない"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -2751,7 +2751,7 @@ export const practiceSetsBook = {
                 "来週に",
                 "台風の"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -2775,7 +2775,7 @@ export const practiceSetsBook = {
                 "あれば",
                 "本"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -2787,7 +2787,7 @@ export const practiceSetsBook = {
                 "ついて",
                 "くわしく"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -2799,7 +2799,7 @@ export const practiceSetsBook = {
                 "ますます",
                 "環境問題も"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -2811,7 +2811,7 @@ export const practiceSetsBook = {
                 "あるのではないだろうか",
                 "あってもよいのだろうか"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -2835,7 +2835,7 @@ export const practiceSetsBook = {
                 "しかも",
                 "ところが"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -2847,7 +2847,7 @@ export const practiceSetsBook = {
                 "このことが言うには",
                 "このことでよければ"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -2859,7 +2859,7 @@ export const practiceSetsBook = {
                 "したほうがいい",
                 "すればいい"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             }
           ]
@@ -2896,7 +2896,7 @@ export const practiceSetsBook = {
                 "かつよう",
                 "うんよう"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2908,7 +2908,7 @@ export const practiceSetsBook = {
                 "げんご",
                 "ごんご"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2920,7 +2920,7 @@ export const practiceSetsBook = {
                 "ぶっか",
                 "ものか"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2932,7 +2932,7 @@ export const practiceSetsBook = {
                 "しょっき",
                 "かぎ"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2944,7 +2944,7 @@ export const practiceSetsBook = {
                 "しゅぎ",
                 "しゅうぎ"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2968,7 +2968,7 @@ export const practiceSetsBook = {
                 "かんじん",
                 "がんしん"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -2992,7 +2992,7 @@ export const practiceSetsBook = {
                 "操件",
                 "動作"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3016,7 +3016,7 @@ export const practiceSetsBook = {
                 "分がる",
                 "曲がる"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3028,7 +3028,7 @@ export const practiceSetsBook = {
                 "伝達",
                 "到達"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3040,7 +3040,7 @@ export const practiceSetsBook = {
                 "登山",
                 "道山"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3064,7 +3064,7 @@ export const practiceSetsBook = {
                 "しきりに",
                 "ついに"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3076,7 +3076,7 @@ export const practiceSetsBook = {
                 "あいまい",
                 "けち"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3088,7 +3088,7 @@ export const practiceSetsBook = {
                 "すんだ",
                 "やめた"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3112,7 +3112,7 @@ export const practiceSetsBook = {
                 "望んで",
                 "願って"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3136,7 +3136,7 @@ export const practiceSetsBook = {
                 "きり",
                 "ごと"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3148,7 +3148,7 @@ export const practiceSetsBook = {
                 "製造",
                 "製作"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3160,7 +3160,7 @@ export const practiceSetsBook = {
                 "実に",
                 "常に"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3172,7 +3172,7 @@ export const practiceSetsBook = {
                 "無限",
                 "無理"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3184,7 +3184,7 @@ export const practiceSetsBook = {
                 "上手だ",
                 "下手だ"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3196,7 +3196,7 @@ export const practiceSetsBook = {
                 "離婚して",
                 "外出して"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3208,7 +3208,7 @@ export const practiceSetsBook = {
                 "洗って",
                 "ふいて"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3220,7 +3220,7 @@ export const practiceSetsBook = {
                 "おだやかだ",
                 "太っている"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3232,7 +3232,7 @@ export const practiceSetsBook = {
                 "わけがわからない",
                 "とても優しい"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3256,7 +3256,7 @@ export const practiceSetsBook = {
                 "ドアをあけて、ベランダへ出ました。",
                 "テニスにあきたので、プロのテニス選手を目指すことにした。"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3268,7 +3268,7 @@ export const practiceSetsBook = {
                 "私と彼の付き合いは、長い。",
                 "田口さんと山川さんは仲が悪いので、ときどき付き合いをする。"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3280,7 +3280,7 @@ export const practiceSetsBook = {
                 "1週間そうじをしなかったら、部屋がとてもじゃまになった。",
                 "この本は、内容がとてもじゃまで、理解できない。"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3292,7 +3292,7 @@ export const practiceSetsBook = {
                 "寄った食事をしていると、体によくないですよ。",
                 "会社に行く前に、私の家に寄ってください。"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             }
           ]
@@ -3310,7 +3310,7 @@ export const practiceSetsBook = {
                 "し",
                 "のに"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -3322,7 +3322,7 @@ export const practiceSetsBook = {
                 "以上から",
                 "以上も"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -3334,7 +3334,7 @@ export const practiceSetsBook = {
                 "限りで",
                 "まで"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -3358,7 +3358,7 @@ export const practiceSetsBook = {
                 "ばかりだ",
                 "通りだ"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -3370,7 +3370,7 @@ export const practiceSetsBook = {
                 "ほどに",
                 "わけに"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -3382,7 +3382,7 @@ export const practiceSetsBook = {
                 "かまいます",
                 "かまいません"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -3394,7 +3394,7 @@ export const practiceSetsBook = {
                 "準備して",
                 "準備し"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -3418,7 +3418,7 @@ export const practiceSetsBook = {
                 "知ればよかった",
                 "知らないはずだ"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -3430,7 +3430,7 @@ export const practiceSetsBook = {
                 "読んでまいりましたか",
                 "お読みになりましたか"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -3442,7 +3442,7 @@ export const practiceSetsBook = {
                 "楽しみでなります",
                 "楽しみでなりません"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -3454,7 +3454,7 @@ export const practiceSetsBook = {
                 "来ないようなら",
                 "来るようなら"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -3466,7 +3466,7 @@ export const practiceSetsBook = {
                 "親切に",
                 "くださった"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -3478,7 +3478,7 @@ export const practiceSetsBook = {
                 "もう一度",
                 "ことを"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -3490,7 +3490,7 @@ export const practiceSetsBook = {
                 "最高だ",
                 "見た目も"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -3502,7 +3502,7 @@ export const practiceSetsBook = {
                 "見た",
                 "一目"
               ],
-              "correctIndex": 0,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -3514,7 +3514,7 @@ export const practiceSetsBook = {
                 "林先生による",
                 "行われる"
               ],
-              "correctIndex": 0,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -3526,7 +3526,7 @@ export const practiceSetsBook = {
                 "からして",
                 "からすると"
               ],
-              "correctIndex": 1,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -3538,7 +3538,7 @@ export const practiceSetsBook = {
                 "a おかげで / b 理解できるようになりました",
                 "a せいで / b 理解することができます"
               ],
-              "correctIndex": 2,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -3550,7 +3550,7 @@ export const practiceSetsBook = {
                 "考えられません",
                 "考えさせられません"
               ],
-              "correctIndex": 3,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -3562,7 +3562,7 @@ export const practiceSetsBook = {
                 "なかなか",
                 "とうとう"
               ],
-              "correctIndex": 2,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             },
             {
@@ -3574,7 +3574,7 @@ export const practiceSetsBook = {
                 "現在の新聞を保存する",
                 "過去の新聞を保存する"
               ],
-              "correctIndex": 0,
+              "correctIndex": -1,
               "sectionType": "grammar-reading"
             }
           ]
@@ -3611,7 +3611,7 @@ export const practiceSetsBook = {
                 "きゃくじ",
                 "きゃくち"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3635,7 +3635,7 @@ export const practiceSetsBook = {
                 "ぬって",
                 "あらって"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3647,7 +3647,7 @@ export const practiceSetsBook = {
                 "ふまん",
                 "ふしん"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3659,7 +3659,7 @@ export const practiceSetsBook = {
                 "ちゅうかん",
                 "ちゅうげん"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3671,7 +3671,7 @@ export const practiceSetsBook = {
                 "はだ",
                 "つめ"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3695,7 +3695,7 @@ export const practiceSetsBook = {
                 "不正",
                 "不成"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3707,7 +3707,7 @@ export const practiceSetsBook = {
                 "休養",
                 "休暇"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3719,7 +3719,7 @@ export const practiceSetsBook = {
                 "望んで",
                 "希んで"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3731,7 +3731,7 @@ export const practiceSetsBook = {
                 "因る",
                 "困る"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3743,7 +3743,7 @@ export const practiceSetsBook = {
                 "停まる",
                 "泊まる"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3755,7 +3755,7 @@ export const practiceSetsBook = {
                 "見形",
                 "味形"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3767,7 +3767,7 @@ export const practiceSetsBook = {
                 "ステージ",
                 "ジャンル"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3779,7 +3779,7 @@ export const practiceSetsBook = {
                 "問答",
                 "返答"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3791,7 +3791,7 @@ export const practiceSetsBook = {
                 "出張",
                 "担当"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3803,7 +3803,7 @@ export const practiceSetsBook = {
                 "論じて",
                 "遊んで"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3815,7 +3815,7 @@ export const practiceSetsBook = {
                 "同一",
                 "万一"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3827,7 +3827,7 @@ export const practiceSetsBook = {
                 "さびしがらなくても",
                 "にげなくても"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3875,7 +3875,7 @@ export const practiceSetsBook = {
                 "たびたび",
                 "いちいち"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3899,7 +3899,7 @@ export const practiceSetsBook = {
                 "簡単だ",
                 "難しい"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3911,7 +3911,7 @@ export const practiceSetsBook = {
                 "たくさん眠った",
                 "少し眠った"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3923,7 +3923,7 @@ export const practiceSetsBook = {
                 "心配しないで",
                 "驚かないで"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3935,7 +3935,7 @@ export const practiceSetsBook = {
                 "注意した",
                 "評価した"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3947,7 +3947,7 @@ export const practiceSetsBook = {
                 "きれいな発音で",
                 "礼儀正しく"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3959,7 +3959,7 @@ export const practiceSetsBook = {
                 "飲み会に参加する人を集中しましょう。",
                 "テレビを消して、勉強に集中する。"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3971,7 +3971,7 @@ export const practiceSetsBook = {
                 "ドアをあけて、ベランダへ出ました。",
                 "テニスにあきたので、プロのテニス選手を目指すことにした。"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -3995,7 +3995,7 @@ export const practiceSetsBook = {
                 "1週間そうじをしなかったら、部屋がとてもじゃまになった。",
                 "この本は、内容がとてもじゃまで、理解できない。"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4037,7 +4037,7 @@ export const practiceSetsBook = {
                 "ばかりに",
                 "ごとに"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -4049,7 +4049,7 @@ export const practiceSetsBook = {
                 "どれ",
                 "これ"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -4073,7 +4073,7 @@ export const practiceSetsBook = {
                 "やたらに",
                 "ほんの"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -4085,7 +4085,7 @@ export const practiceSetsBook = {
                 "加えて",
                 "加えたら"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -4097,7 +4097,7 @@ export const practiceSetsBook = {
                 "吸おう",
                 "吸って"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -4109,7 +4109,7 @@ export const practiceSetsBook = {
                 "やりました",
                 "いただきました"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -4121,7 +4121,7 @@ export const practiceSetsBook = {
                 "わかりかねます",
                 "わかりかねました"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -4133,7 +4133,7 @@ export const practiceSetsBook = {
                 "わけになっている",
                 "ほどになっている"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -4145,7 +4145,7 @@ export const practiceSetsBook = {
                 "落ちるに決まっている",
                 "落ちるところに決まっている"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -4169,7 +4169,7 @@ export const practiceSetsBook = {
                 "着てみるのがいいでしょうか",
                 "着てみてもいいですか"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -4181,7 +4181,7 @@ export const practiceSetsBook = {
                 "大好きな",
                 "ものが"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -4193,7 +4193,7 @@ export const practiceSetsBook = {
                 "決まった",
                 "申し上げて"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -4205,7 +4205,7 @@ export const practiceSetsBook = {
                 "しよう",
                 "ところへ"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -4217,7 +4217,7 @@ export const practiceSetsBook = {
                 "旅行に",
                 "たび"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -4234,7 +4234,7 @@ export const practiceSetsBook = {
                 "(並び替え: 3 旅行に -> 2 行く -> 4 たび -> 1 に)",
                 "(並び替え: 2 はじめ -> 4 とする -> 3 かわいい -> 1 動物たちが)"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -4246,7 +4246,7 @@ export const practiceSetsBook = {
                 "ですから",
                 "ただし"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -4258,7 +4258,7 @@ export const practiceSetsBook = {
                 "ああした",
                 "それほどの"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -4270,7 +4270,7 @@ export const practiceSetsBook = {
                 "a 最初に / b まずは",
                 "a 最後に / b まずは"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -4282,7 +4282,7 @@ export const practiceSetsBook = {
                 "慣れつつあります",
                 "慣れつついます"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -4319,7 +4319,7 @@ export const practiceSetsBook = {
                 "われて",
                 "たおれて"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4331,7 +4331,7 @@ export const practiceSetsBook = {
                 "しょくぶつ",
                 "しきぶつ"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4343,7 +4343,7 @@ export const practiceSetsBook = {
                 "しにん",
                 "しじん"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4355,7 +4355,7 @@ export const practiceSetsBook = {
                 "つんだ",
                 "ふんだ"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4367,7 +4367,7 @@ export const practiceSetsBook = {
                 "じゃま",
                 "さいあく"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4379,7 +4379,7 @@ export const practiceSetsBook = {
                 "ちいき",
                 "じいき"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4415,7 +4415,7 @@ export const practiceSetsBook = {
                 "暗易",
                 "安易"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4427,7 +4427,7 @@ export const practiceSetsBook = {
                 "購造",
                 "講造"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4439,7 +4439,7 @@ export const practiceSetsBook = {
                 "放って",
                 "払って"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4451,7 +4451,7 @@ export const practiceSetsBook = {
                 "余る",
                 "甘る"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4463,7 +4463,7 @@ export const practiceSetsBook = {
                 "経験",
                 "治験"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4475,7 +4475,7 @@ export const practiceSetsBook = {
                 "働作",
                 "動作"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4487,7 +4487,7 @@ export const practiceSetsBook = {
                 "ペース",
                 "スタイル"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4499,7 +4499,7 @@ export const practiceSetsBook = {
                 "伝達",
                 "流行"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4523,7 +4523,7 @@ export const practiceSetsBook = {
                 "ふるえて",
                 "ひえて"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4535,7 +4535,7 @@ export const practiceSetsBook = {
                 "最多",
                 "最高"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4547,7 +4547,7 @@ export const practiceSetsBook = {
                 "負けて",
                 "認めて"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4559,7 +4559,7 @@ export const practiceSetsBook = {
                 "インク",
                 "セット"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4571,7 +4571,7 @@ export const practiceSetsBook = {
                 "向き",
                 "沿い"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4583,7 +4583,7 @@ export const practiceSetsBook = {
                 "調節",
                 "改定"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4595,7 +4595,7 @@ export const practiceSetsBook = {
                 "ちゃんと",
                 "急に"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4607,7 +4607,7 @@ export const practiceSetsBook = {
                 "金銭",
                 "物価"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4619,7 +4619,7 @@ export const practiceSetsBook = {
                 "あまりない",
                 "どこにもない"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4655,7 +4655,7 @@ export const practiceSetsBook = {
                 "仲がよい",
                 "仲が悪い"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4667,7 +4667,7 @@ export const practiceSetsBook = {
                 "平凡な",
                 "不思議な"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4685,7 +4685,7 @@ export const practiceSetsBook = {
               "options": [
                 "よごれたシャツを洗濯機でふいた。 2 テーブルが汚いので、すぐに<u>ふいて</u>ください。 3 客が来るので、部屋を掃除機で<u>ふかなければなりません</u>。 4 落ちているごみをごみ箱に<u>ふいてください。</u>"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4694,7 +4694,7 @@ export const practiceSetsBook = {
               "options": [
                 "景色にヒントをつけて、写真をとりました。 2 よい<u>ヒント</u>を与えられ、この会社に入ることができました。 3 この店では、500円以上買い物しないと<u>ヒント</u>がつきません。 4 この問題は難しすぎるので、解くための<u>ヒントをください。</u>"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4703,7 +4703,7 @@ export const practiceSetsBook = {
               "options": [
                 "今日は私の誕生日なので、お見舞いをもらった。 2 日本では結婚式の<u>お見舞い</u>に、何をあげればいいですか。 3 夜遅くまで勉強していたら、母が<u>お見舞い</u>を持って来てくれた。 4 病院に入院している同僚に、<u>お見舞いを持って行った。</u>"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -4712,7 +4712,7 @@ export const practiceSetsBook = {
               "options": [
                 "この部屋はそうじをしたばかりなので、おしゃれです。 2 あの人は頭はいいが、<u>おしゃれ</u>なところがある。 3 祖母は今年80歳になるが、今でもとても<u>おしゃれ</u>だ。 4 授業中に友だちと<u>おしゃれしていて、先生に注意されてしまった。</u>"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             }
           ]
@@ -4730,7 +4730,7 @@ export const practiceSetsBook = {
                 "でも",
                 "しか"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -4742,7 +4742,7 @@ export const practiceSetsBook = {
                 "ほど",
                 "よう"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -4754,7 +4754,7 @@ export const practiceSetsBook = {
                 "よりも",
                 "はより"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -4766,7 +4766,7 @@ export const practiceSetsBook = {
                 "通りに",
                 "そうに"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -4778,7 +4778,7 @@ export const practiceSetsBook = {
                 "に沿って",
                 "を通じて"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -4790,7 +4790,7 @@ export const practiceSetsBook = {
                 "し",
                 "して"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -4826,7 +4826,7 @@ export const practiceSetsBook = {
                 "おかえりになって",
                 "おいでになって"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -4838,7 +4838,7 @@ export const practiceSetsBook = {
                 "見ました",
                 "見えました"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -4850,7 +4850,7 @@ export const practiceSetsBook = {
                 "すぎますから",
                 "すぎませんので"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -4862,7 +4862,7 @@ export const practiceSetsBook = {
                 "汚れづらいので",
                 "汚れにくいので"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -4874,7 +4874,7 @@ export const practiceSetsBook = {
                 "こわがられないでいて",
                 "こわがらないで"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -4886,7 +4886,7 @@ export const practiceSetsBook = {
                 "作る",
                 "晩ごはんを"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -4910,7 +4910,7 @@ export const practiceSetsBook = {
                 "仕事が",
                 "としても"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -4922,7 +4922,7 @@ export const practiceSetsBook = {
                 "とうとう",
                 "話し合った"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -4939,7 +4939,7 @@ export const practiceSetsBook = {
                 "(並び替え: 3 とうとう -> 4 話し合った -> 1 上で -> 2 別れる)",
                 "(並び替え: 4 最も -> 1 関する -> 2 資料 -> 3 新しい)"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -4951,7 +4951,7 @@ export const practiceSetsBook = {
                 "すら",
                 "さえ"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -4963,7 +4963,7 @@ export const practiceSetsBook = {
                 "a もし / b だったのだ",
                 "a もしかしたら / b だということだ"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -4987,7 +4987,7 @@ export const practiceSetsBook = {
                 "名前を変えずにいた",
                 "名前が変わっていた"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -4999,7 +4999,7 @@ export const practiceSetsBook = {
                 "祈りたいにすぎない",
                 "祈りたいものだ"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             }
           ]
@@ -5024,7 +5024,7 @@ export const practiceSetsBook = {
                 "とんで",
                 "さけんで"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5048,7 +5048,7 @@ export const practiceSetsBook = {
                 "つうこう",
                 "つうごう"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5060,7 +5060,7 @@ export const practiceSetsBook = {
                 "くたびれて",
                 "おそれて"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5072,7 +5072,7 @@ export const practiceSetsBook = {
                 "へん",
                 "けん"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5084,7 +5084,7 @@ export const practiceSetsBook = {
                 "ちせい",
                 "ちのう"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5096,7 +5096,7 @@ export const practiceSetsBook = {
                 "おおよう",
                 "たよう"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5120,7 +5120,7 @@ export const practiceSetsBook = {
                 "不満",
                 "未満"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5168,7 +5168,7 @@ export const practiceSetsBook = {
                 "口外",
                 "校外"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5180,7 +5180,7 @@ export const practiceSetsBook = {
                 "家賃",
                 "屋賃"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5192,7 +5192,7 @@ export const practiceSetsBook = {
                 "ストレス",
                 "ニュアンス"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5204,7 +5204,7 @@ export const practiceSetsBook = {
                 "変革",
                 "変身"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5216,7 +5216,7 @@ export const practiceSetsBook = {
                 "面接",
                 "応対"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5240,7 +5240,7 @@ export const practiceSetsBook = {
                 "長所",
                 "短所"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5252,7 +5252,7 @@ export const practiceSetsBook = {
                 "曲がって",
                 "離れて"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5264,7 +5264,7 @@ export const practiceSetsBook = {
                 "立てかける",
                 "作り置く"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5276,7 +5276,7 @@ export const practiceSetsBook = {
                 "料",
                 "値"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5288,7 +5288,7 @@ export const practiceSetsBook = {
                 "整備",
                 "編集"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5300,7 +5300,7 @@ export const practiceSetsBook = {
                 "関係",
                 "熱中"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5312,7 +5312,7 @@ export const practiceSetsBook = {
                 "地味",
                 "誠実"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5324,7 +5324,7 @@ export const practiceSetsBook = {
                 "優しい",
                 "冷たい"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5336,7 +5336,7 @@ export const practiceSetsBook = {
                 "二度と",
                 "少しも"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5348,7 +5348,7 @@ export const practiceSetsBook = {
                 "借りた",
                 "貸した"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5360,7 +5360,7 @@ export const practiceSetsBook = {
                 "みんな一緒に",
                 "全部まとめて"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5372,7 +5372,7 @@ export const practiceSetsBook = {
                 "助言",
                 "心配"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5390,7 +5390,7 @@ export const practiceSetsBook = {
               "options": [
                 "コンサートの終わりに何度もアンケートがあって、盛り上がった。 2 大学生活についての<u>アンケート</u>に質問した。 3 運動不足なので、友だちと<u>アンケート</u>をしに行った。 4 クラス全員に<u>アンケートを取って、やり方を決めた。</u>"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5399,7 +5399,7 @@ export const practiceSetsBook = {
               "options": [
                 "買い物のとき、レジでお金を配った。 2 テスト用紙を全員に<u>配って</u>ください。 3 きのうは母の誕生日だったので、母にプレゼントを<u>配りました</u>。 4 このパソコンは、作動が早く<u>配られている。</u>"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5408,7 +5408,7 @@ export const practiceSetsBook = {
               "options": [
                 "うちの子どもは、クラスのそうじの係だ。 2 田中さんと鈴木さんは<u>係</u>がよくない。 3 これは、野菜に見えますが、果物の<u>係</u>です。 4 私の<u>係は、会社員です。</u>"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5417,7 +5417,7 @@ export const practiceSetsBook = {
               "options": [
                 "今年は、新しい仕事に挑戦してみたい。 2 強い選手とテニスの<u>挑戦</u>をして、負けた。 3 人と出会う<u>挑戦</u>は、多ければ多いほどいい。 4 あの2人は仲が悪くて、いつも<u>挑戦している。</u>"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             }
           ]
@@ -5435,7 +5435,7 @@ export const practiceSetsBook = {
                 "し",
                 "まで"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -5447,7 +5447,7 @@ export const practiceSetsBook = {
                 "ある",
                 "どの"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -5459,7 +5459,7 @@ export const practiceSetsBook = {
                 "ことを",
                 "ことは"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -5495,7 +5495,7 @@ export const practiceSetsBook = {
                 "できない",
                 "かぎらない"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -5507,7 +5507,7 @@ export const practiceSetsBook = {
                 "出発しようと",
                 "出発するのは"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -5519,7 +5519,7 @@ export const practiceSetsBook = {
                 "申しました",
                 "申し上げました"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -5543,7 +5543,7 @@ export const practiceSetsBook = {
                 "言わざるが得ない",
                 "言わざるを得ない"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -5579,7 +5579,7 @@ export const practiceSetsBook = {
                 "払うはめになった",
                 "払わせるようにした"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -5591,7 +5591,7 @@ export const practiceSetsBook = {
                 "ある",
                 "やってみて"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -5603,7 +5603,7 @@ export const practiceSetsBook = {
                 "ようでしたら",
                 "ごらんに"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -5615,7 +5615,7 @@ export const practiceSetsBook = {
                 "上",
                 "ので"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -5627,7 +5627,7 @@ export const practiceSetsBook = {
                 "好きだ",
                 "わけ"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -5644,7 +5644,7 @@ export const practiceSetsBook = {
                 "(並び替え: 3 好きだ -> 1 という -> 2 では -> 4 わけ)",
                 "(並び替え: 4 に -> 1 反する -> 3 こと -> 2 だけ)"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "grammar-reading"
             },
             {
@@ -5656,7 +5656,7 @@ export const practiceSetsBook = {
                 "a からといって / b 満足です",
                 "a にもかかわらず / b 現状です"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
               "sectionType": "grammar-reading"
             },
             {
@@ -5668,7 +5668,7 @@ export const practiceSetsBook = {
                 "こちらからの",
                 "あちらからの"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             },
             {
@@ -5692,7 +5692,7 @@ export const practiceSetsBook = {
                 "以上の",
                 "以降の"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
@@ -5709,7 +5709,7 @@ export const practiceSetsBook = {
                 "(以上の)",
                 "(お待ちいたしております)"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             }
           ]
@@ -5734,7 +5734,7 @@ export const practiceSetsBook = {
                 "かざって",
                 "あらって"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5746,7 +5746,7 @@ export const practiceSetsBook = {
                 "きゃくし",
                 "きゃくじ"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5758,7 +5758,7 @@ export const practiceSetsBook = {
                 "ぬま",
                 "たき"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5782,7 +5782,7 @@ export const practiceSetsBook = {
                 "おくしょう",
                 "おくじょう"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5794,7 +5794,7 @@ export const practiceSetsBook = {
                 "とうか",
                 "とうが"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5806,7 +5806,7 @@ export const practiceSetsBook = {
                 "し",
                 "じ"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5818,7 +5818,7 @@ export const practiceSetsBook = {
                 "かいてん",
                 "かいでん"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5830,7 +5830,7 @@ export const practiceSetsBook = {
                 "基測",
                 "規測"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5842,7 +5842,7 @@ export const practiceSetsBook = {
                 "友情",
                 "真情"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5854,7 +5854,7 @@ export const practiceSetsBook = {
                 "結んだ",
                 "結んだ"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5866,7 +5866,7 @@ export const practiceSetsBook = {
                 "主に",
                 "思に"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5878,7 +5878,7 @@ export const practiceSetsBook = {
                 "常識",
                 "知識"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5902,7 +5902,7 @@ export const practiceSetsBook = {
                 "チェンジ",
                 "チャンス"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5914,7 +5914,7 @@ export const practiceSetsBook = {
                 "対立",
                 "分別"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5926,7 +5926,7 @@ export const practiceSetsBook = {
                 "移転",
                 "報告"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5938,7 +5938,7 @@ export const practiceSetsBook = {
                 "終えて",
                 "投げて"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5950,7 +5950,7 @@ export const practiceSetsBook = {
                 "家",
                 "屋"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5962,7 +5962,7 @@ export const practiceSetsBook = {
                 "置いて",
                 "投げて"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5974,7 +5974,7 @@ export const practiceSetsBook = {
                 "マイナス",
                 "ショック"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -5986,7 +5986,7 @@ export const practiceSetsBook = {
                 "見聞き",
                 "見送り"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -6010,7 +6010,7 @@ export const practiceSetsBook = {
                 "さっぱり",
                 "ぐったり"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -6022,7 +6022,7 @@ export const practiceSetsBook = {
                 "地味",
                 "派手"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -6046,7 +6046,7 @@ export const practiceSetsBook = {
                 "期待する",
                 "感動する"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -6058,7 +6058,7 @@ export const practiceSetsBook = {
                 "離れて",
                 "戻ってきて"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -6070,7 +6070,7 @@ export const practiceSetsBook = {
                 "とても人気がある",
                 "交通が便利だ"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -6082,7 +6082,7 @@ export const practiceSetsBook = {
                 "勉強ができる",
                 "他人にきびしい"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -6094,7 +6094,7 @@ export const practiceSetsBook = {
                 "やぶれた紙をセロテープでつつみました。",
                 "雪が山の頂上をつつんでいる。"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -6106,7 +6106,7 @@ export const practiceSetsBook = {
                 "電車の中にさいふをこぼしてしまい、後で取りに行った。",
                 "シャツにコーヒーをこぼしたので、すぐに着替えた。"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {
@@ -6146,7 +6146,7 @@ export const practiceSetsBook = {
                 "<u>2</u>",
                 "<u>3</u>"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "sectionType": "vocabulary-kanji"
             },
             {

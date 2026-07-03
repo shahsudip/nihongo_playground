@@ -206,29 +206,18 @@ async function run() {
         const grammarQs = parseQuestions(grammarText, globalQId);
         globalQId += grammarQs.length;
 
-        let manualAnswers = {};
-        try {
-            manualAnswers = JSON.parse(readFileSync('shin_mon_answers.json', 'utf8'));
-        } catch (e) {}
-
         // Map answers
         let localAnswerIndex = 0;
         for (let q of vocabQs) {
             q.sectionType = 'vocabulary-kanji';
-            if (manualAnswers[q.id] !== undefined) {
-                q.correctIndex = manualAnswers[q.id];
-                localAnswerIndex++; // advance to keep in sync if needed
-            } else if (localAnswerIndex < answerMap.length) {
+            if (localAnswerIndex < answerMap.length) {
                 q.correctIndex = answerMap[localAnswerIndex] - 1;
                 localAnswerIndex++;
             }
         }
         for (let q of grammarQs) {
             q.sectionType = 'grammar-reading';
-            if (manualAnswers[q.id] !== undefined) {
-                q.correctIndex = manualAnswers[q.id];
-                localAnswerIndex++; // advance
-            } else if (localAnswerIndex < answerMap.length) {
+            if (localAnswerIndex < answerMap.length) {
                 q.correctIndex = answerMap[localAnswerIndex] - 1;
                 localAnswerIndex++;
             }
