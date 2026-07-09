@@ -1,10 +1,6 @@
 export const practiceSetsBook = {
   "id": "jlpt-n3-practice-sets",
   "title": "JLPT N3 Practice Sets",
-  "description": "Practice questions covering Kanji, Vocabulary, and Grammar.",
-  "level": "N3",
-  "category": "Mixed Practice",
-  "totalQuestions": 774,
   "sets": [
     {
       "id": "set-1",
@@ -25,7 +21,8 @@ export const practiceSetsBook = {
                 "しずんで"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 2,
@@ -37,7 +34,8 @@ export const practiceSetsBook = {
                 "ぶじ"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 3,
@@ -49,7 +47,8 @@ export const practiceSetsBook = {
                 "どうき"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 4,
@@ -61,7 +60,8 @@ export const practiceSetsBook = {
                 "きて"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 5,
@@ -73,7 +73,8 @@ export const practiceSetsBook = {
                 "げん"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 6,
@@ -85,7 +86,8 @@ export const practiceSetsBook = {
                 "まっすぐ"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 7,
@@ -97,7 +99,8 @@ export const practiceSetsBook = {
                 "はこ"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 8,
@@ -109,7 +112,8 @@ export const practiceSetsBook = {
                 "かいぎょう"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 9,
@@ -121,7 +125,8 @@ export const practiceSetsBook = {
                 "広福"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 10,
@@ -133,7 +138,8 @@ export const practiceSetsBook = {
                 "改善"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 11,
@@ -145,7 +151,8 @@ export const practiceSetsBook = {
                 "沼って"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 12,
@@ -157,7 +164,8 @@ export const practiceSetsBook = {
                 "課す"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 13,
@@ -169,7 +177,8 @@ export const practiceSetsBook = {
                 "機会"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 14,
@@ -181,7 +190,8 @@ export const practiceSetsBook = {
                 "物毎"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 15,
@@ -193,7 +203,8 @@ export const practiceSetsBook = {
                 "カルチャー"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 16,
@@ -205,7 +216,8 @@ export const practiceSetsBook = {
                 "中止"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 17,
@@ -217,7 +229,8 @@ export const practiceSetsBook = {
                 "構成"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 18,
@@ -229,7 +242,8 @@ export const practiceSetsBook = {
                 "こいで"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 19,
@@ -241,7 +255,8 @@ export const practiceSetsBook = {
                 "以降"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 20,
@@ -253,7 +268,8 @@ export const practiceSetsBook = {
                 "返って"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 21,
@@ -265,7 +281,8 @@ export const practiceSetsBook = {
                 "コミュニケーション"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 22,
@@ -277,7 +294,8 @@ export const practiceSetsBook = {
                 "見返し"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 23,
@@ -289,7 +307,8 @@ export const practiceSetsBook = {
                 "遠慮"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 24,
@@ -301,7 +320,8 @@ export const practiceSetsBook = {
                 "どこか"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 25,
@@ -313,7 +333,8 @@ export const practiceSetsBook = {
                 "殺人"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 26,
@@ -325,7 +346,8 @@ export const practiceSetsBook = {
                 "やさしい"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 27,
@@ -337,7 +359,8 @@ export const practiceSetsBook = {
                 "痛い"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 28,
@@ -349,7 +372,8 @@ export const practiceSetsBook = {
                 "前よりもっと"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 29,
@@ -361,7 +385,8 @@ export const practiceSetsBook = {
                 "考えて発表した"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 30,
@@ -373,7 +398,8 @@ export const practiceSetsBook = {
                 "言わなくてもよい"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 31,
@@ -385,7 +411,8 @@ export const practiceSetsBook = {
                 "練習のために、先生が言ったことを何度も<u>くり返し</u>た。"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 32,
@@ -397,7 +424,8 @@ export const practiceSetsBook = {
                 "働きすぎたために、病気が<u>生えました</u>。"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 33,
@@ -409,7 +437,8 @@ export const practiceSetsBook = {
                 "この車は、デザインだけではなく<u>トレーニング</u>がとてもよい。"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 34,
@@ -420,8 +449,9 @@ export const practiceSetsBook = {
                 "病院に入院して、<u>努力</u>を回復した。",
                 "ぜひとも<u>努力</u>のよい社員がほしい。"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 35,
@@ -432,8 +462,9 @@ export const practiceSetsBook = {
                 "私は友だちが少ないので、友だちの多い人が<u>なつかしい</u>。",
                 "みんなの前で失敗して、とても<u>なつかしかった</u>。"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 0,
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             }
           ]
         },
@@ -450,8 +481,9 @@ export const practiceSetsBook = {
                 "いまにも",
                 "いまをも"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 37,
@@ -462,8 +494,9 @@ export const practiceSetsBook = {
                 "にしろ",
                 "こそ"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 38,
@@ -474,8 +507,9 @@ export const practiceSetsBook = {
                 "ばかりに",
                 "ところに"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 39,
@@ -486,8 +520,9 @@ export const practiceSetsBook = {
                 "後を",
                 "後で"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 3,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 40,
@@ -498,8 +533,9 @@ export const practiceSetsBook = {
                 "もらった",
                 "もらえ"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 41,
@@ -510,8 +546,9 @@ export const practiceSetsBook = {
                 "行ったの",
                 "行こうの"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 42,
@@ -522,8 +559,9 @@ export const practiceSetsBook = {
                 "下がった",
                 "下がって"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 43,
@@ -534,8 +572,9 @@ export const practiceSetsBook = {
                 "返す",
                 "返して"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 44,
@@ -546,20 +585,22 @@ export const practiceSetsBook = {
                 "上はを",
                 "上から"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 45,
-              "questionText": "客「これは、どこの服ですか。」",
+              "questionText": "客「これは、どこの服ですか。」\r\n店員「この服は、フランスのもので（ ）。」",
               "options": [
                 "おります",
                 "います",
                 "いらっしゃいます",
                 "ございます"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 3,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 46,
@@ -570,8 +611,9 @@ export const practiceSetsBook = {
                 "うかがわれました",
                 "うかがいました"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 47,
@@ -582,8 +624,9 @@ export const practiceSetsBook = {
                 "会いに行ったのに",
                 "会いに行ったため"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 48,
@@ -594,20 +637,22 @@ export const practiceSetsBook = {
                 "酒を飲むこともあるだろう",
                 "酒を飲むこともないだろう"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 3,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 49,
-              "questionText": "池田「では明日、午前11時に駅前で会いましょう。」",
+              "questionText": "池田「では明日、午前11時に駅前で会いましょう。」\r\n大木「午前中は用があるので、＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿。」",
               "options": [
                 "いただけますか",
                 "午後に",
                 "して",
                 "待ち合わせは"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 50,
@@ -618,8 +663,9 @@ export const practiceSetsBook = {
                 "輝く",
                 "開けると"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 51,
@@ -630,8 +676,9 @@ export const practiceSetsBook = {
                 "引き受けて",
                 "この仕事を"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 52,
@@ -642,8 +689,9 @@ export const practiceSetsBook = {
                 "うちに",
                 "の"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 53,
@@ -654,68 +702,79 @@ export const practiceSetsBook = {
                 "今までで",
                 "最高"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 3,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 54,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "あんな",
                 "あのような",
                 "あった",
                 "ある"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 3,
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "紙の手帳\r\nパソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。\r\n[19] 書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。\r\n[20] 、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が [21] 。女性向けの手帳は以前から売っているが、今年は種類がたくさんあるようだ。 [22-a] 、ピンクなど明るいきれいな色のものや、かわいいデザインのもの、自分の好きなペンを取り付けられるタイプ、手帳を止めるバンドやリボンが付いたもの [22-b] 、若い女性が好みそうなものがそろっている。\r\n私も仕事で手帳をよく使うので、このように選ぶ楽しみが増えたことはうれしい。だが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、 [23] 。どのような手帳がほしいか考えてから、売り場へ向かおうと思う。"
             },
             {
               "id": 55,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "今からは",
                 "今までは",
                 "次からは",
                 "次までは"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "紙の手帳\r\nパソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。\r\n[19] 書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。\r\n[20] 、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が [21] 。女性向けの手帳は以前から売っているが、今年は種類がたくさんあるようだ。 [22-a] 、ピンクなど明るいきれいな色のものや、かわいいデザインのもの、自分の好きなペンを取り付けられるタイプ、手帳を止めるバンドやリボンが付いたもの [22-b] 、若い女性が好みそうなものがそろっている。\r\n私も仕事で手帳をよく使うので、このように選ぶ楽しみが増えたことはうれしい。だが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、 [23] 。どのような手帳がほしいか考えてから、売り場へ向かおうと思う。"
             },
             {
               "id": 56,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "増えていそうだ",
                 "増えているそうだ",
                 "増えてありそうだ",
                 "増えてあるそうだ"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "紙の手帳\r\nパソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。\r\n[19] 書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。\r\n[20] 、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が [21] 。女性向けの手帳は以前から売っているが、今年は種類がたくさんあるようだ。 [22-a] 、ピンクなど明るいきれいな色のものや、かわいいデザインのもの、自分の好きなペンを取り付けられるタイプ、手帳を止めるバンドやリボンが付いたもの [22-b] 、若い女性が好みそうなものがそろっている。\r\n私も仕事で手帳をよく使うので、このように選ぶ楽しみが増えたことはうれしい。だが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、 [23] 。どのような手帳がほしいか考えてから、売り場へ向かおうと思う。"
             },
             {
               "id": 57,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "a なぜなら ／ b だから",
                 "a ところが ／ b がないので",
                 "a たとえば ／ b など",
                 "a たぶん ／ b であれば"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "紙の手帳\r\nパソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。\r\n[19] 書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。\r\n[20] 、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が [21] 。女性向けの手帳は以前から売っているが、今年は種類がたくさんあるようだ。 [22-a] 、ピンクなど明るいきれいな色のものや、かわいいデザインのもの、自分の好きなペンを取り付けられるタイプ、手帳を止めるバンドやリボンが付いたもの [22-b] 、若い女性が好みそうなものがそろっている。\r\n私も仕事で手帳をよく使うので、このように選ぶ楽しみが増えたことはうれしい。だが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、 [23] 。どのような手帳がほしいか考えてから、売り場へ向かおうと思う。"
             },
             {
               "id": 58,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "急に決めた",
                 "急に決まるだろう",
                 "すぐに決められなかった",
-                "すぐに決められなかっただろう<u>問題 1 (Vocabulary / Kanji Reading)</u>2"
+                "すぐに決められなかっただろう"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "紙の手帳\r\nパソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。\r\n[19] 書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。\r\n[20] 、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が [21] 。女性向けの手帳は以前から売っているが、今年は種類がたくさんあるようだ。 [22-a] 、ピンクなど明るいきれいな色のものや、かわいいデザインのもの、自分の好きなペンを取り付けられるタイプ、手帳を止めるバンドやリボンが付いたもの [22-b] 、若い女性が好みそうなものがそろっている。\r\n私も仕事で手帳をよく使うので、このように選ぶ楽しみが増えたことはうれしい。だが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、 [23] 。どのような手帳がほしいか考えてから、売り場へ向かおうと思う。"
             }
           ]
         }
@@ -740,7 +799,8 @@ export const practiceSetsBook = {
                 "さいて"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 60,
@@ -752,7 +812,8 @@ export const practiceSetsBook = {
                 "ふうづう"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 61,
@@ -764,7 +825,8 @@ export const practiceSetsBook = {
                 "しゃくきん"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 62,
@@ -776,7 +838,8 @@ export const practiceSetsBook = {
                 "のこって"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 63,
@@ -788,7 +851,8 @@ export const practiceSetsBook = {
                 "はら"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 64,
@@ -800,7 +864,8 @@ export const practiceSetsBook = {
                 "きだく"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 65,
@@ -812,7 +877,8 @@ export const practiceSetsBook = {
                 "らんざつ"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 66,
@@ -824,7 +890,8 @@ export const practiceSetsBook = {
                 "とうば"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 67,
@@ -836,7 +903,8 @@ export const practiceSetsBook = {
                 "事由"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 68,
@@ -848,7 +916,8 @@ export const practiceSetsBook = {
                 "感激"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 69,
@@ -860,7 +929,8 @@ export const practiceSetsBook = {
                 "逃げて"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 70,
@@ -872,7 +942,8 @@ export const practiceSetsBook = {
                 "基める"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 71,
@@ -884,7 +955,8 @@ export const practiceSetsBook = {
                 "服雑"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 72,
@@ -896,7 +968,8 @@ export const practiceSetsBook = {
                 "文言"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 73,
@@ -908,7 +981,8 @@ export const practiceSetsBook = {
                 "スピーチ"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 74,
@@ -920,7 +994,8 @@ export const practiceSetsBook = {
                 "応用"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 75,
@@ -932,7 +1007,8 @@ export const practiceSetsBook = {
                 "意志"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 76,
@@ -944,7 +1020,8 @@ export const practiceSetsBook = {
                 "守って"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 77,
@@ -956,7 +1033,8 @@ export const practiceSetsBook = {
                 "同級"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 78,
@@ -968,7 +1046,8 @@ export const practiceSetsBook = {
                 "贈る"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 79,
@@ -980,7 +1059,8 @@ export const practiceSetsBook = {
                 "ドロップ"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 80,
@@ -992,7 +1072,8 @@ export const practiceSetsBook = {
                 "手続き"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 81,
@@ -1004,7 +1085,8 @@ export const practiceSetsBook = {
                 "許可"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 82,
@@ -1016,7 +1098,8 @@ export const practiceSetsBook = {
                 "そういえば"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 83,
@@ -1028,7 +1111,8 @@ export const practiceSetsBook = {
                 "平和"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 84,
@@ -1040,7 +1124,8 @@ export const practiceSetsBook = {
                 "うるさい"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 85,
@@ -1052,7 +1137,8 @@ export const practiceSetsBook = {
                 "気が弱い"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 86,
@@ -1064,7 +1150,8 @@ export const practiceSetsBook = {
                 "絵を描く"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 87,
@@ -1076,7 +1163,8 @@ export const practiceSetsBook = {
                 "時間に正確だ"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 88,
@@ -1088,7 +1176,8 @@ export const practiceSetsBook = {
                 "かたい"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 89,
@@ -1100,7 +1189,8 @@ export const practiceSetsBook = {
                 "心配なことがあると、いつもカフェで1人、<u>思い出した</u>。"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 90,
@@ -1112,7 +1202,8 @@ export const practiceSetsBook = {
                 "手紙は、気持ちを<u>こめて</u>書きなさい。"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 91,
@@ -1124,7 +1215,8 @@ export const practiceSetsBook = {
                 "<u>ルート</u>をしたまま、おふろに入らないでください。"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 92,
@@ -1136,7 +1228,8 @@ export const practiceSetsBook = {
                 "私は、そうじより料理のほうが<u>得意</u>です。"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 93,
@@ -1145,10 +1238,11 @@ export const practiceSetsBook = {
                 "スポーツも勉強もできる友人が<u>うらやましい</u>。",
                 "悪い人にだまされ、とても<u>うらやましい</u>。",
                 "外国で1人で生活していたら、<u>うらやましく</u>なった。",
-                "母の作った料理が<u>うらやましい</u>ので、たくさん食べた。<u>Answer List</u>4"
+                "母の作った料理が<u>うらやましい</u>ので、たくさん食べた。<u>"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             }
           ]
         },
@@ -1166,7 +1260,8 @@ export const practiceSetsBook = {
                 "に"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 95,
@@ -1178,7 +1273,8 @@ export const practiceSetsBook = {
                 "あいだを"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 96,
@@ -1190,7 +1286,8 @@ export const practiceSetsBook = {
                 "中は"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 97,
@@ -1202,7 +1299,8 @@ export const practiceSetsBook = {
                 "ものがある"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 98,
@@ -1214,7 +1312,8 @@ export const practiceSetsBook = {
                 "上に"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 99,
@@ -1226,7 +1325,8 @@ export const practiceSetsBook = {
                 "前は"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 100,
@@ -1238,7 +1338,8 @@ export const practiceSetsBook = {
                 "うちまでに"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 101,
@@ -1250,7 +1351,8 @@ export const practiceSetsBook = {
                 "ひきかけ"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 102,
@@ -1262,11 +1364,12 @@ export const practiceSetsBook = {
                 "しなくては"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 103,
-              "questionText": "店長「明日から、もうバイトに来ないでください。」",
+              "questionText": "店長「明日から、もうバイトに来ないでください。」\r\n店員「えっ、（ ）ことですか。理由を教えてください。」",
               "options": [
                 "あのくらいの",
                 "どのくらいの",
@@ -1274,7 +1377,8 @@ export const practiceSetsBook = {
                 "どういう"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 104,
@@ -1286,11 +1390,12 @@ export const practiceSetsBook = {
                 "これくらい食べても"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 105,
-              "questionText": "加藤「週末、一緒に映画を見に行きませんか。」",
+              "questionText": "加藤「週末、一緒に映画を見に行きませんか。」\r\n高田「すみません。仕事がいそがしくて、映画を（ ）のです。」",
               "options": [
                 "見に行くことがない",
                 "見に行くことではない",
@@ -1298,7 +1403,8 @@ export const practiceSetsBook = {
                 "見に行くどころではない"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 106,
@@ -1310,11 +1416,12 @@ export const practiceSetsBook = {
                 "上手な人になりえない"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 107,
-              "questionText": "川上「次は、あの荷物を車に運んでください。」",
+              "questionText": "川上「次は、あの荷物を車に運んでください。」\r\n小池「さっきから、＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿。」",
               "options": [
                 "じゃありませんか",
                 "働いている",
@@ -1322,11 +1429,12 @@ export const practiceSetsBook = {
                 "私"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 108,
-              "questionText": "二木「お休みの日には、何をしていますか。」",
+              "questionText": "二木「お休みの日には、何をしていますか。」\r\n山本「そうですね。だいたいゴルフを ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿多いですね。」",
               "options": [
                 "して",
                 "ことが",
@@ -1334,11 +1442,12 @@ export const practiceSetsBook = {
                 "過ごして"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 109,
-              "questionText": "社員「社長、明日の会合に、＿＿＿＿ ＿＿＿＿ ＿＿<u>★</u>＿＿ ＿＿＿＿教えていただけますか。」",
+              "questionText": "社員「社長、明日の会合に、＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿教えていただけますか。」\r\n社長「そうだね。3時ごろ行くよ。」",
               "options": [
                 "ご予定",
                 "いらっしゃる",
@@ -1346,11 +1455,12 @@ export const practiceSetsBook = {
                 "何時ごろ"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 110,
-              "questionText": "さすが森川さんは、学者＿＿＿＿ ＿＿＿＿ ＿＿<u>★</u>＿＿ ＿＿＿＿を知っている。",
+              "questionText": "さすが森川さんは、学者＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿を知っている。",
               "options": [
                 "あって",
                 "こと",
@@ -1358,11 +1468,12 @@ export const practiceSetsBook = {
                 "だけ"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 111,
-              "questionText": "ある論文によると、今後は、人間に＿＿＿＿ ＿＿＿＿ ＿＿<u>★</u>＿＿ ＿＿＿＿増えそうだ。",
+              "questionText": "ある論文によると、今後は、人間に＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿増えそうだ。",
               "options": [
                 "仕事が",
                 "ロボットが",
@@ -1370,11 +1481,12 @@ export const practiceSetsBook = {
                 "かわって"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 112,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "なるところに",
                 "なったように",
@@ -1382,11 +1494,13 @@ export const practiceSetsBook = {
                 "なるとしたら"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "大人になれば\r\n子どものころ、自分の親と同じ年齢になれば、もっと立派な人間になれるのだろうと思っていた。だが、自分が「大人」であると思っていた年齢に19、成長できていない自分に驚く。\r\nたとえば、朝はいつまでも寝ていたいと思うのも、子どものころと同じだ。さらに、仕事が大変なときなど、何度も会社を休みたくなったりする。「風邪で熱が出たから」とうそをついて、本当に会社を休んだことも20。子どものころは、本当に熱があっても、学校へきちんと通っていたのに。また、にんじんやピーマンなど、子どものころきらいだった食べ物は、今でも21-a、料理に入っていると21-b。それなのに、自分の子どもには「好き嫌いをせずに、なんでも食べなさい」とえらそうにしかったりする。\r\n22さぼったり、うまくうそがつけるような大人になった今の自分の心は、子どものころの自分より成長するどころか、悪くなっているのかもしれない。23、自分の父や母も、昔は「大人」だと思っていたが、今の自分のように考え、「大人」になろうとがんばっていたのかと思うと、なんだかあたたかい気持ちになるのだ。"
             },
             {
               "id": 113,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "あるかないかわからない",
                 "めったにない",
@@ -1394,11 +1508,13 @@ export const practiceSetsBook = {
                 "あるはずがないのだ"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "大人になれば\r\n子どものころ、自分の親と同じ年齢になれば、もっと立派な人間になれるのだろうと思っていた。だが、自分が「大人」であると思っていた年齢に19、成長できていない自分に驚く。\r\nたとえば、朝はいつまでも寝ていたいと思うのも、子どものころと同じだ。さらに、仕事が大変なときなど、何度も会社を休みたくなったりする。「風邪で熱が出たから」とうそをついて、本当に会社を休んだことも20。子どものころは、本当に熱があっても、学校へきちんと通っていたのに。また、にんじんやピーマンなど、子どものころきらいだった食べ物は、今でも21-a、料理に入っていると21-b。それなのに、自分の子どもには「好き嫌いをせずに、なんでも食べなさい」とえらそうにしかったりする。\r\n22さぼったり、うまくうそがつけるような大人になった今の自分の心は、子どものころの自分より成長するどころか、悪くなっているのかもしれない。23、自分の父や母も、昔は「大人」だと思っていたが、今の自分のように考え、「大人」になろうとがんばっていたのかと思うと、なんだかあたたかい気持ちになるのだ。"
             },
             {
               "id": 114,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "a きらいだから ／ b 食べるようにしている",
                 "a きらいだから ／ b 食べないようにしている",
@@ -1406,11 +1522,13 @@ export const practiceSetsBook = {
                 "a 好きだから ／ b 食べないようにしている"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "大人になれば\r\n子どものころ、自分の親と同じ年齢になれば、もっと立派な人間になれるのだろうと思っていた。だが、自分が「大人」であると思っていた年齢に19、成長できていない自分に驚く。\r\nたとえば、朝はいつまでも寝ていたいと思うのも、子どものころと同じだ。さらに、仕事が大変なときなど、何度も会社を休みたくなったりする。「風邪で熱が出たから」とうそをついて、本当に会社を休んだことも20。子どものころは、本当に熱があっても、学校へきちんと通っていたのに。また、にんじんやピーマンなど、子どものころきらいだった食べ物は、今でも21-a、料理に入っていると21-b。それなのに、自分の子どもには「好き嫌いをせずに、なんでも食べなさい」とえらそうにしかったりする。\r\n22さぼったり、うまくうそがつけるような大人になった今の自分の心は、子どものころの自分より成長するどころか、悪くなっているのかもしれない。23、自分の父や母も、昔は「大人」だと思っていたが、今の自分のように考え、「大人」になろうとがんばっていたのかと思うと、なんだかあたたかい気持ちになるのだ。"
             },
             {
               "id": 115,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "そんなふうに",
                 "どんなふうに",
@@ -1418,19 +1536,23 @@ export const practiceSetsBook = {
                 "どんなような"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "大人になれば\r\n子どものころ、自分の親と同じ年齢になれば、もっと立派な人間になれるのだろうと思っていた。だが、自分が「大人」であると思っていた年齢に19、成長できていない自分に驚く。\r\nたとえば、朝はいつまでも寝ていたいと思うのも、子どものころと同じだ。さらに、仕事が大変なときなど、何度も会社を休みたくなったりする。「風邪で熱が出たから」とうそをついて、本当に会社を休んだことも20。子どものころは、本当に熱があっても、学校へきちんと通っていたのに。また、にんじんやピーマンなど、子どものころきらいだった食べ物は、今でも21-a、料理に入っていると21-b。それなのに、自分の子どもには「好き嫌いをせずに、なんでも食べなさい」とえらそうにしかったりする。\r\n22さぼったり、うまくうそがつけるような大人になった今の自分の心は、子どものころの自分より成長するどころか、悪くなっているのかもしれない。23、自分の父や母も、昔は「大人」だと思っていたが、今の自分のように考え、「大人」になろうとがんばっていたのかと思うと、なんだかあたたかい気持ちになるのだ。"
             },
             {
               "id": 116,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "ところが",
                 "つまり",
                 "または",
-                "そして<u>Answer List</u>2"
+                "そして"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "大人になれば\r\n子どものころ、自分の親と同じ年齢になれば、もっと立派な人間になれるのだろうと思っていた。だが、自分が「大人」であると思っていた年齢に19、成長できていない自分に驚く。\r\nたとえば、朝はいつまでも寝ていたいと思うのも、子どものころと同じだ。さらに、仕事が大変なときなど、何度も会社を休みたくなったりする。「風邪で熱が出たから」とうそをついて、本当に会社を休んだことも20。子どものころは、本当に熱があっても、学校へきちんと通っていたのに。また、にんじんやピーマンなど、子どものころきらいだった食べ物は、今でも21-a、料理に入っていると21-b。それなのに、自分の子どもには「好き嫌いをせずに、なんでも食べなさい」とえらそうにしかったりする。\r\n22さぼったり、うまくうそがつけるような大人になった今の自分の心は、子どものころの自分より成長するどころか、悪くなっているのかもしれない。23、自分の父や母も、昔は「大人」だと思っていたが、今の自分のように考え、「大人」になろうとがんばっていたのかと思うと、なんだかあたたかい気持ちになるのだ。"
             }
           ]
         }
@@ -1455,7 +1577,8 @@ export const practiceSetsBook = {
                 "ちって"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 118,
@@ -1467,7 +1590,8 @@ export const practiceSetsBook = {
                 "まんぞぐ"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 119,
@@ -1479,7 +1603,8 @@ export const practiceSetsBook = {
                 "きゅうこう"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 120,
@@ -1491,7 +1616,8 @@ export const practiceSetsBook = {
                 "いしき"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 121,
@@ -1503,7 +1629,8 @@ export const practiceSetsBook = {
                 "ざい"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 122,
@@ -1515,7 +1642,8 @@ export const practiceSetsBook = {
                 "こうくう"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 123,
@@ -1527,7 +1655,8 @@ export const practiceSetsBook = {
                 "みず"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 124,
@@ -1539,7 +1668,8 @@ export const practiceSetsBook = {
                 "ぎんじ"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 125,
@@ -1551,7 +1681,8 @@ export const practiceSetsBook = {
                 "広富"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 126,
@@ -1563,7 +1694,8 @@ export const practiceSetsBook = {
                 "暗記"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 127,
@@ -1575,7 +1707,8 @@ export const practiceSetsBook = {
                 "背えて"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 128,
@@ -1587,7 +1720,8 @@ export const practiceSetsBook = {
                 "央う"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 129,
@@ -1599,7 +1733,8 @@ export const practiceSetsBook = {
                 "興見"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 130,
@@ -1611,7 +1746,8 @@ export const practiceSetsBook = {
                 "婦夫"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 131,
@@ -1623,7 +1759,8 @@ export const practiceSetsBook = {
                 "ホームステイ"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 132,
@@ -1635,7 +1772,8 @@ export const practiceSetsBook = {
                 "熱中"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 133,
@@ -1647,7 +1785,8 @@ export const practiceSetsBook = {
                 "吹いて"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 134,
@@ -1659,7 +1798,8 @@ export const practiceSetsBook = {
                 "受けて"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 135,
@@ -1671,7 +1811,8 @@ export const practiceSetsBook = {
                 "正解"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 136,
@@ -1683,7 +1824,8 @@ export const practiceSetsBook = {
                 "くるくる"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 137,
@@ -1695,7 +1837,8 @@ export const practiceSetsBook = {
                 "コメント"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 138,
@@ -1707,7 +1850,8 @@ export const practiceSetsBook = {
                 "手抜き"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 139,
@@ -1719,7 +1863,8 @@ export const practiceSetsBook = {
                 "感謝"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 140,
@@ -1731,7 +1876,8 @@ export const practiceSetsBook = {
                 "はっきり"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 141,
@@ -1743,7 +1889,8 @@ export const practiceSetsBook = {
                 "健康"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 142,
@@ -1755,7 +1902,8 @@ export const practiceSetsBook = {
                 "否定 的"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 143,
@@ -1767,7 +1915,8 @@ export const practiceSetsBook = {
                 "切断して"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 144,
@@ -1779,7 +1928,8 @@ export const practiceSetsBook = {
                 "そのままにした"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 145,
@@ -1791,7 +1941,8 @@ export const practiceSetsBook = {
                 "だいたい"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 146,
@@ -1803,7 +1954,8 @@ export const practiceSetsBook = {
                 "温厚だ"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 147,
@@ -1815,7 +1967,8 @@ export const practiceSetsBook = {
                 "会社に着いてから、さいふがないことに<u>気に入った</u>。"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 148,
@@ -1827,7 +1980,8 @@ export const practiceSetsBook = {
                 "顔をよく<u>まぜて</u>から、外に出かけましょう。"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 149,
@@ -1839,7 +1993,8 @@ export const practiceSetsBook = {
                 "とても<u>現実</u>とは思えないニュースを聞いた。"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 150,
@@ -1851,7 +2006,8 @@ export const practiceSetsBook = {
                 "私の好きな<u>おかず</u>は、ごはんよりもパンです。"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 151,
@@ -1860,10 +2016,11 @@ export const practiceSetsBook = {
                 "私の夢は、先生に<u>できあがる</u>ことです。",
                 "エレベーターで10階まで<u>できあがって</u>ください。",
                 "階段を<u>できあがる</u>と、私の家があります。",
-                "料理が<u>できあがった</u>ので、食べてください。<u>Answer List</u>4"
+                "料理が<u>できあがった</u>ので、食べてください。<u>"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             }
           ]
         },
@@ -1873,279 +2030,307 @@ export const practiceSetsBook = {
           "questions": [
             {
               "id": 152,
-              "questionText": "夏から秋（ ）、いろいろな祭りがひらかれる。",
+              "questionText": "黒い雲が出ていて、（ ）雨が降りそうです。",
               "options": [
-                "をかけて",
-                "にかけて",
-                "でかけて",
-                "とかけて"
+                "いまが",
+                "いまで",
+                "いまにも",
+                "いまをも"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 153,
-              "questionText": "森さんはこの会社にエンジニア（ ）採用された。",
+              "questionText": "肉がきらいなら、魚（ ）はどうですか。",
               "options": [
-                "として",
-                "といって",
-                "だと",
-                "だとして"
+                "ならでは",
+                "なんか",
+                "にしろ",
+                "こそ"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 154,
-              "questionText": "山田さんはアメリカに住んでいた（ ）、英語の発音がきれいですね。",
+              "questionText": "私は、林さんに会う（ ）、すてきな人だと思います。",
               "options": [
-                "だけは",
                 "だけに",
-                "ところは",
+                "たびに",
+                "ばかりに",
                 "ところに"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 155,
-              "questionText": "家を出た（ ）、大雨が降ってきた。",
+              "questionText": "昼ごはんを食べた（ ）、おいしいコーヒーを飲みました。",
               "options": [
-                "たびに",
-                "とたん",
-                "ごとに",
-                "からには"
+                "後しか",
+                "後へと",
+                "後を",
+                "後で"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 156,
-              "questionText": "最近、そうじをしていないので、部屋がごみ（ ）だ。",
+              "questionText": "無駄づかいをしてしまい、給料を（ ）ばかりなのに、もうお金がない。",
               "options": [
-                "しか",
-                "気味",
-                "きり",
-                "だらけ"
+                "もらう",
+                "もらって",
+                "もらった",
+                "もらえ"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 157,
-              "questionText": "彼はしっかりしているので、（ ）ことはないでしょう。",
+              "questionText": "私は、友だちがだれもいないところへ（ ）はいやです。",
               "options": [
-                "心配し",
-                "心配しよう",
-                "心配しろ",
-                "心配する"
+                "行くの",
+                "行きの",
+                "行ったの",
+                "行こうの"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 158,
-              "questionText": "ラーメンを作ったので、（ ）食べてください。",
+              "questionText": "私の息子は、勉強をしないので、テストの点数が（ ）一方だ。",
               "options": [
-                "熱いうちで",
-                "熱いうちへ",
-                "熱いうちに",
-                "熱いうちが"
+                "下がり",
+                "下がる",
+                "下がった",
+                "下がって"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 159,
-              "questionText": "これは、2、3日前に先生から（ ）本です。",
+              "questionText": "人から借りたお金は、かならず（ ）べきだと思います。",
               "options": [
-                "お借りした",
-                "借りてあげた",
-                "借りてくださった",
-                "お借りになった"
+                "返し",
+                "返さ",
+                "返す",
+                "返して"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 160,
-              "questionText": "あの人は、まるで本当の家族（ ）かのように、私に優しかった。",
+              "questionText": "この仕事を終わらせた（ ）、次の仕事を始めよう。",
               "options": [
-                "だ",
-                "だろう",
-                "である",
-                "だったら"
+                "上へ",
+                "上で",
+                "上はを",
+                "上から"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 161,
-              "questionText": "そこに置いてあるパンは、私の（ ）です。",
+              "questionText": "客「これは、どこの服ですか。」\r\n店員「この服は、フランスのもので（ ）。」",
               "options": [
-                "食べきり",
-                "食べかけ",
-                "食べたまま",
-                "食べたばかり"
+                "おります",
+                "います",
+                "いらっしゃいます",
+                "ございます"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 162,
-              "questionText": "ご病気が（ ）を聞いて、安心しました。",
+              "questionText": "田中さんが若いころアメリカに住んでいたと（ ）が、本当ですか。",
               "options": [
-                "治ったということ",
-                "治ったというもの",
-                "治るというところ",
-                "治るというほど"
+                "お聞きしました",
+                "お聞きになりました",
+                "うかがわれました",
+                "うかがいました"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 163,
-              "questionText": "きのうは、大雨が（ ）、一日じゅう外でサッカーをしました。",
+              "questionText": "せっかく遠くまで（ ）、彼女に会えなかった。",
               "options": [
-                "降っていたからといって",
-                "降っていたからには",
-                "降っていたにもかかわらず",
-                "降っていたにしては"
+                "会いに行ったので",
+                "会いに行ったから",
+                "会いに行ったのに",
+                "会いに行ったため"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 164,
-              "questionText": "社長「みなさん、今は大変なときですが、社員一同、会社のために（ ）。」",
+              "questionText": "飲酒運転をして事故を起こしてしまい、これからは決して（ ）と誓った。",
               "options": [
-                "がんばるのではないですか",
-                "がんばったではありませんか",
-                "がんばらないのではないですか",
-                "がんばろうではありませんか"
+                "酒は飲まない",
+                "酒を飲めない",
+                "酒を飲むこともあるだろう",
+                "酒を飲むこともないだろう"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 165,
-              "questionText": "男の学生「これから、みんなでカラオケに行こうよ。」",
+              "questionText": "池田「では明日、午前11時に駅前で会いましょう。」\r\n大木「午前中は用があるので、＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿。」",
               "options": [
-                "いい",
-                "もらっても",
-                "帰らせて",
-                "もう"
+                "いただけますか",
+                "午後に",
+                "して",
+                "待ち合わせは"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 166,
-              "questionText": "少し遅れましたが、今から会場に ＿＿＿＿ ＿＿＿＿ ＿＿<u>★</u>＿＿ ＿＿＿＿いたしたします。",
+              "questionText": "部屋に入り、目の前の大きな ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿広がっていた。",
               "options": [
-                "ので",
-                "お願い",
-                "まいります",
-                "よろしく"
+                "海が",
+                "窓を",
+                "輝く",
+                "開けると"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 167,
-              "questionText": "この仕事をするのが、＿＿＿＿ ＿＿＿＿ ＿＿<u>★</u>＿＿ ＿＿＿＿努力を続ければ、いつかきっとできるようになると信じている。",
+              "questionText": "あなたが ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿助かるのですが。",
               "options": [
-                "とても",
-                "しても",
-                "たとえ",
-                "難しいと"
+                "くれれば",
+                "大変",
+                "引き受けて",
+                "この仕事を"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 168,
-              "questionText": "私のミスで、計画が失敗してしまったのだから、＿＿＿＿ ＿＿＿＿ ＿＿<u>★</u>＿＿ ＿＿＿＿と思い、すぐにメールを送った。",
+              "questionText": "とてもおなかがすいていたので、注文した料理を ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿、次の料理を注文した。",
               "options": [
-                "ない",
-                "あやまる",
-                "ほか",
-                "より"
+                "終わったか",
+                "終わらないか",
+                "うちに",
+                "の"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 169,
-              "questionText": "まわりから見ても、彼の彼女に＿＿＿＿ ＿＿＿＿ ＿＿<u>★</u>＿＿ ＿＿＿＿と思う。",
+              "questionText": "私の人生に ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿娘が生まれた日だ。",
               "options": [
-                "ひどい",
-                "ちょっと",
-                "対する",
-                "態度は"
+                "おける",
+                "日とは",
+                "今までで",
+                "最高"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 170,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
-                "a からして ／ b 表すことだ",
-                "a にしろ ／ b 表すものだ",
-                "a によると ／ b 表しているそうだ",
-                "a にかかわらず ／ b 表したわけだ"
+                "あんな",
+                "あのような",
+                "あった",
+                "ある"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "紙の手帳\r\nパソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。\r\n[19] 書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。\r\n[20] 、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が [21] 。女性向けの手帳は以前から売っているが、今年は種類がたくさんあるようだ。 [22-a] 、ピンクなど明るいきれいな色のものや、かわいいデザインのもの、自分の好きなペンを取り付けられるタイプ、手帳を止めるバンドやリボンが付いたもの [22-b] 、若い女性が好みそうなものがそろっている。\r\n私も仕事で手帳をよく使うので、このように選ぶ楽しみが増えたことはうれしい。だが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、 [23] 。どのような手帳がほしいか考えてから、売り場へ向かおうと思う。"
             },
             {
               "id": 171,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
-                "感じさせる",
-                "感じようとする",
-                "感じないでもない",
-                "感じがちな"
+                "今からは",
+                "今までは",
+                "次からは",
+                "次までは"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "紙の手帳\r\nパソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。\r\n[19] 書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。\r\n[20] 、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が [21] 。女性向けの手帳は以前から売っているが、今年は種類がたくさんあるようだ。 [22-a] 、ピンクなど明るいきれいな色のものや、かわいいデザインのもの、自分の好きなペンを取り付けられるタイプ、手帳を止めるバンドやリボンが付いたもの [22-b] 、若い女性が好みそうなものがそろっている。\r\n私も仕事で手帳をよく使うので、このように選ぶ楽しみが増えたことはうれしい。だが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、 [23] 。どのような手帳がほしいか考えてから、売り場へ向かおうと思う。"
             },
             {
               "id": 172,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
-                "にともなって",
-                "において",
-                "につれて",
-                "に対して"
+                "増えていそうだ",
+                "増えているそうだ",
+                "増えてありそうだ",
+                "増えてあるそうだ"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "紙の手帳\r\nパソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。\r\n[19] 書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。\r\n[20] 、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が [21] 。女性向けの手帳は以前から売っているが、今年は種類がたくさんあるようだ。 [22-a] 、ピンクなど明るいきれいな色のものや、かわいいデザインのもの、自分の好きなペンを取り付けられるタイプ、手帳を止めるバンドやリボンが付いたもの [22-b] 、若い女性が好みそうなものがそろっている。\r\n私も仕事で手帳をよく使うので、このように選ぶ楽しみが増えたことはうれしい。だが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、 [23] 。どのような手帳がほしいか考えてから、売り場へ向かおうと思う。"
             },
             {
               "id": 173,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
-                "市町村のキャラクター",
-                "このマークのキャラクター",
-                "新しいキャラクター",
-                "人気があるキャラクター"
+                "a なぜなら ／ b だから",
+                "a ところが ／ b がないので",
+                "a たとえば ／ b など",
+                "a たぶん ／ b であれば"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "紙の手帳\r\nパソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。\r\n[19] 書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。\r\n[20] 、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が [21] 。女性向けの手帳は以前から売っているが、今年は種類がたくさんあるようだ。 [22-a] 、ピンクなど明るいきれいな色のものや、かわいいデザインのもの、自分の好きなペンを取り付けられるタイプ、手帳を止めるバンドやリボンが付いたもの [22-b] 、若い女性が好みそうなものがそろっている。\r\n私も仕事で手帳をよく使うので、このように選ぶ楽しみが増えたことはうれしい。だが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、 [23] 。どのような手帳がほしいか考えてから、売り場へ向かおうと思う。"
             },
             {
               "id": 174,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
-                "つけられてほしい",
-                "つけてもいい",
-                "つけてみたい",
-                "つけてほしい<u>Answer List</u>2"
+                "急に決めた",
+                "急に決まるだろう",
+                "すぐに決められなかった",
+                "すぐに決められなかっただろう"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "紙の手帳\r\nパソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。\r\n[19] 書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。\r\n[20] 、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が [21] 。女性向けの手帳は以前から売っているが、今年は種類がたくさんあるようだ。 [22-a] 、ピンクなど明るいきれいな色のものや、かわいいデザインのもの、自分の好きなペンを取り付けられるタイプ、手帳を止めるバンドやリボンが付いたもの [22-b] 、若い女性が好みそうなものがそろっている。\r\n私も仕事で手帳をよく使うので、このように選ぶ楽しみが増えたことはうれしい。だが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、 [23] 。どのような手帳がほしいか考えてから、売り場へ向かおうと思う。"
             }
           ]
         }
@@ -2170,7 +2355,8 @@ export const practiceSetsBook = {
                 "とどいて"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 176,
@@ -2182,7 +2368,8 @@ export const practiceSetsBook = {
                 "てきどう"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 177,
@@ -2194,7 +2381,8 @@ export const practiceSetsBook = {
                 "でっちょう"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 178,
@@ -2206,7 +2394,8 @@ export const practiceSetsBook = {
                 "うたがう"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 179,
@@ -2218,7 +2407,8 @@ export const practiceSetsBook = {
                 "ゆうき"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 180,
@@ -2230,7 +2420,8 @@ export const practiceSetsBook = {
                 "りょうがえ"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 181,
@@ -2242,7 +2433,8 @@ export const practiceSetsBook = {
                 "はい"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 182,
@@ -2254,7 +2446,8 @@ export const practiceSetsBook = {
                 "てんじ"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 183,
@@ -2266,7 +2459,8 @@ export const practiceSetsBook = {
                 "総力"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 184,
@@ -2278,7 +2472,8 @@ export const practiceSetsBook = {
                 "集段"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 185,
@@ -2290,7 +2485,8 @@ export const practiceSetsBook = {
                 "議論"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 186,
@@ -2302,7 +2498,8 @@ export const practiceSetsBook = {
                 "歓えて"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 187,
@@ -2314,7 +2511,8 @@ export const practiceSetsBook = {
                 "複習"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 188,
@@ -2326,7 +2524,8 @@ export const practiceSetsBook = {
                 "手誠"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 189,
@@ -2338,7 +2537,8 @@ export const practiceSetsBook = {
                 "スケジュール"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 190,
@@ -2350,7 +2550,8 @@ export const practiceSetsBook = {
                 "払って"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 191,
@@ -2362,7 +2563,8 @@ export const practiceSetsBook = {
                 "流行"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 192,
@@ -2374,7 +2576,8 @@ export const practiceSetsBook = {
                 "病んで"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 193,
@@ -2386,7 +2589,8 @@ export const practiceSetsBook = {
                 "賛同"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 194,
@@ -2398,7 +2602,8 @@ export const practiceSetsBook = {
                 "乗り出して"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 195,
@@ -2410,7 +2615,8 @@ export const practiceSetsBook = {
                 "ショッピング"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 196,
@@ -2422,7 +2628,8 @@ export const practiceSetsBook = {
                 "見かけ"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 197,
@@ -2434,7 +2641,8 @@ export const practiceSetsBook = {
                 "調査"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 198,
@@ -2446,7 +2654,8 @@ export const practiceSetsBook = {
                 "きっと"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 199,
@@ -2458,7 +2667,8 @@ export const practiceSetsBook = {
                 "上等"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 200,
@@ -2470,7 +2680,8 @@ export const practiceSetsBook = {
                 "静かだ"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 201,
@@ -2482,7 +2693,8 @@ export const practiceSetsBook = {
                 "そうじして"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 202,
@@ -2494,7 +2706,8 @@ export const practiceSetsBook = {
                 "素直な"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 203,
@@ -2506,7 +2719,8 @@ export const practiceSetsBook = {
                 "学ぶところ"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 204,
@@ -2518,7 +2732,8 @@ export const practiceSetsBook = {
                 "最近出会った"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 205,
@@ -2530,7 +2745,8 @@ export const practiceSetsBook = {
                 "机の上に置いてある本を本棚に申し込んで<u>ください。</u>"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 206,
@@ -2542,7 +2758,8 @@ export const practiceSetsBook = {
                 "来年、新しい家を植えよう<u>と思います。</u>"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 207,
@@ -2554,7 +2771,8 @@ export const practiceSetsBook = {
                 "彼女の考え方は、とてもユニーク<u>でおもしろい。</u>"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 208,
@@ -2566,7 +2784,8 @@ export const practiceSetsBook = {
                 "1日で家を建てるなんて、まるで技術<u>のようだ。</u>"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 209,
@@ -2578,7 +2797,8 @@ export const practiceSetsBook = {
                 "彼女から、つらい<u>声で電話がかかってきた。</u>"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             }
           ]
         },
@@ -2596,7 +2816,8 @@ export const practiceSetsBook = {
                 "までに"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 211,
@@ -2608,7 +2829,8 @@ export const practiceSetsBook = {
                 "ばかり"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 212,
@@ -2620,7 +2842,8 @@ export const practiceSetsBook = {
                 "だけなら"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 213,
@@ -2632,7 +2855,8 @@ export const practiceSetsBook = {
                 "悪さで"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 214,
@@ -2644,7 +2868,8 @@ export const practiceSetsBook = {
                 "見たほど"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 215,
@@ -2656,7 +2881,8 @@ export const practiceSetsBook = {
                 "始め"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 216,
@@ -2668,7 +2894,8 @@ export const practiceSetsBook = {
                 "食べきりがない"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 217,
@@ -2680,7 +2907,8 @@ export const practiceSetsBook = {
                 "お帰りいたしました"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 218,
@@ -2692,11 +2920,12 @@ export const practiceSetsBook = {
                 "あり得た"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 219,
-              "questionText": "佐藤「高尾山に行ったんでしょ。込んでいなかった？」",
+              "questionText": "佐藤「高尾山に行ったんでしょ。込んでいなかった？」\r\n鈴木「ううん、（ ）人が少なくて、ゆっくり観光できたよ。」",
               "options": [
                 "思っていたよりも",
                 "思わなかったより",
@@ -2704,11 +2933,12 @@ export const practiceSetsBook = {
                 "思うほどには"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 220,
-              "questionText": "部長「もう時間が遅いので、仕事を終わりにして（ ）。」",
+              "questionText": "部長「もう時間が遅いので、仕事を終わりにして（ ）。」\r\n部下「はい、わかりました。」",
               "options": [
                 "帰ることもいいですよ",
                 "帰るだけですよ",
@@ -2716,7 +2946,8 @@ export const practiceSetsBook = {
                 "帰ったところですよ"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 221,
@@ -2728,7 +2959,8 @@ export const practiceSetsBook = {
                 "落ちようがない"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 222,
@@ -2740,11 +2972,12 @@ export const practiceSetsBook = {
                 "飲みたくてたまらない"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 223,
-              "questionText": "今日予定されていた運動会は、＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿なりました。</u>",
+              "questionText": "今日予定されていた運動会は、＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿なりました。",
               "options": [
                 "ため",
                 "延期に",
@@ -2752,11 +2985,12 @@ export const practiceSetsBook = {
                 "台風の"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 224,
-              "questionText": "中山「いつ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ ＿＿＿＿くれない？」</u>",
+              "questionText": "中山「いつ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ ＿＿＿＿くれない？」\r\n川口「そうだね。来週の金曜日に来てくれる？」",
               "options": [
                 "教えて",
                 "そこに",
@@ -2764,11 +2998,12 @@ export const practiceSetsBook = {
                 "行けば"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 225,
-              "questionText": "もし、友だちが1人もいなくても、私は ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ 幸せを感じることができます。</u>",
+              "questionText": "もし、友だちが1人もいなくても、私は ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ 幸せを感じることができます。",
               "options": [
                 "さえ",
                 "1冊の",
@@ -2776,11 +3011,12 @@ export const practiceSetsBook = {
                 "本"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 226,
-              "questionText": "刑事がその事件に ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ 別の事件が起こった。</u>",
+              "questionText": "刑事がその事件に ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ 別の事件が起こった。",
               "options": [
                 "最中に",
                 "調べている",
@@ -2788,11 +3024,12 @@ export const practiceSetsBook = {
                 "くわしく"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 227,
-              "questionText": "この町は、工業都市として大きく発展したが、それに ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ なっている。</u>",
+              "questionText": "この町は、工業都市として大きく発展したが、それに ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ なっている。",
               "options": [
                 "大きく",
                 "ともなう",
@@ -2800,11 +3037,12 @@ export const practiceSetsBook = {
                 "環境問題も"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 228,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "ないのではないだろうか",
                 "なくてもよいのだろうか",
@@ -2812,11 +3050,13 @@ export const practiceSetsBook = {
                 "あってもよいのだろうか"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "「時間がない」\r\n私たちは、「時間がない」とよく言う。しかし、本当に「時間がない」のだろうか。本当は「時間がある」のにいそがしいふりをしたり、自分をいそがしい状態にしていることも [19] 。\r\nたとえば、こんなことがあった。何日か前、私は仕事に行くために電車に乗った。急いでいたので、携帯電話も音楽プレーヤーも本もすべて忘れてしまった。いつもは、電車に [20] イヤフォンを耳に押し込み、かばんから本や新聞を取り出して、読むことにしている。携帯電話や携帯ゲームプレーヤーでゲームを始めることもある。[21] この日は何も持たずに電車に乗ってしまったので、何もすることがなくなってしまった。\r\n仕方がないので、電車に乗っているあいだ、何もしないで前の席に座る人の動作や窓の外をずっと見ていた。そうしたら、とてもリラックスすることができたのだ。[22] 、私たちには何もしない時間が必要なのかもしれない。私たちは、わざわざ [23] 用事を作り、生活をいそがしくしてしまっているような気がする。本当に「時間がない」のか考えてみるだけで、もっと充実した時間をとりもどすことができるのではないだろうか。"
             },
             {
               "id": 229,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "乗ったすえに",
                 "乗ったとたん",
@@ -2824,11 +3064,13 @@ export const practiceSetsBook = {
                 "乗ったばかりに"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "「時間がない」\r\n私たちは、「時間がない」とよく言う。しかし、本当に「時間がない」のだろうか。本当は「時間がある」のにいそがしいふりをしたり、自分をいそがしい状態にしていることも [19] 。\r\nたとえば、こんなことがあった。何日か前、私は仕事に行くために電車に乗った。急いでいたので、携帯電話も音楽プレーヤーも本もすべて忘れてしまった。いつもは、電車に [20] イヤフォンを耳に押し込み、かばんから本や新聞を取り出して、読むことにしている。携帯電話や携帯ゲームプレーヤーでゲームを始めることもある。[21] この日は何も持たずに電車に乗ってしまったので、何もすることがなくなってしまった。\r\n仕方がないので、電車に乗っているあいだ、何もしないで前の席に座る人の動作や窓の外をずっと見ていた。そうしたら、とてもリラックスすることができたのだ。[22] 、私たちには何もしない時間が必要なのかもしれない。私たちは、わざわざ [23] 用事を作り、生活をいそがしくしてしまっているような気がする。本当に「時間がない」のか考えてみるだけで、もっと充実した時間をとりもどすことができるのではないだろうか。"
             },
             {
               "id": 230,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "たとえば",
                 "または",
@@ -2836,11 +3078,13 @@ export const practiceSetsBook = {
                 "ところが"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "「時間がない」\r\n私たちは、「時間がない」とよく言う。しかし、本当に「時間がない」のだろうか。本当は「時間がある」のにいそがしいふりをしたり、自分をいそがしい状態にしていることも [19] 。\r\nたとえば、こんなことがあった。何日か前、私は仕事に行くために電車に乗った。急いでいたので、携帯電話も音楽プレーヤーも本もすべて忘れてしまった。いつもは、電車に [20] イヤフォンを耳に押し込み、かばんから本や新聞を取り出して、読むことにしている。携帯電話や携帯ゲームプレーヤーでゲームを始めることもある。[21] この日は何も持たずに電車に乗ってしまったので、何もすることがなくなってしまった。\r\n仕方がないので、電車に乗っているあいだ、何もしないで前の席に座る人の動作や窓の外をずっと見ていた。そうしたら、とてもリラックスすることができたのだ。[22] 、私たちには何もしない時間が必要なのかもしれない。私たちは、わざわざ [23] 用事を作り、生活をいそがしくしてしまっているような気がする。本当に「時間がない」のか考えてみるだけで、もっと充実した時間をとりもどすことができるのではないだろうか。"
             },
             {
               "id": 231,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "このことが示す通り",
                 "このことからはわからないが",
@@ -2848,19 +3092,23 @@ export const practiceSetsBook = {
                 "このことでよければ"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "「時間がない」\r\n私たちは、「時間がない」とよく言う。しかし、本当に「時間がない」のだろうか。本当は「時間がある」のにいそがしいふりをしたり、自分をいそがしい状態にしていることも [19] 。\r\nたとえば、こんなことがあった。何日か前、私は仕事に行くために電車に乗った。急いでいたので、携帯電話も音楽プレーヤーも本もすべて忘れてしまった。いつもは、電車に [20] イヤフォンを耳に押し込み、かばんから本や新聞を取り出して、読むことにしている。携帯電話や携帯ゲームプレーヤーでゲームを始めることもある。[21] この日は何も持たずに電車に乗ってしまったので、何もすることがなくなってしまった。\r\n仕方がないので、電車に乗っているあいだ、何もしないで前の席に座る人の動作や窓の外をずっと見ていた。そうしたら、とてもリラックスすることができたのだ。[22] 、私たちには何もしない時間が必要なのかもしれない。私たちは、わざわざ [23] 用事を作り、生活をいそがしくしてしまっているような気がする。本当に「時間がない」のか考えてみるだけで、もっと充実した時間をとりもどすことができるのではないだろうか。"
             },
             {
               "id": 232,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "してもいい",
                 "しなくてもいい",
                 "したほうがいい",
-                "すればいい"
+                "すればいい 最終"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "「時間がない」\r\n私たちは、「時間がない」とよく言う。しかし、本当に「時間がない」のだろうか。本当は「時間がある」のにいそがしいふりをしたり、自分をいそがしい状態にしていることも [19] 。\r\nたとえば、こんなことがあった。何日か前、私は仕事に行くために電車に乗った。急いでいたので、携帯電話も音楽プレーヤーも本もすべて忘れてしまった。いつもは、電車に [20] イヤフォンを耳に押し込み、かばんから本や新聞を取り出して、読むことにしている。携帯電話や携帯ゲームプレーヤーでゲームを始めることもある。[21] この日は何も持たずに電車に乗ってしまったので、何もすることがなくなってしまった。\r\n仕方がないので、電車に乗っているあいだ、何もしないで前の席に座る人の動作や窓の外をずっと見ていた。そうしたら、とてもリラックスすることができたのだ。[22] 、私たちには何もしない時間が必要なのかもしれない。私たちは、わざわざ [23] 用事を作り、生活をいそがしくしてしまっているような気がする。本当に「時間がない」のか考えてみるだけで、もっと充実した時間をとりもどすことができるのではないだろうか。"
             }
           ]
         }
@@ -2885,7 +3133,8 @@ export const practiceSetsBook = {
                 "ゆるして"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 234,
@@ -2897,7 +3146,8 @@ export const practiceSetsBook = {
                 "うんよう"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 235,
@@ -2909,7 +3159,8 @@ export const practiceSetsBook = {
                 "ごんご"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 236,
@@ -2921,7 +3172,8 @@ export const practiceSetsBook = {
                 "ものか"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 237,
@@ -2933,7 +3185,8 @@ export const practiceSetsBook = {
                 "かぎ"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 238,
@@ -2945,7 +3198,8 @@ export const practiceSetsBook = {
                 "しゅうぎ"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 239,
@@ -2957,7 +3211,8 @@ export const practiceSetsBook = {
                 "ちゅうてん"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 240,
@@ -2969,7 +3224,8 @@ export const practiceSetsBook = {
                 "がんしん"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 241,
@@ -2981,7 +3237,8 @@ export const practiceSetsBook = {
                 "偉大"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 242,
@@ -2993,7 +3250,8 @@ export const practiceSetsBook = {
                 "動作"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 243,
@@ -3005,7 +3263,8 @@ export const practiceSetsBook = {
                 "貸えた"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 244,
@@ -3017,7 +3276,8 @@ export const practiceSetsBook = {
                 "曲がる"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 245,
@@ -3029,7 +3289,8 @@ export const practiceSetsBook = {
                 "到達"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 246,
@@ -3041,7 +3302,8 @@ export const practiceSetsBook = {
                 "道山"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 247,
@@ -3053,7 +3315,8 @@ export const practiceSetsBook = {
                 "シーン"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 248,
@@ -3065,7 +3328,8 @@ export const practiceSetsBook = {
                 "ついに"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 249,
@@ -3077,7 +3341,8 @@ export const practiceSetsBook = {
                 "けち"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 250,
@@ -3089,7 +3354,8 @@ export const practiceSetsBook = {
                 "やめた"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 251,
@@ -3101,7 +3367,8 @@ export const practiceSetsBook = {
                 "所在"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 252,
@@ -3113,7 +3380,8 @@ export const practiceSetsBook = {
                 "願って"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 253,
@@ -3125,7 +3393,8 @@ export const practiceSetsBook = {
                 "メッセージ"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 254,
@@ -3137,7 +3406,8 @@ export const practiceSetsBook = {
                 "ごと"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 255,
@@ -3149,7 +3419,8 @@ export const practiceSetsBook = {
                 "製作"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 256,
@@ -3161,7 +3432,8 @@ export const practiceSetsBook = {
                 "常に"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 257,
@@ -3173,7 +3445,8 @@ export const practiceSetsBook = {
                 "無理"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 258,
@@ -3185,7 +3458,8 @@ export const practiceSetsBook = {
                 "下手だ"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 259,
@@ -3197,7 +3471,8 @@ export const practiceSetsBook = {
                 "外出して"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 260,
@@ -3209,7 +3484,8 @@ export const practiceSetsBook = {
                 "ふいて"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 261,
@@ -3221,7 +3497,8 @@ export const practiceSetsBook = {
                 "太っている"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 262,
@@ -3233,7 +3510,8 @@ export const practiceSetsBook = {
                 "とても優しい"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 263,
@@ -3245,7 +3523,8 @@ export const practiceSetsBook = {
                 "テレビを消して、勉強に集中する。"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 264,
@@ -3257,7 +3536,8 @@ export const practiceSetsBook = {
                 "テニスにあきたので、プロのテニス選手を目指すことにした。"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 265,
@@ -3269,7 +3549,8 @@ export const practiceSetsBook = {
                 "田口さんと山川さんは仲が悪いので、ときどき付き合いをする。"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 266,
@@ -3281,7 +3562,8 @@ export const practiceSetsBook = {
                 "この本は、内容がとてもじゃまで、理解できない。"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 267,
@@ -3293,7 +3575,8 @@ export const practiceSetsBook = {
                 "会社に行く前に、私の家に寄ってください。"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             }
           ]
         },
@@ -3303,15 +3586,16 @@ export const practiceSetsBook = {
           "questions": [
             {
               "id": 268,
-              "questionText": "吉田「あなたも一緒に食事に行く（ ）。」",
+              "questionText": "吉田「あなたも一緒に食事に行く（ ）。」\r\n山本「うん、行くよ。」",
               "options": [
                 "わ",
                 "の",
                 "し",
                 "のに"
               ],
-              "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 269,
@@ -3323,7 +3607,8 @@ export const practiceSetsBook = {
                 "以上も"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 270,
@@ -3334,8 +3619,9 @@ export const practiceSetsBook = {
                 "限りで",
                 "まで"
               ],
-              "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 271,
@@ -3346,8 +3632,9 @@ export const practiceSetsBook = {
                 "この",
                 "あの"
               ],
-              "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 272,
@@ -3358,8 +3645,9 @@ export const practiceSetsBook = {
                 "ばかりだ",
                 "通りだ"
               ],
-              "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 273,
@@ -3370,8 +3658,9 @@ export const practiceSetsBook = {
                 "ほどに",
                 "わけに"
               ],
-              "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 274,
@@ -3382,8 +3671,9 @@ export const practiceSetsBook = {
                 "かまいます",
                 "かまいません"
               ],
-              "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 3,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 275,
@@ -3394,8 +3684,9 @@ export const practiceSetsBook = {
                 "準備して",
                 "準備し"
               ],
-              "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "correctIndex": 3,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 276,
@@ -3406,12 +3697,13 @@ export const practiceSetsBook = {
                 "会うまいとしたら",
                 "会えるとしたら"
               ],
-              "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 277,
-              "questionText": "鈴木「森先生が学校をやめるんだって。」",
+              "questionText": "鈴木「森先生が学校をやめるんだって。」\r\n川村「ちっとも（ ）よ。」",
               "options": [
                 "知っていた",
                 "知らなかった",
@@ -3419,7 +3711,8 @@ export const practiceSetsBook = {
                 "知らないはずだ"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 278,
@@ -3431,7 +3724,8 @@ export const practiceSetsBook = {
                 "お読みになりましたか"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 279,
@@ -3442,8 +3736,9 @@ export const practiceSetsBook = {
                 "楽しみでなります",
                 "楽しみでなりません"
               ],
-              "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 280,
@@ -3455,127 +3750,143 @@ export const practiceSetsBook = {
                 "来るようなら"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 281,
-              "questionText": "入社してから、課長が ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ 、ほかの社員より早く仕事を覚えることができました。</u>",
+              "questionText": "入社してから、課長が ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ 、ほかの社員より早く仕事を覚えることができました。",
               "options": [
                 "教えて",
                 "おかげで",
                 "親切に",
                 "くださった"
               ],
-              "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 282,
-              "questionText": "悪いけど、さっき ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ くれる。</u>",
+              "questionText": "悪いけど、さっき ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ くれる。",
               "options": [
                 "言って",
                 "言っていた",
                 "もう一度",
                 "ことを"
               ],
-              "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 283,
-              "questionText": "この店の料理は、味も ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ と思います。</u>",
+              "questionText": "この店の料理は、味も ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ と思います。",
               "options": [
                 "きれいで",
                 "よければ",
                 "最高だ",
                 "見た目も"
               ],
-              "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 284,
-              "questionText": "長い旅から帰って、両親の顔を ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ 涙がこぼれてきた。</u>",
+              "questionText": "長い旅から帰って、両親の顔を ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ 涙がこぼれてきた。",
               "options": [
                 "ぽろぽろ",
                 "とたん",
                 "見た",
                 "一目"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 285,
-              "questionText": "明日の午前10時から、大学のホールで、＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ です。</u>",
+              "questionText": "明日の午前10時から、大学のホールで、＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ です。",
               "options": [
                 "講演が",
                 "予定",
                 "林先生による",
                 "行われる"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 3,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 286,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "に限り",
                 "に限らず",
                 "からして",
                 "からすると"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "「新聞の保存のしかた」\r\n私は、いろいろな情報を得るため、日本語の新聞 [19] 、英字新聞も読むようにしています。これは、もう10年続けている習慣です。このことにより、情報を得るだけでなく、英語の勉強にもなっています。長い間読んでできた [20-a] 、最近では最初のページからざっと目を通すだけで、おおよその内容を [20-b] 。\r\nところが問題が1つあります。それは、増えていく新聞を、どうやってわかりやすく整理して保存するかということです。毎週英字新聞を買うので、重ねてそのままにしておけば、もし古い新聞をもう一度読みたくなったときに、どこにあるかわからなくなってしまいます。\r\n新聞を読むのが大好きな私にとって、古い新聞を捨てるということは [21] 。そのためいろいろやってみて、最近 [22] この問題を解決する方法を見つけました。それは、年と月で新聞をわけて箱に入れて保存しておくというやり方です。簡単な方法ですが、結局これがもっとも効率のよい保存方法で、すぐに新聞を取り出せるようになりました。\r\n[23] ことには、わくわくするような楽しさがあるのです。"
             },
             {
               "id": 287,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "a からには / b 理解しようと思います",
                 "a ばかりに / b 理解できなくなりました",
                 "a おかげで / b 理解できるようになりました",
                 "a せいで / b 理解することができます"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "「新聞の保存のしかた」\r\n私は、いろいろな情報を得るため、日本語の新聞 [19] 、英字新聞も読むようにしています。これは、もう10年続けている習慣です。このことにより、情報を得るだけでなく、英語の勉強にもなっています。長い間読んでできた [20-a] 、最近では最初のページからざっと目を通すだけで、おおよその内容を [20-b] 。\r\nところが問題が1つあります。それは、増えていく新聞を、どうやってわかりやすく整理して保存するかということです。毎週英字新聞を買うので、重ねてそのままにしておけば、もし古い新聞をもう一度読みたくなったときに、どこにあるかわからなくなってしまいます。\r\n新聞を読むのが大好きな私にとって、古い新聞を捨てるということは [21] 。そのためいろいろやってみて、最近 [22] この問題を解決する方法を見つけました。それは、年と月で新聞をわけて箱に入れて保存しておくというやり方です。簡単な方法ですが、結局これがもっとも効率のよい保存方法で、すぐに新聞を取り出せるようになりました。\r\n[23] ことには、わくわくするような楽しさがあるのです。"
             },
             {
               "id": 288,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "考えません",
                 "考えさせません",
                 "考えられません",
                 "考えさせられません"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "「新聞の保存のしかた」\r\n私は、いろいろな情報を得るため、日本語の新聞 [19] 、英字新聞も読むようにしています。これは、もう10年続けている習慣です。このことにより、情報を得るだけでなく、英語の勉強にもなっています。長い間読んでできた [20-a] 、最近では最初のページからざっと目を通すだけで、おおよその内容を [20-b] 。\r\nところが問題が1つあります。それは、増えていく新聞を、どうやってわかりやすく整理して保存するかということです。毎週英字新聞を買うので、重ねてそのままにしておけば、もし古い新聞をもう一度読みたくなったときに、どこにあるかわからなくなってしまいます。\r\n新聞を読むのが大好きな私にとって、古い新聞を捨てるということは [21] 。そのためいろいろやってみて、最近 [22] この問題を解決する方法を見つけました。それは、年と月で新聞をわけて箱に入れて保存しておくというやり方です。簡単な方法ですが、結局これがもっとも効率のよい保存方法で、すぐに新聞を取り出せるようになりました。\r\n[23] ことには、わくわくするような楽しさがあるのです。"
             },
             {
               "id": 289,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "だんだん",
                 "ますます",
                 "なかなか",
                 "とうとう"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 3,
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "「新聞の保存のしかた」\r\n私は、いろいろな情報を得るため、日本語の新聞 [19] 、英字新聞も読むようにしています。これは、もう10年続けている習慣です。このことにより、情報を得るだけでなく、英語の勉強にもなっています。長い間読んでできた [20-a] 、最近では最初のページからざっと目を通すだけで、おおよその内容を [20-b] 。\r\nところが問題が1つあります。それは、増えていく新聞を、どうやってわかりやすく整理して保存するかということです。毎週英字新聞を買うので、重ねてそのままにしておけば、もし古い新聞をもう一度読みたくなったときに、どこにあるかわからなくなってしまいます。\r\n新聞を読むのが大好きな私にとって、古い新聞を捨てるということは [21] 。そのためいろいろやってみて、最近 [22] この問題を解決する方法を見つけました。それは、年と月で新聞をわけて箱に入れて保存しておくというやり方です。簡単な方法ですが、結局これがもっとも効率のよい保存方法で、すぐに新聞を取り出せるようになりました。\r\n[23] ことには、わくわくするような楽しさがあるのです。"
             },
             {
               "id": 290,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "現在の新聞を見る",
                 "過去の新聞を見る",
                 "現在の新聞を保存する",
-                "過去の新聞を保存する"
+                "過去の新聞を保存する 最終"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 3,
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "「新聞の保存のしかた」\r\n私は、いろいろな情報を得るため、日本語の新聞 [19] 、英字新聞も読むようにしています。これは、もう10年続けている習慣です。このことにより、情報を得るだけでなく、英語の勉強にもなっています。長い間読んでできた [20-a] 、最近では最初のページからざっと目を通すだけで、おおよその内容を [20-b] 。\r\nところが問題が1つあります。それは、増えていく新聞を、どうやってわかりやすく整理して保存するかということです。毎週英字新聞を買うので、重ねてそのままにしておけば、もし古い新聞をもう一度読みたくなったときに、どこにあるかわからなくなってしまいます。\r\n新聞を読むのが大好きな私にとって、古い新聞を捨てるということは [21] 。そのためいろいろやってみて、最近 [22] この問題を解決する方法を見つけました。それは、年と月で新聞をわけて箱に入れて保存しておくというやり方です。簡単な方法ですが、結局これがもっとも効率のよい保存方法で、すぐに新聞を取り出せるようになりました。\r\n[23] ことには、わくわくするような楽しさがあるのです。"
             }
           ]
         }
@@ -3592,7 +3903,7 @@ export const practiceSetsBook = {
           "questions": [
             {
               "id": 291,
-              "questionText": "箱が壊れました。",
+              "questionText": "箱が<u>壊れ</u>ました。",
               "options": [
                 "われ",
                 "おれ",
@@ -3600,11 +3911,12 @@ export const practiceSetsBook = {
                 "はなれ"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 292,
-              "questionText": "各地で雨が降り始めました。",
+              "questionText": "<u>各地</u>で雨が降り始めました。",
               "options": [
                 "かくじ",
                 "かくち",
@@ -3612,11 +3924,12 @@ export const practiceSetsBook = {
                 "きゃくち"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 293,
-              "questionText": "あの店の主人は働き者だ。",
+              "questionText": "あの店の<u>主人</u>は働き者だ。",
               "options": [
                 "しゅにん",
                 "じゅにん",
@@ -3624,11 +3937,12 @@ export const practiceSetsBook = {
                 "じゅじん"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 294,
-              "questionText": "このシャツは、もう洗ってあります。",
+              "questionText": "このシャツは、もう<u>洗って</u>あります。",
               "options": [
                 "きって",
                 "さわって",
@@ -3636,11 +3950,12 @@ export const practiceSetsBook = {
                 "あらって"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 295,
-              "questionText": "アパートは通学に不便なところにある。",
+              "questionText": "アパートは通学に<u>不便</u>なところにある。",
               "options": [
                 "ふべん",
                 "ふだん",
@@ -3648,11 +3963,12 @@ export const practiceSetsBook = {
                 "ふしん"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 296,
-              "questionText": "久しぶりに仲間が集まった。",
+              "questionText": "久しぶりに<u>仲間</u>が集まった。",
               "options": [
                 "ながま",
                 "なかま",
@@ -3660,11 +3976,12 @@ export const practiceSetsBook = {
                 "ちゅうげん"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 297,
-              "questionText": "あの人は、肌がきれいだ。",
+              "questionText": "あの人は、<u>肌</u>がきれいだ。",
               "options": [
                 "ゆび",
                 "ひふ",
@@ -3672,11 +3989,12 @@ export const practiceSetsBook = {
                 "つめ"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 298,
-              "questionText": "書類を郵送しておきました。",
+              "questionText": "書類を<u>郵送</u>しておきました。",
               "options": [
                 "はっそう",
                 "はいそう",
@@ -3684,11 +4002,12 @@ export const practiceSetsBook = {
                 "ゆうそう"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 299,
-              "questionText": "彼は、ふせいな取引を禁じる。",
+              "questionText": "彼は、<u>ふせい</u>な取引を禁じる。",
               "options": [
                 "不生",
                 "不性",
@@ -3696,11 +4015,12 @@ export const practiceSetsBook = {
                 "不成"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 300,
-              "questionText": "長いきゅうかを取る。",
+              "questionText": "長い<u>きゅうか</u>を取る。",
               "options": [
                 "休憩",
                 "休息",
@@ -3708,11 +4028,12 @@ export const practiceSetsBook = {
                 "休暇"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 301,
-              "questionText": "親にたのんで、車を買ってもらった。",
+              "questionText": "親に<u>たのんで</u>、車を買ってもらった。",
               "options": [
                 "頼んで",
                 "願んで",
@@ -3720,11 +4041,12 @@ export const practiceSetsBook = {
                 "希んで"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 302,
-              "questionText": "生活でこまることは何ですか。",
+              "questionText": "生活で<u>こまる</u>ことは何ですか。",
               "options": [
                 "苦る",
                 "迷る",
@@ -3732,11 +4054,12 @@ export const practiceSetsBook = {
                 "困る"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 303,
-              "questionText": "ホテルにとまることにした。",
+              "questionText": "ホテルに<u>とまる</u>ことにした。",
               "options": [
                 "止まる",
                 "留まる",
@@ -3744,11 +4067,12 @@ export const practiceSetsBook = {
                 "泊まる"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 304,
-              "questionText": "敵とみかたにわかれて争う。",
+              "questionText": "敵と<u>みかた</u>にわかれて争う。",
               "options": [
                 "見方",
                 "味方",
@@ -3756,7 +4080,8 @@ export const practiceSetsBook = {
                 "味形"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 305,
@@ -3768,7 +4093,8 @@ export const practiceSetsBook = {
                 "ジャンル"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 306,
@@ -3780,7 +4106,8 @@ export const practiceSetsBook = {
                 "返答"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 307,
@@ -3792,7 +4119,8 @@ export const practiceSetsBook = {
                 "担当"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 308,
@@ -3804,7 +4132,8 @@ export const practiceSetsBook = {
                 "遊んで"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 309,
@@ -3816,7 +4145,8 @@ export const practiceSetsBook = {
                 "万一"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 310,
@@ -3828,7 +4158,8 @@ export const practiceSetsBook = {
                 "にげなくても"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 311,
@@ -3840,7 +4171,8 @@ export const practiceSetsBook = {
                 "トラブル"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 312,
@@ -3852,7 +4184,8 @@ export const practiceSetsBook = {
                 "切り"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 313,
@@ -3864,7 +4197,8 @@ export const practiceSetsBook = {
                 "発展"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 314,
@@ -3876,7 +4210,8 @@ export const practiceSetsBook = {
                 "いちいち"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 315,
@@ -3888,11 +4223,12 @@ export const practiceSetsBook = {
                 "不調"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 316,
-              "questionText": "この本は、とてもやさしい。",
+              "questionText": "この本は、とても<u>やさしい</u>。",
               "options": [
                 "安い",
                 "高い",
@@ -3900,23 +4236,25 @@ export const practiceSetsBook = {
                 "難しい"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 317,
-              "questionText": "彼女は、電車の中でささやいた。",
+              "questionText": "彼女は、電車の中で<u>ささやいた</u>。",
               "options": [
                 "大きな声で話した",
                 "小さな声で話した",
                 "たくさん眠った",
                 "少し眠った"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 318,
-              "questionText": "私のことは、あまり気にしないでください。",
+              "questionText": "私のことは、あまり<u>気にしないで</u>ください。",
               "options": [
                 "怒らないで",
                 "笑わないで",
@@ -3924,11 +4262,12 @@ export const practiceSetsBook = {
                 "驚かないで"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 319,
-              "questionText": "先生は子どもたちをしかった。",
+              "questionText": "先生は子どもたちを<u>しかった</u>。",
               "options": [
                 "命令した",
                 "監督した",
@@ -3936,11 +4275,12 @@ export const practiceSetsBook = {
                 "評価した"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 320,
-              "questionText": "あの人は、とてもていねいに話す。",
+              "questionText": "あの人は、とても<u>ていねいに</u>話す。",
               "options": [
                 "大きな声で",
                 "親切そうに",
@@ -3948,7 +4288,8 @@ export const practiceSetsBook = {
                 "礼儀正しく"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 321,
@@ -3960,7 +4301,8 @@ export const practiceSetsBook = {
                 "テレビを消して、勉強に集中する。"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 322,
@@ -3972,7 +4314,8 @@ export const practiceSetsBook = {
                 "テニスにあきたので、プロのテニス選手を目指すことにした。"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 323,
@@ -3984,7 +4327,8 @@ export const practiceSetsBook = {
                 "田口さんと山川さんは仲が悪いので、ときどき付き合いをする。"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 324,
@@ -3996,7 +4340,8 @@ export const practiceSetsBook = {
                 "この本は、内容がとてもじゃまで、理解できない。"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 325,
@@ -4008,7 +4353,8 @@ export const practiceSetsBook = {
                 "会社に行く前に、私の家に寄ってください。"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             }
           ]
         },
@@ -4026,7 +4372,8 @@ export const practiceSetsBook = {
                 "きり"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 327,
@@ -4038,7 +4385,8 @@ export const practiceSetsBook = {
                 "ごとに"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 328,
@@ -4050,7 +4398,8 @@ export const practiceSetsBook = {
                 "これ"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 329,
@@ -4062,11 +4411,12 @@ export const practiceSetsBook = {
                 "わけがない"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 330,
-              "questionText": "高橋「山田さん、英語がお上手ですね。」",
+              "questionText": "高橋「山田さん、英語がお上手ですね。」\r\n山田「いいえ、（ ）上手じゃありません。」",
               "options": [
                 "めったに",
                 "たいして",
@@ -4074,7 +4424,8 @@ export const practiceSetsBook = {
                 "ほんの"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 331,
@@ -4086,7 +4437,8 @@ export const practiceSetsBook = {
                 "加えたら"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 332,
@@ -4098,7 +4450,8 @@ export const practiceSetsBook = {
                 "吸って"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 333,
@@ -4110,11 +4463,12 @@ export const practiceSetsBook = {
                 "いただきました"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 334,
-              "questionText": "社員「社長の来月の予定を教えていただけますか。」",
+              "questionText": "社員「社長の来月の予定を教えていただけますか。」\r\n課長「もうしわけありませんが、社長の予定は（ ）。」",
               "options": [
                 "わかります",
                 "わかりました",
@@ -4122,7 +4476,8 @@ export const practiceSetsBook = {
                 "わかりかねました"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 335,
@@ -4134,7 +4489,8 @@ export const practiceSetsBook = {
                 "ほどになっている"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 336,
@@ -4146,7 +4502,8 @@ export const practiceSetsBook = {
                 "落ちるところに決まっている"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 337,
@@ -4158,11 +4515,12 @@ export const practiceSetsBook = {
                 "吸ってはいけません"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 338,
-              "questionText": "店員「いらっしゃいませ。」",
+              "questionText": "店員「いらっしゃいませ。」\r\n客「すみません。この服を（ ）。」",
               "options": [
                 "着てみたらいいでしょうか",
                 "着てみるのもいいですか",
@@ -4170,11 +4528,12 @@ export const practiceSetsBook = {
                 "着てみてもいいですか"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 339,
-              "questionText": "チョコレートやケーキなど ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ 、太ってしまった。</u>",
+              "questionText": "チョコレートやケーキなど ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ 、太ってしまった。",
               "options": [
                 "せいで",
                 "甘い",
@@ -4182,11 +4541,12 @@ export const practiceSetsBook = {
                 "ものが"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 340,
-              "questionText": "では、部長には、会議で ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ ＿＿＿＿ よろしいでしょうか。</u>",
+              "questionText": "では、部長には、会議で ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ ＿＿＿＿ よろしいでしょうか。",
               "options": [
                 "ことを",
                 "おけば",
@@ -4194,11 +4554,12 @@ export const practiceSetsBook = {
                 "申し上げて"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 341,
-              "questionText": "ちょうど宿題を ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ 友だちがやって来た。</u>",
+              "questionText": "ちょうど宿題を ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ 友だちがやって来た。",
               "options": [
                 "と",
                 "している",
@@ -4206,11 +4567,12 @@ export const practiceSetsBook = {
                 "ところへ"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 342,
-              "questionText": "私は、人形が好きなので、＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ その国の人形を買ってきます。</u>",
+              "questionText": "私は、人形が好きなので、＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ その国の人形を買ってきます。",
               "options": [
                 "に",
                 "行く",
@@ -4218,28 +4580,25 @@ export const practiceSetsBook = {
                 "たび"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 343,
-              "questionText": "その動物園には、パンダを ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ たくさんいる。</u>",
+              "questionText": "その動物園には、パンダを ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ たくさんいる。",
               "options": [
                 "動物たちが",
                 "はじめ",
                 "かわいい",
-                "とする",
-                "(並び替え: 2 甘い -> 4 ものが -> 3 大好きな -> 1 せいで)",
-                "(並び替え: 3 決まった -> 1 ことを -> 4 申し上げて -> 2 おけば)",
-                "(並び替え: 3 しよう -> 1 と -> 2 している -> 4 ところへ)",
-                "(並び替え: 3 旅行に -> 2 行く -> 4 たび -> 1 に)",
-                "(並び替え: 2 はじめ -> 4 とする -> 3 かわいい -> 1 動物たちが)"
+                "とする"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 344,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "なぜなら",
                 "または",
@@ -4247,11 +4606,13 @@ export const practiceSetsBook = {
                 "ただし"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "「初めての銭湯」\nピエール・マルタン\nあなたは、日本のお風呂といえば何を考えますか。温泉でしょうか、露天風呂でしょうか。いろいろありますが、私の場合は「銭湯」です。\n私の故郷には、毎日お風呂に入るという習慣はありません。[ 19 ]、日本へ来たばかりのときは、日本人が毎日お風呂に入るということを知って、とても驚きました。\n家にお風呂がある人は、家にお風呂に毎日入りますし、家にお風呂がない場合も、毎日のように家の近所にある「銭湯」に行きます。[ 20 ]習慣を持っている民族は、広い世界の中でもあまりないと思います。\n初めて銭湯に行ったときに、驚いたことがたくさんありました。[ 21-a ]、建物がお寺や神社のようなとても古い建物だったこと。第二に、入口が「男湯」と「女湯」に分かれていたこと。第三に、ほかの人の前で服を全部脱いでお風呂に入らなければならなかったこと。[ 21-b ]、お風呂のお湯の温度がとても高かったことです。\nしかし、今では日本の銭湯にも[ 22 ]。なにも気にせずに熱いお湯にゆっくり入れるようになりました。私もかなり「日本人」に近づいてきたという[ 23 ]。"
             },
             {
               "id": 345,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "あの",
                 "このような",
@@ -4259,11 +4620,13 @@ export const practiceSetsBook = {
                 "それほどの"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "「初めての銭湯」\nピエール・マルタン\nあなたは、日本のお風呂といえば何を考えますか。温泉でしょうか、露天風呂でしょうか。いろいろありますが、私の場合は「銭湯」です。\n私の故郷には、毎日お風呂に入るという習慣はありません。[ 19 ]、日本へ来たばかりのときは、日本人が毎日お風呂に入るということを知って、とても驚きました。\n家にお風呂がある人は、家にお風呂に毎日入りますし、家にお風呂がない場合も、毎日のように家の近所にある「銭湯」に行きます。[ 20 ]習慣を持っている民族は、広い世界の中でもあまりないと思います。\n初めて銭湯に行ったときに、驚いたことがたくさんありました。[ 21-a ]、建物がお寺や神社のようなとても古い建物だったこと。第二に、入口が「男湯」と「女湯」に分かれていたこと。第三に、ほかの人の前で服を全部脱いでお風呂に入らなければならなかったこと。[ 21-b ]、お風呂のお湯の温度がとても高かったことです。\nしかし、今では日本の銭湯にも[ 22 ]。なにも気にせずに熱いお湯にゆっくり入れるようになりました。私もかなり「日本人」に近づいてきたという[ 23 ]。"
             },
             {
               "id": 346,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "a まずは / b 最初に",
                 "a まずは / b 最後に",
@@ -4271,11 +4634,13 @@ export const practiceSetsBook = {
                 "a 最後に / b まずは"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "「初めての銭湯」\nピエール・マルタン\nあなたは、日本のお風呂といえば何を考えますか。温泉でしょうか、露天風呂でしょうか。いろいろありますが、私の場合は「銭湯」です。\n私の故郷には、毎日お風呂に入るという習慣はありません。[ 19 ]、日本へ来たばかりのときは、日本人が毎日お風呂に入るということを知って、とても驚きました。\n家にお風呂がある人は、家にお風呂に毎日入りますし、家にお風呂がない場合も、毎日のように家の近所にある「銭湯」に行きます。[ 20 ]習慣を持っている民族は、広い世界の中でもあまりないと思います。\n初めて銭湯に行ったときに、驚いたことがたくさんありました。[ 21-a ]、建物がお寺や神社のようなとても古い建物だったこと。第二に、入口が「男湯」と「女湯」に分かれていたこと。第三に、ほかの人の前で服を全部脱いでお風呂に入らなければならなかったこと。[ 21-b ]、お風呂のお湯の温度がとても高かったことです。\nしかし、今では日本の銭湯にも[ 22 ]。なにも気にせずに熱いお湯にゆっくり入れるようになりました。私もかなり「日本人」に近づいてきたという[ 23 ]。"
             },
             {
               "id": 347,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "慣れてつつあります",
                 "慣れてつついます",
@@ -4283,11 +4648,13 @@ export const practiceSetsBook = {
                 "慣れつついます"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "「初めての銭湯」\nピエール・マルタン\nあなたは、日本のお風呂といえば何を考えますか。温泉でしょうか、露天風呂でしょうか。いろいろありますが、私の場合は「銭湯」です。\n私の故郷には、毎日お風呂に入るという習慣はありません。[ 19 ]、日本へ来たばかりのときは、日本人が毎日お風呂に入るということを知って、とても驚きました。\n家にお風呂がある人は、家にお風呂に毎日入りますし、家にお風呂がない場合も、毎日のように家の近所にある「銭湯」に行きます。[ 20 ]習慣を持っている民族は、広い世界の中でもあまりないと思います。\n初めて銭湯に行ったときに、驚いたことがたくさんありました。[ 21-a ]、建物がお寺や神社のようなとても古い建物だったこと。第二に、入口が「男湯」と「女湯」に分かれていたこと。第三に、ほかの人の前で服を全部脱いでお風呂に入らなければならなかったこと。[ 21-b ]、お風呂のお湯の温度がとても高かったことです。\nしかし、今では日本の銭湯にも[ 22 ]。なにも気にせずに熱いお湯にゆっくり入れるようになりました。私もかなり「日本人」に近づいてきたという[ 23 ]。"
             },
             {
               "id": 348,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "限りでしょうか",
                 "どころでしょうか",
@@ -4295,7 +4662,9 @@ export const practiceSetsBook = {
                 "ことでしょうか"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "「初めての銭湯」\nピエール・マルタン\nあなたは、日本のお風呂といえば何を考えますか。温泉でしょうか、露天風呂でしょうか。いろいろありますが、私の場合は「銭湯」です。\n私の故郷には、毎日お風呂に入るという習慣はありません。[ 19 ]、日本へ来たばかりのときは、日本人が毎日お風呂に入るということを知って、とても驚きました。\n家にお風呂がある人は、家にお風呂に毎日入りますし、家にお風呂がない場合も、毎日のように家の近所にある「銭湯」に行きます。[ 20 ]習慣を持っている民族は、広い世界の中でもあまりないと思います。\n初めて銭湯に行ったときに、驚いたことがたくさんありました。[ 21-a ]、建物がお寺や神社のようなとても古い建物だったこと。第二に、入口が「男湯」と「女湯」に分かれていたこと。第三に、ほかの人の前で服を全部脱いでお風呂に入らなければならなかったこと。[ 21-b ]、お風呂のお湯の温度がとても高かったことです。\nしかし、今では日本の銭湯にも[ 22 ]。なにも気にせずに熱いお湯にゆっくり入れるようになりました。私もかなり「日本人」に近づいてきたという[ 23 ]。"
             }
           ]
         }
@@ -4311,409 +4680,389 @@ export const practiceSetsBook = {
           "titleJa": "文字・語彙",
           "questions": [
             {
-              "id": 349,
-              "questionText": "道路に大きな木が倒れている。",
+              "id": 1,
+              "questionText": "プレゼントはきれいな紙で<u>包んで</u>あった。",
               "options": [
-                "おれて",
-                "もたれて",
-                "われて",
-                "たおれて"
+                "つつんで",
+                "つづんで",
+                "つうつんで",
+                "つうづんで"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 0
             },
             {
-              "id": 350,
-              "questionText": "あの植物の名前を知っていますか。",
+              "id": 2,
+              "questionText": "彼はダンスが<u>得意</u>だ。",
               "options": [
-                "しょくもの",
-                "しきもの",
-                "しょくぶつ",
-                "しきぶつ"
+                "どおくい",
+                "とおくい",
+                "どくい",
+                "とくい"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3
             },
             {
-              "id": 351,
-              "questionText": "週末は、知人に会う約束がある。",
+              "id": 3,
+              "questionText": "新しい星が<u>発見</u>された。",
               "options": [
-                "ちにん",
-                "ちじん",
-                "しにん",
-                "しじん"
+                "はっけん",
+                "はけん",
+                "はつけん",
+                "ばつけん"
               ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 0
             },
             {
-              "id": 352,
-              "questionText": "箱をいくつか積んだ。",
+              "id": 4,
+              "questionText": "このグラフは人口の変化を<u>表して</u>います。",
               "options": [
-                "たたんだ",
-                "つつんだ",
-                "つんだ",
-                "ふんだ"
+                "しめして",
+                "ふやして",
+                "うごかして",
+                "あらわして"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3
             },
             {
-              "id": 353,
-              "questionText": "迷惑なことをしないでください。",
+              "id": 5,
+              "questionText": "山田さんから、来週の会議の<u>件</u>で電話がありました。",
               "options": [
-                "めんどう",
-                "めいわく",
-                "じゃま",
-                "さいあく"
+                "けん",
+                "あん",
+                "ほう",
+                "よう"
               ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 0
             },
             {
-              "id": 354,
-              "questionText": "この地域には、スーパーがありません。",
+              "id": 6,
+              "questionText": "<u>通勤</u>にとても時間がかかります。",
               "options": [
-                "ちたい",
-                "じたい",
-                "ちいき",
-                "じいき"
+                "つうがく",
+                "つうきん",
+                "つうやく",
+                "つうしん"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1
             },
             {
-              "id": 355,
-              "questionText": "きのう、庭のそうじをしました。",
+              "id": 7,
+              "questionText": "この海岸は<u>岩</u>が多い。",
               "options": [
-                "にわ",
-                "へや",
-                "ゆか",
-                "かべ"
+                "かい",
+                "いわ",
+                "すな",
+                "なみ"
               ],
-              "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1
             },
             {
-              "id": 356,
-              "questionText": "わが社では、最近、社長が交代した。",
+              "id": 8,
+              "questionText": "<u>努力</u>することは大切だと思います。",
               "options": [
-                "こうてい",
-                "こうたい",
-                "こうでい",
-                "こうだい"
+                "どうりょく",
+                "とうりょく",
+                "どりょく",
+                "とりょく"
               ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2
             },
             {
-              "id": 357,
-              "questionText": "あんいな考えは捨てなさい。",
+              "id": 9,
+              "questionText": "機械が<u>せいじょう</u>かどうかチェックした。",
               "options": [
-                "浅易",
-                "案易",
-                "暗易",
-                "安易"
+                "盛情",
+                "威常",
+                "正情",
+                "正常"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3
             },
             {
-              "id": 358,
-              "questionText": "建物のこうぞうを調べる。",
+              "id": 10,
+              "questionText": "健康診断で<u>けつえき</u>検査を受けた。",
               "options": [
-                "構造",
-                "溝造",
-                "購造",
-                "講造"
+                "意識",
+                "園圧",
+                "血液",
+                "血圧"
               ],
-              "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2
             },
             {
-              "id": 359,
-              "questionText": "それをひろってください。",
+              "id": 11,
+              "questionText": "母親が子どもの後ろを<u>おって</u>走っている。",
               "options": [
-                "触って",
-                "拾って",
-                "放って",
-                "払って"
+                "送って",
+                "追って",
+                "押って",
+                "折って"
               ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1
             },
             {
-              "id": 360,
-              "questionText": "1人に3つずつわけると、2つあまる。",
+              "id": 12,
+              "questionText": "電車を<u>おりる</u>ときに、 かさを忘れてしまった。",
               "options": [
-                "与る",
-                "残る",
-                "余る",
-                "甘る"
+                "移りる",
+                "移る",
+                "降りる",
+                "降る"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2
             },
             {
-              "id": 361,
-              "questionText": "いろいろな仕事をけいけんする。",
+              "id": 13,
+              "questionText": "大学に入ってから、<u>しんちょう</u>が変わっていない。",
               "options": [
-                "実験",
-                "体験",
-                "経験",
-                "治験"
+                "背中",
+                "背後",
+                "身長",
+                "身張"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2
             },
             {
-              "id": 362,
-              "questionText": "サルがすばやいどうさで木にのぼる。",
+              "id": 14,
+              "questionText": "<u>ものがたり</u>は誰でも知っている。",
               "options": [
-                "働昨",
-                "動昨",
-                "働作",
-                "動作"
+                "物語",
+                "物化",
+                "物記",
+                "物源"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 0
             },
             {
-              "id": 363,
-              "questionText": "いつも帽子をかぶるのが、彼の（ ）だ。",
+              "id": 15,
+              "questionText": "新しい車を買うために、 店で（　　）をもらってきた。",
               "options": [
-                "スマート",
-                "タイトル",
-                "ペース",
-                "スタイル"
+                "カタログ",
+                "オーダー",
+                "レシート",
+                "セール"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 0
             },
             {
-              "id": 364,
-              "questionText": "わが国は、A国と（ ）を行っている。",
+              "id": 16,
+              "questionText": "田中さんの服装はとても上品な がする。",
               "options": [
-                "表示",
-                "貿易",
-                "伝達",
-                "流行"
+                "関心",
+                "気分",
+                "考え",
+                "感じ"
               ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3
             },
             {
-              "id": 365,
-              "questionText": "できるかぎり（ ）して仕事を進める。",
+              "id": 17,
+              "questionText": "このあたりでアパートを借りるには、毎月の として五万円必要だ。",
               "options": [
-                "工夫",
-                "救助",
-                "心配",
-                "採用"
+                "価格",
+                "代金",
+                "会費",
+                "家賃"
               ],
-              "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3
             },
             {
-              "id": 366,
-              "questionText": "雷がこわくて、（ ）過ごした。",
+              "id": 18,
+              "questionText": "テストを始めますから、 辞書をかばんの中に ください。",
               "options": [
-                "しびれて",
-                "ゆれて",
-                "ふるえて",
-                "ひえて"
+                "ためって",
+                "とじて",
+                "しまって",
+                "たたんで"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2
             },
             {
-              "id": 367,
-              "questionText": "テストで、今までで（ ）の成績をおさめた。",
+              "id": 19,
+              "questionText": "日本の若者の のファッションを知りたい。",
               "options": [
-                "最善",
                 "最大",
-                "最多",
-                "最高"
+                "最新",
+                "最中",
+                "最多"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1
             },
             {
-              "id": 368,
-              "questionText": "建物が台風から私たちを（ ）くれた。",
+              "id": 20,
+              "questionText": "いらない新聞や雑誌を重ねて、ひもで 捨てた。",
               "options": [
-                "守って",
-                "許して",
-                "負けて",
-                "認めて"
+                "しばって",
+                "かこんで",
+                "しめて",
+                "あんで"
               ],
-              "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 0
             },
             {
-              "id": 369,
-              "questionText": "コピー機に用紙が（ ）されているかどうか、調べてください。",
+              "id": 21,
+              "questionText": "急に用事ができたので、レストランの予約を した。",
               "options": [
-                "スイッチ",
-                "プリント",
-                "インク",
-                "セット"
+                "チェックアウト",
+                "カット",
+                "キャンセル",
+                "オーバー"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2
             },
             {
-              "id": 370,
-              "questionText": "私のアパートの部屋は東（ ）です。",
+              "id": 22,
+              "questionText": "私の部屋は東 だ。",
               "options": [
-                "開け",
-                "行き",
+                "沿い",
                 "向き",
-                "沿い"
+                "込み",
+                "建て"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1
             },
             {
-              "id": 371,
-              "questionText": "音が大きすぎるので、（ ）してください。",
+              "id": 23,
+              "questionText": "昨日映画を見たとき、 して泣いてしまった。",
               "options": [
-                "減少",
-                "安定",
-                "調節",
-                "改定"
+                "歓迎",
+                "応援",
+                "期待",
+                "感動"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3
             },
             {
-              "id": 372,
-              "questionText": "きのうの夜、（ ）おなかが痛くなったので、心配だ。",
+              "id": 24,
+              "questionText": "急いでいたので、 違うバスに乗ってしまった。",
               "options": [
-                "やっと",
-                "せっかく",
-                "ちゃんと",
-                "急に"
+                "ぴったり",
+                "ぐっすり",
+                "うっかり",
+                "がっかり"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2
             },
             {
-              "id": 373,
-              "questionText": "私にはこの絵の（ ）が理解できない。",
+              "id": 25,
+              "questionText": "森さんは一生懸命勉強して、 医者になった。",
               "options": [
-                "原料",
-                "価値",
-                "金銭",
-                "物価"
+                "りっぱな",
+                "さかんな",
+                "まんぞくな",
+                "しんせんな"
               ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 0
             },
             {
-              "id": 374,
-              "questionText": "めずらしいくだものを食べた。",
+              "id": 26,
+              "questionText": "今回の仕事はとても<u>きつい</u>。",
               "options": [
-                "よくある",
-                "ときどきある",
-                "あまりない",
-                "どこにもない"
-              ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
-            },
-            {
-              "id": 375,
-              "questionText": "テーブルの上の紙をまとめた。",
-              "options": [
-                "集めた",
-                "分けた",
-                "捨てた",
-                "破った"
-              ],
-              "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
-            },
-            {
-              "id": 376,
-              "questionText": "田中さんは、山田さんに手を貸した。",
-              "options": [
-                "握手した",
-                "助けた",
-                "手紙を書いた",
-                "お金を貸した"
-              ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
-            },
-            {
-              "id": 377,
-              "questionText": "あの2人は、気が合うようだ。",
-              "options": [
-                "つき合っている",
-                "ときどき会っている",
-                "仲がよい",
-                "仲が悪い"
-              ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
-            },
-            {
-              "id": 378,
-              "questionText": "おかしなことが続けて起こった。",
-              "options": [
-                "すばらしい",
+                "大変だ",
+                "簡単だ",
                 "つまらない",
-                "平凡な",
-                "不思議な"
+                "おもしろい"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 0
             },
             {
-              "id": 379,
-              "questionText": "さけぶ",
+              "id": 27,
+              "questionText": "今日はとても<u>くたびれた</u>。",
               "options": [
-                "電話で母に、きのうあった出来事についてさけんだ。 2 毎日、その日あったことを日記に<u>さけんでいる</u>。 3 前から歩いてきた犬が、私に向かって<u>さけんできた</u>。 4 遠くを歩いている友だちの名前を思いきり<u>さけんだ。</u>"
+                "いそがしかった",
+                "つかれた",
+                "はずかしかった",
+                "こまった"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1
             },
             {
-              "id": 380,
-              "questionText": "ふく",
+              "id": 28,
+              "questionText": "休みが<u>明けたら</u>、また連絡します。",
               "options": [
-                "よごれたシャツを洗濯機でふいた。 2 テーブルが汚いので、すぐに<u>ふいて</u>ください。 3 客が来るので、部屋を掃除機で<u>ふかなければなりません</u>。 4 落ちているごみをごみ箱に<u>ふいてください。</u>"
+                "とれたら",
+                "きまったら",
+                "おわったら",
+                "はじまったら"
               ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2
             },
             {
-              "id": 381,
-              "questionText": "ヒント",
+              "id": 29,
+              "questionText": "この店はいつも<u>混雑している</u>。",
               "options": [
-                "景色にヒントをつけて、写真をとりました。 2 よい<u>ヒント</u>を与えられ、この会社に入ることができました。 3 この店では、500円以上買い物しないと<u>ヒント</u>がつきません。 4 この問題は難しすぎるので、解くための<u>ヒントをください。</u>"
+                "客があまりいない",
+                "品物があまりない",
+                "客がたくさんいる",
+                "品物がたくさんある"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2
             },
             {
-              "id": 382,
-              "questionText": "お見舞い",
+              "id": 30,
+              "questionText": "このスポーツのルールは<u>単純だ</u>。",
               "options": [
-                "今日は私の誕生日なので、お見舞いをもらった。 2 日本では結婚式の<u>お見舞い</u>に、何をあげればいいですか。 3 夜遅くまで勉強していたら、母が<u>お見舞い</u>を持って来てくれた。 4 病院に入院している同僚に、<u>お見舞いを持って行った。</u>"
+                "よく知られている",
+                "わかりやすい",
+                "あまり知られていない",
+                "わかりにくい"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1
             },
             {
-              "id": 383,
-              "questionText": "おしゃれ",
+              "id": 31,
+              "questionText": "落ち着く",
               "options": [
-                "この部屋はそうじをしたばかりなので、おしゃれです。 2 あの人は頭はいいが、<u>おしゃれ</u>なところがある。 3 祖母は今年80歳になるが、今でもとても<u>おしゃれ</u>だ。 4 授業中に友だちと<u>おしゃれしていて、先生に注意されてしまった。</u>"
+                "電車が駅に落ち着いたら電話をください。",
+                "この商品は人気がなくて、 棚にずっと落ち着いている。",
+                "家のかぎが穴に落ち着いた。",
+                "火事のとき落ち着いて行動しよう。"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3
+            },
+            {
+              "id": 32,
+              "questionText": "はかる",
+              "options": [
+                "りんごの数をはかってみたら、 1) 7個あった。",
+                "小麦粉やバターをきちんとはかってケーキを作った。",
+                "この宿題は一時間ぐらいで終わるとはかっています。",
+                "先月の生活費を電卓ではかった。"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": 33,
+              "questionText": "ユーモア",
+              "options": [
+                "私は映画が好きでユーモアした映画をよく見る。",
+                "木村さんはユーモアがあって、いっしょにいると楽しい。",
+                "きのう友達が貸してくれた本はとてもユーモアだった。",
+                "彼はユーモアに自己紹介をして、名前を覚えてもらった。"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": 34,
+              "questionText": "未来",
+              "options": [
+                "地球の未来のために環境問題について考えよう。",
+                "山本さんは未来は何になりたいですか。",
+                "いつ来られるか、 未来の都合を教えてください。",
+                "未来の今ごろ、 大学が建つ予定です。"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": 35,
+              "questionText": "そっくり",
+              "options": [
+                "父は毎朝そっくりの時間に会社に行きます。",
+                "私にそっくりのサイズの服が見つかった。",
+                "私と祖母の誕生日はそっくりです。",
+                "夫と息子は顔だけでなく声までそっくりです。"
+              ],
+              "correctIndex": 3
             }
           ]
         },
@@ -4731,7 +5080,8 @@ export const practiceSetsBook = {
                 "しか"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 385,
@@ -4743,7 +5093,8 @@ export const practiceSetsBook = {
                 "よう"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 386,
@@ -4755,7 +5106,8 @@ export const practiceSetsBook = {
                 "はより"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 387,
@@ -4767,7 +5119,8 @@ export const practiceSetsBook = {
                 "そうに"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 388,
@@ -4779,7 +5132,8 @@ export const practiceSetsBook = {
                 "を通じて"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 389,
@@ -4791,7 +5145,8 @@ export const practiceSetsBook = {
                 "して"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 390,
@@ -4803,7 +5158,8 @@ export const practiceSetsBook = {
                 "入られるな"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 391,
@@ -4815,11 +5171,12 @@ export const practiceSetsBook = {
                 "できないことはない"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 392,
-              "questionText": "松本「今日はおじゃましました。」",
+              "questionText": "松本「今日はおじゃましました。」\r\n金子「いいえ、また（ ）ください。」",
               "options": [
                 "おはいりになって",
                 "おいきになって",
@@ -4827,11 +5184,12 @@ export const practiceSetsBook = {
                 "おいでになって"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 393,
-              "questionText": "秘書「部長、ワールド商事の青木様が（ ）。」",
+              "questionText": "秘書「部長、ワールド商事の青木様が（ ）。」\r\n部長「会議室にご案内して。」",
               "options": [
                 "参られました",
                 "参りました",
@@ -4839,7 +5197,8 @@ export const practiceSetsBook = {
                 "見えました"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 394,
@@ -4851,7 +5210,8 @@ export const practiceSetsBook = {
                 "すぎませんので"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 395,
@@ -4863,7 +5223,8 @@ export const practiceSetsBook = {
                 "汚れにくいので"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 396,
@@ -4875,11 +5236,12 @@ export const practiceSetsBook = {
                 "こわがらないで"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 397,
-              "questionText": "今日は ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ 、あなたはそうじをしてよ。</u>",
+              "questionText": "今日は ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ 、あなたはそうじをしてよ。",
               "options": [
                 "かわりに",
                 "私が",
@@ -4887,11 +5249,12 @@ export const practiceSetsBook = {
                 "晩ごはんを"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 398,
-              "questionText": "田村「こんにちは。はじめまして。」",
+              "questionText": "田村「こんにちは。はじめまして。」\r\n村上「はじめまして。＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ 存じます。」",
               "options": [
                 "うれしく",
                 "かかれた",
@@ -4899,11 +5262,12 @@ export const practiceSetsBook = {
                 "ことを"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 399,
-              "questionText": "私は、何歳になった ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ 働き続けたいです。</u>",
+              "questionText": "私は、何歳になった ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ 働き続けたいです。",
               "options": [
                 "限り",
                 "ある",
@@ -4911,11 +5275,12 @@ export const practiceSetsBook = {
                 "としても"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 400,
-              "questionText": "2人は、何度も ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ ＿＿＿＿ ことを決めた。</u>",
+              "questionText": "2人は、何度も ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ ＿＿＿＿ ことを決めた。",
               "options": [
                 "上で",
                 "別れる",
@@ -4923,28 +5288,25 @@ export const practiceSetsBook = {
                 "話し合った"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 401,
-              "questionText": "これは、現在のわが国の環境問題に ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ です。</u>",
+              "questionText": "これは、現在のわが国の環境問題に ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ です。",
               "options": [
                 "関する",
                 "資料",
                 "新しい",
-                "最も",
-                "(並び替え: 2 私が -> 4 晩ごはんを -> 3 作る -> 1 かわりに)",
-                "(並び替え: 3 お目に -> 2 かかれた -> 1 うれしく -> 4 ことを)",
-                "(並び替え: 3 仕事が -> 2 ある -> 1 限り -> 4 としても)",
-                "(並び替え: 3 とうとう -> 4 話し合った -> 1 上で -> 2 別れる)",
-                "(並び替え: 4 最も -> 1 関する -> 2 資料 -> 3 新しい)"
+                "最も"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 402,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "しか",
                 "もの",
@@ -4952,11 +5314,13 @@ export const practiceSetsBook = {
                 "さえ"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": ""
             },
             {
               "id": 403,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "a もしも / b だろう",
                 "a もしかすると / b かもしれない",
@@ -4964,11 +5328,13 @@ export const practiceSetsBook = {
                 "a もしかしたら / b だということだ"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": ""
             },
             {
               "id": 404,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "だからといって",
                 "実は",
@@ -4976,11 +5342,13 @@ export const practiceSetsBook = {
                 "または"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": ""
             },
             {
               "id": 405,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "名前を変えた",
                 "名前が変わった",
@@ -4988,11 +5356,13 @@ export const practiceSetsBook = {
                 "名前が変わっていた"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": ""
             },
             {
               "id": 406,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "祈っているにちがいない",
                 "祈っている一方だ",
@@ -5000,7 +5370,9 @@ export const practiceSetsBook = {
                 "祈りたいものだ"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": ""
             }
           ]
         }
@@ -5017,7 +5389,7 @@ export const practiceSetsBook = {
           "questions": [
             {
               "id": 407,
-              "questionText": "大きな鳥が飛んでいるのを見ました。",
+              "questionText": "大きな鳥が<u>飛んで</u>いるのを見ました。",
               "options": [
                 "あそんで",
                 "よんで",
@@ -5025,11 +5397,12 @@ export const practiceSetsBook = {
                 "さけんで"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 408,
-              "questionText": "子どもは、無料で入れます。",
+              "questionText": "子どもは、<u>無料</u>で入れます。",
               "options": [
                 "むりょ",
                 "むりょう",
@@ -5037,11 +5410,12 @@ export const practiceSetsBook = {
                 "ぶりょう"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 409,
-              "questionText": "この道は、車の通行ができない。",
+              "questionText": "この道は、車の<u>通行</u>ができない。",
               "options": [
                 "とうこう",
                 "とうごう",
@@ -5049,11 +5423,12 @@ export const practiceSetsBook = {
                 "つうごう"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 410,
-              "questionText": "彼は、てとも疲れているようだ。",
+              "questionText": "彼は、てとも<u>疲れて</u>いるようだ。",
               "options": [
                 "つかれて",
                 "あきれて",
@@ -5061,11 +5436,12 @@ export const practiceSetsBook = {
                 "おそれて"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 411,
-              "questionText": "この計画には、悪いところもあるが、よい面もある。",
+              "questionText": "この計画には、悪いところもあるが、よい<u>面</u>もある。",
               "options": [
                 "てん",
                 "めん",
@@ -5073,11 +5449,12 @@ export const practiceSetsBook = {
                 "けん"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 412,
-              "questionText": "友だちの知恵を借りて、課題を完成させました。",
+              "questionText": "友だちの<u>知恵</u>を借りて、課題を完成させました。",
               "options": [
                 "ちえ",
                 "ちしき",
@@ -5085,11 +5462,12 @@ export const practiceSetsBook = {
                 "ちのう"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 413,
-              "questionText": "現代には多様な生き方がある。",
+              "questionText": "現代には<u>多様</u>な生き方がある。",
               "options": [
                 "おおさま",
                 "たさま",
@@ -5097,11 +5475,12 @@ export const practiceSetsBook = {
                 "たよう"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 414,
-              "questionText": "荷物は、きのう到着しました。",
+              "questionText": "荷物は、きのう<u>到着</u>しました。",
               "options": [
                 "とちゃく",
                 "とうちゃく",
@@ -5109,11 +5488,12 @@ export const practiceSetsBook = {
                 "どうちゃく"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 415,
-              "questionText": "その決定に、ふまんを言う人がたくさんいた。",
+              "questionText": "その決定に、<u>ふまん</u>を言う人がたくさんいた。",
               "options": [
                 "否満",
                 "無満",
@@ -5121,11 +5501,12 @@ export const practiceSetsBook = {
                 "未満"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 416,
-              "questionText": "駅前でビルをけんちくしている。",
+              "questionText": "駅前でビルを<u>けんちく</u>している。",
               "options": [
                 "建設",
                 "建造",
@@ -5133,11 +5514,12 @@ export const practiceSetsBook = {
                 "建築"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 417,
-              "questionText": "旅行をして自宅にもどって、安心した。",
+              "questionText": "旅行をして自宅に<u>もどって</u>、安心した。",
               "options": [
                 "戻って",
                 "帰って",
@@ -5145,11 +5527,12 @@ export const practiceSetsBook = {
                 "来て"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 418,
-              "questionText": "校則違反をみとめることはできない。",
+              "questionText": "校則違反を<u>みとめる</u>ことはできない。",
               "options": [
                 "求める",
                 "救める",
@@ -5157,11 +5540,12 @@ export const practiceSetsBook = {
                 "認める"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 419,
-              "questionText": "東京のこうがいに家を買いました。",
+              "questionText": "東京の<u>こうがい</u>に家を買いました。",
               "options": [
                 "郊外",
                 "戸外",
@@ -5169,11 +5553,12 @@ export const practiceSetsBook = {
                 "校外"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 420,
-              "questionText": "今月のやちんを払った。",
+              "questionText": "今月の<u>やちん</u>を払った。",
               "options": [
                 "家貸",
                 "屋貸",
@@ -5181,11 +5566,12 @@ export const practiceSetsBook = {
                 "屋賃"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 421,
-              "questionText": "現代社会では、だれもが（ ）を感じている。",
+              "questionText": "現代社会では、だれもが（　　）を感じている。",
               "options": [
                 "センス",
                 "センチメンタル",
@@ -5193,11 +5579,12 @@ export const practiceSetsBook = {
                 "ニュアンス"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 422,
-              "questionText": "書類のこの部分を（ ）してください。",
+              "questionText": "書類のこの部分を（　　）してください。",
               "options": [
                 "変更",
                 "変化",
@@ -5205,11 +5592,12 @@ export const practiceSetsBook = {
                 "変身"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 423,
-              "questionText": "会社に入るために、（ ）を受けた。",
+              "questionText": "会社に入るために、（　　）を受けた。",
               "options": [
                 "対応",
                 "対面",
@@ -5217,11 +5605,12 @@ export const practiceSetsBook = {
                 "応対"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 424,
-              "questionText": "海に（ ）、魚をとった。",
+              "questionText": "海に（　　）、魚をとった。",
               "options": [
                 "しずんで",
                 "もぐって",
@@ -5229,11 +5618,12 @@ export const practiceSetsBook = {
                 "ころんで"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 425,
-              "questionText": "私の（ ）は、人とすぐになかよくなれることです。",
+              "questionText": "私の（　　）は、人とすぐになかよくなれることです。",
               "options": [
                 "高所",
                 "低所",
@@ -5241,11 +5631,12 @@ export const practiceSetsBook = {
                 "短所"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 426,
-              "questionText": "生まれた国を（ ）、10年ほどたった。",
+              "questionText": "生まれた国を（　　）、10年ほどたった。",
               "options": [
                 "渡って",
                 "乗り越えて",
@@ -5253,11 +5644,12 @@ export const practiceSetsBook = {
                 "離れて"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 427,
-              "questionText": "私の趣味は、プラモデルを（ ）ことです。",
+              "questionText": "私の趣味は、プラモデルを（　　）ことです。",
               "options": [
                 "まとめあげる",
                 "組み立てる",
@@ -5265,11 +5657,12 @@ export const practiceSetsBook = {
                 "作り置く"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 428,
-              "questionText": "マラソン大会に参加する人は、参加（ ）を払ってください。",
+              "questionText": "マラソン大会に参加する人は、参加（　　）を払ってください。",
               "options": [
                 "価",
                 "金",
@@ -5277,11 +5670,12 @@ export const practiceSetsBook = {
                 "値"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 429,
-              "questionText": "あの人の仕事は、雑誌の（ ）です。",
+              "questionText": "あの人の仕事は、雑誌の（　　）です。",
               "options": [
                 "設立",
                 "保護",
@@ -5289,11 +5683,12 @@ export const practiceSetsBook = {
                 "編集"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 430,
-              "questionText": "ものごとをよく（ ）してみましょう。",
+              "questionText": "ものごとをよく（　　）してみましょう。",
               "options": [
                 "感動",
                 "観察",
@@ -5301,11 +5696,12 @@ export const practiceSetsBook = {
                 "熱中"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 431,
-              "questionText": "山本さんは、（ ）で、うそをつかない人です。",
+              "questionText": "山本さんは、（　　）で、うそをつかない人です。",
               "options": [
                 "軽薄",
                 "派手",
@@ -5313,11 +5709,12 @@ export const practiceSetsBook = {
                 "誠実"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 432,
-              "questionText": "彼女は、とてもわがままだ。",
+              "questionText": "彼女は、とても<u>わがまま</u>だ。",
               "options": [
                 "親切だ",
                 "勝手だ",
@@ -5325,11 +5722,12 @@ export const practiceSetsBook = {
                 "冷たい"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 433,
-              "questionText": "私はその話を全然知らなかった。",
+              "questionText": "私はその話を<u>全然</u>知らなかった。",
               "options": [
                 "今まで",
                 "そのときは",
@@ -5337,11 +5735,12 @@ export const practiceSetsBook = {
                 "少しも"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 434,
-              "questionText": "商売でお金をもうけた。",
+              "questionText": "商売でお金を<u>もうけた</u>。",
               "options": [
                 "得た",
                 "なくした",
@@ -5349,11 +5748,12 @@ export const practiceSetsBook = {
                 "貸した"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 435,
-              "questionText": "質問があれば、どんどん聞いてください。",
+              "questionText": "質問があれば、<u>どんどん</u>聞いてください。",
               "options": [
                 "よく考えてから",
                 "遠慮しないで",
@@ -5361,11 +5761,12 @@ export const practiceSetsBook = {
                 "全部まとめて"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 436,
-              "questionText": "先輩にアドバイスをもらった。",
+              "questionText": "先輩に<u>アドバイス</u>をもらった。",
               "options": [
                 "命令",
                 "お礼",
@@ -5373,52 +5774,73 @@ export const practiceSetsBook = {
                 "心配"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 437,
               "questionText": "ためす",
               "options": [
-                "試験中にうで時計を見て、時間をためした。 2 将来はお金を<u>ためして</u>、大きな家をたてるつもりです。 3 古い自転車を<u>ためして</u>、乗れるようになった。 4 日本語の力を<u>ためすために、テストを受けようと思います。</u>"
+                "試験中にうで時計を見て、時間をためした。",
+                "将来はお金を<u>ためして</u>、大きな家をたてるつもりです。",
+                "古い自転車を<u>ためして</u>、乗れるようになった。",
+                "日本語の力を<u>ためすために、テストを受けようと思います。</u>"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 438,
               "questionText": "アンケート",
               "options": [
-                "コンサートの終わりに何度もアンケートがあって、盛り上がった。 2 大学生活についての<u>アンケート</u>に質問した。 3 運動不足なので、友だちと<u>アンケート</u>をしに行った。 4 クラス全員に<u>アンケートを取って、やり方を決めた。</u>"
+                "コンサートの終わりに何度もアンケートがあって、盛り上がった。",
+                "大学生活についての<u>アンケート</u>に質問した。",
+                "運動不足なので、友だちと<u>アンケート</u>をしに行った。",
+                "クラス全員に<u>アンケートを取って、やり方を決めた。</u>"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 439,
               "questionText": "配る",
               "options": [
-                "買い物のとき、レジでお金を配った。 2 テスト用紙を全員に<u>配って</u>ください。 3 きのうは母の誕生日だったので、母にプレゼントを<u>配りました</u>。 4 このパソコンは、作動が早く<u>配られている。</u>"
+                "買い物のとき、レジでお金を配った。",
+                "テスト用紙を全員に<u>配って</u>ください。",
+                "きのうは母の誕生日だったので、母にプレゼントを<u>配りました</u>。",
+                "このパソコンは、作動が早く<u>配られている。</u>"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 440,
               "questionText": "係",
               "options": [
-                "うちの子どもは、クラスのそうじの係だ。 2 田中さんと鈴木さんは<u>係</u>がよくない。 3 これは、野菜に見えますが、果物の<u>係</u>です。 4 私の<u>係は、会社員です。</u>"
+                "うちの子どもは、クラスのそうじの係だ。",
+                "田中さんと鈴木さんは<u>係</u>がよくない。",
+                "これは、野菜に見えますが、果物の<u>係</u>です。",
+                "私の<u>係は、会社員です。</u>"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
               "id": 441,
               "questionText": "挑戦",
               "options": [
-                "今年は、新しい仕事に挑戦してみたい。 2 強い選手とテニスの<u>挑戦</u>をして、負けた。 3 人と出会う<u>挑戦</u>は、多ければ多いほどいい。 4 あの2人は仲が悪くて、いつも<u>挑戦している。</u>"
+                "今年は、新しい仕事に挑戦してみたい。",
+                "強い選手とテニスの<u>挑戦</u>をして、負けた。",
+                "人と出会う<u>挑戦</u>は、多ければ多いほどいい。",
+                "あの2人は仲が悪くて、いつも<u>挑戦している。</u>"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "sectionType": "vocabulary-kanji",
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             }
           ]
         },
@@ -5428,7 +5850,7 @@ export const practiceSetsBook = {
           "questions": [
             {
               "id": 442,
-              "questionText": "松田「今日、飲み会に行く？」",
+              "questionText": "松田「今日、飲み会に行く？」\r\n竹中「明日のテストの準備もある（ ）、今日は行かないよ。」",
               "options": [
                 "けど",
                 "と",
@@ -5436,7 +5858,8 @@ export const practiceSetsBook = {
                 "まで"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 443,
@@ -5448,7 +5871,8 @@ export const practiceSetsBook = {
                 "どの"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 444,
@@ -5460,7 +5884,8 @@ export const practiceSetsBook = {
                 "ことは"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 445,
@@ -5472,7 +5897,8 @@ export const practiceSetsBook = {
                 "からあって"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 446,
@@ -5484,7 +5910,8 @@ export const practiceSetsBook = {
                 "かならずしも"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 447,
@@ -5496,11 +5923,12 @@ export const practiceSetsBook = {
                 "かぎらない"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 448,
-              "questionText": "女の学生「明日、10時に空港に集合だよ。」",
+              "questionText": "女の学生「明日、10時に空港に集合だよ。」\r\n男の学生「空港までは2時間かかるから、8時に（ ）10時に着くね。」",
               "options": [
                 "出発し",
                 "出発すれば",
@@ -5508,7 +5936,8 @@ export const practiceSetsBook = {
                 "出発するのは"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 449,
@@ -5520,7 +5949,8 @@ export const practiceSetsBook = {
                 "申し上げました"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 450,
@@ -5532,7 +5962,8 @@ export const practiceSetsBook = {
                 "してくれて"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 451,
@@ -5544,7 +5975,8 @@ export const practiceSetsBook = {
                 "言わざるを得ない"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 452,
@@ -5556,7 +5988,8 @@ export const practiceSetsBook = {
                 "ちがいありません"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 453,
@@ -5568,7 +6001,8 @@ export const practiceSetsBook = {
                 "人生というままだ"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 454,
@@ -5580,11 +6014,12 @@ export const practiceSetsBook = {
                 "払わせるようにした"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
               "id": 455,
-              "questionText": "水谷「この機械、どうやって動かすか知ってる？」",
+              "questionText": "水谷「この機械、どうやって動かすか知ってる？」\r\n松井「私もよくわからないから、説明書に ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ よ。」",
               "options": [
                 "通りに",
                 "書いて",
@@ -5592,11 +6027,12 @@ export const practiceSetsBook = {
                 "やってみて"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 456,
-              "questionText": "こちらが、私が集めている車のカタログですが、 ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ しますよ。</u>",
+              "questionText": "こちらが、私が集めている車のカタログですが、 ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ しますよ。",
               "options": [
                 "なりたい",
                 "お見せ",
@@ -5604,11 +6040,12 @@ export const practiceSetsBook = {
                 "ごらんに"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 457,
-              "questionText": "この新しいそうじ機は、使い方が ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ とても便利だ。</u>",
+              "questionText": "この新しいそうじ機は、使い方が ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ とても便利だ。",
               "options": [
                 "簡単な",
                 "軽い",
@@ -5616,11 +6053,12 @@ export const practiceSetsBook = {
                 "ので"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 458,
-              "questionText": "日本人だからといって、だれもがすしや天ぷらが ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ ない。</u>",
+              "questionText": "日本人だからといって、だれもがすしや天ぷらが ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ ない。",
               "options": [
                 "という",
                 "では",
@@ -5628,28 +6066,25 @@ export const practiceSetsBook = {
                 "わけ"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 459,
-              "questionText": "若いころの私は、両親の期待 ＿＿＿＿ ＿＿＿＿ ＿＿★<u>＿＿ ＿＿＿＿ していた。</u>",
+              "questionText": "若いころの私は、両親の期待 ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿ していた。",
               "options": [
                 "反する",
                 "だけ",
                 "こと",
-                "に",
-                "(並び替え: 2 書いて -> 3 ある -> 1 通りに -> 4 やってみて)",
-                "(並び替え: 2 お見せ -> 1 なりたい -> 3 ようでしたら -> 4 ごらんに)",
-                "(並び替え: 2 軽い -> 3 上 -> 1 簡単な -> 4 ので)",
-                "(並び替え: 3 好きだ -> 1 という -> 2 では -> 4 わけ)",
-                "(並び替え: 4 に -> 1 反する -> 3 こと -> 2 だけ)"
+                "に"
               ],
               "correctIndex": 3,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
               "id": 460,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "a からには / b 結論です",
                 "a ことから / b 感想です",
@@ -5657,11 +6092,13 @@ export const practiceSetsBook = {
                 "a にもかかわらず / b 現状です"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "働く女性のためのセミナー\r\n今度の日曜日に、働く女性を応援するためのセミナー、「ジョブ・セミナー　働く女性の新しい生き方」の第1回目の講座が、駅前の市民ホールで行われる予定です。\r\n現代の働く女性には、会社員、母、妻、娘など、いろいろな役割があり、いそがしい人が増えています。しかし以前よりいそがしくなった［　19-a　］、手伝ってくれる人がいないのが［　19-b　］。このセミナーでは、さまざまな業界で活躍されている女性が講師となり、全5回の予定で、［　20　］女性の生き方、上手な働き方を参加者とともに考えていきます。\r\nただ講演を聞く［　21　］、質問をしたり、意見を言える方を募集します。\r\n第1回目の講師は、会社を経営する森川花子さんです。「仕事を持つ女性の時間の使い方」をテーマにセミナーを行います。講演のあとに、講師と参加者の方が交流することができるパーティーもあります。\r\n第2回目［　22　］講師の予定など、その他の内容については、市民ホールのホームページで公開しています。参加をご希望の方は、市民ホール事務所まで直接電話でお申し込みください。みなさまのご参加を［　23　］。"
             },
             {
               "id": 461,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "これからの",
                 "あれからの",
@@ -5669,11 +6106,13 @@ export const practiceSetsBook = {
                 "あちらからの"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "働く女性のためのセミナー\r\n今度の日曜日に、働く女性を応援するためのセミナー、「ジョブ・セミナー　働く女性の新しい生き方」の第1回目の講座が、駅前の市民ホールで行われる予定です。\r\n現代の働く女性には、会社員、母、妻、娘など、いろいろな役割があり、いそがしい人が増えています。しかし以前よりいそがしくなった［　19-a　］、手伝ってくれる人がいないのが［　19-b　］。このセミナーでは、さまざまな業界で活躍されている女性が講師となり、全5回の予定で、［　20　］女性の生き方、上手な働き方を参加者とともに考えていきます。\r\nただ講演を聞く［　21　］、質問をしたり、意見を言える方を募集します。\r\n第1回目の講師は、会社を経営する森川花子さんです。「仕事を持つ女性の時間の使い方」をテーマにセミナーを行います。講演のあとに、講師と参加者の方が交流することができるパーティーもあります。\r\n第2回目［　22　］講師の予定など、その他の内容については、市民ホールのホームページで公開しています。参加をご希望の方は、市民ホール事務所まで直接電話でお申し込みください。みなさまのご参加を［　23　］。"
             },
             {
               "id": 462,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "だけであり",
                 "だけであれば",
@@ -5681,11 +6120,13 @@ export const practiceSetsBook = {
                 "だけでなければ"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "働く女性のためのセミナー\r\n今度の日曜日に、働く女性を応援するためのセミナー、「ジョブ・セミナー　働く女性の新しい生き方」の第1回目の講座が、駅前の市民ホールで行われる予定です。\r\n現代の働く女性には、会社員、母、妻、娘など、いろいろな役割があり、いそがしい人が増えています。しかし以前よりいそがしくなった［　19-a　］、手伝ってくれる人がいないのが［　19-b　］。このセミナーでは、さまざまな業界で活躍されている女性が講師となり、全5回の予定で、［　20　］女性の生き方、上手な働き方を参加者とともに考えていきます。\r\nただ講演を聞く［　21　］、質問をしたり、意見を言える方を募集します。\r\n第1回目の講師は、会社を経営する森川花子さんです。「仕事を持つ女性の時間の使い方」をテーマにセミナーを行います。講演のあとに、講師と参加者の方が交流することができるパーティーもあります。\r\n第2回目［　22　］講師の予定など、その他の内容については、市民ホールのホームページで公開しています。参加をご希望の方は、市民ホール事務所まで直接電話でお申し込みください。みなさまのご参加を［　23　］。"
             },
             {
               "id": 463,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "未満の",
                 "方面の",
@@ -5693,24 +6134,23 @@ export const practiceSetsBook = {
                 "以降の"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "働く女性のためのセミナー\r\n今度の日曜日に、働く女性を応援するためのセミナー、「ジョブ・セミナー　働く女性の新しい生き方」の第1回目の講座が、駅前の市民ホールで行われる予定です。\r\n現代の働く女性には、会社員、母、妻、娘など、いろいろな役割があり、いそがしい人が増えています。しかし以前よりいそがしくなった［　19-a　］、手伝ってくれる人がいないのが［　19-b　］。このセミナーでは、さまざまな業界で活躍されている女性が講師となり、全5回の予定で、［　20　］女性の生き方、上手な働き方を参加者とともに考えていきます。\r\nただ講演を聞く［　21　］、質問をしたり、意見を言える方を募集します。\r\n第1回目の講師は、会社を経営する森川花子さんです。「仕事を持つ女性の時間の使い方」をテーマにセミナーを行います。講演のあとに、講師と参加者の方が交流することができるパーティーもあります。\r\n第2回目［　22　］講師の予定など、その他の内容については、市民ホールのホームページで公開しています。参加をご希望の方は、市民ホール事務所まで直接電話でお申し込みください。みなさまのご参加を［　23　］。"
             },
             {
               "id": 464,
-              "questionText": "（　　）",
+              "questionText": "",
               "options": [
                 "待たれます",
                 "お待ちでいらっしゃいます",
                 "お待ちいたしております",
-                "お待ちくださいます",
-                "(a にもかかわらず / b 現状です)",
-                "(これからの)",
-                "(だけでなく)",
-                "(以上の)",
-                "(お待ちいたしております)"
+                "お待ちくださいます"
               ],
               "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "passageText": "働く女性のためのセミナー\r\n今度の日曜日に、働く女性を応援するためのセミナー、「ジョブ・セミナー　働く女性の新しい生き方」の第1回目の講座が、駅前の市民ホールで行われる予定です。\r\n現代の働く女性には、会社員、母、妻、娘など、いろいろな役割があり、いそがしい人が増えています。しかし以前よりいそがしくなった［　19-a　］、手伝ってくれる人がいないのが［　19-b　］。このセミナーでは、さまざまな業界で活躍されている女性が講師となり、全5回の予定で、［　20　］女性の生き方、上手な働き方を参加者とともに考えていきます。\r\nただ講演を聞く［　21　］、質問をしたり、意見を言える方を募集します。\r\n第1回目の講師は、会社を経営する森川花子さんです。「仕事を持つ女性の時間の使い方」をテーマにセミナーを行います。講演のあとに、講師と参加者の方が交流することができるパーティーもあります。\r\n第2回目［　22　］講師の予定など、その他の内容については、市民ホールのホームページで公開しています。参加をご希望の方は、市民ホール事務所まで直接電話でお申し込みください。みなさまのご参加を［　23　］。"
             }
           ]
         }
@@ -5726,7 +6166,7 @@ export const practiceSetsBook = {
           "titleJa": "文字・語彙",
           "questions": [
             {
-              "id": 465,
+              "id": 1,
               "questionText": "パーティーを開くので、部屋をきれいに<u>飾って</u>おく。",
               "options": [
                 "ぬって",
@@ -5734,11 +6174,11 @@ export const practiceSetsBook = {
                 "かざって",
                 "あらって"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 466,
+              "id": 2,
               "questionText": "材料は、<u>各自</u>で用意してください。",
               "options": [
                 "かくし",
@@ -5746,11 +6186,11 @@ export const practiceSetsBook = {
                 "きゃくし",
                 "きゃくじ"
               ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 467,
+              "id": 3,
               "questionText": "ここが世界一大きな<u>湖</u>です。",
               "options": [
                 "みずうみ",
@@ -5758,11 +6198,11 @@ export const practiceSetsBook = {
                 "ぬま",
                 "たき"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 468,
+              "id": 4,
               "questionText": "家の外で猫が<u>鳴いて</u>いる。",
               "options": [
                 "きいて",
@@ -5770,11 +6210,11 @@ export const practiceSetsBook = {
                 "ないて",
                 "つついて"
               ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 469,
+              "id": 5,
               "questionText": "<u>屋上</u>から町がよく見えます。",
               "options": [
                 "やしょう",
@@ -5782,11 +6222,11 @@ export const practiceSetsBook = {
                 "おくしょう",
                 "おくじょう"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 470,
+              "id": 6,
               "questionText": "ここを車が<u>通過</u>することはできません。",
               "options": [
                 "つうか",
@@ -5794,11 +6234,11 @@ export const practiceSetsBook = {
                 "とうか",
                 "とうが"
               ],
-              "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 471,
+              "id": 7,
               "questionText": "きのうからずっと<u>歯</u>が痛い。",
               "options": [
                 "ば",
@@ -5807,10 +6247,10 @@ export const practiceSetsBook = {
                 "じ"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 472,
+              "id": 8,
               "questionText": "大きな車輪が<u>回転</u>する。",
               "options": [
                 "てんかい",
@@ -5819,10 +6259,10 @@ export const practiceSetsBook = {
                 "かいでん"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 473,
+              "id": 9,
               "questionText": "やり方は、<u>きそく</u>で決まっています。",
               "options": [
                 "基則",
@@ -5831,10 +6271,10 @@ export const practiceSetsBook = {
                 "規測"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 474,
+              "id": 10,
               "questionText": "あの2人の<u>ゆうじょう</u>は、すばらしい。",
               "options": [
                 "有情",
@@ -5843,10 +6283,10 @@ export const practiceSetsBook = {
                 "真情"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 475,
+              "id": 11,
               "questionText": "赤ちゃんにセーターとマフラーを<u>あんだ</u>。",
               "options": [
                 "編んだ",
@@ -5854,11 +6294,11 @@ export const practiceSetsBook = {
                 "結んだ",
                 "結んだ"
               ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 476,
+              "id": 12,
               "questionText": "わが社では、大事なことは<u>おもに</u>社長が決める。",
               "options": [
                 "重に",
@@ -5867,10 +6307,10 @@ export const practiceSetsBook = {
                 "思に"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 477,
+              "id": 13,
               "questionText": "仕事についての新しい<u>いちしき</u>を得た。",
               "options": [
                 "意識",
@@ -5878,11 +6318,11 @@ export const practiceSetsBook = {
                 "常識",
                 "知識"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 478,
+              "id": 14,
               "questionText": "犬と猫の<u>せわ</u>をする。",
               "options": [
                 "世和",
@@ -5890,11 +6330,11 @@ export const practiceSetsBook = {
                 "世話",
                 "施話"
               ],
-              "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 479,
+              "id": 15,
               "questionText": "がんばれば、私にも（　　）はあると思います。",
               "options": [
                 "トップ",
@@ -5902,11 +6342,11 @@ export const practiceSetsBook = {
                 "チェンジ",
                 "チャンス"
               ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 480,
+              "id": 16,
               "questionText": "人を年齢などによって（　　）してはいけない。",
               "options": [
                 "別離",
@@ -5914,11 +6354,11 @@ export const practiceSetsBook = {
                 "対立",
                 "分別"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 481,
+              "id": 17,
               "questionText": "1日の仕事の内容を必ず上司に（　　）してください。",
               "options": [
                 "出席",
@@ -5926,11 +6366,11 @@ export const practiceSetsBook = {
                 "移転",
                 "報告"
               ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 482,
+              "id": 18,
               "questionText": "彼は、この町を（　　）行ってしまった。",
               "options": [
                 "拾って",
@@ -5938,11 +6378,11 @@ export const practiceSetsBook = {
                 "終えて",
                 "投げて"
               ],
-              "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 483,
+              "id": 19,
               "questionText": "レポートを専門（　　）にきちんとチェックしてもらってください。",
               "options": [
                 "人",
@@ -5950,11 +6390,11 @@ export const practiceSetsBook = {
                 "家",
                 "屋"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 484,
+              "id": 20,
               "questionText": "大きなバケツに水を（　　）ください。",
               "options": [
                 "ためて",
@@ -5962,11 +6402,11 @@ export const practiceSetsBook = {
                 "置いて",
                 "投げて"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 485,
+              "id": 21,
               "questionText": "事故のニュースを聞いて、（　　）を受けた。",
               "options": [
                 "ダウン",
@@ -5974,11 +6414,11 @@ export const practiceSetsBook = {
                 "マイナス",
                 "ショック"
               ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 486,
+              "id": 22,
               "questionText": "出発する日、（　　）にたくさんの人が来てくれた。",
               "options": [
                 "見返し",
@@ -5987,10 +6427,10 @@ export const practiceSetsBook = {
                 "見送り"
               ],
               "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 487,
+              "id": 23,
               "questionText": "先生に会ったので、（　　）した。",
               "options": [
                 "応援",
@@ -5998,11 +6438,11 @@ export const practiceSetsBook = {
                 "挨拶",
                 "尊重"
               ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 488,
+              "id": 24,
               "questionText": "その晩、私は、暖かいベッドで（　　）眠った。",
               "options": [
                 "あっさり",
@@ -6010,11 +6450,11 @@ export const practiceSetsBook = {
                 "さっぱり",
                 "ぐったり"
               ],
-              "correctIndex": 3,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 489,
+              "id": 25,
               "questionText": "このような（　　）な資料をいただき、ありがとうございます。",
               "options": [
                 "丈夫",
@@ -6022,11 +6462,11 @@ export const practiceSetsBook = {
                 "地味",
                 "派手"
               ],
-              "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 490,
+              "id": 26,
               "questionText": "彼女と家の近くで<u>再会</u>した。",
               "options": [
                 "待ち合わせた",
@@ -6035,10 +6475,10 @@ export const practiceSetsBook = {
                 "約束した"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 491,
+              "id": 27,
               "questionText": "子どもを見ていると、<u>はらはらする</u>。",
               "options": [
                 "心配だ",
@@ -6046,11 +6486,11 @@ export const practiceSetsBook = {
                 "期待する",
                 "感動する"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 0,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 492,
+              "id": 28,
               "questionText": "木村は、今、席を<u>はずして</u>おります。",
               "options": [
                 "そうじて",
@@ -6059,10 +6499,10 @@ export const practiceSetsBook = {
                 "戻ってきて"
               ],
               "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 493,
+              "id": 29,
               "questionText": "このホテルは<u>アクセス</u>がいい。",
               "options": [
                 "目立つところにある",
@@ -6070,11 +6510,11 @@ export const practiceSetsBook = {
                 "とても人気がある",
                 "交通が便利だ"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 494,
+              "id": 30,
               "questionText": "あの人は<u>正直</u>な人だ。",
               "options": [
                 "うそをつかない",
@@ -6082,83 +6522,68 @@ export const practiceSetsBook = {
                 "勉強ができる",
                 "他人にきびしい"
               ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 0,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 495,
+              "id": 31,
               "questionText": "<u>つつむ</u>",
               "options": [
-                "テントがとばされないように、ロープでつつんだ。",
-                "これはプレゼントなので、きれいな紙でつつんでください。",
-                "やぶれた紙をセロテープでつつみました。",
-                "雪が山の頂上をつつんでいる。"
+                "テントがとばされないように、ロープで<u>つつんだ</u>。",
+                "これはプレゼントなので、きれいな紙で<u>つつんで</u>ください。",
+                "やぶれた紙をセロテープで<u>つつみました</u>。",
+                "雪が山の頂上を<u>つつんで</u>いる。"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 496,
+              "id": 32,
               "questionText": "<u>こぼす</u>",
               "options": [
-                "急いでいたので、持っていたかばんをこぼしてしまった。",
-                "時計を床に落としたらこぼしてしまった。",
-                "電車の中にさいふをこぼしてしまい、後で取りに行った。",
-                "シャツにコーヒーをこぼしたので、すぐに着替えた。"
+                "急いでいたので、持っていたかばんを<u>こぼして</u>しまった。",
+                "時計を床に落としたら<u>こぼして</u>しまった。",
+                "電車の中にさいふを<u>こぼして</u>しまい、後で取りに行った。",
+                "シャツにコーヒーを<u>こぼし</u>たので、すぐに着替えた。"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 497,
-              "questionText": "<u>かど</u>",
+              "id": 33,
+              "questionText": "<u><ruby>角<rt>かど</rt></ruby></u>",
               "options": [
-                "部屋の角に植木が置いてあります。",
-                "橋のまん中ではなく、角を渡ってください。",
-                "転んだとき、テーブルの角で頭を打って、とても痛かった。",
-                "その書類は、机の角に入っています。"
+                "部屋の<u><ruby>角<rt>かど</rt></ruby></u>に植木が置いてあります。",
+                "橋のまん中ではなく、<u><ruby>角<rt>かど</rt></ruby></u>を渡ってください。",
+                "転んだとき、テーブルの<u><ruby>角<rt>かど</rt></ruby></u>で頭を打って、とても痛かった。",
+                "その書類は、机の<u><ruby>角<rt>かど</rt></ruby></u>に入っています。"
               ],
               "correctIndex": 0,
-              "sectionType": "vocabulary-kanji"
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 498,
-              "questionText": "<u>あいて</u>",
+              "id": 34,
+              "questionText": "<u><ruby>相手<rt>あいて</rt></ruby></u>",
               "options": [
-                "台所のテーブルの相手として、このいすを買いました。",
-                "天気のいい日には、公園にたくさん相手が歩いている。",
-                "さっきの電話の相手は、国の母親です。",
-                "からい料理は、ごはんの相手にちょうどいい。"
+                "台所のテーブルの<u><ruby>相手<rt>あいて</rt></ruby></u>として、このいすを買いました。",
+                "天気のいい日には、公園にたくさん<u><ruby>相手<rt>あいて</rt></ruby></u>が歩いている。",
+                "さっきの電話の<u><ruby>相手<rt>あいて</rt></ruby></u>は、国の母親です。",
+                "からい料理は、ごはんの<u><ruby>相手<rt>あいて</rt></ruby></u>にちょうどいい。"
               ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 0,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 499,
-              "questionText": "<u>むちゅう</u>",
+              "id": 35,
+              "questionText": "<u><ruby>夢中<rt>むちゅう</rt></ruby></u>",
               "options": [
-                "彼は、自分の仕事に夢中で取り組んでいる。",
-                "今朝は9時まで夢中で、目が覚めませんでした。",
-                "寝不足のまま、夢中で運転するのは危ないです。",
-                "試合に勝ったあとには、夢中で練習しないでください。",
-                "<u>3</u>",
-                "<u>3</u>",
-                "<u>2</u>",
-                "<u>3</u>"
+                "彼は、自分の仕事に<u><ruby>夢中<rt>むちゅう</rt></ruby></u>で取り組んでいる。",
+                "今朝は9時まで<u><ruby>夢中<rt>むちゅう</rt></ruby></u>で、目が覚めませんでした。",
+                "寝不足のまま、<u><ruby>夢中<rt>むちゅう</rt></ruby></u>で運転するのは危ないです。",
+                "試合に勝ったあとには、<u><ruby>夢中<rt>むちゅう</rt></ruby></u>で練習しないでください。"
               ],
-              "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
-            },
-            {
-              "id": 500,
-              "questionText": "（　　）",
-              "options": [
-                "<u>1</u>",
-                "---",
-                "### <u>"
-              ],
-              "correctIndex": 1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 0,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             }
           ]
         },
@@ -6167,7 +6592,7 @@ export const practiceSetsBook = {
           "titleJa": "文法・読解",
           "questions": [
             {
-              "id": 501,
+              "id": 1,
               "questionText": "みんなが私の意見に反対していたが、彼女（　　）応援してくれた。",
               "options": [
                 "だけは",
@@ -6176,10 +6601,11 @@ export const practiceSetsBook = {
                 "だけど"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 502,
+              "id": 2,
               "questionText": "すみません、博物館へは（　　）行けばいいか、教えてください。",
               "options": [
                 "どう",
@@ -6187,11 +6613,12 @@ export const practiceSetsBook = {
                 "こう",
                 "こんなに"
               ],
-              "correctIndex": 2,
-              "sectionType": "grammar-reading"
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 503,
+              "id": 3,
               "questionText": "駅に着き（　　）、電話をかけてください。",
               "options": [
                 "通りに",
@@ -6199,11 +6626,12 @@ export const practiceSetsBook = {
                 "次第",
                 "とたん"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 3,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 504,
+              "id": 4,
               "questionText": "空に雲がたくさん出ているので、（　　）雨が降るかもしれません。",
               "options": [
                 "もしも",
@@ -6211,11 +6639,12 @@ export const practiceSetsBook = {
                 "もし",
                 "もはや"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 505,
+              "id": 5,
               "questionText": "あなたは、今までアメリカへ（　　）ことがありますか。",
               "options": [
                 "行き",
@@ -6223,11 +6652,12 @@ export const practiceSetsBook = {
                 "行くの",
                 "行ったの"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 3,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 506,
+              "id": 6,
               "questionText": "明日の勝負で優勝できるか決まるので、負ける（　　）。",
               "options": [
                 "わけではない",
@@ -6235,11 +6665,12 @@ export const practiceSetsBook = {
                 "ことではない",
                 "ことにはいかない"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 507,
+              "id": 7,
               "questionText": "テレビを5時間（　　）つづけて、目が痛くなりました。",
               "options": [
                 "見られ",
@@ -6247,11 +6678,12 @@ export const practiceSetsBook = {
                 "見せた",
                 "見"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 3,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 508,
+              "id": 8,
               "questionText": "私がこの国の首相（　　）、政治をもっとよくするのに。",
               "options": [
                 "だったからには",
@@ -6259,11 +6691,12 @@ export const practiceSetsBook = {
                 "にしたら",
                 "にしては"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 509,
+              "id": 9,
               "questionText": "明日、ひさしぶりの休みなんで、町へ（　　）思います。",
               "options": [
                 "遊びに行くことに",
@@ -6271,11 +6704,12 @@ export const practiceSetsBook = {
                 "遊びに行くほどだと",
                 "遊びに行こうと"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 3,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 510,
+              "id": 10,
               "questionText": "お荷物の配送については、受付カウンターに（　　）、お願いいたします。",
               "options": [
                 "うかがってくださるよう",
@@ -6283,11 +6717,12 @@ export const practiceSetsBook = {
                 "聞いてあげるよう",
                 "たずねてあげますよう"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 511,
+              "id": 11,
               "questionText": "この町には、バスも電車も通っていないのだから、（　　）。",
               "options": [
                 "歩くよりほかはある",
@@ -6295,11 +6730,12 @@ export const practiceSetsBook = {
                 "歩くよりほかだ",
                 "歩くよりほかではない"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 512,
+              "id": 12,
               "questionText": "この仕事は、とても大変そうに見えますが、がんばれば（　　）と思います。",
               "options": [
                 "ならないこともない",
@@ -6307,11 +6743,12 @@ export const practiceSetsBook = {
                 "できないこともない",
                 "できないこともある"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 513,
+              "id": 13,
               "questionText": "明日は会社の面接に行く予定だ。絶対に遅刻（　　）。",
               "options": [
                 "するままにすると",
@@ -6319,23 +6756,25 @@ export const practiceSetsBook = {
                 "しないままにしないと",
                 "しないようにしないと"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 514,
-              "questionText": "村田「アルバイトは見つかった？」",
+              "id": 14,
+              "questionText": "村田「アルバイトは見つかった？」  \r\n    川本「それが結局、__________ __________ ★ __________ 、いいアルバイトが見つからなかったんだ。」",
               "options": [
                 "できない",
                 "車の",
                 "ばかりに",
                 "運転が"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 515,
+              "id": 15,
               "questionText": "ちょうど先生に、会場への行き方を__________ __________ ★ __________ ところです。",
               "options": [
                 "て",
@@ -6343,11 +6782,12 @@ export const practiceSetsBook = {
                 "た",
                 "さしあげ"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 1,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 516,
+              "id": 16,
               "questionText": "結論から言えば、__________ __________ ★ __________ ないかと思います。",
               "options": [
                 "いるのは",
@@ -6355,11 +6795,12 @@ export const practiceSetsBook = {
                 "間違って",
                 "あなたがたの"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 517,
+              "id": 17,
               "questionText": "この新しい__________ __________ ★ __________ ものです。",
               "options": [
                 "科学者",
@@ -6367,55 +6808,91 @@ export const practiceSetsBook = {
                 "によって",
                 "機械は"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 518,
+              "id": 18,
               "questionText": "これから発表する内容は、10年以上__________ __________ ★ __________ ものだ。",
               "options": [
                 "資料に",
                 "かけて",
                 "もとづく",
-                "集めた",
+                "集めた"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
+            },
+            {
+              "id": 19,
+              "questionText": "",
+              "passageText": "**新しいスタイルの雑誌**\r\n\r\n海外からやってきて、日本に住む人々の生活を紹介する雑誌、「Japan Lifestyle」が全国の書店で発売されました。\r\n\r\nこれまで、新聞や雑誌などで、日本で生活する留学生たちや、日本で仕事をする外国の人々について簡単に紹介されることはありましたが、生活そのものをテーマとした雑誌が発行されるのは［　19　］ことです。\r\n\r\n表紙のデザインも明るく、楽しそうな雑誌です。たくさんのカラフルな写真やイラストを使って、彼らの生活の様子を生き生きと紹介しています。\r\n\r\nこの雑誌は、毎月ではなく季刊、［　20　］春、夏、秋、冬と、1年に4回発行される予定です。これまでは、インターネットで予約した読者に対し、通信販売のみを行ってきましたが、予想以上に売れ行きがよかったので、書店で売ることになった［　21　］。\r\n\r\nこの雑誌を発行する出版社は、「この雑誌［　22　］、外国の人たちがなやみや楽しみを、おたがいに聞いたり教えあったりして、彼らの日本での生活が少しでもよいものになればと思う。」と話しています。日本全国で行われる日本人との交流に関する情報も、［　23　］。",
+              "instruction": "問題3 つぎの文章は、ある雑誌について書かれたものです。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "options": [
                 "かなりよくある",
                 "ときどき見られる",
                 "きわめてまれな",
-                "ないこともない",
-                "ところで",
-                "つまり",
-                "しかし",
-                "それから",
-                "というわけです",
-                "ものがあります",
-                "どこではありません",
-                "というばかりです",
-                "にとって",
-                "に際して",
-                "について",
-                "を通じて",
-                "紹介するおそれがあるのです",
-                "紹介していきかねません",
-                "紹介していくつもりだそうです",
-                "紹介するかのようです",
-                "1",
-                "1",
-                "4",
-                "2"
+                "ないこともない"
               ],
-              "correctIndex": -1,
+              "correctIndex": 1,
               "sectionType": "grammar-reading"
             },
             {
-              "id": 519,
-              "questionText": "（　　）",
+              "id": 20,
+              "questionText": "",
+              "passageText": "**新しいスタイルの雑誌**\r\n\r\n海外からやってきて、日本に住む人々の生活を紹介する雑誌、「Japan Lifestyle」が全国の書店で発売されました。\r\n\r\nこれまで、新聞や雑誌などで、日本で生活する留学生たちや、日本で仕事をする外国の人々について簡単に紹介されることはありましたが、生活そのものをテーマとした雑誌が発行されるのは［　19　］ことです。\r\n\r\n表紙のデザインも明るく、楽しそうな雑誌です。たくさんのカラフルな写真やイラストを使って、彼らの生活の様子を生き生きと紹介しています。\r\n\r\nこの雑誌は、毎月ではなく季刊、［　20　］春、夏、秋、冬と、1年に4回発行される予定です。これまでは、インターネットで予約した読者に対し、通信販売のみを行ってきましたが、予想以上に売れ行きがよかったので、書店で売ることになった［　21　］。\r\n\r\nこの雑誌を発行する出版社は、「この雑誌［　22　］、外国の人たちがなやみや楽しみを、おたがいに聞いたり教えあったりして、彼らの日本での生活が少しでもよいものになればと思う。」と話しています。日本全国で行われる日本人との交流に関する情報も、［　23　］。",
+              "instruction": "問題3 つぎの文章は、ある雑誌について書かれたものです。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "options": [
-                "3",
-                "---",
-                "---",
-                "### <u>"
+                "ところで",
+                "つまり",
+                "しかし",
+                "それから"
               ],
-              "correctIndex": -1,
+              "correctIndex": 2,
+              "sectionType": "grammar-reading"
+            },
+            {
+              "id": 21,
+              "questionText": "",
+              "passageText": "**新しいスタイルの雑誌**\r\n\r\n海外からやってきて、日本に住む人々の生活を紹介する雑誌、「Japan Lifestyle」が全国の書店で発売されました。\r\n\r\nこれまで、新聞や雑誌などで、日本で生活する留学生たちや、日本で仕事をする外国の人々について簡単に紹介されることはありましたが、生活そのものをテーマとした雑誌が発行されるのは［　19　］ことです。\r\n\r\n表紙のデザインも明るく、楽しそうな雑誌です。たくさんのカラフルな写真やイラストを使って、彼らの生活の様子を生き生きと紹介しています。\r\n\r\nこの雑誌は、毎月ではなく季刊、［　20　］春、夏、秋、冬と、1年に4回発行される予定です。これまでは、インターネットで予約した読者に対し、通信販売のみを行ってきましたが、予想以上に売れ行きがよかったので、書店で売ることになった［　21　］。\r\n\r\nこの雑誌を発行する出版社は、「この雑誌［　22　］、外国の人たちがなやみや楽しみを、おたがいに聞いたり教えあったりして、彼らの日本での生活が少しでもよいものになればと思う。」と話しています。日本全国で行われる日本人との交流に関する情報も、［　23　］。",
+              "instruction": "問題3 つぎの文章は、ある雑誌について書かれたものです。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "options": [
+                "というわけです",
+                "ものがあります",
+                "どこではありません",
+                "というばかりです"
+              ],
+              "correctIndex": 1,
+              "sectionType": "grammar-reading"
+            },
+            {
+              "id": 22,
+              "questionText": "",
+              "passageText": "**新しいスタイルの雑誌**\r\n\r\n海外からやってきて、日本に住む人々の生活を紹介する雑誌、「Japan Lifestyle」が全国の書店で発売されました。\r\n\r\nこれまで、新聞や雑誌などで、日本で生活する留学生たちや、日本で仕事をする外国の人々について簡単に紹介されることはありましたが、生活そのものをテーマとした雑誌が発行されるのは［　19　］ことです。\r\n\r\n表紙のデザインも明るく、楽しそうな雑誌です。たくさんのカラフルな写真やイラストを使って、彼らの生活の様子を生き生きと紹介しています。\r\n\r\nこの雑誌は、毎月ではなく季刊、［　20　］春、夏、秋、冬と、1年に4回発行される予定です。これまでは、インターネットで予約した読者に対し、通信販売のみを行ってきましたが、予想以上に売れ行きがよかったので、書店で売ることになった［　21　］。\r\n\r\nこの雑誌を発行する出版社は、「この雑誌［　22　］、外国の人たちがなやみや楽しみを、おたがいに聞いたり教えあったりして、彼らの日本での生活が少しでもよいものになればと思う。」と話しています。日本全国で行われる日本人との交流に関する情報も、［　23　］。",
+              "instruction": "問題3 つぎの文章は、ある雑誌について書かれたものです。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "options": [
+                "にとって",
+                "に際して",
+                "について",
+                "を通じて"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading"
+            },
+            {
+              "id": 23,
+              "questionText": "",
+              "passageText": "**新しいスタイルの雑誌**\r\n\r\n海外からやってきて、日本に住む人々の生活を紹介する雑誌、「Japan Lifestyle」が全国の書店で発売されました。\r\n\r\nこれまで、新聞や雑誌などで、日本で生活する留学生たちや、日本で仕事をする外国の人々について簡単に紹介されることはありましたが、生活そのものをテーマとした雑誌が発行されるのは［　19　］ことです。\r\n\r\n表紙のデザインも明るく、楽しそうな雑誌です。たくさんのカラフルな写真やイラストを使って、彼らの生活の様子を生き生きと紹介しています。\r\n\r\nこの雑誌は、毎月ではなく季刊、［　20　］春、夏、秋、冬と、1年に4回発行される予定です。これまでは、インターネットで予約した読者に対し、通信販売のみを行ってきましたが、予想以上に売れ行きがよかったので、書店で売ることになった［　21　］。\r\n\r\nこの雑誌を発行する出版社は、「この雑誌［　22　］、外国の人たちがなやみや楽しみを、おたがいに聞いたり教えあったりして、彼らの日本での生活が少しでもよいものになればと思う。」と話しています。日本全国で行われる日本人との交流に関する情報も、［　23　］。",
+              "instruction": "問題3 つぎの文章は、ある雑誌について書かれたものです。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "options": [
+                "紹介するおそれがあるのです",
+                "紹介していきかねません",
+                "紹介していくつもりだそうです",
+                "紹介するかのようです"
+              ],
+              "correctIndex": 2,
               "sectionType": "grammar-reading"
             }
           ]
@@ -6432,7 +6909,7 @@ export const practiceSetsBook = {
           "titleJa": "文字・語彙",
           "questions": [
             {
-              "id": 520,
+              "id": 1,
               "questionText": "ものを<u>盗ん</u>ではいけません。",
               "options": [
                 "にくんで",
@@ -6441,22 +6918,22 @@ export const practiceSetsBook = {
                 "ふんで"
               ],
               "correctIndex": 2,
-              "sectionType": "vocabulary-kanji"
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 521,
-              "questionText": "彼のけがの程度は、まだわからない。",
+              "id": 2,
+              "questionText": "彼のけがの<u>程度</u>は、まだわからない。",
               "options": [
                 "ていど",
                 "でいど",
                 "しょうど",
                 "じょうど"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 0,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 522,
+              "id": 3,
               "questionText": "<u>帰国</u>する前に先生に会いたいです。",
               "options": [
                 "さくに",
@@ -6464,11 +6941,11 @@ export const practiceSetsBook = {
                 "きこく",
                 "きごく"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 523,
+              "id": 4,
               "questionText": "彼女は、目を<u>閉じて</u>音楽を聞いていた。",
               "options": [
                 "かんじて",
@@ -6476,11 +6953,11 @@ export const practiceSetsBook = {
                 "はじめて",
                 "ふうじて"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 524,
+              "id": 5,
               "questionText": "あの人は、あまり<u>欲</u>がないようです。",
               "options": [
                 "こころ",
@@ -6488,11 +6965,11 @@ export const practiceSetsBook = {
                 "いよく",
                 "よく"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 525,
+              "id": 6,
               "questionText": "田中さんは、私の<u>親友</u>です。",
               "options": [
                 "しんゆう",
@@ -6500,23 +6977,23 @@ export const practiceSetsBook = {
                 "じんゆう",
                 "じにゅう"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 526,
-              "questionText": "袋が破れているので、とりかえてください。",
+              "id": 7,
+              "questionText": "<u>袋</u>が破れているので、とりかえてください。",
               "options": [
                 "ぬの",
                 "はこ",
                 "ひも",
                 "ふくろ"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 527,
+              "id": 8,
               "questionText": "次の場所へ<u>移動</u>しなければなりません。",
               "options": [
                 "うんどう",
@@ -6524,11 +7001,11 @@ export const practiceSetsBook = {
                 "こうどう",
                 "いどう"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 528,
+              "id": 9,
               "questionText": "仕事は、<u>じゅんちょう</u>に進んでいる。",
               "options": [
                 "順常",
@@ -6536,11 +7013,11 @@ export const practiceSetsBook = {
                 "順長",
                 "順状"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 529,
+              "id": 10,
               "questionText": "友だちのことばを<u>しんよう</u>する。",
               "options": [
                 "信用",
@@ -6548,11 +7025,11 @@ export const practiceSetsBook = {
                 "真用",
                 "真頼"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 0,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 530,
+              "id": 11,
               "questionText": "一晩中<u>おどって</u>、とても楽しかった。",
               "options": [
                 "通って",
@@ -6560,11 +7037,11 @@ export const practiceSetsBook = {
                 "踊って",
                 "舞って"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 531,
+              "id": 12,
               "questionText": "ラッシュアワーを<u>さけて</u>、早い時間の電車に乗った。",
               "options": [
                 "逃げて",
@@ -6572,11 +7049,11 @@ export const practiceSetsBook = {
                 "割けて",
                 "避けて"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 532,
+              "id": 13,
               "questionText": "<u>へいわ</u>な生活を送りたい。",
               "options": [
                 "平安",
@@ -6584,11 +7061,11 @@ export const practiceSetsBook = {
                 "平和",
                 "和平"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 533,
+              "id": 14,
               "questionText": "サッカーの<u>しあい</u>に出場した。",
               "options": [
                 "試場",
@@ -6596,11 +7073,11 @@ export const practiceSetsBook = {
                 "技場",
                 "技合"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 534,
+              "id": 15,
               "questionText": "この雑誌の（　　）は、中年男性だ。",
               "options": [
                 "メーカー",
@@ -6608,11 +7085,11 @@ export const practiceSetsBook = {
                 "ターゲット",
                 "リンク"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 535,
+              "id": 16,
               "questionText": "明日の5時に荷物の（　　）をお願いします。",
               "options": [
                 "伝達",
@@ -6620,11 +7097,11 @@ export const practiceSetsBook = {
                 "到達",
                 "配達"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 536,
+              "id": 17,
               "questionText": "車が（　　）したので、自転車で会社に行くことにした。",
               "options": [
                 "破壊",
@@ -6632,11 +7109,11 @@ export const practiceSetsBook = {
                 "悪化",
                 "減亡"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 537,
+              "id": 18,
               "questionText": "時間がたって、コーヒーが（　　）しまった。",
               "options": [
                 "凍って",
@@ -6644,11 +7121,11 @@ export const practiceSetsBook = {
                 "わいて",
                 "とけて"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 538,
+              "id": 19,
               "questionText": "田中さんは、私とリンさんの（　　）の友人だ。",
               "options": [
                 "共同",
@@ -6656,11 +7133,11 @@ export const practiceSetsBook = {
                 "共通",
                 "共有"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 539,
+              "id": 20,
               "questionText": "難しい問題が（　　）、うれしかった。",
               "options": [
                 "解けて",
@@ -6668,11 +7145,11 @@ export const practiceSetsBook = {
                 "折れて",
                 "破れて"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 0,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 540,
+              "id": 21,
               "questionText": "あと1000円（　　）すると、もっとよい部屋に変更できます。",
               "options": [
                 "ダブル",
@@ -6680,11 +7157,11 @@ export const practiceSetsBook = {
                 "プラス",
                 "チップ"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 541,
+              "id": 22,
               "questionText": "このバイオリンはイタリア（　　）です。",
               "options": [
                 "造",
@@ -6692,11 +7169,11 @@ export const practiceSetsBook = {
                 "作",
                 "製"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 542,
+              "id": 23,
               "questionText": "3人の意見が（　　）した。",
               "options": [
                 "合同",
@@ -6704,11 +7181,11 @@ export const practiceSetsBook = {
                 "統一",
                 "一致"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 543,
+              "id": 24,
               "questionText": "有名なレストランの料理を食べたが、おいしくなくて（　　）した。",
               "options": [
                 "びったり",
@@ -6716,11 +7193,11 @@ export const practiceSetsBook = {
                 "めっきり",
                 "がっかり"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 544,
+              "id": 25,
               "questionText": "今年の夏は、いつもより（　　）すずしかった。",
               "options": [
                 "特殊",
@@ -6728,11 +7205,11 @@ export const practiceSetsBook = {
                 "一斉",
                 "同一"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 545,
+              "id": 26,
               "questionText": "<u>とんでもない</u>ことが起こった。",
               "options": [
                 "初めての",
@@ -6740,11 +7217,11 @@ export const practiceSetsBook = {
                 "普通の",
                 "意外な"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 546,
+              "id": 27,
               "questionText": "部屋を<u>散らかした</u>。",
               "options": [
                 "きれいにした",
@@ -6752,11 +7229,11 @@ export const practiceSetsBook = {
                 "明るくした",
                 "暗くした"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 547,
+              "id": 28,
               "questionText": "彼女は、道の途中で<u>ふり返った</u>。",
               "options": [
                 "前を見た",
@@ -6764,23 +7241,23 @@ export const practiceSetsBook = {
                 "あちらへ行った",
                 "こちらへ帰ってきた"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 548,
-              "questionText": "後輩「おかわりを注文しましょうか。」",
+              "id": 29,
+              "questionText": "後輩「おかわりを注文しましょうか。」  \r\n    先輩「今、料理は<u>間に合っている</u>よ。」",
               "options": [
                 "時間通りに来る",
                 "十分である",
                 "完成している",
                 "もっと必要である"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 549,
+              "id": 30,
               "questionText": "彼女は、とても<u>慎重</u>な人です。",
               "options": [
                 "人より静かな",
@@ -6788,79 +7265,380 @@ export const practiceSetsBook = {
                 "よく考えてから行動する",
                 "何を考えているかわからない"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
             },
             {
-              "id": 550,
+              "id": 31,
               "questionText": "<u>ほえる</u>",
               "options": [
-                "家の外で、虫のほえる声が聞こえた。",
-                "新入社員が社長に向かって友だちのようにほえていた。",
-                "私の家の犬は、夜中によくほえます。",
-                "かわいがっていたペットが死んで、悲しくてほえた。"
+                "家の外で、虫の<u>ほえる</u>声が聞こえた。",
+                "新入社員が社長に向かって友だちのように<u>ほえて</u>いた。",
+                "私の家の犬は、夜中によく<u>ほえます</u>。",
+                "かわいがっていたペットが死んで、悲しくて<u>ほえた</u>。"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 2,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 551,
+              "id": 32,
               "questionText": "<u>あふれる</u>",
               "options": [
-                "お菓子を買いすぎてあふれたので、少しあげます。",
-                "コップに水を入れたら、あふれてしまった。",
-                "授業が終わったあとも、教室に生徒が1人あふれていた。",
-                "道で転んで、足が赤くあふれてしまいました。"
+                "お菓子を買いすぎて<u>あふれた</u>ので、少しあげます。",
+                "コップに水を入れたら、<u>あふれて</u>しまった。",
+                "授業が終わったあとも、教室に生徒が1人<u>あふれて</u>いた。",
+                "道で転んで、足が赤く<u>あふれて</u>しまいました。"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 552,
+              "id": 33,
               "questionText": "<u>しばる</u>",
               "options": [
-                "出かけるときは、ちゃんとドアのかぎをしばってください。",
-                "シャツのボタンが開いているので、しばったほうがいいですよ。",
-                "手紙に切手をしばって、ポストに入れた。",
-                "その荷物をロープでかたくしばってください。"
+                "出かけるときは、ちゃんとドアのかぎを<u>しばって</u>ください。",
+                "シャツのボタンが開いているので、<u>しばった</u>ほうがいいですよ。",
+                "手紙に切手を<u>しばって</u>、ポストに入れた。",
+                "その荷物をロープでかたく<u>しばって</u>ください。"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 553,
+              "id": 34,
               "questionText": "<u>とく</u>",
               "options": [
-                "彼女はギターがとてもとく。",
-                "商売で大きなとくをした。",
-                "私はあなたよりテニスがとくです。",
-                "デパートでとくでかばんを買った。"
+                "彼女はギターがとても<u>とく</u>。",
+                "商売で大きな<u>とく</u>をした。",
+                "私はあなたよりテニスが<u>とく</u>です。",
+                "デパートで<u>とく</u>でかばんを買った。"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 1,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             },
             {
-              "id": 554,
+              "id": 35,
               "questionText": "<u>するどい</u>",
               "options": [
-                "一日中、するどい仕事をするのは大変だ。",
-                "このかばんは、するどくてとても便利だ。",
-                "このスープは、するどいので気をつけて食べてください。",
-                "彼の批判は、ときどきとてもするどい。",
-                "<u>3</u> (ぬすんで)",
-                "<u>1</u> (ていど)",
-                "<u>3</u> (きこく)",
-                "<u>2</u> (とじて)"
+                "一日中、<u>するどい</u>仕事をするのは大変だ。",
+                "このかばんは、<u>するどくて</u>とても便利だ。",
+                "このスープは、<u>するどい</u>ので気をつけて食べてください。",
+                "彼の批判は、ときどきとても<u>するどい</u>。"
               ],
-              "correctIndex": -1,
-              "sectionType": "vocabulary-kanji"
+              "correctIndex": 3,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。"
             }
           ]
         },
         "grammar-reading": {
           "title": "Grammar & Reading",
           "titleJa": "文法・読解",
-          "questions": []
+          "questions": [
+            {
+              "id": 1,
+              "questionText": "彼女と連絡が取れなくなってから、今日（　　）5日になります。",
+              "options": [
+                "は",
+                "で",
+                "も",
+                "が"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
+            },
+            {
+              "id": 2,
+              "questionText": "お金（　　）あれば、今よりもっといい生活ができるのに。",
+              "options": [
+                "まで",
+                "しか",
+                "さえ",
+                "ほど"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
+            },
+            {
+              "id": 3,
+              "questionText": "一度約束した（　　）、絶対に守ってください。",
+              "options": [
+                "からでは",
+                "からには",
+                "からいって",
+                "からといって"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
+            },
+            {
+              "id": 4,
+              "questionText": "今井「今日のセミナー、なんだか出席者が少ないね。」  \r\n   山本「電車の事故（　　）、みんなが来るのが遅れているらしいよ。」",
+              "options": [
+                "ので",
+                "のわけで",
+                "のに",
+                "のせいで"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
+            },
+            {
+              "id": 5,
+              "questionText": "先週は、3日間（　　）大雪が降りました。",
+              "options": [
+                "にまで",
+                "にかけて",
+                "にこそ",
+                "にわたって"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
+            },
+            {
+              "id": 6,
+              "questionText": "2年前の旅行を（　　）、彼女と親しくなった。",
+              "options": [
+                "最中に",
+                "限りに",
+                "きっかけに",
+                "ついでに"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
+            },
+            {
+              "id": 7,
+              "questionText": "なんでこんなに手がよごれているんだ。すぐに（　　）しろ。",
+              "options": [
+                "きれいに",
+                "きれいな",
+                "きれい",
+                "きれいで"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
+            },
+            {
+              "id": 8,
+              "questionText": "テストの答えを聞かれても、（　　）わけがありません。",
+              "options": [
+                "教えない",
+                "教えられる",
+                "教えて",
+                "教えた"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
+            },
+            {
+              "id": 9,
+              "questionText": "私が旅行で買ってきたおみやげを、社長に（　　）。",
+              "options": [
+                "しました",
+                "くださいました",
+                "やりました",
+                "さしあげました"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
+            },
+            {
+              "id": 10,
+              "questionText": "父「どうして泣いてるんだ？」  \r\n    娘「だって、お母さんが（　　）。」",
+              "options": [
+                "いないんだっけ",
+                "いないんだもん",
+                "いなかったっけ",
+                "いないんだそう"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
+            },
+            {
+              "id": 11,
+              "questionText": "子どものころは、この川でよく（　　）。",
+              "options": [
+                "泳いだものです",
+                "泳ぎたいものです",
+                "泳いだやらず",
+                "泳ぎたいやらず"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
+            },
+            {
+              "id": 12,
+              "questionText": "おかげさまで、とても楽しくこの仕事を（　　）。またよろしくお願いします。",
+              "options": [
+                "していただきました",
+                "されていただきました",
+                "なさっていただきました",
+                "させていだきました"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
+            },
+            {
+              "id": 13,
+              "questionText": "情報は、新聞が伝えているから正しい（　　）、自分で正しいかどうか考えることが大切だ。",
+              "options": [
+                "としたことでなく",
+                "としたことで",
+                "というものではなく",
+                "というもので"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。"
+            },
+            {
+              "id": 14,
+              "questionText": "連休に、海か山か__________ __________ ★ __________ 、みんなで海水浴に行った。",
+              "options": [
+                "あげく",
+                "どちらに",
+                "なやんだ",
+                "行くか"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
+            },
+            {
+              "id": 15,
+              "questionText": "きのうの夜、先生__________ __________ ★ __________ 、みんなでお酒を飲みました。",
+              "options": [
+                "後で",
+                "が",
+                "お休みになった",
+                "その"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
+            },
+            {
+              "id": 16,
+              "questionText": "子どものころ、__________ __________ ★ __________ 、母にひどくしかられました。",
+              "options": [
+                "けんかでも",
+                "ものなら",
+                "しょう",
+                "友だちと"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
+            },
+            {
+              "id": 17,
+              "questionText": "あの人は、スポーツ選手の__________ __________ ★ __________ と思います。",
+              "options": [
+                "わりに",
+                "小さい",
+                "体が",
+                "ほうだ"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
+            },
+            {
+              "id": 18,
+              "questionText": "昔__________ __________ ★ __________ 習慣はありません。",
+              "options": [
+                "ともかく",
+                "なら",
+                "そんな",
+                "今は"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading",
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
+            },
+            {
+              "id": 19,
+              "questionText": "",
+              "passageText": "**食べ物とコミュニケーション**\r\n\r\n「男性の心をつかむには、まず胃袋から」という言葉を聞いたことがありますか。恋愛について相談をしているときに、だれかから聞いたことがあるかもしれません。男性は、［　19　］を作ってくれる女性を好きになることが多い、つまり、食事は男性にとっては重要だということです。\r\n\r\n［　20　］、この言葉は、恋愛や男性だけにあてはまるわけではありません。人と人とのコミュニケーションにおいて、食べ物は非常に重要な役割をはたすからです。\r\n\r\nたとえば、ある人と親しくなりたいと思った場合、「一緒に近くを歩きませんか」と言うよりも、「一緒に美味しいケーキを食べに行きませんか」と言うほうが、ずっと仲よくなれそうな気がしませんか。\r\n\r\n実際に、一緒にものを食べたり飲んだりした人と、前よりずっと仲よくなった、という思い出が［　21　］。\r\n\r\n食事が重要な役割をはたすのは、友だちや彼氏、彼女を作る場合だけに［　22　］。仕事の話をする場合でも、一緒に食事をすることは大きな意味を持ちます。落ち着いて話ができる、サービスも味もよいお店を知っていることが、仕事の話をうまく進めるための手段に［　23　］。",
+              "instruction": "問題3 つぎの文章は、ある雑誌にのった記事です。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "options": [
+                "まぁまぁの料理",
+                "おいしい料理",
+                "いつもの料理",
+                "すべての料理"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading"
+            },
+            {
+              "id": 20,
+              "questionText": "",
+              "passageText": "**食べ物とコミュニケーション**\r\n\r\n「男性の心をつかむには、まず胃袋から」という言葉を聞いたことがありますか。恋愛について相談をしているときに、だれかから聞いたことがあるかもしれません。男性は、［　19　］を作ってくれる女性を好きになることが多い、つまり、食事は男性にとっては重要だということです。\r\n\r\n［　20　］、この言葉は、恋愛や男性だけにあてはまるわけではありません。人と人とのコミュニケーションにおいて、食べ物は非常に重要な役割をはたすからです。\r\n\r\nたとえば、ある人と親しくなりたいと思った場合、「一緒に近くを歩きませんか」と言うよりも、「一緒に美味しいケーキを食べに行きませんか」と言うほうが、ずっと仲よくなれそうな気がしませんか。\r\n\r\n実際に、一緒にものを食べたり飲んだりした人と、前よりずっと仲よくなった、という思い出が［　21　］。\r\n\r\n食事が重要な役割をはたすのは、友だちや彼氏、彼女を作る場合だけに［　22　］。仕事の話をする場合でも、一緒に食事をすることは大きな意味を持ちます。落ち着いて話ができる、サービスも味もよいお店を知っていることが、仕事の話をうまく進めるための手段に［　23　］。",
+              "instruction": "問題3 つぎの文章は、ある雑誌にのった記事です。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "options": [
+                "そのため",
+                "それだけ",
+                "そうはいっても",
+                "なぜなら"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading"
+            },
+            {
+              "id": 21,
+              "questionText": "",
+              "passageText": "**食べ物とコミュニケーション**\r\n\r\n「男性の心をつかむには、まず胃袋から」という言葉を聞いたことがありますか。恋愛について相談をしているときに、だれかから聞いたことがあるかもしれません。男性は、［　19　］を作ってくれる女性を好きになることが多い、つまり、食事は男性にとっては重要だということです。\r\n\r\n［　20　］、この言葉は、恋愛や男性だけにあてはまるわけではありません。人と人とのコミュニケーションにおいて、食べ物は非常に重要な役割をはたすからです。\r\n\r\nたとえば、ある人と親しくなりたいと思った場合、「一緒に近くを歩きませんか」と言うよりも、「一緒に美味しいケーキを食べに行きませんか」と言うほうが、ずっと仲よくなれそうな気がしませんか。\r\n\r\n実際に、一緒にものを食べたり飲んだりした人と、前よりずっと仲よくなった、という思い出が［　21　］。\r\n\r\n食事が重要な役割をはたすのは、友だちや彼氏、彼女を作る場合だけに［　22　］。仕事の話をする場合でも、一緒に食事をすることは大きな意味を持ちます。落ち着いて話ができる、サービスも味もよいお店を知っていることが、仕事の話をうまく進めるための手段に［　23　］。",
+              "instruction": "問題3 つぎの文章は、ある雑誌にのった記事です。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "options": [
+                "するかと思います",
+                "なるかと思います",
+                "いることと思います",
+                "あることと思います"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading"
+            },
+            {
+              "id": 22,
+              "questionText": "",
+              "passageText": "**食べ物とコミュニケーション**\r\n\r\n「男性の心をつかむには、まず胃袋から」という言葉を聞いたことがありますか。恋愛について相談をしているときに、だれかから聞いたことがあるかもしれません。男性は、［　19　］を作ってくれる女性を好きになることが多い、つまり、食事は男性にとっては重要だということです。\r\n\r\n［　20　］、この言葉は、恋愛や男性だけにあてはまるわけではありません。人と人とのコミュニケーションにおいて、食べ物は非常に重要な役割をはたすからです。\r\n\r\nたとえば、ある人と親しくなりたいと思った場合、「一緒に近くを歩きませんか」と言うよりも、「一緒に美味しいケーキを食べに行きませんか」と言うほうが、ずっと仲よくなれそうな気がしませんか。\r\n\r\n実際に、一緒にものを食べたり飲んだりした人と、前よりずっと仲よくなった、という思い出が［　21　］。\r\n\r\n食事が重要な役割をはたすのは、友だちや彼氏、彼女を作る場合だけに［　22　］。仕事の話をする場合でも、一緒に食事をすることは大きな意味を持ちます。落ち着いて話ができる、サービスも味もよいお店を知っていることが、仕事の話をうまく進めるための手段に［　23　］。",
+              "instruction": "問題3 つぎの文章は、ある雑誌にのった記事です。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "options": [
+                "限りました",
+                "限るようです",
+                "限ります",
+                "限りません"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading"
+            },
+            {
+              "id": 23,
+              "questionText": "",
+              "passageText": "**食べ物とコミュニケーション**\r\n\r\n「男性の心をつかむには、まず胃袋から」という言葉を聞いたことがありますか。恋愛について相談をしているときに、だれかから聞いたことがあるかもしれません。男性は、［　19　］を作ってくれる女性を好きになることが多い、つまり、食事は男性にとっては重要だということです。\r\n\r\n［　20　］、この言葉は、恋愛や男性だけにあてはまるわけではありません。人と人とのコミュニケーションにおいて、食べ物は非常に重要な役割をはたすからです。\r\n\r\nたとえば、ある人と親しくなりたいと思った場合、「一緒に近くを歩きませんか」と言うよりも、「一緒に美味しいケーキを食べに行きませんか」と言うほうが、ずっと仲よくなれそうな気がしませんか。\r\n\r\n実際に、一緒にものを食べたり飲んだりした人と、前よりずっと仲よくなった、という思い出が［　21　］。\r\n\r\n食事が重要な役割をはたすのは、友だちや彼氏、彼女を作る場合だけに［　22　］。仕事の話をする場合でも、一緒に食事をすることは大きな意味を持ちます。落ち着いて話ができる、サービスも味もよいお店を知っていることが、仕事の話をうまく進めるための手段に［　23　］。",
+              "instruction": "問題3 つぎの文章は、ある雑誌にのった記事です。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "options": [
+                "なることさえあるのです",
+                "することはあるのです",
+                "なるしかないのです",
+                "するしかないのです"
+              ],
+              "correctIndex": 0,
+              "sectionType": "grammar-reading"
+            }
+          ]
         }
       }
     },
@@ -6874,7 +7652,20 @@ export const practiceSetsBook = {
           "titleJa": "文字・語彙",
           "questions": [
             {
-              "id": 555,
+              "id": 11000,
+              "questionText": "天気がいいので、洗たく物がよく<u>乾いた</u>。",
+              "options": [
+                "ひらいた",
+                "うごいた",
+                "みがいた",
+                "かわいた"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11001,
               "questionText": "この道がとなりの市との<u>境界</u>です。",
               "options": [
                 "きょかい",
@@ -6883,10 +7674,11 @@ export const practiceSetsBook = {
                 "きょうがい"
               ],
               "correctIndex": 1,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 556,
+              "id": 11002,
               "questionText": "<u>以後</u>は、別々に行動しましょう。",
               "options": [
                 "いこ",
@@ -6894,11 +7686,12 @@ export const practiceSetsBook = {
                 "いご",
                 "いごう"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 557,
+              "id": 11003,
               "questionText": "もえないごみを土に<u>埋めて</u>はいけません。",
               "options": [
                 "こめて",
@@ -6906,23 +7699,25 @@ export const practiceSetsBook = {
                 "とめて",
                 "うめて"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 558,
-              "questionText": "例をあげて説明してください。",
+              "id": 11004,
+              "questionText": "<u>例</u>をあげて説明してください。",
               "options": [
                 "え",
                 "れい",
                 "ず",
                 "けん"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 559,
+              "id": 11005,
               "questionText": "美しい風景が<u>広がって</u>いる。",
               "options": [
                 "ふうけい",
@@ -6930,11 +7725,12 @@ export const practiceSetsBook = {
                 "ふけい",
                 "ふげい"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 560,
+              "id": 11006,
               "questionText": "甘いものは<u>骨</u>によくない。",
               "options": [
                 "こつ",
@@ -6943,50 +7739,371 @@ export const practiceSetsBook = {
                 "ぼね"
               ],
               "correctIndex": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 561,
+              "id": 11007,
               "questionText": "ある人から<u>奇妙</u>な話を聞いた。",
               "options": [
                 "びりょう",
                 "びみょう",
                 "きちょう",
-                "きみょう"
+                "きみょう ---"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 562,
-              "questionText": "汚い　<u>2. せまい</u>　3. くさい　4. 黒い",
+              "id": 11008,
+              "questionText": "<u>しぜん</u>の中で運動するのは、気持ちがよい。",
+              "options": [
+                "仕然",
+                "事然",
+                "自然",
+                "私然"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11009,
+              "questionText": "<u>きょうじゅ</u>の指導のもとで、論文を書いた。",
+              "options": [
+                "教師",
+                "教示",
+                "教授",
+                "教授"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11010,
+              "questionText": "この川は、あの川より<u>あさい</u>。",
+              "options": [
+                "深い",
+                "浅い",
+                "太い",
+                "細い"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11011,
+              "questionText": "この木は、冬に<u>かれて</u>しまう。",
+              "options": [
+                "枝れて",
+                "朽れて",
+                "枯れて",
+                "相れて"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11012,
+              "questionText": "自分の考えを<u>しゅちょう</u>する。",
+              "options": [
+                "手長",
+                "手張",
+                "主張",
+                "主張"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11013,
+              "questionText": "コンサートホールに<u>おおぜい</u>の人が集まった。",
+              "options": [
+                "大勢",
+                "多勢",
+                "大盛",
+                "多盛"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11014,
+              "questionText": "デジカメの写真の（　　）をコンピューターに保存してください。",
+              "options": [
+                "マウス",
+                "キーボード",
+                "カバー",
+                "データ"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11015,
+              "questionText": "友だちから、メールの（　　）が来ないので、心配だ。",
+              "options": [
+                "電信",
+                "配布",
+                "返信",
+                "到着"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11016,
+              "questionText": "ヨーロッパの歴史あるホテルに（　　）しました。",
+              "options": [
+                "滞在",
+                "存在",
+                "停留",
+                "停滞"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11017,
+              "questionText": "自転車を（　　）、前へ進む。",
+              "options": [
+                "けって",
+                "こいで",
+                "にぎって",
+                "すわって"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11018,
+              "questionText": "テストに向けて（　　）の準備をした。",
+              "options": [
+                "全長",
+                "全盛",
+                "万全",
+                "万全"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11019,
+              "questionText": "オレンジを（　　）、ジュースを作る。",
+              "options": [
+                "ぬって",
+                "かんで",
+                "こんで",
+                "しぼって"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11020,
+              "questionText": "（　　）を取りながら、発表を聞いてください。",
+              "options": [
+                "レポート",
+                "メモ",
+                "ペーパー",
+                "ディベート"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11021,
+              "questionText": "私の夢は、3階（　　）の家に住むことです。",
+              "options": [
+                "作り",
+                "建て",
+                "重ね",
+                "乗せ"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11022,
+              "questionText": "私は、2人の意見を聞いて、彼の意見が正しいと（　　）した。",
+              "options": [
+                "実行",
+                "成立",
+                "判断",
+                "実現"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11023,
+              "questionText": "髪を短く切って、（　　）した気分になった。",
+              "options": [
+                "すっきり",
+                "こっそり",
+                "すっかり",
+                "たっぷり"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11024,
+              "questionText": "新しい仕事についたばかりで、少し（　　）だ。",
+              "options": [
+                "不正",
+                "不安",
+                "不運",
+                "不明"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11025,
+              "questionText": "あなたに、本当に<u>すまない</u>と思います。",
+              "options": [
+                "相談したい",
+                "会いたい",
+                "もうしわけない",
+                "何もしたくない"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11026,
+              "questionText": "土曜日はデートなので、とても<u>わくわく</u>しています。",
+              "options": [
+                "幸せになって",
+                "楽しみにして",
+                "緊張して",
+                "心配して"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11027,
+              "questionText": "明日、予定が<u>重なって</u>しまいました。",
+              "options": [
+                "急に予定が入って",
+                "同時に予定が入って",
+                "大切な予定が入って",
+                "難しい予定が入って"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11028,
+              "questionText": "休みがとれず、<u>ダウン</u>してしまった。",
+              "options": [
+                "けがして",
+                "眠って",
+                "逃げて",
+                "倒れて"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11029,
+              "questionText": "机の上が<u>ごちゃごちゃ</u>なので、かたづけてください。",
+              "options": [
+                "汚い",
+                "せまい",
+                "くさい",
+                "黒い ---"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11030,
+              "questionText": "<u>つぶれる</u>",
               "options": [
                 "強い風で、その木はまん中からつぶれてしまった。",
                 "急に雨がつぶれ、急いで近くのお店に入った。",
                 "先日の大きな地震で、たくさんの家がつぶれた。",
-                "前から使っていた時計がつぶれて、動かなくなった。",
+                "前から使っていた時計がつぶれて、動かなくなった。"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11031,
+              "questionText": "<u>増す</u>",
+              "options": [
                 "台風のため、風の強さが増している。",
                 "1日3時間勉強したので、彼の日本語はいきなり増した。",
                 "社長に、給料を増してくださいとお願いした。",
-                "大学に入ってから、友だちが増してうれしい。",
+                "大学に入ってから、友だちが増してうれしい。"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11032,
+              "questionText": "<u>におい</u>",
+              "options": [
                 "この料理は、おいしそうなにおいがする。",
                 "黒いにおいを見て、マンションの火事に気がついた。",
                 "昨晩は、となりの家の大きなにおいが聞こえてきた。",
-                "今朝はいい天気で、空にいくつか白いにおいが出ている。",
+                "今朝はいい天気で、空にいくつか白いにおいが出ている。"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11033,
+              "questionText": "<u>声</u>",
+              "options": [
                 "車の声がうるさくて、テレビの音が聞こえない。",
                 "駅まで走ったら、声が切れてしまった。",
                 "風邪をひいて、きのうから声が止まらない。",
-                "もっと他人の声に耳をかたむけたほうがよい。",
+                "もっと他人の声に耳をかたむけたほうがよい。"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 11034,
+              "questionText": "<u>あやしい</u>",
+              "options": [
                 "今日は寒いので、あやしいものが食べたい。",
                 "帰宅すると、家の前にあやしい男が立っていた。",
                 "彼女は、親切であやしいので、みんなに人気がある。",
-                "この手帳は、なんでも書くことができて、とてもあやしい。",
-                "4",
-                "2",
-                "2",
-                "4"
+                "この手帳は、なんでも書くことができて、とてもあやしい。\r\n\r\nAnswer List (1-35)\r\n\r\n**問題1**  \r\n1. 4  \r\n2. 2  \r\n3. 2  \r\n4. 4  \r\n5. 2  \r\n6. 1  \r\n7. 3  \r\n8. 4\r\n\r\n**問題2**  \r\n9. 3  \r\n10. 3  \r\n11. 2  \r\n12. 3  \r\n13. 3  \r\n14. 2\r\n\r\n**問題3**  \r\n15. 4  \r\n16. 3  \r\n17. 2  \r\n18. 2  \r\n19. 3  \r\n20. 3  \r\n21. 2  \r\n22. 2  \r\n23. 3  \r\n24. 1  \r\n25. 2\r\n\r\n**問題4**  \r\n26. 3  \r\n27. 2  \r\n28. 2  \r\n29. 2  \r\n30. 1\r\n\r\n**問題5**  \r\n31. 1  \r\n32. 1  \r\n33. 1  \r\n34. 4  \r\n35. 2"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             }
           ]
@@ -6996,7 +8113,7 @@ export const practiceSetsBook = {
           "titleJa": "文法・読解",
           "questions": [
             {
-              "id": 563,
+              "id": 11035,
               "questionText": "台風が来て、昨日は沖縄では大雨だった（　　）。",
               "options": [
                 "のは",
@@ -7005,11 +8122,12 @@ export const practiceSetsBook = {
                 "とか"
               ],
               "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 564,
-              "questionText": "妻「あなたの体のために、明日からたばこを吸うのをやめてちょうだい。」",
+              "id": 11036,
+              "questionText": "妻「あなたの体のために、明日からたばこを吸うのをやめてちょうだい。」  \r\n   夫「（　　）厳しいことを言わないでよ。」",
               "options": [
                 "こんなに",
                 "そんなに",
@@ -7017,11 +8135,12 @@ export const practiceSetsBook = {
                 "どんなに"
               ],
               "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 565,
-              "questionText": "私は昨日から<u>風邪</u>（　　）、熱が少しある。",
+              "id": 11037,
+              "questionText": "私は昨日から風邪（　　）、熱が少しある。",
               "options": [
                 "っぽい",
                 "ほど",
@@ -7029,10 +8148,11 @@ export const practiceSetsBook = {
                 "気味"
               ],
               "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 566,
+              "id": 11038,
               "questionText": "近所へ散歩に行った（　　）、スーパーで牛乳を買ってきました。",
               "options": [
                 "かたがた",
@@ -7040,11 +8160,12 @@ export const practiceSetsBook = {
                 "かわりに",
                 "ままに"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 567,
+              "id": 11039,
               "questionText": "学校から家へ帰る（　　）彼女に会ったので、道で少し話しました。",
               "options": [
                 "途中まで",
@@ -7052,11 +8173,12 @@ export const practiceSetsBook = {
                 "途中で",
                 "途中から"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 568,
+              "id": 11040,
               "questionText": "この町は、駅を（　　）発展してきた。",
               "options": [
                 "中心とともに",
@@ -7065,10 +8187,11 @@ export const practiceSetsBook = {
                 "中心にかけて"
               ],
               "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 569,
+              "id": 11041,
               "questionText": "毎朝私は、ベランダの花に水を（　　）。",
               "options": [
                 "くれます",
@@ -7077,10 +8200,11 @@ export const practiceSetsBook = {
                 "さしあげます"
               ],
               "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 570,
+              "id": 11042,
               "questionText": "彼女に会うのは、卒業以来3年（　　）。",
               "options": [
                 "よりだ",
@@ -7088,11 +8212,12 @@ export const practiceSetsBook = {
                 "からだ",
                 "ぶりだ"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 571,
+              "id": 11043,
               "questionText": "弟は先生に何と（　　）。",
               "options": [
                 "お話しなさいましたか",
@@ -7100,11 +8225,12 @@ export const practiceSetsBook = {
                 "おっしゃいましたか",
                 "申しましたか"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 572,
+              "id": 11044,
               "questionText": "あの子の、小さい子ども（　　）、とてもかわいい。",
               "options": [
                 "にしては",
@@ -7112,23 +8238,25 @@ export const practiceSetsBook = {
                 "であるからには",
                 "からして"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 573,
-              "questionText": "男の学生「あ、ペンを忘れちゃった。」",
+              "id": 11045,
+              "questionText": "男の学生「あ、ペンを忘れちゃった。」  \r\n    女の学生「私（　　）、これを使ってよ。」",
               "options": [
                 "のもよければ",
                 "のでよければ",
                 "がよいから",
                 "でよいから"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 574,
+              "id": 11046,
               "questionText": "あまり時間がないから、食事を（　　）、簡単なものにすることつもりだ。",
               "options": [
                 "するとしては",
@@ -7136,11 +8264,12 @@ export const practiceSetsBook = {
                 "するとしても",
                 "するとしようなら"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 575,
+              "id": 11047,
               "questionText": "私はアイスクリームが大好きなんで、お店で見かけると（　　）。",
               "options": [
                 "買おうとしています",
@@ -7148,11 +8277,12 @@ export const practiceSetsBook = {
                 "買わないでいられます",
                 "買わないではいられません"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 576,
+              "id": 11048,
               "questionText": "きのうのゲームは__________ __________ ★ __________ 、Aチームが勝った。",
               "options": [
                 "反して",
@@ -7160,11 +8290,12 @@ export const practiceSetsBook = {
                 "人々の",
                 "多くの"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 577,
+              "id": 11049,
               "questionText": "よろしければ、__________ __________ ★ __________ どうぞ。",
               "options": [
                 "ものですが",
@@ -7172,23 +8303,25 @@ export const practiceSetsBook = {
                 "こちらの",
                 "いただいた"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 578,
-              "questionText": "山口「では、このプロジェクトは、先日の__________ __________ ★ __________ でしょうか。」",
+              "id": 11050,
+              "questionText": "山口「では、このプロジェクトは、先日の__________ __________ ★ __________ でしょうか。」  \r\n    中川「そうですね、問題ないと思います。」",
               "options": [
                 "会議で",
                 "かまわない",
                 "進めても",
                 "決まったように"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 579,
+              "id": 11051,
               "questionText": "以前は毎日ピアノの練習をしていましたが、最近はしていないので、__________ __________ ★ __________ です。",
               "options": [
                 "一方",
@@ -7196,40 +8329,92 @@ export const practiceSetsBook = {
                 "前より",
                 "下手に"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 580,
+              "id": 11052,
               "questionText": "その村の人たちの__________ __________ ★ __________ 数十年間も続いた。",
               "options": [
                 "なんと",
                 "土地を",
                 "争いは",
-                "めぐる",
+                "めぐる"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading"
+            },
+            {
+              "id": 11053,
+              "questionText": "",
+              "options": [
                 "登れると思うと",
                 "登れたと思うと",
                 "登れたと思ったら",
-                "登れと思ったら",
+                "登れと思ったら"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**富士山のこと**\r\n\r\n張 拓\r\n\r\n土曜、日曜日に、日本に来て初めて、富士山に行きました。日本に来る前は、日本のイメージを代表するものは富士山でした。富士山に［　19　］、前の日の夜はうれしくて、よく眠れませんでした。\r\n\r\n私が友だちと一緒に参加したツアーは、朝早くバスで出発し、まずバスで五合目まで行き、その後、ガイドさんに従って、八合目までのぼり、山小屋にとまって、次の日の朝、頂上を目指すというものです。とても天気がよかったので、頂上で「ご来光」と呼ばれる朝日を［　20　］。本当にきれいでした。\r\n\r\nただ、残念だったのは、ごみがたくさん捨てられていたことです。［　21　］、友だちと下りるときにごみを拾うことにしました。もっていた袋に、見つけたごみを入れていくと、五合目に戻るころには、ごみ袋がいっぱいでした。遠くから見るとあんなに［　22-a　］富士山も、実際はこんなに［　22-b　］ことがわかって、悲しい気持ちになりました。ガイドさんも、富士山のごみは問題になっている、と言っていました。\r\n\r\n帰ってきてから、パソコンで［　23　］、山を登りながらごみを拾うツアーもあるようです。富士山をきれいにするために、今度はこのようなツアーに参加したいと思いました。"
+            },
+            {
+              "id": 11054,
+              "questionText": "",
+              "options": [
                 "見られそうでした",
                 "見ることでした",
                 "見ることができました",
-                "見たいと思いました",
+                "見たいと思いました"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**富士山のこと**\r\n\r\n張 拓\r\n\r\n土曜、日曜日に、日本に来て初めて、富士山に行きました。日本に来る前は、日本のイメージを代表するものは富士山でした。富士山に［　19　］、前の日の夜はうれしくて、よく眠れませんでした。\r\n\r\n私が友だちと一緒に参加したツアーは、朝早くバスで出発し、まずバスで五合目まで行き、その後、ガイドさんに従って、八合目までのぼり、山小屋にとまって、次の日の朝、頂上を目指すというものです。とても天気がよかったので、頂上で「ご来光」と呼ばれる朝日を［　20　］。本当にきれいでした。\r\n\r\nただ、残念だったのは、ごみがたくさん捨てられていたことです。［　21　］、友だちと下りるときにごみを拾うことにしました。もっていた袋に、見つけたごみを入れていくと、五合目に戻るころには、ごみ袋がいっぱいでした。遠くから見るとあんなに［　22-a　］富士山も、実際はこんなに［　22-b　］ことがわかって、悲しい気持ちになりました。ガイドさんも、富士山のごみは問題になっている、と言っていました。\r\n\r\n帰ってきてから、パソコンで［　23　］、山を登りながらごみを拾うツアーもあるようです。富士山をきれいにするために、今度はこのようなツアーに参加したいと思いました。"
+            },
+            {
+              "id": 11055,
+              "questionText": "",
+              "options": [
                 "ところで",
                 "そこで",
                 "ところが",
-                "それが",
+                "それが"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**富士山のこと**\r\n\r\n張 拓\r\n\r\n土曜、日曜日に、日本に来て初めて、富士山に行きました。日本に来る前は、日本のイメージを代表するものは富士山でした。富士山に［　19　］、前の日の夜はうれしくて、よく眠れませんでした。\r\n\r\n私が友だちと一緒に参加したツアーは、朝早くバスで出発し、まずバスで五合目まで行き、その後、ガイドさんに従って、八合目までのぼり、山小屋にとまって、次の日の朝、頂上を目指すというものです。とても天気がよかったので、頂上で「ご来光」と呼ばれる朝日を［　20　］。本当にきれいでした。\r\n\r\nただ、残念だったのは、ごみがたくさん捨てられていたことです。［　21　］、友だちと下りるときにごみを拾うことにしました。もっていた袋に、見つけたごみを入れていくと、五合目に戻るころには、ごみ袋がいっぱいでした。遠くから見るとあんなに［　22-a　］富士山も、実際はこんなに［　22-b　］ことがわかって、悲しい気持ちになりました。ガイドさんも、富士山のごみは問題になっている、と言っていました。\r\n\r\n帰ってきてから、パソコンで［　23　］、山を登りながらごみを拾うツアーもあるようです。富士山をきれいにするために、今度はこのようなツアーに参加したいと思いました。"
+            },
+            {
+              "id": 11056,
+              "questionText": "",
+              "options": [
                 "a. きたない　/　b. よごれている",
                 "a. きたない　/　b. よごれていない",
                 "a. きれいな　/　b. よごれていない",
-                "a. きれいな　/　b. よごれている",
+                "a. きれいな　/　b. よごれている"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**富士山のこと**\r\n\r\n張 拓\r\n\r\n土曜、日曜日に、日本に来て初めて、富士山に行きました。日本に来る前は、日本のイメージを代表するものは富士山でした。富士山に［　19　］、前の日の夜はうれしくて、よく眠れませんでした。\r\n\r\n私が友だちと一緒に参加したツアーは、朝早くバスで出発し、まずバスで五合目まで行き、その後、ガイドさんに従って、八合目までのぼり、山小屋にとまって、次の日の朝、頂上を目指すというものです。とても天気がよかったので、頂上で「ご来光」と呼ばれる朝日を［　20　］。本当にきれいでした。\r\n\r\nただ、残念だったのは、ごみがたくさん捨てられていたことです。［　21　］、友だちと下りるときにごみを拾うことにしました。もっていた袋に、見つけたごみを入れていくと、五合目に戻るころには、ごみ袋がいっぱいでした。遠くから見るとあんなに［　22-a　］富士山も、実際はこんなに［　22-b　］ことがわかって、悲しい気持ちになりました。ガイドさんも、富士山のごみは問題になっている、と言っていました。\r\n\r\n帰ってきてから、パソコンで［　23　］、山を登りながらごみを拾うツアーもあるようです。富士山をきれいにするために、今度はこのようなツアーに参加したいと思いました。"
+            },
+            {
+              "id": 11057,
+              "questionText": "",
+              "options": [
                 "調べるものの",
                 "調べようと",
                 "調べるにしたら",
                 "調べたところ"
               ],
-              "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "correctIndex": 3,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**富士山のこと**\r\n\r\n張 拓\r\n\r\n土曜、日曜日に、日本に来て初めて、富士山に行きました。日本に来る前は、日本のイメージを代表するものは富士山でした。富士山に［　19　］、前の日の夜はうれしくて、よく眠れませんでした。\r\n\r\n私が友だちと一緒に参加したツアーは、朝早くバスで出発し、まずバスで五合目まで行き、その後、ガイドさんに従って、八合目までのぼり、山小屋にとまって、次の日の朝、頂上を目指すというものです。とても天気がよかったので、頂上で「ご来光」と呼ばれる朝日を［　20　］。本当にきれいでした。\r\n\r\nただ、残念だったのは、ごみがたくさん捨てられていたことです。［　21　］、友だちと下りるときにごみを拾うことにしました。もっていた袋に、見つけたごみを入れていくと、五合目に戻るころには、ごみ袋がいっぱいでした。遠くから見るとあんなに［　22-a　］富士山も、実際はこんなに［　22-b　］ことがわかって、悲しい気持ちになりました。ガイドさんも、富士山のごみは問題になっている、と言っていました。\r\n\r\n帰ってきてから、パソコンで［　23　］、山を登りながらごみを拾うツアーもあるようです。富士山をきれいにするために、今度はこのようなツアーに参加したいと思いました。"
             }
           ]
         }
@@ -7245,7 +8430,7 @@ export const practiceSetsBook = {
           "titleJa": "文字・語彙",
           "questions": [
             {
-              "id": 581,
+              "id": 12000,
               "questionText": "木の枝が<u>折れて</u>います。",
               "options": [
                 "かれて",
@@ -7253,11 +8438,12 @@ export const practiceSetsBook = {
                 "おれて",
                 "きれて"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 582,
+              "id": 12001,
               "questionText": "現金と野菜を<u>交換</u>する。",
               "options": [
                 "こうさい",
@@ -7265,11 +8451,12 @@ export const practiceSetsBook = {
                 "こうりゅう",
                 "こうたい"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 583,
+              "id": 12002,
               "questionText": "新しい<u>図書</u>を注文した。",
               "options": [
                 "としょ",
@@ -7277,11 +8464,12 @@ export const practiceSetsBook = {
                 "とうしょ",
                 "とうじょ"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 584,
+              "id": 12003,
               "questionText": "この国では、<u>老人が</u>どんどん増えている。",
               "options": [
                 "のうじん",
@@ -7289,12 +8477,13 @@ export const practiceSetsBook = {
                 "ろうじん",
                 "ろうにん"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 585,
-              "questionText": "その缶は金曜日に捨ててください。",
+              "id": 12004,
+              "questionText": "その<u>缶</u>は金曜日に捨ててください。",
               "options": [
                 "かん",
                 "びん",
@@ -7302,10 +8491,11 @@ export const practiceSetsBook = {
                 "ほん"
               ],
               "correctIndex": 0,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 586,
+              "id": 12005,
               "questionText": "南は、あちらの<u>方向</u>です。",
               "options": [
                 "ほうく",
@@ -7313,11 +8503,12 @@ export const practiceSetsBook = {
                 "ほうこう",
                 "ほうこう"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 587,
+              "id": 12006,
               "questionText": "この料理は、とても<u>苦い</u>です。",
               "options": [
                 "からい",
@@ -7325,35 +8516,38 @@ export const practiceSetsBook = {
                 "すっぱい",
                 "あまい"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 588,
+              "id": 12007,
               "questionText": "公園の<u>辺り</u>を散歩します。",
               "options": [
                 "となり",
                 "ひだり",
                 "まわり",
-                "あたり"
+                "あたり ---"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 589,
-              "questionText": "ふうんなことに、事故にあった。",
+              "id": 12008,
+              "questionText": "<u>ふうん</u>なことに、事故にあった。",
               "options": [
                 "不運",
                 "無運",
                 "負運",
                 "未運"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 590,
+              "id": 12009,
               "questionText": "学者としての<u>じっせき</u>を上げる。",
               "options": [
                 "実責",
@@ -7361,11 +8555,12 @@ export const practiceSetsBook = {
                 "実績",
                 "実席"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 591,
+              "id": 12010,
               "questionText": "森の中で<u>まよって</u>、一晩中歩き続けた。",
               "options": [
                 "悩って",
@@ -7374,10 +8569,11 @@ export const practiceSetsBook = {
                 "迷って"
               ],
               "correctIndex": 3,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 592,
+              "id": 12011,
               "questionText": "この動物園では、動物に<u>さわる</u>ことができます。",
               "options": [
                 "採る",
@@ -7386,10 +8582,11 @@ export const practiceSetsBook = {
                 "探る"
               ],
               "correctIndex": 1,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 593,
+              "id": 12012,
               "questionText": "実家は<u>のうぎょう</u>を営んでいます。",
               "options": [
                 "漁業",
@@ -7398,10 +8595,11 @@ export const practiceSetsBook = {
                 "農業"
               ],
               "correctIndex": 3,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 594,
+              "id": 12013,
               "questionText": "この店には、よい<u>しなもの</u>が置いてある。",
               "options": [
                 "商品",
@@ -7409,11 +8607,12 @@ export const practiceSetsBook = {
                 "品物",
                 "品者"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 595,
+              "id": 12014,
               "questionText": "彼の日曜日のすごし方は、いつも同じ（　　）だ。",
               "options": [
                 "フォーム",
@@ -7421,11 +8620,12 @@ export const practiceSetsBook = {
                 "ライン",
                 "パターン"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 596,
+              "id": 12015,
               "questionText": "どのようにして事故が起きたのか、細かく（　　）した。",
               "options": [
                 "等分",
@@ -7433,11 +8633,12 @@ export const practiceSetsBook = {
                 "分担",
                 "配分"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 597,
+              "id": 12016,
               "questionText": "食事を全部食べないで捨てるのは（　　）。",
               "options": [
                 "うらやましい",
@@ -7445,11 +8646,12 @@ export const practiceSetsBook = {
                 "こまかい",
                 "もったいない"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 598,
+              "id": 12017,
               "questionText": "夏休みは、いつも海外の別荘で（　　）います。",
               "options": [
                 "住んで",
@@ -7457,11 +8659,12 @@ export const practiceSetsBook = {
                 "離れて",
                 "戻って"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 599,
+              "id": 12018,
               "questionText": "コーヒーを（　　）飲みにいきませんか。",
               "options": [
                 "一皿",
@@ -7470,10 +8673,11 @@ export const practiceSetsBook = {
                 "一枚"
               ],
               "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 600,
+              "id": 12019,
               "questionText": "この1年で身長が10センチも（　　）。",
               "options": [
                 "太った",
@@ -7481,11 +8685,12 @@ export const practiceSetsBook = {
                 "ふくらんだ",
                 "伸びた"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 601,
+              "id": 12020,
               "questionText": "荷物を受け取るときに、（　　）を求められた。",
               "options": [
                 "マーク",
@@ -7494,10 +8699,11 @@ export const practiceSetsBook = {
                 "クレーム"
               ],
               "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 602,
+              "id": 12021,
               "questionText": "私（　　）の手紙が来ていませんか。",
               "options": [
                 "行き",
@@ -7506,10 +8712,11 @@ export const practiceSetsBook = {
                 "あて"
               ],
               "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 603,
+              "id": 12022,
               "questionText": "他の会社に送る書類の（　　）をするよう、部下に指示した。",
               "options": [
                 "提示",
@@ -7517,11 +8724,12 @@ export const practiceSetsBook = {
                 "集合",
                 "設定"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 604,
+              "id": 12023,
               "questionText": "いそがしい1日だったので、家に帰ると（　　）した。",
               "options": [
                 "はっと",
@@ -7529,11 +8737,12 @@ export const practiceSetsBook = {
                 "ほっと",
                 "ざっと"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 605,
+              "id": 12024,
               "questionText": "その文章は、（　　）なことばで書かれていた。",
               "options": [
                 "不足",
@@ -7541,11 +8750,12 @@ export const practiceSetsBook = {
                 "明確",
                 "優秀"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 606,
+              "id": 12025,
               "questionText": "その旅館の部屋はとても<u>清潔</u>だ。",
               "options": [
                 "古い",
@@ -7553,11 +8763,12 @@ export const practiceSetsBook = {
                 "きれいだ",
                 "明るい"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 607,
+              "id": 12026,
               "questionText": "仕事の準備が<u>整った</u>。",
               "options": [
                 "続行した",
@@ -7565,11 +8776,12 @@ export const practiceSetsBook = {
                 "開始した",
                 "終了した"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 608,
+              "id": 12027,
               "questionText": "彼は、友だちを<u>ぶって</u>しまった。",
               "options": [
                 "手で打って",
@@ -7577,11 +8789,12 @@ export const practiceSetsBook = {
                 "体をぶつけて",
                 "悪口を言って"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 609,
+              "id": 12028,
               "questionText": "映画館は<u>がらがら</u>だ。",
               "options": [
                 "広い",
@@ -7589,43 +8802,86 @@ export const practiceSetsBook = {
                 "こんでいる",
                 "すいている"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 610,
+              "id": 12029,
               "questionText": "デパートの<u>向かい</u>に本屋があります。",
               "options": [
                 "正面",
                 "手前",
                 "先",
-                "後ろ",
+                "後ろ ---"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 12030,
+              "questionText": "<u>合わせる</u>",
+              "options": [
                 "毎朝、彼女と駅で合わせて一緒に学校へ行く。",
                 "友だちと声を合わせて、歌を歌った。",
                 "私の趣味は、外国の切手を合わせることです。",
-                "父と母は、学生のころに合わせて、結婚した。",
+                "父と母は、学生のころに合わせて、結婚した。"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 12031,
+              "questionText": "<u>いきおい</u>",
+              "options": [
                 "この魚は、とてもいきおいがよくておいしい。",
                 "パソコンのいきおいが悪いので、修理をすることにした。",
                 "今日は体のいきおいがいいので、とても元気です。",
-                "その子どもたちは、いきおいよく走りだした。",
+                "その子どもたちは、いきおいよく走りだした。"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 12032,
+              "questionText": "<u>坂</u>",
+              "options": [
                 "長い坂を渡って、家に帰りました。",
                 "ここは、日本でいちばん高い坂です。",
                 "私の学校は、急な坂の上に建っています。",
-                "強い風で坂がすべって、たくさんの人がけがをしました。",
+                "強い風で坂がすべって、たくさんの人がけがをしました。"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 12033,
+              "questionText": "<u>すがた</u>",
+              "options": [
                 "この音楽は、すがたがとてもいいので好きです。",
                 "私の兄と弟は、声のすがたがよく似ています。",
                 "有名なレストランで、肉のすがたを食べました。",
-                "さっき駅前で、彼女のすがたを見かけました。",
+                "さっき駅前で、彼女のすがたを見かけました。"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 12034,
+              "questionText": "<u>はげしい</u>",
+              "options": [
                 "歩いていたら、雨がはげしくふり出した。",
                 "彼の日本語は、この数カ月でとてもはげしくなった。",
                 "この紅茶ははげしくておいしいので、おかわりをください。",
-                "今日は、朝から何も食べていないので、おなかがはげしい。",
-                "3",
-                "2",
-                "1",
-                "3"
+                "今日は、朝から何も食べていないので、おなかがはげしい。"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             }
           ]
@@ -7635,19 +8891,20 @@ export const practiceSetsBook = {
           "titleJa": "文法・読解",
           "questions": [
             {
-              "id": 611,
-              "questionText": "男性「どんなマンガが好きですか。」",
+              "id": 12035,
+              "questionText": "男性「どんなマンガが好きですか。」  \r\n   女性「私はマンガ（　　）は読みません。時間のむだですから。」",
               "options": [
                 "しか",
                 "ほど",
                 "から",
                 "など"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 612,
+              "id": 12036,
               "questionText": "私の息子は、まだ10歳の子ども（　　）、高いものをほしがる。",
               "options": [
                 "ものに",
@@ -7655,11 +8912,12 @@ export const practiceSetsBook = {
                 "くせに",
                 "きりに"
               ],
-              "correctIndex": -1,
+              "correctIndex": 0,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 613,
+              "id": 12037,
               "questionText": "一生けん命走った（　　）、電車に間に合わなかった。",
               "options": [
                 "からには",
@@ -7667,11 +8925,12 @@ export const practiceSetsBook = {
                 "あげく",
                 "あまり"
               ],
-              "correctIndex": -1,
+              "correctIndex": 0,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 614,
+              "id": 12038,
               "questionText": "大事な会議の（　　）、また後で電話してください。",
               "options": [
                 "最中として",
@@ -7679,11 +8938,12 @@ export const practiceSetsBook = {
                 "最中であって",
                 "最中ながら"
               ],
-              "correctIndex": -1,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 615,
+              "id": 12039,
               "questionText": "家族と食事をしている（　　）、学校の友だちが遊びに来た。",
               "options": [
                 "ところで",
@@ -7691,23 +8951,25 @@ export const practiceSetsBook = {
                 "ところが",
                 "ところへ"
               ],
-              "correctIndex": -1,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 616,
-              "questionText": "母「手術が成功するか心配で……。」",
+              "id": 12040,
+              "questionText": "母「手術が成功するか心配で……。」  \r\n   娘「手術（　　）すぐに終わるし、心配しないで。」",
               "options": [
                 "というと",
                 "といえば",
                 "といっても",
                 "といったら"
               ],
-              "correctIndex": -1,
+              "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 617,
+              "id": 12041,
               "questionText": "もし外国に（　　）のなら、フィンランドに住んでみたい。",
               "options": [
                 "住む",
@@ -7715,23 +8977,25 @@ export const practiceSetsBook = {
                 "住んで",
                 "住んだ"
               ],
-              "correctIndex": -1,
+              "correctIndex": 0,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 618,
-              "questionText": "田中「ぼくはカレーライス。」",
+              "id": 12042,
+              "questionText": "田中「ぼくはカレーライス。」  \r\n   鈴木「私はとんかつ（　　）。」",
               "options": [
                 "にします",
                 "をします",
                 "としています",
                 "でしています"
               ],
-              "correctIndex": -1,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 619,
+              "id": 12043,
               "questionText": "社長は何かスポーツを（　　）。",
               "options": [
                 "まいりますか",
@@ -7739,11 +9003,12 @@ export const practiceSetsBook = {
                 "いたしますか",
                 "いらっしゃいますか"
               ],
-              "correctIndex": -1,
+              "correctIndex": 0,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 620,
+              "id": 12044,
               "questionText": "小学生のころ、父は私に勉強を教えて（　　）。",
               "options": [
                 "やりました",
@@ -7751,11 +9016,12 @@ export const practiceSetsBook = {
                 "さしあげました",
                 "くれました"
               ],
-              "correctIndex": -1,
+              "correctIndex": 0,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 621,
+              "id": 12045,
               "questionText": "自分がいじめられたから、友だちをいじめていい（　　）。",
               "options": [
                 "というはずではない",
@@ -7763,11 +9029,12 @@ export const practiceSetsBook = {
                 "ということにはならない",
                 "というわけだ"
               ],
-              "correctIndex": -1,
+              "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 622,
+              "id": 12046,
               "questionText": "これが、みんながずっと探していた宝物（　　）。",
               "options": [
                 "ほかなりません",
@@ -7775,11 +9042,12 @@ export const practiceSetsBook = {
                 "ほかにあります",
                 "ほかにありません"
               ],
-              "correctIndex": -1,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 623,
+              "id": 12047,
               "questionText": "子どものころ、病気で苦しむ私に、母は「（　　）代わりたい」と言っていた。",
               "options": [
                 "代わったならば",
@@ -7787,11 +9055,12 @@ export const practiceSetsBook = {
                 "代わるものでも",
                 "代われるものなら"
               ],
-              "correctIndex": -1,
+              "correctIndex": 0,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 624,
+              "id": 12048,
               "questionText": "みなさまの__________ __________ ★ __________ 思います。",
               "options": [
                 "一生けん命",
@@ -7799,11 +9068,12 @@ export const practiceSetsBook = {
                 "がんばろうと",
                 "期待に"
               ],
-              "correctIndex": -1,
+              "correctIndex": 2,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 625,
+              "id": 12049,
               "questionText": "お茶しか用意していませんが、先生がもし__________ __________ ★ __________ 、注文します。",
               "options": [
                 "でしたら",
@@ -7811,23 +9081,25 @@ export const practiceSetsBook = {
                 "お酒を",
                 "の"
               ],
-              "correctIndex": -1,
+              "correctIndex": 2,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 626,
-              "questionText": "加藤「では、当日は、私もミーティングに参加していいですか。」",
+              "id": 12050,
+              "questionText": "加藤「では、当日は、私もミーティングに参加していいですか。」  \r\n    三上「そのことなんですが、担当者に__________ __________ ★ __________ 言えないんですよ。」",
               "options": [
                 "からで",
                 "確かめて",
                 "ないと",
                 "なんとも"
               ],
-              "correctIndex": -1,
+              "correctIndex": 1,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 627,
+              "id": 12051,
               "questionText": "このまま治療をしないと、__________ __________ ★ __________ と医者に言われました。",
               "options": [
                 "かねない",
@@ -7835,40 +9107,92 @@ export const practiceSetsBook = {
                 "なり",
                 "悪く"
               ],
-              "correctIndex": -1,
+              "correctIndex": 2,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 628,
+              "id": 12052,
               "questionText": "私が今、読んでいる本は、__________ __________ ★ __________ 書かれている。",
               "options": [
                 "ある事件を",
                 "有名な",
                 "歴史上",
-                "もとに",
+                "もとに"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading"
+            },
+            {
+              "id": 12053,
+              "questionText": "",
+              "options": [
                 "うかがっただろうか",
                 "おうかがいしただろうか",
                 "存じているだろうか",
-                "ご存じだろうか",
+                "ご存じだろうか"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**片づけは必要か**\r\n\r\n「そうじ」「片づけ」「整理」をテーマにした本がたくさん出版されているのを［　19　］。「そうじ名人になるには」「あなたも片づけられる人になろう！」「お部屋の整理術」……書店に行くと、このようなタイトルの本を［　20　］。著者は、有名人のこともあれば一般人のこともある。どちらにしても「片づけ名人」が書いた本であることはまちがいない。\r\n\r\nまた、このような種類の本は、よく売れているようだ。［　21　］、それだけ「片づけられない人」「整理が苦手な人」が世の中にたくさんいるということだろう。\r\n\r\n実は、私自身も「片づけられない人間」の1人である。部屋はいつも汚い。机の引き出しの中も物がたくさんつまっているし部屋のあちこちに、本や服などいろいろなものが積み重なっている。\r\n\r\nしかし、私自身について言えば、そうであっても［　22-a　］身の回りを整理しよう、片づけよう［　22-b　］。たぶん、すべてが整理された、とてもきれいな部屋は、逆に気持ちが落ち着かないことと、片づけをする時間が十分にとれないことが理由だろう。私は今のところ、整理や片づけの本を読んでまで部屋を片づけようと［　23　］。"
+            },
+            {
+              "id": 12054,
+              "questionText": "",
+              "options": [
                 "見かけたものだ",
                 "見かけることなどない",
                 "見かけないといってよい",
-                "見かけないことはない",
+                "見かけないことはない"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**片づけは必要か**\r\n\r\n「そうじ」「片づけ」「整理」をテーマにした本がたくさん出版されているのを［　19　］。「そうじ名人になるには」「あなたも片づけられる人になろう！」「お部屋の整理術」……書店に行くと、このようなタイトルの本を［　20　］。著者は、有名人のこともあれば一般人のこともある。どちらにしても「片づけ名人」が書いた本であることはまちがいない。\r\n\r\nまた、このような種類の本は、よく売れているようだ。［　21　］、それだけ「片づけられない人」「整理が苦手な人」が世の中にたくさんいるということだろう。\r\n\r\n実は、私自身も「片づけられない人間」の1人である。部屋はいつも汚い。机の引き出しの中も物がたくさんつまっているし部屋のあちこちに、本や服などいろいろなものが積み重なっている。\r\n\r\nしかし、私自身について言えば、そうであっても［　22-a　］身の回りを整理しよう、片づけよう［　22-b　］。たぶん、すべてが整理された、とてもきれいな部屋は、逆に気持ちが落ち着かないことと、片づけをする時間が十分にとれないことが理由だろう。私は今のところ、整理や片づけの本を読んでまで部屋を片づけようと［　23　］。"
+            },
+            {
+              "id": 12055,
+              "questionText": "",
+              "options": [
                 "要するに",
                 "それどころか",
                 "とはいうものの",
-                "だからといって",
+                "だからといって"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**片づけは必要か**\r\n\r\n「そうじ」「片づけ」「整理」をテーマにした本がたくさん出版されているのを［　19　］。「そうじ名人になるには」「あなたも片づけられる人になろう！」「お部屋の整理術」……書店に行くと、このようなタイトルの本を［　20　］。著者は、有名人のこともあれば一般人のこともある。どちらにしても「片づけ名人」が書いた本であることはまちがいない。\r\n\r\nまた、このような種類の本は、よく売れているようだ。［　21　］、それだけ「片づけられない人」「整理が苦手な人」が世の中にたくさんいるということだろう。\r\n\r\n実は、私自身も「片づけられない人間」の1人である。部屋はいつも汚い。机の引き出しの中も物がたくさんつまっているし部屋のあちこちに、本や服などいろいろなものが積み重なっている。\r\n\r\nしかし、私自身について言えば、そうであっても［　22-a　］身の回りを整理しよう、片づけよう［　22-b　］。たぶん、すべてが整理された、とてもきれいな部屋は、逆に気持ちが落ち着かないことと、片づけをする時間が十分にとれないことが理由だろう。私は今のところ、整理や片づけの本を読んでまで部屋を片づけようと［　23　］。"
+            },
+            {
+              "id": 12056,
+              "questionText": "",
+              "options": [
                 "a. わざと　/　b. ということになっている",
                 "a. わざと　/　b. という気にならない",
                 "a. わざわざ　/　b. ということになっている",
-                "a. わざわざ　/　b. という気にならない",
+                "a. わざわざ　/　b. という気にならない"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**片づけは必要か**\r\n\r\n「そうじ」「片づけ」「整理」をテーマにした本がたくさん出版されているのを［　19　］。「そうじ名人になるには」「あなたも片づけられる人になろう！」「お部屋の整理術」……書店に行くと、このようなタイトルの本を［　20　］。著者は、有名人のこともあれば一般人のこともある。どちらにしても「片づけ名人」が書いた本であることはまちがいない。\r\n\r\nまた、このような種類の本は、よく売れているようだ。［　21　］、それだけ「片づけられない人」「整理が苦手な人」が世の中にたくさんいるということだろう。\r\n\r\n実は、私自身も「片づけられない人間」の1人である。部屋はいつも汚い。机の引き出しの中も物がたくさんつまっているし部屋のあちこちに、本や服などいろいろなものが積み重なっている。\r\n\r\nしかし、私自身について言えば、そうであっても［　22-a　］身の回りを整理しよう、片づけよう［　22-b　］。たぶん、すべてが整理された、とてもきれいな部屋は、逆に気持ちが落ち着かないことと、片づけをする時間が十分にとれないことが理由だろう。私は今のところ、整理や片づけの本を読んでまで部屋を片づけようと［　23　］。"
+            },
+            {
+              "id": 12057,
+              "questionText": "",
+              "options": [
                 "思わないでもない",
                 "思うことは思う",
                 "思う",
                 "思わない"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 0,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**片づけは必要か**\r\n\r\n「そうじ」「片づけ」「整理」をテーマにした本がたくさん出版されているのを［　19　］。「そうじ名人になるには」「あなたも片づけられる人になろう！」「お部屋の整理術」……書店に行くと、このようなタイトルの本を［　20　］。著者は、有名人のこともあれば一般人のこともある。どちらにしても「片づけ名人」が書いた本であることはまちがいない。\r\n\r\nまた、このような種類の本は、よく売れているようだ。［　21　］、それだけ「片づけられない人」「整理が苦手な人」が世の中にたくさんいるということだろう。\r\n\r\n実は、私自身も「片づけられない人間」の1人である。部屋はいつも汚い。机の引き出しの中も物がたくさんつまっているし部屋のあちこちに、本や服などいろいろなものが積み重なっている。\r\n\r\nしかし、私自身について言えば、そうであっても［　22-a　］身の回りを整理しよう、片づけよう［　22-b　］。たぶん、すべてが整理された、とてもきれいな部屋は、逆に気持ちが落ち着かないことと、片づけをする時間が十分にとれないことが理由だろう。私は今のところ、整理や片づけの本を読んでまで部屋を片づけようと［　23　］。"
             }
           ]
         }
@@ -7884,7 +9208,7 @@ export const practiceSetsBook = {
           "titleJa": "文字・語彙",
           "questions": [
             {
-              "id": 629,
+              "id": 13000,
               "questionText": "プレゼントにリボンが<u>結んで</u>ありました。",
               "options": [
                 "あんで",
@@ -7892,11 +9216,12 @@ export const practiceSetsBook = {
                 "はさんで",
                 "むすんで"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 630,
+              "id": 13001,
               "questionText": "この病院は、<u>患者</u>の数が多い。",
               "options": [
                 "かんしゃ",
@@ -7905,10 +9230,11 @@ export const practiceSetsBook = {
                 "がんじゃ"
               ],
               "correctIndex": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 631,
+              "id": 13002,
               "questionText": "そのやり方で、<u>効果</u>がありますか。",
               "options": [
                 "きょか",
@@ -7916,11 +9242,12 @@ export const practiceSetsBook = {
                 "こか",
                 "こうか"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 632,
+              "id": 13003,
               "questionText": "苦しいとき、クラスメートに<u>支えても</u>らった。",
               "options": [
                 "おしえて",
@@ -7928,11 +9255,12 @@ export const practiceSetsBook = {
                 "つかえて",
                 "かかえて"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 633,
+              "id": 13004,
               "questionText": "この<u>城</u>はとても有名です。",
               "options": [
                 "しろ",
@@ -7941,10 +9269,11 @@ export const practiceSetsBook = {
                 "もん"
               ],
               "correctIndex": 0,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 634,
+              "id": 13005,
               "questionText": "<u>用事</u>があるので、お先に失礼します。",
               "options": [
                 "つごう",
@@ -7952,11 +9281,12 @@ export const practiceSetsBook = {
                 "ようじ",
                 "しょう"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 635,
+              "id": 13006,
               "questionText": "毎日、とても<u>退屈</u>だ。",
               "options": [
                 "さいくつ",
@@ -7964,23 +9294,25 @@ export const practiceSetsBook = {
                 "たいくつ",
                 "ていくつ"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 636,
+              "id": 13007,
               "questionText": "新しい法案が<u>成立</u>した。",
               "options": [
                 "せいりつ",
                 "ぜいりつ",
                 "しょうりつ",
-                "じょうりつ"
+                "じょうりつ ---"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 637,
+              "id": 13008,
               "questionText": "日程については、メールで<u>つうち</u>します。",
               "options": [
                 "通知",
@@ -7988,11 +9320,12 @@ export const practiceSetsBook = {
                 "報知",
                 "報告"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 638,
+              "id": 13009,
               "questionText": "彼は、必死に働いて、今の<u>ちい</u>についた。",
               "options": [
                 "時位",
@@ -8000,11 +9333,12 @@ export const practiceSetsBook = {
                 "値位",
                 "地位"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 639,
+              "id": 13010,
               "questionText": "カップラーメンにお湯を<u>そそいで</u>、3分待った。",
               "options": [
                 "主いで",
@@ -8012,11 +9346,12 @@ export const practiceSetsBook = {
                 "住いで",
                 "往いで"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 640,
+              "id": 13011,
               "questionText": "友だちを家に<u>まねく</u>。",
               "options": [
                 "傾く",
@@ -8025,10 +9360,11 @@ export const practiceSetsBook = {
                 "招く"
               ],
               "correctIndex": 3,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 641,
+              "id": 13012,
               "questionText": "見つけたお金を<u>けいさつ</u>に持っていった。",
               "options": [
                 "警官",
@@ -8036,11 +9372,12 @@ export const practiceSetsBook = {
                 "検察",
                 "検事"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 642,
+              "id": 13013,
               "questionText": "この国では、石油の<u>ゆしゅつ</u>が増えている。",
               "options": [
                 "移出",
@@ -8049,10 +9386,11 @@ export const practiceSetsBook = {
                 "輸入"
               ],
               "correctIndex": 2,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 643,
+              "id": 13014,
               "questionText": "父は、（　　）の運転手だったのに、仕事中に事故を起こした。",
               "options": [
                 "アマチュア",
@@ -8060,11 +9398,12 @@ export const practiceSetsBook = {
                 "ベテラン",
                 "ピーク"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 644,
+              "id": 13015,
               "questionText": "英語の本を日本語に（　　）した。",
               "options": [
                 "違約",
@@ -8072,11 +9411,12 @@ export const practiceSetsBook = {
                 "通訳",
                 "翻訳"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 645,
+              "id": 13016,
               "questionText": "運動をしなくなってから、（　　）がなくなってきた。",
               "options": [
                 "人体",
@@ -8084,11 +9424,12 @@ export const practiceSetsBook = {
                 "体格",
                 "体力"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 646,
+              "id": 13017,
               "questionText": "洗たくに失敗し、シャツが（　　）小さくなってしまった。",
               "options": [
                 "冷えて",
@@ -8096,11 +9437,12 @@ export const practiceSetsBook = {
                 "縮んで",
                 "伸びて"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 647,
+              "id": 13018,
               "questionText": "彼女に秘密を（　　）された。",
               "options": [
                 "告白",
@@ -8108,11 +9450,12 @@ export const practiceSetsBook = {
                 "会話",
                 "通話"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 648,
+              "id": 13019,
               "questionText": "この魚は、私の国では高級（　　）です。",
               "options": [
                 "物",
@@ -8120,11 +9463,12 @@ export const practiceSetsBook = {
                 "品",
                 "体"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 649,
+              "id": 13020,
               "questionText": "ドアを（　　）したのに、だれも出て来なかった。",
               "options": [
                 "ヒット",
@@ -8132,11 +9476,12 @@ export const practiceSetsBook = {
                 "プレー",
                 "チャイム"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 650,
+              "id": 13021,
               "questionText": "車をもっと右（　　）に止めてください。",
               "options": [
                 "寄り",
@@ -8144,11 +9489,12 @@ export const practiceSetsBook = {
                 "置き",
                 "並べ"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 651,
+              "id": 13022,
               "questionText": "母は、（　　）して私を育ててくれた。",
               "options": [
                 "緊張",
@@ -8156,11 +9502,12 @@ export const practiceSetsBook = {
                 "苦労",
                 "要求"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 652,
+              "id": 13023,
               "questionText": "好きな人に見つめられて、（　　）した。",
               "options": [
                 "ほかほか",
@@ -8169,10 +9516,11 @@ export const practiceSetsBook = {
                 "はらはら"
               ],
               "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 653,
+              "id": 13024,
               "questionText": "私のペットの犬は、とても（　　）だ。",
               "options": [
                 "快適",
@@ -8180,11 +9528,12 @@ export const practiceSetsBook = {
                 "急速",
                 "利口"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 654,
+              "id": 13025,
               "questionText": "<u>くやしい</u>気持ちを日記に書いた。",
               "options": [
                 "うれしい",
@@ -8192,11 +9541,12 @@ export const practiceSetsBook = {
                 "さびしい",
                 "残念な"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 655,
+              "id": 13026,
               "questionText": "遠足について、みんなの意見は<u>ばらばら</u>だ。",
               "options": [
                 "全部同じ",
@@ -8204,11 +9554,12 @@ export const practiceSetsBook = {
                 "二つにわかれた",
                 "賛成でまとまった"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 656,
+              "id": 13027,
               "questionText": "このセーターは、あなたに<u>ぴったり</u>です。",
               "options": [
                 "大きすぎます",
@@ -8216,11 +9567,12 @@ export const practiceSetsBook = {
                 "似合います",
                 "似合いません"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 657,
+              "id": 13028,
               "questionText": "意見を必ず<u>述べて</u>ください。",
               "options": [
                 "話して",
@@ -8228,39 +9580,86 @@ export const practiceSetsBook = {
                 "出して",
                 "考えて"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 658,
-              "questionText": "山小屋にあったのは、わずかな食べ物だった。",
+              "id": 13029,
+              "questionText": "山小屋にあったのは、<u>わずかな</u>食べ物だった。",
               "options": [
                 "たくさんの",
                 "少しの",
                 "残りの",
-                "あまりの",
+                "あまりの"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 13030,
+              "questionText": "<u>飼う</u>",
+              "options": [
                 "私の家では、子どもを2人飼っている。",
                 "花を飼いたいと思って、花屋へ行きました。",
                 "子どものころ、家で牛と馬を飼っていました。",
-                "木の上で、親鳥が子どもの鳥を飼っています。",
+                "木の上で、親鳥が子どもの鳥を飼っています。"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 13031,
+              "questionText": "<u>なぐる</u>",
+              "options": [
                 "怒った男性は、もう1人の男性を力いっぱいなぐった。",
                 "そのサッカー選手は、右足で思いきりボールをなぐった。",
                 "交差点で車と自転車がなぐって、大きな事故になった。",
-                "部屋に入る前に、ドアをなぐってください。",
+                "部屋に入る前に、ドアをなぐってください。"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 13032,
+              "questionText": "<u>隔</u>",
+              "options": [
                 "授業の隔で、先生が大事なことを言いました。",
                 "部屋の隔に、小さいいすが置いてあります。",
                 "もう12月なので、1年も隔ですね。",
-                "髪の毛の隔に、ごみが付いていました。",
+                "髪の毛の隔に、ごみが付いていました。"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 13033,
+              "questionText": "<u>背中</u>",
+              "options": [
                 "あの男の人は、とても背中が高い。",
                 "朝から何も食べていないので、背中がすきました。",
                 "田中さんの家は、私の家の背中にあります。",
-                "ずっとパソコンに向かって座っていたら、背中が痛くなった。",
+                "ずっとパソコンに向かって座っていたら、背中が痛くなった。"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 13034,
+              "questionText": "<u>単純</u>",
+              "options": [
                 "その事件は、ある単純な夜に起こった。",
                 "この問題は、とても単純なので答えがすぐわかるでしょう。",
                 "地震のときは、単純なものを持って逃げてください。",
                 "すばらしい映画を見て、とても単純な気持ちになった。"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             }
           ]
@@ -8270,7 +9669,7 @@ export const practiceSetsBook = {
           "titleJa": "文法・読解",
           "questions": [
             {
-              "id": 659,
+              "id": 13035,
               "questionText": "では、開会（　　）あたり、代表よりあいさつがございます。",
               "options": [
                 "に",
@@ -8278,12 +9677,13 @@ export const practiceSetsBook = {
                 "と",
                 "が"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 660,
-              "questionText": "吉田「よろしくお願いします。」",
+              "id": 13036,
+              "questionText": "吉田「よろしくお願いします。」  \r\n   山崎「こちら（　　）よろしく。」",
               "options": [
                 "まで",
                 "ほど",
@@ -8291,10 +9691,11 @@ export const practiceSetsBook = {
                 "から"
               ],
               "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 661,
+              "id": 13037,
               "questionText": "なんでもできるあの人の（　　）、この仕事もちゃんとやってくれると思います。",
               "options": [
                 "ことに",
@@ -8302,11 +9703,12 @@ export const practiceSetsBook = {
                 "ことから",
                 "ことだから"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 662,
+              "id": 13038,
               "questionText": "林さん（　　）、ゼミの発表をすることはできない。",
               "options": [
                 "なく",
@@ -8315,10 +9717,11 @@ export const practiceSetsBook = {
                 "切りで"
               ],
               "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 663,
+              "id": 13039,
               "questionText": "今年の夏は、天気予報がずれ、暑い（　　）とてもむずしい。",
               "options": [
                 "に反して",
@@ -8326,11 +9729,12 @@ export const practiceSetsBook = {
                 "にもかかわらず",
                 "にしては"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 664,
+              "id": 13040,
               "questionText": "お金がかかる今までのやり方（　　）、鈴木君の案なら費用がかからず安くできる。",
               "options": [
                 "によって",
@@ -8339,10 +9743,11 @@ export const practiceSetsBook = {
                 "にこたえて"
               ],
               "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 665,
+              "id": 13041,
               "questionText": "友だちと別れてつらかったが、時間が（　　）につれ、悲しい気持ちも消えていった。",
               "options": [
                 "たつ",
@@ -8350,23 +9755,25 @@ export const practiceSetsBook = {
                 "たった",
                 "たてば"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 666,
-              "questionText": "客「すみませんが、こちらの電話を（　　）いただいてもよろしいですか。」",
+              "id": 13042,
+              "questionText": "客「すみませんが、こちらの電話を（　　）いただいてもよろしいですか。」  \r\n   社員「はい、どうぞ。」",
               "options": [
                 "使われて",
                 "使わせて",
                 "使ったら",
                 "使って"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 667,
+              "id": 13043,
               "questionText": "ペンがないので先生のものを（　　）。",
               "options": [
                 "貸してもよろしいですか",
@@ -8374,23 +9781,25 @@ export const practiceSetsBook = {
                 "貸してくださいませんか",
                 "返してくださいませんか"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 668,
-              "questionText": "五木「山下さんがまだ来ていないんですが。」",
+              "id": 13044,
+              "questionText": "五木「山下さんがまだ来ていないんですが。」  \r\n    小林「本当ですか？ きのう電話で出席すると言っていたので、（　　）。」",
               "options": [
                 "来ないはずですよ",
                 "来ないことですよ",
                 "来ないはずがないですよ",
                 "来ないことがないですよ"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 669,
+              "id": 13045,
               "questionText": "イベントの準備に時間と費用がかかっているのだから、参加人数が少なくても、最後まで（　　）。",
               "options": [
                 "やるしかありません",
@@ -8398,11 +9807,12 @@ export const practiceSetsBook = {
                 "やってはなりません",
                 "やるものではありません"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 670,
+              "id": 13046,
               "questionText": "日本料理ではすしが有名ですが、私はべつに（　　）。",
               "options": [
                 "好きなのです",
@@ -8411,10 +9821,11 @@ export const practiceSetsBook = {
                 "好きではありません"
               ],
               "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 671,
+              "id": 13047,
               "questionText": "こんな寒い日には、あたたかいものを（　　）。",
               "options": [
                 "飲まないに限る",
@@ -8422,11 +9833,12 @@ export const practiceSetsBook = {
                 "飲まないに限らない",
                 "飲むに限らない"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 672,
+              "id": 13048,
               "questionText": "この報告書を作る__________ __________ ★ __________ の期間は四か月だ。",
               "options": [
                 "に",
@@ -8435,10 +9847,11 @@ export const practiceSetsBook = {
                 "かかった"
               ],
               "correctIndex": 2,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 673,
+              "id": 13049,
               "questionText": "今日の予定はこれで終わりましたが、__________ __________ ★ __________ ですか。",
               "options": [
                 "どう",
@@ -8446,11 +9859,12 @@ export const practiceSetsBook = {
                 "これから",
                 "なさる"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 674,
+              "id": 13050,
               "questionText": "会社にとって大事なこの仕事を、__________ __________ ★ __________ 会社が倒産してしまう。",
               "options": [
                 "なんでも",
@@ -8458,68 +9872,105 @@ export const practiceSetsBook = {
                 "なにが",
                 "成功させない"
               ],
-              "correctIndex": -1,
+              "correctIndex": 0,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 675,
-              "questionText": "課長「明日の夜、どこかに食事に行きませんか。」",
+              "id": 13051,
+              "questionText": "課長「明日の夜、どこかに食事に行きませんか。」  \r\n    部長「明日は家族と__________ __________ ★ __________ ので、また今度させてくれますか。」",
               "options": [
                 "ことに",
                 "いる",
                 "なって",
                 "食事をする"
               ],
-              "correctIndex": -1,
+              "correctIndex": 2,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 676,
+              "id": 13052,
               "questionText": "ひさしぶりに東京へ遊びに行__________ __________ ★ __________ 買ってきた。",
               "options": [
                 "服を",
                 "ほしかった",
                 "ついでに",
-                "行った",
-                "よく聞かれる",
-                "よく聞かせる",
-                "よく聞かされる",
-                "よく聞くようにさせる",
-                "その後",
-                "確かに",
-                "だから",
-                "すると",
-                "a. ところが　/　b. にきまっている",
-                "a. ところで　/　b. わけである",
-                "a. なぜなら　/　b. からである",
-                "a. なぜ　/　b. のだろうか",
-                "学ばないほうがよいと思う",
-                "学ぶほうがよいと思わない",
-                "学ぶべきではないと思う",
-                "学ぶべきだと思う",
-                "いつか役立つ",
-                "すぐに役立つ",
-                "ずっと役立たない",
-                "あまり役立たない",
-                "4",
-                "3",
-                "4",
-                "2"
+                "行った"
               ],
-              "correctIndex": -1,
+              "correctIndex": 2,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 677,
-              "questionText": "2",
+              "id": 13053,
+              "questionText": "",
               "options": [
-                "4",
-                "3",
-                "4",
-                "2"
+                "よく聞かれる",
+                "よく聞かせる",
+                "よく聞かされる",
+                "よく聞くようにさせる"
               ],
-              "correctIndex": -1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 0,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "---\r\n\r\n**英語教育は本当に必要だろうか**\r\n\r\n日本では英語の教育はとても大事だという話を［　19　］。まず学校では、小学校から高校まで英語を学ぶ時間がある。また社会人になってからも、自分から、または会社に言われて英会話教室に通ったり、いろいろな検定試験を受けたりしている人はとても多い。\r\n\r\nまじめに勉強するのは、とてもいいことだと思うが、しかし、私の考えは少し違う。\r\n\r\n［　20　］、インターネットで海外の情報を集めるときや、海外旅行中、日本にいても外国人の観光客から道を聞かれたときなど、英語がわかると便利だと感じるときもある。しかし、目的もなく、「英語は大事だから」という理由で学習する必要があるのか、疑問を感じるのだ。\r\n\r\n［　21-a　］、日本で生活し、日本の会社で働いているかぎり、英語を話さなければならない機会はほとんどない［　21-b　］。多くの日本人は、英語を話す人といつきあう機会も少ない。それなら、たとえば小学校では日本語を学ぶ時間をもっと増やしたり、会社員ならそれぞれの仕事に本当に必要なことを［　22　］。そうやって日本語の力や、［　23　］技術を身につけたほうが、自分のためになるのではないだろうか。"
+            },
+            {
+              "id": 13054,
+              "questionText": "",
+              "options": [
+                "その後",
+                "確かに",
+                "だから",
+                "すると"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "---\r\n\r\n**英語教育は本当に必要だろうか**\r\n\r\n日本では英語の教育はとても大事だという話を［　19　］。まず学校では、小学校から高校まで英語を学ぶ時間がある。また社会人になってからも、自分から、または会社に言われて英会話教室に通ったり、いろいろな検定試験を受けたりしている人はとても多い。\r\n\r\nまじめに勉強するのは、とてもいいことだと思うが、しかし、私の考えは少し違う。\r\n\r\n［　20　］、インターネットで海外の情報を集めるときや、海外旅行中、日本にいても外国人の観光客から道を聞かれたときなど、英語がわかると便利だと感じるときもある。しかし、目的もなく、「英語は大事だから」という理由で学習する必要があるのか、疑問を感じるのだ。\r\n\r\n［　21-a　］、日本で生活し、日本の会社で働いているかぎり、英語を話さなければならない機会はほとんどない［　21-b　］。多くの日本人は、英語を話す人といつきあう機会も少ない。それなら、たとえば小学校では日本語を学ぶ時間をもっと増やしたり、会社員ならそれぞれの仕事に本当に必要なことを［　22　］。そうやって日本語の力や、［　23　］技術を身につけたほうが、自分のためになるのではないだろうか。"
+            },
+            {
+              "id": 13055,
+              "questionText": "",
+              "options": [
+                "a. ところが　/　b. にきまっている",
+                "a. ところで　/　b. わけである",
+                "a. なぜなら　/　b. からである",
+                "a. なぜ　/　b. のだろうか"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "---\r\n\r\n**英語教育は本当に必要だろうか**\r\n\r\n日本では英語の教育はとても大事だという話を［　19　］。まず学校では、小学校から高校まで英語を学ぶ時間がある。また社会人になってからも、自分から、または会社に言われて英会話教室に通ったり、いろいろな検定試験を受けたりしている人はとても多い。\r\n\r\nまじめに勉強するのは、とてもいいことだと思うが、しかし、私の考えは少し違う。\r\n\r\n［　20　］、インターネットで海外の情報を集めるときや、海外旅行中、日本にいても外国人の観光客から道を聞かれたときなど、英語がわかると便利だと感じるときもある。しかし、目的もなく、「英語は大事だから」という理由で学習する必要があるのか、疑問を感じるのだ。\r\n\r\n［　21-a　］、日本で生活し、日本の会社で働いているかぎり、英語を話さなければならない機会はほとんどない［　21-b　］。多くの日本人は、英語を話す人といつきあう機会も少ない。それなら、たとえば小学校では日本語を学ぶ時間をもっと増やしたり、会社員ならそれぞれの仕事に本当に必要なことを［　22　］。そうやって日本語の力や、［　23　］技術を身につけたほうが、自分のためになるのではないだろうか。"
+            },
+            {
+              "id": 13056,
+              "questionText": "",
+              "options": [
+                "学ばないほうがよいと思う",
+                "学ぶほうがよいと思わない",
+                "学ぶべきではないと思う",
+                "学ぶべきだと思う"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "---\r\n\r\n**英語教育は本当に必要だろうか**\r\n\r\n日本では英語の教育はとても大事だという話を［　19　］。まず学校では、小学校から高校まで英語を学ぶ時間がある。また社会人になってからも、自分から、または会社に言われて英会話教室に通ったり、いろいろな検定試験を受けたりしている人はとても多い。\r\n\r\nまじめに勉強するのは、とてもいいことだと思うが、しかし、私の考えは少し違う。\r\n\r\n［　20　］、インターネットで海外の情報を集めるときや、海外旅行中、日本にいても外国人の観光客から道を聞かれたときなど、英語がわかると便利だと感じるときもある。しかし、目的もなく、「英語は大事だから」という理由で学習する必要があるのか、疑問を感じるのだ。\r\n\r\n［　21-a　］、日本で生活し、日本の会社で働いているかぎり、英語を話さなければならない機会はほとんどない［　21-b　］。多くの日本人は、英語を話す人といつきあう機会も少ない。それなら、たとえば小学校では日本語を学ぶ時間をもっと増やしたり、会社員ならそれぞれの仕事に本当に必要なことを［　22　］。そうやって日本語の力や、［　23　］技術を身につけたほうが、自分のためになるのではないだろうか。"
+            },
+            {
+              "id": 13057,
+              "questionText": "",
+              "options": [
+                "いつか役立つ",
+                "すぐに役立つ",
+                "ずっと役立たない",
+                "あまり役立たない"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "---\r\n\r\n**英語教育は本当に必要だろうか**\r\n\r\n日本では英語の教育はとても大事だという話を［　19　］。まず学校では、小学校から高校まで英語を学ぶ時間がある。また社会人になってからも、自分から、または会社に言われて英会話教室に通ったり、いろいろな検定試験を受けたりしている人はとても多い。\r\n\r\nまじめに勉強するのは、とてもいいことだと思うが、しかし、私の考えは少し違う。\r\n\r\n［　20　］、インターネットで海外の情報を集めるときや、海外旅行中、日本にいても外国人の観光客から道を聞かれたときなど、英語がわかると便利だと感じるときもある。しかし、目的もなく、「英語は大事だから」という理由で学習する必要があるのか、疑問を感じるのだ。\r\n\r\n［　21-a　］、日本で生活し、日本の会社で働いているかぎり、英語を話さなければならない機会はほとんどない［　21-b　］。多くの日本人は、英語を話す人といつきあう機会も少ない。それなら、たとえば小学校では日本語を学ぶ時間をもっと増やしたり、会社員ならそれぞれの仕事に本当に必要なことを［　22　］。そうやって日本語の力や、［　23　］技術を身につけたほうが、自分のためになるのではないだろうか。"
             }
           ]
         }
@@ -8535,7 +9986,7 @@ export const practiceSetsBook = {
           "titleJa": "文字・語彙",
           "questions": [
             {
-              "id": 678,
+              "id": 14000,
               "questionText": "その船は、太平洋に<u>沈んで</u>しまった。",
               "options": [
                 "およんで",
@@ -8543,11 +9994,12 @@ export const practiceSetsBook = {
                 "きしんで",
                 "しずんで"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 679,
+              "id": 14001,
               "questionText": "彼はとても<u>幸運</u>な人だ。",
               "options": [
                 "ごうん",
@@ -8555,11 +10007,12 @@ export const practiceSetsBook = {
                 "こううん",
                 "こううん"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 680,
+              "id": 14002,
               "questionText": "いつもより遅く<u>昼食</u>をとった。",
               "options": [
                 "ちゅうしょく",
@@ -8567,11 +10020,12 @@ export const practiceSetsBook = {
                 "ちゅうじょく",
                 "ちょうじょく"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 681,
+              "id": 14003,
               "questionText": "川にたくさんのごみが<u>浮いて</u>いる。",
               "options": [
                 "おいて",
@@ -8579,11 +10033,12 @@ export const practiceSetsBook = {
                 "ういて",
                 "ついて"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 682,
+              "id": 14004,
               "questionText": "引き出しの<u>奥</u>に会議の資料があります。",
               "options": [
                 "すみ",
@@ -8591,11 +10046,12 @@ export const practiceSetsBook = {
                 "はし",
                 "なか"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 683,
+              "id": 14005,
               "questionText": "<u>料金</u>が安いほうを選ぶ。",
               "options": [
                 "よきん",
@@ -8603,23 +10059,25 @@ export const practiceSetsBook = {
                 "ようきん",
                 "りょうきん"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 684,
-              "questionText": "週末、田舎へ出かけた。",
+              "id": 14006,
+              "questionText": "週末、<u>田舎</u>へ出かけた。",
               "options": [
                 "たんぼ",
                 "はたけ",
                 "ののはら",
                 "いなか"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 685,
+              "id": 14007,
               "questionText": "その集会は、午後5時に<u>開会</u>した。",
               "options": [
                 "かいかい",
@@ -8627,11 +10085,12 @@ export const practiceSetsBook = {
                 "へいかい",
                 "へいがい"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 686,
+              "id": 14008,
               "questionText": "<u>めんどう</u>な仕事をしなくてはいけない。",
               "options": [
                 "面頭",
@@ -8639,35 +10098,38 @@ export const practiceSetsBook = {
                 "面倒",
                 "面動"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 687,
-              "questionText": "昔のきろくを参考にする。",
+              "id": 14009,
+              "questionText": "昔の<u>きろく</u>を参考にする。",
               "options": [
                 "紀録",
                 "紀緑",
                 "記録",
                 "記緑"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 688,
-              "questionText": "その小鳥をとらえて、かごの中に入れた。",
+              "id": 14010,
+              "questionText": "その小鳥を<u>とらえて</u>、かごの中に入れた。",
               "options": [
                 "取らえて",
                 "担らえて",
                 "捕らえて",
                 "捕らえて"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 689,
+              "id": 14011,
               "questionText": "その新聞と、この新聞の書き方を<u>くらべて</u>ください。",
               "options": [
                 "批べて",
@@ -8676,22 +10138,24 @@ export const practiceSetsBook = {
                 "対べて"
               ],
               "correctIndex": 1,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 690,
-              "questionText": "この電話には、きのうがたくさん付いている。",
+              "id": 14012,
+              "questionText": "この電話には、<u>きのう</u>がたくさん付いている。",
               "options": [
                 "性能",
                 "効能",
                 "技能",
                 "機能"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 691,
+              "id": 14013,
               "questionText": "新しい<u>こいびと</u>ができた。",
               "options": [
                 "恋人",
@@ -8700,6 +10164,280 @@ export const practiceSetsBook = {
                 "来人"
               ],
               "correctIndex": 0,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14014,
+              "questionText": "この文法は、試験によく出る（　　）だ。",
+              "options": [
+                "ポスト",
+                "ポイント",
+                "テンポ",
+                "ポジション"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14015,
+              "questionText": "車の調子が悪いので、（　　）してください。",
+              "options": [
+                "修正",
+                "修理",
+                "調子",
+                "調理"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14016,
+              "questionText": "料理が足りないので、注文を（　　）してください。",
+              "options": [
+                "追加",
+                "節約",
+                "合計",
+                "強化"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14017,
+              "questionText": "この病気は人に（　　）ので、注意してください。",
+              "options": [
+                "移る",
+                "働く",
+                "渡る",
+                "動く"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14018,
+              "questionText": "どんな職業につくかは（　　）の自由だ。",
+              "options": [
+                "別人",
+                "個人",
+                "数人",
+                "何人"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14019,
+              "questionText": "ベランダにふとんを（　　）出かけた。",
+              "options": [
+                "ほして",
+                "まいて",
+                "しいて",
+                "つるして"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14020,
+              "questionText": "今月から、新しい生活が（　　）した。",
+              "options": [
+                "アップ",
+                "ダウン",
+                "スタート",
+                "ストップ"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14021,
+              "questionText": "母に（　　）のセーターをもらって、うれしかった。",
+              "options": [
+                "手立て",
+                "手ぬい",
+                "手さぐり",
+                "手作り"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14022,
+              "questionText": "田中さんは、友人たちに（　　）されています。",
+              "options": [
+                "自信",
+                "信頼",
+                "責任",
+                "達成"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14023,
+              "questionText": "会社に入って3年、仕事のおもしろさが（　　）わかってきました。",
+              "options": [
+                "さっぱり",
+                "べつに",
+                "だんだん",
+                "あんまり"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14024,
+              "questionText": "クラスのみんなに（　　）されて、悲しくなった。",
+              "options": [
+                "無欲",
+                "無味",
+                "無害",
+                "無視"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14025,
+              "questionText": "午後は町を<u>ぶらぶら</u>していた。",
+              "options": [
+                "話しながら歩いて",
+                "考えながら歩いて",
+                "目的もなく歩いて",
+                "目標に向かって歩いて"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14026,
+              "questionText": "冬になって、よく<u>寝坊する</u>ようになりました。",
+              "options": [
+                "早く起きる",
+                "遅く起きる",
+                "早く寝る",
+                "遅く寝る"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14027,
+              "questionText": "野菜を<u>あげて</u>、料理を作りました。",
+              "options": [
+                "細かく切って",
+                "よく混ぜて",
+                "生のままで",
+                "油で調理して"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14028,
+              "questionText": "問題だと思うことを<u>書き出して</u>ください。",
+              "options": [
+                "みんなに伝えて",
+                "パソコンで入力して",
+                "大きな字で書いて",
+                "必要な部分をまとめて"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14029,
+              "questionText": "今日は<u>ついている</u>1日だった。",
+              "options": [
+                "運がよい",
+                "運が悪い",
+                "体調がよい",
+                "体調が悪い"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14030,
+              "questionText": "<u>横になる</u>",
+              "options": [
+                "机の上に、ペンが横になっています。",
+                "川のとなりに、小さな家が横になっています。",
+                "ねむくなったので、ふとんに横になった。",
+                "空に白い雲が横になり、きれいだ。"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14031,
+              "questionText": "<u>転がる</u>",
+              "options": [
+                "時間がなかったので、家から会社まで転がっていった。",
+                "男の子の投げたボールは、地面に転がった。",
+                "部屋から、空に飛行機が転がっているのが見えます。",
+                "駅から公園まで、バスが転がっているのでとても便利です。"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14032,
+              "questionText": "<u>底</u>",
+              "options": [
+                "いすの底に、2匹のねこが寝ています。",
+                "スカートの底が地面につきそうです。",
+                "私の家は、大きな山の底にあります。",
+                "この魚は、深い海の底に住んでいます。"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14033,
+              "questionText": "<u>兼ねる</u>",
+              "options": [
+                "あの人は、2つの仕事を兼ねている。",
+                "となりの家に兼ねて、なるべく静かに生活しています。",
+                "きれいな花をたくさん兼ねて、花束を作った。",
+                "家の鍵を兼ねないで、外出してしまった。"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 14034,
+              "questionText": "<u>まずい</u>",
+              "options": [
+                "私は、彼のようなまずい人間はきらいです。",
+                "今日の天気は、暑いというよりはまずい。",
+                "学生なのだから授業に遅刻をするのはまずい。",
+                "このりんごは高いので、少しまずくしてください。"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             }
           ]
@@ -8709,223 +10447,7 @@ export const practiceSetsBook = {
           "titleJa": "文法・読解",
           "questions": [
             {
-              "id": 692,
-              "questionText": "車の調子が悪いので、（　　）してください。",
-              "options": [
-                "修正",
-                "修理",
-                "調子",
-                "調理"
-              ],
-              "correctIndex": 1,
-              "sectionType": "grammar-reading"
-            },
-            {
-              "id": 693,
-              "questionText": "料理が足りないので、注文を（　　）してください。",
-              "options": [
-                "追加",
-                "節約",
-                "合計",
-                "強化"
-              ],
-              "correctIndex": 0,
-              "sectionType": "grammar-reading"
-            },
-            {
-              "id": 694,
-              "questionText": "この病気は人に（　　）ので、注意してください。",
-              "options": [
-                "移る",
-                "働く",
-                "渡る",
-                "動く"
-              ],
-              "correctIndex": 2,
-              "sectionType": "grammar-reading"
-            },
-            {
-              "id": 695,
-              "questionText": "どんな職業につくかは（　　）の自由だ。",
-              "options": [
-                "別人",
-                "個人",
-                "数人",
-                "何人"
-              ],
-              "correctIndex": 3,
-              "sectionType": "grammar-reading"
-            },
-            {
-              "id": 696,
-              "questionText": "ベランダにふとんを（　　）出かけた。",
-              "options": [
-                "ほして",
-                "まいて",
-                "しいて",
-                "つるして"
-              ],
-              "correctIndex": 2,
-              "sectionType": "grammar-reading"
-            },
-            {
-              "id": 697,
-              "questionText": "今月から、新しい生活が（　　）した。",
-              "options": [
-                "アップ",
-                "ダウン",
-                "スタート",
-                "ストップ"
-              ],
-              "correctIndex": 2,
-              "sectionType": "grammar-reading"
-            },
-            {
-              "id": 698,
-              "questionText": "母に（　　）のセーターをもらって、うれしかった。",
-              "options": [
-                "手立て",
-                "手ぬい",
-                "手さぐり",
-                "手作り"
-              ],
-              "correctIndex": 3,
-              "sectionType": "grammar-reading"
-            },
-            {
-              "id": 699,
-              "questionText": "田中さんは、友人たちに（　　）されています。",
-              "options": [
-                "自信",
-                "信頼",
-                "責任",
-                "達成"
-              ],
-              "correctIndex": 2,
-              "sectionType": "grammar-reading"
-            },
-            {
-              "id": 700,
-              "questionText": "会社に入って3年、仕事のおもしろさが（　　）わかってきました。",
-              "options": [
-                "さっぱり",
-                "べつに",
-                "だんだん",
-                "あんまり"
-              ],
-              "correctIndex": 1,
-              "sectionType": "grammar-reading"
-            },
-            {
-              "id": 701,
-              "questionText": "クラスのみんなに（　　）されて、悲しくなった。",
-              "options": [
-                "無欲",
-                "無味",
-                "無害",
-                "無視"
-              ],
-              "correctIndex": 0,
-              "sectionType": "grammar-reading"
-            },
-            {
-              "id": 702,
-              "questionText": "午後は町を<u>ぶらぶら</u>していた。",
-              "options": [
-                "話しながら歩いて",
-                "考えながら歩いて",
-                "目的もなく歩いて",
-                "目標に向かって歩いて"
-              ],
-              "correctIndex": 3,
-              "sectionType": "grammar-reading"
-            },
-            {
-              "id": 703,
-              "questionText": "冬になって、よく<u>寝坊する</u>ようになりました。",
-              "options": [
-                "早く起きる",
-                "遅く起きる",
-                "早く寝る",
-                "遅く寝る"
-              ],
-              "correctIndex": 0,
-              "sectionType": "grammar-reading"
-            },
-            {
-              "id": 704,
-              "questionText": "野菜をあげて、料理を作りました。",
-              "options": [
-                "細かく切って",
-                "よく混ぜて",
-                "生のままで",
-                "油で調理して"
-              ],
-              "correctIndex": 2,
-              "sectionType": "grammar-reading"
-            },
-            {
-              "id": 705,
-              "questionText": "問題だと思うことを<u>書き出して</u>ください。",
-              "options": [
-                "みんなに伝えて",
-                "パソコンで入力して",
-                "大きな字で書いて",
-                "必要な部分をまとめて"
-              ],
-              "correctIndex": 1,
-              "sectionType": "grammar-reading"
-            },
-            {
-              "id": 706,
-              "questionText": "今日はついている1日だった。",
-              "options": [
-                "運がよい",
-                "運が悪い",
-                "体調がよい",
-                "体調が悪い",
-                "机の上に、ペンが横になっています。",
-                "川のとなりに、小さな家が横になっています。",
-                "ねむくなったので、ふとんに横になった。",
-                "空に白い雲が横になり、きれいだ。",
-                "時間がなかったので、家から会社まで転がっていった。",
-                "男の子の投げたボールは、地面に転がった。",
-                "部屋から、空に飛行機が転がっているのが見えます。",
-                "駅から公園まで、バスが転がっているのでとても便利です。",
-                "いすの底に、2匹のねこが寝ています。",
-                "スカートの底が地面につきそうです。",
-                "私の家は、大きな山の底にあります。",
-                "この魚は、深い海の底に住んでいます。",
-                "あの人は、2つの仕事を兼ねている。",
-                "となりの家に兼ねて、なるべく静かに生活しています。",
-                "きれいな花をたくさん兼ねて、花束を作った。",
-                "家の鍵を兼ねないで、外出してしまった。",
-                "私は、彼のようなまずい人間はきらいです。",
-                "今日の天気は、暑いというよりはまずい。",
-                "学生なのだから授業に遅刻をするのはまずい。",
-                "このりんごは高いので、少しまずくしてください。",
-                "4",
-                "3",
-                "2",
-                "3"
-              ],
-              "correctIndex": 3,
-              "sectionType": "grammar-reading"
-            },
-            {
-              "id": 707,
-              "questionText": "（　　）",
-              "options": [
-                "3",
-                "---",
-                "---",
-                "### <u>文法</u>"
-              ],
-              "correctIndex": 0,
-              "sectionType": "grammar-reading"
-            },
-            {
-              "id": 708,
+              "id": 14035,
               "questionText": "となりの人がどろぼうをして逮捕された。悪い人（　　）見えなかったけど。",
               "options": [
                 "より",
@@ -8934,10 +10456,11 @@ export const practiceSetsBook = {
                 "には"
               ],
               "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 709,
+              "id": 14036,
               "questionText": "朝、牛乳を飲んだ（　　）、今まで何も食べていません。",
               "options": [
                 "ところ",
@@ -8946,10 +10469,11 @@ export const practiceSetsBook = {
                 "しか"
               ],
               "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 710,
+              "id": 14037,
               "questionText": "まったく勉強していない佐藤さんが、あの大学に合格できる（　　）。",
               "options": [
                 "もんか",
@@ -8957,11 +10481,12 @@ export const practiceSetsBook = {
                 "ところか",
                 "はずか"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 711,
+              "id": 14038,
               "questionText": "彼は、彼女と何も話す（　　）なく、帰って行った。",
               "options": [
                 "ほど",
@@ -8970,10 +10495,11 @@ export const practiceSetsBook = {
                 "こと"
               ],
               "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 712,
+              "id": 14039,
               "questionText": "このゲームは子どもに（　　）、大人にも人気がある。",
               "options": [
                 "限って",
@@ -8981,11 +10507,12 @@ export const practiceSetsBook = {
                 "すぎて",
                 "すぎず"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 713,
+              "id": 14040,
               "questionText": "大げんかした（　　）、彼女と離婚しました。",
               "options": [
                 "末は",
@@ -8994,23 +10521,25 @@ export const practiceSetsBook = {
                 "末から"
               ],
               "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 714,
-              "questionText": "息子「なんだか風邪をひいたみたい。」",
+              "id": 14041,
+              "questionText": "息子「なんだか風邪をひいたみたい。」  \r\n   母「そういうときは、暖かくしてゆっくり（　　）よ。」",
               "options": [
                 "休むわけ",
                 "休むほう",
                 "休むはず",
                 "休むこと"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 715,
-              "questionText": "先生「原子力をテーマにした映画を見て、どう思いましたか。」",
+              "id": 14042,
+              "questionText": "先生「原子力をテーマにした映画を見て、どう思いましたか。」  \r\n   生徒「はい、これからのエネルギーについて考え（　　）ました。」",
               "options": [
                 "考えて",
                 "考えたまま",
@@ -9018,10 +10547,11 @@ export const practiceSetsBook = {
                 "考えさせられ"
               ],
               "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 716,
+              "id": 14043,
               "questionText": "明日、お宅へ（　　）つもりですが、よろしいでしょうか。",
               "options": [
                 "拝見する",
@@ -9029,23 +10559,25 @@ export const practiceSetsBook = {
                 "いただく",
                 "うかがう"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 717,
-              "questionText": "女の学生「この新しいシューズ、歩く（　　）、やせるらしいよ。」",
+              "id": 14044,
+              "questionText": "女の学生「この新しいシューズ、歩く（　　）、やせるらしいよ。」  \r\n    男の学生「本当かなあ。」",
               "options": [
                 "歩くだけでも",
                 "歩いたままでも",
                 "歩くばかりで",
                 "歩くことより"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 718,
+              "id": 14045,
               "questionText": "この町の昔と今を比較すると、その違いには驚く（　　）。",
               "options": [
                 "くらいがあります",
@@ -9053,11 +10585,12 @@ export const practiceSetsBook = {
                 "ものがあります",
                 "のがあります"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 719,
+              "id": 14046,
               "questionText": "会議が始まると電話に（　　）、メールを送って下さい。",
               "options": [
                 "出ようとしないので",
@@ -9066,22 +10599,24 @@ export const practiceSetsBook = {
                 "出るそうなので"
               ],
               "correctIndex": 0,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 720,
-              "questionText": "パク「キムさんって、とてもすてきな人だね。」",
+              "id": 14047,
+              "questionText": "パク「キムさんって、とてもすてきな人だね。」  \r\n    木村「でも、キムさんは確か（　　）。」",
               "options": [
                 "結婚していそうだよ",
                 "結婚していっこないって",
                 "結婚しているわけだよ",
                 "結婚しているんだって"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 721,
+              "id": 14048,
               "questionText": "科学者の田中さんは、__________ __________ ★ __________ 、ときどき食事を忘れてしまう。",
               "options": [
                 "あまり",
@@ -9090,10 +10625,11 @@ export const practiceSetsBook = {
                 "なる"
               ],
               "correctIndex": 2,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 722,
+              "id": 14049,
               "questionText": "大変そうですね。__________ __________ ★ __________ いただけませんか。",
               "options": [
                 "よろしければ",
@@ -9101,11 +10637,12 @@ export const practiceSetsBook = {
                 "お手伝いを",
                 "私で"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 723,
+              "id": 14050,
               "questionText": "会社にとって大事なこの仕事を、__________ __________ ★ __________ 会社が倒産してしまう。",
               "options": [
                 "なんでも",
@@ -9113,56 +10650,105 @@ export const practiceSetsBook = {
                 "なにが",
                 "成功させない"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 724,
-              "questionText": "課長「明日の夜、どこかに食事に行きませんか。」",
+              "id": 14051,
+              "questionText": "課長「明日の夜、どこかに食事に行きませんか。」  \r\n    部長「明日は家族と__________ __________ ★ __________ ので、また今度させてくれますか。」",
               "options": [
                 "ことに",
                 "いる",
                 "なって",
                 "食事をする"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 725,
+              "id": 14052,
               "questionText": "ひさしぶりに東京へ遊びに行__________ __________ ★ __________ 買ってきた。",
               "options": [
                 "服を",
                 "ほしかった",
                 "ついでに",
-                "行った",
+                "行った"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading"
+            },
+            {
+              "id": 14053,
+              "questionText": "",
+              "options": [
                 "だから",
                 "けれども",
                 "つまり",
-                "その上",
+                "その上"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**秋の気配**\r\n\r\n8月の終わりごろといえば、まだとても暑い時期だ。太陽はぎらぎらと輝き、都会のアスファルトの上を歩いている人々は暑さで疲れている。毎日暑くて、元気がなくなる人も多いだろう。\r\n\r\n［　19　］、山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちているのに気がつくだろう。山に行き、おいしい空気を吸って、美しい景色を［　20　］、夏の暑さを忘れることができる。\r\n\r\n山まで遠いし、行く時間もない、という人も多いだろう。［　21　］、都会の中の森に出かけてみてはいかがだろうか。都会の中にある大きな公園の森に入ってみれば、街の中と気温が大きく違うことに驚くだろう。大きな公園でなくてもよい。家の近所にある小さな公園の中の森や、住宅地の中の歩道につくられた林でも［　22　］。きれいな色の小さな実がなっていたり、秋になって色が変わった草が、しずかに風に吹かれていたりするのを見つけられるだろう。そして、こんな目立たないところでも花や草はきちんと生きているのだと感じ、人より早く秋の気配を発見した喜びを［　23　］。"
+            },
+            {
+              "id": 14054,
+              "questionText": "",
+              "options": [
                 "見るからに",
                 "見たままで",
                 "見るだけでも",
-                "見ないまでも",
+                "見ないまでも"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**秋の気配**\r\n\r\n8月の終わりごろといえば、まだとても暑い時期だ。太陽はぎらぎらと輝き、都会のアスファルトの上を歩いている人々は暑さで疲れている。毎日暑くて、元気がなくなる人も多いだろう。\r\n\r\n［　19　］、山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちているのに気がつくだろう。山に行き、おいしい空気を吸って、美しい景色を［　20　］、夏の暑さを忘れることができる。\r\n\r\n山まで遠いし、行く時間もない、という人も多いだろう。［　21　］、都会の中の森に出かけてみてはいかがだろうか。都会の中にある大きな公園の森に入ってみれば、街の中と気温が大きく違うことに驚くだろう。大きな公園でなくてもよい。家の近所にある小さな公園の中の森や、住宅地の中の歩道につくられた林でも［　22　］。きれいな色の小さな実がなっていたり、秋になって色が変わった草が、しずかに風に吹かれていたりするのを見つけられるだろう。そして、こんな目立たないところでも花や草はきちんと生きているのだと感じ、人より早く秋の気配を発見した喜びを［　23　］。"
+            },
+            {
+              "id": 14055,
+              "questionText": "",
+              "options": [
                 "そんなときは",
                 "あんなときは",
                 "そちらのときは",
-                "あちらのときは",
+                "あちらのときは"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**秋の気配**\r\n\r\n8月の終わりごろといえば、まだとても暑い時期だ。太陽はぎらぎらと輝き、都会のアスファルトの上を歩いている人々は暑さで疲れている。毎日暑くて、元気がなくなる人も多いだろう。\r\n\r\n［　19　］、山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちているのに気がつくだろう。山に行き、おいしい空気を吸って、美しい景色を［　20　］、夏の暑さを忘れることができる。\r\n\r\n山まで遠いし、行く時間もない、という人も多いだろう。［　21　］、都会の中の森に出かけてみてはいかがだろうか。都会の中にある大きな公園の森に入ってみれば、街の中と気温が大きく違うことに驚くだろう。大きな公園でなくてもよい。家の近所にある小さな公園の中の森や、住宅地の中の歩道につくられた林でも［　22　］。きれいな色の小さな実がなっていたり、秋になって色が変わった草が、しずかに風に吹かれていたりするのを見つけられるだろう。そして、こんな目立たないところでも花や草はきちんと生きているのだと感じ、人より早く秋の気配を発見した喜びを［　23　］。"
+            },
+            {
+              "id": 14056,
+              "questionText": "",
+              "options": [
                 "十分だ",
                 "十分ではない",
                 "違っている",
-                "違っていない",
+                "違っていない"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**秋の気配**\r\n\r\n8月の終わりごろといえば、まだとても暑い時期だ。太陽はぎらぎらと輝き、都会のアスファルトの上を歩いている人々は暑さで疲れている。毎日暑くて、元気がなくなる人も多いだろう。\r\n\r\n［　19　］、山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちているのに気がつくだろう。山に行き、おいしい空気を吸って、美しい景色を［　20　］、夏の暑さを忘れることができる。\r\n\r\n山まで遠いし、行く時間もない、という人も多いだろう。［　21　］、都会の中の森に出かけてみてはいかがだろうか。都会の中にある大きな公園の森に入ってみれば、街の中と気温が大きく違うことに驚くだろう。大きな公園でなくてもよい。家の近所にある小さな公園の中の森や、住宅地の中の歩道につくられた林でも［　22　］。きれいな色の小さな実がなっていたり、秋になって色が変わった草が、しずかに風に吹かれていたりするのを見つけられるだろう。そして、こんな目立たないところでも花や草はきちんと生きているのだと感じ、人より早く秋の気配を発見した喜びを［　23　］。"
+            },
+            {
+              "id": 14057,
+              "questionText": "",
+              "options": [
                 "感じかねない",
                 "感じるほかはない",
                 "感じることができる",
-                "感じられるにちがいない",
-                "3",
-                "3",
-                "2",
-                "2"
+                "感じられるにちがいない"
               ],
-              "correctIndex": 1,
-              "sectionType": "grammar-reading"
+              "correctIndex": 2,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**秋の気配**\r\n\r\n8月の終わりごろといえば、まだとても暑い時期だ。太陽はぎらぎらと輝き、都会のアスファルトの上を歩いている人々は暑さで疲れている。毎日暑くて、元気がなくなる人も多いだろう。\r\n\r\n［　19　］、山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちているのに気がつくだろう。山に行き、おいしい空気を吸って、美しい景色を［　20　］、夏の暑さを忘れることができる。\r\n\r\n山まで遠いし、行く時間もない、という人も多いだろう。［　21　］、都会の中の森に出かけてみてはいかがだろうか。都会の中にある大きな公園の森に入ってみれば、街の中と気温が大きく違うことに驚くだろう。大きな公園でなくてもよい。家の近所にある小さな公園の中の森や、住宅地の中の歩道につくられた林でも［　22　］。きれいな色の小さな実がなっていたり、秋になって色が変わった草が、しずかに風に吹かれていたりするのを見つけられるだろう。そして、こんな目立たないところでも花や草はきちんと生きているのだと感じ、人より早く秋の気配を発見した喜びを［　23　］。"
             }
           ]
         }
@@ -9178,19 +10764,20 @@ export const practiceSetsBook = {
           "titleJa": "文字・語彙",
           "questions": [
             {
-              "id": 726,
-              "questionText": "大事なことなので、文書で回答してください。",
+              "id": 15000,
+              "questionText": "大事なことなので、<u>文書</u>で回答してください。",
               "options": [
                 "もんしょう",
                 "もんしょ",
                 "ぶんしょう",
                 "ぶんしょ"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 727,
+              "id": 15001,
               "questionText": "毎日練習をしたので、<u>実力</u>がついた。",
               "options": [
                 "しつりょく",
@@ -9198,11 +10785,12 @@ export const practiceSetsBook = {
                 "しつりき",
                 "じつりき"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 728,
+              "id": 15002,
               "questionText": "冷蔵庫で氷が<u>固まる</u>。",
               "options": [
                 "つまる",
@@ -9210,11 +10798,12 @@ export const practiceSetsBook = {
                 "あつまる",
                 "かたまる"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 729,
+              "id": 15003,
               "questionText": "風に木の葉が<u>舞って</u>いました。",
               "options": [
                 "おどって",
@@ -9222,23 +10811,25 @@ export const practiceSetsBook = {
                 "まって",
                 "さって"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 730,
-              "questionText": "食べ続けても、体に害はありません。",
+              "id": 15004,
+              "questionText": "食べ続けても、体に<u>害</u>はありません。",
               "options": [
                 "かい",
                 "がい",
                 "とく",
                 "どく"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 731,
+              "id": 15005,
               "questionText": "新しいルールは、わが社にとって<u>有利</u>だ。",
               "options": [
                 "ふり",
@@ -9246,23 +10837,25 @@ export const practiceSetsBook = {
                 "ゆり",
                 "ゆうり"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 732,
-              "questionText": "この町には、有名な港があります。",
+              "id": 15006,
+              "questionText": "この町には、有名な<u>港</u>があります。",
               "options": [
                 "きし",
                 "みなと",
                 "うみ",
                 "はまべ"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 733,
+              "id": 15007,
               "questionText": "2人の意見が<u>対立</u>している。",
               "options": [
                 "たいりつ",
@@ -9270,11 +10863,12 @@ export const practiceSetsBook = {
                 "たいりゅう",
                 "だいりゅう"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 734,
+              "id": 15008,
               "questionText": "<u>みごと</u>なポーズで着地した。",
               "options": [
                 "身事",
@@ -9282,11 +10876,12 @@ export const practiceSetsBook = {
                 "夢事",
                 "見事"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 735,
+              "id": 15009,
               "questionText": "<u>きょうどう</u>で、新しい仕事をはじめた。",
               "options": [
                 "強同",
@@ -9295,10 +10890,11 @@ export const practiceSetsBook = {
                 "共道"
               ],
               "correctIndex": 2,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 736,
+              "id": 15010,
               "questionText": "初めて会った人に<u>めいし</u>をもらった。",
               "options": [
                 "名氏",
@@ -9306,11 +10902,12 @@ export const practiceSetsBook = {
                 "名刺",
                 "名紙"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 737,
+              "id": 15011,
               "questionText": "あなたの行いは、だれかを<u>すくう</u>ことができるかもしれない。",
               "options": [
                 "補う",
@@ -9318,11 +10915,12 @@ export const practiceSetsBook = {
                 "求う",
                 "救う"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 738,
+              "id": 15012,
               "questionText": "クリスマスの<u>ていばん</u>の商品は、このケーキだ。",
               "options": [
                 "丁番",
@@ -9330,11 +10928,12 @@ export const practiceSetsBook = {
                 "丁版",
                 "定版"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 739,
+              "id": 15013,
               "questionText": "夜中に家の外で<u>あしおと</u>が聞こえた。",
               "options": [
                 "足声",
@@ -9343,10 +10942,11 @@ export const practiceSetsBook = {
                 "足元"
               ],
               "correctIndex": 2,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 740,
+              "id": 15014,
               "questionText": "毎月たくさん雑誌を買うので、部屋に置く（　　）がない。",
               "options": [
                 "ウェイト",
@@ -9354,11 +10954,12 @@ export const practiceSetsBook = {
                 "インテリア",
                 "スペース"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 741,
+              "id": 15015,
               "questionText": "私が動物を好きになったのは、両親の（　　）だ。",
               "options": [
                 "反響",
@@ -9367,10 +10968,11 @@ export const practiceSetsBook = {
                 "代表"
               ],
               "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 742,
+              "id": 15016,
               "questionText": "旅行者がけんかをしたことがA国とB国の（　　）問題になった。",
               "options": [
                 "海外",
@@ -9378,11 +10980,12 @@ export const practiceSetsBook = {
                 "交通",
                 "外交"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 743,
+              "id": 15017,
               "questionText": "外出するので、アクセサリーを（　　）。",
               "options": [
                 "はいた",
@@ -9390,11 +10993,12 @@ export const practiceSetsBook = {
                 "つけた",
                 "せおった"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 744,
+              "id": 15018,
               "questionText": "この生き物は、魚の（　　）だ。",
               "options": [
                 "一派",
@@ -9402,11 +11006,12 @@ export const practiceSetsBook = {
                 "一期",
                 "一流"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 745,
+              "id": 15019,
               "questionText": "一か月の生活（　　）はどのくらいですか。",
               "options": [
                 "金",
@@ -9414,11 +11019,12 @@ export const practiceSetsBook = {
                 "費",
                 "値"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 746,
+              "id": 15020,
               "questionText": "彼女を（　　）して、この曲を作りました。",
               "options": [
                 "イコール",
@@ -9426,11 +11032,12 @@ export const practiceSetsBook = {
                 "イメージ",
                 "スケッチ"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 747,
+              "id": 15021,
               "questionText": "彼は動物学者なので、動物に（　　）。",
               "options": [
                 "くわしい",
@@ -9438,11 +11045,12 @@ export const practiceSetsBook = {
                 "くやしい",
                 "たのもしい"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 748,
+              "id": 15022,
               "questionText": "今日は休むと、中田さんに（　　）してください。",
               "options": [
                 "提案",
@@ -9450,11 +11058,12 @@ export const practiceSetsBook = {
                 "要求",
                 "指摘"
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 749,
+              "id": 15023,
               "questionText": "休みには温泉に行って、何もしないで旅館で（　　）したい。",
               "options": [
                 "そろそろ",
@@ -9462,11 +11071,12 @@ export const practiceSetsBook = {
                 "ぐるぐる",
                 "のんびり"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 750,
+              "id": 15024,
               "questionText": "エジプトのピラミッドは、とても（　　）だ。",
               "options": [
                 "多大",
@@ -9475,10 +11085,11 @@ export const practiceSetsBook = {
                 "盛大"
               ],
               "correctIndex": 2,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 751,
+              "id": 15025,
               "questionText": "<u>マニュアル</u>を見ながら作業をする。",
               "options": [
                 "地図",
@@ -9486,11 +11097,12 @@ export const practiceSetsBook = {
                 "時刻表",
                 "説明書"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 752,
+              "id": 15026,
               "questionText": "そこに<u>じっと</u>してください。",
               "options": [
                 "動いて",
@@ -9498,11 +11110,12 @@ export const practiceSetsBook = {
                 "見て",
                 "見ないで"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 753,
+              "id": 15027,
               "questionText": "田中さんはとても<u>顔が広い</u>。",
               "options": [
                 "頭が大きい",
@@ -9510,11 +11123,12 @@ export const practiceSetsBook = {
                 "知り合いが多い",
                 "親せきが多い"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 754,
+              "id": 15028,
               "questionText": "<u>あわてて</u>出かける準備をした。",
               "options": [
                 "時間をかけて",
@@ -9522,54 +11136,86 @@ export const practiceSetsBook = {
                 "急いで",
                 "ゆっくり"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 755,
-              "questionText": "妻「料理の味はどうかな。」",
+              "id": 15029,
+              "questionText": "妻「料理の味はどうかな。」  \r\n    夫「<u>割合</u>おいしいよ。」",
               "options": [
                 "思っていたよりも",
                 "すばらしく",
                 "今まででいちばん",
-                "少しは",
-                "お正月は、ずっと家族とたまたま一緒にいた。",
-                "彼にたまたま会うのは、5年ぶりです。",
-                "散歩をしていたら、ファンさんとたまたま会った。",
-                "きちんと計画をたてて、たまたま旅行に行った。",
-                "やぶれたシャツを糸で補ってください。",
-                "サッカーの試合中けがをした足を、すぐに補った。",
-                "夫婦げんかをした後は、早く補ったほうがいい。",
-                "私の足りない部分を、中山さんが補ってくれた。",
-                "明日、机のたばを捨ててください。",
-                "駅前10人くらいの人のたばが立っています。",
-                "この地方には、めずらしい動物のたばが住んでいます。",
-                "台の上に紙のたばが置いてあります。",
-                "今日は、都合がなくて一緒に遊びに行けません。",
-                "明日、都合がよければ、うちに食事に来てください。",
-                "これから1週間、外国へ旅行に行く都合です。",
-                "悪い都合で会議に出られず、すみませんでした。",
-                "容器のふたをきつく閉めてください。",
-                "林さんは、ほかのどの社員よりも能力がきつい。",
-                "どんなにきつく考えても、新しいアイデアが出てこなかった。",
-                "田中さんなら体がきついので、あの山に登れるでしょう。",
-                "3",
-                "2",
-                "4",
-                "3"
+                "少しは ---"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             },
             {
-              "id": 756,
-              "questionText": "（　　）",
+              "id": 15030,
+              "questionText": "<u>たまたま</u>",
               "options": [
-                "2",
-                "---",
-                "<u>✅ 第15回"
+                "お正月は、ずっと家族とたまたま一緒にいた。",
+                "彼にたまたま会うのは、5年ぶりです。",
+                "散歩をしていたら、ファンさんとたまたま会った。",
+                "きちんと計画をたてて、たまたま旅行に行った。"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 15031,
+              "questionText": "<u>補う</u>",
+              "options": [
+                "やぶれたシャツを糸で補ってください。",
+                "サッカーの試合中けがをした足を、すぐに補った。",
+                "夫婦げんかをした後は、早く補ったほうがいい。",
+                "私の足りない部分を、中山さんが補ってくれた。"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 15032,
+              "questionText": "<u>たば</u>",
+              "options": [
+                "明日、机のたばを捨ててください。",
+                "駅前10人くらいの人のたばが立っています。",
+                "この地方には、めずらしい動物のたばが住んでいます。",
+                "台の上に紙のたばが置いてあります。"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 15033,
+              "questionText": "<u>都合</u>",
+              "options": [
+                "今日は、都合がなくて一緒に遊びに行けません。",
+                "明日、都合がよければ、うちに食事に来てください。",
+                "これから1週間、外国へ旅行に行く都合です。",
+                "悪い都合で会議に出られず、すみませんでした。"
               ],
               "correctIndex": 1,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "sectionType": "vocabulary-kanji"
+            },
+            {
+              "id": 15034,
+              "questionText": "<u>きつい</u>",
+              "options": [
+                "容器のふたをきつく閉めてください。",
+                "林さんは、ほかのどの社員よりも能力がきつい。",
+                "どんなにきつく考えても、新しいアイデアが出てこなかった。",
+                "田中さんなら体がきついので、あの山に登れるでしょう。"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
               "sectionType": "vocabulary-kanji"
             }
           ]
@@ -9579,7 +11225,7 @@ export const practiceSetsBook = {
           "titleJa": "文法・読解",
           "questions": [
             {
-              "id": 757,
+              "id": 15035,
               "questionText": "彼女と連絡が取れなくなってから、今日（　　）5日になります。",
               "options": [
                 "は",
@@ -9587,11 +11233,12 @@ export const practiceSetsBook = {
                 "も",
                 "が"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 758,
+              "id": 15036,
               "questionText": "お金（　　）あれば、今よりもっといい生活ができるのに。",
               "options": [
                 "まで",
@@ -9599,11 +11246,12 @@ export const practiceSetsBook = {
                 "さえ",
                 "ほど"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 759,
+              "id": 15037,
               "questionText": "一度約束した（　　）、絶対に守ってください。",
               "options": [
                 "からでは",
@@ -9611,23 +11259,25 @@ export const practiceSetsBook = {
                 "からいって",
                 "からといって"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 760,
-              "questionText": "今井「今日のセミナー、なんだか出席者が少ないね。」",
+              "id": 15038,
+              "questionText": "今井「今日のセミナー、なんだか出席者が少ないね。」  \r\n   山本「電車の事故（　　）、みんなが来るのが遅れているらしいよ。」",
               "options": [
                 "ので",
                 "のわけで",
                 "のに",
                 "のせいで"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 761,
+              "id": 15039,
               "questionText": "先週は、3日間（　　）大雪が降りました。",
               "options": [
                 "にまで",
@@ -9635,11 +11285,12 @@ export const practiceSetsBook = {
                 "にこそ",
                 "にわたって"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 762,
+              "id": 15040,
               "questionText": "2年前の旅行を（　　）、彼女と親しくなった。",
               "options": [
                 "最中に",
@@ -9647,11 +11298,12 @@ export const practiceSetsBook = {
                 "きっかけに",
                 "ついでに"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 763,
+              "id": 15041,
               "questionText": "なんでこんなに手がよごれているんだ。すぐに（　　）しろ。",
               "options": [
                 "きれいに",
@@ -9659,11 +11311,12 @@ export const practiceSetsBook = {
                 "きれい",
                 "きれいで"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 764,
+              "id": 15042,
               "questionText": "テストの答えを聞かれても、（　　）わけがありません。",
               "options": [
                 "教えない",
@@ -9672,10 +11325,11 @@ export const practiceSetsBook = {
                 "教えた"
               ],
               "correctIndex": 0,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 765,
+              "id": 15043,
               "questionText": "私が旅行で買ってきたおみやげを、社長に（　　）。",
               "options": [
                 "しました",
@@ -9683,23 +11337,25 @@ export const practiceSetsBook = {
                 "やりました",
                 "さしあげました"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 766,
-              "questionText": "父「どうして泣いてるんだ？」",
+              "id": 15044,
+              "questionText": "父「どうして泣いてるんだ？」  \r\n    娘「だって、お母さんが（　　）。」",
               "options": [
                 "いないんだっけ",
                 "いないんだもん",
                 "いなかったっけ",
                 "いないんだそう"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 767,
+              "id": 15045,
               "questionText": "子どものころは、この川でよく（　　）。",
               "options": [
                 "泳いだものです",
@@ -9707,11 +11363,12 @@ export const practiceSetsBook = {
                 "泳いだやらず",
                 "泳ぎたいやらず"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 768,
+              "id": 15046,
               "questionText": "おかげさまで、とても楽しくこの仕事を（　　）。またよろしくお願いします。",
               "options": [
                 "していただきました",
@@ -9719,11 +11376,12 @@ export const practiceSetsBook = {
                 "なさっていただきました",
                 "させていだきました"
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 769,
+              "id": 15047,
               "questionText": "情報は、新聞が伝えているから正しい（　　）、自分で正しいかどうか考えることが大切だ。",
               "options": [
                 "としたことでなく",
@@ -9731,11 +11389,12 @@ export const practiceSetsBook = {
                 "というものではなく",
                 "というもので"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 770,
+              "id": 15048,
               "questionText": "連休に、海か山か__________ __________ ★ __________ 、みんなで海水浴に行った。",
               "options": [
                 "あげく",
@@ -9744,10 +11403,11 @@ export const practiceSetsBook = {
                 "行くか"
               ],
               "correctIndex": 2,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 771,
+              "id": 15049,
               "questionText": "きのうの夜、先生__________ __________ ★ __________ 、みんなでお酒を飲みました。",
               "options": [
                 "後で",
@@ -9755,11 +11415,12 @@ export const practiceSetsBook = {
                 "お休みになった",
                 "その"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 772,
+              "id": 15050,
               "questionText": "子どものころ、__________ __________ ★ __________ 、母にひどくしかられました。",
               "options": [
                 "けんかでも",
@@ -9768,10 +11429,11 @@ export const practiceSetsBook = {
                 "友だちと"
               ],
               "correctIndex": 3,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 773,
+              "id": 15051,
               "questionText": "あの人は、スポーツ選手の__________ __________ ★ __________ と思います。",
               "options": [
                 "わりに",
@@ -9780,43 +11442,91 @@ export const practiceSetsBook = {
                 "ほうだ"
               ],
               "correctIndex": 2,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading"
             },
             {
-              "id": 774,
+              "id": 15052,
               "questionText": "昔__________ __________ ★ __________ 習慣はありません。",
               "options": [
                 "ともかく",
                 "なら",
                 "そんな",
-                "今は",
+                "今は"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading"
+            },
+            {
+              "id": 15053,
+              "questionText": "",
+              "options": [
                 "それぞれ",
                 "だいたい",
                 "ちょうど",
-                "たった",
+                "たった"
+              ],
+              "correctIndex": 1,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**美術館めぐりのすすめ**\r\n\r\nこの秋、A市の中心エリアでは、美術館めぐりのイベントを行っています。芸術に力を入れているA市には、3つのとても有名な美術館があります。このイベントは、県立美術館、市立美術館、山田太郎記念美術館の3つをまわり、それぞれの美術館に入場するときに、用紙にスタンプをもらうというものです。期間中はどの美術館でも入場料は、［　19　］500円です。3つの美術館は、駅から電車やバスを使えば10分以内でいける便利な場所にあります。2館以上スタンプを［　20-a　］、絵はがきやポスター、シールなどの景品の中から好きなものを1つ［　20-b　］。\r\n\r\nイベントの期間中、すべての美術館で、特別展覧会も開かれています。［　21　］展覧会もおすすめです。特に、山田太郎美術館では、いつもは公開されていない、日本の美術の歴史の中でも「名作」とされている山田太郎氏の絵画3枚を公開します。その他の美術館でも、［　22　］知っている有名な絵画がいくつも展示される予定です。\r\n\r\n美術や絵画にあまり関心のない方も、このような機会に美術館めぐりをしながら「芸術の秋」をゆっくりと味わってみては［　23　］。"
+            },
+            {
+              "id": 15054,
+              "questionText": "",
+              "options": [
                 "a. 集めると　/　b. もらえるようです",
                 "a. 集めると　/　b. もらえます",
                 "a. 集めるとき　/　b. もらいます",
-                "a. 集めるとき　/　b. もらうことができます",
+                "a. 集めるとき　/　b. もらうことができます"
+              ],
+              "correctIndex": 0,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**美術館めぐりのすすめ**\r\n\r\nこの秋、A市の中心エリアでは、美術館めぐりのイベントを行っています。芸術に力を入れているA市には、3つのとても有名な美術館があります。このイベントは、県立美術館、市立美術館、山田太郎記念美術館の3つをまわり、それぞれの美術館に入場するときに、用紙にスタンプをもらうというものです。期間中はどの美術館でも入場料は、［　19　］500円です。3つの美術館は、駅から電車やバスを使えば10分以内でいける便利な場所にあります。2館以上スタンプを［　20-a　］、絵はがきやポスター、シールなどの景品の中から好きなものを1つ［　20-b　］。\r\n\r\nイベントの期間中、すべての美術館で、特別展覧会も開かれています。［　21　］展覧会もおすすめです。特に、山田太郎美術館では、いつもは公開されていない、日本の美術の歴史の中でも「名作」とされている山田太郎氏の絵画3枚を公開します。その他の美術館でも、［　22　］知っている有名な絵画がいくつも展示される予定です。\r\n\r\n美術や絵画にあまり関心のない方も、このような機会に美術館めぐりをしながら「芸術の秋」をゆっくりと味わってみては［　23　］。"
+            },
+            {
+              "id": 15055,
+              "questionText": "",
+              "options": [
                 "あの",
                 "ああ",
                 "この",
-                "こう",
+                "こう"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**美術館めぐりのすすめ**\r\n\r\nこの秋、A市の中心エリアでは、美術館めぐりのイベントを行っています。芸術に力を入れているA市には、3つのとても有名な美術館があります。このイベントは、県立美術館、市立美術館、山田太郎記念美術館の3つをまわり、それぞれの美術館に入場するときに、用紙にスタンプをもらうというものです。期間中はどの美術館でも入場料は、［　19　］500円です。3つの美術館は、駅から電車やバスを使えば10分以内でいける便利な場所にあります。2館以上スタンプを［　20-a　］、絵はがきやポスター、シールなどの景品の中から好きなものを1つ［　20-b　］。\r\n\r\nイベントの期間中、すべての美術館で、特別展覧会も開かれています。［　21　］展覧会もおすすめです。特に、山田太郎美術館では、いつもは公開されていない、日本の美術の歴史の中でも「名作」とされている山田太郎氏の絵画3枚を公開します。その他の美術館でも、［　22　］知っている有名な絵画がいくつも展示される予定です。\r\n\r\n美術や絵画にあまり関心のない方も、このような機会に美術館めぐりをしながら「芸術の秋」をゆっくりと味わってみては［　23　］。"
+            },
+            {
+              "id": 15056,
+              "questionText": "",
+              "options": [
                 "だれかが",
                 "だれかは",
                 "だれにも",
-                "だれでも",
+                "だれでも"
+              ],
+              "correctIndex": 3,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**美術館めぐりのすすめ**\r\n\r\nこの秋、A市の中心エリアでは、美術館めぐりのイベントを行っています。芸術に力を入れているA市には、3つのとても有名な美術館があります。このイベントは、県立美術館、市立美術館、山田太郎記念美術館の3つをまわり、それぞれの美術館に入場するときに、用紙にスタンプをもらうというものです。期間中はどの美術館でも入場料は、［　19　］500円です。3つの美術館は、駅から電車やバスを使えば10分以内でいける便利な場所にあります。2館以上スタンプを［　20-a　］、絵はがきやポスター、シールなどの景品の中から好きなものを1つ［　20-b　］。\r\n\r\nイベントの期間中、すべての美術館で、特別展覧会も開かれています。［　21　］展覧会もおすすめです。特に、山田太郎美術館では、いつもは公開されていない、日本の美術の歴史の中でも「名作」とされている山田太郎氏の絵画3枚を公開します。その他の美術館でも、［　22　］知っている有名な絵画がいくつも展示される予定です。\r\n\r\n美術や絵画にあまり関心のない方も、このような機会に美術館めぐりをしながら「芸術の秋」をゆっくりと味わってみては［　23　］。"
+            },
+            {
+              "id": 15057,
+              "questionText": "",
+              "options": [
                 "よかったですしょうか",
                 "よろしいでしょうか",
                 "どうだったでしょうか",
-                "いかがでしょうか",
-                "1",
-                "3",
-                "2",
-                "4"
+                "いかがでしょうか"
               ],
-              "correctIndex": 0,
-              "sectionType": "grammar-reading"
+              "correctIndex": 3,
+              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "passageText": "**美術館めぐりのすすめ**\r\n\r\nこの秋、A市の中心エリアでは、美術館めぐりのイベントを行っています。芸術に力を入れているA市には、3つのとても有名な美術館があります。このイベントは、県立美術館、市立美術館、山田太郎記念美術館の3つをまわり、それぞれの美術館に入場するときに、用紙にスタンプをもらうというものです。期間中はどの美術館でも入場料は、［　19　］500円です。3つの美術館は、駅から電車やバスを使えば10分以内でいける便利な場所にあります。2館以上スタンプを［　20-a　］、絵はがきやポスター、シールなどの景品の中から好きなものを1つ［　20-b　］。\r\n\r\nイベントの期間中、すべての美術館で、特別展覧会も開かれています。［　21　］展覧会もおすすめです。特に、山田太郎美術館では、いつもは公開されていない、日本の美術の歴史の中でも「名作」とされている山田太郎氏の絵画3枚を公開します。その他の美術館でも、［　22　］知っている有名な絵画がいくつも展示される予定です。\r\n\r\n美術や絵画にあまり関心のない方も、このような機会に美術館めぐりをしながら「芸術の秋」をゆっくりと味わってみては［　23　］。"
             }
           ]
         }

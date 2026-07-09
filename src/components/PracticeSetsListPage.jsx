@@ -54,13 +54,6 @@ const PracticeSetsListPage = () => {
           </ol>
         </nav>
         
-        <div className="practice-sets-hero">
-          <div className="practice-sets-hero-info">
-            <h1>{practiceSetsBook.title}</h1>
-            <p>{practiceSetsBook.description}</p>
-          </div>
-        </div>
-
         <div className="practice-sets-progress-overview">
           <div className="progress-overview-bar">
             <div className="bar-track">
@@ -73,7 +66,7 @@ const PracticeSetsListPage = () => {
         </div>
       </div>
 
-      <h2 className="practice-sets-section-title">All Practice Sets</h2>
+      <h2 className="practice-sets-section-title">{totalSets} Practice Sets</h2>
       
       <div className="practice-sets-grid">
         {practiceSetsBook.sets.map((set, index) => {

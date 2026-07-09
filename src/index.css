@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary:#0d9488;
+    --color-primary-light:#14b8a6;
+    --color-primary-dark:#0f766e;
+    --color-accent:#10b981;
+    --color-accent-light:#34d399;
+    --color-accent-dark:#059669;
+    --color-success:#4a7c59;
+    --color-success-light:#5a9c69;
+    --color-success-dark:#3a6c49;
+    --color-warning:#c9a227;
+    --color-bg-primary:#0d1117;
+    --color-bg-secondary:#161b22;
+    --color-bg-tertiary:#21262d;
+    --color-bg-card:#1c2128;
+    --color-text-primary:#f0f6fc;
+    --color-text-secondary:#8b949e;
+    --color-text-muted:#6e7681;
+    --color-border:#272c33;
+    --color-border-light:#353b44;
+    --gradient-primary:linear-gradient(135deg,var(--color-primary) 0%,var(--color-primary-dark) 100%);
+    --gradient-accent:linear-gradient(135deg,var(--color-accent) 0%,var(--color-accent-dark) 100%);
+    --gradient-card:linear-gradient(180deg,#1e3a5f1a 0%,transparent 100%);
+  }
+  
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  .japanese-text {
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+}
+
+@layer utilities {
+  .stagger-children > * {
+    animation: slideUpFade 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .stagger-children > *:nth-child(1) { animation-delay: 0.05s; }
+  .stagger-children > *:nth-child(2) { animation-delay: 0.1s; }
+  .stagger-children > *:nth-child(3) { animation-delay: 0.15s; }
+  .stagger-children > *:nth-child(4) { animation-delay: 0.2s; }
+  .stagger-children > *:nth-child(5) { animation-delay: 0.25s; }
+  .stagger-children > *:nth-child(6) { animation-delay: 0.3s; }
+  .stagger-children > *:nth-child(7) { animation-delay: 0.35s; }
+  .stagger-children > *:nth-child(8) { animation-delay: 0.4s; }
+}
+
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer base {
+  u {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: var(--color-success);
+  }
+  b, strong {
+    font-weight: 600;
+    color: var(--color-success-light);
+  }
+}

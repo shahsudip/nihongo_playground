@@ -146,11 +146,24 @@ const BookChapterListPage = () => {
 
   return (
     <div className="book-detail-container">
+      <nav aria-label="Breadcrumb" className="ps-breadcrumb mb-6">
+        <ol className="flex flex-wrap items-center gap-1 text-sm">
+          <li className="flex items-center">
+            <Link to="/" className="breadcrumb-link">Home</Link>
+          </li>
+          <li className="flex items-center">
+            <span className="mx-2 breadcrumb-separator">/</span>
+            <Link to="/books" className="breadcrumb-link">Books</Link>
+          </li>
+          <li className="flex items-center">
+            <span className="mx-2 breadcrumb-separator">/</span>
+            <span className="breadcrumb-current">{book.title}</span>
+          </li>
+        </ol>
+      </nav>
+
       {/* Clean Header */}
-      <div className="book-detail-header">
-        <button onClick={() => navigate('/books')} className="back-button">
-          &larr; Back to Books
-        </button>
+      <div className="book-detail-header pt-2">
         <div className="book-detail-info">
           <span className="book-detail-level">{book.level}</span>
           <h1 className="book-detail-title">{book.title}</h1>

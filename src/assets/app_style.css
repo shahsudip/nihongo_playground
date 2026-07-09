@@ -2308,6 +2308,7 @@ width: 100%;
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
+  padding-top: 100px;
 }
 
 .book-detail-header {

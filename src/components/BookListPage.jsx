@@ -36,7 +36,7 @@ const BookListPage = () => {
       let fetchedBooks = [];
       
       /* --- AI ADDED: Hard filter to only allow specific books --- */
-      const allowedBooks = ['shin-nihongo-500-n3', 'shinkanzen-master-n3-reading'];
+      const allowedBooks = ['shin-nihongo-500-n3', 'shinkanzen-master-n3-reading', 'shin-nihongo-500-n2'];
       
       booksSnap.forEach(docSnap => {
         if (allowedBooks.includes(docSnap.id)) {
@@ -162,7 +162,7 @@ const BookListPage = () => {
       const { deleteDoc } = await import('firebase/firestore');
       const booksColRef = collection(db, 'books');
       const booksSnap = await getDocs(booksColRef);
-      const allowedBooks = ['shin-nihongo-500-n3', 'shinkanzen-master-n3-reading'];
+      const allowedBooks = ['shin-nihongo-500-n3', 'shinkanzen-master-n3-reading', 'shin-nihongo-500-n2'];
       
       let deletedCount = 0;
       for (const docSnap of booksSnap.docs) {

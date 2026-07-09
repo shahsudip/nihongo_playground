@@ -3,13 +3,20 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc } from 'firebase/firestore';
 
+// Reusable UI Components (Modern Architecture)
+import { Card } from './ui/Card';
+import { Button } from './ui/Button';
+import { ProgressBar } from './ui/ProgressBar';
+import { OptionButton } from './ui/OptionButton';
+import { QuestionNavigator } from './ui/QuestionNavigator';
+
 const PracticeSetQuizPage = () => {
   const { setId, sectionId } = useParams();
   const navigate = useNavigate();
   
   const [answers, setAnswers] = useState({});
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [feedbackMode, setFeedbackMode] = useState('Immediate'); // 'Immediate' or 'At End'
+  const [feedbackMode, setFeedbackMode] = useState('Immediate');
 
   const [currentSet, setCurrentSet] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -35,7 +42,6 @@ const PracticeSetQuizPage = () => {
     fetchBook();
   }, [setId]);
 
-  // Determine which sections to show based on URL
   const sectionsToShow = useMemo(() => {
     if (sectionId === 'vocabulary-kanji') return ['vocabulary-kanji'];
     if (sectionId === 'grammar') return ['grammar-reading'];
@@ -48,7 +54,6 @@ const PracticeSetQuizPage = () => {
     return 'Full Practice';
   }, [sectionId]);
 
-  // Flatten the questions for the selected section(s)
   const questions = useMemo(() => {
     if (!currentSet) return [];
     const qs = [];
@@ -63,22 +68,15 @@ const PracticeSetQuizPage = () => {
     return qs;
   }, [currentSet, sectionsToShow]);
 
-  if (loading) return <div style={{ color: 'white', padding: '100px', textAlign: 'center' }}>Loading Quiz Data...</div>;
-
-  if (!currentSet) {
-    return <div style={{ color: 'white', padding: '100px', textAlign: 'center' }}>Set not found in Firebase.</div>;
-  }
+  if (loading) return <div className="text-white p-20 text-center">Loading Quiz Data...</div>;
+  if (!currentSet) return <div className="text-white p-20 text-center">Set not found in Firebase.</div>;
 
   const totalQuestions = questions.length;
-  
-  if (totalQuestions === 0) {
-    return <div style={{ color: 'white', padding: '100px', textAlign: 'center' }}>No questions available in this section.</div>;
-  }
+  if (totalQuestions === 0) return <div className="text-white p-20 text-center">No questions available.</div>;
 
   const answeredCount = Object.keys(answers).length;
   const progressPercent = Math.round((answeredCount / totalQuestions) * 100);
 
-  // Calculate correct answers if we want to show it immediately
   let correctCount = 0;
   Object.keys(answers).forEach(qId => {
     const q = questions.find(qu => qu.id.toString() === qId.toString());
@@ -88,12 +86,8 @@ const PracticeSetQuizPage = () => {
   });
 
   const handleOptionSelect = (questionId, optionIndex) => {
-    setAnswers(prev => ({
-      ...prev,
-      [questionId]: optionIndex
-    }));
+    setAnswers(prev => ({ ...prev, [questionId]: optionIndex }));
     
-    // Auto advance if immediate feedback is off or we just want to speed up
     if (feedbackMode === 'At End') {
       setTimeout(() => {
         if (currentIndex < totalQuestions - 1) {
@@ -103,182 +97,139 @@ const PracticeSetQuizPage = () => {
     }
   };
 
-  const handleNext = () => {
-    if (currentIndex < totalQuestions - 1) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
-
-  const handlePrev = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  };
+  const handleNext = () => currentIndex < totalQuestions - 1 && setCurrentIndex(currentIndex + 1);
+  const handlePrev = () => currentIndex > 0 && setCurrentIndex(currentIndex - 1);
 
   const currentQ = questions[currentIndex];
   const selectedIdx = answers[currentQ.id];
 
-  // Derive title from question text or section type if needed
   const instructionText = currentQ.sectionType === 'vocabulary-kanji' 
     ? "___のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。"
     : "次の文の（　　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。";
 
   return (
-    <div className="quiz-page-wrapper animate-fade-in">
+    <div className="max-w-3xl mx-auto px-4 py-8 animate-fade-in pt-[100px]">
       
-      {/* Top Controls */}
+      {/* Top Header */}
       <div className="mb-6">
-        <Link to={`/practice-sets/${setId}`} className="quiz-exit-link">
+        <Link to={`/practice-sets/${setId}`} className="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors mb-4 inline-block">
           &larr; Exit Quiz
         </Link>
         
-        <div className="quiz-header-top">
+        <div className="flex items-center justify-between flex-wrap gap-4">
           <div>
-            <h1 className="quiz-title">N3 {currentSet.title}</h1>
-            <p className="quiz-subtitle">{pageTitle}</p>
+            <h1 className="text-xl font-bold">N3 {currentSet.title}</h1>
+            <p className="text-sm text-[var(--color-text-muted)]">{pageTitle}</p>
           </div>
           
           <div className="flex items-center gap-4 flex-wrap">
-            <div className="quiz-feedback-box">
-              <span className="quiz-feedback-label">Feedback:</span>
+            <div className="flex items-center gap-2 px-3 py-2 bg-[var(--color-bg-secondary)] rounded-lg border border-[var(--color-border)]">
+              <span className="text-xs text-[var(--color-text-muted)] mr-1">Feedback:</span>
               <button 
-                className={`quiz-feedback-btn ${feedbackMode === 'Immediate' ? 'active' : ''}`}
+                className={`px-2 py-1 rounded text-xs font-medium transition-colors ${feedbackMode === 'Immediate' ? 'bg-[var(--color-accent)] text-white' : 'text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]'}`}
                 onClick={() => setFeedbackMode('Immediate')}
               >
                 Immediate
               </button>
               <button 
-                className={`quiz-feedback-btn ${feedbackMode === 'At End' ? 'active' : ''}`}
+                className={`px-2 py-1 rounded text-xs font-medium transition-colors ${feedbackMode === 'At End' ? 'bg-[var(--color-accent)] text-white' : 'text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]'}`}
                 onClick={() => setFeedbackMode('At End')}
               >
                 At End
               </button>
             </div>
             
-            <div className="quiz-stats-box">
-              <div className="quiz-stats-answered">{answeredCount} / {totalQuestions} answered</div>
+            <div className="text-right text-sm">
+              <div className="text-[var(--color-text-secondary)]">{answeredCount} / {totalQuestions} answered</div>
               {feedbackMode === 'Immediate' && (
-                <div className="quiz-stats-correct">{correctCount} correct</div>
+                <div className="text-[var(--color-success-light)]">{correctCount} correct</div>
               )}
             </div>
           </div>
         </div>
       </div>
 
-      {/* Progress Bar */}
-      <div className="quiz-progress-section">
-        <div className="quiz-progress-text-row">
-          <span className="quiz-stats-answered">Progress: {answeredCount}/{totalQuestions}</span>
+      {/* Progress Bar Component */}
+      <div className="mb-8">
+        <div className="flex justify-between items-center mb-2 text-sm">
+          <span className="text-[var(--color-text-secondary)]">Progress: {answeredCount}/{totalQuestions}</span>
           {feedbackMode === 'Immediate' && (
-             <span className="quiz-stats-correct">&#10003; {correctCount} correct</span>
+             <span className="text-[var(--color-success-light)]">&#10003; {correctCount} correct</span>
           )}
         </div>
-        <div className="quiz-progress-bar-bg">
-          <div className="quiz-progress-bar-fill" style={{ width: `${progressPercent}%` }}></div>
-        </div>
+        <ProgressBar progressPercent={progressPercent} />
       </div>
 
-      {/* Question Card */}
-      <div className="quiz-question-card scroll-mt-20">
-        <div className="quiz-instruction-box">
-          <p className="quiz-instruction-text">問題 {instructionText}</p>
-        </div>
-        
+      {/* Main Question Card Component */}
+      <Card className="scroll-mt-20">
         <div className="mb-6">
-          <div className="quiz-q-header">
-            <span className={`quiz-q-number-badge ${currentQ.sectionType}`}>
-              {currentIndex + 1}
-            </span>
-            <span className="quiz-q-counter">{currentIndex + 1} of {totalQuestions}</span>
-          </div>
-          <h2 className="quiz-q-text" dangerouslySetInnerHTML={{ __html: currentQ.questionText }}></h2>
-        </div>
-
-        <div className="quiz-options-container">
-          {currentQ.options.map((opt, optIdx) => {
-            const isSelected = selectedIdx === optIdx;
+            <div className="flex justify-between items-center mb-6">
+              <span className="text-sm font-semibold text-[var(--color-accent)] tracking-wider uppercase">
+                Question {currentIndex + 1}
+              </span>
+              <span className="text-sm text-[var(--color-text-muted)]">{currentIndex + 1} of {totalQuestions}</span>
+            </div>
+            {currentQ.instruction && (
+              <div className="mb-4 text-md text-[var(--color-text-secondary)] border-l-4 border-[var(--color-accent)] pl-3 py-1 bg-[var(--color-bg-secondary)] rounded-r-md japanese-text" dangerouslySetInnerHTML={{ __html: currentQ.instruction }}></div>
+            )}
             
-            let btnClass = "";
-            if (isSelected) {
-              btnClass = "selected";
-              if (feedbackMode === 'Immediate' && currentQ.correctIndex !== -1) {
-                  if (currentQ.correctIndex === optIdx) {
-                    btnClass = "correct";
-                  } else {
-                    btnClass = "wrong";
-                  }
-              }
-            } else if (feedbackMode === 'Immediate' && selectedIdx !== undefined && currentQ.correctIndex === optIdx && currentQ.correctIndex !== -1) {
-              btnClass = "correct";
-            }
+            {!currentQ.passageText && (
+              <div className="mb-4 flex items-center">
+                <span className="bg-[var(--color-primary)] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                  Question {currentIndex + 1}
+                </span>
+              </div>
+            )}
 
-            return (
-              <button 
-                key={optIdx}
-                className={`quiz-opt-btn ${btnClass}`}
-                onClick={() => handleOptionSelect(currentQ.id, optIdx)}
-                disabled={feedbackMode === 'Immediate' && selectedIdx !== undefined}
-              >
-                <div className="quiz-opt-circle"></div>
-                <span className="quiz-opt-number">{optIdx + 1})</span>
-                <span className="quiz-opt-text-inner">{opt}</span>
-              </button>
-            );
-          })}
+            {currentQ.passageText && (
+              <div className="mb-6 p-4 md:p-6 bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-lg shadow-inner max-h-[300px] overflow-y-auto custom-scrollbar">
+                <div className="text-base md:text-lg text-[var(--color-text)] japanese-text leading-loose whitespace-pre-wrap" dangerouslySetInnerHTML={{ __html: currentQ.passageText }}></div>
+              </div>
+            )}
+            
+            {currentQ.passageText && (
+              <div className="mb-4 flex items-center">
+                <span className="bg-[var(--color-primary)] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                  Question {currentIndex + 1}
+                </span>
+              </div>
+            )}
+          <h2 className="text-xl md:text-2xl font-medium japanese-text leading-relaxed" dangerouslySetInnerHTML={{ __html: currentQ.questionText }}></h2>
         </div>
 
-        <div className="quiz-nav-buttons pb-32">
-          <button 
-            className="quiz-btn quiz-btn-outline" 
-            onClick={handlePrev}
-            disabled={currentIndex === 0}
-          >
+        <div className="space-y-3 mb-8">
+          {currentQ.options.map((opt, optIdx) => (
+            <OptionButton 
+              key={optIdx}
+              text={opt}
+              index={optIdx}
+              isSelected={selectedIdx === optIdx}
+              isCorrect={currentQ.correctIndex !== -1 ? currentQ.correctIndex === optIdx : null}
+              feedbackMode={feedbackMode}
+              onClick={() => handleOptionSelect(currentQ.id, optIdx)}
+              disabled={feedbackMode === 'Immediate' && selectedIdx !== undefined}
+            />
+          ))}
+        </div>
+
+        <div className="flex justify-between items-center pt-4 border-t border-[var(--color-border)] mt-8">
+          <Button variant="outline" onClick={handlePrev} disabled={currentIndex === 0}>
             &larr; Previous
-          </button>
-          <button 
-            className="quiz-btn quiz-btn-primary" 
-            onClick={handleNext}
-            disabled={currentIndex === totalQuestions - 1}
-          >
+          </Button>
+          <Button variant="primary" onClick={handleNext} disabled={currentIndex === totalQuestions - 1}>
             Next &rarr;
-          </button>
+          </Button>
         </div>
-      </div>
+      </Card>
 
-      {/* Question Navigator (Fixed at Bottom) */}
-      <div className="quiz-navigator-box quiz-navigator-fixed">
-        <div className="flex justify-between items-center mb-2">
-          <p className="quiz-navigator-title m-0">Question Navigator</p>
-          <span className="text-xs text-gray-400">{answeredCount}/{totalQuestions} Answered</span>
-        </div>
-        <div className="quiz-navigator-grid">
-          {questions.map((q, idx) => {
-            const isCurrent = idx === currentIndex;
-            const hasAnswered = answers[q.id] !== undefined;
-            
-            let squareClass = "";
-            if (isCurrent) squareClass = "current";
-            else if (hasAnswered) {
-              if (feedbackMode === 'Immediate' && q.correctIndex !== -1) {
-                if (answers[q.id] === q.correctIndex) squareClass = "correct";
-                else squareClass = "wrong";
-              } else {
-                squareClass = "answered";
-              }
-            }
-
-            return (
-              <button
-                key={q.id}
-                className={`quiz-nav-square ${squareClass}`}
-                onClick={() => setCurrentIndex(idx)}
-              >
-                {idx + 1}
-              </button>
-            );
-          })}
-        </div>
-      </div>
+      {/* Question Navigator Component */}
+      <QuestionNavigator 
+        questions={questions}
+        answers={answers}
+        currentIndex={currentIndex}
+        setCurrentIndex={setCurrentIndex}
+        feedbackMode={feedbackMode}
+      />
 
     </div>
   );
