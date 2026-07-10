@@ -10,6 +10,7 @@ import { Button } from './ui/Button';
 import { ProgressBar } from './ui/ProgressBar';
 import { OptionButton } from './ui/OptionButton';
 import { QuestionNavigator } from './ui/QuestionNavigator';
+import ShinkanzenQuizPage from './ShinkanzenQuizPage';
 
 const BookQuizTakerPage = () => {
   const { bookId, chapterId } = useParams();
@@ -33,20 +34,36 @@ const BookQuizTakerPage = () => {
         setLoading(true);
         setError(null);
 
-        // Fetch book title (optional, for header)
-        const bookDocRef = doc(db, 'books', bookId);
-        const bookSnap = await getDoc(bookDocRef);
-        if (bookSnap.exists()) {
-          setBookTitle(bookSnap.data().title || bookId);
+        let chapterData = null;
+
+        // Try to load from local book_data.jsx first to get the absolute latest edits
+        try {
+          const { sampleBooks } = await import('../data/book_data.jsx');
+          const localBook = sampleBooks.find(b => b.id === bookId);
+          if (localBook) {
+            setBookTitle(localBook.title);
+            const localChap = localBook.chapters?.find(c => c.id === chapterId);
+            if (localChap) {
+              chapterData = localChap;
+            }
+          }
+        } catch (e) {
+          console.warn("Failed to load local data:", e);
         }
 
-        // Fetch chapter from Firestore
-        const docRef = doc(db, 'books', bookId, 'chapters', chapterId);
-        const docSnap = await getDoc(docRef);
+        // Fallback to Firestore if not found locally
+        if (!chapterData) {
+          const bookDocRef = doc(db, 'books', bookId);
+          const bookSnap = await getDoc(bookDocRef);
+          if (bookSnap.exists()) {
+            setBookTitle(bookSnap.data().title || bookId);
+          }
 
-        let chapterData = null;
-        if (docSnap.exists()) {
-          chapterData = docSnap.data();
+          const docRef = doc(db, 'books', bookId, 'chapters', chapterId);
+          const docSnap = await getDoc(docRef);
+          if (docSnap.exists()) {
+            chapterData = docSnap.data();
+          }
         }
 
         if (!chapterData) {
@@ -59,6 +76,7 @@ const BookQuizTakerPage = () => {
 
         // Flatten questions
         const flattened = [];
+        let gIndex = 0;
         chapterData.passages?.forEach((passage, passageIdx) => {
           passage.questions?.forEach((q, qIdx) => {
             flattened.push({
@@ -69,6 +87,9 @@ const BookQuizTakerPage = () => {
               passageLayout: passage.passageLayout || "",
               imageSrc: passage.imageSrc || "",
               passageTitle: passage.title || "Passage",
+              mondaiHeader: passage.mondaiHeader || "",
+                passageNotes: passage.passageNotes || "",
+              globalQIndex: gIndex++
             });
           });
         });
@@ -234,33 +255,52 @@ const BookQuizTakerPage = () => {
         <ProgressBar progressPercent={progressPercent} />
       </div>
 
-      {/* Main Question Card Component */}
-      <Card className="scroll-mt-20">
-        {currentQ.passageTitle && currentQ.passageTitle !== chapter.title && (
-          <div className="mb-4 px-4 py-3 bg-[var(--color-bg-tertiary)] rounded-lg border border-[var(--color-border)]">
-            <p className="text-sm text-[var(--color-text-secondary)] japanese-text">
-              {currentQ.passageTitle}
-            </p>
-          </div>
-        )}
+      {/* Main Content Area */}
+      <div className="flex flex-col">
         
-        {/* Optional Passage or Image rendering */}
-        {(currentQ.passageText || currentQ.imageSrc) && (
-          <div className="mb-6 p-4 bg-[var(--color-bg-tertiary)] rounded-xl border border-[var(--color-border)]">
-            {currentQ.imageSrc && (
-              <div className="text-center mb-3">
-                <img src={currentQ.imageSrc} alt="Passage" className="max-w-full h-auto rounded-lg mx-auto" />
-              </div>
-            )}
-            {currentQ.passageText && (
-              currentQ.passageLayout === 'html' ? (
-                <div dangerouslySetInnerHTML={{ __html: currentQ.passageText }} />
-              ) : (
-                <div className="whitespace-pre-wrap leading-relaxed">{currentQ.passageText}</div>
-              )
-            )}
-          </div>
-        )}
+        {/* Passage Container */}
+        <div className="w-full mb-6">
+          {currentQ.passageTitle && currentQ.passageTitle !== chapter.title && (currentQ.mondaiHeader || currentQ.passageTitle) && (
+            <div className="mb-4 px-4 py-3 bg-[var(--color-bg-tertiary)] rounded-lg border border-[var(--color-border)]">
+              <h3 className="text-base font-bold text-[var(--color-text-primary)] mb-1">
+                {currentQ.passageTitle.replace(/^第\d+部\s*/, '')}
+              </h3>
+              {currentQ.mondaiHeader && (
+                <p className="text-sm font-bold text-[var(--color-text-primary)] japanese-text">
+                  {currentQ.mondaiHeader.replace(/^問題\d+\s*/, '')}
+                </p>
+              )}
+            </div>
+          )}
+          
+          {(currentQ.passageText || currentQ.imageSrc || currentQ.passageNotes) && (
+            <div className="space-y-4">
+              {(currentQ.passageText || currentQ.imageSrc) && (
+                <div className="px-4 py-3 relative bg-[var(--color-bg-tertiary)] rounded-lg border border-[var(--color-border)] japanese-text text-base md:text-lg text-[var(--color-text-primary)]">
+                  {currentQ.imageSrc && (
+                    <div className="text-center mb-3">
+                      <img src={currentQ.imageSrc} alt="Passage" className="max-w-full h-auto rounded-lg mx-auto" />
+                    </div>
+                  )}
+                  {currentQ.passageText && (
+                    currentQ.passageLayout === 'html' || (currentQ.passageTitle && currentQ.passageTitle.match(/問題(52|53|54|55|58)/)) ? (
+                      <div dangerouslySetInnerHTML={{ __html: currentQ.passageText }} />
+                    ) : (
+                      <div className="whitespace-pre-wrap leading-relaxed" dangerouslySetInnerHTML={{ __html: currentQ.passageText }} />
+                    )
+                  )}
+                </div>
+              )}
+              {currentQ.passageNotes && (
+                <div className="px-4 py-3 bg-[var(--color-bg-tertiary)] rounded-lg border border-[var(--color-border)] text-sm text-[var(--color-text-secondary)] japanese-text leading-loose" dangerouslySetInnerHTML={{ __html: currentQ.passageNotes }} />
+              )}
+            </div>
+          )}
+        </div>
+
+        {/* Question Card */}
+        <div className="w-full">
+          <Card className="scroll-mt-20">
 
         <div className="mb-6">
           <div className="flex items-center gap-3 mb-3">
@@ -269,7 +309,7 @@ const BookQuizTakerPage = () => {
             </span>
             <span className="text-sm text-[var(--color-text-muted)]">{currentIndex + 1} of {totalQuestions}</span>
           </div>
-          <h2 className="text-xl md:text-2xl font-medium japanese-text leading-relaxed" dangerouslySetInnerHTML={{ __html: currentQ.questionText }}></h2>
+          <h2 className="text-xl md:text-2xl font-medium japanese-text leading-relaxed" dangerouslySetInnerHTML={{ __html: currentQ.questionText.replace(/^(問い|問\d+)/, '<span class="text-[var(--color-primary)] font-bold">$&</span>') }}></h2>
         </div>
 
         <div className="space-y-3 mb-8">
@@ -306,6 +346,8 @@ const BookQuizTakerPage = () => {
           )}
         </div>
       </Card>
+      </div> {/* closes Question Card container */}
+      </div> {/* closes Main Content Area */}
 
       {/* Question Navigator Component */}
       <QuestionNavigator 
@@ -321,3 +363,31 @@ const BookQuizTakerPage = () => {
 };
 
 export default BookQuizTakerPage;
+
+// Triggering Vite HMR
+
+// Triggering Vite HMR for layout fix
+
+// Triggering Vite HMR for layout fix 2
+
+// Triggering Vite HMR for exact layout clone
+
+// Triggering Vite HMR after removing line numbers
+
+// Triggering Vite HMR for Mondai 16
+
+// Triggering Vite HMR after Mondai 16 bold underline fix
+
+// Triggering Vite HMR after furigana injection
+
+// Triggering Vite HMR for Mondai 17 update
+
+// Triggering Vite HMR after backporting furigana
+
+// Triggering Vite HMR after Mondai 17 question furigana
+
+// Triggering Vite HMR for Mondai 18 furigana
+
+// Triggering Vite HMR for Mondai 19 rebuild
+
+// Triggering Vite HMR for Mondai 19 underline fix
