@@ -4,7 +4,7 @@
    ================================================================ */
 
 .ps-details-container {
-  max-width: 1152px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 48px 16px;
   padding-top: 100px;
@@ -855,7 +855,7 @@
 
 /* Completion results */
 .practice-sets-container {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 48px 24px;
   padding-top: 100px;
@@ -1118,7 +1118,7 @@
 /* === NEW QUIZ PAGE STYLES (Matching jlptpracticetest.com) === */
 
 .quiz-page-wrapper {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 48px 16px;
   padding-top: 100px;
@@ -1459,7 +1459,7 @@
   z-index: 10;
   border-radius: 16px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 32px auto 0 auto;
 }
 

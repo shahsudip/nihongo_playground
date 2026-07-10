@@ -108,83 +108,7 @@ const BookListPage = () => {
     fetchBooksAndProgress();
   }, [fetchBooksAndProgress]);
 
-  const handleSeedBooks = async () => {
-    if (!currentUser) return;
-    try {
-      setSeeding(true);
-      setError(null);
 
-      const { sampleBooks } = await import('../data/book_data.jsx');
-
-      for (const book of sampleBooks) {
-        // Write book metadata
-        const bookDocRef = doc(db, 'books', book.id);
-        await setDoc(bookDocRef, {
-          id: book.id,
-          title: book.title,
-          description: book.description,
-          level: book.level,
-          category: book.category,
-        });
-
-        // Write chapters
-        for (const chapter of book.chapters) {
-          const chapterDocRef = doc(db, 'books', book.id, 'chapters', chapter.id);
-          await setDoc(chapterDocRef, {
-            id: chapter.id,
-            title: chapter.title,
-            type: chapter.type,
-            description: chapter.description,
-            passages: chapter.passages
-          });
-        }
-      }
-
-      alert("Sample Books successfully seeded to Firestore!");
-      await fetchBooksAndProgress();
-    } catch (err) {
-      console.error("Error seeding books to Firestore:", err);
-      setError("Failed to seed books to Firestore: " + err.message);
-    } finally {
-      setSeeding(false);
-    }
-  };
-
-  /* --- AI ADDED: Cleanup function to remove unknown books from Firestore --- */
-  const handleCleanBooks = async () => {
-    if (!currentUser) return;
-    if (!window.confirm("Are you sure you want to delete all unknown books (like Genki and Soumatome) from Firestore?")) return;
-    
-    try {
-      setCleaning(true);
-      setError(null);
-      
-      const { deleteDoc } = await import('firebase/firestore');
-      const booksColRef = collection(db, 'books');
-      const booksSnap = await getDocs(booksColRef);
-      const allowedBooks = ['shin-nihongo-500-n3', 'shinkanzen-master-n3-reading', 'shin-nihongo-500-n2'];
-      
-      let deletedCount = 0;
-      for (const docSnap of booksSnap.docs) {
-        if (!allowedBooks.includes(docSnap.id)) {
-          // Note: In Firestore web SDK, deleting a document doesn't delete its subcollections automatically.
-          // But since the UI only queries the root 'books' collection, deleting the root document
-          // makes it disappear from the app entirely.
-          await deleteDoc(doc(db, 'books', docSnap.id));
-          deletedCount++;
-        }
-      }
-      
-      alert(`Successfully deleted ${deletedCount} unknown books from Firestore!`);
-      await fetchBooksAndProgress();
-    } catch (err) {
-      console.error("Error cleaning books from Firestore:", err);
-      setError("Failed to clean books: " + err.message);
-    } finally {
-      setCleaning(false);
-    }
-  };
-  /* ------------------------------------------------------------------------- */
 
   const getBookProgress = (book) => {
     if (!currentUser || !book.chapters || book.chapters.length === 0) return { completed: 0, total: 0, percent: 0 };
@@ -210,19 +134,7 @@ const BookListPage = () => {
         <h1 className="books-title">Japanese Book Collections</h1>
         <p className="books-subtitle">Chapter-based reading and grammar quizzes curated from standard textbooks and study materials.</p>
         
-        {currentUser && (
-          <div style={{ display: 'flex', gap: '15px', justifyContent: 'center' }}>
-            <button onClick={handleSeedBooks} disabled={seeding || cleaning} className="seed-database-button">
-              {seeding ? "Seeding Firestore..." : "🔄 Refresh/Seed Books"}
-            </button>
-            
-            {/* --- AI ADDED: Clean Database Button --- */}
-            <button onClick={handleCleanBooks} disabled={seeding || cleaning} className="seed-database-button" style={{ borderColor: '#f56565', color: '#f56565' }}>
-              {cleaning ? "Cleaning Firestore..." : "🗑️ Delete Unknown Books"}
-            </button>
-            {/* ----------------------------------------- */}
-          </div>
-        )}
+
       </div>
 
       {error && <div className="error-message">{error}</div>}

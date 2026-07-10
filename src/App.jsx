@@ -26,10 +26,10 @@ import PracticeTestListPage from './components/PracticeTestListPage.jsx';
 import TestTakerPage from './components/TestTakerPage.jsx';
 // --- END NEW IMPORTS ---
 
-// --- BOOK COLLECTION IMPORTS ---
 import BookListPage from './components/BookListPage.jsx';
 import BookChapterListPage from './components/BookChapterListPage.jsx';
 import BookQuizTakerPage from './components/BookQuizTakerPage.jsx';
+import ShinkanzenQuizPage from './components/ShinkanzenQuizPage.jsx';
 
 // --- PRACTICE SETS ---
 import './assets/practice_sets.css';
