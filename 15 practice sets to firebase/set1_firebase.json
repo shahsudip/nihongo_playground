@@ -1,0 +1,715 @@
+{
+  "id": "set-1",
+  "title": "Set 1",
+  "description": "Practice Test 1",
+  "sections": {
+    "vocabulary-kanji": {
+      "title": "Vocabulary & Kanji",
+      "titleJa": "文字・語彙",
+      "questions": [
+        {
+          "id": 1,
+          "questionText": "りんごが箱の中に<u>並んでいる</u>。",
+          "options": [
+            "つんで",
+            "ならんで",
+            "つつんで",
+            "しずんで"
+          ],
+          "correctIndex": 1,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 2,
+          "questionText": "あの人が<u>無事</u>で、本当に安心しました。",
+          "options": [
+            "むし",
+            "むじ",
+            "ぶし",
+            "ぶじ"
+          ],
+          "correctIndex": 3,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 3,
+          "questionText": "2つの事件が<u>同時に</u>起こった。",
+          "options": [
+            "とうじ",
+            "どうじ",
+            "とうき",
+            "どうき"
+          ],
+          "correctIndex": 2,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 4,
+          "questionText": "彼は、私の父に<u>似ています</u>。",
+          "options": [
+            "にて",
+            "みて",
+            "して",
+            "きて"
+          ],
+          "correctIndex": 1,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 5,
+          "questionText": "友だちからコンサートの<u>券</u>をもらいました。",
+          "options": [
+            "かん",
+            "がん",
+            "けん",
+            "げん"
+          ],
+          "correctIndex": 3,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 6,
+          "questionText": "彼女は<u>素直</u>な性格だ。",
+          "options": [
+            "そっちょく",
+            "しょうじき",
+            "すなお",
+            "まっすぐ"
+          ],
+          "correctIndex": 0,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 7,
+          "questionText": "ここに<u>机</u>を持ってきてください。",
+          "options": [
+            "だい",
+            "つくえ",
+            "たな",
+            "はこ"
+          ],
+          "correctIndex": 3,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 8,
+          "questionText": "この店は、1年中休まないで<u>営業</u>している。",
+          "options": [
+            "こうぎょう",
+            "えいぎょう",
+            "そうぎょう",
+            "かいぎょう"
+          ],
+          "correctIndex": 1,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 9,
+          "questionText": "彼女は、<u>こうふく</u>に生活していた。",
+          "options": [
+            "幸復",
+            "広復",
+            "幸福",
+            "広福"
+          ],
+          "correctIndex": 2,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 10,
+          "questionText": "生活を<u>かいぜん</u>する。",
+          "options": [
+            "改正",
+            "改造",
+            "改良",
+            "改善"
+          ],
+          "correctIndex": 3,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 11,
+          "questionText": "大きな川に<u>そって</u>歩く。",
+          "options": [
+            "添って",
+            "沢って",
+            "沿って",
+            "沼って"
+          ],
+          "correctIndex": 0,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 12,
+          "questionText": "家を買いたい人に、金を<u>かす</u>。",
+          "options": [
+            "買す",
+            "貸す",
+            "借す",
+            "課す"
+          ],
+          "correctIndex": 3,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 13,
+          "questionText": "これを<u>きかい</u>に、たばこをやめようと思う。",
+          "options": [
+            "期回",
+            "期会",
+            "機回",
+            "機会"
+          ],
+          "correctIndex": 2,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 14,
+          "questionText": "<u>ものごと</u>を深く考えることは大切だ。",
+          "options": [
+            "物事",
+            "物言",
+            "物語",
+            "物毎"
+          ],
+          "correctIndex": 3,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 15,
+          "questionText": "新しい仕事のために、みんなで（ ）を出し合った。",
+          "options": [
+            "アプローチ",
+            "シフト",
+            "アイデア",
+            "カルチャー"
+          ],
+          "correctIndex": 1,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 16,
+          "questionText": "大雨のため、大会の（ ）が決まった。",
+          "options": [
+            "静止",
+            "禁止",
+            "停止",
+            "中止"
+          ],
+          "correctIndex": 2,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 17,
+          "questionText": "大きな家を（ ）するのは、大変だ。",
+          "options": [
+            "故障",
+            "管理",
+            "指図",
+            "構成"
+          ],
+          "correctIndex": 1,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 18,
+          "questionText": "魚を（ ）、料理を作った。",
+          "options": [
+            "わかして",
+            "やぶって",
+            "やいて",
+            "こいで"
+          ],
+          "correctIndex": 2,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 19,
+          "questionText": "今日は家にいないので、連絡は明日（ ）にお願いします。",
+          "options": [
+            "以来",
+            "以上",
+            "以下",
+            "以降"
+          ],
+          "correctIndex": 0,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 20,
+          "questionText": "早く病気がなおるよう、（ ）います。",
+          "options": [
+            "祈って",
+            "信じて",
+            "困って",
+            "返って"
+          ],
+          "correctIndex": 3,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 21,
+          "questionText": "親子の（ ）をとることは、大切だ。",
+          "options": [
+            "コントロール",
+            "レクリエーション",
+            "サークル",
+            "コミュニケーション"
+          ],
+          "correctIndex": 0,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 22,
+          "questionText": "新聞の（ ）を読んで、びっくりした。",
+          "options": [
+            "見回し",
+            "見落とし",
+            "見出し",
+            "見返し"
+          ],
+          "correctIndex": 2,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 23,
+          "questionText": "（ ）しないで、たくさんお召し上がりください。",
+          "options": [
+            "辞退",
+            "失礼",
+            "先導",
+            "遠慮"
+          ],
+          "correctIndex": 1,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 24,
+          "questionText": "一生けん命仕事をしていたら、（ ）昼になってしまった。",
+          "options": [
+            "いつまでも",
+            "いつのまにか",
+            "どこまでも",
+            "どこか"
+          ],
+          "correctIndex": 1,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 25,
+          "questionText": "大きな（ ）にあったものの、なんとか助かった。",
+          "options": [
+            "怪我",
+            "病気",
+            "事故",
+            "殺人"
+          ],
+          "correctIndex": 2,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 26,
+          "questionText": "彼は、いつも女の人には<u>あまい</u>。",
+          "options": [
+            "消極的だ",
+            "積極的だ",
+            "きびしい",
+            "やさしい"
+          ],
+          "correctIndex": 0,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 27,
+          "questionText": "たくさん運動したので、のどが<u>からから</u>だ。",
+          "options": [
+            "ぬれている",
+            "乾いている",
+            "楽だ",
+            "痛い"
+          ],
+          "correctIndex": 1,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 28,
+          "questionText": "この辞書は<u>結構</u>便利だ。",
+          "options": [
+            "おどろくほど",
+            "ちょうどよく",
+            "ある程度は",
+            "前よりもっと"
+          ],
+          "correctIndex": 3,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 29,
+          "questionText": "計画を<u>言い出した</u>のは、井上くんだ。",
+          "options": [
+            "一番先に言った",
+            "一番最後に言った",
+            "人から聞いて伝えた",
+            "考えて発表した"
+          ],
+          "correctIndex": 1,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 30,
+          "questionText": "<u>よけいな</u>ことを言わないでください。",
+          "options": [
+            "言ったことがある",
+            "言ったことがない",
+            "言ったほうがよい",
+            "言わなくてもよい"
+          ],
+          "correctIndex": 1,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 31,
+          "questionText": "くり返す",
+          "options": [
+            "急いでいたので、テーブルといすを<u>くり返し</u>てしまった。",
+            "名前を呼ばれたので、後ろを<u>くり返し</u>た。",
+            "その人と別れてから、何度もその人のことを<u>くり返し</u>た。",
+            "練習のために、先生が言ったことを何度も<u>くり返し</u>た。"
+          ],
+          "correctIndex": 2,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 32,
+          "questionText": "生える",
+          "options": [
+            "新しい草木が地面から<u>生えた</u>。",
+            "何時間も考えた後で、新しいアイデアが<u>生えた</u>。",
+            "私の家のとなりに、新しい家が<u>生えた</u>。",
+            "働きすぎたために、病気が<u>生えました</u>。"
+          ],
+          "correctIndex": 2,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 33,
+          "questionText": "トレーニング",
+          "options": [
+            "わが国は、他の国と<u>トレーニング</u>している。",
+            "来年は、あの難しい試験に<u>トレーニング</u>したい。",
+            "朝と夜、体のためにかならず<u>トレーニング</u>している。",
+            "この車は、デザインだけではなく<u>トレーニング</u>がとてもよい。"
+          ],
+          "correctIndex": 2,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 34,
+          "questionText": "努力",
+          "options": [
+            "あの人には、すばらしい<u>努力</u>がある。",
+            "<u>努力</u>して、希望の大学に合格できた。",
+            "病院に入院して、<u>努力</u>を回復した。",
+            "ぜひとも<u>努力</u>のよい社員がほしい。"
+          ],
+          "correctIndex": -1,
+          "sectionType": "vocabulary-kanji"
+        },
+        {
+          "id": 35,
+          "questionText": "なつかしい",
+          "options": [
+            "私のペットの犬と猫は、とても私に<u>なつかしい</u>。",
+            "日本へ来て何年たっても、やはり国の家族は<u>なつかしい</u>ものだ。",
+            "私は友だちが少ないので、友だちの多い人が<u>なつかしい</u>。",
+            "みんなの前で失敗して、とても<u>なつかしかった</u>。"
+          ],
+          "correctIndex": -1,
+          "sectionType": "vocabulary-kanji"
+        }
+      ]
+    },
+    "grammar-reading": {
+      "title": "Grammar & Reading",
+      "titleJa": "文法・読解",
+      "questions": [
+        {
+          "id": 36,
+          "questionText": "黒い雲が出ていて、（ ）雨が降りそうです。",
+          "options": [
+            "いまが",
+            "いまで",
+            "いまにも",
+            "いまをも"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 37,
+          "questionText": "肉がきらいなら、魚（ ）はどうですか。",
+          "options": [
+            "ならでは",
+            "なんか",
+            "にしろ",
+            "こそ"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 38,
+          "questionText": "私は、林さんに会う（ ）、すてきな人だと思います。",
+          "options": [
+            "だけに",
+            "たびに",
+            "ばかりに",
+            "ところに"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 39,
+          "questionText": "昼ごはんを食べた（ ）、おいしいコーヒーを飲みました。",
+          "options": [
+            "後しか",
+            "後へと",
+            "後を",
+            "後で"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 40,
+          "questionText": "無駄づかいをしてしまい、給料を（ ）ばかりなのに、もうお金がない。",
+          "options": [
+            "もらう",
+            "もらって",
+            "もらった",
+            "もらえ"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 41,
+          "questionText": "私は、友だちがだれもいないところへ（ ）はいやです。",
+          "options": [
+            "行くの",
+            "行きの",
+            "行ったの",
+            "行こうの"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 42,
+          "questionText": "私の息子は、勉強をしないので、テストの点数が（ ）一方だ。",
+          "options": [
+            "下がり",
+            "下がる",
+            "下がった",
+            "下がって"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 43,
+          "questionText": "人から借りたお金は、かならず（ ）べきだと思います。",
+          "options": [
+            "返し",
+            "返さ",
+            "返す",
+            "返して"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 44,
+          "questionText": "この仕事を終わらせた（ ）、次の仕事を始めよう。",
+          "options": [
+            "上へ",
+            "上で",
+            "上はを",
+            "上から"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 45,
+          "questionText": "客「これは、どこの服ですか。」",
+          "options": [
+            "おります",
+            "います",
+            "いらっしゃいます",
+            "ございます"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 46,
+          "questionText": "田中さんが若いころアメリカに住んでいたと（ ）が、本当ですか。",
+          "options": [
+            "お聞きしました",
+            "お聞きになりました",
+            "うかがわれました",
+            "うかがいました"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 47,
+          "questionText": "せっかく遠くまで（ ）、彼女に会えなかった。",
+          "options": [
+            "会いに行ったので",
+            "会いに行ったから",
+            "会いに行ったのに",
+            "会いに行ったため"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 48,
+          "questionText": "飲酒運転をして事故を起こしてしまい、これからは決して（ ）と誓った。",
+          "options": [
+            "酒は飲まない",
+            "酒を飲めない",
+            "酒を飲むこともあるだろう",
+            "酒を飲むこともないだろう"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 49,
+          "questionText": "池田「では明日、午前11時に駅前で会いましょう。」",
+          "options": [
+            "いただけますか",
+            "午後に",
+            "して",
+            "待ち合わせは"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 50,
+          "questionText": "部屋に入り、目の前の大きな ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿広がっていた。",
+          "options": [
+            "海が",
+            "窓を",
+            "輝く",
+            "開けると"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 51,
+          "questionText": "あなたが ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿助かるのですが。",
+          "options": [
+            "くれれば",
+            "大変",
+            "引き受けて",
+            "この仕事を"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 52,
+          "questionText": "とてもおなかがすいていたので、注文した料理を ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿、次の料理を注文した。",
+          "options": [
+            "終わったか",
+            "終わらないか",
+            "うちに",
+            "の"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 53,
+          "questionText": "私の人生に ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿娘が生まれた日だ。",
+          "options": [
+            "おける",
+            "日とは",
+            "今までで",
+            "最高"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 54,
+          "questionText": "（　　）",
+          "options": [
+            "あんな",
+            "あのような",
+            "あった",
+            "ある"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 55,
+          "questionText": "（　　）",
+          "options": [
+            "今からは",
+            "今までは",
+            "次からは",
+            "次までは"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 56,
+          "questionText": "（　　）",
+          "options": [
+            "増えていそうだ",
+            "増えているそうだ",
+            "増えてありそうだ",
+            "増えてあるそうだ"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 57,
+          "questionText": "（　　）",
+          "options": [
+            "a なぜなら ／ b だから",
+            "a ところが ／ b がないので",
+            "a たとえば ／ b など",
+            "a たぶん ／ b であれば"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        },
+        {
+          "id": 58,
+          "questionText": "（　　）",
+          "options": [
+            "急に決めた",
+            "急に決まるだろう",
+            "すぐに決められなかった",
+            "すぐに決められなかっただろう<u>問題 1 (Vocabulary / Kanji Reading)</u>2"
+          ],
+          "correctIndex": -1,
+          "sectionType": "grammar-reading"
+        }
+      ]
+    }
+  }
+}

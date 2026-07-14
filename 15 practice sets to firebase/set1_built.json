@@ -1,0 +1,446 @@
+{
+  "vocab": [
+    {
+      "id": 1,
+      "questionText": "りんごが箱の中に<u>並んで</u>いる。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題1"
+    },
+    {
+      "id": 2,
+      "questionText": "あの人が<u>無事</u>で、本当に安心しました。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題1"
+    },
+    {
+      "id": 3,
+      "questionText": "2つの事件が<u>同時に</u>起こった。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題1"
+    },
+    {
+      "id": 4,
+      "questionText": "彼は、私の父に<u>似て</u>います。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題1"
+    },
+    {
+      "id": 5,
+      "questionText": "友だちからコンサートの券をもらいました。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題1"
+    },
+    {
+      "id": 6,
+      "questionText": "彼女は<u>素直</u>な性格だ。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題1"
+    },
+    {
+      "id": 7,
+      "questionText": "ここに机を持ってきてください。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題1"
+    },
+    {
+      "id": 8,
+      "questionText": "この店は、1年中休まないで<u>営業</u>している。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題1"
+    },
+    {
+      "id": 9,
+      "questionText": "彼女は、<u>こうふく</u>に生活していた。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題2"
+    },
+    {
+      "id": 10,
+      "questionText": "生活を<u>かいぜん</u>する。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題2"
+    },
+    {
+      "id": 11,
+      "questionText": "大きな川に<u>そって</u>歩く。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題2"
+    },
+    {
+      "id": 12,
+      "questionText": "家を買いたい人に、金を<u>かす</u>。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題2"
+    },
+    {
+      "id": 13,
+      "questionText": "これを<u>きかい</u>に、たばこをやめようと思う。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題2"
+    },
+    {
+      "id": 14,
+      "questionText": "ものごとを深く考えることは大切だ。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題2"
+    },
+    {
+      "id": 15,
+      "questionText": "新しい仕事のために、みんなで（　　）を出した。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題3"
+    },
+    {
+      "id": 16,
+      "questionText": "大雨のため、大会の（　　）が決まった。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題3"
+    },
+    {
+      "id": 17,
+      "questionText": "大きな家を（　　）するのは、大変だ。",
+      "options": [],
+      "correctIndex": 0,
+      "sectionType": "vocabulary-kanji",
+      "instruction": "問題3"
+    }
+  ],
+  "grammar": [
+    {
+      "id": 1,
+      "questionText": "黒い雲が出ていて、（ ）雨が降りそうです。",
+      "options": [
+        "いまが",
+        "いまで",
+        "いまにも",
+        "いまをも"
+      ],
+      "correctIndex": 2,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 2,
+      "questionText": "肉がきらいなら、魚（ ）はどうですか。",
+      "options": [
+        "ならでは",
+        "なんか",
+        "にしろ",
+        "こそ"
+      ],
+      "correctIndex": 1,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 3,
+      "questionText": "私は、林さんに会う（ ）、すてきな人だと思います。",
+      "options": [
+        "だけに",
+        "たびに",
+        "ばかりに",
+        "ところに"
+      ],
+      "correctIndex": 1,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 4,
+      "questionText": "昼ごはんを食べた（ ）、おいしいコーヒーを飲みました。",
+      "options": [
+        "後しか",
+        "後へと",
+        "後を",
+        "後で"
+      ],
+      "correctIndex": 3,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 5,
+      "questionText": "無駄づかいをしてしまい、給料を（ ）ばかりなのに、もうお金がない。",
+      "options": [
+        "もらう",
+        "もらって",
+        "もらった",
+        "もらえ"
+      ],
+      "correctIndex": 2,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 6,
+      "questionText": "私は、友だちがだれもいないところへ（ ）はいやです。",
+      "options": [
+        "行くの",
+        "行きの",
+        "行ったの",
+        "行こうの"
+      ],
+      "correctIndex": 0,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 7,
+      "questionText": "私の息子は、勉強をしないので、テストの点数が（ ）一方だ。",
+      "options": [
+        "下がり",
+        "下がる",
+        "下がった",
+        "下がって"
+      ],
+      "correctIndex": 1,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 8,
+      "questionText": "人から借りたお金は、かならず（ ）べきだと思います。",
+      "options": [
+        "返し",
+        "返さ",
+        "返す",
+        "返して"
+      ],
+      "correctIndex": 2,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 9,
+      "questionText": "この仕事を終わらせた（ ）、次の仕事を始めよう。",
+      "options": [
+        "上へ",
+        "上で",
+        "上はを",
+        "上から"
+      ],
+      "correctIndex": 1,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 10,
+      "questionText": "客「これは、どこの服ですか。」\r\n店員「この服は、フランスのもので（ ）。」",
+      "options": [
+        "おります",
+        "います",
+        "いらっしゃいます",
+        "ございます"
+      ],
+      "correctIndex": 3,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 11,
+      "questionText": "田中さんが若いころアメリカに住んでいたと（ ）が、本当ですか。",
+      "options": [
+        "お聞きしました",
+        "お聞きになりました",
+        "うかがわれました",
+        "うかがいました"
+      ],
+      "correctIndex": 0,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 12,
+      "questionText": "せっかく遠くまで（ ）、彼女に会えなかった。",
+      "options": [
+        "会いに行ったので",
+        "会いに行ったから",
+        "会いに行ったのに",
+        "会いに行ったため"
+      ],
+      "correctIndex": 2,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 13,
+      "questionText": "飲酒運転をして事故を起こしてしまい、これからは決して（ ）と誓った。",
+      "options": [
+        "酒は飲まない",
+        "酒を飲めない",
+        "酒を飲むこともあるだろう",
+        "酒を飲むこともないだろう"
+      ],
+      "correctIndex": 3,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 14,
+      "questionText": "池田「では明日、午前11時に駅前で会いましょう。」\r\n大木「午前中は用があるので、＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿。」",
+      "options": [
+        "いただけますか",
+        "午後に",
+        "して",
+        "待ち合わせは"
+      ],
+      "correctIndex": 0,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 15,
+      "questionText": "部屋に入り、目の前の大きな ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿広がっていた。",
+      "options": [
+        "海が",
+        "窓を",
+        "輝く",
+        "開けると"
+      ],
+      "correctIndex": 2,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 16,
+      "questionText": "あなたが ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿助かるのですが。",
+      "options": [
+        "くれれば",
+        "大変",
+        "引き受けて",
+        "この仕事を"
+      ],
+      "correctIndex": 0,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 17,
+      "questionText": "とてもおなかがすいていたので、注文した料理を ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿、次の料理を注文した。",
+      "options": [
+        "終わったか",
+        "終わらないか",
+        "うちに",
+        "の"
+      ],
+      "correctIndex": 1,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 18,
+      "questionText": "私の人生に ＿＿＿＿ ＿＿＿＿ ＿＿★＿＿ ＿＿＿＿娘が生まれた日だ。",
+      "options": [
+        "おける",
+        "日とは",
+        "今までで",
+        "最高"
+      ],
+      "correctIndex": 3,
+      "sectionType": "grammar-reading",
+      "instruction": ""
+    },
+    {
+      "id": 19,
+      "questionText": "（　19　）の中に入る最もよいものを、一つえらびなさい。",
+      "passageText": "パソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。",
+      "instruction": "紙の手帳",
+      "options": [
+        "あんな",
+        "あのような",
+        "あった",
+        "ある"
+      ],
+      "correctIndex": 3,
+      "sectionType": "grammar-reading"
+    },
+    {
+      "id": 20,
+      "questionText": "（　20　）の中に入る最もよいものを、一つえらびなさい。",
+      "passageText": "パソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。",
+      "instruction": "紙の手帳",
+      "options": [
+        "今からは",
+        "今までは",
+        "次からは",
+        "次までは"
+      ],
+      "correctIndex": 1,
+      "sectionType": "grammar-reading"
+    },
+    {
+      "id": 21,
+      "questionText": "（　21　）の中に入る最もよいものを、一つえらびなさい。",
+      "passageText": "パソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。",
+      "instruction": "紙の手帳",
+      "options": [
+        "増えていそうだ",
+        "増えているそうだ",
+        "増えてありそうだ",
+        "増えてあるそうだ"
+      ],
+      "correctIndex": 1,
+      "sectionType": "grammar-reading"
+    },
+    {
+      "id": 22,
+      "questionText": "（　22　）の中に入る最もよいものを、一つえらびなさい。",
+      "passageText": "パソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。",
+      "instruction": "紙の手帳",
+      "options": [
+        "a なぜなら ／ b だから",
+        "a ところが ／ b がないので",
+        "a たとえば ／ b など",
+        "a たぶん ／ b であれば"
+      ],
+      "correctIndex": 2,
+      "sectionType": "grammar-reading"
+    },
+    {
+      "id": 23,
+      "questionText": "（　23　）の中に入る最もよいものを、一つえらびなさい。",
+      "passageText": "パソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。",
+      "instruction": "紙の手帳",
+      "options": [
+        "急に決めた",
+        "急に決まるだろう",
+        "すぐに決められなかった",
+        "すぐに決められなかっただろう"
+      ],
+      "correctIndex": 2,
+      "sectionType": "grammar-reading"
+    }
+  ]
+}

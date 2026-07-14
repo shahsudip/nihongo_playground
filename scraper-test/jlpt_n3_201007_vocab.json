@@ -1,0 +1,737 @@
+[
+  {
+    "question": "プレゼントはきれいな紙で包んであった。",
+    "options": [
+      {
+        "text": "つつんで",
+        "isCorrect": true
+      },
+      {
+        "text": "つづんで",
+        "isCorrect": false
+      },
+      {
+        "text": "つうつんで",
+        "isCorrect": false
+      },
+      {
+        "text": "つうづんで",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "彼はダンスが得意だ。",
+    "options": [
+      {
+        "text": "どおくい",
+        "isCorrect": false
+      },
+      {
+        "text": "とおくい",
+        "isCorrect": false
+      },
+      {
+        "text": "どくい",
+        "isCorrect": false
+      },
+      {
+        "text": "とくい",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "新しい星が発見された。",
+    "options": [
+      {
+        "text": "はっけん",
+        "isCorrect": true
+      },
+      {
+        "text": "はけん",
+        "isCorrect": false
+      },
+      {
+        "text": "はつけん",
+        "isCorrect": false
+      },
+      {
+        "text": "ばつけん",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "このグラフは人口の変化を表しています。",
+    "options": [
+      {
+        "text": "しめして",
+        "isCorrect": false
+      },
+      {
+        "text": "ふやして",
+        "isCorrect": false
+      },
+      {
+        "text": "うごかして",
+        "isCorrect": false
+      },
+      {
+        "text": "あらわして",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "山田さんから、来週の会議の件で電話がありました。",
+    "options": [
+      {
+        "text": "けん",
+        "isCorrect": true
+      },
+      {
+        "text": "あん",
+        "isCorrect": false
+      },
+      {
+        "text": "ほう",
+        "isCorrect": false
+      },
+      {
+        "text": "よう",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "通勤にとても時間がかかります。",
+    "options": [
+      {
+        "text": "つうがく",
+        "isCorrect": false
+      },
+      {
+        "text": "つうきん",
+        "isCorrect": true
+      },
+      {
+        "text": "つうやく",
+        "isCorrect": false
+      },
+      {
+        "text": "つうしん",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "この海岸は岩が多い。",
+    "options": [
+      {
+        "text": "かい",
+        "isCorrect": false
+      },
+      {
+        "text": "いわ",
+        "isCorrect": true
+      },
+      {
+        "text": "すな",
+        "isCorrect": false
+      },
+      {
+        "text": "なみ",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "努力することは大切だと思います。",
+    "options": [
+      {
+        "text": "どうりょく",
+        "isCorrect": false
+      },
+      {
+        "text": "とうりょく",
+        "isCorrect": false
+      },
+      {
+        "text": "どりょく",
+        "isCorrect": true
+      },
+      {
+        "text": "とりょく",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "機械がせいじょうかどうかチェックした。",
+    "options": [
+      {
+        "text": "盛情",
+        "isCorrect": false
+      },
+      {
+        "text": "威常",
+        "isCorrect": false
+      },
+      {
+        "text": "正情",
+        "isCorrect": false
+      },
+      {
+        "text": "正常",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "健康診断でけつえき検査を受けた。",
+    "options": [
+      {
+        "text": "意識",
+        "isCorrect": false
+      },
+      {
+        "text": "園圧",
+        "isCorrect": false
+      },
+      {
+        "text": "血液",
+        "isCorrect": true
+      },
+      {
+        "text": "血圧",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "母親が子どもの後ろをおって走っている。",
+    "options": [
+      {
+        "text": "送って",
+        "isCorrect": false
+      },
+      {
+        "text": "追って",
+        "isCorrect": true
+      },
+      {
+        "text": "押って",
+        "isCorrect": false
+      },
+      {
+        "text": "折って",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "電車をおりるときに、 かさを忘れてしまった。",
+    "options": [
+      {
+        "text": "移りる",
+        "isCorrect": false
+      },
+      {
+        "text": "移る",
+        "isCorrect": false
+      },
+      {
+        "text": "降りる",
+        "isCorrect": true
+      },
+      {
+        "text": "降る",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "大学に入ってから、しんちょうが変わっていない。",
+    "options": [
+      {
+        "text": "背中",
+        "isCorrect": false
+      },
+      {
+        "text": "背後",
+        "isCorrect": false
+      },
+      {
+        "text": "身長",
+        "isCorrect": true
+      },
+      {
+        "text": "身張",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "ものがたりは誰でも知っている。",
+    "options": [
+      {
+        "text": "物語",
+        "isCorrect": true
+      },
+      {
+        "text": "物化",
+        "isCorrect": false
+      },
+      {
+        "text": "物記",
+        "isCorrect": false
+      },
+      {
+        "text": "物源",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "新しい車を買うために、 店で をもらってきた。",
+    "options": [
+      {
+        "text": "カタログ",
+        "isCorrect": true
+      },
+      {
+        "text": "オーダー",
+        "isCorrect": false
+      },
+      {
+        "text": "レシート",
+        "isCorrect": false
+      },
+      {
+        "text": "セール",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "田中さんの服装はとても上品な  がする。",
+    "options": [
+      {
+        "text": "関心",
+        "isCorrect": false
+      },
+      {
+        "text": "気分",
+        "isCorrect": false
+      },
+      {
+        "text": "考え",
+        "isCorrect": false
+      },
+      {
+        "text": "感じ",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "このあたりでアパートを借りるには、毎月の  として五万円必要だ。",
+    "options": [
+      {
+        "text": "価格",
+        "isCorrect": false
+      },
+      {
+        "text": "代金",
+        "isCorrect": false
+      },
+      {
+        "text": "会費",
+        "isCorrect": false
+      },
+      {
+        "text": "家賃",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "テストを始めますから、 辞書をかばんの中に  ください。",
+    "options": [
+      {
+        "text": "ためって",
+        "isCorrect": false
+      },
+      {
+        "text": "とじて",
+        "isCorrect": false
+      },
+      {
+        "text": "しまって",
+        "isCorrect": true
+      },
+      {
+        "text": "たたんで",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "日本の若者の のファッションを知りたい。",
+    "options": [
+      {
+        "text": "最大",
+        "isCorrect": false
+      },
+      {
+        "text": "最新",
+        "isCorrect": true
+      },
+      {
+        "text": "最中",
+        "isCorrect": false
+      },
+      {
+        "text": "最多",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "いらない新聞や雑誌を重ねて、ひもで  捨てた。",
+    "options": [
+      {
+        "text": "しばって",
+        "isCorrect": true
+      },
+      {
+        "text": "かこんで",
+        "isCorrect": false
+      },
+      {
+        "text": "しめて",
+        "isCorrect": false
+      },
+      {
+        "text": "あんで",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "急に用事ができたので、レストランの予約を  した。",
+    "options": [
+      {
+        "text": "チェックアウト",
+        "isCorrect": false
+      },
+      {
+        "text": "カット",
+        "isCorrect": false
+      },
+      {
+        "text": "キャンセル",
+        "isCorrect": true
+      },
+      {
+        "text": "オーバー",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "私の部屋は東 だ。",
+    "options": [
+      {
+        "text": "沿い",
+        "isCorrect": false
+      },
+      {
+        "text": "向き",
+        "isCorrect": true
+      },
+      {
+        "text": "込み",
+        "isCorrect": false
+      },
+      {
+        "text": "建て",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "昨日映画を見たとき、  して泣いてしまった。",
+    "options": [
+      {
+        "text": "歓迎",
+        "isCorrect": false
+      },
+      {
+        "text": "応援",
+        "isCorrect": false
+      },
+      {
+        "text": "期待",
+        "isCorrect": false
+      },
+      {
+        "text": "感動",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "急いでいたので、   違うバスに乗ってしまった。",
+    "options": [
+      {
+        "text": "ぴったり",
+        "isCorrect": false
+      },
+      {
+        "text": "ぐっすり",
+        "isCorrect": false
+      },
+      {
+        "text": "うっかり",
+        "isCorrect": true
+      },
+      {
+        "text": "がっかり",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "森さんは一生懸命勉強して、 医者になった。",
+    "options": [
+      {
+        "text": "りっぱな",
+        "isCorrect": true
+      },
+      {
+        "text": "さかんな",
+        "isCorrect": false
+      },
+      {
+        "text": "まんぞくな",
+        "isCorrect": false
+      },
+      {
+        "text": "しんせんな",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "今回の仕事はとてもきつい。",
+    "options": [
+      {
+        "text": "大変だ",
+        "isCorrect": true
+      },
+      {
+        "text": "簡単だ",
+        "isCorrect": false
+      },
+      {
+        "text": "つまらない",
+        "isCorrect": false
+      },
+      {
+        "text": "おもしろい",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "今日はとてもくたびれた。",
+    "options": [
+      {
+        "text": "いそがしかった",
+        "isCorrect": false
+      },
+      {
+        "text": "つかれた",
+        "isCorrect": true
+      },
+      {
+        "text": "はずかしかった",
+        "isCorrect": false
+      },
+      {
+        "text": "こまった",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "休みが明けたら、また連絡します。",
+    "options": [
+      {
+        "text": "とれたら",
+        "isCorrect": false
+      },
+      {
+        "text": "きまったら",
+        "isCorrect": false
+      },
+      {
+        "text": "おわったら",
+        "isCorrect": true
+      },
+      {
+        "text": "はじまったら",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "この店はいつも混雑している。",
+    "options": [
+      {
+        "text": "客があまりいない",
+        "isCorrect": false
+      },
+      {
+        "text": "品物があまりない",
+        "isCorrect": false
+      },
+      {
+        "text": "客がたくさんいる",
+        "isCorrect": true
+      },
+      {
+        "text": "品物がたくさんある",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "このスポーツのルールは単純だ。",
+    "options": [
+      {
+        "text": "よく知られている",
+        "isCorrect": false
+      },
+      {
+        "text": "わかりやすい",
+        "isCorrect": true
+      },
+      {
+        "text": "あまり知られていない",
+        "isCorrect": false
+      },
+      {
+        "text": "わかりにくい",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "落ち着く",
+    "options": [
+      {
+        "text": "電車が駅に落ち着いたら電話をください。",
+        "isCorrect": false
+      },
+      {
+        "text": "この商品は人気がなくて、 棚にずっと落ち着いている。",
+        "isCorrect": false
+      },
+      {
+        "text": "家のかぎが穴に落ち着いた。",
+        "isCorrect": false
+      },
+      {
+        "text": "火事のとき落ち着いて行動しよう。",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "はかる",
+    "options": [
+      {
+        "text": "りんごの数をはかってみたら、 1) 7個あった。",
+        "isCorrect": false
+      },
+      {
+        "text": "小麦粉やバターをきちんとはかってケーキを作った。",
+        "isCorrect": true
+      },
+      {
+        "text": "この宿題は一時間ぐらいで終わるとはかっています。",
+        "isCorrect": false
+      },
+      {
+        "text": "先月の生活費を電卓ではかった。",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "ユーモア",
+    "options": [
+      {
+        "text": "私は映画が好きでユーモアした映画をよく見る。",
+        "isCorrect": false
+      },
+      {
+        "text": "木村さんはユーモアがあって、いっしょにいると楽しい。",
+        "isCorrect": true
+      },
+      {
+        "text": "きのう友達が貸してくれた本はとてもユーモアだった。",
+        "isCorrect": false
+      },
+      {
+        "text": "彼はユーモアに自己紹介をして、名前を覚えてもらった。",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "未来",
+    "options": [
+      {
+        "text": "地球の未来のために環境問題について考えよう。",
+        "isCorrect": true
+      },
+      {
+        "text": "山本さんは未来は何になりたいですか。",
+        "isCorrect": false
+      },
+      {
+        "text": "いつ来られるか、 未来の都合を教えてください。",
+        "isCorrect": false
+      },
+      {
+        "text": "未来の今ごろ、 大学が建つ予定です。",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "そっくり",
+    "options": [
+      {
+        "text": "父は毎朝そっくりの時間に会社に行きます。",
+        "isCorrect": false
+      },
+      {
+        "text": "私にそっくりのサイズの服が見つかった。",
+        "isCorrect": false
+      },
+      {
+        "text": "私と祖母の誕生日はそっくりです。",
+        "isCorrect": false
+      },
+      {
+        "text": "夫と息子は顔だけでなく声までそっくりです。",
+        "isCorrect": true
+      }
+    ]
+  }
+]
