@@ -36,7 +36,7 @@ const BookListPage = () => {
       let fetchedBooks = [];
       
       /* --- AI ADDED: Hard filter to only allow specific books --- */
-      const allowedBooks = ['shin-nihongo-500-n3', 'shinkanzen-master-n3-reading', 'shin-nihongo-500-n2'];
+      const allowedBooks = ['shin-nihongo-500-n3', 'shinkanzen-master-n3-reading', 'shin-nihongo-500-n2', 'nihongo-power-drill-n3', 'nihongo-power-drill-n2'];
       
       booksSnap.forEach(docSnap => {
         if (allowedBooks.includes(docSnap.id)) {

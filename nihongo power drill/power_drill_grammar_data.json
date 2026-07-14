@@ -1,0 +1,456 @@
+{
+  "id": "nihongo-power-drill-n3-grammar",
+  "title": "Nihongo Power Drill N3 Grammar",
+  "description": "Master N3 grammar patterns with comprehensive sentence-completion, reordering, and passage cloze drills.",
+  "level": "N3",
+  "category": "Drill",
+  "chapters": [
+    {
+      "id": "grammar-1",
+      "title": "第1回",
+      "type": "questions-only",
+      "description": "N3文法ドリル第1回：文の文法、並べ替え、文章の文法",
+      "passages": [
+        {
+          "id": "grammar-1-mondai1",
+          "title": "問題1",
+          "instruction": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g1-m1-q1",
+              "questionText": "この授業は、必ず筆者がボールペンで記入する（　）。",
+              "options": ["こと", "もの", "ところ", "ものか"],
+              "correctIndex": 0,
+              "explanation": "「こと」is used to express a rule or requirement: 'must be written with a ballpoint pen'."
+            },
+            {
+              "id": "g1-m1-q2",
+              "questionText": "あれ！冷たいジュースがない。ちょっとここに（　）のに。",
+              "options": ["置いといた", "置いてみた", "置いてきた", "置いちゃった"],
+              "correctIndex": 0,
+              "explanation": "「置いといた」(～ておいた) expresses something done in preparation. 'I had put it here'."
+            },
+            {
+              "id": "g1-m1-q3",
+              "questionText": "そのほなら、ここから先を（　）書くと短いますよ。",
+              "options": ["どんと", "ごとに", "くらいに", "くらいで"],
+              "correctIndex": 2,
+              "explanation": "「くらいに」expresses degree/extent of action."
+            },
+            {
+              "id": "g1-m1-q4",
+              "questionText": "アプロン（　）据て、かせを引いてしまった。",
+              "options": ["ついたまま", "つながら", "つけたまま", "つけながら"],
+              "correctIndex": 2,
+              "explanation": "「～たまま」means 'leaving something in a certain state': left the apron on."
+            },
+            {
+              "id": "g1-m1-q5",
+              "questionText": "子どものころ、毎日音楽を聴く（　）いつも私はみかんやりを買ってきてくれた。",
+              "options": ["なら", "たびに", "きとこ", "ついには"],
+              "correctIndex": 1,
+              "explanation": "「たびに」means 'every time / whenever': every time she went out."
+            },
+            {
+              "id": "g1-m1-q6",
+              "questionText": "子どものころ、生徒の依頼に答してくれた。",
+              "options": ["病いにとたら", "落き合たら", "落き合がよん", "病いにとしたら"],
+              "correctIndex": 3,
+              "explanation": "「～としたら」means 'if it were the case that'."
+            },
+            {
+              "id": "g1-m1-q7",
+              "questionText": "今日の夏ら考から観に（　）の組を考え上る人と会う。",
+              "options": ["まで", "きかって", "のたって", "やたって"],
+              "correctIndex": 0,
+              "explanation": "「まで」marks extent or limit of action."
+            },
+            {
+              "id": "g1-m1-q8",
+              "questionText": "人きもの責任することはがやずしいいい（　）。",
+              "options": ["ともはあない", "ではあない", "ともはある", "ははあない"],
+              "correctIndex": 1,
+              "explanation": "「ではない」negation pattern used for emphasis."
+            },
+            {
+              "id": "g1-m1-q9",
+              "questionText": "友・田前見く（　）何ですか。",
+              "options": ["といえば", "としては", "とうるご", "と言え"],
+              "correctIndex": 0,
+              "explanation": "「といえば」means 'speaking of / if you mention'."
+            },
+            {
+              "id": "g1-m1-q10",
+              "questionText": "らっき友追加が話いたんだが、期日、学校はテレビの取材がきる（　）。",
+              "options": ["かしな", "もんな", "んだって", "んかって"],
+              "correctIndex": 2,
+              "explanation": "「んだって」(のだって) conveys hearsay: 'I heard that...'."
+            }
+          ]
+        },
+        {
+          "id": "grammar-1-mondai2",
+          "title": "問題2",
+          "instruction": "つぎの文の ★ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g1-m2-q1",
+              "questionText": "私たちは ＿＿　＿＿　★　＿＿ 大型犬に見せたかった。",
+              "options": ["の", "観球", "なって", "はめで"],
+              "correctIndex": 1,
+              "explanation": "The correct order forms: 私たちは の 観球に なって はめで 大型犬に見せたかった。"
+            },
+            {
+              "id": "g1-m2-q2",
+              "questionText": "いくら　＿＿　★　＿＿　おわかりないのです。",
+              "options": ["のは", "こと", "といっ", "わからない"],
+              "correctIndex": 2,
+              "explanation": "「いくら～といっても」means 'no matter how much'."
+            },
+            {
+              "id": "g1-m2-q3",
+              "questionText": "いくら　＿＿　★　＿＿。",
+              "options": ["いいや", "みても", "考えて", "とうちら"],
+              "correctIndex": 1,
+              "explanation": "Forms: いくら考えてみてもいいや とうちら。"
+            },
+            {
+              "id": "g1-m2-q4",
+              "questionText": "行方　＿＿　★　＿＿ 指令仕 ＿＿ 高半で。",
+              "options": ["行く", "ように", "前付仕", "高半で"],
+              "correctIndex": 0,
+              "explanation": "「行方ように前付仕高半で」direction + intention pattern."
+            }
+          ]
+        },
+        {
+          "id": "grammar-1-mondai3",
+          "title": "問題3",
+          "instruction": "つぎの文章を読んで、【１】から【３】の中に入れる最もよいものを、1・2・3・4から一つえらびなさい。",
+          "passageText": "日本の苗字の種類は、少なくとも十数万以上もあると言われています。\n【１】普通のですが、日本人でも、人の名前を書違えて失礼したり、読違えて恥ずかしい思いをしたりすることがあります。\n\nたとえば、「海道」という名字は、「かいどう」「かいたう」「みなみどう」などいろいろな読み方ができます。またこちらに【２】「洋」を「ひろ」とも「よう」とも読みます。\nそれから、初めて会った人と自己紹介する立場としたときは、読みにくい名前のときは【３】のように話して、名前の正しい読み方を読み手に確認してもらいましょう。",
+          "questions": [
+            {
+              "id": "g1-m3-q1",
+              "questionText": "【１】に入る最もよいものを選びなさい。",
+              "options": ["これば", "こだけ", "これだけ", "そかばかり"],
+              "correctIndex": 2,
+              "explanation": "「これだけ」means 'this many / this amount', fitting the context of the large number of family names."
+            },
+            {
+              "id": "g1-m3-q2",
+              "questionText": "【２】に入る最もよいものを選びなさい。",
+              "options": ["いるほど", "いように", "いたかのに", "いたうに"],
+              "correctIndex": 1,
+              "explanation": "「～ように」expresses manner: 'as in the case of'."
+            },
+            {
+              "id": "g1-m3-q3",
+              "questionText": "【３】に入る最もよいものを選びなさい。",
+              "options": ["お読みしたら", "お読みになったら", "お読みなさったら", "お読みになっては"],
+              "correctIndex": 1,
+              "explanation": "「お読みになったら」is the respectful (尊敬語) form, appropriate for asking someone to confirm."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar-2",
+      "title": "第2回",
+      "type": "questions-only",
+      "description": "N3文法ドリル第2回：文の文法、並べ替え、文章の文法",
+      "passages": [
+        {
+          "id": "grammar-2-mondai1",
+          "title": "問題1",
+          "instruction": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g2-m1-q1",
+              "questionText": "先週の天気（　）：菜国は、千葉以上に大きかった。",
+              "options": ["とすると", "なら", "くても", "すると"],
+              "correctIndex": 1,
+              "explanation": "「なら」(conditional) means 'if / given that': If we're talking about last week's weather..."
+            },
+            {
+              "id": "g2-m1-q2",
+              "questionText": "たとしましたら問題が（　）、絶対に会いに行きます。",
+              "options": ["あったら", "あくても", "あることとも", "ないとすると"],
+              "correctIndex": 0,
+              "explanation": "「あったら」(～たら conditional) means 'if there were/are'."
+            },
+            {
+              "id": "g2-m1-q3",
+              "questionText": "せっかくのチャンスなのだから、ぜひやって（　）。",
+              "options": ["みなはず", "みなはずだ", "みなきもう", "みたくはない"],
+              "correctIndex": 1,
+              "explanation": "「みなはずだ」should try it out, given the rare opportunity."
+            },
+            {
+              "id": "g2-m1-q4",
+              "questionText": "かえさんと、ここで（　）いにかいっていてなんですか。",
+              "options": ["待ちなさて", "待たれて", "待ちあれて", "他たなれて"],
+              "correctIndex": 1,
+              "explanation": "「待たれて」is the passive/respectful form of waiting."
+            },
+            {
+              "id": "g2-m1-q5",
+              "questionText": "これらの質がない（　）、あなたの市は指摘がっさと多いと言う形即がた。",
+              "options": ["ことだけ", "については", "ことに対して", "に対して"],
+              "correctIndex": 1,
+              "explanation": "「については」means 'regarding / concerning'."
+            },
+            {
+              "id": "g2-m1-q6",
+              "questionText": "この小学校では、毎朝子どもたちに栄養を与える（　）をしているそうだ。",
+              "options": ["こと", "はず", "ため", "なか"],
+              "correctIndex": 0,
+              "explanation": "「こと」nominalizes the verb, meaning 'the act of providing nutrition'."
+            },
+            {
+              "id": "g2-m1-q7",
+              "questionText": "レストランに予約の確認をしたら（　）、もう予約が余分になかった。",
+              "options": ["なし", "のに", "かたわら", "きそ"],
+              "correctIndex": 1,
+              "explanation": "「のに」expresses disappointment/contrast: 'even though I confirmed the reservation'."
+            },
+            {
+              "id": "g2-m1-q8",
+              "questionText": "大人は「置いつくこい物があるからちょっと待っていて」と言って、コンビニに（　）。",
+              "options": ["入ったきた", "へり出した", "入っていった", "入りはじめた"],
+              "correctIndex": 2,
+              "explanation": "「入っていった」means 'went into' (entering and moving away from speaker)."
+            },
+            {
+              "id": "g2-m1-q9",
+              "questionText": "人きもちには漢を資源することはがやずしいいい（　）。",
+              "options": ["とはあない", "にはあない", "ともはあない", "にはあなあない"],
+              "correctIndex": 1,
+              "explanation": "「にはあない」negative form for 'it is not necessarily the case'."
+            },
+            {
+              "id": "g2-m1-q10",
+              "questionText": "ぜひ一度、故向の趣向や気逆に上方に遊びに（　）。",
+              "options": ["来てほしい", "来ちがない", "来てみてほしい", "来るようにしかい"],
+              "correctIndex": 0,
+              "explanation": "「来てほしい」means 'I want you to come': expressing desire for someone else to do something."
+            }
+          ]
+        },
+        {
+          "id": "grammar-2-mondai2",
+          "title": "問題2",
+          "instruction": "つぎの文の ★ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g2-m2-q1",
+              "questionText": "（　）人が ＿＿　★　＿＿ から、良いを待ちましょうとしてください。",
+              "options": ["まで", "新吐し", "おわれる", "狩って"],
+              "correctIndex": 0,
+              "explanation": "「まで」marks the point until which to wait."
+            },
+            {
+              "id": "g2-m2-q2",
+              "questionText": "もし ＿＿　★　＿＿ 、在月使いに生ことになった。",
+              "options": ["のに", "うちに", "というった", "翌んでいる"],
+              "correctIndex": 1,
+              "explanation": "「うちに」means 'while / during': while things were in a certain state."
+            },
+            {
+              "id": "g2-m2-q3",
+              "questionText": "この仕事は、やる気 ＿＿　★　＿＿ 職なのですか。",
+              "options": ["いいや", "みても", "えせて", "とうちら"],
+              "correctIndex": 0,
+              "explanation": "Forms a sentence about a job requiring motivation."
+            },
+            {
+              "id": "g2-m2-q4",
+              "questionText": "ピアノ ＿＿　★　＿＿ りけるなんで、なぞていてなんですか。",
+              "options": ["ひとり", "ように", "ほかり", "バイオリン"],
+              "correctIndex": 3,
+              "explanation": "「バイオリン」completes the comparison: playing piano as well as violin."
+            }
+          ]
+        },
+        {
+          "id": "grammar-2-mondai3",
+          "title": "問題3",
+          "instruction": "つぎの文章を読んで、【１】から【３】の中に入れる最もよいものを、1・2・3・4から一つえらびなさい。",
+          "passageText": "やせてくると、気持もすく楽になります。\nそれは、かせのいで少的の数的が落ちて、特他が変化しかわなくなってきているから、と言われています。しかし、実際には、草の数的が多どて、社会のいい方をとってできるくて、することになるかもしれません。\n\nたとえば、いつも草草に足しを向けて【１】と、なぜかストレスが解消されるような感じがします。また、草の植物の花々の中に、花の種類が多くなるほど花がきれいになるような感じがします。\nそれとも、花の数が多くなって【２】と、どが実のジュースなどの、悪悪が少ないような環境が多いのですが、つまり、食べ物のおいしさには、悪【３】あの気がさく少かわっていくということです。",
+          "questions": [
+            {
+              "id": "g2-m3-q1",
+              "questionText": "【１】に入る最もよいものを選びなさい。",
+              "options": ["かかせ", "ため", "おくと", "おかせで"],
+              "correctIndex": 2,
+              "explanation": "「おくと」(～ておくと) means 'if you do ... in advance, then...'."
+            },
+            {
+              "id": "g2-m3-q2",
+              "questionText": "【２】に入る最もよいものを選びなさい。",
+              "options": ["みたたいなど", "みたとした", "くると", "みたのが"],
+              "correctIndex": 2,
+              "explanation": "「くると」conditional: 'when it comes to / when it becomes'."
+            },
+            {
+              "id": "g2-m3-q3",
+              "questionText": "【３】に入る最もよいものを選びなさい。",
+              "options": ["お始めしたら", "お試みしてもらう", "お試みはいうぞん", "お試しにいるぞん"],
+              "correctIndex": 1,
+              "explanation": "「お試みしてもらう」is the humble form of requesting someone to try something."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar-3",
+      "title": "第3回",
+      "type": "questions-only",
+      "description": "N3文法ドリル第3回：文の文法、並べ替え、文章の文法",
+      "passages": [
+        {
+          "id": "grammar-3-mondai1",
+          "title": "問題1",
+          "instruction": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g3-m1-q1",
+              "questionText": "今日はお祝をか（　）一年の最後の日です。",
+              "options": ["それで", "つまり", "なぜか", "そけから"],
+              "correctIndex": 1,
+              "explanation": "「つまり」means 'in other words / that is to say'."
+            },
+            {
+              "id": "g3-m1-q2",
+              "questionText": "多くなってきのだから、かせがつかない（　）急ぎていてください。",
+              "options": ["ように", "たのの", "よくに", "ようには"],
+              "correctIndex": 0,
+              "explanation": "「ように」expresses purpose: 'so that you don't catch a cold'."
+            },
+            {
+              "id": "g3-m1-q3",
+              "questionText": "娘はいつも、家族に（　）ことはをべたをしようとといっている。",
+              "options": ["食な去けど", "食たなくて", "食たおばなど", "食いたとた"],
+              "correctIndex": 1,
+              "explanation": "「食たなくて」expresses eating less as an indirect object of the family's concern."
+            },
+            {
+              "id": "g3-m1-q4",
+              "questionText": "この伝説は、ばっかとよ上してしまもの記。",
+              "options": ["はと", "じゃ", "なかり", "ばかり"],
+              "correctIndex": 3,
+              "explanation": "「ばかり」means 'just / only / nothing but': it's all legend."
+            },
+            {
+              "id": "g3-m1-q5",
+              "questionText": "面似書に（　）韻合定でたのた、うよくごとができなかった。",
+              "options": ["書いたように", "書いたお前に", "書いていたように", "書いてみたように"],
+              "correctIndex": 0,
+              "explanation": "「書いたように」means 'as written': things didn't go as written in the resume."
+            },
+            {
+              "id": "g3-m1-q6",
+              "questionText": "どちらもいいボテンツなので、地域の課題（　）をいんほがりぬおすすめです。",
+              "options": ["ほたけて", "いとほど", "に比べて", "はほど"],
+              "correctIndex": 2,
+              "explanation": "「に比べて」means 'compared to': comparing regional issues."
+            },
+            {
+              "id": "g3-m1-q7",
+              "questionText": "組合ぶっとで問題要と（　）。",
+              "options": ["のだ", "がつだ", "ばかれいん", "ばかれいている"],
+              "correctIndex": 3,
+              "explanation": "「ばかれいている」indicates a continuing state (progressive)."
+            },
+            {
+              "id": "g3-m1-q8",
+              "questionText": "今収の流行の注が堪れる（　）。",
+              "options": ["だろか", "ちいいない", "のかな", "かもしれない"],
+              "correctIndex": 3,
+              "explanation": "「かもしれない」means 'might / perhaps': the trend might end."
+            },
+            {
+              "id": "g3-m1-q9",
+              "questionText": "施設するならば、住生を損量ればよいことは（　）。",
+              "options": ["高い", "多かった", "多きな", "多いだな"],
+              "correctIndex": 0,
+              "explanation": "「高い」(expensive/high) fits the context of cost discussion."
+            },
+            {
+              "id": "g3-m1-q10",
+              "questionText": "伊藤さんはバスケや花形を作っていたか（　）、あきをダンスがほ立手じゃなかった。",
+              "options": ["するな", "たいうと", "どとては", "にとても"],
+              "correctIndex": 1,
+              "explanation": "「というと」means 'speaking of': speaking of Ito-san, she wasn't good at dance."
+            }
+          ]
+        },
+        {
+          "id": "grammar-3-mondai2",
+          "title": "問題2",
+          "instruction": "つぎの文の ★ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g3-m2-q1",
+              "questionText": "（　）人が ＿＿　★　＿＿ 　さればいです。",
+              "options": ["あかい", "ことわる", "かしい", "あとばかり"],
+              "correctIndex": 1,
+              "explanation": "「ことわる」(to decline/refuse) fits the context of people turning things down."
+            },
+            {
+              "id": "g3-m2-q2",
+              "questionText": "もし ＿＿　★　＿＿ 、在月使いに生ことになった。",
+              "options": ["いるほど", "いように", "いたかのに", "いたうに"],
+              "correctIndex": 1,
+              "explanation": "「いように」expressing how something should or should not happen."
+            },
+            {
+              "id": "g3-m2-q3",
+              "questionText": "この仕事は、やる気 ＿＿　★　＿＿ といいのです。",
+              "options": ["いちゃ", "みても", "ならば", "よおよ"],
+              "correctIndex": 2,
+              "explanation": "「ならば」conditional: 'if one has motivation'."
+            },
+            {
+              "id": "g3-m2-q4",
+              "questionText": "ピアノ ＿＿　★　＿＿ りけるなんで、ないぞていてなんですか。",
+              "options": ["ひとり", "ように", "はあい", "バイオリン"],
+              "correctIndex": 3,
+              "explanation": "「バイオリン」completes the comparison in the reordering task."
+            }
+          ]
+        },
+        {
+          "id": "grammar-3-mondai3",
+          "title": "問題3",
+          "instruction": "つぎの文章を読んで、【１】から【３】の中に入れる最もよいものを、1・2・3・4から一つえらびなさい。",
+          "passageText": "かずのことく、気持ちがく楽になります。\nそれは、かせのいいて少的の数的が落ちて、特他が変化しかわなくなってきているから、と言われていますから。しかし、月の数的が多どて、社会のいい方をとることができて、することになるかもしれません。\n\nたとえば、いつも花花に足しを向けて【１】と、なぜか花の植物に入ったかのジューベキットのとか良くに入れば花の植物に持てつことができています。また外に、花が参加の持花に入ったかの, 悪悪が少ないような環境が多いのです。\nつまり、食べ物のおいしさには、悪【２】あの気がさく少かわっていくということです。そして、最後には【３】いるとも言えます。",
+          "questions": [
+            {
+              "id": "g3-m3-q1",
+              "questionText": "【１】に入る最もよいものを選びなさい。",
+              "options": ["おくと", "みると", "なくて", "おかせで"],
+              "correctIndex": 0,
+              "explanation": "「おくと」(～ておくと) means 'if you keep/do in advance, then...'."
+            },
+            {
+              "id": "g3-m3-q2",
+              "questionText": "【２】に入る最もよいものを選びなさい。",
+              "options": ["みたかやと", "みたとしよた", "くると", "みたのが"],
+              "correctIndex": 2,
+              "explanation": "「くると」conditional: 'when it comes to / when it becomes'."
+            },
+            {
+              "id": "g3-m3-q3",
+              "questionText": "【３】に入る最もよいものを選びなさい。",
+              "options": ["わかでありよさん", "わかでありませる", "わかに口にいきをせん", "わかでいいます"],
+              "correctIndex": 1,
+              "explanation": "The correct polite expression fitting the passage's formal register."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

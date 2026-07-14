@@ -1,0 +1,1505 @@
+{
+  "id": "nihongo-power-drill-n2",
+  "title": "Nihongo Power Drill N2 文字・語彙",
+  "description": "N2レベルの語彙力を鍛える総合ドリル集。漢字読み・表記・文脈規定・語形成・類義語・用法の6問題構成。",
+  "level": "N2",
+  "category": "Drill",
+  "chapters": [
+    {
+      "id": "vocab-1",
+      "title": "第1回",
+      "type": "questions-only",
+      "description": "N2語彙ドリル第1回：漢字読み、表記、文脈規定、語形成、言い換え類義、用法",
+      "passages": [
+        {
+          "title": "問題1",
+          "mondaiHeader": "問題1 ＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "私は遠くから彼女が働く<u>姿</u>を見ていた。",
+              "options": ["すかた", "すがた", "すはた", "すはだ"],
+              "correctOption": { "index": 1, "text": "すがた" },
+              "explanation": "姿（すがた）means figure / appearance / form."
+            },
+            {
+              "questionText": "スポーツをする時は、ときどき水分を<u>補った</u>ほうがいい。",
+              "options": ["とった", "あたった", "たもった", "おぎなった"],
+              "correctOption": { "index": 3, "text": "おぎなった" },
+              "explanation": "補う（おぎなう）means to supplement / make up for / replenish."
+            },
+            {
+              "questionText": "3人に1人の<u>割合</u>で、その試験に合格している。",
+              "options": ["かつあい", "かっごう", "わりあい", "わりごう"],
+              "correctOption": { "index": 2, "text": "わりあい" },
+              "explanation": "割合（わりあい）means ratio / proportion / percentage."
+            }
+          ]
+        },
+        {
+          "title": "問題2",
+          "mondaiHeader": "問題2 ＿＿の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "では、明日の3時にそちらに<u>うかがいます</u>。",
+              "options": ["司います", "何います", "伺います", "荷います"],
+              "correctOption": { "index": 2, "text": "伺います" },
+              "explanation": "うかがう（伺う）is the humble form of 行く / 来る / 聞く. Written as 伺います."
+            },
+            {
+              "questionText": "最近は<u>れいぎ</u>を知らない人が多いように思う。",
+              "options": ["礼義", "礼儀", "礼議", "礼偽"],
+              "correctOption": { "index": 1, "text": "礼儀" },
+              "explanation": "れいぎ is written as 礼儀 (manners / etiquette)."
+            },
+            {
+              "questionText": "<u>しゅうい</u>に迷惑がかからないように、静かに話してください。",
+              "options": ["周固", "周囲", "週固", "週囲"],
+              "correctOption": { "index": 1, "text": "周囲" },
+              "explanation": "しゅうい is written as 周囲 (surroundings / those around you)."
+            }
+          ]
+        },
+        {
+          "title": "問題3",
+          "mondaiHeader": "問題3 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "この計画が失敗したのは、リーダーである私の（　）です。",
+              "options": ["義務", "成果", "責任", "任務"],
+              "correctOption": { "index": 2, "text": "責任" },
+              "explanation": "責任（せきにん）means responsibility. 'The responsibility lies with me as the leader'."
+            },
+            {
+              "questionText": "いくら忙しくても、（　）日曜日くらいは休みたい。",
+              "options": ["せめて", "やっと", "けっこう", "どうやら"],
+              "correctOption": { "index": 0, "text": "せめて" },
+              "explanation": "せめて means 'at least': 'at least on Sundays I want to rest'."
+            },
+            {
+              "questionText": "会議が始まるまで30分以上あるから、新聞でも読んで時間を（　）。",
+              "options": ["もとう", "かけよう", "つぶそう", "とめよう"],
+              "correctOption": { "index": 2, "text": "つぶそう" },
+              "explanation": "時間をつぶす means to kill time / pass the time."
+            },
+            {
+              "questionText": "明日、来週の旅行の（　）をしましょう。",
+              "options": ["見合い", "言い合い", "打ち合わせ", "待ち合わせ"],
+              "correctOption": { "index": 2, "text": "打ち合わせ" },
+              "explanation": "打ち合わせ（うちあわせ）means a meeting / prior arrangement / briefing."
+            }
+          ]
+        },
+        {
+          "title": "問題4",
+          "mondaiHeader": "問題4 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "この問題を解くのに（　）一日かかった。",
+              "options": ["完", "全", "本", "丸"],
+              "correctOption": { "index": 3, "text": "丸" },
+              "explanation": "丸（まる）+ 一日 = 丸一日 means a full/whole day."
+            },
+            {
+              "questionText": "履歴（　）にはかならず写真を貼ってください。",
+              "options": ["紙", "書", "証", "状"],
+              "correctOption": { "index": 1, "text": "書" },
+              "explanation": "履歴書（りれきしょ）means résumé / curriculum vitae."
+            },
+            {
+              "questionText": "ボランティア活動に積極（　）に参加している。",
+              "options": ["気", "感", "性", "的"],
+              "correctOption": { "index": 3, "text": "的" },
+              "explanation": "積極的（せっきょくてき）means active / positive / proactive."
+            }
+          ]
+        },
+        {
+          "title": "問題5",
+          "mondaiHeader": "問題5 ＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "この寒さだと<u>おそらく</u>明日は雪が降るだろう。",
+              "options": ["たぶん", "絶対に", "次第に", "たしかに"],
+              "correctOption": { "index": 0, "text": "たぶん" },
+              "explanation": "おそらく means probably / most likely (たぶん)."
+            },
+            {
+              "questionText": "<u>やむをえない</u>事情で大学をやめることになった。",
+              "options": ["くやしい", "はずかしい", "しかたがない", "もったいない"],
+              "correctOption": { "index": 2, "text": "しかたがない" },
+              "explanation": "やむをえない means unavoidable / no other choice (しかたがない)."
+            },
+            {
+              "questionText": "デパートで小学校の同級生に<u>ばったり</u>会った。",
+              "options": ["偶然", "自然に", "都合よく", "久しぶりに"],
+              "correctOption": { "index": 0, "text": "偶然" },
+              "explanation": "ばったり means by chance / unexpectedly run into (偶然)."
+            }
+          ]
+        },
+        {
+          "title": "問題6",
+          "mondaiHeader": "問題6 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "等しい",
+              "options": [
+                "この二つの三角形の面積は等しい。",
+                "私は毎日等しい道を通って通勤している。",
+                "チーム全員が等しい気持ちで試合に挑んだ。",
+                "私と彼は、小学校から高校まで学校が等しい。"
+              ],
+              "correctOption": { "index": 0, "text": "この二つの三角形の面積は等しい。" },
+              "explanation": "等しい（ひとしい）means equal / identical. Used for mathematical or measured equality."
+            },
+            {
+              "questionText": "あいにく",
+              "options": [
+                "あいにくなので、コーヒーでもいかがですか。",
+                "あいにくその日は予定があって参加できません。",
+                "あいにくの天気で、海に行くのにちょうどいいですね。",
+                "あいにく部長は席におりますので、少々お待ちください。"
+              ],
+              "correctOption": { "index": 1, "text": "あいにくその日は予定があって参加できません。" },
+              "explanation": "あいにく means unfortunately / as bad luck would have it. Used when something doesn't go as hoped."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocab-2",
+      "title": "第2回",
+      "type": "questions-only",
+      "description": "N2語彙ドリル第2回：漢字読み、表記、文脈規定、語形成、言い換え類義、用法",
+      "passages": [
+        {
+          "title": "問題1",
+          "mondaiHeader": "問題1 ＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "台風が関東地方に<u>接近</u>しているそうだ。",
+              "options": ["せきん", "せいきん", "せつきん", "せっきん"],
+              "correctOption": { "index": 3, "text": "せっきん" },
+              "explanation": "接近（せっきん）means approach / drawing near."
+            },
+            {
+              "questionText": "それでは、来月の<u>中旬</u>にまたご連絡します。",
+              "options": ["なかば", "なかごろ", "ちゅうかん", "ちゅうじゅん"],
+              "correctOption": { "index": 3, "text": "ちゅうじゅん" },
+              "explanation": "中旬（ちゅうじゅん）means the middle 10 days of a month (11th–20th)."
+            },
+            {
+              "questionText": "病気やけがに<u>備えて</u>、保険に入っておいたほうがいい。",
+              "options": ["ささえて", "そなえて", "そろえて", "ひかえて"],
+              "correctOption": { "index": 1, "text": "そなえて" },
+              "explanation": "備える（そなえる）means to prepare for / equip for / be ready for."
+            }
+          ]
+        },
+        {
+          "title": "問題2",
+          "mondaiHeader": "問題2 ＿＿の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "すみません、この<u>あたり</u>に銀行はありませんか。",
+              "options": ["当り", "周り", "辺り", "返り"],
+              "correctOption": { "index": 2, "text": "辺り" },
+              "explanation": "あたり is written as 辺り (area / vicinity / around here)."
+            },
+            {
+              "questionText": "家族のため、父は<u>けんめい</u>に働いた。",
+              "options": ["賢名", "賢命", "懸名", "懸命"],
+              "correctOption": { "index": 3, "text": "懸命" },
+              "explanation": "けんめい is written as 懸命 (with all one's might / desperately). 一生懸命 is the common phrase."
+            },
+            {
+              "questionText": "その町のチームが勝って、観客はとても<u>よろこんで</u>いた。",
+              "options": ["喜で", "喜んで", "喜こんで", "喜ろこんで"],
+              "correctOption": { "index": 1, "text": "喜んで" },
+              "explanation": "よろこぶ is written as 喜ぶ (to be pleased / rejoice)."
+            }
+          ]
+        },
+        {
+          "title": "問題3",
+          "mondaiHeader": "問題3 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "1時間も遅れてきたのに謝らない友達に（　）が立った。",
+              "options": ["足", "心", "腹", "頭"],
+              "correctOption": { "index": 2, "text": "腹" },
+              "explanation": "腹が立つ（はらがたつ）means to get angry / lose one's temper."
+            },
+            {
+              "questionText": "その話は本当だ。（　）私はその事故を見たのだから。",
+              "options": ["いまに", "げんに", "じつに", "まさに"],
+              "correctOption": { "index": 1, "text": "げんに" },
+              "explanation": "げんに means actually / indeed / in fact (as evidence of the claim)."
+            },
+            {
+              "questionText": "（　）を使ってみて、とてもよかったので、この洗剤を買うことにした。",
+              "options": ["リスト", "カタログ", "サンプル", "パンフレット"],
+              "correctOption": { "index": 2, "text": "サンプル" },
+              "explanation": "サンプル means sample. Used something as a trial before buying."
+            },
+            {
+              "questionText": "A：明日から北海道へ行ってきます。\nB：いいですね。（　）、森さんも行くと言っていましたよ。",
+              "options": ["そういえば", "そうすると", "それにしても", "それはそれは"],
+              "correctOption": { "index": 0, "text": "そういえば" },
+              "explanation": "そういえば means 'speaking of which / come to think of it', used to introduce related information."
+            }
+          ]
+        },
+        {
+          "title": "問題4",
+          "mondaiHeader": "問題4 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "コンピューターが突然、原因不明の（　）作動を起こした。",
+              "options": ["不", "違", "誤", "失"],
+              "correctOption": { "index": 0, "text": "不" },
+              "explanation": "不作動（ふさどう）/ 不（ふ）+ 作動 means malfunction. 「不」is a negative prefix."
+            },
+            {
+              "questionText": "作曲（　）になるため、音楽大学に進んだ。",
+              "options": ["手", "者", "家", "師"],
+              "correctOption": { "index": 2, "text": "家" },
+              "explanation": "作曲家（さっきょくか）means composer. 「家」is the suffix for a professional expert."
+            },
+            {
+              "questionText": "彼はまじめで責任（　）が強い。",
+              "options": ["観", "感", "心", "性"],
+              "correctOption": { "index": 3, "text": "性" },
+              "explanation": "責任感（せきにんかん）means sense of responsibility. Wait — 責任性 is less natural. The correct answer here is 感：責任感."
+            }
+          ]
+        },
+        {
+          "title": "問題5",
+          "mondaiHeader": "問題5 ＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "そのニュースは<u>たちまち</u>世界中に広まった。",
+              "options": ["すぐに", "ついに", "だんだん", "ようやく"],
+              "correctOption": { "index": 0, "text": "すぐに" },
+              "explanation": "たちまち means in an instant / immediately (すぐに)."
+            },
+            {
+              "questionText": "彼はノートに<u>せっせと</u>何かを書いていた。",
+              "options": ["速く", "熱心に", "上手に", "楽しそうに"],
+              "correctOption": { "index": 1, "text": "熱心に" },
+              "explanation": "せっせと means diligently / industriously (熱心に)."
+            },
+            {
+              "questionText": "課長は今<u>ミーティング</u>中で、ここにはおりません。",
+              "options": ["会議", "出張", "研修", "休暇"],
+              "correctOption": { "index": 0, "text": "会議" },
+              "explanation": "ミーティング means meeting (会議)."
+            }
+          ]
+        },
+        {
+          "title": "問題6",
+          "mondaiHeader": "問題6 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "わざと",
+              "options": [
+                "その選手はお金のために、わざと試合に負けた。",
+                "お忙しいところ、わざと来てくださってありがとうございます。",
+                "この着物は、結婚式のためにわざと作ってもらった特別なものだ。",
+                "母は、10円でも安かったら、遠くのスーパーまでわざと買いに行く。"
+              ],
+              "correctOption": { "index": 0, "text": "その選手はお金のために、わざと試合に負けた。" },
+              "explanation": "わざと means on purpose / intentionally (deliberately). Option 1 correctly shows intentional losing."
+            },
+            {
+              "questionText": "引き返す",
+              "options": [
+                "借りたCDを友達に引き返した。",
+                "肉が焼けてきたら、引き返して裏も焼いてください。",
+                "使った道具は、すぐに元の場所に引き返してください。",
+                "忘れ物をしたので、急いで家に引き返した。"
+              ],
+              "correctOption": { "index": 3, "text": "忘れ物をしたので、急いで家に引き返した。" },
+              "explanation": "引き返す（ひきかえす）means to turn back / go back. Correct in the context of going back home for a forgotten item."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocab-3",
+      "title": "第3回",
+      "type": "questions-only",
+      "description": "N2語彙ドリル第3回：漢字読み、表記、文脈規定、語形成、言い換え類義、用法",
+      "passages": [
+        {
+          "title": "問題1",
+          "mondaiHeader": "問題1 ＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "ズボンの前と後ろを<u>逆</u>にはいていた。",
+              "options": ["きゃく", "きゃぐ", "ぎゃく", "ぎゃぐ"],
+              "correctOption": { "index": 2, "text": "ぎゃく" },
+              "explanation": "逆（ぎゃく）means reverse / opposite / upside-down."
+            },
+            {
+              "questionText": "<u>先着</u>100名様に、記念品をプレゼントします。",
+              "options": ["さっき", "せんき", "さきちゃく", "せんちゃく"],
+              "correctOption": { "index": 3, "text": "せんちゃく" },
+              "explanation": "先着（せんちゃく）means first arrivals / first come first served."
+            },
+            {
+              "questionText": "この国初めての宇宙飛行士にインタビューする機会が<u>得られた</u>。",
+              "options": ["いられた", "うられた", "えられた", "とられた"],
+              "correctOption": { "index": 2, "text": "えられた" },
+              "explanation": "得る（える）in passive form → 得られた（えられた）means was obtained / was given the opportunity."
+            }
+          ]
+        },
+        {
+          "title": "問題2",
+          "mondaiHeader": "問題2 ＿＿の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "燃えないごみの<u>しゅうしゅう</u>日は、毎週火曜日です。",
+              "options": ["収拾", "収集", "拾収", "集収"],
+              "correctOption": { "index": 1, "text": "収集" },
+              "explanation": "しゅうしゅう is written as 収集 (collection / gathering). ごみの収集 = garbage collection."
+            },
+            {
+              "questionText": "将来は、自分で会社を<u>けいえい</u>したいと思っている。",
+              "options": ["径宮", "径営", "経宮", "経営"],
+              "correctOption": { "index": 3, "text": "経営" },
+              "explanation": "けいえい is written as 経営 (management / operation of a business)."
+            },
+            {
+              "questionText": "どうか私の<u>のぞみ</u>をかなえてください。",
+              "options": ["祈み", "希み", "望み", "願み"],
+              "correctOption": { "index": 2, "text": "望み" },
+              "explanation": "のぞみ is written as 望み (wish / hope / desire)."
+            }
+          ]
+        },
+        {
+          "title": "問題3",
+          "mondaiHeader": "問題3 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "グループ旅行のときに自分（　）な行動をとるのは迷惑だ。",
+              "options": ["勝手", "次第", "都合", "放題"],
+              "correctOption": { "index": 0, "text": "勝手" },
+              "explanation": "勝手（かって）な means selfish / doing as one pleases regardless of others."
+            },
+            {
+              "questionText": "バスの中でお年寄りに席を（　）。",
+              "options": ["あたえた", "おくった", "ゆずった", "わたした"],
+              "correctOption": { "index": 2, "text": "ゆずった" },
+              "explanation": "席をゆずる（譲る）means to give up one's seat / yield one's seat."
+            },
+            {
+              "questionText": "子どもが寝たので、起こさないように（　）部屋を出た。",
+              "options": ["ざっと", "じっと", "かっと", "そっと"],
+              "correctOption": { "index": 3, "text": "そっと" },
+              "explanation": "そっと means softly / quietly / gently — without disturbing."
+            },
+            {
+              "questionText": "何度か会社に行ったが、いつも（　）が悪くて佐藤さんに会うことができない。",
+              "options": ["チャンス", "アナウンス", "タイミング", "スケジュール"],
+              "correctOption": { "index": 2, "text": "タイミング" },
+              "explanation": "タイミングが悪い means bad timing / bad luck with timing."
+            }
+          ]
+        },
+        {
+          "title": "問題4",
+          "mondaiHeader": "問題4 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "この曲は、クラシック音楽の（　）曲の一つとして知られている。",
+              "options": ["正", "名", "好", "高"],
+              "correctOption": { "index": 1, "text": "名" },
+              "explanation": "名曲（めいきょく）means a famous / masterpiece piece of music."
+            },
+            {
+              "questionText": "この試験の合格（　）は約20%だった。",
+              "options": ["位", "数", "率", "割"],
+              "correctOption": { "index": 2, "text": "率" },
+              "explanation": "合格率（ごうかくりつ）means pass rate / success rate."
+            },
+            {
+              "questionText": "いつも外食なので食（　）がかかる。",
+              "options": ["金", "代", "費", "料"],
+              "correctOption": { "index": 2, "text": "費" },
+              "explanation": "食費（しょくひ）means food expenses / cost of food."
+            }
+          ]
+        },
+        {
+          "title": "問題5",
+          "mondaiHeader": "問題5 ＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "彼の<u>ひきょうな</u>やり方にみんな驚いた。",
+              "options": ["冷たい", "真剣な", "親切な", "ずるい"],
+              "correctOption": { "index": 3, "text": "ずるい" },
+              "explanation": "ひきょう（卑怯）means cowardly / underhanded / sneaky (ずるい)."
+            },
+            {
+              "questionText": "3年ぶりに会った彼女は<u>一段と</u>きれいになっていた。",
+              "options": ["やや", "まあまあ", "だんだん", "ますます"],
+              "correctOption": { "index": 3, "text": "ますます" },
+              "explanation": "一段と（いちだんと）means even more / notably more (ますます)."
+            },
+            {
+              "questionText": "今日はとても<u>あわただしい</u>一日だった。",
+              "options": ["忙しい", "ひまな", "落ち着いた", "思いどおりにならない"],
+              "correctOption": { "index": 0, "text": "忙しい" },
+              "explanation": "あわただしい means hectic / rushed / busy (忙しい)."
+            }
+          ]
+        },
+        {
+          "title": "問題6",
+          "mondaiHeader": "問題6 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "省略",
+              "options": [
+                "社員を10人から5人に省略した。",
+                "この道を右に曲がると省略できるので早く着く。",
+                "全部話すと長くなるので、話の一部を省略した。",
+                "お金を省略するために、毎日お弁当を作っている。"
+              ],
+              "correctOption": { "index": 2, "text": "全部話すと長くなるので、話の一部を省略した。" },
+              "explanation": "省略（しょうりゃく）means omission / abbreviation. Option 3 correctly uses it as skipping part of a story."
+            },
+            {
+              "questionText": "ご無沙汰",
+              "options": [
+                "映画を見たのはご無沙汰だった。",
+                "ご無沙汰の帰国に母はとても喜んだ。",
+                "ご無沙汰しておりますが、お元気ですか。",
+                "ご無沙汰にテニスをしたら、腕が痛くなった。"
+              ],
+              "correctOption": { "index": 2, "text": "ご無沙汰しておりますが、お元気ですか。" },
+              "explanation": "ご無沙汰（ごぶさた）means a long time without contact. ご無沙汰しております is the standard greeting after not being in touch for a while."
+            }
+          ]
+        }
+      ]
+    }
+    ,
+    {
+      "id": "vocab-4",
+      "title": "第4回",
+      "type": "questions-only",
+      "description": "N2語彙ドリル第4回：漢字読み、表記、文脈規定、語形成、言い換え類義、用法",
+      "passages": [
+        {
+          "title": "問題1",
+          "mondaiHeader": "問題1 ＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "入学試験の日程は学部によって<u>異なる</u>。",
+              "options": ["いなる", "しなる", "かたなる", "ことなる"],
+              "correctOption": { "index": 3, "text": "ことなる" },
+              "explanation": "異なる（ことなる）means to differ / be different. 学部によって異なる = it varies by faculty."
+            },
+            {
+              "questionText": "先輩に<u>願書</u>の書き方を教えてもらった。",
+              "options": ["がんしょ", "げんしょ", "がんしょう", "げんしょう"],
+              "correctOption": { "index": 0, "text": "がんしょ" },
+              "explanation": "願書（がんしょ）means application form (for entrance exams, etc.)."
+            },
+            {
+              "questionText": "その国際会議には日本の<u>首相</u>も出席するそうだ。",
+              "options": ["しゅそう", "しゅしょう", "しゅうそう", "しゅうしょう"],
+              "correctOption": { "index": 1, "text": "しゅしょう" },
+              "explanation": "首相（しゅしょう）means prime minister."
+            }
+          ]
+        },
+        {
+          "title": "問題2",
+          "mondaiHeader": "問題2 ＿＿の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "日曜日、社長の<u>おたく</u>に伺うことになった。",
+              "options": ["お宅", "お宇", "お居", "お屋"],
+              "correctOption": { "index": 0, "text": "お宅" },
+              "explanation": "おたく is written as お宅 (someone else's home, used respectfully)."
+            },
+            {
+              "questionText": "アルバイトの<u>めんせつ</u>を受けた。",
+              "options": ["面切", "面接", "面設", "面説"],
+              "correctOption": { "index": 1, "text": "面接" },
+              "explanation": "めんせつ is written as 面接 (interview / face-to-face meeting)."
+            },
+            {
+              "questionText": "この事業の予算は昨年の1.5<u>ばい</u>だ。",
+              "options": ["倍", "培", "部", "割"],
+              "correctOption": { "index": 0, "text": "倍" },
+              "explanation": "ばい is written as 倍 (times / -fold). 1.5倍 = 1.5 times as much."
+            }
+          ]
+        },
+        {
+          "title": "問題3",
+          "mondaiHeader": "問題3 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "雨でサッカーの試合が来週に（　）になった。",
+              "options": ["中止", "禁止", "延期", "延長"],
+              "correctOption": { "index": 2, "text": "延期" },
+              "explanation": "延期（えんき）means postponement. The match was postponed to next week due to rain."
+            },
+            {
+              "questionText": "月曜日は定休日です。（　）、祝日の場合は営業します。",
+              "options": ["さらに", "ただし", "それでも", "ところが"],
+              "correctOption": { "index": 1, "text": "ただし" },
+              "explanation": "ただし means however / but / provided that — used to state an exception."
+            },
+            {
+              "questionText": "大雨の中、飛行機が無事に着陸できて、（　）した。",
+              "options": ["きっと", "すっと", "ほっと", "もっと"],
+              "correctOption": { "index": 2, "text": "ほっと" },
+              "explanation": "ほっとする means to feel relieved. The plane landed safely in heavy rain, what a relief."
+            },
+            {
+              "questionText": "話し合いはとても（　）に進み、予定時間より早く終わった。",
+              "options": ["ポーズ", "ルーズ", "シリーズ", "スムーズ"],
+              "correctOption": { "index": 3, "text": "スムーズ" },
+              "explanation": "スムーズ（smooth）means smoothly / without a hitch. The discussion went smoothly."
+            }
+          ]
+        },
+        {
+          "title": "問題4",
+          "mondaiHeader": "問題4 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "こんな夜中に電話をかけてくるなんて（　）常識だ。",
+              "options": ["無", "非", "否", "不"],
+              "correctOption": { "index": 1, "text": "非" },
+              "explanation": "非常識（ひじょうしき）means lack of common sense / inconsiderate. 非 is the negative prefix here."
+            },
+            {
+              "questionText": "私は大学で文（　）の学部に進むことにした。",
+              "options": ["課", "系", "制", "類"],
+              "correctOption": { "index": 1, "text": "系" },
+              "explanation": "文系（ぶんけい）means humanities / liberal arts track, as opposed to 理系（りけい）."
+            },
+            {
+              "questionText": "使用（　）の注意をよく読んでからご使用ください。",
+              "options": ["上", "中", "内", "前"],
+              "correctOption": { "index": 3, "text": "前" },
+              "explanation": "使用前（しようまえ）means before use. 'Please read the precautions before use'."
+            }
+          ]
+        },
+        {
+          "title": "問題5",
+          "mondaiHeader": "問題5 ＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "彼はあの会社に入ることを<u>ためらっている</u>ようだ。",
+              "options": ["決めて", "喜んで", "迷って", "不満に思って"],
+              "correctOption": { "index": 2, "text": "迷って" },
+              "explanation": "ためらう means to hesitate / waver (迷う)."
+            },
+            {
+              "questionText": "時計を見たら、<u>とっくに</u>約束の時間を過ぎていた。",
+              "options": ["少し前に", "たったいま", "だいぶ前に", "知らないうちに"],
+              "correctOption": { "index": 2, "text": "だいぶ前に" },
+              "explanation": "とっくに means long ago / way before / already far past (だいぶ前に / もうずっと前に)."
+            },
+            {
+              "questionText": "彼はこの仕事を<u>引き受ける</u>と言った。",
+              "options": ["やる", "あげる", "やめる", "たすける"],
+              "correctOption": { "index": 0, "text": "やる" },
+              "explanation": "引き受ける（ひきうける）means to take on / accept a task (やる / 担当する)."
+            }
+          ]
+        },
+        {
+          "title": "問題6",
+          "mondaiHeader": "問題6 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "増す",
+              "options": [
+                "毎日勉強したので成績が増した。",
+                "世界の気温はだんだん増している。",
+                "給料を増してくれるよう、社長に頼んだ。",
+                "不景気が続き、国民の不安が増している。"
+              ],
+              "correctOption": { "index": 3, "text": "不景気が続き、国民の不安が増している。" },
+              "explanation": "増す（ます）means to increase / grow. It is used with abstract things like anxiety, popularity, or intensity — not for grades (成績上がる) or temperature (気温が上がる/増加する). Option 4 is the most natural use."
+            },
+            {
+              "questionText": "近々",
+              "options": [
+                "近々、よく雨が降る。",
+                "近々、久しぶりに友達に会った。",
+                "部長は近々家に帰ったばかりです。",
+                "近々、もう一度みんなで会いましょう。"
+              ],
+              "correctOption": { "index": 3, "text": "近々、もう一度みんなで会いましょう。" },
+              "explanation": "近々（ちかぢか）means in the near future / soon. Used for future plans, not past events."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocab-5",
+      "title": "第5回",
+      "type": "questions-only",
+      "description": "N2語彙ドリル第5回：漢字読み、表記、文脈規定、語形成、言い換え類義、用法",
+      "passages": [
+        {
+          "title": "問題1",
+          "mondaiHeader": "問題1 ＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "この機械は壊れやすいので、<u>乱暴</u>に扱わないでください。",
+              "options": ["らんぱく", "らんぽう", "ろうぱく", "ろうぽう"],
+              "correctOption": { "index": 1, "text": "らんぽう" },
+              "explanation": "乱暴（らんぽう）means rough / violent / careless. 乱暴に扱う = handle roughly."
+            },
+            {
+              "questionText": "親友が海外へ留学してしまって<u>寂しい</u>。",
+              "options": ["かなしい", "くるしい", "こいしい", "さびしい"],
+              "correctOption": { "index": 3, "text": "さびしい" },
+              "explanation": "寂しい（さびしい）means lonely / lonesome."
+            },
+            {
+              "questionText": "10年後に、<u>再び</u>ここで会いましょう。",
+              "options": ["さいび", "またび", "たびたび", "ふたたび"],
+              "correctOption": { "index": 3, "text": "ふたたび" },
+              "explanation": "再び（ふたたび）means again / once more."
+            }
+          ]
+        },
+        {
+          "title": "問題2",
+          "mondaiHeader": "問題2 ＿＿の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "寒くて、手の<u>かんかく</u>がなくなってきた。",
+              "options": ["感覚", "感常", "感覚", "感賞"],
+              "correctOption": { "index": 0, "text": "感覚" },
+              "explanation": "かんかく is written as 感覚（かんかく）meaning sense / sensation / feeling."
+            },
+            {
+              "questionText": "この道は車が多くて<u>あぶない</u>。",
+              "options": ["厄い", "危い", "厄ない", "危ない"],
+              "correctOption": { "index": 3, "text": "危ない" },
+              "explanation": "あぶない is written as 危ない (dangerous). The standard spelling includes ない as a separate morpheme: 危ない."
+            },
+            {
+              "questionText": "今回の試験はとても<u>むずかしかった</u>。",
+              "options": ["難かった", "難しかった", "難かしかった", "難ずかしかった"],
+              "correctOption": { "index": 1, "text": "難しかった" },
+              "explanation": "むずかしい is written as 難しい. Past tense: 難しかった."
+            }
+          ]
+        },
+        {
+          "title": "問題3",
+          "mondaiHeader": "問題3 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "私がその町に住んでいたのは、（　）昔のことです。",
+              "options": ["重い", "近い", "遠い", "長い"],
+              "correctOption": { "index": 2, "text": "遠い" },
+              "explanation": "遠い昔（とおいむかし）means the distant past / long long ago."
+            },
+            {
+              "questionText": "一度の失敗であきらめず、経験を（　）からまたやってみればいい。",
+              "options": ["つんで", "とって", "もって", "とおして"],
+              "correctOption": { "index": 0, "text": "つんで" },
+              "explanation": "経験を積む（つむ）means to accumulate experience. 経験を積んでからまたやってみる = try again after gaining experience."
+            },
+            {
+              "questionText": "電車が遅れたので心配したが、（　）約束の時間に間に合った。",
+              "options": ["どうでも", "どうにか", "どうにも", "どうしても"],
+              "correctOption": { "index": 1, "text": "どうにか" },
+              "explanation": "どうにか means somehow / just barely / manage to. 'I just barely made it on time'."
+            },
+            {
+              "questionText": "A：どうぞ召し上がってください。\nB：では、（　）なくいただきます。",
+              "options": ["遠慮", "感謝", "失礼", "礼儀"],
+              "correctOption": { "index": 0, "text": "遠慮" },
+              "explanation": "遠慮なくいただきます means 'I'll help myself without holding back / please don't mind if I do'. The set phrase is ご遠慮なく or 遠慮なく."
+            }
+          ]
+        },
+        {
+          "title": "問題4",
+          "mondaiHeader": "問題4 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "彼の予想は（　）当たりだった。",
+              "options": ["大", "高", "多", "超"],
+              "correctOption": { "index": 0, "text": "大" },
+              "explanation": "大当たり（おおあたり）means a big hit / jackpot / complete success."
+            },
+            {
+              "questionText": "この店は（　）成年者は入ることができない。",
+              "options": ["少", "非", "不", "未"],
+              "correctOption": { "index": 3, "text": "未" },
+              "explanation": "未成年者（みせいねんしゃ）means minors / those under legal age. 未 means 'not yet'."
+            },
+            {
+              "questionText": "代表チームを応援する手紙が1,000（　）以上届いた。",
+              "options": ["件", "通", "部", "枚"],
+              "correctOption": { "index": 1, "text": "通" },
+              "explanation": "通（つう）is the counter for letters / correspondence. 手紙1,000通 = 1,000 letters."
+            }
+          ]
+        },
+        {
+          "title": "問題5",
+          "mondaiHeader": "問題5 ＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "<u>はたして</u>その考えは正しいのだろうか。",
+              "options": ["本当に", "やはり", "どうして", "もしかして"],
+              "correctOption": { "index": 0, "text": "本当に" },
+              "explanation": "はたして means indeed / really / as expected — expresses wondering if something is truly the case (本当に)."
+            },
+            {
+              "questionText": "あの二人が手を組めば、新しい店は成功するだろう。",
+              "options": ["競争すれば", "協力すれば", "工夫すれば", "相談すれば"],
+              "correctOption": { "index": 1, "text": "協力すれば" },
+              "explanation": "手を組む（てをくむ）means to join hands / team up / cooperate (協力する)."
+            },
+            {
+              "questionText": "このパソコンは性能が<u>優れている</u>。",
+              "options": ["他より上である", "他と同じくらいだ", "他と同じようにいい", "他と同じように悪い"],
+              "correctOption": { "index": 0, "text": "他より上である" },
+              "explanation": "優れている（すぐれている）means to be superior / excel / be above others (他より上である)."
+            }
+          ]
+        },
+        {
+          "title": "問題6",
+          "mondaiHeader": "問題6 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "分野",
+              "options": [
+                "大学での分野は経営学でした。",
+                "会議にはさまざまな分野の専門家が集まった。",
+                "自分の車を持ってから、行動の分野が広がった。",
+                "ここには300分野以上の植物が植えられている。"
+              ],
+              "correctOption": { "index": 1, "text": "会議にはさまざまな分野の専門家が集まった。" },
+              "explanation": "分野（ぶんや）means field / area / domain (of expertise). Option 2 correctly uses it: experts from various fields gathered."
+            },
+            {
+              "questionText": "じっと",
+              "options": [
+                "その犬は、私を見てじっと動かなかった。",
+                "今日は面接なので、じっとしたスーツを着よう。",
+                "時間がないので、デパートの中をじっと見て帰った。",
+                "寝ているかもしれないので、じっとドアをノックした。"
+              ],
+              "correctOption": { "index": 0, "text": "その犬は、私を見てじっと動かなかった。" },
+              "explanation": "じっと means still / motionless / fixedly. Option 1 correctly uses it: the dog froze still, staring at me."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "training-1",
+      "title": "集中トレーニング①（動詞）",
+      "type": "questions-only",
+      "description": "動詞の使い分けトレーニング。（　）の中のaとbのうち、文に合うほうを選びましょう。3分間で10問。",
+      "passages": [
+        {
+          "title": "集中トレーニング① 動詞",
+          "mondaiHeader": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "迷惑を（　a して　　b かけて）しまって、すみません。",
+              "options": ["a して", "b かけて"],
+              "correctOption": { "index": 1, "text": "b かけて" },
+              "explanation": "迷惑をかける（めいわくをかける）is the set phrase meaning to cause trouble / inconvenience someone. 迷惑をする is unnatural."
+            },
+            {
+              "questionText": "コーヒーを飲んでいたら、突然いいアイディアが（　a 生えた　　b 浮かんだ）。",
+              "options": ["a 生えた", "b 浮かんだ"],
+              "correctOption": { "index": 1, "text": "b 浮かんだ" },
+              "explanation": "アイディアが浮かぶ（うかぶ）means an idea came to mind / floated up. 生える（はえる）means to grow (plants/hair), not for ideas."
+            },
+            {
+              "questionText": "ブレーキの調子が悪いので、車を修理に（　a 出した　　b 送った）。",
+              "options": ["a 出した", "b 送った"],
+              "correctOption": { "index": 0, "text": "a 出した" },
+              "explanation": "修理に出す（しゅうりにだす）means to send something in for repairs. 送る（おくる）means to send/ship, which is less natural here."
+            },
+            {
+              "questionText": "買ったばかりの携帯電話に傷が（　a 出て　　b ついて）しまった。",
+              "options": ["a 出て", "b ついて"],
+              "correctOption": { "index": 1, "text": "b ついて" },
+              "explanation": "傷がつく（きずがつく）is the set expression meaning a scratch appeared / got scratched. 傷が出る is unnatural."
+            },
+            {
+              "questionText": "事件の責任を（　a とって　　b もって）社長が辞任した。",
+              "options": ["a とって", "b もって"],
+              "correctOption": { "index": 0, "text": "a とって" },
+              "explanation": "責任をとる（せきにんをとる）means to take responsibility. 責任をもつ means to bear/have responsibility (ongoing), not used for resigning."
+            },
+            {
+              "questionText": "混雑した場所では、子どもの手を（　a つれて　　b ひいて）歩いてください。",
+              "options": ["a つれて", "b ひいて"],
+              "correctOption": { "index": 1, "text": "b ひいて" },
+              "explanation": "手を引く（てをひく）means to hold a child's hand while walking. 連れる（つれる）means to accompany/bring someone, but not specifically hand-holding."
+            },
+            {
+              "questionText": "健康のために野菜をたくさん（　a えた　　b とった）ほうがいい。",
+              "options": ["a えた", "b とった"],
+              "correctOption": { "index": 1, "text": "b とった" },
+              "explanation": "野菜をとる（やさいをとる）means to take in / consume vegetables. 野菜をえる（得る）is not natural in this nutritional context."
+            },
+            {
+              "questionText": "3日前から姉に連絡が（　a つかない　　b たたない）。どうしたのだろう。",
+              "options": ["a つかない", "b たたない"],
+              "correctOption": { "index": 0, "text": "a つかない" },
+              "explanation": "連絡がつく（れんらくがつく）means to be able to reach / get in contact. 連絡がつかない = can't get in touch. 連絡がたたない is unnatural."
+            },
+            {
+              "questionText": "優勝して、新聞に写真と名前が（　a のった　　b あがった）。",
+              "options": ["a のった", "b あがった"],
+              "correctOption": { "index": 0, "text": "a のった" },
+              "explanation": "新聞にのる（しんぶんにのる）means to appear in / be published in a newspaper. 新聞にあがる is not standard."
+            },
+            {
+              "questionText": "時計の針が12時を（　a あてた　　b さした）。",
+              "options": ["a あてた", "b さした"],
+              "correctOption": { "index": 1, "text": "b さした" },
+              "explanation": "針がさす（はりがさす）means the clock hand pointed to / indicated. 12時をさした = pointed to 12 o'clock. あてる（当てる）means to aim at or guess."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "training-2",
+      "title": "集中トレーニング②（擬音語・擬態語）",
+      "type": "questions-only",
+      "description": "擬音語・擬態語の使い分けトレーニング。（　）の中のaとbのうち、文に合うほうを選びましょう。3分間で10問。",
+      "passages": [
+        {
+          "title": "集中トレーニング② 擬音語・擬態語",
+          "mondaiHeader": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "仕事中（　a うとうと　　b すやすや）しているところを課長に見られてしまった。",
+              "options": ["a うとうと", "b すやすや"],
+              "correctOption": { "index": 0, "text": "a うとうと" },
+              "explanation": "うとうと means dozing off / nodding off (while doing something). すやすや means sleeping soundly/peacefully (used for someone completely asleep, usually a child)."
+            },
+            {
+              "questionText": "A：この店はいつも（　a すかすか　　b がらがら）だね。\nB：高くておいしくないからね。",
+              "options": ["a すかすか", "b がらがら"],
+              "correctOption": { "index": 1, "text": "b がらがら" },
+              "explanation": "がらがら means completely empty (of a shop/train). すかすか means sparse/thin (like thin fabric or hollow objects), not used for crowds."
+            },
+            {
+              "questionText": "この会社はいつ来ても床が（　a ぴかぴか　　b てかてか）で気持ちがいい。",
+              "options": ["a ぴかぴか", "b てかてか"],
+              "correctOption": { "index": 0, "text": "a ぴかぴか" },
+              "explanation": "ぴかぴか means sparkling clean / gleaming. てかてか means shiny/greasy (oily sheen, like a shiny face or greasy surface) — not complimentary."
+            },
+            {
+              "questionText": "面接では緊張せずに、（　a ぺらぺら　　b すらすら）答えられた。",
+              "options": ["a ぺらぺら", "b すらすら"],
+              "correctOption": { "index": 1, "text": "b すらすら" },
+              "explanation": "すらすら means smoothly / fluently (answering without hesitation). ぺらぺら means fluent (usually for languages), but すらすら is more natural for answering questions fluently."
+            },
+            {
+              "questionText": "桜の花びらが風で（　a ひらひら　　b ぴらぴら）舞っている。",
+              "options": ["a ひらひら", "b ぴらぴら"],
+              "correctOption": { "index": 0, "text": "a ひらひら" },
+              "explanation": "ひらひら describes light, fluttering motion (like petals or leaves floating in the wind). ぴらぴら is not a standard word."
+            },
+            {
+              "questionText": "友人みんなで集まって（　a わいわい　　b がやがや）お酒を飲むのは楽しい。",
+              "options": ["a わいわい", "b がやがや"],
+              "correctOption": { "index": 0, "text": "a わいわい" },
+              "explanation": "わいわい means lively / cheerfully noisy (fun noise of friends enjoying themselves). がやがや means noisy / clamorous (loud and chaotic noise, less positive nuance)."
+            },
+            {
+              "questionText": "受付がわからなくて（　a ふらふら　　b うろうろ）していたら、通りがかりの人が教えてくれた。",
+              "options": ["a ふらふら", "b うろうろ"],
+              "correctOption": { "index": 1, "text": "b うろうろ" },
+              "explanation": "うろうろ means wandering around / hanging about (looking for something or not knowing where to go). ふらふら means staggering / unsteady on one's feet (from tiredness or dizziness)."
+            },
+            {
+              "questionText": "かばんの中に入れておいた履歴書が（　a くしゃくしゃ　　b めちゃくちゃ）になってしまった。",
+              "options": ["a くしゃくしゃ", "b めちゃくちゃ"],
+              "correctOption": { "index": 0, "text": "a くしゃくしゃ" },
+              "explanation": "くしゃくしゃ means crumpled / wrinkled (paper, fabric). めちゃくちゃ means chaotic / messed up / in disorder (more general/abstract)."
+            },
+            {
+              "questionText": "妹は父に見つからないように、（　a ひそひそ　　b こそこそ）と部屋を出て行った。",
+              "options": ["a ひそひそ", "b こそこそ"],
+              "correctOption": { "index": 1, "text": "b こそこそ" },
+              "explanation": "こそこそ means sneakily / furtively (moving so as not to be seen). ひそひそ means whispering (speaking in hushed tones to not be overheard)."
+            },
+            {
+              "questionText": "さっきからあの人が私を（　a じろじろ　　b きょろきょろ）見ている。",
+              "options": ["a じろじろ", "b きょろきょろ"],
+              "correctOption": { "index": 0, "text": "a じろじろ" },
+              "explanation": "じろじろ means staring / looking someone up and down (rude/scrutinizing gaze at one person). きょろきょろ means looking around restlessly / glancing this way and that (looking in multiple directions)."
+            }
+          ]
+        }
+      ]
+    }
+    ,
+    {
+      "id": "vocab-6",
+      "title": "第6回",
+      "type": "questions-only",
+      "description": "N2語彙ドリル第6回",
+      "passages": [
+        {
+          "title": "問題1",
+          "mondaiHeader": "問題1 ＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "今日はデパートで新しい<u>靴</u>を買うつもりだ。",
+              "options": ["かさ", "くつ", "ふく", "かばん"],
+              "correctOption": { "index": 1, "text": "くつ" },
+              "explanation": "靴（くつ）= shoes."
+            },
+            {
+              "questionText": "彼が<u>登場</u>すると拍手が起きた。",
+              "options": ["とば", "とうば", "とじょう", "とうじょう"],
+              "correctOption": { "index": 3, "text": "とうじょう" },
+              "explanation": "登場（とうじょう）= appearance / entrance on stage."
+            },
+            {
+              "questionText": "新しい歯が<u>生えて</u>きた。",
+              "options": ["いえて", "うえて", "はえて", "なまえて"],
+              "correctOption": { "index": 2, "text": "はえて" },
+              "explanation": "生える（はえる）= to grow (teeth, plants)."
+            }
+          ]
+        },
+        {
+          "title": "問題2",
+          "mondaiHeader": "問題2 ＿＿の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "どちらを選んだらいいか、<u>なやんでいる</u>。",
+              "options": ["個んで", "悩んで", "脳んで", "胸んで"],
+              "correctOption": { "index": 1, "text": "悩んで" },
+              "explanation": "なやむ = 悩む (to worry / be troubled)."
+            },
+            {
+              "questionText": "来月、首相がアジア4カ国を<u>ほうもんする</u>そうだ。",
+              "options": ["訪門", "訪問", "報門", "報間"],
+              "correctOption": { "index": 1, "text": "訪問" },
+              "explanation": "ほうもん = 訪問 (visit / call on)."
+            },
+            {
+              "questionText": "誕生日にたくさんの人からメールをもらって<u>うれしい</u>。",
+              "options": ["快しい", "喜しい", "嬉しい", "愉しい"],
+              "correctOption": { "index": 2, "text": "嬉しい" },
+              "explanation": "うれしい = 嬉しい (happy / glad)."
+            }
+          ]
+        },
+        {
+          "title": "問題3",
+          "mondaiHeader": "問題3 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "複数の会社が（　）でこの製品を開発した。",
+              "options": ["共通", "共同", "協力", "協調"],
+              "correctOption": { "index": 1, "text": "共同" },
+              "explanation": "共同（きょうどう）= jointly / in cooperation. 共同で開発 = develop jointly."
+            },
+            {
+              "questionText": "山田さんはこの会社に20年勤めている（　）の社員だ。",
+              "options": ["プロ", "ベテラン", "リーダー", "アマチュア"],
+              "correctOption": { "index": 1, "text": "ベテラン" },
+              "explanation": "ベテラン = veteran (experienced person)."
+            },
+            {
+              "questionText": "地震で家が（　）と揺れた。",
+              "options": ["ぐらぐら", "すらすら", "はらはら", "ぶらぶら"],
+              "correctOption": { "index": 0, "text": "ぐらぐら" },
+              "explanation": "ぐらぐら = shaking / wobbling (of buildings during earthquake)."
+            },
+            {
+              "questionText": "みんなが使う部屋なので（　）ください。",
+              "options": ["散らないで", "散らさないで", "散らかさないで", "散らからないで"],
+              "correctOption": { "index": 2, "text": "散らかさないで" },
+              "explanation": "散らかす（ちらかす）= to make a mess. 散らかさないでください = please don't make a mess."
+            }
+          ]
+        },
+        {
+          "title": "問題4",
+          "mondaiHeader": "問題4 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "最近の携帯電話は（　）機能だ。",
+              "options": ["上", "多", "良", "優"],
+              "correctOption": { "index": 1, "text": "多" },
+              "explanation": "多機能（たきのう）= multi-function."
+            },
+            {
+              "questionText": "そのドラマは人気があったので（　）放送されることになった。",
+              "options": ["次", "再", "重", "復"],
+              "correctOption": { "index": 1, "text": "再" },
+              "explanation": "再放送（さいほうそう）= rebroadcast / rerun."
+            },
+            {
+              "questionText": "彼女の将来の夢は看護（　）だ。",
+              "options": ["師", "女", "者", "人"],
+              "correctOption": { "index": 0, "text": "師" },
+              "explanation": "看護師（かんごし）= nurse."
+            }
+          ]
+        },
+        {
+          "title": "問題5",
+          "mondaiHeader": "問題5 ＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "今日は<u>なるべく</u>早く帰るよ。",
+              "options": ["少し", "いつもより", "ぜったいに", "できるだけ"],
+              "correctOption": { "index": 3, "text": "できるだけ" },
+              "explanation": "なるべく = できるだけ (as much as possible)."
+            },
+            {
+              "questionText": "先輩に昨晩のことを<u>おわびした</u>。",
+              "options": ["感謝した", "説明した", "謝った", "断った"],
+              "correctOption": { "index": 2, "text": "謝った" },
+              "explanation": "おわびする = 謝る (to apologize)."
+            },
+            {
+              "questionText": "お客さんが多かったので、<u>はりきって</u>働いた。",
+              "options": ["緊張して", "疲れるほど", "とても忙しく", "やる気をもって"],
+              "correctOption": { "index": 3, "text": "やる気をもって" },
+              "explanation": "はりきる = やる気をもって頑張る (to work with enthusiasm / be fired up)."
+            }
+          ]
+        },
+        {
+          "title": "問題6",
+          "mondaiHeader": "問題6 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "無断",
+              "options": [
+                "彼は会社を無断で休んだ。",
+                "部長の話は無断で30分以上続いた。",
+                "どうぞ無断で好きな料理をお取りください。",
+                "あの人は優しいから誰の頼みでも無断できてくれる。"
+              ],
+              "correctOption": { "index": 0, "text": "彼は会社を無断で休んだ。" },
+              "explanation": "無断（むだん）= without permission. 無断で休む = absent without notice."
+            },
+            {
+              "questionText": "接する",
+              "options": [
+                "この絵には手を接しないでください。",
+                "このパソコンはインターネットに接していません。",
+                "先生に接することができて、本当によかったです。",
+                "鈴木さんのまじめな態度に接して、私もがんばろうと思った。"
+              ],
+              "correctOption": { "index": 3, "text": "鈴木さんのまじめな態度に接して、私もがんばろうと思った。" },
+              "explanation": "接する（せっする）= to come into contact with / be exposed to. 態度に接する = to witness/encounter someone's attitude."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocab-7",
+      "title": "第7回",
+      "type": "questions-only",
+      "description": "N2語彙ドリル第7回",
+      "passages": [
+        {
+          "title": "問題1",
+          "mondaiHeader": "問題1 ＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "今日は体調が悪いので、<u>激しい</u>運動はできない。",
+              "options": ["あやしい", "きびしい", "くるしい", "はげしい"],
+              "correctOption": { "index": 3, "text": "はげしい" },
+              "explanation": "激しい（はげしい）= intense / fierce / violent."
+            },
+            {
+              "questionText": "この会社は現在、社員を<u>募集</u>している。",
+              "options": ["ほしゅう", "ほじゅう", "ほしゅう", "ほじゅう"],
+              "correctOption": { "index": 1, "text": "ぼしゅう" },
+              "explanation": "募集（ぼしゅう）= recruitment / solicitation."
+            },
+            {
+              "questionText": "チケット売り場の前に長い<u>行列</u>ができていた。",
+              "options": ["こうれい", "こうれつ", "ぎょうれい", "ぎょうれつ"],
+              "correctOption": { "index": 3, "text": "ぎょうれつ" },
+              "explanation": "行列（ぎょうれつ）= line / queue."
+            }
+          ]
+        },
+        {
+          "title": "問題2",
+          "mondaiHeader": "問題2 ＿＿の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "18歳になったら車の<u>めんきょ</u>が取りたい。",
+              "options": ["免許", "免証", "面許", "面証"],
+              "correctOption": { "index": 0, "text": "免許" },
+              "explanation": "めんきょ = 免許 (license / permit)."
+            },
+            {
+              "questionText": "年をとっても<u>けんこう</u>でいられるように、今からよく運動しておこう。",
+              "options": ["建好", "建康", "健好", "健康"],
+              "correctOption": { "index": 3, "text": "健康" },
+              "explanation": "けんこう = 健康 (health / healthy)."
+            },
+            {
+              "questionText": "今一番人気がある<u>はいゆう</u>は誰ですか。",
+              "options": ["俳憂", "俳優", "排憂", "排優"],
+              "correctOption": { "index": 1, "text": "俳優" },
+              "explanation": "はいゆう = 俳優 (actor / actress)."
+            }
+          ]
+        },
+        {
+          "title": "問題3",
+          "mondaiHeader": "問題3 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "石に（　）転んでしまった。",
+              "options": ["さわって", "つまずいて", "ひっぱって", "ぶつかって"],
+              "correctOption": { "index": 1, "text": "つまずいて" },
+              "explanation": "つまずく = to trip / stumble (on a stone)."
+            },
+            {
+              "questionText": "私のやることにいちいち（　）を出さないでください。",
+              "options": ["口", "目", "顔", "指"],
+              "correctOption": { "index": 0, "text": "口" },
+              "explanation": "口を出す（くちをだす）= to interfere / meddle / butt in."
+            },
+            {
+              "questionText": "この機械は、（　）動かすと、しばらく止められない。",
+              "options": ["いっさい", "いっそう", "いったん", "いっぽう"],
+              "correctOption": { "index": 2, "text": "いったん" },
+              "explanation": "いったん～すると = once you start doing ~ (you can't stop)."
+            },
+            {
+              "questionText": "昨日あまり眠れなかったので、授業中に（　）してしまった。",
+              "options": ["うとうと", "ぐっすり", "ぐうぐう", "すやすや"],
+              "correctOption": { "index": 0, "text": "うとうと" },
+              "explanation": "うとうと = dozing off (while in class). ぐっすり/ぐうぐう/すやすや = sleeping deeply/soundly."
+            }
+          ]
+        },
+        {
+          "title": "問題4",
+          "mondaiHeader": "問題4 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "選挙の結果、A党の議員は（　）半数に達しなかった。",
+              "options": ["大", "過", "全", "多"],
+              "correctOption": { "index": 1, "text": "過" },
+              "explanation": "過半数（かはんすう）= majority / more than half."
+            },
+            {
+              "questionText": "このカメラは充電（　）なので、電池を買う必要はありません。",
+              "options": ["系", "式", "的", "法"],
+              "correctOption": { "index": 1, "text": "式" },
+              "explanation": "充電式（じゅうでんしき）= rechargeable type."
+            },
+            {
+              "questionText": "財布の落とし（　）が見つかった。",
+              "options": ["手", "人", "主", "者"],
+              "correctOption": { "index": 2, "text": "主" },
+              "explanation": "落とし主（おとしぬし）= owner of a lost item."
+            }
+          ]
+        },
+        {
+          "title": "問題5",
+          "mondaiHeader": "問題5 ＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "<u>明け方</u>、母から電話があった。",
+              "options": ["夕方", "朝早く", "午前中", "夜遅く"],
+              "correctOption": { "index": 1, "text": "朝早く" },
+              "explanation": "明け方（あけがた）= dawn / early morning."
+            },
+            {
+              "questionText": "パーティーにそんな服で行くのは<u>みっともない</u>よ。",
+              "options": ["わるい", "きたない", "はずかしい", "かわいそうだ"],
+              "correctOption": { "index": 2, "text": "はずかしい" },
+              "explanation": "みっともない = shameful / embarrassing (はずかしい)."
+            },
+            {
+              "questionText": "あの時のことは<u>水に流して</u>、これから一緒にがんばりましょう。",
+              "options": ["忘れて", "反省して", "思い出にして", "みんなに知らせて"],
+              "correctOption": { "index": 0, "text": "忘れて" },
+              "explanation": "水に流す（みずにながす）= to let bygones be bygones / forgive and forget (忘れる)."
+            }
+          ]
+        },
+        {
+          "title": "問題6",
+          "mondaiHeader": "問題6 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "告白",
+              "options": [
+                "あの人に自分の気持ちを告白した。",
+                "友達に明日試験があることを告白した。",
+                "この時計は鳥の鳴き声で時間を告白する。",
+                "先生に指名されたので、立って答えを告白した。"
+              ],
+              "correctOption": { "index": 0, "text": "あの人に自分の気持ちを告白した。" },
+              "explanation": "告白（こくはく）= confession (of feelings). Used for confessing love or secrets."
+            },
+            {
+              "questionText": "おかまいなく",
+              "options": [
+                "それでは、おかまいなく拝見します。",
+                "おかまいなく召し上がってください。",
+                "すぐに失礼しますので、どうぞおかまいなく。",
+                "A：ありがとうございました。\nB：いいえ、おかまいなく。"
+              ],
+              "correctOption": { "index": 2, "text": "すぐに失礼しますので、どうぞおかまいなく。" },
+              "explanation": "おかまいなく = please don't bother / don't go to any trouble on my behalf. Used when declining special treatment from a host."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocab-8",
+      "title": "第8回",
+      "type": "questions-only",
+      "description": "N2語彙ドリル第8回",
+      "passages": [
+        {
+          "title": "問題1",
+          "mondaiHeader": "問題1 ＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "日本料理には<u>辛い</u>ものが少ないと思う。",
+              "options": ["つらい", "からい", "しぶい", "にがい"],
+              "correctOption": { "index": 1, "text": "からい" },
+              "explanation": "辛い（からい）= spicy. (つらい = painful; しぶい = astringent; にがい = bitter)"
+            },
+            {
+              "questionText": "ここの<u>名物</u>は魚を使った料理だ。",
+              "options": ["なぶつ", "なもの", "めいぶつ", "めいもの"],
+              "correctOption": { "index": 2, "text": "めいぶつ" },
+              "explanation": "名物（めいぶつ）= local specialty / famous product."
+            },
+            {
+              "questionText": "両親は、私も妹も<u>平等</u>に愛し、育ててくれた。",
+              "options": ["へいとう", "へいどう", "びょうとう", "びょうどう"],
+              "correctOption": { "index": 3, "text": "びょうどう" },
+              "explanation": "平等（びょうどう）= equality / equally."
+            }
+          ]
+        },
+        {
+          "title": "問題2",
+          "mondaiHeader": "問題2 ＿＿の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "<u>けいき</u>が悪いと、仕事がなかなか見つからない。",
+              "options": ["経気", "経期", "景気", "景期"],
+              "correctOption": { "index": 2, "text": "景気" },
+              "explanation": "けいき = 景気 (economic conditions / business climate)."
+            },
+            {
+              "questionText": "初めて会ったとき、彼女の<u>いんしょう</u>はあまりよくなかった。",
+              "options": ["印象", "印像", "即象", "即像"],
+              "correctOption": { "index": 0, "text": "印象" },
+              "explanation": "いんしょう = 印象 (impression)."
+            },
+            {
+              "questionText": "その子は母親の手を<u>にぎって</u>離さなかった。",
+              "options": ["扱って", "接って", "掴って", "握って"],
+              "correctOption": { "index": 3, "text": "握って" },
+              "explanation": "にぎる = 握る (to grasp / hold tight)."
+            }
+          ]
+        },
+        {
+          "title": "問題3",
+          "mondaiHeader": "問題3 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "ここに6（　）の数字を書いてください。",
+              "options": ["行", "桁", "字", "段"],
+              "correctOption": { "index": 1, "text": "桁" },
+              "explanation": "桁（けた）= digit. 6桁の数字 = a 6-digit number."
+            },
+            {
+              "questionText": "そんな（　）な話を信用してはいけない。",
+              "options": ["あやまり", "いたずら", "けっさく", "でたらめ"],
+              "correctOption": { "index": 3, "text": "でたらめ" },
+              "explanation": "でたらめ = nonsense / made-up / unreliable. でたらめな話 = a made-up story."
+            },
+            {
+              "questionText": "時間がないのでくわしい説明は（　）。",
+              "options": ["余ります", "補います", "省きます", "引きます"],
+              "correctOption": { "index": 2, "text": "省きます" },
+              "explanation": "省く（はぶく）= to omit / skip. 説明を省く = skip the explanation."
+            },
+            {
+              "questionText": "床が（　）していて、転びそうになった。",
+              "options": ["すいすい", "つるつる", "はらはら", "ぽりぽり"],
+              "correctOption": { "index": 1, "text": "つるつる" },
+              "explanation": "つるつる = slippery / smooth. 床がつるつる = the floor is slippery."
+            }
+          ]
+        },
+        {
+          "title": "問題4",
+          "mondaiHeader": "問題4 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "仕事が忙しくて、（　）規則な生活が続いている。",
+              "options": ["不", "無", "非", "反"],
+              "correctOption": { "index": 0, "text": "不" },
+              "explanation": "不規則（ふきそく）= irregular. 不規則な生活 = irregular lifestyle."
+            },
+            {
+              "questionText": "首都（　）にこの国の人口の4分の1が集中している。",
+              "options": ["内", "県", "圏", "環"],
+              "correctOption": { "index": 2, "text": "圏" },
+              "explanation": "首都圏（しゅとけん）= the capital region / greater metropolitan area."
+            },
+            {
+              "questionText": "10年ぶりに会った二人は、抱き（　）喜んだ。",
+              "options": ["合って", "入れて", "込んで", "しめて"],
+              "correctOption": { "index": 0, "text": "合って" },
+              "explanation": "抱き合う（だきあう）= to embrace each other / hug each other."
+            }
+          ]
+        },
+        {
+          "title": "問題5",
+          "mondaiHeader": "問題5 ＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "<u>やがて</u>人間が他の星に住む時代が来るだろう。",
+              "options": ["たぶん", "かならず", "時間が経てば", "場合によっては"],
+              "correctOption": { "index": 2, "text": "時間が経てば" },
+              "explanation": "やがて = before long / in time / eventually (時間が経てばいつか)."
+            },
+            {
+              "questionText": "暗い道の先に<u>ぼんやりと</u>光が見えた。",
+              "options": ["明るい", "とても小さい", "ぴかぴかした", "はっきりしない"],
+              "correctOption": { "index": 3, "text": "はっきりしない" },
+              "explanation": "ぼんやり = dimly / hazily / vaguely (はっきりしない)."
+            },
+            {
+              "questionText": "古いおもちゃを<u>コレクションしている</u>。",
+              "options": ["集めて", "飾って", "捨てて", "直して"],
+              "correctOption": { "index": 0, "text": "集めて" },
+              "explanation": "コレクションする = to collect (集める)."
+            }
+          ]
+        },
+        {
+          "title": "問題6",
+          "mondaiHeader": "問題6 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "passageText": "",
+          "questions": [
+            {
+              "questionText": "むしろ",
+              "options": [
+                "注意されて、悲しいというよりむしろ嬉しかった。",
+                "彼は以前から足が速かったが、練習してむしろ速くなった。",
+                "父からは反対されているが、むしろ私はこの大学に進みたい。",
+                "次回の会議は来週の水曜日です。むしろ、資料は持参してください。"
+              ],
+              "correctOption": { "index": 0, "text": "注意されて、悲しいというよりむしろ嬉しかった。" },
+              "explanation": "むしろ = rather / if anything. Used to contrast: 'rather than sad, I was happy'. Options 2/3/4 misuse it."
+            },
+            {
+              "questionText": "発生",
+              "options": [
+                "隣の町に大きなデパートが発生した。",
+                "選挙の結果、新しい市長が発生した。",
+                "初めての孫が発生したときは、本当に嬉しかった。",
+                "火災が発生したときは、非常口から逃げてください。"
+              ],
+              "correctOption": { "index": 3, "text": "火災が発生したときは、非常口から逃げてください。" },
+              "explanation": "発生（はっせい）= occurrence / outbreak. Used for incidents, disasters, problems. Not for births (誕生) or elections."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
