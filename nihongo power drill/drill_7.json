@@ -1,0 +1,232 @@
+{
+  "id": "chapter-7",
+  "title": "第７回",
+  "passages": [
+    {
+      "id": "grammar-7-mondai1",
+      "title": "問題1",
+      "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+      "questions": [
+        {
+          "id": "g7-m1-q1",
+          "questionText": "問題はすべて解決しました。もう何も心配する（　）。",
+          "options": [
+            "ことはありません",
+            "わけはありません",
+            "ことではありません",
+            "わけにはいきません"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g7-m1-q2",
+          "questionText": "この事件（　）情報をお持ちの方は、警察にご連絡ください。",
+          "options": [
+            "における",
+            "に応じた",
+            "に関する",
+            "に際して"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "g7-m1-q3",
+          "questionText": "会長が（　）とたん、会場から大きな拍手がおきた。",
+          "options": [
+            "話しおえた",
+            "話していた",
+            "話し続けた",
+            "話してきた"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g7-m1-q4",
+          "questionText": "A: コンビニに行ってくる。\nB: それなら（　）飲み物を買ってきて。",
+          "options": [
+            "かわりに",
+            "ついでに",
+            "ところで",
+            "おかげで"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g7-m1-q5",
+          "questionText": "みんなの前で転んでしまい、その場から（　）くらい恥ずかしかった。",
+          "options": [
+            "逃げない",
+            "逃げ切る",
+            "逃げ出したい",
+            "逃げたがる"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "g7-m1-q6",
+          "questionText": "窓を開け（　）寝ていたら、部屋の中に虫が入ってきた。",
+          "options": [
+            "しだい",
+            "ながら",
+            "っぱなしで",
+            "ようとして"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "g7-m1-q7",
+          "questionText": "そんな小さい子に一人（　）で留守番をさせるなんて危ない。",
+          "options": [
+            "きり",
+            "のみ",
+            "かぎり",
+            "ばかり"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g7-m1-q8",
+          "questionText": "私が病気になると、母はいつもスープを作って（　）。",
+          "options": [
+            "くれたものだ",
+            "あげたものだ",
+            "あげたことだ",
+            "くれたことだ"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g7-m1-q9",
+          "questionText": "パソコンの調子が悪い（　）、仕事がなかなか進まない。",
+          "options": [
+            "ところ",
+            "せいで",
+            "かわりに",
+            "ばかりで"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g7-m1-q10",
+          "questionText": "古くてきず（　）だが、私はこのかばんが気に入っている。",
+          "options": [
+            "がち",
+            "ぎみ",
+            "だけ",
+            "だらけ"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "grammar-7-mondai2",
+      "title": "問題2",
+      "mondaiHeader": "つぎの文の　★　に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+      "questions": [
+        {
+          "id": "g7-m2-q1",
+          "questionText": "今の前田さんの ＿＿ ＿＿ ★ ＿＿ 手をあげてください。",
+          "options": [
+            "意見",
+            "あれば",
+            "質問が",
+            "に対して"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "g7-m2-q2",
+          "questionText": "最近の男性は掃除や洗濯 ＿＿ ＿＿ ★ ＿＿ だってやりますよ。",
+          "options": [
+            "は",
+            "料理や",
+            "子育て",
+            "もちろん"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g7-m2-q3",
+          "questionText": "この子はまだ立つ ＿＿ ＿＿ ★ ＿＿ わけがないでしょう。",
+          "options": [
+            "のに",
+            "歩ける",
+            "できない",
+            "ことさえ"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g7-m2-q4",
+          "questionText": "この駐車場の料金は、24時間 ＿＿ ＿＿ ★ ＿＿ 800円です。",
+          "options": [
+            "以内",
+            "であれば",
+            "利用時間",
+            "にかかわらず"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "grammar-7-mondai3",
+      "title": "問題3",
+      "mondaiHeader": "つぎの文章を読んで、[ 1 ]から[ 3 ]の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+      "passageText": "日本は平均寿命の長い国として知られています。男性は80歳近く、女性は85歳に [ 1 ] としています。この平均寿命という考え方は生き物だけではなく、企業にもあります。これは、企業が設立されてから倒産するまでの年数のことで、ある調査によると、日本の企業の平均寿命は約35年だそうです。\n\nでは、どのような企業が長生きできるのでしょうか。\nまず、技術力があること。そして、世の中の変化に合わせて対応できることが重要です。「社会の中で会社がどうある [ 2 ] か」をきちんと考えている企業は、社会の変化に遅れずに対応できるでしょう。「社会の中でどう生きるか」を考えていかなければならないのは、人 [ 3-a ] 企業 [ 3-b ] 同じだと言えるようです。",
+      "questions": [
+        {
+          "id": "g7-m3-q1",
+          "questionText": "[ 1 ]",
+          "options": [
+            "近い",
+            "近づく",
+            "近づこう",
+            "近くになる"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "g7-m3-q2",
+          "questionText": "[ 2 ]",
+          "options": [
+            "こと",
+            "ため",
+            "べき",
+            "まま"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "g7-m3-q3",
+          "questionText": "[ 3 ]",
+          "options": [
+            "a と / b が",
+            "a が / b と",
+            "a に / b に",
+            "a も / b も"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

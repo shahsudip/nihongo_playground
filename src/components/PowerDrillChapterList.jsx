@@ -8,26 +8,50 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
 
   // Filter chapters by section prefix (vocab or grammar)
   const filteredChapters = selectedSection
-    ? chapters.filter(ch => ch.id.startsWith(selectedSection))
+    ? chapters.filter(ch => {
+        if (selectedSection === 'vocab') {
+          return ch.id.startsWith('vocab') || ch.id.startsWith('training');
+        }
+        if (selectedSection === 'grammar') {
+          return ch.id.startsWith('grammar');
+        }
+        return ch.id.startsWith(selectedSection);
+      })
     : chapters;
 
-  // Sort filtered chapters numerically (vocab-1, vocab-2, vocab-10...)
+  // Sort filtered chapters numerically
   filteredChapters.sort((a, b) => {
-    const numA = parseInt(a.id.split('-')[1]) || 0;
-    const numB = parseInt(b.id.split('-')[1]) || 0;
-    if (numA !== numB) {
-      return numA - numB;
-    }
-    const isRevA = a.id.includes('review') ? 1 : 0;
-    const isRevB = b.id.includes('review') ? 1 : 0;
-    return isRevA - isRevB;
+    const getSortVal = (id) => {
+      const parts = id.split('-');
+      if (id.includes('training')) {
+        const tNum = id.startsWith('training') ? parseInt(parts[1]) : parseInt(parts[2]);
+        return (tNum || 1) * 5 + 0.1; // e.g. training 3 -> 15.1
+      }
+      if (id.includes('review')) {
+        return (parseInt(parts[1]) || 0) + 0.1; // vocab-5-review-1 -> 5.1
+      }
+      return parseInt(parts[1]) || 0; // vocab-1 or grammar-1 or chapter-7 -> numeric part
+    };
+    
+    return getSortVal(a.id) - getSortVal(b.id);
   });
 
   // Group chapters by block of 5
   const getGroupInfo = (chapterId) => {
     const parts = chapterId.split('-');
-    const num = parseInt(parts[1]) || 0;
-    return Math.ceil(num / 5);
+    let num = parseInt(parts[1]) || 0;
+    
+    if (chapterId.includes('training')) {
+      if (chapterId.startsWith('training')) {
+        num = (parseInt(parts[1]) || 1) * 5; 
+      } else {
+        num = (parseInt(parts[2]) || 1) * 5;
+      }
+    } else if (chapterId.includes('review')) {
+       num = parseInt(parts[1]) || 0;
+    }
+    
+    return Math.ceil(num / 5) || 1;
   };
 
   const groups = {};
@@ -154,8 +178,18 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
                       const userProgress = history[chapter.id];
                       const isMastered = userProgress && userProgress.status === 'mastered';
                       const isIncomplete = userProgress && userProgress.status === 'incomplete';
+                      const isTraining = chapter.id.includes('training');
                       const isReview = chapter.id.includes('review');
-                      const drillNum = isReview ? 'R' : chapter.id.split('-')[1];
+                      
+                      let drillNum = '';
+                      if (isReview) {
+                        drillNum = 'R';
+                      } else if (isTraining) {
+                        const parts = chapter.id.split('-');
+                        drillNum = `T${chapter.id.startsWith('training') ? parts[1] : parts[2]}`;
+                      } else {
+                        drillNum = chapter.id.split('-')[1];
+                      }
 
                       return (
                         <span
@@ -167,7 +201,7 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
                                 ? 'bg-amber-500/15 border-amber-500/40 text-amber-400'
                                 : 'bg-[var(--color-bg-primary)] border-[var(--color-border)] text-[var(--color-text-muted)]'
                           }`}
-                          title={isReview ? 'Review' : `Drill ${drillNum}`}
+                          title={isReview ? 'Review' : isTraining ? `Training ${drillNum.replace('T', '')}` : `Drill ${drillNum}`}
                         >
                           {drillNum}
                         </span>
@@ -213,10 +247,18 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
               const userProgress = history[chapter.id];
               const isMastered = userProgress && userProgress.status === 'mastered';
               const isIncomplete = userProgress && userProgress.status === 'incomplete';
+              const isTraining = chapter.id.includes('training');
               const isReview = chapter.id.includes('review');
-              const drillNum = isReview
-                ? `R${chapter.id.split('-')[3] || '1'}`
-                : chapter.id.split('-')[1] || chapter.id;
+              
+              let drillNum = '';
+              if (isReview) {
+                drillNum = `R${chapter.id.split('-')[3] || '1'}`;
+              } else if (isTraining) {
+                const parts = chapter.id.split('-');
+                drillNum = chapter.id.startsWith('training') ? parts[1] : parts[2];
+              } else {
+                drillNum = chapter.id.split('-')[1] || chapter.id;
+              }
 
               return (
                 <Link
@@ -231,7 +273,7 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
                   }`}
                 >
                   <span className="text-[10px] font-bold text-[var(--color-text-muted)] tracking-wider uppercase">
-                    {isReview ? 'Review' : 'Drill'}
+                    {isReview ? 'Review' : isTraining ? 'Training' : 'Drill'}
                   </span>
                   <span className="text-3xl font-black text-[var(--color-text-primary)] my-1.5">{drillNum}</span>
                   <span className="text-[11px] font-semibold">

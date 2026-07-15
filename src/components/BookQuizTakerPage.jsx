@@ -87,7 +87,7 @@ const BookQuizTakerPage = () => {
               passageLayout: passage.passageLayout || "",
               imageSrc: passage.imageSrc || "",
               passageTitle: passage.title || "Passage",
-              mondaiHeader: passage.mondaiHeader || "",
+              mondaiHeader: passage.mondaiHeader || passage.instruction || "",
                 passageNotes: passage.passageNotes || "",
               globalQIndex: gIndex++
             });
@@ -117,8 +117,11 @@ const BookQuizTakerPage = () => {
       let correctCount = 0;
       Object.keys(answers).forEach(qId => {
         const q = questions.find(qu => qu.id === qId);
-        if (q && answers[qId] === q.correctOption.text) {
-          correctCount++;
+        if (q) {
+          const correctText = q.correctOption ? q.correctOption.text : (typeof q.options[q.correctIndex] === 'object' ? q.options[q.correctIndex].text : q.options[q.correctIndex]);
+          if (answers[qId] === correctText) {
+            correctCount++;
+          }
         }
       });
 
@@ -165,8 +168,11 @@ const BookQuizTakerPage = () => {
   let correctCount = 0;
   Object.keys(answers).forEach(qId => {
     const q = questions.find(qu => qu.id === qId);
-    if (q && answers[qId] === q.correctOption.text) {
-      correctCount++;
+    if (q) {
+      const correctText = q.correctOption ? q.correctOption.text : (typeof q.options[q.correctIndex] === 'object' ? q.options[q.correctIndex].text : q.options[q.correctIndex]);
+      if (answers[qId] === correctText) {
+        correctCount++;
+      }
     }
   });
 
@@ -314,16 +320,17 @@ const BookQuizTakerPage = () => {
 
         <div className="space-y-3 mb-8">
           {currentQ.options.map((opt, optIdx) => {
-            const cleanOpt = opt.replace(/\*\*/g, '');
+            const optText = typeof opt === 'object' && opt !== null ? opt.text : opt;
+            const cleanOpt = optText ? optText.replace(/\*\*/g, '') : '';
             return (
               <OptionButton 
                 key={optIdx}
                 text={cleanOpt}
                 index={optIdx}
-                isSelected={selectedAnswer === opt}
-                isCorrect={currentQ.correctOption.text === opt}
+                isSelected={selectedAnswer === optText}
+                isCorrect={currentQ.correctOption ? currentQ.correctOption.text === optText : currentQ.correctIndex === optIdx}
                 feedbackMode={feedbackMode}
-                onClick={() => handleOptionSelect(currentQ.id, opt)}
+                onClick={() => handleOptionSelect(currentQ.id, optText)}
                 disabled={feedbackMode === 'Immediate' && selectedAnswer !== undefined}
               />
             );
@@ -356,7 +363,10 @@ const BookQuizTakerPage = () => {
         currentIndex={currentIndex}
         setCurrentIndex={setCurrentIndex}
         feedbackMode={feedbackMode}
-        checkIsCorrect={(q, ans) => ans[q.id] === q.correctOption.text}
+        checkIsCorrect={(q, ans) => {
+          const correctText = q.correctOption ? q.correctOption.text : q.options[q.correctIndex];
+          return ans[q.id] === correctText;
+        }}
       />
     </div>
   );

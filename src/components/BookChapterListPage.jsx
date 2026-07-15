@@ -129,7 +129,13 @@ const BookChapterListPage = () => {
           <h1 className="book-detail-title">{book.title}</h1>
           <p className="book-detail-desc">{book.description}</p>
           <div className="book-detail-meta">
-            <span>{chapters.length} Lessons</span>
+            {isPowerDrill ? (
+              <span>
+                {chapters.filter(c => c.id.startsWith('vocab') || c.id.startsWith('training')).length} Vocab Drills &amp; {chapters.filter(c => c.id.startsWith('grammar')).length} Grammar Drills
+              </span>
+            ) : (
+              <span>{chapters.length} Lessons</span>
+            )}
           </div>
         </div>
       </div>

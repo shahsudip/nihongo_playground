@@ -1,0 +1,232 @@
+{
+  "id": "chapter-8",
+  "title": "第８回",
+  "passages": [
+    {
+      "id": "grammar-8-mondai1",
+      "title": "問題1",
+      "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+      "questions": [
+        {
+          "id": "g8-m1-q1",
+          "questionText": "このゴミ箱には、燃えるゴミ以外の物は捨てない（　）。",
+          "options": [
+            "ことに",
+            "ものに",
+            "ように",
+            "わけに"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "g8-m1-q2",
+          "questionText": "誰が何と（　）、うちの犬が一番かわいい。",
+          "options": [
+            "言うと",
+            "言ったら",
+            "言っても",
+            "言うなら"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "g8-m1-q3",
+          "questionText": "前の車が急に止まったから、急いでブレーキを踏んだ。もう少しで（　）だった。",
+          "options": [
+            "ぶつかるよう",
+            "ぶつかったよう",
+            "ぶつかるところ",
+            "ぶつかったところ"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "g8-m1-q4",
+          "questionText": "昨日のカラオケ、松本先輩が来ていたのなら、私も行けば（　）。",
+          "options": [
+            "いいのに",
+            "よかった",
+            "いいだろう",
+            "よかっただろう"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g8-m1-q5",
+          "questionText": "そのボランティアに参加したのは学生（　）ではなく、社会人も大勢いた。",
+          "options": [
+            "だらけ",
+            "っきり",
+            "ばかり",
+            "だけしか"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "g8-m1-q6",
+          "questionText": "私の父はすばらしい社長だったが、父親（　）すばらしかったとは言えない。",
+          "options": [
+            "として",
+            "とすれば",
+            "になると",
+            "というなら"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g8-m1-q7",
+          "questionText": "A: うちにはめずらしい金魚がいるんですよ。\nB: へえ、今度ぜひ見に（　）ください。",
+          "options": [
+            "行って",
+            "行かせて",
+            "行かれて",
+            "行ってみて"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g8-m1-q8",
+          "questionText": "昨晩は疲れていたから、顔も（　）寝てしまった。",
+          "options": [
+            "洗わなく",
+            "洗わずに",
+            "洗わないと",
+            "洗わなくても"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g8-m1-q9",
+          "questionText": "今の給料で、そんなに高い家賃の部屋に住める（　）。",
+          "options": [
+            "ことか",
+            "わけか",
+            "わけがない",
+            "こともない"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "g8-m1-q10",
+          "questionText": "天気が悪いときは、ジョギング（　）家で体操をしています。",
+          "options": [
+            "したわりに",
+            "したくせに",
+            "するかわりに",
+            "する一方"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "grammar-8-mondai2",
+      "title": "問題2",
+      "mondaiHeader": "つぎの文の　★　に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+      "questions": [
+        {
+          "id": "g8-m2-q1",
+          "questionText": "みんなが ＿＿ ＿＿ ★ ＿＿ より早く終わってよかった。",
+          "options": [
+            "くれた",
+            "思った",
+            "おかげで",
+            "手伝って"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "g8-m2-q2",
+          "questionText": "どんなに苦しくても、彼なら最後まで ＿＿ ＿＿ ★ ＿＿ いる。",
+          "options": [
+            "に",
+            "ぬく",
+            "やり",
+            "決まって"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g8-m2-q3",
+          "questionText": "見てはいけないと言われたが、＿＿ ＿＿ ★ ＿＿ ますます見たくなる。",
+          "options": [
+            "と",
+            "なと",
+            "見る",
+            "言われる"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "g8-m2-q4",
+          "questionText": "必ずしも強いチーム ＿＿ ＿＿ ★ ＿＿ のがスポーツだ。",
+          "options": [
+            "が",
+            "とは",
+            "優勝する",
+            "かぎらない"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "id": "grammar-8-mondai3",
+      "title": "問題3",
+      "mondaiHeader": "つぎの文章を読んで、[ 1 ]から[ 3 ]の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+      "passageText": "はじめまして。ジェフ・スミスと申します。\n昨年の7月にアメリカの大学を卒業し、日本に [ 1 ] 。現在、新宿大学の修士課程に在籍しております。\nこの英会話講師のアルバイトに応募したきっかけは、先輩からの紹介です。私の専門は言語学ですので、その知識が生かせる [ 2 ] 、と思い、応募いたしました。文法にくわしいので、英語はもちろん、日本語での文法の説明もできます。\n勤務時間は、月・水・金の夕方5時以降を希望します。土日はときどき学校の用事が入ることがありますが、事前にご連絡 [ 3 ] 対応いたします。\nどうぞよろしくお願いいたします。",
+      "questions": [
+        {
+          "id": "g8-m3-q1",
+          "questionText": "[ 1 ]",
+          "options": [
+            "まいりました",
+            "うかがいました",
+            "たずねました",
+            "いらっしゃいました"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g8-m3-q2",
+          "questionText": "[ 2 ]",
+          "options": [
+            "から",
+            "とか",
+            "なんて",
+            "のでは"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "g8-m3-q3",
+          "questionText": "[ 3 ]",
+          "options": [
+            "について",
+            "にもとづいて",
+            "をいただければ",
+            "をくださると"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

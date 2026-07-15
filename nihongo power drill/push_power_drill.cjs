@@ -28,6 +28,7 @@ initializeApp({
 });
 
 const db = getFirestore();
+db.settings({ ignoreUndefinedProperties: true });
 console.log('Firestore initialized successfully.');
 
 // 2. Read the generated JSON file
@@ -80,13 +81,7 @@ async function uploadBook() {
       console.log(`[${i + 1}/${book.chapters.length}] Uploading chapter "${chapter.id}" (${chapter.title})...`);
       
       const chapterDocRef = chaptersColRef.doc(chapter.id);
-      await chapterDocRef.set({
-        id: chapter.id,
-        title: chapter.title,
-        type: chapter.type || "questions-only",
-        description: chapter.description || `${chapter.title} practice drills.`,
-        passages: chapter.passages
-      }, { merge: true });
+      await chapterDocRef.set(chapter, { merge: true });
     }
 
     console.log('\n🎉 SUCCESS: Book data uploaded and saved to Firestore!');

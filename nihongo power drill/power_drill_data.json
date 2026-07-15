@@ -10167,403 +10167,3416 @@
     },
     {
       "id": "grammar-1",
-      "title": "第1回（文法）",
+      "title": "第1回",
       "type": "questions-only",
-      "description": "N3文法ドリル第1回：文の文法（問題1）、並べ替え（問題2）、文章の文法（問題3）",
+      "description": "N3文法ドリル第1回：文の文法、並べ替え、文章の文法",
       "passages": [
         {
           "id": "grammar-1-mondai1",
           "title": "問題1",
-          "mondaiHeader": "問題1 つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "passageText": "",
           "questions": [
             {
-              "questionText": "この授業は、必ず筆者がボールペンで記入する（　）。",
-              "options": ["こと", "もの", "ところ", "ものか"],
-              "correctOption": { "index": 0, "text": "こと" },
-              "explanation": "「こと」is used to express a rule or requirement: 'must be written with a ballpoint pen'."
+              "id": "g1-m1-q1",
+              "questionText": "この用紙は、必ず黒か青のペンで記入する（　）。",
+              "options": [
+                "こと",
+                "もの",
+                "ことか",
+                "ものか"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
             },
             {
-              "questionText": "あれ！冷たいジュースがない。ちょっとここに（　）のに。",
-              "options": ["置いといた", "置いてみた", "置いてきた", "置いちゃった"],
-              "correctOption": { "index": 0, "text": "置いといた" },
-              "explanation": "「置いといた」(～ておいた) expresses something done in preparation: 'I had put it here'."
+              "id": "g1-m1-q2",
+              "questionText": "あれ？　私のジュースがない。さっきここに（　）のに。",
+              "options": [
+                "置いといた",
+                "置いてみた",
+                "置きかけた",
+                "置いちゃった"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
             },
             {
-              "questionText": "そのほなら、ここから先を（　）書くと短いますよ。",
-              "options": ["どんと", "ごとに", "くらいに", "くらいで"],
-              "correctOption": { "index": 2, "text": "くらいに" },
-              "explanation": "「くらいに」expresses degree/extent of action."
+              "id": "g1-m1-q3",
+              "questionText": "その店なら、ここから５分（　）着くと思いますよ。",
+              "options": [
+                "ごろで",
+                "ごろに",
+                "ぐらいで",
+                "ぐらいに"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
             },
             {
-              "questionText": "アプロン（　）据て、かせを引いてしまった。",
-              "options": ["ついたまま", "つながら", "つけたまま", "つけながら"],
-              "correctOption": { "index": 2, "text": "つけたまま" },
-              "explanation": "「～たまま」means 'leaving something in a certain state': left the apron on."
+              "id": "g1-m1-q4",
+              "questionText": "エアコンを（　）寝て、かぜをひいてしまった。",
+              "options": [
+                "ついたまま",
+                "つきながら",
+                "つけたまま",
+                "つけながら"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
             },
             {
-              "questionText": "子どものころ、毎日音楽を聴く（　）いつも私はみかんやりを買ってきてくれた。",
-              "options": ["なら", "たびに", "きとこ", "ついには"],
-              "correctOption": { "index": 1, "text": "たびに" },
-              "explanation": "「たびに」means 'every time / whenever': every time she went out."
+              "id": "g1-m1-q5",
+              "questionText": "子どものころ、父は出張に行く（　）いつも私におみやげを買ってきてくれた。",
+              "options": [
+                "なら",
+                "たびに",
+                "ところ",
+                "ついでに"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
             },
             {
-              "questionText": "子どものころ、生徒の依頼に答してくれた（　）。",
-              "options": ["病いにとたら", "落き合たら", "落き合がよん", "病いにとしたら"],
-              "correctOption": { "index": 3, "text": "病いにとしたら" },
-              "explanation": "「～としたら」means 'if it were the case that'."
+              "id": "g1-m1-q6",
+              "questionText": "申込書を（　）、受付の係員に渡してください。",
+              "options": [
+                "書いたとたん",
+                "書きおえたら",
+                "書きだしたら",
+                "書いたとしたら"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
             },
             {
-              "questionText": "今日の夏ら考から観に（　）の組を考え上る人と会う。",
-              "options": ["まで", "きかって", "のたって", "やたって"],
-              "correctOption": { "index": 0, "text": "まで" },
-              "explanation": "「まで」marks extent or limit of action."
+              "id": "g1-m1-q7",
+              "questionText": "今日の午後から明日に（　）台風が日本を通過するらしい。",
+              "options": [
+                "まで",
+                "かけて",
+                "つれて",
+                "わたって"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
             },
             {
-              "questionText": "人きもの責任することはがやずしいいい（　）。",
-              "options": ["ともはあない", "ではあない", "ともはある", "ははあない"],
-              "correctOption": { "index": 1, "text": "ではあない" },
-              "explanation": "「ではない」negation pattern used for emphasis."
+              "id": "g1-m1-q8",
+              "questionText": "あの二人の結婚が本当だと（　）、大ニュースだ。",
+              "options": [
+                "いうと",
+                "いえば",
+                "したら",
+                "しても"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
             },
             {
-              "questionText": "友・田前見く（　）何ですか。",
-              "options": ["といえば", "としては", "とうるご", "と言え"],
-              "correctOption": { "index": 0, "text": "といえば" },
-              "explanation": "「といえば」means 'speaking of / if you mention'."
+              "id": "g1-m1-q9",
+              "questionText": "A: 春に咲く花（　）何ですか。\nB: やっぱり桜でしょう。",
+              "options": [
+                "といえば",
+                "としては",
+                "とすると",
+                "とすれば"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
             },
             {
-              "questionText": "らっき友追加が話いたんだが、期日、学校はテレビの取材がきる（　）。",
-              "options": ["かしな", "もんな", "んだって", "んかって"],
-              "correctOption": { "index": 2, "text": "んだって" },
-              "explanation": "「んだって」(のだって) conveys hearsay: 'I heard that...'."
+              "id": "g1-m1-q10",
+              "questionText": "さっき先生に聞いたんだけど、明日、学校にテレビの取材が来る（　）。",
+              "options": [
+                "かしら",
+                "もんね",
+                "んだっけ",
+                "んだって"
+              ],
+              "correctIndex": 3,
+              "explanation": ""
             }
-          ]
+          ],
+          "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
         },
         {
           "id": "grammar-1-mondai2",
           "title": "問題2",
-          "mondaiHeader": "問題2 つぎの文の ★ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-          "passageText": "",
           "questions": [
             {
-              "questionText": "私たちは ＿＿　＿＿　★　＿＿ 大型犬に見せたかった。",
-              "options": ["の", "観球", "なって", "はめで"],
-              "correctOption": { "index": 1, "text": "観球" },
-              "explanation": "The ★ position is occupied by 「観球」in the correct order."
+              "id": "g1-m2-q1",
+              "questionText": "病気に ＿＿　＿＿　★　＿＿ 大切さに気がついた。",
+              "options": [
+                "の",
+                "健康",
+                "なって",
+                "はじめて"
+              ],
+              "correctIndex": 1,
+              "explanation": "病気になってはじめて健康の大切さに気がついた。 -> 3 4 2 1"
             },
             {
-              "questionText": "いくら　＿＿　★　＿＿　おわかりないのです。",
-              "options": ["のは", "こと", "といっ", "わからない"],
-              "correctOption": { "index": 2, "text": "といっ" },
-              "explanation": "「いくら～といっても」means 'no matter how much'. ★ = といっ."
+              "id": "g1-m2-q2",
+              "questionText": "彼が行けないと言っている ＿＿　＿＿　★　＿＿ だろう。",
+              "options": [
+                "のは",
+                "こと",
+                "という",
+                "行きたくない"
+              ],
+              "correctIndex": 2,
+              "explanation": "彼が行けないと言っているのは行きたくないということだろう。 -> 1 4 3 2"
             },
             {
-              "questionText": "いくら　＿＿　★　＿＿。",
-              "options": ["いいや", "みても", "考えて", "とうちら"],
-              "correctOption": { "index": 1, "text": "みても" },
-              "explanation": "「いくら考えてみても」means 'no matter how much I think about it'. ★ = みても."
+              "id": "g1-m2-q3",
+              "questionText": "いくら ＿＿　＿＿　★　＿＿ わからないのです。",
+              "options": [
+                "いいか",
+                "みても",
+                "考えて",
+                "どうしたら"
+              ],
+              "correctIndex": 3,
+              "explanation": "いくら考えてみてもどうしたらいいかわからないのです。 -> 3 2 4 1"
             },
             {
-              "questionText": "行方　＿＿　★　＿＿ 高半で。",
-              "options": ["行く", "ように", "前付仕", "高半で"],
-              "correctOption": { "index": 0, "text": "行く" },
-              "explanation": "★ = 行く, forming a direction + intention pattern."
+              "id": "g1-m2-q4",
+              "questionText": "お金を下ろしたいから、駅に ＿＿　＿＿　★　＿＿ もいい？",
+              "options": [
+                "行く",
+                "よって",
+                "銀行に",
+                "途中で"
+              ],
+              "correctIndex": 2,
+              "explanation": "駅に行く途中で銀行によってもいい？ -> 1 4 3 2"
             }
-          ]
+          ],
+          "mondaiHeader": "つぎの文の ★ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
         },
         {
           "id": "grammar-1-mondai3",
           "title": "問題3",
-          "mondaiHeader": "問題3 つぎの文章を読んで、【１】から【３】の中に入れる最もよいものを、1・2・3・4から一つえらびなさい。",
-          "passageText": "日本の苗字の種類は、少なくとも十数万以上もあると言われています。\n【１】普通のですが、日本人でも、人の名前を書違えて失礼したり、読違えて恥ずかしい思いをしたりすることがあります。\n\nたとえば、「海道」という名字は、「かいどう」「かいたう」「みなみどう」などいろいろな読み方ができます。また【２】「洋」を「ひろ」とも「よう」とも読みます。\nそれから、初めて会った人と自己紹介するときは、読みにくい名前のときは【３】のように話して、名前の正しい読み方を読み手に確認してもらいましょう。",
+          "passageText": "日本の名字の種類は、少なくとも十数万以上あると言われています。<br><span class=\"border border-[var(--color-text-primary)] px-2 py-0.5 mx-1 font-bold inline-block\"> 1 </span>多いのですから、日本人でも、人の名前を間違えて読んだり、間違えて覚えてしまうことがよくあります。<br>たとえば、「角田」という名字は、「かくた」「かどた」「すみだ」「つのだ」など、読み方がいくつもあります。また、反対に、同じ「いとう」でも、「伊藤」と書く人もいれば「伊東」と書く人も<span class=\"border border-[var(--color-text-primary)] px-2 py-0.5 mx-1 font-bold inline-block\"> 2 </span>、同じ読み方でも漢字が違うという例はたくさんあります。<br>ですから、初めて会った人と自己紹介をしたときは、「漢字でどう書きますか」「何と<span class=\"border border-[var(--color-text-primary)] px-2 py-0.5 mx-1 font-bold inline-block\"> 3 </span>いいですか」のように聞いて、名前の正しい読み方や漢字を確認しましょう。このように聞くのは決して失礼なことではありません。",
+          "passageLayout": "html",
           "questions": [
             {
+              "id": "g1-m3-q1",
               "questionText": "【１】に入る最もよいものを選びなさい。",
-              "options": ["これば", "こだけ", "これだけ", "そかばかり"],
-              "correctOption": { "index": 2, "text": "これだけ" },
-              "explanation": "「これだけ」means 'this many / this amount', fitting the context of the large number of family names."
+              "options": [
+                "これしか",
+                "これだけ",
+                "これまで",
+                "こればかり"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
             },
             {
+              "id": "g1-m3-q2",
               "questionText": "【２】に入る最もよいものを選びなさい。",
-              "options": ["いるほど", "いように", "いたかのに", "いたうに"],
-              "correctOption": { "index": 1, "text": "いように" },
-              "explanation": "「～ように」expresses manner: 'as in the case of'."
+              "options": [
+                "いるほどに",
+                "いるように",
+                "いたために",
+                "いたとおり"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
             },
             {
+              "id": "g1-m3-q3",
               "questionText": "【３】に入る最もよいものを選びなさい。",
-              "options": ["お読みしたら", "お読みになったら", "お読みなさったら", "お読みになっては"],
-              "correctOption": { "index": 1, "text": "お読みになったら" },
-              "explanation": "「お読みになったら」is the respectful (尊敬語) form, appropriate for asking someone to confirm."
+              "options": [
+                "お読みしたら",
+                "お読みしても",
+                "お読みになったら",
+                "お読みになっても"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
             }
-          ]
+          ],
+          "mondaiHeader": "つぎの文章を読んで、【１】から【３】の中に入れる最もよいものを、1・2・3・4から一つえらびなさい。"
         }
       ]
     },
     {
       "id": "grammar-2",
-      "title": "第2回（文法）",
+      "title": "第2回",
       "type": "questions-only",
-      "description": "N3文法ドリル第2回：文の文法（問題1）、並べ替え（問題2）、文章の文法（問題3）",
+      "description": "N3文法ドリル第2回：文の文法、並べ替え、文章の文法",
       "passages": [
         {
           "id": "grammar-2-mondai1",
           "title": "問題1",
-          "mondaiHeader": "問題1 つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "passageText": "",
           "questions": [
             {
-              "questionText": "先週の天気（　）：菜国は、千葉以上に大きかった。",
-              "options": ["とすると", "なら", "くても", "すると"],
-              "correctOption": { "index": 1, "text": "なら" },
-              "explanation": "「なら」(conditional) means 'if / given that': speaking of last week's weather..."
+              "id": "g2-m1-q1",
+              "questionText": "先週の大雪（　）被害は、予想以上に大きかった。",
+              "options": [
+                "とする",
+                "となる",
+                "による",
+                "になる"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
             },
             {
-              "questionText": "たとしましたら問題が（　）、絶対に会いに行きます。",
-              "options": ["あったら", "あくても", "あることとも", "ないとすると"],
-              "correctOption": { "index": 0, "text": "あったら" },
-              "explanation": "「あったら」(～たら conditional) means 'if there were/are'."
+              "id": "g2-m1-q2",
+              "questionText": "たとえ少ししか時間が（　）、絶対に会いに行きます。",
+              "options": [
+                "あったら",
+                "なくても",
+                "あるとしたら",
+                "ないとすると"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
             },
             {
+              "id": "g2-m1-q3",
               "questionText": "せっかくのチャンスなのだから、ぜひやって（　）。",
-              "options": ["みなはず", "みなはずだ", "みなきもう", "みたくはない"],
-              "correctOption": { "index": 1, "text": "みなはずだ" },
-              "explanation": "「みなはずだ」conveys that one should try, given the rare opportunity."
+              "options": [
+                "みるべきだ",
+                "みるはずだ",
+                "みるだろう",
+                "みたくはない"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
             },
             {
-              "questionText": "かえさんと、ここで（　）いにかいっていてなんですか。",
-              "options": ["待ちなさて", "待たれて", "待ちあれて", "他たなれて"],
-              "correctOption": { "index": 1, "text": "待たれて" },
-              "explanation": "「待たれて」is the passive/respectful form of waiting."
+              "id": "g2-m1-q4",
+              "questionText": "すみませんが、ここで（　）いただいてもいいですか。",
+              "options": [
+                "待たせて",
+                "待たれて",
+                "待たされて",
+                "待たせられて"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
             },
             {
-              "questionText": "これらの質がない（　）、あなたの市は指摘がっさと多いと言う形即がた。",
-              "options": ["ことだけ", "については", "ことに対して", "に対して"],
-              "correctOption": { "index": 1, "text": "については" },
-              "explanation": "「については」means 'regarding / concerning'."
+              "id": "g2-m1-q5",
+              "questionText": "こちらの店が安いの（　）、あちらの店は量が多いことで評判だ。",
+              "options": [
+                "において",
+                "によって",
+                "に対して",
+                "に関して"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
             },
             {
-              "questionText": "この小学校では、毎朝子どもたちに栄養を与える（　）をしているそうだ。",
-              "options": ["こと", "はず", "ため", "なか"],
-              "correctOption": { "index": 0, "text": "こと" },
-              "explanation": "「こと」nominalizes the verb, meaning 'the act of providing nutrition'."
+              "id": "g2-m1-q6",
+              "questionText": "この小学校では、毎朝子どもたちに新聞を読ませる（　）にしているそうだ。",
+              "options": [
+                "こと",
+                "はず",
+                "わけ",
+                "つもり"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
             },
             {
-              "questionText": "レストランに予約の確認をしたら（　）、もう予約が余分になかった。",
-              "options": ["なし", "のに", "かたわら", "きそ"],
-              "correctOption": { "index": 1, "text": "のに" },
-              "explanation": "「のに」expresses disappointment/contrast: 'even though I confirmed the reservation'."
+              "id": "g2-m1-q7",
+              "questionText": "レストランに予約の電話をした（　）、もう席がないと言われた。",
+              "options": [
+                "なら",
+                "ので",
+                "かわりに",
+                "ところ"
+              ],
+              "correctIndex": 3,
+              "explanation": ""
             },
             {
-              "questionText": "大人は「置いつくこい物があるからちょっと待っていて」と言って、コンビニに（　）。",
-              "options": ["入ったきた", "へり出した", "入っていった", "入りはじめた"],
-              "correctOption": { "index": 2, "text": "入っていった" },
-              "explanation": "「入っていった」means 'went into' (entering and moving away from speaker)."
+              "id": "g2-m1-q8",
+              "questionText": "大きな会社に就職することが必ずしもいい（　）。",
+              "options": [
+                "よりほかない",
+                "にちがいない",
+                "とはかぎらない",
+                "にほかならない"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
             },
             {
-              "questionText": "人きもちには漢を資源することはがやずしいいい（　）。",
-              "options": ["とはあない", "にはあない", "ともはあない", "にはあなあない"],
-              "correctOption": { "index": 1, "text": "にはあない" },
-              "explanation": "「にはあない」negative form for 'it is not necessarily the case'."
+              "id": "g2-m1-q9",
+              "questionText": "友人は「買いたい物があるからちょっと待ってて」と言って、コンビニに（　）。",
+              "options": [
+                "入ってきた",
+                "入りだした",
+                "入っていった",
+                "入りはじめた"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
             },
             {
-              "questionText": "ぜひ一度、故向の趣向や気逆に上方に遊びに（　）。",
-              "options": ["来てほしい", "来ちがない", "来てみてほしい", "来るようにしかい"],
-              "correctOption": { "index": 0, "text": "来てほしい" },
-              "explanation": "「来てほしい」means 'I want you to come': expressing desire for someone else to do something."
+              "id": "g2-m1-q10",
+              "questionText": "ぜひ一度、国の両親や友達に日本に遊びに（　）。",
+              "options": [
+                "来てほしい",
+                "来られたい",
+                "来られてほしい",
+                "来るようにしたい"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
             }
-          ]
+          ],
+          "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
         },
         {
           "id": "grammar-2-mondai2",
           "title": "問題2",
-          "mondaiHeader": "問題2 つぎの文の ★ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-          "passageText": "",
           "questions": [
             {
-              "questionText": "（　）人が ＿＿　★　＿＿ から、良いを待ちましょうとしてください。",
-              "options": ["まで", "新吐し", "おわれる", "狩って"],
-              "correctOption": { "index": 0, "text": "まで" },
-              "explanation": "★ = まで, marking the point until which to wait."
+              "id": "g2-m2-q1",
+              "questionText": "他の人が ＿＿　＿＿　★　＿＿ から、意見を言うようにしてください。",
+              "options": [
+                "まで",
+                "話し",
+                "終わる",
+                "待って"
+              ],
+              "correctIndex": 0,
+              "explanation": "他の人が話し終わるまで待ってから -> 2 3 1 4"
             },
             {
-              "questionText": "もし ＿＿　★　＿＿ 、在月使いに生ことになった。",
-              "options": ["のに", "うちに", "というった", "翌んでいる"],
-              "correctOption": { "index": 1, "text": "うちに" },
-              "explanation": "「うちに」means 'while / during'. ★ = うちに."
+              "id": "g2-m2-q2",
+              "questionText": "早く買っておけば ＿＿　＿＿　★　＿＿ 売り切れてしまった。",
+              "options": [
+                "のに",
+                "うちに",
+                "よかった",
+                "悩んでいる"
+              ],
+              "correctIndex": 3,
+              "explanation": "早く買っておけばよかったのに悩んでいるうちに売り切れてしまった。 -> 3 1 4 2"
             },
             {
-              "questionText": "この仕事は、やる気 ＿＿　★　＿＿ 職なのですか。",
-              "options": ["いいや", "みても", "えせて", "とうちら"],
-              "correctOption": { "index": 0, "text": "いいや" },
-              "explanation": "★ = いいや, forming a sentence about a job requiring motivation."
+              "id": "g2-m2-q3",
+              "questionText": "仕事が忙しすぎて、 ＿＿　＿＿　★　＿＿ ない。",
+              "options": [
+                "なんか",
+                "ひまは",
+                "温泉に",
+                "行っている"
+              ],
+              "correctIndex": 1,
+              "explanation": "温泉に行っているひまなんかない。 -> 3 4 2 1"
             },
             {
-              "questionText": "ピアノ ＿＿　★　＿＿ りけるなんで、なぞていてなんですか。",
-              "options": ["ひとり", "ように", "ほかり", "バイオリン"],
-              "correctOption": { "index": 3, "text": "バイオリン" },
-              "explanation": "★ = バイオリン, completing the comparison between piano and violin."
+              "id": "g2-m2-q4",
+              "questionText": "ピアノ ＿＿　＿＿　★　＿＿ ひけるなんて、すごいですね。",
+              "options": [
+                "も",
+                "でなく",
+                "ばかり",
+                "バイオリン"
+              ],
+              "correctIndex": 3,
+              "explanation": "ピアノばかりでなくバイオリンもひけるなんて -> 3 2 4 1"
             }
-          ]
+          ],
+          "mondaiHeader": "つぎの文の ★ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
         },
         {
           "id": "grammar-2-mondai3",
           "title": "問題3",
-          "mondaiHeader": "問題3 つぎの文章を読んで、【１】から【３】の中に入れる最もよいものを、1・2・3・4から一つえらびなさい。",
-          "passageText": "やせてくると、気持もすく楽になります。\nそれは、かせのいで少的の数的が落ちて、特他が変化しかわなくなってきているから、と言われています。しかし、実際には、草の数的が多どて、社会のいい方をとってできるくて、することになるかもしれません。\n\nたとえば、いつも草草に足しを向けて【１】と、なぜかストレスが解消されるような感じがします。また、草の植物の花々の中に、花の種類が多くなるほど花がきれいになるような感じがします。\nそれとも、花の数が多くなって【２】と、どが実のジュースなどの、環境が少し変わります。つまり、食べ物のおいしさには、悪気がさく少かわっていくということです。そして、最後には【３】いるとも言えます。",
+          "passageText": "かぜをひくと、料理がまずく感じられます。<br>それは、かぜのせいで舌の機能が落ちて、味が感じられなくなっているから、と思っていませんか。しかし、実際には、鼻の機能が落ちて、料理のいい香りをかぐことができない<span class=\"border border-[var(--color-text-primary)] px-2 py-0.5 mx-1 font-bold inline-block\"> 1 </span>味がわからなくなっているのです。<br>たとえば、中が見えない容器に入れたジュースをいくつか用意して、においがわからないように鼻をつまんで飲んで<span class=\"border border-[var(--color-text-primary)] px-2 py-0.5 mx-1 font-bold inline-block\"> 2 </span>。すると、どれが何のジュースなのか、区別がつかない場合が多いのです。つまり、食べ物のおいしさには、味<span class=\"border border-[var(--color-text-primary)] px-2 py-0.5 mx-1 font-bold inline-block\"> 3 </span>香りが大きくかかわっているということです。",
+          "passageLayout": "html",
           "questions": [
             {
+              "id": "g2-m3-q1",
               "questionText": "【１】に入る最もよいものを選びなさい。",
-              "options": ["かかせ", "ため", "おくと", "おかせで"],
-              "correctOption": { "index": 2, "text": "おくと" },
-              "explanation": "「おくと」(～ておくと) means 'if you do ... in advance, then...'."
+              "options": [
+                "からに",
+                "ために",
+                "わけで",
+                "おかげで"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
             },
             {
+              "id": "g2-m3-q2",
               "questionText": "【２】に入る最もよいものを選びなさい。",
-              "options": ["みたたいなど", "みたとした", "くると", "みたのが"],
-              "correctOption": { "index": 2, "text": "くると" },
-              "explanation": "「くると」conditional: 'when it comes to / when it becomes'."
+              "options": [
+                "みたいです",
+                "みたとします",
+                "みたりします",
+                "みようとします"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
             },
             {
+              "id": "g2-m3-q3",
               "questionText": "【３】に入る最もよいものを選びなさい。",
-              "options": ["お始めしたら", "お試みしてもらう", "お試みはいうぞん", "お試しにいるぞん"],
-              "correctOption": { "index": 1, "text": "お試みしてもらう" },
-              "explanation": "「お試みしてもらう」is the humble form of requesting someone to try something."
+              "options": [
+                "に比べて",
+                "にかわって",
+                "だけでなく",
+                "だけしかなく"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            }
+          ],
+          "mondaiHeader": "つぎの文章を読んで、【１】から【３】の中に入れる最もよいものを、1・2・3・4から一つえらびなさい。"
+        }
+      ]
+    },
+    {
+      "id": "grammar-3",
+      "title": "第3回",
+      "type": "questions-only",
+      "description": "N3文法ドリル第3回：文の文法、並べ替え、文章の文法",
+      "passages": [
+        {
+          "id": "grammar-3-mondai1",
+          "title": "問題1",
+          "questions": [
+            {
+              "id": "g3-m1-q1",
+              "questionText": "今日はおおみそか、（　）一年の最後の日です。",
+              "options": [
+                "それで",
+                "つまり",
+                "なぜなら",
+                "ですから"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "g3-m1-q2",
+              "questionText": "寒くなってきたので、かぜをひかない（　）気をつけてください。",
+              "options": [
+                "ために",
+                "ための",
+                "ように",
+                "ようで"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g3-m1-q3",
+              "questionText": "母はいつも、家族には（　）のごはんを食べてもらいたいと言っている。",
+              "options": [
+                "炊きかけ",
+                "炊きたて",
+                "炊きっぱなし",
+                "炊いたとたん"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "g3-m1-q4",
+              "questionText": "この写真集（　）、ぼくがずっと探していたものだ。",
+              "options": [
+                "こそ",
+                "しか",
+                "だけ",
+                "ばかり"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "g3-m1-q5",
+              "questionText": "説明書に（　）組み立てたのに、うまくできなかった。",
+              "options": [
+                "書いたふうに",
+                "書いたとおりに",
+                "書いておいたように",
+                "書いてあるとおりに"
+              ],
+              "correctIndex": 3,
+              "explanation": ""
+            },
+            {
+              "id": "g3-m1-q6",
+              "questionText": "どちらもいいホテルですが、場所の便利さ（　）Aホテルのほうがおすすめです。",
+              "options": [
+                "と思えば",
+                "によれば",
+                "に対して",
+                "からいうと"
+              ],
+              "correctIndex": 3,
+              "explanation": ""
+            },
+            {
+              "id": "g3-m1-q7",
+              "questionText": "夏休みになって毎日寝て（　）。",
+              "options": [
+                "のみだ",
+                "だらけだ",
+                "ばかりいる",
+                "続けている"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g3-m1-q8",
+              "questionText": "今度の旅行の日が晴れる（　）。",
+              "options": [
+                "だろうか",
+                "といいなあ",
+                "のかなあ",
+                "かもしれない"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "g3-m1-q9",
+              "questionText": "勉強すればするほど、ますます知りたいことが（　）。",
+              "options": [
+                "多い",
+                "多かった",
+                "多くなる",
+                "多いだろう"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g3-m1-q10",
+              "questionText": "伊藤さんはバレエを10年も習っていた（　）、あまりダンスが上手じゃなかった。",
+              "options": [
+                "とすると",
+                "というと",
+                "にしては",
+                "にしても"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            }
+          ],
+          "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
+        },
+        {
+          "id": "grammar-3-mondai2",
+          "title": "問題2",
+          "questions": [
+            {
+              "id": "g3-m2-q1",
+              "questionText": "機内 ＿＿　＿＿　★　＿＿ されています。",
+              "options": [
+                "禁止",
+                "使用は",
+                "における",
+                "携帯電話の"
+              ],
+              "correctIndex": 1,
+              "explanation": "機内における携帯電話の使用は禁止されています。 -> 3 4 2 1"
+            },
+            {
+              "id": "g3-m2-q2",
+              "questionText": "けがをした先輩 ＿＿　＿＿　★　＿＿ 試合に出ることになった。",
+              "options": [
+                "に",
+                "として",
+                "のかわり",
+                "チームの代表"
+              ],
+              "correctIndex": 3,
+              "explanation": "けがをした先輩のかわりにチームの代表として試合に出ることになった。 -> 3 1 4 2"
+            },
+            {
+              "id": "g3-m2-q3",
+              "questionText": "この仕事は、やる気 ＿＿　＿＿　★　＿＿ 応募することができます。",
+              "options": [
+                "さえ",
+                "経験",
+                "あれば",
+                "を問わず"
+              ],
+              "correctIndex": 0,
+              "explanation": "経験を問わずやる気さえあれば応募することができます。 -> 2 4 1 3"
+            },
+            {
+              "id": "g3-m2-q4",
+              "questionText": "私の家族の中で一番背が低いが、女性の平均 ＿＿　＿＿　★　＿＿ ではない。",
+              "options": [
+                "わけ",
+                "決して",
+                "小さい",
+                "からすると"
+              ],
+              "correctIndex": 2,
+              "explanation": "女性の平均からすると決して小さいわけではない。 -> 4 2 3 1"
+            }
+          ],
+          "mondaiHeader": "つぎの文の ★ に入る最もよいものを、1・2・3・4から一つえらびなさい。"
+        },
+        {
+          "id": "grammar-3-mondai3",
+          "title": "問題3",
+          "passageText": "日本では昔から、「月にはウサギが住んでいて、もちをついている」と言われています。これは、月にある黒<span class=\"border border-[var(--color-text-primary)] px-2 py-0.5 mx-1 font-bold inline-block\"> 1 </span>模様が、ウサギがもちをついているような形に見えるからです。月のこの暗い部分は、明るく見える部分より平らになっていて、「海」と呼ばれています。<br><br>月は、いつも地球に同じ面を向けています。<span class=\"border border-[var(--color-text-primary)] px-2 py-0.5 mx-1 font-bold inline-block\"> 2 </span>、月の模様は地球のどこから見ても同じです。けれども、世界中の人がみんなこの「海」を「ウサギ」にたとえている<span class=\"border border-[var(--color-text-primary)] px-2 py-0.5 mx-1 font-bold inline-block\"> 3 </span>。たとえば、南ヨーロッパではカニに、南米の一部ではロバにたとえられています。国や地域によって、たとえられるものはさまざまです。",
+          "passageLayout": "html",
+          "questions": [
+            {
+              "id": "g3-m3-q1",
+              "questionText": "【１】に入る最もよいものを選びなさい。",
+              "options": [
+                "的な",
+                "っぽい",
+                "らしい",
+                "みたいな"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "g3-m3-q2",
+              "questionText": "【２】に入る最もよいものを選びなさい。",
+              "options": [
+                "そのため",
+                "それでも",
+                "それから",
+                "そのわりに"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "g3-m3-q3",
+              "questionText": "【３】に入る最もよいものを選びなさい。",
+              "options": [
+                "わけです",
+                "わけではありません",
+                "わけにはいきません",
+                "わけにもいきません"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            }
+          ],
+          "mondaiHeader": "つぎの文章を読んで、【１】から【３】の中に入れる最もよいものを、1・2・3・4から一つえらびなさい。"
+        }
+      ]
+    },
+    {
+      "id": "grammar-4",
+      "title": "第4回",
+      "type": "questions-only",
+      "description": "N3文法ドリル第4回",
+      "passages": [
+        {
+          "id": "grammar-4-mondai1",
+          "title": "問題1",
+          "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g4-m1-q1",
+              "questionText": "その俳優は、映画監督（　　）有名だ。",
+              "options": [
+                "としても",
+                "にしても",
+                "といっても",
+                "においても"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g4-m1-q2",
+              "questionText": "その山火事に（　　）、森に住む多くの動物が死んでしまった。",
+              "options": [
+                "せいで",
+                "ために",
+                "なって",
+                "よって"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "g4-m1-q3",
+              "questionText": "この本は漢字が多い（　　）字が小さくて読みにくい。",
+              "options": [
+                "以上",
+                "うえに",
+                "ために",
+                "ように"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "g4-m1-q4",
+              "questionText": "引っ越してきたばかりなので、家の中にはまだカーテン（　　）ないんです。",
+              "options": [
+                "さえ",
+                "だけ",
+                "ほど",
+                "くらい"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g4-m1-q5",
+              "questionText": "夏休みには、東京（　　）京都や大阪など、日本各地を見てまわるつもりだ。",
+              "options": [
+                "をはじめ",
+                "がはじまり",
+                "をはじめて",
+                "がはじまって"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g4-m1-q6",
+              "questionText": "（　　）ケーキを妹に食べられてしまった。後で食べようと思っていたのに。",
+              "options": [
+                "食べかけの",
+                "食べきった",
+                "食べすぎの",
+                "食べだした"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g4-m1-q7",
+              "questionText": "この前いっしょに行ったレストラン、なんていう名前（　　）。",
+              "options": [
+                "だったって",
+                "だったっけ",
+                "だったなあ",
+                "だったもん"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "g4-m1-q8",
+              "questionText": "昨日、近所で牛（　　）大きな犬が歩いているのを見た。",
+              "options": [
+                "らしく",
+                "っぽく",
+                "みたいに",
+                "のようで"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g4-m1-q9",
+              "questionText": "次回の研修（　　）、何か聞きたいことはありますか。",
+              "options": [
+                "において",
+                "にとって",
+                "について",
+                "に対して"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g4-m1-q10",
+              "questionText": "すみません、ちょっと（　　）ことがあるんですが……。",
+              "options": [
+                "おうかがいする",
+                "おうかがいしたい",
+                "おうかがいになる",
+                "おうかがいになりたい"
+              ],
+              "correctIndex": 1
+            }
+          ]
+        },
+        {
+          "id": "grammar-4-mondai2",
+          "title": "問題2",
+          "mondaiHeader": "つぎの文の＿★＿に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g4-m2-q1",
+              "questionText": "もし海外旅行に＿＿　＿＿　★　＿＿ 休みがとれなければ意味がない。",
+              "options": [
+                "ほど",
+                "行ける",
+                "としても",
+                "お金があった"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "g4-m2-q2",
+              "questionText": "おもしろい＿＿　＿＿　★　＿＿ どうですか。",
+              "options": [
+                "から",
+                "みたら",
+                "やって",
+                "こわがらずに"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g4-m2-q3",
+              "questionText": "どんな仕事でも上司に＿＿　＿＿　★　＿＿ だろう。",
+              "options": [
+                "やる",
+                "やれ",
+                "しかない",
+                "と言われたら"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g4-m2-q4",
+              "questionText": "神社の前を通るたびに、どうか志望校に＿＿　＿＿　★　＿＿ 祈っている。",
+              "options": [
+                "と",
+                "合格",
+                "ように",
+                "できます"
+              ],
+              "correctIndex": 2
+            }
+          ]
+        },
+        {
+          "id": "grammar-4-mondai3",
+          "title": "問題3",
+          "mondaiHeader": "つぎの文章を読んで、1から3の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "passageText": "私はこれまで運動をほとんどしたことがなかった。しかし、3年前、体の調子が悪くて病院に行ったとき、医者に何か運動をするように言われたので、スポーツが得意な姉といっしょにジョギングを[ 1 ]。\n私たちは、毎週日曜日の朝、家の近くの公園を走ることに決めた。公園のまわりは2キロぐらいだから、初めての人にはちょうどいい距離だと姉は言った。ところが、ジョギングを始めたころの私は、その半分の距離も[ 2 ]。走った次の日には全身が痛くなり、本当につらかったので、何度も「もうやめたい」と思った。しかし、毎週のジョギングを続けている[ 3 ]だんだん走れる距離が長くなり、今では走ることが楽しいと思えるようになってきた。",
+          "questions": [
+            {
+              "id": "g4-m3-q1",
+              "questionText": "1",
+              "options": [
+                "始めようとした",
+                "始めたわけではない",
+                "始めることにした",
+                "始めるつもりだった"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g4-m3-q2",
+              "questionText": "2",
+              "options": [
+                "走ってしまった",
+                "走ることができた",
+                "走ろうとしなかった",
+                "走ることができなかった"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "g4-m3-q3",
+              "questionText": "3",
+              "options": [
+                "際に",
+                "うちに",
+                "最中に",
+                "とすれば"
+              ],
+              "correctIndex": 1
             }
           ]
         }
       ]
     },
     {
-      "id": "grammar-3",
-      "title": "第3回（文法）",
+      "id": "grammar-5",
+      "title": "第5回",
       "type": "questions-only",
-      "description": "N3文法ドリル第3回：文の文法（問題1）、並べ替え（問題2）、文章の文法（問題3）",
+      "description": "N3文法ドリル第5回",
       "passages": [
         {
-          "id": "grammar-3-mondai1",
+          "id": "grammar-5-mondai1",
           "title": "問題1",
-          "mondaiHeader": "問題1 つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "passageText": "",
+          "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "questions": [
             {
-              "questionText": "今日はお祝をか（　）一年の最後の日です。",
-              "options": ["それで", "つまり", "なぜか", "そけから"],
-              "correctOption": { "index": 1, "text": "つまり" },
-              "explanation": "「つまり」means 'in other words / that is to say'."
+              "id": "g5-m1-q1",
+              "questionText": "1年かかってやっと論文を書き（　　）。",
+              "options": [
+                "あげた",
+                "かけた",
+                "出した",
+                "続けた"
+              ],
+              "correctIndex": 0
             },
             {
-              "questionText": "多くなってきのだから、かせがつかない（　）急ぎていてください。",
-              "options": ["ように", "たのの", "よくに", "ようには"],
-              "correctOption": { "index": 0, "text": "ように" },
-              "explanation": "「ように」expresses purpose: 'so that you don't catch a cold'."
+              "id": "g5-m1-q2",
+              "questionText": "友達の話がおもしろくて、涙が出る（　　）笑った。",
+              "options": [
+                "さえ",
+                "だけ",
+                "ほど",
+                "より"
+              ],
+              "correctIndex": 2
             },
             {
-              "questionText": "娘はいつも、家族に（　）ことはをべたをしようとといっている。",
-              "options": ["食な去けど", "食たなくて", "食たおばなど", "食いたとた"],
-              "correctOption": { "index": 1, "text": "食たなくて" },
-              "explanation": "「食たなくて」expresses eating less."
+              "id": "g5-m1-q3",
+              "questionText": "お客様の声（　　）、営業時間を延長することにいたしました。",
+              "options": [
+                "に関して",
+                "に対して",
+                "について",
+                "にこたえて"
+              ],
+              "correctIndex": 3
             },
             {
-              "questionText": "この伝説は、（　）してしまもの記。",
-              "options": ["はと", "じゃ", "なかり", "ばかり"],
-              "correctOption": { "index": 3, "text": "ばかり" },
-              "explanation": "「ばかり」means 'just / only / nothing but'."
+              "id": "g5-m1-q4",
+              "questionText": "日本のマンガやアニメは、国（　　）世界中で人気がある。",
+              "options": [
+                "を問わず",
+                "を問われず",
+                "は問わないで",
+                "は問わないでも"
+              ],
+              "correctIndex": 0
             },
             {
-              "questionText": "面似書に（　）韻合定でたのた、うよくごとができなかった。",
-              "options": ["書いたように", "書いたお前に", "書いていたように", "書いてみたように"],
-              "correctOption": { "index": 0, "text": "書いたように" },
-              "explanation": "「書いたように」means 'as written': things didn't go as written in the resume."
+              "id": "g5-m1-q5",
+              "questionText": "いくらお腹がすいていた（　　）、カレー5皿は食べすぎだよ。",
+              "options": [
+                "として",
+                "にしても",
+                "にしては",
+                "としては"
+              ],
+              "correctIndex": 1
             },
             {
-              "questionText": "どちらもいいコンテンツなので、地域の課題（　）をおすすめです。",
-              "options": ["ほたけて", "いとほど", "に比べて", "はほど"],
-              "correctOption": { "index": 2, "text": "に比べて" },
-              "explanation": "「に比べて」means 'compared to'."
+              "id": "g5-m1-q6",
+              "questionText": "明日はお弁当はありますが、飲み物は自分で持ってくる（　　）ください。",
+              "options": [
+                "ことにして",
+                "ようにして",
+                "ことになって",
+                "ようになって"
+              ],
+              "correctIndex": 1
             },
             {
-              "questionText": "組合ぶっとで問題要と（　）。",
-              "options": ["のだ", "がつだ", "ばかれいん", "ばかれいている"],
-              "correctOption": { "index": 3, "text": "ばかれいている" },
-              "explanation": "「ばかれいている」indicates a continuing state (progressive)."
+              "id": "g5-m1-q7",
+              "questionText": "あの人には以前どこかで会った（　　）気がするが、どうしても思い出せない。",
+              "options": [
+                "はずの",
+                "ような",
+                "らしい",
+                "かもしれない"
+              ],
+              "correctIndex": 1
             },
             {
-              "questionText": "今収の流行の注が堪れる（　）。",
-              "options": ["だろか", "ちいいない", "のかな", "かもしれない"],
-              "correctOption": { "index": 3, "text": "かもしれない" },
-              "explanation": "「かもしれない」means 'might / perhaps'."
+              "id": "g5-m1-q8",
+              "questionText": "弟の誕生日に、弟が前から（　　）カメラをプレゼントした。",
+              "options": [
+                "ほしがった",
+                "ほしそうな",
+                "ほしいような",
+                "ほしがっていた"
+              ],
+              "correctIndex": 3
             },
             {
-              "questionText": "施設するならば、住生を損量ればよいことは（　）。",
-              "options": ["高い", "多かった", "多きな", "多いだな"],
-              "correctOption": { "index": 0, "text": "高い" },
-              "explanation": "「高い」(expensive/high) fits the context of cost discussion."
+              "id": "g5-m1-q9",
+              "questionText": "A: どちらの会社にお勤めですか。\nB: ハロー配達（　　）運送会社に勤めています。",
+              "options": [
+                "との",
+                "という",
+                "なんて",
+                "みたいな"
+              ],
+              "correctIndex": 1
             },
             {
-              "questionText": "伊藤さんはバスケや花形を作っていたか（　）、あきをダンスがほ立手じゃなかった。",
-              "options": ["するな", "というと", "どとては", "にとても"],
-              "correctOption": { "index": 1, "text": "というと" },
-              "explanation": "「というと」means 'speaking of': speaking of Ito-san, she wasn't good at dance."
+              "id": "g5-m1-q10",
+              "questionText": "こんなまずい店、二度と来る（　　）。",
+              "options": [
+                "っけ",
+                "もん",
+                "もんか",
+                "んだって"
+              ],
+              "correctIndex": 2
             }
           ]
         },
         {
-          "id": "grammar-3-mondai2",
+          "id": "grammar-5-mondai2",
           "title": "問題2",
-          "mondaiHeader": "問題2 つぎの文の ★ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-          "passageText": "",
+          "mondaiHeader": "つぎの文の＿★＿に入る最もよいものを、1・2・3・4から一つえらびなさい。",
           "questions": [
             {
-              "questionText": "（　）人が ＿＿　★　＿＿ 　さればいです。",
-              "options": ["あかい", "ことわる", "かしい", "あとばかり"],
-              "correctOption": { "index": 1, "text": "ことわる" },
-              "explanation": "「ことわる」(to decline/refuse). ★ = ことわる."
+              "id": "g5-m2-q1",
+              "questionText": "初めてのマラソンだったので、最後は＿＿　＿＿　★　＿＿ ものだった。",
+              "options": [
+                "走る",
+                "歩いている",
+                "ような",
+                "というより"
+              ],
+              "correctIndex": 1
             },
             {
-              "questionText": "もし ＿＿　★　＿＿ 、在月使いに生ことになった。",
-              "options": ["いるほど", "いように", "いたかのに", "いたうに"],
-              "correctOption": { "index": 1, "text": "いように" },
-              "explanation": "「いように」expressing how something should or should not happen. ★ = いように."
+              "id": "g5-m2-q2",
+              "questionText": "その映画を＿＿　＿＿　★　＿＿ が、映画館に行きたいとまでは思わない。",
+              "options": [
+                "では",
+                "ない",
+                "わけ",
+                "見たくない"
+              ],
+              "correctIndex": 0
             },
             {
-              "questionText": "この仕事は、やる気 ＿＿　★　＿＿ といいのです。",
-              "options": ["いちゃ", "みても", "ならば", "よおよ"],
-              "correctOption": { "index": 2, "text": "ならば" },
-              "explanation": "「ならば」conditional: 'if one has motivation'. ★ = ならば."
+              "id": "g5-m2-q3",
+              "questionText": "ひとりで＿＿　＿＿　★　＿＿ いいかわからない。",
+              "options": [
+                "やって",
+                "ごらん",
+                "どうして",
+                "と言われても"
+              ],
+              "correctIndex": 3
             },
             {
-              "questionText": "ピアノ ＿＿　★　＿＿ りけるなんで、ないぞていてなんですか。",
-              "options": ["ひとり", "ように", "はあい", "バイオリン"],
-              "correctOption": { "index": 3, "text": "バイオリン" },
-              "explanation": "★ = バイオリン, completing the comparison."
+              "id": "g5-m2-q4",
+              "questionText": "予約して＿＿　＿＿　★　＿＿ も待たされた。",
+              "options": [
+                "にも",
+                "おいた",
+                "1時間",
+                "かかわらず"
+              ],
+              "correctIndex": 3
             }
           ]
         },
         {
-          "id": "grammar-3-mondai3",
+          "id": "grammar-5-mondai3",
           "title": "問題3",
-          "mondaiHeader": "問題3 つぎの文章を読んで、【１】から【３】の中に入れる最もよいものを、1・2・3・4から一つえらびなさい。",
-          "passageText": "かずのことく、気持ちがく楽になります。\nそれは、かせのいいて少的の数的が落ちて、特他が変化しかわなくなってきているから、と言われていますから。しかし、月の数的が多どて、社会のいい方をとることができて、することになるかもしれません。\n\nたとえば、いつも花花に足しを向けて【１】と、なぜか花の植物に入ったかのとか良くに入れば花の植物に持てつことができています。また外に、花が参加の持花に入ったかの悪悪が少ないような環境が多いのです。\nつまり、食べ物のおいしさには、悪気がさく少かわっていくということです。そして、最後には【２】いるとも言えます。そして【３】といえるでしょう。",
+          "mondaiHeader": "つぎの文章を読んで、1から3の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "passageText": "私たちはたくさんの色に囲まれて生活している。\n私たちのまわりにある色の数は800万色とも言われている。街の中の建物や人々のファッションはもちろん、海や空の青や、木々の緑[ 1 ]、自然の中にはさまざまな色があふれている。\n[ 2 ]、イヌやネコなど多くの動物は、まわりにあるたくさんの色を見分けることができない。においや音に関しては、人間よりもイヌやネコの方が感覚が発達しているかもしれないが、色を見分けることについては、人間の方が発達しているのだ。\n色を見分ける能力では、人間は動物の中でも特別な存在と[ 3 ]。",
           "questions": [
             {
-              "questionText": "【１】に入る最もよいものを選びなさい。",
-              "options": ["おくと", "みると", "なくて", "おかせで"],
-              "correctOption": { "index": 0, "text": "おくと" },
-              "explanation": "「おくと」(～ておくと) means 'if you keep/do in advance, then...'."
+              "id": "g5-m3-q1",
+              "questionText": "1",
+              "options": [
+                "に沿って",
+                "に応じて",
+                "をもとに",
+                "をはじめとして"
+              ],
+              "correctIndex": 3
             },
             {
-              "questionText": "【２】に入る最もよいものを選びなさい。",
-              "options": ["みたかやと", "みたとしよた", "くると", "みたのが"],
-              "correctOption": { "index": 2, "text": "くると" },
-              "explanation": "「くると」conditional: 'when it comes to / when it becomes'."
+              "id": "g5-m3-q2",
+              "questionText": "2",
+              "options": [
+                "また",
+                "しかし",
+                "それに",
+                "ところで"
+              ],
+              "correctIndex": 1
             },
             {
-              "questionText": "【３】に入る最もよいものを選びなさい。",
-              "options": ["わかでありよさん", "わかでありませる", "わかに口にいきをせん", "わかでいいます"],
-              "correctOption": { "index": 1, "text": "わかでありませる" },
-              "explanation": "The correct polite expression fitting the passage's formal register."
+              "id": "g5-m3-q3",
+              "questionText": "3",
+              "options": [
+                "言う",
+                "言える",
+                "言わない",
+                "言えない"
+              ],
+              "correctIndex": 1
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "grammar-6",
+      "title": "第6回",
+      "type": "questions-only",
+      "description": "N3文法ドリル第6回",
+      "passages": [
+        {
+          "id": "grammar-6-mondai1",
+          "title": "問題1",
+          "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g6-m1-q1",
+              "questionText": "手伝ってくれてありがとう。（　　）早く終わったよ。",
+              "options": [
+                "おかげで",
+                "かわりに",
+                "だからこそ",
+                "それどころか"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g6-m1-q2",
+              "questionText": "自分でやって（　　）、そんなに簡単じゃないことがわかった。",
+              "options": [
+                "みたなら",
+                "みてはじめて",
+                "みたばかりで",
+                "みたとすれば"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "g6-m1-q3",
+              "questionText": "山下さんは歌が上手ですね。まるで歌手（　　）です。",
+              "options": [
+                "だそう",
+                "のまま",
+                "みたい",
+                "らしい"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g6-m1-q4",
+              "questionText": "図書館が開いている（　　）本を返しに行かなければ。",
+              "options": [
+                "まで",
+                "あいだ",
+                "うちに",
+                "までに"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g6-m1-q5",
+              "questionText": "これはこの会社（　　）持っていない特別な技術だ。",
+              "options": [
+                "かぎり",
+                "だけしか",
+                "だけなら",
+                "ほどしか"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "g6-m1-q6",
+              "questionText": "私はお酒は（　　）んですが、あまり好きじゃないんです。",
+              "options": [
+                "飲むことはない",
+                "飲むわけがない",
+                "飲むべきじゃない",
+                "飲めないことはない"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "g6-m1-q7",
+              "questionText": "このスーツケースは、大きい（　　）軽いので使いやすい。",
+              "options": [
+                "くせに",
+                "わりに",
+                "おかげで",
+                "かわりに"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "g6-m1-q8",
+              "questionText": "もう二度とあいつに電話（　　）するものか。",
+              "options": [
+                "だけ",
+                "なら",
+                "かぎり",
+                "なんか"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "g6-m1-q9",
+              "questionText": "どうか明日、雨が（　　）。",
+              "options": [
+                "降るな",
+                "降りそうだ",
+                "降らないかなあ",
+                "降りませんように"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "g6-m1-q10",
+              "questionText": "うちの子は毎日同じ服（　　）着たがる。",
+              "options": [
+                "でも",
+                "のみ",
+                "なんか",
+                "ばかり"
+              ],
+              "correctIndex": 3
+            }
+          ]
+        },
+        {
+          "id": "grammar-6-mondai2",
+          "title": "問題2",
+          "mondaiHeader": "つぎの文の＿★＿に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g6-m2-q1",
+              "questionText": "もらったお菓子があまりにもまずかったから、＿＿　＿＿　★　＿＿ しまった。",
+              "options": [
+                "して",
+                "ふりを",
+                "食べた",
+                "捨てて"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g6-m2-q2",
+              "questionText": "私 ＿＿　＿＿　★　＿＿ ものはありません。",
+              "options": [
+                "ほど",
+                "家族",
+                "大事な",
+                "にとって"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g6-m2-q3",
+              "questionText": "地球の歴史 ＿＿　＿＿　★　＿＿ まだまだ短い。",
+              "options": [
+                "から",
+                "など",
+                "みると",
+                "人の歴史"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "g6-m2-q4",
+              "questionText": "A: 留学するんだってね。\nB: うん。留学 ＿＿　＿＿　★　＿＿ けどね。",
+              "options": [
+                "だけ",
+                "なんだ",
+                "3カ月",
+                "といっても"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "grammar-6-mondai3",
+          "title": "問題3",
+          "mondaiHeader": "つぎの文章を読んで、1から3の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "passageText": "拝啓 さわやかな秋晴れの日がつづいております。皆様いかがお過ごしでしょうか。\nさて、この度、私たちは結婚する[ 1 ]。\n[ 2 ]、日頃お世話になっている皆様にごあいさつをかねまして、結婚式の後に心ばかりの披露パーティーを開きたいと思っております。\nお忙しい[ 3 ]恐縮ですが、なにとぞご出席いただけますようお願い申しあげます。\n敬具",
+          "questions": [
+            {
+              "id": "g6-m3-q1",
+              "questionText": "1",
+              "options": [
+                "ことができました",
+                "ようにしました",
+                "こととなりました",
+                "ようになりました"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g6-m3-q2",
+              "questionText": "2",
+              "options": [
+                "それでは",
+                "このように",
+                "つきましては",
+                "できましたら"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g6-m3-q3",
+              "questionText": "3",
+              "options": [
+                "最中",
+                "ところ",
+                "ばかり",
+                "場合に"
+              ],
+              "correctIndex": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar-7",
+      "title": "第７回",
+      "passages": [
+        {
+          "id": "grammar-7-mondai1",
+          "title": "問題1",
+          "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g7-m1-q1",
+              "questionText": "問題はすべて解決しました。もう何も心配する（　）。",
+              "options": [
+                "ことはありません",
+                "わけはありません",
+                "ことではありません",
+                "わけにはいきません"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "g7-m1-q2",
+              "questionText": "この事件（　）情報をお持ちの方は、警察にご連絡ください。",
+              "options": [
+                "における",
+                "に応じた",
+                "に関する",
+                "に際して"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g7-m1-q3",
+              "questionText": "会長が（　）とたん、会場から大きな拍手がおきた。",
+              "options": [
+                "話しおえた",
+                "話していた",
+                "話し続けた",
+                "話してきた"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "g7-m1-q4",
+              "questionText": "A: コンビニに行ってくる。\nB: それなら（　）飲み物を買ってきて。",
+              "options": [
+                "かわりに",
+                "ついでに",
+                "ところで",
+                "おかげで"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "g7-m1-q5",
+              "questionText": "みんなの前で転んでしまい、その場から（　）くらい恥ずかしかった。",
+              "options": [
+                "逃げない",
+                "逃げ切る",
+                "逃げ出したい",
+                "逃げたがる"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g7-m1-q6",
+              "questionText": "窓を開け（　）寝ていたら、部屋の中に虫が入ってきた。",
+              "options": [
+                "しだい",
+                "ながら",
+                "っぱなしで",
+                "ようとして"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g7-m1-q7",
+              "questionText": "そんな小さい子に一人（　）で留守番をさせるなんて危ない。",
+              "options": [
+                "きり",
+                "のみ",
+                "かぎり",
+                "ばかり"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "g7-m1-q8",
+              "questionText": "私が病気になると、母はいつもスープを作って（　）。",
+              "options": [
+                "くれたものだ",
+                "あげたものだ",
+                "あげたことだ",
+                "くれたことだ"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "g7-m1-q9",
+              "questionText": "パソコンの調子が悪い（　）、仕事がなかなか進まない。",
+              "options": [
+                "ところ",
+                "せいで",
+                "かわりに",
+                "ばかりで"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "g7-m1-q10",
+              "questionText": "古くてきず（　）だが、私はこのかばんが気に入っている。",
+              "options": [
+                "がち",
+                "ぎみ",
+                "だけ",
+                "だらけ"
+              ],
+              "correctIndex": 3,
+              "explanation": ""
+            }
+          ]
+        },
+        {
+          "id": "grammar-7-mondai2",
+          "title": "問題2",
+          "mondaiHeader": "つぎの文の　★　に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g7-m2-q1",
+              "questionText": "今の前田さんの ＿＿ ＿＿ ★ ＿＿ 手をあげてください。",
+              "options": [
+                "意見",
+                "あれば",
+                "質問が",
+                "に対して"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g7-m2-q2",
+              "questionText": "最近の男性は掃除や洗濯 ＿＿ ＿＿ ★ ＿＿ だってやりますよ。",
+              "options": [
+                "は",
+                "料理や",
+                "子育て",
+                "もちろん"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "g7-m2-q3",
+              "questionText": "この子はまだ立つ ＿＿ ＿＿ ★ ＿＿ わけがないでしょう。",
+              "options": [
+                "のに",
+                "歩ける",
+                "できない",
+                "ことさえ"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "g7-m2-q4",
+              "questionText": "この駐車場の料金は、24時間 ＿＿ ＿＿ ★ ＿＿ 800円です。",
+              "options": [
+                "以内",
+                "であれば",
+                "利用時間",
+                "にかかわらず"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            }
+          ]
+        },
+        {
+          "id": "grammar-7-mondai3",
+          "title": "問題3",
+          "mondaiHeader": "つぎの文章を読んで、[ 1 ]から[ 3 ]の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "passageText": "日本は平均寿命の長い国として知られています。男性は80歳近く、女性は85歳に [ 1 ] としています。この平均寿命という考え方は生き物だけではなく、企業にもあります。これは、企業が設立されてから倒産するまでの年数のことで、ある調査によると、日本の企業の平均寿命は約35年だそうです。\n\nでは、どのような企業が長生きできるのでしょうか。\nまず、技術力があること。そして、世の中の変化に合わせて対応できることが重要です。「社会の中で会社がどうある [ 2 ] か」をきちんと考えている企業は、社会の変化に遅れずに対応できるでしょう。「社会の中でどう生きるか」を考えていかなければならないのは、人 [ 3-a ] 企業 [ 3-b ] 同じだと言えるようです。",
+          "questions": [
+            {
+              "id": "g7-m3-q1",
+              "questionText": "[ 1 ]",
+              "options": [
+                "近い",
+                "近づく",
+                "近づこう",
+                "近くになる"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g7-m3-q2",
+              "questionText": "[ 2 ]",
+              "options": [
+                "こと",
+                "ため",
+                "べき",
+                "まま"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g7-m3-q3",
+              "questionText": "[ 3 ]",
+              "options": [
+                "a と / b が",
+                "a が / b と",
+                "a に / b に",
+                "a も / b も"
+              ],
+              "correctIndex": 3,
+              "explanation": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar-8",
+      "title": "第８回",
+      "passages": [
+        {
+          "id": "grammar-8-mondai1",
+          "title": "問題1",
+          "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g8-m1-q1",
+              "questionText": "このゴミ箱には、燃えるゴミ以外の物は捨てない（　）。",
+              "options": [
+                "ことに",
+                "ものに",
+                "ように",
+                "わけに"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g8-m1-q2",
+              "questionText": "誰が何と（　）、うちの犬が一番かわいい。",
+              "options": [
+                "言うと",
+                "言ったら",
+                "言っても",
+                "言うなら"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g8-m1-q3",
+              "questionText": "前の車が急に止まったから、急いでブレーキを踏んだ。もう少しで（　）だった。",
+              "options": [
+                "ぶつかるよう",
+                "ぶつかったよう",
+                "ぶつかるところ",
+                "ぶつかったところ"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g8-m1-q4",
+              "questionText": "昨日のカラオケ、松本先輩が来ていたのなら、私も行けば（　）。",
+              "options": [
+                "いいのに",
+                "よかった",
+                "いいだろう",
+                "よかっただろう"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "g8-m1-q5",
+              "questionText": "そのボランティアに参加したのは学生（　）ではなく、社会人も大勢いた。",
+              "options": [
+                "だらけ",
+                "っきり",
+                "ばかり",
+                "だけしか"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g8-m1-q6",
+              "questionText": "私の父はすばらしい社長だったが、父親（　）すばらしかったとは言えない。",
+              "options": [
+                "として",
+                "とすれば",
+                "になると",
+                "というなら"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "g8-m1-q7",
+              "questionText": "A: うちにはめずらしい金魚がいるんですよ。\nB: へえ、今度ぜひ見に（　）ください。",
+              "options": [
+                "行って",
+                "行かせて",
+                "行かれて",
+                "行ってみて"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "g8-m1-q8",
+              "questionText": "昨晩は疲れていたから、顔も（　）寝てしまった。",
+              "options": [
+                "洗わなく",
+                "洗わずに",
+                "洗わないと",
+                "洗わなくても"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "g8-m1-q9",
+              "questionText": "今の給料で、そんなに高い家賃の部屋に住める（　）。",
+              "options": [
+                "ことか",
+                "わけか",
+                "わけがない",
+                "こともない"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g8-m1-q10",
+              "questionText": "天気が悪いときは、ジョギング（　）家で体操をしています。",
+              "options": [
+                "したわりに",
+                "したくせに",
+                "するかわりに",
+                "する一方"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            }
+          ]
+        },
+        {
+          "id": "grammar-8-mondai2",
+          "title": "問題2",
+          "mondaiHeader": "つぎの文の　★　に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g8-m2-q1",
+              "questionText": "みんなが ＿＿ ＿＿ ★ ＿＿ より早く終わってよかった。",
+              "options": [
+                "くれた",
+                "思った",
+                "おかげで",
+                "手伝って"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g8-m2-q2",
+              "questionText": "どんなに苦しくても、彼なら最後まで ＿＿ ＿＿ ★ ＿＿ いる。",
+              "options": [
+                "に",
+                "ぬく",
+                "やり",
+                "決まって"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "g8-m2-q3",
+              "questionText": "見てはいけないと言われたが、＿＿ ＿＿ ★ ＿＿ ますます見たくなる。",
+              "options": [
+                "と",
+                "なと",
+                "見る",
+                "言われる"
+              ],
+              "correctIndex": 3,
+              "explanation": ""
+            },
+            {
+              "id": "g8-m2-q4",
+              "questionText": "必ずしも強いチーム ＿＿ ＿＿ ★ ＿＿ のがスポーツだ。",
+              "options": [
+                "が",
+                "とは",
+                "優勝する",
+                "かぎらない"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            }
+          ]
+        },
+        {
+          "id": "grammar-8-mondai3",
+          "title": "問題3",
+          "mondaiHeader": "つぎの文章を読んで、[ 1 ]から[ 3 ]の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "passageText": "はじめまして。ジェフ・スミスと申します。\n昨年の7月にアメリカの大学を卒業し、日本に [ 1 ] 。現在、新宿大学の修士課程に在籍しております。\nこの英会話講師のアルバイトに応募したきっかけは、先輩からの紹介です。私の専門は言語学ですので、その知識が生かせる [ 2 ] 、と思い、応募いたしました。文法にくわしいので、英語はもちろん、日本語での文法の説明もできます。\n勤務時間は、月・水・金の夕方5時以降を希望します。土日はときどき学校の用事が入ることがありますが、事前にご連絡 [ 3 ] 対応いたします。\nどうぞよろしくお願いいたします。",
+          "questions": [
+            {
+              "id": "g8-m3-q1",
+              "questionText": "[ 1 ]",
+              "options": [
+                "まいりました",
+                "うかがいました",
+                "たずねました",
+                "いらっしゃいました"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "g8-m3-q2",
+              "questionText": "[ 2 ]",
+              "options": [
+                "から",
+                "とか",
+                "なんて",
+                "のでは"
+              ],
+              "correctIndex": 3,
+              "explanation": ""
+            },
+            {
+              "id": "g8-m3-q3",
+              "questionText": "[ 3 ]",
+              "options": [
+                "について",
+                "にもとづいて",
+                "をいただければ",
+                "をくださると"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar-9",
+      "title": "第９回",
+      "passages": [
+        {
+          "id": "grammar-9-mondai1",
+          "title": "問題1",
+          "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g9-m1-q1",
+              "questionText": "今度の休みに四国旅行をする（　）が、用事ができて行けなくなってしまった。",
+              "options": [
+                "みたいだ",
+                "ことにした",
+                "べきだった",
+                "つもりだった"
+              ],
+              "correctIndex": 3,
+              "explanation": ""
+            },
+            {
+              "id": "g9-m1-q2",
+              "questionText": "社員から反対されても、社長は考えを（　）はしなかった。",
+              "options": [
+                "変えようと",
+                "変えるように",
+                "変えられようと",
+                "変えないように"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "g9-m1-q3",
+              "questionText": "うわさによると、二人はどうやら結婚する（　）。",
+              "options": [
+                "んだ",
+                "らしい",
+                "までだ",
+                "しかない"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "g9-m1-q4",
+              "questionText": "A: 歯が痛いの？\nB: うん。でも、がまんできない（　）からだいじょうぶ。",
+              "options": [
+                "ほどだ",
+                "みたいだ",
+                "ほどじゃない",
+                "みたいじゃない"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g9-m1-q5",
+              "questionText": "はじめは難しく見えても、よく読めばきっと（　）です。",
+              "options": [
+                "わかるはず",
+                "わかるわけ",
+                "わからないはず",
+                "わからないわけ"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "g9-m1-q6",
+              "questionText": "暗く（　）ホテルに着けるように急ぎましょう。",
+              "options": [
+                "なる間に",
+                "なるまで",
+                "ならないうちに",
+                "ならないかぎり"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "g9-m1-q7",
+              "questionText": "この地方は1年（　）雨が少なく、過ごしやすい。",
+              "options": [
+                "にかけて",
+                "を通して",
+                "を問わず",
+                "にわたって"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "g9-m1-q8",
+              "questionText": "仕事をやめてから、前よりも（　）なった気がする。",
+              "options": [
+                "忘れそうに",
+                "忘れっぽく",
+                "忘れるらしく",
+                "忘れっぱなしに"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "g9-m1-q9",
+              "questionText": "この本、さっき（　）ところなんですが、おもしろくてやめられないんです。",
+              "options": [
+                "読みかける",
+                "読みはじめた",
+                "読もうとした",
+                "読みそうになる"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "g9-m1-q10",
+              "questionText": "そんなにたくさん買っても、二人ではとても（　）よ。",
+              "options": [
+                "食べきれない",
+                "食べかねない",
+                "食べるしかない",
+                "食べるとはかぎらない"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            }
+          ]
+        },
+        {
+          "id": "grammar-9-mondai2",
+          "title": "問題2",
+          "mondaiHeader": "つぎの文の　★　に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g9-m2-q1",
+              "questionText": "沖縄には ＿＿ ＿＿ ★ ＿＿ 砂があるビーチがあるそうだ。",
+              "options": [
+                "形",
+                "星",
+                "をした",
+                "みたいな"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "g9-m2-q2",
+              "questionText": "電車が駅から ＿＿ ＿＿ ★ ＿＿ なってきた。",
+              "options": [
+                "に",
+                "離れる",
+                "さびしく",
+                "したがって"
+              ],
+              "correctIndex": 3,
+              "explanation": ""
+            },
+            {
+              "id": "g9-m2-q3",
+              "questionText": "インターネットは便利だが、情報の ＿＿ ＿＿ ★ ＿＿ が信頼できると思う。",
+              "options": [
+                "正確さ",
+                "という点",
+                "本のほう",
+                "からいうと"
+              ],
+              "correctIndex": 3,
+              "explanation": ""
+            },
+            {
+              "id": "g9-m2-q4",
+              "questionText": "手続きのやり方は、市役所に ＿＿ ＿＿ ★ ＿＿ ことだ。",
+              "options": [
+                "という",
+                "行けば",
+                "教えて",
+                "もらえる"
+              ],
+              "correctIndex": 3,
+              "explanation": ""
+            }
+          ]
+        },
+        {
+          "id": "grammar-9-mondai3",
+          "title": "問題3",
+          "mondaiHeader": "つぎの文章を読んで、[ 1 ]から[ 3 ]の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "passageText": "6月15日（月）雨\n今日も雨。[ 1 ] 1週間、ずっと雨だ。\n日本は好きだけど、梅雨の時期だけは国に帰りたくなる。国ではこんなふうに1日中雨が降り続くことはなかった。もし雨が降ったとしても、1時間ぐらいですぐにやむから、かさを持ち歩くこと [ 2-a ] めったになかった [ 2-b ] 。梅雨の時期は部屋もじめじめするし、髪のセットもうまくいかないし、気分が暗くなる。\n梅雨が始まることを「梅雨入り」、梅雨が終わることを「梅雨明け」と言うらしい。調べてみたら、毎年の梅雨明けは、7月中旬だそうだ。こんな雨の日があと1カ月も続くかと思うと、本当に嫌になる。早く梅雨明け [ 3 ] 。",
+          "questions": [
+            {
+              "id": "g9-m3-q1",
+              "questionText": "[ 1 ]",
+              "options": [
+                "いま",
+                "ここ",
+                "さき",
+                "その"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "g9-m3-q2",
+              "questionText": "[ 2 ]",
+              "options": [
+                "a なんて / b のに",
+                "a なんて / b ので",
+                "a なら / b のに",
+                "a なら / b ので"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "g9-m3-q3",
+              "questionText": "[ 3 ]",
+              "options": [
+                "するかなあ",
+                "しないかなあ",
+                "するんだなあ",
+                "しないんだなあ"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar-11",
+      "title": "第11回",
+      "type": "questions-only",
+      "description": "N3文法ドリル第11回",
+      "passages": [
+        {
+          "id": "grammar-11-mondai1",
+          "title": "問題1",
+          "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g11-m1-q1",
+              "questionText": "人々の習慣は国や地域（　　）さまざまだ。",
+              "options": [
+                "として",
+                "のため",
+                "によって",
+                "にしたがって"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g11-m1-q2",
+              "questionText": "A:どうして食べないの？　B:だって、おいしくない（　　）。",
+              "options": [
+                "ことで",
+                "もので",
+                "んだから",
+                "んだもん"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "g11-m1-q3",
+              "questionText": "ほら、見て（　　）。あそこにきれいな色の鳥がいるよ。",
+              "options": [
+                "ごらん",
+                "なさい",
+                "ほしい",
+                "みたい"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g11-m1-q4",
+              "questionText": "この道は歩行者専用なので、車（　　）バイクや自転車も通れない。",
+              "options": [
+                "くらいに",
+                "ついでに",
+                "はもちろん",
+                "にかけて"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g11-m1-q5",
+              "questionText": "親は子ども（　　）あまり大きな期待を持ちすぎないほうがいい。",
+              "options": [
+                "として",
+                "によって",
+                "に対して",
+                "に比べて"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g11-m1-q6",
+              "questionText": "来週の予定が（　　）ご連絡します。",
+              "options": [
+                "わかりしだい",
+                "わかりながら",
+                "わかったところ",
+                "わかったとたん"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g11-m1-q7",
+              "questionText": "このトマトジュースは、トマトが嫌いな人（　　）飲んでほしいと思って作りました。",
+              "options": [
+                "にこそ",
+                "にさえ",
+                "でこそ",
+                "でさえ"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g11-m1-q8",
+              "questionText": "その学校は、まるでお城（　　）大きくてきれいだった。",
+              "options": [
+                "のように",
+                "のまま",
+                "らしく",
+                "だそうで"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g11-m1-q9",
+              "questionText": "A:ご注文は何に（　　）か。　B:コーヒーを二つ、お願いします。",
+              "options": [
+                "いたす",
+                "なさる",
+                "なさいます",
+                "いたします"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g11-m1-q10",
+              "questionText": "図書館で、弟がずっと読み（　　）本を見つけた。",
+              "options": [
+                "たい",
+                "たかった",
+                "たがった",
+                "たがっていた"
+              ],
+              "correctIndex": 3
+            }
+          ]
+        },
+        {
+          "id": "grammar-11-mondai2",
+          "title": "問題2",
+          "mondaiHeader": "つぎの文の＿★＿に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g11-m2-q1",
+              "questionText": "他の人から聞いた＿＿　＿＿　★　＿＿ は本当だったらしい。",
+              "options": [
+                "に",
+                "話",
+                "よれば",
+                "あのうわさ"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g11-m2-q2",
+              "questionText": "このコースの費用＿＿　＿＿　★　＿＿ お問い合わせはメールでお願いします。",
+              "options": [
+                "に",
+                "の",
+                "など",
+                "関して"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "g11-m2-q3",
+              "questionText": "今までマンガだけ＿＿　＿＿　★　＿＿ 人が、突然小説家になると言い出した。",
+              "options": [
+                "しか",
+                "ような",
+                "読んで",
+                "こなかった"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "g11-m2-q4",
+              "questionText": "出張で九州に行く＿＿　＿＿　★　＿＿ 大学時代の友人に会えた。",
+              "options": [
+                "ことに",
+                "なった",
+                "おかげで",
+                "久しぶりに"
+              ],
+              "correctIndex": 2
+            }
+          ]
+        },
+        {
+          "id": "grammar-11-mondai3",
+          "title": "問題3",
+          "mondaiHeader": "つぎの文章を読んで、1から3の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "passageText": "数年前、子どもがライターで[ 1 ]火事になってしまうという事故がたびたび起こった。安くて手に入れやすい使い捨てライターは、スイッチを押すだけで火がつくものが多かった。[ 2-a ]、小さな子どもの力でも簡単に火をつけることができ、火事が起きてしまったのである。\n[ 2-b ]、このような事故を防ぐため、子どもが興味を示すような形のライターや、簡単に火がつけられるようなライターは売ってはいけないことになった。\nしかし、これでぜったい安心[ 3 ]。一番大切なことは、子どもの手の届くところにライターを置かないことだ。",
+          "questions": [
+            {
+              "id": "g11-m3-q1",
+              "questionText": "1",
+              "options": [
+                "遊ぶ際に",
+                "遊ぶついでに",
+                "遊んでいるうちに",
+                "遊んでいるからこそ"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g11-m3-q2",
+              "questionText": "2",
+              "options": [
+                "aそれで / bそこで",
+                "aそれで / bそのうえ",
+                "aそこで / bそれで",
+                "aそこで / bそのうえ"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g11-m3-q3",
+              "questionText": "3",
+              "options": [
+                "と言える",
+                "できるだろう",
+                "ということになる",
+                "というわけではない"
+              ],
+              "correctIndex": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar-12",
+      "title": "第12回",
+      "type": "questions-only",
+      "description": "N3文法ドリル第12回",
+      "passages": [
+        {
+          "id": "grammar-12-mondai1",
+          "title": "問題1",
+          "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g12-m1-q1",
+              "questionText": "かぜを治したいのなら、薬を飲んで今日一日ゆっくり（　　）。",
+              "options": [
+                "休むことだ",
+                "休むものだ",
+                "休みたいことだ",
+                "休みたいものだ"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g12-m1-q2",
+              "questionText": "雨の日は事故が（　　）ので、運転するときは注意しましょう。",
+              "options": [
+                "起きやすい",
+                "起きたがる",
+                "起こしがちな",
+                "起こすっぽい"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g12-m1-q3",
+              "questionText": "この二つのドラマの内容は驚く（　　）よく似ている。",
+              "options": [
+                "ほど",
+                "まで",
+                "らしく",
+                "みたいに"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g12-m1-q4",
+              "questionText": "そんなに簡単に夢をあきらめる（　　）。がんばれ！",
+              "options": [
+                "ことじゃない",
+                "べきじゃない",
+                "はずじゃない",
+                "わけじゃない"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "g12-m1-q5",
+              "questionText": "あんなに驚いた様子（　　）、彼は本当に何も知らなかったのだろう。",
+              "options": [
+                "とすれば",
+                "と思えば",
+                "からすると",
+                "からいうと"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g12-m1-q6",
+              "questionText": "悩んで（　　）いないで、まずはとにかく一度やってみなさい。",
+              "options": [
+                "ばかり",
+                "ばかりか",
+                "ばかりで",
+                "ばかりに"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g12-m1-q7",
+              "questionText": "この川（　　）歩いていくと、大きい道に出ます。",
+              "options": [
+                "に沿って",
+                "とともに",
+                "につれて",
+                "によって"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g12-m1-q8",
+              "questionText": "A:明日の会議で使うから、その資料、今日中に20部コピー（　　）。\nB:はい、わかりました。",
+              "options": [
+                "しといて",
+                "しちゃった",
+                "してごらん",
+                "してみよう"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g12-m1-q9",
+              "questionText": "来年試験を（　　）、今からもっと勉強しなきゃだめだよ。",
+              "options": [
+                "受けたら",
+                "受ければ",
+                "受けるのなら",
+                "受けるのでは"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g12-m1-q10",
+              "questionText": "この辺は電車もバスもないから、タクシーで（　　）。",
+              "options": [
+                "行くほどだ",
+                "行きたくない",
+                "行くしかない",
+                "行きっこない"
+              ],
+              "correctIndex": 2
+            }
+          ]
+        },
+        {
+          "id": "grammar-12-mondai2",
+          "title": "問題2",
+          "mondaiHeader": "つぎの文の＿★＿に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g12-m2-q1",
+              "questionText": "彼＿＿　＿＿　★　＿＿ 歌手はいないだろう。",
+              "options": [
+                "ほど",
+                "多い",
+                "ファンが",
+                "若い女性の"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g12-m2-q2",
+              "questionText": "私が陸上選手といっしょに走ると遅すぎて、＿＿　＿＿　★　＿＿ らしい。",
+              "options": [
+                "まるで",
+                "ように",
+                "見える",
+                "歩いている"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "g12-m2-q3",
+              "questionText": "一晩くらいなら、寝ないで＿＿　＿＿　★　＿＿ ないだろう。",
+              "options": [
+                "は",
+                "ことも",
+                "できなく",
+                "仕事する"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g12-m2-q4",
+              "questionText": "そんなに急いで＿＿　＿＿　★　＿＿ のに。",
+              "options": [
+                "いい",
+                "帰らずに",
+                "していけば",
+                "食事ぐらい"
+              ],
+              "correctIndex": 2
+            }
+          ]
+        },
+        {
+          "id": "grammar-12-mondai3",
+          "title": "問題3",
+          "mondaiHeader": "つぎの文章を読んで、1から3の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "passageText": "今の社会において、車はなくてはならない道具のひとつとなっています。物を運んだり、学校や会社や病院に行ったりと、車がない生活は想像できません。\n[ 1 ]、車は使い方をまちがえると、自分や他の人を傷つけたり、人に迷惑をかけたりするものとなってしまいます。運転中のちょっとした不注意やスピード違反が、死亡事故などの大事故につながり[ 2 ]。車を運転する人は、そのことをいつも考えながら、注意して運転しなければなりません。\n運転する人が安全運転を心がける[ 3 ]、道を歩く人も、まわりをよく見て行動することが大切です。運転する人と歩く人、みんなで安全な車社会を作っていきましょう。",
+          "questions": [
+            {
+              "id": "g12-m3-q1",
+              "questionText": "1",
+              "options": [
+                "しかし",
+                "すると",
+                "そのうえ",
+                "そればかりか"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g12-m3-q2",
+              "questionText": "2",
+              "options": [
+                "かねません",
+                "ものでしょうか",
+                "おそれがあります",
+                "ことになります"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g12-m3-q3",
+              "questionText": "3",
+              "options": [
+                "ように",
+                "つもりで",
+                "ことによって",
+                "ことはもちろん"
+              ],
+              "correctIndex": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar-13",
+      "title": "第13回",
+      "type": "questions-only",
+      "description": "N3文法ドリル第13回",
+      "passages": [
+        {
+          "id": "grammar-13-mondai1",
+          "title": "問題1",
+          "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g13-m1-q1",
+              "questionText": "お帰りの（　　）は、忘れ物のないようにご注意ください。",
+              "options": [
+                "際に",
+                "うちに",
+                "たびに",
+                "ところに"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g13-m1-q2",
+              "questionText": "部屋の中が暑く（　　）から、ちょっと窓を開けましょう。",
+              "options": [
+                "してきた",
+                "なってきた",
+                "していった",
+                "なっていった"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "g13-m1-q3",
+              "questionText": "教室を出るときは、電気を消すのを（　　）。",
+              "options": [
+                "忘れず",
+                "忘れずに",
+                "忘れるように",
+                "忘れるよう"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "g13-m1-q4",
+              "questionText": "ご主人が亡くなったあと、彼女は一人で5人の子どもを育て（　　）。",
+              "options": [
+                "あげた",
+                "かけた",
+                "きれた",
+                "たてた"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g13-m1-q5",
+              "questionText": "この店は、他の店（　　）値段は高いが、サービスがいいので人気がある。",
+              "options": [
+                "によると",
+                "に比べて",
+                "にかわって",
+                "に対して"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "g13-m1-q6",
+              "questionText": "他の人にはきたなく見えても、私（　　）大切な宝物です。",
+              "options": [
+                "にとっては",
+                "にとっても",
+                "にしては",
+                "にしても"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "g13-m1-q7",
+              "questionText": "初めてケーキを作ってみたら、びっくりする（　　）まずかった。",
+              "options": [
+                "さえ",
+                "まで",
+                "かぎり",
+                "ぐらい"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "g13-m1-q8",
+              "questionText": "すみません、この場所への行き方を教えて（　　）のですが……。",
+              "options": [
+                "あげたい",
+                "くれません",
+                "いただきたい",
+                "もらえません"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g13-m1-q9",
+              "questionText": "大事な会議（　　）、急に気分が悪くなってしまった。",
+              "options": [
+                "でさえ",
+                "の最中に",
+                "のところに",
+                "のわりには"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "g13-m1-q10",
+              "questionText": "雨が（　　）うちに早く家に帰ろう。",
+              "options": [
+                "降りかける",
+                "降り始める",
+                "降り出さない",
+                "降りっこない"
+              ],
+              "correctIndex": 2
+            }
+          ]
+        },
+        {
+          "id": "grammar-13-mondai2",
+          "title": "問題2",
+          "mondaiHeader": "つぎの文の＿★＿に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "g13-m2-q1",
+              "questionText": "明日の試合、＿＿　＿＿　★　＿＿ まであきらめないぞ。",
+              "options": [
+                "最後",
+                "たとえ",
+                "優勝は",
+                "無理でも"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "g13-m2-q2",
+              "questionText": "この道路は工事＿＿　＿＿　★　＿＿ 車の通行ができなくなります。",
+              "options": [
+                "に",
+                "ほど",
+                "1週間",
+                "ともない"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "g13-m2-q3",
+              "questionText": "昨日からうちの猫は元気がない。＿＿　＿＿　★　＿＿ から心配だ。",
+              "options": [
+                "水",
+                "さえ",
+                "しない",
+                "飲もうと"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "g13-m2-q4",
+              "questionText": "そのお客さんは1時間も＿＿　＿＿　★　＿＿ する自転車を買っていった。",
+              "options": [
+                "も",
+                "すえに",
+                "迷った",
+                "10万円"
+              ],
+              "correctIndex": 3
+            }
+          ]
+        },
+        {
+          "id": "grammar-13-mondai3",
+          "title": "問題3",
+          "mondaiHeader": "つぎの文章を読んで、1から3の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+          "passageText": "「もしお金があったら、新しいビジネスを始めてみたい」「資金さえ[ 1-a ]このアイディアを生かせる[ 1-b ]」と思っている人は多いだろう。そのような人のために、インターネットを通して気軽にウェブ上で資金が調達できるサービスが生まれた。\nたとえば、自分でデザインしたシャツを広く売りたいと考えた場合、まず、そのデザインをウェブ上で公開する。そして、これを作るためにいくら必要だと、資金の協力をお願いするのである。お金を出してくれた人には、金額[ 2 ]、そのシャツを贈ったり、利益の一部を返したりする。アメリカでは1億円以上の資金を集めた例もあるそうだ。\n以前だったら、お金は銀行で借りるのがふつうだったが、今は、お金を集める方法も[ 3 ]ようだ。",
+          "questions": [
+            {
+              "id": "g13-m3-q1",
+              "questionText": "1",
+              "options": [
+                "aあると / bので",
+                "aあると / bのに",
+                "aあれば / bので",
+                "aあれば / bのに"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "g13-m3-q2",
+              "questionText": "2",
+              "options": [
+                "を込めて",
+                "に応じて",
+                "にかわって",
+                "をめぐって"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "g13-m3-q3",
+              "questionText": "3",
+              "options": [
+                "変わり",
+                "変わる",
+                "変わっていく",
+                "変わってきた"
+              ],
+              "correctIndex": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar-14",
+      "title": "第14回",
+      "mondai_1": [
+        {
+          "sentence": "本当はお酒が飲めない（　　）、無理して飲むから気分が悪くなるんだよ。",
+          "options": [
+            "くせに",
+            "せいで",
+            "ままで",
+            "わりに"
+          ],
+          "correct_index": 0
+        },
+        {
+          "sentence": "バイクには乗れる（　　）乗れますが、ふだんはあまり乗りません。",
+          "options": [
+            "ことは",
+            "わけは",
+            "ことには",
+            "わけには"
+          ],
+          "correct_index": 0
+        },
+        {
+          "sentence": "A：荷物がまだ届かないんです。\nB：昨日送ったのなら、今日の午後には（　　）なんですが……。",
+          "options": [
+            "着くはず",
+            "着くべき",
+            "着いたもの",
+            "着いたわけ"
+          ],
+          "correct_index": 0
+        },
+        {
+          "sentence": "（　　）あちらにおかけになってお待ちください。",
+          "options": [
+            "よろしいと",
+            "よろしければ",
+            "よろしいなら",
+            "よろしい場合"
+          ],
+          "correct_index": 1
+        },
+        {
+          "sentence": "もしこの店が家の近くに（　　）、毎日でも通うのになあ。",
+          "options": [
+            "あると",
+            "あるから",
+            "あったら",
+            "あるとして"
+          ],
+          "correct_index": 2
+        },
+        {
+          "sentence": "明日の最高気温は35度になる（　　）ニュースで言ってたよ。",
+          "options": [
+            "って",
+            "っけ",
+            "だって",
+            "もん"
+          ],
+          "correct_index": 0
+        },
+        {
+          "sentence": "昨日先輩に何曲も（　　）せいで、今日はのどが痛い。",
+          "options": [
+            "歌い続けた",
+            "歌い切った",
+            "歌わされた",
+            "歌ってしまった"
+          ],
+          "correct_index": 2
+        },
+        {
+          "sentence": "仕事に慣れる（　　）、だんだん会社が楽しくなってきた。",
+          "options": [
+            "ために",
+            "しだいに",
+            "によって",
+            "にしたがって"
+          ],
+          "correct_index": 3
+        },
+        {
+          "sentence": "この学校では大学進学に力を入れる（　　）、クラブ活動も活発だ。",
+          "options": [
+            "一方",
+            "と反対に",
+            "に対して",
+            "にかわって"
+          ],
+          "correct_index": 0
+        },
+        {
+          "sentence": "2010年の冬のオリンピックはカナダのバンクーバー（　　）開催された。",
+          "options": [
+            "において",
+            "にとって",
+            "に応じて",
+            "にあたって"
+          ],
+          "correct_index": 0
+        }
+      ],
+      "mondai_2": [
+        {
+          "parts": [
+            "私は大好きなチーズ",
+            "",
+            "",
+            "★",
+            "",
+            "いりません。"
+          ],
+          "options": [
+            "さえ",
+            "何も",
+            "あれば",
+            "他には"
+          ],
+          "correct_index": 3
+        },
+        {
+          "parts": [
+            "私のを使ってください。1回しか使わない",
+            "",
+            "",
+            "★",
+            "",
+            "ありませんよ。"
+          ],
+          "options": [
+            "のに",
+            "買う",
+            "ことは",
+            "わざわざ"
+          ],
+          "correct_index": 1
+        },
+        {
+          "parts": [
+            "コンタクトレンズを",
+            "",
+            "",
+            "★",
+            "",
+            "目が痛い。"
+          ],
+          "options": [
+            "まま",
+            "せいで",
+            "つけた",
+            "寝てしまった"
+          ],
+          "correct_index": 3
+        },
+        {
+          "parts": [
+            "こんなに忙しかったら、",
+            "",
+            "",
+            "★",
+            "",
+            "ない。"
+          ],
+          "options": [
+            "も",
+            "なんて",
+            "夏休み",
+            "とれそう"
+          ],
+          "correct_index": 3
+        }
+      ],
+      "mondai_3": {
+        "passage": "「ため息をつく[ 1 ]幸せが逃げていく」ということばを聞いたことがある人も多いだろう。疲れたときや、悩みがあるとき、フーッとため息が出てしまうことがよくある。\nでは、ため息はなぜ出るのだろうか。\n人は、元気がなくなると、自然に下を向いて姿勢が悪くなり[ 2 ]。このようなときは、気づかないうちに息が浅くなっていて、十分に息を吸ったりはいたりしていないことが多い。すると、脳や体に送られる酸素が少なくなる。そこで、体は自然に大きく息を吸い込んで、脳や体に新鮮な空気を送ろうとする。[ 3 ]、ため息なのだ。\nため息をつくと「幸せが逃げていく」のではなく、実は反対に、ため息のおかげでまた元気になれるのである。",
+        "questions": [
+          {
+            "options": [
+              "たびに",
+              "わりに",
+              "ついでに",
+              "とおりに"
+            ],
+            "correct_index": 0
+          },
+          {
+            "options": [
+              "かける",
+              "すぎる",
+              "がちだ",
+              "たがる"
+            ],
+            "correct_index": 2
+          },
+          {
+            "options": [
+              "これが",
+              "これで",
+              "これは",
+              "これさえ"
+            ],
+            "correct_index": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "grammar-15",
+      "title": "第15回",
+      "mondai_1": [
+        {
+          "sentence": "茶道や書道（　　）、日本の伝統文化は海外でも人気がある。",
+          "options": [
+            "をはじめ",
+            "を問わず",
+            "にわたって",
+            "をめぐって"
+          ],
+          "correct_index": 0
+        },
+        {
+          "sentence": "チョコレートをがまんするなんてできない。だって大好き（　　）。",
+          "options": [
+            "なのです",
+            "なもんか",
+            "なんだもん",
+            "なんだって"
+          ],
+          "correct_index": 2
+        },
+        {
+          "sentence": "（　　）考えても、そんな計画が成功するとは思えない。",
+          "options": [
+            "どう",
+            "なんで",
+            "いくらでも",
+            "どうして"
+          ],
+          "correct_index": 0
+        },
+        {
+          "sentence": "当店ではご予算（　　）お食事プランをご用意しております。",
+          "options": [
+            "に応じた",
+            "に関した",
+            "においての",
+            "にとっての"
+          ],
+          "correct_index": 0
+        },
+        {
+          "sentence": "私が卒業した小学校は20年前とほとんど変わっていなくて、昔（　　）。",
+          "options": [
+            "らしかった",
+            "のはずだった",
+            "のままだった",
+            "みたいだった"
+          ],
+          "correct_index": 2
+        },
+        {
+          "sentence": "こんなに厚い本は読めないと思っていたが、半年かかって全部読み（　　）。",
+          "options": [
+            "あげた",
+            "きった",
+            "だした",
+            "ぬいた"
+          ],
+          "correct_index": 1
+        },
+        {
+          "sentence": "飼っている犬がいなくなって（　　）心配したが、三日後に戻ってきた。",
+          "options": [
+            "眠るほど",
+            "眠るように",
+            "眠れないほど",
+            "眠れないように"
+          ],
+          "correct_index": 2
+        },
+        {
+          "sentence": "子どもがどんなに（　　）、必要じゃないものは買わないようにしています。",
+          "options": [
+            "ほしがっても",
+            "ほしがったら",
+            "ほしそうなら",
+            "ほしそうだから"
+          ],
+          "correct_index": 0
+        },
+        {
+          "sentence": "地球の人口は、今後もますます（　　）だろう。",
+          "options": [
+            "増え出す",
+            "増えていく",
+            "増えてくる",
+            "増えたがる"
+          ],
+          "correct_index": 1
+        },
+        {
+          "sentence": "会社を出て駅のほうに（　　）が、忘れ物に気がついてまた会社に戻った。",
+          "options": [
+            "行きかけた",
+            "行きそうだ",
+            "行くようだ",
+            "行きがちだ"
+          ],
+          "correct_index": 0
+        }
+      ],
+      "mondai_2": [
+        {
+          "parts": [
+            "欠席する",
+            "",
+            "",
+            "★",
+            "",
+            "してください。"
+          ],
+          "options": [
+            "際は",
+            "必ず",
+            "ように",
+            "連絡する"
+          ],
+          "correct_index": 3
+        },
+        {
+          "parts": [
+            "こちらの新製品",
+            "",
+            "",
+            "★",
+            "",
+            "もよろしいでしょうか。"
+          ],
+          "options": [
+            "説明",
+            "させて",
+            "について",
+            "いただいて"
+          ],
+          "correct_index": 1
+        },
+        {
+          "parts": [
+            "みなさんの期待",
+            "",
+            "",
+            "★",
+            "",
+            "ようにがんばります。"
+          ],
+          "options": [
+            "に",
+            "いい結果",
+            "が出せる",
+            "こたえて"
+          ],
+          "correct_index": 3
+        },
+        {
+          "parts": [
+            "全然勉強を",
+            "",
+            "",
+            "★",
+            "",
+            "点がとれてびっくりした。"
+          ],
+          "options": [
+            "は",
+            "いい",
+            "わりに",
+            "しなかった"
+          ],
+          "correct_index": 0
+        }
+      ],
+      "mondai_3": {
+        "passage": "世界には約3000種類のヘビの仲間がいる。そのうち毒を持っているヘビは400種類ほどで、世界でもっとも大きい毒ヘビは、インドからインドネシア[ 1 ]広がる森林に住む「キングコブラ」というヘビだ。\nキングコブラの体長はふつう4メートルくらいだが、大きいものになると、5メートル以上もあるそうだ。しかも、敵にあうと、首の横を広げて頭を持ち上げ、自分の体をさらに大きく見せようとする。さらに、シューという音を出し、相手を[ 2 ]のだ。\nキングコブラは、毒ヘビの中で一番毒が強いというわけではないが、一度に大量の毒を敵の体内に入れることができる。そのため、ゾウのように体の大きい動物[ 3 ]、一度かまれただけで死んでしまうことがあるほど危険なのである。",
+        "questions": [
+          {
+            "options": [
+              "とともに",
+              "にかけて",
+              "に沿って",
+              "を通して"
+            ],
+            "correct_index": 1
+          },
+          {
+            "options": [
+              "こわがる",
+              "こわがらせる",
+              "こわがられる",
+              "こわがっている"
+            ],
+            "correct_index": 1
+          },
+          {
+            "options": [
+              "でさえ",
+              "なんか",
+              "ばかり",
+              "だからこそ"
+            ],
+            "correct_index": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "grammar-training-3",
+      "title": "集中トレーニング ③",
+      "type": "questions-only",
+      "description": "N3文法 集中トレーニング ③ 助詞（３）",
+      "passages": [
+        {
+          "id": "grammar-t3-mondai1",
+          "title": "助詞（３）",
+          "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、えらびなさい。",
+          "questions": [
+            {
+              "id": "gt3-m1-q1",
+              "questionText": "帰国（　）際して必要なことは、このプリントに書いてあります。",
+              "options": [
+                "に",
+                "が"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "gt3-m1-q2",
+              "questionText": "田中先生は海外出張中（　）つき、本日の授業は休講です。",
+              "options": [
+                "の",
+                "に"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "gt3-m1-q3",
+              "questionText": "その国際会議は、３日間（　）わたって開かれるそうだ。",
+              "options": [
+                "に",
+                "を"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "gt3-m1-q4",
+              "questionText": "私は小田さんほどまじめな人（　）いないと思う。",
+              "options": [
+                "が",
+                "は"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "gt3-m1-q5",
+              "questionText": "夢をかなえるには、本人の努力（　）加え、まわりの人のサポートも必要だ。",
+              "options": [
+                "と",
+                "に"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "gt3-m1-q6",
+              "questionText": "親の期待（　）反して、彼はその会社に入らなかった。",
+              "options": [
+                "と",
+                "に"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "gt3-m1-q7",
+              "questionText": "木村先生（　）はじめ、先生方にはたいへんお世話になりました。",
+              "options": [
+                "が",
+                "を"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "gt3-m1-q8",
+              "questionText": "その番組（　）通じて集まった募金は、1億円を超えたらしい。",
+              "options": [
+                "に",
+                "を"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "gt3-m1-q9",
+              "questionText": "お客様のニーズ（　）こたえて、新しい商品を作っていきたい。",
+              "options": [
+                "に",
+                "を"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "gt3-m1-q10",
+              "questionText": "うちの近くには、スーパー（　）もちろん、コンビニもない。",
+              "options": [
+                "が",
+                "は"
+              ],
+              "correctIndex": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar-training-4",
+      "title": "集中トレーニング ④",
+      "type": "questions-only",
+      "description": "N3文法 集中トレーニング ④ 助詞（４）",
+      "passages": [
+        {
+          "id": "grammar-t4-mondai1",
+          "title": "助詞（４）",
+          "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、えらびなさい。",
+          "questions": [
+            {
+              "id": "gt4-m1-q1",
+              "questionText": "好きな所に行ける（　）したら、どこに行きたいですか。",
+              "options": [
+                "と",
+                "に"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "gt4-m1-q2",
+              "questionText": "その女性は、60代（　）しては若く見える。",
+              "options": [
+                "と",
+                "に"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "gt4-m1-q3",
+              "questionText": "利用者の増加（　）ともなって、トラブルも増えている。",
+              "options": [
+                "に",
+                "と"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "gt4-m1-q4",
+              "questionText": "はじめは緊張したが、時間がたつ（　）つれて慣れてきた。",
+              "options": [
+                "に",
+                "と"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "gt4-m1-q5",
+              "questionText": "試合に勝つため、チームの仲間（　）ともに、一生懸命練習した。",
+              "options": [
+                "を",
+                "と"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "gt4-m1-q6",
+              "questionText": "私はここで医師（　）して働いています。",
+              "options": [
+                "に",
+                "と"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "gt4-m1-q7",
+              "questionText": "このグループは、リーダー（　）中心として、よくまとまっている。",
+              "options": [
+                "が",
+                "を"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "gt4-m1-q8",
+              "questionText": "佐藤先生の指導（　）もと、研究を続けた。",
+              "options": [
+                "の",
+                "が"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "gt4-m1-q9",
+              "questionText": "ボランティア活動（　）通して、いろいろなことを学んだ。",
+              "options": [
+                "に",
+                "を"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "gt4-m1-q10",
+              "questionText": "上司や同僚の協力（　）抜きにして、この仕事は進められない。",
+              "options": [
+                "が",
+                "を"
+              ],
+              "correctIndex": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar-training-5",
+      "title": "集中トレーニング ⑤",
+      "mondai_1": [
+        {
+          "sentence": "日本人だからといって、必ずしもすしが好きだとは（　　）。",
+          "options": [
+            "かぎる",
+            "かぎらない"
+          ],
+          "correct_index": 1
+        },
+        {
+          "sentence": "子どものころはよく祖母に遊んでもらった（　　）。",
+          "options": [
+            "ことだ",
+            "ものだ"
+          ],
+          "correct_index": 1
+        },
+        {
+          "sentence": "妹は私の持っているものを何でも（　　）。",
+          "options": [
+            "ほしい",
+            "ほしがる"
+          ],
+          "correct_index": 1
+        },
+        {
+          "sentence": "こんなにたくさんの資料、明日までにはとても読み（　　）。",
+          "options": [
+            "きれる",
+            "きれない"
+          ],
+          "correct_index": 1
+        },
+        {
+          "sentence": "今回の手術はかなり（　　）。",
+          "options": [
+            "難しい",
+            "難しくない"
+          ],
+          "correct_index": 0
+        },
+        {
+          "sentence": "初めて日本に来た日のことを、私は決して（　　）。",
+          "options": [
+            "忘れる",
+            "忘れない"
+          ],
+          "correct_index": 1
+        },
+        {
+          "sentence": "そんな所に置いておいたら、子どもが壊し（　　）。",
+          "options": [
+            "かねる",
+            "かねない"
+          ],
+          "correct_index": 1
+        },
+        {
+          "sentence": "水曜が定休日ということは、日曜は営業しているという（　　）。",
+          "options": [
+            "ことか",
+            "ものか"
+          ],
+          "correct_index": 0
+        },
+        {
+          "sentence": "どうか父の病気が治ります（　　）。",
+          "options": [
+            "そうに",
+            "ように"
+          ],
+          "correct_index": 1
+        },
+        {
+          "sentence": "明日、健康診断があるん（　　）。知ってた？",
+          "options": [
+            "って",
+            "だって"
+          ],
+          "correct_index": 1
         }
       ]
     }
