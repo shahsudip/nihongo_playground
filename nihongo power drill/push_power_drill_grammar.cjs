@@ -30,6 +30,7 @@ initializeApp({
 });
 
 const db = getFirestore();
+db.settings({ ignoreUndefinedProperties: true });
 console.log('Firestore initialized successfully.');
 
 // 2. Read the grammar JSON file ONLY

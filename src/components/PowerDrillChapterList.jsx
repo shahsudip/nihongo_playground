@@ -43,12 +43,13 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
     let num = parseInt(parts[1]) || 0;
     
     if (chapterId.includes('training')) {
+      let tNum = 1;
       if (chapterId.startsWith('training')) {
-        num = (parseInt(parts[1]) || 1) * 5; 
+        tNum = parseInt(parts[1]) || 1; 
       } else {
-        const tNum = parseInt(parts[2]) || 1;
-        num = Math.ceil(tNum / 2) * 5;
+        tNum = parseInt(parts[2]) || 1;
       }
+      num = Math.ceil(tNum / 2) * 5;
     } else if (chapterId.includes('review')) {
        num = parseInt(parts[1]) || 0;
     }

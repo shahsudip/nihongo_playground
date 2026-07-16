@@ -3125,6 +3125,236 @@
       }
     },
     {
+      "id": "grammar-training-1",
+      "title": "集中トレーニング ①",
+      "type": "questions-only",
+      "description": "助詞（１）",
+      "group": "集中トレーニング",
+      "passages": [
+        {
+          "id": "grammar-training-1-mondai1",
+          "title": "問題1",
+          "questions": [
+            {
+              "id": "gt1-m1-q1",
+              "questionText": "彼の話（　）よれば、そこはとても危ないところらしい。",
+              "options": [
+                "と",
+                "に"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "gt1-m1-q2",
+              "questionText": "冬のスポーツ（　）いえば、スキーでしょう。",
+              "options": [
+                "を",
+                "と"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "gt1-m1-q3",
+              "questionText": "出かける母（　）かわって、今日は私が食事の準備をした。",
+              "options": [
+                "に",
+                "が"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "gt1-m1-q4",
+              "questionText": "町の人（　）とって、この公園はとても大事な場所だ。",
+              "options": [
+                "に",
+                "を"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "gt1-m1-q5",
+              "questionText": "私は学生時代（　）比べて積極的になったと思う。",
+              "options": [
+                "に",
+                "を"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "gt1-m1-q6",
+              "questionText": "あの人の結婚（　）対する考え方は、他の人とは違う。",
+              "options": [
+                "が",
+                "に"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "gt1-m1-q7",
+              "questionText": "入院中の社長（　）かわりに、私がごあいさつに参りました。",
+              "options": [
+                "の",
+                "に"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "gt1-m1-q8",
+              "questionText": "けが（　）いっても、たいしたことはないので、心配しないでください。",
+              "options": [
+                "に",
+                "と"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "gt1-m1-q9",
+              "questionText": "中国の歴史（　）関してくわしい人を知りませんか。",
+              "options": [
+                "に",
+                "を"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "gt1-m1-q10",
+              "questionText": "同じ国でも、地域（　）よって言葉が違う。",
+              "options": [
+                "に",
+                "が"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar-training-2",
+      "title": "集中トレーニング ②",
+      "type": "questions-only",
+      "description": "助詞（２）",
+      "group": "集中トレーニング",
+      "passages": [
+        {
+          "id": "grammar-training-2-mondai1",
+          "title": "問題1",
+          "questions": [
+            {
+              "id": "gt2-m1-q1",
+              "questionText": "入学式は、午前10時から体育館（　）おいて行われます。",
+              "options": [
+                "に",
+                "で"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "gt2-m1-q2",
+              "questionText": "この商品は、性別（　）問わず、ご使用になれます。",
+              "options": [
+                "が",
+                "を"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "gt2-m1-q3",
+              "questionText": "まず、発表を始める（　）あたって、注意点を申しあげます。",
+              "options": [
+                "と",
+                "に"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "gt2-m1-q4",
+              "questionText": "これは、彼女の小さいころの体験（　）もとにして書かれた小説だ。",
+              "options": [
+                "に",
+                "を"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "gt2-m1-q5",
+              "questionText": "このドラマは、実際に起こった事件（　）もとづいて作られた。",
+              "options": [
+                "に",
+                "を"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "gt2-m1-q6",
+              "questionText": "年をとる（　）したがって、疲れやすくなってきた。",
+              "options": [
+                "と",
+                "に"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "gt2-m1-q7",
+              "questionText": "子どもの教育問題（　）めぐって、夫婦の意見が対立している。",
+              "options": [
+                "に",
+                "を"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "gt2-m1-q8",
+              "questionText": "この店は、客の希望（　）応じた料理を出してくれる。",
+              "options": [
+                "を",
+                "に"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "gt2-m1-q9",
+              "questionText": "合格の知らせを聞いて、嬉しさ（　）あまり泣いてしまった。",
+              "options": [
+                "の",
+                "に"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "gt2-m1-q10",
+              "questionText": "ここにいる人たちのために、心（　）込めて歌おう。",
+              "options": [
+                "に",
+                "を"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "grammar-training-3",
       "title": "集中トレーニング ③",
       "type": "questions-only",
@@ -3417,6 +3647,240 @@
             "だって"
           ],
           "correct_index": 1
+        }
+      ]
+    },
+    {
+      "id": "grammar-10",
+      "title": "第10回",
+      "type": "questions-only",
+      "description": "第10回 grammar drills.",
+      "passages": [
+        {
+          "id": "grammar-10-mondai1",
+          "title": "問題1",
+          "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、１・２・３・４から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "q1",
+              "questionText": "もし引っ越し（　）捨てるものがあったら、私に教えてください。",
+              "options": [
+                "の際に",
+                "ながら",
+                "最中に",
+                "のうちに"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "q2",
+              "questionText": "その箱を開けた（　）、中から何かが飛び出してきた。",
+              "options": [
+                "とたん",
+                "ところが",
+                "とすると",
+                "とともに"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "q3",
+              "questionText": "小さいころは体が弱くてかぜを（　）が、今はずいぶん丈夫になった。",
+              "options": [
+                "ひきたかった",
+                "ひこうとした",
+                "ひきがちだった",
+                "ひきたがった"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "q4",
+              "questionText": "また宿題を忘れてしまった。これまでに（　）先生に注意されたことか。",
+              "options": [
+                "いつ",
+                "何度",
+                "いつも",
+                "何度も"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            },
+            {
+              "id": "q5",
+              "questionText": "今日は雨は（　）から、かさは持っていかなくてもいいだろう。",
+              "options": [
+                "降りそうもない",
+                "降ろうとしない",
+                "降るにちがいない",
+                "降るつもりがない"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "q6",
+              "questionText": "飲めば（　）やせられる薬なんて、信じないほうがいい。",
+              "options": [
+                "飲むほど",
+                "飲まずに",
+                "飲もうと",
+                "飲んでも"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "q7",
+              "questionText": "兄が仕事をやめたことは、両親（　）知らなかったそうだ。",
+              "options": [
+                "ほど",
+                "でこそ",
+                "でさえ",
+                "ばかり"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "q8",
+              "questionText": "（　）ハンバーガーが好きでも、毎日食べるのは体によくないだろう。",
+              "options": [
+                "いくら",
+                "なんと",
+                "たとえば",
+                "どうしても"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "q9",
+              "questionText": "この手紙、３時間もかけて書いたの？（　）短いね。",
+              "options": [
+                "それでは",
+                "それなら",
+                "そのかわり",
+                "それにしては"
+              ],
+              "correctIndex": 3,
+              "explanation": ""
+            },
+            {
+              "id": "q10",
+              "questionText": "みなさん、スピーチのときは（　）大きな声ではっきりと話してくださいね。",
+              "options": [
+                "恥ずかしくなくて",
+                "恥ずかしがらないで",
+                "恥ずかしくないなら",
+                "恥ずかしそうなのに"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            }
+          ]
+        },
+        {
+          "id": "grammar-10-mondai2",
+          "title": "問題2",
+          "mondaiHeader": "つぎの文の ★ に入る最もよいものを、１・２・３・４から一つえらびなさい。",
+          "questions": [
+            {
+              "id": "m2-q1",
+              "questionText": "夏休み中に旅行に行く ＿ ＿ ★ ＿ おいたほうがいいですよ。",
+              "options": [
+                "なら",
+                "つもり",
+                "早めに",
+                "予約して"
+              ],
+              "correctIndex": 2,
+              "explanation": "旅行に行くつもりなら、早めに予約しておいたほうがいいですよ。"
+            },
+            {
+              "id": "m2-q2",
+              "questionText": "今日の実験で ＿ ＿ ★ ＿ 来週までにレポートを書いてきてください。",
+              "options": [
+                "を",
+                "データ",
+                "もとに",
+                "得られた"
+              ],
+              "correctIndex": 0,
+              "explanation": "実験で得られたデータをもとに来週までにレポートを書いてきてください。"
+            },
+            {
+              "id": "m2-q3",
+              "questionText": "危険ですから電気製品には ＿ ＿ ★ ＿ ください。",
+              "options": [
+                "して",
+                "ように",
+                "決して",
+                "水をかけない"
+              ],
+              "correctIndex": 1,
+              "explanation": "決して水をかけないようにしてください。"
+            },
+            {
+              "id": "m2-q4",
+              "questionText": "試合に負ける ＿ ＿ ★ ＿ 勝てない。",
+              "options": [
+                "たびに",
+                "と思うが",
+                "今度こそは",
+                "何度やっても"
+              ],
+              "correctIndex": 1,
+              "explanation": "負けるたびに今度こそはと思うが何度やっても勝てない。"
+            }
+          ]
+        },
+        {
+          "id": "grammar-10-mondai3",
+          "title": "問題3",
+          "mondaiHeader": "つぎの文章を読んで、文章の中に入る最もよいものを、１・２・３・４から一つえらびなさい。",
+          "text": "「身だしなみ」というのは、服装や髪型などに気をつけることです。「おしゃれ」という言葉もありますが、では、「身だしなみ」は「おしゃれ」とどう違うのでしょうか。\n「おしゃれ」は［ 1 ］が基準となるのに対して、「身だしなみ」は、［ 2 ］が基準となります。つまり、自分の好きなものを着て、自分のために楽しむファッションは「おしゃれ」ですが、「身だしなみ」というのは、相手によい印象を与えるためのものなのです。そのためには、外見［ 3 ］、態度や言葉づかいなどの内面をみがくことも必要です。\n仕事をするきの「身だしなみ」としては、次の3点が大切です。まず、清潔であること。次に、時や場所［ 4 ］ものであること。そして、動きやすく仕事がしやすいことです。",
+          "questions": [
+            {
+              "id": "m3-q1",
+              "questionText": "［ 1 ］、［ 2 ］に入る組み合わせとして正しいものはどれか。",
+              "options": [
+                "1: 自分の目 / 2: 他人の目",
+                "1: 他人の目 / 2: 自分の目",
+                "1: 自分の目 / 2: 自分の目",
+                "1: 他人の目 / 2: 他人の目"
+              ],
+              "correctIndex": 0,
+              "explanation": ""
+            },
+            {
+              "id": "m3-q2",
+              "questionText": "［ 3 ］に入る言葉はどれか。",
+              "options": [
+                "だけしか",
+                "というより",
+                "ばかりでなく",
+                "を抜きにして"
+              ],
+              "correctIndex": 2,
+              "explanation": ""
+            },
+            {
+              "id": "m3-q3",
+              "questionText": "［ 4 ］に入る言葉はどれか。",
+              "options": [
+                "をめぐる",
+                "に応じた",
+                "に先立つ",
+                "を中心とした"
+              ],
+              "correctIndex": 1,
+              "explanation": ""
+            }
+          ]
         }
       ]
     }
