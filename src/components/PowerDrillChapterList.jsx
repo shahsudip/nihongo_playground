@@ -25,7 +25,8 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
       const parts = id.split('-');
       if (id.includes('training')) {
         const tNum = id.startsWith('training') ? parseInt(parts[1]) : parseInt(parts[2]);
-        return (tNum || 1) * 5 + 0.1; // e.g. training 3 -> 15.1
+        const groupNum = Math.ceil((tNum || 1) / 2);
+        return groupNum * 5 + (tNum % 2 === 1 ? 0.1 : 0.2);
       }
       if (id.includes('review')) {
         return (parseInt(parts[1]) || 0) + 0.1; // vocab-5-review-1 -> 5.1
@@ -45,7 +46,8 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
       if (chapterId.startsWith('training')) {
         num = (parseInt(parts[1]) || 1) * 5; 
       } else {
-        num = (parseInt(parts[2]) || 1) * 5;
+        const tNum = parseInt(parts[2]) || 1;
+        num = Math.ceil(tNum / 2) * 5;
       }
     } else if (chapterId.includes('review')) {
        num = parseInt(parts[1]) || 0;
