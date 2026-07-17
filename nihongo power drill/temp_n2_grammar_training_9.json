@@ -1,0 +1,115 @@
+{
+  "id": "grammar-training-9",
+  "title": "集中トレーニング⑨",
+  "type": "questions-only",
+  "description": "N2文法ドリル 集中トレーニング⑨ 似ている文型（３）",
+  "group": "Group 3",
+  "sections": [
+    {
+      "title": "問題1",
+      "mondaiHeader": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "questions": [
+        {
+          "id": "g-t9-m1-q1",
+          "questionText": "問1 彼女はジャンプ力（　）、このチームで一番だ。",
+          "options": [
+            "にかけて",
+            "にかけては"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t9-m1-q2",
+          "questionText": "問2 え、これだけ？ これじゃ、やってないも（　）よ。",
+          "options": [
+            "同然だ",
+            "当然だ"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t9-m1-q3",
+          "questionText": "問3 このレストラン、入り口（　）高級そう。とても入れないよ。",
+          "options": [
+            "からして",
+            "からすると"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t9-m1-q4",
+          "questionText": "問4 伊藤さんは現場を見てきた（　）その事故についてくわしく知っていた。",
+          "options": [
+            "かのように",
+            "かのうちに"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t9-m1-q5",
+          "questionText": "問5 定員になり（　）締め切ります。",
+          "options": [
+            "次第",
+            "次第で"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t9-m1-q6",
+          "questionText": "問6 みんなで温泉に行く（　）、いつがいいでしょうね。",
+          "options": [
+            "としても",
+            "としたら"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t9-m1-q7",
+          "questionText": "問7 みんなに宣言してしまった（　）、絶対に実験を成功させなければ。",
+          "options": [
+            "以上",
+            "以来"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t9-m1-q8",
+          "questionText": "問8 田口さんは留学したことがある（　）、イギリスについてよく知っているね。",
+          "options": [
+            "だけで",
+            "だけに"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t9-m1-q9",
+          "questionText": "問9 時間さえ（　）、全部できたのに。",
+          "options": [
+            "あると",
+            "あれば"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t9-m1-q10",
+          "questionText": "問10 銀行で働いている（　）、たくさん貯金があるわけじゃないよ。",
+          "options": [
+            "からって",
+            "からいって"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

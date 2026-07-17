@@ -77,22 +77,53 @@ const BookQuizTakerPage = () => {
         // Flatten questions
         const flattened = [];
         let gIndex = 0;
-        chapterData.passages?.forEach((passage, passageIdx) => {
-          passage.questions?.forEach((q, qIdx) => {
+        
+        const sectionsOrPassages = chapterData.sections || chapterData.passages;
+        if (sectionsOrPassages && sectionsOrPassages.length > 0) {
+          sectionsOrPassages.forEach((passage, passageIdx) => {
+            passage.questions?.forEach((q, qIdx) => {
+              
+              // Generate Japanese title for Mondai if title is missing
+              let generatedTitle = passage.title;
+              if (!generatedTitle) {
+                if (passage.id && passage.id.includes('mondai-')) {
+                  const mNum = passage.id.split('-').pop();
+                  generatedTitle = `問題${mNum}`;
+                } else {
+                  generatedTitle = `問題${passageIdx + 1}`;
+                }
+              }
+
+              flattened.push({
+                ...q,
+                id: q.id || `${passageIdx}-${qIdx}`, // preserve original id if it exists
+                passageIndex: passageIdx,
+                passageText: passage.passageText || passage.passage || "",
+                passageLayout: passage.passageLayout || "",
+                imageSrc: passage.imageSrc || "",
+                passageTitle: generatedTitle,
+                mondaiHeader: passage.mondaiHeader || passage.instruction || "",
+                passageNotes: passage.passageNotes || "",
+                globalQIndex: gIndex++
+              });
+            });
+          });
+        } else if (chapterData.questions && chapterData.questions.length > 0) {
+          chapterData.questions.forEach((q, qIdx) => {
             flattened.push({
               ...q,
-              id: `${passageIdx}-${qIdx}`,
-              passageIndex: passageIdx,
-              passageText: passage.passageText || "",
-              passageLayout: passage.passageLayout || "",
-              imageSrc: passage.imageSrc || "",
-              passageTitle: passage.title || "Passage",
-              mondaiHeader: passage.mondaiHeader || passage.instruction || "",
-                passageNotes: passage.passageNotes || "",
+              id: `direct-${qIdx}`,
+              passageIndex: 0,
+              passageText: "",
+              passageLayout: "",
+              imageSrc: "",
+              passageTitle: "",
+              mondaiHeader: "",
+              passageNotes: "",
               globalQIndex: gIndex++
             });
           });
-        });
+        }
 
         setQuestions(flattened);
         setCurrentIndex(0);
@@ -268,14 +299,14 @@ const BookQuizTakerPage = () => {
         <div className="w-full mb-6">
           {currentQ.passageTitle && currentQ.passageTitle !== chapter.title && (currentQ.mondaiHeader || currentQ.passageTitle) && (
             <div className="mb-4 px-4 py-3 bg-[var(--color-bg-tertiary)] rounded-lg border border-[var(--color-border)]">
-              <h3 className="text-base font-bold text-[var(--color-text-primary)] mb-1">
-                {currentQ.passageTitle.replace(/^第\d+部\s*/, '')}
-              </h3>
-              {currentQ.mondaiHeader && (
-                <p className="text-sm font-bold text-[var(--color-text-primary)] japanese-text">
-                  {currentQ.mondaiHeader.replace(/^問題\d+\s*/, '')}
-                </p>
-              )}
+              <p className="text-base font-bold text-[var(--color-text-primary)] japanese-text flex items-start gap-3">
+                <span className="whitespace-nowrap">{currentQ.passageTitle.replace(/^第\d+部\s*/, '')}</span>
+                {currentQ.mondaiHeader && (
+                  <span className="text-sm pt-0.5 leading-relaxed">
+                    {currentQ.mondaiHeader.replace(/^問題\d+\s*/, '')}
+                  </span>
+                )}
+              </p>
             </div>
           )}
           

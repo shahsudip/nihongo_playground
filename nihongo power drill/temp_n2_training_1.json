@@ -1,0 +1,135 @@
+{
+  "id": "training-1",
+  "title": "集中トレーニング①（動詞）",
+  "type": "questions-only",
+  "description": "集中トレーニング①：動詞の使い分け（a/b選択・10問）",
+  "sections": [
+    {
+      "title": "集中トレーニング① 動詞",
+      "mondaiHeader": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "passageText": "",
+      "questions": [
+        {
+          "questionText": "迷惑を（　a して　　b かけて）しまって、すみません。",
+          "options": [
+            "a して",
+            "b かけて"
+          ],
+          "correctOption": {
+            "index": 1,
+            "text": "b かけて"
+          },
+          "explanation": "迷惑をかける（めいわくをかける）is the set phrase meaning to cause trouble / inconvenience someone. 迷惑をする is unnatural."
+        },
+        {
+          "questionText": "コーヒーを飲んでいたら、突然いいアイディアが（　a 生えた　　b 浮かんだ）。",
+          "options": [
+            "a 生えた",
+            "b 浮かんだ"
+          ],
+          "correctOption": {
+            "index": 1,
+            "text": "b 浮かんだ"
+          },
+          "explanation": "アイディアが浮かぶ（うかぶ）means an idea came to mind / floated up. 生える（はえる）means to grow (plants/hair), not for ideas."
+        },
+        {
+          "questionText": "ブレーキの調子が悪いので、車を修理に（　a 出した　　b 送った）。",
+          "options": [
+            "a 出した",
+            "b 送った"
+          ],
+          "correctOption": {
+            "index": 0,
+            "text": "a 出した"
+          },
+          "explanation": "修理に出す（しゅうりにだす）means to send something in for repairs. 送る（おくる）means to send/ship, which is less natural here."
+        },
+        {
+          "questionText": "買ったばかりの携帯電話に傷が（　a 出て　　b ついて）しまった。",
+          "options": [
+            "a 出て",
+            "b ついて"
+          ],
+          "correctOption": {
+            "index": 1,
+            "text": "b ついて"
+          },
+          "explanation": "傷がつく（きずがつく）is the set expression meaning a scratch appeared / got scratched. 傷が出る is unnatural."
+        },
+        {
+          "questionText": "事件の責任を（　a とって　　b もって）社長が辞任した。",
+          "options": [
+            "a とって",
+            "b もって"
+          ],
+          "correctOption": {
+            "index": 0,
+            "text": "a とって"
+          },
+          "explanation": "責任をとる（せきにんをとる）means to take responsibility. 責任をもつ means to bear/have responsibility (ongoing), not used for resigning."
+        },
+        {
+          "questionText": "混雑した場所では、子どもの手を（　a つれて　　b ひいて）歩いてください。",
+          "options": [
+            "a つれて",
+            "b ひいて"
+          ],
+          "correctOption": {
+            "index": 1,
+            "text": "b ひいて"
+          },
+          "explanation": "手を引く（てをひく）means to hold a child's hand while walking. 連れる（つれる）means to accompany/bring someone, but not specifically hand-holding."
+        },
+        {
+          "questionText": "健康のために野菜をたくさん（　a えた　　b とった）ほうがいい。",
+          "options": [
+            "a えた",
+            "b とった"
+          ],
+          "correctOption": {
+            "index": 1,
+            "text": "b とった"
+          },
+          "explanation": "野菜をとる（やさいをとる）means to take in / consume vegetables. 野菜をえる（得る）is not natural in this nutritional context."
+        },
+        {
+          "questionText": "3日前から姉に連絡が（　a つかない　　b たたない）。どうしたのだろう。",
+          "options": [
+            "a つかない",
+            "b たたない"
+          ],
+          "correctOption": {
+            "index": 0,
+            "text": "a つかない"
+          },
+          "explanation": "連絡がつく（れんらくがつく）means to be able to reach / get in contact. 連絡がつかない = can't get in touch. 連絡がたたない is unnatural."
+        },
+        {
+          "questionText": "優勝して、新聞に写真と名前が（　a のった　　b あがった）。",
+          "options": [
+            "a のった",
+            "b あがった"
+          ],
+          "correctOption": {
+            "index": 0,
+            "text": "a のった"
+          },
+          "explanation": "新聞にのる（しんぶんにのる）means to appear in / be published in a newspaper. 新聞にあがる is not standard."
+        },
+        {
+          "questionText": "時計の針が12時を（　a あてた　　b さした）。",
+          "options": [
+            "a あてた",
+            "b さした"
+          ],
+          "correctOption": {
+            "index": 1,
+            "text": "b さした"
+          },
+          "explanation": "針がさす（はりがさす）means the clock hand pointed to / indicated. 12時をさした = pointed to 12 o'clock. あてる（当てる）means to aim at or guess."
+        }
+      ]
+    }
+  ]
+}

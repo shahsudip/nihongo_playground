@@ -1,0 +1,115 @@
+{
+  "id": "grammar-training-7",
+  "title": "集中トレーニング⑦",
+  "type": "questions-only",
+  "description": "N2文法 集中トレーニング⑦ 似ている文型（１）",
+  "group": "Group 3",
+  "sections": [
+    {
+      "title": "問題1",
+      "mondaiHeader": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "questions": [
+        {
+          "id": "g-tr7-q1",
+          "questionText": "問1 監督にそんなこと言おう（　）、殴られるぞ。",
+          "options": [
+            "a ものなら",
+            "b ものだから"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr7-q2",
+          "questionText": "問2 遅刻なら（　）、無断で休むとは信じられない。",
+          "options": [
+            "a とにかく",
+            "b まだしも"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr7-q3",
+          "questionText": "問3 このテーマパークは、年齢や性別を（　）人気がある。",
+          "options": [
+            "a 問わず",
+            "b かかわらず"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr7-q4",
+          "questionText": "問4 母が入院したため、家族旅行（　）、大変だった。",
+          "options": [
+            "a どころか",
+            "b どころじゃなく"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr7-q5",
+          "questionText": "問5 何かある（　）、すぐに私が疑われる。",
+          "options": [
+            "a につき",
+            "b につけ"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr7-q6",
+          "questionText": "問6 今のままでは、優勝（　）一回戦で勝つのも難しいだろう。",
+          "options": [
+            "a どころか",
+            "b どころではなく"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr7-q7",
+          "questionText": "問7 うちの犬に（　）、人を噛んだりするはずがない。",
+          "options": [
+            "a かぎり",
+            "b かぎって"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr7-q8",
+          "questionText": "問8 その話（　）、犯人はおそらくA氏だろう。",
+          "options": [
+            "a からいうと",
+            "b からすると"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr7-q9",
+          "questionText": "問9 予約はした（　）、結局忙しくて行けなかった。",
+          "options": [
+            "a ものの",
+            "b ものだが"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr7-q10",
+          "questionText": "問10 そんな話を聞くと、私もひと言意見を（　）いられない。",
+          "options": [
+            "a 言わないでは",
+            "b 言わないでも"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

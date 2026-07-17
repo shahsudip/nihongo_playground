@@ -1,0 +1,249 @@
+{
+  "id": "vocab-4",
+  "title": "第4回",
+  "type": "vocab",
+  "description": "N1文字・語彙ドリル 第4回",
+  "group": "Group 1",
+  "sections": [
+    {
+      "title": "問題1",
+      "mondaiHeader": "次の言葉の読み方として最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-4-m1-q1",
+          "questionText": "問1 彼はついに世界記録を樹立した。",
+          "options": [
+            "きたつ",
+            "きりつ",
+            "じゅたつ",
+            "じゅりつ"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-4-m1-q2",
+          "questionText": "問2 無理なダイエットは健康を損なうので、気をつけましょう。",
+          "options": [
+            "になう",
+            "そこなう",
+            "つぐなう",
+            "うしなう"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-4-m1-q3",
+          "questionText": "問3 あの頃は何もせず、怠惰な毎日を過ごしていた。",
+          "options": [
+            "だいさ",
+            "たいだ",
+            "だいせい",
+            "たいじょう"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-4-m1-q4",
+          "questionText": "問4 彼女は汚らわしいものを見るような目で私を見た。",
+          "options": [
+            "おらわしい",
+            "きたらわしい",
+            "けがらわしい",
+            "よごらわしい"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-4-m1-q5",
+          "questionText": "問5 知らないところで陰湿ないじめが行われていたようだ。",
+          "options": [
+            "いんしつ",
+            "いんじつ",
+            "おんしつ",
+            "おんじつ"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題2",
+      "mondaiHeader": "次の言葉に意味が最も近いものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-4-m2-q1",
+          "questionText": "問1 こんなに値段が高いなら、いっそ自分で作ってみようと思った。",
+          "options": [
+            "いつか",
+            "なんとか",
+            "できるだけ",
+            "思いきって"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-4-m2-q2",
+          "questionText": "問2 我が子がすこやかに育ってくれたことが何より嬉しい。",
+          "options": [
+            "賢く",
+            "美しく",
+            "健康に",
+            "幸福に"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-4-m2-q3",
+          "questionText": "問3 昨日小さなことでけんかをしたので、彼と会うのはきまりが悪い。",
+          "options": [
+            "まだ早い",
+            "気分が悪い",
+            "はずかしい",
+            "やめたほうがいい"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-4-m2-q4",
+          "questionText": "問4 この商品はお客様からのクレームが多かった。",
+          "options": [
+            "感謝",
+            "苦情",
+            "交換",
+            "要望"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-4-m2-q5",
+          "questionText": "問5 その一言で、今まで自分がうぬぼれていたことに気づいた。",
+          "options": [
+            "自信がなかった",
+            "わがままだった",
+            "得意になっていた",
+            "注意が足りなかった"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題3",
+      "mondaiHeader": "次の文の（　）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-4-m3-q1",
+          "questionText": "問1 そのアナウンサーは、鋭い質問で（　）に迫るインタビューをするので人気がある。",
+          "options": [
+            "核心",
+            "心中",
+            "中央",
+            "中核"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-4-m3-q2",
+          "questionText": "問2 事業に必要な資金を（　）するために、いくつもの銀行をまわった。",
+          "options": [
+            "調整",
+            "調達",
+            "達成",
+            "導入"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-4-m3-q3",
+          "questionText": "問3 この委員会は（　）取引を推進することを目的に設立された。",
+          "options": [
+            "公正な",
+            "公明な",
+            "正直な",
+            "素直な"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-4-m3-q4",
+          "questionText": "問4 Aグループと駅で（　）して、同じ電車に乗った。",
+          "options": [
+            "合致",
+            "合成",
+            "合同",
+            "合流"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-4-m3-q5",
+          "questionText": "問5 階段から落ちて、足に大きな（　）ができてしまった。",
+          "options": [
+            "あざ",
+            "しわ",
+            "ほくろ",
+            "やけど"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-4-m3-q6",
+          "questionText": "問6 冬の登山は常に危険と（　）合わせだ。",
+          "options": [
+            "顔",
+            "肩",
+            "腹",
+            "背中"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題4",
+      "mondaiHeader": "次の言葉の使い方として最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-4-m4-q1",
+          "questionText": "問1 指図",
+          "options": [
+            "先生は私の間違いをすぐに指図した。",
+            "男の子が「飛行機だ」と空を指図した。",
+            "説明書の指図どおりに作ったのに、機械が動かない。",
+            "上司でもないのに、私に指図するのはやめてください。"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-4-m4-q2",
+          "questionText": "問2 恐れ入る",
+          "options": [
+            "突然雷が鳴って、恐れ入った。",
+            "恐れ入りますが、少々お時間をいただけますか。",
+            "大勢の人の前で話すのは本当に恐れ入ることだ。",
+            "失敗を恐れ入らずに、なんでも挑戦してみるべきだ。"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

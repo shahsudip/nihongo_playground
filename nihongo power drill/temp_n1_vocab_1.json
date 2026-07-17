@@ -1,0 +1,249 @@
+{
+  "id": "vocab-1",
+  "title": "第1回",
+  "type": "vocab",
+  "description": "N1文字・語彙ドリル 第1回",
+  "group": "Group 1",
+  "sections": [
+    {
+      "title": "問題1",
+      "mondaiHeader": "次の言葉の読み方として最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-1-m1-q1",
+          "questionText": "問1 ヘアスタイルを変えたら、華やかな印象になった。",
+          "options": [
+            "あざやか",
+            "あでやか",
+            "はなやか",
+            "はれやか"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-1-m1-q2",
+          "questionText": "問2 焦るとうまくいかないから、落ち着いてやろう。",
+          "options": [
+            "あせる",
+            "なめる",
+            "はやる",
+            "まさる"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-1-m1-q3",
+          "questionText": "問3 この事件に彼が関わっていたというのは、周知の事実だ。",
+          "options": [
+            "しゅうし",
+            "しゅうち",
+            "しょうじ",
+            "しょうち"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-1-m1-q4",
+          "questionText": "問4 母は料理の手際がいい。",
+          "options": [
+            "てぎわ",
+            "てさい",
+            "しゅぎわ",
+            "しゅさい"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-1-m1-q5",
+          "questionText": "問5 取り扱い商品につきましては、こちらのカタログをご覧ください。",
+          "options": [
+            "とりつかい",
+            "とりやすい",
+            "とりあつかい",
+            "とりはからい"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題2",
+      "mondaiHeader": "次の言葉に意味が最も近いものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-1-m2-q1",
+          "questionText": "問1 私はその件に一切関係していません。",
+          "options": [
+            "たしか",
+            "少ししか",
+            "ほとんど",
+            "まったく"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-1-m2-q2",
+          "questionText": "問2 佐藤さんは、土地や家など、不動産の仲介の仕事をしているそうだ。",
+          "options": [
+            "販売",
+            "紹介",
+            "管理",
+            "保有"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-1-m2-q3",
+          "questionText": "問3 私の欠点はせっかちなところだ。",
+          "options": [
+            "気が強い",
+            "気が長い",
+            "気が短い",
+            "気が弱い"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-1-m2-q4",
+          "questionText": "問4 新商品の納品が１週間ほど遅れると連絡があった。",
+          "options": [
+            "発売",
+            "到着",
+            "宣伝",
+            "支払い"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-1-m2-q5",
+          "questionText": "問5 友人からのメールを読んで目を疑った。",
+          "options": [
+            "感心した",
+            "腹が立った",
+            "信じられなかった",
+            "意味がわからなかった"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題3",
+      "mondaiHeader": "次の文の（　）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-1-m3-q1",
+          "questionText": "問1 A社と何度も価格の（　）を行い、値下げに成功した。",
+          "options": [
+            "交換",
+            "交渉",
+            "請求",
+            "要求"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-1-m3-q2",
+          "questionText": "問2 ビルの倒壊事故は、業者の（　）工事が原因だった。",
+          "options": [
+            "足掛け",
+            "足切り",
+            "手落ち",
+            "手抜き"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-1-m3-q3",
+          "questionText": "問3 嫌なことは（　）にせず、早くやってしまったほうがいい。",
+          "options": [
+            "後先",
+            "後追い",
+            "後出し",
+            "後回し"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-1-m3-q4",
+          "questionText": "問4 毎日来ていた彼からの連絡が、突然（　）途絶えたので心配だ。",
+          "options": [
+            "きっかり",
+            "くっきり",
+            "ぱったり",
+            "ぴったり"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-1-m3-q5",
+          "questionText": "問5 否定するだけでなく、何らかの解決（　）を提示するべきだ。",
+          "options": [
+            "策",
+            "点",
+            "様",
+            "論"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-1-m3-q6",
+          "questionText": "問6 この研究には次の三つの（　）の方法が考えられる。",
+          "options": [
+            "アピール",
+            "サクセス",
+            "アプローチ",
+            "コントロール"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題4",
+      "mondaiHeader": "次の言葉の使い方として最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-1-m4-q1",
+          "questionText": "問1 発足",
+          "options": [
+            "交通が発足し、どこへ行くのも便利になった。",
+            "最近この町では、たびたび事件が発足している。",
+            "この団体が発足して、今年でちょうど20年になる。",
+            "9時に家を発足すれば、11時には空港に着くだろう。"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-1-m4-q2",
+          "questionText": "問2 気がしれない",
+          "options": [
+            "雨の日に出かけるのは、あまり気がしれない。",
+            "こんなにうるさい音楽が好きな人の気がしれない。",
+            "サービスの悪い店には文句を言わないと気がしれない。",
+            "誕生日のプレゼントを用意していないなんて、気がしれない人だね。"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

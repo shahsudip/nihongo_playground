@@ -1,0 +1,211 @@
+{
+  "description": "第16回 practice drills.",
+  "group": "Group 4",
+  "id": "grammar-16",
+  "passages": [
+    {
+      "id": "grammar-16-mondai1",
+      "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+      "questions": [
+        {
+          "correctIndex": 1,
+          "explanation": "",
+          "id": "g16-m1-q1",
+          "options": [
+            "よって",
+            "よると",
+            "よったら",
+            "よっては"
+          ],
+          "questionText": "新聞に（　）、交通事故はここ数年減ってきているそうだ。"
+        },
+        {
+          "correctIndex": 1,
+          "explanation": "",
+          "id": "g16-m1-q2",
+          "options": [
+            "したらいいのに",
+            "しとけばよかった",
+            "するはずだった",
+            "するべきなのに"
+          ],
+          "questionText": "今日は失敗しちゃった。ああ、もっとよく準備を（　）なあ。"
+        },
+        {
+          "correctIndex": 0,
+          "explanation": "",
+          "id": "g16-m1-q3",
+          "options": [
+            "せいだ",
+            "らしい",
+            "かもしれない",
+            "のだろうか"
+          ],
+          "questionText": "今日こんなに体が痛いのは、きっと昨日運動しすぎた（　）。"
+        },
+        {
+          "correctIndex": 0,
+          "explanation": "",
+          "id": "g16-m1-q4",
+          "options": [
+            "のうえ",
+            "として",
+            "するなら",
+            "とともに"
+          ],
+          "questionText": "携帯電話はマナーモードに設定（　）、通話はご遠慮ください。"
+        },
+        {
+          "correctIndex": 3,
+          "explanation": "",
+          "id": "g16-m1-q5",
+          "options": [
+            "持たれたい",
+            "持ちたがる",
+            "持ってくれる",
+            "持ってほしい"
+          ],
+          "questionText": "子どもたちには、大きな夢を（　）ものだ。"
+        },
+        {
+          "correctIndex": 1,
+          "explanation": "",
+          "id": "g16-m1-q6",
+          "options": [
+            "笑おうと",
+            "笑いそうに",
+            "笑うように",
+            "笑うらしく"
+          ],
+          "questionText": "授業中、友達が急にへんな顔をしたから、（　）なった。"
+        },
+        {
+          "correctIndex": 3,
+          "explanation": "",
+          "id": "g16-m1-q7",
+          "options": [
+            "から",
+            "こと",
+            "そう",
+            "みたい"
+          ],
+          "questionText": "何度誘っても来ないから、木村さんはカラオケが好きじゃない（　）だね。"
+        }
+      ],
+      "title": "問題1"
+    },
+    {
+      "id": "grammar-16-mondai2",
+      "mondaiHeader": "つぎの文の　★　に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+      "questions": [
+        {
+          "correctIndex": 0,
+          "explanation": "",
+          "id": "g16-m2-q1",
+          "options": [
+            "妹は",
+            "うるさい",
+            "おとなしい",
+            "のに対して"
+          ],
+          "questionText": "姉が ＿＿ ＿＿ ★ ＿＿ ぐらいよくしゃべる。"
+        },
+        {
+          "correctIndex": 0,
+          "explanation": "",
+          "id": "g16-m2-q2",
+          "options": [
+            "いた",
+            "もの",
+            "集まって",
+            "しゃべって"
+          ],
+          "questionText": "学生時代はよくみんなでここに ＿＿ ＿＿ ★ ＿＿ だ。"
+        },
+        {
+          "correctIndex": 2,
+          "explanation": "",
+          "id": "g16-m2-q3",
+          "options": [
+            "に",
+            "なる",
+            "つれて",
+            "笑った"
+          ],
+          "questionText": "その子は大きく ＿＿ ＿＿ ★ ＿＿ 顔が母親に似てきた。"
+        }
+      ],
+      "title": "問題2"
+    },
+    {
+      "id": "grammar-16-mondai3",
+      "mondaiHeader": "つぎの文章を読んで、[ 1 ]から[ 5 ]の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+      "passageText": "自転車通勤を始めてみませんか？\n\n最近、車や電車 [ 1 ] 自転車で会社に通勤する人が増えています。\n自転車はガソリン代も交通費もかからず、車や電車と [ 2 ] 経済的です。体を動かすので、健康にもいいし、また、車のように排気ガスで空気を汚す心配もありません。\n無理なく自転車通勤ができる距離は一般的に15kmくらいまでと言われています。約1時間です。もちろん、それより距離が長くても通勤 [ 3 ] が、あまり長い距離を走るのはおすすめしません。健康の [ 4 ] だからといって、毎朝長い距離を自転車で通勤していたら疲れてしまうからです。仕事にも影響が出かねません。\n体力や自転車の性能 [ 5 ] かかる時間は違います。当店ではあなたに合った自転車を選ぶお手伝いをいたします。\nまずはぜひ一度、ご来店ください！\n\n〇×自転車店\nTEL：03-1234-xxxx",
+      "questions": [
+        {
+          "correctIndex": 3,
+          "explanation": "",
+          "id": "g16-m3-q1",
+          "options": [
+            "に先立って",
+            "に関して",
+            "に加えて",
+            "のかわりに"
+          ],
+          "questionText": "[ 1 ]"
+        },
+        {
+          "correctIndex": 0,
+          "explanation": "",
+          "id": "g16-m3-q2",
+          "options": [
+            "比べて",
+            "ともに",
+            "あわせて",
+            "ならんで"
+          ],
+          "questionText": "[ 2 ]"
+        },
+        {
+          "correctIndex": 0,
+          "explanation": "",
+          "id": "g16-m3-q3",
+          "options": [
+            "できないこともありません",
+            "できないはずはありません",
+            "できるわけがありません",
+            "できそうにもありません"
+          ],
+          "questionText": "[ 3 ]"
+        },
+        {
+          "correctIndex": 1,
+          "explanation": "",
+          "id": "g16-m3-q4",
+          "options": [
+            "せい",
+            "ため",
+            "はず",
+            "おかげ"
+          ],
+          "questionText": "[ 4 ]"
+        },
+        {
+          "correctIndex": 1,
+          "explanation": "",
+          "id": "g16-m3-q5",
+          "options": [
+            "に対して",
+            "によって",
+            "にこたえて",
+            "についても"
+          ],
+          "questionText": "[ 5 ]"
+        }
+      ],
+      "title": "問題3"
+    }
+  ],
+  "title": "第16回",
+  "type": "questions-only"
+}

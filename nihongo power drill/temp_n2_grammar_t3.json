@@ -1,0 +1,115 @@
+{
+  "id": "grammar-training-3",
+  "title": "集中トレーニング③（助詞３）",
+  "type": "questions-only",
+  "description": "N2文法 集中トレーニング③",
+  "group": "Group 2",
+  "sections": [
+    {
+      "title": "問題1",
+      "mondaiHeader": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "questions": [
+        {
+          "id": "gt3-m1-q1",
+          "questionText": "問1 この仕事は経験（　）問いません。誰でも応募できます。",
+          "options": [
+            "に",
+            "を"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "gt3-m1-q2",
+          "questionText": "問2 長くつきあっても、結婚する（　）限らない。",
+          "options": [
+            "とは",
+            "には"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "gt3-m1-q3",
+          "questionText": "問3 発売（　）先立って、駅前で試供品を配布した。",
+          "options": [
+            "が",
+            "に"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "gt3-m1-q4",
+          "questionText": "問4 この土地（　）めぐって、何度となく争いが起きた。",
+          "options": [
+            "と",
+            "を"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "gt3-m1-q5",
+          "questionText": "問5 今回の受賞は佐藤さんの活躍（　）抜きにしてはありえなかっただろう。",
+          "options": [
+            "が",
+            "を"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "gt3-m1-q6",
+          "questionText": "問6 彼はアルバイト（　）かかわらず、責任感は正社員以上だ。",
+          "options": [
+            "にも",
+            "でも"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "gt3-m1-q7",
+          "questionText": "問7 契約（　）際して、以下の点を必ずご確認ください。",
+          "options": [
+            "に",
+            "を"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "gt3-m1-q8",
+          "questionText": "問8 これだけきたなければ、苦情がくる（　）もっともだ。",
+          "options": [
+            "のが",
+            "のも"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "gt3-m1-q9",
+          "questionText": "問9 テレビ出演（　）契機として、彼は徐々に人気が出てきた。",
+          "options": [
+            "に",
+            "を"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "gt3-m1-q10",
+          "questionText": "問10 この地方では桃やぶどう（　）はじめとして、様々な果物が栽培されています。",
+          "options": [
+            "が",
+            "を"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

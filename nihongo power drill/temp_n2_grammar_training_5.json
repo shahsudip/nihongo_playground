@@ -1,0 +1,115 @@
+{
+  "id": "grammar-training-5",
+  "title": "集中トレーニング⑤（文末表現２）",
+  "type": "questions-only",
+  "description": "N2文法ドリル 集中トレーニング⑤（文末表現２）",
+  "group": "Group 3",
+  "sections": [
+    {
+      "title": "集中トレーニング⑤",
+      "mondaiHeader": "( ) の中のaとbのうち、文に合うほうを選びましょう。",
+      "questions": [
+        {
+          "id": "g-t5-q1",
+          "questionText": "問1 いくらお金がなくても、知らない人からお金をもらう（　）。",
+          "options": [
+            "わけではない",
+            "わけにはいかない"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t5-q2",
+          "questionText": "問2 お世話になった先生に何度も頼まれたら、「はい」と（　）。",
+          "options": [
+            "言いかねない",
+            "言わざるをえない"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t5-q3",
+          "questionText": "問3 昨日ぜんぜん寝られなかったから、眠くて（　）。",
+          "options": [
+            "いられない",
+            "しょうがない"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t5-q4",
+          "questionText": "問4 彼女が何か隠しているように思えて（　）。",
+          "options": [
+            "ならない",
+            "たまらない"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t5-q5",
+          "questionText": "問5 まさにそれが私の一番言いたかったことに（　）。",
+          "options": [
+            "すぎない",
+            "ほかならない"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t5-q6",
+          "questionText": "問6 何でも、大きければいい（　）。",
+          "options": [
+            "というものでもない",
+            "わけにはいかない"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t5-q7",
+          "questionText": "問7 新郎新婦が来ないことには、結婚式が（　）。",
+          "options": [
+            "始まらない",
+            "始まった"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t5-q8",
+          "questionText": "問8 私にとって、10キロ走ることぐらいは、ほんの準備運動に（　）。",
+          "options": [
+            "すぎない",
+            "相違ない"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t5-q9",
+          "questionText": "問9 この病気が治るなら、お金はいくらかかっても（　）。",
+          "options": [
+            "かまわない",
+            "かかわらない"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t5-q10",
+          "questionText": "問10 新しいのを買ったほうがいい。こんなに壊れていたら、直し（　）。",
+          "options": [
+            "てはならない",
+            "ようがない"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

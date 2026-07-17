@@ -1,0 +1,249 @@
+{
+  "id": "vocab-10",
+  "title": "第10回",
+  "type": "vocab",
+  "description": "N1文字・語彙ドリル 第10回",
+  "group": "Group 1",
+  "sections": [
+    {
+      "title": "問題1",
+      "mondaiHeader": "次の言葉の読み方として最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-10-m1-q1",
+          "questionText": "問1 試行を重ねて、やっと商品化が実現した。",
+          "options": [
+            "しこう",
+            "せこう",
+            "しぎょう",
+            "せぎょう"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-10-m1-q2",
+          "questionText": "問2 事件の経緯を説明してください。",
+          "options": [
+            "けいい",
+            "けいえい",
+            "けいせい",
+            "けいたい"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-10-m1-q3",
+          "questionText": "問3 レポートの締め切りが来週に迫っている。",
+          "options": [
+            "おって",
+            "あせって",
+            "せまって",
+            "まよって"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-10-m1-q4",
+          "questionText": "問4 突然の頼みにもかかわらず、彼は快く引き受けてくれた。",
+          "options": [
+            "いさぎよく",
+            "こころよく",
+            "いちじるしく",
+            "こころづよく"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-10-m1-q5",
+          "questionText": "問5 一身上の都合により、今月末で退職することになりました。",
+          "options": [
+            "いちみじょう",
+            "ひとみじょう",
+            "いっしんじょう",
+            "ひとしんじょう"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題2",
+      "mondaiHeader": "次の言葉に意味が最も近いものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-10-m2-q1",
+          "questionText": "問1 母にもらったペンはとても重宝していたのに、なくしてしまった。",
+          "options": [
+            "いつも持っていた",
+            "大事にしていた",
+            "便利に使っていた",
+            "人に自慢していた"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-10-m2-q2",
+          "questionText": "問2 子どもやお年寄りを欺く行為は許せない。",
+          "options": [
+            "だます",
+            "いじめる",
+            "こまらせる",
+            "おびやかす"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-10-m2-q3",
+          "questionText": "問3 お見苦しい点がありましたらお許しください。",
+          "options": [
+            "不安定な",
+            "不注意な",
+            "不愉快な",
+            "準備不足な"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-10-m2-q4",
+          "questionText": "問4 依然として両国は対立を深めている。",
+          "options": [
+            "相変わらず",
+            "残念ながら",
+            "予想どおり",
+            "当然のように"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-10-m2-q5",
+          "questionText": "問5 ドアをたたくような音が聞こえ、急に胸騒ぎがした。",
+          "options": [
+            "緊張した",
+            "びっくりした",
+            "悪い予感がした",
+            "うれしくてどきどきした"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題3",
+      "mondaiHeader": "次の文の（　）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-10-m3-q1",
+          "questionText": "問1 子どものための施設なので、なにより安全性を（　）してつくられました。",
+          "options": [
+            "考案",
+            "考慮",
+            "思考",
+            "思慮"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-10-m3-q2",
+          "questionText": "問2 顔を出さないという条件で、テレビに出ることを（　）した。",
+          "options": [
+            "承諾",
+            "受領",
+            "受容",
+            "任命"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-10-m3-q3",
+          "questionText": "問3 みんなの意見を（　）、自分の考えを発表した。",
+          "options": [
+            "かまえて",
+            "かまって",
+            "ふんで",
+            "ふまえて"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-10-m3-q4",
+          "questionText": "問4 高速道路でよそ見してしまい、（　）大事故になるところだった。",
+          "options": [
+            "あえて",
+            "あわや",
+            "まさか",
+            "まれに"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-10-m3-q5",
+          "questionText": "問5 ゴミ処理場の建設は（　）になった。",
+          "options": [
+            "見送り",
+            "見出し",
+            "見積もり",
+            "見逃し"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-10-m3-q6",
+          "questionText": "問6 次の会議で新商品の（　）をすることになった。",
+          "options": [
+            "ディベート",
+            "カリキュラム",
+            "インターナショナル",
+            "プレゼンテーション"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題4",
+      "mondaiHeader": "次の言葉の使い方として最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-10-m4-q1",
+          "questionText": "問1 執着",
+          "options": [
+            "この料理は素材に執着して作りました。",
+            "彼はもう1時間もテレビゲームに執着している。",
+            "この腕時計は壊れているが、執着があって捨てられない。",
+            "スポーツをするときは、勝ち負けに執着するよりも楽しみたい。"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-10-m4-q2",
+          "questionText": "問2 またしても",
+          "options": [
+            "ぜひ近いうちにまたしてもここを訪れたい。",
+            "彼は名医であり、またしても、人気作家でもある。",
+            "またしても、政治家の金に関する問題が明らかになった。",
+            "強すぎる冷暖房は体によくないし、またしても、環境にも悪い。"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

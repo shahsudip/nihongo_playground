@@ -1,0 +1,115 @@
+{
+  "id": "grammar-training-10",
+  "title": "集中トレーニング⑩",
+  "type": "questions-only",
+  "description": "N2文法ドリル 集中トレーニング⑩ 敬語",
+  "group": "Group 3",
+  "sections": [
+    {
+      "title": "問題1",
+      "mondaiHeader": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "questions": [
+        {
+          "id": "g-t10-m1-q1",
+          "questionText": "問1 何卒、ご理解（　）、お願い申し上げます。",
+          "options": [
+            "いただきたく",
+            "いただきたくて"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t10-m1-q2",
+          "questionText": "問2 何かありましたら、どうぞ（　）お呼びください。",
+          "options": [
+            "ご遠慮ぬきで",
+            "ご遠慮なく"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t10-m1-q3",
+          "questionText": "問3 先生、私たちの結婚式にご出席（　）。",
+          "options": [
+            "願えませんか",
+            "願いませんか"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t10-m1-q4",
+          "questionText": "問4 このたびは（　）くださいまして、ありがとうございます。",
+          "options": [
+            "お招き",
+            "お招きして"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t10-m1-q5",
+          "questionText": "問5 先生のお名前はよく（　）おります。",
+          "options": [
+            "ご存じで",
+            "存じ上げて"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t10-m1-q6",
+          "questionText": "問6 お元気で（　）。",
+          "options": [
+            "ございますか",
+            "いらっしゃいますか"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t10-m1-q7",
+          "questionText": "問7 こちらからお好きなものを（　）。",
+          "options": [
+            "お選びになれます",
+            "お選びされます"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t10-m1-q8",
+          "questionText": "問8 A：社長は？\nB：会議中です。会議室に（　）。",
+          "options": [
+            "おいでです",
+            "お越しです"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t10-m1-q9",
+          "questionText": "問9 （　）光栄です。",
+          "options": [
+            "お目にかかれて",
+            "お会いになれて"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t10-m1-q10",
+          "questionText": "問10 お近くに（　）の際は、どうぞお寄りください。",
+          "options": [
+            "お越し",
+            "越された"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

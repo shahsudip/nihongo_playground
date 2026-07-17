@@ -22,6 +22,7 @@ const BookListPage = () => {
     'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)', // Teal/Green
     'linear-gradient(135deg, #3a1c71 0%, #d76d77 50%, #ffaf7b 100%)', // Purple/Sunset
     'linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)', // Red/Orange
+    'linear-gradient(135deg, #b8860b 0%, #c0392b 50%, #8b0000 100%)', // Gold/Crimson (N1)
   ];
 
   const fetchBooksAndProgress = useCallback(async () => {
@@ -36,7 +37,7 @@ const BookListPage = () => {
       let fetchedBooks = [];
       
       /* --- AI ADDED: Hard filter to only allow specific books --- */
-      const allowedBooks = ['shin-nihongo-500-n3', 'shinkanzen-master-n3-reading', 'shin-nihongo-500-n2', 'nihongo-power-drill-n3', 'nihongo-power-drill-n2'];
+      const allowedBooks = ['shin-nihongo-500-n3', 'shinkanzen-master-n3-reading', 'shin-nihongo-500-n2', 'nihongo-power-drill-n3', 'nihongo-power-drill-n2', 'nihongo-power-drill-n1'];
       
       booksSnap.forEach(docSnap => {
         if (allowedBooks.includes(docSnap.id)) {

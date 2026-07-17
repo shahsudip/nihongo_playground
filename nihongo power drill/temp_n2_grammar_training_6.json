@@ -1,0 +1,115 @@
+{
+  "id": "grammar-training-6",
+  "title": "集中トレーニング⑥（文末表現３）",
+  "type": "questions-only",
+  "description": "N2文法ドリル 集中トレーニング⑥（文末表現３）",
+  "group": "Group 3",
+  "sections": [
+    {
+      "title": "集中トレーニング⑥",
+      "mondaiHeader": "( ) の中のaとbのうち、文に合うほうを選びましょう。",
+      "questions": [
+        {
+          "id": "g-t6-q1",
+          "questionText": "問1 自分の行動に責任を持つのが、社会人という（　）。",
+          "options": [
+            "ものだ",
+            "ものではない"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t6-q2",
+          "questionText": "問2 咳が出るからといって風邪とは（　）。",
+          "options": [
+            "限る",
+            "限らない"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t6-q3",
+          "questionText": "問3 そんな要求には応じ（　）。",
+          "options": [
+            "かねます",
+            "かねません"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t6-q4",
+          "questionText": "問4 あの男なら、そんなことをやり（　）。",
+          "options": [
+            "かねる",
+            "かねない"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t6-q5",
+          "questionText": "問5 思ったことを何でも口にする（　）。",
+          "options": [
+            "ものだ",
+            "ものではない"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t6-q6",
+          "questionText": "問6 沖縄で雪が降ったなんて、そんなことある（　）。",
+          "options": [
+            "わけない",
+            "わけじゃない"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t6-q7",
+          "questionText": "問7 田中さんの言うこともわからない（　）。",
+          "options": [
+            "でもない",
+            "ではいられない"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t6-q8",
+          "questionText": "問8 まさかあのまじめな吉田さんが飲酒運転をする（　）。",
+          "options": [
+            "とは",
+            "とか"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t6-q9",
+          "questionText": "問9 毎日35度以上の日が続く。こう暑くては（　）。",
+          "options": [
+            "いられない",
+            "かなわない"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t6-q10",
+          "questionText": "問10 伝統的な祭りを復活させようという運動が、町全体に広がり（　）。",
+          "options": [
+            "一方だ",
+            "つつある"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

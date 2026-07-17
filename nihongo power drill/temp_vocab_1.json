@@ -1,0 +1,260 @@
+{
+  "id": "vocab-1",
+  "title": "第1回",
+  "type": "questions-only",
+  "description": "漢字読み、表記、類義語・用法の練習ドリル第1回",
+  "passages": [
+    {
+      "title": "問題1",
+      "mondaiHeader": "問題1 のことばの読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questions": [
+        {
+          "questionText": "問1 とても<u>悲しい</u>話を聞いた。",
+          "options": [
+            "おかしい",
+            "かなしい",
+            "さびしい",
+            "くるしい"
+          ],
+          "explanation": "悲しい（かなしい）means sad.",
+          "id": "v1-m1-q1",
+          "correctIndex": 1
+        },
+        {
+          "questionText": "問2 家族とよく<u>相談</u>してから決めようと思う。",
+          "options": [
+            "そたん",
+            "そだん",
+            "そうたん",
+            "そうだん"
+          ],
+          "explanation": "相談（そうだん）means consultation or discussion.",
+          "id": "v1-m1-q2",
+          "correctIndex": 3
+        },
+        {
+          "questionText": "問3 来月の<u>旅行</u>が楽しみだ。",
+          "options": [
+            "りょこ",
+            "りょうこ",
+            "りょこう",
+            "りょうこう"
+          ],
+          "explanation": "旅行（りょこう）means travel or trip.",
+          "id": "v1-m1-q3",
+          "correctIndex": 2
+        }
+      ],
+      "id": "vocab-1-mondai1"
+    },
+    {
+      "title": "問題2",
+      "mondaiHeader": "問題2 のことばを漢字で書くとき最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questions": [
+        {
+          "questionText": "問1 今日一日とても<u>つかれた</u>。",
+          "options": [
+            "疲れた",
+            "痛れた",
+            "雇れた",
+            "渡れた"
+          ],
+          "explanation": "つかれた is written as 疲れた (tired).",
+          "id": "v1-m2-q1",
+          "correctIndex": 0
+        },
+        {
+          "questionText": "問2 先生の部屋の本棚には、外国の本がたくさん<u>並んで</u>いた。",
+          "options": [
+            "並んで",
+            "荒んで",
+            "読んで",
+            "列んで"
+          ],
+          "explanation": "ならんで is written as 並んで (lined up / arranged).",
+          "id": "v1-m2-q2",
+          "correctIndex": 0
+        },
+        {
+          "questionText": "問3 一人暮らしに<u>ひつよう</u>な物を買いに行った。",
+          "options": [
+            "必用",
+            "必用",
+            "必要",
+            "必用"
+          ],
+          "explanation": "ひつよう is written as 必要 (necessary).",
+          "id": "v1-m2-q3",
+          "correctIndex": 2
+        }
+      ],
+      "id": "vocab-1-mondai2"
+    },
+    {
+      "title": "問題3",
+      "mondaiHeader": "問題3 のことばに意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+      "questions": [
+        {
+          "questionText": "問1 この映画は<u>かなり</u>おもしろかった。",
+          "options": [
+            "すこし",
+            "ぜんぶ",
+            "とても",
+            "まあまあ"
+          ],
+          "explanation": "かなり means considerably / quite / very (とても).",
+          "id": "v1-m3-q1",
+          "correctIndex": 2
+        },
+        {
+          "questionText": "問2 こちらに<u>ご記入</u>ください。",
+          "options": [
+            "書いて",
+            "入って",
+            "おぼえて",
+            "しまって"
+          ],
+          "explanation": "ご記入（ごきにゅう）means to fill out or write down (書いて).",
+          "id": "v1-m3-q2",
+          "correctIndex": 0
+        },
+        {
+          "questionText": "問3 その仕事を一人でやるのは<u>無理</u>だ。",
+          "options": [
+            "いやだ",
+            "さびしい",
+            "できない",
+            "つまらない"
+          ],
+          "explanation": "無理（むり）means impossible / cannot do (できない).",
+          "id": "v1-m3-q3",
+          "correctIndex": 2
+        },
+        {
+          "questionText": "問4 あの夫婦は<u>そっくり</u>だ。",
+          "options": [
+            "仲がいい",
+            "似ている",
+            "太っている",
+            "よくけんかする"
+          ],
+          "explanation": "そっくり means looking exactly like / resembling (似ている).",
+          "id": "v1-m3-q4",
+          "correctIndex": 1
+        }
+      ],
+      "id": "vocab-1-mondai3"
+    },
+    {
+      "title": "問題4",
+      "mondaiHeader": "問題4 （　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questions": [
+        {
+          "questionText": "問1 日記は毎日（　　）。",
+          "options": [
+            "あいた",
+            "さめた",
+            "つづいた",
+            "ひらいた"
+          ],
+          "explanation": "つづいた (continued) fits best: 'My diary continued every day.'",
+          "id": "v1-m4-q1",
+          "correctIndex": 2
+        },
+        {
+          "questionText": "問2 すみません。今日は用事があるので、また（　　）さそってください。",
+          "options": [
+            "今どき",
+            "今度",
+            "今晩",
+            "今後"
+          ],
+          "explanation": "また今度（またこんど）means 'again next time / another time'.",
+          "id": "v1-m4-q2",
+          "correctIndex": 1
+        },
+        {
+          "questionText": "問3 食事が終わったら、テーブルをきれいに（　　）ください。",
+          "options": [
+            "かけて",
+            "はいて",
+            "ふいて",
+            "みがいて"
+          ],
+          "explanation": "ふいて (wipe) is used for tables: 'Please wipe the table clean.'",
+          "id": "v1-m4-q3",
+          "correctIndex": 2
+        },
+        {
+          "questionText": "問4 あのデパートでは今、半額（　　）をしている。",
+          "options": [
+            "セール",
+            "ダウン",
+            "セールス",
+            "プライス"
+          ],
+          "explanation": "半額セール（はんがくせーる）means half-price sale.",
+          "id": "v1-m4-q4",
+          "correctIndex": 0
+        },
+        {
+          "questionText": "問5 この本を読んだら、ぜひ（　　）を聞かせてください。",
+          "options": [
+            "読心",
+            "読書",
+            "感想",
+            "感動"
+          ],
+          "explanation": "感想（かんそう）means thoughts / impressions.",
+          "id": "v1-m4-q5",
+          "correctIndex": 2
+        },
+        {
+          "questionText": "問6 簡単なことなのに、何度やってもうまくできなくて（　　）する。",
+          "options": [
+            "いらいら",
+            "うとうと",
+            "どきどき",
+            "はらはら"
+          ],
+          "explanation": "いらいらする means to get irritated or frustrated.",
+          "id": "v1-m4-q6",
+          "correctIndex": 0
+        }
+      ],
+      "id": "vocab-1-mondai4"
+    },
+    {
+      "title": "問題5",
+      "mondaiHeader": "問題5 つぎのことばの使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questions": [
+        {
+          "questionText": "問1 夢中",
+          "options": [
+            "父は最近ゴルフに夢中している。",
+            "弟は買ったばかりのゲームに夢中だ。",
+            "このアニメは、小学生にとても夢中だ。",
+            "いつか大きい家を建てるのが私の夢中だ。"
+          ],
+          "explanation": "夢中（むちゅう）means absorbed in / crazy about. Syntax: [Noun]に夢中だ.",
+          "id": "v1-m5-q1",
+          "correctIndex": 1
+        },
+        {
+          "questionText": "問2 いつのまにか",
+          "options": [
+            "昨日の夜は、テレビを見ながらいつのまにか寝ていた。",
+            "彼と最後に会ったのはいつのまにか、忘れてしまった。",
+            "その展覧会が始まるのはいつのまにか、知っていますか。",
+            "ここにあったお菓子、いつのまにか全部食べてしまったの？"
+          ],
+          "explanation": "いつのまにか means 'before one knows it' or 'unnoticed'. Sentence 1 fits perfectly.",
+          "id": "v1-m5-q2",
+          "correctIndex": 0
+        }
+      ],
+      "id": "vocab-1-mondai5"
+    }
+  ],
+  "group": "Group 1"
+}

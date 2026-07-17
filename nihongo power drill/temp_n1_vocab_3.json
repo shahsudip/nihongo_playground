@@ -1,0 +1,249 @@
+{
+  "id": "vocab-3",
+  "title": "第3回",
+  "type": "vocab",
+  "description": "N1文字・語彙ドリル 第3回",
+  "group": "Group 1",
+  "sections": [
+    {
+      "title": "問題1",
+      "mondaiHeader": "次の言葉の読み方として最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-3-m1-q1",
+          "questionText": "問1 景気回復の兆しが見え始めた。",
+          "options": [
+            "あかし",
+            "きざし",
+            "しるし",
+            "ためし"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-3-m1-q2",
+          "questionText": "問2 これは非常に巧妙な犯罪だ。",
+          "options": [
+            "ぎしょう",
+            "ぎみょう",
+            "こうしょう",
+            "こうみょう"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-3-m1-q3",
+          "questionText": "問3 問題を解決するには、現状を把握しなければならない。",
+          "options": [
+            "はあく",
+            "はおく",
+            "わおく",
+            "わあく"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-3-m1-q4",
+          "questionText": "問4 地域の人々が、このサービスを享受できるようにしたい。",
+          "options": [
+            "きゅうじゅ",
+            "きょうじゅ",
+            "きゅうじゅう",
+            "きょうじゅう"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-3-m1-q5",
+          "questionText": "問5 いくつもの手続きを経て、入国が許可された。",
+          "options": [
+            "えて",
+            "へて",
+            "けいて",
+            "きょうて"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題2",
+      "mondaiHeader": "次の言葉に意味が最も近いものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-3-m2-q1",
+          "questionText": "問1 ご来店の際は、あらかじめご連絡ください。",
+          "options": [
+            "何度も",
+            "くわしく",
+            "前もって",
+            "できれば"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-3-m2-q2",
+          "questionText": "問2 今の職場は人間関係がわずらわしくて、仕事に集中できない。",
+          "options": [
+            "あやしくて",
+            "めんどうで",
+            "いそがしくて",
+            "つまらなくて"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-3-m2-q3",
+          "questionText": "問3 社員のモチベーションを高めるにはどうしたらいいか考えた。",
+          "options": [
+            "意欲",
+            "自覚",
+            "条件",
+            "待遇"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-3-m2-q4",
+          "questionText": "問4 このありふれた景色が、私にはとても懐かしく感じられる。",
+          "options": [
+            "とくに美しい",
+            "毎日見ている",
+            "どこにでもある",
+            "とてもめずらしい"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-3-m2-q5",
+          "questionText": "問5 ねばり強く交渉した結果、こちらの希望どおりの回答が得られた。",
+          "options": [
+            "大勢で",
+            "自信をもって",
+            "強い言い方で",
+            "最後まで続けて"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題3",
+      "mondaiHeader": "次の文の（　）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-3-m3-q1",
+          "questionText": "問1 目標を（　）するために、今しなければならないことは何だろうか。",
+          "options": [
+            "達成",
+            "調達",
+            "到達",
+            "到着"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-3-m3-q2",
+          "questionText": "問2 祖父が言うには、長生きの（　）は早寝早起きだそうだ。",
+          "options": [
+            "策略",
+            "秘訣",
+            "秘法",
+            "方策"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-3-m3-q3",
+          "questionText": "問3 海外で（　）している商品を直接輸入して、低価格で販売しています。",
+          "options": [
+            "運搬",
+            "通運",
+            "搬入",
+            "流通"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-3-m3-q4",
+          "questionText": "問4 ゲームのしすぎだと注意したら、「うるさいな」と子どもが（　）した。",
+          "options": [
+            "口当たり",
+            "口出し",
+            "口止め",
+            "口答え"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-3-m3-q5",
+          "questionText": "問5 （　）店は朝9時から夜7時まで営業しております。",
+          "options": [
+            "自",
+            "私",
+            "当",
+            "個"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-3-m3-q6",
+          "questionText": "問6 何を勉強すればいいかわからなかったので、（　）次第に問題を解いた。",
+          "options": [
+            "気づき",
+            "気持ち",
+            "手当たり",
+            "手ほどき"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題4",
+      "mondaiHeader": "次の言葉の使い方として最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-3-m4-q1",
+          "questionText": "問1 お世辞",
+          "options": [
+            "友人に結婚式のお世辞を頼まれた。",
+            "あの人にはお世辞を言っても無駄だ。",
+            "母は暇さえあれば、近所の人とお世辞話をしている。",
+            "お世話になった人にはきちんとお世辞を言うべきだ。"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-3-m4-q2",
+          "questionText": "問2 ひょっとすると",
+          "options": [
+            "この計画は、ひょっとすると成功するに違いない。",
+            "ひょっとするとこれは大事件に発展するかもしれない。",
+            "もう少しここにいよう。ひょっとすると夜が明けるから。",
+            "ひょっとすると私にお金があったら、迷わずその車を買ったのに。"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

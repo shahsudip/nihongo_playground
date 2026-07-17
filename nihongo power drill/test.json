@@ -1,0 +1,116 @@
+[
+  {
+    "id": "grammar-training-1",
+    "title": "集中トレーニング ①",
+    "type": "questions-only",
+    "description": "助詞（１）",
+    "group": "Group 1",
+    "sections": [
+      {
+        "id": "mondai-1",
+        "questions": [
+          {
+            "id": "gt1-m1-q1",
+            "questionText": "彼の話（　）よれば、そこはとても危ないところらしい。",
+            "options": [
+              "と",
+              "に"
+            ],
+            "correctIndex": 1,
+            "explanation": ""
+          },
+          {
+            "id": "gt1-m1-q2",
+            "questionText": "冬のスポーツ（　）いえば、スキーでしょう。",
+            "options": [
+              "を",
+              "と"
+            ],
+            "correctIndex": 1,
+            "explanation": ""
+          },
+          {
+            "id": "gt1-m1-q3",
+            "questionText": "出かける母（　）かわって、今日は私が食事の準備をした。",
+            "options": [
+              "に",
+              "が"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "id": "gt1-m1-q4",
+            "questionText": "町の人（　）とって、この公園はとても大事な場所だ。",
+            "options": [
+              "に",
+              "を"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "id": "gt1-m1-q5",
+            "questionText": "私は学生時代（　）比べて積極的になったと思う。",
+            "options": [
+              "に",
+              "を"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "id": "gt1-m1-q6",
+            "questionText": "あの人の結婚（　）対する考え方は、他の人とは違う。",
+            "options": [
+              "が",
+              "に"
+            ],
+            "correctIndex": 1,
+            "explanation": ""
+          },
+          {
+            "id": "gt1-m1-q7",
+            "questionText": "入院中の社長（　）かわりに、私がごあいさつに参りました。",
+            "options": [
+              "の",
+              "に"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "id": "gt1-m1-q8",
+            "questionText": "けが（　）いっても、たいしたことはないので、心配しないでください。",
+            "options": [
+              "に",
+              "と"
+            ],
+            "correctIndex": 1,
+            "explanation": ""
+          },
+          {
+            "id": "gt1-m1-q9",
+            "questionText": "中国の歴史（　）関してくわしい人を知りませんか。",
+            "options": [
+              "に",
+              "を"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "id": "gt1-m1-q10",
+            "questionText": "同じ国でも、地域（　）よって言葉が違う。",
+            "options": [
+              "に",
+              "が"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          }
+        ]
+      }
+    ]
+  }
+]

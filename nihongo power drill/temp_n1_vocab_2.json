@@ -1,0 +1,249 @@
+{
+  "id": "vocab-2",
+  "title": "第2回",
+  "type": "vocab",
+  "description": "N1文字・語彙ドリル 第2回",
+  "group": "Group 1",
+  "sections": [
+    {
+      "title": "問題1",
+      "mondaiHeader": "次の言葉の読み方として最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-2-m1-q1",
+          "questionText": "問1 新しいカードが届いたら、古いカードは破棄してください。",
+          "options": [
+            "はき",
+            "はいき",
+            "はかい",
+            "ほうき"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-2-m1-q2",
+          "questionText": "問2 この大会ではベスト８進出を狙っている。",
+          "options": [
+            "かかって",
+            "とって",
+            "ねらって",
+            "もらって"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-2-m1-q3",
+          "questionText": "問3 片言の日本語であいさつをした。",
+          "options": [
+            "かたげん",
+            "かたこと",
+            "へんげん",
+            "へんこと"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-2-m1-q4",
+          "questionText": "問4 急病で倒れた仲間を必死に介抱した。",
+          "options": [
+            "かいたく",
+            "かいだく",
+            "かいほう",
+            "かいぼう"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-2-m1-q5",
+          "questionText": "問5 相手の態度に気後れして何も話せなかった。",
+          "options": [
+            "きあとれ",
+            "きおくれ",
+            "けあとれ",
+            "けおくれ"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題2",
+      "mondaiHeader": "次の言葉に意味が最も近いものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-2-m2-q1",
+          "questionText": "問1 その方法はきわめて危険だ。",
+          "options": [
+            "一番",
+            "少々",
+            "非常に",
+            "わずかに"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-2-m2-q2",
+          "questionText": "問2 周囲からのプレッシャーに負けないようにがんばりたい。",
+          "options": [
+            "圧縮",
+            "干渉",
+            "交渉",
+            "重圧"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-2-m2-q3",
+          "questionText": "問3 出来上がるのを待っている時間がじれったい。",
+          "options": [
+            "いらいらする",
+            "うきうきする",
+            "はらはらする",
+            "むかむかする"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-2-m2-q4",
+          "questionText": "問4 彼の努力がようやく実を結んだ。",
+          "options": [
+            "始まった",
+            "前進した",
+            "成功した",
+            "次につながった"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-2-m2-q5",
+          "questionText": "問5 あの先生は貫禄があって、周囲から頼りにされている。",
+          "options": [
+            "威厳があって",
+            "知識が豊富で",
+            "人気があって",
+            "信用されていて"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題3",
+      "mondaiHeader": "次の文の（　）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-2-m3-q1",
+          "questionText": "問1 父は（　）だから、私が何を言っても聞かないだろう。",
+          "options": [
+            "偉大",
+            "頑固",
+            "頑丈",
+            "丈夫"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-2-m3-q2",
+          "questionText": "問2 A国の大統領は、国民から（　）支持を得ている。",
+          "options": [
+            "過大な",
+            "重大な",
+            "絶大な",
+            "膨大な"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-2-m3-q3",
+          "questionText": "問3 出欠の返信は、総務部の田中（　）にお願いします。",
+          "options": [
+            "宛て",
+            "行き",
+            "向け",
+            "着"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-2-m3-q4",
+          "questionText": "問4 このお菓子は、（　）甘い味で大人にも好まれている。",
+          "options": [
+            "しんみり",
+            "たんまり",
+            "ほんのり",
+            "ぼんやり"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-2-m3-q5",
+          "questionText": "問5 （　）女性客の売り上げを伸ばすかが、今後の課題だ。",
+          "options": [
+            "いかが",
+            "いかにも",
+            "いかにして",
+            "いかにせよ"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-2-m3-q6",
+          "questionText": "問6 その事故には、多くの日本人観光客も（　）そうだ。",
+          "options": [
+            "埋め込まれた",
+            "のみ込まれた",
+            "引き込まれた",
+            "巻き込まれた"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題4",
+      "mondaiHeader": "次の言葉の使い方として最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-2-m4-q1",
+          "questionText": "問1 一概に",
+          "options": [
+            "古い習慣が一概に悪いとは言えない。",
+            "これらの作品は、一つ一つが一概にすばらしい。",
+            "パーティーの後、客は一概に会場を出て行った。",
+            "お腹が空いていたので、出された料理を一概に食べてしまった。"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-2-m4-q2",
+          "questionText": "問2 てっきり",
+          "options": [
+            "てっきりさっきの店で財布を落としたようだ。",
+            "日本語が上手なので、彼はてっきり日本人だと思う。",
+            "てっきり来週は忙しくなるので、今のうちにやっておこう。",
+            "部屋にいなかったから、てっきりもう帰ってしまったのかと思った。"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

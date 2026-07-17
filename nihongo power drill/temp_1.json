@@ -1,0 +1,235 @@
+[
+  {
+    "id": "grammar-1",
+    "title": "第1回",
+    "type": "questions-only",
+    "description": "N3文法ドリル第1回：文の文法、並べ替え、文章の文法",
+    "group": "Group 1",
+    "sections": [
+      {
+        "id": "mondai-1",
+        "mondaiHeader": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+        "questions": [
+          {
+            "id": "g1-m1-q1",
+            "questionText": "この用紙は、必ず黒か青のペンで記入する（　）。",
+            "options": [
+              "こと",
+              "もの",
+              "ことか",
+              "ものか"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "id": "g1-m1-q2",
+            "questionText": "あれ？　私のジュースがない。さっきここに（　）のに。",
+            "options": [
+              "置いといた",
+              "置いてみた",
+              "置きかけた",
+              "置いちゃった"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "id": "g1-m1-q3",
+            "questionText": "その店なら、ここから５分（　）着くと思いますよ。",
+            "options": [
+              "ごろで",
+              "ごろに",
+              "ぐらいで",
+              "ぐらいに"
+            ],
+            "correctIndex": 2,
+            "explanation": ""
+          },
+          {
+            "id": "g1-m1-q4",
+            "questionText": "エアコンを（　）寝て、かぜをひいてしまった。",
+            "options": [
+              "ついたまま",
+              "つきながら",
+              "つけたまま",
+              "つけながら"
+            ],
+            "correctIndex": 2,
+            "explanation": ""
+          },
+          {
+            "id": "g1-m1-q5",
+            "questionText": "子どものころ、父は出張に行く（　）いつも私におみやげを買ってきてくれた。",
+            "options": [
+              "なら",
+              "たびに",
+              "ところ",
+              "ついでに"
+            ],
+            "correctIndex": 1,
+            "explanation": ""
+          },
+          {
+            "id": "g1-m1-q6",
+            "questionText": "申込書を（　）、受付の係員に渡してください。",
+            "options": [
+              "書いたとたん",
+              "書きおえたら",
+              "書きだしたら",
+              "書いたとしたら"
+            ],
+            "correctIndex": 1,
+            "explanation": ""
+          },
+          {
+            "id": "g1-m1-q7",
+            "questionText": "今日の午後から明日に（　）台風が日本を通過するらしい。",
+            "options": [
+              "まで",
+              "かけて",
+              "つれて",
+              "わたって"
+            ],
+            "correctIndex": 1,
+            "explanation": ""
+          },
+          {
+            "id": "g1-m1-q8",
+            "questionText": "あの二人の結婚が本当だと（　）、大ニュースだ。",
+            "options": [
+              "いうと",
+              "いえば",
+              "したら",
+              "しても"
+            ],
+            "correctIndex": 2,
+            "explanation": ""
+          },
+          {
+            "id": "g1-m1-q9",
+            "questionText": "A: 春に咲く花（　）何ですか。\nB: やっぱり桜でしょう。",
+            "options": [
+              "といえば",
+              "としては",
+              "とすると",
+              "とすれば"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          },
+          {
+            "id": "g1-m1-q10",
+            "questionText": "さっき先生に聞いたんだけど、明日、学校にテレビの取材が来る（　）。",
+            "options": [
+              "かしら",
+              "もんね",
+              "んだっけ",
+              "んだって"
+            ],
+            "correctIndex": 3,
+            "explanation": ""
+          }
+        ]
+      },
+      {
+        "id": "mondai-2",
+        "mondaiHeader": "つぎの文の ★ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+        "questions": [
+          {
+            "id": "g1-m2-q1",
+            "questionText": "病気に ＿＿　＿＿　★　＿＿ 大切さに気がついた。",
+            "options": [
+              "の",
+              "健康",
+              "なって",
+              "はじめて"
+            ],
+            "correctIndex": 1,
+            "explanation": "病気になってはじめて健康の大切さに気がついた。 -> 3 4 2 1"
+          },
+          {
+            "id": "g1-m2-q2",
+            "questionText": "彼が行けないと言っている ＿＿　＿＿　★　＿＿ だろう。",
+            "options": [
+              "のは",
+              "こと",
+              "という",
+              "行きたくない"
+            ],
+            "correctIndex": 2,
+            "explanation": "彼が行けないと言っているのは行きたくないということだろう。 -> 1 4 3 2"
+          },
+          {
+            "id": "g1-m2-q3",
+            "questionText": "いくら ＿＿　＿＿　★　＿＿ わからないのです。",
+            "options": [
+              "いいか",
+              "みても",
+              "考えて",
+              "どうしたら"
+            ],
+            "correctIndex": 3,
+            "explanation": "いくら考えてみてもどうしたらいいかわからないのです。 -> 3 2 4 1"
+          },
+          {
+            "id": "g1-m2-q4",
+            "questionText": "お金を下ろしたいから、駅に ＿＿　＿＿　★　＿＿ もいい？",
+            "options": [
+              "行く",
+              "よって",
+              "銀行に",
+              "途中で"
+            ],
+            "correctIndex": 2,
+            "explanation": "駅に行く途中で銀行によってもいい？ -> 1 4 3 2"
+          }
+        ]
+      },
+      {
+        "id": "mondai-3",
+        "mondaiHeader": "つぎの文章を読んで、【１】から【３】の中に入れる最もよいものを、1・2・3・4から一つえらびなさい。",
+        "passageText": "日本の名字の種類は、少なくとも十数万以上あると言われています。<br><span class=\"border border-[var(--color-text-primary)] px-2 py-0.5 mx-1 font-bold inline-block\"> 1 </span>多いのですから、日本人でも、人の名前を間違えて読んだり、間違えて覚えてしまうことがよくあります。<br>たとえば、「角田」という名字は、「かくた」「かどた」「すみだ」「つのだ」など、読み方がいくつもあります。また、反対に、同じ「いとう」でも、「伊藤」と書く人もいれば「伊東」と書く人も<span class=\"border border-[var(--color-text-primary)] px-2 py-0.5 mx-1 font-bold inline-block\"> 2 </span>、同じ読み方でも漢字が違うという例はたくさんあります。<br>ですから、初めて会った人と自己紹介をしたときは、「漢字でどう書きますか」「何と<span class=\"border border-[var(--color-text-primary)] px-2 py-0.5 mx-1 font-bold inline-block\"> 3 </span>いいですか」のように聞いて、名前の正しい読み方や漢字を確認しましょう。このように聞くのは決して失礼なことではありません。",
+        "passageLayout": "html",
+        "questions": [
+          {
+            "id": "g1-m3-q1",
+            "questionText": "【１】に入る最もよいものを選びなさい。",
+            "options": [
+              "これしか",
+              "これだけ",
+              "これまで",
+              "こればかり"
+            ],
+            "correctIndex": 1,
+            "explanation": ""
+          },
+          {
+            "id": "g1-m3-q2",
+            "questionText": "【２】に入る最もよいものを選びなさい。",
+            "options": [
+              "いるほどに",
+              "いるように",
+              "いたために",
+              "いたとおり"
+            ],
+            "correctIndex": 1,
+            "explanation": ""
+          },
+          {
+            "id": "g1-m3-q3",
+            "questionText": "【３】に入る最もよいものを選びなさい。",
+            "options": [
+              "お読みしたら",
+              "お読みしても",
+              "お読みになったら",
+              "お読みになっても"
+            ],
+            "correctIndex": 0,
+            "explanation": ""
+          }
+        ]
+      }
+    ]
+  }
+]

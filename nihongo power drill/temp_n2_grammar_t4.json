@@ -1,0 +1,115 @@
+{
+  "id": "grammar-training-4",
+  "title": "集中トレーニング④（文末表現１）",
+  "type": "questions-only",
+  "description": "N2文法 集中トレーニング④",
+  "group": "Group 2",
+  "sections": [
+    {
+      "title": "問題1",
+      "mondaiHeader": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "questions": [
+        {
+          "id": "gt4-m1-q1",
+          "questionText": "問1 いまさら「ごめん」と言われたって、許せる（　）。",
+          "options": [
+            "ものか",
+            "ものだ"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "gt4-m1-q2",
+          "questionText": "問2 今の私の気持ちは誰にもわかる（　）。",
+          "options": [
+            "まい",
+            "まいか"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "gt4-m1-q3",
+          "questionText": "問3 やれるものならやって（　）！",
+          "options": [
+            "みろ",
+            "みる"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "gt4-m1-q4",
+          "questionText": "問4 ぜひ一度挑戦してみよう（　）。",
+          "options": [
+            "でもない",
+            "ではないか"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "gt4-m1-q5",
+          "questionText": "問5 茶道の歴史は、この人物を抜きにしては（　）。",
+          "options": [
+            "語らない",
+            "語れない"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "gt4-m1-q6",
+          "questionText": "問6 そんなにきれいな花があるのなら、一度見てみたい（　）。",
+          "options": [
+            "ものか",
+            "ものだ"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "gt4-m1-q7",
+          "questionText": "問7 成功のためには、ただ努力ある（　）。",
+          "options": [
+            "のみか",
+            "のみだ"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "gt4-m1-q8",
+          "questionText": "問8 ただ息子の帰りを信じて待つ（　）。",
+          "options": [
+            "ばかりか",
+            "ばかりだ"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "gt4-m1-q9",
+          "questionText": "問9 部下がそんな失敗をして注意もしないなんて、部下も部下なら上司も（　）。",
+          "options": [
+            "上司か",
+            "上司だ"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "gt4-m1-q10",
+          "questionText": "問10 なんとかお願いできない（　）。",
+          "options": [
+            "ものでしょうか",
+            "ものでしょう"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

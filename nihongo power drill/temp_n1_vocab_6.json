@@ -1,0 +1,249 @@
+{
+  "id": "vocab-6",
+  "title": "第6回",
+  "type": "vocab",
+  "description": "N1文字・語彙ドリル 第6回",
+  "group": "Group 1",
+  "sections": [
+    {
+      "title": "問題1",
+      "mondaiHeader": "次の言葉の読み方として最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-6-m1-q1",
+          "questionText": "問1 年齢相応の態度や発言が必要だ。",
+          "options": [
+            "あいお",
+            "そうお",
+            "あいおう",
+            "そうおう"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-6-m1-q2",
+          "questionText": "問2 遠くから参加してくれる人への配慮を忘れないようにしたい。",
+          "options": [
+            "ぱいりょ",
+            "はいりょ",
+            "ぱいりょう",
+            "はいりょう"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-6-m1-q3",
+          "questionText": "問3 この大会では自分の実力をすべて発揮したい。",
+          "options": [
+            "はっき",
+            "ほっき",
+            "はつぐん",
+            "ほつぐん"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-6-m1-q4",
+          "questionText": "問4 あの人はどうして年齢を偽るのだろうか。",
+          "options": [
+            "かたよる",
+            "ためる",
+            "にせる",
+            "いつわる"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-6-m1-q5",
+          "questionText": "問5 A社の製品は品質の高さで群を抜いている。",
+          "options": [
+            "ぐんをひいて",
+            "ぐんをぬいて",
+            "むれをひいて",
+            "むれをぬいて"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題2",
+      "mondaiHeader": "次の言葉に意味が最も近いものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-6-m2-q1",
+          "questionText": "問1 そのニュースを聞いて、強いいきどおりを感じた。",
+          "options": [
+            "怒り",
+            "喜び",
+            "悲しみ",
+            "楽しみ"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-6-m2-q2",
+          "questionText": "問2 ピアノに合わせて歌う声が、かすかに聞こえてきた。",
+          "options": [
+            "急に",
+            "小さく",
+            "はっきりと",
+            "楽しそうに"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-6-m2-q3",
+          "questionText": "問3 話し合いをしたら、すんなり結論が出た。",
+          "options": [
+            "すぐに",
+            "やっと",
+            "とりあえず",
+            "予想どおりの"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-6-m2-q4",
+          "questionText": "問4 人の忠告はちゃんと聞いたほうがいいですよ。",
+          "options": [
+            "アピール",
+            "アイディア",
+            "アドバイス",
+            "アナウンス"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        },
+        {
+          "id": "v-6-m2-q5",
+          "questionText": "問5 「わかりました」と一言そっけない返事が返ってきた。",
+          "options": [
+            "素直な",
+            "とても短い",
+            "無駄のない",
+            "関心がなさそうな"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題3",
+      "mondaiHeader": "次の文の（　）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-6-m3-q1",
+          "questionText": "問1 無名だった選手が金メダルをとり、（　）有名になった。",
+          "options": [
+            "一気",
+            "一向",
+            "一切",
+            "一躍"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-6-m3-q2",
+          "questionText": "問2 論文は、まず全体の（　）を考えてから書き始めましょう。",
+          "options": [
+            "構成",
+            "建造",
+            "成立",
+            "組織"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-6-m3-q3",
+          "questionText": "問3 どんなに忙しくても、お客様への対応が（　）になってはいけない。",
+          "options": [
+            "あざやか",
+            "おろそか",
+            "かろやか",
+            "なごやか"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "v-6-m3-q4",
+          "questionText": "問4 この計画は成功すれば利益が大きいが、失敗する（　）も高い。",
+          "options": [
+            "ケース",
+            "プラン",
+            "リード",
+            "リスク"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-6-m3-q5",
+          "questionText": "問5 嫌な誘いは（　）断ったほうがいい。",
+          "options": [
+            "きっぱり",
+            "げっそり",
+            "さっぱり",
+            "ひっそり"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "v-6-m3-q6",
+          "questionText": "問6 それでは、調べまして、（　）お電話いたします。",
+          "options": [
+            "折り返し",
+            "掛け直し",
+            "払い戻し",
+            "振り出し"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "title": "問題4",
+      "mondaiHeader": "次の言葉の使い方として最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "id": "v-6-m4-q1",
+          "questionText": "問1 繁盛",
+          "options": [
+            "経済が繁盛して国が豊かになった。",
+            "世界の科学技術はどんどん繁盛している。",
+            "医学が繁盛して、新しい治療法が開発された。",
+            "この店は味もよく、値段も安いので、繁盛している。"
+          ],
+          "correctIndex": 3,
+          "explanation": ""
+        },
+        {
+          "id": "v-6-m4-q2",
+          "questionText": "問2 はかどる",
+          "options": [
+            "時間がはかどるのはとても早い。",
+            "みんなで今日中にこの仕事をはかどろう。",
+            "静かな部屋で集中できたので、勉強がはかどった。",
+            "今日は宿題を30ページはかどるつもりです。"
+          ],
+          "correctIndex": 2,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

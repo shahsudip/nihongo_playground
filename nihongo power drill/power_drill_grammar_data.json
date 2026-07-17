@@ -10,7 +10,7 @@
       "title": "第1回",
       "type": "questions-only",
       "description": "N3文法ドリル第1回：文の文法、並べ替え、文章の文法",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-1-mondai1",
           "title": "問題1",
@@ -245,7 +245,7 @@
       "title": "第2回",
       "type": "questions-only",
       "description": "N3文法ドリル第2回：文の文法、並べ替え、文章の文法",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-2-mondai1",
           "title": "問題1",
@@ -480,7 +480,7 @@
       "title": "第3回",
       "type": "questions-only",
       "description": "N3文法ドリル第3回：文の文法、並べ替え、文章の文法",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-3-mondai1",
           "title": "問題1",
@@ -715,7 +715,7 @@
       "title": "第4回",
       "type": "questions-only",
       "description": "N3文法ドリル第4回",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-4-mondai1",
           "title": "問題1",
@@ -932,7 +932,7 @@
       "title": "第5回",
       "type": "questions-only",
       "description": "N3文法ドリル第5回",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-5-mondai1",
           "title": "問題1",
@@ -1149,7 +1149,7 @@
       "title": "第6回",
       "type": "questions-only",
       "description": "N3文法ドリル第6回",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-6-mondai1",
           "title": "問題1",
@@ -1364,7 +1364,7 @@
     {
       "id": "grammar-7",
       "title": "第７回",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-7-mondai1",
           "title": "問題1",
@@ -1596,7 +1596,7 @@
     {
       "id": "grammar-8",
       "title": "第８回",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-8-mondai1",
           "title": "問題1",
@@ -1828,7 +1828,7 @@
     {
       "id": "grammar-9",
       "title": "第９回",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-9-mondai1",
           "title": "問題1",
@@ -2062,7 +2062,7 @@
       "title": "第11回",
       "type": "questions-only",
       "description": "N3文法ドリル第11回",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-11-mondai1",
           "title": "問題1",
@@ -2279,7 +2279,7 @@
       "title": "第12回",
       "type": "questions-only",
       "description": "N3文法ドリル第12回",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-12-mondai1",
           "title": "問題1",
@@ -2496,7 +2496,7 @@
       "title": "第13回",
       "type": "questions-only",
       "description": "N3文法ドリル第13回",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-13-mondai1",
           "title": "問題1",
@@ -3130,7 +3130,7 @@
       "type": "questions-only",
       "description": "助詞（１）",
       "group": "集中トレーニング",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-training-1-mondai1",
           "title": "問題1",
@@ -3245,7 +3245,7 @@
       "type": "questions-only",
       "description": "助詞（２）",
       "group": "集中トレーニング",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-training-2-mondai1",
           "title": "問題1",
@@ -3359,7 +3359,7 @@
       "title": "集中トレーニング ③",
       "type": "questions-only",
       "description": "N3文法 集中トレーニング ③ 助詞（３）",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-t3-mondai1",
           "title": "助詞（３）",
@@ -3464,7 +3464,7 @@
       "title": "集中トレーニング ④",
       "type": "questions-only",
       "description": "N3文法 集中トレーニング ④ 助詞（４）",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-t4-mondai1",
           "title": "助詞（４）",
@@ -3655,7 +3655,7 @@
       "title": "第10回",
       "type": "questions-only",
       "description": "第10回 grammar drills.",
-      "passages": [
+      "sections": [
         {
           "id": "grammar-10-mondai1",
           "title": "問題1",

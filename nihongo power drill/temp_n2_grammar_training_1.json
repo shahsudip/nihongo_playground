@@ -1,0 +1,115 @@
+{
+  "id": "grammar-training-1",
+  "title": "集中トレーニング①（助詞１）",
+  "type": "questions-only",
+  "description": "N2文法ドリル 集中トレーニング①（助詞１）",
+  "group": "Group 1",
+  "sections": [
+    {
+      "title": "集中トレーニング①",
+      "mondaiHeader": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "questions": [
+        {
+          "id": "g-t1-q1",
+          "questionText": "問1 それっぽっちのお金、ない（　）同然だ。",
+          "options": [
+            "と",
+            "も"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t1-q2",
+          "questionText": "問2 冷静になって考えてみると、彼だって普通の人（　）すぎない。",
+          "options": [
+            "で",
+            "に"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t1-q3",
+          "questionText": "問3 父（　）してみたら、私の将来が心配でしかたがないのだろう。",
+          "options": [
+            "に",
+            "を"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t1-q4",
+          "questionText": "問4 明日は広い範囲（　）わたって、大雨となるでしょう。",
+          "options": [
+            "に",
+            "を"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t1-q5",
+          "questionText": "問5 1回や2回（　）まだしも、こんなに失敗が多くては……。",
+          "options": [
+            "こそ",
+            "なら"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t1-q6",
+          "questionText": "問6 見た目（　）ともかく、味は最高だから、とにかく食べてみて！",
+          "options": [
+            "が",
+            "は"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t1-q7",
+          "questionText": "問7 マラソン大会開催（　）ともない、10時から13時まで通行止めとなります。",
+          "options": [
+            "と",
+            "に"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t1-q8",
+          "questionText": "問8 心（　）こめて話せば、きっとわかってくれるはずだよ。",
+          "options": [
+            "に",
+            "を"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t1-q9",
+          "questionText": "問9 彼はスタンドの声援（　）こたえて、手を振った。",
+          "options": [
+            "に",
+            "を"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t1-q10",
+          "questionText": "問10 休む（　）しろ、連絡だけはしておいたほうがいい。",
+          "options": [
+            "に",
+            "を"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

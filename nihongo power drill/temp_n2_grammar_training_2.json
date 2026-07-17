@@ -1,0 +1,115 @@
+{
+  "id": "grammar-training-2",
+  "title": "集中トレーニング②（助詞２）",
+  "type": "questions-only",
+  "description": "N2文法ドリル 集中トレーニング②（助詞２）",
+  "group": "Group 1",
+  "sections": [
+    {
+      "title": "集中トレーニング②",
+      "mondaiHeader": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "questions": [
+        {
+          "id": "g-t2-q1",
+          "questionText": "問1 開会（　）あたり、ひと言ごあいさつ申し上げます。",
+          "options": [
+            "が",
+            "に"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t2-q2",
+          "questionText": "問2 話を聞く（　）つけ、事態の深刻さがわかってきた。",
+          "options": [
+            "に",
+            "を"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t2-q3",
+          "questionText": "問3 メモ（　）頼りに、なんとか説明することができた。",
+          "options": [
+            "に",
+            "を"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t2-q4",
+          "questionText": "問4 ご入場は20歳以上の方（　）限ります。",
+          "options": [
+            "に",
+            "を"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t2-q5",
+          "questionText": "問5 彼女は人目（　）かまわず泣き出した。",
+          "options": [
+            "に",
+            "も"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t2-q6",
+          "questionText": "問6 この地域には、スポーツ施設はもとより図書館（　）ない。",
+          "options": [
+            "は",
+            "も"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t2-q7",
+          "questionText": "問7 勝つのはうちのチーム（　）決まっているじゃないか。",
+          "options": [
+            "が",
+            "に"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t2-q8",
+          "questionText": "問8 期間限定と言われると、買わず（　）いられない。",
+          "options": [
+            "では",
+            "には"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-t2-q9",
+          "questionText": "問9 計画（　）沿って、間違いなく行うようにしてください。",
+          "options": [
+            "に",
+            "を"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-t2-q10",
+          "questionText": "問10 この地方は4月から7月中旬（　）かけて、雨が多い。",
+          "options": [
+            "に",
+            "を"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

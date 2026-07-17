@@ -1,0 +1,115 @@
+{
+  "id": "grammar-training-8",
+  "title": "集中トレーニング⑧",
+  "type": "questions-only",
+  "description": "N2文法 集中トレーニング⑧ 似ている文型（２）",
+  "group": "Group 3",
+  "sections": [
+    {
+      "title": "問題1",
+      "mondaiHeader": "（　）の中のaとbのうち、文に合うほうを選びましょう。",
+      "questions": [
+        {
+          "id": "g-tr8-q1",
+          "questionText": "問1 トッピングはチーズ（　）、お願いします。",
+          "options": [
+            "a 抜きで",
+            "b 抜きに"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr8-q2",
+          "questionText": "問2 自分でちゃんと調べた（　）、この結論を出しました。",
+          "options": [
+            "a 上で",
+            "b 上に"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr8-q3",
+          "questionText": "問3 参加する（　）、1時間程度しかいられません。",
+          "options": [
+            "a としては",
+            "b としても"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr8-q4",
+          "questionText": "問4 向こうから回答があり（　）、すぐにご報告します。",
+          "options": [
+            "a 次第",
+            "b 次第で"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr8-q5",
+          "questionText": "問5 私は声を（　）叫んだが、彼には届かなかった。",
+          "options": [
+            "a かぎり",
+            "b かぎりに"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr8-q6",
+          "questionText": "問6 伊藤コーチの指導の（　）、私たちは毎日練習に励んだ。",
+          "options": [
+            "a もと",
+            "b もとに"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr8-q7",
+          "questionText": "問7 驚くべき（　）、その少女は3歳で5カ国語が話せるそうだ。",
+          "options": [
+            "a ことに",
+            "b ことには"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr8-q8",
+          "questionText": "問8 こうなった（　）、もう正直に真実を告白するしかない。",
+          "options": [
+            "a 上で",
+            "b 上は"
+          ],
+          "correctIndex": 1,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr8-q9",
+          "questionText": "問9 その子は泣く（　）、近くにあるものを投げ始めた。",
+          "options": [
+            "a ばかりか",
+            "b ばかりに"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        },
+        {
+          "id": "g-tr8-q10",
+          "questionText": "問10 初めて書道をした（　）、なかなかうまく書けている。",
+          "options": [
+            "a にしては",
+            "b にしても"
+          ],
+          "correctIndex": 0,
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+[
+  {
+    "id": "vocab-24",
+    "title": "第24回",
+    "type": "questions-only",
+    "description": "漢字読み、表記、類義語・用法の練習ドリル第24回",
+    "group": "Group 5",
+    "sections": [
+      {
+        "title": "問題1",
+        "mondaiHeader": "問題1 のことばの読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+        "questions": [
+          {
+            "questionText": "問1 そのゲーム会社の去年の売り上げは、2<u>兆</u>円だったそうだ。",
+            "options": [
+              "しょう",
+              "じょう",
+              "ちょう",
+              "ちゅう"
+            ],
+            "explanation": "兆（ちょう）means trillion (10^12).",
+            "id": "v24-m1-q1",
+            "correctIndex": 2
+          },
+          {
+            "questionText": "問2 彼女が新しい社長の<u>秘書</u>です。",
+            "options": [
+              "ひしょ",
+              "ひじょ",
+              "ひいしょ",
+              "ひいじょ"
+            ],
+            "explanation": "秘書（ひしょ）means secretary.",
+            "id": "v24-m1-q2",
+            "correctIndex": 0
+          },
+          {
+            "questionText": "問3 試合に負けて<u>悔しい</u>。",
+            "options": [
+              "かなしい",
+              "くやしい",
+              "くわしい",
+              "さびしい"
+            ],
+            "explanation": "悔しい（くやしい）means vexing / frustrating / regrettable.",
+            "id": "v24-m1-q3",
+            "correctIndex": 1
+          }
+        ],
+        "id": "vocab-24-mondai1"
+      },
+      {
+        "title": "問題2",
+        "mondaiHeader": "問題2 のことばを漢字で書くとき最もよいものを、1・2・3・4から一つ選びなさい。",
+        "questions": [
+          {
+            "questionText": "問1 空にはくもひとつなく、いい天気だ。",
+            "options": [
+              "雪",
+              "雷",
+              "雲",
+              "霧"
+            ],
+            "explanation": "くも is written as 雲 (cloud).",
+            "id": "v24-m2-q1",
+            "correctIndex": 2
+          },
+          {
+            "questionText": "問2 本日は、ご<u>しょうたい</u>ありがとうございました。",
+            "options": [
+              "招待",
+              "紹待",
+              "相待",
+              "招待(distractor)"
+            ],
+            "explanation": "しょうたい is written as 招待 (invitation).",
+            "id": "v24-m2-q2",
+            "correctIndex": 0
+          },
+          {
+            "questionText": "問3 図書館のカードを<u>しんせい</u>した。",
+            "options": [
+              "申請",
+              "信請",
+              "真請",
+              "親請"
+            ],
+            "explanation": "しんせい is written as 申請 (application / petition).",
+            "id": "v24-m2-q3",
+            "correctIndex": 0
+          }
+        ],
+        "id": "vocab-24-mondai2"
+      },
+      {
+        "title": "問題3",
+        "mondaiHeader": "問題3 のことばに意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+        "questions": [
+          {
+            "questionText": "問1 両国の関係が<u>かいぜんされた</u>。",
+            "options": [
+              "かわった",
+              "つくられた",
+              "なくなった",
+              "よくなった"
+            ],
+            "explanation": "改善する means to improve / make better (よくなる).",
+            "id": "v24-m3-q1",
+            "correctIndex": 3
+          },
+          {
+            "questionText": "問2 隣の家はいつも<u>そうぞうしい</u>。",
+            "options": [
+              "暗い",
+              "うるさい",
+              "静かすぎる",
+              "楽しそうだ"
+            ],
+            "explanation": "そうぞうしい means noisy / rowdy / clamorous (うるさい).",
+            "id": "v24-m3-q2",
+            "correctIndex": 1
+          },
+          {
+            "questionText": "問3 会社は社員全員に1万円ずつ<u>支給した</u>。",
+            "options": [
+              "貸した",
+              "集めた",
+              "払った",
+              "貯金した"
+            ],
+            "explanation": "支給する means to pay / provide / supply money or goods (払う).",
+            "id": "v24-m3-q3",
+            "correctIndex": 2
+          },
+          {
+            "questionText": "問4 この中で一番<u>もてる</u>のは誰だろう。",
+            "options": [
+              "頭がいい",
+              "力がある",
+              "お金がある",
+              "人気がある"
+            ],
+            "explanation": "もてる means to be popular (especially with the opposite sex) / attractive (人気がある).",
+            "id": "v24-m3-q4",
+            "correctIndex": 3
+          }
+        ],
+        "id": "vocab-24-mondai3"
+      },
+      {
+        "title": "問題4",
+        "mondaiHeader": "問題4 （　　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+        "questions": [
+          {
+            "questionText": "問1 安いと思ってたくさん買ったら、合計（　　）を見てびっくりした。",
+            "options": [
+              "定価",
+              "金額",
+              "物価",
+              "値段"
+            ],
+            "explanation": "金額（きんがく）means amount of money. 合計金額 means total amount.",
+            "id": "v24-m4-q1",
+            "correctIndex": 1
+          },
+          {
+            "questionText": "問2 山に行ったら、たくさんの虫に（　　）しまった。",
+            "options": [
+              "かかって",
+              "さされて",
+              "つかれて",
+              "とられて"
+            ],
+            "explanation": "刺す（さす）in passive form 刺される means to be stung / bitten by an insect.",
+            "id": "v24-m4-q2",
+            "correctIndex": 1
+          },
+          {
+            "questionText": "問3 卒業したら何をするべきか、ずっと（　　）いる。",
+            "options": [
+              "覚えて",
+              "感じて",
+              "悩んで",
+              "祈って"
+            ],
+            "explanation": "悩む（なやむ）means to be worried / troubled.",
+            "id": "v24-m4-q3",
+            "correctIndex": 2
+          },
+          {
+            "questionText": "問4 悪い病気の（　　）があるので、すぐに検査したほうがいいと医者に言われた。",
+            "options": [
+              "疑い",
+              "迷い",
+              "疑問",
+              "迷惑"
+            ],
+            "explanation": "疑い（うたがい）means suspicion / doubt. 疑いがある means there is a suspicion.",
+            "id": "v24-m4-q4",
+            "correctIndex": 0
+          },
+          {
+            "questionText": "問5 10を3で割ると、（　　）は1だ。",
+            "options": [
+              "あまり",
+              "おつり",
+              "のこり",
+              "ばかり"
+            ],
+            "explanation": "あまり means remainder / surplus.",
+            "id": "v24-m4-q5",
+            "correctIndex": 0
+          },
+          {
+            "questionText": "問6 一日中歩いたので、もう疲れて（　　）です。",
+            "options": [
+              "ぴりぴり",
+              "ひりひり",
+              "ぺらぺら",
+              "へとへと"
+            ],
+            "explanation": "へとへと is an onomatopoeia for being completely exhausted / dead tired.",
+            "id": "v24-m4-q6",
+            "correctIndex": 3
+          }
+        ],
+        "id": "vocab-24-mondai4"
+      },
+      {
+        "title": "問題5",
+        "mondaiHeader": "問題5 つぎのことばの使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+        "questions": [
+          {
+            "questionText": "問1 発明",
+            "options": [
+              "電話を発明したのは誰か、知っていますか。",
+              "新しい星を発明して、自分の名前をつけたい。",
+              "A社の若い社員によって新しい車が発明された。",
+              "人気作家の新しい小説が、5年ぶりに発明された。"
+            ],
+            "explanation": "発明（はつめい）means invention.",
+            "id": "v24-m5-q1",
+            "correctIndex": 0
+          },
+          {
+            "questionText": "問2 そろえる",
+            "options": [
+              "玄関で脱いだ靴をそろえた。",
+              "いらない物をそろえて、ごみの日に捨てた。",
+              "腕時計をはずして、テーブルの上でそろえた。",
+              "お客さんが来る前に、部屋をそろえておいた。"
+            ],
+            "explanation": "そろえる means to arrange in order / line up / tidy / assemble.",
+            "id": "v24-m5-q2",
+            "correctIndex": 0
+          }
+        ],
+        "id": "vocab-24-mondai5"
+      }
+    ]
+  }
+]

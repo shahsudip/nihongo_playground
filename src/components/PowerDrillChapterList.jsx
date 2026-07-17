@@ -19,19 +19,54 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
       })
     : chapters;
 
+  const getChapterInfo = (id) => {
+    const isTraining = id.includes('training');
+    const isReview = id.includes('review');
+    const isDrill = !isTraining && !isReview;
+
+    let num = 1;
+    let reviewNum = 1;
+
+    if (isReview) {
+      const match = id.match(/review-(\d+)/);
+      reviewNum = match ? parseInt(match[1], 10) : 1;
+      num = (Math.ceil(reviewNum / 2) - 1) * 5 + 1;
+    } else if (isTraining) {
+      const match = id.match(/training-(\d+)/);
+      num = match ? parseInt(match[1], 10) : 1;
+    } else {
+      const match = id.match(/-(\d+)$/);
+      num = match ? parseInt(match[1], 10) : 1;
+    }
+
+    return { isTraining, isReview, isDrill, num, reviewNum };
+  };
+
+  let maxDrill = 0;
+  let maxTraining = 0;
+  if (filteredChapters.length > 0) {
+    filteredChapters.forEach(ch => {
+      const info = getChapterInfo(ch.id);
+      if (info.isDrill) maxDrill = Math.max(maxDrill, info.num);
+      if (info.isTraining) maxTraining = Math.max(maxTraining, info.num);
+    });
+    // Ensure we have at least 5 to avoid strange UI if only 1 is uploaded
+    maxDrill = Math.max(maxDrill, 5);
+  }
+
   // Sort filtered chapters numerically
   filteredChapters.sort((a, b) => {
     const getSortVal = (id) => {
-      const parts = id.split('-');
-      if (id.includes('training')) {
-        const tNum = id.startsWith('training') ? parseInt(parts[1]) : parseInt(parts[2]);
-        const groupNum = Math.ceil((tNum || 1) / 2);
-        return groupNum * 5 + (tNum % 2 === 1 ? 0.1 : 0.2);
+      const info = getChapterInfo(id);
+      if (info.isTraining) {
+        const groupNum = Math.ceil(info.num / 2);
+        return groupNum * 5 + 0.1 + (info.num * 0.01);
       }
-      if (id.includes('review')) {
-        return (parseInt(parts[1]) || 0) + 0.1; // vocab-5-review-1 -> 5.1
+      if (info.isReview) {
+        const groupNum = Math.ceil(info.reviewNum / 2);
+        return groupNum * 5 + 0.1 + (info.reviewNum * 0.01);
       }
-      return parseInt(parts[1]) || 0; // vocab-1 or grammar-1 or chapter-7 -> numeric part
+      return info.num;
     };
     
     return getSortVal(a.id) - getSortVal(b.id);
@@ -39,22 +74,15 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
 
   // Group chapters by block of 5
   const getGroupInfo = (chapterId) => {
-    const parts = chapterId.split('-');
-    let num = parseInt(parts[1]) || 0;
+    const info = getChapterInfo(chapterId);
     
-    if (chapterId.includes('training')) {
-      let tNum = 1;
-      if (chapterId.startsWith('training')) {
-        tNum = parseInt(parts[1]) || 1; 
-      } else {
-        tNum = parseInt(parts[2]) || 1;
-      }
-      num = Math.ceil(tNum / 2) * 5;
-    } else if (chapterId.includes('review')) {
-       num = parseInt(parts[1]) || 0;
+    if (info.isTraining) {
+      return Math.ceil(info.num / 2) || 1;
+    } else if (info.isReview) {
+      return Math.ceil(info.reviewNum / 2) || 1;
     }
     
-    return Math.ceil(num / 5) || 1;
+    return Math.ceil(info.num / 5) || 1;
   };
 
   const groups = {};
@@ -167,7 +195,7 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
                   </div>
 
                   <h3 className="text-lg font-bold text-[var(--color-text-primary)] group-hover:text-emerald-400 transition-colors mb-1.5">
-                    Drills { (group.number - 1) * 5 + 1 } - { Math.min(group.number * 5, 30) }
+                    Drills { (group.number - 1) * 5 + 1 } - { Math.min(group.number * 5, maxDrill) }
                   </h3>
                   <p className="text-[var(--color-text-secondary)] text-xs mb-6">
                     Includes {group.chapters.filter(ch => !ch.id.includes('review')).length} Practice Drills & {group.chapters.filter(ch => ch.id.includes('review')).length} Intensive Review.
@@ -181,17 +209,15 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
                       const userProgress = history[chapter.id];
                       const isMastered = userProgress && userProgress.status === 'mastered';
                       const isIncomplete = userProgress && userProgress.status === 'incomplete';
-                      const isTraining = chapter.id.includes('training');
-                      const isReview = chapter.id.includes('review');
+                      const info = getChapterInfo(chapter.id);
                       
                       let drillNum = '';
-                      if (isReview) {
-                        drillNum = 'R';
-                      } else if (isTraining) {
-                        const parts = chapter.id.split('-');
-                        drillNum = `T${chapter.id.startsWith('training') ? parts[1] : parts[2]}`;
+                      if (info.isReview) {
+                        drillNum = `R${info.reviewNum}`;
+                      } else if (info.isTraining) {
+                        drillNum = `T${info.num}`;
                       } else {
-                        drillNum = chapter.id.split('-')[1];
+                        drillNum = `${info.num}`;
                       }
 
                       return (
@@ -204,7 +230,7 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
                                 ? 'bg-amber-500/15 border-amber-500/40 text-amber-400'
                                 : 'bg-[var(--color-bg-primary)] border-[var(--color-border)] text-[var(--color-text-muted)]'
                           }`}
-                          title={isReview ? 'Review' : isTraining ? `Training ${drillNum.replace('T', '')}` : `Drill ${drillNum}`}
+                          title={info.isReview ? 'Review' : info.isTraining ? `Training ${info.num}` : `Drill ${info.num}`}
                         >
                           {drillNum}
                         </span>
@@ -237,7 +263,7 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
                 &larr; Back to Groups
               </button>
               <h3 className="text-base font-bold text-[var(--color-text-primary)]">
-                Group {selectedGroup} Content (Drills { (selectedGroup - 1) * 5 + 1 } - { Math.min(selectedGroup * 5, 30) })
+                Group {selectedGroup} Content (Drills { (selectedGroup - 1) * 5 + 1 } - { Math.min(selectedGroup * 5, maxDrill) })
               </h3>
             </div>
             <span className="text-xs font-semibold text-[var(--color-text-muted)]">
@@ -250,17 +276,15 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
               const userProgress = history[chapter.id];
               const isMastered = userProgress && userProgress.status === 'mastered';
               const isIncomplete = userProgress && userProgress.status === 'incomplete';
-              const isTraining = chapter.id.includes('training');
-              const isReview = chapter.id.includes('review');
+              const info = getChapterInfo(chapter.id);
               
               let drillNum = '';
-              if (isReview) {
-                drillNum = `R${chapter.id.split('-')[3] || '1'}`;
-              } else if (isTraining) {
-                const parts = chapter.id.split('-');
-                drillNum = chapter.id.startsWith('training') ? parts[1] : parts[2];
+              if (info.isReview) {
+                drillNum = `R${info.reviewNum}`;
+              } else if (info.isTraining) {
+                drillNum = `T${info.num}`;
               } else {
-                drillNum = chapter.id.split('-')[1] || chapter.id;
+                drillNum = `${info.num}`;
               }
 
               return (
@@ -276,7 +300,7 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
                   }`}
                 >
                   <span className="text-[10px] font-bold text-[var(--color-text-muted)] tracking-wider uppercase">
-                    {isReview ? 'Review' : isTraining ? 'Training' : 'Drill'}
+                    {info.isReview ? 'Review' : info.isTraining ? 'Training' : 'Drill'}
                   </span>
                   <span className="text-3xl font-black text-[var(--color-text-primary)] my-1.5">{drillNum}</span>
                   <span className="text-[11px] font-semibold">
@@ -299,3 +323,4 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
 };
 
 export default PowerDrillChapterList;
+

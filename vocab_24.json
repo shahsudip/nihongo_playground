@@ -1,0 +1,304 @@
+[
+  {
+    "id": "vocab-24",
+    "title": "第24回",
+    "type": "questions-only",
+    "description": "第24回：漢字読み・表記・文脈規定・語形成・言い換え類義・用法",
+    "sections": [
+      {
+        "title": "問題1",
+        "mondaiHeader": "問題1 ＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+        "passageText": "",
+        "questions": [
+          {
+            "questionText": "彼は<u>机上</u>の空論ばかり述べる。",
+            "options": [
+              "きじょう",
+              "きしょう",
+              "つくえじょう",
+              "つくえしょう"
+            ],
+            "correctOption": {
+              "index": 0,
+              "text": "きじょう"
+            },
+            "explanation": "机上（きじょう）= on the desk / theoretical. 机上の空論 = an impractical theory / armchair theory."
+          },
+          {
+            "questionText": "この組織の<u>腐敗</u>は深刻だ。",
+            "options": [
+              "ふはい",
+              "ふばい",
+              "ぶはい",
+              "ぶばい"
+            ],
+            "correctOption": {
+              "index": 0,
+              "text": "ふはい"
+            },
+            "explanation": "腐敗（ふはい）= corruption / decay / rottenness."
+          },
+          {
+            "questionText": "彼女は<u>培った</u>技術を活かして活躍している。",
+            "options": [
+              "つちかった",
+              "きたえた",
+              "みがいた",
+              "そだてた"
+            ],
+            "correctOption": {
+              "index": 0,
+              "text": "つちかった"
+            },
+            "explanation": "培う（つちかう）= to cultivate / nurture / develop (skills/relationships over time)."
+          }
+        ]
+      },
+      {
+        "title": "問題2",
+        "mondaiHeader": "問題2 ＿＿の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ選びなさい。",
+        "passageText": "",
+        "questions": [
+          {
+            "questionText": "彼のアドバイスは<u>てきせつ</u>だった。",
+            "options": [
+              "適切",
+              "的切",
+              "適節",
+              "的節"
+            ],
+            "correctOption": {
+              "index": 0,
+              "text": "適切"
+            },
+            "explanation": "てきせつ = 適切 (appropriate / suitable / proper)."
+          },
+          {
+            "questionText": "その問題は<u>かいしゃく</u>が難しい。",
+            "options": [
+              "解釈",
+              "解尺",
+              "快釈",
+              "快尺"
+            ],
+            "correctOption": {
+              "index": 0,
+              "text": "解釈"
+            },
+            "explanation": "かいしゃく = 解釈 (interpretation / reading)."
+          },
+          {
+            "questionText": "新しい<u>せいさく</u>を発表した。",
+            "options": [
+              "政策",
+              "制策",
+              "政作",
+              "制作"
+            ],
+            "correctOption": {
+              "index": 0,
+              "text": "政策"
+            },
+            "explanation": "せいさく = 政策 (policy / political measure). Note: 制作 means production/making of works."
+          }
+        ]
+      },
+      {
+        "title": "問題3",
+        "mondaiHeader": "問題3 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+        "passageText": "",
+        "questions": [
+          {
+            "questionText": "その提案は（　）に欠けている。",
+            "options": [
+              "根拠",
+              "証拠",
+              "理由",
+              "実績"
+            ],
+            "correctOption": {
+              "index": 0,
+              "text": "根拠"
+            },
+            "explanation": "根拠に欠ける（こんきょにかける）= to lack a basis / to be groundless."
+          },
+          {
+            "questionText": "彼女は（　）を持って反論した。",
+            "options": [
+              "自信",
+              "勢い",
+              "根拠",
+              "データ"
+            ],
+            "correctOption": {
+              "index": 0,
+              "text": "自信"
+            },
+            "explanation": "自信を持って反論する（じしんをもってはんろんする）= to argue back with confidence."
+          },
+          {
+            "questionText": "（　）として認められるためには、実績が必要だ。",
+            "options": [
+              "専門家",
+              "プロ",
+              "一人前",
+              "エキスパート"
+            ],
+            "correctOption": {
+              "index": 2,
+              "text": "一人前"
+            },
+            "explanation": "一人前（いちにんまえ）として認められる = to be recognized as a full-fledged professional."
+          },
+          {
+            "questionText": "彼は（　）を重ねて技術を磨いた。",
+            "options": [
+              "経験",
+              "努力",
+              "練習",
+              "失敗"
+            ],
+            "correctOption": {
+              "index": 2,
+              "text": "練習"
+            },
+            "explanation": "練習を重ねる（れんしゅうをかさねる）= to practice repeatedly / to accumulate practice."
+          }
+        ]
+      },
+      {
+        "title": "問題4",
+        "mondaiHeader": "問題4 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+        "passageText": "",
+        "questions": [
+          {
+            "questionText": "その記事は（　）的な見方をしている。",
+            "options": [
+              "偏",
+              "一方",
+              "片方",
+              "偏向"
+            ],
+            "correctOption": {
+              "index": 3,
+              "text": "偏向"
+            },
+            "explanation": "偏向的（へんこうてき）= biased / one-sided. '偏向的な見方' = a biased viewpoint."
+          },
+          {
+            "questionText": "この問題は（　）的な解決が必要だ。",
+            "options": [
+              "抜本",
+              "根本",
+              "根本的",
+              "抜本的"
+            ],
+            "correctOption": {
+              "index": 3,
+              "text": "抜本的"
+            },
+            "explanation": "抜本的（ばっぽんてき）= fundamental / radical / sweeping. '抜本的な解決' = fundamental/root-cause solution."
+          },
+          {
+            "questionText": "彼は（　）な視点でアドバイスをくれた。",
+            "options": [
+              "客観",
+              "第三者",
+              "中立",
+              "外部"
+            ],
+            "correctOption": {
+              "index": 1,
+              "text": "第三者"
+            },
+            "explanation": "第三者的な視点（だいさんしゃてきなしてん）= a third-party / outside perspective."
+          }
+        ]
+      },
+      {
+        "title": "問題5",
+        "mondaiHeader": "問題5 ＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+        "passageText": "",
+        "questions": [
+          {
+            "questionText": "彼は<u>お世辞</u>を言う。",
+            "options": [
+              "本心を言う",
+              "相手を喜ばせるための上辺の褒め言葉を言う",
+              "批判する",
+              "謝る"
+            ],
+            "correctOption": {
+              "index": 1,
+              "text": "相手を喜ばせるための上辺の褒め言葉を言う"
+            },
+            "explanation": "お世辞（おせじ）= flattery / empty compliment (相手を喜ばせるための上辺の褒め言葉)."
+          },
+          {
+            "questionText": "この状況は<u>由々しい</u>。",
+            "options": [
+              "とても良い",
+              "深刻で放置できない",
+              "楽しい",
+              "かんたんに解決できる"
+            ],
+            "correctOption": {
+              "index": 1,
+              "text": "深刻で放置できない"
+            },
+            "explanation": "由々しい（ゆゆしい）= grave / serious / not to be taken lightly (深刻で放置できない)."
+          },
+          {
+            "questionText": "彼女は<u>頭角を現した</u>。",
+            "options": [
+              "失敗した",
+              "突出した才能を示した",
+              "引退した",
+              "目立たなくなった"
+            ],
+            "correctOption": {
+              "index": 1,
+              "text": "突出した才能を示した"
+            },
+            "explanation": "頭角を現す（とうかくをあらわす）= to distinguish oneself / to show outstanding ability (突出した才能を示した)."
+          }
+        ]
+      },
+      {
+        "title": "問題6",
+        "mondaiHeader": "問題6 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+        "passageText": "",
+        "questions": [
+          {
+            "questionText": "かたや",
+            "options": [
+              "兄は医者、かたや弟はフリーターだ。",
+              "彼はかたや毎日運動している。",
+              "かたや彼女は料理が得意だ。",
+              "この映画はかたや面白い。"
+            ],
+            "correctOption": {
+              "index": 0,
+              "text": "兄は医者、かたや弟はフリーターだ。"
+            },
+            "explanation": "かたや（片や）= on the other hand / while one is ~, the other is ~. Used to contrast two things. Option 1: 'The elder brother is a doctor, while the younger is a freeloader.'"
+          },
+          {
+            "questionText": "さも",
+            "options": [
+              "彼はさも知っているかのように話した。",
+              "彼はさも毎日勉強している。",
+              "さも彼女は優しい。",
+              "この問題はさも難しい。"
+            ],
+            "correctOption": {
+              "index": 0,
+              "text": "彼はさも知っているかのように話した。"
+            },
+            "explanation": "さも = as if / just as though. Option 1: 'He spoke as if he knew all about it.'"
+          }
+        ]
+      }
+    ]
+  }
+]

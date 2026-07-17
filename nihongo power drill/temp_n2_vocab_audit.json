@@ -1,0 +1,312 @@
+{
+  "total": 30,
+  "first_keys": [
+    "id",
+    "title",
+    "type",
+    "description",
+    "passages"
+  ],
+  "first": {
+    "id": "vocab-1",
+    "title": "第1回",
+    "type": "questions-only",
+    "description": "第1回：漢字読み・表記・文脈規定・語形成・言い換え類義・用法",
+    "passages": [
+      {
+        "title": "問題1",
+        "mondaiHeader": "問題1 ＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+        "passageText": "",
+        "questions": [
+          {
+            "questionText": "私は遠くから彼女が働く<u>姿</u>を見ていた。",
+            "options": [
+              "すかた",
+              "すがた",
+              "すはた",
+              "すはだ"
+            ],
+            "correctOption": {
+              "index": 1,
+              "text": "すがた"
+            },
+            "explanation": "姿（すがた）means figure / appearance / form."
+          },
+          {
+            "questionText": "スポーツをする時は、ときどき水分を<u>補った</u>ほうがいい。",
+            "options": [
+              "とった",
+              "あたった",
+              "たもった",
+              "おぎなった"
+            ],
+            "correctOption": {
+              "index": 3,
+              "text": "おぎなった"
+            },
+            "explanation": "補う（おぎなう）means to supplement / make up for / replenish."
+          },
+          {
+            "questionText": "3人に1人の<u>割合</u>で、その試験に合格している。",
+            "options": [
+              "かつあい",
+              "かっごう",
+              "わりあい",
+              "わりごう"
+            ],
+            "correctOption": {
+              "index": 2,
+              "text": "わりあい"
+            },
+            "explanation": "割合（わりあい）means ratio / proportion / percentage."
+          }
+        ]
+      },
+      {
+        "title": "問題2",
+        "mondaiHeader": "問題2 ＿＿の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ選びなさい。",
+        "passageText": "",
+        "questions": [
+          {
+            "questionText": "では、明日の3時にそちらに<u>うかがいます</u>。",
+            "options": [
+              "司います",
+              "何います",
+              "伺います",
+              "荷います"
+            ],
+            "correctOption": {
+              "index": 2,
+              "text": "伺います"
+            },
+            "explanation": "うかがう（伺う）is the humble form of 行く / 来る / 聞く. Written as 伺います."
+          },
+          {
+            "questionText": "最近は<u>れいぎ</u>を知らない人が多いように思う。",
+            "options": [
+              "礼義",
+              "礼儀",
+              "礼議",
+              "礼偽"
+            ],
+            "correctOption": {
+              "index": 1,
+              "text": "礼儀"
+            },
+            "explanation": "れいぎ is written as 礼儀 (manners / etiquette)."
+          },
+          {
+            "questionText": "<u>しゅうい</u>に迷惑がかからないように、静かに話してください。",
+            "options": [
+              "周固",
+              "周囲",
+              "週固",
+              "週囲"
+            ],
+            "correctOption": {
+              "index": 1,
+              "text": "周囲"
+            },
+            "explanation": "しゅうい is written as 周囲 (surroundings / those around you)."
+          }
+        ]
+      },
+      {
+        "title": "問題3",
+        "mondaiHeader": "問題3 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+        "passageText": "",
+        "questions": [
+          {
+            "questionText": "この計画が失敗したのは、リーダーである私の（　）です。",
+            "options": [
+              "義務",
+              "成果",
+              "責任",
+              "任務"
+            ],
+            "correctOption": {
+              "index": 2,
+              "text": "責任"
+            },
+            "explanation": "責任（せきにん）means responsibility. 'The responsibility lies with me as the leader'."
+          },
+          {
+            "questionText": "いくら忙しくても、（　）日曜日くらいは休みたい。",
+            "options": [
+              "せめて",
+              "やっと",
+              "けっこう",
+              "どうやら"
+            ],
+            "correctOption": {
+              "index": 0,
+              "text": "せめて"
+            },
+            "explanation": "せめて means 'at least': 'at least on Sundays I want to rest'."
+          },
+          {
+            "questionText": "会議が始まるまで30分以上あるから、新聞でも読んで時間を（　）。",
+            "options": [
+              "もとう",
+              "かけよう",
+              "つぶそう",
+              "とめよう"
+            ],
+            "correctOption": {
+              "index": 2,
+              "text": "つぶそう"
+            },
+            "explanation": "時間をつぶす means to kill time / pass the time."
+          },
+          {
+            "questionText": "明日、来週の旅行の（　）をしましょう。",
+            "options": [
+              "見合い",
+              "言い合い",
+              "打ち合わせ",
+              "待ち合わせ"
+            ],
+            "correctOption": {
+              "index": 2,
+              "text": "打ち合わせ"
+            },
+            "explanation": "打ち合わせ（うちあわせ）means a meeting / prior arrangement / briefing."
+          }
+        ]
+      },
+      {
+        "title": "問題4",
+        "mondaiHeader": "問題4 （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+        "passageText": "",
+        "questions": [
+          {
+            "questionText": "この問題を解くのに（　）一日かかった。",
+            "options": [
+              "完",
+              "全",
+              "本",
+              "丸"
+            ],
+            "correctOption": {
+              "index": 3,
+              "text": "丸"
+            },
+            "explanation": "丸（まる）+ 一日 = 丸一日 means a full/whole day."
+          },
+          {
+            "questionText": "履歴（　）にはかならず写真を貼ってください。",
+            "options": [
+              "紙",
+              "書",
+              "証",
+              "状"
+            ],
+            "correctOption": {
+              "index": 1,
+              "text": "書"
+            },
+            "explanation": "履歴書（りれきしょ）means résumé / curriculum vitae."
+          },
+          {
+            "questionText": "ボランティア活動に積極（　）に参加している。",
+            "options": [
+              "気",
+              "感",
+              "性",
+              "的"
+            ],
+            "correctOption": {
+              "index": 3,
+              "text": "的"
+            },
+            "explanation": "積極的（せっきょくてき）means active / positive / proactive."
+          }
+        ]
+      },
+      {
+        "title": "問題5",
+        "mondaiHeader": "問題5 ＿＿の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+        "passageText": "",
+        "questions": [
+          {
+            "questionText": "この寒さだと<u>おそらく</u>明日は雪が降るだろう。",
+            "options": [
+              "たぶん",
+              "絶対に",
+              "次第に",
+              "たしかに"
+            ],
+            "correctOption": {
+              "index": 0,
+              "text": "たぶん"
+            },
+            "explanation": "おそらく means probably / most likely (たぶん)."
+          },
+          {
+            "questionText": "<u>やむをえない</u>事情で大学をやめることになった。",
+            "options": [
+              "くやしい",
+              "はずかしい",
+              "しかたがない",
+              "もったいない"
+            ],
+            "correctOption": {
+              "index": 2,
+              "text": "しかたがない"
+            },
+            "explanation": "やむをえない means unavoidable / no other choice (しかたがない)."
+          },
+          {
+            "questionText": "デパートで小学校の同級生に<u>ばったり</u>会った。",
+            "options": [
+              "偶然",
+              "自然に",
+              "都合よく",
+              "久しぶりに"
+            ],
+            "correctOption": {
+              "index": 0,
+              "text": "偶然"
+            },
+            "explanation": "ばったり means by chance / unexpectedly run into (偶然)."
+          }
+        ]
+      },
+      {
+        "title": "問題6",
+        "mondaiHeader": "問題6 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+        "passageText": "",
+        "questions": [
+          {
+            "questionText": "等しい",
+            "options": [
+              "この二つの三角形の面積は等しい。",
+              "私は毎日等しい道を通って通勤している。",
+              "チーム全員が等しい気持ちで試合に挑んだ。",
+              "私と彼は、小学校から高校まで学校が等しい。"
+            ],
+            "correctOption": {
+              "index": 0,
+              "text": "この二つの三角形の面積は等しい。"
+            },
+            "explanation": "等しい（ひとしい）means equal / identical. Used for mathematical or measured equality."
+          },
+          {
+            "questionText": "あいにく",
+            "options": [
+              "あいにくなので、コーヒーでもいかがですか。",
+              "あいにくその日は予定があって参加できません。",
+              "あいにくの天気で、海に行くのにちょうどいいですね。",
+              "あいにく部長は席におりますので、少々お待ちください。"
+            ],
+            "correctOption": {
+              "index": 1,
+              "text": "あいにくその日は予定があって参加できません。"
+            },
+            "explanation": "あいにく means unfortunately / as bad luck would have it. Used when something doesn't go as hoped."
+          }
+        ]
+      }
+    ]
+  }
+}
