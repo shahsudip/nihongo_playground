@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_131",
+    "type": "shin_mon_page",
+    "page_file": "131.jpg",
+    "page_number": 131,
+    "questions": [
+      {
+        "id": "q204",
+        "questionText": "白い 洋服を <u>きて いる</u> 人は だれですか。",
+        "options": [
+          "着て いる",
+          "切て いる",
+          "来て いる",
+          "気て いる"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "着て いる"
+        }
+      },
+      {
+        "id": "q205",
+        "questionText": "<ruby>台風<rt>たいふう</rt></ruby>で <ruby>庭<rt>にわ</rt></ruby>の <ruby>木<rt>き</rt></ruby>が _______ しまった。",
+        "options": [
+          "こわれて",
+          "ふんで",
+          "にげて",
+          "おれて"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "おれて"
+        }
+      },
+      {
+        "id": "q206",
+        "questionText": "<ruby>事故<rt>じこ</rt></ruby>で <ruby>電車<rt>でんしゃ</rt></ruby>が おくれた _______ 、<ruby>会議<rt>かいぎ</rt></ruby>に <ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わなかった。",
+        "options": [
+          "とき",
+          "ため",
+          "あとで",
+          "からで"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ため"
+        }
+      }
+    ]
+  }
+]

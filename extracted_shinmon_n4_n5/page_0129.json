@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_129",
+    "type": "shin_mon_page",
+    "page_file": "129.jpg",
+    "page_number": 129,
+    "questions": [
+      {
+        "id": "q201",
+        "questionText": "およいだら、耳に 水が <u>入った</u>。",
+        "options": [
+          "いった",
+          "はいった",
+          "へいった",
+          "へえった"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "はいった"
+        }
+      },
+      {
+        "id": "q202",
+        "questionText": "スーツケースから くつを _______ 。",
+        "options": [
+          "はきました",
+          "だしました",
+          "いれました",
+          "みせました"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "だしました"
+        }
+      },
+      {
+        "id": "q203",
+        "questionText": "<ruby>家<rt>いえ</rt></ruby>を _______ 、<ruby>一生懸命<rt>いっしょうけんめい</rt></ruby> <ruby>働<rt>はたら</rt></ruby>いて います。",
+        "options": [
+          "<ruby>買<rt>か</rt></ruby>おうから",
+          "<ruby>買<rt>か</rt></ruby>う <ruby>前<rt>まえ</rt></ruby>に",
+          "<ruby>買<rt>か</rt></ruby>う ときに",
+          "<ruby>買<rt>か</rt></ruby>う ために"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "<ruby>買<rt>か</rt></ruby>う ために"
+        }
+      }
+    ]
+  }
+]

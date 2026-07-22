@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 5日目",
+    "questions": [
+      {
+        "id": "q64",
+        "questionText": "遊ぶ暇もなく、寮と職場を<u>往復</u>する毎日だが、仕事仲間がいるので寂しくはない。",
+        "options": [
+          "おうふく",
+          "じゅうふく",
+          "ほうふく",
+          "ちょうふく"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "おうふく"
+        },
+        "explanation": "往復 (おうふく) means a round trip or commuting back and forth."
+      },
+      {
+        "id": "q65",
+        "questionText": "彼の言うことが＿＿＿＿＿ので、返事をしなかった。",
+        "options": [
+          "気にさわった",
+          "気にくえない",
+          "気にかけた",
+          "気にとめた"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "気にさわった"
+        },
+        "explanation": "「気にさわる」 means to offend or get on one's nerves. 「気にくわない」 is the correct form for option 2, not 「気にくえない」."
+      },
+      {
+        "id": "q66",
+        "questionText": "こちらは日中は暖かく、コートは要らない＿＿＿＿＿ところです。",
+        "options": [
+          "とした",
+          "ときた",
+          "といった",
+          "とあった"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "といった"
+        },
+        "explanation": "「〜といったところだ」 is a grammar pattern meaning 'about' or 'more or less' to describe a degree or situation."
+      }
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "type": "shin_mon_page",
+    "page_file": "29.jpg",
+    "page_number": 29,
+    "questions": [
+      {
+        "id": "q28",
+        "questionText": "休みの 日は <u>母</u>に 電話を します。",
+        "options": [
+          "はは",
+          "ちち",
+          "まま",
+          "かか"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "はは"
+        }
+      },
+      {
+        "id": "q29",
+        "questionText": "A 「ただいま。」\nB 「_______ 。」",
+        "options": [
+          "いってきます",
+          "いただきます",
+          "いらっしゃいませ",
+          "おかえりなさい"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "おかえりなさい"
+        }
+      },
+      {
+        "id": "q30",
+        "questionText": "<ruby>田中<rt>たなか</rt></ruby>さんは _______ やさしい <ruby>人<rt>ひと</rt></ruby>です。",
+        "options": [
+          "きれいで",
+          "きれくて",
+          "きれいと",
+          "きれい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "きれいで"
+        }
+      }
+    ]
+  }
+]

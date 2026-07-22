@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_113",
+    "type": "shin_mon_page",
+    "page_file": "113.jpg",
+    "page_number": 113,
+    "questions": [
+      {
+        "id": "q177",
+        "questionText": "もう 一度 大きい <u>声</u>で 言って ください。",
+        "options": [
+          "おと",
+          "こと",
+          "こえ",
+          "おん"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "こえ"
+        }
+      },
+      {
+        "id": "q178",
+        "questionText": "<ruby>休<rt>やす</rt></ruby>みの <ruby>日<rt>ひ</rt></ruby>は <ruby>家<rt>いえ</rt></ruby>で <ruby>音楽<rt>おんがく</rt></ruby>を <ruby>聞<rt>き</rt></ruby>いたり ギターを _______ して います。",
+        "options": [
+          "つけたり",
+          "ひいたり",
+          "おしたり",
+          "ふいたり"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ひいたり"
+        }
+      },
+      {
+        "id": "q179",
+        "questionText": "<ruby>私<rt>わたし</rt></ruby>は <ruby>犬<rt>いぬ</rt></ruby>に おもちゃを _______ 。",
+        "options": [
+          "<ruby>買<rt>か</rt></ruby>って やった",
+          "<ruby>買<rt>か</rt></ruby>って もらった",
+          "<ruby>買<rt>か</rt></ruby>って くれた",
+          "<ruby>買<rt>か</rt></ruby>って くださった"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "<ruby>買<rt>か</rt></ruby>って やった"
+        }
+      }
+    ]
+  }
+]

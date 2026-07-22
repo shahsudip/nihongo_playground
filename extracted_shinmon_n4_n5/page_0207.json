@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_207",
+    "type": "shin_mon_page",
+    "page_file": "207.jpg",
+    "page_number": 207,
+    "questions": [
+      {
+        "id": "q341",
+        "questionText": "日本の <u>お土産</u>を 買う。",
+        "options": [
+          "おみあげ",
+          "おみやげ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "おみやげ"
+        }
+      },
+      {
+        "id": "q342",
+        "questionText": "この 店は <u>しなもの</u>が 多い。",
+        "options": [
+          "荷物",
+          "品物"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "品物"
+        }
+      },
+      {
+        "id": "q343",
+        "questionText": "日本の <ruby>生<rt>せい</rt></ruby><ruby>活<rt>かつ</rt></ruby>に もう _______。",
+        "options": [
+          "なれましたか",
+          "たのしみましたか"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "なれましたか"
+        }
+      },
+      {
+        "id": "q344",
+        "questionText": "その バッグは、色も _______ も いいですね。",
+        "options": [
+          "かたち",
+          "におい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "かたち"
+        }
+      },
+      {
+        "id": "q345",
+        "questionText": "この 本、_______ <ruby>貸<rt>か</rt></ruby>して あげるよ。",
+        "options": [
+          "読み出したから",
+          "読み<ruby>終<rt>お</rt></ruby>わったから"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "読み<ruby>終<rt>お</rt></ruby>わったから"
+        }
+      },
+      {
+        "id": "q346",
+        "questionText": "外国人に 道を _______ 、こまりました。",
+        "options": [
+          "聞かれて",
+          "聞かされて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "聞かれて"
+        }
+      }
+    ]
+  }
+]

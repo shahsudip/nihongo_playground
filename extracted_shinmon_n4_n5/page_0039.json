@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_39",
+    "type": "shin_mon_page",
+    "page_file": "39.jpg",
+    "page_number": 39,
+    "questions": [
+      {
+        "id": "q43",
+        "questionText": "ガソリンが 高くても <u>車</u>に のります。",
+        "options": [
+          "しゃ",
+          "ちゃ",
+          "かるま",
+          "くるま"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "くるま"
+        }
+      },
+      {
+        "id": "q44",
+        "questionText": "<ruby>明日<rt>あした</rt></ruby>は <ruby>雪<rt>ゆき</rt></ruby>が _______ そうですよ。",
+        "options": [
+          "おりる",
+          "ふる",
+          "おちる",
+          "とまる"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ふる"
+        }
+      },
+      {
+        "id": "q45",
+        "questionText": "A 「すてきな シャツですね。」\nB 「ありがとうございます。<ruby>兄<rt>あに</rt></ruby>に _______ 。」",
+        "options": [
+          "もらったんです",
+          "あげたんです",
+          "くれたんです",
+          "やったんです"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "もらったんです"
+        }
+      }
+    ]
+  }
+]

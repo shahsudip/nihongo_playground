@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_73",
+    "type": "shin_mon_page",
+    "page_file": "73.jpg",
+    "page_number": 73,
+    "questions": [
+      {
+        "id": "q103",
+        "questionText": "この <u>時計</u>は スイスのです。",
+        "options": [
+          "とかい",
+          "とけい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "とけい"
+        }
+      },
+      {
+        "id": "q104",
+        "questionText": "<u>おさきに</u> しつれいします。",
+        "options": [
+          "お先に",
+          "お前に"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "お先に"
+        }
+      },
+      {
+        "id": "q105",
+        "questionText": "花を もらったけれど、_______ 花びんが ない。",
+        "options": [
+          "いれる",
+          "はいれる"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "いれる"
+        }
+      },
+      {
+        "id": "q106",
+        "questionText": "この へんは 人が <ruby>少<rt>すく</rt></ruby>なくて とても _______ です。",
+        "options": [
+          "にぎやか",
+          "しずか"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "しずか"
+        }
+      },
+      {
+        "id": "q107",
+        "questionText": "よく _______ 。もう<ruby>一度<rt>いちど</rt></ruby> お<ruby>願<rt>ねが</rt></ruby>いします。",
+        "options": [
+          "聞こえませんでした",
+          "聞きませんでした"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "聞こえませんでした"
+        }
+      },
+      {
+        "id": "q108",
+        "questionText": "この カレー、あまり _______ ね。",
+        "options": [
+          "からいです",
+          "からくありません"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "からくありません"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 4日目",
+    "questions": [
+      {
+        "id": "q46",
+        "questionText": "その<u>宮殿</u>の装飾は驚くほど見事だった。",
+        "options": [
+          "ぐうでん",
+          "ぐてん",
+          "きゅうでん",
+          "ごてん"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "きゅうでん"
+        },
+        "explanation": "宮殿 is read as きゅうでん (palace)."
+      },
+      {
+        "id": "q47",
+        "questionText": "葉っぱについた＿＿＿＿が、ダイヤモンドのように輝いている。",
+        "options": [
+          "とげ",
+          "しずく",
+          "くき",
+          "つぼみ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "しずく"
+        },
+        "explanation": "しずく (drop) fits the context of dew drops on leaves shining like diamonds."
+      },
+      {
+        "id": "q48",
+        "questionText": "こういう問題が浮上するとは、予想だに＿＿＿＿。",
+        "options": [
+          "なかった",
+          "した",
+          "しなかった",
+          "あった"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "しなかった"
+        },
+        "explanation": "The grammar pattern 「〜だにしない」 means 'not even 〜'. 予想だにしなかった means 'did not even expect'."
+      }
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_139",
+    "type": "shin_mon_page",
+    "page_file": "139.jpg",
+    "page_number": 139,
+    "questions": [
+      {
+        "id": "q216",
+        "questionText": "毎日、<u>八百屋</u>で 買い物を します。",
+        "options": [
+          "よおや",
+          "やおや"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "やおや"
+        }
+      },
+      {
+        "id": "q217",
+        "questionText": "日本語は まだ <u>へた</u>です。",
+        "options": [
+          "手下",
+          "下手"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "下手"
+        }
+      },
+      {
+        "id": "q218",
+        "questionText": "_______ 、いらっしゃいますか。",
+        "options": [
+          "ご主人",
+          "お主人"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ご主人"
+        }
+      },
+      {
+        "id": "q219",
+        "questionText": "今日は、強い <ruby>風<rt>かぜ</rt></ruby>が _______ そうです。",
+        "options": [
+          "はく",
+          "ふく"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ふく"
+        }
+      },
+      {
+        "id": "q220",
+        "questionText": "友だちに 田中さんの 電話番号を <ruby>教<rt>おし</rt></ruby>えて _______ 。",
+        "options": [
+          "もらいました",
+          "くれました"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "もらいました"
+        }
+      },
+      {
+        "id": "q221",
+        "questionText": "洋服を _______ デパートへ 行きました。",
+        "options": [
+          "買う とき",
+          "買おうと <ruby>思<rt>おも</rt></ruby>って"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "買おうと <ruby>思<rt>おも</rt></ruby>って"
+        }
+      }
+    ]
+  }
+]

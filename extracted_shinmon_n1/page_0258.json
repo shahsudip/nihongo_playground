@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 5日目",
+    "questions": [
+      {
+        "id": "q439",
+        "questionText": "通行の邪魔にならず、視界の<u>妨げ</u>にもならないような傘を発明したい。",
+        "options": [
+          "さまたげ",
+          "たいらげ",
+          "あらげ",
+          "やわらげ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "さまたげ"
+        },
+        "explanation": "妨げ is read as さまたげ, meaning hindrance or obstruction."
+      },
+      {
+        "id": "q440",
+        "questionText": "会社を存続させるために、あらゆる手を＿＿＿＿＿が、倒産してしまった。",
+        "options": [
+          "尽くした",
+          "組んだ",
+          "加えた",
+          "結んだ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "尽くした"
+        },
+        "explanation": "手を尽くす (てをつくす) is an idiom meaning 'to try all possible means'."
+      },
+      {
+        "id": "q441",
+        "questionText": "冗談＿＿＿＿＿、先日の調査結果の報告をします。",
+        "options": [
+          "ながらに",
+          "はさておき",
+          "はさることながら",
+          "じゃあるまいし"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "はさておき"
+        },
+        "explanation": "〜はさておき means 'setting aside ~' or 'leaving ~ aside'. 冗談はさておき means 'jokes aside'."
+      }
+    ]
+  }
+]

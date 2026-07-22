@@ -1,0 +1,73 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "もんだい",
+    "questions": [
+      {
+        "id": "q496",
+        "questionText": "年々体力の<u>衰え</u>を感じる。",
+        "options": [
+          "おとろえ",
+          "おびえ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "おとろえ"
+        },
+        "explanation": "衰え (おとろえ) means 'decline' or 'weakening'."
+      },
+      {
+        "id": "q497",
+        "questionText": "木の<u>幹</u>にセミが止まっている。",
+        "options": [
+          "いき",
+          "みき"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "みき"
+        },
+        "explanation": "幹 (みき) means 'tree trunk'."
+      },
+      {
+        "id": "q498",
+        "questionText": "長年の歳月を___完成した橋が、先日の地震で崩壊してしまった。",
+        "options": [
+          "費やして",
+          "営んで"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "費やして"
+        },
+        "explanation": "費やす (ついやす) means 'to spend' or 'to devote (time/money)'. 営む (いとなむ) means 'to run (a business)'."
+      },
+      {
+        "id": "q499",
+        "questionText": "久しぶりに会った彼は、どこか遠くを見ているような___目をしていた。",
+        "options": [
+          "はかない",
+          "うつろな"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "うつろな"
+        },
+        "explanation": "うつろな目 means 'vacant/hollow eyes'. はかない means 'fleeting' or 'ephemeral'."
+      },
+      {
+        "id": "q500",
+        "questionText": "これまでの報告内容を___、今後の方針を話し合いましょう。",
+        "options": [
+          "踏まえて",
+          "とどまらず"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "踏まえて"
+        },
+        "explanation": "踏まえる (ふまえる) means 'to be based on' or 'to take into account'."
+      }
+    ]
+  }
+]

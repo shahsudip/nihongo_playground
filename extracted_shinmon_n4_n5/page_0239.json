@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_239",
+    "type": "shin_mon_page",
+    "page_file": "239.jpg",
+    "page_number": 239,
+    "questions": [
+      {
+        "id": "q412",
+        "questionText": "この <u>黄色い</u> 薬は 寝る前に 飲んで ください。",
+        "options": [
+          "きろい",
+          "くろい",
+          "くいろい",
+          "きいろい"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "きいろい"
+        }
+      },
+      {
+        "id": "q413",
+        "questionText": "A 「<ruby>母<rt>はは</rt></ruby>の <ruby>具合<rt>ぐあい</rt></ruby>が <ruby>悪<rt>わる</rt></ruby>いんです。」\nB 「それは _______ 。お<ruby>大事<rt>だいじ</rt></ruby>に。」",
+        "options": [
+          "ざんねんです",
+          "すごいです",
+          "いけませんね",
+          "すみません"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "いけませんね"
+        }
+      },
+      {
+        "id": "q414",
+        "questionText": "<ruby>私<rt>わたし</rt></ruby>は <ruby>歌<rt>うた</rt></ruby>が <ruby>下手<rt>へた</rt></ruby> _______ <ruby>歌<rt>うた</rt></ruby>いたく ありません。",
+        "options": [
+          "なので",
+          "ので",
+          "ながら",
+          "から"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "なので"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 2日目",
+    "questions": [
+      {
+        "id": "q25",
+        "questionText": "この沿線は、<u>相撲</u>の国技館や問屋街などがあって、江戸情緒が残っている。",
+        "options": [
+          "すも",
+          "すもう",
+          "すうも",
+          "そうも"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "すもう"
+        },
+        "explanation": "相撲 is read as すもう (sumo)."
+      },
+      {
+        "id": "q26",
+        "questionText": "A社はB社に＿＿＿＿、新製品を発表した。",
+        "options": [
+          "反抗して",
+          "抗議して",
+          "抵抗して",
+          "対抗して"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "対抗して"
+        },
+        "explanation": "対抗して means 'in competition with' or 'to counter'. Company A released a new product to compete with Company B."
+      },
+      {
+        "id": "q27",
+        "questionText": "その美しい声で朗読される詩は、ピアノ演奏＿＿＿＿聴衆の心に染みた。",
+        "options": [
+          "に伴って",
+          "と相まって",
+          "かたがた",
+          "のかたわら"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "と相まって"
+        },
+        "explanation": "〜と相まって means 'coupled with' or 'in combination with'. The beautiful voice reading the poem, coupled with the piano performance, deeply moved the audience."
+      }
+    ]
+  }
+]

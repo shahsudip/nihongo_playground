@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 4 Day 6",
+    "questions": [
+      {
+        "id": "q463",
+        "questionText": "家畜センターでヤギを見たが、やはり自然の渓谷を<u>跳ねて</u>いるのを見たいものだ。",
+        "options": [
+          "はねて",
+          "すねて",
+          "かねて",
+          "こねて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "はねて"
+        },
+        "explanation": "跳ねて (はねて) means 'jumping' or 'leaping'."
+      },
+      {
+        "id": "q464",
+        "questionText": "予算が＿＿＿＿になって、新企画が進まない。",
+        "options": [
+          "ハード",
+          "ネック",
+          "トラウマ",
+          "コネ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ネック"
+        },
+        "explanation": "ネック (neck) means 'bottleneck' or 'obstacle', so 予算がネックになって means 'the budget became a bottleneck'."
+      },
+      {
+        "id": "q465",
+        "questionText": "よそのお宅のことは＿＿＿＿、うちでは朝食は毎日家族全員で食べます。",
+        "options": [
+          "前提として",
+          "いざ知らず",
+          "おろか",
+          "とどまらず"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "いざ知らず"
+        },
+        "explanation": "〜はいざ知らず is a grammar pattern meaning 'I don't know about ~, but... / Setting ~ aside,...'."
+      }
+    ]
+  }
+]

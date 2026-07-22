@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_255",
+    "type": "shin_mon_page",
+    "page_file": "255.jpg",
+    "page_number": 255,
+    "questions": [
+      {
+        "id": "q436",
+        "questionText": "主人は <u>野菜</u>しか 食べません。",
+        "options": [
+          "やそい",
+          "やさい",
+          "やせい",
+          "やすい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "やさい"
+        }
+      },
+      {
+        "id": "q437",
+        "questionText": "_______ ください。この <ruby>病気<rt>びょうき</rt></ruby>は すぐに なおりますよ。",
+        "options": [
+          "びっくりして",
+          "おどろいて",
+          "しんじないで",
+          "あんしんして"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "あんしんして"
+        }
+      },
+      {
+        "id": "q438",
+        "questionText": "<ruby>空<rt>そら</rt></ruby>が <ruby>明<rt>あか</rt></ruby>るく なって きた。もうすぐ <ruby>雨<rt>あめ</rt></ruby>が _______ 。",
+        "options": [
+          "やみそうだ",
+          "やむそうだ",
+          "やんでそうだ",
+          "やめそうだ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "やみそうだ"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 4日目",
+    "questions": [
+      {
+        "id": "q58",
+        "questionText": "お盆の帰省ラッシュで道路は<u>渋滞</u>し、徐行運転が続いた。",
+        "options": [
+          "じょうたい",
+          "じゅうたい",
+          "ていたい",
+          "ちんたい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "じゅうたい"
+        },
+        "explanation": "The word 渋滞 (traffic jam) is read as じゅうたい."
+      },
+      {
+        "id": "q59",
+        "questionText": "このところ残業続きで疲れていたので、昨日の休日は___寝て過ごした。",
+        "options": [
+          "しょっちゅう",
+          "ひたすら",
+          "ことごとく",
+          "まして"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ひたすら"
+        },
+        "explanation": "ひたすら means \"nothing but\" or \"intently\". The sentence means \"I was tired from continuous overtime lately, so on yesterday's day off I did nothing but sleep.\""
+      },
+      {
+        "id": "q60",
+        "questionText": "私はあの方を尊敬して___。",
+        "options": [
+          "かねません",
+          "やみません",
+          "すぎません",
+          "なりません"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "やみません"
+        },
+        "explanation": "〜てやまない is an N1 grammar point expressing a strong and continuous feeling, such as deep respect (尊敬してやみません)."
+      }
+    ]
+  }
+]

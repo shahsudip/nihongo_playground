@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 6日目",
+    "questions": [
+      {
+        "id": "335",
+        "questionText": "平均寿命世界一を<u>誇る</u>国はどこでしょう。",
+        "options": [
+          "おとる",
+          "しばる",
+          "ほこる",
+          "いばる"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ほこる"
+        },
+        "explanation": "誇る is read as ほこる (hokoru), meaning 'to boast of' or 'to be proud of'."
+      },
+      {
+        "id": "336",
+        "questionText": "毎日の＿＿＿＿＿をこなすのが精一杯で、なかなか新しいことに挑戦できない。",
+        "options": [
+          "コントロール",
+          "ルール",
+          "ノルマ",
+          "タイミング"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ノルマ"
+        },
+        "explanation": "ノルマ (norm/quota) is the correct word here, meaning completing daily assigned tasks."
+      },
+      {
+        "id": "337",
+        "questionText": "信じていた人に裏切られた人が人間不信になるというのは、想像に＿＿＿＿＿。",
+        "options": [
+          "かたくない",
+          "かたい",
+          "たえない",
+          "たえる"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "かたくない"
+        },
+        "explanation": "「想像にかたくない」 is a set phrase meaning 'it is not difficult to imagine'."
+      }
+    ]
+  }
+]

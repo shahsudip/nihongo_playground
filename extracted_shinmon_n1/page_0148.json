@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 1日目",
+    "questions": [
+      {
+        "id": "q251",
+        "questionText": "驚いたことに、あの<u>花嫁</u>花婿は婚姻届を出した翌日に離婚したそうだ。",
+        "options": [
+          "はなゆめ",
+          "はなおめ",
+          "はなのめ",
+          "はなよめ"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "はなよめ"
+        },
+        "explanation": "花嫁 (はなよめ) means bride."
+      },
+      {
+        "id": "q252",
+        "questionText": "各国の＿＿＿＿が集まって、環境問題における意見交換をした。",
+        "options": [
+          "主任",
+          "首脳",
+          "重役",
+          "代理"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "首脳"
+        },
+        "explanation": "首脳 (しゅのう) means heads of state or leaders, which fits the context of countries gathering."
+      },
+      {
+        "id": "q253",
+        "questionText": "A「うちの会社大丈夫かな。」\nB「かなり危ないらしいよ。この先、どうなる＿＿＿＿…。」",
+        "options": [
+          "こととて",
+          "ことやら",
+          "ものを",
+          "ものか"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ことやら"
+        },
+        "explanation": "どうなることやら is a set phrase meaning 'I wonder what will happen', expressing uncertainty and worry."
+      }
+    ]
+  }
+]

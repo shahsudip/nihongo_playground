@@ -1,0 +1,86 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 7日目",
+    "questions": [
+      {
+        "id": "q91",
+        "questionText": "この旅館は<u>趣</u>のある庭や建物が自慢だ。",
+        "options": [
+          "かたむき",
+          "おもむき"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "おもむき"
+        },
+        "explanation": "趣 (おもむき) means elegance, charm, or flavor."
+      },
+      {
+        "id": "q92",
+        "questionText": "セーターを洗濯したら、<u>縮んで</u>しまった。",
+        "options": [
+          "ちぢんで",
+          "しずんで"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ちぢんで"
+        },
+        "explanation": "縮む (ちぢむ) means to shrink."
+      },
+      {
+        "id": "q93",
+        "questionText": "今の職場は、人間関係が___、ストレスが多い。",
+        "options": [
+          "わずらわしく",
+          "めざましく"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "わずらわしく"
+        },
+        "explanation": "煩わしい (わずらわしい) means troublesome or complicated, often used for human relations."
+      },
+      {
+        "id": "q94",
+        "questionText": "中学生の頃、親に___、家出したことがある。",
+        "options": [
+          "対抗して",
+          "反抗して"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "反抗して"
+        },
+        "explanation": "反抗する (はんこうする) means to rebel. 親に反抗する means to rebel against one's parents."
+      },
+      {
+        "id": "q95",
+        "questionText": "近いうちにお礼___、ご挨拶に伺おうと思っています。",
+        "options": [
+          "ついでに",
+          "かたがた"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "かたがた"
+        },
+        "explanation": "Noun + かたがた means 'while doing A, also doing B / partly to do A, partly to do B' and is used in formal greetings."
+      },
+      {
+        "id": "q96",
+        "questionText": "田舎の両親のことは、一日___とも忘れたことはない。",
+        "options": [
+          "たる",
+          "たり"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "たり"
+        },
+        "explanation": "〜たりとも is used to emphasize a negative by saying 'not even one...'. 一日たりとも means 'not even for a single day'."
+      }
+    ]
+  }
+]

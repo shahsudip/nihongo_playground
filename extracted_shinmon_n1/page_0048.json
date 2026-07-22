@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 4日目",
+    "questions": [
+      {
+        "id": "55",
+        "questionText": "この業界は<u>厳しい</u>経費削減を迫られている。",
+        "options": [
+          "はげしい",
+          "いちじるしい",
+          "きびしい",
+          "めざましい"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "きびしい"
+        },
+        "explanation": "The kanji 厳しい is read as きびしい (kibishii), meaning strict or severe."
+      },
+      {
+        "id": "56",
+        "questionText": "あれは、スピード違反＿＿＿＿＿のカメラのようだ。",
+        "options": [
+          "取りしらべ",
+          "取りひき",
+          "取りあつかい",
+          "取りしまり"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "取りしまり"
+        },
+        "explanation": "取り締まり (torishimari) means 'crackdown' or 'enforcement'. スピード違反取り締まり refers to speed limit enforcement."
+      },
+      {
+        "id": "57",
+        "questionText": "少年は、天使＿＿＿＿＿微笑を浮かべていた。",
+        "options": [
+          "のごとき",
+          "からする",
+          "のごとに",
+          "かのよう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "のごとき"
+        },
+        "explanation": "「～ごとき」 is a formal expression meaning 'like' or 'as if', modifying the noun that follows it (天使のごとき微笑 = an angel-like smile)."
+      }
+    ]
+  }
+]

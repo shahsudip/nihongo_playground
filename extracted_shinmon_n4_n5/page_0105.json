@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_105",
+    "type": "shin_mon_page",
+    "page_file": "105.jpg",
+    "page_number": 105,
+    "questions": [
+      {
+        "id": "q165",
+        "questionText": "今、何と <u>いいました</u>か。",
+        "options": [
+          "話いました",
+          "白いました",
+          "言いました",
+          "語いました"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "言いました"
+        }
+      },
+      {
+        "id": "q166",
+        "questionText": "_______ が <ruby>悪<rt>わる</rt></ruby>いんです。<ruby>早<rt>はや</rt></ruby>く <ruby>帰<rt>かえ</rt></ruby>っても いいですか。",
+        "options": [
+          "からだ",
+          "げんき",
+          "くうき",
+          "きぶん"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "きぶん"
+        }
+      },
+      {
+        "id": "q167",
+        "questionText": "この ゲームを したいけれど、_______ が <ruby>分<rt>わ</rt></ruby>からない。",
+        "options": [
+          "やりこと",
+          "やりかた",
+          "あそぶこと",
+          "あそぶかた"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "やりかた"
+        }
+      }
+    ]
+  }
+]

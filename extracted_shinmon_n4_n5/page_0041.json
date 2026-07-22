@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_41",
+    "type": "shin_mon_page",
+    "page_file": "41.jpg",
+    "page_number": 41,
+    "questions": [
+      {
+        "id": "q46",
+        "questionText": "<u>先月</u>、花見を しました。",
+        "options": [
+          "せんげつ",
+          "せんがつ",
+          "さんがつ",
+          "さんげつ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "せんげつ"
+        }
+      },
+      {
+        "id": "q47",
+        "questionText": "この へやは、だんぼうが <ruby>入<rt>はい</rt></ruby>って いて _______ です。",
+        "options": [
+          "さむい",
+          "つめたい",
+          "あたたかい",
+          "すずしい"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "あたたかい"
+        }
+      },
+      {
+        "id": "q48",
+        "questionText": "<ruby>私<rt>わたし</rt></ruby>は、<ruby>先月<rt>せんげつ</rt></ruby>から <ruby>子<rt>こ</rt></ruby>どもに <ruby>英語<rt>えいご</rt></ruby>を _______ 。",
+        "options": [
+          "<ruby>教<rt>おし</rt></ruby>えます",
+          "<ruby>教<rt>おし</rt></ruby>えました",
+          "<ruby>教<rt>おし</rt></ruby>えたんです",
+          "<ruby>教<rt>おし</rt></ruby>えています"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "<ruby>教<rt>おし</rt></ruby>えています"
+        }
+      }
+    ]
+  }
+]

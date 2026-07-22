@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 4 Day 2",
+    "questions": [
+      {
+        "id": "q394",
+        "questionText": "これくらいの染みなら、しばらく漂白剤に<u>浸して</u>おけば落ちるでしょう。",
+        "options": [
+          "おかして",
+          "ふたして",
+          "ひたして",
+          "つぶして"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ひたして"
+        },
+        "explanation": "浸す (ひたす) means to soak or steep."
+      },
+      {
+        "id": "q395",
+        "questionText": "彼はギャンブルに＿＿＿＿＿、会社をクビになった。",
+        "options": [
+          "かたよって",
+          "はまって",
+          "つきて",
+          "そまって"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "はまって"
+        },
+        "explanation": "ギャンブルにはまる means to be addicted to or hooked on gambling."
+      },
+      {
+        "id": "q396",
+        "questionText": "気象庁の３ヶ月予報によると、関東地方の気温は平年＿＿＿＿＿だそうです。",
+        "options": [
+          "ずくめ",
+          "めく",
+          "まみれ",
+          "なみ"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "なみ"
+        },
+        "explanation": "平年並み (へいねんなみ) means on a par with an average year."
+      }
+    ]
+  }
+]

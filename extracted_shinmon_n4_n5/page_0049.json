@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_49",
+    "type": "shin_mon_page",
+    "page_file": "49.jpg",
+    "page_number": 49,
+    "questions": [
+      {
+        "id": "q58",
+        "questionText": "あの 子は 私の <u>妹</u>です。",
+        "options": [
+          "いもと",
+          "いもうと",
+          "おとと",
+          "おとうと"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "いもうと"
+        }
+      },
+      {
+        "id": "q59",
+        "questionText": "<ruby>明日<rt>あした</rt></ruby>は テストが あるから、<ruby>学校<rt>がっこう</rt></ruby>へ <ruby>行<rt>い</rt></ruby>くのが _______ です。",
+        "options": [
+          "いや",
+          "ひどい",
+          "むり",
+          "きらい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "いや"
+        }
+      },
+      {
+        "id": "q60",
+        "questionText": "のどが かわいたね。<ruby>何<rt>なに</rt></ruby>か _______ よ。",
+        "options": [
+          "<ruby>飲<rt>の</rt></ruby>んだ",
+          "<ruby>飲<rt>の</rt></ruby>もう",
+          "<ruby>飲<rt>の</rt></ruby>みなさい",
+          "<ruby>飲<rt>の</rt></ruby>んでない"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "<ruby>飲<rt>の</rt></ruby>もう"
+        }
+      }
+    ]
+  }
+]

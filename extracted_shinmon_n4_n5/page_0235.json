@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_235",
+    "type": "shin_mon_page",
+    "page_file": "235.jpg",
+    "page_number": 235,
+    "questions": [
+      {
+        "id": "q406",
+        "questionText": "工場を 建てる <u>計画</u>が 中止に なった。",
+        "options": [
+          "けかく",
+          "けいが",
+          "けいかく",
+          "けいがく"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "けいかく"
+        }
+      },
+      {
+        "id": "q407",
+        "questionText": "A 「<ruby>味<rt>あじ</rt></ruby>、どう？」\nB 「ちょっと <ruby>塩<rt>しお</rt></ruby>が _______ と <ruby>思<rt>おも</rt></ruby>うよ。」",
+        "options": [
+          "のこらない",
+          "たりない",
+          "<ruby>入<rt>い</rt></ruby>れたい",
+          "あまる"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "たりない"
+        }
+      },
+      {
+        "id": "q408",
+        "questionText": "<ruby>日本語<rt>にほんご</rt></ruby>の <ruby>勉強<rt>べんきょう</rt></ruby>は _______ 、<ruby>楽<rt>たの</rt></ruby>しい。",
+        "options": [
+          "<ruby>大変<rt>たいへん</rt></ruby>なけれど",
+          "<ruby>大変<rt>たいへん</rt></ruby>けれど",
+          "<ruby>大変<rt>たいへん</rt></ruby>だが",
+          "<ruby>大変<rt>たいへん</rt></ruby>なため"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "<ruby>大変<rt>たいへん</rt></ruby>だが"
+        }
+      }
+    ]
+  }
+]

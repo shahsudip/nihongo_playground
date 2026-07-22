@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 3日目",
+    "questions": [
+      {
+        "id": "q418",
+        "questionText": "排水口の<u>水漏れ</u>の原因は汚れと老朽化です。",
+        "options": [
+          "みずだれ",
+          "みずわれ",
+          "みずもれ",
+          "みずがれ"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "みずもれ"
+        },
+        "explanation": "水漏れ is read as みずもれ, meaning 'water leak'."
+      },
+      {
+        "id": "q419",
+        "questionText": "今の時期は、道の掃除をしても落ち葉が次から次から落ちてくるので＿＿＿＿がない。",
+        "options": [
+          "きり",
+          "はり",
+          "めど",
+          "けり"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "きり"
+        },
+        "explanation": "'きりがない' is an expression meaning 'endless' or 'there is no end to it'."
+      },
+      {
+        "id": "q420",
+        "questionText": "息子は、昼＿＿＿＿夜＿＿＿＿、一日中ゲームをしていて困ったものだ。",
+        "options": [
+          "にだの / にだの",
+          "にやら / にやら",
+          "とあれ / とあれ",
+          "といわず / といわず"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "といわず / といわず"
+        },
+        "explanation": "'〜といわず〜といわず' means 'not distinguishing between A and B; both A and B' (e.g., day and night)."
+      }
+    ]
+  }
+]

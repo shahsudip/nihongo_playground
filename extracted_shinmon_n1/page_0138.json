@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 2 Day 6",
+    "questions": [
+      {
+        "id": "q213",
+        "questionText": "学生たちは楽譜を見ながら、<u>合唱</u>の練習を懸命に繰り返した。",
+        "options": [
+          "ごうしょう",
+          "がっそう",
+          "がっしょう",
+          "ごうそう"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "がっしょう"
+        },
+        "explanation": "合唱 is read as がっしょう, meaning chorus."
+      },
+      {
+        "id": "q214",
+        "questionText": "失敗は成功の元。物事を＿＿＿＿＿に考えようよ。",
+        "options": [
+          "プラス",
+          "スムーズ",
+          "アップ",
+          "メリット"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "プラス"
+        },
+        "explanation": "プラスに考える means to think positively."
+      },
+      {
+        "id": "q215",
+        "questionText": "大学の専門を生かすには、貴社＿＿＿＿＿ほかにはありません。",
+        "options": [
+          "をおいて",
+          "において",
+          "をいれて",
+          "にいれて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "をおいて"
+        },
+        "explanation": "〜をおいて〜ない is a grammar pattern meaning 'excluding ~ there is no other'."
+      }
+    ]
+  }
+]

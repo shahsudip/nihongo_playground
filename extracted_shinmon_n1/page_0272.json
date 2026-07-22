@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 6日目",
+    "questions": [
+      {
+        "id": "q460",
+        "questionText": "バイトで<u>塾</u>講師として奮闘している。今日は速さ・時間・距離の計算を教えた。",
+        "options": [
+          "じく",
+          "ずく",
+          "じゅく",
+          "じょく"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "じゅく"
+        },
+        "explanation": "塾 (じゅく) means cram school. 塾講師 (じゅくこうし) refers to a cram school teacher."
+      },
+      {
+        "id": "q461",
+        "questionText": "送料は商品が5千円以上は無料、5千円以下は全国___千円となります。",
+        "options": [
+          "一斉",
+          "一連",
+          "一律",
+          "一帯"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "一律"
+        },
+        "explanation": "一律 (いちりつ) means uniform or flat rate. 全国一律千円 means a flat rate of 1000 yen nationwide."
+      },
+      {
+        "id": "q462",
+        "questionText": "遅___早___あの会社は倒産しただろう。",
+        "options": [
+          "かれ／かれ",
+          "なり／なり",
+          "つつ／つつ",
+          "とも／とも"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "かれ／かれ"
+        },
+        "explanation": "遅かれ早かれ (おそかれはやかれ) is a set phrase meaning 'sooner or later'."
+      }
+    ]
+  }
+]

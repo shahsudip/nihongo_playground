@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 5日目",
+    "questions": [
+      {
+        "id": "q73",
+        "questionText": "<u>菊</u>の花で作られた人形を見に行った。",
+        "options": [
+          "すぎ",
+          "さくら",
+          "きく",
+          "まつ"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "きく"
+        },
+        "explanation": "菊 (きく) means chrysanthemum."
+      },
+      {
+        "id": "q74",
+        "questionText": "そのような行為は、試合では＿＿＿＿＿ならない。",
+        "options": [
+          "営まなければ",
+          "歩まなければ",
+          "慎まなければ",
+          "弾まなければ"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "慎まなければ"
+        },
+        "explanation": "慎む (つつしむ) means to refrain from or be careful of. The sentence means 'Such behavior must be refrained from in a match'."
+      },
+      {
+        "id": "q75",
+        "questionText": "今さら後悔した＿＿＿＿＿、もう遅い。",
+        "options": [
+          "ところに",
+          "ところで",
+          "ところが",
+          "ところを"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ところで"
+        },
+        "explanation": "〜たところで means 'even if'. 'Even if you regret it now, it is already too late.'"
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_95",
+    "type": "shin_mon_page",
+    "page_file": "95.jpg",
+    "page_number": 95,
+    "questions": [
+      {
+        "id": "q150",
+        "questionText": "あの 男の人は <u>あし</u>が 長いです。",
+        "options": [
+          "兄",
+          "足",
+          "歩",
+          "首"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "足"
+        }
+      },
+      {
+        "id": "q151",
+        "questionText": "この スーパーは、_______ まで <ruby>開<rt>あ</rt></ruby>いて いるので <ruby>便利<rt>べんり</rt></ruby>です。",
+        "options": [
+          "やすく",
+          "とおく",
+          "おそく",
+          "ひろく"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "おそく"
+        }
+      },
+      {
+        "id": "q152",
+        "questionText": "<ruby>富士山<rt>ふじさん</rt></ruby>は エベレスト _______ 。",
+        "options": [
+          "より <ruby>高<rt>たか</rt></ruby>い",
+          "ほど <ruby>高<rt>たか</rt></ruby>くない",
+          "の ほうが <ruby>高<rt>たか</rt></ruby>い",
+          "の ようより <ruby>高<rt>たか</rt></ruby>くない"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ほど <ruby>高<rt>たか</rt></ruby>くない"
+        }
+      }
+    ]
+  }
+]

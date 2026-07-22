@@ -1,0 +1,68 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 7日目",
+    "questions": [
+      {
+        "id": "q115",
+        "questionText": "ここは<u>蚊</u>が多い。",
+        "options": ["はえ", "か"],
+        "correctOption": {
+          "index": 1,
+          "text": "か"
+        },
+        "explanation": "蚊 is read as か (mosquito)."
+      },
+      {
+        "id": "q116",
+        "questionText": "メールにファイルを<u>添付</u>します。",
+        "options": ["ちょうふ", "てんぷ"],
+        "correctOption": {
+          "index": 1,
+          "text": "てんぷ"
+        },
+        "explanation": "添付 is read as てんぷ (attachment)."
+      },
+      {
+        "id": "q117",
+        "questionText": "彼は＿＿＿＿＿＿独身だと思っていたら、結婚していて驚いた。",
+        "options": ["がっくり", "てっきり"],
+        "correctOption": {
+          "index": 1,
+          "text": "てっきり"
+        },
+        "explanation": "てっきり means 'without a doubt / firmly believed'."
+      },
+      {
+        "id": "q118",
+        "questionText": "危険物の＿＿＿＿＿＿には十分に注意してください。",
+        "options": ["取り締まり", "取り扱い"],
+        "correctOption": {
+          "index": 1,
+          "text": "取り扱い"
+        },
+        "explanation": "取り扱い means 'handling'."
+      },
+      {
+        "id": "q119",
+        "questionText": "彼女は電車に乗り込む＿＿＿＿＿＿、座席を確保した。",
+        "options": ["が早いか", "が最後"],
+        "correctOption": {
+          "index": 0,
+          "text": "が早いか"
+        },
+        "explanation": "〜が早いか means 'as soon as'."
+      },
+      {
+        "id": "q120",
+        "questionText": "＿＿＿＿＿＿こととて、ご容赦ください。",
+        "options": ["慣れず", "慣れぬ"],
+        "correctOption": {
+          "index": 1,
+          "text": "慣れぬ"
+        },
+        "explanation": "〜ぬ connects to nouns. 慣れぬこととて means 'because I am inexperienced'."
+      }
+    ]
+  }
+]

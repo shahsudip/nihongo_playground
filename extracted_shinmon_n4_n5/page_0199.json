@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_199",
+    "type": "shin_mon_page",
+    "page_file": "199.jpg",
+    "page_number": 199,
+    "questions": [
+      {
+        "id": "q329",
+        "questionText": "出発しますから、早く <u>のって</u> ください。",
+        "options": [
+          "急っ て",
+          "乗っ て",
+          "走っ て",
+          "歩っ て"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "乗っ て"
+        }
+      },
+      {
+        "id": "q330",
+        "questionText": "<ruby>最<rt>さい</rt></ruby><ruby>近<rt>きん</rt></ruby>、3キロも <ruby>太<rt>ふと</rt></ruby>っちゃった。_______。",
+        "options": [
+          "おどろかなくちゃ",
+          "こまらなくちゃ",
+          "よろこばなくちゃ",
+          "やせなくちゃ"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "やせなくちゃ"
+        }
+      },
+      {
+        "id": "q331",
+        "questionText": "すみません、<ruby>頭<rt>あたま</rt></ruby>が いたいので、<ruby>今<rt>きょう</rt></ruby><ruby>日<rt></rt></ruby>は <ruby>早<rt>はや</rt></ruby>く _______。",
+        "options": [
+          "<ruby>帰<rt>かえ</rt></ruby>らせて ください",
+          "<ruby>帰<rt>かえ</rt></ruby>られて ください",
+          "<ruby>帰<rt>かえ</rt></ruby>させて ください",
+          "<ruby>帰<rt>かえ</rt></ruby>りさせて ください"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "<ruby>帰<rt>かえ</rt></ruby>らせて ください"
+        }
+      }
+    ]
+  }
+]

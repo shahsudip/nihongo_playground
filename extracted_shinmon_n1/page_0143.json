@@ -1,0 +1,86 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "もんだい",
+    "questions": [
+      {
+        "id": "234",
+        "questionText": "看護師は、患者の手を優しく<u>握った</u>。",
+        "options": [
+          "ねぎった",
+          "にぎった"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "にぎった"
+        },
+        "explanation": "握る (にぎる) means to grasp, hold, or grip."
+      },
+      {
+        "id": "235",
+        "questionText": "ご指摘は的を<u>射て</u>います。",
+        "options": [
+          "いて",
+          "えて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "いて"
+        },
+        "explanation": "的を射る (まとをいる) means to be to the point, hit the mark. 射る is read as いる, so its te-form is いて."
+      },
+      {
+        "id": "236",
+        "questionText": "___あって、北海道の牧場で働くことができました。",
+        "options": [
+          "富",
+          "縁"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "縁"
+        },
+        "explanation": "縁があって (えんがあって) means 'by some connection' or 'as fate would have it'."
+      },
+      {
+        "id": "237",
+        "questionText": "その少年は、ゲームと現実を___、事件を起こしたようだ。",
+        "options": [
+          "合併し",
+          "混同し"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "混同し"
+        },
+        "explanation": "混同する (こんどうする) means to confuse or mix up (e.g. reality and a game). 合併する (がっぺいする) means to merge."
+      },
+      {
+        "id": "238",
+        "questionText": "ボクサーは、来い___身構えた。",
+        "options": [
+          "ときたら",
+          "とばかりに"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "とばかりに"
+        },
+        "explanation": "〜とばかりに is a grammar point meaning 'as if to say'. The boxer took a stance as if to say 'come at me'."
+      },
+      {
+        "id": "239",
+        "questionText": "彼はミュージシャンになる___上京した。",
+        "options": [
+          "べく",
+          "めく"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "べく"
+        },
+        "explanation": "〜べく is a formal grammar point expressing purpose, meaning 'in order to'. He went to Tokyo in order to become a musician."
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_187",
+    "type": "shin_mon_page",
+    "page_file": "187.jpg",
+    "page_number": 187,
+    "questions": [
+      {
+        "id": "q311",
+        "questionText": "コンビニの 近くに 住んで いるので <u>便利</u>です。",
+        "options": [
+          "びんり",
+          "ぶんり",
+          "ばんり",
+          "べんり"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "べんり"
+        }
+      },
+      {
+        "id": "q312",
+        "questionText": "A 「この <ruby>間<rt>あいだ</rt></ruby>の どろぼうが _______ そうですよ。」\nB 「よかったですね。」",
+        "options": [
+          "にげた",
+          "ぬすんだ",
+          "とった",
+          "つかまった"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "つかまった"
+        }
+      },
+      {
+        "id": "q313",
+        "questionText": "かぜを <ruby>引<rt>ひ</rt></ruby>いた ようです。のども いたいし、<ruby>熱<rt>ねつ</rt></ruby>も _______。",
+        "options": [
+          "<ruby>出<rt>だ</rt></ruby>しました",
+          "<ruby>出<rt>で</rt></ruby>て きました",
+          "<ruby>出<rt>で</rt></ruby>て しまいます",
+          "<ruby>出<rt>で</rt></ruby>て いきます"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "<ruby>出<rt>で</rt></ruby>て きました"
+        }
+      }
+    ]
+  }
+]

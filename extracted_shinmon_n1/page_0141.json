@@ -1,0 +1,98 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "もんだい",
+    "questions": [
+      {
+        "id": "q222",
+        "questionText": "<u>稲光</u>の後に、ゴロゴロという音がした。",
+        "options": [
+          "いなびかり",
+          "かみなり",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "いなびかり"
+        },
+        "explanation": "稲光 is read as いなびかり (lightning)."
+      },
+      {
+        "id": "q223",
+        "questionText": "失敗ばかりして、自信を<u>喪失</u>した。",
+        "options": [
+          "もしつ",
+          "そうしつ",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "そうしつ"
+        },
+        "explanation": "喪失 is read as そうしつ (loss)."
+      },
+      {
+        "id": "q224",
+        "questionText": "好きなスポーツは特にないのですが、___言えば水泳です。",
+        "options": [
+          "まさしく",
+          "しいて",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "しいて"
+        },
+        "explanation": "「しいて言えば」 means 'if I were forced to say'."
+      },
+      {
+        "id": "q225",
+        "questionText": "ああ、試験の日が___。あせるなあ。",
+        "options": [
+          "及んでいる",
+          "迫っている",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "迫っている"
+        },
+        "explanation": "「迫っている」 means 'is approaching', appropriate for exams."
+      },
+      {
+        "id": "q226",
+        "questionText": "彼のあなたに対する優しさは、愛___。",
+        "options": [
+          "といったところだろう",
+          "でなくてなんだろう",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "でなくてなんだろう"
+        },
+        "explanation": "「〜でなくてなんだろう」 means 'what is it if not ~'."
+      },
+      {
+        "id": "q227",
+        "questionText": "あれでも歌手ですか。声___音程___、ひどすぎる。",
+        "options": [
+          "といい／といい",
+          "であれ／であれ",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "といい／といい"
+        },
+        "explanation": "「AといいBといい」 means 'both A and B' when evaluating something negatively or positively."
+      }
+    ]
+  }
+]

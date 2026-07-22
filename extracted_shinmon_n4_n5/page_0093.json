@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_93",
+    "type": "shin_mon_page",
+    "page_file": "93.jpg",
+    "page_number": 93,
+    "questions": [
+      {
+        "id": "q147",
+        "questionText": "あの 木の したで、<u>少し</u> 休みましょう。",
+        "options": [
+          "すこし",
+          "すくし",
+          "しこし",
+          "そこし"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "すこし"
+        }
+      },
+      {
+        "id": "q148",
+        "questionText": "A 「まどを <ruby>開<rt>あ</rt></ruby>けましょうか。」\nB 「はい、_______ 。」",
+        "options": [
+          "おねがいします",
+          "どうぞ",
+          "わかりました",
+          "もちろん"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "おねがいします"
+        }
+      },
+      {
+        "id": "q149",
+        "questionText": "コーヒーと <ruby>紅茶<rt>こうちゃ</rt></ruby>と、_______ ですか。",
+        "options": [
+          "なの ほう",
+          "どれが いい",
+          "どっちの ほう",
+          "どちらが いい"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "どちらが いい"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_61",
+    "type": "shin_mon_page",
+    "page_file": "61.jpg",
+    "page_number": 61,
+    "questions": [
+      {
+        "id": "q76",
+        "questionText": "ここに <u>名前</u>と 電話番号を 書いて ください。",
+        "options": [
+          "なまえ",
+          "なめえ",
+          "なめい",
+          "なまい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "なまえ"
+        }
+      },
+      {
+        "id": "q77",
+        "questionText": "この ビルは _______ ですね。<ruby>何階<rt>なんかい</rt></ruby>まで あるの でしょうか。",
+        "options": [
+          "たかい",
+          "ほそい",
+          "ふとい",
+          "ながい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "たかい"
+        }
+      },
+      {
+        "id": "q78",
+        "questionText": "かぜを _______ 、<ruby>学校<rt>がっこう</rt></ruby>を <ruby>休<rt>やす</rt></ruby>みました。",
+        "options": [
+          "<ruby>引<rt>ひ</rt></ruby>きて",
+          "<ruby>引<rt>ひ</rt></ruby>くから",
+          "<ruby>引<rt>ひ</rt></ruby>いて",
+          "<ruby>引<rt>ひ</rt></ruby>きたから"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "<ruby>引<rt>ひ</rt></ruby>いて"
+        }
+      }
+    ]
+  }
+]

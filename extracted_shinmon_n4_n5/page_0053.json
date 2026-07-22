@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_53",
+    "type": "shin_mon_page",
+    "page_file": "53.jpg",
+    "page_number": 53,
+    "questions": [
+      {
+        "id": "q64",
+        "questionText": "大きいから 半分に <u>きって</u> ください。",
+        "options": [
+          "聞って",
+          "来って",
+          "切って",
+          "着って"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "切って"
+        }
+      },
+      {
+        "id": "q65",
+        "questionText": "A 「<ruby>新<rt>あたら</rt></ruby>しい <ruby>仕事<rt>しごと</rt></ruby>は どうですか。」\nB 「うーん、あんまり _______ …。」",
+        "options": [
+          "いそがないんです",
+          "いそがしいんです",
+          "ゆっくりなんです",
+          "おもしろくないんです"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "おもしろくないんです"
+        }
+      },
+      {
+        "id": "q66",
+        "questionText": "もしもし、もしもし、よく _______ んですが…。",
+        "options": [
+          "<ruby>聞<rt>き</rt></ruby>こえない",
+          "<ruby>聞<rt>き</rt></ruby>いてない",
+          "<ruby>聞<rt>き</rt></ruby>けない",
+          "<ruby>聞<rt>き</rt></ruby>かない"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "<ruby>聞<rt>き</rt></ruby>こえない"
+        }
+      }
+    ]
+  }
+]

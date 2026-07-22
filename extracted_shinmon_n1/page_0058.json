@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 1 Day 5",
+    "questions": [
+      {
+        "id": "q70",
+        "questionText": "酢は洗剤の代わりや<u>除菌</u>に使えるほか、蚊をよける効果もあるそうだ。",
+        "options": [
+          "じょきん",
+          "よきん",
+          "しょきん",
+          "ちょきん"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "じょきん"
+        },
+        "explanation": "除菌 (じょきん) means 'sterilization' or 'disinfection'."
+      },
+      {
+        "id": "q71",
+        "questionText": "魚釣りに行って６時間も＿＿＿＿が、一匹も釣れなかった。",
+        "options": [
+          "ねだった",
+          "ねたんだ",
+          "ねった",
+          "ねばった"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "ねばった"
+        },
+        "explanation": "粘る (ねばる) means to persevere or hold out. Here it refers to waiting patiently for the fish."
+      },
+      {
+        "id": "q72",
+        "questionText": "男＿＿＿＿者は人前で涙を見せないものだ、と彼は言った。",
+        "options": [
+          "べき",
+          "こそ",
+          "なり",
+          "たる"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "たる"
+        },
+        "explanation": "「〜たる者」 means 'those who are ~' or 'in the capacity of ~'. 「男たる者」 means 'one who is a man'."
+      }
+    ]
+  }
+]

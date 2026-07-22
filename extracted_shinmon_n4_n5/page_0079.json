@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_79",
+    "type": "shin_mon_page",
+    "page_file": "79.jpg",
+    "page_number": 79,
+    "questions": [
+      {
+        "id": "q126",
+        "questionText": "A 「あと <u>何分</u>？」\nB 「二分です。」",
+        "options": [
+          "なんぶん",
+          "なんふん",
+          "なんぷん",
+          "なにふん"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "なんぷん"
+        }
+      },
+      {
+        "id": "q127",
+        "questionText": "A 「<ruby>田中<rt>たなか</rt></ruby>さん、お<ruby>昼<rt>ひる</rt></ruby>ごはん、<ruby>食<rt>た</rt></ruby>べに <ruby>行<rt>い</rt></ruby>かない？」\nB 「<ruby>今日<rt>きょう</rt></ruby>は _______ を <ruby>持<rt>も</rt></ruby>って きたの。」",
+        "options": [
+          "おべんとう",
+          "ばんごはん",
+          "ランチ",
+          "おみやげ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "おべんとう"
+        }
+      },
+      {
+        "id": "q128",
+        "questionText": "<ruby>私<rt>わたし</rt></ruby>は <ruby>日本語<rt>にほんご</rt></ruby>が <ruby>少<rt>すこ</rt></ruby>し _______ <ruby>話<rt>はな</rt></ruby>せません。",
+        "options": [
+          "しか",
+          "ぐらい",
+          "ばかり",
+          "だけ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "しか"
+        }
+      }
+    ]
+  }
+]

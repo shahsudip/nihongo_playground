@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 4日目",
+    "questions": [
+      {
+        "id": "q430",
+        "questionText": "海外の独立選挙の投票所の様子をテレビで<u>中継</u>していた。",
+        "options": [
+          "じゅうけい",
+          "ちゅうけい",
+          "じゅけい",
+          "ちゅけい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ちゅうけい"
+        },
+        "explanation": "中継 (ちゅうけい) means broadcast or relay."
+      },
+      {
+        "id": "q431",
+        "questionText": "その保育士は、泣きわめいている赤ちゃんをなんとか___とした。",
+        "options": [
+          "なだめよう",
+          "いたわろう",
+          "かばおう",
+          "しつけよう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "なだめよう"
+        },
+        "explanation": "なだめる means to calm down or soothe (e.g., a crying baby)."
+      },
+      {
+        "id": "q432",
+        "questionText": "彼女は自分で習う___、人にも習ったことを教えるようになった。",
+        "options": [
+          "ながらに",
+          "ことなしに",
+          "と相まって",
+          "にとどまらず"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "にとどまらず"
+        },
+        "explanation": "～にとどまらず means 'not limited to' or 'not only'."
+      }
+    ]
+  }
+]

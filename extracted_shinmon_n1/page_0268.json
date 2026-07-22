@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 6日目",
+    "questions": [
+      {
+        "id": "454",
+        "questionText": "変換ミスがあります。「荒い」は「<u>粗い</u>」と訂正して再度提出してください。",
+        "options": [
+          "あらい",
+          "ねらい",
+          "えらい",
+          "あわい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "あらい"
+        },
+        "explanation": "粗い (あらい) means rough, coarse."
+      },
+      {
+        "id": "455",
+        "questionText": "私のレベルは中級かもしれないが、＿＿＿上級クラスを受けてみようと思っている。",
+        "options": [
+          "あえて",
+          "もはや",
+          "まさか",
+          "さすが"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "あえて"
+        },
+        "explanation": "あえて means daringly or intentionally doing something that might be difficult or unexpected."
+      },
+      {
+        "id": "456",
+        "questionText": "現在の道路状況を＿＿＿、将来の都市計画を進める。",
+        "options": [
+          "踏まえて",
+          "さておき",
+          "さることながら",
+          "皮切りに"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "踏まえて"
+        },
+        "explanation": "〜を踏まえて (fumayete) means \"based on\" or \"taking into account.\""
+      }
+    ]
+  }
+]

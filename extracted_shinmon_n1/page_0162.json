@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 3 Day 2",
+    "questions": [
+      {
+        "id": "q272",
+        "questionText": "創立百周年の記念式典の後、<u>名誉</u>教授による講義も行われる。",
+        "options": [
+          "めいぼ",
+          "めいご",
+          "めいど",
+          "めいよ"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "めいよ"
+        },
+        "explanation": "名誉 is read as めいよ, meaning honor or honorary (e.g., honorary professor)."
+      },
+      {
+        "id": "q273",
+        "questionText": "この薬を飲むと、すぐに痛みが＿＿＿＿＿よ。",
+        "options": [
+          "冷やかします",
+          "励まします",
+          "案じます",
+          "和らぎます"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "和らぎます"
+        },
+        "explanation": "和らぐ (やわらぐ) means to soften, calm down, or ease (as in pain or symptoms). The other words do not fit the context of pain."
+      },
+      {
+        "id": "q274",
+        "questionText": "あの女子高生の鞄には化粧品＿＿＿＿＿お菓子＿＿＿＿＿いっぱい入っているが、教科書やノートは見当たらない。",
+        "options": [
+          "だの／だの",
+          "こそ／こそ",
+          "なり／なり",
+          "だに／だに"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "だの／だの"
+        },
+        "explanation": "The pattern 〜だの〜だの is used to list examples (often with a critical or informal tone). Here it lists things like cosmetics and snacks."
+      }
+    ]
+  }
+]

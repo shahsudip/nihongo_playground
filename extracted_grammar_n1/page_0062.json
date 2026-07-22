@@ -1,0 +1,136 @@
+[
+  {
+    "type": "header",
+    "title": "第25回"
+  },
+  {
+    "type": "mondai_1",
+    "id": "q1",
+    "questionText": "病気になった（　　　）会社を休んで遊びに行った。",
+    "options": [
+      "つもりで",
+      "かのごとき",
+      "ことにして",
+      "ことだから"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q2",
+    "questionText": "この小説は面白味に欠ける。発想からして平凡（　　　）。",
+    "options": [
+      "至りだ",
+      "極みだ",
+      "極まりない",
+      "じゃあるまい"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q3",
+    "questionText": "行かないと文句を言われるし、行ったら（　　　）責められるし、どうすればいいんだ。",
+    "options": [
+      "行くやら",
+      "行ったで",
+      "行ったり",
+      "行っては"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q4",
+    "questionText": "大人たちの話を聞いて、この子たちも子ども（　　　）状況を理解したようだ。",
+    "options": [
+      "まま",
+      "手前",
+      "並みに",
+      "ながらに"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q5",
+    "questionText": "反対するならする（　　　）、ちゃんとした理由を言ってほしい。",
+    "options": [
+      "なりに",
+      "ものの",
+      "そばから",
+      "かたがた"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q6",
+    "questionText": "海外とは（　　　）、春休みはどこか旅行に行きたい。",
+    "options": [
+      "言うばかりか",
+      "言わないまでも",
+      "言うことなしに",
+      "言わないほどに"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q7",
+    "questionText": "けがは軽症で、入院する（　　　）ということだ。",
+    "options": [
+      "に至らない",
+      "に限らない",
+      "に足りない",
+      "には及ばない"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q1",
+    "questionText": "私有地 ＿＿＿ ＿＿＿ ＿★＿ ＿＿＿ 。",
+    "options": [
+      "べからず",
+      "につき",
+      "立ち入る",
+      "断りなく"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q2",
+    "questionText": "せっかく買ったのに、買った ＿＿＿ ＿＿＿ ＿★＿ ＿＿＿ ったらない。",
+    "options": [
+      "なんて",
+      "きり",
+      "使わない",
+      "もったいない"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q3",
+    "questionText": "お忙しい ＿＿＿ ＿＿＿ ＿★＿ ＿＿＿ までいただき、恐縮です。",
+    "options": [
+      "お土産",
+      "ところを",
+      "ばかりか",
+      "訪ねてくださった"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  }
+]

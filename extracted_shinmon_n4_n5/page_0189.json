@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_189",
+    "type": "shin_mon_page",
+    "page_file": "189.jpg",
+    "page_number": 189,
+    "questions": [
+      {
+        "id": "q314",
+        "questionText": "<u>かない</u>は 学者です。",
+        "options": [
+          "店内",
+          "家内",
+          "屋内",
+          "室内"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "家内"
+        }
+      },
+      {
+        "id": "q315",
+        "questionText": "<ruby>昨<rt>き</rt></ruby><ruby>日<rt>のう</rt></ruby>、<ruby>先<rt>せん</rt></ruby><ruby>生<rt>せい</rt></ruby>の お<ruby>宅<rt>たく</rt></ruby>に _______。",
+        "options": [
+          "うかがいました",
+          "おっしゃいました",
+          "もうしあげました",
+          "はいけんしました"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "うかがいました"
+        }
+      },
+      {
+        "id": "q316",
+        "questionText": "あなたに Tシャツを <ruby>買<rt>か</rt></ruby>って きたのよ。ちょっと _______。",
+        "options": [
+          "<ruby>着<rt>き</rt></ruby>て みて",
+          "<ruby>着<rt>き</rt></ruby>て おいて",
+          "<ruby>着<rt>き</rt></ruby>て いって",
+          "<ruby>着<rt>き</rt></ruby>て ちゃって"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "<ruby>着<rt>き</rt></ruby>て みて"
+        }
+      }
+    ]
+  }
+]

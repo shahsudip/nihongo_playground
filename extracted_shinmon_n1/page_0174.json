@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 3日目",
+    "questions": [
+      {
+        "id": "q290",
+        "questionText": "あの福祉政策は<u>矛盾</u>に満ちている。",
+        "options": [
+          "よじゅん",
+          "むじゅん",
+          "ふじゅん",
+          "くじゅん"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "むじゅん"
+        },
+        "explanation": "矛盾 is read as むじゅん (contradiction)."
+      },
+      {
+        "id": "q291",
+        "questionText": "_______の爆弾事件の犯人が捕まった。",
+        "options": [
+          "一連",
+          "一様",
+          "一帯",
+          "一面"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "一連"
+        },
+        "explanation": "一連の (a series of) is the correct expression for 'a series of incidents'."
+      },
+      {
+        "id": "q292",
+        "questionText": "戦地で撮られた映像は、残酷すぎて_______堪えないものだったという。",
+        "options": [
+          "見ては",
+          "見るに",
+          "見ずに",
+          "見んが"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "見るに"
+        },
+        "explanation": "〜に堪えない is a grammar structure meaning 'cannot bear to 〜'. 見るに堪えない means 'unbearable to watch'."
+      }
+    ]
+  }
+]

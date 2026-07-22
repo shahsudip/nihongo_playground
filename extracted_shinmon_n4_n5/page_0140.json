@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_140",
+    "type": "shin_mon_page",
+    "page_file": "140.jpg",
+    "page_number": 140,
+    "questions": [
+      {
+        "id": "q222",
+        "questionText": "<u>荷物</u>は ここに おいて ください。",
+        "options": [
+          "にもの",
+          "にもつ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "にもつ"
+        }
+      },
+      {
+        "id": "q223",
+        "questionText": "お金が <u>たりない</u>。",
+        "options": [
+          "足りない",
+          "手りない"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "足りない"
+        }
+      },
+      {
+        "id": "q224",
+        "questionText": "あの <ruby>橋<rt>はし</rt></ruby>を _______ と 海が 見えます。",
+        "options": [
+          "つたえる",
+          "わたる"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "わたる"
+        }
+      },
+      {
+        "id": "q225",
+        "questionText": "せんたく<ruby>機<rt>き</rt></ruby>が _______ から、せんたくできない。",
+        "options": [
+          "こわれた",
+          "こわした"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "こわれた"
+        }
+      },
+      {
+        "id": "q226",
+        "questionText": "あの 人の 話は、うそ _______ だから、<ruby>信<rt>しん</rt></ruby>じないで。",
+        "options": [
+          "だけ",
+          "ばかり"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ばかり"
+        }
+      },
+      {
+        "id": "q227",
+        "questionText": "私は、お<ruby>酒<rt>さけ</rt></ruby>は ビールしか _______ です。",
+        "options": [
+          "飲めないん",
+          "飲むん"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "飲めないん"
+        }
+      }
+    ]
+  }
+]

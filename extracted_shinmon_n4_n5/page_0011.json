@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 1日目",
+    "questions": [
+      {
+        "id": "q1",
+        "questionText": "この 町の <u>人口</u>は どのぐらいですか。",
+        "options": [
+          "にんこう",
+          "ひとくち",
+          "じんこう",
+          "いりぐち"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "じんこう"
+        },
+        "explanation": "「人口」の正しい読み方は「じんこう」です。"
+      },
+      {
+        "id": "q2",
+        "questionText": "<ruby>暑<rt>あつ</rt></ruby>いですね。エアコンを _______。",
+        "options": [
+          "つけましょう",
+          "あけましょう",
+          "おしましょう",
+          "ひらきましょう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "つけましょう"
+        },
+        "explanation": "エアコンや電気を点けるときは「つけましょう」を使います。"
+      },
+      {
+        "id": "q3",
+        "questionText": "<ruby>黒<rt>くろ</rt></ruby>い ペン _______ <ruby>書<rt>か</rt></ruby>いて ください。",
+        "options": [
+          "を",
+          "に",
+          "が",
+          "で"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "で"
+        },
+        "explanation": "道具・手段を表す助詞は「で」を使います。"
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_193",
+    "type": "shin_mon_page",
+    "page_file": "193.jpg",
+    "page_number": 193,
+    "questions": [
+      {
+        "id": "q320",
+        "questionText": "医者に 病気について <u>しつもん</u>を した。",
+        "options": [
+          "質聞",
+          "質門",
+          "質問",
+          "質問"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "質問"
+        }
+      },
+      {
+        "id": "q321",
+        "questionText": "いい マンションが _______ から、<ruby>今<rt>こん</rt></ruby><ruby>度<rt>ど</rt></ruby> <ruby>引<rt>ひ</rt></ruby>っこしするんです。",
+        "options": [
+          "みつかった",
+          "さがした",
+          "たてた",
+          "あけた"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "みつかった"
+        }
+      },
+      {
+        "id": "q322",
+        "questionText": "<ruby>先<rt>せん</rt></ruby><ruby>生<rt>せい</rt></ruby>に _______、とても うれしかった。",
+        "options": [
+          "ほめる ことが できて",
+          "ほめて くれて",
+          "ほめられて",
+          "ほめたので"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ほめられて"
+        }
+      }
+    ]
+  }
+]

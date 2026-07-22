@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 2日目",
+    "questions": [
+      {
+        "id": "q275",
+        "questionText": "化学肥料や農薬を控え、土壌の生産効率を<u>維持</u>する農法を有機栽培と言う。",
+        "options": [
+          "しじ",
+          "ほじ",
+          "いじ",
+          "こじ"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "いじ"
+        },
+        "explanation": "維持 is read as いじ (iji), meaning maintenance or preservation."
+      },
+      {
+        "id": "q276",
+        "questionText": "このラジオは、万一のとき電池がなくても心配＿＿＿＿＿。手動で発電可能です。",
+        "options": [
+          "無用",
+          "無能",
+          "無断",
+          "無知"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "無用"
+        },
+        "explanation": "心配無用 (shinpai muyou) is a set phrase meaning 'no need to worry'."
+      },
+      {
+        "id": "q277",
+        "questionText": "お金はもちろんほしいけれど、＿＿＿＿＿なかったで、なんとかなる。",
+        "options": [
+          "ないから",
+          "なくても",
+          "なかったら",
+          "ないので"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "なかったら"
+        },
+        "explanation": "The grammar pattern is 〜たら〜たで (e.g. なかったらなかったで), meaning 'if not, that's fine too / we'll manage without it'."
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 2日目",
+    "questions": [
+      {
+        "id": "q147",
+        "questionText": "素敵なヴァイオリニストの素晴らしい演奏に<u>拍手</u>が鳴り止まなかった。",
+        "options": [
+          "はくしゅ",
+          "あくしゅ",
+          "ぱくしゅ",
+          "ひょうしゅ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "はくしゅ"
+        },
+        "explanation": "拍手 is read as はくしゅ (applause)."
+      },
+      {
+        "id": "q148",
+        "questionText": "子供たちの＿＿＿＿成長を願っています。",
+        "options": [
+          "すこやかな",
+          "しとやかな",
+          "ゆるやかな",
+          "あざやかな"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "すこやかな"
+        },
+        "explanation": "すこやかな (健やかな) means healthy or sound, fitting 'growth' (成長)."
+      },
+      {
+        "id": "q149",
+        "questionText": "一歳にして筆を持ったというこの子は、生まれ＿＿＿＿の書道家なのだろう。",
+        "options": [
+          "がてら",
+          "っぱなし",
+          "ながら",
+          "つつ"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ながら"
+        },
+        "explanation": "生まれながら (umarenagara) means 'by nature' or 'innately'."
+      }
+    ]
+  }
+]

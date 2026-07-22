@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_117",
+    "type": "shin_mon_page",
+    "page_file": "117.jpg",
+    "page_number": 117,
+    "questions": [
+      {
+        "id": "q183",
+        "questionText": "社長は <u>京都</u>へ 行きました。",
+        "options": [
+          "きょうと",
+          "きょうど",
+          "きゅうと",
+          "きゅうど"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "きょうと"
+        }
+      },
+      {
+        "id": "q184",
+        "questionText": "この プールは、まん<ruby>中<rt>なか</rt></ruby>が いちばん _______ から、<ruby>気<rt>き</rt></ruby>を つけて ください。",
+        "options": [
+          "とおい",
+          "あさい",
+          "ふかい",
+          "あんぜん"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ふかい"
+        }
+      },
+      {
+        "id": "q185",
+        "questionText": "きのう、<ruby>田中<rt>たなか</rt></ruby>さんの お<ruby>父<rt>とう</rt></ruby>さんに <ruby>食事<rt>しょくじ</rt></ruby>に <ruby>連<rt>つ</rt></ruby>れて いって _______ 。",
+        "options": [
+          "あげました",
+          "くださいました",
+          "さしあげました",
+          "いただきました"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "いただきました"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 5日目",
+    "questions": [
+      {
+        "id": "442",
+        "questionText": "この担架は底の部分に<u>摩擦</u>とショックを和らげる工夫が施されており、人を安全に搬送できる。",
+        "options": [
+          "まっさつ",
+          "まさい",
+          "まっさい",
+          "まさつ"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "まさつ"
+        },
+        "explanation": "摩擦 (まさつ) means friction."
+      },
+      {
+        "id": "443",
+        "questionText": "ドラマを途中から見たので、話の＿＿＿＿＿がよくわからなかった。",
+        "options": [
+          "道",
+          "筋",
+          "根",
+          "種"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "筋"
+        },
+        "explanation": "話の筋 (はなしのすじ) means the plot or storyline."
+      },
+      {
+        "id": "444",
+        "questionText": "無理に上品＿＿＿＿＿のはやめたほうがいいですよ。",
+        "options": [
+          "びる",
+          "ぶる",
+          "めく",
+          "がる"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ぶる"
+        },
+        "explanation": "上品ぶる (じょうひんぶる) means to put on airs or act refined. The suffix ~ぶる means to act like something one is not."
+      }
+    ]
+  }
+]

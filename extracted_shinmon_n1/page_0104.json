@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 3日目",
+    "questions": [
+      {
+        "id": "162",
+        "questionText": "神社で、矢を的に射て新年の<u>吉凶</u>を占う儀式が厳かに行われた。",
+        "options": [
+          "きっく",
+          "きっきょう",
+          "きっしょう",
+          "きっこう"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "きっきょう"
+        },
+        "explanation": "吉凶 is read as きっきょう, meaning 'good or bad fortune/luck'."
+      },
+      {
+        "id": "163",
+        "questionText": "毎年、梅雨になる前に、庭の草を＿＿＿＿ようにしている。",
+        "options": [
+          "つまむ",
+          "むしる",
+          "つねる",
+          "めくる"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "むしる"
+        },
+        "explanation": "草をむしる means 'to pull weeds' or 'to weed'."
+      },
+      {
+        "id": "164",
+        "questionText": "こんな雑誌は、お金を出して買う＿＿＿＿ものではない。",
+        "options": [
+          "に足る",
+          "に足りない",
+          "に足す",
+          "に足さない"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "に足る"
+        },
+        "explanation": "「〜に足る」 means 'worth ~ing'. Combined with 「ものではない」, it means 'not worth buying'."
+      }
+    ]
+  }
+]

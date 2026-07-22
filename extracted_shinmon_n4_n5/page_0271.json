@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_271",
+    "type": "shin_mon_page",
+    "page_file": "271.jpg",
+    "page_number": 271,
+    "questions": [
+      {
+        "id": "q460",
+        "questionText": "その 真ん中の 黒い ボタンを <u>おして</u> ください。",
+        "options": [
+          "押して",
+          "貸して",
+          "足して",
+          "出して"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "押して"
+        }
+      },
+      {
+        "id": "q461",
+        "questionText": "A 「<ruby>先日<rt>せんじつ</rt></ruby>は、ありがとう ございました。」\nB 「 _______ 。」",
+        "options": [
+          "おかげさまで",
+          "こちらこそ",
+          "おきのどくに",
+          "ごめんください"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "こちらこそ"
+        }
+      },
+      {
+        "id": "q462",
+        "questionText": "<ruby>毎日<rt>まいにち</rt></ruby> <ruby>練習<rt>れんしゅう</rt></ruby>して、だんだん _______ 。",
+        "options": [
+          "<ruby>話<rt>はな</rt></ruby>せるかもしれない",
+          "<ruby>話<rt>はな</rt></ruby>せない はずが ない",
+          "<ruby>話<rt>はな</rt></ruby>せる ように して きた",
+          "<ruby>話<rt>はな</rt></ruby>せる ように なって きた"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "<ruby>話<rt>はな</rt></ruby>せる ように なって きた"
+        }
+      }
+    ]
+  }
+]

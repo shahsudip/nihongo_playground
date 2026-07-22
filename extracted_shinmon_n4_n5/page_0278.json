@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_278",
+    "type": "shin_mon_page",
+    "page_file": "278.jpg",
+    "page_number": 278,
+    "questions": [
+      {
+        "id": "q484",
+        "questionText": "この 料理の <u>味</u>が 好きです。",
+        "options": [
+          "あじ",
+          "だし"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "あじ"
+        }
+      },
+      {
+        "id": "q485",
+        "questionText": "雨が <u>ふって</u> きた。",
+        "options": [
+          "降って",
+          "下って"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "降って"
+        }
+      },
+      {
+        "id": "q486",
+        "questionText": "友だちに 本を 貸して あげたら _______ に お<ruby>菓子<rt>かし</rt></ruby>を くれた。",
+        "options": [
+          "おいわい",
+          "おれい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "おれい"
+        }
+      },
+      {
+        "id": "q487",
+        "questionText": "この <ruby>荷物<rt>にもつ</rt></ruby>、いつ _______ か。",
+        "options": [
+          "とどきました",
+          "うごきました"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "とどきました"
+        }
+      },
+      {
+        "id": "q488",
+        "questionText": "田中さんは 女の人 _______ しゃべり方をする。",
+        "options": [
+          "みたいな",
+          "ような"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "みたいな"
+        }
+      },
+      {
+        "id": "q489",
+        "questionText": "レポートは、来週の 金曜日 _______ 出して ください。",
+        "options": [
+          "まで",
+          "までに"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "までに"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 5日目",
+    "questions": [
+      {
+        "id": "q198",
+        "questionText": "通販で購入したレモン<u>果汁</u>入りの酸っぱいジュースは、私の元気の源です。",
+        "options": [
+          "ぼくじゅう",
+          "かしゅう",
+          "かじゅう",
+          "かじる"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "かじゅう"
+        },
+        "explanation": "果汁 is read as かじゅう, meaning fruit juice."
+      },
+      {
+        "id": "q199",
+        "questionText": "海外旅行に行くなら、私が___お世話になっている旅行会社を紹介しますよ。",
+        "options": [
+          "日頃",
+          "一頃",
+          "年頃",
+          "先頃"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "日頃"
+        },
+        "explanation": "日頃 (ひごろ) means 'normally/regularly'. 日頃お世話になっている means 'who I regularly patronize' or 'who regularly takes care of me'."
+      },
+      {
+        "id": "q200",
+        "questionText": "子供は目を覚ます___、母親を呼んだ。",
+        "options": [
+          "とたんに",
+          "やいなや",
+          "なら",
+          "ところを"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "やいなや"
+        },
+        "explanation": "Verb dictionary form + やいなや means 'as soon as'. とたんに requires the past tense (目を覚ましたとたんに)."
+      }
+    ]
+  }
+]

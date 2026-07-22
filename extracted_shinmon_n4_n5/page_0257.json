@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_257",
+    "type": "shin_mon_page",
+    "page_file": "257.jpg",
+    "page_number": 257,
+    "questions": [
+      {
+        "id": "q439",
+        "questionText": "どんな 作文を 書くか <u>かんがえて</u> います。",
+        "options": [
+          "思えて",
+          "研えて",
+          "究えて",
+          "考えて"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "考えて"
+        }
+      },
+      {
+        "id": "q440",
+        "questionText": "この <ruby>答え<rt>こたえ</rt></ruby>は <ruby>本当<rt>ほんとう</rt></ruby>に _______ でしょうか。",
+        "options": [
+          "ただしい",
+          "やさしい",
+          "あう",
+          "ちょうどいい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ただしい"
+        }
+      },
+      {
+        "id": "q441",
+        "questionText": "A 「<ruby>田中<rt>たなか</rt></ruby>さん、<ruby>明日<rt>あした</rt></ruby>は _______ ですよ。」\nB 「ああ、そう <ruby>言<rt>い</rt></ruby>って いましたね。」",
+        "options": [
+          "<ruby>休<rt>やす</rt></ruby>みよう",
+          "<ruby>休<rt>やす</rt></ruby>むそう",
+          "<ruby>休<rt>やす</rt></ruby>みたい",
+          "<ruby>休<rt>やす</rt></ruby>みそう"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "<ruby>休<rt>やす</rt></ruby>みそう"
+        }
+      }
+    ]
+  }
+]

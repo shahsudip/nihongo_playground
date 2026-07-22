@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 2日目",
+    "questions": [
+      {
+        "id": "q22",
+        "questionText": "僕は学生の頃、いつも新しいデザインを考えては手帳に<u>描いて</u>いました。",
+        "options": [
+          "えかいて",
+          "あがいて",
+          "かいて",
+          "ひいて"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "かいて"
+        },
+        "explanation": "The kanji 描 in this context is read as か (描く = かく), meaning to draw. (えがく is another reading, but option 1 is えかいて without dakuten, so it is incorrect)."
+      },
+      {
+        "id": "q23",
+        "questionText": "アパートの家賃の支払いが、3ヶ月___。何とかしなくては。",
+        "options": [
+          "乱れている",
+          "怠っている",
+          "滞っている",
+          "費やしている"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "滞っている"
+        },
+        "explanation": "The verb 滞る (とどこおる) means to be delayed or overdue. 支払いが滞る is a common phrase meaning payments are in arrears."
+      },
+      {
+        "id": "q24",
+        "questionText": "その大柄な力士の200キロ___体が、小柄な力士によって投げ飛ばされた。",
+        "options": [
+          "からある",
+          "からする",
+          "からして",
+          "からこそ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "からある"
+        },
+        "explanation": "The grammar point 〜からある is used to emphasize that a weight, distance, or size is large ('as much as'). For weight like 200キロ, からある is appropriate."
+      }
+    ]
+  }
+]

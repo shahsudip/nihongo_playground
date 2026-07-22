@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_165",
+    "type": "shin_mon_page",
+    "page_file": "165.jpg",
+    "page_number": 165,
+    "questions": [
+      {
+        "id": "q278",
+        "questionText": "私は いつも 土日に <u>洗濯</u>を します。",
+        "options": [
+          "せんよう",
+          "せっだく",
+          "せんだく",
+          "せんたく"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "せんたく"
+        }
+      },
+      {
+        "id": "q279",
+        "questionText": "ぼくは、<ruby>人<rt>ひと</rt></ruby>の _______ <ruby>仕<rt>し</rt></ruby><ruby>事<rt>ごと</rt></ruby>が したいです。",
+        "options": [
+          "たいせつな",
+          "まじめな",
+          "やくに たつ",
+          "うれしい"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "やくに たつ"
+        }
+      },
+      {
+        "id": "q280",
+        "questionText": "<ruby>私<rt>わたし</rt></ruby>は、<ruby>字<rt>じ</rt></ruby> a_______ <ruby>絵<rt>え</rt></ruby> b_______ <ruby>下<rt>へ</rt></ruby>手です。",
+        "options": [
+          "a. や b. や",
+          "a. も b. も",
+          "a. と b. や",
+          "a. か b. も"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "a. も b. も"
+        }
+      }
+    ]
+  }
+]

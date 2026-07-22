@@ -1,0 +1,86 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 2 Day 7",
+    "questions": [
+      {
+        "id": "q240",
+        "questionText": "梅雨入りかと思うと<u>憂鬱</u>だ。",
+        "options": [
+          "ゆいいつ",
+          "ゆううつ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ゆううつ"
+        },
+        "explanation": "憂鬱 is read as ゆううつ, meaning melancholy or depression."
+      },
+      {
+        "id": "q241",
+        "questionText": "借金返済の<u>催促状</u>が来た。",
+        "options": [
+          "とくそくじょう",
+          "さいそくじょう"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "さいそくじょう"
+        },
+        "explanation": "催促状 is read as さいそくじょう, meaning a demand letter or reminder."
+      },
+      {
+        "id": "q242",
+        "questionText": "その件については、早期解決に向けて、___対応が重要だ。",
+        "options": [
+          "すみやかな",
+          "すこやかな"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "すみやかな"
+        },
+        "explanation": "速やかな (すみやかな) means prompt or rapid, fitting the context of resolving the matter early."
+      },
+      {
+        "id": "q243",
+        "questionText": "家が狭くて衣類の___に困っている。",
+        "options": [
+          "収容",
+          "収納"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "収納"
+        },
+        "explanation": "収納 (しゅうのう) refers to storage or putting things away, commonly used for clothes. 収容 is for accommodating people/things in a facility."
+      },
+      {
+        "id": "q244",
+        "questionText": "草刈りで汗___になった。",
+        "options": [
+          "ずくめ",
+          "まみれ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "まみれ"
+        },
+        "explanation": "汗まみれ means covered in sweat. まみれ is used for liquids or dirt covering a surface."
+      },
+      {
+        "id": "q245",
+        "questionText": "修理できないなら、新しいのを買う___。",
+        "options": [
+          "までもない",
+          "までのことだ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "までのことだ"
+        },
+        "explanation": "〜までのことだ means 'there is no choice but to...'. If it can't be fixed, you just have to buy a new one."
+      }
+    ]
+  }
+]

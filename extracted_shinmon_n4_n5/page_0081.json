@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_81",
+    "type": "shin_mon_page",
+    "page_file": "81.jpg",
+    "page_number": 81,
+    "questions": [
+      {
+        "id": "q129",
+        "questionText": "それは <u>じどう</u>ドアです。",
+        "options": [
+          "自動",
+          "自働",
+          "手動",
+          "手働"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "自動"
+        }
+      },
+      {
+        "id": "q130",
+        "questionText": "<ruby>公園<rt>こうえん</rt></ruby>の ベンチに _______ が <ruby>一人<rt>ひとり</rt></ruby> すわって います。",
+        "options": [
+          "としをとるひと",
+          "ふるいひと",
+          "おとしより",
+          "ふるいおじいさん"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "おとしより"
+        }
+      },
+      {
+        "id": "q131",
+        "questionText": "また、<ruby>遊<rt>あそ</rt></ruby>び _______ <ruby>来<rt>き</rt></ruby>て ください。",
+        "options": [
+          "は",
+          "に",
+          "を",
+          "か"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "に"
+        }
+      }
+    ]
+  }
+]

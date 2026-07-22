@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_211",
+    "type": "shin_mon_page",
+    "page_file": "211.jpg",
+    "page_number": 211,
+    "questions": [
+      {
+        "id": "q365",
+        "questionText": "<u>急いで</u> ください。",
+        "options": [
+          "きそいで",
+          "いそいで"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "いそいで"
+        }
+      },
+      {
+        "id": "q366",
+        "questionText": "旅行の <u>けいかく</u>を 立てる。",
+        "options": [
+          "計画",
+          "映画"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "計画"
+        }
+      },
+      {
+        "id": "q367",
+        "questionText": "<ruby>妻<rt>つま</rt></ruby>は 10年前に 病気で _______。",
+        "options": [
+          "わかれました",
+          "なくなりました"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "なくなりました"
+        }
+      },
+      {
+        "id": "q368",
+        "questionText": "_______。かぎを なくしちゃった ようだ。",
+        "options": [
+          "こまった",
+          "おどろいた"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "こまった"
+        }
+      },
+      {
+        "id": "q369",
+        "questionText": "車を <ruby>運<rt>うん</rt></ruby><ruby>転<rt>てん</rt></ruby>する ときは、お<ruby>酒<rt>さけ</rt></ruby>を _______ いけない。",
+        "options": [
+          "飲んでは",
+          "飲まないと"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "飲んでは"
+        }
+      },
+      {
+        "id": "q370",
+        "questionText": "私は、お<ruby>酒<rt>さけ</rt></ruby> _______ 飲まないし、たばこ _______ すいません。",
+        "options": [
+          "も／も",
+          "とか／とか"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "も／も"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_195",
+    "type": "shin_mon_page",
+    "page_file": "195.jpg",
+    "page_number": 195,
+    "questions": [
+      {
+        "id": "q323",
+        "questionText": "この 村は 町から <u>遠くて</u> 不便です。",
+        "options": [
+          "とうくて",
+          "とおくて",
+          "ちかくて",
+          "しかくて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "とおくて"
+        }
+      },
+      {
+        "id": "q324",
+        "questionText": "A 「この <ruby>牛<rt>ぎゅう</rt></ruby><ruby>乳<rt>にゅう</rt></ruby>、へんな _______ が して いるよ。」\nB 「ほんとだ。くさい。」",
+        "options": [
+          "ねだん",
+          "かたち",
+          "におい",
+          "いろ"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "におい"
+        }
+      },
+      {
+        "id": "q325",
+        "questionText": "子どもに 毎日 ピアノを <ruby>練<rt>れん</rt></ruby><ruby>習<rt>しゅう</rt></ruby> _______ のは <ruby>大<rt>たい</rt></ruby><ruby>変<rt>へん</rt></ruby>です。",
+        "options": [
+          "される",
+          "させる",
+          "しつづける",
+          "してやる"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "させる"
+        }
+      }
+    ]
+  }
+]

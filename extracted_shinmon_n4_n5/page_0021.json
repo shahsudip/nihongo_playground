@@ -1,0 +1,51 @@
+[
+  {
+    "type": "shin_mon_page",
+    "page_file": "21.jpg",
+    "page_number": 21,
+    "questions": [
+      {
+        "id": "q16",
+        "questionText": "これから 日本語を <u>勉強</u>します。",
+        "options": [
+          "ばんきゅう",
+          "べんきょう",
+          "べんきゅう",
+          "ばんきょう"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "べんきょう"
+        }
+      },
+      {
+        "id": "q17",
+        "questionText": "<ruby>今日<rt>きょう</rt></ruby>が _______ で、<ruby>明日<rt>あした</rt></ruby>が <ruby>三日<rt>みっか</rt></ruby>です。",
+        "options": [
+          "はつか",
+          "ふつか",
+          "よっか",
+          "はたち"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ふつか"
+        }
+      },
+      {
+        "id": "q18",
+        "questionText": "_______ <ruby>フランス語<rt>ご</rt></ruby>が できる <ruby>人<rt>ひと</rt></ruby>は いませんか。",
+        "options": [
+          "だれが",
+          "だれか",
+          "だれでも",
+          "だれも"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "だれか"
+        }
+      }
+    ]
+  }
+]

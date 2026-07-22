@@ -1,0 +1,73 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "もんだい",
+    "questions": [
+      {
+        "id": "121",
+        "questionText": "<u>為替</u>相場をチェックする。",
+        "options": [
+          "ためせ",
+          "かわせ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "かわせ"
+        },
+        "explanation": "為替 (かわせ) means 'foreign exchange'."
+      },
+      {
+        "id": "122",
+        "questionText": "ここからの<u>眺め</u>は素晴らしい。",
+        "options": [
+          "ながめ",
+          "ななめ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ながめ"
+        },
+        "explanation": "眺め (ながめ) means 'view' or 'scene'."
+      },
+      {
+        "id": "123",
+        "questionText": "仕事、恋愛とも順調なのに、毎日が＿＿＿＿感じるのはなぜだろう。",
+        "options": [
+          "あっけなく",
+          "むなしく"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "むなしく"
+        },
+        "explanation": "むなしく means 'empty' or 'vain'. Despite things going well, the person feels empty."
+      },
+      {
+        "id": "124",
+        "questionText": "我が家の犬は、褒めると必ずおやつを＿＿＿＿。",
+        "options": [
+          "ねばる",
+          "ねだる"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ねだる"
+        },
+        "explanation": "ねだる means 'to beg' or 'to plead for'. The dog begs for a snack when praised."
+      },
+      {
+        "id": "125",
+        "questionText": "日本へ来て＿＿＿＿、国の料理を口にしていない。",
+        "options": [
+          "からというもの",
+          "からには"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "からというもの"
+        },
+        "explanation": "～てからというもの is a grammar structure meaning 'ever since ~'. Ever since coming to Japan, the speaker hasn't eaten their home country's food."
+      }
+    ]
+  }
+]

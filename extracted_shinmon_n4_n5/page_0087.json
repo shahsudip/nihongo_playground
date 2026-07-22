@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_87",
+    "type": "shin_mon_page",
+    "page_file": "87.jpg",
+    "page_number": 87,
+    "questions": [
+      {
+        "id": "q138",
+        "questionText": "<u>お姉さん</u>は お元気ですか。",
+        "options": [
+          "おねいさん",
+          "おにいさん",
+          "おねえさん",
+          "おあねさん"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "おねえさん"
+        }
+      },
+      {
+        "id": "q139",
+        "questionText": "<ruby>鳥<rt>とり</rt></ruby>が たくさん <ruby>空<rt>そら</rt></ruby>を _______ います。",
+        "options": [
+          "さんぽして",
+          "はしって",
+          "あそんで",
+          "とんで"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "とんで"
+        }
+      },
+      {
+        "id": "q140",
+        "questionText": "これは、<ruby>日本人<rt>にほんじん</rt></ruby> _______ <ruby>読<rt>よ</rt></ruby>めない <ruby>漢字<rt>かんじ</rt></ruby>です。",
+        "options": [
+          "だけ",
+          "ばかり",
+          "でも",
+          "ぐらい"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "でも"
+        }
+      }
+    ]
+  }
+]

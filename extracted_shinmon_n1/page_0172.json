@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 3 Day 3",
+    "questions": [
+      {
+        "id": "q287",
+        "questionText": "<u>偽造</u>パスポートで入国しようとした男が逮捕された。",
+        "options": [
+          "ぎそう",
+          "ぎせい",
+          "ぎぞう",
+          "ぎぜい"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ぎぞう"
+        },
+        "explanation": "偽造 (forgery) is read as ぎぞう."
+      },
+      {
+        "id": "q288",
+        "questionText": "デザートは、季節のフルーツを＿＿＿＿使ったケーキです。",
+        "options": [
+          "ひそかに",
+          "まれに",
+          "ふんだんに",
+          "はるかに"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ふんだんに"
+        },
+        "explanation": "ふんだんに means abundantly or plentifully, fitting the context of using a lot of fruit."
+      },
+      {
+        "id": "q289",
+        "questionText": "芝生に＿＿＿＿べからず、と書いてありますよ。",
+        "options": [
+          "入る",
+          "入らない",
+          "入り",
+          "入って"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "入る"
+        },
+        "explanation": "The grammar pattern ～べからず (must not do) attaches to the dictionary form of a verb (入る)."
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 2日目",
+    "questions": [
+      {
+        "id": "q153",
+        "questionText": "十分な睡眠は成長ホルモンの分泌を<u>促す</u>。",
+        "options": [
+          "かくす",
+          "かもす",
+          "もたらす",
+          "うながす"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "うながす"
+        },
+        "explanation": "促す (うながす) means to stimulate, encourage, or promote."
+      },
+      {
+        "id": "q154",
+        "questionText": "彼は___のある学生だから、社会に出ても成功するだろう。",
+        "options": [
+          "見通し",
+          "見晴らし",
+          "見込み",
+          "見積もり"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "見込み"
+        },
+        "explanation": "見込み (みこみ) means promise or potential. 見込みのある学生 means a promising student."
+      },
+      {
+        "id": "q155",
+        "questionText": "この非常時___、仲間割れしている場合ではない。",
+        "options": [
+          "ながらに",
+          "とばかりに",
+          "にあって",
+          "であろうと"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "にあって"
+        },
+        "explanation": "〜にあって means 'at the time of' or 'in the condition of', often used with special situations like 非常時 (emergency)."
+      }
+    ]
+  }
+]

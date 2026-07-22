@@ -1,0 +1,86 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 7日目",
+    "questions": [
+      {
+        "id": "q466",
+        "questionText": "<u>遺言</u>の作成を専門家に依頼する。",
+        "options": [
+          "ゆいごん",
+          "いうごん"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ゆいごん"
+        },
+        "explanation": "遺言 (ゆいごん) means will or testament."
+      },
+      {
+        "id": "q467",
+        "questionText": "夜中に消防車のサイレンが<u>鳴り響いた</u>。",
+        "options": [
+          "なりふぶいた",
+          "なりひびいた"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "なりひびいた"
+        },
+        "explanation": "鳴り響く (なりひびく) means to resound or echo."
+      },
+      {
+        "id": "q468",
+        "questionText": "その選挙では、___有利だと言われていた人が落選してしまった。",
+        "options": [
+          "猛烈",
+          "断然"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "断然"
+        },
+        "explanation": "断然 (だんぜん) means by far or definitely. 断然有利 means overwhelmingly advantageous."
+      },
+      {
+        "id": "q469",
+        "questionText": "最近は、患者本人に癌であることを___する医者が多いらしい。",
+        "options": [
+          "告知",
+          "告白"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "告知"
+        },
+        "explanation": "告知 (こくち) means notification/announcement, used for medical diagnoses. 告白 (こくはく) means confession."
+      },
+      {
+        "id": "q470",
+        "questionText": "子供たちは今、シールに夢中で家の家具___家具にシールを貼っている。",
+        "options": [
+          "とみると",
+          "という"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "という"
+        },
+        "explanation": "「NというN」 is a grammar pattern meaning 'every single N'. 家具という家具 means 'every single piece of furniture'."
+      },
+      {
+        "id": "q471",
+        "questionText": "愚痴を___、言わないことにした。",
+        "options": [
+          "言えばきりがないので",
+          "言うに留まらず"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "言えばきりがないので"
+        },
+        "explanation": "きりがない means 'there is no end to'. 'If I start complaining there's no end to it, so I decided not to say anything.'"
+      }
+    ]
+  }
+]

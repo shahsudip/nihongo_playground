@@ -1,0 +1,98 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "もんだい",
+    "questions": [
+      {
+        "id": "q347",
+        "questionText": "姉の料理もおいしいが、やはり母の料理には<u>劣る</u>。",
+        "options": [
+          "おちる",
+          "おとる",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "おとる"
+        },
+        "explanation": "劣る is read as おとる, meaning 'to be inferior to'."
+      },
+      {
+        "id": "q348",
+        "questionText": "この二つの言葉には<u>微妙</u>な意味の違いがある。",
+        "options": [
+          "びみょう",
+          "みみょう",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "びみょう"
+        },
+        "explanation": "微妙 is read as びみょう, meaning 'subtle' or 'delicate'."
+      },
+      {
+        "id": "q349",
+        "questionText": "友人の___に満ちた手紙に、涙がこぼれた。",
+        "options": [
+          "思いやり",
+          "愛想",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "思いやり"
+        },
+        "explanation": "思いやり means 'consideration' or 'sympathy'. 'A letter full of sympathy' fits the context."
+      },
+      {
+        "id": "q350",
+        "questionText": "犯罪___へのご協力をお願いいたします。",
+        "options": [
+          "捜査",
+          "審査",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "捜査"
+        },
+        "explanation": "犯罪捜査 (はんざいそうさ) means 'criminal investigation'."
+      },
+      {
+        "id": "q351",
+        "questionText": "彼らは吹雪___、救助に向かった。",
+        "options": [
+          "をものともせずに",
+          "のそばから",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "をものともせずに"
+        },
+        "explanation": "～をものともせずに means 'braving' or 'ignoring (difficulties)'. They headed for rescue braving the blizzard."
+      },
+      {
+        "id": "q352",
+        "questionText": "バイクは渋滞___、すいすいと走った。",
+        "options": [
+          "をよそに",
+          "をもって",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "をよそに"
+        },
+        "explanation": "～をよそに means 'indifferent to' or 'ignoring (surroundings/situation)'. The bike ran smoothly, ignoring the traffic jam."
+      }
+    ]
+  }
+]

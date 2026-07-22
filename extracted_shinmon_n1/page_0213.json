@@ -1,0 +1,83 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "もんだい",
+    "questions": [
+      {
+        "id": "q371",
+        "questionText": "もはやリストラは<u>避けられない</u>だろう。",
+        "options": [
+          "ゆけられない",
+          "さけられない",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "さけられない"
+        },
+        "explanation": "避ける is read as さける, meaning to avoid. 避けられない means unavoidable."
+      },
+      {
+        "id": "q372",
+        "questionText": "<u>臨時</u>列車を運行します。",
+        "options": [
+          "じんじ",
+          "りんじ",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "りんじ"
+        },
+        "explanation": "臨時 is read as りんじ, meaning temporary or special."
+      },
+      {
+        "id": "q373",
+        "questionText": "この寺は質素だが、___雰囲気が感じられる。",
+        "options": [
+          "おごそかな",
+          "おろそかな",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "おごそかな"
+        },
+        "explanation": "おごそか (厳か) means solemn or majestic, which fits the atmosphere of a temple. おろそか (疎か) means neglectful."
+      },
+      {
+        "id": "q374",
+        "questionText": "ここではよく使われる___を丸ごと暗記する学習方法を提供しています。",
+        "options": [
+          "フレーズ",
+          "ルール",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "フレーズ"
+        },
+        "explanation": "フレーズ (phrase) fits contextually with 'memorizing whole' (丸ごと暗記する)."
+      },
+      {
+        "id": "q375",
+        "questionText": "子供たちはきれいに掃除___汚す。",
+        "options": [
+          "したそばから",
+          "せずじまいに",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "したそばから"
+        },
+        "explanation": "〜そばから means 'as soon as', typically used when a negative action repeatedly follows immediately after another action."
+      }
+    ]
+  }
+]

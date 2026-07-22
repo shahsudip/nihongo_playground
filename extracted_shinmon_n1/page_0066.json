@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 6日目",
+    "questions": [
+      {
+        "id": "q82",
+        "questionText": "玄関や廊下、化粧室には<u>暖房</u>がないので寒い。",
+        "options": [
+          "なんぽう",
+          "なんぼう",
+          "だんぽう",
+          "だんぼう"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "だんぼう"
+        },
+        "explanation": "The reading of 暖房 is だんぼう (danbou), meaning heating/heater."
+      },
+      {
+        "id": "q83",
+        "questionText": "彼らの離婚は、＿＿＿＿＿＿の違いが原因だそうだ。",
+        "options": [
+          "慣れ",
+          "しつけ",
+          "育ち",
+          "生まれつき"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "育ち"
+        },
+        "explanation": "育ち (sodachi) means upbringing. 'Differences in upbringing' fits the context of reasons for divorce."
+      },
+      {
+        "id": "q84",
+        "questionText": "ここから中へは、大統領＿＿＿＿＿＿IDカードを提示せずには入れません。",
+        "options": [
+          "というもの",
+          "といえども",
+          "ときたら",
+          "と思いきや"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "といえども"
+        },
+        "explanation": "といえども (to iedomo) means 'even if' or 'even though'. In this sentence: 'Even the president cannot enter without showing an ID card.'"
+      }
+    ]
+  }
+]

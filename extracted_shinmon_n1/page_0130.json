@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 6日目",
+    "questions": [
+      {
+        "id": "q201",
+        "questionText": "需要と供給のバランスが<u>崩れる</u>と株価が変動する。",
+        "options": [
+          "こわれる",
+          "くずれる",
+          "やぶれる",
+          "はずれる"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "くずれる"
+        },
+        "explanation": "崩れる is read as くずれる (kuzureru), meaning to collapse or crumble."
+      },
+      {
+        "id": "q202",
+        "questionText": "円高で＿＿＿＿＿のは、輸出産業だ。",
+        "options": [
+          "怒りにふれる",
+          "悲鳴を上げる",
+          "息を引き取る",
+          "角が立つ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "悲鳴を上げる"
+        },
+        "explanation": "悲鳴を上げる (himei o ageru) means 'to let out a scream/cry in distress', fitting the context of export industries suffering due to a strong yen."
+      },
+      {
+        "id": "q203",
+        "questionText": "その人は、謎＿＿＿＿＿言葉を残して死んだ。",
+        "options": [
+          "まいた",
+          "がちな",
+          "めいた",
+          "だらけ"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "めいた"
+        },
+        "explanation": "〜めく (~meku), in its past form 〜めいた (~meita), means 'showing signs of' or 'having the appearance of'. 謎めいた (nazomeita) means 'mysterious' or 'enigmatic'."
+      }
+    ]
+  }
+]

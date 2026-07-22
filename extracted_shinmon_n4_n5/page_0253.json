@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_253",
+    "type": "shin_mon_page",
+    "page_file": "253.jpg",
+    "page_number": 253,
+    "questions": [
+      {
+        "id": "q433",
+        "questionText": "部長の となりに <u>座って</u> いる 人は 奥さんです。",
+        "options": [
+          "さわって",
+          "そわって",
+          "しわって",
+          "すわって"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "すわって"
+        }
+      },
+      {
+        "id": "q434",
+        "questionText": "_______ だめでしたか。<ruby>残念<rt>ざんねん</rt></ruby>です。",
+        "options": [
+          "やっぱり",
+          "やっと",
+          "きっと",
+          "かならず"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "やっぱり"
+        }
+      },
+      {
+        "id": "q435",
+        "questionText": "A 「<ruby>一郎<rt>いちろう</rt></ruby>、まだ <ruby>起<rt>お</rt></ruby>きて いるかな。」\nB 「<ruby>部屋<rt>へや</rt></ruby>の <ruby>電気<rt>でんき</rt></ruby>が <ruby>消<rt>き</rt></ruby>えて いるから、もう _______ だよ。」",
+        "options": [
+          "<ruby>寝<rt>ね</rt></ruby>るそう",
+          "<ruby>寝<rt>ね</rt></ruby>たよう",
+          "<ruby>寝<rt>ね</rt></ruby>そう",
+          "<ruby>寝<rt>ね</rt></ruby>よう"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "<ruby>寝<rt>ね</rt></ruby>たよう"
+        }
+      }
+    ]
+  }
+]

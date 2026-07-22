@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 2日目",
+    "questions": [
+      {
+        "id": "q16",
+        "questionText": "城跡の公園に行きませんか。博物館もあるし、<u>堀</u>の周りの桜がきれいですよ。",
+        "options": [
+          "たな",
+          "へり",
+          "ほり",
+          "みぞ"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ほり"
+        },
+        "explanation": "堀 (ほり) means 'moat'. The other options are たな (棚 - shelf), へり (縁 - edge), and みぞ (溝 - ditch/groove)."
+      },
+      {
+        "id": "q17",
+        "questionText": "それについては、第三者を＿＿＿＿＿＿話し合ったほうがいいでしょう。",
+        "options": [
+          "交えて",
+          "隔てて",
+          "連ねて",
+          "添えて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "交えて"
+        },
+        "explanation": "第三者を交える means 'to include a third party'. 交える (まじえる) means to mix or include."
+      },
+      {
+        "id": "q18",
+        "questionText": "出発は、天候＿＿＿＿＿＿見合わせるかもしれない。",
+        "options": [
+          "限り",
+          "次第",
+          "いかんでは",
+          "による"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "いかんでは"
+        },
+        "explanation": "「〜いかんで(は)」 is an N1 grammar structure meaning 'depending on ~'. 'Depending on the weather, we might postpone the departure.'"
+      }
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_277",
+    "type": "shin_mon_page",
+    "page_file": "277.jpg",
+    "page_number": 277,
+    "questions": [
+      {
+        "id": "q478",
+        "questionText": "<u>試合</u>は どうでしたか。",
+        "options": [
+          "しあい",
+          "しごう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "しあい"
+        }
+      },
+      {
+        "id": "q479",
+        "questionText": "<u>こころ</u>から そう 思います。",
+        "options": [
+          "心",
+          "頭"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "心"
+        }
+      },
+      {
+        "id": "q480",
+        "questionText": "先生は まだ それを _______ いません。",
+        "options": [
+          "ごらんに なって",
+          "はいけんして"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ごらんに なって"
+        }
+      },
+      {
+        "id": "q481",
+        "questionText": "旅行の 計画が _______ <ruby>残念<rt>ざんねん</rt></ruby>です。",
+        "options": [
+          "いやに なって",
+          "だめに なって"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "だめに なって"
+        }
+      },
+      {
+        "id": "q482",
+        "questionText": "駅前の レストランは とても _______ です。",
+        "options": [
+          "おいしそう",
+          "おいしいそう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "おいしそう"
+        }
+      },
+      {
+        "id": "q483",
+        "questionText": "<ruby>間違<rt>まちが</rt></ruby>った _______ 、<ruby>消<rt>け</rt></ruby>しゴムで <ruby>消<rt>け</rt></ruby>しました。",
+        "options": [
+          "ので",
+          "のに"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ので"
+        }
+      }
+    ]
+  }
+]

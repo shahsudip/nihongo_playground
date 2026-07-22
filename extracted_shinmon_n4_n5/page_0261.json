@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_261",
+    "type": "shin_mon_page",
+    "page_file": "261.jpg",
+    "page_number": 261,
+    "questions": [
+      {
+        "id": "q445",
+        "questionText": "フライパンを <u>ひ</u>に かけて、肉を やきます。",
+        "options": [
+          "水",
+          "木",
+          "土",
+          "火"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "火"
+        }
+      },
+      {
+        "id": "q446",
+        "questionText": "<ruby>田中<rt>たなか</rt></ruby>さん、_______ よく <ruby>遅刻<rt>ちこく</rt></ruby> しますね。",
+        "options": [
+          "さいきん",
+          "さっき",
+          "しばらく",
+          "こんど"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "さいきん"
+        }
+      },
+      {
+        "id": "q447",
+        "questionText": "A 「あなた、<ruby>今日<rt>きょう</rt></ruby>も <ruby>遅<rt>おそ</rt></ruby>くなるの？」\nB 「いや、<ruby>早<rt>はや</rt></ruby>く <ruby>帰<rt>かえ</rt></ruby>る _______ 。」",
+        "options": [
+          "みたいだ",
+          "ようだ",
+          "つもりだ",
+          "らしい"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "つもりだ"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 4日目",
+    "questions": [
+      {
+        "id": "q421",
+        "questionText": "過激組織について首相は「国際<u>秩序</u>を揺るがす脅威だ」と述べた。",
+        "options": [
+          "しつじょ",
+          "ちつじょ",
+          "てつじょ",
+          "いつじょ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ちつじょ"
+        },
+        "explanation": "秩序 (ちつじょ) means 'order' or 'system'."
+      },
+      {
+        "id": "q422",
+        "questionText": "新しい化粧水を使ったら、肌が＿＿＿＿＿しまった。",
+        "options": [
+          "しびれて",
+          "こじれて",
+          "かぶれて",
+          "しおれて"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "かぶれて"
+        },
+        "explanation": "かぶれる means to get a rash or skin irritation from something (like cosmetics or plants)."
+      },
+      {
+        "id": "q423",
+        "questionText": "主婦のアイデア商品が＿＿＿＿＿売れているそうです。",
+        "options": [
+          "売れに",
+          "売れは",
+          "売れや",
+          "売れも"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "売れに"
+        },
+        "explanation": "The pattern V(stem) + に + V expresses an extreme degree of the action. 売れに売れている means 'selling exceptionally well'."
+      }
+    ]
+  }
+]

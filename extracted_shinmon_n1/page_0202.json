@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 3 Day 6",
+    "questions": [
+      {
+        "id": "q332",
+        "questionText": "母は炊事も洗濯も裁縫も文句のつけようがないが、<u>唯一</u>掃除が苦手だ。",
+        "options": [
+          "ゆいいち",
+          "ゆういつ",
+          "ゆいいつ",
+          "ゆういち"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ゆいいつ"
+        },
+        "explanation": "The correct reading for 唯一 (only, sole) is ゆいいつ."
+      },
+      {
+        "id": "q333",
+        "questionText": "遅刻した者は棄権したものと___。",
+        "options": [
+          "みなす",
+          "みだす",
+          "とがめる",
+          "とどめる"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "みなす"
+        },
+        "explanation": "みなす (見なす) means 'to regard as' or 'to consider as'. The sentence means 'Those who are late will be regarded as having forfeited.'"
+      },
+      {
+        "id": "q334",
+        "questionText": "長年の研究が評価され、感激の___です。",
+        "options": [
+          "極まり",
+          "限り",
+          "皮切り",
+          "至り"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "至り"
+        },
+        "explanation": "感激の至り (the utmost emotion/deeply moved) uses the grammar structure 'Noun + の至り' meaning 'the height of'."
+      }
+    ]
+  }
+]

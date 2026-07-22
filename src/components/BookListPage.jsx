@@ -6,6 +6,15 @@ import { db } from '../firebaseConfig.js';
 import { collection, getDocs, doc, setDoc } from 'firebase/firestore';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 
+import coverN1 from '../assets/shin_cover_n1.jpg';
+import coverN2 from '../assets/shin_cover_n2.jpg';
+import coverN3 from '../assets/shin_cover_n3.jpg';
+import coverN4N5 from '../assets/shin_cover_n4n5.jpg';
+
+import powerDrillN1 from '../assets/power_drill_n1_cover.jpg';
+import powerDrillN2 from '../assets/power_drill_n2_cover.jpg';
+import powerDrillN3 from '../assets/power_drill_n3_cover.jpg';
+
 const BookListPage = () => {
   const { currentUser } = useAuth();
   const [books, setBooks] = useState([]);
@@ -37,13 +46,35 @@ const BookListPage = () => {
       let fetchedBooks = [];
       
       /* --- AI ADDED: Hard filter to only allow specific books --- */
-      const allowedBooks = ['shin-nihongo-500-n3', 'shinkanzen-master-n3-reading', 'shin-nihongo-500-n2', 'nihongo-power-drill-n3', 'nihongo-power-drill-n2', 'nihongo-power-drill-n1'];
+      const allowedBooks = [
+        'shin-nihongo-500-n1',
+        'shin-nihongo-500-n2',
+        'shin-nihongo-500-n3',
+        'shin-nihongo-500-n4-n5',
+        'shinkanzen-master-n3-reading',
+        'nihongo-power-drill-n1',
+        'nihongo-power-drill-n2',
+        'nihongo-power-drill-n3'
+      ];
       
       booksSnap.forEach(docSnap => {
         if (allowedBooks.includes(docSnap.id)) {
           fetchedBooks.push({ id: docSnap.id, ...docSnap.data() });
         }
       });
+
+      // Sort books according to custom order: Shin 500 N1 -> N2 -> N3 -> N4-N5 first
+      const levelOrder = {
+        'shin-nihongo-500-n1': 1,
+        'shin-nihongo-500-n2': 2,
+        'shin-nihongo-500-n3': 3,
+        'shin-nihongo-500-n4-n5': 4,
+        'shinkanzen-master-n3-reading': 5,
+        'nihongo-power-drill-n1': 6,
+        'nihongo-power-drill-n2': 7,
+        'nihongo-power-drill-n3': 8
+      };
+      fetchedBooks.sort((a, b) => (levelOrder[a.id] || 99) - (levelOrder[b.id] || 99));
       /* -------------------------------------------------------- */
 
       // If no books are in Firestore, fall back to sample local books
@@ -169,14 +200,40 @@ const BookListPage = () => {
 
         {books.map((book, index) => {
           const progress = getBookProgress(book);
-          const gradient = gradients[index % gradients.length];
+          const bookCovers = {
+            'shin-nihongo-500-n1': coverN1,
+            'shin-nihongo-500-n2': coverN2,
+            'shin-nihongo-500-n3': coverN3,
+            'shin-nihongo-500-n4-n5': coverN4N5,
+            'nihongo-power-drill-n1': powerDrillN1,
+            'nihongo-power-drill-n2': powerDrillN2,
+            'nihongo-power-drill-n3': powerDrillN3,
+          };
+          const coverImg = bookCovers[book.id];
+          const levelGradients = {
+            'shin-nihongo-500-n1': 'linear-gradient(135deg, #4a154b 0%, #861457 50%, #c1121f 100%)',
+            'shin-nihongo-500-n2': 'linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #3a7bd5 100%)',
+            'shin-nihongo-500-n3': 'linear-gradient(135deg, #0d9488 0%, #11998e 50%, #38ef7d 100%)',
+            'shin-nihongo-500-n4-n5': 'linear-gradient(135deg, #7c3aed 0%, #9333ea 50%, #c084fc 100%)',
+          };
+          const gradient = levelGradients[book.id] || gradients[index % gradients.length];
           return (
             <div key={book.id} className="book-card">
-              <div className="book-cover-artwork" style={{ background: gradient }}>
-                <span className="book-cover-badge">{book.level}</span>
-                <h3 className="book-cover-title">{book.title.split(':')[0]}</h3>
-                <span className="book-cover-category">{book.category}</span>
-              </div>
+              {coverImg ? (
+                <div className="book-cover-artwork" style={{ padding: 0, overflow: 'hidden', background: '#0f172a' }}>
+                  <img 
+                    src={coverImg} 
+                    alt={book.title} 
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} 
+                  />
+                </div>
+              ) : (
+                <div className="book-cover-artwork" style={{ background: gradient }}>
+                  <span className="book-cover-badge">{book.level}</span>
+                  <h3 className="book-cover-title">{book.title.split(':')[0]}</h3>
+                  <span className="book-cover-category">{book.category}</span>
+                </div>
+              )}
               <div className="book-card-details">
                 <h2 className="book-card-title">{book.title}</h2>
                 <p className="book-card-description">{book.description}</p>

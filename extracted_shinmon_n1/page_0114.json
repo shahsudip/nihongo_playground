@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 4日目",
+    "questions": [
+      {
+        "id": "q177",
+        "questionText": "浄水器を付属のアダプターで蛇口に取り付ければ、水の<u>濁り</u>がとれます。",
+        "options": [
+          "ぬめり",
+          "よごり",
+          "にごり",
+          "のめり"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "にごり"
+        },
+        "explanation": "濁り (にごり) means cloudiness or turbidity."
+      },
+      {
+        "id": "q178",
+        "questionText": "Aさんと仲直りしようと思い、B君に相談したら、余計に___しまった。",
+        "options": [
+          "こじれて",
+          "こだわって",
+          "こりて",
+          "こころみて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "こじれて"
+        },
+        "explanation": "こじれる means to get complicated or entangled. '余計にこじれてしまった' means 'it got even more complicated/worse'."
+      },
+      {
+        "id": "q179",
+        "questionText": "今回だめだったら、また挑戦する___だ。",
+        "options": [
+          "から",
+          "まで",
+          "だに",
+          "とは"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "まで"
+        },
+        "explanation": "〜までだ (made da) means 'all one can do is...' or 'one will just...'. 'また挑戦するまでだ' means 'I will just have to try again'."
+      }
+    ]
+  }
+]

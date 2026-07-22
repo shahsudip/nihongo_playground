@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_155",
+    "type": "shin_mon_page",
+    "page_file": "155.jpg",
+    "page_number": 155,
+    "questions": [
+      {
+        "id": "q263",
+        "questionText": "つめたい 水で 顔を <u>洗う</u>と 気持ちが いい。",
+        "options": [
+          "はらう",
+          "あらう",
+          "わらう",
+          "ふるう"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "あらう"
+        }
+      },
+      {
+        "id": "q264",
+        "questionText": "A 「<ruby>今<rt>こん</rt></ruby><ruby>度<rt>ど</rt></ruby> _______ んですよ。」\nB 「そうですか。どちらの ほうへ？」",
+        "options": [
+          "けっこんする",
+          "そつぎょうする",
+          "ひっこす",
+          "うまれる"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ひっこす"
+        }
+      },
+      {
+        "id": "q265",
+        "questionText": "A 「<ruby>休<rt>やす</rt></ruby>みの <ruby>日<rt>ひ</rt></ruby>は <ruby>何<rt>なに</rt></ruby>を して いるの？」\nB 「DVDを _______。」",
+        "options": [
+          "<ruby>見<rt>み</rt></ruby>たりして います",
+          "<ruby>見<rt>み</rt></ruby>すぎます",
+          "<ruby>見<rt>み</rt></ruby>ようと します",
+          "<ruby>見<rt>み</rt></ruby>ながら して います"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "<ruby>見<rt>み</rt></ruby>たりして います"
+        }
+      }
+    ]
+  }
+]

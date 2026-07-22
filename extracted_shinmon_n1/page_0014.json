@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 1日目",
+    "questions": [
+      {
+        "id": "q4",
+        "questionText": "パスポート、免許証、<u>履歴書</u>用の写真撮影は当店でどうぞ。",
+        "options": [
+          "りれきしょ",
+          "これきしょ",
+          "られきしょ",
+          "ふくれきしょ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "りれきしょ"
+        },
+        "explanation": "\"履歴書\" (resume/CV) is read as \"りれきしょ\"."
+      },
+      {
+        "id": "q5",
+        "questionText": "その法案は、予想と違って＿＿＿＿通った。",
+        "options": [
+          "きっぱり",
+          "すんなり",
+          "がっしり",
+          "きっかり"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "すんなり"
+        },
+        "explanation": "\"すんなり\" means smoothly or without resistance. The sentence means the bill passed smoothly, contrary to expectations."
+      },
+      {
+        "id": "q6",
+        "questionText": "ヨウさんは日本語学校に通う＿＿＿＿、アルバイトで学費を稼いでいる。",
+        "options": [
+          "かたわら",
+          "反面",
+          "つつも",
+          "かのように"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "かたわら"
+        },
+        "explanation": "\"〜かたわら\" means 'while doing A, also doing B', often used for holding a job while studying or doing a side business."
+      }
+    ]
+  }
+]

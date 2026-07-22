@@ -1,0 +1,51 @@
+[
+  {
+    "type": "shin_mon_page",
+    "page_file": "35.jpg",
+    "page_number": 35,
+    "questions": [
+      {
+        "id": "q37",
+        "questionText": "田中さんは <u>明るい</u> 人です。",
+        "options": [
+          "あかるい",
+          "あきるい",
+          "あくるい",
+          "あけるい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "あかるい"
+        }
+      },
+      {
+        "id": "q38",
+        "questionText": "この <ruby>紙<rt>かみ</rt></ruby>は _______ ですが、とても じょうぶです。",
+        "options": [
+          "うすい",
+          "あつい",
+          "こい",
+          "すずしい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "うすい"
+        }
+      },
+      {
+        "id": "q39",
+        "questionText": "<ruby>私<rt>わたし</rt></ruby>は あの <ruby>人<rt>ひと</rt></ruby>を _______ 。",
+        "options": [
+          "しません",
+          "して いません",
+          "しりません",
+          "しって いません"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "しりません"
+        }
+      }
+    ]
+  }
+]

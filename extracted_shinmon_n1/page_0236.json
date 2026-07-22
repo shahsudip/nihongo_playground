@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 3日目",
+    "questions": [
+      {
+        "id": "406",
+        "questionText": "この換気扇は、先端技術を駆使し、<u>翼</u>の部分を改良して騒音を小さくした。",
+        "options": [
+          "つぼみ",
+          "つばめ",
+          "つぶて",
+          "つばさ"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "つばさ"
+        },
+        "explanation": "翼 means 'wing' or 'blade' and is read as つばさ."
+      },
+      {
+        "id": "407",
+        "questionText": "マンションの下の階の人に＿＿＿暮らすのは嫌だから、一軒家に引っ越したい。",
+        "options": [
+          "気苦労しながら",
+          "気兼ねしながら",
+          "気を引きながら",
+          "気を利かせながら"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "気兼ねしながら"
+        },
+        "explanation": "気兼ねする means 'to feel constrained' or 'to worry about bothering others', which fits the context of living above someone in an apartment."
+      },
+      {
+        "id": "408",
+        "questionText": "今回の火山の噴火は、先の大地震の影響によるもの＿＿＿。",
+        "options": [
+          "にはあたらない",
+          "といったらない",
+          "を禁じ得ない",
+          "とみられている"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "とみられている"
+        },
+        "explanation": "〜とみられている means 'it is considered that' or 'it is believed that', which naturally expresses an observation or conclusion about the cause of the eruption."
+      }
+    ]
+  }
+]

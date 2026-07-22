@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_243",
+    "type": "shin_mon_page",
+    "page_file": "243.jpg",
+    "page_number": 243,
+    "questions": [
+      {
+        "id": "q418",
+        "questionText": "風が <u>強い</u>ので、運転に 注意して ください。",
+        "options": [
+          "よわい",
+          "つよい",
+          "こわい",
+          "きつい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "つよい"
+        }
+      },
+      {
+        "id": "q419",
+        "questionText": "A 「すみません。<ruby>部長<rt>ぶちょう</rt></ruby>の カップを <ruby>割<rt>わ</rt></ruby>って しまいました。」\nB 「ああ、そう…。 _______ 。」",
+        "options": [
+          "ごめんなさい",
+          "しかたが ないね",
+          "だめ になったよ",
+          "あぶないよ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "しかたが ないね"
+        }
+      },
+      {
+        "id": "q420",
+        "questionText": "<ruby>地震<rt>じしん</rt></ruby>は _______ <ruby>来<rt>く</rt></ruby>るか <ruby>分<rt>わ</rt></ruby>からないから こわい。",
+        "options": [
+          "いつ",
+          "いつか",
+          "いつでも",
+          "いつも"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "いつ"
+        }
+      }
+    ]
+  }
+]

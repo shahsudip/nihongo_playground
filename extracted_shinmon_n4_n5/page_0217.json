@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_217",
+    "type": "shin_mon_page",
+    "page_file": "217.jpg",
+    "page_number": 217,
+    "questions": [
+      {
+        "id": "q379",
+        "questionText": "特に <u>いけん</u>は ありません。",
+        "options": [
+          "意味",
+          "意思",
+          "意県",
+          "意見"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "意見"
+        }
+      },
+      {
+        "id": "q380",
+        "questionText": "<ruby>難<rt>むずか</rt></ruby>しい <ruby>試験<rt>しけん</rt></ruby>だったのに、 _______ がんばりましたね。",
+        "options": [
+          "よく",
+          "もっと",
+          "もう",
+          "まだ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "よく"
+        }
+      },
+      {
+        "id": "q381",
+        "questionText": "この <ruby>道<rt>みち</rt></ruby>を まっすぐ _______ 、<ruby>右<rt>みぎ</rt></ruby>に <ruby>銀行<rt>ぎんこう</rt></ruby>が <ruby>見<rt>み</rt></ruby>えます。",
+        "options": [
+          "<ruby>行<rt>い</rt></ruby>ったあとで",
+          "<ruby>行<rt>い</rt></ruby>くなら",
+          "<ruby>行<rt>い</rt></ruby>くとき",
+          "<ruby>行<rt>い</rt></ruby>くと"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "<ruby>行<rt>い</rt></ruby>くと"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_74",
+    "type": "shin_mon_page",
+    "page_file": "74.jpg",
+    "page_number": 74,
+    "questions": [
+      {
+        "id": "q109",
+        "questionText": "すみません、<u>上着</u>を ぬいでも いいですか。",
+        "options": [
+          "うわぎ",
+          "うえき"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "うわぎ"
+        }
+      },
+      {
+        "id": "q110",
+        "questionText": "みんなで <u>わけましょう。</u>",
+        "options": [
+          "分けましょう",
+          "半けましょう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "分けましょう"
+        }
+      },
+      {
+        "id": "q111",
+        "questionText": "この <ruby>問題<rt>もんだい</rt></ruby>が わかる 人は、手を _______ ください。",
+        "options": [
+          "あげて",
+          "あがって"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "あげて"
+        }
+      },
+      {
+        "id": "q112",
+        "questionText": "<ruby>明日<rt>あした</rt></ruby>は <ruby>旅行<rt>りょこう</rt></ruby>に 行くので、<ruby>早<rt>はや</rt></ruby>く <ruby>家<rt>いえ</rt></ruby>を _______ 。",
+        "options": [
+          "でます",
+          "いそぎます"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "でます"
+        }
+      },
+      {
+        "id": "q113",
+        "questionText": "この <ruby>問題<rt>もんだい</rt></ruby>は _______ できません。",
+        "options": [
+          "むずかしくて",
+          "むずかしかったから"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "むずかしくて"
+        }
+      },
+      {
+        "id": "q114",
+        "questionText": "<ruby>私<rt>わたし</rt></ruby>の <ruby>誕生日<rt>たんじょうび</rt></ruby>に 父が <ruby>時計<rt>とけい</rt></ruby>を _______ 。",
+        "options": [
+          "あげました",
+          "くれました"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "くれました"
+        }
+      }
+    ]
+  }
+]

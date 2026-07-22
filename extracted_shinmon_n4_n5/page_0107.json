@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_107",
+    "type": "shin_mon_page",
+    "page_file": "107.jpg",
+    "page_number": 107,
+    "questions": [
+      {
+        "id": "q168",
+        "questionText": "あの 木には <u>小鳥</u>が たくさん います。",
+        "options": [
+          "こちょう",
+          "おとり",
+          "ちどり",
+          "ことり"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "ことり"
+        }
+      },
+      {
+        "id": "q169",
+        "questionText": "あのう、ここに _______ いいですか。",
+        "options": [
+          "すわっても",
+          "さわっても",
+          "まわっても",
+          "わって"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "すわっても"
+        }
+      },
+      {
+        "id": "q170",
+        "questionText": "_______ が <ruby>違<rt>ちが</rt></ruby>う お<ruby>皿<rt>さら</rt></ruby>ですが、ねだんは <ruby>同<rt>おな</rt></ruby>じです。",
+        "options": [
+          "<ruby>大<rt>おお</rt></ruby>きく",
+          "<ruby>大<rt>おお</rt></ruby>きいさ",
+          "<ruby>大<rt>おお</rt></ruby>きさ",
+          "<ruby>大<rt>おお</rt></ruby>きいの"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "<ruby>大<rt>おお</rt></ruby>きさ"
+        }
+      }
+    ]
+  }
+]

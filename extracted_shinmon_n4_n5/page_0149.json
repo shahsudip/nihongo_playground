@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_149",
+    "type": "shin_mon_page",
+    "page_file": "149.jpg",
+    "page_number": 149,
+    "questions": [
+      {
+        "id": "q254",
+        "questionText": "この 店は 日曜日 以外は <u>あいて</u> います。",
+        "options": [
+          "開いて",
+          "動いて",
+          "会いて",
+          "業いて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "開いて"
+        }
+      },
+      {
+        "id": "q255",
+        "questionText": "A 「<ruby>乾<rt>かん</rt></ruby><ruby>杯<rt>ぱい</rt></ruby>しましょう。<ruby>田<rt>た</rt></ruby><ruby>中<rt>なか</rt></ruby>さん、ビールで いいですか。」\nB 「すみません。私、_______ が <ruby>飲<rt>の</rt></ruby>めないんです。」",
+        "options": [
+          "おさけ",
+          "ワイン",
+          "にほんしゅ",
+          "ウイスキー"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "おさけ"
+        }
+      },
+      {
+        "id": "q256",
+        "questionText": "<ruby>赤<rt>あか</rt></ruby>ちゃんが <ruby>急<rt>きゅう</rt></ruby>に _______。",
+        "options": [
+          "<ruby>泣<rt>な</rt></ruby>き<ruby>出<rt>だ</rt></ruby>した",
+          "<ruby>泣<rt>な</rt></ruby>き<ruby>出<rt>で</rt></ruby>た",
+          "<ruby>泣<rt>な</rt></ruby>き<ruby>始<rt>はじ</rt></ruby>まった",
+          "<ruby>泣<rt>な</rt></ruby>きすぎた"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "<ruby>泣<rt>な</rt></ruby>き<ruby>出<rt>だ</rt></ruby>した"
+        }
+      }
+    ]
+  }
+]

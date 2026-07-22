@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 2日目",
+    "questions": [
+      {
+        "id": "q397",
+        "questionText": "この二つの国を<u>隔てている</u>垣根を取り払うことに貢献したい。",
+        "options": [
+          "ひだてている",
+          "はだてている",
+          "へだてている",
+          "ほだてている"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "へだてている"
+        },
+        "explanation": "「隔てる（へだてる）」 means to separate, to divide."
+      },
+      {
+        "id": "q398",
+        "questionText": "息子さんがいい大学に受かって、ご両親は＿＿＿＿＿お喜びでしょう。",
+        "options": [
+          "さぞ",
+          "いかに",
+          "もろに",
+          "ひたすら"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "さぞ"
+        },
+        "explanation": "「さぞ〜でしょう」 is a fixed phrase meaning \"I am sure that...\" or \"certainly...\""
+      },
+      {
+        "id": "q399",
+        "questionText": "何度も落ちていますが、今度＿＿＿＿＿今度は面接試験に受かってみせます。",
+        "options": [
+          "という",
+          "こそ",
+          "といい",
+          "にまして"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "こそ"
+        },
+        "explanation": "「今度こそ」 is a strong expression for \"this time for sure.\""
+      }
+    ]
+  }
+]

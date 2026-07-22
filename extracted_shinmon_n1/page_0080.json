@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 1日目",
+    "questions": [
+      {
+        "id": "126",
+        "questionText": "娘には、ピアノを弾くとき唇をとがらせる妙な<u>癖</u>がある。",
+        "options": [
+          "こせ",
+          "かせ",
+          "かべ",
+          "くせ"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "くせ"
+        },
+        "explanation": "The kanji 癖 (habit) is read as くせ."
+      },
+      {
+        "id": "127",
+        "questionText": "医者に、手術以外に助かる＿＿＿＿＿はないと言われた。",
+        "options": [
+          "道",
+          "方",
+          "用",
+          "行い"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "道"
+        },
+        "explanation": "助かる道 (way to survive). 'I was told by the doctor that there is no way to survive other than surgery.'"
+      },
+      {
+        "id": "128",
+        "questionText": "社長＿＿＿＿＿なん＿＿＿＿＿、ここではここのルールに従ってもらいます。",
+        "options": [
+          "であれ／であれ",
+          "であり／であり",
+          "につけ／につけ",
+          "につき／につき"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "であれ／であれ"
+        },
+        "explanation": "〜であれ〜であれ means 'whether A or B' or 'even if it is A or B'. 'Even if you are the president or whoever, you have to follow the rules here.'"
+      }
+    ]
+  }
+]

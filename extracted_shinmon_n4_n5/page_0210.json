@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_210",
+    "type": "shin_mon_page",
+    "page_file": "210.jpg",
+    "page_number": 210,
+    "questions": [
+      {
+        "id": "q359",
+        "questionText": "外国語の <u>発音</u>は むずかしい。",
+        "options": [
+          "ぱつおん",
+          "はつおん"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "はつおん"
+        }
+      },
+      {
+        "id": "q360",
+        "questionText": "切手を <u>あつめて</u> います。",
+        "options": [
+          "集めて",
+          "始めて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "集めて"
+        }
+      },
+      {
+        "id": "q361",
+        "questionText": "田中さんが ちこくするなんて _______ ね。",
+        "options": [
+          "さびしいです",
+          "めずらしいです"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "めずらしいです"
+        }
+      },
+      {
+        "id": "q362",
+        "questionText": "今、なんと _______ か。",
+        "options": [
+          "うかがいました",
+          "おっしゃいました"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "おっしゃいました"
+        }
+      },
+      {
+        "id": "q363",
+        "questionText": "その レストランの 名前は、前に _______ あります。",
+        "options": [
+          "聞いた ことが",
+          "聞く ことが"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "聞いた ことが"
+        }
+      },
+      {
+        "id": "q364",
+        "questionText": "その パソコン、いくら _______ 買いましたか。",
+        "options": [
+          "で",
+          "に"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "で"
+        }
+      }
+    ]
+  }
+]

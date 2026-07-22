@@ -1,0 +1,86 @@
+[
+  {
+    "type": "header",
+    "title": "第1回"
+  },
+  {
+    "type": "mondai_1",
+    "id": "q1",
+    "questionText": "どんなに片づけた（　　）、すぐにまた子どもたちが散らかしてしまう。",
+    "options": ["ところが", "ところで", "としたら", "とはいえ"],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q2",
+    "questionText": "私が集合時間に遅れた（　　）、みんなが新幹線に乗り遅れてしまった。",
+    "options": ["ばかり", "ばかりで", "ばかりに", "ばかりの"],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q3",
+    "questionText": "その大臣は政治家に（　　）発言をしたため、辞任することになった。",
+    "options": ["ありながら", "あるまいし", "あるまじき", "ありやしない"],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q4",
+    "questionText": "彼女は人気のアイドルだが、歌は下手すぎて（　　）。",
+    "options": ["聞くほかはない", "聞くにたえない", "聞かずにはいられない", "聞かずにはすまない"],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q5",
+    "questionText": "新しい家に飾る絵を探しているが、なかなか（　　）というものが見つからない。",
+    "options": ["これか", "これは", "これさえ", "これだけ"],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q6",
+    "questionText": "もう二度とたばこは吸う（　　）誓った。",
+    "options": ["まいと", "ことなしに", "までもなく", "べからずと"],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q7",
+    "questionText": "全品半額セール（　　）、スーパーの前には早朝から行列ができていた。",
+    "options": ["とあって", "とすると", "といっても", "となっては"],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q8",
+    "questionText": "今期の売り上げ（　　）、閉店せざるを得ないだろう。",
+    "options": ["としては", "ならでは", "をよそには", "いかんでは"],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q9",
+    "questionText": "この東京での公演（　　）、全国各地で演奏会を開くことになった。",
+    "options": ["において", "をもって", "にもまして", "を皮切りに"],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q10",
+    "questionText": "子どもが生まれる（　　）今の家じゃ狭いから、引っ越しも考えなくては。",
+    "options": ["だけでは", "となると", "にしたら", "くらいなら"],
+    "correctIndex": -1,
+    "explanation": ""
+  }
+]

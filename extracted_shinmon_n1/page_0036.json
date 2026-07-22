@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 1 Day 3",
+    "questions": [
+      {
+        "id": "q37",
+        "questionText": "私は、糖分や塩分を<u>控えた</u>食事を心がけている。",
+        "options": [
+          "たくわえた",
+          "とらえた",
+          "たえた",
+          "ひかえた"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "ひかえた"
+        },
+        "explanation": "控える (ひかえる) means to refrain from or reduce. Here it means reducing sugar and salt."
+      },
+      {
+        "id": "q38",
+        "questionText": "耳を＿＿＿＿聞いてごらん。",
+        "options": [
+          "傾いて",
+          "澄まして",
+          "ふさいで",
+          "疑って"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "澄まして"
+        },
+        "explanation": "「耳を澄ます」 (みみをすます) is a set phrase meaning to listen carefully."
+      },
+      {
+        "id": "q39",
+        "questionText": "彼の態度は失礼＿＿＿＿。",
+        "options": [
+          "極みない",
+          "極まらない",
+          "極みではない",
+          "極まりない"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "極まりない"
+        },
+        "explanation": "「〜極まりない」 (きわまりない) is an N1 grammar structure meaning 'extremely ~', so 失礼極まりない means 'extremely rude'."
+      }
+    ]
+  }
+]

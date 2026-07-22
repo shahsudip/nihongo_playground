@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 4日目",
+    "questions": [
+      {
+        "id": "433",
+        "questionText": "お茶には脂肪と糖分の吸収を<u>抑える</u>効果がある。",
+        "options": [
+          "たくわえる",
+          "ささえる",
+          "くわえる",
+          "おさえる"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "おさえる"
+        },
+        "explanation": "抑える (おさえる) means to suppress or hold back."
+      },
+      {
+        "id": "434",
+        "questionText": "彼女は靴を買おうとして＿＿＿＿＿迷ったあげく、結局買わずに帰ってしまった。",
+        "options": [
+          "さんざん",
+          "しぶしぶ",
+          "ほどほど",
+          "くよくよ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "さんざん"
+        },
+        "explanation": "さんざん means thoroughly or severely. 'さんざん迷ったあげく' translates to 'after agonizing/hesitating extensively'."
+      },
+      {
+        "id": "435",
+        "questionText": "A「忘れ物をお届けしましょうか。」\nB「いえ、それには＿＿＿＿＿。次回まで置いておいてください。」",
+        "options": [
+          "当たりません",
+          "及びません",
+          "足りません",
+          "至りません"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "及びません"
+        },
+        "explanation": "〜には及ばない (ni wa oyobanai) is a grammar pattern that means 'there is no need to' do something."
+      }
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 7日目",
+    "questions": [
+      {
+        "id": "q228",
+        "questionText": "<u>焦る</u>と逆効果ですから、落ち着いて作業しましょう。",
+        "options": [
+          "あせる",
+          "こげる"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "あせる"
+        },
+        "explanation": "焦る is read as 'あせる' meaning 'to be in a hurry' or 'to panic'."
+      },
+      {
+        "id": "q229",
+        "questionText": "チャンピオンに試合を<u>挑む</u>。",
+        "options": [
+          "はばむ",
+          "いどむ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "いどむ"
+        },
+        "explanation": "挑む is read as 'いどむ' meaning 'to challenge'. はばむ is 阻む (to prevent)."
+      },
+      {
+        "id": "q230",
+        "questionText": "彼は、___小説家だけあって、物事をよく知っている。",
+        "options": [
+          "さすが",
+          "かろうじて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "さすが"
+        },
+        "explanation": "さすが (as one would expect). 'As expected of a novelist, he knows a lot of things.' かろうじて means barely."
+      },
+      {
+        "id": "q231",
+        "questionText": "我が社の製品は原材料に大変___います。",
+        "options": [
+          "こだわって",
+          "こりて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "こだわって"
+        },
+        "explanation": "こだわる means 'to be particular about' or 'to be picky about'. 'Our company is very particular about the raw materials for our products.'"
+      },
+      {
+        "id": "q232",
+        "questionText": "隣人の車に傷をつけてしまった。弁償せずには___。",
+        "options": [
+          "すまない",
+          "おかない"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "すまない"
+        },
+        "explanation": "～ずにはすまない expresses that one must do something or cannot get away without doing it (from a moral or social standpoint). 'I must compensate for the damage.'"
+      },
+      {
+        "id": "q233",
+        "questionText": "インターネットのおかげで、家に___仕事ができる。",
+        "options": [
+          "いながら",
+          "いるともなく"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "いながら"
+        },
+        "explanation": "～ながら(に) means 'while being in (a state/place)'. 家にいながら means 'while staying at home'."
+      }
+    ]
+  }
+]

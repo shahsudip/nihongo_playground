@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_237",
+    "type": "shin_mon_page",
+    "page_file": "237.jpg",
+    "page_number": 237,
+    "questions": [
+      {
+        "id": "q409",
+        "questionText": "春と 秋に <u>しあい</u>が あります。",
+        "options": [
+          "仕会",
+          "試会",
+          "仕合",
+          "試合"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "試合"
+        }
+      },
+      {
+        "id": "q410",
+        "questionText": "<ruby>夕飯<rt>ゆうはん</rt></ruby>は、いつも <ruby>何時<rt>なんじ</rt></ruby>ごろ _______ 。",
+        "options": [
+          "めしあがりますか",
+          "おっしゃいますか",
+          "ごちそうしますか",
+          "まいりますか"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "めしあがりますか"
+        }
+      },
+      {
+        "id": "q411",
+        "questionText": "<ruby>私<rt>わたし</rt></ruby>の <ruby>家<rt>いえ</rt></ruby>は、せまい _______ 、<ruby>古<rt>ふる</rt></ruby>いです。",
+        "options": [
+          "し",
+          "と",
+          "で",
+          "か"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "し"
+        }
+      }
+    ]
+  }
+]

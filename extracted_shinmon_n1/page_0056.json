@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 5日目",
+    "questions": [
+      {
+        "id": "q67",
+        "questionText": "来月の下旬に<u>田舎</u>に帰ります。",
+        "options": [
+          "こきょう",
+          "きょうり",
+          "いなか",
+          "ふるさと"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "いなか"
+        },
+        "explanation": "The reading of 田舎 (countryside/hometown) is いなか."
+      },
+      {
+        "id": "q68",
+        "questionText": "馬の赤ちゃんが生まれたが、次の日に死んでしまった。＿＿＿＿＿命だった。",
+        "options": [
+          "あやうい",
+          "はかない",
+          "たやすい",
+          "すばやい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "はかない"
+        },
+        "explanation": "はかない (ephemeral, short-lived, fleeting) is the appropriate word for a life that ended quickly."
+      },
+      {
+        "id": "q69",
+        "questionText": "復旧＿＿＿＿＿、まだダイヤは乱れています。",
+        "options": [
+          "したとあって",
+          "したといった",
+          "したりとも",
+          "したとはいえ"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "したとはいえ"
+        },
+        "explanation": "〜とはいえ means 'even though' or 'although'. Here it means 'even though it has been restored'."
+      }
+    ]
+  }
+]

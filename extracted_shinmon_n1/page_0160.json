@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 3 Day 2",
+    "questions": [
+      {
+        "id": "q269",
+        "questionText": "HDDとは、磁気式の記憶装置のことで、<u>膨大</u>な情報を収納する倉庫のようなものである。",
+        "options": [
+          "じんだい",
+          "ぼうだい",
+          "そうだい",
+          "かんだい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ぼうだい"
+        },
+        "explanation": "膨大 is read as ぼうだい (boudai), meaning enormous or vast."
+      },
+      {
+        "id": "q270",
+        "questionText": "評判がいい映画だったが、私にはちょっと＿＿＿＿＿。",
+        "options": [
+          "申し分なかった",
+          "物足りなかった",
+          "何気なかった",
+          "情けなかった"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "物足りなかった"
+        },
+        "explanation": "物足りない (monotarinai) means unsatisfied or that something is lacking. The sentence means: 'It was a highly rated movie, but it was a bit lacking for me.'"
+      },
+      {
+        "id": "q271",
+        "questionText": "梅の香りに＿＿＿＿＿公園を散歩した。",
+        "options": [
+          "誘われるやら",
+          "誘われるべく",
+          "誘われずとも",
+          "誘われるまま"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "誘われるまま"
+        },
+        "explanation": "〜まま indicates doing something just as another action dictates, or leaving oneself to a state. 誘われるまま means letting oneself be lured by the scent."
+      }
+    ]
+  }
+]

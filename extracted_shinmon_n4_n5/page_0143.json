@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_143",
+    "type": "shin_mon_page",
+    "page_file": "143.jpg",
+    "page_number": 143,
+    "questions": [
+      {
+        "id": "q240",
+        "questionText": "去年の 九月 <u>九日</u>に 日本へ 来ました。",
+        "options": [
+          "ここのか",
+          "くにち"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ここのか"
+        }
+      },
+      {
+        "id": "q241",
+        "questionText": "<u>りょこう</u>会社で 働いて います。",
+        "options": [
+          "族行",
+          "旅行"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "旅行"
+        }
+      },
+      {
+        "id": "q242",
+        "questionText": "明日の 朝、<ruby>早<rt>はや</rt></ruby>く _______ さんぽしましょう。",
+        "options": [
+          "おきて",
+          "さめて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "おきて"
+        }
+      },
+      {
+        "id": "q243",
+        "questionText": "この 川は _______ ですが、およぐのは <ruby>危険<rt>きけん</rt></ruby>です。",
+        "options": [
+          "ふかい",
+          "あさい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "あさい"
+        }
+      },
+      {
+        "id": "q244",
+        "questionText": "<ruby>試験<rt>しけん</rt></ruby>に <ruby>受<rt>う</rt></ruby>かったよ。_______ 勉強しなかったのに。",
+        "options": [
+          "どんなに",
+          "そんなに"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "そんなに"
+        }
+      },
+      {
+        "id": "q245",
+        "questionText": "おなかが すいたね。ラーメン _______ <ruby>食<rt>た</rt></ruby>べようか。",
+        "options": [
+          "のほう",
+          "でも"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "でも"
+        }
+      }
+    ]
+  }
+]

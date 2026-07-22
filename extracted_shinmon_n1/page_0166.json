@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 3 Day 2",
+    "questions": [
+      {
+        "id": "q278",
+        "questionText": "大関は今場所優秀な成績をあげ、<u>横綱</u>に昇進した。",
+        "options": [
+          "よこづな",
+          "よこあみ",
+          "おうこう",
+          "おうもう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "よこづな"
+        },
+        "explanation": "横綱 is read as よこづな, which refers to the highest rank in Sumo."
+      },
+      {
+        "id": "q279",
+        "questionText": "妻は非常に＿＿＿＿＿から、うそはつけない。",
+        "options": [
+          "落ち着きがある",
+          "勘がいい",
+          "思いやりがある",
+          "愛想がいい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "勘がいい"
+        },
+        "explanation": "「勘がいい」 (kan ga ii) means having good intuition or being perceptive, which fits the context of not being able to lie to someone."
+      },
+      {
+        "id": "q280",
+        "questionText": "大企業も中小企業もこの不景気に＿＿＿＿＿がための方策を考えている。",
+        "options": [
+          "生き残らない",
+          "生き残らず",
+          "生き残った",
+          "生き残らん"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "生き残らん"
+        },
+        "explanation": "The grammar pattern 「〜んがため」 expresses purpose (\"in order to\"). It attaches to the negative stem of verbs (nai-form minus nai). For 生き残る, it is 生き残らん."
+      }
+    ]
+  }
+]

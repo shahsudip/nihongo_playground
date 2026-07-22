@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 3日目",
+    "questions": [
+      {
+        "id": "q409",
+        "questionText": "書類による審査、選考に通った者に、奨学金を支給します。借り終えたら<u>返還</u>しなければなりません。",
+        "options": [
+          "へんきゃく",
+          "へんかん",
+          "へんせん",
+          "へんさい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "へんかん"
+        },
+        "explanation": "The word 返還 (return/restoration) is read as へんかん."
+      },
+      {
+        "id": "q410",
+        "questionText": "困っている人を助けたつもりなのに、余計な______と言われてしまった。",
+        "options": [
+          "いやがらせ",
+          "おせっかい",
+          "おっちょこちょい",
+          "せっかち"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "おせっかい"
+        },
+        "explanation": "おせっかい means 'meddling' or 'being a busybody'. 余計なおせっかい is a common phrase meaning 'unnecessary meddling'."
+      },
+      {
+        "id": "q411",
+        "questionText": "自分の手に負えない______、すぐ誰かを頼ろうとするのはよくない。",
+        "options": [
+          "とみると",
+          "とみえて",
+          "ときて",
+          "と思いきや"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "とみると"
+        },
+        "explanation": "〜とみると means 'upon seeing/realizing that ~'. Here it means 'As soon as they realize it's out of their hands'."
+      }
+    ]
+  }
+]

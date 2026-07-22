@@ -1,0 +1,51 @@
+[
+  {
+    "type": "shin_mon_page",
+    "page_file": "27.jpg",
+    "page_number": 27,
+    "questions": [
+      {
+        "id": "q25",
+        "questionText": "<u>けさ</u>は 七時に 起きて ジョギングしました。",
+        "options": [
+          "本朝",
+          "分朝",
+          "会朝",
+          "今朝"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "今朝"
+        }
+      },
+      {
+        "id": "q26",
+        "questionText": "チャンネルを かえるから、テレビの _______ を <ruby>取<rt>と</rt></ruby>って ください。",
+        "options": [
+          "リモコン",
+          "パソコン",
+          "エアコン",
+          "コンピューター"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "リモコン"
+        }
+      },
+      {
+        "id": "q27",
+        "questionText": "<ruby>私<rt>わたし</rt></ruby>は テニスが <ruby>好<rt>す</rt></ruby>きですが、<ruby>上手<rt>じょうず</rt></ruby> _______ 。",
+        "options": [
+          "ありません",
+          "ないです",
+          "なりません",
+          "じゃ ありません"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "じゃ ありません"
+        }
+      }
+    ]
+  }
+]

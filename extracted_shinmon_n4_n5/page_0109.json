@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_109",
+    "type": "shin_mon_page",
+    "page_file": "109.jpg",
+    "page_number": 109,
+    "questions": [
+      {
+        "id": "q171",
+        "questionText": "あそこの <u>店員</u>さんは 親切です。",
+        "options": [
+          "てんにん",
+          "てんいん",
+          "でんいん",
+          "でんにん"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "てんいん"
+        }
+      },
+      {
+        "id": "q172",
+        "questionText": "くつを ぬいで、スリッパに _______ ください。",
+        "options": [
+          "ぬぎかえて",
+          "いれあけて",
+          "きがえて",
+          "はきかえて"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "はきかえて"
+        }
+      },
+      {
+        "id": "q173",
+        "questionText": "<ruby>田中<rt>たなか</rt></ruby>さん、このごろ とても _______ ね。",
+        "options": [
+          "きれいに なりました",
+          "きれいに しました",
+          "きれいな <ruby>人<rt>ひと</rt></ruby>です",
+          "きれいだったです"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "きれいに なりました"
+        }
+      }
+    ]
+  }
+]

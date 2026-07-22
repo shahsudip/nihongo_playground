@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 4 Day 4",
+    "questions": [
+      {
+        "id": "q427",
+        "questionText": "新幹線鉄道開業50周年記念貨幣が発行される。それの<u>取り扱い</u>金融機関を調べる。",
+        "options": [
+          "とりあつかい",
+          "とりはからい",
+          "とりつかい",
+          "とりはらい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "とりあつかい"
+        },
+        "explanation": "取り扱い (とりあつかい) means handling or dealing with."
+      },
+      {
+        "id": "q428",
+        "questionText": "見通しの悪いこの交差点では、特に安全運転を___。",
+        "options": [
+          "心得ましょう",
+          "心がけましょう",
+          "志しましょう",
+          "こだわりましょう"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "心がけましょう"
+        },
+        "explanation": "心がける (こころがける) means to keep in mind or try to do. 安全運転を心がける means to try to drive safely."
+      },
+      {
+        "id": "q429",
+        "questionText": "家は駅に近ければ近い___、うちの場合、それ以上に間取りが問題だ。",
+        "options": [
+          "のはおろか",
+          "のもさることながら",
+          "といえども",
+          "に越したことはないが"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "に越したことはないが"
+        },
+        "explanation": "「〜に越したことはない」 means 'nothing is better than / it is best if...'. The sentence means 'It is best if the house is as close to the station as possible, but in our case, the layout is an even bigger issue.'"
+      }
+    ]
+  }
+]

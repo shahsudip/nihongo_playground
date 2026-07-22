@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_63",
+    "type": "shin_mon_page",
+    "page_file": "63.jpg",
+    "page_number": 63,
+    "questions": [
+      {
+        "id": "q79",
+        "questionText": "ちょっと <u>ちず</u>を 見せて ください",
+        "options": [
+          "池国",
+          "池図",
+          "地国",
+          "地図"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "地図"
+        }
+      },
+      {
+        "id": "q80",
+        "questionText": "<ruby>会社<rt>かいしゃ</rt></ruby>まで <ruby>遠<rt>とお</rt></ruby>いので、<ruby>毎日<rt>まいにち</rt></ruby><ruby>電車<rt>でんしゃ</rt></ruby>で _______ のは たいへんです。",
+        "options": [
+          "つとめる",
+          "はたらく",
+          "のる",
+          "かよう"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "かよう"
+        }
+      },
+      {
+        "id": "q81",
+        "questionText": "<ruby>朝<rt>あさ</rt></ruby> _______ すぐに シャワーを あびます。",
+        "options": [
+          "<ruby>起<rt>お</rt></ruby>きるから",
+          "<ruby>起<rt>お</rt></ruby>きた",
+          "<ruby>起<rt>お</rt></ruby>きて",
+          "<ruby>起<rt>お</rt></ruby>きたから"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "<ruby>起<rt>お</rt></ruby>きて"
+        }
+      }
+    ]
+  }
+]

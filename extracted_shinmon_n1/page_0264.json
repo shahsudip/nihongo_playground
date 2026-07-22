@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 5日目",
+    "questions": [
+      {
+        "id": "q448",
+        "questionText": "喫煙が<u>肺</u>に与える影響について話を聞いた。",
+        "options": [
+          "のど",
+          "はい",
+          "のう",
+          "きも"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "はい"
+        },
+        "explanation": "肺 (hai) means lungs."
+      },
+      {
+        "id": "q449",
+        "questionText": "彼は大会社の社長だが、誰とでも話すとても＿＿＿＿な人だ。",
+        "options": [
+          "気がかり",
+          "気まぐれ",
+          "気まま",
+          "気さく"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "気さく"
+        },
+        "explanation": "気さく (kisaku) means frank, sociable, or easy to talk to."
+      },
+      {
+        "id": "q450",
+        "questionText": "A「彼女にふられちゃった。」\nB「ものは考え＿＿＿＿だよ。運命の人じゃなかったんだよ、きっと。」",
+        "options": [
+          "よう",
+          "もの",
+          "ごと",
+          "どき"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "よう"
+        },
+        "explanation": "〜よう means 'way of ~ing' or 'method of ~ing'. 考えよう means 'way of thinking' (it depends on how you look at it)."
+      }
+    ]
+  }
+]

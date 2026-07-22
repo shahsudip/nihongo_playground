@@ -1,0 +1,83 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "もんだい",
+    "questions": [
+      {
+        "id": "q246",
+        "questionText": "この机は<u>頑丈</u>だ。",
+        "options": [
+          "がんじょう",
+          "がんこ",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "がんじょう"
+        },
+        "explanation": "頑丈 is read as がんじょう meaning sturdy."
+      },
+      {
+        "id": "q247",
+        "questionText": "今年はおみくじが<u>凶</u>だった。",
+        "options": [
+          "きち",
+          "きょう",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "きょう"
+        },
+        "explanation": "凶 is read as きょう meaning bad luck."
+      },
+      {
+        "id": "q248",
+        "questionText": "夢かと思って、ほおを___みた。",
+        "options": [
+          "つねって",
+          "むしって",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "つねって"
+        },
+        "explanation": "ほおをつねる means to pinch one's cheek."
+      },
+      {
+        "id": "q249",
+        "questionText": "私は会話が苦手なので、いつも聞き役に___しまう。",
+        "options": [
+          "値して",
+          "徹して",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "徹して"
+        },
+        "explanation": "聞き役に徹する means to devote oneself to the role of a listener."
+      },
+      {
+        "id": "q250",
+        "questionText": "息子は学校から___や否や遊びに行ってしまった。",
+        "options": [
+          "帰る",
+          "帰った",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "帰る"
+        },
+        "explanation": "The grammar pattern is Dictionary form + や否や (やいなや) meaning 'as soon as'."
+      }
+    ]
+  }
+]

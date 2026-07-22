@@ -1,0 +1,51 @@
+[
+  {
+    "type": "shin_mon_page",
+    "page_file": "19.jpg",
+    "page_number": 19,
+    "questions": [
+      {
+        "id": "q13",
+        "questionText": "<u>今日</u>は 日曜日で、休みです。",
+        "options": [
+          "きょう",
+          "きゅう",
+          "ほんじつ",
+          "こにち"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "きょう"
+        }
+      },
+      {
+        "id": "q14",
+        "questionText": "これは、_______ <ruby>食<rt>た</rt></ruby>べられない。",
+        "options": [
+          "まずくて",
+          "おいしくて",
+          "やすくて",
+          "きらくて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "まずくて"
+        }
+      },
+      {
+        "id": "q15",
+        "questionText": "では、<ruby>土曜日<rt>どようび</rt></ruby>_______ <ruby>日曜日<rt>にちようび</rt></ruby>に もう <ruby>一度<rt>いちど</rt></ruby><ruby>電話<rt>でんわ</rt></ruby>します。",
+        "options": [
+          "に",
+          "も",
+          "や",
+          "か"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "か"
+        }
+      }
+    ]
+  }
+]

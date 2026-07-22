@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_157",
+    "type": "shin_mon_page",
+    "page_file": "157.jpg",
+    "page_number": 157,
+    "questions": [
+      {
+        "id": "q266",
+        "questionText": "今、<u>食堂</u>は こんで います。",
+        "options": [
+          "しょくとう",
+          "しゅくとう",
+          "しょくどう",
+          "しゅくどう"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "しょくどう"
+        }
+      },
+      {
+        "id": "q267",
+        "questionText": "<ruby>昨<rt>き</rt></ruby><ruby>日<rt>のう</rt></ruby> <ruby>勉<rt>べん</rt></ruby><ruby>強<rt>きょう</rt></ruby>したのに、もう _______。",
+        "options": [
+          "わすれちゃった",
+          "おもしちゃった",
+          "おぼえちゃった",
+          "わかっちゃった"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "わすれちゃった"
+        }
+      },
+      {
+        "id": "q268",
+        "questionText": "この <ruby>薬<rt>くすり</rt></ruby>を <ruby>一<rt>いっ</rt></ruby><ruby>週<rt>しゅう</rt></ruby><ruby>間<rt>かん</rt></ruby> _______ ください。",
+        "options": [
+          "<ruby>飲<rt>の</rt></ruby>みはじめて",
+          "<ruby>飲<rt>の</rt></ruby>みすぎて",
+          "<ruby>飲<rt>の</rt></ruby>みつづけて",
+          "<ruby>飲<rt>の</rt></ruby>みおわって"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "<ruby>飲<rt>の</rt></ruby>みつづけて"
+        }
+      }
+    ]
+  }
+]

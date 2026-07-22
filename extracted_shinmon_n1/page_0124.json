@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第 2 週 5 日目",
+    "questions": [
+      {
+        "id": "q192",
+        "questionText": "静かに揺れるろうそくの炎は、心を<u>穏やか</u>にしてくれる。",
+        "options": [
+          "さわやか",
+          "おだやか",
+          "しとやか",
+          "ささやか"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "おだやか"
+        },
+        "explanation": "穏やか (おだやか) means calm or peaceful."
+      },
+      {
+        "id": "q193",
+        "questionText": "その記事は事実に基づいたものではないので、信頼に___。",
+        "options": [
+          "徹しない",
+          "要しない",
+          "値しない",
+          "称しない"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "値しない"
+        },
+        "explanation": "「〜に値する/値しない」 means 'worthy of / not worthy of'. The article is not based on facts, so it is not worthy of trust."
+      },
+      {
+        "id": "q194",
+        "questionText": "入金の確認をもって契約が成立した___。",
+        "options": [
+          "に至る",
+          "に足る",
+          "ものとする",
+          "ものでもない"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ものとする"
+        },
+        "explanation": "「〜ものとする」 is used in formal rules or agreements to mean 'shall be' or 'it is decided that'. With the confirmation of payment, the contract shall be established."
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_221",
+    "type": "shin_mon_page",
+    "page_file": "221.jpg",
+    "page_number": 221,
+    "questions": [
+      {
+        "id": "q385",
+        "questionText": "漢字の <u>いみ</u>を しらべなさい。",
+        "options": [
+          "意味",
+          "以味",
+          "意見",
+          "以見"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "意味"
+        }
+      },
+      {
+        "id": "q386",
+        "questionText": "コンピューターは ソフトが ないと _______ 。",
+        "options": [
+          "かわらない",
+          "とどかない",
+          "ふえない",
+          "うごかない"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "うごかない"
+        }
+      },
+      {
+        "id": "q387",
+        "questionText": "いつ <ruby>旅行<rt>りょこう</rt></ruby>に _______ か。",
+        "options": [
+          "おいでします",
+          "お<ruby>行<rt>い</rt></ruby>きします",
+          "<ruby>行<rt>い</rt></ruby>かれます",
+          "なさいます"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "<ruby>行<rt>い</rt></ruby>かれます"
+        }
+      }
+    ]
+  }
+]

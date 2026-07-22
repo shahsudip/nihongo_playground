@@ -1,0 +1,86 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 3 Day 7",
+    "questions": [
+      {
+        "id": "q353",
+        "questionText": "世界のあちこちで今も<u>紛争</u>が起きている。",
+        "options": [
+          "とうそう",
+          "ふんそう"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ふんそう"
+        },
+        "explanation": "紛争 (ふんそう) means conflict or dispute."
+      },
+      {
+        "id": "q354",
+        "questionText": "彼の借金は膨大な額に<u>膨れ上がった</u>。",
+        "options": [
+          "ふくれあがった",
+          "はれあがった"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ふくれあがった"
+        },
+        "explanation": "膨れ上がる (ふくれあがる) means to swell up or increase enormously."
+      },
+      {
+        "id": "q355",
+        "questionText": "市役所には、省エネを＿＿＿＿ポスターがたくさん貼られている。",
+        "options": [
+          "従う",
+          "促す"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "促す"
+        },
+        "explanation": "促す (うながす) means to encourage or prompt. 省エネを促す = to encourage energy saving."
+      },
+      {
+        "id": "q356",
+        "questionText": "私の失敗は明らかだったが、だれからも＿＿＿＿ことはなかった。",
+        "options": [
+          "とがめられる",
+          "みだされる"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "とがめられる"
+        },
+        "explanation": "咎める (とがめる) means to blame or reproach. とがめられる is the passive form."
+      },
+      {
+        "id": "q357",
+        "questionText": "あの留学生は、漢字＿＿＿＿、ひらがなも書けない。",
+        "options": [
+          "ですら",
+          "はおろか"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "はおろか"
+        },
+        "explanation": "〜はおろか means 'let alone ~' or 'not to mention ~', used to emphasize a negative situation."
+      },
+      {
+        "id": "q358",
+        "questionText": "彼は遅刻してきた上に、居眠りを始める＿＿＿＿。",
+        "options": [
+          "始末だ",
+          "極みだ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "始末だ"
+        },
+        "explanation": "〜始末だ (しまつだ) is used to express a bad outcome, meaning 'end up doing ~'."
+      }
+    ]
+  }
+]

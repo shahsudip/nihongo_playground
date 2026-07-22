@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 1日目",
+    "questions": [
+      {
+        "id": "q379",
+        "questionText": "幕の内弁当には、<u>煮物</u>、揚げ物、漬け物などいろんなおかずが詰まっている。",
+        "options": [
+          "ねもの",
+          "にもの",
+          "ひもの",
+          "いもの"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "にもの"
+        },
+        "explanation": "煮物 (simmered food) is read as にもの."
+      },
+      {
+        "id": "q380",
+        "questionText": "ずっと憧れていた先輩に自分の思いを＿＿＿＿した。",
+        "options": [
+          "報知",
+          "予告",
+          "告知",
+          "告白"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "告白"
+        },
+        "explanation": "告白 (こくはく) means confession. Here it refers to confessing one's feelings."
+      },
+      {
+        "id": "q381",
+        "questionText": "彼は熱があるので今日は欠席する＿＿＿＿です。",
+        "options": [
+          "という",
+          "こと",
+          "もの",
+          "とのこと"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "とのこと"
+        },
+        "explanation": "とのことです is used to pass on a message or report what one has heard (hearsay)."
+      }
+    ]
+  }
+]

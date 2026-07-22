@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 4日目",
+    "questions": [
+      {
+        "id": "q308",
+        "questionText": "ビールの宣伝には、<u>泡</u>や喉の渇きを表現する視覚的要素が欠かせない。",
+        "options": [
+          "あわ",
+          "あら",
+          "あま",
+          "あだ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "あわ"
+        },
+        "explanation": "泡 is read as あわ (awa), meaning bubbles or foam."
+      },
+      {
+        "id": "q309",
+        "questionText": "彼がそのチームに移籍する可能性は、＿＿＿＿＿低い。",
+        "options": [
+          "極めて",
+          "若干",
+          "一切",
+          "大げさに"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "極めて"
+        },
+        "explanation": "極めて (きわめて) means 'extremely' or 'highly', which naturally pairs with 低い (low)."
+      },
+      {
+        "id": "q310",
+        "questionText": "周囲の批判＿＿＿＿＿、彼は自分のやり方を押し通した。",
+        "options": [
+          "をもとに",
+          "をとわず",
+          "をめぐり",
+          "をよそに"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "をよそに"
+        },
+        "explanation": "～をよそに is a grammar point meaning 'ignoring' or 'disregarding', which fits perfectly with pushing through with one's own way despite criticism."
+      }
+    ]
+  }
+]

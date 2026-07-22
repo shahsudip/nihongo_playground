@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 3日目",
+    "questions": [
+      {
+        "id": "q281",
+        "questionText": "電車の車掌が酔った乗客に<u>殴られて</u>怪我をするという事件があった。",
+        "options": [
+          "ほめられて",
+          "なぐられて",
+          "どなられて",
+          "せまられて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "なぐられて"
+        },
+        "explanation": "殴る (なぐる) means to strike or hit."
+      },
+      {
+        "id": "q282",
+        "questionText": "水を使わないで処理する＿＿＿＿トイレが開発されているそうだ。",
+        "options": [
+          "間接的な",
+          "定期的な",
+          "平均的な",
+          "画期的な"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "画期的な"
+        },
+        "explanation": "画期的 (かっきてき) means revolutionary or epoch-making, fitting the context of a new type of toilet."
+      },
+      {
+        "id": "q283",
+        "questionText": "年は取りたくない。話の途中で何を話していたか忘れる＿＿＿＿。",
+        "options": [
+          "ことか",
+          "しまつだ",
+          "がちだ",
+          "しかない"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "がちだ"
+        },
+        "explanation": "「〜がちだ」 indicates a tendency to do something often, here meaning 'tend to forget'."
+      }
+    ]
+  }
+]

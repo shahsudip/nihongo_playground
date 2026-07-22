@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 2 Day 5",
+    "questions": [
+      {
+        "id": "195",
+        "questionText": "医師とその関係者は、診療上知り得た<u>患者</u>の秘密を守るべきだ。",
+        "options": [
+          "かんじゃ",
+          "かんしゃ",
+          "しんじゃ",
+          "がんじゃ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "かんじゃ"
+        },
+        "explanation": "患者 (かんじゃ) means patient."
+      },
+      {
+        "id": "196",
+        "questionText": "初心を忘れず、＿＿＿＿＿を高く持とう。",
+        "options": [
+          "縁",
+          "富",
+          "技",
+          "志"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "志"
+        },
+        "explanation": "「志を高く持つ」 (kokorozashi o takaku motsu) is a set phrase meaning \"to have high aspirations\" or \"to aim high\"."
+      },
+      {
+        "id": "197",
+        "questionText": "あの頃は若い＿＿＿＿＿、無茶をしたものだ。",
+        "options": [
+          "あげくに",
+          "のすえに",
+          "かぎりに",
+          "がゆえに"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "がゆえに"
+        },
+        "explanation": "「〜がゆえに」 expresses a reason or cause, translating to \"because of\" or \"due to\". \"Because I was young, I did reckless things.\""
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 6日目",
+    "questions": [
+      {
+        "id": "q210",
+        "questionText": "「<u>振り込め</u>詐欺」防止運動が実施された。",
+        "options": [
+          "ふりこめ",
+          "はりこめ",
+          "ほりこめ",
+          "へりこめ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ふりこめ"
+        },
+        "explanation": "振り込め (ふりこめ) means bank transfer, here referring to bank transfer scams (振り込め詐欺)."
+      },
+      {
+        "id": "q211",
+        "questionText": "申込用紙は1階のカウンターに＿＿＿＿ありますので、ご利用ください。",
+        "options": [
+          "つなぎ合わせて",
+          "備え付けて",
+          "付け加えて",
+          "引き取って"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "備え付けて"
+        },
+        "explanation": "備え付ける means to provide or equip. The sentence means application forms are provided at the 1st-floor counter."
+      },
+      {
+        "id": "q212",
+        "questionText": "父親は息子を帰国＿＿＿＿べく、来日した。",
+        "options": [
+          "される",
+          "する",
+          "させる",
+          "なる"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "させる"
+        },
+        "explanation": "The causative form させる is needed here: 'in order to make his son return to his home country'. べく connects to the dictionary form of the verb."
+      }
+    ]
+  }
+]

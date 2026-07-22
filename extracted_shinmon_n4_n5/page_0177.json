@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_177",
+    "type": "shin_mon_page",
+    "page_file": "177.jpg",
+    "page_number": 177,
+    "questions": [
+      {
+        "id": "q296",
+        "questionText": "<u>急に</u> 大きい 音が して、びっくりした。",
+        "options": [
+          "くうに",
+          "きゅうに",
+          "きょうに",
+          "いそぎに"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "きゅうに"
+        }
+      },
+      {
+        "id": "q297",
+        "questionText": "かさが なかったので、<ruby>雨<rt>あめ</rt></ruby>に _______ <ruby>帰<rt>かえ</rt></ruby>りました。",
+        "options": [
+          "なれて",
+          "ふって",
+          "ぬれて",
+          "やんで"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ぬれて"
+        }
+      },
+      {
+        "id": "q298",
+        "questionText": "<ruby>車<rt>くるま</rt></ruby>に <ruby>乗<rt>の</rt></ruby>る ときは、シートベルトを _______。",
+        "options": [
+          "した ほうが いい",
+          "しなければ ならない",
+          "しないで よくない",
+          "しなくては よくない"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "しなければ ならない"
+        }
+      }
+    ]
+  }
+]

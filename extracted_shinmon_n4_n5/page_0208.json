@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_0208",
+    "type": "shin_mon_page",
+    "page_file": "208.jpg",
+    "page_number": 208,
+    "questions": [
+      {
+        "id": "q347",
+        "questionText": "時計に 新しい <u>電池</u>を 入れる。",
+        "options": [
+          "でんち",
+          "でんき"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "でんち"
+        }
+      },
+      {
+        "id": "q348",
+        "questionText": "ちょっと <u>まって</u> ください。",
+        "options": [
+          "持って",
+          "待って"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "待って"
+        }
+      },
+      {
+        "id": "q349",
+        "questionText": "何時に どこで _______ か。",
+        "options": [
+          "まちあわせましょう",
+          "つれていきましょう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "まちあわせましょう"
+        }
+      },
+      {
+        "id": "q350",
+        "questionText": "雨の _______ は、<ruby>試<rt>し</rt></ruby><ruby>合<rt>あい</rt></ruby>は <ruby>中<rt>ちゅう</rt></ruby><ruby>止<rt>し</rt></ruby>です。",
+        "options": [
+          "つごう",
+          "ばあい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ばあい"
+        }
+      },
+      {
+        "id": "q351",
+        "questionText": "お母さん、この シャツ、洗って _______ ね。明日、着るから。",
+        "options": [
+          "あって",
+          "おいて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "おいて"
+        }
+      },
+      {
+        "id": "q352",
+        "questionText": "私にも その ゲームを _______。",
+        "options": [
+          "やらせて",
+          "やらさせて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "やらせて"
+        }
+      }
+    ]
+  }
+]

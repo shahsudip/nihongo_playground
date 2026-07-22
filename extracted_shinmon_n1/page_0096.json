@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 2日目",
+    "questions": [
+      {
+        "id": "q150",
+        "questionText": "栄養の偏りをなくし、十分な睡眠をとって、<u>潤い</u>のある生活をしましょう。",
+        "options": [
+          "いきおい",
+          "いこい",
+          "うるおい",
+          "うれい"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "うるおい"
+        },
+        "explanation": "潤い is read as うるおい (moisture, richness, charm). いきおい (勢い) means momentum. いこい (憩い) means rest or relaxation. うれい (憂い) means sorrow or grief."
+      },
+      {
+        "id": "q151",
+        "questionText": "面接で＿＿＿＿＿しないように、十分な準備をしましょう。",
+        "options": [
+          "ぼつぼつ",
+          "まるまる",
+          "わざわざ",
+          "おどおど"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "おどおど"
+        },
+        "explanation": "おどおど means 'nervously' or 'timidly', which fits contextually: 'so that you don\\'t act nervously during the interview'. ぼつぼつ means little by little. まるまる means completely. わざわざ means intentionally / going out of one\\'s way."
+      },
+      {
+        "id": "q152",
+        "questionText": "国民の信頼＿＿＿＿＿、政権は維持できない。",
+        "options": [
+          "なくしては",
+          "をとわず",
+          "をもとにして",
+          "からこそ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "なくしては"
+        },
+        "explanation": "〜なくしては...ない means 'without ~ cannot...'. 'Without the trust of the citizens, the administration cannot be maintained.' をとわず means regardless of. をもとにして means based on. からこそ means precisely because."
+      }
+    ]
+  }
+]

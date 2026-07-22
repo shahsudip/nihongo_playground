@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第 4 週 5 日目",
+    "questions": [
+      {
+        "id": "q445",
+        "questionText": "神輿を担ぐ人たちの<u>粋</u>な姿、笛や太鼓に合わせて巧みに踊る機械仕掛けの人形がおもしろかった。",
+        "options": [
+          "いき",
+          "すい",
+          "しゅん",
+          "じゅん"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "いき"
+        },
+        "explanation": "粋 is read as いき, meaning chic or stylish."
+      },
+      {
+        "id": "q446",
+        "questionText": "受付業務は、＿＿＿＿＿のお客様へのしっかりした対応が要求されます。",
+        "options": [
+          "不当",
+          "不備",
+          "不意",
+          "不通"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "不意"
+        },
+        "explanation": "不意 (ふい) means unexpected or sudden. 不意のお客様 means unexpected customers."
+      },
+      {
+        "id": "q447",
+        "questionText": "A「苦労をかけてごめんなさい。」\nB「いや、こんなの苦労＿＿＿＿＿よ。」",
+        "options": [
+          "にはおよばない",
+          "でも何でもない",
+          "に越したことはない",
+          "といったらない"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "でも何でもない"
+        },
+        "explanation": "〜でも何でもない is used to strongly negate something, meaning 'it is not ~ at all'. Here, 'it is no hardship at all'."
+      }
+    ]
+  }
+]

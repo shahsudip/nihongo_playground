@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_153",
+    "type": "shin_mon_page",
+    "page_file": "153.jpg",
+    "page_number": 153,
+    "questions": [
+      {
+        "id": "q260",
+        "questionText": "駅の <u>にしぐち</u>で 三時に 会おう。",
+        "options": [
+          "東口",
+          "北口",
+          "南口",
+          "西口"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "西口"
+        }
+      },
+      {
+        "id": "q261",
+        "questionText": "お<ruby>待<rt>ま</rt></ruby>ちして いました。どうぞ、_______。",
+        "options": [
+          "あっちへ",
+          "こちらへ",
+          "どちらへ",
+          "どなたへ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "こちらへ"
+        }
+      },
+      {
+        "id": "q262",
+        "questionText": "この <ruby>問<rt>もん</rt></ruby><ruby>題<rt>だい</rt></ruby>は _______ すぎて、だれも <ruby>答<rt>こた</rt></ruby>える ことが できない。",
+        "options": [
+          "むずかし",
+          "むずかしい",
+          "むずかしく",
+          "むずかしくて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "むずかし"
+        }
+      }
+    ]
+  }
+]

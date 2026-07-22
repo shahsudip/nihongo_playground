@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_159",
+    "type": "shin_mon_page",
+    "page_file": "159.jpg",
+    "page_number": 159,
+    "questions": [
+      {
+        "id": "q269",
+        "questionText": "青森<u>けん</u>は りんごが 有名です。",
+        "options": [
+          "県",
+          "村",
+          "町",
+          "市"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "県"
+        }
+      },
+      {
+        "id": "q270",
+        "questionText": "みんなの <ruby>前<rt>まえ</rt></ruby>で <ruby>間<rt>ま</rt></ruby><ruby>違<rt>ちが</rt></ruby>えて とても _______。",
+        "options": [
+          "きらいだった",
+          "はずかしかった",
+          "きもちわるかった",
+          "さびしかった"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "はずかしかった"
+        }
+      },
+      {
+        "id": "q271",
+        "questionText": "おはしでは ちょっと _______ です。フォークを くださいませんか。",
+        "options": [
+          "<ruby>食<rt>た</rt></ruby>べながら",
+          "<ruby>食<rt>た</rt></ruby>べにくい",
+          "<ruby>食<rt>た</rt></ruby>べむずかしい",
+          "<ruby>食<rt>た</rt></ruby>べやすい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "<ruby>食<rt>た</rt></ruby>べにくい"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_59",
+    "type": "shin_mon_page",
+    "page_file": "59.jpg",
+    "page_number": 59,
+    "questions": [
+      {
+        "id": "q73",
+        "questionText": "あの 林の 中を <u>歩いて</u> 行きませんか。",
+        "options": [
+          "あぬいて",
+          "あるいて",
+          "あのいて",
+          "あろいて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "あるいて"
+        }
+      },
+      {
+        "id": "q74",
+        "questionText": "<ruby>私<rt>わたし</rt></ruby>は 3人 _______ の まん<ruby>中<rt>なか</rt></ruby>です。",
+        "options": [
+          "こども",
+          "ふうふ",
+          "きょうだい",
+          "かぞく"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "きょうだい"
+        }
+      },
+      {
+        "id": "q75",
+        "questionText": "<ruby>私<rt>わたし</rt></ruby>は <ruby>歌<rt>うた</rt></ruby>が _______ 、カラオケに <ruby>行<rt>い</rt></ruby>きたくない。",
+        "options": [
+          "へたから",
+          "へたなから",
+          "へただから",
+          "へたでから"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "へただから"
+        }
+      }
+    ]
+  }
+]

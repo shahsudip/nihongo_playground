@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_269",
+    "type": "shin_mon_page",
+    "page_file": "269.jpg",
+    "page_number": 269,
+    "questions": [
+      {
+        "id": "q457",
+        "questionText": "うちの 犬は 毎朝 新聞を <u>取って</u> 来て くれます。",
+        "options": [
+          "もって",
+          "とって",
+          "つって",
+          "そって"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "とって"
+        }
+      },
+      {
+        "id": "q458",
+        "questionText": "<ruby>今日<rt>きょう</rt></ruby>は、<ruby>一日<rt>いちにち</rt></ruby> _______ 、<ruby>雨<rt>あめ</rt></ruby>が ふって いました。",
+        "options": [
+          "かん",
+          "ちゅう",
+          "くらい",
+          "じゅう"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "じゅう"
+        }
+      },
+      {
+        "id": "q459",
+        "questionText": "<ruby>毎朝<rt>まいあさ</rt></ruby>、コップ １<ruby>杯<rt>いっぱい</rt></ruby>の <ruby>水<rt>みず</rt></ruby>を _______ 。",
+        "options": [
+          "<ruby>飲<rt>の</rt></ruby>む ように して います",
+          "<ruby>飲<rt>の</rt></ruby>むだろうと <ruby>思<rt>おも</rt></ruby>います",
+          "<ruby>飲<rt>の</rt></ruby>もうと して います",
+          "<ruby>飲<rt>の</rt></ruby>む ことを <ruby>思<rt>おも</rt></ruby>います"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "<ruby>飲<rt>の</rt></ruby>む ように して います"
+        }
+      }
+    ]
+  }
+]

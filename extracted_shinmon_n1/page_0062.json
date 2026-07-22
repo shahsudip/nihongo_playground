@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 6日目",
+    "questions": [
+      {
+        "id": "q76",
+        "questionText": "<u>天皇</u>皇后両陛下は、宮内庁主催の晩餐会に出席された。",
+        "options": [
+          "てんおう",
+          "てんこう",
+          "てんごう",
+          "てんのう"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "てんのう"
+        },
+        "explanation": "天皇 is read as てんのう (tennou)."
+      },
+      {
+        "id": "q77",
+        "questionText": "___悪そうな少年たちが、コンビニの前でタバコを吸っている。",
+        "options": [
+          "いかに",
+          "いかにも",
+          "どうにか",
+          "どうやら"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "いかにも"
+        },
+        "explanation": "'いかにも〜そうだ' is a set phrase meaning 'truly looks like / as if'."
+      },
+      {
+        "id": "q78",
+        "questionText": "あの人がうそをついていた___、いまだに信じられません。",
+        "options": [
+          "さえ",
+          "こそ",
+          "とは",
+          "もの"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "とは"
+        },
+        "explanation": "'〜とは' expresses shock or disbelief about a surprising fact ('To think that...')."
+      }
+    ]
+  }
+]

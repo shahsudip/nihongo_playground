@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_265",
+    "type": "shin_mon_page",
+    "page_file": "265.jpg",
+    "page_number": 265,
+    "questions": [
+      {
+        "id": "q451",
+        "questionText": "それと これは 同じ 場所の <u>写真</u>ですね。",
+        "options": [
+          "しゃじん",
+          "しゃしん",
+          "ちゃしん",
+          "じゃしん"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "しゃしん"
+        }
+      },
+      {
+        "id": "q452",
+        "questionText": "<ruby>動物<rt>どうぶつ</rt></ruby>を _______ いけません。",
+        "options": [
+          "こわしては",
+          "しんでは",
+          "なくしては",
+          "いじめては"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "いじめては"
+        }
+      },
+      {
+        "id": "q453",
+        "questionText": "<ruby>田中<rt>たなか</rt></ruby>さんが そんな ことを _______ 。",
+        "options": [
+          "<ruby>言<rt>い</rt></ruby>う はずが ない",
+          "<ruby>言<rt>い</rt></ruby>う つもりは ない",
+          "<ruby>言<rt>い</rt></ruby>う らしくない",
+          "<ruby>言<rt>い</rt></ruby>う ようでは ない"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "<ruby>言<rt>い</rt></ruby>う はずが ない"
+        }
+      }
+    ]
+  }
+]

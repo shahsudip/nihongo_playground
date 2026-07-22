@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_57",
+    "type": "shin_mon_page",
+    "page_file": "57.jpg",
+    "page_number": 57,
+    "questions": [
+      {
+        "id": "q70",
+        "questionText": "兄は <u>きょねん</u>、大学に 入りました。",
+        "options": [
+          "前年",
+          "今年",
+          "来年",
+          "去年"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "去年"
+        }
+      },
+      {
+        "id": "q71",
+        "questionText": "<ruby>熱<rt>ねつ</rt></ruby>が _______ ましたか。",
+        "options": [
+          "さがり",
+          "さげ",
+          "おり",
+          "おち"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "さがり"
+        }
+      },
+      {
+        "id": "q72",
+        "questionText": "<ruby>明日<rt>あした</rt></ruby>の <ruby>夕方<rt>ゆうがた</rt></ruby>ごろから、<ruby>雨<rt>あめ</rt></ruby>が <ruby>強<rt>つよ</rt></ruby>く _______ でしょう。",
+        "options": [
+          "ふる",
+          "ふり",
+          "ふった",
+          "ふって いる"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ふる"
+        }
+      }
+    ]
+  }
+]

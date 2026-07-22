@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 1日目",
+    "questions": [
+      {
+        "id": "129",
+        "questionText": "節分には、「鬼は外、福は内」と言って<u>豆</u>をまく。",
+        "options": [
+          "うめ",
+          "まめ",
+          "もも",
+          "いも"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "まめ"
+        },
+        "explanation": "豆 is read as まめ (beans)."
+      },
+      {
+        "id": "130",
+        "questionText": "この照明は、どんなインテリアにも＿＿＿＿＿デザインです。",
+        "options": [
+          "混同する",
+          "共存する",
+          "合併する",
+          "調和する"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "調和する"
+        },
+        "explanation": "調和する (ちょうわする) means 'to harmonize/match', which fits the context of matching any interior design."
+      },
+      {
+        "id": "131",
+        "questionText": "隣に座った人たちの会話を、＿＿＿＿＿ともなく聞いていた。",
+        "options": [
+          "聞かない",
+          "聞き",
+          "聞いた",
+          "聞く"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "聞く"
+        },
+        "explanation": "The grammar pattern is dictionary form verb + ともなく, meaning 'doing something absently or without really intending to'. Thus 聞くともなく is correct."
+      }
+    ]
+  }
+]

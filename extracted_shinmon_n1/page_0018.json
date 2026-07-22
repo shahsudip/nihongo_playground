@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 1日目",
+    "questions": [
+      {
+        "id": "q10",
+        "questionText": "機内で嫌がらせなどの<u>迷惑行為</u>を行った男に、罰金が科せられた。",
+        "options": [
+          "めいわくこうぎ",
+          "めいわくこうい",
+          "まいわくこうい",
+          "まいわくこうぎ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "めいわくこうい"
+        },
+        "explanation": "迷惑行為 is read as めいわくこうい (meiwakukoui), meaning 'nuisance act'."
+      },
+      {
+        "id": "q11",
+        "questionText": "英語で電話がかかってきて、驚いて、＿＿＿＿＿切ってしまった。",
+        "options": [
+          "やけに",
+          "かりに",
+          "もろに",
+          "とっさに"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "とっさに"
+        },
+        "explanation": "とっさに means 'instinctively' or 'on the spur of the moment', which fits the context of being startled."
+      },
+      {
+        "id": "q12",
+        "questionText": "あ、卵がない。悪いけど、散歩＿＿＿＿＿買ってきてくれない？",
+        "options": [
+          "がてら",
+          "わざわざ",
+          "ついで",
+          "かたがた"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "がてら"
+        },
+        "explanation": "The pattern Nがてら means 'while doing N (taking the opportunity to do something else)'. 散歩がてら means 'while taking a walk'."
+      }
+    ]
+  }
+]

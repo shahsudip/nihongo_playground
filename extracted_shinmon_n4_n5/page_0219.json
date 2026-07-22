@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_219",
+    "type": "shin_mon_page",
+    "page_file": "219.jpg",
+    "page_number": 219,
+    "questions": [
+      {
+        "id": "q382",
+        "questionText": "この 研究室は <u>広い</u>。",
+        "options": [
+          "ふとい",
+          "せまい",
+          "ひろい",
+          "くらい"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ひろい"
+        }
+      },
+      {
+        "id": "q383",
+        "questionText": "あのう、 _______ 、<ruby>中村<rt>なかむら</rt></ruby>さんでは ありませんか。",
+        "options": [
+          "ごめんなさいが",
+          "しつれいですが",
+          "すみませんが",
+          "わるいですが"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "しつれいですが"
+        }
+      },
+      {
+        "id": "q384",
+        "questionText": "A 「すみません、しょうゆを _______ 。」\nB 「はい、どうぞ。」",
+        "options": [
+          "<ruby>取<rt>と</rt></ruby>りなさい",
+          "<ruby>取<rt>と</rt></ruby>りませんか",
+          "<ruby>取<rt>と</rt></ruby>りましょうか",
+          "<ruby>取<rt>と</rt></ruby>って くださいませんか"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "<ruby>取<rt>と</rt></ruby>って くださいませんか"
+        }
+      }
+    ]
+  }
+]

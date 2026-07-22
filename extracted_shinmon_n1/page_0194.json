@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 3 Day 5",
+    "questions": [
+      {
+        "id": "q320",
+        "questionText": "毎日トレーニングに励む彼の<u>鍛えられた</u>筋肉は、彫刻のように美しい。",
+        "options": [
+          "ととのえられた",
+          "きたえられた",
+          "たたえられた",
+          "こさえられた"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "きたえられた"
+        },
+        "explanation": "「鍛える」 is read as 「きたえる」, meaning to forge or train. The sentence talks about his trained muscles."
+      },
+      {
+        "id": "q321",
+        "questionText": "過去の失敗を＿＿＿ばかりいないで、もっと前向きに考えよう。",
+        "options": [
+          "打ち切って",
+          "追い出して",
+          "振り返って",
+          "投げ出して"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "振り返って"
+        },
+        "explanation": "「振り返る」 (ふりかえる) means to look back on or reflect on the past. The sentence advises not to just keep looking back at past failures."
+      },
+      {
+        "id": "q322",
+        "questionText": "有名人が母校で授業をするとあって、その教室は生徒や先生で＿＿＿なった。",
+        "options": [
+          "あふれるように",
+          "あふれんばかりに",
+          "あふれっぱなしに",
+          "あふれてやまなく"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "あふれんばかりに"
+        },
+        "explanation": "「〜んばかりに」 is a grammar point meaning 'as if to ~' or 'on the verge of ~ing'. 「あふれんばかりに」 means it became so crowded it was about to overflow."
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 4日目",
+    "questions": [
+      {
+        "id": "174",
+        "questionText": "機内への<u>刃物</u>の持ち込みは禁止されています。",
+        "options": [
+          "はもの",
+          "ゆみや",
+          "かたな",
+          "つるぎ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "はもの"
+        },
+        "explanation": "刃物 (hamono) means edged tool or cutlery."
+      },
+      {
+        "id": "175",
+        "questionText": "最近、パソコンに熱中して、家事が＿＿＿＿＿なっている。",
+        "options": [
+          "なめらかに",
+          "なごやかに",
+          "おろそかに",
+          "きよらかに"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "おろそかに"
+        },
+        "explanation": "おろそかに (orosokani) means 'neglectfully' or 'carelessly'. Meaning: Recently, I have been absorbed in my PC, and housework is being neglected."
+      },
+      {
+        "id": "176",
+        "questionText": "彼女の並外れた美しい容姿は、すれ違う人々を振り返らせずには＿＿＿＿＿。",
+        "options": [
+          "おかない",
+          "おきない",
+          "おけない",
+          "おこない"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "おかない"
+        },
+        "explanation": "The grammar pattern ～ずにはおかない means 'will definitely make (someone) do' or 'cannot help but cause (something)'."
+      }
+    ]
+  }
+]

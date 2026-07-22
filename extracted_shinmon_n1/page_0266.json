@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 6日目",
+    "questions": [
+      {
+        "id": "q451",
+        "questionText": "文化財に指定されている<u>邸宅</u>で将棋の世紀の対戦が行われた。",
+        "options": [
+          "したく",
+          "ていたく",
+          "せんたく",
+          "ぜいたく"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ていたく"
+        },
+        "explanation": "邸宅 is read as ていたく (mansion)."
+      },
+      {
+        "id": "q452",
+        "questionText": "私は以前、医療関係の仕事に＿＿＿＿＿いました。",
+        "options": [
+          "従って",
+          "費やして",
+          "営んで",
+          "携わって"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "携わって"
+        },
+        "explanation": "仕事に携わる means 'to be involved in work'."
+      },
+      {
+        "id": "q453",
+        "questionText": "名前や顔、声などを出さないことを＿＿＿＿＿男性はテレビのインタビューに答えてくれた。",
+        "options": [
+          "よそに",
+          "前提に",
+          "ものともせず",
+          "余儀なくされて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "前提に"
+        },
+        "explanation": "～を前提に means 'on the condition that / assuming that'."
+      }
+    ]
+  }
+]

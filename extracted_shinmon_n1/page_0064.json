@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 1 Day 6",
+    "questions": [
+      {
+        "id": "q79",
+        "questionText": "この幼稚園ではウサギを<u>飼って</u>います。",
+        "options": [
+          "つって",
+          "かって",
+          "やしなって",
+          "そだって"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "かって"
+        },
+        "explanation": "The kanji 飼う (to keep a pet/animal) is read as かう. Therefore, 飼って is read as かって."
+      },
+      {
+        "id": "q80",
+        "questionText": "孤独に＿＿＿＿には、どうすればいいでしょうか。",
+        "options": [
+          "勝る",
+          "耐える",
+          "攻める",
+          "紛れる"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "耐える"
+        },
+        "explanation": "孤独に耐える means 'to endure loneliness'. The other verbs do not collocate with 孤独に in this context (勝る = to excel, 攻める = to attack, 紛れる = to be diverted)."
+      },
+      {
+        "id": "q81",
+        "questionText": "旅行＿＿＿＿、こんな大きいバッグを持って通勤なんてできません。",
+        "options": [
+          "からある",
+          "といえども",
+          "にしては",
+          "じゃあるまいし"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "じゃあるまいし"
+        },
+        "explanation": "〜じゃあるまいし means 'it's not as if ~' or 'it's not like ~'. 'It's not like it's a trip, so I can't commute with such a big bag.' fits perfectly."
+      }
+    ]
+  }
+]

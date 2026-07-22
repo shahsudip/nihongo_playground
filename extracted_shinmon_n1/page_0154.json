@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 1日目",
+    "questions": [
+      {
+        "id": "260",
+        "questionText": "真珠等の宝石や<u>貴重品</u>の発送には、特殊な封筒又は箱が必要です。",
+        "options": [
+          "きじゅうひん",
+          "きじょうひん",
+          "きちょうひん",
+          "きしょうひん"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "きちょうひん"
+        },
+        "explanation": "貴重品 (kichouhin) means 'valuables'."
+      },
+      {
+        "id": "261",
+        "questionText": "田中さんは、日系ブラジル人の母として＿＿＿＿＿。",
+        "options": [
+          "従われている",
+          "養われている",
+          "負われている",
+          "慕われている"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "慕われている"
+        },
+        "explanation": "慕われている (shitawarete iru) means 'is adored' or 'is admired'. She is admired as a mother figure."
+      },
+      {
+        "id": "262",
+        "questionText": "A「あ、これ内緒にしてって言われてたんだった。＿＿＿＿＿ことにして。」\nB「わかった。」",
+        "options": [
+          "聞く",
+          "聞かない",
+          "聞いた",
+          "聞かなかった"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "聞かなかった"
+        },
+        "explanation": "〜なかったことにする means 'to pretend that ~ didn't happen'. 聞かなかったことにして means 'Pretend you didn't hear it'."
+      }
+    ]
+  }
+]

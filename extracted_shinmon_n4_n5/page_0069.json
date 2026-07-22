@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_69",
+    "type": "shin_mon_page",
+    "page_file": "69.jpg",
+    "page_number": 69,
+    "questions": [
+      {
+        "id": "q88",
+        "questionText": "弟は レストランで <u>働いて</u> います。",
+        "options": [
+          "はらたいて",
+          "はたらいて",
+          "はだらいて",
+          "はらだいて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "はたらいて"
+        }
+      },
+      {
+        "id": "q89",
+        "questionText": "ここまで <ruby>遠<rt>とお</rt></ruby>かったでしょう。_______ いらっしゃいました。",
+        "options": [
+          "こんなに",
+          "いつも",
+          "とても",
+          "よく"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "よく"
+        }
+      },
+      {
+        "id": "q90",
+        "questionText": "<ruby>病気<rt>びょうき</rt></ruby>は なおりました。もう _______ <ruby>食<rt>た</rt></ruby>べられます。",
+        "options": [
+          "なんでも",
+          "なにも",
+          "ぜんぜん",
+          "あんまり"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "なんでも"
+        }
+      }
+    ]
+  }
+]

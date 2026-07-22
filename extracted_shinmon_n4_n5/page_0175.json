@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_175",
+    "type": "shin_mon_page",
+    "page_file": "175.jpg",
+    "page_number": 175,
+    "questions": [
+      {
+        "id": "q293",
+        "questionText": "お昼ごろから 天気が <u>悪く</u>なった。",
+        "options": [
+          "くらく",
+          "さむく",
+          "わるく",
+          "おもく"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "わるく"
+        }
+      },
+      {
+        "id": "q294",
+        "questionText": "すみません、<ruby>土<rt>ど</rt></ruby><ruby>曜<rt>よう</rt></ruby><ruby>日<rt>び</rt></ruby>は _______ が <ruby>悪<rt>わる</rt></ruby>いんですよ。",
+        "options": [
+          "しごと",
+          "つごう",
+          "ばあい",
+          "やくそく"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "つごう"
+        }
+      },
+      {
+        "id": "q295",
+        "questionText": "あんまり <ruby>時<rt>じ</rt></ruby><ruby>間<rt>かん</rt></ruby>が ないから、_______ いいでしょう。",
+        "options": [
+          "<ruby>走<rt>はし</rt></ruby>りほう が",
+          "<ruby>走<rt>はし</rt></ruby>った ほうが",
+          "<ruby>走<rt>はし</rt></ruby>って ほうが",
+          "<ruby>走<rt>はし</rt></ruby>らないのが"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "<ruby>走<rt>はし</rt></ruby>った ほうが"
+        }
+      }
+    ]
+  }
+]

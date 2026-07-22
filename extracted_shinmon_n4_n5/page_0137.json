@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_137",
+    "type": "shin_mon_page",
+    "page_file": "137.jpg",
+    "page_number": 137,
+    "questions": [
+      {
+        "id": "q213",
+        "questionText": "楽しい 時間は <u>短い</u>です。",
+        "options": [
+          "みちかい",
+          "みじかい",
+          "まちかい",
+          "まじかい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "みじかい"
+        }
+      },
+      {
+        "id": "q214",
+        "questionText": "さあ、おさらを <ruby>出<rt>だ</rt></ruby>して。おはしも ちゃんと _______ ね。",
+        "options": [
+          "ならべて",
+          "ならんで",
+          "ならっ て",
+          "ならして"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ならべて"
+        }
+      },
+      {
+        "id": "q215",
+        "questionText": "まだ テレビを <ruby>見<rt>み</rt></ruby>て いるの？ <ruby>早<rt>はや</rt></ruby>く _______ 。",
+        "options": [
+          "<ruby>寝<rt>ね</rt></ruby>ろう",
+          "<ruby>寝<rt>ね</rt></ruby>てやろう",
+          "<ruby>寝<rt>ね</rt></ruby>なさい",
+          "<ruby>寝<rt>ね</rt></ruby>てなさい"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "<ruby>寝<rt>ね</rt></ruby>なさい"
+        }
+      }
+    ]
+  }
+]

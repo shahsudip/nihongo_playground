@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 3日目",
+    "questions": [
+      {
+        "id": "165",
+        "questionText": "この雑誌には、人事・<u>組織</u>・企業の情報が掲載されている。",
+        "options": [
+          "そうしき",
+          "そしき",
+          "くみおり",
+          "くみあい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "そしき"
+        },
+        "explanation": "The kanji 組織 (organization) is read as そしき."
+      },
+      {
+        "id": "166",
+        "questionText": "大企業に就職できれば一生安心というのは、___過去の話である。",
+        "options": [
+          "あえて",
+          "やたら",
+          "しいて",
+          "もはや"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "もはや"
+        },
+        "explanation": "もはや means 'already' or 'no longer', fitting the context 'it is already a thing of the past'."
+      },
+      {
+        "id": "167",
+        "questionText": "歌舞伎は、日本___の伝統芸能です。",
+        "options": [
+          "たりとも",
+          "ごとき",
+          "ならでは",
+          "ながら"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ならでは"
+        },
+        "explanation": "〜ならでは means 'unique to ~' or 'special to ~'."
+      }
+    ]
+  }
+]

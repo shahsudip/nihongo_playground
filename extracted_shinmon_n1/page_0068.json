@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 6日目",
+    "questions": [
+      {
+        "id": "q85",
+        "questionText": "「聴解が苦手だったので、<u>翻訳</u>の仕事を選びました。」とA氏は語った。",
+        "options": [
+          "ほんやく",
+          "はんやく",
+          "ふんやく",
+          "へんやく"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ほんやく"
+        },
+        "explanation": "翻訳 (translation) is correctly read as ほんやく."
+      },
+      {
+        "id": "q86",
+        "questionText": "息子は社会人になってから自覚ができて、＿＿＿＿＿も変わった。",
+        "options": [
+          "体つき",
+          "手ぶり",
+          "顔つき",
+          "身ぶり"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "顔つき"
+        },
+        "explanation": "顔つき (facial expression/look). His expression changed as he became more aware of his responsibilities as a working adult."
+      },
+      {
+        "id": "q87",
+        "questionText": "知らぬ＿＿＿＿＿、失礼いたしました。",
+        "options": [
+          "こととて",
+          "ながら",
+          "かぎりに",
+          "ものの"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "こととて"
+        },
+        "explanation": "〜こととて means 'because of ~' or 'given that ~', often used in apologies. 知らぬこととて means 'because I did not know'."
+      }
+    ]
+  }
+]

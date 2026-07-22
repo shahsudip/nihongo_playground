@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_147",
+    "type": "shin_mon_page",
+    "page_file": "147.jpg",
+    "page_number": 147,
+    "questions": [
+      {
+        "id": "q251",
+        "questionText": "日本の <u>映画</u>が 好きです。",
+        "options": [
+          "えが",
+          "かいが",
+          "えいが",
+          "ようが"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "えいが"
+        }
+      },
+      {
+        "id": "q252",
+        "questionText": "A 「もう 1ぱい いかがですか。」\nB 「もう _______ です。」",
+        "options": [
+          "おおい",
+          "けっこう",
+          "だいぶ",
+          "ずいぶん"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "けっこう"
+        }
+      },
+      {
+        "id": "q253",
+        "questionText": "<ruby>休<rt>やす</rt></ruby>みの <ruby>日<rt>ひ</rt></ruby>は、<ruby>音<rt>おん</rt></ruby><ruby>楽<rt>がく</rt></ruby>を a_______ <ruby>本<rt>ほん</rt></ruby>を b_______ して います。",
+        "options": [
+          "a. <ruby>聞<rt>き</rt></ruby>くし b. <ruby>読<rt>よ</rt></ruby>むし",
+          "a. <ruby>聞<rt>き</rt></ruby>くや b. <ruby>読<rt>よ</rt></ruby>むや",
+          "a. <ruby>聞<rt>き</rt></ruby>いて b. <ruby>読<rt>よ</rt></ruby>んで",
+          "a. <ruby>聞<rt>き</rt></ruby>いたり b. <ruby>読<rt>よ</rt></ruby>んだり"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "a. <ruby>聞<rt>き</rt></ruby>いたり b. <ruby>読<rt>よ</rt></ruby>んだり"
+        }
+      }
+    ]
+  }
+]

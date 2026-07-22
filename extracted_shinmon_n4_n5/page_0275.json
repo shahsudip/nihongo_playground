@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_275",
+    "type": "shin_mon_page",
+    "page_file": "275.jpg",
+    "page_number": 275,
+    "questions": [
+      {
+        "id": "q466",
+        "questionText": "<u>風邪</u>で 学校を 休む。",
+        "options": [
+          "ふぜ",
+          "かぜ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "かぜ"
+        }
+      },
+      {
+        "id": "q467",
+        "questionText": "<u>たいふう</u>で 天気が 悪いです。",
+        "options": [
+          "大風",
+          "台風"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "台風"
+        }
+      },
+      {
+        "id": "q468",
+        "questionText": "田中さんが <ruby>亡<rt>な</rt></ruby>くなったと 聞いて、すごく _______ 。",
+        "options": [
+          "びっくりした",
+          "しんじない"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "びっくりした"
+        }
+      },
+      {
+        "id": "q469",
+        "questionText": "_______ お<ruby>湯<rt>ゆ</rt></ruby>を わかして ください。",
+        "options": [
+          "はじめに",
+          "はじめて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "はじめに"
+        }
+      },
+      {
+        "id": "q470",
+        "questionText": "_______ 赤ちゃんですね。",
+        "options": [
+          "元気そうな",
+          "元気だ そうな"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "元気そうな"
+        }
+      },
+      {
+        "id": "q471",
+        "questionText": "ここは、くつを _______ 上がって ください。",
+        "options": [
+          "はいて まま",
+          "はいた まま"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "はいた まま"
+        }
+      }
+    ]
+  }
+]

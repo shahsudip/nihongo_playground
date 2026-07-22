@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 3 Day 5",
+    "questions": [
+      {
+        "id": "q317",
+        "questionText": "日常の<u>煩わしさ</u>から離れ、海を臨むすてきな雰囲気のホテルで余裕のある時間を過ごした。",
+        "options": [
+          "まぎらわしさ",
+          "わずらわしさ",
+          "うるわしさ",
+          "いとわしさ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "わずらわしさ"
+        },
+        "explanation": "「煩わしさ (わずらわしさ)」 means troublesome, bothersome, or annoyance."
+      },
+      {
+        "id": "q318",
+        "questionText": "___、面接で落ちた。うまく返答できなかったのだから、仕方がない。",
+        "options": [
+          "案の定",
+          "依然",
+          "断然",
+          "突如"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "案の定"
+        },
+        "explanation": "「案の定 (あんのじょう)」 means 'as expected' or 'sure enough', which fits the context of failing the interview as a natural consequence."
+      },
+      {
+        "id": "q319",
+        "questionText": "不真面目な学生は、ノートを取らないばかりか教科書___持っていない。",
+        "options": [
+          "のみ",
+          "すら",
+          "たり",
+          "でも"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "すら"
+        },
+        "explanation": "「〜すら」 means 'even', used to give an extreme example (doesn't *even* have a textbook)."
+      }
+    ]
+  }
+]

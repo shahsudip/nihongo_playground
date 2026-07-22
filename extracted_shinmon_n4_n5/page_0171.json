@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_171",
+    "type": "shin_mon_page",
+    "page_file": "171.jpg",
+    "page_number": 171,
+    "questions": [
+      {
+        "id": "q287",
+        "questionText": "手紙の 書き方を <u>教えて</u> ください。",
+        "options": [
+          "かんがえて",
+          "おしえて",
+          "こたえて",
+          "きこえて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "おしえて"
+        }
+      },
+      {
+        "id": "q288",
+        "questionText": "<ruby>私<rt>わたし</rt></ruby>は いつも パンに ジャムを _______ <ruby>食<rt>た</rt></ruby>べます。",
+        "options": [
+          "ぬって",
+          "うつして",
+          "はこんで",
+          "つつんで"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ぬって"
+        }
+      },
+      {
+        "id": "q289",
+        "questionText": "<ruby>明<rt>あ</rt></ruby><ruby>日<rt>した</rt></ruby>は <ruby>都<rt>つ</rt></ruby><ruby>合<rt>ごう</rt></ruby>が <ruby>悪<rt>わる</rt></ruby>いんです。あさって _______ いいですか。",
+        "options": [
+          "など",
+          "から",
+          "まで",
+          "でも"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "でも"
+        }
+      }
+    ]
+  }
+]

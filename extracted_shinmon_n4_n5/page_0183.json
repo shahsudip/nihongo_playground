@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_183",
+    "type": "shin_mon_page",
+    "page_file": "183.jpg",
+    "page_number": 183,
+    "questions": [
+      {
+        "id": "q305",
+        "questionText": "駅の 北口の きっ茶店で <u>まって</u> います。",
+        "options": [
+          "持って",
+          "侍して",
+          "待って",
+          "特って"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "待って"
+        }
+      },
+      {
+        "id": "q306",
+        "questionText": "おゆが _______ よ。",
+        "options": [
+          "わいた",
+          "あびた",
+          "いれた",
+          "もどった"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "わいた"
+        }
+      },
+      {
+        "id": "q307",
+        "questionText": "<ruby>今<rt>きょう</rt></ruby><ruby>日<rt></rt></ruby> <ruby>習<rt>なら</rt></ruby>った ことを、<ruby>家<rt>いえ</rt></ruby>で よく <ruby>復<rt>ふく</rt></ruby><ruby>習<rt>しゅう</rt></ruby>して _______ ください。",
+        "options": [
+          "もらって",
+          "ちゃって",
+          "おいて",
+          "あげて"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "おいて"
+        }
+      }
+    ]
+  }
+]

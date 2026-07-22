@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 2日目",
+    "questions": [
+      {
+        "id": "q400",
+        "questionText": "大晦日に、百八つの<u>鐘</u>を聞きながら、年を越します。",
+        "options": [
+          "すず",
+          "かね",
+          "こと",
+          "つづみ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "かね"
+        },
+        "explanation": "The kanji 鐘 (bell) is read as かね."
+      },
+      {
+        "id": "q401",
+        "questionText": "昨夜は目が___、夜中の3時まで眠れなかった。",
+        "options": [
+          "かすんで",
+          "さえて",
+          "かさんで",
+          "むせて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "さえて"
+        },
+        "explanation": "目が冴える (めがさえる) is an idiom meaning 'to be wide awake'."
+      },
+      {
+        "id": "q402",
+        "questionText": "A「もうこの店には二度と来ないよ。」\nB「そうだね、高いのにまずくて、おまけに店員が無愛想___。」",
+        "options": [
+          "始末だ",
+          "ときている",
+          "に難くない",
+          "でなくてなんだろう"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ときている"
+        },
+        "explanation": "〜ときている is a grammar point used to emphasize a state or condition, often adding a final point to a list of characteristics, meaning 'and on top of that'."
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 4日目",
+    "questions": [
+      {
+        "id": "296",
+        "questionText": "洪水で堤防が崩れた場合、どこへ<u>避難</u>しますか。",
+        "options": [
+          "ひなん",
+          "そうなん",
+          "へきなん",
+          "へなん"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ひなん"
+        },
+        "explanation": "避難 (ひなん) means 'evacuation' or 'taking refuge'."
+      },
+      {
+        "id": "297",
+        "questionText": "若さを＿＿＿＿ために、毎日１キロ泳いでいる。",
+        "options": [
+          "備える",
+          "携える",
+          "接する",
+          "保つ"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "保つ"
+        },
+        "explanation": "保つ (たもつ) means 'to preserve' or 'to maintain'. Here it means maintaining one's youth."
+      },
+      {
+        "id": "298",
+        "questionText": "忘れる＿＿＿＿、すべてを記憶することはできないにちがいない。",
+        "options": [
+          "が早いか",
+          "ことなしに",
+          "からする",
+          "までもなく"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "までもなく"
+        },
+        "explanation": "～までもなく means 'there is no need to ~' or 'it goes without saying that ~'."
+      }
+    ]
+  }
+]

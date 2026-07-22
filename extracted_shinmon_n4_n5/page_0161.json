@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_161",
+    "type": "shin_mon_page",
+    "page_file": "161.jpg",
+    "page_number": 161,
+    "questions": [
+      {
+        "id": "q272",
+        "questionText": "昼間は 暑いですが、<u>夕方</u>は すずしいです。",
+        "options": [
+          "ゆうがた",
+          "よがた",
+          "ようがた",
+          "ゆかた"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ゆうがた"
+        }
+      },
+      {
+        "id": "q273",
+        "questionText": "<ruby>知<rt>し</rt></ruby>らない ことばは <ruby>自<rt>じ</rt></ruby><ruby>分<rt>ぶん</rt></ruby>で <ruby>辞<rt>じ</rt></ruby><ruby>書<rt>しょ</rt></ruby>を _______。",
+        "options": [
+          "おぼえましょう",
+          "みつけましょう",
+          "しらべましょう",
+          "ひきましょう"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "ひきましょう"
+        }
+      },
+      {
+        "id": "q274",
+        "questionText": "<ruby>私<rt>わたし</rt></ruby> a_______ <ruby>歯<rt>は</rt></ruby> b_______ いたいです。",
+        "options": [
+          "a. は b. が",
+          "a. が b. が",
+          "a. の b. は",
+          "a. は b. の"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "a. は b. が"
+        }
+      }
+    ]
+  }
+]

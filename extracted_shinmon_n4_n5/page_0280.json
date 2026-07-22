@@ -1,0 +1,70 @@
+[
+  {
+    "id": "page_280",
+    "type": "shin_mon_page",
+    "page_file": "280.jpg",
+    "page_number": 280,
+    "questions": [
+      {
+        "id": "q496",
+        "questionText": "あの 男の 人は <u>ちから</u>持ちだ。",
+        "options": [
+          "力",
+          "刀"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "力"
+        }
+      },
+      {
+        "id": "q497",
+        "questionText": "部長の <u>代わり</u>に 来ました。",
+        "options": [
+          "かわり",
+          "こわり"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "かわり"
+        }
+      },
+      {
+        "id": "q498",
+        "questionText": "_______ 田中さんから 電話が ありました。",
+        "options": [
+          "しばらく",
+          "ひさしぶりに"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ひさしぶりに"
+        }
+      },
+      {
+        "id": "q499",
+        "questionText": "お金を 貸して あげるけど、_______ <ruby>返<rt>かえ</rt></ruby>してね。",
+        "options": [
+          "かならず",
+          "やっぱり"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "かならず"
+        }
+      },
+      {
+        "id": "q500",
+        "questionText": "田中先生、この 本を _______ か。",
+        "options": [
+          "お読み しました",
+          "お読み に なりました"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "お読み に なりました"
+        }
+      }
+    ]
+  }
+]

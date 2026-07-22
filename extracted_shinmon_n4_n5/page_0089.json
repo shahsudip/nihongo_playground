@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_89",
+    "type": "shin_mon_page",
+    "page_file": "89.jpg",
+    "page_number": 89,
+    "questions": [
+      {
+        "id": "q141",
+        "questionText": "A 「この ワインは いくらですか。」\nB 「<u>千六百円</u>です。」",
+        "options": [
+          "せんろくひゃくえん",
+          "せんろっぴゃくえん",
+          "せんろくびゃくえん",
+          "せんろぴゃくえん"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "せんろっぴゃくえん"
+        }
+      },
+      {
+        "id": "q142",
+        "questionText": "まちがえたら、けしゴムで きれいに _______ ください。",
+        "options": [
+          "きえて",
+          "けして",
+          "きって",
+          "けって"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "けして"
+        }
+      },
+      {
+        "id": "q143",
+        "questionText": "A 「あなたの カップは どっちですか。」\nB 「_______ です。」",
+        "options": [
+          "<ruby>大<rt>おお</rt></ruby>きい の ほう",
+          "もっと <ruby>大<rt>おお</rt></ruby>きい",
+          "<ruby>大<rt>おお</rt></ruby>きい ほう",
+          "ずっと <ruby>大<rt>おお</rt></ruby>きい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "<ruby>大<rt>おお</rt></ruby>きい の ほう"
+        }
+      }
+    ]
+  }
+]

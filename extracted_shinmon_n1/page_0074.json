@@ -1,0 +1,86 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 7日目",
+    "questions": [
+      {
+        "id": "q103",
+        "questionText": "線路に<u>沿って</u>行けば、隣町に着きます。",
+        "options": [
+          "そって",
+          "よって"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "そって"
+        },
+        "explanation": "「沿って」is read as 「そって」 (to go along)."
+      },
+      {
+        "id": "q104",
+        "questionText": "悪口や中傷などの書き込みは<u>削除</u>します。",
+        "options": [
+          "くじょ",
+          "さくじょ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "さくじょ"
+        },
+        "explanation": "「削除」is read as 「さくじょ」 (deletion)."
+      },
+      {
+        "id": "q105",
+        "questionText": "審判のおかしな判定のせいで、試合が___なった。",
+        "options": [
+          "台無しに",
+          "無茶に"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "台無しに"
+        },
+        "explanation": "「台無しになる」means 'to be ruined or spoiled'."
+      },
+      {
+        "id": "q106",
+        "questionText": "その政治家の___ような発言で、国会は大きく混乱した。",
+        "options": [
+          "耳を疑う",
+          "耳を傾ける"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "耳を疑う"
+        },
+        "explanation": "「耳を疑う」means 'to doubt one's ears' or 'hard to believe'."
+      },
+      {
+        "id": "q107",
+        "questionText": "注意した___、聞くような人ではない。",
+        "options": [
+          "ところで",
+          "ときたら"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ところで"
+        },
+        "explanation": "「〜たところで」means 'even if (one does something)'. Even if you warn them, they won't listen."
+      },
+      {
+        "id": "q108",
+        "questionText": "自分がこういう仕事をするなんて、想像___しなかった。",
+        "options": [
+          "ごとく",
+          "だに"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "だに"
+        },
+        "explanation": "「〜だにしない」means 'not even (imagine, etc.)'. I never even imagined."
+      }
+    ]
+  }
+]

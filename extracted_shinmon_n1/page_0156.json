@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 1日目",
+    "questions": [
+      {
+        "id": "q263",
+        "questionText": "循環器系の<u>疾患</u>には、高血圧や不整脈などがある。",
+        "options": [
+          "やかん",
+          "けっかん",
+          "しかん",
+          "しっかん"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "しっかん"
+        },
+        "explanation": "疾患 is read as しっかん, meaning disease or illness."
+      },
+      {
+        "id": "q264",
+        "questionText": "田中さんは、一人っ子で両親に＿＿＿＿＿されて育ったからわがままだ。",
+        "options": [
+          "はなはだ",
+          "ちやほや",
+          "かわるがわる",
+          "まちまち"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ちやほや"
+        },
+        "explanation": "ちやほやする means to pamper, dote on, or fuss over someone. It fits perfectly in the context of an only child being pampered by parents."
+      },
+      {
+        "id": "q265",
+        "questionText": "バスに乗ってから小銭を探して人を＿＿＿＿＿、乗る前から用意しておきましょう。",
+        "options": [
+          "待たせることなしに",
+          "待たせることのないように",
+          "待たせんがために",
+          "待たせるべからず"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "待たせることのないように"
+        },
+        "explanation": "〜ないように (so as not to) is used here to indicate preparation to avoid keeping people waiting (待たせることのないように)."
+      }
+    ]
+  }
+]

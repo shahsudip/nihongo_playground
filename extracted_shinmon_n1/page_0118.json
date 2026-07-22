@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 4日目",
+    "questions": [
+      {
+        "id": "q183",
+        "questionText": "<u>苗</u>が育ち、稲が穂を実らせ、収穫の時期を迎えた。",
+        "options": [
+          "いね",
+          "くき",
+          "なえ",
+          "たば"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "なえ"
+        },
+        "explanation": "The kanji 苗 (seedling) is read as なえ."
+      },
+      {
+        "id": "q184",
+        "questionText": "両党は、その件について＿＿＿＿合意した。",
+        "options": [
+          "大方に",
+          "大柄に",
+          "大幅で",
+          "大筋で"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "大筋で"
+        },
+        "explanation": "大筋で (おおすじで) means 'in broad outline' or 'roughly'."
+      },
+      {
+        "id": "q185",
+        "questionText": "スポーツを＿＿＿＿までも、歩くなどして体を動かしたほうがいい。",
+        "options": [
+          "する",
+          "して",
+          "しない",
+          "した"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "しない"
+        },
+        "explanation": "The grammar pattern '〜ないまでも' means 'even if not 〜, at least...'."
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_229",
+    "type": "shin_mon_page",
+    "page_file": "229.jpg",
+    "page_number": 229,
+    "questions": [
+      {
+        "id": "q397",
+        "questionText": "<u>用事</u>が 終わるまで 待って ください。",
+        "options": [
+          "ぎょうじ",
+          "そうじ",
+          "ゆうじ",
+          "ようじ"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "ようじ"
+        }
+      },
+      {
+        "id": "q398",
+        "questionText": "<ruby>家<rt>いえ</rt></ruby>の すぐ そばに コンビニが _______ 、とても <ruby>便利<rt>べんり</rt></ruby>に なった。",
+        "options": [
+          "みつけて",
+          "やって",
+          "できて",
+          "たてて"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "できて"
+        }
+      },
+      {
+        "id": "q399",
+        "questionText": "すみません、<ruby>書<rt>か</rt></ruby>くものを <ruby>貸<rt>か</rt></ruby>して _______ 。",
+        "options": [
+          "もらえませんか",
+          "くださりませんか",
+          "もらいませんか",
+          "いただきませんか"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "もらえませんか"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 3日目",
+    "questions": [
+      {
+        "id": "q293",
+        "questionText": "この法廷の<u>傍聴</u>券を求める人々が裁判所の前に列を作った。",
+        "options": [
+          "ほうちょう",
+          "ぼうちょう",
+          "もうちょう",
+          "こうちょう"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ぼうちょう"
+        },
+        "explanation": "傍聴 is read as ぼうちょう (bouchou), meaning to attend a hearing or observe (a trial, meeting, etc.)."
+      },
+      {
+        "id": "q294",
+        "questionText": "この手作りのクッキーは、＿＿＿＿味がしておいしい。",
+        "options": [
+          "質素な",
+          "素朴な",
+          "簡素な",
+          "素直な"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "素朴な"
+        },
+        "explanation": "素朴な (そぼくな) means simple or rustic. 素朴な味 is a common phrase for a simple, homey flavor, which fits 'handmade cookies'."
+      },
+      {
+        "id": "q295",
+        "questionText": "ただ今＿＿＿＿、受付は終了させていただきます。",
+        "options": [
+          "をおきまして",
+          "をとりまして",
+          "をもちまして",
+          "をかりまして"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "をもちまして"
+        },
+        "explanation": "～をもちまして is a formal expression used to indicate the end or conclusion of a period or event (e.g., 'as of right now')."
+      }
+    ]
+  }
+]

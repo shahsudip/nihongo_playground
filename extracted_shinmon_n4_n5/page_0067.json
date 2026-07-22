@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_67",
+    "type": "shin_mon_page",
+    "page_file": "67.jpg",
+    "page_number": 67,
+    "questions": [
+      {
+        "id": "q85",
+        "questionText": "図書館で 本を <u>かります</u>。",
+        "options": [
+          "借ります",
+          "貸ります",
+          "質ります",
+          "便ります"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "借ります"
+        }
+      },
+      {
+        "id": "q86",
+        "questionText": "この たなは とても _______ <ruby>使<rt>つか</rt></ruby>いやすいです。",
+        "options": [
+          "だいじょうぶで",
+          "たいへんで",
+          "じょうぶで",
+          "よわくて"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "じょうぶで"
+        }
+      },
+      {
+        "id": "q87",
+        "questionText": "レストランで _______ <ruby>話<rt>はな</rt></ruby>しましょう。",
+        "options": [
+          "<ruby>食<rt>た</rt></ruby>べなくて",
+          "<ruby>食<rt>た</rt></ruby>べないで",
+          "<ruby>食<rt>た</rt></ruby>べるから",
+          "<ruby>食<rt>た</rt></ruby>べながら"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "<ruby>食<rt>た</rt></ruby>べながら"
+        }
+      }
+    ]
+  }
+]

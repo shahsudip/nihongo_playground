@@ -1,0 +1,86 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 7日目 もんだい",
+    "questions": [
+      {
+        "id": "216",
+        "questionText": "体調が悪かったので、近所の医者に<u>診て</u>もらった。",
+        "options": [
+          "しんて",
+          "みて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "みて"
+        },
+        "explanation": "The kanji 診 in 診る is read as みる (miru), meaning to examine (medically)."
+      },
+      {
+        "id": "217",
+        "questionText": "父は長年、教育の仕事に<u>携わって</u>きた。",
+        "options": [
+          "さしさわって",
+          "たずさわって"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "たずさわって"
+        },
+        "explanation": "The kanji 携 in 携わる is read as たずさわる (tazusawaru), meaning to engage in or participate in."
+      },
+      {
+        "id": "218",
+        "questionText": "最近、全身が___、何もする気になれない。",
+        "options": [
+          "だるくて",
+          "にぶくて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "だるくて"
+        },
+        "explanation": "だるい (darui) means sluggish or heavy, which fits the context of not feeling like doing anything. にぶい means dull or slow."
+      },
+      {
+        "id": "219",
+        "questionText": "お酒を飲むことは、___体に悪いとは言えない。適量ならむしろ体によいとも言われる。",
+        "options": [
+          "一挙に",
+          "一概に"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "一概に"
+        },
+        "explanation": "一概に～ない (ichigaini~nai) means 'cannot be unconditionally said'. 一挙に means 'at one stroke'."
+      },
+      {
+        "id": "220",
+        "questionText": "その歌はいつもラジオから流れていたので、覚える___覚えてしまった。",
+        "options": [
+          "ともなしに",
+          "ともなると"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ともなしに"
+        },
+        "explanation": "～ともなしに (tomonashini) means 'without intending to'. 覚えるともなしに means 'without intending to memorize'."
+      },
+      {
+        "id": "221",
+        "questionText": "日本___のお土産なら、箸や風呂敷や浴衣でしょう。",
+        "options": [
+          "ならでは",
+          "のごとき"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ならでは"
+        },
+        "explanation": "ならでは (naradewa) means 'distinctive of' or 'uniquely'. 日本ならでは means 'uniquely Japanese'."
+      }
+    ]
+  }
+]

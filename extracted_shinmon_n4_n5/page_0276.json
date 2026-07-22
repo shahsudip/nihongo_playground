@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_276",
+    "type": "shin_mon_page",
+    "page_file": "276.jpg",
+    "page_number": 276,
+    "questions": [
+      {
+        "id": "q472",
+        "questionText": "この 道は 今、<u>通れません</u>。",
+        "options": [
+          "かよれません",
+          "とおれません"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "とおれません"
+        }
+      },
+      {
+        "id": "q473",
+        "questionText": "ガスの <u>ひ</u>を 止めて ください。",
+        "options": [
+          "水",
+          "火"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "火"
+        }
+      },
+      {
+        "id": "q474",
+        "questionText": "_______ どこ の 家にも テレビが あります。",
+        "options": [
+          "まだ",
+          "たいてい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "たいてい"
+        }
+      },
+      {
+        "id": "q475",
+        "questionText": "テレビの ニュースを 見て _______ 、そのことを 知った。",
+        "options": [
+          "はじめて",
+          "はじまって"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "はじめて"
+        }
+      },
+      {
+        "id": "q476",
+        "questionText": "漢字は 書かない _______ おぼえられません。",
+        "options": [
+          "と",
+          "ば"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "と"
+        }
+      },
+      {
+        "id": "q477",
+        "questionText": "書ける ところ _______ 書いて ください。",
+        "options": [
+          "だけ",
+          "ぐらい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "だけ"
+        }
+      }
+    ]
+  }
+]

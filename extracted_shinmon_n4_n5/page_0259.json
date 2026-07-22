@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_259",
+    "type": "shin_mon_page",
+    "page_file": "259.jpg",
+    "page_number": 259,
+    "questions": [
+      {
+        "id": "q442",
+        "questionText": "<u>台所</u>で 料理を します。",
+        "options": [
+          "たいところ",
+          "たいしょ",
+          "だいじょ",
+          "だいどころ"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "だいどころ"
+        }
+      },
+      {
+        "id": "q443",
+        "questionText": "<ruby>急<rt>いそ</rt></ruby>がないと <ruby>会議<rt>かいぎ</rt></ruby>に _______ よ。",
+        "options": [
+          "おそくなります",
+          "おくれます",
+          "まてません",
+          "まにあいます"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "おくれます"
+        }
+      },
+      {
+        "id": "q444",
+        "questionText": "<ruby>来年<rt>らいねん</rt></ruby>、<ruby>父<rt>ちち</rt></ruby>と <ruby>母<rt>はは</rt></ruby>が <ruby>日本<rt>にほん</rt></ruby>に _______ 。",
+        "options": [
+          "<ruby>来<rt>く</rt></ruby>る ようだろう",
+          "<ruby>来<rt>く</rt></ruby>る かもしれない",
+          "<ruby>来<rt>く</rt></ruby>る みたいだろう",
+          "<ruby>来<rt>く</rt></ruby>る そうかもしれない"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "<ruby>来<rt>く</rt></ruby>る かもしれない"
+        }
+      }
+    ]
+  }
+]

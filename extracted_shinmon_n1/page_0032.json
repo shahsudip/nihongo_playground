@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 3日目",
+    "questions": [
+      {
+        "id": "q31",
+        "questionText": "<u>後輩</u>は鉄道に興味があるので、誕生日に列車の模型をあげようと思う。",
+        "options": [
+          "ごはい",
+          "こはい",
+          "こうはい",
+          "ごうはい"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "こうはい"
+        },
+        "explanation": "The kanji 後輩 is read as こうはい (kouhai), meaning 'junior' or 'younger colleague'."
+      },
+      {
+        "id": "q32",
+        "questionText": "どんなに優秀な医者でも、生きる＿＿＿＿を失った患者を治すことは難しい。",
+        "options": [
+          "意図",
+          "意欲",
+          "意向",
+          "意地"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "意欲"
+        },
+        "explanation": "生きる意欲 (ikiru iyoku) means 'the will/desire to live'. 意図 = intention, 意向 = inclination, 意地 = stubbornness/pride."
+      },
+      {
+        "id": "q33",
+        "questionText": "子供たちは食卓に＿＿＿＿が早いか、もう食べ始めていた。",
+        "options": [
+          "つく",
+          "ついた",
+          "つかない",
+          "つこう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "つく"
+        },
+        "explanation": "The grammar pattern ～が早いか (as soon as) typically takes the dictionary form (V-ru) or occasionally V-ta. Here, つく is the correct form."
+      }
+    ]
+  }
+]

@@ -1,0 +1,136 @@
+[
+  {
+    "type": "header",
+    "title": "第21回"
+  },
+  {
+    "type": "mondai_1",
+    "id": "q1",
+    "questionText": "明日、知事から何か重大な発表がある（　　　）。",
+    "options": [
+      "限りだ",
+      "とされる",
+      "に至った",
+      "とのことだ"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q2",
+    "questionText": "いくら走った（　　　）、もう1時半の電車には間に合わないだろう。",
+    "options": [
+      "ゆえに",
+      "わりに",
+      "ところで",
+      "ものだから"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q3",
+    "questionText": "この化粧品に入っている成分は、肌の老化を防ぐと（　　　）。",
+    "options": [
+      "している",
+      "させている",
+      "されている",
+      "させられている"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q4",
+    "questionText": "バイクで転倒して、背中（　　　）足（　　　）、全身傷だらけになった。",
+    "options": [
+      "なり／なり",
+      "につけ／につけ",
+      "というか／というか",
+      "といわず／といわず"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q5",
+    "questionText": "姉（　　　）、僕には男性としての魅力がまったくないらしい。",
+    "options": [
+      "からして",
+      "のことだから",
+      "いかんによらず",
+      "から言わせれば"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q6",
+    "questionText": "科学の力で新たな生命を作り出すなど、考える（　　　）恐ろしい。",
+    "options": [
+      "さえ",
+      "だに",
+      "のみ",
+      "ばかりに"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q7",
+    "questionText": "「申し訳ない」と（　　　）問題じゃないだろう。ちゃんと弁償してくれ。",
+    "options": [
+      "謝ってすむ",
+      "謝ってくれる",
+      "謝ったところで",
+      "謝ったといえども"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q1",
+    "questionText": "いくら探してもないところを ＿＿＿ ＿＿＿ ★ ＿＿＿ に違いない。",
+    "options": [
+      "置いてきた",
+      "かばんに入れた",
+      "みると",
+      "つもりで"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q2",
+    "questionText": "戦争は新たに ＿＿＿ ＿＿＿ ★ ＿＿＿ 解決にもならない。",
+    "options": [
+      "こそすれ",
+      "何の",
+      "憎しみを",
+      "生み"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q3",
+    "questionText": "あの有名な教授 ＿＿＿ ＿＿＿ ★ ＿＿＿ 心強いことだ。",
+    "options": [
+      "とは",
+      "までも",
+      "が",
+      "協力してくれる"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  }
+]

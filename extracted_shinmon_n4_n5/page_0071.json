@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_71",
+    "type": "shin_mon_page",
+    "page_file": "71.jpg",
+    "page_number": 71,
+    "questions": [
+      {
+        "id": "q91",
+        "questionText": "デパートの <u>屋上</u>に 上がる。",
+        "options": [
+          "やじょう",
+          "おくじょう"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "おくじょう"
+        }
+      },
+      {
+        "id": "q92",
+        "questionText": "ラジオを <u>ききます</u>。",
+        "options": [
+          "聞きます",
+          "開きます"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "聞きます"
+        }
+      },
+      {
+        "id": "q93",
+        "questionText": "ちょっと _______ です。エアコンの <ruby>温度<rt>おんど</rt></ruby>を 上げて ください。",
+        "options": [
+          "あたたかい",
+          "さむい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "さむい"
+        }
+      },
+      {
+        "id": "q94",
+        "questionText": "A 「それ、<ruby>買<rt>か</rt></ruby>ったの？」\nB 「ううん、<ruby>図書館<rt>としょかん</rt></ruby>で _______ 。」",
+        "options": [
+          "かりたの",
+          "かしたの"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "かりたの"
+        }
+      },
+      {
+        "id": "q95",
+        "questionText": "今日は、あまり _______ です。",
+        "options": [
+          "<ruby>暑<rt>あつ</rt></ruby>くなかった",
+          "<ruby>暑<rt>あつ</rt></ruby>いじゃなかった"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "<ruby>暑<rt>あつ</rt></ruby>くなかった"
+        }
+      },
+      {
+        "id": "q96",
+        "questionText": "インターネット _______ <ruby>調<rt>しら</rt></ruby>べる。",
+        "options": [
+          "が",
+          "で"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "で"
+        }
+      }
+    ]
+  }
+]

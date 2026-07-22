@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_141",
+    "type": "shin_mon_page",
+    "page_file": "141.jpg",
+    "page_number": 141,
+    "questions": [
+      {
+        "id": "q228",
+        "questionText": "パーティーは <u>楽しかった</u>です。",
+        "options": [
+          "たのしかった",
+          "うれしかった"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "たのしかった"
+        }
+      },
+      {
+        "id": "q229",
+        "questionText": "あの 店員さんは <u>しんせつ</u>です。",
+        "options": [
+          "親切",
+          "新切"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "親切"
+        }
+      },
+      {
+        "id": "q230",
+        "questionText": "ここに _______ すわりましょう。",
+        "options": [
+          "ならんで",
+          "やすんで"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ならんで"
+        }
+      },
+      {
+        "id": "q231",
+        "questionText": "へやに 花を _______ 。",
+        "options": [
+          "うえましょう",
+          "かざりましょう"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "かざりましょう"
+        }
+      },
+      {
+        "id": "q232",
+        "questionText": "今日も <ruby>寒<rt>さむ</rt></ruby>かったけれど、<ruby>昨日<rt>きのう</rt></ruby> _______ じゃ なかったね。",
+        "options": [
+          "より",
+          "ほど"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ほど"
+        }
+      },
+      {
+        "id": "q233",
+        "questionText": "_______ 時間が あるから、ゆっくりしよう。",
+        "options": [
+          "まだ",
+          "もう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "まだ"
+        }
+      }
+    ]
+  }
+]

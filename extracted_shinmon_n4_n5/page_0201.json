@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_201",
+    "type": "shin_mon_page",
+    "page_file": "201.jpg",
+    "page_number": 201,
+    "questions": [
+      {
+        "id": "q332",
+        "questionText": "私の 国は コーヒーの <u>生産</u>が 世界で いちばん です。",
+        "options": [
+          "せいさん",
+          "せいぞう",
+          "せんさん",
+          "しょうさん"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "せいさん"
+        }
+      },
+      {
+        "id": "q333",
+        "questionText": "<ruby>友<rt>とも</rt></ruby>だちと <ruby>駅<rt>えき</rt></ruby>で _______ から <ruby>一<rt>ひと</rt></ruby><ruby>人<rt>り</rt></ruby>で デパートに <ruby>行<rt>い</rt></ruby>きました。",
+        "options": [
+          "なくなって",
+          "わかれて",
+          "むかえて",
+          "まちあわせて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "わかれて"
+        }
+      },
+      {
+        "id": "q334",
+        "questionText": "<ruby>京<rt>きょう</rt></ruby><ruby>都<rt>と</rt></ruby>へは まだ <ruby>一<rt>いち</rt></ruby><ruby>度<rt>ど</rt></ruby>も _______。",
+        "options": [
+          "<ruby>行<rt>い</rt></ruby>った ことが ありません",
+          "<ruby>行<rt>い</rt></ruby>く ことが ありませんでした",
+          "<ruby>行<rt>い</rt></ruby>って しまってません",
+          "<ruby>行<rt>い</rt></ruby>きませんでした"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "<ruby>行<rt>い</rt></ruby>った ことが ありません"
+        }
+      }
+    ]
+  }
+]

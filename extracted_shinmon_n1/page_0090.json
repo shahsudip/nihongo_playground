@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 2日目",
+    "questions": [
+      {
+        "id": "q141",
+        "questionText": "今朝は、慣れない満員電車で扉に挟まれたり、足を<u>踏まれたり</u>、大変でした。",
+        "options": [
+          "はばまれたり",
+          "たたまれたり",
+          "ふまれたり",
+          "くやまれたり"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ふまれたり"
+        },
+        "explanation": "「踏む」 (ふむ) means to step on. Its passive form is 「踏まれる」 (ふまれる)."
+      },
+      {
+        "id": "q142",
+        "questionText": "気に入っていただけて、＿＿＿＿＿＿です。",
+        "options": [
+          "何より",
+          "何なり",
+          "何だか",
+          "何とぞ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "何より"
+        },
+        "explanation": "「何よりです」 (なによりです) is a common phrase meaning \"I'm glad more than anything else\" or \"That's wonderful.\""
+      },
+      {
+        "id": "q143",
+        "questionText": "あれだけ優秀な彼＿＿＿＿＿＿落ちるのだから、いかにその試験の難しいことか。",
+        "options": [
+          "なりに",
+          "とあって",
+          "にして",
+          "のこととて"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "にして"
+        },
+        "explanation": "「〜にして」 is used here to mean \"even (someone like him)\", emphasizing that despite his excellence, he failed."
+      }
+    ]
+  }
+]

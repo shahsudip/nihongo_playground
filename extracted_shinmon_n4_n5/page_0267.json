@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_267",
+    "type": "shin_mon_page",
+    "page_file": "267.jpg",
+    "page_number": 267,
+    "questions": [
+      {
+        "id": "q454",
+        "questionText": "この 和室の 雨戸は 古くて 重いので <u>しめる</u>のに 力が いります。",
+        "options": [
+          "開める",
+          "引める",
+          "押める",
+          "閉める"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "閉める"
+        }
+      },
+      {
+        "id": "q455",
+        "questionText": "_______ <ruby>寒<rt>さむ</rt></ruby>くなって きましたね。",
+        "options": [
+          "だいたい",
+          "ずいぶん",
+          "たいてい",
+          "きっと"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ずいぶん"
+        }
+      },
+      {
+        "id": "q456",
+        "questionText": "<ruby>毎日<rt>まいにち</rt></ruby> 子どもに、<ruby>車<rt>くるま</rt></ruby>に _______ <ruby>言<rt>い</rt></ruby>って います。",
+        "options": [
+          "<ruby>気<rt>き</rt></ruby>を つけるかと",
+          "<ruby>気<rt>き</rt></ruby>を つける ように",
+          "<ruby>気<rt>き</rt></ruby>を つけようと して",
+          "<ruby>気<rt>き</rt></ruby>を つける ようだと"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "<ruby>気<rt>き</rt></ruby>を つける ように"
+        }
+      }
+    ]
+  }
+]

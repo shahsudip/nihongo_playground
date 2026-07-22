@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_151",
+    "type": "shin_mon_page",
+    "page_file": "151.jpg",
+    "page_number": 151,
+    "questions": [
+      {
+        "id": "q257",
+        "questionText": "この <u>時計</u>は 5分 進んで います。",
+        "options": [
+          "とけえ",
+          "とけい",
+          "とかい",
+          "ときい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "とけい"
+        }
+      },
+      {
+        "id": "q258",
+        "questionText": "はい、<ruby>試<rt>し</rt></ruby><ruby>験<rt>けん</rt></ruby>を <ruby>始<rt>はじ</rt></ruby>めます。よく _______ から <ruby>答<rt>こた</rt></ruby>えを <ruby>書<rt>か</rt></ruby>いて ください。",
+        "options": [
+          "おもって",
+          "しらせて",
+          "ならって",
+          "かんがえて"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "かんがえて"
+        }
+      },
+      {
+        "id": "q259",
+        "questionText": "<ruby>英<rt>えい</rt></ruby><ruby>語<rt>ご</rt></ruby>を <ruby>習<rt>なら</rt></ruby>い _______、もう 10<ruby>年<rt>ねん</rt></ruby>に なります。",
+        "options": [
+          "<ruby>始<rt>はじ</rt></ruby>まってから",
+          "<ruby>始<rt>はじ</rt></ruby>まりから",
+          "<ruby>始<rt>はじ</rt></ruby>めてから",
+          "<ruby>始<rt>はじ</rt></ruby>めるから"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "<ruby>始<rt>はじ</rt></ruby>めてから"
+        }
+      }
+    ]
+  }
+]

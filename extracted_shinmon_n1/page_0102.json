@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 3日目",
+    "questions": [
+      {
+        "id": "q159",
+        "questionText": "<u>弊社</u>の今期の売上高及び営業利益は過去最高となりました。",
+        "options": [
+          "わがしゃ",
+          "とうしゃ",
+          "へいしゃ",
+          "おんしゃ"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "へいしゃ"
+        },
+        "explanation": "弊社 (へいしゃ) is a humble expression for one's own company."
+      },
+      {
+        "id": "q160",
+        "questionText": "＿＿＿＿態度は、誤解を招くからやめましょう。",
+        "options": [
+          "あやふやな",
+          "きちょうめんな",
+          "かすかな",
+          "すみやかな"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "あやふやな"
+        },
+        "explanation": "あやふやな means vague or ambiguous. 'Let's stop taking a vague attitude because it causes misunderstandings.'"
+      },
+      {
+        "id": "q161",
+        "questionText": "こちらにも非が＿＿＿＿でもなかったが、どう考えても先方に責任があった。",
+        "options": [
+          "あるもの",
+          "あること",
+          "ないもの",
+          "ないこと"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ないもの"
+        },
+        "explanation": "「〜ないものでもない」 is a grammar pattern meaning 'it is not entirely impossible that / it is not that there isn't'. Thus, 'ないものでもなかった' means 'it was not that there was no fault on our side either'."
+      }
+    ]
+  }
+]

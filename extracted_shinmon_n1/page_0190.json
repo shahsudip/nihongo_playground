@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 3 Day 5",
+    "questions": [
+      {
+        "id": "314",
+        "questionText": "今、はやっている風邪の<u>特徴的</u>な症状は下痢と吐き気です。",
+        "options": [
+          "とくびてき",
+          "とくいてき",
+          "とくしょうてき",
+          "とくちょうてき"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "とくちょうてき"
+        },
+        "explanation": "特徴的 is read as とくちょうてき (tokuchouteki), meaning 'characteristic'."
+      },
+      {
+        "id": "315",
+        "questionText": "空港でスパイと間違われ、3日間も＿＿＿＿＿。",
+        "options": [
+          "束縛された",
+          "規制された",
+          "制限された",
+          "拘束された"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "拘束された"
+        },
+        "explanation": "拘束 (こうそく) means detention or physical restraint, appropriate for being held at an airport. 束縛 refers to psychological or emotional restraint."
+      },
+      {
+        "id": "316",
+        "questionText": "あのレストランの料理は味もいいが、それ＿＿＿＿＿見た目が食欲をそそる。",
+        "options": [
+          "にはんして",
+          "をぬきにして",
+          "をこめて",
+          "にもまして"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "にもまして"
+        },
+        "explanation": "にもまして means 'even more than', fitting the context: the taste is good, but even more than that, the appearance stimulates the appetite."
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 1日目",
+    "questions": [
+      {
+        "id": "q138",
+        "questionText": "優先席はお年寄りや体の不自由な人に譲り、携帯電話の電源を切る。それ以外の場所でも通話は<u>遠慮</u>すること。",
+        "options": [
+          "えんじょ",
+          "はいりょ",
+          "こうじょ",
+          "えんりょ"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "えんりょ"
+        },
+        "explanation": "遠慮 (えんりょ) means refraining or holding back."
+      },
+      {
+        "id": "q139",
+        "questionText": "この商品は非常に＿＿＿＿＿ので、取り扱いに注意してください。",
+        "options": [
+          "しぶい",
+          "もろい",
+          "だるい",
+          "にぶい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "もろい"
+        },
+        "explanation": "もろい (fragile) fits the context of being careful when handling the product."
+      },
+      {
+        "id": "q140",
+        "questionText": "国中からバッシングされるに＿＿＿＿＿、彼は事の重大さを認識していない。",
+        "options": [
+          "わたっても",
+          "あたっても",
+          "したっても",
+          "いたっても"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "いたっても"
+        },
+        "explanation": "に至っても (ni itatte mo) means 'even though it has come to the point where' or 'even in the extreme case of'."
+      }
+    ]
+  }
+]

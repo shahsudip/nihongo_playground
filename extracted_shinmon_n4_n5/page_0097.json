@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_97",
+    "type": "shin_mon_page",
+    "page_file": "97.jpg",
+    "page_number": 97,
+    "questions": [
+      {
+        "id": "q153",
+        "questionText": "<u>海</u>や 川で 魚を とります。",
+        "options": [
+          "うめ",
+          "かわ",
+          "うみ",
+          "やま"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "うみ"
+        }
+      },
+      {
+        "id": "q154",
+        "questionText": "<ruby>先週<rt>せんしゅう</rt></ruby>は、<ruby>一週間<rt>いっしゅうかん</rt></ruby>の うち _______ も <ruby>休<rt>やす</rt></ruby>んで しまった。",
+        "options": [
+          "よっか",
+          "ようか",
+          "ここのか",
+          "ついたち"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "よっか"
+        }
+      },
+      {
+        "id": "q155",
+        "questionText": "<ruby>宿題<rt>しゅくだい</rt></ruby>は _______ <ruby>終<rt>お</rt></ruby>わりましたか。",
+        "options": [
+          "まだ",
+          "もう",
+          "あとで",
+          "もうすぐ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "もう"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_223",
+    "type": "shin_mon_page",
+    "page_file": "223.jpg",
+    "page_number": 223,
+    "questions": [
+      {
+        "id": "q388",
+        "questionText": "引っこしの にもつは この <u>住所</u>に 送って ください。",
+        "options": [
+          "じゅしょ",
+          "ちゅうしょ",
+          "じゅうしょ",
+          "しゅうしょ"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "じゅうしょ"
+        }
+      },
+      {
+        "id": "q389",
+        "questionText": "<ruby>田中<rt>たなか</rt></ruby>さんは _______ <ruby>帰<rt>かえ</rt></ruby>りましたよ。",
+        "options": [
+          "じゃあ",
+          "もうすぐ",
+          "これから",
+          "さっき"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "さっき"
+        }
+      },
+      {
+        "id": "q390",
+        "questionText": "<ruby>先生<rt>せんせい</rt></ruby>は <ruby>何時<rt>なんじ</rt></ruby>ごろ _______ 。",
+        "options": [
+          "お<ruby>帰<rt>かえ</rt></ruby>りに なりますか",
+          "お<ruby>帰<rt>かえ</rt></ruby>り しますか",
+          "お<ruby>帰<rt>かえ</rt></ruby>り いたしますか",
+          "お<ruby>帰<rt>かえ</rt></ruby>られますか"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "お<ruby>帰<rt>かえ</rt></ruby>りに なりますか"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 3日目",
+    "questions": [
+      {
+        "id": "168",
+        "questionText": "「<u>喪中</u>のため新年の挨拶を失礼する」というのは、年内に身内が亡くなったので年賀状を出さないということだ。",
+        "options": [
+          "むちゅう",
+          "ぼちゅう",
+          "きちゅう",
+          "もちゅう"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "もちゅう"
+        },
+        "explanation": "喪中 is read as もちゅう, meaning 'period of mourning'."
+      },
+      {
+        "id": "169",
+        "questionText": "彼は私の心の＿＿＿＿＿になってくれる、大切な友人です。",
+        "options": [
+          "催し",
+          "支え",
+          "効き目",
+          "償い"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "支え"
+        },
+        "explanation": "支え (ささえ) means 'support'. '心の支え' means 'emotional support'."
+      },
+      {
+        "id": "170",
+        "questionText": "誰でも若いときには年寄りの気持ちがわからないものだ。怒るには＿＿＿＿＿。",
+        "options": [
+          "いたらない",
+          "あたらない",
+          "きたらない",
+          "かたらない"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "あたらない"
+        },
+        "explanation": "～にはあたらない is a grammar pattern meaning 'it is not worth ~ing' or 'there is no need to ~'."
+      }
+    ]
+  }
+]

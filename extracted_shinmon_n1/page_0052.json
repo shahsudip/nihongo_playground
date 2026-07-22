@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 5日目",
+    "questions": [
+      {
+        "id": "61",
+        "questionText": "<u>趣味</u>は俳句や詩を作ること、それに漫画も描いたりします。",
+        "options": [
+          "きょうみ",
+          "しゅみ",
+          "きゅうみ",
+          "ちゅみ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "しゅみ"
+        },
+        "explanation": "趣味 (hobby) is read as しゅみ."
+      },
+      {
+        "id": "62",
+        "questionText": "___をこぼす相手を間違えると、誤解を招くので気をつけよう。",
+        "options": [
+          "本音",
+          "お世辞",
+          "ぐち",
+          "建前"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ぐち"
+        },
+        "explanation": "「ぐちをこぼす」 (guchi o kobosu) is a common phrase meaning 'to complain'."
+      },
+      {
+        "id": "63",
+        "questionText": "これは皮膚科の医師が薦めている___、肌に優しい石けんだ。",
+        "options": [
+          "とあって",
+          "あっての",
+          "にあたって",
+          "とあれば"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "とあって"
+        },
+        "explanation": "「〜とあって」 means 'because of ~' or 'given that ~', indicating a reason for a special situation."
+      }
+    ]
+  }
+]

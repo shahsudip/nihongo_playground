@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 1日目",
+    "questions": [
+      {
+        "id": "382",
+        "questionText": "ようやく暑さも<u>峠</u>を越したようだ。",
+        "options": [
+          "みさき",
+          "おか",
+          "とうげ",
+          "たき"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "とうげ"
+        },
+        "explanation": "峠 (とうげ) means 'peak' or 'mountain pass'. The phrase '峠を越す' means 'to pass the peak' (in this case, the worst of the heat is over)."
+      },
+      {
+        "id": "383",
+        "questionText": "ワイシャツを肌に＿＿＿＿着たせいか、体がかゆくてたまらない。",
+        "options": [
+          "ぴたりと",
+          "かさねて",
+          "やけに",
+          "じかに"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "じかに"
+        },
+        "explanation": "'肌にじかに着る' means 'to wear directly against the skin'. 'じかに' (直に) means 'directly'."
+      },
+      {
+        "id": "384",
+        "questionText": "娘は作文を＿＿＿＿消し、なかなかできあがらないようだ。",
+        "options": [
+          "書いては",
+          "書いたり",
+          "書くし",
+          "書きがてら"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "書いては"
+        },
+        "explanation": "'〜ては〜' is a grammar structure that indicates a repeated action. '書いては消し' means 'writing and then erasing repeatedly'."
+      }
+    ]
+  }
+]

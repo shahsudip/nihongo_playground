@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 1日目",
+    "questions": [
+      {
+        "id": "388",
+        "questionText": "山で熊に<u>襲われそう</u>になった。",
+        "options": [
+          "おそわれそう",
+          "うばわれそう",
+          "さそわれそう",
+          "かばわれそう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "おそわれそう"
+        },
+        "explanation": "The kanji 襲 is read as おそ (in 襲う). 襲われそう means 'looked like (we) were going to be attacked'."
+      },
+      {
+        "id": "389",
+        "questionText": "赤ちゃんの笑顔を見ていると、心が___。",
+        "options": [
+          "励む",
+          "和む",
+          "優れる",
+          "打たれる"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "和む"
+        },
+        "explanation": "心が和む (こころがなごむ) is an idiom meaning 'to feel relaxed/calmed' or 'heart is warmed'."
+      },
+      {
+        "id": "390",
+        "questionText": "お客さん___、希望に添えないとは言いにくかった。",
+        "options": [
+          "の手前",
+          "のそばから",
+          "をよそに",
+          "をものともせず"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "の手前"
+        },
+        "explanation": "〜の手前 (てまえ) expresses that because one is in front of someone (a customer, etc.) or out of consideration for one's reputation, one feels compelled to act a certain way."
+      }
+    ]
+  }
+]

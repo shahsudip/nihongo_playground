@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 2日目",
+    "questions": [
+      {
+        "id": "q266",
+        "questionText": "太郎は小さい頃、侍に<u>憧れて</u>テレビの時代劇に夢中でした。",
+        "options": [
+          "したわれて",
+          "あこがれて",
+          "さそわれて",
+          "さらわれて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "あこがれて"
+        },
+        "explanation": "憧れて (あこがれて) means to yearn for, admire, or be attracted to."
+      },
+      {
+        "id": "q267",
+        "questionText": "ようやく景気回復の___が見えてきた。",
+        "options": [
+          "ひなた",
+          "すきま",
+          "ほとり",
+          "きざし"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "きざし"
+        },
+        "explanation": "きざし (兆し) means signs or indications. Here it means 'signs of economic recovery'."
+      },
+      {
+        "id": "q268",
+        "questionText": "いつか会おうと言っていたのに、旧友とは___でした。",
+        "options": [
+          "会ったが最後",
+          "会わんばかり",
+          "会わずじまい",
+          "会うまでのこと"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "会わずじまい"
+        },
+        "explanation": "〜ずじまい (〜ずに終わってしまった) means to end up not doing something despite having the intention to."
+      }
+    ]
+  }
+]

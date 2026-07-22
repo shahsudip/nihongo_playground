@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 4日目",
+    "questions": [
+      {
+        "id": "171",
+        "questionText": "昆虫図鑑で<u>蛍</u>の生態について調べてみた。",
+        "options": [
+          "とんぼ",
+          "せみ",
+          "かまきり",
+          "ほたる"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "ほたる"
+        },
+        "explanation": "蛍 (hotaru) means firefly. Therefore, the correct reading is 'ほたる'."
+      },
+      {
+        "id": "172",
+        "questionText": "金庫は＿＿＿＿＿よう、奥の部屋に置いてあります。",
+        "options": [
+          "人目につかない",
+          "人気がない",
+          "人目を気にしない",
+          "人気を感じない"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "人目につかない"
+        },
+        "explanation": "「人目につかない」 means 'out of sight' or 'unnoticed'. A safe is placed in an inner room so as not to attract attention."
+      },
+      {
+        "id": "173",
+        "questionText": "誤って友人のカメラを壊してしまった。弁償＿＿＿＿＿すまないだろう。",
+        "options": [
+          "かかわる",
+          "ともなると",
+          "とはいえ",
+          "しないでは"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "しないでは"
+        },
+        "explanation": "「〜ないではすまない」 is a grammar pattern meaning 'must do ~' or 'cannot avoid doing ~'. Here, it means 'I must compensate for it'."
+      }
+    ]
+  }
+]

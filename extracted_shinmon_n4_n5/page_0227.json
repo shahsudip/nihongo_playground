@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_227",
+    "type": "shin_mon_page",
+    "page_file": "227.jpg",
+    "page_number": 227,
+    "questions": [
+      {
+        "id": "q394",
+        "questionText": "けがが <u>かるくて</u>、安心しました。",
+        "options": [
+          "暗くて",
+          "重くて",
+          "低くて",
+          "軽くて"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "軽くて"
+        }
+      },
+      {
+        "id": "q395",
+        "questionText": "<ruby>太<rt>ふと</rt></ruby>りすぎなので、<ruby>甘<rt>あま</rt></ruby>い ものを _______ なりません。",
+        "options": [
+          "やめなければ",
+          "やすまなければ",
+          "とまらなければ",
+          "やせなければ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "やめなければ"
+        }
+      },
+      {
+        "id": "q396",
+        "questionText": "A 「どう _______ 。」\nB 「いや、ちょっと <ruby>頭<rt>あたま</rt></ruby>が いたくて。」",
+        "options": [
+          "いたしますか",
+          "いたしましょうか",
+          "なさいましょうか",
+          "なさいましたか"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "なさいましたか"
+        }
+      }
+    ]
+  }
+]

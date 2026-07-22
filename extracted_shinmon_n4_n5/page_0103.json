@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_103",
+    "type": "shin_mon_page",
+    "page_file": "103.jpg",
+    "page_number": 103,
+    "questions": [
+      {
+        "id": "q162",
+        "questionText": "走ったら、8時の バスに <u>間に合う</u>かもしれない。",
+        "options": [
+          "めにあう",
+          "みにあう",
+          "まにあう",
+          "もにあう"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "まにあう"
+        }
+      },
+      {
+        "id": "q163",
+        "questionText": "<ruby>最近<rt>さいきん</rt></ruby>、タバコを _______ <ruby>人<rt>ひと</rt></ruby>が <ruby>減<rt>へ</rt></ruby>りましたね。",
+        "options": [
+          "くう",
+          "すう",
+          "ふく",
+          "はく"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "すう"
+        }
+      },
+      {
+        "id": "q164",
+        "questionText": "_______ 、ぜんぶ <ruby>食<rt>た</rt></ruby>べました。",
+        "options": [
+          "のこしないで",
+          "のこらないで",
+          "のこさないで",
+          "のこって ないで"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "のこさないで"
+        }
+      }
+    ]
+  }
+]

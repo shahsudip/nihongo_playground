@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_47",
+    "type": "shin_mon_page",
+    "page_file": "47.jpg",
+    "page_number": 47,
+    "questions": [
+      {
+        "id": "q55",
+        "questionText": "五時に 学校から <u>かえりました</u>。",
+        "options": [
+          "借りました",
+          "入りました",
+          "通りました",
+          "帰りました"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "帰りました"
+        }
+      },
+      {
+        "id": "q56",
+        "questionText": "あ、この <ruby>車<rt>くるま</rt></ruby>、ガソリンが ほとんど _______ いないよ。",
+        "options": [
+          "かって",
+          "はいって",
+          "いれて",
+          "なくなって"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "はいって"
+        }
+      },
+      {
+        "id": "q57",
+        "questionText": "A 「まどを _______ 。」\nB 「はい、おねがいします。」",
+        "options": [
+          "<ruby>開<rt>あ</rt></ruby>けましょうか",
+          "<ruby>開<rt>あ</rt></ruby>けても いいですか",
+          "<ruby>開<rt>あ</rt></ruby>けなさい",
+          "<ruby>開<rt>あ</rt></ruby>けて くれませんか"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "<ruby>開<rt>あ</rt></ruby>けましょうか"
+        }
+      }
+    ]
+  }
+]

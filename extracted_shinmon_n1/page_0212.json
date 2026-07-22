@@ -1,0 +1,86 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 7日目",
+    "questions": [
+      {
+        "id": "q365",
+        "questionText": "さっきから<u>怪しい</u>人がうろうろしている。",
+        "options": [
+          "けわしい",
+          "あやしい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "あやしい"
+        },
+        "explanation": "怪しい is read as あやしい, meaning 'suspicious'."
+      },
+      {
+        "id": "q366",
+        "questionText": "恥ずかしくて、<u>穴</u>があったら入りたい気持ちだ。",
+        "options": [
+          "あな",
+          "わな"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "あな"
+        },
+        "explanation": "穴 is read as あな, meaning 'hole'. '穴があったら入りたい' is an idiom meaning 'wishing the ground would swallow one up' out of embarrassment."
+      },
+      {
+        "id": "q367",
+        "questionText": "彼は___言っているだけだろうと思っていたが、本当に事態は深刻だった。",
+        "options": [
+          "大げさに",
+          "はるかに"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "大げさに"
+        },
+        "explanation": "大げさに (oogesa ni) means 'exaggeratedly'. The sentence contrasts his words with the real seriousness of the situation."
+      },
+      {
+        "id": "q368",
+        "questionText": "地震などの災害に___、日頃から生活に必要なものをまとめておきましょう。",
+        "options": [
+          "携えて",
+          "備えて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "備えて"
+        },
+        "explanation": "～に備えて means 'in preparation for ~'. 備える (sonaeru) means to prepare."
+      },
+      {
+        "id": "q369",
+        "questionText": "酒酔い運転をするなんて、警官に___行為だ。",
+        "options": [
+          "あるまじき",
+          "べからざる"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "あるまじき"
+        },
+        "explanation": "～にあるまじき (ni arumajiki) means 'unbecoming of a ~' or 'unacceptable for a ~'."
+      },
+      {
+        "id": "q370",
+        "questionText": "裕福に見えない客に対して、その店員は近寄るなと___ばかりの冷たい態度だった。",
+        "options": [
+          "言おう",
+          "言わん"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "言わん"
+        },
+        "explanation": "～んばかり (n bakari) is a grammar point meaning 'as if to say ~' or 'on the verge of ~ing'."
+      }
+    ]
+  }
+]

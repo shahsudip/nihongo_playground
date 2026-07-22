@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 1日目",
+    "questions": [
+      {
+        "id": "135",
+        "questionText": "今、活躍中の魅力的な女優がうわさの相手について尋ねられ、<u>緊張</u>した様子で答えていた。",
+        "options": [
+          "きんちょう",
+          "しんちょう",
+          "じんちょう",
+          "けんちょう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "きんちょう"
+        },
+        "explanation": "緊張 is read as きんちょう, meaning 'tension' or 'nervousness'."
+      },
+      {
+        "id": "136",
+        "questionText": "今できなくても＿＿＿＿＿構いませんよ。必ずできるようになりますから。",
+        "options": [
+          "一向に",
+          "一挙に",
+          "一心に",
+          "一概に"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "一向に"
+        },
+        "explanation": "一向に (いっこうに) combined with a negative expression means 'not at all'. Here, '一向に構いません' means 'it doesn't matter at all'."
+      },
+      {
+        "id": "137",
+        "questionText": "立地条件＿＿＿＿＿間取り＿＿＿＿＿、最高の物件だ。",
+        "options": [
+          "につけ／につけ",
+          "たり／たり",
+          "といい／といい",
+          "なり／なり"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "といい／といい"
+        },
+        "explanation": "〜といい〜といい is used to bring up two examples to say 'both ... and ...' or 'whether it is ... or ...', to evaluate something."
+      }
+    ]
+  }
+]

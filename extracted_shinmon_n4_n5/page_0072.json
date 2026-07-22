@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_72",
+    "type": "shin_mon_page",
+    "page_file": "72.jpg",
+    "page_number": 72,
+    "questions": [
+      {
+        "id": "q97",
+        "questionText": "<u>大人</u>は 千円、子どもは 五百円です。",
+        "options": [
+          "おとな",
+          "おたな"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "おとな"
+        }
+      },
+      {
+        "id": "q98",
+        "questionText": "<u>ちず</u>を かきましょうか。",
+        "options": [
+          "地理",
+          "地図"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "地図"
+        }
+      },
+      {
+        "id": "q99",
+        "questionText": "しょうゆが _______ なったから、<ruby>買<rt>か</rt></ruby>って きて。",
+        "options": [
+          "すくなく",
+          "ちょっと"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "すくなく"
+        }
+      },
+      {
+        "id": "q100",
+        "questionText": "<ruby>家<rt>いえ</rt></ruby>に <ruby>帰<rt>かえ</rt></ruby>ったら、すぐに パソコンを _______ 。",
+        "options": [
+          "おします",
+          "つけます"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "つけます"
+        }
+      },
+      {
+        "id": "q101",
+        "questionText": "<ruby>今日<rt>きょう</rt></ruby>の <ruby>授業<rt>じゅぎょう</rt></ruby>は _______ でしたか。",
+        "options": [
+          "どう",
+          "どうやって"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "どう"
+        }
+      },
+      {
+        "id": "q102",
+        "questionText": "弟は、今ごろ ゲームを _______ 。",
+        "options": [
+          "やります",
+          "やって いるでしょう"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "やって いるでしょう"
+        }
+      }
+    ]
+  }
+]

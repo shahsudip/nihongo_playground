@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_231",
+    "type": "shin_mon_page",
+    "page_file": "231.jpg",
+    "page_number": 231,
+    "questions": [
+      {
+        "id": "q400",
+        "questionText": "問題の 答えは <u>べつ</u>の 紙に 書きなさい。",
+        "options": [
+          "外",
+          "別",
+          "特",
+          "同"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "別"
+        }
+      },
+      {
+        "id": "q401",
+        "questionText": "これは もう いらないから _______ 。",
+        "options": [
+          "すてます",
+          "なげます",
+          "はらいます",
+          "ひろいます"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "すてます"
+        }
+      },
+      {
+        "id": "q402",
+        "questionText": "<ruby>明日<rt>あした</rt></ruby>は ８<ruby>時<rt>じ</rt></ruby> _______ <ruby>会社<rt>かいしゃ</rt></ruby>に <ruby>行<rt>い</rt></ruby>かなくては いけません。",
+        "options": [
+          "より",
+          "まで",
+          "でも",
+          "までに"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "までに"
+        }
+      }
+    ]
+  }
+]

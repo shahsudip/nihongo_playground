@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_241",
+    "type": "shin_mon_page",
+    "page_file": "241.jpg",
+    "page_number": 241,
+    "questions": [
+      {
+        "id": "q415",
+        "questionText": "そんな 自転車は どこで <u>うって</u> いますか。",
+        "options": [
+          "売って",
+          "買って",
+          "作って",
+          "乗って"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "売って"
+        }
+      },
+      {
+        "id": "q416",
+        "questionText": "あの ホテルは _______ しないと <ruby>泊<rt>と</rt></ruby>まれませんよ。",
+        "options": [
+          "けいかく",
+          "よてい",
+          "じゅんび",
+          "よやく"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "よやく"
+        }
+      },
+      {
+        "id": "q417",
+        "questionText": "さっき <ruby>聞<rt>き</rt></ruby>いた _______ 、もう <ruby>忘<rt>わす</rt></ruby>れて しまいました。",
+        "options": [
+          "だけ",
+          "ので",
+          "から",
+          "のに"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "のに"
+        }
+      }
+    ]
+  }
+]

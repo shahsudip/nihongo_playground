@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 4日目",
+    "questions": [
+      {
+        "id": "q299",
+        "questionText": "商店街の抽選会で当たった鉢植えを、<u>天井</u>からぶら下げてみた。",
+        "options": [
+          "てんせい",
+          "かもい",
+          "てんじょう",
+          "しきい"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "てんじょう"
+        },
+        "explanation": "天井 is read as てんじょう (ceiling)."
+      },
+      {
+        "id": "q300",
+        "questionText": "我が国の政治は、「情けない」の一言に＿＿＿＿＿。",
+        "options": [
+          "仕える",
+          "省みる",
+          "尽きる",
+          "嘆く"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "尽きる"
+        },
+        "explanation": "The phrase 「〜の一言に尽きる」 means \"can be summed up in a single word as ~\"."
+      },
+      {
+        "id": "q301",
+        "questionText": "その同級生のことは、名前＿＿＿＿＿顔も思い出せません。",
+        "options": [
+          "はおろか",
+          "をかわきりに",
+          "にくわえ",
+          "ばかりに"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "はおろか"
+        },
+        "explanation": "The grammar pattern 「〜はおろか」 means \"let alone\" or \"not to mention\"."
+      }
+    ]
+  }
+]

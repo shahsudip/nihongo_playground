@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 3日目",
+    "questions": [
+      {
+        "id": "q415",
+        "questionText": "<u>虹</u>は光の屈折による発色の現象で、日本では赤、橙、黄、緑、青、藍、紫の７色と考えられている。",
+        "options": [
+          "にじ",
+          "くじ",
+          "みじ",
+          "きじ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "にじ"
+        },
+        "explanation": "虹 (にじ) means rainbow."
+      },
+      {
+        "id": "q416",
+        "questionText": "物価は需要と供給に＿＿＿＿調節される。",
+        "options": [
+          "重んじて",
+          "準じて",
+          "案じて",
+          "応じて"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "応じて"
+        },
+        "explanation": "〜に応じて means 'in accordance with' or 'depending on'. Prices are adjusted in accordance with supply and demand."
+      },
+      {
+        "id": "q417",
+        "questionText": "A 「断られました。」\nB 「一度ぐらいで諦めないで何度もお願いすれば、引き受けてもらえない＿＿＿＿と思うよ。」",
+        "options": [
+          "ことになる",
+          "始末だ",
+          "ものでもない",
+          "ではすまない"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ものでもない"
+        },
+        "explanation": "〜ないものでもない means 'it is not entirely impossible that...' or 'there is a possibility that...'. Thus 'It is not impossible that they will accept it if you ask multiple times.'"
+      }
+    ]
+  }
+]

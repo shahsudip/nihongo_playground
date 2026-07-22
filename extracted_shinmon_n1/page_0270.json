@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 4 Day 6",
+    "questions": [
+      {
+        "id": "q457",
+        "questionText": "<u>砂漠</u>の緑化協力隊に応募したら、奇遇にも旧友と再会した。",
+        "options": [
+          "さまく",
+          "さぼく",
+          "さばく",
+          "さもく"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "さばく"
+        },
+        "explanation": "砂漠 (さばく) means desert."
+      },
+      {
+        "id": "q458",
+        "questionText": "工事は最初少し滞ったが、その後は＿＿＿＿＿＿と進み、予定通り完成する見込みだ。",
+        "options": [
+          "着々",
+          "延々",
+          "続々",
+          "長々"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "着々"
+        },
+        "explanation": "着々 (ちゃくちゃく) means steadily or smoothly. 着々と進む means to progress steadily."
+      },
+      {
+        "id": "q459",
+        "questionText": "会社を辞めたのを＿＿＿＿＿＿水泳を始めた。",
+        "options": [
+          "経て",
+          "境に",
+          "機に",
+          "兼ねて"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "機に"
+        },
+        "explanation": "〜を機に (をきに) is a grammar point meaning 'taking the opportunity of ~' or 'using ~ as a good opportunity'."
+      }
+    ]
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 7日目",
+    "questions": [
+      {
+        "id": "q490",
+        "questionText": "事故で夢は<u>砕け散った</u>。",
+        "options": [
+          "やぶけちった",
+          "くだけちった",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "くだけちった"
+        },
+        "explanation": "砕ける (くだける) means to break or be crushed. 砕け散る means to shatter."
+      },
+      {
+        "id": "q491",
+        "questionText": "空を<u>漂う</u>雲のように当てもなく歩く。",
+        "options": [
+          "さまよう",
+          "ただよう",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ただよう"
+        },
+        "explanation": "漂う (ただよう) means to drift or float."
+      },
+      {
+        "id": "q492",
+        "questionText": "PTAの役員を誰もやりたくないというので、___私が引き受けた。",
+        "options": [
+          "しぶしぶ",
+          "くよくよ",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "しぶしぶ"
+        },
+        "explanation": "しぶしぶ means reluctantly or grudgingly."
+      },
+      {
+        "id": "q493",
+        "questionText": "そのネットスーパーは、取り扱い商品を___値上げした。",
+        "options": [
+          "一帯に",
+          "一斉に",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "一斉に"
+        },
+        "explanation": "一斉に (いっせいに) means simultaneously or all at once."
+      },
+      {
+        "id": "q494",
+        "questionText": "久しぶりに会った知人の___に驚いた。",
+        "options": [
+          "老け並み",
+          "老けよう",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "老けよう"
+        },
+        "explanation": "老けよう (ふけよう) refers to the state or appearance of aging (様 - よう)."
+      },
+      {
+        "id": "q495",
+        "questionText": "あの事件___その子は口がきけなくなった。",
+        "options": [
+          "を境に",
+          "を機に",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "を境に"
+        },
+        "explanation": "〜を境に (をさかいに) means 'with ~ as a turning point', used when a state completely changes before and after an event."
+      }
+    ]
+  }
+]

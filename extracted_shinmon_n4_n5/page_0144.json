@@ -1,0 +1,70 @@
+[
+  {
+    "id": "page_144",
+    "type": "shin_mon_page",
+    "page_file": "144.jpg",
+    "page_number": 144,
+    "questions": [
+      {
+        "id": "q246",
+        "questionText": "ご<u>都合</u>が よければ 明日 お会いたいのですが。",
+        "options": [
+          "とごう",
+          "つごう"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "つごう"
+        }
+      },
+      {
+        "id": "q247",
+        "questionText": "ひとりで <u>きもの</u>が きられますか。",
+        "options": [
+          "着物",
+          "果物"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "着物"
+        }
+      },
+      {
+        "id": "q248",
+        "questionText": "<ruby>食事<rt>しょくじ</rt></ruby>の _______ が できましたよ。",
+        "options": [
+          "したく",
+          "よてい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "したく"
+        }
+      },
+      {
+        "id": "q249",
+        "questionText": "そこ ガラスが <ruby>落<rt>お</rt></ruby>ちて いるから _______ 。",
+        "options": [
+          "ふまないで",
+          "にげないで"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ふまないで"
+        }
+      },
+      {
+        "id": "q250",
+        "questionText": "おふろに _______ 後で いつも ビールを 飲みます。",
+        "options": [
+          "入る",
+          "入った"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "入った"
+        }
+      }
+    ]
+  }
+]

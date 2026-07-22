@@ -1,0 +1,86 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "もんだい",
+    "questions": [
+      {
+        "id": "q472",
+        "questionText": "弟は<u>無邪気</u>な顔で眠っている。",
+        "options": [
+          "むじゃき",
+          "むやき"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "むじゃき"
+        },
+        "explanation": "無邪気 (むじゃき) means innocent or simple-minded."
+      },
+      {
+        "id": "q473",
+        "questionText": "横綱は<u>惨めな</u>負け方をしてしまった。",
+        "options": [
+          "みじめな",
+          "いじめな"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "みじめな"
+        },
+        "explanation": "惨め (みじめ) means miserable or wretched."
+      },
+      {
+        "id": "q474",
+        "questionText": "少し前から目がかすんで、文字が＿＿＿見える。",
+        "options": [
+          "にじんで",
+          "しおれて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "にじんで"
+        },
+        "explanation": "にじむ (to blur/smudge) fits the context of blurry vision."
+      },
+      {
+        "id": "q475",
+        "questionText": "きりが＿＿＿ところで休みましょう。",
+        "options": [
+          "いい",
+          "つく"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "いい"
+        },
+        "explanation": "きりがいい means a good stopping point or a convenient place to break off."
+      },
+      {
+        "id": "q476",
+        "questionText": "結婚してからうまくいっている＿＿＿彼は最近まっすぐ家に帰る。",
+        "options": [
+          "とみえて",
+          "みられて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "とみえて"
+        },
+        "explanation": "〜とみえて is used to express a conjecture based on objective evidence ('it seems that...')."
+      },
+      {
+        "id": "q477",
+        "questionText": "100円＿＿＿200円安くなるからって、わざわざ店まで買いに行く気にはならない。",
+        "options": [
+          "に",
+          "や"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "や"
+        },
+        "explanation": "や is used to list items, indicating '100 or 200 yen'."
+      }
+    ]
+  }
+]

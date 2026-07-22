@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_163",
+    "type": "shin_mon_page",
+    "page_file": "163.jpg",
+    "page_number": 163,
+    "questions": [
+      {
+        "id": "q275",
+        "questionText": "あなたの 言う ことは <u>ただしい</u>と 思います。",
+        "options": [
+          "新しい",
+          "楽しい",
+          "正しい",
+          "真しい"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "正しい"
+        }
+      },
+      {
+        "id": "q276",
+        "questionText": "<ruby>私<rt>わたし</rt></ruby>は <ruby>父<rt>ちち</rt></ruby>に よく _______ と <ruby>言<rt>い</rt></ruby>われます。",
+        "options": [
+          "まちがえる",
+          "くらべる",
+          "にている",
+          "そだてる"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "にている"
+        }
+      },
+      {
+        "id": "q277",
+        "questionText": "<ruby>一<rt>ひと</rt></ruby><ruby>人<rt>り</rt></ruby>も <ruby>来<rt>こ</rt></ruby>ないと <ruby>思<rt>おも</rt></ruby>って いましたが、5<ruby>人<rt>にん</rt></ruby> _______ <ruby>来<rt>き</rt></ruby>ました。",
+        "options": [
+          "で",
+          "や",
+          "も",
+          "と"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "も"
+        }
+      }
+    ]
+  }
+]

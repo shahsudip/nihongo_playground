@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 3 Day 6",
+    "questions": [
+      {
+        "id": "q338",
+        "questionText": "その広告は<u>甚だしい</u>誇張や商品の紛らわしい名称を是正すべきだ。",
+        "options": [
+          "あわただしい",
+          "はなはだしい",
+          "おびただしい",
+          "はらただしい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "はなはだしい"
+        },
+        "explanation": "「甚だしい」 (hanahadashii) means 'extreme' or 'excessive'."
+      },
+      {
+        "id": "q339",
+        "questionText": "君と僕の意見は同じように聞こえるが、ちょっと___が違う。",
+        "options": [
+          "シナリオ",
+          "ニュアンス",
+          "フレーズ",
+          "ヒント"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ニュアンス"
+        },
+        "explanation": "「ニュアンス」 (nuance) fits the context of subtle differences in opinions."
+      },
+      {
+        "id": "q340",
+        "questionText": "ローンの返済が不能となり、土地と建物の売却を余儀なく___。",
+        "options": [
+          "させた",
+          "なった",
+          "された",
+          "した"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "された"
+        },
+        "explanation": "「〜を余儀なくされる」 is a grammatical pattern meaning 'to be forced to do ~'."
+      }
+    ]
+  }
+]

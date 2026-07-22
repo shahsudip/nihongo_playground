@@ -1,0 +1,68 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "",
+    "questions": [
+      {
+        "id": "q359",
+        "questionText": "毎日同じ物では<u>飽きる</u>でしょう。",
+        "options": ["あきる", "つきる", "", ""],
+        "correctOption": {
+          "index": 0,
+          "text": "あきる"
+        },
+        "explanation": "飽きる (あきる) means to get tired of or lose interest in something."
+      },
+      {
+        "id": "q360",
+        "questionText": "<u>文脈</u>から意味を理解する。",
+        "options": ["ぶんみゃく", "ぶんぱ", "", ""],
+        "correctOption": {
+          "index": 0,
+          "text": "ぶんみゃく"
+        },
+        "explanation": "文脈 (ぶんみゃく) means context."
+      },
+      {
+        "id": "q361",
+        "questionText": "若い頃はお金がなく、＿＿＿＿暮らしをしていました。",
+        "options": ["質素な", "素直な", "", ""],
+        "correctOption": {
+          "index": 0,
+          "text": "質素な"
+        },
+        "explanation": "質素 (しっそ) means frugal, plain, or simple, which fits the context of not having money."
+      },
+      {
+        "id": "q362",
+        "questionText": "伝えられた情報のみで物事の＿＿＿＿を判断するのは、危険だ。",
+        "options": ["良き悪し", "良し悪し", "", ""],
+        "correctOption": {
+          "index": 1,
+          "text": "良し悪し"
+        },
+        "explanation": "良し悪し (よしあし) is a set phrase meaning 'good or bad' or 'right or wrong'."
+      },
+      {
+        "id": "q363",
+        "questionText": "新しい店長は、前の店長＿＿＿＿厳しい。",
+        "options": ["にもまして", "をおいて", "", ""],
+        "correctOption": {
+          "index": 0,
+          "text": "にもまして"
+        },
+        "explanation": "〜にもまして means 'even more than ~'. The new manager is even stricter than the previous one."
+      },
+      {
+        "id": "q364",
+        "questionText": "この服はデザイン＿＿＿＿、着心地もいい。",
+        "options": ["もさることながら", "にひきかえ", "", ""],
+        "correctOption": {
+          "index": 0,
+          "text": "もさることながら"
+        },
+        "explanation": "〜もさることながら means 'not only ~, but also...'. The clothes have a good design and are also comfortable."
+      }
+    ]
+  }
+]

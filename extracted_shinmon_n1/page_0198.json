@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 3 Day 6",
+    "questions": [
+      {
+        "id": "q326",
+        "questionText": "北海道から沖縄に<u>至る</u>太平洋沿岸の広い範囲で津波が観測された。",
+        "options": [
+          "わたる",
+          "おたる",
+          "あたる",
+          "いたる"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "いたる"
+        },
+        "explanation": "The kanji 至る is read as いたる (itaru), meaning 'to reach' or 'to lead to'."
+      },
+      {
+        "id": "q327",
+        "questionText": "正社員を募集しています。経験の＿＿＿＿＿は問いません。",
+        "options": [
+          "ありなき",
+          "ありない",
+          "あるなき",
+          "あるなし"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "あるなし"
+        },
+        "explanation": "あるなし (arunashi) means 'presence or absence'. 経験のあるなし refers to 'whether or not one has experience'."
+      },
+      {
+        "id": "q328",
+        "questionText": "子供はテレビから聞こえてくる言葉を、聞いた＿＿＿＿＿覚えていく。",
+        "options": [
+          "よこから",
+          "そとから",
+          "そばから",
+          "うちから"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "そばから"
+        },
+        "explanation": "〜そばから (soba kara) is a grammar point that means 'as soon as', typically implying that an action is repeatedly followed immediately by another."
+      }
+    ]
+  }
+]

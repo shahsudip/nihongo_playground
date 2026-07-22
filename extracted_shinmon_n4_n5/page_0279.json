@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_279",
+    "type": "shin_mon_page",
+    "page_file": "279.jpg",
+    "page_number": 279,
+    "questions": [
+      {
+        "id": "q490",
+        "questionText": "<u>文字</u>を もう少し 大きく しましょう。",
+        "options": [
+          "もじ",
+          "ぶんじ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "もじ"
+        }
+      },
+      {
+        "id": "q491",
+        "questionText": "パスポートは <u>ひきだし</u>の 中です。",
+        "options": [
+          "引き出し",
+          "押し出し"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "引き出し"
+        }
+      },
+      {
+        "id": "q492",
+        "questionText": "私は、ある 先生を たいへん _______ して います。",
+        "options": [
+          "そんけい",
+          "えんりょ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "そんけい"
+        }
+      },
+      {
+        "id": "q493",
+        "questionText": "長い 時間が かかったけれど、家が _______ <ruby>完成<rt>かんせい</rt></ruby>した。",
+        "options": [
+          "ずっと",
+          "やっと"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "やっと"
+        }
+      },
+      {
+        "id": "q494",
+        "questionText": "できるだけ 野菜を 食べる ように _______ 。",
+        "options": [
+          "して います",
+          "なって います"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "して います"
+        }
+      },
+      {
+        "id": "q495",
+        "questionText": "ひらがなも よく 読めないのに、漢字が 読める _______ 。",
+        "options": [
+          "つもりが ない",
+          "はずが ない"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "はずが ない"
+        }
+      }
+    ]
+  }
+]

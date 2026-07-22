@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_85",
+    "type": "shin_mon_page",
+    "page_file": "85.jpg",
+    "page_number": 85,
+    "questions": [
+      {
+        "id": "q135",
+        "questionText": "百万円あったら、何に <u>つかいます</u>か。",
+        "options": [
+          "使います",
+          "作ります",
+          "用います",
+          "利きます"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "使います"
+        }
+      },
+      {
+        "id": "q136",
+        "questionText": "_______ を <ruby>教<rt>おし</rt></ruby>えて ください。 メールします。",
+        "options": [
+          "<ruby>名前<rt>なまえ</rt></ruby>",
+          "アドレス",
+          "<ruby>電話番号<rt>でんわばんごう</rt></ruby>",
+          "<ruby>住所<rt>じゅうしょ</rt></ruby>"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "アドレス"
+        }
+      },
+      {
+        "id": "q137",
+        "questionText": "<ruby>弟<rt>おとうと</rt></ruby>は テレビ _______ <ruby>見<rt>み</rt></ruby>て いて、ぜんぜん <ruby>勉強<rt>べんきょう</rt></ruby>しません。",
+        "options": [
+          "ぐらい",
+          "も",
+          "ばかり",
+          "しか"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ばかり"
+        }
+      }
+    ]
+  }
+]

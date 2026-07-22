@@ -1,0 +1,86 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "もんだい",
+    "questions": [
+      {
+        "id": "109",
+        "questionText": "<u>霧</u>のため、徐行運転をする。",
+        "options": [
+          "きり",
+          "つゆ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "きり"
+        },
+        "explanation": "霧 (きり) means fog."
+      },
+      {
+        "id": "110",
+        "questionText": "<u>お盆</u>と正月に田舎へ帰る。",
+        "options": [
+          "おぶん",
+          "おぼん"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "おぼん"
+        },
+        "explanation": "お盆 (おぼん) is the Bon festival."
+      },
+      {
+        "id": "111",
+        "questionText": "＿＿＿＿とは恐ろしいもので、引っ越してきたころ、あんなにうるさかった電車の音が、今では気にならない。",
+        "options": [
+          "育ち",
+          "慣れ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "慣れ"
+        },
+        "explanation": "慣れ (なれ) means habit or getting used to something. 'Getting used to things is scary...'"
+      },
+      {
+        "id": "112",
+        "questionText": "日本の電車の混雑は、＿＿＿＿ならないものか。",
+        "options": [
+          "どうにか",
+          "どうやら"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "どうにか"
+        },
+        "explanation": "どうにかならないものか means 'can't something be done about...'"
+      },
+      {
+        "id": "113",
+        "questionText": "弟の部屋の散らかりよう＿＿＿＿ない。",
+        "options": [
+          "といったら",
+          "いかんでは"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "といったら"
+        },
+        "explanation": "～といったら（ありはし）ない is a grammar pattern meaning 'extremely (messy)'."
+      },
+      {
+        "id": "114",
+        "questionText": "一人っ子は、甘やかされる＿＿＿＿がある。",
+        "options": [
+          "次第",
+          "きらい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "きらい"
+        },
+        "explanation": "～きらいがある is a grammar pattern meaning 'has a (bad) tendency to'."
+      }
+    ]
+  }
+]

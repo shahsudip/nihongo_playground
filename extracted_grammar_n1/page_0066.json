@@ -1,0 +1,136 @@
+[
+  {
+    "type": "header",
+    "title": "第26回"
+  },
+  {
+    "type": "mondai_1",
+    "id": "q1",
+    "questionText": "ときどき宝くじを買っているが、残念ながら当たった（　　　）。",
+    "options": [
+      "ためしがない",
+      "はずがない",
+      "までもない",
+      "に至らない"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q2",
+    "questionText": "国の料理を（　　　）、日本ではなかなか材料が手に入らない。",
+    "options": [
+      "作るべく",
+      "作ってこそ",
+      "作ろうにも",
+      "作らんがため"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q3",
+    "questionText": "コンビニは、日曜（　　　）年末年始（　　　）買い物ができて便利だ。",
+    "options": [
+      "だの／だの",
+      "といい／といい",
+      "やら／やら",
+      "であろうと／であろうと"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q4",
+    "questionText": "試作品は改良に改良（　　　）、ついに実用化にこぎつけた。",
+    "options": [
+      "を兼ね",
+      "を重ね",
+      "にたえ",
+      "に先駆け"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q5",
+    "questionText": "薦められた本を読む（　　　）読んだが、よく理解できなかった。",
+    "options": [
+      "こそ",
+      "なり",
+      "には",
+      "まで"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q6",
+    "questionText": "私（　　　）こんな簡単な漢字を忘れてしまうなんて……。",
+    "options": [
+      "ともなると",
+      "としても",
+      "というもの",
+      "としたことが"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q7",
+    "questionText": "そんなに言うなら、信じる（　　　）証拠を見せてくれ。",
+    "options": [
+      "にたる",
+      "にわたる",
+      "にたえない",
+      "にやまない"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q1",
+    "questionText": "この監督はこれまで ＿＿＿ ＿＿＿ ＿★＿ ＿＿＿ 心に残る映画を製作してきた。",
+    "options": [
+      "こそ",
+      "ものの",
+      "とらなかった",
+      "賞"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q2",
+    "questionText": "まだ全員そろっていませんが、＿＿＿ ＿＿＿ ＿★＿ ＿＿＿ 、会議を始めましょう。",
+    "options": [
+      "だし",
+      "こと",
+      "過ぎている",
+      "時間も"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q3",
+    "questionText": "従業員の幸せを願う ＿＿＿ ＿＿＿ ＿★＿ ＿＿＿ のことだろう。",
+    "options": [
+      "経営者",
+      "のは",
+      "当然",
+      "たる者"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  }
+]

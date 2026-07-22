@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_197",
+    "type": "shin_mon_page",
+    "page_file": "197.jpg",
+    "page_number": 197,
+    "questions": [
+      {
+        "id": "q326",
+        "questionText": "<u>寒い</u>から、牛乳を あたためて 飲みましょう。",
+        "options": [
+          "つめたい",
+          "みじかい",
+          "あつい",
+          "さむい"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "さむい"
+        }
+      },
+      {
+        "id": "q327",
+        "questionText": "どうしたんだろう？ <ruby>鏡<rt>かがみ</rt></ruby>が _______。",
+        "options": [
+          "われて いる",
+          "うつして いる",
+          "おれて いる",
+          "こわして いる"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "われて いる"
+        }
+      },
+      {
+        "id": "q328",
+        "questionText": "子どもの ころ、<ruby>母<rt>はは</rt></ruby>に <ruby>毎<rt>まい</rt></ruby><ruby>日<rt>にち</rt></ruby> ほうれん<ruby>草<rt>そう</rt></ruby>を _______。",
+        "options": [
+          "<ruby>食<rt>た</rt></ruby>べさせました",
+          "<ruby>食<rt>た</rt></ruby>べられました",
+          "<ruby>食<rt>た</rt></ruby>べさせられました",
+          "<ruby>食<rt>た</rt></ruby>べてしまいました"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "<ruby>食<rt>た</rt></ruby>べさせられました"
+        }
+      }
+    ]
+  }
+]

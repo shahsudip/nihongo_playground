@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 4 Day 4",
+    "questions": [
+      {
+        "id": "q424",
+        "questionText": "ゆで卵は水からではなく<u>沸騰</u>したお湯に入れると\n簡単に作れるそうです。",
+        "options": [
+          "ぼっとう",
+          "ふっとう",
+          "けんとう",
+          "ふんとう"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ふっとう"
+        },
+        "explanation": "The reading of 沸騰 (boiling) is ふっとう."
+      },
+      {
+        "id": "q425",
+        "questionText": "その案についてのアンケートを取ったら、_______\n反対意見が多かった。",
+        "options": [
+          "断然的に",
+          "極端的に",
+          "猛烈的に",
+          "圧倒的に"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "圧倒的に"
+        },
+        "explanation": "圧倒的に (attouteki ni) means 'overwhelmingly'. It naturally collocates with a majority opinion in this context."
+      },
+      {
+        "id": "q426",
+        "questionText": "A「先輩、こんな美味しいもの、生まれて初めて\n食べました。」\nB「僕に_______、こんなのは普通だよ。」",
+        "options": [
+          "ひきかえ",
+          "言わせれば",
+          "ですら",
+          "じゃあるまいし"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "言わせれば"
+        },
+        "explanation": "〜に言わせれば means 'if you ask ~' or 'in ~'s opinion'."
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_225",
+    "type": "shin_mon_page",
+    "page_file": "225.jpg",
+    "page_number": 225,
+    "questions": [
+      {
+        "id": "q391",
+        "questionText": "つぎの 駅で 降りて、<u>地下鉄</u>に 乗りかえましょう。",
+        "options": [
+          "ちがてつ",
+          "ちかてつ",
+          "じかてつ",
+          "じがてつ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ちかてつ"
+        }
+      },
+      {
+        "id": "q392",
+        "questionText": "<ruby>病気<rt>びょうき</rt></ruby>の おじさんの _______ に <ruby>行<rt>い</rt></ruby>きました。",
+        "options": [
+          "おみまい",
+          "おはなし",
+          "おれい",
+          "おいわい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "おみまい"
+        }
+      },
+      {
+        "id": "q393",
+        "questionText": "<ruby>田中<rt>たなか</rt></ruby>さんの <ruby>奥<rt>おく</rt></ruby>さんを _______ 。",
+        "options": [
+          "ごぞんじで おりますか",
+          "ごぞんじですか",
+          "ごぞんじに なりますか",
+          "ごぞんじしますか"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ごぞんじですか"
+        }
+      }
+    ]
+  }
+]

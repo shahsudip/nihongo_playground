@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 3日目",
+    "questions": [
+      {
+        "id": "q40",
+        "questionText": "A「隣に越してきた田中と申します。よろしくお願い致します。」\nB「それはご<u>丁寧</u>に、ありがとうございます。」",
+        "options": [
+          "ちょうだい",
+          "ていねい",
+          "ていちょう",
+          "ちょうてい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ていねい"
+        },
+        "explanation": "丁寧 is read as ていねい (teinei), meaning polite or courteous."
+      },
+      {
+        "id": "q41",
+        "questionText": "我が国は、天然資源に＿＿＿＿。",
+        "options": [
+          "みすぼらしい",
+          "とぼしい",
+          "いやしい",
+          "むなしい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "とぼしい"
+        },
+        "explanation": "とぼしい (乏しい) means scarce or lacking. 天然資源に乏しい means lacking in natural resources."
+      },
+      {
+        "id": "q42",
+        "questionText": "その工芸品の見事さといったら＿＿＿＿。",
+        "options": [
+          "ありはしない",
+          "ない",
+          "ほかない",
+          "ほかならない"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ない"
+        },
+        "explanation": "〜といったらない is a grammar structure meaning 'extremely'. While 〜といったらありはしない means the same, it is typically used for negative evaluations. Since 見事 (magnificent) is positive, ない is the correct choice."
+      }
+    ]
+  }
+]

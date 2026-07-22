@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 4日目",
+    "questions": [
+      {
+        "id": "q49",
+        "questionText": "これは<u>羊</u>の肉です。",
+        "options": [
+          "ぶた",
+          "とり",
+          "くじら",
+          "ひつじ"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "ひつじ"
+        },
+        "explanation": "The kanji 羊 means 'sheep' and is read as ひつじ."
+      },
+      {
+        "id": "q50",
+        "questionText": "ゴールデンウイークも＿＿＿＿終わり、また忙しい毎日が始まった。",
+        "options": [
+          "そっけなく",
+          "あっけなく",
+          "おっかなく",
+          "みっともなく"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "あっけなく"
+        },
+        "explanation": "'あっけなく' means 'all too soon' or 'disappointingly short', which fits the context of Golden Week ending."
+      },
+      {
+        "id": "q51",
+        "questionText": "ゴキブリめ、一匹＿＿＿＿逃がさないぞ！",
+        "options": [
+          "かぎり",
+          "たりとも",
+          "かぎらず",
+          "たりても"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "たりとも"
+        },
+        "explanation": "The grammar pattern '～たりとも...ない' means 'not even...'. '一匹たりとも逃がさない' means 'won't let even a single one escape'."
+      }
+    ]
+  }
+]

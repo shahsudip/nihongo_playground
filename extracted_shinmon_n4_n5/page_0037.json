@@ -1,0 +1,51 @@
+[
+  {
+    "type": "shin_mon_page",
+    "page_file": "37.jpg",
+    "page_number": 37,
+    "questions": [
+      {
+        "id": "q40",
+        "questionText": "明日の <u>ごご</u>は 雨でしょう。",
+        "options": [
+          "牛後",
+          "午後",
+          "牛前",
+          "午前"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "午後"
+        }
+      },
+      {
+        "id": "q41",
+        "questionText": "<ruby>赤<rt>あか</rt></ruby>ちゃんの <ruby>泣<rt>な</rt></ruby>き<ruby>声<rt>ごえ</rt></ruby>が _______ 、ねられなかった。",
+        "options": [
+          "げんきで",
+          "うるさくて",
+          "にぎやかで",
+          "いそがしくて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "うるさくて"
+        }
+      },
+      {
+        "id": "q42",
+        "questionText": "<ruby>近<rt>ちか</rt></ruby>くの スーパーは <ruby>夜<rt>よる</rt></ruby> 10<ruby>時<rt>じ</rt></ruby>まで _______ 。",
+        "options": [
+          "あいて います",
+          "あけて います",
+          "あきます",
+          "あけます"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "あいて います"
+        }
+      }
+    ]
+  }
+]

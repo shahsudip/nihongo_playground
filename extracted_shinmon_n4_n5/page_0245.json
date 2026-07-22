@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_245",
+    "type": "shin_mon_page",
+    "page_file": "245.jpg",
+    "page_number": 245,
+    "questions": [
+      {
+        "id": "q421",
+        "questionText": "父は 毎晩、少し <u>お酒</u>を 飲んで 寝ます。",
+        "options": [
+          "おこめ",
+          "おなべ",
+          "おつり",
+          "おさけ"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "おさけ"
+        }
+      },
+      {
+        "id": "q422",
+        "questionText": "A 「いっしょに <ruby>行<rt>い</rt></ruby>って くださいませんか。」\nB 「ええ、 _______ 。」",
+        "options": [
+          "よろこんで",
+          "たのしんで",
+          "わすれないで",
+          "おかげさまで"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "よろこんで"
+        }
+      },
+      {
+        "id": "q423",
+        "questionText": "<ruby>祖父<rt>そふ</rt></ruby>が <ruby>急<rt>きゅう</rt></ruby>に <ruby>死<rt>し</rt></ruby>んだ _______ <ruby>知<rt>し</rt></ruby>らせが あった。",
+        "options": [
+          "そうな",
+          "という",
+          "ような",
+          "の"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "という"
+        }
+      }
+    ]
+  }
+]

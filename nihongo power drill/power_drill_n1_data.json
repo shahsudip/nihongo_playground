@@ -3493,6 +3493,177 @@
           "questions": [
             {
               "id": "v-5-m1-q1",
+              "questionText": "問1 この契約書は原本のコピーです。",
+              "options": [
+                "げんぼん",
+                "げんぽん",
+                "もとぼん",
+                "もとぽん"
+              ],
+              "correctOption": {
+                "index": 0,
+                "text": "げんぼん"
+              },
+              "explanation": "原本（げんぼん）：元の書類のこと。"
+            },
+            {
+              "id": "v-5-m1-q2",
+              "questionText": "問2 会議の進行を迅速に行う。",
+              "options": [
+                "じんそく",
+                "しんそく",
+                "じんぞく",
+                "しんぞく"
+              ],
+              "correctOption": {
+                "index": 0,
+                "text": "じんそく"
+              },
+              "explanation": "迅速（じんそく）：非常に速いこと。"
+            },
+            {
+              "id": "v-5-m1-q3",
+              "questionText": "問3 彼の発言は現実と乖離している。",
+              "options": [
+                "かいり",
+                "かんり",
+                "かいれ",
+                "かんれ"
+              ],
+              "correctOption": {
+                "index": 0,
+                "text": "かいり"
+              },
+              "explanation": "乖離（かいり）：そむきはなれること。"
+            },
+            {
+              "id": "v-5-m1-q4",
+              "questionText": "問4 膨大な資料を整理する。",
+              "options": [
+                "ぼうだい",
+                "ほうだい",
+                "ぼうた",
+                "ほうた"
+              ],
+              "correctOption": {
+                "index": 0,
+                "text": "ぼうだい"
+              },
+              "explanation": "膨大（ぼうだい）：数が非常に多いこと。"
+            },
+            {
+              "id": "v-5-m1-q5",
+              "questionText": "問5 現場の状況を把握する。",
+              "options": [
+                "はあく",
+                "わあく",
+                "ぱあく",
+                "ばあく"
+              ],
+              "correctOption": {
+                "index": 0,
+                "text": "はあく"
+              },
+              "explanation": "把握（はあく）：しっかりと理解すること。"
+            }
+          ]
+        },
+        {
+          "title": "問題2",
+          "mondaiHeader": "（　　）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。",
+          "questions": [
+            {
+              "id": "v-5-m2-q1",
+              "questionText": "問1 計画の（　　）を見直す必要がある。",
+              "options": [
+                "枠組み",
+                "仕組み",
+                "組み立て",
+                "手組み"
+              ],
+              "correctOption": {
+                "index": 0,
+                "text": "枠組み"
+              },
+              "explanation": "枠組み（わくぐみ）：全体の骨組み。"
+            },
+            {
+              "id": "v-5-m2-q2",
+              "questionText": "問2 予算の都合で計画を（　　）せざるを得ない。",
+              "options": [
+                "縮小",
+                "減少",
+                "低下",
+                "衰退"
+              ],
+              "correctOption": {
+                "index": 0,
+                "text": "縮小"
+              },
+              "explanation": "縮小（しゅくしょう）：小さくすること。"
+            },
+            {
+              "id": "v-5-m2-q3",
+              "questionText": "問3 彼の誠実な対応に（　　）を持った。",
+              "options": [
+                "好感",
+                "好意",
+                "好情",
+                "好心"
+              ],
+              "correctOption": {
+                "index": 0,
+                "text": "好感"
+              },
+              "explanation": "好感（こうかん）：よい感じ。"
+            },
+            {
+              "id": "v-5-m2-q4",
+              "questionText": "問4 事故の原因を（　　）に究明する。",
+              "options": [
+                "徹底的",
+                "全面的",
+                "具体的",
+                "積極的"
+              ],
+              "correctOption": {
+                "index": 0,
+                "text": "徹底的"
+              },
+              "explanation": "徹底的（てっていてき）：中途半端にせず最後まで行うこと。"
+            },
+            {
+              "id": "v-5-m2-q5",
+              "questionText": "問5 新しい事業の（　　）に乗り出す。",
+              "options": [
+                "開拓",
+                "開発",
+                "開始",
+                "開校"
+              ],
+              "correctOption": {
+                "index": 0,
+                "text": "開拓"
+              },
+              "explanation": "開拓（かいたく）：新しい分野をひらくこと。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vocab-5",
+      "title": "第5回",
+      "type": "vocab",
+      "description": "N1文字・語彙ドリル 第5回",
+      "group": "Group 1",
+      "sections": [
+        {
+          "title": "問題1",
+          "mondaiHeader": "次の言葉の読み方として最もよいものを、１・２・３・４から一つ選びなさい。",
+          "questions": [
+            {
+              "id": "v-5-m1-q1",
               "questionText": "問1 回答を拒む理由を聞かせてほしい。",
               "options": [
                 "からむ",

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_247",
+    "type": "shin_mon_page",
+    "page_file": "247.jpg",
+    "page_number": 247,
+    "questions": [
+      {
+        "id": "q424",
+        "questionText": "<u>ならった</u> 後で 試験を 受けました。",
+        "options": [
+          "習った",
+          "教った",
+          "学った",
+          "考った"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "習った"
+        }
+      },
+      {
+        "id": "q425",
+        "questionText": "これは、ずいぶん _______ の <ruby>話<rt>はなし</rt></ruby>です。",
+        "options": [
+          "ひさしぶり",
+          "このあいだ",
+          "むかし",
+          "このごろ"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "むかし"
+        }
+      },
+      {
+        "id": "q426",
+        "questionText": "ゆうべ、<ruby>電気<rt>でんき</rt></ruby>を _______ <ruby>寝<rt>ね</rt></ruby>て しまった。",
+        "options": [
+          "つければ",
+          "つけて みて",
+          "つけて おき",
+          "つけた まま"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "つけた まま"
+        }
+      }
+    ]
+  }
+]

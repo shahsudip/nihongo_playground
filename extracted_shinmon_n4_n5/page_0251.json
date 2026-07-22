@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_251",
+    "type": "shin_mon_page",
+    "page_file": "251.jpg",
+    "page_number": 251,
+    "questions": [
+      {
+        "id": "q430",
+        "questionText": "<u>くらい</u> 空に 星が ひかって いる。",
+        "options": [
+          "黒い",
+          "天い",
+          "夜い",
+          "暗い"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "暗い"
+        }
+      },
+      {
+        "id": "q431",
+        "questionText": "_______ <ruby>日本語<rt>にほんご</rt></ruby>が <ruby>話<rt>はな</rt></ruby>せませんでした。",
+        "options": [
+          "はじめは",
+          "はじめて",
+          "はじめに",
+          "はじまって"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "はじめは"
+        }
+      },
+      {
+        "id": "q432",
+        "questionText": "<ruby>今日<rt>きょう</rt></ruby>は <ruby>一日中<rt>いちにちじゅう</rt></ruby> <ruby>寒<rt>さむ</rt></ruby>くて、 _______ 。",
+        "options": [
+          "<ruby>冬<rt>ふゆ</rt></ruby>だようです",
+          "<ruby>冬<rt>ふゆ</rt></ruby>だそうです",
+          "<ruby>冬<rt>ふゆ</rt></ruby>の ようでした",
+          "<ruby>冬<rt>ふゆ</rt></ruby>の みたいでした"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "<ruby>冬<rt>ふゆ</rt></ruby>の ようでした"
+        }
+      }
+    ]
+  }
+]

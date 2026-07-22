@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_142",
+    "type": "shin_mon_page",
+    "page_file": "142.jpg",
+    "page_number": 142,
+    "questions": [
+      {
+        "id": "q234",
+        "questionText": "<u>今夜</u>は 月が きれいです。",
+        "options": [
+          "こんや",
+          "こんばん"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "こんや"
+        }
+      },
+      {
+        "id": "q235",
+        "questionText": "来月の <u>はつか</u>に 国へ 帰ります。",
+        "options": [
+          "二日",
+          "二十日"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "二十日"
+        }
+      },
+      {
+        "id": "q236",
+        "questionText": "<ruby>教科書<rt>きょうかしょ</rt></ruby>を わすれたので、となりの 人に _______ もらった。",
+        "options": [
+          "かえして",
+          "みせて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "みせて"
+        }
+      },
+      {
+        "id": "q237",
+        "questionText": "もうすぐ お<ruby>客<rt>きゃく</rt></ruby>さんが 来るから、テーブルの 上を _______ ください。",
+        "options": [
+          "かたづけて",
+          "さわって"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "かたづけて"
+        }
+      },
+      {
+        "id": "q238",
+        "questionText": "くだものの 中で、_______ が いちばん <ruby>好<rt>す</rt></ruby>きですか。",
+        "options": [
+          "なに",
+          "どっち"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "なに"
+        }
+      },
+      {
+        "id": "q239",
+        "questionText": "うるさいよ。<ruby>静<rt>しず</rt></ruby>か _______ 。",
+        "options": [
+          "になって",
+          "にして"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "にして"
+        }
+      }
+    ]
+  }
+]

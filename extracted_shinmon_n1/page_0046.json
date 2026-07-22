@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 4日目",
+    "questions": [
+      {
+        "id": "q52",
+        "questionText": "同僚はゴルフコンペで優勝し、<u>豪華</u>な賞品を獲得した。",
+        "options": [
+          "ごうか",
+          "こうか",
+          "ごうけ",
+          "ぜいたく"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ごうか"
+        },
+        "explanation": "豪華 is read as ごうか (gōka), meaning gorgeous or luxurious."
+      },
+      {
+        "id": "q53",
+        "questionText": "あそこのラーメン、みんなはおいしいというけれど、＿＿＿＿しすぎていて私の好みではない。",
+        "options": [
+          "ぐったり",
+          "がっくり",
+          "てっきり",
+          "こってり"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "こってり"
+        },
+        "explanation": "こってり (kotteri) means rich, heavy, or thick, often used for food like ramen."
+      },
+      {
+        "id": "q54",
+        "questionText": "彼女は、店の前を＿＿＿＿して、中に入るのをためらっていた。",
+        "options": [
+          "行きつ戻りつ",
+          "行こうが行くまいが",
+          "行こうと戻ろうと",
+          "行くか行かないか"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "行きつ戻りつ"
+        },
+        "explanation": "〜つ〜つ is a grammar pattern meaning 'doing [A] and [B] alternately'. 行きつ戻りつ means going back and forth, indicating hesitation."
+      }
+    ]
+  }
+]

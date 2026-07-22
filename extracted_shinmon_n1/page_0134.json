@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 6日目",
+    "questions": [
+      {
+        "id": "q207",
+        "questionText": "<u>就職</u>活動で成功するために、性格や適正を自己分析してみた。",
+        "options": [
+          "すうしょく",
+          "しゅうしょく",
+          "じゅうしょく",
+          "ちゅうしょく"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "しゅうしょく"
+        },
+        "explanation": "就職 (しゅうしょく) means finding employment or getting a job."
+      },
+      {
+        "id": "q208",
+        "questionText": "この会場は、約2千人_______できます。",
+        "options": [
+          "収集",
+          "収穫",
+          "収納",
+          "収容"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "収容"
+        },
+        "explanation": "収容 (しゅうよう) means accommodation or capacity. The venue can accommodate about 2000 people."
+      },
+      {
+        "id": "q209",
+        "questionText": "娘は初めてのお菓子作りで、服も顔も粉_______なっていた。",
+        "options": [
+          "らしく",
+          "ごとく",
+          "まみれに",
+          "がちに"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "まみれに"
+        },
+        "explanation": "〜まみれ is used to express being covered in something messy, such as powder, sweat, or mud. 粉まみれ means covered in powder/flour."
+      }
+    ]
+  }
+]

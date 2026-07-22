@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_263",
+    "type": "shin_mon_page",
+    "page_file": "263.jpg",
+    "page_number": 263,
+    "questions": [
+      {
+        "id": "q448",
+        "questionText": "子どもの ときは <u>体</u>が 弱かったです。",
+        "options": [
+          "からだ",
+          "かだら",
+          "かなだ",
+          "かだな"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "からだ"
+        }
+      },
+      {
+        "id": "q449",
+        "questionText": "では、<ruby>明日<rt>あす</rt></ruby>の ４<ruby>時<rt>じ</rt></ruby>ごろ <ruby>事務所<rt>じむしょ</rt></ruby>で _______ 。",
+        "options": [
+          "ごらんに なります",
+          "おいでに なります",
+          "おまちして います",
+          "いらっしゃいます"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "おまちして います"
+        }
+      },
+      {
+        "id": "q450",
+        "questionText": "<ruby>田中<rt>たなか</rt></ruby>さんは、もう <ruby>大学<rt>だいがく</rt></ruby>を <ruby>出<rt>で</rt></ruby>て <ruby>働<rt>はたら</rt></ruby>いて いる _______ だ。",
+        "options": [
+          "つもり",
+          "らしい",
+          "かもしれない",
+          "はず"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "はず"
+        }
+      }
+    ]
+  }
+]

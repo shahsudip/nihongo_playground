@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_45",
+    "type": "shin_mon_page",
+    "page_file": "45.jpg",
+    "page_number": 45,
+    "questions": [
+      {
+        "id": "q52",
+        "questionText": "電車で <u>新聞</u>を 読みます。",
+        "options": [
+          "しんぶん",
+          "しんむん",
+          "しんもん",
+          "しんぼん"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "しんぶん"
+        }
+      },
+      {
+        "id": "q53",
+        "questionText": "_______ が ないから、<ruby>洗<rt>あら</rt></ruby>えないよ。",
+        "options": [
+          "せんざい",
+          "せんたく",
+          "クリーニング",
+          "そうじ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "せんざい"
+        }
+      },
+      {
+        "id": "q54",
+        "questionText": "<ruby>田中<rt>たなか</rt></ruby>さん、<ruby>今度<rt>こんど</rt></ruby> いっしょに <ruby>映画<rt>えいが</rt></ruby>に _______ か。",
+        "options": [
+          "<ruby>行<rt>い</rt></ruby>くでしょう",
+          "<ruby>行<rt>い</rt></ruby>きません",
+          "<ruby>行<rt>い</rt></ruby>きでしょうか",
+          "<ruby>行<rt>い</rt></ruby>くません"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "<ruby>行<rt>い</rt></ruby>きません"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "id": "page_76",
+    "type": "shin_mon_page",
+    "page_file": "76.jpg",
+    "page_number": 76,
+    "questions": [
+      {
+        "id": "q121",
+        "questionText": "私は <u>四人兄弟</u>の 一番上です。",
+        "options": [
+          "きょうだい",
+          "けいだい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "きょうだい"
+        }
+      },
+      {
+        "id": "q122",
+        "questionText": "これは <u>たいせつな</u> 本です。",
+        "options": [
+          "大切な",
+          "大事な"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "大切な"
+        }
+      },
+      {
+        "id": "q123",
+        "questionText": "私は 今年の 12月に _______ に なります。",
+        "options": [
+          "はつか",
+          "はたち"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "はたち"
+        }
+      },
+      {
+        "id": "q124",
+        "questionText": "この たなは <ruby>安<rt>やす</rt></ruby>かったけれど、とても _______ です。",
+        "options": [
+          "じょうぶ",
+          "だいじょうぶ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "じょうぶ"
+        }
+      },
+      {
+        "id": "q125",
+        "questionText": "<ruby>漢字<rt>かんじ</rt></ruby>は ぜんぜん _______ ことが できません。",
+        "options": [
+          "読む",
+          "読める"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "読める"
+        }
+      }
+    ]
+  }
+]

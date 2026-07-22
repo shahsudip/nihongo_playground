@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 1日目",
+    "questions": [
+      {
+        "id": "q7",
+        "questionText": "この団体は、医師や看護師を海外へ<u>派遣</u>している。その活動の趣旨に賛同して寄付をした。",
+        "options": [
+          "はたん",
+          "はけん",
+          "はてん",
+          "はせん"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "はけん"
+        },
+        "explanation": "派遣 is read as はけん (haken), meaning 'dispatch' or 'send'."
+      },
+      {
+        "id": "q8",
+        "questionText": "我が社の経営状態は、___悪化している。",
+        "options": [
+          "いちじるしく",
+          "わずらわしく",
+          "まぎらわしく",
+          "めざましく"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "いちじるしく"
+        },
+        "explanation": "いちじるしく (著しく) means 'significantly' or 'remarkably', which fits 'worsening significantly'."
+      },
+      {
+        "id": "q9",
+        "questionText": "パソコンのデータは、紙と違って保存を___が最後、消えてしまう。",
+        "options": [
+          "忘れる",
+          "忘れて",
+          "忘れた",
+          "忘れない"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "忘れた"
+        },
+        "explanation": "The grammar pattern '〜たが最後' means 'once (something happens), it's the end / something bad inevitably follows'."
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 3 Day 5",
+    "questions": [
+      {
+        "id": "q311",
+        "questionText": "植物の<u>茎</u>の細胞を、顕微鏡で観察してみよう。",
+        "options": [
+          "ね",
+          "め",
+          "くき",
+          "がく"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "くき"
+        },
+        "explanation": "The kanji 茎 is read as 'kuki', which means stem or stalk."
+      },
+      {
+        "id": "q312",
+        "questionText": "中高年になったら、塩分の摂取は___ほうがいいでしょう。",
+        "options": [
+          "衰えた",
+          "滅んだ",
+          "控えた",
+          "緩めた"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "控えた"
+        },
+        "explanation": "'控える' (hikaeru) means to refrain or hold back, which is appropriate when talking about reducing salt intake (塩分の摂取)."
+      },
+      {
+        "id": "q313",
+        "questionText": "あの黒___の女性は、どなたですか。",
+        "options": [
+          "まみれ",
+          "ずくめ",
+          "だらけ",
+          "ぐるみ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ずくめ"
+        },
+        "explanation": "'ずくめ' (zukume) means 'entirely' or 'completely', and '黒ずくめ' is a common phrase for 'dressed entirely in black'."
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_203",
+    "type": "shin_mon_page",
+    "page_file": "203.jpg",
+    "page_number": 203,
+    "questions": [
+      {
+        "id": "q335",
+        "questionText": "池の 魚が 全部 <u>しんで</u> しまいました。",
+        "options": [
+          "病んで",
+          "去んで",
+          "弱んで",
+          "死んで"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "死んで"
+        }
+      },
+      {
+        "id": "q336",
+        "questionText": "<ruby>田<rt>た</rt></ruby><ruby>中<rt>なか</rt></ruby><ruby>君<rt>くん</rt></ruby>は まだ _______ から、その <ruby>経<rt>けい</rt></ruby><ruby>験<rt>けん</rt></ruby>が ないんだよ。",
+        "options": [
+          "ふるい",
+          "わかい",
+          "めずらしい",
+          "きびしい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "わかい"
+        }
+      },
+      {
+        "id": "q337",
+        "questionText": "<ruby>田<rt>た</rt></ruby><ruby>中<rt>なか</rt></ruby>さんが <ruby>元<rt>げん</rt></ruby><ruby>気<rt>き</rt></ruby> _______ を <ruby>聞<rt>き</rt></ruby>いて、<ruby>安<rt>あん</rt></ruby><ruby>心<rt>しん</rt></ruby>しました。",
+        "options": [
+          "だという こと",
+          "なという こと",
+          "だ こと",
+          "こと"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "だという こと"
+        }
+      }
+    ]
+  }
+]

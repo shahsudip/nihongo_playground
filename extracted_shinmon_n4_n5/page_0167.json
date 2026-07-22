@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_167",
+    "type": "shin_mon_page",
+    "page_file": "167.jpg",
+    "page_number": 167,
+    "questions": [
+      {
+        "id": "q281",
+        "questionText": "あなたの 町は どんな <u>産業</u>が さかんですか。",
+        "options": [
+          "せんぎゅう",
+          "せんぎょう",
+          "さんぎょう",
+          "ざんぎょう"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "さんぎょう"
+        }
+      },
+      {
+        "id": "q282",
+        "questionText": "A 「すみません。<ruby>熱<rt>ねつ</rt></ruby>が あるので <ruby>今<rt>きょう</rt></ruby><ruby>日<rt></rt></ruby>は <ruby>休<rt>やす</rt></ruby>みます。」\nB 「<ruby>分<rt>わ</rt></ruby>かりました。ゆっくり _______ ください。」",
+        "options": [
+          "やすんで",
+          "あそんで",
+          "とまって",
+          "たのしんで"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "やすんで"
+        }
+      },
+      {
+        "id": "q283",
+        "questionText": "<ruby>私<rt>わたし</rt></ruby>は、チョコレート _______ クッキー _______ <ruby>甘<rt>あま</rt></ruby>い ものが <ruby>好<rt>す</rt></ruby>きです。",
+        "options": [
+          "と／と",
+          "とか／とか",
+          "か／か",
+          "ぐらい／ぐらい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "とか／とか"
+        }
+      }
+    ]
+  }
+]

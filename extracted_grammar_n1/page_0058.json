@@ -1,0 +1,136 @@
+[
+  {
+    "type": "header",
+    "title": "第23回"
+  },
+  {
+    "type": "mondai_1",
+    "id": "q1",
+    "questionText": "兄は入学試験が（　　　）、まったく勉強していない。",
+    "options": [
+      "終らんがため",
+      "終るやいなや",
+      "終ったからには",
+      "終ってからというもの"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q2",
+    "questionText": "内部情報が流出する（　　　）原因を徹底的に調査しなければならない。",
+    "options": [
+      "からの",
+      "なりの",
+      "による",
+      "に至った"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q3",
+    "questionText": "山田さんは話を誇張する（　　　）から、すべてを信じないほうがいい。",
+    "options": [
+      "までもない",
+      "ものがある",
+      "きらいがある",
+      "にとどまらない"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q4",
+    "questionText": "スペイン語を多少（　　　）習ったのなら、あいさつぐらいは言えるだろう。",
+    "options": [
+      "たりとも",
+      "ともなく",
+      "ながらに",
+      "なりとも"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q5",
+    "questionText": "友人が海外に引っ越したので、旅行（　　　）遊びに行くことにした。",
+    "options": [
+      "がてら",
+      "ついで",
+      "かねがね",
+      "ともども"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q6",
+    "questionText": "読んでくれる人（　　　）雑誌だから、読者の声を大切にしていきたい。",
+    "options": [
+      "ゆえの",
+      "あっての",
+      "ながらの",
+      "ならではの"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q7",
+    "questionText": "最終面接での印象（　　　）、二人のうちどちらが合格するかが決まるだろう。",
+    "options": [
+      "いかんで",
+      "からして",
+      "を兼ねて",
+      "をもって"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q1",
+    "questionText": "校長は健康 ____ ____ ★ ____ で退職されるそうだ。",
+    "options": [
+      "今年",
+      "上の",
+      "限り",
+      "問題から"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q2",
+    "questionText": "彼がゴールを決めた瞬間、満員の ____ ____ ★ ____ 歓声が起こった。",
+    "options": [
+      "の",
+      "割れん",
+      "ばかり",
+      "観衆から"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q3",
+    "questionText": "システムの欠陥は ____ ____ ★ ____ いたはずだ。",
+    "options": [
+      "までもなく",
+      "今さら",
+      "わかって",
+      "指摘される"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  }
+]

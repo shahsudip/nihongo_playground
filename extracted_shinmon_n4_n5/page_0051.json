@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_51",
+    "type": "shin_mon_page",
+    "page_file": "51.jpg",
+    "page_number": 51,
+    "questions": [
+      {
+        "id": "q61",
+        "questionText": "<u>英語</u>の 歌を 歌いましょう。",
+        "options": [
+          "えご",
+          "えが",
+          "えいご",
+          "えいが"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "えいご"
+        }
+      },
+      {
+        "id": "q62",
+        "questionText": "この ベッドは _______ 、<ruby>一人<rt>ひとり</rt></ruby>で <ruby>動<rt>うご</rt></ruby>かせない。",
+        "options": [
+          "あつくて",
+          "おもくて",
+          "おおくて",
+          "かたくて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "おもくて"
+        }
+      },
+      {
+        "id": "q63",
+        "questionText": "<ruby>一年前<rt>いちねんまえ</rt></ruby>は、ひらがなも _______ が、<ruby>今<rt>いま</rt></ruby>は <ruby>漢字<rt>かんじ</rt></ruby>も だいぶ <ruby>分<rt>わ</rt></ruby>かります。",
+        "options": [
+          "<ruby>読<rt>よ</rt></ruby>めませんでした",
+          "<ruby>読<rt>よ</rt></ruby>みませんでした",
+          "<ruby>読<rt>よ</rt></ruby>んで いませんでした",
+          "<ruby>読<rt>よ</rt></ruby>まなかったです"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "<ruby>読<rt>よ</rt></ruby>めませんでした"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 1日目",
+    "questions": [
+      {
+        "id": "q376",
+        "questionText": "例に<u>倣って</u>文を完成させなさい。",
+        "options": [
+          "ならって",
+          "めぐって",
+          "ともなって",
+          "したがって"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ならって"
+        },
+        "explanation": "「倣って」 is read as 「ならって」, meaning 'to follow (an example)'."
+      },
+      {
+        "id": "q377",
+        "questionText": "___一度の失敗くらいで、くよくよするな。",
+        "options": [
+          "まして",
+          "むろん",
+          "なおさら",
+          "たかが"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "たかが"
+        },
+        "explanation": "「たかが」 means 'merely' or 'only', fitting perfectly to say 'Don't fret over merely one failure.'"
+      },
+      {
+        "id": "q378",
+        "questionText": "やっと帰れるかと___、急ぎの仕事が入ってしまった。",
+        "options": [
+          "思うにもまして",
+          "思わんばかりに",
+          "思ったが最後",
+          "思いきや"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "思いきや"
+        },
+        "explanation": "「〜と思いきや」 means 'just when I thought... (the opposite happened)'."
+      }
+    ]
+  }
+]

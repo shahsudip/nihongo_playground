@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 1日目",
+    "questions": [
+      {
+        "id": "254",
+        "questionText": "私は<u>怠け者</u>で忍耐力がないから、この仕事は飽きた。休憩したい。",
+        "options": [
+          "なまけもの",
+          "ならけもの",
+          "なさけもの",
+          "だらけもの"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "なまけもの"
+        },
+        "explanation": "怠け者 is read as なまけもの (lazy person)."
+      },
+      {
+        "id": "255",
+        "questionText": "動物は危険を感じると、自分の身を守ろうとする＿＿＿＿が働く。",
+        "options": [
+          "理性",
+          "思考",
+          "感情",
+          "本能"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "本能"
+        },
+        "explanation": "Animals have an 'instinct' (本能) to protect themselves from danger."
+      },
+      {
+        "id": "256",
+        "questionText": "彼の歌には、使い古した表現やメロディー＿＿＿＿、新しさや魅力的な表現は見つからない。",
+        "options": [
+          "こそすれ",
+          "こそあれ",
+          "はおろか",
+          "ですら"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "こそあれ"
+        },
+        "explanation": "「〜こそあれ」means 'there may be ~, but ...' or 'although there is ~, ...'."
+      }
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_75",
+    "type": "shin_mon_page",
+    "page_file": "75.jpg",
+    "page_number": 75,
+    "questions": [
+      {
+        "id": "q115",
+        "questionText": "<u>午前中</u>は ひまです。",
+        "options": [
+          "ごぜんちゅう",
+          "ごぜんじゅう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ごぜんちゅう"
+        }
+      },
+      {
+        "id": "q116",
+        "questionText": "友だちが <u>にゅういん</u> して います。",
+        "options": [
+          "入院",
+          "入学"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "入院"
+        }
+      },
+      {
+        "id": "q117",
+        "questionText": "むすこは <ruby>大阪<rt>おおさか</rt></ruby>の 会社に _______ います。",
+        "options": [
+          "はたらいて",
+          "つとめて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "つとめて"
+        }
+      },
+      {
+        "id": "q118",
+        "questionText": "こんなに _______ 本を <ruby>持<rt>も</rt></ruby>って いくのは たいへんです。",
+        "options": [
+          "あつい",
+          "ふとい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "あつい"
+        }
+      },
+      {
+        "id": "q119",
+        "questionText": "朝から _______ <ruby>食<rt>た</rt></ruby>べて いないから、おなかが すきました。",
+        "options": [
+          "なにか",
+          "なにも"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "なにも"
+        }
+      },
+      {
+        "id": "q120",
+        "questionText": "明日 <ruby>試験<rt>しけん</rt></ruby>だから、今日は _______ 勉強します。",
+        "options": [
+          "<ruby>寝<rt>ね</rt></ruby>ないで",
+          "<ruby>寝<rt>ね</rt></ruby>ながら"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "<ruby>寝<rt>ね</rt></ruby>ないで"
+        }
+      }
+    ]
+  }
+]

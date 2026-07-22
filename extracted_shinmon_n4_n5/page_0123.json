@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_123",
+    "type": "shin_mon_page",
+    "page_file": "123.jpg",
+    "page_number": 123,
+    "questions": [
+      {
+        "id": "q192",
+        "questionText": "学生の ころ、東京に <u>住んで</u> いました。",
+        "options": [
+          "つんで",
+          "すんで",
+          "そんで",
+          "しんで"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "すんで"
+        }
+      },
+      {
+        "id": "q193",
+        "questionText": "<ruby>庭<rt>にわ</rt></ruby>に <ruby>木<rt>き</rt></ruby>を もう <ruby>一本<rt>いっぽん</rt></ruby> _______ 。",
+        "options": [
+          "うえました",
+          "きりました",
+          "とりました",
+          "かざりました"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "うえました"
+        }
+      },
+      {
+        "id": "q194",
+        "questionText": "ときどき _______ が <ruby>食<rt>た</rt></ruby>べたくなります。",
+        "options": [
+          "<ruby>母<rt>はは</rt></ruby>は <ruby>作<rt>つく</rt></ruby>った <ruby>料理<rt>りょうり</rt></ruby>",
+          "<ruby>母<rt>はは</rt></ruby>に <ruby>作<rt>つく</rt></ruby>ったの <ruby>料理<rt>りょうり</rt></ruby>",
+          "<ruby>母<rt>はは</rt></ruby>の <ruby>作<rt>つく</rt></ruby>った <ruby>料理<rt>りょうり</rt></ruby>",
+          "<ruby>母<rt>はは</rt></ruby>が <ruby>作<rt>つく</rt></ruby>ったの <ruby>料理<rt>りょうり</rt></ruby>"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "<ruby>母<rt>はは</rt></ruby>の <ruby>作<rt>つく</rt></ruby>った <ruby>料理<rt>りょうり</rt></ruby>"
+        }
+      }
+    ]
+  }
+]

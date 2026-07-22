@@ -96,6 +96,7 @@ const BookQuizTakerPage = () => {
 
               flattened.push({
                 ...q,
+                questionText: q.questionText || q.text || q.question || "",
                 id: q.id || `${passageIdx}-${qIdx}`, // preserve original id if it exists
                 passageIndex: passageIdx,
                 passageText: passage.passageText || passage.passage || "",
@@ -112,6 +113,7 @@ const BookQuizTakerPage = () => {
           chapterData.questions.forEach((q, qIdx) => {
             flattened.push({
               ...q,
+              questionText: q.questionText || q.text || q.question || "",
               id: `direct-${qIdx}`,
               passageIndex: 0,
               passageText: "",

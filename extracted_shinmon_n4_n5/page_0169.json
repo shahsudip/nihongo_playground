@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_169",
+    "type": "shin_mon_page",
+    "page_file": "169.jpg",
+    "page_number": 169,
+    "questions": [
+      {
+        "id": "q284",
+        "questionText": "あの スーパーは 近いし、安いし、<u>しなもの</u>が いい。",
+        "options": [
+          "品物",
+          "商品",
+          "売物",
+          "買物"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "品物"
+        }
+      },
+      {
+        "id": "q285",
+        "questionText": "このごろ、いそがしくて メールを _______ して いません。",
+        "options": [
+          "レポート",
+          "ノート",
+          "チェック",
+          "メモ"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "チェック"
+        }
+      },
+      {
+        "id": "q286",
+        "questionText": "<ruby>夏<rt>なつ</rt></ruby><ruby>休<rt>やす</rt></ruby>みは <ruby>明<rt>あ</rt></ruby><ruby>日<rt>した</rt></ruby> _______ <ruby>終<rt>お</rt></ruby>わります。",
+        "options": [
+          "より",
+          "も",
+          "から",
+          "で"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "で"
+        }
+      }
+    ]
+  }
+]

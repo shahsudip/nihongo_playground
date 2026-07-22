@@ -1,0 +1,51 @@
+[
+  {
+    "type": "shin_mon_page",
+    "page_file": "23.jpg",
+    "page_number": 23,
+    "questions": [
+      {
+        "id": "q19",
+        "questionText": "父は フランス語が <u>じょうず</u>です。",
+        "options": [
+          "下手",
+          "手上",
+          "手下",
+          "上手"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "上手"
+        }
+      },
+      {
+        "id": "q20",
+        "questionText": "A 「<ruby>東京<rt>とうきょう</rt></ruby>まで あと どのくらい かかりますか。」\nB 「もうすぐ _______ よ。」",
+        "options": [
+          "つきます",
+          "でます",
+          "うごきます",
+          "かえります"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "つきます"
+        }
+      },
+      {
+        "id": "q21",
+        "questionText": "これは <ruby>日本語<rt>にほんご</rt></ruby>で _______ <ruby>言<rt>い</rt></ruby>いますか。",
+        "options": [
+          "なに",
+          "どう",
+          "どうやって",
+          "なぜ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "どう"
+        }
+      }
+    ]
+  }
+]

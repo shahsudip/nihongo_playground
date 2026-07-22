@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 6日目",
+    "questions": [
+      {
+        "id": "88",
+        "questionText": "「冗談のつもりだったけど、気に<u>障ったら</u>ごめん。」\n彼は素直に謝った。",
+        "options": [
+          "そまったら",
+          "さわったら",
+          "かかったら",
+          "ささったら"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "さわったら"
+        },
+        "explanation": "気に障る (きにさわる) means 'to hurt someone's feelings' or 'to offend'."
+      },
+      {
+        "id": "89",
+        "questionText": "私は音楽ならなんでも好きで、あらゆる___\nのものを聞きます。",
+        "options": [
+          "ケース",
+          "フォーム",
+          "コース",
+          "ジャンル"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "ジャンル"
+        },
+        "explanation": "ジャンル (genre) is appropriate here for types of music."
+      },
+      {
+        "id": "90",
+        "questionText": "犬を飼い始めて___、すっかり生活スタイル\nが変わった。",
+        "options": [
+          "からといって",
+          "からには",
+          "からというもの",
+          "からして"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "からというもの"
+        },
+        "explanation": "〜てからというもの expresses that ever since an event occurred, a state has been completely different."
+      }
+    ]
+  }
+]

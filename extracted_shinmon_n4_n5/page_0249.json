@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_249",
+    "type": "shin_mon_page",
+    "page_file": "249.jpg",
+    "page_number": 249,
+    "questions": [
+      {
+        "id": "q427",
+        "questionText": "この <u>時代</u>の 小説の <ruby>文章<rt>ぶんしょう</rt></ruby>は 読みにくい。",
+        "options": [
+          "じだい",
+          "じたい",
+          "しだい",
+          "じでい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "じだい"
+        }
+      },
+      {
+        "id": "q428",
+        "questionText": "_______ しないで めしあがって ください。",
+        "options": [
+          "けっこう",
+          "えんりょ",
+          "そんけい",
+          "ていねい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "えんりょ"
+        }
+      },
+      {
+        "id": "q429",
+        "questionText": "<ruby>辞書<rt>じしょ</rt></ruby>を _______ <ruby>日本語<rt>にほんご</rt></ruby>の <ruby>本<rt>ほん</rt></ruby>を <ruby>読<rt>よ</rt></ruby>みたい。",
+        "options": [
+          "<ruby>使<rt>つか</rt></ruby>わずで",
+          "<ruby>使<rt>つか</rt></ruby>わずに",
+          "<ruby>使<rt>つか</rt></ruby>って ないで",
+          "<ruby>使<rt>つか</rt></ruby>わない ようで"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "<ruby>使<rt>つか</rt></ruby>わずに"
+        }
+      }
+    ]
+  }
+]

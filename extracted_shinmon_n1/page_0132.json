@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 2 Day 6",
+    "questions": [
+      {
+        "id": "q204",
+        "questionText": "豆腐には絹と木綿があり、絹のほうが舌触りが<u>滑らか</u>だ。",
+        "options": [
+          "なまらか",
+          "なめらか",
+          "やわらか",
+          "おおらか"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "なめらか"
+        },
+        "explanation": "The correct reading of 滑らか is なめらか (smooth)."
+      },
+      {
+        "id": "q205",
+        "questionText": "会話は大丈夫ですが、書くのは、＿＿＿＿ひらがなが書ける程度です。",
+        "options": [
+          "かろうじて",
+          "ひょっとして",
+          "さすがに",
+          "いったいに"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "かろうじて"
+        },
+        "explanation": "かろうじて means 'barely' or 'only just', fitting the context 'I can barely write hiragana'."
+      },
+      {
+        "id": "q206",
+        "questionText": "我々のコンサートは、３月６日の北海道＿＿＿＿、全国20ヵ所で行います。",
+        "options": [
+          "を先駆けて",
+          "を先立って",
+          "を皮切りに",
+          "をめぐって"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "を皮切りに"
+        },
+        "explanation": "〜を皮切りに means 'starting with ~' and is used when a series of similar actions begins."
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 4日目",
+    "questions": [
+      {
+        "id": "q302",
+        "questionText": "さんざん苦労をかけてきた<u>償い</u>に、これからは親孝行すると誓った。",
+        "options": [
+          "つぐない",
+          "おぎない",
+          "まかない",
+          "ただよい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "つぐない"
+        },
+        "explanation": "償い (つぐない) means compensation or atonement."
+      },
+      {
+        "id": "q303",
+        "questionText": "泥棒は、何も＿＿＿＿＿を残していない。",
+        "options": [
+          "手はず",
+          "手がかり",
+          "手当て",
+          "手ごろ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "手がかり"
+        },
+        "explanation": "手がかり (てがかり) means 'clue' or 'lead'. The sentence means 'The thief left no clues.'"
+      },
+      {
+        "id": "q304",
+        "questionText": "昨日の暖かさ＿＿＿＿＿、今日の寒いことといったらない。",
+        "options": [
+          "にとりかえ",
+          "にいれかえ",
+          "におきかえ",
+          "にひきかえ"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "にひきかえ"
+        },
+        "explanation": "〜にひきかえ is a grammar pattern meaning 'in contrast to'. The sentence expresses contrast between yesterday's warmth and today's extreme cold."
+      }
+    ]
+  }
+]

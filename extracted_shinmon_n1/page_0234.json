@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 2日目",
+    "questions": [
+      {
+        "id": "q403",
+        "questionText": "恩師に宛てた少年の<u>遺書</u>はノートに鉛筆で書かれていた。",
+        "options": [
+          "ちょしょ",
+          "いしょ",
+          "きしょ",
+          "けんしょ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "いしょ"
+        },
+        "explanation": "遺書 is read as いしょ, meaning a suicide note or will."
+      },
+      {
+        "id": "q404",
+        "questionText": "平日は忙しくてできないので休日は＿＿＿＿＿掃除や洗濯などの家事をしています。",
+        "options": [
+          "もっぱら",
+          "やたらと",
+          "とりわけ",
+          "もろに"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "もっぱら"
+        },
+        "explanation": "もっぱら means 'wholly, mainly, exclusively'. It fits well with doing chores exclusively on days off."
+      },
+      {
+        "id": "q405",
+        "questionText": "就職活動の時期＿＿＿＿＿、リクルートスーツの若い人たちの姿が目立つようになった。",
+        "options": [
+          "とばかりに",
+          "とみえて",
+          "ともなしに",
+          "とはいえ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "とみえて"
+        },
+        "explanation": "とみえて means 'it seems that', indicating a guess based on the situation (young people in suits)."
+      }
+    ]
+  }
+]

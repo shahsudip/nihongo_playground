@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 3 Day 6",
+    "questions": [
+      {
+        "id": "329",
+        "questionText": "あの監督は大胆かつ<u>慎重</u>にチームを率いている。",
+        "options": [
+          "しんちょう",
+          "ちんちょう",
+          "しんちゅう",
+          "ちんちゅう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "しんちょう"
+        },
+        "explanation": "The reading of 慎重 (careful/cautious) is しんちょう."
+      },
+      {
+        "id": "330",
+        "questionText": "受験する際に、日本史、___世界史を選択してください。",
+        "options": [
+          "もしくは",
+          "しかも",
+          "なおさら",
+          "ゆえに"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "もしくは"
+        },
+        "explanation": "「もしくは」 means 'or', fitting the context of choosing between Japanese history and world history."
+      },
+      {
+        "id": "331",
+        "questionText": "法律で使用を禁じられている薬を使うなど、医師にある___行為だ。",
+        "options": [
+          "まじき",
+          "える",
+          "がたい",
+          "べき"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "まじき"
+        },
+        "explanation": "「〜にあるまじき」 is a grammar pattern meaning 'unbecoming of' or 'unforgivable for' someone in a certain position."
+      }
+    ]
+  }
+]

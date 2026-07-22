@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 3日目",
+    "questions": [
+      {
+        "id": "q156",
+        "questionText": "A「頑張っても無駄だよ。」\nB「大丈夫だよ、<u>挑戦</u>してみようよ。」",
+        "options": [
+          "ちょうせん",
+          "とうせん",
+          "ちゅうせん",
+          "さんせん"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ちょうせん"
+        },
+        "explanation": "挑戦 is read as ちょうせん (challenge)."
+      },
+      {
+        "id": "q157",
+        "questionText": "勉強が一番＿＿＿＿＿時間帯は、個人によって違う。",
+        "options": [
+          "はかどる",
+          "ありふれる",
+          "すたれる",
+          "にぎわう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "はかどる"
+        },
+        "explanation": "はかどる means to make progress, which fits contextually: 'The time of day when study makes the most progress varies from person to person.'"
+      },
+      {
+        "id": "q158",
+        "questionText": "花見シーズン＿＿＿＿＿、この辺はにぎやかになりますよ。",
+        "options": [
+          "ともなしに",
+          "ともなると",
+          "というもの",
+          "といえども"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ともなると"
+        },
+        "explanation": "～ともなると means 'when it comes to (a special time/occasion)', indicating that the situation naturally follows. 'When cherry blossom viewing season arrives, this area becomes lively.'"
+      }
+    ]
+  }
+]

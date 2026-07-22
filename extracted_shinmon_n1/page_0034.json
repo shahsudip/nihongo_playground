@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 1 Day 3",
+    "questions": [
+      {
+        "id": "q34",
+        "questionText": "<u>詳細</u>は添付したファイルにまとめました。作業の際、適宜ご覧ください。",
+        "options": [
+          "しょうさい",
+          "ようさい",
+          "めいさい",
+          "そうさい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "しょうさい"
+        },
+        "explanation": "The reading of 詳細 (details) is しょうさい."
+      },
+      {
+        "id": "q35",
+        "questionText": "この商品は、ネットで＿＿＿＿ことができます。",
+        "options": [
+          "取り寄せる",
+          "取り混ぜる",
+          "取り組む",
+          "取り戻す"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "取り寄せる"
+        },
+        "explanation": "取り寄せる means 'to order' or 'to have something sent'. 'You can order this product online.'"
+      },
+      {
+        "id": "q36",
+        "questionText": "健康な体＿＿＿＿の趣味や仕事ですから、無理をしないでください。",
+        "options": [
+          "なし",
+          "なくて",
+          "あって",
+          "あれば"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "あって"
+        },
+        "explanation": "「〜あっての」 is a grammar pattern meaning 'which exists thanks to / requires'. Hobbies and work are only possible because of a healthy body."
+      }
+    ]
+  }
+]

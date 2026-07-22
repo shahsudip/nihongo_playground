@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 2日目",
+    "questions": [
+      {
+        "id": "q391",
+        "questionText": "購入した家が<u>欠陥</u>住宅だと知った瞬間、我が家の輝く未来は砕け散った。",
+        "options": [
+          "けっかん",
+          "けっそん",
+          "けつぼう",
+          "けつじょ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "けっかん"
+        },
+        "explanation": "欠陥 (けっかん) means defect or flaw."
+      },
+      {
+        "id": "q392",
+        "questionText": "最近ゲームに熱中しすぎて、勉強が＿＿＿＿＿になっている。",
+        "options": [
+          "かすか",
+          "緩やか",
+          "大まか",
+          "おろそか"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "おろそか"
+        },
+        "explanation": "おろそかになる means to be neglected."
+      },
+      {
+        "id": "q393",
+        "questionText": "A「素敵なヴァイオリンね。ちょっと弾いて＿＿＿＿＿。」\nB「今、練習中だから、また今度ね。」",
+        "options": [
+          "みせて",
+          "みるね",
+          "聞こえて",
+          "聞かれて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "みせて"
+        },
+        "explanation": "～てみせる means to do something and show it. Here, 弾いてみせて means 'play it and show me' or 'play it for me'."
+      }
+    ]
+  }
+]

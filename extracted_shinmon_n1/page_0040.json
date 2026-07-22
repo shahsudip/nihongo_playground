@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 3日目",
+    "questions": [
+      {
+        "id": "q43",
+        "questionText": "今朝は庭に<u>霜</u>が降りていました。",
+        "options": [
+          "しも",
+          "らい",
+          "きり",
+          "つゆ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "しも"
+        },
+        "explanation": "霜 (しも) means frost."
+      },
+      {
+        "id": "q44",
+        "questionText": "ダイエットに成功したのはいいが、ズボンが＿＿＿＿になった。",
+        "options": [
+          "ぴちぴち",
+          "つくづく",
+          "ながなが",
+          "だぶだぶ"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "だぶだぶ"
+        },
+        "explanation": "だぶだぶ means baggy or loose-fitting, which fits the context of pants becoming too big after a successful diet."
+      },
+      {
+        "id": "q45",
+        "questionText": "あの人＿＿＿＿、約束の時間に間に合ったことがないんだから…。",
+        "options": [
+          "ときたら",
+          "にしたら",
+          "とみたら",
+          "につけても"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ときたら"
+        },
+        "explanation": "〜ときたら is used to bring up a topic, often with a feeling of criticism or exasperation, meaning 'when it comes to ~'."
+      }
+    ]
+  }
+]

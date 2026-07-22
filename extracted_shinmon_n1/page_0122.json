@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 5日目",
+    "questions": [
+      {
+        "id": "q189",
+        "questionText": "私は焦げ臭いにおいで<u>火災</u>に気付き、慌てて外に出た。",
+        "options": [
+          "かさい",
+          "かえん",
+          "ひさい",
+          "ひえん"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "かさい"
+        },
+        "explanation": "火災 (かさい) means fire or conflagration."
+      },
+      {
+        "id": "q190",
+        "questionText": "これは簡単そうに見えるけれど、___やってみると、なかなかできない。",
+        "options": [
+          "いざ",
+          "かつて",
+          "ずばり",
+          "まさしく"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "いざ"
+        },
+        "explanation": "'いざ' is used when something actually happens or when actually trying something (e.g., 'いざやってみると' - when you actually try doing it)."
+      },
+      {
+        "id": "q191",
+        "questionText": "今日がセールと知っていたら昨日買わなかった___、損をしてしまった。",
+        "options": [
+          "にあって",
+          "ものを",
+          "ともなると",
+          "こととて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ものを"
+        },
+        "explanation": "'〜ものを' is used to express regret or dissatisfaction that reality didn't match a hypothetical better situation (meaning 'but...')."
+      }
+    ]
+  }
+]

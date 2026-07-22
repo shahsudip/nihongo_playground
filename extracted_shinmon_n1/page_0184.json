@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 4日目",
+    "questions": [
+      {
+        "id": "305",
+        "questionText": "彼女は損害<u>賠償</u>を請求する訴訟を起こした。",
+        "options": [
+          "ぼうしょう",
+          "べいしょう",
+          "ばいしょう",
+          "ほうしょう"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "ばいしょう"
+        },
+        "explanation": "賠償 is read as ばいしょう (baishou), meaning 'compensation' or 'damages'."
+      },
+      {
+        "id": "306",
+        "questionText": "地震の影響で道路が切断され、復旧の＿＿＿＿＿＿。",
+        "options": [
+          "めどが立たない",
+          "つじつまが合わない",
+          "すじが通らない",
+          "願いがかなわない"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "めどが立たない"
+        },
+        "explanation": "復旧のめどが立たない means 'there is no prospect for restoration'. めどが立つ means 'there is a prospect/hope (for completion)'."
+      },
+      {
+        "id": "307",
+        "questionText": "あの先生は教え方＿＿＿＿＿＿、面倒見もいい。",
+        "options": [
+          "はまでもなく",
+          "もさることながら",
+          "はのみならず",
+          "ではあるまいし"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "もさることながら"
+        },
+        "explanation": "AもさることながらB means 'A is a matter of course, but B is also...'. Therefore, 'not only is their teaching good, but they are also caring'."
+      }
+    ]
+  }
+]

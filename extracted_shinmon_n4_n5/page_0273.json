@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_273",
+    "type": "shin_mon_page",
+    "page_file": "273.jpg",
+    "page_number": 273,
+    "questions": [
+      {
+        "id": "q463",
+        "questionText": "一人じゃ 重いので、ちょっと 手を <u>貸して</u> ください。",
+        "options": [
+          "かして",
+          "だして",
+          "たして",
+          "さして"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "かして"
+        }
+      },
+      {
+        "id": "q464",
+        "questionText": "A 「ごはん、まだ？」\nB 「あと ちょっとで _______ よ。」",
+        "options": [
+          "うまい",
+          "やれる",
+          "できる",
+          "あがる"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "できる"
+        }
+      },
+      {
+        "id": "q465",
+        "questionText": "<ruby>映画<rt>えいが</rt></ruby>は <ruby>今<rt>いま</rt></ruby> _______ 。",
+        "options": [
+          "<ruby>始<rt>はじ</rt></ruby>まる ように なった",
+          "<ruby>始<rt>はじ</rt></ruby>まって いる ときだ",
+          "<ruby>始<rt>はじ</rt></ruby>まった ところだ",
+          "<ruby>始<rt>はじ</rt></ruby>まった ままだ"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "<ruby>始<rt>はじ</rt></ruby>まった ところだ"
+        }
+      }
+    ]
+  }
+]

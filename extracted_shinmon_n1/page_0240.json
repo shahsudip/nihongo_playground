@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 4 Day 3",
+    "questions": [
+      {
+        "id": "q412",
+        "questionText": "この町は鉄鋼業と共に<u>成熟</u>し、繁栄し、そして衰退した。",
+        "options": [
+          "せいじゅく",
+          "じょうじゅく",
+          "せいじょく",
+          "じょうじょく"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "せいじゅく"
+        },
+        "explanation": "成熟 is read as せいじゅく (maturity, to mature)."
+      },
+      {
+        "id": "q413",
+        "questionText": "インフルエンザにかかり、高熱で意識が＿＿＿＿＿きた。",
+        "options": [
+          "もうろうとして",
+          "ぼうぜんとして",
+          "はかなくなって",
+          "うつろになって"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "もうろうとして"
+        },
+        "explanation": "意識がもうろうとする means 'consciousness becomes hazy or blurred', typical of a high fever."
+      },
+      {
+        "id": "q414",
+        "questionText": "この宝石は本物＿＿＿＿＿偽物＿＿＿＿＿わからない。",
+        "options": [
+          "とも／とも",
+          "だの／だの",
+          "だに／だに",
+          "なり／なり"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "とも／とも"
+        },
+        "explanation": "「〜とも〜ともわからない」 is a grammar structure meaning 'cannot tell whether it is A or B'."
+      }
+    ]
+  }
+]

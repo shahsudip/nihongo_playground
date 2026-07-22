@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 2日目",
+    "questions": [
+      {
+        "id": "q28",
+        "questionText": "あの<u>縁</u>なしの眼鏡をかけている人は、弁護士さんです。",
+        "options": [
+          "ふち",
+          "えん",
+          "ふし",
+          "えり"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ふち"
+        },
+        "explanation": "縁 (ふち) means rim or edge. 縁なし (ふちなし) means rimless."
+      },
+      {
+        "id": "q29",
+        "questionText": "___交際中の二人が、ついに婚約を発表しました。",
+        "options": [
+          "不意に",
+          "前もって",
+          "あらかじめ",
+          "かねてより"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "かねてより"
+        },
+        "explanation": "かねてより means 'for some time' or 'previously'. It fits the context of 'the couple who had been dating for some time'."
+      },
+      {
+        "id": "q30",
+        "questionText": "彼に連絡___、連絡先がわからないので、できない。",
+        "options": [
+          "するかぎり",
+          "しようが",
+          "しようにも",
+          "しまいが"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "しようにも"
+        },
+        "explanation": "～しようにも～できない is a grammar pattern meaning 'even if one wanted to do ~, one cannot'."
+      }
+    ]
+  }
+]

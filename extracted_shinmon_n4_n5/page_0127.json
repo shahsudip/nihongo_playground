@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_127",
+    "type": "shin_mon_page",
+    "page_file": "127.jpg",
+    "page_number": 127,
+    "questions": [
+      {
+        "id": "q198",
+        "questionText": "あの 道は 今、水道の <u>工事</u>を して います。",
+        "options": [
+          "こおじ",
+          "こうじ",
+          "くうじ",
+          "こんじ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "こうじ"
+        }
+      },
+      {
+        "id": "q199",
+        "questionText": "A 「じゃ、また <ruby>明日<rt>あした</rt></ruby>。」\nB 「_______ 。」",
+        "options": [
+          "ただいま",
+          "おかげさまで",
+          "あとで",
+          "おやすみなさい"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "おやすみなさい"
+        }
+      },
+      {
+        "id": "q200",
+        "questionText": "<ruby>朝<rt>あさ</rt></ruby>、<ruby>学校<rt>がっこう</rt></ruby>に _______ 、お<ruby>弁当<rt>べんとう</rt></ruby>を <ruby>買<rt>か</rt></ruby>って きました。",
+        "options": [
+          "<ruby>来<rt>き</rt></ruby>た <ruby>前<rt>まえ</rt></ruby>に",
+          "<ruby>来<rt>く</rt></ruby>る <ruby>前<rt>まえ</rt></ruby>に",
+          "<ruby>来<rt>く</rt></ruby>る <ruby>後<rt>あと</rt></ruby>で",
+          "<ruby>来<rt>き</rt></ruby>た <ruby>後<rt>あと</rt></ruby>で"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "<ruby>来<rt>く</rt></ruby>る <ruby>前<rt>まえ</rt></ruby>に"
+        }
+      }
+    ]
+  }
+]

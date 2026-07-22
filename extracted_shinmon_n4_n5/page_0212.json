@@ -1,0 +1,70 @@
+[
+  {
+    "id": "page_212",
+    "type": "shin_mon_page",
+    "page_file": "212.jpg",
+    "page_number": 212,
+    "questions": [
+      {
+        "id": "q371",
+        "questionText": "<u>正月</u>には 帰ります。",
+        "options": [
+          "しょうげつ",
+          "しょうがつ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "しょうがつ"
+        }
+      },
+      {
+        "id": "q372",
+        "questionText": "この 町は 自動車<u>こうぎょう</u>が さかんです。",
+        "options": [
+          "工場",
+          "工業"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "工業"
+        }
+      },
+      {
+        "id": "q373",
+        "questionText": "私は、_______ ものが <ruby>苦<rt>にが</rt></ruby><ruby>手<rt>て</rt></ruby>で、<ruby>特<rt>とく</rt></ruby>に チョコレートは だめなんです。",
+        "options": [
+          "あまい",
+          "にがい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "あまい"
+        }
+      },
+      {
+        "id": "q374",
+        "questionText": "_______ ように やわらかい 紙で クッキーを つつんだ。",
+        "options": [
+          "うつさない",
+          "われない"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "われない"
+        }
+      },
+      {
+        "id": "q375",
+        "questionText": "すみませんが、手を _______ ください。",
+        "options": [
+          "洗わせて",
+          "洗われて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "洗わせて"
+        }
+      }
+    ]
+  }
+]

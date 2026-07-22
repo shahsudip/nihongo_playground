@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_83",
+    "type": "shin_mon_page",
+    "page_file": "83.jpg",
+    "page_number": 83,
+    "questions": [
+      {
+        "id": "q132",
+        "questionText": "<u>毎月</u>、銀行へ 行きます。",
+        "options": [
+          "まいつき",
+          "まいがつ",
+          "めいげつ",
+          "めいつき"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "まいつき"
+        }
+      },
+      {
+        "id": "q133",
+        "questionText": "ぼくの しゅみは <ruby>山<rt>やま</rt></ruby>に _______ ことです。",
+        "options": [
+          "あるく",
+          "のぼる",
+          "おりる",
+          "わたる"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "のぼる"
+        }
+      },
+      {
+        "id": "q134",
+        "questionText": "A 「どうした <sub>a</sub>_______ ？」\nB 「おなかが いたい <sub>b</sub>_______ です。」",
+        "options": [
+          "a. の b. なん",
+          "a. の b. ん",
+          "a. か b. ん",
+          "a. か b. の"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "a. の b. ん"
+        }
+      }
+    ]
+  }
+]

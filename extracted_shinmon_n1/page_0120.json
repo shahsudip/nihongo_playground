@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 2 Day 5",
+    "questions": [
+      {
+        "id": "186",
+        "questionText": "昨夜は酔って騒いで、醜い<u>姿</u>をさらしたらしい。",
+        "options": [
+          "そがた",
+          "さがた",
+          "しがた",
+          "すがた"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "すがた"
+        },
+        "explanation": "The correct reading of the kanji 姿 is すがた (sugata), meaning figure or appearance."
+      },
+      {
+        "id": "187",
+        "questionText": "富士山は、静岡県と山梨県に＿＿＿＿＿います。",
+        "options": [
+          "からまって",
+          "くぐって",
+          "ひっかけて",
+          "またがって"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "またがって"
+        },
+        "explanation": "またがる (matagaru) means to span or extend over. Mount Fuji spans across Shizuoka and Yamanashi prefectures."
+      },
+      {
+        "id": "188",
+        "questionText": "このくらいの簡単な計算なら、電卓を使う＿＿＿＿＿。",
+        "options": [
+          "に足る",
+          "きらいがある",
+          "までもない",
+          "といったらない"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "までもない"
+        },
+        "explanation": "〜までもない (made mo nai) means 'there is no need to ~'. For such simple calculations, there is no need to use a calculator."
+      }
+    ]
+  }
+]

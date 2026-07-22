@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_115",
+    "type": "shin_mon_page",
+    "page_file": "115.jpg",
+    "page_number": 115,
+    "questions": [
+      {
+        "id": "q180",
+        "questionText": "あの <u>みせ</u>で 飲み物を 買いましょう。",
+        "options": [
+          "館",
+          "家",
+          "屋",
+          "店"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "店"
+        }
+      },
+      {
+        "id": "q181",
+        "questionText": "お<ruby>客<rt>きゃく</rt></ruby>さんが <ruby>来<rt>く</rt></ruby>るから、まどガラスを _______ 。",
+        "options": [
+          "みがきましよう",
+          "せんたくしましょう",
+          "かたづけましょう",
+          "けしましょう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "みがきましよう"
+        }
+      },
+      {
+        "id": "q182",
+        "questionText": "この ネクタイは <ruby>妻<rt>つま</rt></ruby>が _______ 。",
+        "options": [
+          "<ruby>作<rt>つく</rt></ruby>って あげました",
+          "<ruby>作<rt>つく</rt></ruby>って くださいました",
+          "<ruby>作<rt>つく</rt></ruby>って くれました",
+          "<ruby>作<rt>つく</rt></ruby>って やりました"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "<ruby>作<rt>つく</rt></ruby>って くれました"
+        }
+      }
+    ]
+  }
+]

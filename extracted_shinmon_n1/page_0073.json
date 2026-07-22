@@ -1,0 +1,98 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "もんだい",
+    "questions": [
+      {
+        "id": "q97",
+        "questionText": "作業が進まず、<u>滞って</u>いる。",
+        "options": [
+          "とどこおって",
+          "たまって",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "とどこおって"
+        },
+        "explanation": "滞る (とどこおる) means to stagnate or be delayed."
+      },
+      {
+        "id": "q98",
+        "questionText": "<u>皇居</u>でマラソン大会が行われた。",
+        "options": [
+          "ごしょ",
+          "こうきょ",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "こうきょ"
+        },
+        "explanation": "皇居 (こうきょ) means the Imperial Palace."
+      },
+      {
+        "id": "q99",
+        "questionText": "___を張らないで、素直に謝ったほうがいいよ。",
+        "options": [
+          "意地",
+          "意図",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "意地"
+        },
+        "explanation": "意地を張る (いじをはる) is an idiom meaning to be stubborn or obstinate."
+      },
+      {
+        "id": "q100",
+        "questionText": "予習、復習を___、勉強し続けることが重要だ。",
+        "options": [
+          "滞らずに",
+          "怠らずに",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "怠らずに"
+        },
+        "explanation": "怠る (おこたる) means to neglect. 怠らずに means without neglecting."
+      },
+      {
+        "id": "q101",
+        "questionText": "妻は図書館で司書として働く___、研究を続けている。",
+        "options": [
+          "かたわら",
+          "がてら",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "かたわら"
+        },
+        "explanation": "〜かたわら means 'while doing ~ on the side' or 'besides doing ~'."
+      },
+      {
+        "id": "q102",
+        "questionText": "彼女は日本文化を愛して___。",
+        "options": [
+          "やめない",
+          "やまない",
+          "",
+          ""
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "やまない"
+        },
+        "explanation": "〜てやまない is a grammar structure meaning 'greatly ~' or 'never cease to ~'."
+      }
+    ]
+  }
+]

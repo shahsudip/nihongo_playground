@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_65",
+    "type": "shin_mon_page",
+    "page_file": "65.jpg",
+    "page_number": 65,
+    "questions": [
+      {
+        "id": "q82",
+        "questionText": "来週、<u>国</u>へ 帰ります。",
+        "options": [
+          "こに",
+          "にく",
+          "くに",
+          "こく"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "くに"
+        }
+      },
+      {
+        "id": "q83",
+        "questionText": "_______ <ruby>家<rt>いえ</rt></ruby>ですが、<ruby>一度<rt>いちど</rt></ruby> あそびに <ruby>来<rt>き</rt></ruby>て ください。",
+        "options": [
+          "ほそい",
+          "せまい",
+          "すくない",
+          "ちょっと"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "せまい"
+        }
+      },
+      {
+        "id": "q84",
+        "questionText": "<ruby>宿題<rt>しゅくだい</rt></ruby>を _______ <ruby>学校<rt>がっこう</rt></ruby>へ <ruby>来<rt>き</rt></ruby>ました。",
+        "options": [
+          "しないから",
+          "しないで",
+          "しないが",
+          "しないて"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "しないで"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 5日目",
+    "questions": [
+      {
+        "id": "q323",
+        "questionText": "大統領夫妻がダンスを<u>披露</u>すると、盛大な拍手と歓声が上がった。",
+        "options": [
+          "ひろう",
+          "ひろ",
+          "はろう",
+          "はろ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "ひろう"
+        },
+        "explanation": "披露 is read as ひろう, meaning presentation or demonstration."
+      },
+      {
+        "id": "q324",
+        "questionText": "クレジットカードは、カード会社の＿＿＿＿に通らなければ発行されません。",
+        "options": [
+          "審査",
+          "検査",
+          "捜査",
+          "調査"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "審査"
+        },
+        "explanation": "審査 (しんさ) means screening or examination, which fits 'screening by the credit card company'."
+      },
+      {
+        "id": "q325",
+        "questionText": "彼は周囲の反対をものとも＿＿＿＿、目的を達成した。",
+        "options": [
+          "せずに",
+          "よそに",
+          "までに",
+          "ために"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "せずに"
+        },
+        "explanation": "「～をものともせず（に）」 is a grammar structure meaning 'without being deterred by' or 'ignoring'."
+      }
+    ]
+  }
+]

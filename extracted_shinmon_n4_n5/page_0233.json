@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_233",
+    "type": "shin_mon_page",
+    "page_file": "233.jpg",
+    "page_number": 233,
+    "questions": [
+      {
+        "id": "q403",
+        "questionText": "薬を もらう ために、２週間 に １回、病院に <u>通って</u> います。",
+        "options": [
+          "とおって",
+          "うたって",
+          "かよって",
+          "おこなって"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "かよって"
+        }
+      },
+      {
+        "id": "q404",
+        "questionText": "<ruby>日本語<rt>にほんご</rt></ruby>は、<ruby>前<rt>まえ</rt></ruby>より _______ <ruby>分<rt>わ</rt></ruby>かる ように なり ました。",
+        "options": [
+          "きっと",
+          "かならず",
+          "もう",
+          "ずっと"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "ずっと"
+        }
+      },
+      {
+        "id": "q405",
+        "questionText": "<ruby>書<rt>か</rt></ruby>ける ところ _______ <ruby>書<rt>か</rt></ruby>きました。",
+        "options": [
+          "ほど",
+          "だけ",
+          "ぐらい",
+          "ばかり"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "だけ"
+        }
+      }
+    ]
+  }
+]

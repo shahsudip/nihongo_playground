@@ -1,0 +1,86 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "もんだい",
+    "questions": [
+      {
+        "id": "q484",
+        "questionText": "髪を金色に<u>染めた</u>若者が老人に席を譲った。",
+        "options": [
+          "しめた",
+          "そめた"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "そめた"
+        },
+        "explanation": "「染める」(そめる) means 'to dye', so '染めた' is read as 'そめた'."
+      },
+      {
+        "id": "q485",
+        "questionText": "全国の主な岬を<u>巡る</u>。",
+        "options": [
+          "めぐる",
+          "まわる"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "めぐる"
+        },
+        "explanation": "「巡る」(めぐる) means 'to go around' or 'to tour'."
+      },
+      {
+        "id": "q486",
+        "questionText": "いじめられていた彼女を___者は誰もいなかった。",
+        "options": [
+          "なだめる",
+          "かばう"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "かばう"
+        },
+        "explanation": "「かばう」means 'to protect'. 'なだめる' means 'to calm down/soothe'."
+      },
+      {
+        "id": "q487",
+        "questionText": "A「彼ら、別れたんだって。」\nB「___！」",
+        "options": [
+          "さすが",
+          "まさか"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "まさか"
+        },
+        "explanation": "「まさか」is used to express disbelief, like 'No way!' or 'You must be joking!'."
+      },
+      {
+        "id": "q488",
+        "questionText": "誰にでも___言いたくないことはあるだろう。",
+        "options": [
+          "多かれ少なかれ",
+          "多くては少なくては"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "多かれ少なかれ"
+        },
+        "explanation": "「多かれ少なかれ」is an idiomatic expression meaning 'more or less' or 'to some degree'."
+      },
+      {
+        "id": "q489",
+        "questionText": "引き出しの中からずいぶん___写真が出てきた。",
+        "options": [
+          "古ぶった",
+          "古びた"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "古びた"
+        },
+        "explanation": "「古びた」means 'old-looking' or 'worn out'. '古ぶった' is incorrect."
+      }
+    ]
+  }
+]

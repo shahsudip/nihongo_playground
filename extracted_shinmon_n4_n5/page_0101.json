@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_101",
+    "type": "shin_mon_page",
+    "page_file": "101.jpg",
+    "page_number": 101,
+    "questions": [
+      {
+        "id": "q159",
+        "questionText": "うさぎは <u>め</u>が 赤い。",
+        "options": [
+          "目",
+          "耳",
+          "首",
+          "足"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "目"
+        }
+      },
+      {
+        "id": "q160",
+        "questionText": "ご _______ は お<ruby>元気<rt>げんき</rt></ruby>ですか。",
+        "options": [
+          "いもうと",
+          "かあさま",
+          "おくさん",
+          "りょうしん"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "りょうしん"
+        }
+      },
+      {
+        "id": "q161",
+        "questionText": "A 「<ruby>今日<rt>きょう</rt></ruby>の <ruby>試験<rt>しけん</rt></ruby>、ぜんぜん できませんでした。」\nB 「_______ むずかしかったんですか。」",
+        "options": [
+          "どんな ように",
+          "そんなに",
+          "こんなに",
+          "あんなに"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "そんなに"
+        }
+      }
+    ]
+  }
+]

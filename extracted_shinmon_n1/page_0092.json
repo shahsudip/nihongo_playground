@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 2日目",
+    "questions": [
+      {
+        "id": "q144",
+        "questionText": "『冠婚葬祭の基礎知識』という本で<u>墓</u>参りの作法について勉強した。",
+        "options": [
+          "ほか",
+          "ぼち",
+          "はか",
+          "きち"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "はか"
+        },
+        "explanation": "The kanji 墓 is read as はか in 墓参り (はかまいり, visiting a grave)."
+      },
+      {
+        "id": "q145",
+        "questionText": "その店は、客を取り戻すために＿＿＿＿＿値下げをした。",
+        "options": [
+          "陰気な",
+          "大まかな",
+          "大胆な",
+          "臆病な"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "大胆な"
+        },
+        "explanation": "大胆な (だいたんな) means 'bold' or 'daring'. 'The store made a bold price reduction to win back customers.'"
+      },
+      {
+        "id": "q146",
+        "questionText": "彼は、来るな＿＿＿＿＿背を向けた。",
+        "options": [
+          "とばかりに",
+          "と思いきや",
+          "といえども",
+          "ともなしに"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "とばかりに"
+        },
+        "explanation": "〜とばかりに means 'as if to say ~'. 'He turned his back as if to say \"Don't come\".'"
+      }
+    ]
+  }
+]

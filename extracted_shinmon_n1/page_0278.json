@@ -1,0 +1,86 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 4 Day 7",
+    "questions": [
+      {
+        "id": "q478",
+        "questionText": "タクシーの運転手は強盗に命まで<u>奪われた</u>。",
+        "options": [
+          "おそわれた",
+          "うばわれた"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "うばわれた"
+        },
+        "explanation": "奪われる (うばわれる) means 'to be robbed of/deprived of'."
+      },
+      {
+        "id": "q479",
+        "questionText": "<u>不審</u>な荷物を見つけたので駅員に知らせた。",
+        "options": [
+          "ふそんな",
+          "ふしんな"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ふしんな"
+        },
+        "explanation": "不審 (ふしん) means 'suspicious'."
+      },
+      {
+        "id": "q480",
+        "questionText": "叔父の会社は借金が＿＿＿＿、倒産してしまった。",
+        "options": [
+          "かすみ",
+          "かさみ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "かさみ"
+        },
+        "explanation": "嵩む (かさむ) means 'to pile up / accumulate'. 借金がかさむ means debts pile up."
+      },
+      {
+        "id": "q481",
+        "questionText": "準備はすべて整った。天候だけが＿＿＿＿だ。",
+        "options": [
+          "気まぐれ",
+          "気がかり"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "気がかり"
+        },
+        "explanation": "気がかり means 'concern / worry'."
+      },
+      {
+        "id": "q482",
+        "questionText": "欲しいけど高いから、＿＿＿＿やめていたけど、今日こそ買おうと思う。",
+        "options": [
+          "買いかけては",
+          "買ったと思いきや"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "買いかけては"
+        },
+        "explanation": "V-ます stem + かけては means 'repeatedly starting to do something but not finishing'."
+      },
+      {
+        "id": "q483",
+        "questionText": "いつでも相談に乗ると＿＿＿＿手前、どんなに忙しくても断れない。",
+        "options": [
+          "言う",
+          "言った"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "言った"
+        },
+        "explanation": "V-た + 手前 means 'considering that one has done... (one is obliged to do something else)'."
+      }
+    ]
+  }
+]

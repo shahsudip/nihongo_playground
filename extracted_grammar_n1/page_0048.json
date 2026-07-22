@@ -1,0 +1,136 @@
+[
+  {
+    "type": "header",
+    "title": "第19回"
+  },
+  {
+    "type": "mondai_1",
+    "id": "q1",
+    "questionText": "バレーボールの選手になりたいなら、身長は高い（　　　）だろう。",
+    "options": [
+      "といわんばかり",
+      "といったらない",
+      "に越したことはない",
+      "に限ったことではない"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q2",
+    "questionText": "結婚してから、彼は以前（　　　）まじめに働くようになった。",
+    "options": [
+      "と相まって",
+      "にもまして",
+      "ならいざ知らず",
+      "としたところで"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q3",
+    "questionText": "私が書いた論文は、先輩の論文の足元にも（　　　）ものだった。",
+    "options": [
+      "及ばない",
+      "すまない",
+      "たえない",
+      "足りない"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q4",
+    "questionText": "この記事は、取材に決して手を抜かない彼（　　　）はじめて書けたのだろう。",
+    "options": [
+      "にして",
+      "にせよ",
+      "をおいて",
+      "をもって"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q5",
+    "questionText": "このめがねをかけると、まるで映像が目の前にある（　　　）見える。",
+    "options": [
+      "とみえて",
+      "かのように",
+      "とばかりに",
+      "かと思いきや"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q6",
+    "questionText": "問題は以前から指摘されていたが、今日（　　　）まったく改善されていない。",
+    "options": [
+      "限りで",
+      "に至るまで",
+      "はさておき",
+      "はもとより"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q7",
+    "questionText": "何日も眠れず、（　　　）悩んで、仕事をやめることにした。",
+    "options": [
+      "悩みに",
+      "悩まずとも",
+      "悩もうにも",
+      "悩むともなく"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q1",
+    "questionText": "救命士 _____ _____ __★__ _____ も冷静さを保つことが求められる。",
+    "options": [
+      "に",
+      "は",
+      "緊急時",
+      "あって"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q2",
+    "questionText": "いくら忙しくても、時間がない _____ _____ __★__ _____ 趣味があるはずだ。",
+    "options": [
+      "なら",
+      "できる",
+      "ない",
+      "なりに"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q3",
+    "questionText": "母は父が亡くなってから _____ _____ __★__ _____ 泣いている。",
+    "options": [
+      "という",
+      "は",
+      "父を思い出して",
+      "もの"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  }
+]

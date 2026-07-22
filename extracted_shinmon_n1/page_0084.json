@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第2週 1日目",
+    "questions": [
+      {
+        "id": "132",
+        "questionText": "注射で傷の痛みは治まったが、おなかが痛くなって、胃腸薬を<u>一錠</u>飲んだ。",
+        "options": [
+          "いちじょう",
+          "ひとつぶ",
+          "いっぷく",
+          "いっぽう"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "いちじょう"
+        },
+        "explanation": "一錠 (いちじょう) means 'one tablet' or 'one pill'."
+      },
+      {
+        "id": "133",
+        "questionText": "学生時代は柔道に、現在はゴルフに＿＿＿＿＿います。",
+        "options": [
+          "追い込んで",
+          "放り込んで",
+          "打ち込んで",
+          "割り込んで"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "打ち込んで"
+        },
+        "explanation": "打ち込む means 'to devote oneself to' or 'to throw oneself into' a sport or activity."
+      },
+      {
+        "id": "134",
+        "questionText": "彼らは何度別れても出会ってしまう。これが宿命＿＿＿＿＿。",
+        "options": [
+          "のきらいがある",
+          "でなくてなんだろう",
+          "きわまりない",
+          "などありはしない"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "でなくてなんだろう"
+        },
+        "explanation": "〜でなくてなんだろう is a grammar structure meaning 'if this is not ~, then what is it?', used to emphasize strong conviction."
+      }
+    ]
+  }
+]

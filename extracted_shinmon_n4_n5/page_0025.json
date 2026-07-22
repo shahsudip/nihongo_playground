@@ -1,0 +1,51 @@
+[
+  {
+    "type": "shin_mon_page",
+    "page_file": "25.jpg",
+    "page_number": 25,
+    "questions": [
+      {
+        "id": "q22",
+        "questionText": "<u>駅</u>まで、タクシーで 十分です。",
+        "options": [
+          "いき",
+          "あき",
+          "うき",
+          "えき"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "えき"
+        }
+      },
+      {
+        "id": "q23",
+        "questionText": "_______ 、<ruby>失礼<rt>しつれい</rt></ruby>ですが、<ruby>田中<rt>たなか</rt></ruby>さんでは ありませんか。",
+        "options": [
+          "ええ",
+          "あのう",
+          "ああ",
+          "じゃあ"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "あのう"
+        }
+      },
+      {
+        "id": "q24",
+        "questionText": "きのうは、そんなに _______ ね。",
+        "options": [
+          "<ruby>寒<rt>さむ</rt></ruby>く ないでした",
+          "<ruby>寒<rt>さむ</rt></ruby>く なかったです",
+          "<ruby>寒<rt>さむ</rt></ruby>く なかったでした",
+          "<ruby>寒<rt>さむ</rt></ruby>かった では ないです"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "<ruby>寒<rt>さむ</rt></ruby>く なかったです"
+        }
+      }
+    ]
+  }
+]

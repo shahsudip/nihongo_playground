@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 1日目",
+    "questions": [
+      {
+        "id": "q257",
+        "questionText": "店員に<u>勧められて</u>、充電式の小型芝刈り機を購入した。",
+        "options": [
+          "もとめられて",
+          "からめられて",
+          "すすめられて",
+          "いさめられて"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "すすめられて"
+        },
+        "explanation": "勧める (すすめる) means to recommend. 勧められて means being recommended."
+      },
+      {
+        "id": "q258",
+        "questionText": "田舎生活もいいが、時々＿＿＿＿＿都会の生活が恋しくなる。",
+        "options": [
+          "のどかな",
+          "はなやかな",
+          "おごそかな",
+          "しなやかな"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "はなやかな"
+        },
+        "explanation": "華やか (はなやか) means showy, brilliant, or glamorous, which fits 'city life' in contrast to country life."
+      },
+      {
+        "id": "q259",
+        "questionText": "A「あの木になっている柿は食べないんですか。」\nB「色＿＿＿＿＿きれいだけど、渋くて食べられないの。」",
+        "options": [
+          "すら",
+          "だに",
+          "こそ",
+          "まで"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "こそ"
+        },
+        "explanation": "Noun + こそ ~ が/けれど is a grammar pattern meaning 'certainly [Noun] is ~, but...'. Here, '色こそきれいだけど' means 'the color certainly is pretty, but...'."
+      }
+    ]
+  }
+]

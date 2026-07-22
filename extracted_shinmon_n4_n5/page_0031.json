@@ -1,0 +1,51 @@
+[
+  {
+    "type": "shin_mon_page",
+    "page_file": "31.jpg",
+    "page_number": 31,
+    "questions": [
+      {
+        "id": "q31",
+        "questionText": "先生が <u>学生</u>に 話を します。",
+        "options": [
+          "がせい",
+          "がくせい",
+          "がくせん",
+          "がっせい"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "がくせい"
+        }
+      },
+      {
+        "id": "q32",
+        "questionText": "いい <ruby>天気<rt>てんき</rt></ruby>だから、どこかへ _______ か。",
+        "options": [
+          "でかけません",
+          "でません",
+          "あそびません",
+          "きません"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "でかけません"
+        }
+      },
+      {
+        "id": "q33",
+        "questionText": "A 「あなたの コーヒーカップは どれですか。」\nB 「いちばん _______ です。」",
+        "options": [
+          "<ruby>大<rt>おお</rt></ruby>きかった",
+          "<ruby>大<rt>おお</rt></ruby>きもの",
+          "<ruby>大<rt>おお</rt></ruby>きいの",
+          "<ruby>大<rt>おお</rt></ruby>きい"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "<ruby>大<rt>おお</rt></ruby>きいの"
+        }
+      }
+    ]
+  }
+]

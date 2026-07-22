@@ -1,0 +1,82 @@
+[
+  {
+    "id": "page_209",
+    "type": "shin_mon_page",
+    "page_file": "209.jpg",
+    "page_number": 209,
+    "questions": [
+      {
+        "id": "q353",
+        "questionText": "休みの 日に <u>洗濯</u>を する。",
+        "options": [
+          "そうじ",
+          "せんたく"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "せんたく"
+        }
+      },
+      {
+        "id": "q354",
+        "questionText": "みなさん、お<u>せわ</u>に なりました。",
+        "options": [
+          "世話",
+          "世和"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "世話"
+        }
+      },
+      {
+        "id": "q355",
+        "questionText": "うるさいですね。だれが _______ いるんですか。",
+        "options": [
+          "おどろいて",
+          "さわいで"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "さわいで"
+        }
+      },
+      {
+        "id": "q356",
+        "questionText": "駅に 着いたら 電話を ください。_______ 行きますから。",
+        "options": [
+          "むかえに",
+          "おくりに"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "むかえに"
+        }
+      },
+      {
+        "id": "q357",
+        "questionText": "帰ってこなく _______ けれど、<ruby>連<rt>れん</rt></ruby><ruby>絡<rt>らく</rt></ruby>ぐらいは しなさい。",
+        "options": [
+          "でも いい",
+          "ても かまわない"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "ても かまわない"
+        }
+      },
+      {
+        "id": "q358",
+        "questionText": "この ペン、書きやすいよ。ちょっと _______。",
+        "options": [
+          "書いてみて",
+          "書いてちゃって"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "書いてみて"
+        }
+      }
+    ]
+  }
+]

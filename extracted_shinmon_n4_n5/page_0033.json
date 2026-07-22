@@ -1,0 +1,51 @@
+[
+  {
+    "type": "shin_mon_page",
+    "page_file": "33.jpg",
+    "page_number": 33,
+    "questions": [
+      {
+        "id": "q34",
+        "questionText": "<u>ほんや</u>は 駅の 前に あります。",
+        "options": [
+          "書店",
+          "書屋",
+          "本店",
+          "本屋"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "本屋"
+        }
+      },
+      {
+        "id": "q35",
+        "questionText": "<ruby>毎朝<rt>まいあさ</rt></ruby>、６<ruby>時<rt>じ</rt></ruby>に _______ <ruby>仕事<rt>しごと</rt></ruby>に <ruby>行<rt>い</rt></ruby>きます。",
+        "options": [
+          "おいて",
+          "おきて",
+          "おこして",
+          "おして"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "おきて"
+        }
+      },
+      {
+        "id": "q36",
+        "questionText": "あの _______ <ruby>人<rt>ひと</rt></ruby>は だれですか。",
+        "options": [
+          "かみは <ruby>長<rt>なが</rt></ruby>いの",
+          "かみは <ruby>長<rt>なが</rt></ruby>い",
+          "かみの <ruby>長<rt>なが</rt></ruby>いの",
+          "かみの <ruby>長<rt>なが</rt></ruby>い"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "かみの <ruby>長<rt>なが</rt></ruby>い"
+        }
+      }
+    ]
+  }
+]

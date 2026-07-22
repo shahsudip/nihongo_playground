@@ -1,0 +1,68 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 7日目",
+    "questions": [
+      {
+        "id": "341",
+        "questionText": "住民は市に対して、苦情を<u>訴えた</u>。",
+        "options": ["となえた", "うったえた", "", ""],
+        "correctOption": {
+          "index": 1,
+          "text": "うったえた"
+        },
+        "explanation": "訴える (うったえる) means to complain, appeal, or sue."
+      },
+      {
+        "id": "342",
+        "questionText": "車や機械は、点検を<u>怠る</u>と、大きな事故につながる。",
+        "options": ["おこたる", "さぼる", "", ""],
+        "correctOption": {
+          "index": 0,
+          "text": "おこたる"
+        },
+        "explanation": "怠る (おこたる) means to neglect."
+      },
+      {
+        "id": "343",
+        "questionText": "___言った僕の言葉が、友人を傷つけたらしい。",
+        "options": ["申し訳なく", "何気なく", "", ""],
+        "correctOption": {
+          "index": 1,
+          "text": "何気なく"
+        },
+        "explanation": "何気なく (なにげなく) means unintentionally or casually."
+      },
+      {
+        "id": "344",
+        "questionText": "高速道路は、現在、雨で最高速度80キロに___されている。",
+        "options": ["拘束", "規制", "", ""],
+        "correctOption": {
+          "index": 1,
+          "text": "規制"
+        },
+        "explanation": "規制 (きせい) means regulation or restriction, suitable for speed limits. 拘束 is used for restricting physical freedom."
+      },
+      {
+        "id": "345",
+        "questionText": "あの悲しい物語を読むと、涙を___。",
+        "options": ["余儀なくされる", "禁じ得ない", "", ""],
+        "correctOption": {
+          "index": 1,
+          "text": "禁じ得ない"
+        },
+        "explanation": "〜を禁じ得ない means 'cannot help but (feel/do)'. 涙を禁じ得ない translates to 'cannot help but cry'."
+      },
+      {
+        "id": "346",
+        "questionText": "先生のような方にお目にかかれて、光栄の___です。",
+        "options": ["至り", "限り", "", ""],
+        "correctOption": {
+          "index": 0,
+          "text": "至り"
+        },
+        "explanation": "光栄の至り (こうえいのいたり) is a fixed expression meaning 'the utmost honor'."
+      }
+    ]
+  }
+]

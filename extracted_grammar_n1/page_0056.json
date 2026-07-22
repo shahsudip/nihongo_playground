@@ -1,0 +1,136 @@
+[
+  {
+    "type": "header",
+    "title": "第22回"
+  },
+  {
+    "type": "mondai_1",
+    "id": "q1",
+    "questionText": "真夏（　　）、こんな寒い日にTシャツ１枚で出かけるなんて、どうかしてるよ。",
+    "options": [
+      "とばかりに",
+      "もかまわず",
+      "のことだから",
+      "じゃあるまいし"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q2",
+    "questionText": "弟の部屋は何か月も掃除していないから、汚いったら（　　）。",
+    "options": [
+      "ありゃしない",
+      "きりがない",
+      "もんじゃない",
+      "ものともしない"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q3",
+    "questionText": "引っ越しの準備をしなければならないが、いったい何から始めたらいい（　　）。",
+    "options": [
+      "ものを",
+      "ものやら",
+      "ものでもない",
+      "ものともなく"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q4",
+    "questionText": "海に近いこの地方（　　）新鮮な魚料理を、どうぞお楽しみください。",
+    "options": [
+      "のごとき",
+      "なくしての",
+      "ならではの",
+      "にあっての"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q5",
+    "questionText": "彼は美人と（　　）、必ず声をかけるような男だ。",
+    "options": [
+      "いえども",
+      "みえて",
+      "みると",
+      "ばかりに"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q6",
+    "questionText": "その映画のラストシーンは、音楽の美しさ（　　）、非常に感動的だった。",
+    "options": [
+      "とあって",
+      "に即して",
+      "と相まって",
+      "にもまして"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_1",
+    "id": "q7",
+    "questionText": "王妃の寝室は天井から床まで豪華に飾られ、まさに贅沢の（　　）だった。",
+    "options": [
+      "極み",
+      "至り",
+      "いかん",
+      "ごとき"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q1",
+    "questionText": "彼は困難にあう　＿＿　＿＿　★　＿＿　乗り越えてきた。",
+    "options": [
+      "せずに",
+      "苦労を",
+      "ものとも",
+      "たびに"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q2",
+    "questionText": "このたびの訃報(ふほう)は、　＿＿　＿＿　★　＿＿　ほかありません。",
+    "options": [
+      "驚くより",
+      "突然の",
+      "あまりに",
+      "こととて"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  },
+  {
+    "type": "mondai_2",
+    "id": "m2-q3",
+    "questionText": "どんなに　＿＿　＿＿　★　＿＿　人はいつかは死ぬ。",
+    "options": [
+      "とも",
+      "限り",
+      "抵抗しよう",
+      "生きている"
+    ],
+    "correctIndex": -1,
+    "explanation": ""
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_43",
+    "type": "shin_mon_page",
+    "page_file": "43.jpg",
+    "page_number": 43,
+    "questions": [
+      {
+        "id": "q49",
+        "questionText": "一か月に <u>いっかい</u>、友だちと 会います。",
+        "options": [
+          "一度",
+          "一回",
+          "一会",
+          "一目"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "一回"
+        }
+      },
+      {
+        "id": "q50",
+        "questionText": "ここから <ruby>駅<rt>えき</rt></ruby>まで どのくらい <ruby>時間<rt>じかん</rt></ruby>が _______ か。",
+        "options": [
+          "かけます",
+          "かかります",
+          "あります",
+          "すぎます"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "かかります"
+        }
+      },
+      {
+        "id": "q51",
+        "questionText": "<ruby>田中<rt>たなか</rt></ruby>さん、<ruby>今日<rt>きょう</rt></ruby>も _______ ね。まだ <ruby>病気<rt>びょうき</rt></ruby>かな。",
+        "options": [
+          "こない",
+          "きない",
+          "くない",
+          "いかない"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "こない"
+        }
+      }
+    ]
+  }
+]

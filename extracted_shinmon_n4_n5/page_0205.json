@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_205",
+    "type": "shin_mon_page",
+    "page_file": "205.jpg",
+    "page_number": 205,
+    "questions": [
+      {
+        "id": "q338",
+        "questionText": "みんなが <u>集まったら</u>、仕事を 始めます。",
+        "options": [
+          "まとまったら",
+          "あつまったら",
+          "かたまつたら",
+          "はじまったら"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "あつまったら"
+        }
+      },
+      {
+        "id": "q339",
+        "questionText": "お<ruby>母<rt>かあ</rt></ruby>さん、<ruby>今<rt>こん</rt></ruby><ruby>度<rt>ど</rt></ruby> <ruby>海<rt>うみ</rt></ruby>に _______。",
+        "options": [
+          "もって いって",
+          "むかえに いって",
+          "おくりに いって",
+          "つれて いって"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "つれて いって"
+        }
+      },
+      {
+        "id": "q340",
+        "questionText": "_______ <ruby>分<rt>わ</rt></ruby>かりませんが、やって みます。",
+        "options": [
+          "できるか どうか",
+          "できたり できなかったり",
+          "できる ようだか",
+          "できる ほうが いいか"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "できるか どうか"
+        }
+      }
+    ]
+  }
+]

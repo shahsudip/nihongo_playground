@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第3週 3日目",
+    "questions": [
+      {
+        "id": "q284",
+        "questionText": "鳥類の巣穴は軟らかい<u>土壌</u>につくられることが多い。",
+        "options": [
+          "とじょう",
+          "どひょう",
+          "とひょう",
+          "どじょう"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "どじょう"
+        },
+        "explanation": "土壌 (どじょう) means soil."
+      },
+      {
+        "id": "q285",
+        "questionText": "その殺人事件の犯人は、死刑を＿＿＿＿＿＿だろう。",
+        "options": [
+          "与えない",
+          "免れない",
+          "損なわない",
+          "促さない"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "免れない"
+        },
+        "explanation": "免れる (まぬがれる) means to escape or avoid. 死刑を免れない means 'cannot escape the death penalty'."
+      },
+      {
+        "id": "q286",
+        "questionText": "社長のあまりにも常識のない発言に、誰もが苦笑を禁じ＿＿＿＿＿＿。",
+        "options": [
+          "かねなかった",
+          "ないでもなかった",
+          "得なかった",
+          "っぱなしだった"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "得なかった"
+        },
+        "explanation": "〜を禁じ得ない (えない) means 'cannot help but do / cannot suppress (an emotion)'. 誰もが苦笑を禁じ得なかった means 'everyone couldn't help but smile wryly'."
+      }
+    ]
+  }
+]

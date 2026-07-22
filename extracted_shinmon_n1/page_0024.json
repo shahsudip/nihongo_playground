@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第1週 2日目",
+    "questions": [
+      {
+        "id": "19",
+        "questionText": "その<u>戸棚</u>には缶詰や瓶詰、梅干しなど保存食が入っています。",
+        "options": [
+          "とだな",
+          "こだな",
+          "たんす",
+          "ふすま"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "とだな"
+        },
+        "explanation": "戸棚 is read as とだな (cupboard, cabinet)."
+      },
+      {
+        "id": "20",
+        "questionText": "赤ちゃんが生まれても、＿＿＿＿＿＿を続けないと生活できません。",
+        "options": [
+          "共稼ぎ",
+          "両稼ぎ",
+          "共就業",
+          "両就業"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "共稼ぎ"
+        },
+        "explanation": "共稼ぎ (ともかせぎ) means dual income or both partners working."
+      },
+      {
+        "id": "21",
+        "questionText": "日本のデパートや店は、過剰包装の＿＿＿＿＿＿。",
+        "options": [
+          "きらいだ",
+          "きらいではない",
+          "きらいがある",
+          "きらいがない"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "きらいがある"
+        },
+        "explanation": "〜きらいがある means 'there is a tendency to...' and is often used for negative tendencies."
+      }
+    ]
+  }
+]

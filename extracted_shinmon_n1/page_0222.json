@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "第4週 1日目",
+    "questions": [
+      {
+        "id": "385",
+        "questionText": "大勢の犠牲者が出た、その悲惨な航空機<u>墜落</u>事故は、記憶に新しい。",
+        "options": [
+          "ていらく",
+          "すいらく",
+          "たいらく",
+          "ついらく"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "ついらく"
+        },
+        "explanation": "墜落 is read as ついらく (crash, fall)."
+      },
+      {
+        "id": "386",
+        "questionText": "夕日に___山がとてもきれいに見えました。",
+        "options": [
+          "はえて",
+          "にじんで",
+          "ぼけて",
+          "ぶれて"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "はえて"
+        },
+        "explanation": "映える (はえる) means to shine or look beautiful against a background. 夕日に映えて means 'looking beautiful in the setting sun'."
+      },
+      {
+        "id": "387",
+        "questionText": "A「何ですか、この成績は。ちゃんと勉強しているんですか。」\nB「___つもりですが…。」",
+        "options": [
+          "する",
+          "している",
+          "しない",
+          "していない"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "している"
+        },
+        "explanation": "V-ているつもり expresses one's subjective belief that one is doing something. 'I thought I was studying properly...'"
+      }
+    ]
+  }
+]

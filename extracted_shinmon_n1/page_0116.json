@@ -1,0 +1,53 @@
+[
+  {
+    "type": "shin_mon_page",
+    "title": "Week 2 Day 4",
+    "questions": [
+      {
+        "id": "q180",
+        "questionText": "靴を脱いで<u>裸足</u>になると、彼は沖のほうを眺めながら浜辺を歩いた。",
+        "options": [
+          "はだし",
+          "すあし",
+          "はだか",
+          "すはだ"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "はだし"
+        },
+        "explanation": "裸足 (はだし) means barefoot."
+      },
+      {
+        "id": "q181",
+        "questionText": "仕事が忙しく、残業が翌朝まで＿＿＿＿＿＿。",
+        "options": [
+          "迫った",
+          "及んだ",
+          "貫いた",
+          "果たした"
+        ],
+        "correctOption": {
+          "index": 1,
+          "text": "及んだ"
+        },
+        "explanation": "及ぶ (およぶ) means 'to extend to' or 'to last until', fitting the context of working overtime until the next morning."
+      },
+      {
+        "id": "q182",
+        "questionText": "ニュースは、事実に＿＿＿＿＿＿報道されるものだ。",
+        "options": [
+          "際して",
+          "相まって",
+          "至って",
+          "即して"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "即して"
+        },
+        "explanation": "～に即して means 'in accordance with' or 'based on'. The news should be reported based on facts."
+      }
+    ]
+  }
+]

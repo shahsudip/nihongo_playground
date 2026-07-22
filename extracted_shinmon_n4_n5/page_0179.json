@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_179",
+    "type": "shin_mon_page",
+    "page_file": "179.jpg",
+    "page_number": 179,
+    "questions": [
+      {
+        "id": "q299",
+        "questionText": "いい 病院を <u>しりませんか</u>。",
+        "options": [
+          "知りませんか",
+          "和りませんか",
+          "分りませんか",
+          "有りませんか"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "知りませんか"
+        }
+      },
+      {
+        "id": "q300",
+        "questionText": "A 「この コーヒー、_______ よ。」\nB 「そう？ じゃ、もっと おさとうを <ruby>入<rt>い</rt></ruby>れたら どう？」",
+        "options": [
+          "にがい",
+          "あまい",
+          "からい",
+          "くらい"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "にがい"
+        }
+      },
+      {
+        "id": "q301",
+        "questionText": "テスト<ruby>中<rt>ちゅう</rt></ruby>は <ruby>話<rt>はなし</rt></ruby>を _______。",
+        "options": [
+          "しては いけません",
+          "しなくても いいです",
+          "しなくちゃ いけません",
+          "した ほうが いけません"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "しては いけません"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "page_119",
+    "type": "shin_mon_page",
+    "page_file": "119.jpg",
+    "page_number": 119,
+    "questions": [
+      {
+        "id": "q186",
+        "questionText": "この へんは 古い <u>建物</u>が 多い。",
+        "options": [
+          "たでもの",
+          "だてもの",
+          "たてもの",
+          "けんぶつ"
+        ],
+        "correctOption": {
+          "index": 2,
+          "text": "たてもの"
+        }
+      },
+      {
+        "id": "q187",
+        "questionText": "さあ、ピアノに <ruby>合<rt>あ</rt></ruby>わせて <ruby>大<rt>おお</rt></ruby>きな <ruby>声<rt>こえ</rt></ruby>で _______ 。",
+        "options": [
+          "つくりましょう",
+          "だしましょう",
+          "おどりましょう",
+          "うたいましょう"
+        ],
+        "correctOption": {
+          "index": 3,
+          "text": "うたいましょう"
+        }
+      },
+      {
+        "id": "q188",
+        "questionText": "<ruby>私<rt>わたし</rt></ruby>は、<ruby>来週<rt>らいしゅう</rt></ruby> カナダへ _______ と <ruby>思<rt>おも</rt></ruby>って います。",
+        "options": [
+          "<ruby>帰<rt>かえ</rt></ruby>ろう",
+          "<ruby>帰<rt>かえ</rt></ruby>りましょう",
+          "<ruby>帰<rt>かえ</rt></ruby>る",
+          "<ruby>帰<rt>かえ</rt></ruby>ります"
+        ],
+        "correctOption": {
+          "index": 0,
+          "text": "<ruby>帰<rt>かえ</rt></ruby>ろう"
+        }
+      }
+    ]
+  }
+]
