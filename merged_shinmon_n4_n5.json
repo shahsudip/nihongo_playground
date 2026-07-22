@@ -56,96 +56,141 @@
           },
           {
             "id": "q4",
-            "questionText": "1 いたかった 2 かわいた 3 すいた こ い 4 ぬれた 田中さんは イギリス人 結婚しました。 じん と 2 に 3 を 雪 4 へ 13",
+            "questionText": "あの 人は <u>かいしゃいん</u>です。",
             "options": [
-              "1",
-              "2",
-              "3",
-              "4"
+              "会社人",
+              "会社員",
+              "社会人",
+              "社会員"
             ],
             "correctOption": {
-              "index": 0,
-              "text": "1"
+              "index": 1,
+              "text": "会社員"
             },
             "explanation": ""
           },
           {
             "id": "q5",
-            "questionText": "4 かして 9 この 道 まっすぐ 行って ください。 1 2 そ 3 雪 4 が 15",
+            "questionText": "ああ、のどが _______。つめたい 水が 飲みたい。",
             "options": [
-              "1",
-              "2",
-              "3",
-              "4"
+              "いたかった",
+              "かわいた",
+              "すいた",
+              "ぬれた"
             ],
             "correctOption": {
-              "index": 0,
-              "text": "1"
+              "index": 1,
+              "text": "かわいた"
             },
             "explanation": ""
           },
           {
             "id": "q6",
-            "questionText": "10 ことし 日本へ 来ましたs",
+            "questionText": "田中さんは イギリス人_______ 結婚しました。",
             "options": [
-              "1",
-              "2",
-              "3",
-              "4"
+              "と",
+              "に",
+              "を",
+              "へ"
             ],
             "correctOption": {
               "index": 0,
-              "text": "1"
+              "text": "と"
             },
             "explanation": ""
           },
           {
             "id": "q7",
-            "questionText": "1 来年 2 去年 3 本年 壱 4 今年 あの 先生の 投業は せし",
+            "questionText": "今 四時です。",
             "options": [
-              "1",
-              "2",
-              "3",
-              "4"
+              "よじ",
+              "しじ",
+              "ようじ",
+              "よんじ"
             ],
             "correctOption": {
               "index": 0,
-              "text": "1"
+              "text": "よじ"
             },
             "explanation": ""
           },
           {
             "id": "q8",
-            "questionText": "1 つまる 2 つまらない 3 つもる 岳 4 つもらない 12 先月 見益に 未ました。 来月の",
+            "questionText": "すみません お手洗いを _______ ください。",
             "options": [
-              "1",
-              "2",
-              "3",
-              "4"
+              "かけて",
+              "かりて",
+              "かえして",
+              "かして"
             ],
             "correctOption": {
-              "index": 0,
-              "text": "1"
+              "index": 3,
+              "text": "かして"
             },
             "explanation": ""
           },
           {
             "id": "q9",
-            "questionText": "10 日 さ心 げつ げつ とお います。 1 まで 2 から 雪 3 か 4 でも 17",
+            "questionText": "この 道_______ まっすぐ 行って ください。",
             "options": [
-              "1",
-              "2",
-              "3",
-              "4"
+              "で",
+              "に",
+              "を",
+              "へ"
             ],
             "correctOption": {
-              "index": 0,
-              "text": "1"
+              "index": 2,
+              "text": "を"
             },
             "explanation": ""
           },
           {
             "id": "q10",
+            "questionText": "<u>ことし</u> 日本へ 来ました。",
+            "options": [
+              "来年",
+              "去年",
+              "本年",
+              "今年"
+            ],
+            "correctOption": {
+              "index": 3,
+              "text": "今年"
+            },
+            "explanation": ""
+          },
+          {
+            "id": "q11",
+            "questionText": "あの 先生の 授業は _______。",
+            "options": [
+              "つまる",
+              "つまらない",
+              "つもる",
+              "つもらない"
+            ],
+            "correctOption": {
+              "index": 1,
+              "text": "つまらない"
+            },
+            "explanation": ""
+          },
+          {
+            "id": "q12",
+            "questionText": "先月 日本に 来ました。来月の10日_______ います。",
+            "options": [
+              "まで",
+              "から",
+              "か",
+              "でも"
+            ],
+            "correctOption": {
+              "index": 0,
+              "text": "まで"
+            },
+            "explanation": ""
+          },
+          {
+            "id": "q13",
             "questionText": "<u>今日</u>は 日曜日で、休みです。",
             "options": [
               "きょう",
@@ -160,7 +205,7 @@
             "explanation": ""
           },
           {
-            "id": "q11",
+            "id": "q14",
             "questionText": "これは、_______ <ruby>食<rt>た</rt></ruby>べられない。",
             "options": [
               "まずくて",
@@ -175,7 +220,7 @@
             "explanation": ""
           },
           {
-            "id": "q12",
+            "id": "q15",
             "questionText": "では、<ruby>土曜日<rt>どようび</rt></ruby>_______ <ruby>日曜日<rt>にちようび</rt></ruby>に もう <ruby>一度<rt>いちど</rt></ruby><ruby>電話<rt>でんわ</rt></ruby>します。",
             "options": [
               "に",
@@ -186,51 +231,6 @@
             "correctOption": {
               "index": 3,
               "text": "か"
-            },
-            "explanation": ""
-          },
-          {
-            "id": "q13",
-            "questionText": "Missing Question 13 (OCR incomplete)",
-            "options": [
-              "1",
-              "2",
-              "3",
-              "4"
-            ],
-            "correctOption": {
-              "index": 0,
-              "text": "1"
-            },
-            "explanation": ""
-          },
-          {
-            "id": "q14",
-            "questionText": "Missing Question 14 (OCR incomplete)",
-            "options": [
-              "1",
-              "2",
-              "3",
-              "4"
-            ],
-            "correctOption": {
-              "index": 0,
-              "text": "1"
-            },
-            "explanation": ""
-          },
-          {
-            "id": "q15",
-            "questionText": "Missing Question 15 (OCR incomplete)",
-            "options": [
-              "1",
-              "2",
-              "3",
-              "4"
-            ],
-            "correctOption": {
-              "index": 0,
-              "text": "1"
             },
             "explanation": ""
           }

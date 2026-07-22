@@ -270,7 +270,7 @@ const ShinkanzenQuizPage = () => {
                 __html: currentQ.questionText.replace(
                   /^(問い|問\d+)/,
                   '<span class="shinkan-q-num">$&</span>'
-                )
+                ).replace(/ (A「|B「|A：|B：|男：|女：|男の人：|女の人：|店員：|客：|Ａ「|Ｂ「|Ａ：|Ｂ：)/g, '<br />$1')
               }}
             />
 
