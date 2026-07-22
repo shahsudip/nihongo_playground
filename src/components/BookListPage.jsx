@@ -92,26 +92,27 @@ const BookListPage = () => {
 
       // 2. Fetch all chapters for these books to know the full layout
       // Let's populate the chapters list for each book
-      const booksWithChapters = [];
-      for (const book of fetchedBooks) {
-        const chaptersColRef = collection(db, 'books', book.id, 'chapters');
-        const chaptersSnap = await getDocs(chaptersColRef);
-        
-        let chapters = [];
-        chaptersSnap.forEach(chapSnap => {
-          chapters.push({ id: chapSnap.id, ...chapSnap.data() });
-        });
+      const booksWithChapters = await Promise.all(
+        fetchedBooks.map(async (book) => {
+          const chaptersColRef = collection(db, 'books', book.id, 'chapters');
+          const chaptersSnap = await getDocs(chaptersColRef);
+          
+          let chapters = [];
+          chaptersSnap.forEach(chapSnap => {
+            chapters.push({ id: chapSnap.id, ...chapSnap.data() });
+          });
 
-        // Fallback to local chapters if Firestore subcollection is empty
-        if (chapters.length === 0) {
-          const { sampleBooks } = await import('../data/book_data.jsx');
-          const localBook = sampleBooks.find(b => b.id === book.id);
-          if (localBook) {
-            chapters = localBook.chapters;
+          // Fallback to local chapters if Firestore subcollection is empty
+          if (chapters.length === 0) {
+            const { sampleBooks } = await import('../data/book_data.jsx');
+            const localBook = sampleBooks.find(b => b.id === book.id);
+            if (localBook) {
+              chapters = localBook.chapters;
+            }
           }
-        }
-        booksWithChapters.push({ ...book, chapters });
-      }
+          return { ...book, chapters };
+        })
+      );
 
       setBooks(booksWithChapters);
 
