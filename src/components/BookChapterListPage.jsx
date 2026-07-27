@@ -52,8 +52,9 @@ const BookChapterListPage = () => {
           return;
         }
 
-        // 2. Fetch chapters
-        const chaptersColRef = collection(db, 'books', bookId, 'chapters');
+        // 2. Fetch chapters or topics
+        const subColName = bookId.startsWith('tango') ? 'topics' : 'chapters';
+        const chaptersColRef = collection(db, 'books', bookId, subColName);
         const chaptersSnap = await getDocs(chaptersColRef);
         
         let chaptersList = [];
