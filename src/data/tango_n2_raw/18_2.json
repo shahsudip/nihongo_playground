@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 1 ● 食事",
+  "japanese_text": "A：今度の歓迎会だけど、焼肉<u>食べ放題</u>はどう？\nB：いいですね。でも、胃が<u>もたれ</u>そうだね。\nA：え、まだ若いのに。じゃあ、このしゃぶしゃぶ屋はどう？\n上等な肉が安く食べられるって<u>口コミ</u>でも評判だよ。",
+  "english_translation": "",
+  "annotated_words": [
+    {
+      "word_id": "n2_0033",
+      "word_number": 33,
+      "kanji": "食べ放題",
+      "furigana": "たべほうだい",
+      "meaning_en": "all-you-can-eat"
+    },
+    {
+      "word_id": "n2_0034",
+      "word_number": 34,
+      "kanji": "～放題",
+      "furigana": "ほうだい",
+      "meaning_en": "all-you-can-~"
+    },
+    {
+      "word_id": "n2_0035",
+      "word_number": 35,
+      "kanji": "もたれる",
+      "furigana": "もたれる",
+      "meaning_en": "sit heavily/feel heavy"
+    },
+    {
+      "word_id": "n2_0036",
+      "word_number": 36,
+      "kanji": "上等な",
+      "furigana": "じょうとうな",
+      "meaning_en": "high-end, top-quality"
+    },
+    {
+      "word_id": "n2_0037",
+      "word_number": 37,
+      "kanji": "口コミ",
+      "furigana": "くちこみ",
+      "meaning_en": "word of mouth"
+    }
+  ]
+}

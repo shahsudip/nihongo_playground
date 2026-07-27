@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 1",
+  "japanese_text": "<u>香辛料</u>が<u>ふんだんに</u>入ったこのスープは、<u>万人</u>に<u>好か</u>れる味ではないが、私は好きでよく食べる。",
+  "english_translation": "This soup, which uses spices quite abundantly, is not the sort of thing that everyone enjoys, but I like it and eat it often.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0009",
+      "word_number": 9,
+      "kanji": "香辛料",
+      "furigana": "こうしんりょう",
+      "meaning_en": "seasoning, spice"
+    },
+    {
+      "word_id": "n1_0010",
+      "word_number": 10,
+      "kanji": "ふんだんに",
+      "furigana": "ふんだんに",
+      "meaning_en": "abundantly"
+    },
+    {
+      "word_id": "n1_0011",
+      "word_number": 11,
+      "kanji": "万人",
+      "furigana": "ばんにん",
+      "meaning_en": "all people, everyone"
+    },
+    {
+      "word_id": "n1_0012",
+      "word_number": 12,
+      "kanji": "好く",
+      "furigana": "す",
+      "meaning_en": "enjoy, like"
+    }
+  ]
+}

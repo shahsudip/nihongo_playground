@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 2",
+  "japanese_text": "職人が、特殊な<u>刃物</u>で魚を<u>手際</u>よく<u>身</u>と骨に切り分けると、観客たちは職人の<u>テクニック</u>に拍手を送った。",
+  "english_translation": "As the artisan's special blade sliced through the flesh and bones of the fish with great dexterity, the crowd applauded his technique.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0082",
+      "word_number": 82,
+      "kanji": "刃物",
+      "furigana": "はもの",
+      "meaning_en": "blade, edged implement"
+    },
+    {
+      "word_id": "n1_0083",
+      "word_number": 83,
+      "kanji": "手際",
+      "furigana": "てぎわ",
+      "meaning_en": "dexterity"
+    },
+    {
+      "word_id": "n1_0084",
+      "word_number": 84,
+      "kanji": "身",
+      "furigana": "み",
+      "meaning_en": "flesh"
+    },
+    {
+      "word_id": "n1_0085",
+      "word_number": 85,
+      "kanji": "テクニック",
+      "furigana": "テクニック",
+      "meaning_en": "technique"
+    }
+  ]
+}

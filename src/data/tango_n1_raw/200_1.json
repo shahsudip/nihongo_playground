@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 17",
+  "japanese_text": "小学校でクラス担任をしていたとき、子どもたちは<u>無邪気で</u>明るく仲も良かったが、授業中の<u>私語</u>が多すぎるため、<u>説教した</u>ことがあった。特に騒いでいた子どもには、<u>罰</u>として校庭を１０周走らせたこともあったが、今ではこれは<u>体罰</u>に該当するのでしてはならない。",
+  "english_translation": "When I was a class teacher at an elementary school, most of the children were innocent, cheerful, and friendly, but I did have to lecture them because they whispered too much during class. I once made a particularly disruptive child run 10 laps around the school grounds as punishment, but this would now be frowned upon as corporal punishment.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1387",
+      "word_number": 1387,
+      "kanji": "無邪気な",
+      "furigana": "むじゃきな",
+      "meaning_en": "innocent"
+    },
+    {
+      "word_id": "n1_1388",
+      "word_number": 1388,
+      "kanji": "私語",
+      "furigana": "しご",
+      "meaning_en": "private talk, whisper"
+    },
+    {
+      "word_id": "n1_1389",
+      "word_number": 1389,
+      "kanji": "説教",
+      "furigana": "せっきょう",
+      "meaning_en": "lecture, lecture"
+    },
+    {
+      "word_id": "n1_1390",
+      "word_number": 1390,
+      "kanji": "罰",
+      "furigana": "ばつ",
+      "meaning_en": "punishment"
+    },
+    {
+      "word_id": "n1_1391",
+      "word_number": 1391,
+      "kanji": "体罰",
+      "furigana": "たいばつ",
+      "meaning_en": "corporal punishment"
+    }
+  ]
+}

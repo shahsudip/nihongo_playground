@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 7",
+  "japanese_text": "私の友人は、高校時代をすべて勉強に<u>ささげ</u>、苦手科目を<u>克服する</u>ために血の<u>にじむ</u>ような努力をし、見事東京大学に合格した。",
+  "english_translation": "A friend of mine devoted all his high school years to studying, worked until he bled to overcome his weak subjects, and was successfully admitted to the University of Tokyo.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0521",
+      "word_number": 521,
+      "kanji": "ささげる",
+      "furigana": "ささげる",
+      "meaning_en": "devote"
+    },
+    {
+      "word_id": "n1_0522",
+      "word_number": 522,
+      "kanji": "克服",
+      "furigana": "こくふく",
+      "meaning_en": "conquest, overcome"
+    },
+    {
+      "word_id": "n1_0523",
+      "word_number": 523,
+      "kanji": "にじむ",
+      "furigana": "にじむ",
+      "meaning_en": "bleed, ooze"
+    }
+  ]
+}

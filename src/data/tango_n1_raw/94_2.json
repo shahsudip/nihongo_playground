@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 8",
+  "japanese_text": "A：大学図書館の本は学外の人でも<u>閲覧できます</u>か。\nB：できますが、利用申し込みが必要です。ホームページから申し込み書の<u>様式</u>をダウンロードし、<u>記したもの</u>を図書館に持って来てください。ホームページに<u>記載例</u>もあるので、分からないときは<u>参照して</u>ください。",
+  "english_translation": "A: Can people not affiliated with the university browse the books in the university library?\nB: Yes, but you need to apply to use the library. Please download the application form from the website and bring the filled in form to the library. There is a completed example on the website, so please refer to it if you are unsure.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0595",
+      "word_number": 595,
+      "kanji": "閲覧",
+      "furigana": "えつらん",
+      "meaning_en": "reading, browse"
+    },
+    {
+      "word_id": "n1_0596",
+      "word_number": 596,
+      "kanji": "様式",
+      "furigana": "ようしき",
+      "meaning_en": "form"
+    },
+    {
+      "word_id": "n1_0597",
+      "word_number": 597,
+      "kanji": "記す",
+      "furigana": "しるす",
+      "meaning_en": "fill in"
+    },
+    {
+      "word_id": "n1_0598",
+      "word_number": 598,
+      "kanji": "記載",
+      "furigana": "きさい",
+      "meaning_en": "entry, complete"
+    },
+    {
+      "word_id": "n1_0599",
+      "word_number": 599,
+      "kanji": "参照",
+      "furigana": "さんしょう",
+      "meaning_en": "reference, refer"
+    }
+  ]
+}

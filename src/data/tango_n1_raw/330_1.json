@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 25",
+  "japanese_text": "<u>法廷</u>では、量刑といって犯罪行為に対する<u>刑罰</u>を決定する作業が行われる。その際、<u>被告人</u>を<u>弁護する</u>ために身内や知人が<u>証人</u>になる場合がある。彼らが<u>証言する</u>内容によっては刑罰が軽減されることがあり、重要な役割を担っている。",
+  "english_translation": "In court, the process of determining the punishment for a criminal act, known as sentencing, takes place. In such cases, relatives and acquaintances may serve as witnesses in defense of the accused. Depending on how they testify, the punishment may be reduced, so they play an important role.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2378",
+      "word_number": 2378,
+      "kanji": "法廷",
+      "furigana": "ほうてい",
+      "meaning_en": "court (of law)"
+    },
+    {
+      "word_id": "n1_2379",
+      "word_number": 2379,
+      "kanji": "刑罰",
+      "furigana": "けいばつ",
+      "meaning_en": "punishment"
+    },
+    {
+      "word_id": "n1_2380",
+      "word_number": 2380,
+      "kanji": "被告人",
+      "furigana": "ひこくにん",
+      "meaning_en": "the accused"
+    },
+    {
+      "word_id": "n1_2381",
+      "word_number": 2381,
+      "kanji": "弁護[する]",
+      "furigana": "べんご",
+      "meaning_en": "defense, defend"
+    },
+    {
+      "word_id": "n1_2382",
+      "word_number": 2382,
+      "kanji": "証人",
+      "furigana": "しょうにん",
+      "meaning_en": "witness"
+    },
+    {
+      "word_id": "n1_2383",
+      "word_number": 2383,
+      "kanji": "証言[する]",
+      "furigana": "しょうげん",
+      "meaning_en": "testimony, testify"
+    }
+  ]
+}

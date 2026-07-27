@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 26",
+  "japanese_text": "A：先日の台風、被害大きかったね。\nB：ほんとに。<u>床上浸水</u>した家が何軒もあったって。<u>復旧</u>作業も大変そう。\nA：<u>インフラ</u>の<u>老朽化</u>が問題だよね。<u>対策</u>を<u>講じ</u>ないと、また同じことが起きる。",
+  "english_translation": "A: The typhoon the other day caused a lot of damage, didn't it? B: It really did. I heard many houses had flooding above floor level. The recovery work sounds tough too. A: Aging infrastructure is the problem. Unless we take measures, the same thing will happen again.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2466",
+      "word_number": 2466,
+      "kanji": "復旧[する]",
+      "furigana": "ふっきゅう",
+      "meaning_en": "restoration, restore"
+    },
+    {
+      "word_id": "n1_2467",
+      "word_number": 2467,
+      "kanji": "インフラ",
+      "furigana": "",
+      "meaning_en": "infrastructure"
+    },
+    {
+      "word_id": "n1_2468",
+      "word_number": 2468,
+      "kanji": "老朽化[する]",
+      "furigana": "ろうきゅうか",
+      "meaning_en": "aging, deterioration"
+    },
+    {
+      "word_id": "n1_2469",
+      "word_number": 2469,
+      "kanji": "対策",
+      "furigana": "たいさく",
+      "meaning_en": "measure, countermeasure"
+    },
+    {
+      "word_id": "n1_2470",
+      "word_number": 2470,
+      "kanji": "講じる",
+      "furigana": "こうじる",
+      "meaning_en": "take (measures)"
+    }
+  ]
+}

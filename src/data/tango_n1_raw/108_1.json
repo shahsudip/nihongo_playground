@@ -1,0 +1,44 @@
+{
+  "is_story": false,
+  "story_number": 14,
+  "title": "Topic 9",
+  "japanese_text": "A：CさんとDさんの喧嘩だけど、<u>それとなく</u><u>双方に</u>話を聞いてみたら、微妙に<u>食い違って</u>いたんだよね。\nB：それで仲直りに時間がかかってるのか。これ以上2人の関係が<u>こじれる</u>前に、4人で会って話をした方がよさそうだね。\nA：そうだね。2人とも<u>強情な</u>ところがあるし、それがいい。",
+  "english_translation": "A: Ms. C and Mr. D were quarrelling, but when I indirectly asked both sides about it, I found they'd had a slight disagreement. B: Is that why it's taking so long for them to make up? The four of us should meet up and talk before things get any more complicated. A: Yes, they both have a stubborn streak. So that's a good idea.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0695",
+      "word_number": 695,
+      "kanji": "それとなく",
+      "furigana": "それとなく",
+      "meaning_en": "casually, indirectly"
+    },
+    {
+      "word_id": "n1_0696",
+      "word_number": 696,
+      "kanji": "双方",
+      "furigana": "そうほう",
+      "meaning_en": "both sides, both parties"
+    },
+    {
+      "word_id": "n1_0697",
+      "word_number": 697,
+      "kanji": "食い違う",
+      "furigana": "くいちがう",
+      "meaning_en": "disagree"
+    },
+    {
+      "word_id": "n1_0698",
+      "word_number": 698,
+      "kanji": "こじれる",
+      "furigana": "こじれる",
+      "meaning_en": "get complicated, get worse"
+    },
+    {
+      "word_id": "n1_0700",
+      "word_number": 700,
+      "kanji": "強情な",
+      "furigana": "ごうじょうな",
+      "meaning_en": "stubborn"
+    }
+  ]
+}

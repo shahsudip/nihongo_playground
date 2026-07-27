@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 7",
+  "japanese_text": "このアーティストは、<u>ジャンル</u>にとらわれない<u>独創的な</u> <u>メロディー</u>が強みだ。さまざまなジャンルの曲を分け隔てなく聞き、より良い<u>音色</u>を<u>追い求めて</u>いるらしい。",
+  "english_translation": "This artist's strength lies in his creative, genre-defying melodies. It is said that in pursuit of superior tones, he listens to music regardless of the genre.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0549",
+      "word_number": 549,
+      "kanji": "ジャンル",
+      "furigana": "ジャンル",
+      "meaning_en": "genre"
+    },
+    {
+      "word_id": "n1_0550",
+      "word_number": 550,
+      "kanji": "独創的な",
+      "furigana": "どくそうてきな",
+      "meaning_en": "creative"
+    },
+    {
+      "word_id": "n1_0551",
+      "word_number": 551,
+      "kanji": "メロディー",
+      "furigana": "メロディー",
+      "meaning_en": "melody"
+    },
+    {
+      "word_id": "n1_0552",
+      "word_number": 552,
+      "kanji": "音色",
+      "furigana": "ねいろ",
+      "meaning_en": "tone, tone quality"
+    },
+    {
+      "word_id": "n1_0553",
+      "word_number": 553,
+      "kanji": "追い求める",
+      "furigana": "おいもとめる",
+      "meaning_en": "pursue"
+    }
+  ]
+}

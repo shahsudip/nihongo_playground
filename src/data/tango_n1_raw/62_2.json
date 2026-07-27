@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 23,
+  "title": "Topic 5",
+  "japanese_text": "インターネット上では、<u>匿名で</u> <u>つぶやいた</u> <u>投稿</u>を削除しても、<u>履歴</u>のデータが<u>消去されて</u>いない可能性がある。",
+  "english_translation": "On the internet, even after you delete a post that you tweeted anonymously, data in your history may not be erased.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0353",
+      "word_number": 353,
+      "kanji": "匿名",
+      "furigana": "とくめい",
+      "meaning_en": "anonymous"
+    },
+    {
+      "word_id": "n1_0354",
+      "word_number": 354,
+      "kanji": "つぶやく",
+      "furigana": "",
+      "meaning_en": "tweet"
+    },
+    {
+      "word_id": "n1_0355",
+      "word_number": 355,
+      "kanji": "投稿",
+      "furigana": "とうこう",
+      "meaning_en": "post, post"
+    },
+    {
+      "word_id": "n1_0356",
+      "word_number": 356,
+      "kanji": "履歴",
+      "furigana": "りれき",
+      "meaning_en": "history"
+    },
+    {
+      "word_id": "n1_0357",
+      "word_number": 357,
+      "kanji": "着信履歴",
+      "furigana": "ちゃくしんりれき",
+      "meaning_en": "call history"
+    },
+    {
+      "word_id": "n1_0358",
+      "word_number": 358,
+      "kanji": "消去",
+      "furigana": "しょうきょ",
+      "meaning_en": "erasure, erase"
+    }
+  ]
+}

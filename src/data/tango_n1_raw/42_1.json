@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 4",
+  "japanese_text": "Ａ：内定式、「私服でお越しください」って書いてあって。\nＢ：それ一番困るやつだね。まあＴシャツとか、<u>ラフ</u>すぎなければ、いいんじゃない？\nＡ：<u>無難に</u>黒のワンピースとか？\nＢ：うん。変に<u>着飾り</u>すぎても浮いちゃうしね。",
+  "english_translation": "A: It says “Please wear plain clothes” to attend the ceremony.\nB: That's the most annoying part. Well, as long as it's not too rough, like a T-shirt, it'll be fine, I think.\nA: A black dress should be pretty safe, right?\nB: Yes. If you're too dressed up, you'll look out of place.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0203",
+      "word_number": 203,
+      "kanji": "ラフな",
+      "furigana": "",
+      "meaning_en": "rough"
+    },
+    {
+      "word_id": "n1_0204",
+      "word_number": 204,
+      "kanji": "無難な",
+      "furigana": "ぶなんな",
+      "meaning_en": "safe"
+    },
+    {
+      "word_id": "n1_0205",
+      "word_number": 205,
+      "kanji": "着飾る",
+      "furigana": "きかざる",
+      "meaning_en": "dress up"
+    }
+  ]
+}

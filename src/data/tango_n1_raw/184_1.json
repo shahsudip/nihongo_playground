@@ -1,0 +1,30 @@
+{
+  "is_story": false,
+  "story_number": 3,
+  "title": "Topic 16",
+  "japanese_text": "A：この間東京に行ったときにアプリ使って<u>経路</u>を調べたら、変なところを通らされてさ。\nB：あー、アプリってたまに変なところに連れて行くよね。\nA：そうそう。現地に着くまで<u>治安</u>の悪そうな<u>路地</u>ばかり通らされるからドキドキしたよ。",
+  "english_translation": "A: When I was in Tokyo the other day, I used an app to search for a route and it took me through somewhere strange. B: Ah, apps sometimes take you to strange places, don't they? A: Yes. I was pretty nervous because it took me through a lot of alleys that didn't seem safe until I reached my destination.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1282",
+      "word_number": 1282,
+      "kanji": "経路",
+      "furigana": "けいろ",
+      "meaning_en": "route"
+    },
+    {
+      "word_id": "n1_1283",
+      "word_number": 1283,
+      "kanji": "治安",
+      "furigana": "ちあん",
+      "meaning_en": "(public) safety"
+    },
+    {
+      "word_id": "n1_1284",
+      "word_number": 1284,
+      "kanji": "路地",
+      "furigana": "ろじ",
+      "meaning_en": "alley, alleyway"
+    }
+  ]
+}

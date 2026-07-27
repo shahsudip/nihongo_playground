@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 14",
+  "japanese_text": "大規模なデモが行われるため、<u>一時的に</u>道路が<u>封鎖されている</u>。周辺の道でも、<u>道端</u>に立っている警官が<u>徐行する</u>ように呼びかけていて、ラッシュ時<u>並み</u>の渋滞が発生している。",
+  "english_translation": "The road has been temporarily blocked due to a large demonstration. Even on the surrounding streets, police officers standing by the roadside are urging people to slow down, causing traffic jams similar to rush hour.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1172",
+      "word_number": 1172,
+      "kanji": "一時的な",
+      "furigana": "いちじてきな",
+      "meaning_en": "temporary"
+    },
+    {
+      "word_id": "n1_1173",
+      "word_number": 1173,
+      "kanji": "封鎖する",
+      "furigana": "ふうさする",
+      "meaning_en": "blockade, block"
+    },
+    {
+      "word_id": "n1_1174",
+      "word_number": 1174,
+      "kanji": "道端",
+      "furigana": "みちばた",
+      "meaning_en": "roadside"
+    },
+    {
+      "word_id": "n1_1175",
+      "word_number": 1175,
+      "kanji": "徐行する",
+      "furigana": "じょこうする",
+      "meaning_en": "slowdown, slow down"
+    },
+    {
+      "word_id": "n1_1176",
+      "word_number": 1176,
+      "kanji": "～並み",
+      "furigana": "～なみ",
+      "meaning_en": "equivalent to ~, similar to ~"
+    }
+  ]
+}

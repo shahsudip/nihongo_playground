@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 2 家事",
+  "japanese_text": "A: チョコレートは、<u>刻んで</u>から溶かしてね。\nB: どうして？<u>いちいち</u>刻まなくても<u>熱湯</u>で溶かせばすぐでしょ。\nA: 低い温度で早く溶かすために刻むんだよ。高い温度で溶かすと味が悪くなるから。",
+  "english_translation": "A: You should chop up the chocolate before you melt it. B: Why? Even if you don't chop up every single piece, it will still melt in hot water. A: If you chop up the chocolate, it melts faster at a lower temperature. If you melt it at a higher temperature, it won't taste as good.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0093",
+      "word_number": 93,
+      "kanji": "刻む",
+      "furigana": "きざむ",
+      "meaning_en": "chop up"
+    },
+    {
+      "word_id": "n2_0094",
+      "word_number": 94,
+      "kanji": "いちいち",
+      "furigana": "いちいち",
+      "meaning_en": "piece by piece, every single piece"
+    },
+    {
+      "word_id": "n2_0095",
+      "word_number": 95,
+      "kanji": "熱湯",
+      "furigana": "ねっとう",
+      "meaning_en": "hot water, boiling water"
+    }
+  ]
+}

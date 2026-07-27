@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 26",
+  "japanese_text": "大規模な<u>自然災害</u>が発生した際、政府は速やかに<u>非常事態</u>を<u>宣言</u>し、<u>被災地</u>への<u>緊急支援</u>を開始した。<u>自衛隊</u>が<u>派遣</u>され、<u>救助</u>活動が行われた。",
+  "english_translation": "When a large-scale natural disaster occurred, the government promptly declared a state of emergency and began emergency support for the disaster-stricken areas. The Self-Defense Forces were dispatched and rescue operations were carried out.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2453",
+      "word_number": 2453,
+      "kanji": "自然災害",
+      "furigana": "しぜんさいがい",
+      "meaning_en": "natural disaster"
+    },
+    {
+      "word_id": "n1_2454",
+      "word_number": 2454,
+      "kanji": "非常事態",
+      "furigana": "ひじょうじたい",
+      "meaning_en": "state of emergency"
+    },
+    {
+      "word_id": "n1_2455",
+      "word_number": 2455,
+      "kanji": "宣言[する]",
+      "furigana": "せんげん",
+      "meaning_en": "declaration, declare"
+    },
+    {
+      "word_id": "n1_2456",
+      "word_number": 2456,
+      "kanji": "被災地",
+      "furigana": "ひさいち",
+      "meaning_en": "disaster-stricken area"
+    },
+    {
+      "word_id": "n1_2457",
+      "word_number": 2457,
+      "kanji": "自衛隊",
+      "furigana": "じえいたい",
+      "meaning_en": "Self-Defense Forces"
+    },
+    {
+      "word_id": "n1_2458",
+      "word_number": 2458,
+      "kanji": "派遣[する]",
+      "furigana": "はけん",
+      "meaning_en": "dispatch, send"
+    },
+    {
+      "word_id": "n1_2459",
+      "word_number": 2459,
+      "kanji": "救助[する]",
+      "furigana": "きゅうじょ",
+      "meaning_en": "rescue, rescue"
+    }
+  ]
+}

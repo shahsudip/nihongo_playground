@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 1",
+  "japanese_text": "<u>究極</u>のカレーを作るべく、いろいろなものを入れて<u>煮込んだ</u>。その結果、かなり味が<u>くどい</u>、<u>飲み込む</u>のもやっとの、<u>まずい</u>ものができあがってしまった。",
+  "english_translation": "When I tried to make the ultimate curry, I put all kinds of things into it before simmering it. The result was very strong-flavored, bad-tasting and difficult to swallow.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0047",
+      "word_number": 47,
+      "kanji": "究極",
+      "furigana": "きゅうきょく",
+      "meaning_en": "ultimate"
+    },
+    {
+      "word_id": "n1_0048",
+      "word_number": 48,
+      "kanji": "煮込む",
+      "furigana": "にこ",
+      "meaning_en": "stew, simmer"
+    },
+    {
+      "word_id": "n1_0049",
+      "word_number": 49,
+      "kanji": "くどい",
+      "furigana": "くどい",
+      "meaning_en": "powerful, strong (flavor)"
+    },
+    {
+      "word_id": "n1_0050",
+      "word_number": 50,
+      "kanji": "飲み込む",
+      "furigana": "のみこ",
+      "meaning_en": "swallow"
+    },
+    {
+      "word_id": "n1_0051",
+      "word_number": 51,
+      "kanji": "まずい",
+      "furigana": "まずい",
+      "meaning_en": "bad-tasting"
+    }
+  ]
+}

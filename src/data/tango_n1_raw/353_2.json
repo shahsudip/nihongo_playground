@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 15,
+  "title": "Topic 27",
+  "japanese_text": "ハッブルは、多くの<u>異論</u>もあった中で、宇宙が誕生してから膨大な時間を<u>経て</u> <u>膨張</u>していることを示した。",
+  "english_translation": "Hubble demonstrated, in the face of many objections, that the universe has been expanding in the enormous amount of time that has passed since its emergence.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2569",
+      "word_number": 2569,
+      "kanji": "異論",
+      "furigana": "いろん",
+      "meaning_en": "dissent, objection"
+    },
+    {
+      "word_id": "n1_2570",
+      "word_number": 2570,
+      "kanji": "経る",
+      "furigana": "へる",
+      "meaning_en": "pass (time)"
+    },
+    {
+      "word_id": "n1_2571",
+      "word_number": 2571,
+      "kanji": "膨張[する]",
+      "furigana": "ぼうちょう",
+      "meaning_en": "expansion, expand"
+    }
+  ]
+}

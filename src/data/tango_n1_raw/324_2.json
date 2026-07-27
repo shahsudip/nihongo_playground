@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 26",
+  "japanese_text": "A：最近、振り込め詐欺の被害が多いらしいね。\nB：そうなんだよ。<u>高齢者</u>が<u>標的</u>にされやすいって。<u>予防</u>策として、家族との<u>合言葉</u>を決めておくといいらしい。\nA：なるほど。<u>啓発</u>活動をもっと広めないとね。",
+  "english_translation": "A: I hear there have been a lot of phone scam cases lately. B: Yeah. Apparently elderly people tend to be targeted. As a preventive measure, it's good to have a code word with family. A: I see. We need to spread awareness activities more.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2449",
+      "word_number": 2449,
+      "kanji": "高齢者",
+      "furigana": "こうれいしゃ",
+      "meaning_en": "elderly person"
+    },
+    {
+      "word_id": "n1_2450",
+      "word_number": 2450,
+      "kanji": "標的",
+      "furigana": "ひょうてき",
+      "meaning_en": "target"
+    },
+    {
+      "word_id": "n1_2451",
+      "word_number": 2451,
+      "kanji": "予防[する]",
+      "furigana": "よぼう",
+      "meaning_en": "prevention, prevent"
+    },
+    {
+      "word_id": "n1_2452",
+      "word_number": 2452,
+      "kanji": "啓発[する]",
+      "furigana": "けいはつ",
+      "meaning_en": "awareness, enlighten"
+    }
+  ]
+}

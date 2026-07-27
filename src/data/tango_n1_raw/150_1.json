@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 12",
+  "japanese_text": "ペットの<u>しつけ</u>をする際は、<u>おびえさせず</u>、<u>親近感</u>をもたせることが重要だ。また、何かできたときはすぐ<u>ご褒美</u>を与えると効果的だ。",
+  "english_translation": "When training a pet, it is important not to frighten it, but rather build an affinity with it. Giving your pet a reward when it succeeds in doing something is also effective.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1028",
+      "word_number": 1028,
+      "kanji": "しつけ",
+      "furigana": "しつけ",
+      "meaning_en": "training"
+    },
+    {
+      "word_id": "n1_1029",
+      "word_number": 1029,
+      "kanji": "おびえる",
+      "furigana": "おびえる",
+      "meaning_en": "frighten"
+    },
+    {
+      "word_id": "n1_1030",
+      "word_number": 1030,
+      "kanji": "親近感",
+      "furigana": "しんきんかん",
+      "meaning_en": "affinity, sense of closeness"
+    },
+    {
+      "word_id": "n1_1031",
+      "word_number": 1031,
+      "kanji": "(ご)褒美",
+      "furigana": "ほうび",
+      "meaning_en": "reward"
+    }
+  ]
+}

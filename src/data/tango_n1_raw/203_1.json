@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 15,
+  "title": "Topic 17",
+  "japanese_text": "調理実習でハンバーグを作った。私のグループにはケチャップ好きの<u>同志</u>が複数人いたので、ケチャップを<u>ベース</u>にしたソースを作ることにした。ところが、計量カップの<u>目盛り</u>を読み間違えていたようで、ソースは微妙な味になってしまった。",
+  "english_translation": "I made hamburgers in my cooking class. Several of my fellows in the group loved ketchup, so I decided to make a sauce with a ketchup base. However, I misread the scale marked on the measuring cup, and so the sauce ended up tasting strange.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1413",
+      "word_number": 1413,
+      "kanji": "同志",
+      "furigana": "どうし",
+      "meaning_en": "comrade, fellow"
+    },
+    {
+      "word_id": "n1_1414",
+      "word_number": 1414,
+      "kanji": "ベース",
+      "furigana": "ベース",
+      "meaning_en": "base"
+    },
+    {
+      "word_id": "n1_1415",
+      "word_number": 1415,
+      "kanji": "目盛り",
+      "furigana": "めもり",
+      "meaning_en": "gradations, scale"
+    }
+  ]
+}

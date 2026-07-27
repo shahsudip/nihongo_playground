@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 26",
+  "japanese_text": "A：最近の<u>格差社会</u>について、どう思う？\nB：<u>貧困</u>層がなかなか<u>抜け出せ</u>ない<u>悪循環</u>があるよね。教育の機会が<u>均等</u>じゃないことが原因の一つだと思う。\nA：<u>奨学金</u>制度の<u>拡充</u>とか、<u>セーフティーネット</u>の強化が必要だね。",
+  "english_translation": "A: What do you think about the gap in society lately? B: There's a vicious cycle that people in poverty can't easily escape. I think one reason is that educational opportunities aren't equal. A: We need to expand the scholarship system and strengthen the social safety net.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2496",
+      "word_number": 2496,
+      "kanji": "格差",
+      "furigana": "かくさ",
+      "meaning_en": "gap, disparity"
+    },
+    {
+      "word_id": "n1_2497",
+      "word_number": 2497,
+      "kanji": "貧困",
+      "furigana": "ひんこん",
+      "meaning_en": "poverty"
+    },
+    {
+      "word_id": "n1_2498",
+      "word_number": 2498,
+      "kanji": "悪循環",
+      "furigana": "あくじゅんかん",
+      "meaning_en": "vicious cycle"
+    },
+    {
+      "word_id": "n1_2499",
+      "word_number": 2499,
+      "kanji": "均等な",
+      "furigana": "きんとうな",
+      "meaning_en": "equal, uniform"
+    },
+    {
+      "word_id": "n1_2500",
+      "word_number": 2500,
+      "kanji": "奨学金",
+      "furigana": "しょうがくきん",
+      "meaning_en": "scholarship"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 18,
+  "title": "Topic 17",
+  "japanese_text": "<u>母校</u>のテニス部は県内でも強くて有名だ。しかし、今年の大会では相手の学校に<u>負かされ</u>、<u>散々な</u>結果になってしまった。それ以来、練習が厳しくなって精神を<u>病む</u>部員が出ており、問題になっているらしい。",
+  "english_translation": "The tennis team at my alma mater is strong and well known within the prefecture. However, at this year’s tournament, it was beaten by another school, suffering a dismal outcome. Since then, practice has grown more rigorous and some members of the club are suffering from poor mental health, which is becoming a problem.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1425",
+      "word_number": 1425,
+      "kanji": "母校",
+      "furigana": "ぼこう",
+      "meaning_en": "alma mater"
+    },
+    {
+      "word_id": "n1_1426",
+      "word_number": 1426,
+      "kanji": "負かす",
+      "furigana": "まかす",
+      "meaning_en": "beat, defeat"
+    },
+    {
+      "word_id": "n1_1427",
+      "word_number": 1427,
+      "kanji": "散々な",
+      "furigana": "さんざんな",
+      "meaning_en": "dismal"
+    },
+    {
+      "word_id": "n1_1428",
+      "word_number": 1428,
+      "kanji": "病む",
+      "furigana": "やむ",
+      "meaning_en": "suffer from (illness)"
+    }
+  ]
+}

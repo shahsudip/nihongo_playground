@@ -1,0 +1,65 @@
+{
+  "is_story": true,
+  "story_number": 15,
+  "title": "Topic 12",
+  "japanese_text": "この施設では、動物の排泄物は飼い主が<u>始末する</u>という<u>規定</u>だが、それを守らない<u>飼い主</u>がいるようだ。その飼い主が誰であるかが<u>判明した</u>ので指摘したところ、<u>心当たり</u>がないという。<u>臆病者</u>なので、それ以上の<u>追及</u>はできなかった。",
+  "english_translation": "At this facility, the rule is that animal excrement must be dealt with by the owner, but it seems that some owners do not obey this rule. When I identified the probable owner and pointed it out, he said he had no knowledge of it. Being a coward, I was unable to pursue the matter further.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1053",
+      "word_number": 1053,
+      "kanji": "始末",
+      "furigana": "しまつ",
+      "meaning_en": "management, deal with, handle"
+    },
+    {
+      "word_id": "n1_1054",
+      "word_number": 1054,
+      "kanji": "規定",
+      "furigana": "きてい",
+      "meaning_en": "rule, regulate"
+    },
+    {
+      "word_id": "n1_1055",
+      "word_number": 1055,
+      "kanji": "飼い主",
+      "furigana": "かいぬし",
+      "meaning_en": "owner"
+    },
+    {
+      "word_id": "n1_1056",
+      "word_number": 1056,
+      "kanji": "判明",
+      "furigana": "はんめい",
+      "meaning_en": "establishing, identify"
+    },
+    {
+      "word_id": "n1_1057",
+      "word_number": 1057,
+      "kanji": "心当たり",
+      "furigana": "こころあたり",
+      "meaning_en": "knowledge"
+    },
+    {
+      "word_id": "n1_1058",
+      "word_number": 1058,
+      "kanji": "臆病者",
+      "furigana": "おくびょうもの",
+      "meaning_en": "coward"
+    },
+    {
+      "word_id": "n1_1059",
+      "word_number": 1059,
+      "kanji": "臆病な",
+      "furigana": "おくびょうな",
+      "meaning_en": "cowardly"
+    },
+    {
+      "word_id": "n1_1060",
+      "word_number": 1060,
+      "kanji": "追及",
+      "furigana": "ついきゅう",
+      "meaning_en": "pursuit, pursue"
+    }
+  ]
+}

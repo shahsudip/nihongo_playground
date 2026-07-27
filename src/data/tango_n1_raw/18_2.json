@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 1",
+  "japanese_text": "<u>現代人</u>は日々のストレスから<u>逃れる</u>ことが難しい。そんなときは、おいしいコーヒーでも飲んで<u>一息</u>入れましょう。<u>優雅な</u>時間が心を軽くしてくれますよ。",
+  "english_translation": "It can be difficult for modern people to escape the stresses of everyday life. At such times, enjoy a break with a cup of good coffee. These tranquil moments will lighten your heart.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0036",
+      "word_number": 36,
+      "kanji": "現代人",
+      "furigana": "げんだいじん",
+      "meaning_en": "modern people"
+    },
+    {
+      "word_id": "n1_0037",
+      "word_number": 37,
+      "kanji": "逃れる",
+      "furigana": "のが",
+      "meaning_en": "escape"
+    },
+    {
+      "word_id": "n1_0038",
+      "word_number": 38,
+      "kanji": "一息",
+      "furigana": "ひといき",
+      "meaning_en": "break (literally, breath)"
+    },
+    {
+      "word_id": "n1_0039",
+      "word_number": 39,
+      "kanji": "優雅な",
+      "furigana": "ゆうが",
+      "meaning_en": "refined, tranquil"
+    }
+  ]
+}

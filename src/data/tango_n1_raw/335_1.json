@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 25",
+  "japanese_text": "<u>検事</u>とは、<u>検察官</u>という職業の中の、役職の一つだ。検察官は法律に違反した犯罪や事件の調査、<u>ならびに</u>、犯人を裁判にかける<u>起訴</u>を担う。場合によっては警察と協力のもとでの<u>捜査</u>も行う。日本では基本的に検察官だけが犯人を起訴することができる。",
+  "english_translation": "\"Prosecutor\" is a particular job within the broader occupation of public prosecutor. Public prosecutors are responsible for investigating crimes and incidents that violate the law, as well as prosecuting offenders to bring them to justice. In some cases, they also conduct investigations in cooperation with the police. In Japan, public prosecutors are basically the only ones who can prosecute criminals.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2424",
+      "word_number": 2424,
+      "kanji": "検事",
+      "furigana": "けんじ",
+      "meaning_en": "prosecutor"
+    },
+    {
+      "word_id": "n1_2425",
+      "word_number": 2425,
+      "kanji": "検察官",
+      "furigana": "けんさつかん",
+      "meaning_en": "public prosecutor"
+    },
+    {
+      "word_id": "n1_2426",
+      "word_number": 2426,
+      "kanji": "ならびに",
+      "furigana": "",
+      "meaning_en": "as well as"
+    },
+    {
+      "word_id": "n1_2427",
+      "word_number": 2427,
+      "kanji": "起訴[する]",
+      "furigana": "きそ",
+      "meaning_en": "prosecution, prosecute"
+    },
+    {
+      "word_id": "n1_2428",
+      "word_number": 2428,
+      "kanji": "捜査[する]",
+      "furigana": "そうさ",
+      "meaning_en": "investigation, investigate"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 3",
+  "japanese_text": "この市には、<u>金融</u>機関から<u>融資</u>を受けている中小企業に対し、<u>利子</u>の一部を補助する制度がある。また、社会<u>保障</u>にも力を入れており、保育所等で<u>実費</u>徴収される費用の一部を補助している。",
+  "english_translation": "This city has a system that subsidizes part of the interest for small- and medium-sized enterprises receiving loans from financial institutions. The city also focuses on social insurance and subsidizes a portion of the actual costs charged at daycare centers and other facilities.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0177",
+      "word_number": 177,
+      "kanji": "金融",
+      "furigana": "きんゆう",
+      "meaning_en": "finance"
+    },
+    {
+      "word_id": "n1_0178",
+      "word_number": 178,
+      "kanji": "融資",
+      "furigana": "ゆうし",
+      "meaning_en": "loan, lend"
+    },
+    {
+      "word_id": "n1_0179",
+      "word_number": 179,
+      "kanji": "利子",
+      "furigana": "りし",
+      "meaning_en": "interest"
+    },
+    {
+      "word_id": "n1_0180",
+      "word_number": 180,
+      "kanji": "保障",
+      "furigana": "ほしょう",
+      "meaning_en": "insurance, insure"
+    },
+    {
+      "word_id": "n1_0181",
+      "word_number": 181,
+      "kanji": "実費",
+      "furigana": "じっぴ",
+      "meaning_en": "actual costs"
+    }
+  ]
+}

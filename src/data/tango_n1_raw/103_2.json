@@ -1,0 +1,30 @@
+{
+  "is_story": false,
+  "story_number": 7,
+  "title": "Topic 9",
+  "japanese_text": "A：これからよろしくね。私じゃ<u>頼りない</u>かもしれないけど、サポートするから<u>何なりと</u>言ってね。\nB：ありがとうございます！ Aさんがリーダーでとても<u>心強い</u>です。",
+  "english_translation": "A: I'm looking forward to working with you. I hope you don't find me undependable, and I will try to support you, so please feel free to come to me with anything. B: Thank you very much! Mr. A, having you as our leader is very reassuring.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0665",
+      "word_number": 665,
+      "kanji": "頼りない",
+      "furigana": "たよりない",
+      "meaning_en": "undependable"
+    },
+    {
+      "word_id": "n1_0666",
+      "word_number": 666,
+      "kanji": "何なりと",
+      "furigana": "なんなりと",
+      "meaning_en": "anything, whatever"
+    },
+    {
+      "word_id": "n1_0667",
+      "word_number": 667,
+      "kanji": "心強い",
+      "furigana": "こころづよい",
+      "meaning_en": "reassuring"
+    }
+  ]
+}

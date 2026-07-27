@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 23,
+  "title": "Topic 17",
+  "japanese_text": "＜奨学金に関する書類＞受給者<u>各位</u>　奨学金の<u>返還</u>は、金融機関の口座振替によってのみ行うことが可能です。クレジットカード等はご利用いただけませんので、ご<u>了承</u>ください。",
+  "english_translation": "<Scholarship-related document> To all recipients: Scholarship funds can only be returned by bank transfer at a financial institution. Please understand that credit cards or other forms of payment will not be accepted.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1445",
+      "word_number": 1445,
+      "kanji": "各位",
+      "furigana": "かくい",
+      "meaning_en": "(to) all"
+    },
+    {
+      "word_id": "n1_1446",
+      "word_number": 1446,
+      "kanji": "返還",
+      "furigana": "へんかん",
+      "meaning_en": "refund, return"
+    },
+    {
+      "word_id": "n1_1447",
+      "word_number": 1447,
+      "kanji": "了承",
+      "furigana": "りょうしょう",
+      "meaning_en": "acceptance, understand"
+    }
+  ]
+}

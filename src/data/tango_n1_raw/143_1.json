@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 12",
+  "japanese_text": "「猿回し」は、猿が飛んだり<u>跳ねたり</u>するだけでなく、<u>逆立ち</u>や<u>綱渡り</u>などの<u>芸</u>を<u>披露</u>するものである。それを見ると、<u>不吉な</u>ことが遠ざかるという。",
+  "english_translation": "\"Saru mawashi\" is a show in which monkeys not only leap and hop, but also perform tricks such as headstands and tightrope walking. They say that watching such a show drives away ill fortune.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0964",
+      "word_number": 964,
+      "kanji": "跳ねる",
+      "furigana": "はねる",
+      "meaning_en": "hop, jump"
+    },
+    {
+      "word_id": "n1_0965",
+      "word_number": 965,
+      "kanji": "逆立ち",
+      "furigana": "さかだち",
+      "meaning_en": "headstand, stand on one's head"
+    },
+    {
+      "word_id": "n1_0966",
+      "word_number": 966,
+      "kanji": "綱渡り",
+      "furigana": "つなわたり",
+      "meaning_en": "tightrope walking, walk a tightrope"
+    },
+    {
+      "word_id": "n1_0967",
+      "word_number": 967,
+      "kanji": "芸",
+      "furigana": "げい",
+      "meaning_en": "art, trick"
+    },
+    {
+      "word_id": "n1_0968",
+      "word_number": 968,
+      "kanji": "披露",
+      "furigana": "ひろう",
+      "meaning_en": "presentation, perform"
+    },
+    {
+      "word_id": "n1_0969",
+      "word_number": 969,
+      "kanji": "不吉な",
+      "furigana": "ふきつな",
+      "meaning_en": "ill (fortune), unlucky"
+    }
+  ]
+}

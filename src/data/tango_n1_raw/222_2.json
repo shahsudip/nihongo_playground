@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 16,
+  "title": "Topic 18",
+  "japanese_text": "<u>法人</u>は、設立時に<u>税務署</u>に提出する法人設立届に、事業年度を記載することが義務付けられている。この事業年度とは、<u>決算</u>のために区切った一定の期間のことである。決算の際は、事業年度内の<u>収支</u>の全てを<u>集計し</u>、決算書が作成される。",
+  "english_translation": "Corporations are required to declare their fiscal year in the notification of incorporation submitted to the tax office when they are established. This fiscal year is a fixed period of time defined for the purpose of settlement of accounts. When accounts are settled, all revenue and expenditure during the fiscal year are tabulated and financial statements are prepared.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1553",
+      "word_number": 1553,
+      "kanji": "法人",
+      "furigana": "ほうじん",
+      "meaning_en": "corporation"
+    },
+    {
+      "word_id": "n1_1554",
+      "word_number": 1554,
+      "kanji": "税務署",
+      "furigana": "ぜいむしょ",
+      "meaning_en": "tax office"
+    },
+    {
+      "word_id": "n1_1555",
+      "word_number": 1555,
+      "kanji": "決算",
+      "furigana": "けっさん",
+      "meaning_en": "settlement of accounts"
+    },
+    {
+      "word_id": "n1_1556",
+      "word_number": 1556,
+      "kanji": "収支",
+      "furigana": "しゅうし",
+      "meaning_en": "revenue and expenditure"
+    },
+    {
+      "word_id": "n1_1557",
+      "word_number": 1557,
+      "kanji": "集計",
+      "furigana": "しゅうけい",
+      "meaning_en": "total, tabulate"
+    }
+  ]
+}

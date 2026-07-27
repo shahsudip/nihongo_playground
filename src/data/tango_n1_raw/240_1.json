@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 19",
+  "japanese_text": "高校の野球部で活躍していた私は、卒業後プロ野球の道に進んだ。最初は調子がよかったが、しばらくすると<u>スランプ</u>に<u>陥って</u>しまい、将来を<u>悲観して</u>しまう時期もあった。復活を<u>遂げた</u>今、あの<u>挫折</u>の経験があったからこそ、ここまで成長できたのだと思う。",
+  "english_translation": "I was active in my high school baseball team, and after graduation I went on to play professional baseball. At first I was in great shape, but after a while I fell into a slump, and at times I was pessimistic about the future. Now that I've achieved a comeback, I believe that setback was the experience I needed to grow so much.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1691",
+      "word_number": 1691,
+      "kanji": "スランプ",
+      "furigana": "スランプ",
+      "meaning_en": "slump"
+    },
+    {
+      "word_id": "n1_1692",
+      "word_number": 1692,
+      "kanji": "陥る",
+      "furigana": "おちいる",
+      "meaning_en": "fall into"
+    },
+    {
+      "word_id": "n1_1693",
+      "word_number": 1693,
+      "kanji": "悲観[する]",
+      "furigana": "ひかん",
+      "meaning_en": "disappointment, be pessimistic"
+    },
+    {
+      "word_id": "n1_1694",
+      "word_number": 1694,
+      "kanji": "遂げる",
+      "furigana": "とげる",
+      "meaning_en": "accomplish, achieve"
+    },
+    {
+      "word_id": "n1_1695",
+      "word_number": 1695,
+      "kanji": "挫折[する]",
+      "furigana": "ざせつ",
+      "meaning_en": "setback, fail"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 13",
+  "japanese_text": "A：来年引っ越すって聞いたんだけど、転勤？\nB：そう。うちの部署、５年<u>周期</u>で大規模な<u>配置転換</u>があって。\nA：そっか。どこに住むの？\nB：うーん、東京<u>近郊</u>ならどこでもいいんだけど、<u>強いて</u>言うなら千葉かな。",
+  "english_translation": "A: I heard you're moving next year. A transfer? B: Yes. Our department reassigns personnel on a five-year cycle. A: I see. Where will you live? B: Well, anywhere in the Tokyo suburbs would be fine, but if I had to say, probably Chiba.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1073",
+      "word_number": 1073,
+      "kanji": "周期",
+      "furigana": "しゅうき",
+      "meaning_en": "cycle, period"
+    },
+    {
+      "word_id": "n1_1074",
+      "word_number": 1074,
+      "kanji": "配置",
+      "furigana": "はいち",
+      "meaning_en": "assignment, assign"
+    },
+    {
+      "word_id": "n1_1075",
+      "word_number": 1075,
+      "kanji": "近郊",
+      "furigana": "きんこう",
+      "meaning_en": "suburbs"
+    },
+    {
+      "word_id": "n1_1076",
+      "word_number": 1076,
+      "kanji": "強いて",
+      "furigana": "しいて",
+      "meaning_en": "forcibly, if (one) has to"
+    }
+  ]
+}

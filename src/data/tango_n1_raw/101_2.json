@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 9",
+  "japanese_text": "兄は、何でもよくでき、<u>協調性</u>があるため友達も多い。昔はそんな兄と自分をよく比べ、落ち込み、時に<u>嫉妬して</u>いた。そんな私の気持ちを<u>察し</u>、兄はいつも私のいいところをたくさん褒めてくれたので、<u>自尊心</u>が高まり、自分に自信が持てるようになった。",
+  "english_translation": "My brother has a lot of friends, because he's good at everything and he has a very cooperative attitude. I often used to compare myself with him, and I'd get depressed and sometimes jealous. But my brother guessed how I was feeling, and always praised me for my good qualities, which helped me to build up my self-esteem and self-confidence.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0647",
+      "word_number": 647,
+      "kanji": "協調性",
+      "furigana": "きょうちょうせい",
+      "meaning_en": "cooperative attitude"
+    },
+    {
+      "word_id": "n1_0649",
+      "word_number": 649,
+      "kanji": "嫉妬",
+      "furigana": "しっと",
+      "meaning_en": "jealousy, be jealous"
+    },
+    {
+      "word_id": "n1_0650",
+      "word_number": 650,
+      "kanji": "察する",
+      "furigana": "さっする",
+      "meaning_en": "guess, observe"
+    },
+    {
+      "word_id": "n1_0651",
+      "word_number": 651,
+      "kanji": "自尊心",
+      "furigana": "じそんしん",
+      "meaning_en": "self-esteem"
+    }
+  ]
+}

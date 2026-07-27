@@ -1,0 +1,65 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 8",
+  "japanese_text": "国際会議で、英語でプレゼンテーションすることになった。全体の<u>構想</u>を考えてからスライドを作り、<u>概要</u>を<u>口頭</u>で説明できるように何度も練習した。しかし、会議では<u>質疑</u>に対して<u>身ぶり</u>手ぶりと<u>片言</u>の英語でしか答えられなかった。自分では英語は<u>習得できた</u>と思っていたが、もっと<u>使いこなせる</u>ようにならないとだめだ。",
+  "english_translation": "I had to give a presentation in English at an international conference. After thinking about the overall concept, I made slides and practiced many times so that I could verbally explain the outline of my presentation. However, at the conference, I could only answer questions with gestures and a few broken words of English. I thought I had mastered English, but I need to become more proficient.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0630",
+      "word_number": 630,
+      "kanji": "構想",
+      "furigana": "こうそう",
+      "meaning_en": "concept, conceptualize"
+    },
+    {
+      "word_id": "n1_0631",
+      "word_number": 631,
+      "kanji": "概要",
+      "furigana": "がいよう",
+      "meaning_en": "outline"
+    },
+    {
+      "word_id": "n1_0632",
+      "word_number": 632,
+      "kanji": "口頭",
+      "furigana": "こうとう",
+      "meaning_en": "verbal speech"
+    },
+    {
+      "word_id": "n1_0633",
+      "word_number": 633,
+      "kanji": "質疑",
+      "furigana": "しつぎ",
+      "meaning_en": "question, ask a question"
+    },
+    {
+      "word_id": "n1_0634",
+      "word_number": 634,
+      "kanji": "身ぶり",
+      "furigana": "みぶり",
+      "meaning_en": "gesture"
+    },
+    {
+      "word_id": "n1_0635",
+      "word_number": 635,
+      "kanji": "片言",
+      "furigana": "かたこと",
+      "meaning_en": "broken words"
+    },
+    {
+      "word_id": "n1_0636",
+      "word_number": 636,
+      "kanji": "習得",
+      "furigana": "しゅうとく",
+      "meaning_en": "mastery, learn"
+    },
+    {
+      "word_id": "n1_0637",
+      "word_number": 637,
+      "kanji": "使いこなす",
+      "furigana": "つかいこなす",
+      "meaning_en": "become proficient"
+    }
+  ]
+}

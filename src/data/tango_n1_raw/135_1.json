@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 11",
+  "japanese_text": "Ａ：けがからの<u>復帰</u>戦を勝利で飾ることができました。今のお気持ちは。\nＢ：2年ぶりに勝つことができて<u>感無量です</u>。試合前はけっこう不安だったんですけど、コーチや先輩からたくさん<u>激励</u>を受けたので、<u>平常心</u>で試合に臨めましたし、試合中も大きな<u>歓声</u>をもらったおかげで、力を<u>発揮できた</u>と思います。",
+  "english_translation": "A: You managed to win your return match after injury. How do you feel right now? B: I'm filled with emotion after winning for the first time in two years. I was anxious before the match, but I received a lot of encouragement from my coaches and senior teammates, so I was able to go into the match with self-possession and I think I was able to display my ability thanks to the crowd's great cheering during the match.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0899",
+      "word_number": 899,
+      "kanji": "復帰[する]",
+      "furigana": "ふっき",
+      "meaning_en": "comeback, return"
+    },
+    {
+      "word_id": "n1_0900",
+      "word_number": 900,
+      "kanji": "感無量な",
+      "furigana": "かんむりょう",
+      "meaning_en": "filled with emotion"
+    },
+    {
+      "word_id": "n1_0901",
+      "word_number": 901,
+      "kanji": "激励[する]",
+      "furigana": "げきれい",
+      "meaning_en": "encouragement, encourage"
+    },
+    {
+      "word_id": "n1_0902",
+      "word_number": 902,
+      "kanji": "平常心",
+      "furigana": "へいじょうしん",
+      "meaning_en": "presence of mind, self-possession"
+    },
+    {
+      "word_id": "n1_0903",
+      "word_number": 903,
+      "kanji": "平常",
+      "furigana": "へいじょう",
+      "meaning_en": "everyday, normal condition"
+    },
+    {
+      "word_id": "n1_0904",
+      "word_number": 904,
+      "kanji": "歓声",
+      "furigana": "かんせい",
+      "meaning_en": "cheering"
+    },
+    {
+      "word_id": "n1_0905",
+      "word_number": 905,
+      "kanji": "発揮[する]",
+      "furigana": "はっき",
+      "meaning_en": "display, demonstrate"
+    }
+  ]
+}

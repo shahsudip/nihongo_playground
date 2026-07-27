@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 1 食事",
+  "japanese_text": "A: 先週行った駅前の<u>創作料理</u>の店、閉店するんだって。\nB: え、あの店、<u>食物</u>アレルギーに対応したメニューもあってよかったのに。\nA: ね。駅前には、チェーンのファミレスも多いし、やっぱり、小さい店がそういう大きい店と<u>勝負する</u>のは難しいのかもね。",
+  "english_translation": "A: I heard that the creative cuisine restaurant by the station that we went to last week is closing. B: What? That restaurant was great—it had a menu for people with food allergies. A: Yeah. There are lots of franchise family restaurants near the station, and it's probably difficult for a smaller restaurant to compete with such large places.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0001",
+      "word_number": 1,
+      "kanji": "創作[する]",
+      "furigana": "そうさく",
+      "meaning_en": "creative, create"
+    },
+    {
+      "word_id": "n2_0002",
+      "word_number": 2,
+      "kanji": "食物",
+      "furigana": "しょくもつ",
+      "meaning_en": "food"
+    },
+    {
+      "word_id": "n2_0003",
+      "word_number": 3,
+      "kanji": "勝負[する]",
+      "furigana": "しょうぶ",
+      "meaning_en": "victory, compete"
+    }
+  ]
+}

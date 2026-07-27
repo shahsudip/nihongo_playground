@@ -1,0 +1,37 @@
+{
+  "is_story": false,
+  "story_number": 10,
+  "title": "Topic 9",
+  "japanese_text": "A：BさんとCさん、何をするにも<u>息が合って</u>いるし、よく2人でいるよね。\nB：Cさんといるのが楽しくて。付き合いたいけど、向こうはどう思ってるんだろう。\nA：どう考えても<u>脈</u>ありでしょう。Bさんと話しているとき、頬を<u>赤らめて</u>いるし。みんな気づいてるよ。Bさんは<u>鈍感だ</u>なぁ。",
+  "english_translation": "A: Mr. B, you and Ms. C make a perfect pair in every way, and I often see you together. B: I enjoy spending time with Ms. C. I'd like to ask her out, but I don't know what she'd say. A: No matter what you think, there's certainly hope. When she talks to you, she blushes. Everyone notices it. Mr. B, you're so unperceptive.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0677",
+      "word_number": 677,
+      "kanji": "息が合う",
+      "furigana": "いきがあう",
+      "meaning_en": "be in sync, make a perfect pair"
+    },
+    {
+      "word_id": "n1_0678",
+      "word_number": 678,
+      "kanji": "脈",
+      "furigana": "みゃく",
+      "meaning_en": "hope"
+    },
+    {
+      "word_id": "n1_0679",
+      "word_number": 679,
+      "kanji": "赤らめる",
+      "furigana": "あからめる",
+      "meaning_en": "blush, get red"
+    },
+    {
+      "word_id": "n1_0680",
+      "word_number": 680,
+      "kanji": "鈍感な",
+      "furigana": "どんかんな",
+      "meaning_en": "unperceptive"
+    }
+  ]
+}

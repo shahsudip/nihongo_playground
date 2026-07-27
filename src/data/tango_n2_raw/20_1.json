@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 1 ● 食事",
+  "japanese_text": "冷蔵庫の中が<u>生臭い</u>と思ったら、きゅうりが腐って白い<u>液体</u>が 出ていた。普段、<u>賞味期限</u> <u>切れ</u>のお菓子などは気にせず食べて いるが、これはさすがにやめておこう。せっかく母が<u>農薬</u>を使 わずに育てたからと送ってくれたのに、<u>粗末</u>にしてしまって申 し訳ない。",
+  "english_translation": "I noticed something stinking in the refrigerator, but it turned out to be rotten cucumbers with white fluid oozing out of them. I usually don't mind eating expired snacks, but there's no way I'd eat this. My mother sent me these cucumbers she'd grown without using any pesticides, so I feel bad for treating them so carelessly.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0045",
+      "word_number": 45,
+      "kanji": "生臭い",
+      "furigana": "なまぐさい",
+      "meaning_en": "stinking"
+    },
+    {
+      "word_id": "n2_0046",
+      "word_number": 46,
+      "kanji": "液体",
+      "furigana": "えきたい",
+      "meaning_en": "fluid, liquid"
+    },
+    {
+      "word_id": "n2_0047",
+      "word_number": 47,
+      "kanji": "賞味期限",
+      "furigana": "しょうみきげん",
+      "meaning_en": "best-before date"
+    },
+    {
+      "word_id": "n2_0048",
+      "word_number": 48,
+      "kanji": "+ 消費期限",
+      "furigana": "しょうひきげん",
+      "meaning_en": "expiry date"
+    },
+    {
+      "word_id": "n2_0049",
+      "word_number": 49,
+      "kanji": "～切れ",
+      "furigana": "～ぎれ",
+      "meaning_en": "~ used up, run out, expired"
+    },
+    {
+      "word_id": "n2_0050",
+      "word_number": 50,
+      "kanji": "農薬",
+      "furigana": "のうやく",
+      "meaning_en": "pesticides"
+    },
+    {
+      "word_id": "n2_0051",
+      "word_number": 51,
+      "kanji": "粗末な",
+      "furigana": "そまつ",
+      "meaning_en": "coarse, careless"
+    }
+  ]
+}

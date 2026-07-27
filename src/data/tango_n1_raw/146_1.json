@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 12",
+  "japanese_text": "リスが<u>熟した</u>果物を食べている。いつもは<u>しぼんでいる</u>ほっぺたが<u>膨れている</u>のを見ると、<u>すばしっこい</u>からきっと無理だろうが、<u>つつきたく</u>なる。リスを見ると気持ちが<u>和み</u>、<u>癒される</u>。",
+  "english_translation": "The squirrel is eating ripened fruit. When I see his little cheeks swell up, which are usually deflated, I want to poke them, even though I know it's impossible because he's so nimble. Watching squirrels calms me and makes me feel soothed.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0986",
+      "word_number": 986,
+      "kanji": "熟す",
+      "furigana": "じゅくす",
+      "meaning_en": "ripen"
+    },
+    {
+      "word_id": "n1_0987",
+      "word_number": 987,
+      "kanji": "しぼむ",
+      "furigana": "しぼむ",
+      "meaning_en": "deflate"
+    },
+    {
+      "word_id": "n1_0988",
+      "word_number": 988,
+      "kanji": "膨れる",
+      "furigana": "ふくれる",
+      "meaning_en": "swell up"
+    },
+    {
+      "word_id": "n1_0989",
+      "word_number": 989,
+      "kanji": "すばしっこい",
+      "furigana": "すばしっこい",
+      "meaning_en": "nimble"
+    },
+    {
+      "word_id": "n1_0990",
+      "word_number": 990,
+      "kanji": "つつく ／ つっつく",
+      "furigana": "つつく",
+      "meaning_en": "poke"
+    },
+    {
+      "word_id": "n1_0991",
+      "word_number": 991,
+      "kanji": "和む",
+      "furigana": "なごむ",
+      "meaning_en": "calm, soften"
+    },
+    {
+      "word_id": "n1_0992",
+      "word_number": 992,
+      "kanji": "癒す",
+      "furigana": "いやす",
+      "meaning_en": "feel soothed"
+    }
+  ]
+}

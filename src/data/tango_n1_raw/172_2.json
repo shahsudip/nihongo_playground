@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 14",
+  "japanese_text": "私は<u>水田</u>が広がる山の<u>麓</u>の町で育った。民家がかなり<u>分散して</u>いたので、友達の家に遊びに行くのにも苦労した。",
+  "english_translation": "I grew up in a town at the foot of a mountain, surrounded by rice paddies. It wasn't easy to visit my friends, since our houses were scattered quite far apart.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1192",
+      "word_number": 1192,
+      "kanji": "水田",
+      "furigana": "すいでん",
+      "meaning_en": "rice paddy"
+    },
+    {
+      "word_id": "n1_1193",
+      "word_number": 1193,
+      "kanji": "麓",
+      "furigana": "ふもと",
+      "meaning_en": "base, foot (of a mountain)"
+    },
+    {
+      "word_id": "n1_1194",
+      "word_number": 1194,
+      "kanji": "分散する",
+      "furigana": "ぶんさんする",
+      "meaning_en": "dispersion, scatter"
+    }
+  ]
+}

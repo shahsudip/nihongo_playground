@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 26",
+  "japanese_text": "A：最近、<u>ハラスメント</u>の問題が職場でも増えてるよね。\nB：そうだね。<u>パワハラ</u>や<u>セクハラ</u>は<u>加害者</u>自身が<u>自覚</u>していないことも多いから厄介だよ。\nA：<u>研修</u>を通じて<u>意識</u>を高めることが大事だね。",
+  "english_translation": "A: Harassment has been increasing in the workplace lately, hasn't it? B: That's true. Power harassment and sexual harassment are tricky because the perpetrators often aren't aware of what they're doing. A: It's important to raise awareness through training.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2481",
+      "word_number": 2481,
+      "kanji": "ハラスメント",
+      "furigana": "",
+      "meaning_en": "harassment"
+    },
+    {
+      "word_id": "n1_2482",
+      "word_number": 2482,
+      "kanji": "パワハラ",
+      "furigana": "",
+      "meaning_en": "power harassment"
+    },
+    {
+      "word_id": "n1_2483",
+      "word_number": 2483,
+      "kanji": "セクハラ",
+      "furigana": "",
+      "meaning_en": "sexual harassment"
+    },
+    {
+      "word_id": "n1_2484",
+      "word_number": 2484,
+      "kanji": "自覚[する]",
+      "furigana": "じかく",
+      "meaning_en": "self-awareness, be aware of"
+    },
+    {
+      "word_id": "n1_2485",
+      "word_number": 2485,
+      "kanji": "研修",
+      "furigana": "けんしゅう",
+      "meaning_en": "training, workshop"
+    }
+  ]
+}

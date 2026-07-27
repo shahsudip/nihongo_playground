@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 2",
+  "japanese_text": "<u>風力発電</u>では、風の力で<u>風車</u>を回し、その回転力を電力に変え、<u>蓄積する</u>。環境への<u>負荷</u>が小さいことがメリットだが、設置に費用がかかるため、コストの<u>軽減</u>が課題となっている。",
+  "english_translation": "In wind power generation, the force of the wind turns a wind turbine, converting its rotational power into electricity, which is then stored. The advantage is that it has less environmental impact, but because it is expensive to install, cutting costs is an issue.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0106",
+      "word_number": 106,
+      "kanji": "風力発電",
+      "furigana": "ふうりょくはつでん",
+      "meaning_en": "wind power generation"
+    },
+    {
+      "word_id": "n1_0107",
+      "word_number": 107,
+      "kanji": "風車",
+      "furigana": "ふうしゃ",
+      "meaning_en": "wind turbine"
+    },
+    {
+      "word_id": "n1_0108",
+      "word_number": 108,
+      "kanji": "蓄積",
+      "furigana": "ちくせき",
+      "meaning_en": "storage, store"
+    },
+    {
+      "word_id": "n1_0109",
+      "word_number": 109,
+      "kanji": "負荷",
+      "furigana": "ふか",
+      "meaning_en": "impact, load"
+    },
+    {
+      "word_id": "n1_0110",
+      "word_number": 110,
+      "kanji": "軽減",
+      "furigana": "けいげん",
+      "meaning_en": "reduction, cut"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 23",
+  "japanese_text": "私の家は音楽一家で、小さい頃からピアノを習わされていた。中学生でギターを始めたが、<u>下地</u>があるのですぐ上達した。両親は私がピアニストになることを望んだが、私は友人とバンドを組んでデビューした。両親の希望通りではないが、同じ音楽<u>業界</u>だから<u>許容</u>範囲だろう。",
+  "english_translation": "My family is a musical family, and I was taught to play the piano from a young age. I started playing the guitar in junior high school, but I quickly improved because I had such a good grounding. My parents wanted me to become a pianist, but I made my debut in a band with my friends. It wasn't what my parents wanted, but I guess they accepted it since at least it was still in the music business.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2169",
+      "word_number": 2169,
+      "kanji": "下地",
+      "furigana": "したじ",
+      "meaning_en": "grounding"
+    },
+    {
+      "word_id": "n1_2170",
+      "word_number": 2170,
+      "kanji": "業界",
+      "furigana": "ぎょうかい",
+      "meaning_en": "business, industry"
+    },
+    {
+      "word_id": "n1_2171",
+      "word_number": 2171,
+      "kanji": "許容",
+      "furigana": "きょよう",
+      "meaning_en": "tolerance, accept"
+    }
+  ]
+}

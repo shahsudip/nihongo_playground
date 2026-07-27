@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 27",
+  "japanese_text": "地下にある<u>発掘</u>現場への<u>下降</u>中に原因不明の<u>振動</u>が起きた。その後、安全確保のため地上への<u>脱出</u>が促された。",
+  "english_translation": "During our descent to the excavation site, which lay underground, an unexplained vibration occurred, and we were urged to escape to the surface for our own safety.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2554",
+      "word_number": 2554,
+      "kanji": "発掘[する]",
+      "furigana": "はっくつ",
+      "meaning_en": "excavation, excavate"
+    },
+    {
+      "word_id": "n1_2555",
+      "word_number": 2555,
+      "kanji": "下降[する]",
+      "furigana": "かこう",
+      "meaning_en": "descent, descend"
+    },
+    {
+      "word_id": "n1_2556",
+      "word_number": 2556,
+      "kanji": "振動[する]",
+      "furigana": "しんどう",
+      "meaning_en": "vibration, vibrate"
+    },
+    {
+      "word_id": "n1_2557",
+      "word_number": 2557,
+      "kanji": "脱出[する]",
+      "furigana": "だっしゅつ",
+      "meaning_en": "escape, escape"
+    }
+  ]
+}

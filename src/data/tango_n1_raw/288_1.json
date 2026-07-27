@@ -1,0 +1,14 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 22",
+  "japanese_text": "Ａ：昨日逮捕した<u>連中</u>、何か分かりましたか。\nＢ：それが、<u>裕福な</u>お年寄りばかりを狙って、かなり広い範囲で詐欺をやってたらしい。\nＡ：じゃあ、かなりの人数が<u>関与して</u>たんですか。\nＢ：うん。メンバーは全国に<u>散らばって</u>いて、詐欺を行う者の<u>養成</u>までやってたとか。",
+  "english_translation": "A: Did you find out anything about those guys arrested yesterday? B: It seems they were running a pretty widespread scam exclusively targeting wealthy elderly people. A: So there were quite a few people involved? B: Yeah. The members were scattered all over the country, and they were even training people to commit fraud.",
+  "annotated_words": [
+    { "word_id": "n1_2049", "word_number": 2049, "kanji": "連中", "furigana": "れんちゅう", "meaning_en": "bunch, crowd, guys" },
+    { "word_id": "n1_2050", "word_number": 2050, "kanji": "裕福な", "furigana": "ゆうふくな", "meaning_en": "wealthy" },
+    { "word_id": "n1_2051", "word_number": 2051, "kanji": "関与する", "furigana": "かんよする", "meaning_en": "involvement, be involved" },
+    { "word_id": "n1_2052", "word_number": 2052, "kanji": "散らばる", "furigana": "ちらばる", "meaning_en": "be scattered" },
+    { "word_id": "n1_2053", "word_number": 2053, "kanji": "養成する", "furigana": "ようせいする", "meaning_en": "training, train" }
+  ]
+}

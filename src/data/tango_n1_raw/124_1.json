@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 10",
+  "japanese_text": "正月は、家族が一年間<u>健やかに</u>過ごせるよう、家内安全の神様が<u>祭られている</u>神社に家族で<u>参拝した</u>。",
+  "english_translation": "On New Year’s Day, my family visited a shrine where the god of household safety is enshrined to ensure that the family stays healthy throughout the year.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0808",
+      "word_number": 808,
+      "kanji": "健やかな",
+      "furigana": "すこ",
+      "meaning_en": "healthy"
+    },
+    {
+      "word_id": "n1_0809",
+      "word_number": 809,
+      "kanji": "祭る",
+      "furigana": "まつ",
+      "meaning_en": "enshrine"
+    },
+    {
+      "word_id": "n1_0810",
+      "word_number": 810,
+      "kanji": "参拝[する]",
+      "furigana": "さんぱい",
+      "meaning_en": "visit, worship"
+    }
+  ]
+}

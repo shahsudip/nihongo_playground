@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 23",
+  "japanese_text": "<u>かつて</u>は、就業規則で従業員の<u>兼業</u>や<u>副業</u>を禁止する企業も多かったが、近年は禁止しない企業が多数派となった。しかし、実際に兼業や副業をしている人の数は1割程度に<u>留まって</u>いるという調査結果もある。",
+  "english_translation": "In the past, many companies had employment regulations prohibiting employees from holding concurrent positions or side jobs, but in recent years, the majority of companies do not prohibit such activities. However, surveys have shown that no more than about 10% of employees actually have concurrent or side jobs.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2153",
+      "word_number": 2153,
+      "kanji": "かつて",
+      "furigana": "",
+      "meaning_en": "in the past"
+    },
+    {
+      "word_id": "n1_2154",
+      "word_number": 2154,
+      "kanji": "兼業",
+      "furigana": "けんぎょう",
+      "meaning_en": "concurrent position, work concurrently"
+    },
+    {
+      "word_id": "n1_2155",
+      "word_number": 2155,
+      "kanji": "副業",
+      "furigana": "ふくぎょう",
+      "meaning_en": "side job"
+    },
+    {
+      "word_id": "n1_2157",
+      "word_number": 2157,
+      "kanji": "留まる",
+      "furigana": "とど",
+      "meaning_en": "be limited to, be no more than"
+    }
+  ]
+}

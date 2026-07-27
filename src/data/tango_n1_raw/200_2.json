@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 17",
+  "japanese_text": "A：学生時代は真面目だった？\nB：全く！<u>年配</u>の厳しい先生と言い合いになって、教室の窓ガラス割ったことあるよ。バイトして弁償はしたけど、<u>意地</u>になって、卒業まで謝らなかったな。\nA：えー、ほんとに？\nB：本当だよ。ほらここ、ガラスの<u>破片</u>で切った<u>痕</u>。",
+  "english_translation": "A: When you were school, did you take it seriously? B: Not at all! I once got into an argument with an elderly teacher who was very strict, and broke a classroom window. I worked part-time to pay for it, but I was too proud to apologize until graduation. A: Oh, really? B: It’s true. Look, here’s a scar from a fragment of glass.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1392",
+      "word_number": 1392,
+      "kanji": "年配",
+      "furigana": "ねんぱい",
+      "meaning_en": "age, elderly"
+    },
+    {
+      "word_id": "n1_1393",
+      "word_number": 1393,
+      "kanji": "意地",
+      "furigana": "いじ",
+      "meaning_en": "obstinate, proud"
+    },
+    {
+      "word_id": "n1_1394",
+      "word_number": 1394,
+      "kanji": "破片",
+      "furigana": "はへん",
+      "meaning_en": "fragment"
+    },
+    {
+      "word_id": "n1_1395",
+      "word_number": 1395,
+      "kanji": "痕",
+      "furigana": "あと",
+      "meaning_en": "scar"
+    }
+  ]
+}

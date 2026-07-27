@@ -1,0 +1,16 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 22",
+  "japanese_text": "「<u>デフレ</u>」とは、物価が<u>持続的に</u><u>下落して</u>いる状態を指す。反対に、物価が<u>上昇し</u>続けることを「<u>インフレ</u>」と呼ぶ。デフレは、経済が停滞している状態を指す「<u>不況</u>」とよく混同されるが、デフレだからといって、必ずしも不況だとは限らない。",
+  "english_translation": "The term \"deflation\" refers to a state in which prices suffer a sustained decline. Conversely, when prices continue to rise, it is called \"inflation.\" Deflation is often confused with \"recession,\" which refers to a state of economic stagnation, but deflation does not necessarily mean recession.",
+  "annotated_words": [
+    { "word_id": "n1_2054", "word_number": 2054, "kanji": "デフレ（ーション）", "furigana": "デフレーション", "meaning_en": "deflation" },
+    { "word_id": "n1_2055", "word_number": 2055, "kanji": "持続的な", "furigana": "じぞくてきな", "meaning_en": "sustained" },
+    { "word_id": "n1_2056", "word_number": 2056, "kanji": "持続する", "furigana": "じぞくする", "meaning_en": "continuation, continue" },
+    { "word_id": "n1_2057", "word_number": 2057, "kanji": "下落する", "furigana": "げらくする", "meaning_en": "decline" },
+    { "word_id": "n1_2058", "word_number": 2058, "kanji": "上昇する", "furigana": "じょうしょうする", "meaning_en": "rise" },
+    { "word_id": "n1_2059", "word_number": 2059, "kanji": "インフレ（ーション）", "furigana": "インフレーション", "meaning_en": "inflation" },
+    { "word_id": "n1_2060", "word_number": 2060, "kanji": "不況", "furigana": "ふきょう", "meaning_en": "recession" }
+  ]
+}

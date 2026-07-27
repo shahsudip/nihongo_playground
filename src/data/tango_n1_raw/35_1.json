@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 3",
+  "japanese_text": "私の恋人は、よくバッグや服などを<u>ねだって</u>くる。さらに、高価格<u>帯</u>のレストランに行きたいと<u>せがまれる</u>ことも多い。デートの度に<u>大金</u>を<u>費やして</u>おり、そろそろ<u>破産しそう</u>だ...。",
+  "english_translation": "My partner often begs me for bags or clothes, and also often pesters me to go to restaurants in a high price range. I spend a lot of money on every date—it's enough to bankrupt me ...",
+  "annotated_words": [
+    {
+      "word_id": "n1_0154",
+      "word_number": 154,
+      "kanji": "ねだる",
+      "furigana": "",
+      "meaning_en": "beg, demand"
+    },
+    {
+      "word_id": "n1_0155",
+      "word_number": 155,
+      "kanji": "～帯",
+      "furigana": "たい",
+      "meaning_en": "band, ~ range"
+    },
+    {
+      "word_id": "n1_0156",
+      "word_number": 156,
+      "kanji": "せがむ",
+      "furigana": "",
+      "meaning_en": "harass, pester"
+    },
+    {
+      "word_id": "n1_0157",
+      "word_number": 157,
+      "kanji": "大金",
+      "furigana": "たいきん",
+      "meaning_en": "a lot of money"
+    },
+    {
+      "word_id": "n1_0158",
+      "word_number": 158,
+      "kanji": "費やす",
+      "furigana": "つい",
+      "meaning_en": "spend"
+    },
+    {
+      "word_id": "n1_0159",
+      "word_number": 159,
+      "kanji": "破産",
+      "furigana": "はさん",
+      "meaning_en": "bankruptcy, go bankrupt"
+    }
+  ]
+}

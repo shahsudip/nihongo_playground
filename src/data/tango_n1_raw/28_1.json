@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 7,
+  "title": "Topic 2",
+  "japanese_text": "A：この間突然友達が来てさ、散らかってた物を急いで押し入れに押し込んだら、後から<u>雪崩</u>のように物が落ちてきて<u>恥</u>をかいたよ。\nB：その友達、驚いただろうね。\nA：うん、びっくりしすぎて<u>悲鳴</u>をあげてた。",
+  "english_translation": "A: A friend of mine dropped by unexpectedly the other day. I rushed to throw all my mess into the closet, only to suffer embarrassment when an avalanche of stuff fell on me. B: Your friend must have been surprised. A: Yes, he was so surprised he screamed.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0103",
+      "word_number": 103,
+      "kanji": "雪崩",
+      "furigana": "なだれ",
+      "meaning_en": "avalanche"
+    },
+    {
+      "word_id": "n1_0104",
+      "word_number": 104,
+      "kanji": "恥",
+      "furigana": "はじ",
+      "meaning_en": "embarrassment"
+    },
+    {
+      "word_id": "n1_0105",
+      "word_number": 105,
+      "kanji": "悲鳴",
+      "furigana": "ひめい",
+      "meaning_en": "scream"
+    }
+  ]
+}

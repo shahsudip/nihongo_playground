@@ -1,0 +1,65 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 15",
+  "japanese_text": "５月に仕事で<u>赴いた</u>とき、カンボジアは<u>雨季</u>だった。５月の中旬は雨は降らないものの、<u>夕暮れ</u>に<u>稲光</u>が<u>くっきり</u>と見えた。５月の終わりになると<u>猛烈な</u>雨が<u>しょっちゅう</u>降り、そのときには傘をさしても<u>無意味</u>だった。",
+  "english_translation": "When I went to Cambodia on business in May, it was the rainy season. In mid-May, it didn't rain, but I could see lightning clearly at dusk. At the end of May, intense rain fell so ceaselessly that using an umbrella was pointless.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1254",
+      "word_number": 1254,
+      "kanji": "赴く",
+      "furigana": "おもむく",
+      "meaning_en": "go, head for"
+    },
+    {
+      "word_id": "n1_1255",
+      "word_number": 1255,
+      "kanji": "雨季",
+      "furigana": "うき",
+      "meaning_en": "rainy season"
+    },
+    {
+      "word_id": "n1_1256",
+      "word_number": 1256,
+      "kanji": "夕暮れ",
+      "furigana": "ゆうぐれ",
+      "meaning_en": "dusk, twilight"
+    },
+    {
+      "word_id": "n1_1257",
+      "word_number": 1257,
+      "kanji": "稲光",
+      "furigana": "いなびかり",
+      "meaning_en": "lightning"
+    },
+    {
+      "word_id": "n1_1258",
+      "word_number": 1258,
+      "kanji": "くっきり(と)",
+      "furigana": "くっきり(と)",
+      "meaning_en": "clearly, distinctly"
+    },
+    {
+      "word_id": "n1_1259",
+      "word_number": 1259,
+      "kanji": "猛烈な",
+      "furigana": "もうれつな",
+      "meaning_en": "intense"
+    },
+    {
+      "word_id": "n1_1260",
+      "word_number": 1260,
+      "kanji": "しょっちゅう",
+      "furigana": "しょっちゅう",
+      "meaning_en": "ceaselessly"
+    },
+    {
+      "word_id": "n1_1261",
+      "word_number": 1261,
+      "kanji": "無意味な",
+      "furigana": "むいみな",
+      "meaning_en": "pointless, useless"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 17",
+  "japanese_text": "佐藤さんはいつも<u>古典</u>の教科書の挿絵に落書きをしている。教科書のページを<u>めくった</u>ときに、落書きがちょうど先生に<u>ばれて</u>しまい、カラーペンを<u>没収されて</u>いた。",
+  "english_translation": "Sato is always doodling on the illustrations in his classics textbook. When he turned over the page of his textbook, his doodles were discovered by his teacher, who confiscated his color pen.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1396",
+      "word_number": 1396,
+      "kanji": "古典",
+      "furigana": "こてん",
+      "meaning_en": "classics"
+    },
+    {
+      "word_id": "n1_1397",
+      "word_number": 1397,
+      "kanji": "めくる",
+      "furigana": "めくる",
+      "meaning_en": "turn over (a page)"
+    },
+    {
+      "word_id": "n1_1398",
+      "word_number": 1398,
+      "kanji": "ばれる",
+      "furigana": "ばれる",
+      "meaning_en": "be discovered, come to light"
+    },
+    {
+      "word_id": "n1_1399",
+      "word_number": 1399,
+      "kanji": "没収",
+      "furigana": "ぼっしゅう",
+      "meaning_en": "confiscation, confiscate"
+    }
+  ]
+}

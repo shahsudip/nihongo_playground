@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 7,
+  "title": "Topic 13",
+  "japanese_text": "<u>不動産</u>経営において家賃の<u>滞納</u>が発生した場合、期待していた収益が得られなくなる。そのため、滞納に対する<u>速やかな</u>対応が必要である。また、将来的な収益の<u>見込み</u>も重要であり、契約前の慎重な審査が大事だ。",
+  "english_translation": "In real estate management, when someone fails to pay rent, the expected income cannot be obtained. For this reason, it is necessary to take prompt action against delinquency. The prospect of future earnings is also important, and carefully screening the other party before signing is crucial.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1101",
+      "word_number": 1101,
+      "kanji": "不動産",
+      "furigana": "ふどうさん",
+      "meaning_en": "real estate"
+    },
+    {
+      "word_id": "n1_1102",
+      "word_number": 1102,
+      "kanji": "滞納",
+      "furigana": "たいのう",
+      "meaning_en": "delinquency, fail to pay"
+    },
+    {
+      "word_id": "n1_1103",
+      "word_number": 1103,
+      "kanji": "速やかな",
+      "furigana": "すみやかな",
+      "meaning_en": "prompt, rapid"
+    },
+    {
+      "word_id": "n1_1104",
+      "word_number": 1104,
+      "kanji": "見込み",
+      "furigana": "みこみ",
+      "meaning_en": "prospect"
+    },
+    {
+      "word_id": "n1_1105",
+      "word_number": 1105,
+      "kanji": "見込む",
+      "furigana": "みこむ",
+      "meaning_en": "anticipate"
+    }
+  ]
+}

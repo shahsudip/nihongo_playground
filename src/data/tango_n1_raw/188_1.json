@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 16",
+  "japanese_text": "近所に新しくできた中華料理の店は<u>本場</u>の味を楽しみたい人におすすめだ。<u>暖簾</u>をくぐると、中国まで来たのかと<u>錯覚する</u>くらい、店内が<u>特有</u>の香りに包まれている。また、料理は<u>とにかく</u>量が多い。",
+  "english_translation": "I can recommend the new Chinese restaurant in my neighborhood if you want to enjoy authentic flavor. When you pass through the shop curtain, the restaurant is filled with a particular aroma that gives you the illusion you've traveled all the way to China. And the servings are generous, anyway.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1306",
+      "word_number": 1306,
+      "kanji": "本場",
+      "furigana": "ほんば",
+      "meaning_en": "authentic (place), home of"
+    },
+    {
+      "word_id": "n1_1307",
+      "word_number": 1307,
+      "kanji": "暖簾",
+      "furigana": "のれん",
+      "meaning_en": "shop curtain"
+    },
+    {
+      "word_id": "n1_1308",
+      "word_number": 1308,
+      "kanji": "錯覚",
+      "furigana": "さっかく",
+      "meaning_en": "illusion, be under an illusion"
+    },
+    {
+      "word_id": "n1_1309",
+      "word_number": 1309,
+      "kanji": "特有",
+      "furigana": "とくゆう",
+      "meaning_en": "particular, unique"
+    },
+    {
+      "word_id": "n1_1310",
+      "word_number": 1310,
+      "kanji": "とにかく",
+      "furigana": "とにかく",
+      "meaning_en": "anyway"
+    }
+  ]
+}

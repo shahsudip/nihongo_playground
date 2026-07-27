@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 7",
+  "japanese_text": "紅葉のシーズンを迎え、高尾山は<u>連日</u>多くの人が訪れている。<u>山頂</u>に行く途中にあるカフェも、毎日<u>繁盛し</u>ているようだ。",
+  "english_translation": "With the autumn foliage season upon us, Mt. Takao is attracting crowds of visitors daily. The cafes on the way to the mountain's summit seem to be doing good business every day.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0513",
+      "word_number": 513,
+      "kanji": "連日",
+      "furigana": "れんじつ",
+      "meaning_en": "everyday, daily"
+    },
+    {
+      "word_id": "n1_0514",
+      "word_number": 514,
+      "kanji": "山頂",
+      "furigana": "さんちょう",
+      "meaning_en": "summit"
+    },
+    {
+      "word_id": "n1_0515",
+      "word_number": 515,
+      "kanji": "繁盛",
+      "furigana": "はんじょう",
+      "meaning_en": "prosperity, do good business"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 4",
+  "japanese_text": "Ａ：お父様はどういう<u>系統</u>の服がお好きなんですか。\nＢ：どちらかといえば<u>シックな</u>感じです。\nＡ：なるほど…。割引率がブランドによって<u>まちまちなん</u>ですけど、このあたりが特にお得になっております。",
+  "english_translation": "A: What style of clothes does your father prefer?\nB: He's rather chic.\nA: I see... The discount rates are different from brand to brand, but these are especially good deals.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0209",
+      "word_number": 209,
+      "kanji": "系統",
+      "furigana": "けいとう",
+      "meaning_en": "style, type"
+    },
+    {
+      "word_id": "n1_0210",
+      "word_number": 210,
+      "kanji": "シックな",
+      "furigana": "",
+      "meaning_en": "chic"
+    },
+    {
+      "word_id": "n1_0211",
+      "word_number": 211,
+      "kanji": "まちまちな",
+      "furigana": "",
+      "meaning_en": "different"
+    }
+  ]
+}

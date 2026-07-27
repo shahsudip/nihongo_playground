@@ -1,0 +1,58 @@
+{
+  "is_story": false,
+  "story_number": 12,
+  "title": "Topic 16",
+  "japanese_text": "A：この間出張中に大雪にあってさ。<u>急きょ</u>近くに泊まることにしたんだけど、宿が見つからなくてね。\nB：<u>とんだ</u>1日だね。\nA：でも予約<u>制</u>の<u>民宿</u>に電話したら泊めてもらえてね。<u>てっきり</u>断られるかと思ったけど。帰りも周りを<u>探検したり</u>、おいしいものを食べたりもして、結果的には大<u>満喫</u>。",
+  "english_translation": "A: I was on a business trip the other day and it snowed so hard that suddenly I had to stay overnight, but I couldn't find a place to stay. B: What a terrible day! A: But I called a guest house that usually requires bookings system, and they let me stay there. I thought they would certainly refuse me. On the way back, I explored the local area, ate some delicious food, and ended up fully enjoying the experience.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1322",
+      "word_number": 1322,
+      "kanji": "急きょ",
+      "furigana": "きゅうきょ",
+      "meaning_en": "in a hurry, suddenly"
+    },
+    {
+      "word_id": "n1_1323",
+      "word_number": 1323,
+      "kanji": "とんだ",
+      "furigana": "とんだ",
+      "meaning_en": "terrible, unexpected"
+    },
+    {
+      "word_id": "n1_1324",
+      "word_number": 1324,
+      "kanji": "〜制",
+      "furigana": "せい",
+      "meaning_en": "~ system"
+    },
+    {
+      "word_id": "n1_1325",
+      "word_number": 1325,
+      "kanji": "民宿",
+      "furigana": "みんしゅく",
+      "meaning_en": "guest house, private lodging house"
+    },
+    {
+      "word_id": "n1_1326",
+      "word_number": 1326,
+      "kanji": "てっきり",
+      "furigana": "てっきり",
+      "meaning_en": "certainly"
+    },
+    {
+      "word_id": "n1_1327",
+      "word_number": 1327,
+      "kanji": "探検",
+      "furigana": "たんけん",
+      "meaning_en": "exploration, explore"
+    },
+    {
+      "word_id": "n1_1328",
+      "word_number": 1328,
+      "kanji": "満喫",
+      "furigana": "まんきつ",
+      "meaning_en": "full enjoyment, fully enjoy"
+    }
+  ]
+}

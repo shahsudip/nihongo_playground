@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 14,
+  "title": "Topic 4",
+  "japanese_text": "Ａ：髪の毛の<u>アレンジ</u>、いつも本当にうまいよね。\nＢ：ありがとう。私、髪の毛<u>縮れて</u>るからさ、うまく<u>ごまかさない</u>とすごく広がっちゃうの。",
+  "english_translation": "A: You're always so good at arranging your hair.\nB: Thanks. My hair is frizzy, so if I don't fix it properly, it really spreads out.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0248",
+      "word_number": 248,
+      "kanji": "アレンジ[する]",
+      "furigana": "",
+      "meaning_en": "arrangement, arrange"
+    },
+    {
+      "word_id": "n1_0249",
+      "word_number": 249,
+      "kanji": "縮れる",
+      "furigana": "ちぢれる",
+      "meaning_en": "be frizzy"
+    },
+    {
+      "word_id": "n1_0250",
+      "word_number": 250,
+      "kanji": "ごまかす",
+      "furigana": "",
+      "meaning_en": "cover up, fix"
+    }
+  ]
+}

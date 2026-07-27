@@ -1,0 +1,44 @@
+{
+  "is_story": false,
+  "story_number": 2,
+  "title": "Topic 12",
+  "japanese_text": "A：<u>触れ合い</u>動物園へ行ってきたんだ。\nB：どうだった？\nA：<u>柵</u>の間から野菜や果物を<u>差し出す</u>と、おいしそうに食べていたよ。",
+  "english_translation": "A: I visited a petting zoo, where you can encounter the animals up close.\nB: How was it?\nA: I gave the animals fruit and vegetables between gaps in the fence, and they really enjoyed them.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0970",
+      "word_number": 970,
+      "kanji": "触れ合い",
+      "furigana": "ふれあい",
+      "meaning_en": "contact, encounter"
+    },
+    {
+      "word_id": "n1_0971",
+      "word_number": 971,
+      "kanji": "触れ合う",
+      "furigana": "ふれあう",
+      "meaning_en": "touch each other"
+    },
+    {
+      "word_id": "n1_0972",
+      "word_number": 972,
+      "kanji": "柵",
+      "furigana": "さく",
+      "meaning_en": "fence"
+    },
+    {
+      "word_id": "n1_0973",
+      "word_number": 973,
+      "kanji": "差し出す",
+      "furigana": "さしだす",
+      "meaning_en": "give hold out"
+    },
+    {
+      "word_id": "n1_0974",
+      "word_number": 974,
+      "kanji": "差出人",
+      "furigana": "さしだしにん",
+      "meaning_en": "sender (of mail, etc.)"
+    }
+  ]
+}

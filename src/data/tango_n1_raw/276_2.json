@@ -1,0 +1,14 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 21",
+  "japanese_text": "スーパーのレジに並んでいると、ある人が私を<u>抜かして</u>、列に<u>割り込んで</u>きた。一瞬<u>見逃そう</u>かと思ったが、やはり順番を守らないことに<u>むかついた</u>ので、「後ろに並んでください」と言った。すると、相手が<u>むっと</u>した顔でこっちを見てきたので、余計に腹が立った。",
+  "english_translation": "When I was waiting in line at the supermarket, someone skipped past me and cut in line. For a moment I considered letting it go, but then I got annoyed that he hadn't waited his turn, and I told him to go to the back of the line. Then the guy looked at me sourly, which made me even more angry.",
+  "annotated_words": [
+    { "word_id": "n1_1965", "word_number": 1965, "kanji": "抜かす", "furigana": "ぬかす", "meaning_en": "omit, skip" },
+    { "word_id": "n1_1966", "word_number": 1966, "kanji": "割り込む", "furigana": "わりこむ", "meaning_en": "cut in (line)" },
+    { "word_id": "n1_1967", "word_number": 1967, "kanji": "見逃す", "furigana": "みのがす", "meaning_en": "let (something) go, overlook" },
+    { "word_id": "n1_1968", "word_number": 1968, "kanji": "むかつく", "furigana": "むかつく", "meaning_en": "get annoyed" },
+    { "word_id": "n1_1969", "word_number": 1969, "kanji": "むっと", "furigana": "むっと", "meaning_en": "huffily, sourly" }
+  ]
+}

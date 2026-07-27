@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 18",
+  "japanese_text": "A：先方への<u>要望</u>をリストにしました。原材料の変更の件も、リストに追加した方がいいでしょうか。\nB：うーん、<u>切りがない</u>からいいや。それは<u>折</u>を見て直接ご相談するよ。",
+  "english_translation": "A: I have made a list of requests for the other party. Should I also add the changes to raw materials to the list? B: Look, there's no end to it, so don't bother. We'll discuss that directly when the time comes.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1512",
+      "word_number": 1512,
+      "kanji": "要望",
+      "furigana": "ようぼう",
+      "meaning_en": "request"
+    },
+    {
+      "word_id": "n1_1513",
+      "word_number": 1513,
+      "kanji": "切りがない",
+      "furigana": "きりがない",
+      "meaning_en": "endless, no end (to something)"
+    },
+    {
+      "word_id": "n1_1515",
+      "word_number": 1515,
+      "kanji": "折",
+      "furigana": "おり",
+      "meaning_en": "occasion, time"
+    }
+  ]
+}

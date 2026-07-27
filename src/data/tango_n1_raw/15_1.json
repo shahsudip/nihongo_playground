@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 1",
+  "japanese_text": "A：先月の健康診断で、医者に水分をしっかりとるように言われちゃったよ。<u>ちなみに</u>、毎日ビールをしっかり飲んでるんだけど、これってちゃんと水分<u>補給</u>になっているよね？\nB：いや、どんな<u>理屈</u>だよ。水かお茶を飲めよ。",
+  "english_translation": "A: At my checkup last month, the doctor told me to drink plenty of water. By the way, I drink a lot of beer every day, so surely I can stay replenished that way, right? B: No, what kind of logic is that? Drink water or tea.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0006",
+      "word_number": 6,
+      "kanji": "ちなみに",
+      "furigana": "ちなみに",
+      "meaning_en": "by the way, incidentally"
+    },
+    {
+      "word_id": "n1_0007",
+      "word_number": 7,
+      "kanji": "補給",
+      "furigana": "ほきゅう",
+      "meaning_en": "supply, replenish"
+    },
+    {
+      "word_id": "n1_0008",
+      "word_number": 8,
+      "kanji": "理屈",
+      "furigana": "りくつ",
+      "meaning_en": "logic"
+    }
+  ]
+}

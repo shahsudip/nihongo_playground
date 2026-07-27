@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 29,
+  "title": "Topic 18",
+  "japanese_text": "入社以来、<u>使命感</u>に燃えて仕事に打ち込んできたが、上司にはまだ<u>青い</u>と言われ、なかなかやりたい仕事を<u>割り当てて</u>もらえない。私のことをインターン<u>上がり</u>の<u>コネ</u>採用だと<u>陰口</u>を言う人もいる。",
+  "english_translation": "Since I joined the company, I've been working hard with a sense of mission, but my boss says I'm still green and aren't assigning me the kind of work I want to do. People talk behind my back about me, calling me an ex-intern hired for my connections.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1628",
+      "word_number": 1628,
+      "kanji": "使命感",
+      "furigana": "しめいかん",
+      "meaning_en": "sense of mission"
+    },
+    {
+      "word_id": "n1_1630",
+      "word_number": 1630,
+      "kanji": "青い",
+      "furigana": "あおい",
+      "meaning_en": "green (inexperienced)"
+    },
+    {
+      "word_id": "n1_1631",
+      "word_number": 1631,
+      "kanji": "割り当てる",
+      "furigana": "わりあてる",
+      "meaning_en": "assign"
+    },
+    {
+      "word_id": "n1_1632",
+      "word_number": 1632,
+      "kanji": "～上がり",
+      "furigana": "あがり",
+      "meaning_en": "ex~, former ~"
+    },
+    {
+      "word_id": "n1_1633",
+      "word_number": 1633,
+      "kanji": "コネ(クション)",
+      "furigana": "コネ",
+      "meaning_en": "connections"
+    },
+    {
+      "word_id": "n1_1634",
+      "word_number": 1634,
+      "kanji": "陰口",
+      "furigana": "かげぐち",
+      "meaning_en": "talk behind (someone's) back"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 13,
+  "title": "Topic 1",
+  "japanese_text": "一人暮らしを始めた<u>当初</u>は毎日自炊を頑張っていたが、最近は<u>もっぱら</u>コンビニで朝昼<u>兼用</u>のご飯を買って食べ、夜は外食している。でも、<u>食材</u>が<u>余る</u>よりはきっといいはずだ。",
+  "english_translation": "When I first started living alone I did my best to cook every day, but recently I exclusively buy my meals at the convenience store for both breakfast and lunch, and eat out at night. However, this is certainly better than having ingredients left over.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0052",
+      "word_number": 52,
+      "kanji": "当初",
+      "furigana": "とうしょ",
+      "meaning_en": "first, initially"
+    },
+    {
+      "word_id": "n1_0053",
+      "word_number": 53,
+      "kanji": "もっぱら",
+      "furigana": "もっぱら",
+      "meaning_en": "exclusively"
+    },
+    {
+      "word_id": "n1_0054",
+      "word_number": 54,
+      "kanji": "兼用する",
+      "furigana": "けんよう",
+      "meaning_en": "both, use for more than one purpose"
+    },
+    {
+      "word_id": "n1_0055",
+      "word_number": 55,
+      "kanji": "食材",
+      "furigana": "しょくざい",
+      "meaning_en": "ingredients"
+    },
+    {
+      "word_id": "n1_0056",
+      "word_number": 56,
+      "kanji": "余る",
+      "furigana": "あま",
+      "meaning_en": "be left over"
+    },
+    {
+      "word_id": "n1_0057",
+      "word_number": 57,
+      "kanji": "余り",
+      "furigana": "あま",
+      "meaning_en": "excess"
+    }
+  ]
+}

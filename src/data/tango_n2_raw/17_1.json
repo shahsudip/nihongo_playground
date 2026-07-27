@@ -1,0 +1,65 @@
+{
+  "is_story": true,
+  "story_number": 17,
+  "title": "Topic 1 食事",
+  "japanese_text": "ダイエット中は<u>カロリー</u>ばかり気にする人もいるが、<u>タンパク質</u>などの必要な栄養を<u>バランス</u>よくとることが大切だ。<u>カロリー</u>が少なすぎると<u>エネルギー</u>不足になり、やせにくくなってしまう。\nまた、<u>主食</u>はパンよりも米を、デザートはケーキではなく<u>和菓子</u>を選ぶようにしたり、<u>塩分</u>をとりすぎないようにすると良い。",
+  "english_translation": "Although some people are only concerned about calories when dieting, it's important to have a good balance of protein and other essential nutrients. Too few calories will result in a lack of energy, making it difficult to lose weight. It is also advisable to eat rice rather than bread as a staple food, to choose Japanese sweets for dessert instead of cakes, and to avoid excessive salt.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0085",
+      "word_number": 85,
+      "kanji": "カロリー",
+      "furigana": "カロリー",
+      "meaning_en": "calories/熱量/calo"
+    },
+    {
+      "word_id": "n2_0086",
+      "word_number": 86,
+      "kanji": "タンパク質",
+      "furigana": "タンパクしつ",
+      "meaning_en": "protein/蛋白質/chất đạm"
+    },
+    {
+      "word_id": "n2_0087",
+      "word_number": 87,
+      "kanji": "バランス",
+      "furigana": "バランス",
+      "meaning_en": "balance/均衡/cân bằng"
+    },
+    {
+      "word_id": "n2_0088",
+      "word_number": 88,
+      "kanji": "エネルギー",
+      "furigana": "エネルギー",
+      "meaning_en": "energy/能量/năng lượng"
+    },
+    {
+      "word_id": "n2_0089",
+      "word_number": 89,
+      "kanji": "主食",
+      "furigana": "しゅしょく",
+      "meaning_en": "staple food/主食/thực phẩm thiết yếu, món chính"
+    },
+    {
+      "word_id": "n2_0090",
+      "word_number": 90,
+      "kanji": "+ 主～",
+      "furigana": "しゅ",
+      "meaning_en": "main ~/主~/~ chính"
+    },
+    {
+      "word_id": "n2_0091",
+      "word_number": 91,
+      "kanji": "和～",
+      "furigana": "わ",
+      "meaning_en": "Japanese ~/日式~/~ Nhật"
+    },
+    {
+      "word_id": "n2_0092",
+      "word_number": 92,
+      "kanji": "塩分",
+      "furigana": "えんぶん",
+      "meaning_en": "salt content/鹽分/muối"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 16,
+  "title": "Topic 12",
+  "japanese_text": "熊に<u>遭遇した</u>とき、<u>襲われる</u>かと思って本当に怖かった。しかし、なぜだか<u>危害</u>が<u>及ぶ</u>のは<u>免れた</u>。そういう<u>宿命</u>だったのだろうか。",
+  "english_translation": "When I encountered the bear, I was truly afraid it would attack me. But for some reason, I escaped without harm befalling me. I wonder if it was destiny.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1061",
+      "word_number": 1061,
+      "kanji": "遭遇",
+      "furigana": "そうぐう",
+      "meaning_en": "encounter, encounter"
+    },
+    {
+      "word_id": "n1_1062",
+      "word_number": 1062,
+      "kanji": "襲う",
+      "furigana": "おそう",
+      "meaning_en": "attack"
+    },
+    {
+      "word_id": "n1_1063",
+      "word_number": 1063,
+      "kanji": "危害",
+      "furigana": "きがい",
+      "meaning_en": "harm"
+    },
+    {
+      "word_id": "n1_1064",
+      "word_number": 1064,
+      "kanji": "及ぶ",
+      "furigana": "およぶ",
+      "meaning_en": "befall, come to (occur)"
+    },
+    {
+      "word_id": "n1_1065",
+      "word_number": 1065,
+      "kanji": "免れる",
+      "furigana": "まぬがれる",
+      "meaning_en": "escape"
+    },
+    {
+      "word_id": "n1_1066",
+      "word_number": 1066,
+      "kanji": "宿命",
+      "furigana": "しゅくめい",
+      "meaning_en": "destiny"
+    }
+  ]
+}

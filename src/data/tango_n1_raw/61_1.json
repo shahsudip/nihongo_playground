@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 20,
+  "title": "Topic 5",
+  "japanese_text": "Ｍ社は、画面が<u>ひび割れした</u>際に<u>自己</u> <u>修復</u>が可能なスマホの<u>特許</u>を取得したそうだ。",
+  "english_translation": "Company M has acquired a patent for its smartphone that can repair itself if the screen cracks.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0342",
+      "word_number": 342,
+      "kanji": "ひび割れ",
+      "furigana": "ひびわれ",
+      "meaning_en": "fracture, crack"
+    },
+    {
+      "word_id": "n1_0343",
+      "word_number": 343,
+      "kanji": "自己",
+      "furigana": "じこ",
+      "meaning_en": "itself, self"
+    },
+    {
+      "word_id": "n1_0344",
+      "word_number": 344,
+      "kanji": "修復",
+      "furigana": "しゅうふく",
+      "meaning_en": "repairs, repair"
+    },
+    {
+      "word_id": "n1_0345",
+      "word_number": 345,
+      "kanji": "特許",
+      "furigana": "とっきょ",
+      "meaning_en": "patent"
+    }
+  ]
+}

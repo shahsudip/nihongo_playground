@@ -1,0 +1,17 @@
+{
+  "is_story": true,
+  "story_number": 13,
+  "title": "Topic 22",
+  "japanese_text": "Ａ：前の会社って、<u>ブラック企業</u>だったんですか。\nＢ：詐欺みたいな<u>あくどい</u>勧誘が<u>奨励されて</u>ましたし、労働環境も<u>むちゃくちゃでした</u>からね。\nＡ：じゃあ、やっぱり残業も多かったんですか。\nＢ：残業するのが普通だったんで、残業っていう<u>概念</u>自体がなかったですよ。あと、毎朝上司から指導と<u>称して</u><u>暗示</u>みたいな話を聞かされるし、だんだん<u>理性</u>がまひしてくるのを感じました。",
+  "english_translation": "A: Was your former company an exploitative company? B: They encouraged fraudulent, unscrupulous solicitation, and the working environment was awful. A: Did you have to work a lot of overtime? B: Working overtime was the norm, so there was no concept of overtime. Also, every morning my boss would offer me some kind of suggestion, pretending to offer guidance, and I could feel my rationality gradually becoming paralyzed.",
+  "annotated_words": [
+    { "word_id": "n1_2105", "word_number": 2105, "kanji": "ブラック企業", "furigana": "ブラックきぎょう", "meaning_en": "exploitative company" },
+    { "word_id": "n1_2106", "word_number": 2106, "kanji": "あくどい", "furigana": "あくどい", "meaning_en": "abusive, unscrupulous" },
+    { "word_id": "n1_2107", "word_number": 2107, "kanji": "奨励する", "furigana": "しょうれいする", "meaning_en": "encouragement, encourage" },
+    { "word_id": "n1_2108", "word_number": 2108, "kanji": "むちゃくちゃな", "furigana": "むちゃくちゃな", "meaning_en": "awful" },
+    { "word_id": "n1_2109", "word_number": 2109, "kanji": "概念", "furigana": "がいねん", "meaning_en": "concept" },
+    { "word_id": "n1_2110", "word_number": 2110, "kanji": "称する", "furigana": "しょうする", "meaning_en": "pretend, purport" },
+    { "word_id": "n1_2111", "word_number": 2111, "kanji": "暗示する", "furigana": "あんじする", "meaning_en": "suggestion, suggest" },
+    { "word_id": "n1_2112", "word_number": 2112, "kanji": "理性", "furigana": "りせい", "meaning_en": "rationality, reason" }
+  ]
+}

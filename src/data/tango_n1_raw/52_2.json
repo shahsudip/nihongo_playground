@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 5",
+  "japanese_text": "スマートフォンを新しく契約したが、<u>機種</u> <u>本体</u>の価格に加え、<u>通信料</u>が高すぎるため、<u>解約</u>の<u>意向</u>を固めた。",
+  "english_translation": "I signed a new contract for a smart phone, but I made up my mind to cancel it because the communication fees were too high, on top of the price of the handset itself.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0271",
+      "word_number": 271,
+      "kanji": "機種",
+      "furigana": "きしゅ",
+      "meaning_en": "handset, model"
+    },
+    {
+      "word_id": "n1_0272",
+      "word_number": 272,
+      "kanji": "本体",
+      "furigana": "ほんたい",
+      "meaning_en": "(the thing) itself"
+    },
+    {
+      "word_id": "n1_0273",
+      "word_number": 273,
+      "kanji": "通信料",
+      "furigana": "つうしんりょう",
+      "meaning_en": "communications fee"
+    },
+    {
+      "word_id": "n1_0274",
+      "word_number": 274,
+      "kanji": "解約",
+      "furigana": "かいやく",
+      "meaning_en": "cancelation, cancel (a contract)"
+    },
+    {
+      "word_id": "n1_0275",
+      "word_number": 275,
+      "kanji": "意向",
+      "furigana": "いこう",
+      "meaning_en": "intention, mind"
+    }
+  ]
+}

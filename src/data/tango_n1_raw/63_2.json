@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 25,
+  "title": "Topic 5",
+  "japanese_text": "テクノロジーの発展によって、自身に限らず<u>身内</u>の情報も簡単に漏れるようになった。<u>要するに</u>、私たちは、何を個人情報と<u>見なす</u>べきかを判断しなければならない。",
+  "english_translation": "The development of technology has made information more prone to leaking—not only about ourselves, but also about our relatives. In short, we have to make a decision what should be considered personal information.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0363",
+      "word_number": 363,
+      "kanji": "身内",
+      "furigana": "みうち",
+      "meaning_en": "relative (family)"
+    },
+    {
+      "word_id": "n1_0364",
+      "word_number": 364,
+      "kanji": "要するに",
+      "furigana": "ようするに",
+      "meaning_en": "in short"
+    },
+    {
+      "word_id": "n1_0365",
+      "word_number": 365,
+      "kanji": "見なす",
+      "furigana": "みなす",
+      "meaning_en": "consider, deem"
+    }
+  ]
+}

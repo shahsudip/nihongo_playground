@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 21,
+  "title": "Topic 17",
+  "japanese_text": "定期テストはマークテスト<u>方式</u>で行われる。早めに解答が終わってのんびり<u>構えて</u>いたが、解答用紙が<u>回収される</u>直前に、誤って<u>重複して</u>マークしている問題を見つけてしまった。",
+  "english_translation": "Tests are held regularly, using a test-marking format. I had finished answering the questions early and was set to relax, but just before the answer sheets were collected, I found a question that I had accidentally marked in duplicate.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1438",
+      "word_number": 1438,
+      "kanji": "方式",
+      "furigana": "ほうしき",
+      "meaning_en": "format"
+    },
+    {
+      "word_id": "n1_1439",
+      "word_number": 1439,
+      "kanji": "構える",
+      "furigana": "かまえる",
+      "meaning_en": "be set, get ready"
+    },
+    {
+      "word_id": "n1_1440",
+      "word_number": 1440,
+      "kanji": "回収",
+      "furigana": "かいしゅう",
+      "meaning_en": "recovery, collect"
+    },
+    {
+      "word_id": "n1_1441",
+      "word_number": 1441,
+      "kanji": "重複",
+      "furigana": "ちょうふく",
+      "meaning_en": "duplicate, duplicate"
+    }
+  ]
+}

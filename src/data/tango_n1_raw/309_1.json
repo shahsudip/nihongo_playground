@@ -1,0 +1,65 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 23",
+  "japanese_text": "経営危機にあるA社は、自社の株式を<u>売却し</u>経営の<u>スリム化</u>を図った。そして、<u>倒産</u>という最悪な状況を回避するため、業界最大手のB社と経営<u>統合し</u>、新会社を<u>設立した</u>。しかし、A社を<u>取り巻く</u>状況は<u>好転した</u>とは言い難く、B社がA社を<u>買収した</u>という見方もある。",
+  "english_translation": "Company A, which was in financial crisis, sold off its shares to streamline its management. In order to avoid the worst-case scenario of bankruptcy, it then merged with Company B, the largest company in its industry, and established a new company. However, the situation surrounding Company A can't really be described as a turn for the better, and some see it as Company B having bought Company A.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2209",
+      "word_number": 2209,
+      "kanji": "売却",
+      "furigana": "ばいきゃく",
+      "meaning_en": "sale, sell off"
+    },
+    {
+      "word_id": "n1_2210",
+      "word_number": 2210,
+      "kanji": "スリム化",
+      "furigana": "か",
+      "meaning_en": "slim down, streamline"
+    },
+    {
+      "word_id": "n1_2212",
+      "word_number": 2212,
+      "kanji": "倒産",
+      "furigana": "とうさん",
+      "meaning_en": "bankruptcy, go bankrupt"
+    },
+    {
+      "word_id": "n1_2213",
+      "word_number": 2213,
+      "kanji": "統合",
+      "furigana": "とうごう",
+      "meaning_en": "merger, merge"
+    },
+    {
+      "word_id": "n1_2214",
+      "word_number": 2214,
+      "kanji": "設立",
+      "furigana": "せつりつ",
+      "meaning_en": "establishment, establish"
+    },
+    {
+      "word_id": "n1_2215",
+      "word_number": 2215,
+      "kanji": "取り巻く",
+      "furigana": "とりまく",
+      "meaning_en": "enclose, surround"
+    },
+    {
+      "word_id": "n1_2216",
+      "word_number": 2216,
+      "kanji": "好転",
+      "furigana": "こうてん",
+      "meaning_en": "recovery, turn for the better"
+    },
+    {
+      "word_id": "n1_2217",
+      "word_number": 2217,
+      "kanji": "買収",
+      "furigana": "ばいしゅう",
+      "meaning_en": "purchase, buy"
+    }
+  ]
+}

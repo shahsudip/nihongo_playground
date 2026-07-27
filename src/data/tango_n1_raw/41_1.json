@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 4",
+  "japanese_text": "Ａ：初対面の人に<u>好ましい</u>印象を与える服装ってどんな服だと思う？\nＢ：うーん、年齢<u>相応</u>の服装？\nＡ：確かに、<u>脚</u>を出すような服とか、若い頃の服を着ると余計に<u>老けて</u>見えることあるよね。",
+  "english_translation": "A: What kind of clothes do you think make a favorable impression when meeting someone for the first time?\nB: Hmmm, age-appropriate clothes?\nA: It's true. Wearing clothes from your younger days or clothes that show off too much leg can make you look even older.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0199",
+      "word_number": 199,
+      "kanji": "好ましい",
+      "furigana": "このましい",
+      "meaning_en": "favorable"
+    },
+    {
+      "word_id": "n1_0200",
+      "word_number": 200,
+      "kanji": "相応",
+      "furigana": "そうおう",
+      "meaning_en": "appropriateness"
+    },
+    {
+      "word_id": "n1_0201",
+      "word_number": 201,
+      "kanji": "脚",
+      "furigana": "あし",
+      "meaning_en": "leg"
+    },
+    {
+      "word_id": "n1_0202",
+      "word_number": 202,
+      "kanji": "老ける",
+      "furigana": "ふける",
+      "meaning_en": "age, get older"
+    }
+  ]
+}

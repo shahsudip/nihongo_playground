@@ -1,0 +1,65 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 8",
+  "japanese_text": "我が社では企業説明会の後に、社員と学生が<u>対談できる</u> <u>座談会</u>を開いている。学生は社員と<u>雑談</u>をするときにも<u>相づちを打ち</u>ながら話を聞き、はっきりした<u>口調</u>で<u>明瞭に</u>話すのに対し、社員は<u>ぞんざいな</u>言い方になったり、会社の良さを<u>誇張しすぎた</u>りすることがあるので注意が必要だ。",
+  "english_translation": "After company information sessions, our company holds round-table discussions where employees and students can talk with each other. The students listen actively to what the employees have to say, even when just chatting, and they speak in clear and articulate tones, whereas the employees tend to talk in an offhand way or overstate the positive aspects of the company, so they need to take care.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0622",
+      "word_number": 622,
+      "kanji": "対談",
+      "furigana": "たいだん",
+      "meaning_en": "dialog, talk with each other"
+    },
+    {
+      "word_id": "n1_0623",
+      "word_number": 623,
+      "kanji": "座談会",
+      "furigana": "ざだんかい",
+      "meaning_en": "round-table discussion"
+    },
+    {
+      "word_id": "n1_0624",
+      "word_number": 624,
+      "kanji": "雑談",
+      "furigana": "ざつだん",
+      "meaning_en": "chat, have a chat"
+    },
+    {
+      "word_id": "n1_0625",
+      "word_number": 625,
+      "kanji": "相づちを打つ",
+      "furigana": "あいづちをうつ",
+      "meaning_en": "(offer remarks to) listen actively"
+    },
+    {
+      "word_id": "n1_0626",
+      "word_number": 626,
+      "kanji": "口調",
+      "furigana": "くちょう",
+      "meaning_en": "tone"
+    },
+    {
+      "word_id": "n1_0627",
+      "word_number": 627,
+      "kanji": "明瞭な",
+      "furigana": "めいりょうな",
+      "meaning_en": "clear"
+    },
+    {
+      "word_id": "n1_0628",
+      "word_number": 628,
+      "kanji": "ぞんざいな",
+      "furigana": "ぞんざいな",
+      "meaning_en": "careless, offhand"
+    },
+    {
+      "word_id": "n1_0629",
+      "word_number": 629,
+      "kanji": "誇張",
+      "furigana": "こちょう",
+      "meaning_en": "assertion, state"
+    }
+  ]
+}

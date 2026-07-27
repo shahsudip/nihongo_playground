@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 6",
+  "japanese_text": "A：いつもやってるけど、そのゲーム、そんなに面白いの？\nB：いや。<u>キャラクター</u>を<u>育成する</u>ためには、<u>戦闘</u>の<u>報酬</u>として大量のアイテムを集めないといけないんだ。だから暇な時間はずっと戦ってるんだ。\nA：<u>果てしない</u>道だね…。こうして人は<u>中毒</u>になっていくのか。",
+  "english_translation": "A: You’re always playing that game. Is it really that much fun? B: No. In order to develop my character, I have to collect a lot of items as rewards for fighting. So I spend all my free time fighting. A: So it’s an endless road ... Is this how people end up addicted?",
+  "annotated_words": [
+    {
+      "word_id": "n1_0375",
+      "word_number": 375,
+      "kanji": "キャラクター",
+      "furigana": "",
+      "meaning_en": "character"
+    },
+    {
+      "word_id": "n1_0376",
+      "word_number": 376,
+      "kanji": "育成する",
+      "furigana": "いくせい",
+      "meaning_en": "cultivation, develop"
+    },
+    {
+      "word_id": "n1_0377",
+      "word_number": 377,
+      "kanji": "戦闘する",
+      "furigana": "せんとう",
+      "meaning_en": "battle, fight"
+    },
+    {
+      "word_id": "n1_0378",
+      "word_number": 378,
+      "kanji": "報酬",
+      "furigana": "ほうしゅう",
+      "meaning_en": "remuneration, reward"
+    },
+    {
+      "word_id": "n1_0379",
+      "word_number": 379,
+      "kanji": "果てしない",
+      "furigana": "はてしない",
+      "meaning_en": "endless"
+    },
+    {
+      "word_id": "n1_0380",
+      "word_number": 380,
+      "kanji": "中毒",
+      "furigana": "ちゅうどく",
+      "meaning_en": "addiction"
+    }
+  ]
+}

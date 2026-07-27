@@ -1,0 +1,37 @@
+{
+  "is_story": false,
+  "story_number": 8,
+  "title": "Topic 16",
+  "japanese_text": "A：ここどこ？目的地からどんどん<u>遠ざかってる</u>気がするんだけど…。\nB：さっきから同じところを<u>さまよってる</u>気がする…。移動時間を短くするために<u>レンタカー</u>を借りたのに、これじゃあ全然意味ないよ…。\nA：ああ、もう。お腹すいたからご飯でも食べない？ちょうどそこに<u>ドライブスルー</u>のお店があるよ。",
+  "english_translation": "A: Where are we? I feel like we're getting farther away from our destination ... B: It feels like we've been wandering around the same places for a while now ... I hired a rental car to cut our travel time, but it's been totally pointless .... A: Oh, I'm so hungry. Why don't we get something to eat? There's a drive-through restaurant right there.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1301",
+      "word_number": 1301,
+      "kanji": "遠ざかる",
+      "furigana": "とおざかる",
+      "meaning_en": "get farther away"
+    },
+    {
+      "word_id": "n1_1303",
+      "word_number": 1303,
+      "kanji": "さまよう",
+      "furigana": "さまよう",
+      "meaning_en": "wander"
+    },
+    {
+      "word_id": "n1_1304",
+      "word_number": 1304,
+      "kanji": "レンタカー",
+      "furigana": "レンタカー",
+      "meaning_en": "rental car"
+    },
+    {
+      "word_id": "n1_1305",
+      "word_number": 1305,
+      "kanji": "ドライブスルー",
+      "furigana": "ドライブスルー",
+      "meaning_en": "drive-through"
+    }
+  ]
+}

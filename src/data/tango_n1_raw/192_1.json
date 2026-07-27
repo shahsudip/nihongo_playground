@@ -1,0 +1,51 @@
+{
+  "is_story": false,
+  "story_number": 14,
+  "title": "Topic 16",
+  "japanese_text": "A：海、まだかなあ。もうかなり歩いてる気がするけど…。\nB：待って、なんか<u>潮</u>の香りがしない？\nA：ほんとだ！…あ！<u>浜</u>が見えてきたよ！ようやく<u>たどり着い</u>たね！わ〜、白い砂浜と青い海の<u>コントラスト</u>がいいね！\nB：さすがは日本一と<u>名高い</u>ビーチ！水も<u>澄んで</u>てきれい！",
+  "english_translation": "A: We haven't reached the sea yet. It feels like we've been walking for a while. B: Wait, can you smell the sea water? A: I can! Oh, and I can see the beach now! We've finally reached it! Wow, I love the contrast between the white sand and the blue ocean! B: That's why this is the most famous beach in Japan! The water is so clear and clean!",
+  "annotated_words": [
+    {
+      "word_id": "n1_1334",
+      "word_number": 1334,
+      "kanji": "潮",
+      "furigana": "しお",
+      "meaning_en": "sea water, tide"
+    },
+    {
+      "word_id": "n1_1335",
+      "word_number": 1335,
+      "kanji": "浜",
+      "furigana": "はま",
+      "meaning_en": "beach, seashore"
+    },
+    {
+      "word_id": "n1_1337",
+      "word_number": 1337,
+      "kanji": "たどり着く",
+      "furigana": "たどりつく",
+      "meaning_en": "reach"
+    },
+    {
+      "word_id": "n1_1338",
+      "word_number": 1338,
+      "kanji": "コントラスト",
+      "furigana": "コントラスト",
+      "meaning_en": "contrast"
+    },
+    {
+      "word_id": "n1_1339",
+      "word_number": 1339,
+      "kanji": "名高い",
+      "furigana": "なだかい",
+      "meaning_en": "famous, renowned"
+    },
+    {
+      "word_id": "n1_1340",
+      "word_number": 1340,
+      "kanji": "澄む",
+      "furigana": "すむ",
+      "meaning_en": "be clear"
+    }
+  ]
+}

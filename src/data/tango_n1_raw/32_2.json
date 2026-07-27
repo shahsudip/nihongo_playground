@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 14,
+  "title": "Topic 2",
+  "japanese_text": "A：最近すごく元気じゃない？\nB：生活<u>サイクル</u>を整えてからすごく調子がよくて。睡眠時間を固定したり、晩ご飯を作って、寝る4時間前には食べたりしてね。今日も7時<u>きっかり</u>に起きたよ。\nA：忙しいのに自炊も？\nB：そう。まとめて作って<u>ストックし</u>てる。",
+  "english_translation": "A: You're looking very well these days. B: I've been doing really well since I adjusted my living cycle. I keep regular sleeping hours, and I cook dinner and eat four hours before going to bed. I woke up at exactly 7 a.m. this morning. A: You're busy, but you still cook for yourself? B: Yes. I prepare meals in batches to stock my freezer.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0136",
+      "word_number": 136,
+      "kanji": "サイクル",
+      "furigana": "サイクル",
+      "meaning_en": "cycle"
+    },
+    {
+      "word_id": "n1_0137",
+      "word_number": 137,
+      "kanji": "きっかり(と)",
+      "furigana": "きっかり(と)",
+      "meaning_en": "exactly"
+    },
+    {
+      "word_id": "n1_0138",
+      "word_number": 138,
+      "kanji": "ストック",
+      "furigana": "ストック",
+      "meaning_en": "stock"
+    }
+  ]
+}

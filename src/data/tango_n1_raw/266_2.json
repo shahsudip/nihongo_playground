@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 20",
+  "japanese_text": "最近、一日中気分が落ち込んでいて、食欲<u>不振</u>などの症状もあったため、病院で相談したところ、<u>うつ病</u>と診断された。<u>息を抜く</u>暇もなく働いていたことによるストレスが原因だったようだ。現在は<u>休職し</u>、<u>カウンセリング</u>を受けながら自分を<u>労わる</u>ようにしていて、徐々に良くなってきている。",
+  "english_translation": "Recently, I was feeling depressed all day long and had symptoms such as loss of appetite, so I went to the hospital and was diagnosed with depression. Apparently it was caused by stress from working without taking time to catch my breath. At the moment, I'm taking a leave of absence, receiving counseling, and taking care of myself, and I'm gradually getting better.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1889",
+      "word_number": 1889,
+      "kanji": "不振",
+      "furigana": "ふしん",
+      "meaning_en": "inactivity, loss, slump"
+    },
+    {
+      "word_id": "n1_1890",
+      "word_number": 1890,
+      "kanji": "うつ病",
+      "furigana": "",
+      "meaning_en": "depression"
+    },
+    {
+      "word_id": "n1_1891",
+      "word_number": 1891,
+      "kanji": "息を抜く",
+      "furigana": "いきをぬく",
+      "meaning_en": "catch one's breath"
+    },
+    {
+      "word_id": "n1_1892",
+      "word_number": 1892,
+      "kanji": "休職[する]",
+      "furigana": "きゅうしょく",
+      "meaning_en": "absence from work, take a leave of absence"
+    },
+    {
+      "word_id": "n1_1893",
+      "word_number": 1893,
+      "kanji": "カウンセリング",
+      "furigana": "",
+      "meaning_en": "counseling"
+    },
+    {
+      "word_id": "n1_1894",
+      "word_number": 1894,
+      "kanji": "労わる",
+      "furigana": "いたわる",
+      "meaning_en": "take care of, care for"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 25,
+  "title": "Topic 18",
+  "japanese_text": "このコンビニは人手不足なのか、いつ来ても「アルバイト募集中！面接<u>随時</u>」という<u>張り紙</u>が貼ってある。確かに人手は足りていないようで、レジ業務の<u>傍ら</u>商品の<u>発注</u>をしたり、急いで<u>補充したり</u>している姿をよく見る。",
+  "english_translation": "This convenience store seems short-staffed. Whenever I go in, there's always a notice posted saying, \"Looking for part-time workers! Interviews available at any time.\" I often see them ordering products and restocking in a hurry alongside working the cash register, so it seems they really are understaffed.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1599",
+      "word_number": 1599,
+      "kanji": "随時",
+      "furigana": "ずいじ",
+      "meaning_en": "at any time"
+    },
+    {
+      "word_id": "n1_1600",
+      "word_number": 1600,
+      "kanji": "張り紙／貼り紙",
+      "furigana": "はりがみ",
+      "meaning_en": "notice, poster"
+    },
+    {
+      "word_id": "n1_1601",
+      "word_number": 1601,
+      "kanji": "傍ら",
+      "furigana": "かたわら",
+      "meaning_en": "alongside"
+    },
+    {
+      "word_id": "n1_1602",
+      "word_number": 1602,
+      "kanji": "発注",
+      "furigana": "はっちゅう",
+      "meaning_en": "order, place an order"
+    },
+    {
+      "word_id": "n1_1604",
+      "word_number": 1604,
+      "kanji": "補充",
+      "furigana": "ほじゅう",
+      "meaning_en": "resupply, restock"
+    }
+  ]
+}

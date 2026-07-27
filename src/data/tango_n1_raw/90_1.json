@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 14,
+  "title": "Topic 7",
+  "japanese_text": "A：この雑誌、買ってるんだ！\nB：うん。<u>創刊</u>号からずっと買ってるよ。\nA：え、じゃあ、去年の１２月号も持ってる？<u>特集</u>ページに最近好きになったアイドルの<u>独占</u>インタビュー記事が載ってるんだけど…。",
+  "english_translation": "A: You buy this magazine!? B: Yes. I've been buying it since the first issue. A: Well, do you have last December's issue? There's an exclusive interview on the feature page with an idol I've recently started to like ...",
+  "annotated_words": [
+    {
+      "word_id": "n1_0560",
+      "word_number": 560,
+      "kanji": "創刊",
+      "furigana": "そうかん",
+      "meaning_en": "first issue, establish (a publication)"
+    },
+    {
+      "word_id": "n1_0561",
+      "word_number": 561,
+      "kanji": "特集",
+      "furigana": "とくしゅう",
+      "meaning_en": "special feature, feature"
+    },
+    {
+      "word_id": "n1_0562",
+      "word_number": 562,
+      "kanji": "独占",
+      "furigana": "どくせん",
+      "meaning_en": "exclusive, monopolize"
+    }
+  ]
+}

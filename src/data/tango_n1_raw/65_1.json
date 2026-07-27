@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 6",
+  "japanese_text": "初心者のうちは<u>絶大な</u>威力の技、<u>ダメージ</u>の<u>数値</u>が大きい技ばかりを使いたがる。しかし、対戦で勝つには、自分の攻撃力をあげたり、相手をやけどさせたりなど、<u>多彩な</u>技を使うことが<u>こつ</u>だ。",
+  "english_translation": "As a beginner, you tend to want to use only techniques with immense power or a high damage value. However, in order to win matches, the trick is to use diverse techniques, such as increasing your own attack power or burning your opponent.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0370",
+      "word_number": 370,
+      "kanji": "絶大な",
+      "furigana": "ぜつだい",
+      "meaning_en": "immense"
+    },
+    {
+      "word_id": "n1_0371",
+      "word_number": 371,
+      "kanji": "ダメージ",
+      "furigana": "",
+      "meaning_en": "damage"
+    },
+    {
+      "word_id": "n1_0372",
+      "word_number": 372,
+      "kanji": "数値",
+      "furigana": "すうち",
+      "meaning_en": "value"
+    },
+    {
+      "word_id": "n1_0373",
+      "word_number": 373,
+      "kanji": "多彩な",
+      "furigana": "たさい",
+      "meaning_en": "diverse"
+    },
+    {
+      "word_id": "n1_0374",
+      "word_number": 374,
+      "kanji": "こつ",
+      "furigana": "",
+      "meaning_en": "knack, trick"
+    }
+  ]
+}

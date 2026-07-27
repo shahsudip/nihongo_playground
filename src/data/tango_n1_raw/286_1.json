@@ -1,0 +1,16 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 22",
+  "japanese_text": "<u>過疎</u>化が進む地域では、地域を<u>活性化</u>するため、積極的に<u>雇用</u>を<u>促進した</u>企業に対し、税金を<u>若干</u><u>免除したり</u>、助成金を<u>交付したり</u>するところもある。",
+  "english_translation": "In certain areas undergoing depopulation, in order to revitalize the community, some tax exemptions and aid subsidies are granted to companies that actively promote employment.",
+  "annotated_words": [
+    { "word_id": "n1_2031", "word_number": 2031, "kanji": "過疎", "furigana": "かそ", "meaning_en": "depopulation" },
+    { "word_id": "n1_2032", "word_number": 2032, "kanji": "活性化", "furigana": "かっせいか", "meaning_en": "revitalization, revitalize" },
+    { "word_id": "n1_2033", "word_number": 2033, "kanji": "雇用", "furigana": "こよう", "meaning_en": "employment, employ" },
+    { "word_id": "n1_2034", "word_number": 2034, "kanji": "促進する", "furigana": "そくしんする", "meaning_en": "promotion, promote" },
+    { "word_id": "n1_2035", "word_number": 2035, "kanji": "若干", "furigana": "じゃっかん", "meaning_en": "a few, some" },
+    { "word_id": "n1_2036", "word_number": 2036, "kanji": "免除する", "furigana": "めんじょする", "meaning_en": "tax exemption, exempt from tax" },
+    { "word_id": "n1_2037", "word_number": 2037, "kanji": "交付する", "furigana": "こうふする", "meaning_en": "delivery, grant" }
+  ]
+}

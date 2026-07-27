@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 15",
+  "japanese_text": "<u>近年</u>、ゲリラ豪雨が増加傾向にある。強い雨や雷とともに<u>あられ</u>が降ることもある。車の運転中にあられが降ってきたら、安全な場所に車を止めた方がいい。<u>前方</u>や<u>後方</u>が見えなくなるだけでなく、<u>アクセル</u>を踏むと車が<u>スリップ</u>することがあるので危険だ。",
+  "english_translation": "In recent years, sudden downpours have been on the increase. Alongside heavy rain and thunder, sometimes hail also falls. If it starts to hail while you are driving, you should stop your car in a safe place. Not only will you be unable to see what is ahead of or behind you, but your car may slip if you hit the gas pedal, which is dangerous.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1248",
+      "word_number": 1248,
+      "kanji": "近年",
+      "furigana": "きんねん",
+      "meaning_en": "recent years, in recent years"
+    },
+    {
+      "word_id": "n1_1249",
+      "word_number": 1249,
+      "kanji": "あられ",
+      "furigana": "あられ",
+      "meaning_en": "hail, hailstone (up to 5 mm in diameter)"
+    },
+    {
+      "word_id": "n1_1250",
+      "word_number": 1250,
+      "kanji": "前方",
+      "furigana": "ぜんぼう",
+      "meaning_en": "ahead"
+    },
+    {
+      "word_id": "n1_1251",
+      "word_number": 1251,
+      "kanji": "後方",
+      "furigana": "こうほう",
+      "meaning_en": "behind"
+    },
+    {
+      "word_id": "n1_1252",
+      "word_number": 1252,
+      "kanji": "アクセル",
+      "furigana": "アクセル",
+      "meaning_en": "accelerator, gas pedal"
+    },
+    {
+      "word_id": "n1_1253",
+      "word_number": 1253,
+      "kanji": "スリップ[する]",
+      "furigana": "スリップ[する]",
+      "meaning_en": "slipping, slip"
+    }
+  ]
+}

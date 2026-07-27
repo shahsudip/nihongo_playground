@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 24",
+  "japanese_text": "<u>国会</u>では、<u>議員</u>たちが新たな<u>法案</u>について激しく<u>審議</u>した。<u>野党</u>は<u>採決</u>を先延ばしにするよう求め、<u>与党</u>との対立が深まった。",
+  "english_translation": "In the National Diet, members of parliament debated fiercely over a new bill. The opposition party demanded a delay in the vote, deepening the confrontation with the ruling party.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2265",
+      "word_number": 2265,
+      "kanji": "国会",
+      "furigana": "こっかい",
+      "meaning_en": "National Diet, parliament"
+    },
+    {
+      "word_id": "n1_2266",
+      "word_number": 2266,
+      "kanji": "議員",
+      "furigana": "ぎいん",
+      "meaning_en": "member of parliament, Diet member"
+    },
+    {
+      "word_id": "n1_2267",
+      "word_number": 2267,
+      "kanji": "法案",
+      "furigana": "ほうあん",
+      "meaning_en": "bill, proposed law"
+    },
+    {
+      "word_id": "n1_2268",
+      "word_number": 2268,
+      "kanji": "審議[する]",
+      "furigana": "しんぎ",
+      "meaning_en": "deliberation, deliberate"
+    },
+    {
+      "word_id": "n1_2269",
+      "word_number": 2269,
+      "kanji": "採決[する]",
+      "furigana": "さいけつ",
+      "meaning_en": "vote, take a vote"
+    }
+  ]
+}

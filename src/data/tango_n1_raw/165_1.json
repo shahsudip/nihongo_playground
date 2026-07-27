@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 14,
+  "title": "Topic 13",
+  "japanese_text": "<u>新築</u>の家に合わせて新しく買ったソファーは、<u>滑らかな</u>素材でできており、<u>くつろぐ</u>には最適だ。",
+  "english_translation": "The sofa we bought for our newly constructed house is covered in smooth fabric and is perfect for relaxing.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1138",
+      "word_number": 1138,
+      "kanji": "新築",
+      "furigana": "しんちく",
+      "meaning_en": "new construction, newly construct"
+    },
+    {
+      "word_id": "n1_1139",
+      "word_number": 1139,
+      "kanji": "滑らかな",
+      "furigana": "なめらかな",
+      "meaning_en": "smooth"
+    },
+    {
+      "word_id": "n1_1140",
+      "word_number": 1140,
+      "kanji": "くつろぐ",
+      "furigana": "",
+      "meaning_en": "relax"
+    }
+  ]
+}

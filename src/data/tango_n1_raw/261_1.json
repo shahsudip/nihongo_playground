@@ -1,0 +1,65 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 20",
+  "japanese_text": "A：最近疲れやすくて、体の<u>衰え</u>を感じるよ。\nB：ああ…私も、頬が<u>たるん</u>できたし、肌は<u>しなびた</u>みかんみたいだし、<u>ぼけ</u>はじめちゃったのかなって思うくらい<u>度忘れ</u>も多いし…年をとるって嫌だね。\nA：本当にね。私はもともと<u>近視</u>だったんだけど、最近は、老眼で近くのものが見えにくくなってきたよ。",
+  "english_translation": "A: I'm getting so tired these days. I feel like my body's on the decline. B: Oh... me too. My cheeks are sagging, my skin looks like a shriveled orange, and I'm having so many memory lapses that I wonder if I've started to become senile. I hate getting old. A: Me too. I've always been nearsighted, but recently I'm having trouble seeing things up close because of my old eyes.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1844",
+      "word_number": 1844,
+      "kanji": "衰え",
+      "furigana": "おとろえ",
+      "meaning_en": "decline"
+    },
+    {
+      "word_id": "n1_1845",
+      "word_number": 1845,
+      "kanji": "衰える",
+      "furigana": "おとろえる",
+      "meaning_en": "deteriorate"
+    },
+    {
+      "word_id": "n1_1846",
+      "word_number": 1846,
+      "kanji": "たるむ",
+      "furigana": "",
+      "meaning_en": "sag"
+    },
+    {
+      "word_id": "n1_1847",
+      "word_number": 1847,
+      "kanji": "しなびる",
+      "furigana": "",
+      "meaning_en": "shrivel"
+    },
+    {
+      "word_id": "n1_1848",
+      "word_number": 1848,
+      "kanji": "ぼける",
+      "furigana": "",
+      "meaning_en": "become senile"
+    },
+    {
+      "word_id": "n1_1849",
+      "word_number": 1849,
+      "kanji": "度忘れ[する]",
+      "furigana": "どわすれ[する]",
+      "meaning_en": "memory lapse, forget momentarily"
+    },
+    {
+      "word_id": "n1_1850",
+      "word_number": 1850,
+      "kanji": "近視",
+      "furigana": "きんし",
+      "meaning_en": "nearsightedness"
+    },
+    {
+      "word_id": "n1_1851",
+      "word_number": 1851,
+      "kanji": "遠視",
+      "furigana": "えんし",
+      "meaning_en": "farsightedness"
+    }
+  ]
+}

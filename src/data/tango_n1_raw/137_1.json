@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 14,
+  "title": "Topic 11",
+  "japanese_text": "Ａ：私、最近毎朝<u>皇居</u>ランしてる。\nＢ：皇居の周りって、けっこう<u>ランナー</u>が<u>群がってる</u>んじゃないの？\nＡ：<u>いかにも</u>ランナーって感じの人が多いね。朝は<u>まし</u>かな。\nＢ：<u>鍛えてる</u>の？\nＡ：んー、脳が<u>リフレッシュして</u>、仕事に集中できるからやってる。",
+  "english_translation": "A: I've been running around the Imperial Palace every morning lately. B: Don't a lot of runners gather around the Imperial Palace? A: For sure, a lot of people seem to be runners. It's better in the morning, I guess. B: Do you work out? A: Well, I do it because it refreshes my brain and helps me concentrate on work.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0913",
+      "word_number": 913,
+      "kanji": "皇居",
+      "furigana": "こうきょ",
+      "meaning_en": "Imperial Palace"
+    },
+    {
+      "word_id": "n1_0914",
+      "word_number": 914,
+      "kanji": "ランナー",
+      "furigana": "らんなー",
+      "meaning_en": "runner"
+    },
+    {
+      "word_id": "n1_0915",
+      "word_number": 915,
+      "kanji": "群がる",
+      "furigana": "むらがる",
+      "meaning_en": "gather, swarm"
+    },
+    {
+      "word_id": "n1_0916",
+      "word_number": 916,
+      "kanji": "いかにも",
+      "furigana": "いかにも",
+      "meaning_en": "for sure, indeed"
+    },
+    {
+      "word_id": "n1_0917",
+      "word_number": 917,
+      "kanji": "ましな",
+      "furigana": "ましな",
+      "meaning_en": "better"
+    },
+    {
+      "word_id": "n1_0918",
+      "word_number": 918,
+      "kanji": "鍛える",
+      "furigana": "きたえる",
+      "meaning_en": "work out (exercise)"
+    },
+    {
+      "word_id": "n1_0919",
+      "word_number": 919,
+      "kanji": "リフレッシュ[する]",
+      "furigana": "りふれっしゅ",
+      "meaning_en": "refreshment, refresh"
+    }
+  ]
+}

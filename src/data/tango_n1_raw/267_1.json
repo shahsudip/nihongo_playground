@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 20",
+  "japanese_text": "最近は、<u>お産</u>のスタイルも多様化してきており、<u>麻酔</u>を使って痛みを<u>和らげる</u>無痛分娩を選択する人も徐々に増えてきている。",
+  "english_translation": "Recently, styles of childbirth have become more diverse, and the number of people choosing painless delivery, in which anesthesia is used to alleviate pain, is gradually increasing.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1895",
+      "word_number": 1895,
+      "kanji": "お産",
+      "furigana": "おさん",
+      "meaning_en": "childbirth"
+    },
+    {
+      "word_id": "n1_1896",
+      "word_number": 1896,
+      "kanji": "麻酔",
+      "furigana": "ますい",
+      "meaning_en": "anesthesia"
+    },
+    {
+      "word_id": "n1_1897",
+      "word_number": 1897,
+      "kanji": "和らげる",
+      "furigana": "やわらげる",
+      "meaning_en": "alleviate"
+    },
+    {
+      "word_id": "n1_1898",
+      "word_number": 1898,
+      "kanji": "和らぐ",
+      "furigana": "やわらぐ",
+      "meaning_en": "let up, subside"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 15",
+  "japanese_text": "<u>盆地</u>である京都は、夏は風が通らず気温が高くなる。京都に住んで20年になるが、夏の暑さと<u>生ぬるい</u>風には<u>どうも</u>慣れない。<u>それにしても</u>今日は<u>やけに</u>暑い。",
+  "english_translation": "Kyoto, situated in a basin, gets very hot in the summer, and no wind blows. I've lived in Kyoto for 20 years, but somehow I've never gotten used to the summer heat and tepid breezes. Even so, it is still awfully hot today.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1243",
+      "word_number": 1243,
+      "kanji": "盆地",
+      "furigana": "ぼんち",
+      "meaning_en": "basin"
+    },
+    {
+      "word_id": "n1_1244",
+      "word_number": 1244,
+      "kanji": "生ぬるい",
+      "furigana": "なまぬるい",
+      "meaning_en": "tepid"
+    },
+    {
+      "word_id": "n1_1245",
+      "word_number": 1245,
+      "kanji": "どうも",
+      "furigana": "どうも",
+      "meaning_en": "somehow"
+    },
+    {
+      "word_id": "n1_1246",
+      "word_number": 1246,
+      "kanji": "それにしても",
+      "furigana": "それにしても",
+      "meaning_en": "even so, nevertheless"
+    },
+    {
+      "word_id": "n1_1247",
+      "word_number": 1247,
+      "kanji": "やけに",
+      "furigana": "やけに",
+      "meaning_en": "awfully"
+    }
+  ]
+}

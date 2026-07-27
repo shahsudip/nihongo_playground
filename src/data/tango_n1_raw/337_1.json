@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 7,
+  "title": "Topic 26",
+  "japanese_text": "<u>薬物</u>の<u>乱用</u>は社会問題となっており、<u>依存</u>症になると自力での<u>回復</u>が難しくなる。<u>更生</u>施設での支援が重要だが、<u>偏見</u>から<u>孤立</u>してしまうケースも多い。社会全体で<u>受け入れ</u>る体制が求められる。",
+  "english_translation": "Drug abuse has become a social problem, and once addicted, recovery on one's own becomes difficult. Support at rehabilitation facilities is important, but many cases end up isolated due to prejudice. A system of acceptance by society as a whole is needed.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2476",
+      "word_number": 2476,
+      "kanji": "薬物",
+      "furigana": "やくぶつ",
+      "meaning_en": "drug, narcotic"
+    },
+    {
+      "word_id": "n1_2477",
+      "word_number": 2477,
+      "kanji": "乱用[する]",
+      "furigana": "らんよう",
+      "meaning_en": "abuse, misuse"
+    },
+    {
+      "word_id": "n1_2478",
+      "word_number": 2478,
+      "kanji": "依存[する]",
+      "furigana": "いぞん",
+      "meaning_en": "dependence, depend on"
+    },
+    {
+      "word_id": "n1_2479",
+      "word_number": 2479,
+      "kanji": "更生[する]",
+      "furigana": "こうせい",
+      "meaning_en": "rehabilitation, rehabilitate"
+    },
+    {
+      "word_id": "n1_2480",
+      "word_number": 2480,
+      "kanji": "偏見",
+      "furigana": "へんけん",
+      "meaning_en": "prejudice, bias"
+    }
+  ]
+}

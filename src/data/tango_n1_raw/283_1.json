@@ -1,0 +1,12 @@
+{
+  "is_story": true,
+  "story_number": 16,
+  "title": "Topic 21",
+  "japanese_text": "夜、車に乗るときは<u>歩行者</u>を<u>認識し</u>やすくするために、ライトで遠くまで照らしている。しかし、対向車がいるときは手前だけを照らすライトに切り替える必要がある。遠くまで照らして、対向車に迷惑をかけることは<u>違法</u>である。",
+  "english_translation": "When driving a car at night, we use high-beam lights to illuminate pedestrians in the distance, making them easier to perceive. However, when there is oncoming traffic, we need to switch to lights that illuminate just in front of the car. It is illegal to cause trouble for oncoming traffic by illuminating objects in the distance.",
+  "annotated_words": [
+    { "word_id": "n1_2014", "word_number": 2014, "kanji": "歩行者", "furigana": "ほこうしゃ", "meaning_en": "pedestrian" },
+    { "word_id": "n1_2015", "word_number": 2015, "kanji": "認識する", "furigana": "にんしきする", "meaning_en": "recognition, perceive" },
+    { "word_id": "n1_2016", "word_number": 2016, "kanji": "違法", "furigana": "いほう", "meaning_en": "illegality" }
+  ]
+}

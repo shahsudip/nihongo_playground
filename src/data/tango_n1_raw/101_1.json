@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 9",
+  "japanese_text": "会議を<u>円滑に</u>進めるためには、事前に<u>方々に</u><u>根回し</u>しておくことが大切だ。",
+  "english_translation": "In order for a meeting to proceed smoothly, it is important to lay the groundwork in various ways in advance.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0644",
+      "word_number": 644,
+      "kanji": "円滑な",
+      "furigana": "えんかつな",
+      "meaning_en": "smooth"
+    },
+    {
+      "word_id": "n1_0645",
+      "word_number": 645,
+      "kanji": "方々",
+      "furigana": "ほうぼう",
+      "meaning_en": "here and there, in various ways"
+    },
+    {
+      "word_id": "n1_0646",
+      "word_number": 646,
+      "kanji": "根回し",
+      "furigana": "ねまわし",
+      "meaning_en": "groundwork, lay groundwork"
+    }
+  ]
+}

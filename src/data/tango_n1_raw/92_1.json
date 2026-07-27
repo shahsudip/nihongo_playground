@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 8",
+  "japanese_text": "日本の小中学校で使われている教科書は、グローバル化やＡＩの<u>飛躍的な</u>進歩といった社会の変化に合わせ、４年に１度<u>改訂される</u>。また、日本の法律や規則が変わることにより、教科書の内容が<u>訂正される</u>こともある。",
+  "english_translation": "Textbooks used in elementary and junior high schools in Japan are revised every four years to keep up with changes in society, such as globalization or the dramatic progress of AI. Textbooks may also be amended due to changes in Japanese laws or regulations.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0576",
+      "word_number": 576,
+      "kanji": "飛躍的な",
+      "furigana": "ひやくてき",
+      "meaning_en": "dramatic, rapid"
+    },
+    {
+      "word_id": "n1_0578",
+      "word_number": 578,
+      "kanji": "改訂",
+      "furigana": "かいてい",
+      "meaning_en": "revision, revise"
+    },
+    {
+      "word_id": "n1_0579",
+      "word_number": 579,
+      "kanji": "訂正",
+      "furigana": "ていせい",
+      "meaning_en": "amendment, amend"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 16,
+  "title": "Topic 1",
+  "japanese_text": "A：また山で見つけた草を食べたんだって？ よく食べられるな。\nB：食べるか食べないかを迷う<u>余地</u>なんてないよ。\nA：<u>物好きな</u> <u>やつ</u>だなあ。\nB：最初にしいたけやウニを食べた人のことを考えてよ。あんなよく分からない<u>物体</u>をよく食べたと思わない？ その人たちと同じで、私の好奇心は<u>とどまる</u>ことを知らないんだから。",
+  "english_translation": "A: I heard you ate some grass you found in the mountains again. How can you eat that? B: There's no place to hesitate about whether to eat it or not. A: You're a curious guy, aren't you? B: Think about the first person who ate shiitake mushrooms or sea urchins. They didn't worry about whether to eat such weird objects. I'm just like them—my curiosity can't be stopped.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0069",
+      "word_number": 69,
+      "kanji": "余地",
+      "furigana": "よち",
+      "meaning_en": "place, room"
+    },
+    {
+      "word_id": "n1_0070",
+      "word_number": 70,
+      "kanji": "物好きな",
+      "furigana": "ものず",
+      "meaning_en": "curious"
+    },
+    {
+      "word_id": "n1_0071",
+      "word_number": 71,
+      "kanji": "やつ",
+      "furigana": "やつ",
+      "meaning_en": "guy, one"
+    },
+    {
+      "word_id": "n1_0072",
+      "word_number": 72,
+      "kanji": "物体",
+      "furigana": "ぶったい",
+      "meaning_en": "object"
+    },
+    {
+      "word_id": "n1_0073",
+      "word_number": 73,
+      "kanji": "とどまる",
+      "furigana": "とどまる",
+      "meaning_en": "stay, stop"
+    },
+    {
+      "word_id": "n1_0074",
+      "word_number": 74,
+      "kanji": "とどめる",
+      "furigana": "とどめる",
+      "meaning_en": "confine, stop"
+    }
+  ]
+}

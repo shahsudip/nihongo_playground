@@ -1,0 +1,30 @@
+/* Standardized Theme for Tango Reading */
+.tango-page-container {
+  min-height: 100vh;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  padding: 2rem 1rem;
+}
+
+.tango-back-btn {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.tango-back-btn:hover {
+  color: var(--primary-green);
+}
+
+.tango-japanese-text {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.tango-japanese-text u {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-green);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}

@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 11",
+  "japanese_text": "［サッカー］試合は前半終了間際、こぼれ球に<u>とっさに</u>反応した佐藤選手がゴールを決めて<u>先制した</u>。後半は<u>守備</u>に回ることが多く、<u>はらはらする</u>展開だったが、最後まで相手チームに<u>得点</u>を許さず、なんとかチームの<u>連敗</u>を<u>阻止した</u>。",
+  "english_translation": "[Soccer] Just before the end of the first half, Sato reacted immediately to a fumbled ball and scored a goal to take the lead. The second half had some thrilling developments, as the team was often on the defense, but they managed to prevent consecutive defeat by not allowing the other team to score until the very end.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0847",
+      "word_number": 847,
+      "kanji": "とっさに",
+      "furigana": "とっさに",
+      "meaning_en": "immediately"
+    },
+    {
+      "word_id": "n1_0848",
+      "word_number": 848,
+      "kanji": "先制[する]",
+      "furigana": "せんせい",
+      "meaning_en": "head start, take the lead"
+    },
+    {
+      "word_id": "n1_0849",
+      "word_number": 849,
+      "kanji": "守備[する]",
+      "furigana": "しゅび",
+      "meaning_en": "defense, defend"
+    },
+    {
+      "word_id": "n1_0850",
+      "word_number": 850,
+      "kanji": "はらはら(と)",
+      "furigana": "はらはら",
+      "meaning_en": "thrilling"
+    },
+    {
+      "word_id": "n1_0851",
+      "word_number": 851,
+      "kanji": "得点[する]",
+      "furigana": "とくてん",
+      "meaning_en": "scoring, score"
+    },
+    {
+      "word_id": "n1_0852",
+      "word_number": 852,
+      "kanji": "連敗[する]",
+      "furigana": "れんぱい",
+      "meaning_en": "consecutive defeat, lose successively"
+    },
+    {
+      "word_id": "n1_0853",
+      "word_number": 853,
+      "kanji": "阻止[する]",
+      "furigana": "そし",
+      "meaning_en": "prevention, prevent"
+    }
+  ]
+}

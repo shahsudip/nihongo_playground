@@ -1,0 +1,30 @@
+{
+  "is_story": false,
+  "story_number": 15,
+  "title": "Topic 16",
+  "japanese_text": "A：旅行は<u>事前</u>にプランを立てる派？\nB：その場で決める方が好きかなあ。思うがままにいろんな場所を<u>巡ったり</u>、その場の気分でいいなと思ったお店に<u>立ち寄ったり</u>できるからね。",
+  "english_translation": "A: Do you plan your travel in advance? B: I prefer to decide on the spot. That way, I can go around different places whenever I like and stop by whatever stores I like, depending on how I'm feeling.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1341",
+      "word_number": 1341,
+      "kanji": "事前",
+      "furigana": "じぜん",
+      "meaning_en": "advance"
+    },
+    {
+      "word_id": "n1_1342",
+      "word_number": 1342,
+      "kanji": "巡る",
+      "furigana": "めぐる",
+      "meaning_en": "go around, move around"
+    },
+    {
+      "word_id": "n1_1343",
+      "word_number": 1343,
+      "kanji": "立ち寄る",
+      "furigana": "たちよる",
+      "meaning_en": "drop in, stop by"
+    }
+  ]
+}

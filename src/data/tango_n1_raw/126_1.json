@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 10",
+  "japanese_text": "私は<u>人情</u>にあふれた優しい町で育った。正月には近所の人たちで集まり、食事をしながら新年の<u>抱負</u>を語ったり、お酒を飲んだりしていた。あの<u>和やかな</u>空気は今でも<u>ありありと</u>思い出せる。",
+  "english_translation": "I grew up in a warm town full of human feeling. On New Year’s Day, neighbors would get together for a meal, talk about their New Year’s resolutions, and have a few drinks. I can still vividly remember that friendly atmosphere.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0827",
+      "word_number": 827,
+      "kanji": "人情",
+      "furigana": "にんじょう",
+      "meaning_en": "human feeling"
+    },
+    {
+      "word_id": "n1_0828",
+      "word_number": 828,
+      "kanji": "抱負",
+      "furigana": "ほうふ",
+      "meaning_en": "aspiration, resolution"
+    },
+    {
+      "word_id": "n1_0829",
+      "word_number": 829,
+      "kanji": "和やかな",
+      "furigana": "なご",
+      "meaning_en": "friendly"
+    },
+    {
+      "word_id": "n1_0830",
+      "word_number": 830,
+      "kanji": "ありありと",
+      "furigana": "",
+      "meaning_en": "distinctly, vividly"
+    }
+  ]
+}

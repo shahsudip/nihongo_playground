@@ -1,0 +1,12 @@
+{
+  "is_story": true,
+  "story_number": 15,
+  "title": "Topic 21",
+  "japanese_text": "駅構内は<u>終日</u>禁煙であるにもかかわらず、人混みに<u>紛れて</u>歩きたばこをしている人を見かけた。世の中<u>善良な</u>人だけではないのだと残念に思った。",
+  "english_translation": "Although smoking is prohibited in the station all day long, I saw people walking around smoking, lost in the crowd. It's a shame that not all people in this world are good-natured people.",
+  "annotated_words": [
+    { "word_id": "n1_2011", "word_number": 2011, "kanji": "終日", "furigana": "しゅうじつ", "meaning_en": "all day long, all day" },
+    { "word_id": "n1_2012", "word_number": 2012, "kanji": "紛れる", "furigana": "まぎれる", "meaning_en": "be mixed in, be lost in" },
+    { "word_id": "n1_2013", "word_number": 2013, "kanji": "善良な", "furigana": "ぜんりょうな", "meaning_en": "good-natured" }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 1",
+  "japanese_text": "<u>当</u>旅館では、<u>旬</u>の<u>素材</u>にこだわった最高のお料理と質の高いお<u>もてなし</u>を<u>提供</u>しております。",
+  "english_translation": "This ryokan inn offers the best cuisine using only the finest produce in season and outstanding hospitality.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0017",
+      "word_number": 17,
+      "kanji": "当〜",
+      "furigana": "とう",
+      "meaning_en": "our ~, this ~"
+    },
+    {
+      "word_id": "n1_0018",
+      "word_number": 18,
+      "kanji": "旬",
+      "furigana": "しゅん",
+      "meaning_en": "season"
+    },
+    {
+      "word_id": "n1_0019",
+      "word_number": 19,
+      "kanji": "素材",
+      "furigana": "そざい",
+      "meaning_en": "ingredients, produce"
+    },
+    {
+      "word_id": "n1_0020",
+      "word_number": 20,
+      "kanji": "(お)もてなし",
+      "furigana": "もてなし",
+      "meaning_en": "hospitality"
+    },
+    {
+      "word_id": "n1_0021",
+      "word_number": 21,
+      "kanji": "もてなす",
+      "furigana": "もてなす",
+      "meaning_en": "welcome"
+    },
+    {
+      "word_id": "n1_0022",
+      "word_number": 22,
+      "kanji": "提供する",
+      "furigana": "ていきょう",
+      "meaning_en": "offer, provide"
+    }
+  ]
+}

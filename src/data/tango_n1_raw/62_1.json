@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 22,
+  "title": "Topic 5",
+  "japanese_text": "<u>テクノロジー</u>の発展は生活を豊かにするが、場合によっては<u>依存症</u>を招くなどの<u>弊害</u>もあるため注意が必要だ。",
+  "english_translation": "The development of technology enriches our lives, but it also has harmful effects in some cases, such as leading to dependence.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0349",
+      "word_number": 349,
+      "kanji": "テクノロジー",
+      "furigana": "",
+      "meaning_en": "technology"
+    },
+    {
+      "word_id": "n1_0350",
+      "word_number": 350,
+      "kanji": "依存症",
+      "furigana": "いぞんしょう",
+      "meaning_en": "dependence, reliance"
+    },
+    {
+      "word_id": "n1_0351",
+      "word_number": 351,
+      "kanji": "依存",
+      "furigana": "いぞん",
+      "meaning_en": "dependence, rely"
+    },
+    {
+      "word_id": "n1_0352",
+      "word_number": 352,
+      "kanji": "弊害",
+      "furigana": "へいがい",
+      "meaning_en": "downside, harmful effect"
+    }
+  ]
+}

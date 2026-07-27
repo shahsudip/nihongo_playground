@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 23",
+  "japanese_text": "都市に住む子育て世帯に、農業体験や<u>酪農</u>体験が人気だ。<u>農場</u>を一般に開放し、畑を<u>耕したり</u><u>家畜</u>の世話をしたりする。春は<u>茶摘み</u>体験も人気だ。これらの体験を通じて、農産物が<u>出荷される</u>流れを学ぶことができる。",
+  "english_translation": "Farming and dairy farming experiences are popular among families with children living in cities. Farms are opened to the public, and visitors can cultivate the fields and care for livestock. In the spring, tea leaf picking is also popular. Through these experiences, visitors can learn how agricultural products are shipped.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2183",
+      "word_number": 2183,
+      "kanji": "酪農",
+      "furigana": "らくのう",
+      "meaning_en": "dairy farming"
+    },
+    {
+      "word_id": "n1_2184",
+      "word_number": 2184,
+      "kanji": "農場",
+      "furigana": "のうじょう",
+      "meaning_en": "farm"
+    },
+    {
+      "word_id": "n1_2185",
+      "word_number": 2185,
+      "kanji": "耕す",
+      "furigana": "たがや",
+      "meaning_en": "cultivate, plow"
+    },
+    {
+      "word_id": "n1_2186",
+      "word_number": 2186,
+      "kanji": "家畜",
+      "furigana": "かちく",
+      "meaning_en": "livestock"
+    },
+    {
+      "word_id": "n1_2187",
+      "word_number": 2187,
+      "kanji": "茶摘み",
+      "furigana": "ちゃつ",
+      "meaning_en": "tea leaf picking"
+    },
+    {
+      "word_id": "n1_2189",
+      "word_number": 2189,
+      "kanji": "出荷",
+      "furigana": "しゅっか",
+      "meaning_en": "shipment, ship"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 13",
+  "japanese_text": "この地域は都心へのアクセスが良いことから、<u>居住</u>地区としての人気が<u>上位</u>である。また、最近はオフィスや商業施設なども進出し、街全体が<u>栄えて</u>いる。さらに、<u>最寄り</u>駅から歩いて10分以内に自然豊かな公園やレジャー施設まであるのが魅力である。",
+  "english_translation": "This suburb ranks highly in popularity among residential districts because of its easy access to the city center. Offices and commercial facilities have also recently opened in the area, and the entire district is prospering. In addition, there are nature-rich parks and leisure facilities within a 10-minute walk from the nearest station.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1116",
+      "word_number": 1116,
+      "kanji": "居住",
+      "furigana": "きょじゅう",
+      "meaning_en": "residence, reside"
+    },
+    {
+      "word_id": "n1_1117",
+      "word_number": 1117,
+      "kanji": "上位",
+      "furigana": "じょうい",
+      "meaning_en": "high rank"
+    },
+    {
+      "word_id": "n1_1118",
+      "word_number": 1118,
+      "kanji": "栄える",
+      "furigana": "さかえる",
+      "meaning_en": "prosper"
+    },
+    {
+      "word_id": "n1_1119",
+      "word_number": 1119,
+      "kanji": "最寄り",
+      "furigana": "もより",
+      "meaning_en": "nearest (place or thing)"
+    }
+  ]
+}

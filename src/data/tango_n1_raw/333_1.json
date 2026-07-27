@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 25",
+  "japanese_text": "<u>ずさんな</u>捜査が原因で、罪のない人が<u>容疑者</u>として逮捕されかけ、<u>不当な</u>扱いを受ける事件があった。この事件は警察の信用を大きく<u>揺るがした</u>。",
+  "english_translation": "In a recent incident, an innocent person was almost arrested as a suspect and treated unfairly as the result of a sloppy investigation. The incident seriously shook the credibility of the police.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2409",
+      "word_number": 2409,
+      "kanji": "ずさんな",
+      "furigana": "",
+      "meaning_en": "sloppy"
+    },
+    {
+      "word_id": "n1_2410",
+      "word_number": 2410,
+      "kanji": "容疑者",
+      "furigana": "ようぎしゃ",
+      "meaning_en": "(criminal) suspect"
+    },
+    {
+      "word_id": "n1_2411",
+      "word_number": 2411,
+      "kanji": "不当な",
+      "furigana": "ふとうな",
+      "meaning_en": "unfair"
+    },
+    {
+      "word_id": "n1_2412",
+      "word_number": 2412,
+      "kanji": "揺るがす",
+      "furigana": "ゆるがす",
+      "meaning_en": "shake"
+    }
+  ]
+}

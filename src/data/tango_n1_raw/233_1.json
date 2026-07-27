@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 31,
+  "title": "Topic 18",
+  "japanese_text": "会社の<u>備品</u>を購入する際は、<u>経費</u>で購入する。我が社では、10万円以上のものを購入する場合は、複数の業者から<u>見積もり</u>を取り社内で<u>検討する</u>。購入後には、業者が作成した<u>明細書</u>と領収書を<u>経理</u>に提出する。",
+  "english_translation": "When equipment is purchased for a company, it is purchased as an expense. In our company, when purchasing items costing more than 100,000 yen, we obtain quotes from multiple vendors and review them internally. After the purchase, we submit a statement prepared by the vendor and a receipt to our accounting department.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1643",
+      "word_number": 1643,
+      "kanji": "備品",
+      "furigana": "びひん",
+      "meaning_en": "equipment"
+    },
+    {
+      "word_id": "n1_1644",
+      "word_number": 1644,
+      "kanji": "経費",
+      "furigana": "けいひ",
+      "meaning_en": "expense, outgoing"
+    },
+    {
+      "word_id": "n1_1645",
+      "word_number": 1645,
+      "kanji": "見積もり",
+      "furigana": "みつもり",
+      "meaning_en": "quote, estimate"
+    },
+    {
+      "word_id": "n1_1646",
+      "word_number": 1646,
+      "kanji": "見積もる",
+      "furigana": "みつもる",
+      "meaning_en": "quote"
+    },
+    {
+      "word_id": "n1_1647",
+      "word_number": 1647,
+      "kanji": "検討",
+      "furigana": "けんとう",
+      "meaning_en": "review, consider"
+    },
+    {
+      "word_id": "n1_1648",
+      "word_number": 1648,
+      "kanji": "明細書",
+      "furigana": "めいさいしょ",
+      "meaning_en": "statement"
+    },
+    {
+      "word_id": "n1_1649",
+      "word_number": 1649,
+      "kanji": "経理",
+      "furigana": "けいり",
+      "meaning_en": "detailed accounting"
+    }
+  ]
+}

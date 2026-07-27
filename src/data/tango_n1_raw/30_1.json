@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 2",
+  "japanese_text": "A：彼女と別れたんだって？\nB：うん。最近<u>息をつく</u>暇もないくらい仕事が忙しくて。会う<u>頻度</u>も減って、振られちゃった。今は全てを<u>放り出して</u>世界の<u>果て</u>まで飛んで行きたい気分…。",
+  "english_translation": "A: I heard you and your girlfriend broke up? B: Yes. I've been so busy with work that I haven't had time to catch my breath lately. I didn't see her with as much frequency, and so she dumped me. Now I feel like tossing away everything and flying to the ends of the world...",
+  "annotated_words": [
+    {
+      "word_id": "n1_0115",
+      "word_number": 115,
+      "kanji": "息をつく",
+      "furigana": "いきをつく",
+      "meaning_en": "catch a breath, take a short rest"
+    },
+    {
+      "word_id": "n1_0116",
+      "word_number": 116,
+      "kanji": "頻度",
+      "furigana": "ひんど",
+      "meaning_en": "frequency"
+    },
+    {
+      "word_id": "n1_0117",
+      "word_number": 117,
+      "kanji": "放り出す",
+      "furigana": "ほうりだす",
+      "meaning_en": "toss away"
+    },
+    {
+      "word_id": "n1_0118",
+      "word_number": 118,
+      "kanji": "果て",
+      "furigana": "はて",
+      "meaning_en": "edge, end"
+    }
+  ]
+}

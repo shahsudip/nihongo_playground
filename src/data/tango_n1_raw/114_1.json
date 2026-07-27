@@ -1,0 +1,30 @@
+{
+  "is_story": false,
+  "story_number": 23,
+  "title": "Topic 9",
+  "japanese_text": "A：さっきのプレゼンの<u>感触</u>はどう？\nB：かなりいいよ！ みんな興味を持って聞いてくれたし。\nA：さすがはBさん。やっぱり他の人とは違うよ。今度から大事なプレゼンのときはぜひBさんの知恵を<u>拝借したい</u>ね。\nB：いやいや。そんなに<u>おだてて</u>も何も出ないよ。",
+  "english_translation": "A: What was your impression of my presentation earlier? B: Pretty good! Everyone was interested and listened closely. A: That's what I thought you'd say! You're really different from the others. In future, I'd like to borrow your wisdom for important presentations. B: No, no, no. You won't get anything out of me, even if you flatter me like that.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0736",
+      "word_number": 736,
+      "kanji": "感触",
+      "furigana": "かんしょく",
+      "meaning_en": "impression"
+    },
+    {
+      "word_id": "n1_0737",
+      "word_number": 737,
+      "kanji": "拝借",
+      "furigana": "はいしゃく",
+      "meaning_en": "borrowing, borrow"
+    },
+    {
+      "word_id": "n1_0738",
+      "word_number": 738,
+      "kanji": "おだてる",
+      "furigana": "おだてる",
+      "meaning_en": "flatter"
+    }
+  ]
+}

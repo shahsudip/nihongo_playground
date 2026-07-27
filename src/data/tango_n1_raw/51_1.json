@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 5",
+  "japanese_text": "このデータベースは、<u>ログイン</u>した後に<u>オプション</u>を設定することで、常に新しい<u>バージョン</u>でデータ同士を<u>連携</u>できる<u>権限</u>を持つことができる。",
+  "english_translation": "Using this database, by setting options after logging in, you can always have the authority to coordinate data mutually with new versions.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0261",
+      "word_number": 261,
+      "kanji": "ログイン",
+      "furigana": "",
+      "meaning_en": "login, log in"
+    },
+    {
+      "word_id": "n1_0263",
+      "word_number": 263,
+      "kanji": "オプション",
+      "furigana": "",
+      "meaning_en": "option"
+    },
+    {
+      "word_id": "n1_0264",
+      "word_number": 264,
+      "kanji": "バージョン",
+      "furigana": "",
+      "meaning_en": "version"
+    },
+    {
+      "word_id": "n1_0265",
+      "word_number": 265,
+      "kanji": "連携",
+      "furigana": "れんけい",
+      "meaning_en": "coordination, link"
+    },
+    {
+      "word_id": "n1_0266",
+      "word_number": 266,
+      "kanji": "権限",
+      "furigana": "けんげん",
+      "meaning_en": "authority"
+    }
+  ]
+}

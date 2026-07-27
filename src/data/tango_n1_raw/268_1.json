@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 20",
+  "japanese_text": "かつては<u>栄養失調</u>等が原因で<u>結核</u>が<u>まん延し</u>、多くの人がこの<u>病</u>に<u>侵されて</u>亡くなったが、現在はかかる人が少なくなった。ただし、この病気が消えたわけではなく、<u>免疫</u>力が低下すると<u>発病し</u>やすくなるので、普段から健康的な生活を心掛けたい。",
+  "english_translation": "In the past, malnutrition and other factors led to the spread of tuberculosis, and many people were afflicted by the disease and died, although fewer people suffer from it today. However, tuberculosis has not disappeared, and people can easily contract the disease when their immune systems are weakened, so it is important to lead a healthy lifestyle.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1899",
+      "word_number": 1899,
+      "kanji": "栄養失調",
+      "furigana": "えいようしっちょう",
+      "meaning_en": "malnutrition"
+    },
+    {
+      "word_id": "n1_1900",
+      "word_number": 1900,
+      "kanji": "結核",
+      "furigana": "けっかく",
+      "meaning_en": "tuberculosis"
+    },
+    {
+      "word_id": "n1_1901",
+      "word_number": 1901,
+      "kanji": "まん延[する]",
+      "furigana": "えん",
+      "meaning_en": "spread, be widespread"
+    },
+    {
+      "word_id": "n1_1902",
+      "word_number": 1902,
+      "kanji": "病",
+      "furigana": "やまい",
+      "meaning_en": "disease, illness"
+    },
+    {
+      "word_id": "n1_1903",
+      "word_number": 1903,
+      "kanji": "侵す",
+      "furigana": "おか",
+      "meaning_en": "afflict, invade"
+    },
+    {
+      "word_id": "n1_1904",
+      "word_number": 1904,
+      "kanji": "免疫",
+      "furigana": "めんえき",
+      "meaning_en": "immunity"
+    },
+    {
+      "word_id": "n1_1905",
+      "word_number": 1905,
+      "kanji": "発病[する]",
+      "furigana": "はつびょう",
+      "meaning_en": "outbreak, onset, contract a disease"
+    }
+  ]
+}

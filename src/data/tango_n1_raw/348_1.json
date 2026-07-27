@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 7,
+  "title": "Topic 27",
+  "japanese_text": "A：<u>成果</u>発表のため、<u>シンポジウム</u>に参加することになったよ。\nB：出張経費を支給してもらうなら、その<u>内訳</u>が分かるようにしなよ。うちは審査が<u>厳格な</u>だから。<u>疑わしい</u>費用は認めてくれないよ。",
+  "english_translation": "A: I'm going to attend a symposium to present my findings. B: If you want to be reimbursed for travel expenses, make sure you get the breakdown right. Our screening process is very strict, and any questionable expenses won't be approved.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2526",
+      "word_number": 2526,
+      "kanji": "成果",
+      "furigana": "せいか",
+      "meaning_en": "findings, results"
+    },
+    {
+      "word_id": "n1_2527",
+      "word_number": 2527,
+      "kanji": "シンポジウム",
+      "furigana": "シンポジウム",
+      "meaning_en": "symposium"
+    },
+    {
+      "word_id": "n1_2528",
+      "word_number": 2528,
+      "kanji": "内訳",
+      "furigana": "うちわけ",
+      "meaning_en": "breakdown"
+    },
+    {
+      "word_id": "n1_2529",
+      "word_number": 2529,
+      "kanji": "厳格な",
+      "furigana": "げんかくな",
+      "meaning_en": "strict"
+    },
+    {
+      "word_id": "n1_2530",
+      "word_number": 2530,
+      "kanji": "疑わしい",
+      "furigana": "うたがわしい",
+      "meaning_en": "doubtful, questionable"
+    }
+  ]
+}

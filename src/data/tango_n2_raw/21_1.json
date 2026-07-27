@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 1 食事",
+  "japanese_text": "A: クリスマスパーティーのケーキ、どうする？\nB: 5人だよね？ 5<u>等分</u>、難しいよね…。\nA: あ、じゃあ、大きいのひとつじゃなくて、<u>めいめい</u>好きなケーキを買う？\nB: いいね。私はフルーツタルトにしよっと。あの店のフルーツがたくさんのってて<u>豪華</u>なんだよね。",
+  "english_translation": "A: What do you want to do about a cake for the Christmas party? B: There are five of us, right? It's hard to divide a cake into five equal portions. A: Well, instead of one big cake, why don't we buy our own respective cakes? B: Great idea. I'll get a fruit tart. The one at that store is gorgeous with lots of fruit on it.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0055",
+      "word_number": 55,
+      "kanji": "～等分",
+      "furigana": "とうぶん",
+      "meaning_en": "~ equal portions"
+    },
+    {
+      "word_id": "n2_0056",
+      "word_number": 56,
+      "kanji": "＋等分[する]",
+      "furigana": "とうぶん",
+      "meaning_en": "equal portions, divide equally"
+    },
+    {
+      "word_id": "n2_0057",
+      "word_number": 57,
+      "kanji": "めいめい",
+      "furigana": "めいめい",
+      "meaning_en": "individual, respective"
+    },
+    {
+      "word_id": "n2_0058",
+      "word_number": 58,
+      "kanji": "豪華な",
+      "furigana": "ごうかな",
+      "meaning_en": "gorgeous"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 7,
+  "title": "Topic 14",
+  "japanese_text": "実家がある町は住宅<u>密集</u>地域で、家と家の間隔が狭く、道幅もとても狭い。しかし、消防署の周りだけは救急車などの緊急<u>車両</u>が<u>出動し</u>やすいように、広くなっている。",
+  "english_translation": "The town where my parents live is a crowded residential area, with tight spaces between houses and very narrow streets. However, the area around the fire station is wide enough to allow ambulances and other emergency vehicles to be dispatched easily.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1180",
+      "word_number": 1180,
+      "kanji": "密集する",
+      "furigana": "みっしゅうする",
+      "meaning_en": "dense population, be crowded"
+    },
+    {
+      "word_id": "n1_1181",
+      "word_number": 1181,
+      "kanji": "車両",
+      "furigana": "しゃりょう",
+      "meaning_en": "vehicle"
+    },
+    {
+      "word_id": "n1_1182",
+      "word_number": 1182,
+      "kanji": "出動する",
+      "furigana": "しゅつどうする",
+      "meaning_en": "dispatch, send out"
+    }
+  ]
+}

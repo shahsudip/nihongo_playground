@@ -1,0 +1,65 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 1 食事",
+  "japanese_text": "日本の米は、品種によって<u>粒</u>の大きさ、<u>甘み</u>、<u>食感</u>が異なる。\n300 g の少量<u>パック</u>も売っているので、いろいろと試してみるのもいいだろう。保存するときは、温かいうちに<u>１人前</u>ずつ<u>ラップ</u>で包むのが大切だ。<u>冷めたら</u>さらに<u>アルミホイル</u>で包んで冷凍庫に入れれば、おいしいまま冷凍できる。",
+  "english_translation": "Japanese rice varies in grain size, sweetness, and texture, depending on the variety. Small 300 gram packs are available, so it's a good idea to try different varieties. When storing rice, it's important to wrap it in single portions in plastic wrap while it's still warm. After they cool, wrap them in aluminum foil and put them in the freezer to freeze them while they are still full of flavor.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0004",
+      "word_number": 4,
+      "kanji": "粒",
+      "furigana": "つぶ",
+      "meaning_en": "grain/米粒/hat"
+    },
+    {
+      "word_id": "n2_0005",
+      "word_number": 5,
+      "kanji": "～み",
+      "furigana": "",
+      "meaning_en": "~ness/~味/vi~"
+    },
+    {
+      "word_id": "n2_0006",
+      "word_number": 6,
+      "kanji": "パック[する]",
+      "furigana": "",
+      "meaning_en": "pack, package/包[打包]/gói, đóng gói"
+    },
+    {
+      "word_id": "n2_0007",
+      "word_number": 7,
+      "kanji": "～人前",
+      "furigana": "～にんまえ",
+      "meaning_en": "portion/~人份/phần ~ người"
+    },
+    {
+      "word_id": "n2_0008",
+      "word_number": 8,
+      "kanji": "ラップ[する]",
+      "furigana": "",
+      "meaning_en": "plastic wrap, to wrap/保鲜膜[封保鲜膜]/màng bọc thực phẩm, bọc lại"
+    },
+    {
+      "word_id": "n2_0009",
+      "word_number": 9,
+      "kanji": "冷める",
+      "furigana": "さめる",
+      "meaning_en": "cool down/凉/nguội"
+    },
+    {
+      "word_id": "n2_0010",
+      "word_number": 10,
+      "kanji": "冷ます",
+      "furigana": "さます",
+      "meaning_en": "cool (something) down/冷却/làm nguội"
+    },
+    {
+      "word_id": "n2_0011",
+      "word_number": 11,
+      "kanji": "アルミホイル",
+      "furigana": "",
+      "meaning_en": "aluminum foil/铝箔纸/giấy tráng nhôm"
+    }
+  ]
+}

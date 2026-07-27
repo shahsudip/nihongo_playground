@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 25",
+  "japanese_text": "先日、ある地域で幼い子どもが<u>誘拐</u>される事件が発生した。<u>追跡</u>する過程で<u>さら</u>われた子どもは無事に保護されたものの、依然として犯人の<u>捜索</u>は続いている。",
+  "english_translation": "Recently, an incident occurred in which a young child was abducted in certain area. As the case was pursued, the kidnapped child was safely recovered, but the search for the perpetrators is still ongoing.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2374",
+      "word_number": 2374,
+      "kanji": "誘拐[する]",
+      "furigana": "ゆうかい",
+      "meaning_en": "abduction, abduct"
+    },
+    {
+      "word_id": "n1_2375",
+      "word_number": 2375,
+      "kanji": "追跡[する]",
+      "furigana": "ついせき",
+      "meaning_en": "pursuit, pursue"
+    },
+    {
+      "word_id": "n1_2376",
+      "word_number": 2376,
+      "kanji": "さらう",
+      "furigana": "",
+      "meaning_en": "carry away, kidnap"
+    },
+    {
+      "word_id": "n1_2377",
+      "word_number": 2377,
+      "kanji": "捜索[する]",
+      "furigana": "そうさく",
+      "meaning_en": "search, search"
+    }
+  ]
+}

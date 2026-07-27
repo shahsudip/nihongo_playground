@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 27",
+  "japanese_text": "<u>衛星</u>とは、<u>惑星</u>などの周りを移動し、<u>かつ</u>、人工でないものを指す。人の手によって作られた衛星は人工衛星と呼び、気象観測や地球温暖化の<u>証拠</u>を集めることに利用されている。",
+  "english_translation": "A natural satellite is anything that moves around a planet or other celestial body, and moreover, is not human-made. Human-made satellites are called artificial satellites, and are used to observe the weather and collect evidence of global warming.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2503",
+      "word_number": 2503,
+      "kanji": "衛星",
+      "furigana": "えいせい",
+      "meaning_en": "natural satellite"
+    },
+    {
+      "word_id": "n1_2504",
+      "word_number": 2504,
+      "kanji": "惑星",
+      "furigana": "わくせい",
+      "meaning_en": "planet"
+    },
+    {
+      "word_id": "n1_2505",
+      "word_number": 2505,
+      "kanji": "かつ",
+      "furigana": "かつ",
+      "meaning_en": "and, moreover"
+    },
+    {
+      "word_id": "n1_2506",
+      "word_number": 2506,
+      "kanji": "証拠",
+      "furigana": "しょうこ",
+      "meaning_en": "evidence"
+    }
+  ]
+}

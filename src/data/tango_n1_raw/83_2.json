@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 7",
+  "japanese_text": "A：本日は、<u>占い</u>の本で<u>ベストセラー</u> <u>連発の</u>、あの<u>著名な</u>先生を<u>スタジオ</u>にお招きしています。\nB：これから先生には、ゲストのみなさまの<u>姓名</u>をもとに<u>予言</u>をしていただきます。",
+  "english_translation": "A: Today, we've invited to our studio a distinguished expert who has released a succession of bestsellers about fortune telling. B: This expert is going to make predictions based on the full names of our guests.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0506",
+      "word_number": 506,
+      "kanji": "占い",
+      "furigana": "うらない",
+      "meaning_en": "fortune telling"
+    },
+    {
+      "word_id": "n1_0507",
+      "word_number": 507,
+      "kanji": "ベストセラー",
+      "furigana": "ベストセラー",
+      "meaning_en": "bestseller"
+    },
+    {
+      "word_id": "n1_0508",
+      "word_number": 508,
+      "kanji": "連発",
+      "furigana": "れんぱつ",
+      "meaning_en": "consecutive release, release a succession"
+    },
+    {
+      "word_id": "n1_0509",
+      "word_number": 509,
+      "kanji": "著名な",
+      "furigana": "ちょめいな",
+      "meaning_en": "distinguished"
+    },
+    {
+      "word_id": "n1_0510",
+      "word_number": 510,
+      "kanji": "スタジオ",
+      "furigana": "スタジオ",
+      "meaning_en": "studio"
+    },
+    {
+      "word_id": "n1_0511",
+      "word_number": 511,
+      "kanji": "姓名",
+      "furigana": "せいめい",
+      "meaning_en": "full name"
+    },
+    {
+      "word_id": "n1_0512",
+      "word_number": 512,
+      "kanji": "予言",
+      "furigana": "よげん",
+      "meaning_en": "prediction, predict"
+    }
+  ]
+}

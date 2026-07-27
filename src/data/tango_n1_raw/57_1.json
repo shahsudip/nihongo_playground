@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 5",
+  "japanese_text": "<u>タブレット</u>ＰＣの<u>バッテリー</u>が完全に<u>消耗して</u>しまった。店の人に相談して<u>下取りして</u>もらったところ、新品を安く購入できた。",
+  "english_translation": "The battery in my tablet PC is completely depleted. I talked to the guy at the store and asked to trade it in so I could buy a new one at a discount.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0312",
+      "word_number": 312,
+      "kanji": "タブレット",
+      "furigana": "",
+      "meaning_en": "tablet"
+    },
+    {
+      "word_id": "n1_0313",
+      "word_number": 313,
+      "kanji": "バッテリー",
+      "furigana": "",
+      "meaning_en": "battery"
+    },
+    {
+      "word_id": "n1_0314",
+      "word_number": 314,
+      "kanji": "消耗",
+      "furigana": "しょうもう",
+      "meaning_en": "consumption, deplete"
+    },
+    {
+      "word_id": "n1_0315",
+      "word_number": 315,
+      "kanji": "下取り",
+      "furigana": "したどり",
+      "meaning_en": "trade-in, trade in"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 27",
+  "japanese_text": "今回発表された人工ダイヤモンドを素材に使った電子回路は、他の<u>類似</u>したものと異なり、新たな手法を用いて開発された点で画期的である。<u>仮に</u>この回路が実用化されれば、競争上<u>優位</u>に立つことは間違いないだろう。",
+  "english_translation": "The recently announced electronic circuit made from synthetic diamonds is groundbreaking. Unlike other similar products, it was developed using a new method. Tentatively, if this circuit were to be put to practical use, it would certainly give the company a superior competitive advantage.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2551",
+      "word_number": 2551,
+      "kanji": "類似[する]",
+      "furigana": "るいじ",
+      "meaning_en": "similarity, be similar"
+    },
+    {
+      "word_id": "n1_2552",
+      "word_number": 2552,
+      "kanji": "仮に",
+      "furigana": "かりに",
+      "meaning_en": "tentatively"
+    },
+    {
+      "word_id": "n1_2553",
+      "word_number": 2553,
+      "kanji": "優位な",
+      "furigana": "ゆういな",
+      "meaning_en": "superior"
+    }
+  ]
+}

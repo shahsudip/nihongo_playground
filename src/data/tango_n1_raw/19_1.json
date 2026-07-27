@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 1",
+  "japanese_text": "健康<u>志向</u>の彼女は、レストランの<u>下調べ</u>を欠かさない。一緒に食事に行けば<u>終始</u>健康についての話ばかりする。",
+  "english_translation": "She is a health-conscious person, and she's always studying up on restaurants. When we go out to eat together, she talks about health constantly.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0040",
+      "word_number": 40,
+      "kanji": "志向",
+      "furigana": "しこう",
+      "meaning_en": "consciousness, orientation"
+    },
+    {
+      "word_id": "n1_0041",
+      "word_number": 41,
+      "kanji": "下調べ",
+      "furigana": "したしらべ",
+      "meaning_en": "advance research, study up"
+    },
+    {
+      "word_id": "n1_0042",
+      "word_number": 42,
+      "kanji": "終始",
+      "furigana": "しゅうし",
+      "meaning_en": "constantly"
+    }
+  ]
+}

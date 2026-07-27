@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 4",
+  "japanese_text": "Ａ：このレインウェアは、はっ水と防水の両方の機能を持っています。はっ水とは水を<u>はじく</u>こと、防水は水を通さないことです。厳しい基準に<u>合致した</u>ものにだけ付けられるマークも付いています。\nＢ：他の色やサイズを<u>取り寄せる</u>こともできますか。",
+  "english_translation": "A: This rainwear is both hassui and bosui. Hassui means that it repels water, and bosui means it does not allow water to pass through it. It also bears an exclusive mark for meeting strict standards.\nB: Can you order in other colors and sizes?",
+  "annotated_words": [
+    {
+      "word_id": "n1_0234",
+      "word_number": 234,
+      "kanji": "はじく",
+      "furigana": "",
+      "meaning_en": "repel, shed"
+    },
+    {
+      "word_id": "n1_0235",
+      "word_number": 235,
+      "kanji": "合致[する]",
+      "furigana": "がっち[する]",
+      "meaning_en": "compliance, meet"
+    },
+    {
+      "word_id": "n1_0236",
+      "word_number": 236,
+      "kanji": "取り寄せる",
+      "furigana": "とりよせる",
+      "meaning_en": "order in"
+    }
+  ]
+}

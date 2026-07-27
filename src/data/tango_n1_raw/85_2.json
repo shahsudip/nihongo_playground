@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 7,
+  "title": "Topic 7",
+  "japanese_text": "この度、このような<u>名誉な</u>賞をいただくことができたのは、私の考えに<u>共鳴し</u>、支えてくださったみなさまのおかげです。<u>うぬぼれる</u>ことなく、これからも謙虚な姿勢で努力を続けたいと思います。",
+  "english_translation": "It is thanks to everyone who sympathized with my approach and supported me that I have been honored with this prestigious award. Without being conceited, I hope to continue my efforts with a humble attitude.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0524",
+      "word_number": 524,
+      "kanji": "名誉な",
+      "furigana": "めいよな",
+      "meaning_en": "prestigious"
+    },
+    {
+      "word_id": "n1_0525",
+      "word_number": 525,
+      "kanji": "共鳴",
+      "furigana": "きょうめい",
+      "meaning_en": "resonance, sympathize"
+    },
+    {
+      "word_id": "n1_0526",
+      "word_number": 526,
+      "kanji": "うぬぼれる",
+      "furigana": "うぬぼれる",
+      "meaning_en": "be conceited"
+    },
+    {
+      "word_id": "n1_0527",
+      "word_number": 527,
+      "kanji": "うぬぼれ",
+      "furigana": "うぬぼれ",
+      "meaning_en": "conceit, pride"
+    }
+  ]
+}

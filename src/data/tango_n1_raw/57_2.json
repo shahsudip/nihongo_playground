@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 13,
+  "title": "Topic 5",
+  "japanese_text": "端末の動作を<u>操る</u>ような<u>サイバー攻撃</u>に遭った際は、<u>戸惑う</u>ことなくネットの接続を<u>切断し</u>、端末を強制終了させることを推奨する。",
+  "english_translation": "If you encounter a cyberattack that manipulates your terminal’s operations, the best course is to disconnect from the internet and forcibly shut down your terminal without hesitating.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0316",
+      "word_number": 316,
+      "kanji": "操る",
+      "furigana": "あやつる",
+      "meaning_en": "manipulate"
+    },
+    {
+      "word_id": "n1_0317",
+      "word_number": 317,
+      "kanji": "サイバー攻撃",
+      "furigana": "こうげき",
+      "meaning_en": "cyberattack"
+    },
+    {
+      "word_id": "n1_0318",
+      "word_number": 318,
+      "kanji": "戸惑う",
+      "furigana": "とまどう",
+      "meaning_en": "hesitate"
+    },
+    {
+      "word_id": "n1_0319",
+      "word_number": 319,
+      "kanji": "戸惑い",
+      "furigana": "とまどい",
+      "meaning_en": "confusion"
+    },
+    {
+      "word_id": "n1_0320",
+      "word_number": 320,
+      "kanji": "切断",
+      "furigana": "せつだん",
+      "meaning_en": "disconnection, sever"
+    }
+  ]
+}

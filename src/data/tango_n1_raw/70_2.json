@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 6",
+  "japanese_text": "<u>待望の</u>新型ゲーム機が発表されるやいなや、旧型機を<u>しのぐ</u>数の予約が<u>殺到した</u>。それから２年が経っても<u>在庫</u>はほとんどなく、<u>入手</u>が困難な状態が続いた。",
+  "english_translation": "As soon as the eagerly awaited new video game console was announced, reservations flooded in, surpassing those for the older model. Two years later, there was still almost no stock, and it remained difficult to obtain one.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0410",
+      "word_number": 410,
+      "kanji": "待望する",
+      "furigana": "たいぼう",
+      "meaning_en": "anticipation, eagerly await"
+    },
+    {
+      "word_id": "n1_0411",
+      "word_number": 411,
+      "kanji": "しのぐ",
+      "furigana": "",
+      "meaning_en": "overtake, surpass"
+    },
+    {
+      "word_id": "n1_0412",
+      "word_number": 412,
+      "kanji": "殺到する",
+      "furigana": "さっとう",
+      "meaning_en": "rush, flood"
+    },
+    {
+      "word_id": "n1_0413",
+      "word_number": 413,
+      "kanji": "在庫",
+      "furigana": "ざいこ",
+      "meaning_en": "stock"
+    },
+    {
+      "word_id": "n1_0414",
+      "word_number": 414,
+      "kanji": "入手する",
+      "furigana": "にゅうしゅ",
+      "meaning_en": "acquisition, obtain"
+    }
+  ]
+}

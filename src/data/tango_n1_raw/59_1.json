@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 16,
+  "title": "Topic 5",
+  "japanese_text": "さまざまな<u>媒体</u>でＡＩが人間をサポートするようになってきた。これは古いものが<u>廃れる</u>と同時に、<u>無知な</u>人間が時代に取り残されていくことを意味する。",
+  "english_translation": "AI has come to support humans in various media. This means that older things are becoming obsolete and at the same time, ignorant people are being left behind by the times.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0328",
+      "word_number": 328,
+      "kanji": "媒体",
+      "furigana": "ばいたい",
+      "meaning_en": "form, medium"
+    },
+    {
+      "word_id": "n1_0329",
+      "word_number": 329,
+      "kanji": "廃れる",
+      "furigana": "すたれる",
+      "meaning_en": "become obsolete"
+    },
+    {
+      "word_id": "n1_0330",
+      "word_number": 330,
+      "kanji": "無知な",
+      "furigana": "むちな",
+      "meaning_en": "ignorant"
+    }
+  ]
+}

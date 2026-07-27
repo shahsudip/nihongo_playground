@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 2",
+  "japanese_text": "A：新しい恋人はどう？\nB：優しい人だよ。連絡も<u>まめ</u>できれい好きだし。\nA：それはポイント高いね。\nB：でも、きれい好きすぎてさ…。部屋に<u>ちり</u>一つ落ちてるのも嫌みたい。私は掃除とか<u>雑な</u>方だから。",
+  "english_translation": "A: How's your new partner? B: Great, actually. Easygoing, diligent about keeping in touch, and likes everything clean. A: That's great. B: But there's such a thing as too clean. Even a speck of dust in the room is too much, apparently. When it comes to cleaning, I'm a little more careless.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0079",
+      "word_number": 79,
+      "kanji": "まめな",
+      "furigana": "まめな",
+      "meaning_en": "diligent"
+    },
+    {
+      "word_id": "n1_0080",
+      "word_number": 80,
+      "kanji": "ちり",
+      "furigana": "ちり",
+      "meaning_en": "dirt, dust"
+    },
+    {
+      "word_id": "n1_0081",
+      "word_number": 81,
+      "kanji": "雑な",
+      "furigana": "ざつな",
+      "meaning_en": "careless"
+    }
+  ]
+}

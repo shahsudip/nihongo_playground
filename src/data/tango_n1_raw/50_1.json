@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 15,
+  "title": "Topic 4",
+  "japanese_text": "人によって似合う色の服は異なるが、その人に一番似合う色のことをパーソナルカラーという。その<u>起源</u>はアメリカだが、日本でも話題になっている。調べてみたところ、私は明るい緑や赤など、<u>鮮やかな</u>色がよく似合うが、茶色など、<u>渋い</u>色はあまり似合わないようだ。",
+  "english_translation": "Different people look good clothed in different colors, but the colors that most suit a person are known as their personal colors. This idea has its origin in the U.S., but has become a hot topic in Japan as well. I've researched it and found that vivid colors such as bright green and red really suit me, while brown and other austere colors don't seem to suit me as well.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0258",
+      "word_number": 258,
+      "kanji": "起源",
+      "furigana": "きげん",
+      "meaning_en": "origin"
+    },
+    {
+      "word_id": "n1_0259",
+      "word_number": 259,
+      "kanji": "鮮やかな",
+      "furigana": "あざやかな",
+      "meaning_en": "vivid"
+    },
+    {
+      "word_id": "n1_0260",
+      "word_number": 260,
+      "kanji": "渋い",
+      "furigana": "しぶい",
+      "meaning_en": "austere, restrained"
+    }
+  ]
+}

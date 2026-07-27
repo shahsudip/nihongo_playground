@@ -1,0 +1,65 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 2",
+  "japanese_text": "友人が結婚した。しかし幸せな<u>日々</u>も<u>つかの間</u>、今では同じ空間にいることさえ<u>煩わしい</u>らしく、<u>直感</u>で結婚相手を選んだことをひどく<u>嘆いて</u>いる。短い時間でその人の<u>本質</u>を<u>見抜く</u>ことはなかなか難しいようだ。",
+  "english_translation": "My friend got married. However, those happy days were short-lived, and now she finds it irritating even being in the same space as him. She deeply regrets relying on intuition to choose a marriage partner. It's not easy to discern a person's true nature in a short period of time.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0123",
+      "word_number": 123,
+      "kanji": "日々",
+      "furigana": "ひび",
+      "meaning_en": "days, daily"
+    },
+    {
+      "word_id": "n1_0124",
+      "word_number": 124,
+      "kanji": "つかの間",
+      "furigana": "つかのま",
+      "meaning_en": "short-lived (moment)"
+    },
+    {
+      "word_id": "n1_0125",
+      "word_number": 125,
+      "kanji": "煩わしい",
+      "furigana": "わずらわしい",
+      "meaning_en": "irritating"
+    },
+    {
+      "word_id": "n1_0126",
+      "word_number": 126,
+      "kanji": "直感",
+      "furigana": "ちょっかん",
+      "meaning_en": "intuition"
+    },
+    {
+      "word_id": "n1_0127",
+      "word_number": 127,
+      "kanji": "嘆く",
+      "furigana": "なげく",
+      "meaning_en": "lament, regret"
+    },
+    {
+      "word_id": "n1_0128",
+      "word_number": 128,
+      "kanji": "本質",
+      "furigana": "ほんしつ",
+      "meaning_en": "essence, true nature"
+    },
+    {
+      "word_id": "n1_0129",
+      "word_number": 129,
+      "kanji": "本質的な",
+      "furigana": "ほんしつてきな",
+      "meaning_en": "essential"
+    },
+    {
+      "word_id": "n1_0130",
+      "word_number": 130,
+      "kanji": "見抜く",
+      "furigana": "みぬく",
+      "meaning_en": "discern"
+    }
+  ]
+}

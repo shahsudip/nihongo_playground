@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 24",
+  "japanese_text": "<u>制裁</u>措置が<u>発動</u>されたことで、その国の<u>貿易</u>は大きく落ち込んだ。<u>輸出</u>品目の多くが<u>禁輸</u>となり、<u>経済的</u>な<u>打撃</u>は深刻だ。",
+  "english_translation": "The imposition of sanctions caused a significant decline in the country's trade. Many export items became subject to an embargo, and the economic blow has been severe.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2292",
+      "word_number": 2292,
+      "kanji": "制裁",
+      "furigana": "せいさい",
+      "meaning_en": "sanction, penalty"
+    },
+    {
+      "word_id": "n1_2293",
+      "word_number": 2293,
+      "kanji": "発動[する]",
+      "furigana": "はつどう",
+      "meaning_en": "invocation, invoke"
+    },
+    {
+      "word_id": "n1_2294",
+      "word_number": 2294,
+      "kanji": "貿易[する]",
+      "furigana": "ぼうえき",
+      "meaning_en": "trade, conduct trade"
+    },
+    {
+      "word_id": "n1_2295",
+      "word_number": 2295,
+      "kanji": "輸出[する]",
+      "furigana": "ゆしゅつ",
+      "meaning_en": "export, export"
+    },
+    {
+      "word_id": "n1_2296",
+      "word_number": 2296,
+      "kanji": "禁輸",
+      "furigana": "きんゆ",
+      "meaning_en": "embargo, trade ban"
+    },
+    {
+      "word_id": "n1_2297",
+      "word_number": 2297,
+      "kanji": "打撃",
+      "furigana": "だげき",
+      "meaning_en": "blow, damage"
+    }
+  ]
+}

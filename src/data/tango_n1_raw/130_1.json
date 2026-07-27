@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 11",
+  "japanese_text": "バスケットボールでは、ゴールが外れたとき、先にボールに<u>接触するか</u>、<u>キャッチする</u>ことが重視される。有名な漫画にも「<u>リバウンド</u>を<u>制する</u>者は試合を制す」という言葉が出てくるほどだ。",
+  "english_translation": "In basketball, the emphasis is on being the first to make contact with the ball or catch it when a goal is missed. There is even a famous saying that goes, \"The one who controls the rebound controls the game.\"",
+  "annotated_words": [
+    {
+      "word_id": "n1_0854",
+      "word_number": 854,
+      "kanji": "接触[する]",
+      "furigana": "せっしょく",
+      "meaning_en": "contact, make contact"
+    },
+    {
+      "word_id": "n1_0855",
+      "word_number": 855,
+      "kanji": "キャッチ[する]",
+      "furigana": "きゃっち",
+      "meaning_en": "catch, catch"
+    },
+    {
+      "word_id": "n1_0856",
+      "word_number": 856,
+      "kanji": "リバウンド[する]",
+      "furigana": "りばうんど",
+      "meaning_en": "rebound, rebound"
+    },
+    {
+      "word_id": "n1_0857",
+      "word_number": 857,
+      "kanji": "制する",
+      "furigana": "せいする",
+      "meaning_en": "control"
+    }
+  ]
+}

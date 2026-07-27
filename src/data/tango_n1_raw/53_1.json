@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 5",
+  "japanese_text": "アンケートアプリを使って<u>フォーム</u>を作成し、データを<u>フィルター</u>処理して<u>分割する</u>ことで、効率的なデータ処理が実現できる。",
+  "english_translation": "Using a survey app, you can create forms, filter and divide data, and process data efficiently.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0276",
+      "word_number": 276,
+      "kanji": "フォーム",
+      "furigana": "",
+      "meaning_en": "form"
+    },
+    {
+      "word_id": "n1_0277",
+      "word_number": 277,
+      "kanji": "フィルター",
+      "furigana": "",
+      "meaning_en": "filter"
+    },
+    {
+      "word_id": "n1_0278",
+      "word_number": 278,
+      "kanji": "分割",
+      "furigana": "ぶんかつ",
+      "meaning_en": "segment, divide"
+    }
+  ]
+}

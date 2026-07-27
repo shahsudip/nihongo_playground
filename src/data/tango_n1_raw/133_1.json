@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 11",
+  "japanese_text": "［弓道］<u>弓</u>を<u>射る</u>と、矢は<u>一筋</u>の<u>軌道</u>を描いて<u>的</u>に刺さった。",
+  "english_translation": "[Japanese Archery] When the bow is shot, the arrow strikes the target in a straight-line trajectory.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0885",
+      "word_number": 885,
+      "kanji": "弓",
+      "furigana": "ゆみ",
+      "meaning_en": "bow"
+    },
+    {
+      "word_id": "n1_0886",
+      "word_number": 886,
+      "kanji": "射る",
+      "furigana": "いる",
+      "meaning_en": "shoot"
+    },
+    {
+      "word_id": "n1_0887",
+      "word_number": 887,
+      "kanji": "一筋",
+      "furigana": "ひとすじ",
+      "meaning_en": "single mind, straight line"
+    },
+    {
+      "word_id": "n1_0888",
+      "word_number": 888,
+      "kanji": "軌道",
+      "furigana": "きどう",
+      "meaning_en": "trajectory"
+    },
+    {
+      "word_id": "n1_0889",
+      "word_number": 889,
+      "kanji": "的",
+      "furigana": "まと",
+      "meaning_en": "target"
+    }
+  ]
+}

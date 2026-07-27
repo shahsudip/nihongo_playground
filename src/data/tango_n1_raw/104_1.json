@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 9",
+  "japanese_text": "友達の恋人の<u>浮気</u>現場を目撃し、<u>憤り</u>を感じて2人を追いかけ、声をかけた。しかし、振り向いたら<u>人違い</u>だったことが分かり、<u>平謝りする</u>しかなかった。",
+  "english_translation": "I witnessed my friend's partner cheating, and feeling outraged, I chased after the two of them and called out to them. However, when she turned around, I saw that I'd mistaken her for someone else and I had to apologize profusely.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0668",
+      "word_number": 668,
+      "kanji": "浮気",
+      "furigana": "うわき",
+      "meaning_en": "adultery, cheat"
+    },
+    {
+      "word_id": "n1_0669",
+      "word_number": 669,
+      "kanji": "憤り",
+      "furigana": "いきどおり",
+      "meaning_en": "outrage"
+    },
+    {
+      "word_id": "n1_0670",
+      "word_number": 670,
+      "kanji": "人違い",
+      "furigana": "ひとちがい",
+      "meaning_en": "mistake someone for someone else"
+    },
+    {
+      "word_id": "n1_0671",
+      "word_number": 671,
+      "kanji": "平謝り",
+      "furigana": "ひらあやまり",
+      "meaning_en": "profuse apology, apologize profusely"
+    }
+  ]
+}

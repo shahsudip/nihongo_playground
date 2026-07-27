@@ -1,0 +1,16 @@
+{
+  "is_story": true,
+  "story_number": 15,
+  "title": "Topic 22",
+  "japanese_text": "イベント会社であるＡ社はＢ社と<u>合併して</u>から<u>目覚ましい</u>発展を遂げ、2010年代は<u>繁栄</u>を<u>極めて</u>いた。だが、新型コロナウイルス感染症の流行によりイベントの開催が制限されると、一気に赤字に<u>転落した</u>。コロナによって<u>後退した</u>が、特にイベント産業は<u>もろかった</u>。",
+  "english_translation": "Company A, an events company, had achieved remarkable growth since merging with Company B and had attained great prosperity in the 2010s. However, when the outbreak of COVID-19 limited the company's ability to hold events, it quickly fell into the red. COVID-19 caused an economic recession, but the events industry was particularly fragile.",
+  "annotated_words": [
+    { "word_id": "n1_2120", "word_number": 2120, "kanji": "合併する", "furigana": "がっぺいする", "meaning_en": "merger, merge" },
+    { "word_id": "n1_2121", "word_number": 2121, "kanji": "目覚ましい", "furigana": "めざましい", "meaning_en": "remarkable" },
+    { "word_id": "n1_2122", "word_number": 2122, "kanji": "繁栄する", "furigana": "はんえいする", "meaning_en": "prosperity, prosper" },
+    { "word_id": "n1_2123", "word_number": 2123, "kanji": "極める", "furigana": "きわめる", "meaning_en": "attain" },
+    { "word_id": "n1_2124", "word_number": 2124, "kanji": "転落する", "furigana": "てんらくする", "meaning_en": "fall" },
+    { "word_id": "n1_2125", "word_number": 2125, "kanji": "後退する", "furigana": "こうたいする", "meaning_en": "recession, hold back" },
+    { "word_id": "n1_2126", "word_number": 2126, "kanji": "もろい", "furigana": "もろい", "meaning_en": "fragile" }
+  ]
+}

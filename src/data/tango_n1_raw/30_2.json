@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 2",
+  "japanese_text": "A：弟が一人暮らしを始めてからすごく変わったんだよね。\nB：そんなに？\nA：前まではお金に<u>いい加減な</u>ところがあって、よく無駄遣いしてたんだけどね、今は貯金もしてすごく<u>質素な</u>生活送ってるんだよ！<u>自立し</u>たいからって<u>仕送り</u>も断ったみたい。",
+  "english_translation": "A: My brother has changed a lot since he started living by himself. B: Really? A: He used to be a bit careless and wasteful with money, but now he saves money and lives a very frugal life! Apparently, he even refused an allowance because he wants to be independent.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0119",
+      "word_number": 119,
+      "kanji": "いい加減な",
+      "furigana": "いいかげんな",
+      "meaning_en": "careless"
+    },
+    {
+      "word_id": "n1_0120",
+      "word_number": 120,
+      "kanji": "質素な",
+      "furigana": "しっそな",
+      "meaning_en": "frugal"
+    },
+    {
+      "word_id": "n1_0121",
+      "word_number": 121,
+      "kanji": "自立",
+      "furigana": "じりつ",
+      "meaning_en": "independence, be independent"
+    },
+    {
+      "word_id": "n1_0122",
+      "word_number": 122,
+      "kanji": "仕送り",
+      "furigana": "しおくり",
+      "meaning_en": "(monetary) allowance"
+    }
+  ]
+}

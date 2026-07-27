@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 13,
+  "title": "Topic 7",
+  "japanese_text": "A：いてて…。\nB：どうしたの？\nA：昨日、<u>結成</u>当初からずっと応援してるバンドの<u>野外</u>ライブに行ったんだけど、<u>ひたすら</u>腕を振ってたから<u>筋肉痛</u>で…。\nB：へえ、楽しかったんだね。\nA：うん。チケットの<u>倍率</u>がすごく高いんだけど、偶然当たってさ。<u>アンコール</u>では一番好きな曲も歌ってくれて、本当に幸せ…。",
+  "english_translation": "A: Ouch ... B: What's wrong? A: Yesterday, I went to an outdoor concert by a band I've supported since they formed, and now I have muscle pain from all my enthusiastic arm-waving ... B: Wow, you must have had fun. A: Yeah. There was a lot of competition for tickets, so I was lucky to get them. They sang my favorite song for the encore, and I was really happy ...",
+  "annotated_words": [
+    {
+      "word_id": "n1_0554",
+      "word_number": 554,
+      "kanji": "結成",
+      "furigana": "けっせい",
+      "meaning_en": "formation, form"
+    },
+    {
+      "word_id": "n1_0555",
+      "word_number": 555,
+      "kanji": "野外",
+      "furigana": "やがい",
+      "meaning_en": "outdoors"
+    },
+    {
+      "word_id": "n1_0556",
+      "word_number": 556,
+      "kanji": "ひたすら",
+      "furigana": "ひたすら",
+      "meaning_en": "enthusiastically"
+    },
+    {
+      "word_id": "n1_0557",
+      "word_number": 557,
+      "kanji": "筋肉痛",
+      "furigana": "きんにくつう",
+      "meaning_en": "muscle pain"
+    },
+    {
+      "word_id": "n1_0558",
+      "word_number": 558,
+      "kanji": "倍率",
+      "furigana": "ばいりつ",
+      "meaning_en": "competition"
+    },
+    {
+      "word_id": "n1_0559",
+      "word_number": 559,
+      "kanji": "アンコール",
+      "furigana": "アンコール",
+      "meaning_en": "encore"
+    }
+  ]
+}

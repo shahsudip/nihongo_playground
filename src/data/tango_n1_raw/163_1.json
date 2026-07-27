@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 13",
+  "japanese_text": "A：引っ越しの<u>荷造り</u>終わったよ。\nB：<u>それにしては</u>片付いてない物が多いけど。本当に大丈夫？\nA：これはリサイクルショップに持って行くやつだから心配しないで。\nB：ならいいけど。<u>念</u>のため、部屋の<u>戸締まり</u>を確認するときに、忘れ物がないか確認してね。",
+  "english_translation": "A: I've finished packing for the move. B: Even so, it looks like a lot of stuff hasn't been put away. Are you sure you're really okay? A: These are the things I'm taking to the recycling place, so don't worry. B: Well, that's fine then. But when you lock the door, make sure you haven't forgotten anything, just in case.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1126",
+      "word_number": 1126,
+      "kanji": "荷造り",
+      "furigana": "にづくり",
+      "meaning_en": "packing, pack"
+    },
+    {
+      "word_id": "n1_1127",
+      "word_number": 1127,
+      "kanji": "それにしては",
+      "furigana": "",
+      "meaning_en": "even so, considering"
+    },
+    {
+      "word_id": "n1_1128",
+      "word_number": 1128,
+      "kanji": "念",
+      "furigana": "ねん",
+      "meaning_en": "attention, case"
+    },
+    {
+      "word_id": "n1_1129",
+      "word_number": 1129,
+      "kanji": "戸締まり",
+      "furigana": "とじまり",
+      "meaning_en": "locking (doors or windows)"
+    }
+  ]
+}

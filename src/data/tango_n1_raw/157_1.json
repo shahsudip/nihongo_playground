@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 13",
+  "japanese_text": "壁に家具を<u>据え付ける</u>際には壁の<u>補強</u>が必要な場合がある。補強が不十分だと、壁が家具の重さに<u>耐える</u>ことができず<u>落下し</u>てしまう恐れがあり、危険である。",
+  "english_translation": "When attaching furniture to a wall, the wall may require reinforcement. If not adequately reinforced, the wall may be unable to bear the weight of the furniture and it may fall, which is dangerous.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1077",
+      "word_number": 1077,
+      "kanji": "据え付ける",
+      "furigana": "すえつける",
+      "meaning_en": "attach, mount"
+    },
+    {
+      "word_id": "n1_1078",
+      "word_number": 1078,
+      "kanji": "補強",
+      "furigana": "ほきょう",
+      "meaning_en": "reinforcement, reinforce"
+    },
+    {
+      "word_id": "n1_1079",
+      "word_number": 1079,
+      "kanji": "耐える",
+      "furigana": "たえる",
+      "meaning_en": "bear, withstand"
+    },
+    {
+      "word_id": "n1_1080",
+      "word_number": 1080,
+      "kanji": "落下",
+      "furigana": "らっか",
+      "meaning_en": "drop, fall over"
+    }
+  ]
+}

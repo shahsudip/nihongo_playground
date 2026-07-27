@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 2",
+  "japanese_text": "A：最近仕事が忙しそうだけど、引っ越しの準備は<u>はかどって</u>る？\nB：だいぶ片付いたかな。でもキッチンの汚れが落ちなくて。どれだけ拭いても<u>べたべたする</u>んだよね。\nA：この際<u>業者</u>に頼んだら？掃除の<u>エキスパート</u>だから、汚れ一つ<u>見落とさず</u>にきれいにしてくれるよ。",
+  "english_translation": "A: You seem so busy with work these days. Are you making progress with getting ready for moving? B: I think I'm pretty much finished. But I can't clean the kitchen properly. No matter how much I wipe it down, it still feels sticky. A: Why not hire a contractor at this point? They're experts in cleaning, so they'll clean it up without missing a single stain.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0091",
+      "word_number": 91,
+      "kanji": "はかどる",
+      "furigana": "はかどる",
+      "meaning_en": "make progress"
+    },
+    {
+      "word_id": "n1_0092",
+      "word_number": 92,
+      "kanji": "べたべた",
+      "furigana": "べたべた",
+      "meaning_en": "stickiness, be sticky"
+    },
+    {
+      "word_id": "n1_0093",
+      "word_number": 93,
+      "kanji": "業者",
+      "furigana": "ぎょうしゃ",
+      "meaning_en": "contractor"
+    },
+    {
+      "word_id": "n1_0094",
+      "word_number": 94,
+      "kanji": "エキスパート",
+      "furigana": "エキスパート",
+      "meaning_en": "expert"
+    },
+    {
+      "word_id": "n1_0095",
+      "word_number": 95,
+      "kanji": "見落とす",
+      "furigana": "みおとす",
+      "meaning_en": "miss, overlook"
+    }
+  ]
+}

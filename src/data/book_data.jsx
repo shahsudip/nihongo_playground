@@ -1,4 +1,4 @@
-export const sampleBooks = [
+﻿export const sampleBooks = [
   {
     "id": "sou-matome-n3-reading",
     "title": "JLPT Sou Matome N3 Reading Comprehension",
@@ -9773,5 +9773,179 @@ export const sampleBooks = [
         ]
       }
     ]
+  },
+  {
+    "id": "tango_n1",
+    "title": "Tango N1 1000 Words",
+    "description": "Master advanced N1 vocabulary with reading passages.",
+    "coverUrl": "/images/tango_n1.jpg",
+    "level": "N1",
+    "category": "Reading",
+    "chapters": [
+      {
+        "id": "topic_01",
+        "title": "Topic 1: 食事",
+        "type": "reading",
+        "description": "Eating"
+      },
+      {
+        "id": "topic_02",
+        "title": "Topic 2: 家事",
+        "type": "reading",
+        "description": "Housework"
+      },
+      {
+        "id": "topic_03",
+        "title": "Topic 3: 買い物",
+        "type": "reading",
+        "description": "Shopping"
+      },
+      {
+        "id": "topic_04",
+        "title": "Topic 4: ファッション",
+        "type": "reading",
+        "description": "Fashion"
+      },
+      {
+        "id": "topic_05",
+        "title": "Topic 5: テクノロジー",
+        "type": "reading",
+        "description": "Technology"
+      },
+      {
+        "id": "topic_06",
+        "title": "Topic 6: 流行",
+        "type": "reading",
+        "description": "Trends"
+      },
+      {
+        "id": "topic_07",
+        "title": "Topic 7: 趣味",
+        "type": "reading",
+        "description": "Hobbies"
+      },
+      {
+        "id": "topic_08",
+        "title": "Topic 8: 言語",
+        "type": "reading",
+        "description": "Language"
+      },
+      {
+        "id": "topic_09",
+        "title": "Topic 9: 人間関係",
+        "type": "reading",
+        "description": "Interpersonal Relations"
+      },
+      {
+        "id": "topic_10",
+        "title": "Topic 10: 年中行事・文化",
+        "type": "reading",
+        "description": "Annual Events & Culture"
+      },
+      {
+        "id": "topic_11",
+        "title": "Topic 11: スポーツ",
+        "type": "reading",
+        "description": "Sports"
+      },
+      {
+        "id": "topic_12",
+        "title": "Topic 12: 動物",
+        "type": "reading",
+        "description": "Animals"
+      },
+      {
+        "id": "topic_13",
+        "title": "Topic 13: 住",
+        "type": "reading",
+        "description": "Housing"
+      },
+      {
+        "id": "topic_14",
+        "title": "Topic 14: 町",
+        "type": "reading",
+        "description": "Cities"
+      },
+      {
+        "id": "topic_15",
+        "title": "Topic 15: 天気",
+        "type": "reading",
+        "description": "Weather"
+      },
+      {
+        "id": "topic_16",
+        "title": "Topic 16: 旅行",
+        "type": "reading",
+        "description": "Travel"
+      },
+      {
+        "id": "topic_17",
+        "title": "Topic 17: 学校",
+        "type": "reading",
+        "description": "School"
+      },
+      {
+        "id": "topic_18",
+        "title": "Topic 18: 仕事",
+        "type": "reading",
+        "description": "Work"
+      },
+      {
+        "id": "topic_19",
+        "title": "Topic 19: 人生",
+        "type": "reading",
+        "description": "Life"
+      },
+      {
+        "id": "topic_20",
+        "title": "Topic 20: 健康",
+        "type": "reading",
+        "description": "Health"
+      },
+      {
+        "id": "topic_21",
+        "title": "Topic 21: マナー",
+        "type": "reading",
+        "description": "Manners"
+      },
+      {
+        "id": "topic_22",
+        "title": "Topic 22: 社会",
+        "type": "reading",
+        "description": "Society"
+      },
+      {
+        "id": "topic_23",
+        "title": "Topic 23: 産業",
+        "type": "reading",
+        "description": "Industry"
+      },
+      {
+        "id": "topic_24",
+        "title": "Topic 24: 政治・軍事",
+        "type": "reading",
+        "description": "Politics"
+      },
+      {
+        "id": "topic_25",
+        "title": "Topic 25: 法律・事件",
+        "type": "reading",
+        "description": "Legal Affairs & Cases"
+      },
+      {
+        "id": "topic_26",
+        "title": "Topic 26: 環境",
+        "type": "reading",
+        "description": "Environment"
+      },
+      {
+        "id": "topic_27",
+        "title": "Topic 27: 科学",
+        "type": "reading",
+        "description": "Science"
+      }
+    ]
   }
 ];
+
+

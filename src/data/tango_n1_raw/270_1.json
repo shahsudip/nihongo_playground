@@ -1,0 +1,65 @@
+{
+  "is_story": true,
+  "story_number": 15,
+  "title": "Topic 20",
+  "japanese_text": "先月、親戚が交通事故で<u>負傷し</u>、病院に<u>搬送された</u>。かなりのけがで、あと少し遅かったら<u>手遅れ</u>だったそうだ。しばらくは<u>横になっている</u>ことしかできなかったが、その後の<u>リハビリ</u>によって、今では少し<u>まひ</u>が残っているものの、<u>つえ</u>を使って歩けるようになるまで回復した。",
+  "english_translation": "Last month, a relative of mine was injured in a traffic accident and was taken to hospital. He was quite badly injured and if treatment had been delayed any more, it would have been too late. For a while, all he could do was lie down, but with rehabilitation, he has recovered to the point of walking with a cane, although he still has a little paralysis.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1916",
+      "word_number": 1916,
+      "kanji": "負傷[する]",
+      "furigana": "ふしょう",
+      "meaning_en": "injury, be injured"
+    },
+    {
+      "word_id": "n1_1917",
+      "word_number": 1917,
+      "kanji": "搬送[する]",
+      "furigana": "はんそう",
+      "meaning_en": "transportation, take"
+    },
+    {
+      "word_id": "n1_1918",
+      "word_number": 1918,
+      "kanji": "手遅れ",
+      "furigana": "ておくれ",
+      "meaning_en": "being too late, past curing (dying)"
+    },
+    {
+      "word_id": "n1_1919",
+      "word_number": 1919,
+      "kanji": "横になる",
+      "furigana": "よこになる",
+      "meaning_en": "lie down"
+    },
+    {
+      "word_id": "n1_1920",
+      "word_number": 1920,
+      "kanji": "横たわる",
+      "furigana": "よこたわる",
+      "meaning_en": "lie down, stretch out"
+    },
+    {
+      "word_id": "n1_1921",
+      "word_number": 1921,
+      "kanji": "リハビリ[する]",
+      "furigana": "",
+      "meaning_en": "rehabilitation, rehabilitate"
+    },
+    {
+      "word_id": "n1_1922",
+      "word_number": 1922,
+      "kanji": "まひ[する]",
+      "furigana": "",
+      "meaning_en": "paralysis, be paralyzed"
+    },
+    {
+      "word_id": "n1_1923",
+      "word_number": 1923,
+      "kanji": "つえ",
+      "furigana": "",
+      "meaning_en": "cane"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 14",
+  "japanese_text": "私の住む町は<u>のどかな</u>場所だが、<u>自衛隊</u>の基地が近くにあるため騒音に悩まされている。さらに、来月には開発事業の<u>一環</u>として<u>複合</u>施設の建設が<u>着工される</u>ため、<u>クレーン</u>の音などが問題になりそうだ。この騒音問題を、今度の町の<u>総会</u>で話し合おうと思う。",
+  "english_translation": "My town is a peaceful place, but it suffers from noise because of the nearby Self-Defense Forces base. In addition, construction of a complex is scheduled to start next month as part of a development project, so the noise from cranes is likely to become a problem. We intend to discuss the noise problem at the upcoming general meeting of the town.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1195",
+      "word_number": 1195,
+      "kanji": "のどかな",
+      "furigana": "のどかな",
+      "meaning_en": "peaceful"
+    },
+    {
+      "word_id": "n1_1196",
+      "word_number": 1196,
+      "kanji": "自衛隊",
+      "furigana": "じえいたい",
+      "meaning_en": "Self-Defense Forces (of Japan)"
+    },
+    {
+      "word_id": "n1_1198",
+      "word_number": 1198,
+      "kanji": "一環",
+      "furigana": "いっかん",
+      "meaning_en": "part (of)"
+    },
+    {
+      "word_id": "n1_1199",
+      "word_number": 1199,
+      "kanji": "複合",
+      "furigana": "ふくごう",
+      "meaning_en": "complex, compound"
+    },
+    {
+      "word_id": "n1_1201",
+      "word_number": 1201,
+      "kanji": "着工する",
+      "furigana": "ちゃっこうする",
+      "meaning_en": "starting construction, start to construct"
+    },
+    {
+      "word_id": "n1_1202",
+      "word_number": 1202,
+      "kanji": "クレーン",
+      "furigana": "クレーン",
+      "meaning_en": "crane"
+    },
+    {
+      "word_id": "n1_1203",
+      "word_number": 1203,
+      "kanji": "総会",
+      "furigana": "そうかい",
+      "meaning_en": "general meeting"
+    }
+  ]
+}

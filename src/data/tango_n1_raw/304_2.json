@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 23",
+  "japanese_text": "日本の<u>鉱物</u>資源は、種類は多いが量は少ない。1900年代初めの日本では金の<u>採掘</u>が盛んに行われていたが、採掘を続けていると、まとまった量の金が取れなくなってしまう。その結果、<u>採算</u>が合わなくなり、多くの<u>鉱山</u>が閉山した。",
+  "english_translation": "Japan's mineral resources are diverse but scarce in quantity. Gold mining was actively undertaken in Japan in the early 1900s, but if mining was to continue, it would no longer have been possible to mine large quantities of gold. As a result, it became unprofitable and many mines were closed.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2172",
+      "word_number": 2172,
+      "kanji": "鉱物",
+      "furigana": "こうぶつ",
+      "meaning_en": "mineral"
+    },
+    {
+      "word_id": "n1_2173",
+      "word_number": 2173,
+      "kanji": "採掘",
+      "furigana": "さいくつ",
+      "meaning_en": "mining, mine"
+    },
+    {
+      "word_id": "n1_2174",
+      "word_number": 2174,
+      "kanji": "採算",
+      "furigana": "さいさん",
+      "meaning_en": "profit"
+    },
+    {
+      "word_id": "n1_2175",
+      "word_number": 2175,
+      "kanji": "鉱山",
+      "furigana": "こうざん",
+      "meaning_en": "mine"
+    }
+  ]
+}

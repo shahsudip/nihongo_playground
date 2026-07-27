@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 14,
+  "title": "Topic 5",
+  "japanese_text": "ＡＩを利用する際は、個人のデータが利用されるのかなど、<u>規約</u>を<u>詳細に</u>、<u>じっくりと</u>確認する必要がある。",
+  "english_translation": "When using AI, you need to check the terms and conditions in detail and carefully, including whether your personal data will be used.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0321",
+      "word_number": 321,
+      "kanji": "規約",
+      "furigana": "きやく",
+      "meaning_en": "terms and conditions"
+    },
+    {
+      "word_id": "n1_0322",
+      "word_number": 322,
+      "kanji": "詳細な",
+      "furigana": "しょうさいな",
+      "meaning_en": "detailed"
+    },
+    {
+      "word_id": "n1_0323",
+      "word_number": 323,
+      "kanji": "じっくり(と)",
+      "furigana": "",
+      "meaning_en": "carefully, without haste"
+    }
+  ]
+}

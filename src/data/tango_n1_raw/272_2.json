@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 19,
+  "title": "Topic 20",
+  "japanese_text": "この研究者は、<u>人体</u>の不思議に魅せられて研究を続け、<u>生理</u>現象の一つである<u>まばたき</u>に、単に目を潤すだけでなく、脳を<u>リセットする</u>働きもあることを明らかにした。",
+  "english_translation": "Fascinated by the wonders of the human body, the researcher continued his studies and discovered that blinking, a physiological phenomenon, not only moistens the eyes but also resets the brain.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1937",
+      "word_number": 1937,
+      "kanji": "人体",
+      "furigana": "じんたい",
+      "meaning_en": "human body"
+    },
+    {
+      "word_id": "n1_1938",
+      "word_number": 1938,
+      "kanji": "生理",
+      "furigana": "せいり",
+      "meaning_en": "physiology"
+    },
+    {
+      "word_id": "n1_1939",
+      "word_number": 1939,
+      "kanji": "まばたき[する]",
+      "furigana": "",
+      "meaning_en": "blinking, blink"
+    },
+    {
+      "word_id": "n1_1940",
+      "word_number": 1940,
+      "kanji": "リセット[する]",
+      "furigana": "",
+      "meaning_en": "reset, reset"
+    }
+  ]
+}

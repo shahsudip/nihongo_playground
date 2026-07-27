@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 25",
+  "japanese_text": "本日<u>未明</u>、山の中で<u>身元</u>不明の３人の死体が見つかった。３人は親子であると見られ、無理<u>心中</u>ではないかと言われているが、証拠がなく<u>真相</u>は闇の中である。",
+  "english_translation": "At dawn today, three bodies, whose identities are unclear, were found in the mountains. All three are believed to be related, and there is speculation that it was a forced group suicide, but there is no evidence and the truth remains unknown.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2370",
+      "word_number": 2370,
+      "kanji": "未明",
+      "furigana": "みめい",
+      "meaning_en": "dawn"
+    },
+    {
+      "word_id": "n1_2371",
+      "word_number": 2371,
+      "kanji": "身元",
+      "furigana": "みもと",
+      "meaning_en": "identity"
+    },
+    {
+      "word_id": "n1_2372",
+      "word_number": 2372,
+      "kanji": "心中[する]",
+      "furigana": "しんじゅう",
+      "meaning_en": "double suicide, group suicide"
+    },
+    {
+      "word_id": "n1_2373",
+      "word_number": 2373,
+      "kanji": "真相",
+      "furigana": "しんそう",
+      "meaning_en": "truth"
+    }
+  ]
+}

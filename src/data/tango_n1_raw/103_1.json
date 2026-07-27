@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 9",
+  "japanese_text": "彼は時間に<u>ルーズで</u>度々仲間を<u>いら立たせて</u>いるが、どこか<u>憎めない</u>、<u>人懐っこい</u>性格なので、嫌われることもなく今もマイペースに生きている。",
+  "english_translation": "He is rather loose with time and often irritates others, but he is somehow impossible to hate and quite amiable, so no-one dislikes him and he just goes along at his own pace.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0660",
+      "word_number": 660,
+      "kanji": "ルーズな",
+      "furigana": "ルーズな",
+      "meaning_en": "loose"
+    },
+    {
+      "word_id": "n1_0661",
+      "word_number": 661,
+      "kanji": "いら立つ",
+      "furigana": "いらだつ",
+      "meaning_en": "irritate"
+    },
+    {
+      "word_id": "n1_0662",
+      "word_number": 662,
+      "kanji": "憎む",
+      "furigana": "にくむ",
+      "meaning_en": "hate"
+    },
+    {
+      "word_id": "n1_0664",
+      "word_number": 664,
+      "kanji": "人懐っこい",
+      "furigana": "ひとなつっこい",
+      "meaning_en": "amiable"
+    }
+  ]
+}

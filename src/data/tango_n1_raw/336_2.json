@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 14,
+  "title": "Topic 25",
+  "japanese_text": "この保険が<u>適用される</u>ためには<u>所定</u>の書類に必要<u>事項</u>を記入のうえ、保険会社へ申請することが求められる。",
+  "english_translation": "To be covered by this insurance, you need to fill out the necessary items on the prescribed form, then apply to the insurance company.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2433",
+      "word_number": 2433,
+      "kanji": "適用[する]",
+      "furigana": "てきよう",
+      "meaning_en": "application, cover"
+    },
+    {
+      "word_id": "n1_2434",
+      "word_number": 2434,
+      "kanji": "所定",
+      "furigana": "しょてい",
+      "meaning_en": "prescribed (something)"
+    },
+    {
+      "word_id": "n1_2435",
+      "word_number": 2435,
+      "kanji": "事項",
+      "furigana": "じこう",
+      "meaning_en": "item, point"
+    }
+  ]
+}

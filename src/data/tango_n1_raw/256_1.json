@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 26,
+  "title": "Topic 19",
+  "japanese_text": "私は<u>楽天的な</u>性格で、将来に対する<u>展望</u>を持っておらず、高校卒業後の進路も<u>成り行き</u>に任せて、<u>生計</u>が立てられればどんな仕事でもいいと思っていた。あまり調べずに会社を選んだ結果、就職先は<u>余暇</u>を楽しむことができないほど忙しく、上司は人の心に<u>土足</u>で<u>踏み込んで</u>くるような人で、私は入社して半年で辞めてしまった。",
+  "english_translation": "I used to be an optimistic person, and I never had a clear outlook on the future. After graduating from high school, I let things take their course and thought that any job would be fine as long as I could make a living. I chose a job without doing much research, but the company I worked for was so busy I couldn't enjoy any leisure time, and my boss was the kind of person who would trample on your heart with his muddy feet. So I quit after six months.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1815",
+      "word_number": 1815,
+      "kanji": "楽天的な",
+      "furigana": "らくてんてきな",
+      "meaning_en": "optimistic"
+    },
+    {
+      "word_id": "n1_1816",
+      "word_number": 1816,
+      "kanji": "展望[する]",
+      "furigana": "てんぼう",
+      "meaning_en": "outlook, have a view"
+    },
+    {
+      "word_id": "n1_1817",
+      "word_number": 1817,
+      "kanji": "成り行き",
+      "furigana": "なりゆき",
+      "meaning_en": "course (of events)"
+    },
+    {
+      "word_id": "n1_1818",
+      "word_number": 1818,
+      "kanji": "生計",
+      "furigana": "せいけい",
+      "meaning_en": "living, livelihood"
+    },
+    {
+      "word_id": "n1_1819",
+      "word_number": 1819,
+      "kanji": "余暇",
+      "furigana": "よか",
+      "meaning_en": "free time, leisure time"
+    },
+    {
+      "word_id": "n1_1820",
+      "word_number": 1820,
+      "kanji": "土足",
+      "furigana": "どそく",
+      "meaning_en": "muddy feet, outdoor shoes"
+    },
+    {
+      "word_id": "n1_1821",
+      "word_number": 1821,
+      "kanji": "踏み込む",
+      "furigana": "ふみこむ",
+      "meaning_en": "step on, trample"
+    }
+  ]
+}

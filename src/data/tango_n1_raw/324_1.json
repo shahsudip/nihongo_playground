@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 26",
+  "japanese_text": "近年、インターネット上での<u>詐欺</u>が増加しており、<u>被害者</u>の数も年々増えている。<u>巧妙な</u>手口で<u>騙された</u>人々の多くは、<u>損害賠償</u>を求めて訴訟を起こすが、犯人を<u>特定</u>するのは困難だ。",
+  "english_translation": "In recent years, online fraud has been increasing, and the number of victims grows year by year. Many people who were deceived by sophisticated schemes file lawsuits seeking compensation for damages, but identifying the perpetrators is difficult.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2444",
+      "word_number": 2444,
+      "kanji": "詐欺",
+      "furigana": "さぎ",
+      "meaning_en": "fraud, scam"
+    },
+    {
+      "word_id": "n1_2445",
+      "word_number": 2445,
+      "kanji": "巧妙な",
+      "furigana": "こうみょうな",
+      "meaning_en": "sophisticated, clever"
+    },
+    {
+      "word_id": "n1_2446",
+      "word_number": 2446,
+      "kanji": "騙す",
+      "furigana": "だます",
+      "meaning_en": "deceive, trick"
+    },
+    {
+      "word_id": "n1_2447",
+      "word_number": 2447,
+      "kanji": "損害賠償",
+      "furigana": "そんがいばいしょう",
+      "meaning_en": "compensation for damages"
+    },
+    {
+      "word_id": "n1_2448",
+      "word_number": 2448,
+      "kanji": "特定[する]",
+      "furigana": "とくてい",
+      "meaning_en": "identification, identify"
+    }
+  ]
+}

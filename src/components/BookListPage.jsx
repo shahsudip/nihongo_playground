@@ -14,6 +14,7 @@ import coverN4N5 from '../assets/shin_cover_n4n5.jpg';
 import powerDrillN1 from '../assets/power_drill_n1_cover.jpg';
 import powerDrillN2 from '../assets/power_drill_n2_cover.jpg';
 import powerDrillN3 from '../assets/power_drill_n3_cover.jpg';
+import tangoN1Cover from '../assets/tango_n1_cover.jpg';
 
 const BookListPage = () => {
   const { currentUser } = useAuth();
@@ -54,7 +55,9 @@ const BookListPage = () => {
         'shinkanzen-master-n3-reading',
         'nihongo-power-drill-n1',
         'nihongo-power-drill-n2',
-        'nihongo-power-drill-n3'
+        'nihongo-power-drill-n3',
+        'tango_n1',
+        'tango_n2'
       ];
       
       booksSnap.forEach(docSnap => {
@@ -72,7 +75,9 @@ const BookListPage = () => {
         'shinkanzen-master-n3-reading': 5,
         'nihongo-power-drill-n1': 6,
         'nihongo-power-drill-n2': 7,
-        'nihongo-power-drill-n3': 8
+        'nihongo-power-drill-n3': 8,
+        'tango_n1': 9,
+        'tango_n2': 10
       };
       fetchedBooks.sort((a, b) => (levelOrder[a.id] || 99) - (levelOrder[b.id] || 99));
       /* -------------------------------------------------------- */
@@ -94,13 +99,18 @@ const BookListPage = () => {
       // Let's populate the chapters list for each book
       const booksWithChapters = await Promise.all(
         fetchedBooks.map(async (book) => {
-          const chaptersColRef = collection(db, 'books', book.id, 'chapters');
+          // Support both 'chapters' (standard books) and 'topics' (Tango books) schemas
+          const subColName = (book.id && book.id.startsWith('tango')) ? 'topics' : 'chapters';
+          const chaptersColRef = collection(db, 'books', book.id || 'unknown', subColName);
+          console.log(`Fetching ${subColName} for book: ${book.id}`);
           const chaptersSnap = await getDocs(chaptersColRef);
           
           let chapters = [];
           chaptersSnap.forEach(chapSnap => {
             chapters.push({ id: chapSnap.id, ...chapSnap.data() });
           });
+          
+          console.log(`Fetched ${chapters.length} ${subColName} for book: ${book.id}`);
 
           // Fallback to local chapters if Firestore subcollection is empty
           if (chapters.length === 0) {
@@ -131,7 +141,7 @@ const BookListPage = () => {
       }
     } catch (err) {
       console.error("Error fetching books/progress:", err);
-      setError("Failed to load books. Please try again.");
+      setError(`Failed to load books: ${err.message}`);
     } finally {
       setLoading(false);
     }
@@ -209,6 +219,7 @@ const BookListPage = () => {
             'nihongo-power-drill-n1': powerDrillN1,
             'nihongo-power-drill-n2': powerDrillN2,
             'nihongo-power-drill-n3': powerDrillN3,
+            'tango_n1': tangoN1Cover,
           };
           const coverImg = bookCovers[book.id];
           const levelGradients = {

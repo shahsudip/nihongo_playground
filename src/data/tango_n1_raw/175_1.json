@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 15",
+  "japanese_text": "雪が<u>舞う</u>季節になると<u>悩ましい</u>のは、窓ガラスいっぱいの<u>水滴</u>だ。<u>とりわけ</u>子ども部屋がひどく、<u>時折</u>窓を開けても結露してしまう。",
+  "english_translation": "When the snow starts swirling around, the most annoying thing is the droplets of water that cover form on the window panes. The children's rooms are particularly bad, and even if I open the window now and again, condensation forms.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1209",
+      "word_number": 1209,
+      "kanji": "舞う",
+      "furigana": "まう",
+      "meaning_en": "flutter, swirl"
+    },
+    {
+      "word_id": "n1_1210",
+      "word_number": 1210,
+      "kanji": "悩ましい",
+      "furigana": "なやましい",
+      "meaning_en": "annoying"
+    },
+    {
+      "word_id": "n1_1211",
+      "word_number": 1211,
+      "kanji": "水滴",
+      "furigana": "すいてき",
+      "meaning_en": "droplet"
+    },
+    {
+      "word_id": "n1_1212",
+      "word_number": 1212,
+      "kanji": "とりわけ",
+      "furigana": "とりわけ",
+      "meaning_en": "particularly"
+    },
+    {
+      "word_id": "n1_1213",
+      "word_number": 1213,
+      "kanji": "時折",
+      "furigana": "ときおり",
+      "meaning_en": "occasionally, now and again"
+    }
+  ]
+}

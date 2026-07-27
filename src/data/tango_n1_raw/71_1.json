@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 6",
+  "japanese_text": "子どもの頃、「ドラえもん」が掲載されている<u>分厚い</u>月<u>刊</u>漫画雑誌が<u>刊行されて</u>いた。おもちゃの<u>付録</u>も魅力的だった。発売日には、お小遣いを<u>握り締めて</u>、本屋に走ったものだ。",
+  "english_translation": "When I was a child, there was a thick manga publication, released monthly, that featured the character Doraemon. The toy supplement was also very appealing to me. On the day it was released, I would run to the bookstore grasping my allowance in hand.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0415",
+      "word_number": 415,
+      "kanji": "分厚い",
+      "furigana": "ぶあつ",
+      "meaning_en": "thick"
+    },
+    {
+      "word_id": "n1_0416",
+      "word_number": 416,
+      "kanji": "～刊",
+      "furigana": "かん",
+      "meaning_en": "released ~ (weekly, monthly, etc.)"
+    },
+    {
+      "word_id": "n1_0417",
+      "word_number": 417,
+      "kanji": "刊行する",
+      "furigana": "かんこう",
+      "meaning_en": "publication, publish"
+    },
+    {
+      "word_id": "n1_0418",
+      "word_number": 418,
+      "kanji": "付録",
+      "furigana": "ふろく",
+      "meaning_en": "supplement"
+    },
+    {
+      "word_id": "n1_0419",
+      "word_number": 419,
+      "kanji": "握り締める",
+      "furigana": "にぎりしめる",
+      "meaning_en": "grasp, squeeze"
+    }
+  ]
+}

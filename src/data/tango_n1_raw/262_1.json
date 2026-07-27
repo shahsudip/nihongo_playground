@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 20",
+  "japanese_text": "家事をする人の中には、洗剤等による<u>手のひら</u>の<u>かぶれ</u>に悩む人が多い。軽症でも、放っておくと<u>慢性化</u>し、悪化する恐れもある。<u>ケア</u>を<u>おろそかに</u>せず、こまめにクリームを塗ったり、洗い物の際は手袋をしたりすることが肝心だ。",
+  "english_translation": "Many people who do housework suffer from rashes on their palms caused by detergents or other chemicals. Even mild cases can become chronic and get worse if left untreated. It is important not to neglect proper care, but to apply cream frequently and to wear gloves when washing dishes.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1852",
+      "word_number": 1852,
+      "kanji": "手のひら",
+      "furigana": "てのひら",
+      "meaning_en": "palm (of the hand)"
+    },
+    {
+      "word_id": "n1_1853",
+      "word_number": 1853,
+      "kanji": "かぶれる",
+      "furigana": "",
+      "meaning_en": "develop a rash"
+    },
+    {
+      "word_id": "n1_1854",
+      "word_number": 1854,
+      "kanji": "慢性化[する]",
+      "furigana": "まんせいか[する]",
+      "meaning_en": "becoming chronic, become chronic"
+    },
+    {
+      "word_id": "n1_1855",
+      "word_number": 1855,
+      "kanji": "ケア[する]",
+      "furigana": "",
+      "meaning_en": "care, care"
+    },
+    {
+      "word_id": "n1_1856",
+      "word_number": 1856,
+      "kanji": "おろそかな",
+      "furigana": "",
+      "meaning_en": "neglectful"
+    }
+  ]
+}

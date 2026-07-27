@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 24,
+  "title": "Topic 5",
+  "japanese_text": "ＡＩは我々の生活に深く<u>絡んで</u>きている。一部の人たちは、<u>突如</u>現れた技術に<u>びくびくし</u>ながら、<u>渋々</u>ＡＩを利用しているのかもしれない。",
+  "english_translation": "Our lives have become deeply entangled with AI. Some people may use AI reluctantly, fearful of this technology that has suddenly appeared.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0359",
+      "word_number": 359,
+      "kanji": "絡む",
+      "furigana": "からむ",
+      "meaning_en": "entangle"
+    },
+    {
+      "word_id": "n1_0360",
+      "word_number": 360,
+      "kanji": "突如",
+      "furigana": "とつじょ",
+      "meaning_en": "suddenly"
+    },
+    {
+      "word_id": "n1_0361",
+      "word_number": 361,
+      "kanji": "びくびく(と)",
+      "furigana": "",
+      "meaning_en": "fearfully, nervously"
+    },
+    {
+      "word_id": "n1_0362",
+      "word_number": 362,
+      "kanji": "渋々",
+      "furigana": "しぶしぶ",
+      "meaning_en": "reluctantly"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 12",
+  "japanese_text": "動物の世界では、<u>雄</u>が<u>雌</u>に<u>変身する</u>ような変化は、<u>さほどまれなことではない</u>。<u>繁殖できる</u>ように<u>適応する</u>のである。",
+  "english_translation": "In the animal kingdom, changes such as a male transforming into a female are not so rare. Animals adapt so that they can reproduce.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1007",
+      "word_number": 1007,
+      "kanji": "雄",
+      "furigana": "おす",
+      "meaning_en": "male"
+    },
+    {
+      "word_id": "n1_1008",
+      "word_number": 1008,
+      "kanji": "雌",
+      "furigana": "めす",
+      "meaning_en": "female"
+    },
+    {
+      "word_id": "n1_1009",
+      "word_number": 1009,
+      "kanji": "変身",
+      "furigana": "へんしん",
+      "meaning_en": "transformation, transform"
+    },
+    {
+      "word_id": "n1_1010",
+      "word_number": 1010,
+      "kanji": "さほど～ない",
+      "furigana": "さほど～ない",
+      "meaning_en": "not so ~"
+    },
+    {
+      "word_id": "n1_1011",
+      "word_number": 1011,
+      "kanji": "まれな",
+      "furigana": "まれな",
+      "meaning_en": "rare"
+    },
+    {
+      "word_id": "n1_1012",
+      "word_number": 1012,
+      "kanji": "繁殖",
+      "furigana": "はんしょく",
+      "meaning_en": "reproduction, reproduce"
+    },
+    {
+      "word_id": "n1_1013",
+      "word_number": 1013,
+      "kanji": "適応",
+      "furigana": "てきおう",
+      "meaning_en": "adaption, adapt"
+    }
+  ]
+}

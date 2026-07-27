@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 5",
+  "japanese_text": "A社では新たなCPUの開発に当たり、従来の<u>規格</u>を<u>改良した</u>ことで、<u>回路</u>間を<u>またぐ</u> <u>干渉</u>を防ぐことが可能となり、<u>画期的な</u> <u>仕様</u>を実現した。",
+  "english_translation": "In developing its new CPU, Company A improved on the previous standard, enabling prevention of interference crossing circuits and achieving a revolutionary new design.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0279",
+      "word_number": 279,
+      "kanji": "規格",
+      "furigana": "きかく",
+      "meaning_en": "standard"
+    },
+    {
+      "word_id": "n1_0280",
+      "word_number": 280,
+      "kanji": "改良",
+      "furigana": "かいりょう",
+      "meaning_en": "improvement, improve"
+    },
+    {
+      "word_id": "n1_0281",
+      "word_number": 281,
+      "kanji": "回路",
+      "furigana": "かいろ",
+      "meaning_en": "circuit"
+    },
+    {
+      "word_id": "n1_0282",
+      "word_number": 282,
+      "kanji": "またぐ",
+      "furigana": "",
+      "meaning_en": "cross, span"
+    },
+    {
+      "word_id": "n1_0283",
+      "word_number": 283,
+      "kanji": "干渉",
+      "furigana": "かんしょう",
+      "meaning_en": "interference, interfere"
+    },
+    {
+      "word_id": "n1_0284",
+      "word_number": 284,
+      "kanji": "画期的な",
+      "furigana": "かっきてき",
+      "meaning_en": "radical, revolutionary"
+    },
+    {
+      "word_id": "n1_0285",
+      "word_number": 285,
+      "kanji": "仕様",
+      "furigana": "しよう",
+      "meaning_en": "design, specification"
+    }
+  ]
+}

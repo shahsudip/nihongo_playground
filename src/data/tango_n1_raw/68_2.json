@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 6",
+  "japanese_text": "今は少し<u>下火になって</u>いるが、ロボットものは、日本のアニメーションの<u>類型</u>の一つだ。その特徴は人間が巨大ロボットに乗り込み、<u>操縦する</u>点にある。最初は巨大な怪物と戦っていたが、やがてライバルも同じようにロボットに乗り、ロボット同士が<u>対決する</u>ようになった。",
+  "english_translation": "Robot animation is one type of Japanese animation, although it is on the decline these days. Typically, a human pilots a gigantic robot from inside. At first, these robots fought giant monsters, but eventually their rivals started riding in them as well, and the robots began to face off against each other.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0396",
+      "word_number": 396,
+      "kanji": "下火になる",
+      "furigana": "したび",
+      "meaning_en": "on the decline, go out of fashion"
+    },
+    {
+      "word_id": "n1_0397",
+      "word_number": 397,
+      "kanji": "類型",
+      "furigana": "るいけい",
+      "meaning_en": "type"
+    },
+    {
+      "word_id": "n1_0398",
+      "word_number": 398,
+      "kanji": "操縦する",
+      "furigana": "そうじゅう",
+      "meaning_en": "manipulation, pilot"
+    },
+    {
+      "word_id": "n1_0399",
+      "word_number": 399,
+      "kanji": "対決する",
+      "furigana": "たいけつ",
+      "meaning_en": "confrontation, face off"
+    }
+  ]
+}

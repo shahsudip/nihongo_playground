@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 24",
+  "japanese_text": "今回の<u>内閣</u>改造では、<u>閣僚</u>の半数が入れ替わった。新たに<u>就任した</u>大臣たちは、<u>公約</u>の実現に向けて<u>尽力</u>すると述べた。",
+  "english_translation": "In this cabinet reshuffle, half of the cabinet ministers were replaced. The newly appointed ministers stated that they would devote themselves to fulfilling their election promises.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2254",
+      "word_number": 2254,
+      "kanji": "内閣",
+      "furigana": "ないかく",
+      "meaning_en": "cabinet"
+    },
+    {
+      "word_id": "n1_2255",
+      "word_number": 2255,
+      "kanji": "閣僚",
+      "furigana": "かくりょう",
+      "meaning_en": "cabinet minister"
+    },
+    {
+      "word_id": "n1_2256",
+      "word_number": 2256,
+      "kanji": "就任[する]",
+      "furigana": "しゅうにん",
+      "meaning_en": "inauguration, assume office"
+    },
+    {
+      "word_id": "n1_2257",
+      "word_number": 2257,
+      "kanji": "公約",
+      "furigana": "こうやく",
+      "meaning_en": "election promise, pledge"
+    },
+    {
+      "word_id": "n1_2258",
+      "word_number": 2258,
+      "kanji": "尽力[する]",
+      "furigana": "じんりょく",
+      "meaning_en": "effort, devote oneself"
+    }
+  ]
+}

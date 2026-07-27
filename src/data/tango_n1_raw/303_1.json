@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 23",
+  "japanese_text": "A市には、地域の<u>特産</u>を活用した<u>新規</u>ビジネスに対して、補助金や<u>助成</u>金を支給する<u>独自</u>の制度がある。<u>資金</u>面での<u>制約</u>を受けやすい中小企業や<u>スタートアップ</u>企業が対象となる。",
+  "english_translation": "City A has a unique system that provides subsidies and grants to new businesses that take advantage of local specialty products. Small and medium-sized enterprises and start-ups that are vulnerable to financial constraints are eligible for this program.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2161",
+      "word_number": 2161,
+      "kanji": "特産",
+      "furigana": "とくさん",
+      "meaning_en": "specialty product"
+    },
+    {
+      "word_id": "n1_2162",
+      "word_number": 2162,
+      "kanji": "新規",
+      "furigana": "しんき",
+      "meaning_en": "new"
+    },
+    {
+      "word_id": "n1_2164",
+      "word_number": 2164,
+      "kanji": "助成",
+      "furigana": "じょせい",
+      "meaning_en": "assistance, grant"
+    },
+    {
+      "word_id": "n1_2165",
+      "word_number": 2165,
+      "kanji": "独自",
+      "furigana": "どくじ",
+      "meaning_en": "unique"
+    },
+    {
+      "word_id": "n1_2166",
+      "word_number": 2166,
+      "kanji": "資金",
+      "furigana": "しきん",
+      "meaning_en": "finance, funds"
+    },
+    {
+      "word_id": "n1_2167",
+      "word_number": 2167,
+      "kanji": "制約",
+      "furigana": "せいやく",
+      "meaning_en": "constraint, restrict"
+    },
+    {
+      "word_id": "n1_2168",
+      "word_number": 2168,
+      "kanji": "スタートアップ",
+      "furigana": "",
+      "meaning_en": "start-up"
+    }
+  ]
+}

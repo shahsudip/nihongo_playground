@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 12",
+  "japanese_text": "鳥の親子が川へ向かって並んで歩いていたが、<u>ひな</u>が列を離れ、溝にはまってしまった。しかし、警察と近所の人が<u>万全な</u>態勢で見守っていたため、ひなはすぐに助かった。<u>窮地</u>を<u>脱した</u>親子は再び歩きだし、川を泳いでいった。",
+  "english_translation": "A mother bird and her babies were all walking in a line toward the river when one chick left the line and got stuck in a ditch. However, the police and neighbors were thorough in looking out for them, and the chick was soon saved. After escaping their predicament, mother and babies started walking again and swam into the river.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0975",
+      "word_number": 975,
+      "kanji": "ひな",
+      "furigana": "ひな",
+      "meaning_en": "baby bird, chick"
+    },
+    {
+      "word_id": "n1_0976",
+      "word_number": 976,
+      "kanji": "万全な",
+      "furigana": "ばんぜんな",
+      "meaning_en": "flawless, thorough"
+    },
+    {
+      "word_id": "n1_0977",
+      "word_number": 977,
+      "kanji": "窮地",
+      "furigana": "きゅうち",
+      "meaning_en": "predicament"
+    },
+    {
+      "word_id": "n1_0978",
+      "word_number": 978,
+      "kanji": "脱する",
+      "furigana": "だっする",
+      "meaning_en": "escape"
+    }
+  ]
+}

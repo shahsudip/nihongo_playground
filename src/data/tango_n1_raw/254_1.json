@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 23,
+  "title": "Topic 19",
+  "japanese_text": "最近、田舎の母の体調が悪いそうだ。母の身を<u>案じて</u>、うちの会社では<u>一律</u>65歳と決まっている退職の時期を<u>早め</u>、50歳で早期退職し、田舎に帰って母と暮らすつもりだ。",
+  "english_translation": "Recently, my mother, who lives in the countryside, has been feeling unwell. Concerned for her well-being, I plan to bring forward my retirement, which is set at age 65 across-the-board at my company, and retire early at the age of 50, returning to the countryside to live with my mother.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1799",
+      "word_number": 1799,
+      "kanji": "案じる",
+      "furigana": "あんじる",
+      "meaning_en": "be concerned"
+    },
+    {
+      "word_id": "n1_1800",
+      "word_number": 1800,
+      "kanji": "一律",
+      "furigana": "いちりつ",
+      "meaning_en": "across-the-board, uniform"
+    },
+    {
+      "word_id": "n1_1801",
+      "word_number": 1801,
+      "kanji": "早める",
+      "furigana": "はやめる",
+      "meaning_en": "bring forward"
+    },
+    {
+      "word_id": "n1_1802",
+      "word_number": 1802,
+      "kanji": "早まる",
+      "furigana": "はやまる",
+      "meaning_en": "be moved up, quicken"
+    }
+  ]
+}

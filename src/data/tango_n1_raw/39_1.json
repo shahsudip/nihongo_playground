@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 3",
+  "japanese_text": "コンサート等のチケットを<u>転売</u>目的で購入し、非公式のサイトに高額で<u>出品</u>することは、法律で禁じられている。<u>消費者</u>も、チケットが<u>手元</u>に届かなかったり、<u>無効</u>とされて入場できなかったりといったトラブルに遭う可能性もあるので、チケットは必ず正規のルートで購入すべきだ。",
+  "english_translation": "It is forbidden by law to purchase tickets to concerts and other events for the purpose of resale and to display them for sale on unofficial websites at high prices. Consumers should also be sure to purchase tickets through legitimate channels, as they may face problems such as the tickets not arriving to hand or inability to enter the venue due to them being considered invalid.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0186",
+      "word_number": 186,
+      "kanji": "転売",
+      "furigana": "てんばい",
+      "meaning_en": "resale, resell"
+    },
+    {
+      "word_id": "n1_0187",
+      "word_number": 187,
+      "kanji": "出品",
+      "furigana": "しゅっぴん",
+      "meaning_en": "exhibit, display for sale"
+    },
+    {
+      "word_id": "n1_0188",
+      "word_number": 188,
+      "kanji": "消費者",
+      "furigana": "しょうひしゃ",
+      "meaning_en": "consumer"
+    },
+    {
+      "word_id": "n1_0189",
+      "word_number": 189,
+      "kanji": "手元",
+      "furigana": "てもと",
+      "meaning_en": "to hand"
+    },
+    {
+      "word_id": "n1_0190",
+      "word_number": 190,
+      "kanji": "無効な",
+      "furigana": "むこう",
+      "meaning_en": "invalid"
+    }
+  ]
+}

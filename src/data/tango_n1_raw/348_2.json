@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 27",
+  "japanese_text": "A：おかしいな。この<u>手法</u>で合ってるはずなんだけど。\nB：どうしたの？\nA：<u>細菌</u> <u>群</u>の測定を<u>試み</u>てるんだけどさ、うまく測れなくて。\nB：どれどれ。なんだ。顕微鏡の倍率が違ってるよ。",
+  "english_translation": "A: That's odd. I thought this method would work. B: What's wrong? A: I'm trying to measure the bacterial population, but it won't work. B: Let me see. Hey! The microscope has the wrong magnification.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2531",
+      "word_number": 2531,
+      "kanji": "手法",
+      "furigana": "しゅほう",
+      "meaning_en": "method"
+    },
+    {
+      "word_id": "n1_2532",
+      "word_number": 2532,
+      "kanji": "細菌",
+      "furigana": "さいきん",
+      "meaning_en": "bacteria"
+    },
+    {
+      "word_id": "n1_2533",
+      "word_number": 2533,
+      "kanji": "菌",
+      "furigana": "きん",
+      "meaning_en": "bacteria, germ"
+    },
+    {
+      "word_id": "n1_2534",
+      "word_number": 2534,
+      "kanji": "群",
+      "furigana": "ぐん",
+      "meaning_en": "group, population"
+    },
+    {
+      "word_id": "n1_2535",
+      "word_number": 2535,
+      "kanji": "群衆",
+      "furigana": "ぐんしゅう",
+      "meaning_en": "crowd"
+    },
+    {
+      "word_id": "n1_2536",
+      "word_number": 2536,
+      "kanji": "試みる",
+      "furigana": "こころみる",
+      "meaning_en": "try"
+    },
+    {
+      "word_id": "n1_2537",
+      "word_number": 2537,
+      "kanji": "試み",
+      "furigana": "こころみ",
+      "meaning_en": "attempt"
+    }
+  ]
+}

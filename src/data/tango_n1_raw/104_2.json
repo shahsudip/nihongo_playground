@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 9",
+  "japanese_text": "学生時代、<u>気兼ね</u>なく何でも話せる、友人でも恋人同士でもない<u>間柄</u>の人がいたが、社会人になって忙しくなり、いつのまにか連絡が<u>途絶えて</u>しまっていた。しかし10年後、同窓会で<u>再会し</u>、また連絡を取り始めたことで関係が<u>進展した</u>。",
+  "english_translation": "In my student days, there was someone I could talk to about anything without feeling awkward, but we weren't just friends or romantic partners. When we became working adults, we got busy and somehow lost touch. However, 10 years later, we met again at a reunion, started contacting each other again, and our relationship developed.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0672",
+      "word_number": 672,
+      "kanji": "気兼ね",
+      "furigana": "きがね",
+      "meaning_en": "awkwardness, feel awkward"
+    },
+    {
+      "word_id": "n1_0673",
+      "word_number": 673,
+      "kanji": "間柄",
+      "furigana": "あいだがら",
+      "meaning_en": "relationship, terms"
+    },
+    {
+      "word_id": "n1_0674",
+      "word_number": 674,
+      "kanji": "途絶える",
+      "furigana": "とだえる",
+      "meaning_en": "cut off, lose"
+    },
+    {
+      "word_id": "n1_0675",
+      "word_number": 675,
+      "kanji": "再会",
+      "furigana": "さいかい",
+      "meaning_en": "reunion, meet again"
+    },
+    {
+      "word_id": "n1_0676",
+      "word_number": 676,
+      "kanji": "進展",
+      "furigana": "しんてん",
+      "meaning_en": "progress, develop"
+    }
+  ]
+}

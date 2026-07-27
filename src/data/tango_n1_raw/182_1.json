@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 16",
+  "japanese_text": "1990年、アメリカで<u>燃料</u>切れにより<u>旅客機</u>が<u>墜落</u>し、73名の乗客が亡くなるという事故があった。この事故の大きな原因は、言語の問題により<u>緊急事態</u>であることが伝わっていなかったことである。",
+  "english_translation": "In 1990, in the United States, a passenger plane that had run out of fuel crashed, killing a total of 73 passengers. One major cause of the crash was a language barrier, which prevented people from communicating that it was an emergency.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1270",
+      "word_number": 1270,
+      "kanji": "燃料",
+      "furigana": "ねんりょう",
+      "meaning_en": "fuel"
+    },
+    {
+      "word_id": "n1_1271",
+      "word_number": 1271,
+      "kanji": "旅客機",
+      "furigana": "りょかくき",
+      "meaning_en": "passenger plane"
+    },
+    {
+      "word_id": "n1_1273",
+      "word_number": 1273,
+      "kanji": "墜落",
+      "furigana": "ついらく",
+      "meaning_en": "crash, crash"
+    },
+    {
+      "word_id": "n1_1274",
+      "word_number": 1274,
+      "kanji": "緊急事態",
+      "furigana": "きんきゅうじたい",
+      "meaning_en": "emergency"
+    }
+  ]
+}

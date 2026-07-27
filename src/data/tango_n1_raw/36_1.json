@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 3",
+  "japanese_text": "返品の際は、返品専用<u>ラベル</u>を貼り、指定の<u>返送</u>先へお送りください。未<u>開封</u>の場合、全額<u>返金</u>します。<u>パッケージ</u>を開封済みの場合、商品代金の60%を返金します。",
+  "english_translation": "To return an item, please attach a return label and send it to the designated return address. If the package is unopened, you will receive a full refund. If the package has been opened, 60% of the product price will be refunded.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0160",
+      "word_number": 160,
+      "kanji": "ラベル",
+      "furigana": "",
+      "meaning_en": "label"
+    },
+    {
+      "word_id": "n1_0161",
+      "word_number": 161,
+      "kanji": "返送",
+      "furigana": "へんそう",
+      "meaning_en": "return, return"
+    },
+    {
+      "word_id": "n1_0162",
+      "word_number": 162,
+      "kanji": "開封",
+      "furigana": "かいふう",
+      "meaning_en": "opening, open"
+    },
+    {
+      "word_id": "n1_0163",
+      "word_number": 163,
+      "kanji": "返金",
+      "furigana": "へんきん",
+      "meaning_en": "refund, refund"
+    },
+    {
+      "word_id": "n1_0164",
+      "word_number": 164,
+      "kanji": "パッケージ",
+      "furigana": "",
+      "meaning_en": "package"
+    }
+  ]
+}

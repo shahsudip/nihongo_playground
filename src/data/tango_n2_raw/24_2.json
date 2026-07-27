@@ -1,0 +1,23 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 1 食事",
+  "japanese_text": "「胃下垂」には、食後にお腹の下の方が<u>膨らむ</u>という特徴がある。また、<u>消化不良</u>の原因にもなりうる。",
+  "english_translation": "",
+  "annotated_words": [
+    {
+      "word_id": "n2_0082",
+      "word_number": 82,
+      "kanji": "膨らむ",
+      "furigana": "ふくらむ",
+      "meaning_en": "bloat"
+    },
+    {
+      "word_id": "n2_0083",
+      "word_number": 83,
+      "kanji": "膨らます",
+      "furigana": "ふくらます",
+      "meaning_en": "inflate, expand (something)"
+    }
+  ]
+}

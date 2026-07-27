@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 25",
+  "japanese_text": "A：そういえば、高校通ってたときに学校を<u>爆破する</u>って<u>脅迫</u>騒ぎがあった話ってしたっけ。\nB：いや、<u>初耳</u>だけど。\nA：それが、犯人が実はクラスメートでさ。<u>発覚した</u>ときはびっくりしたなあ。",
+  "english_translation": "A: Hey, did I ever tell you about when I was in high school and there was a big commotion about a threat to bomb the school? B: No, that's the first time I've heard of it. A: Well, the culprit was actually a classmate of mine. I was so surprised when the fact was discovered.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2366",
+      "word_number": 2366,
+      "kanji": "爆破[する]",
+      "furigana": "ばくは",
+      "meaning_en": "bombing, blow up"
+    },
+    {
+      "word_id": "n1_2367",
+      "word_number": 2367,
+      "kanji": "脅迫[する]",
+      "furigana": "きょうはく",
+      "meaning_en": "threat, threaten"
+    },
+    {
+      "word_id": "n1_2368",
+      "word_number": 2368,
+      "kanji": "初耳",
+      "furigana": "はつみみ",
+      "meaning_en": "first time hearing (something)"
+    },
+    {
+      "word_id": "n1_2369",
+      "word_number": 2369,
+      "kanji": "発覚[する]",
+      "furigana": "はっかく",
+      "meaning_en": "finding, discover"
+    }
+  ]
+}

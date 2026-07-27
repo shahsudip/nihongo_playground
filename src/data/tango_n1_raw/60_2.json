@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 19,
+  "title": "Topic 5",
+  "japanese_text": "ＡＩが<u>万能で</u>あるという<u>先入観</u>は<u>真実</u>ではない。ＡＩはプログラムされた範囲内での処理しか行えないため、人間の判断や直感を<u>要する</u>場合もある。",
+  "english_translation": "The preconceived notion that AI is all-powerful is not true. AI can only perform processing within its programmed scope, which sometimes requires human judgment and intuition.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0338",
+      "word_number": 338,
+      "kanji": "万能な",
+      "furigana": "ばんのうな",
+      "meaning_en": "all-powerful"
+    },
+    {
+      "word_id": "n1_0339",
+      "word_number": 339,
+      "kanji": "先入観",
+      "furigana": "せんにゅうかん",
+      "meaning_en": "preconceived notion, preconception"
+    },
+    {
+      "word_id": "n1_0340",
+      "word_number": 340,
+      "kanji": "真実",
+      "furigana": "しんじつ",
+      "meaning_en": "true"
+    },
+    {
+      "word_id": "n1_0341",
+      "word_number": 341,
+      "kanji": "要する",
+      "furigana": "ようする",
+      "meaning_en": "require"
+    }
+  ]
+}

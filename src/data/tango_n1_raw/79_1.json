@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 23,
+  "title": "Topic 6",
+  "japanese_text": "<u>英雄</u>の条件にはいろいろあるが、必ずしも力の強さだけが条件ではない。自分が<u>敵わない</u>ような<u>悪者</u>にも<u>勇敢に</u>立ち向かう。そんな精神的な強さが条件ではないだろうか。",
+  "english_translation": "There are many requirements for a hero, and strength is not necessarily the only one. Heroism also means bravely standing up to villains whom the hero is no match for. This strength of spirit is also a requirement.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0482",
+      "word_number": 482,
+      "kanji": "英雄",
+      "furigana": "えいゆう",
+      "meaning_en": "hero"
+    },
+    {
+      "word_id": "n1_0483",
+      "word_number": 483,
+      "kanji": "敵う",
+      "furigana": "かな",
+      "meaning_en": "match, be a match for"
+    },
+    {
+      "word_id": "n1_0484",
+      "word_number": 484,
+      "kanji": "悪者",
+      "furigana": "わるもの",
+      "meaning_en": "villain"
+    },
+    {
+      "word_id": "n1_0485",
+      "word_number": 485,
+      "kanji": "勇敢な",
+      "furigana": "ゆうかん",
+      "meaning_en": "brave"
+    }
+  ]
+}

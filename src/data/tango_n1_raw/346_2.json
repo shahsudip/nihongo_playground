@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 27",
+  "japanese_text": "A：ねぇ聞いて、前回の研究に<u>匹敵</u>するアイデアが<u>ひらめいた</u>よ！\nB：本当に。それは発表に<u>値する</u>内容なの？\nA：<u>大まかな</u>内容はこれから説明するけど、新しい領域を<u>開拓</u>できると思うよ。",
+  "english_translation": "A: Hey, listen, I suddenly realized I've got an idea that's comparable to my last study! B: Really? Is it worth presenting? A: I'll explain the rough gist of it, but I think it could open up new territory.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2515",
+      "word_number": 2515,
+      "kanji": "匹敵[する]",
+      "furigana": "ひってき",
+      "meaning_en": "equal, be comparable"
+    },
+    {
+      "word_id": "n1_2516",
+      "word_number": 2516,
+      "kanji": "ひらめく",
+      "furigana": "ひらめく",
+      "meaning_en": "suddenly realize"
+    },
+    {
+      "word_id": "n1_2517",
+      "word_number": 2517,
+      "kanji": "値する",
+      "furigana": "あたいする",
+      "meaning_en": "be worth"
+    },
+    {
+      "word_id": "n1_2518",
+      "word_number": 2518,
+      "kanji": "値",
+      "furigana": "あたい",
+      "meaning_en": "value"
+    },
+    {
+      "word_id": "n1_2519",
+      "word_number": 2519,
+      "kanji": "大まかな",
+      "furigana": "おおまかな",
+      "meaning_en": "crude, rough"
+    },
+    {
+      "word_id": "n1_2520",
+      "word_number": 2520,
+      "kanji": "開拓[する]",
+      "furigana": "かいたく",
+      "meaning_en": "pioneering, open up"
+    }
+  ]
+}

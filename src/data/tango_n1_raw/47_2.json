@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 4",
+  "japanese_text": "新しい化粧水を買った。<u>内心</u>、効果を疑っていたが、使ってみたらお肌がよく<u>潤って</u>、気に入った。やはり原料に<u>こだわって</u>作られたものは、いいものだ。",
+  "english_translation": "I bought a new lotion. Inwardly, I was skeptical about its effectiveness, but when I tried it, I found it moisturized my skin very well and I liked it. If the manufacturer is particular about the ingredients, the lotion will be great.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0241",
+      "word_number": 241,
+      "kanji": "内心",
+      "furigana": "ないしん",
+      "meaning_en": "inward"
+    },
+    {
+      "word_id": "n1_0242",
+      "word_number": 242,
+      "kanji": "潤う",
+      "furigana": "うるおう",
+      "meaning_en": "moisturize"
+    },
+    {
+      "word_id": "n1_0243",
+      "word_number": 243,
+      "kanji": "こだわる",
+      "furigana": "",
+      "meaning_en": "be particular about"
+    }
+  ]
+}

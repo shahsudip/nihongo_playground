@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 15",
+  "japanese_text": "先日、雨の中父が車で事故を起こした。父は昔から<u>至って</u>健康だが、<u>歳月</u>とともに年老いているのだと実感した。高齢者の運転が<u>一概に</u>危険だとは言えないが、せめて<u>荒天</u>時は運転を<u>慎む</u>ように提案しようと思う。",
+  "english_translation": "The other day, in rainy conditions, my father had a car accident. My father has always been exceedingly healthy, but it made me realize that he is getting older as the years pass. I can't say unconditionally that driving is dangerous for the elderly, but I hope at least that he refrains from driving in stormy weather.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1223",
+      "word_number": 1223,
+      "kanji": "至って",
+      "furigana": "いたって",
+      "meaning_en": "exceedingly, extremely"
+    },
+    {
+      "word_id": "n1_1224",
+      "word_number": 1224,
+      "kanji": "歳月",
+      "furigana": "さいげつ",
+      "meaning_en": "the years, time"
+    },
+    {
+      "word_id": "n1_1225",
+      "word_number": 1225,
+      "kanji": "一概に～ない",
+      "furigana": "いちがいに～ない",
+      "meaning_en": "not unconditionally"
+    },
+    {
+      "word_id": "n1_1226",
+      "word_number": 1226,
+      "kanji": "荒天",
+      "furigana": "こうてん",
+      "meaning_en": "stormy weather"
+    },
+    {
+      "word_id": "n1_1227",
+      "word_number": 1227,
+      "kanji": "慎む",
+      "furigana": "つつむ",
+      "meaning_en": "refrain from"
+    }
+  ]
+}

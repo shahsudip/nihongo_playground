@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 17",
+  "japanese_text": "小学校ではうさぎを<u>飼育</u>している。うさぎ小屋は、教室がある南<u>棟</u>から離れた場所にあるが、休み時間になると子どもたちが<u>駆け足</u>でやって来る。寒い日には、<u>私物</u>のマフラーをうさぎに巻いてあげる子どももいる。",
+  "english_translation": "The elementary school keeps a few rabbits. The rabbit hutches are located away from the classrooms in the south wing, but children come at a run to visit the hutches at recess time. On cold days, some children wrap their own scarves around the rabbits.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1352",
+      "word_number": 1352,
+      "kanji": "飼育",
+      "furigana": "しいく",
+      "meaning_en": "raising, keep"
+    },
+    {
+      "word_id": "n1_1353",
+      "word_number": 1353,
+      "kanji": "棟",
+      "furigana": "とう",
+      "meaning_en": "annex, wing"
+    },
+    {
+      "word_id": "n1_1354",
+      "word_number": 1354,
+      "kanji": "駆け足",
+      "furigana": "かけあし",
+      "meaning_en": "run, double time"
+    },
+    {
+      "word_id": "n1_1355",
+      "word_number": 1355,
+      "kanji": "私物",
+      "furigana": "しぶつ",
+      "meaning_en": "one's own, personal (belongings)"
+    }
+  ]
+}

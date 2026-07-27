@@ -1,0 +1,65 @@
+{
+  "is_story": true,
+  "story_number": 30,
+  "title": "Topic 9",
+  "japanese_text": "Aさんは<u>きちょうめんな</u>性格で、仕事はきっちりしていたが、陰で人の失敗を<u>あざ笑ったり</u>、自分よりできるBさんのことを<u>妬んで</u>、<u>足を引っ張ったり</u>していた。ある日<u>つじつま</u>の合わないAさんの話に<u>違和感</u>を持った上司が、<u>問い詰め</u>、Bさんに謝らせることで、この件の解決を<u>図った</u>。",
+  "english_translation": "Mr. A had a methodical personality and did his job well, but behind people's backs, he mocked their failures and he often dragged down Mr. B, whom he envied for being more capable. One day, the boss, sensing something wrong in the lack of consistency in Mr. A's stories, interrogated him and tried to settle the matter by making him apologize to Mr. B.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0766",
+      "word_number": 766,
+      "kanji": "きちょうめんな",
+      "furigana": "きちょうめんな",
+      "meaning_en": "methodical"
+    },
+    {
+      "word_id": "n1_0767",
+      "word_number": 767,
+      "kanji": "あざ笑う",
+      "furigana": "あざわらう",
+      "meaning_en": "mock"
+    },
+    {
+      "word_id": "n1_0768",
+      "word_number": 768,
+      "kanji": "妬む",
+      "furigana": "ねたむ",
+      "meaning_en": "envy"
+    },
+    {
+      "word_id": "n1_0769",
+      "word_number": 769,
+      "kanji": "足を引っ張る",
+      "furigana": "あしをひっぱる",
+      "meaning_en": "drag down, hold (someone) back"
+    },
+    {
+      "word_id": "n1_0770",
+      "word_number": 770,
+      "kanji": "つじつま",
+      "furigana": "つじつま",
+      "meaning_en": "consistency"
+    },
+    {
+      "word_id": "n1_0771",
+      "word_number": 771,
+      "kanji": "違和感",
+      "furigana": "いわかん",
+      "meaning_en": "sense of wrongness"
+    },
+    {
+      "word_id": "n1_0772",
+      "word_number": 772,
+      "kanji": "問い詰める",
+      "furigana": "といつめる",
+      "meaning_en": "interrogate"
+    },
+    {
+      "word_id": "n1_0773",
+      "word_number": 773,
+      "kanji": "図る",
+      "furigana": "はかる",
+      "meaning_en": "plan, try"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 1",
+  "japanese_text": "<u>なんだかんだ</u>言っても、結局家でお菓子を<u>つまみ</u>ながら飲むビールが一番疲れを癒し、心を<u>満たして</u>くれる。",
+  "english_translation": "All in all, drinking beer at home while snacking is the best way to relieve fatigue and satisfy oneself.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0023",
+      "word_number": 23,
+      "kanji": "なんだかんだ",
+      "furigana": "なんだかんだ",
+      "meaning_en": "all in all, one thing or other"
+    },
+    {
+      "word_id": "n1_0024",
+      "word_number": 24,
+      "kanji": "つまむ",
+      "furigana": "つまむ",
+      "meaning_en": "snack on"
+    },
+    {
+      "word_id": "n1_0025",
+      "word_number": 25,
+      "kanji": "(お)つまみ",
+      "furigana": "(お)つまみ",
+      "meaning_en": "snack"
+    },
+    {
+      "word_id": "n1_0026",
+      "word_number": 26,
+      "kanji": "満たす",
+      "furigana": "み",
+      "meaning_en": "satisfy"
+    }
+  ]
+}

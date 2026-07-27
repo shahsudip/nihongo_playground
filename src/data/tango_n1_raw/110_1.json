@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 17,
+  "title": "Topic 9",
+  "japanese_text": "本日はお忙しいところ<u>告別式</u>にご<u>参列</u>くださり誠にありがとうございました。<u>故人</u>に代わりお礼申し上げます。今後も故人同様お付き合いくださいますよう<u>何卒</u>よろしくお願いいたします。",
+  "english_translation": "Thank you very much for taking time out of your busy schedules to attend the memorial service today. On behalf of the departed, I would like to thank you. We hope that you will kindly continue to be a friend to us, just as you were to the departed.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0707",
+      "word_number": 707,
+      "kanji": "告別式",
+      "furigana": "こくべつしき",
+      "meaning_en": "funeral ceremony, memorial service"
+    },
+    {
+      "word_id": "n1_0708",
+      "word_number": 708,
+      "kanji": "参列",
+      "furigana": "さんれつ",
+      "meaning_en": "attendance, attend"
+    },
+    {
+      "word_id": "n1_0709",
+      "word_number": 709,
+      "kanji": "故人",
+      "furigana": "こじん",
+      "meaning_en": "deceased, departed"
+    },
+    {
+      "word_id": "n1_0710",
+      "word_number": 710,
+      "kanji": "何卒",
+      "furigana": "なにとぞ",
+      "meaning_en": "kindly (formal)"
+    }
+  ]
+}

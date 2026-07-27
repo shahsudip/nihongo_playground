@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 20",
+  "japanese_text": "A：今日はどうしました？\nB：<u>かかと</u>の<u>かさかさ</u>しているところが良くならなくて…。\nA：はい、じゃ、そこに<u>うつぶせ</u>になってください…あー、これは、乾燥が原因ですね。薬を出しますから、受付で<u>処方箋</u>を受け取ってください。",
+  "english_translation": "A: So what's the matter today? B: My heels feel dry and rough, and they're just not getting any better. A: Okay, then. Please lie on your stomach ... Ah, this is caused by dryness. I will give you some medicine. Please pick up your prescription at reception.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1840",
+      "word_number": 1840,
+      "kanji": "かかと",
+      "furigana": "",
+      "meaning_en": "heel"
+    },
+    {
+      "word_id": "n1_1841",
+      "word_number": 1841,
+      "kanji": "かさかさ(と)",
+      "furigana": "",
+      "meaning_en": "dry and rough"
+    },
+    {
+      "word_id": "n1_1842",
+      "word_number": 1842,
+      "kanji": "うつぶせ",
+      "furigana": "",
+      "meaning_en": "lying on one's stomach (face down)"
+    },
+    {
+      "word_id": "n1_1843",
+      "word_number": 1843,
+      "kanji": "処方箋",
+      "furigana": "しょほうせん",
+      "meaning_en": "prescription"
+    }
+  ]
+}

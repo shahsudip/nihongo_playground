@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 15",
+  "japanese_text": "私の住む町は<u>海抜</u>ゼロメートルのところにある。<u>異常気象</u>のせいで<u>予期</u>しない洪水被害が起きるかもしれないので、町の人々は前もって準備し、いつでも逃げられる<u>態勢</u>をとっている。",
+  "english_translation": "My town is located at zero meters above sea level. Due to the possibility of unexpected flooding caused by extreme weather conditions, people in my town are prepared and ready to evacuate at any time.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1218",
+      "word_number": 1218,
+      "kanji": "海抜",
+      "furigana": "かいばつ",
+      "meaning_en": "altitude, above sea level"
+    },
+    {
+      "word_id": "n1_1219",
+      "word_number": 1219,
+      "kanji": "異常気象",
+      "furigana": "いじょうきしょう",
+      "meaning_en": "extreme weather conditions"
+    },
+    {
+      "word_id": "n1_1220",
+      "word_number": 1220,
+      "kanji": "気象",
+      "furigana": "きしょう",
+      "meaning_en": "weather"
+    },
+    {
+      "word_id": "n1_1221",
+      "word_number": 1221,
+      "kanji": "予期[する]",
+      "furigana": "よき[する]",
+      "meaning_en": "forecast, expect"
+    },
+    {
+      "word_id": "n1_1222",
+      "word_number": 1222,
+      "kanji": "態勢",
+      "furigana": "たいせい",
+      "meaning_en": "attitude, preparation"
+    }
+  ]
+}

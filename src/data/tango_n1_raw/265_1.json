@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 20",
+  "japanese_text": "A：いたっ！\nB：大丈夫？<u>応急</u> <u>処置する</u>から、切ったとこ見せて。うわ、痛そう…。ちょっと<u>染みる</u>と思うけど、我慢してね。あ、こっちは<u>痣</u>になりそうだね。ちょっと冷やしておこう。",
+  "english_translation": "A: Ow! B: Are you okay? Let me see the cut, so I can give you first aid treatment . Oh, that looks painful ... It's going to sting a little, but please be tough. Oh, this one looks like it might bruise. Let's cool it down a bit.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1878",
+      "word_number": 1878,
+      "kanji": "応急",
+      "furigana": "おうきゅう",
+      "meaning_en": "emergency (first aid)"
+    },
+    {
+      "word_id": "n1_1879",
+      "word_number": 1879,
+      "kanji": "処置[する]",
+      "furigana": "しょち",
+      "meaning_en": "treatment, treat"
+    },
+    {
+      "word_id": "n1_1880",
+      "word_number": 1880,
+      "kanji": "染みる",
+      "furigana": "",
+      "meaning_en": "smart, sting"
+    },
+    {
+      "word_id": "n1_1881",
+      "word_number": 1881,
+      "kanji": "痣",
+      "furigana": "あざ",
+      "meaning_en": "bruise"
+    }
+  ]
+}

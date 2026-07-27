@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 4",
+  "japanese_text": "<u>真珠</u>は縄文時代の遺跡から見つかっており、<u>装飾</u>に使われていたと考えられている。また、<u>麻</u>などの植物の<u>繊維</u>も見つかり、この頃からすでに服づくりをしていたと考えられている。",
+  "english_translation": "Pearls have been found at Jomon-era historical sites, and are thought to have been used for decoration. Plant fibers such as hemp have also been found, and it is believed that people were already making clothes at this time.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0212",
+      "word_number": 212,
+      "kanji": "真珠",
+      "furigana": "しんじゅ",
+      "meaning_en": "pearl"
+    },
+    {
+      "word_id": "n1_0213",
+      "word_number": 213,
+      "kanji": "装飾[する]",
+      "furigana": "そうしょく[する]",
+      "meaning_en": "decoration, decorate"
+    },
+    {
+      "word_id": "n1_0214",
+      "word_number": 214,
+      "kanji": "麻",
+      "furigana": "あさ",
+      "meaning_en": "hemp"
+    },
+    {
+      "word_id": "n1_0215",
+      "word_number": 215,
+      "kanji": "繊維",
+      "furigana": "せんい",
+      "meaning_en": "fiber"
+    }
+  ]
+}

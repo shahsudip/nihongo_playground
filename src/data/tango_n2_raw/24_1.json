@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 1 食事",
+  "japanese_text": "私の<u>大好物</u>はこの店のラーメンだ。いつもニンニク・野菜<u>増し</u>で注文している。<u>湯気</u>が出ている熱々の大盛りのラーメンを出されると、<u>毎度</u>食べきれるか少し不安になる。ゆっくりと<u>味わっ</u>ている時間はない。麺がのびないうちに急いで食べる。そして、帰りに<u>さっぱり</u>したアイスを買うのも欠かせない。",
+  "english_translation": "My favorite food is the ramen at this restaurant. I always order extra garlic and vegetables. When I'm served a large bowl of hot, steamy ramen, I'm always a little nervous about whether I'll be able to finish it. There's no time to savor it slowly. I eat it quickly before the noodles get too soft. And on the way home, it's essential to buy a refreshing ice cream.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0075",
+      "word_number": 75,
+      "kanji": "好物",
+      "furigana": "こうぶつ",
+      "meaning_en": "favorite"
+    },
+    {
+      "word_id": "n2_0076",
+      "word_number": 76,
+      "kanji": "増し",
+      "furigana": "まし",
+      "meaning_en": "addition, extra"
+    },
+    {
+      "word_id": "n2_0077",
+      "word_number": 77,
+      "kanji": "増す",
+      "furigana": "ます",
+      "meaning_en": "add to, increase"
+    },
+    {
+      "word_id": "n2_0078",
+      "word_number": 78,
+      "kanji": "湯気",
+      "furigana": "ゆげ",
+      "meaning_en": "steam"
+    },
+    {
+      "word_id": "n2_0079",
+      "word_number": 79,
+      "kanji": "毎度",
+      "furigana": "まいど",
+      "meaning_en": "always, every time"
+    },
+    {
+      "word_id": "n2_0080",
+      "word_number": 80,
+      "kanji": "味わう",
+      "furigana": "あじわう",
+      "meaning_en": "savor"
+    },
+    {
+      "word_id": "n2_0081",
+      "word_number": 81,
+      "kanji": "さっぱり",
+      "furigana": "さっぱり",
+      "meaning_en": "refreshingly"
+    }
+  ]
+}

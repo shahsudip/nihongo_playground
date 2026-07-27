@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 14",
+  "japanese_text": "最寄り駅の周りは<u>墓地</u>があるだけで、いつも<u>人け</u>がない。最近、駅前の<u>駐輪場</u>に不審者が出ているらしい。だから、今日はいつもと違う<u>ルート</u>で<u>遠回りして</u>帰宅するつもりだ。",
+  "english_translation": "Around my nearest station, there's only a cemetery and there are never any signs of human presence. Recently, a suspicious person seems to be hanging around the bicycle parking lot in front of the station. So I'm going to detour by taking a different route home today.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1156",
+      "word_number": 1156,
+      "kanji": "墓地",
+      "furigana": "ぼち",
+      "meaning_en": "cemetary"
+    },
+    {
+      "word_id": "n1_1157",
+      "word_number": 1157,
+      "kanji": "人け",
+      "furigana": "ひとけ",
+      "meaning_en": "signs of human presence"
+    },
+    {
+      "word_id": "n1_1158",
+      "word_number": 1158,
+      "kanji": "駐輪場",
+      "furigana": "ちゅうりんじょう",
+      "meaning_en": "bicycle parking lot"
+    },
+    {
+      "word_id": "n1_1160",
+      "word_number": 1160,
+      "kanji": "ルート",
+      "furigana": "ルート",
+      "meaning_en": "route"
+    },
+    {
+      "word_id": "n1_1161",
+      "word_number": 1161,
+      "kanji": "遠回りする",
+      "furigana": "とおまわりする",
+      "meaning_en": "detour"
+    }
+  ]
+}

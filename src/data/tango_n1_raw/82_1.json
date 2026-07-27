@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 7",
+  "japanese_text": "<u>園芸</u>初心者は、まずは<u>直径</u>15cmくらいの<u>鉢</u>で育ててみると良い。また、庭で育てる場合は、<u>柄</u>の長い鎌を用意すると、しゃがまずに草刈りができるので便利だ。",
+  "english_translation": "Beginners to gardening should first try growing it in a pot about 15 cm in diameter. Also, if growing in a garden, it is handy to have a sickle with a long handle so that you can weed the garden without having to squat down.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0498",
+      "word_number": 498,
+      "kanji": "園芸",
+      "furigana": "えんげい",
+      "meaning_en": "gardening"
+    },
+    {
+      "word_id": "n1_0499",
+      "word_number": 499,
+      "kanji": "直径",
+      "furigana": "ちょっけい",
+      "meaning_en": "diameter"
+    },
+    {
+      "word_id": "n1_0500",
+      "word_number": 500,
+      "kanji": "半径",
+      "furigana": "はんけい",
+      "meaning_en": "radius"
+    },
+    {
+      "word_id": "n1_0501",
+      "word_number": 501,
+      "kanji": "鉢",
+      "furigana": "はち",
+      "meaning_en": "pot"
+    },
+    {
+      "word_id": "n1_0502",
+      "word_number": 502,
+      "kanji": "柄",
+      "furigana": "え",
+      "meaning_en": "handle"
+    }
+  ]
+}

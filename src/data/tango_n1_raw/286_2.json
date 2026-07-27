@@ -1,0 +1,14 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 22",
+  "japanese_text": "「<u>相対的</u><u>貧困</u>率」とは、所得が国民全体の中央値の半分を<u>下回って</u>いる人々の割合を指す。日本では2023年現在上昇傾向にあるが、これには、税金は上がり続けているのに、賃金は2000年頃から<u>横ばい</u>で<u>推移して</u>いることも関係しているだろう。",
+  "english_translation": "The \"relative poverty rate\" refers to the percentage of people whose income is less than half the median income of the population as a whole. In Japan, as of 2023, it is on an upward trend, but this is probably also due in part to the fact that wages have shifted toward leveling off since around 2000, while taxes have continued to rise.",
+  "annotated_words": [
+    { "word_id": "n1_2038", "word_number": 2038, "kanji": "相対的な", "furigana": "そうたいてきな", "meaning_en": "relative" },
+    { "word_id": "n1_2039", "word_number": 2039, "kanji": "貧困", "furigana": "ひんこん", "meaning_en": "poverty" },
+    { "word_id": "n1_2040", "word_number": 2040, "kanji": "下回る", "furigana": "したまわる", "meaning_en": "be less than, fall below" },
+    { "word_id": "n1_2041", "word_number": 2041, "kanji": "横ばい", "furigana": "よこばい", "meaning_en": "leveling off" },
+    { "word_id": "n1_2042", "word_number": 2042, "kanji": "推移する", "furigana": "すいいする", "meaning_en": "transition, shift" }
+  ]
+}

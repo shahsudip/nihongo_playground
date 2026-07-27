@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 26",
+  "japanese_text": "工場の<u>爆発</u>事故で<u>有毒</u>ガスが<u>漏れ</u>、周辺住民に<u>避難</u>命令が出された。<u>消防</u>や警察が現場に<u>急行</u>し、<u>負傷者</u>の<u>手当て</u>が行われた。<u>原因</u>は現在も<u>調査中</u>だ。",
+  "english_translation": "A factory explosion caused toxic gas to leak, and an evacuation order was issued to nearby residents. Firefighters and police rushed to the scene, and the injured were treated. The cause is currently still under investigation.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2460",
+      "word_number": 2460,
+      "kanji": "爆発[する]",
+      "furigana": "ばくはつ",
+      "meaning_en": "explosion, explode"
+    },
+    {
+      "word_id": "n1_2461",
+      "word_number": 2461,
+      "kanji": "有毒な",
+      "furigana": "ゆうどくな",
+      "meaning_en": "toxic, poisonous"
+    },
+    {
+      "word_id": "n1_2462",
+      "word_number": 2462,
+      "kanji": "漏れる",
+      "furigana": "もれる",
+      "meaning_en": "leak"
+    },
+    {
+      "word_id": "n1_2463",
+      "word_number": 2463,
+      "kanji": "避難[する]",
+      "furigana": "ひなん",
+      "meaning_en": "evacuation, evacuate"
+    },
+    {
+      "word_id": "n1_2464",
+      "word_number": 2464,
+      "kanji": "消防",
+      "furigana": "しょうぼう",
+      "meaning_en": "fire fighting, fire department"
+    },
+    {
+      "word_id": "n1_2465",
+      "word_number": 2465,
+      "kanji": "負傷者",
+      "furigana": "ふしょうしゃ",
+      "meaning_en": "injured person"
+    }
+  ]
+}

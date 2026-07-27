@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 25",
+  "japanese_text": "男女５人がハイキング中に<u>遭難し</u>、熊に襲われ全員亡くなるという、<u>痛ましい</u>事故が起こった。５人のうち２人は、土に<u>埋まっ</u>た状態で発見された。",
+  "english_translation": "A tragic incident occurred when five people, men and women, met with disaster while hiking and were attacked by a bear, which killed them all. Two of the five were found buried in the ground.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2421",
+      "word_number": 2421,
+      "kanji": "遭難[する]",
+      "furigana": "そうなん",
+      "meaning_en": "distress, meet with disaster"
+    },
+    {
+      "word_id": "n1_2422",
+      "word_number": 2422,
+      "kanji": "痛ましい",
+      "furigana": "いたましい",
+      "meaning_en": "tragic"
+    },
+    {
+      "word_id": "n1_2423",
+      "word_number": 2423,
+      "kanji": "埋まる",
+      "furigana": "うまる",
+      "meaning_en": "be buried"
+    }
+  ]
+}

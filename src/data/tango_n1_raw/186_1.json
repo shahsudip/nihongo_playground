@@ -1,0 +1,30 @@
+{
+  "is_story": false,
+  "story_number": 6,
+  "title": "Topic 16",
+  "japanese_text": "A：このクリアファイルの絵、きれいだね。\nB：いいでしょ。上野の美術館で印象<u>派</u>展を見てきたんだ。そこで買ったの。\nA：これは誰の絵？\nB：ルノワールっていう画家の<u>風俗</u>画だよ。閉館<u>間際</u>に入っちゃって、ゆっくり鑑賞できなかったから、今度一緒に行こう。",
+  "english_translation": "A: The image on this clear file folder is really pretty. B: Isn't it nice? I went to the Impressionist School exhibition at the Ueno Museum of Art. I bought it there. A: Who painted it? B: It's a painting by the artist Renoir depicting manners and customs. I went into the museum just before it closed, so I didn't have time to take a good look at it. Let's go see it together next time.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1294",
+      "word_number": 1294,
+      "kanji": "〜派",
+      "furigana": "は",
+      "meaning_en": "~ school, ~sect"
+    },
+    {
+      "word_id": "n1_1295",
+      "word_number": 1295,
+      "kanji": "風俗",
+      "furigana": "ふうぞく",
+      "meaning_en": "manners and customs"
+    },
+    {
+      "word_id": "n1_1296",
+      "word_number": 1296,
+      "kanji": "間際",
+      "furigana": "まぎわ",
+      "meaning_en": "(the point) just before"
+    }
+  ]
+}

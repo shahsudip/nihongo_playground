@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 13,
+  "title": "Topic 2",
+  "japanese_text": "祖母の家は先日の台風で屋根に穴が空いてしまった。そこで、修理するまでの間、<u>雨水</u>が床に<u>垂れない</u>ように<u>頑丈な</u>板で穴を<u>塞いだ</u>。",
+  "english_translation": "The recent typhoon put a hole in the roof of my grandmother's house. So, until we could make repairs, we sealed the hole with a sturdy board to prevent rainwater from dripping onto the floor.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0131",
+      "word_number": 131,
+      "kanji": "雨水",
+      "furigana": "あまみず",
+      "meaning_en": "rainwater"
+    },
+    {
+      "word_id": "n1_0132",
+      "word_number": 132,
+      "kanji": "垂れる",
+      "furigana": "たれる",
+      "meaning_en": "drip"
+    },
+    {
+      "word_id": "n1_0133",
+      "word_number": 133,
+      "kanji": "頑丈な",
+      "furigana": "がんじょうな",
+      "meaning_en": "sturdy"
+    },
+    {
+      "word_id": "n1_0134",
+      "word_number": 134,
+      "kanji": "塞ぐ",
+      "furigana": "ふさぐ",
+      "meaning_en": "cover, seal"
+    },
+    {
+      "word_id": "n1_0135",
+      "word_number": 135,
+      "kanji": "塞がる",
+      "furigana": "ふさがる",
+      "meaning_en": "be blocked"
+    }
+  ]
+}

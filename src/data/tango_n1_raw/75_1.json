@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 16,
+  "title": "Topic 6",
+  "japanese_text": "有名なミュージカルが日本で<u>公演された</u>ので、初めて見に行った。好きな俳優が<u>主演して</u>いたというのが一番の理由だが、話の<u>筋</u>は知っていたので、楽しめた。",
+  "english_translation": "A famous musical was being performed in Japan and I went to see it for the first time. The main reason was because one of my favorite actors was starring in it, but I knew the plot already, so I enjoyed it.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0445",
+      "word_number": 445,
+      "kanji": "公演する",
+      "furigana": "こうえん",
+      "meaning_en": "performance, perform"
+    },
+    {
+      "word_id": "n1_0446",
+      "word_number": 446,
+      "kanji": "上演する",
+      "furigana": "じょうえん",
+      "meaning_en": "staging, present"
+    },
+    {
+      "word_id": "n1_0447",
+      "word_number": 447,
+      "kanji": "主演する",
+      "furigana": "しゅえん",
+      "meaning_en": "leading role, star"
+    },
+    {
+      "word_id": "n1_0448",
+      "word_number": 448,
+      "kanji": "出演する",
+      "furigana": "しゅつえん",
+      "meaning_en": "performance, appear"
+    },
+    {
+      "word_id": "n1_0449",
+      "word_number": 449,
+      "kanji": "筋",
+      "furigana": "すじ",
+      "meaning_en": "plot"
+    }
+  ]
+}

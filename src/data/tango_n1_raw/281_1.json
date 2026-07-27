@@ -1,0 +1,12 @@
+{
+  "is_story": true,
+  "story_number": 13,
+  "title": "Topic 21",
+  "japanese_text": "観光客が意図的に城の<u>堀</u>にゴミを投げ捨てたというニュースが放送され、その観光客は厳しい批判に<u>さらされた</u>。本人は「軽い気持ちでやっただけだ」と話しているが、城の管理者は「罰金の支払いを要求する」と述べており、<u>譲歩し</u>ない様子である。",
+  "english_translation": "A news report was broadcast about a tourist who intentionally threw trash into a castle's moat, and the tourist was exposed to severe criticism. Although the tourist claimed he didn't do it maliciously, the castle administrator demanded the payment of a fine and would not compromise.",
+  "annotated_words": [
+    { "word_id": "n1_2001", "word_number": 2001, "kanji": "堀", "furigana": "ほり", "meaning_en": "moat" },
+    { "word_id": "n1_2002", "word_number": 2002, "kanji": "さらす", "furigana": "さらす", "meaning_en": "expose" },
+    { "word_id": "n1_2003", "word_number": 2003, "kanji": "譲歩", "furigana": "じょうほ", "meaning_en": "concession, compromise" }
+  ]
+}

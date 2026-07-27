@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 27",
+  "japanese_text": "とある<u>元素</u>の結合に<u>着目</u>した<u>仮説</u>がある。この<u>説</u>が正しければ、目的とする<u>化合物</u>を<u>合成</u>することができる。だが、この化合物は<u>酸</u>に弱いのが課題だ。",
+  "english_translation": "There is a hypothesis that focuses on the bonding of certain elements. If this theory is correct, the desired compound can be synthesized. However, the problem is that this compound is vulnerable against acids.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2496",
+      "word_number": 2496,
+      "kanji": "元素",
+      "furigana": "げんそ",
+      "meaning_en": "element"
+    },
+    {
+      "word_id": "n1_2497",
+      "word_number": 2497,
+      "kanji": "着目[する]",
+      "furigana": "ちゃくもく",
+      "meaning_en": "attention, focus on"
+    },
+    {
+      "word_id": "n1_2498",
+      "word_number": 2498,
+      "kanji": "仮説",
+      "furigana": "かせつ",
+      "meaning_en": "hypothesis"
+    },
+    {
+      "word_id": "n1_2499",
+      "word_number": 2499,
+      "kanji": "説",
+      "furigana": "せつ",
+      "meaning_en": "theory"
+    },
+    {
+      "word_id": "n1_2500",
+      "word_number": 2500,
+      "kanji": "化合物",
+      "furigana": "かごうぶつ",
+      "meaning_en": "(chemical) compound"
+    },
+    {
+      "word_id": "n1_2501",
+      "word_number": 2501,
+      "kanji": "合成[する]",
+      "furigana": "ごうせい",
+      "meaning_en": "synthesis, synthesize"
+    },
+    {
+      "word_id": "n1_2502",
+      "word_number": 2502,
+      "kanji": "酸",
+      "furigana": "さん",
+      "meaning_en": "acid"
+    }
+  ]
+}

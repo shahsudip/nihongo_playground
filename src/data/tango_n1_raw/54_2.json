@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 7,
+  "title": "Topic 5",
+  "japanese_text": "サイバー犯罪は、<u>巧妙な</u> <u>手口</u>が使われている。このような<u>悪質な</u>犯罪を防ぐためには、個人や企業が使用する<u>デバイス</u>やシステムに適切なセキュリティ対策を<u>組み込む</u>ことが重要である。",
+  "english_translation": "Cybercrime uses sophisticated techniques. To prevent such malicious crimes, it is important for individuals and businesses to incorporate appropriate security measures into the devices and systems they use.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0290",
+      "word_number": 290,
+      "kanji": "巧妙な",
+      "furigana": "こうみょうな",
+      "meaning_en": "sophisticated"
+    },
+    {
+      "word_id": "n1_0291",
+      "word_number": 291,
+      "kanji": "手口",
+      "furigana": "てぐち",
+      "meaning_en": "tactic, technique"
+    },
+    {
+      "word_id": "n1_0292",
+      "word_number": 292,
+      "kanji": "悪質な",
+      "furigana": "あくしつな",
+      "meaning_en": "malicious"
+    },
+    {
+      "word_id": "n1_0293",
+      "word_number": 293,
+      "kanji": "デバイス",
+      "furigana": "",
+      "meaning_en": "device"
+    },
+    {
+      "word_id": "n1_0294",
+      "word_number": 294,
+      "kanji": "組み込む",
+      "furigana": "くみこむ",
+      "meaning_en": "incorporate"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 4",
+  "japanese_text": "Ａ：彼女さ、ご飯中もずっとスマホ<u>いじって</u>るんだ。\nＢ：それはひどいね。\nＡ：デートの服装もすごく<u>カジュアルで</u>。というか、もうパジャマみたいな服。僕、<u>異性</u>として見られてない気がする。",
+  "english_translation": "A: She's fiddling with her phone all the time, even when we're eating.\nB: That's terrible.\nA: She wears very casual clothes on our dates. I mean, it's like she's in her pajamas. I don't think she sees me as a member of the opposite sex at all.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0228",
+      "word_number": 228,
+      "kanji": "いじる",
+      "furigana": "",
+      "meaning_en": "fiddle with, toy with"
+    },
+    {
+      "word_id": "n1_0229",
+      "word_number": 229,
+      "kanji": "カジュアルな",
+      "furigana": "",
+      "meaning_en": "casual"
+    },
+    {
+      "word_id": "n1_0230",
+      "word_number": 230,
+      "kanji": "異性",
+      "furigana": "いせい",
+      "meaning_en": "opposite sex"
+    }
+  ]
+}

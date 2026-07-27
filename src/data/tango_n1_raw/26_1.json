@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 2",
+  "japanese_text": "現代では、夫婦が<u>共働き</u>で<u>家計</u>を支えるケースが多い。育児を<u>分担</u>したり、お互いが面倒な家事を<u>率先して</u>引き受けたりすることが大切だ。",
+  "english_translation": "These days, many couples both work to support the household finances. It is important to share the responsibility for housework and childcare, and for both to take the initiative in tackling troublesome household chores.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0086",
+      "word_number": 86,
+      "kanji": "共働き",
+      "furigana": "ともばたらき",
+      "meaning_en": "double-income, both work"
+    },
+    {
+      "word_id": "n1_0087",
+      "word_number": 87,
+      "kanji": "家計",
+      "furigana": "かけい",
+      "meaning_en": "household finances (family budget)"
+    },
+    {
+      "word_id": "n1_0088",
+      "word_number": 88,
+      "kanji": "家計簿",
+      "furigana": "かけいぼ",
+      "meaning_en": "household account book"
+    },
+    {
+      "word_id": "n1_0089",
+      "word_number": 89,
+      "kanji": "分担",
+      "furigana": "ぶんたん",
+      "meaning_en": "share, allocate"
+    },
+    {
+      "word_id": "n1_0090",
+      "word_number": 90,
+      "kanji": "率先",
+      "furigana": "そっせん",
+      "meaning_en": "lead, take initiative"
+    }
+  ]
+}

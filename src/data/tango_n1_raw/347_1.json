@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 27",
+  "japanese_text": "A：ねぇ、ポマトって知ってる？\nB：知ってる。じゃがいもとトマトの<u>細胞</u>を<u>融合</u>させて作ったやつでしょ？\nA：そうそう。寒い地域でもトマトが育てられるようにって作られたんだけど、失敗して今や過去の<u>産物</u>だよね。\nB：残念ながらね。<u>観点</u>は面白かったんだけどなぁ。",
+  "english_translation": "A: Hey, ever heard of a pomato? B: Yes. It's made by fusing potato and tomato cells, right? A: That's right. It was created to grow tomatoes in colder regions, but it failed and is now a product of the past. B: That's unfortunate. It was an interesting perspective.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2521",
+      "word_number": 2521,
+      "kanji": "細胞",
+      "furigana": "さいぼう",
+      "meaning_en": "cell"
+    },
+    {
+      "word_id": "n1_2522",
+      "word_number": 2522,
+      "kanji": "融合[する]",
+      "furigana": "ゆうごう",
+      "meaning_en": "fusion, fuse"
+    },
+    {
+      "word_id": "n1_2523",
+      "word_number": 2523,
+      "kanji": "産物",
+      "furigana": "さんぶつ",
+      "meaning_en": "product"
+    },
+    {
+      "word_id": "n1_2524",
+      "word_number": 2524,
+      "kanji": "副産物",
+      "furigana": "ふくさんぶつ",
+      "meaning_en": "byproduct"
+    },
+    {
+      "word_id": "n1_2525",
+      "word_number": 2525,
+      "kanji": "観点",
+      "furigana": "かんてん",
+      "meaning_en": "perspective"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 2",
+  "japanese_text": "洗濯では落ちにくい襟や<u>裾</u>の染みを<u>取り除く</u>には、食器用洗剤を使うといい。まず汚れに洗剤<u>液</u>を染み込ませ、その後40度のお湯で<u>すすぐ</u>だけだ。<u>もしくは</u>、食器用洗剤の<u>代用品</u>としてクレンジングオイルを使うことも可能だ。",
+  "english_translation": "To remove stains from collars or hems that are difficult to eliminate by washing, you can use dish detergent. First, soak the stain in the liquid detergent, then rinse with 40°C water. Alternatively, cleansing oil can be used as a substitute for dish detergent.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0096",
+      "word_number": 96,
+      "kanji": "裾",
+      "furigana": "すそ",
+      "meaning_en": "hem"
+    },
+    {
+      "word_id": "n1_0097",
+      "word_number": 97,
+      "kanji": "取り除く",
+      "furigana": "とりのぞく",
+      "meaning_en": "remove"
+    },
+    {
+      "word_id": "n1_0098",
+      "word_number": 98,
+      "kanji": "液",
+      "furigana": "えき",
+      "meaning_en": "liquid"
+    },
+    {
+      "word_id": "n1_0099",
+      "word_number": 99,
+      "kanji": "すすぐ",
+      "furigana": "すすぐ",
+      "meaning_en": "rinse"
+    },
+    {
+      "word_id": "n1_0100",
+      "word_number": 100,
+      "kanji": "もしくは",
+      "furigana": "もしくは",
+      "meaning_en": "alternatively"
+    },
+    {
+      "word_id": "n1_0101",
+      "word_number": 101,
+      "kanji": "代用品",
+      "furigana": "だいようひん",
+      "meaning_en": "substitute"
+    },
+    {
+      "word_id": "n1_0102",
+      "word_number": 102,
+      "kanji": "代用",
+      "furigana": "だいよう",
+      "meaning_en": "substitution, substitute"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 15",
+  "japanese_text": "夕方、西の空に<u>辛うじて</u><u>三日月</u>を見つけた。見つけたら良いことがあると聞いたことがあるので、<u>なんだか</u><u>テンション</u>が高くなった。",
+  "english_translation": "In the evening, I just managed to spot a crescent moon in the western sky. I'd heard that seeing it would bring good fortune, so I felt a little excitement.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1214",
+      "word_number": 1214,
+      "kanji": "辛うじて",
+      "furigana": "かろうじて",
+      "meaning_en": "barely, just"
+    },
+    {
+      "word_id": "n1_1215",
+      "word_number": 1215,
+      "kanji": "三日月",
+      "furigana": "みかづき",
+      "meaning_en": "crescent moon"
+    },
+    {
+      "word_id": "n1_1216",
+      "word_number": 1216,
+      "kanji": "なんだか",
+      "furigana": "なんだか",
+      "meaning_en": "somewhat, a little"
+    },
+    {
+      "word_id": "n1_1217",
+      "word_number": 1217,
+      "kanji": "テンション",
+      "furigana": "テンション",
+      "meaning_en": "excitement, tension"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "is_story": false,
+  "story_number": 18,
+  "title": "Topic 9",
+  "japanese_text": "A：私がBさんだけに話したあのこと、この前の飲み会でみんなに話したそうですね。<u>プライベートな</u>ことまで言うなんて…。<u>侮辱して</u>ますよ。\nB：<u>面目</u>ない。かなり酔ってて記憶も<u>あやふやな</u>んだ…。酔って話すなんて<u>軽率だった</u>と思う。本当にごめん。",
+  "english_translation": "A: I heard that you told everyone at the drinking party the other day about that thing I only told you. I can't believe you'd talk about something so private... It's an insult. B: I have no excuse. I was pretty drunk and my memory is hazy... I think it was thoughtless of me to talk while drunk. I'm really sorry.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0711",
+      "word_number": 711,
+      "kanji": "プライベートな",
+      "furigana": "プライベートな",
+      "meaning_en": "private"
+    },
+    {
+      "word_id": "n1_0712",
+      "word_number": 712,
+      "kanji": "侮辱",
+      "furigana": "ぶじょく",
+      "meaning_en": "contempt, insult"
+    },
+    {
+      "word_id": "n1_0713",
+      "word_number": 713,
+      "kanji": "面目",
+      "furigana": "めんぼく",
+      "meaning_en": "dignity, grace"
+    },
+    {
+      "word_id": "n1_0714",
+      "word_number": 714,
+      "kanji": "あやふやな",
+      "furigana": "あやふやな",
+      "meaning_en": "hazy, vague"
+    },
+    {
+      "word_id": "n1_0715",
+      "word_number": 715,
+      "kanji": "軽率な",
+      "furigana": "けいそつな",
+      "meaning_en": "thoughtless"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 7,
+  "title": "Topic 3",
+  "japanese_text": "ただいま、開店セール実施中！ 欲しかったあの商品を<u>お値打ち</u>価格で！さらに、ポイント20％<u>還元</u>キャンペーン、<u>先着</u>100名様限定プレゼントも実施しております。",
+  "english_translation": "We're having an opening sale right now! Purchase that product you want at a great value price! In addition, we are offering a 20% points return campaign and a limited gift for the first 100 customers to arrive.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0182",
+      "word_number": 182,
+      "kanji": "(お)値打ち",
+      "furigana": "ねうち",
+      "meaning_en": "great value"
+    },
+    {
+      "word_id": "n1_0183",
+      "word_number": 183,
+      "kanji": "還元",
+      "furigana": "かんげん",
+      "meaning_en": "restoration, return"
+    },
+    {
+      "word_id": "n1_0184",
+      "word_number": 184,
+      "kanji": "先着",
+      "furigana": "せんちゃく",
+      "meaning_en": "first arrival, arrive first"
+    },
+    {
+      "word_id": "n1_0185",
+      "word_number": 185,
+      "kanji": "先着順",
+      "furigana": "せんちゃくじゅん",
+      "meaning_en": "first-come-first served basis"
+    }
+  ]
+}

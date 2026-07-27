@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 2 ● 家事",
+  "japanese_text": "A: どうしたの、この部屋。机の下には<u>紙くず</u>、キッチンには<u>洗い物</u>がいっぱい！洗濯物にも<u>しわ</u>がついてる…。\nB: <u>今週</u>忙しくて…。\nA: <u>ルームシェア</u>してるんだよね？一緒に住んでる人は怒らないの？\nB: 今旅行中で<u>不在</u>なんだ。もうすぐ帰ってくるよ。\nA: じゃあ早く掃除しないと。ほら、その机<u>持ち上げて</u>！",
+  "english_translation": "A: What happened to your room? There are paper scraps under the desk, and the kitchen is full of dirty dishes! The laundry is all wrinkled too... B: I've been busy this week... A: You share this place, right? Won't the guy you live with get mad at you? B: He's away on a trip right now. But he'll be back soon. A: Then we have to clean up right away. Okay, lift up that desk!",
+  "annotated_words": [
+    {
+      "word_id": "n2_0145",
+      "word_number": 145,
+      "kanji": "紙くず",
+      "furigana": "かみくず",
+      "meaning_en": "paper scraps"
+    },
+    {
+      "word_id": "n2_0146",
+      "word_number": 146,
+      "kanji": "洗い物",
+      "furigana": "あらいもの",
+      "meaning_en": "dirty dishes or clothing"
+    },
+    {
+      "word_id": "n2_0147",
+      "word_number": 147,
+      "kanji": "しわ",
+      "furigana": "しわ",
+      "meaning_en": "wrinkle"
+    },
+    {
+      "word_id": "n2_0148",
+      "word_number": 148,
+      "kanji": "ルームシェア[する]",
+      "furigana": "ルームシェア",
+      "meaning_en": "sharing housing, share a place"
+    },
+    {
+      "word_id": "n2_0149",
+      "word_number": 149,
+      "kanji": "不在",
+      "furigana": "ふざい",
+      "meaning_en": "absence, gone away"
+    },
+    {
+      "word_id": "n2_0150",
+      "word_number": 150,
+      "kanji": "持ち上げる",
+      "furigana": "もちあげる",
+      "meaning_en": "lift up"
+    }
+  ]
+}

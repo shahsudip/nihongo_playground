@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 13,
+  "title": "Topic 19",
+  "japanese_text": "A：Ｃくんにお金、返したの？\nB：あー、もうちょっと生活が<u>上向いたら</u>返すつもり…。\nA：この辺の<u>値打ち</u>がありそうな本、売ってお金にすれば？早く返した方がいいよ。",
+  "english_translation": "A: Did you pay back the money to C? B: Oh, I'm going to pay him back once life starts looking up... A: Why don't you sell all these books and make some money? I'm sure they're worth something. You'd better pay it back soon.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1745",
+      "word_number": 1745,
+      "kanji": "上向く",
+      "furigana": "うわむく",
+      "meaning_en": "improve, look up"
+    },
+    {
+      "word_id": "n1_1746",
+      "word_number": 1746,
+      "kanji": "上向き",
+      "furigana": "うわむき",
+      "meaning_en": "rebound, upturn"
+    },
+    {
+      "word_id": "n1_1747",
+      "word_number": 1747,
+      "kanji": "値打ち",
+      "furigana": "ねうち",
+      "meaning_en": "worth"
+    }
+  ]
+}

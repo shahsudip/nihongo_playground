@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 20",
+  "japanese_text": "<u>急性</u>アルコール中毒は、短時間に大量のアルコールを摂取することで起こる症状で、最悪の場合、死に至る。お酒を飲むときは、<u>適量</u>で楽しむという<u>心構え</u>をしておくことが重要だ。また、万が一の場合に対処できるよう、適切な<u>介抱</u>の仕方も勉強しておいた方がいい。",
+  "english_translation": "Acute alcohol intoxication occurs when someone consumes a large amount of alcohol in a short period of time. In the worst cases, it can lead to death. When drinking alcohol, it is important to be mentally prepared to enjoy it in moderate amounts. It is also a good idea to learn how to properly take care of people so that you can handle emergency situations.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1857",
+      "word_number": 1857,
+      "kanji": "急性",
+      "furigana": "きゅうせい",
+      "meaning_en": "acute (quality)"
+    },
+    {
+      "word_id": "n1_1858",
+      "word_number": 1858,
+      "kanji": "適量",
+      "furigana": "てきりょう",
+      "meaning_en": "moderate amount, proper dose"
+    },
+    {
+      "word_id": "n1_1859",
+      "word_number": 1859,
+      "kanji": "心構え",
+      "furigana": "こころがまえ",
+      "meaning_en": "(mental) preparation, readiness"
+    },
+    {
+      "word_id": "n1_1860",
+      "word_number": 1860,
+      "kanji": "介抱[する]",
+      "furigana": "かいほう",
+      "meaning_en": "caregiving, take care of"
+    }
+  ]
+}

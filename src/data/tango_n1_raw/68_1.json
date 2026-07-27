@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 6",
+  "japanese_text": "A：いろいろな人が言ってるけど、アニメは<u>映像</u>の美しさよりも<u>脚本</u>の方が大事だよね。ストーリーに<u>共感できない</u>と意味がないから。\nB：映像も、単純な美しさよりも、ストーリーやキャラクターの感情に<u>マッチした</u> <u>演出</u>になっているかが大事だね。",
+  "english_translation": "A: Many people say that for animation, the script is more important than the beauty of the images. If you can't relate to the story, it's meaningless. B: For the images too, rather than simply being beautiful, it's more important that their direction matches the story and the emotions of the characters.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0391",
+      "word_number": 391,
+      "kanji": "映像",
+      "furigana": "えいぞう",
+      "meaning_en": "image"
+    },
+    {
+      "word_id": "n1_0392",
+      "word_number": 392,
+      "kanji": "脚本",
+      "furigana": "きゃくほん",
+      "meaning_en": "script"
+    },
+    {
+      "word_id": "n1_0393",
+      "word_number": 393,
+      "kanji": "共感する",
+      "furigana": "きょうかん",
+      "meaning_en": "empathy, relate"
+    },
+    {
+      "word_id": "n1_0394",
+      "word_number": 394,
+      "kanji": "マッチする",
+      "furigana": "",
+      "meaning_en": "match, match"
+    },
+    {
+      "word_id": "n1_0395",
+      "word_number": 395,
+      "kanji": "演出する",
+      "furigana": "えんしゅつ",
+      "meaning_en": "direction, direct"
+    }
+  ]
+}

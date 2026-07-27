@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 24",
+  "japanese_text": "A：この地域の<u>領土</u>問題、解決できると思う？\nB：難しいよね。双方が<u>主権</u>を<u>主張</u>していて、<u>妥協</u>の余地がないみたい。\nA：<u>条約</u>を結ぶことで<u>歩み寄り</u>ができればいいんだけど。",
+  "english_translation": "A: Do you think the territorial issue in this region can be resolved? B: It's difficult. Both sides are asserting sovereignty and there seems to be no room for compromise. A: I wish a treaty could be concluded to bring them closer together.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2298",
+      "word_number": 2298,
+      "kanji": "領土",
+      "furigana": "りょうど",
+      "meaning_en": "territory"
+    },
+    {
+      "word_id": "n1_2299",
+      "word_number": 2299,
+      "kanji": "主権",
+      "furigana": "しゅけん",
+      "meaning_en": "sovereignty"
+    },
+    {
+      "word_id": "n1_2300",
+      "word_number": 2300,
+      "kanji": "主張[する]",
+      "furigana": "しゅちょう",
+      "meaning_en": "assertion, assert"
+    },
+    {
+      "word_id": "n1_2301",
+      "word_number": 2301,
+      "kanji": "妥協[する]",
+      "furigana": "だきょう",
+      "meaning_en": "compromise, make a compromise"
+    },
+    {
+      "word_id": "n1_2302",
+      "word_number": 2302,
+      "kanji": "条約",
+      "furigana": "じょうやく",
+      "meaning_en": "treaty"
+    },
+    {
+      "word_id": "n1_2303",
+      "word_number": 2303,
+      "kanji": "歩み寄り",
+      "furigana": "あゆみより",
+      "meaning_en": "compromise, concession"
+    }
+  ]
+}

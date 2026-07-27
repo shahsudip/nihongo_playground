@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 27",
+  "japanese_text": "経過報告のあった新薬の研究は、直接がん細胞に<u>作用</u>しているのかについての<u>考察</u>が不十分であったため、来年度の研究支援の対象から<u>除外</u>された。",
+  "english_translation": "One study of a new drug including progress reports was excluded from next year's research funding due to insufficient consideration of whether the drug was directly acting on cancer cells.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2507",
+      "word_number": 2507,
+      "kanji": "作用[する]",
+      "furigana": "さよう",
+      "meaning_en": "action, act on"
+    },
+    {
+      "word_id": "n1_2508",
+      "word_number": 2508,
+      "kanji": "考察[する]",
+      "furigana": "こうさつ",
+      "meaning_en": "consideration, consider"
+    },
+    {
+      "word_id": "n1_2509",
+      "word_number": 2509,
+      "kanji": "除外[する]",
+      "furigana": "じょがい",
+      "meaning_en": "exclusion, exclude"
+    }
+  ]
+}

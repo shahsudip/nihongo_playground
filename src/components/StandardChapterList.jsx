@@ -58,7 +58,7 @@ const StandardChapterList = ({ book, chapters, history }) => {
           return (
             <Link
               key={chapter.id}
-              to={`/books/${book.id}/chapters/${chapter.id}`}
+              to={book.id.startsWith('tango') ? `/tango-reading/${book.id}/chapters/${chapter.id}` : `/books/${book.id}/chapters/${chapter.id}`}
               className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-2xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col justify-center items-center text-center h-full"
             >
               <h3 className="text-2xl font-bold text-[var(--color-text-primary)] mb-3">{displayTitle}</h3>
@@ -110,7 +110,7 @@ const StandardChapterList = ({ book, chapters, history }) => {
                   return (
                     <Link
                       key={chapter.id}
-                      to={`/books/${book.id}/chapters/${chapter.id}`}
+                      to={book.id.startsWith('tango') ? `/tango-reading/${book.id}/chapters/${chapter.id}` : `/books/${book.id}/chapters/${chapter.id}`}
                       className={`day-card ${isMastered ? 'day-mastered' : isIncomplete ? 'day-progress' : ''}`}
                     >
                       <div className="day-card-label">{dayLabel}</div>

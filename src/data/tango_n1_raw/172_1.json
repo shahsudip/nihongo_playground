@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 14",
+  "japanese_text": "千葉県は37の市、16の町、1つの村の行政<u>区画</u>に分けられている。海沿いには富津<u>岬</u>など景色がきれいな場所も多く、銚子電鉄<u>沿線</u>は観光地化されている。また、成田<u>街道</u>には有名な<u>社寺</u>やいくつもの<u>史跡</u>がある。",
+  "english_translation": "Chiba Prefecture is divided into administrative districts that include 37 cities, 16 towns, and 1 village. There are many scenic spots along the coast, such as Cape Futtsu, and several places along the Choshi Electric Railway line are now tourist attractions. In addition, there are famous shrines and temples and a number of historical sites along the Narita Highway.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1186",
+      "word_number": 1186,
+      "kanji": "区画する",
+      "furigana": "くかくする",
+      "meaning_en": "district, partition"
+    },
+    {
+      "word_id": "n1_1187",
+      "word_number": 1187,
+      "kanji": "岬",
+      "furigana": "みさき",
+      "meaning_en": "cape, promontory"
+    },
+    {
+      "word_id": "n1_1188",
+      "word_number": 1188,
+      "kanji": "沿線",
+      "furigana": "えんせん",
+      "meaning_en": "along a (rail) line"
+    },
+    {
+      "word_id": "n1_1189",
+      "word_number": 1189,
+      "kanji": "街道",
+      "furigana": "かいどう",
+      "meaning_en": "highway"
+    },
+    {
+      "word_id": "n1_1190",
+      "word_number": 1190,
+      "kanji": "社寺",
+      "furigana": "しゃじ",
+      "meaning_en": "shrines and temples"
+    },
+    {
+      "word_id": "n1_1191",
+      "word_number": 1191,
+      "kanji": "史跡",
+      "furigana": "しせき",
+      "meaning_en": "historical site"
+    }
+  ]
+}

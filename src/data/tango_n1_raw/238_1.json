@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 36,
+  "title": "Topic 18",
+  "japanese_text": "A社は小さな町工場だが高い技術力を持つ会社だ。そのA社に新しくロケット部品の<u>試作</u>依頼が入った。A社の職人たちは何日も<u>夜更け</u>まで<u>労力</u>を惜しまず<u>開発</u>に取り組み、<u>滞りなく</u> <u>納期</u>までに試作品を完成させた。",
+  "english_translation": "Company A has a small factory in a small town, but it has strong technological capabilities. After receiving a request for a prototype of a new rocket component, its craftsmen worked until late at night to develop it, sparing no effort, completing the prototype without delaying the deadline.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1680",
+      "word_number": 1680,
+      "kanji": "試作",
+      "furigana": "しさく",
+      "meaning_en": "prototype"
+    },
+    {
+      "word_id": "n1_1681",
+      "word_number": 1681,
+      "kanji": "夜更け",
+      "furigana": "よふけ",
+      "meaning_en": "late at night"
+    },
+    {
+      "word_id": "n1_1682",
+      "word_number": 1682,
+      "kanji": "労力",
+      "furigana": "ろうりょく",
+      "meaning_en": "effort"
+    },
+    {
+      "word_id": "n1_1683",
+      "word_number": 1683,
+      "kanji": "開発",
+      "furigana": "かいはつ",
+      "meaning_en": "development, develop"
+    },
+    {
+      "word_id": "n1_1684",
+      "word_number": 1684,
+      "kanji": "滞り",
+      "furigana": "とどこおり",
+      "meaning_en": "delay"
+    },
+    {
+      "word_id": "n1_1686",
+      "word_number": 1686,
+      "kanji": "納期",
+      "furigana": "のうき",
+      "meaning_en": "deadline"
+    }
+  ]
+}

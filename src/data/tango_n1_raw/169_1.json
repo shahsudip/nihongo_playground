@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 14",
+  "japanese_text": "祖父母が住んでいる地域は、<u>なだらかな</u>丘が多く、<u>起伏</u>がある。また、<u>至るところ</u>に見通しの悪い<u>十字路</u>があるため、車の運転をするのに苦労する。ただし、近くに<u>インターチェンジ</u>があるので、高速道路を利用するには便利だ。",
+  "english_translation": "The area where my grandparents live has many gentle hills and undulations. There are also crossroads with poor visibility all over, making driving difficult. However, there is an interchange nearby, so it's handy to take the expressway.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1167",
+      "word_number": 1167,
+      "kanji": "なだらかな",
+      "furigana": "なだらかな",
+      "meaning_en": "gentle, smooth"
+    },
+    {
+      "word_id": "n1_1168",
+      "word_number": 1168,
+      "kanji": "起伏",
+      "furigana": "きふく",
+      "meaning_en": "undulation, undulate"
+    },
+    {
+      "word_id": "n1_1169",
+      "word_number": 1169,
+      "kanji": "至るところ",
+      "furigana": "いたるところ",
+      "meaning_en": "all over, everywhere"
+    },
+    {
+      "word_id": "n1_1170",
+      "word_number": 1170,
+      "kanji": "十字路",
+      "furigana": "じゅうじろ",
+      "meaning_en": "crossroads"
+    },
+    {
+      "word_id": "n1_1171",
+      "word_number": 1171,
+      "kanji": "インターチェンジ",
+      "furigana": "インターチェンジ",
+      "meaning_en": "interchange"
+    }
+  ]
+}

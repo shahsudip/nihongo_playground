@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 18",
+  "japanese_text": "会社に<u>出社せず</u>に自宅などで働く<u>テレワーク</u>という働き方が誕生したのは1980年代のことであるが、2020年以降は多様な<u>職種</u>で導入された。それに伴って、テレワークでも<u>効率</u>や<u>生産性</u>が低下しないための工夫に注目が集まっている。",
+  "english_translation": "The telework style of working, in which workers work from home or elsewhere without coming into the workplace, first emerged in the 1980s, but since 2020 it has been introduced across a wide range of occupations. Accordingly, there has been a growing focus on ways to ensure that efficiency and productivity do not decline even when teleworking.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1499",
+      "word_number": 1499,
+      "kanji": "出社",
+      "furigana": "しゅっしゃ",
+      "meaning_en": "coming into the workplace, go to work"
+    },
+    {
+      "word_id": "n1_1501",
+      "word_number": 1501,
+      "kanji": "テレワーク",
+      "furigana": "テレワーク",
+      "meaning_en": "remote working, telework"
+    },
+    {
+      "word_id": "n1_1502",
+      "word_number": 1502,
+      "kanji": "職種",
+      "furigana": "しょくしゅ",
+      "meaning_en": "occupation"
+    },
+    {
+      "word_id": "n1_1503",
+      "word_number": 1503,
+      "kanji": "効率",
+      "furigana": "こうりつ",
+      "meaning_en": "efficiency"
+    },
+    {
+      "word_id": "n1_1505",
+      "word_number": 1505,
+      "kanji": "生産性",
+      "furigana": "せいさんせい",
+      "meaning_en": "productivity"
+    }
+  ]
+}

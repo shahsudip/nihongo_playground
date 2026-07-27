@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 13,
+  "title": "Topic 20",
+  "japanese_text": "コロナ感染者の<u>濃厚</u>接触者となり、とうとう感染してしまった。喉の痛みは<u>いくぶん</u>ましになってきたが、<u>味覚</u>障害がひどく、何を食べてもおいしく感じない。",
+  "english_translation": "I was a close contact of someone infected with COVID-19, and I ended up getting infected too. My sore throat is somewhat better, but I have a severe taste disorder, and nothing tastes good to me.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1906",
+      "word_number": 1906,
+      "kanji": "濃厚な",
+      "furigana": "のうこう",
+      "meaning_en": "close, intense"
+    },
+    {
+      "word_id": "n1_1907",
+      "word_number": 1907,
+      "kanji": "いくぶん",
+      "furigana": "",
+      "meaning_en": "a bit, somewhat"
+    },
+    {
+      "word_id": "n1_1908",
+      "word_number": 1908,
+      "kanji": "味覚",
+      "furigana": "みかく",
+      "meaning_en": "sense of taste"
+    },
+    {
+      "word_id": "n1_1909",
+      "word_number": 1909,
+      "kanji": "視覚",
+      "furigana": "しかく",
+      "meaning_en": "sense of vision"
+    },
+    {
+      "word_id": "n1_1910",
+      "word_number": 1910,
+      "kanji": "聴覚",
+      "furigana": "ちょうかく",
+      "meaning_en": "sense of hearing"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 6",
+  "japanese_text": "A：ここの敵が倒せないんだけど…。\nB：あー、これはちょっと<u>放置する</u>と、背中を見せて帰っていくからタイミングを<u>見計らって</u>後ろから攻撃すればいいよ。\nA：やってみる。あー！ やられた！ <u>不意に</u>振り返るのはずるいって！\nB：今のは<u>動揺し</u>なければ倒せてたね。まあ、<u>慣れ</u>だね。そのうち振り返るタイミングも<u>把握できる</u>よ。",
+  "english_translation": "A: I can't beat the enemy here... B: Ah, if you leave this one alone for a bit, it will turn around and leave, so you can choose the right moment to attack it from behind. A: I'll give it a try. Oh no! It beat me! It's not fair—it turned around unexpectedly! B: If you hadn't gotten agitated, you could have taken it down. Well, you'll get used to it. You'll figure out the timing eventually.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0404",
+      "word_number": 404,
+      "kanji": "放置する",
+      "furigana": "ほうち",
+      "meaning_en": "neglect, leave alone"
+    },
+    {
+      "word_id": "n1_0405",
+      "word_number": 405,
+      "kanji": "見計らう",
+      "furigana": "みはからう",
+      "meaning_en": "choose the right moment"
+    },
+    {
+      "word_id": "n1_0406",
+      "word_number": 406,
+      "kanji": "不意に",
+      "furigana": "ふい",
+      "meaning_en": "unexpectedly"
+    },
+    {
+      "word_id": "n1_0407",
+      "word_number": 407,
+      "kanji": "動揺する",
+      "furigana": "どうよう",
+      "meaning_en": "shaking, get agitated"
+    },
+    {
+      "word_id": "n1_0408",
+      "word_number": 408,
+      "kanji": "慣れ",
+      "furigana": "な",
+      "meaning_en": "getting used to (something)"
+    },
+    {
+      "word_id": "n1_0409",
+      "word_number": 409,
+      "kanji": "把握する",
+      "furigana": "はあく",
+      "meaning_en": "understanding, figure out"
+    }
+  ]
+}

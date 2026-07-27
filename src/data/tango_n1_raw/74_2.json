@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 15,
+  "title": "Topic 6",
+  "japanese_text": "そのアニメ映画は、新型コロナウイルスの影響でしばらく映画が上映されていなかったこともあってか、<u>驚異的な</u> <u>反響</u>があり、日本で<u>配給された</u>映画の中で一番の売り上げを記録した。",
+  "english_translation": "That animated film received an astounding response, probably because films had not been screening for some time due to the COVID pandemic, and it became the best-selling film distributed in Japan.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0442",
+      "word_number": 442,
+      "kanji": "驚異的な",
+      "furigana": "きょういてき",
+      "meaning_en": "astounding, phenomenal"
+    },
+    {
+      "word_id": "n1_0443",
+      "word_number": 443,
+      "kanji": "反響",
+      "furigana": "はんきょう",
+      "meaning_en": "response"
+    },
+    {
+      "word_id": "n1_0444",
+      "word_number": 444,
+      "kanji": "配給する",
+      "furigana": "はいきゅう",
+      "meaning_en": "distribution, distribute"
+    }
+  ]
+}

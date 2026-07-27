@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 14",
+  "japanese_text": "この地域は<u>土木</u>工事が行われ、以前より<u>インフラ</u>設備が整えられたが、年々人口が減り、<u>活力</u>を失っている。ここ数年は地域の<u>振興</u>を図り、役所が子育て相談窓口を<u>設けたり</u>、ご当地キャラクターを生み出したりしている。",
+  "english_translation": "Although civil engineering works have been carried out in this area and infrastructure facilities have been installed, the population has been decreasing year by year and the area is losing its vitality. In recent years, the local government has been trying to promote the area, setting up a childcare consultation service and creating a regional mascot character.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1162",
+      "word_number": 1162,
+      "kanji": "土木",
+      "furigana": "どぼく",
+      "meaning_en": "civil engineering"
+    },
+    {
+      "word_id": "n1_1163",
+      "word_number": 1163,
+      "kanji": "インフラ",
+      "furigana": "インフラ",
+      "meaning_en": "infrastructure"
+    },
+    {
+      "word_id": "n1_1164",
+      "word_number": 1164,
+      "kanji": "活力",
+      "furigana": "かつりょく",
+      "meaning_en": "vitality"
+    },
+    {
+      "word_id": "n1_1165",
+      "word_number": 1165,
+      "kanji": "振興",
+      "furigana": "しんこう",
+      "meaning_en": "promotion, promote"
+    },
+    {
+      "word_id": "n1_1166",
+      "word_number": 1166,
+      "kanji": "設ける",
+      "furigana": "もうける",
+      "meaning_en": "set up"
+    }
+  ]
+}

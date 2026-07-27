@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 16",
+  "japanese_text": "橋がかかったことで交通の便が良くなり、島民の生活は大きく変わった。私自身<u>実家</u>に<u>帰省する</u>のに以前は<u>フェリー</u>とバスを使っていたが、橋ができてからはバス1本で帰れるようになったため、<u>所要時間</u>が30分以上短くなった。",
+  "english_translation": "The islanders' lives have changed dramatically since the bridge was built, as transportation has become more convenient. I used to take the ferry and bus when returning home to my parents' house, but since the bridge was built, I can go by bus alone, shortening the time required by more than 30 minutes.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1285",
+      "word_number": 1285,
+      "kanji": "実家",
+      "furigana": "じっか",
+      "meaning_en": "parents' home, parents' house"
+    },
+    {
+      "word_id": "n1_1286",
+      "word_number": 1286,
+      "kanji": "帰省",
+      "furigana": "きせい",
+      "meaning_en": "homecoming, return home"
+    },
+    {
+      "word_id": "n1_1287",
+      "word_number": 1287,
+      "kanji": "フェリー",
+      "furigana": "フェリー",
+      "meaning_en": "ferry"
+    },
+    {
+      "word_id": "n1_1288",
+      "word_number": 1288,
+      "kanji": "所要時間",
+      "furigana": "しょようじかん",
+      "meaning_en": "time required"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 3",
+  "japanese_text": "株式<u>投資</u>は少なからず<u>リスク</u>を伴う。過去の株価<u>変動</u>等を見て投資先について吟味し、<u>賢明な</u>判断をしたい。",
+  "english_translation": "Investing in stocks involves no small amount of risk. I want to consider my investment options and make wise decisions by looking at past stock price fluctuations and other factors.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0173",
+      "word_number": 173,
+      "kanji": "投資",
+      "furigana": "とうし",
+      "meaning_en": "investment, invest"
+    },
+    {
+      "word_id": "n1_0174",
+      "word_number": 174,
+      "kanji": "リスク",
+      "furigana": "",
+      "meaning_en": "risk"
+    },
+    {
+      "word_id": "n1_0175",
+      "word_number": 175,
+      "kanji": "変動",
+      "furigana": "へんどう",
+      "meaning_en": "fluctuation, fluctuate"
+    },
+    {
+      "word_id": "n1_0176",
+      "word_number": 176,
+      "kanji": "賢明な",
+      "furigana": "けんめい",
+      "meaning_en": "wise"
+    }
+  ]
+}

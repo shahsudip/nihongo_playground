@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 19,
+  "title": "Topic 6",
+  "japanese_text": "「<u>追放</u>系」というジャンルがはやっている。最初は特殊能力を<u>有する</u>主人公が勇者や騎士団の仲間に<u>勧誘される</u>が、「仲間<u>失格</u>」と言われ、グループから追放される。そして主人公は元いたグループに<u>復讐する</u>のだ。",
+  "english_translation": "The \"exile\" genre is gaining popularity. At first, a hero possessing special abilities is recruited to join a group of heroes or knights, but is later informed that he is \"disqualified\" and expelled from the group. The hero then seeks revenge on his former group.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0458",
+      "word_number": 458,
+      "kanji": "追放する",
+      "furigana": "ついほう",
+      "meaning_en": "exile, exile"
+    },
+    {
+      "word_id": "n1_0459",
+      "word_number": 459,
+      "kanji": "有する",
+      "furigana": "ゆう",
+      "meaning_en": "possess"
+    },
+    {
+      "word_id": "n1_0460",
+      "word_number": 460,
+      "kanji": "勧誘する",
+      "furigana": "かんゆう",
+      "meaning_en": "invitation, recruit"
+    },
+    {
+      "word_id": "n1_0461",
+      "word_number": 461,
+      "kanji": "失格する",
+      "furigana": "しっかく",
+      "meaning_en": "disqualification, disqualify"
+    },
+    {
+      "word_id": "n1_0462",
+      "word_number": 462,
+      "kanji": "復讐する",
+      "furigana": "ふくしゅう",
+      "meaning_en": "revenge, seek revenge"
+    }
+  ]
+}

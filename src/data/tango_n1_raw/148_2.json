@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 12",
+  "japanese_text": "<u>獣</u>は、<u>かみ切る</u>力がとても強い。肉や<u>内臓</u>だけでなく、骨まで食べる動物もいる。<u>捕らえた</u> <u>獲物</u>を<u>分配する</u>こともあれば、分けずに<u>代わる代わる</u>食べることもある。",
+  "english_translation": "Beasts have tremendous biting power. Some animals eat not only the meat and organs, but also the bones. They may divide their captured prey among themselves, or they may devour it by turns without sharing.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1014",
+      "word_number": 1014,
+      "kanji": "獣",
+      "furigana": "けもの",
+      "meaning_en": "animal, beast"
+    },
+    {
+      "word_id": "n1_1015",
+      "word_number": 1015,
+      "kanji": "かみ切る",
+      "furigana": "かみきる",
+      "meaning_en": "bite"
+    },
+    {
+      "word_id": "n1_1016",
+      "word_number": 1016,
+      "kanji": "内臓",
+      "furigana": "ないぞう",
+      "meaning_en": "(internal) organ"
+    },
+    {
+      "word_id": "n1_1017",
+      "word_number": 1017,
+      "kanji": "捕らえる",
+      "furigana": "とらえる",
+      "meaning_en": "capture, catch"
+    },
+    {
+      "word_id": "n1_1018",
+      "word_number": 1018,
+      "kanji": "獲物",
+      "furigana": "えもの",
+      "meaning_en": "prey"
+    },
+    {
+      "word_id": "n1_1019",
+      "word_number": 1019,
+      "kanji": "分配",
+      "furigana": "ぶんぱい",
+      "meaning_en": "allocation, divide"
+    },
+    {
+      "word_id": "n1_1020",
+      "word_number": 1020,
+      "kanji": "代わる代わる",
+      "furigana": "かわるがわる",
+      "meaning_en": "by turns"
+    }
+  ]
+}

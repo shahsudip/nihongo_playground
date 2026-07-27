@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 13,
+  "title": "Topic 27",
+  "japanese_text": "A：ロボットと人工知能は<u>混同</u>されがちだよね。\nB：全然違う<u>定義</u>なんだけどね。それにしても人工知能の発展は目覚ましいね。いずれ<u>知性</u>を獲得したりするのかな？\nA：いずれは人工知能に<u>魂</u>が<u>宿る</u>時代も来るだろうね。知性を持った場合を想定して<u>制御</u>できる環境を整えておく必要がありそう。\nB：なるほど。<u>真理</u>だね。",
+  "english_translation": "A: Robots and AI are often confused. B: Their definitions are completely different. But the development of AI is remarkable. Will it eventually gain actual intelligence? A: I think there will come a time when a soul will reside in AI. We will need to prepare an environment to control it if it ever does gain intelligence. B: That's the truth.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2558",
+      "word_number": 2558,
+      "kanji": "混同[する]",
+      "furigana": "こんどう",
+      "meaning_en": "confusion, confuse"
+    },
+    {
+      "word_id": "n1_2559",
+      "word_number": 2559,
+      "kanji": "定義[する]",
+      "furigana": "ていぎ",
+      "meaning_en": "definition, define"
+    },
+    {
+      "word_id": "n1_2560",
+      "word_number": 2560,
+      "kanji": "知性",
+      "furigana": "ちせい",
+      "meaning_en": "intelligence"
+    },
+    {
+      "word_id": "n1_2561",
+      "word_number": 2561,
+      "kanji": "魂",
+      "furigana": "たましい",
+      "meaning_en": "soul"
+    },
+    {
+      "word_id": "n1_2562",
+      "word_number": 2562,
+      "kanji": "宿る",
+      "furigana": "やどる",
+      "meaning_en": "reside"
+    },
+    {
+      "word_id": "n1_2563",
+      "word_number": 2563,
+      "kanji": "制御[する]",
+      "furigana": "せいぎょ",
+      "meaning_en": "control, control"
+    },
+    {
+      "word_id": "n1_2564",
+      "word_number": 2564,
+      "kanji": "真理",
+      "furigana": "しんり",
+      "meaning_en": "truth"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 18",
+  "japanese_text": "A：午前中何してた？\nB：商品の納品数と、注文書の数を<u>照合して</u>た。そっちは？\nA：先輩の<u>街頭</u>調査に同行したり、新商品の<u>名称</u>を考えたり。\nB：え、楽しそう。はあ、早く研修期間終わらないかな。早く企画部の<u>戦力</u>になりたい。\nA：そうだね。まあ、来月には<u>配属される</u>んだし、実力を<u>遺憾なく</u>発揮できるよ！",
+  "english_translation": "A: What did you do in the morning? B: Compared number of goods delivered against the quantities on the order form. What were you doing? A: Accompanying a senior colleague on a street survey, and coming up with names for a new product. B: Wow, that sounds fun. I can't wait for my training period to be over. I really want to be a valuable asset to the planning department. A: Right. Well, you'll be assigned next month, and you can show off your abilities to the fullest!",
+  "annotated_words": [
+    {
+      "word_id": "n1_1476",
+      "word_number": 1476,
+      "kanji": "照合",
+      "furigana": "しょうごう",
+      "meaning_en": "comparison, compare"
+    },
+    {
+      "word_id": "n1_1477",
+      "word_number": 1477,
+      "kanji": "街頭",
+      "furigana": "がいとう",
+      "meaning_en": "(on the) street"
+    },
+    {
+      "word_id": "n1_1478",
+      "word_number": 1478,
+      "kanji": "名称",
+      "furigana": "めいしょう",
+      "meaning_en": "name"
+    },
+    {
+      "word_id": "n1_1479",
+      "word_number": 1479,
+      "kanji": "戦力",
+      "furigana": "せんりょく",
+      "meaning_en": "valuable asset (literally, \"military power\")"
+    },
+    {
+      "word_id": "n1_1480",
+      "word_number": 1480,
+      "kanji": "配属",
+      "furigana": "はいぞく",
+      "meaning_en": "assignment, assign"
+    },
+    {
+      "word_id": "n1_1481",
+      "word_number": 1481,
+      "kanji": "遺憾なく",
+      "furigana": "いかんなく",
+      "meaning_en": "to the fullest"
+    }
+  ]
+}

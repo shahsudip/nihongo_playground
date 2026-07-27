@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 24,
+  "title": "Topic 18",
+  "japanese_text": "＜司会アナウンス＞本<u>弁論</u>大会は、高校生<u>部門</u>と一般部門に分かれて行います。弁論の制限時間は４分で、時間を超えた場合は途中でも<u>打ち切ります</u>ので、<u>あらかじめ</u>ご注意ください。それでは、大会が始まるまで発表者は<u>控室</u>でお待ちください。",
+  "english_translation": "[Moderator's Announcement] This speech contest will be divided into high school and general categories. Please be aware in advance that the time limit for each speech is 4 minutes, and if this time is exceeded, the speech will be cut off even if mid-sentence. Now, please wait in the contestant waiting room until the contest begins.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1594",
+      "word_number": 1594,
+      "kanji": "弁論",
+      "furigana": "べんろん",
+      "meaning_en": "speech, speak"
+    },
+    {
+      "word_id": "n1_1595",
+      "word_number": 1595,
+      "kanji": "部門",
+      "furigana": "ぶもん",
+      "meaning_en": "category"
+    },
+    {
+      "word_id": "n1_1596",
+      "word_number": 1596,
+      "kanji": "打ち切る",
+      "furigana": "うちきる",
+      "meaning_en": "cut off, terminate"
+    },
+    {
+      "word_id": "n1_1597",
+      "word_number": 1597,
+      "kanji": "あらかじめ",
+      "furigana": "あらかじめ",
+      "meaning_en": "in advance"
+    },
+    {
+      "word_id": "n1_1598",
+      "word_number": 1598,
+      "kanji": "控室",
+      "furigana": "ひかえしつ",
+      "meaning_en": "waiting room"
+    }
+  ]
+}

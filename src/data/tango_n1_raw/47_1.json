@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 4",
+  "japanese_text": "人工的にダイヤモンドが生産されるようになって<u>久しく</u>、現代では天然の物と見分けがつかないほど再現性が高くなっている。<u>相場</u>は天然の物の半分ほどだが、<u>エレガントで</u><u>きらびやかな</u>輝きは高く評価されている。",
+  "english_translation": "Diamonds have been produced artificially for a long time, and today artificial diamonds are made so skillfully that they are indistinguishable from natural diamonds. Their market price is about half that of natural diamonds, but their elegant, sparkling brilliance is highly valued.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0237",
+      "word_number": 237,
+      "kanji": "久しい",
+      "furigana": "ひさしい",
+      "meaning_en": "for a long time"
+    },
+    {
+      "word_id": "n1_0238",
+      "word_number": 238,
+      "kanji": "相場",
+      "furigana": "そうば",
+      "meaning_en": "market price"
+    },
+    {
+      "word_id": "n1_0239",
+      "word_number": 239,
+      "kanji": "エレガントな",
+      "furigana": "",
+      "meaning_en": "elegant"
+    },
+    {
+      "word_id": "n1_0240",
+      "word_number": 240,
+      "kanji": "きらびやかな",
+      "furigana": "",
+      "meaning_en": "sparkling"
+    }
+  ]
+}

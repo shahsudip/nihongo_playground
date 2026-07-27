@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 5",
+  "japanese_text": "<u>精密</u>かつ<u>精巧な</u>技術は<u>兵器</u>製造にも使用されるため、<u>悪用</u>を防止することが重要である。",
+  "english_translation": "Since precise, sophisticated technology is also used for manufacturing weapons, it is important to prevent its misuse.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0295",
+      "word_number": 295,
+      "kanji": "精密な",
+      "furigana": "せいみつな",
+      "meaning_en": "precise"
+    },
+    {
+      "word_id": "n1_0296",
+      "word_number": 296,
+      "kanji": "精巧な",
+      "furigana": "せいこうな",
+      "meaning_en": "sophisticated"
+    },
+    {
+      "word_id": "n1_0297",
+      "word_number": 297,
+      "kanji": "兵器",
+      "furigana": "へいき",
+      "meaning_en": "weapon"
+    },
+    {
+      "word_id": "n1_0298",
+      "word_number": 298,
+      "kanji": "悪用",
+      "furigana": "あくよう",
+      "meaning_en": "misuse, misuse"
+    }
+  ]
+}

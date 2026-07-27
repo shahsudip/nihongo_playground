@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 13",
+  "japanese_text": "高齢者や障がいを持つ人たちだけでなく、すべての人にとって<u>浴室</u>の<u>バリアフリー</u>化は重要である。手すりや床に滑り止めを<u>設置すれば</u>、<u>転倒</u>を防止できる。また、<u>いざ</u>というときに誰かに助けてもらうことを<u>想定して</u>、浴室に非常呼び出しボタンをつけておくのもよい。",
+  "english_translation": "It is important for everyone, not only the elderly and people with disabilities, to have a barrier-free bathroom. Installing handrails and non-slip flooring can help prevent falls. It is also a good idea to install an emergency call button in the bathroom, assuming someone may need help in an emergency.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1085",
+      "word_number": 1085,
+      "kanji": "浴室",
+      "furigana": "よくしつ",
+      "meaning_en": "bathroom"
+    },
+    {
+      "word_id": "n1_1086",
+      "word_number": 1086,
+      "kanji": "バリアフリー",
+      "furigana": "",
+      "meaning_en": "barrier-free"
+    },
+    {
+      "word_id": "n1_1087",
+      "word_number": 1087,
+      "kanji": "設置",
+      "furigana": "せっち",
+      "meaning_en": "installation, install"
+    },
+    {
+      "word_id": "n1_1088",
+      "word_number": 1088,
+      "kanji": "転倒",
+      "furigana": "てんとう",
+      "meaning_en": "falling, fall"
+    },
+    {
+      "word_id": "n1_1089",
+      "word_number": 1089,
+      "kanji": "いざ",
+      "furigana": "",
+      "meaning_en": "in an emergency"
+    },
+    {
+      "word_id": "n1_1090",
+      "word_number": 1090,
+      "kanji": "想定",
+      "furigana": "そうてい",
+      "meaning_en": "assumption, assume"
+    }
+  ]
+}

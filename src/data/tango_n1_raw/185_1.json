@@ -1,0 +1,37 @@
+{
+  "is_story": false,
+  "story_number": 5,
+  "title": "Topic 16",
+  "japanese_text": "A：<u>念願</u>の沖縄旅行はどうだった？\nB：最高だったよ！海も想像より<u>はるかに</u>きれいでさ。将来は絶対<u>移住したい</u>な〜。\nA：天気にも恵まれてよかったね。\nB：台風が来るかもって聞いたときはかなり<u>がっくり</u>したけどね。来なくてよかった！",
+  "english_translation": "A: How was your trip to Okinawa, your dearest wish? B: It was amazing! The ocean was far more beautiful than I'd imagined. I definitely want to move there in the future! A: I'm glad you were blessed with good weather. B: I was pretty disappointed when I heard there might be a typhoon coming. I'm glad it didn't come!",
+  "annotated_words": [
+    {
+      "word_id": "n1_1290",
+      "word_number": 1290,
+      "kanji": "念願",
+      "furigana": "ねんがん",
+      "meaning_en": "heart's desire, dearest wish"
+    },
+    {
+      "word_id": "n1_1291",
+      "word_number": 1291,
+      "kanji": "はるかな",
+      "furigana": "はるかな",
+      "meaning_en": "far more"
+    },
+    {
+      "word_id": "n1_1292",
+      "word_number": 1292,
+      "kanji": "移住",
+      "furigana": "いじゅう",
+      "meaning_en": "relocation, move"
+    },
+    {
+      "word_id": "n1_1293",
+      "word_number": 1293,
+      "kanji": "がっくり(と)",
+      "furigana": "がっくり",
+      "meaning_en": "disappointedly"
+    }
+  ]
+}

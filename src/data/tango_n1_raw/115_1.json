@@ -1,0 +1,37 @@
+{
+  "is_story": false,
+  "story_number": 25,
+  "title": "Topic 9",
+  "japanese_text": "A：彼女、僕と目が合うと<u>照れた</u>ように笑ったり、隣に座ると肩に<u>寄りかかったり</u>してくるんだけど、気があるのかな。\nB：ばかばかしい。あなたが社長だと知ってからそんなことしてくるんだから、<u>下心</u>があるに決まってるじゃない。\nC：<u>同感</u>。気をつけた方がいいね。",
+  "english_translation": "A: When her eyes meet mine, she smiles like she's shy. And when I sit next to her, she leans on my shoulder. I wonder whether she's interested in me? B: This is ridiculous. She did that after she found out that you're the company president, so of course she has ulterior motives. C: I feel the same way. You should be careful.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0744",
+      "word_number": 744,
+      "kanji": "照れる",
+      "furigana": "てれる",
+      "meaning_en": "be shy"
+    },
+    {
+      "word_id": "n1_0745",
+      "word_number": 745,
+      "kanji": "寄りかかる",
+      "furigana": "よりかかる",
+      "meaning_en": "lean on"
+    },
+    {
+      "word_id": "n1_0746",
+      "word_number": 746,
+      "kanji": "下心",
+      "furigana": "したごころ",
+      "meaning_en": "ulterior"
+    },
+    {
+      "word_id": "n1_0747",
+      "word_number": 747,
+      "kanji": "同感",
+      "furigana": "どうかん",
+      "meaning_en": "sympathy, feel the same way"
+    }
+  ]
+}

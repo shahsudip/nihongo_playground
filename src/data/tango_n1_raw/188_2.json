@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 16",
+  "japanese_text": "先日、郊外で新たに<u>遺跡</u>が見つかった。研究者たちは調査に<u>着手しよう</u>としたものの、住人から反対意見があったこともあり、調査申請は<u>却下された</u>。今後どのように住民からの理解を得るかが<u>目下</u>の課題となっている。",
+  "english_translation": "Some archaeological ruins were recently discovered in the suburbs. Researchers tried to start studying the site, but their application was rejected due to objections from the residents. Now the issue is gaining the understanding of the local residents.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1311",
+      "word_number": 1311,
+      "kanji": "遺跡",
+      "furigana": "いせき",
+      "meaning_en": "ruins"
+    },
+    {
+      "word_id": "n1_1312",
+      "word_number": 1312,
+      "kanji": "着手",
+      "furigana": "ちゃくしゅ",
+      "meaning_en": "start, commence"
+    },
+    {
+      "word_id": "n1_1313",
+      "word_number": 1313,
+      "kanji": "却下",
+      "furigana": "きゃっか",
+      "meaning_en": "dismissal, reject"
+    },
+    {
+      "word_id": "n1_1314",
+      "word_number": 1314,
+      "kanji": "目下",
+      "furigana": "もっか",
+      "meaning_en": "now, present"
+    }
+  ]
+}

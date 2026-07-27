@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 3",
+  "japanese_text": "財産を<u>相続する</u>と、税金がかかる場合がある。基本的には現金で<u>一括</u>で納めることになっているが、特別な<u>納税</u>方法として、分割で納める方法や、相続した財産をそのまま納める方法もある。",
+  "english_translation": "When you inherit property, you may have to pay tax on it. Basically, the tax is paid in a lump sum in cash, but there are special ways to pay the tax, such as paying by installments or paying the inherited property as it is.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0165",
+      "word_number": 165,
+      "kanji": "相続",
+      "furigana": "そうぞく",
+      "meaning_en": "inheritance, inherit"
+    },
+    {
+      "word_id": "n1_0166",
+      "word_number": 166,
+      "kanji": "一括",
+      "furigana": "いっかつ",
+      "meaning_en": "lump sum, consolidate"
+    },
+    {
+      "word_id": "n1_0167",
+      "word_number": 167,
+      "kanji": "納税",
+      "furigana": "のうぜい",
+      "meaning_en": "tax payment, pay tax"
+    }
+  ]
+}

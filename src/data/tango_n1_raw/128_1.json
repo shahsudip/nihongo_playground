@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 11",
+  "japanese_text": "［ボクシング］井上選手は一度<u>ダウン</u>を奪われたものの、それ以降は<u>反撃</u>に転じ、<u>優勢</u>に試合を進めた結果、多くの人の予想を<u>覆し</u>、<u>判定</u>で勝利した。",
+  "english_translation": "[Boxing] Inoue was knocked down once, but went on the counterattack and fought a dominant fight, winning by decision and overturning many people's expectations.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0837",
+      "word_number": 837,
+      "kanji": "ダウン[する]",
+      "furigana": "だうん",
+      "meaning_en": "down, knock down"
+    },
+    {
+      "word_id": "n1_0838",
+      "word_number": 838,
+      "kanji": "反撃[する]",
+      "furigana": "はんげき",
+      "meaning_en": "counterattack"
+    },
+    {
+      "word_id": "n1_0839",
+      "word_number": 839,
+      "kanji": "優勢な",
+      "furigana": "ゆうせい",
+      "meaning_en": "dominant"
+    },
+    {
+      "word_id": "n1_0840",
+      "word_number": 840,
+      "kanji": "覆す",
+      "furigana": "くつがえす",
+      "meaning_en": "overturn"
+    },
+    {
+      "word_id": "n1_0841",
+      "word_number": 841,
+      "kanji": "判定[する]",
+      "furigana": "はんてい",
+      "meaning_en": "decision, decide"
+    }
+  ]
+}

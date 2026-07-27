@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 11",
+  "japanese_text": "［野球］私の応援しているチームが今年<u>獲得した</u>山田選手は、身長190cmという恵まれた<u>体格</u>で、長い腕を<u>しなやかに</u>振り下ろし、<u>威力</u>のある<u>ストレート</u>を投げる。高校生のときから<u>一目置かれる</u>、将来<u>有望な</u>選手だ。",
+  "english_translation": "[Baseball] Yamada, whom my favorite team acquired this year, is 190 centimeters tall and blessed with a good physique. He swings those long arms gracefully and throws a straight ball with great power. He is a promising player who has been admired since he was a high school student.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0858",
+      "word_number": 858,
+      "kanji": "獲得[する]",
+      "furigana": "かくとく",
+      "meaning_en": "acquisition, acquire"
+    },
+    {
+      "word_id": "n1_0859",
+      "word_number": 859,
+      "kanji": "体格",
+      "furigana": "たいかく",
+      "meaning_en": "physique"
+    },
+    {
+      "word_id": "n1_0860",
+      "word_number": 860,
+      "kanji": "しなやかな",
+      "furigana": "しなやかな",
+      "meaning_en": "graceful, supple"
+    },
+    {
+      "word_id": "n1_0861",
+      "word_number": 861,
+      "kanji": "威力",
+      "furigana": "いりょく",
+      "meaning_en": "power"
+    },
+    {
+      "word_id": "n1_0862",
+      "word_number": 862,
+      "kanji": "ストレート",
+      "furigana": "すとれーと",
+      "meaning_en": "straight"
+    },
+    {
+      "word_id": "n1_0863",
+      "word_number": 863,
+      "kanji": "一目置く",
+      "furigana": "いちもくおく",
+      "meaning_en": "admire, acknowledge superiority"
+    },
+    {
+      "word_id": "n1_0864",
+      "word_number": 864,
+      "kanji": "有望な",
+      "furigana": "ゆうぼう",
+      "meaning_en": "promising"
+    }
+  ]
+}

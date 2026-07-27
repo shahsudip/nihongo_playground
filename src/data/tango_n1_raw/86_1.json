@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 7",
+  "japanese_text": "私の父は、新聞の<u>社説</u>・<u>投書</u>欄・<u>囲碁</u>ページのチェックが日課だ。また、週末には、毎週日曜掲載のクロスワードパズルを解き、<u>懸賞</u>に応募しているが、当たったことは一度もないようだ。",
+  "english_translation": "My father always checks the editorials, letters to the editor, and go pages of the newspaper. On weekends, he solves the Sunday crossword puzzle and enters the contests, but he has never won.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0528",
+      "word_number": 528,
+      "kanji": "社説",
+      "furigana": "しゃせつ",
+      "meaning_en": "editorial"
+    },
+    {
+      "word_id": "n1_0529",
+      "word_number": 529,
+      "kanji": "投書",
+      "furigana": "とうしょ",
+      "meaning_en": "letter to the editor, write a letter to the editor"
+    },
+    {
+      "word_id": "n1_0530",
+      "word_number": 530,
+      "kanji": "囲碁",
+      "furigana": "いご",
+      "meaning_en": "(the game of) go"
+    },
+    {
+      "word_id": "n1_0531",
+      "word_number": 531,
+      "kanji": "懸賞",
+      "furigana": "けんしょう",
+      "meaning_en": "contest"
+    }
+  ]
+}

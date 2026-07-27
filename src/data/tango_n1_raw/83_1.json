@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 7",
+  "japanese_text": "よく<u>吟味し</u>、<u>最善</u>だと思われた策に重大な欠陥が見つかり、また議論が<u>振り出し</u>に戻ってしまった。",
+  "english_translation": "After careful examination, we found a serious flaw in what we'd thought to be the best plan, so we had to go back to the starting point.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0503",
+      "word_number": 503,
+      "kanji": "吟味",
+      "furigana": "ぎんみ",
+      "meaning_en": "examination, examine"
+    },
+    {
+      "word_id": "n1_0504",
+      "word_number": 504,
+      "kanji": "最善",
+      "furigana": "さいぜん",
+      "meaning_en": "best"
+    },
+    {
+      "word_id": "n1_0505",
+      "word_number": 505,
+      "kanji": "振り出し",
+      "furigana": "ふりだし",
+      "meaning_en": "beginning, starting point"
+    }
+  ]
+}

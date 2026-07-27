@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 18,
+  "title": "Topic 20",
+  "japanese_text": "<u>先天的な</u>病気が原因で、「角膜」という眼の前面を覆う<u>膜</u>が濁っていたため、１年前、<u>移植</u>手術を受けた。術後の<u>経過</u>もよく、現在は視力が大幅に改善した。",
+  "english_translation": "Due to a congenital condition, the membrane covering the front of my eyes, known as the \"cornea,\" had become cloudy, so I underwent transplant surgery a year ago. My postoperative progress has been good, and my vision has improved significantly.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1933",
+      "word_number": 1933,
+      "kanji": "先天的な",
+      "furigana": "せんてんてき",
+      "meaning_en": "congenital"
+    },
+    {
+      "word_id": "n1_1934",
+      "word_number": 1934,
+      "kanji": "膜",
+      "furigana": "まく",
+      "meaning_en": "membrane"
+    },
+    {
+      "word_id": "n1_1935",
+      "word_number": 1935,
+      "kanji": "移植[する]",
+      "furigana": "いしょく",
+      "meaning_en": "transplant, transplant"
+    },
+    {
+      "word_id": "n1_1936",
+      "word_number": 1936,
+      "kanji": "経過[する]",
+      "furigana": "けいか",
+      "meaning_en": "progress, make progress"
+    }
+  ]
+}

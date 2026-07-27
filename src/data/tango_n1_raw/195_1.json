@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 17",
+  "japanese_text": "A：来週の木曜日って大学の<u>創立</u>記念日？\nB：うん、だから授業はないよね。でも、<u>必修</u>科目の<u>課題</u>が多すぎて休める気がしないよ。",
+  "english_translation": "A: Isn’t next Thursday the anniversary of the university’s founding? B: Yes, so there won’t be any classes. But I don’t think I can take a day off because I have too many assignments to do for my required courses.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1349",
+      "word_number": 1349,
+      "kanji": "創立",
+      "furigana": "そうりつ",
+      "meaning_en": "founding, found"
+    },
+    {
+      "word_id": "n1_1350",
+      "word_number": 1350,
+      "kanji": "必修",
+      "furigana": "ひっしゅう",
+      "meaning_en": "mandatory course, required course"
+    },
+    {
+      "word_id": "n1_1351",
+      "word_number": 1351,
+      "kanji": "課題",
+      "furigana": "かだい",
+      "meaning_en": "assignment, issue, task"
+    }
+  ]
+}

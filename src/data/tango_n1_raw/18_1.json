@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 1",
+  "japanese_text": "では、生野菜をさっと<u>冷水</u>に<u>浸しましょう</u>。シャキッとしますよ。そして、お魚と一緒にこの<u>平たい</u>お皿に並べます。はい、完成です。生のお魚は<u>足が早い</u>ですから、早めに召し上がってくださいね。",
+  "english_translation": "Now, quickly immerse the raw vegetables in cold water. It makes them crunchier. Then arrange them on this flat platter with the fish. And it's done! Raw fish spoils quickly, so please eat it as soon as possible.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0032",
+      "word_number": 32,
+      "kanji": "冷水",
+      "furigana": "れいすい",
+      "meaning_en": "cold water"
+    },
+    {
+      "word_id": "n1_0033",
+      "word_number": 33,
+      "kanji": "浸す",
+      "furigana": "ひた",
+      "meaning_en": "immerse"
+    },
+    {
+      "word_id": "n1_0034",
+      "word_number": 34,
+      "kanji": "平たい",
+      "furigana": "ひら",
+      "meaning_en": "flat"
+    },
+    {
+      "word_id": "n1_0035",
+      "word_number": 35,
+      "kanji": "足が早い",
+      "furigana": "あしがはやい",
+      "meaning_en": "spoils quickly"
+    }
+  ]
+}

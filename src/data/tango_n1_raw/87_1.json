@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 7",
+  "japanese_text": "ある音楽家の<u>伝記</u>映画の制作が発表された。学生の頃、彼の曲が大好きで、バイト代から生活費を差し引いた<u>残金</u>をつぎ込んでピアノの<u>楽譜</u>を買い集め、<u>一心に</u>練習に励んだものだ。映画の制作には、有名なハリウッド映画のスタッフが名を<u>連ねて</u>おり、公開が楽しみだ。",
+  "english_translation": "The production of a biographical film about a certain musician has been announced. When I was a student, I loved his music so much that after deducting my living expenses, I spent all my remaining money from my part-time job to buy piano scores, and I practiced with all my heart. The film was produced by a crew associated with famous Hollywood movies, so I'm really looking forward to its release.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0538",
+      "word_number": 538,
+      "kanji": "伝記",
+      "furigana": "でんき",
+      "meaning_en": "biography"
+    },
+    {
+      "word_id": "n1_0539",
+      "word_number": 539,
+      "kanji": "残金",
+      "furigana": "ざんきん",
+      "meaning_en": "balance, remaining money"
+    },
+    {
+      "word_id": "n1_0540",
+      "word_number": 540,
+      "kanji": "楽譜",
+      "furigana": "がくふ",
+      "meaning_en": "sheet music, score"
+    },
+    {
+      "word_id": "n1_0541",
+      "word_number": 541,
+      "kanji": "一心に",
+      "furigana": "いっしんに",
+      "meaning_en": "with all one's heart"
+    },
+    {
+      "word_id": "n1_0542",
+      "word_number": 542,
+      "kanji": "連ねる",
+      "furigana": "つらねる",
+      "meaning_en": "associate with, connect"
+    },
+    {
+      "word_id": "n1_0543",
+      "word_number": 543,
+      "kanji": "連なる",
+      "furigana": "つらなる",
+      "meaning_en": "be connected with, be linked to"
+    }
+  ]
+}

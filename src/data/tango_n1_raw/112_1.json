@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 20,
+  "title": "Topic 9",
+  "japanese_text": "<u>再三</u>注意したにも関わらず、部下がまた同じミスをした。ミスのたびに一緒に頭を下げ、何度も<u>助言</u>を与えてきたが、もう<u>かばい</u>きれない。本当に<u>うんざり</u>する。",
+  "english_translation": "There's a junior employee who has just made the same mistake, despite me warning him over and over again. Every time he makes a mistake, I have to apologize alongside him, and I have given him advice so many times, but I can't cover for him anymore. I'm finding it really tiresome.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0721",
+      "word_number": 721,
+      "kanji": "再三",
+      "furigana": "さいさん",
+      "meaning_en": "over and over again"
+    },
+    {
+      "word_id": "n1_0722",
+      "word_number": 722,
+      "kanji": "助言",
+      "furigana": "じょげん",
+      "meaning_en": "advice, advise"
+    },
+    {
+      "word_id": "n1_0723",
+      "word_number": 723,
+      "kanji": "かばう",
+      "furigana": "かばう",
+      "meaning_en": "cover for"
+    },
+    {
+      "word_id": "n1_0724",
+      "word_number": 724,
+      "kanji": "うんざり",
+      "furigana": "うんざり",
+      "meaning_en": "tiresome"
+    }
+  ]
+}

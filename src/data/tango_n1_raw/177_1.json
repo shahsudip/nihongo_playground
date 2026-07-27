@@ -1,0 +1,65 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 15",
+  "japanese_text": "<u>雨雲</u>が本州南岸に<u>停滞</u>し、私が住む<u>内陸</u>部でも大雨が降った。そのため、近所の川が<u>氾濫</u>し、<u>救援</u>が行われているが、<u>依然</u>５人の<u>安否</u>が分かっていない。今後も<u>警戒</u>が必要だ。",
+  "english_translation": "After rain clouds piled up on the southern coast of Honshu, heavy rain fell in the inland area where I live. As a result, a local river overflowed, and although rescue efforts are underway, the safety of five people is still unknown. We must continue to be vigilant.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1228",
+      "word_number": 1228,
+      "kanji": "雨雲",
+      "furigana": "あまぐも",
+      "meaning_en": "rain cloud"
+    },
+    {
+      "word_id": "n1_1229",
+      "word_number": 1229,
+      "kanji": "停滞[する]",
+      "furigana": "ていたい[する]",
+      "meaning_en": "stagnation, pile up"
+    },
+    {
+      "word_id": "n1_1230",
+      "word_number": 1230,
+      "kanji": "内陸",
+      "furigana": "ないりく",
+      "meaning_en": "inland"
+    },
+    {
+      "word_id": "n1_1231",
+      "word_number": 1231,
+      "kanji": "氾濫[する]",
+      "furigana": "はんらん[する]",
+      "meaning_en": "overflowing, overflow"
+    },
+    {
+      "word_id": "n1_1232",
+      "word_number": 1232,
+      "kanji": "救援[する]",
+      "furigana": "きゅうえん[する]",
+      "meaning_en": "rescue, rescue"
+    },
+    {
+      "word_id": "n1_1233",
+      "word_number": 1233,
+      "kanji": "依然",
+      "furigana": "いぜん",
+      "meaning_en": "still"
+    },
+    {
+      "word_id": "n1_1234",
+      "word_number": 1234,
+      "kanji": "安否",
+      "furigana": "あんぴ",
+      "meaning_en": "safety, wellbeing"
+    },
+    {
+      "word_id": "n1_1235",
+      "word_number": 1235,
+      "kanji": "警戒[する]",
+      "furigana": "けいかい[する]",
+      "meaning_en": "caution, be vigilant"
+    }
+  ]
+}

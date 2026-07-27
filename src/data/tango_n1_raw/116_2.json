@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 27,
+  "title": "Topic 9",
+  "japanese_text": "妹は中学生のとき、父を<u>拒絶し</u>、話しかけられると<u>うっとうしそうに</u>していた。しかし、高校生になり少しずつ言葉を<u>交わす</u>ようになった。いい<u>兆候</u>だと思って見守っている。",
+  "english_translation": "When my sister was in junior high school, she rejected my father and seemed annoyed whenever he spoke to her. However, when she entered high school, she gradually started to exchange words with him. As I watch over her, I think that's a good sign.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0754",
+      "word_number": 754,
+      "kanji": "拒絶",
+      "furigana": "きょぜつ",
+      "meaning_en": "denial, reject"
+    },
+    {
+      "word_id": "n1_0755",
+      "word_number": 755,
+      "kanji": "うっとうしい",
+      "furigana": "うっとうしい",
+      "meaning_en": "annoyed"
+    },
+    {
+      "word_id": "n1_0756",
+      "word_number": 756,
+      "kanji": "交わす",
+      "furigana": "かわす",
+      "meaning_en": "exchange"
+    },
+    {
+      "word_id": "n1_0757",
+      "word_number": 757,
+      "kanji": "兆候",
+      "furigana": "ちょうこう",
+      "meaning_en": "sign, symptom"
+    }
+  ]
+}

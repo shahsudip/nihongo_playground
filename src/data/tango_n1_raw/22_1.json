@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 15,
+  "title": "Topic 1",
+  "japanese_text": "気候、<u>風土</u>と食文化は<u>密接な</u>関係にあり、同じ国でも地域によって異なる料理があるのが面白い。<u>それゆえ</u>、その食の違いに<u>魅せられて</u> <u>頻繁に</u>国内を旅行する人も少なくない。",
+  "english_translation": "Climate, cultural climate, and culinary culture have a close relationship, and it is interesting to see how different regions of the same country have differing cuisines. Therefore, people frequently travel within a country, fascinated by these culinary differences.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0063",
+      "word_number": 63,
+      "kanji": "風土",
+      "furigana": "ふうど",
+      "meaning_en": "cultural climate"
+    },
+    {
+      "word_id": "n1_0064",
+      "word_number": 64,
+      "kanji": "密接な",
+      "furigana": "みっせつ",
+      "meaning_en": "close"
+    },
+    {
+      "word_id": "n1_0065",
+      "word_number": 65,
+      "kanji": "それゆえ",
+      "furigana": "それゆえ",
+      "meaning_en": "therefore"
+    },
+    {
+      "word_id": "n1_0066",
+      "word_number": 66,
+      "kanji": "ゆえに",
+      "furigana": "ゆえに",
+      "meaning_en": "accordingly"
+    },
+    {
+      "word_id": "n1_0067",
+      "word_number": 67,
+      "kanji": "魅せる",
+      "furigana": "み",
+      "meaning_en": "fascinate"
+    },
+    {
+      "word_id": "n1_0068",
+      "word_number": 68,
+      "kanji": "頻繁な",
+      "furigana": "ひんぱん",
+      "meaning_en": "frequent"
+    }
+  ]
+}

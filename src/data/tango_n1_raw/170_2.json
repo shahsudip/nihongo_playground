@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 14",
+  "japanese_text": "高橋さんの家は<u>見晴らし</u>のいい高台に建っている。ベランダからは、この町全体を<u>見渡す</u>ことができるし、<u>はるか</u>遠くには富士山も見える。",
+  "english_translation": "Mr. Takahashi's house stands on a hill with superb views. From the balcony, you can look out over the whole town, and in the far distance you can even see Mount Fuji.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1177",
+      "word_number": 1177,
+      "kanji": "見晴らし",
+      "furigana": "みはらし",
+      "meaning_en": "view"
+    },
+    {
+      "word_id": "n1_1178",
+      "word_number": 1178,
+      "kanji": "見渡す",
+      "furigana": "みわたす",
+      "meaning_en": "look out over"
+    },
+    {
+      "word_id": "n1_1179",
+      "word_number": 1179,
+      "kanji": "はるか",
+      "furigana": "はるか",
+      "meaning_en": "far"
+    }
+  ]
+}

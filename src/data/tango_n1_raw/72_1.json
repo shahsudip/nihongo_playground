@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 6",
+  "japanese_text": "好きなキャラクターが凶悪な悪魔の<u>犠牲</u>になった。漫画のキャラクターであるにもかかわらず、<u>実在の</u>人物が亡くなったかのような<u>喪失感</u>を味わった。",
+  "english_translation": "My favorite character fell victim to a vicious demon. Even though it was a character from a comic book, I felt a sense of loss as if an actual person had died.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0420",
+      "word_number": 420,
+      "kanji": "犠牲",
+      "furigana": "ぎせい",
+      "meaning_en": "sacrifice, victim"
+    },
+    {
+      "word_id": "n1_0421",
+      "word_number": 421,
+      "kanji": "犠牲者",
+      "furigana": "ぎせいしゃ",
+      "meaning_en": "victim, casualty"
+    },
+    {
+      "word_id": "n1_0422",
+      "word_number": 422,
+      "kanji": "実在する",
+      "furigana": "じつざい",
+      "meaning_en": "actual, exist"
+    },
+    {
+      "word_id": "n1_0423",
+      "word_number": 423,
+      "kanji": "喪失する",
+      "furigana": "そうしつ",
+      "meaning_en": "loss, lose"
+    }
+  ]
+}

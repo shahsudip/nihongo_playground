@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 21,
+  "title": "Topic 5",
+  "japanese_text": "Ｗｅｂ会議中に音声が<u>途切れたり</u>画面が<u>ぼやけたり</u>する問題が発生した場合、発表者以外の参加者は音声を<u>ミュート</u>にし、カメラをオフにすることで改善する可能性がある。",
+  "english_translation": "If a problem occurs during online conferencing where the audio is interrupted or the screen is blurred, participants other than the presenter may be able to remedy the problem by muting the audio and turning off the camera.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0346",
+      "word_number": 346,
+      "kanji": "途切れる",
+      "furigana": "とぎれる",
+      "meaning_en": "interrupt"
+    },
+    {
+      "word_id": "n1_0347",
+      "word_number": 347,
+      "kanji": "ぼやける",
+      "furigana": "",
+      "meaning_en": "blur"
+    },
+    {
+      "word_id": "n1_0348",
+      "word_number": 348,
+      "kanji": "ミュート",
+      "furigana": "",
+      "meaning_en": "mute"
+    }
+  ]
+}

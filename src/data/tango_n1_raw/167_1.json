@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 14",
+  "japanese_text": "横浜は<u>傾斜</u>のきつい道が多いが、みなとみらい駅周辺は<u>埋め立て地</u>のため<u>平たん</u>だ。美しい<u>街並み</u>が人気で、休日は大勢の人で<u>にぎわっている</u>。",
+  "english_translation": "Yokohama has lots of streets with steep inclines, but the area around Minato-Mirai Station is flat because it is reclaimed land. The beautiful streetscapes have proved popular, bustling with people on weekends and holidays.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1150",
+      "word_number": 1150,
+      "kanji": "傾斜",
+      "furigana": "けいしゃ",
+      "meaning_en": "incline, slope"
+    },
+    {
+      "word_id": "n1_1151",
+      "word_number": 1151,
+      "kanji": "埋め立て地",
+      "furigana": "うめたてち",
+      "meaning_en": "landfill, reclaimed land"
+    },
+    {
+      "word_id": "n1_1153",
+      "word_number": 1153,
+      "kanji": "平たんな",
+      "furigana": "へいたんな",
+      "meaning_en": "flat"
+    },
+    {
+      "word_id": "n1_1154",
+      "word_number": 1154,
+      "kanji": "街並み",
+      "furigana": "まちなみ",
+      "meaning_en": "streetscape"
+    },
+    {
+      "word_id": "n1_1155",
+      "word_number": 1155,
+      "kanji": "にぎわう",
+      "furigana": "にぎわう",
+      "meaning_en": "bustle"
+    }
+  ]
+}

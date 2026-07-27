@@ -30,6 +30,7 @@ import BookListPage from './components/BookListPage.jsx';
 import BookChapterListPage from './components/BookChapterListPage.jsx';
 import BookQuizTakerPage from './components/BookQuizTakerPage.jsx';
 import ShinkanzenQuizPage from './components/ShinkanzenQuizPage.jsx';
+import TangoReadingPage from './components/TangoReadingPage.jsx';
 
 // --- PRACTICE SETS ---
 import './assets/practice_sets.css';
@@ -132,6 +133,10 @@ export default function App() {
           <Route
             path="/books/:bookId/chapters/:chapterId"
             element={<ProtectedRoute><BookQuizTakerPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/tango-reading/:bookId/chapters/:chapterId"
+            element={<ProtectedRoute><TangoReadingPage /></ProtectedRoute>}
           />
 
           {/* --- PRACTICE SETS ROUTES --- */}

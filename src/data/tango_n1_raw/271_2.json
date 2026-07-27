@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 17,
+  "title": "Topic 20",
+  "japanese_text": "てんかんの<u>発作</u>は、神経細胞の<u>過剰な</u>活動によって起こる。私の子どもも長く苦しんできたが、<u>辛抱強く</u>治療に耐え、症状を<u>抑制する</u>ことに成功した。",
+  "english_translation": "Epileptic seizures are caused by excessive activity of the neurons. My child suffered for a long time, but patiently endured treatment and succeeded in controlling his symptoms.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1928",
+      "word_number": 1928,
+      "kanji": "発作",
+      "furigana": "ほっさ",
+      "meaning_en": "seizure"
+    },
+    {
+      "word_id": "n1_1929",
+      "word_number": 1929,
+      "kanji": "過剰な",
+      "furigana": "かじょう",
+      "meaning_en": "excessive"
+    },
+    {
+      "word_id": "n1_1930",
+      "word_number": 1930,
+      "kanji": "辛抱強い",
+      "furigana": "しんぼうづよい",
+      "meaning_en": "patient"
+    },
+    {
+      "word_id": "n1_1931",
+      "word_number": 1931,
+      "kanji": "辛抱[する]",
+      "furigana": "しんぼう",
+      "meaning_en": "endurance, endure"
+    },
+    {
+      "word_id": "n1_1932",
+      "word_number": 1932,
+      "kanji": "抑制[する]",
+      "furigana": "よくせい",
+      "meaning_en": "control, control"
+    }
+  ]
+}

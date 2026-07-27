@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 17,
+  "title": "Topic 17",
+  "japanese_text": "A：あさっての新学期の<u>オリエンテーション</u>って１１時からだっけ？\nB：ううん、９時からだよ。早いよね。もうちょっと<u>遅らせて</u>ほしい。\nA：そうだね。選択科目の<u>一覧表</u>とか就活関連の資料も配られるらしいし、遅刻しないようにしなきゃ。",
+  "english_translation": "A: The orientation for the new semester starts at 11 a.m. the day after tomorrow, right? B: No, it starts at 9 a.m. It’s kind of early. I wish they’d push it back a little. A: Oh, that’s right. I heard they’re going to hand out a list of elective courses and job-hunting-related documents, so we’d better not be late.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1421",
+      "word_number": 1421,
+      "kanji": "オリエンテーション",
+      "furigana": "オリエンテーション",
+      "meaning_en": "orientation"
+    },
+    {
+      "word_id": "n1_1422",
+      "word_number": 1422,
+      "kanji": "遅らせる",
+      "furigana": "おくらせる",
+      "meaning_en": "make later, push back"
+    },
+    {
+      "word_id": "n1_1423",
+      "word_number": 1423,
+      "kanji": "遅らす",
+      "furigana": "おくらす",
+      "meaning_en": "delay, hold up"
+    },
+    {
+      "word_id": "n1_1424",
+      "word_number": 1424,
+      "kanji": "一覧表",
+      "furigana": "いちらんひょう",
+      "meaning_en": "list"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 2 ● 家事",
+  "japanese_text": "A: そのカレー、<u>保温調理</u>で作ってみたんだけど、どうかな？\nB: おいしいよ。何か特別な<u>器具</u>を使ったの？\nA: ううん、使ったのは<u>タイマー</u>くらい。まず、普段と同じように<u>熱した鍋</u>で具材を炒めて、少し煮るんだ。その後、タオルで包んで30分待つだけ。母に教えてもらったの。\nB: へえ。主婦の<u>知恵</u>は<u>偉大</u>だね。",
+  "english_translation": "A: I made that curry using a heat-retaining cooking method, how do you like it? B: It's delicious. Did you use any special utensils? A: No, just a timer. First, I sauteed the ingredients in a heated pan as usual, and then simmered it a while. Then I just wrap it in a towel and wait 30 minutes. My mother taught me how. B: Wow. The wisdom of housewives is kind of awesome.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0132",
+      "word_number": 132,
+      "kanji": "保温[する]",
+      "furigana": "ほおん",
+      "meaning_en": "thermal retention, retain heat"
+    },
+    {
+      "word_id": "n2_0133",
+      "word_number": 133,
+      "kanji": "⇔保冷[する]",
+      "furigana": "ほれい",
+      "meaning_en": "cold retention, retain cold"
+    },
+    {
+      "word_id": "n2_0134",
+      "word_number": 134,
+      "kanji": "器具",
+      "furigana": "きぐ",
+      "meaning_en": "utensils"
+    },
+    {
+      "word_id": "n2_0135",
+      "word_number": 135,
+      "kanji": "タイマー",
+      "furigana": "タイマー",
+      "meaning_en": "timer"
+    },
+    {
+      "word_id": "n2_0136",
+      "word_number": 136,
+      "kanji": "熱[する]",
+      "furigana": "ねっ",
+      "meaning_en": "heat, heat up"
+    },
+    {
+      "word_id": "n2_0137",
+      "word_number": 137,
+      "kanji": "知恵",
+      "furigana": "ちえ",
+      "meaning_en": "wisdom"
+    },
+    {
+      "word_id": "n2_0138",
+      "word_number": 138,
+      "kanji": "偉大な",
+      "furigana": "いだいな",
+      "meaning_en": "awesome, magnificent"
+    }
+  ]
+}

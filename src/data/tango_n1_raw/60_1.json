@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 18,
+  "title": "Topic 5",
+  "japanese_text": "現代の戦争では、<u>上空</u>での<u>戦略</u>が重要な役割を果たしている。そのため、世界各国で航空機や無人機などの技術を<u>見せびらかし</u>、その力を示すようになった。",
+  "english_translation": "In modern warfare, strategy in the skies plays an important role. For this reason, countries around the world have begun to show off their aircraft, drones, and other technologies to demonstrate their capabilities.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0335",
+      "word_number": 335,
+      "kanji": "上空",
+      "furigana": "じょうくう",
+      "meaning_en": "airspace, skies"
+    },
+    {
+      "word_id": "n1_0336",
+      "word_number": 336,
+      "kanji": "戦略",
+      "furigana": "せんりゃく",
+      "meaning_en": "strategy"
+    },
+    {
+      "word_id": "n1_0337",
+      "word_number": 337,
+      "kanji": "見せびらかす",
+      "furigana": "みせびらかす",
+      "meaning_en": "show off"
+    }
+  ]
+}

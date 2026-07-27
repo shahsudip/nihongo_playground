@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 24",
+  "japanese_text": "首相は<u>施政方針</u>演説で、<u>財政</u>の<u>健全化</u>と<u>社会保障</u>の充実を<u>両立</u>させるため、歳出の<u>削減</u>を進める方針を示した。",
+  "english_translation": "In his policy speech, the prime minister indicated a policy of reducing expenditures in order to simultaneously achieve sound public finances and improved social security.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2248",
+      "word_number": 2248,
+      "kanji": "施政方針",
+      "furigana": "しせいほうしん",
+      "meaning_en": "administrative policy"
+    },
+    {
+      "word_id": "n1_2249",
+      "word_number": 2249,
+      "kanji": "財政",
+      "furigana": "ざいせい",
+      "meaning_en": "public finance"
+    },
+    {
+      "word_id": "n1_2250",
+      "word_number": 2250,
+      "kanji": "健全化",
+      "furigana": "けんぜんか",
+      "meaning_en": "sound management, normalization"
+    },
+    {
+      "word_id": "n1_2251",
+      "word_number": 2251,
+      "kanji": "社会保障",
+      "furigana": "しゃかいほしょう",
+      "meaning_en": "social security"
+    },
+    {
+      "word_id": "n1_2252",
+      "word_number": 2252,
+      "kanji": "両立[する]",
+      "furigana": "りょうりつ",
+      "meaning_en": "compatibility, achieve both"
+    },
+    {
+      "word_id": "n1_2253",
+      "word_number": 2253,
+      "kanji": "削減[する]",
+      "furigana": "さくげん",
+      "meaning_en": "reduction, reduce"
+    }
+  ]
+}

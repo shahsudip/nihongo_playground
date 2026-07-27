@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 16,
+  "title": "Topic 20",
+  "japanese_text": "A：最近、目が<u>かすむ</u>んだよね。肩もすごく<u>凝る</u>し…。\nB：え、大丈夫？肩、もんであげよっか？\nA：や、遠慮しとく。<u>くすぐったくて</u>だめなんだよね。",
+  "english_translation": "A: My vision has been blurring lately. My shoulders are also very stiff ... B: Oh, are you all right? Do you want me to rub your shoulders? A: No, thanks. I'm ticklish.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1924",
+      "word_number": 1924,
+      "kanji": "かすむ",
+      "furigana": "",
+      "meaning_en": "blur"
+    },
+    {
+      "word_id": "n1_1925",
+      "word_number": 1925,
+      "kanji": "凝る",
+      "furigana": "こる",
+      "meaning_en": "be stiff, harden"
+    },
+    {
+      "word_id": "n1_1926",
+      "word_number": 1926,
+      "kanji": "くすぐったい",
+      "furigana": "",
+      "meaning_en": "ticklish"
+    },
+    {
+      "word_id": "n1_1927",
+      "word_number": 1927,
+      "kanji": "くすぐる",
+      "furigana": "",
+      "meaning_en": "tickle"
+    }
+  ]
+}

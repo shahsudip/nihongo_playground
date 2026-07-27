@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 26",
+  "japanese_text": "現代社会では<u>孤独死</u>が増加している。特に一人暮らしの<u>高齢者</u>が<u>孤立</u>しやすく、<u>地域</u>のつながりが<u>希薄化</u>していることが背景にある。<u>見守り</u>サービスや<u>コミュニティ</u>づくりが重要だ。",
+  "english_translation": "Solitary deaths are increasing in modern society. Elderly people living alone are particularly prone to isolation, and the weakening of community ties is a contributing factor. Monitoring services and community building are important.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2501",
+      "word_number": 2501,
+      "kanji": "孤独死",
+      "furigana": "こどくし",
+      "meaning_en": "solitary death, dying alone"
+    },
+    {
+      "word_id": "n1_2502",
+      "word_number": 2502,
+      "kanji": "希薄化[する]",
+      "furigana": "きはくか",
+      "meaning_en": "dilution, become weak or thin"
+    },
+    {
+      "word_id": "n1_2503",
+      "word_number": 2503,
+      "kanji": "見守る",
+      "furigana": "みまもる",
+      "meaning_en": "watch over, monitor"
+    }
+  ]
+}

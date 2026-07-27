@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 3",
+  "japanese_text": "奨学金には、<u>返済</u>の義務があるものとないもの、<u>利息</u>がかかるものとかからないものがある。似た制度として、教育<u>ローン</u>があるが、いずれにせよ借りる前に<u>審査</u>がある。",
+  "english_translation": "Scholarships may or may not have to be repaid, and interest may or may not be incurred. Educational loans follow a similar system, but in any case, there is a screening process before borrowing.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0168",
+      "word_number": 168,
+      "kanji": "返済",
+      "furigana": "へんさい",
+      "meaning_en": "repayment, repay"
+    },
+    {
+      "word_id": "n1_0169",
+      "word_number": 169,
+      "kanji": "利息",
+      "furigana": "りそく",
+      "meaning_en": "interest"
+    },
+    {
+      "word_id": "n1_0170",
+      "word_number": 170,
+      "kanji": "ローン",
+      "furigana": "",
+      "meaning_en": "loan"
+    },
+    {
+      "word_id": "n1_0171",
+      "word_number": 171,
+      "kanji": "審査",
+      "furigana": "しんさ",
+      "meaning_en": "screening, review"
+    },
+    {
+      "word_id": "n1_0172",
+      "word_number": 172,
+      "kanji": "審査員",
+      "furigana": "しんさいん",
+      "meaning_en": "examiner, reviewer"
+    }
+  ]
+}

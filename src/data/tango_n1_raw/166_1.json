@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 16,
+  "title": "Topic 13",
+  "japanese_text": "その映画の<u>冒頭</u>は、<u>灯台</u>の明かりを除いて<u>照明</u>のない岬から始まり、その後、夜明けと共に<u>崖</u>の上から<u>視界</u>いっぱいに海が広がっていく描写がロマンチックである。",
+  "english_translation": "At the opening of the film, we see romantic shots of a seaside cape with no illumination except for the light of a lighthouse, followed by expansive view of the vast sea from the top of a cliff as dawn breaks.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1145",
+      "word_number": 1145,
+      "kanji": "冒頭",
+      "furigana": "ぼうとう",
+      "meaning_en": "beginning, opening"
+    },
+    {
+      "word_id": "n1_1146",
+      "word_number": 1146,
+      "kanji": "灯台",
+      "furigana": "とうだい",
+      "meaning_en": "lighthouse"
+    },
+    {
+      "word_id": "n1_1147",
+      "word_number": 1147,
+      "kanji": "照明",
+      "furigana": "しょうめい",
+      "meaning_en": "illumination, lighting"
+    },
+    {
+      "word_id": "n1_1148",
+      "word_number": 1148,
+      "kanji": "崖",
+      "furigana": "がけ",
+      "meaning_en": "cliff"
+    },
+    {
+      "word_id": "n1_1149",
+      "word_number": 1149,
+      "kanji": "視界",
+      "furigana": "しかい",
+      "meaning_en": "view, visibility"
+    }
+  ]
+}

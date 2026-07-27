@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 4",
+  "japanese_text": "Ａ：これ、<u>大胆な</u>デザインがいいけど、２万円にしては、ちょっと<u>安っぽく</u>見えるかな。\nＢ：確かに。これは？<u>紳士</u>っぽくてぴったりじゃん。\nＡ：かばんと靴も合わせたら、<u>トータル</u>で７万円か。\nＢ：結婚のあいさつでしょ。<u>身なり</u>は整えて行った方がいいよ。",
+  "english_translation": "A: I like the bold design of this one, but for 20,000 yen, it's a little cheap-looking.\nB: You're right. How about this? It's very gentlemanly and perfect.\nA: Together with the bag and shoes, the total cost is 70,000 yen.\nB: Meeting the parents before the wedding is important, though. You have to get your appearance right.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0216",
+      "word_number": 216,
+      "kanji": "大胆な",
+      "furigana": "だいたんな",
+      "meaning_en": "bold"
+    },
+    {
+      "word_id": "n1_0217",
+      "word_number": 217,
+      "kanji": "安っぽい",
+      "furigana": "やすっぽい",
+      "meaning_en": "cheap-looking"
+    },
+    {
+      "word_id": "n1_0218",
+      "word_number": 218,
+      "kanji": "紳士",
+      "furigana": "しんし",
+      "meaning_en": "gentleman"
+    },
+    {
+      "word_id": "n1_0219",
+      "word_number": 219,
+      "kanji": "トータル",
+      "furigana": "",
+      "meaning_en": "total"
+    },
+    {
+      "word_id": "n1_0220",
+      "word_number": 220,
+      "kanji": "身なり",
+      "furigana": "みなり",
+      "meaning_en": "appearance"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 15,
+  "title": "Topic 11",
+  "japanese_text": "集団スポーツでは、自分が<u>不調</u>のときでも<u>チームメート</u>に<u>前向きな</u>言葉をかけたりして、<u>チームワーク</u>に<u>徹する</u>ことが求められる。<u>単独</u>スポーツでは、そのようなことを考えなくてもよいとはいえ、一人で<u>モチベーション</u>を維持することも容易ではない。",
+  "english_translation": "In team sports, you are expected to commit to teamwork by saying positive things to your teammates even when your team is in bad shape. In solo sports, although you don't have to worry about this factor, it's not always easy to maintain motivation on your own.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0920",
+      "word_number": 920,
+      "kanji": "不調",
+      "furigana": "ふちょう",
+      "meaning_en": "bad shape, poor condition"
+    },
+    {
+      "word_id": "n1_0921",
+      "word_number": 921,
+      "kanji": "チームメート",
+      "furigana": "ちーむめーと",
+      "meaning_en": "teammate"
+    },
+    {
+      "word_id": "n1_0922",
+      "word_number": 922,
+      "kanji": "前向きな",
+      "furigana": "まえむきな",
+      "meaning_en": "positive"
+    },
+    {
+      "word_id": "n1_0923",
+      "word_number": 923,
+      "kanji": "チームワーク",
+      "furigana": "ちーむわーく",
+      "meaning_en": "teamwork"
+    },
+    {
+      "word_id": "n1_0924",
+      "word_number": 924,
+      "kanji": "徹する",
+      "furigana": "てっする",
+      "meaning_en": "commit"
+    },
+    {
+      "word_id": "n1_0925",
+      "word_number": 925,
+      "kanji": "単独",
+      "furigana": "たんどく",
+      "meaning_en": "individual, solo"
+    },
+    {
+      "word_id": "n1_0926",
+      "word_number": 926,
+      "kanji": "モチベーション",
+      "furigana": "もちべーしょん",
+      "meaning_en": "motivation"
+    }
+  ]
+}

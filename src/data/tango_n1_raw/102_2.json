@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 9",
+  "japanese_text": "その人がどんなに<u>横柄な</u>態度でも、大企業の社長だと知ると、<u>へりくだった</u>態度で接し機嫌をとってしまう。そんな<u>浅ましい</u>自分がときどき嫌になる。",
+  "english_translation": "Even if a person has a very arrogant attitude, if I learn that he is the president of a large corporation, I'll act humbly to put him in a good mood. Sometimes I hate myself for being so shallow.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0657",
+      "word_number": 657,
+      "kanji": "横柄な",
+      "furigana": "おうへいな",
+      "meaning_en": "arrogant"
+    },
+    {
+      "word_id": "n1_0658",
+      "word_number": 658,
+      "kanji": "へりくだる",
+      "furigana": "へりくだる",
+      "meaning_en": "act humbly"
+    },
+    {
+      "word_id": "n1_0659",
+      "word_number": 659,
+      "kanji": "浅ましい",
+      "furigana": "あさましい",
+      "meaning_en": "shallow"
+    }
+  ]
+}

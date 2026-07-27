@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 19",
+  "japanese_text": "A：あの大手企業の一次<u>選考</u>、通ったんだね。おめでとう。\nB：ありがとう。今年は売り手市場だから、会社はとりあえず人を<u>確保して</u>おきたいだけだと思うけどね。二次選考で落ちたら、内定してる地元の銀行に入ろうと思ってるよ。\nA：そうなんだね。<u>いずれにせよ</u>、進路が決まりそうで何よりだよ。",
+  "english_translation": "A: So you passed the first screening round at that major company. Well done! B: Thank you. This year is a seller's market, so I think the company just wants to secure enough staff for the moment. If I fail the second round, I'm thinking of joining a local bank that has offered me a job. A: I understand. Either way, I'm glad you've decided on a career path.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1722",
+      "word_number": 1722,
+      "kanji": "選考[する]",
+      "furigana": "せんこう",
+      "meaning_en": "screening, select"
+    },
+    {
+      "word_id": "n1_1723",
+      "word_number": 1723,
+      "kanji": "確保[する]",
+      "furigana": "かくほ",
+      "meaning_en": "guarantee, secure"
+    },
+    {
+      "word_id": "n1_1724",
+      "word_number": 1724,
+      "kanji": "いずれにせよ",
+      "furigana": "いずれにせよ",
+      "meaning_en": "either way"
+    }
+  ]
+}

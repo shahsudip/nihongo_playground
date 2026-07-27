@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 14,
+  "title": "Topic 1",
+  "japanese_text": "A：あの店のラーメン、どうだった？\nB：<u>黄金</u>のスープに麺、見ているだけで美しかったよ。もちろんスープと麺は<u>抜群に</u>合っていて、最高のラーメンだったね。ただ、一杯2000円もするから<u>庶民</u>の店ではないね。2000円って言ったらバイト2時間分だもの。\nA：時給に<u>換算する</u>なんて、<u>切ない</u>からやめなよ...。",
+  "english_translation": "A: How was the ramen at that restaurant? B: The golden soup and noodles were beautiful just to look at. Of course, the soup and noodles were outstanding together. It was the best ramen I've ever had. However, at 2,000 yen per bowl, it's not a place for the average person. 2,000 yen is the equivalent of two hours of part-time work. A: Don't convert it to an hourly wage, it makes me sad ...",
+  "annotated_words": [
+    {
+      "word_id": "n1_0058",
+      "word_number": 58,
+      "kanji": "黄金",
+      "furigana": "おうごん",
+      "meaning_en": "gold"
+    },
+    {
+      "word_id": "n1_0059",
+      "word_number": 59,
+      "kanji": "抜群な",
+      "furigana": "ばつぐん",
+      "meaning_en": "outstanding"
+    },
+    {
+      "word_id": "n1_0060",
+      "word_number": 60,
+      "kanji": "庶民",
+      "furigana": "しょみん",
+      "meaning_en": "average person"
+    },
+    {
+      "word_id": "n1_0061",
+      "word_number": 61,
+      "kanji": "換算する",
+      "furigana": "かんさん",
+      "meaning_en": "conversion, convert"
+    },
+    {
+      "word_id": "n1_0062",
+      "word_number": 62,
+      "kanji": "切ない",
+      "furigana": "せつ",
+      "meaning_en": "sad"
+    }
+  ]
+}

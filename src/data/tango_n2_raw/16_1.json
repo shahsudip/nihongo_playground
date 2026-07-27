@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 1 食事",
+  "japanese_text": "A: あそこのラーメン屋、どうだった？\nB: うーん。<u>あっさり</u>してて、ちょっと<u>物足りない</u>と思った。やっぱり、ラーメンは<u>脂</u>が<u>たっぷり</u>入ってるのが<u>好み</u>だなあ。\nA: ああ、そうだね。\nB: あ、でも、チャーシューが<u>あぶって</u>あったのはよかったね。",
+  "english_translation": "A: How was that ramen shop? B: Hmmm. Well, I found it rather light and unsatisfying. Personally, I prefer ramen with plenty of fat. A: Oh, right. B: But the roasted pork was nicely seared.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0012",
+      "word_number": 12,
+      "kanji": "あっさり",
+      "furigana": "あっさり",
+      "meaning_en": "lightly, plainly, simply"
+    },
+    {
+      "word_id": "n2_0013",
+      "word_number": 13,
+      "kanji": "物足りない",
+      "furigana": "ものたりない",
+      "meaning_en": "lacking, unsatisfying"
+    },
+    {
+      "word_id": "n2_0014",
+      "word_number": 14,
+      "kanji": "脂",
+      "furigana": "あぶら",
+      "meaning_en": "fat/oil"
+    },
+    {
+      "word_id": "n2_0015",
+      "word_number": 15,
+      "kanji": "たっぷり",
+      "furigana": "たっぷり",
+      "meaning_en": "generously, plentifully"
+    },
+    {
+      "word_id": "n2_0016",
+      "word_number": 16,
+      "kanji": "好み",
+      "furigana": "このみ",
+      "meaning_en": "preference"
+    },
+    {
+      "word_id": "n2_0017",
+      "word_number": 17,
+      "kanji": "好む",
+      "furigana": "このむ",
+      "meaning_en": "prefer"
+    },
+    {
+      "word_id": "n2_0018",
+      "word_number": 18,
+      "kanji": "あぶる",
+      "furigana": "あぶる",
+      "meaning_en": "roast, sear"
+    }
+  ]
+}

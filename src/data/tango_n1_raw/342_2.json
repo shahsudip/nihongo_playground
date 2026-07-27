@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 14,
+  "title": "Topic 26",
+  "japanese_text": "A：プラスチック<u>汚染</u>ってかなり深刻だよね。\nB：そうだよ。海洋<u>生態系</u>への<u>影響</u>が<u>甚大</u>で、<u>マイクロプラスチック</u>が食物連鎖に入り込んでいるって。\nA：一人一人の<u>意識改革</u>から始めないと<u>改善</u>は難しいよね。",
+  "english_translation": "A: Plastic pollution is quite serious, isn't it? B: It really is. The impact on marine ecosystems is enormous, and microplastics are entering the food chain. A: It'll be hard to improve without starting with a change in individual awareness.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2509",
+      "word_number": 2509,
+      "kanji": "汚染[する]",
+      "furigana": "おせん",
+      "meaning_en": "pollution, pollute"
+    },
+    {
+      "word_id": "n1_2510",
+      "word_number": 2510,
+      "kanji": "生態系",
+      "furigana": "せいたいけい",
+      "meaning_en": "ecosystem"
+    },
+    {
+      "word_id": "n1_2511",
+      "word_number": 2511,
+      "kanji": "甚大な",
+      "furigana": "じんだいな",
+      "meaning_en": "enormous, immense"
+    },
+    {
+      "word_id": "n1_2512",
+      "word_number": 2512,
+      "kanji": "意識改革",
+      "furigana": "いしきかいかく",
+      "meaning_en": "change of awareness, mindset reform"
+    }
+  ]
+}

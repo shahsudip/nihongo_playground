@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 4",
+  "japanese_text": "新製品の商品化については、今日も上司に<u>同意して</u>もらえなかった。どれだけがんばってもうまくいかない。自分が<u>惨めで</u>、とても<u>むなしい</u>気持ちになる。",
+  "english_translation": "Again today, I couldn't get my boss to agree with me about commercializing the new product. No matter how hard I try, nothing works. I feel miserable, and completely ineffectual.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0231",
+      "word_number": 231,
+      "kanji": "同意[する]",
+      "furigana": "どうい[する]",
+      "meaning_en": "agreement, agree"
+    },
+    {
+      "word_id": "n1_0232",
+      "word_number": 232,
+      "kanji": "惨めな",
+      "furigana": "みじめな",
+      "meaning_en": "miserable"
+    },
+    {
+      "word_id": "n1_0233",
+      "word_number": 233,
+      "kanji": "むなしい",
+      "furigana": "",
+      "meaning_en": "futile, ineffectual"
+    }
+  ]
+}

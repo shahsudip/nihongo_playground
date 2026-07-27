@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 23",
+  "japanese_text": "1845年、アイルランドで<u>栽培されて</u>いたジャガイモに<u>疫病</u>が発生し、大<u>飢饉</u>が起こった。これにより約150万人が<u>命を落とし</u>、100万人以上が<u>航海して</u>アメリカ大陸に渡り、<u>移民</u>となった。",
+  "english_translation": "In 1845, a blight on potatoes grown in Ireland caused a great famine. This resulted in the loss of life of approximately 1.5 million people, and more than 1 million people sailed to the Americas to become immigrants there.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2190",
+      "word_number": 2190,
+      "kanji": "栽培",
+      "furigana": "さいばい",
+      "meaning_en": "cultivation, grow"
+    },
+    {
+      "word_id": "n1_2191",
+      "word_number": 2191,
+      "kanji": "疫病",
+      "furigana": "えきびょう",
+      "meaning_en": "blight, plague"
+    },
+    {
+      "word_id": "n1_2192",
+      "word_number": 2192,
+      "kanji": "飢饉",
+      "furigana": "ききん",
+      "meaning_en": "famine"
+    },
+    {
+      "word_id": "n1_2193",
+      "word_number": 2193,
+      "kanji": "命を落とす",
+      "furigana": "いのちをおとす",
+      "meaning_en": "loss of life"
+    },
+    {
+      "word_id": "n1_2194",
+      "word_number": 2194,
+      "kanji": "航海",
+      "furigana": "こうかい",
+      "meaning_en": "voyage, sail"
+    },
+    {
+      "word_id": "n1_2195",
+      "word_number": 2195,
+      "kanji": "移民",
+      "furigana": "いみん",
+      "meaning_en": "immigrant"
+    }
+  ]
+}

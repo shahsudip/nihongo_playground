@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 18",
+  "japanese_text": "決算を行うことで、会社の<u>財務</u>状態や経営状況を把握できる。決算書に基づいて確定<u>申告</u>や<u>株主</u>への報告を行う。決算の申告は、決算日から<u>遅くとも</u>２か月以内に行わなければならない。",
+  "english_translation": "Conducting settlement of accounts enables a company to ascertain the state of its finances and business situation. Based on the financial statements, tax declarations and reports to shareholders are filed. Declaration of accounts must be made within two months at the latest from the date of settlement of accounts.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1495",
+      "word_number": 1495,
+      "kanji": "財務",
+      "furigana": "ざいむ",
+      "meaning_en": "finances"
+    },
+    {
+      "word_id": "n1_1496",
+      "word_number": 1496,
+      "kanji": "申告",
+      "furigana": "しんこく",
+      "meaning_en": "declaration, state"
+    },
+    {
+      "word_id": "n1_1497",
+      "word_number": 1497,
+      "kanji": "株主",
+      "furigana": "かぶぬし",
+      "meaning_en": "shareholder"
+    },
+    {
+      "word_id": "n1_1498",
+      "word_number": 1498,
+      "kanji": "遅くとも",
+      "furigana": "おそくとも",
+      "meaning_en": "at the latest"
+    }
+  ]
+}

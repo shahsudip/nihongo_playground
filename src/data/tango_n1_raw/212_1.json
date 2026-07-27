@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 18",
+  "japanese_text": "機械は普段問題なく動いていても、メンテナンスを<u>怠る</u>と大きな事故につながりかねない。何か<u>些細な</u> <u>異変</u>でも気づいたらすぐにメンテナンスを行い、面倒でも安全第一だと<u>心得て</u>おかなければならない。",
+  "english_translation": "Even if a machine normally runs without problems, neglecting maintenance can lead to major accidents. If you notice any strange occurrences, even if trivial, maintenance must be performed immediately. Keep in mind that safety comes first, even if it's a hassle.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1471",
+      "word_number": 1471,
+      "kanji": "怠る",
+      "furigana": "おこたる",
+      "meaning_en": "neglect"
+    },
+    {
+      "word_id": "n1_1472",
+      "word_number": 1472,
+      "kanji": "些細な",
+      "furigana": "ささいな",
+      "meaning_en": "trivial"
+    },
+    {
+      "word_id": "n1_1473",
+      "word_number": 1473,
+      "kanji": "異変",
+      "furigana": "いへん",
+      "meaning_en": "anomaly, strange occurrence"
+    },
+    {
+      "word_id": "n1_1474",
+      "word_number": 1474,
+      "kanji": "心得る",
+      "furigana": "こころえる",
+      "meaning_en": "be aware, keep in mind"
+    }
+  ]
+}

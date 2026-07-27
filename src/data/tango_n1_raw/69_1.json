@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 7,
+  "title": "Topic 6",
+  "japanese_text": "ゲームは子どもにとって<u>不健全で</u>あるとして、１日１時間までに制限する条例が提案されたことがある。確かに、勉強を忘れるほどゲームに<u>興じたり</u>、ゲームのために<u>夜ふかし</u>をしたりすることはよくないかもしれない。しかし、それはゲーム以外でも起こることではないだろうか。",
+  "english_translation": "A law has been proposed to limit video games to one hour per day on the grounds that they are unhealthy for children. Certainly, playing games to the point of neglecting study or staying up late for games is not good. But that can also happen outside of gaming.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0400",
+      "word_number": 400,
+      "kanji": "不健全な",
+      "furigana": "ふけんぜん",
+      "meaning_en": "unhealthy"
+    },
+    {
+      "word_id": "n1_0401",
+      "word_number": 401,
+      "kanji": "健全な",
+      "furigana": "けんぜん",
+      "meaning_en": "healthy, sound"
+    },
+    {
+      "word_id": "n1_0402",
+      "word_number": 402,
+      "kanji": "興じる／興ずる",
+      "furigana": "きょう",
+      "meaning_en": "have fun, play"
+    },
+    {
+      "word_id": "n1_0403",
+      "word_number": 403,
+      "kanji": "夜ふかしする",
+      "furigana": "よ",
+      "meaning_en": "staying up late, keep late hours"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 2 ● 家事",
+  "japanese_text": "A: そのマフラー、新しいよね？ 買ったの？\nB: あ、これ自分で<u>編んだ</u>んだ。\nA: <u>器用</u>だなあ。私、<u>編み物</u>とか<u>裁縫</u>が苦手なんだよね。中学\n生のとき<u>エプロン</u>作ったんだけど、ポケットを<u>逆さま</u>につ\nけちゃって、みんなに笑われちゃった。",
+  "english_translation": "A: That scarf is new, isn't it? Did you buy it? B: Oh, I knitted it myself. A: You're very skillful. I'm no good at knitting or sewing. When I was in junior high school, I made an apron, but I put the pockets on upside down and everyone laughed at me.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0183",
+      "word_number": 183,
+      "kanji": "編む",
+      "furigana": "あむ",
+      "meaning_en": "knit"
+    },
+    {
+      "word_id": "n2_0184",
+      "word_number": 184,
+      "kanji": "器用な",
+      "furigana": "きよう",
+      "meaning_en": "adept, skillful"
+    },
+    {
+      "word_id": "n2_0185",
+      "word_number": 185,
+      "kanji": "⇔ 不器用な",
+      "furigana": "ぶきよう",
+      "meaning_en": "clumsy, unskilled"
+    },
+    {
+      "word_id": "n2_0186",
+      "word_number": 186,
+      "kanji": "編み物",
+      "furigana": "あみもの",
+      "meaning_en": "knitting"
+    },
+    {
+      "word_id": "n2_0187",
+      "word_number": 187,
+      "kanji": "裁縫[する]",
+      "furigana": "さいほう",
+      "meaning_en": "sewing, sew"
+    },
+    {
+      "word_id": "n2_0188",
+      "word_number": 188,
+      "kanji": "エプロン",
+      "furigana": "エプロン",
+      "meaning_en": "apron"
+    },
+    {
+      "word_id": "n2_0189",
+      "word_number": 189,
+      "kanji": "逆さまな/逆さ",
+      "furigana": "さかさま/さかさ",
+      "meaning_en": "upside down"
+    }
+  ]
+}

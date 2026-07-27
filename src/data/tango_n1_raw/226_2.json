@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 22,
+  "title": "Topic 18",
+  "japanese_text": "A：Cさん、ここのところ何だか<u>さえない</u>顔して、仕事に集中できていないみたいだけど。\nB：ああ、オフレコですけど、婚約を<u>破棄された</u>らしいですよ。\nA：はあ、そうだったか。でも、仕事は仕事、<u>切り替えて</u>もらわないと。\nB：そうですねえ。このままじゃ次の昇進試験も<u>危うい</u>ですね。",
+  "english_translation": "A: C hasn't been looking cheerful lately. It's like he can't concentrate on his work. B: Oh, well, off the record, it seems like his engagement has been broken off. A: Oh, I didn't know that. But work is work, and he has to switch things up. B: You're right. If he continues like this, his next promotion exam is looking uncertain.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1586",
+      "word_number": 1586,
+      "kanji": "さえる",
+      "furigana": "さえる",
+      "meaning_en": "alert, cheerful"
+    },
+    {
+      "word_id": "n1_1587",
+      "word_number": 1587,
+      "kanji": "破棄",
+      "furigana": "はき",
+      "meaning_en": "cancellation, break off"
+    },
+    {
+      "word_id": "n1_1588",
+      "word_number": 1588,
+      "kanji": "切り替える",
+      "furigana": "きりかえる",
+      "meaning_en": "switch"
+    },
+    {
+      "word_id": "n1_1589",
+      "word_number": 1589,
+      "kanji": "危うい",
+      "furigana": "あやうい",
+      "meaning_en": "endangered, uncertain"
+    }
+  ]
+}

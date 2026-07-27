@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 19",
+  "japanese_text": "祖父が亡くなり、祖母は祖父との別れを<u>惜しんで</u>いた。ある詐欺師が、その感情につけこみ、一見財産が増えるようで、<u>実質的</u>には損をする話を祖母に持ちかけてきた。祖母は詐欺師の言葉に<u>惑わされず</u>、しっかり断った。",
+  "english_translation": "When my grandfather passed away, my grandmother lamented parting with him. A scammer tried to take advantage of her emotions, telling her she would increase her fortune, whereas in fact she would lose her money. My grandmother was not fooled by the scammer's words and she firmly refused.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1687",
+      "word_number": 1687,
+      "kanji": "惜しむ",
+      "furigana": "おしむ",
+      "meaning_en": "lament, regret"
+    },
+    {
+      "word_id": "n1_1688",
+      "word_number": 1688,
+      "kanji": "実質的な",
+      "furigana": "じっしつてきな",
+      "meaning_en": "in fact, substantive"
+    },
+    {
+      "word_id": "n1_1689",
+      "word_number": 1689,
+      "kanji": "実質",
+      "furigana": "じっしつ",
+      "meaning_en": "essence, substance"
+    },
+    {
+      "word_id": "n1_1690",
+      "word_number": 1690,
+      "kanji": "惑わす",
+      "furigana": "まどわす",
+      "meaning_en": "confuse, fool"
+    }
+  ]
+}

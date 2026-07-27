@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 2",
+  "japanese_text": "A：最近シェアハウスに入ってきた人が朝までゲームしてるせいで、寝不足なんだよね。\nB：それって睡眠<u>妨害</u>じゃん！\nA：あまりにもひどいから引っ越しも考えてる。この間なんか<u>住人</u>の物が<u>紛失</u>する<u>騒動</u>もあったし…。",
+  "english_translation": "A: I'm not getting enough sleep, because the guy who recently moved into my share house plays games all night. B: But that interferes with your sleep! A: It's so bad I'm thinking of moving out. There was also a commotion the other day because some of the residents' things went missing.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0075",
+      "word_number": 75,
+      "kanji": "妨害",
+      "furigana": "ぼうがい",
+      "meaning_en": "interference, interfere"
+    },
+    {
+      "word_id": "n1_0076",
+      "word_number": 76,
+      "kanji": "住人",
+      "furigana": "じゅうにん",
+      "meaning_en": "resident"
+    },
+    {
+      "word_id": "n1_0077",
+      "word_number": 77,
+      "kanji": "紛失",
+      "furigana": "ふんしつ",
+      "meaning_en": "loss, go missing"
+    },
+    {
+      "word_id": "n1_0078",
+      "word_number": 78,
+      "kanji": "騒動",
+      "furigana": "そうどう",
+      "meaning_en": "commotion"
+    }
+  ]
+}

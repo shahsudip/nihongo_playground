@@ -1,0 +1,65 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 8",
+  "japanese_text": "入学式での学長のあいさつは「学生<u>諸君</u>、入学おめでとう」から始まった。継続して努力することの大切さを<u>説き</u>、<u>転じて</u> <u>言論</u>の自由とヘイトスピーチの<u>相違</u>に<u>言及した</u>。最後に、新入生の大学生活が豊かなものとなるよう祈って<u>結び</u>とした。学長の話は大学のホームページに<u>掲載されている</u>ので、誰でも見ることができる。",
+  "english_translation": "The President's address at the entrance ceremony began with, “I would like to congratulate you all on your enrollment.” He emphasized the importance of continuous efforts, then turned to mention the difference between freedom of speech and hate speech. In conclusion, he wished the new students a successful university life. The President's speech has been posted on the university's website and is available to all.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0580",
+      "word_number": 580,
+      "kanji": "諸君",
+      "furigana": "しょくん",
+      "meaning_en": "you all (collective)"
+    },
+    {
+      "word_id": "n1_0581",
+      "word_number": 581,
+      "kanji": "説く",
+      "furigana": "とく",
+      "meaning_en": "emphasize, explain"
+    },
+    {
+      "word_id": "n1_0582",
+      "word_number": 582,
+      "kanji": "転じる",
+      "furigana": "てんじる",
+      "meaning_en": "turn"
+    },
+    {
+      "word_id": "n1_0583",
+      "word_number": 583,
+      "kanji": "言論",
+      "furigana": "げんろん",
+      "meaning_en": "speech"
+    },
+    {
+      "word_id": "n1_0584",
+      "word_number": 584,
+      "kanji": "相違",
+      "furigana": "そうい",
+      "meaning_en": "difference, differ"
+    },
+    {
+      "word_id": "n1_0585",
+      "word_number": 585,
+      "kanji": "言及",
+      "furigana": "げんきゅう",
+      "meaning_en": "mention, mention"
+    },
+    {
+      "word_id": "n1_0586",
+      "word_number": 586,
+      "kanji": "結び",
+      "furigana": "むすび",
+      "meaning_en": "conclusion"
+    },
+    {
+      "word_id": "n1_0587",
+      "word_number": 587,
+      "kanji": "掲載",
+      "furigana": "けいさい",
+      "meaning_en": "post, post"
+    }
+  ]
+}

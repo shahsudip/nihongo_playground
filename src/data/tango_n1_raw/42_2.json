@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 4",
+  "japanese_text": "Ａ：その桜の浴衣、<u>淡い</u>ピンク色できれいだね。\nＢ：ありがとう。<u>一目ぼれして</u>買ったんだ。桜が散っているデザインって、ちょっと<u>儚い</u>感じがするよね。",
+  "english_translation": "A: That cherry blossom yukata is so beautiful in pale pink.\nB: Thank you. I fell in love with it at first sight, so I bought it. The scattered cherry blossom design feels a bit wistful, doesn't it?",
+  "annotated_words": [
+    {
+      "word_id": "n1_0206",
+      "word_number": 206,
+      "kanji": "淡い",
+      "furigana": "あわい",
+      "meaning_en": "pale"
+    },
+    {
+      "word_id": "n1_0207",
+      "word_number": 207,
+      "kanji": "一目ぼれ[する]",
+      "furigana": "ひとめぼれ[する]",
+      "meaning_en": "instant love, fall in love at first sight"
+    },
+    {
+      "word_id": "n1_0208",
+      "word_number": 208,
+      "kanji": "儚い",
+      "furigana": "はかない",
+      "meaning_en": "forlorn, wistful"
+    }
+  ]
+}

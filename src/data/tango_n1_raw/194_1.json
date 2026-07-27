@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 17",
+  "japanese_text": "A：<u>志望動機</u>は何ですか。\nB：私が<u>貴校</u>を志望したのは、調理を学べる<u>課程</u>が設置されていることと、「自主性を<u>育もう</u>」という校訓に共感したからです。",
+  "english_translation": "A: What is your reason for applying to this school? B: I want to go to your school because it has a cooking curriculum, and the school’s motto, “Cultivating independence,” resonates with me.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1344",
+      "word_number": 1344,
+      "kanji": "志望動機",
+      "furigana": "しぼうどうき",
+      "meaning_en": "reason for applying"
+    },
+    {
+      "word_id": "n1_1345",
+      "word_number": 1345,
+      "kanji": "動機",
+      "furigana": "どうき",
+      "meaning_en": "motivation, reason"
+    },
+    {
+      "word_id": "n1_1346",
+      "word_number": 1346,
+      "kanji": "貴校",
+      "furigana": "きこう",
+      "meaning_en": "your school (honorific)"
+    },
+    {
+      "word_id": "n1_1347",
+      "word_number": 1347,
+      "kanji": "課程",
+      "furigana": "かてい",
+      "meaning_en": "course, curriculum"
+    },
+    {
+      "word_id": "n1_1348",
+      "word_number": 1348,
+      "kanji": "育む",
+      "furigana": "はぐくむ",
+      "meaning_en": "cultivate, nurture"
+    }
+  ]
+}

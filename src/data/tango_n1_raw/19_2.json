@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 1",
+  "japanese_text": "A：ねえ。この前の<u>打ち上げ</u>のときに竹の<u>筒</u>に入って出てきたあの料理、何だっけ？ とてもおいしかったから、私の中で<u>にわかに</u>ブームになってて。\nB：ああ、「つくね」だね。入れ物が珍しいから、みんな<u>一様に</u>スマホを出して写真を撮ってたよね。",
+  "english_translation": "A: Hey. What was that dish served in the bamboo tube at the launch party the other day? It was so delicious, it's become an immediate favorite of mine. B: Ah, that was tsukune. The container was so unusual that everyone alike took out their phones and took pictures.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0043",
+      "word_number": 43,
+      "kanji": "打ち上げ",
+      "furigana": "うちあげ",
+      "meaning_en": "launch party, after-party"
+    },
+    {
+      "word_id": "n1_0044",
+      "word_number": 44,
+      "kanji": "筒",
+      "furigana": "つつ",
+      "meaning_en": "tube"
+    },
+    {
+      "word_id": "n1_0045",
+      "word_number": 45,
+      "kanji": "にわかな",
+      "furigana": "にわか",
+      "meaning_en": "immediate, sudden"
+    },
+    {
+      "word_id": "n1_0046",
+      "word_number": 46,
+      "kanji": "一様な",
+      "furigana": "いちよう",
+      "meaning_en": "alike, uniform"
+    }
+  ]
+}

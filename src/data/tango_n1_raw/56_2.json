@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 5",
+  "japanese_text": "ＡＩを<u>有益に</u>利用するため、人間が<u>主体的に</u>行動する場面と、ＡＩを積極的に活用する場面で、使用方法を<u>使い分ける</u>必要がある。",
+  "english_translation": "For beneficial use of AI, we need to distinguish between methods of use in situations in which humans behave proactively and situations in which AI is used proactively.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0308",
+      "word_number": 308,
+      "kanji": "有益な",
+      "furigana": "ゆうえきな",
+      "meaning_en": "beneficial"
+    },
+    {
+      "word_id": "n1_0309",
+      "word_number": 309,
+      "kanji": "無益な",
+      "furigana": "むえきな",
+      "meaning_en": "unhelpful"
+    },
+    {
+      "word_id": "n1_0310",
+      "word_number": 310,
+      "kanji": "主体的な",
+      "furigana": "しゅたいてきな",
+      "meaning_en": "active, proactive"
+    },
+    {
+      "word_id": "n1_0311",
+      "word_number": 311,
+      "kanji": "使い分ける",
+      "furigana": "つかいわける",
+      "meaning_en": "distinguish"
+    }
+  ]
+}

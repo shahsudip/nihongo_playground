@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 14,
+  "title": "Topic 20",
+  "japanese_text": "当院では、条件に<u>該当する</u>方向けに、オンライン<u>診療</u>や<u>往診</u>も実施している。初めての患者には、かかりつけ医より<u>カルテ</u>情報を提供してもらう場合がある。",
+  "english_translation": "Our clinic also offers online medical care and house calls for those who fulfill the certain conditions. First-time patients may be asked to provide medical records from their family physician.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1911",
+      "word_number": 1911,
+      "kanji": "該当[する]",
+      "furigana": "がいとう",
+      "meaning_en": "applicability, fulfill"
+    },
+    {
+      "word_id": "n1_1912",
+      "word_number": 1912,
+      "kanji": "該当者",
+      "furigana": "がいとうしゃ",
+      "meaning_en": "relevant person"
+    },
+    {
+      "word_id": "n1_1913",
+      "word_number": 1913,
+      "kanji": "診療[する]",
+      "furigana": "しんりょう",
+      "meaning_en": "medical care, treat"
+    },
+    {
+      "word_id": "n1_1914",
+      "word_number": 1914,
+      "kanji": "往診[する]",
+      "furigana": "おうしん",
+      "meaning_en": "house call, make a house call"
+    },
+    {
+      "word_id": "n1_1915",
+      "word_number": 1915,
+      "kanji": "カルテ",
+      "furigana": "",
+      "meaning_en": "medical record"
+    }
+  ]
+}

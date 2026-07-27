@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 14",
+  "japanese_text": "子どもの頃は田舎に住んでいたので、友達と<u>土手</u>の<u>斜面</u>を段ボールで滑ったり、<u>原っぱ</u>で野球をしたりしたものだ。",
+  "english_translation": "When I was a child, I lived in the countryside and my friends and I used to slide down the slope of an embankment on pieces of cardboard and play baseball in an open field.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1183",
+      "word_number": 1183,
+      "kanji": "土手",
+      "furigana": "どて",
+      "meaning_en": "embankment"
+    },
+    {
+      "word_id": "n1_1184",
+      "word_number": 1184,
+      "kanji": "斜面",
+      "furigana": "しゃめん",
+      "meaning_en": "slope"
+    },
+    {
+      "word_id": "n1_1185",
+      "word_number": 1185,
+      "kanji": "原っぱ",
+      "furigana": "はらっぱ",
+      "meaning_en": "open field"
+    }
+  ]
+}

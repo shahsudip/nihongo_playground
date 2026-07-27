@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 13",
+  "japanese_text": "道路には<u>排水</u>のための<u>溝</u>が設置されている。溝には汚れやごみがたまるため、定期的に<u>点検</u>と清掃が必要だ。また、年月が経つにつれ<u>改修</u>が必要となる。",
+  "english_translation": "Ditches for drainage are installed along the road. Ditches need to be inspected and cleaned regularly because dirt and debris accumulate in them. They also need to be renovated as the years go by.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1106",
+      "word_number": 1106,
+      "kanji": "排水",
+      "furigana": "はいすい",
+      "meaning_en": "drainage"
+    },
+    {
+      "word_id": "n1_1107",
+      "word_number": 1107,
+      "kanji": "溝",
+      "furigana": "みぞ",
+      "meaning_en": "ditch"
+    },
+    {
+      "word_id": "n1_1108",
+      "word_number": 1108,
+      "kanji": "点検",
+      "furigana": "てんけん",
+      "meaning_en": "inspection, inspect"
+    },
+    {
+      "word_id": "n1_1109",
+      "word_number": 1109,
+      "kanji": "改修",
+      "furigana": "かいしゅう",
+      "meaning_en": "renovation, renovate"
+    }
+  ]
+}

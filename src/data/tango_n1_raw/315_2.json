@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 24",
+  "japanese_text": "A：今度の<u>選挙</u>、どの党に<u>投票</u>するか決めた？\nB：まだ。<u>世論調査</u>では<u>与党</u>が優勢みたいだけど、<u>政権</u>交代もあり得るよね。\nA：そうだね。<u>有権者</u>として、ちゃんと考えないとね。",
+  "english_translation": "A: Have you decided which party to vote for in the next election? B: Not yet. Polls show the ruling party is ahead, but a change in government is also possible. A: That's right. As voters, we need to think carefully.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2259",
+      "word_number": 2259,
+      "kanji": "選挙[する]",
+      "furigana": "せんきょ",
+      "meaning_en": "election, hold an election"
+    },
+    {
+      "word_id": "n1_2260",
+      "word_number": 2260,
+      "kanji": "投票[する]",
+      "furigana": "とうひょう",
+      "meaning_en": "vote, cast a vote"
+    },
+    {
+      "word_id": "n1_2261",
+      "word_number": 2261,
+      "kanji": "世論調査",
+      "furigana": "よろんちょうさ",
+      "meaning_en": "public opinion poll"
+    },
+    {
+      "word_id": "n1_2262",
+      "word_number": 2262,
+      "kanji": "与党",
+      "furigana": "よとう",
+      "meaning_en": "ruling party"
+    },
+    {
+      "word_id": "n1_2263",
+      "word_number": 2263,
+      "kanji": "政権",
+      "furigana": "せいけん",
+      "meaning_en": "administration, government"
+    },
+    {
+      "word_id": "n1_2264",
+      "word_number": 2264,
+      "kanji": "有権者",
+      "furigana": "ゆうけんしゃ",
+      "meaning_en": "voter, eligible voter"
+    }
+  ]
+}

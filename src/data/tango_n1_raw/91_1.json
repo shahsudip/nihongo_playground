@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 16,
+  "title": "Topic 7",
+  "japanese_text": "A：このカップ、<u>粋な</u>デザインだね。\nB：ありがとう。実は私が作ったんだ。最近、<u>陶芸</u>を始めて…。\nA：え、すごい。ずいぶん<u>高尚な</u>趣味だね。\nB：いや、親戚が道具を<u>一式</u>譲ってくれて、やってみたら面白くて。\nA：へえ。コーヒーに<u>凝ってる</u>って言ってたけど、今度は食器にもこだわり始めたわけだ。",
+  "english_translation": "A: This cup has a stylish design. B: Thanks. Actually, I made it. I've recently started making ceramics. A: Wow, that's great. That's quite a refined hobby. B: Well, a relative gave me a set of tools, so I tried it and found I enjoyed it. A: Really? You said you were into coffee, but now you're into tableware, too.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0571",
+      "word_number": 571,
+      "kanji": "粋な",
+      "furigana": "いきな",
+      "meaning_en": "stylish"
+    },
+    {
+      "word_id": "n1_0572",
+      "word_number": 572,
+      "kanji": "陶芸",
+      "furigana": "とうげい",
+      "meaning_en": "ceramics"
+    },
+    {
+      "word_id": "n1_0573",
+      "word_number": 573,
+      "kanji": "高尚な",
+      "furigana": "こうしょうな",
+      "meaning_en": "noble, refined"
+    },
+    {
+      "word_id": "n1_0574",
+      "word_number": 574,
+      "kanji": "一式",
+      "furigana": "いっしき",
+      "meaning_en": "a set"
+    },
+    {
+      "word_id": "n1_0575",
+      "word_number": 575,
+      "kanji": "凝る",
+      "furigana": "こる",
+      "meaning_en": "be hooked on, be into"
+    }
+  ]
+}

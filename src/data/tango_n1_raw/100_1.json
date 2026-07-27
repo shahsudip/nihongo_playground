@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 9",
+  "japanese_text": "Aさんはいつも<u>愛想</u>がよく<u>温厚な</u>人なのだが、Bさんとは気が合わないらしい。それで、<u>素っ気ない</u>返事をするなど<u>露骨に</u>態度に出すので、同じ空間にいると<u>息が詰まる</u>。",
+  "english_translation": "Mr. A is usually very amiable and good-natured, but he and Mr. B don't seem to get along. He blatantly shows his poor attitude, such as giving curt replies, creating a suffocating atmosphere whenever they're in the same space.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0638",
+      "word_number": 638,
+      "kanji": "愛想",
+      "furigana": "あいそ",
+      "meaning_en": "amiability"
+    },
+    {
+      "word_id": "n1_0640",
+      "word_number": 640,
+      "kanji": "温厚な",
+      "furigana": "おんこうな",
+      "meaning_en": "good-natured"
+    },
+    {
+      "word_id": "n1_0641",
+      "word_number": 641,
+      "kanji": "素っ気ない",
+      "furigana": "そっけない",
+      "meaning_en": "curt"
+    },
+    {
+      "word_id": "n1_0642",
+      "word_number": 642,
+      "kanji": "露骨な",
+      "furigana": "ろこつな",
+      "meaning_en": "blatant"
+    },
+    {
+      "word_id": "n1_0643",
+      "word_number": 643,
+      "kanji": "息が詰まる",
+      "furigana": "いきがつまる",
+      "meaning_en": "suffocating"
+    }
+  ]
+}

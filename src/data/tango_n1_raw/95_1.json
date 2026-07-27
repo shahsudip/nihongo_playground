@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 8",
+  "japanese_text": "英語のライティングテストがあり、国際関係<u>論</u>についての日本語の<u>エッセイ</u>を読んで、その<u>要旨</u>を英語で書くという問題が<u>出題された</u>。英語を<u>産出する</u>力がないので、<u>原文</u>の<u>ニュアンス</u>が伝わるように書けなかった。",
+  "english_translation": "In an English writing test, I was set a task to read an essay in Japanese on international relations theory and write a summary of the essay in English. Since I lack the ability to output English properly, I was unable to convey the nuances of the original text.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0600",
+      "word_number": 600,
+      "kanji": "～論",
+      "furigana": "ろん",
+      "meaning_en": "~ theory, theory of ~"
+    },
+    {
+      "word_id": "n1_0601",
+      "word_number": 601,
+      "kanji": "エッセイ／エッセー",
+      "furigana": "エッセイ／エッセー",
+      "meaning_en": "essay"
+    },
+    {
+      "word_id": "n1_0602",
+      "word_number": 602,
+      "kanji": "要旨",
+      "furigana": "ようし",
+      "meaning_en": "summary"
+    },
+    {
+      "word_id": "n1_0603",
+      "word_number": 603,
+      "kanji": "出題",
+      "furigana": "しゅつだい",
+      "meaning_en": "task, set a task"
+    },
+    {
+      "word_id": "n1_0604",
+      "word_number": 604,
+      "kanji": "産出",
+      "furigana": "さんしゅつ",
+      "meaning_en": "output, produce"
+    },
+    {
+      "word_id": "n1_0605",
+      "word_number": 605,
+      "kanji": "原文",
+      "furigana": "げんぶん",
+      "meaning_en": "original text"
+    },
+    {
+      "word_id": "n1_0606",
+      "word_number": 606,
+      "kanji": "ニュアンス",
+      "furigana": "ニュアンス",
+      "meaning_en": "nuance"
+    }
+  ]
+}

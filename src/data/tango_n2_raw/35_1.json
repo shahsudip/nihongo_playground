@@ -1,0 +1,58 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 2 家事",
+  "japanese_text": "A: このクッキーおいしい！<u>ねじって</u>あって、形もかわいいね！\nB: ありがとう。<u>粗く</u><u>砕いた</u>アーモンドを入れてみたんだ。失敗したときの<u>予備</u>にたくさん作ったから、よかったらそこの<u>容器</u>に入れて持って帰って。\nA: え、いいの？\nB: うん。こんなに<u>大量</u>にあっても、<u>食べきれない</u>から。",
+  "english_translation": "A: These cookies are delicious! The shape's so cute too, the way they're twisted! B: Thanks. I put coarsely ground almonds in them. Actually, I made a lot of spare cookies in case I messed up, so you can take some home in that container if you like. A: Oh, really? B: Yeah. I made so many, I could never finish them all off myself.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0151",
+      "word_number": 151,
+      "kanji": "ねじる",
+      "furigana": "ねじる",
+      "meaning_en": "twist"
+    },
+    {
+      "word_id": "n2_0152",
+      "word_number": 152,
+      "kanji": "粗い",
+      "furigana": "あらい",
+      "meaning_en": "rough, coarse"
+    },
+    {
+      "word_id": "n2_0153",
+      "word_number": 153,
+      "kanji": "砕く",
+      "furigana": "くだく",
+      "meaning_en": "crush, grind"
+    },
+    {
+      "word_id": "n2_0154",
+      "word_number": 154,
+      "kanji": "予備",
+      "furigana": "よび",
+      "meaning_en": "extra, spare"
+    },
+    {
+      "word_id": "n2_0155",
+      "word_number": 155,
+      "kanji": "容器",
+      "furigana": "ようき",
+      "meaning_en": "container"
+    },
+    {
+      "word_id": "n2_0156",
+      "word_number": 156,
+      "kanji": "大量な",
+      "furigana": "たいりょうな",
+      "meaning_en": "large quantity"
+    },
+    {
+      "word_id": "n2_0157",
+      "word_number": 157,
+      "kanji": "～きる",
+      "furigana": "～きる",
+      "meaning_en": "finish off ~, completely ~"
+    }
+  ]
+}

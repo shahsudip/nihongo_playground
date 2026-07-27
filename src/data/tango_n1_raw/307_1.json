@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 23",
+  "japanese_text": "産業別の<u>就業</u>者数で最も多いのは、<u>卸売</u>・<u>小売</u>業で、製造業、サービス業とつづく。第一次産業の農業、<u>林業</u>、漁業の就業者数は減少が続いており、就業者の高齢化や<u>後継者</u>不足が深刻な問題となっている。",
+  "english_translation": "By industry, the wholesale and retail industries have the largest number of employees, followed by the manufacturing and service industries. The number of workers in the primary industries of agriculture, forestry, and fisheries continues to decline, and the aging workforce and lack of successors are serious problems.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2196",
+      "word_number": 2196,
+      "kanji": "就業",
+      "furigana": "しゅうぎょう",
+      "meaning_en": "employment, employ"
+    },
+    {
+      "word_id": "n1_2197",
+      "word_number": 2197,
+      "kanji": "卸売",
+      "furigana": "おろしうり",
+      "meaning_en": "wholesale"
+    },
+    {
+      "word_id": "n1_2198",
+      "word_number": 2198,
+      "kanji": "小売",
+      "furigana": "こうり",
+      "meaning_en": "retail, sell retail"
+    },
+    {
+      "word_id": "n1_2199",
+      "word_number": 2199,
+      "kanji": "林業",
+      "furigana": "りんぎょう",
+      "meaning_en": "forestry"
+    },
+    {
+      "word_id": "n1_2200",
+      "word_number": 2200,
+      "kanji": "後継者",
+      "furigana": "こうけいしゃ",
+      "meaning_en": "successor"
+    }
+  ]
+}

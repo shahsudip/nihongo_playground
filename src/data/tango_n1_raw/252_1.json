@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 20,
+  "title": "Topic 19",
+  "japanese_text": "私と弟は血が繋がっていない。弟は、幼少期に自然災害で彼の両親を含む<u>肉親</u>を数人失った。その後、私の両親が彼を<u>引き取った</u>のだ。弟は、<u>さぞ心細い</u>思いをすることも多かっただろうが、このような<u>いきさつ</u>で、今は一緒に元気に暮らしている。",
+  "english_translation": "My younger brother and I are not related by blood. He lost numerous blood relatives, including his parents, in a natural disaster when he was a child. After that, my parents took him in. My younger brother must have felt very helpless at times, but these circumstances led him to live together with us, and he's doing very well.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1782",
+      "word_number": 1782,
+      "kanji": "肉親",
+      "furigana": "にくしん",
+      "meaning_en": "blood relative"
+    },
+    {
+      "word_id": "n1_1783",
+      "word_number": 1783,
+      "kanji": "引き取る",
+      "furigana": "ひきとる",
+      "meaning_en": "take in"
+    },
+    {
+      "word_id": "n1_1784",
+      "word_number": 1784,
+      "kanji": "さぞ",
+      "furigana": "さぞ",
+      "meaning_en": "certainly, must"
+    },
+    {
+      "word_id": "n1_1785",
+      "word_number": 1785,
+      "kanji": "心細い",
+      "furigana": "こころぼそい",
+      "meaning_en": "helpless, lonely"
+    },
+    {
+      "word_id": "n1_1786",
+      "word_number": 1786,
+      "kanji": "いきさつ",
+      "furigana": "いきさつ",
+      "meaning_en": "circumstances"
+    }
+  ]
+}

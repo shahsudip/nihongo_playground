@@ -1,0 +1,37 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 20",
+  "japanese_text": "皮膚は人体で最も大きい<u>器官</u>で、成人の場合約1.6㎡もの面積があると言われている。古くなった表面の細胞は<u>垢</u>となって自然と剥がれ落ちるが、無理に落とそうとして強く擦ると、肌本来の<u>バリア</u>機能が<u>損なわれて</u>しまう恐れがある。",
+  "english_translation": "The skin is the largest organ in the human body, covering an area of approximately 1.6 square meters for an adult. Old surface cells are naturally exfoliated off as dirt or grime, but if you rub too hard to remove them, you can impair the skin's natural barrier function.",
+  "annotated_words": [
+    {
+      "word_id": "n1_1861",
+      "word_number": 1861,
+      "kanji": "器官",
+      "furigana": "きかん",
+      "meaning_en": "organ"
+    },
+    {
+      "word_id": "n1_1862",
+      "word_number": 1862,
+      "kanji": "垢",
+      "furigana": "あか",
+      "meaning_en": "dirt, grime"
+    },
+    {
+      "word_id": "n1_1863",
+      "word_number": 1863,
+      "kanji": "バリア[する]",
+      "furigana": "",
+      "meaning_en": "barrier, act as a barrier"
+    },
+    {
+      "word_id": "n1_1864",
+      "word_number": 1864,
+      "kanji": "損なう",
+      "furigana": "",
+      "meaning_en": "harm, impair"
+    }
+  ]
+}

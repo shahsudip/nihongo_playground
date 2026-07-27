@@ -1,0 +1,44 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 27",
+  "japanese_text": "<u>査読</u>を依頼された論文は問題の<u>所在</u>が明確だった。また、<u>誤差</u>が小さくなるように手法が工夫されており、結果の<u>検証</u>も十分に行われていた。今後の研究にも多くの<u>示唆</u>を与えるものと評価できる。",
+  "english_translation": "The paper requested for peer review was clear on the problematic position. In addition, methods had been devised to minimize errors, and the results were adequately verified. The paper can be highly evaluated as providing many suggestions for future research directions.",
+  "annotated_words": [
+    {
+      "word_id": "n1_2538",
+      "word_number": 2538,
+      "kanji": "査読[する]",
+      "furigana": "さどく",
+      "meaning_en": "peer review, perform peer review"
+    },
+    {
+      "word_id": "n1_2539",
+      "word_number": 2539,
+      "kanji": "所在",
+      "furigana": "しょざい",
+      "meaning_en": "position"
+    },
+    {
+      "word_id": "n1_2540",
+      "word_number": 2540,
+      "kanji": "誤差",
+      "furigana": "ごさ",
+      "meaning_en": "error"
+    },
+    {
+      "word_id": "n1_2541",
+      "word_number": 2541,
+      "kanji": "検証[する]",
+      "furigana": "けんしょう",
+      "meaning_en": "verification, verified"
+    },
+    {
+      "word_id": "n1_2542",
+      "word_number": 2542,
+      "kanji": "示唆[する]",
+      "furigana": "しさ",
+      "meaning_en": "suggestion, suggest"
+    }
+  ]
+}

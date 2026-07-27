@@ -1,0 +1,51 @@
+{
+  "is_story": true,
+  "story_number": 20,
+  "title": "Topic 11",
+  "japanese_text": "新聞にこんな<u>コラム</u>が載っていた。筆者は子どもの頃、スポーツが苦手で、体育の時間は親に<u>内緒</u>でよく休んでいたそうだ。だが、「スポーツは<u>嫌々</u>やるものではなく、楽しんでやるものだという考えが、欧米<u>諸国</u>では当たり前だ」と述べた後、スポーツ<u>庁</u>が、スポーツに対する<u>ハードル</u>を下げる取り組みを行っていることを紹介していた。",
+  "english_translation": "I found this column in the newspaper. The author said that when he was a child, he was no good at sports and often skipped gym class, keeping it a secret from his parents. However, after stating that, “in Western countries sports are normally not something to be done reluctantly, but something to be done for fun,” the newspaper introduced the Japan Sports Agency's efforts to lower the hurdle for participation in sports.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0958",
+      "word_number": 958,
+      "kanji": "コラム",
+      "furigana": "こらむ",
+      "meaning_en": "column"
+    },
+    {
+      "word_id": "n1_0959",
+      "word_number": 959,
+      "kanji": "内緒",
+      "furigana": "ないしょ",
+      "meaning_en": "secret"
+    },
+    {
+      "word_id": "n1_0960",
+      "word_number": 960,
+      "kanji": "嫌々",
+      "furigana": "いやいや",
+      "meaning_en": "reluctantly"
+    },
+    {
+      "word_id": "n1_0961",
+      "word_number": 961,
+      "kanji": "諸国",
+      "furigana": "しょこく",
+      "meaning_en": "countries"
+    },
+    {
+      "word_id": "n1_0962",
+      "word_number": 962,
+      "kanji": "～庁",
+      "furigana": "ちょう",
+      "meaning_en": "~ agency, ~ministry"
+    },
+    {
+      "word_id": "n1_0963",
+      "word_number": 963,
+      "kanji": "ハードル",
+      "furigana": "はーどる",
+      "meaning_en": "hurdle, obstacle"
+    }
+  ]
+}

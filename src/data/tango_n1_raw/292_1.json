@@ -1,0 +1,17 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 22",
+  "japanese_text": "最近、公務員の<u>公募</u>に、民間企業経験者の<u>枠</u>が設けられているのをよく見るようになった。これには、デジタル化などで変化の<u>途上</u>にある行政の仕事に、民間企業の知恵を取り入れられる<u>メリット</u>がある。<u>ひいては</u>、<u>前例</u>主義に陥りやすい行政において、<u>未知</u>の状況への対処を<u>託したい</u>という思いもあるのかもしれない。",
+  "english_translation": "Recently, it's more common to see quotas for people with private-sector experience in recruitment of public servants. This has the merit of incorporating the wisdom of private companies into the work of public administration, which is in the process of changing due to digitization and other factors. In turn, there may be a desire to entrust the government, which tends to fall into the trap of being precedent-driven, with handling unknown situations.",
+  "annotated_words": [
+    { "word_id": "n1_2080", "word_number": 2080, "kanji": "公募する", "furigana": "こうぼする", "meaning_en": "recruitment, advertise (a job)" },
+    { "word_id": "n1_2081", "word_number": 2081, "kanji": "枠", "furigana": "わく", "meaning_en": "frame, quota" },
+    { "word_id": "n1_2082", "word_number": 2082, "kanji": "途上", "furigana": "とじょう", "meaning_en": "in the process" },
+    { "word_id": "n1_2083", "word_number": 2083, "kanji": "メリット", "furigana": "メリット", "meaning_en": "merit" },
+    { "word_id": "n1_2084", "word_number": 2084, "kanji": "ひいては", "furigana": "ひいては", "meaning_en": "in turn, by the same token" },
+    { "word_id": "n1_2085", "word_number": 2085, "kanji": "前例", "furigana": "ぜんれい", "meaning_en": "precedent" },
+    { "word_id": "n1_2086", "word_number": 2086, "kanji": "未知", "furigana": "みち", "meaning_en": "unknown" },
+    { "word_id": "n1_2087", "word_number": 2087, "kanji": "託す", "furigana": "たくす", "meaning_en": "entrust, leave to" }
+  ]
+}

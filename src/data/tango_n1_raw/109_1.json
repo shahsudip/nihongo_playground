@@ -1,0 +1,30 @@
+{
+  "is_story": true,
+  "story_number": 16,
+  "title": "Topic 9",
+  "japanese_text": "A先輩は悪気なく<u>無神経な</u>発言で人を傷つけることがあるので、みんな困っていた。だからと言って、本人に指摘するのはみんな<u>ためらって</u>いたのだが、今年入ってきた後輩が注意してくれて、改善された。先輩に注意できるなんて、後輩の勇気に<u>恐れ入った</u>。",
+  "english_translation": "Although he's not malicious, Mr. A sometimes hurts people with his insensitive remarks and it causes trouble for everyone. We all hesitated to point this out to him, but a junior employee who joined the company just this year warned him, and he improved. I was amazed at the courage of the junior to speak that way to a senior employee.",
+  "annotated_words": [
+    {
+      "word_id": "n1_0704",
+      "word_number": 704,
+      "kanji": "無神経な",
+      "furigana": "むしんけいな",
+      "meaning_en": "insensitive"
+    },
+    {
+      "word_id": "n1_0705",
+      "word_number": 705,
+      "kanji": "ためらう",
+      "furigana": "ためらう",
+      "meaning_en": "hesitate"
+    },
+    {
+      "word_id": "n1_0706",
+      "word_number": 706,
+      "kanji": "恐れ入る",
+      "furigana": "おそれいる",
+      "meaning_en": "be amazed"
+    }
+  ]
+}
