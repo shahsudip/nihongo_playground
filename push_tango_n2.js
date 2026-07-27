@@ -38,9 +38,14 @@ async function pushTangoN2() {
       const filePath = path.join(n2Dir, file);
       const storyData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
       const docId = file.replace('.json', '');
-
       const topicTitle = storyData.title || "Topic 1";
-      const topicId = "topic_01"; 
+      
+      // Dynamically extract topic number from title string, e.g. "Topic 2" -> "topic_02"
+      let topicId = "topic_01";
+      const topicMatch = topicTitle.match(/Topic\s*(\d+)/i);
+      if (topicMatch) {
+        topicId = `topic_${topicMatch[1].padStart(2, '0')}`;
+      }
 
       await db.collection('books').doc('tango_n2')
               .collection('topics').doc(topicId)

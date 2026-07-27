@@ -1,58 +1,59 @@
 {
   "is_story": true,
-  "story_number": 1,
-  "title": "Topic 2 家事",
-  "japanese_text": "A：彼女がおうちに遊びに来るの、<u>いよいよ</u>明後日だね。もう準備はしたの？\nB：うーん、昼食の<u>献立</u>は決めたんだけど、まだ材料を<u>何も</u>買ってないんだよね。\nA：そっか。そこの道路を<u>隔てた</u>ところにスーパーがあるんだけど、あそこはいい<u>品</u>がそろってるよ。",
-  "english_translation": "A: Your girlfriend is finally coming to visit you the day after tomorrow, right? Have you made all the preparations yet? B: Well, I worked out the lunch menu, but I haven't bought any ingredients yet. A: Right. There's a supermarket across the road, and they have some good things there.",
+  "story_number": 8,
+  "title": "Topic 1 食事",
+  "page_story": "19_1",
+  "japanese_text": "一人暮らしをしていると、栄養が<u>偏り</u>がちだ。何か野菜を食べなければと思うが、今は野菜が高くて<u>手に入りにくい</u>。子どものときは<u>好き嫌い</u>が多く、母の作る料理が嫌だと思ったこともあったが、今となっては栄養たっぷりの母の手料理が<u>恋しい</u>。",
+  "english_translation": "When you live alone, your diet tends to get imbalanced. I probably need to eat some vegetables, but vegetables are expensive and hard to get nowadays. When I was a child, I was fussy about food and at times I disliked the food my mother cooked, but now I miss her healthy, nutritious cooking.",
   "annotated_words": [
     {
-      "word_id": "n2_0096",
-      "word_number": 96,
-      "kanji": "いよいよ",
-      "furigana": "",
-      "meaning_en": "finally, after all this time"
+      "word_id": "n2_0038",
+      "word_number": 38,
+      "kanji": "偏る",
+      "furigana": "かたよる",
+      "meaning_en": "deviate, get imbalanced"
     },
     {
-      "word_id": "n2_0097",
-      "word_number": 97,
-      "kanji": "献立",
-      "furigana": "こんだて",
-      "meaning_en": "menu, arrangement"
+      "word_id": "n2_0039",
+      "word_number": 39,
+      "kanji": "偏り",
+      "furigana": "かたよる",
+      "meaning_en": "bias, imbalance"
     },
     {
-      "word_id": "n2_0098",
-      "word_number": 98,
-      "kanji": "何も",
-      "furigana": "なに",
-      "meaning_en": "none, not any"
+      "word_id": "n2_0040",
+      "word_number": 40,
+      "kanji": "手に入れる",
+      "furigana": "てにいれる",
+      "meaning_en": "get, obtain"
     },
     {
-      "word_id": "n2_0099",
-      "word_number": 99,
-      "kanji": "隔てる",
-      "furigana": "へだてる",
-      "meaning_en": "divide, separate"
+      "word_id": "n2_0041",
+      "word_number": 41,
+      "kanji": "手に入る",
+      "furigana": "てにはいる",
+      "meaning_en": "come into (one's) possession"
     },
     {
-      "word_id": "n2_0100",
-      "word_number": 100,
-      "kanji": "隔たる",
-      "furigana": "へだたる",
-      "meaning_en": "be distant or separate"
+      "word_id": "n2_0042",
+      "word_number": 42,
+      "kanji": "好き嫌い[する]",
+      "furigana": "すききらい",
+      "meaning_en": "likes and dislikes, fussy"
     },
     {
-      "word_id": "n2_0101",
-      "word_number": 101,
-      "kanji": "品",
-      "furigana": "しな",
-      "meaning_en": "items, things"
+      "word_id": "n2_0043",
+      "word_number": 43,
+      "kanji": "恋しい",
+      "furigana": "こいしい",
+      "meaning_en": "longed for, missed"
     },
     {
-      "word_id": "n2_0102",
-      "word_number": 102,
-      "kanji": "品切れ[する]",
-      "furigana": "しなぎれ",
-      "meaning_en": "stock shortage, sell out"
+      "word_id": "n2_0044",
+      "word_number": 44,
+      "kanji": "恋[する]",
+      "furigana": "こい",
+      "meaning_en": "love"
     }
   ]
 }

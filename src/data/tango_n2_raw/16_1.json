@@ -1,8 +1,9 @@
 {
   "is_story": true,
-  "story_number": 1,
+  "story_number": 3,
   "title": "Topic 1 食事",
-  "japanese_text": "A: あそこのラーメン屋、どうだった？\nB: うーん。<u>あっさり</u>してて、ちょっと<u>物足りない</u>と思った。やっぱり、ラーメンは<u>脂</u>が<u>たっぷり</u>入ってるのが<u>好み</u>だなあ。\nA: ああ、そうだね。\nB: あ、でも、チャーシューが<u>あぶって</u>あったのはよかったね。",
+  "page_story": "16_1",
+  "japanese_text": "A：あそこのラーメン屋、どうだった？\nB：うーん。<u>あっさり</u>してて、ちょっと<u>物足りない</u>と思った。やっぱり、ラーメンは<u>脂</u>が<u>たっぷり</u>入ってるのが<u>好み</u>だなあ。\nA：ああ、そうだね。\nB：あ、でも、チャーシューが<u>あぶって</u>あったのはよかったね。",
   "english_translation": "A: How was that ramen shop? B: Hmmm. Well, I found it rather light and unsatisfying. Personally, I prefer ramen with plenty of fat. A: Oh, right. B: But the roasted pork was nicely seared.",
   "annotated_words": [
     {
@@ -24,7 +25,7 @@
       "word_number": 14,
       "kanji": "脂",
       "furigana": "あぶら",
-      "meaning_en": "fat/oil"
+      "meaning_en": "fat"
     },
     {
       "word_id": "n2_0015",

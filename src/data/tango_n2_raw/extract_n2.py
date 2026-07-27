@@ -1,4 +1,4 @@
-"""
+r"""
 Besto Tango N2 合格2400 — Page Extractor
 Reads all JPG pages via Gemini Vision and outputs JSON story files
 identical in format to tango_n1_raw/*.json
@@ -19,7 +19,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 # ── Config ─────────────────────────────────────────────────────────────────
 GEMINI_API_KEY  = os.environ.get("GEMINI_API_KEY", "")
-GEMINI_URL      = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:key={GEMINI_API_KEY}"
+GEMINI_URL      = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}"
 
 # Find the N2 image directory dynamically
 def find_n2_dir():
@@ -41,39 +41,34 @@ print(f"📁 Output:   {OUT_DIR}\n")
 
 # ── Prompt ─────────────────────────────────────────────────────────────────
 PROMPT = """You are processing a page from the Japanese textbook "Best Tango N2 合格2400".
-Each page contains one or two story/passage blocks. Each block has:
-- A Japanese story/conversation with certain words UNDERLINED (marked with a red underline)
-- A numbered word list below with: word number, kanji form, furigana, and English meaning
-- At the bottom: a translation block that may contain English, then Chinese, then Vietnamese
+Each page contains one or two separate story/passage blocks inside a distinct framed box.
 
-Extract EVERY story block on this page and return a JSON array like this:
+For EACH story block on the page:
+1. Extract the EXACT Japanese conversation/passage inside the story box. Do NOT hallucinate extra lines, do NOT combine text from other sections, and do NOT add words not present in the original box image.
+2. Wrap each underlined word in the story with <u>...</u> tags. The underlined words MUST match the exact text within the story block.
+3. Extract ONLY the English translation corresponding to THIS story block from the translation section below. Stop before any Chinese or Vietnamese characters.
+4. Extract ONLY the vocabulary words listed in the numbered list directly under THIS specific story block.
 
+Return a JSON array of objects:
 [
   {
     "page_story": "16_1",
     "story_number": 1,
-    "topic_title": "Topic 1",
-    "japanese_text": "story text with <u>underlined words</u> marked",
-    "english_translation": "ONLY the English translation here",
+    "topic_title": "Topic 1 食事",
+    "japanese_text": "A：あそこのラーメン屋、どうだった？\\nB：うーん。<u>あっさり</u>してて...",
+    "english_translation": "ONLY English translation for this story",
     "words": [
-      {"id": "1", "kanji": "創作[する]", "furigana": "そうさく", "meaning_en": "creative, create"},
-      {"id": "2", "kanji": "食物", "furigana": "しょくもつ", "meaning_en": "food"}
+      {"id": "12", "kanji": "あっさり", "furigana": "あっさり", "meaning_en": "lightly, plainly"},
+      {"id": "13", "kanji": "物足りない", "furigana": "ものたりない", "meaning_en": "lacking"}
     ]
   }
 ]
 
-Rules:
-- page_story format: "{page_number}_{story_index}" e.g. "16_1", "17_2"
-- In japanese_text: wrap each underlined/highlighted word with <u>...</u> tags
-- CRITICAL for english_translation: extract ONLY the English text. The translation block
-  at the bottom shows 3 languages: English first, then Chinese (中文), then Vietnamese.
-  Stop at the first Chinese character or "/" separator. Do NOT include Chinese or Vietnamese.
-- word "id" = the sequential number printed in the word list (e.g. 1, 2, 3...)
-- Include ALL words listed in the numbered box below each story
-- If there is a Topic header (e.g. "Topic 1 食事"), capture it as topic_title
-- If page has no topic header, use the last seen topic (from sidebar/corner e.g. "Topic 6 ● 流行")
-- Include suffix notation in kanji field e.g. "勝負[する]", "～み", "～人前"
-- Return ONLY valid JSON array, no markdown fences, no explanation
+CRITICAL STRICT RULES:
+- Extracted japanese_text MUST be exact, word-for-word string from the image passage box.
+- Do NOT merge story 1 and story 2 together.
+- Include exact Kanji, Furigana, and English meanings for words listed under the story block.
+- Return ONLY a valid JSON array, no markdown wrappers, no commentary.
 """
 
 # ── Gemini call ─────────────────────────────────────────────────────────────
@@ -162,14 +157,14 @@ def process_page(page_num: int) -> bool:
 
 # ── Main ─────────────────────────────────────────────────────────────────────
 def main():
-    # Get all available page numbers
+    # Process Topic 1 range strictly (pages 16 to 27)
     pages = sorted([
         int(Path(f).stem)
         for f in os.listdir(IMG_DIR)
-        if f.endswith(".jpg") and Path(f).stem.isdigit()
+        if f.endswith(".jpg") and Path(f).stem.isdigit() and (16 <= int(Path(f).stem) <= 27)
     ])
 
-    print(f"📖 Total pages to process: {len(pages)} (pp. {pages[0]}–{pages[-1]})\n")
+    print(f"📖 Processing Topic 1 (食事): {len(pages)} pages (pp. 16–27)\n")
 
     success = 0
     failed = []

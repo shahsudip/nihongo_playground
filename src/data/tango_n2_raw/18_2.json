@@ -1,9 +1,10 @@
 {
   "is_story": true,
-  "story_number": 2,
-  "title": "Topic 1 ● 食事",
-  "japanese_text": "A：今度の歓迎会だけど、焼肉<u>食べ放題</u>はどう？\nB：いいですね。でも、胃が<u>もたれ</u>そうだね。\nA：え、まだ若いのに。じゃあ、このしゃぶしゃぶ屋はどう？\n上等な肉が安く食べられるって<u>口コミ</u>でも評判だよ。",
-  "english_translation": "",
+  "story_number": 7,
+  "title": "Topic 1 食事",
+  "page_story": "18_2",
+  "japanese_text": "A：今度の歓迎会だけど、焼肉<u>食べ放題</u>はどう？\nB：いいですね。でも、胃が<u>もたれ</u>そうだな。\nA：え、まだ若いのに。じゃあ、このしゃぶしゃぶ屋はどう？<u>上等な</u>肉が安く食べられるって<u>口コミ</u>でも評判だよ。",
+  "english_translation": "A: How about all-you-can-eat barbecue for the upcoming welcome party? B: Sounds good. But it'll probably sit too heavily in my stomach. A: What? You're still young. How about this shabu-shabu place? It's got great word-of-mouth for being inexpensive for top-quality meat.",
   "annotated_words": [
     {
       "word_id": "n2_0033",
@@ -23,8 +24,8 @@
       "word_id": "n2_0035",
       "word_number": 35,
       "kanji": "もたれる",
-      "furigana": "もたれる",
-      "meaning_en": "sit heavily/feel heavy"
+      "furigana": "",
+      "meaning_en": "sit heavily"
     },
     {
       "word_id": "n2_0036",

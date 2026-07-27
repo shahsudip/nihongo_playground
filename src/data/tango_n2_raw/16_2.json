@@ -1,8 +1,45 @@
 {
   "is_story": true,
-  "story_number": 2,
+  "story_number": 4,
   "title": "Topic 1 食事",
-  "japanese_text": "A: ご注文はお決まりですか。\nB: ええっと、日替わりランチ。\nA: はい、では、こちらから<u>メイン</u>をお選びください。\nB: あ、じゃ、<u>ミックスフライ</u>で。\nA: はい。サラダのドレッシングはいかがなさいますか。\nB: あ、<u>和風</u>ドレッシングで。<u>それと</u>、<u>抹茶パフェ</u>お願いします。",
-  "english_translation": "",
-  "annotated_words": []
+  "page_story": "16_2",
+  "japanese_text": "A：ご注文はお決まりですか。\nB：えっと、日替わりランチ。\nA：はい、では、こちらから<u>メイン</u>をお選びください。\nB：あ、じゃ、<u>ミックス</u>フライで。\nA：はい。サラダのドレッシングはいかがなさいますか。\nB：あ、<u>和風</u>ドレッシングで。<u>それと</u>、抹茶パフェお願いします。",
+  "english_translation": "A: Have you decided what you want to order? B: Let's see, the daily lunch. A: Right, well, please choose your main dish here. B: Oh, well, I'll have the mixed deep-fry plate. A: Got it. What kind of dressing would you like for your salad? B: Um, Japanese-style dressing. And also, green tea parfait, please.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0019",
+      "word_number": 19,
+      "kanji": "メイン",
+      "furigana": "",
+      "meaning_en": "main dish"
+    },
+    {
+      "word_id": "n2_0020",
+      "word_number": 20,
+      "kanji": "ミックス[する]",
+      "furigana": "",
+      "meaning_en": "mix, to mix"
+    },
+    {
+      "word_id": "n2_0021",
+      "word_number": 21,
+      "kanji": "和風",
+      "furigana": "わふう",
+      "meaning_en": "Japanese-style"
+    },
+    {
+      "word_id": "n2_0022",
+      "word_number": 22,
+      "kanji": "洋風",
+      "furigana": "ようふう",
+      "meaning_en": "western-style"
+    },
+    {
+      "word_id": "n2_0023",
+      "word_number": 23,
+      "kanji": "それと",
+      "furigana": "",
+      "meaning_en": "and also"
+    }
+  ]
 }

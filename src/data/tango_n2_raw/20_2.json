@@ -1,16 +1,31 @@
 {
   "is_story": true,
-  "story_number": 2,
-  "title": "Topic 1 ● 食事",
-  "japanese_text": "昨日、久しぶりに友だちとスイーツ<u>ビュッフェ</u>に行った。<u>壁一面</u>がパステルカラーで、メニューには、カラフルなケーキや、<u>綿あめ</u>があったりして、とてもかわいかった。",
-  "english_translation": "Yesterday, I went to a sweets buffet with a friend for the first time in a while. The walls were pastel-colored, and the menu had colorful cakes and cotton candy, which was all very cute.",
+  "story_number": 10,
+  "title": "Topic 1 食事",
+  "page_story": "20_2",
+  "japanese_text": "昨日、久しぶりに友だちとスイーツ<u>ビュッフェ</u>に行った。壁<u>一面</u>がパステルカラーで、メニューには、カラフルなケーキや、<u>綿</u>あめののったドリンクがあったりして、とてもかわいかった。",
+  "english_translation": "Yesterday, for the first time in a while, I went to a dessert buffet with a friend. The walls were pastel-colored all over, and there were colorful cakes and drinks with cotton candy on the menu. It was really cute.",
   "annotated_words": [
     {
       "word_id": "n2_0052",
       "word_number": 52,
       "kanji": "ビュッフェ",
-      "furigana": "ビュッフェ",
+      "furigana": "",
       "meaning_en": "buffet"
+    },
+    {
+      "word_id": "n2_0053",
+      "word_number": 53,
+      "kanji": "一面",
+      "furigana": "いちめん",
+      "meaning_en": "all over"
+    },
+    {
+      "word_id": "n2_0054",
+      "word_number": 54,
+      "kanji": "綿",
+      "furigana": "わた",
+      "meaning_en": "cotton"
     }
   ]
 }
