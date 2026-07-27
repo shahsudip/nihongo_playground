@@ -15,6 +15,7 @@ import powerDrillN1 from '../assets/power_drill_n1_cover.jpg';
 import powerDrillN2 from '../assets/power_drill_n2_cover.jpg';
 import powerDrillN3 from '../assets/power_drill_n3_cover.jpg';
 import tangoN1Cover from '../assets/tango_n1_cover.jpg';
+import tangoN2Cover from '../assets/tango_n2_cover.jpg';
 
 const BookListPage = () => {
   const { currentUser } = useAuth();
@@ -220,6 +221,7 @@ const BookListPage = () => {
             'nihongo-power-drill-n2': powerDrillN2,
             'nihongo-power-drill-n3': powerDrillN3,
             'tango_n1': tangoN1Cover,
+            'tango_n2': tangoN2Cover,
           };
           const coverImg = bookCovers[book.id];
           const levelGradients = {
