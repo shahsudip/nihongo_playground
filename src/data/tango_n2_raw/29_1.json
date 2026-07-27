@@ -1,0 +1,59 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 2 家事",
+  "page_story": "29_1",
+  "japanese_text": "A：彼女がおうちに遊びに来るの、<u>いよいよ</u>明後日だね。もう準備はしたの？\nB：うーん、昼食の<u>献立</u>は決めたんだけど、まだ材料を<u>何も</u>買ってないんだよね。\nA：そっか。そこの道路を<u>隔てた</u>ところにスーパーがあるんだけど、あそこはいい<u>品</u>がそろってるよ。",
+  "english_translation": "A: Your girlfriend is finally coming to visit you the day after tomorrow, right? Have you made all the preparations yet? B: Well, I worked out the lunch menu, but I haven't bought any ingredients yet. A: Right. There's a supermarket across the road, and they have some good things there.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0096",
+      "word_number": 96,
+      "kanji": "いよいよ",
+      "furigana": "",
+      "meaning_en": "finally, after all this time"
+    },
+    {
+      "word_id": "n2_0097",
+      "word_number": 97,
+      "kanji": "献立",
+      "furigana": "こんだて",
+      "meaning_en": "menu, arrangement"
+    },
+    {
+      "word_id": "n2_0098",
+      "word_number": 98,
+      "kanji": "何も",
+      "furigana": "なに",
+      "meaning_en": "none, not any"
+    },
+    {
+      "word_id": "n2_0099",
+      "word_number": 99,
+      "kanji": "隔てる",
+      "furigana": "へだてる",
+      "meaning_en": "divide, separate"
+    },
+    {
+      "word_id": "n2_0100",
+      "word_number": 100,
+      "kanji": "隔たる",
+      "furigana": "へだたる",
+      "meaning_en": "be distant or separate"
+    },
+    {
+      "word_id": "n2_0101",
+      "word_number": 101,
+      "kanji": "品",
+      "furigana": "しな",
+      "meaning_en": "items, things"
+    },
+    {
+      "word_id": "n2_0102",
+      "word_number": 102,
+      "kanji": "品切れ[する]",
+      "furigana": "しなぎれ",
+      "meaning_en": "stock shortage, sell out"
+    }
+  ]
+}

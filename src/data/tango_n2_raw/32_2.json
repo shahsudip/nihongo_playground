@@ -1,0 +1,31 @@
+{
+  "is_story": true,
+  "story_number": 7,
+  "title": "Topic 2 家事",
+  "page_story": "32_2",
+  "japanese_text": "A：息子さん、大きくなったね。この間まで<u>おむつ</u>履いてたのに。\nB：最近は<u>お使い</u>にも行ってくれるんだ。でも、まだ「<u>おんぶ</u>してー」って言ってくることもあるよ。",
+  "english_translation": "A: Your son is so big now. He was wearing diapers just a little while ago. B: He even runs errands for me these days. But he still asks for a piggyback ride sometimes.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0123",
+      "word_number": 123,
+      "kanji": "おむつ",
+      "furigana": "",
+      "meaning_en": "diapers"
+    },
+    {
+      "word_id": "n2_0124",
+      "word_number": 124,
+      "kanji": "お使い[する]",
+      "furigana": "おつかい",
+      "meaning_en": "errand, run errand"
+    },
+    {
+      "word_id": "n2_0125",
+      "word_number": 125,
+      "kanji": "おんぶ[する]",
+      "furigana": "",
+      "meaning_en": "piggyback, give a piggyback ride"
+    }
+  ]
+}

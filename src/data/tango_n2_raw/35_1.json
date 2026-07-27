@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 2 家事",
+  "page_story": "35_1",
+  "japanese_text": "A：そのお弁当、自分で作ったの？\nB：そうそう。最近、<u>節約</u>のために<u>自炊して</u>て。\nA：確かに、自分で作る方が安いよね。\nB：うん。食事の量も<u>コントロール</u>できるからいいよ。\nA：でも朝起きるの大変じゃない？\nB：前は早起きが苦手だったけど、食事に気をつけ始めてから毎朝<u>すっきり</u> <u>目覚められる</u>ようになったんだ。",
+  "english_translation": "A: Did you make that lunch box yourself? B: Yes, I did. I've been cooking for myself lately to save money. A: Right, it's cheaper to make it yourself. B: Yes. I can control the amount of food I eat. A: But isn't it hard to get up early in the morning? B: I used to find it hard getting up early, but since I started watching what I eat, I wake up refreshed every morning.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0139",
+      "word_number": 139,
+      "kanji": "節約[する]",
+      "furigana": "せつやく",
+      "meaning_en": "cost-cutting, save money"
+    },
+    {
+      "word_id": "n2_0140",
+      "word_number": 140,
+      "kanji": "節電[する]",
+      "furigana": "せつでん",
+      "meaning_en": "saving electricity, conserve power"
+    },
+    {
+      "word_id": "n2_0141",
+      "word_number": 141,
+      "kanji": "自炊[する]",
+      "furigana": "じすい",
+      "meaning_en": "cooking for oneself"
+    },
+    {
+      "word_id": "n2_0142",
+      "word_number": 142,
+      "kanji": "コントロール[する]",
+      "furigana": "",
+      "meaning_en": "control"
+    },
+    {
+      "word_id": "n2_0143",
+      "word_number": 143,
+      "kanji": "すっきり(と)",
+      "furigana": "",
+      "meaning_en": "cleanly, refreshed"
+    },
+    {
+      "word_id": "n2_0144",
+      "word_number": 144,
+      "kanji": "目覚める",
+      "furigana": "めざめる",
+      "meaning_en": "wake up"
+    }
+  ]
+}

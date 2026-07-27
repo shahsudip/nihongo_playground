@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 14,
+  "title": "Topic 2 家事",
+  "page_story": "38_2",
+  "japanese_text": "A：最近、母が家事を手伝いにうるさくて。\nB：え？家事しないの？\nA：<u>自ら</u>進んでやることはないかも。<u>炊事</u>、洗濯、掃除は苦手だから、母に<u>任せて</u>仕事に集中したいな。\nB：いや、できる<u>範囲</u>でやりなよ。",
+  "english_translation": "A: Lately, my mother's been nagging me to help with the housework. B: What? You don't do housework? A: I just don't think to do it myself. I'm no good at cooking, washing clothes, or cleaning, so I prefer to leave it up to my mother and just concentrate on my work. B: That's no good. You should do as much as you can.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0163",
+      "word_number": 163,
+      "kanji": "自ら",
+      "furigana": "みずから",
+      "meaning_en": "oneself"
+    },
+    {
+      "word_id": "n2_0164",
+      "word_number": 164,
+      "kanji": "炊事[する]",
+      "furigana": "すいじ",
+      "meaning_en": "cooking, cook"
+    },
+    {
+      "word_id": "n2_0165",
+      "word_number": 165,
+      "kanji": "任せる",
+      "furigana": "まかせる",
+      "meaning_en": "leave up to"
+    },
+    {
+      "word_id": "n2_0166",
+      "word_number": 166,
+      "kanji": "範囲",
+      "furigana": "はんい",
+      "meaning_en": "range, scope"
+    }
+  ]
+}

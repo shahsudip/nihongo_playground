@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 2 家事",
+  "page_story": "30_1",
+  "japanese_text": "A：あ、ペットボトルと缶はその袋じゃなくて、別の<u>ごみ袋</u>に入れて！\nB：え？ペットボトルは<u>プラスチック</u>だから燃えないごみでしょ？同じ<u>分類</u>じゃないの？\nA：確かに両方とも燃えないごみだけど、袋は分けないと。\nB：そうなの？<u>面倒くさい</u>なあ。\nA：<u>文句</u>を言わずに、<u>せっせと</u>手を動かす！",
+  "english_translation": "A: Oh, put the plastic bottles and cans in another trash bag, not that one! B: What? Plastic bottles are non-burnable waste because they are plastic, right? Aren't they in the same category? A: Sure, both are non-burnable waste, but the bags have to be separated. B: Really? That's a hassle. A: Stop complaining and work harder!",
+  "annotated_words": [
+    {
+      "word_id": "n2_0103",
+      "word_number": 103,
+      "kanji": "ごみ袋",
+      "furigana": "ごみぶくろ",
+      "meaning_en": "trash bag, garbage bag"
+    },
+    {
+      "word_id": "n2_0104",
+      "word_number": 104,
+      "kanji": "プラスチック",
+      "furigana": "",
+      "meaning_en": "plastic"
+    },
+    {
+      "word_id": "n2_0105",
+      "word_number": 105,
+      "kanji": "分類[する]",
+      "furigana": "ぶんるい",
+      "meaning_en": "category, separate"
+    },
+    {
+      "word_id": "n2_0106",
+      "word_number": 106,
+      "kanji": "面倒くさい",
+      "furigana": "めんどうくさい",
+      "meaning_en": "hassle, troublesome"
+    },
+    {
+      "word_id": "n2_0107",
+      "word_number": 107,
+      "kanji": "文句",
+      "furigana": "もんく",
+      "meaning_en": "complain"
+    },
+    {
+      "word_id": "n2_0108",
+      "word_number": 108,
+      "kanji": "せっせと",
+      "furigana": "",
+      "meaning_en": "busily, hard (at work)"
+    }
+  ]
+}

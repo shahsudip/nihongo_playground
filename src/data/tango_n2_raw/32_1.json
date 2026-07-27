@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 2 家事",
+  "page_story": "32_1",
+  "japanese_text": "A：ケーキが膨らまない…。<u>はかり</u>も使って<u>レシピ</u>通りの<u>分量</u>で作ったのになあ。\nB：卵とバターを混ぜるとき、卵を一度に全部入れたからかな？一度に入れると、うまく混ざらなくて膨らみにくいらしいけど。\nA：<u>しまった</u>！それだ！\nB：お菓子作りは分量だけじゃなく、<u>過程</u>も大切ってことだね。",
+  "english_translation": "A: The cake didn't rise... I used a measuring scale and followed the recipe, using the listed quantities. B: Maybe it's because you added all the eggs and butter at once when you mixed them? If you add them all at the same time, they don't mix well and the cake is less likely to rise, I think. A: Oh no! That's it! B: Baking isn't just about the quantities, but also the process.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0118",
+      "word_number": 118,
+      "kanji": "はかり",
+      "furigana": "",
+      "meaning_en": "measuring scale"
+    },
+    {
+      "word_id": "n2_0119",
+      "word_number": 119,
+      "kanji": "レシピ",
+      "furigana": "",
+      "meaning_en": "recipe"
+    },
+    {
+      "word_id": "n2_0120",
+      "word_number": 120,
+      "kanji": "分量",
+      "furigana": "ぶんりょう",
+      "meaning_en": "amount, quantity"
+    },
+    {
+      "word_id": "n2_0121",
+      "word_number": 121,
+      "kanji": "しまった",
+      "furigana": "",
+      "meaning_en": "Oh no!"
+    },
+    {
+      "word_id": "n2_0122",
+      "word_number": 122,
+      "kanji": "過程",
+      "furigana": "かてい",
+      "meaning_en": "process"
+    }
+  ]
+}

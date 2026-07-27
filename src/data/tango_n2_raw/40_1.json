@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 16,
+  "title": "Topic 2 家事",
+  "page_story": "40_1",
+  "japanese_text": "A：お掃除<u>完了</u>！\nB：おかげさまで<u>あっという間に</u>終わったよ。<u>頼って</u>ばかりでごめんね。\nA：いいよいいよ。でも、<u>かび</u>が生えた服が出てきたときは、びっくりしたな。\nB：うっ…。冬は服が乾きにくいから…。\nA：エアコンをつかった部屋に<u>つるして</u>おくといいよ。部屋も乾燥しないし。",
+  "english_translation": "A: And the cleaning is finished! B: Thanks to you, we got it done in no time. I'm always relying on you, sorry. A: That's all right. But I was surprised to find mold growing on your clothes. B: Uh... It's hard to dry clothes in winter... A: You can hang them in an air-conditioned room. It keeps the room dry too.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0171",
+      "word_number": 171,
+      "kanji": "完了[する]",
+      "furigana": "かんりょう",
+      "meaning_en": "completion, finish"
+    },
+    {
+      "word_id": "n2_0172",
+      "word_number": 172,
+      "kanji": "あっという間",
+      "furigana": "あっというま",
+      "meaning_en": "in no time"
+    },
+    {
+      "word_id": "n2_0173",
+      "word_number": 173,
+      "kanji": "頼る",
+      "furigana": "たよる",
+      "meaning_en": "depend, rely"
+    },
+    {
+      "word_id": "n2_0174",
+      "word_number": 174,
+      "kanji": "かび",
+      "furigana": "",
+      "meaning_en": "mold"
+    },
+    {
+      "word_id": "n2_0175",
+      "word_number": 175,
+      "kanji": "つるす",
+      "furigana": "",
+      "meaning_en": "hang (something)"
+    }
+  ]
+}
