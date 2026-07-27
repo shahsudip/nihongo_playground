@@ -3,7 +3,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
-import { collection, getDocs, doc, setDoc } from 'firebase/firestore';
+import { collection, getDocs, doc, setDoc, onSnapshot } from 'firebase/firestore';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 
 import coverN1 from '../assets/shin_cover_n1.jpg';
@@ -36,116 +36,86 @@ const BookListPage = () => {
     'linear-gradient(135deg, #b8860b 0%, #c0392b 50%, #8b0000 100%)', // Gold/Crimson (N1)
   ];
 
-  const fetchBooksAndProgress = useCallback(async () => {
-    try {
-      setLoading(true);
-      setError(null);
+  const fetchBooksAndProgress = useCallback(() => {
+    setLoading(true);
+    setError(null);
 
-      // 1. Fetch books from Firestore
-      const booksColRef = collection(db, 'books');
-      const booksSnap = await getDocs(booksColRef);
-      
+    const allowedBooks = [
+      'shin-nihongo-500-n1',
+      'shin-nihongo-500-n2',
+      'shin-nihongo-500-n3',
+      'shin-nihongo-500-n4-n5',
+      'shinkanzen-master-n3-reading',
+      'nihongo-power-drill-n1',
+      'nihongo-power-drill-n2',
+      'nihongo-power-drill-n3',
+      'tango_n1',
+      'tango_n2'
+    ];
+
+    const levelOrder = {
+      'shin-nihongo-500-n1': 1,
+      'shin-nihongo-500-n2': 2,
+      'shin-nihongo-500-n3': 3,
+      'shin-nihongo-500-n4-n5': 4,
+      'shinkanzen-master-n3-reading': 5,
+      'nihongo-power-drill-n1': 6,
+      'nihongo-power-drill-n2': 7,
+      'nihongo-power-drill-n3': 8,
+      'tango_n1': 9,
+      'tango_n2': 10
+    };
+
+    // 1. Listen to books collection
+    const booksColRef = collection(db, 'books');
+    const unsubBooks = onSnapshot(booksColRef, async (booksSnap) => {
       let fetchedBooks = [];
-      
-      /* --- AI ADDED: Hard filter to only allow specific books --- */
-      const allowedBooks = [
-        'shin-nihongo-500-n1',
-        'shin-nihongo-500-n2',
-        'shin-nihongo-500-n3',
-        'shin-nihongo-500-n4-n5',
-        'shinkanzen-master-n3-reading',
-        'nihongo-power-drill-n1',
-        'nihongo-power-drill-n2',
-        'nihongo-power-drill-n3',
-        'tango_n1',
-        'tango_n2'
-      ];
-      
       booksSnap.forEach(docSnap => {
         if (allowedBooks.includes(docSnap.id)) {
           fetchedBooks.push({ id: docSnap.id, ...docSnap.data() });
         }
       });
-
-      // Sort books according to custom order: Shin 500 N1 -> N2 -> N3 -> N4-N5 first
-      const levelOrder = {
-        'shin-nihongo-500-n1': 1,
-        'shin-nihongo-500-n2': 2,
-        'shin-nihongo-500-n3': 3,
-        'shin-nihongo-500-n4-n5': 4,
-        'shinkanzen-master-n3-reading': 5,
-        'nihongo-power-drill-n1': 6,
-        'nihongo-power-drill-n2': 7,
-        'nihongo-power-drill-n3': 8,
-        'tango_n1': 9,
-        'tango_n2': 10
-      };
       fetchedBooks.sort((a, b) => (levelOrder[a.id] || 99) - (levelOrder[b.id] || 99));
-      /* -------------------------------------------------------- */
 
-      // If no books are in Firestore, fall back to sample local books
-      if (fetchedBooks.length === 0) {
-        const { sampleBooks } = await import('../data/book_data.jsx');
-        fetchedBooks = sampleBooks.map(b => ({
-          id: b.id,
-          title: b.title,
-          description: b.description,
-          level: b.level,
-          category: b.category,
-          chapters: b.chapters // chapters array is kept locally or populated in Firestore
-        }));
-      }
-
-      // 2. Fetch all chapters for these books to know the full layout
-      // Let's populate the chapters list for each book
+      // Fetch chapters/topics subcollection for each book
       const booksWithChapters = await Promise.all(
         fetchedBooks.map(async (book) => {
-          // Support both 'chapters' (standard books) and 'topics' (Tango books) schemas
           const subColName = (book.id && book.id.startsWith('tango')) ? 'topics' : 'chapters';
-          const chaptersColRef = collection(db, 'books', book.id || 'unknown', subColName);
-          console.log(`Fetching ${subColName} for book: ${book.id}`);
+          const chaptersColRef = collection(db, 'books', book.id, subColName);
           const chaptersSnap = await getDocs(chaptersColRef);
           
           let chapters = [];
           chaptersSnap.forEach(chapSnap => {
             chapters.push({ id: chapSnap.id, ...chapSnap.data() });
           });
-          
-          console.log(`Fetched ${chapters.length} ${subColName} for book: ${book.id}`);
-
-          // Fallback to local chapters if Firestore subcollection is empty
-          if (chapters.length === 0) {
-            const { sampleBooks } = await import('../data/book_data.jsx');
-            const localBook = sampleBooks.find(b => b.id === book.id);
-            if (localBook) {
-              chapters = localBook.chapters;
-            }
-          }
           return { ...book, chapters };
         })
       );
 
       setBooks(booksWithChapters);
+      setLoading(false);
+    }, (err) => {
+      console.error("Error fetching books:", err);
+      setError(`Failed to load books: ${err.message}`);
+      setLoading(false);
+    });
 
-      // 3. Fetch user history
-      if (currentUser) {
-        const historyColRef = collection(db, 'users', currentUser.uid, 'quizHistory');
-        const historySnap = await getDocs(historyColRef);
+    // 2. Fetch user history
+    if (currentUser) {
+      const historyColRef = collection(db, 'users', currentUser.uid, 'quizHistory');
+      getDocs(historyColRef).then(historySnap => {
         const userHistory = {};
         historySnap.forEach(docSnap => {
           const data = docSnap.data();
           if (data && data.type === 'book') {
-            userHistory[data.quizId] = data; // e.g. "genki-1-ch-1-greetings" -> status, score, total
+            userHistory[data.quizId] = data;
           }
         });
         setHistory(userHistory);
-      }
-    } catch (err) {
-      console.error("Error fetching books/progress:", err);
-      setError(`Failed to load books: ${err.message}`);
-    } finally {
-      setLoading(false);
+      });
     }
+
+    return () => unsubBooks();
   }, [currentUser]);
 
   useEffect(() => {
