@@ -10,7 +10,7 @@ if (!fs.existsSync(outDir)) {
   fs.mkdirSync(outDir, { recursive: true });
 }
 
-// Complete 11 stories for Topic 1 (食事) transcribed directly from page images
+// Full Topic 1 (食事 - Eating, No. 1 to 92): 17 stories in total
 const topic1Stories = [
   {
     is_story: true,
@@ -178,6 +178,100 @@ const topic1Stories = [
       { word_id: "n2_0056", word_number: 56, kanji: "等分[する]", furigana: "とうぶん", meaning_en: "equal portions, divide equally" },
       { word_id: "n2_0057", word_number: 57, kanji: "めいめい", furigana: "", meaning_en: "individual, respective" },
       { word_id: "n2_0058", word_number: 58, kanji: "豪華な", furigana: "ごうかな", meaning_en: "gorgeous" }
+    ]
+  },
+  {
+    is_story: true,
+    story_number: 12,
+    title: "Topic 1 食事",
+    page_story: "22_1",
+    japanese_text: "A：今のうちに<u>各自</u>食事を<u>済ませて</u>おくように、だって。\nB：そうなんだ。じゃ、一緒に<u>飯</u>、<u>食い</u>にいく？\nA：いいね。どこ行く？\nB：駅前の定食屋は？あそこ、いつも<u>満席</u>だけど、この時間なら<u>空いて</u>そう。\nA：そうだね。まだ<u>開店して</u>10分くらいだし。行こ、行こ。",
+    english_translation: "A: He said we should each go ahead and get our meals out of the way now. B: Okay. So, do you want to go eat a meal with me? A: Great. Where do you want to go? B: How about that eatery right by the station? It's always full, but it's probably empty at this time of day. A: That's true. It's only been open for about 10 minutes. Let's go, let's go.",
+    annotated_words: [
+      { word_id: "n2_0059", word_number: 59, kanji: "各自", furigana: "かくじ", meaning_en: "each, individual" },
+      { word_id: "n2_0060", word_number: 60, kanji: "済ませる", furigana: "すませる", meaning_en: "get out of the way, be done with" },
+      { word_id: "n2_0061", word_number: 61, kanji: "飯", furigana: "めし", meaning_en: "food, meal" },
+      { word_id: "n2_0062", word_number: 62, kanji: "食う", furigana: "くう", meaning_en: "eat" },
+      { word_id: "n2_0063", word_number: 63, kanji: "満席", furigana: "まんせき", meaning_en: "full to capacity" },
+      { word_id: "n2_0064", word_number: 64, kanji: "空席", furigana: "くうせき", meaning_en: "vacant seats" },
+      { word_id: "n2_0065", word_number: 65, kanji: "開店[する]", furigana: "かいてん", meaning_en: "open, to open a store" }
+    ]
+  },
+  {
+    is_story: true,
+    story_number: 13,
+    title: "Topic 1 食事",
+    page_story: "22_2",
+    japanese_text: "A：なんか、<u>食卓</u>の下、<u>湿って</u>ない？\nB：ああ。さっき、お父さんが<u>酔っぱらって</u>お酒こぼしちゃったの。",
+    english_translation: "A: Hey, is it wet under the table? B: Yeah. Dad got drunk and spilled some alcohol earlier.",
+    annotated_words: [
+      { word_id: "n2_0066", word_number: 66, kanji: "食卓", furigana: "しょくたく", meaning_en: "table" },
+      { word_id: "n2_0067", word_number: 67, kanji: "湿る", furigana: "しめる", meaning_en: "get wet" },
+      { word_id: "n2_0068", word_number: 68, kanji: "酔っぱらう", furigana: "よっぱらう", meaning_en: "get drunk" },
+      { word_id: "n2_0069", word_number: 69, kanji: "酔っぱらい", furigana: "よっぱらい", meaning_en: "drunkard" }
+    ]
+  },
+  {
+    is_story: true,
+    story_number: 14,
+    title: "Topic 1 食事",
+    page_story: "23_1",
+    japanese_text: "フランス料理はマナーが難しい。パンの<u>くず</u>は店の人が掃除するので自分で払ってはいけない。スープを飲むときは、皿の<u>縁</u>からスプーンを入れる。少なくなってきたら皿を<u>傾けて</u>もいいが、音をたててはいけない。ワインを注文するときは、はじめに少量だけ<u>つがれ</u>、味や香りをチェックすることになっている。",
+    english_translation: "Etiquette for French cuisine is difficult. You shouldn't sweep away bread crumbs yourself, since the waiter will clean them up. When eating soup, you put the spoon in from the edge of the bowl. When there's only a little soup left, you may tilt the bowl, but you shouldn't make any noise. When you order wine, only a small amount of wine is poured at the start so you can check the flavor and aroma.",
+    annotated_words: [
+      { word_id: "n2_0070", word_number: 70, kanji: "くず", furigana: "", meaning_en: "crumbs, waste" },
+      { word_id: "n2_0071", word_number: 71, kanji: "縁", furigana: "ふち", meaning_en: "edge" },
+      { word_id: "n2_0072", word_number: 72, kanji: "傾ける", furigana: "かたむける", meaning_en: "tilt" },
+      { word_id: "n2_0073", word_number: 73, kanji: "傾く", furigana: "かたむく", meaning_en: "incline, lean" },
+      { word_id: "n2_0074", word_number: 74, kanji: "つぐ", furigana: "", meaning_en: "pour" }
+    ]
+  },
+  {
+    is_story: true,
+    story_number: 15,
+    title: "Topic 1 食事",
+    page_story: "24_1",
+    japanese_text: "私の<u>好物</u>はこの店のラーメンだ。いつもニンニク・野菜<u>増し</u>で注文している。<u>湯気</u>が出ている熱々の大盛りのラーメンが出されると、<u>毎度</u>食べきれるか少し不安になる。ゆっくりと<u>味わっ</u>ている時間はない。麺がのびないうちに急いで食べる。そして、帰りに<u>さっぱり</u>したアイスを買うのも欠かせない。",
+    english_translation: "My favorite food is the ramen at this restaurant. I always order extra garlic and vegetables. When I'm served a large bowl of hot, steamy ramen, I'm always a little nervous about whether I'll be able to finish it. There's no time to savor it slowly. I eat it quickly before the noodles get too soft. And on the way home, it's essential to buy a refreshing ice cream.",
+    annotated_words: [
+      { word_id: "n2_0075", word_number: 75, kanji: "好物", furigana: "こうぶつ", meaning_en: "favorite" },
+      { word_id: "n2_0076", word_number: 76, kanji: "増し", furigana: "まし", meaning_en: "addition, extra" },
+      { word_id: "n2_0077", word_number: 77, kanji: "増す", furigana: "ます", meaning_en: "add to, increase" },
+      { word_id: "n2_0078", word_number: 78, kanji: "湯気", furigana: "ゆげ", meaning_en: "steam" },
+      { word_id: "n2_0079", word_number: 79, kanji: "毎度", furigana: "まいど", meaning_en: "always, every time" },
+      { word_id: "n2_0080", word_number: 80, kanji: "味わう", furigana: "あじわう", meaning_en: "savor" },
+      { word_id: "n2_0081", word_number: 81, kanji: "さっぱり", furigana: "", meaning_en: "refreshingly" }
+    ]
+  },
+  {
+    is_story: true,
+    story_number: 16,
+    title: "Topic 1 食事",
+    page_story: "24_2",
+    japanese_text: "「胃下垂」には、食後にお腹の下の方が<u>膨らむ</u>という特徴がある。また、<u>消化</u>不良の原因にもなりうる。",
+    english_translation: "Ikasui (gastric ptosis) is characterized by bloating in the lower abdomen after eating. It can also cause indigestion.",
+    annotated_words: [
+      { word_id: "n2_0082", word_number: 82, kanji: "膨らむ", furigana: "ふくらむ", meaning_en: "bloat" },
+      { word_id: "n2_0083", word_number: 83, kanji: "膨らます", furigana: "ふくらます", meaning_en: "inflate, expand (something)" },
+      { word_id: "n2_0084", word_number: 84, kanji: "消化[する]", furigana: "しょうか", meaning_en: "digestion, digest" }
+    ]
+  },
+  {
+    is_story: true,
+    story_number: 17,
+    title: "Topic 1 食事",
+    page_story: "25_1",
+    japanese_text: "ダイエット中は<u>カロリー</u>ばかり気にする人もいるが、<u>タンパク質</u>などの必要な栄養を<u>バランス</u>よくとることが大切だ。カロリーが少なすぎると<u>エネルギー</u>不足になり、やせにくくなってしまう。\nまた、<u>主食</u>はパンよりも米を、デザートはケーキではなく<u>和菓子</u>を選ぶようにしたり、<u>塩分</u>をとりすぎないようにすると良い。",
+    english_translation: "Although some people are only concerned about calories when dieting, it's important to have a good balance of protein and other essential nutrients. Too few calories will result in a lack of energy, making it difficult to lose weight. It is also advisable to eat rice rather than bread as a staple food, to choose Japanese sweets for dessert instead of cakes, and to avoid excessive salt.",
+    annotated_words: [
+      { word_id: "n2_0085", word_number: 85, kanji: "カロリー", furigana: "", meaning_en: "calories" },
+      { word_id: "n2_0086", word_number: 86, kanji: "タンパク質", furigana: "たんぱくしつ", meaning_en: "protein" },
+      { word_id: "n2_0087", word_number: 87, kanji: "バランス", furigana: "", meaning_en: "balance" },
+      { word_id: "n2_0088", word_number: 88, kanji: "エネルギー", furigana: "", meaning_en: "energy" },
+      { word_id: "n2_0089", word_number: 89, kanji: "主食", furigana: "しゅしょく", meaning_en: "staple food" },
+      { word_id: "n2_0090", word_number: 90, kanji: "主～", furigana: "しゅ", meaning_en: "main ~" },
+      { word_id: "n2_0091", word_number: 91, kanji: "和～", furigana: "わ", meaning_en: "Japanese ~" },
+      { word_id: "n2_0092", word_number: 92, kanji: "塩分", furigana: "えんぶん", meaning_en: "salt content" }
     ]
   }
 ];

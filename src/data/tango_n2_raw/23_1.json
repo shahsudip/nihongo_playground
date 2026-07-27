@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 14,
+  "title": "Topic 1 食事",
+  "page_story": "23_1",
+  "japanese_text": "フランス料理はマナーが難しい。パンの<u>くず</u>は店の人が掃除するので自分で払ってはいけない。スープを飲むときは、皿の<u>縁</u>からスプーンを入れる。少なくなってきたら皿を<u>傾けて</u>もいいが、音をたててはいけない。ワインを注文するときは、はじめに少量だけ<u>つがれ</u>、味や香りをチェックすることになっている。",
+  "english_translation": "Etiquette for French cuisine is difficult. You shouldn't sweep away bread crumbs yourself, since the waiter will clean them up. When eating soup, you put the spoon in from the edge of the bowl. When there's only a little soup left, you may tilt the bowl, but you shouldn't make any noise. When you order wine, only a small amount of wine is poured at the start so you can check the flavor and aroma.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0070",
+      "word_number": 70,
+      "kanji": "くず",
+      "furigana": "",
+      "meaning_en": "crumbs, waste"
+    },
+    {
+      "word_id": "n2_0071",
+      "word_number": 71,
+      "kanji": "縁",
+      "furigana": "ふち",
+      "meaning_en": "edge"
+    },
+    {
+      "word_id": "n2_0072",
+      "word_number": 72,
+      "kanji": "傾ける",
+      "furigana": "かたむける",
+      "meaning_en": "tilt"
+    },
+    {
+      "word_id": "n2_0073",
+      "word_number": 73,
+      "kanji": "傾く",
+      "furigana": "かたむく",
+      "meaning_en": "incline, lean"
+    },
+    {
+      "word_id": "n2_0074",
+      "word_number": 74,
+      "kanji": "つぐ",
+      "furigana": "",
+      "meaning_en": "pour"
+    }
+  ]
+}
