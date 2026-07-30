@@ -1,0 +1,33 @@
+{
+  "id": "29_1",
+  "title": "Topic 1",
+  "japanese_text": "<span class='annotated-word' data-word='餅'><ruby>餅<rt>もち</rt></ruby></span>は、「もち<ruby>米<rt>ごめ</rt></ruby>」という<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>米<rt>こめ</rt></ruby>を<span class='annotated-word' data-word='蒸す'><ruby>蒸<rt>む</rt></ruby>した</span><ruby>後<rt>あと</rt></ruby>、うすときねでついて<ruby>作<rt>つく</rt></ruby>る。<ruby>焼<rt>や</rt></ruby>いたり<ruby>茹<rt>ゆ</rt></ruby>でたりするほか、<span class='annotated-word' data-word='あんこ'>あんこ</span>を<span class='annotated-word' data-word='くるむ'>くるんで</span>お<ruby>菓子<rt>かし</rt></ruby>としても<ruby>食<rt>た</rt></ruby>べられる。また、もち<ruby>米<rt>ごめ</rt></ruby>は<ruby>普通<rt>ふつう</rt></ruby>のお<ruby>米<rt>こめ</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じように<span class='annotated-word' data-word='炊く'><ruby>炊<rt>た</rt></ruby>く</span>こともできる。<ruby>赤飯<rt>せきはん</rt></ruby>はもち<ruby>米<rt>ごめ</rt></ruby>を<ruby>炊<rt>た</rt></ruby>いて<ruby>作<rt>つく</rt></ruby>る。",
+  "english_translation": "Mochi is made by steaming a special type of rice called mochigome and then using mortar and pestle. In addition to baking or boiling it, you can also wrap it in sweet bean paste and eat it as sweets. In addition, mochigome can be cooked in the same way as ordinary rice. Red rice is made by cooking mochigome.",
+  "annotated_words": [
+    {
+      "meaning_en": "mochi, pounded rice cake",
+      "furigana": "もち",
+      "kanji": "餅"
+    },
+    {
+      "meaning_en": "steam",
+      "furigana": "むす",
+      "kanji": "蒸す"
+    },
+    {
+      "meaning_en": "anko, sweet bean paste",
+      "furigana": "",
+      "kanji": "あんこ"
+    },
+    {
+      "meaning_en": "wrap",
+      "furigana": "",
+      "kanji": "くるむ"
+    },
+    {
+      "meaning_en": "cook",
+      "furigana": "たく",
+      "kanji": "炊く"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "26_2",
+  "title": "Topic 1",
+  "japanese_text": "おいしいと<span class='annotated-word' data-word='評判'><ruby>評判<rt>ひょうばん</rt></ruby></span>のラーメン<ruby>屋<rt>や</rt></ruby>。<ruby>日本中<rt>にほんじゅう</rt></ruby>に<ruby>店<rt>みせ</rt></ruby>があるが、<span class='annotated-word' data-word='本店'><ruby>本店<rt>ほんてん</rt></ruby></span>は<ruby>特<rt>とく</rt></ruby>に<ruby>人気<rt>にんき</rt></ruby>が<ruby>高<rt>たか</rt></ruby>く、<span class='annotated-word' data-word='わざわざ'>わざわざ</span><ruby>隣<rt>となり</rt></ruby>の<ruby>県<rt>けん</rt></ruby>から<ruby>来<rt>く</rt></ruby>る<ruby>客<rt>きゃく</rt></ruby>もいる。<ruby>店<rt>みせ</rt></ruby>は<span class='annotated-word' data-word='細長い'><ruby>細長<rt>ほそなが</rt></ruby>く</span>、<ruby>大勢<rt>おおぜい</rt></ruby>の<ruby>客<rt>きゃく</rt></ruby>が<ruby>入<rt>はい</rt></ruby>れないので、<ruby>店<rt>みせ</rt></ruby>の<ruby>外<rt>そと</rt></ruby>にはいつも<span class='annotated-word' data-word='行列'><ruby>行列<rt>ぎょうれつ</rt></ruby></span>ができている。",
+  "english_translation": "This is a ramen shop with a reputation for its food being delicious. It has branches all over Japan, but the main store is particularly popular, and some customers come all the way from neighboring prefectures. The store is long and narrow and cannot accommodate a large number of customers, so there are always lines outside the store.",
+  "annotated_words": [
+    {
+      "meaning_en": "reputation",
+      "furigana": "ひょうばん",
+      "kanji": "評判"
+    },
+    {
+      "meaning_en": "main store",
+      "furigana": "ほんてん",
+      "kanji": "本店"
+    },
+    {
+      "meaning_en": "main office, headquarters",
+      "furigana": "ほんしゃ",
+      "kanji": "本社"
+    },
+    {
+      "meaning_en": "take the trouble",
+      "furigana": "",
+      "kanji": "わざわざ"
+    },
+    {
+      "meaning_en": "long and narrow",
+      "furigana": "ほそながい",
+      "kanji": "細長い"
+    },
+    {
+      "meaning_en": "ranks, line",
+      "furigana": "ぎょうれつ",
+      "kanji": "行列"
+    }
+  ]
+}

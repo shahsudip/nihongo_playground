@@ -1,0 +1,43 @@
+{
+  "id": "18_2",
+  "title": "Topic 1",
+  "japanese_text": "<span class='annotated-word' data-word='焼肉'><ruby>焼肉<rt>やきにく</rt></ruby></span>の<span class='annotated-word' data-word='バイキング'>バイキング</span>は<span class='annotated-word' data-word='セルフサービス'>セルフサービス</span>ではなく、テーブルで<ruby>注文<rt>ちゅうもん</rt></ruby>するスタイルが<ruby>多<rt>おお</rt></ruby>い。<ruby>肉<rt>にく</rt></ruby><ruby>以外<rt>いがい</rt></ruby>にも、<span class='annotated-word' data-word='ライス'>ライス</span>、<span class='annotated-word' data-word='スープ'>スープ</span>、<span class='annotated-word' data-word='デザート'>デザート</span>などが<ruby>注文<rt>ちゅうもん</rt></ruby>できる。もちろん、<span class='annotated-word' data-word='残す'><ruby>残<rt>のこ</rt></ruby>す</span>してはいけない。",
+  "english_translation": "Yakiniku buffet is not self-service, but is often ordered at the table. Besides meat, you can order rice, soup, dessert and more. Of course, you must not leave any leftovers.",
+  "annotated_words": [
+    {
+      "meaning_en": "yakiniku, Korean bbq",
+      "furigana": "やきにく",
+      "kanji": "焼肉"
+    },
+    {
+      "meaning_en": "buffet, all-you-can-eat",
+      "furigana": "",
+      "kanji": "バイキング"
+    },
+    {
+      "meaning_en": "self service",
+      "furigana": "",
+      "kanji": "セルフサービス"
+    },
+    {
+      "meaning_en": "rice",
+      "furigana": "",
+      "kanji": "ライス"
+    },
+    {
+      "meaning_en": "soup",
+      "furigana": "",
+      "kanji": "スープ"
+    },
+    {
+      "meaning_en": "dessert",
+      "furigana": "",
+      "kanji": "デザート"
+    },
+    {
+      "meaning_en": "leave",
+      "furigana": "のこす",
+      "kanji": "残す"
+    }
+  ]
+}

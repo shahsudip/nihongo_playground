@@ -1,0 +1,48 @@
+{
+  "id": "27_1",
+  "title": "Topic 1",
+  "japanese_text": "<span class='annotated-word' data-word='食品'><ruby>食品<rt>しょくひん</rt></ruby></span>の<span class='annotated-word' data-word='産地'><ruby>産地<rt>さんち</rt></ruby></span>を<ruby>気<rt>き</rt></ruby>にする<ruby>人<rt>ひと</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えてきた。<span class='annotated-word' data-word='基本的な'><ruby>基本的<rt>きほんてき</rt></ruby>な</span>には<span class='annotated-word' data-word='国産'><ruby>国産<rt>こくさん</rt></ruby></span>のものの<ruby>方<rt>ほう</rt></ruby>が<span class='annotated-word' data-word='品質'><ruby>品質<rt>ひんしつ</rt></ruby></span>も<ruby>値段<rt>ねだん</rt></ruby>も<ruby>高<rt>たか</rt></ruby>い。そのため、<ruby>海外<rt>かいがい</rt></ruby><span class='annotated-word' data-word='～産'><ruby>産<rt>さん</rt></ruby></span>の<ruby>食品<rt>しょくひん</rt></ruby>に、「<ruby>国産<rt>こくさん</rt></ruby>」の<span class='annotated-word' data-word='ラベル'>ラベル</span>を<ruby>貼<rt>は</rt></ruby>る<ruby>事件<rt>じけん</rt></ruby>も<ruby>起<rt>お</rt></ruby>きた。",
+  "english_translation": "An increasing number of people are concerned about the production areas of their food. Generally, domestic products are higher in quality and price. As a result, there have been cases where overseas food products are labeled as \"domestic.\"",
+  "annotated_words": [
+    {
+      "meaning_en": "food",
+      "furigana": "しょくひん",
+      "kanji": "食品"
+    },
+    {
+      "meaning_en": "production area",
+      "furigana": "さんち",
+      "kanji": "産地"
+    },
+    {
+      "meaning_en": "basic, general",
+      "furigana": "きほんてき",
+      "kanji": "基本的な"
+    },
+    {
+      "meaning_en": "basics",
+      "furigana": "きほん",
+      "kanji": "基本"
+    },
+    {
+      "meaning_en": "domestic product",
+      "furigana": "こくさん",
+      "kanji": "国産"
+    },
+    {
+      "meaning_en": "quality",
+      "furigana": "ひんしつ",
+      "kanji": "品質"
+    },
+    {
+      "meaning_en": "made in ~, from ~",
+      "furigana": "さん",
+      "kanji": "～産"
+    },
+    {
+      "meaning_en": "label",
+      "furigana": "",
+      "kanji": "ラベル"
+    }
+  ]
+}

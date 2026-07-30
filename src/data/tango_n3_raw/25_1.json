@@ -1,0 +1,28 @@
+{
+  "id": "25_1",
+  "title": "Topic 1",
+  "japanese_text": "<span class='annotated-word' data-word='ガム'>ガム</span>は、<span class='annotated-word' data-word='栄養'><ruby>栄養<rt>えいよう</rt></ruby></span>がほとんどないが、<ruby>虫歯<rt>むしば</rt></ruby>の<ruby>予防<rt>よぼう</rt></ruby>や<ruby>集中力<rt>しゅうちゅうりょく</rt></ruby>を<ruby>高<rt>たか</rt></ruby>める<ruby>効果<rt>こうか</rt></ruby>があり、<ruby>毎日<rt>まいにち</rt></ruby>かんでいる<ruby>人<rt>ひと</rt></ruby>も<ruby>多<rt>おお</rt></ruby>い。しかし、<span class='annotated-word' data-word='ポイ捨て'>ポイ<ruby>捨<rt>す</rt></ruby>て</span>が<ruby>問題<rt>もんだい</rt></ruby>になる。<ruby>外出<rt>がいしゅつ</rt></ruby>するときは、<span class='annotated-word' data-word='包み紙'><ruby>包<rt>つつ</rt></ruby>み<ruby>紙<rt>がみ</rt></ruby></span>を<ruby>忘<rt>わす</rt></ruby>れないようにしたい。",
+  "english_translation": "Gum has little nutrition, but it has the effect of preventing cavities and increasing concentration, and many people chew it every day. However, littering is a problem. When going out, try not to forget to bring wrapping paper.",
+  "annotated_words": [
+    {
+      "meaning_en": "gum",
+      "furigana": "",
+      "kanji": "ガム"
+    },
+    {
+      "meaning_en": "nutrition",
+      "furigana": "えいよう",
+      "kanji": "栄養"
+    },
+    {
+      "meaning_en": "littering, litter, toss away",
+      "furigana": "ポイすて",
+      "kanji": "ポイ捨て[する]"
+    },
+    {
+      "meaning_en": "wrapping paper",
+      "furigana": "つつみがみ",
+      "kanji": "包み紙"
+    }
+  ]
+}

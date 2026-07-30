@@ -1,0 +1,43 @@
+{
+  "id": "18_1",
+  "title": "Topic 1",
+  "japanese_text": "A：<span class='annotated-word' data-word='お待たせしました'>お<ruby>待<rt>ま</rt></ruby>たせしました</span>。<span class='annotated-word' data-word='～風'><ruby>和風<rt>わふう</rt></ruby></span>ハンバーグでございます。<span class='annotated-word' data-word='ソース'>ソース</span>をかけて、お<span class='annotated-word' data-word='召し上がる'><ruby>召<rt>め</rt></ruby>し<ruby>上<rt>あ</rt></ruby>がり</span>ください。<br>B：あ、どうぞ<span class='annotated-word' data-word='（お）先に'>お<ruby>先<rt>さき</rt></ruby>に</span>。<span class='annotated-word' data-word='（ご）遠慮なく'>ご<ruby>遠慮<rt>えんりょ</rt></ruby>なく</span>。<br>C：じゃあ、いただきます。",
+  "english_translation": "A: Thank you for your patience. Here is your Japanese-style hamburger steak. Please enjoy it with sauce. B: Oh, please go ahead. No need to hesitate. C: Then let's eat.",
+  "annotated_words": [
+    {
+      "meaning_en": "(sorry to) keep you waiting",
+      "furigana": "ま",
+      "kanji": "お待たせしました"
+    },
+    {
+      "meaning_en": "I'm sorry to have kept you waiting",
+      "furigana": "ま",
+      "kanji": "お待ちどおさま"
+    },
+    {
+      "meaning_en": "~ style",
+      "furigana": "ふう",
+      "kanji": "～風"
+    },
+    {
+      "meaning_en": "sauce",
+      "furigana": "",
+      "kanji": "ソース"
+    },
+    {
+      "meaning_en": "eat, drink (honorific speech)",
+      "furigana": "めしあがる",
+      "kanji": "召し上がる"
+    },
+    {
+      "meaning_en": "after you",
+      "furigana": "さき",
+      "kanji": "（お）先に"
+    },
+    {
+      "meaning_en": "without hesitation, no need to hesitate",
+      "furigana": "えんりょ",
+      "kanji": "（ご）遠慮なく"
+    }
+  ]
+}

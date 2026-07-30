@@ -1,0 +1,43 @@
+{
+  "id": "24_2",
+  "title": "Topic 1",
+  "japanese_text": "<ruby>先輩<rt>せんぱい</rt></ruby>の<span class='annotated-word' data-word='送別会'><ruby>送別会<rt>そうべつかい</rt></ruby></span>が、<ruby>高<rt>たか</rt></ruby>そうな<span class='annotated-word' data-word='西洋'><ruby>西洋<rt>せいよう</rt></ruby></span><span class='annotated-word' data-word='料理店'><ruby>料理店<rt>りょうりてん</rt></ruby></span>で<ruby>開<rt>ひら</rt></ruby>かれた。テーブルにたくさんの<ruby>食器<rt>しょっき</rt></ruby>と<span class='annotated-word' data-word='ナプキン'>ナプキン</span>が<ruby>置<rt>お</rt></ruby>かれていて、<ruby>見<rt>み</rt></ruby>るだけで<ruby>緊張<rt>きんちょう</rt></ruby>してしまった。<ruby>見<rt>み</rt></ruby>たことがない<span class='annotated-word' data-word='ごちそう'>ごちそう</span>だったが、<ruby>緊張<rt>きんちょう</rt></ruby>しすぎて<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>食<rt>た</rt></ruby>べられず、<span class='annotated-word' data-word='もったいない'>もったいなかった</span>。",
+  "english_translation": "A farewell party for our senior was held at an expensive-looking Western-style restaurant. There were a lot of tableware and napkins on the table, and I got nervous just from looking at them. It was a feast like I had never seen before, but I was too nervous to eat everything, which was a waste.",
+  "annotated_words": [
+    {
+      "meaning_en": "farewell party",
+      "furigana": "そうべつかい",
+      "kanji": "送別会"
+    },
+    {
+      "meaning_en": "Western",
+      "furigana": "せいよう",
+      "kanji": "西洋"
+    },
+    {
+      "meaning_en": "~ store",
+      "furigana": "てん",
+      "kanji": "～店"
+    },
+    {
+      "meaning_en": "napkin",
+      "furigana": "",
+      "kanji": "ナプキン"
+    },
+    {
+      "meaning_en": "feast",
+      "furigana": "",
+      "kanji": "ごちそう"
+    },
+    {
+      "meaning_en": "treat (someone) to a meal",
+      "furigana": "",
+      "kanji": "ごちそうする"
+    },
+    {
+      "meaning_en": "wasteful",
+      "furigana": "",
+      "kanji": "もったいない"
+    }
+  ]
+}

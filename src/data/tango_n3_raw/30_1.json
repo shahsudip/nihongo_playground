@@ -1,0 +1,23 @@
+{
+  "id": "30_1",
+  "title": "Topic 1",
+  "japanese_text": "A：あ、<ruby>私<rt>わたし</rt></ruby>は<span class='annotated-word' data-word='ノンアルコール'>ノンアルコール</span>ビールで。<br>B：え、<ruby>飲<rt>の</rt></ruby>まないの？<br>A：うん、ちょっと<ruby>医者<rt>いしゃ</rt></ruby>に<span class='annotated-word' data-word='肝臓'><ruby>肝臓<rt>かんぞう</rt></ruby></span>が<ruby>悪<rt>わる</rt></ruby>いと<ruby>言<rt>い</rt></ruby>われて。<span class='annotated-word' data-word='飲酒'><ruby>飲酒<rt>いんしゅ</rt></ruby></span>は<ruby>週<rt>しゅう</rt></ruby>2<ruby>回<rt>かい</rt></ruby>に<ruby>制限<rt>せいげん</rt></ruby>してるんだ。",
+  "english_translation": "A: Oh, I'll have the non-alcoholic beer. B: Huh, don't you drink? A: Yeah, my doctor said that my liver is a little bad. So, I only drink twice a week.",
+  "annotated_words": [
+    {
+      "meaning_en": "non-alcoholic (drink)",
+      "furigana": "",
+      "kanji": "ノンアルコール"
+    },
+    {
+      "meaning_en": "liver",
+      "furigana": "かんぞう",
+      "kanji": "肝臓"
+    },
+    {
+      "meaning_en": "drinking alcohol, drink alcohol",
+      "furigana": "いんしゅ",
+      "kanji": "飲酒[する]"
+    }
+  ]
+}

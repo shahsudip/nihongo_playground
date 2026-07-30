@@ -1,0 +1,33 @@
+{
+  "id": "21_2",
+  "title": "Topic 1",
+  "japanese_text": "<span class='annotated-word' data-word='腹'><ruby>腹<rt>はら</rt></ruby></span>が<ruby>痛<rt>いた</rt></ruby>い。<span class='annotated-word' data-word='レバー'>レバー</span>を<span class='annotated-word' data-word='生'><ruby>生<rt>なま</rt></ruby></span>で<ruby>食<rt>た</rt></ruby>べたのが<ruby>原因<rt>げんいん</rt></ruby>だろうか。<span class='annotated-word' data-word='それとも'>それとも</span><span class='annotated-word' data-word='貝'><ruby>貝<rt>かい</rt></ruby></span>だろうか。",
+  "english_translation": "I have a stomachache. Is it because I ate some liver raw? Or was it the shellfish?",
+  "annotated_words": [
+    {
+      "meaning_en": "stomach",
+      "furigana": "はら",
+      "kanji": "腹"
+    },
+    {
+      "meaning_en": "liver",
+      "furigana": "",
+      "kanji": "レバー"
+    },
+    {
+      "meaning_en": "raw",
+      "furigana": "なま",
+      "kanji": "生"
+    },
+    {
+      "meaning_en": "or",
+      "furigana": "",
+      "kanji": "それとも"
+    },
+    {
+      "meaning_en": "shell",
+      "furigana": "かい",
+      "kanji": "貝"
+    }
+  ]
+}

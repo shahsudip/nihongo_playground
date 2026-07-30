@@ -1,0 +1,48 @@
+{
+  "id": "17_1",
+  "title": "Topic 1",
+  "japanese_text": "A：あのう、<ruby>今日<rt>きょう</rt></ruby>の<span class='annotated-word' data-word='日替わり'><ruby>日替<rt>ひが</rt></ruby>わり</span><span class='annotated-word' data-word='定食'><ruby>定食<rt>ていしょく</rt></ruby></span>って<ruby>何<rt>なん</rt></ruby>ですか。<br>B：<span class='annotated-word' data-word='本日'><ruby>本日<rt>ほんじつ</rt></ruby></span>は、<span class='annotated-word' data-word='エビ'>エビ</span><span class='annotated-word' data-word='フライ'>フライ</span>と<span class='annotated-word' data-word='おかず'>おかず</span>が1つ、あとはご<ruby>飯<rt>はん</rt></ruby>と<span class='annotated-word' data-word='みそ'>みそ</span><span class='annotated-word' data-word='汁'><ruby>汁<rt>しる</rt></ruby></span>です。",
+  "english_translation": "A: Um, what's in the daily set meal? B: Today, we have fried shrimp and one side dish, and also rice and miso soup.",
+  "annotated_words": [
+    {
+      "meaning_en": "daily",
+      "furigana": "ひがわり",
+      "kanji": "日替わり"
+    },
+    {
+      "meaning_en": "set meal",
+      "furigana": "ていしょく",
+      "kanji": "定食"
+    },
+    {
+      "meaning_en": "today",
+      "furigana": "ほんじつ",
+      "kanji": "本日"
+    },
+    {
+      "meaning_en": "shrimp",
+      "furigana": "",
+      "kanji": "エビ"
+    },
+    {
+      "meaning_en": "fried, fry",
+      "furigana": "",
+      "kanji": "フライ"
+    },
+    {
+      "meaning_en": "side dish",
+      "furigana": "",
+      "kanji": "おかず"
+    },
+    {
+      "meaning_en": "miso",
+      "furigana": "",
+      "kanji": "みそ"
+    },
+    {
+      "meaning_en": "soup",
+      "furigana": "しる",
+      "kanji": "汁"
+    }
+  ]
+}

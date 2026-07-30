@@ -1,0 +1,33 @@
+{
+  "id": "24_1",
+  "title": "Topic 1",
+  "japanese_text": "A：<span class='annotated-word' data-word='忘年会'><ruby>忘年会<rt>ぼうねんかい</rt></ruby></span>のお<ruby>店<rt>みせ</rt></ruby>、「<ruby>梅<rt>うめ</rt></ruby>の<ruby>花<rt>はな</rt></ruby>」はどうかな？<br>B：え、どこですか。<br>A：<ruby>知<rt>し</rt></ruby>らない？　<ruby>駅<rt>えき</rt></ruby>の<ruby>北<rt>きた</rt></ruby><span class='annotated-word' data-word='～口'><ruby>口<rt>ぐち</rt></ruby></span>にある<ruby>居酒屋<rt>いざかや</rt></ruby>。<br>B：<ruby>分<rt>わ</rt></ruby>かりました。<span class='annotated-word' data-word='押さえます'><ruby>押<rt>お</rt></ruby>さえます</span>。<span class='annotated-word' data-word='乾杯'><ruby>乾杯<rt>かんぱい</rt></ruby></span>のあいさつは<ruby>部長<rt>ぶちょう</rt></ruby>にお<ruby>願<rt>ねが</rt></ruby>いするつもりです。",
+  "english_translation": "A: How about having our year-end party at that restaurant called Ume no Hana? B: Where is it? A: You don't know? It's a pub at the north exit of the station. B: I got it. I'll make a reservation. I plan on asking the department chief to give a toast.",
+  "annotated_words": [
+    {
+      "meaning_en": "year-end party",
+      "furigana": "ぼうねんかい",
+      "kanji": "忘年会"
+    },
+    {
+      "meaning_en": "New Year's party",
+      "furigana": "しんねんかい",
+      "kanji": "新年会"
+    },
+    {
+      "meaning_en": "~ entrance, exit",
+      "furigana": "ぐち",
+      "kanji": "～口"
+    },
+    {
+      "meaning_en": "make a reservation, hold down",
+      "furigana": "おさえる",
+      "kanji": "押さえる"
+    },
+    {
+      "meaning_en": "toast, make a toast",
+      "furigana": "かんぱい",
+      "kanji": "乾杯[する]"
+    }
+  ]
+}

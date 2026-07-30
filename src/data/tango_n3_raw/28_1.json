@@ -1,0 +1,38 @@
+{
+  "id": "28_1",
+  "title": "Topic 1",
+  "japanese_text": "この<ruby>店<rt>みせ</rt></ruby>の<span class='annotated-word' data-word='スイーツ'>スイーツ</span>は<span class='annotated-word' data-word='クリーム'>クリーム</span>をたくさん<ruby>使<rt>つか</rt></ruby>っていて、<ruby>食<rt>た</rt></ruby>べるといつも<span class='annotated-word' data-word='幸せな'><ruby>幸<rt>しあわ</rt></ruby>せな</span><ruby>気分<rt>きぶん</rt></ruby>になる。<ruby>問題<rt>もんだい</rt></ruby>は、すぐに<span class='annotated-word' data-word='売り切れる'><ruby>売<rt>う</rt></ruby>り<ruby>切<rt>き</rt></ruby>れる</span>ことと、<ruby>大<rt>おお</rt></ruby>きいので、<span class='annotated-word' data-word='おやつ'>おやつ</span>に<ruby>食<rt>た</rt></ruby>べると<ruby>夕食<rt>ゆうしょく</rt></ruby>があまり<ruby>食<rt>た</rt></ruby>べられなくなることだ。",
+  "english_translation": "The sweets in this shop use a lot of cream, and I always feel happy when I eat them. The problem is that they sell out quickly, and they're so big that you won't be able to eat much dinner after you eat one as a snack.",
+  "annotated_words": [
+    {
+      "meaning_en": "sweets",
+      "furigana": "",
+      "kanji": "スイーツ"
+    },
+    {
+      "meaning_en": "cream",
+      "furigana": "",
+      "kanji": "クリーム"
+    },
+    {
+      "meaning_en": "happy, joy",
+      "furigana": "しあわせ",
+      "kanji": "幸せな"
+    },
+    {
+      "meaning_en": "be sold out",
+      "furigana": "うりきれる",
+      "kanji": "売り切れる"
+    },
+    {
+      "meaning_en": "sold out",
+      "furigana": "うりきれ",
+      "kanji": "売り切れ"
+    },
+    {
+      "meaning_en": "snack",
+      "furigana": "",
+      "kanji": "おやつ"
+    }
+  ]
+}

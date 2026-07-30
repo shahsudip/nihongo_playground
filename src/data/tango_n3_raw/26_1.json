@@ -1,0 +1,28 @@
+{
+  "id": "26_1",
+  "title": "Topic 1",
+  "japanese_text": "<span class='annotated-word' data-word='飲み会'><ruby>飲<rt>の</rt></ruby>み<ruby>会<rt>かい</rt></ruby></span>で、<span class='annotated-word' data-word='割り勘'><ruby>割<rt>わ</rt></ruby>り<ruby>勘<rt>かん</rt></ruby></span>だったのに、<span class='annotated-word' data-word='酔って'><ruby>酔<rt>よ</rt></ruby>って</span>しまってお<ruby>金<rt>かね</rt></ruby>を<ruby>払<rt>はら</rt></ruby>わずに<ruby>帰<rt>かえ</rt></ruby>ってしまった。<span class='annotated-word' data-word='翌日'><ruby>翌日<rt>よくじつ</rt></ruby></span>、<ruby>注意<rt>ちゅうい</rt></ruby>されたのでお<ruby>金<rt>かね</rt></ruby>を<ruby>払<rt>はら</rt></ruby>った。",
+  "english_translation": "At the drinking party, we split the bill, but I got drunk and went home without paying. The next day, they cautioned me, and I paid.",
+  "annotated_words": [
+    {
+      "meaning_en": "drinking party",
+      "furigana": "のみかい",
+      "kanji": "飲み会"
+    },
+    {
+      "meaning_en": "splitting the bill, split the bill",
+      "furigana": "わりかん",
+      "kanji": "割り勘[する]"
+    },
+    {
+      "meaning_en": "become intoxicated, get drunk",
+      "furigana": "よう",
+      "kanji": "酔う"
+    },
+    {
+      "meaning_en": "next day",
+      "furigana": "よくじつ",
+      "kanji": "翌日"
+    }
+  ]
+}

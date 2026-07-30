@@ -1,0 +1,38 @@
+{
+  "id": "19_1",
+  "title": "Topic 1",
+  "japanese_text": "A：あ、その<ruby>肉<rt>にく</rt></ruby>、<ruby>早<rt>はや</rt></ruby>く<span class='annotated-word' data-word='ひっくり返す'>ひっくり<ruby>返<rt>かえ</rt></ruby>す</span>して。これもこれも。<br>B：うわ、<ruby>肉<rt>にく</rt></ruby>が<span class='annotated-word' data-word='燃えた'><ruby>燃<rt>も</rt></ruby>えた</span>！　どうしよう！<br>A：あー、そういうときは、この<span class='annotated-word' data-word='氷'><ruby>氷<rt>こおり</rt></ruby></span>を<ruby>網<rt>あみ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>せればいいんだ。<ruby>網<rt>あみ</rt></ruby>が<ruby>汚<rt>よご</rt></ruby>れちゃったね。<span class='annotated-word' data-word='取り替えて'><ruby>取<rt>と</rt></ruby>り<ruby>替<rt>か</rt></ruby>えて</span>もらおう。",
+  "english_translation": "A: Oh, that meat, hurry up and turn it over. This one and this one too. B: Wow, the meat burned! What should I do! A: Ah, in that case, just put this ice on the net. The net got dirty. Let's have it replaced.",
+  "annotated_words": [
+    {
+      "meaning_en": "turn over",
+      "furigana": "ひっくりかえす",
+      "kanji": "ひっくり返す"
+    },
+    {
+      "meaning_en": "be turned over",
+      "furigana": "ひっくりかえる",
+      "kanji": "ひっくり返る"
+    },
+    {
+      "meaning_en": "burn, be burned",
+      "furigana": "もえる",
+      "kanji": "燃える"
+    },
+    {
+      "meaning_en": "burn",
+      "furigana": "もやす",
+      "kanji": "燃やす"
+    },
+    {
+      "meaning_en": "ice",
+      "furigana": "こおり",
+      "kanji": "氷"
+    },
+    {
+      "meaning_en": "replace",
+      "furigana": "とりかえる",
+      "kanji": "取り替える"
+    }
+  ]
+}

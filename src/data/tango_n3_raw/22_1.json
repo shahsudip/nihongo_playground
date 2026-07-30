@@ -1,0 +1,33 @@
+{
+  "id": "22_1",
+  "title": "Topic 1",
+  "japanese_text": "A：<ruby>最近<rt>さいきん</rt></ruby><ruby>暑<rt>あつ</rt></ruby>すぎて、<span class='annotated-word' data-word='食欲'><ruby>食欲<rt>しょくよく</rt></ruby></span>がないんだよねえ。<span class='annotated-word' data-word='さっぱりした'>さっぱりした</span>ものが<ruby>食<rt>た</rt></ruby>べたい。<ruby>冷<rt>つめ</rt></ruby>たい<span class='annotated-word' data-word='そば'>そば</span>にしようかな。<br>B：あ、なんか<span class='annotated-word' data-word='酸っぱい'><ruby>酸<rt>す</rt></ruby>っぱい</span>ものもいいらしいよ。",
+  "english_translation": "A: It's been too hot lately, and I have no appetite. I want to eat refreshing food. Maybe I should make some cold soba. B: Oh, something sour is good too, I hear.",
+  "annotated_words": [
+    {
+      "meaning_en": "appetite",
+      "furigana": "しょくよく",
+      "kanji": "食欲"
+    },
+    {
+      "meaning_en": "refreshing, refresh",
+      "furigana": "",
+      "kanji": "さっぱり[する]"
+    },
+    {
+      "meaning_en": "soba, buckwheat noodles",
+      "furigana": "",
+      "kanji": "そば"
+    },
+    {
+      "meaning_en": "udon, thick noodles",
+      "furigana": "",
+      "kanji": "うどん"
+    },
+    {
+      "meaning_en": "sour",
+      "furigana": "すっぱい",
+      "kanji": "酸っぱい"
+    }
+  ]
+}

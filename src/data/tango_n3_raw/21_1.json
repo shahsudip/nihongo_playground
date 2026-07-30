@@ -1,0 +1,38 @@
+{
+  "id": "21_1",
+  "title": "Topic 1",
+  "japanese_text": "<span class='annotated-word' data-word='ドレッシング'>ドレッシング</span>を<ruby>作<rt>つく</rt></ruby>るのは<ruby>簡単<rt>かんたん</rt></ruby>だ。オリーブ<span class='annotated-word' data-word='オイル'>オイル</span>と<span class='annotated-word' data-word='酢'><ruby>酢<rt>す</rt></ruby></span>をよく<span class='annotated-word' data-word='混ぜる'><ruby>混<rt>ま</rt></ruby>ぜて</span>、<ruby>好<rt>この</rt></ruby>みで<ruby>塩<rt>しお</rt></ruby>・<span class='annotated-word' data-word='こしょう'>こしょう</span>を<ruby>入<rt>い</rt></ruby>れる。これでサラダをおいしく<ruby>食<rt>た</rt></ruby>べられる。",
+  "english_translation": "Making a dressing is easy. Mix olive oil and vinegar thoroughly and add salt and pepper as you like. Now you can eat the great-tasting salad.",
+  "annotated_words": [
+    {
+      "meaning_en": "dressing",
+      "furigana": "",
+      "kanji": "ドレッシング"
+    },
+    {
+      "meaning_en": "oil",
+      "furigana": "",
+      "kanji": "オイル"
+    },
+    {
+      "meaning_en": "vinegar",
+      "furigana": "す",
+      "kanji": "酢"
+    },
+    {
+      "meaning_en": "mix",
+      "furigana": "まぜる",
+      "kanji": "混ぜる"
+    },
+    {
+      "meaning_en": "be mixed",
+      "furigana": "まざる",
+      "kanji": "混ざる"
+    },
+    {
+      "meaning_en": "pepper",
+      "furigana": "",
+      "kanji": "こしょう"
+    }
+  ]
+}
