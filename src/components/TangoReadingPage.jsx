@@ -144,39 +144,59 @@ export default function TangoReadingPage() {
         {/* Vocabulary List Removed per user request */}
 
         {/* Stories Navigator */}
-        <div className="flex items-center justify-between mt-12 pt-6 border-t border-[var(--color-border)]">
-          <button 
-            onClick={handlePrev}
-            disabled={currentStoryIndex === 0}
-            className={`px-6 py-2 rounded-lg font-bold transition-all ${
-              currentStoryIndex === 0 
-                ? 'bg-gray-600 text-gray-400 cursor-not-allowed opacity-50' 
-                : 'bg-[var(--color-bg-secondary)] text-[var(--color-text-primary)] border border-[var(--color-border)] hover:bg-[var(--primary-green)] hover:text-white hover:border-[var(--primary-green)]'
-            }`}
-          >
-            ← Previous
-          </button>
+        <div className="mt-12 pt-6 border-t border-[var(--color-border)]">
+          <div className="flex items-center justify-between mb-4">
+            <p className="text-xs text-[var(--color-text-muted)] font-medium m-0">Story Navigator</p>
+            <span className="text-xs text-[var(--color-text-muted)]">{currentStoryIndex + 1}/{stories.length}</span>
+          </div>
           
-          <div className="flex gap-2">
-            {stories.map((_, idx) => (
-              <div 
-                key={idx} 
-                className={`w-3 h-3 rounded-full ${idx === currentStoryIndex ? 'bg-[var(--primary-green)]' : 'bg-[var(--color-border)]'}`}
-              />
-            ))}
+          <div className="flex flex-wrap gap-2 mb-8">
+            {stories.map((_, idx) => {
+              const isCurrent = currentStoryIndex === idx;
+              return (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    setCurrentStoryIndex(idx);
+                    window.scrollTo(0, 0);
+                  }}
+                  className={`w-10 h-10 rounded-lg text-sm font-medium transition-all ${
+                    isCurrent 
+                      ? 'bg-[var(--primary-green)] text-white shadow-md' 
+                      : 'bg-[var(--color-bg-secondary)] text-[var(--color-text-primary)] border border-[var(--color-border)] hover:border-[var(--primary-green)] hover:text-[var(--primary-green)]'
+                  }`}
+                >
+                  {idx + 1}
+                </button>
+              );
+            })}
           </div>
 
-          <button 
-            onClick={handleNext}
-            disabled={currentStoryIndex === stories.length - 1}
-            className={`px-6 py-2 rounded-lg font-bold transition-all ${
-              currentStoryIndex === stories.length - 1 
-                ? 'bg-gray-600 text-gray-400 cursor-not-allowed opacity-50' 
-                : 'bg-[var(--primary-green)] text-white hover:opacity-90'
-            }`}
-          >
-            Next →
-          </button>
+          <div className="flex items-center justify-between">
+            <button 
+              onClick={handlePrev}
+              disabled={currentStoryIndex === 0}
+              className={`px-6 py-2 rounded-lg font-bold transition-all ${
+                currentStoryIndex === 0 
+                  ? 'bg-gray-600 text-gray-400 cursor-not-allowed opacity-50' 
+                  : 'bg-[var(--color-bg-secondary)] text-[var(--color-text-primary)] border border-[var(--color-border)] hover:bg-[var(--primary-green)] hover:text-white hover:border-[var(--primary-green)]'
+              }`}
+            >
+              ← Previous
+            </button>
+
+            <button 
+              onClick={handleNext}
+              disabled={currentStoryIndex === stories.length - 1}
+              className={`px-6 py-2 rounded-lg font-bold transition-all ${
+                currentStoryIndex === stories.length - 1 
+                  ? 'bg-gray-600 text-gray-400 cursor-not-allowed opacity-50' 
+                  : 'bg-[var(--primary-green)] text-white hover:opacity-90'
+              }`}
+            >
+              Next →
+            </button>
+          </div>
         </div>
 
       </div>

@@ -75,13 +75,13 @@
     color: var(--color-success-light);
   }
   ruby {
-    ruby-position: under;
+    ruby-position: over;
   }
   rt {
     font-size: 0.55em;
     line-height: 1.2;
-    color: var(--color-primary-light);
+    color: var(--color-text-secondary);
     font-weight: normal;
-    margin-top: 2px;
+    margin-bottom: 2px;
   }
 }
