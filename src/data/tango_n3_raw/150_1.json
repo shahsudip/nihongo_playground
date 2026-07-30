@@ -1,0 +1,48 @@
+{
+  "id": "150_1",
+  "title": "Topic 11",
+  "japanese_text": "<ruby>天気予報<rt>てんきよほう</rt></ruby>によると、<ruby>大雨注意報<rt>おおあめちゅういほう</rt></ruby>が<ruby>出<rt>で</rt></ruby>ている。<ruby>午後<rt>ごご</rt></ruby>からにわか<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>るので、<ruby>早<rt>はや</rt></ruby>めに<ruby>毛布<rt>もうふ</rt></ruby>とシーツを<ruby>取<rt>と</rt></ruby>り<ruby>込<rt>こ</rt></ruby>まなければならない。",
+  "english_translation": "The weather forecast said that a heavy rain advisory is in effect. There could be sudden showers starting in the afternoon, so I have to bring in the blanket and sheets before that.",
+  "annotated_words": [
+    {
+      "kanji": "予報［する］",
+      "furigana": "よほう",
+      "meaning": "forecast, forecast"
+    },
+    {
+      "kanji": "大雨",
+      "furigana": "おおあめ",
+      "meaning": "heavy rain"
+    },
+    {
+      "kanji": "小雨",
+      "furigana": "こさめ",
+      "meaning": "light rain"
+    },
+    {
+      "kanji": "注意報",
+      "furigana": "ちゅういほう",
+      "meaning": "warning"
+    },
+    {
+      "kanji": "警報",
+      "furigana": "けいほう",
+      "meaning": "alert"
+    },
+    {
+      "kanji": "にわか雨",
+      "furigana": "にわかあめ",
+      "meaning": "shower (rain)"
+    },
+    {
+      "kanji": "毛布",
+      "furigana": "もうふ",
+      "meaning": "blanket"
+    },
+    {
+      "kanji": "シーツ",
+      "furigana": "",
+      "meaning": "bed sheet"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "145_1",
+  "title": "Topic 10",
+  "japanese_text": "<ruby>私<rt>わたし</rt></ruby>が<ruby>住<rt>す</rt></ruby>んでいる<ruby>団地<rt>だんち</rt></ruby>は<ruby>坂<rt>さか</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>にある。<ruby>商店街<rt>しょうてんがい</rt></ruby>がある<ruby>大通<rt>おおどお</rt></ruby>りから<ruby>外<rt>はず</rt></ruby>れたところに<ruby>位置<rt>いち</rt></ruby>しているので、<ruby>子<rt>こ</rt></ruby>どもがよく<ruby>迷子<rt>まいご</rt></ruby>になる。",
+  "english_translation": "The housing complex where I live is at the top of a slope. It's located some distance away from the bigger streets around the commercial district, so the children often get lost.",
+  "annotated_words": [
+    {
+      "kanji": "団地",
+      "furigana": "だんち",
+      "meaning": "housing complex"
+    },
+    {
+      "kanji": "坂",
+      "furigana": "さか",
+      "meaning": "hill, slope"
+    },
+    {
+      "kanji": "商店街",
+      "furigana": "しょうてんがい",
+      "meaning": "shopping street"
+    },
+    {
+      "kanji": "商店",
+      "furigana": "しょうてん",
+      "meaning": "store"
+    },
+    {
+      "kanji": "大通り",
+      "furigana": "おおどおり",
+      "meaning": "main street, large street"
+    },
+    {
+      "kanji": "外れる",
+      "furigana": "はずれる",
+      "meaning": "come off, be off"
+    },
+    {
+      "kanji": "位置［する］",
+      "furigana": "いち",
+      "meaning": "position, locate, position"
+    },
+    {
+      "kanji": "迷子",
+      "furigana": "まいご",
+      "meaning": "lost child"
+    }
+  ]
+}

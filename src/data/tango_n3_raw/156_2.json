@@ -1,0 +1,28 @@
+{
+  "id": "156_2",
+  "title": "Topic 11",
+  "japanese_text": "ひどい<ruby>雨<rt>あめ</rt></ruby>で、<ruby>服<rt>ふく</rt></ruby>が<ruby>濡<rt>ぬ</rt></ruby>れてしまった。<ruby>家<rt>いえ</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いてからも、<ruby>風<rt>かぜ</rt></ruby>はどんどん<ruby>強<rt>つよ</rt></ruby>くなり、<ruby>雷<rt>かみなり</rt></ruby>も<ruby>鳴<rt>な</rt></ruby>りはじめた。<ruby>窓<rt>まど</rt></ruby>ガラスがガタガタと<ruby>震<rt>ふる</rt></ruby>えている。",
+  "english_translation": "My clothes got wet from the terrible rain. Even after I got home, the wind got stronger and stronger, and it started to thunder. The windowpane was rattling.",
+  "annotated_words": [
+    {
+      "kanji": "濡れる",
+      "furigana": "ぬれる",
+      "meaning": "get wet"
+    },
+    {
+      "kanji": "濡らす",
+      "furigana": "ぬらす",
+      "meaning": "wet"
+    },
+    {
+      "kanji": "雷",
+      "furigana": "かみなり",
+      "meaning": "thunder"
+    },
+    {
+      "kanji": "震える",
+      "furigana": "ふるえる",
+      "meaning": "tremble, shiver"
+    }
+  ]
+}

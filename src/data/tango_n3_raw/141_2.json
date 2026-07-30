@@ -1,0 +1,33 @@
+{
+  "id": "141_2",
+  "title": "Topic 10",
+  "japanese_text": "この<ruby>家<rt>いえ</rt></ruby>は、<ruby>大都市<rt>だいとし</rt></ruby>にも<ruby>地方都市<rt>ちほうとし</rt></ruby>にも<ruby>距離<rt>きょり</rt></ruby>が<ruby>近<rt>ちか</rt></ruby>い。<ruby>最高<rt>さいこう</rt></ruby>だ。",
+  "english_translation": "This house is close in distance to both a large city and the local cities. It's the best.",
+  "annotated_words": [
+    {
+      "kanji": "都市",
+      "furigana": "とし",
+      "meaning": "city"
+    },
+    {
+      "kanji": "地方都市",
+      "furigana": "ちほうとし",
+      "meaning": "local city"
+    },
+    {
+      "kanji": "地方",
+      "furigana": "ちほう",
+      "meaning": "region"
+    },
+    {
+      "kanji": "距離",
+      "furigana": "きょり",
+      "meaning": "distance"
+    },
+    {
+      "kanji": "最高",
+      "furigana": "さいこう",
+      "meaning": "best"
+    }
+  ]
+}

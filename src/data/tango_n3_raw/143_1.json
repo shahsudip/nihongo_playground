@@ -1,0 +1,48 @@
+{
+  "id": "143_1",
+  "title": "Topic 10",
+  "japanese_text": "この<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>発車時刻<rt>はっしゃじこく</rt></ruby>を<ruby>過<rt>す</rt></ruby>ぎても<ruby>動<rt>うご</rt></ruby>かない。<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>いてよく<ruby>見<rt>み</rt></ruby>ると、<ruby>行<rt>い</rt></ruby>き<ruby>先<rt>さき</rt></ruby>も<ruby>表示<rt>ひょうじ</rt></ruby>していないし、ライトも<ruby>消<rt>き</rt></ruby>えている。<ruby>車庫<rt>しゃこ</rt></ruby>に<ruby>行<rt>い</rt></ruby>くのだろうか。なかなか<ruby>帰宅<rt>きたく</rt></ruby>できない。",
+  "english_translation": "This train isn't moving even though it's past its departure time. After calmly looking around, I noticed that the destination wasn't even displayed and the lights were off. It might be going to the depot. I'm having a hard time getting home.",
+  "annotated_words": [
+    {
+      "kanji": "時刻",
+      "furigana": "じこく",
+      "meaning": "time"
+    },
+    {
+      "kanji": "時刻表",
+      "furigana": "じこくひょう",
+      "meaning": "time table"
+    },
+    {
+      "kanji": "過ぎる",
+      "furigana": "すぎる",
+      "meaning": "pass, exceed"
+    },
+    {
+      "kanji": "落ち着く",
+      "furigana": "おちつく",
+      "meaning": "calm down"
+    },
+    {
+      "kanji": "行き先",
+      "furigana": "いきさき",
+      "meaning": "destination"
+    },
+    {
+      "kanji": "ライト",
+      "furigana": "",
+      "meaning": "light"
+    },
+    {
+      "kanji": "車庫",
+      "furigana": "しゃこ",
+      "meaning": "depot"
+    },
+    {
+      "kanji": "帰宅［する］",
+      "furigana": "きたく",
+      "meaning": "going home, go home"
+    }
+  ]
+}
