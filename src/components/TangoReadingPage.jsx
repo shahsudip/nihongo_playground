@@ -172,31 +172,6 @@ export default function TangoReadingPage() {
             })}
           </div>
 
-          <div className="flex items-center justify-between">
-            <button 
-              onClick={handlePrev}
-              disabled={currentStoryIndex === 0}
-              className={`px-6 py-2 rounded-lg font-bold transition-all ${
-                currentStoryIndex === 0 
-                  ? 'bg-gray-600 text-gray-400 cursor-not-allowed opacity-50' 
-                  : 'bg-[var(--color-bg-secondary)] text-[var(--color-text-primary)] border border-[var(--color-border)] hover:bg-[var(--primary-green)] hover:text-white hover:border-[var(--primary-green)]'
-              }`}
-            >
-              ← Previous
-            </button>
-
-            <button 
-              onClick={handleNext}
-              disabled={currentStoryIndex === stories.length - 1}
-              className={`px-6 py-2 rounded-lg font-bold transition-all ${
-                currentStoryIndex === stories.length - 1 
-                  ? 'bg-gray-600 text-gray-400 cursor-not-allowed opacity-50' 
-                  : 'bg-[var(--primary-green)] text-white hover:opacity-90'
-              }`}
-            >
-              Next →
-            </button>
-          </div>
         </div>
 
       </div>
