@@ -1,0 +1,43 @@
+{
+  "id": "80_2",
+  "title": "Topic 5",
+  "japanese_text": "<ruby>Ａ：パスワードってさ、<rt></rt></ruby><ruby>数字<rt>すうじ</rt></ruby><ruby>があるものとか、<rt></rt></ruby><ruby>文字<rt>もじ</rt></ruby><ruby>だけのものと<rt></rt></ruby><ruby>かいろいろあって<rt></rt></ruby><ruby>覚<rt>おぼ</rt></ruby><ruby>えるのが<rt></rt></ruby><ruby>大変<rt>たいへん</rt></ruby><ruby>じゃない？ しかも<rt></rt></ruby><ruby>数回間<rt>すうかいま</rt></ruby><ruby>違<rt>ちが</rt></ruby><ruby>えたら、ロックされるし。<rt></rt></ruby>\n<ruby>Ｂ：それならパスワード<rt></rt></ruby><ruby>管理<rt>かんり</rt></ruby><ruby>アプリをインストールするといいよ。<rt></rt></ruby>",
+  "english_translation": "A: Isn't it really difficult to remember passwords when you've got some with numbers and some with only letters or something? What's more, if you get it wrong several times, your account will be locked.\nB: If that's the case, then you should install a password management app.",
+  "annotated_words": [
+    {
+      "kanji": "パスワード",
+      "furigana": "",
+      "meaning": "password"
+    },
+    {
+      "kanji": "数字",
+      "furigana": "すうじ",
+      "meaning": "number"
+    },
+    {
+      "kanji": "文字",
+      "furigana": "もじ",
+      "meaning": "letter"
+    },
+    {
+      "kanji": "数回",
+      "furigana": "すうかい",
+      "meaning": "several times"
+    },
+    {
+      "kanji": "ロック",
+      "furigana": "",
+      "meaning": "lock, lock"
+    },
+    {
+      "kanji": "それなら",
+      "furigana": "",
+      "meaning": "in that case"
+    },
+    {
+      "kanji": "インストール",
+      "furigana": "",
+      "meaning": "installation, install"
+    }
+  ]
+}

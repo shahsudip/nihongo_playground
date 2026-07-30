@@ -1,0 +1,43 @@
+{
+  "id": "72_1",
+  "title": "Topic 4",
+  "japanese_text": "<ruby>Ａ：あ、お<rt></rt></ruby><ruby>母<rt>かあ</rt></ruby><ruby>さん、<rt></rt></ruby><ruby>制服<rt>せいふく</rt></ruby><ruby>のシャツのボタンが<rt></rt></ruby><ruby>取<rt>と</rt></ruby><ruby>れちゃって…。<rt></rt></ruby><ruby>付<rt>つ</rt></ruby><ruby>けてくれない？<rt></rt></ruby>\n<ruby>Ｂ：いいけど、どこのボタン？ ああ、<rt></rt></ruby><ruby>右<rt>みぎ</rt></ruby><ruby>の<rt></rt></ruby><ruby>袖<rt>そで</rt></ruby><ruby>ね。ボタン<rt></rt></ruby><ruby>用<rt>よう</rt></ruby><ruby>の<rt></rt></ruby><ruby>糸<rt>いと</rt></ruby><ruby>、あったかな？<rt></rt></ruby>",
+  "english_translation": "A: Oh, Mom, one of my uniform shirt buttons came off... Can you put it back on?\nB: Sure, but which button? Oh, the right sleeve. Do we have thread for the button?",
+  "annotated_words": [
+    {
+      "kanji": "制服",
+      "furigana": "せいふく",
+      "meaning": "uniform"
+    },
+    {
+      "kanji": "取れる",
+      "furigana": "とれる",
+      "meaning": "come off"
+    },
+    {
+      "kanji": "付ける",
+      "furigana": "つける",
+      "meaning": "put on, attach"
+    },
+    {
+      "kanji": "袖",
+      "furigana": "そで",
+      "meaning": "sleeve"
+    },
+    {
+      "kanji": "長袖",
+      "furigana": "ながそで",
+      "meaning": "long sleeves"
+    },
+    {
+      "kanji": "半袖",
+      "furigana": "はんそで",
+      "meaning": "shirtsleeves"
+    },
+    {
+      "kanji": "糸",
+      "furigana": "いと",
+      "meaning": "yarn"
+    }
+  ]
+}
