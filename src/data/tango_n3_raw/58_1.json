@@ -1,0 +1,18 @@
+{
+  "id": "58_1",
+  "title": "Topic 3",
+  "japanese_text": "<ruby>Ａ：<rt></rt></ruby><ruby>税込<rt>ぜいこ</rt></ruby><ruby>み<rt></rt></ruby>３５００<ruby>円<rt>えん</rt></ruby><ruby>です。<rt></rt></ruby>\n<ruby>Ｂ：カードで。<rt></rt></ruby>\n<ruby>Ａ：お<rt></rt></ruby><ruby>支払<rt>しはら</rt></ruby><ruby>い<rt></rt></ruby><ruby>方法<rt>ほうほう</rt></ruby><ruby>はいかがいたしましょうか。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby>１<ruby>回払<rt>いっかいばら</rt></ruby><ruby>いで<rt></rt></ruby><ruby>お願<rt>ねが</rt></ruby><ruby>いします。<rt></rt></ruby>",
+  "english_translation": "A: That's 3,500 yen including tax.\nB: By card.\nA: What payment method would you like?\nB: In one installment, please.",
+  "annotated_words": [
+    {
+      "kanji": "税込み",
+      "furigana": "ぜいこみ",
+      "meaning": "tax included"
+    },
+    {
+      "kanji": "１回払い",
+      "furigana": "いっかいばらい",
+      "meaning": "one-installment payment"
+    }
+  ]
+}

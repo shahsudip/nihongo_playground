@@ -1,0 +1,38 @@
+{
+  "id": "52_1",
+  "title": "Topic 3",
+  "japanese_text": "ドラッグストア<ruby>に<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>の<rt></rt></ruby><ruby>列<rt>れつ</rt></ruby><ruby>ができていた。<rt></rt></ruby><ruby>閉店<rt>へいてん</rt></ruby><ruby>するから、<rt></rt></ruby><ruby>店内<rt>てんない</rt></ruby><ruby>の<rt></rt></ruby><ruby>商品<rt>しょうひん</rt></ruby><ruby>が<rt></rt></ruby><ruby>定価<rt>ていか</rt></ruby><ruby>の<rt></rt></ruby>２<ruby>割引<rt>わりびき</rt></ruby><ruby>から<rt></rt></ruby><ruby>半額<rt>はんがく</rt></ruby><ruby>で<rt></rt></ruby><ruby>買<rt>か</rt></ruby><ruby>えるらしい。<rt></rt></ruby>",
+  "english_translation": "There was a line of people at the drugstore. It's going to close, so it seems that products in the store can be purchased at a discount of 20 percent to half off of the list price.",
+  "annotated_words": [
+    {
+      "kanji": "ドラッグストア",
+      "furigana": "",
+      "meaning": "drug store"
+    },
+    {
+      "kanji": "薬局",
+      "furigana": "やっきょく",
+      "meaning": "pharmacy"
+    },
+    {
+      "kanji": "列",
+      "furigana": "れつ",
+      "meaning": "line"
+    },
+    {
+      "kanji": "定価",
+      "furigana": "ていか",
+      "meaning": "retail price"
+    },
+    {
+      "kanji": "〜割引",
+      "furigana": "〜わりびき",
+      "meaning": "~ discount, ~ off"
+    },
+    {
+      "kanji": "半額",
+      "furigana": "はんがく",
+      "meaning": "half off, half price"
+    }
+  ]
+}

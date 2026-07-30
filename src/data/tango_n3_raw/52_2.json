@@ -1,0 +1,38 @@
+{
+  "id": "52_2",
+  "title": "Topic 3",
+  "japanese_text": "<ruby>日本円<rt>にほんえん</rt></ruby><ruby>に<rt></rt></ruby><ruby>両替<rt>りょうがえ</rt></ruby><ruby>するときには、<rt></rt></ruby><ruby>金額<rt>きんがく</rt></ruby><ruby>にかかわらず、<rt></rt></ruby><ruby>手数料<rt>てすうりょう</rt></ruby><ruby>として<rt></rt></ruby><ruby>余分<rt>よぶん</rt></ruby><ruby>な<rt></rt></ruby><ruby>金額<rt>きんがく</rt></ruby><ruby>を<rt></rt></ruby><ruby>支払<rt>しはら</rt></ruby><ruby>わなければならない。<rt></rt></ruby>",
+  "english_translation": "When exchanging to Japanese yen, you have to pay an extra amount as a fee, regardless of the amount you're exchanging.",
+  "annotated_words": [
+    {
+      "kanji": "両替",
+      "furigana": "りょうがえ",
+      "meaning": "currency exchange, exchange (currency)"
+    },
+    {
+      "kanji": "金額",
+      "furigana": "きんがく",
+      "meaning": "amount (of money)"
+    },
+    {
+      "kanji": "〜料",
+      "furigana": "〜りょう",
+      "meaning": "~ fee"
+    },
+    {
+      "kanji": "余分な",
+      "furigana": "よぶんな",
+      "meaning": "extra"
+    },
+    {
+      "kanji": "支払う",
+      "furigana": "しはらう",
+      "meaning": "pay"
+    },
+    {
+      "kanji": "支払い",
+      "furigana": "しはらい",
+      "meaning": "payment"
+    }
+  ]
+}
