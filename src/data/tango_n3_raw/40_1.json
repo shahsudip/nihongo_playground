@@ -1,0 +1,33 @@
+{
+  "id": "40_1",
+  "title": "Topic 2",
+  "japanese_text": "<ruby>古<rt>ふる</rt></ruby>くなった<span class='annotated-word' data-word='タオル'>タオル</span>は<span class='annotated-word' data-word='雑巾'><ruby>雑巾<rt>ぞうきん</rt></ruby></span>にします。タオルをミシンで<span class='annotated-word' data-word='縫う'><ruby>縫<rt>ぬ</rt></ruby>って</span>もいいし、<span class='annotated-word' data-word='針'><ruby>針<rt>はり</rt></ruby></span>と<ruby>糸<rt>いと</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って<ruby>自分<rt>じぶん</rt></ruby>で<ruby>縫<rt>ぬ</rt></ruby>ってもいいです。雑巾は、<ruby>床<rt>ゆか</rt></ruby>を<span class='annotated-word' data-word='拭く'><ruby>拭<rt>ふ</rt></ruby>く</span>ときなどに<ruby>使<rt>つか</rt></ruby>うことができます。",
+  "english_translation": "I use old towels as rags. You can sew the towels with a sewing machine, or you can sew them by yourself using a needle and thread. These rags can be used to wipe the floor.",
+  "annotated_words": [
+    {
+      "meaning_en": "towel",
+      "furigana": "",
+      "kanji": "タオル"
+    },
+    {
+      "meaning_en": "rag",
+      "furigana": "ぞうきん",
+      "kanji": "雑巾"
+    },
+    {
+      "meaning_en": "sew",
+      "furigana": "ぬう",
+      "kanji": "縫う"
+    },
+    {
+      "meaning_en": "needle",
+      "furigana": "はり",
+      "kanji": "針"
+    },
+    {
+      "meaning_en": "wipe",
+      "furigana": "ふく",
+      "kanji": "拭く"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "44_0",
+  "title": "Topic 2",
+  "japanese_text": "<ruby>私<rt>わたし</rt></ruby>はワイシャツに<span class='annotated-word' data-word='アイロン'>アイロン</span>をかけるのが<ruby>苦手<rt>にがて</rt></ruby>です。<span class='annotated-word' data-word='どうしても'>どうしても</span>うまくできないので、うちでは<ruby>夫<rt>おっと</rt></ruby>がアイロン<span class='annotated-word' data-word='担当'><ruby>担当<rt>たんとう</rt></ruby></span>です。<ruby>夫<rt>おっと</rt></ruby>に<span class='annotated-word' data-word='不満な'><ruby>不満<rt>ふまん</rt></ruby>な</span><ruby>様子<rt>ようす</rt></ruby>は<span class='annotated-word' data-word='全く'><ruby>全<rt>まった</rt></ruby>く</span>なく、<ruby>楽<rt>たの</rt></ruby>しそうにやっています。<ruby>今日<rt>きょう</rt></ruby>も<span class='annotated-word' data-word='ハンガー'>ハンガー</span>にきれいになったワイシャツがかかっていて、うれしいです。",
+  "english_translation": "I'm no good at ironing dress shirts. Because I just can't do it well no matter what, my husband is in charge of ironing. He doesn't seem to be dissatisfied at all, and looks like he's having fun doing it. I'm glad to see another cleaned dress shirt on the hanger today too.",
+  "annotated_words": [
+    {
+      "meaning_en": "iron",
+      "furigana": "",
+      "kanji": "アイロン"
+    },
+    {
+      "meaning_en": "no matter what",
+      "furigana": "",
+      "kanji": "どうしても"
+    },
+    {
+      "meaning_en": "being in charge of, be in charge of",
+      "furigana": "たんとう",
+      "kanji": "担当"
+    },
+    {
+      "meaning_en": "person in charge",
+      "furigana": "たんとうしゃ",
+      "kanji": "担当者"
+    },
+    {
+      "meaning_en": "dissatisfied",
+      "furigana": "ふまんな",
+      "kanji": "不満な"
+    },
+    {
+      "meaning_en": "(not) at all, completely",
+      "furigana": "まったく",
+      "kanji": "全く"
+    },
+    {
+      "meaning_en": "(clothes) hanger",
+      "furigana": "",
+      "kanji": "ハンガー"
+    }
+  ]
+}

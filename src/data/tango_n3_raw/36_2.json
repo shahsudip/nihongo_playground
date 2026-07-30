@@ -1,0 +1,38 @@
+{
+  "id": "36_2",
+  "title": "Topic 2",
+  "japanese_text": "<span class='annotated-word' data-word='湯のみ'><ruby>湯<rt>ゆ</rt></ruby>のみ</span>や<span class='annotated-word' data-word='まな板'>まな<ruby>板<rt>いた</rt></ruby></span>についた<span class='annotated-word' data-word='汚れ'><ruby>汚<rt>よご</rt></ruby>れ</span>は、<ruby>水<rt>みず</rt></ruby>で<span class='annotated-word' data-word='流す'><ruby>流<rt>なが</rt></ruby>す</span>だけでは、なかなか<ruby>取<rt>と</rt></ruby>れない。<ruby>１時間<rt>じかん</rt></ruby>ほど<ruby>漂白剤<rt>ひょうはくざい</rt></ruby>に<span class='annotated-word' data-word='浸ける'><ruby>浸<rt>つ</rt></ruby>けて</span>おくと、<span class='annotated-word' data-word='ぴかぴかな'>ぴかぴかに</span>なる。",
+  "english_translation": "Dirt stuck on things like teacups and cutting boards is not easy to wash away with only water. If you immerse them in bleach for an hour, they will be sparkling clean.",
+  "annotated_words": [
+    {
+      "meaning_en": "teacup",
+      "furigana": "ゆのみ",
+      "kanji": "湯のみ"
+    },
+    {
+      "meaning_en": "cutting board",
+      "furigana": "まないた",
+      "kanji": "まな板"
+    },
+    {
+      "meaning_en": "dirt",
+      "furigana": "よごれ",
+      "kanji": "汚れ"
+    },
+    {
+      "meaning_en": "wash away, flush",
+      "furigana": "ながす",
+      "kanji": "流す"
+    },
+    {
+      "meaning_en": "immerse",
+      "furigana": "つける",
+      "kanji": "浸ける"
+    },
+    {
+      "meaning_en": "sparkling, shiny",
+      "furigana": "",
+      "kanji": "ぴかぴかな"
+    }
+  ]
+}

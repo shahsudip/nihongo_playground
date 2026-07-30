@@ -1,0 +1,38 @@
+{
+  "id": "32_1",
+  "title": "Topic 1",
+  "japanese_text": "<span class='annotated-word' data-word='小麦'>小麦<ruby><rt>こむぎ</rt></ruby></span>は、<span class='annotated-word' data-word='トウモロコシ'>トウモロコシ</span>、<ruby>米<rt>こめ</rt></ruby>の<ruby>次<rt>つぎ</rt></ruby>に<ruby>世界中<rt>せかいじゅう</rt></ruby>で<ruby>作<rt>つく</rt></ruby>られている。<ruby>小麦<rt>こむぎ</rt></ruby>は、まず<span class='annotated-word' data-word='粉'>粉<ruby><rt>こな</rt></ruby></span>にする。それから、パンを<ruby>作<rt>つく</rt></ruby>ったり、<span class='annotated-word' data-word='麺'>麺<ruby><rt>めん</rt></ruby></span>を<ruby>作<rt>つく</rt></ruby>ったりする。イタリアの<span class='annotated-word' data-word='パスタ'>パスタ</span>は<ruby>世界中<rt>せかいじゅう</rt></ruby>で<ruby>食<rt>た</rt></ruby>べられている。",
+  "english_translation": "Wheat is the third most produced grain around the world after corn and rice. Wheat is first made into grain. Then, it is used to make bread or noodles. Italian pasta is eaten around the world.",
+  "annotated_words": [
+    {
+      "meaning_en": "wheat",
+      "furigana": "こむぎ",
+      "kanji": "小麦"
+    },
+    {
+      "meaning_en": "flour",
+      "furigana": "こむぎこ",
+      "kanji": "小麦粉"
+    },
+    {
+      "meaning_en": "corn",
+      "furigana": "",
+      "kanji": "トウモロコシ"
+    },
+    {
+      "meaning_en": "powder",
+      "furigana": "こな",
+      "kanji": "粉"
+    },
+    {
+      "meaning_en": "noodles",
+      "furigana": "めん",
+      "kanji": "麺"
+    },
+    {
+      "meaning_en": "pasta",
+      "furigana": "",
+      "kanji": "パスタ"
+    }
+  ]
+}

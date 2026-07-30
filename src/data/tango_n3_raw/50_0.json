@@ -1,0 +1,43 @@
+{
+  "id": "50_0",
+  "title": "Topic 2",
+  "japanese_text": "A：この<span class='annotated-word' data-word='袋'><ruby>袋<rt>ふくろ</rt></ruby></span>に<ruby>入<rt>はい</rt></ruby>っている<ruby>緑色<rt>みどりいろ</rt></ruby>の<ruby>粉<rt>こな</rt></ruby>、<ruby>何<rt>なに</rt></ruby>？<br>B：ケールっていう<ruby>野菜<rt>やさい</rt></ruby>を、<ruby>粉<rt>こな</rt></ruby>にしたものよ。<br>A：ああ、<ruby>健康<rt>けんこう</rt></ruby>にいいやつだね。<br>B：そうそう。お<ruby>湯<rt>ゆ</rt></ruby>に<span class='annotated-word' data-word='溶かして'><ruby>溶<rt>と</rt></ruby>かして</span><ruby>飲<rt>の</rt></ruby>むの。<ruby>粉<rt>こな</rt></ruby>を<span class='annotated-word' data-word='固めて'><ruby>固<rt>かた</rt></ruby>めて</span><ruby>作<rt>つく</rt></ruby>った<ruby>錠剤<rt>じょうざい</rt></ruby>もあるよ。<br>A：ちょっと<ruby>飲<rt>の</rt></ruby>んでみたいな。<br>B：<ruby>今<rt>いま</rt></ruby>ちょうどわかしたお<ruby>湯<rt>ゆ</rt></ruby>が<span class='annotated-word' data-word='やかん'>やかん</span>に<ruby>入<rt>はい</rt></ruby>っているから、<ruby>作<rt>つく</rt></ruby>ってあげるよ。",
+  "english_translation": "A: What's this green powder in this bag?\nB: It's a powder made from a vegetable called kale.\nA: Oh, it's good for health, isn't it?\nB: Yeah. You dissolve it in hot water and drink it. There are also tablets made from this powder.\nA: I want to try drinking a little.\nB: There's still some hot water in the kettle I just put on, so I'll make you some.",
+  "annotated_words": [
+    {
+      "meaning_en": "bag",
+      "furigana": "ふくろ",
+      "kanji": "袋"
+    },
+    {
+      "meaning_en": "shopping bag",
+      "furigana": "かいものぶくろ",
+      "kanji": "買い物袋"
+    },
+    {
+      "meaning_en": "dissolve, melt",
+      "furigana": "とかす",
+      "kanji": "溶かす"
+    },
+    {
+      "meaning_en": "melt",
+      "furigana": "とける",
+      "kanji": "溶ける"
+    },
+    {
+      "meaning_en": "make tough, make hard",
+      "furigana": "かためる",
+      "kanji": "固める"
+    },
+    {
+      "meaning_en": "harden",
+      "furigana": "かたまる",
+      "kanji": "固まる"
+    },
+    {
+      "meaning_en": "kettle, teapot",
+      "furigana": "",
+      "kanji": "やかん"
+    }
+  ]
+}

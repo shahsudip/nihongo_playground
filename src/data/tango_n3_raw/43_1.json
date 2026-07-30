@@ -1,0 +1,38 @@
+{
+  "id": "43_1",
+  "title": "Topic 2",
+  "japanese_text": "<ruby>夫<rt>おっと</rt></ruby>の<ruby>趣味<rt>しゅみ</rt></ruby>は<ruby>料理<rt>りょうり</rt></ruby>だ。「<ruby>料理<rt>りょうり</rt></ruby>は<span class='annotated-word' data-word='化学'><ruby>化学<rt>かがく</rt></ruby></span>だ」と<ruby>言<rt>い</rt></ruby>っていて、<ruby>調味料<rt>ちょうみりょう</rt></ruby>を<span class='annotated-word' data-word='加える'><ruby>加<rt>くわ</rt></ruby>える</span><span class='annotated-word' data-word='順番'><ruby>順番<rt>じゅんばん</rt></ruby></span>も<ruby>気<rt>き</rt></ruby>にしている。<span class='annotated-word' data-word='包丁'><ruby>包丁<rt>ほうちょう</rt></ruby></span>の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>もとてもうまいし、<ruby>料理家<rt>りょうりか</rt></ruby>の<span class='annotated-word' data-word='記事'><ruby>記事<rt>きじ</rt></ruby></span>もいつも<ruby>熱心<rt>ねっしん</rt></ruby>に<ruby>読<rt>よ</rt></ruby>んでいる。",
+  "english_translation": "My husband's hobby is cooking. He says, \"Cooking is chemistry,\" and even pays attention to the order in which seasonings are added. He's really good at using kitchen knives, and he always reads articles about cooking enthusiastically.",
+  "annotated_words": [
+    {
+      "meaning_en": "chemistry",
+      "furigana": "かがく",
+      "kanji": "化学"
+    },
+    {
+      "meaning_en": "add",
+      "furigana": "くわえる",
+      "kanji": "加える"
+    },
+    {
+      "meaning_en": "join",
+      "furigana": "くわわる",
+      "kanji": "加わる"
+    },
+    {
+      "meaning_en": "order",
+      "furigana": "じゅんばん",
+      "kanji": "順番"
+    },
+    {
+      "meaning_en": "kitchen knife",
+      "furigana": "ほうちょう",
+      "kanji": "包丁"
+    },
+    {
+      "meaning_en": "article",
+      "furigana": "きじ",
+      "kanji": "記事"
+    }
+  ]
+}

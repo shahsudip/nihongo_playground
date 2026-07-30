@@ -1,0 +1,38 @@
+{
+  "id": "39_1",
+  "title": "Topic 2",
+  "japanese_text": "<ruby>私<rt>わたし</rt></ruby>の<ruby>趣味<rt>しゅみ</rt></ruby>は<ruby>洗濯<rt>せんたく</rt></ruby>です。<span class='annotated-word' data-word='洗濯物'><ruby>洗濯物<rt>せんたくもの</rt></ruby></span>を<span class='annotated-word' data-word='干す'><ruby>干<rt>ほ</rt></ruby>す</span>ときは、<ruby>濃<rt>こ</rt></ruby>い<ruby>色<rt>いろ</rt></ruby>の<ruby>服<rt>ふく</rt></ruby>は<span class='annotated-word' data-word='裏返す'><ruby>裏返<rt>うらがえ</rt></ruby>して</span>干すと<ruby>色<rt>いろ</rt></ruby>が<ruby>落<rt>お</rt></ruby>ちません。<span class='annotated-word' data-word='乾く'><ruby>乾<rt>かわ</rt></ruby>いた</span>洗濯物は、<ruby>日<rt>ひ</rt></ruby>が<ruby>暮<rt>く</rt></ruby>れるまでに<ruby>取<rt>と</rt></ruby>り<ruby>込<rt>こ</rt></ruby>みましょう。<ruby>太陽<rt>たいよう</rt></ruby>の<ruby>匂<rt>にお</rt></ruby>いのする洗濯物を<span class='annotated-word' data-word='畳む'><ruby>畳<rt>たた</rt></ruby>む</span>のは<ruby>幸<rt>しあわ</rt></ruby>せです。",
+  "english_translation": "My hobby is doing laundry. When hanging out the laundry to dry, I turn my dark-colored clothes inside-out so the colors don't run. Be sure to take in dry laundry by the time the sun goes down. Folding laundry that smells the sun makes me happy.",
+  "annotated_words": [
+    {
+      "meaning_en": "laundry",
+      "furigana": "せんたくもの",
+      "kanji": "洗濯物"
+    },
+    {
+      "meaning_en": "dry",
+      "furigana": "ほす",
+      "kanji": "干す"
+    },
+    {
+      "meaning_en": "turn inside out, turn over",
+      "furigana": "うらがえす",
+      "kanji": "裏返す"
+    },
+    {
+      "meaning_en": "be dried",
+      "furigana": "かわく",
+      "kanji": "乾く"
+    },
+    {
+      "meaning_en": "dry",
+      "furigana": "かわかす",
+      "kanji": "乾かす"
+    },
+    {
+      "meaning_en": "fold",
+      "furigana": "たたむ",
+      "kanji": "畳む"
+    }
+  ]
+}

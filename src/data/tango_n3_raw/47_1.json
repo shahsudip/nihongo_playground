@@ -1,0 +1,23 @@
+{
+  "id": "47_1",
+  "title": "Topic 2",
+  "japanese_text": "A：<ruby>昨日<rt>きのう</rt></ruby>、<ruby>息子<rt>むすこ</rt></ruby>が<ruby>学校<rt>がっこう</rt></ruby>でけがをしてしまって、<ruby>先生<rt>せんせい</rt></ruby>が<ruby>家<rt>いえ</rt></ruby>まで<ruby>連<rt>つ</rt></ruby>れて<ruby>帰<rt>かえ</rt></ruby>ってきてくださったんです。だから、「ぜひ<span class='annotated-word' data-word='お上がりください'>お<ruby>上<rt>あ</rt></ruby>がりください</span>」って<ruby>言<rt>い</rt></ruby>ったんだけど「<span class='annotated-word' data-word='お構いなく'>お<ruby>構<rt>かま</rt></ruby>いなく</span>」って<ruby>遠慮<rt>えんりょ</rt></ruby>されてしまって。<br>B：<ruby>今<rt>いま</rt></ruby>は、<ruby>先生<rt>せんせい</rt></ruby>は<ruby>生徒<rt>せいと</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>にほとんど<ruby>入<rt>はい</rt></ruby>らないよね。それに<span class='annotated-word' data-word='賛成'><ruby>賛成<rt>さんせい</rt></ruby></span>する<ruby>人<rt>ひと</rt></ruby>も<ruby>反対<rt>はんたい</rt></ruby>する<ruby>人<rt>ひと</rt></ruby>もいるけどね。",
+  "english_translation": "A: Yesterday, my son was injured at school, and his teacher brought him back to our house. So I said, \"Please come inside,\" but the teacher refused, saying, \"Please don't worry about me.\"\nB: Nowadays, teachers rarely enter to students' homes. Some people agree with this, and some people don't.",
+  "annotated_words": [
+    {
+      "meaning_en": "please come in",
+      "furigana": "おあがりください",
+      "kanji": "お上がりください"
+    },
+    {
+      "meaning_en": "please don't worry about me",
+      "furigana": "おかまいなく",
+      "kanji": "お構いなく"
+    },
+    {
+      "meaning_en": "agreement, agree",
+      "furigana": "さんせい",
+      "kanji": "賛成"
+    }
+  ]
+}

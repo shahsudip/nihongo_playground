@@ -1,0 +1,28 @@
+{
+  "id": "43_0",
+  "title": "Topic 2",
+  "japanese_text": "<ruby>私<rt>わたし</rt></ruby>の<span class='annotated-word' data-word='得意な'><ruby>得意<rt>とくい</rt></ruby>な</span><ruby>料理<rt>りょうり</rt></ruby>はステーキだ。<span class='annotated-word' data-word='少々'><ruby>少々<rt>しょうしょう</rt></ruby></span><span class='annotated-word' data-word='適当な'><ruby>適当<rt>てきとう</rt></ruby>な</span><ruby>味付<rt>あじつ</rt></ruby>けでも、<ruby>硬<rt>かた</rt></ruby>くならないように<ruby>焼<rt>や</rt></ruby>けば<span class='annotated-word' data-word='オーケー'>オーケー</span>だ。",
+  "english_translation": "The dish I'm best at cooking is steak. Even with somewhat careless seasoning, it'll be okay so long as it's cooked so as not to be too tough.",
+  "annotated_words": [
+    {
+      "meaning_en": "good at",
+      "furigana": "とくいな",
+      "kanji": "得意な"
+    },
+    {
+      "meaning_en": "a little",
+      "furigana": "しょうしょう",
+      "kanji": "少々"
+    },
+    {
+      "meaning_en": "careless, suitable",
+      "furigana": "てきとうな",
+      "kanji": "適当な"
+    },
+    {
+      "meaning_en": "okay/OK",
+      "furigana": "",
+      "kanji": "オーケー"
+    }
+  ]
+}

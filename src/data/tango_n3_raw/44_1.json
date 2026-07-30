@@ -1,0 +1,33 @@
+{
+  "id": "44_1",
+  "title": "Topic 2",
+  "japanese_text": "<ruby>家<rt>いえ</rt></ruby>の<span class='annotated-word' data-word='光熱費'><ruby>光熱費<rt>こうねつひ</rt></ruby></span>を<ruby>下<rt>さ</rt></ruby>げるために、<ruby>使<rt>つか</rt></ruby>わない<ruby>機器<rt>きき</rt></ruby>の<span class='annotated-word' data-word='コード'>コード</span>をコンセントから<ruby>抜<rt>ぬ</rt></ruby>くようにしている。しかし、この<ruby>間<rt>あいだ</rt></ruby><span class='annotated-word' data-word='歯磨き'><ruby>歯磨<rt>はみが</rt></ruby>き</span>をしながら<ruby>歩<rt>ある</rt></ruby>いていたら、<ruby>抜<rt>ぬ</rt></ruby>いたコードに<ruby>引<rt>ひ</rt></ruby>っかかってしまって<ruby>危<rt>あぶ</rt></ruby>なかった。コードを<ruby>片付<rt>かたづ</rt></ruby>けるか、<ruby>歯磨<rt>はみが</rt></ruby>きをしながら<ruby>歩<rt>ある</rt></ruby>かないようにするか、どちらがいいだろうか。",
+  "english_translation": "In order to lower utility costs at home, I've decided to pull the cords of devices I'm not using out of the power outlets. However, when I was walking around while brushing my teeth, I got caught in an unplugged cord, which was dangerous. I wonder which I should do, clean up the cords or stop walking around while brushing my teeth.",
+  "annotated_words": [
+    {
+      "meaning_en": "utility costs",
+      "furigana": "こうねつひ",
+      "kanji": "光熱費"
+    },
+    {
+      "meaning_en": "cord",
+      "furigana": "",
+      "kanji": "コード"
+    },
+    {
+      "meaning_en": "tooth brushing, brushing one's teeth",
+      "furigana": "はみがき",
+      "kanji": "歯磨き"
+    },
+    {
+      "meaning_en": "toothbrush",
+      "furigana": "はブラシ",
+      "kanji": "歯ブラシ"
+    },
+    {
+      "meaning_en": "tooth paste",
+      "furigana": "はみがきこ",
+      "kanji": "歯磨き粉"
+    }
+  ]
+}
