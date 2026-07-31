@@ -173,11 +173,11 @@ if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
 }
 
-const outputFile = path.join(outputDir, \`topic\${topic}.json\`);
+const outputFile = path.join(outputDir, 'topic' + topic + '.json');
 const outputData = {
-  "topic": \`Topic \${topic} \${title}\`,
+  "topic": 'Topic ' + topic + ' ' + title,
   "words": getFirebaseFormat()
 };
 
 fs.writeFileSync(outputFile, JSON.stringify(outputData, null, 2), 'utf-8');
-console.log(\`Successfully generated \${outputFile}\`);
+console.log('Successfully generated ' + outputFile);
