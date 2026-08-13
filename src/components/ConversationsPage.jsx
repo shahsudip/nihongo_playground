@@ -128,7 +128,7 @@ const ConversationsPage = () => {
       window._currentUtterance = utterance; // Prevent GC
       utterance.lang = 'ja-JP';
       // Adjust rate/pitch if needed
-      utterance.rate = 0.55;
+      utterance.rate = 0.4;
       
       utterance.onboundary = (event) => {
         if (event.name === 'word') {
@@ -186,11 +186,11 @@ const ConversationsPage = () => {
         await speakText(msg.text, i);
         setActiveReadState({ msgIndex: i, litUntil: msg.text.length });
         if (playingRef.current) {
-          await new Promise(r => setTimeout(r, 1200)); // Natural pause between speakers
+          await new Promise(r => setTimeout(r, 2000)); // Natural pause between speakers
         }
       } else {
         setReadingIndex(-1);
-        await new Promise(r => setTimeout(r, 600));
+        await new Promise(r => setTimeout(r, 1000));
       }
     }
     
