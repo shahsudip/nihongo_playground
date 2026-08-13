@@ -65,7 +65,7 @@ const LevelSelectionPage = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 stagger-children">
         {categories.map((cat) => (
           <Link key={cat} to={`/levels/${level}/${cat}`} className="block group">
-            <Card className="h-full flex flex-col items-center justify-center py-8 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-[var(--color-accent)]/50 bg-[var(--color-bg-secondary)]">
+            <Card className="h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-[var(--color-accent)]/50 bg-[var(--color-bg-secondary)]">
               <h2 className="text-xl font-bold text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors">
                 {cat.charAt(0).toUpperCase() + cat.slice(1)} Test
               </h2>
@@ -74,7 +74,7 @@ const LevelSelectionPage = () => {
         ))}
         
         <Link to={`/flashcards/${level}/vocabulary_list`} className="block group">
-          <Card className="h-full flex flex-col items-center justify-center py-8 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-emerald-500/50 bg-emerald-500/5 border-emerald-500/20">
+          <Card className="h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-emerald-500/50 bg-emerald-500/5 border-emerald-500/20">
             <h2 className="text-xl font-bold text-emerald-600 group-hover:text-emerald-500 transition-colors">
               Vocabulary List
             </h2>
@@ -82,7 +82,7 @@ const LevelSelectionPage = () => {
         </Link>
 
         <Link to={`/grammar-list/${level}`} className="block group">
-          <Card className="h-full flex flex-col items-center justify-center py-8 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-emerald-500/50 bg-emerald-500/5 border-emerald-500/20">
+          <Card className="h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-emerald-500/50 bg-emerald-500/5 border-emerald-500/20">
             <h2 className="text-xl font-bold text-emerald-600 group-hover:text-emerald-500 transition-colors">
               Grammar List
             </h2>
@@ -90,7 +90,7 @@ const LevelSelectionPage = () => {
         </Link>
 
         <Link to={`/level/${level}/practice-test`} className="block group">
-          <Card className="h-full flex flex-col items-center justify-center py-8 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-amber-500/50 bg-amber-500/5 border-amber-500/20">
+          <Card className="h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-amber-500/50 bg-amber-500/5 border-amber-500/20">
             <h2 className="text-xl font-bold text-amber-600 group-hover:text-amber-500 transition-colors">
               Practice Test
             </h2>
@@ -99,7 +99,7 @@ const LevelSelectionPage = () => {
 
         {level?.toLowerCase() === 'n3' && (
           <Link to={`/levels/${level}/conversations`} className="block group">
-            <Card className="h-full flex flex-col items-center justify-center py-8 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-blue-500/50 bg-blue-500/5 border-blue-500/20">
+            <Card className="h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-blue-500/50 bg-blue-500/5 border-blue-500/20">
               <h2 className="text-xl font-bold text-blue-600 group-hover:text-blue-500 transition-colors flex flex-col items-center gap-2">
                 <span className="text-3xl">🗣️</span>
                 Conversations
@@ -120,7 +120,7 @@ const LevelSelectionPage = () => {
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 stagger-children">
         <Link to="/create" className="block group md:col-span-3 lg:col-span-1">
-          <Card className="h-full flex flex-col items-center justify-center py-10 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-dashed border-2 border-[var(--color-accent)] bg-[var(--color-bg-secondary)] hover:bg-[var(--color-bg-tertiary)] group-hover:border-solid">
+          <Card className="h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl border-dashed border-2 border-[var(--color-accent)] bg-[var(--color-bg-secondary)] hover:bg-[var(--color-bg-tertiary)] group-hover:border-solid">
             <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/10 text-[var(--color-accent)] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
@@ -133,7 +133,7 @@ const LevelSelectionPage = () => {
         
         {levels.map((lvl) => (
           <Link key={lvl.name} to={`/levels/${lvl.name}`} className="block group">
-            <Card className="h-full flex flex-col items-center justify-center py-12 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-[var(--color-primary)]/50 bg-[var(--color-bg-secondary)] hover:bg-[var(--color-bg-tertiary)]">
+            <Card className="h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-[var(--color-primary)]/50 bg-[var(--color-bg-secondary)] hover:bg-[var(--color-bg-tertiary)]">
               <span className="text-4xl font-black text-[var(--color-text-primary)] group-hover:text-[var(--color-primary)] transition-colors">
                 {lvl.name.toUpperCase()}
               </span>
