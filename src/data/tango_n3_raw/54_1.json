@@ -1,23 +1,31 @@
 {
-  "id": "54_1",
   "title": "Topic 3",
-  "japanese_text": "<ruby>Ａ：レシートがあれば<rt></rt></ruby><ruby>返品<rt>へんぴん</rt></ruby><ruby>できるんじゃないの？<rt></rt></ruby>\n<ruby>Ｂ：ですから、お<rt></rt></ruby><ruby>客様<rt>きゃくさま</rt></ruby><ruby>、こちらは<rt></rt></ruby><ruby>特売品<rt>とくばいひん</rt></ruby><ruby>のため、<rt></rt></ruby><ruby>返品<rt>へんぴん</rt></ruby><ruby>・<rt></rt></ruby><ruby>交換<rt>こうかん</rt></ruby><ruby>が<rt></rt></ruby><ruby>できません。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：<u>レシート</u>があれば<rt></rt></ruby><ruby>返品<rt>へんぴん</rt></ruby><ruby>できるんじゃないの？<rt></rt></ruby>\n<ruby>Ｂ：<u>ですから</u>、お<rt></rt></ruby><ruby>客様<rt>きゃくさま</rt></ruby><ruby>、こちらは<rt></rt></ruby><ruby><u>特売</u>品<rt>とくばいひん</rt></ruby><ruby>のため、<rt></rt></ruby><ruby>返品<rt>へんぴん</rt></ruby><ruby>・<rt></rt></ruby><ruby>交換<rt>こうかん</rt></ruby><ruby>が<rt></rt></ruby><ruby>できません。<rt></rt></ruby>",
   "english_translation": "A: Can't I return it if I have a receipt?\nB: As I said before, this is a bargain product, so it can't be returned or exchanged.",
   "annotated_words": [
     {
+      "word_id": "n3_1070",
+      "word_number": 1070,
       "kanji": "レシート",
       "furigana": "",
-      "meaning": "receipt"
+      "meaning_en": "receipt"
     },
     {
+      "word_id": "n3_1071",
+      "word_number": 1071,
       "kanji": "ですから",
       "furigana": "",
-      "meaning": "as I said before, therefore"
+      "meaning_en": "as I said before, therefore"
     },
     {
+      "word_id": "n3_1072",
+      "word_number": 1072,
       "kanji": "特売",
       "furigana": "とくばい",
-      "meaning": "bargain"
+      "meaning_en": "bargain"
     }
-  ]
+  ],
+  "story_number": 5,
+  "is_story": true,
+  "page_story": "54_1"
 }

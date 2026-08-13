@@ -1,33 +1,38 @@
 {
-  "id": "136_2",
-  "title": "Topic 9",
-  "japanese_text": "<ruby>幼児<rt>ようじ</rt></ruby>は<ruby>集団生活<rt>しゅうだんせいかつ</rt></ruby>を<ruby>通<rt>とお</rt></ruby>して、<ruby>相手<rt>あいて</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちを<ruby>理解<rt>りかい</rt></ruby>したり、<ruby>仲間<rt>なかま</rt></ruby>を<ruby>助<rt>たす</rt></ruby>けることを<ruby>学<rt>まな</rt></ruby>ぶ。",
+  "title": "Topic 9 動物 Animals",
+  "japanese_text": "<u><ruby>幼児<rt>ようじ</rt></ruby></u>は<ruby>集団生活<rt>しゅうだんせいかつ</rt></ruby>を<ruby>通<rt>とお</rt></ruby>して、<ruby>相手<rt>あいて</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちを<u><ruby>理解<rt>りかい</rt></ruby></u>したり、<u><ruby>仲間<rt>なかま</rt></ruby></u>を<u><ruby>助<rt>たす</rt></ruby>ける</u>ことを<ruby>学<rt>まな</rt></ruby>ぶ。",
   "english_translation": "Through communal living, toddlers learn to understand other people's feelings and how to help them.",
   "annotated_words": [
     {
+      "word_id": "n3_0945",
+      "word_number": 945,
       "kanji": "幼児",
       "furigana": "ようじ",
-      "meaning": "toddler"
+      "meaning_en": "toddler"
     },
     {
+      "word_id": "n3_0946",
+      "word_number": 946,
       "kanji": "理解［する］",
       "furigana": "りかい",
-      "meaning": "understanding, understand"
+      "meaning_en": "understanding, understand"
     },
     {
+      "word_id": "n3_0947",
+      "word_number": 947,
       "kanji": "仲間",
       "furigana": "なかま",
-      "meaning": "friend"
+      "meaning_en": "friend"
     },
     {
+      "word_id": "n3_0948",
+      "word_number": 948,
       "kanji": "助ける",
       "furigana": "たすける",
-      "meaning": "help, save"
-    },
-    {
-      "kanji": "助かる",
-      "furigana": "たすかる",
-      "meaning": "be helped, be saved"
+      "meaning_en": "help, save"
     }
-  ]
+  ],
+  "story_number": 17,
+  "is_story": true,
+  "page_story": "136_2"
 }

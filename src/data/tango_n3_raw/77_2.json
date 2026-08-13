@@ -1,23 +1,31 @@
 {
-  "id": "77_2",
   "title": "Topic 5",
-  "japanese_text": "<ruby>Ａ：あれ、ここ<rt></rt></ruby><ruby>電波<rt>でんぱ</rt></ruby><ruby>悪<rt>わる</rt></ruby><ruby>い？ なんか<rt></rt></ruby><ruby>全然表示<rt>ぜんぜんひょうじ</rt></ruby><ruby>されないんだけど。<rt></rt></ruby>\n<ruby>Ｂ：ん？ こっちは<rt></rt></ruby><ruby>問題<rt>もんだい</rt></ruby><ruby>ないけど。<rt></rt></ruby>\n<ruby>Ａ：あ、しまった。<rt></rt></ruby><ruby>今月通信量<rt>こんげつつうしんりょう</rt></ruby><ruby>が<rt></rt></ruby><ruby>多<rt>おお</rt></ruby><ruby>くて、<rt></rt></ruby><ruby>速度制限<rt>そくどせいげん</rt></ruby><ruby>かかったんだっ<rt></rt></ruby><ruby>た。<rt></rt></ruby><ruby>動画見<rt>どうがみ</rt></ruby><ruby>すぎたよ。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：あれ、ここ<rt></rt></ruby><ruby><u>電波</u><rt>でんぱ</rt></ruby><ruby>悪<rt>わる</rt></ruby><ruby>い？ なんか<rt></rt></ruby><ruby>全然表示<rt>ぜんぜんひょうじ</rt></ruby><ruby>されないんだけど。<rt></rt></ruby>\n<ruby>Ｂ：ん？ こっちは<rt></rt></ruby><ruby>問題<rt>もんだい</rt></ruby><ruby>ないけど。<rt></rt></ruby>\n<ruby>Ａ：あ、しまった。<rt></rt></ruby><ruby>今月通信量<rt>こんげつつうしんりょう</rt></ruby><ruby>が<rt></rt></ruby><ruby>多<rt>おお</rt></ruby><ruby>くて、<rt></rt></ruby><ruby><u>速度</u><u>制限</u><rt>そくどせいげん</rt></ruby><ruby>かかったんだっ<rt></rt></ruby><ruby>た。<rt></rt></ruby><ruby>動画見<rt>どうがみ</rt></ruby><ruby>すぎたよ。<rt></rt></ruby>",
   "english_translation": "A: Huh, reception is bad here. Nothing is being displayed at all.\nB: What? I'm not having any problems.\nA: Oh, my mistake. I had a lot of communication traffic this month, and they put a speed limit on my phone. I watched too many videos.",
   "annotated_words": [
     {
+      "word_id": "n3_1177",
+      "word_number": 1177,
       "kanji": "電波",
       "furigana": "でんぱ",
-      "meaning": "reception, signal"
+      "meaning_en": "reception, signal"
     },
     {
+      "word_id": "n3_1178",
+      "word_number": 1178,
       "kanji": "速度",
       "furigana": "そくど",
-      "meaning": "speed"
+      "meaning_en": "speed"
     },
     {
+      "word_id": "n3_1179",
+      "word_number": 1179,
       "kanji": "制限",
       "furigana": "せいげん",
-      "meaning": "limit, limit"
+      "meaning_en": "limit, limit"
     }
-  ]
+  ],
+  "story_number": 8,
+  "is_story": true,
+  "page_story": "77_2"
 }

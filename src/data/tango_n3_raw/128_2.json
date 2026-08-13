@@ -1,38 +1,45 @@
 {
-  "id": "128_2",
-  "title": "Topic 9",
-  "japanese_text": "あのおじいさんは<ruby>毎朝<rt>まいあさ</rt></ruby><ruby>釣<rt>つ</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く<ruby>前<rt>まえ</rt></ruby>に<ruby>必<rt>かなら</rt></ruby>ずこの<ruby>公園<rt>こうえん</rt></ruby>に<ruby>来<rt>き</rt></ruby>て、７<ruby>羽<rt>わ</rt></ruby>の<ruby>鳩<rt>はと</rt></ruby>にバケツいっぱいの<ruby>豆<rt>まめ</rt></ruby>をやることを<ruby>日課<rt>にっか</rt></ruby>にしている。",
+  "title": "Topic 9 動物 Animals",
+  "japanese_text": "あのおじいさんは<ruby>毎朝<rt>まいあさ</rt></ruby><u><ruby>釣<rt>つ</rt></ruby>り</u>に<ruby>行<rt>い</rt></ruby>く<ruby>前<rt>まえ</rt></ruby>に<ruby>必<rt>かなら</rt></ruby>ずこの<ruby>公園<rt>こうえん</rt></ruby>に<ruby>来<rt>き</rt></ruby>て、７<u><ruby>羽<rt>わ</rt></ruby></u>の<ruby>鳩<rt>はと</rt></ruby>に<u>バケツ</u>いっぱいの<u><ruby>豆<rt>まめ</rt></ruby></u>を<u>やる</u>ことを<ruby>日課<rt>にっか</rt></ruby>にしている。",
   "english_translation": "Every morning, that old man always comes to this park before going fishing, and his daily routine is to give seven pigeons a whole bucket of beans.",
   "annotated_words": [
     {
+      "word_id": "n3_0886",
+      "word_number": 886,
       "kanji": "釣り",
       "furigana": "つり",
-      "meaning": "fishing"
+      "meaning_en": "fishing"
     },
     {
-      "kanji": "釣る",
-      "furigana": "つる",
-      "meaning": "fish"
-    },
-    {
+      "word_id": "n3_0887",
+      "word_number": 887,
       "kanji": "〜羽",
       "furigana": "〜わ",
-      "meaning": "counter for birds, etc."
+      "meaning_en": "counter for birds, etc."
     },
     {
+      "word_id": "n3_0888",
+      "word_number": 888,
       "kanji": "バケツ",
       "furigana": "",
-      "meaning": "bucket"
+      "meaning_en": "bucket"
     },
     {
+      "word_id": "n3_0889",
+      "word_number": 889,
       "kanji": "豆",
       "furigana": "まめ",
-      "meaning": "bean"
+      "meaning_en": "bean"
     },
     {
+      "word_id": "n3_0890",
+      "word_number": 890,
       "kanji": "やる",
       "furigana": "",
-      "meaning": "give"
+      "meaning_en": "give"
     }
-  ]
+  ],
+  "story_number": 2,
+  "is_story": true,
+  "page_story": "128_2"
 }

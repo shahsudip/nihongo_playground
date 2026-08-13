@@ -1,33 +1,24 @@
 {
-  "id": "100_1",
   "title": "Topic 6",
-  "japanese_text": "<ruby>私<rt>わたし</rt></ruby>はアイドルには<ruby>少<rt>すこ</rt></ruby>しも<ruby>興味<rt>きょうみ</rt></ruby>がなかった。しかし、<ruby>友人<rt>ゆうじん</rt></ruby>に<ruby>誘<rt>さそ</rt></ruby>われて、コンサートに<ruby>行<rt>い</rt></ruby>ってから、ファンになった。<ruby>彼<rt>かれ</rt></ruby>らが<ruby>登場<rt>とうじょう</rt></ruby>したときの<ruby>会場<rt>かいじょう</rt></ruby>の<ruby>空気<rt>くうき</rt></ruby>は<ruby>忘<rt>わす</rt></ruby>れられない。とても<ruby>感動的<rt>かんどうてき</rt></ruby>で、<ruby>終<rt>お</rt></ruby>わる<ruby>頃<rt>ころ</rt></ruby>には<ruby>泣<rt>な</rt></ruby>いていた。",
+  "japanese_text": "<ruby>私<rt>わたし</rt></ruby>はアイドルには<ruby>少<rt>すこ</rt></ruby>しも<ruby>興味<rt>きょうみ</rt></ruby>がなかった。しかし、<ruby>友人<rt>ゆうじん</rt></ruby>に<ruby>誘<rt>さそ</rt></ruby>われて、<u>コンサート</u>に<ruby>行<rt>い</rt></ruby>ってから、ファンになった。<ruby>彼<rt>かれ</rt></ruby>らが<ruby><u>登場</u><rt>とうじょう</rt></ruby>したときの<ruby>会場<rt>かいじょう</rt></ruby>の<ruby>空気<rt>くうき</rt></ruby>は<ruby>忘<rt>わす</rt></ruby>れられない。とても<ruby>感動的<rt>かんどうてき</rt></ruby>で、<ruby>終<rt>お</rt></ruby>わる<ruby>頃<rt>ころ</rt></ruby>には<ruby>泣<rt>な</rt></ruby>いていた。",
   "english_translation": "I didn't used to be interested in idols at all. However, I was invited by a friend to a concert and have been a fan ever since. I'll never forget the vibe in the venue the moment they appeared. It was really moving, and I cried when it was over.",
   "annotated_words": [
     {
-      "kanji": "少しも〜ない",
-      "furigana": "すこしも〜ない",
-      "meaning": "not at all ~"
-    },
-    {
+      "word_id": "n3_1303",
+      "word_number": 1303,
       "kanji": "コンサート",
       "furigana": "",
-      "meaning": "concert"
+      "meaning_en": "concert"
     },
     {
-      "kanji": "ライブ",
-      "furigana": "",
-      "meaning": "live show"
-    },
-    {
+      "word_id": "n3_1304",
+      "word_number": 1304,
       "kanji": "登場［する］",
       "furigana": "とうじょう",
-      "meaning": "appearance, appear"
-    },
-    {
-      "kanji": "〜的",
-      "furigana": "〜てき",
-      "meaning": "~ish"
+      "meaning_en": "appearance, appear"
     }
-  ]
+  ],
+  "story_number": 14,
+  "is_story": true,
+  "page_story": "100_1"
 }

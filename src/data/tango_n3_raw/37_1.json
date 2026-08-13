@@ -1,43 +1,38 @@
 {
-  "id": "37_1",
   "title": "Topic 2",
-  "japanese_text": "<ruby>使<rt>つか</rt></ruby>った<span class='annotated-word' data-word='食器'><ruby>食器<rt>しょっき</rt></ruby></span>は、<ruby>洗<rt>あら</rt></ruby>ってから、<span class='annotated-word' data-word='シンク'>シンク</span>の<ruby>上<rt>うえ</rt></ruby>の<span class='annotated-word' data-word='戸棚'><ruby>戸棚<rt>とだな</rt></ruby></span>に<span class='annotated-word' data-word='戻す'><ruby>戻<rt>もど</rt></ruby>して</span>ください。<br><span class='annotated-word' data-word='ポット'>ポット</span>はまたすぐに<ruby>使<rt>つか</rt></ruby>うので、<span class='annotated-word' data-word='しまう'>しまわなくて</span>いいです。",
+  "japanese_text": "<ruby>使<rt>つか</rt></ruby>った<ruby><u>食器</u><rt>しょっき</rt></ruby>は、<ruby>洗<rt>あら</rt></ruby>ってから、<u>シンク</u>の<ruby>上<rt>うえ</rt></ruby>の<ruby><u>戸棚</u><rt>とだな</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>してください。<br><u>ポット</u>はまたすぐに<ruby>使<rt>つか</rt></ruby>うので、しまわなくていいです。",
   "english_translation": "Wash your used tableware and return it to the cabinet on the sink. Since the pots will be used again soon, you don't have to put them away.",
   "annotated_words": [
     {
-      "meaning_en": "tableware",
+      "word_id": "n3_1004",
+      "word_number": 1004,
+      "kanji": "食器",
       "furigana": "しょっき",
-      "kanji": "食器"
+      "meaning_en": "tableware"
     },
     {
-      "meaning_en": "sink",
+      "word_id": "n3_1005",
+      "word_number": 1005,
+      "kanji": "シンク",
       "furigana": "",
-      "kanji": "シンク"
+      "meaning_en": "sink"
     },
     {
-      "meaning_en": "sink",
-      "furigana": "ながし",
-      "kanji": "流し"
-    },
-    {
-      "meaning_en": "cabinet",
+      "word_id": "n3_1006",
+      "word_number": 1006,
+      "kanji": "戸棚",
       "furigana": "とだな",
-      "kanji": "戸棚"
+      "meaning_en": "cabinet"
     },
     {
-      "meaning_en": "return",
-      "furigana": "もどす",
-      "kanji": "戻す"
-    },
-    {
-      "meaning_en": "pot",
+      "word_id": "n3_1007",
+      "word_number": 1007,
+      "kanji": "ポット",
       "furigana": "",
-      "kanji": "ポット"
-    },
-    {
-      "meaning_en": "put away",
-      "furigana": "しまう",
-      "kanji": "しまう"
+      "meaning_en": "pot"
     }
-  ]
+  ],
+  "story_number": 3,
+  "is_story": true,
+  "page_story": "37_1"
 }

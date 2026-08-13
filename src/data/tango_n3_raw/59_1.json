@@ -1,23 +1,24 @@
 {
-  "id": "59_1",
   "title": "Topic 3",
-  "japanese_text": "<ruby>Ａ：ねえねえ、これ、フリマアプリでいくらで<rt></rt></ruby><ruby>売<rt>う</rt></ruby><ruby>れると<rt></rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>う？<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby>商品<rt>しょうひん</rt></ruby><ruby>代<rt>だい</rt></ruby><ruby>プラス<rt></rt></ruby><ruby>送料<rt>そうりょう</rt></ruby><ruby>で<rt></rt></ruby>１０００<ruby>円<rt>えん</rt></ruby><ruby>なら<rt></rt></ruby><ruby>買<rt>か</rt></ruby><ruby>うかな。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：ねえねえ、これ、フリマアプリでいくらで<rt></rt></ruby><ruby>売<rt>う</rt></ruby><ruby>れると<rt></rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>う？<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby>商品<rt>しょうひん</rt></ruby><ruby>代<rt>だい</rt></ruby><ruby><u>プラス</u><rt></rt></ruby><ruby><u>送料</u><rt>そうりょう</rt></ruby><ruby>で<rt></rt></ruby>１０００<ruby>円<rt>えん</rt></ruby><ruby>なら<rt></rt></ruby><ruby>買<rt>か</rt></ruby><ruby>うかな。<rt></rt></ruby>",
   "english_translation": "A: Hey, how much do you think I can sell this for on a flea market app?\nB: Someone might buy it for 1,000 yen including shipping.",
   "annotated_words": [
     {
-      "kanji": "売れる",
-      "furigana": "うれる",
-      "meaning": "sell, be sellable"
-    },
-    {
+      "word_id": "n3_1095",
+      "word_number": 1095,
       "kanji": "プラス",
       "furigana": "",
-      "meaning": "plus, add on"
+      "meaning_en": "plus, add on"
     },
     {
+      "word_id": "n3_1096",
+      "word_number": 1096,
       "kanji": "送料",
       "furigana": "そうりょう",
-      "meaning": "shipping cost"
+      "meaning_en": "shipping cost"
     }
-  ]
+  ],
+  "story_number": 15,
+  "is_story": true,
+  "page_story": "59_1"
 }

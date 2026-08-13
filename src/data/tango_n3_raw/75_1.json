@@ -1,33 +1,38 @@
 {
-  "id": "75_1",
   "title": "Topic 5",
-  "japanese_text": "<ruby>資料<rt>しりょう</rt></ruby><ruby>は<rt></rt></ruby><ruby>以下<rt>いか</rt></ruby><ruby>のアドレスにアップしましたので、ダウンロードしてください。<rt></rt></ruby><ruby>紙<rt>かみ</rt></ruby><ruby>の<rt></rt></ruby><ruby>資料<rt>しりょう</rt></ruby><ruby>が<rt></rt></ruby><ruby>欲<rt>ほ</rt></ruby><ruby>しい<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>は、<rt></rt></ruby><ruby>自分<rt>じぶん</rt></ruby><ruby>で<rt></rt></ruby><ruby>印刷<rt>いんさつ</rt></ruby><ruby>してください。<rt></rt></ruby>",
+  "japanese_text": "<ruby><u>資料</u><rt>しりょう</rt></ruby><ruby>は<rt></rt></ruby><ruby>以下<rt>いか</rt></ruby><ruby>の<u>アドレス</u>にアップしましたので、<u>ダウンロード</u>してください。<rt></rt></ruby><ruby>紙<rt>かみ</rt></ruby><ruby>の<rt></rt></ruby><ruby>資料<rt>しりょう</rt></ruby><ruby>が<rt></rt></ruby><ruby>欲<rt>ほ</rt></ruby><ruby>しい<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>は、<rt></rt></ruby><ruby>自分<rt>じぶん</rt></ruby><ruby>で<rt></rt></ruby><ruby><u>印刷</u><rt>いんさつ</rt></ruby><ruby>してください。<rt></rt></ruby>",
   "english_translation": "The materials have been uploaded to the following address, so please download them. If you would like paper materials, please print them yourself.",
   "annotated_words": [
     {
+      "word_id": "n3_1160",
+      "word_number": 1160,
       "kanji": "資料",
       "furigana": "しりょう",
-      "meaning": "materials, document"
+      "meaning_en": "materials, document"
     },
     {
+      "word_id": "n3_1161",
+      "word_number": 1161,
       "kanji": "アドレス",
       "furigana": "",
-      "meaning": "address"
+      "meaning_en": "address"
     },
     {
-      "kanji": "アップ（ロード）",
-      "furigana": "",
-      "meaning": "uploading, upload"
-    },
-    {
+      "word_id": "n3_1162",
+      "word_number": 1162,
       "kanji": "ダウンロード",
       "furigana": "",
-      "meaning": "downloading, download"
+      "meaning_en": "downloading, download"
     },
     {
+      "word_id": "n3_1163",
+      "word_number": 1163,
       "kanji": "印刷",
       "furigana": "いんさつ",
-      "meaning": "printing, print"
+      "meaning_en": "printing, print"
     }
-  ]
+  ],
+  "story_number": 3,
+  "is_story": true,
+  "page_story": "75_1"
 }

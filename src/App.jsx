@@ -25,6 +25,7 @@ import PracticeCategoryPage from './components/PracticeCategoryPage.jsx';
 import PracticeTestListPage from './components/PracticeTestListPage.jsx';
 import TestTakerPage from './components/TestTakerPage.jsx';
 // --- END NEW IMPORTS ---
+import ConversationsPage from './components/ConversationsPage.jsx';
 
 import BookListPage from './components/BookListPage.jsx';
 import BookChapterListPage from './components/BookChapterListPage.jsx';
@@ -100,6 +101,10 @@ export default function App() {
           <Route 
             path="/study/grammar/:level/:slug" 
             element={<ProtectedRoute><GrammarStudyPage /></ProtectedRoute>} 
+          />
+          <Route
+            path="/levels/:level/conversations"
+            element={<ProtectedRoute><ConversationsPage /></ProtectedRoute>}
           />
           <Route
             path="/results"

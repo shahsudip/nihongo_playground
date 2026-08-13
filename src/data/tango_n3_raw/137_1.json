@@ -1,23 +1,31 @@
 {
-  "id": "137_1",
-  "title": "Topic 9",
-  "japanese_text": "A：<ruby>最近<rt>さいきん</rt></ruby>、<ruby>犬<rt>いぬ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>いたいと<ruby>思<rt>おも</rt></ruby>ってるんだけど。<br>B：そうなんだ。<ruby>大型犬<rt>おおがたけん</rt></ruby>と<ruby>小型犬<rt>こがたけん</rt></ruby>、どっち？<br>A：うーん、<ruby>育<rt>そだ</rt></ruby>てやすい<ruby>方<rt>ほう</rt></ruby>がいいから<ruby>小型犬<rt>こがたけん</rt></ruby>かな。<br>B：<ruby>案外<rt>あんがい</rt></ruby>、<ruby>大型犬<rt>おおがたけん</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>がおとなしくて<ruby>育<rt>そだ</rt></ruby>てやすく、<ruby>小型犬<rt>こがたけん</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>がよくほえるらしいよ。",
+  "title": "Topic 9 動物 Animals",
+  "japanese_text": "A：<ruby>最近<rt>さいきん</rt></ruby>、<ruby>犬<rt>いぬ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>いたいと<ruby>思<rt>おも</rt></ruby>ってるんだけど。<br>B：そうなんだ。<u><ruby>大型<rt>おおがた</rt></ruby></u><ruby>犬<rt>けん</rt></ruby>と<u><ruby>小型<rt>こがた</rt></ruby></u><ruby>犬<rt>けん</rt></ruby>、どっち？<br>A：うーん、<ruby>育<rt>そだ</rt></ruby>てやすい<ruby>方<rt>ほう</rt></ruby>がいいから<ruby>小型<rt>こがた</rt></ruby><ruby>犬<rt>けん</rt></ruby>かな。<br>B：<ruby>案外<rt>あんがい</rt></ruby>、<ruby>大型<rt>おおがた</rt></ruby><ruby>犬<rt>けん</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>がおとなしくて<ruby>育<rt>そだ</rt></ruby>てやすく、<ruby>小型<rt>こがた</rt></ruby><ruby>犬<rt>けん</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>がよく<u>ほえる</u>らしいよ。",
   "english_translation": "A: I've been thinking about getting a dog recently. B: Really? Which kind, a large dog or a small dog? A: Hmm, maybe a small dog since I prefer one that's easy to raise. B: Large dogs are actually surprisingly quieter and easy to raise, and I hear small dogs tend to bark more.",
   "annotated_words": [
     {
+      "word_id": "n3_0949",
+      "word_number": 949,
       "kanji": "大型",
       "furigana": "おおがた",
-      "meaning": "large size"
+      "meaning_en": "large size"
     },
     {
+      "word_id": "n3_0950",
+      "word_number": 950,
       "kanji": "小型",
       "furigana": "こがた",
-      "meaning": "small size"
+      "meaning_en": "small size"
     },
     {
+      "word_id": "n3_0951",
+      "word_number": 951,
       "kanji": "ほえる",
       "furigana": "",
-      "meaning": "bark"
+      "meaning_en": "bark"
     }
-  ]
+  ],
+  "story_number": 18,
+  "is_story": true,
+  "page_story": "137_1"
 }

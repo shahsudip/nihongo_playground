@@ -1,33 +1,17 @@
 {
-  "id": "55_1",
   "title": "Topic 3",
-  "japanese_text": "<ruby>先月<rt>せんげつ</rt></ruby><ruby>の<rt></rt></ruby><ruby>携帯<rt>けいたい</rt></ruby><ruby>代<rt>だい</rt></ruby><ruby>が<rt></rt></ruby>１００００<ruby>円<rt>えん</rt></ruby><ruby>を<rt></rt></ruby><ruby>超<rt>こ</rt></ruby><ruby>えて、せっかくバイトで<rt></rt></ruby><ruby>貯<rt>た</rt></ruby><ruby>めたお<rt></rt></ruby><ruby>金<rt>かね</rt></ruby><ruby>がほとんどなくなった。プランを<rt></rt></ruby><ruby>変<rt>か</rt></ruby><ruby>えようかと<rt></rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>うが、<rt></rt></ruby><ruby>携帯<rt>けいたい</rt></ruby><ruby>電話<rt>でんわ</rt></ruby><ruby>の<rt></rt></ruby><ruby>料金<rt>りょうきん</rt></ruby><ruby>プランは<rt></rt></ruby><ruby>複雑<rt>ふくざつ</rt></ruby><ruby>すぎてどれが<rt></rt></ruby><ruby>得<rt>とく</rt></ruby><ruby>なのかよく<rt></rt></ruby><ruby>分<rt>わ</rt></ruby><ruby>からない。<rt></rt></ruby><ruby>今月<rt>こんげつ</rt></ruby><ruby>は<rt></rt></ruby><ruby>飲<rt>の</rt></ruby><ruby>み<rt></rt></ruby><ruby>会<rt>かい</rt></ruby><ruby>ばかりで<rt></rt></ruby><ruby>食費<rt>しょくひ</rt></ruby><ruby>もかかるし、ピンチだ。<rt></rt></ruby>",
+  "japanese_text": "<ruby>先月<rt>せんげつ</rt></ruby><ruby>の<rt></rt></ruby><ruby>携帯<rt>けいたい</rt></ruby><ruby>代<rt>だい</rt></ruby><ruby>が<rt></rt></ruby>１００００<ruby>円<rt>えん</rt></ruby><ruby>を<rt></rt></ruby><ruby>超<rt>こ</rt></ruby><ruby>えて、せっかくバイトで<rt></rt></ruby><ruby>貯<rt>た</rt></ruby><ruby>めたお<rt></rt></ruby><ruby>金<rt>かね</rt></ruby><ruby>がほとんどなくなった。プランを<rt></rt></ruby><ruby>変<rt>か</rt></ruby><ruby>えようかと<rt></rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>うが、<rt></rt></ruby><ruby>携帯<rt>けいたい</rt></ruby><ruby>電話<rt>でんわ</rt></ruby><ruby>の<rt></rt></ruby><ruby><u>料金</u><rt>りょうきん</rt></ruby><ruby>プランは<rt></rt></ruby><ruby>複雑<rt>ふくざつ</rt></ruby><ruby>すぎてどれが<rt></rt></ruby><ruby>得<rt>とく</rt></ruby><ruby>なのかよく<rt></rt></ruby><ruby>分<rt>わ</rt></ruby><ruby>からない。<rt></rt></ruby><ruby>今月<rt>こんげつ</rt></ruby><ruby>は<rt></rt></ruby><ruby>飲<rt>の</rt></ruby><ruby>み<rt></rt></ruby><ruby>会<rt>かい</rt></ruby><ruby>ばかりで<rt></rt></ruby><ruby>食費<rt>しょくひ</rt></ruby><ruby>もかかるし、ピンチだ。<rt></rt></ruby>",
   "english_translation": "Because my cell phone bill for last month was more than 10,000 yen, most of the money I saved up from my part-time job is now gone. I want to change my plan, but mobile phone payment plans are so complicated that I can't figure out which one is the better deal. I have a lot of drinking parties this month making my food bill high, so I'm in a pinch.",
   "annotated_words": [
     {
-      "kanji": "〜代",
-      "furigana": "〜だい",
-      "meaning": "~ bill"
-    },
-    {
-      "kanji": "貯める",
-      "furigana": "ためる",
-      "meaning": "save"
-    },
-    {
-      "kanji": "貯まる",
-      "furigana": "たまる",
-      "meaning": "be save up"
-    },
-    {
+      "word_id": "n3_1077",
+      "word_number": 1077,
       "kanji": "料金",
       "furigana": "りょうきん",
-      "meaning": "payment, charge"
-    },
-    {
-      "kanji": "〜費",
-      "furigana": "〜ひ",
-      "meaning": "~ fee, ~ cost"
+      "meaning_en": "payment, charge"
     }
-  ]
+  ],
+  "story_number": 7,
+  "is_story": true,
+  "page_story": "55_1"
 }

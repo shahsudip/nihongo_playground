@@ -1,33 +1,38 @@
 {
-  "id": "88_1",
   "title": "Topic 5",
-  "japanese_text": "<ruby>Ａ：メールの<rt></rt></ruby><ruby>件名<rt>けんめい</rt></ruby><ruby>、<rt></rt></ruby><ruby>全然変<rt>ぜんぜんか</rt></ruby><ruby>えない<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>がいるけど、<rt></rt></ruby><ruby>許<rt>ゆる</rt></ruby><ruby>せないんだよね。<rt></rt></ruby>\n<ruby>Ｂ：え、でも、<rt></rt></ruby><ruby>返信<rt>へんしん</rt></ruby><ruby>のときは<rt></rt></ruby><ruby>変<rt>か</rt></ruby><ruby>えない。<rt></rt></ruby><ruby>変<rt>か</rt></ruby><ruby>えたら<rt></rt></ruby><ruby>失礼<rt>しつれい</rt></ruby><ruby>じゃない？<rt></rt></ruby>\n<ruby>Ａ：でも、<rt></rt></ruby><ruby>返信<rt>へんしん</rt></ruby><ruby>や<rt></rt></ruby><ruby>転送<rt>てんそう</rt></ruby><ruby>が<rt></rt></ruby><ruby>続<rt>つづ</rt></ruby><ruby>くと、<rt></rt></ruby><ruby>記号<rt>きごう</rt></ruby><ruby>が<rt></rt></ruby><ruby>増<rt>ふ</rt></ruby><ruby>えて<rt></rt></ruby><ruby>長<rt>なが</rt></ruby><ruby>くなるでしょ。<rt></rt></ruby><ruby>最大<rt>さいだい</rt></ruby>20<ruby>文字<rt>もじ</rt></ruby><ruby>ぐらいになるようにしてるな。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：メールの<rt></rt></ruby><ruby><u>件名</u><rt>けんめい</rt></ruby><ruby>、<rt></rt></ruby><ruby>全然変<rt>ぜんぜんか</rt></ruby><ruby>えない<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>がいるけど、<rt></rt></ruby><ruby>許<rt>ゆる</rt></ruby><ruby>せないんだよね。<rt></rt></ruby>\n<ruby>Ｂ：え、でも、<rt></rt></ruby><ruby><u>返信</u><rt>へんしん</rt></ruby><ruby>のときは<rt></rt></ruby><ruby>変<rt>か</rt></ruby><ruby>えない。<rt></rt></ruby><ruby>変<rt>か</rt></ruby><ruby>えたら<rt></rt></ruby><ruby>失礼<rt>しつれい</rt></ruby><ruby>じゃない？<rt></rt></ruby>\n<ruby>Ａ：でも、<rt></rt></ruby><ruby>返信<rt>へんしん</rt></ruby><ruby>や<rt></rt></ruby><ruby><u>転送</u><rt>てんそう</rt></ruby><ruby>が<rt></rt></ruby><ruby>続<rt>つづ</rt></ruby><ruby>くと、<rt></rt></ruby><ruby>記号<rt>きごう</rt></ruby><ruby>が<rt></rt></ruby><ruby>増<rt>ふ</rt></ruby><ruby>えて<rt></rt></ruby><ruby>長<rt>なが</rt></ruby><ruby>くなるでしょ。<rt></rt></ruby><ruby><u>最大</u><rt>さいだい</rt></ruby>20<ruby>文字<rt>もじ</rt></ruby><ruby>ぐらいになるようにしてるな。<rt></rt></ruby>",
   "english_translation": "A: Isn't it unforgivable how there are some people who don't change the subjects of their email at all?\nB: But I don't change it when replying. Wouldn't it be rude if you did?\nA: But as it continues to be replied to or forwarded, the number of symbols increases, and the subject gets longer. I make sure it's never more than 20 characters.",
   "annotated_words": [
     {
+      "word_id": "n3_1251",
+      "word_number": 1251,
       "kanji": "件名",
       "furigana": "けんめい",
-      "meaning": "subject"
+      "meaning_en": "subject"
     },
     {
+      "word_id": "n3_1252",
+      "word_number": 1252,
       "kanji": "返信",
       "furigana": "へんしん",
-      "meaning": "reply, reply (to an email)"
+      "meaning_en": "reply, reply (to an email)"
     },
     {
+      "word_id": "n3_1253",
+      "word_number": 1253,
       "kanji": "転送",
       "furigana": "てんそう",
-      "meaning": "forwarding, forward (an email)"
+      "meaning_en": "forwarding, forward (an email)"
     },
     {
+      "word_id": "n3_1254",
+      "word_number": 1254,
       "kanji": "最大",
       "furigana": "さいだい",
-      "meaning": "maximum"
-    },
-    {
-      "kanji": "最小",
-      "furigana": "さいしょう",
-      "meaning": "minimum"
+      "meaning_en": "maximum"
     }
-  ]
+  ],
+  "story_number": 28,
+  "is_story": true,
+  "page_story": "88_1"
 }

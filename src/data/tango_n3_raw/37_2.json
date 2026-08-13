@@ -1,23 +1,31 @@
 {
-  "id": "37_2",
   "title": "Topic 2",
-  "japanese_text": "<span class='annotated-word' data-word='ほこり'>ほこり</span>は<ruby>部屋<rt>へや</rt></ruby>の<span class='annotated-word' data-word='隅'><ruby>隅<rt>すみ</rt></ruby></span>にたまります。<span class='annotated-word' data-word='床'><ruby>床<rt>ゆか</rt></ruby></span>をよく<ruby>掃除<rt>そうじ</rt></ruby>しましょう。",
+  "japanese_text": "<u>ほこり</u>は<ruby>部屋<rt>へや</rt></ruby>の<ruby><u>隅</u><rt>すみ</rt></ruby>にたまります。<ruby><u>床</u><rt>ゆか</rt></ruby>をよく<ruby>掃除<rt>そうじ</rt></ruby>しましょう。",
   "english_translation": "Dust can accumulate in the corners of rooms. Be sure to clean the floor well.",
   "annotated_words": [
     {
-      "meaning_en": "dust",
+      "word_id": "n3_1008",
+      "word_number": 1008,
+      "kanji": "ほこり",
       "furigana": "",
-      "kanji": "ほこり"
+      "meaning_en": "dust"
     },
     {
-      "meaning_en": "corner",
+      "word_id": "n3_1009",
+      "word_number": 1009,
+      "kanji": "隅",
       "furigana": "すみ",
-      "kanji": "隅"
+      "meaning_en": "corner"
     },
     {
-      "meaning_en": "floor",
+      "word_id": "n3_1010",
+      "word_number": 1010,
+      "kanji": "床",
       "furigana": "ゆか",
-      "kanji": "床"
+      "meaning_en": "floor"
     }
-  ]
+  ],
+  "story_number": 4,
+  "is_story": true,
+  "page_story": "37_2"
 }

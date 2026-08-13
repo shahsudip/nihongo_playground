@@ -1,33 +1,24 @@
 {
-  "id": "31_2",
-  "title": "Topic 1",
-  "japanese_text": "<span class='annotated-word' data-word='全力'>全力<ruby><rt>ぜんりょく</rt></ruby></span>で<ruby>運動<rt>うんどう</rt></ruby>した<ruby>後<rt>あと</rt></ruby>は、お<ruby>腹<rt>なか</rt></ruby>が<span class='annotated-word' data-word='ぺこぺこな'>ぺこぺこに</span>なる。ご<ruby>飯<rt>はん</rt></ruby>を<span class='annotated-word' data-word='丼'>丼<ruby><rt>どんぶり</rt></ruby></span>で<ruby>何<rt>なん</rt></ruby><span class='annotated-word' data-word='杯'>杯<ruby><rt>ばい</rt></ruby></span>も<span class='annotated-word' data-word='おかわりする'>おかわりして</span>しまう。",
+  "title": "Topic 1 食事 Eating",
+  "japanese_text": "<u>全力</u><ruby><rt>ぜんりょく</rt></ruby>で<ruby>運動<rt>うんどう</rt></ruby>した<ruby>後<rt>あと</rt></ruby>は、お<ruby>腹<rt>なか</rt></ruby>がぺこぺこになる。ご<ruby>飯<rt>はん</rt></ruby>を<u>丼</u><ruby><rt>どんぶり</rt></ruby>で<ruby>何<rt>なん</rt></ruby>杯<ruby><rt>ばい</rt></ruby>もおかわりしてしまう。",
   "english_translation": "After exercising with all my strength, I get hungry. I end up having bowl after bowl of rice.",
   "annotated_words": [
     {
-      "meaning_en": "full strength, with all one's might",
+      "word_id": "n3_0078",
+      "word_number": 78,
+      "kanji": "全力",
       "furigana": "ぜんりょく",
-      "kanji": "全力"
+      "meaning_en": "full strength, with all one's might"
     },
     {
-      "meaning_en": "empty (stomach), very hungry",
-      "furigana": "",
-      "kanji": "ぺこぺこな"
-    },
-    {
-      "meaning_en": "bowl",
+      "word_id": "n3_0079",
+      "word_number": 79,
+      "kanji": "丼",
       "furigana": "どんぶり",
-      "kanji": "丼"
-    },
-    {
-      "meaning_en": "~ items (counter for bowls of food or cups of drink)",
-      "furigana": "はい",
-      "kanji": "〜杯"
-    },
-    {
-      "meaning_en": "refill, have seconds, have a refill",
-      "furigana": "",
-      "kanji": "おかわり[する]"
+      "meaning_en": "bowl"
     }
-  ]
+  ],
+  "story_number": 26,
+  "is_story": true,
+  "page_story": "31_2"
 }

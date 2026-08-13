@@ -1,23 +1,17 @@
 {
-  "id": "56_2",
   "title": "Topic 3",
-  "japanese_text": "<ruby>若<rt>わか</rt></ruby><ruby>い<rt></rt></ruby><ruby>頃<rt>ころ</rt></ruby><ruby>はお<rt></rt></ruby><ruby>金<rt>かね</rt></ruby><ruby>がなくて<rt></rt></ruby><ruby>苦労<rt>くろう</rt></ruby><ruby>した。<rt></rt></ruby><ruby>近所<rt>きんじょ</rt></ruby><ruby>の<rt></rt></ruby><ruby>八百屋<rt>やおや</rt></ruby><ruby>でいらないキャ<rt></rt></ruby><ruby>ベツを<rt></rt></ruby><ruby>段<rt>だん</rt></ruby><ruby>ボールにいっぱいのらって、<rt></rt></ruby><ruby>野菜<rt>やさい</rt></ruby><ruby>炒<rt>いた</rt></ruby><ruby>めばかり<rt></rt></ruby><ruby>食<rt>た</rt></ruby><ruby>べとい<rt></rt></ruby><ruby>た。でも<rt></rt></ruby><ruby>貧<rt>まず</rt></ruby><ruby>しい<rt></rt></ruby><ruby>分<rt>ぶん</rt></ruby><ruby>、<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>の<rt></rt></ruby><ruby>優<rt>やさ</rt></ruby><ruby>しさにもたくさん<rt></rt></ruby><ruby>触<rt>ふ</rt></ruby><ruby>れられたと<rt></rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>う。<rt></rt></ruby>",
+  "japanese_text": "<ruby>若<rt>わか</rt></ruby><ruby>い<rt></rt></ruby><ruby>頃<rt>ころ</rt></ruby><ruby>はお<rt></rt></ruby><ruby>金<rt>かね</rt></ruby><ruby>がなくて<rt></rt></ruby><ruby>苦労<rt>くろう</rt></ruby><ruby>した。<rt></rt></ruby><ruby>近所<rt>きんじょ</rt></ruby><ruby>の<rt></rt></ruby><ruby><u>八百屋</u><rt>やおや</rt></ruby><ruby>でいらないキャ<rt></rt></ruby><ruby>ベツを<rt></rt></ruby><ruby>段<rt>だん</rt></ruby><ruby>ボールにいっぱいのらって、<rt></rt></ruby><ruby>野菜<rt>やさい</rt></ruby><ruby>炒<rt>いた</rt></ruby><ruby>めばかり<rt></rt></ruby><ruby>食<rt>た</rt></ruby><ruby>べとい<rt></rt></ruby><ruby>た。でも<rt></rt></ruby><ruby>貧<rt>まず</rt></ruby><ruby>しい<rt></rt></ruby><ruby>分<rt>ぶん</rt></ruby><ruby>、<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>の<rt></rt></ruby><ruby>優<rt>やさ</rt></ruby><ruby>しさにもたくさん<rt></rt></ruby><ruby>触<rt>ふ</rt></ruby><ruby>れられたと<rt></rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>う。<rt></rt></ruby>",
   "english_translation": "When I was young, I had no money and had a hard time. I would get a cardboard box from the local grocery store that was full of cabbage they didn't need, and I would eat nothing but stir-fried vegetables. But as poor as I was, I was all the more affected by people's kindness.",
   "annotated_words": [
     {
+      "word_id": "n3_1083",
+      "word_number": 1083,
       "kanji": "八百屋",
       "furigana": "やおや",
-      "meaning": "grocery store"
-    },
-    {
-      "kanji": "段ボール",
-      "furigana": "だんボール",
-      "meaning": "cardboard"
-    },
-    {
-      "kanji": "貧しい",
-      "furigana": "まずしい",
-      "meaning": "poor"
+      "meaning_en": "grocery store"
     }
-  ]
+  ],
+  "story_number": 10,
+  "is_story": true,
+  "page_story": "56_2"
 }

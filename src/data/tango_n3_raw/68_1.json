@@ -1,48 +1,31 @@
 {
-  "id": "68_1",
   "title": "Topic 4",
-  "japanese_text": "<ruby>Ａ：<rt></rt></ruby><ruby>今度<rt>こんど</rt></ruby><ruby>、<rt></rt></ruby><ruby>婚活<rt>こんかつ</rt></ruby><ruby>パーティー<rt></rt></ruby><ruby>行<rt>い</rt></ruby><ruby>くんだけど、この<rt></rt></ruby><ruby>服<rt>ふく</rt></ruby><ruby>どう？<rt></rt></ruby><ruby>似合<rt>にあ</rt></ruby><ruby>う？<rt></rt></ruby>\n<ruby>Ｂ：うーん、なんか<rt></rt></ruby><ruby>上下<rt>じょうげ</rt></ruby><ruby>ばらばらな<rt></rt></ruby><ruby>印象<rt>いんしょう</rt></ruby><ruby>だけど…。<rt></rt></ruby>\n<ruby>Ａ：えーそう？<rt></rt></ruby><ruby>流行<rt>りゅうこう</rt></ruby><ruby>を<rt></rt></ruby><ruby>追<rt>お</rt></ruby><ruby>いかけてみたんだけど。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby>流行<rt>りゅうこう</rt></ruby><ruby>より、<rt></rt></ruby><ruby>体型<rt>たいけい</rt></ruby><ruby>に<rt></rt></ruby><ruby>合<rt>あ</rt></ruby><ruby>う<rt></rt></ruby><ruby>服<rt>ふく</rt></ruby><ruby>や<rt></rt></ruby><ruby>清潔感<rt>せいけつかん</rt></ruby><ruby>のある<rt></rt></ruby><ruby>服<rt>ふく</rt></ruby><ruby>を<rt></rt></ruby><ruby>身<rt>み</rt></ruby><ruby>に<rt></rt></ruby><ruby>付<rt>つ</rt></ruby><ruby>けるこ<rt></rt></ruby><ruby>との<rt></rt></ruby><ruby>方<rt>ほう</rt></ruby><ruby>が<rt></rt></ruby><ruby>大事<rt>だいじ</rt></ruby><ruby>だと<rt></rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>うけど。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：<rt></rt></ruby><ruby>今度<rt>こんど</rt></ruby><ruby>、<rt></rt></ruby><ruby>婚活<rt>こんかつ</rt></ruby><ruby>パーティー<rt></rt></ruby><ruby>行<rt>い</rt></ruby><ruby>くんだけど、この<rt></rt></ruby><ruby>服<rt>ふく</rt></ruby><ruby>どう？<rt></rt></ruby><ruby>似合<rt>にあ</rt></ruby><ruby>う？<rt></rt></ruby>\n<ruby>Ｂ：うーん、なんか<rt></rt></ruby><ruby><u>上下</u><rt>じょうげ</rt></ruby><ruby><u>ばらばらな</u><rt></rt></ruby><ruby>印象<rt>いんしょう</rt></ruby><ruby>だけど…。<rt></rt></ruby>\n<ruby>Ａ：えーそう？<rt></rt></ruby><ruby><u>流行</u><rt>りゅうこう</rt></ruby><ruby>を<rt></rt></ruby><ruby>追<rt>お</rt></ruby><ruby>いかけてみたんだけど。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby>流行<rt>りゅうこう</rt></ruby><ruby>より、<rt></rt></ruby><ruby>体型<rt>たいけい</rt></ruby><ruby>に<rt></rt></ruby><ruby>合<rt>あ</rt></ruby><ruby>う<rt></rt></ruby><ruby>服<rt>ふく</rt></ruby><ruby>や<rt></rt></ruby><ruby>清潔感<rt>せいけつかん</rt></ruby><ruby>のある<rt></rt></ruby><ruby>服<rt>ふく</rt></ruby><ruby>を<rt></rt></ruby><ruby>身<rt>み</rt></ruby><ruby>に<rt></rt></ruby><ruby>付<rt>つ</rt></ruby><ruby>けるこ<rt></rt></ruby><ruby>との<rt></rt></ruby><ruby>方<rt>ほう</rt></ruby><ruby>が<rt></rt></ruby><ruby>大事<rt>だいじ</rt></ruby><ruby>だと<rt></rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>うけど。<rt></rt></ruby>",
   "english_translation": "A: I'm going to a matchmaking party, so what do you think about these clothes? Do they look good on me?\nB: Hmm, I get the feeling that the top and bottom don't match.\nA: What, really? I tried following the latest trends.\nB: I think that it's more important to wear clothes that fit your body type and feel neat than to follow trends.",
   "annotated_words": [
     {
-      "kanji": "似合う",
-      "furigana": "にあう",
-      "meaning": "look good on, suit"
-    },
-    {
+      "word_id": "n3_1132",
+      "word_number": 1132,
       "kanji": "上下",
       "furigana": "じょうげ",
-      "meaning": "top and bottom, up and down"
+      "meaning_en": "top and bottom, up and down"
     },
     {
-      "kanji": "左右",
-      "furigana": "さゆう",
-      "meaning": "left and right"
-    },
-    {
-      "kanji": "前後",
-      "furigana": "ぜんご",
-      "meaning": "before and after"
-    },
-    {
+      "word_id": "n3_1133",
+      "word_number": 1133,
       "kanji": "ばらばらな",
       "furigana": "",
-      "meaning": "not matching, separate"
+      "meaning_en": "not matching, separate"
     },
     {
+      "word_id": "n3_1134",
+      "word_number": 1134,
       "kanji": "流行",
       "furigana": "りゅうこう",
-      "meaning": "trend, fad, be popular"
-    },
-    {
-      "kanji": "追いかける",
-      "furigana": "おいかける",
-      "meaning": "follow, chase"
-    },
-    {
-      "kanji": "身に付ける",
-      "furigana": "みにつける",
-      "meaning": "wear"
+      "meaning_en": "trend, fad, be popular"
     }
-  ]
+  ],
+  "story_number": 13,
+  "is_story": true,
+  "page_story": "68_1"
 }

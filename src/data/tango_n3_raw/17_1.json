@@ -1,48 +1,59 @@
 {
-  "id": "17_1",
-  "title": "Topic 1",
-  "japanese_text": "A：あのう、<ruby>今日<rt>きょう</rt></ruby>の<span class='annotated-word' data-word='日替わり'><ruby>日替<rt>ひが</rt></ruby>わり</span><span class='annotated-word' data-word='定食'><ruby>定食<rt>ていしょく</rt></ruby></span>って<ruby>何<rt>なん</rt></ruby>ですか。<br>B：<span class='annotated-word' data-word='本日'><ruby>本日<rt>ほんじつ</rt></ruby></span>は、<span class='annotated-word' data-word='エビ'>エビ</span><span class='annotated-word' data-word='フライ'>フライ</span>と<span class='annotated-word' data-word='おかず'>おかず</span>が1つ、あとはご<ruby>飯<rt>はん</rt></ruby>と<span class='annotated-word' data-word='みそ'>みそ</span><span class='annotated-word' data-word='汁'><ruby>汁<rt>しる</rt></ruby></span>です。",
+  "title": "Topic 1 食事 Eating",
+  "japanese_text": "A：あのう、<ruby>今日<rt>きょう</rt></ruby>の<ruby>日替<rt>ひが</rt></ruby>わり<ruby><u>定食</u><rt>ていしょく</rt></ruby>って<ruby>何<rt>なん</rt></ruby>ですか。<br>B：<ruby><u>本日</u><rt>ほんじつ</rt></ruby>は、<u>エビ</u><u>フライ</u>と<u>おかず</u>が1つ、あとはご<ruby>飯<rt>はん</rt></ruby>と<u>みそ</u><ruby><u>汁</u><rt>しる</rt></ruby>です。",
   "english_translation": "A: Um, what's in the daily set meal? B: Today, we have fried shrimp and one side dish, and also rice and miso soup.",
   "annotated_words": [
     {
-      "meaning_en": "daily",
-      "furigana": "ひがわり",
-      "kanji": "日替わり"
-    },
-    {
-      "meaning_en": "set meal",
+      "word_id": "n3_0007",
+      "word_number": 7,
+      "kanji": "定食",
       "furigana": "ていしょく",
-      "kanji": "定食"
+      "meaning_en": "set meal"
     },
     {
-      "meaning_en": "today",
+      "word_id": "n3_0008",
+      "word_number": 8,
+      "kanji": "本日",
       "furigana": "ほんじつ",
-      "kanji": "本日"
+      "meaning_en": "today"
     },
     {
-      "meaning_en": "shrimp",
+      "word_id": "n3_0009",
+      "word_number": 9,
+      "kanji": "エビ",
       "furigana": "",
-      "kanji": "エビ"
+      "meaning_en": "shrimp"
     },
     {
-      "meaning_en": "fried, fry",
+      "word_id": "n3_0010",
+      "word_number": 10,
+      "kanji": "フライ",
       "furigana": "",
-      "kanji": "フライ"
+      "meaning_en": "fried, fry"
     },
     {
-      "meaning_en": "side dish",
+      "word_id": "n3_0011",
+      "word_number": 11,
+      "kanji": "おかず",
       "furigana": "",
-      "kanji": "おかず"
+      "meaning_en": "side dish"
     },
     {
-      "meaning_en": "miso",
+      "word_id": "n3_0012",
+      "word_number": 12,
+      "kanji": "みそ",
       "furigana": "",
-      "kanji": "みそ"
+      "meaning_en": "miso"
     },
     {
-      "meaning_en": "soup",
+      "word_id": "n3_0013",
+      "word_number": 13,
+      "kanji": "汁",
       "furigana": "しる",
-      "kanji": "汁"
+      "meaning_en": "soup"
     }
-  ]
+  ],
+  "story_number": 3,
+  "is_story": true,
+  "page_story": "17_1"
 }

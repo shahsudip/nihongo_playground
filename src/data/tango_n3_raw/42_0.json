@@ -1,28 +1,17 @@
 {
-  "id": "42_0",
   "title": "Topic 2",
-  "japanese_text": "<span class='annotated-word' data-word='冷やす'><ruby>冷<rt>ひ</rt></ruby>やして</span>おいたビールを<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>から<span class='annotated-word' data-word='取り出す'><ruby>取<rt>と</rt></ruby>り<ruby>出<rt>だ</rt></ruby>し</span>、<ruby>飲<rt>の</rt></ruby>みながらゆっくり<ruby>食事<rt>しょくじ</rt></ruby>をする。これが<ruby>私<rt>わたし</rt></ruby>の<span class='annotated-word' data-word='休日'><ruby>休日<rt>きゅうじつ</rt></ruby></span>の<span class='annotated-word' data-word='喜び'><ruby>喜<rt>よろこ</rt></ruby>び</span>だ。",
+  "japanese_text": "<ruby>冷<rt>ひ</rt></ruby>やしておいたビールを<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>から<ruby>取<rt>と</rt></ruby>り<ruby>出<rt>だ</rt></ruby>し、<ruby>飲<rt>の</rt></ruby>みながらゆっくり<ruby>食事<rt>しょくじ</rt></ruby>をする。これが<ruby>私<rt>わたし</rt></ruby>の<ruby><u>休日</u><rt>きゅうじつ</rt></ruby>の<ruby>喜<rt>よろこ</rt></ruby>びだ。",
   "english_translation": "Taking out a chilled beer from the refrigerator and slowly eating a meal while drinking. This is my holiday joy.",
   "annotated_words": [
     {
-      "meaning_en": "chill, cool",
-      "furigana": "ひやす",
-      "kanji": "冷やす"
-    },
-    {
-      "meaning_en": "take out",
-      "furigana": "とりだす",
-      "kanji": "取り出す"
-    },
-    {
-      "meaning_en": "holiday",
+      "word_id": "n3_1026",
+      "word_number": 1026,
+      "kanji": "休日",
       "furigana": "きゅうじつ",
-      "kanji": "休日"
-    },
-    {
-      "meaning_en": "joy",
-      "furigana": "よろこび",
-      "kanji": "喜び"
+      "meaning_en": "holiday"
     }
-  ]
+  ],
+  "story_number": 13,
+  "is_story": true,
+  "page_story": "42_0"
 }

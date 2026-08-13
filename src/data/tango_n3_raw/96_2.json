@@ -1,28 +1,31 @@
 {
-  "id": "96_2",
   "title": "Topic 6",
-  "japanese_text": "この<ruby>会社<rt>かいしゃ</rt></ruby>のアニメは、<ruby>前半<rt>ぜんはん</rt></ruby>がどんな<ruby>話<rt>はなし</rt></ruby>でも、<ruby>後半<rt>こうはん</rt></ruby>は<ruby>必<rt>かなら</rt></ruby>ず<ruby>宇宙<rt>うちゅう</rt></ruby>に<ruby>飛<rt>と</rt></ruby>び<ruby>出<rt>だ</rt></ruby>す。",
+  "japanese_text": "この<ruby>会社<rt>かいしゃ</rt></ruby>のアニメは、<ruby><u>前半</u><rt>ぜんはん</rt></ruby>がどんな<ruby>話<rt>はなし</rt></ruby>でも、<ruby><u>後半</u><rt>こうはん</rt></ruby>は<ruby>必<rt>かなら</rt></ruby>ず<ruby><u>宇宙</u><rt>うちゅう</rt></ruby>に<ruby>飛<rt>と</rt></ruby>び<ruby>出<rt>だ</rt></ruby>す。",
   "english_translation": "No matter what happens in the first half of the anime from that company, they always fly off to space in the second half.",
   "annotated_words": [
     {
+      "word_id": "n3_1280",
+      "word_number": 1280,
       "kanji": "前半",
       "furigana": "ぜんはん",
-      "meaning": "first half"
+      "meaning_en": "first half"
     },
     {
+      "word_id": "n3_1281",
+      "word_number": 1281,
       "kanji": "後半",
       "furigana": "こうはん",
-      "meaning": "second half"
+      "meaning_en": "second half"
     },
     {
+      "word_id": "n3_1282",
+      "word_number": 1282,
       "kanji": "宇宙",
       "furigana": "うちゅう",
-      "meaning": "space"
-    },
-    {
-      "kanji": "飛び出す",
-      "furigana": "とびだす",
-      "meaning": "launch out, jump out"
+      "meaning_en": "space"
     }
-  ]
+  ],
+  "story_number": 8,
+  "is_story": true,
+  "page_story": "96_2"
 }

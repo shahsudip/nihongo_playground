@@ -1,43 +1,31 @@
 {
-  "id": "124_1",
   "title": "Topic 8",
-  "japanese_text": "リーダーが<ruby>本気<rt>ほんき</rt></ruby>になった。<ruby>講習<rt>こうしゅう</rt></ruby>に<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>んで<ruby>競争力<rt>きょうそうりょく</rt></ruby>を<ruby>高<rt>たか</rt></ruby>めようとしている。",
+  "japanese_text": "<u>リーダー</u>が<ruby>本気<rt>ほんき</rt></ruby>になった。<ruby><u>講習</u><rt>こうしゅう</rt></ruby>に<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>んで<ruby><u>競争</u>力<rt>きょうそうりょく</rt></ruby>を<ruby>高<rt>たか</rt></ruby>めようとしている。",
   "english_translation": "The leader became serious. She is applying for courses and trying to increase her competitiveness.",
   "annotated_words": [
     {
+      "word_id": "n3_1417",
+      "word_number": 1417,
       "kanji": "リーダー",
       "furigana": "",
-      "meaning": "leader"
+      "meaning_en": "leader"
     },
     {
-      "kanji": "本気な",
-      "furigana": "ほんきな",
-      "meaning": "serious"
-    },
-    {
+      "word_id": "n3_1418",
+      "word_number": 1418,
       "kanji": "講習",
       "furigana": "こうしゅう",
-      "meaning": "course"
+      "meaning_en": "course"
     },
     {
-      "kanji": "申し込む",
-      "furigana": "もうしこむ",
-      "meaning": "apply"
-    },
-    {
-      "kanji": "申し込み",
-      "furigana": "もうしこみ",
-      "meaning": "application"
-    },
-    {
+      "word_id": "n3_1419",
+      "word_number": 1419,
       "kanji": "競争［する］",
       "furigana": "きょうそう",
-      "meaning": "competition, compete"
-    },
-    {
-      "kanji": "〜力",
-      "furigana": "〜りょく",
-      "meaning": "~ ability"
+      "meaning_en": "competition, compete"
     }
-  ]
+  ],
+  "story_number": 21,
+  "is_story": true,
+  "page_story": "124_1"
 }

@@ -1,28 +1,38 @@
 {
-  "id": "122_2",
   "title": "Topic 8",
-  "japanese_text": "<ruby>相撲<rt>すもう</rt></ruby>はルールが<ruby>簡単<rt>かんたん</rt></ruby>だ。それに<ruby>結果<rt>けっか</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かりやすいので、<ruby>人気<rt>にんき</rt></ruby>がある。",
+  "japanese_text": "<ruby><u>相撲</u><rt>すもう</rt></ruby>は<u>ルール</u>が<ruby>簡単<rt>かんたん</rt></ruby>だ。<u>それに</u><ruby><u>結果</u><rt>けっか</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かりやすいので、<ruby>人気<rt>にんき</rt></ruby>がある。",
   "english_translation": "The rules of sumo wrestling are simple. In addition, the results are easy to understand, so it's popular.",
   "annotated_words": [
     {
+      "word_id": "n3_1409",
+      "word_number": 1409,
       "kanji": "相撲",
       "furigana": "すもう",
-      "meaning": "sumo wrestling"
+      "meaning_en": "sumo wrestling"
     },
     {
+      "word_id": "n3_1410",
+      "word_number": 1410,
       "kanji": "ルール",
       "furigana": "",
-      "meaning": "rule"
+      "meaning_en": "rule"
     },
     {
+      "word_id": "n3_1411",
+      "word_number": 1411,
       "kanji": "それに",
       "furigana": "",
-      "meaning": "in addition"
+      "meaning_en": "in addition"
     },
     {
+      "word_id": "n3_1412",
+      "word_number": 1412,
       "kanji": "結果",
       "furigana": "けっか",
-      "meaning": "result"
+      "meaning_en": "result"
     }
-  ]
+  ],
+  "story_number": 18,
+  "is_story": true,
+  "page_story": "122_2"
 }

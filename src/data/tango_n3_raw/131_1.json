@@ -1,48 +1,52 @@
 {
-  "id": "131_1",
-  "title": "Topic 9",
-  "japanese_text": "<ruby>生物<rt>せいぶつ</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>で、<ruby>真<rt>ま</rt></ruby>っ<ruby>赤<rt>か</rt></ruby>な<ruby>羽<rt>はね</rt></ruby>に<ruby>黒<rt>くろ</rt></ruby>い<ruby>模様<rt>もよう</rt></ruby>がある<ruby>虫<rt>むし</rt></ruby>の<ruby>観察<rt>かんさつ</rt></ruby>をした。<ruby>虫<rt>むし</rt></ruby>は<ruby>苦手<rt>にがて</rt></ruby>だったが、いろんな<ruby>特徴<rt>とくちょう</rt></ruby>をノートにまとめる<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>面白<rt>おもしろ</rt></ruby>くて、いつの<ruby>間<rt>ま</rt></ruby>にか<ruby>好<rt>す</rt></ruby>きになっていた。",
+  "title": "Topic 9 動物 Animals",
+  "japanese_text": "<u><ruby>生物<rt>せいぶつ</rt></ruby></u>の<ruby>授業<rt>じゅぎょう</rt></ruby>で、<u><ruby>真<rt>ま</rt></ruby>っ<ruby>赤<rt>か</rt></ruby>な</u><ruby>羽<rt>はね</rt></ruby>に<ruby>黒<rt>くろ</rt></ruby>い<u><ruby>模様<rt>もよう</rt></ruby></u>がある<u><ruby>虫<rt>むし</rt></ruby></u>の<ruby>観察<rt>かんさつ</rt></ruby>をした。<ruby>虫<rt>むし</rt></ruby>は<ruby>苦手<rt>にがて</rt></ruby>だったが、いろんな<u><ruby>特徴<rt>とくちょう</rt></ruby></u>をノートにまとめる<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>面白<rt>おもしろ</rt></ruby>くて、いつの<ruby>間<rt>ま</rt></ruby>にか<ruby>好<rt>す</rt></ruby>きに<u>なって</u>いた。",
   "english_translation": "In biology class, we observed an insect that had deep red wings with a black pattern. I was no good with insects, but it was interesting to write down their various characteristics in our notes and I soon came to like them.",
   "annotated_words": [
     {
+      "word_id": "n3_0906",
+      "word_number": 906,
       "kanji": "生物",
       "furigana": "せいぶつ",
-      "meaning": "biology"
+      "meaning_en": "biology"
     },
     {
+      "word_id": "n3_0907",
+      "word_number": 907,
       "kanji": "真っ赤な",
       "furigana": "まっかな",
-      "meaning": "deep red"
+      "meaning_en": "deep red"
     },
     {
-      "kanji": "真っ青な",
-      "furigana": "まっさおな",
-      "meaning": "deep blue"
-    },
-    {
+      "word_id": "n3_0908",
+      "word_number": 908,
       "kanji": "模様",
       "furigana": "もよう",
-      "meaning": "pattern"
+      "meaning_en": "pattern"
     },
     {
-      "kanji": "水玉模様",
-      "furigana": "みずたまもよう",
-      "meaning": "polka dot"
-    },
-    {
+      "word_id": "n3_0909",
+      "word_number": 909,
       "kanji": "虫",
       "furigana": "むし",
-      "meaning": "insect"
+      "meaning_en": "insect"
     },
     {
+      "word_id": "n3_0910",
+      "word_number": 910,
       "kanji": "特徴",
       "furigana": "とくちょう",
-      "meaning": "characteristic"
+      "meaning_en": "characteristic"
     },
     {
+      "word_id": "n3_0911",
+      "word_number": 911,
       "kanji": "なる",
       "furigana": "",
-      "meaning": "become"
+      "meaning_en": "become"
     }
-  ]
+  ],
+  "story_number": 7,
+  "is_story": true,
+  "page_story": "131_1"
 }

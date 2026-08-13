@@ -1,38 +1,24 @@
 {
-  "id": "64_1",
   "title": "Topic 4",
-  "japanese_text": "カラーコンタクトの<ruby>新色<rt>しんしょく</rt></ruby><ruby>をオンラインショップ<rt></rt></ruby><ruby>限定<rt>げんてい</rt></ruby><ruby>で<rt></rt></ruby><ruby>売<rt>う</rt></ruby><ruby>り<rt></rt></ruby><ruby>出<rt>だ</rt></ruby><ruby>し<rt></rt></ruby><ruby>たところ、ＳＮＳで<rt></rt></ruby><ruby>話題<rt>わだい</rt></ruby><ruby>になって、<rt></rt></ruby><ruby>注文<rt>ちゅうもん</rt></ruby><ruby>が<rt></rt></ruby><ruby>何倍<rt>なんばい</rt></ruby><ruby>にも<rt></rt></ruby><ruby>増<rt>ふ</rt></ruby><ruby>えた。<rt></rt></ruby><ruby>間<rt>ま</rt></ruby><ruby>もなく<rt></rt></ruby><ruby>赤字<rt>あかじ</rt></ruby><ruby>から<rt></rt></ruby><ruby>回復<rt>かいふく</rt></ruby><ruby>するだろう。<rt></rt></ruby>",
+  "japanese_text": "カラーコンタクトの<ruby>新色<rt>しんしょく</rt></ruby><ruby>をオンライン<u>ショップ</u><rt></rt></ruby><ruby>限定<rt>げんてい</rt></ruby><ruby>で<rt></rt></ruby><ruby>売<rt>う</rt></ruby><ruby>り<rt></rt></ruby><ruby>出<rt>だ</rt></ruby><ruby>し<rt></rt></ruby><ruby>たところ、ＳＮＳで<rt></rt></ruby><ruby>話題<rt>わだい</rt></ruby><ruby>になって、<rt></rt></ruby><ruby>注文<rt>ちゅうもん</rt></ruby><ruby>が<rt></rt></ruby><ruby>何倍<rt>なんばい</rt></ruby><ruby>にも<rt></rt></ruby><ruby>増<rt>ふ</rt></ruby><ruby>えた。<rt></rt></ruby><ruby>間<rt>ま</rt></ruby><ruby>もなく<rt></rt></ruby><ruby><u>赤字</u><rt>あかじ</rt></ruby><ruby>から<rt></rt></ruby><ruby>回復<rt>かいふく</rt></ruby><ruby>するだろう。<rt></rt></ruby>",
   "english_translation": "When a new color of the color contacts that was available only on our online shop went on sale, it became a topic on social media, and the number of orders increased several times over. It will soon be recovered from the deficit.",
   "annotated_words": [
     {
-      "kanji": "コンタクト（レンズ）",
-      "furigana": "",
-      "meaning": "contact (lens)"
-    },
-    {
-      "kanji": "新〜",
-      "furigana": "しん〜",
-      "meaning": "new ~"
-    },
-    {
-      "kanji": "〜色",
-      "furigana": "〜しょく",
-      "meaning": "~ color"
-    },
-    {
+      "word_id": "n3_1110",
+      "word_number": 1110,
       "kanji": "ショップ",
       "furigana": "",
-      "meaning": "shop"
+      "meaning_en": "shop"
     },
     {
+      "word_id": "n3_1111",
+      "word_number": 1111,
       "kanji": "赤字",
       "furigana": "あかじ",
-      "meaning": "deficit, in the red"
-    },
-    {
-      "kanji": "黒字",
-      "furigana": "くろじ",
-      "meaning": "surplus, in the black"
+      "meaning_en": "deficit, in the red"
     }
-  ]
+  ],
+  "story_number": 5,
+  "is_story": true,
+  "page_story": "64_1"
 }

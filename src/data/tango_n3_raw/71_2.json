@@ -1,28 +1,31 @@
 {
-  "id": "71_2",
   "title": "Topic 4",
-  "japanese_text": "せっかくいいデザインのブーツがあったのに、<ruby>試着<rt>しちゃく</rt></ruby><ruby>するとファスナーが<rt></rt></ruby><ruby>閉<rt>し</rt></ruby><ruby>まらなかった。<rt></rt></ruby>",
+  "japanese_text": "せっかくいい<u>デザイン</u>の<u>ブーツ</u>があったのに、<ruby>試着<rt>しちゃく</rt></ruby><ruby>すると<u>ファスナー</u>が<rt></rt></ruby><ruby>閉<rt>し</rt></ruby><ruby>まらなかった。<rt></rt></ruby>",
   "english_translation": "Even though there were some boots with a nice design, the zipper wouldn't close when I tried them on.",
   "annotated_words": [
     {
+      "word_id": "n3_1148",
+      "word_number": 1148,
       "kanji": "デザイン",
       "furigana": "",
-      "meaning": "design, design"
+      "meaning_en": "design, design"
     },
     {
-      "kanji": "デザイナー",
-      "furigana": "",
-      "meaning": "designer"
-    },
-    {
+      "word_id": "n3_1149",
+      "word_number": 1149,
       "kanji": "ブーツ",
       "furigana": "",
-      "meaning": "boots"
+      "meaning_en": "boots"
     },
     {
+      "word_id": "n3_1150",
+      "word_number": 1150,
       "kanji": "ファスナー",
       "furigana": "",
-      "meaning": "zipper"
+      "meaning_en": "zipper"
     }
-  ]
+  ],
+  "story_number": 19,
+  "is_story": true,
+  "page_story": "71_2"
 }

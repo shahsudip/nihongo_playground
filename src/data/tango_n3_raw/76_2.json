@@ -1,28 +1,38 @@
 {
-  "id": "76_2",
   "title": "Topic 5",
-  "japanese_text": "このマイクはピンで<ruby>服<rt>ふく</rt></ruby><ruby>に<rt></rt></ruby><ruby>止<rt>と</rt></ruby><ruby>めて<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>います。このスイッチを<rt></rt></ruby><ruby>押<rt>お</rt></ruby><ruby>すと<rt></rt></ruby><ruby>電源<rt>でんげん</rt></ruby><ruby>が<rt></rt></ruby><ruby>入<rt>はい</rt></ruby><ruby>ります。あとは<rt></rt></ruby><ruby>普通<rt>ふつう</rt></ruby><ruby>に<rt></rt></ruby><ruby>話<rt>はな</rt></ruby><ruby>せば、<rt></rt></ruby><ruby>声<rt>こえ</rt></ruby><ruby>がマイクに<rt></rt></ruby><ruby>入<rt>はい</rt></ruby><ruby>ります。<rt></rt></ruby>",
+  "japanese_text": "この<u>マイク</u>は<u>ピン</u>で<ruby>服<rt>ふく</rt></ruby><ruby>に<rt></rt></ruby><ruby>止<rt>と</rt></ruby><ruby>めて<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>います。この<u>スイッチ</u>を<rt></rt></ruby><ruby>押<rt>お</rt></ruby><ruby>すと<rt></rt></ruby><ruby><u>電源</u><rt>でんげん</rt></ruby><ruby>が<rt></rt></ruby><ruby>入<rt>はい</rt></ruby><ruby>ります。あとは<rt></rt></ruby><ruby>普通<rt>ふつう</rt></ruby><ruby>に<rt></rt></ruby><ruby>話<rt>はな</rt></ruby><ruby>せば、<rt></rt></ruby><ruby>声<rt>こえ</rt></ruby><ruby>がマイクに<rt></rt></ruby><ruby>入<rt>はい</rt></ruby><ruby>ります。<rt></rt></ruby>",
   "english_translation": "This microphone is a pin microphone and is attached to clothing. Press this switch to turn on the power. After that, just speak normally, and your voice will be picked up by the microphone.",
   "annotated_words": [
     {
+      "word_id": "n3_1170",
+      "word_number": 1170,
       "kanji": "マイク",
       "furigana": "",
-      "meaning": "microphone"
+      "meaning_en": "microphone"
     },
     {
+      "word_id": "n3_1171",
+      "word_number": 1171,
       "kanji": "ピン",
       "furigana": "",
-      "meaning": "pin"
+      "meaning_en": "pin"
     },
     {
+      "word_id": "n3_1172",
+      "word_number": 1172,
       "kanji": "スイッチ",
       "furigana": "",
-      "meaning": "switch"
+      "meaning_en": "switch"
     },
     {
+      "word_id": "n3_1173",
+      "word_number": 1173,
       "kanji": "電源",
       "furigana": "でんげん",
-      "meaning": "power"
+      "meaning_en": "power"
     }
-  ]
+  ],
+  "story_number": 6,
+  "is_story": true,
+  "page_story": "76_2"
 }

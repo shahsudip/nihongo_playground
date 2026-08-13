@@ -1,23 +1,31 @@
 {
-  "id": "128_1",
-  "title": "Topic 9",
-  "japanese_text": "A：この<ruby>金属<rt>きんぞく</rt></ruby>の<ruby>棒<rt>ぼう</rt></ruby>は<ruby>何<rt>なに</rt></ruby>をするためのものですか。<br>B：ああ、これは<ruby>動物<rt>どうぶつ</rt></ruby>の<ruby>体重<rt>たいじゅう</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>するためのものですよ。<br>A：へえ〜、これで<ruby>測<rt>はか</rt></ruby>るんですね。<br>B：あとで<ruby>園長<rt>えんちょう</rt></ruby>に<ruby>許可<rt>きょか</rt></ruby>をもらったら、<ruby>試<rt>ため</rt></ruby>しに<ruby>使<rt>つか</rt></ruby>ってみましょうか。",
+  "title": "Topic 9 動物 Animals",
+  "japanese_text": "A：この<u><ruby>金属<rt>きんぞく</rt></ruby></u>の<ruby>棒<rt>ぼう</rt></ruby>は<ruby>何<rt>なに</rt></ruby>をするためのものですか。<br>B：ああ、これは<ruby>動物<rt>どうぶつ</rt></ruby>の<ruby>体重<rt>たいじゅう</rt></ruby>を<u><ruby>確認<rt>かくにん</rt></ruby>する</u>ためのものですよ。<br>A：へえ〜、これで<ruby>測<rt>はか</rt></ruby>るんですね。<br>B：あとで<ruby>園長<rt>えんちょう</rt></ruby>に<u><ruby>許可<rt>きょか</rt></ruby></u>をもらったら、<ruby>試<rt>ため</rt></ruby>しに<ruby>使<rt>つか</rt></ruby>ってみましょうか。",
   "english_translation": "A: What does this metal pole do? B: Oh, this is to check the weight of animals. A: Wow, you measure that with this. B: If we get permission from the head of the zoo later, why don't we try using it?",
   "annotated_words": [
     {
+      "word_id": "n3_0883",
+      "word_number": 883,
       "kanji": "金属",
       "furigana": "きんぞく",
-      "meaning": "metal"
+      "meaning_en": "metal"
     },
     {
+      "word_id": "n3_0884",
+      "word_number": 884,
       "kanji": "確認［する］",
       "furigana": "かくにん",
-      "meaning": "confirmation, confirm"
+      "meaning_en": "confirmation, confirm"
     },
     {
+      "word_id": "n3_0885",
+      "word_number": 885,
       "kanji": "許可［する］",
       "furigana": "きょか",
-      "meaning": "permission, permit"
+      "meaning_en": "permission, permit"
     }
-  ]
+  ],
+  "story_number": 1,
+  "is_story": true,
+  "page_story": "128_1"
 }

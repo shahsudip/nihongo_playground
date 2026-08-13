@@ -1,33 +1,17 @@
 {
-  "id": "65_2",
   "title": "Topic 4",
-  "japanese_text": "<ruby>Ａ：<rt></rt></ruby><ruby>腕<rt>うで</rt></ruby><ruby>の<rt></rt></ruby><ruby>毛<rt>け</rt></ruby><ruby>、<rt></rt></ruby><ruby>濃<rt>こ</rt></ruby><ruby>いね。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby>気<rt>き</rt></ruby><ruby>にしてるんだから<rt></rt></ruby><ruby>言<rt>い</rt></ruby><ruby>わないでよ。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：<rt></rt></ruby><ruby>腕<rt>うで</rt></ruby><ruby>の<rt></rt></ruby><ruby><u>毛</u><rt>け</rt></ruby><ruby>、<rt></rt></ruby><ruby>濃<rt>こ</rt></ruby><ruby>いね。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby>気<rt>き</rt></ruby><ruby>にしてるんだから<rt></rt></ruby><ruby>言<rt>い</rt></ruby><ruby>わないでよ。<rt></rt></ruby>",
   "english_translation": "A: Your arm hair sure is thick.\nB: Don't say that. I'm really self-conscious about it.",
   "annotated_words": [
     {
+      "word_id": "n3_1119",
+      "word_number": 1119,
       "kanji": "毛",
       "furigana": "け",
-      "meaning": "hair"
-    },
-    {
-      "kanji": "毛糸",
-      "furigana": "けいと",
-      "meaning": "woolen yarn"
-    },
-    {
-      "kanji": "濃い",
-      "furigana": "こい",
-      "meaning": "thick, rich"
-    },
-    {
-      "kanji": "薄い",
-      "furigana": "うすい",
-      "meaning": "thin"
-    },
-    {
-      "kanji": "気にする",
-      "furigana": "きにする",
-      "meaning": "be conscious, be concerned"
+      "meaning_en": "hair"
     }
-  ]
+  ],
+  "story_number": 8,
+  "is_story": true,
+  "page_story": "65_2"
 }

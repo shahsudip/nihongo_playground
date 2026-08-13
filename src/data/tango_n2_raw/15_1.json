@@ -3,7 +3,7 @@
   "story_number": 2,
   "title": "Topic 1 食事",
   "page_story": "15_1",
-  "japanese_text": "日本の米は、品種によって<u>粒</u>の大きさ、甘<u>み</u>、食感などが異なる。\n300gの少量<u>パック</u>も売っているので、いろいろ試してみるのもいいだろう。保存するときは、温かいうちに<u>1人前</u>ずつ<u>ラップ</u>で包むのが大切だ。<u>冷めたら</u>さらに<u>アルミホイル</u>で包んで<u>冷凍庫</u>に入れれば、おいしいまま冷凍できる。",
+  "japanese_text": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>米<rt>こめ</rt></ruby>は、<ruby>品種<rt>ひんしゅ</rt></ruby>によって<u>粒</u>の<ruby>大<rt>おお</rt></ruby>きさ、<ruby>甘<rt>あま</rt></ruby><u>み</u>、<ruby>食感<rt>しょっかん</rt></ruby>などが<ruby>異<rt>こと</rt></ruby>なる。\\n300gの<ruby>少量<rt>しょうりょう</rt></ruby><u>パック</u>も<ruby>売<rt>う</rt></ruby>っているので、いろいろ<ruby>試<rt>ため</rt></ruby>してみるのもいいだろう。<ruby>保存<rt>ほぞん</rt></ruby>するときは、<ruby>温<rt>あたた</rt></ruby>かいうちに<u>1人前</u>ずつ<u>ラップ</u>で<ruby>包<rt>つつ</rt></ruby>むのが<ruby>大切<rt>たいせつ</rt></ruby>だ。<u>冷めたら</u>さらに<u>アルミホイル</u>で<ruby>包<rt>つつ</rt></ruby>んで<ruby>冷凍庫<rt>れいとうこ</rt></ruby>に<ruby>入<rt>い</rt></ruby>れれば、おいしいまま<ruby>冷凍<rt>れいとう</rt></ruby>できる。",
   "english_translation": "Japanese rice varies in grain size, sweetness, and texture, depending on the variety. Small 300 gram packs are available, so it's a good idea to try different varieties. When storing rice, it's important to wrap it in single portions in plastic wrap while it's still warm. After they cool, wrap them in aluminum foil and put them in the freezer to freeze them while they are still full of flavor.",
   "annotated_words": [
     {
@@ -47,13 +47,6 @@
       "kanji": "冷める",
       "furigana": "さめる",
       "meaning_en": "cool down"
-    },
-    {
-      "word_id": "n2_0010",
-      "word_number": 10,
-      "kanji": "冷ます",
-      "furigana": "さます",
-      "meaning_en": "cool (something) down"
     },
     {
       "word_id": "n2_0011",

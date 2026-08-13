@@ -1,48 +1,52 @@
 {
-  "id": "107_1",
   "title": "Topic 7",
-  "japanese_text": "<ruby>親戚<rt>しんせき</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>を<ruby>訪問<rt>ほうもん</rt></ruby>したら、おじさんがいた。あいさつをし、「ところで、おばさんは」と<ruby>聞<rt>き</rt></ruby>くと、<ruby>別々<rt>べつべつ</rt></ruby>に<ruby>暮<rt>く</rt></ruby>らしているらしい。<ruby>今年<rt>ことし</rt></ruby>の<ruby>年賀状<rt>ねんがじょう</rt></ruby>におばさんの<ruby>名前<rt>なまえ</rt></ruby>がなかった。",
+  "japanese_text": "<ruby><u>親戚</u><rt>しんせき</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>を<ruby><u>訪問</u><rt>ほうもん</rt></ruby>したら、<u>おじさん</u>がいた。あいさつをし、「<u>ところで</u>、<u>おばさん</u>は」と<ruby>聞<rt>き</rt></ruby>くと、<ruby>別々<rt>べつべつ</rt></ruby>に<ruby>暮<rt>く</rt></ruby>らしているらしい。<ruby>今年<rt>ことし</rt></ruby>の<ruby><u>年賀状</u><rt>ねんがじょう</rt></ruby>におばさんの<ruby>名前<rt>なまえ</rt></ruby>がなかった。",
   "english_translation": "I went to visit a relative's house, and my uncle was there. I greeted him and asked \"By the way, where's my aunt?,\" and it seems that they're now living separately. Speaking of which, this year's New Year's card didn't have my aunt's name on it.",
   "annotated_words": [
     {
+      "word_id": "n3_1329",
+      "word_number": 1329,
       "kanji": "親戚",
       "furigana": "しんせき",
-      "meaning": "relative"
+      "meaning_en": "relative"
     },
     {
+      "word_id": "n3_1330",
+      "word_number": 1330,
       "kanji": "訪問［する］",
       "furigana": "ほうもん",
-      "meaning": "visiting, visit"
+      "meaning_en": "visiting, visit"
     },
     {
+      "word_id": "n3_1331",
+      "word_number": 1331,
       "kanji": "おじ（さん）",
       "furigana": "",
-      "meaning": "uncle"
+      "meaning_en": "uncle"
     },
     {
+      "word_id": "n3_1332",
+      "word_number": 1332,
       "kanji": "ところで",
       "furigana": "",
-      "meaning": "by the way"
+      "meaning_en": "by the way"
     },
     {
+      "word_id": "n3_1333",
+      "word_number": 1333,
       "kanji": "おば（さん）",
       "furigana": "",
-      "meaning": "aunt"
+      "meaning_en": "aunt"
     },
     {
-      "kanji": "別々に",
-      "furigana": "べつべつに",
-      "meaning": "separately"
-    },
-    {
-      "kanji": "そういえば",
-      "furigana": "",
-      "meaning": "speaking of which"
-    },
-    {
+      "word_id": "n3_1334",
+      "word_number": 1334,
       "kanji": "年賀状",
       "furigana": "ねんがじょう",
-      "meaning": "New Year's card"
+      "meaning_en": "New Year's card"
     }
-  ]
+  ],
+  "story_number": 3,
+  "is_story": true,
+  "page_story": "107_1"
 }

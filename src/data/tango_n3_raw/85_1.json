@@ -1,28 +1,24 @@
 {
-  "id": "85_1",
   "title": "Topic 5",
-  "japanese_text": "<ruby>個人情報<rt>こじんじょうほう</rt></ruby><ruby>を<rt></rt></ruby><ruby>送信<rt>そうしん</rt></ruby><ruby>するアプリもあるので、インストール<rt></rt></ruby><ruby>前<rt>まえ</rt></ruby><ruby>には<rt></rt></ruby><ruby>注意<rt>ちゅうい</rt></ruby><ruby>が<rt></rt></ruby><ruby>必要<rt>ひつよう</rt></ruby><ruby>だ。<rt></rt></ruby>",
+  "japanese_text": "<ruby><u>個人情報</u><rt>こじんじょうほう</rt></ruby><ruby>を<rt></rt></ruby><ruby><u>送信</u><rt>そうしん</rt></ruby><ruby>するアプリもあるので、インストール<rt></rt></ruby><ruby>前<rt>まえ</rt></ruby><ruby>には<rt></rt></ruby><ruby>注意<rt>ちゅうい</rt></ruby><ruby>が<rt></rt></ruby><ruby>必要<rt>ひつよう</rt></ruby><ruby>だ。<rt></rt></ruby>",
   "english_translation": "There are applications that also add strange programs without permission when installing them. In addition, there are also apps that send personal information without permission, so take care before installing them.",
   "annotated_words": [
     {
+      "word_id": "n3_1230",
+      "word_number": 1230,
       "kanji": "個人情報",
       "furigana": "こじんじょうほう",
-      "meaning": "personal information"
+      "meaning_en": "personal information"
     },
     {
-      "kanji": "情報",
-      "furigana": "じょうほう",
-      "meaning": "information"
-    },
-    {
+      "word_id": "n3_1231",
+      "word_number": 1231,
       "kanji": "送信",
       "furigana": "そうしん",
-      "meaning": "transmission, transmit"
-    },
-    {
-      "kanji": "受信",
-      "furigana": "じゅしん",
-      "meaning": "receiving, receive"
+      "meaning_en": "transmission, transmit"
     }
-  ]
+  ],
+  "story_number": 22,
+  "is_story": true,
+  "page_story": "85_1"
 }

@@ -1,43 +1,38 @@
 {
-  "id": "109_1",
   "title": "Topic 7",
-  "japanese_text": "<ruby>田中先生<rt>たなかせんせい</rt></ruby>の<ruby>研究室<rt>けんきゅうしつ</rt></ruby>をノックしたが、<ruby>留守<rt>るす</rt></ruby>のようだ。<ruby>今日<rt>きょう</rt></ruby>は<ruby>大学<rt>だいがく</rt></ruby>をお<ruby>休<rt>やす</rt></ruby>みになっているのかもしれない。<ruby>伝言<rt>でんごん</rt></ruby>メモに、「お<ruby>目<rt>め</rt></ruby>にかかって、<ruby>先生<rt>せんせい</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>を<ruby>拝見<rt>はいけん</rt></ruby>したいと<ruby>思<rt>おも</rt></ruby>っています。<ruby>明日<rt>あす</rt></ruby>また<ruby>訪<rt>たず</rt></ruby>ねます」と<ruby>書<rt>か</rt></ruby>いた。<ruby>氏名<rt>しめい</rt></ruby>を<ruby>書<rt>か</rt></ruby>くのも<ruby>忘<rt>わす</rt></ruby>れなかった。",
+  "japanese_text": "<ruby>田中先生<rt>たなかせんせい</rt></ruby>の<ruby>研究室<rt>けんきゅうしつ</rt></ruby>を<u>ノック</u>したが、<ruby>留守<rt>るす</rt></ruby>のようだ。<ruby>今日<rt>きょう</rt></ruby>は<ruby>大学<rt>だいがく</rt></ruby>をお<ruby>休<rt>やす</rt></ruby>みになっているのかもしれない。<ruby><u>伝言</u><rt>でんごん</rt></ruby>メモに、「お<ruby>目<rt>め</rt></ruby>にかかって、<ruby>先生<rt>せんせい</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>を<ruby><u>拝見</u><rt>はいけん</rt></ruby>したいと<ruby>思<rt>おも</rt></ruby>っています。<ruby>明日<rt>あす</rt></ruby>また<ruby>訪<rt>たず</rt></ruby>ねます」と<ruby>書<rt>か</rt></ruby>いた。<ruby><u>氏名</u><rt>しめい</rt></ruby>を<ruby>書<rt>か</rt></ruby>くのも<ruby>忘<rt>わす</rt></ruby>れなかった。",
   "english_translation": "I knocked (on the door of) Tanaka-sensei's laboratory, but it seemed that no one was there. He may be absent from university today. On a memo, I wrote, \"I would like to meet with you and see your book. I will come by again tomorrow.\" I also did not forget to write my name.",
   "annotated_words": [
     {
+      "word_id": "n3_1344",
+      "word_number": 1344,
       "kanji": "ノック［する］",
       "furigana": "",
-      "meaning": "knocking, knock"
+      "meaning_en": "knocking, knock"
     },
     {
-      "kanji": "お休みになる",
-      "furigana": "おやすみになる",
-      "meaning": "be absent (honorific)"
-    },
-    {
+      "word_id": "n3_1345",
+      "word_number": 1345,
       "kanji": "伝言［する］",
       "furigana": "でんごん",
-      "meaning": "message, send a message"
+      "meaning_en": "message, send a message"
     },
     {
-      "kanji": "お目にかかる",
-      "furigana": "おめにかかる",
-      "meaning": "see, meet (humble)"
-    },
-    {
+      "word_id": "n3_1346",
+      "word_number": 1346,
       "kanji": "拝見［する］",
       "furigana": "はいけん",
-      "meaning": "seeing, see (humble)"
+      "meaning_en": "seeing, see (humble)"
     },
     {
-      "kanji": "訪ねる",
-      "furigana": "たずねる",
-      "meaning": "visit"
-    },
-    {
+      "word_id": "n3_1347",
+      "word_number": 1347,
       "kanji": "氏名",
       "furigana": "しめい",
-      "meaning": "full name"
+      "meaning_en": "full name"
     }
-  ]
+  ],
+  "story_number": 6,
+  "is_story": true,
+  "page_story": "109_1"
 }

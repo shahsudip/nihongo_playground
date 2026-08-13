@@ -1,28 +1,31 @@
 {
-  "id": "99_1",
   "title": "Topic 6",
-  "japanese_text": "Ａ：この<ruby>映画<rt>えいが</rt></ruby>は、<ruby>観客<rt>かんきゃく</rt></ruby>にカードのプレゼントがあるから、４<ruby>回見<rt>かいみ</rt></ruby>に<ruby>行<rt>い</rt></ruby>かないと。\nＢ：そんなに<ruby>見<rt>み</rt></ruby>たら<ruby>飽<rt>あ</rt></ruby>きない？\nＡ：カードだけもらう<ruby>人<rt>ひと</rt></ruby>もいるけど、<ruby>私<rt>わたし</rt></ruby>は<ruby>見<rt>み</rt></ruby>る。<ruby>最初<rt>さいしょ</rt></ruby>、あれ？って<ruby>思<rt>おも</rt></ruby>ったところが、２<ruby>回目<rt>かいめ</rt></ruby>に<ruby>見<rt>み</rt></ruby>ると<ruby>意味<rt>いみ</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かったりするから。",
+  "japanese_text": "Ａ：この<ruby>映画<rt>えいが</rt></ruby>は、<ruby><u>観客</u><rt>かんきゃく</rt></ruby>に<u>カード</u>のプレゼントがあるから、４<ruby>回見<rt>かいみ</rt></ruby>に<ruby>行<rt>い</rt></ruby>かないと。\nＢ：そんなに<ruby>見<rt>み</rt></ruby>たら<ruby>飽<rt>あ</rt></ruby>きない？\nＡ：カードだけもらう<ruby>人<rt>ひと</rt></ruby>もいるけど、<ruby>私<rt>わたし</rt></ruby>は<ruby>見<rt>み</rt></ruby>る。<ruby>最初<rt>さいしょ</rt></ruby>、<u>あれ？</u>って<ruby>思<rt>おも</rt></ruby>ったところが、２<ruby>回目<rt>かいめ</rt></ruby>に<ruby>見<rt>み</rt></ruby>ると<ruby>意味<rt>いみ</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かったりするから。",
   "english_translation": "A: This movie has a card present for the audience, so I have to go four times.\nB: Won't you get tired of watching it so much?\nA: Some people get only the cards, but I watch it. I can better understand some of the things that made me go \"huh?\" the first time I watched it when watching it for the second time.",
   "annotated_words": [
     {
+      "word_id": "n3_1300",
+      "word_number": 1300,
       "kanji": "観客",
       "furigana": "かんきゃく",
-      "meaning": "audience"
+      "meaning_en": "audience"
     },
     {
+      "word_id": "n3_1301",
+      "word_number": 1301,
       "kanji": "カード",
       "furigana": "",
-      "meaning": "card"
+      "meaning_en": "card"
     },
     {
-      "kanji": "飽きる",
-      "furigana": "あきる",
-      "meaning": "get tired"
-    },
-    {
+      "word_id": "n3_1302",
+      "word_number": 1302,
       "kanji": "あれ？",
       "furigana": "",
-      "meaning": "Huh?"
+      "meaning_en": "Huh?"
     }
-  ]
+  ],
+  "story_number": 13,
+  "is_story": true,
+  "page_story": "99_1"
 }

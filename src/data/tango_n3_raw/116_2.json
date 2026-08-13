@@ -1,33 +1,31 @@
 {
-  "id": "116_2",
   "title": "Topic 8",
-  "japanese_text": "どんなに<ruby>才能<rt>さいのう</rt></ruby>がある<ruby>選手<rt>せんしゅ</rt></ruby>でも、トレーニングを<ruby>続<rt>つづ</rt></ruby>けなければ、<ruby>記録<rt>きろく</rt></ruby>を<ruby>伸<rt>の</rt></ruby>ばすことはできない。",
+  "japanese_text": "どんなに<ruby><u>才能</u><rt>さいのう</rt></ruby>がある<ruby>選手<rt>せんしゅ</rt></ruby>でも、<u>トレーニング</u>を<ruby>続<rt>つづ</rt></ruby>けなければ、<ruby><u>記録</u><rt>きろく</rt></ruby>を<ruby>伸<rt>の</rt></ruby>ばすことはできない。",
   "english_translation": "No matter how talented athletes may be, if they do not continue training, they won't be able to improve their records.",
   "annotated_words": [
     {
+      "word_id": "n3_1369",
+      "word_number": 1369,
       "kanji": "才能",
       "furigana": "さいのう",
-      "meaning": "talent"
+      "meaning_en": "talent"
     },
     {
+      "word_id": "n3_1370",
+      "word_number": 1370,
       "kanji": "トレーニング［する］",
       "furigana": "",
-      "meaning": "training, train"
+      "meaning_en": "training, train"
     },
     {
+      "word_id": "n3_1371",
+      "word_number": 1371,
       "kanji": "記録［する］",
       "furigana": "きろく",
-      "meaning": "record, record"
-    },
-    {
-      "kanji": "伸ばす",
-      "furigana": "のばす",
-      "meaning": "improve, extend"
-    },
-    {
-      "kanji": "伸びる",
-      "furigana": "のびる",
-      "meaning": "be extended, be stretched"
+      "meaning_en": "record, record"
     }
-  ]
+  ],
+  "story_number": 6,
+  "is_story": true,
+  "page_story": "116_2"
 }

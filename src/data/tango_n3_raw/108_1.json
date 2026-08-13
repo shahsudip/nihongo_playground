@@ -1,48 +1,45 @@
 {
-  "id": "108_1",
   "title": "Topic 7",
-  "japanese_text": "<ruby>長女<rt>ちょうじょ</rt></ruby>は<ruby>生意気<rt>なまいき</rt></ruby>だが、<ruby>目上<rt>めうえ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>に<ruby>会<rt>あ</rt></ruby>うときちんとおじぎする。それが<ruby>長所<rt>ちょうしょ</rt></ruby>だ。",
+  "japanese_text": "<ruby><u>長女</u><rt>ちょうじょ</rt></ruby>は<ruby><u>生意気<rt>な</u>まいき</rt></ruby>だが、<ruby><u>目上</u><rt>めうえ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>に<ruby>会<rt>あ</rt></ruby>うときちんと<u>おじぎ</u>する。それが<ruby><u>長所</u><rt>ちょうしょ</rt></ruby>だ。",
   "english_translation": "My eldest daughter is sassy, but when meeting older people, she bows. That's her strong point.",
   "annotated_words": [
     {
+      "word_id": "n3_1335",
+      "word_number": 1335,
       "kanji": "長女",
       "furigana": "ちょうじょ",
-      "meaning": "eldest daughter"
+      "meaning_en": "eldest daughter"
     },
     {
-      "kanji": "次女",
-      "furigana": "じじょ",
-      "meaning": "second daughter"
-    },
-    {
+      "word_id": "n3_1336",
+      "word_number": 1336,
       "kanji": "生意気な",
       "furigana": "なまいきな",
-      "meaning": "sassy"
+      "meaning_en": "sassy"
     },
     {
+      "word_id": "n3_1337",
+      "word_number": 1337,
       "kanji": "目上",
       "furigana": "めうえ",
-      "meaning": "older (people), elder"
+      "meaning_en": "older (people), elder"
     },
     {
-      "kanji": "目下",
-      "furigana": "めした",
-      "meaning": "younger (people), junior"
-    },
-    {
+      "word_id": "n3_1338",
+      "word_number": 1338,
       "kanji": "おじぎ［する］",
       "furigana": "",
-      "meaning": "bowing, bow"
+      "meaning_en": "bowing, bow"
     },
     {
+      "word_id": "n3_1339",
+      "word_number": 1339,
       "kanji": "長所",
       "furigana": "ちょうしょ",
-      "meaning": "strong point"
-    },
-    {
-      "kanji": "短所",
-      "furigana": "たんしょ",
-      "meaning": "weak point"
+      "meaning_en": "strong point"
     }
-  ]
+  ],
+  "story_number": 4,
+  "is_story": true,
+  "page_story": "108_1"
 }

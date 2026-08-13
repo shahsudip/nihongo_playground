@@ -96,6 +96,17 @@ const LevelSelectionPage = () => {
             </h2>
           </Card>
         </Link>
+
+        {level?.toLowerCase() === 'n3' && (
+          <Link to={`/levels/${level}/conversations`} className="block group">
+            <Card className="h-full flex flex-col items-center justify-center py-8 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-blue-500/50 bg-blue-500/5 border-blue-500/20">
+              <h2 className="text-xl font-bold text-blue-600 group-hover:text-blue-500 transition-colors flex flex-col items-center gap-2">
+                <span className="text-3xl">🗣️</span>
+                Conversations
+              </h2>
+            </Card>
+          </Link>
+        )}
       </div>
     </div>
   );

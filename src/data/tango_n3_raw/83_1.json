@@ -1,33 +1,38 @@
 {
-  "id": "83_1",
   "title": "Topic 5",
-  "japanese_text": "<ruby>デジタル<rt></rt></ruby><ruby>技術<rt>ぎじゅつ</rt></ruby><ruby>の<rt></rt></ruby><ruby>発達<rt>はったつ</rt></ruby><ruby>によって、スマートフォンで<rt></rt></ruby><ruby>簡単<rt>かんたん</rt></ruby><ruby>に<rt></rt></ruby><ruby>録音<rt>ろくおん</rt></ruby><ruby>したり<rt></rt></ruby><ruby>撮影<rt>さつえい</rt></ruby><ruby>したりできるようになった。<rt></rt></ruby>",
+  "japanese_text": "<ruby><u>デジタル</u><rt></rt></ruby><ruby><u>技術</u><rt>ぎじゅつ</rt></ruby><ruby>の<rt></rt></ruby><ruby>発達<rt>はったつ</rt></ruby><ruby>によって、スマートフォンで<rt></rt></ruby><ruby>簡単<rt>かんたん</rt></ruby><ruby>に<rt></rt></ruby><ruby><u>録音</u><rt>ろくおん</rt></ruby><ruby>したり<rt></rt></ruby><ruby><u>撮影</u><rt>さつえい</rt></ruby><ruby>したりできるようになった。<rt></rt></ruby>",
   "english_translation": "The development of digital technology has made it easy to record sound or video with smartphones.",
   "annotated_words": [
     {
+      "word_id": "n3_1217",
+      "word_number": 1217,
       "kanji": "デジタル",
       "furigana": "",
-      "meaning": "digital"
+      "meaning_en": "digital"
     },
     {
-      "kanji": "アナログ",
-      "furigana": "",
-      "meaning": "analog"
-    },
-    {
+      "word_id": "n3_1218",
+      "word_number": 1218,
       "kanji": "技術",
       "furigana": "ぎじゅつ",
-      "meaning": "technology"
+      "meaning_en": "technology"
     },
     {
+      "word_id": "n3_1219",
+      "word_number": 1219,
       "kanji": "録音",
       "furigana": "ろくおん",
-      "meaning": "recording, record"
+      "meaning_en": "recording, record"
     },
     {
+      "word_id": "n3_1220",
+      "word_number": 1220,
       "kanji": "撮影",
       "furigana": "さつえい",
-      "meaning": "filming, film"
+      "meaning_en": "filming, film"
     }
-  ]
+  ],
+  "story_number": 18,
+  "is_story": true,
+  "page_story": "83_1"
 }

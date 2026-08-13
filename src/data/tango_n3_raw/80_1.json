@@ -1,48 +1,45 @@
 {
-  "id": "80_1",
   "title": "Topic 5",
-  "japanese_text": "<ruby>最近<rt>さいきん</rt></ruby><ruby>の<rt></rt></ruby><ruby>翻訳<rt>ほんやく</rt></ruby><ruby>アプリは<rt></rt></ruby><ruby>音声入力<rt>おんせいにゅうりょく</rt></ruby><ruby>で<rt></rt></ruby><ruby>話<rt>はな</rt></ruby><ruby>した<rt></rt></ruby><ruby>言葉<rt>ことば</rt></ruby><ruby>を<rt></rt></ruby><ruby>次々<rt>つぎつぎ</rt></ruby><ruby>と<rt></rt></ruby><ruby>訳<rt>やく</rt></ruby><ruby>してくれ<rt></rt></ruby><ruby>る。しかも、よく<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>う<rt></rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby><ruby>は<rt></rt></ruby><ruby>保存<rt>ほぞん</rt></ruby><ruby>できる。これで<rt></rt></ruby><ruby>無料<rt>むりょう</rt></ruby><ruby>というの<rt></rt></ruby><ruby>が<rt></rt></ruby><ruby>信<rt>しん</rt></ruby><ruby>じられない。<rt></rt></ruby>",
+  "japanese_text": "<ruby>最近<rt>さいきん</rt></ruby><ruby>の<rt></rt></ruby><ruby><u>翻訳</u><rt>ほんやく</rt></ruby><ruby>アプリは<rt></rt></ruby><ruby><u>音声</u>入力<rt>おんせいにゅうりょく</rt></ruby><ruby>で<rt></rt></ruby><ruby>話<rt>はな</rt></ruby><ruby>した<rt></rt></ruby><ruby>言葉<rt>ことば</rt></ruby><ruby>を<rt></rt></ruby><ruby>次々<rt>つぎつぎ</rt></ruby><ruby>と<rt></rt></ruby><ruby><u>訳</u><rt>やく</rt></ruby><ruby>してくれ<rt></rt></ruby><ruby>る。しかも、よく<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>う<rt></rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby><ruby>は<rt></rt></ruby><ruby><u>保存</u><rt>ほぞん</rt></ruby><ruby>できる。これで<rt></rt></ruby><ruby><u>無料</u><rt>むりょう</rt></ruby><ruby>というの<rt></rt></ruby><ruby>が<rt></rt></ruby><ruby>信<rt>しん</rt></ruby><ruby>じられない。<rt></rt></ruby>",
   "english_translation": "Recent translation apps can continuously translate the words spoken into them. Moreover, often-used expressions can be saved. I can't believe something like this is free.",
   "annotated_words": [
     {
+      "word_id": "n3_1194",
+      "word_number": 1194,
       "kanji": "翻訳",
       "furigana": "ほんやく",
-      "meaning": "translation, translate"
+      "meaning_en": "translation, translate"
     },
     {
+      "word_id": "n3_1195",
+      "word_number": 1195,
       "kanji": "音声",
       "furigana": "おんせい",
-      "meaning": "voice"
+      "meaning_en": "voice"
     },
     {
-      "kanji": "次々（と）",
-      "furigana": "つぎつぎ（と）",
-      "meaning": "continuously"
-    },
-    {
-      "kanji": "訳す",
-      "furigana": "やくす",
-      "meaning": "translate"
-    },
-    {
+      "word_id": "n3_1196",
+      "word_number": 1196,
       "kanji": "訳",
       "furigana": "やく",
-      "meaning": "translation"
+      "meaning_en": "translation"
     },
     {
+      "word_id": "n3_1197",
+      "word_number": 1197,
       "kanji": "保存",
       "furigana": "ほぞん",
-      "meaning": "saving, save"
+      "meaning_en": "saving, save"
     },
     {
+      "word_id": "n3_1198",
+      "word_number": 1198,
       "kanji": "無料",
       "furigana": "むりょう",
-      "meaning": "free"
-    },
-    {
-      "kanji": "有料",
-      "furigana": "ゆうりょう",
-      "meaning": "paid, not free"
+      "meaning_en": "free"
     }
-  ]
+  ],
+  "story_number": 13,
+  "is_story": true,
+  "page_story": "80_1"
 }

@@ -1,38 +1,45 @@
 {
-  "id": "119_2",
   "title": "Topic 8",
-  "japanese_text": "マラソン<ruby>選手<rt>せんしゅ</rt></ruby>が１<ruby>着<rt>ちゃく</rt></ruby>でゴールする<ruby>姿<rt>すがた</rt></ruby>を<ruby>見<rt>み</rt></ruby>て<ruby>感動<rt>かんどう</rt></ruby>した。たまたま<ruby>録画<rt>ろくが</rt></ruby>していたので<ruby>何度<rt>なんど</rt></ruby>も<ruby>見<rt>み</rt></ruby>た。",
+  "japanese_text": "マラソン<ruby>選手<rt>せんしゅ</rt></ruby>が１<ruby>着<rt>ちゃく</rt></ruby>で<u>ゴール</u>する<ruby><u>姿</u><rt>すがた</rt></ruby>を<ruby>見<rt>み</rt></ruby>て<ruby><u>感動</u><rt>かんどう</rt></ruby>した。<u>たまたま</u><ruby><u>録画</u><rt>ろくが</rt></ruby>していたので<ruby>何度<rt>なんど</rt></ruby>も<ruby>見<rt>み</rt></ruby>た。",
   "english_translation": "I was moved seeing the marathon runner cross the goal in first place. I just happened to record it, so I watched it again and again.",
   "annotated_words": [
     {
-      "kanji": "〜着",
-      "furigana": "〜ちゃく",
-      "meaning": "~ place"
-    },
-    {
+      "word_id": "n3_1386",
+      "word_number": 1386,
       "kanji": "ゴール［する］",
       "furigana": "",
-      "meaning": "goal, score a goal"
+      "meaning_en": "goal, score a goal"
     },
     {
+      "word_id": "n3_1387",
+      "word_number": 1387,
       "kanji": "姿",
       "furigana": "すがた",
-      "meaning": "appearance"
+      "meaning_en": "appearance"
     },
     {
+      "word_id": "n3_1388",
+      "word_number": 1388,
       "kanji": "感動［する］",
       "furigana": "かんどう",
-      "meaning": "being moved, be moved"
+      "meaning_en": "being moved, be moved"
     },
     {
+      "word_id": "n3_1389",
+      "word_number": 1389,
       "kanji": "たまたま",
       "furigana": "",
-      "meaning": "just happened to"
+      "meaning_en": "just happened to"
     },
     {
+      "word_id": "n3_1390",
+      "word_number": 1390,
       "kanji": "録画［する］",
       "furigana": "ろくが",
-      "meaning": "recording, record"
+      "meaning_en": "recording, record"
     }
-  ]
+  ],
+  "story_number": 12,
+  "is_story": true,
+  "page_story": "119_2"
 }

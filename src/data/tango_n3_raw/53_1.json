@@ -1,28 +1,24 @@
 {
-  "id": "53_1",
   "title": "Topic 3",
-  "japanese_text": "<ruby>自動販売機<rt>じどうはんばいき</rt></ruby><ruby>でジュースを<rt></rt></ruby><ruby>買<rt>か</rt></ruby><ruby>おうと<rt></rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>ったのに、<rt></rt></ruby><ruby>お<rt></rt></ruby><ruby>札<rt>さつ</rt></ruby><ruby>が<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>えなかっ<rt></rt></ruby><ruby>た。<rt></rt></ruby><ruby>小銭<rt>こぜに</rt></ruby><ruby>だとあと<rt></rt></ruby>５０<ruby>円<rt>えん</rt></ruby><ruby>足<rt>た</rt></ruby><ruby>りない。<rt></rt></ruby><ruby>諦<rt>あきら</rt></ruby><ruby>めて<rt></rt></ruby><ruby>他<rt>ほか</rt></ruby><ruby>の<rt></rt></ruby><ruby>自動販売機<rt>じどうはんばいき</rt></ruby><ruby>を<rt></rt></ruby><ruby>探<rt>さが</rt></ruby><ruby>したが、<rt></rt></ruby>１００００<ruby>円札<rt>えんさつ</rt></ruby><ruby>が<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>えるのはなかった。<rt></rt></ruby>",
+  "japanese_text": "<ruby><u>自動販売機</u><rt>じどうはんばいき</rt></ruby><ruby>でジュースを<rt></rt></ruby><ruby>買<rt>か</rt></ruby><ruby>おうと<rt></rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>ったのに、<rt></rt></ruby><ruby><u>お<rt></rt></ruby><ruby>札</u><rt>さつ</rt></ruby><ruby>が<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>えなかっ<rt></rt></ruby><ruby>た。<rt></rt></ruby><ruby>小銭<rt>こぜに</rt></ruby><ruby>だとあと<rt></rt></ruby>５０<ruby>円<rt>えん</rt></ruby><ruby>足<rt>た</rt></ruby><ruby>りない。<rt></rt></ruby><ruby>諦<rt>あきら</rt></ruby><ruby>めて<rt></rt></ruby><ruby>他<rt>ほか</rt></ruby><ruby>の<rt></rt></ruby><ruby>自動販売機<rt>じどうはんばいき</rt></ruby><ruby>を<rt></rt></ruby><ruby>探<rt>さが</rt></ruby><ruby>したが、<rt></rt></ruby>１００００<ruby>円札<rt>えんさつ</rt></ruby><ruby>が<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>えるのはなかった。<rt></rt></ruby>",
   "english_translation": "I wanted to buy juice at a vending machine, but I couldn't use bills. If I have to only pay in change, I'll be 50 yen short. I gave up and looked for another vending machine, but there were none that take 10,000-yen bills.",
   "annotated_words": [
     {
+      "word_id": "n3_1065",
+      "word_number": 1065,
       "kanji": "自動販売機",
       "furigana": "じどうはんばいき",
-      "meaning": "vending machine"
+      "meaning_en": "vending machine"
     },
     {
+      "word_id": "n3_1066",
+      "word_number": 1066,
       "kanji": "（お）札",
       "furigana": "（お）さつ",
-      "meaning": "(monetary) bill"
-    },
-    {
-      "kanji": "足りる",
-      "furigana": "たりる",
-      "meaning": "be enough"
-    },
-    {
-      "kanji": "〜札",
-      "furigana": "〜さつ",
-      "meaning": "~ bill, ~ note"
+      "meaning_en": "(monetary) bill"
     }
-  ]
+  ],
+  "story_number": 3,
+  "is_story": true,
+  "page_story": "53_1"
 }

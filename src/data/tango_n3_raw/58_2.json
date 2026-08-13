@@ -1,33 +1,38 @@
 {
-  "id": "58_2",
   "title": "Topic 3",
-  "japanese_text": "<ruby>Ａ：すみません、クレジットカードって<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>えますか。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby>申<rt>もう</rt></ruby><ruby>し<rt></rt></ruby><ruby>訳<rt>わけ</rt></ruby><ruby>ございません。<rt></rt></ruby><ruby>現金<rt>げんきん</rt></ruby><ruby>のみになっております。<rt></rt></ruby>\n<ruby>Ａ：そうですか。あ、<rt></rt></ruby><ruby>領収書<rt>りょうしゅうしょ</rt></ruby><ruby>お<rt></rt></ruby><ruby>願<rt>ねが</rt></ruby><ruby>いします。<rt></rt></ruby>\n<ruby>Ｂ：かしこまりました。レジ<rt></rt></ruby><ruby>袋<rt>ぶくろ</rt></ruby><ruby>はお<rt></rt></ruby><ruby>付<rt>つ</rt></ruby><ruby>けしますか。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：すみません、<u>クレジットカード</u>って<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>えますか。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby>申<rt>もう</rt></ruby><ruby>し<rt></rt></ruby><ruby>訳<rt>わけ</rt></ruby><ruby>ございません。<rt></rt></ruby><ruby><u>現金</u><rt>げんきん</rt></ruby><ruby>のみになっております。<rt></rt></ruby>\n<ruby>Ａ：そうですか。あ、<rt></rt></ruby><ruby><u>領収書</u><rt>りょうしゅうしょ</rt></ruby><ruby>お<rt></rt></ruby><ruby>願<rt>ねが</rt></ruby><ruby>いします。<rt></rt></ruby>\n<ruby>Ｂ：かしこまりました。<u>レジ<rt></rt></ruby><ruby>袋</u><rt>ぶくろ</rt></ruby><ruby>はお<rt></rt></ruby><ruby>付<rt>つ</rt></ruby><ruby>けしますか。<rt></rt></ruby>",
   "english_translation": "A: Excuse me, can I use a credit card?\nB: Sorry. We only accept cash.\nA: I see. Oh, please give me a receipt.\nB: Okay. Would you like a plastic bag?",
   "annotated_words": [
     {
+      "word_id": "n3_1091",
+      "word_number": 1091,
       "kanji": "クレジットカード",
       "furigana": "",
-      "meaning": "credit card"
+      "meaning_en": "credit card"
     },
     {
-      "kanji": "キャッシュカード",
-      "furigana": "",
-      "meaning": "ATM card"
-    },
-    {
+      "word_id": "n3_1092",
+      "word_number": 1092,
       "kanji": "現金",
       "furigana": "げんきん",
-      "meaning": "cash"
+      "meaning_en": "cash"
     },
     {
+      "word_id": "n3_1093",
+      "word_number": 1093,
       "kanji": "領収書",
       "furigana": "りょうしゅうしょ",
-      "meaning": "receipt"
+      "meaning_en": "receipt"
     },
     {
+      "word_id": "n3_1094",
+      "word_number": 1094,
       "kanji": "レジ袋",
       "furigana": "レジぶくろ",
-      "meaning": "shopping bag, plastic bag"
+      "meaning_en": "shopping bag, plastic bag"
     }
-  ]
+  ],
+  "story_number": 14,
+  "is_story": true,
+  "page_story": "58_2"
 }

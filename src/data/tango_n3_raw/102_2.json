@@ -1,43 +1,38 @@
 {
-  "id": "102_2",
   "title": "Topic 6",
-  "japanese_text": "これは、<ruby>少年<rt>しょうねん</rt></ruby>が<ruby>妹<rt>いもうと</rt></ruby>を<ruby>守<rt>まも</rt></ruby>るために、<ruby>父親<rt>ちちおや</rt></ruby>である<ruby>王<rt>おう</rt></ruby>を<ruby>倒<rt>たお</rt></ruby>す<ruby>物語<rt>ものがたり</rt></ruby>です。そのために、<ruby>少年<rt>しょうねん</rt></ruby>はいろいろな<ruby>犯罪<rt>はんざい</rt></ruby>も<ruby>犯<rt>おか</rt></ruby>します。でも、ラストは<ruby>本当<rt>ほんとう</rt></ruby>に<ruby>感動的<rt>かんどうてき</rt></ruby>で、<ruby>見終<rt>みお</rt></ruby>わったときは<ruby>拍手<rt>はくしゅ</rt></ruby>しました。",
+  "japanese_text": "これは、<ruby>少年<rt>しょうねん</rt></ruby>が<ruby>妹<rt>いもうと</rt></ruby>を<ruby>守<rt>まも</rt></ruby>るために、<ruby>父親<rt>ちちおや</rt></ruby>である<ruby><u>王</u><rt>おう</rt></ruby>を<ruby>倒<rt>たお</rt></ruby>す<ruby>物語<rt>ものがたり</rt></ruby>です。そのために、<ruby>少年<rt>しょうねん</rt></ruby>はいろいろな<ruby><u>犯罪</u><rt>はんざい</rt></ruby>も<ruby>犯<rt>おか</rt></ruby>します。でも、<u>ラスト</u>は<ruby>本当<rt>ほんとう</rt></ruby>に<ruby>感動的<rt>かんどうてき</rt></ruby>で、<ruby>見終<rt>みお</rt></ruby>わったときは<ruby><u>拍手</u><rt>はくしゅ</rt></ruby>しました。",
   "english_translation": "This is a story of a boy that defeats the king who is also his father to protect his sister. To that end, the boy also commits a variety of crimes. But the ending was really moving, and I clapped when it ended.",
   "annotated_words": [
     {
+      "word_id": "n3_1313",
+      "word_number": 1313,
       "kanji": "王",
       "furigana": "おう",
-      "meaning": "king"
+      "meaning_en": "king"
     },
     {
-      "kanji": "王様",
-      "furigana": "おうさま",
-      "meaning": "king"
-    },
-    {
-      "kanji": "国王",
-      "furigana": "こくおう",
-      "meaning": "king"
-    },
-    {
-      "kanji": "倒す",
-      "furigana": "たおす",
-      "meaning": "defeat"
-    },
-    {
+      "word_id": "n3_1314",
+      "word_number": 1314,
       "kanji": "犯罪",
       "furigana": "はんざい",
-      "meaning": "crime"
+      "meaning_en": "crime"
     },
     {
+      "word_id": "n3_1315",
+      "word_number": 1315,
       "kanji": "ラスト",
       "furigana": "",
-      "meaning": "ending, finale"
+      "meaning_en": "ending, finale"
     },
     {
+      "word_id": "n3_1316",
+      "word_number": 1316,
       "kanji": "拍手［する］",
       "furigana": "はくしゅ",
-      "meaning": "applause, clap, applauded"
+      "meaning_en": "applause, clap, applauded"
     }
-  ]
+  ],
+  "story_number": 18,
+  "is_story": true,
+  "page_story": "102_2"
 }

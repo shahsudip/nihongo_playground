@@ -1,28 +1,38 @@
 {
-  "id": "64_2",
   "title": "Topic 4",
-  "japanese_text": "<ruby>革<rt>かわ</rt></ruby><ruby>のベルトやひもでウエストをマークするファッションが<rt></rt></ruby><ruby>人気<rt>にんき</rt></ruby><ruby>だ。<rt></rt></ruby>",
+  "japanese_text": "<ruby><u>革</u><rt>かわ</rt></ruby><ruby>の<u>ベルト</u>や<u>ひも</u>でウエストを<u>マーク</u>するファッションが<rt></rt></ruby><ruby>人気<rt>にんき</rt></ruby><ruby>だ。<rt></rt></ruby>",
   "english_translation": "Fashion styles that mark the waist with leather belts or cords are popular.",
   "annotated_words": [
     {
+      "word_id": "n3_1112",
+      "word_number": 1112,
       "kanji": "革",
       "furigana": "かわ",
-      "meaning": "leather"
+      "meaning_en": "leather"
     },
     {
+      "word_id": "n3_1113",
+      "word_number": 1113,
       "kanji": "ベルト",
       "furigana": "",
-      "meaning": "belt"
+      "meaning_en": "belt"
     },
     {
+      "word_id": "n3_1114",
+      "word_number": 1114,
       "kanji": "ひも",
       "furigana": "",
-      "meaning": "string"
+      "meaning_en": "string"
     },
     {
+      "word_id": "n3_1115",
+      "word_number": 1115,
       "kanji": "マーク",
       "furigana": "",
-      "meaning": "marking, mark"
+      "meaning_en": "marking, mark"
     }
-  ]
+  ],
+  "story_number": 6,
+  "is_story": true,
+  "page_story": "64_2"
 }

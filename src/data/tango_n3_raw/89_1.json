@@ -1,28 +1,24 @@
 {
-  "id": "89_1",
   "title": "Topic 5",
-  "japanese_text": "<ruby>Ａ：アンケートに<rt></rt></ruby><ruby>答<rt>こた</rt></ruby><ruby>えたら<rt></rt></ruby><ruby>回答者<rt>かいとうしゃ</rt></ruby><ruby>にプレゼントが<rt></rt></ruby><ruby>当<rt>あ</rt></ruby><ruby>たるっていうの、あるでしょ。あれ、<rt></rt></ruby><ruby>本当<rt>ほんとう</rt></ruby><ruby>に<rt></rt></ruby><ruby>当<rt>あ</rt></ruby><ruby>たるのかな。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby>子<rt>こ</rt></ruby><ruby>どものとき、<rt></rt></ruby><ruby>漫画雑誌<rt>まんがざっし</rt></ruby><ruby>のアンケートでスマホのケース<rt></rt></ruby><ruby>当<rt>あ</rt></ruby><ruby>たったことあるよ。１<rt></rt></ruby><ruby>位<rt>い</rt></ruby><ruby>はゲーム<rt></rt></ruby><ruby>機<rt>き</rt></ruby><ruby>だったけど、それは<rt></rt></ruby><ruby>当<rt>あ</rt></ruby><ruby>たった<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>には<rt></rt></ruby><ruby>会<rt>あ</rt></ruby><ruby>ったことないなあ。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：<u>アンケート</u>に<rt></rt></ruby><ruby>答<rt>こた</rt></ruby><ruby>えたら<rt></rt></ruby><ruby>回答者<rt>かいとうしゃ</rt></ruby><ruby>にプレゼントが<rt></rt></ruby><ruby>当<rt>あ</rt></ruby><ruby>たるっていうの、あるでしょ。あれ、<rt></rt></ruby><ruby>本当<rt>ほんとう</rt></ruby><ruby>に<rt></rt></ruby><ruby>当<rt>あ</rt></ruby><ruby>たるのかな。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby>子<rt>こ</rt></ruby><ruby>どものとき、<rt></rt></ruby><ruby>漫画雑誌<rt>まんがざっし</rt></ruby><ruby>のアンケートでスマホの<u>ケース</u><rt></rt></ruby><ruby>当<rt>あ</rt></ruby><ruby>たったことあるよ。１<rt></rt></ruby><ruby>位<rt>い</rt></ruby><ruby>はゲーム<rt></rt></ruby><ruby>機<rt>き</rt></ruby><ruby>だったけど、それは<rt></rt></ruby><ruby>当<rt>あ</rt></ruby><ruby>たった<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>には<rt></rt></ruby><ruby>会<rt>あ</rt></ruby><ruby>ったことないなあ。<rt></rt></ruby>",
   "english_translation": "A: You know how there are surveys where you could win a present if you answer them? I wonder if you can really win anything.\nB: When I was a kid, I won a smartphone case from a survey in a manga magazine. First place was a game console, but I've never met anyone who's won one.",
   "annotated_words": [
     {
+      "word_id": "n3_1257",
+      "word_number": 1257,
       "kanji": "アンケート",
       "furigana": "",
-      "meaning": "survey"
+      "meaning_en": "survey"
     },
     {
-      "kanji": "〜者",
-      "furigana": "〜しゃ",
-      "meaning": "person"
-    },
-    {
+      "word_id": "n3_1258",
+      "word_number": 1258,
       "kanji": "ケース",
       "furigana": "",
-      "meaning": "case"
-    },
-    {
-      "kanji": "〜機",
-      "furigana": "〜き",
-      "meaning": "console, machine"
+      "meaning_en": "case"
     }
-  ]
+  ],
+  "story_number": 30,
+  "is_story": true,
+  "page_story": "89_1"
 }

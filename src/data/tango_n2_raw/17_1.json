@@ -3,7 +3,7 @@
   "story_number": 5,
   "title": "Topic 1 食事",
   "page_story": "17_1",
-  "japanese_text": "A：なんか<u>煙く</u>ない？\nB：確かに…あ、<u>焦げてる</u>！この黒い<u>塊</u>、何？\nA：うーん…たぶん、ホルモン…。",
+  "japanese_text": "A：なんか<u>煙く</u>ない？\\nB：<ruby>確<rt>たし</rt></ruby>かに…あ、<u>焦げてる</u>！この<ruby>黒<rt>くろ</rt></ruby>い<u>塊</u>、<ruby>何<rt>なに</rt></ruby>？\\nA：うーん…たぶん、ホルモン…。",
   "english_translation": "A: Can't you smell smoke? B: I sure can... Oh, it's burning! What are these black chunks? A: Hmmm... it's probably offal...",
   "annotated_words": [
     {
@@ -19,13 +19,6 @@
       "kanji": "焦げる",
       "furigana": "こげる",
       "meaning_en": "burn"
-    },
-    {
-      "word_id": "n2_0026",
-      "word_number": 26,
-      "kanji": "焦がす",
-      "furigana": "こがす",
-      "meaning_en": "burn (something)"
     },
     {
       "word_id": "n2_0027",

@@ -1,43 +1,45 @@
 {
-  "id": "57_1",
   "title": "Topic 3",
-  "japanese_text": "<ruby>通販<rt>つうはん</rt></ruby><ruby>でダイヤモンドのネックレスを<rt></rt></ruby><ruby>買<rt>か</rt></ruby><ruby>った。<rt></rt></ruby><ruby>定価<rt>ていか</rt></ruby>８<ruby>万円<rt>まんえん</rt></ruby><ruby>のもの<rt></rt></ruby><ruby>がセールで<rt></rt></ruby>５<ruby>万円<rt>まんえん</rt></ruby><ruby>だったので<rt></rt></ruby><ruby>得<rt>とく</rt></ruby><ruby>した<rt></rt></ruby><ruby>気分<rt>きぶん</rt></ruby><ruby>だ。お<rt></rt></ruby><ruby>金<rt>かね</rt></ruby><ruby>も<rt></rt></ruby><ruby>振<rt>ふ</rt></ruby><ruby>り<rt></rt></ruby><ruby>込<rt>こ</rt></ruby><ruby>んだ<rt></rt></ruby><ruby>し、<rt></rt></ruby><ruby>配達<rt>はいたつ</rt></ruby><ruby>されるのが<rt></rt></ruby><ruby>楽<rt>たの</rt></ruby><ruby>しみだ。<rt></rt></ruby>",
+  "japanese_text": "<ruby><u>通販</u><rt>つうはん</rt></ruby><ruby>で<u>ダイヤモンド</u>のネックレスを<rt></rt></ruby><ruby>買<rt>か</rt></ruby><ruby>った。<rt></rt></ruby><ruby>定価<rt>ていか</rt></ruby>８<ruby>万円<rt>まんえん</rt></ruby><ruby>のもの<rt></rt></ruby><ruby>が<u>セール</u>で<rt></rt></ruby>５<ruby>万円<rt>まんえん</rt></ruby><ruby>だったので<rt></rt></ruby><ruby><u>得</u><rt>とく</rt></ruby><ruby>した<rt></rt></ruby><ruby>気分<rt>きぶん</rt></ruby><ruby>だ。お<rt></rt></ruby><ruby>金<rt>かね</rt></ruby><ruby>も<rt></rt></ruby><ruby>振<rt>ふ</rt></ruby><ruby>り<rt></rt></ruby><ruby>込<rt>こ</rt></ruby><ruby>んだ<rt></rt></ruby><ruby>し、<rt></rt></ruby><ruby><u>配達</u><rt>はいたつ</rt></ruby><ruby>されるのが<rt></rt></ruby><ruby>楽<rt>たの</rt></ruby><ruby>しみだ。<rt></rt></ruby>",
   "english_translation": "I bought a diamond necklace by mail order. It feels like I got a bargain because it was on sale for 50,000 yen with a list price of 80,000 yen. I already sent the money, so I'm looking forward to getting the delivery.",
   "annotated_words": [
     {
+      "word_id": "n3_1084",
+      "word_number": 1084,
       "kanji": "通販",
       "furigana": "つうはん",
-      "meaning": "mail order"
+      "meaning_en": "mail order"
     },
     {
+      "word_id": "n3_1085",
+      "word_number": 1085,
       "kanji": "ダイヤモンド",
       "furigana": "",
-      "meaning": "diamond"
+      "meaning_en": "diamond"
     },
     {
+      "word_id": "n3_1086",
+      "word_number": 1086,
       "kanji": "セール",
       "furigana": "",
-      "meaning": "sale"
+      "meaning_en": "sale"
     },
     {
+      "word_id": "n3_1087",
+      "word_number": 1087,
       "kanji": "得",
       "furigana": "とく",
-      "meaning": "bargain, get a bargain"
+      "meaning_en": "bargain, get a bargain"
     },
     {
-      "kanji": "損",
-      "furigana": "そん",
-      "meaning": "loss, take a loss"
-    },
-    {
-      "kanji": "振り込む",
-      "furigana": "ふりこむ",
-      "meaning": "send, deposit (a payment)"
-    },
-    {
+      "word_id": "n3_1088",
+      "word_number": 1088,
       "kanji": "配達",
       "furigana": "はいたつ",
-      "meaning": "delivery, deliver"
+      "meaning_en": "delivery, deliver"
     }
-  ]
+  ],
+  "story_number": 11,
+  "is_story": true,
+  "page_story": "57_1"
 }

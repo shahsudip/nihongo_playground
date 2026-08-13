@@ -1,23 +1,24 @@
 {
-  "id": "124_2",
   "title": "Topic 8",
-  "japanese_text": "<ruby>今回<rt>こんかい</rt></ruby>は<ruby>予想<rt>よそう</rt></ruby>が<ruby>外<rt>はず</rt></ruby>れ、<ruby>優勝<rt>ゆうしょう</rt></ruby>したチームを<ruby>当<rt>あ</rt></ruby>てることができなかった。",
+  "japanese_text": "<ruby>今回<rt>こんかい</rt></ruby>は<ruby>予想<rt>よそう</rt></ruby>が<ruby>外<rt>はず</rt></ruby>れ、<ruby><u>優勝</u><rt>ゆうしょう</rt></ruby>した<u>チーム</u>を<ruby>当<rt>あ</rt></ruby>てることができなかった。",
   "english_translation": "This time, my expectations were wrong, and I was unable to guess the winning team.",
   "annotated_words": [
     {
+      "word_id": "n3_1420",
+      "word_number": 1420,
       "kanji": "優勝［する］",
       "furigana": "ゆうしょう",
-      "meaning": "victory, win"
+      "meaning_en": "victory, win"
     },
     {
+      "word_id": "n3_1421",
+      "word_number": 1421,
       "kanji": "チーム",
       "furigana": "",
-      "meaning": "team"
-    },
-    {
-      "kanji": "当てる",
-      "furigana": "あてる",
-      "meaning": "guess (correctly)"
+      "meaning_en": "team"
     }
-  ]
+  ],
+  "story_number": 22,
+  "is_story": true,
+  "page_story": "124_2"
 }

@@ -1,33 +1,38 @@
 {
-  "id": "95_1",
   "title": "Topic 6",
-  "japanese_text": "<ruby>以前<rt>いぜん</rt></ruby>はよくレンタルビデオ<ruby>店<rt>てん</rt></ruby>にビデオやＤＶＤを<ruby>借<rt>か</rt></ruby>りに<ruby>行<rt>い</rt></ruby>った。しかし、<ruby>今<rt>いま</rt></ruby>はインターネットでレンタルすることができる。まず<ruby>会員登録<rt>かいいんとうろく</rt></ruby>し、それから<ruby>好<rt>す</rt></ruby>きな<ruby>金額<rt>きんがく</rt></ruby>をチャージする。チャージした<ruby>金額分<rt>きんがくぶん</rt></ruby>、<ruby>自由<rt>じゆう</rt></ruby>にレンタルすることができる。このやり<ruby>方<rt>かた</rt></ruby>は<ruby>一<rt>ひと</rt></ruby>つの<ruby>発明<rt>はつめい</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>う。<ruby>私<rt>わたし</rt></ruby>はサイトをお<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>りに<ruby>登録<rt>とうろく</rt></ruby>している。",
+  "japanese_text": "<ruby>以前<rt>いぜん</rt></ruby>はよく<u>レンタル</u>ビデオ<ruby>店<rt>てん</rt></ruby>にビデオやＤＶＤを<ruby>借<rt>か</rt></ruby>りに<ruby>行<rt>い</rt></ruby>った。しかし、<ruby>今<rt>いま</rt></ruby>はインターネットでレンタルすることができる。まず<ruby>会員<u>登録</u><rt>かいいんとうろく</rt></ruby>し、それから<ruby>好<rt>す</rt></ruby>きな<ruby>金額<rt>きんがく</rt></ruby>を<u>チャージ</u>する。チャージした<ruby>金額分<rt>きんがくぶん</rt></ruby>、<ruby>自由<rt>じゆう</rt></ruby>にレンタルすることができる。このやり<ruby>方<rt>かた</rt></ruby>は<ruby>一<rt>ひと</rt></ruby>つの<ruby><u>発明</u><rt>はつめい</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>う。<ruby>私<rt>わたし</rt></ruby>はサイトをお<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>りに<ruby>登録<rt>とうろく</rt></ruby>している。",
   "english_translation": "In the past, people rented videos and DVDs at rental video stores. But now, you can rent things on the internet. First, register as a member and then charge whatever amount you like. You can freely rent things with the charged amount. I think this method is one invention. I've registered the site to my favorites.",
   "annotated_words": [
     {
+      "word_id": "n3_1276",
+      "word_number": 1276,
       "kanji": "レンタル［する］",
       "furigana": "",
-      "meaning": "rental, rent"
+      "meaning_en": "rental, rent"
     },
     {
+      "word_id": "n3_1277",
+      "word_number": 1277,
       "kanji": "登録［する］",
       "furigana": "とうろく",
-      "meaning": "registration, registering"
+      "meaning_en": "registration, registering"
     },
     {
+      "word_id": "n3_1278",
+      "word_number": 1278,
       "kanji": "チャージ［する］",
       "furigana": "",
-      "meaning": "charging, charge"
+      "meaning_en": "charging, charge"
     },
     {
+      "word_id": "n3_1279",
+      "word_number": 1279,
       "kanji": "発明［する］",
       "furigana": "はつめい",
-      "meaning": "invention, invent"
-    },
-    {
-      "kanji": "お気に入り",
-      "furigana": "おきにいり",
-      "meaning": "favorite"
+      "meaning_en": "invention, invent"
     }
-  ]
+  ],
+  "story_number": 6,
+  "is_story": true,
+  "page_story": "95_1"
 }

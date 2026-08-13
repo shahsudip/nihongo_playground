@@ -3,7 +3,7 @@
   "story_number": 8,
   "title": "Topic 1 食事",
   "page_story": "19_1",
-  "japanese_text": "一人暮らしをしていると、栄養が<u>偏り</u>がちだ。何か野菜を食べなければと思うが、今は野菜が高くて<u>手に入りにくい</u>。子どものときは<u>好き嫌い</u>が多く、母の作る料理が嫌だと思ったこともあったが、今となっては栄養たっぷりの母の手料理が<u>恋しい</u>。",
+  "japanese_text": "<ruby>一人暮<rt>ひとりぐ</rt></ruby>らしをしていると、<ruby>栄養<rt>えいよう</rt></ruby>が<u>偏り</u>がちだ。<ruby>何<rt>なに</rt></ruby>か<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べなければと<ruby>思<rt>おも</rt></ruby>うが、<ruby>今<rt>いま</rt></ruby>は<ruby>野菜<rt>やさい</rt></ruby>が<ruby>高<rt>たか</rt></ruby>くて<u>手に入りにくい</u>。<ruby>子<rt>こ</rt></ruby>どものときは<u>好き嫌い</u>が<ruby>多<rt>おお</rt></ruby>く、<ruby>母<rt>はは</rt></ruby>の<ruby>作<rt>つく</rt></ruby>る<ruby>料理<rt>りょうり</rt></ruby>が<ruby>嫌<rt>いや</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>ったこともあったが、<ruby>今<rt>いま</rt></ruby>となっては<ruby>栄養<rt>えいよう</rt></ruby>たっぷりの<ruby>母<rt>はは</rt></ruby>の<ruby>手料理<rt>てりょうり</rt></ruby>が<u>恋しい</u>。",
   "english_translation": "When you live alone, your diet tends to get imbalanced. I probably need to eat some vegetables, but vegetables are expensive and hard to get nowadays. When I was a child, I was fussy about food and at times I disliked the food my mother cooked, but now I miss her healthy, nutritious cooking.",
   "annotated_words": [
     {
@@ -14,25 +14,11 @@
       "meaning_en": "deviate, get imbalanced"
     },
     {
-      "word_id": "n2_0039",
-      "word_number": 39,
-      "kanji": "偏り",
-      "furigana": "かたよる",
-      "meaning_en": "bias, imbalance"
-    },
-    {
       "word_id": "n2_0040",
       "word_number": 40,
       "kanji": "手に入れる",
       "furigana": "てにいれる",
       "meaning_en": "get, obtain"
-    },
-    {
-      "word_id": "n2_0041",
-      "word_number": 41,
-      "kanji": "手に入る",
-      "furigana": "てにはいる",
-      "meaning_en": "come into (one's) possession"
     },
     {
       "word_id": "n2_0042",
@@ -47,13 +33,6 @@
       "kanji": "恋しい",
       "furigana": "こいしい",
       "meaning_en": "longed for, missed"
-    },
-    {
-      "word_id": "n2_0044",
-      "word_number": 44,
-      "kanji": "恋[する]",
-      "furigana": "こい",
-      "meaning_en": "love"
     }
   ]
 }

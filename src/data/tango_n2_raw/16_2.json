@@ -3,7 +3,7 @@
   "story_number": 4,
   "title": "Topic 1 食事",
   "page_story": "16_2",
-  "japanese_text": "A：ご注文はお決まりですか。\nB：えっと、日替わりランチ。\nA：はい、では、こちらから<u>メイン</u>をお選びください。\nB：あ、じゃ、<u>ミックス</u>フライで。\nA：はい。サラダのドレッシングはいかがなさいますか。\nB：あ、<u>和風</u>ドレッシングで。<u>それと</u>、抹茶パフェお願いします。",
+  "japanese_text": "A：ご<ruby>注文<rt>ちゅうもん</rt></ruby>はお<ruby>決<rt>き</rt></ruby>まりですか。\\nB：えっと、<ruby>日替<rt>ひが</rt></ruby>わりランチ。\\nA：はい、では、こちらから<u>メイン</u>をお<ruby>選<rt>えら</rt></ruby>びください。\\nB：あ、じゃ、<u>ミックス</u>フライで。\\nA：はい。サラダのドレッシングはいかがなさいますか。\\nB：あ、<u>和風</u>ドレッシングで。<u>それと</u>、<ruby>抹茶<rt>まっちゃ</rt></ruby>パフェお<ruby>願<rt>ねが</rt></ruby>いします。",
   "english_translation": "A: Have you decided what you want to order? B: Let's see, the daily lunch. A: Right, well, please choose your main dish here. B: Oh, well, I'll have the mixed deep-fry plate. A: Got it. What kind of dressing would you like for your salad? B: Um, Japanese-style dressing. And also, green tea parfait, please.",
   "annotated_words": [
     {
@@ -26,13 +26,6 @@
       "kanji": "和風",
       "furigana": "わふう",
       "meaning_en": "Japanese-style"
-    },
-    {
-      "word_id": "n2_0022",
-      "word_number": 22,
-      "kanji": "洋風",
-      "furigana": "ようふう",
-      "meaning_en": "western-style"
     },
     {
       "word_id": "n2_0023",

@@ -1,33 +1,31 @@
 {
-  "id": "133_2",
-  "title": "Topic 9",
-  "japanese_text": "A：わあ、<ruby>部屋<rt>へや</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にカメムシがいる。<br>B：つぶすと<ruby>臭<rt>くさ</rt></ruby>いから、つぶさないようにティッシュで<ruby>捕<rt>つか</rt></ruby>まえて<ruby>窓<rt>まど</rt></ruby>の<ruby>外<rt>そと</rt></ruby>へ<ruby>出<rt>だ</rt></ruby>して。",
+  "title": "Topic 9 動物 Animals",
+  "japanese_text": "A：わあ、<ruby>部屋<rt>へや</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にカメムシがいる。<br>B：つぶすと<u><ruby>臭<rt>くさ</rt></ruby>い</u>から、つぶさないように<u>ティッシュ</u>で<u><ruby>捕<rt>つか</rt></ruby>まえて</u><ruby>窓<rt>まど</rt></ruby>の<ruby>外<rt>そと</rt></ruby>へ<ruby>出<rt>だ</rt></ruby>して。",
   "english_translation": "A: Oh no, there's a stink bug in the room. B: Crushing it only makes it stink, so catch it with a tissue without crushing it and throw it out the window.",
   "annotated_words": [
     {
+      "word_id": "n3_0922",
+      "word_number": 922,
       "kanji": "臭い",
       "furigana": "くさい",
-      "meaning": "stink, odor"
+      "meaning_en": "stink, odor"
     },
     {
+      "word_id": "n3_0923",
+      "word_number": 923,
       "kanji": "ティッシュ（ペーパー）",
       "furigana": "",
-      "meaning": "tissue paper"
+      "meaning_en": "tissue paper"
     },
     {
-      "kanji": "トイレットペーパー",
-      "furigana": "",
-      "meaning": "toilet paper"
-    },
-    {
+      "word_id": "n3_0924",
+      "word_number": 924,
       "kanji": "捕まえる",
       "furigana": "つかまえる",
-      "meaning": "catch"
-    },
-    {
-      "kanji": "捕まる",
-      "furigana": "つかまる",
-      "meaning": "be caught"
+      "meaning_en": "catch"
     }
-  ]
+  ],
+  "story_number": 11,
+  "is_story": true,
+  "page_story": "133_2"
 }

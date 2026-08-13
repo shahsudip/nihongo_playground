@@ -1,28 +1,17 @@
 {
-  "id": "40_2",
   "title": "Topic 2",
-  "japanese_text": "<ruby>仕事<rt>しごと</rt></ruby>が<ruby>忙<rt>いそが</rt></ruby>しくて<span class='annotated-word' data-word='不規則な'><ruby>不規則<rt>ふきそく</rt></ruby>な</span><ruby>生活<rt>せいかつ</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>いた。<ruby>食事<rt>しょくじ</rt></ruby>は<span class='annotated-word' data-word='インスタント食品'>インスタント<ruby>食品<rt>しょくひん</rt></ruby></span>ばかりで、<ruby>部屋<rt>へや</rt></ruby>も<span class='annotated-word' data-word='散らかる'><ruby>散<rt>ち</rt></ruby>らかった</span>ままだ。",
+  "japanese_text": "<ruby>仕事<rt>しごと</rt></ruby>が<ruby>忙<rt>いそが</rt></ruby>しくて<ruby>不規則<rt>ふきそく</rt></ruby>な<ruby>生活<rt>せいかつ</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>いた。<ruby>食事<rt>しょくじ</rt></ruby>は<u>インスタント<ruby>食品</u><rt>しょくひん</rt></ruby>ばかりで、<ruby>部屋<rt>へや</rt></ruby>も<ruby>散<rt>ち</rt></ruby>らかったままだ。",
   "english_translation": "I was busy with work as my irregular life continued. All I eat is instant food, and my room stays messy.",
   "annotated_words": [
     {
-      "meaning_en": "irregular, unsteadiness",
-      "furigana": "ふきそくな",
-      "kanji": "不規則な"
-    },
-    {
-      "meaning_en": "instant food",
+      "word_id": "n3_1020",
+      "word_number": 1020,
+      "kanji": "インスタント食品",
       "furigana": "インスタントしょくひん",
-      "kanji": "インスタント食品"
-    },
-    {
-      "meaning_en": "be scattered",
-      "furigana": "ちらかる",
-      "kanji": "散らかる"
-    },
-    {
-      "meaning_en": "scatter",
-      "furigana": "ちらかす",
-      "kanji": "散らかす"
+      "meaning_en": "instant food"
     }
-  ]
+  ],
+  "story_number": 10,
+  "is_story": true,
+  "page_story": "40_2"
 }

@@ -1,28 +1,38 @@
 {
-  "id": "121_2",
   "title": "Topic 8",
-  "japanese_text": "<ruby>手続<rt>てつづ</rt></ruby>きにミスがあって、<ruby>予算<rt>よさん</rt></ruby>がカットされてしまい、<ruby>次回<rt>じかい</rt></ruby>の<ruby>大会<rt>たいかい</rt></ruby>に<ruby>出場<rt>しゅつじょう</rt></ruby>できなくなってしまった。",
+  "japanese_text": "<ruby>手続<rt>てつづ</rt></ruby>きに<u>ミス</u>があって、<ruby>予算<rt>よさん</rt></ruby>が<u>カット</u>されてしまい、<ruby><u>次回</u><rt>じかい</rt></ruby>の<ruby>大会<rt>たいかい</rt></ruby>に<ruby><u>出場</u><rt>しゅつじょう</rt></ruby>できなくなってしまった。",
   "english_translation": "As there was a mistake in the procedure, the budget was cut and I will now no longer be able to participate in the next tournament.",
   "annotated_words": [
     {
+      "word_id": "n3_1400",
+      "word_number": 1400,
       "kanji": "ミス［する］",
       "furigana": "",
-      "meaning": "mistake, make a mistake"
+      "meaning_en": "mistake, make a mistake"
     },
     {
+      "word_id": "n3_1401",
+      "word_number": 1401,
       "kanji": "カット［する］",
       "furigana": "",
-      "meaning": "cut, cut"
+      "meaning_en": "cut, cut"
     },
     {
+      "word_id": "n3_1402",
+      "word_number": 1402,
       "kanji": "次回",
       "furigana": "じかい",
-      "meaning": "next time"
+      "meaning_en": "next time"
     },
     {
+      "word_id": "n3_1403",
+      "word_number": 1403,
       "kanji": "出場［する］",
       "furigana": "しゅつじょう",
-      "meaning": "participation, participate"
+      "meaning_en": "participation, participate"
     }
-  ]
+  ],
+  "story_number": 16,
+  "is_story": true,
+  "page_story": "121_2"
 }

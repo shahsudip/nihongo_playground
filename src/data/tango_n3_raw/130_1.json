@@ -1,28 +1,38 @@
 {
-  "id": "130_1",
-  "title": "Topic 9",
-  "japanese_text": "A：あのからす、ずっとあの<ruby>枝<rt>えだ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>でじっとしているね。<br>B：ははは、あれ<ruby>本物<rt>ほんもの</rt></ruby>じゃないよ。",
+  "title": "Topic 9 動物 Animals",
+  "japanese_text": "A：あの<u>からす</u>、ずっとあの<u><ruby>枝<rt>えだ</rt></ruby></u>の<ruby>上<rt>うえ</rt></ruby>で<u>じっとして</u>いるね。<br>B：ははは、あれ<u><ruby>本物<rt>ほんもの</rt></ruby></u>じゃないよ。",
   "english_translation": "A: That crow has been sitting still on that branch for a while. B: Hahaha, it's not real.",
   "annotated_words": [
     {
+      "word_id": "n3_0898",
+      "word_number": 898,
       "kanji": "からす",
       "furigana": "",
-      "meaning": "crow"
+      "meaning_en": "crow"
     },
     {
+      "word_id": "n3_0899",
+      "word_number": 899,
       "kanji": "枝",
       "furigana": "えだ",
-      "meaning": "branch"
+      "meaning_en": "branch"
     },
     {
+      "word_id": "n3_0900",
+      "word_number": 900,
       "kanji": "じっとする",
       "furigana": "",
-      "meaning": "be still"
+      "meaning_en": "be still"
     },
     {
+      "word_id": "n3_0901",
+      "word_number": 901,
       "kanji": "本物",
       "furigana": "ほんもの",
-      "meaning": "real, real thing"
+      "meaning_en": "real, real thing"
     }
-  ]
+  ],
+  "story_number": 5,
+  "is_story": true,
+  "page_story": "130_1"
 }

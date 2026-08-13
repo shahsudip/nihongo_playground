@@ -1,33 +1,31 @@
 {
-  "id": "65_1",
   "title": "Topic 4",
-  "japanese_text": "<ruby>Ａ：<rt></rt></ruby><ruby>最近<rt>さいきん</rt></ruby><ruby>スニーカーで<rt></rt></ruby><ruby>来<rt>き</rt></ruby><ruby>てるの？<rt></rt></ruby>\n<ruby>Ｂ：うん、それでストッキングやめて、<rt></rt></ruby>５<ruby>本指<rt>ほんゆび</rt></ruby><ruby>ソックスにしてみ<rt></rt></ruby><ruby>たんだけど、すごく<rt></rt></ruby><ruby>快適<rt>かいてき</rt></ruby><ruby>！<rt></rt></ruby>\n<ruby>Ａ：そうなんだ、<rt></rt></ruby><ruby>私<rt>わたし</rt></ruby><ruby>も<rt></rt></ruby><ruby>試<rt>ため</rt></ruby><ruby>してみようかな。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：<rt></rt></ruby><ruby>最近<rt>さいきん</rt></ruby><ruby><u>スニーカー</u>で<rt></rt></ruby><ruby>来<rt>き</rt></ruby><ruby>てるの？<rt></rt></ruby>\n<ruby>Ｂ：うん、それで<u>ストッキング</u>やめて、<rt></rt></ruby>５<ruby>本指<rt>ほんゆび</rt></ruby><ruby><u>ソックス</u>にしてみ<rt></rt></ruby><ruby>たんだけど、すごく<rt></rt></ruby><ruby>快適<rt>かいてき</rt></ruby><ruby>！<rt></rt></ruby>\n<ruby>Ａ：そうなんだ、<rt></rt></ruby><ruby>私<rt>わたし</rt></ruby><ruby>も<rt></rt></ruby><ruby>試<rt>ため</rt></ruby><ruby>してみようかな。<rt></rt></ruby>",
   "english_translation": "A: Have you been coming in sneakers recently?\nB: Yeah, and I stopped wearing stockings and have started wearing five-toed socks, and they're really comfortable!\nA: Really? Maybe I should try them too.",
   "annotated_words": [
     {
+      "word_id": "n3_1116",
+      "word_number": 1116,
       "kanji": "スニーカー",
       "furigana": "",
-      "meaning": "sneakers"
+      "meaning_en": "sneakers"
     },
     {
+      "word_id": "n3_1117",
+      "word_number": 1117,
       "kanji": "ストッキング",
       "furigana": "",
-      "meaning": "stockings"
+      "meaning_en": "stockings"
     },
     {
+      "word_id": "n3_1118",
+      "word_number": 1118,
       "kanji": "ソックス",
       "furigana": "",
-      "meaning": "socks"
-    },
-    {
-      "kanji": "試す",
-      "furigana": "ためす",
-      "meaning": "try"
-    },
-    {
-      "kanji": "試し",
-      "furigana": "ためし",
-      "meaning": "trial, test"
+      "meaning_en": "socks"
     }
-  ]
+  ],
+  "story_number": 7,
+  "is_story": true,
+  "page_story": "65_1"
 }

@@ -1,33 +1,31 @@
 {
-  "id": "78_1",
   "title": "Topic 5",
-  "japanese_text": "<ruby>Ａ：あ、ごめん、もう<rt></rt></ruby><ruby>充電<rt>じゅうでん</rt></ruby><ruby>切<rt>き</rt></ruby><ruby>れそう。<rt></rt></ruby>\n<ruby>Ｂ：え、まだお<rt></rt></ruby><ruby>昼<rt>ひる</rt></ruby><ruby>だよ。そんなことある？<rt></rt></ruby>\n<ruby>Ａ：いやー、<rt></rt></ruby><ruby>夜<rt>よる</rt></ruby><ruby>に<rt></rt></ruby><ruby>充電<rt>じゅうでん</rt></ruby><ruby>したつもりだったんだけど、コンセントからケーブルが<rt></rt></ruby><ruby>抜<rt>ぬ</rt></ruby><ruby>けてて。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：あ、ごめん、もう<rt></rt></ruby><ruby><u>充電</u><rt>じゅうでん</rt></ruby><ruby>切<rt>き</rt></ruby><ruby>れそう。<rt></rt></ruby>\n<ruby>Ｂ：え、まだお<rt></rt></ruby><ruby>昼<rt>ひる</rt></ruby><ruby>だよ。そんなことある？<rt></rt></ruby>\n<ruby>Ａ：いやー、<rt></rt></ruby><ruby>夜<rt>よる</rt></ruby><ruby>に<rt></rt></ruby><ruby>充電<rt>じゅうでん</rt></ruby><ruby>したつもりだったんだけど、<u>コンセント</u>から<u>ケーブル</u>が<rt></rt></ruby><ruby>抜<rt>ぬ</rt></ruby><ruby>けてて。<rt></rt></ruby>",
   "english_translation": "A: Oh, I'm sorry, it looks like my battery is already about to run out.\nB: What? But it's only the afternoon. How is that possible?\nA: I meant to charge it (last) night, but the plug came out of the outlet.",
   "annotated_words": [
     {
+      "word_id": "n3_1180",
+      "word_number": 1180,
       "kanji": "充電",
       "furigana": "じゅうでん",
-      "meaning": "charging, charge (a battery)"
+      "meaning_en": "charging, charge (a battery)"
     },
     {
+      "word_id": "n3_1181",
+      "word_number": 1181,
       "kanji": "コンセント",
       "furigana": "",
-      "meaning": "(power) outlet"
+      "meaning_en": "(power) outlet"
     },
     {
+      "word_id": "n3_1182",
+      "word_number": 1182,
       "kanji": "ケーブル",
       "furigana": "",
-      "meaning": "cable"
-    },
-    {
-      "kanji": "抜ける",
-      "furigana": "ぬける",
-      "meaning": "be pulled out, be removed"
-    },
-    {
-      "kanji": "抜く",
-      "furigana": "ぬく",
-      "meaning": "pull out, remove"
+      "meaning_en": "cable"
     }
-  ]
+  ],
+  "story_number": 9,
+  "is_story": true,
+  "page_story": "78_1"
 }

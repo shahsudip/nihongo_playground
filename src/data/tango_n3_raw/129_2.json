@@ -1,23 +1,31 @@
 {
-  "id": "129_2",
-  "title": "Topic 9",
-  "japanese_text": "A：<ruby>見<rt>み</rt></ruby>て<ruby>見<rt>み</rt></ruby>て、あの<ruby>猿<rt>さる</rt></ruby>、ちっちゃい<ruby>枕<rt>まくら</rt></ruby>を<ruby>抱<rt>だ</rt></ruby>いてる。<br>B：そうそう、<ruby>寝<rt>ね</rt></ruby>るときに<ruby>枕<rt>まくら</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うから、「ピロー」って<ruby>名前<rt>なまえ</rt></ruby>らしいよ。",
+  "title": "Topic 9 動物 Animals",
+  "japanese_text": "A：<ruby>見<rt>み</rt></ruby>て<ruby>見<rt>み</rt></ruby>て、あの<u><ruby>猿<rt>さる</rt></ruby></u>、ちっちゃい<u><ruby>枕<rt>まくら</rt></ruby></u>を<u><ruby>抱<rt>だ</rt></ruby>いて</u>る。<br>B：そうそう、<ruby>寝<rt>ね</rt></ruby>るときに<ruby>枕<rt>まくら</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うから、「ピロー」って<ruby>名前<rt>なまえ</rt></ruby>らしいよ。",
   "english_translation": "A: Look, look. That monkey is carrying a tiny pillow. B: Yeah, it uses a pillow when it goes to sleep, so they named it Pillow.",
   "annotated_words": [
     {
+      "word_id": "n3_0895",
+      "word_number": 895,
       "kanji": "猿",
       "furigana": "さる",
-      "meaning": "monkey"
+      "meaning_en": "monkey"
     },
     {
+      "word_id": "n3_0896",
+      "word_number": 896,
       "kanji": "枕",
       "furigana": "まくら",
-      "meaning": "pillow"
+      "meaning_en": "pillow"
     },
     {
+      "word_id": "n3_0897",
+      "word_number": 897,
       "kanji": "抱く",
       "furigana": "だく",
-      "meaning": "carry, hug"
+      "meaning_en": "carry, hug"
     }
-  ]
+  ],
+  "story_number": 4,
+  "is_story": true,
+  "page_story": "129_2"
 }

@@ -7526,7 +7526,7 @@ module.exports = [
   "id": "shinkanzen-master-n3-reading",
   "title": "JLPT Shinkanzen Master N3 Reading",
   "description": "Improve your Japanese reading comprehension. Practice short, medium, and long passages along with email/information retrieval layouts.",
-  "coverUrl": "",
+  "coverUrl": "/images/shinkanzen_n3_reading.jpg",
   "level": "N3",
   "category": "Reading",
   "chapters": [

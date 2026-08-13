@@ -1,28 +1,24 @@
 {
-  "id": "38_1",
   "title": "Topic 2",
-  "japanese_text": "<span class='annotated-word' data-word='一人暮らし'><ruby>一人暮<rt>ひとりぐ</rt></ruby>らし</span>を<ruby>始<rt>はじ</rt></ruby>めたばかりなので、<ruby>家<rt>いえ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>はまだ<ruby>全然<rt>ぜんぜん</rt></ruby><span class='annotated-word' data-word='片付く'><ruby>片付<rt>かたづ</rt></ruby>いて</span>いない。<ruby>早<rt>はや</rt></ruby>く<ruby>必要<rt>ひつよう</rt></ruby>な<span class='annotated-word' data-word='家具'><ruby>家具<rt>かぐ</rt></ruby></span>をそろえて、<span class='annotated-word' data-word='家事'><ruby>家事<rt>かじ</rt></ruby></span>にも<ruby>慣<rt>な</rt></ruby>れたいと<ruby>思<rt>おも</rt></ruby>う。",
+  "japanese_text": "<ruby>一人暮<rt>ひとりぐ</rt></ruby>らしを<ruby>始<rt>はじ</rt></ruby>めたばかりなので、<ruby>家<rt>いえ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>はまだ<ruby>全然<rt>ぜんぜん</rt></ruby><ruby>片付<rt>かたづ</rt></ruby>いていない。<ruby>早<rt>はや</rt></ruby>く<ruby>必要<rt>ひつよう</rt></ruby>な<ruby><u>家具</u><rt>かぐ</rt></ruby>をそろえて、<ruby><u>家事</u><rt>かじ</rt></ruby>にも<ruby>慣<rt>な</rt></ruby>れたいと<ruby>思<rt>おも</rt></ruby>う。",
   "english_translation": "Since I just started living alone, I haven't cleaned up my home at all yet. I want to hurry up and get all the furniture I need and get used to doing housework.",
   "annotated_words": [
     {
-      "meaning_en": "living alone",
-      "furigana": "ひとりぐらし",
-      "kanji": "一人暮らし"
-    },
-    {
-      "meaning_en": "clean up, tidy up",
-      "furigana": "かたづく",
-      "kanji": "片付く"
-    },
-    {
-      "meaning_en": "furniture",
+      "word_id": "n3_1011",
+      "word_number": 1011,
+      "kanji": "家具",
       "furigana": "かぐ",
-      "kanji": "家具"
+      "meaning_en": "furniture"
     },
     {
-      "meaning_en": "housework",
+      "word_id": "n3_1012",
+      "word_number": 1012,
+      "kanji": "家事",
       "furigana": "かじ",
-      "kanji": "家事"
+      "meaning_en": "housework"
     }
-  ]
+  ],
+  "story_number": 5,
+  "is_story": true,
+  "page_story": "38_1"
 }

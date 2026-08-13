@@ -1,33 +1,31 @@
 {
-  "id": "66_1",
   "title": "Topic 4",
-  "japanese_text": "<ruby>なんとなく<rt></rt></ruby><ruby>入<rt>はい</rt></ruby><ruby>った<rt></rt></ruby><ruby>店<rt>みせ</rt></ruby><ruby>で<rt></rt></ruby><ruby>見<rt>み</rt></ruby><ruby>つけたジーンズがあまりに<rt></rt></ruby><ruby>気<rt>き</rt></ruby><ruby>に<rt></rt></ruby><ruby>入<rt>い</rt></ruby><ruby>った<rt></rt></ruby><ruby>ので、<rt></rt></ruby><ruby>色違<rt>いろちが</rt></ruby><ruby>いで<rt></rt></ruby>３<ruby>着買<rt>ちゃくか</rt></ruby><ruby>った。<rt></rt></ruby><ruby>兄<rt>あに</rt></ruby><ruby>が<rt></rt></ruby><ruby>帰<rt>かえ</rt></ruby><ruby>ってきたら<rt></rt></ruby><ruby>自慢<rt>じまん</rt></ruby><ruby>しよう。<rt></rt></ruby>",
+  "japanese_text": "<ruby><u>なんとなく</u><rt></rt></ruby><ruby>入<rt>はい</rt></ruby><ruby>った<rt></rt></ruby><ruby>店<rt>みせ</rt></ruby><ruby>で<rt></rt></ruby><ruby>見<rt>み</rt></ruby><ruby>つけた<u>ジーンズ</u>があまりに<rt></rt></ruby><ruby>気<rt>き</rt></ruby><ruby>に<rt></rt></ruby><ruby>入<rt>い</rt></ruby><ruby>った<rt></rt></ruby><ruby>ので、<rt></rt></ruby><ruby>色違<rt>いろちが</rt></ruby><ruby>いで<rt></rt></ruby>３<ruby>着買<rt>ちゃくか</rt></ruby><ruby>った。<rt></rt></ruby><ruby>兄<rt>あに</rt></ruby><ruby>が<rt></rt></ruby><ruby>帰<rt>かえ</rt></ruby><ruby>ってきたら<rt></rt></ruby><ruby><u>自慢</u><rt>じまん</rt></ruby><ruby>しよう。<rt></rt></ruby>",
   "english_translation": "I liked the jeans I found at a store I happened to wonder into so much, I bought three of them in different colors. I'm going to boast to my older brother when he comes back.",
   "annotated_words": [
     {
+      "word_id": "n3_1120",
+      "word_number": 1120,
       "kanji": "なんとなく",
       "furigana": "",
-      "meaning": "on a whim, somehow"
+      "meaning_en": "on a whim, somehow"
     },
     {
+      "word_id": "n3_1121",
+      "word_number": 1121,
       "kanji": "ジーンズ",
       "furigana": "",
-      "meaning": "jeans"
+      "meaning_en": "jeans"
     },
     {
-      "kanji": "ジーパン",
-      "furigana": "",
-      "meaning": "jeans"
-    },
-    {
-      "kanji": "〜着",
-      "furigana": "〜ちゃく",
-      "meaning": "~ articles of clothing"
-    },
-    {
+      "word_id": "n3_1122",
+      "word_number": 1122,
       "kanji": "自慢",
       "furigana": "じまん",
-      "meaning": "pride, boast, be proud of"
+      "meaning_en": "pride, boast, be proud of"
     }
-  ]
+  ],
+  "story_number": 9,
+  "is_story": true,
+  "page_story": "66_1"
 }

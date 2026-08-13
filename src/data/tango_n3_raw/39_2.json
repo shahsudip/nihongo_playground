@@ -1,33 +1,24 @@
 {
-  "id": "39_2",
   "title": "Topic 2",
-  "japanese_text": "<span class='annotated-word' data-word='掃除用具'><ruby>掃除用具<rt>そうじようぐ</rt></ruby></span>は<span class='annotated-word' data-word='まとめる'>まとめて</span><span class='annotated-word' data-word='洗面所'><ruby>洗面所<rt>せんめんじょ</rt></ruby></span>に<ruby>置<rt>お</rt></ruby>いてあります。",
+  "japanese_text": "<ruby><u>掃除用具</u><rt>そうじようぐ</rt></ruby>はまとめて<ruby><u>洗面所</u><rt>せんめんじょ</rt></ruby>に<ruby>置<rt>お</rt></ruby>いてあります。",
   "english_translation": "Cleaning equipment is all stored together in the washroom.",
   "annotated_words": [
     {
-      "meaning_en": "cleaning equipment",
+      "word_id": "n3_1015",
+      "word_number": 1015,
+      "kanji": "掃除用具",
       "furigana": "そうじようぐ",
-      "kanji": "掃除用具"
+      "meaning_en": "cleaning equipment"
     },
     {
-      "meaning_en": "equipment, tool",
-      "furigana": "ようぐ",
-      "kanji": "用具"
-    },
-    {
-      "meaning_en": "put together, summarize",
-      "furigana": "まとめる",
-      "kanji": "まとめる"
-    },
-    {
-      "meaning_en": "be put together, be summarized",
-      "furigana": "まとまる",
-      "kanji": "まとまる"
-    },
-    {
-      "meaning_en": "washroom",
+      "word_id": "n3_1016",
+      "word_number": 1016,
+      "kanji": "洗面所",
       "furigana": "せんめんじょ",
-      "kanji": "洗面所"
+      "meaning_en": "washroom"
     }
-  ]
+  ],
+  "story_number": 8,
+  "is_story": true,
+  "page_story": "39_2"
 }

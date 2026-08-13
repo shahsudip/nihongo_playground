@@ -1,23 +1,31 @@
 {
-  "id": "41_2",
   "title": "Topic 2",
-  "japanese_text": "A：<ruby>少<rt>すこ</rt></ruby>し<ruby>体<rt>からだ</rt></ruby>が<span class='annotated-word' data-word='だるい'>だるい</span>から、<ruby>今<rt>いま</rt></ruby>からちょっと<span class='annotated-word' data-word='昼寝'><ruby>昼寝<rt>ひるね</rt></ruby></span>するよ。<br>B：アルバイトはどうするの？<br>A：それは<ruby>行<rt>い</rt></ruby>くから、３<ruby>時<rt>じ</rt></ruby>に<ruby>起<rt>お</rt></ruby>こしてくれない？<br>B：<ruby>分<rt>わ</rt></ruby>かった。<br>A：<span class='annotated-word' data-word='ちゃんと'>ちゃんと</span><ruby>起<rt>お</rt></ruby>こしてね。",
+  "japanese_text": "A：<ruby>少<rt>すこ</rt></ruby>し<ruby>体<rt>からだ</rt></ruby>が<u>だるい</u>から、<ruby>今<rt>いま</rt></ruby>からちょっと<ruby><u>昼寝</u><rt>ひるね</rt></ruby>するよ。<br>B：アルバイトはどうするの？<br>A：それは<ruby>行<rt>い</rt></ruby>くから、３<ruby>時<rt>じ</rt></ruby>に<ruby>起<rt>お</rt></ruby>こしてくれない？<br>B：<ruby>分<rt>わ</rt></ruby>かった。<br>A：<u>ちゃんと</u><ruby>起<rt>お</rt></ruby>こしてね。",
   "english_translation": "A: I'm feeling a little sluggish, so I'm going to take a short nap now. B: What are you going to do about your part-time job? A: I'll be going, so could you wake me up at 3 o'clock? B: Okay. A: Be sure to wake me up properly.",
   "annotated_words": [
     {
-      "meaning_en": "sluggish",
+      "word_id": "n3_1023",
+      "word_number": 1023,
+      "kanji": "だるい",
       "furigana": "",
-      "kanji": "だるい"
+      "meaning_en": "sluggish"
     },
     {
-      "meaning_en": "nap, take a nap",
+      "word_id": "n3_1024",
+      "word_number": 1024,
+      "kanji": "昼寝",
       "furigana": "ひるね",
-      "kanji": "昼寝"
+      "meaning_en": "nap, take a nap"
     },
     {
-      "meaning_en": "properly",
+      "word_id": "n3_1025",
+      "word_number": 1025,
+      "kanji": "ちゃんと",
       "furigana": "",
-      "kanji": "ちゃんと"
+      "meaning_en": "properly"
     }
-  ]
+  ],
+  "story_number": 12,
+  "is_story": true,
+  "page_story": "41_2"
 }

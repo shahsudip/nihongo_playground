@@ -1,33 +1,31 @@
 {
-  "id": "40_1",
   "title": "Topic 2",
-  "japanese_text": "<ruby>古<rt>ふる</rt></ruby>くなった<span class='annotated-word' data-word='タオル'>タオル</span>は<span class='annotated-word' data-word='雑巾'><ruby>雑巾<rt>ぞうきん</rt></ruby></span>にします。タオルをミシンで<span class='annotated-word' data-word='縫う'><ruby>縫<rt>ぬ</rt></ruby>って</span>もいいし、<span class='annotated-word' data-word='針'><ruby>針<rt>はり</rt></ruby></span>と<ruby>糸<rt>いと</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って<ruby>自分<rt>じぶん</rt></ruby>で<ruby>縫<rt>ぬ</rt></ruby>ってもいいです。雑巾は、<ruby>床<rt>ゆか</rt></ruby>を<span class='annotated-word' data-word='拭く'><ruby>拭<rt>ふ</rt></ruby>く</span>ときなどに<ruby>使<rt>つか</rt></ruby>うことができます。",
+  "japanese_text": "<ruby>古<rt>ふる</rt></ruby>くなった<u>タオル</u>は<ruby><u>雑巾</u><rt>ぞうきん</rt></ruby>にします。タオルをミシンで<ruby>縫<rt>ぬ</rt></ruby>ってもいいし、<ruby><u>針</u><rt>はり</rt></ruby>と<ruby>糸<rt>いと</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って<ruby>自分<rt>じぶん</rt></ruby>で<ruby>縫<rt>ぬ</rt></ruby>ってもいいです。雑巾は、<ruby>床<rt>ゆか</rt></ruby>を<ruby>拭<rt>ふ</rt></ruby>くときなどに<ruby>使<rt>つか</rt></ruby>うことができます。",
   "english_translation": "I use old towels as rags. You can sew the towels with a sewing machine, or you can sew them by yourself using a needle and thread. These rags can be used to wipe the floor.",
   "annotated_words": [
     {
-      "meaning_en": "towel",
+      "word_id": "n3_1017",
+      "word_number": 1017,
+      "kanji": "タオル",
       "furigana": "",
-      "kanji": "タオル"
+      "meaning_en": "towel"
     },
     {
-      "meaning_en": "rag",
+      "word_id": "n3_1018",
+      "word_number": 1018,
+      "kanji": "雑巾",
       "furigana": "ぞうきん",
-      "kanji": "雑巾"
+      "meaning_en": "rag"
     },
     {
-      "meaning_en": "sew",
-      "furigana": "ぬう",
-      "kanji": "縫う"
-    },
-    {
-      "meaning_en": "needle",
+      "word_id": "n3_1019",
+      "word_number": 1019,
+      "kanji": "針",
       "furigana": "はり",
-      "kanji": "針"
-    },
-    {
-      "meaning_en": "wipe",
-      "furigana": "ふく",
-      "kanji": "拭く"
+      "meaning_en": "needle"
     }
-  ]
+  ],
+  "story_number": 9,
+  "is_story": true,
+  "page_story": "40_1"
 }

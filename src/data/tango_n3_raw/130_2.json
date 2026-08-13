@@ -1,33 +1,38 @@
 {
-  "id": "130_2",
-  "title": "Topic 9",
-  "japanese_text": "A：<ruby>息子<rt>むすこ</rt></ruby>さん、<ruby>成長<rt>せいちょう</rt></ruby>したね。そのうち、お<ruby>父<rt>とう</rt></ruby>さんの<ruby>背<rt>せ</rt></ruby>も<ruby>追<rt>お</rt></ruby>い<ruby>越<rt>こ</rt></ruby>しそうね。<br>B：そうなの。ちょっと<ruby>前<rt>まえ</rt></ruby>までは<ruby>子<rt>こ</rt></ruby>どもだったのに、そのうち<ruby>就職<rt>しゅうしょく</rt></ruby>や<ruby>結婚<rt>けっこん</rt></ruby>で<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>る<ruby>日<rt>ひ</rt></ruby>が<ruby>来<rt>く</rt></ruby>るなんて、<ruby>想像<rt>そうぞう</rt></ruby>するだけで<ruby>恐<rt>おそ</rt></ruby>ろしいわ。<br>A：あはは。<ruby>冗談<rt>じょうだん</rt></ruby>でしょ。かわいい<ruby>子<rt>こ</rt></ruby>には<ruby>旅<rt>たび</rt></ruby>をさせろって<ruby>言<rt>い</rt></ruby>うじゃない。",
+  "title": "Topic 9 動物 Animals",
+  "japanese_text": "A：<ruby>息子<rt>むすこ</rt></ruby>さん、<u><ruby>成長<rt>せいちょう</rt></ruby></u>したね。そのうち、お<ruby>父<rt>とう</rt></ruby>さんの<ruby>背<rt>せ</rt></ruby>も<u><ruby>追<rt>お</rt></ruby>い<ruby>越<rt>こ</rt></ruby>し</u>そうね。<br>B：そうなの。ちょっと<ruby>前<rt>まえ</rt></ruby>までは<ruby>子<rt>こ</rt></ruby>どもだったのに、そのうち<ruby>就職<rt>しゅうしょく</rt></ruby>や<ruby>結婚<rt>けっこん</rt></ruby>で<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>る<ruby>日<rt>ひ</rt></ruby>が<ruby>来<rt>く</rt></ruby>るなんて、<ruby>想像<rt>そうぞう</rt></ruby>するだけで<u><ruby>恐<rt>おそ</rt></ruby>ろしい</u>わ。<br>A：あはは。<u><ruby>冗談<rt>じょうだん</rt></ruby></u>でしょ。かわいい<ruby>子<rt>こ</rt></ruby>には<ruby>旅<rt>たび</rt></ruby>をさせろって<ruby>言<rt>い</rt></ruby>うじゃない。",
   "english_translation": "A: Your son has grown. Pretty soon, he'll be even taller than his father. B: That's right. Though he was a child up until recently, now just thinking about the fact that he'll soon have to leave the house to find work and get married is terrifying. A: Ahaha. You're joking, right? Don't they say, if you love something, you have to let it go?",
   "annotated_words": [
     {
+      "word_id": "n3_0902",
+      "word_number": 902,
       "kanji": "成長［する］",
       "furigana": "せいちょう",
-      "meaning": "growing, grow"
+      "meaning_en": "growing, grow"
     },
     {
+      "word_id": "n3_0903",
+      "word_number": 903,
       "kanji": "追い越す",
       "furigana": "おいこす",
-      "meaning": "be more than, overtake"
+      "meaning_en": "be more than, overtake"
     },
     {
+      "word_id": "n3_0904",
+      "word_number": 904,
       "kanji": "恐ろしい",
       "furigana": "おそろしい",
-      "meaning": "terrible"
+      "meaning_en": "terrible"
     },
     {
+      "word_id": "n3_0905",
+      "word_number": 905,
       "kanji": "冗談",
       "furigana": "じょうだん",
-      "meaning": "joke"
-    },
-    {
-      "kanji": "ジョーク",
-      "furigana": "",
-      "meaning": "joke"
+      "meaning_en": "joke"
     }
-  ]
+  ],
+  "story_number": 6,
+  "is_story": true,
+  "page_story": "130_2"
 }

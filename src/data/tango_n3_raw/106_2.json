@@ -1,48 +1,38 @@
 {
-  "id": "106_2",
   "title": "Topic 7",
-  "japanese_text": "<ruby>友人<rt>ゆうじん</rt></ruby>が<ruby>中国<rt>ちゅうごく</rt></ruby>へ<ruby>帰<rt>かえ</rt></ruby>るので、<ruby>空港<rt>くうこう</rt></ruby>まで<ruby>見送<rt>みおく</rt></ruby>った。<ruby>後日<rt>ごじつ</rt></ruby>、<ruby>友人<rt>ゆうじん</rt></ruby>から<ruby>小包<rt>こづつみ</rt></ruby>が<ruby>届<rt>とど</rt></ruby>いた。<ruby>便箋<rt>びんせん</rt></ruby>には「お<ruby>世話<rt>せわ</rt></ruby>になりました。どうかお<ruby>元気<rt>げんき</rt></ruby>で」と<ruby>書<rt>か</rt></ruby>かれていた。",
+  "japanese_text": "<ruby>友人<rt>ゆうじん</rt></ruby>が<ruby>中国<rt>ちゅうごく</rt></ruby>へ<ruby>帰<rt>かえ</rt></ruby>るので、<ruby>空港<rt>くうこう</rt></ruby>まで<ruby>見送<rt>みおく</rt></ruby>った。<ruby><u>後日</u><rt>ごじつ</rt></ruby>、<ruby>友人<rt>ゆうじん</rt></ruby>から<ruby><u>小包</u><rt>こづつみ</rt></ruby>が<ruby>届<rt>とど</rt></ruby>いた。<ruby><u>便箋</u><rt>びんせん</rt></ruby>には「お<ruby>世話<rt>せわ</rt></ruby>になりました。<u>どうか</u>お<ruby>元気<rt>げんき</rt></ruby>で」と<ruby>書<rt>か</rt></ruby>かれていた。",
   "english_translation": "My friend returned to China, so I saw him off to the airport. Later, a package arrived from my friend. The letter on it read \"Thank you for looking after me. Please take care.\"",
   "annotated_words": [
     {
-      "kanji": "見送る",
-      "furigana": "みおくる",
-      "meaning": "send off"
-    },
-    {
-      "kanji": "見送り",
-      "furigana": "みおくり",
-      "meaning": "send off"
-    },
-    {
+      "word_id": "n3_1325",
+      "word_number": 1325,
       "kanji": "後日",
       "furigana": "ごじつ",
-      "meaning": "a few days later, at a later date"
+      "meaning_en": "a few days later, at a later date"
     },
     {
+      "word_id": "n3_1326",
+      "word_number": 1326,
       "kanji": "小包",
       "furigana": "こづつみ",
-      "meaning": "parcel"
+      "meaning_en": "parcel"
     },
     {
+      "word_id": "n3_1327",
+      "word_number": 1327,
       "kanji": "便箋",
       "furigana": "びんせん",
-      "meaning": "letter paper, stationary"
+      "meaning_en": "letter paper, stationary"
     },
     {
-      "kanji": "お世話になりました",
-      "furigana": "おせわになりました",
-      "meaning": "thank you for helping me."
-    },
-    {
+      "word_id": "n3_1328",
+      "word_number": 1328,
       "kanji": "どうか",
       "furigana": "",
-      "meaning": "please"
-    },
-    {
-      "kanji": "お元気で",
-      "furigana": "おげんきで",
-      "meaning": "take care"
+      "meaning_en": "please"
     }
-  ]
+  ],
+  "story_number": 2,
+  "is_story": true,
+  "page_story": "106_2"
 }

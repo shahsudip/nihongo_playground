@@ -1,28 +1,38 @@
 {
-  "id": "42_1",
   "title": "Topic 2",
-  "japanese_text": "<span class='annotated-word' data-word='コインランドリー'>コインランドリー</span>は、<ruby>家<rt>いえ</rt></ruby>の<ruby>洗濯機<rt>せんたくき</rt></ruby>には<ruby>入<rt>はい</rt></ruby>らないような<ruby>大<rt>おお</rt></ruby>きな<span class='annotated-word' data-word='カーペット'>カーペット</span>などを<ruby>洗<rt>あら</rt></ruby>ったり<span class='annotated-word' data-word='乾燥'><ruby>乾燥<rt>かんそう</rt></ruby></span>させたりできるので、<ruby>大変<rt>たいへん</rt></ruby><ruby>便利<rt>べんり</rt></ruby>だ。<br><span class='annotated-word' data-word='欠点'><ruby>欠点<rt>けってん</rt></ruby></span>は、コインランドリーまで<ruby>大<rt>おお</rt></ruby>きなカーペットを<ruby>持<rt>も</rt></ruby>っていくのが<ruby>大変<rt>たいへん</rt></ruby>だということだ。",
+  "japanese_text": "<u>コインランドリー</u>は、<ruby>家<rt>いえ</rt></ruby>の<ruby>洗濯機<rt>せんたくき</rt></ruby>には<ruby>入<rt>はい</rt></ruby>らないような<ruby>大<rt>おお</rt></ruby>きな<u>カーペット</u>などを<ruby>洗<rt>あら</rt></ruby>ったり<ruby><u>乾燥</u><rt>かんそう</rt></ruby>させたりできるので、<ruby>大変<rt>たいへん</rt></ruby><ruby>便利<rt>べんり</rt></ruby>だ。<br><ruby><u>欠点</u><rt>けってん</rt></ruby>は、コインランドリーまで<ruby>大<rt>おお</rt></ruby>きなカーペットを<ruby>持<rt>も</rt></ruby>っていくのが<ruby>大変<rt>たいへん</rt></ruby>だということだ。",
   "english_translation": "Coin laundromats are very convenient because things like large carpets that can't fit in household washing machines can be washed or dried there. The disadvantage is that it's difficult to bring a large carpet all the way to the coin laundromat.",
   "annotated_words": [
     {
-      "meaning_en": "coin laundromat",
+      "word_id": "n3_1027",
+      "word_number": 1027,
+      "kanji": "コインランドリー",
       "furigana": "",
-      "kanji": "コインランドリー"
+      "meaning_en": "coin laundromat"
     },
     {
-      "meaning_en": "carpet",
+      "word_id": "n3_1028",
+      "word_number": 1028,
+      "kanji": "カーペット",
       "furigana": "",
-      "kanji": "カーペット"
+      "meaning_en": "carpet"
     },
     {
-      "meaning_en": "drying, dry",
+      "word_id": "n3_1029",
+      "word_number": 1029,
+      "kanji": "乾燥",
       "furigana": "かんそう",
-      "kanji": "乾燥"
+      "meaning_en": "drying, dry"
     },
     {
-      "meaning_en": "disadvantage",
+      "word_id": "n3_1030",
+      "word_number": 1030,
+      "kanji": "欠点",
       "furigana": "けってん",
-      "kanji": "欠点"
+      "meaning_en": "disadvantage"
     }
-  ]
+  ],
+  "story_number": 14,
+  "is_story": true,
+  "page_story": "42_1"
 }

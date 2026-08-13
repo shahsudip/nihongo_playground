@@ -1,23 +1,31 @@
 {
-  "id": "117_1",
   "title": "Topic 8",
-  "japanese_text": "サッカーの<ruby>世界一<rt>せかいいち</rt></ruby>を<ruby>決<rt>き</rt></ruby>める<ruby>大会<rt>たいかい</rt></ruby>がカリフォルニア<ruby>州<rt>しゅう</rt></ruby>ロサンゼルスで<ruby>行<rt>おこな</rt></ruby>われていて、<ruby>多<rt>おお</rt></ruby>くの<ruby>人<rt>ひと</rt></ruby>が<ruby>注目<rt>ちゅうもく</rt></ruby>している。",
+  "japanese_text": "サッカーの<ruby>世界一<rt>せかいいち</rt></ruby>を<ruby>決<rt>き</rt></ruby>める<ruby><u>大会</u><rt>たいかい</rt></ruby>がカリフォルニア<ruby><u>州</u><rt>しゅう</rt></ruby>ロサンゼルスで<ruby>行<rt>おこな</rt></ruby>われていて、<ruby>多<rt>おお</rt></ruby>くの<ruby>人<rt>ひと</rt></ruby>が<ruby><u>注目</u><rt>ちゅうもく</rt></ruby>している。",
   "english_translation": "A tournament that determines the best in the world of soccer will be held in Los Angeles, California, and many people are paying attention to it.",
   "annotated_words": [
     {
+      "word_id": "n3_1372",
+      "word_number": 1372,
       "kanji": "大会",
       "furigana": "たいかい",
-      "meaning": "tournament"
+      "meaning_en": "tournament"
     },
     {
+      "word_id": "n3_1373",
+      "word_number": 1373,
       "kanji": "州",
       "furigana": "しゅう",
-      "meaning": "state"
+      "meaning_en": "state"
     },
     {
+      "word_id": "n3_1374",
+      "word_number": 1374,
       "kanji": "注目［する］",
       "furigana": "ちゅうもく",
-      "meaning": "paying attention to, pay attention to"
+      "meaning_en": "paying attention to, pay attention to"
     }
-  ]
+  ],
+  "story_number": 7,
+  "is_story": true,
+  "page_story": "117_1"
 }

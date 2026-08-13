@@ -1,23 +1,31 @@
 {
-  "id": "135_2",
-  "title": "Topic 9",
-  "japanese_text": "A：<ruby>見<rt>み</rt></ruby>て<ruby>見<rt>み</rt></ruby>て。<ruby>象<rt>ぞう</rt></ruby>の<ruby>親子<rt>おやこ</rt></ruby>が<ruby>鼻<rt>はな</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせて<ruby>遊<rt>あそ</rt></ruby>んでる。<br>B：<ruby>本当<rt>ほんとう</rt></ruby>だ。<ruby>自由<rt>じゆう</rt></ruby>に<ruby>鼻<rt>はな</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かせるんだね。<br>A：うん、<ruby>象<rt>ぞう</rt></ruby>の<ruby>鼻<rt>はな</rt></ruby>って<ruby>骨<rt>ほね</rt></ruby>がないらしいよ。",
+  "title": "Topic 9 動物 Animals",
+  "japanese_text": "A：<ruby>見<rt>み</rt></ruby>て<ruby>見<rt>み</rt></ruby>て。<u><ruby>象<rt>ぞう</rt></ruby></u>の<u><ruby>親子<rt>おやこ</rt></ruby></u>が<ruby>鼻<rt>はな</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせて<ruby>遊<rt>あそ</rt></ruby>んでる。<br>B：<ruby>本当<rt>ほんとう</rt></ruby>だ。<ruby>自由<rt>じゆう</rt></ruby>に<ruby>鼻<rt>はな</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かせるんだね。<br>A：うん、<ruby>象<rt>ぞう</rt></ruby>の<ruby>鼻<rt>はな</rt></ruby>って<u><ruby>骨<rt>ほね</rt></ruby></u>がないらしいよ。",
   "english_translation": "A: Look, look. Adult elephants and its child putting their noses together and playing. B: Oh, you're right. They can move their noses so freely. A: Yeah, I hear elephant's noses don't have any bones.",
   "annotated_words": [
     {
+      "word_id": "n3_0938",
+      "word_number": 938,
       "kanji": "象",
       "furigana": "ぞう",
-      "meaning": "elephant"
+      "meaning_en": "elephant"
     },
     {
+      "word_id": "n3_0939",
+      "word_number": 939,
       "kanji": "親子",
       "furigana": "おやこ",
-      "meaning": "parent and child"
+      "meaning_en": "parent and child"
     },
     {
+      "word_id": "n3_0940",
+      "word_number": 940,
       "kanji": "骨",
       "furigana": "ほね",
-      "meaning": "bone"
+      "meaning_en": "bone"
     }
-  ]
+  ],
+  "story_number": 15,
+  "is_story": true,
+  "page_story": "135_2"
 }

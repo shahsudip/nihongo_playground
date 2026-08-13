@@ -1,43 +1,38 @@
 {
-  "id": "79_1",
   "title": "Topic 5",
-  "japanese_text": "メールアドレスを<ruby>間違<rt>まちが</rt></ruby><ruby>って、<rt></rt></ruby><ruby>他<rt>ほか</rt></ruby><ruby>の<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>にメールを<rt></rt></ruby><ruby>送<rt>おく</rt></ruby><ruby>らないように<rt></rt></ruby><ruby>注意<rt>ちゅうい</rt></ruby><ruby>しないといけない。うっかり<rt></rt></ruby><ruby>本人<rt>ほんにん</rt></ruby><ruby>に<rt></rt></ruby><ruby>悪口<rt>わるぐち</rt></ruby><ruby>を<rt></rt></ruby><ruby>書<rt>か</rt></ruby><ruby>いたメールを<rt></rt></ruby><ruby>送<rt>おく</rt></ruby><ruby>ったら、<rt></rt></ruby><ruby>最悪<rt>さいあく</rt></ruby><ruby>だ。<rt></rt></ruby>",
+  "japanese_text": "<u>メールアドレス</u>を<ruby>間違<rt>まちが</rt></ruby><ruby>って、<rt></rt></ruby><ruby>他<rt>ほか</rt></ruby><ruby>の<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>にメールを<rt></rt></ruby><ruby>送<rt>おく</rt></ruby><ruby>らないように<rt></rt></ruby><ruby>注意<rt>ちゅうい</rt></ruby><ruby>しないといけない。<u>うっかり</u><rt></rt></ruby><ruby><u>本人</u><rt>ほんにん</rt></ruby><ruby>に<rt></rt></ruby><ruby><u>悪口</u><rt>わるぐち</rt></ruby><ruby>を<rt></rt></ruby><ruby>書<rt>か</rt></ruby><ruby>いたメールを<rt></rt></ruby><ruby>送<rt>おく</rt></ruby><ruby>ったら、<rt></rt></ruby><ruby>最悪<rt>さいあく</rt></ruby><ruby>だ。<rt></rt></ruby>",
   "english_translation": "You must be careful not to get email addresses wrong and send emails to other people. Carelessly sending an email bad-mouthing the actual person you're sending it to is the worst.",
   "annotated_words": [
     {
+      "word_id": "n3_1186",
+      "word_number": 1186,
       "kanji": "メールアドレス",
       "furigana": "",
-      "meaning": "email address"
+      "meaning_en": "email address"
     },
     {
-      "kanji": "間違う",
-      "furigana": "まちがう",
-      "meaning": "make a mistake"
-    },
-    {
-      "kanji": "間違い",
-      "furigana": "まちがい",
-      "meaning": "mistake"
-    },
-    {
+      "word_id": "n3_1187",
+      "word_number": 1187,
       "kanji": "うっかり",
       "furigana": "",
-      "meaning": "inadvertently"
+      "meaning_en": "inadvertently"
     },
     {
+      "word_id": "n3_1188",
+      "word_number": 1188,
       "kanji": "本人",
       "furigana": "ほんにん",
-      "meaning": "actual person"
+      "meaning_en": "actual person"
     },
     {
+      "word_id": "n3_1189",
+      "word_number": 1189,
       "kanji": "悪口",
       "furigana": "わるぐち",
-      "meaning": "bad words"
-    },
-    {
-      "kanji": "最悪な",
-      "furigana": "さいあくな",
-      "meaning": "worst"
+      "meaning_en": "bad words"
     }
-  ]
+  ],
+  "story_number": 11,
+  "is_story": true,
+  "page_story": "79_1"
 }

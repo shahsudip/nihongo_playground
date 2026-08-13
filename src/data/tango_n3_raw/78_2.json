@@ -1,28 +1,31 @@
 {
-  "id": "78_2",
   "title": "Topic 5",
-  "japanese_text": "<ruby>容量<rt>ようりょう</rt></ruby><ruby>がすぐになくなるので、<rt></rt></ruby><ruby>無駄<rt>むだ</rt></ruby><ruby>なデータや<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>わないファイルはなるべく<rt></rt></ruby><ruby>消<rt>け</rt></ruby><ruby>すようにしている。<rt></rt></ruby>",
+  "japanese_text": "<ruby><u>容量</u><rt>ようりょう</rt></ruby><ruby>がすぐになくなるので、<rt></rt></ruby><ruby>無駄<rt>むだ</rt></ruby><ruby>な<u>データ</u>や<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>わない<u>ファイル</u>はなるべく<rt></rt></ruby><ruby>消<rt>け</rt></ruby><ruby>すようにしている。<rt></rt></ruby>",
   "english_translation": "Since I (always) run out of storage space so quickly, I try to delete as much unneeded data and files as I can.",
   "annotated_words": [
     {
+      "word_id": "n3_1183",
+      "word_number": 1183,
       "kanji": "容量",
       "furigana": "ようりょう",
-      "meaning": "capacity"
+      "meaning_en": "capacity"
     },
     {
-      "kanji": "無駄な",
-      "furigana": "むだな",
-      "meaning": "useless"
-    },
-    {
+      "word_id": "n3_1184",
+      "word_number": 1184,
       "kanji": "データ",
       "furigana": "",
-      "meaning": "data"
+      "meaning_en": "data"
     },
     {
+      "word_id": "n3_1185",
+      "word_number": 1185,
       "kanji": "ファイル",
       "furigana": "",
-      "meaning": "file"
+      "meaning_en": "file"
     }
-  ]
+  ],
+  "story_number": 10,
+  "is_story": true,
+  "page_story": "78_2"
 }

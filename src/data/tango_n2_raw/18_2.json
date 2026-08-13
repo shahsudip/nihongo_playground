@@ -3,7 +3,7 @@
   "story_number": 7,
   "title": "Topic 1 食事",
   "page_story": "18_2",
-  "japanese_text": "A：今度の歓迎会だけど、焼肉<u>食べ放題</u>はどう？\nB：いいですね。でも、胃が<u>もたれ</u>そうだな。\nA：え、まだ若いのに。じゃあ、このしゃぶしゃぶ屋はどう？<u>上等な</u>肉が安く食べられるって<u>口コミ</u>でも評判だよ。",
+  "japanese_text": "A：<ruby>今度<rt>こんど</rt></ruby>の<ruby>歓迎会<rt>かんげいかい</rt></ruby>だけど、<ruby>焼肉<rt>やきにく</rt></ruby><u>食べ放題</u>はどう？\\nB：いいですね。でも、<ruby>胃<rt>い</rt></ruby>が<u>もたれ</u>そうだな。\\nA：え、まだ<ruby>若<rt>わか</rt></ruby>いのに。じゃあ、このしゃぶしゃぶ<ruby>屋<rt>や</rt></ruby>はどう？<u>上等な</u><ruby>肉<rt>にく</rt></ruby>が<ruby>安<rt>やす</rt></ruby>く<ruby>食<rt>た</rt></ruby>べられるって<u>口コミ</u>でも<ruby>評判<rt>ひょうばん</rt></ruby>だよ。",
   "english_translation": "A: How about all-you-can-eat barbecue for the upcoming welcome party? B: Sounds good. But it'll probably sit too heavily in my stomach. A: What? You're still young. How about this shabu-shabu place? It's got great word-of-mouth for being inexpensive for top-quality meat.",
   "annotated_words": [
     {
@@ -12,13 +12,6 @@
       "kanji": "食べ放題",
       "furigana": "たべほうだい",
       "meaning_en": "all-you-can-eat"
-    },
-    {
-      "word_id": "n2_0034",
-      "word_number": 34,
-      "kanji": "～放題",
-      "furigana": "ほうだい",
-      "meaning_en": "all-you-can-~"
     },
     {
       "word_id": "n2_0035",

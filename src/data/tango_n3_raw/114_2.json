@@ -1,48 +1,38 @@
 {
-  "id": "114_2",
   "title": "Topic 8",
-  "japanese_text": "オリンピックの<ruby>開会式<rt>かいかいしき</rt></ruby>の<ruby>入場券<rt>にゅうじょうけん</rt></ruby>が<ruby>抽選<rt>ちゅうせん</rt></ruby>で<ruby>当<rt>あ</rt></ruby>たった。",
+  "japanese_text": "<u>オリンピック</u>の<ruby><u>開会</u>式<rt>かいかいしき</rt></ruby>の<ruby><u>入場</u><u>券</u><rt>にゅうじょうけん</rt></ruby>が<ruby>抽選<rt>ちゅうせん</rt></ruby>で<ruby>当<rt>あ</rt></ruby>たった。",
   "english_translation": "I won the lottery for tickets for the Olympic Opening Ceremony.",
   "annotated_words": [
     {
+      "word_id": "n3_1357",
+      "word_number": 1357,
       "kanji": "オリンピック",
       "furigana": "",
-      "meaning": "the Olympics"
+      "meaning_en": "the Olympics"
     },
     {
+      "word_id": "n3_1358",
+      "word_number": 1358,
       "kanji": "開会［する］",
       "furigana": "かいかい",
-      "meaning": "opening ceremony, have an opening ceremony"
+      "meaning_en": "opening ceremony, have an opening ceremony"
     },
     {
-      "kanji": "閉会［する］",
-      "furigana": "へいかい",
-      "meaning": "closing ceremony, have a closing ceremony"
-    },
-    {
+      "word_id": "n3_1359",
+      "word_number": 1359,
       "kanji": "入場［する］",
       "furigana": "にゅうじょう",
-      "meaning": "entrance, enter (a venue)"
+      "meaning_en": "entrance, enter (a venue)"
     },
     {
-      "kanji": "退場［する］",
-      "furigana": "たいじょう",
-      "meaning": "leaving, leave (a venue)"
-    },
-    {
+      "word_id": "n3_1360",
+      "word_number": 1360,
       "kanji": "券",
       "furigana": "けん",
-      "meaning": "ticket"
-    },
-    {
-      "kanji": "チケット",
-      "furigana": "",
-      "meaning": "ticket"
-    },
-    {
-      "kanji": "当たる",
-      "furigana": "あたる",
-      "meaning": "win (a lottery)"
+      "meaning_en": "ticket"
     }
-  ]
+  ],
+  "story_number": 2,
+  "is_story": true,
+  "page_story": "114_2"
 }

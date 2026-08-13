@@ -1,28 +1,24 @@
 {
-  "id": "47_0",
   "title": "Topic 2",
-  "japanese_text": "ワイシャツを<span class='annotated-word' data-word='インク'>インク</span>で<span class='annotated-word' data-word='汚して'><ruby>汚<rt>よご</rt></ruby>して</span>しまったので、<span class='annotated-word' data-word='慌てて'><ruby>慌<rt>あわ</rt></ruby>てて</span><span class='annotated-word' data-word='洗剤'><ruby>洗剤<rt>せんざい</rt></ruby></span>をつけて<ruby>洗<rt>あら</rt></ruby>った。",
+  "japanese_text": "ワイシャツを<u>インク</u>で<ruby>汚<rt>よご</rt></ruby>してしまったので、<ruby>慌<rt>あわ</rt></ruby>てて<ruby><u>洗剤</u><rt>せんざい</rt></ruby>をつけて<ruby>洗<rt>あら</rt></ruby>った。",
   "english_translation": "I got ink on my dress shirt, so I hurriedly rubbed detergent on it and washed it.",
   "annotated_words": [
     {
-      "meaning_en": "ink",
+      "word_id": "n3_1047",
+      "word_number": 1047,
+      "kanji": "インク",
       "furigana": "",
-      "kanji": "インク"
+      "meaning_en": "ink"
     },
     {
-      "meaning_en": "stain, get dirty",
-      "furigana": "よごす",
-      "kanji": "汚す"
-    },
-    {
-      "meaning_en": "be hurried, panic",
-      "furigana": "あわてる",
-      "kanji": "慌てる"
-    },
-    {
-      "meaning_en": "detergent",
+      "word_id": "n3_1048",
+      "word_number": 1048,
+      "kanji": "洗剤",
       "furigana": "せんざい",
-      "kanji": "洗剤"
+      "meaning_en": "detergent"
     }
-  ]
+  ],
+  "story_number": 21,
+  "is_story": true,
+  "page_story": "47_0"
 }

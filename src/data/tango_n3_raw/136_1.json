@@ -1,28 +1,38 @@
 {
-  "id": "136_1",
-  "title": "Topic 9",
-  "japanese_text": "<ruby>毎朝<rt>まいあさ</rt></ruby>、<ruby>愛犬<rt>あいけん</rt></ruby>の<ruby>毛<rt>け</rt></ruby>をブラシでとかして、<ruby>爪<rt>つめ</rt></ruby>を<ruby>切<rt>き</rt></ruby>っている。しっぽを<ruby>振<rt>ふ</rt></ruby>って<ruby>喜<rt>よろこ</rt></ruby>んでくれる<ruby>姿<rt>すがた</rt></ruby>がとてもかわいく、<ruby>心<rt>こころ</rt></ruby>が<ruby>癒<rt>いや</rt></ruby>される。",
+  "title": "Topic 9 動物 Animals",
+  "japanese_text": "<ruby>毎朝<rt>まいあさ</rt></ruby>、<ruby>愛犬<rt>あいけん</rt></ruby>の<ruby>毛<rt>け</rt></ruby>を<u>ブラシ</u>でとかして、<u><ruby>爪<rt>つめ</rt></ruby></u>を<ruby>切<rt>き</rt></ruby>っている。しっぽを<u><ruby>振<rt>ふ</rt></ruby>って</u><ruby>喜<rt>よろこ</rt></ruby>んでくれる<ruby>姿<rt>すがた</rt></ruby>がとてもかわいく、<u><ruby>心<rt>こころ</rt></ruby></u>が<ruby>癒<rt>いや</rt></ruby>される。",
   "english_translation": "Every morning, I brush my pet's dog hair with a brush and cut its nails. Seeing its tail wag in happiness is so cute, and it warms my heart.",
   "annotated_words": [
     {
+      "word_id": "n3_0941",
+      "word_number": 941,
       "kanji": "ブラシ",
       "furigana": "",
-      "meaning": "brush"
+      "meaning_en": "brush"
     },
     {
+      "word_id": "n3_0942",
+      "word_number": 942,
       "kanji": "爪",
       "furigana": "つめ",
-      "meaning": "nail"
+      "meaning_en": "nail"
     },
     {
+      "word_id": "n3_0943",
+      "word_number": 943,
       "kanji": "振る",
       "furigana": "ふる",
-      "meaning": "wag, shake"
+      "meaning_en": "wag, shake"
     },
     {
+      "word_id": "n3_0944",
+      "word_number": 944,
       "kanji": "心",
       "furigana": "こころ",
-      "meaning": "heart"
+      "meaning_en": "heart"
     }
-  ]
+  ],
+  "story_number": 16,
+  "is_story": true,
+  "page_story": "136_1"
 }

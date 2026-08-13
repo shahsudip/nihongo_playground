@@ -1,43 +1,59 @@
 {
-  "id": "80_2",
   "title": "Topic 5",
-  "japanese_text": "<ruby>Ａ：パスワードってさ、<rt></rt></ruby><ruby>数字<rt>すうじ</rt></ruby><ruby>があるものとか、<rt></rt></ruby><ruby>文字<rt>もじ</rt></ruby><ruby>だけのものと<rt></rt></ruby><ruby>かいろいろあって<rt></rt></ruby><ruby>覚<rt>おぼ</rt></ruby><ruby>えるのが<rt></rt></ruby><ruby>大変<rt>たいへん</rt></ruby><ruby>じゃない？ しかも<rt></rt></ruby><ruby>数回間<rt>すうかいま</rt></ruby><ruby>違<rt>ちが</rt></ruby><ruby>えたら、ロックされるし。<rt></rt></ruby>\n<ruby>Ｂ：それならパスワード<rt></rt></ruby><ruby>管理<rt>かんり</rt></ruby><ruby>アプリをインストールするといいよ。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：<u>パスワード</u>ってさ、<rt></rt></ruby><ruby><u>数字</u><rt>すうじ</rt></ruby><ruby>があるものとか、<rt></rt></ruby><ruby><u>文字</u><rt>もじ</rt></ruby><ruby>だけのものと<rt></rt></ruby><ruby>かいろいろあって<rt></rt></ruby><ruby>覚<rt>おぼ</rt></ruby><ruby>えるのが<rt></rt></ruby><ruby>大変<rt>たいへん</rt></ruby><ruby>じゃない？ しかも<rt></rt></ruby><ruby><u>数回</u>間<rt>すうかいま</rt></ruby><ruby>違<rt>ちが</rt></ruby><ruby>えたら、<u>ロック</u>されるし。<rt></rt></ruby>\n<ruby>Ｂ：<u>それなら</u>パスワード<rt></rt></ruby><ruby>管理<rt>かんり</rt></ruby><ruby>アプリを<u>インストール</u>するといいよ。<rt></rt></ruby>",
   "english_translation": "A: Isn't it really difficult to remember passwords when you've got some with numbers and some with only letters or something? What's more, if you get it wrong several times, your account will be locked.\nB: If that's the case, then you should install a password management app.",
   "annotated_words": [
     {
+      "word_id": "n3_1199",
+      "word_number": 1199,
       "kanji": "パスワード",
       "furigana": "",
-      "meaning": "password"
+      "meaning_en": "password"
     },
     {
+      "word_id": "n3_1200",
+      "word_number": 1200,
       "kanji": "数字",
       "furigana": "すうじ",
-      "meaning": "number"
+      "meaning_en": "number"
     },
     {
+      "word_id": "n3_1201",
+      "word_number": 1201,
       "kanji": "文字",
       "furigana": "もじ",
-      "meaning": "letter"
+      "meaning_en": "letter"
     },
     {
+      "word_id": "n3_1202",
+      "word_number": 1202,
       "kanji": "数回",
       "furigana": "すうかい",
-      "meaning": "several times"
+      "meaning_en": "several times"
     },
     {
+      "word_id": "n3_1203",
+      "word_number": 1203,
       "kanji": "ロック",
       "furigana": "",
-      "meaning": "lock, lock"
+      "meaning_en": "lock, lock"
     },
     {
+      "word_id": "n3_1204",
+      "word_number": 1204,
       "kanji": "それなら",
       "furigana": "",
-      "meaning": "in that case"
+      "meaning_en": "in that case"
     },
     {
+      "word_id": "n3_1205",
+      "word_number": 1205,
       "kanji": "インストール",
       "furigana": "",
-      "meaning": "installation, install"
+      "meaning_en": "installation, install"
     }
-  ]
+  ],
+  "story_number": 14,
+  "is_story": true,
+  "page_story": "80_2"
 }

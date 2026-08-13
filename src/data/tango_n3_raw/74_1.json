@@ -1,43 +1,38 @@
 {
-  "id": "74_1",
   "title": "Topic 5",
-  "japanese_text": "<ruby>Ａ：<rt></rt></ruby><ruby>昨日<rt>きのう</rt></ruby><ruby>スマホ<rt></rt></ruby><ruby>落<rt>お</rt></ruby><ruby>としちゃって、<rt></rt></ruby><ruby>画面<rt>がめん</rt></ruby><ruby>割<rt>わ</rt></ruby><ruby>れた。<rt></rt></ruby><ruby>修理<rt>しゅうり</rt></ruby><ruby>も<rt></rt></ruby><ruby>無理<rt>むり</rt></ruby><ruby>だって。ショックだよー。<rt></rt></ruby>\n<ruby>Ｂ：え、カバー<rt></rt></ruby><ruby>付<rt>つ</rt></ruby><ruby>けてなかったの？<rt></rt></ruby>\n<ruby>Ａ：<rt></rt></ruby><ruby>今度<rt>こんど</rt></ruby><ruby>から<rt></rt></ruby><ruby>付<rt>つ</rt></ruby><ruby>けるようにする。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：<rt></rt></ruby><ruby>昨日<rt>きのう</rt></ruby><ruby>スマホ<rt></rt></ruby><ruby>落<rt>お</rt></ruby><ruby>としちゃって、<rt></rt></ruby><ruby><u>画面</u><rt>がめん</rt></ruby><ruby>割<rt>わ</rt></ruby><ruby>れた。<rt></rt></ruby><ruby><u>修理</u><rt>しゅうり</rt></ruby><ruby>も<rt></rt></ruby><ruby>無理<rt>むり</rt></ruby><ruby>だって。<u>ショック</u>だよー。<rt></rt></ruby>\n<ruby>Ｂ：え、<u>カバー</u><rt></rt></ruby><ruby>付<rt>つ</rt></ruby><ruby>けてなかったの？<rt></rt></ruby>\n<ruby>Ａ：<rt></rt></ruby><ruby>今度<rt>こんど</rt></ruby><ruby>から<rt></rt></ruby><ruby>付<rt>つ</rt></ruby><ruby>けるようにする。<rt></rt></ruby>",
   "english_translation": "A: Yesterday, I dropped my smartphone and broke the screen. They said it's impossible to repair. I'm in shock.\nB: What, didn't you put a cover on it?\nA: I'll be sure to put one on the next time.",
   "annotated_words": [
     {
+      "word_id": "n3_1154",
+      "word_number": 1154,
       "kanji": "画面",
       "furigana": "がめん",
-      "meaning": "screen"
+      "meaning_en": "screen"
     },
     {
-      "kanji": "画面共有",
-      "furigana": "がめんきょうゆう",
-      "meaning": "screen sharing"
-    },
-    {
-      "kanji": "割れる",
-      "furigana": "われる",
-      "meaning": "break"
-    },
-    {
-      "kanji": "割る",
-      "furigana": "わる",
-      "meaning": "be broken"
-    },
-    {
+      "word_id": "n3_1155",
+      "word_number": 1155,
       "kanji": "修理",
       "furigana": "しゅうり",
-      "meaning": "repairs, repair"
+      "meaning_en": "repairs, repair"
     },
     {
+      "word_id": "n3_1156",
+      "word_number": 1156,
       "kanji": "ショック",
       "furigana": "",
-      "meaning": "shock"
+      "meaning_en": "shock"
     },
     {
+      "word_id": "n3_1157",
+      "word_number": 1157,
       "kanji": "カバー",
       "furigana": "",
-      "meaning": "cover"
+      "meaning_en": "cover"
     }
-  ]
+  ],
+  "story_number": 1,
+  "is_story": true,
+  "page_story": "74_1"
 }

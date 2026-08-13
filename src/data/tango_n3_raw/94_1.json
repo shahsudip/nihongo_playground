@@ -1,38 +1,24 @@
 {
-  "id": "94_1",
   "title": "Topic 6",
-  "japanese_text": "Ａ：この<ruby>前<rt>まえ</rt></ruby><ruby>勧<rt>すす</rt></ruby>めてくれたドラマ、<ruby>追<rt>お</rt></ruby>いついたよ。\nＢ：え、もう？いつ<ruby>教<rt>おし</rt></ruby>えたっけ。\nＡ：<ruby>先々週<rt>せんせんしゅう</rt></ruby>だから、２<ruby>週間<rt>しゅうかん</rt></ruby>で20<ruby>話<rt>わ</rt></ruby>ぐらい<ruby>見<rt>み</rt></ruby>たかな。<ruby>今夜<rt>こんや</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>は<ruby>予約済<rt>よやくず</rt></ruby>み。",
+  "japanese_text": "Ａ：この<ruby>前<rt>まえ</rt></ruby><ruby>勧<rt>すす</rt></ruby>めてくれた<u>ドラマ</u>、<ruby>追<rt>お</rt></ruby>いついたよ。\nＢ：え、もう？いつ<ruby>教<rt>おし</rt></ruby>えたっけ。\nＡ：<ruby><u>先々週</u><rt>せんせんしゅう</rt></ruby>だから、２<ruby>週間<rt>しゅうかん</rt></ruby>で20<ruby>話<rt>わ</rt></ruby>ぐらい<ruby>見<rt>み</rt></ruby>たかな。<ruby>今夜<rt>こんや</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>は<ruby>予約済<rt>よやくず</rt></ruby>み。",
   "english_translation": "A: I got caught up in that drama that recommended to me the other day.\nB: What? Already? When did I tell you about it again?\nA: The week before last, so I watched 20 episodes in about two weeks. I've already set a reservation for tonight's episode.",
   "annotated_words": [
     {
-      "kanji": "勧める",
-      "furigana": "すすめる",
-      "meaning": "recommend"
-    },
-    {
-      "kanji": "おすすめ［する］",
-      "furigana": "",
-      "meaning": "recommended, recommendation"
-    },
-    {
+      "word_id": "n3_1271",
+      "word_number": 1271,
       "kanji": "ドラマ",
       "furigana": "",
-      "meaning": "drama"
+      "meaning_en": "drama"
     },
     {
-      "kanji": "追いつく",
-      "furigana": "おいつく",
-      "meaning": "catch up"
-    },
-    {
+      "word_id": "n3_1272",
+      "word_number": 1272,
       "kanji": "先々週",
       "furigana": "せんせんしゅう",
-      "meaning": "week before last"
-    },
-    {
-      "kanji": "〜済み",
-      "furigana": "〜ずみ",
-      "meaning": "finished ~"
+      "meaning_en": "week before last"
     }
-  ]
+  ],
+  "story_number": 4,
+  "is_story": true,
+  "page_story": "94_1"
 }

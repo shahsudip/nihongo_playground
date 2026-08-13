@@ -1,33 +1,17 @@
 {
-  "id": "49_0",
   "title": "Topic 2",
-  "japanese_text": "〈<ruby>母親<rt>ははおや</rt></ruby>から<ruby>子<rt>こ</rt></ruby>どもへのメモ<ruby>書<rt>が</rt></ruby>き〉<ruby>昨日<rt>きのう</rt></ruby>の<ruby>夕<rt>ゆう</rt></ruby>ご飯の<span class='annotated-word' data-word='残り'><ruby>残<rt>のこ</rt></ruby>り</span>が<span class='annotated-word' data-word='紺色'><ruby>紺色<rt>こんいろ</rt></ruby></span>のお<ruby>皿<rt>さら</rt></ruby>に<ruby>入<rt>はい</rt></ruby>っているから、それをお<ruby>昼<rt>ひる</rt></ruby>に<ruby>食<rt>た</rt></ruby>べてね。<span class='annotated-word' data-word='レンジ'>レンジ</span>で１<ruby>分<rt>ぷん</rt></ruby>ほど<span class='annotated-word' data-word='温めて'><ruby>温<rt>あたた</rt></ruby>めて</span>ね。",
+  "japanese_text": "〈<ruby>母親<rt>ははおや</rt></ruby>から<ruby>子<rt>こ</rt></ruby>どもへのメモ<ruby>書<rt>が</rt></ruby>き〉<ruby>昨日<rt>きのう</rt></ruby>の<ruby>夕<rt>ゆう</rt></ruby>ご飯の<ruby>残<rt>のこ</rt></ruby>りが<ruby><u>紺色</u><rt>こんいろ</rt></ruby>のお<ruby>皿<rt>さら</rt></ruby>に<ruby>入<rt>はい</rt></ruby>っているから、それをお<ruby>昼<rt>ひる</rt></ruby>に<ruby>食<rt>た</rt></ruby>べてね。レンジで１<ruby>分<rt>ぷん</rt></ruby>ほど<ruby>温<rt>あたた</rt></ruby>めてね。",
   "english_translation": "A memo from a mother to her child: \"The leftovers from yesterday's dinner is in the indigo dish, so eat it for lunch. Please warm it up for about one minute in the microwave.\"",
   "annotated_words": [
     {
-      "meaning_en": "leftovers, remaining",
-      "furigana": "のこり",
-      "kanji": "残り"
-    },
-    {
-      "meaning_en": "indigo, deep blue",
+      "word_id": "n3_1056",
+      "word_number": 1056,
+      "kanji": "紺色",
       "furigana": "こんいろ",
-      "kanji": "紺色"
-    },
-    {
-      "meaning_en": "microwave",
-      "furigana": "でんしレンジ",
-      "kanji": "（電子）レンジ"
-    },
-    {
-      "meaning_en": "heat up, warm",
-      "furigana": "あたためる",
-      "kanji": "温める"
-    },
-    {
-      "meaning_en": "be heated up, be warmed",
-      "furigana": "あたたまる",
-      "kanji": "温まる"
+      "meaning_en": "indigo, deep blue"
     }
-  ]
+  ],
+  "story_number": 25,
+  "is_story": true,
+  "page_story": "49_0"
 }

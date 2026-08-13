@@ -1,33 +1,24 @@
 {
-  "id": "41_1",
   "title": "Topic 2",
-  "japanese_text": "みそ<ruby>汁<rt>しる</rt></ruby>の<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>は<ruby>簡単<rt>かんたん</rt></ruby>です。だしを<ruby>取<rt>と</rt></ruby>って、<span class='annotated-word' data-word='材料'><ruby>材料<rt>ざいりょう</rt></ruby></span>を<ruby>入<rt>い</rt></ruby>れて<ruby>煮<rt>に</rt></ruby>ます。<ruby>最後<rt>さいご</rt></ruby>に<span class='annotated-word' data-word='おたま'>おたま</span>でみそを<span class='annotated-word' data-word='溶く'><ruby>溶<rt>と</rt></ruby>いたら</span><span class='annotated-word' data-word='でき上がり'>でき<ruby>上<rt>あ</rt></ruby>がり</span>です。",
+  "japanese_text": "みそ<ruby>汁<rt>しる</rt></ruby>の<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>は<ruby>簡単<rt>かんたん</rt></ruby>です。だしを<ruby>取<rt>と</rt></ruby>って、<ruby><u>材料</u><rt>ざいりょう</rt></ruby>を<ruby>入<rt>い</rt></ruby>れて<ruby>煮<rt>に</rt></ruby>ます。<ruby>最後<rt>さいご</rt></ruby>に<u>おたま</u>でみそを<ruby>溶<rt>と</rt></ruby>いたらでき<ruby>上<rt>あ</rt></ruby>がりです。",
   "english_translation": "Making miso soup is easy. Take the stock, add the ingredients and then cook it. Lastly, dissolve the miso using a ladle, and it's finished.",
   "annotated_words": [
     {
-      "meaning_en": "ingredients, materials",
+      "word_id": "n3_1021",
+      "word_number": 1021,
+      "kanji": "材料",
       "furigana": "ざいりょう",
-      "kanji": "材料"
+      "meaning_en": "ingredients, materials"
     },
     {
-      "meaning_en": "ladle",
+      "word_id": "n3_1022",
+      "word_number": 1022,
+      "kanji": "おたま",
       "furigana": "",
-      "kanji": "おたま"
-    },
-    {
-      "meaning_en": "melt",
-      "furigana": "とく",
-      "kanji": "溶く"
-    },
-    {
-      "meaning_en": "finished, complete",
-      "furigana": "できあがり",
-      "kanji": "でき上がり"
-    },
-    {
-      "meaning_en": "be finished",
-      "furigana": "できあがる",
-      "kanji": "でき上がる"
+      "meaning_en": "ladle"
     }
-  ]
+  ],
+  "story_number": 11,
+  "is_story": true,
+  "page_story": "41_1"
 }

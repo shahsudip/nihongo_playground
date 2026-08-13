@@ -1,38 +1,38 @@
 {
-  "id": "52_1",
   "title": "Topic 3",
-  "japanese_text": "ドラッグストア<ruby>に<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>の<rt></rt></ruby><ruby>列<rt>れつ</rt></ruby><ruby>ができていた。<rt></rt></ruby><ruby>閉店<rt>へいてん</rt></ruby><ruby>するから、<rt></rt></ruby><ruby>店内<rt>てんない</rt></ruby><ruby>の<rt></rt></ruby><ruby>商品<rt>しょうひん</rt></ruby><ruby>が<rt></rt></ruby><ruby>定価<rt>ていか</rt></ruby><ruby>の<rt></rt></ruby>２<ruby>割引<rt>わりびき</rt></ruby><ruby>から<rt></rt></ruby><ruby>半額<rt>はんがく</rt></ruby><ruby>で<rt></rt></ruby><ruby>買<rt>か</rt></ruby><ruby>えるらしい。<rt></rt></ruby>",
+  "japanese_text": "<u>ドラッグストア</u><ruby>に<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>の<rt></rt></ruby><ruby><u>列</u><rt>れつ</rt></ruby><ruby>ができていた。<rt></rt></ruby><ruby>閉店<rt>へいてん</rt></ruby><ruby>するから、<rt></rt></ruby><ruby>店内<rt>てんない</rt></ruby><ruby>の<rt></rt></ruby><ruby>商品<rt>しょうひん</rt></ruby><ruby>が<rt></rt></ruby><ruby><u>定価</u><rt>ていか</rt></ruby><ruby>の<rt></rt></ruby>２<ruby>割引<rt>わりびき</rt></ruby><ruby>から<rt></rt></ruby><ruby><u>半額</u><rt>はんがく</rt></ruby><ruby>で<rt></rt></ruby><ruby>買<rt>か</rt></ruby><ruby>えるらしい。<rt></rt></ruby>",
   "english_translation": "There was a line of people at the drugstore. It's going to close, so it seems that products in the store can be purchased at a discount of 20 percent to half off of the list price.",
   "annotated_words": [
     {
+      "word_id": "n3_1059",
+      "word_number": 1059,
       "kanji": "ドラッグストア",
       "furigana": "",
-      "meaning": "drug store"
+      "meaning_en": "drug store"
     },
     {
-      "kanji": "薬局",
-      "furigana": "やっきょく",
-      "meaning": "pharmacy"
-    },
-    {
+      "word_id": "n3_1060",
+      "word_number": 1060,
       "kanji": "列",
       "furigana": "れつ",
-      "meaning": "line"
+      "meaning_en": "line"
     },
     {
+      "word_id": "n3_1061",
+      "word_number": 1061,
       "kanji": "定価",
       "furigana": "ていか",
-      "meaning": "retail price"
+      "meaning_en": "retail price"
     },
     {
-      "kanji": "〜割引",
-      "furigana": "〜わりびき",
-      "meaning": "~ discount, ~ off"
-    },
-    {
+      "word_id": "n3_1062",
+      "word_number": 1062,
       "kanji": "半額",
       "furigana": "はんがく",
-      "meaning": "half off, half price"
+      "meaning_en": "half off, half price"
     }
-  ]
+  ],
+  "story_number": 1,
+  "is_story": true,
+  "page_story": "52_1"
 }

@@ -1,48 +1,38 @@
 {
-  "id": "108_2",
   "title": "Topic 7",
-  "japanese_text": "<ruby>中学生<rt>ちゅうがくせい</rt></ruby>の<ruby>姪<rt>めい</rt></ruby>とは<ruby>仲<rt>なか</rt></ruby>がいい。<ruby>日<rt>ひ</rt></ruby>が<ruby>暮<rt>く</rt></ruby>れたら３<ruby>年<rt>ねん</rt></ruby>ぶりに<ruby>花火<rt>はなび</rt></ruby>をしようと<ruby>約束<rt>やくそく</rt></ruby>した。しかし、ライターを<ruby>切<rt>き</rt></ruby>らしていて、できなかった。<ruby>私<rt>わたし</rt></ruby>は「すまないね」と<ruby>謝<rt>あやま</rt></ruby>った。",
+  "japanese_text": "<ruby>中学生<rt>ちゅうがくせい</rt></ruby>の<ruby><u>姪</u><rt>めい</rt></ruby>とは<ruby><u>仲</u><rt>なか</rt></ruby>がいい。<ruby>日<rt>ひ</rt></ruby>が<ruby>暮<rt>く</rt></ruby>れたら３<ruby>年<rt>ねん</rt></ruby>ぶりに<ruby><u>花火</u><rt>はなび</rt></ruby>をしようと<ruby>約束<rt>やくそく</rt></ruby>した。しかし、ライターを<ruby>切<rt>き</rt></ruby>らしていて、できなかった。<ruby>私<rt>わたし</rt></ruby>は「<u>すまない</u>ね」と<ruby>謝<rt>あやま</rt></ruby>った。",
   "english_translation": "I'm close with my niece who is a junior high school student. When the sun went down, I promised to light some fireworks for the first time in three years. However, my lighter was empty and I couldn't light them. I told her I was sorry.",
   "annotated_words": [
     {
+      "word_id": "n3_1340",
+      "word_number": 1340,
       "kanji": "姪",
       "furigana": "めい",
-      "meaning": "niece"
+      "meaning_en": "niece"
     },
     {
-      "kanji": "甥",
-      "furigana": "おい",
-      "meaning": "nephew"
-    },
-    {
+      "word_id": "n3_1341",
+      "word_number": 1341,
       "kanji": "仲",
       "furigana": "なか",
-      "meaning": "relationship"
+      "meaning_en": "relationship"
     },
     {
-      "kanji": "暮れる",
-      "furigana": "くれる",
-      "meaning": "get dark"
-    },
-    {
-      "kanji": "〜ぶり",
-      "furigana": "",
-      "meaning": "in ~ (timespan)"
-    },
-    {
+      "word_id": "n3_1342",
+      "word_number": 1342,
       "kanji": "花火",
       "furigana": "はなび",
-      "meaning": "fireworks"
+      "meaning_en": "fireworks"
     },
     {
-      "kanji": "切らす",
-      "furigana": "きらす",
-      "meaning": "run out"
-    },
-    {
+      "word_id": "n3_1343",
+      "word_number": 1343,
       "kanji": "すまない",
       "furigana": "",
-      "meaning": "remorseful"
+      "meaning_en": "remorseful"
     }
-  ]
+  ],
+  "story_number": 5,
+  "is_story": true,
+  "page_story": "108_2"
 }

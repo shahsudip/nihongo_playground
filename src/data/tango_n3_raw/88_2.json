@@ -1,28 +1,24 @@
 {
-  "id": "88_2",
   "title": "Topic 5",
-  "japanese_text": "<ruby>紙<rt>かみ</rt></ruby><ruby>のアルバムの<rt></rt></ruby><ruby>中<rt>なか</rt></ruby><ruby>の<rt></rt></ruby><ruby>写真<rt>しゃしん</rt></ruby><ruby>をスキャンして、インターネットに<rt></rt></ruby><ruby>移<rt>うつ</rt></ruby><ruby>した。<rt></rt></ruby>",
+  "japanese_text": "<ruby>紙<rt>かみ</rt></ruby><ruby>の<u>アルバム</u>の<rt></rt></ruby><ruby>中<rt>なか</rt></ruby><ruby>の<rt></rt></ruby><ruby>写真<rt>しゃしん</rt></ruby><ruby>を<u>スキャン</u>して、インターネットに<rt></rt></ruby><ruby>移<rt>うつ</rt></ruby><ruby>した。<rt></rt></ruby>",
   "english_translation": "I scanned the pictures in my paper album and transferred them to the internet.",
   "annotated_words": [
     {
+      "word_id": "n3_1255",
+      "word_number": 1255,
       "kanji": "アルバム",
       "furigana": "",
-      "meaning": "album"
+      "meaning_en": "album"
     },
     {
+      "word_id": "n3_1256",
+      "word_number": 1256,
       "kanji": "スキャン",
       "furigana": "",
-      "meaning": "scanning, scan"
-    },
-    {
-      "kanji": "移す",
-      "furigana": "うつす",
-      "meaning": "transfer, move"
-    },
-    {
-      "kanji": "移る",
-      "furigana": "うつる",
-      "meaning": "be transferred, be moved"
+      "meaning_en": "scanning, scan"
     }
-  ]
+  ],
+  "story_number": 29,
+  "is_story": true,
+  "page_story": "88_2"
 }

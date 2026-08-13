@@ -1,38 +1,38 @@
 {
-  "id": "48_0",
   "title": "Topic 2",
-  "japanese_text": "<span class='annotated-word' data-word='おととい'>おととい</span><ruby>飲<rt>の</rt></ruby>んだワインの<span class='annotated-word' data-word='瓶'><ruby>瓶<rt>びん</rt></ruby></span>がとてもきれいだったので、<span class='annotated-word' data-word='内側'><ruby>内側<rt>うちがわ</rt></ruby></span>をきれいに<ruby>洗<rt>あら</rt></ruby>って、<ruby>花瓶<rt>かびん</rt></ruby>として<ruby>使<rt>つか</rt></ruby>うことにした。<ruby>下<rt>した</rt></ruby>にきれいなレースを<span class='annotated-word' data-word='敷く'><ruby>敷<rt>し</rt></ruby>く</span>と、とてもいい<ruby>雰囲気<rt>ふんいき</rt></ruby>になった。<ruby>我<rt>わ</rt></ruby>が<ruby>家<rt>や</rt></ruby>は<span class='annotated-word' data-word='年中'><ruby>年中<rt>ねんじゅう</rt></ruby></span><ruby>花<rt>はな</rt></ruby>を<ruby>生<rt>い</rt></ruby>けているため、<ruby>花瓶<rt>かびん</rt></ruby>がたくさん<ruby>必要<rt>ひつよう</rt></ruby>なのだ。",
+  "japanese_text": "<u>おととい</u><ruby>飲<rt>の</rt></ruby>んだワインの<ruby><u>瓶</u><rt>びん</rt></ruby>がとてもきれいだったので、<ruby><u>内側</u><rt>うちがわ</rt></ruby>をきれいに<ruby>洗<rt>あら</rt></ruby>って、<ruby>花瓶<rt>かびん</rt></ruby>として<ruby>使<rt>つか</rt></ruby>うことにした。<ruby>下<rt>した</rt></ruby>にきれいなレースを<ruby>敷<rt>し</rt></ruby>くと、とてもいい<ruby>雰囲気<rt>ふんいき</rt></ruby>になった。<ruby>我<rt>わ</rt></ruby>が<ruby>家<rt>や</rt></ruby>は<ruby><u>年中</u><rt>ねんじゅう</rt></ruby><ruby>花<rt>はな</rt></ruby>を<ruby>生<rt>い</rt></ruby>けているため、<ruby>花瓶<rt>かびん</rt></ruby>がたくさん<ruby>必要<rt>ひつよう</rt></ruby>なのだ。",
   "english_translation": "The bottle of the wine I drunk the day before yesterday was very beautiful, so I washed the inside clean and used it as a vase. I laid a beautiful lace cloth below it and it really improved the atmosphere. Because my house is full of flowers year-round, I need a lot of vases.",
   "annotated_words": [
     {
-      "meaning_en": "day before yesterday",
+      "word_id": "n3_1050",
+      "word_number": 1050,
+      "kanji": "おととい",
       "furigana": "",
-      "kanji": "おととい"
+      "meaning_en": "day before yesterday"
     },
     {
-      "meaning_en": "bottle",
+      "word_id": "n3_1051",
+      "word_number": 1051,
+      "kanji": "瓶",
       "furigana": "びん",
-      "kanji": "瓶"
+      "meaning_en": "bottle"
     },
     {
-      "meaning_en": "inside",
+      "word_id": "n3_1052",
+      "word_number": 1052,
+      "kanji": "内側",
       "furigana": "うちがわ",
-      "kanji": "内側"
+      "meaning_en": "inside"
     },
     {
-      "meaning_en": "outside",
-      "furigana": "そとがわ",
-      "kanji": "外側"
-    },
-    {
-      "meaning_en": "lay",
-      "furigana": "しく",
-      "kanji": "敷く"
-    },
-    {
-      "meaning_en": "all year round",
+      "word_id": "n3_1053",
+      "word_number": 1053,
+      "kanji": "年中",
       "furigana": "ねんじゅう",
-      "kanji": "年中"
+      "meaning_en": "all year round"
     }
-  ]
+  ],
+  "story_number": 23,
+  "is_story": true,
+  "page_story": "48_0"
 }

@@ -1,23 +1,31 @@
 {
-  "id": "125_1",
   "title": "Topic 8",
-  "japanese_text": "<ruby>会費<rt>かいひ</rt></ruby>を<ruby>支払<rt>しはら</rt></ruby>うことで、<ruby>有名<rt>ゆうめい</rt></ruby>なサッカーチームのファンクラブに<ruby>参加<rt>さんか</rt></ruby>することができる。",
+  "japanese_text": "<ruby><u>会費</u><rt>かいひ</rt></ruby>を<ruby>支払<rt>しはら</rt></ruby>うことで、<ruby>有名<rt>ゆうめい</rt></ruby>なサッカーチームのファン<u>クラブ</u>に<ruby><u>参加</u><rt>さんか</rt></ruby>することができる。",
   "english_translation": "By paying the membership fee, you can participate in the famous football team fan club.",
   "annotated_words": [
     {
+      "word_id": "n3_1422",
+      "word_number": 1422,
       "kanji": "会費",
       "furigana": "かいひ",
-      "meaning": "membership fee"
+      "meaning_en": "membership fee"
     },
     {
+      "word_id": "n3_1423",
+      "word_number": 1423,
       "kanji": "クラブ",
       "furigana": "",
-      "meaning": "club"
+      "meaning_en": "club"
     },
     {
+      "word_id": "n3_1424",
+      "word_number": 1424,
       "kanji": "参加［する］",
       "furigana": "さんか",
-      "meaning": "participation, participate"
+      "meaning_en": "participation, participate"
     }
-  ]
+  ],
+  "story_number": 23,
+  "is_story": true,
+  "page_story": "125_1"
 }

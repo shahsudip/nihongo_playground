@@ -1,38 +1,38 @@
 {
-  "id": "132_2",
-  "title": "Topic 9",
-  "japanese_text": "<ruby>動物<rt>どうぶつ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>うことは<ruby>命<rt>いのち</rt></ruby>を<ruby>預<rt>あず</rt></ruby>かることである。<ruby>最後<rt>さいご</rt></ruby>まで<ruby>責任<rt>せきにん</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>育<rt>そだ</rt></ruby>てることができない<ruby>人<rt>ひと</rt></ruby>に<ruby>動物<rt>どうぶつ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>う<ruby>資格<rt>しかく</rt></ruby>はない。",
+  "title": "Topic 9 動物 Animals",
+  "japanese_text": "<ruby>動物<rt>どうぶつ</rt></ruby>を<u><ruby>飼<rt>か</rt></ruby>う</u>ことは<u><ruby>命<rt>いのち</rt></ruby></u>を<ruby>預<rt>あず</rt></ruby>かることである。<ruby>最後<rt>さいご</rt></ruby>まで<u><ruby>責任<rt>せきにん</rt></ruby></u>を<ruby>持<rt>も</rt></ruby>って<u><ruby>育<rt>そだ</rt></ruby>てる</u>ことができない<ruby>人<rt>ひと</rt></ruby>に<ruby>動物<rt>どうぶつ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>う<ruby>資格<rt>しかく</rt></ruby>はない。",
   "english_translation": "Owning an animal means being responsible for a life. People who cannot responsibly raise one to the very end are not qualified to own an animal.",
   "annotated_words": [
     {
+      "word_id": "n3_0915",
+      "word_number": 915,
       "kanji": "飼う",
       "furigana": "かう",
-      "meaning": "own (an animal)"
+      "meaning_en": "own (an animal)"
     },
     {
+      "word_id": "n3_0916",
+      "word_number": 916,
       "kanji": "命",
       "furigana": "いのち",
-      "meaning": "life"
+      "meaning_en": "life"
     },
     {
+      "word_id": "n3_0917",
+      "word_number": 917,
       "kanji": "責任",
       "furigana": "せきにん",
-      "meaning": "responsibility"
+      "meaning_en": "responsibility"
     },
     {
-      "kanji": "責任者",
-      "furigana": "せきにんしゃ",
-      "meaning": "person responsible"
-    },
-    {
+      "word_id": "n3_0918",
+      "word_number": 918,
       "kanji": "育てる",
       "furigana": "そだてる",
-      "meaning": "raise"
-    },
-    {
-      "kanji": "育つ",
-      "furigana": "そだつ",
-      "meaning": "be raised"
+      "meaning_en": "raise"
     }
-  ]
+  ],
+  "story_number": 9,
+  "is_story": true,
+  "page_story": "132_2"
 }

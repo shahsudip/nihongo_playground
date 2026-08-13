@@ -1,33 +1,31 @@
 {
-  "id": "36_1",
   "title": "Topic 2",
-  "japanese_text": "大<ruby>き<rt>おお</rt></ruby>くて<ruby>深<rt>ふか</rt></ruby>い<span class='annotated-word' data-word='フライパン'>フライパン</span>は、<ruby>材料<rt>ざいりょう</rt></ruby>を<ruby>焼<rt>や</rt></ruby>くだけでなく、<span class='annotated-word' data-word='ゆでる'>ゆでたり</span>、<span class='annotated-word' data-word='煮る'><ruby>煮<rt>に</rt></ruby>たり</span>するのにも<ruby>使<rt>つか</rt></ruby>える。ゆでる<ruby>場合<rt>ばあい</rt></ruby>には、<span class='annotated-word' data-word='ふた'>ふた</span>があるとよい。",
+  "japanese_text": "大<ruby>き<rt>おお</rt></ruby>くて<ruby>深<rt>ふか</rt></ruby>い<u>フライパン</u>は、<ruby>材料<rt>ざいりょう</rt></ruby>を<ruby>焼<rt>や</rt></ruby>くだけでなく、ゆでたり、<ruby>煮<rt>に</rt></ruby>たりするのにも<ruby>使<rt>つか</rt></ruby>える。<u>ゆでる</u><ruby>場合<rt>ばあい</rt></ruby>には、<u>ふた</u>があるとよい。",
   "english_translation": "A large and deep frying pan can be used to not only grill ingredients, but also to boil or cook things. When boiling something, it is best to have a lid.",
   "annotated_words": [
     {
-      "meaning_en": "frying pan",
+      "word_id": "n3_1000",
+      "word_number": 1000,
+      "kanji": "フライパン",
       "furigana": "",
-      "kanji": "フライパン"
+      "meaning_en": "frying pan"
     },
     {
-      "meaning_en": "boil",
+      "word_id": "n3_1001",
+      "word_number": 1001,
+      "kanji": "ゆでる",
       "furigana": "ゆでる",
-      "kanji": "ゆでる"
+      "meaning_en": "boil"
     },
     {
-      "meaning_en": "cook, simmer",
-      "furigana": "にる",
-      "kanji": "煮る"
-    },
-    {
-      "meaning_en": "boil",
-      "furigana": "にえる",
-      "kanji": "煮える"
-    },
-    {
-      "meaning_en": "lid",
+      "word_id": "n3_1002",
+      "word_number": 1002,
+      "kanji": "ふた",
       "furigana": "ふた",
-      "kanji": "ふた"
+      "meaning_en": "lid"
     }
-  ]
+  ],
+  "story_number": 1,
+  "is_story": true,
+  "page_story": "36_1"
 }

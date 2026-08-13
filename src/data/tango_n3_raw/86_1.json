@@ -1,38 +1,38 @@
 {
-  "id": "86_1",
   "title": "Topic 5",
-  "japanese_text": "<ruby>Ａ：マウスがときどき<rt></rt></ruby><ruby>動<rt>うご</rt></ruby><ruby>かなくなるんですよ。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby>無線<rt>むせん</rt></ruby><ruby>のマウスだったらたぶん<rt></rt></ruby><ruby>電池<rt>でんち</rt></ruby><ruby>が<rt></rt></ruby><ruby>切<rt>き</rt></ruby><ruby>れかけています。<rt></rt></ruby><ruby>交換<rt>こうかん</rt></ruby><ruby>すれば<rt></rt></ruby><ruby>直<rt>なお</rt></ruby><ruby>りますよ。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：<u>マウス</u>がときどき<rt></rt></ruby><ruby>動<rt>うご</rt></ruby><ruby>かなくなるんですよ。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby><u>無線</u><rt>むせん</rt></ruby><ruby>のマウスだったらたぶん<rt></rt></ruby><ruby><u>電池</u><rt>でんち</rt></ruby><ruby>が<rt></rt></ruby><ruby>切<rt>き</rt></ruby><ruby>れかけています。<rt></rt></ruby><ruby><u>交換</u><rt>こうかん</rt></ruby><ruby>すれば<rt></rt></ruby><ruby>直<rt>なお</rt></ruby><ruby>りますよ。<rt></rt></ruby>",
   "english_translation": "A: My mouse stops moving sometimes.\nB: If it's a wireless mouse, the batteries are probably running out. If you replace them, it should work fine.",
   "annotated_words": [
     {
+      "word_id": "n3_1236",
+      "word_number": 1236,
       "kanji": "マウス",
       "furigana": "",
-      "meaning": "mouse"
+      "meaning_en": "mouse"
     },
     {
+      "word_id": "n3_1237",
+      "word_number": 1237,
       "kanji": "無線",
       "furigana": "むせん",
-      "meaning": "wireless"
+      "meaning_en": "wireless"
     },
     {
-      "kanji": "有線",
-      "furigana": "ゆうせん",
-      "meaning": "wired"
-    },
-    {
+      "word_id": "n3_1238",
+      "word_number": 1238,
       "kanji": "電池",
       "furigana": "でんち",
-      "meaning": "battery"
+      "meaning_en": "battery"
     },
     {
-      "kanji": "乾電池",
-      "furigana": "かんでんち",
-      "meaning": "dry cell"
-    },
-    {
+      "word_id": "n3_1239",
+      "word_number": 1239,
       "kanji": "交換",
       "furigana": "こうかん",
-      "meaning": "exchange, exchange"
+      "meaning_en": "exchange, exchange"
     }
-  ]
+  ],
+  "story_number": 24,
+  "is_story": true,
+  "page_story": "86_1"
 }

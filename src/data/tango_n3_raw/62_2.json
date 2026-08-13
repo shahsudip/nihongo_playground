@@ -1,28 +1,31 @@
 {
-  "id": "62_2",
   "title": "Topic 4",
-  "japanese_text": "<ruby>眉毛<rt>まゆげ</rt></ruby><ruby>を<rt></rt></ruby><ruby>少<rt>すこ</rt></ruby><ruby>し<rt></rt></ruby><ruby>剃<rt>そ</rt></ruby><ruby>って、まつ<rt></rt></ruby><ruby>毛<rt>げ</rt></ruby><ruby>にパーマをかけたら、まるで<rt></rt></ruby><ruby>別人<rt>べつじん</rt></ruby><ruby>の<rt></rt></ruby><ruby>ようになった。<rt></rt></ruby>",
+  "japanese_text": "<ruby><u>眉毛</u><rt>まゆげ</rt></ruby><ruby>を<rt></rt></ruby><ruby>少<rt>すこ</rt></ruby><ruby>し<rt></rt></ruby><ruby>剃<rt>そ</rt></ruby><ruby>って、<u>まつ<rt></rt></ruby><ruby>毛</u><rt>げ</rt></ruby><ruby>に<u>パーマ</u>をかけたら、まるで<rt></rt></ruby><ruby>別人<rt>べつじん</rt></ruby><ruby>の<rt></rt></ruby><ruby>ようになった。<rt></rt></ruby>",
   "english_translation": "When I shave my eyebrows a little and perm my eyelashes, it's like I become another person.",
   "annotated_words": [
     {
+      "word_id": "n3_1100",
+      "word_number": 1100,
       "kanji": "眉（毛）",
       "furigana": "まゆ（げ）",
-      "meaning": "eyebrows"
+      "meaning_en": "eyebrows"
     },
     {
-      "kanji": "剃る",
-      "furigana": "そる",
-      "meaning": "shave"
-    },
-    {
+      "word_id": "n3_1101",
+      "word_number": 1101,
       "kanji": "まつ毛",
       "furigana": "まつげ",
-      "meaning": "eyelashes"
+      "meaning_en": "eyelashes"
     },
     {
+      "word_id": "n3_1102",
+      "word_number": 1102,
       "kanji": "パーマ",
       "furigana": "",
-      "meaning": "perm"
+      "meaning_en": "perm"
     }
-  ]
+  ],
+  "story_number": 2,
+  "is_story": true,
+  "page_story": "62_2"
 }

@@ -1,23 +1,31 @@
 {
-  "id": "82_2",
   "title": "Topic 5",
-  "japanese_text": "<ruby>検索<rt>けんさく</rt></ruby><ruby>するときは、この<rt></rt></ruby><ruby>矢印<rt>やじるし</rt></ruby><ruby>が<rt></rt></ruby><ruby>書<rt>か</rt></ruby><ruby>かれているところに<rt></rt></ruby><ruby>文字<rt>もじ</rt></ruby><ruby>を<rt></rt></ruby><ruby>入<rt>い</rt></ruby><ruby>れ<rt></rt></ruby><ruby>ます。ローマ<rt></rt></ruby><ruby>字<rt>じ</rt></ruby><ruby>でも<rt></rt></ruby><ruby>検索<rt>けんさく</rt></ruby><ruby>できます。<rt></rt></ruby>",
+  "japanese_text": "<ruby><u>検索</u><rt>けんさく</rt></ruby><ruby>するときは、この<rt></rt></ruby><ruby><u>矢印</u><rt>やじるし</rt></ruby><ruby>が<rt></rt></ruby><ruby>書<rt>か</rt></ruby><ruby>かれているところに<rt></rt></ruby><ruby>文字<rt>もじ</rt></ruby><ruby>を<rt></rt></ruby><ruby>入<rt>い</rt></ruby><ruby>れ<rt></rt></ruby><ruby>ます。<u>ローマ<rt></rt></ruby><ruby>字</u><rt>じ</rt></ruby><ruby>でも<rt></rt></ruby><ruby>検索<rt>けんさく</rt></ruby><ruby>できます。<rt></rt></ruby>",
   "english_translation": "When doing a search, put the characters in the place where this arrow is written. You can even search using Roman letters.",
   "annotated_words": [
     {
+      "word_id": "n3_1214",
+      "word_number": 1214,
       "kanji": "検索",
       "furigana": "けんさく",
-      "meaning": "search, search"
+      "meaning_en": "search, search"
     },
     {
+      "word_id": "n3_1215",
+      "word_number": 1215,
       "kanji": "矢印",
       "furigana": "やじるし",
-      "meaning": "arrow"
+      "meaning_en": "arrow"
     },
     {
+      "word_id": "n3_1216",
+      "word_number": 1216,
       "kanji": "ローマ字",
       "furigana": "ローマじ",
-      "meaning": "Roman letters"
+      "meaning_en": "Roman letters"
     }
-  ]
+  ],
+  "story_number": 17,
+  "is_story": true,
+  "page_story": "82_2"
 }

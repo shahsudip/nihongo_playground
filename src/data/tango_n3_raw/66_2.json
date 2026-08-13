@@ -1,33 +1,31 @@
 {
-  "id": "66_2",
   "title": "Topic 4",
-  "japanese_text": "<ruby>Ａ：シンプルなシャツをお<rt></rt></ruby><ruby>召<rt>め</rt></ruby><ruby>しになるときには、サングラスやス<rt></rt></ruby><ruby>カーフなどの<rt></rt></ruby><ruby>小物<rt>こもの</rt></ruby><ruby>を<rt></rt></ruby><ruby>合<rt>あ</rt></ruby><ruby>わせて、アクセントをつけるといいで<rt></rt></ruby><ruby>すよ。<rt></rt></ruby>\n<ruby>Ｂ：ああ、なるほど。<rt></rt></ruby><ruby>難<rt>むずか</rt></ruby><ruby>しそうですね…。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：シンプルなシャツをお<rt></rt></ruby><ruby>召<rt>め</rt></ruby><ruby>しになるときには、<u>サングラス</u>や<u>ス<rt></rt></ruby><ruby>カーフ</u>などの<rt></rt></ruby><ruby>小物<rt>こもの</rt></ruby><ruby>を<rt></rt></ruby><ruby>合<rt>あ</rt></ruby><ruby>わせて、<u>アクセント</u>をつけるといいで<rt></rt></ruby><ruby>すよ。<rt></rt></ruby>\n<ruby>Ｂ：ああ、なるほど。<rt></rt></ruby><ruby>難<rt>むずか</rt></ruby><ruby>しそうですね…。<rt></rt></ruby>",
   "english_translation": "A: When wearing a simple shirt, you should combine accessories such as sunglasses and scarves to add an accent.\nB: Oh, I see. That sounds difficult...",
   "annotated_words": [
     {
-      "kanji": "お召しになる",
-      "furigana": "おめしになる",
-      "meaning": "wear (honorific speech)"
-    },
-    {
+      "word_id": "n3_1123",
+      "word_number": 1123,
       "kanji": "サングラス",
       "furigana": "",
-      "meaning": "sunglasses"
+      "meaning_en": "sunglasses"
     },
     {
+      "word_id": "n3_1124",
+      "word_number": 1124,
       "kanji": "スカーフ",
       "furigana": "",
-      "meaning": "scarf"
+      "meaning_en": "scarf"
     },
     {
-      "kanji": "合わせる",
-      "furigana": "あわせる",
-      "meaning": "combine"
-    },
-    {
+      "word_id": "n3_1125",
+      "word_number": 1125,
       "kanji": "アクセント",
       "furigana": "",
-      "meaning": "accent"
+      "meaning_en": "accent"
     }
-  ]
+  ],
+  "story_number": 10,
+  "is_story": true,
+  "page_story": "66_2"
 }

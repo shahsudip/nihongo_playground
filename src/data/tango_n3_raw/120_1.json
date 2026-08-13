@@ -1,33 +1,38 @@
 {
-  "id": "120_1",
   "title": "Topic 8",
-  "japanese_text": "<ruby>柔道<rt>じゅうどう</rt></ruby>の48キロ<ruby>級<rt>きゅう</rt></ruby>の<ruby>日本選手<rt>にほんせんしゅ</rt></ruby>が<ruby>試合中<rt>しあいなか</rt></ruby>に<ruby>肩<rt>かた</rt></ruby>を<ruby>負傷<rt>ふしょう</rt></ruby>したが、<ruby>見事<rt>みごと</rt></ruby>に<ruby>金<rt>きん</rt></ruby>メダルを<ruby>獲得<rt>かくとく</rt></ruby>した。",
+  "japanese_text": "<ruby>柔道<rt>じゅうどう</rt></ruby>の48キロ<ruby>級<rt>きゅう</rt></ruby>の<ruby>日本選手<rt>にほんせんしゅ</rt></ruby>が<ruby>試合中<rt>しあいなか</rt></ruby>に<ruby><u>肩</u><rt>かた</rt></ruby>を<ruby><u>負傷</u><rt>ふしょう</rt></ruby>したが、<ruby>見事<rt>みごと</rt></ruby>に<ruby>金<rt>きん</rt></ruby><u>メダル</u>を<ruby><u>獲得</u><rt>かくとく</rt></ruby>した。",
   "english_translation": "Judo's 48 kg-class Japanese athlete injured their shoulders during the match but still impressively won a gold medal.",
   "annotated_words": [
     {
-      "kanji": "〜級",
-      "furigana": "〜きゅう",
-      "meaning": "~ class"
-    },
-    {
+      "word_id": "n3_1391",
+      "word_number": 1391,
       "kanji": "肩",
       "furigana": "かた",
-      "meaning": "shoulder"
+      "meaning_en": "shoulder"
     },
     {
+      "word_id": "n3_1392",
+      "word_number": 1392,
       "kanji": "負傷［する］",
       "furigana": "ふしょう",
-      "meaning": "injury, be injured"
+      "meaning_en": "injury, be injured"
     },
     {
+      "word_id": "n3_1393",
+      "word_number": 1393,
       "kanji": "メダル",
       "furigana": "",
-      "meaning": "medal"
+      "meaning_en": "medal"
     },
     {
+      "word_id": "n3_1394",
+      "word_number": 1394,
       "kanji": "獲得［する］",
       "furigana": "かくとく",
-      "meaning": "acquisition, acquire"
+      "meaning_en": "acquisition, acquire"
     }
-  ]
+  ],
+  "story_number": 13,
+  "is_story": true,
+  "page_story": "120_1"
 }

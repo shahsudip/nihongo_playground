@@ -1,28 +1,38 @@
 {
-  "id": "97_2",
   "title": "Topic 6",
-  "japanese_text": "Ａ：ミステリーのドラマってだいたいハンサムな<ruby>役者<rt>やくしゃ</rt></ruby>が<ruby>犯人<rt>はんにん</rt></ruby>だよな。\nＢ：おい、そんなこと<ruby>言<rt>い</rt></ruby>うのやめろよ。",
+  "japanese_text": "Ａ：<u>ミステリー</u>のドラマってだいたい<u>ハンサムな</u><ruby>役者<rt>やくしゃ</rt></ruby>が<ruby><u>犯人</u><rt>はんにん</rt></ruby>だよな。\nＢ：<u>おい</u>、そんなこと<ruby>言<rt>い</rt></ruby>うのやめろよ。",
   "english_translation": "A: In mystery dramas, the criminal is usually the handsome actor, right?\nB: Hey, stop saying things like that.",
   "annotated_words": [
     {
+      "word_id": "n3_1286",
+      "word_number": 1286,
       "kanji": "ミステリー",
       "furigana": "",
-      "meaning": "mystery"
+      "meaning_en": "mystery"
     },
     {
+      "word_id": "n3_1287",
+      "word_number": 1287,
       "kanji": "ハンサムな",
       "furigana": "",
-      "meaning": "handsome"
+      "meaning_en": "handsome"
     },
     {
+      "word_id": "n3_1288",
+      "word_number": 1288,
       "kanji": "犯人",
       "furigana": "はんにん",
-      "meaning": "criminal"
+      "meaning_en": "criminal"
     },
     {
+      "word_id": "n3_1289",
+      "word_number": 1289,
       "kanji": "おい",
       "furigana": "",
-      "meaning": "hey"
+      "meaning_en": "hey"
     }
-  ]
+  ],
+  "story_number": 10,
+  "is_story": true,
+  "page_story": "97_2"
 }

@@ -3,7 +3,7 @@
   "story_number": 12,
   "title": "Topic 1 食事",
   "page_story": "22_1",
-  "japanese_text": "A：今のうちに<u>各自</u>食事を<u>済ませて</u>おくように、だって。\nB：そうなんだ。じゃ、一緒に<u>飯</u>、<u>食い</u>にいく？\nA：いいね。どこ行く？\nB：駅前の定食屋は？あそこ、いつも<u>満席</u>だけど、この時間なら<u>空いて</u>そう。\nA：そうだね。まだ<u>開店して</u>10分くらいだし。行こ、行こ。",
+  "japanese_text": "A：<ruby>今<rt>いま</rt></ruby>のうちに<u>各自</u><ruby>食事<rt>しょくじ</rt></ruby>を<u>済ませて</u>おくように、だって。\\nB：そうなんだ。じゃ、<ruby>一緒<rt>いっしょ</rt></ruby>に<u>飯</u>、<u>食い</u>に<ruby>行<rt>い</rt></ruby>く？\\nA：いいね。どこ<ruby>行<rt>い</rt></ruby>く？\\nB：<ruby>駅前<rt>えきまえ</rt></ruby>の<ruby>定食屋<rt>ていしょくや</rt></ruby>は？あそこ、いつも<u>満席</u>だけど、この<ruby>時間<rt>じかん</rt></ruby>なら<ruby>空<rt>す</rt></ruby>いてそう。\\nA：そうだね。まだ<u>開店して</u>10<ruby>分<rt>ふん</rt></ruby>くらいだし。<ruby>行<rt>い</rt></ruby>こ、<ruby>行<rt>い</rt></ruby>こ。",
   "english_translation": "A: He said we should each go ahead and get our meals out of the way now. B: Okay. So, do you want to go eat a meal with me? A: Great. Where do you want to go? B: How about that eatery right by the station? It's always full, but it's probably empty at this time of day. A: That's true. It's only been open for about 10 minutes. Let's go, let's go.",
   "annotated_words": [
     {
@@ -40,13 +40,6 @@
       "kanji": "満席",
       "furigana": "まんせき",
       "meaning_en": "full to capacity"
-    },
-    {
-      "word_id": "n2_0064",
-      "word_number": 64,
-      "kanji": "空席",
-      "furigana": "くうせき",
-      "meaning_en": "vacant seats"
     },
     {
       "word_id": "n2_0065",

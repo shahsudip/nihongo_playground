@@ -1,48 +1,24 @@
 {
-  "id": "100_2",
   "title": "Topic 6",
-  "japanese_text": "<ruby>来週<rt>らいしゅう</rt></ruby>、<ruby>私<rt>わたし</rt></ruby>の<ruby>好<rt>す</rt></ruby>きな<ruby>漫画家<rt>まんがか</rt></ruby>の<ruby>最新作<rt>さいしんさく</rt></ruby>がスタートします。<ruby>私<rt>わたし</rt></ruby>は<ruby>小<rt>ちい</rt></ruby>さい<ruby>頃<rt>ころ</rt></ruby>、お<ruby>小遣<rt>こづか</rt></ruby>いをためて、その<ruby>人<rt>ひと</rt></ruby>の<ruby>全作品<rt>ぜんさくひん</rt></ruby>をそろえていました。<ruby>新<rt>あたら</rt></ruby>しい<ruby>作品<rt>さくひん</rt></ruby>は、<ruby>過去<rt>かこ</rt></ruby>の<ruby>作品<rt>さくひん</rt></ruby>の<ruby>続<rt>つづ</rt></ruby>きのストーリーです。",
+  "japanese_text": "<ruby>来週<rt>らいしゅう</rt></ruby>、<ruby>私<rt>わたし</rt></ruby>の<ruby>好<rt>す</rt></ruby>きな<ruby>漫画家<rt>まんがか</rt></ruby>の<ruby>最新作<rt>さいしんさく</rt></ruby>が<u>スタート</u>します。<ruby>私<rt>わたし</rt></ruby>は<ruby>小<rt>ちい</rt></ruby>さい<ruby>頃<rt>ころ</rt></ruby>、お<ruby>小遣<rt>こづか</rt></ruby>いをためて、その<ruby>人<rt>ひと</rt></ruby>の<ruby>全作品<rt>ぜんさくひん</rt></ruby>をそろえていました。<ruby>新<rt>あたら</rt></ruby>しい<ruby>作品<rt>さくひん</rt></ruby>は、<ruby><u>過去</u><rt>かこ</rt></ruby>の<ruby>作品<rt>さくひん</rt></ruby>の<ruby>続<rt>つづ</rt></ruby>きのストーリーです。",
   "english_translation": "Next week, the latest work from my favorite manga artist will be starting. When I was younger, I used to save up my pocket money, and I had collected all of their works. Their new work is a continuation of the story of their past work.",
   "annotated_words": [
     {
-      "kanji": "〜作",
-      "furigana": "〜さく",
-      "meaning": "~ work"
-    },
-    {
+      "word_id": "n3_1305",
+      "word_number": 1305,
       "kanji": "スタート［する］",
       "furigana": "",
-      "meaning": "start, start"
+      "meaning_en": "start, start"
     },
     {
-      "kanji": "（お）小遣い",
-      "furigana": "（お）こづかい",
-      "meaning": "pocket money"
-    },
-    {
-      "kanji": "そろえる",
-      "furigana": "",
-      "meaning": "collect, arrange together"
-    },
-    {
-      "kanji": "そろう",
-      "furigana": "",
-      "meaning": "be collected, be arranged together"
-    },
-    {
-      "kanji": "おそろい",
-      "furigana": "",
-      "meaning": "complete set, matching"
-    },
-    {
+      "word_id": "n3_1306",
+      "word_number": 1306,
       "kanji": "過去",
       "furigana": "かこ",
-      "meaning": "past"
-    },
-    {
-      "kanji": "続き",
-      "furigana": "つづき",
-      "meaning": "continuation"
+      "meaning_en": "past"
     }
-  ]
+  ],
+  "story_number": 15,
+  "is_story": true,
+  "page_story": "100_2"
 }

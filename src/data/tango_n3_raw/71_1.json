@@ -1,33 +1,31 @@
 {
-  "id": "71_1",
   "title": "Topic 4",
-  "japanese_text": "<ruby>誕生日<rt>たんじょうび</rt></ruby><ruby>に<rt></rt></ruby><ruby>彼<rt>かれ</rt></ruby><ruby>からネックレスとイヤリングをもらったが、<rt></rt></ruby><ruby>個性的<rt>こせいてき</rt></ruby><ruby>なデザインで<rt></rt></ruby><ruby>着<rt>つ</rt></ruby><ruby>ける<rt></rt></ruby><ruby>機会<rt>きかい</rt></ruby><ruby>がない。<rt></rt></ruby>",
+  "japanese_text": "<ruby>誕生日<rt>たんじょうび</rt></ruby><ruby>に<rt></rt></ruby><ruby>彼<rt>かれ</rt></ruby><ruby>から<u>ネックレス</u>と<u>イヤリング</u>をもらったが、<rt></rt></ruby><ruby><u>個性</u>的<rt>こせいてき</rt></ruby><ruby>なデザインで<rt></rt></ruby><ruby>着<rt>つ</rt></ruby><ruby>ける<rt></rt></ruby><ruby>機会<rt>きかい</rt></ruby><ruby>がない。<rt></rt></ruby>",
   "english_translation": "I got a necklace and earrings from my boyfriend on my birthday, but it's such a unique design that I have no opportunity to wear them.",
   "annotated_words": [
     {
+      "word_id": "n3_1145",
+      "word_number": 1145,
       "kanji": "ネックレス",
       "furigana": "",
-      "meaning": "necklace"
+      "meaning_en": "necklace"
     },
     {
+      "word_id": "n3_1146",
+      "word_number": 1146,
       "kanji": "イヤリング",
       "furigana": "",
-      "meaning": "earrings"
+      "meaning_en": "earrings"
     },
     {
-      "kanji": "個性的な",
-      "furigana": "こせいてきな",
-      "meaning": "unique"
-    },
-    {
+      "word_id": "n3_1147",
+      "word_number": 1147,
       "kanji": "個性",
       "furigana": "こせい",
-      "meaning": "uniqueness"
-    },
-    {
-      "kanji": "着ける",
-      "furigana": "つける",
-      "meaning": "wear"
+      "meaning_en": "uniqueness"
     }
-  ]
+  ],
+  "story_number": 18,
+  "is_story": true,
+  "page_story": "71_1"
 }

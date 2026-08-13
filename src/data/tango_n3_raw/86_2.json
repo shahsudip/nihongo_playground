@@ -1,28 +1,24 @@
 {
-  "id": "86_2",
   "title": "Topic 5",
-  "japanese_text": "<ruby>先日<rt>せんじつ</rt></ruby><ruby>、<rt></rt></ruby><ruby>落<rt>お</rt></ruby><ruby>とし<rt></rt></ruby><ruby>物<rt>もの</rt></ruby><ruby>をしたら、<rt></rt></ruby><ruby>拾<rt>ひろ</rt></ruby><ruby>って<rt></rt></ruby><ruby>届<rt>とど</rt></ruby><ruby>けてくれた<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>がいた。<rt></rt></ruby><ruby>神様<rt>かみさま</rt></ruby><ruby>みたいな<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>だと<rt></rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>った。<rt></rt></ruby><ruby>私<rt>わたし</rt></ruby><ruby>もこれから<rt></rt></ruby><ruby>他人<rt>たにん</rt></ruby><ruby>に<rt></rt></ruby><ruby>親切<rt>しんせつ</rt></ruby><ruby>にしよう。<rt></rt></ruby>",
+  "japanese_text": "<ruby>先日<rt>せんじつ</rt></ruby><ruby>、<rt></rt></ruby><ruby>落<rt>お</rt></ruby><ruby>とし<rt></rt></ruby><ruby>物<rt>もの</rt></ruby><ruby>をしたら、<rt></rt></ruby><ruby>拾<rt>ひろ</rt></ruby><ruby>って<rt></rt></ruby><ruby>届<rt>とど</rt></ruby><ruby>けてくれた<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>がいた。<rt></rt></ruby><ruby><u>神様</u><rt>かみさま</rt></ruby><ruby>みたいな<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>だと<rt></rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>った。<rt></rt></ruby><ruby>私<rt>わたし</rt></ruby><ruby>もこれから<rt></rt></ruby><ruby><u>他人</u><rt>たにん</rt></ruby><ruby>に<rt></rt></ruby><ruby>親切<rt>しんせつ</rt></ruby><ruby>にしよう。<rt></rt></ruby>",
   "english_translation": "The other day, I had a dropped something, and someone picked it up and delivered it to me. I thought that person was like a god. I will also try to help others from now on.",
   "annotated_words": [
     {
-      "kanji": "落とし物",
-      "furigana": "おとしもの",
-      "meaning": "dropping something"
-    },
-    {
+      "word_id": "n3_1240",
+      "word_number": 1240,
       "kanji": "神様",
       "furigana": "かみさま",
-      "meaning": "god"
+      "meaning_en": "god"
     },
     {
-      "kanji": "神",
-      "furigana": "かみ",
-      "meaning": "god"
-    },
-    {
+      "word_id": "n3_1241",
+      "word_number": 1241,
       "kanji": "他人",
       "furigana": "たにん",
-      "meaning": "(other) person, stranger"
+      "meaning_en": "(other) person, stranger"
     }
-  ]
+  ],
+  "story_number": 25,
+  "is_story": true,
+  "page_story": "86_2"
 }

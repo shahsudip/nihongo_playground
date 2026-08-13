@@ -1,38 +1,45 @@
 {
-  "id": "122_1",
   "title": "Topic 8",
-  "japanese_text": "プロ<ruby>野球<rt>やきゅう</rt></ruby>では、７<ruby>回<rt>かい</rt></ruby>をラッキー７と<ruby>呼<rt>よ</rt></ruby>ぶ。ラッキー７の<ruby>攻撃前<rt>こうげきまえ</rt></ruby>には、ファンは<ruby>風船<rt>ふうせん</rt></ruby>を<ruby>飛<rt>と</rt></ruby>ばしたり、ビニール<ruby>傘<rt>がさ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って<ruby>応援<rt>おうえん</rt></ruby>したりする。",
+  "japanese_text": "<u>プロ</u><ruby>野球<rt>やきゅう</rt></ruby>では、７<ruby>回<rt>かい</rt></ruby>をラッキー７と<ruby>呼<rt>よ</rt></ruby>ぶ。ラッキー７の<ruby><u>攻撃</u>前<rt>こうげきまえ</rt></ruby>には、<u>ファン</u>は<ruby><u>風船</u><rt>ふうせん</rt></ruby>を<ruby>飛<rt>と</rt></ruby>ばしたり、<u>ビニール</u><ruby>傘<rt>がさ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って<ruby>応援<rt>おうえん</rt></ruby>したりする。",
   "english_translation": "In professional baseball, the seventh inning is called lucky 7. Before their team goes to bat in the lucky 7, fans will do things like let loose balloons or cheer using vinyl umbrellas.",
   "annotated_words": [
     {
+      "word_id": "n3_1404",
+      "word_number": 1404,
       "kanji": "プロ",
       "furigana": "",
-      "meaning": "professional"
+      "meaning_en": "professional"
     },
     {
+      "word_id": "n3_1405",
+      "word_number": 1405,
       "kanji": "攻撃［する］",
       "furigana": "こうげき",
-      "meaning": "attack, attack"
+      "meaning_en": "attack, attack"
     },
     {
+      "word_id": "n3_1406",
+      "word_number": 1406,
       "kanji": "ファン",
       "furigana": "",
-      "meaning": "fan"
+      "meaning_en": "fan"
     },
     {
+      "word_id": "n3_1407",
+      "word_number": 1407,
       "kanji": "風船",
       "furigana": "ふうせん",
-      "meaning": "balloon"
+      "meaning_en": "balloon"
     },
     {
+      "word_id": "n3_1408",
+      "word_number": 1408,
       "kanji": "ビニール",
       "furigana": "",
-      "meaning": "vinyl"
-    },
-    {
-      "kanji": "ビニール袋",
-      "furigana": "ビニールぶくろ",
-      "meaning": "plastic bag"
+      "meaning_en": "vinyl"
     }
-  ]
+  ],
+  "story_number": 17,
+  "is_story": true,
+  "page_story": "122_1"
 }

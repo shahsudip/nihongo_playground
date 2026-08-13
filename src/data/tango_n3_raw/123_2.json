@@ -1,23 +1,24 @@
 {
-  "id": "123_2",
   "title": "Topic 8",
-  "japanese_text": "<ruby>全<rt>まった</rt></ruby>く<ruby>点数<rt>てんすう</rt></ruby>が<ruby>入<rt>はい</rt></ruby>らず、<ruby>選手<rt>せんしゅ</rt></ruby>は<ruby>汗<rt>あせ</rt></ruby>ばかりかいている。こんなときはベンチからの<ruby>指示<rt>しじ</rt></ruby>が<ruby>重要<rt>じゅうよう</rt></ruby>となる。",
+  "japanese_text": "<ruby>全<rt>まった</rt></ruby>く<ruby><u>点数</u><rt>てんすう</rt></ruby>が<ruby>入<rt>はい</rt></ruby>らず、<ruby>選手<rt>せんしゅ</rt></ruby>は<ruby>汗<rt>あせ</rt></ruby>ばかりかいている。こんなときは<u>ベンチ</u>からの<ruby>指示<rt>しじ</rt></ruby>が<ruby>重要<rt>じゅうよう</rt></ruby>となる。",
   "english_translation": "No one is scoring, and the players are covered in sweat. In cases like this, giving instructions from the bench is important.",
   "annotated_words": [
     {
+      "word_id": "n3_1415",
+      "word_number": 1415,
       "kanji": "点数",
       "furigana": "てんすう",
-      "meaning": "score"
+      "meaning_en": "score"
     },
     {
-      "kanji": "かく",
-      "furigana": "",
-      "meaning": "perspire"
-    },
-    {
+      "word_id": "n3_1416",
+      "word_number": 1416,
       "kanji": "ベンチ",
       "furigana": "",
-      "meaning": "bench"
+      "meaning_en": "bench"
     }
-  ]
+  ],
+  "story_number": 20,
+  "is_story": true,
+  "page_story": "123_2"
 }

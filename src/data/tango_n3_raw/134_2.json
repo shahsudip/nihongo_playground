@@ -1,23 +1,31 @@
 {
-  "id": "134_2",
-  "title": "Topic 9",
-  "japanese_text": "<ruby>天井<rt>てんじょう</rt></ruby>にカビが<ruby>生<rt>は</rt></ruby>えているのを<ruby>発見<rt>はっけん</rt></ruby>して、<ruby>思<rt>おも</rt></ruby>わず<ruby>大<rt>おお</rt></ruby>きな<ruby>声<rt>こえ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>してしまった。",
+  "title": "Topic 9 動物 Animals",
+  "japanese_text": "<u><ruby>天井<rt>てんじょう</rt></ruby></u>にカビが<u><ruby>生<rt>は</rt></ruby>えている</u>のを<u><ruby>発見<rt>はっけん</rt></ruby></u>して、<ruby>思<rt>おも</rt></ruby>わず<ruby>大<rt>おお</rt></ruby>きな<ruby>声<rt>こえ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>してしまった。",
   "english_translation": "I found mold on the ceiling, and unintentionally screamed loudly.",
   "annotated_words": [
     {
+      "word_id": "n3_0930",
+      "word_number": 930,
       "kanji": "天井",
       "furigana": "てんじょう",
-      "meaning": "ceiling"
+      "meaning_en": "ceiling"
     },
     {
+      "word_id": "n3_0931",
+      "word_number": 931,
       "kanji": "生える",
       "furigana": "はえる",
-      "meaning": "grow"
+      "meaning_en": "grow"
     },
     {
+      "word_id": "n3_0932",
+      "word_number": 932,
       "kanji": "発見［する］",
       "furigana": "はっけん",
-      "meaning": "discovery, discover"
+      "meaning_en": "discovery, discover"
     }
-  ]
+  ],
+  "story_number": 13,
+  "is_story": true,
+  "page_story": "134_2"
 }

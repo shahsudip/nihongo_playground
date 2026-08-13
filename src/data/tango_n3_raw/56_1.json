@@ -1,43 +1,31 @@
 {
-  "id": "56_1",
   "title": "Topic 3",
-  "japanese_text": "３<ruby>月<rt>がつ</rt></ruby><ruby>までのプロジェクトだが、<rt></rt></ruby><ruby>各<rt>かく</rt></ruby><ruby>支店<rt>してん</rt></ruby><ruby>での<rt></rt></ruby><ruby>宣伝<rt>せんでん</rt></ruby><ruby>活動<rt>かつどう</rt></ruby><ruby>が<rt></rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>うよう<rt></rt></ruby><ruby>に<rt></rt></ruby><ruby>行<rt>い</rt></ruby><ruby>かず、<rt></rt></ruby><ruby>延長<rt>えんちょう</rt></ruby><ruby>になりそうだ。<rt></rt></ruby><ruby>予算<rt>よさん</rt></ruby><ruby>を<rt></rt></ruby><ruby>繰<rt>く</rt></ruby><ruby>り<rt></rt></ruby><ruby>越<rt>こ</rt></ruby><ruby>す<rt></rt></ruby><ruby>手続<rt>てつづ</rt></ruby><ruby>きをして、<rt></rt></ruby><ruby>完成<rt>かんせい</rt></ruby><ruby>報告<rt>ほうこく</rt></ruby><ruby>会<rt>かい</rt></ruby><ruby>の<rt></rt></ruby><ruby>予約<rt>よやく</rt></ruby><ruby>を<rt></rt></ruby><ruby>取<rt>と</rt></ruby><ruby>り<rt></rt></ruby><ruby>消<rt>け</rt></ruby><ruby>しておかなければならない。<rt></rt></ruby>",
+  "japanese_text": "３<ruby>月<rt>がつ</rt></ruby><ruby>までのプロジェクトだが、<rt></rt></ruby><ruby>各<rt>かく</rt></ruby><ruby><u>支店</u><rt>してん</rt></ruby><ruby>での<rt></rt></ruby><ruby><u>宣伝</u><rt>せんでん</rt></ruby><ruby>活動<rt>かつどう</rt></ruby><ruby>が<rt></rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>うよう<rt></rt></ruby><ruby>に<rt></rt></ruby><ruby>行<rt>い</rt></ruby><ruby>かず、<rt></rt></ruby><ruby>延長<rt>えんちょう</rt></ruby><ruby>になりそうだ。<rt></rt></ruby><ruby><u>予算</u><rt>よさん</rt></ruby><ruby>を<rt></rt></ruby><ruby>繰<rt>く</rt></ruby><ruby>り<rt></rt></ruby><ruby>越<rt>こ</rt></ruby><ruby>す<rt></rt></ruby><ruby>手続<rt>てつづ</rt></ruby><ruby>きをして、<rt></rt></ruby><ruby>完成<rt>かんせい</rt></ruby><ruby>報告<rt>ほうこく</rt></ruby><ruby>会<rt>かい</rt></ruby><ruby>の<rt></rt></ruby><ruby>予約<rt>よやく</rt></ruby><ruby>を<rt></rt></ruby><ruby>取<rt>と</rt></ruby><ruby>り<rt></rt></ruby><ruby>消<rt>け</rt></ruby><ruby>しておかなければならない。<rt></rt></ruby>",
   "english_translation": "I'm working on a project until March, but the advertising activity at each branch isn't going the way I had hoped, so it looks like the project might be extended. I have to file the paperwork to carry the budget over and cancel the reservation for the completion report meeting.",
   "annotated_words": [
     {
+      "word_id": "n3_1080",
+      "word_number": 1080,
       "kanji": "支店",
       "furigana": "してん",
-      "meaning": "branch"
+      "meaning_en": "branch"
     },
     {
-      "kanji": "支社",
-      "furigana": "ししゃ",
-      "meaning": "branch office"
-    },
-    {
+      "word_id": "n3_1081",
+      "word_number": 1081,
       "kanji": "宣伝",
       "furigana": "せんでん",
-      "meaning": "advertising, advertise"
+      "meaning_en": "advertising, advertise"
     },
     {
+      "word_id": "n3_1082",
+      "word_number": 1082,
       "kanji": "予算",
       "furigana": "よさん",
-      "meaning": "budget"
-    },
-    {
-      "kanji": "繰り越す",
-      "furigana": "くりこす",
-      "meaning": "carry forward"
-    },
-    {
-      "kanji": "越す",
-      "furigana": "こす",
-      "meaning": "exceed"
-    },
-    {
-      "kanji": "取り消す",
-      "furigana": "とりけす",
-      "meaning": "cancel"
+      "meaning_en": "budget"
     }
-  ]
+  ],
+  "story_number": 9,
+  "is_story": true,
+  "page_story": "56_1"
 }

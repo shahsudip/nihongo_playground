@@ -1,38 +1,9 @@
 {
-  "id": "20_2",
-  "title": "Topic 1",
-  "japanese_text": "<ruby>納豆<rt>なっとう</rt></ruby>は<span class='annotated-word' data-word='匂い／臭い'><ruby>匂<rt>にお</rt></ruby>い</span>を<span class='annotated-word' data-word='嫌がる'><ruby>嫌<rt>いや</rt></ruby>がる</span><ruby>人<rt>ひと</rt></ruby>も<ruby>多<rt>おお</rt></ruby>いですが、<ruby>慣<rt>な</rt></ruby>れると<span class='annotated-word' data-word='平気な'><ruby>平気<rt>へいき</rt></ruby></span>になります。<span class='annotated-word' data-word='ねばねば'>ねばねば</span>していますが、<span class='annotated-word' data-word='腐る'><ruby>腐<rt>くさ</rt></ruby>っている</span>わけではないですよ。",
+  "title": "Topic 1 食事 Eating",
+  "japanese_text": "<ruby>納豆<rt>なっとう</rt></ruby>は<ruby>匂<rt>にお</rt></ruby>いを<ruby>嫌<rt>いや</rt></ruby>がる<ruby>人<rt>ひと</rt></ruby>も<ruby>多<rt>おお</rt></ruby>いですが、<ruby>慣<rt>な</rt></ruby>れると<ruby>平気<rt>へいき</rt></ruby>になります。ねばねばしていますが、<ruby>腐<rt>くさ</rt></ruby>っているわけではないですよ。",
   "english_translation": "Many people don't like the smell of natto, but once you get used to it, you'll be fine. It's sticky, but it's not rotten.",
-  "annotated_words": [
-    {
-      "meaning_en": "odor/stench",
-      "furigana": "におい",
-      "kanji": "匂い／臭い"
-    },
-    {
-      "meaning_en": "be fragrant/stink",
-      "furigana": "におう",
-      "kanji": "匂う／臭う"
-    },
-    {
-      "meaning_en": "dislike",
-      "furigana": "いやがる",
-      "kanji": "嫌がる"
-    },
-    {
-      "meaning_en": "fine, calm",
-      "furigana": "へいき",
-      "kanji": "平気な"
-    },
-    {
-      "meaning_en": "stickiness, be sticky",
-      "furigana": "",
-      "kanji": "ねばねば[する]"
-    },
-    {
-      "meaning_en": "rot, go bad",
-      "furigana": "くさる",
-      "kanji": "腐る"
-    }
-  ]
+  "annotated_words": [],
+  "story_number": 8,
+  "is_story": true,
+  "page_story": "20_2"
 }

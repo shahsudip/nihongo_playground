@@ -3,7 +3,7 @@
   "story_number": 11,
   "title": "Topic 1 食事",
   "page_story": "21_1",
-  "japanese_text": "A：クリスマスパーティーのケーキ、どうする？\nB：5人だよね？5<u>等分</u>って、難しいよね…。\nA：あ、じゃあ、大きいのひとつじゃなくて、<u>めいめい</u>好きなケーキを買う？\nB：いいね。私はフルーツタルトにしよっと。あの店のはフルーツがたくさんで<u>豪華</u>なんだよね。",
+  "japanese_text": "A：クリスマスパーティーのケーキ、どうする？\\nB：5<ruby>人<rt>にん</rt></ruby>だよね？5<u>等分</u>って、<ruby>難<rt>むずか</rt></ruby>しいよね…。\\nA：あ、じゃあ、<ruby>大<rt>おお</rt></ruby>きいのひとつじゃなくて、<u>めいめい</u><ruby>好<rt>す</rt></ruby>きなケーキを<ruby>買<rt>か</rt></ruby>う？\\nB：いいね。<ruby>私<rt>わたし</rt></ruby>はフルーツタルトにしよっと。あの<ruby>店<rt>みせ</rt></ruby>のはフルーツがたくさんで<u>豪華</u>なんだよね。",
   "english_translation": "A: What do you want to do about a cake for the Christmas party? B: There are five of us, right? It's hard to divide a cake into five equal portions. A: Well, instead of one big cake, why don't we buy our own respective cakes? B: Great idea. I'll get a fruit tart. The one at that store is gorgeous with lots of fruit on it.",
   "annotated_words": [
     {
@@ -12,13 +12,6 @@
       "kanji": "～等分",
       "furigana": "とうぶん",
       "meaning_en": "equal portions"
-    },
-    {
-      "word_id": "n2_0056",
-      "word_number": 56,
-      "kanji": "等分[する]",
-      "furigana": "とうぶん",
-      "meaning_en": "equal portions, divide equally"
     },
     {
       "word_id": "n2_0057",

@@ -1,38 +1,31 @@
 {
-  "id": "20_1",
-  "title": "Topic 1",
-  "japanese_text": "この<ruby>店<rt>みせ</rt></ruby>のラーメンはとても<ruby>味<rt>あじ</rt></ruby>が<span class='annotated-word' data-word='濃い'><ruby>濃<rt>こ</rt></ruby>い</span>、スープの<span class='annotated-word' data-word='表面'><ruby>表面<rt>ひょうめん</rt></ruby></span>には<span class='annotated-word' data-word='油'><ruby>油<rt>あぶら</rt></ruby></span>が<ruby>浮<rt>う</rt></ruby>いている。しかし、<span class='annotated-word' data-word='のり'>のり</span>とご<ruby>飯<rt>はん</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>食<rt>た</rt></ruby>べるとうまい。",
+  "title": "Topic 1 食事 Eating",
+  "japanese_text": "この<ruby>店<rt>みせ</rt></ruby>のラーメンはとても<ruby>味<rt>あじ</rt></ruby>が<ruby>濃<rt>こ</rt></ruby>い、スープの<ruby><u>表面</u><rt>ひょうめん</rt></ruby>には<ruby><u>油</u><rt>あぶら</rt></ruby>が<ruby>浮<rt>う</rt></ruby>いている。しかし、<u>のり</u>とご<ruby>飯<rt>はん</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>食<rt>た</rt></ruby>べるとうまい。",
   "english_translation": "The ramen in this shop has a very strong taste, and oil floats on the surface of the soup. However, it is good to eat it with seaweed and rice.",
   "annotated_words": [
     {
-      "meaning_en": "rich, strong",
-      "furigana": "こい",
-      "kanji": "濃い"
-    },
-    {
-      "meaning_en": "bland",
-      "furigana": "うすい",
-      "kanji": "薄い"
-    },
-    {
-      "meaning_en": "surface",
+      "word_id": "n3_0022",
+      "word_number": 22,
+      "kanji": "表面",
       "furigana": "ひょうめん",
-      "kanji": "表面"
+      "meaning_en": "surface"
     },
     {
-      "meaning_en": "oil",
+      "word_id": "n3_0023",
+      "word_number": 23,
+      "kanji": "油",
       "furigana": "あぶら",
-      "kanji": "油"
+      "meaning_en": "oil"
     },
     {
-      "meaning_en": "salad oil",
-      "furigana": "あぶら",
-      "kanji": "サラダ油"
-    },
-    {
-      "meaning_en": "seaweed",
+      "word_id": "n3_0024",
+      "word_number": 24,
+      "kanji": "のり",
       "furigana": "",
-      "kanji": "のり"
+      "meaning_en": "seaweed"
     }
-  ]
+  ],
+  "story_number": 7,
+  "is_story": true,
+  "page_story": "20_1"
 }

@@ -1,28 +1,24 @@
 {
-  "id": "22_2",
-  "title": "Topic 1",
-  "japanese_text": "<span class='annotated-word' data-word='ワイン'>ワイン</span>は<ruby>温度<rt>おんど</rt></ruby>の<span class='annotated-word' data-word='管理'><ruby>管理<rt>かんり</rt></ruby></span>が<ruby>重要<rt>じゅうよう</rt></ruby>だ。<ruby>気<rt>き</rt></ruby>をつけないと、すぐに<span class='annotated-word' data-word='ぬるい'>ぬるく</span>なってしまう。<span class='annotated-word' data-word='ぬるい'>ぬるい</span>ワインはおいしくない。また、ワインを<ruby>飲<rt>の</rt></ruby>む<ruby>前<rt>まえ</rt></ruby>にグラスを<span class='annotated-word' data-word='回す'><ruby>回<rt>まわ</rt></ruby>す</span>と、<ruby>香<rt>かお</rt></ruby>りがよくなる。",
+  "title": "Topic 1 食事 Eating",
+  "japanese_text": "<u>ワイン</u>は<ruby>温度<rt>おんど</rt></ruby>の<ruby>管理<rt>かんり</rt></ruby>が<ruby>重要<rt>じゅうよう</rt></ruby>だ。<ruby>気<rt>き</rt></ruby>をつけないと、すぐにぬるくなってしまう。<u>ぬるい</u>ワインはおいしくない。また、ワインを<ruby>飲<rt>の</rt></ruby>む<ruby>前<rt>まえ</rt></ruby>にグラスを<ruby>回<rt>まわ</rt></ruby>すと、<ruby>香<rt>かお</rt></ruby>りがよくなる。",
   "english_translation": "With wine, it is important to control the temperature. If you're not careful, the wine will get tepid. Tepid wine is not delicious. Also, by swirling the glass before drinking wine, the scent will improve.",
   "annotated_words": [
     {
-      "meaning_en": "wine",
+      "word_id": "n3_0036",
+      "word_number": 36,
+      "kanji": "ワイン",
       "furigana": "",
-      "kanji": "ワイン"
+      "meaning_en": "wine"
     },
     {
-      "meaning_en": "management, manage",
-      "furigana": "かんり",
-      "kanji": "管理[する]"
-    },
-    {
-      "meaning_en": "tepid, lukewarm",
+      "word_id": "n3_0037",
+      "word_number": 37,
+      "kanji": "ぬるい",
       "furigana": "",
-      "kanji": "ぬるい"
-    },
-    {
-      "meaning_en": "swirl, turn",
-      "furigana": "まわす",
-      "kanji": "回す"
+      "meaning_en": "tepid, lukewarm"
     }
-  ]
+  ],
+  "story_number": 12,
+  "is_story": true,
+  "page_story": "22_2"
 }

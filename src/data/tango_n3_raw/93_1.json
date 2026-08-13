@@ -1,43 +1,45 @@
 {
-  "id": "93_1",
   "title": "Topic 6",
-  "japanese_text": "<ruby>最近<rt>さいきん</rt></ruby>のライトノベルは、まずオンラインの<ruby>小説<rt>しょうせつ</rt></ruby>サイトに<ruby>掲載<rt>けいさい</rt></ruby>され、それから<ruby>本<rt>ほん</rt></ruby>になることが<ruby>多<rt>おお</rt></ruby>い。タイトルが<ruby>長<rt>なが</rt></ruby>く、タイトルだけで<ruby>内容<rt>ないよう</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かることが<ruby>共通<rt>きょうつう</rt></ruby>している。<ruby>本<rt>ほん</rt></ruby>の<ruby>表紙<rt>ひょうし</rt></ruby>にはかわいいキャラクターが<ruby>描<rt>えが</rt></ruby>かれているが、タイトルのせいで<ruby>見<rt>み</rt></ruby>にくかったりする。",
+  "japanese_text": "<ruby>最近<rt>さいきん</rt></ruby>のライトノベルは、まず<u>オンライン</u>の<ruby>小説<rt>しょうせつ</rt></ruby>サイトに<ruby>掲載<rt>けいさい</rt></ruby>され、それから<ruby>本<rt>ほん</rt></ruby>になることが<ruby>多<rt>おお</rt></ruby>い。<u>タイトル</u>が<ruby>長<rt>なが</rt></ruby>く、タイトルだけで<ruby><u>内容</u><rt>ないよう</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かることが<ruby><u>共通</u><rt>きょうつう</rt></ruby>している。<ruby>本<rt>ほん</rt></ruby>の<ruby><u>表紙</u><rt>ひょうし</rt></ruby>にはかわいいキャラクターが<ruby>描<rt>えが</rt></ruby>かれているが、タイトルのせいで<ruby>見<rt>み</rt></ruby>にくかったりする。",
   "english_translation": "Recent light novels are often first published on online novel sites and then become books. It is common that the titles are long, and you can figure out the content just by the title alone. Cute characters are drawn on the covers of the books, but they may be difficult to see because of the title.",
   "annotated_words": [
     {
+      "word_id": "n3_1266",
+      "word_number": 1266,
       "kanji": "オンライン",
       "furigana": "",
-      "meaning": "online"
+      "meaning_en": "online"
     },
     {
+      "word_id": "n3_1267",
+      "word_number": 1267,
       "kanji": "タイトル",
       "furigana": "",
-      "meaning": "title"
+      "meaning_en": "title"
     },
     {
-      "kanji": "題名",
-      "furigana": "だいめい",
-      "meaning": "title"
-    },
-    {
-      "kanji": "題",
-      "furigana": "だい",
-      "meaning": "title"
-    },
-    {
+      "word_id": "n3_1268",
+      "word_number": 1268,
       "kanji": "内容",
       "furigana": "ないよう",
-      "meaning": "content"
+      "meaning_en": "content"
     },
     {
+      "word_id": "n3_1269",
+      "word_number": 1269,
       "kanji": "共通［する］",
       "furigana": "きょうつう",
-      "meaning": "having in common, have in common, share"
+      "meaning_en": "having in common, have in common, share"
     },
     {
+      "word_id": "n3_1270",
+      "word_number": 1270,
       "kanji": "表紙",
       "furigana": "ひょうし",
-      "meaning": "cover"
+      "meaning_en": "cover"
     }
-  ]
+  ],
+  "story_number": 3,
+  "is_story": true,
+  "page_story": "93_1"
 }

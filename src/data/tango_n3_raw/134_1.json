@@ -1,38 +1,45 @@
 {
-  "id": "134_1",
-  "title": "Topic 9",
-  "japanese_text": "A：どうしたんですか。<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか。<br>B：あ、すみません。<ruby>立<rt>た</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>がろうとした<ruby>際<rt>さい</rt></ruby>に、<ruby>突然<rt>とつぜん</rt></ruby><ruby>目<rt>め</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>が<ruby>真<rt>ま</rt></ruby>っ<ruby>暗<rt>くら</rt></ruby>になって…。<br>A：えっと、まずはこの<ruby>平<rt>たい</rt></ruby>らなところにそっと<ruby>座<rt>すわ</rt></ruby>ってください。ゆっくりでいいですよ。<ruby>今<rt>いま</rt></ruby>、<ruby>救急車<rt>きゅうきゅうしゃ</rt></ruby><ruby>呼<rt>よ</rt></ruby>びますね。",
+  "title": "Topic 9 動物 Animals",
+  "japanese_text": "A：どうしたんですか。<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>ですか。<br>B：あ、すみません。<u><ruby>立<rt>た</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>がろう</u>とした<u><ruby>際<rt>さい</rt></ruby></u>に、<u><ruby>突然<rt>とつぜん</rt></ruby></u><ruby>目<rt>め</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>が<ruby>真<rt>ま</rt></ruby>っ<ruby>暗<rt>くら</rt></ruby>になって…。<br>A：えっと、まずはこの<u><ruby>平<rt>たい</rt></ruby>らな</u>ところに<u>そっと</u><ruby>座<rt>すわ</rt></ruby>ってください。ゆっくりでいいですよ。<ruby>今<rt>いま</rt></ruby>、<ruby>救急車<rt>きゅうきゅうしゃ</rt></ruby><ruby>呼<rt>よ</rt></ruby>びますね。",
   "english_translation": "A: What happened? Are you okay? B: I'm sorry. I tried to stand up, and suddenly everything went black . . . A: Well, first please slowly sit down on this flat surface. Just take your time. I'll call an ambulance right now.",
   "annotated_words": [
     {
+      "word_id": "n3_0925",
+      "word_number": 925,
       "kanji": "立ち上がる",
       "furigana": "たちあがる",
-      "meaning": "stand up"
+      "meaning_en": "stand up"
     },
     {
-      "kanji": "立ち上げる",
-      "furigana": "たちあげる",
-      "meaning": "build"
-    },
-    {
+      "word_id": "n3_0926",
+      "word_number": 926,
       "kanji": "際",
       "furigana": "さい",
-      "meaning": "when, (in the) event"
+      "meaning_en": "when, (in the) event"
     },
     {
+      "word_id": "n3_0927",
+      "word_number": 927,
       "kanji": "突然",
       "furigana": "とつぜん",
-      "meaning": "suddenly"
+      "meaning_en": "suddenly"
     },
     {
+      "word_id": "n3_0928",
+      "word_number": 928,
       "kanji": "平らな",
       "furigana": "たいらな",
-      "meaning": "flat"
+      "meaning_en": "flat"
     },
     {
+      "word_id": "n3_0929",
+      "word_number": 929,
       "kanji": "そっと",
       "furigana": "",
-      "meaning": "quietly"
+      "meaning_en": "quietly"
     }
-  ]
+  ],
+  "story_number": 12,
+  "is_story": true,
+  "page_story": "134_1"
 }

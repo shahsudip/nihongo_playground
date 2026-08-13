@@ -1,38 +1,31 @@
 {
-  "id": "118_1",
   "title": "Topic 8",
-  "japanese_text": "<ruby>体育<rt>たいいく</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>でバレーボールをやった。１セット<ruby>目<rt>め</rt></ruby>は<ruby>点<rt>てん</rt></ruby>を<ruby>取<rt>と</rt></ruby>ることができたが、その<ruby>後<rt>あと</rt></ruby>は<ruby>一方的<rt>いっぽうてき</rt></ruby>に<ruby>負<rt>ま</rt></ruby>けてしまった。<ruby>試合後<rt>しあいご</rt></ruby>、<ruby>両<rt>りょう</rt></ruby>チームで<ruby>握手<rt>あくしゅ</rt></ruby>した。",
+  "japanese_text": "<ruby><u>体育</u><rt>たいいく</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>でバレーボールをやった。１セット<ruby>目<rt>め</rt></ruby>は<ruby><u>点</u><rt>てん</rt></ruby>を<ruby>取<rt>と</rt></ruby>ることができたが、その<ruby>後<rt>あと</rt></ruby>は<ruby>一方的<rt>いっぽうてき</rt></ruby>に<ruby>負<rt>ま</rt></ruby>けてしまった。<ruby>試合後<rt>しあいご</rt></ruby>、<ruby>両<rt>りょう</rt></ruby>チームで<ruby><u>握手</u><rt>あくしゅ</rt></ruby>した。",
   "english_translation": "We played volleyball in my physical education class. We scored some points in the first set, but after that, we lost one-sidedly. After the game, both teams shook hands.",
   "annotated_words": [
     {
+      "word_id": "n3_1380",
+      "word_number": 1380,
       "kanji": "体育",
       "furigana": "たいいく",
-      "meaning": "physical education"
+      "meaning_en": "physical education"
     },
     {
-      "kanji": "体育館",
-      "furigana": "たいいくかん",
-      "meaning": "gymnasium"
-    },
-    {
-      "kanji": "〜セット",
-      "furigana": "",
-      "meaning": "~ set"
-    },
-    {
+      "word_id": "n3_1381",
+      "word_number": 1381,
       "kanji": "点",
       "furigana": "てん",
-      "meaning": "point"
+      "meaning_en": "point"
     },
     {
-      "kanji": "両〜",
-      "furigana": "りょう〜",
-      "meaning": "both ~"
-    },
-    {
+      "word_id": "n3_1382",
+      "word_number": 1382,
       "kanji": "握手［する］",
       "furigana": "あくしゅ",
-      "meaning": "shaking hands, shake hands"
+      "meaning_en": "shaking hands, shake hands"
     }
-  ]
+  ],
+  "story_number": 9,
+  "is_story": true,
+  "page_story": "118_1"
 }

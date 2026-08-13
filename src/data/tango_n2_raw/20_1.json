@@ -3,7 +3,7 @@
   "story_number": 9,
   "title": "Topic 1 食事",
   "page_story": "20_1",
-  "japanese_text": "冷蔵庫の中が<u>生臭い</u>と思ったら、きゅうりが腐って白い<u>液体</u>が出ていた。普段、<u>賞味期限</u>切れのお菓子などは気にせず食べているが、これはさすがにやめておこう。せっかく母が<u>農薬</u>を使わずに育てたからと送ってくれたのに、<u>粗末</u>にしてしまって申し訳ない。",
+  "japanese_text": "<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>が<u>生臭い</u>と<ruby>思<rt>おも</rt></ruby>ったら、きゅうりが<ruby>腐<rt>くさ</rt></ruby>って<ruby>白<rt>しろ</rt></ruby>い<u>液体</u>が<ruby>出<rt>で</rt></ruby>ていた。<ruby>普段<rt>ふだん</rt></ruby>、<u>賞味期限</u><u>切れ</u>のお<ruby>菓子<rt>かし</rt></ruby>などは<ruby>気<rt>き</rt></ruby>にせず<ruby>食<rt>た</rt></ruby>べているが、これはさすがにやめておこう。せっかく<ruby>母<rt>はは</rt></ruby>が<u>農薬</u>を<ruby>使<rt>つか</rt></ruby>わずに<ruby>育<rt>そだ</rt></ruby>てたからと<ruby>送<rt>おく</rt></ruby>ってくれたのに、<u>粗末</u>にしてしまって<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ない。",
   "english_translation": "I noticed something stinking in the refrigerator, but it turned out to be rotten cucumbers with white fluid oozing out of them. I usually don't mind eating expired snacks, but there's no way I'd eat this. My mother sent me these cucumbers she'd grown without using any pesticides, so I feel bad for treating them so carelessly.",
   "annotated_words": [
     {
@@ -26,13 +26,6 @@
       "kanji": "賞味期限",
       "furigana": "しょうみきげん",
       "meaning_en": "best-before date"
-    },
-    {
-      "word_id": "n2_0048",
-      "word_number": 48,
-      "kanji": "消費期限",
-      "furigana": "しょうひきげん",
-      "meaning_en": "expiry date"
     },
     {
       "word_id": "n2_0049",

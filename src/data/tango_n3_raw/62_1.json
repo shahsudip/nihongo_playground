@@ -1,38 +1,31 @@
 {
-  "id": "62_1",
   "title": "Topic 4",
-  "japanese_text": "<ruby>Ａ：<rt></rt></ruby><ruby>髪<rt>かみ</rt></ruby><ruby>の<rt></rt></ruby><ruby>毛<rt>け</rt></ruby><ruby>伸<rt>の</rt></ruby><ruby>びたね。<rt></rt></ruby>\n<ruby>Ｂ：うん、ずっと<rt></rt></ruby><ruby>美容院<rt>びよういん</rt></ruby><ruby>行<rt>い</rt></ruby><ruby>ってなくて。<rt></rt></ruby><ruby>毎朝<rt>まいあさ</rt></ruby><ruby>くしでとかしてセッ<rt></rt></ruby><ruby>トするのも、<rt></rt></ruby><ruby>毎晩<rt>まいばん</rt></ruby><ruby>ドライヤーで<rt></rt></ruby><ruby>乾<rt>かわ</rt></ruby><ruby>かすのも<rt></rt></ruby><ruby>大変<rt>たいへん</rt></ruby><ruby>！<rt></rt></ruby>\n<ruby>Ａ：<rt></rt></ruby><ruby>分<rt>わ</rt></ruby><ruby>かる！<rt></rt></ruby><ruby>時間<rt>じかん</rt></ruby><ruby>もかかるしね。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：<rt></rt></ruby><ruby>髪<rt>かみ</rt></ruby><ruby>の<rt></rt></ruby><ruby>毛<rt>け</rt></ruby><ruby>伸<rt>の</rt></ruby><ruby>びたね。<rt></rt></ruby>\n<ruby>Ｂ：うん、ずっと<rt></rt></ruby><ruby><u>美容院</u><rt>びよういん</rt></ruby><ruby>行<rt>い</rt></ruby><ruby>ってなくて。<rt></rt></ruby><ruby>毎朝<rt>まいあさ</rt></ruby><ruby>くしでとかして<u>セッ<rt></rt></ruby><ruby>ト</u>するのも、<rt></rt></ruby><ruby>毎晩<rt>まいばん</rt></ruby><ruby><u>ドライヤー</u>で<rt></rt></ruby><ruby>乾<rt>かわ</rt></ruby><ruby>かすのも<rt></rt></ruby><ruby>大変<rt>たいへん</rt></ruby><ruby>！<rt></rt></ruby>\n<ruby>Ａ：<rt></rt></ruby><ruby>分<rt>わ</rt></ruby><ruby>かる！<rt></rt></ruby><ruby>時間<rt>じかん</rt></ruby><ruby>もかかるしね。<rt></rt></ruby>",
   "english_translation": "A: Your hair got longer.\nB: Yeah, I haven't been to a beauty salon in long time. It's such a pain combing and putting it up every morning and drying it out with a dryer every night!\nA: I know what you mean! It takes so much time.",
   "annotated_words": [
     {
-      "kanji": "髪の毛",
-      "furigana": "かみのけ",
-      "meaning": "hair"
-    },
-    {
+      "word_id": "n3_1097",
+      "word_number": 1097,
       "kanji": "美容院",
       "furigana": "びよういん",
-      "meaning": "hair salon"
+      "meaning_en": "hair salon"
     },
     {
-      "kanji": "床屋",
-      "furigana": "とこや",
-      "meaning": "barbershop"
-    },
-    {
-      "kanji": "とかす",
-      "furigana": "",
-      "meaning": "comb"
-    },
-    {
+      "word_id": "n3_1098",
+      "word_number": 1098,
       "kanji": "セット",
       "furigana": "",
-      "meaning": "set, set, do one's hair"
+      "meaning_en": "set, set, do one's hair"
     },
     {
+      "word_id": "n3_1099",
+      "word_number": 1099,
       "kanji": "ドライヤー",
       "furigana": "",
-      "meaning": "hairdryer"
+      "meaning_en": "hairdryer"
     }
-  ]
+  ],
+  "story_number": 1,
+  "is_story": true,
+  "page_story": "62_1"
 }

@@ -1,38 +1,52 @@
 {
-  "id": "82_1",
   "title": "Topic 5",
-  "japanese_text": "この<ruby>円<rt>えん</rt></ruby><ruby>グラフは、<rt></rt></ruby><ruby>日本人<rt>にほんじん</rt></ruby><ruby>がスマホを<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>って<rt></rt></ruby><ruby>何<rt>なに</rt></ruby><ruby>をしているかを<rt></rt></ruby><ruby>表<rt>あらわ</rt></ruby><ruby>したものである。<rt></rt></ruby><ruby>平均<rt>へいきん</rt></ruby><ruby>して<rt></rt></ruby>１<ruby>日<rt>にち</rt></ruby><ruby>に<rt></rt></ruby>４<ruby>時間<rt>じかん</rt></ruby><ruby>スマホを<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>っていて、<rt></rt></ruby><ruby>その<rt></rt></ruby><ruby>約<rt>やく</rt></ruby>50パーセントがＳＮＳの<ruby>利用<rt>りよう</rt></ruby><ruby>である。ホームページやブ<rt></rt></ruby><ruby>ログを<rt></rt></ruby><ruby>見<rt>み</rt></ruby><ruby>る<rt></rt></ruby><ruby>時間<rt>じかん</rt></ruby><ruby>は<rt></rt></ruby><ruby>減<rt>へ</rt></ruby><ruby>ってきている。<rt></rt></ruby>",
+  "japanese_text": "この<ruby><u>円</u><rt>えん</rt></ruby><ruby>グラフは、<rt></rt></ruby><ruby>日本人<rt>にほんじん</rt></ruby><ruby>がスマホを<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>って<rt></rt></ruby><ruby>何<rt>なに</rt></ruby><ruby>をしているかを<rt></rt></ruby><ruby>表<rt>あらわ</rt></ruby><ruby>したものである。<rt></rt></ruby><ruby><u>平均</u><rt>へいきん</rt></ruby><ruby>して<rt></rt></ruby>１<ruby>日<rt>にち</rt></ruby><ruby>に<rt></rt></ruby>４<ruby>時間<rt>じかん</rt></ruby><ruby>スマホを<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>っていて、<rt></rt></ruby><ruby>その<rt></rt></ruby><ruby>約<rt>やく</rt></ruby>50<u>パーセント</u>が<u>ＳＮＳ</u>の<ruby>利用<rt>りよう</rt></ruby><ruby>である。<u>ホームページ</u>や<u>ブ<rt></rt></ruby><ruby>ログ</u>を<rt></rt></ruby><ruby>見<rt>み</rt></ruby><ruby>る<rt></rt></ruby><ruby>時間<rt>じかん</rt></ruby><ruby>は<rt></rt></ruby><ruby>減<rt>へ</rt></ruby><ruby>ってきている。<rt></rt></ruby>",
   "english_translation": "This pie chart shows what Japanese people do when using a smartphone. On average, people use their phones about four hours a day, and about 50 percent of that time is spent on social media. Time spent looking at home pages and blogs is decreasing.",
   "annotated_words": [
     {
+      "word_id": "n3_1208",
+      "word_number": 1208,
       "kanji": "円",
       "furigana": "えん",
-      "meaning": "circle"
+      "meaning_en": "circle"
     },
     {
+      "word_id": "n3_1209",
+      "word_number": 1209,
       "kanji": "平均",
       "furigana": "へいきん",
-      "meaning": "average, average"
+      "meaning_en": "average, average"
     },
     {
+      "word_id": "n3_1210",
+      "word_number": 1210,
       "kanji": "パーセント",
       "furigana": "",
-      "meaning": "percent"
+      "meaning_en": "percent"
     },
     {
+      "word_id": "n3_1211",
+      "word_number": 1211,
       "kanji": "ＳＮＳ",
       "furigana": "",
-      "meaning": "social media"
+      "meaning_en": "social media"
     },
     {
+      "word_id": "n3_1212",
+      "word_number": 1212,
       "kanji": "ホームページ",
       "furigana": "",
-      "meaning": "home page"
+      "meaning_en": "home page"
     },
     {
+      "word_id": "n3_1213",
+      "word_number": 1213,
       "kanji": "ブログ",
       "furigana": "",
-      "meaning": "blog"
+      "meaning_en": "blog"
     }
-  ]
+  ],
+  "story_number": 16,
+  "is_story": true,
+  "page_story": "82_1"
 }

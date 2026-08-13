@@ -1,38 +1,24 @@
 {
-  "id": "81_1",
   "title": "Topic 5",
-  "japanese_text": "スマホを<ruby>替<rt>か</rt></ruby><ruby>えようと<rt></rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>ってカタログを<rt></rt></ruby><ruby>見<rt>み</rt></ruby><ruby>ているけど、<rt></rt></ruby><ruby>違<rt>ちが</rt></ruby><ruby>いが<rt></rt></ruby><ruby>分<rt>わ</rt></ruby><ruby>からない。<rt></rt></ruby><ruby>最新型<rt>さいしんがた</rt></ruby><ruby>は<rt></rt></ruby><ruby>私<rt>わたし</rt></ruby><ruby>には<rt></rt></ruby><ruby>必要<rt>ひつよう</rt></ruby><ruby>ないかな。<rt></rt></ruby>",
+  "japanese_text": "スマホを<ruby>替<rt>か</rt></ruby><ruby>えようと<rt></rt></ruby><ruby>思<rt>おも</rt></ruby><ruby>って<u>カタログ</u>を<rt></rt></ruby><ruby>見<rt>み</rt></ruby><ruby>ているけど、<rt></rt></ruby><ruby>違<rt>ちが</rt></ruby><ruby>いが<rt></rt></ruby><ruby>分<rt>わ</rt></ruby><ruby>からない。<rt></rt></ruby><ruby><u>最新</u>型<rt>さいしんがた</rt></ruby><ruby>は<rt></rt></ruby><ruby>私<rt>わたし</rt></ruby><ruby>には<rt></rt></ruby><ruby>必要<rt>ひつよう</rt></ruby><ruby>ないかな。<rt></rt></ruby>",
   "english_translation": "I want to get a new smartphone, so I'm looking at a catalog, but I can't tell the difference. I don't think I need the latest model.",
   "annotated_words": [
     {
-      "kanji": "替える/代える/換える",
-      "furigana": "かえる",
-      "meaning": "exchange, replace, change"
-    },
-    {
-      "kanji": "替わる/代わる/換わる",
-      "furigana": "かわる",
-      "meaning": "exchange, replace, change"
-    },
-    {
+      "word_id": "n3_1206",
+      "word_number": 1206,
       "kanji": "カタログ",
       "furigana": "",
-      "meaning": "catalog"
+      "meaning_en": "catalog"
     },
     {
-      "kanji": "違い",
-      "furigana": "ちがい",
-      "meaning": "difference"
-    },
-    {
+      "word_id": "n3_1207",
+      "word_number": 1207,
       "kanji": "最新",
       "furigana": "さいしん",
-      "meaning": "latest"
-    },
-    {
-      "kanji": "〜型",
-      "furigana": "〜がた",
-      "meaning": "model"
+      "meaning_en": "latest"
     }
-  ]
+  ],
+  "story_number": 15,
+  "is_story": true,
+  "page_story": "81_1"
 }

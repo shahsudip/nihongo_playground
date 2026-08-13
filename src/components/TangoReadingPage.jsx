@@ -83,10 +83,14 @@ export default function TangoReadingPage() {
         if (wordIndex < story.annotated_words.length) {
           const word = story.annotated_words[wordIndex];
           wordIndex++;
-          return `<span class="inline-flex flex-col items-center justify-center align-middle mx-1" style="vertical-align: middle; line-height: 1.2;">
-            <span class="text-[12px] text-[var(--color-text-secondary)] mb-1 whitespace-nowrap font-sans tracking-normal leading-none">${word.meaning_en}</span>
-            <span class="underline decoration-[var(--primary-green)] decoration-[3px] underline-offset-[4px]">${p1}</span>
-            <span class="text-[12px] text-[var(--primary-green)] mt-1 whitespace-nowrap font-sans tracking-normal leading-none">${word.furigana}</span>
+          let displayWord = p1;
+          if (!p1.includes('<ruby>') && word.furigana) {
+             displayWord = `<ruby>${p1}<rt>${word.furigana}</rt></ruby>`;
+          }
+
+          return `<span class="inline-flex flex-col items-center align-baseline mx-1" style="vertical-align: baseline; line-height: 1.2;">
+            <span class="underline decoration-[var(--primary-green)] decoration-[2px] underline-offset-[2px]">${displayWord}</span>
+            <span class="text-[12px] text-[var(--color-text-secondary)] mt-1 whitespace-nowrap font-sans tracking-normal leading-none">${word.meaning_en}</span>
           </span>`;
         }
         return match; // If there are more <u> tags than words, leave them as is
@@ -108,8 +112,9 @@ export default function TangoReadingPage() {
         >
           &larr; Exit Reading
         </Link>
-        <div className="text-[var(--color-text-secondary)] text-sm font-medium">
-          Story {currentStoryIndex + 1} of {stories.length}
+        <div className="text-[var(--color-text-secondary)] text-sm font-medium flex items-center gap-4">
+          {topicTitle && <span className="text-[var(--primary-green)] font-bold bg-[var(--primary-green)]/10 px-3 py-1 rounded-full">{topicTitle}</span>}
+          <span>Story {currentStoryIndex + 1} of {stories.length}</span>
         </div>
       </div>
 

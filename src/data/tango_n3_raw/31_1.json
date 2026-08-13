@@ -1,43 +1,17 @@
 {
-  "id": "31_1",
-  "title": "Topic 1",
-  "japanese_text": "いつも<ruby>夕食<rt>ゆうしょく</rt></ruby>は<ruby>簡単<rt>かんたん</rt></ruby>な<ruby>料理<rt>りょうり</rt></ruby>やスーパーの<span class='annotated-word' data-word='おそうざい'>おそうざい</span>で<span class='annotated-word' data-word='済ませる'>済<ruby><rt>す</rt></ruby>ませて</span>いる。<span class='annotated-word' data-word='外食する'>外食<ruby><rt>がいしょく</rt></ruby></span>もしない。でも、<ruby>結婚<rt>けっこん</rt></ruby><span class='annotated-word' data-word='記念日'>記念日<ruby><rt>きねんび</rt></ruby></span>ぐらいは<span class='annotated-word' data-word='ぜいたくする'>ぜいたくし</span>たい。",
+  "title": "Topic 1 食事 Eating",
+  "japanese_text": "いつも<ruby>夕食<rt>ゆうしょく</rt></ruby>は<ruby>簡単<rt>かんたん</rt></ruby>な<ruby>料理<rt>りょうり</rt></ruby>やスーパーのおそうざいで済<ruby><rt>す</rt></ruby>ませている。外食<ruby><rt>がいしょく</rt></ruby>もしない。でも、<ruby>結婚<rt>けっこん</rt></ruby><u>記念日</u><ruby><rt>きねんび</rt></ruby>ぐらいはぜいたくしたい。",
   "english_translation": "My dinner is always something simple or some side dish I bought at the supermarket. I don't eat out. But I do want to have something luxurious on my wedding anniversary at least.",
   "annotated_words": [
     {
-      "meaning_en": "side dish",
-      "furigana": "",
-      "kanji": "(お)そうざい"
-    },
-    {
-      "meaning_en": "be done, settle",
-      "furigana": "すませる",
-      "kanji": "済ませる"
-    },
-    {
-      "meaning_en": "finish",
-      "furigana": "すむ",
-      "kanji": "済む"
-    },
-    {
-      "meaning_en": "eating out, eat out",
-      "furigana": "がいしょく",
-      "kanji": "外食[する]"
-    },
-    {
-      "meaning_en": "anniversary",
+      "word_id": "n3_0077",
+      "word_number": 77,
+      "kanji": "記念日",
       "furigana": "きねんび",
-      "kanji": "記念日"
-    },
-    {
-      "meaning_en": "commemoration, commemorate",
-      "furigana": "きねん",
-      "kanji": "記念[する]"
-    },
-    {
-      "meaning_en": "luxury, do something luxurious",
-      "furigana": "",
-      "kanji": "ぜいたく[する]"
+      "meaning_en": "anniversary"
     }
-  ]
+  ],
+  "story_number": 25,
+  "is_story": true,
+  "page_story": "31_1"
 }

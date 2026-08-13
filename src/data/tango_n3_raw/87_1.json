@@ -1,33 +1,45 @@
 {
-  "id": "87_1",
   "title": "Topic 5",
-  "japanese_text": "ある<ruby>国<rt>くに</rt></ruby><ruby>の<rt></rt></ruby><ruby>一流企業<rt>いちりゅうきぎょう</rt></ruby><ruby>の<rt></rt></ruby><ruby>製品<rt>せいひん</rt></ruby><ruby>であっても、<rt></rt></ruby><ruby>中身<rt>なかみ</rt></ruby><ruby>の<rt></rt></ruby><ruby>部品<rt>ぶひん</rt></ruby><ruby>は<rt></rt></ruby><ruby>別<rt>べつ</rt></ruby><ruby>の<rt></rt></ruby><ruby>国<rt>くに</rt></ruby><ruby>の<rt></rt></ruby><ruby>小<rt>ちい</rt></ruby><ruby>さな<rt></rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby><ruby>で<rt></rt></ruby><ruby>製造<rt>せいぞう</rt></ruby><ruby>されていることがある。<rt></rt></ruby>",
+  "japanese_text": "ある<ruby>国<rt>くに</rt></ruby><ruby>の<rt></rt></ruby><ruby><u>一流</u>企業<rt>いちりゅうきぎょう</rt></ruby><ruby>の<rt></rt></ruby><ruby><u>製品</u><rt>せいひん</rt></ruby><ruby>であっても、<rt></rt></ruby><ruby><u>中身</u><rt>なかみ</rt></ruby><ruby>の<rt></rt></ruby><ruby><u>部品</u><rt>ぶひん</rt></ruby><ruby>は<rt></rt></ruby><ruby>別<rt>べつ</rt></ruby><ruby>の<rt></rt></ruby><ruby>国<rt>くに</rt></ruby><ruby>の<rt></rt></ruby><ruby>小<rt>ちい</rt></ruby><ruby>さな<rt></rt></ruby><ruby>会社<rt>かいしゃ</rt></ruby><ruby>で<rt></rt></ruby><ruby><u>製造</u><rt>せいぞう</rt></ruby><ruby>されていることがある。<rt></rt></ruby>",
   "english_translation": "Even though a product may be a leading company of one country, there are times when the parts inside are manufactured at small companies in another country.",
   "annotated_words": [
     {
+      "word_id": "n3_1242",
+      "word_number": 1242,
       "kanji": "一流",
       "furigana": "いちりゅう",
-      "meaning": "top, top tier"
+      "meaning_en": "top, top tier"
     },
     {
+      "word_id": "n3_1243",
+      "word_number": 1243,
       "kanji": "製品",
       "furigana": "せいひん",
-      "meaning": "product"
+      "meaning_en": "product"
     },
     {
+      "word_id": "n3_1244",
+      "word_number": 1244,
       "kanji": "中身",
       "furigana": "なかみ",
-      "meaning": "inside, content"
+      "meaning_en": "inside, content"
     },
     {
+      "word_id": "n3_1245",
+      "word_number": 1245,
       "kanji": "部品",
       "furigana": "ぶひん",
-      "meaning": "part"
+      "meaning_en": "part"
     },
     {
+      "word_id": "n3_1246",
+      "word_number": 1246,
       "kanji": "製造",
       "furigana": "せいぞう",
-      "meaning": "manufacturing, manufacture"
+      "meaning_en": "manufacturing, manufacture"
     }
-  ]
+  ],
+  "story_number": 26,
+  "is_story": true,
+  "page_story": "87_1"
 }

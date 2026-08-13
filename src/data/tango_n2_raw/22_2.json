@@ -3,7 +3,7 @@
   "story_number": 13,
   "title": "Topic 1 食事",
   "page_story": "22_2",
-  "japanese_text": "A：なんか、<u>食卓</u>の下、<u>湿って</u>ない？\nB：ああ。さっき、お父さんが<u>酔っぱらって</u>お酒こぼしちゃったの。",
+  "japanese_text": "A：なんか、<u>食卓</u>の<ruby>下<rt>した</rt></ruby>、<u>湿って</u>ない？\\nB：ああ。さっき、お<ruby>父<rt>とう</rt></ruby>さんが<u>酔っぱらって</u>お<ruby>酒<rt>さけ</rt></ruby>こぼしちゃったの。",
   "english_translation": "A: Hey, is it wet under the table? B: Yeah. Dad got drunk and spilled some alcohol earlier.",
   "annotated_words": [
     {
@@ -26,13 +26,6 @@
       "kanji": "酔っぱらう",
       "furigana": "よっぱらう",
       "meaning_en": "get drunk"
-    },
-    {
-      "word_id": "n2_0069",
-      "word_number": 69,
-      "kanji": "酔っぱらい",
-      "furigana": "よっぱらい",
-      "meaning_en": "drunkard"
     }
   ]
 }

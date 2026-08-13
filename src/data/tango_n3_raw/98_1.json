@@ -1,38 +1,45 @@
 {
-  "id": "98_1",
   "title": "Topic 6",
-  "japanese_text": "<ruby>恋愛<rt>れんあい</rt></ruby>と<ruby>友情<rt>ゆうじょう</rt></ruby>は、<ruby>人間<rt>にんげん</rt></ruby>にとって<ruby>最<rt>もっと</rt></ruby>も<ruby>重大<rt>じゅうだい</rt></ruby>なテーマだ。だからこそ、<ruby>歴史<rt>れきし</rt></ruby>の<ruby>中<rt>なか</rt></ruby>でたくさんの<ruby>物語<rt>ものがたり</rt></ruby>が<ruby>作<rt>つく</rt></ruby>られてきた。<ruby>現代<rt>げんだい</rt></ruby>の<ruby>曲<rt>きょく</rt></ruby>の<ruby>歌詞<rt>かし</rt></ruby>にも<ruby>多<rt>おお</rt></ruby>く<ruby>登場<rt>とうじょう</rt></ruby>する。",
+  "japanese_text": "<ruby><u>恋愛</u><rt>れんあい</rt></ruby>と<ruby><u>友情</u><rt>ゆうじょう</rt></ruby>は、<ruby>人間<rt>にんげん</rt></ruby>にとって<ruby>最<rt>もっと</rt></ruby>も<ruby>重大<rt>じゅうだい</rt></ruby>な<u>テーマ</u>だ。だからこそ、<ruby>歴史<rt>れきし</rt></ruby>の<ruby>中<rt>なか</rt></ruby>でたくさんの<ruby><u>物語</u><rt>ものがたり</rt></ruby>が<ruby>作<rt>つく</rt></ruby>られてきた。<ruby>現代<rt>げんだい</rt></ruby>の<ruby>曲<rt>きょく</rt></ruby>の<ruby><u>歌詞</u><rt>かし</rt></ruby>にも<ruby>多<rt>おお</rt></ruby>く<ruby>登場<rt>とうじょう</rt></ruby>する。",
   "english_translation": "Love and friendship are the most significant themes for humans. That's why there have been a lot of stories in history. Many appear in the lyrics of modern songs too.",
   "annotated_words": [
     {
+      "word_id": "n3_1290",
+      "word_number": 1290,
       "kanji": "恋愛［する］",
       "furigana": "れんあい",
-      "meaning": "love, love"
+      "meaning_en": "love, love"
     },
     {
+      "word_id": "n3_1291",
+      "word_number": 1291,
       "kanji": "友情",
       "furigana": "ゆうじょう",
-      "meaning": "friendship"
+      "meaning_en": "friendship"
     },
     {
-      "kanji": "重大な",
-      "furigana": "じゅうだいな",
-      "meaning": "serious"
-    },
-    {
+      "word_id": "n3_1292",
+      "word_number": 1292,
       "kanji": "テーマ",
       "furigana": "",
-      "meaning": "theme"
+      "meaning_en": "theme"
     },
     {
+      "word_id": "n3_1293",
+      "word_number": 1293,
       "kanji": "物語",
       "furigana": "ものがたり",
-      "meaning": "story"
+      "meaning_en": "story"
     },
     {
+      "word_id": "n3_1294",
+      "word_number": 1294,
       "kanji": "歌詞",
       "furigana": "かし",
-      "meaning": "lyrics"
+      "meaning_en": "lyrics"
     }
-  ]
+  ],
+  "story_number": 11,
+  "is_story": true,
+  "page_story": "98_1"
 }

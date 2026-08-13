@@ -1,48 +1,45 @@
 {
-  "id": "84_1",
   "title": "Topic 5",
-  "japanese_text": "<ruby>Ａ：ウェブサイトの<rt></rt></ruby><ruby>広告<rt>こうこく</rt></ruby><ruby>って<rt></rt></ruby><ruby>本当<rt>ほんとう</rt></ruby><ruby>に<rt></rt></ruby><ruby>嫌<rt>きら</rt></ruby><ruby>い。なんか<rt></rt></ruby><ruby>画面<rt>がめん</rt></ruby><ruby>のあちこちに<rt></rt></ruby><ruby>出<rt>で</rt></ruby><ruby>てきて、うっかりクリックしそうになる。<rt></rt></ruby>\n<ruby>Ｂ：そういう<rt></rt></ruby><ruby>工夫<rt>くふう</rt></ruby><ruby>はしてほしくないよね。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：<u>ウェブサイト</u>の<rt></rt></ruby><ruby><u>広告</u><rt>こうこく</rt></ruby><ruby>って<rt></rt></ruby><ruby>本当<rt>ほんとう</rt></ruby><ruby>に<rt></rt></ruby><ruby>嫌<rt>きら</rt></ruby><ruby>い。なんか<rt></rt></ruby><ruby>画面<rt>がめん</rt></ruby><ruby>の<u>あちこち</u>に<rt></rt></ruby><ruby>出<rt>で</rt></ruby><ruby>てきて、うっかり<u>クリック</u>しそうになる。<rt></rt></ruby>\n<ruby>Ｂ：そういう<rt></rt></ruby><ruby><u>工夫</u><rt>くふう</rt></ruby><ruby>はしてほしくないよね。<rt></rt></ruby>",
   "english_translation": "A: I really hate advertisements on websites. They just pop up all over the screen, and I always almost carelessly click on them.\nB: I wish they wouldn't design them like that.",
   "annotated_words": [
     {
+      "word_id": "n3_1223",
+      "word_number": 1223,
       "kanji": "ウェブサイト",
       "furigana": "",
-      "meaning": "website"
+      "meaning_en": "website"
     },
     {
-      "kanji": "ウェブ",
-      "furigana": "",
-      "meaning": "web"
-    },
-    {
+      "word_id": "n3_1224",
+      "word_number": 1224,
       "kanji": "広告",
       "furigana": "こうこく",
-      "meaning": "advertisement"
+      "meaning_en": "advertisement"
     },
     {
-      "kanji": "広告会社",
-      "furigana": "こうこくがいしゃ",
-      "meaning": "advertising company"
-    },
-    {
+      "word_id": "n3_1225",
+      "word_number": 1225,
       "kanji": "あちこち",
       "furigana": "",
-      "meaning": "everywhere, here and there"
+      "meaning_en": "everywhere, here and there"
     },
     {
-      "kanji": "あちらこちら",
-      "furigana": "",
-      "meaning": "everywhere, here and there (polite speech)"
-    },
-    {
+      "word_id": "n3_1226",
+      "word_number": 1226,
       "kanji": "クリック",
       "furigana": "",
-      "meaning": "click, click"
+      "meaning_en": "click, click"
     },
     {
+      "word_id": "n3_1227",
+      "word_number": 1227,
       "kanji": "工夫",
       "furigana": "くふう",
-      "meaning": "design, scheme"
+      "meaning_en": "design, scheme"
     }
-  ]
+  ],
+  "story_number": 20,
+  "is_story": true,
+  "page_story": "84_1"
 }

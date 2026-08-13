@@ -1,43 +1,45 @@
 {
-  "id": "106_1",
   "title": "Topic 7",
-  "japanese_text": "<ruby>久<rt>ひさ</rt></ruby>しぶりに<ruby>中国人<rt>ちゅうごくじん</rt></ruby>の<ruby>友人<rt>ゆうじん</rt></ruby>が<ruby>来日<rt>らいにち</rt></ruby>した。<ruby>母親<rt>ははおや</rt></ruby>が「ようこそ、よくいらっしゃいました」と<ruby>言<rt>い</rt></ruby>うと、<ruby>友人<rt>ゆうじん</rt></ruby>は「ご<ruby>無沙汰<rt>ぶさた</rt></ruby>しています」とあいさつした。",
+  "japanese_text": "<ruby>久<rt>ひさ</rt></ruby>しぶりに<ruby>中国人<rt>ちゅうごくじん</rt></ruby>の<ruby><u>友人</u><rt>ゆうじん</rt></ruby>が<ruby>来日<rt>らいにち</rt></ruby>した。<ruby><u>母親</u><rt>ははおや</rt></ruby>が「<u>ようこそ</u>、<u>よくいらっしゃいました</u>」と<ruby>言<rt>い</rt></ruby>うと、<ruby>友人<rt>ゆうじん</rt></ruby>は「<u>ご<ruby>無沙汰</u><rt>ぶさた</rt></ruby>しています」とあいさつした。",
   "english_translation": "A Chinese friend of mine came to Japan for the first time in a while. When my mother said, \"Welcome, I'm glad you made it,\" my friend greeting her by saying, \"Long time no see.\"",
   "annotated_words": [
     {
-      "kanji": "久しぶりに",
-      "furigana": "ひさしぶりに",
-      "meaning": "for the first time in a while"
-    },
-    {
+      "word_id": "n3_1320",
+      "word_number": 1320,
       "kanji": "友人",
       "furigana": "ゆうじん",
-      "meaning": "friend"
+      "meaning_en": "friend"
     },
     {
+      "word_id": "n3_1321",
+      "word_number": 1321,
       "kanji": "母親",
       "furigana": "ははおや",
-      "meaning": "mother"
+      "meaning_en": "mother"
     },
     {
-      "kanji": "父親",
-      "furigana": "ちちおや",
-      "meaning": "father"
-    },
-    {
+      "word_id": "n3_1322",
+      "word_number": 1322,
       "kanji": "ようこそ",
       "furigana": "",
-      "meaning": "welcome"
+      "meaning_en": "welcome"
     },
     {
+      "word_id": "n3_1323",
+      "word_number": 1323,
       "kanji": "よくいらっしゃいました",
       "furigana": "",
-      "meaning": "thank you for coming"
+      "meaning_en": "thank you for coming"
     },
     {
+      "word_id": "n3_1324",
+      "word_number": 1324,
       "kanji": "ご無沙汰［する］",
       "furigana": "ごぶさた",
-      "meaning": "long silence, not see talk to each other for a while"
+      "meaning_en": "long silence, not see talk to each other for a while"
     }
-  ]
+  ],
+  "story_number": 1,
+  "is_story": true,
+  "page_story": "106_1"
 }

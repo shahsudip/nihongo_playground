@@ -1,28 +1,24 @@
 {
-  "id": "114_1",
   "title": "Topic 8",
-  "japanese_text": "<ruby>卓球<rt>たっきゅう</rt></ruby>の<ruby>団体戦<rt>だんたいせん</rt></ruby>が<ruby>行<rt>おこな</rt></ruby>われて、<ruby>中国<rt>ちゅうごく</rt></ruby>が３<ruby>対<rt>たい</rt></ruby>２で<ruby>日本<rt>にほん</rt></ruby>に<ruby>勝利<rt>しょうり</rt></ruby>した。",
+  "japanese_text": "<ruby><u>卓球</u><rt>たっきゅう</rt></ruby>の<ruby><u>団体</u>戦<rt>だんたいせん</rt></ruby>が<ruby>行<rt>おこな</rt></ruby>われて、<ruby>中国<rt>ちゅうごく</rt></ruby>が３<ruby>対<rt>たい</rt></ruby>２で<ruby>日本<rt>にほん</rt></ruby>に<ruby>勝利<rt>しょうり</rt></ruby>した。",
   "english_translation": "A table tennis team competition was held, and China won over Japan 3 to 2.",
   "annotated_words": [
     {
+      "word_id": "n3_1355",
+      "word_number": 1355,
       "kanji": "卓球",
       "furigana": "たっきゅう",
-      "meaning": "table tennis"
+      "meaning_en": "table tennis"
     },
     {
+      "word_id": "n3_1356",
+      "word_number": 1356,
       "kanji": "団体",
       "furigana": "だんたい",
-      "meaning": "team, group"
-    },
-    {
-      "kanji": "〜戦",
-      "furigana": "〜せん",
-      "meaning": "match"
-    },
-    {
-      "kanji": "〜対〜",
-      "furigana": "〜たい〜",
-      "meaning": "~ to ~ / ~ : ~"
+      "meaning_en": "team, group"
     }
-  ]
+  ],
+  "story_number": 1,
+  "is_story": true,
+  "page_story": "114_1"
 }

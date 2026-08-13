@@ -1,43 +1,24 @@
 {
-  "id": "16_2",
-  "title": "Topic 1",
-  "japanese_text": "<ruby>最近<rt>さいきん</rt></ruby>の<span class='annotated-word' data-word='冷凍食品'><ruby>冷凍<rt>れいとう</rt></ruby><ruby>食品<rt>しょくひん</rt></ruby></span>はとてもおいしい。<span class='annotated-word' data-word='手作り'><ruby>手作<rt>てづく</rt></ruby>り</span>の<ruby>料理<rt>りょうり</rt></ruby>と<span class='annotated-word' data-word='区別'><ruby>区別<rt>くべつ</rt></ruby></span>できない。それに、<span class='annotated-word' data-word='トレー'>トレー</span>を<ruby>分<rt>わ</rt></ruby>ければ、3<span class='annotated-word' data-word='～人分'><ruby>人分<rt>にんぶん</rt></ruby></span>とか1<ruby>人分<rt>ひとりぶん</rt></ruby>のように<ruby>必<rt>ひつ</rt></ruby><ruby>要<rt>よう</rt></ruby>な<span class='annotated-word' data-word='量'><ruby>量<rt>りょう</rt></ruby></span>だけを<ruby>使<rt>つか</rt></ruby>うことができる。",
+  "title": "Topic 1 食事 Eating",
+  "japanese_text": "<ruby>最近<rt>さいきん</rt></ruby>の<ruby>冷凍<rt>れいとう</rt></ruby><ruby>食品<rt>しょくひん</rt></ruby>はとてもおいしい。<ruby>手作<rt>てづく</rt></ruby>りの<ruby>料理<rt>りょうり</rt></ruby>と<ruby>区別<rt>くべつ</rt></ruby>できない。それに、<u>トレー</u>を<ruby>分<rt>わ</rt></ruby>ければ、3<ruby>人分<rt>にんぶん</rt></ruby>とか1<ruby>人分<rt>ひとりぶん</rt></ruby>のように<ruby>必<rt>ひつ</rt></ruby><ruby>要<rt>よう</rt></ruby>な<ruby><u>量</u><rt>りょう</rt></ruby>だけを<ruby>使<rt>つか</rt></ruby>うことができる。",
   "english_translation": "Frozen foods these days are very delicious. They are indistinguishable from homemade dishes. Besides, if you divide the tray, you can use only the amount you need, such as for three people or just one person.",
   "annotated_words": [
     {
-      "meaning_en": "frozen food",
-      "furigana": "れいとうしょくひん",
-      "kanji": "冷凍食品"
-    },
-    {
-      "meaning_en": "freezing, freeze",
-      "furigana": "れいとう",
-      "kanji": "冷凍[する]"
-    },
-    {
-      "meaning_en": "handmade, make by hand",
-      "furigana": "てづく",
-      "kanji": "手作り[する]"
-    },
-    {
-      "meaning_en": "distinguishing, distinguish",
-      "furigana": "くべつ",
-      "kanji": "区別[する]"
-    },
-    {
-      "meaning_en": "tray",
+      "word_id": "n3_0005",
+      "word_number": 5,
+      "kanji": "トレー",
       "furigana": "",
-      "kanji": "トレー"
+      "meaning_en": "tray"
     },
     {
-      "meaning_en": "for ~ person/people",
-      "furigana": "にんぶん",
-      "kanji": "～人分"
-    },
-    {
-      "meaning_en": "amount",
+      "word_id": "n3_0006",
+      "word_number": 6,
+      "kanji": "量",
       "furigana": "りょう",
-      "kanji": "量"
+      "meaning_en": "amount"
     }
-  ]
+  ],
+  "story_number": 2,
+  "is_story": true,
+  "page_story": "16_2"
 }

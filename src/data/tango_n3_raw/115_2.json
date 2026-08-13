@@ -1,38 +1,24 @@
 {
-  "id": "115_2",
   "title": "Topic 8",
-  "japanese_text": "グラウンドから<ruby>派手<rt>はで</rt></ruby>な<ruby>応援歌<rt>おうえんか</rt></ruby>や<ruby>選手<rt>せんしゅ</rt></ruby>の<ruby>叫<rt>さけ</rt></ruby>ぶ<ruby>声<rt>こえ</rt></ruby>が<ruby>盛<rt>さか</rt></ruby>んに<ruby>聞<rt>き</rt></ruby>こえてくる。",
+  "japanese_text": "<u>グラウンド</u>から<ruby>派手<rt>はで</rt></ruby>な<ruby><u>応援</u>歌<rt>おうえんか</rt></ruby>や<ruby>選手<rt>せんしゅ</rt></ruby>の<ruby>叫<rt>さけ</rt></ruby>ぶ<ruby>声<rt>こえ</rt></ruby>が<ruby>盛<rt>さか</rt></ruby>んに<ruby>聞<rt>き</rt></ruby>こえてくる。",
   "english_translation": "From the field, loud cheers and the shouts of the players can be actively heard frequently.",
   "annotated_words": [
     {
+      "word_id": "n3_1362",
+      "word_number": 1362,
       "kanji": "グラウンド",
       "furigana": "",
-      "meaning": "field (of play)"
+      "meaning_en": "field (of play)"
     },
     {
-      "kanji": "派手な",
-      "furigana": "はでな",
-      "meaning": "loud, flashy"
-    },
-    {
+      "word_id": "n3_1363",
+      "word_number": 1363,
       "kanji": "応援［する］",
       "furigana": "おうえん",
-      "meaning": "cheering, cheer"
-    },
-    {
-      "kanji": "〜歌",
-      "furigana": "〜か",
-      "meaning": "~ song"
-    },
-    {
-      "kanji": "叫ぶ",
-      "furigana": "さけぶ",
-      "meaning": "shout"
-    },
-    {
-      "kanji": "盛んな",
-      "furigana": "さかんな",
-      "meaning": "frequent, lively"
+      "meaning_en": "cheering, cheer"
     }
-  ]
+  ],
+  "story_number": 4,
+  "is_story": true,
+  "page_story": "115_2"
 }

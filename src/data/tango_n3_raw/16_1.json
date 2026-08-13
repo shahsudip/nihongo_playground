@@ -1,48 +1,38 @@
 {
-  "id": "16_1",
-  "title": "Topic 1",
-  "japanese_text": "A：<ruby>朝<rt>ちょう</rt></ruby><ruby>食<rt>しょく</rt></ruby>に<span class='annotated-word' data-word='フルーツ'>フルーツ</span>を<ruby>食<rt>た</rt></ruby>べるといいって<ruby>聞<rt>き</rt></ruby>いたんだけど、<span class='annotated-word' data-word='皮'>皮</span>を<span class='annotated-word' data-word='むく'>むく</span>のが<ruby>面倒<rt>めんどう</rt></ruby>くさいんだよね。<br>B：じゃあ<span class='annotated-word' data-word='缶詰'>缶詰</span>でいいじゃない。<br>A：でも、<span class='annotated-word' data-word='新鮮な'><ruby>新鮮<rt>しんせん</rt></ruby>な</span><ruby>方<rt>ほう</rt></ruby>がよくない？",
+  "title": "Topic 1 食事 Eating",
+  "japanese_text": "A：<ruby>朝<rt>ちょう</rt></ruby><ruby>食<rt>しょく</rt></ruby>に<u>フルーツ</u>を<ruby>食<rt>た</rt></ruby>べるといいって<ruby>聞<rt>き</rt></ruby>いたんだけど、<u>皮</u>を<u>むく</u>のが<ruby>面倒<rt>めんどう</rt></ruby>くさいんだよね。<br>B：じゃあ<u>缶詰</u>でいいじゃない。<br>A：でも、<ruby>新鮮<rt>しんせん</rt></ruby>な<ruby>方<rt>ほう</rt></ruby>がよくない？",
   "english_translation": "A: I heard that you should eat fruit for breakfast, but peeling it is a hassle. B: Then canned food would be fine, wouldn't it? A: But isn't fresh fruit better?",
   "annotated_words": [
     {
-      "meaning_en": "breakfast",
-      "furigana": "ちょうしょく",
-      "kanji": "朝食"
-    },
-    {
-      "meaning_en": "lunch",
-      "furigana": "ちゅうしょく",
-      "kanji": "昼食"
-    },
-    {
-      "meaning_en": "dinner",
-      "furigana": "ゆうしょく",
-      "kanji": "夕食"
-    },
-    {
-      "meaning_en": "fruit",
+      "word_id": "n3_0001",
+      "word_number": 1,
+      "kanji": "フルーツ",
       "furigana": "",
-      "kanji": "フルーツ"
+      "meaning_en": "fruit"
     },
     {
-      "meaning_en": "skin",
+      "word_id": "n3_0002",
+      "word_number": 2,
+      "kanji": "皮",
       "furigana": "かわ",
-      "kanji": "皮"
+      "meaning_en": "skin"
     },
     {
-      "meaning_en": "peel",
+      "word_id": "n3_0003",
+      "word_number": 3,
+      "kanji": "むく",
       "furigana": "",
-      "kanji": "むく"
+      "meaning_en": "peel"
     },
     {
-      "meaning_en": "canned goods",
+      "word_id": "n3_0004",
+      "word_number": 4,
+      "kanji": "缶詰",
       "furigana": "かんづめ",
-      "kanji": "缶詰"
-    },
-    {
-      "meaning_en": "fresh",
-      "furigana": "しんせん",
-      "kanji": "新鮮な"
+      "meaning_en": "canned goods"
     }
-  ]
+  ],
+  "story_number": 1,
+  "is_story": true,
+  "page_story": "16_1"
 }

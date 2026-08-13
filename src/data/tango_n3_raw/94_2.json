@@ -1,28 +1,31 @@
 {
-  "id": "94_2",
   "title": "Topic 6",
-  "japanese_text": "Ａ：これ、<ruby>私<rt>わたし</rt></ruby>が<ruby>小学生<rt>しょうがくせい</rt></ruby>のときの<ruby>劇<rt>げき</rt></ruby>のビデオです。\nＢ：え、どこに<ruby>映<rt>うつ</rt></ruby>ってるの？\nＡ：ああ、<ruby>木<rt>き</rt></ruby>の<ruby>手前<rt>てまえ</rt></ruby>にいる、リボンをつけた<ruby>子<rt>こ</rt></ruby>が<ruby>私<rt>わたし</rt></ruby>です。",
+  "japanese_text": "Ａ：これ、<ruby>私<rt>わたし</rt></ruby>が<ruby>小学生<rt>しょうがくせい</rt></ruby>のときの<ruby><u>劇</u><rt>げき</rt></ruby>のビデオです。\nＢ：え、どこに<ruby>映<rt>うつ</rt></ruby>ってるの？\nＡ：ああ、<ruby>木<rt>き</rt></ruby>の<ruby><u>手前</u><rt>てまえ</rt></ruby>にいる、<u>リボン</u>をつけた<ruby>子<rt>こ</rt></ruby>が<ruby>私<rt>わたし</rt></ruby>です。",
   "english_translation": "A: This is a video of a play from when I was in elementary school.\nB: Oh, where are you?\nA: Umm, I'm the kid in front of the tree wearing a ribbon.",
   "annotated_words": [
     {
+      "word_id": "n3_1273",
+      "word_number": 1273,
       "kanji": "劇",
       "furigana": "げき",
-      "meaning": "play"
+      "meaning_en": "play"
     },
     {
-      "kanji": "劇場",
-      "furigana": "げきじょう",
-      "meaning": "theater"
-    },
-    {
+      "word_id": "n3_1274",
+      "word_number": 1274,
       "kanji": "手前",
       "furigana": "てまえ",
-      "meaning": "in front"
+      "meaning_en": "in front"
     },
     {
+      "word_id": "n3_1275",
+      "word_number": 1275,
       "kanji": "リボン",
       "furigana": "",
-      "meaning": "ribbon"
+      "meaning_en": "ribbon"
     }
-  ]
+  ],
+  "story_number": 5,
+  "is_story": true,
+  "page_story": "94_2"
 }

@@ -1,38 +1,38 @@
 {
-  "id": "30_2",
-  "title": "Topic 1",
-  "japanese_text": "<ruby>塩<rt>しお</rt></ruby>は<ruby>人間<rt>にんげん</rt></ruby>にとって、<ruby>最<rt>もっと</rt></ruby>も<ruby>基本的<rt>きほんてき</rt></ruby>な<span class='annotated-word' data-word='調味料'><ruby>調味料<rt>ちょうみりょう</rt></ruby></span>の1つだ。<ruby>塩<rt>しお</rt></ruby>は<span class='annotated-word' data-word='海水'><ruby>海水<rt>かいすい</rt></ruby></span>から<ruby>作<rt>つく</rt></ruby>られる。だから、<ruby>海水<rt>かいすい</rt></ruby>を<span class='annotated-word' data-word='舌'><ruby>舌<rt>した</rt></ruby></span>で<span class='annotated-word' data-word='なめる'>なめる</span>と、<span class='annotated-word' data-word='塩辛い'><ruby>塩辛<rt>しおから</rt></ruby>い</span><ruby>味<rt>あじ</rt></ruby>がする。",
+  "title": "Topic 1 食事 Eating",
+  "japanese_text": "<ruby>塩<rt>しお</rt></ruby>は<ruby>人間<rt>にんげん</rt></ruby>にとって、<ruby>最<rt>もっと</rt></ruby>も<ruby>基本的<rt>きほんてき</rt></ruby>な<ruby><u>調味料</u><rt>ちょうみりょう</rt></ruby>の1つだ。<ruby>塩<rt>しお</rt></ruby>は<ruby><u>海水</u><rt>かいすい</rt></ruby>から<ruby>作<rt>つく</rt></ruby>られる。だから、<ruby>海水<rt>かいすい</rt></ruby>を<ruby><u>舌</u><rt>した</rt></ruby>で<u>なめる</u>と、<ruby>塩辛<rt>しおから</rt></ruby>い<ruby>味<rt>あじ</rt></ruby>がする。",
   "english_translation": "Salt is one of the most basic seasonings for humans. Salt is made from seawater. So, if you lick seawater with your tongue, it tastes salty.",
   "annotated_words": [
     {
-      "meaning_en": "seasoning",
+      "word_id": "n3_0073",
+      "word_number": 73,
+      "kanji": "調味料",
       "furigana": "ちょうみりょう",
-      "kanji": "調味料"
+      "meaning_en": "seasoning"
     },
     {
-      "meaning_en": "seawater",
+      "word_id": "n3_0074",
+      "word_number": 74,
+      "kanji": "海水",
       "furigana": "かいすい",
-      "kanji": "海水"
+      "meaning_en": "seawater"
     },
     {
-      "meaning_en": "tongue",
+      "word_id": "n3_0075",
+      "word_number": 75,
+      "kanji": "舌",
       "furigana": "した",
-      "kanji": "舌"
+      "meaning_en": "tongue"
     },
     {
-      "meaning_en": "lick",
+      "word_id": "n3_0076",
+      "word_number": 76,
+      "kanji": "なめる",
       "furigana": "",
-      "kanji": "なめる"
-    },
-    {
-      "meaning_en": "salty",
-      "furigana": "しおからい",
-      "kanji": "塩辛い"
-    },
-    {
-      "meaning_en": "salty",
-      "furigana": "",
-      "kanji": "しょっぱい"
+      "meaning_en": "lick"
     }
-  ]
+  ],
+  "story_number": 24,
+  "is_story": true,
+  "page_story": "30_2"
 }

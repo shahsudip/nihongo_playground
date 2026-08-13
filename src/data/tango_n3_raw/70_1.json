@@ -1,33 +1,31 @@
 {
-  "id": "70_1",
   "title": "Topic 4",
-  "japanese_text": "<ruby>Ａ：どうしたの、その<rt></rt></ruby><ruby>唇<rt>くちびる</rt></ruby><ruby>。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby>新<rt>あたら</rt></ruby><ruby>しい<rt></rt></ruby><ruby>口紅<rt>くちべに</rt></ruby><ruby>つけてみたの！ どう？<rt></rt></ruby>\n<ruby>Ａ：うーん、ちょっときらきらしすぎて、<rt></rt></ruby><ruby>不自然<rt>ふしぜん</rt></ruby><ruby>と<rt></rt></ruby><ruby>言<rt>い</rt></ruby><ruby>うか…<rt></rt></ruby><ruby>浮<rt>う</rt></ruby><ruby>い<rt></rt></ruby><ruby>てる<rt></rt></ruby><ruby>感<rt>かん</rt></ruby><ruby>じがする。<rt></rt></ruby>\n<ruby>Ｂ：えー、せっかく<rt></rt></ruby><ruby>買<rt>か</rt></ruby><ruby>ったのに。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：どうしたの、その<rt></rt></ruby><ruby><u>唇</u><rt>くちびる</rt></ruby><ruby>。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby>新<rt>あたら</rt></ruby><ruby>しい<rt></rt></ruby><ruby><u>口紅</u><rt>くちべに</rt></ruby><ruby>つけてみたの！ どう？<rt></rt></ruby>\n<ruby>Ａ：うーん、ちょっと<u>きらきら</u>しすぎて、<rt></rt></ruby><ruby>不自然<rt>ふしぜん</rt></ruby><ruby>と<rt></rt></ruby><ruby>言<rt>い</rt></ruby><ruby>うか…<rt></rt></ruby><ruby>浮<rt>う</rt></ruby><ruby>い<rt></rt></ruby><ruby>てる<rt></rt></ruby><ruby>感<rt>かん</rt></ruby><ruby>じがする。<rt></rt></ruby>\n<ruby>Ｂ：えー、せっかく<rt></rt></ruby><ruby>買<rt>か</rt></ruby><ruby>ったのに。<rt></rt></ruby>",
   "english_translation": "A: What's that on your lips?\nB: I tried wearing a new lipstick! How is it?\nA: Hmm, it's a little too sparkly and I'd say unnatural... or out of place.\nB: Aw, but I already bought and paid for it.",
   "annotated_words": [
     {
+      "word_id": "n3_1140",
+      "word_number": 1140,
       "kanji": "唇",
       "furigana": "くちびる",
-      "meaning": "lips"
+      "meaning_en": "lips"
     },
     {
+      "word_id": "n3_1141",
+      "word_number": 1141,
       "kanji": "口紅",
       "furigana": "くちべに",
-      "meaning": "lipstick"
+      "meaning_en": "lipstick"
     },
     {
+      "word_id": "n3_1142",
+      "word_number": 1142,
       "kanji": "きらきらする",
       "furigana": "",
-      "meaning": "be sparkly"
-    },
-    {
-      "kanji": "不〜",
-      "furigana": "ふ〜",
-      "meaning": "un~"
-    },
-    {
-      "kanji": "浮く",
-      "furigana": "うく",
-      "meaning": "be out of place, float"
+      "meaning_en": "be sparkly"
     }
-  ]
+  ],
+  "story_number": 16,
+  "is_story": true,
+  "page_story": "70_1"
 }

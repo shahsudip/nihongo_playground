@@ -1,33 +1,38 @@
 {
-  "id": "85_2",
   "title": "Topic 5",
-  "japanese_text": "<ruby>Ａ：チャットの<rt></rt></ruby><ruby>通知<rt>つうち</rt></ruby><ruby>がどんどん<rt></rt></ruby><ruby>来<rt>く</rt></ruby><ruby>るのが<rt></rt></ruby><ruby>気<rt>き</rt></ruby><ruby>になるんだけど。<rt></rt></ruby><ruby>大<rt>たい</rt></ruby><ruby>したことじゃないときもあるし。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby>通知停止<rt>つうちていし</rt></ruby><ruby>すればいいじゃん。<rt></rt></ruby><ruby>名前<rt>なまえ</rt></ruby><ruby>のところ<rt></rt></ruby><ruby>長押<rt>ながお</rt></ruby><ruby>しして。<rt></rt></ruby>\n<ruby>Ａ：なるほどー。みんなそうしてたんだ。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：<u>チャット</u>の<rt></rt></ruby><ruby><u>通知</u><rt>つうち</rt></ruby><ruby>がどんどん<rt></rt></ruby><ruby>来<rt>く</rt></ruby><ruby>るのが<rt></rt></ruby><ruby>気<rt>き</rt></ruby><ruby>になるんだけど。<rt></rt></ruby><ruby>大<rt>たい</rt></ruby><ruby>したことじゃないときもあるし。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby>通知<u>停止</u><rt>つうちていし</rt></ruby><ruby>すればいいじゃん。<rt></rt></ruby><ruby>名前<rt>なまえ</rt></ruby><ruby>のところ<rt></rt></ruby><ruby>長押<rt>ながお</rt></ruby><ruby>しして。<rt></rt></ruby>\n<ruby>Ａ：<u>なるほど</u>ー。みんなそうしてたんだ。<rt></rt></ruby>",
   "english_translation": "A: I'm worried about these chat notifications that keep coming. Sometimes it's not even something important.\nB: You should turn off notifications. Press and hold on their name.\nA: I see. So that's what everyone does.",
   "annotated_words": [
     {
+      "word_id": "n3_1232",
+      "word_number": 1232,
       "kanji": "チャット",
       "furigana": "",
-      "meaning": "chat, chat"
+      "meaning_en": "chat, chat"
     },
     {
+      "word_id": "n3_1233",
+      "word_number": 1233,
       "kanji": "通知",
       "furigana": "つうち",
-      "meaning": "notice, give notice"
+      "meaning_en": "notice, give notice"
     },
     {
+      "word_id": "n3_1234",
+      "word_number": 1234,
       "kanji": "停止",
       "furigana": "ていし",
-      "meaning": "stopping, stop"
+      "meaning_en": "stopping, stop"
     },
     {
-      "kanji": "長押し",
-      "furigana": "ながおし",
-      "meaning": "holding, long press, press (for a long time)"
-    },
-    {
+      "word_id": "n3_1235",
+      "word_number": 1235,
       "kanji": "なるほど",
       "furigana": "",
-      "meaning": "I see"
+      "meaning_en": "I see"
     }
-  ]
+  ],
+  "story_number": 23,
+  "is_story": true,
+  "page_story": "85_2"
 }

@@ -1,23 +1,31 @@
 {
-  "id": "63_2",
   "title": "Topic 4",
-  "japanese_text": "<ruby>身長<rt>しんちょう</rt></ruby><ruby>が<rt></rt></ruby><ruby>高<rt>たか</rt></ruby><ruby>いので、シンプルなスタイルを<rt></rt></ruby><ruby>心<rt>こころ</rt></ruby><ruby>がけている。<rt></rt></ruby>",
+  "japanese_text": "<ruby><u>身長</u><rt>しんちょう</rt></ruby><ruby>が<rt></rt></ruby><ruby>高<rt>たか</rt></ruby><ruby>いので、<u>シンプルな</u><u>スタイル</u>を<rt></rt></ruby><ruby>心<rt>こころ</rt></ruby><ruby>がけている。<rt></rt></ruby>",
   "english_translation": "Since I'm tall, I make an effort to keep my style simple.",
   "annotated_words": [
     {
+      "word_id": "n3_1107",
+      "word_number": 1107,
       "kanji": "身長",
       "furigana": "しんちょう",
-      "meaning": "height"
+      "meaning_en": "height"
     },
     {
+      "word_id": "n3_1108",
+      "word_number": 1108,
       "kanji": "シンプルな",
       "furigana": "",
-      "meaning": "simple"
+      "meaning_en": "simple"
     },
     {
+      "word_id": "n3_1109",
+      "word_number": 1109,
       "kanji": "スタイル",
       "furigana": "",
-      "meaning": "style"
+      "meaning_en": "style"
     }
-  ]
+  ],
+  "story_number": 4,
+  "is_story": true,
+  "page_story": "63_2"
 }

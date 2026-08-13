@@ -1,38 +1,45 @@
 {
-  "id": "135_1",
-  "title": "Topic 9",
-  "japanese_text": "<ruby>隣<rt>となり</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>の<ruby>子<rt>こ</rt></ruby>はおとなしい<ruby>性格<rt>せいかく</rt></ruby>で、あまり<ruby>感情的<rt>かんじょうてき</rt></ruby>なところを<ruby>見<rt>み</rt></ruby>たことがない。だけど、<ruby>私<rt>わたし</rt></ruby>に<ruby>気<rt>き</rt></ruby>がつくといつも<ruby>立<rt>た</rt></ruby>ち<ruby>止<rt>ど</rt></ruby>まってにっこりと<ruby>笑<rt>わら</rt></ruby>ってくれる。",
+  "title": "Topic 9 動物 Animals",
+  "japanese_text": "<ruby>隣<rt>となり</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>の<ruby>子<rt>こ</rt></ruby>は<u>おとなしい</u><u><ruby>性格<rt>せいかく</rt></ruby></u>で、あまり<u><ruby>感情的<rt>かんじょうてき</rt></ruby>な</u>ところを<ruby>見<rt>み</rt></ruby>たことがない。だけど、<ruby>私<rt>わたし</rt></ruby>に<ruby>気<rt>き</rt></ruby>がつくといつも<u><ruby>立<rt>た</rt></ruby>ち<ruby>止<rt>ど</rt></ruby>まって</u><u>にっこりと</u><ruby>笑<rt>わら</rt></ruby>ってくれる。",
   "english_translation": "The child in the house next door has a gentle personality, and I haven't really seen them being that emotional. But whenever they notice me, they always stop and smile.",
   "annotated_words": [
     {
+      "word_id": "n3_0933",
+      "word_number": 933,
       "kanji": "おとなしい",
       "furigana": "",
-      "meaning": "gentle"
+      "meaning_en": "gentle"
     },
     {
+      "word_id": "n3_0934",
+      "word_number": 934,
       "kanji": "性格",
       "furigana": "せいかく",
-      "meaning": "personality"
+      "meaning_en": "personality"
     },
     {
+      "word_id": "n3_0935",
+      "word_number": 935,
       "kanji": "感情的な",
       "furigana": "かんじょうてきな",
-      "meaning": "emotional"
+      "meaning_en": "emotional"
     },
     {
-      "kanji": "感情",
-      "furigana": "かんじょう",
-      "meaning": "emotion"
-    },
-    {
+      "word_id": "n3_0936",
+      "word_number": 936,
       "kanji": "立ち止まる",
       "furigana": "たちどまる",
-      "meaning": "stop"
+      "meaning_en": "stop"
     },
     {
+      "word_id": "n3_0937",
+      "word_number": 937,
       "kanji": "にっこり（と）",
       "furigana": "",
-      "meaning": "sweetly, griningly"
+      "meaning_en": "sweetly, griningly"
     }
-  ]
+  ],
+  "story_number": 14,
+  "is_story": true,
+  "page_story": "135_1"
 }

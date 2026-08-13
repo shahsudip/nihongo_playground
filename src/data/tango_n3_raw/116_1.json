@@ -1,33 +1,45 @@
 {
-  "id": "116_1",
   "title": "Topic 8",
-  "japanese_text": "マラソンコースの<ruby>両側<rt>りょうがわ</rt></ruby>にロープが<ruby>張<rt>は</rt></ruby>られ、<ruby>道路<rt>どうろ</rt></ruby>の<ruby>中央<rt>ちゅうおう</rt></ruby>を<ruby>走<rt>はし</rt></ruby>るようになっている。",
+  "japanese_text": "<u>マラソン</u><u>コース</u>の<ruby><u>両側</u><rt>りょうがわ</rt></ruby>に<u>ロープ</u>が<ruby>張<rt>は</rt></ruby>られ、<ruby>道路<rt>どうろ</rt></ruby>の<ruby><u>中央</u><rt>ちゅうおう</rt></ruby>を<ruby>走<rt>はし</rt></ruby>るようになっている。",
   "english_translation": "Rope is put on both sides of the marathon course, and people are supposed to run in the center of the road.",
   "annotated_words": [
     {
+      "word_id": "n3_1364",
+      "word_number": 1364,
       "kanji": "マラソン",
       "furigana": "",
-      "meaning": "marathon"
+      "meaning_en": "marathon"
     },
     {
+      "word_id": "n3_1365",
+      "word_number": 1365,
       "kanji": "コース",
       "furigana": "",
-      "meaning": "course"
+      "meaning_en": "course"
     },
     {
+      "word_id": "n3_1366",
+      "word_number": 1366,
       "kanji": "両側",
       "furigana": "りょうがわ",
-      "meaning": "both sides"
+      "meaning_en": "both sides"
     },
     {
+      "word_id": "n3_1367",
+      "word_number": 1367,
       "kanji": "ロープ",
       "furigana": "",
-      "meaning": "rope"
+      "meaning_en": "rope"
     },
     {
+      "word_id": "n3_1368",
+      "word_number": 1368,
       "kanji": "中央",
       "furigana": "ちゅうおう",
-      "meaning": "center"
+      "meaning_en": "center"
     }
-  ]
+  ],
+  "story_number": 5,
+  "is_story": true,
+  "page_story": "116_1"
 }
