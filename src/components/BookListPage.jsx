@@ -3,7 +3,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
-import { collection, getDocs, doc, setDoc, onSnapshot } from 'firebase/firestore';
+import { collection, getDocs, doc, setDoc, onSnapshot, getCountFromServer } from 'firebase/firestore';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 
 import coverN1 from '../assets/shin_cover_n1.jpg';
@@ -23,8 +23,6 @@ const BookListPage = () => {
   const [books, setBooks] = useState([]);
   const [history, setHistory] = useState({});
   const [loading, setLoading] = useState(true);
-  const [seeding, setSeeding] = useState(false);
-  const [cleaning, setCleaning] = useState(false);
   const [error, setError] = useState(null);
 
   // Cover gradient mapping based on book level/index to look premium
@@ -84,28 +82,24 @@ const BookListPage = () => {
       setBooks(fetchedBooks);
       setLoading(false);
 
-      // Fetch chapters/topics subcollection for each book in the background
-      const booksWithChapters = await Promise.all(
+      // Fetch ONLY the count of chapters/topics for each book in the background
+      // This is a pro-level optimization: it completely avoids downloading massive subcollections!
+      const booksWithCounts = await Promise.all(
         fetchedBooks.map(async (book) => {
           try {
             const subColName = (book.id && book.id.startsWith('tango')) ? 'topics' : 'chapters';
             const chaptersColRef = collection(db, 'books', book.id, subColName);
-            const chaptersSnap = await getDocs(chaptersColRef);
-            
-            let chapters = [];
-            chaptersSnap.forEach(chapSnap => {
-              chapters.push({ id: chapSnap.id, ...chapSnap.data() });
-            });
-            return { ...book, chapters };
+            const snapshot = await getCountFromServer(chaptersColRef);
+            return { ...book, totalChapters: snapshot.data().count };
           } catch (e) {
-            console.error(`Error fetching chapters for ${book.id}:`, e);
-            return book;
+            console.error(`Error fetching chapter count for ${book.id}:`, e);
+            return { ...book, totalChapters: 0 };
           }
         })
       );
 
-      // Update state with chapters so progress can be calculated
-      setBooks(booksWithChapters);
+      // Update state with chapter counts so progress can be calculated
+      setBooks(booksWithCounts);
     }, (err) => {
       console.error("Error fetching books:", err);
       setError(`Failed to load books: ${err.message}`);
@@ -137,18 +131,19 @@ const BookListPage = () => {
 
 
   const getBookProgress = (book) => {
-    if (!currentUser || !book.chapters || book.chapters.length === 0) return { completed: 0, total: 0, percent: 0 };
+    if (!currentUser) return { completed: 0, total: book.totalChapters || 0, percent: 0 };
     
     let completedCount = 0;
-    book.chapters.forEach(chap => {
-      const historyKey = `${book.id}-${chap.id}`;
-      if (history[historyKey] && history[historyKey].status === 'mastered') {
+    
+    // Count directly from the user history hash map for O(n) calculation without chapter docs
+    Object.keys(history).forEach(key => {
+      if (key.startsWith(`${book.id}-`) && history[key].status === 'mastered') {
         completedCount++;
       }
     });
 
-    const total = book.chapters.length;
-    const percent = Math.round((completedCount / total) * 100);
+    const total = book.totalChapters || 0;
+    const percent = total > 0 ? Math.round((completedCount / total) * 100) : 0;
     return { completed: completedCount, total, percent };
   };
 
