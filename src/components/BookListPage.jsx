@@ -80,23 +80,32 @@ const BookListPage = () => {
       });
       fetchedBooks.sort((a, b) => (levelOrder[a.id] || 99) - (levelOrder[b.id] || 99));
 
-      // Fetch chapters/topics subcollection for each book
+      // Show books immediately to prevent UI blocking
+      setBooks(fetchedBooks);
+      setLoading(false);
+
+      // Fetch chapters/topics subcollection for each book in the background
       const booksWithChapters = await Promise.all(
         fetchedBooks.map(async (book) => {
-          const subColName = (book.id && book.id.startsWith('tango')) ? 'topics' : 'chapters';
-          const chaptersColRef = collection(db, 'books', book.id, subColName);
-          const chaptersSnap = await getDocs(chaptersColRef);
-          
-          let chapters = [];
-          chaptersSnap.forEach(chapSnap => {
-            chapters.push({ id: chapSnap.id, ...chapSnap.data() });
-          });
-          return { ...book, chapters };
+          try {
+            const subColName = (book.id && book.id.startsWith('tango')) ? 'topics' : 'chapters';
+            const chaptersColRef = collection(db, 'books', book.id, subColName);
+            const chaptersSnap = await getDocs(chaptersColRef);
+            
+            let chapters = [];
+            chaptersSnap.forEach(chapSnap => {
+              chapters.push({ id: chapSnap.id, ...chapSnap.data() });
+            });
+            return { ...book, chapters };
+          } catch (e) {
+            console.error(`Error fetching chapters for ${book.id}:`, e);
+            return book;
+          }
         })
       );
 
+      // Update state with chapters so progress can be calculated
       setBooks(booksWithChapters);
-      setLoading(false);
     }, (err) => {
       console.error("Error fetching books:", err);
       setError(`Failed to load books: ${err.message}`);
