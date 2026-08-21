@@ -1,0 +1,52 @@
+{
+  "title": "Topic 5 テクノロジー",
+  "audio_id": "75",
+  "japanese_text": "A：オンラインで、他の人と同時にファイルを<u>編集できる</u>方法ないかな。\nB：ウェブアプリを使えば、ファイルを<u>共有する</u>だけで<u>やりとりし</u>ながら共同作業ができるよ。データが<u>修正されたら</u>、リアルタイムで保存されるんだ。\nA：<u>要するに</u>、内容が<u>上書きされ</u>ていくってことだね。",
+  "page_story": "72_1",
+  "english_translation": "A: Is there any way I can edit a file online with another person at the same time? B: If you use a web app, you can collaborate just by sharing files to exchange them. Whenever data is modified, it's saved in real time. A: So in short, the content is overwritten.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0374",
+      "word_number": 374,
+      "kanji": "編集[する]",
+      "furigana": "へんしゅう",
+      "meaning_en": "editing, edit"
+    },
+    {
+      "word_id": "n2_0375",
+      "word_number": 375,
+      "kanji": "共有[する]",
+      "furigana": "きょうゆう",
+      "meaning_en": "sharing, share"
+    },
+    {
+      "word_id": "n2_0376",
+      "word_number": 376,
+      "kanji": "やりとり[する]",
+      "furigana": "やりとり",
+      "meaning_en": "exchange"
+    },
+    {
+      "word_id": "n2_0377",
+      "word_number": 377,
+      "kanji": "修正[する]",
+      "furigana": "しゅうせい",
+      "meaning_en": "amendment, modify, correct"
+    },
+    {
+      "word_id": "n2_0378",
+      "word_number": 378,
+      "kanji": "要するに",
+      "furigana": "ようするに",
+      "meaning_en": "in short, to sum up"
+    },
+    {
+      "word_id": "n2_0379",
+      "word_number": 379,
+      "kanji": "上書き[する]",
+      "furigana": "うわがき",
+      "meaning_en": "overwriting, overwrite"
+    }
+  ],
+  "is_story": true
+}

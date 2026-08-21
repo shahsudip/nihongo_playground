@@ -1,0 +1,31 @@
+{
+  "is_story": true,
+  "story_number": 7,
+  "title": "Topic 12 住",
+  "page_story": "165_2",
+  "japanese_text": "近年、空き家の<u>火災</u>が増えている。その原因の多くが人によって火がつけられる場合で、<u>ぼろぼろで</u>明かりがついていない<u>家屋</u>が狙われやすいようだ。",
+  "english_translation": "In recent years, fires in vacant houses have been increasing. Many are caused by people setting fires, and it seems that rundown, unlit houses are more likely to be targeted.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1053",
+      "word_number": 1053,
+      "kanji": "火災",
+      "furigana": "かさい",
+      "meaning_en": "conflagration, fire"
+    },
+    {
+      "word_id": "n2_1054",
+      "word_number": 1054,
+      "kanji": "ぼろぼろな",
+      "furigana": "",
+      "meaning_en": "battered, rundown"
+    },
+    {
+      "word_id": "n2_1055",
+      "word_number": 1055,
+      "kanji": "家屋",
+      "furigana": "かおく",
+      "meaning_en": "house"
+    }
+  ]
+}

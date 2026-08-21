@@ -1,0 +1,43 @@
+{
+  "id": "162_2",
+  "title": "Topic 12 旅行 Travel",
+  "japanese_text": "A：すみません、バス<ruby>乗<rt>の</rt></ruby>り<ruby>場<rt>ば</rt></ruby>を<ruby>探<rt>さが</rt></ruby>しているんですが。<br>B：バス<ruby>乗<rt>の</rt></ruby>り<ruby>場<rt>ば</rt></ruby>は<ruby>駅<rt>えき</rt></ruby>の<ruby>反対側<rt>はんたいがわ</rt></ruby>ですね。ここを<ruby>左<rt>ひだり</rt></ruby>に<ruby>行<rt>い</rt></ruby>って、<span class='annotated-word' data-word='突き当たり'>突き当たり</span>を<ruby>左<rt>ひだり</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がって、<span class='annotated-word' data-word='鉄道'>鉄道</span>の<span class='annotated-word' data-word='線路'>線路</span>を<span class='annotated-word' data-word='越える'>越えない</span>といけません。<br>A：<span class='annotated-word' data-word='ええと'>ええと</span>、<ruby>最初<rt>さいしょ</rt></ruby>に<ruby>左<rt>ひだり</rt></ruby>に<ruby>行<rt>い</rt></ruby>って、<ruby>線路<rt>せんろ</rt></ruby>を<ruby>越<rt>こ</rt></ruby>えるんですか。<br>B：<ruby>私<rt>わたし</rt></ruby>も<ruby>途中<rt>とちゅう</rt></ruby>まで<ruby>行<rt>い</rt></ruby>くので、<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>きましょう。<span class='annotated-word' data-word='ついて来る'>ついて来て</span>ください。",
+  "english_translation": "A: Excuse me, I'm looking for a bus stop. B: The bus platform is on the other side of the station. Go left here, then turn left at the end of the road, and you'll have to cross the railroad tracks. A: So, I go to the left first and then cross the tracks? B: I'll go part of the way, so let's go together. Please follow me.",
+  "annotated_words": [
+    {
+      "meaning_en": "end of the road",
+      "furigana": "つきあたり",
+      "kanji": "突き当たり"
+    },
+    {
+      "meaning_en": "railroad, railway",
+      "furigana": "てつどう",
+      "kanji": "鉄道"
+    },
+    {
+      "meaning_en": "tracks",
+      "furigana": "せんろ",
+      "kanji": "線路"
+    },
+    {
+      "meaning_en": "cross",
+      "furigana": "こえる",
+      "kanji": "越える"
+    },
+    {
+      "meaning_en": "so, umm",
+      "furigana": "",
+      "kanji": "ええと"
+    },
+    {
+      "meaning_en": "follow, come along with",
+      "furigana": "ついてくる",
+      "kanji": "ついて来る"
+    },
+    {
+      "meaning_en": "go with",
+      "furigana": "ついていく",
+      "kanji": "ついて行く"
+    }
+  ]
+}

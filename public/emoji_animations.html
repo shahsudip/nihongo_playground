@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animated Emojis</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            background: #1a1a2e;
+            color: white;
+            font-family: sans-serif;
+            overflow-x: hidden;
+            padding: 50px;
+        }
+
+        .emoji-container {
+            display: flex;
+            gap: 100px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .emoji-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #8892b0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* 共通ベース */
+        .emoji {
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle at 30% 30%, #ffeb3b, #fbc02d);
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(251, 192, 45, 0.4), inset -10px -10px 20px rgba(230, 160, 0, 0.5);
+        }
+
+        /* =========================================
+           1. LAUGHING (😂)
+        ========================================= */
+        .laughing {
+            animation: laugh-bounce 0.15s infinite alternate ease-in-out;
+        }
+        
+        .laughing .eyes {
+            position: absolute;
+            top: 35%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 0 25px;
+            box-sizing: border-box;
+        }
+
+        .laughing .eye {
+            width: 30px;
+            height: 15px;
+            border-top: 6px solid #5d4037;
+            border-radius: 50% 50% 0 0;
+            box-sizing: border-box;
+        }
+
+        .laughing .mouth {
+            position: absolute;
+            bottom: 20%;
+            left: 25%;
+            width: 50%;
+            height: 35%;
+            background: #3e2723;
+            border-radius: 10px 10px 70px 70px;
+            overflow: hidden;
+        }
+
+        .laughing .teeth {
+            position: absolute;
+            top: 0;
+            left: 10%;
+            width: 80%;
+            height: 30%;
+            background: white;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .laughing .tear {
+            position: absolute;
+            top: 45%;
+            width: 20px;
+            height: 25px;
+            background: #29b6f6;
+            border-radius: 0 50% 50% 50%;
+            opacity: 0.8;
+            animation: tear-drop 0.3s infinite alternate;
+        }
+
+        .laughing .tear.left {
+            left: -5%;
+            transform: rotate(45deg);
+        }
+
+        .laughing .tear.right {
+            right: -5%;
+            transform: rotate(135deg);
+            animation-delay: 0.1s;
+        }
+
+        @keyframes laugh-bounce {
+            0% { transform: translateY(0) rotate(-2deg); }
+            100% { transform: translateY(-8px) rotate(2deg); }
+        }
+
+        @keyframes tear-drop {
+            0% { transform: translateY(0) scale(1) rotate(45deg); }
+            100% { transform: translateY(5px) scale(1.1) rotate(45deg); }
+        }
+
+        /* =========================================
+           2. CRYING / SOBBING (😭)
+        ========================================= */
+        .crying {
+            animation: sob-heave 1.2s infinite ease-in-out;
+        }
+
+        .crying .eyes {
+            position: absolute;
+            top: 35%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .crying .eye {
+            width: 35px;
+            height: 15px;
+            border-bottom: 7px solid #5d4037;
+            border-radius: 0 0 50% 50%;
+        }
+
+        .crying .mouth {
+            position: absolute;
+            bottom: 15%;
+            left: 30%;
+            width: 40%;
+            height: 30%;
+            background: #3e2723;
+            border-radius: 60px 60px 20px 20px;
+            animation: sob-mouth 1.2s infinite ease-in-out;
+        }
+
+        .crying .waterfall {
+            position: absolute;
+            top: 50%;
+            width: 25px;
+            height: 80px;
+            background: linear-gradient(to bottom, rgba(41, 182, 246, 0.9), rgba(41, 182, 246, 0));
+            border-radius: 12px;
+            animation: waterfall-flow 0.4s infinite linear;
+        }
+
+        .crying .waterfall.left { left: 15%; }
+        .crying .waterfall.right { right: 15%; animation-delay: 0.2s; }
+
+        @keyframes sob-heave {
+            0%, 100% { transform: translateY(0) scale(1); }
+            30% { transform: translateY(-10px) scale(0.98, 1.05); }
+            40% { transform: translateY(-5px) scale(1.02, 0.95); }
+            50% { transform: translateY(-10px) scale(0.98, 1.05); }
+        }
+
+        @keyframes sob-mouth {
+            0%, 100% { height: 20%; bottom: 20%; }
+            40% { height: 35%; bottom: 15%; }
+        }
+
+        @keyframes waterfall-flow {
+            0% { background-position: 0 0; transform: translateY(0); opacity: 0.8; }
+            100% { background-position: 0 30px; transform: translateY(15px); opacity: 0; }
+        }
+
+        /* =========================================
+           3. RAISING HANDS (🙌)
+        ========================================= */
+        .raising-hands {
+            background: transparent;
+            box-shadow: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 0 20px;
+            animation: praise-bounce 0.8s infinite alternate ease-in-out;
+        }
+
+        .hand {
+            width: 45px;
+            height: 90px;
+            background: #fbc02d;
+            border-radius: 20px;
+            position: relative;
+            box-shadow: inset -5px -5px 10px rgba(0,0,0,0.1);
+        }
+
+        .hand.left { transform: rotate(-15deg); }
+        .hand.right { transform: rotate(15deg); }
+
+        /* Fingers */
+        .hand::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            width: 25px;
+            height: 35px;
+            background: #fbc02d;
+            border-radius: 12px;
+            box-shadow: inset -3px -3px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Thumbs */
+        .hand.left::after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            right: -15px;
+            width: 20px;
+            height: 35px;
+            background: #fbc02d;
+            border-radius: 10px;
+            transform: rotate(40deg);
+            box-shadow: inset -3px -3px 5px rgba(0,0,0,0.1);
+        }
+
+        .hand.right::after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            left: -15px;
+            width: 20px;
+            height: 35px;
+            background: #fbc02d;
+            border-radius: 10px;
+            transform: rotate(-40deg);
+            box-shadow: inset 3px -3px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Halos / Action lines */
+        .praise-lines {
+            position: absolute;
+            top: -20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            opacity: 0;
+            animation: flash-lines 0.8s infinite alternate ease-in-out;
+        }
+
+        .line {
+            width: 6px;
+            height: 25px;
+            background: #ffeb3b;
+            border-radius: 3px;
+        }
+
+        .line:nth-child(1) { transform: rotate(-30deg) translateY(-10px); }
+        .line:nth-child(2) { transform: translateY(-20px); }
+        .line:nth-child(3) { transform: rotate(30deg) translateY(-10px); }
+
+        @keyframes praise-bounce {
+            0% { transform: translateY(10px); }
+            100% { transform: translateY(-15px); }
+        }
+
+        @keyframes flash-lines {
+            0%, 50% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* =========================================
+           4. NODDING HEAD (😌)
+        ========================================= */
+        .nodding {
+            animation: nod 2s infinite ease-in-out;
+        }
+
+        .nodding .eyes {
+            position: absolute;
+            top: 40%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 0 35px;
+            box-sizing: border-box;
+        }
+
+        .nodding .eye {
+            width: 25px;
+            height: 10px;
+            border-top: 5px solid #5d4037;
+            border-radius: 50% 50% 0 0;
+            animation: blink 3s infinite;
+        }
+
+        .nodding .mouth {
+            position: absolute;
+            bottom: 25%;
+            left: 40%;
+            width: 20%;
+            height: 10%;
+            border-bottom: 5px solid #5d4037;
+            border-radius: 0 0 50% 50%;
+        }
+
+        @keyframes nod {
+            0%, 100% { transform: rotate(0deg) translateY(0); }
+            20% { transform: rotate(12deg) translateY(12px); } /* Deep nod down */
+            40% { transform: rotate(-2deg) translateY(-2px); } /* Up slightly */
+            60% { transform: rotate(8deg) translateY(8px); }   /* Secondary small nod */
+            80% { transform: rotate(0deg) translateY(0); }
+        }
+
+        @keyframes blink {
+            0%, 45%, 55%, 100% { transform: scaleY(1); }
+            50% { transform: scaleY(0.1); }
+        }
+
+        /* =========================================
+           5. SPEAKING / LIP-SYNCING (🗣️)
+        ========================================= */
+        .speaking {
+            animation: head-bob 1s infinite alternate ease-in-out;
+        }
+
+        .speaking .eyes {
+            position: absolute;
+            top: 35%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 0 35px;
+            box-sizing: border-box;
+        }
+
+        .speaking .eye {
+            width: 15px;
+            height: 15px;
+            background: #5d4037;
+            border-radius: 50%;
+        }
+
+        .speaking .mouth {
+            position: absolute;
+            bottom: 20%;
+            left: 35%;
+            width: 30%;
+            height: 20%;
+            background: #3e2723;
+            border-radius: 50%;
+            /* Fast alternating animation for lip-sync */
+            animation: lip-sync 0.25s infinite alternate;
+        }
+
+        .speech-bubble {
+            position: absolute;
+            top: -30px;
+            right: -100px;
+            background: white;
+            color: #333;
+            padding: 12px 18px;
+            border-radius: 20px 20px 20px 0;
+            font-weight: 900;
+            font-size: 1.1rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            animation: float-bubble 2s infinite ease-in-out;
+            white-space: nowrap;
+            z-index: 10;
+        }
+
+        /* Bubble tail */
+        .speech-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 15px solid white;
+            border-right: 15px solid transparent;
+        }
+
+        /* Typewriter effect for Japanese text */
+        .japanese-text {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid #333;
+            width: 7ch; /* Fit the characters */
+            animation: typing 3s steps(7, end) infinite alternate;
+        }
+
+        @keyframes lip-sync {
+            0% { transform: scaleY(0.2) scaleX(0.8); border-radius: 10px; } /* Closed mouth (M/P/B sounds) */
+            50% { transform: scaleY(1.3) scaleX(0.9); border-radius: 50px; } /* Wide open (A/O sounds) */
+            100% { transform: scaleY(0.6) scaleX(1.2); border-radius: 30px; } /* Stretched (E/I sounds) */
+        }
+
+        @keyframes head-bob {
+            0% { transform: rotate(-3deg); }
+            100% { transform: rotate(3deg); }
+        }
+
+        @keyframes float-bubble {
+            0%, 100% { transform: translateY(0) rotate(2deg); }
+            50% { transform: translateY(-8px) rotate(-2deg); }
+        }
+
+        @keyframes typing {
+            0%, 15% { width: 0; }
+            85%, 100% { width: 7ch; }
+        }
+
+        /* =========================================
+           6. PERSON EMOJIS SPEAKING (👨🏻 / 👩🏻)
+        ========================================= */
+        .person-speaking-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .person-emoji {
+            font-size: 6rem;
+            /* Squish and stretch from the bottom to simulate talking energy */
+            transform-origin: bottom center;
+            animation: person-talk 0.25s infinite alternate ease-in-out;
+            /* Drop shadow to make it pop */
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
+        }
+
+        @keyframes person-talk {
+            0% { transform: scaleY(0.95) scaleX(1.05) translateY(5px) rotate(-3deg); }
+            100% { transform: scaleY(1.05) scaleX(0.95) translateY(-5px) rotate(3deg); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="emoji-container">
+        
+        <!-- Laughing -->
+        <div class="emoji-wrapper">
+            <div class="title">Laughing 😂</div>
+            <div class="emoji laughing">
+                <div class="eyes">
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                </div>
+                <div class="mouth">
+                    <div class="teeth"></div>
+                </div>
+                <div class="tear left"></div>
+                <div class="tear right"></div>
+            </div>
+        </div>
+
+        <!-- Crying -->
+        <div class="emoji-wrapper">
+            <div class="title">Sobbing 😭</div>
+            <div class="emoji crying">
+                <div class="eyes">
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                </div>
+                <div class="waterfall left"></div>
+                <div class="waterfall right"></div>
+                <div class="mouth"></div>
+            </div>
+        </div>
+
+        <!-- Raising Hands -->
+        <div class="emoji-wrapper">
+            <div class="title">Raising Hands 🙌</div>
+            <div class="emoji raising-hands">
+                <div class="praise-lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="hand left"></div>
+                <div class="hand right"></div>
+            </div>
+        </div>
+
+        <!-- Nodding Head -->
+        <div class="emoji-wrapper">
+            <div class="title">Nodding 😌</div>
+            <div class="emoji nodding">
+                <div class="eyes">
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                </div>
+                <div class="mouth"></div>
+            </div>
+        </div>
+
+        <!-- Speaking / Lip-syncing -->
+        <div class="emoji-wrapper">
+            <div class="title">Speaking 🗣️</div>
+            <div class="emoji speaking">
+                <div class="speech-bubble">
+                    <span class="japanese-text">こんにちは！</span>
+                </div>
+                <div class="eyes">
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                </div>
+                <div class="mouth"></div>
+            </div>
+        </div>
+
+        <!-- Unicode Person Female Speaking -->
+        <div class="emoji-wrapper">
+            <div class="title">Woman Speaking 👩🏻</div>
+            <div class="person-speaking-container">
+                <div class="speech-bubble" style="top: -20px; right: -70px;">
+                    <span class="japanese-text">そうですか。</span>
+                </div>
+                <div class="person-emoji">👩🏻</div>
+            </div>
+        </div>
+
+        <!-- Unicode Person Male Speaking -->
+        <div class="emoji-wrapper">
+            <div class="title">Man Speaking 👨🏻‍🏫</div>
+            <div class="person-speaking-container">
+                <div class="speech-bubble" style="top: -20px; left: -80px; right: auto; border-radius: 20px 20px 0 20px;">
+                    <span class="japanese-text">ありがとう！</span>
+                </div>
+                <div class="person-emoji" style="animation-duration: 0.35s; animation-direction: alternate-reverse;">👨🏻‍🏫</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

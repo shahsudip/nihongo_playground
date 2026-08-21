@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 12 住",
+  "page_story": "168_2",
+  "japanese_text": "A：お隣さんの飼い猫がうちに入ってきて困ってるんだ。隣の家とは<u>塀</u>で<u>区切られて</u>るんだけど、越えてくるんだよね。\nB：水を入れたペットボトルを等<u>間隔</u>で置いておくとか？\nA：うーん。でも庭の雰囲気を<u>重視したい</u>んだよね。",
+  "english_translation": "A: The neighbor's cat keeps coming into my yard and it's bothering me. Our house and their house are separated by a fence, but it jumps over it. B: How about putting plastic bottles filled with water at regular intervals? A: Hmmm. But I want to prioritize the atmosphere of the garden.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1075",
+      "word_number": 1075,
+      "kanji": "塀",
+      "furigana": "へい",
+      "meaning_en": "fence"
+    },
+    {
+      "word_id": "n2_1076",
+      "word_number": 1076,
+      "kanji": "区切る",
+      "furigana": "くぎる",
+      "meaning_en": "divide, separate"
+    },
+    {
+      "word_id": "n2_1077",
+      "word_number": 1077,
+      "kanji": "区切り",
+      "furigana": "くぎり",
+      "meaning_en": "division"
+    },
+    {
+      "word_id": "n2_1078",
+      "word_number": 1078,
+      "kanji": "間隔",
+      "furigana": "かんかく",
+      "meaning_en": "interval"
+    },
+    {
+      "word_id": "n2_1079",
+      "word_number": 1079,
+      "kanji": "重視[する]",
+      "furigana": "じゅうし",
+      "meaning_en": "emphasis, emphasize"
+    },
+    {
+      "word_id": "n2_1080",
+      "word_number": 1080,
+      "kanji": "軽視[する]",
+      "furigana": "けいし",
+      "meaning_en": "disregard, belittle, dismiss"
+    }
+  ]
+}

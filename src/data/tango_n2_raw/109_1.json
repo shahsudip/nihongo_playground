@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 7 趣味",
+  "page_story": "109_1",
+  "japanese_text": "A：昨日買ったイヤホン、なんか<u>雑音</u>が聞こえるんだよ。\nB：え、返品したら？\nA：それが、セール品だったから返品<u>不可</u>だったんだ。お気に入りのメーカーだから大丈夫だと思ったんだけど、<u>失望し</u>たよ。",
+  "english_translation": "A: Those earphones I bought yesterday are making some kind of static noise. B: Well, why don't you return them? A: They were on sale, so it's not possible to return them. I thought they'd be okay because they're from my favorite manufacturer, but I was disappointed.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0643",
+      "word_number": 643,
+      "kanji": "雑音",
+      "furigana": "ざつおん",
+      "meaning_en": "(unpleasant) noise, static"
+    },
+    {
+      "word_id": "n2_0644",
+      "word_number": 644,
+      "kanji": "不可",
+      "furigana": "ふか",
+      "meaning_en": "not possible, not allowed"
+    },
+    {
+      "word_id": "n2_0645",
+      "word_number": 645,
+      "kanji": "可",
+      "furigana": "か",
+      "meaning_en": "possible, allowed"
+    },
+    {
+      "word_id": "n2_0646",
+      "word_number": 646,
+      "kanji": "失望[する]",
+      "furigana": "しつぼう",
+      "meaning_en": "disappointment, disappoint"
+    }
+  ]
+}

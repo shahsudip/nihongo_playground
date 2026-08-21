@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 14 天気",
+  "page_story": "189_1",
+  "japanese_text": "昨日、今日と<u>快晴</u>が続きましたが、明日は<u>大気</u>の状態が不安定になり、<u>平野</u>でも<u>積雪</u>が見られるでしょう。",
+  "english_translation": "Yesterday's and today's weather was clear, but tomorrow atmospheric conditions will become unstable and we will likely see some snowfall on the plains.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1247",
+      "word_number": 1247,
+      "kanji": "快晴",
+      "furigana": "かいせい",
+      "meaning_en": "clear weather"
+    },
+    {
+      "word_id": "n2_1248",
+      "word_number": 1248,
+      "kanji": "大気",
+      "furigana": "たいき",
+      "meaning_en": "atmosphere"
+    },
+    {
+      "word_id": "n2_1249",
+      "word_number": 1249,
+      "kanji": "平野",
+      "furigana": "へいや",
+      "meaning_en": "plains"
+    },
+    {
+      "word_id": "n2_1250",
+      "word_number": 1250,
+      "kanji": "積雪[する]",
+      "furigana": "せきせつ",
+      "meaning_en": "snowfall, snow"
+    }
+  ]
+}

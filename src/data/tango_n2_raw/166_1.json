@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 12 住",
+  "page_story": "166_1",
+  "japanese_text": "また、多くの空き家は<u>植木</u>が<u>整備されず</u>、草も<u>刈られない</u>ため、火のついたタバコの<u>ポイ捨て</u>が原因で火災につながることもあるらしい。",
+  "english_translation": "Also, in many vacant houses, garden plants are not maintained and grass is not mown, so discarded cigarettes can lead to fires, apparently.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1056",
+      "word_number": 1056,
+      "kanji": "植木",
+      "furigana": "うえき",
+      "meaning_en": "garden plants"
+    },
+    {
+      "word_id": "n2_1057",
+      "word_number": 1057,
+      "kanji": "整備[する]",
+      "furigana": "せいび",
+      "meaning_en": "improvement, maintain"
+    },
+    {
+      "word_id": "n2_1058",
+      "word_number": 1058,
+      "kanji": "刈る",
+      "furigana": "かる",
+      "meaning_en": "cut (grass), mow"
+    },
+    {
+      "word_id": "n2_1059",
+      "word_number": 1059,
+      "kanji": "ポイ捨て[する]",
+      "furigana": "ぽいすて",
+      "meaning_en": "litter, discard, toss away"
+    }
+  ]
+}

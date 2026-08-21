@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 3 買い物",
+  "page_story": "50_1",
+  "japanese_text": "A：あー、どうしよう。オークションの終了時間が<u>迫って</u>る。\nB：予算オーバーって言っても<u>せいぜい</u>500円でしょ。新品とそんなに<u>差</u>はないんだから、<u>損得</u>考えずに買っちゃいなよ。",
+  "english_translation": "A: Oh, what should I do? The end of the auction is approaching. B: Even if it's over your budget, it won't be more than 500 yen at most. That's not too different from a new one, so just buy it and don't worry about your monetary gain or loss.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0237",
+      "word_number": 237,
+      "kanji": "迫る",
+      "furigana": "せまる",
+      "meaning_en": "approach, impend"
+    },
+    {
+      "word_id": "n2_0238",
+      "word_number": 238,
+      "kanji": "せいぜい",
+      "furigana": "",
+      "meaning_en": "at most, to the utmost"
+    },
+    {
+      "word_id": "n2_0239",
+      "word_number": 239,
+      "kanji": "差",
+      "furigana": "さ",
+      "meaning_en": "difference, discrepancy"
+    },
+    {
+      "word_id": "n2_0240",
+      "word_number": 240,
+      "kanji": "損得",
+      "furigana": "そんとく",
+      "meaning_en": "gain and loss"
+    }
+  ]
+}

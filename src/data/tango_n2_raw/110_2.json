@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 7 趣味",
+  "page_story": "110_2",
+  "japanese_text": "A：この間、何も買っていないのに<u>フリマ</u>アプリにメッセージが来て、<u>妙な</u>と思ったら、私のアカウントが誰かに使われてたんだ。\nB：え、大丈夫？\nA：うん。すぐカスタマーサポートに連絡したから。\nB：よかった。フリマアプリって便利だけど、チケットが高い<u>額</u>で売られていたり、<u>欠陥</u>のある商品が届いたり、問題もあるみたいだね。",
+  "english_translation": "A: The other day I got a message on a flea market app although I hadn't bought anything. I thought it was strange, but my account was actually being used by someone else. B: Oh, is everything okay? A: Yes. I contacted customer support right away. B: That's good. I guess flea market apps have some problems, like tickets being scalped for large amounts and defective goods being delivered to buyers.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0652",
+      "word_number": 652,
+      "kanji": "フリマ／フリーマーケット",
+      "furigana": "",
+      "meaning_en": "flea market"
+    },
+    {
+      "word_id": "n2_0653",
+      "word_number": 653,
+      "kanji": "妙な",
+      "furigana": "みょうな",
+      "meaning_en": "strange, odd"
+    },
+    {
+      "word_id": "n2_0654",
+      "word_number": 654,
+      "kanji": "額",
+      "furigana": "がく",
+      "meaning_en": "amount, sum"
+    },
+    {
+      "word_id": "n2_0655",
+      "word_number": 655,
+      "kanji": "欠陥",
+      "furigana": "けっかん",
+      "meaning_en": "defect"
+    }
+  ]
+}

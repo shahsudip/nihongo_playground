@@ -1,0 +1,43 @@
+{
+  "id": "168_1",
+  "title": "Topic 12 旅行 Travel",
+  "japanese_text": "A：この<ruby>前<rt>まえ</rt></ruby><ruby>東京<rt>とうきょう</rt></ruby>に<ruby>行<rt>い</rt></ruby>ったとき、わざわざ<ruby>金沢<rt>かなざわ</rt></ruby>を<span class='annotated-word' data-word='経由する'>経由して</span><ruby>行<rt>い</rt></ruby>ったんです。<br>B：え、なんで？<br>A：ＪＲは、<span class='annotated-word' data-word='目的'>目的</span><ruby>地<rt>ち</rt></ruby>までの<ruby>途中<rt>とちゅう</rt></ruby>の<ruby>駅<rt>えき</rt></ruby>でも<ruby>自由<rt>じゆう</rt></ruby>に<span class='annotated-word' data-word='下車する'>下車できる</span>んです。だから、<ruby>途中<rt>とちゅう</rt></ruby><ruby>下車<rt>げしゃ</rt></ruby>して<span class='annotated-word' data-word='城'>城</span>と<span class='annotated-word' data-word='庭園'>庭園</span>を<span class='annotated-word' data-word='見物する'>見物しました</span>。あ、<span class='annotated-word' data-word='私鉄'>私鉄</span>は<ruby>途中<rt>とちゅう</rt></ruby><ruby>下車<rt>げしゃ</rt></ruby>できませんよ。ＪＲだけです。",
+  "english_translation": "A: Last time I went to Tokyo, I went out of my way to go through Kanazawa. B: Oh yeah? What for? A: With JR you can get off at any station along your travel route before you reach your destination. So I got off on the way and went to see the castle and some gardens. You can't do that on the private railway, only on JR.",
+  "annotated_words": [
+    {
+      "meaning_en": "going through, go through",
+      "furigana": "けいゆ",
+      "kanji": "経由[する]"
+    },
+    {
+      "meaning_en": "purpose",
+      "furigana": "もくてき",
+      "kanji": "目的"
+    },
+    {
+      "meaning_en": "getting off, get off",
+      "furigana": "げしゃ",
+      "kanji": "下車[する]"
+    },
+    {
+      "meaning_en": "castle",
+      "furigana": "しろ",
+      "kanji": "城"
+    },
+    {
+      "meaning_en": "garden",
+      "furigana": "ていえん",
+      "kanji": "庭園"
+    },
+    {
+      "meaning_en": "seeing, see",
+      "furigana": "けんぶつ",
+      "kanji": "見物[する]"
+    },
+    {
+      "meaning_en": "private railway",
+      "furigana": "してつ",
+      "kanji": "私鉄"
+    }
+  ]
+}

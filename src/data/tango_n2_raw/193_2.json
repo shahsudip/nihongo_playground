@@ -1,0 +1,31 @@
+{
+  "is_story": true,
+  "story_number": 19,
+  "title": "Topic 14 天気",
+  "page_story": "193_2",
+  "japanese_text": "雲のない晴れた日でも、<u>いきなり</u> <u>竜巻</u>のような風が起こることがある。これは「つむじ風」と呼ばれ、<u>天候</u>が安定しているときでも起こる。",
+  "english_translation": "Even on clear, cloudless days, a tornado-like wind can suddenly occur. This is called a whirlwind, and it can occur even when the weather is stable.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1284",
+      "word_number": 1284,
+      "kanji": "いきなり",
+      "furigana": "",
+      "meaning_en": "suddenly"
+    },
+    {
+      "word_id": "n2_1285",
+      "word_number": 1285,
+      "kanji": "竜巻",
+      "furigana": "たつまき",
+      "meaning_en": "tornado"
+    },
+    {
+      "word_id": "n2_1286",
+      "word_number": 1286,
+      "kanji": "天候",
+      "furigana": "てんこう",
+      "meaning_en": "weather"
+    }
+  ]
+}

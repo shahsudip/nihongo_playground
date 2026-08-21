@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 15,
+  "title": "Topic 15 旅行",
+  "page_story": "206_1",
+  "japanese_text": "日本は火山が多いため、全国各地に温泉が<u>湧いて</u>いる。温泉は<u>透き通った</u> <u>無色</u>のお湯もあるが、白や黒や茶色に<u>濁った</u>お湯もあり、効果もさまざまだ。<u>ちなみに</u>、日本<u>一</u>温泉が湧き出るのは大分県である。",
+  "english_translation": "Due to Japan's many volcanoes, hot springs bubble up all over the country. Some hot spring waters are transparent and colorless, while others are cloudy white, black, or brown, and have a variety of effects. Incidentally, Oita Prefecture is home to Japan's largest number of hot springs.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1374",
+      "word_number": 1374,
+      "kanji": "湧く",
+      "furigana": "わく",
+      "meaning_en": "seethe, boil, bubble up"
+    },
+    {
+      "word_id": "n2_1375",
+      "word_number": 1375,
+      "kanji": "透き通る",
+      "furigana": "すきとおる",
+      "meaning_en": "be transparent"
+    },
+    {
+      "word_id": "n2_1376",
+      "word_number": 1376,
+      "kanji": "無色",
+      "furigana": "むしょく",
+      "meaning_en": "colorless"
+    },
+    {
+      "word_id": "n2_1377",
+      "word_number": 1377,
+      "kanji": "濁る",
+      "furigana": "にごる",
+      "meaning_en": "be clouded"
+    },
+    {
+      "word_id": "n2_1378",
+      "word_number": 1378,
+      "kanji": "ちなみに",
+      "furigana": "",
+      "meaning_en": "incidentally, by the way"
+    },
+    {
+      "word_id": "n2_1379",
+      "word_number": 1379,
+      "kanji": "〜一",
+      "furigana": "いち",
+      "meaning_en": "foremost, ~ largest/highest/best/"
+    }
+  ]
+}

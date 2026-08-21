@@ -221,10 +221,10 @@ const ConversationsPage = () => {
 
   return (
     <div className="min-h-screen bg-[#F7F7F8] dark:bg-[#111111] pt-[100px] pb-12 flex justify-center items-center px-4 font-sans text-zinc-800 dark:text-zinc-200">
-      <div className="w-full max-w-5xl h-[75vh] min-h-[600px] max-h-[800px] bg-white dark:bg-[#1A1A1A] rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.5)] flex overflow-hidden border border-zinc-200/50 dark:border-zinc-800">
+      <div className="w-full max-w-5xl h-[85vh] md:h-[75vh] min-h-[600px] max-h-[900px] bg-white dark:bg-[#1A1A1A] rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.5)] flex flex-col md:flex-row overflow-hidden border border-zinc-200/50 dark:border-zinc-800">
         
         {/* Sidebar */}
-        <div className="w-80 bg-[#FAFAFA] dark:bg-[#141414] border-r border-zinc-200/60 dark:border-zinc-800 flex flex-col">
+        <div className={`w-full md:w-80 bg-[#FAFAFA] dark:bg-[#141414] border-r border-zinc-200/60 dark:border-zinc-800 flex-col ${activeConv ? 'hidden md:flex' : 'flex'}`}>
           <div className="p-6 border-b border-zinc-200/60 dark:border-zinc-800 flex items-center gap-4">
             <button 
               onClick={() => navigate(-1)} 
@@ -283,20 +283,30 @@ const ConversationsPage = () => {
         </div>
 
         {/* Chat Area */}
-        <div className="flex-1 flex flex-col relative">
+        <div className={`flex-1 flex-col relative ${!activeConv ? 'hidden md:flex' : 'flex'}`}>
           {activeConv ? (
             <>
               {/* Header */}
-              <div className="px-6 py-4 border-b border-zinc-200/60 dark:border-zinc-800 flex justify-between items-center bg-white dark:bg-[#1A1A1A] z-10">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 flex items-center justify-center text-2xl">
+              <div className="px-4 md:px-6 py-4 border-b border-zinc-200/60 dark:border-zinc-800 flex justify-between items-center bg-white dark:bg-[#1A1A1A] z-10">
+                <div className="flex items-center gap-2 md:gap-3">
+                  <button 
+                    onClick={() => {
+                      setActiveConv(null);
+                      setIsPlaying(false);
+                      window.speechSynthesis.cancel();
+                    }}
+                    className="md:hidden text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 px-2 py-1"
+                  >
+                    &larr;
+                  </button>
+                  <div className="w-10 h-10 flex items-center justify-center text-2xl hidden md:flex">
                     {activeConv.icon}
                   </div>
                   <div>
-                    <div className="font-semibold text-zinc-900 dark:text-zinc-100 text-[15px]">
+                    <div className="font-semibold text-zinc-900 dark:text-zinc-100 text-[14px] md:text-[15px] truncate max-w-[150px] md:max-w-none">
                       {activeConv.title}
                     </div>
-                    <div className="text-[12px] text-zinc-500 dark:text-zinc-400 tracking-wide uppercase">
+                    <div className="text-[11px] md:text-[12px] text-zinc-500 dark:text-zinc-400 tracking-wide uppercase">
                       Interactive Audio
                     </div>
                   </div>
@@ -313,7 +323,7 @@ const ConversationsPage = () => {
                       startAutoPlay();
                     }
                   }}
-                  className={`px-4 py-2 rounded-lg font-medium text-[13px] transition-colors flex items-center gap-2 ${
+                  className={`px-3 md:px-4 py-1.5 md:py-2 rounded-lg font-medium text-[12px] md:text-[13px] transition-colors flex items-center gap-1.5 md:gap-2 ${
                     isPlaying 
                       ? 'bg-zinc-100 hover:bg-zinc-200 text-zinc-800 dark:bg-zinc-800 dark:hover:bg-zinc-700 dark:text-zinc-200' 
                       : 'bg-zinc-900 hover:bg-zinc-800 text-white dark:bg-zinc-100 dark:hover:bg-zinc-200 dark:text-zinc-900'
@@ -325,7 +335,7 @@ const ConversationsPage = () => {
                       ? '▶ Resume'
                       : (resumeIndexRef.current >= activeConv.messages.length)
                         ? '↺ Replay'
-                        : '▶ Auto Play'
+                        : '▶ Play'
                   }
                 </button>
               </div>

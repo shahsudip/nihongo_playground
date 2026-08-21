@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 11 動物",
+  "page_story": "153_2",
+  "japanese_text": "犬は父に<u>抱っこされる</u>と父の胸に顔を<u>埋めて</u>、<u>甘えて</u>いた。犬は父が<u>あくび</u>をするのを見ると、自分もあくびをしていた。",
+  "english_translation": "Whenever my father hugged the dog, he'd bury his face in my father's chest and act like a spoiled baby. Whenever the dog saw my father yawn, he'd yawn too.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0957",
+      "word_number": 957,
+      "kanji": "抱っこ[する]",
+      "furigana": "だっこ",
+      "meaning_en": "embrace, hug"
+    },
+    {
+      "word_id": "n2_0958",
+      "word_number": 958,
+      "kanji": "埋める",
+      "furigana": "うめる",
+      "meaning_en": "bury"
+    },
+    {
+      "word_id": "n2_0959",
+      "word_number": 959,
+      "kanji": "甘える",
+      "furigana": "あまえる",
+      "meaning_en": "act spoiled, fawn on"
+    },
+    {
+      "word_id": "n2_0960",
+      "word_number": 960,
+      "kanji": "あくび",
+      "furigana": "",
+      "meaning_en": "yawn"
+    }
+  ]
+}

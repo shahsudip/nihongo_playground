@@ -1,0 +1,66 @@
+{
+  "is_story": true,
+  "story_number": 7,
+  "title": "Topic 23 環境・科学",
+  "page_story": "321_1",
+  "japanese_text": "A：ねえ、聞いた？例の地域の<u>水質</u>調査結果。検査<u>機関</u>によると汚染物質の濃度が平均より<u>およそ</u>５倍も高かったんだって。一応は<u>基準</u>値<u>未満</u>だったみたいだけど。\nB：それはびっくりだね。\nA：基準値未満とは言え、この<u>事実</u>をどう<u>解釈する</u>かが重要だね。今後は汚染物質を<u>薄める</u>ための対策をとらないと。",
+  "english_translation": "A: Hey, did you hear about the results of the water quality survey in the sample area? According to the survey agency, the concentration of pollutants was approximately five times higher than average. Although it seems to be below the standard value.\nB: That's surprising.\nA: Although it is below the standard value, it's important how we interpret this fact. In the future, we need to take measures to dilute the pollutants.",
+  "annotated_words": [
+    {
+      "word_id": "n2_2261",
+      "word_number": 2261,
+      "kanji": "水質",
+      "furigana": "すいしつ",
+      "meaning_en": "water quality"
+    },
+    {
+      "word_id": "n2_2262",
+      "word_number": 2262,
+      "kanji": "機関",
+      "furigana": "きかん",
+      "meaning_en": "agency, institute"
+    },
+    {
+      "word_id": "n2_2263",
+      "word_number": 2263,
+      "kanji": "およそ",
+      "furigana": "およそ",
+      "meaning_en": "approximately"
+    },
+    {
+      "word_id": "n2_2264",
+      "word_number": 2264,
+      "kanji": "基準",
+      "furigana": "きじゅん",
+      "meaning_en": "standard"
+    },
+    {
+      "word_id": "n2_2265",
+      "word_number": 2265,
+      "kanji": "～未満",
+      "furigana": "みまん",
+      "meaning_en": "below ~"
+    },
+    {
+      "word_id": "n2_2266",
+      "word_number": 2266,
+      "kanji": "事実",
+      "furigana": "じじつ",
+      "meaning_en": "fact"
+    },
+    {
+      "word_id": "n2_2267",
+      "word_number": 2267,
+      "kanji": "解釈[する]",
+      "furigana": "かいしゃく",
+      "meaning_en": "interpretation, interpret"
+    },
+    {
+      "word_id": "n2_2268",
+      "word_number": 2268,
+      "kanji": "薄める",
+      "furigana": "うすめる",
+      "meaning_en": "dilute, weaken"
+    }
+  ]
+}

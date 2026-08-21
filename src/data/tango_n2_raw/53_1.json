@@ -1,0 +1,59 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 4 ファッション",
+  "page_story": "53_1",
+  "japanese_text": "A：明日初デートなんだけど、この服どうかな？\nB：<u>全身</u>、<u>アウトドア</u><u>ブランド</u>で揃えたのね。\nA：うん。<u>ダサい</u>かな？\nB：うーん。流行を<u>取り入れよう</u>としてるのはいいと思うんだけど、<u>だぶだぶな</u>ズボンはカジュアルすぎない？ スニーカーもその色はちょっと…。\nA：そっか。この靴、色違いで２<u>足</u>持ってるんだけど、黒い方ならいいかな？",
+  "english_translation": "A: I'm going on a first date tomorrow. What do you think about these clothes? B: The whole outfit is from outdoor brands, isn't it? A: Yes. Does it look unstylish? B: Hmmm. It's good that you're trying to incorporate the latest trends, but aren't the baggy pants a bit casual? I don't like the color of the sneakers either... A: Okay. I have two pairs of these shoes in different colors. Maybe the black ones would look better?",
+  "annotated_words": [
+    {
+      "word_id": "n2_0250",
+      "word_number": 250,
+      "kanji": "全身",
+      "furigana": "ぜんしん",
+      "meaning_en": "whole body"
+    },
+    {
+      "word_id": "n2_0251",
+      "word_number": 251,
+      "kanji": "アウトドア",
+      "furigana": "",
+      "meaning_en": "outdoor"
+    },
+    {
+      "word_id": "n2_0252",
+      "word_number": 252,
+      "kanji": "ブランド",
+      "furigana": "",
+      "meaning_en": "brand, label"
+    },
+    {
+      "word_id": "n2_0253",
+      "word_number": 253,
+      "kanji": "ダサい",
+      "furigana": "",
+      "meaning_en": "unstylish, uncool"
+    },
+    {
+      "word_id": "n2_0254",
+      "word_number": 254,
+      "kanji": "取り入れる",
+      "furigana": "とりいれる",
+      "meaning_en": "incorporate"
+    },
+    {
+      "word_id": "n2_0255",
+      "word_number": 255,
+      "kanji": "だぶだぶな",
+      "furigana": "",
+      "meaning_en": "loose, baggy"
+    },
+    {
+      "word_id": "n2_0256",
+      "word_number": 256,
+      "kanji": "～足",
+      "furigana": "そく",
+      "meaning_en": "~ pairs"
+    }
+  ]
+}

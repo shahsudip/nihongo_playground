@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 11 動物",
+  "page_story": "150_1",
+  "japanese_text": "A：見て、かわいいカエルがいる！ 捕まえよう！\nB：<u>じかに</u>触るのは<u>よした</u>方がいいよ。<u>外見</u>は<u>かわいらしい</u>けど、<u>毒</u>を持っていることもあるから。",
+  "english_translation": "A: Look, there's a cute little frog! Let's catch it! B: You should avoid touching it directly. It may appear cute, but it could be venomous.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0929",
+      "word_number": 929,
+      "kanji": "じかに",
+      "furigana": "",
+      "meaning_en": "directly, first-hand"
+    },
+    {
+      "word_id": "n2_0930",
+      "word_number": 930,
+      "kanji": "よす",
+      "furigana": "",
+      "meaning_en": "avoid, stop, desist"
+    },
+    {
+      "word_id": "n2_0931",
+      "word_number": 931,
+      "kanji": "外見",
+      "furigana": "がいけん",
+      "meaning_en": "appearance"
+    },
+    {
+      "word_id": "n2_0932",
+      "word_number": 932,
+      "kanji": "かわいらしい",
+      "furigana": "",
+      "meaning_en": "cute"
+    },
+    {
+      "word_id": "n2_0933",
+      "word_number": 933,
+      "kanji": "毒",
+      "furigana": "どく",
+      "meaning_en": "poison, venom"
+    }
+  ]
+}

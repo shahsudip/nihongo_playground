@@ -1,0 +1,48 @@
+{
+  "id": "162_1",
+  "title": "Topic 12 旅行 Travel",
+  "japanese_text": "「<span class='annotated-word' data-word='間もなく'>間もなく</span>、<span class='annotated-word' data-word='発車する'>発車します</span>」というアナウンスを<ruby>聞<rt>き</rt></ruby>いて、<span class='annotated-word' data-word='ホーム'>ホーム</span>の<ruby>電車<rt>でんしゃ</rt></ruby>に<span class='annotated-word' data-word='飛び込む'>飛び込んだ</span>。<span class='annotated-word' data-word='ところが'>ところが</span>、その<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>特急<rt>とっきゅう</rt></ruby>で、<ruby>降<rt>お</rt></ruby>りる<ruby>駅<rt>えき</rt></ruby>で<span class='annotated-word' data-word='停車する'>停車せず</span>、<span class='annotated-word' data-word='通過する'>通過して</span>しまった。",
+  "english_translation": "Hearing the conductor announce \"We'll be departing soon,\" I jumped onto the train sitting at the platform. It turned out, however, that it was an express train and it went right past my station without stopping.",
+  "annotated_words": [
+    {
+      "meaning_en": "soon, shortly",
+      "furigana": "まもなく",
+      "kanji": "間もなく"
+    },
+    {
+      "meaning_en": "departure, depart",
+      "furigana": "はっしゃ",
+      "kanji": "発車[する]"
+    },
+    {
+      "meaning_en": "platform",
+      "furigana": "",
+      "kanji": "ホーム"
+    },
+    {
+      "meaning_en": "platform",
+      "furigana": "",
+      "kanji": "プラットホーム"
+    },
+    {
+      "meaning_en": "jump in",
+      "furigana": "とびこむ",
+      "kanji": "飛び込む"
+    },
+    {
+      "meaning_en": "however",
+      "furigana": "",
+      "kanji": "ところが"
+    },
+    {
+      "meaning_en": "stopping, stop",
+      "furigana": "ていしゃ",
+      "kanji": "停車[する]"
+    },
+    {
+      "meaning_en": "passing, pass",
+      "furigana": "つうか",
+      "kanji": "通過[する]"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 19 健康",
+  "page_story": "268_1",
+  "japanese_text": "<u>健康診断</u>で胸の<u>レントゲン</u>を撮ったら、<u>肺</u>に影が見つかった。その後、がんと<u>診断され</u>、すぐに<u>治療</u>が開始された。",
+  "english_translation": "During a physical examination, a shadow was found on his lungs after a chest X-ray. Subsequently, he was diagnosed with cancer and started medical treatment immediately.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1853",
+      "word_number": 1853,
+      "kanji": "健康診断",
+      "furigana": "けんこうしんだん",
+      "meaning_en": "physical examination, health checkup"
+    },
+    {
+      "word_id": "n2_1854",
+      "word_number": 1854,
+      "kanji": "レントゲン",
+      "furigana": "れんとげん",
+      "meaning_en": "X-ray"
+    },
+    {
+      "word_id": "n2_1855",
+      "word_number": 1855,
+      "kanji": "肺",
+      "furigana": "はい",
+      "meaning_en": "lungs"
+    },
+    {
+      "word_id": "n2_1856",
+      "word_number": 1856,
+      "kanji": "診断[する]",
+      "furigana": "しんだん",
+      "meaning_en": "diagnosis, diagnose"
+    },
+    {
+      "word_id": "n2_1857",
+      "word_number": 1857,
+      "kanji": "治療[する]",
+      "furigana": "ちりょう",
+      "meaning_en": "medical treatment, treat"
+    }
+  ]
+}

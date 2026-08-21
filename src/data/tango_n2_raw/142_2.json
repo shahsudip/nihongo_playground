@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 10 スポーツ",
+  "page_story": "142_2",
+  "japanese_text": "A：昨日のサッカーの試合、<u>盛り上がりました</u>ね！\nB：実は昨日、<u>観客席</u>にいたんです。\nA：え、うらやましいなあ！\nB：スタジアムで<u>観戦する</u>ことが、<u>唯一の</u>趣味なんですよ。",
+  "english_translation": "A: Yesterday's soccer match got really exciting! B: Actually, I was watching from the spectator stands yesterday. A: What? I'm so jealous! B: Watching sports at the stadium is my sole hobby.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0869",
+      "word_number": 869,
+      "kanji": "盛り上がる",
+      "furigana": "もりあがる",
+      "meaning_en": "get excited"
+    },
+    {
+      "word_id": "n2_0870",
+      "word_number": 870,
+      "kanji": "観客席",
+      "furigana": "かんきゃくせき",
+      "meaning_en": "audience seats, spectator stand"
+    },
+    {
+      "word_id": "n2_0871",
+      "word_number": 871,
+      "kanji": "観戦[する]",
+      "furigana": "かんせん",
+      "meaning_en": "sports watching, watch sports"
+    },
+    {
+      "word_id": "n2_0872",
+      "word_number": 872,
+      "kanji": "唯一",
+      "furigana": "ゆいいつ",
+      "meaning_en": "singular, sole (something)"
+    }
+  ]
+}

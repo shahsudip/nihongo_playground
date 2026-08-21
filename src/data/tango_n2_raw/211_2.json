@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 23,
+  "title": "Topic 15 旅行",
+  "page_story": "211_2",
+  "japanese_text": "日本政府は、公衆トイレの<u>洋式</u>化をすすめている。外国人旅行者からの「<u>和式</u>トイレの使い方が分からない」という声を受けて、駅や観光地にある公衆トイレの整備を<u>補助して</u>いる。汚い、臭い、危険な「公衆<u>便所</u>」から、清潔で安心な「公衆トイレ」に生まれ変わろうとしている。",
+  "english_translation": "The Japanese government is promoting a shift toward Western-style public restrooms. In response to comments from foreign travelers unfamiliar with using Japanese-style squat toilets, the government is subsidizing the construction of public restrooms at train stations and tourist attractions. These will be transformed from dirty, smelly, dangerous public restrooms to clean and safe public amenities.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1409",
+      "word_number": 1409,
+      "kanji": "洋式",
+      "furigana": "ようしき",
+      "meaning_en": "Western-style"
+    },
+    {
+      "word_id": "n2_1410",
+      "word_number": 1410,
+      "kanji": "和式",
+      "furigana": "わしき",
+      "meaning_en": "Japanese-style"
+    },
+    {
+      "word_id": "n2_1412",
+      "word_number": 1412,
+      "kanji": "補助[する]",
+      "furigana": "ほじょ",
+      "meaning_en": "subsidy, subsidize"
+    },
+    {
+      "word_id": "n2_1413",
+      "word_number": 1413,
+      "kanji": "便所",
+      "furigana": "べんじょ",
+      "meaning_en": "restroom"
+    }
+  ]
+}

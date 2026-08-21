@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 7 趣味",
+  "page_story": "104_1",
+  "japanese_text": "<u>語学</u>の勉強は、続けることが大切だ。私は、朝起きたら英語の新聞を読み、夜寝る前は英語の<u>短編</u>小説を読むのを<u>日課</u>にしている。この方法は、<u>実例</u>から単語を学ぶことができるので楽しい。",
+  "english_translation": "When studying a language, it is important to keep at it. As part of my daily schedule, I read an English newspaper when I wake up in the morning and a short story before going to bed at night. I enjoy this method because I can learn vocabulary from real-life examples.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0605",
+      "word_number": 605,
+      "kanji": "語学",
+      "furigana": "ごがく",
+      "meaning_en": "language"
+    },
+    {
+      "word_id": "n2_0606",
+      "word_number": 606,
+      "kanji": "短編",
+      "furigana": "たんぺん",
+      "meaning_en": "short story"
+    },
+    {
+      "word_id": "n2_0607",
+      "word_number": 607,
+      "kanji": "長編",
+      "furigana": "ちょうへん",
+      "meaning_en": "full-length novel"
+    },
+    {
+      "word_id": "n2_0608",
+      "word_number": 608,
+      "kanji": "日課",
+      "furigana": "にっか",
+      "meaning_en": "daily schedule, daily lesson"
+    },
+    {
+      "word_id": "n2_0609",
+      "word_number": 609,
+      "kanji": "実例",
+      "furigana": "じつれい",
+      "meaning_en": "real-life example"
+    }
+  ]
+}

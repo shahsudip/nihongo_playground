@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 21,
+  "title": "Topic 23 環境・科学",
+  "page_story": "330_2",
+  "japanese_text": "A：<u>本</u>施設には<u>天然</u>ガスが<u>貯蔵されて</u>います。<u>通常</u>は発電用の燃料として使用されていますが、場合によっては都市ガスの原料としても利用されます。\nB：この施設の敷地面積はどのくらいなんですか。\nA：そうですね。<u>およそ</u>東京<u>ドーム</u>17個分です。",
+  "english_translation": "A: Natural gas is stored at this facility. It's usually used as fuel for generating power, but in some cases it's also used for the city's gas supply.\nB: How large in area is the facility site?\nA: Right. It's roughly the size of 17 Tokyo Domes.",
+  "annotated_words": [
+    {
+      "word_id": "n2_2331",
+      "word_number": 2331,
+      "kanji": "本～",
+      "furigana": "ほん",
+      "meaning_en": "this ~"
+    },
+    {
+      "word_id": "n2_2332",
+      "word_number": 2332,
+      "kanji": "天然",
+      "furigana": "てんねん",
+      "meaning_en": "natural"
+    },
+    {
+      "word_id": "n2_2333",
+      "word_number": 2333,
+      "kanji": "貯蔵[する]",
+      "furigana": "ちょぞう",
+      "meaning_en": "stockpile, store"
+    },
+    {
+      "word_id": "n2_2334",
+      "word_number": 2334,
+      "kanji": "通常",
+      "furigana": "つうじょう",
+      "meaning_en": "usual situation"
+    },
+    {
+      "word_id": "n2_2335",
+      "word_number": 2335,
+      "kanji": "およそ",
+      "furigana": "およそ",
+      "meaning_en": "approximation, roughly"
+    },
+    {
+      "word_id": "n2_2336",
+      "word_number": 2336,
+      "kanji": "ドーム",
+      "furigana": "どーむ",
+      "meaning_en": "dome"
+    }
+  ]
+}

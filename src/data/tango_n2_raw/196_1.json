@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 15 旅行",
+  "page_story": "196_1",
+  "japanese_text": "飛行機に乗る日は、<u>前もって</u> <u>航空</u>会社の運航情報を見て、予約した便が<u>欠航</u>ではないか確認した方がいい。飛行機は予定通り出発しても、<u>悪天候</u>のため目的地の空港に<u>着陸でき</u>ないこともある。飛行機での移動は、十分に時間に<u>余裕</u>を持って行動した方がいい。",
+  "english_translation": "On the day you are taking a flight, it's best to check the airline's flight information in advance to make sure your flight hasn't been canceled. Even if the flight departs as scheduled, there are times when it cannot land at the destination airport due to bad weather. When traveling by air, it's best to act with plenty of spare time.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1303",
+      "word_number": 1303,
+      "kanji": "前もって",
+      "furigana": "まえもって",
+      "meaning_en": "in advance"
+    },
+    {
+      "word_id": "n2_1304",
+      "word_number": 1304,
+      "kanji": "航空",
+      "furigana": "こうくう",
+      "meaning_en": "flight, aviation"
+    },
+    {
+      "word_id": "n2_1305",
+      "word_number": 1305,
+      "kanji": "欠航[する]",
+      "furigana": "けっこう",
+      "meaning_en": "cancelation, cancel (a flight or sea voyage)"
+    },
+    {
+      "word_id": "n2_1306",
+      "word_number": 1306,
+      "kanji": "悪天候",
+      "furigana": "あくてんこう",
+      "meaning_en": "bad weather"
+    },
+    {
+      "word_id": "n2_1307",
+      "word_number": 1307,
+      "kanji": "着陸[する]",
+      "furigana": "ちゃくりく",
+      "meaning_en": "touchdown, land"
+    },
+    {
+      "word_id": "n2_1309",
+      "word_number": 1309,
+      "kanji": "余裕",
+      "furigana": "よゆう",
+      "meaning_en": "spare, extra"
+    }
+  ]
+}

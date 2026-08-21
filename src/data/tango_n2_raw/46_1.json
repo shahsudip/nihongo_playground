@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 3 買い物",
+  "page_story": "46_1",
+  "japanese_text": "パソコン探しに困っていたら、<u>株式会社</u>値段ドットコムのホームページを見てみるといい。<u>各種</u>メーカー製品を<u>取り扱って</u>いて、<u>価格</u>やスペック、<u>売れ行き</u>など、さまざまな条件を指定して探すことができる。",
+  "english_translation": "If you're having trouble finding a computer, take a look at the Price.com Inc. website. They stock products from various manufacturers, and you can search by specifying various criteria such as price, specifications, and how well they sell.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0206",
+      "word_number": 206,
+      "kanji": "株式会社",
+      "furigana": "かぶしきがいしゃ",
+      "meaning_en": "incorporated company (Inc. or Co., Ltd.)"
+    },
+    {
+      "word_id": "n2_0208",
+      "word_number": 208,
+      "kanji": "各種",
+      "furigana": "かくしゅ",
+      "meaning_en": "all kinds, various"
+    },
+    {
+      "word_id": "n2_0209",
+      "word_number": 209,
+      "kanji": "取り扱う",
+      "furigana": "とりあつかう",
+      "meaning_en": "stock, deal, handle"
+    },
+    {
+      "word_id": "n2_0211",
+      "word_number": 211,
+      "kanji": "価格",
+      "furigana": "かかく",
+      "meaning_en": "price"
+    },
+    {
+      "word_id": "n2_0212",
+      "word_number": 212,
+      "kanji": "売れ行き",
+      "furigana": "うれゆき",
+      "meaning_en": "sales, demand"
+    }
+  ]
+}

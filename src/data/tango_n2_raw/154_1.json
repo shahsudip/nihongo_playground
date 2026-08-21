@@ -1,0 +1,31 @@
+{
+  "is_story": true,
+  "story_number": 7,
+  "title": "Topic 11 動物",
+  "page_story": "154_1",
+  "japanese_text": "犬はときどきいたずらをした。ソファを<u>かじったり</u>、首輪の<u>鈴</u>を壊したりした。庭に<u>放す</u>と、いつまでも走り回っていた。",
+  "english_translation": "The dog could be mischievous sometimes. He gnawed on the sofa and broke the bell on his collar. When I let him out in the yard, he would run around forever.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0961",
+      "word_number": 961,
+      "kanji": "かじる",
+      "furigana": "",
+      "meaning_en": "chew, gnaw"
+    },
+    {
+      "word_id": "n2_0962",
+      "word_number": 962,
+      "kanji": "鈴",
+      "furigana": "すず",
+      "meaning_en": "bell"
+    },
+    {
+      "word_id": "n2_0963",
+      "word_number": 963,
+      "kanji": "放す",
+      "furigana": "はなす",
+      "meaning_en": "let free, let out"
+    }
+  ]
+}

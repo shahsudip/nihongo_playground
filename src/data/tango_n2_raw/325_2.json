@@ -1,0 +1,31 @@
+{
+  "is_story": true,
+  "story_number": 13,
+  "title": "Topic 23 環境・科学",
+  "page_story": "325_2",
+  "japanese_text": "A：あ、この池アカミミガメがいるね。こんな身近な池にもいるなんて。\nB：カメなんてどの池にもいるじゃん。\nA：あのアカミミガメは<u>外来</u>種で、<u>原産</u>はアメリカなんだよ。\nB：えっ、そうなんだ。日本のカメだと<u>思い込んで</u>いたよ。",
+  "english_translation": "A: Hey, there are pond slider turtles in this pond. I can't believe they're in a local pond like this.\nB: You can find turtles in every pond.\nA: But the pond slider is a non-native species, originating from the United States.\nB: Oh, really? I'd assumed they were Japanese turtles.",
+  "annotated_words": [
+    {
+      "word_id": "n2_2295",
+      "word_number": 2295,
+      "kanji": "外来",
+      "furigana": "がいらい",
+      "meaning_en": "imported, non-native"
+    },
+    {
+      "word_id": "n2_2296",
+      "word_number": 2296,
+      "kanji": "原産",
+      "furigana": "げんさん",
+      "meaning_en": "origin (place of origin)"
+    },
+    {
+      "word_id": "n2_2297",
+      "word_number": 2297,
+      "kanji": "思い込む",
+      "furigana": "おもいこむ",
+      "meaning_en": "assume"
+    }
+  ]
+}

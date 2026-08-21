@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 19,
+  "title": "Topic 17 仕事",
+  "page_story": "245_1",
+  "japanese_text": "A：宛名の<u>形式</u>は、人が「様」、会社とか団体が「<u>御中</u>」ですよね。\nB：そうそう。\nA：「<u>御社</u>」と「<u>貴社</u>」はどう違うんでしたっけ。\nB：意味は同じだけど、「御社」は話し言葉で使われるかな。「貴社」は書き言葉。",
+  "english_translation": "A: In Japanese, the form of address is sama for a person and onchu for a company or organization, right? B: That's right. A: What is the difference between onsha and kisha? B: They mean the same thing, but onsha is used in spoken language and kisha is used when written.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1668",
+      "word_number": 1668,
+      "kanji": "形式",
+      "furigana": "けいしき",
+      "meaning_en": "form, format"
+    },
+    {
+      "word_id": "n2_1669",
+      "word_number": 1669,
+      "kanji": "御中",
+      "furigana": "おんちゅう",
+      "meaning_en": "for the attention of ... (form of address) (onchu)"
+    },
+    {
+      "word_id": "n2_1670",
+      "word_number": 1670,
+      "kanji": "御社",
+      "furigana": "おんしゃ",
+      "meaning_en": "your company (onsha)"
+    },
+    {
+      "word_id": "n2_1671",
+      "word_number": 1671,
+      "kanji": "貴社",
+      "furigana": "きしゃ",
+      "meaning_en": "your company (kisha)"
+    }
+  ]
+}

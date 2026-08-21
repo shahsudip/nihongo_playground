@@ -1,0 +1,24 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 3 買い物",
+  "page_story": "49_1",
+  "japanese_text": "A：見てこれ。絶版になった本がオークションに出てるんだけど、予算を<u>超えて</u>るんだよね。\nB：珍しいものは<u>大概</u>そうなるよね。",
+  "english_translation": "A: Look at this. There's an out-of-print book on auction, but it's over my budget. B: That's usually the case with rare items.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0235",
+      "word_number": 235,
+      "kanji": "超える",
+      "furigana": "こえる",
+      "meaning_en": "exceed, go over"
+    },
+    {
+      "word_id": "n2_0236",
+      "word_number": 236,
+      "kanji": "大概",
+      "furigana": "たいがい",
+      "meaning_en": "usually, generally speaking"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 16,
+  "title": "Topic 23 環境・科学",
+  "page_story": "327_2",
+  "japanese_text": "<u>原子力発電</u>には放射線物質が利用される。この放射線物質が放射線を出す能力のことを<u>放射能</u>と呼び、放射能は<u>年月</u>が経つにつれ弱まる性質を持っている。",
+  "english_translation": "Radioactive materials are used in nuclear power generation. The ability of radioactive materials to emit radiation is called radioactivity, and this radioactivity weakens with the passing of time.",
+  "annotated_words": [
+    {
+      "word_id": "n2_2311",
+      "word_number": 2311,
+      "kanji": "原子力発電",
+      "furigana": "げんしりょくはつでん",
+      "meaning_en": "nuclear power generation"
+    },
+    {
+      "word_id": "n2_2312",
+      "word_number": 2312,
+      "kanji": "発電[する]",
+      "furigana": "はつでん",
+      "meaning_en": "power generation, generate power"
+    },
+    {
+      "word_id": "n2_2313",
+      "word_number": 2313,
+      "kanji": "放射能",
+      "furigana": "ほうしゃのう",
+      "meaning_en": "radioactivity"
+    },
+    {
+      "word_id": "n2_2314",
+      "word_number": 2314,
+      "kanji": "年月",
+      "furigana": "ねんげつ",
+      "meaning_en": "time (months and years)"
+    }
+  ]
+}

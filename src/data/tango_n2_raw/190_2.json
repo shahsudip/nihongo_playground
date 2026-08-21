@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 13,
+  "title": "Topic 14 天気",
+  "page_story": "190_2",
+  "japanese_text": "航空機は進化し続けているが、<u>それでも</u> <u>霧</u>で<u>運休</u>になることがある。結局、人の目で確認しなければ、<u>正常な</u> <u>運行</u>は難しい。",
+  "english_translation": "Aircraft continue to evolve, but even so, flights are sometimes canceled due to fog. After all, it is difficult to operate aircraft normally without confirming with the human eye.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1260",
+      "word_number": 1260,
+      "kanji": "それでも",
+      "furigana": "",
+      "meaning_en": "even so"
+    },
+    {
+      "word_id": "n2_1261",
+      "word_number": 1261,
+      "kanji": "霧",
+      "furigana": "きり",
+      "meaning_en": "fog"
+    },
+    {
+      "word_id": "n2_1262",
+      "word_number": 1262,
+      "kanji": "運休[する]",
+      "furigana": "うんきゅう",
+      "meaning_en": "cancelation, cancel"
+    },
+    {
+      "word_id": "n2_1263",
+      "word_number": 1263,
+      "kanji": "正常な",
+      "furigana": "せいじょうな",
+      "meaning_en": "normal"
+    },
+    {
+      "word_id": "n2_1264",
+      "word_number": 1264,
+      "kanji": "運行[する]",
+      "furigana": "うんこう",
+      "meaning_en": "operation, operate"
+    }
+  ]
+}

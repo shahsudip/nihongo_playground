@@ -1,0 +1,66 @@
+{
+  "title": "Topic 5 テクノロジー",
+  "audio_id": "69",
+  "japanese_text": "A：授業の資料をダウンロードしたんだけど、開けなかったの。\nB：圧縮<u>フォルダ</u>だからじゃない？ <u>解凍すれ</u>ばいいよ。\nA：あ、そっか。あと、ここに書いてある漢字って何て読むの？ 読み方が分からないから<u>入力できなくて</u>…。\nB：ええと…難しいね。こういうときは<u>手書き</u><u>機能</u>を<u>活用しよう</u>。",
+  "page_story": "68_1",
+  "english_translation": "A: I downloaded the class materials, but I couldn't open them. B: Maybe that's because it's a compressed folder. Just unzip it. A: Oh, I see. Also, how do you read the kanji characters written here? I don't know how to read them, so I can't input them... B: Well... that's more difficult. In this case, let's use the handwriting function.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0344",
+      "word_number": 344,
+      "kanji": "フォルダ",
+      "furigana": "フォルダ",
+      "meaning_en": "folder"
+    },
+    {
+      "word_id": "n2_0345",
+      "word_number": 345,
+      "kanji": "解凍[する]",
+      "furigana": "かいとう",
+      "meaning_en": "decompression, unzip"
+    },
+    {
+      "word_id": "n2_0346",
+      "word_number": 346,
+      "kanji": "入力[する]",
+      "furigana": "にゅうりょく",
+      "meaning_en": "input, enter"
+    },
+    {
+      "word_id": "n2_0347",
+      "word_number": 347,
+      "kanji": "出力[する]",
+      "furigana": "しゅつりょく",
+      "meaning_en": "output"
+    },
+    {
+      "word_id": "n2_0348",
+      "word_number": 348,
+      "kanji": "手書き[する]",
+      "furigana": "てがき",
+      "meaning_en": "handwriting, write by hand"
+    },
+    {
+      "word_id": "n2_0349",
+      "word_number": 349,
+      "kanji": "機能[する]",
+      "furigana": "きのう",
+      "meaning_en": "function"
+    },
+    {
+      "word_id": "n2_0350",
+      "word_number": 350,
+      "kanji": "機能的な",
+      "furigana": "きのうてきな",
+      "meaning_en": "functional"
+    },
+    {
+      "word_id": "n2_0351",
+      "word_number": 351,
+      "kanji": "活用[する]",
+      "furigana": "かつよう",
+      "meaning_en": "utilization, use, apply"
+    }
+  ],
+  "is_story": true
+}

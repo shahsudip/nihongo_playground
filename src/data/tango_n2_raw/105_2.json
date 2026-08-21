@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 7 趣味",
+  "page_story": "105_2",
+  "japanese_text": "昔の<u>書籍</u>は、「木版印刷」という方法で<u>刷られて</u>いた。木の板に文章や絵を<u>彫り</u>、そこに<u>絵の具</u>や墨などを塗って紙をあてるという、スタンプのような方法だ。",
+  "english_translation": "In the old days, books were printed using a method known as woodblock printing. This is a method in which text or pictures are carved into wooden boards, coated with pigments or ink, then stamped onto paper.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0613",
+      "word_number": 613,
+      "kanji": "書籍",
+      "furigana": "しょせき",
+      "meaning_en": "books, publications"
+    },
+    {
+      "word_id": "n2_0614",
+      "word_number": 614,
+      "kanji": "刷る",
+      "furigana": "する",
+      "meaning_en": "print"
+    },
+    {
+      "word_id": "n2_0615",
+      "word_number": 615,
+      "kanji": "彫る",
+      "furigana": "ほる",
+      "meaning_en": "carve"
+    },
+    {
+      "word_id": "n2_0616",
+      "word_number": 616,
+      "kanji": "絵の具",
+      "furigana": "えのぐ",
+      "meaning_en": "pigment, paint"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 3 買い物",
+  "page_story": "47_1",
+  "japanese_text": "A：国内ではまだ<u>販売されて</u>いない、海外の商品が購入できるサイトって知らない？\nB：えっと、<u>評価</u>が高いのはKAIGAI MALLかな。でも、<u>為替レート</u>によって値段が変わりやすいし、<u>関税</u>がかかったりするんだよね。あと<u>発送</u>が遅いかも。",
+  "english_translation": "A: Do you know any websites where you can buy overseas products not yet on sale in Japan? B: Well, I think Kaigai Mall is the most highly rated. But prices tend to change depending on the exchange rate, and there are Customs charges too. Also, shipping might be slow.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0217",
+      "word_number": 217,
+      "kanji": "販売[する]",
+      "furigana": "はんばい",
+      "meaning_en": "sale, sell"
+    },
+    {
+      "word_id": "n2_0218",
+      "word_number": 218,
+      "kanji": "評価[する]",
+      "furigana": "ひょうか",
+      "meaning_en": "evaluation, rating, rate"
+    },
+    {
+      "word_id": "n2_0219",
+      "word_number": 219,
+      "kanji": "為替レート",
+      "furigana": "かわせレート",
+      "meaning_en": "exchange rate"
+    },
+    {
+      "word_id": "n2_0221",
+      "word_number": 221,
+      "kanji": "関税",
+      "furigana": "かんぜい",
+      "meaning_en": "customs"
+    },
+    {
+      "word_id": "n2_0222",
+      "word_number": 222,
+      "kanji": "発送[する]",
+      "furigana": "はっそう",
+      "meaning_en": "shipping, deliver"
+    }
+  ]
+}

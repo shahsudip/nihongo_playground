@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 14 天気",
+  "page_story": "189_2",
+  "japanese_text": "A：<u>あら</u>、あの猫、さっき庭に出たばかりなのに、もう<u>引き返して</u>きた。\nB：見て。<u>霜</u>の上に<u>足跡</u>がついてるけど、途中でなくなってる。冷たかったんだろうね。あ、部屋に<u>引っ込ん</u>じゃった。",
+  "english_translation": "A: Oh, the cat just went out into the garden a moment ago, but it's already turned back. B: Look. There are tracks on the frost, but they stop partway. It must have been cold. Oh, it's come inside.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1251",
+      "word_number": 1251,
+      "kanji": "あら",
+      "furigana": "",
+      "meaning_en": "Oh"
+    },
+    {
+      "word_id": "n2_1252",
+      "word_number": 1252,
+      "kanji": "引き返す",
+      "furigana": "ひきかえす",
+      "meaning_en": "turn back"
+    },
+    {
+      "word_id": "n2_1253",
+      "word_number": 1253,
+      "kanji": "霜",
+      "furigana": "しも",
+      "meaning_en": "frost"
+    },
+    {
+      "word_id": "n2_1254",
+      "word_number": 1254,
+      "kanji": "足跡",
+      "furigana": "あしあと",
+      "meaning_en": "tracks, footprint"
+    },
+    {
+      "word_id": "n2_1255",
+      "word_number": 1255,
+      "kanji": "引っ込む",
+      "furigana": "ひっこむ",
+      "meaning_en": "retire, withdraw, come inside"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 15 旅行",
+  "page_story": "199_2",
+  "japanese_text": "ドイツ、オランダ、ベルギーの三国が接する<u>国境</u>地点が存在する。オランダとベルギー側からはバスでも<u>上れる</u>道路があるが、ドイツ側からは<u>山道</u>を30分ほど歩かなければならないそうだ。今度ヨーロッパへ行ったら、少し<u>足を伸ばして</u>行ってみようと思う。",
+  "english_translation": "There's a point where the national borders of Germany, the Netherlands, and Belgium all meet. From the Dutch and Belgian side, there's a road you can travel up by bus, but from the German side, you have to walk for about 30 minutes along a mountain path. Next time I travel to Europe, I'd like to extend my journey and go there.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1325",
+      "word_number": 1325,
+      "kanji": "国境",
+      "furigana": "こっきょう",
+      "meaning_en": "national border"
+    },
+    {
+      "word_id": "n2_1326",
+      "word_number": 1326,
+      "kanji": "上る",
+      "furigana": "のぼる",
+      "meaning_en": "travel up"
+    },
+    {
+      "word_id": "n2_1328",
+      "word_number": 1328,
+      "kanji": "山道",
+      "furigana": "やまみち",
+      "meaning_en": "mountain path"
+    },
+    {
+      "word_id": "n2_1329",
+      "word_number": 1329,
+      "kanji": "足を伸ばす",
+      "furigana": "あしをのばす",
+      "meaning_en": "extend one's journey (literally, stretch one's legs)"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 21 社会",
+  "page_story": "295_1",
+  "japanese_text": "A：<u>景気が悪化して</u>、店を続けていくのが難しくなってきたよ。\nB：<u>借金</u>はしない方がいいよ。\nA：それはもっともなんだけど、<u>現状</u>を考えたら検討しなきゃ。\nB：<u>補助金</u>があるかは調べてみたの？",
+  "english_translation": "A: With the economy getting worse, it's getting harder and harder to keep the store going. B: It's not a good idea to go into debt. A: That's true, but considering the current situation, I have to consider it. B: Have you checked to see if there are any subsidies?",
+  "annotated_words": [
+    {
+      "word_id": "n2_2057",
+      "word_number": 2057,
+      "kanji": "景気",
+      "furigana": "けいき",
+      "meaning_en": "economy"
+    },
+    {
+      "word_id": "n2_2058",
+      "word_number": 2058,
+      "kanji": "悪化[する]",
+      "furigana": "あっか",
+      "meaning_en": "deterioration, get worse"
+    },
+    {
+      "word_id": "n2_2059",
+      "word_number": 2059,
+      "kanji": "借金[する]",
+      "furigana": "しゃっきん",
+      "meaning_en": "debt, go into debt"
+    },
+    {
+      "word_id": "n2_2060",
+      "word_number": 2060,
+      "kanji": "現状",
+      "furigana": "げんじょう",
+      "meaning_en": "current situation"
+    },
+    {
+      "word_id": "n2_2061",
+      "word_number": 2061,
+      "kanji": "補助金",
+      "furigana": "ほじょきん",
+      "meaning_en": "subsidy"
+    }
+  ]
+}

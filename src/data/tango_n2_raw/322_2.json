@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 23 環境・科学",
+  "page_story": "322_2",
+  "japanese_text": "A：あの、この大きな<u>装置</u>は何ですか？\nB：顕微鏡だよ。よかったら覗いてみる？\nA：はい。…わあ、<u>大小</u>さまざまなプランクトンが<u>無数に</u>いますね。どれも<u>ユニークな</u>形をしてるなあ。\nB：でしょう。そっちの引き出しにはプランクトンの<u>標本</u>がたくさん入ってるよ。",
+  "english_translation": "A: What is this large device?\nB: It's a microscope. Would you like to take a look through it?\nA: Yes. Wow, there are countless plankton of all sizes. They all have such unique shapes.\nB: That's right. That drawer contains many specimens of plankton.",
+  "annotated_words": [
+    {
+      "word_id": "n2_2272",
+      "word_number": 2272,
+      "kanji": "装置",
+      "furigana": "そうち",
+      "meaning_en": "device, apparatus"
+    },
+    {
+      "word_id": "n2_2273",
+      "word_number": 2273,
+      "kanji": "大小",
+      "furigana": "だいしょう",
+      "meaning_en": "all sizes"
+    },
+    {
+      "word_id": "n2_2274",
+      "word_number": 2274,
+      "kanji": "無数な",
+      "furigana": "むすうな",
+      "meaning_en": "countless"
+    },
+    {
+      "word_id": "n2_2275",
+      "word_number": 2275,
+      "kanji": "ユニークな",
+      "furigana": "ゆにーくな",
+      "meaning_en": "unique"
+    },
+    {
+      "word_id": "n2_2276",
+      "word_number": 2276,
+      "kanji": "標本",
+      "furigana": "ひょうほん",
+      "meaning_en": "specimen"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 14 天気",
+  "page_story": "184_1",
+  "japanese_text": "マラソン大会は、<u>あいにく</u>の<u>豪雨</u>で、<u>一昨年</u>と同じく翌日に延期された。もし明日も<u>相変わらず</u>雨なら、<u>再</u>延期はされず中止となる。",
+  "english_translation": "Unfortunately, the marathon was postponed to the following day due to heavy rain, just like the year before last. And if it rains the same tomorrow, the marathon will be canceled rather than postponed again.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1200",
+      "word_number": 1200,
+      "kanji": "あいにく",
+      "furigana": "",
+      "meaning_en": "unfortunately"
+    },
+    {
+      "word_id": "n2_1201",
+      "word_number": 1201,
+      "kanji": "豪雨",
+      "furigana": "ごうう",
+      "meaning_en": "heavy rain"
+    },
+    {
+      "word_id": "n2_1202",
+      "word_number": 1202,
+      "kanji": "一昨年",
+      "furigana": "いっさくねん",
+      "meaning_en": "the year before last"
+    },
+    {
+      "word_id": "n2_1203",
+      "word_number": 1203,
+      "kanji": "相変わらず",
+      "furigana": "あいかわらず",
+      "meaning_en": "the same, unchanged"
+    },
+    {
+      "word_id": "n2_1204",
+      "word_number": 1204,
+      "kanji": "再〜",
+      "furigana": "さい",
+      "meaning_en": "again, re~"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 14 天気",
+  "page_story": "186_1",
+  "japanese_text": "鹿児島県の桜島は、よくニュースなどで<u>蒸気</u>が上がっている姿を見るが、一年で千回以上<u>噴火する</u>こともある比較的不安定な火山である。噴火で出た灰が、家や畑の<u>作物</u>を<u>覆って</u>しまうこともよくあるそうだ。鹿児島の人に「噴火は日常の<u>一部分</u>ですよ」と言われたが、私にはよく分からない<u>感覚</u>である。",
+  "english_translation": "Mount Sakurajima in Kagoshima Prefecture is a relatively unstable volcano that erupts over a thousand times a year, frequently pictured on the news with rising plumes of steam. Ash from its eruptions often covers houses and crops in the fields. Someone from Kagoshima once told me, \"Eruptions are part of everyday life,\" but I'll never really understand that feeling.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1220",
+      "word_number": 1220,
+      "kanji": "(水)蒸気",
+      "furigana": "じょうき",
+      "meaning_en": "steam"
+    },
+    {
+      "word_id": "n2_1221",
+      "word_number": 1221,
+      "kanji": "噴火[する]",
+      "furigana": "ふんか",
+      "meaning_en": "eruption, erupt"
+    },
+    {
+      "word_id": "n2_1222",
+      "word_number": 1222,
+      "kanji": "作物",
+      "furigana": "さくもつ",
+      "meaning_en": "crops"
+    },
+    {
+      "word_id": "n2_1223",
+      "word_number": 1223,
+      "kanji": "覆う",
+      "furigana": "おおう",
+      "meaning_en": "cover"
+    },
+    {
+      "word_id": "n2_1224",
+      "word_number": 1224,
+      "kanji": "一部分",
+      "furigana": "いちぶぶん",
+      "meaning_en": "part, section"
+    },
+    {
+      "word_id": "n2_1225",
+      "word_number": 1225,
+      "kanji": "感覚",
+      "furigana": "かんかく",
+      "meaning_en": "feeling"
+    }
+  ]
+}

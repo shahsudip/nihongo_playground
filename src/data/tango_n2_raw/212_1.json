@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 24,
+  "title": "Topic 15 旅行",
+  "page_story": "212_1",
+  "japanese_text": "A：来月、<u>長期</u>休暇取るんだって？\nB：はい。ビザの<u>申請</u>がうまくいったら、オーストラリアでファームステイをしたいと思っていて。\nA：ファームステイ？何それ？\nB：留学みたいなものなんですが、<u>牧場</u>の<u>オーナー</u>の家に<u>宿泊して</u>動物の世話をしたり農作業を手伝ったりしながら英語を勉強するんです。",
+  "english_translation": "A: I hear you're taking a long-term vacation next month. B: Yes. If my visa application is successful, I hope to do a farm stay in Australia. A: A farm stay? What's that? B: It's like studying abroad, but you stay at a farm owner's house and study English while taking care of the animals and helping with the farm work.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1415",
+      "word_number": 1415,
+      "kanji": "長期",
+      "furigana": "ちょうき",
+      "meaning_en": "long term, long period"
+    },
+    {
+      "word_id": "n2_1417",
+      "word_number": 1417,
+      "kanji": "申請[する]",
+      "furigana": "しんせい",
+      "meaning_en": "application, apply"
+    },
+    {
+      "word_id": "n2_1418",
+      "word_number": 1418,
+      "kanji": "牧場",
+      "furigana": "ぼくじょう",
+      "meaning_en": "farm, ranch"
+    },
+    {
+      "word_id": "n2_1419",
+      "word_number": 1419,
+      "kanji": "オーナー",
+      "furigana": "おーなー",
+      "meaning_en": "owner"
+    },
+    {
+      "word_id": "n2_1420",
+      "word_number": 1420,
+      "kanji": "宿泊[する]",
+      "furigana": "しゅくはく",
+      "meaning_en": "accommodation, stay"
+    }
+  ]
+}

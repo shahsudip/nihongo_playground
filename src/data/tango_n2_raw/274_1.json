@@ -1,0 +1,59 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 19 健康",
+  "page_story": "274_1",
+  "japanese_text": "A：最近疲れやすくて、<u>念のため</u>病院で検査を受けたら、<u>肥満</u>が原因だって言われたんだ。\nB：そうなんだ。大変だね。薬を飲んでるの？\nA：ううん、今は<u>サプリ</u>で<u>ビタミン</u>と<u>カルシウム</u>をしっかりとって、お酒は<u>控える</u>ようにしている。\nB：そっか。お酒好きには<u>気の毒な</u>生活だね。",
+  "english_translation": "A: I've been getting tired lately, so I went to the hospital for a checkup, just in case, and they said it's because I'm obese. B: Oh. That's terrible. Are you taking any medicine? A: No, I'm taking proper vitamin and calcium supplements and trying to avoid alcohol. B: I see. That's unfortunate for someone who enjoys a drink.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1903",
+      "word_number": 1903,
+      "kanji": "念のため",
+      "furigana": "ねんのため",
+      "meaning_en": "just in case"
+    },
+    {
+      "word_id": "n2_1904",
+      "word_number": 1904,
+      "kanji": "肥満",
+      "furigana": "ひまん",
+      "meaning_en": "obesity"
+    },
+    {
+      "word_id": "n2_1905",
+      "word_number": 1905,
+      "kanji": "サプリ(メント)",
+      "furigana": "さぷり(めんと)",
+      "meaning_en": "supplement"
+    },
+    {
+      "word_id": "n2_1906",
+      "word_number": 1906,
+      "kanji": "ビタミン",
+      "furigana": "びたみん",
+      "meaning_en": "vitamin"
+    },
+    {
+      "word_id": "n2_1907",
+      "word_number": 1907,
+      "kanji": "カルシウム",
+      "furigana": "かるしうむ",
+      "meaning_en": "calcium"
+    },
+    {
+      "word_id": "n2_1908",
+      "word_number": 1908,
+      "kanji": "控える",
+      "furigana": "ひかえる",
+      "meaning_en": "avoid, limit"
+    },
+    {
+      "word_id": "n2_1909",
+      "word_number": 1909,
+      "kanji": "気の毒な",
+      "furigana": "きのどくな",
+      "meaning_en": "unfortunate"
+    }
+  ]
+}

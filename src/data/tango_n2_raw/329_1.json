@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 19,
+  "title": "Topic 23 環境・科学",
+  "page_story": "329_1",
+  "japanese_text": "A：<u>複写</u>の申請してた論文が、やっと届いたよ。\nB：このデジタル時代に大変だったね。\nA：まったくだよ。今度から<u>真空</u>発生装置を使った実験をするんだけど、まずはこの論文と同じ結果が出るか試すんだ。\nB：あの装置全然使ってないよね。<u>維持</u>費高いのに。\nA：だから使えるか確認から。確認<u>項目</u>いくつあったっけ。",
+  "english_translation": "A: That paper I applied for a copy of finally arrived.\nB: That's rough, in this digital age.\nA: Exactly. I'm going to do an experiment using a vacuum generator, but first I want to see if I can get the same results as in this paper.\nB: You haven't used that apparatus at all, have you? It costs a lot to maintain.\nA: That's why I'll start by confirming it's ready to use. Now, how many items did I have to check?",
+  "annotated_words": [
+    {
+      "word_id": "n2_2324",
+      "word_number": 2324,
+      "kanji": "複写[する]",
+      "furigana": "ふくしゃ",
+      "meaning_en": "duplicate, copy"
+    },
+    {
+      "word_id": "n2_2325",
+      "word_number": 2325,
+      "kanji": "真空",
+      "furigana": "しんくう",
+      "meaning_en": "vacuum"
+    },
+    {
+      "word_id": "n2_2326",
+      "word_number": 2326,
+      "kanji": "維持[する]",
+      "furigana": "いじ",
+      "meaning_en": "maintenance, maintain"
+    },
+    {
+      "word_id": "n2_2327",
+      "word_number": 2327,
+      "kanji": "項目",
+      "furigana": "こうもく",
+      "meaning_en": "item"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 3 買い物",
+  "page_story": "43_1",
+  "japanese_text": "<ruby>感染症<rt>かんせんしょう</rt></ruby>の<ruby>流行<rt>りゅうこう</rt></ruby>は、<ruby>社会<rt>しゃかい</rt></ruby>にさまざまな<ruby>影響<rt>えいきょう</rt></ruby>を<ruby>与<rt>あた</rt></ruby>えている。<ruby>例<rt>たと</rt></ruby>えば、<ruby>外出<rt>がいしゅつ</rt></ruby>が<ruby>制限<rt>せいげん</rt></ruby>されたため、<ruby>旅行関係<rt>りょこうかんけい</rt></ruby>の<u>支出</u>は大きく<ruby>減少<rt>げんしょう</rt></ruby>した。また、<ruby>感染症予防<rt>かんせんしょうよぼう</rt></ruby>のマスク<u>着用</u>により、<u>一気に</u><u>万引き</u>が<ruby>増<rt>ふ</rt></ruby>えた<ruby>店<rt>みせ</rt></ruby>もあるようだ。",
+  "english_translation": "The outbreak of infectious disease is affecting society in various ways. For example, travel-related spending has dropped significantly, due to restrictions on going out. Also, some stores have seen a sudden increase in shoplifting due to the wearing of masks to prevent infectious disease.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0190",
+      "word_number": 190,
+      "kanji": "支出[する]",
+      "furigana": "ししゅつ",
+      "meaning_en": "expenses, spend"
+    },
+    {
+      "word_id": "n2_0191",
+      "word_number": 191,
+      "kanji": "着用[する]",
+      "furigana": "ちゃくよう",
+      "meaning_en": "wearing, wear"
+    },
+    {
+      "word_id": "n2_0192",
+      "word_number": 192,
+      "kanji": "一気に",
+      "furigana": "いっきに",
+      "meaning_en": "suddenly, all at once"
+    },
+    {
+      "word_id": "n2_0193",
+      "word_number": 193,
+      "kanji": "万引き[する]",
+      "furigana": "まんびき",
+      "meaning_en": "shoplifting, shoplift"
+    }
+  ]
+}

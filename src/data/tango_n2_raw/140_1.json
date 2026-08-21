@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 10 スポーツ",
+  "page_story": "140_1",
+  "japanese_text": "A：<u>アマチュア</u>テニスでは、<u>左利き</u>は<u>有力な</u>武器になるんだよ。\nB：そうなの？\nA：うん。<u>右利き</u>プレーヤーにとって、左利きプレーヤーが打つボールは打ち返しにくいからね。だから、<u>弱気に</u>ならなくて大丈夫だよ。",
+  "english_translation": "A: In amateur tennis, being left-handed is a powerful weapon. B: Is that so? A: Yes, because for right-handed players, balls hit by left-handed players are difficult to hit back. So there's no need to be timid.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0847",
+      "word_number": 847,
+      "kanji": "アマ(チュア)",
+      "furigana": "",
+      "meaning_en": "amateur"
+    },
+    {
+      "word_id": "n2_0848",
+      "word_number": 848,
+      "kanji": "左利き",
+      "furigana": "ひだりき",
+      "meaning_en": "left-handedness"
+    },
+    {
+      "word_id": "n2_0849",
+      "word_number": 849,
+      "kanji": "有力な",
+      "furigana": "ゆうりょくな",
+      "meaning_en": "powerful"
+    },
+    {
+      "word_id": "n2_0850",
+      "word_number": 850,
+      "kanji": "右利き",
+      "furigana": "みぎき",
+      "meaning_en": "right-handedness"
+    },
+    {
+      "word_id": "n2_0851",
+      "word_number": 851,
+      "kanji": "弱気な",
+      "furigana": "よわきな",
+      "meaning_en": "faint-hearted, timid"
+    }
+  ]
+}

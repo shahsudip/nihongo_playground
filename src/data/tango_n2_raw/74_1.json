@@ -1,0 +1,66 @@
+{
+  "title": "Topic 5 テクノロジー",
+  "audio_id": "78",
+  "japanese_text": "A：期末試験の<u>採点</u>結果を<u>リスト</u>にしたんだけど、ファイルが見つからなくて…。\nB：保存せずに終了したとか？\nA：そうかも…また<u>作成する</u>しかないかな。\nB：自動保存をオンにしておくといいよ。そうすれば、<u>改行</u>でも<u>挿入</u>でも<u>削除</u>でも、<u>更新する</u>たびに<u>勝手に</u>保存されるよ。",
+  "page_story": "74_1",
+  "english_translation": "A: I made a list of the final exam scores, but I can't find the file... B: Did you exit without saving it or something? A: Maybe... I'll have to create it again. B: You should turn on auto-save. That way, every time you update, whether it's a line break, insertion, or deletion, it will save automatically.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0389",
+      "word_number": 389,
+      "kanji": "採点[する]",
+      "furigana": "さいてん",
+      "meaning_en": "score, grade"
+    },
+    {
+      "word_id": "n2_0390",
+      "word_number": 390,
+      "kanji": "リスト",
+      "furigana": "リスト",
+      "meaning_en": "list"
+    },
+    {
+      "word_id": "n2_0391",
+      "word_number": 391,
+      "kanji": "作成[する]",
+      "furigana": "さくせい",
+      "meaning_en": "creation, prepare"
+    },
+    {
+      "word_id": "n2_0392",
+      "word_number": 392,
+      "kanji": "改行[する]",
+      "furigana": "かいぎょう",
+      "meaning_en": "line break, create line break"
+    },
+    {
+      "word_id": "n2_0393",
+      "word_number": 393,
+      "kanji": "挿入[する]",
+      "furigana": "そうにゅう",
+      "meaning_en": "insertion, insert"
+    },
+    {
+      "word_id": "n2_0394",
+      "word_number": 394,
+      "kanji": "削除[する]",
+      "furigana": "さくじょ",
+      "meaning_en": "deletion, delete"
+    },
+    {
+      "word_id": "n2_0395",
+      "word_number": 395,
+      "kanji": "更新[する]",
+      "furigana": "こうしん",
+      "meaning_en": "update, renew"
+    },
+    {
+      "word_id": "n2_0396",
+      "word_number": 396,
+      "kanji": "勝手な",
+      "furigana": "かってな",
+      "meaning_en": "automatic, selfish, for oneself"
+    }
+  ],
+  "is_story": true
+}

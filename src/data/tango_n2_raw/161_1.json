@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 12 住",
+  "page_story": "161_1",
+  "japanese_text": "A：ねえ、<u>蛇口</u>から水が<u>漏れて</u>る。\nB：ここは寒い地域だから、凍らないようにわざと水を出してるんだ。<u>あと</u>、<u>下水</u>に続く<u>パイプ</u>の中で水が凍ることもあるんだよ。",
+  "english_translation": "A: Hey, water is leaking from the faucet. B: It's cold around here, so I let the water out so it doesn't freeze. Also, sometimes water freezes in the pipes leading to the sewers.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1018",
+      "word_number": 1018,
+      "kanji": "蛇口",
+      "furigana": "じゃぐち",
+      "meaning_en": "faucet"
+    },
+    {
+      "word_id": "n2_1019",
+      "word_number": 1019,
+      "kanji": "漏れる",
+      "furigana": "もれる",
+      "meaning_en": "leak"
+    },
+    {
+      "word_id": "n2_1020",
+      "word_number": 1020,
+      "kanji": "漏らす",
+      "furigana": "もらす",
+      "meaning_en": "discharge"
+    },
+    {
+      "word_id": "n2_1021",
+      "word_number": 1021,
+      "kanji": "あと",
+      "furigana": "",
+      "meaning_en": "also"
+    },
+    {
+      "word_id": "n2_1022",
+      "word_number": 1022,
+      "kanji": "下水",
+      "furigana": "げすい",
+      "meaning_en": "sewer, wastewater"
+    },
+    {
+      "word_id": "n2_1023",
+      "word_number": 1023,
+      "kanji": "パイプ",
+      "furigana": "",
+      "meaning_en": "pipe"
+    }
+  ]
+}

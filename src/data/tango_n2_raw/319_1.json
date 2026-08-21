@@ -1,0 +1,66 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 23 環境・科学",
+  "page_story": "319_1",
+  "japanese_text": "A：あれ、<u>異常な</u>値が出た。100未満の値になるはずなのに。<u>引用</u>した<u>文献</u>の値が<u>異なって</u>るのかなあ。\nB：数式を確認してみよう。…ほら、この<u>イコール</u>の後の値が<u>誤って</u>るよ。\nA：あ、ほんとだ。よし、これでもう一度やってみよう。\nB：よろしくね。結果は小数点第１位まで<u>四捨五入しな</u>いといけないよ。",
+  "english_translation": "A: Hey, I got an abnormal value. It should be under 100. I wonder if this differs from the values in the cited references.\nB: Let's check the formula. Oh, I see. The value after the equal sign here is wrong.\nA: Oh, really? Okay, I'll try it again.\nB: I'll leave it to you then. You need to round off the result to the first decimal place.",
+  "annotated_words": [
+    {
+      "word_id": "n2_2246",
+      "word_number": 2246,
+      "kanji": "異常な",
+      "furigana": "いじょうな",
+      "meaning_en": "unusual, abnormal"
+    },
+    {
+      "word_id": "n2_2247",
+      "word_number": 2247,
+      "kanji": "引用[する]",
+      "furigana": "いんよう",
+      "meaning_en": "citation, quote"
+    },
+    {
+      "word_id": "n2_2248",
+      "word_number": 2248,
+      "kanji": "文献",
+      "furigana": "ぶんけん",
+      "meaning_en": "reference, literature"
+    },
+    {
+      "word_id": "n2_2249",
+      "word_number": 2249,
+      "kanji": "異なる",
+      "furigana": "ことなる",
+      "meaning_en": "differ"
+    },
+    {
+      "word_id": "n2_2250",
+      "word_number": 2250,
+      "kanji": "イコール",
+      "furigana": "いこーる",
+      "meaning_en": "equal sign"
+    },
+    {
+      "word_id": "n2_2251",
+      "word_number": 2251,
+      "kanji": "誤る",
+      "furigana": "あやまる",
+      "meaning_en": "be wrong"
+    },
+    {
+      "word_id": "n2_2252",
+      "word_number": 2252,
+      "kanji": "誤り",
+      "furigana": "あやまり",
+      "meaning_en": "mistake, error"
+    },
+    {
+      "word_id": "n2_2253",
+      "word_number": 2253,
+      "kanji": "四捨五入[する]",
+      "furigana": "ししゃごにゅう",
+      "meaning_en": "rounding, round off, round up"
+    }
+  ]
+}

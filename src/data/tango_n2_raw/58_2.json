@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 4 ファッション",
+  "page_story": "58_2",
+  "japanese_text": "A：これ<u>試着して</u>みない？ 似合うと思う。\nB：<u>サイズ</u>いくつ？\nA：えっと、７<u>号</u>だね。\nB：無理無理！ 私いつも11 号だよ。<u>ウエスト</u>が入らないよ。",
+  "english_translation": "A: Wanna try this on? I think it'd suit you. B: What size is it? A: Let's see, it's a size 7. B: No way! I'm usually a size 11. I'll never fit into the waist.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0287",
+      "word_number": 287,
+      "kanji": "試着[する]",
+      "furigana": "しちゃく",
+      "meaning_en": "fitting, try on (clothing)"
+    },
+    {
+      "word_id": "n2_0288",
+      "word_number": 288,
+      "kanji": "サイズ",
+      "furigana": "",
+      "meaning_en": "size"
+    },
+    {
+      "word_id": "n2_0289",
+      "word_number": 289,
+      "kanji": "～号",
+      "furigana": "ごう",
+      "meaning_en": "size ~"
+    },
+    {
+      "word_id": "n2_0290",
+      "word_number": 290,
+      "kanji": "ウエスト",
+      "furigana": "",
+      "meaning_en": "waist"
+    }
+  ]
+}

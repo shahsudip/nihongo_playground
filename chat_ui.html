@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Conversation UI</title>
+  <style>
+    :root {
+      --primary: #007aff;
+      --bg-color: #f4f4f9;
+      --chat-bg: #ffffff;
+      --text-dark: #1a1a1a;
+      --text-light: #ffffff;
+      --gray-light: #e9ecef;
+      --gray-dark: #6c757d;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .app-container {
+      display: flex;
+      width: 100%;
+      max-width: 800px;
+      height: 600px;
+      background: var(--chat-bg);
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Sidebar for Conversation List */
+    .sidebar {
+      width: 250px;
+      background: #f8f9fa;
+      border-right: 1px solid #e2e8f0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar-header {
+      padding: 20px;
+      font-size: 18px;
+      font-weight: 600;
+      border-bottom: 1px solid #e2e8f0;
+      color: var(--text-dark);
+    }
+
+    .conversation-list {
+      flex: 1;
+      overflow-y: auto;
+      list-style: none;
+    }
+
+    .conversation-item {
+      padding: 15px 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: background 0.2s ease;
+      border-bottom: 1px solid #f1f3f5;
+    }
+
+    .conversation-item:hover {
+      background: #e9ecef;
+    }
+
+    .conversation-item.active {
+      background: #e2e8f0;
+    }
+
+    .conv-icon {
+      font-size: 24px;
+      background: #ffffff;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .conv-title {
+      font-weight: 500;
+      color: var(--text-dark);
+      font-size: 15px;
+    }
+
+    /* Chat Area */
+    .chat-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .chat-header {
+      padding: 15px 20px;
+      border-bottom: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .chat-header-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .active-avatar {
+      font-size: 28px;
+    }
+
+    .active-name {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    .auto-play-btn {
+      padding: 8px 16px;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.2s;
+    }
+
+    .auto-play-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .auto-play-btn:disabled {
+      background-color: #a0c4ff;
+      cursor: not-allowed;
+    }
+
+    .message-feed {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      scroll-behavior: smooth;
+    }
+
+    .message-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: slideIn 0.4s forwards ease-out;
+    }
+
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .message-row.sent {
+      flex-direction: row-reverse;
+    }
+
+    .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--gray-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .message-content {
+      display: flex;
+      flex-direction: column;
+      max-width: 70%;
+    }
+
+    .sender-name {
+      font-size: 12px;
+      color: var(--gray-dark);
+      margin-bottom: 4px;
+      margin-left: 4px;
+    }
+
+    .message-row.sent .sender-name {
+      text-align: right;
+      margin-right: 4px;
+      margin-left: 0;
+    }
+
+    .message-bubble {
+      padding: 12px 16px;
+      border-radius: 18px;
+      background-color: var(--gray-light);
+      color: var(--text-dark);
+      font-size: 15px;
+      line-height: 1.4;
+      position: relative;
+    }
+
+    .message-row.sent .message-bubble {
+      background-color: var(--primary);
+      color: var(--text-light);
+    }
+
+    /* Typing indicator */
+    .typing-indicator {
+      display: none;
+      align-items: center;
+      gap: 4px;
+      padding: 12px 16px;
+      background: var(--gray-light);
+      border-radius: 18px;
+      width: fit-content;
+      margin-top: 8px;
+    }
+
+    .typing-indicator.active {
+      display: flex;
+      animation: fadeIn 0.3s;
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      background: #8e8e93;
+      border-radius: 50%;
+      animation: bounce 1.4s infinite ease-in-out both;
+    }
+
+    .dot:nth-child(1) { animation-delay: -0.32s; }
+    .dot:nth-child(2) { animation-delay: -0.16s; }
+
+    @keyframes bounce {
+      0%, 80%, 100% { transform: scale(0); }
+      40% { transform: scale(1); }
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-header">Practice Scenarios</div>
+      <ul class="conversation-list" id="conv-list">
+        <!-- Generated dynamically -->
+      </ul>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat-area">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="active-avatar" id="active-avatar">💬</div>
+          <div class="active-name" id="active-name">Select a conversation</div>
+        </div>
+        <button class="auto-play-btn" id="auto-play-btn" disabled>
+          ▶ Auto Play
+        </button>
+      </div>
+
+      <div class="message-feed" id="message-feed">
+        <!-- Messages appear here -->
+        <div style="text-align: center; color: #6c757d; margin-top: 50px;" id="empty-state">
+          Select a conversation from the left to start practicing.
+        </div>
+      </div>
+      
+      <div style="padding: 0 20px;">
+         <div class="typing-indicator" id="typing-indicator">
+           <div class="dot"></div>
+           <div class="dot"></div>
+           <div class="dot"></div>
+         </div>
+      </div>
+      
+      <!-- Input area just for visuals right now -->
+      <div style="padding: 15px 20px; border-top: 1px solid #e2e8f0; background: #fff;">
+        <div style="display: flex; gap: 10px;">
+          <input type="text" placeholder="Type a message..." disabled style="flex: 1; padding: 10px 15px; border: 1px solid #cbd5e1; border-radius: 20px; background: #f8f9fa;">
+          <button disabled style="padding: 10px 20px; background: #cbd5e1; color: white; border: none; border-radius: 20px;">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Name to Emoji matcher (simple heuristic)
+    function getEmojiForName(name) {
+      const lower = name.toLowerCase();
+      if (lower.includes('john') || lower.includes('bob') || lower.includes('taro')) return '👨🏻‍💼';
+      if (lower.includes('alice') || lower.includes('mary') || lower.includes('hana')) return '👩🏻‍💼';
+      if (lower.includes('grandpa')) return '👴🏼';
+      if (lower.includes('doctor')) return '👨🏻‍⚕️';
+      if (lower.includes('teacher')) return '👩🏻‍🏫';
+      if (lower.includes('robot')) return '🤖';
+      if (lower.includes('alien')) return '👽';
+      if (lower.includes('you') || lower.includes('me')) return '🧑🏻';
+      return '👤'; // default fallback
+    }
+
+    // Mock Data
+    const conversations = [
+      {
+        id: 1,
+        title: "Coffee Shop Order",
+        icon: "☕",
+        messages: [
+          { sender: "Barista", text: "Hi there! What can I get for you today?" },
+          { sender: "You", text: "I'd like a medium iced latte, please." },
+          { sender: "Barista", text: "Sure thing. Would you like any flavor syrup in that?" },
+          { sender: "You", text: "Just a pump of vanilla, please." },
+          { sender: "Barista", text: "Perfect. That will be $4.50. It'll be right out!" }
+        ]
+      },
+      {
+        id: 2,
+        title: "Meeting Doctor",
+        icon: "🏥",
+        messages: [
+          { sender: "Doctor Smith", text: "Hello! How are you feeling today?" },
+          { sender: "You", text: "Not great, I've had a headache for two days." },
+          { sender: "Doctor Smith", text: "I see. Are you experiencing any other symptoms?" },
+          { sender: "You", text: "Just feeling a bit tired." },
+          { sender: "Doctor Smith", text: "Let's check your blood pressure first, then we can discuss some options." }
+        ]
+      },
+      {
+        id: 3,
+        title: "Tech Support",
+        icon: "💻",
+        messages: [
+          { sender: "TechBot", text: "Hello! I am your automated assistant. How can I help?" },
+          { sender: "You", text: "My internet is completely down." },
+          { sender: "TechBot", text: "I'm sorry to hear that. Have you tried restarting your router?" },
+          { sender: "You", text: "Yes, I restarted it 10 minutes ago, still red lights." },
+          { sender: "TechBot", text: "Understood. Let me connect you to a human agent right away." }
+        ]
+      }
+    ];
+
+    const convListEl = document.getElementById('conv-list');
+    const messageFeed = document.getElementById('message-feed');
+    const autoPlayBtn = document.getElementById('auto-play-btn');
+    const activeAvatar = document.getElementById('active-avatar');
+    const activeName = document.getElementById('active-name');
+    const typingIndicator = document.getElementById('typing-indicator');
+    const emptyState = document.getElementById('empty-state');
+
+    let currentConversation = null;
+    let autoPlayTimeout = null;
+
+    // Render Conversation List
+    function renderList() {
+      convListEl.innerHTML = '';
+      conversations.forEach(conv => {
+        const li = document.createElement('li');
+        li.className = 'conversation-item';
+        li.innerHTML = `
+          <div class="conv-icon">${conv.icon}</div>
+          <div class="conv-title">${conv.title}</div>
+        `;
+        li.onclick = () => selectConversation(conv, li);
+        convListEl.appendChild(li);
+      });
+    }
+
+    function selectConversation(conv, liElement) {
+      // Update UI
+      document.querySelectorAll('.conversation-item').forEach(el => el.classList.remove('active'));
+      if(liElement) liElement.classList.add('active');
+      
+      currentConversation = conv;
+      activeAvatar.textContent = conv.icon;
+      activeName.textContent = conv.title;
+      autoPlayBtn.disabled = false;
+      autoPlayBtn.textContent = "▶ Auto Play";
+      
+      // Clear feed
+      if(emptyState) emptyState.style.display = 'none';
+      messageFeed.innerHTML = '';
+      clearTimeout(autoPlayTimeout);
+      typingIndicator.classList.remove('active');
+    }
+
+    function createMessageNode(msg) {
+      const isYou = msg.sender.toLowerCase() === 'you';
+      const row = document.createElement('div');
+      row.className = `message-row ${isYou ? 'sent' : 'received'}`;
+      
+      const emoji = getEmojiForName(msg.sender);
+
+      row.innerHTML = `
+        <div class="avatar">${emoji}</div>
+        <div class="message-content">
+          <div class="sender-name">${msg.sender}</div>
+          <div class="message-bubble">${msg.text}</div>
+        </div>
+      `;
+      return row;
+    }
+
+    async function startAutoPlay() {
+      if (!currentConversation) return;
+      
+      messageFeed.innerHTML = ''; // reset
+      autoPlayBtn.disabled = true;
+      autoPlayBtn.textContent = "Playing...";
+
+      for (let i = 0; i < currentConversation.messages.length; i++) {
+        const msg = currentConversation.messages[i];
+        
+        // Show typing indicator
+        typingIndicator.classList.add('active');
+        messageFeed.scrollTop = messageFeed.scrollHeight; // Auto-scroll
+        
+        // Wait simulated typing time
+        await new Promise(resolve => setTimeout(resolve, 1000 + Math.random() * 1000));
+        
+        typingIndicator.classList.remove('active');
+        
+        // Add message
+        const node = createMessageNode(msg);
+        messageFeed.appendChild(node);
+        messageFeed.scrollTop = messageFeed.scrollHeight; // Auto-scroll
+        
+        // Wait a bit before next message
+        await new Promise(resolve => setTimeout(resolve, 800));
+      }
+      
+      autoPlayBtn.disabled = false;
+      autoPlayBtn.textContent = "↺ Replay";
+    }
+
+    autoPlayBtn.addEventListener('click', startAutoPlay);
+
+    // Init
+    renderList();
+  </script>
+</body>
+</html>

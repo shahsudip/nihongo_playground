@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 4 ファッション",
+  "page_story": "57_2",
+  "japanese_text": "A：あれ？ ばっさり切ったね。<u>イメチェン</u>？\nB：ははは。実は、ヘアドネーションしたんだ。\nA：病気で髪が<u>抜け</u>てしまった子どもたちのための、ウィッグになるんだっけ。\nB：そう。できるだけきれいな髪でいるために、<u>巻い</u>たり、<u>染め</u>たりするのも我慢してたんだ。",
+  "english_translation": "A: Whoa! You've had your hair cut so short. Changing your image? B: Ha ha ha. Actually, I donated my hair. A: You mean, to make wigs for children who have lost their hair due to illness? B: Yes. I had to stop myself curling or dyeing my hair to keep it as nice as possible.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0279",
+      "word_number": 279,
+      "kanji": "イメチェン／イメージチェンジ[する]",
+      "furigana": "",
+      "meaning_en": "change of image, change one's image"
+    },
+    {
+      "word_id": "n2_0280",
+      "word_number": 280,
+      "kanji": "抜ける",
+      "furigana": "ぬける",
+      "meaning_en": "fall out, come out"
+    },
+    {
+      "word_id": "n2_0281",
+      "word_number": 281,
+      "kanji": "巻く",
+      "furigana": "まく",
+      "meaning_en": "curl, roll"
+    },
+    {
+      "word_id": "n2_0282",
+      "word_number": 282,
+      "kanji": "染める",
+      "furigana": "そめる",
+      "meaning_en": "dye (something)"
+    }
+  ]
+}

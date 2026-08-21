@@ -1,0 +1,38 @@
+{
+  "title": "Topic 5 テクノロジー",
+  "audio_id": "77",
+  "japanese_text": "A：もし<u>ハードウェア</u>に不具合があった場合、<u>一旦</u>店舗にお持ちください。<u>分解</u>等されますと、<u>保証</u>が受けられなくなります。\nB：はい、分かりました。",
+  "page_story": "73_1",
+  "english_translation": "A: If you have any hardware problems, just bring it back to the store for the moment. If you disassemble it, etc., you will lose your warranty. B: Yes, I understand.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0385",
+      "word_number": 385,
+      "kanji": "ハードウェア",
+      "furigana": "ハードウェア",
+      "meaning_en": "hardware"
+    },
+    {
+      "word_id": "n2_0386",
+      "word_number": 386,
+      "kanji": "一旦",
+      "furigana": "いったん",
+      "meaning_en": "once, for now, for the moment"
+    },
+    {
+      "word_id": "n2_0387",
+      "word_number": 387,
+      "kanji": "分解[する]",
+      "furigana": "ぶんかい",
+      "meaning_en": "disassembly, disassemble"
+    },
+    {
+      "word_id": "n2_0388",
+      "word_number": 388,
+      "kanji": "保証[する]",
+      "furigana": "ほしょう",
+      "meaning_en": "warranty, guarantee"
+    }
+  ],
+  "is_story": true
+}

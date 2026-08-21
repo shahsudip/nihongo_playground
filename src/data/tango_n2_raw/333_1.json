@@ -1,0 +1,59 @@
+{
+  "is_story": true,
+  "story_number": 24,
+  "title": "Topic 23 環境・科学",
+  "page_story": "333_1",
+  "japanese_text": "ある液体が<u>酸性</u>か<u>アルカリ性</u>かを見分けるのに、<u>電流</u>を使うのは賢い方法とは言えない。どちらの液体も電流を通すからだ。<u>したがって</u>、ｐＨ試験紙を用いて、試験紙の色がどの色見本と<u>一致する</u>か調べるのが有効である。<u>前者</u>であれば赤色に、<u>後者</u>なら青色に近くなるはずである。",
+  "english_translation": "Using an electric current to tell whether a liquid is acidic or alkaline is not a smart way to do it. This is because both kinds of liquid are conductive. Therefore, it is more effective to use a pH test paper and match the test strip with the color sample. If it is the former, it should appear red, and if the latter, it should be closer to blue.",
+  "annotated_words": [
+    {
+      "word_id": "n2_2348",
+      "word_number": 2348,
+      "kanji": "酸性",
+      "furigana": "さんせい",
+      "meaning_en": "acidity"
+    },
+    {
+      "word_id": "n2_2349",
+      "word_number": 2349,
+      "kanji": "アルカリ性",
+      "furigana": "あるかりせい",
+      "meaning_en": "alkalinity"
+    },
+    {
+      "word_id": "n2_2350",
+      "word_number": 2350,
+      "kanji": "電流",
+      "furigana": "でんりゅう",
+      "meaning_en": "electric current"
+    },
+    {
+      "word_id": "n2_2351",
+      "word_number": 2351,
+      "kanji": "したがって",
+      "furigana": "したがって",
+      "meaning_en": "therefore, accordingly"
+    },
+    {
+      "word_id": "n2_2352",
+      "word_number": 2352,
+      "kanji": "一致[する]",
+      "furigana": "いっち",
+      "meaning_en": "consistency, match"
+    },
+    {
+      "word_id": "n2_2353",
+      "word_number": 2353,
+      "kanji": "前者",
+      "furigana": "ぜんしゃ",
+      "meaning_en": "former"
+    },
+    {
+      "word_id": "n2_2354",
+      "word_number": 2354,
+      "kanji": "後者",
+      "furigana": "こうしゃ",
+      "meaning_en": "latter"
+    }
+  ]
+}

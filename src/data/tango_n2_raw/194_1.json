@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 20,
+  "title": "Topic 14 天気",
+  "page_story": "194_1",
+  "japanese_text": "A：<u>災害</u> <u>救助</u>マニュアルの<u>見本</u>が届いたので、チェックをお願いします。\nB：ああ、分かりました。このマニュアルが完成すれば、<u>緊急</u>時の対応もスムーズにできるようになりますね。",
+  "english_translation": "A: A sample of the Disaster Relief Manual has arrived, and I'd like you to check it. B: Understood. Once the manual is completed, we'll be able to respond more smoothly to emergencies.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1287",
+      "word_number": 1287,
+      "kanji": "災害",
+      "furigana": "さいがい",
+      "meaning_en": "disaster"
+    },
+    {
+      "word_id": "n2_1288",
+      "word_number": 1288,
+      "kanji": "救助[する]",
+      "furigana": "きゅうじょ",
+      "meaning_en": "relief, relieve"
+    },
+    {
+      "word_id": "n2_1289",
+      "word_number": 1289,
+      "kanji": "見本",
+      "furigana": "みほん",
+      "meaning_en": "sample"
+    },
+    {
+      "word_id": "n2_1290",
+      "word_number": 1290,
+      "kanji": "緊急",
+      "furigana": "きんきゅう",
+      "meaning_en": "emergency"
+    }
+  ]
+}

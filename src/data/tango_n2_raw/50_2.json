@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 11,
+  "title": "Topic 3 買い物",
+  "page_story": "50_2",
+  "japanese_text": "A：あ、パソコン買ったの？\nB：欲しかったモデルがたまたま売ってて、<u>つい</u>買っちゃった。\nA：最新モデルだよね。高くなかった？\nB：展示品だったから<u>値引き</u>もされて、<u>手頃な</u>価格だったよ。<u>不要な</u>パソコンは買い取ってもらって、<u>おまけ</u>で画面に貼るフィルムももらっちゃった。<u>品質</u>もいいし、大満足！",
+  "english_translation": "A: Oh, did you buy a computer? B: The model I wanted was on sale, so I just bought it on impulse. A: It's the latest model, right? Wasn't it expensive? B: It was a display model, so I got a discount and it was a reasonable price. I exchanged it for a computer I didn't need, and got some protective film for the screen as a free gift. The quality is good, and I'm very satisfied!",
+  "annotated_words": [
+    {
+      "word_id": "n2_0241",
+      "word_number": 241,
+      "kanji": "つい",
+      "furigana": "",
+      "meaning_en": "inadvertently, on impulse"
+    },
+    {
+      "word_id": "n2_0242",
+      "word_number": 242,
+      "kanji": "値引き[する]",
+      "furigana": "ねびき",
+      "meaning_en": "discount, discount (something)"
+    },
+    {
+      "word_id": "n2_0243",
+      "word_number": 243,
+      "kanji": "手頃な",
+      "furigana": "てごろな",
+      "meaning_en": "affordable, reasonable (price)"
+    },
+    {
+      "word_id": "n2_0244",
+      "word_number": 244,
+      "kanji": "不要な",
+      "furigana": "ふような",
+      "meaning_en": "not needed"
+    },
+    {
+      "word_id": "n2_0245",
+      "word_number": 245,
+      "kanji": "おまけ[する]",
+      "furigana": "おまけ",
+      "meaning_en": "gift, incentive, offer as a gift"
+    },
+    {
+      "word_id": "n2_0246",
+      "word_number": 246,
+      "kanji": "品質",
+      "furigana": "ひんしつ",
+      "meaning_en": "quality"
+    }
+  ]
+}

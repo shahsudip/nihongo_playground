@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 12 住",
+  "page_story": "162_2",
+  "japanese_text": "A：このテーブル傾いてない？\nB：あ、分かっちゃった？ 自分で作ったんだけど、板と脚を<u>垂直に</u> <u>固定する</u>のが難しくて…。\nA：なるほど。一度ばらばらにして、脚の長さを<u>統一した</u>方がいいかもね。板が<u>水平</u>になっているかは、スマホアプリで簡単に調べられるよ。",
+  "english_translation": "A: Is this table tilted? B: Oh, did you notice? I made it myself, but I had trouble fixing the tabletop and legs in place perpendicularly ... A: I see. Maybe you should take it apart and make the legs uniform in length. You can easily check if the tabletop is level using a smartphone app.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1028",
+      "word_number": 1028,
+      "kanji": "垂直",
+      "furigana": "すいちょく",
+      "meaning_en": "perpendicularity, verticality"
+    },
+    {
+      "word_id": "n2_1029",
+      "word_number": 1029,
+      "kanji": "平行",
+      "furigana": "へいこう",
+      "meaning_en": "parallel"
+    },
+    {
+      "word_id": "n2_1030",
+      "word_number": 1030,
+      "kanji": "固定[する]",
+      "furigana": "こてい",
+      "meaning_en": "immobilization, fix in place"
+    },
+    {
+      "word_id": "n2_1031",
+      "word_number": 1031,
+      "kanji": "統一[する]",
+      "furigana": "とういつ",
+      "meaning_en": "standardization, unify, make uniform"
+    },
+    {
+      "word_id": "n2_1032",
+      "word_number": 1032,
+      "kanji": "水平",
+      "furigana": "すいへい",
+      "meaning_en": "level"
+    },
+    {
+      "word_id": "n2_1033",
+      "word_number": 1033,
+      "kanji": "水平線",
+      "furigana": "すいへいせん",
+      "meaning_en": "horizon, horizontal line"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 3 買い物",
+  "page_story": "46_2",
+  "japanese_text": "この商品はとても小さいので<u>小銭</u>入れに見えるが、実は<u>硬貨</u>だけでなく<u>紙幣</u>も入る。<u>泡</u>をつけて丁寧に洗えば、とてもきれいになるところもお気に入りだ。",
+  "english_translation": "This product is so tiny it looks like a coin purse, but it actually holds banknotes as well as coins. It's also popular because it cleans up nicely when lathered up and washed carefully.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0213",
+      "word_number": 213,
+      "kanji": "小銭",
+      "furigana": "こぜに",
+      "meaning_en": "coin"
+    },
+    {
+      "word_id": "n2_0214",
+      "word_number": 214,
+      "kanji": "硬貨",
+      "furigana": "こうか",
+      "meaning_en": "coin, hard currency"
+    },
+    {
+      "word_id": "n2_0215",
+      "word_number": 215,
+      "kanji": "紙幣",
+      "furigana": "しへい",
+      "meaning_en": "banknote"
+    },
+    {
+      "word_id": "n2_0216",
+      "word_number": 216,
+      "kanji": "泡",
+      "furigana": "あわ",
+      "meaning_en": "foam, lather"
+    }
+  ]
+}

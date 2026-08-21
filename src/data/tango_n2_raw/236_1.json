@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 17 仕事",
+  "page_story": "236_1",
+  "japanese_text": "A：コンビニのバイトはどう？\nB：それが、店長に<u>サービス残業</u>を<u>要求されたり</u>、前日に突然<u>シフト</u>に入ってくれって言われたりする。\nA：えー、そんな人なの？\nB：しかも「仕事遅いね」とか、<u>嫌味</u>ばかり言ってくるし、それでバイトを<u>辞めた</u>人もいて、<u>やばい</u>店に来ちゃったなと思った。",
+  "english_translation": "A: How's your part-time job at the convenience store? B: Well, the manager demands that I work overtime without pay, and suddenly asks me to work shifts the day before. A: Oh, is that what he's like? B: And he's always saying nasty things like, \"You're a slow worker.\" Some employees quit because of it, and I realized I'd come to work at an awful store.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1593",
+      "word_number": 1593,
+      "kanji": "サービス残業",
+      "furigana": "さーびすざんぎょう",
+      "meaning_en": "overtime work without pay"
+    },
+    {
+      "word_id": "n2_1594",
+      "word_number": 1594,
+      "kanji": "要求[する]",
+      "furigana": "ようきゅう",
+      "meaning_en": "request, demand"
+    },
+    {
+      "word_id": "n2_1595",
+      "word_number": 1595,
+      "kanji": "シフト",
+      "furigana": "しふと",
+      "meaning_en": "shift"
+    },
+    {
+      "word_id": "n2_1596",
+      "word_number": 1596,
+      "kanji": "嫌味",
+      "furigana": "いやみ",
+      "meaning_en": "nasty, sarcastic"
+    },
+    {
+      "word_id": "n2_1597",
+      "word_number": 1597,
+      "kanji": "辞める",
+      "furigana": "やめる",
+      "meaning_en": "quit"
+    },
+    {
+      "word_id": "n2_1598",
+      "word_number": 1598,
+      "kanji": "やばい",
+      "furigana": "",
+      "meaning_en": "awful, terrible"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 16,
+  "title": "Topic 14 天気",
+  "page_story": "192_1",
+  "japanese_text": "<u>杉</u>の花粉は<u>例年</u>、２月半ばから飛び始める。<u>晴天</u>の日は、空を<u>見上げる</u>と、目に見えるほど花粉が多い日もある。",
+  "english_translation": "Every year, cedar pollen usually begins to fly around in mid-February. In sunny weather, when you look up at the sky, some days there is so much pollen you can see it.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1274",
+      "word_number": 1274,
+      "kanji": "杉",
+      "furigana": "すぎ",
+      "meaning_en": "cedar"
+    },
+    {
+      "word_id": "n2_1275",
+      "word_number": 1275,
+      "kanji": "例年",
+      "furigana": "れいねん",
+      "meaning_en": "every year, usual year"
+    },
+    {
+      "word_id": "n2_1276",
+      "word_number": 1276,
+      "kanji": "晴天",
+      "furigana": "せいてん",
+      "meaning_en": "sunny weather"
+    },
+    {
+      "word_id": "n2_1277",
+      "word_number": 1277,
+      "kanji": "見上げる",
+      "furigana": "みあげる",
+      "meaning_en": "look up"
+    }
+  ]
+}

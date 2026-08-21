@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 4 ファッション",
+  "page_story": "55_1",
+  "japanese_text": "A：見て。<u>たんす</u>を整理したら、いらない服がこんなに出てきた。\nB：駅前のデパートの<u>婦人</u>服売り場に、<u>衣料</u>品を回収する箱があったから持っていったら？ アフリカに送るんだって。\nA：うーん。でも最近アフリカでは、海外から届く服が余ってごみになることもあるみたいで、<u>かえって</u>問題になってるみたいだよ。",
+  "english_translation": "A: Hey, look. I went through my closet and found so many clothes I don't need. B: There's a clothing collection box in the women's clothing section at the department store by the station. Why don't you take them there? They're going to send them to Africa. A: Hmmm. But recently, surplus clothing sent to Africa from overseas has been ending up as trash, and on the contrary, it actually seems to be causing problems.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0265",
+      "word_number": 265,
+      "kanji": "たんす",
+      "furigana": "",
+      "meaning_en": "chest of drawers, closet"
+    },
+    {
+      "word_id": "n2_0266",
+      "word_number": 266,
+      "kanji": "婦人",
+      "furigana": "ふじん",
+      "meaning_en": "woman, lady"
+    },
+    {
+      "word_id": "n2_0267",
+      "word_number": 267,
+      "kanji": "衣料",
+      "furigana": "いりょう",
+      "meaning_en": "clothing"
+    },
+    {
+      "word_id": "n2_0268",
+      "word_number": 268,
+      "kanji": "かえって",
+      "furigana": "",
+      "meaning_en": "conversely, on the contrary"
+    }
+  ]
+}

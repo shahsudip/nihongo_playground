@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 7,
+  "title": "Topic 19 健康",
+  "page_story": "270_2",
+  "japanese_text": "A：また交通事故のニュースだね。\nB：そうだね。車同士の衝突で、お母さんは頭を強く打って<u>重体</u>、お父さんは命に問題はないけれど<u>重症</u>、子どもは軽いけがで<u>軽傷</u>か…。お母さん、なんとか助かってほしいね。\nA：うん。事故のニュースを見る<u>たびに</u>、心が<u>痛む</u>よ。",
+  "english_translation": "A: Another traffic accident in the news. B: Yeah. In a crash between two cars, the mother bumped her head hard and is in critical condition, the father's life isn't in danger but he's in serious condition, and the child got away with minor injuries.... I just hope the mother makes it. A: Yeah. It breaks my heart every time I see an accident on the news.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1876",
+      "word_number": 1876,
+      "kanji": "重体",
+      "furigana": "じゅうたい",
+      "meaning_en": "critical condition"
+    },
+    {
+      "word_id": "n2_1877",
+      "word_number": 1877,
+      "kanji": "重症",
+      "furigana": "じゅうしょう",
+      "meaning_en": "serious condition"
+    },
+    {
+      "word_id": "n2_1878",
+      "word_number": 1878,
+      "kanji": "軽傷",
+      "furigana": "けいしょう",
+      "meaning_en": "minor injuries"
+    },
+    {
+      "word_id": "n2_1879",
+      "word_number": 1879,
+      "kanji": "たび",
+      "furigana": "",
+      "meaning_en": "(every) time, instance"
+    },
+    {
+      "word_id": "n2_1880",
+      "word_number": 1880,
+      "kanji": "痛む",
+      "furigana": "いたむ",
+      "meaning_en": "ache, hurt"
+    }
+  ]
+}

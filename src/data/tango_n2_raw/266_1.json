@@ -1,0 +1,59 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 19 健康",
+  "page_story": "266_1",
+  "japanese_text": "A：この前<u>血圧</u>を<u>測定したら</u>、ちょっと高かったんだよ。\nB：そうなんだ。<u>水分</u>を取ったり、運動したりするのが大事らしいね。\nA：うん。やってみた。でも、なかなか下がらなくて、今は<u>血管</u>を広げる薬を<u>服用して</u>るんだ。この薬を飲むと、<u>副作用</u>で少し<u>目まい</u>がするんだけど。",
+  "english_translation": "A: When I checked my blood pressure the other day, it was a little high. B: Really? I guess getting plenty of fluids and doing some exercise is important. A: Yes. I tried that. However, it still wouldn't come down, so now I'm taking medicine to dilate my blood vessels. But taking this medicine gives me a little dizziness as a side effect.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1839",
+      "word_number": 1839,
+      "kanji": "血圧",
+      "furigana": "けつあつ",
+      "meaning_en": "blood pressure"
+    },
+    {
+      "word_id": "n2_1840",
+      "word_number": 1840,
+      "kanji": "測定[する]",
+      "furigana": "そくてい",
+      "meaning_en": "measurement, measure"
+    },
+    {
+      "word_id": "n2_1841",
+      "word_number": 1841,
+      "kanji": "水分",
+      "furigana": "すいぶん",
+      "meaning_en": "moisture, fluids"
+    },
+    {
+      "word_id": "n2_1842",
+      "word_number": 1842,
+      "kanji": "血管",
+      "furigana": "けっかん",
+      "meaning_en": "blood vessels"
+    },
+    {
+      "word_id": "n2_1843",
+      "word_number": 1843,
+      "kanji": "服用[する]",
+      "furigana": "ふくよう",
+      "meaning_en": "dose, take (medicine)"
+    },
+    {
+      "word_id": "n2_1844",
+      "word_number": 1844,
+      "kanji": "副作用",
+      "furigana": "ふくさよう",
+      "meaning_en": "side effect"
+    },
+    {
+      "word_id": "n2_1845",
+      "word_number": 1845,
+      "kanji": "目まい",
+      "furigana": "めまい",
+      "meaning_en": "dizziness"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "172_2",
+  "title": "Topic 12 旅行 Travel",
+  "japanese_text": "<ruby>東海道<rt>とうかいどう</rt></ruby><ruby>新幹線<rt>しんかんせん</rt></ruby>の<span class='annotated-word' data-word='自由席'>自由席</span>は１<ruby>号<rt>ごう</rt></ruby><span class='annotated-word' data-word='〜車'>車</span>から３<ruby>号<rt>ごう</rt></ruby><span class='annotated-word' data-word='〜車'>車</span>までだ。<ruby>東京<rt>とうきょう</rt></ruby><span class='annotated-word' data-word='〜発'>発</span>の「のぞみ<ruby>号<rt>ごう</rt></ruby>」の<ruby>場合<rt>ばあい</rt></ruby>、<ruby>前<rt>まえ</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>にある。",
+  "english_translation": "The Tokaido Shinkansen has unreserved seats from the first to third car. On the Nozomi departing from Tokyo, they are toward the front of the train.",
+  "annotated_words": [
+    {
+      "meaning_en": "unreserved seat",
+      "furigana": "じゆうせき",
+      "kanji": "自由席"
+    },
+    {
+      "meaning_en": "car",
+      "furigana": "しゃ",
+      "kanji": "〜車"
+    },
+    {
+      "meaning_en": "departing from ~",
+      "furigana": "はつ",
+      "kanji": "〜発"
+    }
+  ]
+}

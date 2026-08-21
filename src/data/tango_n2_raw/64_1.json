@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 19,
+  "title": "Topic 4 ファッション",
+  "page_story": "64_1",
+  "japanese_text": "A：今日の服、<u>和服</u><u>っぽくて</u>かわいいね。\nB：ありがとう。おばあちゃんの着物を、<u>普段</u>着られるようにリメイクしたんだ。\nA：へえ、さすが。\nB：<u>絹</u>だから、ちょっと<u>手入れ</u>が大変だけどね。",
+  "english_translation": "A: Your clothes look so cute today, like traditional Japanese clothes. B: Thanks. I remade my grandmother's kimono so I can wear it normally. A: Wow, that's great. B: It's silk, so it's a little difficult to look after.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0326",
+      "word_number": 326,
+      "kanji": "和服",
+      "furigana": "わふく",
+      "meaning_en": "traditional Japanese clothes"
+    },
+    {
+      "word_id": "n2_0327",
+      "word_number": 327,
+      "kanji": "普段",
+      "furigana": "ふだん",
+      "meaning_en": "normally, usually"
+    },
+    {
+      "word_id": "n2_0328",
+      "word_number": 328,
+      "kanji": "絹",
+      "furigana": "きぬ",
+      "meaning_en": "silk"
+    },
+    {
+      "word_id": "n2_0329",
+      "word_number": 329,
+      "kanji": "手入れ[する]",
+      "furigana": "ていれ",
+      "meaning_en": "care, look after"
+    }
+  ]
+}

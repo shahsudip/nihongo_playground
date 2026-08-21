@@ -1,0 +1,31 @@
+{
+  "is_story": true,
+  "story_number": 18,
+  "title": "Topic 17 仕事",
+  "page_story": "244_2",
+  "japanese_text": "文字を<u>確定する</u>と、過去のデータから<u>推測して</u>、次に使用する<u>確率</u>が高い文字を出してくれます。",
+  "english_translation": "Whenever you confirm a character, it makes a guess based on past data and suggests the most likely character to be used next.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1665",
+      "word_number": 1665,
+      "kanji": "確定[する]",
+      "furigana": "かくてい",
+      "meaning_en": "decision, confirm"
+    },
+    {
+      "word_id": "n2_1666",
+      "word_number": 1666,
+      "kanji": "推測[する]",
+      "furigana": "すいそく",
+      "meaning_en": "guess, estimate"
+    },
+    {
+      "word_id": "n2_1667",
+      "word_number": 1667,
+      "kanji": "確率",
+      "furigana": "かくりつ",
+      "meaning_en": "probability, likelihood"
+    }
+  ]
+}

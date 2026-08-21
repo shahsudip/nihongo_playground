@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 13 町",
+  "page_story": "178_1",
+  "japanese_text": "名古屋、東京<u>間</u>にリニア中央新幹線が<u>開通したら</u>、<u>直通</u>運転の場合、所要時間は最短40分らしい。そうなれば、<u>転勤</u>が減るかもしれない。",
+  "english_translation": "After the Linear Chuo Shinkansen line opens between Nagoya and Tokyo, apparently the minimum time required for a direct service will be 40 minutes. If that happens, there might be fewer work transfers.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1152",
+      "word_number": 1152,
+      "kanji": "〜間",
+      "furigana": "かん",
+      "meaning_en": "between ~"
+    },
+    {
+      "word_id": "n2_1153",
+      "word_number": 1153,
+      "kanji": "開通[する]",
+      "furigana": "かいつう",
+      "meaning_en": "opening, open"
+    },
+    {
+      "word_id": "n2_1154",
+      "word_number": 1154,
+      "kanji": "直通[する]",
+      "furigana": "ちょくつう",
+      "meaning_en": "direct service, run directly"
+    },
+    {
+      "word_id": "n2_1155",
+      "word_number": 1155,
+      "kanji": "転勤[する]",
+      "furigana": "てんきん",
+      "meaning_en": "work transfer, relocate"
+    }
+  ]
+}

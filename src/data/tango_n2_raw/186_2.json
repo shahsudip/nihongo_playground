@@ -1,0 +1,31 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 14 天気",
+  "page_story": "186_2",
+  "japanese_text": "日本の家によく見られる<u>雨戸</u>は、<u>暴風雨</u>や<u>日差し</u>を防ぐ役割を果たす。",
+  "english_translation": "Storm shutters, which are common in Japanese homes, serve to protect against rainstorms and sunlight.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1226",
+      "word_number": 1226,
+      "kanji": "雨戸",
+      "furigana": "あまど",
+      "meaning_en": "storm shutters"
+    },
+    {
+      "word_id": "n2_1227",
+      "word_number": 1227,
+      "kanji": "暴風雨",
+      "furigana": "ぼうふうう",
+      "meaning_en": "rainstorm"
+    },
+    {
+      "word_id": "n2_1228",
+      "word_number": 1228,
+      "kanji": "日差し",
+      "furigana": "ひざし",
+      "meaning_en": "sunlight"
+    }
+  ]
+}

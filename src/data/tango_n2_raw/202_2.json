@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 10,
+  "title": "Topic 15 旅行",
+  "page_story": "202_2",
+  "japanese_text": "A：ねえ、これ見て。すっごくきれい！\nB：「オレンジ色に染まる<u>地平線</u>、<u>夕日</u>がきれいなビーチ５選」かあ。\nA：あ、ここ結構近いよ。こんなに<u>ロマンチックな</u>ビーチが近くにあるんだね。\nB：そうだね。じゃあ、<u>早速</u>今から行ってみようか。",
+  "english_translation": "A: Hey, look at this. It's so beautiful! B: \"Five beaches with horizons bathed in orange and beautiful sunsets,\" it says. A: Oh, they're quite close. There's a romantic beach like this nearby? B: There is. Let's go there right now.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1351",
+      "word_number": 1351,
+      "kanji": "地平線",
+      "furigana": "ちへいせん",
+      "meaning_en": "horizon"
+    },
+    {
+      "word_id": "n2_1352",
+      "word_number": 1352,
+      "kanji": "夕日",
+      "furigana": "ゆうひ",
+      "meaning_en": "sunset"
+    },
+    {
+      "word_id": "n2_1353",
+      "word_number": 1353,
+      "kanji": "ロマンチックな",
+      "furigana": "ろまんちっくな",
+      "meaning_en": "romantic"
+    },
+    {
+      "word_id": "n2_1354",
+      "word_number": 1354,
+      "kanji": "早速",
+      "furigana": "さっそく",
+      "meaning_en": "right away, right now"
+    }
+  ]
+}

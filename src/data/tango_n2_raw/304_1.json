@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 20,
+  "title": "Topic 21 社会",
+  "page_story": "304_1",
+  "japanese_text": "あの会社は、工場の<u>爆発</u>に対する<u>過失</u>を<u>認めて</u>いなかったが、<u>裁判</u>でようやく<u>決着</u>がついた。",
+  "english_translation": "The company never admitted fault for the explosion at the factory, but the matter was finally settled in court.",
+  "annotated_words": [
+    {
+      "word_id": "n2_2136",
+      "word_number": 2136,
+      "kanji": "爆発[する]",
+      "furigana": "ばくはつ",
+      "meaning_en": "explosion, explode"
+    },
+    {
+      "word_id": "n2_2137",
+      "word_number": 2137,
+      "kanji": "過失",
+      "furigana": "かしつ",
+      "meaning_en": "fault, error"
+    },
+    {
+      "word_id": "n2_2138",
+      "word_number": 2138,
+      "kanji": "認める",
+      "furigana": "みとめる",
+      "meaning_en": "admit, recognize"
+    },
+    {
+      "word_id": "n2_2139",
+      "word_number": 2139,
+      "kanji": "裁判[する]",
+      "furigana": "さいばん",
+      "meaning_en": "court, judge"
+    },
+    {
+      "word_id": "n2_2140",
+      "word_number": 2140,
+      "kanji": "決着[する]",
+      "furigana": "けっちゃく",
+      "meaning_en": "resolution, settle"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 3 買い物",
+  "page_story": "45_1",
+  "japanese_text": "A：通販でコンロ買ったんだけど、<u>包装</u>を<u>ほどいて</u>みたら、都市ガス用だったの。うちでは使えないから<u>返品しよう</u>と思ったんだけど、箱に「<u>不良品</u>を除いて、開封済みの商品の返品には、送料と<u>手数料</u>を<u>頂戴します</u>」って書いてあったの。\nB：そっか。まあ向こうも<u>商売</u>だもんね。",
+  "english_translation": "A: I bought a stove by mail order, but when I removed the packaging, I found it was designed to use city gas. Since I can't use that at home, I tried to return it, but on the box it said, \"Unless a product is defective, a handling fee is required for the return of products that have been opened.\" B: Is that right? Well, I guess they're a business too.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0198",
+      "word_number": 198,
+      "kanji": "包装[する]",
+      "furigana": "ほうそう",
+      "meaning_en": "packaging, pack"
+    },
+    {
+      "word_id": "n2_0199",
+      "word_number": 199,
+      "kanji": "ほどく",
+      "furigana": "ほどく",
+      "meaning_en": "unpack, loosen, take off"
+    },
+    {
+      "word_id": "n2_0201",
+      "word_number": 201,
+      "kanji": "返品[する]",
+      "furigana": "へんぴん",
+      "meaning_en": "return, send back (an item)"
+    },
+    {
+      "word_id": "n2_0202",
+      "word_number": 202,
+      "kanji": "不良品",
+      "furigana": "ふりょうひん",
+      "meaning_en": "defective product"
+    },
+    {
+      "word_id": "n2_0203",
+      "word_number": 203,
+      "kanji": "手数料",
+      "furigana": "てすうりょう",
+      "meaning_en": "handling fee"
+    },
+    {
+      "word_id": "n2_0204",
+      "word_number": 204,
+      "kanji": "頂戴する",
+      "furigana": "ちょうだいする",
+      "meaning_en": "request, require"
+    },
+    {
+      "word_id": "n2_0205",
+      "word_number": 205,
+      "kanji": "商売[する]",
+      "furigana": "しょうばい",
+      "meaning_en": "business, commerce, trade"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 7,
+  "title": "Topic 3 買い物",
+  "page_story": "48_1",
+  "japanese_text": "A：昨日<u>足首</u>のサポーターとスマホの充電<u>器</u>注文したんだけど、口座<u>引き落とし</u>で支払おうとしたら、<u>残高</u>が足りなくて買えなくて…。Bさん、もしクレジットカード持ってたら<u>立て替えて</u>くれない？\nB：うーん、それはちょっと…。",
+  "english_translation": "A: I ordered an ankle brace and a phone charging device yesterday, but when I tried to pay by direct debit, I couldn't because my account balance was too low... Hey B, if you have a credit card, could you pay it on my behalf? B: Hmmm, I'm not sure about that...",
+  "annotated_words": [
+    {
+      "word_id": "n2_0223",
+      "word_number": 223,
+      "kanji": "足首",
+      "furigana": "あしくび",
+      "meaning_en": "ankle"
+    },
+    {
+      "word_id": "n2_0224",
+      "word_number": 224,
+      "kanji": "～器",
+      "furigana": "き",
+      "meaning_en": "~ device"
+    },
+    {
+      "word_id": "n2_0225",
+      "word_number": 225,
+      "kanji": "引き落とし",
+      "furigana": "ひきおとし",
+      "meaning_en": "direct debit, bank withdrawal"
+    },
+    {
+      "word_id": "n2_0227",
+      "word_number": 227,
+      "kanji": "残高",
+      "furigana": "ざんだか",
+      "meaning_en": "(account) balance"
+    },
+    {
+      "word_id": "n2_0228",
+      "word_number": 228,
+      "kanji": "立て替える",
+      "furigana": "たてかえる",
+      "meaning_en": "pay on someone's behalf"
+    }
+  ]
+}

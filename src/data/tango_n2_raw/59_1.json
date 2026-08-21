@@ -1,0 +1,59 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 4 ファッション",
+  "page_story": "59_1",
+  "japanese_text": "A：いかがですか。\nB：この<u>縞</u>のデザインが気に入ってるんですが、<u>客観的に</u>見て<u>派手</u>すぎませんか。\nA：お似合いですよ。ジャケットと<u>組み合わせれ</u>ばオフィスにも着ていけますし。\nB：そうですか。あと、<u>丈</u>がちょっとだけ長いかな。\nA：丈の長さは、この<u>ベルト</u>で<u>調節できます</u>よ。",
+  "english_translation": "A: How do you like it? B: I like the stripe design, but objectively speaking, it's a bit flashy, isn't it? A: It looks good on you. And combined with a jacket, you could even wear it to the office. B: Do you think so? The length might be slightly too long. A: You can adjust the length with this belt.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0291",
+      "word_number": 291,
+      "kanji": "縞",
+      "furigana": "しま",
+      "meaning_en": "stripe"
+    },
+    {
+      "word_id": "n2_0292",
+      "word_number": 292,
+      "kanji": "客観的な",
+      "furigana": "きゃっかんてきな",
+      "meaning_en": "objective"
+    },
+    {
+      "word_id": "n2_0293",
+      "word_number": 293,
+      "kanji": "派手な",
+      "furigana": "はでな",
+      "meaning_en": "flashy, gaudy"
+    },
+    {
+      "word_id": "n2_0294",
+      "word_number": 294,
+      "kanji": "組み合わせる",
+      "furigana": "くみあわせる",
+      "meaning_en": "combine"
+    },
+    {
+      "word_id": "n2_0295",
+      "word_number": 295,
+      "kanji": "ベルト",
+      "furigana": "",
+      "meaning_en": "belt"
+    },
+    {
+      "word_id": "n2_0296",
+      "word_number": 296,
+      "kanji": "丈",
+      "furigana": "たけ",
+      "meaning_en": "length"
+    },
+    {
+      "word_id": "n2_0297",
+      "word_number": 297,
+      "kanji": "調節[する]",
+      "furigana": "ちょうせつ",
+      "meaning_en": "adjustment, adjust"
+    }
+  ]
+}

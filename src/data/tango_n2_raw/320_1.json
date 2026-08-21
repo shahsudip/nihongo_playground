@@ -1,0 +1,59 @@
+{
+  "is_story": true,
+  "story_number": 6,
+  "title": "Topic 23 環境・科学",
+  "page_story": "320_1",
+  "japanese_text": "A：ねえ、この記事見て。1891年に<u>統計</u>が始まって以来、二酸化炭素<u>濃度</u>が高まるのに<u>比例して</u>、世界の平均気温が2021年までに約0.95度も上がったんだって。\nB：そうなんだ。確かにこの<u>図表</u>を見てもはっきりと分かるね。\nA：この研究所もパリ協定に<u>基づいた</u>目標を掲げて、<u>翌年</u>以降の<u>達成</u>を目指してるよ。",
+  "english_translation": "A: Hey, look at this article. It says that since statistics were first collected in 1891, the world's average temperature has risen by about 0.95°C by 2021, proportionally to the increase in concentration of carbon dioxide.\nB: I see. That's certainly clear looking at this diagram.\nA: This research institute has also declared goals based on the Paris Agreement, and aims to achieve them from the following year.",
+  "annotated_words": [
+    {
+      "word_id": "n2_2254",
+      "word_number": 2254,
+      "kanji": "統計",
+      "furigana": "とうけい",
+      "meaning_en": "statistics"
+    },
+    {
+      "word_id": "n2_2255",
+      "word_number": 2255,
+      "kanji": "濃度",
+      "furigana": "のうど",
+      "meaning_en": "concentration, density"
+    },
+    {
+      "word_id": "n2_2256",
+      "word_number": 2256,
+      "kanji": "比例[する]",
+      "furigana": "ひれい",
+      "meaning_en": "proportion, be proportional to"
+    },
+    {
+      "word_id": "n2_2257",
+      "word_number": 2257,
+      "kanji": "図表",
+      "furigana": "ずひょう",
+      "meaning_en": "diagram"
+    },
+    {
+      "word_id": "n2_2258",
+      "word_number": 2258,
+      "kanji": "基づく",
+      "furigana": "もとづく",
+      "meaning_en": "base"
+    },
+    {
+      "word_id": "n2_2259",
+      "word_number": 2259,
+      "kanji": "翌年",
+      "furigana": "よくねん",
+      "meaning_en": "following year"
+    },
+    {
+      "word_id": "n2_2260",
+      "word_number": 2260,
+      "kanji": "達成[する]",
+      "furigana": "たっせい",
+      "meaning_en": "accomplishment, achieve"
+    }
+  ]
+}

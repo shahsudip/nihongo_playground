@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 15,
+  "title": "Topic 14 天気",
+  "page_story": "191_2",
+  "japanese_text": "<u>降水確率</u>は「０％」と<u>表示されて</u>いても、絶対に雨が降らないというわけではない。<u>矛盾して</u>いるように思えるが、降水確率は四捨五入されるため、４％以下なら０％となるのである。",
+  "english_translation": "Even if the probability of rain is indicated as 0%, this doesn't mean it will never rain. This may seem contradictory, but the probability of rain is rounded down, so anything less than 4% is shown as 0%.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1270",
+      "word_number": 1270,
+      "kanji": "降水確率",
+      "furigana": "こうすいかくりつ",
+      "meaning_en": "probability of rain"
+    },
+    {
+      "word_id": "n2_1271",
+      "word_number": 1271,
+      "kanji": "降水量",
+      "furigana": "こうすいりょう",
+      "meaning_en": "amount of rainfall"
+    },
+    {
+      "word_id": "n2_1272",
+      "word_number": 1272,
+      "kanji": "表示[する]",
+      "furigana": "ひょうじ",
+      "meaning_en": "indication, display"
+    },
+    {
+      "word_id": "n2_1273",
+      "word_number": 1273,
+      "kanji": "矛盾[する]",
+      "furigana": "むじゅん",
+      "meaning_en": "contradiction, contradict"
+    }
+  ]
+}

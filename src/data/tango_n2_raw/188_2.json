@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 9,
+  "title": "Topic 14 天気",
+  "page_story": "188_2",
+  "japanese_text": "A：さっきの<u>夕立</u>、ひどかったね。急に<u>ざあざあ</u>降ってくるから服が<u>びしょびしょだ</u>。\nB：ほんとだね。あ、<u>虹</u>！\nA：え、どこ？\nB：あそこ、<u>丘</u>の方。",
+  "english_translation": "A: What a terrible sudden shower we just had. My clothes are soaking wet because it just started pouring down. B: It really was. Oh look, a rainbow! A: Where? B: Over there, toward the hill.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1242",
+      "word_number": 1242,
+      "kanji": "夕立",
+      "furigana": "ゆうだち",
+      "meaning_en": "sudden (rain) shower"
+    },
+    {
+      "word_id": "n2_1243",
+      "word_number": 1243,
+      "kanji": "ざあざあ",
+      "furigana": "",
+      "meaning_en": "pouring down (rain)"
+    },
+    {
+      "word_id": "n2_1244",
+      "word_number": 1244,
+      "kanji": "びしょびしょな",
+      "furigana": "",
+      "meaning_en": "soaking wet"
+    },
+    {
+      "word_id": "n2_1245",
+      "word_number": 1245,
+      "kanji": "虹",
+      "furigana": "にじ",
+      "meaning_en": "rainbow"
+    },
+    {
+      "word_id": "n2_1246",
+      "word_number": 1246,
+      "kanji": "丘",
+      "furigana": "おか",
+      "meaning_en": "hill"
+    }
+  ]
+}

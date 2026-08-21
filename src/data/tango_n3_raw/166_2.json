@@ -1,0 +1,48 @@
+{
+  "id": "166_2",
+  "title": "Topic 12 旅行 Travel",
+  "japanese_text": "A：そういえば、<ruby>海外<rt>かいがい</rt></ruby><ruby>旅行<rt>りょこう</rt></ruby>はどうだったの？<br>B：<ruby>楽<rt>たの</rt></ruby>しかったよ。でも、<ruby>最初<rt>さいしょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>ったドイツは<span class='annotated-word' data-word='時差ぼけ'>時差ぼけ</span>がひどくて、<span class='annotated-word' data-word='チェックインする'>チェックインして</span>からずっとホテルの<ruby>部屋<rt>へや</rt></ruby>にいて、<ruby>全然<rt>ぜんぜん</rt></ruby><span class='annotated-word' data-word='観光する'>観光</span>できなかった。<br>A：えー、<span class='annotated-word' data-word='せっかく'>せっかく</span><ruby>行<rt>い</rt></ruby>ったのに、もったいない。<br>B：うん、もうちょっと<ruby>長<rt>なが</rt></ruby>く<span class='annotated-word' data-word='滞在する'>滞在すれば</span>よかった。",
+  "english_translation": "A: Oh right, how was traveling abroad? B: It was fun. But when I first arrived in Germany, the jet lag was so bad that once I checked in, I stayed in my room the whole time and didn't get to see any of the sights. A: Oh no, what a waste after travelling all that way to get there! B: Yeah, I should have stayed a little while longer.",
+  "annotated_words": [
+    {
+      "meaning_en": "jet lag",
+      "furigana": "じさぼけ",
+      "kanji": "時差ぼけ"
+    },
+    {
+      "meaning_en": "time difference",
+      "furigana": "じさ",
+      "kanji": "時差"
+    },
+    {
+      "meaning_en": "check-in, check in",
+      "furigana": "",
+      "kanji": "チェックイン[する]"
+    },
+    {
+      "meaning_en": "check-out, check out",
+      "furigana": "",
+      "kanji": "チェックアウト[する]"
+    },
+    {
+      "meaning_en": "sightseeing, go sightseeing",
+      "furigana": "かんこう",
+      "kanji": "観光[する]"
+    },
+    {
+      "meaning_en": "tourist",
+      "furigana": "かんこうきゃく",
+      "kanji": "観光客"
+    },
+    {
+      "meaning_en": "after ~ all of that",
+      "furigana": "",
+      "kanji": "せっかく"
+    },
+    {
+      "meaning_en": "staying, stay",
+      "furigana": "たいざい",
+      "kanji": "滞在[する]"
+    }
+  ]
+}

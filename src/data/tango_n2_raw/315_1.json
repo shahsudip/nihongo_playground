@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 23 環境・科学",
+  "page_story": "315_1",
+  "japanese_text": "九州は比較的<u>温暖な</u>気候であるが、大陸の<u>砂漠</u>から黄砂が飛んでくる。黄砂がひどいときには遠くの<u>山脈</u>が隠れて見えなくなることもある。また、黄砂は人間の<u>循環</u>器や呼吸器の病気に影響するとの報告もある。",
+  "english_translation": "The island of Kyushu has a relatively mild climate, but yellow sand often blows in from continental deserts. When this yellow sand is severe, it can even obscure distant mountain ranges from view. Reports also suggest that it can impair human circulatory and respiratory functions.",
+  "annotated_words": [
+    {
+      "word_id": "n2_2217",
+      "word_number": 2217,
+      "kanji": "温暖な",
+      "furigana": "おんだんな",
+      "meaning_en": "mild"
+    },
+    {
+      "word_id": "n2_2218",
+      "word_number": 2218,
+      "kanji": "砂漠",
+      "furigana": "さばく",
+      "meaning_en": "desert"
+    },
+    {
+      "word_id": "n2_2219",
+      "word_number": 2219,
+      "kanji": "山脈",
+      "furigana": "さんみゃく",
+      "meaning_en": "mountain range"
+    },
+    {
+      "word_id": "n2_2220",
+      "word_number": 2220,
+      "kanji": "循環[する]",
+      "furigana": "じゅんかん",
+      "meaning_en": "circulation, circulate"
+    }
+  ]
+}

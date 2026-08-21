@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 15 旅行",
+  "page_story": "201_1",
+  "japanese_text": "先日、友だちと船釣りツアーに参加した。<u>沖</u>には私たちの他に５<u>隻</u>ほど船が泊まっていて、みんな釣りをしていた。釣り初心者の私はきらきら光る<u>水面</u>に目を奪われていたが、友達はたった１時間で<u>空っぽ</u>だったクーラーボックスを魚でいっぱいにした。釣りは３時間の予定だったが途中で波が<u>荒く</u>なったので、港に戻った。",
+  "english_translation": "The other day, I went on a boat fishing tour with a friend. About five other boats were anchored offshore near ours, and everyone was fishing. As a novice angler, I was transfixed by the sparkling water's surface, but my friend filled his empty cooler box with fish in just one hour. We'd planned to fish for three hours, but the waves grew too rough, so we headed back to the harbor.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1338",
+      "word_number": 1338,
+      "kanji": "沖",
+      "furigana": "おき",
+      "meaning_en": "offshore"
+    },
+    {
+      "word_id": "n2_1339",
+      "word_number": 1339,
+      "kanji": "〜隻",
+      "furigana": "せき",
+      "meaning_en": "boats (counter for boats)"
+    },
+    {
+      "word_id": "n2_1340",
+      "word_number": 1340,
+      "kanji": "水面",
+      "furigana": "すいめん",
+      "meaning_en": "water's surface"
+    },
+    {
+      "word_id": "n2_1341",
+      "word_number": 1341,
+      "kanji": "空(っぽ)",
+      "furigana": "から",
+      "meaning_en": "emptiness"
+    },
+    {
+      "word_id": "n2_1342",
+      "word_number": 1342,
+      "kanji": "荒い",
+      "furigana": "あらい",
+      "meaning_en": "rough"
+    }
+  ]
+}

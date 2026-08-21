@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 4 ファッション",
+  "page_story": "54_2",
+  "japanese_text": "A：ねえ、この写真見て。今若い人の間でこんなの<u>はやってる</u>んだって。買ってみようかな。\nB：いや…<u>おまえ</u>、いくつだよ。\nA：ほら、最近のお母さんってみんな<u>若々しい</u>じゃない？\nB：うーん、無理にそんな<u>格好</u>すると、<u>逆に</u>目立つと思うよ。",
+  "english_translation": "A: Hey, look at this photo. I heard this kind of thing is popular among young people these days. Maybe I should buy one. B: No way... How old are you? A: Hey, all the mothers these days look young, don't they? B: Well, if you dress to look like that, I think on the contrary, you'll actually stand out.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0260",
+      "word_number": 260,
+      "kanji": "おまえ",
+      "furigana": "",
+      "meaning_en": "you (familiar use)"
+    },
+    {
+      "word_id": "n2_0261",
+      "word_number": 261,
+      "kanji": "若々しい",
+      "furigana": "わかわかしい",
+      "meaning_en": "young-looking"
+    },
+    {
+      "word_id": "n2_0262",
+      "word_number": 262,
+      "kanji": "格好",
+      "furigana": "かっこう",
+      "meaning_en": "appearance, look"
+    },
+    {
+      "word_id": "n2_0263",
+      "word_number": 263,
+      "kanji": "逆に",
+      "furigana": "ぎゃくに",
+      "meaning_en": "conversely, on the contrary"
+    },
+    {
+      "word_id": "n2_0264",
+      "word_number": 264,
+      "kanji": "はやる",
+      "furigana": "",
+      "meaning_en": "be popular, be in fashion"
+    }
+  ]
+}

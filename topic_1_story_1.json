@@ -1,0 +1,44 @@
+{
+  "story_number": 1,
+  "title": "Topic 1: 食事",
+  "topic_number": 1,
+  "japanese_text": "<u>脂肪</u>がつきやすい<u>体質</u>なので、食べる物、食べる時間には気をつけている。それなのに、母が横でお菓子の<u>封</u>を開けたものだから、つい一緒に<u>間食</u>してしまった。なんて<u>愚か</u>なんだ、私は！",
+  "english_translation": "I have a predisposition to gain fat easily, so I'm careful about what I eat and when I eat it. But my mother broke the seal on a packet of candy when I was with her, so I ended up snacking on them with her. How foolish of me!",
+  "annotated_words": [
+    {
+      "word_id": "n1_0001",
+      "word_number": 1,
+      "kanji": "脂肪",
+      "furigana": "しぼう",
+      "meaning_en": "fat"
+    },
+    {
+      "word_id": "n1_0002",
+      "word_number": 2,
+      "kanji": "体質",
+      "furigana": "たいしつ",
+      "meaning_en": "constitution, predisposition"
+    },
+    {
+      "word_id": "n1_0003",
+      "word_number": 3,
+      "kanji": "封",
+      "furigana": "ふう",
+      "meaning_en": "seal"
+    },
+    {
+      "word_id": "n1_0004",
+      "word_number": 4,
+      "kanji": "間食",
+      "furigana": "かんしょく",
+      "meaning_en": "snack, eat between meals"
+    },
+    {
+      "word_id": "n1_0005",
+      "word_number": 5,
+      "kanji": "愚か",
+      "furigana": "おろか",
+      "meaning_en": "foolish"
+    }
+  ]
+}

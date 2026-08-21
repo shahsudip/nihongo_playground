@@ -1,0 +1,31 @@
+{
+  "is_story": true,
+  "story_number": 14,
+  "title": "Topic 4 ファッション",
+  "page_story": "60_2",
+  "japanese_text": "A：腕の傷、どうしたの？\nB：ああ、これ…。私、腕の毛が<u>割と</u>濃いから、毎日<u>かみそり</u>で剃ってるんだけど、昨日切っちゃって…。\nA：大変だね。\nB：脱毛するっていう手もあるんだけど、<u>美容</u>にお金かけたくないんだよね。",
+  "english_translation": "A: Hey, how did you cut your arm? B: Oh, that... I have rather thick hair on my arms, so I shave them every day with a razor, but yesterday I cut myself... A: That's awful. B: There are other ways to remove hair, but I don't want to spend a lot of money on beauty treatments.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0302",
+      "word_number": 302,
+      "kanji": "割と",
+      "furigana": "わりと",
+      "meaning_en": "rather, comparatively"
+    },
+    {
+      "word_id": "n2_0303",
+      "word_number": 303,
+      "kanji": "かみそり",
+      "furigana": "",
+      "meaning_en": "razor"
+    },
+    {
+      "word_id": "n2_0304",
+      "word_number": 304,
+      "kanji": "美容",
+      "furigana": "びよう",
+      "meaning_en": "beauty"
+    }
+  ]
+}

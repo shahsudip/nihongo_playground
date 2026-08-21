@@ -1,0 +1,45 @@
+{
+  "title": "Topic 5 テクノロジー",
+  "audio_id": "74",
+  "japanese_text": "A：パソコンの充電器、壊れちゃったんだけど、充電器は修理の対象<u>外</u>だから、こういう<u>ケース</u>は買い替えるしかないんだって。<u>電圧</u>とか<u>電力</u>とかよく分からないんだけど、どれ買えばいいかな？\nB：えっと…60Wだね。パソコンと同じメーカーのがいいよ。<u>ただ</u>、高いけどね。",
+  "page_story": "71_1",
+  "english_translation": "A: The charger for my computer broke, but chargers aren't included in repairs, so in this case I just have to buy a new one. I don't know much about voltage or power. Which one should I buy? B: Let's see... it's 60W. You should get one from the same manufacturer as your computer. But they're expensive.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0369",
+      "word_number": 369,
+      "kanji": "～外",
+      "furigana": "～がい",
+      "meaning_en": "not included in ~, outside the scope of ~"
+    },
+    {
+      "word_id": "n2_0370",
+      "word_number": 370,
+      "kanji": "ケース",
+      "furigana": "ケース",
+      "meaning_en": "case"
+    },
+    {
+      "word_id": "n2_0371",
+      "word_number": 371,
+      "kanji": "電圧",
+      "furigana": "でんあつ",
+      "meaning_en": "voltage"
+    },
+    {
+      "word_id": "n2_0372",
+      "word_number": 372,
+      "kanji": "電力",
+      "furigana": "でんりょく",
+      "meaning_en": "electrical power"
+    },
+    {
+      "word_id": "n2_0373",
+      "word_number": 373,
+      "kanji": "ただ",
+      "furigana": "ただ",
+      "meaning_en": "but, however"
+    }
+  ],
+  "is_story": true
+}

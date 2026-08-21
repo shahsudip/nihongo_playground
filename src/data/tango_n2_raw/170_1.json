@@ -1,0 +1,59 @@
+{
+  "is_story": true,
+  "story_number": 14,
+  "title": "Topic 12 住",
+  "page_story": "170_1",
+  "japanese_text": "近所のスーパーに、一週間<u>ごと</u>に食品の<u>定期</u> <u>配送</u>をお願いしている。だがこの地域では、大雪が配達の<u>妨げ</u>となり、予定通りに届かないことがある。",
+  "english_translation": "I get my local supermarket to make regular deliveries of food every week. However, in this area, heavy snowfall sometimes interferes with deliveries and they don't arrive on time.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1087",
+      "word_number": 1087,
+      "kanji": "〜ごと",
+      "furigana": "",
+      "meaning_en": "each ~, every ~"
+    },
+    {
+      "word_id": "n2_1088",
+      "word_number": 1088,
+      "kanji": "定期",
+      "furigana": "ていき",
+      "meaning_en": "regular period"
+    },
+    {
+      "word_id": "n2_1089",
+      "word_number": 1089,
+      "kanji": "定期的な",
+      "furigana": "ていきてきな",
+      "meaning_en": "regular, periodic"
+    },
+    {
+      "word_id": "n2_1090",
+      "word_number": 1090,
+      "kanji": "定期券",
+      "furigana": "ていきけん",
+      "meaning_en": "commuter pass, season ticket"
+    },
+    {
+      "word_id": "n2_1091",
+      "word_number": 1091,
+      "kanji": "配送[する]",
+      "furigana": "はいそう",
+      "meaning_en": "delivery, deliver"
+    },
+    {
+      "word_id": "n2_1092",
+      "word_number": 1092,
+      "kanji": "妨げ",
+      "furigana": "さまたげ",
+      "meaning_en": "hindrance, interference"
+    },
+    {
+      "word_id": "n2_1093",
+      "word_number": 1093,
+      "kanji": "妨げる",
+      "furigana": "さまたげる",
+      "meaning_en": "hinder, interfere"
+    }
+  ]
+}

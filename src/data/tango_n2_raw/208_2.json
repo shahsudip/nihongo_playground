@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 19,
+  "title": "Topic 15 旅行",
+  "page_story": "208_2",
+  "japanese_text": "山道は<u>方角</u>が分かりにくく急カーブの道も多いので、運転に集中力が要る。<u>険しい</u>山と<u>谷</u>に挟まれた山道を進むと、小さい<u>滝</u>が現れた。そこで車を停めて<u>一休み</u>することにした。地図を見ると、<u>幸い</u>もう少しで山道を抜けられることが分かった。",
+  "english_translation": "On this mountain road, the direction is difficult to see and there are many sharp curves, so driving takes a lot of concentration. As we proceeded along the mountain road, winding between steep mountainsides and valleys, we came upon a small waterfall. We decided to stop the car and take a rest there. Fortunately, the map showed that we were almost through the mountain road.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1391",
+      "word_number": 1391,
+      "kanji": "方角",
+      "furigana": "ほうがく",
+      "meaning_en": "direction"
+    },
+    {
+      "word_id": "n2_1392",
+      "word_number": 1392,
+      "kanji": "険しい",
+      "furigana": "けわしい",
+      "meaning_en": "steep"
+    },
+    {
+      "word_id": "n2_1393",
+      "word_number": 1393,
+      "kanji": "谷",
+      "furigana": "たに",
+      "meaning_en": "valley"
+    },
+    {
+      "word_id": "n2_1394",
+      "word_number": 1394,
+      "kanji": "滝",
+      "furigana": "たき",
+      "meaning_en": "waterfall"
+    },
+    {
+      "word_id": "n2_1395",
+      "word_number": 1395,
+      "kanji": "一休み[する]",
+      "furigana": "ひとやすみ",
+      "meaning_en": "break, take a rest"
+    },
+    {
+      "word_id": "n2_1396",
+      "word_number": 1396,
+      "kanji": "幸い",
+      "furigana": "さいわい",
+      "meaning_en": "fortunately"
+    }
+  ]
+}

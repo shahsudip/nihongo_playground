@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 2,
+  "title": "Topic 11 動物",
+  "page_story": "151_1",
+  "japanese_text": "A：あ、鳥の<u>巣</u>がある！\nB：本当だ。巣の<u>真下</u>に、赤ちゃんの<u>ふわふわ</u>した<u>羽</u>や卵の<u>殻</u>が落ちてるね。",
+  "english_translation": "A: Look, there's a bird's nest! B: Oh, you're right. Right beneath the nest, fluffy baby feathers and eggshells have fallen to the ground.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0934",
+      "word_number": 934,
+      "kanji": "巣",
+      "furigana": "す",
+      "meaning_en": "nest, lair"
+    },
+    {
+      "word_id": "n2_0935",
+      "word_number": 935,
+      "kanji": "真下",
+      "furigana": "ました",
+      "meaning_en": "right beneath"
+    },
+    {
+      "word_id": "n2_0936",
+      "word_number": 936,
+      "kanji": "真上",
+      "furigana": "まうえ",
+      "meaning_en": "right above"
+    },
+    {
+      "word_id": "n2_0937",
+      "word_number": 937,
+      "kanji": "ふわふわ",
+      "furigana": "",
+      "meaning_en": "fluffy"
+    },
+    {
+      "word_id": "n2_0938",
+      "word_number": 938,
+      "kanji": "羽",
+      "furigana": "はね",
+      "meaning_en": "feather, wing"
+    },
+    {
+      "word_id": "n2_0939",
+      "word_number": 939,
+      "kanji": "殻",
+      "furigana": "から",
+      "meaning_en": "shell"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 7 趣味",
+  "page_story": "108_2",
+  "japanese_text": "A：うーん、この論文の<u>著者</u>が<u>主張して</u>いるのはこういうことじゃないんじゃないかな。もう一度よく読んでみてください。\nB：あ、はい。\nA：それから、この本、<u>索引</u>もついていて調べやすいので、おすすめです。特に第3<u>章</u>は、Bさんのテーマと関係があるので、読んだ方がいいですよ。",
+  "english_translation": "A: Hmm, I don't think this is what the author of the paper is claiming. Please read it again more carefully. B: Yes, I will. A: Also, I recommend this book because it has an index, so it's easy to look things up. You should read Chapter 3 in particular, because it's related to your theme.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0639",
+      "word_number": 639,
+      "kanji": "著者",
+      "furigana": "ちょしゃ",
+      "meaning_en": "author"
+    },
+    {
+      "word_id": "n2_0640",
+      "word_number": 640,
+      "kanji": "主張[する]",
+      "furigana": "しゅちょう",
+      "meaning_en": "claim, assert, argue"
+    },
+    {
+      "word_id": "n2_0641",
+      "word_number": 641,
+      "kanji": "索引",
+      "furigana": "さくいん",
+      "meaning_en": "index"
+    },
+    {
+      "word_id": "n2_0642",
+      "word_number": 642,
+      "kanji": "～章",
+      "furigana": "しょう",
+      "meaning_en": "chapter ~"
+    }
+  ]
+}

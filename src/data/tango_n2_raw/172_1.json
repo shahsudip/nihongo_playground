@@ -1,0 +1,45 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 13 町",
+  "page_story": "172_1",
+  "japanese_text": "トラックが<u>回送</u>中の路線バスに<u>追突し</u>、大通りに<u>面した</u>コンビニエンスストアに<u>突っ込んだ</u>。店内にいた客や店員にけがはなかったものの、<u>日用品</u>が散乱していた。",
+  "english_translation": "A truck rear-ended an out-of-service city bus, and smashed into a convenience store facing onto a main street. Customers and staff inside the store weren't injured, but daily necessities were scattered about everywhere.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1101",
+      "word_number": 1101,
+      "kanji": "回送[する]",
+      "furigana": "かいそう",
+      "meaning_en": "out-of-service (vehicle), return to station"
+    },
+    {
+      "word_id": "n2_1102",
+      "word_number": 1102,
+      "kanji": "追突[する]",
+      "furigana": "ついとつ",
+      "meaning_en": "rear-end collision, rear-end"
+    },
+    {
+      "word_id": "n2_1103",
+      "word_number": 1103,
+      "kanji": "面する",
+      "furigana": "めんする",
+      "meaning_en": "face onto"
+    },
+    {
+      "word_id": "n2_1104",
+      "word_number": 1104,
+      "kanji": "突っ込む",
+      "furigana": "つっこむ",
+      "meaning_en": "ram, smash into"
+    },
+    {
+      "word_id": "n2_1105",
+      "word_number": 1105,
+      "kanji": "日用品",
+      "furigana": "にちようひん",
+      "meaning_en": "daily necessities"
+    }
+  ]
+}

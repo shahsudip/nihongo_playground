@@ -1,0 +1,31 @@
+{
+  "is_story": true,
+  "story_number": 12,
+  "title": "Topic 7 趣味",
+  "page_story": "111_1",
+  "japanese_text": "<u>ことわざ</u>には、その<u>言語</u>の文化が表れている。たとえば日本語では、<u>名人</u>でも失敗することもあるという意味で「猿も木から落ちる」と言うが、英語では「ホメロスも居眠りをする」と言う。",
+  "english_translation": "Proverbs express the culture of a language. For example, in Japanese they say, \"Even monkeys fall from trees,\" meaning that even experts sometimes fail, while in English the expression is \"Even Homer sometimes nods.\"",
+  "annotated_words": [
+    {
+      "word_id": "n2_0656",
+      "word_number": 656,
+      "kanji": "ことわざ",
+      "furigana": "",
+      "meaning_en": "proverb"
+    },
+    {
+      "word_id": "n2_0657",
+      "word_number": 657,
+      "kanji": "言語",
+      "furigana": "げんご",
+      "meaning_en": "language"
+    },
+    {
+      "word_id": "n2_0658",
+      "word_number": 658,
+      "kanji": "名人",
+      "furigana": "めいじん",
+      "meaning_en": "master, expert"
+    }
+  ]
+}

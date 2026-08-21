@@ -1,0 +1,24 @@
+{
+  "is_story": true,
+  "story_number": 4,
+  "title": "Topic 15 旅行",
+  "page_story": "199_1",
+  "japanese_text": "日本人海外旅行者数は1985年の「プラザ合意」以降、<u>円高</u>の影響もあって増加し、1990年には年間1000万人を<u>上回る</u>ようになった。そして、2019年には年間2000万人を超えた。",
+  "english_translation": "The number of Japanese people traveling abroad increased after the Plaza Accord in 1985, partly due to the strong yen, and exceeded 10 million per year in 1990. By 2019, the number was more than 20 million per year.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1322",
+      "word_number": 1322,
+      "kanji": "円高",
+      "furigana": "えんだか",
+      "meaning_en": "strong yen"
+    },
+    {
+      "word_id": "n2_1324",
+      "word_number": 1324,
+      "kanji": "上回る",
+      "furigana": "うわまわる",
+      "meaning_en": "exceed, surpass"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "170_2",
+  "title": "Topic 12 旅行 Travel",
+  "japanese_text": "この<span class='annotated-word' data-word='トンネル'>トンネル</span>は、<ruby>東京<rt>とうきょう</rt></ruby><span class='annotated-word' data-word='〜方面'>方面</span>に<ruby>行<rt>い</rt></ruby>くときの<span class='annotated-word' data-word='近道'>近道</span>である。<ruby>昔<rt>むかし</rt></ruby>は、<span class='annotated-word' data-word='コーナー'>コーナー</span>が<span class='annotated-word' data-word='連続'>連続</span>する<ruby>山道<rt>やまみち</rt></ruby>を<ruby>行<rt>い</rt></ruby>く<ruby>必要<rt>ひつよう</rt></ruby>があった。<span class='annotated-word' data-word='岩'>岩</span>が<ruby>落<rt>お</rt></ruby>ちている<ruby>危<rt>あぶ</rt></ruby>ない<ruby>道<rt>みち</rt></ruby>で、<span class='annotated-word' data-word='片道'>片道</span>１<ruby>時間<rt>じかん</rt></ruby>もかかった。<ruby>今<rt>いま</rt></ruby>は、２０<ruby>分<rt>ぷん</rt></ruby>で<span class='annotated-word' data-word='往復'>往復</span>できる。",
+  "english_translation": "This tunnel is a shortcut to heading to Tokyo. In the past, you had to take a mountain road with continuous curves. It was a dangerous road where rocks fell, and it took a whole hour just for one way. Now, you can make a round trip in 20 minutes.",
+  "annotated_words": [
+    {
+      "meaning_en": "tunnel",
+      "furigana": "",
+      "kanji": "トンネル"
+    },
+    {
+      "meaning_en": "bound, heading to ~",
+      "furigana": "ほうめん",
+      "kanji": "〜方面"
+    },
+    {
+      "meaning_en": "shortcut, take a shortcut",
+      "furigana": "ちかみち",
+      "kanji": "近道[する]"
+    },
+    {
+      "meaning_en": "corner, curve",
+      "furigana": "",
+      "kanji": "コーナー"
+    },
+    {
+      "meaning_en": "continuous, happen continuously",
+      "furigana": "れんぞく",
+      "kanji": "連続[する]"
+    },
+    {
+      "meaning_en": "rock",
+      "furigana": "いわ",
+      "kanji": "岩"
+    },
+    {
+      "meaning_en": "one way",
+      "furigana": "かたみち",
+      "kanji": "片道"
+    },
+    {
+      "meaning_en": "round trip, go on a round trip",
+      "furigana": "おうふく",
+      "kanji": "往復[する]"
+    }
+  ]
+}

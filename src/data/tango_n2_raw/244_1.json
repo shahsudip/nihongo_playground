@@ -1,0 +1,59 @@
+{
+  "is_story": true,
+  "story_number": 17,
+  "title": "Topic 17 仕事",
+  "page_story": "244_1",
+  "japanese_text": "A：最近新しく入った<u>アシスタント</u>、すごく<u>頼もしい</u>よ。\nB：へー、どんなふうに？\nA：一つ一つの仕事の<u>処理</u>が、正確な上に速い。\nB：そうなんだ。うちの<u>人事</u>は優秀だね。<u>他</u>社では人事への不満をよく聞くけど。\nA：人事って、どうやって<u>雇う</u>人を選んでるんだろう。\nB：うーん...結局、<u>勘</u>じゃない？",
+  "english_translation": "A: The new assistant who joined us recently is very dependable. B: Oh, in what way? A: He handles every single job quickly and accurately. B: I see. HR at our company is excellent. You often hear complaints about HR at other companies. A: I wonder how HR selects the people they hire. B: Well ... in the end, it's just intuition, isn't it?",
+  "annotated_words": [
+    {
+      "word_id": "n2_1658",
+      "word_number": 1658,
+      "kanji": "アシスタント",
+      "furigana": "あしすたんと",
+      "meaning_en": "assistant"
+    },
+    {
+      "word_id": "n2_1659",
+      "word_number": 1659,
+      "kanji": "頼もしい",
+      "furigana": "たのもしい",
+      "meaning_en": "dependable, promising"
+    },
+    {
+      "word_id": "n2_1660",
+      "word_number": 1660,
+      "kanji": "処理[する]",
+      "furigana": "しょり",
+      "meaning_en": "processing, handle"
+    },
+    {
+      "word_id": "n2_1661",
+      "word_number": 1661,
+      "kanji": "人事",
+      "furigana": "じんじ",
+      "meaning_en": "human resources, HR"
+    },
+    {
+      "word_id": "n2_1662",
+      "word_number": 1662,
+      "kanji": "他〜",
+      "furigana": "た",
+      "meaning_en": "other ~"
+    },
+    {
+      "word_id": "n2_1663",
+      "word_number": 1663,
+      "kanji": "雇う",
+      "furigana": "やとう",
+      "meaning_en": "hire, employ"
+    },
+    {
+      "word_id": "n2_1664",
+      "word_number": 1664,
+      "kanji": "勘",
+      "furigana": "かん",
+      "meaning_en": "intuition"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 8,
+  "title": "Topic 14 天気",
+  "page_story": "188_1",
+  "japanese_text": "この冬は<u>吹雪</u>がひどかった<u>せい</u>で、<u>農作物</u>がここ10年で<u>最低</u>の生産量となった。",
+  "english_translation": "Because of the severe blizzards this winter, agricultural production was the lowest in ten years.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1238",
+      "word_number": 1238,
+      "kanji": "吹雪",
+      "furigana": "ふぶき",
+      "meaning_en": "blizzard"
+    },
+    {
+      "word_id": "n2_1239",
+      "word_number": 1239,
+      "kanji": "せい",
+      "furigana": "",
+      "meaning_en": "blame, cause (negative)"
+    },
+    {
+      "word_id": "n2_1240",
+      "word_number": 1240,
+      "kanji": "農作物",
+      "furigana": "のうさくぶつ",
+      "meaning_en": "agricultural production/products"
+    },
+    {
+      "word_id": "n2_1241",
+      "word_number": 1241,
+      "kanji": "最低",
+      "furigana": "さいてい",
+      "meaning_en": "lowest"
+    }
+  ]
+}

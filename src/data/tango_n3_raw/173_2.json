@@ -1,0 +1,33 @@
+{
+  "id": "173_2",
+  "title": "Topic 12 旅行 Travel",
+  "japanese_text": "たくさんの<ruby>人<rt>ひと</rt></ruby>を<span class='annotated-word' data-word='乗せる'>乗せた</span><span class='annotated-word' data-word='モノレール'>モノレール</span>の<span class='annotated-word' data-word='ブレーキ'>ブレーキ</span>が<ruby>故障<rt>こしょう</rt></ruby>し、<ruby>駅<rt>えき</rt></ruby>の<ruby>壁<rt>かべ</rt></ruby>にぶつかる<ruby>事故<rt>じこ</rt></ruby>が<ruby>起<rt>お</rt></ruby>きた。<ruby>駅<rt>えき</rt></ruby>では<span class='annotated-word' data-word='サイレン'>サイレン</span>が<ruby>鳴<rt>な</rt></ruby>り<ruby>響<rt>ひび</rt></ruby>き、たくさんの<ruby>人<rt>ひと</rt></ruby>が<span class='annotated-word' data-word='非常口'>非常口</span>に<ruby>集<rt>あつ</rt></ruby>まり、けが<ruby>人<rt>にん</rt></ruby>が<ruby>出<rt>で</rt></ruby>た。",
+  "english_translation": "There was an accident involving the brakes failing on a monorail full of passengers where the monorail hit the wall of a station. The station sirens wailed and many people were gathered around the emergency exits. Some were injured.",
+  "annotated_words": [
+    {
+      "meaning_en": "put on",
+      "furigana": "のせる",
+      "kanji": "乗せる"
+    },
+    {
+      "meaning_en": "monorail",
+      "furigana": "",
+      "kanji": "モノレール"
+    },
+    {
+      "meaning_en": "brake",
+      "furigana": "",
+      "kanji": "ブレーキ"
+    },
+    {
+      "meaning_en": "siren",
+      "furigana": "",
+      "kanji": "サイレン"
+    },
+    {
+      "meaning_en": "emergency exit",
+      "furigana": "ひじょうぐち",
+      "kanji": "非常口"
+    }
+  ]
+}

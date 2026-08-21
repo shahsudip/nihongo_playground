@@ -1,0 +1,59 @@
+{
+  "is_story": true,
+  "story_number": 22,
+  "title": "Topic 14 天気",
+  "page_story": "195_2",
+  "japanese_text": "<u>昨</u>晩は地震の後、津波警報が出た。<u>万が一</u>を考え、高いところに<u>避難した</u>。寒くて<u>凍え</u>そうだった。<u>夜明け</u>に警報が<u>解除され</u>、<u>静まった</u>町を歩き、家に帰った。",
+  "english_translation": "Last night, after the earthquake, there was a tsunami warning. I evacuated to an elevated location, just in case. It was so cold I thought I'd freeze. At dawn the warning was lifted, and I walked through the quiet town and went home.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1296",
+      "word_number": 1296,
+      "kanji": "昨〜",
+      "furigana": "さく",
+      "meaning_en": "last ~"
+    },
+    {
+      "word_id": "n2_1297",
+      "word_number": 1297,
+      "kanji": "万が一／万一",
+      "furigana": "まんがいち",
+      "meaning_en": "just in case, in the unlikely event of"
+    },
+    {
+      "word_id": "n2_1298",
+      "word_number": 1298,
+      "kanji": "避難[する]",
+      "furigana": "ひなん",
+      "meaning_en": "evacuation, evacuate"
+    },
+    {
+      "word_id": "n2_1299",
+      "word_number": 1299,
+      "kanji": "凍える",
+      "furigana": "こごえる",
+      "meaning_en": "freeze"
+    },
+    {
+      "word_id": "n2_1300",
+      "word_number": 1300,
+      "kanji": "夜明け",
+      "furigana": "よあけ",
+      "meaning_en": "dawn"
+    },
+    {
+      "word_id": "n2_1301",
+      "word_number": 1301,
+      "kanji": "解除[する]",
+      "furigana": "かいじょ",
+      "meaning_en": "release, lift"
+    },
+    {
+      "word_id": "n2_1302",
+      "word_number": 1302,
+      "kanji": "静まる",
+      "furigana": "しずまる",
+      "meaning_en": "be quiet"
+    }
+  ]
+}

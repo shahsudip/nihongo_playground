@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 13,
+  "title": "Topic 11 動物",
+  "page_story": "157_2",
+  "japanese_text": "A：<u>井戸</u>の方から<u>物音</u>しない？\nB：そうだね。なんだろう。\nA：なんか<u>気配</u>はするけど、<u>薄暗くて</u>、よく見えないな。\nB：あ！あそこの草が<u>茂って</u>るとこ、見て！へびが<u>這って</u>る。",
+  "english_translation": "A: Did you hear some noise from the well? B: Yes, I think so. I wonder what it is. A: I have a feeling something's there, but it's too dark to really see. B: Ah! Look over there, in the overgrown grass! There's a snake slithering.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0989",
+      "word_number": 989,
+      "kanji": "井戸",
+      "furigana": "いど",
+      "meaning_en": "well"
+    },
+    {
+      "word_id": "n2_0990",
+      "word_number": 990,
+      "kanji": "物音",
+      "furigana": "ものおと",
+      "meaning_en": "noise, sound"
+    },
+    {
+      "word_id": "n2_0991",
+      "word_number": 991,
+      "kanji": "気配",
+      "furigana": "けはい",
+      "meaning_en": "sign, indication, feeling"
+    },
+    {
+      "word_id": "n2_0992",
+      "word_number": 992,
+      "kanji": "薄暗い",
+      "furigana": "うすぐらい",
+      "meaning_en": "dark, dim"
+    },
+    {
+      "word_id": "n2_0993",
+      "word_number": 993,
+      "kanji": "茂る",
+      "furigana": "しげる",
+      "meaning_en": "grow, overgrow"
+    },
+    {
+      "word_id": "n2_0994",
+      "word_number": 994,
+      "kanji": "這う",
+      "furigana": "はう",
+      "meaning_en": "crawl, creep, slither"
+    }
+  ]
+}

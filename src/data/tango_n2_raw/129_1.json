@@ -1,0 +1,38 @@
+{
+  "is_story": true,
+  "story_number": 19,
+  "title": "Topic 8 人付き合い",
+  "page_story": "129_1",
+  "japanese_text": "A：はい、営業部です。\nB：もしもし、経理部の田中です。山田さんはいらっしゃいますか。\nA：あ、すみません。私昨日営業部に入ったばかりの<u>者</u>で…。山田さんを<u>存じ上げない</u>ので、確認してまいります。\nB：もしいらっしゃったら、<u>厚かましい</u>お願いで<u>恐縮</u>なのですが、今1階でやっている経理部の会議に来ていただきたいと伝えてください。",
+  "english_translation": "A: Yes, this is the Sales department. B: Hello, this is Tanaka from Accounting. Is Mr. Yamada there? A: Oh, I'm sorry. I'm the one who just joined the Sales department yesterday. I don't know Mr. Yamada, but I'll go check. B: If he is there, tell him I'm sorry to be so presumptuous, but I'd like him to come to the Accounting department meeting, which is being held right now on the first floor.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0772",
+      "word_number": 772,
+      "kanji": "者",
+      "furigana": "もの",
+      "meaning_en": "one, person"
+    },
+    {
+      "word_id": "n2_0773",
+      "word_number": 773,
+      "kanji": "存じ上げる",
+      "furigana": "ぞんじあげる",
+      "meaning_en": "know, think, presume [honorific form of 知っている]"
+    },
+    {
+      "word_id": "n2_0774",
+      "word_number": 774,
+      "kanji": "厚かましい",
+      "furigana": "あつかましい",
+      "meaning_en": "presumptuous, pushy"
+    },
+    {
+      "word_id": "n2_0775",
+      "word_number": 775,
+      "kanji": "恐縮[する]",
+      "furigana": "きょうしゅく",
+      "meaning_en": "feeling of obligation, be sorry"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 10 スポーツ",
+  "page_story": "138_1",
+  "japanese_text": "その野球<u>監督</u>は、<u>炎天下</u>でのピッチング練習を<u>禁じ</u>、かわりに、<u>敵</u>チームのプレーを<u>分析する</u>ように指示した。",
+  "english_translation": "The baseball coach forbade his players from practicing pitching under the blazing sun, instead instructing them to analyze the plays of the opposing team.",
+  "annotated_words": [
+    {
+      "word_id": "n2_0827",
+      "word_number": 827,
+      "kanji": "監督[する]",
+      "furigana": "かんとく",
+      "meaning_en": "coach, director, direct"
+    },
+    {
+      "word_id": "n2_0828",
+      "word_number": 828,
+      "kanji": "炎天下",
+      "furigana": "えんてんか",
+      "meaning_en": "under the blazing sun"
+    },
+    {
+      "word_id": "n2_0829",
+      "word_number": 829,
+      "kanji": "〜下",
+      "furigana": "か",
+      "meaning_en": "under ~"
+    },
+    {
+      "word_id": "n2_0830",
+      "word_number": 830,
+      "kanji": "禁じる／禁ずる",
+      "furigana": "きんじる",
+      "meaning_en": "forbid, prohibit"
+    },
+    {
+      "word_id": "n2_0831",
+      "word_number": 831,
+      "kanji": "敵",
+      "furigana": "てき",
+      "meaning_en": "enemy, opposition"
+    },
+    {
+      "word_id": "n2_0832",
+      "word_number": 832,
+      "kanji": "分析[する]",
+      "furigana": "ぶんせき",
+      "meaning_en": "analysis, analyze"
+    }
+  ]
+}

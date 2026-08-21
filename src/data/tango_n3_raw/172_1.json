@@ -1,0 +1,33 @@
+{
+  "id": "172_1",
+  "title": "Topic 12 旅行 Travel",
+  "japanese_text": "A：なんか<ruby>横浜<rt>よこはま</rt></ruby><span class='annotated-word' data-word='〜港'>港</span>をクルーズ<span class='annotated-word' data-word='〜船'>船</span>で<ruby>回<rt>まわ</rt></ruby>りながらディナーが<ruby>食<rt>た</rt></ruby>べられる<span class='annotated-word' data-word='ツアー'>ツアー</span>があるらしいよ。<br>B：へえ。でも<ruby>前<rt>まえ</rt></ruby>から<ruby>予約<rt>よやく</rt></ruby>しないといけないんじゃないの。<br>A：いや、<span class='annotated-word' data-word='定員'>定員</span>が<ruby>多<rt>おお</rt></ruby>いから、<ruby>平日<rt>へいじつ</rt></ruby>なら<span class='annotated-word' data-word='前日'>前日</span>でもOKだったって。",
+  "english_translation": "A: Apparently they have a tour where you can get on a cruise ship and have dinner as it goes around Yokohama Bay. B: Do they? I'll bet you have to make a reservation in advance, don't you? A: No, I heard they have a large capacity on the ship that for weekdays, you can even make the reservation the day before.",
+  "annotated_words": [
+    {
+      "meaning_en": "bay",
+      "furigana": "こう",
+      "kanji": "〜港"
+    },
+    {
+      "meaning_en": "ship",
+      "furigana": "せん",
+      "kanji": "〜船"
+    },
+    {
+      "meaning_en": "tour",
+      "furigana": "",
+      "kanji": "ツアー"
+    },
+    {
+      "meaning_en": "capacity",
+      "furigana": "ていいん",
+      "kanji": "定員"
+    },
+    {
+      "meaning_en": "day before",
+      "furigana": "ぜんじつ",
+      "kanji": "前日"
+    }
+  ]
+}

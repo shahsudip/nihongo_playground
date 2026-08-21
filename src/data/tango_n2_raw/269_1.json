@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 5,
+  "title": "Topic 19 健康",
+  "page_story": "269_1",
+  "japanese_text": "A：風邪をひかないように、何か気をつけてることある？\nB：こまめに<u>換気したり</u>、ちゃんと<u>効力</u>が<u>裏付けられた</u> <u>除菌</u>スプレーを使ったりしてるよ。それから、<u>寒け</u>がしたり、風邪<u>気味</u>だと思ったりしたら、出社しないようにしてる。",
+  "english_translation": "A: Do you take any precautions to avoid catching a cold? B: I ventilate the room frequently and I use a disinfectant spray that is demonstrated to be effective. I also try to avoid going to work if have a chill or the suggestion of a cold.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1866",
+      "word_number": 1866,
+      "kanji": "換気[する]",
+      "furigana": "かんき",
+      "meaning_en": "ventilation, ventilate"
+    },
+    {
+      "word_id": "n2_1867",
+      "word_number": 1867,
+      "kanji": "効力",
+      "furigana": "こうりょく",
+      "meaning_en": "effectiveness"
+    },
+    {
+      "word_id": "n2_1868",
+      "word_number": 1868,
+      "kanji": "裏付ける",
+      "furigana": "うらづける",
+      "meaning_en": "demonstrate, back up"
+    },
+    {
+      "word_id": "n2_1869",
+      "word_number": 1869,
+      "kanji": "除菌[する]",
+      "furigana": "じょきん",
+      "meaning_en": "disinfectant, disinfect"
+    },
+    {
+      "word_id": "n2_1870",
+      "word_number": 1870,
+      "kanji": "寒け",
+      "furigana": "さむけ",
+      "meaning_en": "(body) chill"
+    },
+    {
+      "word_id": "n2_1871",
+      "word_number": 1871,
+      "kanji": "～気味",
+      "furigana": "ぎみ",
+      "meaning_en": "feeling of ~, suggestion of ~"
+    }
+  ]
+}

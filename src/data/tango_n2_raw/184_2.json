@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 3,
+  "title": "Topic 14 天気",
+  "page_story": "184_2",
+  "japanese_text": "<u>紫外線</u>は太陽<u>光線</u>の一種であり、２月から夏にかけて<u>徐々に</u>増えていく。紫外線は<u>日焼け</u>やしみの原因になるが、<u>日光</u>を浴びなければ、ビタミンDが<u>不足して</u>しまう。",
+  "english_translation": "Ultraviolet rays are a type of solar radiation that gradually increases from February throughout summer. Although UV rays can cause sunburn and skin blotches, without exposure to sunlight, we would be deficient in vitamin D.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1205",
+      "word_number": 1205,
+      "kanji": "紫外線",
+      "furigana": "しがいせん",
+      "meaning_en": "ultraviolet ray"
+    },
+    {
+      "word_id": "n2_1206",
+      "word_number": 1206,
+      "kanji": "光線",
+      "furigana": "こうせん",
+      "meaning_en": "radiation, ray"
+    },
+    {
+      "word_id": "n2_1207",
+      "word_number": 1207,
+      "kanji": "徐々に",
+      "furigana": "じょじょに",
+      "meaning_en": "gradually"
+    },
+    {
+      "word_id": "n2_1208",
+      "word_number": 1208,
+      "kanji": "日焼け[する]",
+      "furigana": "ひやけ",
+      "meaning_en": "sunburn, get sunburned"
+    },
+    {
+      "word_id": "n2_1209",
+      "word_number": 1209,
+      "kanji": "日光",
+      "furigana": "にっこう",
+      "meaning_en": "sunlight"
+    },
+    {
+      "word_id": "n2_1210",
+      "word_number": 1210,
+      "kanji": "不足[する]",
+      "furigana": "ふそく",
+      "meaning_en": "deficiency, be deficient"
+    }
+  ]
+}

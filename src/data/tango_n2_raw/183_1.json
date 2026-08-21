@@ -1,0 +1,52 @@
+{
+  "is_story": true,
+  "story_number": 1,
+  "title": "Topic 14 天気",
+  "page_story": "183_1",
+  "japanese_text": "<u>ダム</u>は、川の上流で洪水が起きたときに、水を止めることができる。だが、水を<u>ためる</u>一方では、<u>溢れて</u>下流に<u>被害</u>を及ぼしてしまうため、<u>たまった</u>水は調節しながら流される。",
+  "english_translation": "When flooding occurs upstream, a dam can hold back the water. However, when water is stored up, it can overflow and cause damage downstream, so the buildup of water is usually channeled away as a regulated flow.",
+  "annotated_words": [
+    {
+      "word_id": "n2_1194",
+      "word_number": 1194,
+      "kanji": "ダム",
+      "furigana": "だむ",
+      "meaning_en": "dam"
+    },
+    {
+      "word_id": "n2_1195",
+      "word_number": 1195,
+      "kanji": "ためる",
+      "furigana": "",
+      "meaning_en": "store up"
+    },
+    {
+      "word_id": "n2_1196",
+      "word_number": 1196,
+      "kanji": "溢れる",
+      "furigana": "あふれる",
+      "meaning_en": "overflow"
+    },
+    {
+      "word_id": "n2_1197",
+      "word_number": 1197,
+      "kanji": "被害",
+      "furigana": "ひがい",
+      "meaning_en": "damage, harm"
+    },
+    {
+      "word_id": "n2_1198",
+      "word_number": 1198,
+      "kanji": "たまる",
+      "furigana": "",
+      "meaning_en": "accumulate, build up"
+    },
+    {
+      "word_id": "n2_1199",
+      "word_number": 1199,
+      "kanji": "水たまり",
+      "furigana": "みずたまり",
+      "meaning_en": "accumulated water"
+    }
+  ]
+}
