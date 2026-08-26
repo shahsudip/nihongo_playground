@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Human Lip-Sync</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #0f0f1a;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            gap: 30px;
+            overflow: hidden;
+        }
+
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 15px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            z-index: 100;
+        }
+
+        input[type="text"] {
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            border-radius: 12px;
+            border: none;
+            width: 350px;
+            outline: none;
+            background: rgba(255,255,255,0.9);
+        }
+
+        .persona-switcher {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .persona-btn {
+            padding: 10px 14px;
+            font-size: 0.95rem;
+            background: rgba(255,255,255,0.12);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 999px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .persona-btn.active {
+            background: linear-gradient(135deg, #4ade80, #22c55e);
+            color: #06230d;
+            border-color: transparent;
+            box-shadow: 0 6px 18px rgba(34, 197, 94, 0.4);
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            background: linear-gradient(135deg, #00e5ff, #0077ff);
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+            box-shadow: 0 4px 15px rgba(0, 119, 255, 0.4);
+        }
+
+        button:active { transform: scale(0.95); }
+        button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 119, 255, 0.6); }
+
+        .scene {
+            position: relative;
+            width: 400px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        /* --- FLUID HUMAN STRUCTURE --- */
+        .human {
+            --skin: #ffccaa;
+            --hair: #2f3542;
+            --shirt: #ff4757;
+            --shirt-dark: #d82f3d;
+            --face-outline: #2f3542;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            transform-origin: bottom center;
+            z-index: 10;
+        }
+
+        .hair-back {
+            position: absolute;
+            left: 50%;
+            top: 52px;
+            width: 150px;
+            height: 170px;
+            background: var(--hair);
+            border-radius: 46% 46% 30% 30%;
+            transform: translateX(-50%);
+            z-index: 2;
+            box-shadow: inset -8px -12px 16px rgba(0,0,0,0.12);
+            transition: background 0.2s ease, width 0.2s ease, height 0.2s ease, top 0.2s ease;
+        }
+
+        .human.persona-father {
+            --skin: #f2c6a0; --hair: #3d2a1d; --shirt: #6d4c41; --shirt-dark: #4b3027;
+            --face-width: 108px; --face-height: 118px; --face-radius: 34% 34% 30% 30%;
+            --hair-top: -22px; --hair-width: 128px; --hair-height: 62px; --hair-shape: 35px 35px 16px 16px;
+            --bangs-width: 88px; --bangs-height: 30px; --bangs-shape: 0 0 18px 18px;
+            --forehead-width: 90px;
+        }
+        .human.persona-mother {
+            --skin: #f8d8bb; --hair: #5b3f2d; --shirt: #ff7aa2; --shirt-dark: #e45985;
+            --face-width: 94px; --face-height: 104px; --face-radius: 50% 50% 42% 42%;
+            --hair-top: -20px; --hair-width: 120px; --hair-height: 72px; --hair-shape: 58px 58px 30px 30px;
+            --bangs-width: 112px; --bangs-height: 26px; --bangs-shape: 0 0 54px 54px;
+            --forehead-width: 100px;
+        }
+        .human.persona-son {
+            --skin: #e8b88d; --hair: #1f2a37; --shirt: #3b82f6; --shirt-dark: #1d4ed8;
+            --face-width: 88px; --face-height: 98px; --face-radius: 28% 28% 24% 24%;
+            --hair-top: -8px; --hair-width: 108px; --hair-height: 46px; --hair-shape: 20px 20px 8px 8px;
+            --bangs-width: 82px; --bangs-height: 20px; --bangs-shape: 0 0 12px 12px;
+            --forehead-width: 82px;
+        }
+        .human.persona-daughter {
+            --skin: #f4d2b5; --hair: #7c4a36; --shirt: #8b5cf6; --shirt-dark: #6d28d9;
+            --face-width: 102px; --face-height: 110px; --face-radius: 44% 44% 40% 40%;
+            --hair-top: -18px; --hair-width: 132px; --hair-height: 88px; --hair-shape: 80px 80px 30px 30px;
+            --bangs-width: 110px; --bangs-height: 36px; --bangs-shape: 0 0 60px 60px;
+            --forehead-width: 98px;
+        }
+
+        .human.persona-son .mouth,
+        .human.persona-daughter .mouth {
+            background: #2f3542;
+        }
+
+        .human.persona-mother .mouth,
+        .human.persona-father .mouth {
+            background: #2f3542;
+        }
+
+        /* Breathing Animation */
+        .human { animation: breathe 4s infinite ease-in-out; }
+
+        /* The Waist/Hips (Anchor point) */
+        .hips {
+            position: relative;
+            width: 80px;
+            height: 40px;
+            background: #2b2b36;
+            border-radius: 30px;
+            z-index: 5;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Torso (Spine flexibility) */
+        .torso {
+            position: absolute;
+            bottom: 20px;
+            width: 90px;
+            height: 120px;
+            background: var(--shirt);
+            border-radius: 40px 40px 30px 30px;
+            transform-origin: bottom center;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            box-shadow: inset -10px -15px 20px rgba(0,0,0,0.2);
+            transition: transform 0.2s, background 0.2s ease;
+        }
+        
+        .torso {
+            animation: torso-idle 2s infinite alternate ease-in-out;
+        }
+
+        /* Neck */
+        .neck {
+            position: absolute;
+            top: -20px;
+            width: 30px;
+            height: 35px;
+            background: var(--skin);
+            border-radius: 10px;
+            z-index: 9;
+            transform-origin: bottom center;
+            transition: background 0.2s ease;
+        }
+
+        /* Head */
+        .head {
+            position: absolute;
+            top: -90px;
+            width: var(--face-width, 100px);
+            height: var(--face-height, 110px);
+            background: var(--skin);
+            border-radius: var(--face-radius, 45% 45% 40% 40%);
+            z-index: 20;
+            transform-origin: bottom center;
+            box-shadow: inset -5px -10px 15px rgba(200, 100, 50, 0.2), 0 5px 15px rgba(0,0,0,0.15);
+            transition: transform 0.2s, background 0.2s ease, width 0.2s ease, height 0.2s ease, border-radius 0.2s ease;
+        }
+
+        .head {
+            animation: head-idle 1.5s infinite alternate ease-in-out;
+        }
+
+        /* Hair */
+        .hair {
+            position: absolute;
+            top: var(--hair-top, -15px);
+            left: -10px;
+            width: var(--hair-width, 120px);
+            height: var(--hair-height, 60px);
+            background: var(--hair);
+            border-radius: var(--hair-shape, 60px 60px 20px 20px);
+            z-index: 21;
+            box-shadow: inset 0 -3px 0 rgba(255,255,255,0.06);
+            transition: background 0.2s ease, width 0.2s ease, height 0.2s ease, top 0.2s ease, border-radius 0.2s ease;
+        }
+        .human.persona-mother .hair,
+        .human.persona-daughter .hair {
+            height: 76px;
+            top: -28px;
+            width: 158px;
+            left: -18px;
+            border-radius: 48% 48% 26% 26% / 82% 82% 18% 18%;
+            z-index: 22;
+            box-shadow: inset 0 -8px 0 rgba(0,0,0,0.08);
+            clip-path: polygon(0% 100%, 0% 46%, 18% 18%, 34% 0%, 50% 16%, 66% 0%, 82% 18%, 100% 46%, 100% 100%);
+        }
+
+        .human.persona-mother .hair::before,
+        .human.persona-daughter .hair::before,
+        .human.persona-mother .hair::after,
+        .human.persona-daughter .hair::after {
+            content: "";
+            position: absolute;
+            top: 12px;
+            width: 22px;
+            height: 72px;
+            background: var(--hair);
+            border-radius: 50% 50% 42% 42%;
+        }
+
+        .human.persona-mother .hair::before,
+        .human.persona-daughter .hair::before {
+            left: -8px;
+            transform: rotate(18deg);
+        }
+
+        .human.persona-mother .hair::after,
+        .human.persona-daughter .hair::after {
+            right: -8px;
+            transform: rotate(-18deg);
+        }
+
+        .human.persona-mother .hair-back,
+        .human.persona-daughter .hair-back {
+            width: 196px;
+            height: 210px;
+            top: 22px;
+            border-radius: 52% 52% 22% 22%;
+            z-index: 3;
+        }
+        .human.persona-mother .hair-bangs,
+        .human.persona-daughter .hair-bangs {
+            top: 14px;
+            left: 18px;
+            width: 72px;
+            height: 16px;
+            border-radius: 18px 18px 12px 12px;
+            background: var(--hair);
+            z-index: 23;
+            box-shadow: inset 0 -2px 0 rgba(255,255,255,0.08);
+        }
+        .human.persona-son .hair-back {
+            width: 138px;
+            height: 150px;
+            top: 58px;
+        }
+        .hair-bangs {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: var(--bangs-width, 100px);
+            height: var(--bangs-height, 30px);
+            background: var(--hair);
+            border-radius: var(--bangs-shape, 0 0 50px 50px);
+            z-index: 20;
+            box-shadow: inset 0 -2px 0 rgba(255,255,255,0.08);
+            transition: background 0.2s ease, width 0.2s ease, height 0.2s ease, border-radius 0.2s ease, top 0.2s ease;
+        }
+
+        /* Face Details */
+        .eyes {
+            position: absolute;
+            top: 45%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 0 20px;
+            box-sizing: border-box;
+            z-index: 22;
+        }
+
+        .eye {
+            width: 12px;
+            height: 12px;
+            background: #2f3542;
+            border-radius: 50%;
+            animation: blink 4s infinite;
+        }
+
+        .human.persona-son .eye,
+        .human.persona-daughter .eye {
+            width: 10px;
+            height: 10px;
+        }
+
+        .human.persona-father .eye,
+        .human.persona-mother .eye {
+            width: 13px;
+            height: 13px;
+        }
+
+        /* Dynamic Mouth */
+        .mouth {
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2f3542;
+            transition: all 0.28s ease-in-out;
+            z-index: 22;
+        }
+
+        /* Lip-sync shapes (tiny, natural mouth motion) */
+        .mouth-default { width: 18px; height: 4px; border-radius: 0 0 12px 12px; background: transparent; border-bottom: 2px solid #2f3542; }
+        .mouth-n { width: 16px; height: 3px; border-radius: 10px; background: #2f3542; }
+        .mouth-a { width: 18px; height: 8px; border-radius: 10px 10px 12px 12px; }
+        .mouth-i { width: 20px; height: 5px; border-radius: 4px; background: #2f3542; }
+        .mouth-u { width: 14px; height: 7px; border-radius: 50%; }
+        .mouth-e { width: 18px; height: 7px; border-radius: 5px 5px 12px 12px; }
+        .mouth-o { width: 16px; height: 9px; border-radius: 50%; }
+
+        .human.persona-son .mouth-a,
+        .human.persona-son .mouth-o,
+        .human.persona-son .mouth-e,
+        .human.persona-son .mouth-i {
+            background: #2f3542;
+            box-shadow: inset 0 -3px 0 rgba(255,255,255,0.6), 0 0 0 1px rgba(0,0,0,0.15);
+        }
+
+        .human.dance-mode {
+            animation: none;
+        }
+
+        .human.dance-mode .hips {
+            animation: naagin-hips 0.5s infinite alternate ease-in-out;
+        }
+
+        .human.dance-mode .torso {
+            animation: naagin-torso 0.45s infinite alternate ease-in-out;
+        }
+
+        .human.dance-mode .head {
+            animation: naagin-head 0.45s infinite alternate ease-in-out;
+        }
+
+        .human.dance-mode .hair,
+        .human.dance-mode .hair-back,
+        .human.dance-mode .hair-bangs {
+            animation: naagin-hair 0.45s infinite alternate ease-in-out;
+        }
+
+        .human.dance-mode .upper-arm.left {
+            animation: naagin-arm-left 0.35s infinite alternate ease-in-out;
+        }
+
+        .human.dance-mode .lower-arm.left {
+            animation: naagin-lower-left 0.35s infinite alternate ease-in-out;
+        }
+
+        .human.dance-mode .upper-arm.right {
+            animation: naagin-arm-right 0.35s infinite alternate ease-in-out;
+        }
+
+        .human.dance-mode .lower-arm.right {
+            animation: naagin-lower-right 0.35s infinite alternate ease-in-out;
+        }
+
+        .human.persona-son .mouth-a::before,
+        .human.persona-son .mouth-o::before,
+        .human.persona-son .mouth-e::before,
+        .human.persona-son .mouth-i::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 50%;
+            border-bottom: 2px solid #fff;
+            border-radius: 0 0 10px 10px;
+        }
+
+        /* Multi-Jointed Arms */
+        .shoulder {
+            position: absolute;
+            top: 10px;
+            width: 25px;
+            height: 25px;
+            background: var(--shirt);
+            border-radius: 50%;
+            z-index: 15;
+            transition: background 0.2s ease;
+        }
+        .shoulder.left { left: -10px; }
+        .shoulder.right { right: -10px; }
+
+        .upper-arm {
+            position: absolute;
+            top: 10px;
+            width: 22px;
+            height: 70px;
+            background: var(--shirt);
+            border-radius: 11px;
+            transform-origin: top center;
+            transition: background 0.2s ease;
+        }
+        .upper-arm.left { left: -5px; transform: rotate(20deg); }
+        .upper-arm.right { right: -5px; transform: rotate(-20deg); }
+
+        .lower-arm {
+            position: absolute;
+            bottom: -55px;
+            left: 0;
+            width: 20px;
+            height: 65px;
+            background: #ffccaa; /* Skin color below sleeve */
+            border-radius: 10px;
+            transform-origin: top center;
+            box-shadow: inset -2px -5px 10px rgba(200, 100, 50, 0.2);
+        }
+        
+        .hand {
+            position: absolute;
+            bottom: -15px;
+            left: -3px;
+            width: 26px;
+            height: 30px;
+            background: #ffccaa;
+            border-radius: 15px;
+        }
+
+        /* Continuous hand motion loop */
+        .upper-arm.left {
+            animation: arm-up-left 2.6s infinite ease-in-out;
+        }
+        .lower-arm.left {
+            animation: elbow-bend-left 2.9s infinite ease-in-out;
+        }
+        .upper-arm.right {
+            animation: arm-up-right 3.1s infinite ease-in-out;
+        }
+        .lower-arm.right {
+            animation: elbow-bend-right 2.8s infinite ease-in-out;
+        }
+
+        /* Multi-Jointed Legs */
+        .leg {
+            position: absolute;
+            top: 15px;
+            width: 30px;
+            height: 80px;
+            background: #2f3542;
+            border-radius: 15px;
+            transform-origin: top center;
+        }
+        .leg.left { left: 5px; transform: rotate(5deg); }
+        .leg.right { right: 5px; transform: rotate(-5deg); }
+        
+        .lower-leg {
+            position: absolute;
+            bottom: -70px;
+            left: 0;
+            width: 26px;
+            height: 80px;
+            background: #2f3542;
+            border-radius: 13px;
+            transform-origin: top center;
+        }
+        .shoe {
+            position: absolute;
+            bottom: -15px;
+            left: -10px;
+            width: 45px;
+            height: 25px;
+            background: #f1f2f6; /* White sneakers */
+            border-radius: 20px 20px 5px 5px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+        }
+
+        /* Floor Shadow */
+        .floor-shadow {
+            width: 150px;
+            height: 15px;
+            background: rgba(0,0,0,0.6);
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0px;
+            filter: blur(8px);
+            z-index: 1;
+        }
+
+        /* --- SPEECH BUBBLE --- */
+        .speech-bubble {
+            position: absolute;
+            top: -60px;
+            right: -160px;
+            background: white;
+            color: #333;
+            padding: 15px 25px;
+            border-radius: 20px 20px 20px 0;
+            font-weight: 900;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            white-space: nowrap;
+            opacity: 0;
+            transform: scale(0.8) translateY(10px);
+            transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+            z-index: 50;
+        }
+
+        .speech-bubble.visible {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+
+        .speech-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 20px solid white;
+            border-right: 20px solid transparent;
+        }
+
+        /* --- ANIMATIONS --- */
+        @keyframes breathe {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+        
+        @keyframes torso-idle {
+            0% { transform: rotate(-2deg); }
+            100% { transform: rotate(3deg); }
+        }
+        
+        @keyframes head-idle {
+            0% { transform: rotate(-3deg) translateY(0); }
+            100% { transform: rotate(4deg) translateY(-2px); }
+        }
+
+        /* Complex, fluid arm kinematics */
+        @keyframes arm-up-left {
+            0%   { transform: rotate(12deg); }
+            18%  { transform: rotate(34deg); }
+            44%  { transform: rotate(50deg); }
+            68%  { transform: rotate(22deg); }
+            100% { transform: rotate(18deg); }
+        }
+        @keyframes elbow-bend-left {
+            0%   { transform: rotate(0deg); }
+            20%  { transform: rotate(-28deg); }
+            48%  { transform: rotate(-72deg); }
+            74%  { transform: rotate(-40deg); }
+            100% { transform: rotate(-15deg); }
+        }
+        
+        @keyframes arm-up-right {
+            0%   { transform: rotate(-18deg); }
+            20%  { transform: rotate(-8deg); }
+            46%  { transform: rotate(-32deg); }
+            72%  { transform: rotate(-14deg); }
+            100% { transform: rotate(-26deg); }
+        }
+        @keyframes elbow-bend-right {
+            0%   { transform: rotate(0deg); }
+            18%  { transform: rotate(18deg); }
+            50%  { transform: rotate(42deg); }
+            76%  { transform: rotate(58deg); }
+            100% { transform: rotate(24deg); }
+        }
+
+        @keyframes blink {
+            0%, 45%, 55%, 100% { transform: scaleY(1); }
+            50% { transform: scaleY(0.1); }
+        }
+
+        @keyframes naagin-hips {
+            0% { transform: rotate(-8deg) translateY(0); }
+            50% { transform: rotate(8deg) translateY(-5px); }
+            100% { transform: rotate(-10deg) translateY(0); }
+        }
+
+        @keyframes naagin-torso {
+            0% { transform: rotate(-12deg) translateY(0); }
+            25% { transform: rotate(5deg) translateY(-2px); }
+            50% { transform: rotate(12deg) translateY(0); }
+            75% { transform: rotate(-7deg) translateY(-1px); }
+            100% { transform: rotate(-12deg) translateY(0); }
+        }
+
+        @keyframes naagin-head {
+            0% { transform: rotate(-16deg) translateY(0); }
+            50% { transform: rotate(11deg) translateY(-5px); }
+            100% { transform: rotate(-14deg) translateY(0); }
+        }
+
+        @keyframes naagin-hair {
+            0% { transform: rotate(-4deg); }
+            100% { transform: rotate(5deg); }
+        }
+
+        @keyframes naagin-arm-left {
+            0% { transform: rotate(30deg) translateY(0); }
+            50% { transform: rotate(95deg) translateY(-2px); }
+            100% { transform: rotate(35deg) translateY(2px); }
+        }
+
+        @keyframes naagin-lower-left {
+            0% { transform: rotate(-14deg); }
+            50% { transform: rotate(-60deg); }
+            100% { transform: rotate(-18deg); }
+        }
+
+        @keyframes naagin-arm-right {
+            0% { transform: rotate(-28deg) translateY(0); }
+            50% { transform: rotate(-90deg) translateY(-2px); }
+            100% { transform: rotate(-30deg) translateY(2px); }
+        }
+
+        @keyframes naagin-lower-right {
+            0% { transform: rotate(12deg); }
+            50% { transform: rotate(68deg); }
+            100% { transform: rotate(10deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <input type="text" id="textInput" value="みなさん、こんにちは！よろしくお願いします。">
+        <div class="persona-switcher" aria-label="Character personas">
+            <button class="persona-btn active" type="button" data-persona="father">Father</button>
+            <button class="persona-btn" type="button" data-persona="mother">Mother</button>
+            <button class="persona-btn" type="button" data-persona="son">Son</button>
+            <button class="persona-btn" type="button" data-persona="daughter">Daughter</button>
+        </div>
+        <button id="speakBtn">Speak! 🗣️</button>
+        <button id="danceBtn" type="button">Dance! 💃</button>
+    </div>
+
+    <div class="scene">
+        <div class="human" id="character">
+            <div class="speech-bubble" id="bubble">
+                <span id="bubbleText"></span>
+            </div>
+            <div class="hair-back"></div>
+            
+            <div class="hips">
+                <!-- LEGS (Attached to hips) -->
+                <div class="leg left">
+                    <div class="lower-leg"><div class="shoe"></div></div>
+                </div>
+                <div class="leg right">
+                    <div class="lower-leg"><div class="shoe"></div></div>
+                </div>
+                
+                <!-- TORSO (Attached to hips) -->
+                <div class="torso">
+                    <!-- Shoulders & Arms -->
+                    <div class="shoulder left"></div>
+                    <div class="shoulder right"></div>
+                    
+                    <div class="upper-arm left">
+                        <div class="lower-arm left"><div class="hand"></div></div>
+                    </div>
+                    <div class="upper-arm right">
+                        <div class="lower-arm right"><div class="hand"></div></div>
+                    </div>
+
+                    <!-- NECK & HEAD -->
+                    <div class="neck"></div>
+                    <div class="head">
+                        <div class="hair"></div>
+                        <div class="hair-bangs"></div>
+                        <div class="eyes">
+                            <div class="eye"></div>
+                            <div class="eye"></div>
+                        </div>
+                        <div class="mouth mouth-default" id="mouth"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floor-shadow"></div>
+    </div>
+
+    <script>
+        const speakBtn = document.getElementById('speakBtn');
+        const danceBtn = document.getElementById('danceBtn');
+        const textInput = document.getElementById('textInput');
+        const mouth = document.getElementById('mouth');
+        const character = document.getElementById('character');
+        const bubble = document.getElementById('bubble');
+        const bubbleText = document.getElementById('bubbleText');
+        const personaButtons = document.querySelectorAll('.persona-btn');
+
+        const personaSettings = {
+            father: { rate: 0.8 },
+            mother: { rate: 0.9 },
+            son: { rate: 0.75 },
+            daughter: { rate: 0.85 }
+        };
+
+        function applyPersona(persona) {
+            character.classList.remove('persona-father', 'persona-mother', 'persona-son', 'persona-daughter');
+            character.classList.add(`persona-${persona}`);
+            personaButtons.forEach((button) => {
+                button.classList.toggle('active', button.dataset.persona === persona);
+            });
+        }
+
+        personaButtons.forEach((button) => {
+            button.addEventListener('click', () => applyPersona(button.dataset.persona));
+        });
+
+        applyPersona('father');
+
+        function setDanceMode(enabled) {
+            character.classList.toggle('dance-mode', enabled);
+        }
+
+        danceBtn.addEventListener('click', () => {
+            setDanceMode(true);
+            clearTimeout(window.danceTimer);
+            window.danceTimer = setTimeout(() => setDanceMode(false), 2200);
+        });
+
+        function getVowel(char) {
+            if (!char) return 'default';
+            const normalized = (char.normalize('NFD') || char)[0] || char;
+            const aChars = "あかさたなはまやらわアカサタナハマヤラワゃャぁァ";
+            const iChars = "いきしちにひみりイキシチニヒミリぃィ";
+            const uChars = "うくすつぬふむゆるウクスツヌフムユルぅゥゅュ";
+            const eChars = "えけせてねへめれエケセテネヘメレぇェ";
+            const oChars = "おこそとのほもよろをオコソトノホモヨロヲぉォょョ";
+            const nChars = "んンっッ";
+
+            if (aChars.includes(normalized)) return 'a';
+            if (iChars.includes(normalized)) return 'i';
+            if (uChars.includes(normalized)) return 'u';
+            if (eChars.includes(normalized)) return 'e';
+            if (oChars.includes(normalized)) return 'o';
+            if (nChars.includes(normalized)) return 'n';
+            if ("、。！？.!? ー-".includes(char)) return 'n';
+            return 'default';
+        }
+
+        function setMouthShape(vowel) {
+            mouth.className = 'mouth';
+            const shape = vowel && vowel !== 'default' ? vowel : 'default';
+            mouth.classList.add(`mouth-${shape}`);
+        }
+
+        speakBtn.addEventListener('click', () => {
+            if (!('speechSynthesis' in window)) {
+                alert('This browser does not support speech synthesis.');
+                return;
+            }
+
+            const text = textInput.value.trim();
+            if (!text) return;
+
+            window.speechSynthesis.cancel();
+
+            const currentPersona = document.querySelector('.persona-btn.active')?.dataset.persona || 'father';
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'ja-JP';
+            utterance.rate = personaSettings[currentPersona]?.rate || 0.8;
+
+            bubble.classList.add('visible');
+            bubbleText.textContent = text;
+            character.classList.add('speaking-active');
+            setMouthShape('default');
+
+            utterance.onboundary = (event) => {
+                const charIndex = Math.max(0, event.charIndex || 0);
+                const charLength = Math.max(1, event.charLength || 1);
+                const endIndex = Math.min(text.length, charIndex + charLength);
+                const spokenSegment = text.slice(charIndex, endIndex).trim();
+                const lookupChar = spokenSegment.charAt(0) || text.charAt(charIndex) || text.charAt(text.length - 1);
+                const vowel = getVowel(lookupChar);
+
+                if (event.name === 'word' || spokenSegment || vowel !== 'default') {
+                    setMouthShape(vowel === 'default' ? 'n' : vowel);
+                    bubbleText.textContent = text.substring(0, endIndex);
+                }
+            };
+
+            utterance.onend = () => {
+                character.classList.remove('speaking-active');
+                setMouthShape('default');
+                bubbleText.textContent = text;
+                setTimeout(() => {
+                    bubble.classList.remove('visible');
+                }, 2000);
+            };
+
+            utterance.onerror = () => {
+                character.classList.remove('speaking-active');
+                setMouthShape('default');
+            };
+
+            window.speechSynthesis.speak(utterance);
+        });
+    </script>
+</body>
+</html>
