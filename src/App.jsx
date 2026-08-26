@@ -4,6 +4,7 @@ import { useAuth } from './context/AuthContext.jsx';
 import './assets/app_style.css';
 import './assets/book_features.css';
 import './assets/restored_tests.css';
+import './assets/drill_animations.css';
 
 import MainLayout from './components/main_layout.jsx';
 import LandingPage from './components/landing_screen.jsx';
@@ -17,8 +18,11 @@ import ReadingQuizPage from './components/ReadingQUizPage.jsx';
 //import QuizPage from './components/standard_quiz_screen.jsx';
 import VocabularyListPage from './components/VocabularyListPage.jsx';
 import FlashcardViewer from './components/FlashcardViewer.jsx';
-import GrammarListPage from './components/grammar_list_page.jsx';
 import GrammarStudyPage from './components/grammar_study_page.jsx';
+import GrammarListPage from './components/grammar_list_page.jsx';
+import KanjiDetailsPage from './components/KanjiDetailsPage.jsx';
+import VocabDetailsPage from './components/VocabDetailsPage.jsx';
+import GrammarDetailsPage from './components/GrammarDetailsPage.jsx';
 
 // --- NEW IMPORTS FOR PRACTICE TEST FLOW ---
 import PracticeCategoryPage from './components/PracticeCategoryPage.jsx';
@@ -39,6 +43,9 @@ import PracticeSetsListPage from './components/PracticeSetsListPage.jsx';
 import PracticeSetDetailsPage from './components/PracticeSetDetailsPage.jsx';
 import PracticeSetQuizPage from './components/PracticeSetQuizPage.jsx';
 
+import KanjiListPage from './components/KanjiListPage.jsx';
+import CustomKanjiDrillQuiz from './components/CustomKanjiDrillQuiz.jsx';
+
 // This component protects routes that require a user to be logged in
 function ProtectedRoute({ children }) {
   const { currentUser } = useAuth();
@@ -51,6 +58,15 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        
+        {/* Standalone Pages (No MainLayout) */}
+        <Route path="/levels/:level/kanji-list" element={<ProtectedRoute><KanjiListPage /></ProtectedRoute>} />
+        <Route path="/kanji-drill/:level" element={<ProtectedRoute><CustomKanjiDrillQuiz /></ProtectedRoute>} />
+        <Route path="/levels/:level/vocabulary-list" element={<ProtectedRoute><VocabularyListPage /></ProtectedRoute>} />
+        <Route path="/levels/:level/grammar-list" element={<ProtectedRoute><GrammarListPage /></ProtectedRoute>} />
+        <Route path="/levels/:level/kanji-details/:id" element={<ProtectedRoute><KanjiDetailsPage /></ProtectedRoute>} />
+        <Route path="/levels/:level/vocab-details/:id" element={<ProtectedRoute><VocabDetailsPage /></ProtectedRoute>} />
+        <Route path="/levels/:level/grammar-details/:id" element={<ProtectedRoute><GrammarDetailsPage /></ProtectedRoute>} />
 
         {/* All other pages use the MainLayout and are protected */}
         <Route element={<MainLayout />}>
@@ -91,13 +107,8 @@ export default function App() {
             path="/reading-quiz/:quizId"
             element={<ProtectedRoute><ReadingQuizPage /></ProtectedRoute>}
           />
-          <Route path="/flashcards/:level/vocabulary_list" element={<ProtectedRoute><VocabularyListPage /></ProtectedRoute>} />
           <Route path="/flashcards/:level/vocabulary_list/:chunkIndex" element={<ProtectedRoute><FlashcardViewer /></ProtectedRoute>} />
 
-          <Route 
-            path="/grammar-list/:level" 
-            element={<ProtectedRoute><GrammarListPage /></ProtectedRoute>} 
-          />
           <Route 
             path="/study/grammar/:level/:slug" 
             element={<ProtectedRoute><GrammarStudyPage /></ProtectedRoute>} 

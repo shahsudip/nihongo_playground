@@ -73,25 +73,33 @@ const LevelSelectionPage = () => {
           </Link>
         ))}
         
-        <Link to={`/flashcards/${level}/vocabulary_list`} className="block group">
-          <Card className="h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-emerald-500/50 bg-emerald-500/5 border-emerald-500/20">
-            <h2 className="text-xl font-bold text-emerald-600 group-hover:text-emerald-500 transition-colors">
+        <Link to={`/levels/${level}/kanji-list`} className="block group">
+          <Card className="h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-[var(--color-accent)]/50 bg-[var(--color-bg-secondary)]">
+            <h2 className="text-xl font-bold text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors">
+              Kanji List
+            </h2>
+          </Card>
+        </Link>
+
+        <Link to={`/levels/${level}/vocabulary-list`} className="block group">
+          <Card className="h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-[var(--color-accent)]/50 bg-[var(--color-bg-secondary)]">
+            <h2 className="text-xl font-bold text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors">
               Vocabulary List
             </h2>
           </Card>
         </Link>
 
-        <Link to={`/grammar-list/${level}`} className="block group">
-          <Card className="h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-emerald-500/50 bg-emerald-500/5 border-emerald-500/20">
-            <h2 className="text-xl font-bold text-emerald-600 group-hover:text-emerald-500 transition-colors">
+        <Link to={`/levels/${level}/grammar-list`} className="block group">
+          <Card className="h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-[var(--color-accent)]/50 bg-[var(--color-bg-secondary)]">
+            <h2 className="text-xl font-bold text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors">
               Grammar List
             </h2>
           </Card>
         </Link>
 
         <Link to={`/level/${level}/practice-test`} className="block group">
-          <Card className="h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-amber-500/50 bg-amber-500/5 border-amber-500/20">
-            <h2 className="text-xl font-bold text-amber-600 group-hover:text-amber-500 transition-colors">
+          <Card className="h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-[var(--color-accent)]/50 bg-[var(--color-bg-secondary)]">
+            <h2 className="text-xl font-bold text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors">
               Practice Test
             </h2>
           </Card>

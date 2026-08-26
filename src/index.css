@@ -85,3 +85,9 @@
     margin-bottom: 2px;
   }
 }
+
+@keyframes stroke-animation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
