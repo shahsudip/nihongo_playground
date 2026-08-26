@@ -64,6 +64,8 @@ export default function App() {
         <Route path="/kanji-drill/:level" element={<ProtectedRoute><CustomKanjiDrillQuiz /></ProtectedRoute>} />
         <Route path="/levels/:level/vocabulary-list" element={<ProtectedRoute><VocabularyListPage /></ProtectedRoute>} />
         <Route path="/levels/:level/grammar-list" element={<ProtectedRoute><GrammarListPage /></ProtectedRoute>} />
+        <Route path="/levels/:level/new-vocab-list" element={<ProtectedRoute><VocabularyListPage /></ProtectedRoute>} />
+        <Route path="/levels/:level/new-grammar-list" element={<ProtectedRoute><GrammarListPage /></ProtectedRoute>} />
         <Route path="/levels/:level/kanji-details/:id" element={<ProtectedRoute><KanjiDetailsPage /></ProtectedRoute>} />
         <Route path="/levels/:level/vocab-details/:id" element={<ProtectedRoute><VocabDetailsPage /></ProtectedRoute>} />
         <Route path="/levels/:level/grammar-details/:id" element={<ProtectedRoute><GrammarDetailsPage /></ProtectedRoute>} />
