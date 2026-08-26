@@ -82,16 +82,22 @@ const LevelSelectionPage = () => {
         </Link>
 
         <Link to={`/levels/${level}/vocabulary-list`} className="block group">
-          <Card className="h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-[var(--color-accent)]/50 bg-[var(--color-bg-secondary)]">
-            <h2 className="text-xl font-bold text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors">
+          <Card className="relative h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-[var(--color-accent)]/50 bg-[var(--color-bg-secondary)] overflow-hidden">
+            <div className="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">
+              New
+            </div>
+            <h2 className="text-xl font-bold text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors mt-2">
               Vocabulary List
             </h2>
           </Card>
         </Link>
 
         <Link to={`/levels/${level}/grammar-list`} className="block group">
-          <Card className="h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-[var(--color-accent)]/50 bg-[var(--color-bg-secondary)]">
-            <h2 className="text-xl font-bold text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors">
+          <Card className="relative h-full flex flex-col items-center justify-center min-h-[140px] p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg hover:border-[var(--color-accent)]/50 bg-[var(--color-bg-secondary)] overflow-hidden">
+            <div className="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-bl-lg">
+              New
+            </div>
+            <h2 className="text-xl font-bold text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors mt-2">
               Grammar List
             </h2>
           </Card>
