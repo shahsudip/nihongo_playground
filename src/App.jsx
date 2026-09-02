@@ -34,6 +34,7 @@ import ConversationsPage from './components/ConversationsPage.jsx';
 import BookListPage from './components/BookListPage.jsx';
 import BookChapterListPage from './components/BookChapterListPage.jsx';
 import BookQuizTakerPage from './components/BookQuizTakerPage.jsx';
+import SomatomeN3Book from './components/SomatomeN3Book.jsx';
 import ShinkanzenQuizPage from './components/ShinkanzenQuizPage.jsx';
 import TangoReadingPage from './components/TangoReadingPage.jsx';
 
@@ -147,6 +148,10 @@ export default function App() {
           <Route
             path="/books/:bookId"
             element={<ProtectedRoute><BookChapterListPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/books/sou-matome-n3-reading/chapters/:chapterId"
+            element={<ProtectedRoute><SomatomeN3Book /></ProtectedRoute>}
           />
           <Route
             path="/books/:bookId/chapters/:chapterId"

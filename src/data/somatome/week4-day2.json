@@ -1,0 +1,153 @@
+{
+  "bookId": "sou-matome-n3-reading",
+  "chapterId": "week4-day2",
+  "week": 4,
+  "day": 2,
+  "theme": "新聞を読もう",
+  "title": "Week 4 - Day 2: グラフ①",
+  "learning_focus": {
+    "title": "グラフの説明によく出てくる言葉を覚えよう！①",
+    "subtitle": "Learn words often used in explanations of graphs! (1)",
+    "comic": {
+      "text1": "日本への観光客、増えていますね！",
+      "text2": "急激に増加して、去年は過去最高を記録したんだよ。",
+      "sign": "訪日観光客数の推移",
+      "note": "グラフの増減を表す言葉（増加、減少、急激に、徐々に など）を正確に把握しよう。"
+    }
+  },
+  "vocabulary": [
+    {
+      "word": "増加する",
+      "reading": "ぞうかする",
+      "meaning": "to increase"
+    },
+    {
+      "word": "減少する",
+      "reading": "げんしょうする",
+      "meaning": "to decrease"
+    },
+    {
+      "word": "急増する",
+      "reading": "きゅうぞうする",
+      "meaning": "to increase rapidly"
+    },
+    {
+      "word": "急減する",
+      "reading": "きゅうげんする",
+      "meaning": "to decrease rapidly"
+    },
+    {
+      "word": "増える",
+      "reading": "ふえる",
+      "meaning": "to increase"
+    },
+    {
+      "word": "減る",
+      "reading": "へる",
+      "meaning": "to decrease"
+    },
+    {
+      "word": "横ばい",
+      "reading": "よこばい",
+      "meaning": "leveling off / remaining flat"
+    },
+    {
+      "word": "ピーク",
+      "reading": "ピーク",
+      "meaning": "peak"
+    },
+    {
+      "word": "過去最高",
+      "reading": "かこさいこう",
+      "meaning": "all-time high / record high"
+    },
+    {
+      "word": "過去最低",
+      "reading": "かこさいてい",
+      "meaning": "all-time low"
+    },
+    {
+      "word": "割合",
+      "reading": "わりあい",
+      "meaning": "ratio / percentage"
+    },
+    {
+      "word": "占める",
+      "reading": "しめる",
+      "meaning": "to account for / to occupy"
+    }
+  ],
+  "grammar_notes": [
+    "★グラフの傾向を表す動詞・副詞（〜を境に、徐々に、急激に、ほぼ横ばい）に注目しましょう。"
+  ],
+  "practice": {
+    "title": "れんしゅう",
+    "instruction": "次のグラフの説明文を読んで、正しいものを2つ選ぼう。(答えは次のページ)",
+    "conversation": [
+      {
+        "speaker": "説明文",
+        "text": "わが社の売上高は、2000年から2005年にかけて急激に増加し、2005年に過去最高を記録した。しかし、2006年を境に減少し始め、その後はほぼ横ばい状態が続いている。"
+      }
+    ],
+    "question": "正しいものを選ぼう。",
+    "options": [
+      "1 売上高は2000年が一番高かった。",
+      "2 売上高は2005年が一番低かった。",
+      "3 2005年が最も売上高が高かった。",
+      "4 2006年以降、売上高はずっと増え続けている。",
+      "5 2006年以降、売上高は減った後あまり変化していない。"
+    ],
+    "correct_answers": [
+      3,
+      5
+    ],
+    "options_explanation": {
+      "1": "間違い。2005年に過去最高を記録しています。",
+      "2": "間違い。2005年は過去最高（一番高かった）です。",
+      "3": "正しい。「2005年に過去最高を記録した」とあります。",
+      "4": "間違い。「減少し始め、その後はほぼ横ばい状態」とあります。",
+      "5": "正しい。「減少し始め、その後はほぼ横ばい（あまり変化しない）」と合致しています。"
+    }
+  },
+  "mondai": {
+    "title": "もんだい",
+    "instruction": "次のグラフ（日本の相手先別 輸出入額 2009年）を見て、後の問いに答えなさい。(答えは別冊p.5)",
+    "passage": "【グラフ：日本の相手先別 輸出入額 2009年】\n単位：兆円\n・中国：輸出 約10.2兆円、輸入 約11.4兆円\n・アメリカ：輸出 約8.8兆円、輸入 約5.5兆円\n・EU：輸出 約7.6兆円、輸入 約5.5兆円\n・韓国：輸出 約4.7兆円、輸入 約2.2兆円\n・その他：輸出 約22.8兆円、輸入 約26.8兆円",
+    "passage_vocab": [
+      {
+        "word": "輸出額",
+        "reading": "ゆしゅつがく",
+        "meaning": "export value"
+      },
+      {
+        "word": "輸入額",
+        "reading": "ゆにゅうがく",
+        "meaning": "import value"
+      },
+      {
+        "word": "相手先別",
+        "reading": "あいてさきべつ",
+        "meaning": "by trading partner"
+      },
+      {
+        "word": "兆円",
+        "reading": "ちょうえん",
+        "meaning": "trillion yen"
+      }
+    ],
+    "questions": [
+      {
+        "id": "問い",
+        "text": "グラフの内容と合っているものはどれか。",
+        "options": [
+          "1 日本の最大の輸出相手国は中国で、輸入相手国も中国である。",
+          "2 アメリカに対する輸出額は輸入額より少ない。",
+          "3 EUからの輸入額は中国からの輸入額の半分以上である。",
+          "4 韓国への輸出額は韓国からの輸入額の2倍以上である。"
+        ],
+        "correct_answer": 1,
+        "explanation": "グラフにおいて、中国への輸出（10.2兆円）および中国からの輸入（11.4兆円）は国別でそれぞれ最大となっています。（別冊解答：問いは1）"
+      }
+    ]
+  }
+}

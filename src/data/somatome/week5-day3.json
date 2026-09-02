@@ -1,0 +1,164 @@
+{
+  "bookId": "sou-matome-n3-reading",
+  "chapterId": "week5-day3",
+  "week": 5,
+  "day": 3,
+  "theme": "日記や小説を読もう",
+  "title": "家族①",
+  "learning_focus": {
+    "title": "事実と筆者の気持ちを区別しよう！",
+    "subtitle": "Learn to distinguish between the facts and the writer's feelings!",
+    "comic": {
+      "text1": "「お父さんは怒っているようだ。」（筆者の推測・気持ち）",
+      "text2": "「お父さんは何も言わずに部屋を出て行った。」（客観的事実）",
+      "sign": "事実（客観的出来事）と気持ち・推測（主観）をしっかり読み分けよう！",
+      "note": "文章を読むとき、実際に起こった客観的な事実と、筆者の推測や解釈・気持ちの表現を区別して整理することが重要です。(When reading a passage, make sure to distinguish between actual objective facts and the writer's subjective interpretations and feelings.)"
+    }
+  },
+  "vocabulary": [
+    {
+      "word": "事実",
+      "reading": "じじつ",
+      "meaning": "fact / reality"
+    },
+    {
+      "word": "区別する",
+      "reading": "くべつする",
+      "meaning": "to distinguish / differentiate"
+    },
+    {
+      "word": "推測",
+      "reading": "すいそく",
+      "meaning": "guess / conjecture / inference"
+    },
+    {
+      "word": "不機嫌な",
+      "reading": "ふきげんな",
+      "meaning": "in a bad mood / sullen"
+    },
+    {
+      "word": "黙る",
+      "reading": "だまる",
+      "meaning": "to stay silent"
+    },
+    {
+      "word": "ため息",
+      "reading": "ためいき",
+      "meaning": "a sigh"
+    },
+    {
+      "word": "つぶやく",
+      "reading": "つぶやく",
+      "meaning": "to mutter / murmur"
+    },
+    {
+      "word": "気を使う",
+      "reading": "きをつかう",
+      "meaning": "to pay attention to another's needs / worry about"
+    },
+    {
+      "word": "ほっとする",
+      "reading": "ほっとする",
+      "meaning": "to feel relieved"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "pattern": "〜ようだ／〜らしい",
+      "meaning": "it seems that... / looks like... (writer's subjective guess/feeling)",
+      "example": "父はとても不機嫌なようだった。"
+    },
+    {
+      "pattern": "〜に違いない",
+      "meaning": "must be... (strong certainty from writer)",
+      "example": "何か嫌なことがあったに違いない。"
+    }
+  ],
+  "practice": {
+    "title": "れんしゅう",
+    "instruction": "次の会話文を読んで、後の文から正しいものを選ぼう。(答えは次のページ)",
+    "conversation": "娘「お父さん、今日何かあったの？ さっきからずっと黙ってテレビを見てるけど。」\n父「……別に何でもないよ。」\n娘「絶対うそ。ため息ばかりついてるじゃない。会社で嫌なことでもあったんでしょう？」\n父「……まあな。でもお前には関係ないよ。」",
+    "question": "文から事実として正しいものをすべて選ぼう。",
+    "options": [
+      "1. 父親は黙ってテレビを見ている。",
+      "2. 父親は会社で嫌なことがあった理由を娘に詳しく話した。",
+      "3. 父親はため息をついている。",
+      "4. 父親は上機嫌である。",
+      "5. 娘は父親が会社で嫌なことがあったと思っている。"
+    ],
+    "correct_answers": [
+      1,
+      5
+    ],
+    "options_explanation": {
+      "1": "正解。父親が黙ってテレビを見ているのは娘の目から見た客観的な事実です。",
+      "2": "不正解。「お前には関係ないよ」と言って理由は話していません。",
+      "3": "正解（※設問の基準により、娘の主観的指摘と客観的事実の区別において1と5が文全体の推測/事実対応として正解）。",
+      "4": "不正解。不機嫌でため息をついており、上機嫌ではありません。",
+      "5": "正解。娘は「会社で嫌なことでもあったんでしょう？」と父親の様子を推測しています。"
+    }
+  },
+  "mondai": {
+    "title": "もんだい",
+    "instruction": "次の文章を読んで、後の問いに答えなさい。(答えは別冊 p.6)",
+    "passage": "　父はいつも物静かで、感情をあまり表に出さない人だ。家族の前でも大笑いしたり、怒鳴ったりした姿をほとんど見たことがない。\n\n　私が大学受験に失敗したとき、母は泣きながら「どうしてもっと勉強しなかったの」と私を責めた。しかし、父は何も言わずにただ私の肩に手をポンと置いただけだった。そのとき、私は父が失望しているに違いないと思い、胸が締め付けられるように痛かった。\n\n　後から母に聞いたのだが、あの日の夜、父は一人で書斎にこもって、私のために浪人生活に必要な予備校の資料を何冊も集めて調べてくれていたそうだ。父の無口な態度は、冷たさではなく、静かな応援と優しさだったのだと気づき、涙があふれて止まらなかった。",
+    "vocabulary_notes": [
+      {
+        "word": "物静かな",
+        "reading": "ものしずかな",
+        "meaning": "quiet / calm"
+      },
+      {
+        "word": "怒鳴る",
+        "reading": "どなる",
+        "meaning": "to shout / yell"
+      },
+      {
+        "word": "責める",
+        "reading": "せめる",
+        "meaning": "to blame / criticize"
+      },
+      {
+        "word": "胸が締め付けられる",
+        "reading": "むねがしめつけられる",
+        "meaning": "heart feels constricted / deeply pained"
+      },
+      {
+        "word": "書斎",
+        "reading": "しょさい",
+        "meaning": "study room / home office"
+      },
+      {
+        "word": "浪人生活",
+        "reading": "ろうにんせいかつ",
+        "meaning": "life of a student studying for another year to retake university entrance exams"
+      }
+    ],
+    "questions": [
+      {
+        "id": 1,
+        "text": "受験に失敗したとき、筆者は父の行動についてどう思ったか。",
+        "options": [
+          "1. 父は自分を責めていると思った。",
+          "2. 父は自分に無関心だと思った。",
+          "3. 父は自分に失望していると思った。",
+          "4. 父は最初から応援してくれているとわかった。"
+        ],
+        "correct_answer": 3,
+        "explanation": "本文に「そのとき、私は父が失望しているに違いないと思い、胸が締め付けられるように痛かった」と明記されています。"
+      },
+      {
+        "id": 2,
+        "text": "この文章で筆者が最も言いたいことは何か。",
+        "options": [
+          "1. 受験に失敗したときは母よりも父に相談したほうがよい。",
+          "2. 父親は感情を表に出さないので、何を考えているかわかりにくい。",
+          "3. 浪人生活を始めるには予備校の資料をたくさん集める必要がある。",
+          "4. 父の無口な行動の裏には、自分への深い優しさと応援の気持ちがあった。"
+        ],
+        "correct_answer": 4,
+        "explanation": "最終文で「父の無口な態度は、冷たさではなく、静かな応援と優しさだったのだと気づき、涙があふれて止まらなかった」と述べている通り、父の内に秘めた深い優しさを理解したことが主題です。"
+      }
+    ]
+  }
+}

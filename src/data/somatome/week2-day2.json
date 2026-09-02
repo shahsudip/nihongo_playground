@@ -1,0 +1,185 @@
+{
+  "bookId": "sou-matome-n3-reading",
+  "chapterId": "week2-day2",
+  "week": 2,
+  "day": 2,
+  "theme": "身のまわりの文書を読もう",
+  "title": "Week 2 - Day 2: カタログ②",
+  "learning_focus": {
+    "title": "比較を表す文に注意しよう！",
+    "subtitle": "Pay attention to comparative sentences!",
+    "comic": {
+      "text1": "AはBより大きい。",
+      "text2": "BよりAのほうが大きい。",
+      "text3": "Aが最も大きい。",
+      "text4": "BはAほど大きくない。",
+      "text5": "BはCに比べて大きい。",
+      "note": "何と何を比べているか整理しながら読もう。"
+    }
+  },
+  "vocabulary": [
+    {
+      "word": "サイズ",
+      "reading": "",
+      "meaning": "size"
+    },
+    {
+      "word": "奥行き",
+      "reading": "おくゆき",
+      "meaning": "depth"
+    },
+    {
+      "word": "容量",
+      "reading": "ようりょう",
+      "meaning": "capacity"
+    },
+    {
+      "word": "幅",
+      "reading": "はば",
+      "meaning": "width"
+    },
+    {
+      "word": "消費電力",
+      "reading": "しょうひでんりょく",
+      "meaning": "power consumption"
+    }
+  ],
+  "grammar_notes": [
+    "AはBより～: A is more ~ than B",
+    "BよりAのほうが～: A is more ~ than B",
+    "Aが最も～: A is the most ~",
+    "BはAほど～ない: B is not as ~ as A",
+    "BはCに比べて～: Compared to C, B is ~"
+  ],
+  "practice": {
+    "title": "れんしゅう",
+    "instruction": "次の会話文を読んで、後の文から正しいものを選ぼう。(答えは次のページ)",
+    "conversation": [
+      {
+        "speaker": "夫",
+        "text": "冷蔵庫を買い替えようか。今使っているのより、容量が大きいのがいいな。"
+      },
+      {
+        "speaker": "妻",
+        "text": "そうね。でも、うちの台所は狭いから、幅は今置いているのと同じくらいじゃないと入らないわよ。"
+      },
+      {
+        "speaker": "夫",
+        "text": "このカタログの「AS-37K」はどう？ 今のより容量はずっと大きいよ。幅も今のとほとんど同じだし。"
+      },
+      {
+        "speaker": "妻",
+        "text": "あ、でもこれ、奥行きがかなりあるわね。今のより10センチも長くなると、台所が狭くなっちゃうわ。"
+      }
+    ],
+    "question": "正しいものを選ぼう。",
+    "options": [
+      "1 二人は、今の冷蔵庫と同じ容量のものを探している。",
+      "2 二人の台所には、幅が広い冷蔵庫は置けない。",
+      "3 妻は、奥行きが長すぎる冷蔵庫はよくないと思っている。",
+      "4 「AS-37K」は、今の冷蔵庫より幅が10センチ広い。",
+      "5 二人は「AS-37K」を買うことに決めた。"
+    ],
+    "correct_answers": [
+      2,
+      3
+    ],
+    "options_explanation": {
+      "1": "Incorrect. The husband says he wants a larger capacity (今使っているのより、容量が大きいのがいいな).",
+      "2": "Correct. The wife states 'Our kitchen is small, so it won't fit unless the width is about the same as our current one' (幅は今置いているのと同じくらいじゃないと入らないわよ).",
+      "3": "Correct. The wife notes that if depth is 10cm longer, the kitchen will become too cramped (今のより10センチも長くなると、台所が狭くなっちゃうわ).",
+      "4": "Incorrect. It is the depth (奥行き) that is 10cm longer, not the width.",
+      "5": "Incorrect. They have not decided to buy it; the wife expressed hesitation due to its depth."
+    }
+  },
+  "mondai": {
+    "title": "もんだい",
+    "instruction": "次の表は、冷蔵庫のカタログである。読んで、後の問いに答えなさい。(答えは別冊 p.3)",
+    "notice": {
+      "title": "新製品 冷蔵庫仕様一覧",
+      "table": {
+        "headers": [
+          "型名 (Model)",
+          "定格内容積 (容量)",
+          "外形寸法 (幅×奥行×高さ)",
+          "年間消費電力量",
+          "特徴"
+        ],
+        "rows": [
+          [
+            "A (AS-33L)",
+            "330L",
+            "60.0cm × 65.0cm × 160.0cm",
+            "380kWh/年",
+            "省スペーススリム設計"
+          ],
+          [
+            "B (AS-37K)",
+            "370L",
+            "60.0cm × 67.5cm × 180.0cm",
+            "350kWh/年",
+            "急速冷凍機能付き"
+          ],
+          [
+            "C (AS-38K)",
+            "375L",
+            "60.0cm × 63.0cm × 175.0cm",
+            "320kWh/年",
+            "省エネ・大容量"
+          ],
+          [
+            "D (AS-39M)",
+            "390L",
+            "65.0cm × 68.0cm × 182.0cm",
+            "360kWh/年",
+            "家族向け大型タイプ"
+          ]
+        ]
+      },
+      "footer": "【ご注意】設置場所には、上部5cm以上、左右各2cm以上の放熱スペースが必要です。"
+    },
+    "notice_vocab": [
+      {
+        "word": "定格内容積",
+        "reading": "ていかくないようせき",
+        "meaning": "rated storage volume"
+      },
+      {
+        "word": "外形寸法",
+        "reading": "がいけいすんぽう",
+        "meaning": "external dimensions"
+      },
+      {
+        "word": "放熱スペース",
+        "reading": "ほうねつスペース",
+        "meaning": "heat radiation clearance space"
+      }
+    ],
+    "questions": [
+      {
+        "id": "問1",
+        "text": "幅65cm、高さ180cmの場所に置くことができる冷蔵庫の中で、最も容量が大きいものはどれか。",
+        "options": [
+          "1 A (AS-33L)",
+          "2 B (AS-37K)",
+          "3 C (AS-38K)",
+          "4 D (AS-39M)"
+        ],
+        "correct_answer": 3,
+        "explanation": "According to the notice, installation requires at least 5cm top clearance and 2cm on each side (total width required = fridge width + 4cm; max fridge width = 65 - 4 = 61cm; max fridge height = 180 - 5 = 175cm). Fridge B (180cm height) and D (182cm height) are too tall. A (160cm, width 60cm, 330L) and C (175cm, width 60cm, 375L) both fit. Of these two, C has the largest capacity (375L). Therefore, Option 3 is correct."
+      },
+      {
+        "id": "問2",
+        "text": "カタログの内容と合っているものはどれか。",
+        "options": [
+          "1 AはBより消費電力が少ない。",
+          "2 BはCより容量が大きい。",
+          "3 CはAより高さが低い。",
+          "4 Dはほかの冷蔵庫と比べて厚い（奥行きがある）。"
+        ],
+        "correct_answer": 4,
+        "explanation": "Looking at the depth (奥行き) values: A is 65.0cm, B is 67.5cm, C is 63.0cm, and D is 68.0cm. D is thicker/deeper than all the others (ほかの冷蔵庫と比べて厚い・奥行きがある). Therefore, Option 4 is correct."
+      }
+    ]
+  }
+}

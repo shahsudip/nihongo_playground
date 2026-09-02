@@ -1,0 +1,162 @@
+{
+  "bookId": "sou-matome-n3-reading",
+  "chapterId": "week5-day2",
+  "week": 5,
+  "day": 2,
+  "theme": "日記や小説を読もう",
+  "title": "日記②",
+  "learning_focus": {
+    "title": "日本語らしい表現に慣れよう！",
+    "subtitle": "Let's familiarize ourselves with some typical Japanese expressions!",
+    "comic": {
+      "text1": "「気が重いなあ……」",
+      "text2": "「頭が痛い問題だなあ……」",
+      "sign": "慣用句（体の部分を使った表現など）に親しもう！",
+      "note": "体の一部などを使った比喩的な表現（慣用句）は日記や小説で感情や状況を豊かに表現するために頻繁に使われます。(Metaphorical idiomatic expressions using body parts are frequently used in diaries and novels to describe feelings and situations.)"
+    }
+  },
+  "vocabulary": [
+    {
+      "word": "気が重い",
+      "reading": "きがおもい",
+      "meaning": "heavy-hearted / reluctant / depressed"
+    },
+    {
+      "word": "頭が痛い",
+      "reading": "あたまがいたい",
+      "meaning": "troublesome / causing a headache"
+    },
+    {
+      "word": "手をつける",
+      "reading": "てをつける",
+      "meaning": "to start work on / set hand to"
+    },
+    {
+      "word": "手に入らない",
+      "reading": "てにはいらない",
+      "meaning": "unavailable / unobtainable"
+    },
+    {
+      "word": "手を貸す",
+      "reading": "てをかす",
+      "meaning": "to lend a hand / help"
+    },
+    {
+      "word": "手を借りる",
+      "reading": "てをかりる",
+      "meaning": "to borrow someone's help"
+    },
+    {
+      "word": "耳を疑う",
+      "reading": "みみをうたがう",
+      "meaning": "cannot believe one's ears"
+    },
+    {
+      "word": "胸を痛める",
+      "reading": "むねをいためる",
+      "meaning": "to feel pain in one's heart / be deeply distressed"
+    },
+    {
+      "word": "足を伸ばす",
+      "reading": "あしをのばす",
+      "meaning": "to go a little further / extend one's journey"
+    },
+    {
+      "word": "息抜き",
+      "reading": "いきぬき",
+      "meaning": "taking a breather / relaxation"
+    },
+    {
+      "word": "ついでに",
+      "reading": "ついでに",
+      "meaning": "taking advantage of the occasion / while one is at it"
+    }
+  ],
+  "grammar_notes": [
+    {
+      "pattern": "〜に足を伸ばす",
+      "meaning": "to go a little further to visit another place",
+      "example": "公園まで足を伸ばした。"
+    },
+    {
+      "pattern": "耳を疑う",
+      "meaning": "cannot believe one's ears (due to surprise)",
+      "example": "合格したと聞いて、自分の耳を疑った。"
+    }
+  ],
+  "practice": {
+    "title": "れんしゅう",
+    "instruction": "次の会話文を読んで、後の文から正しいものを選ぼう。(答えは次のページ)",
+    "conversation": "夫「今度の日曜日は、部長の家に行かなきゃならないんだ。気が重いよ。」\n妻「あら、大変ね。でも、部長の家は海の近くでしょう？ ついでに海まで足を伸ばして、おいしい魚でも食べてきたら？ いい息抜きになるわよ。」\n夫「そうだなあ。それもいいね。」",
+    "question": "文から正しいものをすべて選ぼう。",
+    "options": [
+      "1. 夫は部長の家に行くのがあまり楽しみではない。",
+      "2. 夫は部長の家に行くのがとても楽しみだ。",
+      "3. 妻は夫に海へ行くことを勧めている。",
+      "4. 夫は日曜日に海で泳ぐ予定だ。"
+    ],
+    "correct_answers": [
+      1,
+      3
+    ],
+    "options_explanation": {
+      "1": "正解。夫は「気が重いよ」と言っており、部長の家に行くのを気が進まない・楽しみに思っていません。",
+      "2": "不正解。「気が重い」とあるため、楽しみではありません。",
+      "3": "正解。妻は「海まで足を伸ばしておいしい魚でも食べてきたら？ いい息抜きになるわよ」と提案しています。",
+      "4": "不正解。海へ行って魚を食べるなどの息抜きを勧めているだけで、泳ぐ予定とは書かれていません。"
+    }
+  },
+  "mondai": {
+    "title": "もんだい",
+    "instruction": "次の文章を読んで、後の問いに答えなさい。(答えは別冊 p.6)",
+    "passage": "○月×日（土）\n\n　来週は大切な試験があるので、朝から図書館で勉強した。しかし、なかなか集中できない。覚えることが多すぎて頭が痛い。夕方になって少し息抜きをしようと思い、近くの公園まで足を伸ばした。\n\n　公園のベンチに座ってぼんやりしていたら、小学生のころの友達の山田くんに偶然会った。山田くんは今、留学の準備をしているそうだ。留学試験に合格したと聞いて、自分の耳を疑った。彼は昔、勉強があまり得意ではなかったからだ。でも、夢に向かって一生懸命努力したらしい。彼の話を聞いて、わたしもがんばらなければいけないと強く思った。\n\n　家に帰ってから、もう一度机に向かった。さっきまでの重い気分は消えていた。",
+    "vocabulary_notes": [
+      {
+        "word": "頭が痛い",
+        "reading": "あたまがいたい",
+        "meaning": "worried / having a headache over a matter"
+      },
+      {
+        "word": "息抜き",
+        "reading": "いきぬき",
+        "meaning": "taking a break / breather"
+      },
+      {
+        "word": "足を伸ばす",
+        "reading": "あしをのばす",
+        "meaning": "to extend one's walk / visit a bit further"
+      },
+      {
+        "word": "耳を疑う",
+        "reading": "みみをうたがう",
+        "meaning": "cannot believe one's ears"
+      }
+    ],
+    "questions": [
+      {
+        "id": 1,
+        "text": "「自分の耳を疑った」とあるが、なぜか。",
+        "options": [
+          "1. 勉強が苦手だった山田くんが留学試験に合格したと聞いたから。",
+          "2. 山田くんの声が小さくてよく聞こえなかったから。",
+          "3. 山田くんが自分の試験の結果を知っていたから。",
+          "4. 山田くんに偶然公園で会ったから。"
+        ],
+        "correct_answer": 1,
+        "explanation": "昔は勉強があまり得意ではなかった山田くんが留学試験に合格したと聞いたため、信じられない驚きから「耳を疑った」と述べています。"
+      },
+      {
+        "id": 2,
+        "text": "この文章を書いた人の気持ちの変化として最も適切なものはどれか。",
+        "options": [
+          "1. 勉強したくないと思っていたが、山田くんに会ってあきらめることにした。",
+          "2. 気が重かったが、努力した山田くんの話を聞いてやる気が出た。",
+          "3. 試験に合格する自信があったが、山田くんに会って不安になった。",
+          "4. 山田くんがうらやましくて、勉強に集中できなくなった。"
+        ],
+        "correct_answer": 2,
+        "explanation": "最初は覚えることが多く頭が痛くて気が重かった筆者が、努力した山田くんの話に刺激を受け、「重い気分は消えていた」と再び前向きに勉強に向き合いました。"
+      }
+    ]
+  }
+}

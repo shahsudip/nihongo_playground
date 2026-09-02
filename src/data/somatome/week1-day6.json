@@ -1,0 +1,205 @@
+{
+  "bookId": "sou-matome-n3-reading",
+  "chapterId": "week1-day6",
+  "week": 1,
+  "day": 6,
+  "theme": "お知らせや案内を読もう①",
+  "title": "Week 1 - Day 6: 募集②",
+  "learning_focus": {
+    "title": "家やアパートの案内で使われている特別な言葉を覚えよう！",
+    "subtitle": "Let's look at some special language used in real estate advertisements!",
+    "comic": {
+      "situation": "間取りの記号や用語（K, D, L）について説明している。",
+      "dialogue": [
+        {
+          "speaker": "鳥",
+          "text": "1K・2LDK・3LDKって何のこと？"
+        },
+        {
+          "speaker": "先生鳥",
+          "text": "数字は部屋の数で、Kはキッチン、Dはダイニング（食事をする部屋）、Lはリビングルームのことです。読み方に注意しましょう。"
+        }
+      ]
+    }
+  },
+  "vocabulary": [
+    {
+      "word": "マンション",
+      "reading": "マンション",
+      "meaning": "an apartment (well built / concrete building)",
+      "example": "マンション 2LDK"
+    },
+    {
+      "word": "間取り",
+      "reading": "まどり",
+      "meaning": "a floor plan",
+      "example": "使いやすい間取り"
+    },
+    {
+      "word": "和室",
+      "reading": "わしつ",
+      "meaning": "a Japanese style room",
+      "example": "和室6畳"
+    },
+    {
+      "word": "敷金",
+      "reading": "しききん",
+      "meaning": "security deposit (a one-time deposit to the owner when renting)",
+      "example": "敷金／3ヵ月"
+    },
+    {
+      "word": "礼金",
+      "reading": "れいきん",
+      "meaning": "key money (one-time non-refundable gratuity payment to owner)",
+      "example": "礼金／なし"
+    },
+    {
+      "word": "管理費",
+      "reading": "かんりひ",
+      "meaning": "a monthly management fee",
+      "example": "管理費／月4,000円"
+    },
+    {
+      "word": "専有面積",
+      "reading": "せんゆうめんせき",
+      "meaning": "floor space / exclusive private area",
+      "example": "専有面積／52.05㎡"
+    },
+    {
+      "word": "〜㎡",
+      "reading": "へいほうメートル / へいべい",
+      "meaning": "square meters",
+      "example": "50㎡"
+    },
+    {
+      "word": "一軒家",
+      "reading": "いっけんや",
+      "meaning": "a detached house",
+      "example": "一軒家に住む"
+    },
+    {
+      "word": "〜畳",
+      "reading": "〜じょう",
+      "meaning": "tatami mats (counter for room size)",
+      "example": "洋室8畳"
+    },
+    {
+      "word": "洋室",
+      "reading": "ようしつ",
+      "meaning": "a Western-style room",
+      "example": "洋室8畳"
+    },
+    {
+      "word": "エアコン",
+      "reading": "エアコン",
+      "meaning": "an air-conditioner",
+      "example": "エアコン付"
+    },
+    {
+      "word": "築〜年",
+      "reading": "ちく〜ねん",
+      "meaning": "built ~ years ago (building age)",
+      "example": "築15年"
+    }
+  ],
+  "practice": {
+    "title": "れんしゅう",
+    "instruction": "次の会話文を読んで、後の文から正しいものを三つ選ぼう。(答えは次のページ)",
+    "conversation": [
+      {
+        "speaker": "妻",
+        "text": "このマンションはどう？ 駅から徒歩5分って書いてあるし、広さもちょうどいいんじゃない？ 家賃もそんなに高くないし。"
+      },
+      {
+        "speaker": "夫",
+        "text": "そうだね。敷金は3ヵ月分だけれど、礼金はなしって書いてあるし、いいかもしれないね。でも、本当は一軒家のほうがいいんだけどなあ。"
+      }
+    ],
+    "options": [
+      "1 夫婦は住むところをさがしている。",
+      "2 夫婦は今、マンションを見学している。",
+      "3 このマンションを借りる場合、敷金は3ヵ月前に払わなければならない。",
+      "4 このマンションを借りる場合、礼金を払わなくてもいい。",
+      "5 夫はマンションより一軒家に住みたいと思っている。"
+    ],
+    "correct_answers": [
+      1,
+      4,
+      5
+    ],
+    "options_explanation": {
+      "1": "正しい。夫婦が物件広告を見ながら住む部屋を探しています。",
+      "2": "間違い。「書いてあるし」と言っており、広告を見ている段階で見学中ではありません。",
+      "3": "間違い。「敷金3ヵ月」は家賃の3か月分の金額という意味であり、3か月前に払うことではありません。",
+      "4": "正しい。夫が「礼金はなしって書いてある」と言っており、礼金は不要です。",
+      "5": "正しい。夫が「本当は一軒家のほうがいいんだけどなあ」と言っています。"
+    }
+  },
+  "mondai": {
+    "title": "もんだい",
+    "instruction": "次の募集広告を読んで、後の問いに答えなさい。(答えは別冊 p.2)",
+    "notice": {
+      "heading": "マンション 2K 中央線中野駅徒歩5分",
+      "subheading": "使いやすい間取り！！ バス・トイレ別* エアコン付 ペット不可",
+      "content": [
+        "・家賃／9.6万円",
+        "・敷金／3ヵ月",
+        "・礼金／なし",
+        "・管理費／月4,000円",
+        "・専有面積／52.05㎡",
+        "・4階建て3階",
+        "・築15年",
+        "・間取り詳細：和室6畳、洋室8畳、キッチン、バス・トイレ別、ベランダ",
+        "※ * a separate bathroom and toilet"
+      ]
+    },
+    "notice_vocabulary": [
+      {
+        "word": "中央線",
+        "reading": "ちゅうおうせん",
+        "meaning": "Chuo Line"
+      },
+      {
+        "word": "中野駅",
+        "reading": "なかのえき",
+        "meaning": "Nakano Station"
+      },
+      {
+        "word": "階建て",
+        "reading": "かいだて",
+        "meaning": "-story building"
+      },
+      {
+        "word": "ペット不可",
+        "reading": "ペットふか",
+        "meaning": "no pets allowed"
+      }
+    ],
+    "questions": [
+      {
+        "question_number": 1,
+        "question": "この広告でわからないのはどれか。",
+        "options": [
+          "1 エアコンがいくつついてあるか。",
+          "2 敷金をいくらはらえばいいか。",
+          "3 この部屋が何階にあるか。",
+          "4 このマンションが何年前に建てられたか。"
+        ],
+        "correct_answer": 1,
+        "explanation": "広告には「エアコン付」と書かれていますが、エアコンが何台（いくつ）ついているかは書かれていません。敷金（9.6万×3）、階数（3階）、築年数（15年前）はすべて分かります。"
+      },
+      {
+        "question_number": 2,
+        "question": "この広告の内容と合っているものはどれか。",
+        "options": [
+          "1 毎月払うのは96,000円である。",
+          "2 敷金は96,000円の3倍分を払わなければならない。",
+          "3 エアコンの代金を払わなければならない。",
+          "4 洋室より和室のほうが広い。"
+        ],
+        "correct_answer": 2,
+        "explanation": "敷金は3ヵ月分なので「96,000円の3倍分」となります（公式解説：毎月払うのは家賃9.6万＋管理費4,000円＝100,000円。洋室8畳＞和室6畳）。したがって2が正しいです。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "bookId": "sou-matome-n3-reading",
+  "chapterId": "week1-day5",
+  "week": 1,
+  "day": 5,
+  "theme": "お知らせや案内を読もう①",
+  "title": "Week 1 - Day 5: 募集①",
+  "learning_focus": {
+    "title": "特別な表現方法に注意しよう！",
+    "subtitle": "Pay attention to special expressions!",
+    "comic": {
+      "situation": "求人広告などで使われる省略表現や専門表現を学んでいる。",
+      "dialogue": [
+        {
+          "speaker": "鳥",
+          "text": "「要普免」や「時間応相談」ってどういう意味？"
+        },
+        {
+          "speaker": "先生鳥",
+          "text": "「要〜」は〜が必要ということ、「〜不可」は〜はダメということだよ。"
+        },
+        {
+          "speaker": "先生鳥",
+          "text": "「応相談」は相談して決めることができるという意味です。"
+        }
+      ]
+    }
+  },
+  "vocabulary": [
+    {
+      "word": "要普通免許",
+      "reading": "ようふつうめんきょ",
+      "meaning": "a standard driver's license is required",
+      "example": "要普免（要普通免許）"
+    },
+    {
+      "word": "高校生不可",
+      "reading": "こうこうせいふか",
+      "meaning": "no high school students",
+      "example": "高校生不可"
+    },
+    {
+      "word": "時間応相談",
+      "reading": "じかんおうそうだん",
+      "meaning": "working hours are negotiable",
+      "example": "勤務時間応相談"
+    },
+    {
+      "word": "バイト",
+      "reading": "バイト",
+      "meaning": "part-time job",
+      "example": "バイトを探す"
+    },
+    {
+      "word": "時給",
+      "reading": "じきゅう",
+      "meaning": "hourly wage",
+      "example": "時給1,100円"
+    },
+    {
+      "word": "履歴書",
+      "reading": "りれきしょ",
+      "meaning": "resume / CV",
+      "example": "履歴書持参"
+    },
+    {
+      "word": "資格",
+      "reading": "しかく",
+      "meaning": "qualifications / certification",
+      "example": "応募資格"
+    },
+    {
+      "word": "全額支給",
+      "reading": "ぜんがくしきゅう",
+      "meaning": "full payment / fully paid (e.g. transportation expenses)",
+      "example": "交通費全額支給"
+    },
+    {
+      "word": "応募",
+      "reading": "おうぼ",
+      "meaning": "application / to apply",
+      "example": "電話で応募する"
+    }
+  ],
+  "practice": {
+    "title": "れんしゅう",
+    "instruction": "次の会話文を読んで、後の文から正しいものを三つ選ぼう。(答えは次のページ)",
+    "conversation": [
+      {
+        "speaker": "留学生A",
+        "text": "スーパーまるみやのバイト募集のチラシを見たんだけど、私でも応募できるかな？"
+      },
+      {
+        "speaker": "留学生B",
+        "text": "どれどれ？「時給1,000円〜、交通費全額支給、週3日からOK、時間応相談」って書いてあるよ。"
+      },
+      {
+        "speaker": "留学生A",
+        "text": "車の運転免許は持ってないんだけど、大丈夫かな？"
+      },
+      {
+        "speaker": "留学生B",
+        "text": "「レジ・品出しスタッフ：資格不問（免許不要）」って書いてあるから、免許がなくても大丈夫だよ。高校生は不可だけど、大学生なら問題ないね。"
+      },
+      {
+        "speaker": "留学生A",
+        "text": "よかった！まずは電話して面接の予約をしてみるよ。履歴書も書いておかなきゃね。"
+      }
+    ],
+    "options": [
+      "1 このアルバイトは高校生でも応募できる。",
+      "2 交通費は全額もらえる。",
+      "3 運転免許を持っていなくても応募できる。",
+      "4 働く曜日や時間は決まっていて相談できない。",
+      "5 面接のときには履歴書が必要である。"
+    ],
+    "correct_answers": [
+      2,
+      3,
+      5
+    ],
+    "options_explanation": {
+      "1": "間違い。「高校生不可」なので応募できません。",
+      "2": "正しい。「交通費全額支給」と書かれています。",
+      "3": "正しい。「資格不問（免許不要）」なので運転免許がなくても応募できます。",
+      "4": "間違い。「時間応相談」なので勤務日や時間は相談できます。",
+      "5": "正しい。面接には履歴書を準備して持参します（公式解説：面接のときに履歴書が必要である）。"
+    }
+  },
+  "mondai": {
+    "title": "もんだい",
+    "instruction": "次の募集広告を読んで、後の問いに答えなさい。(答えは別冊 p.2)",
+    "notice": {
+      "heading": "アルバイト募集（スーパーまるみや）",
+      "subheading": "明るく元気なスタッフ大募集！未経験者も大歓迎！",
+      "content": [
+        "【職種】レジ・品出しスタッフ（接客・商品陳列）",
+        "【時給】1,000円〜（※22時以降は時給25％アップ）",
+        "【時間】8:00〜23:00の間で1日4時間〜、週3日〜（※時間・曜日応相談）",
+        "【待遇】交通費全額支給、制服貸与、社員割引あり",
+        "【資格】高校生不可、要日本語日常会話レベル、未経験者歓迎",
+        "【応募】まずはお気軽にお電話ください。面接時に写真付き履歴書をご持参ください。"
+      ]
+    },
+    "notice_vocabulary": [
+      {
+        "word": "品出し",
+        "reading": "しなだし",
+        "meaning": "stocking shelves / displaying goods"
+      },
+      {
+        "word": "貸与",
+        "reading": "たいよ",
+        "meaning": "lending / loaning (uniforms, etc.)"
+      },
+      {
+        "word": "持参",
+        "reading": "じさん",
+        "meaning": "bringing with oneself"
+      }
+    ],
+    "questions": [
+      {
+        "question_number": 1,
+        "question": "この募集広告について、合っているものはどれか。",
+        "options": [
+          "1 面接のときに写真付きの履歴書を持っていく必要がある。",
+          "2 高校生でもアルバイトに応募できる。",
+          "3 交通費は一部しか支給されない。",
+          "4 22時以降に働いても時給は変わらない。"
+        ],
+        "correct_answer": 1,
+        "explanation": "「面接時に写真付き履歴書をご持参ください」とあるため、1が正しいです。"
+      },
+      {
+        "question_number": 2,
+        "question": "勤務条件について合っているものはどれか。",
+        "options": [
+          "1 週に1日だけ働くことができる。",
+          "2 働く時間や曜日は相談して決めることができる。",
+          "3 毎日必ず朝8時から23時まで働かなければならない。",
+          "4 車の運転免許が必ず必要である。"
+        ],
+        "correct_answer": 2,
+        "explanation": "「時間・曜日応相談」とあるため、2が正しいです。"
+      }
+    ]
+  }
+}

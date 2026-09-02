@@ -30,7 +30,7 @@ const BookChapterListPage = () => {
         const bookSnap = await getDoc(bookDocRef);
 
         if (bookSnap.exists()) {
-          bookData = bookSnap.data();
+          bookData = { id: bookSnap.id, ...bookSnap.data() };
         } else {
           // Fallback to local
           const { sampleBooks } = await import('../data/book_data.jsx');
@@ -62,13 +62,20 @@ const BookChapterListPage = () => {
           chaptersList.push({ id: docSnap.id, ...docSnap.data() });
         });
 
-        // Fallback to local chapters
+        // Fallback or merge with local chapters
+        const { sampleBooks } = await import('../data/book_data.jsx');
+        const localBook = sampleBooks.find(b => b.id === bookId);
         if (chaptersList.length === 0) {
-          const { sampleBooks } = await import('../data/book_data.jsx');
-          const localBook = sampleBooks.find(b => b.id === bookId);
           if (localBook && localBook.chapters) {
             chaptersList = localBook.chapters;
           }
+        } else if (localBook && localBook.chapters) {
+          const existingIds = new Set(chaptersList.map(c => c.id));
+          localBook.chapters.forEach(localCh => {
+            if (!existingIds.has(localCh.id)) {
+              chaptersList.push(localCh);
+            }
+          });
         }
 
         setBook(bookData);

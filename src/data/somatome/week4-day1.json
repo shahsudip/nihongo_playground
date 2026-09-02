@@ -1,0 +1,197 @@
+{
+  "bookId": "sou-matome-n3-reading",
+  "chapterId": "week4-day1",
+  "week": 4,
+  "day": 1,
+  "theme": "新聞を読もう",
+  "title": "Week 4 - Day 1: 見出し",
+  "learning_focus": {
+    "title": "見出しによく使われる省略形に注意しよう！",
+    "subtitle": "Pay attention to abbreviations and omissions commonly used in headlines!",
+    "comic": {
+      "text1": "昨夜、ネコが…",
+      "text2": "「昨夜ネコ、イヌとけんか」ってことね。",
+      "sign": "昨夜ネコ、イヌとけんか",
+      "note": "見出しでは助詞や述語が省略されることが多い。"
+    }
+  },
+  "vocabulary": [
+    {
+      "word": "見出し",
+      "reading": "みだし",
+      "meaning": "headline"
+    },
+    {
+      "word": "省略形",
+      "reading": "しょうりゃくけい",
+      "meaning": "abbreviated form / ellipsis"
+    },
+    {
+      "word": "〜泊",
+      "reading": "はく",
+      "meaning": "nights stay"
+    },
+    {
+      "word": "〜食付き",
+      "reading": "しょくつき",
+      "meaning": "with ... meals included"
+    },
+    {
+      "word": "〜歳以下",
+      "reading": "さいいか",
+      "meaning": "... years old and under"
+    },
+    {
+      "word": "無料",
+      "reading": "むりょう",
+      "meaning": "free of charge"
+    },
+    {
+      "word": "食べ放題",
+      "reading": "たべほうだい",
+      "meaning": "all-you-can-eat"
+    },
+    {
+      "word": "飲み放題",
+      "reading": "のみほうだい",
+      "meaning": "all-you-can-drink"
+    },
+    {
+      "word": "〜増し",
+      "reading": "まし",
+      "meaning": "extra charge / increase"
+    },
+    {
+      "word": "消費税込み",
+      "reading": "しょうひぜいこみ",
+      "meaning": "consumption tax included"
+    },
+    {
+      "word": "サービス料込み",
+      "reading": "サービスりょうこみ",
+      "meaning": "service charge included"
+    },
+    {
+      "word": "なんと",
+      "reading": "なんと",
+      "meaning": "an expression of surprise (loosely: Wow! Look at this!)"
+    },
+    {
+      "word": "ただし",
+      "reading": "ただし",
+      "meaning": "however / provided that"
+    }
+  ],
+  "grammar_notes": [
+    "★見出しによく使われる省略形に注意しましょう！",
+    "新聞の見出しでは、助詞（は、が、を、に など）や語尾（〜した、〜がある など）が省略されたり、名詞や漢字だけで短くまとめられたりします。"
+  ],
+  "practice": {
+    "title": "れんしゅう",
+    "instruction": "次の会話文を読んで、後の文から正しいものを選ぼう。(答えは次のページ)",
+    "conversation": [
+      {
+        "speaker": "男の人",
+        "text": "駅前で大きい事故があったみたいだよ。"
+      },
+      {
+        "speaker": "女の人",
+        "text": "えっ、本当？"
+      },
+      {
+        "speaker": "男の人",
+        "text": "新聞の見出しに「バスとトラック正面衝突 けが人多数」って書いてある。"
+      },
+      {
+        "speaker": "女の人",
+        "text": "たいへん！ 亡くなった人はいなかったの？"
+      },
+      {
+        "speaker": "男の人",
+        "text": "「死亡者なし」ってあるから、亡くなった人はいなかったみたい。"
+      }
+    ],
+    "question": "正しいものを選ぼう。",
+    "options": [
+      "1 バスとトラックがぶつかった。",
+      "2 事故で何人かが亡くなった。",
+      "3 事故でたくさんの人がけがをした。",
+      "4 バスの運転手だけがけがをした。",
+      "5 事故の原因がもうわかっている。"
+    ],
+    "correct_answers": [
+      1,
+      3
+    ],
+    "options_explanation": {
+      "1": "正しい。「バスとトラック正面衝突」とあるので、バスとトラックがぶつかったことがわかります。",
+      "2": "間違い。「死亡者なし」とあるので、亡くなった人はいません。",
+      "3": "正しい。「けが人多数」とあるので、たくさんの人がけがをしました。",
+      "4": "間違い。「けが人多数」であり、運転手だけとは書かれていません。",
+      "5": "間違い。見出しからは事故の原因までは書かれていません。"
+    }
+  },
+  "mondai": {
+    "title": "もんだい",
+    "instruction": "次の記事を読んで、後の問いに答えなさい。(答えは別冊p.5)",
+    "passage": "窓閉め切り眠れぬ一夜\nタイヤ工場火災\n\n２０日夜、◯◯市のタイヤ工場で起きた火災は、発生から１２時間後の２１日午前１０時現在も消火活動が続いている。煙や悪臭のため、近くの住民は窓を閉め切ったまま蒸し暑い夜を過ごした。\n「煙がすごくて息ができないくらいだった」「窓を閉めていたので暑くて眠れなかった」と近くの住民は疲れ切った表情で話した。警察と消防では、火が完全に消え次第、火事の原因を調べる予定である。",
+    "passage_vocab": [
+      {
+        "word": "窓閉め切り",
+        "reading": "まどしめきり",
+        "meaning": "keeping windows shut tight"
+      },
+      {
+        "word": "眠れぬ一夜",
+        "reading": "ねむれぬいちや",
+        "meaning": "a sleepless night"
+      },
+      {
+        "word": "火災",
+        "reading": "かさい",
+        "meaning": "fire"
+      },
+      {
+        "word": "消火活動",
+        "reading": "しょうかかつどう",
+        "meaning": "fire-fighting operations"
+      },
+      {
+        "word": "悪臭",
+        "reading": "あくしゅう",
+        "meaning": "bad stench / offensive odor"
+      },
+      {
+        "word": "〜次第",
+        "reading": "しだい",
+        "meaning": "as soon as..."
+      }
+    ],
+    "questions": [
+      {
+        "id": "問1",
+        "text": "この文章からわからないことはどれか。",
+        "options": [
+          "1 火事の起きた時間",
+          "2 火事の起きた場所",
+          "3 火事の原因",
+          "4 住民の様子"
+        ],
+        "correct_answer": 1,
+        "explanation": "「２０日夜」と大まかにしか書かれておらず、具体的な出火時刻（何時何分か）は書かれていません。（別冊解答：問1は1）"
+      },
+      {
+        "id": "問2",
+        "text": "「窓閉め切り眠れぬ一夜」とはどういうことか。",
+        "options": [
+          "1 工場の従業員が徹夜で火を消したこと。",
+          "2 タイヤ工場の火事のせいで、窓を閉めて暑い夜を過ごしたこと。",
+          "3 消防のサイレンがうるさくて窓を閉めても眠れなかったこと。",
+          "4 煙が入らないように住民が見張りをしていたこと。"
+        ],
+        "correct_answer": 2,
+        "explanation": "別冊解説：タイヤ工場の火事のために窓を閉め切って、（住民は）その夜、眠ることができなかった。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "bookId": "sou-matome-n3-reading",
+  "chapterId": "week3-day1",
+  "week": 3,
+  "day": 1,
+  "theme": "通信文を読もう",
+  "title": "Week 3 - Day 1: メール①",
+  "learning_focus": {
+    "title": "「あげる」「くれる」「もらう」を表す敬語に注意しよう！",
+    "subtitle": "Pay attention to polite language meaning 'to give', 'to give it to me', or 'to receive'!",
+    "comic": {
+      "text1": "From Hanako",
+      "text2": "",
+      "sign": "",
+      "note": "★尊敬語は聞き手や話題の人、謙譲語は話し手の行為などに対して使います。丁寧語は聞き手に対して敬意を表して使います。\n(Honorific language is used to refer to the actions, etc. of the person who is being spoken to, or of the person who is the topic of the conversation. Humble language is used when the speaker refers to his or her own actions, etc.. Polite language is used to show politeness towards the person to whom one is speaking.)"
+    }
+  },
+  "vocabulary": [
+    {
+      "word": "あげる／〜てあげる",
+      "reading": "さしあげる／〜てさしあげる",
+      "meaning": "to give (humble: 謙譲語)"
+    },
+    {
+      "word": "くれる／〜てくれる",
+      "reading": "くださる／〜てくださる",
+      "meaning": "to give (to speaker) (honorific: 尊敬語)"
+    },
+    {
+      "word": "もらう／〜てもらう",
+      "reading": "いただく／〜ていただく",
+      "meaning": "to receive (humble: 謙譲語; also means 'to eat')"
+    }
+  ],
+  "grammar_notes": [
+    "＊「いただく」には「食べる」という意味もある。"
+  ],
+  "practice": {
+    "title": "れんしゅう",
+    "instruction": "次の会話文を読んで、後の文から正しいものを選ぼう。(答えは次のページ)",
+    "conversation": [
+      {
+        "speaker": "和子",
+        "text": "お母様、お友達がりんごを送ってくれたので少し持ってまいりました。"
+      },
+      {
+        "speaker": "夫の母",
+        "text": "あら、ピカピカ(※1)していてりっぱなりんごねえ。あの青森の方でしょ？ 台風はどうだったのかしら。"
+      },
+      {
+        "speaker": "和子",
+        "text": "ええ、私も心配していたんですけれど、大丈夫だったみたいですよ。あの、これ、すごくおいしいですよ。お母様、もっと召し上がれる(※2)ようならまた持ってきますので、おっしゃってくださいね。"
+      },
+      {
+        "speaker": "夫の母",
+        "text": "そうねえ、お隣にも差し上げようかしら。お世話になっているから。"
+      }
+    ],
+    "vocab_notes": [
+      {
+        "word": "(※1) ピカピカ",
+        "meaning": "indicates that something is shiny"
+      },
+      {
+        "word": "(※2) 召し上がる",
+        "meaning": "to eat (polite form)"
+      }
+    ],
+    "question": "正しいものを選ぼう。",
+    "options": [
+      "1 和子は夫の母と一緒に住んでいる。",
+      "2 和子の友達は青森に住んでいる。",
+      "3 青森に今台風が来ている。",
+      "4 和子の友だちは病気だった。",
+      "5 夫の母はりんごを隣の人にあげたい。"
+    ],
+    "correct_answers": [
+      2,
+      5
+    ],
+    "options_explanation": {
+      "1": "Incorrect. Kazuko says '持ってまいりました' (I brought some over), indicating she does not live in the same house.",
+      "2": "Correct. The mother-in-law asks 'あの青森の方でしょ？' (That person in Aomori, right?) and Kazuko confirms.",
+      "3": "Incorrect. The typhoon already passed ('大丈夫だったみたいですよ').",
+      "4": "Incorrect. There is no mention of the friend being sick; they were worried about the typhoon.",
+      "5": "Correct. The mother-in-law says 'お隣にも差し上げようかしら' (Maybe I'll give some to next door)."
+    }
+  },
+  "mondai": {
+    "title": "もんだい",
+    "instruction": "次のメールを読んで、後の問いに答えなさい。",
+    "email": {
+      "to": "kyoko_ta@lemon.ask-net.ne.jp",
+      "from": "kazuko@black.abc-net.com",
+      "subject": "ありがとうございました。",
+      "recipient_name": "田中 京子様",
+      "body": "お久しぶりです。先ほど、宅配便(※1)を受け取りました。\nりんごをたくさん送ってくださってありがとうございました。\n\n実は先日、台風が青森に上陸した(※2)というニュースを見て、「田中さんの家のほうは大丈夫かしら」と家族で話していたのです*。\nでも、①安心しました。\n大きくてピカピカしたりっぱなりんごですね。箱を開ける前から、とてもいいにおいがしてきました。さっそく、ひとつ（ ② ）のですが、本当においしくて、田中さんの「元気ですよ」という声が伝わってくるようでした。真紀も明日の遠足に持っていって友だちにもあげるんだ、と大喜びです。\n主人の母や妹の家にも分けて、みんなで楽しもうと思っています**。\n本当にありがとうございました。\n\n高橋 和子",
+      "footnotes": [
+        "* The other day we saw the news that the typhoon had hit Aomori, so our family here was wondering if the Tanaka family was all right.",
+        "** We will enjoy them with my mother-in-law and my younger sister's family."
+      ]
+    },
+    "notice_vocab": [
+      {
+        "word": "(※1) 宅配便",
+        "meaning": "a courier service"
+      },
+      {
+        "word": "(※2) 上陸する",
+        "meaning": "to land"
+      }
+    ],
+    "questions": [
+      {
+        "id": "問1",
+        "text": "①安心しましたとあるが、なぜか。",
+        "options": [
+          "1 台風が青森には来なかったから。",
+          "2 田中さんは台風の被害を受けなかったようだから。",
+          "3 りんごが多かったから。",
+          "4 りんごがりっぱでおいしかったから。"
+        ],
+        "correct_answer": 2,
+        "explanation": "Kazuko was worried after seeing the typhoon news in Aomori, but receiving the fresh apples showed that Tanaka had not suffered disaster damage, bringing relief."
+      },
+      {
+        "id": "問2",
+        "text": "（ ② ）に入る言葉として最も適当なものはどれか。",
+        "options": [
+          "1 くださった",
+          "2 めしあがった",
+          "3 さしあげた",
+          "4 いただいた"
+        ],
+        "correct_answer": 4,
+        "explanation": "The writer (Kazuko) tasted/ate an apple herself. The humble expression for 'ate' (食べました / いただきました) is いただいた."
+      }
+    ]
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "bookId": "sou-matome-n3-reading",
+  "chapterId": "week1-day1",
+  "week": 1,
+  "day": 1,
+  "theme": "お知らせや案内を読もう①",
+  "title": "Week 1 - Day 1: 案内①",
+  "learning_focus": {
+    "title": "日時を正しく読もう！",
+    "subtitle": "Try to read dates and times correctly!",
+    "comic": {
+      "text1": "もう開いているのかな？",
+      "text2": "今日は休みだよ！",
+      "sign": "休館日",
+      "note": "例外がないか注意して読もう。"
+    }
+  },
+  "vocabulary": [
+    {
+      "word": "上旬 / 初旬",
+      "reading": "じょうじゅん / しょじゅん",
+      "meaning": "the first 10 days of the month"
+    },
+    {
+      "word": "中旬",
+      "reading": "ちゅうじゅん",
+      "meaning": "the middle 10 days of the month"
+    },
+    {
+      "word": "下旬",
+      "reading": "げじゅん",
+      "meaning": "the last 10 days of the month"
+    },
+    {
+      "word": "第2月曜日",
+      "reading": "だいにげつようび",
+      "meaning": "the second Monday of the month"
+    },
+    {
+      "word": "ただし",
+      "reading": "",
+      "meaning": "however"
+    },
+    {
+      "word": "年末年始",
+      "reading": "ねんまつねんし",
+      "meaning": "the year-end and the beginning of the New Year"
+    },
+    {
+      "word": "正午",
+      "reading": "しょうご",
+      "meaning": "noon"
+    },
+    {
+      "word": "19時",
+      "reading": "19じ",
+      "meaning": "7 pm"
+    },
+    {
+      "word": "祝日",
+      "reading": "しゅくじつ",
+      "meaning": "national holiday"
+    },
+    {
+      "word": "なお",
+      "reading": "",
+      "meaning": "further"
+    }
+  ],
+  "grammar_notes": [
+    "＊「ただし、……」は例外を言うとき、「なお、……」は説明をつけ加えるときに使います。",
+    "▶「休みなんじゃないの？」は「休みだと思う」という意味で言っている。"
+  ],
+  "practice": {
+    "title": "れんしゅう",
+    "instruction": "次の会話文を読んで、後の文から正しいものを選ぼう。(答えは次のページ)",
+    "conversation": [
+      {
+        "speaker": "女子学生",
+        "text": "これからどうするの？"
+      },
+      {
+        "speaker": "男子学生",
+        "text": "レポート書かないといけないから、中央図書館へいくつもりなんだ。"
+      },
+      {
+        "speaker": "女子学生",
+        "text": "え？ 今日は第3月曜日だから休みなんじゃないの？"
+      },
+      {
+        "speaker": "男子学生",
+        "text": "ううん、開いてるよ。第3月曜日が祝日の場合は次の日が休みになるんだ。"
+      },
+      {
+        "speaker": "女子学生",
+        "text": "あ、そう。知らなかった。じゃ、明日が休みということね。私も調べたいことがあるから、一緒に行こう。"
+      }
+    ],
+    "question": "正しいものを選ぼう。",
+    "options": [
+      "1 今日は祝日である。",
+      "2 今日、図書館は休みである。",
+      "3 男子学生は今日が第3月曜日だということを知らなかった。",
+      "4 女子学生は最初、今日は図書館が休みだと思っていた。",
+      "5 明日は火曜日で図書館は開いている。"
+    ],
+    "correct_answers": [
+      1,
+      4
+    ],
+    "options_explanation": {
+      "1": "Correct. The girl states 'Today is the 3rd Monday...' and the boy replies 'When the 3rd Monday is a national holiday, the next day is closed.' This confirms today is a holiday.",
+      "2": "Incorrect. The boy says 'No, it is open' (ううん、開いてるよ).",
+      "3": "Incorrect. The boy corrects the girl about the holiday rule, so he is well aware of the date.",
+      "4": "Correct. The girl says 'Oh? Isn't it closed today because it's the 3rd Monday?' (え？今日は第3月曜日だから休みなんじゃないの？).",
+      "5": "Incorrect. Tomorrow is Tuesday and it will be closed (火曜日が休館), so it will not be open."
+    }
+  },
+  "mondai": {
+    "title": "もんだい",
+    "instruction": "次の案内を見て、後の問いに答えなさい。",
+    "notice": {
+      "title": "たから市 中央図書館 利用案内",
+      "sections": [
+        {
+          "header": "開館時間（※１）",
+          "rows": [
+            {
+              "label": "平日",
+              "value": "午前10時から午後8時\n(児童室（※２）は午後6時まで)"
+            },
+            {
+              "label": "土曜日\n日曜日\n祝日",
+              "value": "午前10時から午後6時"
+            }
+          ]
+        },
+        {
+          "header": "休館日（※３）",
+          "rows": [
+            {
+              "label": "第3月曜日",
+              "value": "ただし祝日と重なった場合は火曜日が休館*"
+            },
+            {
+              "label": "年末年始",
+              "value": "12月28日から1月4日"
+            },
+            {
+              "label": "特別休館日",
+              "value": "2月11日・5月3日〜5日・9月23日"
+            }
+          ]
+        }
+      ],
+      "footer": "＊なお、10月1日より10日まで電気工事のために臨時で休館します**。"
+    },
+    "notice_vocab": [
+      {
+        "word": "（※１）開館時間",
+        "meaning": "opening hours"
+      },
+      {
+        "word": "（※２）児童室",
+        "meaning": "children's room"
+      },
+      {
+        "word": "（※３）休館日",
+        "meaning": "holidays"
+      }
+    ],
+    "questions": [
+      {
+        "id": "問1",
+        "text": "この図書館で、使用できないのはどの場合か。",
+        "options": [
+          "1 児童室を午前中に使用する場合",
+          "2 10月の第3金曜日に20時まで使用する場合",
+          "3 第3月曜日が祝日の場合",
+          "4 10月10日の正午から午後2時"
+        ],
+        "correct_answer": 4,
+        "explanation": "The library is closed from Oct 1 to Oct 10 due to electrical work (10月1日より10日まで電気工事のために臨時で休館します). Therefore, Option 4 (Oct 10th from noon to 2pm) is a time when the library cannot be used."
+      },
+      {
+        "id": "問2",
+        "text": "この案内の内容と合っているものはどれか。",
+        "options": [
+          "1 この図書館は、第3月曜日とその翌日は閉まっている。",
+          "2 この図書館は、第3月曜日と年末年始以外は開いている。",
+          "3 この図書館では、児童室も毎日図書館の閉館まで使用できる。",
+          "4 この図書館は、休館日以外にも臨時で休む日がある。"
+        ],
+        "correct_answer": 4,
+        "explanation": "The notice says 'from Oct 1 to Oct 10, it will be temporarily closed' (臨時で休館します). This matches Option 4: 'In addition to regular holidays, there are days when the library is temporarily closed' (休館日以外にも臨時で休む日がある)."
+      }
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "bookId": "sou-matome-n3-reading",
+  "chapterId": "week6-day6",
+  "week": 6,
+  "day": 6,
+  "theme": "意見文や説明文を読もう",
+  "title": "Week 6 - Day 6: 社会に関する文章",
+  "learning_focus": {
+    "title": "複雑な文章を単純にして理解しよう！",
+    "subtitle": "Learn to simplify sentences!",
+    "comic": {
+      "situation": "修飾語や飾りの部分を省いて、文の骨格（主語＋述語）を掴む。",
+      "dialogue": [
+        {
+          "speaker": "鳥先生",
+          "text": "私は教師です。"
+        },
+        {
+          "speaker": "複雑な文",
+          "text": "私はそういうふうに見えないかもしれないし、なりたくてなったわけではないが教師です。→ 私は教師です。"
+        }
+      ],
+      "note": "★難しく見える文も、飾りの部分を省くと単純な文章になります。\n(Even complex sentences become simple when all the padding is removed.)\n・よく使われる表現：\n  ・バイト：a part-time job\n  ・パート：part-time\n  ・正社員：a permanent employee\n  ・派遣社員：temporary staff\n  ・常勤：full-time\n  ・非常勤：part-time\n  ・就職する：to get a job\n  ・フリーター：a job-hopping part-time worker\n  ・雇う：to hire\n  ・採用：employment / recruiting"
+    }
+  },
+  "vocabulary": [
+    {
+      "word": "不況",
+      "reading": "ふきょう",
+      "meaning": "economic slump, recession, depression",
+      "example": "でも不況だし、いい会社は雇ってくれないんですよ。"
+    },
+    {
+      "word": "除く",
+      "reading": "のぞく",
+      "meaning": "to remove, to exclude",
+      "example": "学生や主婦を除く15歳から34歳の人たちのうち..."
+    },
+    {
+      "word": "企業",
+      "reading": "きぎょう",
+      "meaning": "an enterprise, company, corporation",
+      "example": "企業は年々採用を減らし、また、賃金をできるだけ安く抑える努力をしてきた。"
+    },
+    {
+      "word": "賃金",
+      "reading": "ちんぎん",
+      "meaning": "wages, pay",
+      "example": "賃金をできるだけ安く抑える努力をしてきた。"
+    },
+    {
+      "word": "税収",
+      "reading": "ぜいしゅう",
+      "meaning": "tax revenues",
+      "example": "フリーターが増えると消費も税収も減る。"
+    },
+    {
+      "word": "経済成長率",
+      "reading": "けいざいせいちょうりつ",
+      "meaning": "rate of economic growth",
+      "example": "日本の経済成長率も大きく低下し、さまざまな社会問題が起きてくる。"
+    }
+  ],
+  "grammar_notes": [
+    "▶「（バイト）だけでは将来の生活が不安」＝バイトのみの収入では将来が心配。"
+  ],
+  "practice": {
+    "title": "れんしゅう",
+    "instruction": "次の男の人の言葉を読んで、後の文から正しいものを選ぼう。(答えは次のページ)",
+    "conversation": [
+      {
+        "speaker": "男の人",
+        "text": "ぼくは2年前に大学を卒業したのですが、まだちゃんと就職していません。いわゆるフリーターなんです。友だちにもフリーター、多いですよ。ぼくのようなフリーターが増えると、将来、日本の国が大変なことになるって言われるんですが、ぼくだってできれば正社員になりたいと思っているんです。やっぱりバイトだけでは将来の生活が不安ですからね。でも不況(※)だし、いい会社は雇ってくれないんですよ。"
+      }
+    ],
+    "vocab_notes": [
+      {
+        "word": "(※) 不況",
+        "meaning": "economic slump"
+      }
+    ],
+    "question": "後の文から正しいものを選ぼう。",
+    "options": [
+      "1 この男の人は今アルバイトをしている。",
+      "2 この男の人はちゃんと就職したいと思っている。",
+      "3 フリーターが増えると日本の国にとってよくないと言われている。",
+      "4 この男の人のバイト代は安い。",
+      "5 この男の人は自分の生活より日本の将来を心配している。"
+    ],
+    "correct_answers": [
+      1,
+      2,
+      3
+    ],
+    "options_explanation": {
+      "1": "正解。男の人はフリーターであり、「バイトだけでは将来の生活が不安」と語っているため現在アルバイトをしています。",
+      "2": "正解。男の人は「できれば正社員になりたいと思っているんです」と正社員としての就職を望んでいます。",
+      "3": "正解。男の人は「フリーターが増えると、将来、日本の国が大変なことになるって言われる」と述べています。",
+      "4": "不正解。男の人の具体的なバイト代の額が高いか安いかは書かれていません。",
+      "5": "不正解。男の人は「バイトだけでは将来の生活が不安」と自分の生活を心配しています。"
+    }
+  },
+  "mondai": {
+    "title": "もんだい",
+    "instruction": "次の文章を読んで、後の問いに答えなさい。(答えは別冊 p.7)",
+    "passage": {
+      "text": "フリーターとは、学生や主婦を除く(※1)15歳から34歳の人たちのうち、主にパートやアルバイトなど、正社員以外で働いている人たちのことを言う*1。このフリーターの数は2003年には217万人に達したが、その10年前と比べて約2倍に増えたことで、その呼び名とともに話題となった。\n\nフリーターが増えたのは、若い人たちの働こうとする気持ちや就職しようという意識の低下などが原因とも言われたが、何といっても10年以上続いた不況のせい沙汰*2。企業(※2)は年々採用を減らし、また、賃金(※3)をできるだけ安く抑える努力をしてきた。つまり、企業が安い労働力を求めた結果、フリーターが増加したと言える*3。\n\nフリーターが増えると消費も税収(※4)も減る。そうなると、日本の経済成長率(※5)も大きく低下し、さまざまな社会問題が起きてくる。2003年以降、景気が回復して、フリーターの数も下降したが、景気の低迷とともに再び数年ぶりに上昇し始めている*4。",
+      "vocab_notes": [
+        {
+          "word": "(※1) 除く",
+          "meaning": "to remove / exclude"
+        },
+        {
+          "word": "(※2) 企業",
+          "meaning": "an enterprise"
+        },
+        {
+          "word": "(※3) 賃金",
+          "meaning": "wages"
+        },
+        {
+          "word": "(※4) 税収",
+          "meaning": "tax revenues"
+        },
+        {
+          "word": "(※5) 経済成長率",
+          "meaning": "rate of economic growth"
+        }
+      ],
+      "footnotes": [
+        "*1 'Freeters' are people between the ages of 15 and 34, excluding students and housewives, who are engaged in part-time or casual work.",
+        "*2 it was the result of Japan having been in a recession for over 10 years",
+        "*3 the number of 'freeters' has increased as a result of enterprises hiring cheaper labor",
+        "*4 with the economic climate becoming sluggish again, the number of 'freeters' is starting to climb back up for the first time in several years"
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "question": "フリーターの数が増えたいちばんの原因は何か。",
+        "options": [
+          "1 若者に働く意志がないこと",
+          "2 労働人口が増加し過ぎたこと",
+          "3 会社の賃金が安すぎること",
+          "4 不況で会社が新入社員の採用を減らしたこと"
+        ],
+        "correct_answer": 4,
+        "explanation": "正解は4です。第2段落に「何といっても10年以上続いた不況のせいだった。企業は年々採用を減らし、また、賃金をできるだけ安く抑える努力をしてきた。つまり、企業が安い労働力を求めた結果、フリーターが増加したと言える」とあります。"
+      },
+      {
+        "number": 2,
+        "question": "この文章で筆者が最も言いたいことは何か。",
+        "options": [
+          "1 フリーターが増加していくと日本の将来は大変だ。",
+          "2 これからもフリーターは増え続けるだろう。",
+          "3 会社はフリーターに労働力を求めるべきではない。",
+          "4 フリーターをしている若い人の将来が心配だ。"
+        ],
+        "correct_answer": 1,
+        "explanation": "正解は1です。第3段落でフリーターが増えることで消費や税収が減り、経済成長率が低下してさまざまな社会問題を引き起こすという、日本社会全体への深刻な影響（将来の危機）を主張しています。"
+      }
+    ]
+  }
+}
