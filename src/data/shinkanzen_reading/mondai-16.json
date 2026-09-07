@@ -15,12 +15,12 @@
     "english": "Memos"
   },
   "preReading": "コピー機が故障していたら、どうしますか。",
-  "preReadingPrompt": "コピー機が故障していたら、どうしますか。",
-  "mondaiHeader": "問題16　つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "preReadingPrompt": "コピー<ruby>機<rt>き</rt></ruby>が<ruby>故障<rt>こしょう</rt></ruby>していたら、どうしますか。",
+  "mondaiHeader": "問題16 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
   "imageSrc": "/shinkanzen_pages/N3_page-0057.jpg",
   "passageLayout": "html",
   "passageNotes": "",
-  "passageText": "<div class=\"border border-slate-300 dark:border-slate-700 rounded-lg p-5 bg-amber-50/20 dark:bg-slate-900/30 text-sm leading-relaxed space-y-3 font-sans\">\n  <div class=\"border-2 border-red-500/80 rounded p-3 text-center mb-3 bg-red-50/40 dark:bg-red-950/20\">\n    <p class=\"font-bold text-red-600 dark:text-red-400 text-base\">【<ruby>故障中<rt>こしょうちゅう</rt></ruby>】</p>\n    <p class=\"text-xs text-slate-700 dark:text-slate-300 mt-1\">ただいま<ruby>修理<rt>しゅうり</rt></ruby>を<ruby>頼<rt>たの</rt></ruby>んでいます。<ruby>修理<rt>しゅうり</rt></ruby>が<ruby>終<rt>お</rt></ruby>わるまで<ruby>使<rt>つか</rt></ruby>えません。</p>\n  </div>\n  <p><ruby>次<rt>つぎ</rt></ruby>の<ruby>場所<rt>ばしょ</rt></ruby>のコピー<ruby>機<rt>き</rt></ruby>を<ruby>使<rt>つか</rt></ruby>ってください。</p>\n  <div class=\"space-y-3 pl-2\">\n    <div>\n      <p class=\"font-semibold text-slate-800 dark:text-slate-200\">・5<ruby>階<rt>かい</rt></ruby>　<ruby>第<rt>だい</rt></ruby>1<ruby>事務室<rt>じむしつ</rt></ruby></p>\n      <p class=\"text-xs text-slate-600 dark:text-slate-400 pl-3\">（<ruby>午前中<rt>ごぜんちゅう</rt></ruby>は<ruby>混<rt>こ</rt></ruby>み<ruby>合<rt>あ</rt></ruby>いますから、お<ruby>急<rt>いそ</rt></ruby>ぎでない<ruby>方<rt>かた</rt></ruby>はご<ruby>遠慮<rt>えんりょ</rt></ruby>ください）</p>\n    </div>\n    <div>\n      <p class=\"font-semibold text-slate-800 dark:text-slate-200\">・5<ruby>階<rt>かい</rt></ruby>　<ruby>第<rt>だい</rt></ruby>2<ruby>事務室<rt>じむしつ</rt></ruby></p>\n      <p class=\"text-xs text-slate-600 dark:text-slate-400 pl-3\">（11:30〜13:30は<ruby>使<rt>つか</rt></ruby>えません）</p>\n    </div>\n    <div>\n      <p class=\"font-semibold text-slate-800 dark:text-slate-200\">・4<ruby>階<rt>かい</rt></ruby>　<ruby>資料準備室<rt>しりょうじゅんびしつ</rt></ruby></p>\n      <p class=\"text-xs text-slate-600 dark:text-slate-400 pl-3\">（カギがかかっています。<ruby>隣<rt>となり</rt></ruby>の<ruby>資料管理室<rt>しりょうかんりしつ</rt></ruby>でカギを<ruby>借<rt>か</rt></ruby>りて<ruby>入<rt>はい</rt></ruby>ってください）</p>\n    </div>\n  </div>\n</div>",
+  "passageText": "<div class=\"mb-4\">\n  <ruby>職場<rt>しょくば</rt></ruby>でコピーを<ruby>取<rt>と</rt></ruby>ろうとしたら、コピー<ruby>機<rt>き</rt></ruby>に<ruby>以下<rt>いか</rt></ruby>のようなメモが<ruby>貼<rt>は</rt></ruby>ってあった。\n</div>\n<div class=\"bg-gray-100 dark:bg-gray-800 p-5 border-2 border-gray-400 border-dashed rounded text-sm md:text-base leading-relaxed font-sans space-y-3\">\n  <div class=\"text-base md:text-lg font-bold text-gray-900 dark:text-gray-100\">\n    このコピー<ruby>機<rt>き</rt></ruby>は<ruby>故障中<rt>こしょうちゅう</rt></ruby>です。\n  </div>\n  <p><ruby>修理<rt>しゅうり</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が11<ruby>時<rt>じ</rt></ruby>ごろ<ruby>来<rt>き</rt></ruby>ます。<br/><ruby>修理<rt>しゅうり</rt></ruby>が<ruby>問題<rt>もんだい</rt></ruby>なく<ruby>終<rt>お</rt></ruby>われば、<ruby>午後<rt>ごご</rt></ruby>から<ruby>使<rt>つか</rt></ruby>えるようになります。</p>\n  <div class=\"pt-2 border-t border-gray-300 dark:border-gray-600 space-y-2\">\n    <p>お<ruby>急<rt>いそ</rt></ruby>ぎの<ruby>方<rt>かた</rt></ruby>は、5<ruby>階<rt>かい</rt></ruby>の<ruby>第一事務室<rt>だいいちじむしつ</rt></ruby>か、5<ruby>階<rt>かい</rt></ruby>の<ruby>第二事務室<rt>だいにじむしつ</rt></ruby>か、4<ruby>階<rt>かい</rt></ruby>の<ruby>資料準備室<rt>しりょうじゅんびしつ</rt></ruby>のものをお<ruby>使<rt>つか</rt></ruby>いください。</p>\n    <p>ただし、5<ruby>階<rt>かい</rt></ruby>の<ruby>第一事務室<rt>だいいちじむしつ</rt></ruby>は、<ruby>混<rt>こ</rt></ruby>んでいるので、20<ruby>枚<rt>まい</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>のコピーはご<ruby>遠慮<rt>えんりょ</rt></ruby>ください。</p>\n    <p><ruby>第二事務室<rt>だいにじむしつ</rt></ruby>のコピー<ruby>機<rt>き</rt></ruby>はA3サイズが<ruby>取<rt>と</rt></ruby>れません。</p>\n    <p>また、4<ruby>階<rt>かい</rt></ruby>の<ruby>資料準備室<rt>しりょうじゅんびしつ</rt></ruby>はカギがかかっていますので、となりの<ruby>資料管理室<rt>しりょうかんりしつ</rt></ruby>でカギを<ruby>借<rt>か</rt></ruby>りてください。</p>\n  </div>\n</div>",
   "footnotes": [],
   "vocabulary": [
     {
@@ -31,12 +31,12 @@
     {
       "word": "修理",
       "reading": "しゅうり",
-      "meaning": "repair, servicing"
+      "meaning": "repair, fixing"
     },
     {
-      "word": "事務室",
-      "reading": "じむしつ",
-      "meaning": "office room"
+      "word": "第一事務室",
+      "reading": "だいいちじむしつ",
+      "meaning": "first office room"
     },
     {
       "word": "資料準備室",
@@ -49,40 +49,35 @@
       "meaning": "document management room"
     },
     {
-      "word": "混み合う",
-      "reading": "こみあう",
-      "meaning": "to be crowded, to be congested"
+      "word": "混んでいる",
+      "reading": "こんでいる",
+      "meaning": "crowded, congested"
     },
     {
       "word": "ご遠慮ください",
       "reading": "ごえんりょください",
-      "meaning": "please refrain from"
+      "meaning": "please refrain from doing"
     },
     {
       "word": "カギがかかる",
       "reading": "カギがかかる",
       "meaning": "to be locked"
-    },
-    {
-      "word": "間に合う",
-      "reading": "まにあう",
-      "meaning": "to be in time (for something)"
     }
   ],
   "questions": [
     {
       "id": "q16-1",
       "questionNumber": "問 1",
-      "questionText": "いま、<ruby>午前<rt>ごぜん</rt></ruby>11<ruby>時<rt>じ</rt></ruby>40<ruby>分<rt>ぷん</rt></ruby>です。<ruby>午後<rt>ごご</rt></ruby>1<ruby>時<rt>じ</rt></ruby>からの<ruby>会議<rt>かいぎ</rt></ruby>に<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わせるために、すぐにコピーを<ruby>取<rt>と</rt></ruby>りたいです。どうすればいいですか。",
+      "questionText": "<ruby>今<rt>いま</rt></ruby>、9<ruby>時<rt>じ</rt></ruby>45<ruby>分<rt>ふん</rt></ruby>で、10<ruby>時<rt>じ</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>のためにA3サイズのコピーを40<ruby>枚<rt>まい</rt></ruby><ruby>取<rt>と</rt></ruby>りたい。<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>うようにコピーを<ruby>取<rt>と</rt></ruby>るには、どうすれば<ruby>一番<rt>いちばん</rt></ruby>よいか。",
       "options": [
-        "5<ruby>階<rt>かい</rt></ruby>の<ruby>第<rt>だい</rt></ruby>1<ruby>事務室<rt>じむしつ</rt></ruby>へ<ruby>行<rt>い</rt></ruby>ってコピーを<ruby>取<rt>と</rt></ruby>る。",
-        "5<ruby>階<rt>かい</rt></ruby>の<ruby>第<rt>だい</rt></ruby>2<ruby>事務室<rt>じむしつ</rt></ruby>へ<ruby>行<rt>い</rt></ruby>ってコピーを<ruby>取<rt>と</rt></ruby>る。",
+        "5<ruby>階<rt>かい</rt></ruby>の<ruby>第一事務室<rt>だいいちじむしつ</rt></ruby>に<ruby>行<rt>い</rt></ruby>き、コピーを<ruby>取<rt>と</rt></ruby>る。",
+        "5<ruby>階<rt>かい</rt></ruby>の<ruby>第二事務室<rt>だいにじむしつ</rt></ruby>に<ruby>行<rt>い</rt></ruby>き、コピーを<ruby>取<rt>と</rt></ruby>る。",
         "4<ruby>階<rt>かい</rt></ruby>の<ruby>資料管理室<rt>しりょうかんりしつ</rt></ruby>でカギを<ruby>借<rt>か</rt></ruby>り、<ruby>資料準備室<rt>しりょうじゅんびしつ</rt></ruby>でコピーを<ruby>取<rt>と</rt></ruby>る。",
-        "コピー<ruby>機<rt>き</rt></ruby>の<ruby>修理<rt>しゅうり</rt></ruby>が<ruby>終<rt>お</rt></ruby>わるのを<ruby>待<rt>ま</rt></ruby>ってから、すぐにコピーを<ruby>取<rt>と</rt></ruby>る。"
+        "<ruby>修理<rt>しゅうり</rt></ruby>の<ruby>後<rt>あと</rt></ruby>、このコピー<ruby>機<rt>き</rt></ruby>を<ruby>使<rt>つか</rt></ruby>う。"
       ],
       "correct": 3,
       "correctOption": "4<ruby>階<rt>かい</rt></ruby>の<ruby>資料管理室<rt>しりょうかんりしつ</rt></ruby>でカギを<ruby>借<rt>か</rt></ruby>り、<ruby>資料準備室<rt>しりょうじゅんびしつ</rt></ruby>でコピーを<ruby>取<rt>と</rt></ruby>る。",
-      "explanation": "現在の時刻は11:40です。午後1時からの会議に間に合わせるために今すぐコピーを取る必要があります。\n・5階 第1事務室：「お急ぎでない方はご遠慮ください」とあり急ぎの人は使えますが午前中は混み合っています。\n・5階 第2事務室：11:30〜13:30は使えないため、11:40時点では利用不可です。\n・4階 資料準備室：カギがかかっていますが、隣の資料管理室でカギを借りれば利用できます。\n修理を待つ時間はないため、最も適切で確実にすぐコピーを取る方法は「4階の資料管理室でカギを借り、資料準備室でコピーを取る」である 3 が正解です。"
+      "explanation": "・5階第一事務室：40枚取りたいが「20枚以上のコピーはご遠慮ください」とあるため使えません。\n・5階第二事務室：「第二事務室のコピー機はA3サイズが取れません」とあるため使えません。\n・修理の後：修理の人が来るのは11時ごろなので、10時の会議に間に合いません。\nしたがって「4階の資料管理室でカギを借り、資料準備室でコピーを取る」という 3 が正解です。"
     }
   ]
 }

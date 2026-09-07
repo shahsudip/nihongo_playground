@@ -15,12 +15,12 @@
     "english": "Letters"
   },
   "preReading": "だれかから日本語の手紙をもらったことがありますか。",
-  "preReadingPrompt": "だれかから日本語の手紙をもらったことがありますか。",
-  "mondaiHeader": "問題15　つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "preReadingPrompt": "だれかから<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>手紙<rt>てがみ</rt></ruby>をもらったことがありますか。",
+  "mondaiHeader": "問題15 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
   "imageSrc": "/shinkanzen_pages/N3_page-0055.jpg",
   "passageLayout": "html",
   "passageNotes": "",
-  "passageText": "<div class=\"border border-slate-300 dark:border-slate-700 rounded-lg p-6 bg-amber-50/20 dark:bg-slate-900/30 font-serif leading-loose tracking-wide\">\n  <div style=\"writing-mode: vertical-rl; text-orientation: mixed;\" class=\"h-[480px] overflow-x-auto ml-auto space-y-4 py-2 text-sm\">\n    <p><ruby>拝啓<rt>はいけい</rt></ruby></p>\n    <p><ruby>山<rt>やま</rt></ruby>の<ruby>紅葉<rt>こうよう</rt></ruby><sup>（<ruby>注<rt>ちゅう</rt></ruby>1）</sup>も<ruby>美<rt>うつく</rt></ruby>しい<ruby>季節<rt>きせつ</rt></ruby>となりましたが、いかがお<ruby>過<rt>す</rt></ruby>ごしでしょうか。</p>\n    <p>さて、<ruby>大学<rt>だいがく</rt></ruby>での<ruby>勉強<rt>べんきょう</rt></ruby>は<ruby>順調<rt>じゅんちょう</rt></ruby>ですか。<ruby>日本<rt>にほん</rt></ruby>の<ruby>歴史<rt>れきし</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みたいとおっしゃっていましたね。<ruby>私<rt>わたし</rt></ruby>が<ruby>持<rt>も</rt></ruby>っている<ruby>本<rt>ほん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に、わかりやすくていい<ruby>本<rt>ほん</rt></ruby>がありましたので、<ruby>別便<rt>べつびん</rt></ruby><sup>（<ruby>注<rt>ちゅう</rt></ruby>2）</sup>でお<ruby>送<rt>おく</rt></ruby>りしました。よかったら、さしあげますので、<ruby>勉強<rt>べんきょう</rt></ruby>にお<ruby>役<rt>やく</rt></ruby><ruby>立<rt>だ</rt></ruby>てください。</p>\n    <p><ruby>寒<rt>さむ</rt></ruby>くなってまいりましたので、どうぞお<ruby>体<rt>からだ</rt></ruby>にお<ruby>気<rt>き</rt></ruby>をつけてお<ruby>過<rt>す</rt></ruby>ごしください。</p>\n    <p class=\"text-right\"><ruby>敬具<rt>けいぐ</rt></ruby></p>\n    <p class=\"mt-4\"><ruby>十一月<rt>じゅういちがつ</rt></ruby><ruby>十日<rt>とおか</rt></ruby></p>\n    <p class=\"text-right\"><ruby>高木<rt>たかぎ</rt></ruby>まなみ</p>\n    <p class=\"mt-4\">チャン・ジユン<ruby>様<rt>さま</rt></ruby></p>\n  </div>\n</div>",
+  "passageText": "<div class=\"border-2 border-gray-400 border-dashed p-4 md:p-6 rounded-lg bg-stone-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 flex justify-center overflow-x-auto\">\n  <div class=\"font-serif tracking-widest text-sm md:text-base leading-loose max-h-[380px] overflow-x-auto py-2 px-4 select-text\" style=\"writing-mode: vertical-rl;\">\n    <p class=\"mb-4\"><ruby>拝啓<rt>はいけい</rt></ruby></p>\n    <p class=\"indent-4 mb-4\"><ruby>紅葉<rt>こうよう</rt></ruby><sup>（<ruby>注<rt>ちゅう</rt></ruby>1）</sup>がきれいな<ruby>季節<rt>きせつ</rt></ruby>になってきました。<ruby>皆<rt>みな</rt></ruby>さま、お<ruby>元気<rt>げんき</rt></ruby>でお<ruby>過<rt>す</rt></ruby>ごしのことと<ruby>思<rt>おも</rt></ruby>います。</p>\n    <p class=\"indent-4 mb-4\"><ruby>先日<rt>せんじつ</rt></ruby>は<ruby>久<rt>ひさ</rt></ruby>しぶりにチャンさんにお<ruby>会<rt>あ</rt></ruby>いすることができて、とてもうれしかったです。<ruby>仕事<rt>しごと</rt></ruby>も<ruby>順調<rt>じゅんちょう</rt></ruby>に<ruby>進<rt>すす</rt></ruby>んでいるとうかがい<ruby>安心<rt>あんしん</rt></ruby>しました。また、ソナちゃんがかわいい<ruby>小学生<rt>しょうがくせい</rt></ruby>になっていてびっくりしました。</p>\n    <p class=\"indent-4 mb-4\">さて、その<ruby>時<rt>とき</rt></ruby>にお<ruby>話<rt>はな</rt></ruby>しした<ruby>本<rt>ほん</rt></ruby>を<ruby>別便<rt>べつびん</rt></ruby><sup>（<ruby>注<rt>ちゅう</rt></ruby>2）</sup>でお<ruby>送<rt>おく</rt></ruby>りしました。これは、<ruby>私<rt>わたし</rt></ruby>にはもう<ruby>必要<rt>ひつよう</rt></ruby>ないので、チャンさんのお<ruby>仕事<rt>しごと</rt></ruby>の<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>てばうれしいです。</p>\n    <p class=\"indent-4 mb-4\">これから<ruby>寒<rt>さむ</rt></ruby>くなってきますが、どうぞお<ruby>体<rt>からだ</rt></ruby>に<ruby>気<rt>き</rt></ruby>をつけてお<ruby>過<rt>す</rt></ruby>ごしください。</p>\n    <p class=\"text-left mt-8 mb-4\"><ruby>敬具<rt>けいぐ</rt></ruby></p>\n    <p class=\"mt-4\">二〇一四年十月二十五日</p>\n    <p class=\"text-left mt-12\"><ruby>高木<rt>たかぎ</rt></ruby>まなみ</p>\n    <p class=\"mt-4\">チャン・ジユン<ruby>様<rt>さま</rt></ruby></p>\n  </div>\n</div>",
   "footnotes": [
     {
       "term": "（注1）紅葉",
@@ -40,7 +40,7 @@
     {
       "word": "紅葉",
       "reading": "こうよう",
-      "meaning": "autumn colors, red autumn leaves"
+      "meaning": "autumn colors, red autumn foliage"
     },
     {
       "word": "お過ごし",
@@ -50,17 +50,12 @@
     {
       "word": "順調",
       "reading": "じゅんちょう",
-      "meaning": "smoothly, doing well, in good order"
+      "meaning": "smoothly, favorably, in good order"
     },
     {
       "word": "別便",
       "reading": "べつびん",
-      "meaning": "sent separately (by separate mail/package)"
-    },
-    {
-      "word": "さしあげる",
-      "reading": "さしあげる",
-      "meaning": "to give (humble polite form of あげる)"
+      "meaning": "sent separately, separate package"
     },
     {
       "word": "役に立つ",
@@ -70,28 +65,23 @@
     {
       "word": "敬具",
       "reading": "けいぐ",
-      "meaning": "Sincerely yours (formal letter closing matching 拝啓)"
-    },
-    {
-      "word": "お体にお気をつけて",
-      "reading": "おからだにおきをつけて",
-      "meaning": "Please take good care of yourself, your health"
+      "meaning": "Sincerely yours (formal closing matching 拝啓)"
     }
   ],
   "questions": [
     {
       "id": "q15-1",
       "questionNumber": "問 1",
-      "questionText": "この<ruby>手紙<rt>てがみ</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>と<ruby>合<rt>あ</rt></ruby>っているものはどれか。",
+      "questionText": "この<ruby>手紙<rt>てがみ</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>について、<ruby>正<rt>ただ</rt></ruby>しいのはどれか。",
       "options": [
         "<ruby>高木<rt>たかぎ</rt></ruby>さんはチャンさんに、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>をあげると<ruby>言<rt>い</rt></ruby>っている。",
-        "<ruby>高木<rt>たかぎ</rt></ruby>さんはチャンさんに、いい<ruby>本<rt>ほん</rt></ruby>を<ruby>探<rt>さが</rt></ruby>してほしいと<ruby>言<rt>い</rt></ruby>っている。",
-        "チャンさんは<ruby>高木<rt>たかぎ</rt></ruby>さんに、<ruby>本<rt>ほん</rt></ruby>を<ruby>送<rt>おく</rt></ruby>ってほしいと<ruby>頼<rt>たの</rt></ruby>んだ。",
-        "チャンさんは<ruby>高木<rt>たかぎ</rt></ruby>さんに、<ruby>本<rt>ほん</rt></ruby>を<ruby>借<rt>か</rt></ruby>りたいと<ruby>頼<rt>たの</rt></ruby>んだ。"
+        "<ruby>高木<rt>たかぎ</rt></ruby>さんはチャンさんに、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>を<ruby>貸<rt>か</rt></ruby>してあげると<ruby>言<rt>い</rt></ruby>っている。",
+        "<ruby>高木<rt>たかぎ</rt></ruby>さんはチャンさんの<ruby>子<rt>こ</rt></ruby>どもに、<ruby>本<rt>ほん</rt></ruby>を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>ってほしいと<ruby>言<rt>い</rt></ruby>っている。",
+        "<ruby>高木<rt>たかぎ</rt></ruby>さんはチャンさんに、<ruby>本<rt>ほん</rt></ruby>を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>りに<ruby>来<rt>き</rt></ruby>てほしいと<ruby>言<rt>い</rt></ruby>っている。"
       ],
       "correct": 1,
       "correctOption": "<ruby>高木<rt>たかぎ</rt></ruby>さんはチャンさんに、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>をあげると<ruby>言<rt>い</rt></ruby>っている。",
-      "explanation": "手紙の中で高木さんは「私が持っている本の中に、わかりやすくていい本がありましたので、別便でお送りしました。よかったら、さしあげますので、勉強にお役立てください」と書いています。「さしあげる」は「あげる」の謙譲語・丁寧な言い方であり、高木さんが自分の持っている本をチャンさんにあげる（進呈する）と言っているので、正解は 1 です。\n\n・選択肢2：高木さんが本を探してほしいと頼んでいるわけではありません。\n・選択肢3・4：チャンさんが送ってほしい・借りたいと直接頼んだわけではなく、「日本の歴史の本を読みたいとおっしゃっていましたね」という以前の会話を受けて高木さんが自発的に送ったものです。"
+      "explanation": "手紙の中で「その時にお話しした本を別便でお送りしました。これは、私にはもう必要ないので、チャンさんのお仕事の役に立てばうれしいです」とあり、自分には不要になった本をチャンさんにあげる（進呈する）と書かれているため、正解は 1 です。"
     }
   ]
 }

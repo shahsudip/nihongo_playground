@@ -15,12 +15,12 @@
     "english": "Instruction texts"
   },
   "preReading": "日本料理を作ったことがありますか。どんなものを作りましたか。",
-  "preReadingPrompt": "日本料理を作ったことがありますか。どんなものを作りましたか。",
-  "mondaiHeader": "問題17　つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "preReadingPrompt": "<ruby>日本料理<rt>にほんりょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ったことがありますか。どんなものを<ruby>作<rt>つく</rt></ruby>りましたか。",
+  "mondaiHeader": "問題17 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
   "imageSrc": "/shinkanzen_pages/N3_page-0059.jpg",
   "passageLayout": "html",
   "passageNotes": "",
-  "passageText": "<div class=\"border border-slate-300 dark:border-slate-700 rounded-lg p-5 bg-amber-50/20 dark:bg-slate-900/30 text-sm leading-relaxed space-y-4 font-sans\">\n  <div class=\"text-center font-bold text-base border-b border-slate-300 dark:border-slate-700 pb-2\">\n    <ruby>親子丼<rt>おやこどん</rt></ruby>の<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>（2<ruby>人分<rt>にんぶん</rt></ruby>）\n  </div>\n\n  <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 text-xs bg-slate-100/60 dark:bg-slate-800/40 p-3 rounded\">\n    <div>\n      <p class=\"font-bold mb-1\">【<ruby>材料<rt>ざいりょう</rt></ruby>】</p>\n      <ul class=\"list-disc list-inside space-y-0.5\">\n        <li>とり<ruby>肉<rt>にく</rt></ruby>　160g（ひとくち<ruby>大<rt>だい</rt></ruby><sup>（<ruby>注<rt>ちゅう</rt></ruby>1）</sup>に<ruby>切<rt>き</rt></ruby>る）</li>\n        <li>たまねぎ　1/2<ruby>個<rt>こ</rt></ruby>（うすく<ruby>切<rt>き</rt></ruby>る）</li>\n        <li><ruby>卵<rt>たまご</rt></ruby>　3<ruby>個<rt>こ</rt></ruby>（かるくときほぐす）</li>\n        <li>ご<ruby>飯<rt>はん</rt></ruby>　どんぶり2<ruby>杯<rt>はい</rt></ruby></li>\n      </ul>\n    </div>\n    <div>\n      <p class=\"font-bold mb-1\">【<ruby>調味料<rt>ちょうみりょう</rt></ruby>】</p>\n      <ul class=\"list-disc list-inside space-y-0.5\">\n        <li>だし<ruby>汁<rt>じる</rt></ruby><sup>（<ruby>注<rt>ちゅう</rt></ruby>2）</sup>　100ml</li>\n        <li>しょうゆ　<ruby>大<rt>おお</rt></ruby>さじ2</li>\n        <li>みりん　<ruby>大<rt>おお</rt></ruby>さじ2</li>\n        <li><ruby>砂糖<rt>さとう</rt></ruby>　<ruby>小<rt>こ</rt></ruby>さじ2</li>\n      </ul>\n    </div>\n  </div>\n\n  <div class=\"space-y-2\">\n    <p class=\"font-bold text-sm\">【<ruby>手順<rt>てじゅん</rt></ruby>】</p>\n    <ol class=\"list-decimal list-inside space-y-1.5 text-xs sm:text-sm\">\n      <li>なべに【<ruby>調味料<rt>ちょうみりょう</rt></ruby>】をすべて<ruby>入<rt>い</rt></ruby>れて、<ruby>火<rt>ひ</rt></ruby>にかける。</li>\n      <li><ruby>沸騰<rt>ふっとう</rt></ruby>したら、とり<ruby>肉<rt>にく</rt></ruby>とたまねぎを<ruby>入<rt>い</rt></ruby>れ、<ruby>中火<rt>ちゅうび</rt></ruby>で4〜5<ruby>分<rt>ふん</rt></ruby><ruby>煮<rt>に</rt></ruby>る。</li>\n      <li><ruby>肉<rt>にく</rt></ruby>に<ruby>火<rt>ひ</rt></ruby>が<ruby>通<rt>とお</rt></ruby>ったら、とき<ruby>卵<rt>たまご</rt></ruby>の2/3の<ruby>量<rt>りょう</rt></ruby>を<ruby>回<rt>まわ</rt></ruby>し<ruby>入<rt>い</rt></ruby>れる<sup>（<ruby>注<rt>ちゅう</rt></ruby>3）</sup>。</li>\n      <li>フタをして<ruby>弱火<rt>よわび</rt></ruby>で1<ruby>分<rt>ぷん</rt></ruby>ほど<ruby>煮<rt>に</rt></ruby>て、<ruby>残<rt>のこ</rt></ruby>りの<ruby>卵<rt>たまご</rt></ruby>を<ruby>入<rt>い</rt></ruby>れて<ruby>火<rt>ひ</rt></ruby>を<ruby>止<rt>と</rt></ruby>める。フタをして30<ruby>秒<rt>びょう</rt></ruby>ほどおく。</li>\n      <li>どんぶりにご<ruby>飯<rt>はん</rt></ruby>を<ruby>盛<rt>も</rt></ruby>り、4をのせる。</li>\n    </ol>\n  </div>\n</div>",
+  "passageText": "<div class=\"border-2 border-gray-400 rounded-lg p-5 bg-white dark:bg-gray-800 text-sm leading-relaxed space-y-4 font-sans\">\n  <div class=\"bg-gray-100 dark:bg-gray-700/60 p-4 rounded-lg border border-gray-300 dark:border-gray-600\">\n    <div class=\"text-center font-bold text-base md:text-lg mb-3 pb-2 border-b border-gray-300 dark:border-gray-600\">\n      <ruby>親子丼<rt>おやこどん</rt></ruby>の<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>\n    </div>\n    <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 text-sm\">\n      <div>\n        <p class=\"font-bold mb-1\">【<ruby>材料<rt>ざいりょう</rt></ruby>（2<ruby>人分<rt>にんぶん</rt></ruby>）】</p>\n        <ul class=\"space-y-1\">\n          <li>ごはん ・・ どんぶり2<ruby>杯分<rt>はいぶん</rt></ruby></li>\n          <li>とり<ruby>肉<rt>にく</rt></ruby> ・・ 1<ruby>枚<rt>まい</rt></ruby>（<ruby>約<rt>やく</rt></ruby>150g）</li>\n          <li>たまご ・・ 4コ</li>\n          <li>たまねぎ ・・ 1/4コ</li>\n          <li>だし<ruby>汁<rt>じる</rt></ruby><sup>（<ruby>注<rt>ちゅう</rt></ruby>2）</sup> ・・ カップ1<ruby>杯<rt>はい</rt></ruby>（200cc）</li>\n        </ul>\n      </div>\n      <div>\n        <p class=\"font-bold mb-1\">【<ruby>調味料<rt>ちょうみりょう</rt></ruby>】</p>\n        <ul class=\"space-y-1\">\n          <li>みりん ・・ <ruby>大<rt>おお</rt></ruby>さじ2</li>\n          <li><ruby>酒<rt>さけ</rt></ruby> ・・ <ruby>大<rt>おお</rt></ruby>さじ1</li>\n          <li>しょうゆ ・・ <ruby>大<rt>おお</rt></ruby>さじ2</li>\n          <li>さとう ・・ <ruby>大<rt>おお</rt></ruby>さじ1</li>\n        </ul>\n      </div>\n    </div>\n  </div>\n\n  <div>\n    <div class=\"inline-block border border-gray-800 dark:border-gray-200 px-2 py-0.5 font-bold mb-2\">作り方</div>\n    <ol class=\"space-y-2 text-sm pl-1\">\n      <li><strong>1.</strong> まず、とり<ruby>肉<rt>にく</rt></ruby>を<ruby>一口大<rt>ひとくちだい</rt></ruby><sup>（<ruby>注<rt>ちゅう</rt></ruby>1）</sup>に<ruby>切<rt>き</rt></ruby>り、たまねぎをうす<ruby>切<rt>ぎ</rt></ruby>りにします。ボールにたまごを<ruby>割<rt>わ</rt></ruby>って<ruby>混<rt>ま</rt></ruby>ぜておきます。</li>\n      <li><strong>2.</strong> なべにだし<ruby>汁<rt>じる</rt></ruby><sup>（<ruby>注<rt>ちゅう</rt></ruby>2）</sup>、みりん、<ruby>酒<rt>さけ</rt></ruby>、しょうゆ、さとうを<ruby>入<rt>い</rt></ruby>れて<ruby>火<rt>ひ</rt></ruby>にかけます。</li>\n      <li><strong>3.</strong> <ruby>沸騰<rt>ふっとう</rt></ruby>したら、たまねぎ、とり<ruby>肉<rt>にく</rt></ruby>を<ruby>入<rt>い</rt></ruby>れて、<ruby>中火<rt>ちゅうび</rt></ruby>〜<ruby>弱火<rt>よわび</rt></ruby>で<ruby>煮<rt>に</rt></ruby>ます。</li>\n      <li><strong>4.</strong> とり<ruby>肉<rt>にく</rt></ruby>が<ruby>煮<rt>に</rt></ruby>えたら、たまごを<ruby>回<rt>まわ</rt></ruby>し<ruby>入<rt>い</rt></ruby>れます<sup>（<ruby>注<rt>ちゅう</rt></ruby>3）</sup>。<ruby>固<rt>かた</rt></ruby>まり<ruby>始<rt>はじ</rt></ruby>めたら、<ruby>火<rt>ひ</rt></ruby>をとめます。</li>\n      <li><strong>5.</strong> ごはんの<ruby>上<rt>うえ</rt></ruby>にのせて、<ruby>出来<rt>でき</rt></ruby>あがり！</li>\n    </ol>\n  </div>\n\n  <div class=\"border border-gray-400 p-3 bg-amber-50/50 dark:bg-gray-700/50 rounded\">\n    <div class=\"inline-block border border-gray-800 dark:border-gray-200 px-2 py-0.5 text-xs font-bold mb-1\">ここに注意！</div>\n    <p class=\"text-sm font-medium\"><ruby>最後<rt>さいご</rt></ruby>にたまごを<ruby>入<rt>い</rt></ruby>れたら、あまり<ruby>混<rt>ま</rt></ruby>ぜないこと。そして<ruby>長<rt>なが</rt></ruby>く<ruby>煮<rt>に</rt></ruby>ないこと。</p>\n  </div>\n</div>",
   "footnotes": [
     {
       "term": "（注1）一口大",
@@ -69,12 +69,12 @@
     {
       "word": "火にかける",
       "reading": "ひにかける",
-      "meaning": "to put on the heat, stove"
+      "meaning": "to put on the stove, heat"
     },
     {
       "word": "沸騰する",
       "reading": "ふっとうする",
-      "meaning": "to boil"
+      "meaning": "to boil, come to a boil"
     },
     {
       "word": "中火",
@@ -89,7 +89,7 @@
     {
       "word": "煮る",
       "reading": "にる",
-      "meaning": "to simmer, to boil, cook in broth"
+      "meaning": "to simmer, to cook in broth"
     },
     {
       "word": "回し入れる",
@@ -103,14 +103,14 @@
       "questionNumber": "問 1",
       "questionText": "とり<ruby>肉<rt>にく</rt></ruby>とたまねぎはどのようにして<ruby>煮<rt>に</rt></ruby>るか。",
       "options": [
-        "なべにだし<ruby>汁<rt>じる</rt></ruby>、とり<ruby>肉<rt>にく</rt></ruby>、たまねぎを<ruby>入<rt>い</rt></ruby>れ、<ruby>沸騰<rt>ふっとう</rt></ruby>したら<ruby>調味料<rt>ちょうみりょう</rt></ruby>を<ruby>入<rt>い</rt></ruby>れる。",
-        "なべに<ruby>調味料<rt>ちょうみりょう</rt></ruby>をすべて<ruby>入<rt>い</rt></ruby>れて<ruby>火<rt>ひ</rt></ruby>にかけ、<ruby>沸騰<rt>ふっとう</rt></ruby>したらだし<ruby>汁<rt>じる</rt></ruby>を<ruby>入<rt>い</rt></ruby>れる。",
-        "なべにすべての<ruby>材料<rt>ざいりょう</rt></ruby>を<ruby>入<rt>い</rt></ruby>れて、<ruby>沸騰<rt>ふっとう</rt></ruby>するまで<ruby>中火<rt>ちゅうび</rt></ruby>で4〜5<ruby>分<rt>ふん</rt></ruby><ruby>煮<rt>に</rt></ruby>る。",
-        "なべにだし<ruby>汁<rt>じる</rt></ruby>、<ruby>調味料<rt>ちょうみりょう</rt></ruby>を<ruby>入<rt>い</rt></ruby>れ、<ruby>沸騰<rt>ふっとう</rt></ruby>したら、とり<ruby>肉<rt>にく</rt></ruby>とたまねぎを<ruby>入<rt>い</rt></ruby>れる。"
+        "なべにだし<ruby>汁<rt>じる</rt></ruby>、とり<ruby>肉<rt>にく</rt></ruby>、たまねぎを入れ、<ruby>沸騰<rt>ふっとう</rt></ruby>したら<ruby>調味料<rt>ちょうみりょう</rt></ruby>を入れる。",
+        "なべに<ruby>調味料<rt>ちょうみりょう</rt></ruby>をすべて入れ、<ruby>沸騰<rt>ふっとう</rt></ruby>したらだし<ruby>汁<rt>じる</rt></ruby>を入れる。",
+        "なべにすべての<ruby>材料<rt>ざいりょう</rt></ruby>を入れ、<ruby>沸騰<rt>ふっとう</rt></ruby>するまで<ruby>中火<rt>ちゅうび</rt></ruby>で4〜5分<ruby>煮<rt>に</rt></ruby>る。",
+        "なべにだし<ruby>汁<rt>じる</rt></ruby>、<ruby>調味料<rt>ちょうみりょう</rt></ruby>を入れ、<ruby>沸騰<rt>ふっとう</rt></ruby>したら、とり<ruby>肉<rt>にく</rt></ruby>とたまねぎを入れる。"
       ],
       "correct": 4,
-      "correctOption": "なべにだし<ruby>汁<rt>じる</rt></ruby>、<ruby>調味料<rt>ちょうみりょう</rt></ruby>を<ruby>入<rt>い</rt></ruby>れ、<ruby>沸騰<rt>ふっとう</rt></ruby>したら、とり<ruby>肉<rt>にく</rt></ruby>とたまねぎを<ruby>入<rt>い</rt></ruby>れる。",
-      "explanation": "手順1に「なべに【調味料】（だし汁・しょうゆ・みりん・砂糖）をすべて入れて、火にかける」、手順2に「沸騰したら、とり肉とたまねぎを入れ、中火で4〜5分煮る」とあります。したがって、なべにだし汁と調味料を入れて火にかけ、沸騰してからとり肉とたまねぎを入れる手順を正しく説明している 4 が正解です。"
+      "correctOption": "なべにだし<ruby>汁<rt>じる</rt></ruby>、<ruby>調味料<rt>ちょうみりょう</rt></ruby>を入れ、<ruby>沸騰<rt>ふっとう</rt></ruby>したら、とり<ruby>肉<rt>にく</rt></ruby>とたまねぎを入れる。",
+      "explanation": "手順2に「なべにだし汁、みりん、酒、しょうゆ、さとう（＝調味料）を入れて火にかけます」、手順3に「沸騰したら、たまねぎ、とり肉を入れて、中火〜弱火で煮ます」とあります。したがって、「なべにだし汁、調味料を入れ、沸騰したら、とり肉とたまねぎを入れる」という 4 が正解です。"
     }
   ]
 }

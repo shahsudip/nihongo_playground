@@ -15,38 +15,18 @@
     "english": "E-mail (private)"
   },
   "preReading": "仲がいい友達にどんなメールを送りますか。",
-  "preReadingPrompt": "仲がいい友達にどんなメールを送りますか。",
-  "mondaiHeader": "問題14　つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "preReadingPrompt": "<ruby>仲<rt>なか</rt></ruby>がいい<ruby>友達<rt>ともだち</rt></ruby>にどんなメールを<ruby>送<rt>おく</rt></ruby>りますか。",
+  "mondaiHeader": "問題14 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
   "imageSrc": "/shinkanzen_pages/N3_page-0053.jpg",
   "passageLayout": "html",
   "passageNotes": "",
-  "passageText": "<div class=\"border border-slate-300 dark:border-slate-700 rounded-lg p-4 bg-slate-50/50 dark:bg-slate-900/30 text-sm leading-relaxed space-y-2\">\n  <div class=\"border-b border-slate-200 dark:border-slate-700 pb-2 mb-3 text-xs space-y-1 text-slate-600 dark:text-slate-400\">\n    <p><strong><ruby>送信者<rt>そうしんしゃ</rt></ruby>：</strong><ruby>佐藤<rt>さとう</rt></ruby></p>\n    <p><strong><ruby>受信者<rt>じゅしんしゃ</rt></ruby>：</strong>リン</p>\n    <p><strong><ruby>送信日時<rt>そうしんにちじ</rt></ruby>：</strong>20XX<ruby>年<rt>ねん</rt></ruby>7<ruby>月<rt>がつ</rt></ruby>16<ruby>日<rt>にち</rt></ruby> 13:16</p>\n    <p><strong><ruby>件名<rt>けんめい</rt></ruby>：</strong>こんにちは！</p>\n  </div>\n  <p>リンさん、こんにちは^o^/</p>\n  <p><ruby>元気<rt>げんき</rt></ruby>にやってますか。</p>\n  <p><ruby>昨日<rt>きのう</rt></ruby>、ベトナムの<ruby>写真<rt>しゃしん</rt></ruby>が<ruby>届<rt>とど</rt></ruby>きました。ありがとう。とてもきれいに<ruby>撮<rt>と</rt></ruby>れていて、うれしかったです^^</p>\n  <p>ところで、<ruby>来週<rt>らいしゅう</rt></ruby>、<ruby>夏休<rt>なつやす</rt></ruby>みですね。<ruby>一緒<rt>いっしょ</rt></ruby>にご<ruby>飯<rt>はん</rt></ruby>でもどうですか。ベトナムの<ruby>料理<rt>りょうり</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>をもっと<ruby>聞<rt>き</rt></ruby>きたいです。</p>\n  <p><ruby>私<rt>わたし</rt></ruby>は<ruby>月曜日<rt>げつようび</rt></ruby>から<ruby>木曜日<rt>もくようび</rt></ruby>まで<ruby>暇<rt>ひま</rt></ruby>なので、リンさんの<ruby>都合<rt>つごう</rt></ruby>のいい<ruby>日<rt>ひ</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わせます。</p>\n  <p>では、お<ruby>返事<rt>へんじ</rt></ruby>、<ruby>待<rt>ま</rt></ruby>ってま〜す♪♪</p>\n  <p class=\"text-right mt-2\"><ruby>佐藤<rt>さとう</rt></ruby></p>\n</div>",
+  "passageText": "<div class=\"mb-4\">これは、学生時代の<ruby>友達<rt>ともだち</rt></ruby>の<ruby>佐藤<rt>さとう</rt></ruby>さんからリンさんに<ruby>届<rt>とど</rt></ruby>いたメールである。</div>\n<div class=\"bg-gray-100 dark:bg-gray-800 p-4 border-2 border-gray-400 border-dashed rounded text-sm md:text-base leading-relaxed font-sans\">\n  <div class=\"flex pb-1\"><div class=\"w-24 font-bold text-gray-700 dark:text-gray-300\">あて先：</div><div>1234abc@groups.ne.jp</div></div>\n  <div class=\"flex pb-1\"><div class=\"w-24 font-bold text-gray-700 dark:text-gray-300\"><ruby>件名<rt>けんめい</rt></ruby>：</div><div>こんにちは！</div></div>\n  <div class=\"flex pb-3 mb-3 border-b-2 border-gray-400 border-dashed\"><div class=\"w-24 font-bold text-gray-700 dark:text-gray-300\"><ruby>送信<rt>そうしん</rt></ruby><ruby>日時<rt>にちじ</rt></ruby>：</div><div>20XX年7月16日 13:16</div></div>\n\n  <p class=\"mb-2\">リンさん、<ruby>久<rt>ひさ</rt></ruby>しぶり！^o^/</p>\n  <p class=\"mb-2\"><ruby>元気<rt>げんき</rt></ruby>ですか～？ 仕事はどう？</p>\n  <p class=\"mb-2\">こちらは何とか<ruby>元気<rt>げんき</rt></ruby>にやってます。</p>\n  <p class=\"mb-2\">先週まで仕事がとても<ruby>忙<rt>いそが</rt></ruby>しかったのだけど、今週は少し時間が<ruby>取<rt>と</rt></ruby>れるようになりました。</p>\n  <p class=\"mb-2\">それで、リンさんに<ruby>会<rt>あ</rt></ruby>いたいな、と<ruby>思<rt>おも</rt></ruby>ってメールしてます。^^</p>\n  <p class=\"mb-2\"><ruby>久<rt>ひさ</rt></ruby>しぶりに<ruby>食事<rt>しょくじ</rt></ruby>でもしませんか？</p>\n  <p class=\"mb-2\">この前すごくおいしいお<ruby>店<rt>みせ</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけたので、リンさんと<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>きたいと<ruby>思<rt>おも</rt></ruby>って…。</p>\n  <p class=\"mb-2\">よかったら<ruby>都合<rt>つごう</rt></ruby>のいい日、<ruby>教<rt>おし</rt></ruby>えてください♪♪</p>\n  <p class=\"mb-2\">時間もリンさんに<ruby>合<rt>あ</rt></ruby>わせられます。</p>\n  <p class=\"mb-4\">お<ruby>返事<rt>へんじ</rt></ruby><ruby>待<rt>ま</rt></ruby>ってますね！^o^/</p>\n  <p><ruby>佐藤<rt>さとう</rt></ruby></p>\n</div>",
   "footnotes": [],
   "vocabulary": [
     {
-      "word": "^o^/",
-      "reading": "顔文字",
-      "meaning": "Kaomoji emoticon expressing greeting and waving"
-    },
-    {
-      "word": "やってます",
-      "reading": "やってます",
-      "meaning": "managing, getting along, doing well"
-    },
-    {
-      "word": "^^",
-      "reading": "顔文字",
-      "meaning": "Kaomoji emoticon representing a warm smile"
-    },
-    {
-      "word": "♪♪",
-      "reading": "音符マーク",
-      "meaning": "Musical note symbol expressing cheerful mood"
-    },
-    {
       "word": "届く",
       "reading": "とどく",
-      "meaning": "to arrive, to be delivered"
+      "meaning": "to arrive, to reach, to be delivered"
     },
     {
       "word": "件名",
@@ -56,7 +36,12 @@
     {
       "word": "送信日時",
       "reading": "そうしんにちじ",
-      "meaning": "date and time sent"
+      "meaning": "transmission date and time"
+    },
+    {
+      "word": "やってます",
+      "reading": "やってます",
+      "meaning": "getting along, doing well"
     },
     {
       "word": "都合のいい",
@@ -66,7 +51,7 @@
     {
       "word": "合わせる",
       "reading": "あわせる",
-      "meaning": "to adjust, match one's schedule to"
+      "meaning": "to adjust, match one's schedule"
     },
     {
       "word": "返事",
@@ -78,16 +63,16 @@
     {
       "id": "q14-1",
       "questionNumber": "問 1",
-      "questionText": "<ruby>佐藤<rt>さとう</rt></ruby>さんはリンさんにどんなメールを<ruby>送<rt>おく</rt></ruby>ったか。",
+      "questionText": "このメールで<ruby>一番伝<rt>いちばんつた</rt></ruby>えたいことは何か。",
       "options": [
-        "<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>送<rt>おく</rt></ruby>ってくれたお<ruby>礼<rt>れい</rt></ruby>に、ベトナム<ruby>料理<rt>りょうり</rt></ruby>をごちそうしたい。",
-        "ベトナムの<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>見<rt>み</rt></ruby>せたいから、<ruby>来週<rt>らいしゅう</rt></ruby>どこかで<ruby>会<rt>あ</rt></ruby>いたい。",
+        "自分は何とか<ruby>元気<rt>げんき</rt></ruby>にやっているが、リンさんはどうか<ruby>教<rt>おし</rt></ruby>えてほしい。",
+        "<ruby>最近忙<rt>さいきんいそが</rt></ruby>しかったが、<ruby>久<rt>ひさ</rt></ruby>しぶりに少し<ruby>暇<rt>ひま</rt></ruby>になったことを<ruby>伝<rt>つた</rt></ruby>えたい。",
         "<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>食事<rt>しょくじ</rt></ruby>がしたいから、<ruby>都合<rt>つごう</rt></ruby>のいい<ruby>日時<rt>にちじ</rt></ruby>を<ruby>連絡<rt>れんらく</rt></ruby>してほしい。",
-        "<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>月曜日<rt>げつようび</rt></ruby>から<ruby>木曜日<rt>もくようび</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>に、ベトナムへ<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>きたい。"
+        "<ruby>久<rt>ひさ</rt></ruby>しぶりだから、リンさんからメールがほしい。"
       ],
       "correct": 3,
       "correctOption": "<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>食事<rt>しょくじ</rt></ruby>がしたいから、<ruby>都合<rt>つごう</rt></ruby>のいい<ruby>日時<rt>にちじ</rt></ruby>を<ruby>連絡<rt>れんらく</rt></ruby>してほしい。",
-      "explanation": "佐藤さんはメールで、写真のお礼を述べた後、「来週、夏休みですね。一緒にご飯でもどうですか。ベトナムの料理の話をもっと聞きたいです。私は月曜日から木曜日まで暇なので、リンさんの都合のいい日に合わせます。では、お返事、待ってま〜す♪♪」と述べています。つまり「一緒にご飯を食べたいので、リンさんの都合のよい日時を教えてほしい（返事がほしい）」という内容ですので、正解は 3 です。\n\n・選択肢1：「お礼にごちそうしたい」とは書かれていません。\n・選択肢2：写真はリンさんから送られてきたものであり、佐藤さんが見せるわけではありません。\n・選択肢4：ベトナムへ一緒に行こうと誘っているわけではありません。"
+      "explanation": "佐藤さんはメールで「久しぶりに食事でもしませんか？ この前すごくおいしいお店を見つけたので、リンさんと一緒に行きたいと思って…。よかったら都合のいい日、教えてください♪♪」と述べており、一番伝えたいのは「一緒に食事がしたいので都合の良い日時を連絡してほしい」ということです。したがって正解は 3 です。"
     }
   ]
 }
