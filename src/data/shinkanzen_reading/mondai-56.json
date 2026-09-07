@@ -1,0 +1,80 @@
+{
+  "id": "mondai-56",
+  "chapterId": "mondai-56",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 4,
+  "mondaiNumber": 56,
+  "partTitle": "実戦問題",
+  "partTitleEn": "Practice Test",
+  "section": "4. 情報検索",
+  "genre": "パンフレット",
+  "genreEn": "Pamphlets",
+  "sectionHeader": {
+    "category": "情報検索",
+    "type": "パンフレット",
+    "typeEnglish": "Pamphlets"
+  },
+  "title": "問題 56",
+  "instruction": "右のページはレストランの案内である。これを読んで、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "mondaiHeader": "問題56 右のページはレストランの案内である。これを読んで、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "passageText": "<div class=\"max-w-2xl mx-auto font-sans text-gray-900\">\n  <div class=\"text-center font-bold text-lg mb-4 tracking-wide\">\n    ひがし町　レストラン案内\n  </div>\n  <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4\">\n    <!-- 1. オリーブの風 -->\n    <div class=\"border-2 border-gray-800 p-4 bg-white shadow-sm flex flex-col justify-between text-sm leading-relaxed\">\n      <div>\n        <div class=\"font-bold text-base mb-2 border-b border-gray-300 pb-1\">①オリーブの風</div>\n        <p class=\"mb-3 text-gray-800\">南ヨーロッパのさまざまな国の料理が楽しめる。パーティーにもよい。</p>\n      </div>\n      <div class=\"space-y-1 text-xs md:text-sm text-gray-700 bg-gray-50 p-2.5 rounded border border-gray-200\">\n        <div>[昼] 800〜1,500円　[夜] 2,000〜5,000円</div>\n        <div>時間：11:00〜14:00　18:00〜24:00</div>\n        <div>休み：木</div>\n      </div>\n    </div>\n\n    <!-- 2. 山海 -->\n    <div class=\"border-2 border-gray-800 p-4 bg-white shadow-sm flex flex-col justify-between text-sm leading-relaxed\">\n      <div>\n        <div class=\"font-bold text-base mb-2 border-b border-gray-300 pb-1\">②山海（さんかい）</div>\n        <p class=\"mb-3 text-gray-800\">新鮮な魚と野菜を使った日本のふるさとの味。さしみが最高。</p>\n      </div>\n      <div class=\"space-y-1 text-xs md:text-sm text-gray-700 bg-gray-50 p-2.5 rounded border border-gray-200\">\n        <div>[昼] 950〜1,500円　[夜] 3,500〜8,000円</div>\n        <div>時間：11:30〜14:30　18:00〜22:00</div>\n        <div>休み：火</div>\n      </div>\n    </div>\n\n    <!-- 3. よねやま -->\n    <div class=\"border-2 border-gray-800 p-4 bg-white shadow-sm flex flex-col justify-between text-sm leading-relaxed\">\n      <div>\n        <div class=\"font-bold text-base mb-2 border-b border-gray-300 pb-1\">③よねやま</div>\n        <p class=\"mb-3 text-gray-800\">てんぷら、すしなど日本料理のメニューが豊富。個室あり。</p>\n      </div>\n      <div class=\"space-y-1 text-xs md:text-sm text-gray-700 bg-gray-50 p-2.5 rounded border border-gray-200\">\n        <div>[昼] 1,000〜2,300円　[夜] 3,800〜8,800円</div>\n        <div>時間：12:00〜14:00　17:30〜21:30</div>\n        <div>年中無休</div>\n      </div>\n    </div>\n\n    <!-- 4. 李安 -->\n    <div class=\"border-2 border-gray-800 p-4 bg-white shadow-sm flex flex-col justify-between text-sm leading-relaxed\">\n      <div>\n        <div class=\"font-bold text-base mb-2 border-b border-gray-300 pb-1\">④李安（りあん）</div>\n        <p class=\"mb-3 text-gray-800\">カニ料理が有名な中華料理店。食べ放題メニューもあり。</p>\n      </div>\n      <div class=\"space-y-1 text-xs md:text-sm text-gray-700 bg-gray-50 p-2.5 rounded border border-gray-200\">\n        <div>[昼] 1,000〜1,800円　[夜] 2,500〜12,000円</div>\n        <div>時間：11:00〜22:00（17:00〜23:00 / 18:00〜24:00）</div>\n        <div>休み：火　個室あり。</div>\n      </div>\n    </div>\n  </div>\n</div>",
+  "passageLayout": "html",
+  "footnotes": [],
+  "vocabulary": [
+    {
+      "word": "ふるさと",
+      "reading": "ふるさと",
+      "meaning": "Hometown, native place"
+    },
+    {
+      "word": "さしみ",
+      "reading": "さしみ",
+      "meaning": "Raw fish, sashimi"
+    },
+    {
+      "word": "豊富",
+      "reading": "ほうふ",
+      "meaning": "Abundant, rich, varied"
+    },
+    {
+      "word": "個室",
+      "reading": "こしつ",
+      "meaning": "Private room"
+    },
+    {
+      "word": "食べ放題",
+      "reading": "たべほうだい",
+      "meaning": "All-you-can-eat"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "questionNumber": "問 1",
+      "questionText": "チョウさんは、友達と夕食が食べられる店を探している。予算は3,000円以内である。日時は来週の火曜日の19時からである。どの店がよいか。",
+      "options": [
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "correct": 1,
+      "correctOption": "①",
+      "explanation": "火曜日の19時（夕食）に予算3,000円以内で利用できる店を探します。\n・① オリーブの風：休みは木曜（火曜営業）、夜は18:00〜24:00で19時OK、予算[夜] 2,000〜5,000円で3,000円以内で可能。\n・② 山海：火曜定休のため不可。\n・③ よねやま：夜の予算が3,800円〜のため予算オーバー。\n・④ 李安：火曜定休のため不可。\nしたがって①が正解です。"
+    },
+    {
+      "id": "q2",
+      "questionNumber": "問 2",
+      "questionText": "サムさんは、木曜日の昼のできるだけ早い時間に友達と和食が食べたい。何時から食べることができるか。",
+      "options": [
+        "11時",
+        "11時30分",
+        "12時",
+        "12時30分"
+      ],
+      "correct": 2,
+      "correctOption": "11時30分",
+      "explanation": "和食（日本料理）を提供する店は②山海（さしみ、日本のふるさとの味）と③よねやま（てんぷら、すしなど日本料理）です。\n木曜日に営業している和食店は：\n・② 山海：休みは火曜（木曜営業）。昼の時間は「11:30〜14:30」。\n・③ よねやま：年中無休。昼の時間は「12:00〜14:00」。\nできるだけ早い時間は②山海の「11時30分」です。したがって2が正解です。"
+    }
+  ]
+}

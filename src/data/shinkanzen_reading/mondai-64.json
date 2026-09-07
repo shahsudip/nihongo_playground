@@ -1,0 +1,95 @@
+{
+  "id": "mondai-64",
+  "chapterId": "mondai-64",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 4,
+  "mondaiNumber": 64,
+  "partTitle": "実戦問題",
+  "partTitleEn": "Practice Test",
+  "section": "4. 情報検索",
+  "genre": "グラフ",
+  "genreEn": "Graphic material",
+  "sectionHeader": {
+    "category": "情報検索",
+    "type": "グラフ",
+    "typeEnglish": "Graphic material"
+  },
+  "title": "問題 64",
+  "instruction": "つぎの文章と右のページのグラフを見て、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "mondaiHeader": "問題64 つぎの文章と右のページのグラフを見て、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "passageText": "<div class=\"p-3 max-w-2xl mx-auto font-sans bg-white text-gray-900 rounded-lg\">\n  <div class=\"text-sm md:text-base leading-relaxed mb-4 text-gray-800\">\n    右のグラフは、<ruby>好<rt>す</rt></ruby>きな<ruby>動物<rt>どうぶつ</rt></ruby>について<ruby>日本人<rt>にほんじん</rt></ruby>3,600<ruby>人<rt>にん</rt></ruby>を<ruby>対象<rt>たいしょう</rt></ruby>に<ruby>行<rt>おこな</rt></ruby>った<ruby>調査<rt>ちょうさ</rt></ruby>の<ruby>結果<rt>けっか</rt></ruby>である。1983<ruby>年<rt>ねん</rt></ruby>と2007<ruby>年<rt>ねん</rt></ruby>の<ruby>調査<rt>ちょうさ</rt></ruby><ruby>結果<rt>けっか</rt></ruby>のうち、<ruby>上位<rt>じょうい</rt></ruby>1<ruby>位<rt>い</rt></ruby>から8<ruby>位<rt>い</rt></ruby>までを<ruby>示<rt>しめ</rt></ruby>している。\n  </div>\n  <div class=\"border-2 border-gray-800 p-4 rounded-md bg-white shadow-sm\">\n    <div class=\"flex justify-between items-center mb-1\">\n      <div class=\"w-12\"></div>\n      <div class=\"text-base font-bold tracking-wider text-gray-900\"><ruby>好<rt>す</rt></ruby>きな動物</div>\n      <div class=\"text-[11px] text-gray-700\"><ruby>複数回答結果<rt>ふくすうかいとうけっか</rt></ruby></div>\n    </div>\n    <div class=\"w-full flex justify-center\">\n      <svg viewBox=\"0 0 540 280\" className=\"w-full h-auto max-h-[320px] font-sans\">\n        <!-- Grid & Y Axis -->\n        <defs>\n          <pattern id=\"pattern-1983\" width=\"6\" height=\"6\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\">\n            <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"6\" stroke=\"#1f2937\" strokeWidth=\"3.5\" />\n          </pattern>\n          <pattern id=\"pattern-2007\" width=\"4\" height=\"4\" patternUnits=\"userSpaceOnUse\">\n            <circle cx=\"2\" cy=\"2\" r=\"1\" fill=\"#6b7280\" />\n          </pattern>\n        </defs>\n        <!-- % label -->\n        <text x=\"40\" y=\"20\" fontSize=\"13\" fontWeight=\"bold\" fill=\"#111827\">%</text>\n        <!-- Y grid lines and labels (0 to 70) -->\n        <!-- Scale: 0% at y=230, 70% at y=34 (height 196 = 2.8px per %) -->\n        <line x1=\"50\" y1=\"34\" x2=\"510\" y2=\"34\" stroke=\"#d1d5db\" strokeWidth=\"1\" />\n        <text x=\"40\" y=\"38\" fontSize=\"11\" textAnchor=\"end\" fill=\"#374151\">70</text>\n        <line x1=\"50\" y1=\"62\" x2=\"510\" y2=\"62\" stroke=\"#d1d5db\" strokeWidth=\"1\" />\n        <text x=\"40\" y=\"66\" fontSize=\"11\" textAnchor=\"end\" fill=\"#374151\">60</text>\n        <line x1=\"50\" y1=\"90\" x2=\"510\" y2=\"90\" stroke=\"#d1d5db\" strokeWidth=\"1\" />\n        <text x=\"40\" y=\"94\" fontSize=\"11\" textAnchor=\"end\" fill=\"#374151\">50</text>\n        <line x1=\"50\" y1=\"118\" x2=\"510\" y2=\"118\" stroke=\"#d1d5db\" strokeWidth=\"1\" />\n        <text x=\"40\" y=\"122\" fontSize=\"11\" textAnchor=\"end\" fill=\"#374151\">40</text>\n        <line x1=\"50\" y1=\"146\" x2=\"510\" y2=\"146\" stroke=\"#d1d5db\" strokeWidth=\"1\" />\n        <text x=\"40\" y=\"150\" fontSize=\"11\" textAnchor=\"end\" fill=\"#374151\">30</text>\n        <line x1=\"50\" y1=\"174\" x2=\"510\" y2=\"174\" stroke=\"#d1d5db\" strokeWidth=\"1\" />\n        <text x=\"40\" y=\"178\" fontSize=\"11\" textAnchor=\"end\" fill=\"#374151\">20</text>\n        <line x1=\"50\" y1=\"202\" x2=\"510\" y2=\"202\" stroke=\"#d1d5db\" strokeWidth=\"1\" />\n        <text x=\"40\" y=\"206\" fontSize=\"11\" textAnchor=\"end\" fill=\"#374151\">10</text>\n        <line x1=\"50\" y1=\"230\" x2=\"510\" y2=\"230\" stroke=\"#111827\" strokeWidth=\"1.5\" />\n        <text x=\"40\" y=\"234\" fontSize=\"11\" textAnchor=\"end\" fill=\"#374151\">0</text>\n        <line x1=\"50\" y1=\"25\" x2=\"50\" y2=\"230\" stroke=\"#111827\" strokeWidth=\"1.5\" />\n\n        <!-- Bars: 8 categories, each with 1983 (striped) and 2007 (dotted/grey) -->\n        <!-- 1. 犬 (60.5% vs 63%) -->\n        <rect x=\"70\" y=\"61\" width=\"16\" height=\"169\" fill=\"url(#pattern-1983)\" stroke=\"#111\" strokeWidth=\"1\" />\n        <rect x=\"88\" y=\"54\" width=\"16\" height=\"176\" fill=\"#9ca3af\" stroke=\"#111\" strokeWidth=\"1\" />\n        <text x=\"87\" y=\"248\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\" fill=\"#111827\">犬</text>\n\n        <!-- 2. 猫 (37% vs 34%) -->\n        <rect x=\"124\" y=\"126\" width=\"16\" height=\"104\" fill=\"url(#pattern-1983)\" stroke=\"#111\" strokeWidth=\"1\" />\n        <rect x=\"142\" y=\"135\" width=\"16\" height=\"95\" fill=\"#9ca3af\" stroke=\"#111\" strokeWidth=\"1\" />\n        <text x=\"141\" y=\"248\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\" fill=\"#111827\">猫</text>\n\n        <!-- 3. イルカ (27% vs 28%) -->\n        <rect x=\"178\" y=\"154\" width=\"16\" height=\"76\" fill=\"url(#pattern-1983)\" stroke=\"#111\" strokeWidth=\"1\" />\n        <rect x=\"196\" y=\"151\" width=\"16\" height=\"79\" fill=\"#9ca3af\" stroke=\"#111\" strokeWidth=\"1\" />\n        <text x=\"195\" y=\"248\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\" fill=\"#111827\">イルカ</text>\n\n        <!-- 4. 馬 (35% vs 25%) -->\n        <rect x=\"232\" y=\"132\" width=\"16\" height=\"98\" fill=\"url(#pattern-1983)\" stroke=\"#111\" strokeWidth=\"1\" />\n        <rect x=\"250\" y=\"160\" width=\"16\" height=\"70\" fill=\"#9ca3af\" stroke=\"#111\" strokeWidth=\"1\" />\n        <text x=\"249\" y=\"248\" fontSize=\"13\" fontWeight=\"bold\" textAnchor=\"middle\" fill=\"#111827\">馬</text>\n\n        <!-- 5. うさぎ (43.5% vs 22%) -->\n        <rect x=\"286\" y=\"108\" width=\"16\" height=\"122\" fill=\"url(#pattern-1983)\" stroke=\"#111\" strokeWidth=\"1\" />\n        <rect x=\"304\" y=\"168\" width=\"16\" height=\"62\" fill=\"#9ca3af\" stroke=\"#111\" strokeWidth=\"1\" />\n        <text x=\"303\" y=\"248\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\" fill=\"#111827\">うさぎ</text>\n\n        <!-- 6. パンダ (50% vs 22%) -->\n        <rect x=\"340\" y=\"90\" width=\"16\" height=\"140\" fill=\"url(#pattern-1983)\" stroke=\"#111\" strokeWidth=\"1\" />\n        <rect x=\"358\" y=\"168\" width=\"16\" height=\"62\" fill=\"#9ca3af\" stroke=\"#111\" strokeWidth=\"1\" />\n        <text x=\"357\" y=\"248\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\" fill=\"#111827\">パンダ</text>\n\n        <!-- 7. コアラ (42% vs 19%) -->\n        <rect x=\"394\" y=\"112\" width=\"16\" height=\"118\" fill=\"url(#pattern-1983)\" stroke=\"#111\" strokeWidth=\"1\" />\n        <rect x=\"412\" y=\"177\" width=\"16\" height=\"53\" fill=\"#9ca3af\" stroke=\"#111\" strokeWidth=\"1\" />\n        <text x=\"411\" y=\"248\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\" fill=\"#111827\">コアラ</text>\n\n        <!-- 8. リス (41% vs 18%) -->\n        <rect x=\"448\" y=\"115\" width=\"16\" height=\"115\" fill=\"url(#pattern-1983)\" stroke=\"#111\" strokeWidth=\"1\" />\n        <rect x=\"466\" y=\"180\" width=\"16\" height=\"50\" fill=\"#9ca3af\" stroke=\"#111\" strokeWidth=\"1\" />\n        <text x=\"465\" y=\"248\" fontSize=\"12\" fontWeight=\"bold\" textAnchor=\"middle\" fill=\"#111827\">リス</text>\n      </svg>\n    </div>\n    <!-- Legend -->\n    <div class=\"flex justify-center items-center gap-8 mt-3 text-xs md:text-sm font-semibold text-gray-800\">\n      <div class=\"flex items-center gap-2\">\n        <span class=\"inline-block w-5 h-4 border border-gray-700\" style=\"background: repeating-linear-gradient(45deg, #374151, #374151 2px, #fff 2px, #fff 5px);\"></span>\n        <span>1983年</span>\n      </div>\n      <div class=\"flex items-center gap-2\">\n        <span class=\"inline-block w-5 h-4 border border-gray-700 bg-gray-400\"></span>\n        <span>2007年</span>\n      </div>\n    </div>\n    <div class=\"text-right text-[11px] text-gray-600 mt-2 font-serif\">（NHK放送文化研究所「日本人の好きなもの」より引用）</div>\n  </div>\n</div>",
+  "passageLayout": "html",
+  "footnotes": [],
+  "vocabulary": [
+    {
+      "word": "全国",
+      "reading": "ぜんこく",
+      "meaning": "Nationwide, whole country"
+    },
+    {
+      "word": "対象",
+      "reading": "たいしょう",
+      "meaning": "Target, subjects"
+    },
+    {
+      "word": "調査",
+      "reading": "ちょうさ",
+      "meaning": "Survey, investigation"
+    },
+    {
+      "word": "結果",
+      "reading": "けっか",
+      "meaning": "Result"
+    },
+    {
+      "word": "上位",
+      "reading": "じょうい",
+      "meaning": "Top ranks, high tier"
+    },
+    {
+      "word": "示す",
+      "reading": "しめす",
+      "meaning": "To show, indicate"
+    },
+    {
+      "word": "差",
+      "reading": "さ",
+      "meaning": "Difference"
+    },
+    {
+      "word": "複数回答",
+      "reading": "ふくすうかいとう",
+      "meaning": "Multiple responses allowed"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "questionNumber": "問 1",
+      "questionText": "1983年と2007年で一番大きな差があらわれた動物はどれか。",
+      "options": [
+        "犬",
+        "パンダ",
+        "馬",
+        "リス"
+      ],
+      "correct": 2,
+      "correctOption": "パンダ",
+      "explanation": "グラフを見ると、パンダは1983年の50%から2007年の22%へと約28%も減少しており、選択肢の中で最も大きな差があらわれています。"
+    },
+    {
+      "id": "q2",
+      "questionNumber": "問 2",
+      "questionText": "グラフについて正しく述べているのはどれか。",
+      "options": [
+        "ねこは1983年と2007年で大きな差がある。",
+        "うさぎは2007年の調査では3位である。",
+        "パンダは1983年の調査では1位である。",
+        "コアラは2007年の調査では1983年より減少している。"
+      ],
+      "correct": 4,
+      "correctOption": "コアラは2007年の調査では1983年より減少している。",
+      "explanation": "コアラは1983年の約42%から2007年には約19%へと減少しています。したがって4が正しいです（猫の差はわずか3%、うさぎの2007年は同率4位、1983年の1位は犬）。"
+    }
+  ]
+}

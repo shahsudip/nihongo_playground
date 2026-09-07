@@ -1,0 +1,118 @@
+{
+  "id": "mondai-58",
+  "title": "問題58",
+  "mondaiNumber": 58,
+  "part": 4,
+  "section": "第4部 実戦問題",
+  "subSection": "4. 情報検索",
+  "genre": "請求書",
+  "genreEn": "Bills",
+  "pages": "p. 131-132",
+  "mondaiHeader": "問題58 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "instruction": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "prePassageContext": "カンさんは左のページの手紙を郵便でもらった。銀行の口座を作ったが、郵便局の口座はない。まだクレジットカードも持っていない。",
+  "passageText": "<div class=\"max-w-2xl mx-auto font-sans text-gray-900 leading-relaxed text-sm md:text-base\">\n  <div class=\"mb-4 leading-relaxed text-gray-800\">\n    カンさんは左のページの手紙を郵便でもらった。銀行の口座を作ったが、郵便局の口座はない。まだクレジットカードも持っていない。\n  </div>\n  <div class=\"border-2 border-gray-800 p-5 bg-white shadow-sm\">\n    <div class=\"font-bold text-base mb-4 tracking-wide\">\n      NAT携帯電話料金請求書\n    </div>\n    <div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 text-xs md:text-sm\">\n      <!-- Left Column -->\n      <div class=\"space-y-4 border-r-0 md:border-r border-gray-300 md:pr-4\">\n        <div class=\"leading-relaxed\">\n          <div>東京都○○市××町3−5−2</div>\n          <div class=\"font-bold mt-1 text-sm md:text-base\">カン　ヘミ様</div>\n        </div>\n        <table class=\"w-full border-collapse border border-gray-700 text-xs md:text-sm\">\n          <tbody>\n            <tr>\n              <td class=\"border border-gray-700 p-1.5 bg-gray-50 font-semibold w-24\">ご利用期間</td>\n              <td class=\"border border-gray-700 p-1.5\">2014年5月1日〜5月31日</td>\n            </tr>\n            <tr>\n              <td class=\"border border-gray-700 p-1.5 bg-gray-50 font-semibold\">ご請求額</td>\n              <td class=\"border border-gray-700 p-1.5 font-bold\">7,800円</td>\n            </tr>\n            <tr>\n              <td class=\"border border-gray-700 p-1.5 bg-gray-50 font-semibold\">お支払い期限</td>\n              <td class=\"border border-gray-700 p-1.5 font-bold text-gray-900\">2014年6月30日（月）</td>\n            </tr>\n          </tbody>\n        </table>\n        <div class=\"pt-2 leading-relaxed\">\n          <div class=\"font-semibold\">お問い合わせ先＊＊＊＊＊＊＊＊＊＊</div>\n          <div class=\"font-bold mt-0.5\">NAT：0800-222-3333</div>\n          <div class=\"text-xs text-gray-700\">月〜日（年中無休）9:00〜20:00</div>\n          <div class=\"text-right text-xs text-gray-600 mt-3\">発行日2014年　6月3日</div>\n        </div>\n      </div>\n      <!-- Right Column -->\n      <div class=\"space-y-3\">\n        <div class=\"font-bold text-sm border-b border-gray-300 pb-1\">\n          お支払い方法のご案内＊＊＊＊＊＊＊＊\n        </div>\n        <div class=\"space-y-3 leading-relaxed\">\n          <div>\n            <div class=\"font-bold\">●現金でのお支払いの場合</div>\n            <div class=\"pl-2 text-xs md:text-sm text-gray-800\">\n              「振込用紙」を切り取り<sup>（注1）</sup>、お近くのコンビニまたは銀行・郵便局でお支払いください。\n            </div>\n          </div>\n          <div>\n            <div class=\"font-bold\">●クレジットカードでのお支払いの場合</div>\n            <div class=\"pl-2 text-xs md:text-sm text-gray-800\">\n              NATのウェブサイトからお支払いください。\n            </div>\n          </div>\n          <div>\n            <div class=\"font-bold\">●銀行口座の振替<sup>（注2）</sup>手続きをすると、毎月26日に自動的にお振替になります。</div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>",
+  "footnotes": [
+    {
+      "term": "（注1）切り取る",
+      "definition": "切ってその部分を取る。"
+    },
+    {
+      "term": "（注2）振替",
+      "definition": "口座から自動的にお金が支払われること"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "携帯電話",
+      "reading": "けいたいでんわ",
+      "meaning": "Mobile phone, cellphone"
+    },
+    {
+      "word": "請求額",
+      "reading": "せいきゅうがく",
+      "meaning": "Billed amount"
+    },
+    {
+      "word": "支払い期限",
+      "reading": "しはらいきげん",
+      "meaning": "Payment deadline"
+    },
+    {
+      "word": "問い合わせ先",
+      "reading": "といあわせさき",
+      "meaning": "Contact for inquiries"
+    },
+    {
+      "word": "年中無休",
+      "reading": "ねんじゅうむきゅう",
+      "meaning": "Open all year round"
+    },
+    {
+      "word": "発行",
+      "reading": "はっこう",
+      "meaning": "Issue, publication"
+    },
+    {
+      "word": "現金",
+      "reading": "げんきん",
+      "meaning": "Cash"
+    },
+    {
+      "word": "振込用紙",
+      "reading": "ふりこみようし",
+      "meaning": "Payment transfer form"
+    },
+    {
+      "word": "ウェブサイト",
+      "reading": "ウェブサイト",
+      "meaning": "Website"
+    },
+    {
+      "word": "銀行口座",
+      "reading": "ぎんこうこうざ",
+      "meaning": "Bank account"
+    },
+    {
+      "word": "自動的に",
+      "reading": "じどうてきに",
+      "meaning": "Automatically"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "number": "問1",
+      "questionNumber": "問 1",
+      "question": "カンさんは何をしなければならないか。",
+      "questionText": "カンさんは何をしなければならないか。",
+      "options": [
+        "NATに電話をする。",
+        "郵便局に行って、口座を作る。",
+        "コンビニに行って、クレジットカードで払う。",
+        "銀行かコンビニに行って、現金で払う。"
+      ],
+      "correctAnswer": 4,
+      "correct": 4,
+      "explanation": "カンさんはクレジットカードを持っておらず、郵便局の口座もありません。そのため「振込用紙」を使ってお近くのコンビニまたは銀行・郵便局で「現金」で支払う必要があります。したがって4が正解です。",
+      "correctOption": "銀行かコンビニに行って、現金で払う。"
+    },
+    {
+      "id": "q2",
+      "number": "問2",
+      "questionNumber": "問 2",
+      "question": "支払いはいつまでにしなければならないか。",
+      "questionText": "支払いはいつまでにしなければならないか。",
+      "options": [
+        "5月31日",
+        "6月3日",
+        "6月26日",
+        "6月30日"
+      ],
+      "correctAnswer": 4,
+      "correct": 4,
+      "explanation": "表のお支払い期限に「2014年6月30日（月）」と書かれています。したがって4が正解です。",
+      "correctOption": "6月30日"
+    }
+  ]
+}

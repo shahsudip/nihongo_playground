@@ -45,6 +45,7 @@ const BookListPage = () => {
       'shin-nihongo-500-n3',
       'shin-nihongo-500-n4-n5',
       'shinkanzen-master-n3-reading',
+      'shinkanzen-master-n3-listening',
       'sou-matome-n3-reading',
       'nihongo-power-drill-n1',
       'nihongo-power-drill-n2',
@@ -60,6 +61,7 @@ const BookListPage = () => {
       'shin-nihongo-500-n3': 3,
       'shin-nihongo-500-n4-n5': 4,
       'shinkanzen-master-n3-reading': 5,
+      'shinkanzen-master-n3-listening': 5.2,
       'sou-matome-n3-reading': 5.5,
       'nihongo-power-drill-n1': 6,
       'nihongo-power-drill-n2': 7,
@@ -209,6 +211,8 @@ const BookListPage = () => {
             'shin-nihongo-500-n2': 'linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #3a7bd5 100%)',
             'shin-nihongo-500-n3': 'linear-gradient(135deg, #0d9488 0%, #11998e 50%, #38ef7d 100%)',
             'shin-nihongo-500-n4-n5': 'linear-gradient(135deg, #7c3aed 0%, #9333ea 50%, #c084fc 100%)',
+            'shinkanzen-master-n3-reading': 'linear-gradient(135deg, #b45309 0%, #d97706 50%, #f59e0b 100%)',
+            'sou-matome-n3-reading': 'linear-gradient(135deg, #312e81 0%, #4338ca 50%, #6366f1 100%)',
           };
           const gradient = levelGradients[book.id] || gradients[index % gradients.length];
           return (

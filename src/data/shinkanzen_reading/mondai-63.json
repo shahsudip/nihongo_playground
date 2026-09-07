@@ -1,0 +1,127 @@
+{
+  "id": "mondai-63",
+  "chapterId": "mondai-63",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 4,
+  "mondaiNumber": 63,
+  "partTitle": "実戦問題",
+  "partTitleEn": "Practice Test",
+  "section": "4. 情報検索",
+  "genre": "メール",
+  "genreEn": "Email Mail",
+  "sectionHeader": {
+    "category": "情報検索",
+    "type": "メール",
+    "typeEnglish": "Email Mail"
+  },
+  "title": "問題 63",
+  "instruction": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "mondaiHeader": "問題63 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "passageText": "<div class=\"max-w-2xl mx-auto font-sans text-gray-900 leading-relaxed text-sm md:text-base\">\n  <div class=\"mb-6 leading-relaxed\">\n    インターネットで買った商品が不良品<sup>（注1）</sup>だったので、チンさんが返品<sup>（注1）</sup>の希望をメールで連絡したら、以下のような返事が来た。\n  </div>\n  <div class=\"border-2 border-gray-800 p-6 bg-white shadow-sm space-y-4\">\n    <div class=\"font-bold\">\n      チン・スーチー 様\n    </div>\n    <div class=\"leading-relaxed\">\n      いつも○×ショップをご利用いただきまして、ありがとうございます。担当の木村と申します。<br>\n      このたびは、先日ご購入いただきました商品【ABC電気ポット】に不備<sup>（注2）</sup>がございましたこと、大変申し訳ありませんでした。大変ご面倒ではございますが、商品【ABC電気ポット】を、<strong>着払い<sup>（注3）</sup>にて、ご返送くださいますようお願いいたします。</strong>\n    </div>\n    <div class=\"pl-2 space-y-1\">\n      <div>●ご返送先住所　〒123-4567　東京都○○区○○町1−2−3</div>\n      <div>　　　　　　　株式会社　○×ショップ</div>\n      <div>　　　　　　　Tel：03-1234-5678</div>\n    </div>\n    <div class=\"leading-relaxed pt-2\">\n      商品が到着いたしましたら、<strong>ご返金<sup>（注4）</sup>の対応をさせていただきます。</strong><br>\n      つきましては、お客様のお振込先口座を教えていただけますでしょうか。下の項目にご入力の上、このメールにご返信いただきますようお願いいたします。\n    </div>\n    <div class=\"pl-4 py-2 space-y-2\">\n      <div class=\"flex gap-8\">\n        <div class=\"w-48\">●銀行名：</div>\n        <div>●支店名：</div>\n      </div>\n      <div class=\"flex gap-8\">\n        <div class=\"w-48\">●口座番号：</div>\n        <div>●ご名義人様：</div>\n      </div>\n    </div>\n    <div class=\"leading-relaxed pt-2\">\n      このたびはお客様にご迷惑をおかけしてしまい、大変申し訳ありませんでした。<br>\n      またのご利用を心よりお待ちしております。\n    </div>\n    <div class=\"pt-4 border-t border-gray-300 space-y-1 text-xs md:text-sm text-gray-800\">\n      <div>○×ショップ　　木村　○○</div>\n      <div>URL：http://shop.marubatsu.com</div>\n      <div>Tel：03-1234-5678</div>\n      <div>e-mail：XXX@marubatsu.com</div>\n    </div>\n  </div>\n</div>",
+  "passageLayout": "html",
+  "footnotes": [
+    {
+      "term": "（注1）返品（へんぴん）",
+      "definition": "買った品物を返すこと"
+    },
+    {
+      "term": "（注2）不備（ふび）",
+      "definition": "よくない、不完全なこと"
+    },
+    {
+      "term": "（注3）着払い（ちゃくばらい）",
+      "definition": "配達の料金を、荷物などを受け取った方が払うこと"
+    },
+    {
+      "term": "（注4）返金（へんきん）",
+      "definition": "お金を返すこと"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "不良品",
+      "reading": "ふりょうひん",
+      "meaning": "Defective product"
+    },
+    {
+      "word": "担当",
+      "reading": "たんとう",
+      "meaning": "Person in charge, responsible"
+    },
+    {
+      "word": "面倒な",
+      "reading": "めんどうな",
+      "meaning": "Bothersome, troublesome"
+    },
+    {
+      "word": "返送する",
+      "reading": "へんそうする",
+      "meaning": "To return, send back"
+    },
+    {
+      "word": "到着する",
+      "reading": "とうちゃくする",
+      "meaning": "To arrive"
+    },
+    {
+      "word": "対応をする",
+      "reading": "たいおうをする",
+      "meaning": "To take action, respond to"
+    },
+    {
+      "word": "つきましては",
+      "reading": "つきましては",
+      "meaning": "In that connection, therefore"
+    },
+    {
+      "word": "振込先口座",
+      "reading": "ふりこみさきこうざ",
+      "meaning": "Payee bank account"
+    },
+    {
+      "word": "項目",
+      "reading": "こうもく",
+      "meaning": "Item, entry"
+    },
+    {
+      "word": "返信する",
+      "reading": "へんしんする",
+      "meaning": "To reply"
+    },
+    {
+      "word": "名義",
+      "reading": "めいぎ",
+      "meaning": "Account name, titular owner"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "questionNumber": "問 1",
+      "questionText": "買った商品をどうしてほしいと言っているか。",
+      "options": [
+        "そのまま直して使う。",
+        "使わないで捨てる。",
+        "○×ショップに送り、払った送料をメールで連絡する。",
+        "着払いで、○×ショップに送る。"
+      ],
+      "correct": 4,
+      "correctOption": "着払いで、○×ショップに送る。",
+      "explanation": "メール本文に「商品【ABC電気ポット】を、着払いにて、ご返送くださいますようお願いいたします」とあります。"
+    },
+    {
+      "id": "q2",
+      "questionNumber": "問 2",
+      "questionText": "お金はどのように戻ってくるか。",
+      "options": [
+        "商品を送り退さなくても、銀行の口座情報を教えると、お金が振り込まれる。",
+        "商品を送ったことをメールすると、お金が振り込まれる。",
+        "商品が○×ショップに届いたら、お金が郵便で送られてくる。",
+        "商品が○×ショップに届いたら、伝えておいた口座にお金が振り込まれる。"
+      ],
+      "correct": 4,
+      "correctOption": "商品が○×ショップに届いたら、伝えておいた口座にお金が振り込まれる。",
+      "explanation": "「商品が到着いたしましたら、ご返金の対応をさせていただきます。つきましては、お客様のお振込先口座を教えていただけますでしょうか」とあり、商品到着後に指定口座へ返金されます。"
+    }
+  ]
+}

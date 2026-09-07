@@ -4,11 +4,17 @@ on:
   push:
     branches:
       - main  # Runs when you push to main branch
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -24,6 +30,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Verify Shinkanzen Master Data Integrity
+        run: node scripts/verify_all_shinkanzen.cjs
 
       - name: Build project
         run: npm run build

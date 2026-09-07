@@ -1,0 +1,130 @@
+{
+  "id": "mondai-27",
+  "chapterId": "mondai-27",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 3,
+  "partTitle": "第3部：情報検索",
+  "partTitleEn": "Information Retrieval",
+  "mondaiNumber": 27,
+  "title": "問題 27",
+  "genre": {
+    "number": "7",
+    "japanese": "グラフ",
+    "english": "Graphic material"
+  },
+  "sectionHeader": {
+    "number": "7",
+    "japanese": "グラフ",
+    "english": "Graphic material"
+  },
+  "preReading": "アルバイトをしたことがありますか。アルバイトをした目的は何ですか。",
+  "preReadingPrompt": "アルバイトをしたことがありますか。アルバイトをした目的は何ですか。",
+  "mondaiHeader": "問題27　下の文章を読み、右のページの質問に答えなさい。答えは１・２・３・４の中から最もよいものを一つえらびなさい。",
+  "passageLayout": "html",
+  "passageNotes": "<p>(注1) 上回る：ものごとがある数や量や程度より多くなる</p><p>(注2) ほぼ：だいたい</p>",
+  "footnotes": [
+    {
+      "term": "（注1）上回る（うわまわる）",
+      "definition": "ものごとがある数や量や程度より多くなる"
+    },
+    {
+      "term": "（注2）ほぼ",
+      "definition": "だいたい"
+    }
+  ],
+  "imageSrc": "/shinkanzen_pages/N3_page-0085.jpg",
+  "passageText": "<div class=\"space-y-6\">\n  <!-- Reading Text -->\n  <div class=\"leading-relaxed text-base text-gray-900 font-sans\">\n    <p class=\"mb-4 text-justify\">\n      ある大学の大学生を<ruby>対象<rt>たいしょう</rt></ruby>に、アルバイトについてアンケート<ruby>調査<rt>ちょうさ</rt></ruby>した。その<ruby>結果<rt>けっか</rt></ruby>、この大学の<ruby>場合<rt>ばあい</rt></ruby>、<ruby>全体<rt>ぜんたい</rt></ruby>の<ruby>約８割<rt>やくはちわり</rt></ruby>がアルバイトしていることがわかった。男女別にみると、男子学生のうちの79.4%がアルバイトをしているのに<ruby>対<rt>たい</rt></ruby>して、女子学生は83.4%であり、女子学生の<ruby>割合<rt>わりあい</rt></ruby>のほうが、男子学生を<ruby>上回<rt>うわまわ</rt></ruby>って<span class=\"text-xs font-bold\">（注1）</span>いる。\n    </p>\n    <p class=\"mb-4 text-justify\">\n      下のグラフはアルバイトの<ruby>目的<rt>もくてき</rt></ruby>について調査した結果を<ruby>表<rt>あらわ</rt></ruby>している。アルバイトの目的は、「<ruby>生活費<rt>せいかつひ</rt></ruby>を<ruby>稼<rt>かせ</rt></ruby>ぐため」（32.8%）と「学生生活を<ruby>楽<rt>たの</rt></ruby>しむため」（32.4%）が<ruby>ほぼ<rt>だいたい</rt></ruby><span class=\"text-xs font-bold\">（注2）</span><ruby>同数<rt>どうすう</rt></ruby>で、次に「<ruby>社会経験<rt>しゃかいけいけん</rt></ruby>のため」（24.2%）となる。「学生生活を楽しむため」とは、旅行や遊び、クラブ活動など、生活を楽しむお金を稼ぐためという意味だ。「<ruby>勉学費<rt>べんがくひ</rt></ruby>」も含め、「お金を稼ぐため」が<ruby>６割以上<rt>ろくわりいじょう</rt></ruby>を<ruby>占<rt>し</rt></ruby>めてはいるが、アルバイトの目的がお金を稼ぐためだけでないことも<ruby>注目<rt>ちゅうもく</rt></ruby>すべきことだ。\n    </p>\n  </div>\n\n  <!-- Pie Chart Container -->\n  <div class=\"max-w-xl mx-auto my-6 p-5 sm:p-7 bg-white text-gray-900 rounded-xl border-2 border-gray-400 shadow-md\">\n    <h3 class=\"text-center font-bold text-lg tracking-wider mb-2 text-gray-900\">アルバイトの目的</h3>\n    \n    <div class=\"relative flex justify-center items-center py-2 bg-white\">\n      <svg viewBox=\"0 0 540 330\" class=\"w-full max-w-[500px] h-auto font-sans select-none bg-white\" xmlns=\"http://www.w3.org/2000/svg\">\n        <defs>\n          <pattern id=\"diagonalHatch\" width=\"8\" height=\"8\" patternTransform=\"rotate(45 0 0)\" patternUnits=\"userSpaceOnUse\">\n            <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"8\" stroke=\"#475569\" stroke-width=\"2.2\" />\n          </pattern>\n        </defs>\n\n        <!-- Slices on pure white bg: center=(270, 165), r=110 -->\n        <!-- 1. 生活費を稼ぐため (32.8%) -->\n        <path d=\"M 270 165 L 270 55 A 110 110 0 0 1 367.1 216.8 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\" />\n        \n        <!-- 2. 学生生活を楽しむため (32.4%) -->\n        <path d=\"M 270 165 L 367.1 216.8 A 110 110 0 0 1 180.2 228.5 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\" />\n        \n        <!-- 3. 社会経験のため (24.2%) -->\n        <path d=\"M 270 165 L 180.2 228.5 A 110 110 0 0 1 202.0 78.5 Z\" fill=\"url(#diagonalHatch)\" stroke=\"#0f172a\" stroke-width=\"2\" />\n        \n        <!-- 4. 無回答 (5.1%) -->\n        <path d=\"M 270 165 L 202.0 78.5 A 110 110 0 0 1 232.7 61.5 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\" />\n        \n        <!-- 5. その他 (4.5%) -->\n        <path d=\"M 270 165 L 232.7 61.5 A 110 110 0 0 1 263.1 55.2 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\" />\n        \n        <!-- 6. 勉学費を稼ぐため (1.0%) -->\n        <path d=\"M 270 165 L 263.1 55.2 A 110 110 0 0 1 270.0 55.0 Z\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"2\" />\n\n        <!-- Labels inside Pie -->\n        <g text-anchor=\"middle\" fill=\"#000000\" font-weight=\"bold\">\n          <text x=\"325\" y=\"130\" font-size=\"13\">生活費を稼ぐ</text>\n          <text x=\"325\" y=\"148\" font-size=\"13\">ため</text>\n          <text x=\"325\" y=\"168\" font-size=\"14\" font-family=\"monospace\">32.8%</text>\n        </g>\n\n        <g text-anchor=\"middle\" fill=\"#000000\" font-weight=\"bold\">\n          <text x=\"270\" y=\"235\" font-size=\"13\">学生生活を</text>\n          <text x=\"270\" y=\"253\" font-size=\"13\">楽しむため</text>\n          <text x=\"270\" y=\"272\" font-size=\"14\" font-family=\"monospace\">32.4%</text>\n        </g>\n\n        <g text-anchor=\"middle\">\n          <rect x=\"180\" y=\"138\" width=\"80\" height=\"52\" rx=\"4\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.2\" />\n          <text x=\"220\" y=\"156\" font-size=\"12\" font-weight=\"bold\" fill=\"#000000\">社会経験</text>\n          <text x=\"220\" y=\"172\" font-size=\"12\" font-weight=\"bold\" fill=\"#000000\">のため</text>\n          <text x=\"220\" y=\"186\" font-size=\"13\" font-family=\"monospace\" font-weight=\"bold\" fill=\"#000000\">24.2%</text>\n        </g>\n\n        <!-- Pointer Lines & Outside Labels for Top Slices -->\n        <polyline points=\"215,70 175,40 120,40\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\" />\n        <g text-anchor=\"end\" fill=\"#000000\" font-weight=\"bold\">\n          <text x=\"110\" y=\"38\" font-size=\"13\">無回答</text>\n          <text x=\"110\" y=\"54\" font-size=\"13\" font-family=\"monospace\">5.1%</text>\n        </g>\n\n        <polyline points=\"248,58 235,28 200,28\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\" />\n        <g text-anchor=\"end\" fill=\"#000000\" font-weight=\"bold\">\n          <text x=\"192\" y=\"25\" font-size=\"13\">その他</text>\n          <text x=\"192\" y=\"40\" font-size=\"13\" font-family=\"monospace\">4.5%</text>\n        </g>\n\n        <polyline points=\"266,55 266,15 150,15\" fill=\"none\" stroke=\"#000000\" stroke-width=\"1.5\" />\n        <g text-anchor=\"end\" fill=\"#000000\" font-weight=\"bold\">\n          <text x=\"142\" y=\"12\" font-size=\"12\">勉学費を稼ぐため</text>\n          <text x=\"142\" y=\"27\" font-size=\"12\" font-family=\"monospace\">1.0%</text>\n        </g>\n      </svg>\n    </div>\n\n    <p class=\"text-right text-xs text-gray-700 mt-2 font-medium\">\n      東京大学2008年（第58回）学生生活実態調査より引用\n    </p>\n  </div>\n</div>",
+  "questions": [
+    {
+      "id": "q27-1",
+      "questionNumber": "問 1",
+      "questionText": "この調査について述べているもので最も正しいものはどれか。",
+      "options": [
+        "アルバイトをしている男子学生の割合はアルバイトをしている女子学生の割合より多い。",
+        "学生生活を楽しむためにアルバイトをしている学生は全体の約3分の2を占める。",
+        "アルバイトの目的は、お金を稼ぐためだけではない。",
+        "ほとんどの学生がお金を稼ぐためにアルバイトをしている。"
+      ],
+      "correct": 3,
+      "correctOption": "アルバイトの目的は、お金を稼ぐためだけではない。",
+      "explanation": "1は男子学生79.4%に対し女子学生83.4%で女子の方が多いため誤り。2は32.4%で約3分の1（約3分の2ではない）ため誤り。4は約66%で「ほとんど」とまでは言えないため誤り。3は本文末尾の「アルバイトの目的がお金を稼ぐためだけでないことも注目すべきことだ」および「社会経験のため（24.2%）」と合致するため正解です。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "対象",
+      "reading": "たいしょう",
+      "meaning": "Subject, target"
+    },
+    {
+      "word": "全体",
+      "reading": "ぜんたい",
+      "meaning": "The whole, total number"
+    },
+    {
+      "word": "〜割",
+      "reading": "〜わり",
+      "meaning": "Unit of 10% (8割 = 80%)"
+    },
+    {
+      "word": "〜に対して",
+      "reading": "〜にたいして",
+      "meaning": "By contrast, compared with"
+    },
+    {
+      "word": "占める",
+      "reading": "しめる",
+      "meaning": "To account for, occupy"
+    },
+    {
+      "word": "〜分の〜",
+      "reading": "〜ぶんの〜",
+      "meaning": "Fraction (e.g., 3分の2 = two-thirds)"
+    },
+    {
+      "word": "上回る",
+      "reading": "うわまわる",
+      "meaning": "To exceed, surpass"
+    },
+    {
+      "word": "下回る",
+      "reading": "したまわる",
+      "meaning": "To fall below"
+    },
+    {
+      "word": "増加",
+      "reading": "ぞうか",
+      "meaning": "Increase"
+    },
+    {
+      "word": "減少",
+      "reading": "げんしょう",
+      "meaning": "Decrease"
+    },
+    {
+      "word": "達する",
+      "reading": "たっする",
+      "meaning": "To reach"
+    },
+    {
+      "word": "比較する",
+      "reading": "ひかくする",
+      "meaning": "To compare"
+    },
+    {
+      "word": "徐々に",
+      "reading": "じょじょに",
+      "meaning": "Gradually, slowly"
+    },
+    {
+      "word": "急激に",
+      "reading": "きゅうげきに",
+      "meaning": "Rapidly, sharply"
+    },
+    {
+      "word": "大半",
+      "reading": "たいはん",
+      "meaning": "Majority, greater part"
+    }
+  ]
+}

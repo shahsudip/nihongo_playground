@@ -1,0 +1,125 @@
+{
+  "id": "mondai-19",
+  "chapterId": "mondai-19",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 2,
+  "partTitle": "第2部：いろいろな文章を読もう",
+  "partTitleEn": "Reading Various Text Types",
+  "mondaiNumber": 19,
+  "title": "問題 19",
+  "genre": "説明文",
+  "genreEn": "Explanatory texts",
+  "sectionHeader": {
+    "number": "6",
+    "japanese": "説明文",
+    "english": "Explanatory texts"
+  },
+  "preReading": "あなたの国では避難訓練をしますか。どんなことをしますか。",
+  "preReadingPrompt": "あなたの国では避難訓練をしますか。どんなことをしますか。",
+  "mondaiHeader": "問題19　つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/shinkanzen_pages/N3_page-0063.jpg",
+  "passageLayout": "html",
+  "passageNotes": "",
+  "passageText": "<p><ruby>日本<rt>にほん</rt></ruby>では、<ruby>学校<rt>がっこう</rt></ruby>などでよく<ruby>避難訓練<rt>ひなんくんれん</rt></ruby>が<ruby>行<rt>おこな</rt></ruby>われる。<ruby>地震<rt>じしん</rt></ruby>や<ruby>火事<rt>かじ</rt></ruby>などの<ruby>災害<rt>さいがい</rt></ruby><sup>（<ruby>注<rt>ちゅう</rt></ruby>1）</sup>が<ruby>起<rt>お</rt></ruby>きたときに、どのように<ruby>逃<rt>に</rt></ruby>げればいいかを<ruby>練習<rt>れんしゅう</rt></ruby>するためだ。</p>\n<p>その<ruby>避難訓練<rt>ひなんくんれん</rt></ruby>で、よく<ruby>使<rt>つか</rt></ruby>われるのが「おかしも」という<ruby>言葉<rt>ことば</rt></ruby>だ。「お」は「<ruby>押<rt>お</rt></ruby>さない」、「か」は「<ruby>駆<rt>か</rt></ruby>けない<sup>（<ruby>注<rt>ちゅう</rt></ruby>2）</sup>」、「し」は「しゃべらない<sup>（<ruby>注<rt>ちゅう</rt></ruby>3）</sup>」、「も」は「<ruby>戻<rt>もど</rt></ruby>らない」のそれぞれの<ruby>頭文字<rt>かしらもじ</rt></ruby>をとったものだ。<ruby>幼稚園<rt>ようちえん</rt></ruby>や<ruby>小学校<rt>しょうがっこう</rt></ruby>では、<ruby>避難訓練<rt>ひなんくんれん</rt></ruby>のたびに<ruby>先生<rt>せんせい</rt></ruby>から「『おかしも』を<ruby>守<rt>まも</rt></ruby>りましょう」と<ruby>言<rt>い</rt></ruby>われるので、<u><ruby>日本<rt>にほん</rt></ruby>の<ruby>子供<rt>こども</rt></ruby>たちで「おかしも」の<ruby>意味<rt>いみ</rt></ruby>を<ruby>知<rt>し</rt></ruby>らない<ruby>子供<rt>こども</rt></ruby>はいないほどだ</u>。</p>\n<p><ruby>災害<rt>さいがい</rt></ruby>のときは、だれでもあわててしまい、<ruby>冷静<rt>れいせい</rt></ruby>に<ruby>行動<rt>こうどう</rt></ruby>することが<ruby>難<rt>むずか</rt></ruby>しくなる。だからこそ、このように<ruby>覚<rt>おぼ</rt></ruby>えやすい<ruby>言葉<rt>ことば</rt></ruby>にして、<ruby>子供<rt>こども</rt></ruby>のころから<ruby>体<rt>からだ</rt></ruby>で<ruby>覚<rt>おぼ</rt></ruby>えさせることが<ruby>大切<rt>たいせつ</rt></ruby>なのだろう。</p>",
+  "footnotes": [
+    {
+      "term": "（注1）災害",
+      "definition": "地震・台風などの大きな被害が出る出来事"
+    },
+    {
+      "term": "（注2）駆ける",
+      "definition": "走る"
+    },
+    {
+      "term": "（注3）しゃべる",
+      "definition": "話す"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "避難訓練",
+      "reading": "ひなんくんれん",
+      "meaning": "disaster evacuation drill"
+    },
+    {
+      "word": "災害",
+      "reading": "さいがい",
+      "meaning": "disaster, calamity (earthquake, typhoon, etc.)"
+    },
+    {
+      "word": "駆ける",
+      "reading": "かける",
+      "meaning": "to run, to dash"
+    },
+    {
+      "word": "しゃべる",
+      "reading": "しゃべる",
+      "meaning": "to chat, to talk"
+    },
+    {
+      "word": "頭文字",
+      "reading": "かしらもじ",
+      "meaning": "initial letter, first character, acronym"
+    },
+    {
+      "word": "幼稚園",
+      "reading": "ようちえん",
+      "meaning": "kindergarten"
+    },
+    {
+      "word": "〜のたびに",
+      "reading": "〜のたびに",
+      "meaning": "each time ~, whenever ~"
+    },
+    {
+      "word": "〜ない（人）はいない",
+      "reading": "〜ない（ひと）はいない",
+      "meaning": "there is no one who does not ~"
+    },
+    {
+      "word": "〜ほどだ",
+      "reading": "〜ほどだ",
+      "meaning": "to the extent that ~, so much that ~"
+    },
+    {
+      "word": "あわてる",
+      "reading": "あわてる",
+      "meaning": "to panic, to become flustered"
+    },
+    {
+      "word": "冷静に",
+      "reading": "れいせいに",
+      "meaning": "calmly, composedly"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q19-1",
+      "questionNumber": "問 1",
+      "questionText": "「おかしも」とは何か。",
+      "options": [
+        "<ruby>避難訓練<rt>ひなんくんれん</rt></ruby>のときに<ruby>食<rt>た</rt></ruby>べるお<ruby>菓子<rt>かし</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>",
+        "<ruby>避難<rt>ひなん</rt></ruby>するときの<ruby>注意<rt>ちゅうい</rt></ruby>を<ruby>短<rt>みじか</rt></ruby>くした<ruby>言葉<rt>ことば</rt></ruby>",
+        "<ruby>避難<rt>ひなん</rt></ruby>するときに<ruby>持<rt>も</rt></ruby>って<ruby>行<rt>い</rt></ruby>く<ruby>物<rt>もの</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>",
+        "<ruby>避難訓練<rt>ひなんくんれん</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う<ruby>場所<rt>ばしょ</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>"
+      ],
+      "correct": 2,
+      "correctOption": "<ruby>避難<rt>ひなん</rt></ruby>するときの<ruby>注意<rt>ちゅうい</rt></ruby>を<ruby>短<rt>みじか</rt></ruby>くした<ruby>言葉<rt>ことば</rt></ruby>",
+      "explanation": "本文第2段落に「『お』は『押さない』、『か』は『駆けない』、『し』は『しゃべらない』、『も』は『戻らない』のそれぞれの頭文字をとったものだ」と書かれています。これは災害時に避難する際の4つの重要な注意事項の頭文字を並べた標語（短くした言葉）であるため、正解は 2 です。"
+    },
+    {
+      "id": "q19-2",
+      "questionNumber": "問 2",
+      "questionText": "なぜ<u><ruby>日本<rt>にほん</rt></ruby>の<ruby>子供<rt>こども</rt></ruby>たちで「おかしも」の<ruby>意味<rt>いみ</rt></ruby>を<ruby>知<rt>し</rt></ruby>らない<ruby>子供<rt>こども</rt></ruby>はいないほど</u>なのか。",
+      "options": [
+        "<ruby>幼稚園<rt>ようちえん</rt></ruby>や<ruby>小学校<rt>しょうがっこう</rt></ruby>の<ruby>教科書<rt>きょうかしょ</rt></ruby>にいつも<ruby>出<rt>で</rt></ruby>ているから。",
+        "<ruby>避難訓練<rt>ひなんくんれん</rt></ruby>をするときにはいつもその<ruby>言葉<rt>ことば</rt></ruby>を<ruby>聞<rt>き</rt></ruby>くから。",
+        "<ruby>子供<rt>こども</rt></ruby>たちが<ruby>好<rt>す</rt></ruby>きなお<ruby>菓子<rt>かし</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じような<ruby>名前<rt>なまえ</rt></ruby>だから。",
+        "<ruby>日本<rt>にほん</rt></ruby>では<ruby>毎月<rt>まいつき</rt></ruby>のように<ruby>災害<rt>さいがい</rt></ruby>が<ruby>起<rt>お</rt></ruby>きているから。"
+      ],
+      "correct": 2,
+      "correctOption": "<ruby>避難訓練<rt>ひなんくんれん</rt></ruby>をするときにはいつもその<ruby>言葉<rt>ことば</rt></ruby>を<ruby>聞<rt>き</rt></ruby>くから。",
+      "explanation": "下線部の直前に「幼稚園や小学校では、避難訓練のたびに先生から『「おかしも」を守りましょう』と言われるので」と理由が明確に述べられています。訓練のたびに毎回先生から言われて耳にするため、子どもたち全員が知るようになるのです。したがって正解は 2 です。"
+    }
+  ]
+}

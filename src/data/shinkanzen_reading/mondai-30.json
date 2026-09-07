@@ -1,0 +1,78 @@
+{
+  "id": "mondai-30",
+  "bookId": "shinkanzen-master-n3-reading",
+  "chapterId": "mondai-30",
+  "part": 4,
+  "partTitle": "実戦問題",
+  "partTitleEn": "Practice Test",
+  "section": "1. 内容理解（短文）",
+  "genre": "説明文",
+  "genreEn": "Explanatory texts",
+  "sectionHeader": {
+    "category": "内容理解（短文）",
+    "type": "説明文",
+    "typeEnglish": "Explanatory texts"
+  },
+  "mondaiNumber": 30,
+  "title": "問題 30",
+  "instruction": "つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "mondaiHeader": "問題30　つぎの文章を読んで、質問に答えなさい。答えは、１・２・３・４から最もよいものを一つえらびなさい。",
+  "passage": "<p>日本人は<ruby>集団主義<rt>しゅうだんしゅぎ</rt></ruby>だとよく言われる。つまり、<ruby>個人<rt>こじん</rt></ruby>よりもみんなで行動することや、みんなのために行動することを大切にするというのだ。</p><p>それにはさまざまな<ruby>原因<rt>げんいん</rt></ruby>があるが、その一つに日本人が<ruby>昔<rt>むかし</rt></ruby>から「<ruby>稲作<rt>いなさく</rt></ruby><sup>（注1）</sup>」を行ってきたことがあると言われている。<ruby>稲作<rt>いなさく</rt></ruby>では<ruby>田植<rt>たう</rt></ruby>えや<ruby>収穫<rt>しゅうかく</rt></ruby>など、みんなで一度に行う作業が多い。また、より多くの<ruby>稲<rt>いね</rt></ruby>を上手に<ruby>育<rt>そだ</rt></ruby>てるには、<ruby>稲作<rt>いなさく</rt></ruby>で使う水を<ruby>個人<rt>こじん</rt></ruby>の田んぼだけではなく、<ruby>地域全体<rt>ちいきぜんたい</rt></ruby>を考えて<ruby>管理<rt>かんり</rt></ruby>する<ruby>必要<rt>ひつよう</rt></ruby>がある。</p><p>このような<ruby>稲作<rt>いなさく</rt></ruby>を何千年も<ruby>続<rt>つづ</rt></ruby>ける中で、日本社会では「みんな」がとても<ruby>重要<rt>じゅうよう</rt></ruby>な<ruby>基準<rt>きじゅん</rt></ruby>になっていったのだろう。</p>",
+  "passageText": "<p>日本人は<ruby>集団主義<rt>しゅうだんしゅぎ</rt></ruby>だとよく言われる。つまり、<ruby>個人<rt>こじん</rt></ruby>よりもみんなで行動することや、みんなのために行動することを大切にするというのだ。</p><p>それにはさまざまな<ruby>原因<rt>げんいん</rt></ruby>があるが、その一つに日本人が<ruby>昔<rt>むかし</rt></ruby>から「<ruby>稲作<rt>いなさく</rt></ruby><sup>（注1）</sup>」を行ってきたことがあると言われている。<ruby>稲作<rt>いなさく</rt></ruby>では<ruby>田植<rt>たう</rt></ruby>えや<ruby>収穫<rt>しゅうかく</rt></ruby>など、みんなで一度に行う作業が多い。また、より多くの<ruby>稲<rt>いね</rt></ruby>を上手に<ruby>育<rt>そだ</rt></ruby>てるには、<ruby>稲作<rt>いなさく</rt></ruby>で使う水を<ruby>個人<rt>こじん</rt></ruby>の田んぼだけではなく、<ruby>地域全体<rt>ちいきぜんたい</rt></ruby>を考えて<ruby>管理<rt>かんり</rt></ruby>する<ruby>必要<rt>ひつよう</rt></ruby>がある。</p><p>このような<ruby>稲作<rt>いなさく</rt></ruby>を何千年も<ruby>続<rt>つづ</rt></ruby>ける中で、日本社会では「みんな」がとても<ruby>重要<rt>じゅうよう</rt></ruby>な<ruby>基準<rt>きじゅん</rt></ruby>になっていったのだろう。</p>",
+  "passageNotes": "<div class=\"text-xs text-gray-700 space-y-1 font-sans\"><p><strong>（注1）稲作：</strong>米を作ること</p></div>",
+  "footnotes": [
+    {
+      "term": "（注1）稲作（いなさく）",
+      "definition": "米を作ること"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "田植え",
+      "reading": "たうえ",
+      "meaning": "Rice-planting"
+    },
+    {
+      "word": "収穫",
+      "reading": "しゅうかく",
+      "meaning": "To harvest"
+    },
+    {
+      "word": "作業",
+      "reading": "さぎょう",
+      "meaning": "Work, operations"
+    },
+    {
+      "word": "地域",
+      "reading": "ちいき",
+      "meaning": "Area, district, region"
+    },
+    {
+      "word": "管理する",
+      "reading": "かんりする",
+      "meaning": "To manage"
+    },
+    {
+      "word": "基準",
+      "reading": "きじゅん",
+      "meaning": "Standard, criterion"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "questionNumber": "問い",
+      "question": "どうして日本人は<ruby>集団主義<rt>しゅうだんしゅぎ</rt></ruby>になったと書かれているか。",
+      "questionText": "どうして日本人は集団主義になったと書かれているか。",
+      "options": [
+        "何千年も<ruby>米<rt>こめ</rt></ruby>を食べ<ruby>続<rt>つづ</rt></ruby>けているから。",
+        "<ruby>昔<rt>むかし</rt></ruby>から<ruby>協力<rt>きょうりょく</rt></ruby>して飲み水を<ruby>管理<rt>かんり</rt></ruby>してきたから。",
+        "自分の田んぼで上手に<ruby>稲<rt>いね</rt></ruby>を作ろうと<ruby>競争<rt>きょうそう</rt></ruby>してきたから。",
+        "みんなでする作業が多い<ruby>稲作<rt>いなさく</rt></ruby>を<ruby>続<rt>つづ</rt></ruby>けてきたから。"
+      ],
+      "correct": 4,
+      "correctOption": "みんなでする作業が多い<ruby>稲作<rt>いなさく</rt></ruby>を<ruby>続<rt>つづ</rt></ruby>けてきたから。",
+      "explanation": "「稲作では田植えや収穫など、みんなで一度に行う作業が多い」「このような稲作を何千年も続ける中で、日本社会では『みんな』がとても重要な基準になっていった」と述べられています。したがって 4 が正解です。"
+    }
+  ]
+}

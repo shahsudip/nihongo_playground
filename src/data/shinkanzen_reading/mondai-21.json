@@ -1,0 +1,81 @@
+{
+  "id": "mondai-21",
+  "chapterId": "mondai-21",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 3,
+  "partTitle": "第3部：情報検索",
+  "partTitleEn": "Information Retrieval",
+  "mondaiNumber": 21,
+  "title": "問題 21",
+  "genre": {
+    "number": "1",
+    "japanese": "商品の広告",
+    "english": "Product advertising"
+  },
+  "sectionHeader": {
+    "number": "1",
+    "japanese": "商品の広告",
+    "english": "Product advertising"
+  },
+  "preReading": "割引の広告を見て、何かを買ったことがありますか。それはどんなものですか。",
+  "preReadingPrompt": "割引の広告を見て、何かを買ったことがありますか。それはどんなものですか。",
+  "mondaiHeader": "問題21　つぎの文章は、駅に貼ってある割引の案内である。下の質問に答えなさい。答えは、１・２・３・４から最もよいものを一つえらびなさい。",
+  "passageLayout": "html",
+  "passageNotes": "",
+  "footnotes": [],
+  "imageSrc": "/shinkanzen_pages/N3_page-0073.jpg",
+  "passageText": "<div class=\"bg-gray-100 p-4 md:p-8 rounded border border-gray-400 font-sans shadow-md text-gray-800\">\n  <div class=\"text-center mb-8 relative\">\n    <h2 class=\"text-lg md:text-xl font-bold tracking-widest mb-4\"><ruby>バス<rt>ばす</rt></ruby>1<ruby>日<rt>にち</rt></ruby><ruby>乗車券<rt>じょうしゃけん</rt></ruby>と<ruby>共通入場券<rt>きょうつうにゅうじょうけん</rt></ruby>の</h2>\n    <div class=\"relative inline-block\">\n      <!-- Scroll/Ribbon background -->\n      <div class=\"absolute inset-0 bg-gray-100 border border-gray-800\" style=\"clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%); transform: scale(1.1, 1.3);\"></div>\n      <!-- Decorative circles at ends -->\n      <div class=\"absolute -left-3 top-1/2 transform -translate-y-1/2 w-2 h-6 border border-gray-800 bg-white rounded-full\"></div>\n      <div class=\"absolute -right-3 top-1/2 transform -translate-y-1/2 w-2 h-6 border border-gray-800 bg-white rounded-full\"></div>\n      \n      <div class=\"relative flex justify-center items-center gap-2 px-8 py-1\">\n        <span class=\"text-xl md:text-2xl font-black z-10\">お得な</span>\n        <span class=\"text-xl md:text-2xl font-black z-10\">セット！</span>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 mb-8\">\n    <!-- Left Ticket -->\n    <div class=\"bg-gray-100 p-4 border-2 border-gray-600 text-center w-full md:w-56 relative\" style=\"clip-path: polygon(15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px), 0 15px);\">\n      <p class=\"text-lg mb-1\">◯◯市バス</p>\n      <p class=\"text-xl font-bold mb-3\">1<ruby>日<rt>にち</rt></ruby><ruby>乗車券<rt>じょうしゃけん</rt></ruby></p>\n      <p class=\"text-2xl font-black text-right\">700円</p>\n    </div>\n\n    <!-- Plus sign -->\n    <div class=\"text-3xl font-black text-gray-800\">+</div>\n\n    <!-- Right Ticket -->\n    <div class=\"bg-gray-100 p-4 border-2 border-gray-600 w-full md:w-80 relative\" style=\"clip-path: polygon(15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px), 0 15px);\">\n      <p class=\"text-lg font-bold mb-2 text-center border-b border-gray-600 pb-1\"><ruby>共通入場券<rt>きょうつうにゅうじょうけん</rt></ruby></p>\n      <div class=\"flex justify-between items-end gap-2 mb-1\">\n        <span>◯◯<ruby>市<rt>し</rt></ruby><ruby>歴史博物館<rt>れきしはくぶつかん</rt></ruby></span>\n        <span class=\"text-xl font-black\">1,000円</span>\n      </div>\n      <div class=\"flex justify-between items-end gap-2\">\n        <span><ruby>現代美術館<rt>げんだいびじゅつかん</rt></ruby></span>\n        <span class=\"text-xl font-black\">900円</span>\n      </div>\n    </div>\n  </div>\n\n  <!-- Equation area -->\n  <div class=\"flex flex-col items-center justify-center mb-12\">\n    <div class=\"flex flex-col md:flex-row justify-center items-center gap-4\">\n      <p class=\"text-lg\">あわせて <span class=\"font-bold line-through decoration-2 decoration-gray-500\">2,600円</span></p>\n      <p class=\"text-xl font-black\">⇒ セットで買うと</p>\n      <div class=\"relative flex items-center justify-center w-32 h-24\">\n        <svg class=\"absolute inset-0 w-full h-full text-black drop-shadow-md\" viewBox=\"0 0 100 100\" preserveAspectRatio=\"none\">\n          <path fill=\"white\" stroke=\"currentColor\" stroke-width=\"2\" d=\"M50 0 L60 20 L80 15 L80 35 L100 50 L80 65 L80 85 L60 80 L50 100 L40 80 L20 85 L20 65 L0 50 L20 35 L20 15 L40 20 Z\" />\n        </svg>\n        <span class=\"relative text-black font-black text-xl md:text-2xl z-10\">2,200円</span>\n      </div>\n    </div>\n    \n    <!-- Speech bubble -->\n    <div class=\"relative mt-2 md:ml-48 bg-white border border-gray-800 px-4 py-2 rounded-xl text-sm font-bold shadow-md z-10 whitespace-nowrap before:content-[''] before:absolute before:-top-3 before:left-1/2 before:-translate-x-1/2 before:border-x-8 before:border-x-transparent before:border-b-[12px] before:border-b-gray-800 after:content-[''] after:absolute after:-top-2 after:left-1/2 after:-translate-x-1/2 after:border-x-[6px] after:border-x-transparent after:border-b-[10px] after:border-b-white\">\n      400円もお特です！\n    </div>\n  </div>\n\n  <!-- Bottom Details -->\n  <div class=\"border-t-2 border-gray-400 pt-6 space-y-4\">\n    <div class=\"flex flex-col md:flex-row\">\n      <span class=\"font-bold md:w-32 flex-shrink-0\"><ruby>発売期間<rt>はつばいきかん</rt></ruby></span>\n      <span>4月1日〜6月30日</span>\n    </div>\n    <div class=\"flex flex-col md:flex-row\">\n      <span class=\"font-bold md:w-32 flex-shrink-0\"><ruby>発売場所<rt>はつばいばしょ</rt></ruby></span>\n      <div>\n        <p>◯◯市バスの切符売り場(8:00〜20:00)</p>\n        <p>◯◯<ruby>市<rt>し</rt></ruby><ruby>歴史博物館<rt>れきしはくぶつかん</rt></ruby>、<ruby>現代美術館<rt>げんだいびじゅつかん</rt></ruby>の窓口(開館時間内)</p>\n      </div>\n    </div>\n    <div class=\"flex flex-col md:flex-row\">\n      <span class=\"font-bold md:w-32 flex-shrink-0\"><ruby>有効期間<rt>ゆうこうきかん</rt></ruby></span>\n      <span>4月1日〜6月30日のうち乗車券、入場券ともに購入日当日1日限り有効</span>\n    </div>\n    <div class=\"flex flex-col md:flex-row mt-4 pt-4 border-t border-gray-300\">\n      <span class=\"font-bold md:w-32 flex-shrink-0\">〈お問い合わせ〉</span>\n      <span>◯◯市観光課 0120-888888</span>\n    </div>\n  </div>\n</div>",
+  "questions": [
+    {
+      "id": "q21-1",
+      "questionNumber": "問 1",
+      "questionText": "アンさんは◯◯市でバス1日乗車券を使って歴史博物館と現代美術館を見たい。安く見るにはどこでいくらの券を買えばよいか。",
+      "options": [
+        "バスの切符売り場　1,100円",
+        "◯◯市観光課　1,900円",
+        "バスの切符売り場　2,200円",
+        "◯◯市観光課　2,600円"
+      ],
+      "correct": 3,
+      "correctOption": "バスの切符売り場　2,200円",
+      "explanation": "歴史博物館（1,000円）＋現代美術館（900円）＋バス1日乗車券（700円）の通常合計は2,600円ですが、「お得なセット」の共通入場券＋バス1日乗車券なら2,200円（400円お得）で購入できます。発売場所は「バスの切符売り場」または各館の窓口（観光課はお問い合わせ先）なので、正解は 3 です。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "乗車券",
+      "reading": "じょうしゃけん",
+      "meaning": "Travel (bus) ticket"
+    },
+    {
+      "word": "お得な",
+      "reading": "おとくな",
+      "meaning": "Inexpensive, cheap, advantageous"
+    },
+    {
+      "word": "発売期間",
+      "reading": "はつばいきかん",
+      "meaning": "Period of sale"
+    },
+    {
+      "word": "〜限り",
+      "reading": "〜かぎり",
+      "meaning": "Only, restricted to ~"
+    },
+    {
+      "word": "共通入場券",
+      "reading": "きょうつうにゅうじょうけん",
+      "meaning": "Multiple-use ticket, combined admission ticket"
+    },
+    {
+      "word": "セット",
+      "reading": "",
+      "meaning": "Set"
+    },
+    {
+      "word": "有効期間",
+      "reading": "ゆうこうきかん",
+      "meaning": "Period of validity"
+    }
+  ]
+}

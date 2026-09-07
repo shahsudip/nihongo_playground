@@ -1,0 +1,91 @@
+{
+  "id": "mondai-52",
+  "chapterId": "mondai-52",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 4,
+  "mondaiNumber": 52,
+  "partTitle": "実戦問題",
+  "partTitleEn": "Practice Test",
+  "section": "4. 情報検索",
+  "genre": "広告",
+  "genreEn": "Advertising",
+  "sectionHeader": {
+    "category": "情報検索",
+    "type": "広告",
+    "typeEnglish": "Advertising"
+  },
+  "title": "問題 52",
+  "instruction": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "mondaiHeader": "問題52 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "passage": "<div class=\"max-w-xl mx-auto my-2 flex justify-center items-center bg-white p-2 rounded\">\n  <img src=\"/shinkanzen_pages/mondai_52_clean.png\" alt=\"Sマート 割引セール広告\" class=\"w-full max-w-[560px] h-auto object-contain\" />\n</div>",
+  "passageText": "<div class=\"max-w-xl mx-auto my-2 flex justify-center items-center bg-white p-2 rounded\">\n  <img src=\"/shinkanzen_pages/mondai_52_clean.png\" alt=\"Sマート 割引セール広告\" class=\"w-full max-w-[560px] h-auto object-contain\" />\n</div>",
+  "passageLayout": "html",
+  "footnotes": [],
+  "vocabulary": [
+    {
+      "word": "お得な",
+      "reading": "おとくな",
+      "meaning": "A good bargain, profitable"
+    },
+    {
+      "word": "セール期間",
+      "reading": "セールきかん",
+      "meaning": "Sale period"
+    },
+    {
+      "word": "割引券",
+      "reading": "わりびきけん",
+      "meaning": "Discount coupon"
+    },
+    {
+      "word": "〜限り",
+      "reading": "〜かぎり",
+      "meaning": "Limited to ~, restricted to ~"
+    },
+    {
+      "word": "商品",
+      "reading": "しょうひん",
+      "meaning": "Product, goods"
+    },
+    {
+      "word": "価格",
+      "reading": "かかく",
+      "meaning": "Price"
+    },
+    {
+      "word": "〜円引き",
+      "reading": "〜えんびき",
+      "meaning": "Discount of ~ yen"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q52-1",
+      "questionNumber": "問 1",
+      "questionText": "アリさんは6月18日午後10時頃、この広告を1枚持ってコンビニに行った。アイスクリームを2個買った。アイスクリームは100円と書いてあった。いくら払ったか。",
+      "options": [
+        "200円",
+        "180円",
+        "160円",
+        "140円"
+      ],
+      "correct": 2,
+      "correctOption": "180円",
+      "explanation": "条件を確認します：\n・日時：6月18日 午後10時（22時）→「15日(日)〜28日(土)」「18時〜24時」の割引適用時間内です。\n・割引対象：15日(日)〜28日(土)はアイスクリームが「20円引き」になります。\n・条件：広告は「お一人様1枚限り」、「割引券1枚につき商品1個が割引」となります。\n\nアイスクリームを2個（定価100円 × 2 = 200円）購入しますが、割引券は1枚だけ適用されるため、1個分のみ20円引き（100円 - 20円 = 80円）となります。\n合計金額は「80円 + 100円 = 180円」です。\nしたがって正解は 2（180円）です。"
+    },
+    {
+      "id": "q52-2",
+      "questionNumber": "問 2",
+      "questionText": "ドーナッツを安く買いたい。この広告を持って、いつ買いに行けばよいか。",
+      "options": [
+        "6月10日 午前10時ごろ",
+        "6月12日 午後10時ごろ",
+        "6月16日 午前8時ごろ",
+        "6月20日 午後8時ごろ"
+      ],
+      "correct": 2,
+      "correctOption": "6月12日 午後10時ごろ",
+      "explanation": "条件を確認します：\n・ドーナッツが割引対象（20円引き）になる期間：「2日(月)〜14日(土)」\n・割引券が利用できる時間帯：「18時〜24時」\n\n各選択肢を検証すると：\n1：6月10日 午前10時ごろ → 期間内ですが、時間が18時〜24時ではないため不可。\n2：6月12日 午後10時ごろ（22時） → 期間内（2日〜14日）かつ時間内（18時〜24時）で正解。\n3：6月16日 午前8時ごろ → 期間外（15日以降はアイス・コーヒー対象）かつ時間外のため不可。\n4：6月20日 午後8時ごろ → 時間内ですが、期間外（ドーナッツは14日まで）のため不可。\nしたがって正解は 2 です。"
+    }
+  ]
+}

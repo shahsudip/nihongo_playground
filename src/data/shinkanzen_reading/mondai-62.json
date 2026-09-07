@@ -1,0 +1,115 @@
+{
+  "id": "mondai-62",
+  "chapterId": "mondai-62",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 4,
+  "mondaiNumber": 62,
+  "partTitle": "実戦問題",
+  "partTitleEn": "Practice Test",
+  "section": "4. 情報検索",
+  "genre": "メール",
+  "genreEn": "E-mail",
+  "sectionHeader": {
+    "category": "情報検索",
+    "type": "メール",
+    "typeEnglish": "E-mail"
+  },
+  "title": "問題 62",
+  "instruction": "つぎの文章はメールマガジン（注1）である。文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "mondaiHeader": "問題62 つぎの文章はメールマガジン（注1）である。文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "passageText": "<div class=\"border-2 border-gray-800 p-6 max-w-2xl mx-auto font-sans bg-white text-gray-900 shadow-sm leading-relaxed text-sm md:text-base\">\n  <div class=\"text-center mb-6\">\n    <div class=\"text-base md:text-lg font-bold tracking-wider\">☆留学生の生活応援メールマガジン　☆</div>\n    <div class=\"text-base font-bold mt-1\">★　20XX年1月号　★</div>\n  </div>\n  <div class=\"space-y-4 mb-6\">\n    <div class=\"text-center font-bold text-base\">\n      新年あけましておめでとうございます！\n    </div>\n    <div class=\"leading-relaxed\">\n      日本のお正月はいかがですか？　留学生の生活応援メルマガは、今年もみなさんの役に立つ情報をどんどん紹介しますので、どうぞよろしくお願いいたします！\n    </div>\n    <div class=\"pl-2 text-sm leading-loose\">\n      <div>目次　1．ニュース…………新年会・不用品交換</div>\n      <div>　　　2．特集………………「みんなの節約方法」</div>\n    </div>\n  </div>\n  <div class=\"space-y-5 mb-6 text-sm md:text-base leading-relaxed\">\n    <div>\n      <div class=\"font-bold mb-1\">◆ 1．ニュース</div>\n      <div class=\"pl-2 space-y-2\">\n        <div>\n          新年会　餅つき、おせち料理など、日本のお正月を楽しみましょう。<br>\n          　日時：1月15日(土)　13:00〜17:00<br>\n          　場所：○○市民会館集会室<br>\n          　参加申し込みはこちら　①http://ryugakuoen.or.jp/shinnen.htm\n        </div>\n        <div>\n          不用品交換<br>\n          　家具、電気製品など、欲しいものやいらないものを書いておくと、だれかと交換できるかもしれません。<br>\n          　交換ページはこちら　②http://ryugakuoen.or.jp/koukan.htm\n        </div>\n      </div>\n    </div>\n    <div>\n      <div class=\"font-bold mb-1\">◆ 2．特集「みんなの節約方法」</div>\n      <div class=\"pl-2\">\n        電気代を30%カットする方法、安いお店の情報など、上手に節約しながら日本での生活を楽しむ留学生のアイディアがたくさん！ぜひ参考にしてください！<br>\n        特集ページはこちら　③http://ryugakuoen.or.jp/tokushu.htm\n      </div>\n    </div>\n  </div>\n  <div class=\"border-t border-gray-300 pt-4 space-y-2 text-xs md:text-sm leading-relaxed text-gray-800\">\n    <div>◆バックナンバーはこちら　http://ryugakuoen.or.jp/menu-mmag.htm</div>\n    <div>◆このメルマガは配信専用です。このアドレスに返信はできません。<br>　ご意見、お問い合わせはこちら　http://ryugakuoen.or.jp/ad/mail.htm</div>\n    <div>◆配信停止はこちら　④http://ryugakuoen.or.jp/mmag_resign.htm</div>\n  </div>\n  <div class=\"mt-6 pt-4 border-t border-gray-300 flex justify-between items-center text-xs md:text-sm\">\n    <div>\n      <div>発行人：NPO留学生の生活応援グループ</div>\n      <div>編集人：メルマガ委員会</div>\n    </div>\n    <div>\n      e-mail:　⑤XXX@ryugakuoen.or.jp\n    </div>\n  </div>\n</div>",
+  "passageLayout": "html",
+  "footnotes": [
+    {
+      "term": "（注1）メールマガジン",
+      "definition": "メールで送られてくる情報"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "メルマガ",
+      "reading": "メルマガ",
+      "meaning": "E-mail newsletter, e-magazine"
+    },
+    {
+      "word": "不用品",
+      "reading": "ふようひん",
+      "meaning": "Disused items, clutter"
+    },
+    {
+      "word": "特集",
+      "reading": "とくしゅう",
+      "meaning": "Special feature"
+    },
+    {
+      "word": "節約",
+      "reading": "せつやく",
+      "meaning": "Saving, economizing"
+    },
+    {
+      "word": "餅つき",
+      "reading": "もちつき",
+      "meaning": "Mochi pounding"
+    },
+    {
+      "word": "おせち料理",
+      "reading": "おせちりょうり",
+      "meaning": "Traditional New Year food"
+    },
+    {
+      "word": "カットする",
+      "reading": "カットする",
+      "meaning": "To cut, reduce"
+    },
+    {
+      "word": "配信",
+      "reading": "はいしん",
+      "meaning": "Distribution, delivery"
+    },
+    {
+      "word": "〜専用",
+      "reading": "〜せんよう",
+      "meaning": "Exclusive use for ~"
+    },
+    {
+      "word": "返信",
+      "reading": "へんしん",
+      "meaning": "Reply, response"
+    },
+    {
+      "word": "クリックする",
+      "reading": "クリックする",
+      "meaning": "To click"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "questionNumber": "問 1",
+      "questionText": "新年会に参加したい場合、どうすればよいと書いてあるか。",
+      "options": [
+        "連絡はしないで、直接1月15日に○○市民会館集会室へ行く。",
+        "①のURLをクリックして手続きをする。",
+        "②のURLをクリックして手続きをする。",
+        "④のメールアドレスにメールを送る。"
+      ],
+      "correct": 2,
+      "correctOption": "①のURLをクリックして手続きをする。",
+      "explanation": "新年会の参加申し込みは「① http://ryugakuoen.or.jp/shinnen.htm」をクリックして行います。"
+    },
+    {
+      "id": "q2",
+      "questionNumber": "問 2",
+      "questionText": "このメールマガジンをもう受け取りたくない。どうすればよいと書いてあるか。",
+      "options": [
+        "このメールマガジンに返信をして伝える。",
+        "②のURLをクリックして手続きをする。",
+        "④のURLをクリックして手続きをする。",
+        "⑤のメールアドレスにメールを送る。"
+      ],
+      "correct": 3,
+      "correctOption": "④のURLをクリックして手続きをする。",
+      "explanation": "配信停止は「④ http://ryugakuoen.or.jp/mmag_resign.htm」をクリックして手続きをします。返信は配信専用のため不可です。"
+    }
+  ]
+}

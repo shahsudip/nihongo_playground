@@ -1,0 +1,106 @@
+{
+  "id": "mondai-23",
+  "chapterId": "mondai-23",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 3,
+  "partTitle": "第3部：情報検索",
+  "partTitleEn": "Information Retrieval",
+  "mondaiNumber": 23,
+  "title": "問題 23",
+  "genre": {
+    "number": "3",
+    "japanese": "パンフレット",
+    "english": "Pamphlets"
+  },
+  "sectionHeader": {
+    "number": "3",
+    "japanese": "パンフレット",
+    "english": "Pamphlets"
+  },
+  "preReading": "どんなところで映画を見ますか。",
+  "preReadingPrompt": "どんなところで映画を見ますか。",
+  "mondaiHeader": "問題23　右のページは、南みなと市の図書館で行われている無料の映画上映会の案内である。これを読んで下の質問に答えなさい。答えは、１・２・３・４から最もよいものを一つえらびなさい。",
+  "passageLayout": "html",
+  "passageNotes": "",
+  "footnotes": [],
+  "imageSrc": "/shinkanzen_pages/N3_page-0078.jpg",
+  "passageText": "<div class=\"p-4 md:p-8 bg-white border border-gray-300 shadow-sm text-gray-800 font-sans\">\n  <div class=\"text-center mb-6\">\n    <h2 class=\"text-xl md:text-2xl font-bold mb-2 tracking-widest\">南みなと図書館 映画上映会</h2>\n    <p class=\"text-left text-sm md:text-base leading-relaxed\">南みなと図書館では、なつかしい映画や子どもを<ruby>対象<rt>たいしょう</rt></ruby>とした映画を<ruby>無料<rt>むりょう</rt></ruby>で上映しています。ぜひみなさんでお越しください。</p>\n  </div>\n  <div class=\"overflow-x-auto\">\n    <table class=\"w-full border-collapse border border-gray-400 text-sm md:text-base\">\n      <thead>\n        <tr class=\"bg-gray-200\">\n          <th class=\"border border-gray-400 p-2 md:p-3 text-left w-1/5 font-normal\"><ruby>名称<rt>めいしょう</rt></ruby></th>\n          <th class=\"border border-gray-400 p-2 md:p-3 text-left w-1/5 font-normal\"><ruby>日時<rt>にちじ</rt></ruby>・<ruby>場所<rt>ばしょ</rt></ruby></th>\n          <th class=\"border border-gray-400 p-2 md:p-3 text-left w-1/5 font-normal\"><ruby>対象<rt>たいしょう</rt></ruby>・<ruby>定員<rt>ていいん</rt></ruby>・<ruby>申込方法<rt>もうしこみほうほう</rt></ruby></th>\n          <th class=\"border border-gray-400 p-2 md:p-3 text-left w-2/5 font-normal\"><ruby>内容<rt>ないよう</rt></ruby></th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td class=\"border border-gray-400 p-2 md:p-3 leading-relaxed\">①ラストダンスは<ruby>君<rt>きみ</rt></ruby>と</td>\n          <td class=\"border border-gray-400 p-2 md:p-3 leading-relaxed\">3月2日<br>午後2時～<br>3階<ruby>多目的<rt>たもくてき</rt></ruby>ホール</td>\n          <td class=\"border border-gray-400 p-2 md:p-3 leading-relaxed\"><ruby>一般<rt>いっぱん</rt></ruby>50名（<ruby>申込必要<rt>もうしこみひつよう</rt></ruby>：<br>ネットかはがきで。<ruby>先着順<rt>せんちゃくじゅん</rt></ruby>）</td>\n          <td class=\"border border-gray-400 p-2 md:p-3 leading-relaxed\">大学生の<ruby>康太<rt>こうた</rt></ruby>は<ruby>無理<rt>むり</rt></ruby>やりダンス<ruby>部<rt>ぶ</rt></ruby>に入れられて、<ruby>先輩<rt>せんぱい</rt></ruby>と大会に出ることに。<br><ruby>爆笑<rt>ばくしょう</rt></ruby><ruby>恋愛<rt>れんあい</rt></ruby>コメディ。<br><ruby>出演<rt>しゅつえん</rt></ruby>：<ruby>大木健<rt>おおきたける</rt></ruby>、<ruby>中田真美<rt>なかたまみ</rt></ruby></td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-400 p-2 md:p-3 leading-relaxed\">②ドキドキマシンをさがせ</td>\n          <td class=\"border border-gray-400 p-2 md:p-3 leading-relaxed\">3月9日<br>午後2時～<br>2<ruby>階<rt>かい</rt></ruby>集会室</td>\n          <td class=\"border border-gray-400 p-2 md:p-3 leading-relaxed\"><ruby>児童<rt>じどう</rt></ruby>、<ruby>保護者<rt>ほごしゃ</rt></ruby><br>先着30名（<ruby>申込不要<rt>もうしこみふよう</rt></ruby>）</td>\n          <td class=\"border border-gray-400 p-2 md:p-3 leading-relaxed\">人間の心がわかるという<ruby>機械<rt>きかい</rt></ruby>を<ruby>発明<rt>はつめい</rt></ruby>した少年と<ruby>悪<rt>あく</rt></ruby>の<ruby>大王<rt>だいおう</rt></ruby>との<ruby>戦<rt>たたか</rt></ruby>い。<br><ruby>出演<rt>しゅつえん</rt></ruby>：<ruby>小林<rt>こばやし</rt></ruby>ゆうき・<ruby>森雪菜<rt>もりゆきな</rt></ruby></td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-400 p-2 md:p-3 leading-relaxed\">③トモばあちゃんの<ruby>涙<rt>なみだ</rt></ruby></td>\n          <td class=\"border border-gray-400 p-2 md:p-3 leading-relaxed\">3月16日<br>午後3時～<br>3階<ruby>多目的<rt>たもくてき</rt></ruby>ホール</td>\n          <td class=\"border border-gray-400 p-2 md:p-3 leading-relaxed\"><ruby>一般<rt>いっぱん</rt></ruby>50名（<ruby>申込必要<rt>もうしこみひつよう</rt></ruby>：<br>ネットかはがきで。<ruby>先着順<rt>せんちゃくじゅん</rt></ruby>）</td>\n          <td class=\"border border-gray-400 p-2 md:p-3 leading-relaxed\"><ruby>一人暮<rt>ひとりぐ</rt></ruby>らしのトモばあちゃんの家の前に赤ちゃんが。家族とは何かを問う問題作。<br><ruby>出演<rt>しゅつえん</rt></ruby>：<ruby>黒沢美香子<rt>くろさわみかこ</rt></ruby>、<ruby>中村利男<rt>なかむらとしお</rt></ruby></td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-400 p-2 md:p-3 leading-relaxed\">④ホヨヨンと楽しいおともだち</td>\n          <td class=\"border border-gray-400 p-2 md:p-3 leading-relaxed\">3月23日<br>午後3時～<br>2<ruby>階<rt>かい</rt></ruby>集会室</td>\n          <td class=\"border border-gray-400 p-2 md:p-3 leading-relaxed\"><ruby>児童<rt>じどう</rt></ruby>、<ruby>保護者<rt>ほごしゃ</rt></ruby><br>先着30名（<ruby>申込不要<rt>もうしこみふよう</rt></ruby>）</td>\n          <td class=\"border border-gray-400 p-2 md:p-3 leading-relaxed\"><ruby>世界的<rt>せかいてき</rt></ruby>な人気者のクマ、ホヨヨンと元気な友だちのほのぼのアニメ。</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>",
+  "questions": [
+    {
+      "id": "q23-1",
+      "questionNumber": "問 1",
+      "questionText": "エバさんは5歳の子どもといっしょに子ども向けのアニメを見たい。どれがよいか。",
+      "options": [
+        "①「ラストダンスは君と」",
+        "②「ドキドキマシンをさがせ」",
+        "③「トモばあちゃんの涙」",
+        "④「ホヨヨンと楽しいおともだち」"
+      ],
+      "correct": 4,
+      "correctOption": "④「ホヨヨンと楽しいおともだち」",
+      "explanation": "エバさんは「5歳の子ども」と一緒なので対象が「児童、保護者」の映画（②または④）を探します。さらに「アニメ」を希望しているため、内容に「ほのぼのアニメ」と書かれている④が正解です。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "上映する",
+      "reading": "じょうえいする",
+      "meaning": "To screen, show (a film)"
+    },
+    {
+      "word": "〜を対象とした",
+      "reading": "〜をたいしょうとした",
+      "meaning": "Targeted at, for"
+    },
+    {
+      "word": "申込",
+      "reading": "もうしこみ",
+      "meaning": "Application"
+    },
+    {
+      "word": "一般",
+      "reading": "いっぱん",
+      "meaning": "General public"
+    },
+    {
+      "word": "必要",
+      "reading": "ひつよう",
+      "meaning": "Necessary"
+    },
+    {
+      "word": "不要",
+      "reading": "ふよう",
+      "meaning": "Not necessary"
+    },
+    {
+      "word": "先着順",
+      "reading": "せんちゃくじゅん",
+      "meaning": "First-come, first-served"
+    },
+    {
+      "word": "コメディ",
+      "reading": "",
+      "meaning": "Comedy"
+    },
+    {
+      "word": "出演",
+      "reading": "しゅつえん",
+      "meaning": "Starring, appearance"
+    },
+    {
+      "word": "児童",
+      "reading": "じどう",
+      "meaning": "Children"
+    },
+    {
+      "word": "保護者",
+      "reading": "ほごしゃ",
+      "meaning": "Guardian, parent"
+    },
+    {
+      "word": "アニメ",
+      "reading": "",
+      "meaning": "Animation, anime"
+    }
+  ]
+}

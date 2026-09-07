@@ -1,0 +1,76 @@
+{
+  "id": "mondai-25",
+  "chapterId": "mondai-25",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 3,
+  "partTitle": "第3部：情報検索",
+  "partTitleEn": "Information Retrieval",
+  "mondaiNumber": 25,
+  "title": "問題 25",
+  "genre": {
+    "number": "5",
+    "japanese": "お知らせ②",
+    "english": "Public notices (2)"
+  },
+  "sectionHeader": {
+    "number": "5",
+    "japanese": "お知らせ②",
+    "english": "Public notices (2)"
+  },
+  "preReading": "お知らせなどが貼られた掲示板を見ていますか。どんなお知らせがありますか。",
+  "preReadingPrompt": "お知らせなどが貼られた掲示板を見ていますか。どんなお知らせがありますか。",
+  "mondaiHeader": "問題25　右のページの文章はビルの掲示板に貼ってあったものである。下の質問に答えなさい。答えは、１・２・３・４から最もよいものを一つえらびなさい。",
+  "passageLayout": "html",
+  "passageNotes": "",
+  "footnotes": [],
+  "imageSrc": "/shinkanzen_pages/N3_page-0082.jpg",
+  "passageText": "<div class=\"max-w-2xl mx-auto border border-gray-800 p-8 text-gray-900 font-sans leading-relaxed\">\n  <div class=\"text-right mb-4\"><ruby>平成<rt>へいせい</rt></ruby>〇〇年７月１日</div>\n  <div class=\"mb-6\"><ruby>国際<rt>こくさい</rt></ruby>ビルご<ruby>利用<rt>りよう</rt></ruby>の<ruby>皆様<rt>みなさま</rt></ruby></div>\n  <h1 class=\"text-center text-xl font-bold mb-6 tracking-widest\">エレベーター運転<ruby>停止<rt>ていし</rt></ruby>のお知らせ</h1>\n  <p class=\"mb-6\">\n    8月1日より8月7日までの下<ruby>記<rt>き</rt></ruby>の時間、<ruby>国際<rt>こくさい</rt></ruby>ビルの北館、東館、西館では、エレベーターの<ruby>点検<rt>てんけん</rt></ruby>を行います。<ruby>点検<rt>てんけん</rt></ruby>中はエレベーターの<ruby>利用<rt>りよう</rt></ruby>ができませんので、ご注意ください。ご<ruby>迷惑<rt>めいわく</rt></ruby>をおかけしますが、よろしくお<ruby>願<rt>ねが</rt></ruby>いいたします。\n  </p>\n  \n  <div class=\"mb-6\">\n    <div class=\"mb-2 font-bold\">１．<ruby>点検予定日時<rt>てんけんよていにちじ</rt></ruby></div>\n    <ul class=\"list-disc pl-6 mb-4 space-y-1\">\n      <li>〇が<ruby>点検予定日<rt>てんけんよていび</rt></ruby></li>\n      <li>時間は、各<ruby>館<rt>かん</rt></ruby>8:00〜10:00、22:00〜24:00</li>\n      <li>△の日は<ruby>講演会<rt>こうえんかい</rt></ruby>のため、8:00から10:00の<ruby>点検<rt>てんけん</rt></ruby>は行いません。</li>\n    </ul>\n    \n    <table class=\"w-full border-collapse border border-gray-600 text-center text-sm md:text-base\">\n      <thead>\n        <tr>\n          <th class=\"border border-gray-600 p-2 bg-gray-100 w-24\"></th>\n          <th class=\"border border-gray-600 p-2 bg-gray-100\">8/1</th>\n          <th class=\"border border-gray-600 p-2 bg-gray-100\">2</th>\n          <th class=\"border border-gray-600 p-2 bg-gray-100\">3</th>\n          <th class=\"border border-gray-600 p-2 bg-gray-100\">4</th>\n          <th class=\"border border-gray-600 p-2 bg-gray-100\">5</th>\n          <th class=\"border border-gray-600 p-2 bg-gray-100\">6</th>\n          <th class=\"border border-gray-600 p-2 bg-gray-100\">7</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <th class=\"border border-gray-600 p-2 bg-gray-100 font-normal\">東館</th>\n          <td class=\"border border-gray-600 p-2\">〇</td>\n          <td class=\"border border-gray-600 p-2\">〇</td>\n          <td class=\"border border-gray-600 p-2\">〇</td>\n          <td class=\"border border-gray-600 p-2\"></td>\n          <td class=\"border border-gray-600 p-2\"></td>\n          <td class=\"border border-gray-600 p-2\"></td>\n          <td class=\"border border-gray-600 p-2\"></td>\n        </tr>\n        <tr>\n          <th class=\"border border-gray-600 p-2 bg-gray-100 font-normal\">西館</th>\n          <td class=\"border border-gray-600 p-2\"></td>\n          <td class=\"border border-gray-600 p-2\"></td>\n          <td class=\"border border-gray-600 p-2\">〇</td>\n          <td class=\"border border-gray-600 p-2\">〇</td>\n          <td class=\"border border-gray-600 p-2\">△</td>\n          <td class=\"border border-gray-600 p-2\"></td>\n          <td class=\"border border-gray-600 p-2\"></td>\n        </tr>\n        <tr>\n          <th class=\"border border-gray-600 p-2 bg-gray-100 font-normal\">北館</th>\n          <td class=\"border border-gray-600 p-2\"></td>\n          <td class=\"border border-gray-600 p-2\"></td>\n          <td class=\"border border-gray-600 p-2\"></td>\n          <td class=\"border border-gray-600 p-2\"></td>\n          <td class=\"border border-gray-600 p-2\">△</td>\n          <td class=\"border border-gray-600 p-2\">〇</td>\n          <td class=\"border border-gray-600 p-2\">〇</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n\n  <div class=\"mb-6\">\n    <div class=\"mb-2 font-bold\">２．ご注意</div>\n    <ul class=\"list-disc pl-6 space-y-1\">\n      <li><ruby>点検<rt>てんけん</rt></ruby>中はエスカレーターまたは<ruby>階段<rt>かいだん</rt></ruby>をご<ruby>利用<rt>りよう</rt></ruby>ください。</li>\n      <li>東館と西館の５階は<ruby>連絡通路<rt>れんらくつうろ</rt></ruby>で<ruby>移動<rt>いどう</rt></ruby>することができます。</li>\n      <li>南館については、９月に<ruby>点検予定<rt>てんけんよてい</rt></ruby>です。</li>\n    </ul>\n  </div>\n\n  <div>\n    <div class=\"mb-2 font-bold\">３．<ruby>問<rt>と</rt></ruby>い<ruby>合<rt>あ</rt></ruby>わせ<ruby>先<rt>さき</rt></ruby></div>\n    <div class=\"pl-6 flex gap-8\">\n      <span><ruby>国際<rt>こくさい</rt></ruby>ビル<ruby>管理部<rt>かんりぶ</rt></ruby></span>\n      <span>TEL：03-1111-2222</span>\n    </div>\n  </div>\n</div>",
+  "questions": [
+    {
+      "id": "q25-1",
+      "questionNumber": "問 1",
+      "questionText": "文章の内容と合っているものはどれか。",
+      "options": [
+        "8月1日〜3日まで東館では1日中エレベーターが使えない。",
+        "南館では今年はエレベーターの点検は行わない。",
+        "エレベーター点検中もエスカレーターは使える。",
+        "8月5日は西館と北館では一日中エレベーターが使えない。"
+      ],
+      "correct": 3,
+      "correctOption": "エレベーター点検中もエスカレーターは使える。",
+      "explanation": "「２．ご注意」に「点検中はエスカレーターまたは階段をご利用ください」と記載されているため、3 が正しい内容です。1は点検時間が「8:00〜10:00、22:00〜24:00」のみで一日中ではないため誤り。2は「南館については、9月に点検予定です」とあるため誤り。4は8月5日は西館・北館ともに△（講演会のため8:00〜10:00の点検は行わず夜間のみ）であり一日中使えないわけではないため誤りです。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "停止",
+      "reading": "ていし",
+      "meaning": "Stoppage, suspension"
+    },
+    {
+      "word": "〜館",
+      "reading": "〜かん",
+      "meaning": "Building, wing, hall"
+    },
+    {
+      "word": "迷惑をかける",
+      "reading": "めいわくをかける",
+      "meaning": "To cause trouble/inconvenience to"
+    },
+    {
+      "word": "点検予定",
+      "reading": "てんけんよてい",
+      "meaning": "Inspection schedule"
+    },
+    {
+      "word": "日時",
+      "reading": "にちじ",
+      "meaning": "Date and time"
+    },
+    {
+      "word": "問い合わせ先",
+      "reading": "といあわせさき",
+      "meaning": "Contact, inquiries address"
+    }
+  ]
+}

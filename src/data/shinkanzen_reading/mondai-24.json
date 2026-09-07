@@ -1,0 +1,95 @@
+{
+  "id": "mondai-24",
+  "chapterId": "mondai-24",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 3,
+  "partTitle": "第3部：情報検索",
+  "partTitleEn": "Information Retrieval",
+  "mondaiNumber": 24,
+  "title": "問題 24",
+  "genre": {
+    "number": "4",
+    "japanese": "お知らせ①",
+    "english": "Public notices (1)"
+  },
+  "sectionHeader": {
+    "number": "4",
+    "japanese": "お知らせ①",
+    "english": "Public notices (1)"
+  },
+  "preReading": "コンサートなどに行くときにはどんなことに気をつけますか。",
+  "preReadingPrompt": "コンサートなどに行くときにはどんなことに気をつけますか。",
+  "mondaiHeader": "問題24　右のページの文章を読んで、質問に答えなさい。答えは、１・２・３・４から最もよいものを一つえらびなさい。",
+  "passageLayout": "html",
+  "passageNotes": "<p>(注1) <ruby>合唱<rt>がっしょう</rt></ruby>：<ruby>大<rt>おお</rt></ruby>ぜいで歌うこと</p><p>(注2) <ruby>混声<rt>こんせい</rt></ruby>：<ruby>男性<rt>だんせい</rt></ruby>と<ruby>女性<rt>じょせい</rt></ruby>の<ruby>声<rt>こえ</rt></ruby>の</p>",
+  "footnotes": [
+    {
+      "term": "（注1）合唱（がっしょう）",
+      "definition": "大ぜいで歌うこと"
+    },
+    {
+      "term": "（注2）混声（こんせい）",
+      "definition": "男性と女性の声の"
+    }
+  ],
+  "imageSrc": "/shinkanzen_pages/N3_page-0080.jpg",
+  "passageText": "<div class=\"border-2 border-gray-600 p-8 max-w-3xl mx-auto bg-white text-gray-800\">\n  <h1 class=\"text-2xl text-center mb-6 tracking-wider font-bold\">ミニ・コンサートのご<ruby>案内<rt>あんない</rt></ruby></h1>\n  \n  <div class=\"space-y-4 mb-8 leading-relaxed\">\n    <p>秋も一日一日と<ruby>深<rt>ふか</rt></ruby>まり、<ruby>紅葉<rt>こうよう</rt></ruby>も美しくなり始めました。</p>\n    <p>私たち「さくら<ruby>合唱<rt>がっしょう</rt></ruby><span class=\"text-xs\">（注1）</span>クラブ」は日本の歌を<ruby>愛<rt>あい</rt></ruby>する社会人<ruby>混声<rt>こんせい</rt></ruby><span class=\"text-xs\">（注2）</span><ruby>合唱<rt>がっしょう</rt></ruby>のクラブです。このたび秋の歌を集めて、ミニ・コンサートを<ruby>開催<rt>かいさい</rt></ruby>することになりました。</p>\n    <p>どうぞ日本の歌の美しさをお楽しみください。ご来場をお待ちしています。</p>\n  </div>\n\n  <div class=\"text-right mb-8\">\n    <p>平成XX年 10月25日</p>\n    <p>さくら<ruby>合唱<rt>がっしょう</rt></ruby>クラブ<ruby>発表会実行委員<rt>はっぴょうかいじっこういいん</rt></ruby></p>\n  </div>\n\n  <div class=\"pl-8 mb-8\">\n    <table class=\"border-collapse\">\n      <tbody>\n        <tr>\n          <td class=\"pr-4 py-2 align-top font-bold\">日時：</td>\n          <td class=\"py-2\">11月12日（土）<br>\n            <span class=\"inline-block w-32\"><ruby>開場<rt>かいじょう</rt></ruby> 15:00</span> <ruby>開演<rt>かいえん</rt></ruby> 15:30\n          </td>\n        </tr>\n        <tr>\n          <td class=\"pr-4 py-2 font-bold\"><ruby>場所<rt>ばしょ</rt></ruby>：</td>\n          <td class=\"py-2\">〇〇<ruby>市民<rt>しみん</rt></ruby>ホール</td>\n        </tr>\n        <tr>\n          <td class=\"pr-4 py-2 font-bold\">入場料：</td>\n          <td class=\"py-2\">300円</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n\n  <div class=\"mb-8\">\n    <h2 class=\"font-bold mb-2\">☆お<ruby>願<rt>ねが</rt></ruby>い☆</h2>\n    <ul class=\"list-disc pl-6 space-y-2\">\n      <li>自転車・車でのご来場はご<ruby>遠慮<rt>えんりょ</rt></ruby>ください。</li>\n      <li><ruby>上演中<rt>じょうえんちゅう</rt></ruby>のフラッシュ<ruby>撮影<rt>さつえい</rt></ruby>はご<ruby>遠慮<rt>えんりょ</rt></ruby>ください。</li>\n      <li>ビデオ<ruby>撮影<rt>さつえい</rt></ruby>はビデオ<ruby>席<rt>せき</rt></ruby>でお<ruby>願<rt>ねが</rt></ruby>いします。</li>\n      <li>小さいお<ruby>子様<rt>こさま</rt></ruby>をお連れの方は、<ruby>他<rt>ほか</rt></ruby>のお<ruby>客様<rt>きゃくさま</rt></ruby>のご<ruby>迷惑<rt>めいわく</rt></ruby>にならないようにご注意ください。</li>\n      <li><ruby>携帯電話等<rt>けいたいでんわとう</rt></ruby>の<ruby>電源<rt>でんげん</rt></ruby>はお切りください。</li>\n    </ul>\n  </div>\n\n  <div class=\"mb-8\">\n    <h2 class=\"font-bold mb-2\">☆メンバー<ruby>募集<rt>ぼしゅう</rt></ruby>☆ <span class=\"font-normal\">私たちと<ruby>一緒<rt>いっしょ</rt></ruby>に歌いませんか？</span></h2>\n    <p class=\"pl-6\"><ruby>参加<rt>さんか</rt></ruby>ご<ruby>希望<rt>きぼう</rt></ruby>の方は山田 (tel:090-9387-○○○○) までご<ruby>連絡<rt>れんらく</rt></ruby>ください。</p>\n  </div>\n</div>",
+  "questions": [
+    {
+      "id": "q24-1",
+      "questionNumber": "問 1",
+      "questionText": "このコンサートで、してはいけないことは何か。",
+      "options": [
+        "ビデオを撮る。",
+        "写真を撮る。",
+        "子どもと一緒に行く。",
+        "携帯電話でメールをする。"
+      ],
+      "correct": 2,
+      "correctOption": "写真を撮る。",
+      "explanation": "「☆お願い☆」に「上演中のフラッシュ撮影はご遠慮ください」と記載されており、写真撮影（フラッシュ撮影）が禁止・制限されているため 2 が正解です。ビデオ撮影は「ビデオ席で」、子どもは「迷惑にならないようにご注意ください」とあり、禁止されているわけではありません。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "紅葉",
+      "reading": "こうよう",
+      "meaning": "Autumn foliage, autumn leaves"
+    },
+    {
+      "word": "このたび",
+      "reading": "",
+      "meaning": "This time, on this occasion"
+    },
+    {
+      "word": "開催する",
+      "reading": "かいさいする",
+      "meaning": "To host, hold, organize"
+    },
+    {
+      "word": "お(ご)〜ください",
+      "reading": "",
+      "meaning": "Please do ..."
+    },
+    {
+      "word": "ご来場",
+      "reading": "ごらいじょう",
+      "meaning": "Attendance, coming to the event"
+    },
+    {
+      "word": "上演中",
+      "reading": "じょうえんちゅう",
+      "meaning": "During the performance"
+    },
+    {
+      "word": "フラッシュ撮影",
+      "reading": "フラッシュさつえい",
+      "meaning": "Flash photography"
+    },
+    {
+      "word": "電源",
+      "reading": "でんげん",
+      "meaning": "Power switch, power supply"
+    }
+  ]
+}

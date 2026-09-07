@@ -86,6 +86,15 @@ const SomatomeN3Book = () => {
   const prevChapter = currentChapterIndex > 0 ? allChapters[currentChapterIndex - 1] : null;
   const nextChapter = currentChapterIndex >= 0 && currentChapterIndex < allChapters.length - 1 ? allChapters[currentChapterIndex + 1] : null;
 
+  // Derive current week from chapterId (e.g. "week3-day2" → 3)
+  const currentWeek = parseInt(chapterId.match(/week(\d+)/)?.[1] || '1', 10);
+
+  // Filter dropdown to only show days from the current week
+  const weekChapters = allChapters.filter(ch => ch.id.startsWith(`week${currentWeek}-`));
+
+  // All available week numbers for the week selector
+  const weekNumbers = [...new Set(allChapters.map(ch => parseInt(ch.id.match(/week(\d+)/)?.[1] || '0', 10)))].filter(n => n > 0).sort((a, b) => a - b);
+
   // Reset interactive states and load chapter data when chapterId changes
   useEffect(() => {
     setCurrentPage(0);
@@ -268,20 +277,29 @@ const SomatomeN3Book = () => {
         {/* Navigation & Chapter Bar */}
         <div className="flex flex-wrap items-center justify-between gap-2 bg-gray-900 text-white px-4 py-2.5 mt-2 rounded-xl shadow-md text-sm font-medium border border-gray-700">
           
-          {/* Chapter Selector Dropdown */}
+          {/* Week Selector + Day Dropdown */}
           <div className="flex items-center gap-2">
-            <label htmlFor="chapter-select" className="text-gray-300 text-xs uppercase font-bold tracking-wider hidden sm:inline">
-              Chapter:
-            </label>
+            <select
+              id="week-select"
+              value={currentWeek}
+              onChange={(e) => navigateToChapter(`week${e.target.value}-day1`)}
+              className="bg-gray-800 hover:bg-gray-700 text-white text-sm font-bold py-1.5 px-3 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+            >
+              {weekNumbers.map((wn) => (
+                <option key={wn} value={wn}>
+                  Week {wn}
+                </option>
+              ))}
+            </select>
             <select
               id="chapter-select"
               value={chapterId}
               onChange={(e) => navigateToChapter(e.target.value)}
               className="bg-gray-800 hover:bg-gray-700 text-white text-sm font-bold py-1.5 px-3 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
             >
-              {allChapters.map((ch) => (
+              {weekChapters.map((ch) => (
                 <option key={ch.id} value={ch.id}>
-                  {ch.title}
+                  {ch.title.replace(/^Week \d+ - /, '')}
                 </option>
               ))}
             </select>

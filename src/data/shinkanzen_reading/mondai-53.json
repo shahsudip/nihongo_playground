@@ -1,0 +1,105 @@
+{
+  "id": "mondai-53",
+  "chapterId": "mondai-53",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 4,
+  "mondaiNumber": 53,
+  "partTitle": "実戦問題",
+  "partTitleEn": "Practice Test",
+  "section": "4. 情報検索",
+  "genre": "広告",
+  "genreEn": "Advertising",
+  "sectionHeader": {
+    "category": "情報検索",
+    "type": "広告",
+    "typeEnglish": "Advertising"
+  },
+  "title": "問題 53",
+  "instruction": "つぎの文章は求人募集広告である。右の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "mondaiHeader": "問題53 つぎの文章は求人募集広告である。右の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "passage": "<div class=\"max-w-xl mx-auto my-2 flex justify-center items-center bg-white p-2 rounded\">\n  <img src=\"/shinkanzen_pages/mondai_53_clean.png\" alt=\"すしの吉野 求人募集広告\" class=\"w-full max-w-[560px] h-auto object-contain\" />\n</div>",
+  "passageText": "<div class=\"max-w-xl mx-auto my-2 flex justify-center items-center bg-white p-2 rounded\">\n  <img src=\"/shinkanzen_pages/mondai_53_clean.png\" alt=\"すしの吉野 求人募集広告\" class=\"w-full max-w-[560px] h-auto object-contain\" />\n</div>",
+  "passageLayout": "html",
+  "footnotes": [
+    {
+      "term": "（注1）職種",
+      "definition": "職業の種類"
+    },
+    {
+      "term": "（注2）考慮",
+      "definition": "よく考えること"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "募集",
+      "reading": "ぼしゅう",
+      "meaning": "Recruitment, hiring"
+    },
+    {
+      "word": "勤務",
+      "reading": "きんむ",
+      "meaning": "Work, duty, service"
+    },
+    {
+      "word": "給与",
+      "reading": "きゅうよ",
+      "meaning": "Salary, compensation"
+    },
+    {
+      "word": "時給",
+      "reading": "じきゅう",
+      "meaning": "Hourly wage"
+    },
+    {
+      "word": "歓迎",
+      "reading": "かんげい",
+      "meaning": "Welcome"
+    },
+    {
+      "word": "応募",
+      "reading": "おうぼ",
+      "meaning": "Application, applying"
+    },
+    {
+      "word": "履歴書",
+      "reading": "りれきしょ",
+      "meaning": "Resume, CV"
+    },
+    {
+      "word": "面接",
+      "reading": "めんせつ",
+      "meaning": "Interview"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q53-1",
+      "questionNumber": "問 1",
+      "questionText": "ホンさんは、火・木・金曜日に夕方5時から夜10時まで働くことになった。1週間で給料がいくらもらえるか。",
+      "options": [
+        "9,000円",
+        "9,500円",
+        "13,500円",
+        "15,000円"
+      ],
+      "correct": 4,
+      "correctOption": "15,000円",
+      "explanation": "勤務時間は②「15:00〜24:00」の時間帯（時給1,000円）に該当します。夕方5時（17:00）から夜10時（22:00）までは1日5時間です。1日の給料は「1,000円 × 5時間 ＝ 5,000円」となります。週に3日（火・木・金）働くため、1週間でもらえる給料は「5,000円 × 3日 ＝ 15,000円」です。したがって正解は 4 です。"
+    },
+    {
+      "id": "q53-2",
+      "questionNumber": "問 2",
+      "questionText": "このすし屋で働ける人はだれか。",
+      "options": [
+        "経験がある主婦。月曜日と火曜日に9時から12時まで働ける。",
+        "経験がない大学生。水曜日に午後6時から午後11時まで働ける。",
+        "経験がある高校生。火曜日と木曜日に午後3時から午後9時まで働ける。",
+        "経験がない大学生。水曜日と土曜日に午後5時から夜10時まで働ける。"
+      ],
+      "correct": 4,
+      "correctOption": "経験がない大学生。水曜日と土曜日に午後5時から夜10時まで働ける。",
+      "explanation": "条件を確認します：\n・「週2日、1日5時間以上」働けること\n・「経験のない方もOK」\n・「主婦・学生歓迎（高校生は不可）」\n\n各選択肢を検証すると：\n1：1日3時間（9〜12時）しか働けないため不可（5時間以上必要）。\n2：週1日（水曜日）しか働けないため不可（週2日以上必要）。\n3：高校生は不可と明記されているため不可。\n4：週2日（水・土）、1日5時間（17〜22時）、未経験の大学生であり、すべての条件を満たしています。\nしたがって正解は 4 です。"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "mondai-29",
+  "bookId": "shinkanzen-master-n3-reading",
+  "chapterId": "mondai-29",
+  "part": 4,
+  "partTitle": "実戦問題",
+  "partTitleEn": "Practice Test",
+  "section": "1. 内容理解（短文）",
+  "genre": "説明文",
+  "genreEn": "Explanatory texts",
+  "sectionHeader": {
+    "category": "内容理解（短文）",
+    "type": "説明文",
+    "typeEnglish": "Explanatory texts"
+  },
+  "mondaiNumber": 29,
+  "title": "問題 29",
+  "instruction": "つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "mondaiHeader": "問題29　つぎの文章を読んで、質問に答えなさい。答えは、１・２・３・４から最もよいものを一つえらびなさい。",
+  "passage": "<p>おにぎり<sup>（注1）</sup>は<ruby>簡単<rt>かんたん</rt></ruby>に食べられるので、とても人気がある。</p><p>このおにぎり、ただご飯を<ruby>丸<rt>まる</rt></ruby>くしただけのように見えるが、上手に作るのは<ruby>簡単<rt>かんたん</rt></ruby>ではない。ぎゅうぎゅうと力を<ruby>込<rt>こ</rt></ruby>めて<ruby>固<rt>かた</rt></ruby>くにぎっては、おいしいおにぎりにならない。けれどもあまり力を入れないと、食べるときにぼろぼろとくずれてしまう。食べるときにお<ruby>米<rt>こめ</rt></ruby>と<ruby>具<rt>ぐ</rt></ruby><sup>（注2）</sup>の味が<ruby>混<rt>ま</rt></ruby>ざるようにふわふわと、でも、くずれない<ruby>程度<rt>ていど</rt></ruby>に力を<ruby>込<rt>こ</rt></ruby>めてにぎらなければならない。</p><p>自分の作ったおにぎりがあまりおいしくないと思っているなら、くずれない<ruby>程度<rt>ていど</rt></ruby>に強く、味が混ざるように<ruby>優<rt>やさ</rt></ruby>しくにぎってみることをすすめる。</p>",
+  "passageText": "<p>おにぎり<sup>（注1）</sup>は<ruby>簡単<rt>かんたん</rt></ruby>に食べられるので、とても人気がある。</p><p>このおにぎり、ただご飯を<ruby>丸<rt>まる</rt></ruby>くしただけのように見えるが、上手に作るのは<ruby>簡単<rt>かんたん</rt></ruby>ではない。ぎゅうぎゅうと力を<ruby>込<rt>こ</rt></ruby>めて<ruby>固<rt>かた</rt></ruby>くにぎっては、おいしいおにぎりにならない。けれどもあまり力を入れないと、食べるときにぼろぼろとくずれてしまう。食べるときにお<ruby>米<rt>こめ</rt></ruby>と<ruby>具<rt>ぐ</rt></ruby><sup>（注2）</sup>の味が<ruby>混<rt>ま</rt></ruby>ざるようにふわふわと、でも、くずれない<ruby>程度<rt>ていど</rt></ruby>に力を<ruby>込<rt>こ</rt></ruby>めてにぎらなければならない。</p><p>自分の作ったおにぎりがあまりおいしくないと思っているなら、くずれない<ruby>程度<rt>ていど</rt></ruby>に強く、味が混ざるように<ruby>優<rt>やさ</rt></ruby>しくにぎってみることをすすめる。</p>",
+  "passageNotes": "<div class=\"text-xs text-gray-700 space-y-1 font-sans\"><p><strong>（注1）おにぎり：</strong>炊いたご飯を三角形や丸の形にして作った日本の食べ物</p><p><strong>（注2）具：</strong>おにぎりの中に入れるおかずになるもの</p></div>",
+  "footnotes": [
+    {
+      "term": "（注1）おにぎり",
+      "definition": "炊いたご飯を三角形や丸の形にして作った日本の食べ物"
+    },
+    {
+      "term": "（注2）具（ぐ）",
+      "definition": "おにぎりの中に入れるおかずになるもの"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "ただ〜だけ",
+      "reading": "",
+      "meaning": "Just, only"
+    },
+    {
+      "word": "ぎゅうぎゅう",
+      "reading": "",
+      "meaning": "Tightly (roll up/squeeze)"
+    },
+    {
+      "word": "ぼろぼろ",
+      "reading": "",
+      "meaning": "Crumbly, falling apart"
+    },
+    {
+      "word": "ふわふわ",
+      "reading": "",
+      "meaning": "Fluffy, soft"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "questionNumber": "問い",
+      "question": "上手なおにぎりの作り方として正しいのはどれか。",
+      "questionText": "上手なおにぎりの作り方として正しいのはどれか。",
+      "options": [
+        "食べるときにこわれてしまわないようにご飯を<ruby>固<rt>かた</rt></ruby>くまとめる。",
+        "<ruby>形<rt>かたち</rt></ruby>が<ruby>丸<rt>まる</rt></ruby>くなるように力を<ruby>込<rt>こ</rt></ruby>めて何度もにぎる。",
+        "食べるときに<ruby>形<rt>かたち</rt></ruby>がこわれるぐらいやわらかくにぎる。",
+        "くずれないけれども食べるときにはやわらかいと<ruby>感<rt>かん</rt></ruby>じるようににぎる。"
+      ],
+      "correct": 4,
+      "correctOption": "くずれないけれども食べるときにはやわらかいと<ruby>感<rt>かん</rt></ruby>じるようににぎる。",
+      "explanation": "本文に「食べるときにお米と具の味が混ざるようにふわふわと、でも、くずれない程度に力を込めてにぎらなければならない」と書かれています。したがって「くずれないけれども食べるときにはやわらかいと感じるようににぎる」という 4 が正解です。"
+    }
+  ]
+}

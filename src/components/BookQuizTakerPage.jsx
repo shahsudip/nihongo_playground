@@ -10,7 +10,6 @@ import { Button } from './ui/Button';
 import { ProgressBar } from './ui/ProgressBar';
 import { OptionButton } from './ui/OptionButton';
 import { QuestionNavigator } from './ui/QuestionNavigator';
-import ShinkanzenQuizPage from './ShinkanzenQuizPage';
 
 const BookQuizTakerPage = () => {
   const { bookId, chapterId } = useParams();
@@ -304,9 +303,10 @@ const BookQuizTakerPage = () => {
               <p className="text-base font-bold text-[var(--color-text-primary)] japanese-text flex items-start gap-3">
                 <span className="whitespace-nowrap">{currentQ.passageTitle.replace(/^第\d+部\s*/, '')}</span>
                 {currentQ.mondaiHeader && (
-                  <span className="text-sm pt-0.5 leading-relaxed">
-                    {currentQ.mondaiHeader.replace(/^問題\d+\s*/, '')}
-                  </span>
+                  <span 
+                    className="text-sm pt-0.5 leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: currentQ.mondaiHeader.replace(/^問題\d+\s*/, '') }}
+                  />
                 )}
               </p>
             </div>

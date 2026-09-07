@@ -1,0 +1,104 @@
+{
+  "id": "mondai-26",
+  "chapterId": "mondai-26",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 3,
+  "partTitle": "第3部：情報検索",
+  "partTitleEn": "Information Retrieval",
+  "mondaiNumber": 26,
+  "title": "問題 26",
+  "genre": {
+    "number": "6",
+    "japanese": "薬の飲み方",
+    "english": "Instructions for taking medicine"
+  },
+  "sectionHeader": {
+    "number": "6",
+    "japanese": "薬の飲み方",
+    "english": "Instructions for taking medicine"
+  },
+  "preReading": "「錠剤、こな薬、カプセル、塗り薬、はり薬」の違いがわかりますか。",
+  "preReadingPrompt": "「錠剤、こな薬、カプセル、塗り薬、はり薬」の違いがわかりますか。",
+  "mondaiHeader": "問題26　下は薬の入った袋である。右のページの質問に答えなさい。答えは、１・２・３・４から最もよいものを一つえらびなさい。",
+  "passageLayout": "html",
+  "passageNotes": "<p>(注1)<ruby>内用薬<rt>ないようやく</rt></ruby>：飲む薬。（参考：外用薬（がいようやく・皮膚につける薬）、塗り薬（ぬりぐすり））<br>(注2)<ruby>包<rt>ほう</rt></ruby>：こな薬の数え方</p>",
+  "footnotes": [
+    {
+      "term": "（注1）内用薬（ないようやく）",
+      "definition": "飲む薬。（参考：外用薬（がいようやく・皮膚につける薬）、塗り薬（ぬりぐすり））"
+    },
+    {
+      "term": "（注2）包（ほう）",
+      "definition": "こな薬の数え方"
+    }
+  ],
+  "imageSrc": "/shinkanzen_pages/N3_page-0083.jpg",
+  "passageText": "<div class=\"border-2 border-gray-600 rounded-lg p-6 max-w-md mx-auto bg-gray-50 text-gray-800 font-sans shadow-sm\">\n  <div class=\"text-center text-xl font-bold tracking-[1em] mb-4 border-b border-gray-400 pb-2\">内　用　薬<span class=\"text-sm tracking-normal font-normal ml-[-1em]\"> <span class=\"text-xs\">（注1）</span></span></div>\n  <div class=\"text-lg font-bold mb-6 text-right w-full pr-8\">田中　マリア　様</div>\n\n  <div class=\"mb-6 pl-4\">\n    <div class=\"font-bold mb-2\"><span class=\"text-lg\">ピンクの錠剤:</span> <span class=\"ml-4 font-normal\">1回 <span class=\"mx-1\">2</span> <span class=\"border border-black rounded-full px-1\">錠</span>・包<span class=\"text-xs\">（注2）</span> ずつ </span><span class=\"ml-6 font-normal\">1日 <span class=\"mx-1\">2</span> 回</span></div>\n    <div class=\"ml-8 mb-2 flex gap-4\">\n      <div class=\"flex gap-2 items-center\">\n        <span class=\"border border-black rounded-full px-2 py-0.5 font-bold\">あさ</span>・\n        <span>ひる</span>・\n        <span class=\"border border-black rounded-full px-2 py-0.5 font-bold\">夕方</span>・\n        <span>寝る前</span>\n      </div>\n    </div>\n    <div class=\"ml-8 flex gap-8 items-center\">\n      <span><span class=\"mr-1\">4</span>日分</span>\n      <span class=\"flex gap-2 items-center\">\n        <span>食前</span>・\n        <span>食間</span>・\n        <span class=\"border border-black rounded-full px-2 py-0.5 font-bold\">食後</span>\n      </span>\n    </div>\n  </div>\n\n  <div class=\"mb-8 pl-4\">\n    <div class=\"font-bold mb-2\"><span class=\"text-lg\">白のカプセル:</span> <span class=\"ml-4 font-normal\">1回 <span class=\"mx-1\">1</span> <span class=\"border border-black rounded-full px-1\">錠</span>・包 ずつ </span><span class=\"ml-8 font-normal\">1日 <span class=\"mx-1\">3</span> 回</span></div>\n    <div class=\"ml-8 mb-2 flex gap-4\">\n      <div class=\"flex gap-2 items-center\">\n        <span class=\"border border-black rounded-full px-2 py-0.5 font-bold\">あさ</span>・\n        <span class=\"border border-black rounded-full px-2 py-0.5 font-bold\">ひる</span>・\n        <span class=\"border border-black rounded-full px-2 py-0.5 font-bold\">夕方</span>・\n        <span>寝る前</span>\n      </div>\n    </div>\n    <div class=\"ml-8 flex gap-8 items-center\">\n      <span><span class=\"mr-1\">4</span>日分</span>\n      <span class=\"flex gap-2 items-center\">\n        <span>食前</span>・\n        <span>食間</span>・\n        <span class=\"border border-black rounded-full px-2 py-0.5 font-bold\">食後</span>\n      </span>\n    </div>\n  </div>\n\n  <div class=\"text-right text-sm mt-8 border-t border-gray-400 pt-4\">\n    <div class=\"font-bold text-base mb-1\">わたなべ医院</div>\n    <div class=\"mb-1\">○○区××町1-2-3</div>\n    <div>電話 03-3333-2222</div>\n  </div>\n</div>",
+  "questions": [
+    {
+      "id": "q26-1",
+      "questionNumber": "問 1",
+      "questionText": "ピンクの錠剤と白のカプセルの飲み方について正しいものはどれか。",
+      "options": [
+        "朝食・昼食・夕食を食べた後、それぞれ1錠ずつ飲む。",
+        "朝食・昼食・夕食を食べた後、それぞれ2錠ずつ飲む。",
+        "ピンクの錠剤は朝食後・夕食後に2錠、白のカプセルは朝食後・昼食後・夕食後に3錠飲む。",
+        "ピンクの錠剤は朝食後・夕食後に2錠、白のカプセルは朝食後・昼食後・夕食後に1錠飲む。"
+      ],
+      "correct": 4,
+      "correctOption": "ピンクの錠剤は朝食後・夕食後に2錠、白のカプセルは朝食後・昼食後・夕食後に1錠飲む。",
+      "explanation": "薬袋の指示より、ピンクの錠剤は「1回2錠、1日2回（あさ・夕方、食後）」、白のカプセルは「1回1錠、1日3回（あさ・ひる・夕方、食後）」となっています。したがって 4 が正解です。"
+    },
+    {
+      "id": "q26-2",
+      "questionNumber": "問 2",
+      "questionText": "マリアさんは朝食後、薬を飲んだ。次はいつどんな薬を飲めばよいか。",
+      "options": [
+        "錠剤とカプセルを昼食後に飲む。",
+        "錠剤を昼食後に飲む。",
+        "カプセルを昼食後に飲む。",
+        "錠剤とカプセルを夕食後に飲む。"
+      ],
+      "correct": 3,
+      "correctOption": "カプセルを昼食後に飲む。",
+      "explanation": "朝食後に両方を飲んだ後、次に飲むタイミングは「ひる（昼食後）」です。昼に飲むのは「白のカプセル（1回1錠）」のみで、ピンクの錠剤は昼には飲まないため、3 が正解です。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "錠剤",
+      "reading": "じょうざい",
+      "meaning": "Tablet-form medicine, pills"
+    },
+    {
+      "word": "こな薬",
+      "reading": "こなぐすり",
+      "meaning": "Powdered medicine"
+    },
+    {
+      "word": "カプセル",
+      "reading": "",
+      "meaning": "Capsule"
+    },
+    {
+      "word": "〜錠",
+      "reading": "〜じょう",
+      "meaning": "Pills, tablets counter"
+    },
+    {
+      "word": "食前",
+      "reading": "しょくぜん",
+      "meaning": "Before meals"
+    },
+    {
+      "word": "食間",
+      "reading": "しょっかん",
+      "meaning": "Between meals"
+    },
+    {
+      "word": "食後",
+      "reading": "しょくご",
+      "meaning": "After meals"
+    }
+  ]
+}

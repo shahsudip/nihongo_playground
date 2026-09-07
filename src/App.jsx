@@ -35,7 +35,8 @@ import BookListPage from './components/BookListPage.jsx';
 import BookChapterListPage from './components/BookChapterListPage.jsx';
 import BookQuizTakerPage from './components/BookQuizTakerPage.jsx';
 import SomatomeN3Book from './components/SomatomeN3Book.jsx';
-import ShinkanzenQuizPage from './components/ShinkanzenQuizPage.jsx';
+import ShinkanzenN3ReadingBook from './components/ShinkanzenN3ReadingBook.jsx';
+import ShinkanzenN3ListeningBook from './components/ShinkanzenN3ListeningBook.jsx';
 import TangoReadingPage from './components/TangoReadingPage.jsx';
 
 // --- PRACTICE SETS ---
@@ -152,6 +153,14 @@ export default function App() {
           <Route
             path="/books/sou-matome-n3-reading/chapters/:chapterId"
             element={<ProtectedRoute><SomatomeN3Book /></ProtectedRoute>}
+          />
+          <Route
+            path="/books/shinkanzen-master-n3-reading/chapters/:chapterId"
+            element={<ProtectedRoute><ShinkanzenN3ReadingBook /></ProtectedRoute>}
+          />
+          <Route
+            path="/books/shinkanzen-master-n3-listening/chapters/:chapterId"
+            element={<ProtectedRoute><ShinkanzenN3ListeningBook /></ProtectedRoute>}
           />
           <Route
             path="/books/:bookId/chapters/:chapterId"

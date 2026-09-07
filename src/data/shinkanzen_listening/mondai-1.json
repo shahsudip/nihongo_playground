@@ -1,0 +1,49 @@
+{
+  "bookId": "shinkanzen-master-n3-listening",
+  "chapterId": "mondai-1",
+  "part": 1,
+  "partTitle": "第1部：課題理解",
+  "partTitleEn": "Task-Based Comprehension",
+  "mondaiNumber": 1,
+  "title": "問題1",
+  "mondaiHeader": "課題理解（Task-Based Comprehension）の練習です。",
+  "passageLayout": "image",
+  "imageSrc": "/shinkanzen_listening_pages/page_012.jpg",
+  "hotspots": [
+    {
+      "id": "hotspot-1",
+      "trackId": "cd1-track01",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/01 Track 1.mp3",
+      "x": 10,
+      "y": 15,
+      "width": 10,
+      "height": 5,
+      "label": "[1-01]"
+    }
+  ],
+  "questions": [
+    {
+      "questionText": "男の人と女の人が話しています。男の人は何をしますか。",
+      "options": [
+        "1. コピーをする",
+        "2. お茶を入れる",
+        "3. 電話をかける",
+        "4. 会議室を片付ける"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "1. コピーをする"
+      },
+      "explanation": "男の人は「私がコピーをしておきます」と言っているので、正解は1です。"
+    }
+  ],
+  "transcript": [
+    { "time": 0, "text": "男の人と女の人が話しています。" },
+    { "time": 3, "text": "男の人は何をしますか。" },
+    { "time": 6, "speaker": "女", "text": "あ、もうこんな時間。" },
+    { "time": 8, "speaker": "男", "text": "会議の準備、手伝いましょうか。" },
+    { "time": 10, "speaker": "女", "text": "ありがとう。じゃあ、この書類のコピーをお願いできる？" },
+    { "time": 14, "speaker": "男", "text": "わかりました。私がコピーをしておきます。" },
+    { "time": 18, "text": "男の人は何をしますか。" }
+  ]
+}

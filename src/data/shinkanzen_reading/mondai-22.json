@@ -1,0 +1,124 @@
+{
+  "id": "mondai-22",
+  "chapterId": "mondai-22",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 3,
+  "partTitle": "第3部：情報検索",
+  "partTitleEn": "Information Retrieval",
+  "mondaiNumber": 22,
+  "title": "問題 22",
+  "genre": {
+    "number": "2",
+    "japanese": "募集広告",
+    "english": "Enrolment adverts"
+  },
+  "sectionHeader": {
+    "number": "2",
+    "japanese": "募集広告",
+    "english": "Enrolment adverts"
+  },
+  "preReading": "今、習いたいことがありますか。それはどんなことですか。",
+  "preReadingPrompt": "今、習いたいことがありますか。それはどんなことですか。",
+  "mondaiHeader": "問題22　つぎの文章は教室の募集広告である。右のページの質問に答えなさい。答えは、１・２・３・４から最もよいものを一つえらびなさい。",
+  "passageLayout": "html",
+  "passageNotes": "<p>(注1)<ruby>在勤<rt>ざいきん</rt></ruby>：そこで働いていること</p><p>(注2)<ruby>在学<rt>ざいがく</rt></ruby>：そこで学校に通っていること</p>",
+  "footnotes": [
+    {
+      "term": "（注1）在勤（ざいきん）",
+      "definition": "そこで働いていること"
+    },
+    {
+      "term": "（注2）在学（ざいがく）",
+      "definition": "そこで学校に通っていること"
+    }
+  ],
+  "imageSrc": "/shinkanzen_pages/N3_page-0075.jpg",
+  "passageText": "<div class=\"bg-gray-200 p-4 md:p-8 rounded border-2 border-gray-400 font-sans shadow-md relative text-gray-900\">\n  <!-- Header -->\n  <div class=\"text-center mb-6\">\n    <h2 class=\"text-xl md:text-2xl font-bold tracking-widest mb-1 text-gray-800\">テニス教室 生徒募集！</h2>\n    <p class=\"text-lg md:text-xl font-medium text-gray-700\">一緒にテニスをしませんか？</p>\n  </div>\n\n  <!-- Illustration (Tennis Emoji as placeholder) -->\n  <div class=\"absolute top-12 right-6 md:right-12 text-6xl md:text-8xl opacity-80\" style=\"transform: rotate(15deg);\">\n    🎾\n  </div>\n\n  <!-- Information Details -->\n  <div class=\"space-y-2 mb-8 text-sm md:text-base pr-20 md:pr-40 relative z-10 leading-relaxed\">\n    <div><span class=\"font-bold w-20 md:w-28 inline-block\"><ruby>対象<rt>たいしょう</rt></ruby></span><span>20<ruby>歳<rt>さい</rt></ruby>以上。A市<ruby>在住<rt>ざいじゅう</rt></ruby>・<ruby>在勤<rt>ざいきん</rt></ruby><span class=\"text-xs\">（注1）</span>・<ruby>在学<rt>ざいがく</rt></ruby><span class=\"text-xs\">（注2）</span></span></div>\n    <div><span class=\"font-bold w-20 md:w-28 inline-block\"><ruby>期間<rt>きかん</rt></ruby></span><span>4月〜7月（各コース全15回）</span></div>\n    <div><span class=\"font-bold w-20 md:w-28 inline-block\"><ruby>場所<rt>ばしょ</rt></ruby></span><span>さくらテニスコート</span></div>\n    <div><span class=\"font-bold w-20 md:w-28 inline-block\"><ruby>定員<rt>ていいん</rt></ruby></span><span>各クラス14人まで（定員になったらしめきり）</span></div>\n    <div><span class=\"font-bold w-20 md:w-28 inline-block\"><ruby>費用<rt>ひよう</rt></ruby></span><span>3,000円</span></div>\n    <div class=\"flex\">\n      <span class=\"font-bold w-20 md:w-28 flex-shrink-0\"><ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>み<ruby>方法<rt>ほうほう</rt></ruby></span>\n      <span><ruby>往復<rt>おうふく</rt></ruby>はがき（1人1枚）に希望するクラス名、曜日、時間、住所、名前、電話番号を書いて、2月15日(水)までに下記までお送りください。結果は返信はがきで、3月中旬頃までに発送します。</span>\n    </div>\n  </div>\n\n  <!-- Contact Info -->\n  <div class=\"mb-8 space-y-1 text-sm md:text-base relative z-10\">\n    <p><span class=\"font-bold w-28 inline-block\">はがきの<ruby>宛<rt>あ</rt></ruby>て<ruby>先<rt>さき</rt></ruby></span>〒101-2222 A市山田町2-2-2 さくらテニスクラブ</p>\n    <p><span class=\"font-bold w-28 inline-block flex items-center gap-1\"><ruby>問<rt>と</rt></ruby>い<ruby>合<rt>あ</rt></ruby>わせ<ruby>先<rt>さき</rt></ruby></span>☎ 033-111-2222</p>\n  </div>\n\n  <!-- Table Schedule -->\n  <div class=\"overflow-x-auto relative z-10\">\n    <table class=\"w-full border-collapse border border-gray-400 text-center text-sm md:text-base bg-gray-100\">\n      <thead>\n        <tr class=\"bg-gray-300\">\n          <th class=\"border border-gray-400 p-2\"></th>\n          <th class=\"border border-gray-400 p-2\">時間</th>\n          <th class=\"border border-gray-400 p-2\">月</th>\n          <th class=\"border border-gray-400 p-2\">火</th>\n          <th class=\"border border-gray-400 p-2\">水</th>\n          <th class=\"border border-gray-400 p-2\">木</th>\n          <th class=\"border border-gray-400 p-2\">金</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td class=\"border border-gray-400 p-2 bg-gray-200\">1</td>\n          <td class=\"border border-gray-400 p-2 bg-gray-200\">9:00-10:20</td>\n          <td class=\"border border-gray-400 p-2\"><ruby>初級<rt>しょきゅう</rt></ruby> a</td>\n          <td class=\"border border-gray-400 p-2\"><ruby>中上級<rt>ちゅうじょうきゅう</rt></ruby></td>\n          <td class=\"border border-gray-400 p-2\"></td>\n          <td class=\"border border-gray-400 p-2\"><ruby>初級<rt>しょきゅう</rt></ruby> e</td>\n          <td class=\"border border-gray-400 p-2\"><ruby>初級<rt>しょきゅう</rt></ruby> f</td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-400 p-2 bg-gray-200\">2</td>\n          <td class=\"border border-gray-400 p-2 bg-gray-200\">10:40-12:00</td>\n          <td class=\"border border-gray-400 p-2\"></td>\n          <td class=\"border border-gray-400 p-2\"><ruby>上級<rt>じょうきゅう</rt></ruby></td>\n          <td class=\"border border-gray-400 p-2\"><ruby>初中級<rt>しょちゅうきゅう</rt></ruby></td>\n          <td class=\"border border-gray-400 p-2\"></td>\n          <td class=\"border border-gray-400 p-2\"><ruby>上級<rt>じょうきゅう</rt></ruby></td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-400 p-2 bg-gray-200\">3</td>\n          <td class=\"border border-gray-400 p-2 bg-gray-200\">15:00-16:20</td>\n          <td class=\"border border-gray-400 p-2\"><ruby>中上級<rt>ちゅうじょうきゅう</rt></ruby></td>\n          <td class=\"border border-gray-400 p-2\"></td>\n          <td class=\"border border-gray-400 p-2\"></td>\n          <td class=\"border border-gray-400 p-2\"><ruby>初中級<rt>しょちゅうきゅう</rt></ruby></td>\n          <td class=\"border border-gray-400 p-2\"></td>\n        </tr>\n        <tr>\n          <td class=\"border border-gray-400 p-2 bg-gray-200\">4</td>\n          <td class=\"border border-gray-400 p-2 bg-gray-200\">17:00-18:20</td>\n          <td class=\"border border-gray-400 p-2\"><ruby>中級<rt>ちゅうきゅう</rt></ruby> b</td>\n          <td class=\"border border-gray-400 p-2\"><ruby>中級<rt>ちゅうきゅう</rt></ruby> c</td>\n          <td class=\"border border-gray-400 p-2\"><ruby>初級<rt>しょきゅう</rt></ruby> d</td>\n          <td class=\"border border-gray-400 p-2\"><ruby>上級<rt>じょうきゅう</rt></ruby></td>\n          <td class=\"border border-gray-400 p-2\"><ruby>中上級<rt>ちゅうじょうきゅう</rt></ruby> g</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>",
+  "questions": [
+    {
+      "id": "q22-1",
+      "questionNumber": "問 1",
+      "questionText": "ローラさんはテニスをしたことがないが、テニスを習いたいと思っている。月・水・木は9：30から16：00まで語学学校で勉強している。学校からテニスクラブは歩いて5分である。ローラさんがとることができるクラスはどれか。",
+      "options": [
+        "a と c",
+        "a と d",
+        "d と f",
+        "c と g"
+      ],
+      "correct": 3,
+      "correctOption": "d と f",
+      "explanation": "ローラさんは未経験者のため「初級」（a, d, e, f）から選びます。語学学校がある時間帯（月・水・木の9:30〜16:00）を避ける必要があります。a（月 9:00-10:20）とe（木 9:00-10:20）は重なります。d（水 17:00-18:20）は学校終了後で受講可能、f（金 9:00-10:20）は金曜に学校がないため受講可能です。したがって d と f の 3 が正解です。"
+    },
+    {
+      "id": "q22-2",
+      "questionNumber": "問 2",
+      "questionText": "申し込みについて、正しいものはどれか。",
+      "options": [
+        "A市に住んでいる人しか申し込めない。",
+        "2月15日までに往復はがきを送れば、必ず入会できる。",
+        "申し込み者が定員以上になった場合は、抽選で決められる。",
+        "兄弟で入りたい場合もそれぞれ往復はがきを送らなければならない。"
+      ],
+      "correct": 4,
+      "correctOption": "兄弟で入りたい場合もそれぞれ往復はがきを送らなければならない。",
+      "explanation": "本文に「往復はがき（1人1枚）」とあるため、兄弟で申し込む場合も1人1枚ずつ送る必要があります（4が正解）。1は「在勤・在学」も可のため誤り。2・3は「定員になったらしめきり（先着順）」のため誤りです。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "対象",
+      "reading": "たいしょう",
+      "meaning": "Applicable to, eligible participants"
+    },
+    {
+      "word": "在住",
+      "reading": "ざいじゅう",
+      "meaning": "Resident, living in"
+    },
+    {
+      "word": "期間",
+      "reading": "きかん",
+      "meaning": "Period, duration"
+    },
+    {
+      "word": "定員",
+      "reading": "ていいん",
+      "meaning": "Maximum number, capacity"
+    },
+    {
+      "word": "費用",
+      "reading": "ひよう",
+      "meaning": "Charge, fee, cost"
+    },
+    {
+      "word": "申し込み",
+      "reading": "もうしこみ",
+      "meaning": "Application, entry"
+    },
+    {
+      "word": "往復はがき",
+      "reading": "おうふくはがき",
+      "meaning": "Double postcard, reply-paid postcard"
+    },
+    {
+      "word": "返信はがき",
+      "reading": "へんしんはがき",
+      "meaning": "Return postcard"
+    },
+    {
+      "word": "発送する",
+      "reading": "はっそうする",
+      "meaning": "To send, dispatch"
+    },
+    {
+      "word": "宛て先",
+      "reading": "あてさき",
+      "meaning": "Addressee, destination address"
+    },
+    {
+      "word": "問い合わせ先",
+      "reading": "といあわせさき",
+      "meaning": "Contact information for inquiries"
+    }
+  ]
+}

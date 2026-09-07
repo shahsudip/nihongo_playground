@@ -1,0 +1,52 @@
+{
+  "bookId": "shinkanzen-master-n3-reading",
+  "chapterId": "mondai-32",
+  "part": 4,
+  "partTitle": "第4部：情報検索",
+  "partTitleEn": "Information Retrieval",
+  "mondaiNumber": 32,
+  "title": "第4部 問題32",
+  "mondaiHeader": "問題32　○×大学のサラさんは山田先生の研究室に月曜日に行く約束をしていたが、山田先生から下のようなメールが届いた。これを読んで、質問に答えなさい。答えは、１・２・３・４から最もよいものを一つえらびなさい。",
+  "passageText": "<div class=\"bg-gray-100 p-4 md:p-8 rounded border border-gray-400 font-sans shadow-md text-sm md:text-base leading-loose max-w-2xl mx-auto relative\">\n\n <!-- Email Headers -->\n <div class=\"mb-6 space-y-1 pb-4 border-b border-dashed border-gray-500\">\n <div class=\"flex\">\n <span class=\"font-bold w-20 tracking-widest\">あて先</span>\n <span>： 1234abc@lits.ac.jp</span>\n </div>\n <div class=\"flex\">\n <span class=\"font-bold w-20 tracking-widest\">件名</span>\n <span>： 月曜日の約束</span>\n </div>\n <div class=\"flex\">\n <span class=\"font-bold w-20 tracking-widest\">送信日時</span>\n <span>： 20XX年7月16日 13:16</span>\n </div>\n </div>\n\n <!-- Email Body -->\n <div class=\"space-y-4\">\n <p>サラさん</p>\n <p>こんにちは、山田です。</p>\n <p>来週の月曜日に研究室に来てくれるという約束でしたが、<br/>実は急に会議が入ってしまい、都合が悪くなってしまいました。</p>\n <p>申し訳ないけれど、日時を変更させてください。</p>\n <p>もし早いほうがよければ明日、17日の5:00以降、<br/>月曜日よりも後でよければ、水、木なら10時からOKです。</p>\n <p>サラさんの都合を教えてください。</p>\n </div>\n\n <div class=\"mt-8 border-t border-dashed border-gray-500 pt-4\">\n <p>○×大学 外国語学部</p>\n <p class=\"font-bold text-lg\">山田 はな</p>\n <p class=\"text-gray-600 \">e-mail： yamadahana@marubatsu.ac.jp</p>\n </div>\n\n <!-- Subtle Envelope Icon -->\n <div class=\"absolute top-4 right-4 text-4xl opacity-10\">✉️</div>\n</div>",
+  "passageLayout": "html",
+  "passageNotes": "",
+  "imageSrc": "/shinkanzen_pages/N3_page-0090.jpg",
+  "questions": [
+    {
+      "id": "q32-1",
+      "questionText": "問い このメールを読んだ後、サラさんは山田先生にどんなメールを出せばよいか。",
+      "options": [
+        "もう一度先生の都合を聞くメール",
+        "自分の都合を教えるメール",
+        "約束を延期したことをあやまるメール",
+        "都合が悪くなったことをあやまるメール"
+      ],
+      "correctOption": "自分の都合を教えるメール",
+      "correct": 2,
+      "explanation": "メールの最後に「サラさんの都合を教えてください。」と山田先生からお願いされているので、サラさんは自分の都合を返信します。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "都合",
+      "reading": "つごう",
+      "meaning": "Convenience, circumstances"
+    },
+    {
+      "word": "変更する",
+      "reading": "へんこうする",
+      "meaning": "To change, modify"
+    },
+    {
+      "word": "〜以降",
+      "reading": "〜いこう",
+      "meaning": "From ~ onwards, after ~"
+    },
+    {
+      "word": "延期する",
+      "reading": "えんきする",
+      "meaning": "To postpone, delay"
+    }
+  ],
+  "footnotes": []
+}

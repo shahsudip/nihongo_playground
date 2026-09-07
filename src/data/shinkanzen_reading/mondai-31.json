@@ -1,0 +1,74 @@
+{
+  "id": "mondai-31",
+  "bookId": "shinkanzen-master-n3-reading",
+  "chapterId": "mondai-31",
+  "part": 4,
+  "partTitle": "実戦問題",
+  "partTitleEn": "Practice Test",
+  "section": "1. 内容理解（短文）",
+  "genre": "指示文",
+  "genreEn": "Instruction texts",
+  "sectionHeader": {
+    "category": "内容理解（短文）",
+    "type": "指示文",
+    "typeEnglish": "Instruction texts"
+  },
+  "mondaiNumber": 31,
+  "title": "問題 31",
+  "instruction": "つぎの文章は手動発電式ライトの説明書である。本文を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "mondaiHeader": "問題31　つぎの文章は手動発電式ライトの説明書である。本文を読んで、質問に答えなさい。答えは、１・２・３・４から最もよいものを一つえらびなさい。",
+  "passageLayout": "html",
+  "imageSrc": "/shinkanzen_pages/N3_page-0096.jpg",
+  "passageText": "<div class=\"space-y-4\">\n  <div class=\"p-5 sm:p-7 bg-white text-gray-900 rounded-xl border-2 border-gray-800 shadow-md relative overflow-hidden font-sans\">\n    <div class=\"mb-5\">\n      <h3 class=\"font-black text-base sm:text-lg text-gray-900 border-b-2 border-gray-800 pb-1 mb-2.5\">使用方法</h3>\n      <ol class=\"space-y-1.5 text-[14px] sm:text-[15px] leading-relaxed text-gray-900 pl-1\">\n        <li>① <ruby>右側<rt>みぎがわ</rt></ruby>のハンドルを<ruby>引<rt>ひ</rt></ruby>き<ruby>出<rt>だ</rt></ruby>します。</li>\n        <li>② ハンドルを<ruby>矢印<rt>やじるし</rt></ruby>の<ruby>方向<rt>ほうこう</rt></ruby>にくり<ruby>返<rt>かえ</rt></ruby>し<ruby>回<rt>まわ</rt></ruby>すことで、<ruby>発電<rt>はつでん</rt></ruby>ができます。1分間の発電で、<ruby>約<rt>やく</rt></ruby>10分の使用が<ruby>可能<rt>かのう</rt></ruby>です。</li>\n        <li>③ ライトスイッチを押すと、ライトがつきます。</li>\n        <li>④ ライトスイッチを押してから、白いボタンを押すと、ライトを<ruby>点滅<rt>てんめつ</rt></ruby><sup>（注1）</sup>させることができます。</li>\n      </ol>\n    </div>\n    <div class=\"pr-20 sm:pr-28\">\n      <h3 class=\"font-black text-base sm:text-lg text-gray-900 border-b-2 border-gray-800 pb-1 mb-2.5\">使用上の注意</h3>\n      <ul class=\"space-y-1.5 text-[14px] sm:text-[15px] leading-relaxed text-gray-900 pl-1 list-disc list-inside\">\n        <li><ruby>長時間<rt>ちょうじかん</rt></ruby>ご使用の場合、ライトが<ruby>暗<rt>くら</rt></ruby>くなることがあります。<br/><span class=\"ml-5 inline-block\">暗くなりましたら、発電用ハンドルを回してください。</span></li>\n        <li><ruby>故障<rt>こしょう</rt></ruby>の<ruby>原因<rt>げんいん</rt></ruby>となりますので、中を開けて<ruby>分解<rt>ぶんかい</rt></ruby>しないでください。</li>\n        <li><ruby>本製品<rt>ほんせいひん</rt></ruby>は<ruby>防水性<rt>ぼうすいせい</rt></ruby>ではありませんので、ぬらさないでください。</li>\n      </ul>\n    </div>\n    <div class=\"absolute bottom-3 right-3 sm:bottom-5 sm:right-5 pointer-events-none select-none opacity-95\">\n      <svg viewBox=\"0 0 160 100\" class=\"w-24 h-16 sm:w-28 sm:h-18\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M 30 50 Q 20 25 35 15 Q 45 15 42 28\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n        <circle cx=\"42\" cy=\"28\" r=\"4\" fill=\"#475569\" stroke=\"#1e293b\" stroke-width=\"2\"/>\n        <rect x=\"35\" y=\"30\" width=\"70\" height=\"40\" rx=\"12\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2.5\"/>\n        <path d=\"M 45 30 L 45 70 M 55 30 L 55 70\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/>\n        <path d=\"M 105 32 L 125 22 L 125 78 L 105 68 Z\" fill=\"#e2e8f0\" stroke=\"#0f172a\" stroke-width=\"2.5\"/>\n        <ellipse cx=\"125\" cy=\"50\" rx=\"4\" ry=\"28\" fill=\"#cbd5e1\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n        <rect x=\"65\" y=\"24\" width=\"14\" height=\"6\" rx=\"2\" fill=\"#ef4444\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n        <rect x=\"83\" y=\"24\" width=\"10\" height=\"6\" rx=\"2\" fill=\"#ffffff\" stroke=\"#0f172a\" stroke-width=\"1.5\"/>\n        <line x1=\"135\" y1=\"40\" x2=\"155\" y2=\"30\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n        <line x1=\"138\" y1=\"50\" x2=\"160\" y2=\"50\" stroke=\"#f59e0b\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n        <line x1=\"135\" y1=\"60\" x2=\"155\" y2=\"70\" stroke=\"#f59e0b\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n      </svg>\n    </div>\n  </div>\n</div>",
+  "passageNotes": "<div class=\"text-xs text-gray-700 space-y-1 font-sans\"><p><strong>（注1）点滅：</strong>ライトがついたり消えたりすること</p></div>",
+  "footnotes": [
+    {
+      "term": "（注1）点滅（てんめつ）",
+      "definition": "ライトがついたり消えたりすること"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "引き出す",
+      "reading": "ひきだす",
+      "meaning": "To draw out, pull out"
+    },
+    {
+      "word": "発電",
+      "reading": "はつでん",
+      "meaning": "To generate power/electricity"
+    },
+    {
+      "word": "〜が可能だ",
+      "reading": "〜がかのうだ",
+      "meaning": "It is possible to 〜"
+    },
+    {
+      "word": "〜上",
+      "reading": "〜じょう",
+      "meaning": "In terms of 〜, concerning 〜"
+    },
+    {
+      "word": "分解する",
+      "reading": "ぶんかいする",
+      "meaning": "To disassemble, take apart"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "questionNumber": "問い",
+      "question": "本文の内容と合っているものはどれか。",
+      "questionText": "本文の内容と合っているものはどれか。",
+      "options": [
+        "ライトがつかなくなったら、電池を取り替えればよい。",
+        "ライトが暗くなったら、ハンドルを回して発電すればよい。",
+        "ライトスイッチを押せば、ライトを点滅させることができる。",
+        "長時間使うとライトが暗くなるので、短い時間だけ使うようにする。"
+      ],
+      "correct": 2,
+      "correctOption": "ライトが暗くなったら、ハンドルを回して発電すればよい。",
+      "explanation": "「使用上の注意」に「暗くなりましたら、発電用ハンドルを回してください」と明記されているため、2 が正解です。"
+    }
+  ]
+}

@@ -8,9 +8,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 * * * *"
-  push:
-    branches:
-      - main  # Runs when you push to main branch
 
 jobs:
   scrape:

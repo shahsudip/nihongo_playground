@@ -1,0 +1,102 @@
+{
+  "id": "mondai-59",
+  "chapterId": "mondai-59",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 4,
+  "mondaiNumber": 59,
+  "partTitle": "実戦問題",
+  "partTitleEn": "Practice Test",
+  "section": "4. 情報検索",
+  "genre": "保証書",
+  "genreEn": "Warranties",
+  "sectionHeader": {
+    "category": "情報検索",
+    "type": "保証書",
+    "typeEnglish": "Warranties"
+  },
+  "title": "問題 59",
+  "instruction": "右のページの文章は保証書（注1）である。下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "mondaiHeader": "問題59 右のページの文章は保証書（注1）である。下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "passageText": "<div class=\"max-w-2xl mx-auto font-sans text-gray-900 leading-relaxed text-sm md:text-base\">\n  <div class=\"mb-4 leading-relaxed\">\n    メイさんはテニスのラケットを買いにお店に行った。買った時、お店の人から、ラケットと一緒に右の保証書をもらった。\n  </div>\n  <div class=\"border-2 border-gray-800 p-6 bg-white shadow-sm space-y-4\">\n    <div class=\"text-center font-bold text-lg border-b-2 border-gray-800 pb-2 tracking-widest\">\n      保証書\n    </div>\n    <table class=\"w-full text-xs md:text-sm border-collapse border border-gray-400 mb-4\">\n      <tbody>\n        <tr class=\"border-b border-gray-300\">\n          <td class=\"border-r border-gray-300 p-2.5 font-bold bg-gray-100 w-1/3\">ご購入<sup>（注2）</sup>日</td>\n          <td class=\"p-2.5\">2014年 5月 1日</td>\n        </tr>\n        <tr class=\"border-b border-gray-300\">\n          <td class=\"border-r border-gray-300 p-2.5 font-bold bg-gray-100\">メーカー</td>\n          <td class=\"p-2.5\">プレンセス</td>\n        </tr>\n        <tr class=\"border-b border-gray-300\">\n          <td class=\"border-r border-gray-300 p-2.5 font-bold bg-gray-100\">ラケット名</td>\n          <td class=\"p-2.5\">ショッド35</td>\n        </tr>\n        <tr>\n          <td class=\"border-r border-gray-300 p-2.5 font-bold bg-gray-100\">カラー</td>\n          <td class=\"p-2.5\">青</td>\n        </tr>\n      </tbody>\n    </table>\n    <div class=\"space-y-3 text-xs md:text-sm leading-relaxed\">\n      <div>\n        <div class=\"font-bold mb-1\">1. 普通の使用状態において破損<sup>（注3）</sup>などがあった場合は、お買い上げ日から下に書いてある期限（保証期間）の間、無料で修理または交換します。</div>\n        <div class=\"pl-3 space-y-0.5 text-gray-800\">\n          <div>・ピンポンラケット：お買い上げの日から6か月。ただし子ども用は1年間。</div>\n          <div>・バドミントンラケット：お買い上げの日から3か月、ただし子ども用は半年。</div>\n          <div>・テニスラケット：お買い上げの日から9か月。</div>\n        </div>\n        <div class=\"mt-1 text-gray-600 pl-1\">＊日本国内でお買い上げのお客様に限ります。</div>\n      </div>\n      <div>\n        <div class=\"font-bold mb-1\">2. 次の場合は保証期間中でも修理または交換ができません。</div>\n        <div class=\"pl-3 space-y-1 text-gray-800\">\n          <div>・火災、地震、水害<sup>（注4）</sup>などによる破損。</div>\n          <div>・次のような使用方法による破損。（ラケットの上に重い物をのせる。ラケットを投げたり物をたたいたりする。ボールや羽根を打つこと以外に使用するなど）</div>\n          <div>・次のような状態で置いておいたことによる破損。（日光の当たるところや、湿気の多いところに長時間置くなど）</div>\n        </div>\n      </div>\n      <div>\n        <div class=\"font-bold\">3. 保証書をなくした場合は、修理または交換できないことがあります。</div>\n      </div>\n    </div>\n    <div class=\"pt-4 border-t border-gray-300 flex justify-between items-center text-xs md:text-sm\">\n      <div class=\"space-y-0.5\">\n        <div class=\"font-bold text-sm\">ラケットショップ ふじ</div>\n        <div>東京都○○市××町1−2−3</div>\n        <div>Tel：03-8888-7777</div>\n      </div>\n      <div class=\"border-2 border-gray-800 p-2 font-bold text-center leading-tight text-xs tracking-wider\">\n        ラケット<br>ショップ<br>ふじ\n      </div>\n    </div>\n  </div>\n</div>",
+  "passageLayout": "html",
+  "footnotes": [
+    {
+      "term": "（注1）保証書（ほしょうしょ）",
+      "definition": "買った品物に問題があったら、修理したり、新しいものにとりかえると書いてある紙"
+    },
+    {
+      "term": "（注2）購入（こうにゅう）",
+      "definition": "買うこと"
+    },
+    {
+      "term": "（注3）破損（はそん）",
+      "definition": "こわれたり傷ついたりすること"
+    },
+    {
+      "term": "（注4）水害（すいがい）",
+      "definition": "洪水や高波によって被害を受けること"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "メーカー",
+      "reading": "メーカー",
+      "meaning": "Manufacturer, maker"
+    },
+    {
+      "word": "お買い上げ日",
+      "reading": "おかいあげび",
+      "meaning": "Date of purchase"
+    },
+    {
+      "word": "無料",
+      "reading": "むりょう",
+      "meaning": "Free of charge"
+    },
+    {
+      "word": "修理する",
+      "reading": "しゅうりする",
+      "meaning": "To repair, fix"
+    },
+    {
+      "word": "交換する",
+      "reading": "こうかんする",
+      "meaning": "To exchange, replace"
+    },
+    {
+      "word": "限る",
+      "reading": "かぎる",
+      "meaning": "To limit, restrict"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "questionNumber": "問 1",
+      "questionText": "メイさんのラケットの保証期間はいつまでか。",
+      "options": [
+        "2014年7月31日",
+        "2014年10月30日",
+        "2015年1月31日",
+        "2015年5月31日"
+      ],
+      "correct": 3,
+      "correctOption": "2015年1月31日",
+      "explanation": "メイさんが買ったのは「テニスのラケット」で、購入日は「2014年5月1日」です。1の規定で「テニスラケット：お買い上げの日から9か月」とあるため、2014年5月1日から9か月後は「2015年1月31日」となります。正解は3です。"
+    },
+    {
+      "id": "q2",
+      "questionNumber": "問 2",
+      "questionText": "保証期間中に以下のことをしたら、ラケットがこわれた。保証してもらえるのはどれか。",
+      "options": [
+        "シャワールームに2日間置いてしまった。",
+        "テニスコートに忘れたら、その後大雨が降って、ぬれてしまった。",
+        "友達がラケットの上に座ってしまった。",
+        "暑い中8時間ボールを打ち続けた。"
+      ],
+      "correct": 4,
+      "correctOption": "暑い中8時間ボールを打ち続けた。",
+      "explanation": "1は「湿気の多いところに長時間置く」、2は「水害（水濡れ）」、3は「ラケットの上に重い物をのせる」に該当し保証対象外です。4は「ボールや羽根を打つこと」という通常の使用範囲内であるため、保証の対象となります。正解は4です。"
+    }
+  ]
+}

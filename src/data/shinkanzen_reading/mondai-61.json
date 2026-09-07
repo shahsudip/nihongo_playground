@@ -1,0 +1,110 @@
+{
+  "id": "mondai-61",
+  "chapterId": "mondai-61",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 4,
+  "mondaiNumber": 61,
+  "partTitle": "実戦問題",
+  "partTitleEn": "Practice Test",
+  "section": "4. 情報検索",
+  "genre": "メール",
+  "genreEn": "E-mail",
+  "sectionHeader": {
+    "category": "情報検索",
+    "type": "メール",
+    "typeEnglish": "E-mail"
+  },
+  "title": "問題 61",
+  "instruction": "つぎの文章と右のページのメールを見て、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "mondaiHeader": "問題61 つぎの文章と右のページのメールを見て、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "passageText": "<div class=\"border-2 border-gray-800 p-6 max-w-2xl mx-auto font-sans bg-white text-gray-900 shadow-sm leading-relaxed text-sm md:text-base\">\n  <div class=\"flex justify-between items-baseline mb-3 font-semibold\">\n    <div>（株）△△社　会社説明会　予約完了メール</div>\n    <div class=\"text-xs md:text-sm text-gray-700\">【開催日時】 20xx年12月1日 13:00〜14:30</div>\n  </div>\n  <div class=\"mb-4 font-bold\">\n    ウェン・モーリー 様\n  </div>\n  <div class=\"mb-4 leading-relaxed\">\n    株式会社△△社、採用担当です。このたびは、説明会にお申し込みいただきありがとうございました。日時や持ち物をもう一度ご確認いただき、ご参加くださいますよう、お願いいたします。\n  </div>\n  <div class=\"mb-4\">\n    「会社説明会」\n  </div>\n  <div class=\"space-y-3 mb-6 pl-1\">\n    <div>\n      ● 持ち物<br>\n      　・筆記用具<br>\n      　・履歴書（写真をはってください。）<br>\n      　・この予約完了メールをプリントアウトしたもの\n    </div>\n    <div>\n      ● 服装<br>\n      　スーツ\n    </div>\n    <div>\n      ● 会場<br>\n      　△△社本社　〒111-2222　東京都○○市□□2-3-4　（株）△△社第一ビル\n    </div>\n    <div>\n      ● 交通機関<br>\n      　JR中央線・総武線、東京メトロ東西線「○×駅」徒歩10分\n    </div>\n    <div>\n      ● 受付場所<br>\n      　ビル1階の（株）△△社本社受付\n    </div>\n    <div>\n      ● 受付開始時間<br>\n      　開始時間の10分前〜<br>\n      　＊早くご来社いただいてもご案内ができません。<br>\n      　　また、開始時刻を過ぎてからの参加はできません。\n    </div>\n  </div>\n  <div class=\"border-t border-gray-300 pt-4 space-y-2 text-sm leading-relaxed\">\n    <div class=\"font-semibold\">＜注意事項＞</div>\n    <div>＊当日は時間厳守でお願いいたします。</div>\n    <div>＊前日までに参加日の変更がある場合は、当社ホームページの採用案内ページからキャンセルの手続きをして、あらためて申し込みをしてください。</div>\n    <div>＊当日の遅刻や欠席は直接当社にご連絡ください。（採用担当：03-4567-8901）</div>\n  </div>\n  <div class=\"mt-6 pt-4 border-t border-gray-200 text-sm\">\n    <div>株式会社△△社　採用担当</div>\n    <div>Mail: saiyo@△△.ne.jp</div>\n  </div>\n</div>",
+  "passageLayout": "html",
+  "footnotes": [],
+  "vocabulary": [
+    {
+      "word": "添付ファイル",
+      "reading": "てんぷファイル",
+      "meaning": "Attached file"
+    },
+    {
+      "word": "採用",
+      "reading": "さいよう",
+      "meaning": "Recruitment, hiring"
+    },
+    {
+      "word": "履歴書",
+      "reading": "りれきしょ",
+      "meaning": "Resume, CV"
+    },
+    {
+      "word": "徒歩",
+      "reading": "とほ",
+      "meaning": "On foot, walking"
+    },
+    {
+      "word": "時間厳守",
+      "reading": "じかんげんしゅ",
+      "meaning": "Punctuality, strictly on time"
+    },
+    {
+      "word": "キャンセル",
+      "reading": "キャンセル",
+      "meaning": "Cancellation"
+    },
+    {
+      "word": "株式会社",
+      "reading": "かぶしきがいしゃ",
+      "meaning": "Co., Ltd., corporation"
+    },
+    {
+      "word": "筆記用具",
+      "reading": "ひっきようぐ",
+      "meaning": "Writing utensils"
+    },
+    {
+      "word": "プリントアウト",
+      "reading": "プリントアウト",
+      "meaning": "Printout"
+    },
+    {
+      "word": "来社する",
+      "reading": "らいしゃする",
+      "meaning": "To visit the company"
+    },
+    {
+      "word": "当社",
+      "reading": "とうしゃ",
+      "meaning": "Our company"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "questionNumber": "問 1",
+      "questionText": "説明会に行く際、○×駅に何時に着くのが一番よいか。",
+      "options": [
+        "12時35分",
+        "12時50分",
+        "13時ちょうど",
+        "14時半"
+      ],
+      "correct": 1,
+      "correctOption": "12時35分",
+      "explanation": "開始は13:00で、受付開始は10分前（12:50）からです。駅から本社ビルまで徒歩10分かかるため、12:35〜12:40頃に駅に着けば12:45〜12:50に受付へ到着し、待たされることなくスムーズに入れます。"
+    },
+    {
+      "id": "q2",
+      "questionNumber": "問 2",
+      "questionText": "ウェンさんは説明会の日に具合が悪くなり開始の時間に行けなくなった。どうすればよいか。",
+      "options": [
+        "連絡はせず、参加もしない。",
+        "会社のホームページの採用案内ページからキャンセルをする。",
+        "連絡はせず、遅れて参加する。",
+        "会社の採用担当者に電話をする。"
+      ],
+      "correct": 4,
+      "correctOption": "会社の採用担当者に電話をする。",
+      "explanation": "注意事項に「当日の遅刻や欠席は直接当社にご連絡ください。(採用担当：03-4567-8901)」と明記されています。前日まではHPから可能ですが、当日は電話連絡が必要です。"
+    }
+  ]
+}

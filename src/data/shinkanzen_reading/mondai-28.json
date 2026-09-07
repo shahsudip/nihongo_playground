@@ -1,0 +1,76 @@
+{
+  "id": "mondai-28",
+  "chapterId": "mondai-28",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 3,
+  "partTitle": "第3部：情報検索",
+  "partTitleEn": "Information Retrieval",
+  "mondaiNumber": 28,
+  "title": "問題 28",
+  "genre": {
+    "number": "8",
+    "japanese": "メール（ビジネス）",
+    "english": "E-mail (business)"
+  },
+  "sectionHeader": {
+    "number": "8",
+    "japanese": "メール（ビジネス）",
+    "english": "E-mail (business)"
+  },
+  "preReading": "インターネットで買い物をしますか。",
+  "preReadingPrompt": "インターネットで買い物をしますか。",
+  "mondaiHeader": "問題28　ソウさんは友人の中村花子さんの誕生日にチョコレートを贈ろうと思い、インターネットで注文した。その後、右のページのメールを受け取った。これを読んで下の質問に答えなさい。答えは、１・２・３・４から最もよいものを一つえらびなさい。",
+  "passageLayout": "html",
+  "passageNotes": "",
+  "footnotes": [],
+  "imageSrc": "/shinkanzen_pages/N3_page-0088.jpg",
+  "passageText": "<div class=\"border border-gray-400 p-6 bg-white text-sm font-sans text-gray-800 leading-relaxed shadow-sm max-w-3xl mx-auto\">\n  <div class=\"mb-6 space-y-1\">\n    <div class=\"flex\"><span class=\"w-20 font-semibold\"><ruby>差出人<rt>さしだしにん</rt></ruby>：</span><span>○×ショップ [xxx@marubatsu.co.jp]</span></div>\n    <div class=\"flex\"><span class=\"w-20 font-semibold\"><ruby>宛先<rt>あてさき</rt></ruby>：</span><span>1234@OOOO.ne.jp</span></div>\n    <div class=\"flex\"><span class=\"w-20 font-semibold\"><ruby>件名<rt>けんめい</rt></ruby>：</span><span>ご<ruby>注文内容<rt>ちゅうもんないよう</rt></ruby>の<ruby>確認<rt>かくにん</rt></ruby></span></div>\n  </div>\n\n  <div class=\"mb-6\">\n    <span class=\"text-lg font-bold tracking-wider\">ソウ シューイー <ruby>様<rt>さま</rt></ruby></span>\n    <span class=\"ml-4 text-xs text-gray-600\">（お<ruby>客様番号<rt>きゃくさまばんごう</rt></ruby>：123456）</span>\n  </div>\n\n  <p class=\"mb-6\">\n    このたびは○×ショップをご<ruby>利用<rt>りよう</rt></ruby>いただき、<ruby>誠<rt>まこと</rt></ruby>にありがとうございます。<br>\n    お<ruby>申込<rt>もうしこ</rt></ruby>みの<ruby>受付手続<rt>うけつけてつづ</rt></ruby>きが<ruby>完了<rt>かんりょう</rt></ruby>いたしましたので、お<ruby>知<rt>し</rt></ruby>らせ<ruby>致<rt>いた</rt></ruby>します。<br>\n    <ruby>下記<rt>かき</rt></ruby>のご<ruby>注文内容<rt>ちゅうもんないよう</rt></ruby>をご<ruby>確認<rt>かくにん</rt></ruby>ください。\n  </p>\n\n  <div class=\"border-t border-b border-gray-400 py-4 mb-6 bg-gray-50 px-4 space-y-2\">\n    <div class=\"flex\"><span class=\"w-32\">[ご<ruby>注文番号<rt>ちゅうもんばんごう</rt></ruby>]</span><span>1234-5678</span></div>\n    <div class=\"flex\"><span class=\"w-32\">[ご<ruby>注文日<rt>ちゅうもんび</rt></ruby>]</span><span>20XX－07－16　10:34:19</span></div>\n    <div class=\"flex\"><span class=\"w-32\">[<ruby>商品番号<rt>しょうひんばんごう</rt></ruby>]</span><span>900-800-700</span></div>\n    <div class=\"flex\"><span class=\"w-32\">[<ruby>商品名<rt>しょうひんめい</rt></ruby>]</span><span>“チョコレート　セットA”　　<ruby>価格<rt>かかく</rt></ruby>：2,900円</span></div>\n    <div class=\"flex\"><span class=\"w-32\">[<ruby>小計<rt>しょうけい</rt></ruby>]</span><span>2,900円</span></div>\n    <div class=\"flex\"><span class=\"w-32\">[お<ruby>支払方法<rt>しはらいほうほう</rt></ruby>]</span><span>コンビニ<ruby>払<rt>ばら</rt></ruby>い</span></div>\n\n    <div class=\"mt-6 flex justify-end\">\n      <table class=\"text-right w-64 text-sm border-separate\" style=\"border-spacing: 0 0.5rem;\">\n        <tr><td class=\"pr-6\"><ruby>商品金額<rt>しょうひんきんがく</rt></ruby>：</td><td>2,900円</td></tr>\n        <tr><td class=\"pr-6\"><ruby>送料<rt>そうりょう</rt></ruby>：</td><td>600円</td></tr>\n        <tr class=\"font-bold\"><td class=\"pr-6 border-t border-gray-400 pt-2\">ご<ruby>請求金額<rt>せいきゅうきんがく</rt></ruby>：</td><td class=\"border-t border-gray-400 pt-2\">3,500円</td></tr>\n      </table>\n    </div>\n  </div>\n\n  <div class=\"mb-6 space-y-4\">\n    <div class=\"flex\">\n      <span class=\"w-32 font-semibold\">[お<ruby>届<rt>とど</rt></ruby>け<ruby>先<rt>さき</rt></ruby>]</span>\n      <div>\n        <div class=\"font-bold mb-1\"><ruby>中村花子<rt>なかむらはなこ</rt></ruby> <ruby>様<rt>さま</rt></ruby></div>\n        <div>〒XXX-XXXX　<ruby>東京都<rt>とうきょうと</rt></ruby>○○<ruby>市<rt>し</rt></ruby>　X-X-X　　TEL　XX-XXXX-XXXX</div>\n      </div>\n    </div>\n    <div class=\"flex\">\n      <span class=\"w-32 font-semibold\">[お<ruby>届<rt>とど</rt></ruby>け<ruby>予定<rt>よてい</rt></ruby>]</span>\n      <span>20XX年08月01日ごろ　　9時～14時</span>\n    </div>\n  </div>\n\n  <div class=\"text-xs text-gray-700 space-y-2 mb-8 border-t border-gray-400 pt-6\">\n    <p>※ご<ruby>注文<rt>ちゅうもん</rt></ruby>の<ruby>配送状況<rt>はいそうじょうきょう</rt></ruby>は<ruby>右<rt>みぎ</rt></ruby>の（お<ruby>客様情報<rt>きゃくさまじょうほう</rt></ruby>）からご<ruby>確認<rt>かくにん</rt></ruby>いただけます。</p>\n    <p>※このメールは<ruby>送信専用<rt>そうしんせんよう</rt></ruby>アドレスより<ruby>自動的<rt>じどうてき</rt></ruby>に<ruby>送信<rt>そうしん</rt></ruby>されています。ご<ruby>返信<rt>へんしん</rt></ruby>いただいてもお<ruby>答<rt>こた</rt></ruby>えできません。</p>\n    <p>※ご<ruby>注文内容<rt>ちゅうもんないよう</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>・<ruby>変更<rt>へんこう</rt></ruby>する<ruby>場合<rt>ばあい</rt></ruby>は、○×ショップのホームページ（http://www.marubatsu.co.jp）の<ruby>右上<rt>みぎうえ</rt></ruby>にある「アカウントサービス」をクリックしてください。</p>\n  </div>\n\n  <div class=\"mt-8 text-sm\">\n    <p class=\"mb-2\">またのご<ruby>利用<rt>りよう</rt></ruby>を<ruby>心<rt>こころ</rt></ruby>よりお待ちしております。</p>\n    <p class=\"font-bold\">(<ruby>株<rt>かぶ</rt></ruby>)○×ショップ　　　　http://www.marubatsu.co.jp</p>\n    <p>〒XXX-XXXX　<ruby>東京都<rt>とうきょうと</rt></ruby>○○<ruby>市<rt>し</rt></ruby>××　1－1－1</p>\n  </div>\n</div>",
+  "questions": [
+    {
+      "id": "q28-1",
+      "questionNumber": "問 1",
+      "questionText": "品物が中村さんの家に届けられたかどうかを知りたいが、どうしたらよいか。",
+      "options": [
+        "8月1日ごろに届くことはわかるが、それ以上は調べられない。",
+        "このメールに返信をして、いつ届くかを問い合わせる。",
+        "○×ショップのホームページへ行き、調べる。",
+        "このメールの画面の「お客様情報」の部分をクリックして調べる。"
+      ],
+      "correct": 4,
+      "correctOption": "このメールの画面の「お客様情報」の部分をクリックして調べる。",
+      "explanation": "メール本文の注記に「※ご注文の配送状況は右の（お客様情報）からご確認いただけます」と記載されているため、4 が正解です。1は調べられるため誤り。2は「※このメールは送信専用アドレスより自動的に送信されています。ご返信いただいてもお答えできません」とあるため誤り。3は「ご注文内容を確認・変更する場合」の説明であり配送状況の確認ではないため誤りです。"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "コンビニ払い",
+      "reading": "コンビニばらい",
+      "meaning": "Payment at convenience store"
+    },
+    {
+      "word": "配送状況",
+      "reading": "はいそうじょうきょう",
+      "meaning": "Delivery status"
+    },
+    {
+      "word": "お客様情報",
+      "reading": "おきゃくさまじょうほう",
+      "meaning": "Customer information"
+    },
+    {
+      "word": "ホームページ",
+      "reading": "",
+      "meaning": "Website, homepage"
+    },
+    {
+      "word": "アカウントサービス",
+      "reading": "",
+      "meaning": "Account services"
+    },
+    {
+      "word": "クリックする",
+      "reading": "",
+      "meaning": "To click"
+    }
+  ]
+}

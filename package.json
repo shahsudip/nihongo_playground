@@ -11,6 +11,8 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
+    "verify:shinkanzen": "node scripts/verify_all_shinkanzen.cjs",
+    "sync:shinkanzen": "node scripts/sync_shinkanzen_to_firestore.cjs",
     "sync-tests": "node sync_tests.js"
   },
   "dependencies": {

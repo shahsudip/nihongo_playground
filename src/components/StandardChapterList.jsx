@@ -43,29 +43,91 @@ const StandardChapterList = ({ book, chapters, history }) => {
     return title;
   };
 
-  const weekGroups = groupByWeek(chapters);
+  // For Shinkanzen Master N3 Reading, show 4 Part cards linking to the digital book viewer
+  if (book.id === 'shinkanzen-master-n3-reading') {
+    const parts = [
+      { num: 1, title: '第1部：基礎力をつけよう', titleEn: 'Building Basic Competence', firstMondai: 'part-1', mondaiCount: 13 },
+      { num: 2, title: '第2部：いろいろな文章を読もう', titleEn: 'Reading Various Text Types', firstMondai: 'mondai-14', mondaiCount: 7 },
+      { num: 3, title: '第3部：内容理解（長文）', titleEn: 'Long Passage Comprehension', firstMondai: 'mondai-21', mondaiCount: 8 },
+      { num: 4, title: '第4部：情報検索', titleEn: 'Information Retrieval', firstMondai: 'mondai-29', mondaiCount: 17 },
+    ];
 
-  if (weekGroups.length === 1 && weekGroups[0][0] === 'Other') {
     return (
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-        {chapters.map((chapter) => {
-          const userProgress = history[chapter.id];
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+        {parts.map((part) => (
+          <Link
+            key={part.num}
+            to={`/books/${book.id}/chapters/${part.firstMondai}`}
+            className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-xl p-5 hover:border-amber-500 hover:shadow-md transition-all flex flex-col justify-between"
+          >
+            <div>
+              <h3 className="text-lg font-bold text-[var(--color-text-primary)] mb-1">
+                {part.title}
+              </h3>
+              <p className="text-sm text-[var(--color-text-secondary)] mb-3">
+                {part.titleEn}
+              </p>
+            </div>
 
-          // Clean up titles for the UI (remove "第X部 " and "Part X: ")
-          const displayTitle = chapter.title?.replace(/^第\d+部\s*/, '') || '';
-          const displayDesc = chapter.description?.replace(/^Part \d+:\s*/i, '') || '';
+            <div>
+              <div className="flex justify-between text-xs text-[var(--color-text-secondary)] mb-1.5 font-medium">
+                <span>{part.mondaiCount} 問題</span>
+                <span>Part {part.num}</span>
+              </div>
+              <div className="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+                <div 
+                  className="bg-amber-600 h-full rounded-full transition-all duration-300"
+                  style={{ width: '0%' }}
+                />
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
+    );
+  }
 
-          return (
-            <Link
-              key={chapter.id}
-              to={book.id.startsWith('tango') ? `/tango-reading/${book.id}/chapters/${chapter.id}` : `/books/${book.id}/chapters/${chapter.id}`}
-              className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-2xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all flex flex-col justify-center items-center text-center h-full"
-            >
-              <h3 className="text-2xl font-bold text-[var(--color-text-primary)] mb-3">{displayTitle}</h3>
-              <p className="text-[var(--color-text-secondary)] text-base font-medium">{displayDesc}</p>
-            </Link>
-          );
-        })}
+  // For Shinkanzen Master N3 Listening, show 5 Part cards
+  if (book.id === 'shinkanzen-master-n3-listening') {
+    const parts = [
+      { num: 1, title: '第1部：課題理解', titleEn: 'Task-Based Comprehension', firstMondai: 'mondai-1', count: 15 },
+      { num: 2, title: '第2部：ポイント理解', titleEn: 'Comprehension of Key Points', firstMondai: 'mondai-16', count: 15 },
+      { num: 3, title: '第3部：概要理解', titleEn: 'Comprehension of General Outline', firstMondai: 'mondai-31', count: 10 },
+      { num: 4, title: '第4部：発話表現・即時応答', titleEn: 'Verbal Expressions / Quick Response', firstMondai: 'mondai-41', count: 30 },
+      { num: 5, title: '模擬試験', titleEn: 'Mock Exam', firstMondai: 'mondai-71', count: 28 },
+    ];
+
+    return (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+        {parts.map((part) => (
+          <Link
+            key={part.num}
+            to={`/books/${book.id}/chapters/${part.firstMondai}`}
+            className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-xl p-5 hover:border-blue-500 hover:shadow-md transition-all flex flex-col justify-between"
+          >
+            <div>
+              <h3 className="text-lg font-bold text-[var(--color-text-primary)] mb-1">
+                {part.title}
+              </h3>
+              <p className="text-sm text-[var(--color-text-secondary)] mb-3">
+                {part.titleEn}
+              </p>
+            </div>
+
+            <div>
+              <div className="flex justify-between text-xs text-[var(--color-text-secondary)] mb-1.5 font-medium">
+                <span>{part.count} 問題</span>
+                <span>Part {part.num}</span>
+              </div>
+              <div className="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+                <div 
+                  className="bg-blue-600 h-full rounded-full transition-all duration-300"
+                  style={{ width: '0%' }}
+                />
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
     );
   }
@@ -81,9 +143,12 @@ const StandardChapterList = ({ book, chapters, history }) => {
       6: "Week 6: 長い文章・情報検索"
     };
 
+    // Filter out 'Other' group — only show proper Week cards
+    const filteredWeekGroups = weekGroups.filter(([weekName]) => weekName !== 'Other');
+
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-        {weekGroups.map(([weekName, weekData]) => {
+        {filteredWeekGroups.map(([weekName, weekData]) => {
           const weekNum = weekData.weekNum;
           const firstChapter = weekData.chapters[0];
           const targetChapterId = firstChapter ? firstChapter.id : `week${weekNum}-day1`;

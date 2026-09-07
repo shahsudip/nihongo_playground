@@ -1,0 +1,114 @@
+{
+  "id": "mondai-54",
+  "chapterId": "mondai-54",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 4,
+  "mondaiNumber": 54,
+  "partTitle": "実戦問題",
+  "partTitleEn": "Practice Test",
+  "section": "4. 情報検索",
+  "genre": "広告",
+  "genreEn": "Advertising",
+  "sectionHeader": {
+    "category": "情報検索",
+    "type": "広告",
+    "typeEnglish": "Advertising"
+  },
+  "title": "問題 54",
+  "instruction": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "passage": "<div class=\"max-w-xl mx-auto my-2 flex justify-center items-center bg-white p-2 rounded\">\n  <img src=\"/shinkanzen_pages/mondai_54_clean.png\" alt=\"アパート情報サイト マイハウスネット\" class=\"w-full max-w-[560px] h-auto object-contain\" />\n</div>",
+  "passageText": "<div class=\"max-w-xl mx-auto my-2 flex justify-center items-center bg-white p-2 rounded\">\n  <img src=\"/shinkanzen_pages/mondai_54_clean.png\" alt=\"アパート情報サイト マイハウスネット\" class=\"w-full max-w-[560px] h-auto object-contain\" />\n</div>",
+  "passageLayout": "html",
+  "footnotes": [
+    {
+      "term": "（注1）敷金（しききん）",
+      "definition": "アパートを契約するときに、保証金として大家さんに預けるお金"
+    },
+    {
+      "term": "（注2）礼金（れいきん）",
+      "definition": "アパートを契約するときに、お礼として大家さんに支払うお金"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "徒歩",
+      "reading": "とほ",
+      "meaning": "On foot, walking"
+    },
+    {
+      "word": "築",
+      "reading": "ちく",
+      "meaning": "Built in [years/year]"
+    },
+    {
+      "word": "家賃",
+      "reading": "やちん",
+      "meaning": "Apartment rent"
+    },
+    {
+      "word": "ワンルーム",
+      "reading": "ワンルーム",
+      "meaning": "Studio apartment, one-room"
+    },
+    {
+      "word": "〜向き",
+      "reading": "〜むき",
+      "meaning": "Facing ~"
+    },
+    {
+      "word": "契約",
+      "reading": "けいやく",
+      "meaning": "Contract, lease agreement"
+    },
+    {
+      "word": "玄関",
+      "reading": "げんかん",
+      "meaning": "Front entrance, foyer"
+    },
+    {
+      "word": "浴室",
+      "reading": "よくしつ",
+      "meaning": "Bathroom"
+    },
+    {
+      "word": "収納",
+      "reading": "しゅうのう",
+      "meaning": "Storage area, closet"
+    },
+    {
+      "word": "ベランダ",
+      "reading": "ベランダ",
+      "meaning": "Balcony, veranda"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "questionNumber": "問 1",
+      "questionText": "契約するときにいくら必要か。",
+      "options": [
+        "3万円",
+        "3万5千円",
+        "9万円",
+        "9万5千円"
+      ],
+      "correct": 3,
+      "correctOption": "9万円",
+      "explanation": "本文に「手数料無料！契約時には家賃1か月分と敷金・礼金各1か月分だけでOK！」と書かれています。\n家賃は30,000円、敷金1か月分（30,000円）、礼金1か月分（30,000円）なので、合計は 30,000 + 30,000 + 30,000 = 90,000円（9万円）となります。したがって正解は3（9万円）です。"
+    },
+    {
+      "id": "q2",
+      "questionNumber": "問 2",
+      "questionText": "このアパートの説明として本文の内容と合っているものはどれか。",
+      "options": [
+        "部屋は5階にある。",
+        "ベランダは南側にある。",
+        "犬を飼うことはできない。",
+        "部屋にお風呂がない。"
+      ],
+      "correct": 2,
+      "correctOption": "ベランダは南側にある。",
+      "explanation": "・1:「5階建ての2階」とあるので誤り。\n・2:「南向き」で間取り図の下側がベランダ（方角マークで上が北なので下は南）となっており正しい。\n・3:「ペットは相談可！」とあるので誤り。\n・4: 間取り図に「浴室」があるため誤り。\nしたがって正解は2（ベランダは南側にある）です。"
+    }
+  ]
+}

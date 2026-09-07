@@ -1,0 +1,434 @@
+{
+  "bookId": "shinkanzen-master-n3-reading",
+  "chapterId": "part-1",
+  "id": "part-1",
+  "part": 1,
+  "partTitle": "第1部：基礎力をつけよう",
+  "partTitleEn": "Building Basic Competence",
+  "mondaiNumber": 1,
+  "title": "第1部 基礎力をつけよう",
+  "type": "short-passage",
+  "description": "Mastering the basics",
+  "passages": [
+    {
+      "title": "第1部 問題1",
+      "mondaiHeader": "問題1 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+      "sectionHeader": {
+        "number": "1",
+        "japanese": "書き言葉に慣れよう",
+        "english": "Getting used to written style"
+      },
+      "passageText": "<ruby>私<rt>わたし</rt></ruby>たちは、いろいろな<ruby>場面<rt>ばめん</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わせて<ruby>服<rt>ふく</rt></ruby>を<ruby>着替<rt>きが</rt></ruby>える。たとえばふだんはTシャツにジーンズの<ruby>人<rt>ひと</rt></ruby>も、パーティーのときはスーツやきれいな<ruby>服<rt>ふく</rt></ruby>を<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">①</span><ruby>着<rt>き</rt></ruby>るのではないだろうか</span>。<ruby>言葉<rt>ことば</rt></ruby>も<ruby>同<rt>おな</rt></ruby>じで、それぞれの<ruby>場面<rt>ばめん</rt></ruby>などによって<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">②</span><ruby>使<rt>つか</rt></ruby>いわける</span>。\n<ruby>日本語<rt>にほんご</rt></ruby>にはさまざまな<ruby>文体<rt>ぶんたい</rt></ruby>があり、<ruby>友人<rt>ゆうじん</rt></ruby>とのおしゃべり、メール、レポート、ビジネスの<ruby>手紙<rt>てがみ</rt></ruby>などによって、ことばづかいや<ruby>文末<rt>ぶんまつ</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>を<ruby>変<rt>か</rt></ruby>えている。",
+      "footnotes": [],
+      "questions": [
+        {
+          "id": "q1-1",
+          "questionNumber": "問 1",
+          "questionText": "<ruby>問<rt>と</rt></ruby>い この<ruby>文章<rt>ぶんしょう</rt></ruby>で<ruby>言<rt>い</rt></ruby>いたいことは<ruby>何<rt>なに</rt></ruby>か。",
+          "options": [
+            "<ruby>日本語<rt>にほんご</rt></ruby>にはさまざまな<ruby>文体<rt>ぶんたい</rt></ruby>があり、<ruby>場面<rt>ばめん</rt></ruby>などによって<ruby>変<rt>か</rt></ruby>えている。",
+            "<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>話<rt>はな</rt></ruby>すときは、<ruby>服装<rt>ふくそう</rt></ruby>に<ruby>気<rt>き</rt></ruby>をつけたほうがいい。",
+            "パーティーのときは、スーツやきれいな<ruby>服<rt>ふく</rt></ruby>を<ruby>着<rt>き</rt></ruby>るべきだ。",
+            "メールやレポートを<ruby>書<rt>か</rt></ruby>くときは、<ruby>友人<rt>ゆうじん</rt></ruby>とのおしゃべりと<ruby>同<rt>おな</rt></ruby>じことばづかいでよい。"
+          ],
+          "correct": 1,
+          "correctOption": "<ruby>日本語<rt>にほんご</rt></ruby>にはさまざまな<ruby>文体<rt>ぶんたい</rt></ruby>があり、<ruby>場面<rt>ばめん</rt></ruby>などによって<ruby>変<rt>か</rt></ruby>えている。",
+          "explanation": "本文では服を着替えることの例を挙げながら、「言葉も同じで、それぞれの場面などによって使いわける」「日本語にはさまざまな文体があり、友人とのおしゃべり、メール、レポートなどによって形を変えている」と述べています。したがって、言いたいことは 1「日本語にはさまざまな文体があり、場面などによって変えている」です。"
+        }
+      ]
+    },
+    {
+      "title": "第1部 問題2",
+      "mondaiHeader": "問題2 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+      "sectionHeader": {
+        "number": "2",
+        "japanese": "報告書や案内を読む",
+        "english": "Reading reports and guides"
+      },
+      "passageText": "<ruby>留学生<rt>りゅうがくせい</rt></ruby>バスツアー<ruby>報告書<rt>ほうこくしょ</rt></ruby>\n\n<ruby>日時<rt>にちじ</rt></ruby>：10<ruby>月<rt>がつ</rt></ruby>10<ruby>日<rt>にち</rt></ruby>（<ruby>日<rt>にち</rt></ruby>）8:30〜18:00\n<ruby>行<rt>い</rt></ruby>き<ruby>先<rt>さき</rt></ruby>：ABC<ruby>牧場<rt>ぼくじょう</rt></ruby>、XYZ<ruby>陶芸<rt>とうげい</rt></ruby><ruby>村<rt>むら</rt></ruby>\n<ruby>参加者<rt>さんかしゃ</rt></ruby>：<ruby>留学生<rt>りゅうがくせい</rt></ruby>25<ruby>名<rt>めい</rt></ruby>、スタッフ4<ruby>名<rt>めい</rt></ruby>\n\nABC<ruby>牧場<rt>ぼくじょう</rt></ruby>では、バター<ruby>作<rt>づく</rt></ruby>りを<ruby>体験<rt>たいけん</rt></ruby>し、バーベキューの<ruby>昼食<rt>ちゅうしょく</rt></ruby>をとった。XYZ<ruby>陶芸<rt>とうげい</rt></ruby><ruby>村<rt>むら</rt></ruby>では、<ruby>皿<rt>さら</rt></ruby>やコップの<ruby>絵<rt>え</rt></ruby>づけを<ruby>体験<rt>たいけん</rt></ruby>した。<ruby>絵<rt>え</rt></ruby>づけした<ruby>作品<rt>さくひん</rt></ruby>は、<ruby>後日<rt>ごじつ</rt></ruby>、<ruby>大学<rt>だいがく</rt></ruby>で<ruby>引<rt>ひ</rt></ruby>き<ruby>取<rt>と</rt></ruby>り<span class=\"text-[0.75em] opacity-80 font-normal align-baseline\">(<ruby>注<rt>ちゅう</rt></ruby>1)</span>となる。<ruby>好天<rt>こうてん</rt></ruby>に<ruby>恵<rt>めぐ</rt></ruby>まれ、<ruby>予定<rt>よてい</rt></ruby>どおりのスケジュールで<ruby>進行<rt>しんこう</rt></ruby>でき、<ruby>留学生<rt>りゅうがくせい</rt></ruby>からも<ruby>好評<rt>こうひょう</rt></ruby>だった。ただし、「おみやげを<ruby>買<rt>か</rt></ruby>う<ruby>時間<rt>じかん</rt></ruby>がもっとほしかった」という<ruby>意見<rt>いけん</rt></ruby>もあったので、<ruby>次回<rt>じかい</rt></ruby>のツアーでは<ruby>自由<rt>じゆう</rt></ruby><ruby>時間<rt>じかん</rt></ruby>の<ruby>設定<rt>せってい</rt></ruby>を<ruby>検討<rt>けんとう</rt></ruby>したい。",
+      "footnotes": [
+        {
+          "term": "（注1）<ruby>引<rt>ひ</rt></ruby>き<ruby>取<rt>と</rt></ruby>り",
+          "definition": "いらなくなった<ruby>物<rt>もの</rt></ruby>やできた<ruby>物<rt>もの</rt></ruby>を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>ること"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q2-1",
+          "questionNumber": "問 1",
+          "questionText": "<ruby>問<rt>と</rt></ruby>い この<ruby>報告書<rt>ほうこくしょ</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>と<ruby>合<rt>あ</rt></ruby>っていないものはどれか。",
+          "options": [
+            "<ruby>留学生<rt>りゅうがくせい</rt></ruby>は<ruby>牧場<rt>ぼくじょう</rt></ruby>でバターを<ruby>作<rt>つく</rt></ruby>った。",
+            "<ruby>作<rt>つく</rt></ruby>った<ruby>皿<rt>さら</rt></ruby>やコップは、<ruby>後<rt>あと</rt></ruby>で<ruby>大学<rt>だいがく</rt></ruby>で<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>る。",
+            "<ruby>留学生<rt>りゅうがくせい</rt></ruby>が<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をする<ruby>時間<rt>じかん</rt></ruby>があった。",
+            "ツアーは<ruby>予定<rt>よてい</rt></ruby>どおりの<ruby>時間<rt>じかん</rt></ruby>で<ruby>進<rt>すす</rt></ruby>んだ。"
+          ],
+          "correct": 3,
+          "correctOption": "<ruby>留学生<rt>りゅうがくせい</rt></ruby>が<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をする<ruby>時間<rt>じかん</rt></ruby>があった。",
+          "explanation": "本文の最後に「『おみやげを買う時間がもっとほしかった』という意見もあったので、次回のツアーでは自由時間の設定を検討したい」とあり、留学生が買い物をする時間が十分になかったことが示されています。したがって、内容と合っていないものは 3 です。"
+        }
+      ]
+    },
+    {
+      "title": "第1部 問題3",
+      "mondaiHeader": "問題3 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+      "sectionHeader": {
+        "number": "3",
+        "japanese": "理由や原因をとらえる",
+        "english": "Grasping reasons and causes"
+      },
+      "passageText": "<ruby>日本<rt>にほん</rt></ruby>は<ruby>資源<rt>しげん</rt></ruby>が<ruby>少<rt>すく</rt></ruby>ない<ruby>国<rt>くに</rt></ruby>だ。<ruby>石油<rt>せきゆ</rt></ruby>や<ruby>石炭<rt>せきたん</rt></ruby>、<ruby>鉄鉱石<rt>てっこうせき</rt></ruby><span class=\"text-[0.75em] opacity-80 font-normal align-baseline\">(<ruby>注<rt>ちゅう</rt></ruby>1)</span>など、さまざまな<ruby>原料<rt>げんりょう</rt></ruby>のほとんどを<ruby>外国<rt>がいこく</rt></ruby>からの<ruby>輸入<rt>ゆにゅう</rt></ruby>に<ruby>頼<rt>たよ</rt></ruby>っている。それにもかかわらず、<ruby>日本<rt>にほん</rt></ruby>が<ruby>世界<rt>せかい</rt></ruby>の<ruby>経済<rt>けいざい</rt></ruby><ruby>大国<rt>たいこく</rt></ruby>になれたのはなぜだろうか。それは、<ruby>原料<rt>げんりょう</rt></ruby>を<ruby>輸入<rt>ゆにゅう</rt></ruby>して<ruby>優<rt>すぐ</rt></ruby>れた<ruby>工業<rt>こうぎょう</rt></ruby><ruby>製品<rt>せいひん</rt></ruby>を<ruby>作<rt>つく</rt></ruby>り、それを<ruby>輸出<rt>ゆしゅつ</rt></ruby>する「<ruby>加工<rt>かこう</rt></ruby><ruby>貿易<rt>ぼうえき</rt></ruby>」を<ruby>行<rt>おこな</rt></ruby>ってきたからである。そして、それを<ruby>支<rt>ささ</rt></ruby>えたのが、<ruby>高<rt>たか</rt></ruby>い<ruby>技術<rt>ぎじゅつ</rt></ruby><ruby>力<rt>りょく</rt></ruby>と<ruby>日本<rt>にほん</rt></ruby><ruby>人<rt>じん</rt></ruby>のまじめな<ruby>勤勉<rt>きんべん</rt></ruby>さであった。",
+      "footnotes": [
+        {
+          "term": "（注1）<ruby>鉄鉱石<rt>てっこうせき</rt></ruby>",
+          "definition": "<ruby>鉄<rt>てつ</rt></ruby>の<ruby>原料<rt>げんりょう</rt></ruby>となる<ruby>石<rt>いし</rt></ruby>"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q3-1",
+          "questionNumber": "問 1",
+          "questionText": "<ruby>問<rt>と</rt></ruby>い <ruby>日本<rt>にほん</rt></ruby>が<ruby>経済<rt>けいざい</rt></ruby><ruby>大国<rt>たいこく</rt></ruby>になれた<ruby>理由<rt>りゆう</rt></ruby>として、<ruby>文章<rt>ぶんしょう</rt></ruby>で<ruby>挙<rt>あ</rt></ruby>げられていないものはどれか。",
+          "options": [
+            "<ruby>原料<rt>げんりょう</rt></ruby>を<ruby>輸入<rt>ゆにゅう</rt></ruby>して<ruby>製品<rt>せいひん</rt></ruby>を<ruby>輸出<rt>ゆしゅつ</rt></ruby>したから。",
+            "<ruby>日本<rt>にほん</rt></ruby>の<ruby>技術<rt>ぎじゅつ</rt></ruby><ruby>力<rt>りょく</rt></ruby>が<ruby>高<rt>たか</rt></ruby>かったから。",
+            "<ruby>資源<rt>しげん</rt></ruby>が<ruby>少<rt>すく</rt></ruby>ないから<ruby>日本<rt>にほん</rt></ruby><ruby>人<rt>じん</rt></ruby>はまじめになった。",
+            "<ruby>日本<rt>にほん</rt></ruby><ruby>人<rt>じん</rt></ruby>がまじめに<ruby>働<rt>はたら</rt></ruby>いたから。"
+          ],
+          "correct": 3,
+          "correctOption": "<ruby>資源<rt>しげん</rt></ruby>が<ruby>少<rt>すく</rt></ruby>ないから<ruby>日本<rt>にほん</rt></ruby><ruby>人<rt>じん</rt></ruby>はまじめになった。",
+          "explanation": "本文では「加工貿易を行ったこと」「高い技術力」「日本人のまじめな勤勉さ」が経済大国になった理由として挙げられていますが、「資源が少ないから日本人がまじめになった」という関係は述べられていません。したがって正解は 3 です。"
+        }
+      ]
+    },
+    {
+      "title": "第1部 問題4",
+      "mondaiHeader": "問題4 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+      "sectionHeader": {
+        "number": "4",
+        "japanese": "登場人物の気持ちを読み取る",
+        "english": "Reading the feelings of characters"
+      },
+      "passageText": "<ruby>朝<rt>あさ</rt></ruby>、<ruby>目<rt>め</rt></ruby>が<ruby>覚<rt>さ</rt></ruby>めるといつもより30<ruby>分<rt>ぷん</rt></ruby>も<ruby>遅<rt>おそ</rt></ruby>い<ruby>時間<rt>じかん</rt></ruby>だった。<ruby>私<rt>わたし</rt></ruby>はあわててベッドから<ruby>飛<rt>と</rt></ruby>び<ruby>起<rt>お</rt></ruby>き、<ruby>朝<rt>あさ</rt></ruby>ご飯も<ruby>食<rt>た</rt></ruby>べずに<ruby>家<rt>いえ</rt></ruby>を<ruby>飛<rt>と</rt></ruby>び<ruby>出<rt>だ</rt></ruby>した。バス<ruby>停<rt>てい</rt></ruby>まで<ruby>走<rt>はし</rt></ruby>ったが、ちょうどバスが<ruby>出<rt>で</rt></ruby>てしまったところだった。「ああ、<ruby>遅刻<rt>ちこく</rt></ruby>だ。<ruby>上司<rt>じょうし</rt></ruby><span class=\"text-[0.75em] opacity-80 font-normal align-baseline\">(<ruby>注<rt>ちゅう</rt></ruby>1)</span>の<ruby>怒<rt>おこ</rt></ruby>った<ruby>顔<rt>かお</rt></ruby>が<ruby>目<rt>め</rt></ruby>に<ruby>浮<rt>う</rt></ruby>かぶ<span class=\"text-[0.75em] opacity-80 font-normal align-baseline\">(<ruby>注<rt>ちゅう</rt></ruby>2)</span>…」と<ruby>落<rt>お</rt></ruby>ち<ruby>込<rt>こ</rt></ruby>みながら、<ruby>次<rt>つぎ</rt></ruby>のバスを<ruby>待<rt>ま</rt></ruby>った。<ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いて<ruby>時計<rt>とけい</rt></ruby>を<ruby>見<rt>み</rt></ruby>ると、いつもより<ruby>早<rt>はや</rt></ruby>い<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>れることがわかった。いつもは<ruby>朝<rt>あさ</rt></ruby>ご飯をゆっくり<ruby>食<rt>た</rt></ruby>べてから<ruby>出<rt>で</rt></ruby>かけるので、<ruby>走<rt>はし</rt></ruby>った<ruby>分<rt>ぶん</rt></ruby>、むしろ<ruby>早<rt>はや</rt></ruby>く<ruby>着<rt>つ</rt></ruby>いたのだ。<ruby>私<rt>わたし</rt></ruby>は<ruby>自分<rt>じぶん</rt></ruby>のあわてぶりに<ruby>思<rt>おも</rt></ruby>わず<ruby>苦笑<rt>くしょう</rt></ruby>いしてしまった。",
+      "footnotes": [
+        {
+          "term": "（注1）<ruby>上司<rt>じょうし</rt></ruby>",
+          "definition": "<ruby>会社<rt>かいしゃ</rt></ruby>で<ruby>自分<rt>じぶん</rt></ruby>よりも<ruby>地位<rt>ちい</rt></ruby>が<ruby>上<rt>うえ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>"
+        },
+        {
+          "term": "（注2）<ruby>目<rt>め</rt></ruby>に<ruby>浮<rt>う</rt></ruby>かぶ",
+          "definition": "その<ruby>様子<rt>ようす</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>想像<rt>そうぞう</rt></ruby>できる"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q4-1",
+          "questionNumber": "問 1",
+          "questionText": "<ruby>問<rt>と</rt></ruby>い 「<ruby>私<rt>わたし</rt></ruby>」が<ruby>苦笑<rt>くしょう</rt></ruby>いしたのはなぜか。",
+          "options": [
+            "<ruby>急<rt>いそ</rt></ruby>がなくてもいいのに<ruby>急<rt>いそ</rt></ruby>いでいろいろ<ruby>心配<rt>しんぱい</rt></ruby>してしまったから。",
+            "<ruby>朝<rt>あさ</rt></ruby>ご飯を<ruby>食<rt>た</rt></ruby>べないで<ruby>走<rt>はし</rt></ruby>ったのに<ruby>遅刻<rt>ちこく</rt></ruby>してしまったから。",
+            "<ruby>余裕<rt>よゆう</rt></ruby>をもって<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>着<rt>つ</rt></ruby>けなくて<ruby>上司<rt>じょうし</rt></ruby>から<ruby>怒<rt>おこ</rt></ruby>られてしまったから。",
+            "<ruby>急<rt>いそ</rt></ruby>いだのにバスも<ruby>電車<rt>でんしゃ</rt></ruby>も<ruby>来<rt>こ</rt></ruby>なくて<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>遅<rt>おく</rt></ruby>れてしまったから。"
+          ],
+          "correct": 1,
+          "correctOption": "<ruby>急<rt>いそ</rt></ruby>がなくてもいいのに<ruby>急<rt>いそ</rt></ruby>いでいろいろ<ruby>心配<rt>しんぱい</rt></ruby>してしまったから。",
+          "explanation": "遅刻すると思い込んで朝食も食べずに走り、上司に怒られる姿を想像して落ち込んでいたものの、実際には普段より早い電車に乗れたため、無駄に慌てて心配した自分がおかしくなって苦笑いしました。したがって正解は 1 です。"
+        }
+      ]
+    },
+    {
+      "title": "第1部 問題5",
+      "mondaiHeader": "問題5 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+      "sectionHeader": {
+        "number": "5",
+        "japanese": "筆者の意見をつかむ",
+        "english": "Grasping the author's opinion"
+      },
+      "passageText": "<ruby>犬<rt>いぬ</rt></ruby>、<ruby>猫<rt>ねこ</rt></ruby>、<ruby>小鳥<rt>ことり</rt></ruby>など、ペットにはさまざまな<ruby>種類<rt>しゅるい</rt></ruby>があるが、<ruby>今<rt>いま</rt></ruby>では<ruby>家族<rt>かぞく</rt></ruby>の<ruby>一員<rt>いちいん</rt></ruby>として<ruby>扱<rt>あつか</rt></ruby>われることが<ruby>多<rt>おお</rt></ruby>い。たとえば、<ruby>以前<rt>いぜん</rt></ruby>、<ruby>犬<rt>いぬ</rt></ruby>は<ruby>家<rt>いえ</rt></ruby>の<ruby>外<rt>そと</rt></ruby>で<ruby>飼<rt>か</rt></ruby>われていたが、<ruby>今<rt>いま</rt></ruby>では<ruby>家<rt>いえ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>飼<rt>か</rt></ruby>われることが<ruby>多<rt>おお</rt></ruby>くなった。また、<ruby>寒<rt>さむ</rt></ruby>いときは<ruby>服<rt>ふく</rt></ruby>を<ruby>着<rt>き</rt></ruby>せたり、おもちゃを<ruby>買<rt>か</rt></ruby>ってやったり、<ruby>病気<rt>びょうき</rt></ruby>になれば<ruby>病院<rt>びょういん</rt></ruby>に<ruby>連<rt>つ</rt></ruby>れて<ruby>行<rt>い</rt></ruby>ったりと、<ruby>子<rt>こ</rt></ruby>どものように<ruby>大切<rt>たいせつ</rt></ruby>にされるようになっている。マンションでもペットが<ruby>飼<rt>か</rt></ruby>えるところが<ruby>人気<rt>にんき</rt></ruby>だ。\n\nこれが<ruby>人間<rt>にんげん</rt></ruby>の<ruby>子<rt>こ</rt></ruby>どもなら、<ruby>大<rt>おお</rt></ruby>きくなるにつれてだんだん<ruby>親<rt>おや</rt></ruby>に<ruby>反抗<rt>はんこう</rt></ruby>することもあり、<ruby>親<rt>おや</rt></ruby>が<ruby>思<rt>おも</rt></ruby>うようにならないこともある。しかし、ペットはいつまでも<ruby>小<rt>ちい</rt></ruby>さな<ruby>子<rt>こ</rt></ruby>どものような<ruby>純粋<rt>じゅんすい</rt></ruby>な<ruby>心<rt>こころ</rt></ruby>のままで、<ruby>飼<rt>か</rt></ruby>う<ruby>人<rt>ひと</rt></ruby>をしたって<span class=\"text-[0.75em] opacity-80 font-normal align-baseline\">(<ruby>注<rt>ちゅう</rt></ruby>1)</span>くる。それがかわいくてしかたがない<ruby>存在<rt>そんざい</rt></ruby>になっているのではないだろうか。",
+      "footnotes": [
+        {
+          "term": "（注1）したう",
+          "definition": "<ruby>相手<rt>あいて</rt></ruby>のことが<ruby>好<rt>す</rt></ruby>きで、<ruby>離<rt>はな</rt></ruby>れずについてくる"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q5-1",
+          "questionNumber": "問 1",
+          "questionText": "<ruby>問<rt>と</rt></ruby>い この<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>と<ruby>合<rt>あ</rt></ruby>っているものはどれか。",
+          "options": [
+            "ペットが<ruby>愛<rt>あい</rt></ruby>されるのは、<ruby>小<rt>ちい</rt></ruby>さな<ruby>子<rt>こ</rt></ruby>どものような<ruby>存在<rt>そんざい</rt></ruby>だからだ。",
+            "ペットは、<ruby>家族<rt>かぞく</rt></ruby>の<ruby>一員<rt>いちいん</rt></ruby>のように<ruby>大切<rt>たいせつ</rt></ruby>にしなければならない。",
+            "<ruby>最近<rt>さいきん</rt></ruby>、ペットは<ruby>人間<rt>にんげん</rt></ruby>の<ruby>子<rt>こ</rt></ruby>ども<ruby>以上<rt>いじょう</rt></ruby>に<ruby>大切<rt>たいせつ</rt></ruby>にされている。",
+            "ペットを<ruby>子<rt>こ</rt></ruby>どものようにかわいがるのは、やめたほうがいい。"
+          ],
+          "correct": 1,
+          "correctOption": "ペットが<ruby>愛<rt>あい</rt></ruby>されるのは、<ruby>小<rt>ちい</rt></ruby>さな<ruby>子<rt>こ</rt></ruby>どものような<ruby>存在<rt>そんざい</rt></ruby>だからだ。",
+          "explanation": "筆者は、人間の子どもと違ってペットは成長しても反抗せず、いつまでも小さな子どものように純粋な心で飼い主を慕ってくるため、愛しくてたまらない存在になっていると述べています。したがって正解は 1 です。"
+        }
+      ]
+    },
+    {
+      "title": "第1部 問題6",
+      "mondaiHeader": "問題6 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+      "sectionHeader": {
+        "number": "6",
+        "japanese": "表現の意図を考える",
+        "english": "Considering the intention of expressions"
+      },
+      "passageText": "<ruby>電車<rt>でんしゃ</rt></ruby>やバスに<ruby>乗<rt>の</rt></ruby>っていると、お<ruby>年寄<rt>としよ</rt></ruby>りや<ruby>体<rt>からだ</rt></ruby>の<ruby>不自由<rt>ふじゆう</rt></ruby>な<ruby>人<rt>ひと</rt></ruby>に<ruby>席<rt>せき</rt></ruby>を<ruby>譲<rt>ゆず</rt></ruby>らない<ruby>若者<rt>わかもの</rt></ruby>を<ruby>見<rt>み</rt></ruby>かけます。しかし、<ruby>席<rt>せき</rt></ruby>を<ruby>譲<rt>ゆず</rt></ruby>らない<ruby>若者<rt>わかもの</rt></ruby>に<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">A</span><ruby>聞<rt>き</rt></ruby>いてみると</span>、<ruby>以前<rt>いぜん</rt></ruby>は<ruby>譲<rt>ゆず</rt></ruby>ろうとしたことがあるが、<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">B</span><ruby>断<rt>ことわ</rt></ruby>られてしまって</span>、その<ruby>後<rt>あと</rt></ruby>はもう<ruby>譲<rt>ゆず</rt></ruby>ろうという<ruby>気持<rt>きも</rt></ruby>ちをなくしてしまったという<ruby>人<rt>ひと</rt></ruby>も<ruby>多<rt>おお</rt></ruby>いのです。\n\n<ruby>若<rt>わか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>にとって、<ruby>知<rt>し</rt></ruby>らない<ruby>人<rt>ひと</rt></ruby>に<ruby>声<rt>こえ</rt></ruby>をかけるのは<ruby>少<rt>すこ</rt></ruby>し<ruby>緊張<rt>きんちょう</rt></ruby>します。<ruby>人<rt>ひと</rt></ruby>に<ruby>席<rt>せき</rt></ruby>を<ruby>譲<rt>ゆず</rt></ruby>るのは<ruby>少<rt>すこ</rt></ruby>し<ruby>勇気<rt>ゆうき</rt></ruby>がいります。「どうぞ」と<ruby>声<rt>こえ</rt></ruby>をかけたときに、<ruby>感謝<rt>かんしゃ</rt></ruby>のことばと<ruby>笑顔<rt>えがお</rt></ruby>が<ruby>返<rt>かえ</rt></ruby>ってくれば、<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">C</span><ruby>次<rt>つぎ</rt></ruby>もまた<ruby>譲<rt>ゆず</rt></ruby>ろう</span>という<ruby>気持<rt>きも</rt></ruby>ちになります。だから、もし<ruby>席<rt>せき</rt></ruby>を<ruby>譲<rt>ゆず</rt></ruby>られたら、「その<ruby>必要<rt>ひつよう</rt></ruby>はない」と<ruby>思<rt>おも</rt></ruby>っても、<ruby>素直<rt>すなお</rt></ruby>に<ruby>座<rt>すわ</rt></ruby>り、<ruby>笑<rt>わら</rt></ruby>って「ありがとう」と<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">①</span><ruby>答<rt>こた</rt></ruby>えてあげてほしい</span>と<ruby>思<rt>おも</rt></ruby>います。",
+      "footnotes": [],
+      "questions": [
+        {
+          "id": "q6-1",
+          "questionNumber": "問 1",
+          "questionText": "<ruby>問<rt>と</rt></ruby>い ①<ruby>答<rt>こた</rt></ruby>えてあげてほしいと<ruby>思<rt>おも</rt></ruby>っているのはだれか。",
+          "options": [
+            "お<ruby>年寄<rt>としよ</rt></ruby>りや<ruby>体<rt>からだ</rt></ruby>の<ruby>不自由<rt>ふじゆう</rt></ruby>な<ruby>人<rt>ひと</rt></ruby>",
+            "<ruby>席<rt>せき</rt></ruby>を<ruby>譲<rt>ゆず</rt></ruby>らない<ruby>若者<rt>わかもの</rt></ruby>",
+            "<ruby>若<rt>わか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>",
+            "この<ruby>文<rt>ぶん</rt></ruby>を<ruby>書<rt>か</rt></ruby>いた<ruby>人<rt>ひと</rt></ruby>"
+          ],
+          "correct": 4,
+          "correctOption": "この<ruby>文<rt>ぶん</rt></ruby>を<ruby>書<rt>か</rt></ruby>いた<ruby>人<rt>ひと</rt></ruby>",
+          "explanation": "文末の「〜てほしいと思います」は、筆者（この文を書いた人）の願いや主張を表しています。席を譲られた人に向けて、感謝して答えてほしいと希望を伝えているのは筆者自身です。したがって正解は 4 です。"
+        }
+      ]
+    },
+    {
+      "title": "第1部 問題7",
+      "mondaiHeader": "問題7 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+      "sectionHeader": {
+        "number": "3",
+        "japanese": "長い文に慣れる",
+        "english": "Getting used to long sentences"
+      },
+      "passageText": "<ruby>漢字<rt>かんじ</rt></ruby>は5<ruby>万<rt>まん</rt></ruby><ruby>字<rt>じ</rt></ruby>ほどもあると<ruby>言<rt>い</rt></ruby>われているが、これを<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>使<rt>つか</rt></ruby>うのは<ruby>大変<rt>たいへん</rt></ruby>だ。そこで、<ruby>日本<rt>にほん</rt></ruby>では1981<ruby>年<rt>ねん</rt></ruby>にふだん<ruby>使<rt>つか</rt></ruby>う<ruby>漢字<rt>かんじ</rt></ruby>を1945<ruby>字<rt>じ</rt></ruby>に<ruby>決<rt>き</rt></ruby>め、これを<ruby>常用<rt>じょうよう</rt></ruby><ruby>漢字<rt>かんじ</rt></ruby>と<ruby>呼<rt>よ</rt></ruby>んでいた。そして、なるべくこの<ruby>範囲<rt>はんい</rt></ruby>で<ruby>漢字<rt>かんじ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うようにした。この<ruby>常用<rt>じょうよう</rt></ruby><ruby>漢字<rt>かんじ</rt></ruby>の<ruby>数<rt>かず</rt></ruby>が2010<ruby>年<rt>ねん</rt></ruby>に1945<ruby>字<rt>じ</rt></ruby>から2136<ruby>字<rt>じ</rt></ruby>に<ruby>増<rt>ふ</rt></ruby>えた。どうしてだろうか。\n\nそれは、パソコンや<ruby>携帯<rt>けいたい</rt></ruby><ruby>電話<rt>でんわ</rt></ruby>などの<ruby>情報<rt>じょうほう</rt></ruby><ruby>機器<rt>きき</rt></ruby>の<ruby>発達<rt>はったつ</rt></ruby>により、<ruby>手<rt>て</rt></ruby>で<ruby>書<rt>か</rt></ruby>くのが<ruby>難<rt>むずか</rt></ruby>しかった<ruby>漢字<rt>かんじ</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>表記<rt>ひょうき</rt></ruby><span class=\"text-[0.75em] opacity-80 font-normal align-baseline\">(<ruby>注<rt>ちゅう</rt></ruby>1)</span>できるようになり、<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>使用<rt>しよう</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えたためである。たとえば、<ruby>気分<rt>きぶん</rt></ruby>が<ruby>沈<rt>しず</rt></ruby>んだ<ruby>状態<rt>じょうたい</rt></ruby>である「ゆううつ」ということばをメールで<ruby>使<rt>つか</rt></ruby>う<ruby>場合<rt>ばあい</rt></ruby>、「憂鬱」と<ruby>漢字<rt>かんじ</rt></ruby>で<ruby>表記<rt>ひょうき</rt></ruby>する<ruby>人<rt>ひと</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えている。この「憂鬱」は<ruby>新<rt>あたら</rt></ruby>しく<ruby>常用<rt>じょうよう</rt></ruby><ruby>漢字<rt>かんじ</rt></ruby>になった<ruby>漢字<rt>かんじ</rt></ruby>である。\n\nしかし、<ruby>日本<rt>にほん</rt></ruby>に<ruby>外国人<rt>がいこくじん</rt></ruby>が<ruby>増加<rt>ぞうか</rt></ruby>して、<ruby>漢字<rt>かんじ</rt></ruby>が<ruby>苦手<rt>にがて</rt></ruby>な<ruby>人<rt>ひと</rt></ruby>もいるため、<ruby>常用<rt>じょうよう</rt></ruby><ruby>漢字<rt>かんじ</rt></ruby>を<ruby>減<rt>へ</rt></ruby>らすべきだという<ruby>意見<rt>いけん</rt></ruby>もある。どのような<ruby>漢字<rt>かんじ</rt></ruby><ruby>表記<rt>ひょうき</rt></ruby>がよいのか、いつどこでどんな<ruby>表記<rt>ひょうき</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うのがいいか、さまざまな<ruby>点<rt>てん</rt></ruby>から<ruby>考<rt>かんが</rt></ruby>えていかなければならないだろう。",
+      "footnotes": [
+        {
+          "term": "（注1）<ruby>表記<rt>ひょうき</rt></ruby>",
+          "definition": "<ruby>文字<rt>もじ</rt></ruby>などを<ruby>使<rt>つか</rt></ruby>って、ことばを<ruby>書<rt>か</rt></ruby>き<ruby>表<rt>あらわ</rt></ruby>すこと"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q7-1",
+          "questionNumber": "問 1",
+          "questionText": "<ruby>問<rt>と</rt></ruby>い <ruby>常用<rt>じょうよう</rt></ruby><ruby>漢字<rt>かんじ</rt></ruby>の<ruby>数<rt>かず</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えた<ruby>理由<rt>りゆう</rt></ruby>は<ruby>何<rt>なに</rt></ruby>か。",
+          "options": [
+            "<ruby>日本<rt>にほん</rt></ruby>で<ruby>生活<rt>せいかつ</rt></ruby>したり、<ruby>働<rt>はたら</rt></ruby>いたりする<ruby>外国人<rt>がいこくじん</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えているから。",
+            "<ruby>漢字<rt>かんじ</rt></ruby>で<ruby>書<rt>か</rt></ruby>いたほうがわかりやすいから。",
+            "メールを<ruby>使<rt>つか</rt></ruby>う<ruby>人<rt>ひと</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えたから。",
+            "<ruby>情報<rt>じょうほう</rt></ruby><ruby>機器<rt>きき</rt></ruby>が<ruby>発達<rt>はったつ</rt></ruby>し、<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>使用<rt>しよう</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えたから。"
+          ],
+          "correct": 4,
+          "correctOption": "<ruby>情報<rt>じょうほう</rt></ruby><ruby>機器<rt>きき</rt></ruby>が<ruby>発達<rt>はったつ</rt></ruby>し、<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>使用<rt>しよう</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えたから。",
+          "explanation": "本文第2段落に「パソコンや携帯電話などの情報機器の発達により、手で書くのが難しかった漢字が簡単に表記できるようになり、漢字の使用が増えたためである」と説明されています。したがって正解は 4 です。"
+        }
+      ]
+    },
+    {
+      "title": "第1部 問題8",
+      "mondaiHeader": "問題8 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+      "sectionHeader": {
+        "number": "4",
+        "japanese": "知らない言葉を推測する",
+        "english": "Inferring the meaning of unknown words"
+      },
+      "passageText": "あなたの<ruby>部屋<rt>へや</rt></ruby>はきちんと<ruby>片<rt>かた</rt></ruby>づいていますか。ものが<ruby>増<rt>ふ</rt></ruby>えてくると、<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">A</span><ruby>片<rt>かた</rt></ruby>づけ</span>に<ruby>悩<rt>なや</rt></ruby>まされる<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いと<ruby>思<rt>おも</rt></ruby>いますが、<ruby>片<rt>かた</rt></ruby>づけの<ruby>専門<rt>せんもん</rt></ruby><ruby>家<rt>か</rt></ruby>の<ruby>小松<rt>こまつ</rt></ruby>さんは、<ruby>片<rt>かた</rt></ruby>づけは、「<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">B</span><ruby>整理<rt>せいり</rt></ruby></span>」と「<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">C</span><ruby>整頓<rt>せいとん</rt></ruby></span>」であると<ruby>言<rt>い</rt></ruby>っています。\n\n<ruby>小松<rt>こまつ</rt></ruby>さんによると、「<ruby>整理<rt>せいり</rt></ruby>」とは<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">D</span>いらないものを<ruby>減<rt>へ</rt></ruby>らすこと</span>、すなわちものを<ruby>処分<rt>しょぶん</rt></ruby>する<span class=\"text-[0.75em] opacity-80 font-normal align-baseline\">(<ruby>注<rt>ちゅう</rt></ruby>1)</span>こと。そして、「<ruby>整頓<rt>せいとん</rt></ruby>」とはものを<ruby>使<rt>つか</rt></ruby>いやすいように<ruby>正<rt>ただ</rt></ruby>しく<ruby>置<rt>お</rt></ruby>くことだそうです。\n\n<ruby>片<rt>かた</rt></ruby>づけは「<ruby>整理<rt>せいり</rt></ruby>8<ruby>割<rt>わり</rt></ruby><span class=\"text-[0.75em] opacity-80 font-normal align-baseline\">(<ruby>注<rt>ちゅう</rt></ruby>2)</span>、<ruby>整頓<rt>せいとん</rt></ruby>2<ruby>割<rt>わり</rt></ruby>」。「<ruby>整理<rt>せいり</rt></ruby>」に<ruby>徹底的<rt>てっていてき</rt></ruby>に<ruby>取<rt>と</rt></ruby>り<ruby>組<rt>く</rt></ruby>めば<span class=\"text-[0.75em] opacity-80 font-normal align-baseline\">(<ruby>注<rt>ちゅう</rt></ruby>3)</span>、8<ruby>割<rt>わり</rt></ruby>が<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">E</span><ruby>終了<rt>しゅうりょう</rt></ruby>している</span>と<ruby>言<rt>い</rt></ruby>えます。",
+      "footnotes": [
+        {
+          "term": "（注1）<ruby>処分<rt>しょぶん</rt></ruby>する",
+          "definition": "いらなくなったものなどを<ruby>捨<rt>す</rt></ruby>てたり、<ruby>売<rt>う</rt></ruby>ったりする"
+        },
+        {
+          "term": "（注2）8<ruby>割<rt>わり</rt></ruby>",
+          "definition": "80%"
+        },
+        {
+          "term": "（注3）<ruby>取<rt>と</rt></ruby>り<ruby>組<rt>く</rt></ruby>む",
+          "definition": "<ruby>問題<rt>もんだい</rt></ruby>を<ruby>解決<rt>かいけつ</rt></ruby>するために<ruby>熱心<rt>ねっしん</rt></ruby>に<ruby>何<rt>なに</rt></ruby>かをする"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q8-1",
+          "questionNumber": "問 1",
+          "questionText": "<ruby>問<rt>と</rt></ruby>い この<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>書<rt>か</rt></ruby>いた<ruby>人<rt>ひと</rt></ruby>は、<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><ruby>片<rt>かた</rt></ruby>づけをするのに<ruby>何<rt>なに</rt></ruby>が<ruby>一番<rt>いちばん</rt></ruby><ruby>大切<rt>たいせつ</rt></ruby>だと<ruby>言<rt>い</rt></ruby>っているか</span>。",
+          "options": [
+            "<ruby>引<rt>ひ</rt></ruby>き<ruby>出<rt>だ</rt></ruby>しをきれいにしておくこと",
+            "<ruby>使<rt>つか</rt></ruby>ったものを<ruby>元<rt>もと</rt></ruby>の<ruby>場所<rt>ばしょ</rt></ruby>にしまうこと",
+            "いらないものを<ruby>減<rt>へ</rt></ruby>らすこと",
+            "ものを<ruby>使<rt>つか</rt></ruby>いやすいように<ruby>置<rt>お</rt></ruby>くこと"
+          ],
+          "correct": 3,
+          "correctOption": "いらないものを<ruby>減<rt>へ</rt></ruby>らすこと",
+          "explanation": "本文では片づけは「整理8割、整頓2割」であり、「整理」とは「いらないものを減らすこと」と定義されています。整理に徹底的に取り組めば8割が終了したと言えることから、最も大切なのは 3「いらないものを減らすこと」です。"
+        }
+      ]
+    },
+    {
+      "title": "第1部 問題9",
+      "mondaiHeader": "問題9 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+      "sectionHeader": {
+        "number": "5",
+        "japanese": "あとの内容を予測する①",
+        "english": "Predicting what comes next (1)"
+      },
+      "passageText": "「よい<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をした」と<ruby>思<rt>おも</rt></ruby>うのはどんなときでしょうか。<ruby>安<rt>やす</rt></ruby>くてよいものが<ruby>買<rt>か</rt></ruby>えたとき、と<ruby>答<rt>こた</rt></ruby>える<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いかもしれません。\n\n<ruby>確<rt>たし</rt></ruby>かに、よい<ruby>品物<rt>しなもの</rt></ruby>を<ruby>安<rt>やす</rt></ruby>く<ruby>買<rt>か</rt></ruby>えたとき、<ruby>私<rt>わたし</rt></ruby>たちはとてもうれしい<ruby>気持<rt>きも</rt></ruby>ちになります。「<ruby>安<rt>やす</rt></ruby>さ」「よさ」が<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>を<ruby>満足<rt>まんぞく</rt></ruby>させるとても<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>要素<rt>ようそ</rt></ruby>であることは<ruby>間違<rt>まちが</rt></ruby>いないでしょう。しかし、これ<ruby>以外<rt>いがい</rt></ruby>の<ruby>理由<rt>りゆう</rt></ruby>で「よい<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をした」と<ruby>思<rt>おも</rt></ruby>える<ruby>商品<rt>しょうひん</rt></ruby>があります。<ruby>寄付<rt>きふ</rt></ruby><ruby>金<rt>きん</rt></ruby><span class=\"text-[0.75em] opacity-80 font-normal align-baseline\">(<ruby>注<rt>ちゅう</rt></ruby>1)</span>つきの<ruby>商品<rt>しょうひん</rt></ruby>といって、その<ruby>売<rt>う</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げの<ruby>一部<rt>いちぶ</rt></ruby>がボランティア<span class=\"text-[0.75em] opacity-80 font-normal align-baseline\">(<ruby>注<rt>ちゅう</rt></ruby>2)</span><ruby>組織<rt>そしき</rt></ruby>などへ<ruby>寄付<rt>きふ</rt></ruby>されるというものです。<ruby>値段<rt>ねだん</rt></ruby>は<ruby>安<rt>やす</rt></ruby>くはないですが、それを<ruby>買<rt>か</rt></ruby>うことで「<ruby>困<rt>こま</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>の<ruby>助<rt>たす</rt></ruby>けになる」ことができます。<ruby>自分<rt>じぶん</rt></ruby>の<ruby>好<rt>す</rt></ruby>きなものが<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>はい</rt></ruby>り、<ruby>同時<rt>どうじ</rt></ruby>に<ruby>困<rt>こま</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>の<ruby>助<rt>たす</rt></ruby>けになる。このときも「よい<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をした」と<ruby>思<rt>おも</rt></ruby>えるものです。",
+      "footnotes": [
+        {
+          "term": "（注1）<ruby>寄付<rt>きふ</rt></ruby>",
+          "definition": "<ruby>困<rt>こま</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>などにお<ruby>金<rt>かね</rt></ruby>や<ruby>品物<rt>しなもの</rt></ruby>をあげること"
+        },
+        {
+          "term": "（注2）ボランティア",
+          "definition": "お<ruby>金<rt>かね</rt></ruby>のためではなく、<ruby>社会<rt>しゃかい</rt></ruby>に<ruby>役立<rt>やくだ</rt></ruby>つことを<ruby>進<rt>すす</rt></ruby>んでする<ruby>人<rt>ひと</rt></ruby>"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q9-1",
+          "questionNumber": "問 1",
+          "questionText": "<ruby>問<rt>と</rt></ruby>い この<ruby>文章<rt>ぶんしょう</rt></ruby>で<ruby>一番<rt>いちばん</rt></ruby><ruby>言<rt>い</rt></ruby>いたいことは<ruby>何<rt>なに</rt></ruby>か。",
+          "options": [
+            "<ruby>安<rt>やす</rt></ruby>くてよいものを<ruby>買<rt>か</rt></ruby>ったときだけ、よい<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をしたと<ruby>思<rt>おも</rt></ruby>える。",
+            "<ruby>品物<rt>しなもの</rt></ruby>がよかったときだけ、よい<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をしたと<ruby>思<rt>おも</rt></ruby>える。",
+            "<ruby>安<rt>やす</rt></ruby>くなくてもだれかの<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>つと、よい<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をしたと<ruby>思<rt>おも</rt></ruby>える。",
+            "<ruby>品物<rt>しなもの</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くてもだれかの<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>つと、よい<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をしたと<ruby>思<rt>おも</rt></ruby>える。"
+          ],
+          "correct": 3,
+          "correctOption": "<ruby>安<rt>やす</rt></ruby>くなくてもだれかの<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>つと、よい<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をしたと<ruby>思<rt>おも</rt></ruby>える。",
+          "explanation": "筆者は、安くてよい商品を買えたときだけでなく、寄付金つき商品のように「安くなくても誰かの役に立つ買い物ができたとき」にも「よい買い物をした」と思えると述べています。したがって正解は 3 です。"
+        }
+      ]
+    },
+    {
+      "title": "第1部 問題10",
+      "mondaiHeader": "問題10 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+      "sectionHeader": {
+        "number": "6",
+        "japanese": "あとの内容を予測する②",
+        "english": "Predicting what comes next (2)"
+      },
+      "passageText": "1か<ruby>月<rt>げつ</rt></ruby>ぐらい<ruby>前<rt>まえ</rt></ruby>の<ruby>夕方<rt>ゆうがた</rt></ruby>、ちょっと<ruby>大<rt>おお</rt></ruby>きな<ruby>地震<rt>じしん</rt></ruby>がありました。そのとき、<ruby>私<rt>わたし</rt></ruby>も、<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいる<ruby>母<rt>はは</rt></ruby>も<ruby>外出<rt>がいしゅつ</rt></ruby>をしていて、<ruby>家<rt>いえ</rt></ruby>にはいませんでした。\n\nその<ruby>晩<rt>ばん</rt></ruby>のことです。<ruby>私<rt>わたし</rt></ruby>は<ruby>何<rt>なん</rt></ruby>だかよく<ruby>眠<rt>ねむ</rt></ruby>れなくて、ベッドでラジオを<ruby>小<rt>ちい</rt></ruby>さい<ruby>音<rt>おと</rt></ruby>で<ruby>聞<rt>き</rt></ruby>きながらうとうと<span class=\"text-[0.75em] opacity-80 font-normal align-baseline\">(<ruby>注<rt>ちゅう</rt></ruby>1)</span>していました。<ruby>夜中<rt>やちゅう</rt></ruby>に<ruby>何<rt>なん</rt></ruby><ruby>回<rt>かい</rt></ruby>か<ruby>古<rt>ふる</rt></ruby>い<ruby>柱時計<rt>はしらどけい</rt></ruby><span class=\"text-[0.75em] opacity-80 font-normal align-baseline\">(<ruby>注<rt>ちゅう</rt></ruby>2)</span>が<ruby>鳴<rt>な</rt></ruby>るのを<ruby>聞<rt>き</rt></ruby>いたように<ruby>思<rt>おも</rt></ruby>いました。<ruby>私<rt>わたし</rt></ruby>はラジオの<ruby>中<rt>なか</rt></ruby>で<ruby>時計<rt>とけい</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>っているんだと<ruby>思<rt>おも</rt></ruby>いました。\n\n<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">A</span>ところが</span>、<ruby>次<rt>つぎ</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>、<ruby>別<rt>べつ</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>で<ruby>寝<rt>ね</rt></ruby>ていた<ruby>母<rt>はは</rt></ruby>が<ruby>言<rt>い</rt></ruby>いました。「きのうの<ruby>晩<rt>ばん</rt></ruby>、<ruby>柱時計<rt>はしらどけい</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>る<ruby>音<rt>おと</rt></ruby>が<ruby>聞<rt>き</rt></ruby>こえなかった？」「<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">B</span>まさか</span>。うちのは<ruby>何<rt>なん</rt></ruby><ruby>年<rt>ねん</rt></ruby>も<ruby>使<rt>つか</rt></ruby>っていないんだもの。<ruby>鳴<rt>な</rt></ruby>るはずがないよ。」<ruby>亡<rt>な</rt></ruby>くなった<ruby>父<rt>ちち</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>には<ruby>古<rt>ふる</rt></ruby>い<ruby>柱時計<rt>はしらどけい</rt></ruby>があるのですが、ずっと<ruby>動<rt>うご</rt></ruby>かしていませんでした。でも、<ruby>母<rt>はは</rt></ruby>も<ruby>時計<rt>とけい</rt></ruby>の<ruby>音<rt>おと</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いたのです。<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><ruby>私<rt>わたし</rt></ruby>は<ruby>不思議<rt>ふしぎ</rt></ruby>に<ruby>思<rt>おも</rt></ruby>いました。</span><span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">C</span>そこで</span>、<ruby>二<rt>に</rt></ruby><ruby>人<rt>にん</rt></ruby>で<ruby>時計<rt>とけい</rt></ruby>のある<ruby>部屋<rt>へや</rt></ruby>に<ruby>行<rt>い</rt></ruby>ってみると、<ruby>時計<rt>とけい</rt></ruby>はほんとうに<ruby>動<rt>うご</rt></ruby>いていました。<ruby>私<rt>わたし</rt></ruby>たちはびっくりしましたが、すぐにわかりました。<ruby>前<rt>まえ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>の<ruby>地震<rt>じしん</rt></ruby>で<ruby>家<rt>いえ</rt></ruby>が<ruby>揺<rt>ゆ</rt></ruby>れたとき、<ruby>時計<rt>とけい</rt></ruby>のふりこ<span class=\"text-[0.75em] opacity-80 font-normal align-baseline\">(<ruby>注<rt>ちゅう</rt></ruby>3)</span>も<ruby>揺<rt>ゆ</rt></ruby>れ、<ruby>自然<rt>しぜん</rt></ruby>に<ruby>動<rt>うご</rt></ruby>き<ruby>出<rt>だ</rt></ruby>して、<ruby>時計<rt>とけい</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>ったのです。\n\n<ruby>母<rt>はは</rt></ruby>は、<ruby>父<rt>ちち</rt></ruby>がこの<ruby>時計<rt>とけい</rt></ruby>を<ruby>大切<rt>たいせつ</rt></ruby>に<ruby>使<rt>つか</rt></ruby>っていたことを<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>し、「この<ruby>時計<rt>とけい</rt></ruby>はまだ<ruby>動<rt>うご</rt></ruby>くんだって<ruby>伝<rt>つた</rt></ruby>えたかったのかもしれないね」と<ruby>言<rt>い</rt></ruby>って<ruby>笑<rt>わら</rt></ruby>いました。それからは、またこの<ruby>時計<rt>とけい</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かして<ruby>使<rt>つか</rt></ruby>っています。<ruby>父<rt>ちち</rt></ruby>も<ruby>喜<rt>よろこ</rt></ruby>んでいるかもしれません。",
+      "footnotes": [
+        {
+          "term": "（注1）うとうと",
+          "definition": "<ruby>眠<rt>ねむ</rt></ruby>りが<ruby>浅<rt>あさ</rt></ruby>い<ruby>様子<rt>ようす</rt></ruby>"
+        },
+        {
+          "term": "（注2）<ruby>柱時計<rt>はしらどけい</rt></ruby>",
+          "definition": "柱や壁にかけて使う振り子式の時計"
+        },
+        {
+          "term": "（注3）ふりこ",
+          "definition": "時計の中で規則正しく左右に揺れて時間を刻む棒や重り"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q10-1",
+          "questionNumber": "問 1",
+          "questionText": "<ruby>問<rt>と</rt></ruby>い <ruby>私<rt>わたし</rt></ruby>は<ruby>不思議<rt>ふしぎ</rt></ruby>に<ruby>思<rt>おも</rt></ruby>いました。とあるが、なぜか。",
+          "options": [
+            "<ruby>動<rt>うご</rt></ruby>いていないはずの<ruby>時計<rt>とけい</rt></ruby>の<ruby>音<rt>おと</rt></ruby>が<ruby>聞<rt>き</rt></ruby>こえたから。",
+            "<ruby>別<rt>べつ</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>にいた<ruby>母<rt>はは</rt></ruby>がラジオの<ruby>時計<rt>とけい</rt></ruby>の<ruby>音<rt>おと</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いていたから。",
+            "<ruby>母<rt>はは</rt></ruby>が<ruby>父<rt>ちち</rt></ruby>の<ruby>使<rt>つか</rt></ruby>っていた<ruby>時計<rt>とけい</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かしていたから。",
+            "<ruby>亡<rt>な</rt></ruby>くなった<ruby>父<rt>ちち</rt></ruby>の<ruby>時計<rt>とけい</rt></ruby>が<ruby>止<rt>と</rt></ruby>まっていたから。"
+          ],
+          "correct": 1,
+          "correctOption": "<ruby>動<rt>うご</rt></ruby>いていないはずの<ruby>時計<rt>とけい</rt></ruby>の<ruby>音<rt>おと</rt></ruby>が<ruby>聞<rt>き</rt></ruby>こえたから。",
+          "explanation": "亡くなった父の部屋にあった柱時計は何年も動かしておらず、鳴るはずがないのに、自分だけでなく母もその音を聞いたため、「不思議に思いました」と述べています。したがって正解は 1 です。"
+        }
+      ]
+    },
+    {
+      "title": "第1部 問題11",
+      "mondaiHeader": "問題11 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+      "sectionHeader": {
+        "number": "7",
+        "japanese": "指示語を意識する",
+        "english": "Demonstrative terms"
+      },
+      "passageText": "コーヒーを<ruby>多<rt>おお</rt></ruby>く<ruby>飲<rt>の</rt></ruby>む<ruby>人<rt>ひと</rt></ruby>ほど、<ruby>肌<rt>はだ</rt></ruby>のしみ<span class=\"text-[0.75em] opacity-80 font-normal align-baseline\">(<ruby>注<rt>ちゅう</rt></ruby>1)</span>ができにくいという<ruby>研究<rt>けんきゅう</rt></ruby><ruby>結果<rt>けっか</rt></ruby>がある。なぜコーヒーにそのような<ruby>効果<rt>こうか</rt></ruby>があるのだろうか。\n\n<ruby>人<rt>ひと</rt></ruby>の<ruby>肌<rt>はだ</rt></ruby>は<ruby>紫外線<rt>しがいせん</rt></ruby>を<ruby>浴<rt>あ</rt></ruby>びると、<ruby>活性<rt>かっせい</rt></ruby><ruby>酸素<rt>さんそ</rt></ruby>という<ruby>物質<rt>ぶっしつ</rt></ruby>ができる。この<ruby>物質<rt>ぶっしつ</rt></ruby>が<ruby>肌<rt>はだ</rt></ruby>にメラニンを<ruby>作<rt>つく</rt></ruby>り、これがしみの<ruby>原因<rt>げんいん</rt></ruby>となる。しかし、コーヒーに<ruby>含<rt>ふく</rt></ruby>まれるポリフェノールという<ruby>成分<rt>せいぶん</rt></ruby>には、<ruby>活性<rt>かっせい</rt></ruby><ruby>酸素<rt>さんそ</rt></ruby>を<ruby>消<rt>け</rt></ruby>す<ruby>働<rt>はたら</rt></ruby>きがある。そのために、コーヒーをよく<ruby>飲<rt>の</rt></ruby>む<ruby>人<rt>ひと</rt></ruby>はしみができにくいのだ。\n\nポリフェノールをたくさん<ruby>含<rt>ふく</rt></ruby>むコーヒーは、<ruby>美容<rt>びよう</rt></ruby>にいい<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>だと<ruby>言<rt>い</rt></ruby>えそうだ。",
+      "footnotes": [
+        {
+          "term": "（注1）しみ",
+          "definition": "<ruby>顔<rt>かお</rt></ruby>や<ruby>手<rt>て</rt></ruby>などにできる<ruby>茶色<rt>ちゃいろ</rt></ruby>い<ruby>点<rt>てん</rt></ruby>"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q11-1",
+          "questionNumber": "問 1",
+          "questionText": "<ruby>問<rt>と</rt></ruby>い この<ruby>文章<rt>ぶんしょう</rt></ruby>によると、<ruby>活性<rt>かっせい</rt></ruby><ruby>酸素<rt>さんそ</rt></ruby>とはどんな<ruby>物質<rt>ぶっしつ</rt></ruby>か。",
+          "options": [
+            "しみをできにくくする<ruby>物質<rt>ぶっしつ</rt></ruby>",
+            "ポリフェノールを<ruby>増<rt>ふ</rt></ruby>やす<ruby>物質<rt>ぶっしつ</rt></ruby>",
+            "メラニンを<ruby>増<rt>ふ</rt></ruby>やす<ruby>物質<rt>ぶっしつ</rt></ruby>",
+            "コーヒーの<ruby>中<rt>なか</rt></ruby>に<ruby>多<rt>おお</rt></ruby>く<ruby>含<rt>ふく</rt></ruby>まれる<ruby>物質<rt>ぶっしつ</rt></ruby>"
+          ],
+          "correct": 3,
+          "correctOption": "メラニンを<ruby>増<rt>ふ</rt></ruby>やす<ruby>物質<rt>ぶっしつ</rt></ruby>",
+          "explanation": "本文第2段落に「紫外線を受けると、活性酸素という物質ができる。この物質が肌にメラニンを作り、これがしみの原因となる」とあります。指示語「この物質」は直前の「活性酸素」を指しており、メラニンを作る（増やす）物質であることが分かります。したがって正解は 3 です。"
+        }
+      ]
+    },
+    {
+      "title": "第1部 問題12",
+      "mondaiHeader": "問題12 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+      "sectionHeader": {
+        "number": "8",
+        "japanese": "文章の構造を理解する",
+        "english": "Understanding text structure"
+      },
+      "passageText": "A: <ruby>冷房<rt>れいぼう</rt></ruby>という<ruby>技術<rt>ぎじゅつ</rt></ruby>は<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>素晴<rt>すば</rt></ruby>らしく、<ruby>私<rt>わたし</rt></ruby>たちは<ruby>暑<rt>あつ</rt></ruby>い<ruby>夏<rt>なつ</rt></ruby>に<ruby>冷房<rt>れいぼう</rt></ruby>のおかげでいろいろ<ruby>助<rt>たす</rt></ruby>けられている。たとえば、<ruby>勉強<rt>べんきょう</rt></ruby>でも<ruby>仕事<rt>しごと</rt></ruby>でも、<ruby>暑<rt>あつ</rt></ruby>い<ruby>中<rt>なか</rt></ruby>、<ruby>汗<rt>あせ</rt></ruby>をかきながらやるよりも、<ruby>涼<rt>すず</rt></ruby>しいところでやったほうがずっと<ruby>快適<rt>かいてき</rt></ruby>だ。\n\nB: しかし、その<ruby>一方で<rt>いっぽうで</rt></ruby>、<ruby>冷房<rt>れいぼう</rt></ruby>が<ruby>原因<rt>げんいん</rt></ruby>で<ruby>体調<rt>たいちょう</rt></ruby>をくずす<ruby>人<rt>ひと</rt></ruby>も<ruby>増<rt>ふ</rt></ruby>えている。<ruby>特<rt>とく</rt></ruby>に、<ruby>室外<rt>しつがい</rt></ruby>と<ruby>室内<rt>しつない</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby><ruby>差<rt>さ</rt></ruby>が<ruby>大<rt>おお</rt></ruby>きいと、<ruby>体<rt>からだ</rt></ruby>がその<ruby>変化<rt>へんか</rt></ruby>についていけなくなってしまう。\n\nC: <ruby>人間<rt>にんげん</rt></ruby>の<ruby>体<rt>からだ</rt></ruby>は、5℃<ruby>以上<rt>いじょう</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby><ruby>差<rt>さ</rt></ruby>があると、<ruby>体温<rt>たいおん</rt></ruby><ruby>調節<rt>ちょうせつ</rt></ruby>がうまくできなくなる。<ruby>外<rt>そと</rt></ruby>が35℃で、<ruby>部屋<rt>へや</rt></ruby>の<ruby>中<rt>なか</rt></ruby>が25℃だと、その<ruby>差<rt>さ</rt></ruby>は10℃もある。このような<ruby>環境<rt>かんきょう</rt></ruby>に<ruby>長<rt>なが</rt></ruby>くいると、だるさや<ruby>頭痛<rt>ずつう</rt></ruby>などの<ruby>症状<rt>しょうじょう</rt></ruby>が<ruby>出<rt>で</rt></ruby>てくるのだ。\n\nD: このように、<ruby>冷房<rt>れいぼう</rt></ruby>は<ruby>暑<rt>あつ</rt></ruby>い<ruby>夏<rt>なつ</rt></ruby>を<ruby>快適<rt>かいてき</rt></ruby>に<ruby>過<rt>す</rt></ruby>ごすための<ruby>優<rt>すぐ</rt></ruby>れた<ruby>技術<rt>ぎじゅつ</rt></ruby>ではあるが、<ruby>思<rt>おも</rt></ruby>わぬ<ruby>体調<rt>たいちょう</rt></ruby><ruby>不良<rt>ふりょう</rt></ruby>の<ruby>原因<rt>げんいん</rt></ruby>にもなりうる。<ruby>冷房<rt>れいぼう</rt></ruby>の<ruby>技術<rt>ぎじゅつ</rt></ruby>はありがたいものだが、<ruby>大事<rt>だいじ</rt></ruby>なことは、その<ruby>技術<rt>ぎじゅつ</rt></ruby>を<ruby>上手<rt>じょうず</rt></ruby>に<ruby>使<rt>つか</rt></ruby>うということだろう。",
+      "footnotes": [],
+      "questions": [
+        {
+          "id": "q12-1",
+          "questionNumber": "問 1",
+          "questionText": "<ruby>問<rt>と</rt></ruby>い この<ruby>文章<rt>ぶんしょう</rt></ruby>で<ruby>一番<rt>いちばん</rt></ruby><ruby>言<rt>い</rt></ruby>いたいことは<ruby>何<rt>なに</rt></ruby>か。",
+          "options": [
+            "<ruby>冷房<rt>れいぼう</rt></ruby>は<ruby>素晴<rt>すば</rt></ruby>らしい<ruby>技術<rt>ぎじゅつ</rt></ruby>なのでどんどん<ruby>使用<rt>しよう</rt></ruby>するべきだ。",
+            "<ruby>室外<rt>しつがい</rt></ruby>と<ruby>室内<rt>しつない</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby><ruby>差<rt>さ</rt></ruby>が10℃<ruby>以上<rt>いじょう</rt></ruby>あると、<ruby>快適<rt>かいてき</rt></ruby>でほっとする。",
+            "<ruby>冷房<rt>れいぼう</rt></ruby>で<ruby>体<rt>からだ</rt></ruby>をこわしてしまうこともあるので、うまく<ruby>使<rt>つか</rt></ruby>う<ruby>必要<rt>ひつよう</rt></ruby>がある。",
+            "<ruby>冷房<rt>れいぼう</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うと<ruby>体温<rt>たいおん</rt></ruby>を<ruby>調節<rt>ちょうせつ</rt></ruby>することができなくなるので、<ruby>使<rt>つか</rt></ruby>わないほうがいい。"
+          ],
+          "correct": 3,
+          "correctOption": "<ruby>冷房<rt>れいぼう</rt></ruby>で<ruby>体<rt>からだ</rt></ruby>をこわしてしまうこともあるので、うまく<ruby>使<rt>つか</rt></ruby>う<ruby>必要<rt>ひつよう</rt></ruby>がある。",
+          "explanation": "文章全体の結論が述べられている段落Dで、「冷房は優れた技術ではあるが、体調不良の原因にもなりうる」「大事なことは、その技術を上手に使うということだろう」とまとめられています。したがって、言いたいことは 3 です。"
+        }
+      ]
+    },
+    {
+      "title": "第1部 問題13",
+      "mondaiHeader": "問題13 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+      "sectionHeader": {
+        "number": "9",
+        "japanese": "筆者の気持ちを理解する",
+        "english": "Understanding the mood of the author"
+      },
+      "passageText": "うちのそばに<ruby>小<rt>ちい</rt></ruby>さいレストランができたので、<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">A</span>さっそく</span><ruby>行<rt>い</rt></ruby>ってみた。<ruby>外<rt>そと</rt></ruby>には<ruby>小<rt>ちい</rt></ruby>さく<ruby>店<rt>みせ</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>が<ruby>書<rt>か</rt></ruby>いてあるだけ。<ruby>派手<rt>はで</rt></ruby>なかざりは<ruby>一<rt>ひと</rt></ruby>つもなく、<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">B</span><ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>いた<ruby>雰囲気<rt>ふんいき</rt></ruby>だ</span>。<ruby>入<rt>はい</rt></ruby>ってみると3つほどテーブルがあり、<ruby>汚<rt>よご</rt></ruby>れ<ruby>一<rt>ひと</rt></ruby>つない<ruby>真<rt>ま</rt></ruby>っ<ruby>白<rt>しろ</rt></ruby>なテーブルクロスがかけられていた。<ruby>私<rt>わたし</rt></ruby>は<ruby>窓<rt>まど</rt></ruby>のそばの<ruby>席<rt>せき</rt></ruby>に<ruby>座<rt>すわ</rt></ruby>り、メニューを<ruby>開<rt>ひら</rt></ruby>いた。どれもとてもおいしそうで、<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">C</span><ruby>期待<rt>きたい</rt></ruby>がふくらんだ</span>。\n\nその<ruby>時<rt>とき</rt></ruby>、10<ruby>人<rt>にん</rt></ruby>ほどの<ruby>集団<rt>しゅうだん</rt></ruby>が<ruby>入<rt>はい</rt></ruby>ってきて、レストランは<ruby>満員<rt>まんいん</rt></ruby>になった。<ruby>彼<rt>かれ</rt></ruby>らはこの<ruby>店<rt>みせ</rt></ruby>によく<ruby>来<rt>く</rt></ruby>るらしく、メニューも<ruby>見<rt>み</rt></ruby>ないでどんどん<ruby>注文<rt>ちゅうもん</rt></ruby>をし<ruby>始<rt>はじ</rt></ruby>めた。<ruby>私<rt>わたし</rt></ruby>は<ruby>自分<rt>じぶん</rt></ruby>の<ruby>注文<rt>ちゅうもん</rt></ruby>が<ruby>後<rt>ご</rt></ruby>になってしまうと<ruby>少<rt>すこ</rt></ruby>し<ruby>心配<rt>しんぱい</rt></ruby>になりながら、<ruby>一番<rt>いちばん</rt></ruby><ruby>人気<rt>にんき</rt></ruby>があるというAセットを<ruby>注文<rt>ちゅうもん</rt></ruby>した。\n\n<ruby>私<rt>わたし</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>が<ruby>先<rt>さき</rt></ruby>に<ruby>店<rt>みせ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ったのに、<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">D</span>やはり<ruby>私<rt>わたし</rt></ruby>の<ruby>料理<rt>りょうり</rt></ruby>は<ruby>彼<rt>かれ</rt></ruby>らの<ruby>料理<rt>りょうり</rt></ruby>の<ruby>後<rt>のち</rt></ruby>に<ruby>運<rt>はこ</rt></ruby>ばれてきた</span>。<span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\"><span class=\"text-[0.8em] mr-0.5 inline-block -translate-y-[1px]\">E</span><ruby>彼<rt>かれ</rt></ruby>らに<ruby>先<rt>さき</rt></ruby>に<ruby>注文<rt>ちゅうもん</rt></ruby>されたからだ</span>。その<ruby>上<rt>うえ</rt></ruby>、<ruby>料理<rt>りょうり</rt></ruby>を<ruby>待<rt>ま</rt></ruby>っている<ruby>間<rt>ま</rt></ruby>ずっと、<ruby>彼<rt>かれ</rt></ruby>らがおいしそうに<ruby>料理<rt>りょうり</rt></ruby>を<ruby>食<rt>た</rt></ruby>べながら、<ruby>大声<rt>おおごえ</rt></ruby>で<ruby>話<rt>はなし</rt></ruby>をするのを<ruby>聞<rt>き</rt></ruby>かされた。<ruby>料理<rt>りょうり</rt></ruby>が<ruby>来<rt>き</rt></ruby>たときにはもう<ruby>疲<rt>つか</rt></ruby>れてしまい、<ruby>味<rt>あじ</rt></ruby>はどうでもよくなってしまった。",
+      "footnotes": [],
+      "questions": [
+        {
+          "id": "q13-1",
+          "questionNumber": "問 1",
+          "questionText": "<ruby>問<rt>と</rt></ruby>い <span class=\"underline underline-offset-[6px] decoration-[1.5px] decoration-gray-600 dark:decoration-gray-400\">この<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>書<rt>か</rt></ruby>いた<ruby>人<rt>ひと</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ち</span>を<ruby>説明<rt>せつめい</rt></ruby>しているのはどれか。",
+          "options": [
+            "レストランはきれいだし、<ruby>料理<rt>りょうり</rt></ruby>がおいしかったので<ruby>満足<rt>まんぞく</rt></ruby>している。",
+            "<ruby>集団<rt>しゅうだん</rt></ruby>のせいでなかなか<ruby>料理<rt>りょうり</rt></ruby>を<ruby>食<rt>た</rt></ruby>べられなかったので、<ruby>楽<rt>たの</rt></ruby>しめなかった。",
+            "レストランはかざりがなくてよくなかったが、<ruby>集団<rt>しゅうだん</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>は<ruby>楽<rt>たの</rt></ruby>しめた。",
+            "<ruby>集団<rt>しゅうだん</rt></ruby>と<ruby>話<rt>はなし</rt></ruby>をしながら<ruby>料理<rt>りょうり</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたので、<ruby>料理<rt>りょうり</rt></ruby>の<ruby>味<rt>あじ</rt></ruby>はどうでもよかった。"
+          ],
+          "correct": 2,
+          "correctOption": "<ruby>集団<rt>しゅうだん</rt></ruby>のせいでなかなか<ruby>料理<rt>りょうり</rt></ruby>を<ruby>食<rt>た</rt></ruby>べられなかったので、<ruby>楽<rt>たの</rt></ruby>しめなかった。",
+          "explanation": "筆者は、後から入ってきた集団に先に注文されて料理を長く待たされ、その間大声の会話を聞かされて疲れてしまい、料理の味もどうでもよくなってしまったと述べています。したがって集団のせいで楽しめなかった心情を説明している 2 が正解です。"
+        }
+      ]
+    }
+  ]
+}

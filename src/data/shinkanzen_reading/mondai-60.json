@@ -1,0 +1,80 @@
+{
+  "id": "mondai-60",
+  "chapterId": "mondai-60",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 4,
+  "mondaiNumber": 60,
+  "partTitle": "実戦問題",
+  "partTitleEn": "Practice Test",
+  "section": "4. 情報検索",
+  "genre": "映画情報",
+  "genreEn": "Film information",
+  "sectionHeader": {
+    "category": "情報検索",
+    "type": "映画情報",
+    "typeEnglish": "Film information"
+  },
+  "title": "問題 60",
+  "instruction": "つぎの文章は、映画館のホームページである。右のページの質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "mondaiHeader": "問題60 つぎの文章は、映画館のホームページである。右のページの質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "passageText": "<div class=\"max-w-2xl mx-auto font-sans text-gray-900 leading-relaxed text-sm md:text-base\">\n  <div class=\"mb-4\">\n    <div class=\"font-bold text-base mb-2\">A ≪上映時間≫</div>\n    <div class=\"border-2 border-gray-800 bg-white shadow-sm overflow-hidden\">\n      <table class=\"w-full text-xs md:text-sm border-collapse\">\n        <thead>\n          <tr class=\"border-b-2 border-gray-800 bg-gray-100 font-bold text-center\">\n            <th class=\"p-2 border-r border-gray-400 w-16 md:w-20\"></th>\n            <th class=\"p-2 border-r border-gray-400 w-1/3\">シネマ1（50席）</th>\n            <th class=\"p-2 border-r border-gray-400 w-1/3\">シネマ2（150席）</th>\n            <th class=\"p-2 w-1/3\">シネマ3（300席）</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr class=\"border-b border-gray-300\">\n            <td class=\"p-2 border-r border-gray-400 font-bold text-center bg-gray-50\">10:00</td>\n            <td class=\"p-2 border-r border-gray-300 text-center\">\n              <div class=\"border border-gray-400 p-2 bg-gray-50 rounded\">\n                <div>10:15 大きな食卓</div>\n                <div>≀</div>\n                <div>12:25</div>\n              </div>\n            </td>\n            <td class=\"p-2 border-r border-gray-300 text-center\" rowspan=\"2\">\n              <div class=\"border border-gray-400 p-2 bg-gray-50 rounded\">\n                <div>11:45 猫と一郎</div>\n                <div>≀</div>\n                <div>13:30</div>\n              </div>\n            </td>\n            <td class=\"p-2 text-center\" rowspan=\"2\">\n              <div class=\"border border-gray-400 p-2 bg-gray-50 rounded\">\n                <div>11:15 風の忍者</div>\n                <div>≀</div>\n                <div>14:15</div>\n              </div>\n            </td>\n          </tr>\n          <tr class=\"border-b border-gray-300\">\n            <td class=\"p-2 border-r border-gray-400 font-bold text-center bg-gray-50\">12:00</td>\n            <td class=\"p-2 border-r border-gray-300 text-center\"></td>\n          </tr>\n          <tr class=\"border-b border-gray-300\">\n            <td class=\"p-2 border-r border-gray-400 font-bold text-center bg-gray-50\">14:00</td>\n            <td class=\"p-2 border-r border-gray-300 text-center\">\n              <div class=\"border border-gray-400 p-2 bg-gray-50 rounded\">\n                <div>14:00 大きな食卓</div>\n                <div>≀</div>\n                <div>16:10</div>\n              </div>\n            </td>\n            <td class=\"p-2 border-r border-gray-300 text-center\" rowspan=\"2\">\n              <div class=\"border border-gray-400 p-2 bg-gray-50 rounded\">\n                <div>15:15 猫と一郎</div>\n                <div>≀</div>\n                <div>17:00</div>\n              </div>\n            </td>\n            <td class=\"p-2 text-center\" rowspan=\"2\">\n              <div class=\"border border-gray-400 p-2 bg-gray-50 rounded\">\n                <div>14:30 風の忍者</div>\n                <div>≀</div>\n                <div>17:30</div>\n              </div>\n            </td>\n          </tr>\n          <tr class=\"border-b border-gray-300\">\n            <td class=\"p-2 border-r border-gray-400 font-bold text-center bg-gray-50\">16:00</td>\n            <td class=\"p-2 border-r border-gray-300 text-center\"></td>\n          </tr>\n          <tr class=\"border-b border-gray-300\">\n            <td class=\"p-2 border-r border-gray-400 font-bold text-center bg-gray-50\">18:00</td>\n            <td class=\"p-2 border-r border-gray-300 text-center\">\n              <div class=\"border border-gray-400 p-2 bg-gray-50 rounded\">\n                <div>17:15 大きな食卓</div>\n                <div>≀</div>\n                <div>19:25</div>\n              </div>\n            </td>\n            <td class=\"p-2 border-r border-gray-300 text-center\">\n              <div class=\"border border-gray-400 p-2 bg-gray-50 rounded\">\n                <div>19:15 オハナ♡</div>\n                <div>≀</div>\n                <div>21:35</div>\n              </div>\n            </td>\n            <td class=\"p-2 text-center\"></td>\n          </tr>\n          <tr>\n            <td class=\"p-2 border-r border-gray-400 font-bold text-center bg-gray-50\">20:00</td>\n            <td class=\"p-2 border-r border-gray-300 text-center\"></td>\n            <td class=\"p-2 border-r border-gray-300 text-center\"></td>\n            <td class=\"p-2 text-center\"></td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n  <div>\n    <div class=\"font-bold text-base mb-2\">B ≪映画紹介≫</div>\n    <div class=\"border-2 border-gray-800 p-4 bg-white shadow-sm space-y-2 text-xs md:text-sm leading-relaxed\">\n      <div>＊「<strong>大きな食卓</strong>」……15人家族の日常生活。笑いと涙の3年間を追った記録映画。</div>\n      <div>＊「<strong>猫と一郎</strong>」……一郎は7歳の少年。メガネをかけると猫と会話ができる！？</div>\n      <div>＊「<strong>風の忍者</strong>」……風のように移動する忍者ハンゾー。人気マンガを映画化。</div>\n      <div>＊「<strong>オハナ♡</strong>」……ダンスチームの5人が世界のトップを目指す中で、いつしか家族のような関係に。オハナとはハワイの言葉で「家族」の意味。</div>\n    </div>\n  </div>\n</div>",
+  "passageLayout": "html",
+  "footnotes": [],
+  "vocabulary": [
+    {
+      "word": "ホームページ",
+      "reading": "ホームページ",
+      "meaning": "Website, home page"
+    },
+    {
+      "word": "〜席",
+      "reading": "〜せき",
+      "meaning": "Seating for ~, ~ seats"
+    },
+    {
+      "word": "追う",
+      "reading": "おう",
+      "meaning": "To follow, pursue, chronicle"
+    },
+    {
+      "word": "記録",
+      "reading": "きろく",
+      "meaning": "Record, chronicle"
+    },
+    {
+      "word": "目指す",
+      "reading": "めざす",
+      "meaning": "To aim for, head toward"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "questionNumber": "問 1",
+      "questionText": "グエンさんは動物が出てくる映画が見たい。午前中はアルバイトがあるが、午後は時間がある。何時から始まる映画が見られるか。",
+      "options": [
+        "12:25",
+        "14:00",
+        "14:30",
+        "15:15"
+      ],
+      "correct": 4,
+      "correctOption": "15:15",
+      "explanation": "Bの映画紹介より、動物（猫）が出てくる映画は「猫と一郎」です。グエンさんは午後（12:00以降）に見られる映画を探しています。Aの上映時間表を見ると、「猫と一郎」の上映開始時刻はシネマ2で11:45と15:15です。午後に始まる上映は「15:15」です。したがって正解は4です。"
+    },
+    {
+      "id": "q2",
+      "questionNumber": "問 2",
+      "questionText": "タンさんは、午後時間ができたので映画を見ることにした。映画館にいられる時間は午後3時から午後6時までの3時間だけである。今日タンさんが、初めから終わりまで見ることができる映画は次のうちどれか。",
+      "options": [
+        "大きな食卓",
+        "猫と一郎",
+        "風の忍者",
+        "オハナ♡"
+      ],
+      "correct": 2,
+      "correctOption": "猫と一郎",
+      "explanation": "午後3時（15:00）〜午後6時（18:00）の間に初めから終わりまで収まる映画を探します。\n・「大きな食卓」：14:00〜16:10（15:00時点ですでに上映中）、17:15〜19:25（18:00までに終わらない）。\n・「猫と一郎」：15:15〜17:00（15:00〜18:00の間にすっぽり収まる）。\n・「風の忍者」：14:30〜17:30（15:00時点ですでに始まっている）。\n・「オハナ♡」：19:15〜21:35（時間外）。\nしたがって初めから終わりまで見られるのは「猫と一郎」です。正解は2です。"
+    }
+  ]
+}

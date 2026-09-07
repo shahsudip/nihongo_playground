@@ -1,0 +1,70 @@
+{
+  "id": "mondai-55",
+  "chapterId": "mondai-55",
+  "bookId": "shinkanzen-master-n3-reading",
+  "part": 4,
+  "mondaiNumber": 55,
+  "partTitle": "実戦問題",
+  "partTitleEn": "Practice Test",
+  "section": "4. 情報検索",
+  "genre": "パンフレット",
+  "genreEn": "Pamphlets",
+  "sectionHeader": {
+    "category": "情報検索",
+    "type": "パンフレット",
+    "typeEnglish": "Pamphlets"
+  },
+  "title": "問題 55",
+  "instruction": "右のページの文章は文化講座の案内パンフレットである。これを読んで下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "mondaiHeader": "問題55 右のページの文章は文化講座の案内パンフレットである。これを読んで下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "passageText": "<div class=\"border-2 border-gray-800 p-6 max-w-2xl mx-auto font-sans bg-white text-gray-900 shadow-sm leading-relaxed text-sm md:text-base space-y-4\">\n  <div class=\"text-center\">\n    <div class=\"text-base md:text-lg font-bold\">「文化カフェ」 http://bunkacafe.com</div>\n    <div class=\"text-xs md:text-sm text-gray-700 mt-1 font-medium\">♪お茶を飲みながらいろいろな国の人と楽しいひととき♪</div>\n  </div>\n\n  <div class=\"space-y-3 pt-2\">\n    <div>\n      <div class=\"font-bold text-sm md:text-base border-b border-gray-300 pb-1 mb-1.5\">★語学クラス★</div>\n      <div class=\"pl-2 space-y-1 text-xs md:text-sm\">\n        <div class=\"flex flex-wrap justify-between gap-1\">\n          <span class=\"font-medium\">①「日本語」</span>\n          <span>毎週 月曜　15:00〜16:30</span>\n        </div>\n        <div class=\"flex flex-wrap justify-between gap-1\">\n          <span class=\"font-medium\">②「アラビア語」</span>\n          <span>毎週 水曜　19:00〜20:30</span>\n        </div>\n        <div class=\"flex flex-wrap justify-between gap-1\">\n          <span class=\"font-medium\">③「中国語」</span>\n          <span>第4週の日曜日　14:00〜15:30</span>\n        </div>\n      </div>\n    </div>\n\n    <div>\n      <div class=\"font-bold text-sm md:text-base border-b border-gray-300 pb-1 mb-1.5\">★日本文化クラス★</div>\n      <div class=\"pl-2 space-y-2 text-xs md:text-sm\">\n        <div>\n          <div class=\"flex flex-wrap justify-between gap-1 font-medium\">\n            <span>④「お茶クラス」</span>\n            <span>第4日曜日 15:00〜17:00</span>\n          </div>\n          <div class=\"text-gray-700 pl-2\">茶道を習ったり、和菓子を食べたり、お茶に関係することを学ぶ</div>\n        </div>\n        <div>\n          <div class=\"flex flex-wrap justify-between gap-1 font-medium\">\n            <span>⑤「京都クラス」</span>\n            <span>月1回程度</span>\n          </div>\n          <div class=\"text-gray-700 pl-2\">京都のお寺や料理、京都についての情報を交換する。</div>\n        </div>\n        <div>\n          <div class=\"flex flex-wrap justify-between gap-1 font-medium\">\n            <span>⑥「日本ポップカルチャークラス」</span>\n            <span>月1回程度</span>\n          </div>\n          <div class=\"text-gray-700 pl-2\">日本のアニメやJ-ポップなどいろいろな日本文化について学びおしゃべりする。</div>\n        </div>\n      </div>\n    </div>\n\n    <div>\n      <div class=\"font-bold text-sm md:text-base border-b border-gray-300 pb-1 mb-1.5\">★イベント★</div>\n      <div class=\"pl-2 text-xs md:text-sm\">\n        <div class=\"font-medium\">⑦「世界の料理教室」年数回</div>\n        <div class=\"text-gray-700 pl-2\">…いろいろな国の料理を一緒に作って食べます♪</div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"border-t-2 border-dotted border-gray-400 pt-3 space-y-2 text-xs md:text-sm\">\n    <div>\n      <div class=\"font-bold\">☆料金（「文化カフェ」の会員は500円割引）</div>\n      <div class=\"pl-3 space-y-0.5 mt-1 text-gray-800\">\n        <div>語学クラス　1回　2,000円</div>\n        <div>日本文化クラス　1回　1,500円</div>\n      </div>\n    </div>\n    <div>\n      <div class=\"font-bold\">☆定員8名（先着順）</div>\n    </div>\n    <div>\n      <div class=\"font-bold\">☆申し込み　3日前までにネットで予約</div>\n      <div class=\"pl-3 text-gray-700\">→ info@bunkacafe.com</div>\n    </div>\n    <div>\n      <div class=\"font-bold\">☆場所　みなと市民会館（みなと駅徒歩4分）</div>\n    </div>\n  </div>\n</div>",
+  "passageLayout": "html",
+  "footnotes": [],
+  "vocabulary": [
+    {
+      "word": "語学",
+      "reading": "ごがく",
+      "meaning": "Language study"
+    },
+    {
+      "word": "情報",
+      "reading": "じょうほう",
+      "meaning": "Information"
+    },
+    {
+      "word": "交換する",
+      "reading": "こうかんする",
+      "meaning": "To exchange"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "questionNumber": "問 1",
+      "questionText": "右の文章の中の「⑤京都クラス」のクラスに、「文化カフェ」の会員が参加する場合、1回の料金はいくらか。",
+      "options": [
+        "500円",
+        "1,000円",
+        "1,500円",
+        "2,000円"
+      ],
+      "correct": 2,
+      "correctOption": "1,000円",
+      "explanation": "「⑤京都クラス」は「★日本文化クラス★」に含まれます。日本文化クラスの通常料金は「1回 1,500円」ですが、「文化カフェの会員は500円割引」とあるため、1,500円 - 500円 = 1,000円となります。正解は2（1,000円）です。"
+    },
+    {
+      "id": "q2",
+      "questionNumber": "問 2",
+      "questionText": "リーさんは4月9日(水)のアラビア語クラスに参加したい。何をすればよいか。",
+      "options": [
+        "4月6日までに、電話して予約する。",
+        "4月6日までに、ネットで予約する。",
+        "4月8日までに、みなと市民会館に行って予約する。",
+        "4月9日に、教室に行って申し込む。"
+      ],
+      "correct": 2,
+      "correctOption": "4月6日までに、ネットで予約する。",
+      "explanation": "パンフレットの申し込み方法に「3日前までにネットで予約（→ info@bunkacafe.com）」と書かれています。4月9日の3日前は4月6日です。したがって「4月6日までに、ネットで予約する」が正しい手続きです。正解は2です。"
+    }
+  ]
+}
