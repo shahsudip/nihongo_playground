@@ -1,7 +1,6 @@
 // src/components/SpeedMasterN3ReadingBook.jsx
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import Header from './header_component.jsx';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 import '../assets/speed_master_book.css';
 
@@ -463,8 +462,6 @@ const SpeedMasterN3ReadingBook = () => {
 
   return (
     <div className={`speed-master-page theme-${theme} font-size-${fontSize}`}>
-      <Header />
-
       <main className="max-w-5xl mx-auto px-4 py-6">
         
         {/* Top Breadcrumb & Section Tabs */}

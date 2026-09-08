@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
-import Header from './header_component.jsx';
+import { useLocation, useNavigate, useParams, Link } from 'react-router-dom';
 
 export default function CustomKanjiDrillQuiz() {
   const { level } = useParams();
@@ -124,7 +123,6 @@ export default function CustomKanjiDrillQuiz() {
 
   return (
     <div className="min-h-screen relative overflow-x-hidden flex flex-col" style={{ backgroundColor: '#F6F4EE', fontFamily: '"Noto Serif JP", "Times New Roman", serif' }}>
-      <Header />
       
       {/* Background Decals (Bamboo & Ink splatters) */}
       <div className="absolute top-20 left-0 w-full h-full pointer-events-none opacity-40 z-0">

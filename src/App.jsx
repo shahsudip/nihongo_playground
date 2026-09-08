@@ -64,23 +64,21 @@ export default function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
         
-        {/* Standalone Pages (No MainLayout) */}
-        <Route path="/levels/:level/kanji-list" element={<ProtectedRoute><KanjiListPage /></ProtectedRoute>} />
-        <Route path="/kanji-drill/:level" element={<ProtectedRoute><CustomKanjiDrillQuiz /></ProtectedRoute>} />
-        <Route path="/levels/:level/vocabulary-list" element={<ProtectedRoute><VocabularyListPage /></ProtectedRoute>} />
-        <Route path="/levels/:level/grammar-list" element={<ProtectedRoute><GrammarListPage /></ProtectedRoute>} />
-        <Route path="/levels/:level/new-vocab-list" element={<ProtectedRoute><VocabularyListPage /></ProtectedRoute>} />
-        <Route path="/levels/:level/new-grammar-list" element={<ProtectedRoute><GrammarListPage /></ProtectedRoute>} />
-        <Route path="/levels/:level/kanji-details/:id" element={<ProtectedRoute><KanjiDetailsPage /></ProtectedRoute>} />
-        <Route path="/levels/:level/vocab-details/:id" element={<ProtectedRoute><VocabDetailsPage /></ProtectedRoute>} />
-        <Route path="/levels/:level/grammar-details/:id" element={<ProtectedRoute><GrammarDetailsPage /></ProtectedRoute>} />
-
-        {/* All other pages use the MainLayout and are protected */}
-        <Route element={<MainLayout />}>
-          <Route
-            path="/profile"
-            element={<ProtectedRoute><ProfilePage /></ProtectedRoute>}
-          />
+          {/* All protected pages use the MainLayout */}
+          <Route element={<MainLayout />}>
+            <Route path="/levels/:level/kanji-list" element={<ProtectedRoute><KanjiListPage /></ProtectedRoute>} />
+            <Route path="/kanji-drill/:level" element={<ProtectedRoute><CustomKanjiDrillQuiz /></ProtectedRoute>} />
+            <Route path="/levels/:level/vocabulary-list" element={<ProtectedRoute><VocabularyListPage /></ProtectedRoute>} />
+            <Route path="/levels/:level/grammar-list" element={<ProtectedRoute><GrammarListPage /></ProtectedRoute>} />
+            <Route path="/levels/:level/new-vocab-list" element={<ProtectedRoute><VocabularyListPage /></ProtectedRoute>} />
+            <Route path="/levels/:level/new-grammar-list" element={<ProtectedRoute><GrammarListPage /></ProtectedRoute>} />
+            <Route path="/levels/:level/kanji-details/:id" element={<ProtectedRoute><KanjiDetailsPage /></ProtectedRoute>} />
+            <Route path="/levels/:level/vocab-details/:id" element={<ProtectedRoute><VocabDetailsPage /></ProtectedRoute>} />
+            <Route path="/levels/:level/grammar-details/:id" element={<ProtectedRoute><GrammarDetailsPage /></ProtectedRoute>} />
+            <Route
+              path="/profile"
+              element={<ProtectedRoute><ProfilePage /></ProtectedRoute>}
+            />
           <Route
             path="/levels"
             element={<ProtectedRoute><LevelSelectionPage /></ProtectedRoute>}

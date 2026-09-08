@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import Header from './header_component.jsx';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 import defaultWeek1Day1 from '../data/somatome_week1_day1.json';
 import { db } from '../firebaseConfig.js';
@@ -217,11 +216,8 @@ const SomatomeN3Book = () => {
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-100 dark:bg-gray-900 pb-8 pt-4 flex flex-col items-center">
-        <div className="w-full max-w-[850px] px-4 mb-4 z-10">
-          <Header 
-            title="Somatome PDF Viewer" 
-            onBack={() => navigate('/books/sou-matome-n3-reading')} 
-          />
+        <div className="w-full max-w-[850px] px-4 mb-2 z-10">
+          <Link to="/books/sou-matome-n3-reading" className="text-sm font-semibold text-blue-500 hover:underline inline-block">&larr; Back to Lessons</Link>
         </div>
         <div className="flex-1 flex flex-col items-center justify-center p-8 bg-white dark:bg-gray-800 rounded-xl shadow-xl w-full max-w-[850px] min-h-[400px]">
           <LoadingSpinner />
@@ -234,11 +230,8 @@ const SomatomeN3Book = () => {
   if (!data) {
     return (
       <div className="min-h-screen bg-gray-100 dark:bg-gray-900 pb-8 pt-4 flex flex-col items-center">
-        <div className="w-full max-w-[850px] px-4 mb-4 z-10">
-          <Header 
-            title="Somatome PDF Viewer" 
-            onBack={() => navigate('/books/sou-matome-n3-reading')} 
-          />
+        <div className="w-full max-w-[850px] px-4 mb-2 z-10">
+          <Link to="/books/sou-matome-n3-reading" className="text-sm font-semibold text-blue-500 hover:underline inline-block">&larr; Back to Lessons</Link>
         </div>
         <div className="flex-1 flex flex-col items-center justify-center p-8 bg-white dark:bg-gray-800 rounded-xl shadow-xl w-full max-w-[850px] min-h-[400px] text-center border border-gray-200 dark:border-gray-700">
           <div className="text-5xl mb-4">📖</div>
@@ -268,11 +261,10 @@ const SomatomeN3Book = () => {
 
   return (
     <div className="min-h-screen bg-gray-200 dark:bg-gray-900 pb-6 pt-4 flex flex-col items-center overflow-hidden">
-      <div className="w-full max-w-[850px] px-4 mb-3 z-10">
-        <Header 
-          title={`Somatome PDF Viewer - ${data.title || 'JLPT N3 Reading'}`} 
-          onBack={() => navigate('/books/sou-matome-n3-reading')} 
-        />
+      <div className="w-full max-w-[850px] px-4 mb-2 z-10">
+        <Link to="/books/sou-matome-n3-reading" className="text-sm font-semibold text-blue-500 hover:underline mb-2 inline-block">
+          &larr; Back to Lessons
+        </Link>
         
         {/* Navigation & Chapter Bar */}
         <div className="flex flex-wrap items-center justify-between gap-2 bg-gray-900 text-white px-4 py-2.5 mt-2 rounded-xl shadow-md text-sm font-medium border border-gray-700">

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 import { db } from '../firebaseConfig';
-import Header from './header_component.jsx';
 import Pagination from './Pagination.jsx';
 
 export default function GrammarListPage() {
@@ -55,8 +54,7 @@ export default function GrammarListPage() {
 
   return (
     <div className="bg-[var(--color-bg-primary)] min-h-screen">
-      <Header />
-      <div className="max-w-screen-xl mx-auto px-4 py-12">
+      <div className="max-w-screen-xl mx-auto px-4 py-8">
         
         <div className="flex flex-col justify-center items-center text-center mb-8">
         <h1 className="text-[50px] md:text-[80px] font-extrabold uppercase leading-none" style={{ color: 'rgb(255, 161, 208)', textShadow: 'white -2px -2px 0px, white 2px -2px 0px, white -2px 2px 0px, white 2px 2px 0px' }}>

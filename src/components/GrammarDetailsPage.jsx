@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams, Link } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebaseConfig';
-import Header from './header_component.jsx';
 
 export default function GrammarDetailsPage() {
   const { level, id } = useParams();
@@ -49,7 +48,6 @@ export default function GrammarDetailsPage() {
   if (!grammar) {
     return (
       <div className="bg-white min-h-screen text-black">
-        <Header />
         <div className="flex justify-center items-center h-64">
           <p className="text-xl">Grammar details not found. Please go back to the list.</p>
         </div>
@@ -78,8 +76,10 @@ export default function GrammarDetailsPage() {
 
   return (
     <div className="bg-gray-50 min-h-screen text-black pb-12">
-      <Header />
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 py-6">
+        <Link to={`/levels/${level}/grammar-list`} className="text-sm font-semibold text-blue-500 hover:underline mb-4 inline-block">
+          &larr; Back to Grammar List
+        </Link>
         
         <div className="bg-white rounded-xl shadow-lg border border-gray-300 transform transition-all relative overflow-hidden mb-8">
           <div className="p-6 md:p-10 text-center">

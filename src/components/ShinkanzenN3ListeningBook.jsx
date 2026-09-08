@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import Header from './header_component.jsx';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 
 // Eagerly load all local Shinkanzen Listening JSON files
@@ -196,11 +195,10 @@ const ShinkanzenN3ListeningBook = () => {
       {/* Hidden Audio Element */}
       <audio ref={audioRef} src={resolvePublicUrl(activeAudioSrc)} />
 
-      <div className="w-full max-w-[850px] px-4 mb-3 z-20 relative">
-        <Header 
-          title={`新完全マスター聴解 N3 — ${data?.title || 'Listening'}`} 
-          onBack={() => navigate('/books/shinkanzen-master-n3-listening')} 
-        />
+      <div className="w-full max-w-[850px] px-4 mb-2 z-20 relative">
+        <Link to="/books/shinkanzen-master-n3-listening" className="text-sm font-semibold text-blue-500 hover:underline mb-2 inline-block">
+          &larr; Back to Chapters
+        </Link>
         
         {/* Navigation & Mode Toggle */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-gray-900 text-white px-4 py-3 mt-2 rounded-xl shadow-md text-sm border border-gray-700">

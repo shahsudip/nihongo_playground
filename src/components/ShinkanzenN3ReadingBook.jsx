@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import Header from './header_component.jsx';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 import '../assets/shinkanzen_book.css';
 import { db } from '../firebaseConfig.js';
@@ -277,11 +276,8 @@ const ShinkanzenN3ReadingBook = () => {
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-100 dark:bg-gray-900 pb-8 pt-4 flex flex-col items-center">
-        <div className="w-full max-w-[850px] px-4 mb-4 z-10">
-          <Header 
-            title="Shinkanzen Master N3 Reading" 
-            onBack={() => navigate('/books/shinkanzen-master-n3-reading')} 
-          />
+        <div className="w-full max-w-[850px] px-4 mb-2 z-10">
+          <Link to="/books/shinkanzen-master-n3-reading" className="text-sm font-semibold text-blue-500 hover:underline inline-block">&larr; Back to Chapters</Link>
         </div>
         <div className="flex-1 flex flex-col items-center justify-center p-8 bg-white dark:bg-gray-800 rounded-xl shadow-xl w-full max-w-[850px] min-h-[400px]">
           <LoadingSpinner />
@@ -295,11 +291,8 @@ const ShinkanzenN3ReadingBook = () => {
   if (!data) {
     return (
       <div className="min-h-screen bg-gray-100 dark:bg-gray-900 pb-8 pt-4 flex flex-col items-center">
-        <div className="w-full max-w-[850px] px-4 mb-4 z-10">
-          <Header 
-            title="Shinkanzen Master N3 Reading" 
-            onBack={() => navigate('/books/shinkanzen-master-n3-reading')} 
-          />
+        <div className="w-full max-w-[850px] px-4 mb-2 z-10">
+          <Link to="/books/shinkanzen-master-n3-reading" className="text-sm font-semibold text-blue-500 hover:underline inline-block">&larr; Back to Chapters</Link>
         </div>
         <div className="flex-1 flex flex-col items-center justify-center p-8 bg-white dark:bg-gray-800 rounded-xl shadow-xl w-full max-w-[850px] min-h-[400px] text-center border border-gray-200 dark:border-gray-700">
           <div className="text-5xl mb-4">📖</div>
@@ -442,10 +435,9 @@ const ShinkanzenN3ReadingBook = () => {
   return (
     <div className="min-h-screen bg-gray-200 dark:bg-gray-900 pb-6 pt-4 flex flex-col items-center overflow-hidden">
       <div className="w-full max-w-[850px] px-4 mb-2 z-10">
-        <Header 
-          title={`新完全マスター N3 読解 — ${data.title || 'Reading'}`} 
-          onBack={() => navigate('/books/shinkanzen-master-n3-reading')} 
-        />
+        <Link to="/books/shinkanzen-master-n3-reading" className="text-sm font-semibold text-blue-500 hover:underline mb-2 inline-block">
+          &larr; Back to Chapters
+        </Link>
         
         {/* Navigation & Chapter Bar */}
         <div className="flex flex-wrap items-center justify-between gap-2 bg-gray-900 text-white px-4 py-2 mt-1 rounded-xl shadow-md text-sm font-medium border border-gray-700">
