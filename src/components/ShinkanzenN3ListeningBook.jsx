@@ -187,10 +187,10 @@ const ShinkanzenN3ListeningBook = () => {
     return path.startsWith('/') ? import.meta.env.BASE_URL + path.slice(1) : import.meta.env.BASE_URL + path;
   };
 
-  if (loading) return <div className="min-h-screen bg-gray-100 dark:bg-gray-900 pb-8 pt-4 flex flex-col items-center"><LoadingSpinner /></div>;
+  if (loading) return <div className="min-h-screen bg-gray-100 dark:bg-gray-900 pb-8 pt-24 md:pt-28 flex flex-col items-center"><LoadingSpinner /></div>;
 
   return (
-    <div className="min-h-screen bg-gray-200 dark:bg-gray-900 pb-6 pt-4 flex flex-col items-center overflow-hidden">
+    <div className="min-h-screen bg-gray-200 dark:bg-gray-900 pb-6 pt-24 md:pt-28 flex flex-col items-center overflow-hidden">
       
       {/* Hidden Audio Element */}
       <audio ref={audioRef} src={resolvePublicUrl(activeAudioSrc)} />

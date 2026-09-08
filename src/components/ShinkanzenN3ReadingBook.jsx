@@ -275,7 +275,7 @@ const ShinkanzenN3ReadingBook = () => {
   // ── Loading State ──
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-100 dark:bg-gray-900 pb-8 pt-4 flex flex-col items-center">
+      <div className="min-h-screen bg-gray-100 dark:bg-gray-900 pb-8 pt-24 md:pt-28 flex flex-col items-center">
         <div className="w-full max-w-[850px] px-4 mb-2 z-10">
           <Link to="/books/shinkanzen-master-n3-reading" className="text-sm font-semibold text-blue-500 hover:underline inline-block">&larr; Back to Chapters</Link>
         </div>
@@ -290,7 +290,7 @@ const ShinkanzenN3ReadingBook = () => {
   // ── No Data State ──
   if (!data) {
     return (
-      <div className="min-h-screen bg-gray-100 dark:bg-gray-900 pb-8 pt-4 flex flex-col items-center">
+      <div className="min-h-screen bg-gray-100 dark:bg-gray-900 pb-8 pt-24 md:pt-28 flex flex-col items-center">
         <div className="w-full max-w-[850px] px-4 mb-2 z-10">
           <Link to="/books/shinkanzen-master-n3-reading" className="text-sm font-semibold text-blue-500 hover:underline inline-block">&larr; Back to Chapters</Link>
         </div>
@@ -433,7 +433,7 @@ const ShinkanzenN3ReadingBook = () => {
 
 
   return (
-    <div className="min-h-screen bg-gray-200 dark:bg-gray-900 pb-6 pt-4 flex flex-col items-center overflow-hidden">
+    <div className="min-h-screen bg-gray-200 dark:bg-gray-900 pb-6 pt-24 md:pt-28 flex flex-col items-center overflow-hidden">
       <div className="w-full max-w-[850px] px-4 mb-2 z-10">
         <Link to="/books/shinkanzen-master-n3-reading" className="text-sm font-semibold text-blue-500 hover:underline mb-2 inline-block">
           &larr; Back to Chapters
