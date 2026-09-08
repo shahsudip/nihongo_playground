@@ -91,7 +91,7 @@ const BookListPage = () => {
 
       <div className="books-grid">
         {/* Static Card for JLPT Practice Sets */}
-        <div className="book-card" style={{ border: '2px solid var(--primary-green)' }}>
+        <div className="book-card" style={{ borderColor: 'var(--color-primary, #059669)', borderWidth: '2px' }}>
           <div className="book-cover-artwork" style={{ background: 'linear-gradient(135deg, #10b981, #059669)' }}>
             <span className="book-cover-badge">N3</span>
             <h3 className="book-cover-title">JLPT N3 Practice Sets</h3>
@@ -109,7 +109,7 @@ const BookListPage = () => {
             </div>
 
             <div className="book-card-footer">
-              <Link to="/practice-sets" className="view-chapters-button" style={{ backgroundColor: 'var(--primary-green)', color: 'white' }}>
+              <Link to="/practice-sets" className="view-chapters-button">
                 Start Practice &rarr;
               </Link>
             </div>

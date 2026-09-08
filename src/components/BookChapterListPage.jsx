@@ -1,7 +1,7 @@
-// src/components/BookChapterListPage.jsx
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
+import { useTheme } from '../context/ThemeContext.jsx';
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
@@ -13,10 +13,12 @@ import SouMatomeChapterList from './SouMatomeChapterList.jsx';
 import TangoChapterList from './TangoChapterList.jsx';
 import StandardChapterList from './StandardChapterList.jsx';
 import { STATIC_BOOKS } from '../data/static_books_catalog.js';
+import '../assets/shin500_drill.css';
 
 const BookChapterListPage = () => {
   const { bookId } = useParams();
   const { currentUser } = useAuth();
+  const { theme } = useTheme();
   
   const staticBook = STATIC_BOOKS.find(b => b.id === bookId) || null;
   const [book, setBook] = useState(staticBook);
@@ -137,12 +139,21 @@ const BookChapterListPage = () => {
     };
   }, [bookId, currentUser, staticBook, isReadingBook]);
 
-  if (loading) return <LoadingSpinner />;
+  if (loading) {
+    if (isShin500) {
+      return (
+        <div className={`shin500-chapter-page theme-${theme} flex items-center justify-center min-h-screen`}>
+          <LoadingSpinner />
+        </div>
+      );
+    }
+    return <LoadingSpinner />;
+  }
   if (error) return <div className="error-message">{error}</div>;
   if (!book) return null;
 
   return (
-    <div className="book-detail-container">
+    <div className={`book-detail-container ${isShin500 ? `shin500-chapter-page theme-${theme}` : ''}`}>
       <nav aria-label="Breadcrumb" className="ps-breadcrumb mb-6">
         <ol className="flex flex-wrap items-center gap-1 text-sm">
           <li className="flex items-center">

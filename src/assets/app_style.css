@@ -1,16 +1,33 @@
-/* === NEW THEME: COLOR PALETTE === */
-:root {
-  --primary-green: #58a700;
-  --primary-green-dark: #468400;
-  --text-light: #e2e8f0;
-  --text-medium: #a0aec0;
-  --background-dark: #1a202c;
-  --background-light: #2d3748;
-  --surface-light: #4a5568;
-  --feedback-correct: #48bb78;
-  --feedback-incorrect: #f56565;
-  --feedback-new: #4299e1;      /* Blue for "New" items */
-  --feedback-mastered: #9f7aea; /* Purple for "Mastered" items */
+/* === COLOR PALETTE: LIGHT (WARM PARCHMENT) & DARK === */
+:root,
+html.theme-light,
+[data-theme='light'] {
+  --primary-green: #059669;
+  --primary-green-dark: #047857;
+  --text-light: #000000;
+  --text-medium: #1f2937;
+  --background-dark: #f4ecdc;
+  --background-light: #fcf9f2;
+  --surface-light: #decfae;
+  --feedback-correct: #059669;
+  --feedback-incorrect: #dc2626;
+  --feedback-new: #0284c7;
+  --feedback-mastered: #7c3aed;
+}
+
+html.theme-dark,
+[data-theme='dark'] {
+  --primary-green: #10b981;
+  --primary-green-dark: #059669;
+  --text-light: #ffffff;
+  --text-medium: #e2e8f0;
+  --background-dark: #0d1117;
+  --background-light: #161b22;
+  --surface-light: #272c33;
+  --feedback-correct: #10b981;
+  --feedback-incorrect: #ef4444;
+  --feedback-new: #38bdf8;
+  --feedback-mastered: #a78bfa;
 }
 
 /* === GLOBAL STYLES === */

@@ -3,35 +3,64 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --color-primary:#0d9488;
-    --color-primary-light:#14b8a6;
-    --color-primary-dark:#0f766e;
-    --color-accent:#10b981;
-    --color-accent-light:#34d399;
-    --color-accent-dark:#059669;
-    --color-success:#4a7c59;
-    --color-success-light:#5a9c69;
-    --color-success-dark:#3a6c49;
-    --color-warning:#c9a227;
-    --color-bg-primary:#0d1117;
-    --color-bg-secondary:#161b22;
-    --color-bg-tertiary:#21262d;
-    --color-bg-card:#1c2128;
-    --color-text-primary:#f0f6fc;
-    --color-text-secondary:#8b949e;
-    --color-text-muted:#6e7681;
-    --color-border:#272c33;
-    --color-border-light:#353b44;
-    --gradient-primary:linear-gradient(135deg,var(--color-primary) 0%,var(--color-primary-dark) 100%);
-    --gradient-accent:linear-gradient(135deg,var(--color-accent) 0%,var(--color-accent-dark) 100%);
-    --gradient-card:linear-gradient(180deg,#1e3a5f1a 0%,transparent 100%);
+  :root,
+  html.theme-light,
+  [data-theme='light'] {
+    --color-primary: #059669;
+    --color-primary-light: #10b981;
+    --color-primary-dark: #047857;
+    --color-accent: #059669;
+    --color-accent-light: #ecfdf5;
+    --color-accent-dark: #047857;
+    --color-success: #059669;
+    --color-success-light: #10b981;
+    --color-success-dark: #047857;
+    --color-warning: #d97706;
+    --color-bg-primary: #f4ecdc;
+    --color-bg-secondary: #fcf9f2;
+    --color-bg-tertiary: #ede3ce;
+    --color-bg-card: #fcf9f2;
+    --color-text-primary: #000000;
+    --color-text-secondary: #1f2937;
+    --color-text-muted: #374151;
+    --color-border: #decfae;
+    --color-border-light: #cbbe9f;
+    --gradient-primary: linear-gradient(135deg, #059669 0%, #047857 100%);
+    --gradient-accent: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    --gradient-card: linear-gradient(180deg, #ffffff 0%, #fcf9f2 100%);
+  }
+
+  html.theme-dark,
+  [data-theme='dark'] {
+    --color-primary: #10b981;
+    --color-primary-light: #34d399;
+    --color-primary-dark: #059669;
+    --color-accent: #10b981;
+    --color-accent-light: rgba(16, 185, 129, 0.15);
+    --color-accent-dark: #059669;
+    --color-success: #10b981;
+    --color-success-light: #34d399;
+    --color-success-dark: #059669;
+    --color-warning: #f59e0b;
+    --color-bg-primary: #0d1117;
+    --color-bg-secondary: #161b22;
+    --color-bg-tertiary: #21262d;
+    --color-bg-card: #1c2128;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #e2e8f0;
+    --color-text-muted: #94a3b8;
+    --color-border: #272c33;
+    --color-border-light: #353b44;
+    --gradient-primary: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    --gradient-accent: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+    --gradient-card: linear-gradient(180deg, #1e3a5f1a 0%, transparent 100%);
   }
   
   body {
     background-color: var(--color-bg-primary);
     color: var(--color-text-primary);
     font-family: 'Inter', system-ui, sans-serif;
+    transition: background-color 0.25s ease, color 0.25s ease;
   }
   
   .japanese-text {

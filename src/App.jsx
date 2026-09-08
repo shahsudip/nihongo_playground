@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './context/AuthContext.jsx';
+import { ThemeProvider } from './context/ThemeContext.jsx';
 import LoadingSpinner from './utils/loading_spinner.jsx';
 import './assets/app_style.css';
 import './assets/book_features.css';
@@ -60,10 +61,11 @@ function ProtectedRoute({ children }) {
 
 export default function App() {
   return (
-    <Router>
-      <Suspense fallback={<LoadingSpinner />}>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
+    <ThemeProvider>
+      <Router>
+        <Suspense fallback={<LoadingSpinner />}>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
         
           {/* All protected pages use the MainLayout */}
           <Route element={<MainLayout />}>
@@ -215,5 +217,6 @@ export default function App() {
       </Routes>
       </Suspense>
     </Router>
+    </ThemeProvider>
   );
 }

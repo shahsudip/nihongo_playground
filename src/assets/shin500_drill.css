@@ -1,79 +1,184 @@
 /* src/assets/shin500_drill.css */
 
-/* Base Container & Theming */
-.shin500-container {
+/* =========================================================
+   SHIN NIHONGO 500 MON — SEPIA (DEFAULT), LIGHT & DARK THEMES
+   ========================================================= */
+
+.shin500-page {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   min-height: 100vh;
   padding-top: 5rem;
   padding-bottom: 4rem;
-  background-color: var(--color-bg-primary);
-  color: var(--color-text-primary);
-  font-family: 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Noto Sans JP', sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Level Accent Variables */
-.shin500-container[data-level="N1"] {
-  --shin-accent: #c1121f;
-  --shin-accent-light: #fef2f2;
-  --shin-accent-border: #f87171;
-  --shin-accent-gradient: linear-gradient(135deg, #4a154b 0%, #861457 50%, #c1121f 100%);
+/* 1. Light Mode (Default): Authentic Japanese Textbook Warm Parchment & Emerald Green */
+.shin500-page.theme-light,
+.shin500-page.theme-sepia,
+.shin500-page {
+  --shin-bg: #f4ecdc;
+  --shin-card-bg: #fcf9f2;
+  --shin-card-alt: #ede3ce;
+  --shin-text-primary: #000000;
+  --shin-text-secondary: #1f2937;
+  --shin-text-muted: #374151;
+  --shin-border: #decfae;
+  --shin-border-strong: #cbbe9f;
+  --shin-accent: #059669; /* Emerald Green */
+  --shin-accent-hover: #047857;
+  --shin-accent-light: #ecfdf5;
+  --shin-accent-border: #a7f3d0;
+  --shin-option-bg: #fcf9f2;
+  --shin-option-hover: #f4e8cf;
+  --shin-shadow: 0 4px 14px rgba(99, 80, 61, 0.08);
+
+  /* Categories on Light */
+  --shin-badge-moji-bg: #ede4f8;
+  --shin-badge-moji-text: #6d28d9;
+  --shin-badge-moji-border: #d8b4fe;
+
+  --shin-badge-goi-bg: #e0f2fe;
+  --shin-badge-goi-text: #0369a1;
+  --shin-badge-goi-border: #bae6fd;
+
+  --shin-badge-bunpou-bg: #fef3c7;
+  --shin-badge-bunpou-text: #b45309;
+  --shin-badge-bunpou-border: #fde68a;
+
+  background-color: var(--shin-bg);
+  color: var(--shin-text-primary);
 }
 
-.shin500-container[data-level="N2"] {
-  --shin-accent: #2563eb;
-  --shin-accent-light: #eff6ff;
-  --shin-accent-border: #60a5fa;
-  --shin-accent-gradient: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #3a7bd5 100%);
+/* 2. Dark Mode: Deep Midnight Canvas, Emerald Green Buttons, Crisp Light Text */
+.shin500-page.theme-dark {
+  --shin-bg: #0b0f19;
+  --shin-card-bg: #111827;
+  --shin-card-alt: #1f2937;
+  --shin-text-primary: #ffffff;
+  --shin-text-secondary: #e2e8f0;
+  --shin-text-muted: #94a3b8;
+  --shin-border: #1f2937;
+  --shin-border-strong: #374151;
+  --shin-accent: #10b981;
+  --shin-accent-hover: #059669;
+  --shin-accent-light: rgba(16, 185, 129, 0.15);
+  --shin-accent-border: rgba(16, 185, 129, 0.35);
+  --shin-option-bg: #111827;
+  --shin-option-hover: #1f2937;
+  --shin-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+
+  /* Categories on Dark */
+  --shin-badge-moji-bg: rgba(124, 58, 237, 0.2);
+  --shin-badge-moji-text: #c4b5fd;
+  --shin-badge-moji-border: rgba(167, 139, 250, 0.4);
+
+  --shin-badge-goi-bg: rgba(8, 145, 178, 0.2);
+  --shin-badge-goi-text: #67e8f9;
+  --shin-badge-goi-border: rgba(103, 232, 249, 0.4);
+
+  --shin-badge-bunpou-bg: rgba(217, 119, 6, 0.2);
+  --shin-badge-bunpou-text: #fde68a;
+  --shin-badge-bunpou-border: rgba(251, 191, 36, 0.4);
+
+  background-color: var(--shin-bg);
+  color: var(--shin-text-primary);
 }
 
-.shin500-container[data-level="N3"] {
-  --shin-accent: #0d9488;
-  --shin-accent-light: #f0fdfa;
-  --shin-accent-border: #2dd4bf;
-  --shin-accent-gradient: linear-gradient(135deg, #0d9488 0%, #11998e 50%, #38ef7d 100%);
+/* =========================================================
+   QUESTION NAVIGATOR TRACK & PILLS
+   ========================================================= */
+
+.shin-navigator-track {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.5rem 0.5rem 0.65rem 0.5rem;
+  margin-bottom: 1.5rem;
+  scrollbar-width: thin;
 }
 
-.shin500-container[data-level="N4-N5"] {
-  --shin-accent: #7c3aed;
-  --shin-accent-light: #faf5ff;
-  --shin-accent-border: #c084fc;
-  --shin-accent-gradient: linear-gradient(135deg, #7c3aed 0%, #9333ea 50%, #c084fc 100%);
+.shin-nav-pill {
+  min-width: 2.35rem;
+  height: 2.35rem;
+  padding: 0 0.5rem;
+  border-radius: 0.65rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1.5px solid var(--shin-border);
+  background-color: var(--shin-card-bg);
+  color: var(--shin-text-secondary);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
-/* Category Badges */
+.shin-nav-pill:hover {
+  border-color: var(--shin-accent);
+  color: var(--shin-text-primary);
+  transform: translateY(-1px);
+}
+
+.shin-nav-pill.is-active {
+  border-color: var(--shin-accent) !important;
+  color: var(--shin-accent) !important;
+  background-color: var(--shin-accent-light) !important;
+  font-weight: 700 !important;
+  box-shadow: 0 0 0 2px var(--shin-accent) !important;
+}
+
+.shin-nav-pill.is-correct {
+  background-color: #059669 !important;
+  border-color: #047857 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.shin-nav-pill.is-correct.is-active {
+  box-shadow: 0 0 0 2.5px #047857 !important;
+}
+
+.shin-nav-pill.is-wrong {
+  background-color: #dc2626 !important;
+  border-color: #b91c1c !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.shin-nav-pill.is-wrong.is-active {
+  box-shadow: 0 0 0 2.5px #b91c1c !important;
+}
+
+/* =========================================================
+   CATEGORY BADGES
+   ========================================================= */
+
 .shin-badge-moji {
-  background: rgba(124, 58, 237, 0.12);
-  color: #7c3aed;
-  border: 1px solid rgba(124, 58, 237, 0.3);
-}
-.dark .shin-badge-moji {
-  background: rgba(167, 139, 250, 0.18);
-  color: #c4b5fd;
-  border-color: rgba(167, 139, 250, 0.35);
+  background-color: var(--shin-badge-moji-bg);
+  color: var(--shin-badge-moji-text);
+  border: 1px solid var(--shin-badge-moji-border);
 }
 
 .shin-badge-goi {
-  background: rgba(13, 148, 136, 0.12);
-  color: #0d9488;
-  border: 1px solid rgba(13, 148, 136, 0.3);
-}
-.dark .shin-badge-goi {
-  background: rgba(45, 212, 191, 0.18);
-  color: #5eead4;
-  border-color: rgba(45, 212, 191, 0.35);
+  background-color: var(--shin-badge-goi-bg);
+  color: var(--shin-badge-goi-text);
+  border: 1px solid var(--shin-badge-goi-border);
 }
 
 .shin-badge-bunpou {
-  background: rgba(217, 119, 6, 0.12);
-  color: #d97706;
-  border: 1px solid rgba(217, 119, 6, 0.3);
-}
-.dark .shin-badge-bunpou {
-  background: rgba(251, 191, 36, 0.18);
-  color: #fde68a;
-  border-color: rgba(251, 191, 36, 0.35);
+  background-color: var(--shin-badge-bunpou-bg);
+  color: var(--shin-badge-bunpou-text);
+  border: 1px solid var(--shin-badge-bunpou-border);
 }
 
-/* Japanese Text & Ruby */
+/* =========================================================
+   JAPANESE TYPOGRAPHY & RUBY
+   ========================================================= */
+
 .shin500-japanese-text {
   font-feature-settings: "palt";
   letter-spacing: 0.02em;
@@ -85,7 +190,7 @@
 
 .shin500-japanese-text rt {
   font-size: 0.58em;
-  color: var(--color-text-secondary);
+  color: var(--shin-text-muted);
   font-weight: normal;
   user-select: none;
 }
@@ -94,11 +199,31 @@
   text-decoration: underline;
   text-decoration-thickness: 2.5px;
   text-underline-offset: 4px;
-  text-decoration-color: var(--shin-accent, #0d9488);
+  text-decoration-color: var(--shin-accent);
   font-weight: 600;
 }
 
-/* Option Cards */
+/* =========================================================
+   CARDS & CONTAINERS
+   ========================================================= */
+
+.shin-card {
+  background-color: var(--shin-card-bg);
+  border: 1.5px solid var(--shin-border);
+  border-radius: 1rem;
+  box-shadow: var(--shin-shadow);
+  transition: all 0.2s ease;
+}
+
+.shin-card-alt {
+  background-color: var(--shin-card-alt);
+  border: 1px solid var(--shin-border);
+}
+
+/* =========================================================
+   OPTION BUTTONS
+   ========================================================= */
+
 .shin-option-btn {
   position: relative;
   display: flex;
@@ -106,55 +231,60 @@
   width: 100%;
   padding: 1rem 1.25rem;
   border-radius: 0.75rem;
-  border: 1.5px solid var(--color-border);
-  background-color: var(--color-bg-secondary);
-  color: var(--color-text-primary);
+  border: 1.5px solid var(--shin-border);
+  background-color: var(--shin-option-bg);
+  color: var(--shin-text-primary);
   text-align: left;
   font-size: 1.05rem;
   font-weight: 500;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
 }
 
 .shin-option-btn:hover:not(:disabled) {
-  border-color: var(--shin-accent, #0d9488);
-  background-color: var(--color-bg-tertiary);
+  border-color: var(--shin-accent);
+  background-color: var(--shin-option-hover);
   transform: translateY(-1px);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.06);
 }
 
 .shin-option-btn:active:not(:disabled) {
   transform: translateY(0);
 }
 
-/* Selected state (Neutral before submit / At End mode) */
-.shin-option-btn.is-selected {
-  border-color: var(--shin-accent, #0d9488);
-  background-color: rgba(13, 148, 136, 0.08);
-  box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.2);
-}
-
 /* Correct Answer State */
 .shin-option-btn.is-correct {
-  border-color: #10b981 !important;
-  background-color: rgba(16, 185, 129, 0.12) !important;
-  color: #065f46 !important;
-  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3) !important;
+  border-color: #059669 !important;
+  background-color: rgba(16, 185, 129, 0.18) !important;
+  color: #064e3b !important;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.35) !important;
+  opacity: 1 !important;
 }
-.dark .shin-option-btn.is-correct {
+.theme-dark .shin-option-btn.is-correct {
   color: #6ee7b7 !important;
+  background-color: rgba(16, 185, 129, 0.22) !important;
 }
 
 /* Wrong Answer State */
 .shin-option-btn.is-wrong {
-  border-color: #ef4444 !important;
-  background-color: rgba(239, 68, 68, 0.12) !important;
-  color: #991b1b !important;
-  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.3) !important;
+  border-color: #dc2626 !important;
+  background-color: rgba(239, 68, 68, 0.18) !important;
+  color: #7f1d1d !important;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.35) !important;
+  opacity: 1 !important;
 }
-.dark .shin-option-btn.is-wrong {
+.theme-dark .shin-option-btn.is-wrong {
   color: #fca5a5 !important;
+  background-color: rgba(239, 68, 68, 0.22) !important;
+}
+
+.shin-option-btn:disabled {
+  cursor: default;
+}
+
+.shin-option-btn:disabled:not(.is-correct):not(.is-wrong) {
+  opacity: 0.55;
 }
 
 /* Key Shortcut Badge */
@@ -169,16 +299,19 @@
   font-weight: 700;
   margin-right: 0.85rem;
   flex-shrink: 0;
-  background: var(--color-bg-tertiary);
-  color: var(--color-text-secondary);
-  border: 1px solid var(--color-border);
+  background: var(--shin-card-alt);
+  color: var(--shin-text-secondary);
+  border: 1px solid var(--shin-border);
 }
 
-/* Explanation Card */
+/* =========================================================
+   EXPLANATION CARD
+   ========================================================= */
+
 .shin-explanation-card {
   border-radius: 0.75rem;
-  border: 1.5px solid var(--color-border);
-  background: var(--color-bg-secondary);
+  border: 1.5px solid var(--shin-border);
+  background: var(--shin-card-bg);
   padding: 1.25rem;
   margin-top: 1.25rem;
   animation: shinFadeSlide 0.25s ease-out forwards;
@@ -195,7 +328,10 @@
   }
 }
 
-/* 2-Option Dual Grid (For Day 7 Review Drills) */
+/* =========================================================
+   2-OPTION DUAL GRID (DAY 7 REVIEW DRILLS)
+   ========================================================= */
+
 .shin-dual-options-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -207,3 +343,168 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================================================
+   SHIN 500 CHAPTER LIST CONTAINER (SEPIA DEFAULT, LIGHT, DARK)
+   ========================================================= */
+
+.shin500-chapter-wrapper {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* 1. Light Mode (Default Warm Parchment) for Chapter List */
+.shin500-chapter-wrapper.theme-light .bg-\[var\(--color-bg-secondary\)\],
+.shin500-chapter-wrapper.theme-sepia .bg-\[var\(--color-bg-secondary\)\],
+.shin500-chapter-wrapper:not(.theme-dark) .bg-\[var\(--color-bg-secondary\)\] {
+  background-color: #fcf9f2 !important;
+}
+
+.shin500-chapter-wrapper.theme-light .bg-\[var\(--color-bg-primary\)\],
+.shin500-chapter-wrapper.theme-sepia .bg-\[var\(--color-bg-primary\)\],
+.shin500-chapter-wrapper:not(.theme-dark) .bg-\[var\(--color-bg-primary\)\] {
+  background-color: #f4ecdc !important;
+}
+
+.shin500-chapter-wrapper.theme-light .border-\[var\(--color-border\)\],
+.shin500-chapter-wrapper.theme-sepia .border-\[var\(--color-border\)\],
+.shin500-chapter-wrapper:not(.theme-dark) .border-\[var\(--color-border\)\] {
+  border-color: #decfae !important;
+}
+
+.shin500-chapter-wrapper.theme-light .text-\[var\(--color-text-primary\)\],
+.shin500-chapter-wrapper.theme-sepia .text-\[var\(--color-text-primary\)\],
+.shin500-chapter-wrapper:not(.theme-dark) .text-\[var\(--color-text-primary\)\] {
+  color: #000000 !important;
+}
+
+.shin500-chapter-wrapper.theme-light .text-\[var\(--color-text-secondary\)\],
+.shin500-chapter-wrapper.theme-sepia .text-\[var\(--color-text-secondary\)\],
+.shin500-chapter-wrapper:not(.theme-dark) .text-\[var\(--color-text-secondary\)\] {
+  color: #1f2937 !important;
+}
+
+.shin500-chapter-wrapper.theme-light .text-\[var\(--color-text-muted\)\],
+.shin500-chapter-wrapper.theme-sepia .text-\[var\(--color-text-muted\)\],
+.shin500-chapter-wrapper:not(.theme-dark) .text-\[var\(--color-text-muted\)\] {
+  color: #374151 !important;
+}
+
+/* 2. Dark Mode for Chapter List */
+.shin500-chapter-wrapper.theme-dark .bg-\[var\(--color-bg-secondary\)\] {
+  background-color: #111827 !important;
+}
+
+.shin500-chapter-wrapper.theme-dark .bg-\[var\(--color-bg-primary\)\] {
+  background-color: #0b0f19 !important;
+}
+
+.shin500-chapter-wrapper.theme-dark .border-\[var\(--color-border\)\] {
+  border-color: #1f2937 !important;
+}
+
+.shin500-chapter-wrapper.theme-dark .text-\[var\(--color-text-primary\)\] {
+  color: #ffffff !important;
+}
+
+.shin500-chapter-wrapper.theme-dark .text-\[var\(--color-text-secondary\)\] {
+  color: #e2e8f0 !important;
+}
+
+.shin500-chapter-wrapper.theme-dark .text-\[var\(--color-text-muted\)\] {
+  color: #94a3b8 !important;
+}
+
+/* =========================================================
+   SHIN 500 CHAPTER PAGE OVERRIDES (ZERO BLACK FLASH)
+   ========================================================= */
+
+.shin500-chapter-page {
+  min-height: 100vh;
+  max-width: 1200px !important;
+  width: 100% !important;
+  margin: 0 auto;
+  padding: 5rem 1.25rem 4rem 1.25rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.shin500-chapter-wrapper {
+  word-break: keep-all;
+}
+
+/* Light Mode (Default Warm Parchment) */
+.shin500-chapter-page.theme-light,
+.shin500-chapter-page.theme-sepia,
+.shin500-chapter-page:not(.theme-dark) {
+  background-color: #f4ecdc !important;
+  color: #000000 !important;
+}
+
+.shin500-chapter-page.theme-light .book-detail-title,
+.shin500-chapter-page.theme-sepia .book-detail-title,
+.shin500-chapter-page:not(.theme-dark) .book-detail-title {
+  color: #000000 !important;
+}
+
+.shin500-chapter-page.theme-light .book-detail-desc,
+.shin500-chapter-page.theme-sepia .book-detail-desc,
+.shin500-chapter-page:not(.theme-dark) .book-detail-desc {
+  color: #1f2937 !important;
+}
+
+.shin500-chapter-page.theme-light .book-detail-meta,
+.shin500-chapter-page.theme-sepia .book-detail-meta,
+.shin500-chapter-page:not(.theme-dark) .book-detail-meta {
+  color: #374151 !important;
+}
+
+.shin500-chapter-page.theme-light .breadcrumb-link,
+.shin500-chapter-page.theme-light .breadcrumb-separator,
+.shin500-chapter-page.theme-sepia .breadcrumb-link,
+.shin500-chapter-page.theme-sepia .breadcrumb-separator,
+.shin500-chapter-page:not(.theme-dark) .breadcrumb-link,
+.shin500-chapter-page:not(.theme-dark) .breadcrumb-separator {
+  color: #374151 !important;
+}
+
+.shin500-chapter-page.theme-light .breadcrumb-current,
+.shin500-chapter-page.theme-sepia .breadcrumb-current,
+.shin500-chapter-page:not(.theme-dark) .breadcrumb-current {
+  color: #000000 !important;
+}
+
+.shin500-chapter-page.theme-light .book-detail-level,
+.shin500-chapter-page.theme-sepia .book-detail-level,
+.shin500-chapter-page:not(.theme-dark) .book-detail-level {
+  background-color: #059669 !important;
+  color: #ffffff !important;
+}
+
+/* Dark Mode */
+.shin500-chapter-page.theme-dark {
+  background-color: #0b0f19 !important;
+  color: #ffffff !important;
+}
+
+.shin500-chapter-page.theme-dark .book-detail-title {
+  color: #ffffff !important;
+}
+
+.shin500-chapter-page.theme-dark .book-detail-desc {
+  color: #e2e8f0 !important;
+}
+
+.shin500-chapter-page.theme-dark .book-detail-meta,
+.shin500-chapter-page.theme-dark .breadcrumb-link,
+.shin500-chapter-page.theme-dark .breadcrumb-separator {
+  color: #94a3b8 !important;
+}
+
+.shin500-chapter-page.theme-dark .breadcrumb-current {
+  color: #ffffff !important;
+}
+
+.shin500-chapter-page.theme-dark .book-detail-level {
+  background-color: #10b981 !important;
+  color: #ffffff !important;
+}
+

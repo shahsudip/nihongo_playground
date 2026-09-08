@@ -1,10 +1,12 @@
-// src/components/Shin500ChapterList.jsx
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
+import { useTheme } from '../context/ThemeContext.jsx';
+import '../assets/shin500_drill.css';
 
 const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
   const [selectedWeekFilter, setSelectedWeekFilter] = useState('all'); // 'all' or week number e.g. 1, 2, ...
   const [expandedWeeks, setExpandedWeeks] = useState({}); // Record<string, boolean>
+  const { theme } = useTheme();
 
   // Question count helper supporting passages array or direct questions array
   const getQuestionCount = (chapter) => {
@@ -147,7 +149,7 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
   }
 
   return (
-    <div className="shin500-container space-y-6 mt-6">
+    <div className={`shin500-chapter-wrapper theme-${theme} space-y-6 mt-6`}>
       {/* Overview & Quick Continue Banner */}
       <div className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-2xl p-6 shadow-sm">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
@@ -168,25 +170,27 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
             </p>
           </div>
 
-          {/* Quick Continue Action */}
-          {stats.nextChapter && (
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-[var(--color-bg-primary)] border border-[var(--color-border)] p-4 rounded-xl">
-              <div>
-                <div className="text-[11px] font-semibold text-[var(--color-text-muted)] uppercase tracking-wider">
-                  Next Up
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            {/* Quick Continue Action */}
+            {stats.nextChapter && (
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-[var(--color-bg-primary)] border border-[var(--color-border)] p-4 rounded-xl">
+                <div>
+                  <div className="text-[11px] font-semibold text-[var(--color-text-muted)] uppercase tracking-wider">
+                    Next Up
+                  </div>
+                  <div className="text-sm font-bold text-[var(--color-text-primary)]">
+                    {stats.nextChapter.title || `Week ${stats.nextChapter.weekNum} - Day ${stats.nextChapter.dayNum}`}
+                  </div>
                 </div>
-                <div className="text-sm font-bold text-[var(--color-text-primary)]">
-                  {stats.nextChapter.title || `Week ${stats.nextChapter.weekNum} - Day ${stats.nextChapter.dayNum}`}
-                </div>
+                <Link
+                  to={`/books/${book.id}/chapters/${stats.nextChapter.id}`}
+                  className="px-4 py-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white text-xs font-bold rounded-lg shadow transition-all whitespace-nowrap"
+                >
+                  {stats.nextChapter.isIncomplete ? 'Resume Drill →' : 'Start Today →'}
+                </Link>
               </div>
-              <Link
-                to={`/books/${book.id}/chapters/${stats.nextChapter.id}`}
-                className="px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs font-bold rounded-lg shadow transition-all whitespace-nowrap"
-              >
-                {stats.nextChapter.isIncomplete ? 'Resume Drill →' : 'Start Today →'}
-              </Link>
-            </div>
-          )}
+            )}
+          </div>
         </div>
 
         {/* Global Progress Bar */}
@@ -199,7 +203,7 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
           </div>
           <div className="w-full bg-[var(--color-bg-primary)] h-2 rounded-full overflow-hidden border border-[var(--color-border)]">
             <div
-              className="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 h-full rounded-full transition-all duration-500"
+              className="bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-600 h-full rounded-full transition-all duration-500"
               style={{ width: `${stats.progressPct}%` }}
             />
           </div>
@@ -212,7 +216,7 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
           onClick={() => setSelectedWeekFilter('all')}
           className={`px-4 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap ${
             selectedWeekFilter === 'all'
-              ? 'bg-blue-600 text-white shadow-md'
+              ? 'bg-emerald-600 text-white shadow-md'
               : 'bg-[var(--color-bg-secondary)] hover:bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] border border-[var(--color-border)]'
           }`}
         >
@@ -229,7 +233,7 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
               onClick={() => setSelectedWeekFilter(String(group.weekNum))}
               className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 whitespace-nowrap ${
                 selectedWeekFilter === String(group.weekNum)
-                  ? 'bg-blue-600 text-white shadow-md'
+                  ? 'bg-emerald-600 text-white shadow-md'
                   : 'bg-[var(--color-bg-secondary)] hover:bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] border border-[var(--color-border)]'
               }`}
             >
@@ -269,8 +273,8 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
                   <div
                     className={`w-10 h-10 rounded-xl flex items-center justify-center font-black text-sm ${
                       isWeekComplete
-                        ? 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/30'
-                        : 'bg-blue-500/15 text-blue-400 border border-blue-500/30'
+                        ? 'bg-emerald-500/15 text-emerald-500 border border-emerald-500/30'
+                        : 'bg-emerald-500/15 text-emerald-600 border border-emerald-500/30'
                     }`}
                   >
                     {isWeekComplete ? '✓' : `W${group.weekNum}`}
@@ -281,7 +285,7 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
                         {group.title}
                       </h3>
                       {isWeekComplete && (
-                        <span className="px-2 py-0.5 text-[10px] font-bold rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                        <span className="px-2 py-0.5 text-[10px] font-bold rounded bg-emerald-500/20 text-emerald-500 border border-emerald-500/30">
                           Complete
                         </span>
                       )}
@@ -316,8 +320,8 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
 
               {/* Day Cards Grid */}
               {!isCollapsed && (
-                <div className="p-5 pt-0 border-t border-[var(--color-border)] bg-[var(--color-bg-primary)]/40">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-4">
+                <div className="p-4 sm:p-5 pt-0 border-t border-[var(--color-border)] bg-[var(--color-bg-primary)]/30">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-7 gap-3 mt-4">
                     {group.chapters.map((chapter) => {
                       const isRev = chapter.isReview;
                       const qDisplay = chapter.qCount > 0 ? `${chapter.qCount} 問` : isRev ? '15 問' : '3 問';
@@ -326,53 +330,53 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
                         <Link
                           key={chapter.id}
                           to={`/books/${book.id}/chapters/${chapter.id}`}
-                          className={`group relative p-4 rounded-xl border transition-all duration-200 flex flex-col justify-between hover:-translate-y-0.5 hover:shadow-md ${
+                          className={`group relative p-3.5 rounded-xl border transition-all duration-200 flex flex-col justify-between hover:-translate-y-0.5 hover:shadow-md ${
                             chapter.isMastered
                               ? 'bg-emerald-500/10 border-emerald-500/30 hover:border-emerald-500/60'
                               : chapter.isIncomplete
                                 ? 'bg-amber-500/10 border-amber-500/30 hover:border-amber-500/60'
                                 : isRev
                                   ? 'bg-purple-500/5 border-purple-500/30 hover:border-purple-500/60'
-                                  : 'bg-[var(--color-bg-secondary)] border-[var(--color-border)] hover:border-blue-500/50'
+                                  : 'bg-[var(--color-bg-secondary)] border-[var(--color-border)] hover:border-emerald-500/50'
                           }`}
                         >
-                          {/* Card Header */}
-                          <div className="flex items-center justify-between mb-2">
+                          {/* Card Top */}
+                          <div className="flex items-center justify-between gap-1 mb-2">
                             <span
-                              className={`text-[11px] font-bold px-2 py-0.5 rounded-md ${
+                              className={`text-[11px] font-bold px-2 py-0.5 rounded-md whitespace-nowrap ${
                                 isRev
                                   ? 'bg-purple-500/20 text-purple-400 border border-purple-500/30'
                                   : 'bg-[var(--color-bg-primary)] text-[var(--color-text-secondary)] border border-[var(--color-border)]'
                               }`}
                             >
-                              {isRev ? 'Weekly Review' : `Day ${chapter.dayNum}`}
+                              {isRev ? 'Review' : `Day ${chapter.dayNum}`}
                             </span>
 
-                            <span className="text-[11px] font-semibold text-[var(--color-text-muted)]">
+                            <span className="text-[11px] font-semibold text-[var(--color-text-muted)] whitespace-nowrap">
                               {qDisplay}
                             </span>
                           </div>
 
-                          {/* Card Body */}
-                          <div className="my-2">
-                            <h4 className="text-sm font-bold text-[var(--color-text-primary)] group-hover:text-blue-400 transition-colors">
-                              {isRev ? `Week ${chapter.weekNum} まとめテスト` : `Day ${chapter.dayNum} ドリル`}
+                          {/* Card Content */}
+                          <div className="my-1.5">
+                            <h4 className="text-xs sm:text-sm font-bold text-[var(--color-text-primary)] group-hover:text-emerald-500 transition-colors truncate">
+                              {isRev ? `まとめテスト` : `第${chapter.dayNum}日 ドリル`}
                             </h4>
-                            <p className="text-[11px] text-[var(--color-text-secondary)] mt-0.5">
-                              {isRev ? 'Kanji, Vocab & Grammar Test' : 'Kanji • Vocab • Grammar'}
+                            <p className="text-[10px] sm:text-[11px] text-[var(--color-text-secondary)] mt-0.5 whitespace-nowrap overflow-hidden text-ellipsis">
+                              {isRev ? '漢字・語彙・文法' : '文字・語彙・文法'}
                             </p>
                           </div>
 
                           {/* Card Footer Status */}
-                          <div className="pt-2 border-t border-[var(--color-border)] flex items-center justify-between text-xs">
-                            <div className="font-semibold">
+                          <div className="pt-2 mt-1 border-t border-[var(--color-border)] flex items-center justify-between text-xs">
+                            <div className="font-semibold text-[11px] whitespace-nowrap">
                               {chapter.isMastered ? (
-                                <span className="text-emerald-400 flex items-center gap-1">
-                                  <span>✓</span> Mastered
+                                <span className="text-emerald-500 flex items-center gap-1">
+                                  <span>✓</span> Done
                                 </span>
                               ) : chapter.isIncomplete ? (
-                                <span className="text-amber-400 flex items-center gap-1">
-                                  <span>◕</span> In Progress
+                                <span className="text-amber-500 flex items-center gap-1">
+                                  <span>◕</span> Ongoing
                                 </span>
                               ) : (
                                 <span className="text-[var(--color-text-muted)] flex items-center gap-1">
@@ -382,7 +386,7 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
                             </div>
 
                             {chapter.userProgress && (
-                              <span className="text-[11px] font-bold text-[var(--color-text-muted)]">
+                              <span className="text-[10px] font-bold text-[var(--color-text-muted)]">
                                 {chapter.isMastered
                                   ? `${chapter.userProgress.mastered || chapter.userProgress.score || 0}/${chapter.userProgress.numberOfQuestions || chapter.userProgress.total || chapter.qCount || 3}`
                                   : `${chapter.userProgress.score || 0}/${chapter.userProgress.total || chapter.qCount || 3}`}
