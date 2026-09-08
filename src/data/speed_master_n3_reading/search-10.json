@@ -1,0 +1,66 @@
+{
+  "id": "search-10",
+  "chapterId": "search-10",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "情報検索",
+  "sectionEn": "Information Retrieval",
+  "mondaiNumber": 10,
+  "targetMinutes": 8,
+  "title": "問題 10（情報検索）",
+  "instruction": "問題10 つぎの<ruby>表<rt>ひょう</rt></ruby>は<ruby>旅行<rt>りょこう</rt></ruby><ruby>会社<rt>がいしゃ</rt></ruby>がすすめるホテルである。下の<ruby>質問<rt>しつもん</rt></ruby>に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0109.jpg",
+  "passageLayout": "html",
+  "passageHeader": "旅行会社おすすめホテル",
+  "passageText": "<div class=\"p-4 border border-slate-300 rounded-lg bg-slate-50 mb-6 font-sans\"><p class=\"leading-relaxed\">マリアさんは、女友だち3人と、来週水曜日から1泊で<ruby>松本<rt>まつもと</rt></ruby><ruby>城<rt>じょう</rt></ruby>を見学に行く計画です。<ruby>松本<rt>まつもと</rt></ruby><ruby>城<rt>じょう</rt></ruby>の入場券は600円です。<ruby>旅行<rt>りょこう</rt></ruby><ruby>会社<rt>がいしゃ</rt></ruby>がホテルを４つ選んでくれました。</p></div><div class=\"overflow-x-auto\"><table class=\"w-full border-collapse border border-slate-400 font-sans text-sm md:text-base\"><thead><tr class=\"bg-slate-100 text-slate-800\"><th class=\"border border-slate-400 p-2.5 text-left\">ホテル・<ruby>旅館<rt>りょかん</rt></ruby>名</th><th class=\"border border-slate-400 p-2.5 text-center\"><ruby>宿泊費<rt>しゅくはくひ</rt></ruby>（1人）</th><th class=\"border border-slate-400 p-2.5 text-center\">割引</th><th class=\"border border-slate-400 p-2.5 text-left\">サービス</th></tr></thead><tbody><tr><td class=\"border border-slate-400 p-2.5 font-semibold\">A：<ruby>旅館<rt>りょかん</rt></ruby>松本屋</td><td class=\"border border-slate-400 p-2.5 text-center\">8,000円</td><td class=\"border border-slate-400 p-2.5 text-center\">4人以上の場合、<br>1人1,000円割引</td><td class=\"border border-slate-400 p-2.5\">女性客には、<ruby>名物<rt>めいぶつ</rt></ruby>の「そば」をおみやげサービス</td></tr><tr><td class=\"border border-slate-400 p-2.5 font-semibold\">B：キャッスルホテル</td><td class=\"border border-slate-400 p-2.5 text-center\">7,000円</td><td class=\"border border-slate-400 p-2.5 text-center\"><ruby>平日<rt>へいじつ</rt></ruby>の<ruby>宿泊<rt>しゅくはく</rt></ruby>は、<br>1人600円割引</td><td class=\"border border-slate-400 p-2.5\">女性客には、コーヒーとケーキをサービス</td></tr><tr><td class=\"border border-slate-400 p-2.5 font-semibold\">C：ホテルアルプス</td><td class=\"border border-slate-400 p-2.5 text-center\">7,500円</td><td class=\"border border-slate-400 p-2.5 text-center\"><ruby>平日<rt>へいじつ</rt></ruby>の<ruby>宿泊<rt>しゅくはく</rt></ruby>は、<br>1人1,000円割引</td><td class=\"border border-slate-400 p-2.5\">食事の時、飲み物を1品サービス</td></tr><tr><td class=\"border border-slate-400 p-2.5 font-semibold\">D：しなのや</td><td class=\"border border-slate-400 p-2.5 text-center\">7,000円</td><td class=\"border border-slate-400 p-2.5 text-center\">3人以上の場合、<br>1人500円割引</td><td class=\"border border-slate-400 p-2.5\"><ruby>松本<rt>まつもと</rt></ruby><ruby>城<rt>じょう</rt></ruby>の入場券をサービス</td></tr></tbody></table></div>",
+  "footnotes": [],
+  "vocabulary": [
+    {
+      "word": "平日",
+      "reading": "へいじつ",
+      "meaning": "weekday"
+    },
+    {
+      "word": "宿泊",
+      "reading": "しゅくはく",
+      "meaning": "lodging, stay overnight"
+    },
+    {
+      "word": "名物",
+      "reading": "めいぶつ",
+      "meaning": "specialty, famous product"
+    }
+  ],
+  "questions": [
+    {
+      "id": "search-10-q1",
+      "questionNumber": "1",
+      "questionText": "<ruby>宿泊<rt>しゅくはく</rt></ruby>する曜日によって<ruby>費用<rt>ひよう</rt></ruby>が<ruby>違<rt>ちが</rt></ruby>うのはどれか。",
+      "options": [
+        "AとB",
+        "AとC",
+        "BとC",
+        "BとD"
+      ],
+      "correct": 3,
+      "correctOption": "BとC",
+      "explanation": "表の割引欄を見ると、B（キャッスルホテル）とC（ホテルアルプス）には「平日の宿泊は割引」とあり、宿泊する曜日（平日か休日か）によって費用が変わります。一方、AとDは人数による割引です。したがって正解は 3（BとC）です。"
+    },
+    {
+      "id": "search-10-q2",
+      "questionNumber": "2",
+      "questionText": "<ruby>費用<rt>ひよう</rt></ruby>（<ruby>宿泊費<rt>しゅくはくひ</rt></ruby>、入場料）が一番安くなるのは、どこに<ruby>泊<rt>と</rt></ruby>まった場合か。",
+      "options": [
+        "A：<ruby>旅館<rt>りょかん</rt></ruby>松本屋",
+        "B：キャッスルホテル",
+        "C：ホテルアルプス",
+        "D：しなのや"
+      ],
+      "correct": 4,
+      "correctOption": "D：しなのや",
+      "explanation": "マリアさんと女友だち3人の計4人で水曜日（平日）に宿泊し、松本城（入場券600円）を見学する場合の1人あたりの合計費用を計算します。\nA：宿泊費（8,000 - 1,000）＋ 入場券 600 ＝ 7,600円\nB：宿泊費（7,000 - 600）＋ 入場券 600 ＝ 7,000円\nC：宿泊費（7,500 - 1,000）＋ 入場券 600 ＝ 7,100円\nD：宿泊費（7,000 - 500）＋ 入場券無料（サービス） ＝ 6,500円\nしたがって、一番安くなるのは 4（D：しなのや）です。"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "search-5",
+  "chapterId": "search-5",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "情報検索",
+  "sectionEn": "Information Retrieval",
+  "mondaiNumber": 5,
+  "targetMinutes": 8,
+  "title": "問題 5（情報検索）",
+  "instruction": "問題5 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>は、夜間、土曜日、休みの日に<ruby>診察<rt>しんさつ</rt></ruby>を行う病院についての案内である。下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0099.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"space-y-4\"><div class=\"p-4 border border-slate-300 dark:border-slate-600 rounded bg-slate-50 dark:bg-slate-800/50 leading-relaxed\"><p>ポーンさんは夕飯の後、歯が痛くなりました。病院に行きたいのですが、今日は祝日です。そこで、市から配られた「夜間、土曜日、<ruby>休日<rt>きゅうじつ</rt></ruby><ruby>診療<rt>しんりょう</rt></ruby><sup>（※1）</sup>のお知らせ」を見て、今から行ける病院を探すことにしました。今、午後9時です。病院はどこも、ポーンさんの家から20分以内で行けます。</p></div><div class=\"border-2 border-slate-700 dark:border-slate-300 p-4 bg-white dark:bg-slate-900\"><p class=\"font-bold text-center mb-3 text-base md:text-lg\">「夜間、土曜日、<ruby>休日<rt>きゅうじつ</rt></ruby><ruby>診療<rt>しんりょう</rt></ruby>のお知らせ」</p><div class=\"overflow-x-auto\"><table class=\"w-full border-collapse border border-slate-400 text-center text-sm md:text-base my-2\"><thead><tr class=\"bg-slate-100 dark:bg-slate-800\"><th class=\"border border-slate-400 p-2\"></th><th class=\"border border-slate-400 p-2\">診療科名</th><th class=\"border border-slate-400 p-2\">病院名</th><th class=\"border border-slate-400 p-2\"><ruby>診療<rt>しんりょう</rt></ruby>時間</th></tr></thead><tbody><tr><td rowspan=\"2\" class=\"border border-slate-400 p-2 font-bold bg-slate-50 dark:bg-slate-800/50\">平日の夜間</td><td class=\"border border-slate-400 p-2\">内科・<ruby>小児科<rt>しょうにか</rt></ruby><sup>（※2）</sup>・外科</td><td class=\"border border-slate-400 p-2\"><ruby>健康<rt>けんこう</rt></ruby><ruby>管理<rt>かんり</rt></ruby>センター</td><td class=\"border border-slate-400 p-2\">21時〜24時</td></tr><tr><td class=\"border border-slate-400 p-2\"><ruby>歯科<rt>しか</rt></ruby></td><td class=\"border border-slate-400 p-2\"><ruby>高橋<rt>たかはし</rt></ruby>歯科クリニック</td><td class=\"border border-slate-400 p-2\">19時〜23時</td></tr><tr><td rowspan=\"2\" class=\"border border-slate-400 p-2 font-bold bg-slate-50 dark:bg-slate-800/50\">土曜日</td><td class=\"border border-slate-400 p-2\">内科・小児科・外科</td><td class=\"border border-slate-400 p-2\"><ruby>鈴木<rt>すずき</rt></ruby>内科・外科</td><td class=\"border border-slate-400 p-2\">15時〜20時</td></tr><tr><td class=\"border border-slate-400 p-2\">内科・外科・歯科</td><td class=\"border border-slate-400 p-2\">第一市民病院</td><td class=\"border border-slate-400 p-2\">17時〜22時</td></tr><tr><td rowspan=\"4\" class=\"border border-slate-400 p-2 font-bold bg-slate-50 dark:bg-slate-800/50\">日・祝休日</td><td class=\"border border-slate-400 p-2\">内科・外科</td><td class=\"border border-slate-400 p-2\"><ruby>石井<rt>いしい</rt></ruby>内科・外科</td><td class=\"border border-slate-400 p-2\">9時〜12時</td></tr><tr><td class=\"border border-slate-400 p-2\">内科・外科・歯科</td><td class=\"border border-slate-400 p-2\">第一市民病院</td><td class=\"border border-slate-400 p-2\">9時〜13時</td></tr><tr><td class=\"border border-slate-400 p-2\">歯科</td><td class=\"border border-slate-400 p-2\"><ruby>田中<rt>たなか</rt></ruby>歯科</td><td class=\"border border-slate-400 p-2\">17時〜22時</td></tr><tr><td class=\"border border-slate-400 p-2\">歯科</td><td class=\"border border-slate-400 p-2\">健康管理センター</td><td class=\"border border-slate-400 p-2\">15時〜21時</td></tr></tbody></table></div><div class=\"mt-3 space-y-1 text-xs md:text-sm\"><p>受付は、終了15分前までです。現金、<ruby>保険証<rt>ほけんしょう</rt></ruby><sup>（※3）</sup>をお持ちください。</p><p>祝・休日の小児科は「医療センター（☎ 12-8888）」にお問い合わせください。</p></div></div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）診療（しんりょう）",
+      "definition": "患者を見て、治すこと"
+    },
+    {
+      "term": "（※2）小児科（しょうにか）",
+      "definition": "赤ちゃんや幼児を診察するところ"
+    },
+    {
+      "term": "（※3）保険証（ほけんしょう）",
+      "definition": "健康保険に入っていることの証明書"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "診察",
+      "reading": "しんさつ",
+      "meaning": "medical examination"
+    },
+    {
+      "word": "夜間",
+      "reading": "やかん",
+      "meaning": "at night, nighttime"
+    },
+    {
+      "word": "祝日",
+      "reading": "しゅくじつ",
+      "meaning": "national holiday"
+    },
+    {
+      "word": "歯科",
+      "reading": "しか",
+      "meaning": "dentistry, dental clinic"
+    },
+    {
+      "word": "健康管理",
+      "reading": "けんこうかんり",
+      "meaning": "health care, health management"
+    },
+    {
+      "word": "保険証",
+      "reading": "ほけんしょう",
+      "meaning": "health insurance card"
+    }
+  ],
+  "questions": [
+    {
+      "id": "search-5-q1",
+      "questionNumber": "1",
+      "questionText": "ポーンさんが行ける病院はどこか。",
+      "options": [
+        "<ruby>高橋<rt>たかはし</rt></ruby><ruby>歯科<rt>しか</rt></ruby>クリニック",
+        "<ruby>健康<rt>けんこう</rt></ruby><ruby>管理<rt>かんり</rt></ruby>センター",
+        "第一市民病院",
+        "<ruby>田中<rt>たなか</rt></ruby><ruby>歯科<rt>しか</rt></ruby>"
+      ],
+      "correct": 4,
+      "correctOption": "<ruby>田中<rt>たなか</rt></ruby><ruby>歯科<rt>しか</rt></ruby>",
+      "explanation": "ポーンさんは「歯が痛い（歯科）」、「今日は祝日（日・祝休日）」、「今午後9時で20分以内に到着する（21:20頃着）」という条件です。「日・祝休日」の「歯科」を見ると、第一市民病院（〜13時）、健康管理センター（〜21時）、田中歯科（17時〜22時）の3つがあります。「受付は終了15分前まで」なので、21時20分頃に着いて診察を受けられるのは22時まで診療している「田中歯科」だけです（高橋歯科クリニックは平日の夜間のみ）。したがって正解は 4 の「田中歯科」です。"
+    },
+    {
+      "id": "search-5-q2",
+      "questionNumber": "2",
+      "questionText": "ポーンさんが病院へ行くとき、持っていかなければならないものは何か。",
+      "options": [
+        "<ruby>外国人<rt>がいこくじん</rt></ruby><ruby>登録<rt>とうろく</rt></ruby><ruby>証<rt>しょう</rt></ruby>",
+        "<ruby>免許<rt>めんきょ</rt></ruby><ruby>証<rt>しょう</rt></ruby>",
+        "<ruby>保険<rt>ほけん</rt></ruby><ruby>証<rt>しょう</rt></ruby>",
+        "カード"
+      ],
+      "correct": 3,
+      "correctOption": "<ruby>保険<rt>ほけん</rt></ruby><ruby>証<rt>しょう</rt></ruby>",
+      "explanation": "案内の表の下に「現金、保険証（※3）をお持ちください」と明記されているため、持っていかなければならないものは 3 の「保険証」です。"
+    }
+  ]
+}

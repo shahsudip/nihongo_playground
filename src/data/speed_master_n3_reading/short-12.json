@@ -1,0 +1,70 @@
+{
+  "id": "short-12",
+  "chapterId": "short-12",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 12,
+  "targetMinutes": 3,
+  "title": "問題 12（短文）",
+  "instruction": "問題12 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0037.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"p-4 border border-slate-300 rounded-lg bg-slate-50\"><p class=\"text-center font-bold mb-4\">靴を注文するお客様へ</p><p><ruby>靴<rt>くつ</rt></ruby>は次のように<ruby>測<rt>はか</rt></ruby>って、大きさを決めてください。</p><div class=\"mt-3\"><p class=\"font-bold mb-1\">A. 足の長さ</p><p class=\"pl-2 mb-1\">①<ruby>床<rt>ゆか</rt></ruby>の上に白い紙を<ruby>敷<rt>し</rt></ruby>き、足を<ruby>肩幅<rt>かたはば</rt></ruby>ぐらいに開いて、紙の上にまっすぐ立ってください。</p><p class=\"pl-2 mb-1\">②つま先<sup>（※1）</sup>の一番出ているところとかかと<sup>（※2）</sup>の一番出ているところを、<ruby>鉛筆<rt>えんぴつ</rt></ruby>で<ruby>印<rt>しるし</rt></ruby>をつけてください。</p><p class=\"pl-2 mb-1\">③<ruby>鉛筆<rt>えんぴつ</rt></ruby>でつけた2つの<ruby>印<rt>しるし</rt></ruby>の間の長さを<ruby>測<rt>はか</rt></ruby>ってください。</p></div><div class=\"mt-3\"><p class=\"font-bold mb-1\">B. 足の<ruby>周囲<rt>しゅうい</rt></ruby></p><p class=\"pl-2 mb-1\">④親指と小指の<ruby>付<rt>つ</rt></ruby>け<ruby>根<rt>ね</rt></ruby><sup>（※3）</sup>の<ruby>骨<rt>ほね</rt></ruby>の出たところを通るように、足をひもで<ruby>巻<rt>ま</rt></ruby>きます。</p><p class=\"pl-2 mb-1\">⑤足の<ruby>周囲<rt>しゅうい</rt></ruby>を<ruby>巻<rt>ま</rt></ruby>いたひもの長さを<ruby>測<rt>はか</rt></ruby>ります。</p></div></div>",
+  "footnotesDiagram": "/speed_master_n3_pages/mondai_12_foot_diagram.png",
+  "footnotes": [
+    {
+      "term": "（※1）つま先",
+      "definition": "足の先の部分"
+    },
+    {
+      "term": "（※2）かかと",
+      "definition": "足の後ろの部分"
+    },
+    {
+      "term": "（※3）<ruby>付<rt>づ</rt></ruby>け<ruby>根<rt>ね</rt></ruby>",
+      "definition": "全体とつながっている部分に一番近いところ"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "床",
+      "reading": "ゆか",
+      "meaning": "floor"
+    },
+    {
+      "word": "肩幅",
+      "reading": "かたはば",
+      "meaning": "shoulder width"
+    },
+    {
+      "word": "周囲",
+      "reading": "しゅうい",
+      "meaning": "circumference, surroundings"
+    },
+    {
+      "word": "骨",
+      "reading": "ほね",
+      "meaning": "bone"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-12-q1",
+      "questionNumber": "1",
+      "questionText": "つぎの文で上の文の内容と<u><ruby>違<rt>ちが</rt></ruby>う</u>ものはどれか。",
+      "options": [
+        "足の長さは、白い紙の上に立って、足の一番先と一番後ろの場所に印をつけて<ruby>測<rt>はか</rt></ruby>る。",
+        "足の長さを<ruby>測<rt>はか</rt></ruby>るときは、白い紙の上で、両方の足の親指とかかとを合わせるようにして立つ。",
+        "足の<ruby>周囲<rt>しゅうい</rt></ruby>は、親指と小指の<ruby>付<rt>つ</rt></ruby>け<ruby>根<rt>ね</rt></ruby>の骨のところで<ruby>測<rt>はか</rt></ruby>るようにする。",
+        "<ruby>靴<rt>くつ</rt></ruby>を買うときは、足の長さだけでなく、足の<ruby>周囲<rt>しゅうい</rt></ruby>も<ruby>測<rt>はか</rt></ruby>る必要がある。"
+      ],
+      "correct": 2,
+      "correctOption": "足の長さを<ruby>測<rt>はか</rt></ruby>るときは、白い紙の上で、両方の足の親指とかかとを合わせるようにして立つ。",
+      "explanation": "本文の「A. 足の長さ」の①には「足を肩幅ぐらいに開いて、紙の上にまっすぐ立ってください」とあり、「両方の足の親指とかかとを合わせるようにして立つ」としている 2 は本文の説明と違っています。したがって正解は 2 です。"
+    }
+  ]
+}

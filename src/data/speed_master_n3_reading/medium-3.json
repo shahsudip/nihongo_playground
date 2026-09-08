@@ -1,0 +1,114 @@
+{
+  "id": "medium-3",
+  "chapterId": "medium-3",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（中文）",
+  "sectionEn": "Medium Passages",
+  "mondaiNumber": 3,
+  "targetMinutes": 7,
+  "title": "問題 3（中文）",
+  "instruction": "問題3 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0048.jpg",
+  "passageLayout": "html",
+  "passageText": "<p>今の子どもは大人になったらどんな仕事をしたいのだろうか。また、なぜその仕事がしたいのだろうか。今年の春、小学校に入学する<ruby>児童<rt>じどう</rt></ruby>を<ruby>対象<rt>たいしょう</rt></ruby>に行われた「<ruby>将来<rt>しょうらい</rt></ruby>、<ruby>就<rt>つ</rt></ruby>きたい職業」についての調査結果を見てみた。</p><p>男子は1位がスポーツ選手、2位は<ruby>警察官<rt>けいさつかん</rt></ruby>、3位は運転手・運転士。女子は1位がパン・ケーキ・お<ruby>菓子屋<rt>かしや</rt></ruby>、2位は花屋、3位は<ruby>芸能人<rt>げいのうじん</rt></ruby><sup>（※1）</sup>・タレントである。男子の「スポーツ選手」は30.1％、女子のパン・ケーキ・お菓子屋は29.6％。男子も女子も、1位は12年間変わらないそうである。</p><p>一方、親が<ruby>就<rt>つ</rt></ruby>かせたい職業を見ると、男子は1位が<ruby>公務員<rt>こうむいん</rt></ruby>、2位はスポーツ選手、3位は医師である。女子は1位が<ruby>看護師<rt>かんごし</rt></ruby>、2位は<ruby>公務員<rt>こうむいん</rt></ruby>、3位はパン・ケーキ・お<ruby>菓子屋<rt>かしや</rt></ruby>である。<span class=\"speed-master-box-blank\">①&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>、<ruby>就<rt>つ</rt></ruby>きたい職業には親の希望もやや<ruby>影響<rt>えいきょう</rt></ruby>していると考えられる。</p><p class=\"text-right text-xs text-slate-500 mt-2\">（株式会社クラレのホームページより「クラレアンケート」参照、2010年7月 http://www.kuraray.co.jp/enquete/）</p>",
+  "footnotes": [
+    {
+      "term": "（※1）芸能人",
+      "definition": "テレビやラジオの番組に出て仕事をする人たち"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "就く",
+      "reading": "つく",
+      "meaning": "to take (a position)"
+    },
+    {
+      "word": "調査",
+      "reading": "ちょうさ",
+      "meaning": "survey, investigation"
+    },
+    {
+      "word": "運転手",
+      "reading": "うんてんしゅ",
+      "meaning": "driver"
+    },
+    {
+      "word": "公務員",
+      "reading": "こうむいん",
+      "meaning": "civil servant, government worker"
+    },
+    {
+      "word": "医師",
+      "reading": "いし",
+      "meaning": "doctor, physician"
+    },
+    {
+      "word": "看護師",
+      "reading": "かんごし",
+      "meaning": "nurse"
+    },
+    {
+      "word": "影響する",
+      "reading": "えいきょうする",
+      "meaning": "to influence, affect"
+    },
+    {
+      "word": "児童",
+      "reading": "じどう",
+      "meaning": "children, juvenile"
+    },
+    {
+      "word": "対象",
+      "reading": "たいしょう",
+      "meaning": "target, subject"
+    }
+  ],
+  "questions": [
+    {
+      "id": "medium-3-q1",
+      "questionNumber": "1",
+      "questionText": "子どもの希望する職業について、調査結果と<u>違っているもの</u>はどれか。",
+      "options": [
+        "男子の1位は、<ruby>公務員<rt>こうむいん</rt></ruby>である。",
+        "女子の1位は、パン・ケーキ・お<ruby>菓子屋<rt>かしや</rt></ruby>である。",
+        "1位の職業は、男子も女子も12年間同じである。",
+        "男子も女子も、約3人に1人が1位の職業を選んでいる。"
+      ],
+      "correct": 1,
+      "correctOption": "男子の1位は、<ruby>公務員<rt>こうむいん</rt></ruby>である。",
+      "explanation": "本文第2段落に「男子は1位がスポーツ選手」と書かれており、公務員は親が就かせたい職業の1位です。したがって子どもの希望する職業の調査結果と違っているものは 1 です。"
+    },
+    {
+      "id": "medium-3-q2",
+      "questionNumber": "2",
+      "questionText": "親が<ruby>就<rt>つ</rt></ruby>かせたい職業について、調査結果と<u>違っているもの</u>はどれか。",
+      "options": [
+        "女子では、パン・ケーキ・お<ruby>菓子屋<rt>かしや</rt></ruby>が3位である。",
+        "男子では、スポーツ選手が2位、医師が3位である。",
+        "男子も女子も、<ruby>公務員<rt>こうむいん</rt></ruby>の人気が高い。",
+        "親が<ruby>就<rt>つ</rt></ruby>かせたい職業と子どもの希望はまったく違う。"
+      ],
+      "correct": 4,
+      "correctOption": "親が<ruby>就<rt>つ</rt></ruby>かせたい職業と子どもの希望はまったく違う。",
+      "explanation": "親が就かせたい職業でも、男子のスポーツ選手（親2位／子1位）や女子のパン・ケーキ・お菓子屋（親3位／子1位）が入っており、「就きたい職業には親の希望もやや影響していると考えられる」とまとめられているため、「まったく違う」とする 4 が調査結果と違っています。したがって正解は 4 です。"
+    },
+    {
+      "id": "medium-3-q3",
+      "questionNumber": "3",
+      "questionText": "<u>①</u>に入る語はどれか。",
+      "options": [
+        "この理由を見ると",
+        "この結果を見ると",
+        "この図を見ると",
+        "この<ruby>対象<rt>たいしょう</rt></ruby>を見ると"
+      ],
+      "correct": 2,
+      "correctOption": "この結果を見ると",
+      "explanation": "直前で子どもと親のアンケート調査結果の順位を比較しており、それらの「結果」をふまえて「就きたい職業には親の希望もやや影響していると考えられる」と結論づけているため、「この結果を見ると」が最も適切です。したがって正解は 2 です。"
+    }
+  ]
+}

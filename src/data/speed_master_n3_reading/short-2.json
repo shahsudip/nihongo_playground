@@ -1,0 +1,81 @@
+{
+  "id": "short-2",
+  "chapterId": "short-2",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 2,
+  "targetMinutes": 3,
+  "title": "問題 2（短文）",
+  "instruction": "問題2 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0027.jpg",
+  "passageLayout": "html",
+  "passageText": "<p>だれかの家を<ruby>訪問<rt>ほうもん</rt></ruby>するときに持っていく手みやげ<sup>（※1）</sup>は、どんなものがよいのでしょうか。</p><p><ruby>基本的<rt>きほんてき</rt></ruby>には、食べたり飲んだりして、あとに残らないものがいいでしょう。子供がいるか、お年寄りか、何人家族か、食べられないものはないか、など、相手の<ruby>事情<rt>じじょう</rt></ruby>を考えて選びましょう。ケーキなどであれば、家族の人数より2、3個多めに持っていくと喜ばれます。また、買う店は、<ruby>訪問<rt>ほうもん</rt></ruby>する相手の家の近くでないほうがいいです。あわてて用意したとか、<ruby>適当<rt>てきとう</rt></ruby>に買ったとか、よくない<ruby>印象<rt>いんしょう</rt></ruby>や<ruby>疑<rt>うたが</rt></ruby>いを持たれるかもしれないからです。</p>",
+  "footnotes": [
+    {
+      "term": "（※1）手みやげ",
+      "definition": "人を<ruby>訪問<rt>ほうもん</rt></ruby>する時に持っていく簡単なみやげ"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "基本的",
+      "reading": "きほんてき",
+      "meaning": "basically, fundamentally"
+    },
+    {
+      "word": "あとに",
+      "reading": "あとに",
+      "meaning": "behind, afterwards"
+    },
+    {
+      "word": "事情",
+      "reading": "じじょう",
+      "meaning": "circumstance, situation"
+    },
+    {
+      "word": "あわてる",
+      "reading": "あわてる",
+      "meaning": "to panic, be flustered, rush"
+    },
+    {
+      "word": "印象",
+      "reading": "いんしょう",
+      "meaning": "impression"
+    },
+    {
+      "word": "疑い",
+      "reading": "うたがい",
+      "meaning": "doubt, suspicion"
+    },
+    {
+      "word": "直前",
+      "reading": "ちょくぜん",
+      "meaning": "just before"
+    },
+    {
+      "word": "構成",
+      "reading": "こうせい",
+      "meaning": "organization, structure, composition"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-2-q1",
+      "questionNumber": "1",
+      "questionText": "上の<ruby>文章<rt>ぶんしょう</rt></ruby>で<u>すすめていないこと</u>はどれか。",
+      "options": [
+        "ずっと家に置いておかなくていいものを選ぶ。",
+        "<ruby>訪問<rt>ほうもん</rt></ruby>する家の近くで、<ruby>直前<rt>ちょくぜん</rt></ruby>に用意する。",
+        "相手の人数や家族<ruby>構成<rt>こうせい</rt></ruby>などを考えて選ぶ。",
+        "相手の人数に対して、ちょっと多めの数や量を買っていく。"
+      ],
+      "correct": 2,
+      "correctOption": "<ruby>訪問<rt>ほうもん</rt></ruby>する家の近くで、<ruby>直前<rt>ちょくぜん</rt></ruby>に用意する。",
+      "explanation": "本文に「買う店は、訪問する相手の家の近くでないほうがいいです。あわてて用意したとか、適当に買ったとか、よくない印象や疑いを持たれるかもしれないからです」と書かれており、「相手の家の近くで直前に用意すること」は明確に避けるべきこととして書かれています。したがって正解は 2 です。"
+    }
+  ]
+}

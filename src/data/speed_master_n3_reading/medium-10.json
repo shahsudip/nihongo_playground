@@ -1,0 +1,206 @@
+{
+  "id": "medium-10",
+  "chapterId": "medium-10",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（中文）",
+  "sectionEn": "Medium Passages",
+  "mondaiNumber": 10,
+  "targetMinutes": 7,
+  "title": "問題 10（中文）",
+  "instruction": "問題10 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0057.jpg",
+  "passageLayout": "html",
+  "passageText": "<p>ハチミツ（※1）は、<ruby>天然<rt>てんねん</rt></ruby>の甘みに加え、薬としての<ruby>効果<rt>こうか</rt></ruby>もある食べ物として、昔から人々に<ruby>親<rt>した</rt></ruby>しまれてきた。<ruby>砂糖<rt>さとう</rt></ruby>と比べると、甘みは30%も強いのに、カロリーは20%も低い。<ruby>消化<rt>しょうか</rt></ruby><ruby>吸収<rt>きゅうしゅう</rt></ruby>が速く、すぐエネルギーになるので、運動のあとや病気のあとの体力の回復にもよい。また、非常に強い<ruby>殺菌<rt>さっきん</rt></ruby>（※2）力を持ち、病気の<ruby>治療<rt>ちりょう</rt></ruby>（※3）や予防などにも<ruby>効果<rt>こうか</rt></ruby>が期待できる。ハチミツが<ruby>健康<rt>けんこう</rt></ruby>食品の代表のようにいわれるわけである。</p><p>ハチミツは、ハチが<ruby>蜜<rt>みつ</rt></ruby>をとる花の種類によって、香りや甘みに違いがある。私が好きなのは、果物や木の花から<ruby>蜜<rt>みつ</rt></ruby>がとられたハチミツだ。ミカンは、甘くてすっぱい味がして、香りがさわやかだ。コーヒーや紅茶に入れると、とてもおいしい。木の花では、<ruby>栗<rt>くり</rt></ruby>（※4）が好きだ。<ruby>栗<rt>くり</rt></ruby>のハチミツは、焼いた<ruby>栗<rt>くり</rt></ruby>のような香りがある。肉料理に向いているようだ。</p><p>ハチミツについて特に注意すべき点は、1歳<ruby>未満<rt>みまん</rt></ruby>の赤ちゃんには食べさせないほうがいい、ということだ。ハチミツは普通、<ruby>高温<rt>こうおん</rt></ruby>による熱<ruby>殺菌<rt>さっきん</rt></ruby>をしていないので、赤ちゃんに<ruby>害<rt>がい</rt></ruby>のある<ruby>菌<rt>きん</rt></ruby>が残っているからだそうだ。</p>",
+  "footnotes": [
+    {
+      "term": "（※1）ハチミツ",
+      "definition": "ハチが花から集めてできた甘い食べ物"
+    },
+    {
+      "term": "（※2）殺菌",
+      "definition": "菌（非常に小さい生き物で、病気になったり腐ったりする原因になるもの）を殺すこと"
+    },
+    {
+      "term": "（※3）治療",
+      "definition": "薬や手術などで病気やけがを治すこと"
+    },
+    {
+      "term": "（※4）栗",
+      "definition": "木の名前、実は食べられる"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "天然",
+      "reading": "てんねん",
+      "meaning": "natural"
+    },
+    {
+      "word": "甘み",
+      "reading": "あまみ",
+      "meaning": "sweetness"
+    },
+    {
+      "word": "効果",
+      "reading": "こうか",
+      "meaning": "effect"
+    },
+    {
+      "word": "親しまれる",
+      "reading": "したしまれる",
+      "meaning": "to become popular, familiar"
+    },
+    {
+      "word": "カロリー",
+      "reading": "カロリー",
+      "meaning": "calories"
+    },
+    {
+      "word": "消化",
+      "reading": "しょうか",
+      "meaning": "digestion"
+    },
+    {
+      "word": "吸収",
+      "reading": "きゅうしゅう",
+      "meaning": "absorption"
+    },
+    {
+      "word": "体力",
+      "reading": "たいりょく",
+      "meaning": "strength"
+    },
+    {
+      "word": "回復",
+      "reading": "かいふく",
+      "meaning": "recovery"
+    },
+    {
+      "word": "治療",
+      "reading": "ちりょう",
+      "meaning": "treatment"
+    },
+    {
+      "word": "予防",
+      "reading": "よぼう",
+      "meaning": "prevention"
+    },
+    {
+      "word": "期待する",
+      "reading": "きたいする",
+      "meaning": "to expect, anticipate"
+    },
+    {
+      "word": "健康",
+      "reading": "けんこう",
+      "meaning": "health"
+    },
+    {
+      "word": "代表",
+      "reading": "だいひょう",
+      "meaning": "representative"
+    },
+    {
+      "word": "ハチ",
+      "reading": "ハチ",
+      "meaning": "bee"
+    },
+    {
+      "word": "蜜",
+      "reading": "みつ",
+      "meaning": "syrup"
+    },
+    {
+      "word": "香り",
+      "reading": "かおり",
+      "meaning": "fragrance"
+    },
+    {
+      "word": "すっぱい",
+      "reading": "すっぱい",
+      "meaning": "sour"
+    },
+    {
+      "word": "さわやか",
+      "reading": "さわやか",
+      "meaning": "refreshing"
+    },
+    {
+      "word": "向いている",
+      "reading": "むいている",
+      "meaning": "to be suited to"
+    },
+    {
+      "word": "未満",
+      "reading": "みまん",
+      "meaning": "under"
+    },
+    {
+      "word": "高温",
+      "reading": "こうおん",
+      "meaning": "high temperature"
+    },
+    {
+      "word": "殺菌",
+      "reading": "さっきん",
+      "meaning": "sterilization"
+    },
+    {
+      "word": "害",
+      "reading": "がい",
+      "meaning": "harm"
+    },
+    {
+      "word": "節約",
+      "reading": "せつやく",
+      "meaning": "thrift"
+    }
+  ],
+  "questions": [
+    {
+      "id": "medium-10-q1",
+      "questionNumber": "1",
+      "questionText": "ハチミツについて、正しくないのはどれか。",
+      "options": [
+        "<ruby>砂糖<rt>さとう</rt></ruby>より少ない量で、同じ甘みになる。",
+        "すぐ<ruby>消化<rt>しょうか</rt></ruby><ruby>吸収<rt>きゅうしゅう</rt></ruby>されるので、効果が早く出る。",
+        "同じハチなら、花が変わっても香りや甘みは同じだ。",
+        "病気のあとや<ruby>疲<rt>つか</rt></ruby>れている時に、ハチミツは<ruby>効果<rt>こうか</rt></ruby>がある。"
+      ],
+      "correct": 3,
+      "correctOption": "同じハチなら、花が変わっても香りや甘みは同じだ。",
+      "explanation": "本文に「ハチが蜜をとる花の種類によって、香りや甘みに違いがある」と書かれており、花が変わると香りや甘みも異なります。したがって「花が変わっても香りや甘みは同じだ」とする 3 が本文の内容と合っておらず、正しくないため正解です。"
+    },
+    {
+      "id": "medium-10-q2",
+      "questionNumber": "2",
+      "questionText": "ハチミツが<ruby>健康<rt>けんこう</rt></ruby>食品と言われる理由は何か。",
+      "options": [
+        "体力の回復によく、<ruby>殺菌<rt>さっきん</rt></ruby><ruby>力<rt>りょく</rt></ruby>があるから。",
+        "カロリーが高い食べ物だから。",
+        "甘いので、<ruby>砂糖<rt>さとう</rt></ruby>の<ruby>節約<rt>せつやく</rt></ruby>になるから。",
+        "飲み物や料理によく合うから。"
+      ],
+      "correct": 1,
+      "correctOption": "体力の回復によく、<ruby>殺菌<rt>さっきん</rt></ruby><ruby>力<rt>りょく</rt></ruby>があるから。",
+      "explanation": "本文に「消化吸収が速く、すぐエネルギーになるので、運動のあとや病気のあとの体力の回復にもよい。また、非常に強い殺菌力を持ち…ハチミツが健康食品の代表のようにいわれるわけである」とあります。したがって正解は 1 です。"
+    },
+    {
+      "id": "medium-10-q3",
+      "questionNumber": "3",
+      "questionText": "ハチミツを使うとき、注意する点は何か。",
+      "options": [
+        "熱いものに入れてはいけないこと",
+        "肉料理には合わないことが多いこと",
+        "走ったあとに食べてはいけないこと",
+        "1歳前の赤ちゃんに食べさせないこと"
+      ],
+      "correct": 4,
+      "correctOption": "1歳前の赤ちゃんに食べさせないこと",
+      "explanation": "本文に「特に注意すべき点は、1歳未満の赤ちゃんには食べさせないほうがいい、ということだ」と述べられています。したがって正解は 4 です。"
+    }
+  ]
+}

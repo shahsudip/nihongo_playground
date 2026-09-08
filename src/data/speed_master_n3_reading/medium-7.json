@@ -1,0 +1,143 @@
+{
+  "id": "medium-7",
+  "chapterId": "medium-7",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（中文）",
+  "sectionEn": "Medium Passages",
+  "mondaiNumber": 7,
+  "targetMinutes": 7,
+  "title": "問題 7（中文）",
+  "instruction": "問題7 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0053.jpg",
+  "passageLayout": "html",
+  "footnotesDiagram": "/speed_master_n3_pages/mondai_medium_7_plug_diagram.png",
+  "passageText": "<div class=\"p-4 border border-slate-300 rounded-lg bg-slate-50\"><p class=\"text-center font-bold text-lg mb-4\">お知らせ　〜コンセントを<ruby>掃除<rt>そうじ</rt></ruby>しましょう〜</p><p class=\"mb-3\">これまでわからなかった火事の<ruby>原因<rt>げんいん</rt></ruby>の一つが、最近、<ruby>明<rt>あき</rt></ruby>らかにされました。コンセントと、そこに差したプラグ<sup>（※1）</sup>の間に起きる<ruby>現象<rt>げんしょう</rt></ruby>で、トラッキング<ruby>現象<rt>げんしょう</rt></ruby>と呼ばれているものです。</p><p class=\"mb-3\">長い間プラグとコンセントを差したままにしておくと、プラグとコンセントの間に<ruby>徐々<rt>じょじょ</rt></ruby>にほこりがたまり、そのほこりに<ruby>湿気<rt>しっけ</rt></ruby>が加わると起こる現象です。プラグの二つの<ruby>刃<rt>は</rt></ruby><sup>（※2）</sup>の間が<ruby>徐々<rt>じょじょ</rt></ruby>に<ruby>焦<rt>こ</rt></ruby>げて<sup>（※3）</sup>電気が<ruby>流<rt>なが</rt></ruby>れる道（トラック）ができ、やがて、この電気の道に大きな<ruby>電流<rt>でんりゅう</rt></ruby>が流れるようになり、火が出るのだそうです。</p><p class=\"mb-4\">日常生活ではプラグはコンセントに差したままにしておくことが多いことと、この部分のほこりは目につきにくいことから、知らない間にほこりがたまってしまいます。<ruby>壁<rt>かべ</rt></ruby>のコンセントとプラグの間の<ruby>掃除<rt>そうじ</rt></ruby>も、<ruby>定期的<rt>ていきてき</rt></ruby>にするようにしてください。</p><div class=\"text-right font-bold\">マンション<ruby>管理組合<rt>かんりくみあい</rt></ruby></div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）プラグ",
+      "definition": "電気器具の名前"
+    },
+    {
+      "term": "（※2）<ruby>刃<rt>は</rt></ruby>",
+      "definition": "器具の一部分の呼び方、特に薄い<ruby>金属<rt>きんぞく</rt></ruby>についていう"
+    },
+    {
+      "term": "（※3）<ruby>焦<rt>こ</rt></ruby>げる",
+      "definition": "火に焼けて黒くなること"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "コンセント",
+      "reading": "コンセント",
+      "meaning": "electrical outlet"
+    },
+    {
+      "word": "原因",
+      "reading": "げんいん",
+      "meaning": "cause"
+    },
+    {
+      "word": "明らか",
+      "reading": "あきらか",
+      "meaning": "clear, obvious"
+    },
+    {
+      "word": "徐々に",
+      "reading": "じょじょに",
+      "meaning": "gradually"
+    },
+    {
+      "word": "湿気",
+      "reading": "しっけ",
+      "meaning": "humidity, moisture"
+    },
+    {
+      "word": "電流",
+      "reading": "でんりゅう",
+      "meaning": "electrical current"
+    },
+    {
+      "word": "ほこり",
+      "reading": "ほこり",
+      "meaning": "dust"
+    },
+    {
+      "word": "たまる",
+      "reading": "たまる",
+      "meaning": "to accumulate, build up"
+    },
+    {
+      "word": "壁",
+      "reading": "かべ",
+      "meaning": "wall"
+    },
+    {
+      "word": "定期的に",
+      "reading": "ていきてきに",
+      "meaning": "regularly, periodically"
+    },
+    {
+      "word": "管理組合",
+      "reading": "かんりくみあい",
+      "meaning": "management association"
+    },
+    {
+      "word": "家具",
+      "reading": "かぐ",
+      "meaning": "furniture"
+    },
+    {
+      "word": "抜く",
+      "reading": "ぬく",
+      "meaning": "to remove, unplug, pull out"
+    }
+  ],
+  "questions": [
+    {
+      "id": "medium-7-q1",
+      "questionNumber": "1",
+      "questionText": "トラッキング現象はどこで起きるか。",
+      "options": [
+        "コンセントのある壁の中",
+        "プラグの中",
+        "コンセントとプラグの間",
+        "プラグの<ruby>刃<rt>は</rt></ruby>の先"
+      ],
+      "correct": 3,
+      "correctOption": "コンセントとプラグの間",
+      "explanation": "本文に「コンセントと、そこに差したプラグの間に起きる現象で、トラッキング現象と呼ばれているものです」と明記されています。したがって正解は 3 です。"
+    },
+    {
+      "id": "medium-7-q2",
+      "questionNumber": "2",
+      "questionText": "トラッキング現象の<ruby>原因<rt>げんいん</rt></ruby>でないものはどれか。",
+      "options": [
+        "ほこり",
+        "<ruby>湿気<rt>しっけ</rt></ruby>",
+        "<ruby>壁<rt>かべ</rt></ruby>",
+        "<ruby>電流<rt>でんりゅう</rt></ruby>"
+      ],
+      "correct": 3,
+      "correctOption": "<ruby>壁<rt>かべ</rt></ruby>",
+      "explanation": "トラッキング現象は、たまった「ほこり」に「湿気」が加わり、電気の道ができて大きな「電流」が流れることによって発生します。「壁」はコンセントが設置されている場所にすぎず、現象の原因ではありません。したがって正解は 3 です。"
+    },
+    {
+      "id": "medium-7-q3",
+      "questionNumber": "3",
+      "questionText": "トラッキング<ruby>現象<rt>げんしょう</rt></ruby>を起こさないようにするために必要なことは何か。",
+      "options": [
+        "床や家具を<ruby>丁寧<rt>ていねい</rt></ruby>に<ruby>掃除<rt>そうじ</rt></ruby>する。",
+        "コンセントを差したままにしておく。",
+        "プラグをコンセントから<ruby>抜<rt>ぬ</rt></ruby>かない。",
+        "プラグとコンセントの間の<ruby>掃除<rt>そうじ</rt></ruby>をする。"
+      ],
+      "correct": 4,
+      "correctOption": "プラグとコンセントの間の<ruby>掃除<rt>そうじ</rt></ruby>をする。",
+      "explanation": "本文の結びで「壁のコンセントとプラグの間の掃除も、定期的にするようにしてください」と呼びかけられており、ほこりがたまらないように掃除をすることが必要です。したがって正解は 4 です。"
+    }
+  ]
+}

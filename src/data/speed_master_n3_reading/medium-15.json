@@ -1,0 +1,101 @@
+{
+  "id": "medium-15",
+  "chapterId": "medium-15",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（中文）",
+  "sectionEn": "Medium Passages",
+  "mondaiNumber": 15,
+  "targetMinutes": 8,
+  "title": "問題 15（中文）",
+  "instruction": "問題15 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "passageText": "<div class=\"speed-master-lined-paper\"><div class=\"speed-master-ruled-row empty-row\">&nbsp;</div><div class=\"speed-master-ruled-row\">　たか子様</div><div class=\"speed-master-ruled-row empty-row\">&nbsp;</div><div class=\"speed-master-ruled-row\">　もうすぐ夏休みですね。皆さま、お元気でしょうか。</div><div class=\"speed-master-ruled-row\">　昨日、メロンや<ruby>桃<rt>もも</rt></ruby>などが届きました。いつもお<ruby>心遣<rt>こころづか</rt></ruby>いをいただき、ありがとうご</div><div class=\"speed-master-ruled-row\">ざいます。毎年、この<ruby>季節<rt>きせつ</rt></ruby>においしいくだものがいただけるのも、たか子さんとお</div><div class=\"speed-master-ruled-row\">兄ちゃんのおかげです。二人が力を合わせて、新しい農業に<ruby>挑戦<rt>ちょうせん</rt></ruby>し<sup>(※１)</sup>、よい結</div><div class=\"speed-master-ruled-row\">果が出ていること、本当にうれしいです。</div><div class=\"speed-master-ruled-row\">　たけし君は大学受験だと思いますが、勉強がんばっていますか。昨日、アルバイ</div><div class=\"speed-master-ruled-row\">トから帰った二郎が<ruby>桃<rt>もも</rt></ruby>をいただきながら、いとこで集まって、またキャンプをした</div><div class=\"speed-master-ruled-row\">いと言っていました。<u>①来年はできそうですね。</u>たけし君にも伝えておいてくださ</div><div class=\"speed-master-ruled-row\">い。</div><div class=\"speed-master-ruled-row\">　少しですが、名物のうめぼし<sup>(※２)</sup>を送ります。体にいいので、食べてください。</div><div class=\"speed-master-ruled-row\">それでは、皆さま、元気に暑い夏をお過ごしください。お兄ちゃんにもよろしく。</div><div class=\"speed-master-ruled-row empty-row\">&nbsp;</div><div class=\"speed-master-ruled-row\">　2015年７月12日</div><div class=\"speed-master-ruled-row text-right\">めぐみ</div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）挑戦する",
+      "definition": "あきらめずにやってみること"
+    },
+    {
+      "term": "（※2）うめぼし",
+      "definition": "ウメの木の実で作った食べ物"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "メロン",
+      "reading": "メロン",
+      "meaning": "melon"
+    },
+    {
+      "word": "桃",
+      "reading": "もも",
+      "meaning": "peach"
+    },
+    {
+      "word": "心遣い",
+      "reading": "こころづかい",
+      "meaning": "consideration, thoughtfulness"
+    },
+    {
+      "word": "農業",
+      "reading": "のうぎょう",
+      "meaning": "agriculture"
+    },
+    {
+      "word": "いとこ",
+      "reading": "いとこ",
+      "meaning": "cousin"
+    },
+    {
+      "word": "名物",
+      "reading": "めいぶつ",
+      "meaning": "specialty, famous product"
+    }
+  ],
+  "questions": [
+    {
+      "id": "medium-15-q1",
+      "questionNumber": "1",
+      "questionText": "この手紙を書いた一番の目的はどれか。",
+      "options": [
+        "新しい<ruby>農業<rt>のうぎょう</rt></ruby>への<ruby>挑戦<rt>ちょうせん</rt></ruby>はすばらしいと伝えること。",
+        "くだものを送ってくれたことへのお礼を言うこと。",
+        "たけし君に勉強をがんばってほしいと伝えてもらうこと。",
+        "うめぼしを送ったと伝えること。"
+      ],
+      "correct": 2,
+      "correctOption": "くだものを送ってくれたことへのお礼を言うこと。",
+      "explanation": "手紙の冒頭で「昨日、メロンや桃などが届きました。いつもお心遣いをいただき、ありがとうございます」とあり、送られてきたくだものへのお礼を伝えることが主な目的です。したがって正解は 2 です。"
+    },
+    {
+      "id": "medium-15-q2",
+      "questionNumber": "2",
+      "questionText": "めぐみさんとたか子さんの関係はどれか。",
+      "options": [
+        "めぐみさんはたか子さんの姉",
+        "めぐみさんとたか子さんはいとこ",
+        "めぐみさんとたか子さんの子どもが友だち",
+        "めぐみさんの兄がたか子さんの夫"
+      ],
+      "correct": 4,
+      "correctOption": "めぐみさんの兄がたか子さんの夫",
+      "explanation": "手紙の中で「たか子さんとお兄ちゃんのおかげです」「二人が力を合わせて」「お兄ちゃんにもよろしく」とあり、たか子さんの夫はめぐみさんの兄です。また二郎とたけし君が「いとこ」であることからも合致します。したがって正解は 4 です。"
+    },
+    {
+      "id": "medium-15-q3",
+      "questionNumber": "3",
+      "questionText": "<u>①来年はできそうですね</u>とあるが、その理由はどれか。",
+      "options": [
+        "二郎がアルバイトのお金を<ruby>貯<rt>た</rt></ruby>めているから。",
+        "いとこたちはキャンプが大好きだから。",
+        "たけし君の大学受験が終わっているから。",
+        "来年の夏は、二郎も元気になっているから。"
+      ],
+      "correct": 3,
+      "correctOption": "たけし君の大学受験が終わっているから。",
+      "explanation": "今年は「たけし君は大学受験」のためにキャンプができませんが、来年になれば受験が終わっているため、またいとこで集まってキャンプができるという意味です。したがって正解は 3 です。"
+    }
+  ]
+}

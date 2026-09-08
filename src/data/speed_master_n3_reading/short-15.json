@@ -1,0 +1,60 @@
+{
+  "id": "short-15",
+  "chapterId": "short-15",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 15,
+  "targetMinutes": 3,
+  "title": "問題 15（短文）",
+  "instruction": "問題15 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0040.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"speed-master-letter-card\"><div class=\"speed-master-letter-recipient\">みち子様</div><div class=\"speed-master-letter-opening\"><ruby>前略<rt>ぜんりゃく</rt></ruby></div><div class=\"speed-master-letter-body\"><p>昨日、田中さんからの連絡で、お母様の<ruby>急逝<rt>きゅうせい</rt></ruby>（※1）を知り、<ruby>本当<rt>ほんとう</rt></ruby>にびっくりいたしました。ご家族皆さまの悲しみを思うと、申し上げる言葉もありません。</p><p>高校生だったころ、皆でよくお<ruby>宅<rt>たく</rt></ruby>にお<ruby>邪魔<rt>じゃま</rt></ruby>し、お母様がケーキを作ってくださったことが思い出されます。</p><p>どうぞお気持ちをしっかり持って、お体を大切になさってください。お<ruby>疲<rt>つか</rt></ruby>れが出ませんように。</p><p>お母様のご<ruby>冥福<rt>めいふく</rt></ruby>を心よりお祈り申し上げます（※2）。</p></div><div class=\"speed-master-letter-sender\">吉田あや</div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）<ruby>急逝<rt>きゅうせい</rt></ruby>",
+      "definition": "急に亡くなること"
+    },
+    {
+      "term": "（※2）ご<ruby>冥福<rt>めいふく</rt></ruby>を心よりお祈り申し上げます",
+      "definition": "亡くなった人に対して祈りの気持ちを表す言葉"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "おじゃまする",
+      "reading": "おじゃまする",
+      "meaning": "to drop by, visit someone's home"
+    },
+    {
+      "word": "気持ちをしっかり持つ",
+      "reading": "きもちをしっかりもつ",
+      "meaning": "to stay strong, put one's mind to something"
+    },
+    {
+      "word": "お疲れが出ませんように",
+      "reading": "おつかれがでませんように",
+      "meaning": "so as not to wear yourself out"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-15-q1",
+      "questionNumber": "1",
+      "questionText": "この手紙が一番伝えたいことはどれか。",
+      "options": [
+        "みち子さんのお母さんが亡くなって、とても<ruby>驚<rt>おどろ</rt></ruby>いていること",
+        "みち子さんのお母さんが作ってくれたケーキが<ruby>懐<rt>なつ</rt></ruby>かしく感じられること",
+        "みち子さんの体の具合が悪くなったことを心配する気持ち",
+        "みち子さんのお母さんの死を悲しく思う気持ち"
+      ],
+      "correct": 4,
+      "correctOption": "みち子さんのお母さんの死を悲しく思う気持ち",
+      "explanation": "この手紙はお悔やみ（おくやみ）の手紙であり、みち子さんのお母様が急逝されたことに対する深い悲しみとお悔やみの気持ち（ご冥福をお祈りする気持ち）を伝えることが最も言いたいことです。したがって正解は 4 です。"
+    }
+  ]
+}

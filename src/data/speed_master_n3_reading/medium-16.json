@@ -1,0 +1,94 @@
+{
+  "id": "medium-16",
+  "chapterId": "medium-16",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（中文）",
+  "sectionEn": "Medium Passages",
+  "mondaiNumber": 16,
+  "targetMinutes": 7,
+  "title": "問題 16（中文）",
+  "instruction": "問題16 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0064.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"speed-master-email-card\"><div class=\"speed-master-email-meta\"><div><div><span class=\"font-bold\">差出人：</span>○○○○</div><div><span class=\"font-bold\">宛先：</span>○○○○</div><div><span class=\"font-bold\">CC：</span></div><div><span class=\"font-bold\">件名：</span>○○○○○○○○</div></div><div class=\"speed-master-email-reply-btn\">↰ 返信</div></div><div class=\"speed-master-email-body\"><p class=\"mb-4 font-bold\">さゆりさんへ</p><p class=\"mb-3\">昨日はせっかくお祝いの席にご招待いただきながら、出席できず、申し訳ありませんでした。お電話で欠席のご連絡をしましたが、時間がなかったため、<ruby>詳<rt>くわ</rt></ruby>しく事情をお伝えできませんでした。</p><p class=\"mb-3\">実は、友人の両親が日本に来ることになって、昨日、友人が空港に迎えに行くはずだったのですが、急に熱が出て、行けなくなったのです。そこで、私が代わりに行くことになったのです。<ruby>突然<rt>とつぜん</rt></ruby>の欠席、本当にごめんなさい。またこのような機会があれば、ぜひお声をかけてください。</p><p class=\"mb-3\">昨日、その友人の両親からたくさんお<ruby>土産<rt>みやげ</rt></ruby>をいただきました。日本では買えない<ruby>珍<rt>めずら</rt></ruby>しい物なので、さゆりさんにもおすそ<ruby>分<rt>わ</rt></ruby>け（※1）したいと思います。先ほど<ruby>別便<rt>べつびん</rt></ruby>でお送りしました。ご<ruby>賞味<rt>しょうみ</rt></ruby>ください。</p><p class=\"mb-4\">では、また、お目にかかれる日を楽しみにしております。</p><div class=\"text-right font-bold text-lg mt-6\">マキ</div></div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）おすそ分け",
+      "definition": "人からもらった物の一部をあげること"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "お祝い",
+      "reading": "おいわい",
+      "meaning": "celebration"
+    },
+    {
+      "word": "席",
+      "reading": "せき",
+      "meaning": "seat, function"
+    },
+    {
+      "word": "別便",
+      "reading": "べつびん",
+      "meaning": "separate mail"
+    },
+    {
+      "word": "ご賞味ください",
+      "reading": "ごしょうみください",
+      "meaning": "Please enjoy."
+    },
+    {
+      "word": "看病する",
+      "reading": "かんびょうする",
+      "meaning": "to nurse a sick person"
+    }
+  ],
+  "questions": [
+    {
+      "id": "medium-16-q1",
+      "questionNumber": "1",
+      "questionText": "会を欠席した理由として正しいのはどれか。",
+      "options": [
+        "忙しくて、行く時間がなくなったから。",
+        "病気の友人の代わりに、友人の両親を迎えに行ったから。",
+        "急に病気になった友人を<ruby>看護<rt>かんびょう</rt></ruby>しなければならなかったから。",
+        "友人の両親が日本<ruby>土産<rt>みやげ</rt></ruby>を買うのを手伝わなければならなかったから。"
+      ],
+      "correct": 2,
+      "correctOption": "病気の友人の代わりに、友人の両親を迎えに行ったから。",
+      "explanation": "本文に「友人が空港に迎えに行くはずだったのですが、急に熱が出て、行けなくなったのです。そこで、私が代わりに行くことになったのです」とあり、病気になった友人の代わりに両親を迎えに行ったことが欠席の理由です。したがって正解は 2 です。"
+    },
+    {
+      "id": "medium-16-q2",
+      "questionNumber": "2",
+      "questionText": "本文の内容と<ruby>違<rt>ちが</rt></ruby>うものはどれか。",
+      "options": [
+        "マキさんは、欠席して申し訳なかったと伝えている。",
+        "マキさんは、つぎは必ず出席すると伝えている。",
+        "マキさんは、電話で欠席を伝えたが、<ruby>詳<rt>くわ</rt></ruby>しく理由は言わなかった。",
+        "マキさんは、同じような会があれば、また誘ってほしいと伝えている。"
+      ],
+      "correct": 2,
+      "correctOption": "マキさんは、つぎは必ず出席すると伝えている。",
+      "explanation": "マキさんは「またこのような機会があれば、ぜひお声をかけてください（誘ってください）」と述べていますが、「次は必ず出席する」とは言っていません。したがって本文の内容と違うのは 2 です。"
+    },
+    {
+      "id": "medium-16-q3",
+      "questionNumber": "3",
+      "questionText": "マキさんがさゆりさんに送ったものは何か。",
+      "options": [
+        "誕生日のプレゼント",
+        "もらい物のおすそ<ruby>分<rt>わ</rt></ruby>け",
+        "空港で買って帰ったもの",
+        "友人の両親が日本で買ったお<ruby>土産<rt>みやげ</rt></ruby>"
+      ],
+      "correct": 2,
+      "correctOption": "もらい物のおすそ<ruby>分<rt>わ</rt></ruby>け",
+      "explanation": "マキさんは「友人の両親からたくさんお土産をいただきました。日本では買えない珍しい物なので、さゆりさんにもおすそ分け（もらった物の一部をあげること）したいと思います」と書いています。したがって正解は 2 です。"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "short-1",
+  "chapterId": "short-1",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 1,
+  "targetMinutes": 3,
+  "title": "問題 1（短文）",
+  "instruction": "問題1 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0026.jpg",
+  "passageLayout": "html",
+  "passageHeader": "茶道教室に参加する方へ",
+  "passageText": "<p class=\"font-bold text-center text-lg mb-3\"><ruby>茶道<rt>さどう</rt></ruby><ruby>教室<rt>きょうしつ</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する<ruby>方<rt>かた</rt></ruby>へ</p><p><ruby>茶道<rt>さどう</rt></ruby>の楽しさは、ゆっくりした時間が味わえることです。いっしょにお茶をいただく人たちを「客」といいますが、<ruby>身分<rt>みぶん</rt></ruby>、職業、年齢、性別などの<ruby>制限<rt>せいげん</rt></ruby>はありません。</p><p>そこでは、政治・経済や社会の問題などは話さないという約束があります。話題は、<ruby>茶道<rt>さどう</rt></ruby>のこと、花や芸術のことなどを選びます。毎日忙しい人でも、心が落ち着いて、静かな<ruby>雰囲気<rt>ふんいき</rt></ruby>を楽しむことができます。</p><p class=\"mt-4 text-slate-500\">参加費は・・・</p><p class=\"text-right font-bold mt-4\">○○市<ruby>茶道<rt>さどう</rt></ruby>を楽しむ会</p>",
+  "footnotes": [],
+  "vocabulary": [
+    {
+      "word": "味わう",
+      "reading": "あじわう",
+      "meaning": "to savor, enjoy"
+    },
+    {
+      "word": "身分",
+      "reading": "みぶん",
+      "meaning": "status, social standing"
+    },
+    {
+      "word": "制限",
+      "reading": "せいげん",
+      "meaning": "limit, restriction"
+    },
+    {
+      "word": "話題",
+      "reading": "わだい",
+      "meaning": "topic, subject of conversation"
+    },
+    {
+      "word": "雰囲気",
+      "reading": "ふんいき",
+      "meaning": "atmosphere, mood"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-1-q1",
+      "questionNumber": "1",
+      "questionText": "「○○<ruby>茶道<rt>さどう</rt></ruby>を楽しむ会」が、<ruby>参加<rt>さんか</rt></ruby>する人に伝えたいことはどれか。",
+      "options": [
+        "<ruby>茶道<rt>さどう</rt></ruby>は、いろいろな職業の人とどんなことでも話せて楽しい。",
+        "<ruby>茶道<rt>さどう</rt></ruby>は、社長、社員、<ruby>年寄<rt>としよ</rt></ruby>り、子供、だれでも<ruby>一緒<rt>いっしょ</rt></ruby>に楽しめる。",
+        "「客」がみな同じ会社の人なら、仕事の話をしても大丈夫だ。",
+        "<ruby>茶道<rt>さどう</rt></ruby>はゆっくり行うので、忙しい人は楽しむことができない。"
+      ],
+      "correct": 2,
+      "correctOption": "<ruby>茶道<rt>さどう</rt></ruby>は、社長、社員、<ruby>年寄<rt>としよ</rt></ruby>り、子供、だれでも<ruby>一緒<rt>いっしょ</rt></ruby>に楽しめる。",
+      "explanation": "本文に「身分、職業、年齢、性別などの制限はありません」とあり、だれでも分け隔てなく一緒に楽しめることが述べられています。政治や仕事の話はしないという約束があるため1や3は誤りで、忙しい人でも心が落ち着いて楽しめるとあるため4も誤りです。したがって正解は 2 です。"
+    }
+  ]
+}

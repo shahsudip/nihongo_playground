@@ -1,0 +1,151 @@
+{
+  "id": "long-4",
+  "chapterId": "long-4",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（長文）",
+  "sectionEn": "Long Passages",
+  "mondaiNumber": 4,
+  "targetMinutes": 10,
+  "title": "問題 4（長文）",
+  "instruction": "問題4 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0072.jpg",
+  "passageLayout": "html",
+  "footnotesDiagram": "/speed_master_n3_pages/mondai_long_4_buddha_diagram.png",
+  "passageText": "<p>あなたはテレビのコマーシャル（※1）を見ていて、まじめそうなタレント（※2）が<ruby>宣伝<rt>せんでん</rt></ruby>している品物はなんとなく信じられるような気がする、ということはありませんか。また、入学するのが難しいと言われている大学の学生は、学力以外の能力も高いだろうと思うことはありませんか。</p><p>しかし、<span class=\"speed-master-box-blank\">①</span>。入学するのが難しい大学の学生だからといって、<u><sub>②</sub>その人物</u>が社会的に優れているというわけではありません。</p><p>しかし、私たちは何かを<ruby>評価<rt>ひょうか</rt></ruby>するとき、いい<ruby>特徴<rt>とくちょう</rt></ruby>が一つあると、その他の点も高く<ruby>評価<rt>ひょうか</rt></ruby>してしまうことがよくあります。このように、目立つ<ruby>特徴<rt>とくちょう</rt></ruby>に影響されて、その他の面についても高く<ruby>評価<rt>ひょうか</rt></ruby>したり、逆に低く<ruby>評価<rt>ひょうか</rt></ruby>したりする心理的効果のことを「<u><sub>③</sub>ハロー効果</u>」と呼びます。「ハロー」というのは、<ruby>仏像<rt>ぶつぞう</rt></ruby>（※3）の後ろにある光のことです。</p><p>面接試験の時に私たちが髪の形や服に気を使うのは、面接をする人たちの心の中でも<u><sub>④</sub>このようなこと</u>が起きていると思っているからではないでしょうか。面接をする側は、自分が行おうとしている<ruby>判断<rt>はんだん</rt></ruby>が<ruby>何<rt>なに</rt></ruby>かの<ruby>影響<rt>えいきょう</rt></ruby>を受けていないか、<ruby>冷静<rt>れいせい</rt></ruby>（※4）に見ながら評価したほうがいいでしょう。</p>",
+  "footnotes": [
+    {
+      "term": "（※1）コマーシャル",
+      "definition": "テレビやラジオで放送される広告"
+    },
+    {
+      "term": "（※2）タレント",
+      "definition": "テレビやラジオに出て仕事をすることを、主な職業としている人"
+    },
+    {
+      "term": "（※3）仏像（ぶつぞう）",
+      "definition": "仏教で、祈りの対象として仏の姿を表したもの"
+    },
+    {
+      "term": "（※4）冷静（れいせい）",
+      "definition": "落ち着いて考えたり行動したりする様子"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "宣伝する",
+      "reading": "せんでんする",
+      "meaning": "publicity, advertising"
+    },
+    {
+      "word": "なんとなく",
+      "reading": "なんとなく",
+      "meaning": "somehow"
+    },
+    {
+      "word": "学力",
+      "reading": "がくりょく",
+      "meaning": "academic ability"
+    },
+    {
+      "word": "能力",
+      "reading": "のうりょく",
+      "meaning": "ability"
+    },
+    {
+      "word": "優れる",
+      "reading": "すぐれる",
+      "meaning": "to excel"
+    },
+    {
+      "word": "評価",
+      "reading": "ひょうか",
+      "meaning": "assessment, evaluation"
+    },
+    {
+      "word": "特徴",
+      "reading": "とくちょう",
+      "meaning": "distinctive feature"
+    },
+    {
+      "word": "心理",
+      "reading": "しんり",
+      "meaning": "psychology"
+    },
+    {
+      "word": "面接",
+      "reading": "めんせつ",
+      "meaning": "interview"
+    },
+    {
+      "word": "判断",
+      "reading": "はんだん",
+      "meaning": "judgment"
+    },
+    {
+      "word": "印象",
+      "reading": "いんしょう",
+      "meaning": "impression"
+    }
+  ],
+  "questions": [
+    {
+      "id": "long-4-q1",
+      "questionNumber": "1",
+      "questionText": "①に入る文はどれか。",
+      "options": [
+        "まじめそうなタレントがコマーシャルで商品を<ruby>宣伝<rt>せんでん</rt></ruby>しているのは、商品を良く見せたいからではありません",
+        "まじめそうなタレントがコマーシャルで商品を<ruby>宣伝<rt>せんでん</rt></ruby>しているからといって、その商品の質が良いというわけではありません",
+        "まじめそうなタレントがコマーシャルで商品を<ruby>宣伝<rt>せんでん</rt></ruby>しているからといって、その商品を買いたくなるというわけではありません",
+        "まじめそうなタレントがコマーシャルで商品を<ruby>宣伝<rt>せんでん</rt></ruby>しているのは、商品を買わせたいからではありません"
+      ],
+      "correct": 2,
+      "correctOption": "まじめそうなタレントがコマーシャルで商品を<ruby>宣伝<rt>せんでん</rt></ruby>しているからといって、その商品の質が良いというわけではありません",
+      "explanation": "第1段落で提示された「まじめそうなタレントの宣伝品を信じられる気がする」と「難関大生は学力以外の能力も高いだろうと思う」という2つの例に対し、第2段落で「しかし、〜。入学するのが難しい大学の学生だからといって、その人物が社会的に優れているというわけではありません」と受けています。前者のタレントの例に対応する反論として適切なのは 2 です。"
+    },
+    {
+      "id": "long-4-q2",
+      "questionNumber": "2",
+      "questionText": "<u><sub>②</sub>その人物</u>とは誰か。",
+      "options": [
+        "商品のコマーシャルをしているタレント",
+        "大学を受験する学生",
+        "<ruby>評価<rt>ひょうか</rt></ruby>をしている人",
+        "入学試験の難しい大学の学生"
+      ],
+      "correct": 4,
+      "correctOption": "入学試験の難しい大学の学生",
+      "explanation": "「入学するのが難しい大学の学生だからといって、その人物が社会的に優れているというわけではありません」という文脈から、「その人物」は直前の「入学試験の難しい大学の学生」を指しています。したがって正解は 4 です。"
+    },
+    {
+      "id": "long-4-q3",
+      "questionNumber": "3",
+      "questionText": "<u><sub>③</sub>ハロー効果</u>とはどんな効果か。",
+      "options": [
+        "<ruby>仏像<rt>ぶつぞう</rt></ruby>の後ろで、明るくきれいな光が<ruby>輝<rt>かがや</rt></ruby>いていること",
+        "<ruby>髪<rt>かみ</rt></ruby>の形や服など、見た目の<ruby>印象<rt>いんしょう</rt></ruby>が人物の<ruby>評価<rt>ひょうか</rt></ruby>に大きく<ruby>影響<rt>えいきょう</rt></ruby>すること",
+        "人や物を<ruby>評価<rt>ひょうか</rt></ruby>するとき、一つの大きな<ruby>特徴<rt>とくちょう</rt></ruby>が全体の<ruby>評価<rt>ひょうか</rt></ruby>に<ruby>影響<rt>えいきょう</rt></ruby>すること",
+        "人や物を<ruby>評価<rt>ひょうか</rt></ruby>するとき、一番最初の<ruby>印象<rt>いんしょう</rt></ruby>で<ruby>評価<rt>ひょうか</rt></ruby>のほとんどが決まること"
+      ],
+      "correct": 3,
+      "correctOption": "人や物を<ruby>評価<rt>ひょうか</rt></ruby>するとき、一つの大きな<ruby>特徴<rt>とくちょう</rt></ruby>が全体の<ruby>評価<rt>ひょうか</rt></ruby>に<ruby>影響<rt>えいきょう</rt></ruby>すること",
+      "explanation": "第3段落に「目立つ特徴に影響されて、その他の面についても高く評価したり、逆に低く評価したりする心理的効果のことを『ハロー効果』と呼びます」と定義されています。したがって正解は 3 です。"
+    },
+    {
+      "id": "long-4-q4",
+      "questionNumber": "4",
+      "questionText": "<u><sub>④</sub>このようなこと</u>とはどのようなことか。",
+      "options": [
+        "<ruby>評価<rt>ひょうか</rt></ruby>すること",
+        "<ruby>判断<rt>はんだん</rt></ruby>すること",
+        "気を使うこと",
+        "ハロー効果"
+      ],
+      "correct": 4,
+      "correctOption": "ハロー効果",
+      "explanation": "直前の段落で説明された、目立つ一部分の特徴が全体の評価に影響を及ぼすという心理現象「ハロー効果」を指しています。したがって正解は 4 です。"
+    }
+  ]
+}

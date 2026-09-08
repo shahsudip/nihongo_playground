@@ -1,0 +1,97 @@
+{
+  "id": "search-3",
+  "chapterId": "search-3",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "情報検索",
+  "sectionEn": "Information Retrieval",
+  "mondaiNumber": 3,
+  "targetMinutes": 8,
+  "title": "問題 3（情報検索）",
+  "instruction": "問題3 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>は、チケットを買うときの電話番号を書いたものである。下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0095.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"space-y-4\"><div class=\"p-4 border border-slate-300 dark:border-slate-600 rounded bg-slate-50 dark:bg-slate-800/50 leading-relaxed\"><p>スーさんは音楽が大好きで、好きなバンドのコンサートがABCホールで行われることを、今、雑誌で知りました。しかし、すでにおとといからチケット<ruby>販売<rt>はんばい</rt></ruby><sup>（※1）</sup>が始まっていました。スーさんは急いでチケットを買おうとしていますが、現在、土曜日の夜の8時です。</p></div><div class=\"border-2 border-slate-700 dark:border-slate-300 p-6 bg-white dark:bg-slate-900 leading-relaxed space-y-6\"><p class=\"font-bold text-center text-lg border-b pb-2\">《お電話での申込方法》</p><div class=\"space-y-4\"><div class=\"space-y-1\"><p class=\"font-bold text-base\">●ABCホール</p><div class=\"pl-4 space-y-1 text-sm md:text-base\"><p class=\"font-semibold\">[<ruby>販売<rt>はんばい</rt></ruby><ruby>開始<rt>かいし</rt></ruby><ruby>初日<rt>しょにち</rt></ruby><sup>（※2）</sup>特別電話]</p><p class=\"text-base font-bold\">☎ 0120(333)555 （<ruby>通話料<rt>つうわりょう</rt></ruby>無料） 受付 10:00〜18:00</p><p class=\"text-xs md:text-sm text-slate-600 dark:text-slate-400\">※販売開始初日のみ利用可能。2日目<ruby>以降<rt>いこう</rt></ruby><sup>（※3）</sup>は<ruby>一般<rt>いっぱん</rt></ruby><sup>（※4）</sup>受付電話番号におかけください。</p><p class=\"font-semibold mt-3\">[<ruby>一般<rt>いっぱん</rt></ruby>受付電話]</p><p class=\"text-base font-bold\">☎ 03(2222)8888 受付 13:00〜21:00（土曜日、日曜日休み）</p></div></div><div class=\"space-y-1 border-t pt-4\"><p class=\"font-bold text-base\">●チケットクラブ</p><div class=\"pl-4 space-y-1 text-sm md:text-base\"><p class=\"text-base font-bold\">☎ 03(007)5555 受付 10:00〜18:00（年中無休）</p></div></div></div></div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）販売（はんばい）",
+      "definition": "商品を売ること"
+    },
+    {
+      "term": "（※2）初日（しょにち）",
+      "definition": "第1日目のこと"
+    },
+    {
+      "term": "（※3）以降（いこう）",
+      "definition": "その時からあと"
+    },
+    {
+      "term": "（※4）一般（いっぱん）",
+      "definition": "特別でなく、普通であること"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "可能",
+      "reading": "かのう",
+      "meaning": "possible"
+    },
+    {
+      "word": "通話料",
+      "reading": "つうわりょう",
+      "meaning": "phone call charge"
+    },
+    {
+      "word": "年中無休",
+      "reading": "ねんじゅうむきゅう",
+      "meaning": "open every day of the year, year-round"
+    },
+    {
+      "word": "受付",
+      "reading": "うけつけ",
+      "meaning": "acceptance, registration, reception desk"
+    },
+    {
+      "word": "販売開始",
+      "reading": "はんばいかいし",
+      "meaning": "start of sales"
+    },
+    {
+      "word": "初日",
+      "reading": "しょにち",
+      "meaning": "first day, opening day"
+    }
+  ],
+  "questions": [
+    {
+      "id": "search-3-q1",
+      "questionNumber": "1",
+      "questionText": "どの電話番号にかけるのが一番早いか。",
+      "options": [
+        "03(007)5555",
+        "0120(333)555",
+        "03(2222)8888",
+        "03(007)5555 か 03(2222)8888"
+      ],
+      "correct": 1,
+      "correctOption": "03(007)5555",
+      "explanation": "今日はおとといから発売が始まって3日目なので、初日専用の0120(333)555は利用できません。現在は「土曜日の夜8時」です。ABCホールの一般電話（03-2222-8888）は土日が休みのため月曜日の13:00まで電話が繋がりません。一方、チケットクラブ（03-007-5555）は年中無休なので、翌日（日曜日）の朝10:00から受け付けてもらえます。したがって、一番早く電話できるのは 1 の「03(007)5555」です。"
+    },
+    {
+      "id": "search-3-q2",
+      "questionNumber": "2",
+      "questionText": "電話での申込方法について、<u>間違っている</u>のはどれか。",
+      "options": [
+        "チケットクラブは一年中申し込みの受付をしている。",
+        "販売開始初日特別電話は2日間利用できる。",
+        "販売開始初日特別電話は、電話をかけるときにお金がかからない。",
+        "一般受付電話は、土曜日と日曜日は受付をしていない。"
+      ],
+      "correct": 2,
+      "correctOption": "販売開始初日特別電話は2日間利用できる。",
+      "explanation": "特別電話は「販売開始初日のみ利用可能」と書かれており、2日間利用できるわけではありません。したがって間違っているものは 2 です。（1は「年中無休」、3は「通話料無料」、4は「土曜日、日曜日休み」とあり、いずれも正しい説明です）。"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "short-11",
+  "chapterId": "short-11",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 11,
+  "targetMinutes": 3,
+  "title": "問題 11（短文）",
+  "instruction": "問題11 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0036.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"p-4 border border-slate-300 rounded-lg bg-slate-50\"><p class=\"text-center font-bold mb-4\">ゴミの出し方について</p><p>ゴミは次のようにして出してください。</p><ul class=\"list-disc list-inside space-y-2 mt-2\"><li>新聞・雑誌は、紙ひもでしばって出してください。チラシ<sup>（※1）</sup>も一緒にしてかまいません。</li><li><ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>などの紙パック<sup>（※2）</sup>は、一度水で洗い、<ruby>乾<rt>かわ</rt></ruby>かしてから<ruby>平<rt>たい</rt></ruby>らにして、紙ひもでしばって出してください。</li><li>古い服などは、中が見える袋に入れて出してください。汚れたものは出さないでください。ボタンやファスナーは、取らなくてもかまいません。カーテンやシーツなどは、燃やせるゴミに出してください。</li></ul><div class=\"text-right mt-4\">マンション管理人</div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）チラシ",
+      "definition": "<ruby>広告<rt>こうこく</rt></ruby>のために配る紙"
+    },
+    {
+      "term": "（※2）パック",
+      "definition": "食べ物や飲み物を入れるための<ruby>箱型<rt>はこがた</rt></ruby>の入れ物"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "しばる",
+      "reading": "しばる",
+      "meaning": "to tie"
+    },
+    {
+      "word": "乾かす",
+      "reading": "かわかす",
+      "meaning": "to dry"
+    },
+    {
+      "word": "平ら",
+      "reading": "たいら",
+      "meaning": "flat"
+    },
+    {
+      "word": "ファスナー",
+      "reading": "ファスナー",
+      "meaning": "zipper"
+    },
+    {
+      "word": "カーテン",
+      "reading": "カーテン",
+      "meaning": "curtain"
+    },
+    {
+      "word": "シーツ",
+      "reading": "シーツ",
+      "meaning": "sheets"
+    },
+    {
+      "word": "管理人",
+      "reading": "かんりにん",
+      "meaning": "janitor, building manager"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-11-q1",
+      "questionNumber": "1",
+      "questionText": "このマンションのゴミの出し方と<u><ruby>違<rt>ちが</rt></ruby>う</u>のはどれですか。",
+      "options": [
+        "<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>パックは洗ってから乾かし、<ruby>平<rt>たい</rt></ruby>らにして、ひもでしばって出す。",
+        "捨てるものをしばるひもは、紙ひもを使う。",
+        "はかなくなったジーンズは、中が見える袋に入れて捨てる。",
+        "新聞とチラシは混ぜないで、別々にしばって捨てる。"
+      ],
+      "correct": 4,
+      "correctOption": "新聞とチラシは混ぜないで、別々にしばって捨てる。",
+      "explanation": "本文に「新聞・雑誌は、紙ひもでしばって出してください。チラシも一緒にしてかまいません」とあり、チラシは新聞や雑誌と一緒にして出してよいため、「混ぜないで、別々にしばって捨てる」としている 4 が本文と違っています。したがって正解は 4 です。"
+    }
+  ]
+}

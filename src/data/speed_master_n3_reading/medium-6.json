@@ -1,0 +1,119 @@
+{
+  "id": "medium-6",
+  "chapterId": "medium-6",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（中文）",
+  "sectionEn": "Medium Passages",
+  "mondaiNumber": 6,
+  "targetMinutes": 7,
+  "title": "問題 6（中文）",
+  "instruction": "問題6 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0051.jpg",
+  "passageLayout": "html",
+  "footnotesDiagramLeft": "/speed_master_n3_pages/mondai_medium_6_hamster.png",
+  "footnotesDiagramRight": "/speed_master_n3_pages/mondai_medium_6_snake.png",
+  "passageText": "<div class=\"p-5 border border-slate-300 rounded-xl bg-slate-50 relative shadow-sm\"><div class=\"text-center mb-4 text-2xl\">📌</div><p class=\"mb-5 leading-relaxed\">このマンションでは、<ruby>飼<rt>か</rt></ruby>える動物について<ruby>制限<rt>せいげん</rt></ruby>がありますので、新しくこのマンションにお住みになる方で動物を飼っている、または、これから動物を飼う予定のある方は、つぎの<ruby>規則<rt>きそく</rt></ruby>を守ってください。</p><div class=\"space-y-4\"><div class=\"speed-master-rule-item\"><div class=\"speed-master-rule-header\">1．このマンションで飼うことができる動物の種類：</div><div class=\"speed-master-rule-body\"><div>犬・猫のほか、ウサギ・ハムスター<sup>（※1）</sup>・小鳥・カメ・魚など</div><div class=\"text-red-600 dark:text-red-400 font-semibold\">★小さくても、ヘビ<sup>（※2）</sup>などの危険な動物は飼うことができません。</div></div></div><div class=\"speed-master-rule-item\"><div class=\"speed-master-rule-header\">2．犬または猫の大きさ：</div><div class=\"speed-master-rule-body\"><div>大人が抱きかかえられる<ruby>程度<rt>ていど</rt></ruby>の大きさで、体重が10キロ以下</div></div></div><div class=\"speed-master-rule-item\"><div class=\"speed-master-rule-header\">3．犬または猫を飼う場合、飼うことができる数：</div><div class=\"speed-master-rule-body\"><div>1<ruby>戸<rt>こ</rt></ruby><sup>（※3）</sup>について、いずれか1匹のみ</div></div></div><div class=\"speed-master-rule-item\"><div class=\"speed-master-rule-header\">4．犬、猫以外の小さい動物の大きさと、飼うことができる数：</div><div class=\"speed-master-rule-body\"><div>・犬、猫以外の小さい動物の場合、大きさは、一人で持って運ぶことができるカゴなどの入れ物で飼える程度</div><div>・入れ物の数は1<ruby>戸<rt>こ</rt></ruby>について1つ</div><div>・その入れ物で飼うことができれば、数について特に<ruby>制限<rt>せいげん</rt></ruby>はない</div></div></div><div class=\"speed-master-rule-item\"><div class=\"speed-master-rule-header\">5．犬または猫を飼っている家：</div><div class=\"speed-master-rule-body\"><div>必ず当マンションのペットクラブに入ること</div></div></div></div><div class=\"text-right font-bold mt-5\">マンション<ruby>管理組合<rt>かんりくみあい</rt></ruby></div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）ハムスター",
+      "definition": "動物の名前"
+    },
+    {
+      "term": "（※2）ヘビ",
+      "definition": "動物の名前"
+    },
+    {
+      "term": "（※3）<ruby>戸<rt>こ</rt></ruby>",
+      "definition": "家を数える単位"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "マンション",
+      "reading": "マンション",
+      "meaning": "condominium, apartment"
+    },
+    {
+      "word": "規則",
+      "reading": "きそく",
+      "meaning": "rules and regulations"
+    },
+    {
+      "word": "カメ",
+      "reading": "カメ",
+      "meaning": "turtle"
+    },
+    {
+      "word": "ヘビ",
+      "reading": "ヘビ",
+      "meaning": "snake"
+    },
+    {
+      "word": "入れ物",
+      "reading": "いれもの",
+      "meaning": "container, cage/box"
+    },
+    {
+      "word": "戸",
+      "reading": "こ",
+      "meaning": "counter for housing units/households"
+    },
+    {
+      "word": "管理組合",
+      "reading": "かんりくみあい",
+      "meaning": "management association"
+    },
+    {
+      "word": "対象",
+      "reading": "たいしょう",
+      "meaning": "target, intended for"
+    }
+  ],
+  "questions": [
+    {
+      "id": "medium-6-q1",
+      "questionNumber": "1",
+      "questionText": "このお知らせについて、正しい内容はどれですか。",
+      "options": [
+        "ペットクラブが作ったものである。",
+        "すでに動物を<ruby>飼<rt>か</rt></ruby>っている人も、対象としている。",
+        "このマンションでは、動物の飼い方についての勉強会を予定している。",
+        "動物を飼う人は、動物の大きさや数に合わせて、お金を払わなければならない。"
+      ],
+      "correct": 2,
+      "correctOption": "すでに動物を<ruby>飼<rt>か</rt></ruby>っている人も、対象としている。",
+      "explanation": "冒頭に「新しくこのマンションにお住みになる方で動物を飼っている、または、これから動物を飼う予定のある方は、つぎの規則を守ってください」とあり、すでに動物を飼っている人も対象となっています。したがって正解は 2 です。"
+    },
+    {
+      "id": "medium-6-q2",
+      "questionNumber": "2",
+      "questionText": "犬または猫を<ruby>飼<rt>か</rt></ruby>う場合について、正しい内容はどれですか。",
+      "options": [
+        "1匹ずつなら、犬と猫を両方飼うこともできる。",
+        "犬または猫は、それぞれ2匹まで飼うことができる。",
+        "大人が抱きかかえられるくらいの大きさであれば、飼うことができる。",
+        "ペットクラブに入るかどうかは、自由に決められる。"
+      ],
+      "correct": 3,
+      "correctOption": "大人が抱きかかえられるくらいの大きさであれば、飼うことができる。",
+      "explanation": "「2. 犬または猫の大きさ」に「大人が抱きかかえられる程度の大きさで、体重が10キロ以下」とあります。飼える数は1戸につきいずれか1匹のみ（1・2は誤り）、ペットクラブには必ず入ること（4は誤り）となっているため、正解は 3 です。"
+    },
+    {
+      "id": "medium-6-q3",
+      "questionNumber": "3",
+      "questionText": "小さい動物を<ruby>飼<rt>か</rt></ruby>う場合について、正しい内容はどれですか。",
+      "options": [
+        "体重については、特に決まりはない。",
+        "子供が抱きかかえられるくらいの大きさなら、飼ってもいい。",
+        "家の中に置くことができれば、動物を飼う入れ物はいくつでもよい。",
+        "注意して、きちんと飼えば、ヘビを飼うこともできる。"
+      ],
+      "correct": 1,
+      "correctOption": "体重については、特に決まりはない。",
+      "explanation": "犬・猫以外の小さい動物については、「一人で持って運ぶことができるカゴなどの入れ物で飼える程度」という大きさの目安と「入れ物の数は1戸について1つ」という規定がありますが、犬や猫のように体重（10キロ以下）の具体的な決まりはありません。ヘビは禁止されており、入れ物は1つまでです。したがって正解は 1 です。"
+    }
+  ]
+}

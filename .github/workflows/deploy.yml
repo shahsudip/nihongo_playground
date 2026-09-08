@@ -34,6 +34,9 @@ jobs:
       - name: Verify Shinkanzen Master Data Integrity
         run: node scripts/verify_all_shinkanzen.cjs
 
+      - name: Verify Speed Master Data Integrity
+        run: node scripts/verify_speedmaster.cjs
+
       - name: Build project
         run: npm run build
 

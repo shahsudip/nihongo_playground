@@ -1,0 +1,56 @@
+{
+  "id": "short-16",
+  "chapterId": "short-16",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 16,
+  "targetMinutes": 3,
+  "title": "問題 16（短文）",
+  "instruction": "問題16 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0041.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"text-right text-sm text-slate-500 mb-2\">2020年5月10日</div><div class=\"mb-4\">田中自動車販売部 <ruby>御中<rt>おんちゅう</rt></ruby></div><div class=\"text-right mb-4\"><div>(株)ぎんざ屋</div><div>営業部 山田 力</div></div><p class=\"mb-3\">いつもお世話になっております。</p><p class=\"mb-3\">先日は新しく<ruby>発売<rt>はつばい</rt></ruby>された車のパンフレット<sup>（※1）</sup>と<ruby>価格表<rt>かかくひょう</rt></ruby>を送っていただき、ありがとうございました。</p><p class=\"mb-3\">部長の石井とも<ruby>検討<rt>けんとう</rt></ruby>いたしましたが、しばらくの間は、新しいものを買うより現在のものを<ruby>修理<rt>しゅうり</rt></ruby>しながら使うほうがいい、ということになりました。ご<ruby>理解<rt>りかい</rt></ruby>いただければありがたいです。</p><p>今後ともよろしくお願いいたします。</p>",
+  "footnotes": [
+    {
+      "term": "（※1）パンフレット",
+      "definition": "商品の紹介や説明が<ruby>印刷<rt>いんさつ</rt></ruby>されているもの"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "検討する",
+      "reading": "けんとうする",
+      "meaning": "to review, consider"
+    },
+    {
+      "word": "しばらくの間",
+      "reading": "しばらくのあいだ",
+      "meaning": "for a little while"
+    },
+    {
+      "word": "管理",
+      "reading": "かんり",
+      "meaning": "supervision"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-16-q1",
+      "questionNumber": "1",
+      "questionText": "手紙の内容で正しいのはどれか。",
+      "options": [
+        "田中自動車は、新しく車を買おうと考えている。",
+        "田中自動車の仕事は、車の<ruby>修理<rt>しゅうり</rt></ruby>や<ruby>管理<rt>かんり</rt></ruby>である。",
+        "ぎんざ屋は、田中自動車から車を買わない。",
+        "ぎんざ屋は、また新しい車の情報を送ってほしいと頼んでいる。"
+      ],
+      "correct": 3,
+      "correctOption": "ぎんざ屋は、田中自動車から車を買わない。",
+      "explanation": "ぎんざ屋の山田は、田中自動車販売部から送られた新車のパンフレットを検討した結果、「しばらくの間は、新しいものを買うより現在のものを修理しながら使うほうがいい」として、新車を購入しない（買わない）旨を伝えています。したがって手紙の内容として正しいのは 3 です。"
+    }
+  ]
+}

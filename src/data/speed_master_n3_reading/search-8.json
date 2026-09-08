@@ -1,0 +1,80 @@
+{
+  "id": "search-8",
+  "chapterId": "search-8",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "情報検索",
+  "sectionEn": "Information Retrieval",
+  "mondaiNumber": 8,
+  "targetMinutes": 8,
+  "title": "問題 8（情報検索）",
+  "instruction": "問題8 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>は、英会話を学ぶ人を<ruby>募集<rt>ぼしゅう</rt></ruby>するための案内である。下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0105.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"space-y-4\"><div class=\"p-4 border border-slate-300 dark:border-slate-600 rounded bg-slate-50 dark:bg-slate-800/50 leading-relaxed\"><p>原さんは大学生です。学校の授業以外でも、英会話（中級レベル）を勉強したいと思っています。原さんは、月曜日、水曜日、金曜日は8時から4時まで授業があります。火曜日と木曜日は授業がなく、午後6時から9時までアルバイトをしています。英会話を教える教室は、大学から歩いて15分くらいのところにあります。</p></div><div class=\"border-2 border-slate-700 dark:border-slate-300 p-6 bg-white dark:bg-slate-900 leading-relaxed space-y-4\"><p class=\"font-bold text-center text-lg\">ABC英会話教室<br><span class=\"text-sm font-normal\">（10月〜3月）</span></p><div class=\"space-y-1 text-sm md:text-base\"><p><strong>【場所】</strong>ABCセンター</p><p><strong>【内容】</strong><br>〇外国人<ruby>講師<rt>こうし</rt></ruby>から英語の会話や文法を学ぶ。<br>〇同じ<ruby>講師<rt>こうし</rt></ruby>の同じ時間の授業を週2回受ける。</p><p><strong>【費用】</strong>15,000円（1か月）</p><p><strong>【<ruby>定員<rt>ていいん</rt></ruby>】</strong>各クラス15人<ruby>程度<rt>ていど</rt></ruby></p><p><strong>【申込方法】</strong><ruby>往復<rt>おうふく</rt></ruby>はがき（1人1枚）に第2希望までのクラス名、曜日、時間、住所、名前、電話番号を<ruby>書<rt>か</rt></ruby>いて、9月20日（金）までに下記までお送りください。</p><p class=\"text-xs md:text-sm text-slate-600 dark:text-slate-400 pl-4\">〒□□□-〇〇〇〇 〇〇〇市〇〇区〇〇1-2-3 ABC英会話教室（☎ 21-2323）</p></div><div class=\"overflow-x-auto my-3\"><table class=\"w-full border-collapse border border-slate-400 text-center text-xs md:text-sm\"><thead><tr class=\"bg-slate-100 dark:bg-slate-800\"><th class=\"border border-slate-400 p-2\">時間 ＼ 曜日</th><th class=\"border border-slate-400 p-2\">火</th><th class=\"border border-slate-400 p-2\">水</th><th class=\"border border-slate-400 p-2\">木</th><th class=\"border border-slate-400 p-2\">金</th></tr></thead><tbody><tr><td class=\"border border-slate-400 p-2 font-bold\">15:00〜15:50</td><td class=\"border border-slate-400 p-2\">中級<br>(J講師)</td><td class=\"border border-slate-400 p-2\">中級<br>(T講師)</td><td class=\"border border-slate-400 p-2\">中級<br>(J講師)</td><td class=\"border border-slate-400 p-2\">中級<br>(T講師)</td></tr><tr><td class=\"border border-slate-400 p-2 font-bold\">16:00〜16:50</td><td class=\"border border-slate-400 p-2\">初級<br>(J講師)</td><td class=\"border border-slate-400 p-2\">初級<br>(T講師)</td><td class=\"border border-slate-400 p-2\">初級<br>(J講師)</td><td class=\"border border-slate-400 p-2\">初級<br>(T講師)</td></tr><tr><td class=\"border border-slate-400 p-2 font-bold\">19:00〜19:50</td><td class=\"border border-slate-400 p-2\">中級<br>(J講師)</td><td class=\"border border-slate-400 p-2\">中級<br>(T講師)</td><td class=\"border border-slate-400 p-2\">中級<br>(J講師)</td><td class=\"border border-slate-400 p-2\">中級<br>(T講師)</td></tr><tr><td class=\"border border-slate-400 p-2 font-bold\">20:00〜20:50</td><td class=\"border border-slate-400 p-2\">初級<br>(J講師)</td><td class=\"border border-slate-400 p-2\">初級<br>(T講師)</td><td class=\"border border-slate-400 p-2\">初級<br>(J講師)</td><td class=\"border border-slate-400 p-2\">初級<br>(T講師)</td></tr></tbody></table></div></div></div>",
+  "footnotes": [],
+  "vocabulary": [
+    {
+      "word": "講師",
+      "reading": "こうし",
+      "meaning": "instructor, lecturer, teacher"
+    },
+    {
+      "word": "英会話",
+      "reading": "えいかいわ",
+      "meaning": "English conversation"
+    },
+    {
+      "word": "中級",
+      "reading": "ちゅうきゅう",
+      "meaning": "intermediate level"
+    },
+    {
+      "word": "初級",
+      "reading": "しょきゅう",
+      "meaning": "beginner level"
+    },
+    {
+      "word": "往復はがき",
+      "reading": "おうふくはがき",
+      "meaning": "return postcard, round-trip postcard"
+    },
+    {
+      "word": "程度",
+      "reading": "ていど",
+      "meaning": "about, approximately, degree"
+    }
+  ],
+  "questions": [
+    {
+      "id": "search-8-q1",
+      "questionNumber": "1",
+      "questionText": "原さんがとることのできるクラスはどれか。",
+      "options": [
+        "火曜日と木曜日の3時からのクラス、火曜日と水曜日の7時からのクラス",
+        "火曜日と木曜日の3時からのクラス、水曜日と金曜日の7時からのクラス",
+        "木曜日と金曜日の3時からのクラス、木曜日と金曜日の7時からのクラス",
+        "火曜日と木曜日の3時からのクラス、火曜日と木曜日の7時からのクラス"
+      ],
+      "correct": 2,
+      "correctOption": "火曜日と木曜日の3時からのクラス、水曜日と金曜日の7時からのクラス",
+      "explanation": "原さんは「中級レベル」を希望しており、授業は「同じ講師の同じ時間の授業を週2回」受ける必要があります（J講師なら火・木、T講師なら水・金）。\n・火・木は大学の授業がなく18:00〜21:00にバイトがあるため、15:00〜15:50のクラス（J講師）を受講可能（19:00はバイトのため不可）。\n・水・金は16:00まで大学の授業があるため、15:00のクラスは不可ですが、19:00〜19:50のクラス（T講師）を受講可能。\nしたがって、原さんがとることのできるクラスの組み合わせは「火曜日と木曜日の3時からのクラス」と「水曜日と金曜日の7時からのクラス」となり、正解は 2 です。"
+    },
+    {
+      "id": "search-8-q2",
+      "questionNumber": "2",
+      "questionText": "申込方法はどれか。",
+      "options": [
+        "往復はがきに希望のクラス一つ、曜日、時間、住所、名前、電話番号を書く。",
+        "はがきに第1希望、第2希望のクラス、曜日、時間、住所、名前、電話番号を書く。",
+        "往復はがきに第1希望、第2希望のクラス、曜日、時間、住所、名前、電話番号を書く。",
+        "はがきに希望のクラス一つ、曜日、時間、住所、名前、電話番号を書く。"
+      ],
+      "correct": 3,
+      "correctOption": "往復はがきに第1希望、第2希望のクラス、曜日、時間、住所、名前、電話番号を書く。",
+      "explanation": "案内の申込方法に「往復はがき（1人1枚）に第2希望までのクラス名、曜日、時間、住所、名前、電話番号を書いて、9月20日（金）までに下記までお送りください」と記載されています。したがって、正解は「往復はがき」に「第1希望、第2希望」を書いて申し込む 3 です。"
+    }
+  ]
+}

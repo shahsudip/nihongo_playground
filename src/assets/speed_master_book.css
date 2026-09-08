@@ -1,0 +1,1740 @@
+/* src/assets/speed_master_book.css */
+
+/* =========================================================
+   THEME VARIABLES & BASE STYLES
+   ========================================================= */
+
+.speed-master-page {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* 1. Light Theme (Clean Crisp White & Slate) */
+.speed-master-page.theme-light {
+  --sm-bg: #f8fafc;
+  --sm-card-bg: #ffffff;
+  --sm-card-alt-bg: #f1f5f9;
+  --sm-text-primary: #0f172a;
+  --sm-text-secondary: #334155;
+  --sm-text-muted: #64748b;
+  --sm-border: #e2e8f0;
+  --sm-border-strong: #cbd5e1;
+  --sm-accent-blue: #2563eb;
+  --sm-accent-blue-light: #eff6ff;
+  --sm-accent-blue-border: #bfdbfe;
+  --sm-option-bg: #ffffff;
+  --sm-option-hover: #f8fafc;
+  --sm-vocab-bg: #f8fafc;
+  --sm-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+/* 2. Sepia Theme (Authentic Japanese Textbook Parchment) */
+.speed-master-page.theme-sepia {
+  --sm-bg: #f4ecdc;
+  --sm-card-bg: #fcf9f2;
+  --sm-card-alt-bg: #ede3ce;
+  --sm-text-primary: #2d2216;
+  --sm-text-secondary: #533f2d;
+  --sm-text-muted: #7c634b;
+  --sm-border: #decfae;
+  --sm-border-strong: #cbbe9f;
+  --sm-accent-blue: #9a4b17;
+  --sm-accent-blue-light: #faedd9;
+  --sm-accent-blue-border: #e4caa9;
+  --sm-option-bg: #fcf9f2;
+  --sm-option-hover: #f4e8cf;
+  --sm-vocab-bg: #f3ebda;
+  --sm-shadow: 0 4px 14px rgba(99, 80, 61, 0.08);
+}
+
+/* 3. Dark Theme (Deep Navy Dark Canvas & High-Contrast Crisp Text) */
+.speed-master-page.theme-dark {
+  --sm-bg: #090d16;
+  --sm-card-bg: #131b2e;
+  --sm-card-alt-bg: #1e293b;
+  --sm-text-primary: #f8fafc;
+  --sm-text-secondary: #cbd5e1;
+  --sm-text-muted: #94a3b8;
+  --sm-border: #243048;
+  --sm-border-strong: #384c6c;
+  --sm-accent-blue: #3b82f6;
+  --sm-accent-blue-light: #172554;
+  --sm-accent-blue-border: #1d4ed8;
+  --sm-option-bg: #151f33;
+  --sm-option-hover: #1e2c4a;
+  --sm-vocab-bg: #0d1527;
+  --sm-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.speed-master-page {
+  background-color: var(--sm-bg);
+  color: var(--sm-text-primary);
+}
+
+/* =========================================================
+   BREADCRUMBS & TOP NAVIGATION
+   ========================================================= */
+
+.speed-master-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: var(--sm-text-muted);
+}
+
+.speed-master-breadcrumb a {
+  color: var(--sm-text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.speed-master-breadcrumb a:hover {
+  color: var(--sm-accent-blue);
+}
+
+.speed-master-breadcrumb-current {
+  font-weight: 700;
+  color: var(--sm-text-primary);
+}
+
+/* Section Filter Tabs */
+.speed-master-tab {
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  white-space: nowrap;
+  background-color: var(--sm-card-bg);
+  color: var(--sm-text-secondary);
+  border: 1px solid var(--sm-border);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.speed-master-tab:hover {
+  background-color: var(--sm-option-hover);
+  color: var(--sm-text-primary);
+}
+
+.speed-master-tab.active {
+  background-color: var(--sm-accent-blue);
+  color: #ffffff;
+  border-color: var(--sm-accent-blue);
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+}
+
+/* =========================================================
+   RUBY & FURIGANA STYLING (ZERO LAYOUT JITTER)
+   ========================================================= */
+
+.speed-master-page ruby {
+  ruby-position: over;
+  font-style: normal;
+}
+
+.speed-master-page rt {
+  font-size: 0.55em;
+  line-height: 1.1;
+  color: var(--sm-text-secondary);
+  font-weight: normal;
+  user-select: none;
+}
+
+/* Furigana Hide Mechanism with zero vertical jump */
+.speed-master-page.no-furigana rt,
+.no-furigana rt {
+  display: none !important;
+}
+
+/* =========================================================
+   FONT SIZE PREFERENCES
+   ========================================================= */
+
+.font-size-small .speed-master-canvas {
+  font-size: 0.95rem;
+  line-height: 2.0;
+}
+
+.font-size-normal .speed-master-canvas {
+  font-size: 1.08rem;
+  line-height: 2.15;
+}
+
+.font-size-large .speed-master-canvas {
+  font-size: 1.22rem;
+  line-height: 2.25;
+}
+
+.font-size-xlarge .speed-master-canvas {
+  font-size: 1.38rem;
+  line-height: 2.35;
+}
+
+/* =========================================================
+   HEADER BANNER
+   ========================================================= */
+
+.speed-master-header-banner {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+  border-radius: 16px;
+  padding: 16px 20px;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.25);
+  margin-bottom: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  gap: 12px;
+}
+
+.speed-master-badge {
+  background-color: #f59e0b;
+  color: #78350f;
+  font-weight: 900;
+  font-size: 0.8rem;
+  padding: 3px 10px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.speed-master-mode-pill {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* =========================================================
+   TIMER STYLES & WARNING STATES
+   ========================================================= */
+
+.speed-master-timer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  transition: all 0.25s ease;
+}
+
+/* Low Time Warning (< 60s or < 20% left) */
+.speed-master-timer-badge.timer-warning {
+  background-color: #f59e0b;
+  border-color: #fbbf24;
+  color: #78350f;
+  animation: pulse-glow-amber 1.8s infinite;
+}
+
+/* Overtime Warning (Time exceeded) */
+.speed-master-timer-badge.timer-overtime {
+  background-color: #ef4444;
+  border-color: #f87171;
+  color: #ffffff;
+  animation: pulse-glow-red 1.2s infinite;
+}
+
+@keyframes pulse-glow-amber {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.6); }
+  50% { box-shadow: 0 0 12px 4px rgba(245, 158, 11, 0.6); }
+}
+
+@keyframes pulse-glow-red {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+  50% { box-shadow: 0 0 14px 5px rgba(239, 68, 68, 0.7); }
+}
+
+/* =========================================================
+   TOOLBAR CONTROLS BAR
+   ========================================================= */
+
+.speed-master-toolbar {
+  background: var(--sm-card-bg);
+  border: 1px solid var(--sm-border);
+  border-radius: 14px;
+  padding: 10px 16px;
+  box-shadow: var(--sm-shadow);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.speed-master-select {
+  background-color: var(--sm-card-alt-bg);
+  color: var(--sm-text-primary);
+  border: 1px solid var(--sm-border-strong);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  max-width: 280px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.speed-master-select:focus {
+  border-color: var(--sm-accent-blue);
+}
+
+.speed-master-select optgroup {
+  background-color: var(--sm-card-bg);
+  color: var(--sm-text-primary);
+  font-weight: 700;
+}
+
+.speed-master-select option {
+  background-color: var(--sm-card-bg);
+  color: var(--sm-text-primary);
+  font-weight: 500;
+}
+
+.speed-master-ctrl-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1px solid var(--sm-border);
+  background: var(--sm-card-alt-bg);
+  color: var(--sm-text-primary);
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+.speed-master-ctrl-btn:hover:not(:disabled) {
+  background: var(--sm-option-hover);
+  border-color: var(--sm-accent-blue);
+}
+
+.speed-master-ctrl-btn.active {
+  background: var(--sm-accent-blue);
+  color: #ffffff;
+  border-color: var(--sm-accent-blue);
+}
+
+/* Button Group Widget (Font Size & Theme) */
+.speed-master-btn-group {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--sm-border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--sm-card-alt-bg);
+}
+
+.speed-master-btn-group button {
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: transparent;
+  color: var(--sm-text-secondary);
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.speed-master-btn-group button:hover {
+  color: var(--sm-text-primary);
+  background: var(--sm-option-hover);
+}
+
+.speed-master-btn-group button.active {
+  background: var(--sm-accent-blue);
+  color: #ffffff;
+}
+
+/* =========================================================
+   NAVIGATION BUTTONS BAR (PREV / NEXT CHAPTER)
+   ========================================================= */
+
+.speed-master-nav-btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--sm-border);
+  background-color: var(--sm-card-bg);
+  color: var(--sm-text-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.speed-master-nav-btn:hover:not(:disabled) {
+  background-color: var(--sm-option-hover);
+  border-color: var(--sm-accent-blue);
+  color: var(--sm-accent-blue);
+}
+
+.speed-master-nav-btn:disabled {
+  background-color: var(--sm-card-alt-bg);
+  color: var(--sm-text-muted);
+  border-color: transparent;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.speed-master-counter {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--sm-text-secondary);
+}
+
+/* =========================================================
+   INSTRUCTION & PASSAGE CANVAS
+   ========================================================= */
+
+.speed-master-instruction {
+  background-color: var(--sm-accent-blue-light);
+  border-left: 4px solid var(--sm-accent-blue);
+  padding: 14px 18px;
+  border-radius: 0 12px 12px 0;
+  color: var(--sm-text-primary);
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.6;
+  box-shadow: var(--sm-shadow);
+  margin-bottom: 20px;
+}
+
+.speed-master-instruction *[class*="text-slate-"] {
+  color: var(--sm-text-secondary) !important;
+}
+
+.speed-master-canvas {
+  background-color: var(--sm-card-bg);
+  border-radius: 16px;
+  border: 1px solid var(--sm-border);
+  box-shadow: var(--sm-shadow);
+  padding: 28px;
+  color: var(--sm-text-primary);
+  position: relative;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.speed-master-passage-header {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--sm-text-primary);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--sm-border);
+}
+
+.speed-master-canvas p {
+  margin-bottom: 1.25rem;
+  color: var(--sm-text-primary);
+}
+
+.speed-master-canvas p:last-child {
+  margin-bottom: 0;
+}
+
+.speed-master-canvas h1,
+.speed-master-canvas h2,
+.speed-master-canvas h3,
+.speed-master-canvas h4,
+.speed-master-canvas h5,
+.speed-master-canvas h6 {
+  color: var(--sm-text-primary);
+  font-weight: 700;
+}
+
+.speed-master-canvas ul,
+.speed-master-canvas ol,
+.speed-master-canvas li {
+  color: var(--sm-text-primary);
+}
+
+.speed-master-canvas strong,
+.speed-master-canvas b {
+  color: var(--sm-text-primary);
+  font-weight: 700;
+}
+
+/* Authentic Japanese Test Underlines */
+.speed-master-canvas u {
+  text-decoration-thickness: 2.5px;
+  text-underline-offset: 5px;
+  text-decoration-color: var(--sm-accent-blue);
+  font-weight: 600;
+  color: var(--sm-text-primary);
+}
+
+.speed-master-canvas sub {
+  font-size: 0.78em;
+  font-weight: 700;
+  margin-right: 3px;
+  vertical-align: sub;
+  color: inherit;
+}
+
+.speed-master-canvas sup {
+  font-size: 0.75em;
+  font-weight: 600;
+  vertical-align: super;
+  color: inherit;
+}
+
+/* Authentic Japanese Test Blank Box & Fill-in Frame */
+.speed-master-blank-box,
+.speed-master-box-blank,
+.speed-master-canvas .blank-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--sm-border-strong);
+  border-radius: 4px;
+  min-width: 68px;
+  height: 1.55em;
+  padding: 0 8px;
+  margin: 0 4px;
+  vertical-align: middle;
+  background-color: var(--sm-card-alt-bg);
+  font-weight: 700;
+  color: var(--sm-text-primary);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+/* Notice & Bullet Point Lists Inside Passages */
+.speed-master-rule-item {
+  margin-bottom: 12px;
+}
+
+.speed-master-rule-header {
+  font-weight: 700;
+  color: var(--sm-text-primary);
+  margin-bottom: 4px;
+}
+
+.speed-master-rule-body {
+  padding-left: 1.5rem;
+  color: var(--sm-text-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+/* Table inside passage (Information retrieval search questions) */
+.speed-master-canvas table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 0.92rem;
+  color: var(--sm-text-primary);
+}
+
+.speed-master-canvas th,
+.speed-master-canvas td {
+  border: 1px solid var(--sm-border-strong);
+  padding: 8px 12px;
+  color: var(--sm-text-primary);
+}
+
+.speed-master-canvas th {
+  background-color: var(--sm-card-alt-bg);
+  font-weight: 700;
+  color: var(--sm-text-primary);
+}
+
+.speed-master-canvas tr.bg-slate-100 {
+  background-color: var(--sm-card-alt-bg) !important;
+  color: var(--sm-text-primary) !important;
+}
+
+/* Embedded Notice / Letter / Excerpt Box inside passage */
+.speed-master-canvas .border,
+.speed-master-canvas .border-2,
+.speed-master-canvas .border-dashed,
+.speed-master-canvas .border-slate-100,
+.speed-master-canvas .border-slate-200,
+.speed-master-canvas .border-slate-300,
+.speed-master-canvas .border-slate-400,
+.speed-master-canvas .border-slate-600,
+.speed-master-canvas .border-slate-700 {
+  border-color: var(--sm-border-strong) !important;
+}
+
+.speed-master-canvas .bg-slate-50,
+.speed-master-canvas .bg-slate-100 {
+  background-color: var(--sm-card-alt-bg) !important;
+  border-color: var(--sm-border-strong) !important;
+  color: var(--sm-text-primary) !important;
+}
+
+/* Authentic Japanese Letter & Paper Card Layout (e.g. Mondai 15) */
+.speed-master-letter-card {
+  border: 1.5px solid var(--sm-border-strong) !important;
+  border-radius: 12px;
+  background-color: var(--sm-card-bg) !important;
+  padding: 28px 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  position: relative;
+  line-height: 2.2;
+  margin-bottom: 8px;
+}
+
+.speed-master-letter-recipient {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: var(--sm-text-primary);
+  margin-bottom: 14px;
+  display: block;
+}
+
+.speed-master-letter-opening {
+  font-weight: 600;
+  color: var(--sm-text-primary);
+  margin-bottom: 10px;
+  display: block;
+  padding-left: 0.5em;
+}
+
+.speed-master-letter-body {
+  color: var(--sm-text-primary);
+}
+
+.speed-master-letter-body p {
+  text-indent: 1em;
+  margin-bottom: 14px;
+  line-height: 2.2;
+}
+
+.speed-master-letter-sender {
+  text-align: right;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--sm-text-primary);
+  margin-top: 24px;
+  display: block;
+}
+
+/* Authentic Japanese Ruled Stationery Letter Paper (便箋の罫線) - Mondai 12 (p. 88) & Mondai 15 (p. 63) */
+.speed-master-lined-paper {
+  border: 1.5px solid var(--sm-border-strong) !important;
+  border-radius: 12px;
+  background-color: var(--sm-card-bg) !important;
+  padding: 24px 28px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  position: relative;
+  line-height: 2.15;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.theme-sepia .speed-master-lined-paper {
+  background-color: #fcf9f2 !important;
+  border-color: #cbbe9f !important;
+  box-shadow: 0 4px 16px rgba(99, 80, 61, 0.08);
+}
+
+.theme-dark .speed-master-lined-paper {
+  background-color: #131b2e !important;
+  border-color: #384c6c !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.speed-master-ruled-row {
+  border-bottom: 1px solid var(--sm-border);
+  min-height: 2.35em;
+  line-height: 2.15;
+  padding-bottom: 2px;
+  color: var(--sm-text-primary);
+  word-break: break-all;
+  white-space: normal;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.theme-sepia .speed-master-ruled-row {
+  border-bottom: 1px solid rgba(180, 155, 120, 0.45) !important;
+}
+
+.theme-dark .speed-master-ruled-row {
+  border-bottom: 1px solid rgba(71, 85, 105, 0.55) !important;
+}
+
+.speed-master-ruled-row.empty-row {
+  min-height: 2.35em;
+  height: 2.35em;
+}
+
+.speed-master-ruled-row u {
+  text-decoration: none;
+  border-bottom: 2.5px solid var(--sm-accent-blue);
+  padding-bottom: 1px;
+  font-weight: 600;
+}
+
+.speed-master-ruled-row .speed-master-box-blank {
+  display: inline-block;
+  min-width: 80px;
+  height: 1.45em;
+  border: 1.5px solid var(--sm-text-primary);
+  border-radius: 4px;
+  vertical-align: middle;
+  margin: 0 4px;
+  background-color: var(--sm-card-alt-bg);
+}
+
+/* Authentic Japanese Email Client Layout (e.g. Mondai 18) */
+.speed-master-email-card {
+  border: 1.5px solid var(--sm-border-strong) !important;
+  border-radius: 12px;
+  background-color: var(--sm-card-bg) !important;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  margin-bottom: 8px;
+}
+
+.speed-master-email-meta {
+  background-color: var(--sm-card-alt-bg) !important;
+  border-bottom: 1.5px solid var(--sm-border-strong);
+  padding: 14px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--sm-text-primary);
+}
+
+.speed-master-email-reply-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1.5px solid var(--sm-border-strong);
+  border-radius: 6px;
+  padding: 4px 10px;
+  background: var(--sm-card-bg);
+  color: var(--sm-text-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  user-select: none;
+}
+
+.speed-master-email-body {
+  padding: 24px 28px;
+  color: var(--sm-text-primary);
+  line-height: 2.2;
+}
+
+/* Authentic Japanese Transit Guide & Route Diagram Layout (e.g. Search-9) */
+.speed-master-transit-card {
+  border: 1.5px solid var(--sm-border-strong) !important;
+  border-radius: 12px;
+  background-color: var(--sm-card-bg) !important;
+  padding: 24px 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  margin-bottom: 12px;
+}
+
+.theme-sepia .speed-master-transit-card {
+  background-color: #fcf9f2 !important;
+  border-color: #cbbe9f !important;
+}
+
+.theme-dark .speed-master-transit-card {
+  background-color: #131b2e !important;
+  border-color: #384c6c !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.speed-master-transit-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--sm-text-primary);
+  margin-bottom: 10px;
+}
+
+.speed-master-transit-divider {
+  border: none;
+  border-top: 1.5px solid var(--sm-border-strong);
+  margin: 14px 0 20px 0;
+}
+
+.speed-master-transit-section {
+  margin-bottom: 10px;
+}
+
+.speed-master-transit-header {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--sm-text-primary);
+  margin-bottom: 6px;
+}
+
+.speed-master-transit-meta {
+  font-size: 0.96rem;
+  color: var(--sm-text-primary);
+  margin-bottom: 16px;
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.speed-master-transit-diagram {
+  padding-left: 2.5rem;
+  font-size: 1.05rem;
+  color: var(--sm-text-primary);
+}
+
+.speed-master-transit-station {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: var(--sm-text-primary);
+  line-height: 1.6;
+}
+
+.speed-master-transit-station-icon {
+  font-size: 1.15rem;
+  line-height: 1;
+  color: var(--sm-text-primary);
+  user-select: none;
+  width: 1.2rem;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.speed-master-transit-leg {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 0 4px 2px;
+  font-size: 0.95rem;
+  color: var(--sm-text-primary);
+}
+
+.speed-master-transit-arrow {
+  font-size: 1.25rem;
+  line-height: 1;
+  color: var(--sm-text-primary);
+  width: 1.2rem;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.speed-master-transit-line {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--sm-text-primary);
+}
+
+/* Authentic Japanese Promotional Flyer Card & Image (e.g. Search-11, Search-12) */
+.speed-master-flyer-card {
+  border: 1.5px solid var(--sm-border-strong) !important;
+  border-radius: 14px;
+  background-color: #ffffff !important;
+  padding: 10px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  max-width: 680px;
+  margin: 0 auto 16px auto;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.theme-sepia .speed-master-flyer-card {
+  background-color: #fdfaf3 !important;
+  border-color: #cbbe9f !important;
+  box-shadow: 0 4px 16px rgba(99, 80, 61, 0.1);
+}
+
+.theme-dark .speed-master-flyer-card {
+  background-color: #ffffff !important;
+  border-color: #475569 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.speed-master-flyer-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+/* Inner white boxes adapt cleanly per theme */
+.theme-sepia .speed-master-canvas .bg-white,
+.theme-sepia .speed-master-canvas .bg-slate-50,
+.theme-sepia .speed-master-canvas .bg-slate-100 {
+  background-color: var(--sm-card-bg) !important;
+  border-color: var(--sm-border-strong) !important;
+  color: var(--sm-text-primary) !important;
+}
+
+.theme-dark .speed-master-canvas .bg-white {
+  background-color: var(--sm-card-alt-bg) !important;
+  border-color: var(--sm-border-strong) !important;
+  color: var(--sm-text-primary) !important;
+}
+
+/* Source attributions and footnotes inside canvas */
+.speed-master-canvas .text-right.text-xs,
+.speed-master-canvas .text-right.text-sm,
+.speed-master-canvas p.text-right {
+  color: var(--sm-text-secondary) !important;
+  opacity: 0.95;
+}
+
+/* Universal Dark & Theme Text Slate Fixes */
+.speed-master-canvas *[class*="text-slate-9"],
+.speed-master-canvas *[class*="text-slate-8"],
+.speed-master-canvas *[class*="text-slate-7"],
+.speed-master-canvas *[class*="text-gray-9"],
+.speed-master-canvas *[class*="text-gray-8"],
+.speed-master-canvas *[class*="text-gray-7"],
+.speed-master-canvas *[class*="text-black"] {
+  color: var(--sm-text-primary) !important;
+}
+
+.speed-master-canvas *[class*="text-slate-6"],
+.speed-master-canvas *[class*="text-slate-5"],
+.speed-master-canvas *[class*="text-slate-4"],
+.speed-master-canvas *[class*="text-gray-6"],
+.speed-master-canvas *[class*="text-gray-5"] {
+  color: var(--sm-text-secondary) !important;
+}
+
+/* Dark Theme specific high-contrast color text & colored backgrounds */
+.theme-dark .speed-master-canvas *[class*="text-blue-9"],
+.theme-dark .speed-master-canvas *[class*="text-blue-8"],
+.theme-dark .speed-master-canvas *[class*="text-blue-7"] {
+  color: #93c5fd !important;
+}
+
+.theme-dark .speed-master-canvas *[class*="text-indigo-9"],
+.theme-dark .speed-master-canvas *[class*="text-indigo-8"],
+.theme-dark .speed-master-canvas *[class*="text-indigo-7"] {
+  color: #a5b4fc !important;
+}
+
+.theme-dark .speed-master-canvas *[class*="text-teal-9"],
+.theme-dark .speed-master-canvas *[class*="text-teal-8"],
+.theme-dark .speed-master-canvas *[class*="text-teal-7"] {
+  color: #5eead4 !important;
+}
+
+.theme-dark .speed-master-canvas *[class*="text-emerald-9"],
+.theme-dark .speed-master-canvas *[class*="text-emerald-8"],
+.theme-dark .speed-master-canvas *[class*="text-emerald-7"],
+.theme-dark .speed-master-canvas *[class*="text-emerald-6"] {
+  color: #6ee7b7 !important;
+}
+
+.theme-dark .speed-master-canvas *[class*="text-red-9"],
+.theme-dark .speed-master-canvas *[class*="text-red-8"],
+.theme-dark .speed-master-canvas *[class*="text-red-7"],
+.theme-dark .speed-master-canvas *[class*="text-red-6"] {
+  color: #fca5a5 !important;
+}
+
+.theme-dark .speed-master-canvas *[class*="text-amber-9"],
+.theme-dark .speed-master-canvas *[class*="text-amber-8"],
+.theme-dark .speed-master-canvas *[class*="text-amber-7"],
+.theme-dark .speed-master-canvas *[class*="text-amber-6"] {
+  color: #fcd34d !important;
+}
+
+.theme-dark .speed-master-canvas *[class*="text-orange-9"],
+.theme-dark .speed-master-canvas *[class*="text-orange-8"],
+.theme-dark .speed-master-canvas *[class*="text-orange-7"],
+.theme-dark .speed-master-canvas *[class*="text-orange-6"] {
+  color: #fdba74 !important;
+}
+
+.theme-dark .speed-master-canvas *[class*="bg-blue-50"],
+.theme-dark .speed-master-canvas *[class*="bg-blue-100"] {
+  background-color: rgba(59, 130, 246, 0.15) !important;
+  border-color: rgba(59, 130, 246, 0.35) !important;
+}
+
+.theme-dark .speed-master-canvas *[class*="bg-indigo-50"],
+.theme-dark .speed-master-canvas *[class*="bg-indigo-100"] {
+  background-color: rgba(99, 102, 241, 0.15) !important;
+  border-color: rgba(99, 102, 241, 0.35) !important;
+}
+
+.theme-dark .speed-master-canvas *[class*="bg-teal-50"],
+.theme-dark .speed-master-canvas *[class*="bg-teal-100"] {
+  background-color: rgba(20, 184, 166, 0.15) !important;
+  border-color: rgba(20, 184, 166, 0.35) !important;
+}
+
+.theme-dark .speed-master-canvas *[class*="bg-emerald-50"],
+.theme-dark .speed-master-canvas *[class*="bg-emerald-100"] {
+  background-color: rgba(16, 185, 129, 0.15) !important;
+  border-color: rgba(16, 185, 129, 0.35) !important;
+}
+
+.theme-dark .speed-master-canvas *[class*="bg-red-50"],
+.theme-dark .speed-master-canvas *[class*="bg-red-100"] {
+  background-color: rgba(239, 68, 68, 0.15) !important;
+  border-color: rgba(239, 68, 68, 0.35) !important;
+}
+
+.theme-dark .speed-master-canvas *[class*="bg-amber-50"],
+.theme-dark .speed-master-canvas *[class*="bg-amber-100"] {
+  background-color: rgba(245, 158, 11, 0.15) !important;
+  border-color: rgba(245, 158, 11, 0.35) !important;
+}
+
+.theme-dark .speed-master-canvas *[class*="bg-orange-50"],
+.theme-dark .speed-master-canvas *[class*="bg-orange-100"] {
+  background-color: rgba(249, 115, 22, 0.15) !important;
+  border-color: rgba(249, 115, 22, 0.35) !important;
+}
+
+/* Mock Exam Wrapper Sections */
+.mock-exam-wrapper section {
+  background-color: var(--sm-card-bg) !important;
+  border-color: var(--sm-border) !important;
+  color: var(--sm-text-primary) !important;
+}
+
+.theme-dark .mock-exam-wrapper section {
+  background-color: var(--sm-card-bg) !important;
+  border-color: var(--sm-border) !important;
+  color: var(--sm-text-primary) !important;
+}
+
+.theme-sepia .mock-exam-wrapper section {
+  background-color: var(--sm-card-bg) !important;
+  border-color: var(--sm-border) !important;
+  color: var(--sm-text-primary) !important;
+}
+
+/* =========================================================
+   FOOTNOTES SECTION (注 / 脚注) - PERFECTLY ALIGNED
+   ========================================================= */
+
+.speed-master-footnotes {
+  background-color: var(--sm-card-alt-bg);
+  border-radius: 12px;
+  border: 1px solid var(--sm-border);
+  padding: 14px 18px;
+  font-size: 0.85rem;
+  color: var(--sm-text-secondary);
+  box-shadow: var(--sm-shadow);
+  margin-top: 18px;
+}
+
+.speed-master-footnotes-title {
+  font-weight: 700;
+  color: var(--sm-text-primary);
+  margin-bottom: 10px;
+  display: block;
+  font-size: 0.88rem;
+}
+
+.speed-master-footnotes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.speed-master-footnote-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  line-height: 1.6;
+}
+
+.speed-master-footnote-term {
+  font-weight: 700;
+  color: var(--sm-accent-blue);
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.speed-master-footnote-def {
+  color: var(--sm-text-secondary);
+  flex: 1;
+}
+
+.speed-master-footnote-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.speed-master-diagram-img {
+  max-height: 140px;
+  background: transparent !important;
+  transition: filter 0.2s ease;
+}
+
+/* In Dark Theme, invert ink lines to crisp glowing white so diagram blends naturally */
+.theme-dark .speed-master-diagram-img {
+  filter: invert(1) hue-rotate(180deg) brightness(1.25);
+}
+
+/* =========================================================
+   QUESTION CARD & OPTIONS
+   ========================================================= */
+
+.speed-master-q-card {
+  background: var(--sm-card-bg);
+  border-radius: 14px;
+  border: 1px solid var(--sm-border);
+  box-shadow: var(--sm-shadow);
+  padding: 20px;
+  margin-top: 16px;
+  transition: all 0.2s ease;
+}
+
+.speed-master-q-card.answered {
+  border-left: 4px solid var(--sm-accent-blue);
+}
+
+.speed-master-q-card.correct {
+  border-left: 4px solid #10b981;
+}
+
+.speed-master-q-card.wrong {
+  border-left: 4px solid #ef4444;
+}
+
+.speed-master-q-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--sm-accent-blue);
+  color: #ffffff;
+  font-weight: 800;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  font-size: 0.95rem;
+}
+
+.speed-master-q-text {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--sm-text-primary) !important;
+  flex: 1;
+  line-height: 1.7;
+}
+
+.speed-master-option-btn {
+  width: 100%;
+  text-align: left;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1.5px solid var(--sm-border);
+  background: var(--sm-option-bg);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--sm-text-primary);
+  transition: all 0.15s ease-in-out;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.speed-master-option-btn:hover:not(:disabled) {
+  border-color: var(--sm-accent-blue);
+  background-color: var(--sm-option-hover);
+  transform: translateX(2px);
+}
+
+.speed-master-option-btn.selected-exam {
+  border-color: var(--sm-accent-blue);
+  background-color: var(--sm-accent-blue-light);
+  font-weight: 600;
+}
+
+.speed-master-option-btn.selected-correct {
+  border-color: #10b981 !important;
+  background-color: rgba(16, 185, 129, 0.14) !important;
+  color: #065f46;
+}
+.theme-sepia .speed-master-option-btn.selected-correct {
+  color: #064e3b !important;
+  background-color: rgba(16, 185, 129, 0.18) !important;
+  border-color: #059669 !important;
+}
+.theme-dark .speed-master-option-btn.selected-correct {
+  color: #34d399 !important;
+  background-color: rgba(16, 185, 129, 0.22) !important;
+}
+
+.speed-master-option-btn.selected-wrong {
+  border-color: #ef4444 !important;
+  background-color: rgba(239, 68, 68, 0.14) !important;
+  color: #991b1b;
+}
+.theme-sepia .speed-master-option-btn.selected-wrong {
+  color: #7f1d1d !important;
+  background-color: rgba(239, 68, 68, 0.18) !important;
+  border-color: #dc2626 !important;
+}
+.theme-dark .speed-master-option-btn.selected-wrong {
+  color: #f87171 !important;
+  background-color: rgba(239, 68, 68, 0.22) !important;
+}
+
+.speed-master-option-btn.actual-correct {
+  border-color: #10b981 !important;
+  background-color: rgba(16, 185, 129, 0.08);
+  border-style: dashed;
+}
+.theme-dark .speed-master-option-btn.actual-correct {
+  border-color: #34d399 !important;
+  background-color: rgba(16, 185, 129, 0.14);
+}
+
+.speed-master-opt-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--sm-card-alt-bg);
+  color: var(--sm-text-primary);
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  border: 1px solid var(--sm-border);
+}
+
+/* =========================================================
+   EXPLANATION BOX
+   ========================================================= */
+
+.speed-master-explanation {
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  border: 1px solid var(--sm-border);
+  margin-top: 14px;
+  color: var(--sm-text-primary);
+}
+
+.speed-master-explanation-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: var(--sm-text-primary);
+}
+
+.speed-master-explanation-badge {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  background: var(--sm-card-bg);
+  color: var(--sm-text-primary);
+  border-radius: 6px;
+  border: 1px solid var(--sm-border-strong);
+  font-weight: 600;
+}
+
+.speed-master-explanation-body {
+  color: var(--sm-text-secondary);
+}
+
+.speed-master-explanation.correct {
+  background: rgba(16, 185, 129, 0.09);
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.theme-sepia .speed-master-explanation.correct {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.theme-dark .speed-master-explanation.correct {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.speed-master-explanation.wrong {
+  background: rgba(37, 99, 235, 0.09);
+  border-color: rgba(37, 99, 235, 0.35);
+}
+
+.theme-sepia .speed-master-explanation.wrong {
+  background: rgba(154, 75, 23, 0.12);
+  border-color: rgba(154, 75, 23, 0.35);
+}
+
+.theme-dark .speed-master-explanation.wrong {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+/* =========================================================
+   EXAM MODE BOTTOM SUBMIT BAR
+   ========================================================= */
+
+.speed-master-submit-bar {
+  background-color: var(--sm-card-bg);
+  border: 1px solid var(--sm-border);
+  border-radius: 14px;
+  padding: 16px 20px;
+  box-shadow: var(--sm-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.speed-master-submit-info {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--sm-text-secondary);
+}
+
+.speed-master-submit-highlight {
+  font-weight: 800;
+  color: var(--sm-accent-blue);
+}
+
+/* =========================================================
+   VOCABULARY & EXPRESSIONS SECTION (ことばと表現) - PERFECT HORIZONTAL ALIGNMENT
+   ========================================================= */
+
+.speed-master-vocab-card {
+  background: var(--sm-vocab-bg);
+  border-radius: 14px;
+  border: 1px solid var(--sm-border);
+  padding: 18px;
+  margin-top: 24px;
+  box-shadow: var(--sm-shadow);
+}
+
+.speed-master-vocab-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.speed-master-vocab-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--sm-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.speed-master-vocab-toggle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--sm-accent-blue);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.speed-master-vocab-toggle:hover {
+  text-decoration: underline;
+}
+
+.speed-master-vocab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 8px 16px;
+}
+
+.speed-master-vocab-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: var(--sm-card-bg);
+  border: 1px solid var(--sm-border);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  transition: all 0.15s ease;
+}
+
+.speed-master-vocab-item:hover {
+  border-color: var(--sm-accent-blue-border);
+  background-color: var(--sm-option-hover);
+}
+
+.speed-master-vocab-term-col {
+  min-width: 110px;
+  flex-shrink: 0;
+}
+
+.speed-master-vocab-word {
+  font-weight: 700;
+  color: var(--sm-text-primary);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.speed-master-vocab-separator {
+  color: var(--sm-text-muted);
+  font-weight: 600;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.speed-master-vocab-meaning-col {
+  font-size: 0.85rem;
+  color: var(--sm-text-secondary);
+  line-height: 1.5;
+  flex: 1;
+}
+
+/* =========================================================
+   MOCK EXAM SPECIAL UI & FLOATING BAR
+   ========================================================= */
+
+.speed-master-mock-nav {
+  position: sticky;
+  top: 10px;
+  z-index: 40;
+  background: var(--sm-card-bg);
+  border: 1px solid var(--sm-border);
+  border-radius: 12px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.speed-master-mock-jump-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--sm-text-secondary);
+}
+
+.speed-master-q-pill {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border: 1px solid var(--sm-border);
+  background: var(--sm-card-alt-bg);
+  color: var(--sm-text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.speed-master-q-pill:hover {
+  border-color: var(--sm-accent-blue);
+  color: var(--sm-accent-blue);
+}
+
+.speed-master-q-pill.answered {
+  background: var(--sm-accent-blue-light);
+  border-color: var(--sm-accent-blue);
+  color: var(--sm-accent-blue);
+}
+
+.speed-master-q-pill.correct {
+  background: #10b981;
+  border-color: #059669;
+  color: #ffffff;
+}
+
+.speed-master-q-pill.wrong {
+  background: #ef4444;
+  border-color: #dc2626;
+  color: #ffffff;
+}
+
+/* =========================================================
+   SCORE RECAP DIALOG & SUMMARY CARD
+   ========================================================= */
+
+.speed-master-score-card {
+  background: var(--sm-card-bg);
+  border-radius: 16px;
+  border: 2px solid var(--sm-accent-blue);
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.15);
+  padding: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: var(--sm-text-primary);
+}
+
+.speed-master-score-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--sm-text-primary);
+  margin-bottom: 8px;
+}
+
+.speed-master-score-sec-box {
+  background: var(--sm-card-alt-bg);
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--sm-border);
+  color: var(--sm-text-primary);
+}
+
+/* =========================================================
+   SCAN MODAL
+   ========================================================= */
+
+.speed-master-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.speed-master-modal-content {
+  background: var(--sm-card-bg);
+  color: var(--sm-text-primary);
+  border-radius: 16px;
+  max-width: 95vw;
+  max-height: 92vh;
+  overflow: auto;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--sm-border);
+}
+
+/* =========================================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================================= */
+
+@media (max-width: 640px) {
+  .speed-master-header-banner {
+    padding: 12px 14px;
+  }
+  .speed-master-canvas {
+    padding: 16px;
+  }
+  .speed-master-q-card {
+    padding: 14px;
+  }
+  .speed-master-option-btn {
+    padding: 10px 12px;
+    font-size: 0.92rem;
+  }
+  .speed-master-vocab-grid {
+    grid-template-columns: 1fr;
+  }
+  .speed-master-vocab-term-col {
+    min-width: 85px;
+  }
+}
+
+/* =========================================================
+   QUESTION CAROUSEL & SINGLE QUESTION SLIDER
+   ========================================================= */
+
+.speed-master-q-carousel-header {
+  background: var(--sm-card-bg);
+  border: 1px solid var(--sm-border);
+  border-radius: 14px;
+  padding: 10px 16px;
+  box-shadow: var(--sm-shadow);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.speed-master-q-carousel-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--sm-text-primary);
+  background: var(--sm-card-alt-bg);
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--sm-border);
+}
+
+.speed-master-q-carousel-pill {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  height: 34px;
+  padding: 0 8px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 1.5px solid var(--sm-border);
+  background: var(--sm-card-alt-bg);
+  color: var(--sm-text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.speed-master-q-carousel-pill:hover {
+  border-color: var(--sm-accent-blue);
+  color: var(--sm-accent-blue);
+  background: var(--sm-option-hover);
+  transform: translateY(-1px);
+}
+
+.speed-master-q-carousel-pill.active {
+  background: var(--sm-accent-blue) !important;
+  color: #ffffff !important;
+  border-color: var(--sm-accent-blue) !important;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
+  transform: scale(1.05);
+}
+
+.speed-master-q-carousel-pill.answered:not(.active) {
+  background: var(--sm-accent-blue-light);
+  border-color: var(--sm-accent-blue);
+  color: var(--sm-accent-blue);
+}
+
+.speed-master-q-carousel-pill.correct:not(.active) {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: #10b981;
+  color: #059669;
+}
+
+.theme-dark .speed-master-q-carousel-pill.correct:not(.active) {
+  color: #34d399;
+}
+
+.speed-master-q-carousel-pill.wrong:not(.active) {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: #ef4444;
+  color: #dc2626;
+}
+
+.theme-dark .speed-master-q-carousel-pill.wrong:not(.active) {
+  color: #f87171;
+}
+
+.speed-master-pill-icon {
+  margin-left: 3px;
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.speed-master-pill-dot {
+  margin-left: 3px;
+  font-size: 0.6rem;
+  color: currentColor;
+}
+
+.speed-master-q-nav-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: 1px solid var(--sm-border);
+  background: var(--sm-card-alt-bg);
+  color: var(--sm-text-primary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.speed-master-q-nav-arrow:hover:not(:disabled) {
+  background: var(--sm-option-hover);
+  border-color: var(--sm-accent-blue);
+  color: var(--sm-accent-blue);
+}
+
+.speed-master-q-nav-arrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.speed-master-q-bottom-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--sm-card-bg);
+  border: 1px solid var(--sm-border);
+  border-radius: 14px;
+  padding: 12px 18px;
+  box-shadow: var(--sm-shadow);
+  margin-top: 16px;
+}
+
+.speed-master-nav-btn.primary {
+  background: var(--sm-accent-blue);
+  color: #ffffff;
+  border-color: var(--sm-accent-blue);
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+}
+
+.speed-master-nav-btn.primary:hover:not(:disabled) {
+  background: #1d4ed8;
+  color: #ffffff;
+}
+
+/* Smooth transition when switching questions */
+.speed-master-q-container {
+  animation: sm-fade-slide 0.18s ease-out;
+}
+
+@keyframes sm-fade-slide {
+  from {
+    opacity: 0.85;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

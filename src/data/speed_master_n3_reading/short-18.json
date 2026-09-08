@@ -1,0 +1,66 @@
+{
+  "id": "short-18",
+  "chapterId": "short-18",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 18,
+  "targetMinutes": 3,
+  "title": "問題 18（短文）",
+  "instruction": "問題18 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0043.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"speed-master-email-card\"><div class=\"speed-master-email-meta\"><div><div><span class=\"font-bold\">差出人：</span>○○○○</div><div><span class=\"font-bold\">宛先：</span>○○○○</div><div><span class=\"font-bold\">CC：</span></div><div><span class=\"font-bold\">件名：</span>○○○○○○○○</div></div><div class=\"speed-master-email-reply-btn\">↰ 返信</div></div><div class=\"speed-master-email-body\"><p class=\"mb-4 font-bold\">よし子叔母さん</p><p>ご<ruby>無沙汰<rt>ぶさた</rt></ruby>しております。実は、あさって京都に出張することになったので、久しぶりに<ruby>京都<rt>きょうと</rt></ruby>で<ruby>叔母<rt>おば</rt></ruby>さんと夕飯を一緒にしたいのですが、ご都合はいかがですか。会議は6時に終わる予定です。最近見た雑誌に、<ruby>和室<rt>わしつ</rt></ruby>（※1）できれいな庭を見ながら、日本料理をゆっくり味わうのが<ruby>流行<rt>はや</rt></ruby>っていると書いてありました。どこかいいところを知りませんか。<ruby>叔母<rt>おば</rt></ruby>さんが指定してくれた場所に7時ごろには行けると思います。<ruby>突然<rt>とつぜん</rt></ruby>のメールですみませんが、<ruby>至急<rt>しきゅう</rt></ruby>ご返事ください。</p></div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）<ruby>和室<rt>わしつ</rt></ruby>",
+      "definition": "たたみの部屋"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "叔母",
+      "reading": "おば",
+      "meaning": "aunt"
+    },
+    {
+      "word": "流行る",
+      "reading": "はやる",
+      "meaning": "to be popular"
+    },
+    {
+      "word": "指定する",
+      "reading": "していする",
+      "meaning": "to designate"
+    },
+    {
+      "word": "突然",
+      "reading": "とつぜん",
+      "meaning": "sudden"
+    },
+    {
+      "word": "至急",
+      "reading": "しきゅう",
+      "meaning": "urgent"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-18-q1",
+      "questionNumber": "1",
+      "questionText": "この人は、このメールで特に何を伝えていますか。",
+      "options": [
+        "出張で京都に行くので、一緒に行かないか。",
+        "しばらく会っていないので、メールがほしい。",
+        "京都で夕飯を一緒にしたいが、都合はどうか。",
+        "庭のきれいな日本料理のお店を紹介してほしい。"
+      ],
+      "correct": 3,
+      "correctOption": "京都で夕飯を一緒にしたいが、都合はどうか。",
+      "explanation": "筆者は京都へ出張することになったため、叔母に「久しぶりに京都で叔母さんと夕飯を一緒にしたいのですが、ご都合はいかがですか」と連絡し、一緒に夕食をとる都合を尋ねることが主な用件（伝えたいこと）です。したがって正解は 3 です。"
+    }
+  ]
+}

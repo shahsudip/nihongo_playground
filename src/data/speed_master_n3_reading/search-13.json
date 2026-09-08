@@ -1,0 +1,70 @@
+{
+  "id": "search-13",
+  "chapterId": "search-13",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "情報検索",
+  "sectionEn": "Information Retrieval",
+  "mondaiNumber": 13,
+  "targetMinutes": 8,
+  "title": "問題 13（情報検索）",
+  "instruction": "問題13 つぎのチラシを読んで、下の<ruby>質問<rt>しつもん</rt></ruby>に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0114.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"speed-master-flyer-card\"><img src=\"/speed_master_n3_pages/mondai_search_13_flyer_hd.png\" alt=\"ABC靴店 サマーセール！ チラシ\" class=\"speed-master-flyer-img\" /></div>",
+  "footnotes": [],
+  "vocabulary": [
+    {
+      "word": "ウォーキング",
+      "reading": "ウォーキング",
+      "meaning": "walking"
+    },
+    {
+      "word": "シューズ",
+      "reading": "シューズ",
+      "meaning": "shoes"
+    },
+    {
+      "word": "サンダル",
+      "reading": "サンダル",
+      "meaning": "sandals"
+    },
+    {
+      "word": "税込",
+      "reading": "ぜいこみ",
+      "meaning": "tax included"
+    }
+  ],
+  "questions": [
+    {
+      "id": "search-13-q1",
+      "questionNumber": "1",
+      "questionText": "この店で8月5日に3,000円（<ruby>税込<rt>ぜいこみ</rt></ruby>）のサンダルを２足買うと、レジで払う金額はいくらか。",
+      "options": [
+        "5,400円",
+        "6,000円",
+        "4,800円",
+        "4,000円"
+      ],
+      "correct": 2,
+      "correctOption": "6,000円",
+      "explanation": "サンダルの割引期間は「8/9(土)～8/17(日)」です。8月5日はサンダルのセール期間外（8/1〜8/8はウォーキングシューズのセール期間）であるため割引は適用されません。したがって、3,000円 × 2足 ＝ 6,000円 をそのまま支払います。正解は 2 です。"
+    },
+    {
+      "id": "search-13-q2",
+      "questionNumber": "2",
+      "questionText": "Aさんは8月8日にこの店でウォーキングシューズを２足買い、合計金額は<ruby>税込<rt>ぜいこみ</rt></ruby>みで9,000円になった。Aさんがレジで払う金額はいくらか。",
+      "options": [
+        "9,000円",
+        "8,100円",
+        "7,200円",
+        "3,600円"
+      ],
+      "correct": 3,
+      "correctOption": "7,200円",
+      "explanation": "8月8日はウォーキングシューズのセール期間（8/1〜8/8）です。「2足以上」「合計9,000円以上（税込）」の条件を両方満たしているため、レジで20％OFFが適用されます。\n9,000円 × (1 - 0.20) ＝ 9,000 × 0.8 ＝ 7,200円 となります。したがって正解は 3 です。"
+    }
+  ]
+}

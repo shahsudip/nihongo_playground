@@ -1,0 +1,89 @@
+{
+  "id": "search-1",
+  "chapterId": "search-1",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "情報検索",
+  "sectionEn": "Information Retrieval",
+  "mondaiNumber": 1,
+  "targetMinutes": 8,
+  "title": "問題 1（情報検索）",
+  "instruction": "問題1 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>は、<ruby>図書館<rt>としょかん</rt></ruby>の<ruby>案内<rt>あんない</rt></ruby>である。下の<ruby>質問<rt>しつもん</rt></ruby>に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0091.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"space-y-4\"><div class=\"p-4 border border-slate-300 dark:border-slate-600 rounded bg-slate-50 dark:bg-slate-800/50 leading-relaxed\"><p>かずこさんのおばあさんは80歳で、最近一人で歩くのが難しくなり、外出には車いすを使っています。おばあさんの<ruby>趣味<rt>しゅみ</rt></ruby>は読書とビデオを見ることですが、普通の本は字が小さくて<ruby>疲<rt>つか</rt></ruby>れると言っています。今度の日曜日、かずこさんが図書館に連れて行き、4時間後に迎えに行くことになりました。</p></div><div class=\"border-2 border-slate-700 dark:border-slate-300 p-4 bg-white dark:bg-slate-900\"><p class=\"font-bold text-center mb-3 text-base md:text-lg\">■<ruby>体<rt>からだ</rt></ruby>の<ruby>不自由<rt>ふじゆう</rt></ruby>な<ruby>方<rt>かた</rt></ruby>、お<ruby>年寄<rt>としよ</rt></ruby>りの<ruby>方<rt>かた</rt></ruby>への<ruby>図書館<rt>としょかん</rt></ruby><ruby>情報<rt>じょうほう</rt></ruby>（〇は<ruby>利用<rt>りよう</rt></ruby>できます）</p><div class=\"overflow-x-auto\"><table class=\"w-full border-collapse border border-slate-400 text-center text-sm md:text-base my-2\"><thead><tr class=\"bg-slate-100 dark:bg-slate-800\"><th class=\"border border-slate-400 p-2\"></th><th class=\"border border-slate-400 p-2\">車いす用<br>トイレ</th><th class=\"border border-slate-400 p-2\"><ruby>拡大<rt>かくだい</rt></ruby><ruby>読書<rt>どくしょ</rt></ruby><ruby>器<rt>き</rt></ruby><sup>（※1）</sup></th><th class=\"border border-slate-400 p-2\"><ruby>点字<rt>てんじ</rt></ruby><ruby>本<rt>ぼん</rt></ruby><sup>（※2）</sup></th><th class=\"border border-slate-400 p-2\">ビデオ</th><th class=\"border border-slate-400 p-2\">食堂</th></tr></thead><tbody><tr><td class=\"border border-slate-400 p-2 font-bold\">東図書館</td><td class=\"border border-slate-400 p-2\"></td><td class=\"border border-slate-400 p-2 text-lg\">〇</td><td class=\"border border-slate-400 p-2 text-lg\">〇</td><td class=\"border border-slate-400 p-2\"></td><td class=\"border border-slate-400 p-2\"></td></tr><tr><td class=\"border border-slate-400 p-2 font-bold\">西図書館</td><td class=\"border border-slate-400 p-2 text-lg\">〇</td><td class=\"border border-slate-400 p-2\"></td><td class=\"border border-slate-400 p-2 text-lg\">〇</td><td class=\"border border-slate-400 p-2 text-lg\">〇</td><td class=\"border border-slate-400 p-2\"></td></tr><tr><td class=\"border border-slate-400 p-2 font-bold\">南図書館</td><td class=\"border border-slate-400 p-2\"></td><td class=\"border border-slate-400 p-2 text-lg\">〇</td><td class=\"border border-slate-400 p-2\"></td><td class=\"border border-slate-400 p-2 text-lg\">〇</td><td class=\"border border-slate-400 p-2 text-lg\">〇</td></tr><tr><td class=\"border border-slate-400 p-2 font-bold\">北図書館</td><td class=\"border border-slate-400 p-2 text-lg\">〇</td><td class=\"border border-slate-400 p-2 text-lg\">〇</td><td class=\"border border-slate-400 p-2\"></td><td class=\"border border-slate-400 p-2\"></td><td class=\"border border-slate-400 p-2 text-lg\">〇</td></tr></tbody></table></div><div class=\"mt-4 space-y-2 text-sm\"><p class=\"font-bold underline\">注意してください！</p><p>車いすの方は、必ず車いす用トイレのある図書館をご利用ください。</p></div></div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）拡大読書器（かくだいどくしょき）",
+      "definition": "文字を大きくする機械"
+    },
+    {
+      "term": "（※2）点字本（てんじぼん）",
+      "definition": "目が見えない人が、指でさわって字が読めるようにした本"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "車いす",
+      "reading": "くるまいす",
+      "meaning": "wheelchair"
+    },
+    {
+      "word": "難しい",
+      "reading": "むずかしい",
+      "meaning": "difficult"
+    },
+    {
+      "word": "体が不自由",
+      "reading": "からだがふじゆう",
+      "meaning": "physically disabled, having a physical disability"
+    },
+    {
+      "word": "お年寄り",
+      "reading": "おとしより",
+      "meaning": "elderly person, senior citizen"
+    },
+    {
+      "word": "利用する",
+      "reading": "りようする",
+      "meaning": "to use, utilize"
+    },
+    {
+      "word": "趣味",
+      "reading": "しゅみ",
+      "meaning": "hobby"
+    }
+  ],
+  "questions": [
+    {
+      "id": "search-1-q1",
+      "questionNumber": "1",
+      "questionText": "かずこさんのおばあさんがビデオを楽しめるのはどこか。",
+      "options": [
+        "東図書館",
+        "西図書館",
+        "南図書館",
+        "北図書館"
+      ],
+      "correct": 2,
+      "correctOption": "西図書館",
+      "explanation": "おばあさんは車いすを使っているため、案内下部の「注意してください！」にあるとおり「車いす用トイレのある図書館（西図書館・北図書館）」を利用する必要があります。この2つのうち、ビデオが利用できるのは「西図書館」です（南図書館にもビデオはありますが車いす用トイレがありません）。したがって正解は 2 の「西図書館」です。"
+    },
+    {
+      "id": "search-1-q2",
+      "questionNumber": "2",
+      "questionText": "かずこさんのおばあさんが本が読めて、お昼も食べられるのはどこか。",
+      "options": [
+        "東図書館",
+        "西図書館",
+        "南図書館",
+        "北図書館"
+      ],
+      "correct": 4,
+      "correctOption": "北図書館",
+      "explanation": "おばあさんは車いすを使うため「車いす用トイレ」が必要であり（西図書館・北図書館が候補）、「普通の本は字が小さくて疲れる」ため文字を大きくできる「拡大読書器」が必要です。さらに「お昼も食べられる」ためには「食堂」が必要です。西図書館と北図書館のうち、「拡大読書器」と「食堂」の両方があるのは「北図書館」です。したがって正解は 4 の「北図書館」です。"
+    }
+  ]
+}

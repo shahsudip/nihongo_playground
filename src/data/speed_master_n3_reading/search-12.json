@@ -1,0 +1,65 @@
+{
+  "id": "search-12",
+  "chapterId": "search-12",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "情報検索",
+  "sectionEn": "Information Retrieval",
+  "mondaiNumber": 12,
+  "targetMinutes": 8,
+  "title": "問題 12（情報検索）",
+  "instruction": "問題12 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>はスーパーの<ruby>広告<rt>こうこく</rt></ruby>チラシである。下の<ruby>質問<rt>しつもん</rt></ruby>に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0113.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"speed-master-flyer-card\"><img src=\"/speed_master_n3_pages/mondai_search_12_flyer_hd.png\" alt=\"さくらスーパー ポイント3倍 年末セール！ チラシ\" class=\"speed-master-flyer-img\" /></div>",
+  "footnotes": [],
+  "vocabulary": [
+    {
+      "word": "日用品",
+      "reading": "にちようひん",
+      "meaning": "daily necessities"
+    },
+    {
+      "word": "ギフト",
+      "reading": "ギフト",
+      "meaning": "gift"
+    },
+    {
+      "word": "豊富",
+      "reading": "ほうふ",
+      "meaning": "abundant, plentiful, rich"
+    }
+  ],
+  "questions": [
+    {
+      "id": "search-12-q1",
+      "questionNumber": "1",
+      "questionText": "つぎの会話の（　）に入るものはどれか。<br><br>A：昨日、さくらスーパーでこれ買ったら1000円だった。安いでしょ？<br>B：でも、今日なら（　）だから、ポイント３倍もらえるのに。<br>A：えっ、そうなの！？",
+      "options": [
+        "木曜日",
+        "金曜日",
+        "土曜日",
+        "日曜日"
+      ],
+      "correct": 3,
+      "correctOption": "土曜日",
+      "explanation": "チラシによると、ポイントが3倍になるのは「土曜日と日曜日」です。Aが「昨日買った」と言い、Bが「今日ならポイント3倍もらえるのに」と言っていることから、昨日は通常ポイント（金曜日）で、今日がセールの初日（土曜日）であると分かります（もし今日が日曜日なら昨日も土曜日でセール対象だったことになり不自然です）。したがって正解は 3（土曜日）です。"
+    },
+    {
+      "id": "search-12-q2",
+      "questionNumber": "2",
+      "questionText": "次の会話の（　）に入るものはどれか。<br><br>A：いつもは100円買うと（　）だけど、12月はポイントが増えるんだね。<br>B：土曜か日曜に行くといいよ。",
+      "options": [
+        "１ポイント",
+        "２ポイント",
+        "３ポイント",
+        "10ポイント"
+      ],
+      "correct": 1,
+      "correctOption": "１ポイント",
+      "explanation": "チラシには「12月の土日なら100円で3ポイントもらえる」「ポイント3倍」とあります。つまり、いつもの3倍が3ポイントなので、いつも（通常時）は 100円で「1ポイント」です。したがって正解は 1 です。"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": "medium-12",
+  "chapterId": "medium-12",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（中文）",
+  "sectionEn": "Medium Passages",
+  "mondaiNumber": 12,
+  "targetMinutes": 7,
+  "title": "問題 12（中文）",
+  "instruction": "問題12 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0059.jpg",
+  "passageLayout": "html",
+  "passageText": "<p><ruby>携帯<rt>けいたい</rt></ruby>電話のメールを使うようになって<ruby>既<rt>すで</rt></ruby>に10年になる。初めは表現の仕方がわからず、手紙と同様、文の初めは「〜様、〜さん」と打ち、文の終わりには「取り急ぎ」「まずは、<ruby>御礼<rt>おんれい</rt></ruby>まで」のような<ruby>結<rt>むす</rt></ruby>びの言葉を使っていた。受けるメール文も、そういうものが多かったように思う。</p><p>しかし、最近の私のメール文は、「メールありがとう」で始まり、<ruby>結<rt>むす</rt></ruby>びは「では、また」になってきている。受けるメール文も、以前より会話的な表現が多くなっているように感じる。若い人たちのメールとなると、さらに絵文字や顔文字などもよく使われ大変だが、これはこれで、<ruby>解読<rt>かいどく</rt></ruby>するのが楽しい。</p><p>このように、メールは、どんどん気楽に使える便利な道具になっている。字が下手でも、全く気にする必要がなくなった。<span class=\"speed-master-box-blank\">①</span>、きちんとした手紙を書くことが面倒になりつつあり、これは困ったことだと感じている。伝えたいことを自分の手できちんと書き表せる力は、やはり失いたくないと思うからだ。</p>",
+  "footnotes": [],
+  "vocabulary": [
+    {
+      "word": "既に",
+      "reading": "すでに",
+      "meaning": "already"
+    },
+    {
+      "word": "打つ",
+      "reading": "うつ",
+      "meaning": "to type"
+    },
+    {
+      "word": "結び",
+      "reading": "むすび",
+      "meaning": "closing remark"
+    },
+    {
+      "word": "絵文字",
+      "reading": "えもじ",
+      "meaning": "pictograph"
+    },
+    {
+      "word": "顔文字",
+      "reading": "かおもじ",
+      "meaning": "emoticon"
+    },
+    {
+      "word": "解読する",
+      "reading": "かいどくする",
+      "meaning": "to decipher, decode"
+    },
+    {
+      "word": "気楽に",
+      "reading": "きらくに",
+      "meaning": "easily, lightheartedly"
+    },
+    {
+      "word": "きちんとした",
+      "reading": "きちんとした",
+      "meaning": "tidy, orderly"
+    },
+    {
+      "word": "面倒",
+      "reading": "めんどう",
+      "meaning": "trouble, bother"
+    },
+    {
+      "word": "書き表す",
+      "reading": "かきあらわす",
+      "meaning": "to express, describe"
+    },
+    {
+      "word": "話し言葉",
+      "reading": "はなしことば",
+      "meaning": "spoken language"
+    },
+    {
+      "word": "中心",
+      "reading": "ちゅうしん",
+      "meaning": "center, focus"
+    },
+    {
+      "word": "書き言葉",
+      "reading": "かきことば",
+      "meaning": "written language"
+    },
+    {
+      "word": "形式的な",
+      "reading": "けいしきてきな",
+      "meaning": "formal"
+    },
+    {
+      "word": "自然な",
+      "reading": "しぜんな",
+      "meaning": "natural"
+    }
+  ],
+  "questions": [
+    {
+      "id": "medium-12-q1",
+      "questionNumber": "1",
+      "questionText": "<ruby>筆者<rt>ひっしゃ</rt></ruby>の<ruby>携帯<rt>けいたい</rt></ruby>のメールの文は、どう変化したか。",
+      "options": [
+        "「絵文字」が使えなかったが、使えるようになった。",
+        "「顔文字」が使えなかったが、使えるようになった。",
+        "話し言葉が中心の文から書き言葉が中心の文になった。",
+        "手紙文のような、形式的な表現を使わなくなった。"
+      ],
+      "correct": 4,
+      "correctOption": "手紙文のような、形式的な表現を使わなくなった。",
+      "explanation": "本文によると、以前は手紙と同様に「〜様」や「取り急ぎ」「まずは、御礼まで」のような形式的な結びの言葉を使っていましたが、最近は「メールありがとう」で始まり「では、また」で結ぶようになったとあります。つまり手紙文のような形式的な表現を使わなくなりました。したがって正解は 4 です。"
+    },
+    {
+      "id": "medium-12-q2",
+      "questionNumber": "2",
+      "questionText": "<ruby>筆者<rt>ひっしゃ</rt></ruby>は<ruby>携帯<rt>けいたい</rt></ruby>のメール文についてどのように思っているか。",
+      "options": [
+        "下手な字で書かれていないので、読みやすい。",
+        "だんだん会話の表現が多くなっている。",
+        "「絵文字」や「顔文字」を使うのが大変だ。",
+        "携帯でも、きちんとした文を書くようにしなければならない。"
+      ],
+      "correct": 2,
+      "correctOption": "だんだん会話の表現が多くなっている。",
+      "explanation": "第2段落に「受けるメール文も、以前より会話的な表現が多くなっているように感じる」と書かれており、会話の表現が増えていると感じています。したがって正解は 2 です。"
+    },
+    {
+      "id": "medium-12-q3",
+      "questionNumber": "3",
+      "questionText": "①に入る語はどれか。",
+      "options": [
+        "そして",
+        "また",
+        "しかし",
+        "だから"
+      ],
+      "correct": 3,
+      "correctOption": "しかし",
+      "explanation": "空欄の前では「メールは、どんどん気楽に使える便利な道具になっている」と便利さを挙げているのに対し、空欄の後では「きちんとした手紙を書くことが面倒になりつつあり、これは困ったことだと感じている」と逆のマイナス面を述べています。したがって、逆接を表す「しかし」の 3 が正解です。"
+    }
+  ]
+}

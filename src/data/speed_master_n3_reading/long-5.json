@@ -1,0 +1,145 @@
+{
+  "id": "long-5",
+  "chapterId": "long-5",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（長文）",
+  "sectionEn": "Long Passages",
+  "mondaiNumber": 5,
+  "targetMinutes": 10,
+  "title": "問題 5（長文）",
+  "instruction": "問題5 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0074.jpg",
+  "passageLayout": "html",
+  "passageText": "<p class=\"font-bold text-center text-lg mb-2\"><ruby>健康<rt>けんこう</rt></ruby>センターニュース</p><p>当センターでは、一年を通じて<ruby>健康診断<rt>けんこうしんだん</rt></ruby>を行っております。<ruby>健康診断<rt>けんこうしんだん</rt></ruby>は、病気の発見に役立つだけでなく、自分の<ruby>健康状態<rt>けんこうじょうたい</rt></ruby>を知り、生活習慣を<ruby>見直<rt>みなお</rt></ruby>す（※1）いい機会になります。ぜひ<ruby>定期的<rt>ていきてき</rt></ruby>に（※2）受けるようにしてください。</p><p>「<ruby>健康<rt>けんこう</rt></ruby>ミニレッスン」では、今月から6回にわたって、食事や<ruby>睡眠<rt>すいみん</rt></ruby>（※3）、運動など生活習慣を良くするためのポイントを紹介していきます。まず第1回目は「<ruby>飲酒<rt>いんしゅ</rt></ruby>」です。</p><div class=\"border border-dashed p-3 my-3\"><p class=\"font-bold text-center\"><ruby>健康<rt>けんこう</rt></ruby>ミニレッスン<br/>〜 <ruby>飲酒<rt>いんしゅ</rt></ruby> 〜</p><p>「酒にのまれる」という言葉がありますが、これは酒のせいで自分自身を<ruby>管理<rt>かんり</rt></ruby>できなくなることです。これでは毎日の生活に悪い<ruby>影響<rt>えいきょう</rt></ruby>を与えてしまいます。「酒にのまれない」ための酒の飲み方を考えてみましょう。</p><p>酒は、上手に飲めば、心も体も楽になって楽しい時間が過ごせるものでもあります。酒にのまれず、楽しいときを過ごすための飲み方を紹介します。まず、笑いながら家族や友人と楽しく飲む。これでストレス（※4）がなくなります。そして、何かを食べながら飲む。酒だけを飲むのは胃に悪いです。おいしい料理と一緒なら、<sub>①</sub>ますますいいでしょう。それから、ゆっくり飲む。飲むスピードが速いと、体の調子を悪くします。「ゆっくり食べ、笑って」酒を楽しむ。これが、酒と上手に付き合う方法です。</p></div><p>センターでは、生活習慣など、<ruby>健康<rt>けんこう</rt></ruby>についての相談にいつでも<ruby>応<rt>おう</rt></ruby>じています。</p><p class=\"text-slate-500\">次回の「健康ミニレッスン」では「食事」について考えます。</p>",
+  "footnotes": [
+    {
+      "term": "（※1）見直す（みなおす）",
+      "definition": "もう一度見る"
+    },
+    {
+      "term": "（※2）定期的に（ていきてきに）",
+      "definition": "ある決まった期間ごとに"
+    },
+    {
+      "term": "（※3）睡眠（すいみん）",
+      "definition": "眠ること"
+    },
+    {
+      "term": "（※4）ストレス",
+      "definition": "心や体によくないこと"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "〜を通じて",
+      "reading": "〜をつうじて / 〜のあいだずっと。",
+      "meaning": "throughout"
+    },
+    {
+      "word": "健康診断",
+      "reading": "けんこうしんだん",
+      "meaning": "health checkup"
+    },
+    {
+      "word": "ミニ",
+      "reading": "ミニ",
+      "meaning": "mini"
+    },
+    {
+      "word": "レッスン",
+      "reading": "レッスン",
+      "meaning": "lesson"
+    },
+    {
+      "word": "〜にわたる",
+      "reading": "〜にわたる",
+      "meaning": "over"
+    },
+    {
+      "word": "ポイント",
+      "reading": "ポイント",
+      "meaning": "point"
+    },
+    {
+      "word": "飲酒",
+      "reading": "いんしゅ",
+      "meaning": "drinking alcohol"
+    },
+    {
+      "word": "影響を与える",
+      "reading": "えいきょうをあたえる",
+      "meaning": "to exert an influence on"
+    },
+    {
+      "word": "応じる",
+      "reading": "おうじる",
+      "meaning": "to respond to"
+    },
+    {
+      "word": "ウイスキー",
+      "reading": "ウイスキー",
+      "meaning": "whiskey"
+    }
+  ],
+  "questions": [
+    {
+      "id": "long-5-q1",
+      "questionNumber": "1",
+      "questionText": "今回の「<ruby>健康<rt>けんこう</rt></ruby>センターニュース」が伝えていることと<ruby>違<rt>ちが</rt></ruby>うのはどれか。",
+      "options": [
+        "<ruby>定期的<rt>ていきてき</rt></ruby>に<ruby>健康診断<rt>けんこうしんだん</rt></ruby>を受けてほしい。",
+        "<ruby>健康診断<rt>けんこうしんだん</rt></ruby>で多くの病気を治すことができる。",
+        "<ruby>健康<rt>けんこう</rt></ruby>センターは、<ruby>健康<rt>けんこう</rt></ruby>についていつでも相談できる場所だ。",
+        "今回の「<ruby>健康<rt>けんこう</rt></ruby>ミニレッスン」はお酒についての話だ。"
+      ],
+      "correct": 2,
+      "correctOption": "<ruby>健康診断<rt>けんこうしんだん</rt></ruby>で多くの病気を治すことができる。",
+      "explanation": "本文に「健康診断は、病気の発見に役立つだけでなく…」とありますが、健康診断そのもので病気を治すことができるとは書かれていません。したがって 2 が本文の内容と違っており、正解です。"
+    },
+    {
+      "id": "long-5-q2",
+      "questionNumber": "2",
+      "questionText": "「酒にのまれた」のは、次のどれか。",
+      "options": [
+        "<ruby>普段<rt>ふだん</rt></ruby>怖くて話せない人と話せた。",
+        "仕事の失敗も気にならなくなった。",
+        "気がついたら友人の家で寝ていた。",
+        "楽しくて、<ruby>涙<rt>なみだ</rt></ruby>が出るほど笑った。"
+      ],
+      "correct": 3,
+      "correctOption": "気がついたら友人の家で寝ていた。",
+      "explanation": "「酒にのまれる」とは「酒のせいで自分自身を管理できなくなること」と説明されています。「気がついたら友人の家で寝ていた」は自分をコントロールできなくなって記憶がない状態を表すため、正解は 3 です。"
+    },
+    {
+      "id": "long-5-q3",
+      "questionNumber": "3",
+      "questionText": "センターがすすめる酒の飲み方と合うのはどれか。",
+      "options": [
+        "みんなの前で社長に注意されたことを忘れようと、酒を飲んだ。",
+        "自分の誕生日パーティーで、家族や友だちとワインを飲んだ。",
+        "次の日、仕事が早いので、早く寝ようとたくさん酒を飲んだ。",
+        "休みの日に本を読みながらウイスキーだけを飲むのが、私の<ruby>趣味<rt>しゅみ</rt></ruby>だ。"
+      ],
+      "correct": 2,
+      "correctOption": "自分の誕生日パーティーで、家族や友だちとワインを飲んだ。",
+      "explanation": "センターは「笑いながら家族や友人と楽しく飲む」「何かを食べながら飲む」「ゆっくり飲む」ことをすすめています。誕生日に家族や友人と楽しく飲んでいる 2 がこれに合致します。したがって正解は 2 です。"
+    },
+    {
+      "id": "long-5-q4",
+      "questionNumber": "4",
+      "questionText": "<sub>①</sub>ますますいいとあるが、どうして「ますますいい」のか。",
+      "options": [
+        "おいしい料理を食べると、酒がさらにおいしくなるから。",
+        "おいしい料理を食べると、<ruby>食欲<rt>しょくよく</rt></ruby>が増して体にいいから。",
+        "食べながら飲むことで、料理だけでなく酒も胃にいい働きをするから。",
+        "食べながら飲むほうが胃によく、さらに料理の味も楽しめるから。"
+      ],
+      "correct": 4,
+      "correctOption": "食べながら飲むほうが胃によく、さらに料理の味も楽しめるから。",
+      "explanation": "「酒だけを飲むのは胃に悪いです。おいしい料理と一緒なら、ますますいいでしょう」とあり、何かを食べながら飲むことで胃への負担を減らせるだけでなく、おいしい料理の味も楽しめるため「ますますいい」と述べています。したがって正解は 4 です。"
+    }
+  ]
+}

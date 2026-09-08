@@ -1,0 +1,99 @@
+{
+  "id": "medium-8",
+  "chapterId": "medium-8",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（中文）",
+  "sectionEn": "Medium Passages",
+  "mondaiNumber": 8,
+  "targetMinutes": 7,
+  "title": "問題 8（中文）",
+  "instruction": "問題8 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0054.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"speed-master-letter-card\"><div class=\"text-center mb-4 leading-relaxed\"><p class=\"text-sm font-semibold text-[var(--sm-text-secondary)]\">A市からのお知らせ</p><p class=\"font-bold text-base text-[var(--sm-text-primary)]\">5月のイベント情報</p><p class=\"font-bold text-lg text-[var(--sm-accent-blue)] mt-1\">オープンガーデン：<ruby>自慢<rt>じまん</rt></ruby>の庭を<ruby>公開<rt>こうかい</rt></ruby>（※1）します。</p></div><p class=\"mb-3\">毎年5月に行われるオープンガーデン（個人の家の庭を自由に訪問できるイベント）が、今年も5月15日（土）、16日（日）に開かれます。</p><p class=\"mb-4\">今年は全部で40の家庭が、このイベントに参加します。ぜひ自由に訪ねて、すてきな庭をお楽しみください。各家庭の皆さんが、<ruby>自慢<rt>じまん</rt></ruby>の庭でお迎えします。</p><div class=\"space-y-2 border-t border-[var(--sm-border-strong)] pt-3 text-sm leading-relaxed\"><p><strong><ruby>公開<rt>こうかい</rt></ruby>日時：</strong>5月15日（土）・16日（日）　9：00〜17：00<br /><span class=\"pl-4 text-[var(--sm-text-secondary)]\">※予約は必要ありません。</span></p><p><strong>場所：</strong>40の庭がすぐわかる地図「オープンガーデンマップ」は、<ruby>市役所<rt>しやくしょ</rt></ruby>、<ruby>公民館<rt>こうみんかん</rt></ruby>にあります。無料。</p><p><strong>注意：</strong>犬を連れた方は中に入れません。外からご<ruby>覧<rt>らん</rt></ruby>ください。</p><p>雨の場合も、すべての家で行います。</p><p><strong>問い合わせ：</strong>市役所<ruby>環境課<rt>かんきょうか</rt></ruby>（電話○○ー○○○）まで<br /><span class=\"pl-4 text-[var(--sm-text-secondary)]\">※ただし、電話で庭の場所をご案内することはできません。<ruby>上記<rt>じょうき</rt></ruby>「オープンガーデンマップ」をご利用ください。</span></p></div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）<ruby>公開<rt>こうかい</rt></ruby>する",
+      "definition": "だれでも自由に利用できること"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "イベント",
+      "reading": "イベント",
+      "meaning": "event"
+    },
+    {
+      "word": "情報",
+      "reading": "じょうほう",
+      "meaning": "information"
+    },
+    {
+      "word": "自慢",
+      "reading": "じまん",
+      "meaning": "pride, boast"
+    },
+    {
+      "word": "個人",
+      "reading": "こじん",
+      "meaning": "individual, private"
+    },
+    {
+      "word": "家庭",
+      "reading": "かてい",
+      "meaning": "family, household, home"
+    },
+    {
+      "word": "公民館",
+      "reading": "こうみんかん",
+      "meaning": "community center, public hall"
+    }
+  ],
+  "questions": [
+    {
+      "id": "medium-8-q1",
+      "questionNumber": "1",
+      "questionText": "「オープンガーデン」について、<u><ruby>間違<rt>まちが</rt></ruby>っている</u>のはどれか。",
+      "options": [
+        "だれでも訪ねることができる。",
+        "A市にある個人の庭を<ruby>公開<rt>こうかい</rt></ruby>する。",
+        "庭を見たい人は何時に行ってもいい。",
+        "毎年5月に行われるイベントである。"
+      ],
+      "correct": 3,
+      "correctOption": "庭を見たい人は何時に行ってもいい。",
+      "explanation": "公開日時は「9：00〜17：00」と指定されており、いつでも何時に行ってもいいわけではありません。したがって間違っているものは 3 です。"
+    },
+    {
+      "id": "medium-8-q2",
+      "questionNumber": "2",
+      "questionText": "庭を見に行くには、どうすればよいか。",
+      "options": [
+        "行きたい庭のある家に電話で予約する。",
+        "「オープンガーデンマップ」を見て訪ねる。",
+        "<ruby>市役所<rt>しやくしょ</rt></ruby>に電話して、場所を教えてもらう。",
+        "<ruby>公民館<rt>こうみんかん</rt></ruby>で地図を買って訪ねる。"
+      ],
+      "correct": 2,
+      "correctOption": "「オープンガーデンマップ」を見て訪ねる。",
+      "explanation": "本文に「40の庭がすぐわかる地図『オープンガーデンマップ』は、市役所、公民館にあります。無料」「電話で庭の場所をご案内することはできません。上記『オープンガーデンマップ』をご利用ください」「予約は必要ありません」と書かれています。したがって正解は 2 です。"
+    },
+    {
+      "id": "medium-8-q3",
+      "questionNumber": "3",
+      "questionText": "上のお知らせの内容について、正しいのはどれか。",
+      "options": [
+        "5月15日・16日は、A市のどの家の庭も訪ねることができる。",
+        "犬と一緒に行くと、外から見せてもらうことしかできない。",
+        "雨の場合、イベントに参加する家としない家がある。",
+        "<ruby>市役所<rt>しやくしょ</rt></ruby><ruby>環境課<rt>かんきょうか</rt></ruby>へ電話すれば、土日でも場所を教えてくれる。"
+      ],
+      "correct": 2,
+      "correctOption": "犬と一緒に行くと、外から見せてもらうことしかできない。",
+      "explanation": "注意欄に「犬を連れた方は中に入れません。外からご覧ください」と書かれています。参加するのは40の家庭のみで（1は誤り）、雨の場合もすべての家で行われ（3は誤り）、電話で場所の案内はできないとされている（4は誤り）ため、正解は 2 です。"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "search-14",
+  "chapterId": "search-14",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "情報検索",
+  "sectionEn": "Information Retrieval",
+  "mondaiNumber": 14,
+  "targetMinutes": 8,
+  "title": "問題 14（情報検索）",
+  "instruction": "問題14 つぎのチラシを読んで、下の<ruby>質問<rt>しつもん</rt></ruby>に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0117.jpg",
+  "passageLayout": "html",
+  "passageHeader": "朝日屋元町店 チラシ",
+  "passageText": "<div class=\"speed-master-memo-card mb-6\"><p class=\"leading-relaxed\">田中さんはいつも近所のスーパー「朝日屋」のチラシを見て、タイムサービスの時に買いに行きます。</p></div><div class=\"speed-master-flyer-card\"><img src=\"/speed_master_n3_pages/mondai_search_14_flyer_hd.png\" alt=\"朝日屋元町店 チラシ\" class=\"speed-master-flyer-img\" /></div>",
+  "footnotes": [
+    {
+      "term": "(※1) パック",
+      "definition": "食べ物や飲み物を入れるための<ruby>箱型<rt>はこがた</rt></ruby>の入れ物"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "タイムサービス",
+      "reading": "タイムサービス",
+      "meaning": "limited time offer, flash sale (sales style offering time-limited discounts)"
+    },
+    {
+      "word": "お買い得品",
+      "reading": "おかいどくひん",
+      "meaning": "bargain, good buy"
+    },
+    {
+      "word": "割引き",
+      "reading": "わりびき",
+      "meaning": "discount, price reduction"
+    }
+  ],
+  "questions": [
+    {
+      "id": "search-14-q1",
+      "questionNumber": "1",
+      "questionText": "一番お得な買い物をするのは、どの人か。",
+      "options": [
+        "朝11時に、卵１パックと<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>３本を買う人",
+        "朝11時に、<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>１本とリンゴ６個を買う人",
+        "夕方６時に、牛肉300グラムとトマト６個を買う人",
+        "夕方６時に、ビール10缶と牛肉400グラムを買う人"
+      ],
+      "correct": 3,
+      "correctOption": "夕方６時に、牛肉300グラムとトマト６個を買う人",
+      "explanation": "各選択肢の割引額（安くなった金額）を計算します。\n1：朝11時（全品1割引）：卵1パック（200円）＋ 牛乳3本（600円）＝ 800円 → 割引額 80円\n2：朝11時（全品1割引）：牛乳1本（200円）＋ リンゴ6個（800円）＝ 1,000円 → 割引額 100円\n3：夕方6時（肉・野菜のみ2割引）：牛肉300g（600円）＋ トマト6個（400円）＝ 1,000円（全て肉・野菜） → 割引額 200円\n4：夕方6時（肉・野菜のみ2割引）：ビール10缶（1,600円：割引なし）＋ 牛肉400g（800円：2割引） → 割引額 160円\nしたがって、一番お得（割引額が最大）なのは 3（200円引き）です。"
+    },
+    {
+      "id": "search-14-q2",
+      "questionNumber": "2",
+      "questionText": "午後７時に卵１パックと<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>１本とトマト３個を買うと、レジで払うお金はいくらか。",
+      "options": [
+        "480円",
+        "540円",
+        "560円",
+        "600円"
+      ],
+      "correct": 3,
+      "correctOption": "560円",
+      "explanation": "午後7時はPMタイムサービス（午後5時〜7時）の対象時間です。PMタイムサービスでは「肉・野菜のみ2割引」となります。\n・卵1パック：200円（肉・野菜ではないため割引なし）\n・牛乳1本：200円（肉・野菜ではないため割引なし）\n・トマト3個：200円（野菜のため2割引 → 160円）\n合計支払額 ＝ 200 ＋ 200 ＋ 160 ＝ 560円 です。したがって正解は 3 です。"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "short-3",
+  "chapterId": "short-3",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 3,
+  "targetMinutes": 3,
+  "title": "問題 3（短文）",
+  "instruction": "問題3 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0028.jpg",
+  "passageLayout": "html",
+  "passageText": "<p>日本には昔から、「<ruby>虫干<rt>むしぼ</rt></ruby>し」という習慣があります。着物の<ruby>湿気<rt>しっけ</rt></ruby><sup>（※1）</sup>を取り、虫やカビ<sup>（※2）</sup>などを防ぐためのものです。<ruby>梅雨<rt>つゆ</rt></ruby>が終わった7月<ruby>下旬<rt>げじゅん</rt></ruby>から8月<ruby>上旬<rt>じょうじゅん</rt></ruby>に行うことが多いです。<ruby>梅雨<rt>つゆ</rt></ruby>の間に着物が<ruby>湿気<rt>しっけ</rt></ruby>を<ruby>含<rt>ふく</rt></ruby>んでしまうからです。</p><p>2、3日晴れて<ruby>乾燥<rt>かんそう</rt></ruby>した日が続いたあと、午前10時から午後3時ごろまで、風がよく通る部屋で、着物が風に当たるようにします。また、その間に汚れたところはないか調べます。</p><p>最近あまり見られなくなった習慣ですが、日本の気候に合った生活の工夫として、現代の洋服にも役に立つのではないかと思います。</p>",
+  "footnotes": [
+    {
+      "term": "（※1）<ruby>湿気<rt>しっけ</rt></ruby>",
+      "definition": "物や空気の中にある水。目には見えない"
+    },
+    {
+      "term": "（※2）カビ",
+      "definition": "気温が高く湿気があるところで、食べ物や服に<ruby>生<rt>は</rt></ruby>える非常に小さな生物"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "習慣",
+      "reading": "しゅうかん",
+      "meaning": "habit, custom"
+    },
+    {
+      "word": "湿気",
+      "reading": "しっけ",
+      "meaning": "humidity, moisture"
+    },
+    {
+      "word": "下旬",
+      "reading": "げじゅん",
+      "meaning": "last third of the month (21st to end)"
+    },
+    {
+      "word": "上旬",
+      "reading": "じょうじゅん",
+      "meaning": "first third of the month (1st to 10th)"
+    },
+    {
+      "word": "含む",
+      "reading": "ふくむ",
+      "meaning": "to include, contain"
+    },
+    {
+      "word": "乾燥する",
+      "reading": "かんそうする",
+      "meaning": "to dry, dehydrate"
+    },
+    {
+      "word": "気候",
+      "reading": "きこう",
+      "meaning": "climate"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-3-q1",
+      "questionNumber": "1",
+      "questionText": "<ruby>虫干<rt>むしぼ</rt></ruby>しをする理由は何か。",
+      "options": [
+        "昔からの習慣だから。",
+        "着物の色が変わらないようにするため。",
+        "着物を<ruby>乾燥<rt>かんそう</rt></ruby>させるため。",
+        "風を通して部屋を<ruby>乾燥<rt>かんそう</rt></ruby>させるため。"
+      ],
+      "correct": 3,
+      "correctOption": "着物を<ruby>乾燥<rt>かんそう</rt></ruby>させるため。",
+      "explanation": "本文の冒頭に「着物の湿気を取り、虫やカビなどを防ぐためのものです」と述べられており、着物に含まれた湿気を取って乾燥させることが目的です。したがって正解は 3 です。"
+    }
+  ]
+}

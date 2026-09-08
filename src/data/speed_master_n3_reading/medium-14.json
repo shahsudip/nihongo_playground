@@ -1,0 +1,133 @@
+{
+  "id": "medium-14",
+  "chapterId": "medium-14",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（中文）",
+  "sectionEn": "Medium Passages",
+  "mondaiNumber": 14,
+  "targetMinutes": 7,
+  "title": "問題 14（中文）",
+  "instruction": "問題14 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0061.jpg",
+  "passageText": "<div class=\"speed-master-letter-card mb-6\"><div class=\"speed-master-letter-recipient\">山田一郎様</div><div class=\"speed-master-letter-body\"><p>いつも当ホテルをご利用いただき、まことにありがとうございます。</p><p>さて、山田様には現在、10月３日ご一泊のご予約をいただいておりますが、この度、<ruby>消防署<rt>しょうぼうしょ</rt></ruby>の検査で<ruby>消防設備<rt>しょうぼうせつび</rt></ruby>に問題が見つかり、10月１日より２週間休業して<ruby>修理<rt>しゅうり</rt></ruby>することになりました。<ruby>突然<rt>とつぜん</rt></ruby>のことでまことに申し訳ありませんが、どうかご理解いただきたくお願い申し上げます。なお、ご希望があれば、代わりのホテルをご紹介いたします。</p><p><ruby>修理<rt>しゅうり</rt></ruby>終了後は、10月15日よりこれまで通り営業する予定でおります。１泊50％割引の券をお送りしますので、ご利用いただければ幸いです。</p><p>ご不便をおかけし大変申し訳ありませんが、どうか今後も変わらず当ホテルをご利用いただきたく、よろしくお願い申し上げます。</p></div><div class=\"speed-master-letter-sender\">さくらホテル<br>田中まりこ</div></div><div class=\"speed-master-letter-card\"><div class=\"speed-master-letter-recipient\">さくらホテル御中</div><div class=\"speed-master-letter-body\"><p>10月３日に予約をしました山田です。仕事の予定が<ruby>変更<rt>へんこう</rt></ruby>できないので、代わりのホテルを紹介してもらえればと思います。</p><p>場所はＡ駅の近くで、予算はサービス料など全部<ruby>含<rt>ふく</rt></ruby>めて7000円です。</p><p>少々急いでおりますので、今日中に返事をいただけないでしょうか。</p><p>よろしくお願いします。</p></div><div class=\"speed-master-letter-sender\">山田一郎</div></div>",
+  "footnotes": [],
+  "vocabulary": [
+    {
+      "word": "〜泊",
+      "reading": "〜はく",
+      "meaning": "~ nights"
+    },
+    {
+      "word": "このたび",
+      "reading": "このたび",
+      "meaning": "this time"
+    },
+    {
+      "word": "消防署",
+      "reading": "しょうぼうしょ",
+      "meaning": "fire station"
+    },
+    {
+      "word": "消防",
+      "reading": "しょうぼう",
+      "meaning": "fire department"
+    },
+    {
+      "word": "設備",
+      "reading": "せつび",
+      "meaning": "equipment"
+    },
+    {
+      "word": "休業",
+      "reading": "きゅうぎょう",
+      "meaning": "closed"
+    },
+    {
+      "word": "まことに",
+      "reading": "まことに",
+      "meaning": "sincerely"
+    },
+    {
+      "word": "営業する",
+      "reading": "えいぎょうする",
+      "meaning": "to be open for business"
+    },
+    {
+      "word": "割引",
+      "reading": "わりびき",
+      "meaning": "discount"
+    },
+    {
+      "word": "幸い",
+      "reading": "さいわい",
+      "meaning": "fortunately"
+    },
+    {
+      "word": "サービス料",
+      "reading": "サービスりょう",
+      "meaning": "service charge"
+    },
+    {
+      "word": "含める",
+      "reading": "ふくめる",
+      "meaning": "to include"
+    },
+    {
+      "word": "提案",
+      "reading": "ていあん",
+      "meaning": "proposal, suggestion"
+    },
+    {
+      "word": "以降",
+      "reading": "いこう",
+      "meaning": "after, since"
+    }
+  ],
+  "questions": [
+    {
+      "id": "medium-14-q1",
+      "questionNumber": "1",
+      "questionText": "さくらホテルが山田さんに一番伝えたいことはどれか。",
+      "options": [
+        "さくらホテルの<ruby>消防設備<rt>しょうぼうせつび</rt></ruby>には問題がある。",
+        "予約した日にさくらホテルには泊まれない。",
+        "10月15日からまた営業を始める。",
+        "１泊50％割引の券を利用してほしい。"
+      ],
+      "correct": 2,
+      "correctOption": "予約した日にさくらホテルには泊まれない。",
+      "explanation": "さくらホテルからの連絡は、10月1日から2週間休業して修理するため、10月3日に予約している山田さんが宿泊できなくなったことを伝えるのが一番の目的です。したがって正解は 2 です。"
+    },
+    {
+      "id": "medium-14-q2",
+      "questionNumber": "2",
+      "questionText": "さくらホテルが山田さんにした<ruby>提案<rt>ていあん</rt></ruby>はどれか。",
+      "options": [
+        "10月15日<ruby>以降<rt>いこう</rt></ruby>に泊まってもらう。",
+        "１泊50％割引の券を利用してもらう。",
+        "希望すれば、代わりのホテルを紹介する。",
+        "代わりのホテルの割引券を送る。"
+      ],
+      "correct": 3,
+      "correctOption": "希望すれば、代わりのホテルを紹介する。",
+      "explanation": "ホテルからのメールに「なお、ご希望があれば、代わりのホテルをご紹介いたします」と書かれています。したがって正解は 3 です。"
+    },
+    {
+      "id": "medium-14-q3",
+      "questionNumber": "3",
+      "questionText": "山田さんがさくらホテルに出したメールの内容と<ruby>違<rt>ちが</rt></ruby>うものはどれか。",
+      "options": [
+        "代わりのホテルを紹介してほしいこと。",
+        "代わりのホテルについての希望。",
+        "今日中にメールの返事がほしいこと。",
+        "仕事の予定が<ruby>変更<rt>へんこう</rt></ruby>になるかもしれないこと。"
+      ],
+      "correct": 4,
+      "correctOption": "仕事の予定が<ruby>変更<rt>へんこう</rt></ruby>になるかもしれないこと。",
+      "explanation": "山田さんは「仕事の予定が変更できないので、代わりのホテルを紹介してもらえればと思います」と述べており、「仕事の予定が変更になるかもしれない」とは言っていません。したがって内容と違うのは 4 です。"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "id": "long-1",
+  "chapterId": "long-1",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（長文）",
+  "sectionEn": "Long Passages",
+  "mondaiNumber": 1,
+  "targetMinutes": 10,
+  "title": "問題 1（長文）",
+  "instruction": "問題1 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0066.jpg",
+  "passageLayout": "html",
+  "passageText": "<p class=\"font-bold text-center text-lg mb-3\">〇〇市<ruby>健康管理課<rt>けんこうかんりか</rt></ruby>から<ruby>健康<rt>けんこう</rt></ruby>情報です。</p><p class=\"font-bold mb-2\">◎目の健康</p><p>最近、目の調子が悪いと言って病院に来る人に<sub>①</sub>「<ruby>角膜<rt>かくまく</rt></ruby>びらん」と呼ばれる<ruby>症状<rt>しょうじょう</rt></ruby>（※1）が多いです。これは、<ruby>黒目<rt>くろめ</rt></ruby>（※2）の部分の一番上の皮「<ruby>角膜上皮<rt>かくまくじょうひ</rt></ruby>」に何かの<ruby>刺激<rt>しげき</rt></ruby>で<ruby>傷<rt>きず</rt></ruby>がついたり、皮がむけたりした<ruby>状態<rt>じょうたい</rt></ruby>です。これまではコンタクトレンズ（※3）を使う人に多かった病気ですが、最近はパソコンを長時間使う人にも増えています。</p><p>テレビもパソコンと同じように<ruby>画面<rt>がめん</rt></ruby>（※4）を見ますが、テレビではこの<ruby>症状<rt>しょうじょう</rt></ruby>があまり起きません。テレビとパソコンでは大きな違いがあります。パソコンの作業では、長い時間じっと画面を見るので、まばたき（※5）の回数が減ります。まばたきには<ruby>涙<rt>なみだ</rt></ruby>を出して目を守る働きがありますが、まばたきの回数が減ると、目の表面が<ruby>乾燥<rt>かんそう</rt></ruby>し、<ruby>傷<rt>きず</rt></ruby>がつきやすくなるのです。ちょっと目が疲れたと思って、目をこする人が多いですが、これが一番いけません。その時は、<ruby>意識<rt>いしき</rt></ruby>して<span class=\"speed-master-box-blank\">①</span>のがよいでしょう。</p><p>また、<ruby>疲<rt>つか</rt></ruby>れが<ruby>原因<rt>げんいん</rt></ruby>ではなく、紙の<ruby>角<rt>かど</rt></ruby>が目に入った、庭の木の枝がはねて目に入った、赤ちゃんのつめが目に当たった、などでも起きます。</p><p>ゴミが入ったような感じがする、まぶしくて目が開けにくい、<ruby>涙<rt>なみだ</rt></ruby>があふれる、などの<ruby>症状<rt>しょうじょう</rt></ruby>があったら、病院に相談してください。</p><p class=\"mt-4 text-slate-500\">健康情報はパソコンでも見ることができます。（http://www......）</p>",
+  "footnotes": [
+    {
+      "term": "（※1）症状（しょうじょう）",
+      "definition": "病気やけがの状態"
+    },
+    {
+      "term": "（※2）黒目（くろめ）",
+      "definition": "目の黒い部分"
+    },
+    {
+      "term": "（※3）コンタクトレンズ",
+      "definition": "目に直接当てるレンズ"
+    },
+    {
+      "term": "（※4）画面（がめん）",
+      "definition": "テレビやパソコンで、絵や字が出てくるところ"
+    },
+    {
+      "term": "（※5）まばたき",
+      "definition": "瞬間的に目を閉じたり開いたりする動き"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "〜課",
+      "reading": "〜か",
+      "meaning": "section, department"
+    },
+    {
+      "word": "角膜",
+      "reading": "かくまく",
+      "meaning": "cornea"
+    },
+    {
+      "word": "刺激",
+      "reading": "しげき",
+      "meaning": "stimulus"
+    },
+    {
+      "word": "傷がつく",
+      "reading": "きずがつく",
+      "meaning": "to be wounded"
+    },
+    {
+      "word": "皮がむける",
+      "reading": "かわがむける",
+      "meaning": "to strip (skin)"
+    },
+    {
+      "word": "長時間",
+      "reading": "ちょうじかん / ながいじかん",
+      "meaning": "long period of time"
+    },
+    {
+      "word": "作業",
+      "reading": "さぎょう",
+      "meaning": "work"
+    },
+    {
+      "word": "回数",
+      "reading": "かいすう",
+      "meaning": "number of times"
+    },
+    {
+      "word": "涙",
+      "reading": "なみだ",
+      "meaning": "tears"
+    },
+    {
+      "word": "守る",
+      "reading": "まもる",
+      "meaning": "to protect"
+    },
+    {
+      "word": "働き",
+      "reading": "はたらき",
+      "meaning": "action, function"
+    },
+    {
+      "word": "表面",
+      "reading": "ひょうめん",
+      "meaning": "surface"
+    },
+    {
+      "word": "こする",
+      "reading": "こする",
+      "meaning": "to rub"
+    },
+    {
+      "word": "意識する",
+      "reading": "いしきする",
+      "meaning": "to be aware"
+    },
+    {
+      "word": "角",
+      "reading": "かど",
+      "meaning": "corner"
+    },
+    {
+      "word": "はねる",
+      "reading": "はねる",
+      "meaning": "to jump"
+    },
+    {
+      "word": "つめ",
+      "reading": "つめ",
+      "meaning": "nail, claw"
+    },
+    {
+      "word": "まぶしい",
+      "reading": "まぶしい",
+      "meaning": "dazzling, blinding"
+    },
+    {
+      "word": "あふれる",
+      "reading": "あふれる",
+      "meaning": "to overflow"
+    }
+  ],
+  "questions": [
+    {
+      "id": "long-1-q1",
+      "questionNumber": "1",
+      "questionText": "<sub>①</sub>「<ruby>角膜<rt>かくまく</rt></ruby>びらん」と呼ばれる<ruby>症状<rt>しょうじょう</rt></ruby>が多いとあるが、「<ruby>角膜<rt>かくまく</rt></ruby>びらん」が最近増えてきた<ruby>原因<rt>げんいん</rt></ruby>はどれか。",
+      "options": [
+        "コンタクトレンズで<ruby>角膜上皮<rt>かくまくじょうひ</rt></ruby>に<ruby>傷<rt>きず</rt></ruby>がつくことが多いから。",
+        "パソコン作業で目が<ruby>乾燥<rt>かんそう</rt></ruby>し、<ruby>傷<rt>きず</rt></ruby>がつきやすくなるから。",
+        "テレビとパソコンの両方を見ることで、目が<ruby>常<rt>つね</rt></ruby>に<ruby>疲<rt>つか</rt></ruby>れているから。",
+        "パソコン使用者にコンタクトレンズ使用者が多いから。"
+      ],
+      "correct": 2,
+      "correctOption": "パソコン作業で目が<ruby>乾燥<rt>かんそう</rt></ruby>し、<ruby>傷<rt>きず</rt></ruby>がつきやすくなるから。",
+      "explanation": "本文に「パソコンの作業では、長い時間じっと画面を見るので、まばたき（中略）の回数が減ります。まばたきの回数が減ると、目の表面が乾燥し、傷がつきやすくなるのです」とあります。したがって正解は 2 です。"
+    },
+    {
+      "id": "long-1-q2",
+      "questionNumber": "2",
+      "questionText": "テレビを見ている時とパソコンを使っている時の目の動きで、正しいものはどれか。",
+      "options": [
+        "テレビを見ると、まばたきの回数が増える。",
+        "テレビでは、<ruby>画面<rt>がめん</rt></ruby>をじっと見ることが多い。",
+        "パソコンでは、まばたきしないことが多い。",
+        "パソコンでは、まぶたを開くより閉じるほうが多い。"
+      ],
+      "correct": 3,
+      "correctOption": "パソコンでは、まばたきしないことが多い。",
+      "explanation": "本文に「パソコンの作業では、長い時間じっと画面を見るので、まばたき（※5）の回数が減ります」と書かれており、まばたきをしない（回数が少ない）状態になることが述べられています。したがって正解は 3 です。"
+    },
+    {
+      "id": "long-1-q3",
+      "questionNumber": "3",
+      "questionText": "①に入るものは次のどれか。",
+      "options": [
+        "まばたきする",
+        "目を閉じる",
+        "目を開ける",
+        "左右を見る"
+      ],
+      "correct": 1,
+      "correctOption": "まばたきする",
+      "explanation": "パソコンの作業でまばたきの回数が減って目が乾燥することが原因なので、疲れたときに目をこするのではなく「意識してまばたきする」ことが適切です。したがって正解は 1 です。"
+    },
+    {
+      "id": "long-1-q4",
+      "questionNumber": "4",
+      "questionText": "上の文章の内容と<ruby>違<rt>ちが</rt></ruby>うのはどれか。",
+      "options": [
+        "<ruby>角膜上皮<rt>かくまくじょうひ</rt></ruby>がむけると、「<ruby>角膜<rt>かくまく</rt></ruby>びらん」が起きる。",
+        "紙の角が目に入っても、「<ruby>角膜<rt>かくまく</rt></ruby>びらん」は起きる。",
+        "目が<ruby>疲<rt>つか</rt></ruby>れるだけでは、「<ruby>角膜<rt>かくまく</rt></ruby>びらん」は起きない。",
+        "まばたきしていれば、「<ruby>角膜<rt>かくまく</rt></ruby>びらん」は起きない。"
+      ],
+      "correct": 4,
+      "correctOption": "まばたきしていれば、「<ruby>角膜<rt>かくまく</rt></ruby>びらん」は起きない。",
+      "explanation": "本文第3段落に「疲れが原因ではなく、紙の角が目に入った、庭の木の枝がはねて目に入った、赤ちゃんのつめが目に当たった、などでも起きます」とあるため、まばたきをしていても外的刺激やケガで発症します。したがって 4 が本文と違っており、正解です。"
+    }
+  ]
+}

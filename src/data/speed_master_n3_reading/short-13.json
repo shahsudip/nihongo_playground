@@ -1,0 +1,59 @@
+{
+  "id": "short-13",
+  "chapterId": "short-13",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 13,
+  "targetMinutes": 3,
+  "title": "問題 13（短文）",
+  "instruction": "問題13 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0038.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"speed-master-letter-card\"><div class=\"text-center font-bold text-lg mb-4 text-[var(--sm-text-primary)]\">お客様へ</div><div class=\"speed-master-letter-body\"><p>この機械で使用している電池は、リサイクル（※1）が可能です。使い終わった電池は捨てずに、お住まいの区・市・町・村の<ruby>回収<rt>かいしゅう</rt></ruby>（※2）方法にしたがってリサイクルに回してください。</p><p class=\"mt-3\">なお、<ruby>当社<rt>とうしゃ</rt></ruby>（※3）でも回収してリサイクルをするサービスを行っております。リサイクル方法がわからない方は、<ruby>当社<rt>とうしゃ</rt></ruby>の電池<ruby>回収係<rt>かいしゅうがか</rt></ruby>りまで<ruby>使用済<rt>しようず</rt></ruby>み電池をお送りください。ただし、送料はお客様のご<ruby>負担<rt>ふたん</rt></ruby>になります。</p></div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）リサイクル",
+      "definition": "いらなくなったものをもう一度使うこと"
+    },
+    {
+      "term": "（※2）<ruby>回収<rt>かいしゅう</rt></ruby>",
+      "definition": "集めること"
+    },
+    {
+      "term": "（※3）<ruby>当社<rt>とうしゃ</rt></ruby>",
+      "definition": "私たちの会社"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "使用済み",
+      "reading": "しようずみ",
+      "meaning": "used"
+    },
+    {
+      "word": "送料",
+      "reading": "そうりょう",
+      "meaning": "shipping cost"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-13-q1",
+      "questionNumber": "1",
+      "questionText": "この機械の電池について、正しいのはどれか。",
+      "options": [
+        "<ruby>使用済<rt>しようず</rt></ruby>み電池は、この会社の電池<ruby>回収係<rt>かいしゅうがか</rt></ruby>りに送ってリサイクルしてもらわなければならない。",
+        "<ruby>使用済<rt>しようず</rt></ruby>み電池は、必ず区や市町村の<ruby>回収<rt>かいしゅう</rt></ruby>方法にしたがってリサイクルしなければならない。",
+        "この会社では、<ruby>使用済<rt>しようず</rt></ruby>み電池のリサイクルのサービスは行っていない。",
+        "送料を<ruby>負担<rt>ふたん</rt></ruby>すれば、この会社でも<ruby>使用済<rt>しようず</rt></ruby>み電池のリサイクルをしてくれる。"
+      ],
+      "correct": 4,
+      "correctOption": "送料を<ruby>負担<rt>ふたん</rt></ruby>すれば、この会社でも<ruby>使用済<rt>しようず</rt></ruby>み電池のリサイクルをしてくれる。",
+      "explanation": "本文に「なお、当社でも回収してリサイクルをするサービスを行っております。……ただし、送料はお客様のご負担になります」とあるため、送料を負担すれば会社でも使用済み電池をリサイクルしてくれることがわかります。したがって正解は 4 です。"
+    }
+  ]
+}

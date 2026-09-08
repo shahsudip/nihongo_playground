@@ -1,0 +1,108 @@
+{
+  "id": "medium-2",
+  "chapterId": "medium-2",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（中文）",
+  "sectionEn": "Medium Passages",
+  "mondaiNumber": 2,
+  "targetMinutes": 7,
+  "title": "問題 2（中文）",
+  "instruction": "問題2 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0047.jpg",
+  "passageLayout": "html",
+  "footnotesDiagram": "/speed_master_n3_pages/mondai_medium_2_zaru_diagram.png",
+  "passageText": "<p>土で作ったなべ「<ruby>土<rt>ど</rt></ruby>なべ」でご飯を<ruby>炊<rt>た</rt></ruby>く方法を紹介しましょう。<ruby>土<rt>ど</rt></ruby>なべで<ruby>炊<rt>た</rt></ruby>くと、<ruby>電気釜<rt>でんきがま</rt></ruby>よりずっとおいしいごはんができます。</p><p>まず、米2<ruby>合<rt>ごう</rt></ruby><sup>（※1）</sup>を洗い、ざる<sup>（※2）</sup>に入れて、水が切れる<sup>（※3）</sup>まで30分待ちます。それから、<ruby>土<rt>ど</rt></ruby>なべに米を入れ、水を400cc加えます。<ruby>平<rt>たい</rt></ruby>らなふたを先に置き、それから大きいふたをして、そのまま置いておきます。20分たったらガスに火をつけます。火は普通の強さにして、15分たったら、白い<ruby>湯気<rt>ゆげ</rt></ruby>が出ているのを確認して、火を止めます。そして、そのまま置いておきましょう。20分後にできあがりです。途中でふたを開けて中を見てはいけません。できあがったら、ほかの入れ物に移しましょう。</p><p>柔らかいご飯がいい場合は、少しだけ水の量を増やしてください。ただし、時間は決められたとおりにしてください。</p>",
+  "footnotes": [
+    {
+      "term": "（※1）合",
+      "definition": "米や酒を計る単位、1合＝180cc"
+    },
+    {
+      "term": "（※2）ざる",
+      "definition": "あみのように、全体に小さな穴がたくさんある入れ物"
+    },
+    {
+      "term": "（※3）水が切れる",
+      "definition": "水でぬれている物の水分がなくなること"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "炊く",
+      "reading": "たく",
+      "meaning": "to cook (rice)"
+    },
+    {
+      "word": "電気釜",
+      "reading": "でんきがま",
+      "meaning": "electric rice cooker"
+    },
+    {
+      "word": "ふた",
+      "reading": "ふた",
+      "meaning": "lid, cover"
+    },
+    {
+      "word": "湯気",
+      "reading": "ゆげ",
+      "meaning": "steam, vapor"
+    },
+    {
+      "word": "できあがり",
+      "reading": "できあがり",
+      "meaning": "completion, being finished"
+    },
+    {
+      "word": "硬さ",
+      "reading": "かたさ",
+      "meaning": "hardness, firmness"
+    }
+  ],
+  "questions": [
+    {
+      "id": "medium-2-q1",
+      "questionNumber": "1",
+      "questionText": "ご飯を<ruby>炊<rt>た</rt></ruby>く時の「水」について、正しいものはどれか。",
+      "options": [
+        "水の量は、米の量の約2倍。",
+        "米を洗ったあと、水を切らなければいけない。",
+        "米を水の中に入れておくときは、ふたをしない。",
+        "水の量とご飯の<ruby>硬<rt>かた</rt></ruby>さは関係ない。"
+      ],
+      "correct": 2,
+      "correctOption": "米を洗ったあと、水を切らなければいけない。",
+      "explanation": "本文第2段落に「まず、米2合を洗い、ざるに入れて、水が切れるまで30分待ちます」と書かれているため、米を洗ったあとに水を切る必要があります。米2合（360cc）に対して水は400ccなので2倍ではなく（1は誤り）、水につけるときもふたを置く指示があり（3は誤り）、水の量でご飯の硬さを調節できるため関係がないとする4も誤りです。したがって正解は 2 です。"
+    },
+    {
+      "id": "medium-2-q2",
+      "questionNumber": "2",
+      "questionText": "ご飯を<ruby>炊<rt>た</rt></ruby>くときの「時間」について、正しいものはどれか。",
+      "options": [
+        "<ruby>土<rt>ど</rt></ruby>なべに米を入れてから、約1時間くらいでご飯ができる。",
+        "<ruby>土<rt>ど</rt></ruby>なべに米を入れ、水を加えたら、すぐ<ruby>炊<rt>た</rt></ruby>いたほうがいい。",
+        "火の強さを変えれば、<ruby>炊<rt>た</rt></ruby>く時間を長くしたり短くしたりできる。",
+        "長く<ruby>炊<rt>た</rt></ruby>きすぎると、白いけむりが出てくる。"
+      ],
+      "correct": 1,
+      "correctOption": "<ruby>土<rt>ど</rt></ruby>なべに米を入れてから、約1時間くらいでご飯ができる。",
+      "explanation": "土なべに米と水を入れてから「置いておく（20分）」＋「火にかける（15分）」＋「火を止めて置いておく（20分）」で合計55分（約1時間）かかります。水を入れたあと20分置く必要があるため2は誤り、時間は決められたとおりにするよう指示があるため3も誤り、白い煙ではなく「白い湯気」が出るとあるため4も誤りです。したがって正解は 1 です。"
+    },
+    {
+      "id": "medium-2-q3",
+      "questionNumber": "3",
+      "questionText": "上の内容と<u>合わないの</u>はどれか。",
+      "options": [
+        "火は普通の強さにする。",
+        "ごはんは<ruby>電気釜<rt>でんきがま</rt></ruby>で<ruby>炊<rt>た</rt></ruby>くより<ruby>土<rt>ど</rt></ruby>なべで<ruby>炊<rt>た</rt></ruby>くほうがずっとおいしい。",
+        "できあがったご飯を、<ruby>土<rt>ど</rt></ruby>なべに入れたままにしてはいけない。",
+        "火を止めたら、ときどき混ぜながら、ふたをして20分置く。"
+      ],
+      "correct": 4,
+      "correctOption": "火を止めたら、ときどき混ぜながら、ふたをして20分置く。",
+      "explanation": "本文に「そのまま置いておきましょう。20分後にできあがりです。途中でふたを開けて中を見てはいけません」と書かれており、火を止めたあとはふたを開けずにそのまま置く必要があります。途中で混ぜることはしないため、4が本文の内容と合いません。したがって正解は 4 です。"
+    }
+  ]
+}

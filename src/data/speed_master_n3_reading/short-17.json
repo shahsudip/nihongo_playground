@@ -1,0 +1,59 @@
+{
+  "id": "short-17",
+  "chapterId": "short-17",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 17,
+  "targetMinutes": 3,
+  "title": "問題 17（短文）",
+  "instruction": "問題17 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0042.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"speed-master-letter-card\"><div class=\"speed-master-letter-recipient\">山田マリ先生</div><div class=\"speed-master-letter-body\"><p>お借りしていた先生のご本のことで、先生からお手紙をいただき、はじめてお返ししていないことに気づきました。本当に申し訳ありませんでした。</p><p>先生のご本は、汚さないように<ruby>本棚<rt>ほんだな</rt></ruby>に置いていたのですが、見つかりませんでした。調べたところ、お借りした本は<ruby>絶版<rt>ぜっぱん</rt></ruby>（※1）ではないことがわかりましたので、必ず同じものを送らせていただきます。勝手なお願いで<ruby>誠<rt>まこと</rt></ruby>に（※2）<ruby>恐縮<rt>きょうしゅく</rt></ruby>（※3）ですが、今しばらくお待ちください。</p><p class=\"mt-4 pl-4\">まずは、お<ruby>詫<rt>わ</rt></ruby>びまで。</p></div><div class=\"flex justify-between items-end mt-6 pt-4 text-base font-bold\"><span>2015年6月10日</span><span>田中一郎</span></div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）<ruby>絶版<rt>ぜっぱん</rt></ruby>",
+      "definition": "その本を<ruby>印刷<rt>いんさつ</rt></ruby>して<ruby>出版<rt>しゅっぱん</rt></ruby>するのをやめること"
+    },
+    {
+      "term": "（※2）<ruby>誠<rt>まこと</rt></ruby>に",
+      "definition": "<ruby>本当<rt>ほんとう</rt></ruby>に"
+    },
+    {
+      "term": "（※3）<ruby>恐縮<rt>きょうしゅく</rt></ruby>",
+      "definition": "<ruby>尊敬<rt>そんけい</rt></ruby>すべき人を前にしたり、申し訳なく思ったりして、体が<ruby>縮<rt>ちぢ</rt></ruby>む思いをすること"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "お詫びする",
+      "reading": "おわびする",
+      "meaning": "to apologize"
+    },
+    {
+      "word": "勝手な",
+      "reading": "かってな",
+      "meaning": "arbitrary, selfish"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-17-q1",
+      "questionNumber": "1",
+      "questionText": "この手紙では、先生に対して、特に何を<ruby>謝<rt>あやま</rt></ruby>っているのか。",
+      "options": [
+        "先生から借りた本を返すのが遅くなってしまったこと",
+        "先生から借りた本を返すのを忘れていたこと",
+        "先生から借りた本をなくしてしまったこと",
+        "先生から借りた本と同じ本を買って送ること"
+      ],
+      "correct": 3,
+      "correctOption": "先生から借りた本をなくしてしまったこと",
+      "explanation": "筆者（田中一郎）は、山田マリ先生から借りていた本を「本棚に置いていたのですが、見つかりませんでした」と紛失してしまい（なくしてしまい）、絶版ではないため同じ本を購入して送ると説明し、本をなくしてしまったことについて謝罪（お詫び）しています。したがって正解は 3 です。"
+    }
+  ]
+}

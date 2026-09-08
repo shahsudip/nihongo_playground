@@ -1,0 +1,57 @@
+{
+  "id": "short-14",
+  "chapterId": "short-14",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 14,
+  "targetMinutes": 3,
+  "title": "問題 14（短文）",
+  "instruction": "問題14 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0039.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"p-4 border border-slate-300 rounded-lg bg-slate-50 font-sans\"><div class=\"border-b border-slate-300 pb-2 mb-3 text-sm text-slate-700 flex justify-between items-start\"><div><div>差出人：○○○○</div><div>宛先：○○○○</div><div>CC：</div><div>件名：○○○○○○○○</div></div><div class=\"border border-slate-400 rounded px-2 py-0.5 text-xs text-slate-600 bg-white\">↩ 返信</div></div><p class=\"mb-3\">西村みゆき様</p><p><ruby>桜<rt>さくら</rt></ruby>の<ruby>季節<rt>きせつ</rt></ruby>もそろそろ終わりに近づいておりますが、この時期は、一年で春と秋、二度しか味わえない「さくらえび」<sup>（※1）</sup>が取れ始める時期でもあります。今は天気の良い日を選んで海へ出ていますが、昨年同様、おいしいさくらえびをたくさん、皆様にお届けできそうです。</p><p class=\"mt-2\">この期間だけ<ruby>生<rt>なま</rt></ruby>のさくらえびをご注文いただけます（冷凍で送ります）ので、今年もぜひ、この春の味をお楽しみください。</p><p class=\"mt-2 text-sm\">※ご注文のつぎの日の発送になります。</p><div class=\"mt-4 pt-3 border-t border-slate-200\">魚のするが屋（電話0120-○○○：受付は9：00～17：00）</div></div>",
+  "footnotesDiagram": "/speed_master_n3_pages/mondai_14_shrimp_diagram.png",
+  "footnotes": [
+    {
+      "term": "（※1）さくらえび",
+      "definition": "桜の花のような色で、形が小さいえびの名前"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "同様",
+      "reading": "どうよう",
+      "meaning": "similar, same as"
+    },
+    {
+      "word": "冷凍",
+      "reading": "れいとう",
+      "meaning": "frozen, refrigeration"
+    },
+    {
+      "word": "発送",
+      "reading": "はっそう",
+      "meaning": "shipping, sending"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-14-q1",
+      "questionNumber": "1",
+      "questionText": "「魚のするが屋」について、文章の内容と合っているのはどれか。",
+      "options": [
+        "去年、西村さんにさくらえびを売った。",
+        "天気が悪くても、さくらえびをとっている。",
+        "ここに電話すれば、いつでも生のさくらえびが注文できる。",
+        "今、さくらえびを注文をすると、その日に送ってくれる。"
+      ],
+      "correct": 1,
+      "correctOption": "去年、西村さんにさくらえびを売った。",
+      "explanation": "本文に「昨年同様、おいしいさくらえびをたくさん、皆様にお届けできそうです」「今年もぜひ、この春の味をお楽しみください」とあることから、去年も西村さんにさくらえびを売った（届けた）ことがわかります。したがって正解は 1 です。"
+    }
+  ]
+}

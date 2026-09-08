@@ -1,0 +1,166 @@
+{
+  "id": "medium-4",
+  "chapterId": "medium-4",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（中文）",
+  "sectionEn": "Medium Passages",
+  "mondaiNumber": 4,
+  "targetMinutes": 7,
+  "title": "問題 4（中文）",
+  "instruction": "問題4 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0049.jpg",
+  "passageLayout": "html",
+  "passageText": "<p><ruby>地球温暖化<rt>ちきゅうおんだんか</rt></ruby><ruby>対策<rt>たいさく</rt></ruby>への人々の<ruby>関心<rt>かんしん</rt></ruby>は、少しずつではあるが<ruby>確実<rt>かくじつ</rt></ruby>に<ruby>高<rt>たか</rt></ruby>まっており、<ruby>普段<rt>ふだん</rt></ruby>の生活の中でも、さまざまな<ruby>実践<rt>じっせん</rt></ruby>がなされるようになった。<ruby>具体的<rt>ぐたいてき</rt></ruby>にどのようなことが行われているか、最近の調査で<ruby>上位<rt>じょうい</rt></ruby>にランクされたのは、「水道の水を出したままにしない」「エアコンの温度を弱めにする」「買い物の<ruby>際<rt>さい</rt></ruby>にエコバッグを持っていく」などがある。これらは確かに、<span class=\"speed-master-box-blank\">①&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>。そのほか、「<ruby>風呂<rt>ふろ</rt></ruby>の<ruby>残<rt>のこ</rt></ruby>り<ruby>湯<rt>ゆ</rt></ruby>を<ruby>洗濯<rt>せんたく</rt></ruby>に使う」「<ruby>省エネ<rt>しょうエネ</rt></ruby><sup>（※1）</sup>の電気製品を使う」「車に乗らないで、自転車や<ruby>公共<rt>こうきょう</rt></ruby><ruby>交通機関<rt>こうつうきかん</rt></ruby>を利用する」「生活で出るごみを減らす」など、<ruby>問題意識<rt>もんだいいしき</rt></ruby>を強く持った<ruby>行動<rt>こうどう</rt></ruby>も見られ、<ruby>温暖化対策<rt>おんだんかたいさく</rt></ruby>が少しずつ生活に<ruby>定着<rt>ていちゃく</rt></ruby>していることがうかがえる。さらに、「<ruby>太陽光発電装置<rt>たいようこうはつでんそうち</rt></ruby><sup>（※2）</sup>を付ける」というような<ruby>対策<rt>たいさく</rt></ruby>も、最近では行われているようである。それにはかなりの費用もかかるため、<ruby>地方自治体<rt>ちほうじちたい</rt></ruby><sup>（※3）</sup>からの<ruby>補助<rt>ほじょ</rt></ruby><sup>（※4）</sup>の額を増やしてほしいという声も出ている。</p>",
+  "footnotes": [
+    {
+      "term": "（※1）省エネ",
+      "definition": "エネルギーをなるべく使わないようにすること"
+    },
+    {
+      "term": "（※2）装置",
+      "definition": "<ruby>機械<rt>きかい</rt></ruby>やしくみ"
+    },
+    {
+      "term": "（※3）地方自治体",
+      "definition": "都道府県、市町村、特別区のこと"
+    },
+    {
+      "term": "（※4）補助",
+      "definition": "足りないところを足すなどして、助けること"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "地球温暖化",
+      "reading": "ちきゅうおんだんか",
+      "meaning": "global warming"
+    },
+    {
+      "word": "対策",
+      "reading": "たいさく",
+      "meaning": "measures, countermeasure"
+    },
+    {
+      "word": "関心",
+      "reading": "かんしん",
+      "meaning": "concern, interest"
+    },
+    {
+      "word": "確実に",
+      "reading": "かくじつに",
+      "meaning": "for certain, absolutely"
+    },
+    {
+      "word": "高まる",
+      "reading": "たかまる",
+      "meaning": "to rise, increase"
+    },
+    {
+      "word": "普段",
+      "reading": "ふだん",
+      "meaning": "ordinary times, usual"
+    },
+    {
+      "word": "具体的に",
+      "reading": "ぐたいてきに",
+      "meaning": "specifically, concretely"
+    },
+    {
+      "word": "上位",
+      "reading": "じょうい",
+      "meaning": "upper level, top ranking"
+    },
+    {
+      "word": "ランク",
+      "reading": "ランク",
+      "meaning": "rank, ranking"
+    },
+    {
+      "word": "際",
+      "reading": "さい",
+      "meaning": "when, at the time of"
+    },
+    {
+      "word": "残り湯",
+      "reading": "のこりゆ",
+      "meaning": "remaining hot bath water"
+    },
+    {
+      "word": "公共",
+      "reading": "こうきょう",
+      "meaning": "public"
+    },
+    {
+      "word": "交通機関",
+      "reading": "こうつうきかん",
+      "meaning": "transportation facilities"
+    },
+    {
+      "word": "問題意識",
+      "reading": "もんだいいしき",
+      "meaning": "awareness of the issues"
+    },
+    {
+      "word": "行動",
+      "reading": "こうどう",
+      "meaning": "action, behavior"
+    },
+    {
+      "word": "定着する",
+      "reading": "ていちゃくする",
+      "meaning": "to take hold, establish"
+    },
+    {
+      "word": "太陽光",
+      "reading": "たいようこう",
+      "meaning": "sunlight"
+    }
+  ],
+  "questions": [
+    {
+      "id": "medium-4-q1",
+      "questionNumber": "1",
+      "questionText": "<ruby>地球温暖化対策<rt>ちきゅうおんだんかたいさく</rt></ruby>の方法で、特に多いのはどれか。",
+      "options": [
+        "<ruby>省エネ<rt>しょうエネ</rt></ruby>タイプの電気製品を使う。",
+        "買い物のときに自分の袋を利用する。",
+        "<ruby>公共交通機関<rt>こうきょうこうつうきかん</rt></ruby>を利用する。",
+        "電気製品を使わないときはコンセントをぬく。"
+      ],
+      "correct": 2,
+      "correctOption": "買い物のときに自分の袋を利用する。",
+      "explanation": "本文第1段落に「最近の調査で上位にランクされたのは、『水道の水を出したままにしない』『エアコンの温度を弱めにする』『買い物の際にエコバッグを持っていく』などがある」と書かれています。エコバッグを持っていくことは「自分の袋を利用する」ことなので、2が正解です。"
+    },
+    {
+      "id": "medium-4-q2",
+      "questionNumber": "2",
+      "questionText": "<u>①</u>に入る最もよいものはどれか。",
+      "options": [
+        "日々の生活で<ruby>対策<rt>たいさく</rt></ruby>を行なっているという回答は、ほとんどなかった",
+        "日々の生活でちょっと気をつければできることなのである",
+        "日々の生活では<ruby>対策<rt>たいさく</rt></ruby>をまったく行なっていないことがわかった",
+        "日々の生活で<ruby>対策<rt>たいさく</rt></ruby>をすることに関心がないことがうかがえた"
+      ],
+      "correct": 2,
+      "correctOption": "日々の生活でちょっと気をつければできることなのである",
+      "explanation": "直前に挙げられている「水を止める」「エアコン温度を弱める」「エコバッグを持つ」という上位の対策は、だれでも普段の生活で少し注意すれば実践できることです。その後の「そのほか、（より問題意識を強く持った行動も見られ）」と続く文脈からも、「日々の生活でちょっと気をつければできることなのである」が最も適しています。したがって正解は 2 です。"
+    },
+    {
+      "id": "medium-4-q3",
+      "questionNumber": "3",
+      "questionText": "<ruby>地球温暖化対策<rt>ちきゅうおんだんかたいさく</rt></ruby>の今の状況と合うものはどれか。",
+      "options": [
+        "一人ひとりの<ruby>対策<rt>たいさく</rt></ruby>が、生活に<ruby>定着<rt>ていちゃく</rt></ruby>し始めている。",
+        "一人ひとりの<ruby>対策<rt>たいさく</rt></ruby>の意識は、まだとても低い。",
+        "一人ひとりの<ruby>対策<rt>たいさく</rt></ruby>に、<ruby>補助金<rt>ほじょきん</rt></ruby>がたくさん出ている。",
+        "一人ひとりの<ruby>対策<rt>たいさく</rt></ruby>の状態は、まったくわからない。"
+      ],
+      "correct": 1,
+      "correctOption": "一人ひとりの<ruby>対策<rt>たいさく</rt></ruby>が、生活に<ruby>定着<rt>ていちゃく</rt></ruby>し始めている。",
+      "explanation": "本文に「人々の関心は、少しずつではあるが確実に高まっており」「温暖化対策が少しずつ生活に定着していることがうかがえる」と書かれており、一人ひとりの対策が生活に定着し始めていることが述べられています。したがって正解は 1 です。"
+    }
+  ]
+}

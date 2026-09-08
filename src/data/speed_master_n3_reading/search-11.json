@@ -1,0 +1,65 @@
+{
+  "id": "search-11",
+  "chapterId": "search-11",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "情報検索",
+  "sectionEn": "Information Retrieval",
+  "mondaiNumber": 11,
+  "targetMinutes": 8,
+  "title": "問題 11（情報検索）",
+  "instruction": "問題11 つぎは、コンビニの<ruby>広告<rt>こうこく</rt></ruby>チラシである。下の<ruby>質問<rt>しつもん</rt></ruby>に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0111.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"speed-master-flyer-card\"><img src=\"/speed_master_n3_pages/mondai_search_11_flyer_hd.png\" alt=\"コンビニのお弁当 夏の感謝セール！ チラシ\" class=\"speed-master-flyer-img\" /></div>",
+  "footnotes": [],
+  "vocabulary": [
+    {
+      "word": "広告",
+      "reading": "こうこく",
+      "meaning": "advertisement, flyer"
+    },
+    {
+      "word": "感謝",
+      "reading": "かんしゃ",
+      "meaning": "thanks, gratitude"
+    },
+    {
+      "word": "くじ",
+      "reading": "くじ",
+      "meaning": "lottery, raffle, draw"
+    }
+  ],
+  "questions": [
+    {
+      "id": "search-11-q1",
+      "questionNumber": "1",
+      "questionText": "つぎの会話の（　）に入るものはどれか。<br><br>A：コンビニ行くけど……。<br>B：じゃ、350円の<ruby>弁当<rt>べんとう</rt></ruby>買ってきて。<br>A：わかった。ぼくも同じ<ruby>弁当<rt>べんとう</rt></ruby>にするから、今だと（　）だね。",
+      "options": [
+        "500円",
+        "600円",
+        "700円",
+        "800円"
+      ],
+      "correct": 2,
+      "correctOption": "600円",
+      "explanation": "350円のお弁当を2つ買うと定価は 350 × 2 ＝ 700円 です。セール期間中は「弁当を2つ買うごとに100円割引」となるため、700 - 100 ＝ 600円 になります。したがって正解は 2 です。"
+    },
+    {
+      "id": "search-11-q2",
+      "questionNumber": "2",
+      "questionText": "正しいことを言っているのはだれか。",
+      "options": [
+        "まさお：500円の<ruby>弁当<rt>べんとう</rt></ruby>を２つ買って、スピードくじでコーヒーをもらった。",
+        "よしお：<ruby>弁当<rt>べんとう</rt></ruby>を３つ買ったら、150円引いてくれたので、ジュースを買った。",
+        "こうじ：友だちと４人で１つずつ<ruby>弁当<rt>べんとう</rt></ruby>を買ったら、１人50円安くなった。",
+        "たろう：お弁当と雑誌を買ってスピードくじをひいたら、お茶が当たった。"
+      ],
+      "correct": 3,
+      "correctOption": "こうじ：友だちと４人で１つずつ<ruby>弁当<rt>べんとう</rt></ruby>を買ったら、１人50円安くなった。",
+      "explanation": "各選択肢を検証します。\n1：500円の弁当を2つ買うと1,000円ですが、2つで100円引きとなり支払い額は900円になるため、「1,000円ごと」のスピードくじは引けません。\n2：割引は「2つごとに100円引」なので、3個買っても100円引です（150円引ではありません）。\n3：4人で4個買うと合計200円割引となり、1人あたり 200 ÷ 4 ＝ 50円 安くなります。正しい記述です。\n4：くじで当たるのは「缶コーヒー」であり、「お茶」ではありません。\nしたがって正解は 3 です。"
+    }
+  ]
+}

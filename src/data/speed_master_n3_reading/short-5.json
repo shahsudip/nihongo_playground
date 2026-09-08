@@ -1,0 +1,55 @@
+{
+  "id": "short-5",
+  "chapterId": "short-5",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 5,
+  "targetMinutes": 3,
+  "title": "問題 5（短文）",
+  "instruction": "問題5 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0030.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"p-4 border border-slate-300 rounded-lg bg-slate-50\"><p class=\"text-center text-slate-400 mb-2 font-mono\">・・・・</p><p>商品のご注文は、ハガキまたは電話でお願いいたします。商品は<ruby>宅配<rt>たくはい</rt></ruby><sup>（※1）</sup>便でお送りいたしますので、商品をお受け取りになるときに代金をお支払いください。代金は、商品の値段にそれぞれの地域までの送料と<ruby>手数料<rt>てすうりょう</rt></ruby><sup>（※2）</sup>525円を加えた金額になります。なお、お買い上げの商品が合計で1万5000円以上になる場合は、送料と<ruby>手数料<rt>てすうりょう</rt></ruby>は無料となります。</p></div>",
+  "footnotes": [
+    {
+      "term": "（※1）<ruby>宅配<rt>たくはい</rt></ruby>",
+      "definition": "配達をするサービス"
+    },
+    {
+      "term": "（※2）<ruby>手数料<rt>てすうりょう</rt></ruby>",
+      "definition": "だれかのために何かをしたときに、その<ruby>手間<rt>てま</rt></ruby>に対して払われるお金"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "地域",
+      "reading": "ちいき",
+      "meaning": "region, area"
+    },
+    {
+      "word": "現金書留",
+      "reading": "げんきんかきとめ",
+      "meaning": "registered cash mail"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-5-q1",
+      "questionNumber": "1",
+      "questionText": "この文の内容について、正しいのはどれか。",
+      "options": [
+        "商品の注文は、電話のほかに、ハガキやメールでもできる。",
+        "商品の代金は、銀行から送るか、郵便局から<ruby>現金書留<rt>げんきんかきとめ</rt></ruby>で送る。",
+        "送料と<ruby>手数料<rt>てすうりょう</rt></ruby>が無料になるのは、注文が1万5000円以上のときである。",
+        "商品を受け取るときに支払う金額は、商品の値段と送料である。"
+      ],
+      "correct": 3,
+      "correctOption": "送料と<ruby>手数料<rt>てすうりょう</rt></ruby>が無料になるのは、注文が1万5000円以上のときである。",
+      "explanation": "本文の最後に「なお、お買い上げの商品が合計で1万5000円以上になる場合は、送料と手数料は無料となります」と明記されているため、正解は 3 です。"
+    }
+  ]
+}

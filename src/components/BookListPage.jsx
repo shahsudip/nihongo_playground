@@ -1,10 +1,11 @@
 // src/components/BookListPage.jsx
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
-import { collection, getDocs, doc, setDoc, onSnapshot, getCountFromServer } from 'firebase/firestore';
+import { collection, getDocs } from 'firebase/firestore';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
+import { STATIC_BOOKS } from '../data/static_books_catalog.js';
 
 import coverN1 from '../assets/shin_cover_n1.jpg';
 import coverN2 from '../assets/shin_cover_n2.jpg';
@@ -20,9 +21,9 @@ import tangoN3Cover from '../assets/tango_n3_cover.jpg';
 
 const BookListPage = () => {
   const { currentUser } = useAuth();
-  const [books, setBooks] = useState([]);
+  const [books, setBooks] = useState(STATIC_BOOKS);
   const [history, setHistory] = useState({});
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   // Cover gradient mapping based on book level/index to look premium
@@ -35,102 +36,26 @@ const BookListPage = () => {
     'linear-gradient(135deg, #b8860b 0%, #c0392b 50%, #8b0000 100%)', // Gold/Crimson (N1)
   ];
 
-  const fetchBooksAndProgress = useCallback(() => {
-    setLoading(true);
-    setError(null);
-
-    const allowedBooks = [
-      'shin-nihongo-500-n1',
-      'shin-nihongo-500-n2',
-      'shin-nihongo-500-n3',
-      'shin-nihongo-500-n4-n5',
-      'shinkanzen-master-n3-reading',
-      'shinkanzen-master-n3-listening',
-      'sou-matome-n3-reading',
-      'nihongo-power-drill-n1',
-      'nihongo-power-drill-n2',
-      'nihongo-power-drill-n3',
-      'tango_n1',
-      'tango_n2',
-      'tango_n3'
-    ];
-
-    const levelOrder = {
-      'shin-nihongo-500-n1': 1,
-      'shin-nihongo-500-n2': 2,
-      'shin-nihongo-500-n3': 3,
-      'shin-nihongo-500-n4-n5': 4,
-      'shinkanzen-master-n3-reading': 5,
-      'shinkanzen-master-n3-listening': 5.2,
-      'sou-matome-n3-reading': 5.5,
-      'nihongo-power-drill-n1': 6,
-      'nihongo-power-drill-n2': 7,
-      'nihongo-power-drill-n3': 8,
-      'tango_n1': 9,
-      'tango_n2': 10,
-      'tango_n3': 11
-    };
-
-    // 1. Listen to books collection
-    const booksColRef = collection(db, 'books');
-    const unsubBooks = onSnapshot(booksColRef, async (booksSnap) => {
-      let fetchedBooks = [];
-      booksSnap.forEach(docSnap => {
-        if (allowedBooks.includes(docSnap.id)) {
-          fetchedBooks.push({ id: docSnap.id, ...docSnap.data() });
-        }
-      });
-      fetchedBooks.sort((a, b) => (levelOrder[a.id] || 99) - (levelOrder[b.id] || 99));
-
-      // Show books immediately to prevent UI blocking
-      setBooks(fetchedBooks);
-      setLoading(false);
-
-      // Fetch ONLY the count of chapters/topics for each book in the background
-      // This is a pro-level optimization: it completely avoids downloading massive subcollections!
-      const booksWithCounts = await Promise.all(
-        fetchedBooks.map(async (book) => {
-          try {
-            const subColName = (book.id && book.id.startsWith('tango')) ? 'topics' : 'chapters';
-            const chaptersColRef = collection(db, 'books', book.id, subColName);
-            const snapshot = await getCountFromServer(chaptersColRef);
-            return { ...book, totalChapters: snapshot.data().count };
-          } catch (e) {
-            console.error(`Error fetching chapter count for ${book.id}:`, e);
-            return { ...book, totalChapters: 0 };
-          }
-        })
-      );
-
-      // Update state with chapter counts so progress can be calculated
-      setBooks(booksWithCounts);
-    }, (err) => {
-      console.error("Error fetching books:", err);
-      setError(`Failed to load books: ${err.message}`);
-      setLoading(false);
-    });
-
-    // 2. Fetch user history
+  useEffect(() => {
+    // 1. Fetch user history in background asynchronously without blocking UI
     if (currentUser) {
       const historyColRef = collection(db, 'users', currentUser.uid, 'quizHistory');
-      getDocs(historyColRef).then(historySnap => {
-        const userHistory = {};
-        historySnap.forEach(docSnap => {
-          const data = docSnap.data();
-          if (data && data.type === 'book') {
-            userHistory[data.quizId] = data;
-          }
+      getDocs(historyColRef)
+        .then(historySnap => {
+          const userHistory = {};
+          historySnap.forEach(docSnap => {
+            const data = docSnap.data();
+            if (data && data.type === 'book') {
+              userHistory[data.quizId] = data;
+            }
+          });
+          setHistory(userHistory);
+        })
+        .catch(err => {
+          console.warn("Background progress fetch:", err);
         });
-        setHistory(userHistory);
-      });
     }
-
-    return () => unsubBooks();
   }, [currentUser]);
-
-  useEffect(() => {
-    fetchBooksAndProgress();
-  }, [fetchBooksAndProgress]);
 
 
 
@@ -204,6 +129,7 @@ const BookListPage = () => {
             'tango_n1': tangoN1Cover,
             'tango_n2': tangoN2Cover,
             'tango_n3': tangoN3Cover,
+            'speed-master-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/speed_master_n3_pages/speed_master_n3_page-0001.jpg`,
           };
           const coverImg = bookCovers[book.id];
           const levelGradients = {
@@ -212,6 +138,7 @@ const BookListPage = () => {
             'shin-nihongo-500-n3': 'linear-gradient(135deg, #0d9488 0%, #11998e 50%, #38ef7d 100%)',
             'shin-nihongo-500-n4-n5': 'linear-gradient(135deg, #7c3aed 0%, #9333ea 50%, #c084fc 100%)',
             'shinkanzen-master-n3-reading': 'linear-gradient(135deg, #b45309 0%, #d97706 50%, #f59e0b 100%)',
+            'speed-master-n3-reading': 'linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #38bdf8 100%)',
             'sou-matome-n3-reading': 'linear-gradient(135deg, #312e81 0%, #4338ca 50%, #6366f1 100%)',
           };
           const gradient = levelGradients[book.id] || gradients[index % gradients.length];

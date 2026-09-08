@@ -1,0 +1,108 @@
+{
+  "id": "medium-13",
+  "chapterId": "medium-13",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（中文）",
+  "sectionEn": "Medium Passages",
+  "mondaiNumber": 13,
+  "targetMinutes": 7,
+  "title": "問題 13（中文）",
+  "instruction": "問題13 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0060.jpg",
+  "passageText": "<div class=\"speed-master-letter-card mb-6\"><div class=\"speed-master-letter-recipient\">ふじ外国語学校<br><ruby>田中<rt>たなか</rt></ruby>とも子さま</div><div class=\"speed-master-letter-body\"><p>いつもお世話になっております。</p><p>さて、現在ご使用の第一ビル３階の<ruby>使用契約<rt>けいやく</rt></ruby>が９月30日で終わります。つきましては、<ruby>契約継続<rt>けいやくけいぞく</rt></ruby>か<ruby>否<rt>いな</rt></ruby>かのご連絡をいただけませんでしょうか。</p><p>なお、<ruby>継続<rt>けいぞく</rt></ruby>の場合は次のことをご理解いただいて、手続きをお願いいたします。</p><div class=\"pl-4 my-3 space-y-1\"><p>１）<ruby>契約継続<rt>けいやくけいぞく</rt></ruby>の場合は、これまでと同じ５年<ruby>契約<rt>けいやく</rt></ruby>とする。</p><p>２）使用料は、これまでと同じとする。</p><p>３）支払日は、これまでより15日早く、前の月の５日とする。</p></div><p>お返事は３月30日までにお願いいたします。</p></div><div class=\"speed-master-letter-sender\">ABC<ruby>不動産<rt>ふどうさん</rt></ruby><sup>（※1）</sup><br><ruby>山本<rt>やまもと</rt></ruby>　正</div></div><div class=\"speed-master-letter-card\"><div class=\"speed-master-letter-recipient\">ABC<ruby>不動産<rt>ふどうさん</rt></ruby>　<ruby>山本<rt>やまもと</rt></ruby>様</div><div class=\"speed-master-letter-body\"><p>ご連絡ありがとうございました。</p><p><ruby>契約継続<rt>けいやくけいぞく</rt></ruby>は、新たに５年<ruby>延長<rt>えんちょう</rt></ruby>でお願いしたいと思います。ただ、支払日は、これまで通りにしていただけるとありがたいです。</p><p>このことについてご相談したいので、一度こちらにお出でいただけませんでしょうか。</p><p>ご連絡をお待ちしております。</p></div><div class=\"speed-master-letter-sender\">ふじ外国語学校　<ruby>田中<rt>たなか</rt></ruby>とも子</div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）不動産",
+      "definition": "家などを売ったり、買ったり、貸したりする会社"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "契約",
+      "reading": "けいやく",
+      "meaning": "contract"
+    },
+    {
+      "word": "つきましては",
+      "reading": "つきましては",
+      "meaning": "regarding, concerning"
+    },
+    {
+      "word": "継続",
+      "reading": "けいぞく",
+      "meaning": "continuation"
+    },
+    {
+      "word": "〜か否か",
+      "reading": "〜かいなか",
+      "meaning": "whether or not"
+    },
+    {
+      "word": "手続き",
+      "reading": "てつづき",
+      "meaning": "procedure"
+    },
+    {
+      "word": "〜料",
+      "reading": "〜りょう",
+      "meaning": "~ fee"
+    },
+    {
+      "word": "延長",
+      "reading": "えんちょう",
+      "meaning": "extension"
+    },
+    {
+      "word": "期間",
+      "reading": "きかん",
+      "meaning": "period"
+    }
+  ],
+  "questions": [
+    {
+      "id": "medium-13-q1",
+      "questionNumber": "1",
+      "questionText": "<ruby>田中<rt>たなか</rt></ruby>さんと<ruby>山本<rt>やまもと</rt></ruby>さんの関係は次のどれか。",
+      "options": [
+        "田中さんの学校が作られた時、山本さんはお金を貸した。",
+        "田中さんの学校は、山本さんの会社に毎月お金を払っている。",
+        "これから５年間、山本さんは田中さんの学校に使用料を払う。",
+        "田中さんの学校は、一昨年、山本さんの会社から第一ビルを借りた。"
+      ],
+      "correct": 2,
+      "correctOption": "田中さんの学校は、山本さんの会社に毎月お金を払っている。",
+      "explanation": "山本さんの手紙に「現在ご使用の第一ビル３階の使用契約」や「使用料は、これまでと同じとする」とあり、田中さんは不動産会社からビルを借りて使用料を支払っています。したがって正解は 2 です。"
+    },
+    {
+      "id": "medium-13-q2",
+      "questionNumber": "2",
+      "questionText": "<ruby>山本<rt>やまもと</rt></ruby>さんの言うとおりに<ruby>契約<rt>けいやく</rt></ruby>の<ruby>継続<rt>けいぞく</rt></ruby>をしたとき、これまでと違うのはどれか。",
+      "options": [
+        "<ruby>契約期間<rt>けいやくきかん</rt></ruby>",
+        "使用する部屋など",
+        "使用料",
+        "使用料を払う日"
+      ],
+      "correct": 4,
+      "correctOption": "使用料を払う日",
+      "explanation": "山本さんの手紙にある条件のうち、「１）これまでと同じ５年契約」「２）使用料は、これまでと同じ」とあり、期間や使用料は変わりません。「３）支払日は、これまでより15日早く、前の月の５日とする」とあるため、これまでと変わるのは「使用料を払う日」です。したがって正解は 4 です。"
+    },
+    {
+      "id": "medium-13-q3",
+      "questionNumber": "3",
+      "questionText": "<ruby>田中<rt>たなか</rt></ruby>さんは、どうして<ruby>山本<rt>やまもと</rt></ruby>さんに学校に来てほしいのか。",
+      "options": [
+        "ひさしぶりに山本さんに会いたいから。",
+        "これまでの５年の<ruby>契約<rt>けいやく</rt></ruby>のお礼が言いたいから。",
+        "<ruby>契約延長<rt>けいやくえんちょう</rt></ruby>の手続きの方法が知りたいから。",
+        "支払日を前の月の20日にしてほしいから。"
+      ],
+      "correct": 4,
+      "correctOption": "支払日を前の月の20日にしてほしいから。",
+      "explanation": "山本さんは支払日を「これまでより15日早く、前の月の5日」にすることを求めましたが、田中さんは「支払日は、これまで通りにしていただけるとありがたい」「このことについてご相談したいので、一度こちらにお出でいただけませんでしょうか」と書いています。これまでより15日早くて5日ということは、これまでは「前の月の20日」だったため、支払日を前の月の20日にしてほしいと相談するために来てほしいと頼んでいます。したがって正解は 4 です。"
+    }
+  ]
+}

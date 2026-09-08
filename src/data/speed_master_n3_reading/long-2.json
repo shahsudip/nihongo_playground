@@ -1,0 +1,177 @@
+{
+  "id": "long-2",
+  "chapterId": "long-2",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（長文）",
+  "sectionEn": "Long Passages",
+  "mondaiNumber": 2,
+  "targetMinutes": 10,
+  "title": "問題 2（長文）",
+  "instruction": "問題2 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0068.jpg",
+  "footnotesDiagramRight": "/speed_master_n3_pages/mondai_long_2_unagi_diagram.png",
+  "passageLayout": "html",
+  "passageText": "<p><ruby>昨日<rt>きのう</rt></ruby>、<ruby>水産総合<rt>すいさんそうごう</rt></ruby>研究センターがウナギ（※1）の<ruby>完全養殖<rt>かんぜんようしょく</rt></ruby>に<ruby>成功<rt>せいこう</rt></ruby>した、と発表した。<ruby>養殖<rt>ようしょく</rt></ruby>というのは、人工的に育てたり増やしたりすることだが、<ruby>完全養殖<rt>かんぜんようしょく</rt></ruby>というのは、人工的に卵からふ化した（※2）子どもを親になるまで育て、それが生んだ卵をまたふ化させて育てていくという<ruby>循環<rt>じゅんかん</rt></ruby>（※3）を作ることだ。</p><p>日本人はウナギをよく食べるが、ウナギがどこで生まれ、育ち、死ぬのか、長い間<ruby>謎<rt>なぞ</rt></ruby>だった。それが、日本から数千キロ<ruby>離<rt>はな</rt></ruby>れた北太平洋の西部で生まれるということが、大学などの調査で2年前に明らかになった。</p><p>今、私たちが食べているウナギは、数千キロも泳いで日本にやってくるシラスウナギ（ウナギの子ども）を捕まえて、<ruby>養殖<rt>ようしょく</rt></ruby>で育てたものだ。このシラスウナギの量が最近非常に減ってきている。</p><p>スーパーなどでは、海外から輸入した安いウナギもたくさん売られるようになってきたが、日本産のウナギを求める<ruby>消費者<rt>しょうひしゃ</rt></ruby>は多い。ウナギを安定して<ruby>供給<rt>きょうきゅう</rt></ruby>するには、この<ruby>完全養殖<rt>かんぜんようしょく</rt></ruby>が<ruby>絶対的<rt>ぜったいてき</rt></ruby>に必要だと言われていた。</p><p>8年前に、卵からシラスウナギまで育てることには成功していた。それが今回、そのシラスウナギが親になって卵を生み、その卵がふ化して成長しているのだ。これは<u><sub>①</sub>世界初の<ruby>成功<rt>せいこう</rt></ruby></u>である。</p><p><ruby>天然<rt>てんねん</rt></ruby>ウナギが減っている中、天然ウナギに頼らないで、ウナギを再生産できることが示されたということだ。</p><p class=\"text-right text-xs mt-4 text-[var(--sm-text-secondary)]\">（水産総合研究所のホームページを参照 2010年7月<br/>http://www.fra.affrc.go.jp/pressrelease/pr22/2204082/）</p>",
+  "footnotes": [
+    {
+      "term": "（※1）ウナギ",
+      "definition": "魚の名前"
+    },
+    {
+      "term": "（※2）ふ化する",
+      "definition": "魚や鳥などの卵から子どもが出てくること"
+    },
+    {
+      "term": "（※3）循環（じゅんかん）",
+      "definition": "一回りして元に戻ることをくり返すこと"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "水産",
+      "reading": "すいさん",
+      "meaning": "marine products"
+    },
+    {
+      "word": "総合",
+      "reading": "そうごう",
+      "meaning": "integrated, comprehensive"
+    },
+    {
+      "word": "完全",
+      "reading": "かんぜん",
+      "meaning": "complete"
+    },
+    {
+      "word": "養殖",
+      "reading": "ようしょく",
+      "meaning": "cultivation"
+    },
+    {
+      "word": "人工的",
+      "reading": "じんこうてき",
+      "meaning": "manmade, artificial"
+    },
+    {
+      "word": "謎",
+      "reading": "なぞ",
+      "meaning": "enigma, mystery"
+    },
+    {
+      "word": "北太平洋",
+      "reading": "きたたいへいよう",
+      "meaning": "North Pacific"
+    },
+    {
+      "word": "西部",
+      "reading": "せいぶ",
+      "meaning": "western part"
+    },
+    {
+      "word": "調査",
+      "reading": "ちょうさ",
+      "meaning": "survey"
+    },
+    {
+      "word": "捕まえる",
+      "reading": "つかまえる",
+      "meaning": "to catch"
+    },
+    {
+      "word": "安定する",
+      "reading": "あんていする",
+      "meaning": "to become stable"
+    },
+    {
+      "word": "供給する",
+      "reading": "きょうきゅうする",
+      "meaning": "to supply"
+    },
+    {
+      "word": "絶対的に",
+      "reading": "ぜったいてきに",
+      "meaning": "absolutely"
+    },
+    {
+      "word": "天然",
+      "reading": "てんねん",
+      "meaning": "natural"
+    },
+    {
+      "word": "最〜",
+      "reading": "さい〜",
+      "meaning": "most ~"
+    },
+    {
+      "word": "示す",
+      "reading": "しめす",
+      "meaning": "to show, indicate"
+    },
+    {
+      "word": "頼る",
+      "reading": "たよる",
+      "meaning": "to depend on"
+    }
+  ],
+  "questions": [
+    {
+      "id": "long-2-q1",
+      "questionNumber": "1",
+      "questionText": "ウナギの<ruby>完全養殖<rt>かんぜんようしょく</rt></ruby>の説明として正しいのはどれか。",
+      "options": [
+        "シラスウナギと呼ばれるウナギの子どもを人工的に大きく育てる。",
+        "卵から親ウナギに、それが生んだ卵がまた親に育つのを人工的に行う。",
+        "ウナギの卵をとって人工的にふ化させ、それをシラスウナギに育てる。",
+        "卵からシラスウナギにする量を人工的に増やして<ruby>供給<rt>きょうきゅう</rt></ruby>を安定させる。"
+      ],
+      "correct": 2,
+      "correctOption": "卵から親ウナギに、それが生んだ卵がまた親に育つのを人工的に行う。",
+      "explanation": "本文第1段落に「完全養殖というのは、人工的に卵からふ化した子どもを親になるまで育て、それが生んだ卵をまたふ化させて育てていくという循環を作ることだ」と説明されています。したがって正解は 2 です。"
+    },
+    {
+      "id": "long-2-q2",
+      "questionNumber": "2",
+      "questionText": "<u><sub>①</sub>世界初の成功</u>であるとあるが、それはどれか。",
+      "options": [
+        "北太平洋にいた親ウナギから取った卵をシラスウナギまで育てたこと",
+        "北太平洋から日本にやって来た親ウナギが<ruby>生<rt>う</rt></ruby>んだ卵を育てたこと",
+        "卵から育てたウナギに卵を生ませ、それをふ化させ育てること",
+        "<ruby>養殖<rt>ようしょく</rt></ruby>ウナギが増えて、<ruby>天然<rt>てんねん</rt></ruby>ウナギに頼らなくてもよくなったこと"
+      ],
+      "correct": 3,
+      "correctOption": "卵から育てたウナギに卵を生ませ、それをふ化させ育てること",
+      "explanation": "第5段落に「卵からシラスウナギまで育てることには成功していた。それが今回、そのシラスウナギが親になって卵を生み、その卵がふ化して成長しているのだ。これは世界初の成功である」とあります。したがって正解は 3 です。"
+    },
+    {
+      "id": "long-2-q3",
+      "questionNumber": "3",
+      "questionText": "ウナギについて、日本では今後どうなると述べているか。",
+      "options": [
+        "海外の国からの輸入が減って、ウナギの値段が高くなる。",
+        "<ruby>天然<rt>てんねん</rt></ruby>ウナギに頼らなくても、ウナギが食べられるようになる。",
+        "ウナギが生まれる場所に行って、卵から育てるようになる。",
+        "<ruby>天然<rt>てんねん</rt></ruby>のウナギを安定して<ruby>供給<rt>きょうきゅう</rt></ruby>できるようになる。"
+      ],
+      "correct": 2,
+      "correctOption": "<ruby>天然<rt>てんねん</rt></ruby>ウナギに頼らなくても、ウナギが食べられるようになる。",
+      "explanation": "最後の段落に「天然ウナギが減っている中、天然ウナギに頼らないで、ウナギを再生産できることが示されたということだ」とあり、天然物に頼らず養殖によって安定供給できる未来を示しています。したがって正解は 2 です。"
+    },
+    {
+      "id": "long-2-q4",
+      "questionNumber": "4",
+      "questionText": "上の文章の内容と<ruby>違<rt>ちが</rt></ruby>うものはどれか。",
+      "options": [
+        "日本にはウナギが好きな人が多く、ウナギはとてもよく食べられている。",
+        "最近は、海外の国から輸入されたウナギもよく売られている。",
+        "2年前まで<ruby>天然<rt>てんねん</rt></ruby>ウナギが卵を<ruby>生<rt>う</rt></ruby>む場所がはっきりしていなかった。",
+        "今、日本人が食べているウナギの多くは、子どものシラスウナギである。"
+      ],
+      "correct": 4,
+      "correctOption": "今、日本人が食べているウナギの多くは、子どものシラスウナギである。",
+      "explanation": "第3段落に「今、私たちが食べているウナギは、数千キロも泳いで日本にやってくるシラスウナギ（ウナギの子ども）を捕まえて、養殖で育てたものだ」と書かれており、シラスウナギを育てた成魚を食べています。したがって 4 が本文と違っており、正解です。"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "short-7",
+  "chapterId": "short-7",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 7,
+  "targetMinutes": 3,
+  "title": "問題 7（短文）",
+  "instruction": "問題7 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0032.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"p-4 border border-slate-300 rounded-lg bg-slate-50\"><p class=\"text-center text-slate-400 mb-2 font-mono\">:<br>:<br>:</p><p>ご注文の商品が<ruby>壊<rt>こわ</rt></ruby>れていた場合、あるいはご注文とは異なる商品が届いた場合は、商品到着後10日以内に<ruby>当社<rt>とうしゃ</rt></ruby><sup>（※1）</sup>へご<ruby>返品<rt>へんぴん</rt></ruby><sup>（※2）</sup>ください。送料は<ruby>当社<rt>とうしゃ</rt></ruby>が<ruby>負担<rt>ふたん</rt></ruby><sup>（※3）</sup>いたします。お客様のご希望による<ruby>返品<rt>へんぴん</rt></ruby>の場合も、<ruby>同様<rt>どうよう</rt></ruby>に商品到着後10日以内にご<ruby>返品<rt>へんぴん</rt></ruby>ください。この場合、あとで代金はお返しいたしますが、送料はお客様のご負担となります。商品到着後10日を過ぎた場合は、<ruby>返品<rt>へんぴん</rt></ruby>をお受けすることはできません。</p></div>",
+  "footnotes": [
+    {
+      "term": "（※1）<ruby>当社<rt>とうしゃ</rt></ruby>",
+      "definition": "私たちの会社"
+    },
+    {
+      "term": "（※2）<ruby>返品<rt>へんぴん</rt></ruby>",
+      "definition": "商品を買うのをやめて、返すこと"
+    },
+    {
+      "term": "（※3）<ruby>負担<rt>ふたん</rt></ruby>",
+      "definition": "引き受けて、自分の費用や仕事とすること"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "異なる",
+      "reading": "ことなる",
+      "meaning": "to be different, differ"
+    },
+    {
+      "word": "到着",
+      "reading": "とうちゃく",
+      "meaning": "arrival"
+    },
+    {
+      "word": "負担する",
+      "reading": "ふたんする",
+      "meaning": "to bear (cost, responsibility)"
+    },
+    {
+      "word": "希望",
+      "reading": "きぼう",
+      "meaning": "hope, wish, desire"
+    },
+    {
+      "word": "同様に",
+      "reading": "どうように",
+      "meaning": "similarly, likewise"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-7-q1",
+      "questionNumber": "1",
+      "questionText": "この内容について、正しいのはどれか。",
+      "options": [
+        "客が希望して<ruby>返品<rt>へんぴん</rt></ruby>する場合、商品到着後10日以内であれば、送料は払わなくてもいい。",
+        "届いた商品が<ruby>壊<rt>こわ</rt></ruby>れていた場合、商品到着後10日以内の<ruby>返品<rt>へんぴん</rt></ruby>であれば、送料は無料。",
+        "商品が気に入らなかったという理由で<ruby>返品<rt>へんぴん</rt></ruby>することはできない。",
+        "届いた商品が注文したものと異なっていた場合でも、<ruby>返品<rt>へんぴん</rt></ruby>の送料は客が払う。"
+      ],
+      "correct": 2,
+      "correctOption": "届いた商品が<ruby>壊<rt>こわ</rt></ruby>れていた場合、商品到着後10日以内の<ruby>返品<rt>へんぴん</rt></ruby>であれば、送料は無料。",
+      "explanation": "本文に「ご注文の商品が壊れていた場合、あるいはご注文とは異なる商品が届いた場合は、商品到着後10日以内に当社へご返品ください。送料は当社が負担いたします」とあり、不良品の場合は10日以内なら送料当社負担（無料）で返品できるため 2 が正しいです。客の都合による返品は送料が客負担となるため 1 は誤り、客の希望でも返品は可能なので 3 は誤り、誤配送の送料は当社負担なので 4 も誤りです。"
+    }
+  ]
+}

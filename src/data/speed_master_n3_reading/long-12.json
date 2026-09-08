@@ -1,0 +1,128 @@
+{
+  "id": "long-12",
+  "chapterId": "long-12",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（長文）",
+  "sectionEn": "Long Passages",
+  "mondaiNumber": 12,
+  "targetMinutes": 10,
+  "title": "問題 12（長文）",
+  "instruction": "問題12 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "passageText": "<div class=\"speed-master-lined-paper\"><div class=\"speed-master-ruled-row\">2015年６月15日</div><div class=\"speed-master-ruled-row\">山田太郎様</div><div class=\"speed-master-ruled-row empty-row\">&nbsp;</div><div class=\"speed-master-ruled-row\">　お久しぶりです。お元気でいらっしゃることと思います。</div><div class=\"speed-master-ruled-row\">　この一週間、<ruby>田植<rt>たう</rt>え</ruby>でお忙しい時にもかかわらず、家族のようにおつきあいくだ</div><div class=\"speed-master-ruled-row\">さり、毎日<ruby>大変<rt>たいへん</rt></ruby>お世話になりまして、ありがとうございました。</div><div class=\"speed-master-ruled-row\">　生まれてはじめて田植えの経験をし、とてもいい思い出ができました。日本の農</div><div class=\"speed-master-ruled-row\">業についていろいろ教えていただき、①<span class=\"speed-master-box-blank\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>、<ruby>卒業論文<rt>ろんぶん</rt></ruby>のテーマ</div><div class=\"speed-master-ruled-row\">を決めることができました。その上、毎日の<ruby>皆様<rt>みなさま</rt></ruby>との会話で、日本語について少し</div><div class=\"speed-master-ruled-row\">自信がもてるようになりました。<ruby>本当<rt>ほんとう</rt></ruby>にありがとうございました。</div><div class=\"speed-master-ruled-row\">　今日から授業が始まり、一週間ぶりに友人たちと会い、ゴールデンウィーク<sup>(※１)</sup></div><div class=\"speed-master-ruled-row\">の話をしました。もちろん私は、山田様のお宅でホームステイ<sup>(※２)</sup>させていただ</div><div class=\"speed-master-ruled-row\">いたこと、ご家族の<ruby>皆様<rt>みなさま</rt></ruby>と田植えをしたこと、孫の一郎ちゃんの成長を祈る<ruby>鯉<rt>こい</rt></ruby>のぼ</div><div class=\"speed-master-ruled-row\">り<sup>(※３)</sup>を見ながらかしわ<ruby>餅<rt>もち</rt></ruby><sup>(※４)</sup>を食べたことなど、楽しかった生活を友人たちに</div><div class=\"speed-master-ruled-row\">話しました。国に帰っていた<ruby>後輩<rt>こうはい</rt></ruby>は私の話を聞いてとても②<span class=\"speed-master-box-blank\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>、</div><div class=\"speed-master-ruled-row\">来年は必ずホームステイ希望の手続きをすると言っていました。</div><div class=\"speed-master-ruled-row\">　これから、山田様のお宅で過ごした一週間の経験を役立たせて、卒業論文の完成</div><div class=\"speed-master-ruled-row\">をめざします。</div><div class=\"speed-master-ruled-row\">　田植えのあとで少しお<ruby>疲<rt>つか</rt></ruby>れのことと思います。くれぐれもお体を大切になさって</div><div class=\"speed-master-ruled-row\">ください。</div><div class=\"speed-master-ruled-row empty-row\">&nbsp;</div><div class=\"speed-master-ruled-row\">　ご家族の皆さんと一緒にとった記念写真をお送りします。</div><div class=\"speed-master-ruled-row empty-row\">&nbsp;</div><div class=\"speed-master-ruled-row text-right\">タムホーン</div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）ゴールデンウィーク",
+      "definition": "４月の終わりから５月の初めにかけての長い休み"
+    },
+    {
+      "term": "（※2）ホームステイ",
+      "definition": "留学生などが、普通の家庭に泊めてもらうこと"
+    },
+    {
+      "term": "（※3）鯉のぼり",
+      "definition": "「子どもの日（５月５日）」に立ててかざるもの"
+    },
+    {
+      "term": "（※4）かしわ餅",
+      "definition": "「子どもの日」に食べるお菓子"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "田植え",
+      "reading": "たうえ",
+      "meaning": "rice planting"
+    },
+    {
+      "word": "つきあう",
+      "reading": "つきあう",
+      "meaning": "to accompany someone"
+    },
+    {
+      "word": "農業",
+      "reading": "のうぎょう",
+      "meaning": "agriculture"
+    },
+    {
+      "word": "論文",
+      "reading": "ろんぶん",
+      "meaning": "thesis"
+    },
+    {
+      "word": "テーマ",
+      "reading": "テーマ",
+      "meaning": "theme, subject"
+    },
+    {
+      "word": "おかげ様で",
+      "reading": "おかげさまで",
+      "meaning": "thanks to your help, etc."
+    },
+    {
+      "word": "うらやましい",
+      "reading": "うらやましい",
+      "meaning": "to be envious"
+    }
+  ],
+  "questions": [
+    {
+      "id": "long-12-q1",
+      "questionNumber": "1",
+      "questionText": "この文は誰が誰に送った手紙か。",
+      "options": [
+        "大学１年生の留学生が、ホームステイのときに一緒に写真をとった友人に",
+        "大学１年生の留学生が、田植えに参加した時に世話になった大学の係の人に",
+        "大学４年生の留学生が、ホームステイをさせてもらった日本人の家族に",
+        "大学４年生の留学生が、田植えに参加したときに知り合いになった日本人に"
+      ],
+      "correct": 3,
+      "correctOption": "大学４年生の留学生が、ホームステイをさせてもらった日本人の家族に",
+      "explanation": "留学生（タムホーン）が、卒業論文を書く時期（大学4年生）にホームステイ先として一週間お世話になった山田様（およびそのご家族）宛てに送ったお礼の手紙です。したがって 3 が正解です。"
+    },
+    {
+      "id": "long-12-q2",
+      "questionNumber": "2",
+      "questionText": "①に入る表現はどれか。",
+      "options": [
+        "おかげ様で",
+        "実は",
+        "この度は",
+        "さて"
+      ],
+      "correct": 1,
+      "correctOption": "おかげ様で",
+      "explanation": "前で「日本の農業についていろいろ教えていただき」と感謝の要因を述べており、その恩恵によって「卒業論文のテーマを決めることができました」と続けるため、「おかげ様で」の 1 が最も適切です。"
+    },
+    {
+      "id": "long-12-q3",
+      "questionNumber": "3",
+      "questionText": "この手紙の内容と<u>違う</u>のはどれか。",
+      "options": [
+        "ホームステイをした日本人家庭に<ruby>孫<rt>まご</rt></ruby>はいない。",
+        "ホームステイをした日本人家庭は、米を作っている。",
+        "<ruby>後輩<rt>こうはい</rt></ruby>も来年、同じようにホームステイすることを希望している。",
+        "日本の農村についての卒業論文を完成させたいと思っている。"
+      ],
+      "correct": 1,
+      "correctOption": "ホームステイをした日本人家庭に<ruby>孫<rt>まご</rt></ruby>はいない。",
+      "explanation": "本文に「孫の一郎ちゃんの成長を祈る鯉のぼりを見ながら…」と書かれており、孫がいることが分かります。したがって「孫はいない」とする 1 が本文と違っています。"
+    },
+    {
+      "id": "long-12-q4",
+      "questionNumber": "4",
+      "questionText": "②に入る表現はどれか。",
+      "options": [
+        "うるさがり",
+        "さびしがり",
+        "いたがり",
+        "うらやましがり"
+      ],
+      "correct": 4,
+      "correctOption": "うらやましがり",
+      "explanation": "筆者の楽しかったホームステイ体験の話を聞いた後輩が、自分も「来年は必ずホームステイ希望の手続きをする」と言っていることから、羨ましがっている様子を表す「うらやましがり」の 4 が適切です。"
+    }
+  ]
+}

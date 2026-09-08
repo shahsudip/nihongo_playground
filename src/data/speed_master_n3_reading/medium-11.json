@@ -1,0 +1,163 @@
+{
+  "id": "medium-11",
+  "chapterId": "medium-11",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（中文）",
+  "sectionEn": "Medium Passages",
+  "mondaiNumber": 11,
+  "targetMinutes": 7,
+  "title": "問題 11（中文）",
+  "instruction": "問題11 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0058.jpg",
+  "passageLayout": "html",
+  "footnotesDiagram": "/speed_master_n3_pages/mondai_medium_11_snake_diagram.png",
+  "passageText": "<p>雨が上がったあとの空に<ruby>虹<rt>にじ</rt></ruby>がかかることがある。<ruby>虹<rt>にじ</rt></ruby>が<ruby>魅力的<rt>みりょくてき</rt></ruby>に感じられるのは、空に<ruby>描<rt>えが</rt></ruby>かれたとても大きな絵のようなところと、美しい色のハーモニー、そして、すぐ消えてしまうところだ。夏によく見られることから、<ruby>俳句<rt>はいく</rt></ruby>では夏の<ruby>季語<rt>きご</rt></ruby>になっている。</p><p><ruby>虹<rt>にじ</rt></ruby>は、雨の<ruby>水滴<rt>すいてき</rt></ruby>がレンズとなり、太陽の光を複数の色に分けることで起きる現象だ。また、大きな滝の下や、ホースの先から水が細かく飛ぶところでも、太陽の光が当たると、小さい<ruby>虹<rt>にじ</rt></ruby>が見える。<ruby>虹<rt>にじ</rt></ruby>の色の数は日本では7色とされるが、<ruby>古代<rt>こだい</rt></ruby>では5色だったそうだ。<span class=\"speed-master-box-blank\">①</span>、沖縄では2色であり、地域や時代で色の数は違っているようである。</p><p>「<ruby>虹<rt>にじ</rt></ruby>」という漢字は「虫」と「工」からできているが、それは、その字を作った中国で、<ruby>虹<rt>にじ</rt></ruby>が<ruby>蛇<rt>へび</rt></ruby>（※1）や<ruby>竜<rt>りゅう</rt></ruby>（※2）だと考えられていたからだそうだ。それも<ruby>雄<rt>おす</rt></ruby>（※3）の<ruby>竜<rt>りゅう</rt></ruby>だという。空にかかる<ruby>虹<rt>にじ</rt></ruby>が<ruby>竜<rt>りゅう</rt></ruby>と考えられたというのは理解できるが、<ruby>虹<rt>にじ</rt></ruby>を見て<ruby>雄<rt>おす</rt></ruby>の<ruby>竜<rt>りゅう</rt></ruby>を想像する力は私にはない。</p>",
+  "footnotes": [
+    {
+      "term": "（※1）蛇",
+      "definition": "動物の名前"
+    },
+    {
+      "term": "（※2）竜",
+      "definition": "想像の動物の名前"
+    },
+    {
+      "term": "（※3）雄",
+      "definition": "動物の「男」の呼び方"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "虹",
+      "reading": "にじ",
+      "meaning": "rainbow"
+    },
+    {
+      "word": "かかる",
+      "reading": "かかる",
+      "meaning": "to appear, hang"
+    },
+    {
+      "word": "魅力的",
+      "reading": "みりょくてき",
+      "meaning": "charming, fascinating"
+    },
+    {
+      "word": "美しい",
+      "reading": "うつくしい",
+      "meaning": "beautiful"
+    },
+    {
+      "word": "ハーモニー",
+      "reading": "ハーモニー",
+      "meaning": "harmony"
+    },
+    {
+      "word": "俳句",
+      "reading": "はいく",
+      "meaning": "haiku"
+    },
+    {
+      "word": "季語",
+      "reading": "きご",
+      "meaning": "seasonal expression"
+    },
+    {
+      "word": "水滴",
+      "reading": "すいてき",
+      "meaning": "drop of water"
+    },
+    {
+      "word": "レンズ",
+      "reading": "レンズ",
+      "meaning": "lens"
+    },
+    {
+      "word": "複数",
+      "reading": "ふくすう",
+      "meaning": "several, plural"
+    },
+    {
+      "word": "滝",
+      "reading": "たき",
+      "meaning": "waterfall"
+    },
+    {
+      "word": "ホース",
+      "reading": "ホース",
+      "meaning": "hose"
+    },
+    {
+      "word": "当たる",
+      "reading": "あたる",
+      "meaning": "to shine on"
+    },
+    {
+      "word": "古代",
+      "reading": "こだい",
+      "meaning": "ancient times"
+    },
+    {
+      "word": "地域",
+      "reading": "ちいき",
+      "meaning": "region"
+    },
+    {
+      "word": "時代",
+      "reading": "じだい",
+      "meaning": "period, era"
+    },
+    {
+      "word": "想像する",
+      "reading": "そうぞうする",
+      "meaning": "to imagine"
+    }
+  ],
+  "questions": [
+    {
+      "id": "medium-11-q1",
+      "questionNumber": "1",
+      "questionText": "<ruby>虹<rt>にじ</rt></ruby>について、正しいものはどれか。",
+      "options": [
+        "<ruby>虹<rt>にじ</rt></ruby>は、雨の日の滝の下などでも見られる。",
+        "<ruby>虹<rt>にじ</rt></ruby>は夏の空によくかかるので、<ruby>俳句<rt>はいく</rt></ruby>では夏の<ruby>季語<rt>きご</rt></ruby>になっている。",
+        "日本では昔、<ruby>虹<rt>にじ</rt></ruby>は<ruby>蛇<rt>へび</rt></ruby>や<ruby>竜<rt>りゅう</rt></ruby>と考えられ、そこから「<ruby>虹<rt>にじ</rt></ruby>」という字が作られた。",
+        "日本では、<ruby>虹<rt>にじ</rt></ruby>の色の数はいつの時代でもどこでも7色である。"
+      ],
+      "correct": 2,
+      "correctOption": "<ruby>虹<rt>にじ</rt></ruby>は夏の空によくかかるので、<ruby>俳句<rt>はいく</rt></ruby>では夏の<ruby>季語<rt>きご</rt></ruby>になっている。",
+      "explanation": "第1段落に「夏によく見られることから、俳句では夏の季語になっている」と述べられています。滝の下で虹が見えるのは太陽の光が当たるとき（雨の日ではない）であり、「虹」の漢字を作ったのは中国で、日本では古代は5色・沖縄では2色とあるため他の選択肢は誤りです。したがって正解は 2 です。"
+    },
+    {
+      "id": "medium-11-q2",
+      "questionNumber": "2",
+      "questionText": "著者の考え方と同じものはどれか。",
+      "options": [
+        "すぐ消えてしまうところも、<ruby>虹<rt>にじ</rt></ruby>の魅力の一つだ。",
+        "<ruby>虹<rt>にじ</rt></ruby>を見ると、<ruby>雄<rt>おす</rt></ruby>の<ruby>竜<rt>りゅう</rt></ruby>が想像される。",
+        "<ruby>虹<rt>にじ</rt></ruby>が<ruby>竜<rt>りゅう</rt></ruby>と考えられたというのは、理解できない。",
+        "<ruby>虹<rt>にじ</rt></ruby>が夏の<ruby>季語<rt>きご</rt></ruby>になっているのがおもしろい。"
+      ],
+      "correct": 1,
+      "correctOption": "すぐ消えてしまうところも、<ruby>虹<rt>にじ</rt></ruby>の魅力の一つだ。",
+      "explanation": "第1段落に虹が魅力的に感じられる理由として「空に描かれたとても大きな絵のようなところと、美しい色のハーモニー、そして、すぐ消えてしまうところだ」と述べられています。したがって「すぐ消えてしまうところも、虹の魅力の一つだ」とする 1 が正解です。"
+    },
+    {
+      "id": "medium-11-q3",
+      "questionNumber": "3",
+      "questionText": "①に入る語はどれか。",
+      "options": [
+        "だから",
+        "つぎに",
+        "また",
+        "あるいは"
+      ],
+      "correct": 3,
+      "correctOption": "また",
+      "explanation": "前の文で「虹の色の数は日本では7色とされるが、古代では5色だったそうだ」と述べ、空欄の後で「沖縄では2色であり、地域や時代で色の数は違っているようである」と別の例を並列・追加して述べています。したがって、並列・添加を表す接続詞「また」が入る 3 が正解です。"
+    }
+  ]
+}

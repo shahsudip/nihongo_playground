@@ -1,0 +1,74 @@
+{
+  "id": "short-19",
+  "chapterId": "short-19",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 19,
+  "targetMinutes": 3,
+  "title": "問題 19（短文）",
+  "instruction": "問題19 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0044.jpg",
+  "passageLayout": "html",
+  "passageText": "<p class=\"font-bold text-center text-lg mb-4\">「ミス<sup>（※1）</sup>日本酒」コンテスト<sup>（※2）</sup>のお知らせ</p><p class=\"mb-3\">このコンテストに<ruby>応募<rt>おうぼ</rt></ruby>できる<sup>（※3）</sup>方は、18歳以上の結婚していない女性で、観光行事などに参加できる人です。20歳未満の人は親の許可が必要です。現在、他のミスを務めている人や高校生は応募することができません。</p><p><ruby>応募用紙<rt>おうぼようし</rt></ruby>に記入して、3ヶ月以内にとった全身写真と一緒に、ミス<ruby>日本酒係<rt>にほんしゅがかり</rt></ruby>までお送りください。締め切りは4月10日（木）、コンテストは5月10日（土）、ABC会館で行なわれます。</p>",
+  "footnotes": [
+    {
+      "term": "（※1）ミス",
+      "definition": "代表として選ばれた結婚していない女性"
+    },
+    {
+      "term": "（※2）コンテスト",
+      "definition": "競技する会"
+    },
+    {
+      "term": "（※3）<ruby>応募<rt>おうぼ</rt></ruby>する",
+      "definition": "<ruby>募集<rt>ぼしゅう</rt></ruby>に応じる"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "日本酒",
+      "reading": "にほんしゅ",
+      "meaning": "Japanese sake"
+    },
+    {
+      "word": "行事",
+      "reading": "ぎょうじ",
+      "meaning": "event, function"
+    },
+    {
+      "word": "許可",
+      "reading": "きょか",
+      "meaning": "permission, approval"
+    },
+    {
+      "word": "全身",
+      "reading": "ぜんしん",
+      "meaning": "whole body"
+    },
+    {
+      "word": "締め切り",
+      "reading": "しめきり",
+      "meaning": "deadline"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-19-q1",
+      "questionNumber": "1",
+      "questionText": "このコンテストについて、正しいのはどれか。",
+      "options": [
+        "18歳以上の結婚していない女性であれば、高校生でも<ruby>応募<rt>おうぼ</rt></ruby>できる。",
+        "結婚していない女性で観光行事に参加できる人であれば、<ruby>応募<rt>おうぼ</rt></ruby>できる。",
+        "20歳になっていない人は、親から許可をもらわなければ<ruby>応募<rt>おうぼ</rt></ruby>できない。",
+        "<ruby>応募用紙<rt>おうぼようし</rt></ruby>と一緒に送る写真は、去年の12月にとったものでもよい。"
+      ],
+      "correct": 3,
+      "correctOption": "20歳になっていない人は、親から許可をもらわなければ<ruby>応募<rt>おうぼ</rt></ruby>できない。",
+      "explanation": "本文に「20歳未満の人は親の許可が必要です」とあるため、「20歳になっていない人は、親から許可をもらわなければ応募できない」とする 3 が正しいです。高校生は応募不可（1は誤り）、18歳以上や現在他のミスを務めていないこと等の条件もあるため2は誤り、締め切り（4月10日）の3ヶ月以内にとった写真が必要なため12月上旬以前の写真などは使えず4も誤りです。"
+    }
+  ]
+}

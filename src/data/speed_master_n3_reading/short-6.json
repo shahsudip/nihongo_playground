@@ -1,0 +1,80 @@
+{
+  "id": "short-6",
+  "chapterId": "short-6",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 6,
+  "targetMinutes": 3,
+  "title": "問題 6（短文）",
+  "instruction": "問題6 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0031.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"p-4 border border-slate-300 rounded-lg bg-slate-50\"><p class=\"text-center text-slate-400 mb-2 font-mono\">・・・・</p><p>申込<ruby>手続<rt>てつづき</rt></ruby>の完了後は、<ruby>一度<rt>いちど</rt></ruby>お<ruby>納<rt>おさ</rt></ruby>めいただいた<ruby>費用<rt>ひよう</rt></ruby>（テキスト代を<ruby>含<rt>ふく</rt></ruby>む）はお返しできません。ただし、引っ越し・入院などの理由によるキャンセル<sup>（※1）</sup>の場合は、授業が開始される前にその内容を<ruby>証明<rt>しょうめい</rt></ruby>する書類を<ruby>提出<rt>ていしゅつ</rt></ruby>していただければ、<ruby>費用<rt>ひよう</rt></ruby>の10％の<ruby>手数料<rt>てすうりょう</rt></ruby><sup>（※2）</sup>を<ruby>引<rt>ひ</rt></ruby>いた金額をお返しいたします。授業が開始されてからのキャンセルの場合はお返しできませんので、ご注意ください。</p></div>",
+  "footnotes": [
+    {
+      "term": "（※1）キャンセル",
+      "definition": "取り消すこと"
+    },
+    {
+      "term": "（※2）<ruby>手数料<rt>てすうりょう</rt></ruby>",
+      "definition": "だれかのために何かをしたときに、その<ruby>手間<rt>てま</rt></ruby>に対して払われるお金"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "手続き",
+      "reading": "てつづき",
+      "meaning": "procedure"
+    },
+    {
+      "word": "完了",
+      "reading": "かんりょう",
+      "meaning": "completion"
+    },
+    {
+      "word": "納める",
+      "reading": "おさめる",
+      "meaning": "to pay"
+    },
+    {
+      "word": "内容",
+      "reading": "ないよう",
+      "meaning": "contents"
+    },
+    {
+      "word": "証明",
+      "reading": "しょうめい",
+      "meaning": "proof"
+    },
+    {
+      "word": "提出",
+      "reading": "ていしゅつ",
+      "meaning": "submission"
+    },
+    {
+      "word": "引く",
+      "reading": "ひく",
+      "meaning": "to deduct, subtract"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-6-q1",
+      "questionNumber": "1",
+      "questionText": "キャンセルの場合の返金について、正しいのはどれか。",
+      "options": [
+        "引っ越しの場合は、授業開始前に<ruby>証明<rt>しょうめい</rt></ruby>書類を出せば90％返す。",
+        "引っ越しの場合は、授業が始まってからでも全部返す。",
+        "入院の場合は、授業が始まってからでも全部返す。",
+        "入院の場合は、授業開始前に<ruby>証明<rt>しょうめい</rt></ruby>書類を出せば全部返す。"
+      ],
+      "correct": 1,
+      "correctOption": "引っ越しの場合は、授業開始前に<ruby>証明<rt>しょうめい</rt></ruby>書類を出せば90％返す。",
+      "explanation": "本文に「引っ越し・入院などの理由によるキャンセルの場合は、授業が開始される前にその内容を証明する書類を提出していただければ、費用の10％の手数料を引いた金額をお返しいたします」とあります。費用の10％の手数料を引いた金額（＝90％）が返金されるため、1 が正しいです。授業開始後のキャンセルは返金できないため 2・3 は誤りで、全額返金ではないため 4 も誤りです。"
+    }
+  ]
+}

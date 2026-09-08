@@ -1,0 +1,90 @@
+{
+  "id": "search-15",
+  "chapterId": "search-15",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "情報検索",
+  "sectionEn": "Information Retrieval",
+  "mondaiNumber": 15,
+  "targetMinutes": 8,
+  "title": "問題 15（情報検索）",
+  "instruction": "問題15 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、下の<ruby>質問<rt>しつもん</rt></ruby>に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0119.jpg",
+  "passageLayout": "html",
+  "passageHeader": "老化の程度を測る方法",
+  "passageText": "<div class=\"speed-master-memo-card mb-6 space-y-3 leading-relaxed\"><p>あなたは、ときどきつまずいたり<sup>(※1)</sup><ruby>転<rt>ころ</rt></ruby>んだりすることはありませんか。それは、<ruby>老化<rt>ろうか</rt></ruby>と関係しているかもしれません。つぎの方法で<ruby>老化<rt>ろうか</rt></ruby>の<ruby>程度<rt>ていど</rt></ruby>を<ruby>測<rt>はか</rt></ruby>ることができます。</p><p>まず、<ruby>裸足<rt>はだし</rt></ruby><sup>(※2)</sup>でまっすぐに立って、両手を<ruby>腰<rt>こし</rt></ruby>に当て、立ちやすいほうの足で立ち、静かに目を閉じます。</p><p>何秒立っていられましたか。20代がピークで80～90秒、30代は80～55秒、40代は55～40秒と、年齢とともに直線的に低下します。グラフを見て、あなたの年齢の秒数と、立っていられた秒数を比べてみましょう。</p></div><div class=\"speed-master-flyer-card max-w-2xl mx-auto my-6 p-4 bg-white rounded-2xl shadow-sm border border-slate-200 text-center\"><img src=\"/speed_master_n3_pages/mondai_search_15_graphs.svg\" alt=\"老化の程度と立っていられた秒数のグラフ（図1〜4）\" class=\"w-full h-auto object-contain\" /></div>",
+  "footnotes": [
+    {
+      "term": "(※1) つまずく",
+      "definition": "足の先に物があたって、体が前に飛ぶように動くこと"
+    },
+    {
+      "term": "(※2) <ruby>裸足<rt>はだし</rt></ruby>",
+      "definition": "足に何もはいていないこと"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "老化",
+      "reading": "ろうか",
+      "meaning": "aging, senility"
+    },
+    {
+      "word": "程度",
+      "reading": "ていど",
+      "meaning": "degree, level, extent"
+    },
+    {
+      "word": "裸足",
+      "reading": "はだし",
+      "meaning": "barefoot"
+    },
+    {
+      "word": "ピーク",
+      "reading": "ピーク",
+      "meaning": "peak"
+    },
+    {
+      "word": "直線的",
+      "reading": "ちょくせんてき",
+      "meaning": "linear, straightforward"
+    },
+    {
+      "word": "低下",
+      "reading": "ていか",
+      "meaning": "decline, fall, drop"
+    }
+  ],
+  "questions": [
+    {
+      "id": "search-15-q1",
+      "questionNumber": "1",
+      "questionText": "この文章の内容と合っているグラフはどれか。",
+      "options": [
+        "図１",
+        "図２",
+        "図３",
+        "図４"
+      ],
+      "correct": 4,
+      "correctOption": "図４",
+      "explanation": "本文では「20代がピークで80〜90秒、30代は80〜55秒、40代は55〜40秒と、年齢とともに直線的に低下します」と説明されています。\n図1・図2は30代がピークになっているため誤りです。\n図3は20代から30代にかけて横ばい（水平）になっているため誤りです。\n図4は20代がピーク（約85秒）で、その後年齢が上がるにつれて直線的に秒数が低下しており、本文の記述と完全に合致しています。\nしたがって正解は 4（図4）です。"
+    },
+    {
+      "id": "search-15-q2",
+      "questionNumber": "2",
+      "questionText": "正しい<ruby>測<rt>はか</rt></ruby>り方はどれか。",
+      "options": [
+        "くつをはいて両手を上に上げ、目を閉じて片足で立つ",
+        "くつをはいて両手を<ruby>腰<rt>こし</rt></ruby>に当て、目を開けて片足で立つ",
+        "<ruby>裸足<rt>はだし</rt></ruby>で立って両手を<ruby>腰<rt>こし</rt></ruby>に当て、目を閉じて片足で立つ",
+        "<ruby>裸足<rt>はだし</rt></ruby>で立って両手を<ruby>腰<rt>こし</rt></ruby>に当て、目を開けて片足で立つ"
+      ],
+      "correct": 3,
+      "correctOption": "<ruby>裸足<rt>はだし</rt></ruby>で立って両手を<ruby>腰<rt>こし</rt></ruby>に当て、目を閉じて片足で立つ",
+      "explanation": "本文に「まず、裸足(※2)でまっすぐに立って、両手を腰に当て、立ちやすいほうの足で立ち、静かに目を閉じます」と書かれています。したがって、裸足で両手を腰に当て、目を閉じて片足で立つ 3 が正解です。"
+    }
+  ]
+}

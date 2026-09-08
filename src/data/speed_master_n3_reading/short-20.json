@@ -1,0 +1,65 @@
+{
+  "id": "short-20",
+  "chapterId": "short-20",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 20,
+  "targetMinutes": 3,
+  "title": "問題 20（短文）",
+  "instruction": "問題20 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0045.jpg",
+  "passageLayout": "html",
+  "passageText": "<p class=\"mb-4\">寒い冬も終わり、気持ちのよい季節になりました。運動不足の方、お<ruby>小遣<rt>こづか</rt></ruby>いがほしい方、ここでアルバイトをしてみませんか。ご希望の方は、まずお電話をください（☎ 0550-676-9876）。</p><div class=\"space-y-1 pl-2\"><div><span class=\"font-bold mr-4\">仕事内容</span>朝刊の配達</div><div><span class=\"font-bold mr-4\"><ruby>時給<rt>じきゅう</rt></ruby><sup>（※1）</sup></span>1200円</div><div><span class=\"font-bold mr-4\"><ruby>休日<rt>きゅうじつ</rt></ruby></span>週一日（曜日は相談に応じます）</div><div><span class=\"font-bold mr-4\">時間</span>AM 2:30〜AM 5:30までの間で2時間以上できる人</div><div><span class=\"font-bold mr-4\"><ruby>資格<rt>しかく</rt></ruby><sup>（※2）</sup></span>18歳以上で、オートバイの<ruby>免許<rt>めんきょ</rt></ruby>がある人<br><span class=\"ml-12\">（<ruby>免許<rt>めんきょ</rt></ruby>がない方は相談してください）</span></div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）<ruby>時給<rt>じきゅう</rt></ruby>",
+      "definition": "1時間の仕事に対して支払われる給料"
+    },
+    {
+      "term": "（※2）<ruby>資格<rt>しかく</rt></ruby>",
+      "definition": "ある仕事をするのに必要な能力があると、国などから認められたもの"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "不足",
+      "reading": "ふそく",
+      "meaning": "shortage, lack"
+    },
+    {
+      "word": "お小遣い",
+      "reading": "おこづかい",
+      "meaning": "pocket money, allowance"
+    },
+    {
+      "word": "相談",
+      "reading": "そうだん",
+      "meaning": "discussion"
+    },
+    {
+      "word": "応じる",
+      "reading": "おうじる",
+      "meaning": "respond"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-20-q1",
+      "questionNumber": "1",
+      "questionText": "このアルバイトができるのは、つぎのどの人か。",
+      "options": [
+        "<ruby>小遣<rt>こづか</rt></ruby>いがほしいので、新聞配達のアルバイトを希望している中学生",
+        "朝4時までのガソリンスタンドでのアルバイトに、このアルバイトを加えたいという人",
+        "オートバイの<ruby>免許<rt>めんきょ</rt></ruby>は持っていないが、今、仕事を探している18歳の男性",
+        "オートバイの<ruby>免許<rt>めんきょ</rt></ruby>を持ち、週に3日アルバイトをしたいと思っている19歳の女性"
+      ],
+      "correct": 3,
+      "correctOption": "オートバイの<ruby>免許<rt>めんきょ</rt></ruby>は持っていないが、今、仕事を探している18歳の男性",
+      "explanation": "募集資格には「18歳以上で、オートバイの免許がある人（免許がない方は相談してください）」とあるため、18歳以上であれば免許を持っていなくても相談により応募・勤務が可能です。1の中学生は18歳未満のため不可、2はAM2:30〜5:30の間で2時間以上必要なため朝4時以降では時間が足りず不可、4は「休日：週一日（＝週6日勤務）」のため週に3日だけの勤務はできず不可です。したがって正解は 3 です。"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "search-4",
+  "chapterId": "search-4",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "情報検索",
+  "sectionEn": "Information Retrieval",
+  "mondaiNumber": 4,
+  "targetMinutes": 8,
+  "title": "問題 4（情報検索）",
+  "instruction": "問題4 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>は、ある<ruby>旅館<rt>りょかん</rt></ruby>の<ruby>利用<rt>りよう</rt></ruby><ruby>料金<rt>りょうきん</rt></ruby><ruby>表<rt>ひょう</rt></ruby>である。下の<ruby>質問<rt>しつもん</rt></ruby>に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0097.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"space-y-4\"><div class=\"p-4 border border-slate-300 dark:border-slate-600 rounded bg-slate-50 dark:bg-slate-800/50 leading-relaxed\"><p>森さんはゴールデンウィーク<sup>（※1）</sup>に、家族と親せきの子どもたちを連れて、1<ruby>泊<rt>ぱく</rt></ruby>の旅行に行くことにしました。家族は3人ですが、今回の旅行に行くのは森さんと奥さん、中学生の長女、小学生の森さんの<ruby>甥<rt>おい</rt></ruby>、4歳の<ruby>姪<rt>めい</rt></ruby>です。<ruby>宿泊<rt>しゅくはく</rt></ruby>料金の<ruby>予算<rt>よさん</rt></ruby>は、全部で5万円です。</p></div><div class=\"border-2 border-slate-700 dark:border-slate-300 p-4 bg-white dark:bg-slate-900\"><p class=\"font-bold text-center mb-3 text-base md:text-lg\">ゴールデンウィークのご宿泊料金（大人一人分の料金）</p><div class=\"overflow-x-auto\"><table class=\"w-full border-collapse border border-slate-400 text-center text-sm md:text-base my-2\"><thead><tr class=\"bg-slate-100 dark:bg-slate-800\"><th class=\"border border-slate-400 p-2\">部屋サイズ</th><th class=\"border border-slate-400 p-2\">3人部屋</th><th class=\"border border-slate-400 p-2\">4人部屋</th><th class=\"border border-slate-400 p-2\">5人部屋</th><th class=\"border border-slate-400 p-2\">6人部屋</th></tr></thead><tbody><tr><td class=\"border border-slate-400 p-2 font-bold\">Aコース</td><td class=\"border border-slate-400 p-2\">16,000円</td><td class=\"border border-slate-400 p-2\">13,000円</td><td class=\"border border-slate-400 p-2\">11,000円</td><td class=\"border border-slate-400 p-2\">10,000円</td></tr><tr><td class=\"border border-slate-400 p-2 font-bold\">Bコース</td><td class=\"border border-slate-400 p-2\">17,000円</td><td class=\"border border-slate-400 p-2\">14,000円</td><td class=\"border border-slate-400 p-2\">12,000円</td><td class=\"border border-slate-400 p-2\">11,000円</td></tr><tr><td class=\"border border-slate-400 p-2 font-bold\">Cコース</td><td class=\"border border-slate-400 p-2\">18,000円</td><td class=\"border border-slate-400 p-2\">15,000円</td><td class=\"border border-slate-400 p-2\">13,000円</td><td class=\"border border-slate-400 p-2\">12,000円</td></tr><tr><td class=\"border border-slate-400 p-2 font-bold\">Dコース</td><td class=\"border border-slate-400 p-2\">17,000円</td><td class=\"border border-slate-400 p-2\">14,000円</td><td class=\"border border-slate-400 p-2\">13,000円</td><td class=\"border border-slate-400 p-2\">10,000円</td></tr><tr><td class=\"border border-slate-400 p-2 font-bold\">Eコース</td><td class=\"border border-slate-400 p-2\">24,000円</td><td class=\"border border-slate-400 p-2\">20,000円</td><td class=\"border border-slate-400 p-2\">18,000円</td><td class=\"border border-slate-400 p-2\">17,000円</td></tr></tbody></table></div><div class=\"mt-3 space-y-1 text-xs md:text-sm\"><p>■子供（小学生）の料金は、大人の料金の半分です。</p><p>■幼児（3〜5歳）の料金は、一人3,000円です。</p><p>■中学生以上は、大人の料金と同じです。</p></div></div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）ゴールデンウィーク",
+      "definition": "4月の終わりから5月の初めにかけての長い休み"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "親せき",
+      "reading": "しんせき",
+      "meaning": "relatives"
+    },
+    {
+      "word": "予算",
+      "reading": "よさん",
+      "meaning": "budget"
+    },
+    {
+      "word": "宿泊",
+      "reading": "しゅくはく",
+      "meaning": "lodging, staying overnight"
+    },
+    {
+      "word": "泊まる",
+      "reading": "とまる",
+      "meaning": "to stay overnight"
+    },
+    {
+      "word": "甥",
+      "reading": "おい",
+      "meaning": "nephew"
+    },
+    {
+      "word": "姪",
+      "reading": "めい",
+      "meaning": "niece"
+    },
+    {
+      "word": "幼児",
+      "reading": "ようじ",
+      "meaning": "infant, toddler, preschooler (ages 3–5)"
+    }
+  ],
+  "questions": [
+    {
+      "id": "search-4-q1",
+      "questionNumber": "1",
+      "questionText": "予算内で<ruby>泊<rt>と</rt></ruby>まれるコースはどれか。",
+      "options": [
+        "Aコース、Bコース、Cコースに泊まれる。",
+        "Eコース以外は泊まれる。",
+        "Aコース、Bコースに泊まれる。",
+        "Aコースだけ泊まれる。"
+      ],
+      "correct": 2,
+      "correctOption": "Eコース以外は泊まれる。",
+      "explanation": "旅行に行くのは森さん、奥さん、中学生の長女（以上大人3人）、小学生の甥（大人半額1人）、4歳の姪（幼児料金3,000円1人）の計5人なので「5人部屋」の料金を見ます。計算式は「大人の料金 × 3.5 ＋ 3,000円」です。\n・Aコース：11,000 × 3.5 ＋ 3,000 ＝ 41,500円（5万円以内）\n・Bコース：12,000 × 3.5 ＋ 3,000 ＝ 45,000円（5万円以内）\n・Cコース：13,000 × 3.5 ＋ 3,000 ＝ 48,500円（5万円以内）\n・Dコース：13,000 × 3.5 ＋ 3,000 ＝ 48,500円（5万円以内）\n・Eコース：18,000 × 3.5 ＋ 3,000 ＝ 66,000円（予算オーバー）\nしたがって、Eコース以外のA・B・C・Dコースすべてに泊まれるため、正解は 2 の「Eコース以外は泊まれる」です。"
+    },
+    {
+      "id": "search-4-q2",
+      "questionNumber": "2",
+      "questionText": "「Eコース」に<ruby>泊<rt>と</rt></ruby>まる場合、予算はいくら足りないか。",
+      "options": [
+        "15,000円",
+        "16,000円",
+        "17,000円",
+        "18,000円"
+      ],
+      "correct": 2,
+      "correctOption": "16,000円",
+      "explanation": "Eコース（5人部屋）の宿泊料金は、大人が18,000円なので、大人3名分（54,000円）＋ 小学生1名分（9,000円）＋ 幼児1名分（3,000円）＝ 合計66,000円となります。予算は50,000円なので、66,000円 − 50,000円 ＝ 16,000円足りません。したがって正解は 2 です。"
+    }
+  ]
+}

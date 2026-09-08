@@ -1,0 +1,66 @@
+{
+  "id": "search-9",
+  "chapterId": "search-9",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "情報検索",
+  "sectionEn": "Information Retrieval",
+  "mondaiNumber": 9,
+  "targetMinutes": 8,
+  "title": "問題 9（情報検索）",
+  "instruction": "問題9 つぎは<ruby>美術館<rt>びじゅつかん</rt></ruby>までの<ruby>交通<rt>こうつう</rt></ruby><ruby>案内<rt>あんない</rt></ruby>である。下の<ruby>質問<rt>しつもん</rt></ruby>に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0107.jpg",
+  "passageLayout": "html",
+  "passageHeader": "美術館までの交通案内",
+  "passageText": "<div class=\"speed-master-memo-card mb-6\"><p>A子さんはA市、B子さんはB市に住んでいます。来週、二人で東京の<ruby>美術館<rt>びじゅつかん</rt></ruby>に行くことにしました。A市とB市の間にはTT線という電車が走っています。</p></div><div class=\"speed-master-transit-card\"><div class=\"speed-master-transit-title\">交通案内</div><hr class=\"speed-master-transit-divider\" /><div class=\"speed-master-transit-section\"><div class=\"speed-master-transit-header\">A市から美術館までの交通</div><div class=\"speed-master-transit-meta\"><span>時間：70分</span><span>交通費：1450円</span></div><div class=\"speed-master-transit-diagram\"><div class=\"speed-master-transit-station\"><span class=\"speed-master-transit-station-icon\">□</span><span>A市</span></div><div class=\"speed-master-transit-leg\"><span class=\"speed-master-transit-arrow\">⇩</span><span class=\"speed-master-transit-line\">S線</span></div><div class=\"speed-master-transit-station\"><span class=\"speed-master-transit-station-icon\">○</span><span><ruby>秋葉原<rt>あきはばら</rt></ruby></span></div><div class=\"speed-master-transit-leg\"><span class=\"speed-master-transit-arrow\">⇩</span><span class=\"speed-master-transit-line\">JR線</span></div><div class=\"speed-master-transit-station\"><span class=\"speed-master-transit-station-icon\">□</span><span>美術館</span></div></div></div><hr class=\"speed-master-transit-divider\" /><div class=\"speed-master-transit-section\"><div class=\"speed-master-transit-header\">B市から美術館までの交通</div><div class=\"speed-master-transit-meta\"><span>時間：95分</span><span>交通費：1200円</span></div><div class=\"speed-master-transit-diagram\"><div class=\"speed-master-transit-station\"><span class=\"speed-master-transit-station-icon\">□</span><span>B市</span></div><div class=\"speed-master-transit-leg\"><span class=\"speed-master-transit-arrow\">⇩</span><span class=\"speed-master-transit-line\">JR線</span></div><div class=\"speed-master-transit-station\"><span class=\"speed-master-transit-station-icon\">○</span><span><ruby>上野<rt>うえの</rt></ruby></span></div><div class=\"speed-master-transit-leg\"><span class=\"speed-master-transit-arrow\">⇩</span><span class=\"speed-master-transit-line\">JR線</span></div><div class=\"speed-master-transit-station\"><span class=\"speed-master-transit-station-icon\">○</span><span><ruby>秋葉原<rt>あきはばら</rt></ruby></span></div><div class=\"speed-master-transit-leg\"><span class=\"speed-master-transit-arrow\">⇩</span><span class=\"speed-master-transit-line\">JR線</span></div><div class=\"speed-master-transit-station\"><span class=\"speed-master-transit-station-icon\">□</span><span>美術館</span></div></div></div><hr class=\"speed-master-transit-divider\" /><div class=\"speed-master-transit-section\"><div class=\"speed-master-transit-header\">A市とB市の間の交通</div><div class=\"speed-master-transit-meta\"><span>時間：10分</span><span>交通費：130円</span></div><div class=\"speed-master-transit-diagram\"><div class=\"speed-master-transit-station\"><span class=\"speed-master-transit-station-icon\">□</span><span>A市</span></div><div class=\"speed-master-transit-leg\"><span class=\"speed-master-transit-arrow\">⇩⇧</span><span class=\"speed-master-transit-line\">TT線</span></div><div class=\"speed-master-transit-station\"><span class=\"speed-master-transit-station-icon\">□</span><span>B市</span></div></div></div></div>",
+  "footnotes": [],
+  "vocabulary": [
+    {
+      "word": "交通費",
+      "reading": "こうつうひ",
+      "meaning": "transportation expenses, travel cost"
+    },
+    {
+      "word": "別々",
+      "reading": "べつべつ",
+      "meaning": "separately, individually"
+    },
+    {
+      "word": "合計",
+      "reading": "ごうけい",
+      "meaning": "total, sum"
+    }
+  ],
+  "questions": [
+    {
+      "id": "search-9-q1",
+      "questionNumber": "1",
+      "questionText": "二人の<ruby>交通費<rt>こうつうひ</rt></ruby>の<ruby>合計<rt>ごうけい</rt></ruby>が一番安い行き方はどれか。",
+      "options": [
+        "二人が<ruby>別々<rt>べつべつ</rt></ruby>の電車で行って、<ruby>美術館<rt>びじゅつかん</rt></ruby>駅で会う。",
+        "A子さんがB市駅へ行って、B子さんと<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>美術館<rt>びじゅつかん</rt></ruby>まで行く。",
+        "二人が<ruby>別々<rt>べつべつ</rt></ruby>の電車で行って、<ruby>秋葉原<rt>あきはばら</rt></ruby>駅で会う。",
+        "B子さんがA市駅へ行って、A子さんと<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>美術館<rt>びじゅつかん</rt></ruby>まで行く。"
+      ],
+      "correct": 2,
+      "correctOption": "A子さんがB市駅へ行って、B子さんと<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>美術館<rt>びじゅつかん</rt></ruby>まで行く。",
+      "explanation": "各選択肢の交通費の合計を計算します。\n1・3：二人が別々に行く場合、A子（1,450円）＋ B子（1,200円）＝ 2,650円。\n2：A子さんがB市へ行く場合、A子（TT線130円＋B市から美術館1,200円）＋ B子（1,200円）＝ 2,530円。\n4：B子さんがA市へ行く場合、B子（TT線130円＋A市から美術館1,450円）＋ A子（1,450円）＝ 3,030円。\nしたがって、合計が一番安いのは 2（2,530円）です。"
+    },
+    {
+      "id": "search-9-q2",
+      "questionNumber": "2",
+      "questionText": "二人が電車に乗っている時間を合わせたものが一番短いのはどれか。",
+      "options": [
+        "二人が<ruby>別々<rt>べつべつ</rt></ruby>の電車で行って、<ruby>美術館<rt>びじゅつかん</rt></ruby>駅で会う。",
+        "A子さんがB市駅へ行って、B子さんと<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>美術館<rt>びじゅつかん</rt></ruby>まで行く。",
+        "二人が<ruby>別々<rt>べつべつ</rt></ruby>の電車で行って、<ruby>秋葉原<rt>あきはばら</rt></ruby>駅で会う。",
+        "B子さんがA市駅へ行って、A子さんと<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>美術館<rt>びじゅつかん</rt></ruby>まで行く。"
+      ],
+      "correct": 4,
+      "correctOption": "B子さんがA市駅へ行って、A子さんと<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>美術館<rt>びじゅつかん</rt></ruby>まで行く。",
+      "explanation": "二人の電車乗車時間の合計を計算します。\n1・3：別々に行く場合、A子（70分）＋ B子（95分）＝ 165分。\n2：A子さんがB市へ行く場合、A子（TT線10分＋95分）＋ B子（95分）＝ 200分。\n4：B子さんがA市へ行く場合、B子（TT線10分＋70分）＋ A子（70分）＝ 150分。\nしたがって、乗車時間の合計が一番短いのは 4（150分）です。"
+    }
+  ]
+}

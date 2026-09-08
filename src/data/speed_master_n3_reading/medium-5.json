@@ -1,0 +1,133 @@
+{
+  "id": "medium-5",
+  "chapterId": "medium-5",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（中文）",
+  "sectionEn": "Medium Passages",
+  "mondaiNumber": 5,
+  "targetMinutes": 7,
+  "title": "問題 5（中文）",
+  "instruction": "問題5 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0050.jpg",
+  "passageLayout": "html",
+  "passageText": "<p>昨年、家庭などに眠っている使用済みの<ruby>携帯<rt>けいたい</rt></ruby>電話の<ruby>回収<rt>かいしゅう</rt></ruby><sup>（※1）</sup>キャンペーンが、<ruby>経済産業省<rt>けいざいさんぎょうしょう</rt></ruby>によって行われた。なぜ、携帯電話は<ruby>回収<rt>かいしゅう</rt></ruby>されなければならないのか。それは、携帯電話には豊富な<ruby>金属<rt>きんぞく</rt></ruby><ruby>資源<rt>しげん</rt></ruby>が<ruby>含<rt>ふく</rt></ruby>まれているからである。</p><p>携帯電話には金、銀、銅のほか、<ruby>貴重<rt>きちょう</rt></ruby>な<ruby>金属<rt>きんぞく</rt></ruby>が使われている。このような金属は日本には少ないため、基本的には輸入することになるのだが、使わなくなった携帯電話から取り出してリサイクルすることも可能なのである。つまり、古い携帯電話はごみではなく、<ruby>資源<rt>しげん</rt></ruby>になるのである。そのため、<ruby>未回収<rt>みかいしゅう</rt></ruby>の携帯電話は<u><sub>①</sub>「<ruby>都市鉱山<rt>としこうざん</rt></ruby><sup>（※2）</sup>」と呼ばれている。</u></p><p>日本では今や、一人が一台、携帯電話を持つようになったともいえるが、使わなくなったあとも、カメラや電話帳がわりにとっておく人が多く、<ruby>回収<rt>かいしゅう</rt></ruby>はなかなか進まない。そこで、今回の<ruby>回収<rt>かいしゅう</rt></ruby>キャンペーンとなったのである。</p>",
+  "footnotes": [
+    {
+      "term": "（※1）<ruby>回収<rt>かいしゅう</rt></ruby>",
+      "definition": "集めること"
+    },
+    {
+      "term": "（※2）<ruby>鉱山<rt>こうざん</rt></ruby>",
+      "definition": "金属を取るための山、場所"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "豊富な",
+      "reading": "ほうふな",
+      "meaning": "rich, plentiful"
+    },
+    {
+      "word": "金属",
+      "reading": "きんぞく",
+      "meaning": "metals"
+    },
+    {
+      "word": "資源",
+      "reading": "しげん",
+      "meaning": "resources"
+    },
+    {
+      "word": "金",
+      "reading": "きん",
+      "meaning": "gold"
+    },
+    {
+      "word": "銀",
+      "reading": "ぎん",
+      "meaning": "silver"
+    },
+    {
+      "word": "銅",
+      "reading": "どう",
+      "meaning": "copper"
+    },
+    {
+      "word": "貴重な",
+      "reading": "きちょうな",
+      "meaning": "precious"
+    },
+    {
+      "word": "未〜",
+      "reading": "み〜",
+      "meaning": "un~"
+    },
+    {
+      "word": "電話帳",
+      "reading": "でんわちょう",
+      "meaning": "telephone directory"
+    },
+    {
+      "word": "高価な",
+      "reading": "こうかな",
+      "meaning": "expensive"
+    },
+    {
+      "word": "再利用",
+      "reading": "さいりよう",
+      "meaning": "reuse"
+    },
+    {
+      "word": "都市",
+      "reading": "とし",
+      "meaning": "city"
+    }
+  ],
+  "questions": [
+    {
+      "id": "medium-5-q1",
+      "questionNumber": "1",
+      "questionText": "<ruby>携帯<rt>けいたい</rt></ruby>電話を<ruby>回収<rt>かいしゅう</rt></ruby>する理由は何か。",
+      "options": [
+        "使わなくなった携帯電話がごみになって、困っているから。",
+        "使わなくなったあとも、捨てずに、とっておく人が多いから。",
+        "高価な<ruby>金属<rt>きんぞく</rt></ruby>を捨てずに再利用することができるから。",
+        "古い携帯電話を捨てさせて、新しい携帯電話を買わせるため。"
+      ],
+      "correct": 3,
+      "correctOption": "高価な<ruby>金属<rt>きんぞく</rt></ruby>を捨てずに再利用することができるから。",
+      "explanation": "本文に「使わなくなった携帯電話から取り出してリサイクルすることも可能」「古い携帯電話はごみではなく、資源になるのである」とあり、含まれている貴重な金属を再利用（リサイクル）するために回収する旨が述べられています。したがって正解は 3 です。"
+    },
+    {
+      "id": "medium-5-q2",
+      "questionNumber": "2",
+      "questionText": "①「<ruby>都市鉱山<rt>としこうざん</rt></ruby>」と呼ばれる理由は何か。",
+      "options": [
+        "<ruby>携帯<rt>けいたい</rt></ruby>電話に使われる金属がたくさんとれる場所が、都市の近くにあるから。",
+        "<ruby>携帯<rt>けいたい</rt></ruby>電話に使われる金、銀、銅などが、都市の近くで売られているから。",
+        "都市に住む人が持つ携帯電話の材料として、多くの金が使われているから。",
+        "まるで<ruby>鉱山<rt>こうざん</rt></ruby>があるかのように、都市の中で<ruby>金属<rt>きんぞく</rt></ruby>を集めることができるから。"
+      ],
+      "correct": 4,
+      "correctOption": "まるで<ruby>鉱山<rt>こうざん</rt></ruby>があるかのように、都市の中で<ruby>金属<rt>きんぞく</rt></ruby>を集めることができるから。",
+      "explanation": "鉱山とは「金属を取るための山、場所」のことであり、都市の家庭に眠る携帯電話から貴重な金属資源を取り出して集めることができるため、比喩的に「都市鉱山」と呼ばれています。したがって正解は 4 です。"
+    },
+    {
+      "id": "medium-5-q3",
+      "questionNumber": "3",
+      "questionText": "<ruby>携帯<rt>けいたい</rt></ruby>電話に使われている<ruby>金属<rt>きんぞく</rt></ruby>について正しいのはどれか。",
+      "options": [
+        "金、銀、銅のほか、<ruby>貴重<rt>きちょう</rt></ruby>な<ruby>金属<rt>きんぞく</rt></ruby>が使われている。",
+        "金、銀、銅は日本でとれるため、輸入していない。",
+        "金はリサイクルできるが、銀や銅はできない。",
+        "使われている<ruby>金属<rt>きんぞく</rt></ruby>は、金、銀、銅の3種類である。"
+      ],
+      "correct": 1,
+      "correctOption": "金、銀、銅のほか、<ruby>貴重<rt>きちょう</rt></ruby>な<ruby>金属<rt>きんぞく</rt></ruby>が使われている。",
+      "explanation": "本文に「携帯電話には金、銀、銅のほか、貴重な金属が使われている」とそのまま書かれています。日本には少ないため基本的に輸入することになるため 2 は誤り、3 や 4 も本文の内容と異なります。したがって正解は 1 です。"
+    }
+  ]
+}

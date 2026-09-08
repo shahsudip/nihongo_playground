@@ -1,0 +1,90 @@
+{
+  "id": "search-7",
+  "chapterId": "search-7",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "情報検索",
+  "sectionEn": "Information Retrieval",
+  "mondaiNumber": 7,
+  "targetMinutes": 8,
+  "title": "問題 7（情報検索）",
+  "instruction": "問題7 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>は、〇〇市で行われているスポーツ教室の参加者を<ruby>募集<rt>ぼしゅう</rt></ruby>するための案内である。下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0103.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"space-y-4\"><div class=\"p-4 border border-slate-300 dark:border-slate-600 rounded bg-slate-50 dark:bg-slate-800/50 leading-relaxed\"><p>ワンさんは大学生（20歳）です。〇〇市に住んでいます。<ruby>健康<rt>けんこう</rt></ruby>のために授業がない土曜日の午前に何か運動をしたいと考えています。1ヶ月にかかるお金は2000円以内を希望し、運動に使う道具は借りたいと思っています。</p></div><div class=\"border-2 border-slate-700 dark:border-slate-300 p-4 bg-white dark:bg-slate-900 grid grid-cols-1 md:grid-cols-2 gap-4\"><div class=\"border p-3 rounded space-y-1 text-sm md:text-base\"><p class=\"font-bold text-base border-b pb-1\">テニス教室</p><p><strong>時間</strong>：毎週土曜日の午前9時〜11時</p><p><strong>場所</strong>：市民会館</p><p><strong><ruby>対象<rt>たいしょう</rt></ruby></strong>：小学校5年生以上</p><p><strong>費用</strong>：1500円（1ヶ月）</p><p><strong>用意するもの</strong>：ラケットと運動用の<ruby>靴<rt>くつ</rt></ruby><br><span class=\"text-xs md:text-sm text-slate-600 dark:text-slate-400\">（ラケットは貸し出し可）</span></p><p><strong>申込方法</strong>：市民会館まで電話（☎ 02-22-3333）</p><p><strong><ruby>締切<rt>しめきり</rt></ruby></strong>：2月28日（土）</p></div><div class=\"border p-3 rounded space-y-1 text-sm md:text-base\"><p class=\"font-bold text-base border-b pb-1\">サッカー教室</p><p><strong>時間</strong>：毎週金曜日の午後7時〜9時</p><p><strong>場所</strong>：中央会館グラウンド</p><p><strong><ruby>対象<rt>たいしょう</rt></ruby></strong>：小学校6年生まで ＊定員20人</p><p><strong>費用</strong>：無料</p><p><strong>用意するもの</strong>：運動用の<ruby>靴<rt>くつ</rt></ruby></p><p><strong>申込方法</strong>：中央会館まで往復はがきで</p><p><strong><ruby>締切<rt>しめきり</rt></ruby></strong>：2月4日（水） 中央会館着<br><span class=\"text-xs text-slate-600 dark:text-slate-400\">〒〇〇〇-□□□□ 〇〇市〇〇町1丁目2-3 中央会館 スポーツ教室</span></p></div><div class=\"border p-3 rounded space-y-1 text-sm md:text-base\"><p class=\"font-bold text-base border-b pb-1\">水泳教室</p><p><strong>時間</strong>：毎週土曜日の午前9時〜10時</p><p><strong>場所</strong>：市民プール</p><p><strong><ruby>対象<rt>たいしょう</rt></ruby></strong>：50歳以上 <ruby>定員<rt>ていいん</rt></ruby>：25人</p><p><strong>費用</strong>：無料<br><span class=\"text-xs md:text-sm text-slate-600 dark:text-slate-400\">＊プール利用券（2500円）が別に必要</span></p><p><strong>用意するもの</strong>：<ruby>水着<rt>みずぎ</rt></ruby><sup>（※1）</sup></p><p><strong>申込方法</strong>：市民会館まで電話（☎ 02-22-3333）</p><p><strong><ruby>締切<rt>しめきり</rt></ruby></strong>：2月16日（月）</p></div><div class=\"border p-3 rounded space-y-1 text-sm md:text-base\"><p class=\"font-bold text-base border-b pb-1\">ランニング教室</p><p><strong>時間</strong>：毎週土曜日の午後6時〜7時</p><p><strong>場所</strong>：中央会館</p><p><strong><ruby>対象<rt>たいしょう</rt></ruby></strong>：15歳以上の人 <ruby>定員<rt>ていいん</rt></ruby>：20人</p><p><strong>費用</strong>：1200円（1ヶ月）</p><p><strong>用意するもの</strong>：タオル</p><p><strong>申込方法</strong>：中央会館まで電話（☎ 02-22-4444）</p><p><strong><ruby>締切<rt>しめきり</rt></ruby></strong>：2月10日（火）</p></div></div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）水着（みずぎ）",
+      "definition": "泳ぐときに着るもの"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "定員",
+      "reading": "ていいん",
+      "meaning": "capacity, fixed number of participants"
+    },
+    {
+      "word": "道具",
+      "reading": "どうぐ",
+      "meaning": "tool, equipment"
+    },
+    {
+      "word": "〜着",
+      "reading": "〜ちゃく",
+      "meaning": "arriving by ~ (e.g. mail arrival)"
+    },
+    {
+      "word": "ラケット",
+      "reading": "ラケット",
+      "meaning": "racket"
+    },
+    {
+      "word": "水着",
+      "reading": "みずぎ",
+      "meaning": "swimsuit, swimwear"
+    },
+    {
+      "word": "締切",
+      "reading": "しめきり",
+      "meaning": "deadline"
+    },
+    {
+      "word": "対象",
+      "reading": "たいしょう",
+      "meaning": "target audience, eligibility"
+    }
+  ],
+  "questions": [
+    {
+      "id": "search-7-q1",
+      "questionNumber": "1",
+      "questionText": "ワンさんが申し込むことができるスポーツ教室はどれか。",
+      "options": [
+        "サッカー教室",
+        "テニス教室",
+        "水泳",
+        "ランニング"
+      ],
+      "correct": 2,
+      "correctOption": "テニス教室",
+      "explanation": "ワンさんの条件は「土曜日の午前」「20歳」「1ヶ月2000円以内」「道具を借りたい」です。\n・サッカー教室：金曜日の夜で対象が小学生までのため不可。\n・水泳教室：対象が50歳以上で、プール利用券が2500円かかるため不可。\n・ランニング教室：土曜日の午後（18〜19時）のため不可。\n・テニス教室：土曜午前9〜11時、対象は小5以上（20歳も対象）、費用1500円（2000円以内）、ラケットの貸出可とすべての条件を満たしています。\nしたがって正解は 2 の「テニス教室」です。"
+    },
+    {
+      "id": "search-7-q2",
+      "questionNumber": "2",
+      "questionText": "ワンさんは何月何日までに申し込みをしなければならないか。",
+      "options": [
+        "2月4日",
+        "2月15日",
+        "2月10日",
+        "2月28日"
+      ],
+      "correct": 4,
+      "correctOption": "2月28日",
+      "explanation": "ワンさんが申し込むのは「テニス教室」です。テニス教室の案内欄にある「締切」は「2月28日（土）」となっているため、正解は 4 の「2月28日」です。"
+    }
+  ]
+}

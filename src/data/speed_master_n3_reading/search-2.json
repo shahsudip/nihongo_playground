@@ -1,0 +1,96 @@
+{
+  "id": "search-2",
+  "chapterId": "search-2",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "情報検索",
+  "sectionEn": "Information Retrieval",
+  "mondaiNumber": 2,
+  "targetMinutes": 8,
+  "title": "問題 2（情報検索）",
+  "instruction": "問題2 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>は、あるサービスについての支払方法の案内である。下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0093.jpg",
+  "passageText": "<div class=\"space-y-4\"><div class=\"speed-master-memo-card leading-relaxed\"><p>まり子さんは先日、海外の良い商品を安く買うために、<ruby>通信販売<rt>つうしんはんばい</rt></ruby>のサービスを利用してみることにしました。最初に手続きをする際、支払方法を決めなければなりませんが、まり子さんは毎日仕事が忙しく、お金を振り込むのが遅れて困ることが多いです。</p></div><div class=\"speed-master-letter-card leading-relaxed space-y-4\"><p>この度は、ABCショップにご入会のお申し込みをいただき、ありがとうございます。さっそくですが、サービスのご利用を始める前に、以下にしたがって、ご入会の手続きをお願いします。</p><div class=\"text-center text-[var(--sm-text-secondary)] py-1\">:<br>（前略）<br>:</div><div><p class=\"font-bold mb-2\">【お支払方法について】</p><p class=\"font-semibold\">●クレジットカード<sup>（※1）</sup>、銀行、郵便局の中から一つお選びください。</p><p class=\"text-sm mt-1 text-[var(--sm-text-secondary)]\">※クレジットカードの場合、ご注文をいただければ、すぐに商品をお送りします。</p><p class=\"text-sm mt-1 text-[var(--sm-text-secondary)]\">※銀行または郵便局の場合、ご注文をいただき、ご入金<sup>（※2）</sup>が確認された後に、商品をお送りします。</p></div><div class=\"space-y-2 text-sm md:text-base border-t border-[var(--sm-border-strong)] pt-3\"><p>☆お支払方法が決まり、お申し込みの手続きが<ruby>済<rt>す</rt></ruby>んだら、手続き完了と会員ID<sup>（※3）</sup>をお知らせするメールをお送りします。メールをお受け取り後は、いつでもサービスをご利用になれます。</p><p>☆<ruby>新規<rt>しんき</rt></ruby><sup>（※4）</sup>ご入会のサービスとして、入会のお申し込み日から1か月間、全商品1割引きとさせていただきます。</p></div><div class=\"text-right font-bold pt-2 text-[var(--sm-text-primary)]\">ABCショップ</div></div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）クレジットカード",
+      "definition": "現金を使わないで買い物ができるカード"
+    },
+    {
+      "term": "（※2）入金（にゅうきん）",
+      "definition": "お金を払うこと、特に振り込むこと"
+    },
+    {
+      "term": "（※3）ID（アイディー）",
+      "definition": "その人であることを確認するための番号など"
+    },
+    {
+      "term": "（※4）新規（しんき）",
+      "definition": "新たに何かをすること"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "通信販売",
+      "reading": "つうしんはんばい",
+      "meaning": "mail order, online/catalog shopping"
+    },
+    {
+      "word": "振り込む",
+      "reading": "ふりこむ",
+      "meaning": "to make payment by bank transfer, deposit"
+    },
+    {
+      "word": "入会",
+      "reading": "にゅうかい",
+      "meaning": "joining, enrollment, admission"
+    },
+    {
+      "word": "支払方法",
+      "reading": "しはらいほうほう",
+      "meaning": "payment method"
+    },
+    {
+      "word": "完了",
+      "reading": "かんりょう",
+      "meaning": "completion"
+    },
+    {
+      "word": "割引",
+      "reading": "わりびき",
+      "meaning": "discount"
+    }
+  ],
+  "questions": [
+    {
+      "id": "search-2-q1",
+      "questionNumber": "1",
+      "questionText": "まり子さんにとって、一番便利な支払方法はどれか。",
+      "options": [
+        "郵便局で払う。",
+        "銀行で払う。",
+        "クレジットカードで払う。",
+        "直接、店で払う。"
+      ],
+      "correct": 3,
+      "correctOption": "クレジットカードで払う。",
+      "explanation": "まり子さんは「毎日仕事が忙しく、お金を振り込むのが遅れて困ることが多い」とあります。クレジットカードであればわざわざ銀行や郵便局に行って振り込む必要がなく、注文後すぐに商品が発送されるため、最も便利です。したがって正解は 3 です。"
+    },
+    {
+      "id": "search-2-q2",
+      "questionNumber": "2",
+      "questionText": "サービスの利用について、正しいのはどれか。",
+      "options": [
+        "郵便局の場合、商品を受け取ってからお金を振り込む。",
+        "最初の注文から1か月間は1割引きになる。",
+        "入会の手続きが完了し、メールを受け取ったら、その日のうちにサービスが利用できる。",
+        "入会の手続きが完了したら、カードが送られる。"
+      ],
+      "correct": 3,
+      "correctOption": "入会の手続きが完了し、メールを受け取ったら、その日のうちにサービスが利用できる。",
+      "explanation": "案内文に「メールをお受け取り後は、いつでもサービスをご利用になれます」とあるため、メールを受け取ればその日のうちからサービスを利用できます（正解は 3）。1は「ご入金が確認された後に商品をお送りします」とあるため誤り、2は「入会のお申し込み日から1か月間」であり「最初の注文から」ではないため誤り、4はカードが送られるという記述はなく会員IDがメールで送られるため誤りです。"
+    }
+  ]
+}

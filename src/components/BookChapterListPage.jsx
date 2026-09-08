@@ -7,106 +7,113 @@ import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 import PowerDrillChapterList from './PowerDrillChapterList.jsx';
 import StandardChapterList from './StandardChapterList.jsx';
+import { STATIC_BOOKS } from '../data/static_books_catalog.js';
 
 const BookChapterListPage = () => {
   const { bookId } = useParams();
   const { currentUser } = useAuth();
-  const [book, setBook] = useState(null);
+  
+  const staticBook = STATIC_BOOKS.find(b => b.id === bookId) || null;
+  const [book, setBook] = useState(staticBook);
   const [chapters, setChapters] = useState([]);
   const [history, setHistory] = useState({});
-  const [loading, setLoading] = useState(true);
+  // If we already have static book info and it's a specialized reading book, no blocking spinner needed
+  const isReadingBook = ['speed-master-n3-reading', 'shinkanzen-master-n3-reading', 'shinkanzen-master-n3-listening', 'sou-matome-n3-reading'].includes(bookId);
+  const [loading, setLoading] = useState(!staticBook);
   const [error, setError] = useState(null);
   const isPowerDrill = bookId.includes('power-drill');
 
   useEffect(() => {
+    let isMounted = true;
+
     const fetchChaptersAndProgress = async () => {
       try {
-        setLoading(true);
+        if (!staticBook) {
+          setLoading(true);
+        }
         setError(null);
 
-        // 1. Fetch book metadata
-        let bookData = null;
-        const bookDocRef = doc(db, 'books', bookId);
-        const bookSnap = await getDoc(bookDocRef);
-
-        if (bookSnap.exists()) {
-          bookData = { id: bookSnap.id, ...bookSnap.data() };
-        } else {
-          // Fallback to local
-          const { sampleBooks } = await import('../data/book_data.jsx');
-          const localBook = sampleBooks.find(b => b.id === bookId);
-          if (localBook) {
-            bookData = {
-              id: localBook.id,
-              title: localBook.title,
-              description: localBook.description,
-              level: localBook.level,
-              category: localBook.category,
-            };
+        // 1. Fetch book metadata if not in static catalog
+        let bookData = staticBook;
+        if (!bookData) {
+          const bookDocRef = doc(db, 'books', bookId);
+          const bookSnap = await getDoc(bookDocRef);
+          if (bookSnap.exists()) {
+            bookData = { id: bookSnap.id, ...bookSnap.data() };
           }
         }
 
         if (!bookData) {
-          setError("Book not found.");
-          setLoading(false);
+          if (isMounted) {
+            setError("Book not found.");
+            setLoading(false);
+          }
           return;
         }
 
-        // 2. Fetch chapters or topics
-        const subColName = bookId.startsWith('tango') ? 'topics' : 'chapters';
-        const chaptersColRef = collection(db, 'books', bookId, subColName);
-        const chaptersSnap = await getDocs(chaptersColRef);
-        
-        let chaptersList = [];
-        chaptersSnap.forEach(docSnap => {
-          chaptersList.push({ id: docSnap.id, ...docSnap.data() });
-        });
+        if (isMounted) setBook(bookData);
 
-        // Fallback or merge with local chapters
-        const { sampleBooks } = await import('../data/book_data.jsx');
-        const localBook = sampleBooks.find(b => b.id === bookId);
-        if (chaptersList.length === 0) {
-          if (localBook && localBook.chapters) {
-            chaptersList = localBook.chapters;
-          }
-        } else if (localBook && localBook.chapters) {
-          const existingIds = new Set(chaptersList.map(c => c.id));
-          localBook.chapters.forEach(localCh => {
-            if (!existingIds.has(localCh.id)) {
-              chaptersList.push(localCh);
-            }
+        // 2. Specialized reading books have static UI layouts and don't need heavy chapter downloads
+        if (isReadingBook) {
+          if (isMounted) setLoading(false);
+        } else {
+          // Fetch chapters or topics for quiz books (Power Drill, Tango, Shin Nihongo 500)
+          const subColName = bookId.startsWith('tango') ? 'topics' : 'chapters';
+          const chaptersColRef = collection(db, 'books', bookId, subColName);
+          const chaptersSnap = await getDocs(chaptersColRef);
+          
+          let chaptersList = [];
+          chaptersSnap.forEach(docSnap => {
+            chaptersList.push({ id: docSnap.id, ...docSnap.data() });
           });
+
+          // Fallback or merge with local chapters
+          if (chaptersList.length === 0) {
+            const { sampleBooks } = await import('../data/book_data.jsx');
+            const localBook = sampleBooks.find(b => b.id === bookId);
+            if (localBook && localBook.chapters) {
+              chaptersList = localBook.chapters;
+            }
+          }
+          if (isMounted) {
+            setChapters(chaptersList);
+            setLoading(false);
+          }
         }
 
-        setBook(bookData);
-        setChapters(chaptersList);
-
-        // 3. Fetch progress history for this book
+        // 3. Fetch progress history for this book in background
         if (currentUser) {
           const historyColRef = collection(db, 'users', currentUser.uid, 'quizHistory');
-          const historySnap = await getDocs(historyColRef);
-          
-          const bookHistory = {};
-          historySnap.forEach(docSnap => {
-            const data = docSnap.data();
-            if (data && data.type === 'book' && data.quizId.startsWith(`${bookId}-`)) {
-              const chapId = data.quizId.replace(`${bookId}-`, '');
-              bookHistory[chapId] = data;
-            }
+          getDocs(historyColRef).then(historySnap => {
+            if (!isMounted) return;
+            const bookHistory = {};
+            historySnap.forEach(docSnap => {
+              const data = docSnap.data();
+              if (data && data.type === 'book' && data.quizId.startsWith(`${bookId}-`)) {
+                const chapId = data.quizId.replace(`${bookId}-`, '');
+                bookHistory[chapId] = data;
+              }
+            });
+            setHistory(bookHistory);
+          }).catch(err => {
+            console.warn("Background history load:", err);
           });
-          setHistory(bookHistory);
         }
 
       } catch (err) {
         console.error("Error loading chapter page details:", err);
-        setError("Failed to load chapters: " + err.message);
+        if (isMounted) setError("Failed to load chapters: " + err.message);
       } finally {
-        setLoading(false);
+        if (isMounted) setLoading(false);
       }
     };
 
     fetchChaptersAndProgress();
-  }, [bookId, currentUser]);
+
+    return () => {
+      isMounted = false;
+    };
+  }, [bookId, currentUser, staticBook, isReadingBook]);
 
   if (loading) return <LoadingSpinner />;
   if (error) return <div className="error-message">{error}</div>;

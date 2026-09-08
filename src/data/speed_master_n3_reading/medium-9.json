@@ -1,0 +1,158 @@
+{
+  "id": "medium-9",
+  "chapterId": "medium-9",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（中文）",
+  "sectionEn": "Medium Passages",
+  "mondaiNumber": 9,
+  "targetMinutes": 7,
+  "title": "問題 9（中文）",
+  "instruction": "問題9 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0055.jpg",
+  "footnotesDiagramRight": "/speed_master_n3_pages/mondai_medium_9_cars_diagram.png",
+  "passageLayout": "html",
+  "passageText": "<p>日々新しい技術が求められる自動車産業の世界で最近注目されているのが、日本の自動車メーカー（※1）が開発に成功したという技術だ。<ruby>車線<rt>しゃせん</rt></ruby>（※2）を<ruby>変更<rt>へんこう</rt></ruby>する、あるいは車をバックさせる（※3）ときに、後ろの車とぶつかる危険が<ruby>生<rt>しょう</rt></ruby>じたら、自動でブレーキがかかる<ruby>装置<rt>そうち</rt></ruby>だ。</p><p>この新技術の以前に、前と横方向の<ruby>衝突<rt>しょうとつ</rt></ruby>を防ぐ技術は<ruby>実用化<rt>じつようか</rt></ruby>されていた。前の車にぶつかりそうになったら、ブレーキがかかる。あるいは、横の車との<ruby>衝突<rt>しょうとつ</rt></ruby>を防ぐために、<ruby>車線<rt>しゃせん</rt></ruby>を<ruby>越<rt>こ</rt></ruby>えそうになったら元の<ruby>車線<rt>しゃせん</rt></ruby>に戻す、という二つの技術だ。今回の新技術によって、前後左右すべての方向で<ruby>衝突<rt>しょうとつ</rt></ruby>を<ruby>避<rt>さ</rt></ruby>けるための<ruby>装置<rt>そうち</rt></ruby>が完成した、ということらしい。</p><p>ぶつかる心配が減って安心して車が使えると思えば、私のように車の運転が苦手という人にも、この新技術は<u><sub>①</sub>とてもありがたいものに思える</u>。</p><p class=\"text-right text-xs opacity-80 mt-4 leading-relaxed\">（日産自動車(株)のホームページより「ニュース」参照、2010年7月<br>http://www.nissan-global.com/JP/NEWS/2008/）</p>",
+  "footnotes": [
+    {
+      "term": "（※1）メーカー",
+      "definition": "製造会社"
+    },
+    {
+      "term": "（※2）車線",
+      "definition": "道路で、線を引くなどして示された車が通る部分"
+    },
+    {
+      "term": "（※3）バックする",
+      "definition": "後ろに進む"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "業界",
+      "reading": "ぎょうかい",
+      "meaning": "industry"
+    },
+    {
+      "word": "技術",
+      "reading": "ぎじゅつ",
+      "meaning": "technology"
+    },
+    {
+      "word": "進化",
+      "reading": "しんか",
+      "meaning": "progress, evolution"
+    },
+    {
+      "word": "もたらす",
+      "reading": "もたらす",
+      "meaning": "to bring about"
+    },
+    {
+      "word": "注目する",
+      "reading": "ちゅうもくする",
+      "meaning": "to take notice"
+    },
+    {
+      "word": "メーカー",
+      "reading": "メーカー",
+      "meaning": "manufacturer"
+    },
+    {
+      "word": "開発",
+      "reading": "かいはつ",
+      "meaning": "development"
+    },
+    {
+      "word": "ぶつかる",
+      "reading": "ぶつかる",
+      "meaning": "to collide with"
+    },
+    {
+      "word": "生じる",
+      "reading": "しょうじる",
+      "meaning": "to occur"
+    },
+    {
+      "word": "ブレーキがかかる",
+      "reading": "ブレーキがかかる",
+      "meaning": "to put the brakes on"
+    },
+    {
+      "word": "衝突",
+      "reading": "しょうとつ",
+      "meaning": "conflict, collision"
+    },
+    {
+      "word": "実用化",
+      "reading": "じつようか",
+      "meaning": "to put to practical use"
+    },
+    {
+      "word": "避ける",
+      "reading": "さける",
+      "meaning": "to avoid"
+    },
+    {
+      "word": "ありがたい",
+      "reading": "ありがたい",
+      "meaning": "to be thankful, appreciative"
+    },
+    {
+      "word": "自動",
+      "reading": "じどう",
+      "meaning": "automatic"
+    },
+    {
+      "word": "苦労",
+      "reading": "くろう",
+      "meaning": "pain, trouble"
+    }
+  ],
+  "questions": [
+    {
+      "id": "medium-9-q1",
+      "questionNumber": "1",
+      "questionText": "新技術の説明として正しいのはどれか。",
+      "options": [
+        "<ruby>誰<rt>だれ</rt></ruby>でも安心して運転ができるようになる。",
+        "後ろの車との<ruby>衝突<rt>しょうとつ</rt></ruby>を防ぐことができる。",
+        "車線を変更する前に、安全かどうかを知らせる。",
+        "車をバックさせるときに、後ろが見えるようにする。"
+      ],
+      "correct": 2,
+      "correctOption": "後ろの車との<ruby>衝突<rt>しょうとつ</rt></ruby>を防ぐことができる。",
+      "explanation": "本文に「後ろの車とぶつかる危険が生じたら、自動でブレーキがかかる装置だ」とあり、今回の新技術は後ろの車との衝突を防ぐ技術です。したがって正解は 2 です。"
+    },
+    {
+      "id": "medium-9-q2",
+      "questionNumber": "2",
+      "questionText": "新技術より前に<ruby>実用化<rt>じつようか</rt></ruby>されていた技術はどれか。",
+      "options": [
+        "前の車が近くなると、そのことを前の車に知らせる技術",
+        "横の車が近くなったら、自動でスピードをあげる技術",
+        "後ろの車が近くなりすぎると、自動でブレーキがかかる技術",
+        "前の車に近くなりすぎると、自動でブレーキがかかる技術"
+      ],
+      "correct": 4,
+      "correctOption": "前の車に近くなりすぎると、自動でブレーキがかかる技術",
+      "explanation": "本文に「この新技術の以前に、前と横方向の衝突を防ぐ技術は実用化されていた。前の車にぶつかりそうになったら、ブレーキがかかる」とあります。したがって正解は 4 です。"
+    },
+    {
+      "id": "medium-9-q3",
+      "questionNumber": "3",
+      "questionText": "<u>①とてもありがたいものに思える</u>とあるが、筆者はどうしてありがたいと思ったのか。",
+      "options": [
+        "ぶつかっても<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>だと安心できる車だから。",
+        "運転が苦手でも不安を感じなくていい車だから。",
+        "運転するときに何でも自動でやってくれる車だから。",
+        "<ruby>開発<rt>かいはつ</rt></ruby>した人の苦労が感じられる車だから。"
+      ],
+      "correct": 2,
+      "correctOption": "運転が苦手でも不安を感じなくていい車だから。",
+      "explanation": "本文に「ぶつかる心配が減って安心して車が使えると思えば、私のように車の運転が苦手という人にも、この新技術はとてもありがたいものに思える」とあります。運転が苦手な人でも衝突の心配が減り、不安を感じずに安心して運転できるためありがたいと感じています。したがって正解は 2 です。"
+    }
+  ]
+}

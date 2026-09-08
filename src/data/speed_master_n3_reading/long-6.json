@@ -1,0 +1,139 @@
+{
+  "id": "long-6",
+  "chapterId": "long-6",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（長文）",
+  "sectionEn": "Long Passages",
+  "mondaiNumber": 6,
+  "targetMinutes": 10,
+  "title": "問題 6（長文）",
+  "instruction": "問題6 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0076.jpg",
+  "passageText": "<div class=\"speed-master-letter-card\"><div class=\"text-center mb-4\"><h3 class=\"font-bold text-lg md:text-xl text-[var(--sm-accent-blue)]\">「エネルギー祭り」のご案内</h3></div><p class=\"mb-3\">〇〇市では、ゴールデンウィーク（4月29日〜5月5日）の1週間、「エネルギー祭り」を行います。太陽エネルギーを利用して電気を作る「<ruby>太陽光発電<rt>たいようこうはつでん</rt></ruby>」を知り、エネルギー問題を考えるイベントです。</p><p class=\"mb-3\">太陽エネルギーには、なくなることがない、空気を汚さない、「ただ」で地球上のどこででも得られる、という長所があります。今、問題になっている<ruby>地球温暖化<rt>ちきゅうおんだんか</rt></ruby>の<ruby>主<rt>おも</rt></ruby>な<ruby>原因<rt>げんいん</rt></ruby>である<ruby>二酸化炭素<rt>にさんかたんそ</rt></ruby>（CO<sub>2</sub>）を出さないものです。このお祭りでは、太陽エネルギーを利用した<ruby>発電装置<rt>はつでんそうち</rt></ruby><sup>（※1）</sup>のある住宅や電気自動車などのモデルを通して、毎日の生活の中で太陽エネルギーがどう役立つかを<ruby>実感<rt>じっかん</rt></ruby>する<sup>（※2）</sup>ことができます。</p><p class=\"mb-3\"><ruby>政府<rt>せいふ</rt></ruby>も、<ruby>太陽光発電<rt>たいようこうはつでん</rt></ruby>を進める<ruby>方針<rt>ほうしん</rt></ruby><sup>（※3）</sup>を示し、その利用量を10年後の2020年には今の10倍、2030年には40倍にすることを<ruby>目標<rt>もくひょう</rt></ruby>としています。さらに、太陽光発電装置を買う人には、そのためのお金を<ruby>援助<rt>えんじょ</rt></ruby>します。</p><p class=\"mb-4\">子どもたちが日本、そして地球の<ruby>環境<rt>かんきょう</rt></ruby>を考えるきっかけになるこのイベントに、ぜひご家族で参加してください。</p><div class=\"bg-[var(--sm-card-alt-bg)] border border-[var(--sm-border-strong)] rounded-lg p-4 my-4 space-y-1 text-sm md:text-base\"><p><strong><ruby>期間<rt>きかん</rt></ruby>：</strong>4月29日〜5月5日</p><p><strong>日時：</strong>10：00〜16：00</p><p><strong>場所：</strong><ruby>市役所前広場<rt>しやくしょまえひろば</rt></ruby></p></div><div class=\"border-2 border-dashed border-[var(--sm-border-strong)] rounded-lg p-4 my-4\"><p class=\"font-bold text-center mb-2\">《電気自動車乗車会》</p><p class=\"leading-relaxed\">毎日　①12：00　②13：00　③14：00　④15：00<br/>（1回5分の乗車で、<ruby>各回先着<rt>かくかいせんちゃく</rt></ruby><sup>（※4）</sup>10人まで）</p><p class=\"text-xs text-[var(--sm-text-secondary)] mt-2\">※会場へは車を使わず、バスや自転車の利用をお願いします。</p></div><div class=\"text-right font-bold mt-4 text-[var(--sm-text-primary)]\">〇〇市<ruby>環境課<rt>かんきょうか</rt></ruby></div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）装置（そうち）",
+      "definition": "機械やしくみ"
+    },
+    {
+      "term": "（※2）実感する（じっかんする）",
+      "definition": "実際に経験しているように感じる"
+    },
+    {
+      "term": "（※3）方針（ほうしん）",
+      "definition": "あることをする際の、だいたいの方向・考え方"
+    },
+    {
+      "term": "（※4）先着（せんちゃく）",
+      "definition": "早く着くこと"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "エネルギー",
+      "reading": "エネルギー",
+      "meaning": "energy"
+    },
+    {
+      "word": "長所",
+      "reading": "ちょうしょ",
+      "meaning": "advantage"
+    },
+    {
+      "word": "住宅",
+      "reading": "じゅうたく",
+      "meaning": "residence"
+    },
+    {
+      "word": "モデル",
+      "reading": "モデル",
+      "meaning": "model"
+    },
+    {
+      "word": "政府",
+      "reading": "せいふ",
+      "meaning": "government"
+    },
+    {
+      "word": "目標",
+      "reading": "もくひょう",
+      "meaning": "objective"
+    },
+    {
+      "word": "きっかけ",
+      "reading": "きっかけ",
+      "meaning": "impetus, motive"
+    },
+    {
+      "word": "方針",
+      "reading": "ほうしん",
+      "meaning": "plan, policy"
+    },
+    {
+      "word": "計画的に",
+      "reading": "けいかくてきに",
+      "meaning": "systematically"
+    }
+  ],
+  "questions": [
+    {
+      "id": "long-6-q1",
+      "questionNumber": "1",
+      "questionText": "「エネルギー祭り」の目的は何か。",
+      "options": [
+        "<ruby>太陽光発電<rt>たいようこうはつでん</rt></ruby>の利用を増やす方法を考える。",
+        "<ruby>太陽光発電<rt>たいようこうはつでん</rt></ruby>からエネルギー問題を考える。",
+        "市民に電気自動車に乗ってみてもらう。",
+        "<ruby>太陽光発電<rt>たいようこうはつでん</rt></ruby>のある家に住んでみてもらう。"
+      ],
+      "correct": 2,
+      "correctOption": "<ruby>太陽光発電<rt>たいようこうはつでん</rt></ruby>からエネルギー問題を考える。",
+      "explanation": "本文冒頭に「太陽エネルギーを利用して電気を作る『太陽光発電』を知り、エネルギー問題を考えるイベントです」と明記されています。したがって正解は 2 です。"
+    },
+    {
+      "id": "long-6-q2",
+      "questionNumber": "2",
+      "questionText": "太陽エネルギーの<ruby>特徴<rt>とくちょう</rt></ruby>と<u>いえないもの</u>はどれか。",
+      "options": [
+        "いくら使っても減らない。",
+        "使っても空気を汚さない。",
+        "地球上、どこの国にもある。",
+        "<ruby>地球温暖化<rt>ちきゅうおんだんか</rt></ruby>を進める。"
+      ],
+      "correct": 4,
+      "correctOption": "<ruby>地球温暖化<rt>ちきゅうおんだんか</rt></ruby>を進める。",
+      "explanation": "太陽エネルギーは二酸化炭素を出さないため温暖化を防ぐエネルギーであり、「地球温暖化を進める」は誤り（いえないもの）です。したがって正解は 4 です。"
+    },
+    {
+      "id": "long-6-q3",
+      "questionNumber": "3",
+      "questionText": "政府の方針はどれか。",
+      "options": [
+        "<ruby>太陽光発電<rt>たいようこうはつでん</rt></ruby>を利用して、<ruby>地球温暖化<rt>ちきゅうおんだんか</rt></ruby>を進める。",
+        "全国の子どもたちにエネルギー祭りを知ってもらう。",
+        "エネルギー問題を考える子どもたちにお金を<ruby>援助<rt>えんじょ</rt></ruby>する。",
+        "<ruby>太陽光発電<rt>たいようこうはつでん</rt></ruby>の利用量を計画的に増やしていく。"
+      ],
+      "correct": 4,
+      "correctOption": "<ruby>太陽光発電<rt>たいようこうはつでん</rt></ruby>の利用量を計画的に増やしていく。",
+      "explanation": "本文に「政府も、太陽光発電を進める方針を示し、その利用量を10年後の2020年には今の10倍、2030年には40倍にすることを目標としています」とあり、計画的に増やしていく方針が述べられています。したがって正解は 4 です。"
+    },
+    {
+      "id": "long-6-q4",
+      "questionNumber": "4",
+      "questionText": "電気自動車に無料で乗るにはどうすればよいか。",
+      "options": [
+        "切符を買って、まず<ruby>太陽光発電<rt>たいようこうはつでん</rt></ruby>の説明を聞く。",
+        "乗車会が始まる前、早めに会場に行って並ぶ。",
+        "まず<ruby>太陽光発電装置<rt>たいようこうはつでんそうち</rt></ruby>のある<ruby>住宅<rt>じゅうたく</rt></ruby>モデルを見学する。",
+        "会場までバスか自転車で行って、エネルギーを<ruby>節約<rt>せつやく</rt></ruby>する。"
+      ],
+      "correct": 2,
+      "correctOption": "乗車会が始まる前、早めに会場に行って並ぶ。",
+      "explanation": "乗車会の案内欄に「各回先着（早く着くこと）10人まで」と書かれているため、乗車するには早めに会場へ行って並ぶ必要があります。したがって正解は 2 です。"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "short-10",
+  "chapterId": "short-10",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 10,
+  "targetMinutes": 3,
+  "title": "問題 10（短文）",
+  "instruction": "問題10 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0035.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"speed-master-email-card\"><div class=\"speed-master-email-meta\"><div><div>差出人：○○○○</div><div>宛先：○○○○</div><div>CC：</div><div>件名：○○○○○○○○</div></div><div class=\"speed-master-email-reply-btn\"><span>↶</span> 返信</div></div><div class=\"speed-master-email-body\"><p class=\"font-bold mb-3\">中田くみ子様</p><p class=\"mb-3\">・・・・この度はご予約ありがとうございます。ご到着の予定が10月25日の午後5時となっておりますが、<ruby>変更<rt>へんこう</rt></ruby>がある場合は、まずはお電話でご連絡ください。</p><p class=\"mb-2\">なお、キャンセル<sup>(※1)</sup>料は以下の通りです。</p><div class=\"pl-4 mb-4 space-y-1 text-sm font-semibold\"><p>連絡なしで<ruby>宿泊<rt>しゅくはく</rt></ruby>しない：<ruby>宿泊<rt>しゅくはく</rt></ruby>料金の100％</p><p><ruby>宿泊<rt>しゅくはく</rt></ruby>の当日　　　　　：<ruby>宿泊<rt>しゅくはく</rt></ruby>料金の80％</p><p><ruby>宿泊<rt>しゅくはく</rt></ruby>の前の日　　　　：<ruby>宿泊<rt>しゅくはく</rt></ruby>料金の50％</p></div><p class=\"mb-4\">それでは、お待ちいたしております。</p><p class=\"text-right\"><ruby>箱根<rt>はこね</rt></ruby>温泉　ふじ屋<br>鈴木明</p></div></div>",
+  "footnotes": [
+    {
+      "term": "（※1）キャンセル",
+      "definition": "取り消すこと"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "変更",
+      "reading": "へんこう",
+      "meaning": "change, alteration"
+    },
+    {
+      "word": "宿泊",
+      "reading": "しゅくはく",
+      "meaning": "accommodation, lodging, staying over"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-10-q1",
+      "questionNumber": "1",
+      "questionText": "上の内容として正しいのはどれか。",
+      "options": [
+        "到着予定が変わる場合、連絡しないとキャンセル料がかかる。",
+        "10月25日にキャンセルした場合は、宿泊料金の半分を払う。",
+        "10月23日にキャンセルした場合は、キャンセル料はかからない。",
+        "10月26日朝にキャンセルした場合は、宿泊料金の80％を払う。"
+      ],
+      "correct": 3,
+      "correctOption": "10月23日にキャンセルした場合は、キャンセル料はかからない。",
+      "explanation": "到着予定日は10月25日です。キャンセル料が発生するのは「宿泊の前の日（10月24日：50％）」「宿泊の当日（10月25日：80％）」「連絡なしで宿泊しない場合（100％）」です。10月23日は2日前であるためキャンセル料は発生せず、3 が正しいです。到着予定の変更でキャンセル料が発生する記述はないため 1 は誤り、当日のキャンセル料は80％なので 2 は誤り、宿泊予定日を過ぎた場合は「連絡なしで宿泊しない場合（100％）」に該当するため 4 も誤りです。"
+    }
+  ]
+}

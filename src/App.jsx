@@ -37,6 +37,7 @@ import BookQuizTakerPage from './components/BookQuizTakerPage.jsx';
 import SomatomeN3Book from './components/SomatomeN3Book.jsx';
 import ShinkanzenN3ReadingBook from './components/ShinkanzenN3ReadingBook.jsx';
 import ShinkanzenN3ListeningBook from './components/ShinkanzenN3ListeningBook.jsx';
+import SpeedMasterN3ReadingBook from './components/SpeedMasterN3ReadingBook.jsx';
 import TangoReadingPage from './components/TangoReadingPage.jsx';
 
 // --- PRACTICE SETS ---
@@ -161,6 +162,14 @@ export default function App() {
           <Route
             path="/books/shinkanzen-master-n3-listening/chapters/:chapterId"
             element={<ProtectedRoute><ShinkanzenN3ListeningBook /></ProtectedRoute>}
+          />
+          <Route
+            path="/books/speed-master-n3-reading/chapters/:chapterId"
+            element={<ProtectedRoute><SpeedMasterN3ReadingBook /></ProtectedRoute>}
+          />
+          <Route
+            path="/books/speed-master-n3-reading"
+            element={<Navigate to="/books/speed-master-n3-reading/chapters/short-1" replace />}
           />
           <Route
             path="/books/:bookId/chapters/:chapterId"

@@ -1,0 +1,71 @@
+{
+  "id": "short-4",
+  "chapterId": "short-4",
+  "bookId": "speed-master-n3-reading",
+  "part": 1,
+  "partTitle": "第1部：実戦練習",
+  "partTitleEn": "Practice Exercises",
+  "section": "内容理解（短文）",
+  "sectionEn": "Short Passages",
+  "mondaiNumber": 4,
+  "targetMinutes": 3,
+  "title": "問題 4（短文）",
+  "instruction": "問題4 つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0029.jpg",
+  "passageLayout": "html",
+  "passageText": "<p>「<ruby>家紋<rt>かもん</rt></ruby>」を知っていますか。</p><p>それぞれの家が持っている<ruby>印<rt>しるし</rt></ruby>のことです。最初は1500年代の終わりごろ、戦争で<ruby>旗<rt>はた</rt></ruby>に描かれ、<ruby>目印<rt>めじるし</rt></ruby>として使われました。それが<ruby>江戸<rt>えど</rt></ruby>時代（1603年〜1868年）になると、<ruby>武士<rt>ぶし</rt></ruby>の家の<ruby>印<rt>しるし</rt></ruby>として、<ruby>衣服<rt>いふく</rt></ruby>につけるようになりました。その後、<ruby>商人<rt>しょうにん</rt></ruby>など<ruby>武士<rt>ぶし</rt></ruby>以外の人たちの間でも、<ruby>冠婚葬祭<rt>かんこんそうさい</rt></ruby><sup>（※1）</sup>に着る着物につける習慣ができたと言われています。</p><p>現代でも、結婚式や<ruby>葬式<rt>そうしき</rt></ruby>などでは、<ruby>家紋<rt>かもん</rt></ruby>のついた着物をよく見ます。</p>",
+  "footnotes": [
+    {
+      "term": "（※1）<ruby>冠婚葬祭<rt>かんこんそうさい</rt></ruby>",
+      "definition": "結婚式、<ruby>葬式<rt>そうしき</rt></ruby>（人がなくなった時に行う式）など"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "印",
+      "reading": "しるし",
+      "meaning": "seal, mark, crest"
+    },
+    {
+      "word": "旗",
+      "reading": "はた",
+      "meaning": "flag, banner"
+    },
+    {
+      "word": "目印",
+      "reading": "めじるし",
+      "meaning": "landmark, sign, mark"
+    },
+    {
+      "word": "衣服",
+      "reading": "いふく",
+      "meaning": "clothes, clothing"
+    },
+    {
+      "word": "商人",
+      "reading": "しょうにん",
+      "meaning": "merchant, trader"
+    },
+    {
+      "word": "武士",
+      "reading": "ぶし",
+      "meaning": "warrior, samurai"
+    }
+  ],
+  "questions": [
+    {
+      "id": "short-4-q1",
+      "questionNumber": "1",
+      "questionText": "<ruby>家紋<rt>かもん</rt></ruby>について、正しいのはどれか。",
+      "options": [
+        "<ruby>武士<rt>ぶし</rt></ruby>の家にはふつう<ruby>家紋<rt>かもん</rt></ruby>が二つある。",
+        "<ruby>江戸<rt>えど</rt></ruby>時代より以前にも、使われていた。",
+        "最初に使ったのは<ruby>商人<rt>しょうにん</rt></ruby>である。",
+        "昔は、結婚式と<ruby>葬式<rt>そうしき</rt></ruby>にだけ使われた。"
+      ],
+      "correct": 2,
+      "correctOption": "<ruby>江戸<rt>えど</rt></ruby>時代より以前にも、使われていた。",
+      "explanation": "本文に「最初は1500年代の終わりごろ、戦争で旗に描かれ、目印として使われました。それが江戸時代（1603年〜1868年）になると…」とあり、江戸時代より前（1500年代末）からすでに使われていました。したがって正解は 2 です。"
+    }
+  ]
+}

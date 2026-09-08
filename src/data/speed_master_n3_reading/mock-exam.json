@@ -1,0 +1,755 @@
+{
+  "id": "mock-exam",
+  "chapterId": "mock-exam",
+  "bookId": "speed-master-n3-reading",
+  "part": 2,
+  "partTitle": "第2部：模擬試験",
+  "partTitleEn": "Mock Examination",
+  "section": "模擬試験",
+  "sectionEn": "Full Mock Exam",
+  "mondaiNumber": 1,
+  "targetMinutes": 70,
+  "title": "模擬試験（本番形式）",
+  "instruction": "日本語能力試験 N3 読解 模擬試験（制限時間：70分）<br><span class=\"text-xs text-slate-600\">問題1〜4（短文 4問）、問題5〜6（中文 6問）、問題7（長文 4問）、問題8（情報検索 2問）の全16問です。</span>",
+  "imageSrc": "/speed_master_n3_pages/speed_master_n3_page-0122.jpg",
+  "passageLayout": "html",
+  "passageText": "<div class=\"mock-exam-wrapper space-y-8\">\n  <!-- 問題1 (短文1) -->\n  <section class=\"p-4 rounded-xl border border-slate-200 bg-white shadow-sm\">\n    <div class=\"flex items-center justify-between border-b border-slate-100 pb-2 mb-3\">\n      <span class=\"font-bold text-blue-700 text-sm md:text-base\">問題 1（短文 1）</span>\n      <span class=\"text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-medium\">問 1 に対応</span>\n    </div>\n    <h3 class=\"font-bold text-center text-slate-800 text-base mb-3\">おいしい紅茶をいただくための注意点</h3>\n    <div class=\"space-y-2 text-slate-800 text-sm md:text-base leading-relaxed\">\n      <p>1）紅茶の葉は<ruby>密閉<rt>みっぺい</rt></ruby><sup>（※1）</sup><ruby>容器<rt>ようき</rt></ruby>に<ruby>保存<rt>ほぞん</rt></ruby><sup>（※2）</sup>する。</p>\n      <p>2）紅茶の葉の<ruby>分量<rt>ぶんりょう</rt></ruby><sup>（※3）</sup>を正確に量る。<br>\n      　○細かい葉の場合……紅茶用スプーンで1杯（約2.5グラム）<br>\n      　○大きい葉の場合……紅茶用スプーンで1杯（約3グラム）</p>\n      <p>3）<ruby>新鮮<rt>しんせん</rt></ruby>な水道水を使い、よく<ruby>沸騰<rt>ふっとう</rt></ruby>させる<sup>（※4）</sup>。　＊日本の水道水は紅茶に<ruby>合<rt>あ</rt></ruby>う。</p>\n      <p>4）<ruby>沸騰<rt>ふっとう</rt></ruby>したお湯をポット<sup>（※5）</sup>に入れてからカップに移すまでの時間を計る。<br>\n      　○細かい葉の場合……約2〜2.5分<br>\n      　○大きい葉の場合……約3分</p>\n    </div>\n  </section>\n\n  <!-- 問題2 (短文2) -->\n  <section class=\"p-4 rounded-xl border border-slate-200 bg-white shadow-sm\">\n    <div class=\"flex items-center justify-between border-b border-slate-100 pb-2 mb-3\">\n      <span class=\"font-bold text-blue-700 text-sm md:text-base\">問題 2（短文 2）</span>\n      <span class=\"text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-medium\">問 2 に対応</span>\n    </div>\n    <h3 class=\"font-bold text-center text-slate-800 text-base mb-3\">水泳教室に参加する皆様へ</h3>\n    <div class=\"space-y-3 text-slate-800 text-sm md:text-base leading-relaxed\">\n      <p>水曜日14：00〜15：00、金曜日13：00〜14：00の山田ひろみ先生のクラスは、希望者が多すぎるため、以下の方法で参加者の数を制限します。ご理解とご協力をお願いします。</p>\n      <div class=\"bg-slate-50 p-3 rounded-lg border border-slate-100 space-y-1.5\">\n        <p>●クラス開始の15分前から受付で<ruby>整理券<rt>せいりけん</rt></ruby>を配ります。各クラス20人までとします。</p>\n        <p>●<ruby>整理券<rt>せいりけん</rt></ruby>は一人一枚です。ほかの人の分をもらうことはできません。</p>\n        <p>●<ruby>整理券<rt>せいりけん</rt></ruby>は、クラスが始まる時に山田先生に渡してください。</p>\n      </div>\n      <p class=\"text-right font-medium text-slate-600\">以上</p>\n    </div>\n  </section>\n\n  <!-- 問題3 (短文3) -->\n  <section class=\"p-4 rounded-xl border border-slate-200 bg-white shadow-sm\">\n    <div class=\"flex items-center justify-between border-b border-slate-100 pb-2 mb-3\">\n      <span class=\"font-bold text-blue-700 text-sm md:text-base\">問題 3（短文 3）</span>\n      <span class=\"text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-medium\">問 3 に対応</span>\n    </div>\n    <div class=\"text-slate-800 text-sm md:text-base leading-relaxed space-y-3\">\n      <p>普通のガラスは、落としたり何か物がぶつかったりすると簡単に割れるが、車などに使われる強化ガラスはなかなか割れない。実は、二つのガラスの違いは作る方法にある。普通のガラスは、原料を<ruby>加熱<rt>かねつ</rt></ruby>した後ゆっくり冷やすので、その<ruby>過程<rt>かてい</rt></ruby><sup>（※6）</sup>で、表面に目に見えないたくさんの傷ができ、力を加えると傷が広がって割れる。一方、強化ガラスは<ruby>加熱<rt>かねつ</rt></ruby>後<ruby>急激<rt>きゅうげき</rt></ruby><sup>（※7）</sup>に冷やすので、ガラスの表面近くは<ruby>圧縮<rt>あっしゅく</rt></ruby><sup>（※8）</sup>された<ruby>層<rt>そう</rt></ruby><sup>（※9）</sup>となり、力が加わっても表面の傷が広がりにくく、割れにくい。</p>\n    </div>\n  </section>\n\n  <!-- 問題4 (短文4) -->\n  <section class=\"p-4 rounded-xl border border-slate-200 bg-white shadow-sm\">\n    <div class=\"flex items-center justify-between border-b border-slate-100 pb-2 mb-3\">\n      <span class=\"font-bold text-blue-700 text-sm md:text-base\">問題 4（短文 4）</span>\n      <span class=\"text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-medium\">問 4 に対応</span>\n    </div>\n    <h3 class=\"font-bold text-center text-slate-800 text-base mb-3\">「留学生通信」のスタッフ<ruby>募集<rt>ぼしゅう</rt></ruby></h3>\n    <div class=\"text-slate-800 text-sm md:text-base leading-relaxed space-y-2.5\">\n      <p>〈<ruby>対象者<rt>たいしょうしゃ</rt></ruby>〉今年4月に大学生になる留学生で、パソコンのメールで連絡がとれる人。</p>\n      <div class=\"bg-slate-50 p-3 rounded-lg border border-slate-100 space-y-2\">\n        <p><strong>①スタッフA：</strong><br>関係者にインタビューをして記事を書いたり、月1回の土曜日の会議に出席して意見を述べたりする。</p>\n        <p><strong>②スタッフB：</strong><br>記事に関係する資料を集めたり、アンケートの結果をまとめたりする。</p>\n      </div>\n      <p>★<ruby>応募<rt>おうぼ</rt></ruby><sup>（※10）</sup>者は、メールで「スタッフA希望」または「スタッフB希望」と書いて、<ruby>当社<rt>とうしゃ</rt></ruby><sup>（※11）</sup>まで<ruby>送付<rt>そうふ</rt></ruby><sup>（※12）</sup>のこと。</p>\n    </div>\n  </section>\n\n  <!-- 問題5 (中文1) -->\n  <section class=\"p-4 rounded-xl border border-slate-200 bg-white shadow-sm\">\n    <div class=\"flex items-center justify-between border-b border-slate-100 pb-2 mb-3\">\n      <span class=\"font-bold text-indigo-700 text-sm md:text-base\">問題 5（中文 1）</span>\n      <span class=\"text-xs bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded font-medium\">問 5 〜 問 7 に対応</span>\n    </div>\n    <div class=\"text-slate-800 text-sm md:text-base leading-relaxed space-y-3\">\n      <p>このたびは、サクラ<ruby>歩数計<rt>ほすうけい</rt></ruby><sup>（※13）</sup>をお買いいただき、ありがとうございます。<br>以下の点をよく読んで、ご使用ください。</p>\n      \n      <div class=\"space-y-3\">\n        <div>\n          <p class=\"font-bold text-slate-900\">1）身につける方法は、次のどれかにする。　<span class=\"text-xs font-normal text-slate-500\">☆いつも同じでなくてもよい。</span></p>\n          <ul class=\"list-disc list-inside pl-2 space-y-1 text-slate-700\">\n            <li>服のポケットに入れる。</li>\n            <li>かばんに入れる。　<span class=\"text-xs text-slate-500\">☆かばんのポケットに入れて、中であまり動かないようにする。</span></li>\n            <li>ひもをつけて、首から下げる。</li>\n          </ul>\n        </div>\n\n        <div>\n          <p class=\"font-bold text-slate-900\">2）初めて使う時にすること。　<span class=\"text-xs font-normal text-slate-500\">☆これをしないと、正しい数字が<ruby>表示<rt>ひょうじ</rt></ruby><sup>（※14）</sup>されない。2回目からは不要。</span></p>\n          <ul class=\"list-disc list-inside pl-2 space-y-1 text-slate-700\">\n            <li>時刻を合わせる（☞p.16に説明あり）。</li>\n            <li>体重(kg)を入れる（☞p.18に説明あり）。</li>\n            <li><ruby>歩幅<rt>ほはば</rt></ruby><sup>（※15）</sup>(cm)を入れる（☞p.19に説明あり）。　<span class=\"text-xs text-amber-700 font-semibold\">☆<ruby>歩幅<rt>ほはば</rt></ruby>の<ruby>測<rt>はか</rt></ruby>り方は正確に！</span></li>\n            <li>性別を選ぶ（☞p.20に説明あり）。</li>\n          </ul>\n        </div>\n\n        <div>\n          <p class=\"font-bold text-slate-900\">3）操作と表示順</p>\n          <p class=\"text-slate-700 pl-2\"><ruby>歩数計<rt>ほすうけい</rt></ruby>を手に持つと、最初は［現在の時刻］と［<ruby>歩数<rt>ほすう</rt></ruby>］が表示されます。ボタンを押すごとに、［歩いた<ruby>距離<rt>きょり</rt></ruby>］→［時間］→［消費カロリー］の順で表示されます。</p>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <!-- 問題6 (中文2) -->\n  <section class=\"p-4 rounded-xl border border-slate-200 bg-white shadow-sm\">\n    <div class=\"flex items-center justify-between border-b border-slate-100 pb-2 mb-3\">\n      <span class=\"font-bold text-indigo-700 text-sm md:text-base\">問題 6（中文 2）</span>\n      <span class=\"text-xs bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded font-medium\">問 8 〜 問 10 に対応</span>\n    </div>\n    <div class=\"text-slate-800 text-sm md:text-base leading-relaxed space-y-3\">\n      <p>ある会社が自転車のカーナビ<sup>（※16）</sup>を発売すると、友人から聞いた。広い道だけでなく、細い道の案内もでき、さらに、自転車置き場や自転車店などの情報も入っているそうだ。このカーナビの大きさは電子辞書ぐらいで、速度や走った距離、自転車をこぐ<sup>（※17）</sup>時に使った<ruby>消費<rt>しょうひ</rt></ruby><sup>（※18）</sup>カロリー<sup>（※19）</sup>も表せるという。雨の日でも使うことができ、色もいろいろあるそうだ。</p>\n      <p>このようなカーナビを自転車に付けたら、行きたいところにどんどん行けるようになるし、<ruby>環境<rt>かんきょう</rt></ruby>にもとてもいいと思う。しかし、<u>①問題は道路である</u>。今のように自動車と並んで走るのは危険だし、そうかといって、歩道を走るのも歩いている人に迷惑がかかる。自転車用のカーナビができれば、自動車のように自転車でいろいろなところに行けるようになるのだから、②<u>【　　　　】</u>。</p>\n    </div>\n  </section>\n\n  <!-- 問題7 (長文) -->\n  <section class=\"p-4 rounded-xl border border-slate-200 bg-white shadow-sm\">\n    <div class=\"flex items-center justify-between border-b border-slate-100 pb-2 mb-3\">\n      <span class=\"font-bold text-teal-700 text-sm md:text-base\">問題 7（長文）</span>\n      <span class=\"text-xs bg-teal-50 text-teal-700 px-2 py-0.5 rounded font-medium\">問 11 〜 問 14 に対応</span>\n    </div>\n    <h3 class=\"font-bold text-slate-900 text-base mb-2\">みどり高校平成5年卒業生の皆様へ</h3>\n    <div class=\"text-slate-800 text-sm md:text-base leading-relaxed space-y-3\">\n      <p>ごぶさたしています。<br>私たちがみどり高校を卒業して20年がたちました。皆様、お元気でしょうか。<br><ruby>故郷<rt>ふるさと</rt></ruby>を<ruby>離<rt>はな</rt></ruby>れている方、仕事や家事、育児にがんばっている方、皆、それぞれの場所でご<ruby>活躍<rt>かつやく</rt></ruby>のことと思います。</p>\n      <p>さて、<u>①このたび久しぶりに<ruby>同窓会<rt>どうそうかい</rt></ruby><sup>（※20）</sup>を計画しました</u>。高橋先生が4月に『英語教師として三十年』を<ruby>出版<rt>しゅっぱん</rt></ruby>されたところ、さっそく何人かの方から、先生のお話をぜひお聞きしたいという声が上がったからです。すでにお読みになった方もいらっしゃると思いますが、先生の30年を超える英語教育に関するお話や、学校生活<ruby>全般<rt>ぜんぱん</rt></ruby><sup>（※21）</sup>での生徒や同僚の先生方との<ruby>交流<rt>こうりゅう</rt></ruby>などが、親しみやすい文で書かれています。現在教師をされている方、親として子供の教育を考えている方には、大変興味深い内容だと思います。</p>\n      <p>秋の一日、おいしい料理をいただきながら、先生のお話と友人たちとのおしゃべりを楽しむというのはいかがでしょうか。</p>\n      <p>そして今回の会については、二通りの案を考えました。連絡用はがきに、まず<ruby>出欠<rt>しゅっけつ</rt></ruby>のお返事をいただき、ご出席の方は、よいほうの<ruby>案<rt>あん</rt></ruby>に○をつけてください。どちらでもいい場合は両方に○をつけてください。なお、ご欠席の方は記入なさらないでください。（以下略）</p>\n\n      <div class=\"border-2 border-slate-300 rounded-lg p-3.5 bg-slate-50 text-sm leading-relaxed space-y-2\">\n        <p class=\"font-bold text-center text-slate-900\">みどり高校第35期卒業生第3回<ruby>同窓会<rt>どうそうかい</rt></ruby>に</p>\n        <p class=\"text-center font-semibold text-slate-700\">ご出席　・　ご欠席　（どちらかに○をつけてください）</p>\n        <p>お名前：<span class=\"border-b border-slate-400 inline-block w-48\"></span></p>\n        <p>ご住所：<span class=\"border-b border-slate-400 inline-block w-48\"></span></p>\n        <p class=\"font-semibold pt-1\">☆二案のうち、よいと思うほうに○をつけてください。</p>\n        <p class=\"pl-2\"><strong><ruby>案<rt>あん</rt></ruby>1</strong>　日時：10月25日(土) 午前11時〜午後3時<br>　　　「レストラン<ruby>富士<rt>ふじ</rt></ruby>」で昼食　参加費5,000円</p>\n        <p class=\"pl-2\"><strong><ruby>案<rt>あん</rt></ruby>2</strong>　日時：10月25日(土) 午後3時集合<br>　　　「温泉旅館<ruby>玉屋<rt>たまや</rt></ruby>」に<ruby>一泊夕食<rt>いっぱくゆうしょく</rt></ruby>・<ruby>朝食<rt>ちょうしょく</rt></ruby>付き　参加費20,000円<br>　　　＊26日(日) 午前10時<ruby>解散<rt>かいさん</rt></ruby><sup>（※22）</sup></p>\n      </div>\n    </div>\n  </section>\n\n  <!-- 問題8 (情報検索) -->\n  <section class=\"p-4 rounded-xl border border-slate-200 bg-white shadow-sm\">\n    <div class=\"flex items-center justify-between border-b border-slate-100 pb-2 mb-3\">\n      <span class=\"font-bold text-amber-700 text-sm md:text-base\">問題 8（情報検索）</span>\n      <span class=\"text-xs bg-amber-50 text-amber-700 px-2 py-0.5 rounded font-medium\">問 15 〜 問 16 に対応</span>\n    </div>\n    <div class=\"text-slate-800 text-sm md:text-base leading-relaxed space-y-3\">\n      <p class=\"bg-amber-50/50 p-2.5 rounded border border-amber-100 text-slate-700\">スーさんは、来年3月に専門学校を卒業の予定です。日本で<ruby>医療<rt>いりょう</rt></ruby><sup>（※23）</sup>関係の仕事をしたいと希望しています。新聞で、つぎのような合同企業説明会の案内を見ました。</p>\n\n      <div class=\"border-2 border-slate-400 p-4 rounded-lg bg-white shadow-inner space-y-2 text-sm\">\n        <h3 class=\"font-bold text-center text-slate-900 text-base pb-2 border-b border-slate-200\">毎朝就職説明会</h3>\n        <p><strong>【日時】</strong>10月5日(火)・6日(水)　午前10時〜午後4時</p>\n        <p><strong>【場所】</strong>さくら生命会館（大阪市中央区○町、さくら生命ビル5階）</p>\n        <p><strong>【<ruby>対象<rt>たいしょう</rt></ruby>】</strong>大学、短大、専門学校を来年3月卒業予定の方</p>\n        <p><strong>【費用】</strong>入場無料　＊ただし、資料代300円が必要</p>\n        <p><strong>【内容】</strong>興味のある<ruby>企業<rt>きぎょう</rt></ruby>の<ruby>担当者<rt>たんとうしゃ</rt></ruby>と直接話をして、就職試験や仕事について説明を受け、質問をするための会です。<br>＊予約をすることはできません。当日の受付順のご案内になります。</p>\n        <div class=\"mt-3 pt-2.5 border-t border-slate-200 text-xs space-y-1 text-slate-700\">\n          <p class=\"font-bold text-slate-800\">〈注意〉</p>\n          <p>◎<ruby>医療<rt>いりょう</rt></ruby>や<ruby>福祉<rt>ふくし</rt></ruby><sup>（※24）</sup>などの分野については、別の機会を予定しています。</p>\n          <p>◎<ruby>履歴書<rt>りれきしょ</rt></ruby><sup>（※25）</sup>は、当日必ずご<ruby>持参<rt>じさん</rt></ruby><sup>（※26）</sup>ください。</p>\n        </div>\n        <p class=\"text-right font-bold text-xs text-slate-600 pt-1\">毎朝新聞社</p>\n      </div>\n    </div>\n  </section>\n</div>",
+  "footnotes": [
+    {
+      "term": "（※1）密閉",
+      "definition": "外から空気が入らないようにすること"
+    },
+    {
+      "term": "（※2）保存する",
+      "definition": "そのままの<ruby>状態<rt>じょうたい</rt></ruby>で取っておく"
+    },
+    {
+      "term": "（※3）分量",
+      "definition": "どれくらいの量かということ、量"
+    },
+    {
+      "term": "（※4）沸騰する",
+      "definition": "熱によって、水などの<ruby>液体<rt>えきたい</rt></ruby>が最高にわいた<ruby>状態<rt>じょうたい</rt></ruby>になること"
+    },
+    {
+      "term": "（※5）ポット",
+      "definition": "お湯をわかしたり、お湯を入れたりするもの"
+    },
+    {
+      "term": "（※6）過程",
+      "definition": "物事が進む途中のこと"
+    },
+    {
+      "term": "（※7）急激",
+      "definition": "変化や動きが急で、激しい様子"
+    },
+    {
+      "term": "（※8）圧縮",
+      "definition": "力を加えて、縮めたり小さくしたりすること"
+    },
+    {
+      "term": "（※9）層",
+      "definition": "上下に重なること、重なっているもの"
+    },
+    {
+      "term": "（※10）応募",
+      "definition": "<ruby>募集<rt>ぼしゅう</rt></ruby>に<ruby>応<rt>おう</rt></ruby>じること"
+    },
+    {
+      "term": "（※11）当社",
+      "definition": "私たちの会社"
+    },
+    {
+      "term": "（※12）送付",
+      "definition": "送ること"
+    },
+    {
+      "term": "（※13）歩数計",
+      "definition": "歩く時の足を前に出す動き（<ruby>歩数<rt>ほすう</rt></ruby>）を数える小さな機械"
+    },
+    {
+      "term": "（※14）表示",
+      "definition": "はっきり見えるように外に示すこと"
+    },
+    {
+      "term": "（※15）歩幅",
+      "definition": "歩く時の一歩の長さ"
+    },
+    {
+      "term": "（※16）カーナビ",
+      "definition": "自動車用の動く案内地図"
+    },
+    {
+      "term": "（※17）こぐ",
+      "definition": "乗り物を動かすために手や足を使った動作をする"
+    },
+    {
+      "term": "（※18）消費",
+      "definition": "使うこと"
+    },
+    {
+      "term": "（※19）カロリー",
+      "definition": "体を動かすのに必要な熱のエネルギー"
+    },
+    {
+      "term": "（※20）同窓会",
+      "definition": "同じ学校を卒業した人たちが集まる会"
+    },
+    {
+      "term": "（※21）全般",
+      "definition": "それが関係していることの全体"
+    },
+    {
+      "term": "（※22）解散",
+      "definition": "会や行事などが終わり、集まっていた人が散るようにそれぞれに去っていくこと"
+    },
+    {
+      "term": "（※23）医療",
+      "definition": "病気やけがを治すこと、また、そのための技術や薬など"
+    },
+    {
+      "term": "（※24）福祉",
+      "definition": "人が幸せな暮らしができるように<ruby>公的<rt>こうてき</rt></ruby>なサービスをすること"
+    },
+    {
+      "term": "（※25）履歴書",
+      "definition": "これまでどういう勉強や仕事をしてきたか、などを書いた書類"
+    },
+    {
+      "term": "（※26）持参",
+      "definition": "持ってくること"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "新鮮な",
+      "reading": "しんせんな",
+      "meaning": "fresh"
+    },
+    {
+      "word": "水道水",
+      "reading": "すいどうすい",
+      "meaning": "tap water"
+    },
+    {
+      "word": "希望者",
+      "reading": "きぼうしゃ",
+      "meaning": "applicant, candidate"
+    },
+    {
+      "word": "制限",
+      "reading": "せいげん",
+      "meaning": "limit, restriction"
+    },
+    {
+      "word": "整理券",
+      "reading": "せいりけん",
+      "meaning": "numbered ticket"
+    },
+    {
+      "word": "ぶつかる",
+      "reading": "ぶつかる",
+      "meaning": "to knock into, collide with"
+    },
+    {
+      "word": "強化",
+      "reading": "きょうか",
+      "meaning": "strengthening, reinforcement"
+    },
+    {
+      "word": "加熱する",
+      "reading": "かねつする",
+      "meaning": "to heat"
+    },
+    {
+      "word": "表面",
+      "reading": "ひょうめん",
+      "meaning": "surface"
+    },
+    {
+      "word": "傷",
+      "reading": "きず",
+      "meaning": "scratch, flaw, wound"
+    },
+    {
+      "word": "加わる",
+      "reading": "くわわる",
+      "meaning": "to join, be added"
+    },
+    {
+      "word": "対象",
+      "reading": "たいしょう",
+      "meaning": "target, object"
+    },
+    {
+      "word": "記事",
+      "reading": "きじ",
+      "meaning": "article, news story"
+    },
+    {
+      "word": "アンケート",
+      "reading": "アンケート",
+      "meaning": "survey, questionnaire"
+    },
+    {
+      "word": "身につける",
+      "reading": "みにつける",
+      "meaning": "to put on, wear (accessories, watch, etc.)"
+    },
+    {
+      "word": "ひも",
+      "reading": "ひも",
+      "meaning": "string, cord"
+    },
+    {
+      "word": "不要",
+      "reading": "ふよう",
+      "meaning": "not necessary, unnecessary"
+    },
+    {
+      "word": "カロリー",
+      "reading": "カロリー",
+      "meaning": "calories"
+    },
+    {
+      "word": "距離",
+      "reading": "きょり",
+      "meaning": "distance"
+    },
+    {
+      "word": "置き場",
+      "reading": "おきば",
+      "meaning": "storage space, place to put things"
+    },
+    {
+      "word": "情報",
+      "reading": "じょうほう",
+      "meaning": "information"
+    },
+    {
+      "word": "電子辞書",
+      "reading": "でんしじしょ",
+      "meaning": "electronic dictionary"
+    },
+    {
+      "word": "速度",
+      "reading": "そくど",
+      "meaning": "speed, velocity"
+    },
+    {
+      "word": "環境",
+      "reading": "かんきょう",
+      "meaning": "environment"
+    },
+    {
+      "word": "活躍する",
+      "reading": "かつやくする",
+      "meaning": "to be active in, play an active role"
+    },
+    {
+      "word": "出版する",
+      "reading": "しゅっぱんする",
+      "meaning": "to publish"
+    },
+    {
+      "word": "声が上がる",
+      "reading": "こえがあがる",
+      "meaning": "to raise voices/opinions, lead to a reaction"
+    },
+    {
+      "word": "交流",
+      "reading": "こうりゅう",
+      "meaning": "exchange, interaction"
+    },
+    {
+      "word": "案",
+      "reading": "あん",
+      "meaning": "plan, proposal, draft"
+    },
+    {
+      "word": "出欠",
+      "reading": "しゅっけつ",
+      "meaning": "attendance or absence"
+    },
+    {
+      "word": "運動会",
+      "reading": "うんどうかい",
+      "meaning": "athletic meet, sports day"
+    },
+    {
+      "word": "合同",
+      "reading": "ごうどう",
+      "meaning": "joint, combined, merger"
+    },
+    {
+      "word": "企業",
+      "reading": "きぎょう",
+      "meaning": "business, enterprise, corporation"
+    },
+    {
+      "word": "担当者",
+      "reading": "たんとうしゃ",
+      "meaning": "person in charge, representative"
+    }
+  ],
+  "questions": [
+    {
+      "id": "mock-exam-q1",
+      "questionNumber": "1",
+      "questionText": "<span class=\"inline-block text-xs font-bold bg-blue-100 text-blue-800 px-2 py-0.5 rounded mr-2 align-middle\">問題1（短文1）</span>紅茶の説明で<u>間違っている</u>のはどれか。",
+      "options": [
+        "葉の大きさによって、必要な葉の<ruby>分量<rt>ぶんりょう</rt></ruby>や時間が違う。",
+        "紅茶は、日本の水道水で作るとおいしい。",
+        "葉を<ruby>保存<rt>ほぞん</rt></ruby>するための<ruby>容器<rt>ようき</rt></ruby>は、プラスチックでも紙でもよい。",
+        "ポットには、よくわかしたお湯を入れる。"
+      ],
+      "correct": 3,
+      "correctOption": "葉を<ruby>保存<rt>ほぞん</rt></ruby>するための<ruby>容器<rt>ようき</rt></ruby>は、プラスチックでも紙でもよい。",
+      "explanation": "本文に「紅茶の葉は密閉（※外から空気が入らないようにすること）容器に保存する」とあります。紙の容器は密閉できないため、「プラスチックでも紙でもよい」という3は間違っています（＝正解）。1、2、4の内容はすべて本文に書かれている通り正しい記述です。"
+    },
+    {
+      "id": "mock-exam-q2",
+      "questionNumber": "2",
+      "questionText": "<span class=\"inline-block text-xs font-bold bg-blue-100 text-blue-800 px-2 py-0.5 rounded mr-2 align-middle\">問題2（短文2）</span>山田ひろみ先生の水泳教室に参加した人の話はどれか。",
+      "options": [
+        "水曜日の1時半に行って、やっと<ruby>整理券<rt>せいりけん</rt></ruby>がもらえた。",
+        "水曜日と金曜日の2つのクラスに参加した。",
+        "水曜日に2回並んで、1枚ずつ<ruby>整理券<rt>せいりけん</rt></ruby>をもらった。",
+        "金曜日のお昼前に受付に聞いたら、<ruby>整理券<rt>せいりけん</rt></ruby>はもうないと言われた。"
+      ],
+      "correct": 2,
+      "correctOption": "水曜日と金曜日の2つのクラスに参加した。",
+      "explanation": "整理券は「クラス開始の15分前から」配られるため、水曜13:30（30分前）や金曜お昼前（開始1時間以上前）には配られておらず、1と4は誤りです。また「一人一枚」なので1つのクラスで2枚もらうことはできず3も誤りです。水曜日と金曜日の2つのクラスに参加することは制限されていないため、2が正しい話となります。"
+    },
+    {
+      "id": "mock-exam-q3",
+      "questionNumber": "3",
+      "questionText": "<span class=\"inline-block text-xs font-bold bg-blue-100 text-blue-800 px-2 py-0.5 rounded mr-2 align-middle\">問題3（短文3）</span>普通のガラスと強化ガラスの違いは何か。",
+      "options": [
+        "普通のガラスの表面には目に見えないたくさんの傷があるが、強化ガラスの傷は目に見える。",
+        "普通のガラスの表面にある傷は力を加えると傷が広がるが、強化ガラスの傷は広がりにくい。",
+        "普通のガラスは作るときに<ruby>急激<rt>きゅうげき</rt></ruby>に冷やすが、強化ガラスは冷やさない。",
+        "普通のガラスは作るときに冷やさないが、強化ガラスは<ruby>急激<rt>きゅうげき</rt></ruby>に冷やす。"
+      ],
+      "correct": 2,
+      "correctOption": "普通のガラスの表面にある傷は力を加えると傷が広がるが、強化ガラスの傷は広がりにくい。",
+      "explanation": "本文に、普通のガラスは「力を加えると傷が広がって割れる」、強化ガラスは「ガラスの表面近くは圧縮された層となり、力が加わっても表面の傷が広がりにくく、割れにくい」と説明されています。したがって正解は 2 です。"
+    },
+    {
+      "id": "mock-exam-q4",
+      "questionNumber": "4",
+      "questionText": "<span class=\"inline-block text-xs font-bold bg-blue-100 text-blue-800 px-2 py-0.5 rounded mr-2 align-middle\">問題4（短文4）</span>スタッフの仕事について、正しいものはどれか。",
+      "options": [
+        "スタッフAは、毎週土曜日に会議に出なければならない。",
+        "スタッフBは、主に記事を書く仕事をする。",
+        "スタッフAがアンケートを作るかどうかは、わからない。",
+        "スタッフBは、<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>で連絡がとれればいい。"
+      ],
+      "correct": 3,
+      "correctOption": "スタッフAがアンケートを作るかどうかは、わからない。",
+      "explanation": "スタッフAの仕事として「関係者にインタビューをして記事を書く」「月1回の土曜日の会議に出席する」ことが書かれていますが、アンケートを作るかどうかについては本文に言及がないため「わからない」とする 3 が正しいです。スタッフAの会議は「月1回」（毎週ではない）なので1は誤り、記事を書くのはスタッフAなので2は誤り、連絡は「パソコンのメール」が必要なので4も誤りです。"
+    },
+    {
+      "id": "mock-exam-q5",
+      "questionNumber": "5",
+      "questionText": "<span class=\"inline-block text-xs font-bold bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded mr-2 align-middle\">問題5（中文1）問1</span><ruby>歩数計<rt>ほすうけい</rt></ruby>を身につける方法として、<u>だめなもの</u>はどれか。",
+      "options": [
+        "着ているもののポケット",
+        "持っているかばんのポケット",
+        "ひもをつけて、手首につける",
+        "ひもをつけて、首から下げる"
+      ],
+      "correct": 3,
+      "correctOption": "ひもをつけて、手首につける",
+      "explanation": "本文の「身につける方法」には「服のポケットに入れる」「かばんに入れる（ポケットに入れて動かないようにする）」「ひもをつけて、首から下げる」の3つが挙げられており、「手首につける」は含まれていません。したがってだめなもの（正解）は 3 です。"
+    },
+    {
+      "id": "mock-exam-q6",
+      "questionNumber": "6",
+      "questionText": "<span class=\"inline-block text-xs font-bold bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded mr-2 align-middle\">問題5（中文1）問2</span>正しい結果を出すために必ずしなければならないのはどれか。",
+      "options": [
+        "最初に使う前に、時刻、身長、体重、<ruby>歩幅<rt>ほはば</rt></ruby>、性別の情報を<ruby>歩数計<rt>ほすうけい</rt></ruby>に入れること",
+        "使う時にいつも、身長、体重、<ruby>歩幅<rt>ほはば</rt></ruby>の情報を<ruby>歩数計<rt>ほすうけい</rt></ruby>に入れること",
+        "最初に使う前に、時刻、体重、<ruby>歩幅<rt>ほはば</rt></ruby>、性別の情報を<ruby>歩数計<rt>ほすうけい</rt></ruby>に入れること",
+        "使う時にいつも、現在の時刻、体重、<ruby>歩幅<rt>ほはば</rt></ruby>の情報を<ruby>歩数計<rt>ほすうけい</rt></ruby>に入れること"
+      ],
+      "correct": 3,
+      "correctOption": "最初に使う前に、時刻、体重、<ruby>歩幅<rt>ほはば</rt></ruby>、性別の情報を<ruby>歩数計<rt>ほすうけい</rt></ruby>に入れること",
+      "explanation": "「初めて使う時にすること」として「時刻を合わせる」「体重を入れる」「歩幅を入れる」「性別を選ぶ」とあり、「これをしないと、正しい数字が表示されない。2回目からは不要」と書かれています。身長は入力項目に含まれておらず、毎回入れる必要もないため、正解は 3 です。"
+    },
+    {
+      "id": "mock-exam-q7",
+      "questionNumber": "7",
+      "questionText": "<span class=\"inline-block text-xs font-bold bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded mr-2 align-middle\">問題5（中文1）問3</span>ボタンを2回押すと表示されるのはどれか。",
+      "options": [
+        "<ruby>消費<rt>しょうひ</rt></ruby>カロリー",
+        "歩いた<ruby>距離<rt>きょり</rt></ruby>",
+        "歩いた<ruby>歩数<rt>ほすう</rt></ruby>",
+        "歩いた時間"
+      ],
+      "correct": 4,
+      "correctOption": "歩いた時間",
+      "explanation": "最初は［現在の時刻］と［歩数］が表示されており、ボタンを押すごとに「［歩いた距離］→［時間］→［消費カロリー］」の順で切り替わります。したがってボタンを2回押したときに表示されるのは「時間（歩いた時間）」なので、正解は 4 です。"
+    },
+    {
+      "id": "mock-exam-q8",
+      "questionNumber": "8",
+      "questionText": "<span class=\"inline-block text-xs font-bold bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded mr-2 align-middle\">問題6（中文2）問1</span>このカーナビができることはどれか。",
+      "options": [
+        "自転車がとめられる駐車場や食事ができるお店を案内すること",
+        "言葉の意味を調べたり、近くにある自転車店を教えたりすること",
+        "何キロ走ったかとか、どれくらいの体力を使ったかとかを示すこと",
+        "道路だけでなく、地名や駅名、住所を示すこと"
+      ],
+      "correct": 3,
+      "correctOption": "何キロ走ったかとか、どれくらいの体力を使ったかとかを示すこと",
+      "explanation": "本文に「速度や走った距離、自転車をこぐ時に使った消費カロリーも表せる」とあり、走った距離（何キロ走ったか）や消費カロリー（どれくらいの体力を使ったか）を示すことができるため、正解は 3 です。"
+    },
+    {
+      "id": "mock-exam-q9",
+      "questionNumber": "9",
+      "questionText": "<span class=\"inline-block text-xs font-bold bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded mr-2 align-middle\">問題6（中文2）問2</span><u>①問題は道路である</u>とあるが、なぜ問題なのか。",
+      "options": [
+        "道路には自転車置く場所がないから。",
+        "歩道には自転車を置く場所がないから。",
+        "今は自動車の走る道路を自転車が通れないから。",
+        "自動車の横を走るのも、人の横を走るのも危険だから。"
+      ],
+      "correct": 4,
+      "correctOption": "自動車の横を走るのも、人の横を走るのも危険だから。",
+      "explanation": "下線部の直後に「今のように自動車と並んで走るのは危険だし、そうかといって、歩道を走るのも歩いている人に迷惑がかかる」と述べており、車道で車の横を走るのも歩道で人の横を走るのも危険・迷惑になることが問題の理由です。したがって正解は 4 です。"
+    },
+    {
+      "id": "mock-exam-q10",
+      "questionNumber": "10",
+      "questionText": "<span class=\"inline-block text-xs font-bold bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded mr-2 align-middle\">問題6（中文2）問3</span>②に入る文として最も適切なものはどれか。",
+      "options": [
+        "カーナビの値段をもっと安くしてほしい。",
+        "地球<ruby>環境<rt>かんきょう</rt></ruby>のことも考えて、自動車から自転車に<ruby>乗<rt>の</rt></ruby>り換えるべきだ。",
+        "自転車がもっと走りやすい道路<ruby>環境<rt>かんきょう</rt></ruby>をつくってほしい。",
+        "車のためではなく、人のための道路<ruby>環境<rt>かんきょう</rt></ruby>をつくってほしい。"
+      ],
+      "correct": 3,
+      "correctOption": "自転車がもっと走りやすい道路<ruby>環境<rt>かんきょう</rt></ruby>をつくってほしい。",
+      "explanation": "筆者は自転車用カーナビの登場によって自転車で様々な場所へ行けるようになることを評価しつつ、道路の現状に問題があることを指摘しています。「自動車のように自転車でいろいろなところに行けるようになるのだから、（自転車がもっと走りやすい道路環境をつくってほしい）」と道路の改善を望む文が入るのが自然です。したがって正解は 3 です。"
+    },
+    {
+      "id": "mock-exam-q11",
+      "questionNumber": "11",
+      "questionText": "<span class=\"inline-block text-xs font-bold bg-teal-100 text-teal-800 px-2 py-0.5 rounded mr-2 align-middle\">問題7（長文）問1</span><u>①このたび久しぶりに<ruby>同窓会<rt>どうそうかい</rt></ruby>を計画しました</u>とあるが、<ruby>同窓会<rt>どうそうかい</rt></ruby>を計画したきっかけは何か。",
+      "options": [
+        "卒業してちょうど20年たったから。",
+        "<ruby>故郷<rt>ふるさと</rt></ruby>を<ruby>離<rt>はな</rt></ruby>れている人が仲間に会いたがったから。",
+        "本を書いた先生の話を聞きたいという希望があったから。",
+        "教育について話し合ういい機会だから。"
+      ],
+      "correct": 3,
+      "correctOption": "本を書いた先生の話を聞きたいという希望があったから。",
+      "explanation": "本文に「高橋先生が4月に『英語教師として三十年』を出版されたところ、さっそく何人かの方から、先生のお話をぜひお聞きしたいという声が上がったからです」と明確に同窓会を計画したきっかけが述べられています。したがって正解は 3 です。"
+    },
+    {
+      "id": "mock-exam-q12",
+      "questionNumber": "12",
+      "questionText": "<span class=\"inline-block text-xs font-bold bg-teal-100 text-teal-800 px-2 py-0.5 rounded mr-2 align-middle\">問題7（長文）問2</span>高橋先生について述べられていることで、正しいのはどれか。",
+      "options": [
+        "高橋先生は今30代の終わりで、40歳に近い。",
+        "高橋先生は<ruby>同窓会<rt>どうそうかい</rt></ruby>のあと、本を出す。",
+        "高橋先生は<ruby>同窓会<rt>どうそうかい</rt></ruby>に来ないかもしれない。",
+        "高橋先生は長い間英語を教えてきた。"
+      ],
+      "correct": 4,
+      "correctOption": "高橋先生は長い間英語を教えてきた。",
+      "explanation": "高橋先生は『英語教師として三十年』を出版しており、「先生の30年を超える英語教育に関するお話」と書かれていることから、長い間英語を教えてきたことが分かります。したがって正解は 4 です。"
+    },
+    {
+      "id": "mock-exam-q13",
+      "questionNumber": "13",
+      "questionText": "<span class=\"inline-block text-xs font-bold bg-teal-100 text-teal-800 px-2 py-0.5 rounded mr-2 align-middle\">問題7（長文）問3</span>返事の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>について、正しいのはどれか。",
+      "options": [
+        "よいと思ったほうの<ruby>案<rt>あん</rt></ruby>に○をつける。",
+        "参加しない人は返事を出さない。",
+        "両方とも参加できる人はどちらにも○をつけない。",
+        "参加しない人も、よいと思う<ruby>案<rt>あん</rt></ruby>に○をつける。"
+      ],
+      "correct": 1,
+      "correctOption": "よいと思ったほうの<ruby>案<rt>あん</rt></ruby>に○をつける。",
+      "explanation": "本文に「ご出席の方は、よいほうの案に○をつけてください。どちらでもいい場合は両方に○をつけてください。なお、ご欠席の方は記入なさらないでください」とあります。したがって「よいと思ったほうの案に○をつける」という 1 が正しいです。（欠席者も出欠の返事は出すため2は誤り、両方参加できる場合は両方に○をつけるため3は誤り、欠席者は案に記入しないため4も誤りです。）"
+    },
+    {
+      "id": "mock-exam-q14",
+      "questionNumber": "14",
+      "questionText": "<span class=\"inline-block text-xs font-bold bg-teal-100 text-teal-800 px-2 py-0.5 rounded mr-2 align-middle\">問題7（長文）問4</span><ruby>案<rt>あん</rt></ruby>2に○をしたのは<ruby>誰<rt>だれ</rt></ruby>か。",
+      "options": [
+        "Aさん：小さい子どもが2人いるので、夜は家にいなければならない。",
+        "Bさん：給料が下がって、今、経済的に苦しいので、2万円も出せない。",
+        "Cさん：土曜日は5時まで仕事があるので、みんなより遅れて参加する。",
+        "Dさん：26日は子どもの<ruby>運動会<rt>うんどうかい</rt></ruby>で、朝から学校に行かなければならない。"
+      ],
+      "correct": 3,
+      "correctOption": "Cさん：土曜日は5時まで仕事があるので、みんなより遅れて参加する。",
+      "explanation": "案2は「10月25日(土) 午後3時集合〜26日(日) 午前10時解散の温泉旅館一泊（参加費20,000円）」です。夕方以降の宿泊なので、土曜日17時まで仕事があるCさんは夜から遅れて参加することができます。Aさん（夜泊まれない）、Bさん（2万円出せない）、Dさん（26日朝から行けない）は案2に参加できないため、案2を選べるのはCさんです。したがって正解は 3 です。"
+    },
+    {
+      "id": "mock-exam-q15",
+      "questionNumber": "15",
+      "questionText": "<span class=\"inline-block text-xs font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded mr-2 align-middle\">問題8（情報検索）問1</span>当日の用意について、正しいのはどれか。",
+      "options": [
+        "服そうについては特に決まりはない。",
+        "お金はまったく必要ない。",
+        "希望する企業の担当者と話をするには、予約が必要である。",
+        "<ruby>履歴書<rt>りれきしょ</rt></ruby>は持っていかなくてもよい。"
+      ],
+      "correct": 1,
+      "correctOption": "服そうについては特に決まりはない。",
+      "explanation": "案内には服装についての規定（スーツ指定など）の記述はなく、「服そうについては特に決まりはない」という 1 が正しいです。（資料代300円が必要なので2は誤り、「予約をすることはできません」とあるので3は誤り、「履歴書は当日必ずご持参ください」とあるので4は誤りです。）"
+    },
+    {
+      "id": "mock-exam-q16",
+      "questionNumber": "16",
+      "questionText": "<span class=\"inline-block text-xs font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded mr-2 align-middle\">問題8（情報検索）問2</span>説明会について、<u>間違っている</u>のはどれか。",
+      "options": [
+        "<ruby>福祉<rt>ふくし</rt></ruby>関係の仕事については、今回は情報を得ることができない。",
+        "すべての専門学校生が参加できるというわけではない。",
+        "いろいろな企業の担当者が順番に会社の紹介や説明をする。",
+        "面接や仕事の内容について、会社の人に聞くことができる。"
+      ],
+      "correct": 3,
+      "correctOption": "いろいろな企業の担当者が順番に会社の紹介や説明をする。",
+      "explanation": "案内には「興味のある企業の担当者と直接話をして、就職試験や仕事について説明を受け、質問をするための会です」「当日の受付順のご案内になります」とあり、個別に担当者と直接話をする形式であって「企業の担当者が順番に（全体に向けて）紹介や説明をする」わけではありません。したがって間違っているもの（＝正解）は 3 です。（「医療や福祉などの分野については、別の機会を予定」なので1は正しい記述、「来年3月卒業予定の方」が対象なので卒業年度が違う専門学校生は参加できず2は正しい記述、就職試験や仕事について質問できるので4も正しい記述です。）"
+    }
+  ],
+  "sections": [
+    {
+      "id": "mock-sec-1",
+      "sectionNumber": 1,
+      "sectionType": "短文 1",
+      "sectionTitle": "問題 1（短文 1）",
+      "passageTitle": "おいしい紅茶をいただくための注意点",
+      "pageScan": "/speed_master_n3_pages/speed_master_n3_page-0122.jpg",
+      "targetMinutes": 3,
+      "questionIndices": [
+        0
+      ],
+      "passageText": "<div class=\"speed-master-memo-card space-y-3 leading-relaxed\"><h3 class=\"font-bold text-center text-base mb-3 border-b border-slate-200/60 pb-2\">おいしい紅茶をいただくための注意点</h3><div class=\"space-y-2.5\"><p>1）紅茶の葉は<ruby>密閉<rt>みっぺい</rt></ruby><sup>（※1）</sup><ruby>容器<rt>ようき</rt></ruby>に<ruby>保存<rt>ほぞん</rt></ruby><sup>（※2）</sup>する。</p><p>2）紅茶の葉の<ruby>分量<rt>ぶんりょう</rt></ruby><sup>（※3）</sup>を正確に量る。<br>　○細かい葉の場合……紅茶用スプーンで1杯（約2.5グラム）<br>　○大きい葉の場合……紅茶用スプーンで1杯（約3グラム）</p><p>3）<ruby>新鮮<rt>しんせん</rt></ruby>な水道水を使い、よく<ruby>沸騰<rt>ふっとう</rt></ruby>させる<sup>（※4）</sup>。　＊日本の水道水は紅茶に<ruby>合<rt>あ</rt></ruby>う。</p><p>4）<ruby>沸騰<rt>ふっとう</rt></ruby>したお湯をポット<sup>（※5）</sup>に入れてからカップに移すまでの時間を計る。<br>　○細かい葉の場合……約2〜2.5分<br>　○大きい葉の場合……約3分</p></div></div>",
+      "footnotes": [
+        {
+          "term": "（※1）密閉",
+          "definition": "外から空気が入らないようにすること"
+        },
+        {
+          "term": "（※2）保存する",
+          "definition": "そのままの<ruby>状態<rt>じょうたい</rt></ruby>で取っておく"
+        },
+        {
+          "term": "（※3）分量",
+          "definition": "どれくらいの量かということ、量"
+        },
+        {
+          "term": "（※4）沸騰する",
+          "definition": "熱によって、水などの<ruby>液体<rt>えきたい</rt></ruby>が最高にわいた<ruby>状態<rt>じょうたい</rt></ruby>になること"
+        },
+        {
+          "term": "（※5）ポット",
+          "definition": "お湯をわかしたり、お湯を入れたりするもの"
+        }
+      ],
+      "footnotesDiagramRight": "/speed_master_n3_pages/mock_exam_p122_pot.png"
+    },
+    {
+      "id": "mock-sec-2",
+      "sectionNumber": 2,
+      "sectionType": "短文 2",
+      "sectionTitle": "問題 1（短文 2）",
+      "passageTitle": "水泳教室に参加する皆様へ",
+      "pageScan": "/speed_master_n3_pages/speed_master_n3_page-0123.jpg",
+      "targetMinutes": 3,
+      "questionIndices": [
+        1
+      ],
+      "passageText": "<div class=\"speed-master-memo-card space-y-3 leading-relaxed\"><h3 class=\"font-bold text-center text-base mb-3 border-b border-slate-200/60 pb-2\">水泳教室に参加する皆様へ</h3><p>水曜日14：00〜15：00、金曜日13：00〜14：00の山田ひろみ先生のクラスは、希望者が多すぎるため、以下の方法で参加者の数を制限します。ご理解とご協力をお願いします。</p><div class=\"speed-master-notice-inner p-3 rounded-lg border border-slate-200/80 space-y-1.5 my-2\"><p>●クラス開始の15分前から受付で<ruby>整理券<rt>せいりけん</rt></ruby>を配ります。各クラス20人までとします。</p><p>●<ruby>整理券<rt>せいりけん</rt></ruby>は一人一枚です。ほかの人の分をもらうことはできません。</p><p>●<ruby>整理券<rt>せいりけん</rt></ruby>は、クラスが始まる時に山田先生に渡してください。</p></div><p class=\"text-right font-medium text-xs sm:text-sm text-slate-500\">以上</p></div>",
+      "footnotes": []
+    },
+    {
+      "id": "mock-sec-3",
+      "sectionNumber": 3,
+      "sectionType": "短文 3",
+      "sectionTitle": "問題 1（短文 3）",
+      "passageTitle": "普通のガラスと強化ガラス",
+      "pageScan": "/speed_master_n3_pages/speed_master_n3_page-0124.jpg",
+      "targetMinutes": 3,
+      "questionIndices": [
+        2
+      ],
+      "passageText": "<div class=\"speed-master-memo-card space-y-3 leading-relaxed\"><p>普通のガラスは、落としたり何か物がぶつかったりすると簡単に割れるが、車などに使われる強化ガラスはなかなか割れない。実は、二つのガラスの違いは作る方法にある。普通のガラスは、原料を<ruby>加熱<rt>かねつ</rt></ruby>した後ゆっくり冷やすので、その<ruby>過程<rt>かてい</rt></ruby><sup>（※6）</sup>で、表面に目に見えないたくさんの傷ができ、力を加えると傷が広がって割れる。一方、強化ガラスは<ruby>加熱<rt>かねつ</rt></ruby>後<ruby>急激<rt>きゅうげき</rt></ruby><sup>（※7）</sup>に冷やすので、ガラスの表面近くは<ruby>圧縮<rt>あっしゅく</rt></ruby><sup>（※8）</sup>された<ruby>層<rt>そう</rt></ruby><sup>（※9）</sup>となり、力が加わっても表面の傷が広がりにくく、割れにくい。</p></div>",
+      "footnotes": [
+        {
+          "term": "（※6）過程",
+          "definition": "物事が進む途中のこと"
+        },
+        {
+          "term": "（※7）急激",
+          "definition": "変化や動きが急で、激しい様子"
+        },
+        {
+          "term": "（※8）圧縮",
+          "definition": "力を加えて、縮めたり小さくしたりすること"
+        },
+        {
+          "term": "（※9）層",
+          "definition": "上下に重なること、重なっているもの"
+        }
+      ]
+    },
+    {
+      "id": "mock-sec-4",
+      "sectionNumber": 4,
+      "sectionType": "短文 4",
+      "sectionTitle": "問題 1（短文 4）",
+      "passageTitle": "「留学生通信」のスタッフ募集",
+      "pageScan": "/speed_master_n3_pages/speed_master_n3_page-0125.jpg",
+      "targetMinutes": 3,
+      "questionIndices": [
+        3
+      ],
+      "passageText": "<div class=\"speed-master-memo-card space-y-3 leading-relaxed\"><h3 class=\"font-bold text-center text-base mb-3 border-b border-slate-200/60 pb-2\">「留学生通信」のスタッフ<ruby>募集<rt>ぼしゅう</rt></ruby></h3><p>〈<ruby>対象者<rt>たいしょうしゃ</rt></ruby>〉今年4月に大学生になる留学生で、パソコンのメールで連絡がとれる人。</p><div class=\"speed-master-notice-inner p-3 rounded-lg border border-slate-200/80 space-y-2 my-2\"><p><strong>①スタッフA：</strong><br>関係者にインタビューをして記事を書いたり、月1回の土曜日の会議に出席して意見を述べたりする。</p><p><strong>②スタッフB：</strong><br>記事に関係する資料を集めたり、アンケートの結果をまとめたりする。</p></div><p>★<ruby>応募<rt>おうぼ</rt></ruby><sup>（※10）</sup>者は、メールで「スタッフA希望」または「スタッフB希望」と書いて、<ruby>当社<rt>とうしゃ</rt></ruby><sup>（※11）</sup>まで<ruby>送付<rt>そうふ</rt></ruby><sup>（※12）</sup>のこと。</p></div>",
+      "footnotes": [
+        {
+          "term": "（※10）応募",
+          "definition": "<ruby>募集<rt>ぼしゅう</rt></ruby>に<ruby>応<rt>おう</rt></ruby>じること"
+        },
+        {
+          "term": "（※11）当社",
+          "definition": "私たちの会社"
+        },
+        {
+          "term": "（※12）送付",
+          "definition": "送ること"
+        }
+      ]
+    },
+    {
+      "id": "mock-sec-5",
+      "sectionNumber": 5,
+      "sectionType": "中文 1",
+      "sectionTitle": "問題 2（中文 1）",
+      "passageTitle": "サクラ歩数計 取扱説明",
+      "pageScan": "/speed_master_n3_pages/speed_master_n3_page-0126.jpg",
+      "targetMinutes": 7,
+      "questionIndices": [
+        4,
+        5,
+        6
+      ],
+      "passageText": "<div class=\"speed-master-memo-card space-y-4 leading-relaxed\"><p>このたびは、サクラ<ruby>歩数計<rt>ほすうけい</rt></ruby><sup>（※13）</sup>をお買いいただき、ありがとうございます。<br>以下の点をよく読んで、ご使用ください。</p><div class=\"space-y-3\"><div class=\"speed-master-rule-item\"><p class=\"font-bold text-blue-800 dark:text-blue-300\">1）身につける方法は、次のどれかにする。　<span class=\"text-xs font-normal opacity-80\">☆いつも同じでなくてもよい。</span></p><ul class=\"list-disc list-inside pl-3 space-y-1\"><li>服のポケットに入れる。</li><li>かばんに入れる。　<span class=\"text-xs opacity-75\">☆かばんのポケットに入れて、中であまり動かないようにする。</span></li><li>ひもをつけて、首から下げる。</li></ul></div><div class=\"speed-master-rule-item\"><p class=\"font-bold text-blue-800 dark:text-blue-300\">2）初めて使う時にすること。　<span class=\"text-xs font-normal opacity-80\">☆これをしないと、正しい数字が<ruby>表示<rt>ひょうじ</rt></ruby><sup>（※14）</sup>されない。2回目からは不要。</span></p><ul class=\"list-disc list-inside pl-3 space-y-1\"><li>時刻を合わせる（☞p.16に説明あり）。</li><li>体重(kg)を入れる（☞p.18に説明あり）。</li><li><ruby>歩幅<rt>ほはば</rt></ruby><sup>（※15）</sup>(cm)を入れる（☞p.19に説明あり）。　<span class=\"text-xs font-semibold text-amber-600 dark:text-amber-400\">☆<ruby>歩幅<rt>ほはば</rt></ruby>の<ruby>測<rt>はか</rt></ruby>り方は正確に！</span></li><li>性別を選ぶ（☞p.20に説明あり）。</li></ul></div><div class=\"speed-master-rule-item\"><p class=\"font-bold text-blue-800 dark:text-blue-300\">3）操作と表示順</p><p class=\"pl-3\"><ruby>歩数計<rt>ほすうけい</rt></ruby>を手に持つと、最初は［現在の時刻］と［<ruby>歩数<rt>ほすう</rt></ruby>］が表示されます。ボタンを押すごとに、［歩いた<ruby>距離<rt>きょり</rt></ruby>］→［時間］→［消費カロリー］の順で表示されます。</p></div></div></div>",
+      "footnotes": [
+        {
+          "term": "（※13）歩数計",
+          "definition": "歩く時の足を前に出す動き（<ruby>歩数<rt>ほすう</rt></ruby>）を数える小さな機械"
+        },
+        {
+          "term": "（※14）表示",
+          "definition": "はっきり見えるように外に示すこと"
+        },
+        {
+          "term": "（※15）歩幅",
+          "definition": "歩く時の一歩の長さ"
+        }
+      ]
+    },
+    {
+      "id": "mock-sec-6",
+      "sectionNumber": 6,
+      "sectionType": "中文 2",
+      "sectionTitle": "問題 2（中文 2）",
+      "passageTitle": "自転車のカーナビについて",
+      "pageScan": "/speed_master_n3_pages/speed_master_n3_page-0129.jpg",
+      "targetMinutes": 7,
+      "questionIndices": [
+        7,
+        8,
+        9
+      ],
+      "passageText": "<div class=\"speed-master-memo-card space-y-3 leading-relaxed\"><p>ある会社が自転車のカーナビ<sup>（※16）</sup>を発売すると、友人から聞いた。広い道だけでなく、細い道の案内もでき、さらに、自転車置き場や自転車店などの情報も入っているそうだ。このカーナビの大きさは電子辞書ぐらいで、速度や走った距離、自転車をこぐ<sup>（※17）</sup>時に使った<ruby>消費<rt>しょうひ</rt></ruby><sup>（※18）</sup>カロリー<sup>（※19）</sup>も表せるという。雨の日でも使うことができ、色もいろいろあるそうだ。</p><p>このようなカーナビを自転車に付けたら、行きたいところにどんどん行けるようになるし、<ruby>環境<rt>かんきょう</rt></ruby>にもとてもいいと思う。しかし、<u>①問題は道路である</u>。今のように自動車と並んで走るのは危険だし、そうかといって、歩道を走るのも歩いている人に迷惑がかかる。自転車用のカーナビができれば、自動車のように自転車でいろいろなところに行けるようになるのだから、②<u>【　　　　】</u>。</p></div>",
+      "footnotes": [
+        {
+          "term": "（※16）カーナビ",
+          "definition": "自動車用の動く案内地図"
+        },
+        {
+          "term": "（※17）こぐ",
+          "definition": "乗り物を動かすために手や足を使った動作をする"
+        },
+        {
+          "term": "（※18）消費",
+          "definition": "使うこと"
+        },
+        {
+          "term": "（※19）カロリー",
+          "definition": "体を動かすのに必要な熱のエネルギー"
+        }
+      ]
+    },
+    {
+      "id": "mock-sec-7",
+      "sectionNumber": 7,
+      "sectionType": "長文",
+      "sectionTitle": "問題 3（長文）",
+      "passageTitle": "みどり高校平成5年卒業生の皆様へ",
+      "pageScan": "/speed_master_n3_pages/speed_master_n3_page-0132.jpg",
+      "targetMinutes": 10,
+      "questionIndices": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "passageText": "<div class=\"speed-master-memo-card space-y-4 leading-relaxed\"><h3 class=\"font-bold text-base mb-2 border-b border-slate-200/60 pb-2\">みどり高校平成5年卒業生の皆様へ</h3><p>ごぶさたしています。<br>私たちがみどり高校を卒業して20年がたちました。皆様、お元気でしょうか。<br><ruby>故郷<rt>ふるさと</rt></ruby>を<ruby>離<rt>はな</rt></ruby>れている方、仕事や家事、育児にがんばっている方、皆、それぞれの場所でご<ruby>活躍<rt>かつやく</rt></ruby>のことと思います。</p><p>さて、<u>①このたび久しぶりに<ruby>同窓会<rt>どうそうかい</rt></ruby><sup>（※20）</sup>を計画しました</u>。高橋先生が4月に『英語教師として三十年』を<ruby>出版<rt>しゅっぱん</rt></ruby>されたところ、さっそく何人かの方から、先生のお話をぜひお聞きしたいという声が上がったからです。すでにお読みになった方もいらっしゃると思いますが、先生の30年を超える英語教育に関するお話や、学校生活<ruby>全般<rt>ぜんぱん</rt></ruby><sup>（※21）</sup>での生徒や同僚の先生方との<ruby>交流<rt>こうりゅう</rt></ruby>などが、親しみやすい文で書かれています。現在教師をされている方、親として子供の教育を考えている方には、大変興味深い内容だと思います。</p><p>秋の一日、おいしい料理をいただきながら、先生のお話と友人たちとのおしゃべりを楽しむというのはいかがでしょうか。</p><p>そして今回の会については、二通りの案を考えました。連絡用はがきに、まず<ruby>出欠<rt>しゅっけつ</rt></ruby>のお返事をいただき、ご出席の方は、よいほうの<ruby>案<rt>あん</rt></ruby>に○をつけてください。どちらでもいい場合は両方に○をつけてください。なお、ご欠席の方は記入なさらないでください。（以下略）</p><div class=\"speed-master-notice-inner p-4 rounded-xl border-2 border-slate-300 dark:border-slate-700 text-sm leading-relaxed space-y-2\"><p class=\"font-bold text-center\">みどり高校第35期卒業生第3回<ruby>同窓会<rt>どうそうかい</rt></ruby>に</p><p class=\"text-center font-semibold\">ご出席　・　ご欠席　（どちらかに○をつけてください）</p><p>お名前：<span class=\"border-b border-current inline-block w-48\"></span></p><p>ご住所：<span class=\"border-b border-current inline-block w-48\"></span></p><p class=\"font-semibold pt-1\">☆二案のうち、よいと思うほうに○をつけてください。</p><p class=\"pl-2\"><strong><ruby>案<rt>あん</rt></ruby>1</strong>　日時：10月25日(土) 午前11時〜午後3時<br>　　　「レストラン<ruby>富士<rt>ふじ</rt></ruby>」で昼食　参加費5,000円</p><p class=\"pl-2\"><strong><ruby>案<rt>あん</rt></ruby>2</strong>　日時：10月25日(土) 午後3時集合<br>　　　「温泉旅館<ruby>玉屋<rt>たまや</rt></ruby>」に<ruby>一泊夕食<rt>いっぱくゆうしょく</rt></ruby>・<ruby>朝食<rt>ちょうしょく</rt></ruby>付き　参加費20,000円<br>　　　＊26日(日) 午前10時<ruby>解散<rt>かいさん</rt></ruby><sup>（※22）</sup></p></div></div>",
+      "footnotes": [
+        {
+          "term": "（※20）同窓会",
+          "definition": "同じ学校を卒業した人たちが集まる会"
+        },
+        {
+          "term": "（※21）全般",
+          "definition": "それが関係していることの全体"
+        },
+        {
+          "term": "（※22）解散",
+          "definition": "会や行事などが終わり、集まっていた人が散るようにそれぞれに去っていくこと"
+        }
+      ]
+    },
+    {
+      "id": "mock-sec-8",
+      "sectionNumber": 8,
+      "sectionType": "情報検索",
+      "sectionTitle": "問題 4（情報検索）",
+      "passageTitle": "毎朝就職説明会",
+      "pageScan": "/speed_master_n3_pages/speed_master_n3_page-0136.jpg",
+      "targetMinutes": 8,
+      "questionIndices": [
+        14,
+        15
+      ],
+      "passageText": "<div class=\"speed-master-memo-card mb-4\"><p>スーさんは、来年3月に専門学校を卒業の予定です。日本で<ruby>医療<rt>いりょう</rt></ruby><sup>（※23）</sup>関係の仕事をしたいと希望しています。新聞で、つぎのような合同企業説明会の案内を見ました。</p></div><div class=\"speed-master-flyer-card\"><img src=\"/speed_master_n3_pages/mock_exam_p136_flyer_hd.png\" alt=\"毎朝就職説明会\" class=\"speed-master-flyer-img\" /></div>",
+      "footnotes": [
+        {
+          "term": "（※23）医療",
+          "definition": "病気やけがを治すこと、また、そのための技術や薬など"
+        },
+        {
+          "term": "（※24）福祉",
+          "definition": "人が幸せな暮らしができるように<ruby>公的<rt>こうてき</rt></ruby>なサービスをすること"
+        },
+        {
+          "term": "（※25）履歴書",
+          "definition": "これまでどういう勉強や仕事をしてきたか、などを書いた書類"
+        },
+        {
+          "term": "（※26）持参",
+          "definition": "持ってくること"
+        }
+      ]
+    }
+  ]
+}
