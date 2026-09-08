@@ -1,66 +1,68 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './context/AuthContext.jsx';
+import LoadingSpinner from './utils/loading_spinner.jsx';
 import './assets/app_style.css';
 import './assets/book_features.css';
 import './assets/restored_tests.css';
 import './assets/drill_animations.css';
+import './assets/practice_sets.css';
 
 import MainLayout from './components/main_layout.jsx';
 import LandingPage from './components/landing_screen.jsx';
-import LevelSelectionPage from './components/level_selection_screen.jsx';
-import JlptQuizPage from './components/jlpt_quiz_screen.jsx';
-import ResultsPage from './components/result_screen.jsx';
-import ProfilePage from './components/profile_screen.jsx';
-import ExerciseGridPage from './components/exercise_grid_screen.jsx';
-import StandardQuizPage from './components/standard_quiz_screen.jsx';
-import ReadingQuizPage from './components/ReadingQUizPage.jsx';
-//import QuizPage from './components/standard_quiz_screen.jsx';
-import VocabularyListPage from './components/VocabularyListPage.jsx';
-import FlashcardViewer from './components/FlashcardViewer.jsx';
-import GrammarStudyPage from './components/grammar_study_page.jsx';
-import GrammarListPage from './components/grammar_list_page.jsx';
-import KanjiDetailsPage from './components/KanjiDetailsPage.jsx';
-import VocabDetailsPage from './components/VocabDetailsPage.jsx';
-import GrammarDetailsPage from './components/GrammarDetailsPage.jsx';
 
-// --- NEW IMPORTS FOR PRACTICE TEST FLOW ---
-import PracticeCategoryPage from './components/PracticeCategoryPage.jsx';
-import PracticeTestListPage from './components/PracticeTestListPage.jsx';
-import TestTakerPage from './components/TestTakerPage.jsx';
-// --- END NEW IMPORTS ---
-import ConversationsPage from './components/ConversationsPage.jsx';
+// Lazy-loaded page components for optimal mobile bundle size and performance
+const LevelSelectionPage = lazy(() => import('./components/level_selection_screen.jsx'));
+const JlptQuizPage = lazy(() => import('./components/jlpt_quiz_screen.jsx'));
+const ResultsPage = lazy(() => import('./components/result_screen.jsx'));
+const ProfilePage = lazy(() => import('./components/profile_screen.jsx'));
+const ExerciseGridPage = lazy(() => import('./components/exercise_grid_screen.jsx'));
+const StandardQuizPage = lazy(() => import('./components/standard_quiz_screen.jsx'));
+const ReadingQuizPage = lazy(() => import('./components/ReadingQUizPage.jsx'));
+const VocabularyListPage = lazy(() => import('./components/VocabularyListPage.jsx'));
+const FlashcardViewer = lazy(() => import('./components/FlashcardViewer.jsx'));
+const GrammarStudyPage = lazy(() => import('./components/grammar_study_page.jsx'));
+const GrammarListPage = lazy(() => import('./components/grammar_list_page.jsx'));
+const KanjiDetailsPage = lazy(() => import('./components/KanjiDetailsPage.jsx'));
+const VocabDetailsPage = lazy(() => import('./components/VocabDetailsPage.jsx'));
+const GrammarDetailsPage = lazy(() => import('./components/GrammarDetailsPage.jsx'));
 
-import BookListPage from './components/BookListPage.jsx';
-import BookChapterListPage from './components/BookChapterListPage.jsx';
-import BookQuizTakerPage from './components/BookQuizTakerPage.jsx';
-import SomatomeN3Book from './components/SomatomeN3Book.jsx';
-import ShinkanzenN3ReadingBook from './components/ShinkanzenN3ReadingBook.jsx';
-import ShinkanzenN3ListeningBook from './components/ShinkanzenN3ListeningBook.jsx';
-import SpeedMasterN3ReadingBook from './components/SpeedMasterN3ReadingBook.jsx';
-import TangoReadingPage from './components/TangoReadingPage.jsx';
+// Practice Test Flow
+const PracticeCategoryPage = lazy(() => import('./components/PracticeCategoryPage.jsx'));
+const PracticeTestListPage = lazy(() => import('./components/PracticeTestListPage.jsx'));
+const TestTakerPage = lazy(() => import('./components/TestTakerPage.jsx'));
+const ConversationsPage = lazy(() => import('./components/ConversationsPage.jsx'));
 
-// --- PRACTICE SETS ---
-import './assets/practice_sets.css';
-import PracticeSetsListPage from './components/PracticeSetsListPage.jsx';
-import PracticeSetDetailsPage from './components/PracticeSetDetailsPage.jsx';
-import PracticeSetQuizPage from './components/PracticeSetQuizPage.jsx';
+// Book Collection
+const BookListPage = lazy(() => import('./components/BookListPage.jsx'));
+const BookChapterListPage = lazy(() => import('./components/BookChapterListPage.jsx'));
+const BookQuizTakerPage = lazy(() => import('./components/BookQuizTakerPage.jsx'));
+const SomatomeN3Book = lazy(() => import('./components/SomatomeN3Book.jsx'));
+const ShinkanzenN3ReadingBook = lazy(() => import('./components/ShinkanzenN3ReadingBook.jsx'));
+const ShinkanzenN3ListeningBook = lazy(() => import('./components/ShinkanzenN3ListeningBook.jsx'));
+const SpeedMasterN3ReadingBook = lazy(() => import('./components/SpeedMasterN3ReadingBook.jsx'));
+const TangoReadingPage = lazy(() => import('./components/TangoReadingPage.jsx'));
 
-import KanjiListPage from './components/KanjiListPage.jsx';
-import CustomKanjiDrillQuiz from './components/CustomKanjiDrillQuiz.jsx';
+// Practice Sets
+const PracticeSetsListPage = lazy(() => import('./components/PracticeSetsListPage.jsx'));
+const PracticeSetDetailsPage = lazy(() => import('./components/PracticeSetDetailsPage.jsx'));
+const PracticeSetQuizPage = lazy(() => import('./components/PracticeSetQuizPage.jsx'));
+
+const KanjiListPage = lazy(() => import('./components/KanjiListPage.jsx'));
+const CustomKanjiDrillQuiz = lazy(() => import('./components/CustomKanjiDrillQuiz.jsx'));
 
 // This component protects routes that require a user to be logged in
 function ProtectedRoute({ children }) {
   const { currentUser } = useAuth();
-  // This is where the <Navigate /> component is used
   return currentUser ? children : <Navigate to="/" />;
 }
 
 export default function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
+      <Suspense fallback={<LoadingSpinner />}>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
         
         {/* Standalone Pages (No MainLayout) */}
         <Route path="/levels/:level/kanji-list" element={<ProtectedRoute><KanjiListPage /></ProtectedRoute>} />
@@ -196,6 +198,7 @@ export default function App() {
 
         </Route>
       </Routes>
+      </Suspense>
     </Router>
   );
 }
