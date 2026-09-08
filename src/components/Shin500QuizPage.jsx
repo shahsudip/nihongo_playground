@@ -1,6 +1,6 @@
 // src/components/Shin500QuizPage.jsx
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate, useLocation, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
@@ -8,10 +8,20 @@ import LoadingSpinner from '../utils/loading_spinner.jsx';
 import { STATIC_BOOKS } from '../data/static_books_catalog.js';
 import '../assets/shin500_drill.css';
 
-const Shin500QuizPage = () => {
-  const { bookId, chapterId } = useParams();
+const Shin500QuizPage = ({ bookId: propBookId }) => {
+  const { bookId: paramBookId, chapterId } = useParams();
+  const location = useLocation();
   const navigate = useNavigate();
   const { currentUser } = useAuth();
+
+  // Safely resolve bookId whether passed via prop, route param, or URL pathname
+  const bookId = useMemo(() => {
+    if (propBookId) return propBookId;
+    if (paramBookId) return paramBookId;
+    const match = location.pathname.match(/\/books\/(shin-nihongo-500-[^\/]+)/);
+    if (match) return match[1];
+    return 'shin-nihongo-500-n3';
+  }, [propBookId, paramBookId, location.pathname]);
 
   const staticBook = STATIC_BOOKS.find(b => b.id === bookId) || null;
   const [bookTitle, setBookTitle] = useState(staticBook?.title || "Shin Nihongo 500 Mon");

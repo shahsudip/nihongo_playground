@@ -174,19 +174,19 @@ export default function App() {
           />
           <Route
             path="/books/shin-nihongo-500-n1/chapters/:chapterId"
-            element={<ProtectedRoute><Shin500QuizPage /></ProtectedRoute>}
+            element={<ProtectedRoute><Shin500QuizPage bookId="shin-nihongo-500-n1" /></ProtectedRoute>}
           />
           <Route
             path="/books/shin-nihongo-500-n2/chapters/:chapterId"
-            element={<ProtectedRoute><Shin500QuizPage /></ProtectedRoute>}
+            element={<ProtectedRoute><Shin500QuizPage bookId="shin-nihongo-500-n2" /></ProtectedRoute>}
           />
           <Route
             path="/books/shin-nihongo-500-n3/chapters/:chapterId"
-            element={<ProtectedRoute><Shin500QuizPage /></ProtectedRoute>}
+            element={<ProtectedRoute><Shin500QuizPage bookId="shin-nihongo-500-n3" /></ProtectedRoute>}
           />
           <Route
             path="/books/shin-nihongo-500-n4-n5/chapters/:chapterId"
-            element={<ProtectedRoute><Shin500QuizPage /></ProtectedRoute>}
+            element={<ProtectedRoute><Shin500QuizPage bookId="shin-nihongo-500-n4-n5" /></ProtectedRoute>}
           />
           <Route
             path="/books/:bookId/chapters/:chapterId"
