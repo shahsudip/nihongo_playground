@@ -1,22 +1,22 @@
-// src/components/StandardChapterList.jsx
+// src/components/TangoChapterList.jsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const StandardChapterList = ({ book, chapters = [], history = {} }) => {
-  const [expandedWeek, setExpandedWeek] = useState(null);
+const TangoChapterList = ({ book, chapters = [], history = {} }) => {
+  const [expandedWeek, setExpandedWeek] = useState('Topics');
 
   const getQuestionCount = (chapter) => {
     if (!chapter.passages || !Array.isArray(chapter.passages)) return 0;
     return chapter.passages.reduce((sum, passage) => sum + (passage.questions?.length || 0), 0);
   };
 
-  // Group chapters by week / topic
+  // Group chapters by topic / week
   const groupByWeek = (chaptersList = []) => {
     const weeks = {};
     chaptersList.forEach(chapter => {
       const weekMatch = chapter.title?.match(/Week\s*(\d+)/i);
       const weekNum = weekMatch ? parseInt(weekMatch[1], 10) : 0;
-      const key = weekNum > 0 ? `Week ${weekNum}` : 'Other';
+      const key = weekNum > 0 ? `Week ${weekNum}` : 'Topics';
       if (!weeks[key]) weeks[key] = { weekNum, chapters: [] };
       weeks[key].chapters.push(chapter);
     });
@@ -35,6 +35,8 @@ const StandardChapterList = ({ book, chapters = [], history = {} }) => {
   };
 
   const getDayLabel = (title) => {
+    const topicMatch = title?.match(/Topic\s*(\d+)/i);
+    if (topicMatch) return `Topic ${topicMatch[1]}`;
     const dayMatch = title?.match(/Day\s*(\d+)/i);
     if (dayMatch) return `Day ${dayMatch[1]}`;
     if (title?.toLowerCase().includes('review')) return 'Review';
@@ -46,7 +48,7 @@ const StandardChapterList = ({ book, chapters = [], history = {} }) => {
   if (weekGroups.length === 0) {
     return (
       <div className="text-center py-12 text-[var(--color-text-secondary)]">
-        <p className="text-base">No chapters found for this book.</p>
+        <p className="text-base">No topics found for this book.</p>
       </div>
     );
   }
@@ -66,7 +68,7 @@ const StandardChapterList = ({ book, chapters = [], history = {} }) => {
             >
               <div className="week-card-top">
                 <h3 className="week-card-title">{weekName}</h3>
-                <span className="week-card-count">{weekData.chapters.length} days</span>
+                <span className="week-card-count">{weekData.chapters.length} topics</span>
               </div>
               <div className="week-card-progress">
                 <div className="week-progress-bar">
@@ -91,11 +93,11 @@ const StandardChapterList = ({ book, chapters = [], history = {} }) => {
                   return (
                     <Link
                       key={chapter.id}
-                      to={`/books/${book.id}/chapters/${chapter.id}`}
+                      to={`/tango-reading/${book.id}/chapters/${chapter.id}`}
                       className={`day-card ${isMastered ? 'day-mastered' : isIncomplete ? 'day-progress' : ''}`}
                     >
                       <div className="day-card-label">{dayLabel}</div>
-                      <div className="day-card-questions">{qCount} Q</div>
+                      {qCount > 0 && <div className="day-card-questions">{qCount} Q</div>}
                       <div className="day-card-status">
                         {isMastered ? (
                           <span className="day-status-badge mastered">✓</span>
@@ -125,4 +127,4 @@ const StandardChapterList = ({ book, chapters = [], history = {} }) => {
   );
 };
 
-export default StandardChapterList;
+export default TangoChapterList;

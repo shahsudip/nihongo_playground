@@ -7,6 +7,10 @@ import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 import PowerDrillChapterList from './PowerDrillChapterList.jsx';
 import Shin500ChapterList from './Shin500ChapterList.jsx';
+import ShinkanzenChapterList from './ShinkanzenChapterList.jsx';
+import SpeedMasterChapterList from './SpeedMasterChapterList.jsx';
+import SouMatomeChapterList from './SouMatomeChapterList.jsx';
+import TangoChapterList from './TangoChapterList.jsx';
 import StandardChapterList from './StandardChapterList.jsx';
 import { STATIC_BOOKS } from '../data/static_books_catalog.js';
 
@@ -24,6 +28,10 @@ const BookChapterListPage = () => {
   const [error, setError] = useState(null);
   const isPowerDrill = bookId.includes('power-drill');
   const isShin500 = bookId.startsWith('shin-nihongo-500') || bookId.includes('500');
+  const isShinkanzen = bookId.startsWith('shinkanzen');
+  const isSpeedMaster = bookId.startsWith('speed-master');
+  const isSouMatome = bookId.startsWith('sou-matome') || bookId.startsWith('somatome');
+  const isTango = bookId.startsWith('tango');
 
   useEffect(() => {
     let isMounted = true;
@@ -173,7 +181,7 @@ const BookChapterListPage = () => {
         </div>
       </div>
 
-      {/* Layout components determined by book type */}
+      {/* Dedicated layout components per book family */}
       {isPowerDrill ? (
         <PowerDrillChapterList
           book={book}
@@ -182,6 +190,25 @@ const BookChapterListPage = () => {
         />
       ) : isShin500 ? (
         <Shin500ChapterList
+          book={book}
+          chapters={chapters}
+          history={history}
+        />
+      ) : isShinkanzen ? (
+        <ShinkanzenChapterList
+          book={book}
+        />
+      ) : isSpeedMaster ? (
+        <SpeedMasterChapterList
+          book={book}
+        />
+      ) : isSouMatome ? (
+        <SouMatomeChapterList
+          book={book}
+          history={history}
+        />
+      ) : isTango ? (
+        <TangoChapterList
           book={book}
           chapters={chapters}
           history={history}
