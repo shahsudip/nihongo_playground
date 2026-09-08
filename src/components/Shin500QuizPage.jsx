@@ -31,9 +31,10 @@ const Shin500QuizPage = () => {
   const getCorrectAnswerInfo = useCallback((q) => {
     let correctIdx = null;
     let correctText = '';
+    if (!q) return { index: null, text: '' };
 
     if (q.correctOption && typeof q.correctOption === 'object') {
-      correctIdx = q.correctOption.index;
+      correctIdx = q.correctOption.index !== undefined ? q.correctOption.index : null;
       correctText = q.correctOption.text || '';
     } else if (typeof q.correctOption === 'number') {
       correctIdx = q.correctOption;
@@ -45,11 +46,18 @@ const Shin500QuizPage = () => {
       correctIdx = q.correctIndex;
     }
 
-    if (q.options && Array.isArray(q.options)) {
-      if (correctIdx !== null && correctIdx >= 0 && correctIdx < q.options.length) {
-        if (!correctText) correctText = q.options[correctIdx];
+    const opts = Array.isArray(q.options) ? q.options : [];
+    if (opts.length > 0) {
+      if (correctIdx !== null && correctIdx >= 0 && correctIdx < opts.length) {
+        if (!correctText) {
+          const raw = opts[correctIdx];
+          correctText = typeof raw === 'object' && raw !== null ? (raw.text || '') : (raw || '');
+        }
       } else if (correctText) {
-        const found = q.options.indexOf(correctText);
+        const found = opts.findIndex(opt => {
+          const t = typeof opt === 'object' && opt !== null ? opt.text : opt;
+          return t === correctText;
+        });
         if (found !== -1) correctIdx = found;
       }
     }
@@ -59,6 +67,7 @@ const Shin500QuizPage = () => {
 
   // Determine question category (Moji / Goi / Bunpou)
   const getCategoryInfo = useCallback((q, index) => {
+    if (!q) return { type: 'moji', label: '文字 (Kanji)', icon: '🈁' };
     const text = (q.questionText || '') + ' ' + (q.explanation || '');
     if (q.category) {
       if (q.category.includes('moji') || q.category.includes('kanji')) return { type: 'moji', label: '文字 (Kanji)', icon: '🈁' };
@@ -105,7 +114,27 @@ const Shin500QuizPage = () => {
         }
 
         // Fetch chapter doc from subcollection 'chapters'
-        const chapSnap = await getDoc(doc(db, 'books', bookId, 'chapters', chapterId));
+        let chapSnap = await getDoc(doc(db, 'books', bookId, 'chapters', chapterId));
+        
+        // Multi-alias fallback if direct ID not found
+        if (!chapSnap.exists()) {
+          const wMatch = chapterId.match(/week[_-]?(\d+)[_-]?day[_-]?(\d+)/i) || chapterId.match(/w(\d+)[_-]?d(\d+)/i);
+          if (wMatch) {
+            const altId1 = `w${wMatch[1]}-d${wMatch[2]}`;
+            const altId2 = `week${wMatch[1]}-day${wMatch[2]}`;
+            const altId3 = `week${wMatch[1]}_day${wMatch[2]}`;
+            for (const alt of [altId1, altId2, altId3]) {
+              if (alt !== chapterId) {
+                const altSnap = await getDoc(doc(db, 'books', bookId, 'chapters', alt));
+                if (altSnap.exists()) {
+                  chapSnap = altSnap;
+                  break;
+                }
+              }
+            }
+          }
+        }
+
         if (!chapSnap.exists()) {
           if (isMounted) {
             setError(`Drill "${chapterId}" not found in ${bookId}.`);
