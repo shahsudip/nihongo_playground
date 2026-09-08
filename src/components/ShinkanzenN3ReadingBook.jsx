@@ -8,6 +8,8 @@ import { doc, getDoc } from 'firebase/firestore';
 // Eagerly load all local Shinkanzen JSON files in data/shinkanzen_reading/
 const localChapterModules = import.meta.glob('../data/shinkanzen_reading/*.json', { eager: true });
 
+const firebaseCache = {};
+
 // Dynamically generate the chapter list from the eager-loaded JSON files
 const SHINKANZEN_N3_CHAPTERS = Object.keys(localChapterModules)
   .map(filePath => {

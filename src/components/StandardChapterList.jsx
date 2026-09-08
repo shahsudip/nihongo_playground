@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const StandardChapterList = ({ book, chapters, history }) => {
+const StandardChapterList = ({ book, chapters = [], history = {} }) => {
   const [expandedWeek, setExpandedWeek] = useState(null);
 
   const getQuestionCount = (chapter) => {
@@ -11,7 +11,7 @@ const StandardChapterList = ({ book, chapters, history }) => {
   };
 
   // Group chapters by week
-  const groupByWeek = (chaptersList) => {
+  const groupByWeek = (chaptersList = []) => {
     const weeks = {};
     chaptersList.forEach(chapter => {
       // Extract week number from title like "Week 1 - Day 1"
@@ -29,7 +29,7 @@ const StandardChapterList = ({ book, chapters, history }) => {
     let completed = 0;
     let inProgress = 0;
     weekChapters.forEach(ch => {
-      const progress = history[ch.id];
+      const progress = history?.[ch.id];
       if (progress?.status === 'mastered') completed++;
       else if (progress) inProgress++;
     });
@@ -42,6 +42,8 @@ const StandardChapterList = ({ book, chapters, history }) => {
     if (title?.toLowerCase().includes('review')) return 'Review';
     return title;
   };
+
+  const weekGroups = groupByWeek(chapters);
 
   // For Shinkanzen Master N3 Reading, show 4 Part cards linking to the digital book viewer
   if (book.id === 'shinkanzen-master-n3-reading') {
@@ -231,6 +233,14 @@ const StandardChapterList = ({ book, chapters, history }) => {
             </Link>
           );
         })}
+      </div>
+    );
+  }
+
+  if (weekGroups.length === 0) {
+    return (
+      <div className="text-center py-12 text-[var(--color-text-secondary)]">
+        <p className="text-base">No chapters found for this book.</p>
       </div>
     );
   }

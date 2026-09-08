@@ -6,6 +6,7 @@ import { db } from '../firebaseConfig.js';
 import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 import PowerDrillChapterList from './PowerDrillChapterList.jsx';
+import Shin500ChapterList from './Shin500ChapterList.jsx';
 import StandardChapterList from './StandardChapterList.jsx';
 import { STATIC_BOOKS } from '../data/static_books_catalog.js';
 
@@ -22,6 +23,7 @@ const BookChapterListPage = () => {
   const [loading, setLoading] = useState(!staticBook);
   const [error, setError] = useState(null);
   const isPowerDrill = bookId.includes('power-drill');
+  const isShin500 = bookId.startsWith('shin-nihongo-500') || bookId.includes('500');
 
   useEffect(() => {
     let isMounted = true;
@@ -148,6 +150,10 @@ const BookChapterListPage = () => {
               <span>
                 {chapters.filter(c => c.id.startsWith('vocab') || c.id.startsWith('training')).length} Vocab Drills &amp; {chapters.filter(c => c.id.startsWith('grammar')).length} Grammar Drills
               </span>
+            ) : isShin500 ? (
+              <span>
+                500 Questions &bull; {chapters.length} Daily Drills
+              </span>
             ) : (
               <span>{chapters.length} Lessons</span>
             )}
@@ -158,6 +164,12 @@ const BookChapterListPage = () => {
       {/* Layout components determined by book type */}
       {isPowerDrill ? (
         <PowerDrillChapterList
+          book={book}
+          chapters={chapters}
+          history={history}
+        />
+      ) : isShin500 ? (
+        <Shin500ChapterList
           book={book}
           chapters={chapters}
           history={history}
