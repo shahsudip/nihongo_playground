@@ -1,1 +1,0 @@
-import{j as d}from"./index-DGfhHtXU.js";import"./vendor-react-BKFSlb1C.js";const t=({children:r,className:o="",...a})=>d.jsx("div",{className:`bg-[var(--color-bg-primary)] border border-[var(--color-border)] rounded-2xl shadow-sm transition-all duration-300 hover:shadow-md hover:border-[var(--color-border-light)] p-6 md:p-8 ${o}`,...a,children:r});export{t as C};
