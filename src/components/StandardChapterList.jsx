@@ -10,14 +10,14 @@ const StandardChapterList = ({ book, chapters = [], history = {} }) => {
     return chapter.passages.reduce((sum, passage) => sum + (passage.questions?.length || 0), 0);
   };
 
-  // Group chapters by week
+  // Group chapters by week / topic
   const groupByWeek = (chaptersList = []) => {
     const weeks = {};
     chaptersList.forEach(chapter => {
       // Extract week number from title like "Week 1 - Day 1"
       const weekMatch = chapter.title?.match(/Week\s*(\d+)/i);
-      const weekNum = weekMatch ? parseInt(weekMatch[1]) : 0;
-      const key = weekNum > 0 ? `Week ${weekNum}` : 'Other';
+      const weekNum = weekMatch ? parseInt(weekMatch[1], 10) : 0;
+      const key = weekNum > 0 ? `Week ${weekNum}` : (chapter.title?.match(/Topic/i) || chapter.id?.startsWith('topic') ? 'Topics' : 'Other');
       if (!weeks[key]) weeks[key] = { weekNum, chapters: [] };
       weeks[key].chapters.push(chapter);
     });
@@ -39,6 +39,8 @@ const StandardChapterList = ({ book, chapters = [], history = {} }) => {
   const getDayLabel = (title) => {
     const dayMatch = title?.match(/Day\s*(\d+)/i);
     if (dayMatch) return `Day ${dayMatch[1]}`;
+    const topicMatch = title?.match(/Topic\s*(\d+)/i);
+    if (topicMatch) return `Topic ${topicMatch[1]}`;
     if (title?.toLowerCase().includes('review')) return 'Review';
     return title;
   };
