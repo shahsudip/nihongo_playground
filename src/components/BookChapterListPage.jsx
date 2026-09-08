@@ -7,6 +7,10 @@ import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 import PowerDrillChapterList from './PowerDrillChapterList.jsx';
 import Shin500ChapterList from './Shin500ChapterList.jsx';
+import SouMatomeChapterList from './SouMatomeChapterList.jsx';
+import TangoChapterList from './TangoChapterList.jsx';
+import ShinkanzenChapterList from './ShinkanzenChapterList.jsx';
+import SpeedMasterChapterList from './SpeedMasterChapterList.jsx';
 import StandardChapterList from './StandardChapterList.jsx';
 import { STATIC_BOOKS } from '../data/static_books_catalog.js';
 
@@ -22,8 +26,13 @@ const BookChapterListPage = () => {
   const isReadingBook = ['speed-master-n3-reading', 'shinkanzen-master-n3-reading', 'shinkanzen-master-n3-listening', 'sou-matome-n3-reading'].includes(bookId);
   const [loading, setLoading] = useState(!staticBook);
   const [error, setError] = useState(null);
+  
   const isPowerDrill = bookId.includes('power-drill');
   const isShin500 = bookId.startsWith('shin-nihongo-500') || bookId.includes('500');
+  const isSouMatome = bookId.startsWith('sou-matome');
+  const isTango = bookId.startsWith('tango');
+  const isShinkanzen = bookId.startsWith('shinkanzen-master');
+  const isSpeedMaster = bookId.startsWith('speed-master');
 
   useEffect(() => {
     let isMounted = true;
@@ -152,8 +161,16 @@ const BookChapterListPage = () => {
               </span>
             ) : isShin500 ? (
               <span>
-                500 Questions &bull; {chapters.length} Daily Drills
+                500 Questions &bull; {chapters.length || book.totalChapters || 105} Daily Drills
               </span>
+            ) : isSouMatome ? (
+              <span>6 Weeks &bull; 42 Daily Lessons</span>
+            ) : isTango ? (
+              <span>{chapters.length || book.totalChapters || 14} Topics &bull; Vocabulary &amp; Stories</span>
+            ) : isShinkanzen ? (
+              <span>{book.totalChapters || 52} Practice Mondai &amp; Tests</span>
+            ) : isSpeedMaster ? (
+              <span>64 Speed Drill Passages &amp; Full Mock Exam</span>
             ) : (
               <span>{chapters.length} Lessons</span>
             )}
@@ -161,7 +178,7 @@ const BookChapterListPage = () => {
         </div>
       </div>
 
-      {/* Layout components determined by book type */}
+      {/* Layout components dedicated by book family */}
       {isPowerDrill ? (
         <PowerDrillChapterList
           book={book}
@@ -170,6 +187,30 @@ const BookChapterListPage = () => {
         />
       ) : isShin500 ? (
         <Shin500ChapterList
+          book={book}
+          chapters={chapters}
+          history={history}
+        />
+      ) : isSouMatome ? (
+        <SouMatomeChapterList
+          book={book}
+          chapters={chapters}
+          history={history}
+        />
+      ) : isTango ? (
+        <TangoChapterList
+          book={book}
+          chapters={chapters}
+          history={history}
+        />
+      ) : isShinkanzen ? (
+        <ShinkanzenChapterList
+          book={book}
+          chapters={chapters}
+          history={history}
+        />
+      ) : isSpeedMaster ? (
+        <SpeedMasterChapterList
           book={book}
           chapters={chapters}
           history={history}
