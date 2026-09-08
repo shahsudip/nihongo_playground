@@ -41,6 +41,7 @@ const SomatomeN3Book = lazy(() => import('./components/SomatomeN3Book.jsx'));
 const ShinkanzenN3ReadingBook = lazy(() => import('./components/ShinkanzenN3ReadingBook.jsx'));
 const ShinkanzenN3ListeningBook = lazy(() => import('./components/ShinkanzenN3ListeningBook.jsx'));
 const SpeedMasterN3ReadingBook = lazy(() => import('./components/SpeedMasterN3ReadingBook.jsx'));
+const Shin500QuizPage = lazy(() => import('./components/Shin500QuizPage.jsx'));
 const TangoReadingPage = lazy(() => import('./components/TangoReadingPage.jsx'));
 
 // Practice Sets
@@ -170,6 +171,22 @@ export default function App() {
           <Route
             path="/books/speed-master-n3-reading"
             element={<Navigate to="/books/speed-master-n3-reading/chapters/short-1" replace />}
+          />
+          <Route
+            path="/books/shin-nihongo-500-n1/chapters/:chapterId"
+            element={<ProtectedRoute><Shin500QuizPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/books/shin-nihongo-500-n2/chapters/:chapterId"
+            element={<ProtectedRoute><Shin500QuizPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/books/shin-nihongo-500-n3/chapters/:chapterId"
+            element={<ProtectedRoute><Shin500QuizPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/books/shin-nihongo-500-n4-n5/chapters/:chapterId"
+            element={<ProtectedRoute><Shin500QuizPage /></ProtectedRoute>}
           />
           <Route
             path="/books/:bookId/chapters/:chapterId"
