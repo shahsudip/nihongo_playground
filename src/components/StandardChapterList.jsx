@@ -188,36 +188,39 @@ const StandardChapterList = ({ book, chapters = [], history = {} }) => {
 
   // For Sou Matome books, clean minimal cards with just Title and Progress
   if (book.id.startsWith('sou-matome')) {
-    const weekTitles = {
-      1: "Week 1: お知らせや案内を読もう①",
-      2: "Week 2: 掲示や広告を読もう",
-      3: "Week 3: メールや手紙を読もう",
-      4: "Week 4: 短い文章を読もう",
-      5: "Week 5: 中くらいの文章を読もう",
-      6: "Week 6: 長い文章・情報検索"
-    };
+    const weeks = [
+      { weekNum: 1, title: "Week 1: お知らせや案内を読もう①", targetChapterId: "week1-day1" },
+      { weekNum: 2, title: "Week 2: 掲示や広告を読もう", targetChapterId: "week2-day1" },
+      { weekNum: 3, title: "Week 3: メールや手紙を読もう", targetChapterId: "week3-day1" },
+      { weekNum: 4, title: "Week 4: 短い文章を読もう", targetChapterId: "week4-day1" },
+      { weekNum: 5, title: "Week 5: 中くらいの文章を読もう", targetChapterId: "week5-day1" },
+      { weekNum: 6, title: "Week 6: 長い文章・情報検索", targetChapterId: "week6-day1" }
+    ];
 
-    // Filter out 'Other' group — only show proper Week cards
-    const filteredWeekGroups = weekGroups.filter(([weekName]) => weekName !== 'Other');
+    const getWeekProgressFromHistory = (weekNum) => {
+      let completed = 0;
+      for (let day = 1; day <= 7; day++) {
+        const chapId = `week${weekNum}-day${day}`;
+        const p = history[chapId];
+        if (p?.status === 'mastered') completed++;
+      }
+      return { completed, total: 7 };
+    };
 
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-        {filteredWeekGroups.map(([weekName, weekData]) => {
-          const weekNum = weekData.weekNum;
-          const firstChapter = weekData.chapters[0];
-          const targetChapterId = firstChapter ? firstChapter.id : `week${weekNum}-day1`;
-          const progress = getWeekProgress(weekData.chapters);
+        {weeks.map((week) => {
+          const progress = getWeekProgressFromHistory(week.weekNum);
           const progressPct = progress.total > 0 ? Math.round((progress.completed / progress.total) * 100) : 0;
-          const title = weekTitles[weekNum] || weekName;
 
           return (
             <Link
-              key={weekName}
-              to={`/books/${book.id}/chapters/${targetChapterId}`}
+              key={week.weekNum}
+              to={`/books/${book.id}/chapters/${week.targetChapterId}`}
               className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-xl p-5 hover:border-blue-500 hover:shadow-md transition-all flex flex-col justify-between"
             >
               <h3 className="text-lg font-bold text-[var(--color-text-primary)] mb-3">
-                {title}
+                {week.title}
               </h3>
 
               <div>

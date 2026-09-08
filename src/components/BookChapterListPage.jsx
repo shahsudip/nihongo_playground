@@ -167,7 +167,7 @@ const BookChapterListPage = () => {
                 500 Questions &bull; {chapters.length || book.totalChapters || 105} Daily Drills
               </span>
             ) : (
-              <span>{chapters.length} Lessons</span>
+              <span>{book.totalChapters || chapters.length || 0} Lessons</span>
             )}
           </div>
         </div>
