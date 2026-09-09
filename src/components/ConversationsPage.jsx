@@ -124,11 +124,22 @@ const ConversationsPage = () => {
         resolve();
         return;
       }
+      // Mobile warmup: ensure speechSynthesis is unlocked
+      if (!window._speechWarmedUp) {
+        window._speechWarmedUp = true;
+        const silence = new SpeechSynthesisUtterance('');
+        silence.volume = 0;
+        window.speechSynthesis.speak(silence);
+      }
       const utterance = new SpeechSynthesisUtterance(text);
       window._currentUtterance = utterance; // Prevent GC
       utterance.lang = 'ja-JP';
       // Adjust rate/pitch if needed
       utterance.rate = 0.4;
+      // Explicitly pick Japanese voice (mobile browsers may not auto-select)
+      const voices = window.speechSynthesis.getVoices();
+      const jaVoice = voices.find(v => v.lang === 'ja-JP' || v.lang === 'ja_JP');
+      if (jaVoice) utterance.voice = jaVoice;
       
       utterance.onboundary = (event) => {
         if (event.name === 'word') {

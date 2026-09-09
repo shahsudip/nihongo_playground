@@ -142,18 +142,21 @@ const ShinkanzenN3ListeningBook = () => {
     }
 
     if (activeAudioSrc !== src) {
+      // New source: set .src directly and call load()+play() synchronously
+      // within the user gesture so mobile browsers don't block playback.
+      const resolvedSrc = resolvePublicUrl(src);
       setActiveAudioSrc(src);
       setPlayCount(prev => ({ ...prev, [trackId]: (prev[trackId] || 0) + 1 }));
-      setTimeout(() => {
-        if (audioRef.current) {
-          audioRef.current.play().catch(e => console.error(e));
-        }
-      }, 100);
+      if (audioRef.current) {
+        audioRef.current.src = resolvedSrc;
+        audioRef.current.load();
+        audioRef.current.play().catch(e => console.error('Audio play error:', e));
+      }
     } else {
       if (audioRef.current) {
         if (isPlaying) audioRef.current.pause();
         else {
-          audioRef.current.play().catch(e => console.error(e));
+          audioRef.current.play().catch(e => console.error('Audio play error:', e));
           setPlayCount(prev => ({ ...prev, [trackId]: (prev[trackId] || 0) + 1 }));
         }
       }
@@ -192,8 +195,8 @@ const ShinkanzenN3ListeningBook = () => {
   return (
     <div className="min-h-screen bg-gray-200 dark:bg-gray-900 pb-6 pt-24 md:pt-28 flex flex-col items-center overflow-hidden">
       
-      {/* Hidden Audio Element */}
-      <audio ref={audioRef} src={resolvePublicUrl(activeAudioSrc)} />
+      {/* Hidden Audio Element — playsInline is required for iOS Safari */}
+      <audio ref={audioRef} src={resolvePublicUrl(activeAudioSrc)} playsInline preload="auto" />
 
       <div className="w-full max-w-[850px] px-4 mb-2 z-20 relative">
         <Link to="/books/shinkanzen-master-n3-listening" className="text-sm font-semibold text-blue-500 hover:underline mb-2 inline-block">

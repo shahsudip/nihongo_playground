@@ -287,6 +287,14 @@ export default function TangoReadingPage() {
       return;
     }
 
+    // Mobile warmup: ensure speechSynthesis is unlocked
+    if (!window._speechWarmedUp) {
+      window._speechWarmedUp = true;
+      const silence = new SpeechSynthesisUtterance('');
+      silence.volume = 0;
+      window.speechSynthesis.speak(silence);
+    }
+
     window.speechSynthesis.cancel();
     const cleanText = text
       .replace(/<rt>.*?<\/rt>/g, '')

@@ -19,15 +19,31 @@ const SpeakerIcon = ({ onClick }) => (
   </svg>
 );
 
+// Warm up speechSynthesis on mobile (iOS/Android require a user-gesture-triggered
+// silent utterance before TTS will produce audible output)
+let _speechWarmedUp = false;
+const warmUpSpeechSynthesis = () => {
+  if (_speechWarmedUp || !window.speechSynthesis) return;
+  _speechWarmedUp = true;
+  const silence = new SpeechSynthesisUtterance('');
+  silence.volume = 0;
+  window.speechSynthesis.speak(silence);
+};
+
 // Utility function for text-to-speech
 const speak = (text, lang) => {
   if (!window.speechSynthesis) {
     console.warn("Browser does not support speech synthesis.");
     return;
   }
+  warmUpSpeechSynthesis();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = lang;
   utterance.rate = 0.9; // Adjust speed as needed
+  // Pick a matching voice if available (mobile may not auto-select)
+  const voices = window.speechSynthesis.getVoices();
+  const match = voices.find(v => v.lang === lang || v.lang.startsWith(lang.split('-')[0]));
+  if (match) utterance.voice = match;
   window.speechSynthesis.cancel(); // Cancel any ongoing speech
   window.speechSynthesis.speak(utterance);
 };
