@@ -207,6 +207,46 @@
   color: #ffffff;
 }
 
+/* Streamlined Toggle Buttons */
+.tango-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border: 1px solid var(--tango-border);
+  background: var(--tango-card-alt);
+  color: var(--tango-text-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.tango-toggle-btn:hover {
+  border-color: var(--tango-primary);
+  color: var(--tango-primary);
+}
+
+.tango-toggle-btn.active {
+  background: var(--tango-primary);
+  color: #ffffff;
+  border-color: var(--tango-primary);
+  box-shadow: 0 2px 6px rgba(21, 128, 61, 0.25);
+}
+
+.theme-dark .tango-toggle-btn.active {
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.3);
+}
+
+.tango-toggle-btn.playing {
+  background: #f59e0b;
+  color: #ffffff;
+  border-color: #d97706;
+  animation: pulse 1.5s infinite;
+}
+
 /* =========================================================
    STORY CAROUSEL NAVIGATOR
    ========================================================= */
@@ -419,13 +459,56 @@
   border-bottom: 2.5px solid var(--tango-primary);
 }
 
-/* Furigana Display Options */
+/* Furigana & Meaning Display Options */
+.tango-page-container.hide-furigana ruby rt,
 .tango-page-container.furigana-none ruby rt {
+  display: none !important;
+}
+
+.tango-page-container.hide-meaning .tango-target-word .word-sub-meaning,
+.tango-page-container.mode-drill .tango-target-word .word-sub-meaning {
   display: none !important;
 }
 
 .tango-page-container.furigana-target-only ruby:not(.target-ruby) rt {
   display: none !important;
+}
+
+/* Active Drill Touch Interactions & Mastered Status */
+.tango-page-container.mode-drill .tango-target-word {
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 1px 4px;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.tango-page-container.mode-drill .tango-target-word:hover {
+  background-color: rgba(16, 185, 129, 0.15);
+  transform: scale(1.04);
+}
+
+.tango-page-container.mode-drill .tango-target-word:active {
+  transform: scale(0.96);
+}
+
+.tango-target-word.mastered .word-kanji {
+  color: #10b981;
+  border-bottom-color: #10b981;
+}
+
+.tango-target-word .mastered-badge {
+  font-size: 0.65rem;
+  background: #10b981;
+  color: #ffffff;
+  border-radius: 9999px;
+  padding: 0 4px;
+  line-height: 1.2;
+  margin-left: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  vertical-align: middle;
 }
 
 /* =========================================================

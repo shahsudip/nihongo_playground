@@ -62,7 +62,7 @@ const TangoChapterList = ({ book }) => {
           📚 Topics Overview ({topics.length} Units)
         </h2>
         <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300">
-          Red Sheet & Flashcards Supported
+          Interactive Reader & Active Drill
         </span>
       </div>
 

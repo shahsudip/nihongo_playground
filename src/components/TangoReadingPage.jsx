@@ -1,5 +1,5 @@
 // src/components/TangoReadingPage.jsx
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext.jsx';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
@@ -27,7 +27,38 @@ const TANGO_TOPIC_NAMES = {
     { id: 'topic_10', num: 10, title: 'Topic 10: 学校・教育 (School & Studies)', en: 'School & Education' },
     { id: 'topic_11', num: 11, title: 'Topic 11: 仕事 (Work & Office)', en: 'Work & Employment' },
     { id: 'topic_12', num: 12, title: 'Topic 12: 旅行 (Travel & Sightseeing)', en: 'Travel & Journeys' }
-  ]
+  ],
+  tango_n2: [
+    { id: 'topic_01', num: 1, title: 'Topic 1: 食事 (Food & Dining)', en: 'Food & Dining' },
+    { id: 'topic_02', num: 2, title: 'Topic 2: 家事 (Housework & Living)', en: 'Housework & Living' },
+    { id: 'topic_03', num: 3, title: 'Topic 3: 買い物 (Shopping)', en: 'Shopping' },
+    { id: 'topic_04', num: 4, title: 'Topic 4: ファッション (Fashion)', en: 'Fashion' },
+    { id: 'topic_05', num: 5, title: 'Topic 5: テクノロジー (Technology)', en: 'Technology' },
+    { id: 'topic_06', num: 6, title: 'Topic 6: 流行 (Trends & Pop Culture)', en: 'Trends & Pop Culture' },
+    { id: 'topic_07', num: 7, title: 'Topic 7: 趣味 (Hobbies & Interests)', en: 'Hobbies & Interests' },
+    { id: 'topic_08', num: 8, title: 'Topic 8: 人付き合い (Relationships)', en: 'Relationships' },
+    { id: 'topic_09', num: 9, title: 'Topic 9: 年中行事 (Annual Events)', en: 'Annual Events' },
+    { id: 'topic_10', num: 10, title: 'Topic 10: スポーツ (Sports & Fitness)', en: 'Sports & Fitness' },
+    { id: 'topic_11', num: 11, title: 'Topic 11: 動物 (Animals)', en: 'Animals' },
+    { id: 'topic_12', num: 12, title: 'Topic 12: 住 (Housing)', en: 'Housing' },
+    { id: 'topic_13', num: 13, title: 'Topic 13: 町 (Town & Urban Life)', en: 'Town & Urban Life' },
+    { id: 'topic_14', num: 14, title: 'Topic 14: 天気 (Weather & Climate)', en: 'Weather & Climate' },
+    { id: 'topic_15', num: 15, title: 'Topic 15: 旅行 (Travel & Vacations)', en: 'Travel & Vacations' },
+    { id: 'topic_16', num: 16, title: 'Topic 16: 学校 (School & Academia)', en: 'School & Academia' },
+    { id: 'topic_17', num: 17, title: 'Topic 17: 仕事 (Work & Employment)', en: 'Work & Employment' },
+    { id: 'topic_18', num: 18, title: 'Topic 18: 人生 (Life & Society)', en: 'Life & Society' },
+    { id: 'topic_19', num: 19, title: 'Topic 19: 健康 (Health & Medical)', en: 'Health & Medical' },
+    { id: 'topic_20', num: 20, title: 'Topic 20: マナー (Manners & Etiquette)', en: 'Manners & Etiquette' },
+    { id: 'topic_21', num: 21, title: 'Topic 21: 社会 (Society & Economy)', en: 'Society & Economy' },
+    { id: 'topic_22', num: 22, title: 'Topic 22: 政治 (Politics & Law)', en: 'Politics & Law' },
+    { id: 'topic_23', num: 23, title: 'Topic 23: 環境・科学 (Environment & Science)', en: 'Environment & Science' }
+  ],
+  tango_n1: Array.from({ length: 27 }, (_, i) => ({
+    id: `topic_${String(i + 1).padStart(2, '0')}`,
+    num: i + 1,
+    title: `Topic ${i + 1}`,
+    en: `Topic ${i + 1} Advanced Vocabulary`
+  }))
 };
 
 export default function TangoReadingPage() {
@@ -35,13 +66,8 @@ export default function TangoReadingPage() {
   const navigate = useNavigate();
   const { theme } = useTheme();
 
-  // Study Mode State: 'reader' | 'redsheet' | 'flashcards' | 'quiz' | 'glossary'
+  // Study Mode State: 'reader' | 'drill' | 'flashcards' | 'quiz' | 'glossary'
   const [studyMode, setStudyMode] = useState('reader');
-
-  // Red Sheet State & Sub-filters
-  const [redSheetActive, setRedSheetActive] = useState(false);
-  const [redSheetFilter, setRedSheetFilter] = useState('meaning'); // 'meaning' | 'furigana' | 'cloze'
-  const [revealedItems, setRevealedItems] = useState({});
 
   // Display Preferences
   const [fontSize, setFontSize] = useState(() => localStorage.getItem('tango_font_size') || 'normal');
@@ -50,7 +76,7 @@ export default function TangoReadingPage() {
 
   // Audio / TTS State
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
-  const [speechRate, setSpeechRate] = useState(1.0);
+  const [speechRate] = useState(1.0);
 
   // Story & Flashcard Navigation
   const [stories, setStories] = useState([]);
@@ -58,10 +84,10 @@ export default function TangoReadingPage() {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [isCardFlipped, setIsCardFlipped] = useState(false);
 
-  // Word Inspector Modal
+  // Word Inspector Modal (Reader Mode)
   const [inspectedWord, setInspectedWord] = useState(null);
 
-  // Mastery Tracking (stored in localStorage)
+  // Mastery Tracking (stored in localStorage per book)
   const [masteredWords, setMasteredWords] = useState(() => {
     try {
       return JSON.parse(localStorage.getItem(`tango_mastery_${bookId}`)) || {};
@@ -99,7 +125,6 @@ export default function TangoReadingPage() {
     setLoading(true);
     setError(null);
     setShowTranslation(false);
-    setRevealedItems({});
     setCurrentStoryIndex(0);
     setCurrentCardIndex(0);
     setIsCardFlipped(false);
@@ -190,15 +215,18 @@ export default function TangoReadingPage() {
 
   const allTopicWords = useMemo(() => {
     const list = [];
-    stories.forEach((s, sIdx) => {
-      (s.annotated_words || []).forEach(w => {
-        list.push({
-          ...w,
-          storyId: s.id,
-          storyIndex: sIdx,
-          storyJapanese: s.japanese_text,
-          storyEnglish: s.english_translation
-        });
+    const seen = new Set();
+    stories.forEach(story => {
+      (story.annotated_words || []).forEach(w => {
+        const key = w.word_id || w.kanji;
+        if (!seen.has(key)) {
+          seen.add(key);
+          list.push({
+            ...w,
+            storyJapanese: story.japanese_text,
+            storyEnglish: story.english_translation
+          });
+        }
       });
     });
     return list;
@@ -209,7 +237,7 @@ export default function TangoReadingPage() {
     if (allTopicWords.length === 0) return;
     const questions = [];
 
-    stories.forEach((story, sIdx) => {
+    stories.forEach((story) => {
       if (!story.annotated_words || story.annotated_words.length === 0) return;
 
       story.annotated_words.forEach((targetWord) => {
@@ -250,6 +278,12 @@ export default function TangoReadingPage() {
   const playJapaneseAudio = (text) => {
     if (!('speechSynthesis' in window)) {
       alert("Text-to-speech is not supported on this browser.");
+      return;
+    }
+
+    if (isPlayingAudio) {
+      window.speechSynthesis.cancel();
+      setIsPlayingAudio(false);
       return;
     }
 
@@ -299,8 +333,8 @@ export default function TangoReadingPage() {
         } else if (currentStory) {
           playJapaneseAudio(currentStory.japanese_text);
         }
-      } else if (e.key.toLowerCase() === 'r') {
-        setRedSheetActive(r => !r);
+      } else if (e.key.toLowerCase() === 'f') {
+        setFuriganaMode(prev => (prev === 'all' ? 'target-only' : prev === 'target-only' ? 'none' : 'all'));
       } else if (e.key.toLowerCase() === 't') {
         setShowTranslation(t => !t);
       } else if (e.key === 'Escape') {
@@ -363,10 +397,10 @@ export default function TangoReadingPage() {
             displayKanji = `<ruby class="target-ruby">${p1}<rt>${word.furigana}</rt></ruby>`;
           }
 
-          const wordKey = `w_${word.word_id || word.kanji}_${wIndex}`;
-          const isRevealed = !!revealedItems[wordKey];
+          const wordKey = word.word_id || word.kanji;
+          const isMastered = !!masteredWords[wordKey];
 
-          return `<span class="tango-target-word group" data-word-idx="${wIndex}" title="Click to inspect: ${word.kanji}"><span class="word-kanji ${isRevealed ? 'revealed' : ''}">${displayKanji}</span><span class="word-sub-meaning ${isRevealed ? 'revealed' : ''}">${word.meaning_en || ''}</span></span>`;
+          return `<span class="tango-target-word group ${isMastered ? 'mastered' : ''}" data-word-idx="${wIndex}" title="${studyMode === 'drill' ? (isMastered ? 'Mastered (Tap to unmark)' : 'Tap to mark as Mastered') : 'Tap to inspect word'}"><span class="word-kanji">${displayKanji}</span>${isMastered ? '<span class="mastered-badge">✓</span>' : ''}<span class="word-sub-meaning">${word.meaning_en || ''}</span></span>`;
         }
         return match;
       });
@@ -384,11 +418,12 @@ export default function TangoReadingPage() {
             const idx = parseInt(chip.dataset.wordIdx, 10);
             const word = story.annotated_words?.[idx];
             if (word) {
-              if (redSheetActive) {
-                // In Red Sheet mode, click toggles reveal
-                const wordKey = `w_${word.word_id || word.kanji}_${idx}`;
-                setRevealedItems(prev => ({ ...prev, [wordKey]: !prev[wordKey] }));
+              if (studyMode === 'drill') {
+                // In Active Drill mode: directly toggle word mastery
+                const wordKey = word.word_id || word.kanji;
+                toggleWordMastery(wordKey);
               } else {
+                // In Story Reader mode: open word inspector modal
                 setInspectedWord(word);
               }
             }
@@ -431,7 +466,7 @@ export default function TangoReadingPage() {
   };
 
   return (
-    <div className={`tango-page-container theme-${theme} font-size-${fontSize} ${furiganaMode === 'none' ? 'furigana-none' : furiganaMode === 'target-only' ? 'furigana-target-only' : ''}`}>
+    <div className={`tango-page-container theme-${theme} font-size-${fontSize} mode-${studyMode} ${furiganaMode === 'none' ? 'furigana-none' : furiganaMode === 'target-only' ? 'furigana-target-only' : ''}`}>
       <main className="max-w-5xl mx-auto px-4 py-6">
 
         {/* Top Breadcrumb */}
@@ -446,7 +481,9 @@ export default function TangoReadingPage() {
 
           {/* Quick Mastery Count Badge */}
           <div className="flex items-center gap-2 text-xs font-bold text-[var(--tango-text-secondary)]">
-            <span>Mastered: {Object.values(masteredWords).filter(Boolean).length} / {allTopicWords.length} words</span>
+            <span className="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300">
+              Mastered: {Object.values(masteredWords).filter(Boolean).length} / {allTopicWords.length} words
+            </span>
           </div>
         </div>
 
@@ -481,12 +518,12 @@ export default function TangoReadingPage() {
           </button>
           <button
             onClick={() => {
-              setStudyMode('redsheet');
-              setRedSheetActive(true);
+              setStudyMode('drill');
+              setFuriganaMode('none'); // Automatically toggle furigana to Off for Active Drill
             }}
-            className={`tango-mode-btn ${studyMode === 'redsheet' ? 'active' : ''}`}
+            className={`tango-mode-btn ${studyMode === 'drill' ? 'active' : ''}`}
           >
-            🔴 赤シート (Red Sheet Drill)
+            ⚡ アクティブ・ドリル (Active Drill)
           </button>
           <button
             onClick={() => setStudyMode('flashcards')}
@@ -530,10 +567,7 @@ export default function TangoReadingPage() {
                 <span className="text-xs font-bold uppercase tracking-wider text-[var(--tango-text-muted)]">Story:</span>
                 <select
                   value={currentStoryIndex}
-                  onChange={(e) => {
-                    setCurrentStoryIndex(parseInt(e.target.value, 10));
-                    setRevealedItems({});
-                  }}
+                  onChange={(e) => setCurrentStoryIndex(parseInt(e.target.value, 10))}
                   className="tango-select font-bold"
                 >
                   {stories.map((s, idx) => {
@@ -550,16 +584,16 @@ export default function TangoReadingPage() {
             )}
           </div>
 
-          {/* Reader Preferences */}
+          {/* Reader Preferences & Action Buttons */}
           <div className="flex items-center gap-2 flex-wrap">
-            {/* Furigana Mode Toggle */}
+            {/* Furigana Mode Toggle: All / Target Only / Off */}
             <div className="tango-btn-group">
               <button
                 onClick={() => setFuriganaMode('all')}
                 className={furiganaMode === 'all' ? 'active' : ''}
                 title="All Furigana"
               >
-                Furigana: All
+                All Furigana
               </button>
               <button
                 onClick={() => setFuriganaMode('target-only')}
@@ -618,63 +652,13 @@ export default function TangoReadingPage() {
           <div>
 
             {/* =========================================================
-                MODE 1 & 2: STORY READER & RED SHEET DRILL
+                MODE 1 & 2: STORY READER & ACTIVE DRILL
                ========================================================= */}
-            {(studyMode === 'reader' || studyMode === 'redsheet') && currentStory && (
+            {(studyMode === 'reader' || studyMode === 'drill') && currentStory && (
               <div className="space-y-4">
 
-                {/* Red Sheet Drill Controls Bar (When in Red Sheet Mode) */}
-                {studyMode === 'redsheet' && (
-                  <div className="tango-red-sheet-bar animate-fadeIn">
-                    <div className="flex items-center gap-2">
-                      <span className="tango-red-badge">🔴 赤シート Active Recall:</span>
-                      <div className="tango-btn-group">
-                        <button
-                          onClick={() => setRedSheetFilter('meaning')}
-                          className={redSheetFilter === 'meaning' ? 'active' : ''}
-                        >
-                          Hide Meanings
-                        </button>
-                        <button
-                          onClick={() => setRedSheetFilter('furigana')}
-                          className={redSheetFilter === 'furigana' ? 'active' : ''}
-                        >
-                          Hide Furigana
-                        </button>
-                        <button
-                          onClick={() => setRedSheetFilter('cloze')}
-                          className={redSheetFilter === 'cloze' ? 'active' : ''}
-                        >
-                          Hide Words (Cloze)
-                        </button>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                      <button
-                        onClick={() => {
-                          const allRev = {};
-                          (currentStory.annotated_words || []).forEach((w, i) => {
-                            allRev[`w_${w.word_id || w.kanji}_${i}`] = true;
-                          });
-                          setRevealedItems(allRev);
-                        }}
-                        className="px-3 py-1 bg-[var(--tango-card-bg)] hover:bg-[var(--tango-card-alt)] text-xs font-bold rounded-lg border border-[var(--tango-border)] cursor-pointer"
-                      >
-                        Reveal All
-                      </button>
-                      <button
-                        onClick={() => setRevealedItems({})}
-                        className="px-3 py-1 bg-[var(--tango-card-bg)] hover:bg-[var(--tango-card-alt)] text-xs font-bold rounded-lg border border-[var(--tango-border)] cursor-pointer"
-                      >
-                        Hide All
-                      </button>
-                    </div>
-                  </div>
-                )}
-
-                {/* Main Story Dialogue Canvas */}
-                <div className={`tango-story-canvas ${studyMode === 'redsheet' ? `tango-mask-${redSheetFilter}` : ''}`}>
+                {/* Main Story Dialogue Canvas (Clean passage box with NO hide/reveal buttons on top) */}
+                <div className="tango-story-canvas">
                   
                   {/* Dialogue Top Action Bar */}
                   <div className="flex items-center justify-between border-b border-[var(--tango-border)] pb-3 mb-4">
@@ -687,7 +671,7 @@ export default function TangoReadingPage() {
                         🔊
                       </button>
                       <span className="text-xs font-bold text-[var(--tango-text-secondary)]">
-                        Dialogue Audio ({speechRate}x)
+                        {isPlayingAudio ? 'Playing Audio...' : 'Dialogue Audio'}
                       </span>
                     </div>
 
@@ -699,7 +683,7 @@ export default function TangoReadingPage() {
                     </button>
                   </div>
 
-                  {/* Japanese Story Text */}
+                  {/* Japanese Story Dialogue Text */}
                   {renderAnnotatedStory(currentStory)}
 
                   {/* Expandable English Translation */}
@@ -712,33 +696,74 @@ export default function TangoReadingPage() {
                   )}
                 </div>
 
-                {/* Bottom Story Navigation Arrows */}
+                {/* Bottom Story Navigation Arrows & Mode Tip */}
                 <div className="flex items-center justify-between pt-2">
                   <button
                     disabled={currentStoryIndex === 0}
                     onClick={() => {
                       setCurrentStoryIndex(prev => Math.max(0, prev - 1));
-                      setRevealedItems({});
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
                     }}
                     className="px-4 py-2 bg-[var(--tango-card-bg)] hover:bg-[var(--tango-card-alt)] border border-[var(--tango-border)] text-sm font-bold rounded-xl disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition"
                   >
                     &larr; Previous Story
                   </button>
 
-                  <span className="text-xs font-bold text-[var(--tango-text-muted)]">
-                    Tip: Tap any word to inspect reading & definition
+                  <span className="text-xs font-bold text-[var(--tango-text-muted)] text-center">
+                    {studyMode === 'drill' 
+                      ? '⚡ Active Drill: Tap any target word to mark / unmark as Mastered' 
+                      : 'Tip: Tap any target word to inspect reading & definition'}
                   </span>
 
                   <button
                     disabled={currentStoryIndex === stories.length - 1}
                     onClick={() => {
                       setCurrentStoryIndex(prev => Math.min(stories.length - 1, prev + 1));
-                      setRevealedItems({});
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
                     }}
                     className="px-4 py-2 bg-[var(--tango-card-bg)] hover:bg-[var(--tango-card-alt)] border border-[var(--tango-border)] text-sm font-bold rounded-xl disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer transition"
                   >
                     Next Story &rarr;
                   </button>
+                </div>
+
+                {/* Story Navigator Pills */}
+                <div className="mt-8 pt-6 border-t border-[var(--tango-border)]">
+                  <div className="flex items-center justify-between mb-3">
+                    <p className="text-xs font-bold text-[var(--tango-text-muted)] uppercase tracking-wider">
+                      Story Navigator
+                    </p>
+                    <span className="text-xs font-bold text-[var(--tango-text-secondary)]">
+                      {currentStoryIndex + 1} / {stories.length}
+                    </span>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2">
+                    {stories.map((s, idx) => {
+                      const isCurrent = currentStoryIndex === idx;
+                      const wordsInStory = s.annotated_words || [];
+                      const isAllMastered = wordsInStory.length > 0 && wordsInStory.every(w => masteredWords[w.word_id || w.kanji]);
+
+                      return (
+                        <button
+                          key={idx}
+                          onClick={() => {
+                            setCurrentStoryIndex(idx);
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                          }}
+                          className={`w-10 h-10 rounded-xl text-sm font-bold transition-all cursor-pointer ${
+                            isCurrent
+                              ? 'bg-[var(--tango-primary)] text-white shadow-md scale-105'
+                              : isAllMastered
+                              ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800'
+                              : 'bg-[var(--tango-card-bg)] text-[var(--tango-text-secondary)] border border-[var(--tango-border)] hover:border-[var(--tango-primary)] hover:text-[var(--tango-primary)]'
+                          }`}
+                        >
+                          {idx + 1}
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
 
               </div>
@@ -881,7 +906,6 @@ export default function TangoReadingPage() {
                 {quizQuestions.map((q, qIdx) => {
                   const userAns = quizAnswers[q.id];
                   const isAnswered = !!userAns;
-                  const isCorrect = userAns === q.correct;
 
                   return (
                     <div key={q.id} className="tango-quiz-card">
@@ -999,7 +1023,7 @@ export default function TangoReadingPage() {
 
       </main>
 
-      {/* Word Inspector Modal */}
+      {/* Word Inspector Modal (Reader Mode only: displays Kanji, Furigana/Hiragana, English Meaning, Audio — NO mastered button) */}
       {inspectedWord && (
         <div className="tango-modal-overlay" onClick={() => setInspectedWord(null)}>
           <div className="tango-modal-content" onClick={e => e.stopPropagation()}>
@@ -1033,16 +1057,10 @@ export default function TangoReadingPage() {
 
             <div className="flex justify-center pt-3 border-t border-[var(--tango-border)]">
               <button
-                onClick={() => {
-                  toggleWordMastery(inspectedWord.word_id || inspectedWord.kanji);
-                }}
-                className={`px-5 py-2 rounded-xl text-xs font-bold transition cursor-pointer ${
-                  masteredWords[inspectedWord.word_id || inspectedWord.kanji]
-                    ? 'bg-emerald-600 text-white'
-                    : 'bg-[var(--tango-card-alt)] hover:bg-[var(--tango-border)] text-[var(--tango-text-primary)]'
-                }`}
+                onClick={() => setInspectedWord(null)}
+                className="px-6 py-2 bg-[var(--tango-primary)] hover:opacity-90 text-white text-xs font-bold rounded-xl cursor-pointer"
               >
-                {masteredWords[inspectedWord.word_id || inspectedWord.kanji] ? '✓ Mastered' : 'Mark as Mastered'}
+                Close
               </button>
             </div>
           </div>

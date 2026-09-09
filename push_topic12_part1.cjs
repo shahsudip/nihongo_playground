@@ -68,8 +68,8 @@ const stories = [
       { "meaning_en": "end of the road", "furigana": "つきあたり", "kanji": "突き当たり" },
       { "meaning_en": "railroad, railway", "furigana": "てつどう", "kanji": "鉄道" },
       { "meaning_en": "(railway) tracks", "furigana": "せんろ", "kanji": "線路" },
-      { "meaning_en": "cross", "furigana": "こえる", "kanji": "越える" },
       { "meaning_en": "so, umm", "furigana": "", "kanji": "ええと" },
+      { "meaning_en": "cross", "furigana": "こえる", "kanji": "越える" },
       { "meaning_en": "follow, come along with", "furigana": "ついてくる", "kanji": "ついて来る" },
       { "meaning_en": "go with", "furigana": "ついていく", "kanji": "↔ついて行く" }
     ]
