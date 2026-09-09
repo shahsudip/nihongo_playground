@@ -3,7 +3,7 @@
   "story_number": 3,
   "title": "Topic 16 学校",
   "page_story": "215_2",
-  "japanese_text": "昨<u>年度</u>は<u>やる気</u>がなく、ずいぶん<u>怠けて</u>しまった。今<u>年度</u>はその分を<u>取り戻せる</u>ように、<u>ほぼ</u>毎日、授業後は図書館で<u>懸命に</u>勉強している。",
+  "japanese_text": "昨<u>年度</u>は<u>やる気</u>がなく、ずいぶん怠けてしまった。今年度はその分を取り戻せるように、<u>ほぼ</u>毎日、授業後は図書館で<u>懸命</u>に勉強している。",
   "english_translation": "Last year I lacked motivation and slacked off a lot. This year, I'm studying hard in the library almost every day after class to make up for it.",
   "annotated_words": [
     {
@@ -21,20 +21,6 @@
       "meaning_en": "motivation"
     },
     {
-      "word_id": "n2_1439",
-      "word_number": 1439,
-      "kanji": "怠ける",
-      "furigana": "なまける",
-      "meaning_en": "slack off, be idle"
-    },
-    {
-      "word_id": "n2_1440",
-      "word_number": 1440,
-      "kanji": "取り戻す",
-      "furigana": "とりもどす",
-      "meaning_en": "get back, make up"
-    },
-    {
       "word_id": "n2_1441",
       "word_number": 1441,
       "kanji": "ほぼ",
@@ -48,5 +34,6 @@
       "furigana": "けんめいな",
       "meaning_en": "hard, intense"
     }
-  ]
+  ],
+  "id": "215_2"
 }

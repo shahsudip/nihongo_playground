@@ -1,6 +1,6 @@
 {
   "title": "Topic 8",
-  "japanese_text": "<u>グラウンド</u>から<ruby>派手<rt>はで</rt></ruby>な<ruby><u>応援</u>歌<rt>おうえんか</rt></ruby>や<ruby>選手<rt>せんしゅ</rt></ruby>の<ruby>叫<rt>さけ</rt></ruby>ぶ<ruby>声<rt>こえ</rt></ruby>が<ruby>盛<rt>さか</rt></ruby>んに<ruby>聞<rt>き</rt></ruby>こえてくる。",
+  "japanese_text": "<u>グラウンド</u>から<ruby>派手<rt>はで</rt></ruby>な<u><ruby>応援歌<rt>おうえんか</rt></ruby></u>や<ruby>選手<rt>せんしゅ</rt></ruby>の<ruby>叫<rt>さけ</rt></ruby>ぶ<ruby>声<rt>こえ</rt></ruby>が<ruby>盛<rt>さか</rt></ruby>んに<ruby>聞<rt>き</rt></ruby>こえてくる。",
   "english_translation": "From the field, loud cheers and the shouts of the players can be actively heard frequently.",
   "annotated_words": [
     {
@@ -20,5 +20,6 @@
   ],
   "story_number": 4,
   "is_story": true,
-  "page_story": "115_2"
+  "page_story": "115_2",
+  "id": "115_2"
 }

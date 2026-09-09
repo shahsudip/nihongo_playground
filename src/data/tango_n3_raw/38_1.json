@@ -1,6 +1,6 @@
 {
   "title": "Topic 2",
-  "japanese_text": "<ruby>一人暮<rt>ひとりぐ</rt></ruby>らしを<ruby>始<rt>はじ</rt></ruby>めたばかりなので、<ruby>家<rt>いえ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>はまだ<ruby>全然<rt>ぜんぜん</rt></ruby><ruby>片付<rt>かたづ</rt></ruby>いていない。<ruby>早<rt>はや</rt></ruby>く<ruby>必要<rt>ひつよう</rt></ruby>な<ruby><u>家具</u><rt>かぐ</rt></ruby>をそろえて、<ruby><u>家事</u><rt>かじ</rt></ruby>にも<ruby>慣<rt>な</rt></ruby>れたいと<ruby>思<rt>おも</rt></ruby>う。",
+  "japanese_text": "<ruby>一人暮<rt>ひとりぐ</rt></ruby>らしを<ruby>始<rt>はじ</rt></ruby>めたばかりなので、<ruby>家<rt>いえ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>はまだ<ruby>全然<rt>ぜんぜん</rt></ruby><ruby>片付<rt>かたづ</rt></ruby>いていない。<ruby>早<rt>はや</rt></ruby>く<ruby>必要<rt>ひつよう</rt></ruby>な<u><ruby>家具<rt>かぐ</rt></ruby></u>をそろえて、<u><ruby>家事<rt>かじ</rt></ruby></u>にも<ruby>慣<rt>な</rt></ruby>れたいと<ruby>思<rt>おも</rt></ruby>う。",
   "english_translation": "Since I just started living alone, I haven't cleaned up my home at all yet. I want to hurry up and get all the furniture I need and get used to doing housework.",
   "annotated_words": [
     {
@@ -20,5 +20,6 @@
   ],
   "story_number": 5,
   "is_story": true,
-  "page_story": "38_1"
+  "page_story": "38_1",
+  "id": "38_1"
 }

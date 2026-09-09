@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 12,
   "title": "Topic 19",
-  "japanese_text": "高校生の頃、両親に<u>反発して</u>、学校に行かず夜遅くまで友達と遊んでいた。大学生になり、あの頃の<u>一連</u>の<u>過ち</u>を<u>省みて</u>、「<u>おふくろ</u>、<u>おやじ</u>、迷惑かけてごめん」と謝った。",
+  "japanese_text": "高校生の頃、両親に<u>反発</u>して、学校に行かず夜遅くまで友達と遊んでいた。大学生になり、あの頃の<u>一連</u>の<u>過ち</u>を省みて、「<u>おふくろ</u>、<u>おやじ</u>、迷惑かけてごめん」と謝った。",
   "english_translation": "When I was in high school, I rebelled against my parents and stayed out until late at night with my friends instead of going to school. After I became a university student, I reflected on the series of mistakes I made back then, and apologized to my mom and dad for causing them so much trouble.",
   "annotated_words": [
     {
@@ -27,13 +27,6 @@
       "meaning_en": "mistake"
     },
     {
-      "word_id": "n1_1742",
-      "word_number": 1742,
-      "kanji": "省みる",
-      "furigana": "かえりみる",
-      "meaning_en": "reflect on"
-    },
-    {
       "word_id": "n1_1743",
       "word_number": 1743,
       "kanji": "おふくろ",
@@ -47,5 +40,7 @@
       "furigana": "おやじ",
       "meaning_en": "dad"
     }
-  ]
+  ],
+  "id": "246_2",
+  "page_story": "246_2"
 }

@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 4,
   "title": "Topic 11",
-  "japanese_text": "［サッカー］試合は前半終了間際、こぼれ球に<u>とっさに</u>反応した佐藤選手がゴールを決めて<u>先制した</u>。後半は<u>守備</u>に回ることが多く、<u>はらはらする</u>展開だったが、最後まで相手チームに<u>得点</u>を許さず、なんとかチームの<u>連敗</u>を<u>阻止した</u>。",
+  "japanese_text": "［サッカー］試合は前半終了間際、こぼれ球に<u>とっさに</u>反応した佐藤選手がゴールを決めて<u>先制</u>した。後半は<u>守備</u>に回ることが多く、はらはらする展開だったが、最後まで相手チームに<u>得点</u>を許さず、なんとかチームの<u>連敗</u>を<u>阻止</u>した。",
   "english_translation": "[Soccer] Just before the end of the first half, Sato reacted immediately to a fumbled ball and scored a goal to take the lead. The second half had some thrilling developments, as the team was often on the defense, but they managed to prevent consecutive defeat by not allowing the other team to score until the very end.",
   "annotated_words": [
     {
@@ -27,13 +27,6 @@
       "meaning_en": "defense, defend"
     },
     {
-      "word_id": "n1_0850",
-      "word_number": 850,
-      "kanji": "はらはら(と)",
-      "furigana": "はらはら",
-      "meaning_en": "thrilling"
-    },
-    {
       "word_id": "n1_0851",
       "word_number": 851,
       "kanji": "得点[する]",
@@ -54,5 +47,7 @@
       "furigana": "そし",
       "meaning_en": "prevention, prevent"
     }
-  ]
+  ],
+  "id": "129_1",
+  "page_story": "129_1"
 }

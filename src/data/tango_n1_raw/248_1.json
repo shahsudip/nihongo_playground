@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 14,
   "title": "Topic 19",
-  "japanese_text": "私はこれまで<u>円満な</u>家庭を<u>築いて</u>きた。しかし、<u>配偶者</u>が<u>ギャンブル</u>にはまって、大金を<u>賭けて</u>いたことが発覚し、家庭は<u>崩壊した</u>。相手は反省し、自分のしたことを<u>悔やんで</u>いるが、許すつもりはない。",
+  "japanese_text": "私はこれまで<u>円満な</u>家庭を築いてきた。しかし、<u>配偶者</u>が<u>ギャンブル</u>にはまって、大金を<u>賭け</u>ていたことが発覚し、家庭は<u>崩壊</u>した。相手は反省し、自分のしたことを悔やんでいるが、許すつもりはない。",
   "english_translation": "Up until now, I've raised a harmonious family. However, my family fell apart when I discovered my spouse had become addicted to gambling and had gambled away a large sum of money. My partner is sorry and regrets what he's done, but I have no intention of forgiving him.",
   "annotated_words": [
     {
@@ -11,13 +11,6 @@
       "kanji": "円満な",
       "furigana": "えんまんな",
       "meaning_en": "harmonious"
-    },
-    {
-      "word_id": "n1_1749",
-      "word_number": 1749,
-      "kanji": "築く",
-      "furigana": "きずく",
-      "meaning_en": "build, raise"
     },
     {
       "word_id": "n1_1750",
@@ -34,13 +27,6 @@
       "meaning_en": "gambling"
     },
     {
-      "word_id": "n1_1752",
-      "word_number": 1752,
-      "kanji": "賭ける",
-      "furigana": "かける",
-      "meaning_en": "gamble"
-    },
-    {
       "word_id": "n1_1753",
       "word_number": 1753,
       "kanji": "賭け",
@@ -53,13 +39,8 @@
       "kanji": "崩壊[する]",
       "furigana": "ほうかい",
       "meaning_en": "collapse, fall apart"
-    },
-    {
-      "word_id": "n1_1755",
-      "word_number": 1755,
-      "kanji": "悔やむ",
-      "furigana": "くやむ",
-      "meaning_en": "regret"
     }
-  ]
+  ],
+  "id": "248_1",
+  "page_story": "248_1"
 }

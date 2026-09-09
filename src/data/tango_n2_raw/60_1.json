@@ -3,7 +3,7 @@
   "story_number": 13,
   "title": "Topic 4 ファッション",
   "page_story": "60_1",
-  "japanese_text": "A：あれ？ 眼鏡変えた？\nB：ああ、これサングラスなの。今まで<u>単なる</u>眼鏡しか持ってなかったんだけど、外に出ると<u>まぶしくて</u>。\nA：へえ。<u>透明な</u><u>レンズ</u>でも効果あるの？\nB：あ、このレンズ、よく見ると薄い茶色なんだよ。",
+  "japanese_text": "A：あれ？ 眼鏡変えた？\nB：ああ、これサングラスなの。今まで<u>単なる</u>眼鏡しか持ってなかったんだけど、外に出るとまぶしくて。\nA：へえ。<u>透明な</u><u>レンズ</u>でも効果あるの？\nB：あ、このレンズ、よく見ると薄い茶色なんだよ。",
   "english_translation": "A: Hey, did you get new glasses? B: Oh, these are sunglasses. I used to have just simple normal glasses, but when I went outside it was always too dazzling. A: Really? Do the transparent lenses work? B: Well, if you look closely, these lenses are pale brown.",
   "annotated_words": [
     {
@@ -12,13 +12,6 @@
       "kanji": "単なる",
       "furigana": "たんなる",
       "meaning_en": "mere, simple"
-    },
-    {
-      "word_id": "n2_0299",
-      "word_number": 299,
-      "kanji": "まぶしい",
-      "furigana": "",
-      "meaning_en": "too bright, dazzling"
     },
     {
       "word_id": "n2_0300",
@@ -34,5 +27,6 @@
       "furigana": "",
       "meaning_en": "lens"
     }
-  ]
+  ],
+  "id": "60_1"
 }

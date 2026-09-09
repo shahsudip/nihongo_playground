@@ -1,17 +1,10 @@
 {
   "title": "Topic 6 流行",
   "audio_id": "92",
-  "japanese_text": "音楽ゲーム、<u>略して</u>「音ゲー」は<u>リズム</u>に合わせて<u>太鼓</u>やボタンをたたくゲームで、多くのゲームセンターに置いてある。最近では、リズムに合わせて<u>タップする</u>ゲームがスマホアプリでたくさん<u>リリースされている</u>。",
+  "japanese_text": "音楽ゲーム、略して「音ゲー」は<u>リズム</u>に合わせて<u>太鼓</u>やボタンをたたくゲームで、多くのゲームセンターに置いてある。最近では、リズムに合わせて<u>タップ</u>するゲームがスマホアプリでたくさん<u>リリース</u>されている。",
   "page_story": "84_1",
   "english_translation": "Musical rhythm games, often abbreviated in Japanese as \"otoge\", are games in which players tap drums or buttons to a musical rhythm. They can be found in many game arcades. Recently, many games in which players tap to the rhythm have been released as smartphone apps.",
   "annotated_words": [
-    {
-      "word_id": "n2_0461",
-      "word_number": 461,
-      "kanji": "略す",
-      "furigana": "りゃくす",
-      "meaning_en": "abbreviate"
-    },
     {
       "word_id": "n2_0462",
       "word_number": 462,
@@ -41,5 +34,6 @@
       "meaning_en": "release"
     }
   ],
-  "is_story": true
+  "is_story": true,
+  "id": "84_1"
 }

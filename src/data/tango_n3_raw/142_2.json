@@ -1,7 +1,7 @@
 {
   "id": "142_2",
   "title": "Topic 10",
-  "japanese_text": "<ruby>向<rt>む</rt></ruby>かいの<ruby>幼稚園<rt>ようちえん</rt></ruby>はたびたび<ruby>工事<rt>こうじ</rt></ruby>をする。うるさくて、<ruby>休<rt>やす</rt></ruby>みの<ruby>日<rt>ひ</rt></ruby>もリラックスして<ruby>過<rt>す</rt></ruby>ごせない。<ruby>早<rt>はや</rt></ruby>く<ruby>終了<rt>しゅうりょう</rt></ruby>してほしい。",
+  "japanese_text": "<u><ruby>向<rt>む</rt></ruby>かい</u>の<u><ruby>幼稚園<rt>ようちえん</rt></ruby></u>は<u>たびたび</u><u><ruby>工事<rt>こうじ</rt></ruby></u>をする。うるさくて、<ruby>休<rt>やす</rt></ruby>みの<ruby>日<rt>ひ</rt></ruby>も<u>リラックス</u>して<ruby>過<rt>す</rt></ruby>ごせない。<ruby>早<rt>はや</rt></ruby>く<u><ruby>終了<rt>しゅうりょう</rt></ruby></u>してほしい。",
   "english_translation": "The kindergarten on the other side of the street frequently undergoes construction. It's so loud I can't even relax on my days off. I hope its ends soon.",
   "annotated_words": [
     {
@@ -25,24 +25,16 @@
       "meaning": "construction, undergo construction"
     },
     {
-      "kanji": "工事現場",
-      "furigana": "こうじげんば",
-      "meaning": "construction site"
-    },
-    {
       "kanji": "リラックス［する］",
       "furigana": "",
       "meaning": "relaxing, relax"
-    },
-    {
-      "kanji": "過ごす",
-      "furigana": "すごす",
-      "meaning": "spend"
     },
     {
       "kanji": "終了［する］",
       "furigana": "しゅうりょう",
       "meaning": "end, finish"
     }
-  ]
+  ],
+  "page_story": "142_2",
+  "is_story": true
 }

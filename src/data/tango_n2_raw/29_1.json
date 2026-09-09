@@ -3,7 +3,7 @@
   "story_number": 2,
   "title": "Topic 2 家事",
   "page_story": "29_1",
-  "japanese_text": "A：<ruby>彼女<rt>かのじょ</rt></ruby>がおうちに<ruby>遊<rt>あそ</rt></ruby>びに<ruby>来<rt>く</rt></ruby>るの、<u>いよいよ</u><ruby>明後日<rt>あさって</rt></ruby>だね。もう<ruby>準備<rt>じゅんび</rt></ruby>はしたの？\nB：うーん、<ruby>昼食<rt>ちゅうしょく</rt></ruby>の<u>献立</u>は<ruby>決<rt>き</rt></ruby>めたんだけど、まだ<ruby>材料<rt>ざいりょう</rt></ruby>を<u>何も</u><ruby>買<rt>か</rt></ruby>ってないんだよね。\nA：そっか。そこの<ruby>道路<rt>どうろ</rt></ruby>を<u>隔てた</u>ところにスーパーがあるんだけど、あそこはいい<u>品</u>がそろってるよ。",
+  "japanese_text": "A：<ruby>彼女<rt>かのじょ</rt></ruby>がおうちに<ruby>遊<rt>あそ</rt></ruby>びに<ruby>来<rt>く</rt></ruby>るの、<u>いよいよ</u><ruby>明後日<rt>あさって</rt></ruby>だね。もう<ruby>準備<rt>じゅんび</rt></ruby>はしたの？\nB：うーん、<ruby>昼食<rt>ちゅうしょく</rt></ruby>の<u>献立</u>は<ruby>決<rt>き</rt></ruby>めたんだけど、まだ<ruby>材料<rt>ざいりょう</rt></ruby>を<u>何も</u><ruby>買<rt>か</rt></ruby>ってないんだよね。\nA：そっか。そこの<ruby>道路<rt>どうろ</rt></ruby>を隔てたところにスーパーがあるんだけど、あそこはいい<u>品</u>がそろってるよ。",
   "english_translation": "A: Your girlfriend is finally coming to visit you the day after tomorrow, right? Have you made all the preparations yet? B: Well, I worked out the lunch menu, but I haven't bought any ingredients yet. A: Right. There's a supermarket across the road, and they have some good things there.",
   "annotated_words": [
     {
@@ -28,32 +28,12 @@
       "meaning_en": "none, not any"
     },
     {
-      "word_id": "n2_0099",
-      "word_number": 99,
-      "kanji": "隔てる",
-      "furigana": "へだてる",
-      "meaning_en": "divide, separate"
-    },
-    {
-      "word_id": "n2_0100",
-      "word_number": 100,
-      "kanji": "隔たる",
-      "furigana": "へだたる",
-      "meaning_en": "be distant or separate"
-    },
-    {
       "word_id": "n2_0101",
       "word_number": 101,
       "kanji": "品",
       "furigana": "しな",
       "meaning_en": "items, things"
-    },
-    {
-      "word_id": "n2_0102",
-      "word_number": 102,
-      "kanji": "品切れ[する]",
-      "furigana": "しなぎれ",
-      "meaning_en": "stock shortage, sell out"
     }
-  ]
+  ],
+  "id": "29_1"
 }

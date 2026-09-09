@@ -3,7 +3,7 @@
   "story_number": 1,
   "title": "Topic 15 旅行",
   "page_story": "196_1",
-  "japanese_text": "飛行機に乗る日は、<u>前もって</u> <u>航空</u>会社の運航情報を見て、予約した便が<u>欠航</u>ではないか確認した方がいい。飛行機は予定通り出発しても、<u>悪天候</u>のため目的地の空港に<u>着陸でき</u>ないこともある。飛行機での移動は、十分に時間に<u>余裕</u>を持って行動した方がいい。",
+  "japanese_text": "飛行機に乗る日は、<u>前もって</u> <u>航空</u>会社の運航情報を見て、予約した便が<u>欠航</u>ではないか確認した方がいい。飛行機は予定通り出発しても、<u>悪天候</u>のため目的地の空港に<u>着陸</u>できないこともある。飛行機での移動は、十分に時間に<u>余裕</u>を持って行動した方がいい。",
   "english_translation": "On the day you are taking a flight, it's best to check the airline's flight information in advance to make sure your flight hasn't been canceled. Even if the flight departs as scheduled, there are times when it cannot land at the destination airport due to bad weather. When traveling by air, it's best to act with plenty of spare time.",
   "annotated_words": [
     {
@@ -48,5 +48,6 @@
       "furigana": "よゆう",
       "meaning_en": "spare, extra"
     }
-  ]
+  ],
+  "id": "196_1"
 }

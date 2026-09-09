@@ -1,24 +1,32 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "A：あ、<ruby>私<rt>わたし</rt></ruby>は<u>ノンアルコール</u>ビールで。<br>B：え、<ruby>飲<rt>の</rt></ruby>まないの？<br>A：うん、ちょっと<ruby>医者<rt>いしゃ</rt></ruby>に<ruby><u>肝臓</u><rt>かんぞう</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>いと<ruby>言<rt>い</rt></ruby>われて。<ruby>飲酒<rt>いんしゅ</rt></ruby>は<ruby>週<rt>しゅう</rt></ruby>2<ruby>回<rt>かい</rt></ruby>に<ruby>制限<rt>せいげん</rt></ruby>してるんだ。",
+  "japanese_text": "A：あ、<ruby>私<rt>わたし</rt></ruby>は<u>ノンアルコール</u>ビールで。<br>B：え、<ruby>飲<rt>の</rt></ruby>まないの？<br>A：うん、ちょっと<ruby>医者<rt>いしゃ</rt></ruby>に<u><ruby>肝臓<rt>かんぞう</rt></ruby></u>が<ruby>悪<rt>わる</rt></ruby>いと<ruby>言<rt>い</rt></ruby>われて。<u><ruby>飲酒<rt>いんしゅ</rt></ruby></u>は<ruby>週<rt>しゅう</rt></ruby>2<ruby>回<rt>かい</rt></ruby>に<ruby>制限<rt>せいげん</rt></ruby>してるんだ。",
   "english_translation": "A: Oh, I'll have the non-alcoholic beer. B: Huh, don't you drink? A: Yeah, my doctor said that my liver is a little bad. So, I only drink twice a week.",
   "annotated_words": [
     {
-      "word_id": "n3_0071",
-      "word_number": 71,
+      "word_id": "n3_0106",
+      "word_number": 106,
       "kanji": "ノンアルコール",
       "furigana": "",
       "meaning_en": "non-alcoholic (drink)"
     },
     {
-      "word_id": "n3_0072",
-      "word_number": 72,
+      "word_id": "n3_0107",
+      "word_number": 107,
       "kanji": "肝臓",
       "furigana": "かんぞう",
       "meaning_en": "liver"
+    },
+    {
+      "word_id": "n3_0108",
+      "word_number": 108,
+      "kanji": "飲酒[する]",
+      "furigana": "いんしゅ",
+      "meaning_en": "drinking alcohol, drink alcohol"
     }
   ],
   "story_number": 23,
   "is_story": true,
-  "page_story": "30_1"
+  "page_story": "30_1",
+  "id": "30_1"
 }

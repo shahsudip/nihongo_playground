@@ -3,7 +3,7 @@
   "story_number": 13,
   "title": "Topic 13 町",
   "page_story": "180_2",
-  "japanese_text": "<u>でこぼこした</u>道を自転車で走っていたら、<u>カーブ</u>を曲がるときに転倒してしまった。<u>大した</u>けがもせず、<u>運</u>が良かったと思ったが、ペダルをこぐと変な音がする。<u>パンクした</u>ようだ。どうしようかと<u>あれこれ</u>考えたが、自転車を押して帰る以外に<u>手段</u>はない。",
+  "japanese_text": "<u>でこぼこ</u>した道を自転車で走っていたら、<u>カーブ</u>を曲がるときに転倒してしまった。<u>大した</u>けがもせず、<u>運</u>が良かったと思ったが、ペダルをこぐと変な音がする。<u>パンク</u>したようだ。どうしようかとあれこれ考えたが、自転車を押して帰る以外に<u>手段</u>はない。",
   "english_translation": "I was riding my bicycle along a bumpy road and as I took a curve, I fell over. Luckily, I was not seriously injured, but as I pedaled, I heard a strange sound. It seemed I had a puncture. I thought about doing one thing or another, but in the end, walking my bicycle home was the only way.",
   "annotated_words": [
     {
@@ -42,18 +42,12 @@
       "meaning_en": "puncture"
     },
     {
-      "word_id": "n2_1181",
-      "word_number": 1181,
-      "kanji": "あれこれ(と)",
-      "furigana": "",
-      "meaning_en": "one thing or another"
-    },
-    {
       "word_id": "n2_1182",
       "word_number": 1182,
       "kanji": "手段",
       "furigana": "しゅだん",
       "meaning_en": "means, way"
     }
-  ]
+  ],
+  "id": "180_2"
 }

@@ -1,6 +1,6 @@
 {
   "title": "Topic 3",
-  "japanese_text": "<u>ドラッグストア</u><ruby>に<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>の<rt></rt></ruby><ruby><u>列</u><rt>れつ</rt></ruby><ruby>ができていた。<rt></rt></ruby><ruby>閉店<rt>へいてん</rt></ruby><ruby>するから、<rt></rt></ruby><ruby>店内<rt>てんない</rt></ruby><ruby>の<rt></rt></ruby><ruby>商品<rt>しょうひん</rt></ruby><ruby>が<rt></rt></ruby><ruby><u>定価</u><rt>ていか</rt></ruby><ruby>の<rt></rt></ruby>２<ruby>割引<rt>わりびき</rt></ruby><ruby>から<rt></rt></ruby><ruby><u>半額</u><rt>はんがく</rt></ruby><ruby>で<rt></rt></ruby><ruby>買<rt>か</rt></ruby><ruby>えるらしい。<rt></rt></ruby>",
+  "japanese_text": "<u>ドラッグストア</u><ruby>に<rt></rt></ruby><ruby>人<rt>ひと</rt></ruby><ruby>の<rt></rt></ruby><u><ruby>列<rt>れつ</rt></ruby></u><ruby>ができていた。<rt></rt></ruby><ruby>閉店<rt>へいてん</rt></ruby><ruby>するから、<rt></rt></ruby><ruby>店内<rt>てんない</rt></ruby><ruby>の<rt></rt></ruby><ruby>商品<rt>しょうひん</rt></ruby><ruby>が<rt></rt></ruby><u><ruby>定価<rt>ていか</rt></ruby></u><ruby>の<rt></rt></ruby>２<ruby>割引<rt>わりびき</rt></ruby><ruby>から<rt></rt></ruby><u><ruby>半額<rt>はんがく</rt></ruby></u><ruby>で<rt></rt></ruby><ruby>買<rt>か</rt></ruby><ruby>えるらしい。<rt></rt></ruby>",
   "english_translation": "There was a line of people at the drugstore. It's going to close, so it seems that products in the store can be purchased at a discount of 20 percent to half off of the list price.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
   ],
   "story_number": 1,
   "is_story": true,
-  "page_story": "52_1"
+  "page_story": "52_1",
+  "id": "52_1"
 }

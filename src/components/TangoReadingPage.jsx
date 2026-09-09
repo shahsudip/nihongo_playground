@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext.jsx';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
+import { db } from '../firebaseConfig.js';
+import { collection, getDocs } from 'firebase/firestore';
 import '../assets/tango_reading.css';
 
 // Eagerly load all local Tango raw JSON modules
@@ -91,8 +93,9 @@ export default function TangoReadingPage() {
     }
   }, [masteredWords, bookId]);
 
-  // Load Stories from Local Modules
+  // Load Stories from Local Modules and Sync with Firestore
   useEffect(() => {
+    let isMounted = true;
     setLoading(true);
     setError(null);
     setShowTranslation(false);
@@ -138,17 +141,48 @@ export default function TangoReadingPage() {
         return (a.page_story || a.id).localeCompare(b.page_story || b.id, undefined, { numeric: true });
       });
 
-      if (loadedStories.length > 0) {
+      if (loadedStories.length > 0 && isMounted) {
         setStories(loadedStories);
-      } else {
-        setError(`No stories found for ${chapterId} in ${bookId}.`);
+        setLoading(false);
       }
     } catch (err) {
-      console.error("Error loading Tango stories:", err);
-      setError("Failed to load topic stories.");
-    } finally {
-      setLoading(false);
+      console.warn("Local Tango loading error:", err);
     }
+
+    // Also query Firestore for the latest live stories
+    const fetchFromFirestore = async () => {
+      try {
+        const storiesColRef = collection(db, 'books', bookId, 'topics', chapterId, 'stories');
+        const snap = await getDocs(storiesColRef);
+        if (!snap.empty && isMounted) {
+          const remoteStories = [];
+          snap.forEach(docSnap => {
+            remoteStories.push({ id: docSnap.id, ...docSnap.data() });
+          });
+
+          remoteStories.sort((a, b) => {
+            if (a.story_number !== undefined && b.story_number !== undefined && a.story_number !== b.story_number) {
+              return a.story_number - b.story_number;
+            }
+            return (a.page_story || a.id).localeCompare(b.page_story || b.id, undefined, { numeric: true });
+          });
+
+          if (remoteStories.length > 0) {
+            setStories(remoteStories);
+          }
+        }
+      } catch (e) {
+        console.warn("Firestore Tango stories fetch skipped/fallback:", e);
+      } finally {
+        if (isMounted) setLoading(false);
+      }
+    };
+
+    fetchFromFirestore();
+
+    return () => {
+      isMounted = false;
+    };
   }, [bookId, chapterId]);
 
   // Current Story & All Target Words in Topic
@@ -316,26 +350,13 @@ export default function TangoReadingPage() {
           const wordKey = `w_${word.word_id || word.kanji}_${wIndex}`;
           const isRevealed = !!revealedItems[wordKey];
 
-          return `
-            <span 
-              class="tango-target-word group"
-              data-word-idx="${wIndex}"
-              title="Click to inspect: ${word.kanji}"
-            >
-              <span class="word-kanji ${isRevealed ? 'revealed' : ''}">
-                ${displayKanji}
-              </span>
-              <span class="word-sub-meaning ${isRevealed ? 'revealed' : ''}">
-                ${word.meaning_en || ''}
-              </span>
-            </span>
-          `;
+          return `<span class="tango-target-word group" data-word-idx="${wIndex}" title="Click to inspect: ${word.kanji}"><span class="word-kanji ${isRevealed ? 'revealed' : ''}">${displayKanji}</span><span class="word-sub-meaning ${isRevealed ? 'revealed' : ''}">${word.meaning_en || ''}</span></span>`;
         }
         return match;
       });
     }
 
-    // Split dialogues by line breaks or speakers (A:, B:)
+    // Split dialogues by line breaks (<br>)
     const lines = text.split(/<br\s*\/?>/i);
 
     return (
@@ -359,22 +380,25 @@ export default function TangoReadingPage() {
         }}
       >
         {lines.map((line, lIdx) => {
-          // Detect speaker prefixes (A:, B:, etc.)
-          const speakerMatch = line.match(/^([A-Z]|男|女|店員|先生|客)[：:]\s*(.*)/);
+          // Detect speaker prefixes (A:, B:, 1:, 男:, 女:, etc.)
+          const speakerMatch = line.match(/^([A-Z]|男|女|店員|先生|客|[０-９0-9]+)[：:]\s*/);
+          const speaker = speakerMatch ? speakerMatch[1] : null;
+          const dialogueContent = speakerMatch ? line.substring(speakerMatch[0].length) : line;
+
           return (
             <div key={lIdx} className="tango-dialogue-line flex items-baseline">
-              {speakerMatch ? (
+              {speaker ? (
                 <>
-                  <span className="tango-speaker-badge shrink-0">{speakerMatch[1]}</span>
+                  <span className="tango-speaker-badge shrink-0">{speaker}</span>
                   <div 
                     className="flex-1"
-                    dangerouslySetInnerHTML={{ __html: speakerMatch[2] }} 
+                    dangerouslySetInnerHTML={{ __html: dialogueContent }} 
                   />
                 </>
               ) : (
                 <div 
                   className="flex-1"
-                  dangerouslySetInnerHTML={{ __html: line }} 
+                  dangerouslySetInnerHTML={{ __html: dialogueContent }} 
                 />
               )}
             </div>
@@ -470,18 +494,44 @@ export default function TangoReadingPage() {
 
         {/* Preferences Toolbar */}
         <div className="tango-toolbar">
-          {/* Topic Selector */}
-          <div className="flex items-center gap-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-[var(--tango-text-muted)]">Topic:</span>
-            <select
-              value={chapterId}
-              onChange={(e) => navigate(`/tango-reading/${bookId}/chapters/${e.target.value}`)}
-              className="tango-select"
-            >
-              {(TANGO_TOPIC_NAMES[bookId] || []).map(t => (
-                <option key={t.id} value={t.id}>{t.title}</option>
-              ))}
-            </select>
+          {/* Topic & Story Selectors */}
+          <div className="flex items-center gap-3 flex-wrap">
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-[var(--tango-text-muted)]">Topic:</span>
+              <select
+                value={chapterId}
+                onChange={(e) => navigate(`/tango-reading/${bookId}/chapters/${e.target.value}`)}
+                className="tango-select"
+              >
+                {(TANGO_TOPIC_NAMES[bookId] || []).map(t => (
+                  <option key={t.id} value={t.id}>{t.title}</option>
+                ))}
+              </select>
+            </div>
+
+            {stories.length > 0 && (
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-bold uppercase tracking-wider text-[var(--tango-text-muted)]">Story:</span>
+                <select
+                  value={currentStoryIndex}
+                  onChange={(e) => {
+                    setCurrentStoryIndex(parseInt(e.target.value, 10));
+                    setRevealedItems({});
+                  }}
+                  className="tango-select font-bold"
+                >
+                  {stories.map((s, idx) => {
+                    const wordsInStory = s.annotated_words || [];
+                    const isAllMastered = wordsInStory.length > 0 && wordsInStory.every(w => masteredWords[w.word_id || w.kanji]);
+                    return (
+                      <option key={idx} value={idx}>
+                        Story {idx + 1} / {stories.length} {wordsInStory.length > 0 ? `(${wordsInStory.length} words)` : ''} {isAllMastered ? '✓' : ''}
+                      </option>
+                    );
+                  })}
+                </select>
+              </div>
+            )}
           </div>
 
           {/* Reader Preferences */}
@@ -556,29 +606,6 @@ export default function TangoReadingPage() {
                ========================================================= */}
             {(studyMode === 'reader' || studyMode === 'redsheet') && currentStory && (
               <div className="space-y-4">
-                
-                {/* Story Pill Navigator */}
-                <div className="tango-story-nav">
-                  {stories.map((s, idx) => {
-                    const isCurrent = currentStoryIndex === idx;
-                    const wordsInStory = s.annotated_words || [];
-                    const isAllMastered = wordsInStory.length > 0 && wordsInStory.every(w => masteredWords[w.word_id || w.kanji]);
-
-                    return (
-                      <button
-                        key={idx}
-                        onClick={() => {
-                          setCurrentStoryIndex(idx);
-                          setRevealedItems({});
-                        }}
-                        className={`tango-story-pill ${isCurrent ? 'active' : ''} ${isAllMastered ? 'mastered' : ''}`}
-                        title={`Story ${idx + 1}`}
-                      >
-                        {idx + 1}
-                      </button>
-                    );
-                  })}
-                </div>
 
                 {/* Red Sheet Drill Controls Bar (When in Red Sheet Mode) */}
                 {studyMode === 'redsheet' && (

@@ -3,16 +3,9 @@
   "story_number": 16,
   "title": "Topic 21 社会",
   "page_story": "301_1",
-  "japanese_text": "子どもを<u>産み</u>たい、<u>子孫</u>を残したいと望み、それを<u>実現し</u>ようとすることも、<u>人権</u>の一つである。どんな理由があっても、その権利を<u>尊重す</u>べきで、<u>奪って</u>はならない。",
+  "japanese_text": "子どもを産みたい、<u>子孫</u>を残したいと望み、それを<u>実現</u>しようとすることも、<u>人権</u>の一つである。どんな理由があっても、その権利を<u>尊重</u>すべきで、奪ってはならない。",
   "english_translation": "The desire to bear children and leave behind offspring, and the ability to realize this desire, is a basic human right. We must respect this right and not deprive anyone of it, no matter the reason.",
   "annotated_words": [
-    {
-      "word_id": "n2_2112",
-      "word_number": 2112,
-      "kanji": "産む",
-      "furigana": "うむ",
-      "meaning_en": "bear, give birth"
-    },
     {
       "word_id": "n2_2113",
       "word_number": 2113,
@@ -40,13 +33,7 @@
       "kanji": "尊重[する]",
       "furigana": "そんちょう",
       "meaning_en": "respect"
-    },
-    {
-      "word_id": "n2_2117",
-      "word_number": 2117,
-      "kanji": "奪う",
-      "furigana": "うばう",
-      "meaning_en": "deprive"
     }
-  ]
+  ],
+  "id": "301_1"
 }

@@ -3,7 +3,7 @@
   "story_number": 5,
   "title": "Topic 20 マナー",
   "page_story": "281_1",
-  "japanese_text": "私は目に<u>障がい</u>がある。いつも杖を持ちながら歩いているが、杖の<u>先端</u>で道を把握するには、やはり<u>限度</u>がある。特に<u>夜間</u>は前に進めるかどうかの判断が難しく、<u>混乱する</u>こともあるので、たまに声をかけてくれる人がいて、ありがたいと思う。",
+  "japanese_text": "私は目に<u>障がい</u>がある。いつも杖を持ちながら歩いているが、杖の<u>先端</u>で道を把握するには、やはり<u>限度</u>がある。特に<u>夜間</u>は前に進めるかどうかの判断が難しく、<u>混乱</u>することもあるので、たまに声をかけてくれる人がいて、ありがたいと思う。",
   "english_translation": "I have a visual disability. I always walk with a cane, but of course, there's a limit to what I can comprehend with the tip of my cane. Especially at night, it's difficult for me to judge whether or not to move forward, and I sometimes get confused, so I'm grateful that people call out to help me.",
   "annotated_words": [
     {
@@ -12,13 +12,6 @@
       "kanji": "障がい",
       "furigana": "しょうがい",
       "meaning_en": "disability"
-    },
-    {
-      "word_id": "n2_1953",
-      "word_number": 1953,
-      "kanji": "障がい者",
-      "furigana": "しょうがいしゃ",
-      "meaning_en": "person with a disability"
     },
     {
       "word_id": "n2_1954",
@@ -48,5 +41,6 @@
       "furigana": "こんらん",
       "meaning_en": "confusion, get confused"
     }
-  ]
+  ],
+  "id": "281_1"
 }

@@ -1,6 +1,6 @@
 {
   "title": "Topic 8",
-  "japanese_text": "フリーキックの<ruby><u>天才</u><rt>てんさい</rt></ruby>と<ruby>呼<rt>よ</rt></ruby>ばれる<ruby>選手<rt>せんしゅ</rt></ruby>がボールを<ruby>蹴<rt>け</rt></ruby>った。<ruby>右<rt>みぎ</rt></ruby>に<ruby>大<rt>おお</rt></ruby>きく<ruby>曲<rt>ま</rt></ruby>げようとしたが、<ruby><u>回転</u><rt>かいてん</rt></ruby>しなかったので、まっすぐ<ruby>飛<rt>と</rt></ruby>んでいってしまった。",
+  "japanese_text": "フリーキックの<u><ruby>天才<rt>てんさい</rt></ruby></u>と<ruby>呼<rt>よ</rt></ruby>ばれる<ruby>選手<rt>せんしゅ</rt></ruby>がボールを<ruby>蹴<rt>け</rt></ruby>った。<ruby>右<rt>みぎ</rt></ruby>に<ruby>大<rt>おお</rt></ruby>きく<ruby>曲<rt>ま</rt></ruby>げようとしたが、<u><ruby>回転<rt>かいてん</rt></ruby></u>しなかったので、まっすぐ<ruby>飛<rt>と</rt></ruby>んでいってしまった。",
   "english_translation": "The player called the free kick genius kicked the ball. She tried to curve the ball wide to the right, but the ball didn't spin, so it flew straight.",
   "annotated_words": [
     {
@@ -20,5 +20,6 @@
   ],
   "story_number": 15,
   "is_story": true,
-  "page_story": "121_1"
+  "page_story": "121_1",
+  "id": "121_1"
 }

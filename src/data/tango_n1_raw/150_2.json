@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 12,
   "title": "Topic 12",
-  "japanese_text": "動物の<u>排泄物</u>や生ごみは<u>可燃ごみ</u>として<u>処分される</u>ことが多い。しかし、専用の機械を設置すれば、中に入れておくだけで、ごみが<u>肥料</u>に<u>化ける</u>。",
+  "japanese_text": "動物の<u>排泄物</u>や生ごみは<u>可燃ごみ</u>として<u>処分</u>されることが多い。しかし、専用の機械を設置すれば、中に入れておくだけで、ごみが<u>肥料</u>に<u>化ける</u>。",
   "english_translation": "Animal excrement and kitchen scraps are often disposed of as combustible waste. However, if a special machine is installed, garbage can be turned into fertilizer simply by placing it inside.",
   "annotated_words": [
     {
@@ -11,13 +11,6 @@
       "kanji": "排泄物",
       "furigana": "はいせつぶつ",
       "meaning_en": "excrement"
-    },
-    {
-      "word_id": "n1_1033",
-      "word_number": 1033,
-      "kanji": "排泄",
-      "furigana": "はいせつ",
-      "meaning_en": "excretion, excrete"
     },
     {
       "word_id": "n1_1034",
@@ -47,5 +40,7 @@
       "furigana": "ばける",
       "meaning_en": "change into, turn into"
     }
-  ]
+  ],
+  "id": "150_2",
+  "page_story": "150_2"
 }

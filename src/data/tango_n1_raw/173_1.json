@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 11,
   "title": "Topic 14",
-  "japanese_text": "私の住む町は<u>のどかな</u>場所だが、<u>自衛隊</u>の基地が近くにあるため騒音に悩まされている。さらに、来月には開発事業の<u>一環</u>として<u>複合</u>施設の建設が<u>着工される</u>ため、<u>クレーン</u>の音などが問題になりそうだ。この騒音問題を、今度の町の<u>総会</u>で話し合おうと思う。",
+  "japanese_text": "私の住む町は<u>のどかな</u>場所だが、<u>自衛隊</u>の基地が近くにあるため騒音に悩まされている。さらに、来月には開発事業の<u>一環</u>として<u>複合</u>施設の建設が<u>着工</u>されるため、<u>クレーン</u>の音などが問題になりそうだ。この騒音問題を、今度の町の<u>総会</u>で話し合おうと思う。",
   "english_translation": "My town is a peaceful place, but it suffers from noise because of the nearby Self-Defense Forces base. In addition, construction of a complex is scheduled to start next month as part of a development project, so the noise from cranes is likely to become a problem. We intend to discuss the noise problem at the upcoming general meeting of the town.",
   "annotated_words": [
     {
@@ -54,5 +54,7 @@
       "furigana": "そうかい",
       "meaning_en": "general meeting"
     }
-  ]
+  ],
+  "id": "173_1",
+  "page_story": "173_1"
 }

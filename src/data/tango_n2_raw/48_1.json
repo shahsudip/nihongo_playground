@@ -3,7 +3,7 @@
   "story_number": 7,
   "title": "Topic 3 買い物",
   "page_story": "48_1",
-  "japanese_text": "A：昨日<u>足首</u>のサポーターとスマホの充電<u>器</u>注文したんだけど、口座<u>引き落とし</u>で支払おうとしたら、<u>残高</u>が足りなくて買えなくて…。Bさん、もしクレジットカード持ってたら<u>立て替えて</u>くれない？\nB：うーん、それはちょっと…。",
+  "japanese_text": "A：昨日<u>足首</u>のサポーターとスマホの充電<u>器</u>注文したんだけど、口座<u>引き落とし</u>で支払おうとしたら、<u>残高</u>が足りなくて買えなくて…。Bさん、もしクレジットカード持ってたら立て替えてくれない？\nB：うーん、それはちょっと…。",
   "english_translation": "A: I ordered an ankle brace and a phone charging device yesterday, but when I tried to pay by direct debit, I couldn't because my account balance was too low... Hey B, if you have a credit card, could you pay it on my behalf? B: Hmmm, I'm not sure about that...",
   "annotated_words": [
     {
@@ -33,13 +33,7 @@
       "kanji": "残高",
       "furigana": "ざんだか",
       "meaning_en": "(account) balance"
-    },
-    {
-      "word_id": "n2_0228",
-      "word_number": 228,
-      "kanji": "立て替える",
-      "furigana": "たてかえる",
-      "meaning_en": "pay on someone's behalf"
     }
-  ]
+  ],
+  "id": "48_1"
 }

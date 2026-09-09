@@ -3,29 +3,15 @@
   "story_number": 4,
   "title": "Topic 14 天気",
   "page_story": "185_2",
-  "japanese_text": "梅雨が<u>明け</u>、<u>猛暑日</u>が多くなる７月から８月にかけては、<u>熱中症</u>にかかる人が多い。<u>日中</u>はできるだけ<u>屋外</u>で過ごさず、エアコンの効いた<u>屋内</u>で<u>涼む</u>のが安全だ。",
+  "japanese_text": "梅雨が明け、<u>猛暑日</u>が多くなる７月から８月にかけては、<u>熱中症</u>にかかる人が多い。<u>日中</u>はできるだけ<u>屋外</u>で過ごさず、エアコンの効いた<u>屋内</u>で<u>涼む</u>のが安全だ。",
   "english_translation": "Many people suffer from heat stroke during July and August, after the rainy season has ended and the days are extremely hot (35°C or more). During daytime, it's safer to stay cool indoors with air conditioning and avoid spending time outdoors as much as possible.",
   "annotated_words": [
-    {
-      "word_id": "n2_1212",
-      "word_number": 1212,
-      "kanji": "明ける",
-      "furigana": "あける",
-      "meaning_en": "end"
-    },
     {
       "word_id": "n2_1213",
       "word_number": 1213,
       "kanji": "猛暑日",
       "furigana": "もうしょび",
       "meaning_en": "extremely hot day (35°C or more)"
-    },
-    {
-      "word_id": "n2_1214",
-      "word_number": 1214,
-      "kanji": "猛暑",
-      "furigana": "もうしょ",
-      "meaning_en": "intense heat"
     },
     {
       "word_id": "n2_1215",
@@ -62,5 +48,6 @@
       "furigana": "すずむ",
       "meaning_en": "cool off, stay cool"
     }
-  ]
+  ],
+  "id": "185_2"
 }

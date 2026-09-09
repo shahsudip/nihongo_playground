@@ -1,24 +1,32 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "<u>全力</u><ruby><rt>ぜんりょく</rt></ruby>で<ruby>運動<rt>うんどう</rt></ruby>した<ruby>後<rt>あと</rt></ruby>は、お<ruby>腹<rt>なか</rt></ruby>がぺこぺこになる。ご<ruby>飯<rt>はん</rt></ruby>を<u>丼</u><ruby><rt>どんぶり</rt></ruby>で<ruby>何<rt>なん</rt></ruby>杯<ruby><rt>ばい</rt></ruby>もおかわりしてしまう。",
+  "japanese_text": "<u>全力</u><ruby><rt>ぜんりょく</rt></ruby>で<ruby>運動<rt>うんどう</rt></ruby>した<ruby>後<rt>あと</rt></ruby>は、お<ruby>腹<rt>なか</rt></ruby>がぺこぺこになる。ご<ruby>飯<rt>はん</rt></ruby>を<u>丼</u><ruby><rt>どんぶり</rt></ruby>で<ruby>何<rt>なん</rt></ruby>杯<ruby><rt>ばい</rt></ruby>も<u>おかわり</u>してしまう。",
   "english_translation": "After exercising with all my strength, I get hungry. I end up having bowl after bowl of rice.",
   "annotated_words": [
     {
-      "word_id": "n3_0078",
-      "word_number": 78,
+      "word_id": "n3_0117",
+      "word_number": 117,
       "kanji": "全力",
       "furigana": "ぜんりょく",
       "meaning_en": "full strength, with all one's might"
     },
     {
-      "word_id": "n3_0079",
-      "word_number": 79,
+      "word_id": "n3_0118",
+      "word_number": 118,
       "kanji": "丼",
       "furigana": "どんぶり",
       "meaning_en": "bowl"
+    },
+    {
+      "word_id": "n3_0119",
+      "word_number": 119,
+      "kanji": "おかわり[する]",
+      "furigana": "",
+      "meaning_en": "refill, have seconds, have a refill"
     }
   ],
   "story_number": 26,
   "is_story": true,
-  "page_story": "31_2"
+  "page_story": "31_2",
+  "id": "31_2"
 }

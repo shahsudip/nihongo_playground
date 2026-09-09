@@ -1,6 +1,6 @@
 {
   "title": "Topic 6",
-  "japanese_text": "<ruby>昔<rt>むかし</rt></ruby>からこの<ruby>作家<rt>さっか</rt></ruby>の<ruby>大<rt>だい</rt></ruby><u>ファン</u>だった。<ruby>彼女<rt>かのじょ</rt></ruby>の<ruby><u>最高傑作</u><rt>さいこうけっさく</rt></ruby>が、<ruby>今度<rt>こんど</rt></ruby><ruby><u>実写化</u><rt>じっしゃか</rt></ruby>されるらしい。",
+  "japanese_text": "<ruby>昔<rt>むかし</rt></ruby>からこの<ruby>作家<rt>さっか</rt></ruby>の<ruby>大<rt>だい</rt></ruby><u>ファン</u>だった。<ruby>彼女<rt>かのじょ</rt></ruby>の<u><ruby>最高傑作<rt>さいこうけっさく</rt></ruby></u>が、<ruby>今度<rt>こんど</rt></ruby><u><ruby>実写化<rt>じっしゃか</rt></ruby></u>されるらしい。",
   "english_translation": "I've been a huge fan of this author since a long time ago. It seems like her masterpiece will be made into a live action movie soon.",
   "annotated_words": [
     {
@@ -27,5 +27,6 @@
   ],
   "story_number": 1,
   "is_story": true,
-  "page_story": "92_1"
+  "page_story": "92_1",
+  "id": "92_1"
 }

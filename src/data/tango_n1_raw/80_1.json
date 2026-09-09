@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 24,
   "title": "Topic 6",
-  "japanese_text": "漫画雑誌の電子化にはさまざまな<u>利点</u>がある。まずは、<u>隔週</u>連載などさまざまなペースでの連載が可能になった。また、ＳＮＳで<u>先行して</u>一部の<u>コマ</u>を流し、<u>読者</u>の期待を<u>煽る</u>宣伝も可能になった。さらに、過去の回を<u>一挙に</u>無料で見られるようにして、新しい読者を獲得することもできる。",
+  "japanese_text": "漫画雑誌の電子化にはさまざまな<u>利点</u>がある。まずは、<u>隔週</u>連載などさまざまなペースでの連載が可能になった。また、ＳＮＳで<u>先行</u>して一部の<u>コマ</u>を流し、<u>読者</u>の期待を<u>煽る</u>宣伝も可能になった。さらに、過去の回を<u>一挙に</u>無料で見られるようにして、新しい読者を獲得することもできる。",
   "english_translation": "Digitization of manga magazines has had a number of advantages. First, it has made it possible to serialize at various intervals, such as bi-weekly. It has also made it possible to advertise on social media by posting some of the panels ahead of time to build up readers' anticipation. Furthermore, past installments can be made available for free all at once to attract new readers.",
   "annotated_words": [
     {
@@ -18,13 +18,6 @@
       "kanji": "隔週",
       "furigana": "かくしゅう",
       "meaning_en": "bi-weekly, every two weeks"
-    },
-    {
-      "word_id": "n1_0488",
-      "word_number": 488,
-      "kanji": "隔〜",
-      "furigana": "かく",
-      "meaning_en": "every other ~"
     },
     {
       "word_id": "n1_0489",
@@ -61,5 +54,7 @@
       "furigana": "いっきょ",
       "meaning_en": "all at once"
     }
-  ]
+  ],
+  "id": "80_1",
+  "page_story": "80_1"
 }

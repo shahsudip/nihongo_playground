@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 5,
   "title": "Topic 13",
-  "japanese_text": "A：ここに住もうと思ってるんだ。\nB：こんな古い<u>屋敷</u>に住むの？壁は<u>ひび</u>割れてるし、床も<u>きしんでる</u>。それに<u>インターホン</u>もないよ。",
+  "japanese_text": "A：ここに住もうと思ってるんだ。\nB：こんな古い<u>屋敷</u>に住むの？壁は<u>ひび</u>割れてるし、床もきしんでる。それに<u>インターホン</u>もないよ。",
   "english_translation": "A: I'm thinking of living here. B: You're going to live in this old mansion? The walls have cracks and the floor creaks. And there's no intercom.",
   "annotated_words": [
     {
@@ -20,18 +20,13 @@
       "meaning_en": "crack, fracture"
     },
     {
-      "word_id": "n1_1093",
-      "word_number": 1093,
-      "kanji": "きしむ",
-      "furigana": "",
-      "meaning_en": "creak"
-    },
-    {
       "word_id": "n1_1094",
       "word_number": 1094,
       "kanji": "インターホン",
       "furigana": "",
       "meaning_en": "intercom"
     }
-  ]
+  ],
+  "id": "158_2",
+  "page_story": "158_2"
 }

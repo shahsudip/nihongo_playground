@@ -1,7 +1,7 @@
 {
   "title": "Topic 5 テクノロジー",
   "audio_id": "75",
-  "japanese_text": "A：オンラインで、他の人と同時にファイルを<u>編集できる</u>方法ないかな。\nB：ウェブアプリを使えば、ファイルを<u>共有する</u>だけで<u>やりとりし</u>ながら共同作業ができるよ。データが<u>修正されたら</u>、リアルタイムで保存されるんだ。\nA：<u>要するに</u>、内容が<u>上書きされ</u>ていくってことだね。",
+  "japanese_text": "A：オンラインで、他の人と同時にファイルを<u>編集</u>できる方法ないかな。\nB：ウェブアプリを使えば、ファイルを<u>共有</u>するだけで<u>やりとり</u>しながら共同作業ができるよ。データが<u>修正</u>されたら、リアルタイムで保存されるんだ。\nA：<u>要するに</u>、内容が<u>上書き</u>されていくってことだね。",
   "page_story": "72_1",
   "english_translation": "A: Is there any way I can edit a file online with another person at the same time? B: If you use a web app, you can collaborate just by sharing files to exchange them. Whenever data is modified, it's saved in real time. A: So in short, the content is overwritten.",
   "annotated_words": [
@@ -48,5 +48,6 @@
       "meaning_en": "overwriting, overwrite"
     }
   ],
-  "is_story": true
+  "is_story": true,
+  "id": "72_1"
 }

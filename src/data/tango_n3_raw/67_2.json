@@ -1,6 +1,6 @@
 {
   "title": "Topic 4",
-  "japanese_text": "コートのベルトをリボンのように<ruby>結<rt>むす</rt></ruby><ruby>ぶとお<rt></rt></ruby><ruby>嬢<rt>じょう</rt></ruby><ruby>さんっぽい<rt></rt></ruby><ruby><u>雰囲気</u><rt>ふんいき</rt></ruby><ruby>になる。<rt></rt></ruby>",
+  "japanese_text": "コートのベルトをリボンのように<ruby>結<rt>むす</rt></ruby><ruby>ぶとお<rt></rt></ruby><ruby>嬢<rt>じょう</rt></ruby><ruby>さんっぽい<rt></rt></ruby><u><ruby>雰囲気<rt>ふんいき</rt></ruby></u><ruby>になる。<rt></rt></ruby>",
   "english_translation": "Tying the belt of a coat like a ribbon gives you young lady-like vibes.",
   "annotated_words": [
     {
@@ -13,5 +13,6 @@
   ],
   "story_number": 12,
   "is_story": true,
-  "page_story": "67_2"
+  "page_story": "67_2",
+  "id": "67_2"
 }

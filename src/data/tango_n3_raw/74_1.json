@@ -1,6 +1,6 @@
 {
   "title": "Topic 5",
-  "japanese_text": "<ruby>Ａ：<rt></rt></ruby><ruby>昨日<rt>きのう</rt></ruby><ruby>スマホ<rt></rt></ruby><ruby>落<rt>お</rt></ruby><ruby>としちゃって、<rt></rt></ruby><ruby><u>画面</u><rt>がめん</rt></ruby><ruby>割<rt>わ</rt></ruby><ruby>れた。<rt></rt></ruby><ruby><u>修理</u><rt>しゅうり</rt></ruby><ruby>も<rt></rt></ruby><ruby>無理<rt>むり</rt></ruby><ruby>だって。<u>ショック</u>だよー。<rt></rt></ruby>\n<ruby>Ｂ：え、<u>カバー</u><rt></rt></ruby><ruby>付<rt>つ</rt></ruby><ruby>けてなかったの？<rt></rt></ruby>\n<ruby>Ａ：<rt></rt></ruby><ruby>今度<rt>こんど</rt></ruby><ruby>から<rt></rt></ruby><ruby>付<rt>つ</rt></ruby><ruby>けるようにする。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：<rt></rt></ruby><ruby>昨日<rt>きのう</rt></ruby><ruby>スマホ<rt></rt></ruby><ruby>落<rt>お</rt></ruby><ruby>としちゃって、<rt></rt></ruby><u><ruby>画面<rt>がめん</rt></ruby></u><ruby>割<rt>わ</rt></ruby><ruby>れた。<rt></rt></ruby><u><ruby>修理<rt>しゅうり</rt></ruby></u><ruby>も<rt></rt></ruby><ruby>無理<rt>むり</rt></ruby><u><ruby>だって。ショックだよー。<rt></rt></ruby></u>\n<u><ruby>Ｂ：え、カバー<rt></rt></ruby></u><ruby>付<rt>つ</rt></ruby><ruby>けてなかったの？<rt></rt></ruby>\n<ruby>Ａ：<rt></rt></ruby><ruby>今度<rt>こんど</rt></ruby><ruby>から<rt></rt></ruby><ruby>付<rt>つ</rt></ruby><ruby>けるようにする。<rt></rt></ruby>",
   "english_translation": "A: Yesterday, I dropped my smartphone and broke the screen. They said it's impossible to repair. I'm in shock.\nB: What, didn't you put a cover on it?\nA: I'll be sure to put one on the next time.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
   ],
   "story_number": 1,
   "is_story": true,
-  "page_story": "74_1"
+  "page_story": "74_1",
+  "id": "74_1"
 }

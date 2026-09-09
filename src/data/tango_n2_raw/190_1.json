@@ -3,7 +3,7 @@
   "story_number": 12,
   "title": "Topic 14 天気",
   "page_story": "190_1",
-  "japanese_text": "A：秋の京都ってどうですか？\nB：<u>紅葉</u>がすごくきれいですよ。山だけじゃなくて、<u>地面</u>も<u>落ち葉</u>でいっぱいになるし、夜は山がライトで<u>照らされる</u>し。",
+  "japanese_text": "A：秋の京都ってどうですか？\nB：<u>紅葉</u>がすごくきれいですよ。山だけじゃなくて、<u>地面</u>も<u>落ち葉</u>でいっぱいになるし、夜は山がライトで照らされるし。",
   "english_translation": "A: What do you think of Kyoto in the fall? B: The colorful fall leaves are very beautiful. Not only the mountains, but also the ground is covered with fallen leaves, and at night the mountains are lit up.",
   "annotated_words": [
     {
@@ -26,13 +26,7 @@
       "kanji": "落ち葉",
       "furigana": "おちば",
       "meaning_en": "fallen leaves"
-    },
-    {
-      "word_id": "n2_1259",
-      "word_number": 1259,
-      "kanji": "照らす",
-      "furigana": "てらす",
-      "meaning_en": "light up"
     }
-  ]
+  ],
+  "id": "190_1"
 }

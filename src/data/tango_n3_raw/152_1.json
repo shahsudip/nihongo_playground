@@ -1,7 +1,7 @@
 {
   "id": "152_1",
   "title": "Topic 11",
-  "japanese_text": "<ruby>台風<rt>たいふう</rt></ruby>が<ruby>近<rt>ちか</rt></ruby>づいているので、<ruby>大雨<rt>おおあめ</rt></ruby>、<ruby>強風<rt>きょうふう</rt></ruby>、<ruby>洪水<rt>こうずい</rt></ruby>の<ruby>被害<rt>ひがい</rt></ruby>が<ruby>心配<rt>しんぱい</rt></ruby>である。<ruby>電柱<rt>でんちゅう</rt></ruby>が<ruby>倒<rt>たお</rt></ruby>れて、<ruby>突然<rt>とつぜん</rt></ruby><ruby>停電<rt>ていでん</rt></ruby>したり、<ruby>断水<rt>だんすい</rt></ruby>したりするかもしれない。",
+  "japanese_text": "<ruby>台風<rt>たいふう</rt></ruby>が<ruby>近<rt>ちか</rt></ruby>づいているので、<ruby>大雨<rt>おおあめ</rt></ruby>、<u><ruby>強風<rt>きょうふう</rt></ruby></u>、<u><ruby>洪水<rt>こうずい</rt></ruby></u>の<ruby>被害<rt>ひがい</rt></ruby>が<ruby>心配<rt>しんぱい</rt></ruby>である。<u><ruby>電柱<rt>でんちゅう</rt></ruby></u>が<ruby>倒<rt>たお</rt></ruby>れて、<ruby>突然<rt>とつぜん</rt></ruby><u><ruby>停電<rt>ていでん</rt></ruby></u>したり、<u><ruby>断水<rt>だんすい</rt></ruby></u>したりするかもしれない。",
   "english_translation": "A typhoon is approaching, so I'm worried about damage from heavy rain, strong wind, and flooding. There could be sudden power outages due to downed utility poles or the water could be cut off.",
   "annotated_words": [
     {
@@ -20,11 +20,6 @@
       "meaning": "telephone pole"
     },
     {
-      "kanji": "電線",
-      "furigana": "でんせん",
-      "meaning": "electrical wire"
-    },
-    {
       "kanji": "停電［する］",
       "furigana": "ていでん",
       "meaning": "blackout, have a blackout"
@@ -34,5 +29,7 @@
       "furigana": "だんすい",
       "meaning": "water outage, have a water outage"
     }
-  ]
+  ],
+  "page_story": "152_1",
+  "is_story": true
 }

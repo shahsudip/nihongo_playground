@@ -1,6 +1,6 @@
 {
   "title": "Topic 8",
-  "japanese_text": "<ruby>柔道<rt>じゅうどう</rt></ruby>の48キロ<ruby>級<rt>きゅう</rt></ruby>の<ruby>日本選手<rt>にほんせんしゅ</rt></ruby>が<ruby>試合中<rt>しあいなか</rt></ruby>に<ruby><u>肩</u><rt>かた</rt></ruby>を<ruby><u>負傷</u><rt>ふしょう</rt></ruby>したが、<ruby>見事<rt>みごと</rt></ruby>に<ruby>金<rt>きん</rt></ruby><u>メダル</u>を<ruby><u>獲得</u><rt>かくとく</rt></ruby>した。",
+  "japanese_text": "<ruby>柔道<rt>じゅうどう</rt></ruby>の48キロ<ruby>級<rt>きゅう</rt></ruby>の<ruby>日本選手<rt>にほんせんしゅ</rt></ruby>が<ruby>試合中<rt>しあいなか</rt></ruby>に<u><ruby>肩<rt>かた</rt></ruby></u>を<u><ruby>負傷<rt>ふしょう</rt></ruby></u>したが、<ruby>見事<rt>みごと</rt></ruby>に<ruby>金<rt>きん</rt></ruby><u>メダル</u>を<u><ruby>獲得<rt>かくとく</rt></ruby></u>した。",
   "english_translation": "Judo's 48 kg-class Japanese athlete injured their shoulders during the match but still impressively won a gold medal.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
   ],
   "story_number": 13,
   "is_story": true,
-  "page_story": "120_1"
+  "page_story": "120_1",
+  "id": "120_1"
 }

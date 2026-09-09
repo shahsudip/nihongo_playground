@@ -1,6 +1,6 @@
 {
   "title": "Topic 8",
-  "japanese_text": "<ruby><u>卓球</u><rt>たっきゅう</rt></ruby>の<ruby><u>団体</u>戦<rt>だんたいせん</rt></ruby>が<ruby>行<rt>おこな</rt></ruby>われて、<ruby>中国<rt>ちゅうごく</rt></ruby>が３<ruby>対<rt>たい</rt></ruby>２で<ruby>日本<rt>にほん</rt></ruby>に<ruby>勝利<rt>しょうり</rt></ruby>した。",
+  "japanese_text": "<u><ruby>卓球<rt>たっきゅう</rt></ruby></u>の<u><ruby>団体戦<rt>だんたいせん</rt></ruby></u>が<ruby>行<rt>おこな</rt></ruby>われて、<ruby>中国<rt>ちゅうごく</rt></ruby>が３<ruby>対<rt>たい</rt></ruby>２で<ruby>日本<rt>にほん</rt></ruby>に<ruby>勝利<rt>しょうり</rt></ruby>した。",
   "english_translation": "A table tennis team competition was held, and China won over Japan 3 to 2.",
   "annotated_words": [
     {
@@ -20,5 +20,6 @@
   ],
   "story_number": 1,
   "is_story": true,
-  "page_story": "114_1"
+  "page_story": "114_1",
+  "id": "114_1"
 }

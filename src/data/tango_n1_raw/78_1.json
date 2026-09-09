@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 21,
   "title": "Topic 6",
-  "japanese_text": "この映画は軍隊に入ったばかりの主人公たちが<u>ずらっと</u>並んでいるシーンから始まる。軍隊では<u>階級</u>が上の軍人からの命令にはすぐに<u>応答し</u>なければならないことを教え込まれる。訓練の後、映画の後半は<u>戦場</u>を描く。多くの<u>尊い</u>命が犠牲になる。",
+  "japanese_text": "この映画は軍隊に入ったばかりの主人公たちが<u>ずらっと</u>並んでいるシーンから始まる。軍隊では<u>階級</u>が上の軍人からの命令にはすぐに<u>応答</u>しなければならないことを教え込まれる。訓練の後、映画の後半は<u>戦場</u>を描く。多くの尊い命が犠牲になる。",
   "english_translation": "This film begins with a scene in which the main characters, who have just joined the army, are all lined up in a row. In the army, they are taught that they must respond immediately to orders from higher-ranking soldiers. After the training, the second half of the film shows the battlefield. Many precious lives are sacrificed.",
   "annotated_words": [
     {
@@ -32,20 +32,8 @@
       "kanji": "戦場",
       "furigana": "せんじょう",
       "meaning_en": "battlefield"
-    },
-    {
-      "word_id": "n1_0472",
-      "word_number": 472,
-      "kanji": "尊い／貴い",
-      "furigana": "とうと",
-      "meaning_en": "precious, valuable"
-    },
-    {
-      "word_id": "n1_0473",
-      "word_number": 473,
-      "kanji": "尊ぶ／貴ぶ",
-      "furigana": "とうと",
-      "meaning_en": "cherish, respect"
     }
-  ]
+  ],
+  "id": "78_1",
+  "page_story": "78_1"
 }

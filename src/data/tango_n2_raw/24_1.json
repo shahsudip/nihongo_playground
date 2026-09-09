@@ -3,7 +3,7 @@
   "story_number": 15,
   "title": "Topic 1 食事",
   "page_story": "24_1",
-  "japanese_text": "<ruby>私<rt>わたし</rt></ruby>の<ruby>大<rt>だい</rt></ruby><u>好物</u>はこの<ruby>店<rt>みせ</rt></ruby>のラーメンだ。いつもニンニク・<ruby>野菜<rt>やさい</rt></ruby><u>増し</u>で<ruby>注文<rt>ちゅうもん</rt></ruby>している。<u>湯気</u>が<ruby>出<rt>で</rt></ruby>ている<ruby>熱々<rt>あつあつ</rt></ruby>の<ruby>大盛<rt>おおも</rt></ruby>りのラーメンが<ruby>出<rt>だ</rt></ruby>されると、<u>毎度</u><ruby>食<rt>た</rt></ruby>べきれるか<ruby>少<rt>すこ</rt></ruby>し<ruby>不安<rt>ふあん</rt></ruby>になる。ゆっくりと<u>味わっ</u>ている<ruby>時間<rt>じかん</rt></ruby>はない。<ruby>麺<rt>めん</rt></ruby>がのびないうちに<ruby>急<rt>いそ</rt></ruby>いで<ruby>食<rt>た</rt></ruby>べる。そして、<ruby>帰<rt>かえ</rt></ruby>りに<u>さっぱり</u>したアイスを<ruby>買<rt>か</rt></ruby>うのも<ruby>欠<rt>か</rt></ruby>かせない。",
+  "japanese_text": "<ruby>私<rt>わたし</rt></ruby>の<ruby>大<rt>だい</rt></ruby><u>好物</u>はこの<ruby>店<rt>みせ</rt></ruby>のラーメンだ。いつもニンニク・<ruby>野菜<rt>やさい</rt></ruby><u>増し</u>で<ruby>注文<rt>ちゅうもん</rt></ruby>している。<u>湯気</u>が<ruby>出<rt>で</rt></ruby>ている<ruby>熱々<rt>あつあつ</rt></ruby>の<ruby>大盛<rt>おおも</rt></ruby>りのラーメンが<ruby>出<rt>だ</rt></ruby>されると、<u>毎度</u><ruby>食<rt>た</rt></ruby>べきれるか<ruby>少<rt>すこ</rt></ruby>し<ruby>不安<rt>ふあん</rt></ruby>になる。ゆっくりと味わっている<ruby>時間<rt>じかん</rt></ruby>はない。<ruby>麺<rt>めん</rt></ruby>がのびないうちに<ruby>急<rt>いそ</rt></ruby>いで<ruby>食<rt>た</rt></ruby>べる。そして、<ruby>帰<rt>かえ</rt></ruby>りに<u>さっぱり</u>したアイスを<ruby>買<rt>か</rt></ruby>うのも<ruby>欠<rt>か</rt></ruby>かせない。",
   "english_translation": "My favorite food is the ramen at this restaurant. I always order extra garlic and vegetables. When I'm served a large bowl of hot, steamy ramen, I'm always a little nervous about whether I'll be able to finish it. There's no time to savor it slowly. I eat it quickly before the noodles get too soft. And on the way home, it's essential to buy a refreshing ice cream.",
   "annotated_words": [
     {
@@ -35,18 +35,12 @@
       "meaning_en": "always, every time"
     },
     {
-      "word_id": "n2_0080",
-      "word_number": 80,
-      "kanji": "味わう",
-      "furigana": "あじわう",
-      "meaning_en": "savor"
-    },
-    {
       "word_id": "n2_0081",
       "word_number": 81,
       "kanji": "さっぱり",
       "furigana": "",
       "meaning_en": "refreshingly"
     }
-  ]
+  ],
+  "id": "24_1"
 }

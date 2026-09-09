@@ -1,32 +1,32 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "おいしいと<ruby><u>評判</u><rt>ひょうばん</rt></ruby>のラーメン<ruby>屋<rt>や</rt></ruby>。<ruby>日本中<rt>にほんじゅう</rt></ruby>に<ruby>店<rt>みせ</rt></ruby>があるが、<ruby><u>本店</u><rt>ほんてん</rt></ruby>は<ruby>特<rt>とく</rt></ruby>に<ruby>人気<rt>にんき</rt></ruby>が<ruby>高<rt>たか</rt></ruby>く、<u>わざわざ</u><ruby>隣<rt>となり</rt></ruby>の<ruby>県<rt>けん</rt></ruby>から<ruby>来<rt>く</rt></ruby>る<ruby>客<rt>きゃく</rt></ruby>もいる。<ruby>店<rt>みせ</rt></ruby>は<ruby>細長<rt>ほそなが</rt></ruby>く、<ruby>大勢<rt>おおぜい</rt></ruby>の<ruby>客<rt>きゃく</rt></ruby>が<ruby>入<rt>はい</rt></ruby>れないので、<ruby>店<rt>みせ</rt></ruby>の<ruby>外<rt>そと</rt></ruby>にはいつも<ruby><u>行列</u><rt>ぎょうれつ</rt></ruby>ができている。",
+  "japanese_text": "おいしいと<u><ruby>評判<rt>ひょうばん</rt></ruby></u>のラーメン<ruby>屋<rt>や</rt></ruby>。<ruby>日本中<rt>にほんじゅう</rt></ruby>に<ruby>店<rt>みせ</rt></ruby>があるが、<u><ruby>本店<rt>ほんてん</rt></ruby></u>は<ruby>特<rt>とく</rt></ruby>に<ruby>人気<rt>にんき</rt></ruby>が<ruby>高<rt>たか</rt></ruby>く、<u>わざわざ</u><ruby>隣<rt>となり</rt></ruby>の<ruby>県<rt>けん</rt></ruby>から<ruby>来<rt>く</rt></ruby>る<ruby>客<rt>きゃく</rt></ruby>もいる。<ruby>店<rt>みせ</rt></ruby>は<ruby>細長<rt>ほそなが</rt></ruby>く、<ruby>大勢<rt>おおぜい</rt></ruby>の<ruby>客<rt>きゃく</rt></ruby>が<ruby>入<rt>はい</rt></ruby>れないので、<ruby>店<rt>みせ</rt></ruby>の<ruby>外<rt>そと</rt></ruby>にはいつも<u><ruby>行列<rt>ぎょうれつ</rt></ruby></u>ができている。",
   "english_translation": "This is a ramen shop with a reputation for its food being delicious. It has branches all over Japan, but the main store is particularly popular, and some customers come all the way from neighboring prefectures. The store is long and narrow and cannot accommodate a large number of customers, so there are always lines outside the store.",
   "annotated_words": [
     {
-      "word_id": "n3_0051",
-      "word_number": 51,
+      "word_id": "n3_0082",
+      "word_number": 82,
       "kanji": "評判",
       "furigana": "ひょうばん",
       "meaning_en": "reputation"
     },
     {
-      "word_id": "n3_0052",
-      "word_number": 52,
+      "word_id": "n3_0083",
+      "word_number": 83,
       "kanji": "本店",
       "furigana": "ほんてん",
       "meaning_en": "main store"
     },
     {
-      "word_id": "n3_0053",
-      "word_number": 53,
+      "word_id": "n3_0084",
+      "word_number": 84,
       "kanji": "わざわざ",
       "furigana": "",
       "meaning_en": "take the trouble"
     },
     {
-      "word_id": "n3_0054",
-      "word_number": 54,
+      "word_id": "n3_0085",
+      "word_number": 85,
       "kanji": "行列",
       "furigana": "ぎょうれつ",
       "meaning_en": "ranks, line"
@@ -34,5 +34,6 @@
   ],
   "story_number": 18,
   "is_story": true,
-  "page_story": "26_2"
+  "page_story": "26_2",
+  "id": "26_2"
 }

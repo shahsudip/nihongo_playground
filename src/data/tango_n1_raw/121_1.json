@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 1,
   "title": "Topic 10",
-  "japanese_text": "2019年5月1日に令和<u>元年</u>が始まり、皇位を<u>継承する</u> <u>儀式</u>が行われた。<u>従来</u>の儀式を<u>再現し</u>つつも、時代に合わせて少しずつ変えられている。",
+  "japanese_text": "2019年5月1日に令和<u>元年</u>が始まり、皇位を<u>継承</u>する <u>儀式</u>が行われた。<u>従来</u>の儀式を<u>再現</u>しつつも、時代に合わせて少しずつ変えられている。",
   "english_translation": "The first year of the Reiwa era began on May 1, 2019, with the ceremony of succession to the Imperial Throne. The traditional ceremonies were re-enacted, but were slightly changed to suit the times.",
   "annotated_words": [
     {
@@ -40,5 +40,7 @@
       "furigana": "さいげん",
       "meaning_en": "reproduction, re-enact"
     }
-  ]
+  ],
+  "id": "121_1",
+  "page_story": "121_1"
 }

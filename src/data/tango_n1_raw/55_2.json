@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 9,
   "title": "Topic 5",
-  "japanese_text": "テレワークの普及により、社内のデータをクラウドに<u>移行する</u>企業が増えた。それにより業務の<u>引き継ぎ</u>が<u>圧倒的に</u>容易となった。",
+  "japanese_text": "テレワークの普及により、社内のデータをクラウドに<u>移行</u>する企業が増えた。それにより業務の<u>引き継ぎ</u>が<u>圧倒的</u>に容易となった。",
   "english_translation": "With the spread of remote working, more and more companies are relocating their corporate data to the cloud. This has made it overwhelmingly easier to transfer business operations.",
   "annotated_words": [
     {
@@ -20,25 +20,13 @@
       "meaning_en": "takeover, transfer"
     },
     {
-      "word_id": "n1_0301",
-      "word_number": 301,
-      "kanji": "引き継ぐ",
-      "furigana": "ひきつぐ",
-      "meaning_en": "to take over, transfer"
-    },
-    {
       "word_id": "n1_0302",
       "word_number": 302,
       "kanji": "圧倒的な",
       "furigana": "あっとうてきな",
       "meaning_en": "overwhelming"
-    },
-    {
-      "word_id": "n1_0303",
-      "word_number": 303,
-      "kanji": "圧倒",
-      "furigana": "あっとう",
-      "meaning_en": "dominance, overwhelm"
     }
-  ]
+  ],
+  "id": "55_2",
+  "page_story": "55_2"
 }

@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 10,
   "title": "Topic 14",
-  "japanese_text": "私は<u>水田</u>が広がる山の<u>麓</u>の町で育った。民家がかなり<u>分散して</u>いたので、友達の家に遊びに行くのにも苦労した。",
+  "japanese_text": "私は<u>水田</u>が広がる山の<u>麓</u>の町で育った。民家がかなり<u>分散</u>していたので、友達の家に遊びに行くのにも苦労した。",
   "english_translation": "I grew up in a town at the foot of a mountain, surrounded by rice paddies. It wasn't easy to visit my friends, since our houses were scattered quite far apart.",
   "annotated_words": [
     {
@@ -26,5 +26,7 @@
       "furigana": "ぶんさんする",
       "meaning_en": "dispersion, scatter"
     }
-  ]
+  ],
+  "id": "172_2",
+  "page_story": "172_2"
 }

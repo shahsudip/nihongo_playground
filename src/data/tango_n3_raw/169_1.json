@@ -1,7 +1,7 @@
 {
   "id": "169_1",
   "title": "Topic 12 旅行 Travel",
-  "japanese_text": "<span class='annotated-word' data-word='税関'>税関</span>が<span class='annotated-word' data-word='偽物'>偽物</span>の<span class='annotated-word' data-word='宝石'>宝石</span>を<ruby>見<rt>み</rt></ruby>つけた。<ruby>本物<rt>ほんもの</rt></ruby>に<span class='annotated-word' data-word='そっくりな'>そっくりで</span>、ちょっと<ruby>見<rt>み</rt></ruby>ただけでは<ruby>分<rt>わ</rt></ruby>からない。",
+  "japanese_text": "<u>税関</u>が<u>偽物</u>の<u>宝石</u>を<ruby>見<rt>み</rt></ruby>つけた。<ruby>本物<rt>ほんもの</rt></ruby>に<u>そっくり</u>で、ちょっと<ruby>見<rt>み</rt></ruby>ただけでは<ruby>分<rt>わ</rt></ruby>からない。",
   "english_translation": "Customs found fake jewels. It looks exactly like the real thing; you could hardly tell the difference with just a casual look.",
   "annotated_words": [
     {
@@ -24,5 +24,7 @@
       "furigana": "",
       "kanji": "そっくりな"
     }
-  ]
+  ],
+  "page_story": "169_1",
+  "is_story": true
 }

@@ -2,16 +2,9 @@
   "is_story": true,
   "story_number": 7,
   "title": "Topic 18",
-  "japanese_text": "今日の会議で、新しい企画が発表された。それに伴って、<u>行き詰まって</u>いたこれまでの企画は一旦<u>保留し</u>見直されることになった。私は新しい企画を<u>仕切る</u>マネージャーに<u>任命された</u>。<u>任期</u>は1年だが、責任重大だ。",
+  "japanese_text": "今日の会議で、新しい企画が発表された。それに伴って、行き詰まっていたこれまでの企画は一旦<u>保留</u>し見直されることになった。私は新しい企画を<u>仕切る</u>マネージャーに<u>任命</u>された。<u>任期</u>は1年だが、責任重大だ。",
   "english_translation": "At today's meeting, a new project was announced. The previous project, which had stalled, was put on hold to be reexamined. To coordinate the new project, I was appointed to manage it. The term of office is one year, but it's a big responsibility.",
   "annotated_words": [
-    {
-      "word_id": "n1_1506",
-      "word_number": 1506,
-      "kanji": "行き詰まる",
-      "furigana": "いきづまる",
-      "meaning_en": "stall"
-    },
     {
       "word_id": "n1_1507",
       "word_number": 1507,
@@ -40,5 +33,7 @@
       "furigana": "にんき",
       "meaning_en": "term of office"
     }
-  ]
+  ],
+  "id": "216_2",
+  "page_story": "216_2"
 }

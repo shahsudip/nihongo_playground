@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 2,
   "title": "Topic 7",
-  "japanese_text": "よく<u>吟味し</u>、<u>最善</u>だと思われた策に重大な欠陥が見つかり、また議論が<u>振り出し</u>に戻ってしまった。",
+  "japanese_text": "よく<u>吟味</u>し、<u>最善</u>だと思われた策に重大な欠陥が見つかり、また議論が<u>振り出し</u>に戻ってしまった。",
   "english_translation": "After careful examination, we found a serious flaw in what we'd thought to be the best plan, so we had to go back to the starting point.",
   "annotated_words": [
     {
@@ -26,5 +26,7 @@
       "furigana": "ふりだし",
       "meaning_en": "beginning, starting point"
     }
-  ]
+  ],
+  "id": "83_1",
+  "page_story": "83_1"
 }

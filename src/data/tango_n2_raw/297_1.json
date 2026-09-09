@@ -3,7 +3,7 @@
   "story_number": 9,
   "title": "Topic 21 社会",
   "page_story": "297_1",
-  "japanese_text": "<u>率直に</u>言えば、会社の<u>規律</u>を守らない人が苦手だ。会社の<u>利益</u>を<u>向上させる</u>ためにも、社員同士<u>友好な</u>関係を作って<u>支え合う</u>のが良いと思う。",
+  "japanese_text": "<u>率直</u>に言えば、会社の<u>規律</u>を守らない人が苦手だ。会社の<u>利益</u>を<u>向上</u>させるためにも、社員同士<u>友好な</u>関係を作って<u>支え合う</u>のが良いと思う。",
   "english_translation": "Frankly speaking, I don't like people who don't observe discipline in the workplace. In order to improve the company's profits, I think it's a good idea for employees to form friendly relationships and support each other.",
   "annotated_words": [
     {
@@ -47,13 +47,7 @@
       "kanji": "支え合う",
       "furigana": "ささえあう",
       "meaning_en": "support each other, give mutual support"
-    },
-    {
-      "word_id": "n2_2080",
-      "word_number": 2080,
-      "kanji": "支える",
-      "furigana": "ささえる",
-      "meaning_en": "support"
     }
-  ]
+  ],
+  "id": "297_1"
 }

@@ -1,32 +1,39 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "<ruby>先輩<rt>せんぱい</rt></ruby>の<ruby><u>送別会</u><rt>そうべつかい</rt></ruby>が、<ruby>高<rt>たか</rt></ruby>そうな<ruby><u>西洋</u><rt>せいよう</rt></ruby><ruby>料理店<rt>りょうりてん</rt></ruby>で<ruby>開<rt>ひら</rt></ruby>かれた。テーブルにたくさんの<ruby>食器<rt>しょっき</rt></ruby>と<u>ナプキン</u>が<ruby>置<rt>お</rt></ruby>かれていて、<ruby>見<rt>み</rt></ruby>るだけで<ruby>緊張<rt>きんちょう</rt></ruby>してしまった。<ruby>見<rt>み</rt></ruby>たことがない<u>ごちそう</u>だったが、<ruby>緊張<rt>きんちょう</rt></ruby>しすぎて<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>食<rt>た</rt></ruby>べられず、もったいなかった。",
+  "japanese_text": "<ruby>先輩<rt>せんぱい</rt></ruby>の<u><ruby>送別会<rt>そうべつかい</rt></ruby></u>が、<ruby>高<rt>たか</rt></ruby>そうな<u><ruby>西洋<rt>せいよう</rt></ruby></u><u><ruby>料理店<rt>りょうりてん</rt></ruby></u>で<ruby>開<rt>ひら</rt></ruby>かれた。テーブルにたくさんの<ruby>食器<rt>しょっき</rt></ruby>と<u>ナプキン</u>が<ruby>置<rt>お</rt></ruby>かれていて、<ruby>見<rt>み</rt></ruby>るだけで<ruby>緊張<rt>きんちょう</rt></ruby>してしまった。<ruby>見<rt>み</rt></ruby>たことがない<u>ごちそう</u>だったが、<ruby>緊張<rt>きんちょう</rt></ruby>しすぎて<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>食<rt>た</rt></ruby>べられず、もったいなかった。",
   "english_translation": "A farewell party for our senior was held at an expensive-looking Western-style restaurant. There were a lot of tableware and napkins on the table, and I got nervous just from looking at them. It was a feast like I had never seen before, but I was too nervous to eat everything, which was a waste.",
   "annotated_words": [
     {
-      "word_id": "n3_0044",
-      "word_number": 44,
+      "word_id": "n3_0070",
+      "word_number": 70,
       "kanji": "送別会",
       "furigana": "そうべつかい",
       "meaning_en": "farewell party"
     },
     {
-      "word_id": "n3_0045",
-      "word_number": 45,
+      "word_id": "n3_0071",
+      "word_number": 71,
       "kanji": "西洋",
       "furigana": "せいよう",
       "meaning_en": "Western"
     },
     {
-      "word_id": "n3_0046",
-      "word_number": 46,
+      "word_id": "n3_0072",
+      "word_number": 72,
+      "kanji": "～店",
+      "furigana": "てん",
+      "meaning_en": "~ store"
+    },
+    {
+      "word_id": "n3_0073",
+      "word_number": 73,
       "kanji": "ナプキン",
       "furigana": "",
       "meaning_en": "napkin"
     },
     {
-      "word_id": "n3_0047",
-      "word_number": 47,
+      "word_id": "n3_0074",
+      "word_number": 74,
       "kanji": "ごちそう",
       "furigana": "",
       "meaning_en": "feast"
@@ -34,5 +41,6 @@
   ],
   "story_number": 15,
   "is_story": true,
-  "page_story": "24_2"
+  "page_story": "24_2",
+  "id": "24_2"
 }

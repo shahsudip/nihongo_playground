@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 5,
   "title": "Topic 17",
-  "japanese_text": "先週、学校で球技大会が<u>開催された</u>。私のクラスは<u>結束</u>を固めてサッカーの試合に<u>挑んだ</u>。皆<u>粘り強く</u>頑張り、優勝することができた。特に３回もシュートを決めた渡辺さんは皆の<u>ヒーロー</u>になった。",
+  "japanese_text": "先週、学校で球技大会が<u>開催</u>された。私のクラスは<u>結束</u>を固めてサッカーの試合に挑んだ。皆粘り強く頑張り、優勝することができた。特に３回もシュートを決めた渡辺さんは皆の<u>ヒーロー</u>になった。",
   "english_translation": "Last week, a sports day was held at the school. My class was united and rose to the challenge of the soccer game. We all played tenaciously and won the game. In particular, Watanabe, who succeeded in three shots, became everyone’s hero.",
   "annotated_words": [
     {
@@ -20,32 +20,13 @@
       "meaning_en": "unity, unite"
     },
     {
-      "word_id": "n1_1364",
-      "word_number": 1364,
-      "kanji": "挑む",
-      "furigana": "いどむ",
-      "meaning_en": "meet a challenge, rise to a challenge"
-    },
-    {
-      "word_id": "n1_1365",
-      "word_number": 1365,
-      "kanji": "粘り強い",
-      "furigana": "ねばりづよい",
-      "meaning_en": "tenacious"
-    },
-    {
-      "word_id": "n1_1366",
-      "word_number": 1366,
-      "kanji": "粘る",
-      "furigana": "ねばる",
-      "meaning_en": "be sticky"
-    },
-    {
       "word_id": "n1_1367",
       "word_number": 1367,
       "kanji": "ヒーロー",
       "furigana": "ヒーロー",
       "meaning_en": "hero"
     }
-  ]
+  ],
+  "id": "196_2",
+  "page_story": "196_2"
 }

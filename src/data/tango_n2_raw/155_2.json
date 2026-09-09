@@ -3,7 +3,7 @@
   "story_number": 10,
   "title": "Topic 11 動物",
   "page_story": "155_2",
-  "japanese_text": "先週、牧場で牛の<u>乳</u>しぼりを体験した。その後、牧場で作られたヨーグルトを食べた。チーズケーキを<u>連想する</u>濃さで、<u>ほっぺた</u>が落ちそうなぐらいおいしかった。",
+  "japanese_text": "先週、牧場で牛の<u>乳</u>しぼりを体験した。その後、牧場で作られたヨーグルトを食べた。チーズケーキを<u>連想</u>する濃さで、ほっぺたが落ちそうなぐらいおいしかった。",
   "english_translation": "Last week, I tried milking a cow at a dairy farm. Afterwards, I ate yogurt made on the farm. It was so rich it reminded me of cheesecake, and it was so delicious that my cheeks almost fell off, as the Japanese expression goes.",
   "annotated_words": [
     {
@@ -19,13 +19,7 @@
       "kanji": "連想[する]",
       "furigana": "れんそう",
       "meaning_en": "association, remind of"
-    },
-    {
-      "word_id": "n2_0976",
-      "word_number": 976,
-      "kanji": "ほっぺ(た)",
-      "furigana": "",
-      "meaning_en": "cheeks"
     }
-  ]
+  ],
+  "id": "155_2"
 }

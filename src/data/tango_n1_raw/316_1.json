@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 5,
   "title": "Topic 24",
-  "japanese_text": "<u>国会</u>では、<u>議員</u>たちが新たな<u>法案</u>について激しく<u>審議</u>した。<u>野党</u>は<u>採決</u>を先延ばしにするよう求め、<u>与党</u>との対立が深まった。",
+  "japanese_text": "<u>国会</u>では、<u>議員</u>たちが新たな<u>法案</u>について激しく<u>審議</u>した。野党は<u>採決</u>を先延ばしにするよう求め、与党との対立が深まった。",
   "english_translation": "In the National Diet, members of parliament debated fiercely over a new bill. The opposition party demanded a delay in the vote, deepening the confrontation with the ruling party.",
   "annotated_words": [
     {
@@ -40,5 +40,7 @@
       "furigana": "さいけつ",
       "meaning_en": "vote, take a vote"
     }
-  ]
+  ],
+  "id": "316_1",
+  "page_story": "316_1"
 }

@@ -1,6 +1,6 @@
 {
   "title": "Topic 8",
-  "japanese_text": "<ruby>私<rt>わたし</rt></ruby>は<u>ランニング</u>が<ruby>苦手<rt>にがて</rt></ruby>だ。しかし<u>コーチ</u>が、ランニングの<ruby><u>効果</u><rt>こうか</rt></ruby>は<ruby>大<rt>おお</rt></ruby>きいと<ruby>言<rt>い</rt></ruby>ったので、<ruby>走<rt>はし</rt></ruby>り<ruby>続<rt>つづ</rt></ruby>けている。",
+  "japanese_text": "<ruby>私<rt>わたし</rt></ruby>は<u>ランニング</u>が<ruby>苦手<rt>にがて</rt></ruby>だ。しかし<u>コーチ</u>が、ランニングの<u><ruby>効果<rt>こうか</rt></ruby></u>は<ruby>大<rt>おお</rt></ruby>きいと<ruby>言<rt>い</rt></ruby>ったので、<ruby>走<rt>はし</rt></ruby>り<ruby>続<rt>つづ</rt></ruby>けている。",
   "english_translation": "I'm no good at running. But my coach said that my running results were significant, so I keep running.",
   "annotated_words": [
     {
@@ -27,5 +27,6 @@
   ],
   "story_number": 14,
   "is_story": true,
-  "page_story": "120_2"
+  "page_story": "120_2",
+  "id": "120_2"
 }

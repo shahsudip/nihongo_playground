@@ -1,6 +1,6 @@
 {
   "title": "Topic 2",
-  "japanese_text": "<ruby>古<rt>ふる</rt></ruby>くなった<u>タオル</u>は<ruby><u>雑巾</u><rt>ぞうきん</rt></ruby>にします。タオルをミシンで<ruby>縫<rt>ぬ</rt></ruby>ってもいいし、<ruby><u>針</u><rt>はり</rt></ruby>と<ruby>糸<rt>いと</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って<ruby>自分<rt>じぶん</rt></ruby>で<ruby>縫<rt>ぬ</rt></ruby>ってもいいです。雑巾は、<ruby>床<rt>ゆか</rt></ruby>を<ruby>拭<rt>ふ</rt></ruby>くときなどに<ruby>使<rt>つか</rt></ruby>うことができます。",
+  "japanese_text": "<ruby>古<rt>ふる</rt></ruby>くなった<u>タオル</u>は<u><ruby>雑巾<rt>ぞうきん</rt></ruby></u>にします。タオルをミシンで<ruby>縫<rt>ぬ</rt></ruby>ってもいいし、<u><ruby>針<rt>はり</rt></ruby></u>と<ruby>糸<rt>いと</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って<ruby>自分<rt>じぶん</rt></ruby>で<ruby>縫<rt>ぬ</rt></ruby>ってもいいです。雑巾は、<ruby>床<rt>ゆか</rt></ruby>を<ruby>拭<rt>ふ</rt></ruby>くときなどに<ruby>使<rt>つか</rt></ruby>うことができます。",
   "english_translation": "I use old towels as rags. You can sew the towels with a sewing machine, or you can sew them by yourself using a needle and thread. These rags can be used to wipe the floor.",
   "annotated_words": [
     {
@@ -27,5 +27,6 @@
   ],
   "story_number": 9,
   "is_story": true,
-  "page_story": "40_1"
+  "page_story": "40_1",
+  "id": "40_1"
 }

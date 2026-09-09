@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 20,
   "title": "Topic 5",
-  "japanese_text": "Ｍ社は、画面が<u>ひび割れした</u>際に<u>自己</u> <u>修復</u>が可能なスマホの<u>特許</u>を取得したそうだ。",
+  "japanese_text": "Ｍ社は、画面が<u>ひび割れ</u>した際に<u>自己</u> <u>修復</u>が可能なスマホの<u>特許</u>を取得したそうだ。",
   "english_translation": "Company M has acquired a patent for its smartphone that can repair itself if the screen cracks.",
   "annotated_words": [
     {
@@ -33,5 +33,7 @@
       "furigana": "とっきょ",
       "meaning_en": "patent"
     }
-  ]
+  ],
+  "id": "61_1",
+  "page_story": "61_1"
 }

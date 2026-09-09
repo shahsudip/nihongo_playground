@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 3,
   "title": "Topic 4",
-  "japanese_text": "Ａ：その桜の浴衣、<u>淡い</u>ピンク色できれいだね。\nＢ：ありがとう。<u>一目ぼれして</u>買ったんだ。桜が散っているデザインって、ちょっと<u>儚い</u>感じがするよね。",
+  "japanese_text": "Ａ：その桜の浴衣、<u>淡い</u>ピンク色できれいだね。\nＢ：ありがとう。<u>一目ぼれ</u>して買ったんだ。桜が散っているデザインって、ちょっと<u>儚い</u>感じがするよね。",
   "english_translation": "A: That cherry blossom yukata is so beautiful in pale pink.\nB: Thank you. I fell in love with it at first sight, so I bought it. The scattered cherry blossom design feels a bit wistful, doesn't it?",
   "annotated_words": [
     {
@@ -26,5 +26,7 @@
       "furigana": "はかない",
       "meaning_en": "forlorn, wistful"
     }
-  ]
+  ],
+  "id": "42_2",
+  "page_story": "42_2"
 }

@@ -1,6 +1,6 @@
 {
   "title": "Topic 2",
-  "japanese_text": "<ruby><u>掃除用具</u><rt>そうじようぐ</rt></ruby>はまとめて<ruby><u>洗面所</u><rt>せんめんじょ</rt></ruby>に<ruby>置<rt>お</rt></ruby>いてあります。",
+  "japanese_text": "<u><ruby>掃除用具<rt>そうじようぐ</rt></ruby></u>はまとめて<u><ruby>洗面所<rt>せんめんじょ</rt></ruby></u>に<ruby>置<rt>お</rt></ruby>いてあります。",
   "english_translation": "Cleaning equipment is all stored together in the washroom.",
   "annotated_words": [
     {
@@ -20,5 +20,6 @@
   ],
   "story_number": 8,
   "is_story": true,
-  "page_story": "39_2"
+  "page_story": "39_2",
+  "id": "39_2"
 }

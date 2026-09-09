@@ -3,7 +3,7 @@
   "story_number": 6,
   "title": "Topic 16 学校",
   "page_story": "217_1",
-  "japanese_text": "私が<u>在学する</u>大学は、<u>諸</u>外国の文化の研究に力を入れていて、多くの工芸品が<u>展示されて</u>いる。<u>修了生</u>の中には、その国で研究を続けている人もいる。",
+  "japanese_text": "私が<u>在学</u>する大学は、諸外国の文化の研究に力を入れていて、多くの工芸品が<u>展示</u>されている。<u>修了生</u>の中には、その国で研究を続けている人もいる。",
   "english_translation": "The university where I'm enrolled is committed to the study of foreign cultures and has artifacts from various countries on display. Some graduates even go on to continue their studies in those countries.",
   "annotated_words": [
     {
@@ -12,13 +12,6 @@
       "kanji": "在学[する]",
       "furigana": "ざいがく",
       "meaning_en": "enrolment, enrol (to study)"
-    },
-    {
-      "word_id": "n2_1455",
-      "word_number": 1455,
-      "kanji": "諸〜",
-      "furigana": "しょ",
-      "meaning_en": "many ~, various ~"
     },
     {
       "word_id": "n2_1456",
@@ -34,5 +27,6 @@
       "furigana": "しゅうりょうせい",
       "meaning_en": "graduate"
     }
-  ]
+  ],
+  "id": "217_1"
 }

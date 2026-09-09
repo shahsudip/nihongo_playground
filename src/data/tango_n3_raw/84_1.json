@@ -1,6 +1,6 @@
 {
   "title": "Topic 5",
-  "japanese_text": "<ruby>Ａ：<u>ウェブサイト</u>の<rt></rt></ruby><ruby><u>広告</u><rt>こうこく</rt></ruby><ruby>って<rt></rt></ruby><ruby>本当<rt>ほんとう</rt></ruby><ruby>に<rt></rt></ruby><ruby>嫌<rt>きら</rt></ruby><ruby>い。なんか<rt></rt></ruby><ruby>画面<rt>がめん</rt></ruby><ruby>の<u>あちこち</u>に<rt></rt></ruby><ruby>出<rt>で</rt></ruby><ruby>てきて、うっかり<u>クリック</u>しそうになる。<rt></rt></ruby>\n<ruby>Ｂ：そういう<rt></rt></ruby><ruby><u>工夫</u><rt>くふう</rt></ruby><ruby>はしてほしくないよね。<rt></rt></ruby>",
+  "japanese_text": "<u><ruby>Ａ：ウェブサイトの<rt></rt></ruby></u><u><ruby>広告<rt>こうこく</rt></ruby></u><ruby>って<rt></rt></ruby><ruby>本当<rt>ほんとう</rt></ruby><ruby>に<rt></rt></ruby><ruby>嫌<rt>きら</rt></ruby><ruby>い。なんか<rt></rt></ruby><ruby>画面<rt>がめん</rt></ruby><u><ruby>のあちこちに<rt></rt></ruby></u><ruby>出<rt>で</rt></ruby><u><ruby>てきて、うっかりクリックしそうになる。<rt></rt></ruby></u>\n<ruby>Ｂ：そういう<rt></rt></ruby><u><ruby>工夫<rt>くふう</rt></ruby></u><ruby>はしてほしくないよね。<rt></rt></ruby>",
   "english_translation": "A: I really hate advertisements on websites. They just pop up all over the screen, and I always almost carelessly click on them.\nB: I wish they wouldn't design them like that.",
   "annotated_words": [
     {
@@ -41,5 +41,6 @@
   ],
   "story_number": 20,
   "is_story": true,
-  "page_story": "84_1"
+  "page_story": "84_1",
+  "id": "84_1"
 }

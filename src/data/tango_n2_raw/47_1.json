@@ -3,7 +3,7 @@
   "story_number": 6,
   "title": "Topic 3 買い物",
   "page_story": "47_1",
-  "japanese_text": "A：国内ではまだ<u>販売されて</u>いない、海外の商品が購入できるサイトって知らない？\nB：えっと、<u>評価</u>が高いのはKAIGAI MALLかな。でも、<u>為替レート</u>によって値段が変わりやすいし、<u>関税</u>がかかったりするんだよね。あと<u>発送</u>が遅いかも。",
+  "japanese_text": "A：国内ではまだ<u>販売</u>されていない、海外の商品が購入できるサイトって知らない？\nB：えっと、<u>評価</u>が高いのはKAIGAI MALLかな。でも、<u>為替レート</u>によって値段が変わりやすいし、<u>関税</u>がかかったりするんだよね。あと<u>発送</u>が遅いかも。",
   "english_translation": "A: Do you know any websites where you can buy overseas products not yet on sale in Japan? B: Well, I think Kaigai Mall is the most highly rated. But prices tend to change depending on the exchange rate, and there are Customs charges too. Also, shipping might be slow.",
   "annotated_words": [
     {
@@ -41,5 +41,6 @@
       "furigana": "はっそう",
       "meaning_en": "shipping, deliver"
     }
-  ]
+  ],
+  "id": "47_1"
 }

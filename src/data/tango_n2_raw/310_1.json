@@ -3,7 +3,7 @@
   "story_number": 6,
   "title": "Topic 22 政治",
   "page_story": "310_1",
-  "japanese_text": "衆議院<u>解散</u>の前に実施された国民への意識調査では、自由民主党が現在最も<u>支持されて</u>いるという結果が出たと<u>報道された</u>。",
+  "japanese_text": "衆議院<u>解散</u>の前に実施された国民への意識調査では、自由民主党が現在最も<u>支持</u>されているという結果が出たと<u>報道</u>された。",
   "english_translation": "It has been reported that a survey of public attitudes conducted prior to the dissolution of the House of Representatives showed that the Liberal Democratic Party currently enjoys the most support.",
   "annotated_words": [
     {
@@ -21,18 +21,12 @@
       "meaning_en": "support, support"
     },
     {
-      "word_id": "n2_2180",
-      "word_number": 2180,
-      "kanji": "支持率",
-      "furigana": "しじりつ",
-      "meaning_en": "support rate"
-    },
-    {
       "word_id": "n2_2181",
       "word_number": 2181,
       "kanji": "報道[する]",
       "furigana": "ほうどう",
       "meaning_en": "reporting, report"
     }
-  ]
+  ],
+  "id": "310_1"
 }

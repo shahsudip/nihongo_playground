@@ -1,7 +1,7 @@
 {
   "title": "Topic 6 流行",
   "audio_id": "109",
-  "japanese_text": "A：私の好きな漫画家のＳＮＳが、「<u>公式</u>」って書いてあるのに、本人じゃなかったんだー。<u>だまされた</u>気分。\nB：それは仕方ないね。漫画家がＳＮＳやるの大変らしいよ。「私の好きなキャラクターを活躍させてください」って<u>リクエストする</u>人もいるし。\nA：えー。<u>ずうずうしい</u>人がいるんだね。",
+  "japanese_text": "A：私の好きな漫画家のＳＮＳが、「<u>公式</u>」って書いてあるのに、本人じゃなかったんだー。だまされた気分。\nB：それは仕方ないね。漫画家がＳＮＳやるの大変らしいよ。「私の好きなキャラクターを活躍させてください」って<u>リクエスト</u>する人もいるし。\nA：えー。<u>ずうずうしい</u>人がいるんだね。",
   "page_story": "96_1",
   "english_translation": "A: My favorite manga cartoonist's social media site says \"Official\" but it's not actually him! I feel cheated. B: But what can you do? It's not easy for cartoonists to be on social media. People make requests to put in their own favorite characters. A: Really? Some people are shameless.",
   "annotated_words": [
@@ -11,13 +11,6 @@
       "kanji": "公式",
       "furigana": "こうしき",
       "meaning_en": "official"
-    },
-    {
-      "word_id": "n2_0557",
-      "word_number": 557,
-      "kanji": "だます",
-      "furigana": "だます",
-      "meaning_en": "cheat, deceive"
     },
     {
       "word_id": "n2_0558",
@@ -34,5 +27,6 @@
       "meaning_en": "brazen, shameless"
     }
   ],
-  "is_story": true
+  "is_story": true,
+  "id": "96_1"
 }

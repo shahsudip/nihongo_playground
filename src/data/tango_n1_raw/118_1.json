@@ -1,8 +1,8 @@
 {
-  "is_story": false,
+  "is_story": true,
   "story_number": 29,
   "title": "Topic 9",
-  "japanese_text": "A：Cさん、最近<u>顔つき</u>が変わったよね。今までは怒ってるような厳しい顔つきだったけど、<u>温和に</u>なったというか。\nB：そりゃそうだよ。この前子どもさんが生まれたらしいから。\nA：あ、だから<u>定時に</u>なると<u>いそいそと</u>帰っていくのか。",
+  "japanese_text": "A：Cさん、最近<u>顔つき</u>が変わったよね。今までは怒ってるような厳しい顔つきだったけど、<u>温和</u>になったというか。\nB：そりゃそうだよ。この前子どもさんが生まれたらしいから。\nA：あ、だから<u>定時</u>になるといそいそと帰っていくのか。",
   "english_translation": "A: Mr. C's expression has changed recently, hasn't it? He used to look angry and stern, but he's become more gentle-natured. B: Oh, yes. I heard he recently had a baby. A: So that's why he leaves so eagerly at the regular time.",
   "annotated_words": [
     {
@@ -25,13 +25,8 @@
       "kanji": "定時",
       "furigana": "ていじ",
       "meaning_en": "regular time, set time"
-    },
-    {
-      "word_id": "n1_0765",
-      "word_number": 765,
-      "kanji": "いそいそ(と)",
-      "furigana": "いそいそと",
-      "meaning_en": "eagerly, joyously"
     }
-  ]
+  ],
+  "id": "118_1",
+  "page_story": "118_1"
 }

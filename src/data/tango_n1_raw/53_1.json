@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 4,
   "title": "Topic 5",
-  "japanese_text": "アンケートアプリを使って<u>フォーム</u>を作成し、データを<u>フィルター</u>処理して<u>分割する</u>ことで、効率的なデータ処理が実現できる。",
+  "japanese_text": "アンケートアプリを使って<u>フォーム</u>を作成し、データを<u>フィルター</u>処理して<u>分割</u>することで、効率的なデータ処理が実現できる。",
   "english_translation": "Using a survey app, you can create forms, filter and divide data, and process data efficiently.",
   "annotated_words": [
     {
@@ -26,5 +26,7 @@
       "furigana": "ぶんかつ",
       "meaning_en": "segment, divide"
     }
-  ]
+  ],
+  "id": "53_1",
+  "page_story": "53_1"
 }

@@ -1,6 +1,6 @@
 {
   "title": "Topic 5",
-  "japanese_text": "<ruby>紙<rt>かみ</rt></ruby><ruby>の<u>アルバム</u>の<rt></rt></ruby><ruby>中<rt>なか</rt></ruby><ruby>の<rt></rt></ruby><ruby>写真<rt>しゃしん</rt></ruby><ruby>を<u>スキャン</u>して、インターネットに<rt></rt></ruby><ruby>移<rt>うつ</rt></ruby><ruby>した。<rt></rt></ruby>",
+  "japanese_text": "<ruby>紙<rt>かみ</rt></ruby><u><ruby>のアルバムの<rt></rt></ruby></u><ruby>中<rt>なか</rt></ruby><ruby>の<rt></rt></ruby><ruby>写真<rt>しゃしん</rt></ruby><u><ruby>をスキャンして、インターネットに<rt></rt></ruby></u><ruby>移<rt>うつ</rt></ruby><ruby>した。<rt></rt></ruby>",
   "english_translation": "I scanned the pictures in my paper album and transferred them to the internet.",
   "annotated_words": [
     {
@@ -20,5 +20,6 @@
   ],
   "story_number": 29,
   "is_story": true,
-  "page_story": "88_2"
+  "page_story": "88_2",
+  "id": "88_2"
 }

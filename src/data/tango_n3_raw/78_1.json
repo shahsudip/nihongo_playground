@@ -1,6 +1,6 @@
 {
   "title": "Topic 5",
-  "japanese_text": "<ruby>Ａ：あ、ごめん、もう<rt></rt></ruby><ruby><u>充電</u><rt>じゅうでん</rt></ruby><ruby>切<rt>き</rt></ruby><ruby>れそう。<rt></rt></ruby>\n<ruby>Ｂ：え、まだお<rt></rt></ruby><ruby>昼<rt>ひる</rt></ruby><ruby>だよ。そんなことある？<rt></rt></ruby>\n<ruby>Ａ：いやー、<rt></rt></ruby><ruby>夜<rt>よる</rt></ruby><ruby>に<rt></rt></ruby><ruby>充電<rt>じゅうでん</rt></ruby><ruby>したつもりだったんだけど、<u>コンセント</u>から<u>ケーブル</u>が<rt></rt></ruby><ruby>抜<rt>ぬ</rt></ruby><ruby>けてて。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：あ、ごめん、もう<rt></rt></ruby><u><ruby>充電<rt>じゅうでん</rt></ruby></u><ruby>切<rt>き</rt></ruby><ruby>れそう。<rt></rt></ruby>\n<ruby>Ｂ：え、まだお<rt></rt></ruby><ruby>昼<rt>ひる</rt></ruby><ruby>だよ。そんなことある？<rt></rt></ruby>\n<ruby>Ａ：いやー、<rt></rt></ruby><ruby>夜<rt>よる</rt></ruby><ruby>に<rt></rt></ruby><ruby>充電<rt>じゅうでん</rt></ruby><u><u><ruby>したつもりだったんだけど、コンセントからケーブルが<rt></rt></ru</u>by></u><ruby>抜<rt>ぬ</rt></ruby><ruby>けてて。<rt></rt></ruby>",
   "english_translation": "A: Oh, I'm sorry, it looks like my battery is already about to run out.\nB: What? But it's only the afternoon. How is that possible?\nA: I meant to charge it (last) night, but the plug came out of the outlet.",
   "annotated_words": [
     {
@@ -27,5 +27,6 @@
   ],
   "story_number": 9,
   "is_story": true,
-  "page_story": "78_1"
+  "page_story": "78_1",
+  "id": "78_1"
 }

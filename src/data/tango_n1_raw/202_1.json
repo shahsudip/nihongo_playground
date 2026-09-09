@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 13,
   "title": "Topic 17",
-  "japanese_text": "今年の<u>合唱</u>コンクールで、私はクラスの<u>指揮者</u>に<u>立候補し</u>、見事に選ばれた。歌が苦手なクラスメートと<u>根気</u>強く<u>個別</u>練習もした。明日はクラス全体で<u>団結して</u>本番に<u>臨みたい</u>。",
+  "japanese_text": "今年の<u>合唱</u>コンクールで、私はクラスの<u>指揮者</u>に<u>立候補</u>し、見事に選ばれた。歌が苦手なクラスメートと<u>根気</u>強く<u>個別</u>練習もした。明日はクラス全体で<u>団結</u>して本番に臨みたい。",
   "english_translation": "At this year’s choir competition, I ran for class conductor and was chosen easily. I showed perseverance in individual practice with my classmates who were not as good at singing. Tomorrow, I hope to unite the whole class and face this performance together.",
   "annotated_words": [
     {
@@ -18,13 +18,6 @@
       "kanji": "指揮者",
       "furigana": "しきしゃ",
       "meaning_en": "conductor"
-    },
-    {
-      "word_id": "n1_1402",
-      "word_number": 1402,
-      "kanji": "指揮",
-      "furigana": "しき",
-      "meaning_en": "conducting, conduct"
     },
     {
       "word_id": "n1_1403",
@@ -53,13 +46,8 @@
       "kanji": "団結",
       "furigana": "だんけつ",
       "meaning_en": "unity, unite"
-    },
-    {
-      "word_id": "n1_1407",
-      "word_number": 1407,
-      "kanji": "臨む",
-      "furigana": "のぞむ",
-      "meaning_en": "confront, face"
     }
-  ]
+  ],
+  "id": "202_1",
+  "page_story": "202_1"
 }

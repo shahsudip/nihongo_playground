@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 5,
   "title": "Topic 5",
-  "japanese_text": "A社では新たなCPUの開発に当たり、従来の<u>規格</u>を<u>改良した</u>ことで、<u>回路</u>間を<u>またぐ</u> <u>干渉</u>を防ぐことが可能となり、<u>画期的な</u> <u>仕様</u>を実現した。",
+  "japanese_text": "A社では新たなCPUの開発に当たり、従来の<u>規格</u>を<u>改良</u>したことで、<u>回路</u>間を<u>またぐ</u> <u>干渉</u>を防ぐことが可能となり、<u>画期的な</u> <u>仕様</u>を実現した。",
   "english_translation": "In developing its new CPU, Company A improved on the previous standard, enabling prevention of interference crossing circuits and achieving a revolutionary new design.",
   "annotated_words": [
     {
@@ -54,5 +54,7 @@
       "furigana": "しよう",
       "meaning_en": "design, specification"
     }
-  ]
+  ],
+  "id": "53_2",
+  "page_story": "53_2"
 }

@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 5,
   "title": "Topic 7",
-  "japanese_text": "定年退職をしてから<u>いたずらに</u>時を過ごしていたが、最近、友人の勧めで<u>手芸</u>を始めた。主に<u>ポーチ</u>などの<u>雑貨</u>を作っているのだが、何かを<u>創造する</u>というのは本当に楽しいことだ。",
+  "japanese_text": "定年退職をしてから<u>いたずらに</u>時を過ごしていたが、最近、友人の勧めで<u>手芸</u>を始めた。主に<u>ポーチ</u>などの<u>雑貨</u>を作っているのだが、何かを<u>創造</u>するというのは本当に楽しいことだ。",
   "english_translation": "I'd been spending my time aimlessly since I retired, but recently, at a friend's suggestion, I started doing handicrafts. I mainly make pouches and other miscellaneous items. Creating things is really fun.",
   "annotated_words": [
     {
@@ -40,5 +40,7 @@
       "furigana": "そうぞう",
       "meaning_en": "creation, create"
     }
-  ]
+  ],
+  "id": "84_2",
+  "page_story": "84_2"
 }

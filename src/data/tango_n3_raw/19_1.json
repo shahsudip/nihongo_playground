@@ -1,17 +1,39 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "A：あ、その<ruby>肉<rt>にく</rt></ruby>、<ruby>早<rt>はや</rt></ruby>くひっくり<ruby>返<rt>かえ</rt></ruby>すして。これもこれも。<br>B：うわ、<ruby>肉<rt>にく</rt></ruby>が<ruby>燃<rt>も</rt></ruby>えた！　どうしよう！<br>A：あー、そういうときは、この<ruby><u>氷</u><rt>こおり</rt></ruby>を<ruby>網<rt>あみ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>せればいいんだ。<ruby>網<rt>あみ</rt></ruby>が<ruby>汚<rt>よご</rt></ruby>れちゃったね。<ruby>取<rt>と</rt></ruby>り<ruby>替<rt>か</rt></ruby>えてもらおう。",
+  "japanese_text": "A：あ、その<ruby>肉<rt>にく</rt></ruby>、<ruby>早<rt>はや</rt></ruby>く<u>ひっくり<ruby>返<rt>かえ</rt></ruby>す</u>して。これもこれも。<br>B：うわ、<ruby>肉<rt>にく</rt></ruby>が<u><ruby>燃<rt>も</rt></ruby>えた</u>！　どうしよう！<br>A：あー、そういうときは、この<u><ruby>氷<rt>こおり</rt></ruby></u>を<ruby>網<rt>あみ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>せればいいんだ。<ruby>網<rt>あみ</rt></ruby>が<ruby>汚<rt>よご</rt></ruby>れちゃったね。<u><ruby>取<rt>と</rt></ruby>り<ruby>替<rt>か</rt></ruby>えて</u>もらおう。",
   "english_translation": "A: Oh, that meat, hurry up and turn it over. This one and this one too. B: Wow, the meat burned! What should I do! A: Ah, in that case, just put this ice on the net. The net got dirty. Let's have it replaced.",
   "annotated_words": [
     {
-      "word_id": "n3_0021",
-      "word_number": 21,
+      "word_id": "n3_0034",
+      "word_number": 34,
+      "kanji": "ひっくり返す",
+      "furigana": "ひっくりかえす",
+      "meaning_en": "turn over"
+    },
+    {
+      "word_id": "n3_0035",
+      "word_number": 35,
+      "kanji": "燃える",
+      "furigana": "もえる",
+      "meaning_en": "burn, be burned"
+    },
+    {
+      "word_id": "n3_0036",
+      "word_number": 36,
       "kanji": "氷",
       "furigana": "こおり",
       "meaning_en": "ice"
+    },
+    {
+      "word_id": "n3_0037",
+      "word_number": 37,
+      "kanji": "取り替える",
+      "furigana": "とりかえる",
+      "meaning_en": "replace"
     }
   ],
   "story_number": 6,
   "is_story": true,
-  "page_story": "19_1"
+  "page_story": "19_1",
+  "id": "19_1"
 }

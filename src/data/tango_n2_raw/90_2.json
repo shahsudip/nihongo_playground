@@ -1,7 +1,7 @@
 {
   "title": "Topic 6 流行",
   "audio_id": "101",
-  "japanese_text": "元<u>刑事</u>が<u>殺人</u>をしたと言って警察にやってきた。そんなシーンから始まるこの小説は、当初、<u>批評</u>家の評価は高くなかった。しかし、読者の人気は高く、映画やドラマが<u>制作された</u>。",
+  "japanese_text": "元<u>刑事</u>が<u>殺人</u>をしたと言って警察にやってきた。そんなシーンから始まるこの小説は、当初、<u>批評</u>家の評価は高くなかった。しかし、読者の人気は高く、映画やドラマが<u>制作</u>された。",
   "page_story": "90_2",
   "english_translation": "A former detective comes to the police, claiming to have committed a murder. The novel, which begins with this scene, was not well received by critics at first. But it was very popular with readers, and a movie and drama series were later produced.",
   "annotated_words": [
@@ -34,5 +34,6 @@
       "meaning_en": "production, produce"
     }
   ],
-  "is_story": true
+  "is_story": true,
+  "id": "90_2"
 }

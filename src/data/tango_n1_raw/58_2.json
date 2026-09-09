@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 15,
   "title": "Topic 5",
-  "japanese_text": "撮影道具や再生デバイスの進歩により、<u>繊細で</u> <u>鮮明な</u>画面表示ができるようになった。さらに、映像<u>圧縮</u>の技術を用いた<u>次世代</u>の放送サービスの実用化が進んでいる。",
+  "japanese_text": "撮影道具や再生デバイスの進歩により、<u>繊細</u>で <u>鮮明な</u>画面表示ができるようになった。さらに、映像<u>圧縮</u>の技術を用いた<u>次世代</u>の放送サービスの実用化が進んでいる。",
   "english_translation": "Advances in imaging and playback devices have enabled detailed, clear screen resolution. On top of that, the next generation of broadcasting services using video compression technology is being put into practical use.",
   "annotated_words": [
     {
@@ -33,5 +33,7 @@
       "furigana": "じせだい",
       "meaning_en": "next generation"
     }
-  ]
+  ],
+  "id": "58_2",
+  "page_story": "58_2"
 }

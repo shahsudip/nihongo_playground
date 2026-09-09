@@ -1,11 +1,25 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "<ruby>飲<rt>の</rt></ruby>み<ruby>会<rt>かい</rt></ruby>で、<ruby>割<rt>わ</rt></ruby>り<ruby>勘<rt>かん</rt></ruby>だったのに、<ruby>酔<rt>よ</rt></ruby>ってしまってお<ruby>金<rt>かね</rt></ruby>を<ruby>払<rt>はら</rt></ruby>わずに<ruby>帰<rt>かえ</rt></ruby>ってしまった。<ruby><u>翌日</u><rt>よくじつ</rt></ruby>、<ruby>注意<rt>ちゅうい</rt></ruby>されたのでお<ruby>金<rt>かね</rt></ruby>を<ruby>払<rt>はら</rt></ruby>った。",
+  "japanese_text": "<u><ruby>飲<rt>の</rt></ruby>み<ruby>会<rt>かい</rt></ruby></u>で、<u><ruby>割<rt>わ</rt></ruby>り<ruby>勘<rt>かん</rt></ruby></u>だったのに、<ruby>酔<rt>よ</rt></ruby>ってしまってお<ruby>金<rt>かね</rt></ruby>を<ruby>払<rt>はら</rt></ruby>わずに<ruby>帰<rt>かえ</rt></ruby>ってしまった。<u><ruby>翌日<rt>よくじつ</rt></ruby></u>、<ruby>注意<rt>ちゅうい</rt></ruby>されたのでお<ruby>金<rt>かね</rt></ruby>を<ruby>払<rt>はら</rt></ruby>った。",
   "english_translation": "At the drinking party, we split the bill, but I got drunk and went home without paying. The next day, they cautioned me, and I paid.",
   "annotated_words": [
     {
-      "word_id": "n3_0050",
-      "word_number": 50,
+      "word_id": "n3_0079",
+      "word_number": 79,
+      "kanji": "飲み会",
+      "furigana": "のみかい",
+      "meaning_en": "drinking party"
+    },
+    {
+      "word_id": "n3_0080",
+      "word_number": 80,
+      "kanji": "割り勘[する]",
+      "furigana": "わりかん",
+      "meaning_en": "splitting the bill, split the bill"
+    },
+    {
+      "word_id": "n3_0081",
+      "word_number": 81,
       "kanji": "翌日",
       "furigana": "よくじつ",
       "meaning_en": "next day"
@@ -13,5 +27,6 @@
   ],
   "story_number": 17,
   "is_story": true,
-  "page_story": "26_1"
+  "page_story": "26_1",
+  "id": "26_1"
 }

@@ -1,8 +1,8 @@
 {
-  "is_story": false,
+  "is_story": true,
   "story_number": 18,
   "title": "Topic 9",
-  "japanese_text": "A：私がBさんだけに話したあのこと、この前の飲み会でみんなに話したそうですね。<u>プライベートな</u>ことまで言うなんて…。<u>侮辱して</u>ますよ。\nB：<u>面目</u>ない。かなり酔ってて記憶も<u>あやふやな</u>んだ…。酔って話すなんて<u>軽率だった</u>と思う。本当にごめん。",
+  "japanese_text": "A：私がBさんだけに話したあのこと、この前の飲み会でみんなに話したそうですね。<u>プライベートな</u>ことまで言うなんて…。<u>侮辱</u>してますよ。\nB：<u>面目</u>ない。かなり酔ってて記憶も<u>あやふやな</u>んだ…。酔って話すなんて<u>軽率</u>だったと思う。本当にごめん。",
   "english_translation": "A: I heard that you told everyone at the drinking party the other day about that thing I only told you. I can't believe you'd talk about something so private... It's an insult. B: I have no excuse. I was pretty drunk and my memory is hazy... I think it was thoughtless of me to talk while drunk. I'm really sorry.",
   "annotated_words": [
     {
@@ -40,5 +40,7 @@
       "furigana": "けいそつな",
       "meaning_en": "thoughtless"
     }
-  ]
+  ],
+  "id": "110_2",
+  "page_story": "110_2"
 }

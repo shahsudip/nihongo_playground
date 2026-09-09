@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 5,
   "title": "Topic 11",
-  "japanese_text": "バスケットボールでは、ゴールが外れたとき、先にボールに<u>接触するか</u>、<u>キャッチする</u>ことが重視される。有名な漫画にも「<u>リバウンド</u>を<u>制する</u>者は試合を制す」という言葉が出てくるほどだ。",
+  "japanese_text": "バスケットボールでは、ゴールが外れたとき、先にボールに<u>接触</u>するか、<u>キャッチ</u>することが重視される。有名な漫画にも「<u>リバウンド</u>を<u>制する</u>者は試合を制す」という言葉が出てくるほどだ。",
   "english_translation": "In basketball, the emphasis is on being the first to make contact with the ball or catch it when a goal is missed. There is even a famous saying that goes, \"The one who controls the rebound controls the game.\"",
   "annotated_words": [
     {
@@ -33,5 +33,7 @@
       "furigana": "せいする",
       "meaning_en": "control"
     }
-  ]
+  ],
+  "id": "130_1",
+  "page_story": "130_1"
 }

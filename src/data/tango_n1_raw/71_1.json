@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 10,
   "title": "Topic 6",
-  "japanese_text": "子どもの頃、「ドラえもん」が掲載されている<u>分厚い</u>月<u>刊</u>漫画雑誌が<u>刊行されて</u>いた。おもちゃの<u>付録</u>も魅力的だった。発売日には、お小遣いを<u>握り締めて</u>、本屋に走ったものだ。",
+  "japanese_text": "子どもの頃、「ドラえもん」が掲載されている<u>分厚い</u>月<u>刊</u>漫画雑誌が<u>刊行</u>されていた。おもちゃの<u>付録</u>も魅力的だった。発売日には、お小遣いを握り締めて、本屋に走ったものだ。",
   "english_translation": "When I was a child, there was a thick manga publication, released monthly, that featured the character Doraemon. The toy supplement was also very appealing to me. On the day it was released, I would run to the bookstore grasping my allowance in hand.",
   "annotated_words": [
     {
@@ -32,13 +32,8 @@
       "kanji": "付録",
       "furigana": "ふろく",
       "meaning_en": "supplement"
-    },
-    {
-      "word_id": "n1_0419",
-      "word_number": 419,
-      "kanji": "握り締める",
-      "furigana": "にぎりしめる",
-      "meaning_en": "grasp, squeeze"
     }
-  ]
+  ],
+  "id": "71_1",
+  "page_story": "71_1"
 }

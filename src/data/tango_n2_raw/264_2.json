@@ -3,7 +3,7 @@
   "story_number": 20,
   "title": "Topic 18 人生",
   "page_story": "264_2",
-  "japanese_text": "有名大学を卒業した後は、<u>大手</u>企業に<u>入社し</u>、同期の中で一番に<u>出世して</u>高<u>収入</u>を得る予定だった。<u>まあ</u>、<u>現実</u>はそんなに甘くない。",
+  "japanese_text": "有名大学を卒業した後は、<u>大手</u>企業に<u>入社</u>し、同期の中で一番に<u>出世</u>して高<u>収入</u>を得る予定だった。<u>まあ</u>、<u>現実</u>はそんなに甘くない。",
   "english_translation": "After graduating from a famous university, I planned to join a leading company, rise to the top among my colleagues, and earn a huge income. Well, reality is not so kind.",
   "annotated_words": [
     {
@@ -47,13 +47,7 @@
       "kanji": "現実",
       "furigana": "げんじつ",
       "meaning_en": "reality"
-    },
-    {
-      "word_id": "n2_1838",
-      "word_number": 1838,
-      "kanji": "現実的な",
-      "furigana": "げんじつてきな",
-      "meaning_en": "realistic"
     }
-  ]
+  ],
+  "id": "264_2"
 }

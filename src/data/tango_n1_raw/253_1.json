@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 22,
   "title": "Topic 19",
-  "japanese_text": "<u>戸籍</u>法には、子どもが生まれてから14日以内に<u>出生届</u>を出すことが定められている。出生届の提出を<u>放棄する</u>と、子どもは無戸籍になってしまう。",
+  "japanese_text": "<u>戸籍</u>法には、子どもが生まれてから14日以内に<u>出生届</u>を出すことが定められている。<u>出生</u>届の提出を<u>放棄</u>すると、子どもは無戸籍になってしまう。",
   "english_translation": "The Family Register Act of Japan stipulates that the birth registration of a child must be done within 14 days of birth. If the birth registration is waived, the child will lack a family register.",
   "annotated_words": [
     {
@@ -33,5 +33,7 @@
       "furigana": "ほうき",
       "meaning_en": "relinquishment, waive"
     }
-  ]
+  ],
+  "id": "253_1",
+  "page_story": "253_1"
 }

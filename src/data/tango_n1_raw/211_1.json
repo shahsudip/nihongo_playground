@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 26,
   "title": "Topic 17",
-  "japanese_text": "ランさんは<u>聴講生</u>として、私が３年<u>次</u>のときに一緒に少人数の授業を受けていた。ランさんは私と違って<u>模範的で</u> <u>勤勉な</u>学生なので、仲良くなれると思っていなかったが、今ではお互いに<u>本音</u>も言えて、<u>無言</u>でいても気まずくないような関係になることができた。",
+  "japanese_text": "ランさんは<u>聴講生</u>として、私が３年次のときに一緒に少人数の授業を受けていた。ランさんは私と違って<u>模範的</u>で <u>勤勉な</u>学生なので、仲良くなれると思っていなかったが、今ではお互いに<u>本音</u>も言えて、<u>無言</u>でいても気まずくないような関係になることができた。",
   "english_translation": "As an auditing student, Ms. Lan took some lightly-attended classes with me during my third year. Unlike me, Ms. Lan is an exemplary and diligent student, so I didn’t think we would get along, but now we can share what we really feel with each other, and our relationship is never awkward, even in moments of silence.",
   "annotated_words": [
     {
@@ -13,32 +13,11 @@
       "meaning_en": "auditing student"
     },
     {
-      "word_id": "n1_1464",
-      "word_number": 1464,
-      "kanji": "聴講",
-      "furigana": "ちょうこう",
-      "meaning_en": "attendance, attend (a lecture)"
-    },
-    {
-      "word_id": "n1_1465",
-      "word_number": 1465,
-      "kanji": "〜次",
-      "furigana": "じ",
-      "meaning_en": "~st, ~nd, ~rd, ~th (ordinal expressions)"
-    },
-    {
       "word_id": "n1_1466",
       "word_number": 1466,
       "kanji": "模範的な",
       "furigana": "もはんてきな",
       "meaning_en": "exemplary"
-    },
-    {
-      "word_id": "n1_1467",
-      "word_number": 1467,
-      "kanji": "模範",
-      "furigana": "もはん",
-      "meaning_en": "model, norm"
     },
     {
       "word_id": "n1_1468",
@@ -61,5 +40,7 @@
       "furigana": "むごん",
       "meaning_en": "silence"
     }
-  ]
+  ],
+  "id": "211_1",
+  "page_story": "211_1"
 }

@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 5,
   "title": "Topic 8",
-  "japanese_text": "英語のライティングテストがあり、国際関係<u>論</u>についての日本語の<u>エッセイ</u>を読んで、その<u>要旨</u>を英語で書くという問題が<u>出題された</u>。英語を<u>産出する</u>力がないので、<u>原文</u>の<u>ニュアンス</u>が伝わるように書けなかった。",
+  "japanese_text": "英語のライティングテストがあり、国際関係<u>論</u>についての日本語のエッセイを読んで、その<u>要旨</u>を英語で書くという問題が<u>出題</u>された。英語を<u>産出</u>する力がないので、<u>原文</u>の<u>ニュアンス</u>が伝わるように書けなかった。",
   "english_translation": "In an English writing test, I was set a task to read an essay in Japanese on international relations theory and write a summary of the essay in English. Since I lack the ability to output English properly, I was unable to convey the nuances of the original text.",
   "annotated_words": [
     {
@@ -11,13 +11,6 @@
       "kanji": "～論",
       "furigana": "ろん",
       "meaning_en": "~ theory, theory of ~"
-    },
-    {
-      "word_id": "n1_0601",
-      "word_number": 601,
-      "kanji": "エッセイ／エッセー",
-      "furigana": "エッセイ／エッセー",
-      "meaning_en": "essay"
     },
     {
       "word_id": "n1_0602",
@@ -54,5 +47,7 @@
       "furigana": "ニュアンス",
       "meaning_en": "nuance"
     }
-  ]
+  ],
+  "id": "95_1",
+  "page_story": "95_1"
 }

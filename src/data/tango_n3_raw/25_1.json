@@ -1,24 +1,39 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "<u>ガム</u>は、<ruby><u>栄養</u><rt>えいよう</rt></ruby>がほとんどないが、<ruby>虫歯<rt>むしば</rt></ruby>の<ruby>予防<rt>よぼう</rt></ruby>や<ruby>集中力<rt>しゅうちゅうりょく</rt></ruby>を<ruby>高<rt>たか</rt></ruby>める<ruby>効果<rt>こうか</rt></ruby>があり、<ruby>毎日<rt>まいにち</rt></ruby>かんでいる<ruby>人<rt>ひと</rt></ruby>も<ruby>多<rt>おお</rt></ruby>い。しかし、ポイ<ruby>捨<rt>す</rt></ruby>てが<ruby>問題<rt>もんだい</rt></ruby>になる。<ruby>外出<rt>がいしゅつ</rt></ruby>するときは、<ruby>包<rt>つつ</rt></ruby>み<ruby>紙<rt>がみ</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れないようにしたい。",
+  "japanese_text": "<u>ガム</u>は、<u><ruby>栄養<rt>えいよう</rt></ruby></u>がほとんどないが、<ruby>虫歯<rt>むしば</rt></ruby>の<ruby>予防<rt>よぼう</rt></ruby>や<ruby>集中力<rt>しゅうちゅうりょく</rt></ruby>を<ruby>高<rt>たか</rt></ruby>める<ruby>効果<rt>こうか</rt></ruby>があり、<ruby>毎日<rt>まいにち</rt></ruby>かんでいる<ruby>人<rt>ひと</rt></ruby>も<ruby>多<rt>おお</rt></ruby>い。しかし、<u>ポイ<ruby>捨<rt>す</rt></ruby>て</u>が<ruby>問題<rt>もんだい</rt></ruby>になる。<ruby>外出<rt>がいしゅつ</rt></ruby>するときは、<u><ruby>包<rt>つつ</rt></ruby>み<ruby>紙<rt>がみ</rt></ruby></u>を<ruby>忘<rt>わす</rt></ruby>れないようにしたい。",
   "english_translation": "Gum has little nutrition, but it has the effect of preventing cavities and increasing concentration, and many people chew it every day. However, littering is a problem. When going out, try not to forget to bring wrapping paper.",
   "annotated_words": [
     {
-      "word_id": "n3_0048",
-      "word_number": 48,
+      "word_id": "n3_0075",
+      "word_number": 75,
       "kanji": "ガム",
       "furigana": "",
       "meaning_en": "gum"
     },
     {
-      "word_id": "n3_0049",
-      "word_number": 49,
+      "word_id": "n3_0076",
+      "word_number": 76,
       "kanji": "栄養",
       "furigana": "えいよう",
       "meaning_en": "nutrition"
+    },
+    {
+      "word_id": "n3_0077",
+      "word_number": 77,
+      "kanji": "ポイ捨て[する]",
+      "furigana": "ポイすて",
+      "meaning_en": "littering, litter, toss away"
+    },
+    {
+      "word_id": "n3_0078",
+      "word_number": 78,
+      "kanji": "包み紙",
+      "furigana": "つつみがみ",
+      "meaning_en": "wrapping paper"
     }
   ],
   "story_number": 16,
   "is_story": true,
-  "page_story": "25_1"
+  "page_story": "25_1",
+  "id": "25_1"
 }

@@ -1,6 +1,6 @@
 {
   "title": "Topic 2",
-  "japanese_text": "<u>コインランドリー</u>は、<ruby>家<rt>いえ</rt></ruby>の<ruby>洗濯機<rt>せんたくき</rt></ruby>には<ruby>入<rt>はい</rt></ruby>らないような<ruby>大<rt>おお</rt></ruby>きな<u>カーペット</u>などを<ruby>洗<rt>あら</rt></ruby>ったり<ruby><u>乾燥</u><rt>かんそう</rt></ruby>させたりできるので、<ruby>大変<rt>たいへん</rt></ruby><ruby>便利<rt>べんり</rt></ruby>だ。<br><ruby><u>欠点</u><rt>けってん</rt></ruby>は、コインランドリーまで<ruby>大<rt>おお</rt></ruby>きなカーペットを<ruby>持<rt>も</rt></ruby>っていくのが<ruby>大変<rt>たいへん</rt></ruby>だということだ。",
+  "japanese_text": "<u>コインランドリー</u>は、<ruby>家<rt>いえ</rt></ruby>の<ruby>洗濯機<rt>せんたくき</rt></ruby>には<ruby>入<rt>はい</rt></ruby>らないような<ruby>大<rt>おお</rt></ruby>きな<u>カーペット</u>などを<ruby>洗<rt>あら</rt></ruby>ったり<u><ruby>乾燥<rt>かんそう</rt></ruby></u>させたりできるので、<ruby>大変<rt>たいへん</rt></ruby><ruby>便利<rt>べんり</rt></ruby>だ。<br><u><ruby>欠点<rt>けってん</rt></ruby></u>は、コインランドリーまで<ruby>大<rt>おお</rt></ruby>きなカーペットを<ruby>持<rt>も</rt></ruby>っていくのが<ruby>大変<rt>たいへん</rt></ruby>だということだ。",
   "english_translation": "Coin laundromats are very convenient because things like large carpets that can't fit in household washing machines can be washed or dried there. The disadvantage is that it's difficult to bring a large carpet all the way to the coin laundromat.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
   ],
   "story_number": 14,
   "is_story": true,
-  "page_story": "42_1"
+  "page_story": "42_1",
+  "id": "42_1"
 }

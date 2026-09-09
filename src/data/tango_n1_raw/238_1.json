@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 36,
   "title": "Topic 18",
-  "japanese_text": "A社は小さな町工場だが高い技術力を持つ会社だ。そのA社に新しくロケット部品の<u>試作</u>依頼が入った。A社の職人たちは何日も<u>夜更け</u>まで<u>労力</u>を惜しまず<u>開発</u>に取り組み、<u>滞りなく</u> <u>納期</u>までに試作品を完成させた。",
+  "japanese_text": "A社は小さな町工場だが高い技術力を持つ会社だ。そのA社に新しくロケット部品の<u>試作</u>依頼が入った。A社の職人たちは何日も<u>夜更け</u>まで<u>労力</u>を惜しまず<u>開発</u>に取り組み、<u>滞り</u>なく <u>納期</u>までに試作品を完成させた。",
   "english_translation": "Company A has a small factory in a small town, but it has strong technological capabilities. After receiving a request for a prototype of a new rocket component, its craftsmen worked until late at night to develop it, sparing no effort, completing the prototype without delaying the deadline.",
   "annotated_words": [
     {
@@ -47,5 +47,7 @@
       "furigana": "のうき",
       "meaning_en": "deadline"
     }
-  ]
+  ],
+  "id": "238_1",
+  "page_story": "238_1"
 }

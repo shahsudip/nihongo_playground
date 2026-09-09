@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 13,
   "title": "Topic 13",
-  "japanese_text": "A：<u>今更</u>だけど、この部屋、物が多くない？なんか<u>窮屈で</u> <u>圧迫感</u>があるよ。\nB：<u>収納</u>スペースが<u>極端に</u>狭くてさ。どうしても物が溢れちゃって。\nA：<u>言い分</u>は分かるけど、不要な物は<u>いっそ</u>処分した方がいいと思うよ。",
+  "japanese_text": "A：<u>今更</u>だけど、この部屋、物が多くない？なんか<u>窮屈</u>で <u>圧迫感</u>があるよ。\nB：<u>収納</u>スペースが<u>極端</u>に狭くてさ。どうしても物が溢れちゃって。\nA：<u>言い分</u>は分かるけど、不要な物は<u>いっそ</u>処分した方がいいと思うよ。",
   "english_translation": "A: I realize it's kind of late to mention it now, but don't you have too much stuff in this room? It's kind of cramped and feels oppressive. B: The storage space is extremely limited. Things just spill over. A: I understand your point, but wouldn't you rather just get rid of the things you don't need?",
   "annotated_words": [
     {
@@ -25,13 +25,6 @@
       "kanji": "圧迫感",
       "furigana": "あっぱくかん",
       "meaning_en": "oppressive feeling"
-    },
-    {
-      "word_id": "n1_1133",
-      "word_number": 1133,
-      "kanji": "圧迫",
-      "furigana": "あっぱく",
-      "meaning_en": "oppression, oppress"
     },
     {
       "word_id": "n1_1134",
@@ -61,5 +54,7 @@
       "furigana": "",
       "meaning_en": "rather"
     }
-  ]
+  ],
+  "id": "164_1",
+  "page_story": "164_1"
 }

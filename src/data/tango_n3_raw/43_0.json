@@ -1,6 +1,6 @@
 {
   "title": "Topic 2",
-  "japanese_text": "<ruby>私<rt>わたし</rt></ruby>の<ruby>得意<rt>とくい</rt></ruby>な<ruby>料理<rt>りょうり</rt></ruby>はステーキだ。<ruby><u>少々</u><rt>しょうしょう</rt></ruby><ruby>適当<rt>てきとう</rt></ruby>な<ruby>味付<rt>あじつ</rt></ruby>けでも、<ruby>硬<rt>かた</rt></ruby>くならないように<ruby>焼<rt>や</rt></ruby>けば<u>オーケー</u>だ。",
+  "japanese_text": "<ruby>私<rt>わたし</rt></ruby>の<ruby>得意<rt>とくい</rt></ruby>な<ruby>料理<rt>りょうり</rt></ruby>はステーキだ。<u><ruby>少々<rt>しょうしょう</rt></ruby></u><ruby>適当<rt>てきとう</rt></ruby>な<ruby>味付<rt>あじつ</rt></ruby>けでも、<ruby>硬<rt>かた</rt></ruby>くならないように<ruby>焼<rt>や</rt></ruby>けば<u>オーケー</u>だ。",
   "english_translation": "The dish I'm best at cooking is steak. Even with somewhat careless seasoning, it'll be okay so long as it's cooked so as not to be too tough.",
   "annotated_words": [
     {
@@ -20,5 +20,6 @@
   ],
   "story_number": 15,
   "is_story": true,
-  "page_story": "43_0"
+  "page_story": "43_0",
+  "id": "43_0"
 }

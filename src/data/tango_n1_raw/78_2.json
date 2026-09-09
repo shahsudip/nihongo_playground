@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 22,
   "title": "Topic 6",
-  "japanese_text": "時代を<u>象徴する</u>、<u>伝説</u>とよばれるようなアニメがある。それらの後には似たような<u>企画</u>の作品が次々と<u>出現する</u>ものだ。<u>模倣すれば</u>お金が儲かるという考えは<u>勘違い</u>も<u>甚だしい</u>。",
+  "japanese_text": "時代を<u>象徴する</u>、<u>伝説</u>とよばれるようなアニメがある。それらの後には似たような<u>企画</u>の作品が次々と<u>出現する</u>ものだ。<u>模倣</u>すればお金が儲かるという考えは<u>勘違い</u>も<u>甚だしい</u>。",
   "english_translation": "Some animated films come to symbolize an era and are considered legends. These are often followed by a succession of similar projects appearing. This idea that imitation is the right way to make money is a terrible mistake.",
   "annotated_words": [
     {
@@ -11,13 +11,6 @@
       "kanji": "象徴する",
       "furigana": "しょうちょう",
       "meaning_en": "symbol, symbolize"
-    },
-    {
-      "word_id": "n1_0475",
-      "word_number": 475,
-      "kanji": "象徴的な",
-      "furigana": "しょうちょうてき",
-      "meaning_en": "symbolic"
     },
     {
       "word_id": "n1_0476",
@@ -61,5 +54,7 @@
       "furigana": "はなはだ",
       "meaning_en": "excessive, terrible"
     }
-  ]
+  ],
+  "id": "78_2",
+  "page_story": "78_2"
 }

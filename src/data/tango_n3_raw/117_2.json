@@ -1,6 +1,6 @@
 {
   "title": "Topic 8",
-  "japanese_text": "オリンピックで<ruby><u>体操</u><rt>たいそう</rt></ruby>の<ruby>日本<u>代表</u><rt>にほんだいひょう</rt></ruby>が<ruby><u>金</u><rt>きん</rt></ruby>、<ruby><u>銀</u><rt>ぎん</rt></ruby>、<ruby>銅<rt>どう</rt></ruby>の<ruby>表彰台<rt>ひょうしょうだい</rt></ruby>を<ruby><u>独占</u><rt>どくせん</rt></ruby>した。",
+  "japanese_text": "オリンピックで<u><ruby>体操<rt>たいそう</rt></ruby></u>の<u><ruby>日本代表<rt>にほんだいひょう</rt></ruby></u>が<u><ruby>金<rt>きん</rt></ruby></u>、<u><ruby>銀<rt>ぎん</rt></ruby></u>、<ruby>銅<rt>どう</rt></ruby>の<ruby>表彰台<rt>ひょうしょうだい</rt></ruby>を<u><ruby>独占<rt>どくせん</rt></ruby></u>した。",
   "english_translation": "The Japanese national representative in gymnastics at the Olympics monopolized the gold, silver and bronze podium.",
   "annotated_words": [
     {
@@ -41,5 +41,6 @@
   ],
   "story_number": 8,
   "is_story": true,
-  "page_story": "117_2"
+  "page_story": "117_2",
+  "id": "117_2"
 }

@@ -1,6 +1,6 @@
 {
   "title": "Topic 7",
-  "japanese_text": "<ruby>友人<rt>ゆうじん</rt></ruby>が<ruby>中国<rt>ちゅうごく</rt></ruby>へ<ruby>帰<rt>かえ</rt></ruby>るので、<ruby>空港<rt>くうこう</rt></ruby>まで<ruby>見送<rt>みおく</rt></ruby>った。<ruby><u>後日</u><rt>ごじつ</rt></ruby>、<ruby>友人<rt>ゆうじん</rt></ruby>から<ruby><u>小包</u><rt>こづつみ</rt></ruby>が<ruby>届<rt>とど</rt></ruby>いた。<ruby><u>便箋</u><rt>びんせん</rt></ruby>には「お<ruby>世話<rt>せわ</rt></ruby>になりました。<u>どうか</u>お<ruby>元気<rt>げんき</rt></ruby>で」と<ruby>書<rt>か</rt></ruby>かれていた。",
+  "japanese_text": "<ruby>友人<rt>ゆうじん</rt></ruby>が<ruby>中国<rt>ちゅうごく</rt></ruby>へ<ruby>帰<rt>かえ</rt></ruby>るので、<ruby>空港<rt>くうこう</rt></ruby>まで<ruby>見送<rt>みおく</rt></ruby>った。<u><ruby>後日<rt>ごじつ</rt></ruby></u>、<ruby>友人<rt>ゆうじん</rt></ruby>から<u><ruby>小包<rt>こづつみ</rt></ruby></u>が<ruby>届<rt>とど</rt></ruby>いた。<u><ruby>便箋<rt>びんせん</rt></ruby></u>には「お<ruby>世話<rt>せわ</rt></ruby>になりました。<u>どうか</u>お<ruby>元気<rt>げんき</rt></ruby>で」と<ruby>書<rt>か</rt></ruby>かれていた。",
   "english_translation": "My friend returned to China, so I saw him off to the airport. Later, a package arrived from my friend. The letter on it read \"Thank you for looking after me. Please take care.\"",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
   ],
   "story_number": 2,
   "is_story": true,
-  "page_story": "106_2"
+  "page_story": "106_2",
+  "id": "106_2"
 }

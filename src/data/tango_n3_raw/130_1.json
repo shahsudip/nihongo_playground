@@ -1,6 +1,6 @@
 {
   "title": "Topic 9 動物 Animals",
-  "japanese_text": "A：あの<u>からす</u>、ずっとあの<u><ruby>枝<rt>えだ</rt></ruby></u>の<ruby>上<rt>うえ</rt></ruby>で<u>じっとして</u>いるね。<br>B：ははは、あれ<u><ruby>本物<rt>ほんもの</rt></ruby></u>じゃないよ。",
+  "japanese_text": "A：あの<u>からす</u>、ずっとあの<u><ruby>枝<rt>えだ</rt></ruby></u>の<ruby>上<rt>うえ</rt></ruby>で<u>じっと</u>しているね。<br>B：ははは、あれ<u><ruby>本物<rt>ほんもの</rt></ruby></u>じゃないよ。",
   "english_translation": "A: That crow has been sitting still on that branch for a while. B: Hahaha, it's not real.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
   ],
   "story_number": 5,
   "is_story": true,
-  "page_story": "130_1"
+  "page_story": "130_1",
+  "id": "130_1"
 }

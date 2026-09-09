@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 16,
   "title": "Topic 11",
-  "japanese_text": "国際パラリンピック委員会<u>公認</u>の『I'm POSSIBLE』という<u>教材</u>がある。これは、パラリンピックを通して人権の理解を深めることが<u>意図された</u>ものであり、クイズなどを<u>交え</u>ながら、<u>パラスポーツ</u>をバリアフリー、国際理解といったさまざまな<u>視点</u>から学ぶことができる。",
+  "japanese_text": "国際パラリンピック委員会<u>公認</u>の『I'm POSSIBLE』という<u>教材</u>がある。これは、パラリンピックを通して人権の理解を深めることが<u>意図</u>されたものであり、クイズなどを交えながら、<u>パラスポーツ</u>をバリアフリー、国際理解といったさまざまな<u>視点</u>から学ぶことができる。",
   "english_translation": "There is a teaching program called \"I'm POSSIBLE,\" which is officially approved by the International Paralympic Committee. It is intended to deepen understanding of human rights through the Paralympics, and through engaging in quizzes, students can learn about para-sports from various perspectives, such as barrier-free and international understanding viewpoints.",
   "annotated_words": [
     {
@@ -27,13 +27,6 @@
       "meaning_en": "intention, intend"
     },
     {
-      "word_id": "n1_0930",
-      "word_number": 930,
-      "kanji": "交える",
-      "furigana": "まじえる",
-      "meaning_en": "engage, exchange"
-    },
-    {
       "word_id": "n1_0931",
       "word_number": 931,
       "kanji": "パラスポーツ",
@@ -47,5 +40,7 @@
       "furigana": "してん",
       "meaning_en": "perspective"
     }
-  ]
+  ],
+  "id": "138_2",
+  "page_story": "138_2"
 }

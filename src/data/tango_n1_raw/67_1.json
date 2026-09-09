@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 4,
   "title": "Topic 6",
-  "japanese_text": "その悪役は、人間を<u>丸ごと</u> <u>滅ぼそう</u>とするようなことはせず、ただ自分のエゴを周りに<u>押し付けて</u>いるだけである。時にはいい人を<u>演じる</u>こともあるが、<u>冷酷に</u>他人や部下を殺す。そして、負けそうになるとすぐに逃げる<u>情けない</u>一面もある。しかし、その特徴が人気を生んだ。",
+  "japanese_text": "その悪役は、人間を<u>丸ごと</u> 滅ぼそうとするようなことはせず、ただ自分のエゴを周りに押し付けているだけである。時にはいい人を<u>演じる</u>こともあるが、<u>冷酷</u>に他人や部下を殺す。そして、負けそうになるとすぐに逃げる<u>情けない</u>一面もある。しかし、その特徴が人気を生んだ。",
   "english_translation": "This villain does not try to destroy the human race entirely, but only to impose his ego on those around him. Sometimes he plays the good guy, but he cruelly kills his underlings and others. And he also has a pathetic side, so he runs away as soon as he is about to lose. But these traits have made him popular.",
   "annotated_words": [
     {
@@ -11,27 +11,6 @@
       "kanji": "丸ごと",
       "furigana": "まるごと",
       "meaning_en": "entirely"
-    },
-    {
-      "word_id": "n1_0385",
-      "word_number": 385,
-      "kanji": "滅ぼす",
-      "furigana": "ほろぼす",
-      "meaning_en": "destroy"
-    },
-    {
-      "word_id": "n1_0386",
-      "word_number": 386,
-      "kanji": "滅びる",
-      "furigana": "ほろびる",
-      "meaning_en": "be destroyed, die out"
-    },
-    {
-      "word_id": "n1_0387",
-      "word_number": 387,
-      "kanji": "押し付ける",
-      "furigana": "おしつける",
-      "meaning_en": "impose"
     },
     {
       "word_id": "n1_0388",
@@ -54,5 +33,7 @@
       "furigana": "なさけない",
       "meaning_en": "pathetic, wretched"
     }
-  ]
+  ],
+  "id": "67_1",
+  "page_story": "67_1"
 }

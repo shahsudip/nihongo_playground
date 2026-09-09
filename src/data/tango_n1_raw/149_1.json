@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 10,
   "title": "Topic 12",
-  "japanese_text": "鳥類に対して、子どもたちにもっと<u>親しみ</u>を持ってもらいたいと思って、<u>スペシャリスト</u>を呼んでイベントを<u>主催する</u>ことにした。当日は<u>ドキュメンタリー</u>映像や、<u>尾</u>の<u>色彩</u>に関するクイズを用意するつもりだ。",
+  "japanese_text": "鳥類に対して、子どもたちにもっと<u>親しみ</u>を持ってもらいたいと思って、<u>スペシャリスト</u>を呼んでイベントを<u>主催</u>することにした。当日は<u>ドキュメンタリー</u>映像や、<u>尾</u>の<u>色彩</u>に関するクイズを用意するつもりだ。",
   "english_translation": "I wanted the children to gain more familiarity with birds, so I decided to hold an event and invite specialists. On the day of the event, I plan to screen a documentary and give a quiz on tail coloration.",
   "annotated_words": [
     {
@@ -11,13 +11,6 @@
       "kanji": "親しみ",
       "furigana": "したしみ",
       "meaning_en": "familiarity"
-    },
-    {
-      "word_id": "n1_1022",
-      "word_number": 1022,
-      "kanji": "親しむ",
-      "furigana": "したしむ",
-      "meaning_en": "become close, gain familiarity"
     },
     {
       "word_id": "n1_1023",
@@ -54,5 +47,7 @@
       "furigana": "しきさい",
       "meaning_en": "coloration"
     }
-  ]
+  ],
+  "id": "149_1",
+  "page_story": "149_1"
 }

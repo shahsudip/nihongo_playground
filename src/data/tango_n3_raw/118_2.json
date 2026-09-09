@@ -1,6 +1,6 @@
 {
   "title": "Topic 8",
-  "japanese_text": "<ruby>雨<rt>あめ</rt></ruby>で<ruby>中止<rt>ちゅうし</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>でも、<ruby>大会<u>当日</u><rt>たいかいとうじつ</rt></ruby>にチケット<ruby>代<rt>だい</rt></ruby>を<ruby>払<rt>はら</rt></ruby>い<ruby>戻<rt>もど</rt></ruby>すことはできません。",
+  "japanese_text": "<ruby>雨<rt>あめ</rt></ruby>で<ruby>中止<rt>ちゅうし</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>でも、<u><ruby>大会当日<rt>たいかいとうじつ</rt></ruby></u>にチケット<ruby>代<rt>だい</rt></ruby>を<ruby>払<rt>はら</rt></ruby>い<ruby>戻<rt>もど</rt></ruby>すことはできません。",
   "english_translation": "Even in the event of cancellation due to rainy weather, you will not be able to get a refund for ticket fees on the day of the tournament.",
   "annotated_words": [
     {
@@ -13,5 +13,6 @@
   ],
   "story_number": 10,
   "is_story": true,
-  "page_story": "118_2"
+  "page_story": "118_2",
+  "id": "118_2"
 }

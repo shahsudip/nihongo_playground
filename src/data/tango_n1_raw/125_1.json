@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 7,
   "title": "Topic 10",
-  "japanese_text": "今年の彼岸も<u>慣例</u>通り、<u>郷土</u>にある寺に参り、線香に<u>点火し</u>、念仏を<u>唱えた</u>。しかし、これは日本<u>固有の</u> <u>風習</u>で、<u>元来</u>彼岸とは、悟りを開くための<u>修行</u>を行う期間だそうだ。",
+  "japanese_text": "今年の彼岸も<u>慣例</u>通り、<u>郷土</u>にある寺に参り、線香に<u>点火</u>し、念仏を唱えた。しかし、これは日本<u>固有</u>の <u>風習</u>で、<u>元来</u>彼岸とは、悟りを開くための<u>修行</u>を行う期間だそうだ。",
   "english_translation": "This year too, as is my custom, I visited a temple in my hometown for the equinox. I lit incense and chanted Buddhist prayers. This practice is a unique characteristic of Japan. Originally, the equinox was a period for practicing asceticism to attain enlightenment.",
   "annotated_words": [
     {
@@ -25,13 +25,6 @@
       "kanji": "点火[する]",
       "furigana": "てんか",
       "meaning_en": "ignition, light"
-    },
-    {
-      "word_id": "n1_0822",
-      "word_number": 822,
-      "kanji": "唱える",
-      "furigana": "とな",
-      "meaning_en": "chant"
     },
     {
       "word_id": "n1_0823",
@@ -61,5 +54,7 @@
       "furigana": "しゅぎょう",
       "meaning_en": "asceticism, practice asceticism"
     }
-  ]
+  ],
+  "id": "125_1",
+  "page_story": "125_1"
 }

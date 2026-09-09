@@ -1,6 +1,6 @@
 {
   "title": "Topic 2",
-  "japanese_text": "<ruby>湯<rt>ゆ</rt></ruby>のみや<u>まな<ruby>板</u><rt>いた</rt></ruby>についた<ruby>汚<rt>よご</rt></ruby>れは、<ruby>水<rt>みず</rt></ruby>で<ruby>流<rt>なが</rt></ruby>すだけでは、なかなか<ruby>取<rt>と</rt></ruby>れない。<ruby>１時間<rt>じかん</rt></ruby>ほど<ruby>漂白剤<rt>ひょうはくざい</rt></ruby>に<ruby>浸<rt>つ</rt></ruby>けておくと、ぴかぴかになる。",
+  "japanese_text": "<ruby>湯<rt>ゆ</rt></ruby>のみや<u>まな<ruby>板<rt>いた</rt></ruby></u>についた<ruby>汚<rt>よご</rt></ruby>れは、<ruby>水<rt>みず</rt></ruby>で<ruby>流<rt>なが</rt></ruby>すだけでは、なかなか<ruby>取<rt>と</rt></ruby>れない。<ruby>１時間<rt>じかん</rt></ruby>ほど<ruby>漂白剤<rt>ひょうはくざい</rt></ruby>に<ruby>浸<rt>つ</rt></ruby>けておくと、ぴかぴかになる。",
   "english_translation": "Dirt stuck on things like teacups and cutting boards is not easy to wash away with only water. If you immerse them in bleach for an hour, they will be sparkling clean.",
   "annotated_words": [
     {
@@ -13,5 +13,6 @@
   ],
   "story_number": 2,
   "is_story": true,
-  "page_story": "36_2"
+  "page_story": "36_2",
+  "id": "36_2"
 }

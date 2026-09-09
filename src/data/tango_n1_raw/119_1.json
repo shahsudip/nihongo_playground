@@ -1,8 +1,8 @@
 {
-  "is_story": false,
+  "is_story": true,
   "story_number": 31,
   "title": "Topic 9",
-  "japanese_text": "この度はアンケートにすでにご回答いただいているとのこと、<u>行き違い</u>があり大変失礼いたしました。アンケートにご協力いただいた方にはプレゼントを<u>進呈して</u>おりますので、早速郵送にてお送りいたします。なお、次回キャンペーンについてのご案内も<u>同封して</u>おりますので、ぜひご覧ください。",
+  "japanese_text": "この度はアンケートにすでにご回答いただいているとのこと、<u>行き違い</u>があり大変失礼いたしました。アンケートにご協力いただいた方にはプレゼントを<u>進呈</u>しておりますので、早速郵送にてお送りいたします。なお、次回キャンペーンについてのご案内も<u>同封</u>しておりますので、ぜひご覧ください。",
   "english_translation": "We understand that you have already answered our survey, and we are very sorry for the misunderstanding in communication. Those who have completed the survey will be presented with a gift as soon as possible by mail. Also, please refer to the enclosed information about our next campaign.",
   "annotated_words": [
     {
@@ -26,5 +26,7 @@
       "furigana": "どうふう",
       "meaning_en": "enclosing, enclose"
     }
-  ]
+  ],
+  "id": "119_1",
+  "page_story": "119_1"
 }

@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 3,
   "title": "Topic 13",
-  "japanese_text": "災害で被災した人々は、しばしば<u>避難所</u>を<u>転々とし</u>なければならなくなる。また、被災地が<u>復旧する</u>ことで戻ってくる人たちもいれば、<u>転居して</u>帰らない人たちもいる。",
+  "japanese_text": "災害で被災した人々は、しばしば<u>避難所</u>を<u>転々と</u>しなければならなくなる。また、被災地が<u>復旧</u>することで戻ってくる人たちもいれば、<u>転居</u>して帰らない人たちもいる。",
   "english_translation": "People affected by disasters often have to move around from one shelter to another. Some return as the disaster area recovers, while others relocate and never return.",
   "annotated_words": [
     {
@@ -33,5 +33,7 @@
       "furigana": "てんきょ",
       "meaning_en": "relocation, relocate"
     }
-  ]
+  ],
+  "id": "157_2",
+  "page_story": "157_2"
 }

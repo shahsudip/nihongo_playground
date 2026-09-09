@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 7,
   "title": "Topic 12",
-  "japanese_text": "<u>希少な</u> <u>品種</u>の<u>野生</u>動物を殺し、<u>剥いだ</u>皮や切った<u>角</u>を<u>密かに</u>流通させる人々がいるという<u>実情</u>がある。そのせいで、<u>絶滅</u>しそうな動物もいる。",
+  "japanese_text": "<u>希少な</u> <u>品種</u>の<u>野生</u>動物を殺し、剥いだ皮や切った<u>角</u>を<u>密か</u>に流通させる人々がいるという<u>実情</u>がある。そのせいで、<u>絶滅</u>しそうな動物もいる。",
   "english_translation": "The fact is that some people kill rare breeds of wild animals and secretly distribute their skinned pelts and cut horns. Because of this, some animals are on the verge of going extinct.",
   "annotated_words": [
     {
@@ -25,13 +25,6 @@
       "kanji": "野生",
       "furigana": "やせい",
       "meaning_en": "wild"
-    },
-    {
-      "word_id": "n1_1002",
-      "word_number": 1002,
-      "kanji": "剥ぐ",
-      "furigana": "はぐ",
-      "meaning_en": "peel, skin"
     },
     {
       "word_id": "n1_1003",
@@ -61,5 +54,7 @@
       "furigana": "ぜつめつ",
       "meaning_en": "extinction, go extinct"
     }
-  ]
+  ],
+  "id": "147_1",
+  "page_story": "147_1"
 }

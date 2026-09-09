@@ -3,7 +3,7 @@
   "story_number": 13,
   "title": "Topic 16 学校",
   "page_story": "222_1",
-  "japanese_text": "<u>新入生</u>のみなさんは<u>正門</u>に集まってください。これからキャンパス内を案内します。黄色いジャンパーを着ているスタッフを<u>先頭</u>にして、<u>名簿</u>の順番に並んでください。では、キャンパスの地図を<u>配布します</u>。",
+  "japanese_text": "<u>新入生</u>のみなさんは<u>正門</u>に集まってください。これからキャンパス内を案内します。黄色いジャンパーを着ているスタッフを<u>先頭</u>にして、<u>名簿</u>の順番に並んでください。では、キャンパスの地図を<u>配布</u>します。",
   "english_translation": "All new students, please gather at the main gate. We will now conduct a tour of the campus. Please line up in the order listed on the roll, with the staff member wearing the yellow jacket in the lead. We will now hand out campus maps.",
   "annotated_words": [
     {
@@ -41,5 +41,6 @@
       "furigana": "はいふ",
       "meaning_en": "distribution, hand out"
     }
-  ]
+  ],
+  "id": "222_1"
 }

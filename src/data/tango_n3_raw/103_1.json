@@ -1,6 +1,6 @@
 {
   "title": "Topic 6",
-  "japanese_text": "テレビを<ruby>見<rt>み</rt></ruby>ている<ruby>人<rt>ひと</rt></ruby>も<ruby>参加<rt>さんか</rt></ruby>できる<u>クイズ</u><ruby>番組<rt>ばんぐみ</rt></ruby>があった。<ruby>私<rt>わたし</rt></ruby>はいつも、スマホを<ruby><u>操作</u><rt>そうさ</rt></ruby>している<ruby><u>途中</u><rt>とちゅう</rt></ruby>で<ruby>締<rt>し</rt></ruby>め<ruby>切<rt>き</rt></ruby>られてしまっていた。<ruby>答<rt>こた</rt></ruby>えは<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>分<rt>わ</rt></ruby>かっていて、もうちょっとで<ruby>商品<rt>しょうひん</rt></ruby>がもらえたのに、<ruby>惜<rt>お</rt></ruby>しかった。",
+  "japanese_text": "テレビを<ruby>見<rt>み</rt></ruby>ている<ruby>人<rt>ひと</rt></ruby>も<ruby>参加<rt>さんか</rt></ruby>できる<u>クイズ</u><ruby>番組<rt>ばんぐみ</rt></ruby>があった。<ruby>私<rt>わたし</rt></ruby>はいつも、スマホを<u><ruby>操作<rt>そうさ</rt></ruby></u>している<u><ruby>途中<rt>とちゅう</rt></ruby></u>で<ruby>締<rt>し</rt></ruby>め<ruby>切<rt>き</rt></ruby>られてしまっていた。<ruby>答<rt>こた</rt></ruby>えは<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>分<rt>わ</rt></ruby>かっていて、もうちょっとで<ruby>商品<rt>しょうひん</rt></ruby>がもらえたのに、<ruby>惜<rt>お</rt></ruby>しかった。",
   "english_translation": "There were quiz programs where people watching on TV can participate too. They always ended while I was busy using my smartphone. I knew all of the answers, and I was almost able to get a prize, so it was frustrating.",
   "annotated_words": [
     {
@@ -27,5 +27,6 @@
   ],
   "story_number": 19,
   "is_story": true,
-  "page_story": "103_1"
+  "page_story": "103_1",
+  "id": "103_1"
 }

@@ -3,7 +3,7 @@
   "story_number": 6,
   "title": "Topic 23 環境・科学",
   "page_story": "320_1",
-  "japanese_text": "A：ねえ、この記事見て。1891年に<u>統計</u>が始まって以来、二酸化炭素<u>濃度</u>が高まるのに<u>比例して</u>、世界の平均気温が2021年までに約0.95度も上がったんだって。\nB：そうなんだ。確かにこの<u>図表</u>を見てもはっきりと分かるね。\nA：この研究所もパリ協定に<u>基づいた</u>目標を掲げて、<u>翌年</u>以降の<u>達成</u>を目指してるよ。",
+  "japanese_text": "A：ねえ、この記事見て。1891年に<u>統計</u>が始まって以来、二酸化炭素<u>濃度</u>が高まるのに<u>比例</u>して、世界の平均気温が2021年までに約0.95度も上がったんだって。\nB：そうなんだ。確かにこの<u>図表</u>を見てもはっきりと分かるね。\nA：この研究所もパリ協定に基づいた目標を掲げて、<u>翌年</u>以降の<u>達成</u>を目指してるよ。",
   "english_translation": "A: Hey, look at this article. It says that since statistics were first collected in 1891, the world's average temperature has risen by about 0.95°C by 2021, proportionally to the increase in concentration of carbon dioxide.\nB: I see. That's certainly clear looking at this diagram.\nA: This research institute has also declared goals based on the Paris Agreement, and aims to achieve them from the following year.",
   "annotated_words": [
     {
@@ -35,13 +35,6 @@
       "meaning_en": "diagram"
     },
     {
-      "word_id": "n2_2258",
-      "word_number": 2258,
-      "kanji": "基づく",
-      "furigana": "もとづく",
-      "meaning_en": "base"
-    },
-    {
       "word_id": "n2_2259",
       "word_number": 2259,
       "kanji": "翌年",
@@ -55,5 +48,6 @@
       "furigana": "たっせい",
       "meaning_en": "accomplishment, achieve"
     }
-  ]
+  ],
+  "id": "320_1"
 }

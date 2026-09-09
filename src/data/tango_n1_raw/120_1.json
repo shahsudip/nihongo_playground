@@ -1,8 +1,8 @@
 {
-  "is_story": false,
+  "is_story": true,
   "story_number": 32,
   "title": "Topic 9",
-  "japanese_text": "A：この<u>武将</u>、<u>荒っぽい</u>性格で有名だけど、実は部下の家族のことを<u>思いやる</u>優しい<u>側面</u>もあったらしいよ。\nB：へえ！ 誰にも<u>隙</u>を見せられないだろうから、優しさよりも厳しさが勝っていたんだろうね。\nA：最後は味方に<u>欺かれて</u>死んでしまったし、切ないよね。だからこそ、彼の人気は今でも<u>健在な</u>のかもしれないけど。",
+  "japanese_text": "A：この<u>武将</u>、<u>荒っぽい</u>性格で有名だけど、実は部下の家族のことを<u>思いやる</u>優しい<u>側面</u>もあったらしいよ。\nB：へえ！ 誰にも<u>隙</u>を見せられないだろうから、優しさよりも厳しさが勝っていたんだろうね。\nA：最後は味方に欺かれて死んでしまったし、切ないよね。だからこそ、彼の人気は今でも<u>健在な</u>のかもしれないけど。",
   "english_translation": "A: That military commander was famous for his coarse personality, but I've heard he actually had a gentle side and he cared for the families of his men. B: Heh! He could never let anyone see that vulnerability, so I suppose his harshness prevailed over his gentleness. A: In the end, he was deceived by his allies and died. It's sad. Maybe that's why his popularity is still going strong, though.",
   "annotated_words": [
     {
@@ -41,18 +41,13 @@
       "meaning_en": "vulnerability, weak spot"
     },
     {
-      "word_id": "n1_0783",
-      "word_number": 783,
-      "kanji": "欺く",
-      "furigana": "あざむく",
-      "meaning_en": "deceive"
-    },
-    {
       "word_id": "n1_0784",
       "word_number": 784,
       "kanji": "健在な",
       "furigana": "けんざいな",
       "meaning_en": "going strong"
     }
-  ]
+  ],
+  "id": "120_1",
+  "page_story": "120_1"
 }

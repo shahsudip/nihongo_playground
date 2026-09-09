@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 15,
   "title": "Topic 7",
-  "japanese_text": "この<u>展示会</u>では、木彫りの<u>彫刻</u>作品、ガラス<u>細工</u>、美しい模様が<u>織られた</u>織物など、技巧を<u>凝らし</u>、<u>美</u>を<u>追求した</u>数々の伝統<u>工芸</u>品を見ることができる。",
+  "japanese_text": "この<u>展示会</u>では、木彫りの<u>彫刻</u>作品、ガラス<u>細工</u>、<u>美</u>しい模様が織られた織物など、技巧を凝らし、美を<u>追求</u>した数々の伝統<u>工芸</u>品を見ることができる。",
   "english_translation": "At this exhibition, visitors can see a number of traditional crafts demonstrating refined skills in the pursuit of beauty, such as wood carvings, glass works, and textiles with beautiful woven patterns.",
   "annotated_words": [
     {
@@ -27,20 +27,6 @@
       "meaning_en": "work, work on"
     },
     {
-      "word_id": "n1_0566",
-      "word_number": 566,
-      "kanji": "織る",
-      "furigana": "おる",
-      "meaning_en": "weave"
-    },
-    {
-      "word_id": "n1_0567",
-      "word_number": 567,
-      "kanji": "凝らす",
-      "furigana": "こらす",
-      "meaning_en": "elaborate, refine"
-    },
-    {
       "word_id": "n1_0568",
       "word_number": 568,
       "kanji": "美",
@@ -61,5 +47,7 @@
       "furigana": "こうげい",
       "meaning_en": "crafts"
     }
-  ]
+  ],
+  "id": "90_2",
+  "page_story": "90_2"
 }

@@ -3,7 +3,7 @@
   "story_number": 7,
   "title": "Topic 15 旅行",
   "page_story": "200_2",
-  "japanese_text": "お金は旅の<u>必需品</u>だが、どのくらい持って行くべきかいつも迷っていた。しかし、最近はデジタル<u>通貨</u>が普及し<u>通用する</u>ところも増えているので、<u>めっきり</u>現金を両替しなくなった。",
+  "japanese_text": "お金は旅の<u>必需品</u>だが、どのくらい持って行くべきかいつも迷っていた。しかし、最近はデジタル<u>通貨</u>が普及し<u>通用</u>するところも増えているので、<u>めっきり</u>現金を両替しなくなった。",
   "english_translation": "Money is a travel necessity, but I never know how much to bring with me. But lately, with the spread of digital currency and more places accepting it, I've noticeably stopped exchanging cash.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
       "furigana": "",
       "meaning_en": "noticeably, remarkably"
     }
-  ]
+  ],
+  "id": "200_2"
 }

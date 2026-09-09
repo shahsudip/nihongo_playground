@@ -1,6 +1,6 @@
 {
   "title": "Topic 4",
-  "japanese_text": "せっかくいい<u>デザイン</u>の<u>ブーツ</u>があったのに、<ruby>試着<rt>しちゃく</rt></ruby><ruby>すると<u>ファスナー</u>が<rt></rt></ruby><ruby>閉<rt>し</rt></ruby><ruby>まらなかった。<rt></rt></ruby>",
+  "japanese_text": "せっかくいい<u>デザイン</u>の<u>ブーツ</u>があったのに、<ruby>試着<rt>しちゃく</rt></ruby><u><ruby>するとファスナーが<rt></rt></ruby></u><ruby>閉<rt>し</rt></ruby><ruby>まらなかった。<rt></rt></ruby>",
   "english_translation": "Even though there were some boots with a nice design, the zipper wouldn't close when I tried them on.",
   "annotated_words": [
     {
@@ -27,5 +27,6 @@
   ],
   "story_number": 19,
   "is_story": true,
-  "page_story": "71_2"
+  "page_story": "71_2",
+  "id": "71_2"
 }

@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 8,
   "title": "Topic 8",
-  "japanese_text": "我が社では企業説明会の後に、社員と学生が<u>対談できる</u> <u>座談会</u>を開いている。学生は社員と<u>雑談</u>をするときにも<u>相づちを打ち</u>ながら話を聞き、はっきりした<u>口調</u>で<u>明瞭に</u>話すのに対し、社員は<u>ぞんざいな</u>言い方になったり、会社の良さを<u>誇張しすぎた</u>りすることがあるので注意が必要だ。",
+  "japanese_text": "我が社では企業説明会の後に、社員と学生が<u>対談</u>できる <u>座談会</u>を開いている。学生は社員と<u>雑談</u>をするときにも相づちを打ちながら話を聞き、はっきりした<u>口調</u>で<u>明瞭</u>に話すのに対し、社員は<u>ぞんざいな</u>言い方になったり、会社の良さを<u>誇張</u>しすぎたりすることがあるので注意が必要だ。",
   "english_translation": "After company information sessions, our company holds round-table discussions where employees and students can talk with each other. The students listen actively to what the employees have to say, even when just chatting, and they speak in clear and articulate tones, whereas the employees tend to talk in an offhand way or overstate the positive aspects of the company, so they need to take care.",
   "annotated_words": [
     {
@@ -25,13 +25,6 @@
       "kanji": "雑談",
       "furigana": "ざつだん",
       "meaning_en": "chat, have a chat"
-    },
-    {
-      "word_id": "n1_0625",
-      "word_number": 625,
-      "kanji": "相づちを打つ",
-      "furigana": "あいづちをうつ",
-      "meaning_en": "(offer remarks to) listen actively"
     },
     {
       "word_id": "n1_0626",
@@ -61,5 +54,7 @@
       "furigana": "こちょう",
       "meaning_en": "assertion, state"
     }
-  ]
+  ],
+  "id": "98_1",
+  "page_story": "98_1"
 }

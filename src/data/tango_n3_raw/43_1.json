@@ -1,6 +1,6 @@
 {
   "title": "Topic 2",
-  "japanese_text": "<ruby>夫<rt>おっと</rt></ruby>の<ruby>趣味<rt>しゅみ</rt></ruby>は<ruby>料理<rt>りょうり</rt></ruby>だ。「<ruby>料理<rt>りょうり</rt></ruby>は<ruby><u>化学</u><rt>かがく</rt></ruby>だ」と<ruby>言<rt>い</rt></ruby>っていて、<ruby>調味料<rt>ちょうみりょう</rt></ruby>を<ruby>加<rt>くわ</rt></ruby>える<ruby><u>順番</u><rt>じゅんばん</rt></ruby>も<ruby>気<rt>き</rt></ruby>にしている。<ruby><u>包丁</u><rt>ほうちょう</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>もとてもうまいし、<ruby>料理家<rt>りょうりか</rt></ruby>の<ruby><u>記事</u><rt>きじ</rt></ruby>もいつも<ruby>熱心<rt>ねっしん</rt></ruby>に<ruby>読<rt>よ</rt></ruby>んでいる。",
+  "japanese_text": "<ruby>夫<rt>おっと</rt></ruby>の<ruby>趣味<rt>しゅみ</rt></ruby>は<ruby>料理<rt>りょうり</rt></ruby>だ。「<ruby>料理<rt>りょうり</rt></ruby>は<u><ruby>化学<rt>かがく</rt></ruby></u>だ」と<ruby>言<rt>い</rt></ruby>っていて、<ruby>調味料<rt>ちょうみりょう</rt></ruby>を<ruby>加<rt>くわ</rt></ruby>える<u><ruby>順番<rt>じゅんばん</rt></ruby></u>も<ruby>気<rt>き</rt></ruby>にしている。<u><ruby>包丁<rt>ほうちょう</rt></ruby></u>の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>もとてもうまいし、<ruby>料理家<rt>りょうりか</rt></ruby>の<u><ruby>記事<rt>きじ</rt></ruby></u>もいつも<ruby>熱心<rt>ねっしん</rt></ruby>に<ruby>読<rt>よ</rt></ruby>んでいる。",
   "english_translation": "My husband's hobby is cooking. He says, \"Cooking is chemistry,\" and even pays attention to the order in which seasonings are added. He's really good at using kitchen knives, and he always reads articles about cooking enthusiastically.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
   ],
   "story_number": 16,
   "is_story": true,
-  "page_story": "43_1"
+  "page_story": "43_1",
+  "id": "43_1"
 }

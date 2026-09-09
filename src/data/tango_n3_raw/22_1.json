@@ -1,24 +1,39 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "A：<ruby>最近<rt>さいきん</rt></ruby><ruby>暑<rt>あつ</rt></ruby>すぎて、<ruby><u>食欲</u><rt>しょくよく</rt></ruby>がないんだよねえ。さっぱりしたものが<ruby>食<rt>た</rt></ruby>べたい。<ruby>冷<rt>つめ</rt></ruby>たい<u>そば</u>にしようかな。<br>B：あ、なんか<ruby>酸<rt>す</rt></ruby>っぱいものもいいらしいよ。",
+  "japanese_text": "A：<ruby>最近<rt>さいきん</rt></ruby><ruby>暑<rt>あつ</rt></ruby>すぎて、<u><ruby>食欲<rt>しょくよく</rt></ruby></u>がないんだよねえ。<u>さっぱり</u>したものが<ruby>食<rt>た</rt></ruby>べたい。<ruby>冷<rt>つめ</rt></ruby>たい<u>そば</u>にしようかな。<br>B：あ、なんか<u><ruby>酸<rt>す</rt></ruby>っぱい</u>ものもいいらしいよ。",
   "english_translation": "A: It's been too hot lately, and I have no appetite. I want to eat refreshing food. Maybe I should make some cold soba. B: Oh, something sour is good too, I hear.",
   "annotated_words": [
     {
-      "word_id": "n3_0034",
-      "word_number": 34,
+      "word_id": "n3_0054",
+      "word_number": 54,
       "kanji": "食欲",
       "furigana": "しょくよく",
       "meaning_en": "appetite"
     },
     {
-      "word_id": "n3_0035",
-      "word_number": 35,
+      "word_id": "n3_0055",
+      "word_number": 55,
+      "kanji": "さっぱり[する]",
+      "furigana": "",
+      "meaning_en": "refreshing, refresh"
+    },
+    {
+      "word_id": "n3_0056",
+      "word_number": 56,
       "kanji": "そば",
       "furigana": "",
       "meaning_en": "soba, buckwheat noodles"
+    },
+    {
+      "word_id": "n3_0057",
+      "word_number": 57,
+      "kanji": "酸っぱい",
+      "furigana": "すっぱい",
+      "meaning_en": "sour"
     }
   ],
   "story_number": 11,
   "is_story": true,
-  "page_story": "22_1"
+  "page_story": "22_1",
+  "id": "22_1"
 }

@@ -3,7 +3,7 @@
   "story_number": 11,
   "title": "Topic 11 動物",
   "page_story": "156_1",
-  "japanese_text": "<u>収穫</u>前の畑に<u>巨大な</u> <u>昆虫</u>が<u>群れ</u>で<u>飛行して</u>きた。畑には何も残っていなかった。翌日の新聞では「まるで山火事にあったようだ」と<u>例えられて</u>いた。",
+  "japanese_text": "<u>収穫</u>前の畑に<u>巨大な</u> <u>昆虫</u>が<u>群れ</u>で<u>飛行</u>してきた。畑には何も残っていなかった。翌日の新聞では「まるで山火事にあったようだ」と例えられていた。",
   "english_translation": "Huge insects flew in swarms into the fields before harvest. Nothing was left in the fields. The following day's newspaper likened the fields to what remains after a forest fire.",
   "annotated_words": [
     {
@@ -40,13 +40,7 @@
       "kanji": "飛行[する]",
       "furigana": "ひこう",
       "meaning_en": "flight, fly"
-    },
-    {
-      "word_id": "n2_0982",
-      "word_number": 982,
-      "kanji": "例える",
-      "furigana": "たとえる",
-      "meaning_en": "liken, compare"
     }
-  ]
+  ],
+  "id": "156_1"
 }

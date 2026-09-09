@@ -1,6 +1,6 @@
 {
   "title": "Topic 5",
-  "japanese_text": "<ruby>Ａ：<u>パスワード</u>ってさ、<rt></rt></ruby><ruby><u>数字</u><rt>すうじ</rt></ruby><ruby>があるものとか、<rt></rt></ruby><ruby><u>文字</u><rt>もじ</rt></ruby><ruby>だけのものと<rt></rt></ruby><ruby>かいろいろあって<rt></rt></ruby><ruby>覚<rt>おぼ</rt></ruby><ruby>えるのが<rt></rt></ruby><ruby>大変<rt>たいへん</rt></ruby><ruby>じゃない？ しかも<rt></rt></ruby><ruby><u>数回</u>間<rt>すうかいま</rt></ruby><ruby>違<rt>ちが</rt></ruby><ruby>えたら、<u>ロック</u>されるし。<rt></rt></ruby>\n<ruby>Ｂ：<u>それなら</u>パスワード<rt></rt></ruby><ruby>管理<rt>かんり</rt></ruby><ruby>アプリを<u>インストール</u>するといいよ。<rt></rt></ruby>",
+  "japanese_text": "<u><ruby>Ａ：パスワードってさ、<rt></rt></ruby></u><u><ruby>数字<rt>すうじ</rt></ruby></u><ruby>があるものとか、<rt></rt></ruby><u><ruby>文字<rt>もじ</rt></ruby></u><ruby>だけのものと<rt></rt></ruby><ruby>かいろいろあって<rt></rt></ruby><ruby>覚<rt>おぼ</rt></ruby><ruby>えるのが<rt></rt></ruby><ruby>大変<rt>たいへん</rt></ruby><ruby>じゃない？ しかも<rt></rt></ruby><u><ruby>数回間<rt>すうかいま</rt></ruby></u><ruby>違<rt>ちが</rt></ruby><u><ruby>えたら、ロックされるし。<rt></rt></ruby></u>\n<u><ruby>Ｂ：それならパスワード<rt></rt></ruby></u><ruby>管理<rt>かんり</rt></ruby><u><ruby>アプリをインストールするといいよ。<rt></rt></ruby></u>",
   "english_translation": "A: Isn't it really difficult to remember passwords when you've got some with numbers and some with only letters or something? What's more, if you get it wrong several times, your account will be locked.\nB: If that's the case, then you should install a password management app.",
   "annotated_words": [
     {
@@ -55,5 +55,6 @@
   ],
   "story_number": 14,
   "is_story": true,
-  "page_story": "80_2"
+  "page_story": "80_2",
+  "id": "80_2"
 }

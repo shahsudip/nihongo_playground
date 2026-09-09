@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 3,
   "title": "Topic 7",
-  "japanese_text": "A：本日は、<u>占い</u>の本で<u>ベストセラー</u> <u>連発の</u>、あの<u>著名な</u>先生を<u>スタジオ</u>にお招きしています。\nB：これから先生には、ゲストのみなさまの<u>姓名</u>をもとに<u>予言</u>をしていただきます。",
+  "japanese_text": "A：本日は、<u>占い</u>の本で<u>ベストセラー</u> <u>連発</u>の、あの<u>著名な</u>先生を<u>スタジオ</u>にお招きしています。\nB：これから先生には、ゲストのみなさまの<u>姓名</u>をもとに<u>予言</u>をしていただきます。",
   "english_translation": "A: Today, we've invited to our studio a distinguished expert who has released a succession of bestsellers about fortune telling. B: This expert is going to make predictions based on the full names of our guests.",
   "annotated_words": [
     {
@@ -54,5 +54,7 @@
       "furigana": "よげん",
       "meaning_en": "prediction, predict"
     }
-  ]
+  ],
+  "id": "83_2",
+  "page_story": "83_2"
 }

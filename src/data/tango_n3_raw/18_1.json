@@ -1,17 +1,53 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "A：お<ruby>待<rt>ま</rt></ruby>たせしました。<ruby>和風<rt>わふう</rt></ruby>ハンバーグでございます。<u>ソース</u>をかけて、お<ruby>召<rt>め</rt></ruby>し<ruby>上<rt>あ</rt></ruby>がりください。<br>B：あ、どうぞお<ruby>先<rt>さき</rt></ruby>に。ご<ruby>遠慮<rt>えんりょ</rt></ruby>なく。<br>C：じゃあ、いただきます。",
+  "japanese_text": "A：<u>お<ruby>待<rt>ま</rt></ruby>たせしました</u>。<u><ruby>和風<rt>わふう</rt></ruby></u>ハンバーグでございます。<u>ソース</u>をかけて、お<u><ruby>召<rt>め</rt></ruby>し<ruby>上<rt>あ</rt></ruby>がり</u>ください。<br>B：あ、どうぞ<u>お<ruby>先<rt>さき</rt></ruby>に</u>。<u>ご<ruby>遠慮<rt>えんりょ</rt></ruby>なく</u>。<br>C：じゃあ、いただきます。",
   "english_translation": "A: Thank you for your patience. Here is your Japanese-style hamburger steak. Please enjoy it with sauce. B: Oh, please go ahead. No need to hesitate. C: Then let's eat.",
   "annotated_words": [
     {
-      "word_id": "n3_0014",
-      "word_number": 14,
+      "word_id": "n3_0021",
+      "word_number": 21,
+      "kanji": "お待たせしました",
+      "furigana": "ま",
+      "meaning_en": "(sorry to) keep you waiting"
+    },
+    {
+      "word_id": "n3_0022",
+      "word_number": 22,
+      "kanji": "～風",
+      "furigana": "ふう",
+      "meaning_en": "~ style"
+    },
+    {
+      "word_id": "n3_0023",
+      "word_number": 23,
       "kanji": "ソース",
       "furigana": "",
       "meaning_en": "sauce"
+    },
+    {
+      "word_id": "n3_0024",
+      "word_number": 24,
+      "kanji": "召し上がる",
+      "furigana": "めしあがる",
+      "meaning_en": "eat, drink (honorific speech)"
+    },
+    {
+      "word_id": "n3_0025",
+      "word_number": 25,
+      "kanji": "（お）先に",
+      "furigana": "さき",
+      "meaning_en": "after you"
+    },
+    {
+      "word_id": "n3_0026",
+      "word_number": 26,
+      "kanji": "（ご）遠慮なく",
+      "furigana": "えんりょ",
+      "meaning_en": "without hesitation, no need to hesitate"
     }
   ],
   "story_number": 4,
   "is_story": true,
-  "page_story": "18_1"
+  "page_story": "18_1",
+  "id": "18_1"
 }

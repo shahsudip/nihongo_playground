@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 4,
   "title": "Topic 26",
-  "japanese_text": "工場の<u>爆発</u>事故で<u>有毒</u>ガスが<u>漏れ</u>、周辺住民に<u>避難</u>命令が出された。<u>消防</u>や警察が現場に<u>急行</u>し、<u>負傷者</u>の<u>手当て</u>が行われた。<u>原因</u>は現在も<u>調査中</u>だ。",
+  "japanese_text": "工場の<u>爆発</u>事故で<u>有毒</u>ガスが漏れ、周辺住民に<u>避難</u>命令が出された。<u>消防</u>や警察が現場に急行し、<u>負傷者</u>の手当てが行われた。原因は現在も調査中だ。",
   "english_translation": "A factory explosion caused toxic gas to leak, and an evacuation order was issued to nearby residents. Firefighters and police rushed to the scene, and the injured were treated. The cause is currently still under investigation.",
   "annotated_words": [
     {
@@ -18,13 +18,6 @@
       "kanji": "有毒な",
       "furigana": "ゆうどくな",
       "meaning_en": "toxic, poisonous"
-    },
-    {
-      "word_id": "n1_2462",
-      "word_number": 2462,
-      "kanji": "漏れる",
-      "furigana": "もれる",
-      "meaning_en": "leak"
     },
     {
       "word_id": "n1_2463",
@@ -47,5 +40,7 @@
       "furigana": "ふしょうしゃ",
       "meaning_en": "injured person"
     }
-  ]
+  ],
+  "id": "326_1",
+  "page_story": "326_1"
 }

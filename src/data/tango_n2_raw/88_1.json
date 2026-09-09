@@ -1,7 +1,7 @@
 {
   "title": "Topic 6 流行",
   "audio_id": "97",
-  "japanese_text": "この映画では<u>悪役</u>の<u>演技</u>が素晴らしく、数々の<u>名</u><u>シーン</u>を生んだ。<u>評論家</u>も<u>絶賛した</u>。しかし、あまりにも<u>醜い</u><u>役</u>を演じたためか、<u>役者</u>はその後、亡くなってしまった。",
+  "japanese_text": "この映画では<u>悪役</u>の<u>演技</u>が素晴らしく、数々の<u>名</u><u>シーン</u>を生んだ。<u>評論家</u>も絶賛した。しかし、あまりにも<u>醜い</u><u>役</u>を演じたためか、<u>役者</u>はその後、亡くなってしまった。",
   "page_story": "88_1",
   "english_translation": "The villain's performance in this film was excellent, which made for lots of great scenes. Critics also praised it. However, perhaps because the role was so unpleasant, the actor had passed away.",
   "annotated_words": [
@@ -41,13 +41,6 @@
       "meaning_en": "critic"
     },
     {
-      "word_id": "n2_0493",
-      "word_number": 493,
-      "kanji": "＋ 評論[する]",
-      "furigana": "ひょうろん",
-      "meaning_en": "criticism, criticize"
-    },
-    {
       "word_id": "n2_0494",
       "word_number": 494,
       "kanji": "醜い",
@@ -69,5 +62,6 @@
       "meaning_en": "actor"
     }
   ],
-  "is_story": true
+  "is_story": true,
+  "id": "88_1"
 }

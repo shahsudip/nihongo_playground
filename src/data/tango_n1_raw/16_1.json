@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 4,
   "title": "Topic 1",
-  "japanese_text": "A：あの店のコロッケ、好きだよね。そんなにおいしいの？\nB：うん。<u>ありふれた</u>味なんだけど、なんかおいしいんだよね。特に、学校帰りに<u>空腹</u>で食べると<u>格別</u>なんだ！",
+  "japanese_text": "A：あの店のコロッケ、好きだよね。そんなにおいしいの？\nB：うん。<u>ありふれた</u>味なんだけど、なんかおいしいんだよね。特に、学校帰りに<u>空腹</u>で食べると<u>格別な</u>んだ！",
   "english_translation": "A: You really like the croquettes at that store. Are they really that good? B: Yes. They're just ordinary croquettes, but they taste great. On an empty stomach after school, they're exceptional!",
   "annotated_words": [
     {
@@ -20,18 +20,13 @@
       "meaning_en": "empty stomach"
     },
     {
-      "word_id": "n1_0015",
-      "word_number": 15,
-      "kanji": "満腹",
-      "furigana": "まんぷく",
-      "meaning_en": "full stomach"
-    },
-    {
       "word_id": "n1_0016",
       "word_number": 16,
       "kanji": "格別な",
       "furigana": "かくべつ",
       "meaning_en": "exceptional, special"
     }
-  ]
+  ],
+  "id": "16_1",
+  "page_story": "16_1"
 }

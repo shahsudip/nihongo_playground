@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 9,
   "title": "Topic 4",
-  "japanese_text": "新製品の商品化については、今日も上司に<u>同意して</u>もらえなかった。どれだけがんばってもうまくいかない。自分が<u>惨めで</u>、とても<u>むなしい</u>気持ちになる。",
+  "japanese_text": "新製品の商品化については、今日も上司に<u>同意</u>してもらえなかった。どれだけがんばってもうまくいかない。自分が<u>惨め</u>で、とても<u>むなしい</u>気持ちになる。",
   "english_translation": "Again today, I couldn't get my boss to agree with me about commercializing the new product. No matter how hard I try, nothing works. I feel miserable, and completely ineffectual.",
   "annotated_words": [
     {
@@ -26,5 +26,7 @@
       "furigana": "",
       "meaning_en": "futile, ineffectual"
     }
-  ]
+  ],
+  "id": "46_1",
+  "page_story": "46_1"
 }

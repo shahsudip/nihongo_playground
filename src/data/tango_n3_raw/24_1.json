@@ -1,17 +1,32 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "A：<ruby><u>忘年会</u><rt>ぼうねんかい</rt></ruby>のお<ruby>店<rt>みせ</rt></ruby>、「<ruby>梅<rt>うめ</rt></ruby>の<ruby>花<rt>はな</rt></ruby>」はどうかな？<br>B：え、どこですか。<br>A：<ruby>知<rt>し</rt></ruby>らない？　<ruby>駅<rt>えき</rt></ruby>の<ruby>北<rt>きた</rt></ruby><ruby>口<rt>ぐち</rt></ruby>にある<ruby>居酒屋<rt>いざかや</rt></ruby>。<br>B：<ruby>分<rt>わ</rt></ruby>かりました。<ruby>押<rt>お</rt></ruby>さえます。<ruby>乾杯<rt>かんぱい</rt></ruby>のあいさつは<ruby>部長<rt>ぶちょう</rt></ruby>にお<ruby>願<rt>ねが</rt></ruby>いするつもりです。",
+  "japanese_text": "A：<u><ruby>忘年会<rt>ぼうねんかい</rt></ruby></u>のお<ruby>店<rt>みせ</rt></ruby>、「<ruby>梅<rt>うめ</rt></ruby>の<ruby>花<rt>はな</rt></ruby>」はどうかな？<br>B：え、どこですか。<br>A：<ruby>知<rt>し</rt></ruby>らない？　<ruby>駅<rt>えき</rt></ruby>の<ruby>北<rt>きた</rt></ruby><u><ruby>口<rt>ぐち</rt></ruby></u>にある<ruby>居酒屋<rt>いざかや</rt></ruby>。<br>B：<ruby>分<rt>わ</rt></ruby>かりました。<ruby>押<rt>お</rt></ruby>さえます。<u><ruby>乾杯<rt>かんぱい</rt></ruby></u>のあいさつは<ruby>部長<rt>ぶちょう</rt></ruby>にお<ruby>願<rt>ねが</rt></ruby>いするつもりです。",
   "english_translation": "A: How about having our year-end party at that restaurant called Ume no Hana? B: Where is it? A: You don't know? It's a pub at the north exit of the station. B: I got it. I'll make a reservation. I plan on asking the department chief to give a toast.",
   "annotated_words": [
     {
-      "word_id": "n3_0043",
-      "word_number": 43,
+      "word_id": "n3_0067",
+      "word_number": 67,
       "kanji": "忘年会",
       "furigana": "ぼうねんかい",
       "meaning_en": "year-end party"
+    },
+    {
+      "word_id": "n3_0068",
+      "word_number": 68,
+      "kanji": "～口",
+      "furigana": "ぐち",
+      "meaning_en": "~ entrance, exit"
+    },
+    {
+      "word_id": "n3_0069",
+      "word_number": 69,
+      "kanji": "乾杯[する]",
+      "furigana": "かんぱい",
+      "meaning_en": "toast, make a toast"
     }
   ],
   "story_number": 14,
   "is_story": true,
-  "page_story": "24_1"
+  "page_story": "24_1",
+  "id": "24_1"
 }

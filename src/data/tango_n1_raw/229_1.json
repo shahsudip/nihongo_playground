@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 26,
   "title": "Topic 18",
-  "japanese_text": "<u>夜勤</u>がある仕事といえば、医療・介護に<u>携わる</u>仕事や24時間体制の生産ラインをもつ製造業、<u>運送</u>業などをイメージするが、<u>昼夜</u> <u>監視</u>が必要な<u>サイバーセキュリティ</u>や<u>メンテナンス</u>などに<u>従事する</u>エンジニアの間にも広がっている。",
+  "japanese_text": "<u>夜勤</u>がある仕事といえば、医療・介護に<u>携わる</u>仕事や24時間体制の生産ラインをもつ製造業、<u>運送</u>業などをイメージするが、<u>昼夜</u> <u>監視</u>が必要な<u>サイバーセキュリティ</u>や<u>メンテナンス</u>などに<u>従事</u>するエンジニアの間にも広がっている。",
   "english_translation": "When we think of jobs with night shifts, we often think of jobs involved in healthcare and nursing care, manufacturing with 24-hour production lines, and transportation, but the practice is also spreading among engineers engaged in cybersecurity or maintenance, which require monitoring night and day.",
   "annotated_words": [
     {
@@ -61,5 +61,7 @@
       "furigana": "じゅうじ",
       "meaning_en": "engagement, engage"
     }
-  ]
+  ],
+  "id": "229_1",
+  "page_story": "229_1"
 }

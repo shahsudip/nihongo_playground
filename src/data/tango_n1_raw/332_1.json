@@ -2,29 +2,15 @@
   "is_story": true,
   "story_number": 7,
   "title": "Topic 25",
-  "japanese_text": "先日、旅客機が<u>乗っ取られる</u>事件が発生し、乗客が<u>人質</u>として<u>巻き込まれた</u>。後日、政府から犯人による<u>声明</u>が発表され、数名の乗客が<u>拘束され</u>ていることが明らかになった。その他の乗客については<u>生死</u>不明である。",
+  "japanese_text": "先日、旅客機が乗っ取られる事件が発生し、乗客が<u>人質</u>として巻き込まれた。後日、政府から犯人による<u>声明</u>が発表され、数名の乗客が<u>拘束</u>されていることが明らかになった。その他の乗客については<u>生死</u>不明である。",
   "english_translation": "Recently, an airliner was hijacked and passengers were involved in the incident as hostages. Later, a statement by the perpetrators was released by the government, revealing that several passengers had been detained. As for the other passengers, their safety is unknown.",
   "annotated_words": [
-    {
-      "word_id": "n1_2396",
-      "word_number": 2396,
-      "kanji": "乗っ取る",
-      "furigana": "のっとる",
-      "meaning_en": "hijack, take over"
-    },
     {
       "word_id": "n1_2397",
       "word_number": 2397,
       "kanji": "人質",
       "furigana": "ひとじち",
       "meaning_en": "hostage"
-    },
-    {
-      "word_id": "n1_2398",
-      "word_number": 2398,
-      "kanji": "巻き込む",
-      "furigana": "まきこむ",
-      "meaning_en": "catch, involve"
     },
     {
       "word_id": "n1_2399",
@@ -47,5 +33,7 @@
       "furigana": "せいし",
       "meaning_en": "alive or dead, safety"
     }
-  ]
+  ],
+  "id": "332_1",
+  "page_story": "332_1"
 }

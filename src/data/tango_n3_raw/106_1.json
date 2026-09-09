@@ -1,6 +1,6 @@
 {
   "title": "Topic 7",
-  "japanese_text": "<ruby>久<rt>ひさ</rt></ruby>しぶりに<ruby>中国人<rt>ちゅうごくじん</rt></ruby>の<ruby><u>友人</u><rt>ゆうじん</rt></ruby>が<ruby>来日<rt>らいにち</rt></ruby>した。<ruby><u>母親</u><rt>ははおや</rt></ruby>が「<u>ようこそ</u>、<u>よくいらっしゃいました</u>」と<ruby>言<rt>い</rt></ruby>うと、<ruby>友人<rt>ゆうじん</rt></ruby>は「<u>ご<ruby>無沙汰</u><rt>ぶさた</rt></ruby>しています」とあいさつした。",
+  "japanese_text": "<ruby>久<rt>ひさ</rt></ruby>しぶりに<ruby>中国人<rt>ちゅうごくじん</rt></ruby>の<u><ruby>友人<rt>ゆうじん</rt></ruby></u>が<ruby>来日<rt>らいにち</rt></ruby>した。<u><ruby>母親<rt>ははおや</rt></ruby></u>が「<u>ようこそ</u>、<u>よくいらっしゃいました</u>」と<ruby>言<rt>い</rt></ruby>うと、<ruby>友人<rt>ゆうじん</rt></ruby>は「<u>ご<ruby>無沙汰<rt>ぶさた</rt></ruby></u>しています」とあいさつした。",
   "english_translation": "A Chinese friend of mine came to Japan for the first time in a while. When my mother said, \"Welcome, I'm glad you made it,\" my friend greeting her by saying, \"Long time no see.\"",
   "annotated_words": [
     {
@@ -41,5 +41,6 @@
   ],
   "story_number": 1,
   "is_story": true,
-  "page_story": "106_1"
+  "page_story": "106_1",
+  "id": "106_1"
 }

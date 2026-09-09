@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 5,
   "title": "Topic 14",
-  "japanese_text": "大規模なデモが行われるため、<u>一時的に</u>道路が<u>封鎖されている</u>。周辺の道でも、<u>道端</u>に立っている警官が<u>徐行する</u>ように呼びかけていて、ラッシュ時<u>並み</u>の渋滞が発生している。",
+  "japanese_text": "大規模なデモが行われるため、<u>一時的</u>に道路が<u>封鎖</u>されている。周辺の道でも、<u>道端</u>に立っている警官が<u>徐行する</u>ように呼びかけていて、ラッシュ時<u>並み</u>の渋滞が発生している。",
   "english_translation": "The road has been temporarily blocked due to a large demonstration. Even on the surrounding streets, police officers standing by the roadside are urging people to slow down, causing traffic jams similar to rush hour.",
   "annotated_words": [
     {
@@ -40,5 +40,7 @@
       "furigana": "～なみ",
       "meaning_en": "equivalent to ~, similar to ~"
     }
-  ]
+  ],
+  "id": "170_1",
+  "page_story": "170_1"
 }

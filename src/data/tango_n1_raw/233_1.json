@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 31,
   "title": "Topic 18",
-  "japanese_text": "会社の<u>備品</u>を購入する際は、<u>経費</u>で購入する。我が社では、10万円以上のものを購入する場合は、複数の業者から<u>見積もり</u>を取り社内で<u>検討する</u>。購入後には、業者が作成した<u>明細書</u>と領収書を<u>経理</u>に提出する。",
+  "japanese_text": "会社の<u>備品</u>を購入する際は、<u>経費</u>で購入する。我が社では、10万円以上のものを購入する場合は、複数の業者から<u>見積もり</u>を取り社内で<u>検討</u>する。購入後には、業者が作成した<u>明細書</u>と領収書を<u>経理</u>に提出する。",
   "english_translation": "When equipment is purchased for a company, it is purchased as an expense. In our company, when purchasing items costing more than 100,000 yen, we obtain quotes from multiple vendors and review them internally. After the purchase, we submit a statement prepared by the vendor and a receipt to our accounting department.",
   "annotated_words": [
     {
@@ -27,13 +27,6 @@
       "meaning_en": "quote, estimate"
     },
     {
-      "word_id": "n1_1646",
-      "word_number": 1646,
-      "kanji": "見積もる",
-      "furigana": "みつもる",
-      "meaning_en": "quote"
-    },
-    {
       "word_id": "n1_1647",
       "word_number": 1647,
       "kanji": "検討",
@@ -54,5 +47,7 @@
       "furigana": "けいり",
       "meaning_en": "detailed accounting"
     }
-  ]
+  ],
+  "id": "233_1",
+  "page_story": "233_1"
 }

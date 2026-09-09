@@ -1,7 +1,7 @@
 {
   "title": "Topic 5 テクノロジー",
   "audio_id": "78",
-  "japanese_text": "A：期末試験の<u>採点</u>結果を<u>リスト</u>にしたんだけど、ファイルが見つからなくて…。\nB：保存せずに終了したとか？\nA：そうかも…また<u>作成する</u>しかないかな。\nB：自動保存をオンにしておくといいよ。そうすれば、<u>改行</u>でも<u>挿入</u>でも<u>削除</u>でも、<u>更新する</u>たびに<u>勝手に</u>保存されるよ。",
+  "japanese_text": "A：期末試験の<u>採点</u>結果を<u>リスト</u>にしたんだけど、ファイルが見つからなくて…。\nB：保存せずに終了したとか？\nA：そうかも…また<u>作成</u>するしかないかな。\nB：自動保存をオンにしておくといいよ。そうすれば、<u>改行</u>でも<u>挿入</u>でも<u>削除</u>でも、<u>更新</u>するたびに<u>勝手</u>に保存されるよ。",
   "page_story": "74_1",
   "english_translation": "A: I made a list of the final exam scores, but I can't find the file... B: Did you exit without saving it or something? A: Maybe... I'll have to create it again. B: You should turn on auto-save. That way, every time you update, whether it's a line break, insertion, or deletion, it will save automatically.",
   "annotated_words": [
@@ -62,5 +62,6 @@
       "meaning_en": "automatic, selfish, for oneself"
     }
   ],
-  "is_story": true
+  "is_story": true,
+  "id": "74_1"
 }

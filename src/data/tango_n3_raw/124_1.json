@@ -1,6 +1,6 @@
 {
   "title": "Topic 8",
-  "japanese_text": "<u>リーダー</u>が<ruby>本気<rt>ほんき</rt></ruby>になった。<ruby><u>講習</u><rt>こうしゅう</rt></ruby>に<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>んで<ruby><u>競争</u>力<rt>きょうそうりょく</rt></ruby>を<ruby>高<rt>たか</rt></ruby>めようとしている。",
+  "japanese_text": "<u>リーダー</u>が<ruby>本気<rt>ほんき</rt></ruby>になった。<u><ruby>講習<rt>こうしゅう</rt></ruby></u>に<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>んで<u><ruby>競争力<rt>きょうそうりょく</rt></ruby></u>を<ruby>高<rt>たか</rt></ruby>めようとしている。",
   "english_translation": "The leader became serious. She is applying for courses and trying to increase her competitiveness.",
   "annotated_words": [
     {
@@ -27,5 +27,6 @@
   ],
   "story_number": 21,
   "is_story": true,
-  "page_story": "124_1"
+  "page_story": "124_1",
+  "id": "124_1"
 }

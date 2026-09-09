@@ -1,6 +1,6 @@
 {
   "title": "Topic 2",
-  "japanese_text": "<u>ほこり</u>は<ruby>部屋<rt>へや</rt></ruby>の<ruby><u>隅</u><rt>すみ</rt></ruby>にたまります。<ruby><u>床</u><rt>ゆか</rt></ruby>をよく<ruby>掃除<rt>そうじ</rt></ruby>しましょう。",
+  "japanese_text": "<u>ほこり</u>は<ruby>部屋<rt>へや</rt></ruby>の<u><ruby>隅<rt>すみ</rt></ruby></u>にたまります。<u><ruby>床<rt>ゆか</rt></ruby></u>をよく<ruby>掃除<rt>そうじ</rt></ruby>しましょう。",
   "english_translation": "Dust can accumulate in the corners of rooms. Be sure to clean the floor well.",
   "annotated_words": [
     {
@@ -27,5 +27,6 @@
   ],
   "story_number": 4,
   "is_story": true,
-  "page_story": "37_2"
+  "page_story": "37_2",
+  "id": "37_2"
 }

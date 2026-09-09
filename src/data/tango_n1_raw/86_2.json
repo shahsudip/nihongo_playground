@@ -2,16 +2,9 @@
   "is_story": true,
   "story_number": 9,
   "title": "Topic 7",
-  "japanese_text": "「フィガロの結婚」はモーツァルトが<u>手掛けた</u>有名な<u>オペラ</u>で、<u>貴族</u>に<u>仕える</u>フィガロの結婚にまつわる事件を描いた<u>喜劇</u>だ。<u>弾む</u>ようなリズムの明るい曲が多く、初心者でも楽しく見られるだろう。",
+  "japanese_text": "「フィガロの結婚」はモーツァルトが手掛けた有名な<u>オペラ</u>で、<u>貴族</u>に<u>仕える</u>フィガロの結婚にまつわる事件を描いた<u>喜劇</u>だ。<u>弾む</u>ようなリズムの明るい曲が多く、初心者でも楽しく見られるだろう。",
   "english_translation": "The Marriage of Figaro is a famous opera worked on by Mozart, and it is a comedy that depicts incidents surrounding the marriage of Figaro who serves the nobility. It has many bright songs with bouncing rhythms, so even beginners can enjoy it.",
   "annotated_words": [
-    {
-      "word_id": "n1_0532",
-      "word_number": 532,
-      "kanji": "手掛ける",
-      "furigana": "てがける",
-      "meaning_en": "handle, work on"
-    },
     {
       "word_id": "n1_0533",
       "word_number": 533,
@@ -47,5 +40,7 @@
       "furigana": "はずむ",
       "meaning_en": "bounce"
     }
-  ]
+  ],
+  "id": "86_2",
+  "page_story": "86_2"
 }

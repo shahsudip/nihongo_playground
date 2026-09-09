@@ -1,17 +1,32 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "いつも<ruby>夕食<rt>ゆうしょく</rt></ruby>は<ruby>簡単<rt>かんたん</rt></ruby>な<ruby>料理<rt>りょうり</rt></ruby>やスーパーのおそうざいで済<ruby><rt>す</rt></ruby>ませている。外食<ruby><rt>がいしょく</rt></ruby>もしない。でも、<ruby>結婚<rt>けっこん</rt></ruby><u>記念日</u><ruby><rt>きねんび</rt></ruby>ぐらいはぜいたくしたい。",
+  "japanese_text": "いつも<ruby>夕食<rt>ゆうしょく</rt></ruby>は<ruby>簡単<rt>かんたん</rt></ruby>な<ruby>料理<rt>りょうり</rt></ruby>やスーパーのおそうざいで済<ruby><rt>す</rt></ruby>ませている。<u>外食</u><ruby><rt>がいしょく</rt></ruby>もしない。でも、<ruby>結婚<rt>けっこん</rt></ruby><u>記念日</u><ruby><rt>きねんび</rt></ruby>ぐらいは<u>ぜいたく</u>したい。",
   "english_translation": "My dinner is always something simple or some side dish I bought at the supermarket. I don't eat out. But I do want to have something luxurious on my wedding anniversary at least.",
   "annotated_words": [
     {
-      "word_id": "n3_0077",
-      "word_number": 77,
+      "word_id": "n3_0114",
+      "word_number": 114,
+      "kanji": "外食[する]",
+      "furigana": "がいしょく",
+      "meaning_en": "eating out, eat out"
+    },
+    {
+      "word_id": "n3_0115",
+      "word_number": 115,
       "kanji": "記念日",
       "furigana": "きねんび",
       "meaning_en": "anniversary"
+    },
+    {
+      "word_id": "n3_0116",
+      "word_number": 116,
+      "kanji": "ぜいたく[する]",
+      "furigana": "",
+      "meaning_en": "luxury, do something luxurious"
     }
   ],
   "story_number": 25,
   "is_story": true,
-  "page_story": "31_1"
+  "page_story": "31_1",
+  "id": "31_1"
 }

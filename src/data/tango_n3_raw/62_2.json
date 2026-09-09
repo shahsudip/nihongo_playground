@@ -1,6 +1,6 @@
 {
   "title": "Topic 4",
-  "japanese_text": "<ruby><u>眉毛</u><rt>まゆげ</rt></ruby><ruby>を<rt></rt></ruby><ruby>少<rt>すこ</rt></ruby><ruby>し<rt></rt></ruby><ruby>剃<rt>そ</rt></ruby><ruby>って、<u>まつ<rt></rt></ruby><ruby>毛</u><rt>げ</rt></ruby><ruby>に<u>パーマ</u>をかけたら、まるで<rt></rt></ruby><ruby>別人<rt>べつじん</rt></ruby><ruby>の<rt></rt></ruby><ruby>ようになった。<rt></rt></ruby>",
+  "japanese_text": "<u><ruby>眉毛<rt>まゆげ</rt></ruby></u><ruby>を<rt></rt></ruby><ruby>少<rt>すこ</rt></ruby><ruby>し<rt></rt></ruby><ruby>剃<rt>そ</rt></ruby><u><ruby>って、まつ<rt></rt></ruby><ruby>毛<rt>げ</rt></ruby></u><u><ruby>にパーマをかけたら、まるで<rt></rt></ruby></u><ruby>別人<rt>べつじん</rt></ruby><ruby>の<rt></rt></ruby><ruby>ようになった。<rt></rt></ruby>",
   "english_translation": "When I shave my eyebrows a little and perm my eyelashes, it's like I become another person.",
   "annotated_words": [
     {
@@ -27,5 +27,6 @@
   ],
   "story_number": 2,
   "is_story": true,
-  "page_story": "62_2"
+  "page_story": "62_2",
+  "id": "62_2"
 }

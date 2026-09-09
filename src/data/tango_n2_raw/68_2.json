@@ -1,7 +1,7 @@
 {
   "title": "Topic 5 テクノロジー",
   "audio_id": "70",
-  "japanese_text": "インターネットを通して、世界中の情報が<u>手軽に</u>手に入れられるようになった。それによって社会・経済に大きな革命が起きたことを<u>ＩＴ革命</u>という。",
+  "japanese_text": "インターネットを通して、世界中の情報が<u>手軽</u>に手に入れられるようになった。それによって社会・経済に大きな<u>革命</u>が起きたことを<u>ＩＴ</u>革命という。",
   "page_story": "68_2",
   "english_translation": "Through the Internet, information from all over the world has become readily available. This has led to a major social and economic revolution, known as the IT revolution.",
   "annotated_words": [
@@ -27,5 +27,6 @@
       "meaning_en": "revolution"
     }
   ],
-  "is_story": true
+  "is_story": true,
+  "id": "68_2"
 }

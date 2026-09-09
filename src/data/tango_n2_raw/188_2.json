@@ -3,7 +3,7 @@
   "story_number": 9,
   "title": "Topic 14 天気",
   "page_story": "188_2",
-  "japanese_text": "A：さっきの<u>夕立</u>、ひどかったね。急に<u>ざあざあ</u>降ってくるから服が<u>びしょびしょだ</u>。\nB：ほんとだね。あ、<u>虹</u>！\nA：え、どこ？\nB：あそこ、<u>丘</u>の方。",
+  "japanese_text": "A：さっきの<u>夕立</u>、ひどかったね。急に<u>ざあざあ</u>降ってくるから服が<u>びしょびしょ</u>だ。\nB：ほんとだね。あ、<u>虹</u>！\nA：え、どこ？\nB：あそこ、<u>丘</u>の方。",
   "english_translation": "A: What a terrible sudden shower we just had. My clothes are soaking wet because it just started pouring down. B: It really was. Oh look, a rainbow! A: Where? B: Over there, toward the hill.",
   "annotated_words": [
     {
@@ -41,5 +41,6 @@
       "furigana": "おか",
       "meaning_en": "hill"
     }
-  ]
+  ],
+  "id": "188_2"
 }

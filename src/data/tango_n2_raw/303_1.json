@@ -3,7 +3,7 @@
   "story_number": 19,
   "title": "Topic 21 社会",
   "page_story": "303_1",
-  "japanese_text": "農業や<u>漁業</u>は<u>深刻な</u>人手不足が問題で、必要な<u>労働力</u>が外国人によって<u>補われている</u>。さらに、農業では<u>農村</u>の<u>発展</u>、<u>いわば</u>ＩＣＴの活用などが遅れていることも問題となっている。",
+  "japanese_text": "農業や<u>漁業</u>は<u>深刻な</u>人手不足が問題で、必要な<u>労働力</u>が外国人によって補われている。さらに、農業では<u>農村</u>の<u>発展</u>、<u>いわば</u>ＩＣＴの活用などが遅れていることも問題となっている。",
   "english_translation": "The agriculture and fishing industries are facing serious labor shortages, and the required work force is being supplemented by foreign workers. Furthermore, in agriculture, development in farming communities—the use of ICT, so to speak—is lagging, which is also causing problems.",
   "annotated_words": [
     {
@@ -28,20 +28,6 @@
       "meaning_en": "work force"
     },
     {
-      "word_id": "n2_2131",
-      "word_number": 2131,
-      "kanji": "労働[する]",
-      "furigana": "ろうどう",
-      "meaning_en": "labor, work"
-    },
-    {
-      "word_id": "n2_2132",
-      "word_number": 2132,
-      "kanji": "補う",
-      "furigana": "おぎなう",
-      "meaning_en": "cover, supplement"
-    },
-    {
       "word_id": "n2_2133",
       "word_number": 2133,
       "kanji": "農村",
@@ -62,5 +48,6 @@
       "furigana": "",
       "meaning_en": "so to speak"
     }
-  ]
+  ],
+  "id": "303_1"
 }

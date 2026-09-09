@@ -1,6 +1,6 @@
 {
   "title": "Topic 7",
-  "japanese_text": "<ruby><u>親戚</u><rt>しんせき</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>を<ruby><u>訪問</u><rt>ほうもん</rt></ruby>したら、<u>おじさん</u>がいた。あいさつをし、「<u>ところで</u>、<u>おばさん</u>は」と<ruby>聞<rt>き</rt></ruby>くと、<ruby>別々<rt>べつべつ</rt></ruby>に<ruby>暮<rt>く</rt></ruby>らしているらしい。<ruby>今年<rt>ことし</rt></ruby>の<ruby><u>年賀状</u><rt>ねんがじょう</rt></ruby>におばさんの<ruby>名前<rt>なまえ</rt></ruby>がなかった。",
+  "japanese_text": "<u><ruby>親戚<rt>しんせき</rt></ruby></u>の<ruby>家<rt>いえ</rt></ruby>を<u><ruby>訪問<rt>ほうもん</rt></ruby></u>したら、<u>おじさん</u>がいた。あいさつをし、「<u>ところで</u>、<u>おばさん</u>は」と<ruby>聞<rt>き</rt></ruby>くと、<ruby>別々<rt>べつべつ</rt></ruby>に<ruby>暮<rt>く</rt></ruby>らしているらしい。<ruby>今年<rt>ことし</rt></ruby>の<u><ruby>年賀状<rt>ねんがじょう</rt></ruby></u>におばさんの<ruby>名前<rt>なまえ</rt></ruby>がなかった。",
   "english_translation": "I went to visit a relative's house, and my uncle was there. I greeted him and asked \"By the way, where's my aunt?,\" and it seems that they're now living separately. Speaking of which, this year's New Year's card didn't have my aunt's name on it.",
   "annotated_words": [
     {
@@ -48,5 +48,6 @@
   ],
   "story_number": 3,
   "is_story": true,
-  "page_story": "107_1"
+  "page_story": "107_1",
+  "id": "107_1"
 }

@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 9,
   "title": "Topic 18",
-  "japanese_text": "私はしなければならないことを<u>後回し</u>にしがちだ。子どもの頃、夏休みの宿題を早く終わらせるよう、いつも家族に<u>急かされて</u>いた。計画を立ててその通りやれば夏休みを<u>有意義に</u>過ごせると分かってはいるが、なかなかできない。そして、<u>見かねた</u>家族が手伝ってくれることを<u>当てにして</u>いた。",
+  "japanese_text": "私はしなければならないことを<u>後回し</u>にしがちだ。子どもの頃、夏休みの宿題を早く終わらせるよう、いつも家族に急かされていた。計画を立ててその通りやれば夏休みを<u>有意義</u>に過ごせると分かってはいるが、なかなかできない。そして、見かねた家族が手伝ってくれることを<u>当てに</u>していた。",
   "english_translation": "I tend to put off whatever I need to do. When I was a child, my family always urged me to finish my summer vacation homework as soon as possible. I knew that if I made and followed a plan, I'd be able to spend my summer vacation in a meaningful way, but I couldn't really do it. I relied on my family, who were unable to stand by and watch, to help me.",
   "annotated_words": [
     {
@@ -13,25 +13,11 @@
       "meaning_en": "postponement, putting off"
     },
     {
-      "word_id": "n1_1517",
-      "word_number": 1517,
-      "kanji": "急かす",
-      "furigana": "せかす",
-      "meaning_en": "push, urge"
-    },
-    {
       "word_id": "n1_1518",
       "word_number": 1518,
       "kanji": "有意義な",
       "furigana": "ゆういぎな",
       "meaning_en": "meaningful"
-    },
-    {
-      "word_id": "n1_1520",
-      "word_number": 1520,
-      "kanji": "見かねる",
-      "furigana": "みかねる",
-      "meaning_en": "unable to stand by and watch"
     },
     {
       "word_id": "n1_1521",
@@ -40,5 +26,7 @@
       "furigana": "あてにする",
       "meaning_en": "depend on, rely on"
     }
-  ]
+  ],
+  "id": "218_1",
+  "page_story": "218_1"
 }

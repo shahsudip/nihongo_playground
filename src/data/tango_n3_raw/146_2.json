@@ -1,7 +1,7 @@
 {
   "id": "146_2",
   "title": "Topic 10",
-  "japanese_text": "<ruby>公園<rt>こうえん</rt></ruby>の<ruby>芝生<rt>しばふ</rt></ruby>に<ruby>寝転<rt>ねころ</rt></ruby>がると、<ruby>土<rt>つち</rt></ruby>の<ruby>香<rt>かお</rt></ruby>りがした。<ruby>蚊<rt>か</rt></ruby>がいたので、<ruby>扇子<rt>せんす</rt></ruby>でたたいた。",
+  "japanese_text": "<ruby>公園<rt>こうえん</rt></ruby>の<u><ruby>芝生<rt>しばふ</rt></ruby></u>に<u><ruby>寝転<rt>ねころ</rt></ruby>がる</u>と、<u><ruby>土<rt>つち</rt></ruby></u>の<u><ruby>香<rt>かお</rt></ruby>り</u>がした。<u><ruby>蚊<rt>か</rt></ruby></u>がいたので、<u><ruby>扇子<rt>せんす</rt></ruby></u>でたたいた。",
   "english_translation": "When I laid out on the grass in the park, it smelled like soil. There was a mosquito, so I swatted it with a folding fan.",
   "annotated_words": [
     {
@@ -13,11 +13,6 @@
       "kanji": "転がる",
       "furigana": "ころがる",
       "meaning": "roll around, roll over"
-    },
-    {
-      "kanji": "転がす",
-      "furigana": "ころがす",
-      "meaning": "roll"
     },
     {
       "kanji": "土",
@@ -39,5 +34,7 @@
       "furigana": "せんす",
       "meaning": "fan"
     }
-  ]
+  ],
+  "page_story": "146_2",
+  "is_story": true
 }

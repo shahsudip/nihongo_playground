@@ -1,6 +1,6 @@
 {
   "title": "Topic 5",
-  "japanese_text": "<ruby>Ａ：あれ、ここ<rt></rt></ruby><ruby><u>電波</u><rt>でんぱ</rt></ruby><ruby>悪<rt>わる</rt></ruby><ruby>い？ なんか<rt></rt></ruby><ruby>全然表示<rt>ぜんぜんひょうじ</rt></ruby><ruby>されないんだけど。<rt></rt></ruby>\n<ruby>Ｂ：ん？ こっちは<rt></rt></ruby><ruby>問題<rt>もんだい</rt></ruby><ruby>ないけど。<rt></rt></ruby>\n<ruby>Ａ：あ、しまった。<rt></rt></ruby><ruby>今月通信量<rt>こんげつつうしんりょう</rt></ruby><ruby>が<rt></rt></ruby><ruby>多<rt>おお</rt></ruby><ruby>くて、<rt></rt></ruby><ruby><u>速度</u><u>制限</u><rt>そくどせいげん</rt></ruby><ruby>かかったんだっ<rt></rt></ruby><ruby>た。<rt></rt></ruby><ruby>動画見<rt>どうがみ</rt></ruby><ruby>すぎたよ。<rt></rt></ruby>",
+  "japanese_text": "<ruby>Ａ：あれ、ここ<rt></rt></ruby><u><ruby>電波<rt>でんぱ</rt></ruby></u><ruby>悪<rt>わる</rt></ruby><ruby>い？ なんか<rt></rt></ruby><ruby>全然表示<rt>ぜんぜんひょうじ</rt></ruby><ruby>されないんだけど。<rt></rt></ruby>\n<ruby>Ｂ：ん？ こっちは<rt></rt></ruby><ruby>問題<rt>もんだい</rt></ruby><ruby>ないけど。<rt></rt></ruby>\n<ruby>Ａ：あ、しまった。<rt></rt></ruby><ruby>今月通信量<rt>こんげつつうしんりょう</rt></ruby><ruby>が<rt></rt></ruby><ruby>多<rt>おお</rt></ruby><ruby>くて、<rt></rt></ruby><u><u><ruby>速度制限<rt>そくどせいげん</rt></ru</u>by></u><ruby>かかったんだっ<rt></rt></ruby><ruby>た。<rt></rt></ruby><ruby>動画見<rt>どうがみ</rt></ruby><ruby>すぎたよ。<rt></rt></ruby>",
   "english_translation": "A: Huh, reception is bad here. Nothing is being displayed at all.\nB: What? I'm not having any problems.\nA: Oh, my mistake. I had a lot of communication traffic this month, and they put a speed limit on my phone. I watched too many videos.",
   "annotated_words": [
     {
@@ -27,5 +27,6 @@
   ],
   "story_number": 8,
   "is_story": true,
-  "page_story": "77_2"
+  "page_story": "77_2",
+  "id": "77_2"
 }

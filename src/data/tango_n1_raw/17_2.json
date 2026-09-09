@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 7,
   "title": "Topic 1",
-  "japanese_text": "<u>ビラ</u>を見て新しくできたお店に行ってみた。料理の味がいいのはもちろんのこと、店内も<u>簡素な</u> <u>造り</u>だが<u>味わい</u>のある雰囲気で<u>申し分なかった</u>。",
+  "japanese_text": "<u>ビラ</u>を見て新しくできたお店に行ってみた。料理の味がいいのはもちろんのこと、店内も<u>簡素な</u> <u>造り</u>だが<u>味わい</u>のある雰囲気で申し分なかった。",
   "english_translation": "After seeing a flyer, I went to a restaurant that had just opened. The food was good, of course, and the ambience inside was perfect, featuring a simple design in good taste.",
   "annotated_words": [
     {
@@ -32,13 +32,8 @@
       "kanji": "味わい",
       "furigana": "あじ",
       "meaning_en": "taste"
-    },
-    {
-      "word_id": "n1_0031",
-      "word_number": 31,
-      "kanji": "申し分(が)ない",
-      "furigana": "もうしぶん(が)ない",
-      "meaning_en": "perfect, satisfactory"
     }
-  ]
+  ],
+  "id": "17_2",
+  "page_story": "17_2"
 }

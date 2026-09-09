@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 11,
   "title": "Topic 11",
-  "japanese_text": "デビュー当時は<u>格闘技</u>界の<u>逸材</u>と呼ばれた藤田だったが、デビュー戦は<u>反則負け</u>だった。それ以降は活躍したものの、けがをしてからはすっかり動きが<u>鈍く</u>なってしまっていた。最後の試合では相手にも<u>手加減される</u>ほどだったが、それに怒った藤田は相手を<u>つねって</u>反則負けしてしまった。デビュー戦と最後の試合がどちらも反則負けとは、<u>運命</u>というべきだろうか…。",
+  "japanese_text": "デビュー当時は<u>格闘技</u>界の<u>逸材</u>と呼ばれた藤田だったが、デビュー戦は<u>反則負け</u>だった。それ以降は活躍したものの、けがをしてからはすっかり動きが鈍くなってしまっていた。最後の試合では相手にも<u>手加減</u>されるほどだったが、それに怒った藤田は相手をつねって<u>反則</u>負けしてしまった。デビュー戦と最後の試合がどちらも反則負けとは、<u>運命</u>というべきだろうか…。",
   "english_translation": "At the time of his debut, Fujita was considered a great talent in the martial arts world, but his debut match resulted in a loss by disqualification. After that, although he competed, after suffering an injury his movements became very slow. In his final match, his opponent was taking it easy on him, and in anger, Fujita pinched him, resulting in a loss by disqualification. I suppose it was fate that he lost both his debut and final fights by disqualification.",
   "annotated_words": [
     {
@@ -34,32 +34,11 @@
       "meaning_en": "breach, violate (rules)"
     },
     {
-      "word_id": "n1_0894",
-      "word_number": 894,
-      "kanji": "鈍い",
-      "furigana": "にぶい",
-      "meaning_en": "dull, slow"
-    },
-    {
-      "word_id": "n1_0895",
-      "word_number": 895,
-      "kanji": "鈍る",
-      "furigana": "にぶる",
-      "meaning_en": "become dull"
-    },
-    {
       "word_id": "n1_0896",
       "word_number": 896,
       "kanji": "手加減[する]",
       "furigana": "てかげん",
       "meaning_en": "allowances, take it easy"
-    },
-    {
-      "word_id": "n1_0897",
-      "word_number": 897,
-      "kanji": "つねる",
-      "furigana": "つねる",
-      "meaning_en": "pinch"
     },
     {
       "word_id": "n1_0898",
@@ -68,5 +47,7 @@
       "furigana": "うんめい",
       "meaning_en": "fate"
     }
-  ]
+  ],
+  "id": "134_1",
+  "page_story": "134_1"
 }

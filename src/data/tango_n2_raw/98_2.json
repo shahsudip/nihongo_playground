@@ -1,7 +1,7 @@
 {
   "title": "Topic 6 流行",
   "audio_id": "113",
-  "japanese_text": "A：今度の映画の<u>ゲスト</u>キャラクターの役者が<u>公表された</u>けど、<u>お笑い芸人</u>なんだって。ちゃんとプロの声優を使ってほしいよ。\nB：きっと、事務所が<u>推薦した</u>んだろうね。",
+  "japanese_text": "A：今度の映画の<u>ゲスト</u>キャラクターの役者が<u>公表</u>されたけど、<u>お笑い芸人</u>なんだって。ちゃんとプロの声優を使ってほしいよ。\nB：きっと、事務所が<u>推薦</u>したんだろうね。",
   "page_story": "98_2",
   "english_translation": "A: They've announced who's playing the guest character in the upcoming movie, but he's a comedian. I wish they'd get a professional voice actor. B: Well, I'm sure the agency recommended him.",
   "annotated_words": [
@@ -32,14 +32,8 @@
       "kanji": "推薦[する]",
       "furigana": "すいせん",
       "meaning_en": "recommendation, recommend"
-    },
-    {
-      "word_id": "n2_0575",
-      "word_number": 575,
-      "kanji": "＋ 推薦状",
-      "furigana": "すいせんじょう",
-      "meaning_en": "letter of recommendation"
     }
   ],
-  "is_story": true
+  "is_story": true,
+  "id": "98_2"
 }

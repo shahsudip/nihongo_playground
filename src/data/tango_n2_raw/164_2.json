@@ -3,7 +3,7 @@
   "story_number": 6,
   "title": "Topic 12 住",
   "page_story": "164_2",
-  "japanese_text": "A：見てこのカタログ。家の壁がコンクリートって、なんか<u>人工的で</u>かっこいいよね。中の<u>インテリア</u>も<u>洗練されて</u>るし、<u>設備</u>も充実してるって。\nB：うーん。私はもっと木をたくさん使った<u>開放的な</u>家がいいな。",
+  "japanese_text": "A：見てこのカタログ。家の壁がコンクリートって、なんか<u>人工的</u>でかっこいいよね。中の<u>インテリア</u>も<u>洗練</u>されてるし、<u>設備</u>も充実してるって。\nB：うーん。私はもっと木をたくさん使った<u>開放的な</u>家がいいな。",
   "english_translation": "A: Look at this catalog. The walls of the house are concrete, so it looks kind of artificial and cool, doesn't it? The interior is sophisticated too, and it's fully equipped, apparently. B: Hmmm. I prefer more open designs using plenty of timber.",
   "annotated_words": [
     {
@@ -40,13 +40,7 @@
       "kanji": "開放的な",
       "furigana": "かいほうてきな",
       "meaning_en": "expansive, open"
-    },
-    {
-      "word_id": "n2_1052",
-      "word_number": 1052,
-      "kanji": "開放[する]",
-      "furigana": "かいほう",
-      "meaning_en": "liberation, liberate"
     }
-  ]
+  ],
+  "id": "164_2"
 }

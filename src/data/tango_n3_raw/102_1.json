@@ -1,6 +1,6 @@
 {
   "title": "Topic 6",
-  "japanese_text": "コンサートのチケットは<ruby><u>夜中</u><rt>よなか</rt></ruby>に<ruby><u>発売</u><rt>はつばい</rt></ruby>されたのに、アクセスが<ruby><u>集中</u><rt>しゅうちゅう</rt></ruby>し、<u>たった</u>１<ruby>分<rt>ぷん</rt></ruby>で<ruby>売<rt>う</rt></ruby>り<ruby>切<rt>き</rt></ruby>れた。",
+  "japanese_text": "コンサートのチケットは<u><ruby>夜中<rt>よなか</rt></ruby></u>に<u><ruby>発売<rt>はつばい</rt></ruby></u>されたのに、アクセスが<u><ruby>集中<rt>しゅうちゅう</rt></ruby></u>し、<u>たった</u>１<ruby>分<rt>ぷん</rt></ruby>で<ruby>売<rt>う</rt></ruby>り<ruby>切<rt>き</rt></ruby>れた。",
   "english_translation": "The tickets for the concert went on sale during the night, but access was concentrated, and they sold out in just one minute.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
   ],
   "story_number": 17,
   "is_story": true,
-  "page_story": "102_1"
+  "page_story": "102_1",
+  "id": "102_1"
 }

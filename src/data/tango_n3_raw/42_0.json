@@ -1,6 +1,6 @@
 {
   "title": "Topic 2",
-  "japanese_text": "<ruby>冷<rt>ひ</rt></ruby>やしておいたビールを<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>から<ruby>取<rt>と</rt></ruby>り<ruby>出<rt>だ</rt></ruby>し、<ruby>飲<rt>の</rt></ruby>みながらゆっくり<ruby>食事<rt>しょくじ</rt></ruby>をする。これが<ruby>私<rt>わたし</rt></ruby>の<ruby><u>休日</u><rt>きゅうじつ</rt></ruby>の<ruby>喜<rt>よろこ</rt></ruby>びだ。",
+  "japanese_text": "<ruby>冷<rt>ひ</rt></ruby>やしておいたビールを<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>から<ruby>取<rt>と</rt></ruby>り<ruby>出<rt>だ</rt></ruby>し、<ruby>飲<rt>の</rt></ruby>みながらゆっくり<ruby>食事<rt>しょくじ</rt></ruby>をする。これが<ruby>私<rt>わたし</rt></ruby>の<u><ruby>休日<rt>きゅうじつ</rt></ruby></u>の<ruby>喜<rt>よろこ</rt></ruby>びだ。",
   "english_translation": "Taking out a chilled beer from the refrigerator and slowly eating a meal while drinking. This is my holiday joy.",
   "annotated_words": [
     {
@@ -13,5 +13,6 @@
   ],
   "story_number": 13,
   "is_story": true,
-  "page_story": "42_0"
+  "page_story": "42_0",
+  "id": "42_0"
 }

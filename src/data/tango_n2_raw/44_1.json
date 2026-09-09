@@ -3,7 +3,7 @@
   "story_number": 2,
   "title": "Topic 3 買い物",
   "page_story": "44_1",
-  "japanese_text": "A：こないだ会社の人たちと飲みに行ったとき、全員分僕が払っておいたんだよ。それで昨日、どうやって<u>精算</u>しようかと思って先輩に相談してみたら「１円まできれいに分けてくれ」って言われちゃって…。\nB：うわー、<u>けちだ</u>ねー。\nA：その先輩だけが<u>高価な</u>お酒をたくさん飲んでたのに…。先月<u>賞与</u>が出て、やっと少し貯金ができたところなんだけどな。",
+  "japanese_text": "A：こないだ会社の人たちと飲みに行ったとき、全員分僕が払っておいたんだよ。それで昨日、どうやって<u>精算</u>しようかと思って先輩に相談してみたら「１円まできれいに分けてくれ」って言われちゃって…。\nB：うわー、<u>けち</u>だねー。\nA：その先輩だけが<u>高価な</u>お酒をたくさん飲んでたのに…。先月<u>賞与</u>が出て、やっと少し貯金ができたところなんだけどな。",
   "english_translation": "A: The other night, I went out for drinks with some people from work and I paid for everyone. Yesterday, I asked a senior colleague for advice on how to settle the bill, and he told me to split it evenly, right down to the last yen... B: Wow, that's so stingy. A: And he was the only one drinking lots of expensive alcohol... Damn, I just got my bonus last month and finally saved up a little money.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
       "furigana": "しょうよ",
       "meaning_en": "bonus (salary)"
     }
-  ]
+  ],
+  "id": "44_1"
 }

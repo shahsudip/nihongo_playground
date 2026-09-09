@@ -3,7 +3,7 @@
   "story_number": 10,
   "title": "Topic 13 町",
   "page_story": "178_2",
-  "japanese_text": "交通系<u>ICカード</u>の導入により、バスの<u>運賃</u>を<u>スマートに</u>支払うことができるようになった。以前は<u>遅延する</u>ことがあったが、今では<u>解消された</u>。",
+  "japanese_text": "交通系<u>ICカード</u>の導入により、バスの<u>運賃</u>を<u>スマート</u>に支払うことができるようになった。以前は<u>遅延</u>することがあったが、今では<u>解消</u>された。",
   "english_translation": "By introducing a transportation IC card, you can now pay bus fares in a contactless way. Previously there were times when buses were delayed, but that has now been eliminated.",
   "annotated_words": [
     {
@@ -41,5 +41,6 @@
       "furigana": "かいしょう",
       "meaning_en": "elimination, eliminate"
     }
-  ]
+  ],
+  "id": "178_2"
 }

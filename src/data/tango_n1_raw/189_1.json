@@ -1,8 +1,8 @@
 {
-  "is_story": false,
+  "is_story": true,
   "story_number": 11,
   "title": "Topic 16",
-  "japanese_text": "A：<u>足取り</u>が重いけど大丈夫？\nB：歩きすぎて<u>足が棒になってる</u>。<u>頂上</u>への<u>到達</u>は厳しいかも…。\nA：登り始めたときは、頂上まで行くって<u>意気込んで</u>たじゃん。\nB：もっと<u>身軽に</u>して来るべきだった…。ちょっと休んでもいい？少し休めば<u>復活する</u>かも。",
+  "japanese_text": "A：<u>足取り</u>が重いけど大丈夫？\nB：歩きすぎて足が棒になってる。<u>頂上</u>への<u>到達</u>は厳しいかも…。\nA：登り始めたときは、頂上まで行くって意気込んでたじゃん。\nB：もっと<u>身軽</u>にして来るべきだった…。ちょっと休んでもいい？少し休めば<u>復活</u>するかも。",
   "english_translation": "A: Your steps are very slow. Are you all right? B: My legs feel heavy from too much walking. I might have a tough time reaching the summit ... A: When we started climbing, you were so enthusiastic about making it to the top. B: I should have packed more lightly ... Can we take a break? Maybe a little rest will revive me.",
   "annotated_words": [
     {
@@ -11,13 +11,6 @@
       "kanji": "足取り",
       "furigana": "あしど",
       "meaning_en": "gait, steps"
-    },
-    {
-      "word_id": "n1_1316",
-      "word_number": 1316,
-      "kanji": "足が棒になる",
-      "furigana": "あしがぼうになる",
-      "meaning_en": "legs feel heavy"
     },
     {
       "word_id": "n1_1317",
@@ -34,13 +27,6 @@
       "meaning_en": "arrival, reach"
     },
     {
-      "word_id": "n1_1319",
-      "word_number": 1319,
-      "kanji": "意気込む",
-      "furigana": "いきごむ",
-      "meaning_en": "be enthusiastic"
-    },
-    {
       "word_id": "n1_1320",
       "word_number": 1320,
       "kanji": "身軽な",
@@ -54,5 +40,7 @@
       "furigana": "ふっかつ",
       "meaning_en": "recovery, revive"
     }
-  ]
+  ],
+  "id": "189_1",
+  "page_story": "189_1"
 }

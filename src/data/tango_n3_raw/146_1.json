@@ -1,7 +1,7 @@
 {
   "id": "146_1",
   "title": "Topic 10",
-  "japanese_text": "<ruby>郊外<rt>こうがい</rt></ruby>に<ruby>暮<rt>く</rt></ruby>らすと、アクセスが<ruby>悪<rt>わる</rt></ruby>いというイメージがある。しかし、<ruby>実際<rt>じっさい</rt></ruby>には<ruby>地下鉄一本<rt>ちかてついっぽん</rt></ruby>で<ruby>通勤<rt>つうきん</rt></ruby>できる。",
+  "japanese_text": "<u><ruby>郊外<rt>こうがい</rt></ruby></u>に<u><ruby>暮<rt>く</rt></ruby>らす</u>と、<u>アクセス</u>が<ruby>悪<rt>わる</rt></ruby>いという<u>イメージ</u>がある。しかし、<ruby>実際<rt>じっさい</rt></ruby>には<ruby>地下鉄一本<rt>ちかてついっぽん</rt></ruby>で<u><ruby>通勤<rt>つうきん</rt></ruby></u>できる。",
   "english_translation": "People tend to imagine that living in the suburbs means having poor access, but I can actually commute to work with just one subway line.",
   "annotated_words": [
     {
@@ -13,11 +13,6 @@
       "kanji": "暮らす",
       "furigana": "くらす",
       "meaning": "live"
-    },
-    {
-      "kanji": "暮らし",
-      "furigana": "くらし",
-      "meaning": "life, living"
     },
     {
       "kanji": "アクセス［する］",
@@ -34,5 +29,7 @@
       "furigana": "つうきん",
       "meaning": "commuting to work, commute to work"
     }
-  ]
+  ],
+  "page_story": "146_1",
+  "is_story": true
 }

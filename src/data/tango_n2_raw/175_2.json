@@ -3,7 +3,7 @@
   "story_number": 5,
   "title": "Topic 13 町",
   "page_story": "175_2",
-  "japanese_text": "<u>勤め先</u>の<u>真ん前</u>のビルの屋上には、<u>アンテナ</u>が<u>ずらりと</u>並んでいる。最初は不気味に思ったが、最近<u>ようやく</u> <u>見慣れて</u>きた。",
+  "japanese_text": "<u>勤め先</u>の<u>真ん前</u>のビルの屋上には、<u>アンテナ</u>がずらりと並んでいる。最初は不気味に思ったが、最近<u>ようやく</u> 見慣れてきた。",
   "english_translation": "On the roof of the building directly in front of my workplace, there are all these antennas standing in a row. At first I thought they looked weird, but recently I've finally gotten used to seeing them.",
   "annotated_words": [
     {
@@ -28,25 +28,12 @@
       "meaning_en": "antenna"
     },
     {
-      "word_id": "n2_1131",
-      "word_number": 1131,
-      "kanji": "ずらり(と)",
-      "furigana": "",
-      "meaning_en": "in a row"
-    },
-    {
       "word_id": "n2_1132",
       "word_number": 1132,
       "kanji": "ようやく",
       "furigana": "",
       "meaning_en": "finally"
-    },
-    {
-      "word_id": "n2_1133",
-      "word_number": 1133,
-      "kanji": "見慣れる",
-      "furigana": "みなれる",
-      "meaning_en": "get used to"
     }
-  ]
+  ],
+  "id": "175_2"
 }

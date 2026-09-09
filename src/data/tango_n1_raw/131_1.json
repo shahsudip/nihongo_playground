@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 7,
   "title": "Topic 11",
-  "japanese_text": "［サッカー］<u>せんだって</u>行われた試合では、前半は<u>忍耐</u>が求められる苦しい展開でしたが、後半に選手の<u>ポジション</u>を変更してからは、<u>形勢</u>が<u>逆転し</u>、見事に勝利しました。監督の<u>柔軟な</u> <u>采配</u>が光った試合でした。",
+  "japanese_text": "［サッカー］<u>せんだって</u>行われた試合では、前半は<u>忍耐</u>が求められる苦しい展開でしたが、後半に選手の<u>ポジション</u>を変更してからは、<u>形勢</u>が<u>逆転</u>し、見事に勝利しました。監督の<u>柔軟な</u> <u>采配</u>が光った試合でした。",
   "english_translation": "[Soccer] In the match the other day, the first half demanded patience, but in the second half, after a change in the players' positions, the team's prospects turned around and they won a spectacular victory. The coach's flexible leadership shined through in this match.",
   "annotated_words": [
     {
@@ -54,5 +54,7 @@
       "furigana": "さいはい",
       "meaning_en": "command, leadership"
     }
-  ]
+  ],
+  "id": "131_1",
+  "page_story": "131_1"
 }

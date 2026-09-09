@@ -1,6 +1,6 @@
 {
   "title": "Topic 5",
-  "japanese_text": "<ruby><u>個人情報</u><rt>こじんじょうほう</rt></ruby><ruby>を<rt></rt></ruby><ruby><u>送信</u><rt>そうしん</rt></ruby><ruby>するアプリもあるので、インストール<rt></rt></ruby><ruby>前<rt>まえ</rt></ruby><ruby>には<rt></rt></ruby><ruby>注意<rt>ちゅうい</rt></ruby><ruby>が<rt></rt></ruby><ruby>必要<rt>ひつよう</rt></ruby><ruby>だ。<rt></rt></ruby>",
+  "japanese_text": "<u><ruby>個人情報<rt>こじんじょうほう</rt></ruby></u><ruby>を<rt></rt></ruby><u><ruby>送信<rt>そうしん</rt></ruby></u><ruby>するアプリもあるので、インストール<rt></rt></ruby><ruby>前<rt>まえ</rt></ruby><ruby>には<rt></rt></ruby><ruby>注意<rt>ちゅうい</rt></ruby><ruby>が<rt></rt></ruby><ruby>必要<rt>ひつよう</rt></ruby><ruby>だ。<rt></rt></ruby>",
   "english_translation": "There are applications that also add strange programs without permission when installing them. In addition, there are also apps that send personal information without permission, so take care before installing them.",
   "annotated_words": [
     {
@@ -20,5 +20,6 @@
   ],
   "story_number": 22,
   "is_story": true,
-  "page_story": "85_1"
+  "page_story": "85_1",
+  "id": "85_1"
 }

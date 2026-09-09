@@ -1,6 +1,6 @@
 {
   "title": "Topic 3",
-  "japanese_text": "<ruby>今日<rt>きょう</rt></ruby><ruby>は<rt></rt></ruby><ruby>新聞<rt>しんぶん</rt></ruby><ruby>の<rt></rt></ruby><ruby><u>集金</u><rt>しゅうきん</rt></ruby><ruby>がある<rt></rt></ruby><ruby>日<rt>ひ</rt></ruby><ruby>なので、<rt></rt></ruby><ruby><u>口座</u><rt>こうざ</rt></ruby><ruby>からお<rt></rt></ruby><ruby>金<rt>かね</rt></ruby><ruby>を<rt></rt></ruby><ruby>下<rt>お</rt></ruby><ruby>ろして<rt></rt></ruby><ruby>準備<rt>じゅんび</rt></ruby><ruby>しておこう。<rt></rt></ruby>",
+  "japanese_text": "<ruby>今日<rt>きょう</rt></ruby><ruby>は<rt></rt></ruby><ruby>新聞<rt>しんぶん</rt></ruby><ruby>の<rt></rt></ruby><u><ruby>集金<rt>しゅうきん</rt></ruby></u><ruby>がある<rt></rt></ruby><ruby>日<rt>ひ</rt></ruby><ruby>なので、<rt></rt></ruby><u><ruby>口座<rt>こうざ</rt></ruby></u><ruby>からお<rt></rt></ruby><ruby>金<rt>かね</rt></ruby><ruby>を<rt></rt></ruby><ruby>下<rt>お</rt></ruby><ruby>ろして<rt></rt></ruby><ruby>準備<rt>じゅんび</rt></ruby><ruby>しておこう。<rt></rt></ruby>",
   "english_translation": "Today is the day they come to collect newspaper subscription fees, so I should withdraw some money from my account and get ready.",
   "annotated_words": [
     {
@@ -20,5 +20,6 @@
   ],
   "story_number": 8,
   "is_story": true,
-  "page_story": "55_2"
+  "page_story": "55_2",
+  "id": "55_2"
 }

@@ -1,6 +1,6 @@
 {
   "title": "Topic 8",
-  "japanese_text": "<ruby>今回<rt>こんかい</rt></ruby>は<ruby>予想<rt>よそう</rt></ruby>が<ruby>外<rt>はず</rt></ruby>れ、<ruby><u>優勝</u><rt>ゆうしょう</rt></ruby>した<u>チーム</u>を<ruby>当<rt>あ</rt></ruby>てることができなかった。",
+  "japanese_text": "<ruby>今回<rt>こんかい</rt></ruby>は<ruby>予想<rt>よそう</rt></ruby>が<ruby>外<rt>はず</rt></ruby>れ、<u><ruby>優勝<rt>ゆうしょう</rt></ruby></u>した<u>チーム</u>を<ruby>当<rt>あ</rt></ruby>てることができなかった。",
   "english_translation": "This time, my expectations were wrong, and I was unable to guess the winning team.",
   "annotated_words": [
     {
@@ -20,5 +20,6 @@
   ],
   "story_number": 22,
   "is_story": true,
-  "page_story": "124_2"
+  "page_story": "124_2",
+  "id": "124_2"
 }

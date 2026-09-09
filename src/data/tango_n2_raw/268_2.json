@@ -3,7 +3,7 @@
   "story_number": 4,
   "title": "Topic 19 健康",
   "page_story": "268_2",
-  "japanese_text": "頭痛がひどくても頭痛<u>薬</u>を飲みたくない場合がある。そんなときは、<u>脇</u>や<u>あご</u>の周りの筋肉を<u>もむ</u>とよい。目の疲れが原因のこともあるため、<u>まぶた</u>の上に温かいタオルを乗せたり、<u>額</u>を<u>マッサージしたり</u>すると楽になるだろう。",
+  "japanese_text": "頭痛がひどくても頭痛<u>薬</u>を飲みたくない場合がある。そんなときは、<u>脇</u>や<u>あご</u>の周りの筋肉を<u>もむ</u>とよい。目の疲れが原因のこともあるため、<u>まぶた</u>の上に温かいタオルを乗せたり、<u>額</u>を<u>マッサージ</u>したりすると楽になるだろう。",
   "english_translation": "Sometimes even when you have a terrible headache you don't want to take headache medicine. In times like that, it's good to massage the muscles around your armpits or jaw. Your eyes being tired can also be the cause, so placing a warm towel over your eyelids or massaging your forehead can also bring relief.",
   "annotated_words": [
     {
@@ -49,18 +49,12 @@
       "meaning_en": "forehead"
     },
     {
-      "word_id": "n2_1864",
-      "word_number": 1864,
-      "kanji": "おでこ",
-      "furigana": "",
-      "meaning_en": "forehead"
-    },
-    {
       "word_id": "n2_1865",
       "word_number": 1865,
       "kanji": "マッサージ[する]",
       "furigana": "まっさーじ",
       "meaning_en": "massage, massage"
     }
-  ]
+  ],
+  "id": "268_2"
 }

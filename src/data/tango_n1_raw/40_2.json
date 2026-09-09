@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 10,
   "title": "Topic 3",
-  "japanese_text": "「<u>貨幣</u>価値」とは、貨幣の持つ<u>購買</u>力のことである。<u>流通する</u>貨幣の量が増えると貨幣価値は下がり、減ると価値が上がる。",
+  "japanese_text": "「<u>貨幣</u>価値」とは、貨幣の持つ<u>購買</u>力のことである。<u>流通</u>する貨幣の量が増えると貨幣価値は下がり、減ると価値が上がる。",
   "english_translation": "The \"value of money\" is the purchasing power of money. The value of money decreases as the quantity of money in circulation increases, and it increases as the quantity of money decreases.",
   "annotated_words": [
     {
@@ -26,5 +26,7 @@
       "furigana": "りゅうつう",
       "meaning_en": "circulation, circulate"
     }
-  ]
+  ],
+  "id": "40_2",
+  "page_story": "40_2"
 }

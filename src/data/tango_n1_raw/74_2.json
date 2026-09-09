@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 15,
   "title": "Topic 6",
-  "japanese_text": "そのアニメ映画は、新型コロナウイルスの影響でしばらく映画が上映されていなかったこともあってか、<u>驚異的な</u> <u>反響</u>があり、日本で<u>配給された</u>映画の中で一番の売り上げを記録した。",
+  "japanese_text": "そのアニメ映画は、新型コロナウイルスの影響でしばらく映画が上映されていなかったこともあってか、<u>驚異的な</u> <u>反響</u>があり、日本で<u>配給</u>された映画の中で一番の売り上げを記録した。",
   "english_translation": "That animated film received an astounding response, probably because films had not been screening for some time due to the COVID pandemic, and it became the best-selling film distributed in Japan.",
   "annotated_words": [
     {
@@ -26,5 +26,7 @@
       "furigana": "はいきゅう",
       "meaning_en": "distribution, distribute"
     }
-  ]
+  ],
+  "id": "74_2",
+  "page_story": "74_2"
 }

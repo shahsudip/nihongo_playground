@@ -1,6 +1,6 @@
 {
   "title": "Topic 7",
-  "japanese_text": "<ruby><u>長女</u><rt>ちょうじょ</rt></ruby>は<ruby><u>生意気<rt>な</u>まいき</rt></ruby>だが、<ruby><u>目上</u><rt>めうえ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>に<ruby>会<rt>あ</rt></ruby>うときちんと<u>おじぎ</u>する。それが<ruby><u>長所</u><rt>ちょうしょ</rt></ruby>だ。",
+  "japanese_text": "<u><ruby>長女<rt>ちょうじょ</rt></ruby></u>は<u><ruby>生意気<rt>なまいき</rt></ruby></u>だが、<u><ruby>目上<rt>めうえ</rt></ruby></u>の<ruby>人<rt>ひと</rt></ruby>に<ruby>会<rt>あ</rt></ruby>うときちんと<u>おじぎ</u>する。それが<u><ruby>長所<rt>ちょうしょ</rt></ruby></u>だ。",
   "english_translation": "My eldest daughter is sassy, but when meeting older people, she bows. That's her strong point.",
   "annotated_words": [
     {
@@ -41,5 +41,6 @@
   ],
   "story_number": 4,
   "is_story": true,
-  "page_story": "108_1"
+  "page_story": "108_1",
+  "id": "108_1"
 }

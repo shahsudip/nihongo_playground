@@ -3,7 +3,7 @@
   "story_number": 3,
   "title": "Topic 1 食事",
   "page_story": "16_1",
-  "japanese_text": "A：あそこのラーメン<ruby>屋<rt>や</rt></ruby>、どうだった？\\nB：うーん。<u>あっさり</u>してて、ちょっと<u>物足りない</u>と<ruby>思<rt>おも</rt></ruby>った。やっぱり、ラーメンは<u>脂</u>が<u>たっぷり</u><ruby>入<rt>はい</rt></ruby>ってるのが<u>好み</u>だなあ。\\nA：ああ、そうだね。\\nB：あ、でも、チャーシューが<u>あぶって</u>あったのはよかったね。",
+  "japanese_text": "A：あそこのラーメン<ruby>屋<rt>や</rt></ruby>、どうだった？\\nB：うーん。<u>あっさり</u>してて、ちょっと<u>物足りない</u>と<ruby>思<rt>おも</rt></ruby>った。やっぱり、ラーメンは<u>脂</u>が<u>たっぷり</u><ruby>入<rt>はい</rt></ruby>ってるのが<u>好み</u>だなあ。\\nA：ああ、そうだね。\\nB：あ、でも、チャーシューがあぶってあったのはよかったね。",
   "english_translation": "A: How was that ramen shop? B: Hmmm. Well, I found it rather light and unsatisfying. Personally, I prefer ramen with plenty of fat. A: Oh, right. B: But the roasted pork was nicely seared.",
   "annotated_words": [
     {
@@ -40,13 +40,7 @@
       "kanji": "好み",
       "furigana": "このみ",
       "meaning_en": "preference"
-    },
-    {
-      "word_id": "n2_0018",
-      "word_number": 18,
-      "kanji": "あぶる",
-      "furigana": "あぶる",
-      "meaning_en": "roast, sear"
     }
-  ]
+  ],
+  "id": "16_1"
 }

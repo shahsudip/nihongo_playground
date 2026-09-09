@@ -1,7 +1,7 @@
 {
   "id": "158_1",
   "title": "Topic 11",
-  "japanese_text": "A：<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>くなら、<ruby>太陽<rt>たいよう</rt></ruby>が<ruby>昇<rt>のぼ</rt></ruby>るところを<ruby>楽<rt>たの</rt></ruby>しみたい。でも、<ruby>夕日<rt>ゆうひ</rt></ruby>が<ruby>沈<rt>しず</rt></ruby>むところもいいなあ。<ruby>一度<rt>いちど</rt></ruby>に<ruby>両方<rt>りょうほう</rt></ruby>は<ruby>無理<rt>むり</rt></ruby>かな。<br>B：<ruby>景色<rt>けしき</rt></ruby>のいいところでテントを<ruby>張<rt>は</rt></ruby>って、キャンプするってのはどう？",
+  "japanese_text": "A：<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>くなら、<u><ruby>太陽<rt>たいよう</rt></ruby></u>が<u><ruby>昇<rt>のぼ</rt></ruby>る</u>ところを<ruby>楽<rt>たの</rt></ruby>しみたい。でも、<ruby>夕日<rt>ゆうひ</rt></ruby>が<u><ruby>沈<rt>しず</rt></ruby>む</u>ところもいいなあ。<u><ruby>一度<rt>いちど</rt></ruby>に</u><ruby>両方<rt>りょうほう</rt></ruby>は<ruby>無理<rt>むり</rt></ruby>かな。<br>B：<ruby>景色<rt>けしき</rt></ruby>のいいところでテントを<ruby>張<rt>は</rt></ruby>って、<u>キャンプ</u>するってのはどう？",
   "english_translation": "A: If I'm going on a trip, I want to enjoy the sunrise. But, I sunsets are nice too. I wonder if I can do both. B: Why don't you pitch a tent someplace with nice scenery and camp out?",
   "annotated_words": [
     {
@@ -29,5 +29,7 @@
       "furigana": "",
       "meaning": "camping, go camping"
     }
-  ]
+  ],
+  "page_story": "158_1",
+  "is_story": true
 }

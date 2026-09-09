@@ -3,7 +3,7 @@
   "story_number": 10,
   "title": "Topic 22 政治",
   "page_story": "312_1",
-  "japanese_text": "日本では、<u>総理大臣</u>は<u>国会</u>議員の中から選ばれ、<u>天皇</u>によって任命される。",
+  "japanese_text": "日本では、<u>総理大臣</u>は<u>国会</u><u>議員</u>の中から選ばれ、<u>天皇</u>によって任命される。",
   "english_translation": "In Japan, the Prime Minister is chosen from among the members of the Diet and appointed by the Emperor.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
       "furigana": "てんのう",
       "meaning_en": "Emperor"
     }
-  ]
+  ],
+  "id": "312_1"
 }

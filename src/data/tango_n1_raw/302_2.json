@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 3,
   "title": "Topic 23",
-  "japanese_text": "シルクロードは中国の長安からローマを結ぶ古代の<u>交易</u>路である。シルクロードを使って<u>運搬された</u>主な交易品は絹であるが、同時に宗教や芸術、文化なども伝えられた。シルクロードは国境を越えた<u>運輸</u>インフラの基盤を作ったと言える。",
+  "japanese_text": "シルクロードは中国の長安からローマを結ぶ古代の<u>交易</u>路である。シルクロードを使って<u>運搬</u>された主な交易品は絹であるが、同時に宗教や芸術、文化なども伝えられた。シルクロードは国境を越えた<u>運輸</u>インフラの基盤を作ったと言える。",
   "english_translation": "The Silk Road was an ancient trade route connecting Chang'an in China to Rome. The main trade goods transported via the Silk Road were silk, but at the same time, religion, art, culture, and more were also conveyed. It can be said that the Silk Road created the foundation of a transportation infrastructure that crossed national borders.",
   "annotated_words": [
     {
@@ -26,5 +26,7 @@
       "furigana": "うんゆ",
       "meaning_en": "traffic, transportation"
     }
-  ]
+  ],
+  "id": "302_2",
+  "page_story": "302_2"
 }

@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 4,
   "title": "Topic 7",
-  "japanese_text": "紅葉のシーズンを迎え、高尾山は<u>連日</u>多くの人が訪れている。<u>山頂</u>に行く途中にあるカフェも、毎日<u>繁盛し</u>ているようだ。",
+  "japanese_text": "紅葉のシーズンを迎え、高尾山は<u>連日</u>多くの人が訪れている。<u>山頂</u>に行く途中にあるカフェも、毎日<u>繁盛</u>しているようだ。",
   "english_translation": "With the autumn foliage season upon us, Mt. Takao is attracting crowds of visitors daily. The cafes on the way to the mountain's summit seem to be doing good business every day.",
   "annotated_words": [
     {
@@ -26,5 +26,7 @@
       "furigana": "はんじょう",
       "meaning_en": "prosperity, do good business"
     }
-  ]
+  ],
+  "id": "84_1",
+  "page_story": "84_1"
 }

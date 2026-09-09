@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 6,
   "title": "Topic 25",
-  "japanese_text": "最近、この地域では<u>放火</u>事件が<u>相次いで</u>起きている。現場付近では鋭い<u>目つき</u>をした<u>不審な</u>人物が<u>目撃され</u>ている。犯人が捕まった場合、<u>有罪</u> <u>判決</u>は免れないだろう。",
+  "japanese_text": "最近、この地域では<u>放火</u>事件が相次いで起きている。現場付近では鋭い<u>目つき</u>をした<u>不審な</u>人物が<u>目撃</u>されている。犯人が捕まった場合、<u>有罪</u> <u>判決</u>は免れないだろう。",
   "english_translation": "Recently, arson incidents have been occurring one after another in the local area. A suspicious fellow with a cunning look has been witnessed near the scenes. If the culprit is caught, he will probably be found guilty.",
   "annotated_words": [
     {
@@ -11,13 +11,6 @@
       "kanji": "放火[する]",
       "furigana": "ほうか",
       "meaning_en": "arson, set fire"
-    },
-    {
-      "word_id": "n1_2389",
-      "word_number": 2389,
-      "kanji": "相次ぐ",
-      "furigana": "あいつぐ",
-      "meaning_en": "occur one after another"
     },
     {
       "word_id": "n1_2390",
@@ -48,18 +41,13 @@
       "meaning_en": "guilty"
     },
     {
-      "word_id": "n1_2394",
-      "word_number": 2394,
-      "kanji": "無罪",
-      "furigana": "むざい",
-      "meaning_en": "not guilty"
-    },
-    {
       "word_id": "n1_2395",
       "word_number": 2395,
       "kanji": "判決[する]",
       "furigana": "はんけつ",
       "meaning_en": "judgment, find"
     }
-  ]
+  ],
+  "id": "331_1",
+  "page_story": "331_1"
 }

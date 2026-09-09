@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 12,
   "title": "Topic 20",
-  "japanese_text": "かつては<u>栄養失調</u>等が原因で<u>結核</u>が<u>まん延し</u>、多くの人がこの<u>病</u>に<u>侵されて</u>亡くなったが、現在はかかる人が少なくなった。ただし、この病気が消えたわけではなく、<u>免疫</u>力が低下すると<u>発病し</u>やすくなるので、普段から健康的な生活を心掛けたい。",
+  "japanese_text": "かつては<u>栄養失調</u>等が原因で<u>結核</u>が<u>まん延</u>し、多くの人がこの<u>病</u>に侵されて亡くなったが、現在はかかる人が少なくなった。ただし、この病気が消えたわけではなく、<u>免疫</u>力が低下すると<u>発病</u>しやすくなるので、普段から健康的な生活を心掛けたい。",
   "english_translation": "In the past, malnutrition and other factors led to the spread of tuberculosis, and many people were afflicted by the disease and died, although fewer people suffer from it today. However, tuberculosis has not disappeared, and people can easily contract the disease when their immune systems are weakened, so it is important to lead a healthy lifestyle.",
   "annotated_words": [
     {
@@ -34,13 +34,6 @@
       "meaning_en": "disease, illness"
     },
     {
-      "word_id": "n1_1903",
-      "word_number": 1903,
-      "kanji": "侵す",
-      "furigana": "おか",
-      "meaning_en": "afflict, invade"
-    },
-    {
       "word_id": "n1_1904",
       "word_number": 1904,
       "kanji": "免疫",
@@ -54,5 +47,7 @@
       "furigana": "はつびょう",
       "meaning_en": "outbreak, onset, contract a disease"
     }
-  ]
+  ],
+  "id": "268_1",
+  "page_story": "268_1"
 }

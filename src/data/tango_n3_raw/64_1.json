@@ -1,6 +1,6 @@
 {
   "title": "Topic 4",
-  "japanese_text": "カラーコンタクトの<ruby>新色<rt>しんしょく</rt></ruby><ruby>をオンライン<u>ショップ</u><rt></rt></ruby><ruby>限定<rt>げんてい</rt></ruby><ruby>で<rt></rt></ruby><ruby>売<rt>う</rt></ruby><ruby>り<rt></rt></ruby><ruby>出<rt>だ</rt></ruby><ruby>し<rt></rt></ruby><ruby>たところ、ＳＮＳで<rt></rt></ruby><ruby>話題<rt>わだい</rt></ruby><ruby>になって、<rt></rt></ruby><ruby>注文<rt>ちゅうもん</rt></ruby><ruby>が<rt></rt></ruby><ruby>何倍<rt>なんばい</rt></ruby><ruby>にも<rt></rt></ruby><ruby>増<rt>ふ</rt></ruby><ruby>えた。<rt></rt></ruby><ruby>間<rt>ま</rt></ruby><ruby>もなく<rt></rt></ruby><ruby><u>赤字</u><rt>あかじ</rt></ruby><ruby>から<rt></rt></ruby><ruby>回復<rt>かいふく</rt></ruby><ruby>するだろう。<rt></rt></ruby>",
+  "japanese_text": "カラーコンタクトの<ruby>新色<rt>しんしょく</rt></ruby><u><ruby>をオンラインショップ<rt></rt></ruby></u><ruby>限定<rt>げんてい</rt></ruby><ruby>で<rt></rt></ruby><ruby>売<rt>う</rt></ruby><ruby>り<rt></rt></ruby><ruby>出<rt>だ</rt></ruby><ruby>し<rt></rt></ruby><ruby>たところ、ＳＮＳで<rt></rt></ruby><ruby>話題<rt>わだい</rt></ruby><ruby>になって、<rt></rt></ruby><ruby>注文<rt>ちゅうもん</rt></ruby><ruby>が<rt></rt></ruby><ruby>何倍<rt>なんばい</rt></ruby><ruby>にも<rt></rt></ruby><ruby>増<rt>ふ</rt></ruby><ruby>えた。<rt></rt></ruby><ruby>間<rt>ま</rt></ruby><ruby>もなく<rt></rt></ruby><u><ruby>赤字<rt>あかじ</rt></ruby></u><ruby>から<rt></rt></ruby><ruby>回復<rt>かいふく</rt></ruby><ruby>するだろう。<rt></rt></ruby>",
   "english_translation": "When a new color of the color contacts that was available only on our online shop went on sale, it became a topic on social media, and the number of orders increased several times over. It will soon be recovered from the deficit.",
   "annotated_words": [
     {
@@ -20,5 +20,6 @@
   ],
   "story_number": 5,
   "is_story": true,
-  "page_story": "64_1"
+  "page_story": "64_1",
+  "id": "64_1"
 }

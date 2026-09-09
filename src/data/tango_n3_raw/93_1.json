@@ -1,6 +1,6 @@
 {
   "title": "Topic 6",
-  "japanese_text": "<ruby>最近<rt>さいきん</rt></ruby>のライトノベルは、まず<u>オンライン</u>の<ruby>小説<rt>しょうせつ</rt></ruby>サイトに<ruby>掲載<rt>けいさい</rt></ruby>され、それから<ruby>本<rt>ほん</rt></ruby>になることが<ruby>多<rt>おお</rt></ruby>い。<u>タイトル</u>が<ruby>長<rt>なが</rt></ruby>く、タイトルだけで<ruby><u>内容</u><rt>ないよう</rt></ruby>が<ruby>分<rt>わ</rt></ruby>かることが<ruby><u>共通</u><rt>きょうつう</rt></ruby>している。<ruby>本<rt>ほん</rt></ruby>の<ruby><u>表紙</u><rt>ひょうし</rt></ruby>にはかわいいキャラクターが<ruby>描<rt>えが</rt></ruby>かれているが、タイトルのせいで<ruby>見<rt>み</rt></ruby>にくかったりする。",
+  "japanese_text": "<ruby>最近<rt>さいきん</rt></ruby>のライトノベルは、まず<u>オンライン</u>の<ruby>小説<rt>しょうせつ</rt></ruby>サイトに<ruby>掲載<rt>けいさい</rt></ruby>され、それから<ruby>本<rt>ほん</rt></ruby>になることが<ruby>多<rt>おお</rt></ruby>い。<u>タイトル</u>が<ruby>長<rt>なが</rt></ruby>く、タイトルだけで<u><ruby>内容<rt>ないよう</rt></ruby></u>が<ruby>分<rt>わ</rt></ruby>かることが<u><ruby>共通<rt>きょうつう</rt></ruby></u>している。<ruby>本<rt>ほん</rt></ruby>の<u><ruby>表紙<rt>ひょうし</rt></ruby></u>にはかわいいキャラクターが<ruby>描<rt>えが</rt></ruby>かれているが、タイトルのせいで<ruby>見<rt>み</rt></ruby>にくかったりする。",
   "english_translation": "Recent light novels are often first published on online novel sites and then become books. It is common that the titles are long, and you can figure out the content just by the title alone. Cute characters are drawn on the covers of the books, but they may be difficult to see because of the title.",
   "annotated_words": [
     {
@@ -41,5 +41,6 @@
   ],
   "story_number": 3,
   "is_story": true,
-  "page_story": "93_1"
+  "page_story": "93_1",
+  "id": "93_1"
 }

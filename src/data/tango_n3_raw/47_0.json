@@ -1,6 +1,6 @@
 {
   "title": "Topic 2",
-  "japanese_text": "ワイシャツを<u>インク</u>で<ruby>汚<rt>よご</rt></ruby>してしまったので、<ruby>慌<rt>あわ</rt></ruby>てて<ruby><u>洗剤</u><rt>せんざい</rt></ruby>をつけて<ruby>洗<rt>あら</rt></ruby>った。",
+  "japanese_text": "ワイシャツを<u>インク</u>で<ruby>汚<rt>よご</rt></ruby>してしまったので、<ruby>慌<rt>あわ</rt></ruby>てて<u><ruby>洗剤<rt>せんざい</rt></ruby></u>をつけて<ruby>洗<rt>あら</rt></ruby>った。",
   "english_translation": "I got ink on my dress shirt, so I hurriedly rubbed detergent on it and washed it.",
   "annotated_words": [
     {
@@ -20,5 +20,6 @@
   ],
   "story_number": 21,
   "is_story": true,
-  "page_story": "47_0"
+  "page_story": "47_0",
+  "id": "47_0"
 }

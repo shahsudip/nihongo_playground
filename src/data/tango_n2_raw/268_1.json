@@ -3,7 +3,7 @@
   "story_number": 3,
   "title": "Topic 19 健康",
   "page_story": "268_1",
-  "japanese_text": "<u>健康診断</u>で胸の<u>レントゲン</u>を撮ったら、<u>肺</u>に影が見つかった。その後、がんと<u>診断され</u>、すぐに<u>治療</u>が開始された。",
+  "japanese_text": "<u>健康診断</u>で胸の<u>レントゲン</u>を撮ったら、<u>肺</u>に影が見つかった。その後、がんと<u>診断</u>され、すぐに<u>治療</u>が開始された。",
   "english_translation": "During a physical examination, a shadow was found on his lungs after a chest X-ray. Subsequently, he was diagnosed with cancer and started medical treatment immediately.",
   "annotated_words": [
     {
@@ -41,5 +41,6 @@
       "furigana": "ちりょう",
       "meaning_en": "medical treatment, treat"
     }
-  ]
+  ],
+  "id": "268_1"
 }

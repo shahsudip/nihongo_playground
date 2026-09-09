@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 1,
   "title": "Topic 23",
-  "japanese_text": "<u>鉄鋼</u>業界は、日本が世界に誇れる産業の一つであるが、近年は海外メーカーの<u>台頭</u>で、<u>市場</u>競争が激しくなっている。そこで、高い技術力を武器に海外事業を積極的に展開することで、これまでの売上<u>高</u>を確保しようというのが日本メーカーの戦略だ。",
+  "japanese_text": "<u>鉄鋼</u>業界は、日本が世界に誇れる産業の一つであるが、近年は海外メーカーの<u>台頭</u>で、<u>市場</u>競争が激しくなっている。そこで、<u>高</u>い技術力を武器に海外事業を積極的に展開することで、これまでの売上高を確保しようというのが日本メーカーの戦略だ。",
   "english_translation": "The steel industry is one of Japan's world-class industries, but in recent years the rise to prominence of foreign manufacturers has intensified market competition. Therefore, the strategy of Japanese manufacturers is to secure their existing sales volume by aggressively developing overseas business using their strong technological capabilities.",
   "annotated_words": [
     {
@@ -33,5 +33,7 @@
       "furigana": "だか",
       "meaning_en": "~ quantity, ~ volume"
     }
-  ]
+  ],
+  "id": "301_1",
+  "page_story": "301_1"
 }

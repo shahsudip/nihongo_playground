@@ -3,7 +3,7 @@
   "story_number": 21,
   "title": "Topic 14 天気",
   "page_story": "194_2",
-  "japanese_text": "A：他に、登山に必要なものは？\nB：<u>雨具</u>。\nA：<u>レインコート</u>とか？\nB：そう。汗が<u>蒸発し</u>やすいものを買うといいよ。あと、<u>水筒</u>もいる。",
+  "japanese_text": "A：他に、登山に必要なものは？\nB：<u>雨具</u>。\nA：<u>レインコート</u>とか？\nB：そう。汗が<u>蒸発</u>しやすいものを買うといいよ。あと、<u>水筒</u>もいる。",
   "english_translation": "A: What else do you need to go hiking? B: Wet weather gear. A: Like a raincoat? B: Right. You should get one that allows sweat to evaporate. You'll need a water bottle too.",
   "annotated_words": [
     {
@@ -21,13 +21,6 @@
       "meaning_en": "raincoat"
     },
     {
-      "word_id": "n2_1293",
-      "word_number": 1293,
-      "kanji": "かっぱ",
-      "furigana": "",
-      "meaning_en": "raincoat"
-    },
-    {
       "word_id": "n2_1294",
       "word_number": 1294,
       "kanji": "蒸発[する]",
@@ -41,5 +34,6 @@
       "furigana": "すいとう",
       "meaning_en": "water bottle"
     }
-  ]
+  ],
+  "id": "194_2"
 }

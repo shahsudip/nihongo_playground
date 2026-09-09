@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 15,
   "title": "Topic 19",
-  "japanese_text": "以前は異性に<u>アプローチされる</u>ことも多かったので、<u>漠然と</u>いい人だなと思ったら付き合っていた。30代になった今は、<u>生涯</u>を共にできるような、自分と価値<u>観</u>が似ている人と付き合うようにしている。",
+  "japanese_text": "以前は異性に<u>アプローチ</u>されることも多かったので、<u>漠然と</u>いい人だなと思ったら付き合っていた。30代になった今は、<u>生涯</u>を共にできるような、自分と価値観が似ている人と付き合うようにしている。",
   "english_translation": "I used to get approached by the opposite sex a lot. If I thought someone was vaguely pleasant, I'd go out with them. Now that I'm in my thirties, I try to go out with people who have a similar sense of values to my own: someone I could spend the rest of my lifetime with.",
   "annotated_words": [
     {
@@ -25,13 +25,8 @@
       "kanji": "生涯",
       "furigana": "しょうがい",
       "meaning_en": "lifetime"
-    },
-    {
-      "word_id": "n1_1759",
-      "word_number": 1759,
-      "kanji": "〜観",
-      "furigana": "かん",
-      "meaning_en": "sense of ~"
     }
-  ]
+  ],
+  "id": "248_2",
+  "page_story": "248_2"
 }

@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 7,
   "title": "Topic 4",
-  "japanese_text": "<u>ウール</u>のシャツは軽くて<u>かさばらない</u>上、着心地がいいので、登山をする人に人気がある。<u>現に</u>、同じものを２着買って、<u>交互に</u>着ている人も多い。生地を<u>傷めない</u>よう、<u>裏返しに</u>してネットにいれれば、洗濯機で簡単に洗うことができる。",
+  "japanese_text": "<u>ウール</u>のシャツは軽くてかさばらない上、着心地がいいので、登山をする人に人気がある。<u>現に</u>、同じものを２着買って、<u>交互に</u>着ている人も多い。生地を傷めないよう、<u>裏返し</u>にしてネットにいれれば、洗濯機で簡単に洗うことができる。",
   "english_translation": "Wool shirts are popular with hikers because they are light, not bulky, and comfortable to wear. In fact, many people buy two identical shirts and wear them alternately. They can be easily washed in a washing machine by turning them inside out and putting them in a net to avoid damaging the fabric.",
   "annotated_words": [
     {
@@ -11,20 +11,6 @@
       "kanji": "ウール",
       "furigana": "",
       "meaning_en": "wool"
-    },
-    {
-      "word_id": "n1_0222",
-      "word_number": 222,
-      "kanji": "羊毛",
-      "furigana": "ようもう",
-      "meaning_en": "sheep's wool"
-    },
-    {
-      "word_id": "n1_0223",
-      "word_number": 223,
-      "kanji": "かさばる",
-      "furigana": "",
-      "meaning_en": "be bulky"
     },
     {
       "word_id": "n1_0224",
@@ -41,18 +27,13 @@
       "meaning_en": "alternately"
     },
     {
-      "word_id": "n1_0226",
-      "word_number": 226,
-      "kanji": "傷める",
-      "furigana": "いためる",
-      "meaning_en": "damage"
-    },
-    {
       "word_id": "n1_0227",
       "word_number": 227,
       "kanji": "裏返し",
       "furigana": "うらがえし",
       "meaning_en": "turning inside out"
     }
-  ]
+  ],
+  "id": "44_2",
+  "page_story": "44_2"
 }

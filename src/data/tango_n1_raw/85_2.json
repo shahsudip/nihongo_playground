@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 7,
   "title": "Topic 7",
-  "japanese_text": "この度、このような<u>名誉な</u>賞をいただくことができたのは、私の考えに<u>共鳴し</u>、支えてくださったみなさまのおかげです。<u>うぬぼれる</u>ことなく、これからも謙虚な姿勢で努力を続けたいと思います。",
+  "japanese_text": "この度、このような<u>名誉な</u>賞をいただくことができたのは、私の考えに<u>共鳴</u>し、支えてくださったみなさまのおかげです。<u>うぬぼれる</u>ことなく、これからも謙虚な姿勢で努力を続けたいと思います。",
   "english_translation": "It is thanks to everyone who sympathized with my approach and supported me that I have been honored with this prestigious award. Without being conceited, I hope to continue my efforts with a humble attitude.",
   "annotated_words": [
     {
@@ -25,13 +25,8 @@
       "kanji": "うぬぼれる",
       "furigana": "うぬぼれる",
       "meaning_en": "be conceited"
-    },
-    {
-      "word_id": "n1_0527",
-      "word_number": 527,
-      "kanji": "うぬぼれ",
-      "furigana": "うぬぼれ",
-      "meaning_en": "conceit, pride"
     }
-  ]
+  ],
+  "id": "85_2",
+  "page_story": "85_2"
 }

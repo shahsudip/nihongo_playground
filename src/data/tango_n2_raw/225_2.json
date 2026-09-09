@@ -3,7 +3,7 @@
   "story_number": 18,
   "title": "Topic 16 学校",
   "page_story": "225_2",
-  "japanese_text": "A：最近Cさんを見ないね。\nB：ああ。<u>退学</u>したらしいよ。<u>あくまで</u>うわさなんだけど、バイトで俳優の仕事をしていたけど、<u>正式に</u>俳優の事務所に<u>属して</u>やっていくことにしたんだって。\nA：へえ。それはすごいね。早く<u>世間</u>に認められて活躍してほしいね。",
+  "japanese_text": "A：最近Cさんを見ないね。\nB：ああ。<u>退学</u>したらしいよ。<u>あくまで</u>うわさなんだけど、バイトで俳優の仕事をしていたけど、<u>正式</u>に俳優の事務所に属してやっていくことにしたんだって。\nA：へえ。それはすごいね。早く<u>世間</u>に認められて活躍してほしいね。",
   "english_translation": "A: I haven't seen C lately. B: I think C dropped out of school. It's just a rumor, but I heard she was working part-time as an actor, and then decided to officially join an acting agency. A: Wow. That's amazing. I really hope she gets recognized by the public soon and becomes successful.",
   "annotated_words": [
     {
@@ -28,18 +28,12 @@
       "meaning_en": "official"
     },
     {
-      "word_id": "n2_1519",
-      "word_number": 1519,
-      "kanji": "属する",
-      "furigana": "ぞくする",
-      "meaning_en": "join, belong to"
-    },
-    {
       "word_id": "n2_1520",
       "word_number": 1520,
       "kanji": "世間",
       "furigana": "せけん",
       "meaning_en": "society, public"
     }
-  ]
+  ],
+  "id": "225_2"
 }

@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 13,
   "title": "Topic 12",
-  "japanese_text": "ウイルスは自分では子孫を残せない。必ず他の生き物と<u>共存している</u>。生物の<u>進化</u>の<u>経緯</u>を調べると、ウイルスが原因ではないかと考えられる事例もある。<u>大方</u>のウイルスは生物にとって無害であるが、時折病気を発生させることもあり、そうするとその生物は<u>もがき苦しむ</u>ことになる。",
+  "japanese_text": "ウイルスは自分では子孫を残せない。必ず他の生き物と<u>共存</u>している。生物の<u>進化</u>の<u>経緯</u>を調べると、ウイルスが原因ではないかと考えられる事例もある。<u>大方</u>のウイルスは生物にとって無害であるが、時折病気を発生させることもあり、そうするとその生物は<u>もがき苦しむ</u>ことになる。",
   "english_translation": "Viruses cannot reproduce by themselves. They always coexist with other living things. If we look at the history of evolution of living organisms, in some cases viruses may have actually brought this about. For the most part, viruses are harmless to the organism, but occasionally they can cause disease, and when they do, the organism struggles desperately.",
   "annotated_words": [
     {
@@ -18,13 +18,6 @@
       "kanji": "進化",
       "furigana": "しんか",
       "meaning_en": "evolution, evolve"
-    },
-    {
-      "word_id": "n1_1040",
-      "word_number": 1040,
-      "kanji": "退化",
-      "furigana": "たいか",
-      "meaning_en": "regression, degenerate"
     },
     {
       "word_id": "n1_1041",
@@ -46,13 +39,8 @@
       "kanji": "もがき苦しむ",
       "furigana": "もがきくるしむ",
       "meaning_en": "struggle desperately"
-    },
-    {
-      "word_id": "n1_1044",
-      "word_number": 1044,
-      "kanji": "もがく",
-      "furigana": "もがく",
-      "meaning_en": "struggle, writhe"
     }
-  ]
+  ],
+  "id": "151_1",
+  "page_story": "151_1"
 }

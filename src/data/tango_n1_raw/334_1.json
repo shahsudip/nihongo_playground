@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 10,
   "title": "Topic 25",
-  "japanese_text": "交番に紙幣を<u>偽造した</u>として、<u>自首した</u>いとの<u>通報</u>があった。通報した人物は<u>取り調べ</u>に対し、<u>始終</u>うつむいたまま、借金を<u>取り立てられて</u>いて辛かったと述べており、世間からは<u>同情する</u>声も出ている。",
+  "japanese_text": "交番に紙幣を<u>偽造</u>したとして、<u>自首</u>したいとの<u>通報</u>があった。通報した人物は<u>取り調べ</u>に対し、<u>始終</u>うつむいたまま、借金を取り立てられていて辛かったと述べており、世間からは<u>同情</u>する声も出ている。",
   "english_translation": "The police received a report that a person wanted to turn himself in for counterfeiting banknotes. During the inquiry, the person who reported the crime told the interrogator that he was depressed all the time and that he had been extorted over debts, and some people expressed sympathy for him.",
   "annotated_words": [
     {
@@ -34,25 +34,11 @@
       "meaning_en": "inquiry, investigation"
     },
     {
-      "word_id": "n1_2417",
-      "word_number": 2417,
-      "kanji": "取り調べる",
-      "furigana": "とりしらべる",
-      "meaning_en": "investigate"
-    },
-    {
       "word_id": "n1_2418",
       "word_number": 2418,
       "kanji": "始終",
       "furigana": "しじゅう",
       "meaning_en": "all the time, constantly"
-    },
-    {
-      "word_id": "n1_2419",
-      "word_number": 2419,
-      "kanji": "取り立てる",
-      "furigana": "とりたてる",
-      "meaning_en": "collect (debt), extort"
     },
     {
       "word_id": "n1_2420",
@@ -61,5 +47,7 @@
       "furigana": "どうじょう",
       "meaning_en": "sympathy, sympathize"
     }
-  ]
+  ],
+  "id": "334_1",
+  "page_story": "334_1"
 }

@@ -3,7 +3,7 @@
   "story_number": 24,
   "title": "Topic 23 環境・科学",
   "page_story": "333_1",
-  "japanese_text": "ある液体が<u>酸性</u>か<u>アルカリ性</u>かを見分けるのに、<u>電流</u>を使うのは賢い方法とは言えない。どちらの液体も電流を通すからだ。<u>したがって</u>、ｐＨ試験紙を用いて、試験紙の色がどの色見本と<u>一致する</u>か調べるのが有効である。<u>前者</u>であれば赤色に、<u>後者</u>なら青色に近くなるはずである。",
+  "japanese_text": "ある液体が<u>酸性</u>か<u>アルカリ性</u>かを見分けるのに、<u>電流</u>を使うのは賢い方法とは言えない。どちらの液体も電流を通すからだ。<u>したがって</u>、ｐＨ試験紙を用いて、試験紙の色がどの色見本と<u>一致</u>するか調べるのが有効である。<u>前者</u>であれば赤色に、<u>後者</u>なら青色に近くなるはずである。",
   "english_translation": "Using an electric current to tell whether a liquid is acidic or alkaline is not a smart way to do it. This is because both kinds of liquid are conductive. Therefore, it is more effective to use a pH test paper and match the test strip with the color sample. If it is the former, it should appear red, and if the latter, it should be closer to blue.",
   "annotated_words": [
     {
@@ -55,5 +55,6 @@
       "furigana": "こうしゃ",
       "meaning_en": "latter"
     }
-  ]
+  ],
+  "id": "333_1"
 }

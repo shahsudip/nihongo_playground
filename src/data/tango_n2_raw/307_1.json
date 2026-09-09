@@ -3,7 +3,7 @@
   "story_number": 1,
   "title": "Topic 22 政治",
   "page_story": "307_1",
-  "japanese_text": "A：<u>人種</u>や<u>民族</u>が違うから<u>差別する</u>なんて、ひどい話だよね。\nB：そうだね。今でも国家間の<u>外交</u>問題に繋がったり、<u>デモ</u>が起きたりしてるもんね。",
+  "japanese_text": "A：<u>人種</u>や<u>民族</u>が違うから<u>差別</u>するなんて、ひどい話だよね。\nB：そうだね。今でも国家間の<u>外交</u>問題に繋がったり、<u>デモ</u>が起きたりしてるもんね。",
   "english_translation": "A: Discriminating against people because of race or ethnicity is a terrible thing.\nB: Yes, it is. And even now, it leads to protests and diplomatic problems between nations.",
   "annotated_words": [
     {
@@ -35,18 +35,12 @@
       "meaning_en": "diplomacy"
     },
     {
-      "word_id": "n2_2163",
-      "word_number": 2163,
-      "kanji": "外交官",
-      "furigana": "がいこうかん",
-      "meaning_en": "diplomat"
-    },
-    {
       "word_id": "n2_2164",
       "word_number": 2164,
       "kanji": "デモ",
       "furigana": "でも",
       "meaning_en": "demonstration, protest"
     }
-  ]
+  ],
+  "id": "307_1"
 }

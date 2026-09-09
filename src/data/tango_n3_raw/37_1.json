@@ -1,6 +1,6 @@
 {
   "title": "Topic 2",
-  "japanese_text": "<ruby>使<rt>つか</rt></ruby>った<ruby><u>食器</u><rt>しょっき</rt></ruby>は、<ruby>洗<rt>あら</rt></ruby>ってから、<u>シンク</u>の<ruby>上<rt>うえ</rt></ruby>の<ruby><u>戸棚</u><rt>とだな</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>してください。<br><u>ポット</u>はまたすぐに<ruby>使<rt>つか</rt></ruby>うので、しまわなくていいです。",
+  "japanese_text": "<ruby>使<rt>つか</rt></ruby>った<u><ruby>食器<rt>しょっき</rt></ruby></u>は、<ruby>洗<rt>あら</rt></ruby>ってから、<u>シンク</u>の<ruby>上<rt>うえ</rt></ruby>の<u><ruby>戸棚<rt>とだな</rt></ruby></u>に<ruby>戻<rt>もど</rt></ruby>してください。<br><u>ポット</u>はまたすぐに<ruby>使<rt>つか</rt></ruby>うので、しまわなくていいです。",
   "english_translation": "Wash your used tableware and return it to the cabinet on the sink. Since the pots will be used again soon, you don't have to put them away.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
   ],
   "story_number": 3,
   "is_story": true,
-  "page_story": "37_1"
+  "page_story": "37_1",
+  "id": "37_1"
 }

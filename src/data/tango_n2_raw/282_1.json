@@ -3,7 +3,7 @@
   "story_number": 6,
   "title": "Topic 20 マナー",
   "page_story": "282_1",
-  "japanese_text": "私は<u>妊婦</u>だ。昨日バスに乗ったとき、2人がけの<u>優先</u>席に<u>空き</u>を見つけたので座ろうとした。しかし、隣の人の脚が邪魔で、私が座ろうとしていた<u>スペース</u>は、かなり狭くなっていた。<u>しょうがない</u>と思い、その人の脚と<u>足元</u>の荷物を<u>避けて</u>座った。",
+  "japanese_text": "私は<u>妊婦</u>だ。昨日バスに乗ったとき、2人がけの<u>優先</u>席に<u>空き</u>を見つけたので座ろうとした。しかし、隣の人の脚が邪魔で、私が座ろうとしていた<u>スペース</u>は、かなり狭くなっていた。<u>しょうがない</u>と思い、その人の脚と<u>足元</u>の荷物を避けて座った。",
   "english_translation": "I am pregnant. Yesterday, when I got on the bus, I found a vacant two-person priority seat and I tried to sit down. However, the person sitting there was blocking the seat with their legs, leaving only a tiny space for me to occupy. There was nothing else to do, so I just sat down, trying to avoid that person's legs and the bags at their feet.",
   "annotated_words": [
     {
@@ -47,13 +47,7 @@
       "kanji": "足元",
       "furigana": "あしもと",
       "meaning_en": "at someone's feet, footing"
-    },
-    {
-      "word_id": "n2_1964",
-      "word_number": 1964,
-      "kanji": "避ける",
-      "furigana": "さける",
-      "meaning_en": "avoid"
     }
-  ]
+  ],
+  "id": "282_1"
 }

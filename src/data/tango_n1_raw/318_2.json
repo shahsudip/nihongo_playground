@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 10,
   "title": "Topic 24",
-  "japanese_text": "<u>制裁</u>措置が<u>発動</u>されたことで、その国の<u>貿易</u>は大きく落ち込んだ。<u>輸出</u>品目の多くが<u>禁輸</u>となり、<u>経済的</u>な<u>打撃</u>は深刻だ。",
+  "japanese_text": "<u>制裁</u>措置が<u>発動</u>されたことで、その国の<u>貿易</u>は大きく落ち込んだ。<u>輸出</u>品目の多くが<u>禁輸</u>となり、経済的な<u>打撃</u>は深刻だ。",
   "english_translation": "The imposition of sanctions caused a significant decline in the country's trade. Many export items became subject to an embargo, and the economic blow has been severe.",
   "annotated_words": [
     {
@@ -47,5 +47,7 @@
       "furigana": "だげき",
       "meaning_en": "blow, damage"
     }
-  ]
+  ],
+  "id": "318_2",
+  "page_story": "318_2"
 }

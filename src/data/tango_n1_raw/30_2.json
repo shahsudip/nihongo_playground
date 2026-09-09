@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 11,
   "title": "Topic 2",
-  "japanese_text": "A：弟が一人暮らしを始めてからすごく変わったんだよね。\nB：そんなに？\nA：前まではお金に<u>いい加減な</u>ところがあって、よく無駄遣いしてたんだけどね、今は貯金もしてすごく<u>質素な</u>生活送ってるんだよ！<u>自立し</u>たいからって<u>仕送り</u>も断ったみたい。",
+  "japanese_text": "A：弟が一人暮らしを始めてからすごく変わったんだよね。\nB：そんなに？\nA：前まではお金に<u>いい加減な</u>ところがあって、よく無駄遣いしてたんだけどね、今は貯金もしてすごく<u>質素な</u>生活送ってるんだよ！<u>自立</u>したいからって<u>仕送り</u>も断ったみたい。",
   "english_translation": "A: My brother has changed a lot since he started living by himself. B: Really? A: He used to be a bit careless and wasteful with money, but now he saves money and lives a very frugal life! Apparently, he even refused an allowance because he wants to be independent.",
   "annotated_words": [
     {
@@ -33,5 +33,7 @@
       "furigana": "しおくり",
       "meaning_en": "(monetary) allowance"
     }
-  ]
+  ],
+  "id": "30_2",
+  "page_story": "30_2"
 }

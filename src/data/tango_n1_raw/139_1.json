@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 17,
   "title": "Topic 11",
-  "japanese_text": "［体操］鈴木選手は明日の大会を<u>棄権する</u>ようだ。そういえば練習後に<u>つま先</u>を<u>さすって</u>いた。<u>日夜</u>練習に<u>励んで</u>きたので、<u>心情</u>としては出場したいだろうが、オリンピックに<u>ベストな</u>状態で出場するなら、無理は<u>禁物</u>だろう。",
+  "japanese_text": "［体操］鈴木選手は明日の大会を<u>棄権</u>するようだ。そういえば練習後に<u>つま先</u>をさすっていた。<u>日夜</u>練習に励んできたので、<u>心情</u>としては出場したいだろうが、オリンピックに<u>ベストな</u>状態で出場するなら、無理は<u>禁物</u>だろう。",
   "english_translation": "[Gymnastics] It seems like Suzuki will withdraw from tomorrow's tournament. Speaking of that, she was rubbing her toes after practice. She's been devoting herself to practice day and night, and in her heart probably wants to compete, but if she wants to take part in the Olympics in her best condition, overdoing it is to be avoided.",
   "annotated_words": [
     {
@@ -20,25 +20,11 @@
       "meaning_en": "toes"
     },
     {
-      "word_id": "n1_0935",
-      "word_number": 935,
-      "kanji": "さする",
-      "furigana": "さする",
-      "meaning_en": "rub"
-    },
-    {
       "word_id": "n1_0936",
       "word_number": 936,
       "kanji": "日夜",
       "furigana": "にちや",
       "meaning_en": "day and night"
-    },
-    {
-      "word_id": "n1_0937",
-      "word_number": 937,
-      "kanji": "励む",
-      "furigana": "はげむ",
-      "meaning_en": "devote oneself"
     },
     {
       "word_id": "n1_0938",
@@ -61,5 +47,7 @@
       "furigana": "きんもつ",
       "meaning_en": "thing to be avoided, taboo"
     }
-  ]
+  ],
+  "id": "139_1",
+  "page_story": "139_1"
 }

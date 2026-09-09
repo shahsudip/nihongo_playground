@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 1,
   "title": "Topic 25",
-  "japanese_text": "A：そういえば、高校通ってたときに学校を<u>爆破する</u>って<u>脅迫</u>騒ぎがあった話ってしたっけ。\nB：いや、<u>初耳</u>だけど。\nA：それが、犯人が実はクラスメートでさ。<u>発覚した</u>ときはびっくりしたなあ。",
+  "japanese_text": "A：そういえば、高校通ってたときに学校を<u>爆破</u>するって<u>脅迫</u>騒ぎがあった話ってしたっけ。\nB：いや、<u>初耳</u>だけど。\nA：それが、犯人が実はクラスメートでさ。<u>発覚</u>したときはびっくりしたなあ。",
   "english_translation": "A: Hey, did I ever tell you about when I was in high school and there was a big commotion about a threat to bomb the school? B: No, that's the first time I've heard of it. A: Well, the culprit was actually a classmate of mine. I was so surprised when the fact was discovered.",
   "annotated_words": [
     {
@@ -33,5 +33,7 @@
       "furigana": "はっかく",
       "meaning_en": "finding, discover"
     }
-  ]
+  ],
+  "id": "328_1",
+  "page_story": "328_1"
 }

@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 24,
   "title": "Topic 17",
-  "japanese_text": "小学生の頃、私はクラスで<u>孤立して</u>いたので、いじめの<u>ターゲット</u>にされた。いつも元気な<u>ふり</u>をしていたので先生は全然気がつかず、いじめはどんどん<u>エスカレートして</u>いった。体育で嫌な思いをして、授業を<u>抜け出し</u>、<u>更衣室</u>で泣いたこともあった。あの経験は<u>いまだに</u> <u>トラウマ</u>だ。",
+  "japanese_text": "小学生の頃、私はクラスで<u>孤立</u>していたので、いじめの<u>ターゲット</u>にされた。いつも元気な<u>ふり</u>をしていたので先生は全然気がつかず、いじめはどんどん<u>エスカレート</u>していった。体育で嫌な思いをして、授業を抜け出し、<u>更衣室</u>で泣いたこともあった。あの経験は<u>いまだに</u> <u>トラウマ</u>だ。",
   "english_translation": "When I was in elementary school, I was always isolated in class and was the target of bullying. I kept up the pretense of being cheerful, so my teachers never noticed, and the bullying escalated. I had such a bad experience in physical education class that I slipped away and cried in the locker rooms. The experience is still a source of trauma for me.",
   "annotated_words": [
     {
@@ -34,13 +34,6 @@
       "meaning_en": "escalation, escalate"
     },
     {
-      "word_id": "n1_1452",
-      "word_number": 1452,
-      "kanji": "抜け出す",
-      "furigana": "ぬけだす",
-      "meaning_en": "slip away, slip out of"
-    },
-    {
       "word_id": "n1_1453",
       "word_number": 1453,
       "kanji": "更衣室",
@@ -61,5 +54,7 @@
       "furigana": "トラウマ",
       "meaning_en": "trauma"
     }
-  ]
+  ],
+  "id": "209_1",
+  "page_story": "209_1"
 }

@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 12,
   "title": "Topic 1",
-  "japanese_text": "<u>究極</u>のカレーを作るべく、いろいろなものを入れて<u>煮込んだ</u>。その結果、かなり味が<u>くどい</u>、<u>飲み込む</u>のもやっとの、<u>まずい</u>ものができあがってしまった。",
+  "japanese_text": "<u>究極</u>のカレーを作るべく、いろいろなものを入れて煮込んだ。その結果、かなり味が<u>くどい</u>、<u>飲み込む</u>のもやっとの、<u>まずい</u>ものができあがってしまった。",
   "english_translation": "When I tried to make the ultimate curry, I put all kinds of things into it before simmering it. The result was very strong-flavored, bad-tasting and difficult to swallow.",
   "annotated_words": [
     {
@@ -11,13 +11,6 @@
       "kanji": "究極",
       "furigana": "きゅうきょく",
       "meaning_en": "ultimate"
-    },
-    {
-      "word_id": "n1_0048",
-      "word_number": 48,
-      "kanji": "煮込む",
-      "furigana": "にこ",
-      "meaning_en": "stew, simmer"
     },
     {
       "word_id": "n1_0049",
@@ -40,5 +33,7 @@
       "furigana": "まずい",
       "meaning_en": "bad-tasting"
     }
-  ]
+  ],
+  "id": "20_1",
+  "page_story": "20_1"
 }

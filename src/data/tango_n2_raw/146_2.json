@@ -3,7 +3,7 @@
   "story_number": 19,
   "title": "Topic 10 スポーツ",
   "page_story": "146_2",
-  "japanese_text": "重量挙げは、男女<u>別</u>、体<u>重別</u>に<u>競う</u>ことができる競技だ。最近では、トランスジェンダーであっても競技に出られるように、昔からの基準を<u>改めよう</u>とする動きも出てきた。",
+  "japanese_text": "<u>重量</u>挙げは、男女別、体重別に<u>競う</u>ことができる競技だ。最近では、トランスジェンダーであっても競技に出られるように、昔からの基準を改めようとする動きも出てきた。",
   "english_translation": "Weightlifting is a sport in which men and women compete by both gender and weight. Recently, there has been a movement to revise the previous standards to allow transgender people to compete too.",
   "annotated_words": [
     {
@@ -14,25 +14,12 @@
       "meaning_en": "weight"
     },
     {
-      "word_id": "n2_0908",
-      "word_number": 908,
-      "kanji": "〜別",
-      "furigana": "べつ",
-      "meaning_en": "by ~, theo ~, riêng"
-    },
-    {
       "word_id": "n2_0909",
       "word_number": 909,
       "kanji": "競う",
       "furigana": "きそう",
       "meaning_en": "compete"
-    },
-    {
-      "word_id": "n2_0910",
-      "word_number": 910,
-      "kanji": "改める",
-      "furigana": "あらためる",
-      "meaning_en": "overhaul, revise"
     }
-  ]
+  ],
+  "id": "146_2"
 }

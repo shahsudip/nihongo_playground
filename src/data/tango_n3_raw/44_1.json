@@ -1,6 +1,6 @@
 {
   "title": "Topic 2",
-  "japanese_text": "<ruby>家<rt>いえ</rt></ruby>の<ruby><u>光熱費</u><rt>こうねつひ</rt></ruby>を<ruby>下<rt>さ</rt></ruby>げるために、<ruby>使<rt>つか</rt></ruby>わない<ruby>機器<rt>きき</rt></ruby>の<u>コード</u>をコンセントから<ruby>抜<rt>ぬ</rt></ruby>くようにしている。しかし、この<ruby>間<rt>あいだ</rt></ruby><ruby>歯磨<rt>はみが</rt></ruby>きをしながら<ruby>歩<rt>ある</rt></ruby>いていたら、<ruby>抜<rt>ぬ</rt></ruby>いたコードに<ruby>引<rt>ひ</rt></ruby>っかかってしまって<ruby>危<rt>あぶ</rt></ruby>なかった。コードを<ruby>片付<rt>かたづ</rt></ruby>けるか、<ruby>歯磨<rt>はみが</rt></ruby>きをしながら<ruby>歩<rt>ある</rt></ruby>かないようにするか、どちらがいいだろうか。",
+  "japanese_text": "<ruby>家<rt>いえ</rt></ruby>の<u><ruby>光熱費<rt>こうねつひ</rt></ruby></u>を<ruby>下<rt>さ</rt></ruby>げるために、<ruby>使<rt>つか</rt></ruby>わない<ruby>機器<rt>きき</rt></ruby>の<u>コード</u>をコンセントから<ruby>抜<rt>ぬ</rt></ruby>くようにしている。しかし、この<ruby>間<rt>あいだ</rt></ruby><ruby>歯磨<rt>はみが</rt></ruby>きをしながら<ruby>歩<rt>ある</rt></ruby>いていたら、<ruby>抜<rt>ぬ</rt></ruby>いたコードに<ruby>引<rt>ひ</rt></ruby>っかかってしまって<ruby>危<rt>あぶ</rt></ruby>なかった。コードを<ruby>片付<rt>かたづ</rt></ruby>けるか、<ruby>歯磨<rt>はみが</rt></ruby>きをしながら<ruby>歩<rt>ある</rt></ruby>かないようにするか、どちらがいいだろうか。",
   "english_translation": "In order to lower utility costs at home, I've decided to pull the cords of devices I'm not using out of the power outlets. However, when I was walking around while brushing my teeth, I got caught in an unplugged cord, which was dangerous. I wonder which I should do, clean up the cords or stop walking around while brushing my teeth.",
   "annotated_words": [
     {
@@ -20,5 +20,6 @@
   ],
   "story_number": 18,
   "is_story": true,
-  "page_story": "44_1"
+  "page_story": "44_1",
+  "id": "44_1"
 }

@@ -1,6 +1,6 @@
 {
   "title": "Topic 2",
-  "japanese_text": "<ruby>私<rt>わたし</rt></ruby>はワイシャツに<u>アイロン</u>をかけるのが<ruby>苦手<rt>にがて</rt></ruby>です。<u>どうしても</u>うまくできないので、うちでは<ruby>夫<rt>おっと</rt></ruby>がアイロン<ruby><u>担当</u><rt>たんとう</rt></ruby>です。<ruby>夫<rt>おっと</rt></ruby>に<ruby>不満<rt>ふまん</rt></ruby>な<ruby>様子<rt>ようす</rt></ruby>は<ruby>全<rt>まった</rt></ruby>くなく、<ruby>楽<rt>たの</rt></ruby>しそうにやっています。<ruby>今日<rt>きょう</rt></ruby>も<u>ハンガー</u>にきれいになったワイシャツがかかっていて、うれしいです。",
+  "japanese_text": "<ruby>私<rt>わたし</rt></ruby>はワイシャツに<u>アイロン</u>をかけるのが<ruby>苦手<rt>にがて</rt></ruby>です。<u>どうしても</u>うまくできないので、うちでは<ruby>夫<rt>おっと</rt></ruby>がアイロン<u><ruby>担当<rt>たんとう</rt></ruby></u>です。<ruby>夫<rt>おっと</rt></ruby>に<ruby>不満<rt>ふまん</rt></ruby>な<ruby>様子<rt>ようす</rt></ruby>は<ruby>全<rt>まった</rt></ruby>くなく、<ruby>楽<rt>たの</rt></ruby>しそうにやっています。<ruby>今日<rt>きょう</rt></ruby>も<u>ハンガー</u>にきれいになったワイシャツがかかっていて、うれしいです。",
   "english_translation": "I'm no good at ironing dress shirts. Because I just can't do it well no matter what, my husband is in charge of ironing. He doesn't seem to be dissatisfied at all, and looks like he's having fun doing it. I'm glad to see another cleaned dress shirt on the hanger today too.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
   ],
   "story_number": 17,
   "is_story": true,
-  "page_story": "44_0"
+  "page_story": "44_0",
+  "id": "44_0"
 }

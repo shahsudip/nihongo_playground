@@ -1,6 +1,6 @@
 {
   "title": "Topic 7",
-  "japanese_text": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>信<rt>しん</rt></ruby>じられる<ruby><u>人間</u><rt>にんげん</rt></ruby>だ。<ruby><u>秘密</u><rt>ひみつ</rt></ruby>を<ruby>守<rt>まも</rt></ruby>り、<ruby>離<rt>はな</rt></ruby>れていても<ruby>頼<rt>たの</rt></ruby>みを<ruby>聞<rt>き</rt></ruby>いてくれる。<ruby>彼<rt>かれ</rt></ruby>はみんなから<ruby><u>尊敬</u><rt>そんけい</rt></ruby>されている。",
+  "japanese_text": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>信<rt>しん</rt></ruby>じられる<u><ruby>人間<rt>にんげん</rt></ruby></u>だ。<u><ruby>秘密<rt>ひみつ</rt></ruby></u>を<ruby>守<rt>まも</rt></ruby>り、<ruby>離<rt>はな</rt></ruby>れていても<ruby>頼<rt>たの</rt></ruby>みを<ruby>聞<rt>き</rt></ruby>いてくれる。<ruby>彼<rt>かれ</rt></ruby>はみんなから<u><ruby>尊敬<rt>そんけい</rt></ruby></u>されている。",
   "english_translation": "He is a person people trust. He keeps secrets and listens to your favors even when he's away. He is respected by everyone.",
   "annotated_words": [
     {
@@ -27,5 +27,6 @@
   ],
   "story_number": 7,
   "is_story": true,
-  "page_story": "110_1"
+  "page_story": "110_1",
+  "id": "110_1"
 }

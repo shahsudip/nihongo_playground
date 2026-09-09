@@ -1,6 +1,6 @@
 {
   "title": "Topic 8",
-  "japanese_text": "<u>オリンピック</u>の<ruby><u>開会</u>式<rt>かいかいしき</rt></ruby>の<ruby><u>入場</u><u>券</u><rt>にゅうじょうけん</rt></ruby>が<ruby>抽選<rt>ちゅうせん</rt></ruby>で<ruby>当<rt>あ</rt></ruby>たった。",
+  "japanese_text": "<u>オリンピック</u>の<u><ruby>開会式<rt>かいかいしき</rt></ruby></u>の<u><u><ruby>入場券<rt>にゅうじょうけん</rt></ru</u>by></u>が<ruby>抽選<rt>ちゅうせん</rt></ruby>で<ruby>当<rt>あ</rt></ruby>たった。",
   "english_translation": "I won the lottery for tickets for the Olympic Opening Ceremony.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
   ],
   "story_number": 2,
   "is_story": true,
-  "page_story": "114_2"
+  "page_story": "114_2",
+  "id": "114_2"
 }

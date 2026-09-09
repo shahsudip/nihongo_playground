@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 10,
   "title": "Topic 26",
-  "japanese_text": "少子化が進む日本では、将来の<u>労働力</u>不足が<u>深刻</u>な問題となっている。<u>外国人労働者</u>の<u>受け入れ</u>を<u>拡大</u>することで<u>補う</u>という意見もあるが、<u>文化的</u>な<u>摩擦</u>や<u>制度</u>整備の遅れも<u>懸念</u>される。",
+  "japanese_text": "少子化が進む日本では、将来の<u>労働力</u>不足が<u>深刻な</u>問題となっている。外国人労働者の受け入れを拡大することで補うという意見もあるが、文化的な<u>摩擦</u>や制度整備の遅れも<u>懸念</u>される。",
   "english_translation": "In Japan, where the declining birthrate continues, a future labor shortage is becoming a serious problem. Some suggest expanding the acceptance of foreign workers to compensate, but concerns also exist about cultural friction and delays in institutional development.",
   "annotated_words": [
     {
@@ -33,5 +33,7 @@
       "furigana": "けねん",
       "meaning_en": "concern, be concerned about"
     }
-  ]
+  ],
+  "id": "340_1",
+  "page_story": "340_1"
 }

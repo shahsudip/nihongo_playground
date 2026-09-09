@@ -1,9 +1,25 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "<ruby>納豆<rt>なっとう</rt></ruby>は<ruby>匂<rt>にお</rt></ruby>いを<ruby>嫌<rt>いや</rt></ruby>がる<ruby>人<rt>ひと</rt></ruby>も<ruby>多<rt>おお</rt></ruby>いですが、<ruby>慣<rt>な</rt></ruby>れると<ruby>平気<rt>へいき</rt></ruby>になります。ねばねばしていますが、<ruby>腐<rt>くさ</rt></ruby>っているわけではないですよ。",
+  "japanese_text": "<ruby>納豆<rt>なっとう</rt></ruby>は<ruby>匂<rt>にお</rt></ruby>いを<u><ruby>嫌<rt>いや</rt></ruby>がる</u><ruby>人<rt>ひと</rt></ruby>も<ruby>多<rt>おお</rt></ruby>いですが、<ruby>慣<rt>な</rt></ruby>れると<ruby>平気<rt>へいき</rt></ruby>になります。<u>ねばねば</u>していますが、<ruby>腐<rt>くさ</rt></ruby>っているわけではないですよ。",
   "english_translation": "Many people don't like the smell of natto, but once you get used to it, you'll be fine. It's sticky, but it's not rotten.",
-  "annotated_words": [],
+  "annotated_words": [
+    {
+      "word_id": "n3_0042",
+      "word_number": 42,
+      "kanji": "嫌がる",
+      "furigana": "いやがる",
+      "meaning_en": "dislike"
+    },
+    {
+      "word_id": "n3_0043",
+      "word_number": 43,
+      "kanji": "ねばねば[する]",
+      "furigana": "",
+      "meaning_en": "stickiness, be sticky"
+    }
+  ],
   "story_number": 8,
   "is_story": true,
-  "page_story": "20_2"
+  "page_story": "20_2",
+  "id": "20_2"
 }

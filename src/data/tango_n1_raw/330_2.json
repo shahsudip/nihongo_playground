@@ -2,16 +2,9 @@
   "is_story": true,
   "story_number": 5,
   "title": "Topic 25",
-  "japanese_text": "ある人物がインターネットの掲示板で他のユーザーを<u>罵り</u>、<u>中傷する</u>書き込みをした。これにより被害者は法的手段を取ることを決め、<u>訴訟</u>を起こそうとした。しかし、お互いに話し合った結果、<u>和解する</u>こととなった。",
+  "japanese_text": "ある人物がインターネットの掲示板で他のユーザーを罵り、<u>中傷</u>する書き込みをした。これにより被害者は法的手段を取ることを決め、<u>訴訟</u>を起こそうとした。しかし、お互いに話し合った結果、<u>和解</u>することとなった。",
   "english_translation": "Someone made abusive and defamatory posts about another user on an internet bulletin board. The victim decided to take legal action and tried to file a lawsuit. However, after a mutual discussion, the two parties settled the case.",
   "annotated_words": [
-    {
-      "word_id": "n1_2384",
-      "word_number": 2384,
-      "kanji": "罵る",
-      "furigana": "ののしる",
-      "meaning_en": "be abusive"
-    },
     {
       "word_id": "n1_2385",
       "word_number": 2385,
@@ -33,5 +26,7 @@
       "furigana": "わかい",
       "meaning_en": "peacemaking, settle"
     }
-  ]
+  ],
+  "id": "330_2",
+  "page_story": "330_2"
 }

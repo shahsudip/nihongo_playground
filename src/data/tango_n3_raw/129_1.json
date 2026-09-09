@@ -1,28 +1,14 @@
 {
   "title": "Topic 9 動物 Animals",
-  "japanese_text": "A：<ruby>小動物<u>館<rt>かん</rt></ruby></u>が<ruby>休館<rt>きゅうかん</rt></ruby>になってましたが、<u>なんで</u>でしょうかね。<br>B：ああ、リスに<ruby>続<rt>つづ</rt></ruby>いて、<ruby>昨夜<rt>さくや</rt></ruby>、うさぎが<ruby>死<rt>し</rt></ruby>んでしまったみたいです。<br>A：そうですか。みんなで<u>かわいがって</u>いたのに、<ruby>残念<rt>ざんねん</rt></ruby>ですね。つらいことは<u><ruby>重<rt>かさ</rt></ruby>なる</u>ものですね。",
+  "japanese_text": "A：<ruby>小動物館<rt>かん</rt></ruby>が<ruby>休館<rt>きゅうかん</rt></ruby>になってましたが、<u>なんで</u>でしょうかね。<br>B：ああ、リスに<ruby>続<rt>つづ</rt></ruby>いて、<ruby>昨夜<rt>さくや</rt></ruby>、うさぎが<ruby>死<rt>し</rt></ruby>んでしまったみたいです。<br>A：そうですか。みんなでかわいがっていたのに、<ruby>残念<rt>ざんねん</rt></ruby>ですね。つらいことは<u><ruby>重<rt>かさ</rt></ruby>なる</u>ものですね。",
   "english_translation": "A: The small animal building is closed, but I wonder why. B: Oh, I heard that a rabbit died last night followed by a squirrel. A: Really? That's a pity, since they were so adored by everyone. Bad things tend to happen one after the other.",
   "annotated_words": [
-    {
-      "word_id": "n3_0891",
-      "word_number": 891,
-      "kanji": "〜館",
-      "furigana": "〜かん",
-      "meaning_en": "building"
-    },
     {
       "word_id": "n3_0892",
       "word_number": 892,
       "kanji": "なんで",
       "furigana": "",
       "meaning_en": "why"
-    },
-    {
-      "word_id": "n3_0893",
-      "word_number": 893,
-      "kanji": "かわいがる",
-      "furigana": "",
-      "meaning_en": "adore"
     },
     {
       "word_id": "n3_0894",
@@ -34,5 +20,6 @@
   ],
   "story_number": 3,
   "is_story": true,
-  "page_story": "129_1"
+  "page_story": "129_1",
+  "id": "129_1"
 }

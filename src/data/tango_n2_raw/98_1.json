@@ -1,7 +1,7 @@
 {
   "title": "Topic 6 流行",
   "audio_id": "112",
-  "japanese_text": "A：ゲームのやりすぎかなあ。これ以上、<u>視力</u>が悪くなったらメガネかコンタクトだって医者に<u>警告された</u>。どっちが<u>もてる</u>と思う？\nB：どっちにしても、もてないと思う。",
+  "japanese_text": "A：ゲームのやりすぎかなあ。これ以上、<u>視力</u>が悪くなったらメガネかコンタクトだって医者に<u>警告</u>された。どっちが<u>もてる</u>と思う？\nB：どっちにしても、もてないと思う。",
   "page_story": "98_1",
   "english_translation": "A: I think I play too many games. My doctor warned me that if my eyesight gets any worse, I'll have to get glasses or contact lenses. Which do you think would be more attractive? B: Either way, I don't think you'll be attractive.",
   "annotated_words": [
@@ -27,5 +27,6 @@
       "meaning_en": "be attractive"
     }
   ],
-  "is_story": true
+  "is_story": true,
+  "id": "98_1"
 }

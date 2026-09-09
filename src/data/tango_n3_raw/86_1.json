@@ -1,6 +1,6 @@
 {
   "title": "Topic 5",
-  "japanese_text": "<ruby>Ａ：<u>マウス</u>がときどき<rt></rt></ruby><ruby>動<rt>うご</rt></ruby><ruby>かなくなるんですよ。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><ruby><u>無線</u><rt>むせん</rt></ruby><ruby>のマウスだったらたぶん<rt></rt></ruby><ruby><u>電池</u><rt>でんち</rt></ruby><ruby>が<rt></rt></ruby><ruby>切<rt>き</rt></ruby><ruby>れかけています。<rt></rt></ruby><ruby><u>交換</u><rt>こうかん</rt></ruby><ruby>すれば<rt></rt></ruby><ruby>直<rt>なお</rt></ruby><ruby>りますよ。<rt></rt></ruby>",
+  "japanese_text": "<u><ruby>Ａ：マウスがときどき<rt></rt></ruby></u><ruby>動<rt>うご</rt></ruby><ruby>かなくなるんですよ。<rt></rt></ruby>\n<ruby>Ｂ：<rt></rt></ruby><u><ruby>無線<rt>むせん</rt></ruby></u><ruby>のマウスだったらたぶん<rt></rt></ruby><u><ruby>電池<rt>でんち</rt></ruby></u><ruby>が<rt></rt></ruby><ruby>切<rt>き</rt></ruby><ruby>れかけています。<rt></rt></ruby><u><ruby>交換<rt>こうかん</rt></ruby></u><ruby>すれば<rt></rt></ruby><ruby>直<rt>なお</rt></ruby><ruby>りますよ。<rt></rt></ruby>",
   "english_translation": "A: My mouse stops moving sometimes.\nB: If it's a wireless mouse, the batteries are probably running out. If you replace them, it should work fine.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
   ],
   "story_number": 24,
   "is_story": true,
-  "page_story": "86_1"
+  "page_story": "86_1",
+  "id": "86_1"
 }

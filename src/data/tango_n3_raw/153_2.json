@@ -1,7 +1,7 @@
 {
   "id": "153_2",
   "title": "Topic 11",
-  "japanese_text": "<ruby>田舎<rt>いなか</rt></ruby>と<ruby>比<rt>くら</rt></ruby>べると、<ruby>都会<rt>とかい</rt></ruby>はコンクリートに<ruby>囲<rt>かこ</rt></ruby>まれているので、なかなか<ruby>地面<rt>じめん</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby>が<ruby>下<rt>さ</rt></ruby>がりにくい。",
+  "japanese_text": "<ruby>田舎<rt>いなか</rt></ruby>と<u><ruby>比<rt>くら</rt></ruby>べる</u>と、<ruby>都会<rt>とかい</rt></ruby>は<u>コンクリート</u>に<ruby>囲<rt>かこ</rt></ruby>まれているので、なかなか<ruby>地面<rt>じめん</rt></ruby>の<u><ruby>温度<rt>おんど</rt></ruby></u>が<ruby>下<rt>さ</rt></ruby>がりにくい。",
   "english_translation": "Compared to the countryside, the city is surrounded by concrete, so the temperature of the ground doesn't fall easily.",
   "annotated_words": [
     {
@@ -15,19 +15,11 @@
       "meaning": "concrete"
     },
     {
-      "kanji": "囲む",
-      "furigana": "かこむ",
-      "meaning": "surround"
-    },
-    {
       "kanji": "温度",
       "furigana": "おんど",
       "meaning": "temperature"
-    },
-    {
-      "kanji": "温度計",
-      "furigana": "おんどけい",
-      "meaning": "thermometer"
     }
-  ]
+  ],
+  "page_story": "153_2",
+  "is_story": true
 }

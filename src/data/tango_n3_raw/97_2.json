@@ -1,6 +1,6 @@
 {
   "title": "Topic 6",
-  "japanese_text": "Ａ：<u>ミステリー</u>のドラマってだいたい<u>ハンサムな</u><ruby>役者<rt>やくしゃ</rt></ruby>が<ruby><u>犯人</u><rt>はんにん</rt></ruby>だよな。\nＢ：<u>おい</u>、そんなこと<ruby>言<rt>い</rt></ruby>うのやめろよ。",
+  "japanese_text": "Ａ：<u>ミステリー</u>のドラマってだいたい<u>ハンサムな</u><ruby>役者<rt>やくしゃ</rt></ruby>が<u><ruby>犯人<rt>はんにん</rt></ruby></u>だよな。\nＢ：<u>おい</u>、そんなこと<ruby>言<rt>い</rt></ruby>うのやめろよ。",
   "english_translation": "A: In mystery dramas, the criminal is usually the handsome actor, right?\nB: Hey, stop saying things like that.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
   ],
   "story_number": 10,
   "is_story": true,
-  "page_story": "97_2"
+  "page_story": "97_2",
+  "id": "97_2"
 }

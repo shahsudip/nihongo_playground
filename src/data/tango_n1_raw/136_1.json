@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 13,
   "title": "Topic 11",
-  "japanese_text": "プロチームに<u>所属する</u>スポーツ選手は多いが、プロスポーツとしての地位を<u>確立している</u>野球やサッカーを除けば、突然チームが<u>存続できなく</u>なることはよく聞く話だ。チームの存続は選手にとって<u>まさしく</u> <u>死活問題</u>であるため、野球やサッカーに<u>倣って</u>チームの運営方法を工夫したり、イベントを<u>催したり</u>して、そのスポーツやチームの人気を高めようとしている。",
+  "japanese_text": "プロチームに<u>所属</u>するスポーツ選手は多いが、プロスポーツとしての地位を<u>確立</u>している野球やサッカーを除けば、突然チームが<u>存続</u>できなくなることはよく聞く話だ。チームの存続は選手にとって<u>まさしく</u> <u>死活問題</u>であるため、野球やサッカーに倣ってチームの運営方法を工夫したり、イベントを催したりして、そのスポーツやチームの人気を高めようとしている。",
   "english_translation": "Many athletes belong to professional teams, but with the exception of baseball and soccer, which have established themselves as professional sports, it is common to hear of teams suddenly ceasing to exist. Since a team's survival is truly a matter of life and death for the players, they try to increase the popularity of their sport or team by devising new ways of managing the team and organizing events, following the example of baseball and soccer.",
   "annotated_words": [
     {
@@ -39,20 +39,8 @@
       "kanji": "死活問題",
       "furigana": "しかつもんだい",
       "meaning_en": "matter of life and death"
-    },
-    {
-      "word_id": "n1_0911",
-      "word_number": 911,
-      "kanji": "倣う",
-      "furigana": "ならう",
-      "meaning_en": "copy, follow an example"
-    },
-    {
-      "word_id": "n1_0912",
-      "word_number": 912,
-      "kanji": "催す",
-      "furigana": "もよおす",
-      "meaning_en": "hold, organize"
     }
-  ]
+  ],
+  "id": "136_1",
+  "page_story": "136_1"
 }

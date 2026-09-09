@@ -1,6 +1,6 @@
 {
   "title": "Topic 8",
-  "japanese_text": "<ruby>手続<rt>てつづ</rt></ruby>きに<u>ミス</u>があって、<ruby>予算<rt>よさん</rt></ruby>が<u>カット</u>されてしまい、<ruby><u>次回</u><rt>じかい</rt></ruby>の<ruby>大会<rt>たいかい</rt></ruby>に<ruby><u>出場</u><rt>しゅつじょう</rt></ruby>できなくなってしまった。",
+  "japanese_text": "<ruby>手続<rt>てつづ</rt></ruby>きに<u>ミス</u>があって、<ruby>予算<rt>よさん</rt></ruby>が<u>カット</u>されてしまい、<u><ruby>次回<rt>じかい</rt></ruby></u>の<ruby>大会<rt>たいかい</rt></ruby>に<u><ruby>出場<rt>しゅつじょう</rt></ruby></u>できなくなってしまった。",
   "english_translation": "As there was a mistake in the procedure, the budget was cut and I will now no longer be able to participate in the next tournament.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
   ],
   "story_number": 16,
   "is_story": true,
-  "page_story": "121_2"
+  "page_story": "121_2",
+  "id": "121_2"
 }

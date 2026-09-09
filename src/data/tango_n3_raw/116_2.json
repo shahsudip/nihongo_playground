@@ -1,6 +1,6 @@
 {
   "title": "Topic 8",
-  "japanese_text": "どんなに<ruby><u>才能</u><rt>さいのう</rt></ruby>がある<ruby>選手<rt>せんしゅ</rt></ruby>でも、<u>トレーニング</u>を<ruby>続<rt>つづ</rt></ruby>けなければ、<ruby><u>記録</u><rt>きろく</rt></ruby>を<ruby>伸<rt>の</rt></ruby>ばすことはできない。",
+  "japanese_text": "どんなに<u><ruby>才能<rt>さいのう</rt></ruby></u>がある<ruby>選手<rt>せんしゅ</rt></ruby>でも、<u>トレーニング</u>を<ruby>続<rt>つづ</rt></ruby>けなければ、<u><ruby>記録<rt>きろく</rt></ruby></u>を<ruby>伸<rt>の</rt></ruby>ばすことはできない。",
   "english_translation": "No matter how talented athletes may be, if they do not continue training, they won't be able to improve their records.",
   "annotated_words": [
     {
@@ -27,5 +27,6 @@
   ],
   "story_number": 6,
   "is_story": true,
-  "page_story": "116_2"
+  "page_story": "116_2",
+  "id": "116_2"
 }

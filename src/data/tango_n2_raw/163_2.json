@@ -3,7 +3,7 @@
   "story_number": 4,
   "title": "Topic 12 住",
   "page_story": "163_2",
-  "japanese_text": "この辺りは<u>都心</u>への通勤に<u>最適な</u>距離であるため<u>一見</u>住みやすそうだが、飛行機が飛び交い<u>騒々しい</u>ことに加え、<u>地盤</u>が沈んで道路が崩れる事件が起きたため、一人また一人と<u>去って</u>いく人が増えている。",
+  "japanese_text": "この辺りは<u>都心</u>への通勤に<u>最適な</u>距離であるため<u>一見</u>住みやすそうだが、飛行機が飛び交い<u>騒々しい</u>ことに加え、<u>地盤</u>が沈んで道路が崩れる事件が起きたため、一人また一人と去っていく人が増えている。",
   "english_translation": "At first glance, this area seems to be a nice place to live, since it's within the optimum commuting distance to the city center, but in addition to the noisy airplanes flying overhead, because the ground is subsiding and roads are collapsing, more people are leaving, one after another.",
   "annotated_words": [
     {
@@ -40,13 +40,7 @@
       "kanji": "地盤",
       "furigana": "じばん",
       "meaning_en": "ground"
-    },
-    {
-      "word_id": "n2_1039",
-      "word_number": 1039,
-      "kanji": "去る",
-      "furigana": "さる",
-      "meaning_en": "leave"
     }
-  ]
+  ],
+  "id": "163_2"
 }

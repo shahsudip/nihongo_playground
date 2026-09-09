@@ -1,6 +1,6 @@
 {
   "title": "Topic 4",
-  "japanese_text": "<ruby>誕生日<rt>たんじょうび</rt></ruby><ruby>に<rt></rt></ruby><ruby>彼<rt>かれ</rt></ruby><ruby>から<u>ネックレス</u>と<u>イヤリング</u>をもらったが、<rt></rt></ruby><ruby><u>個性</u>的<rt>こせいてき</rt></ruby><ruby>なデザインで<rt></rt></ruby><ruby>着<rt>つ</rt></ruby><ruby>ける<rt></rt></ruby><ruby>機会<rt>きかい</rt></ruby><ruby>がない。<rt></rt></ruby>",
+  "japanese_text": "<ruby>誕生日<rt>たんじょうび</rt></ruby><ruby>に<rt></rt></ruby><ruby>彼<rt>かれ</rt></ruby><u><u><ruby>からネックレスとイヤリングをもらったが、<rt></rt></ru</u>by></u><u><ruby>個性的<rt>こせいてき</rt></ruby></u><ruby>なデザインで<rt></rt></ruby><ruby>着<rt>つ</rt></ruby><ruby>ける<rt></rt></ruby><ruby>機会<rt>きかい</rt></ruby><ruby>がない。<rt></rt></ruby>",
   "english_translation": "I got a necklace and earrings from my boyfriend on my birthday, but it's such a unique design that I have no opportunity to wear them.",
   "annotated_words": [
     {
@@ -27,5 +27,6 @@
   ],
   "story_number": 18,
   "is_story": true,
-  "page_story": "71_1"
+  "page_story": "71_1",
+  "id": "71_1"
 }

@@ -1,32 +1,39 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "<u>ドレッシング</u>を<ruby>作<rt>つく</rt></ruby>るのは<ruby>簡単<rt>かんたん</rt></ruby>だ。オリーブ<u>オイル</u>と<ruby><u>酢</u><rt>す</rt></ruby>をよく<ruby>混<rt>ま</rt></ruby>ぜて、<ruby>好<rt>この</rt></ruby>みで<ruby>塩<rt>しお</rt></ruby>・<u>こしょう</u>を<ruby>入<rt>い</rt></ruby>れる。これでサラダをおいしく<ruby>食<rt>た</rt></ruby>べられる。",
+  "japanese_text": "<u>ドレッシング</u>を<ruby>作<rt>つく</rt></ruby>るのは<ruby>簡単<rt>かんたん</rt></ruby>だ。オリーブ<u>オイル</u>と<u><ruby>酢<rt>す</rt></ruby></u>をよく<u><ruby>混<rt>ま</rt></ruby>ぜて</u>、<ruby>好<rt>この</rt></ruby>みで<ruby>塩<rt>しお</rt></ruby>・<u>こしょう</u>を<ruby>入<rt>い</rt></ruby>れる。これでサラダをおいしく<ruby>食<rt>た</rt></ruby>べられる。",
   "english_translation": "Making a dressing is easy. Mix olive oil and vinegar thoroughly and add salt and pepper as you like. Now you can eat the great-tasting salad.",
   "annotated_words": [
     {
-      "word_id": "n3_0025",
-      "word_number": 25,
+      "word_id": "n3_0044",
+      "word_number": 44,
       "kanji": "ドレッシング",
       "furigana": "",
       "meaning_en": "dressing"
     },
     {
-      "word_id": "n3_0026",
-      "word_number": 26,
+      "word_id": "n3_0045",
+      "word_number": 45,
       "kanji": "オイル",
       "furigana": "",
       "meaning_en": "oil"
     },
     {
-      "word_id": "n3_0027",
-      "word_number": 27,
+      "word_id": "n3_0046",
+      "word_number": 46,
       "kanji": "酢",
       "furigana": "す",
       "meaning_en": "vinegar"
     },
     {
-      "word_id": "n3_0028",
-      "word_number": 28,
+      "word_id": "n3_0047",
+      "word_number": 47,
+      "kanji": "混ぜる",
+      "furigana": "まぜる",
+      "meaning_en": "mix"
+    },
+    {
+      "word_id": "n3_0048",
+      "word_number": 48,
       "kanji": "こしょう",
       "furigana": "",
       "meaning_en": "pepper"
@@ -34,5 +41,6 @@
   ],
   "story_number": 9,
   "is_story": true,
-  "page_story": "21_1"
+  "page_story": "21_1",
+  "id": "21_1"
 }

@@ -3,7 +3,7 @@
   "story_number": 14,
   "title": "Topic 21 社会",
   "page_story": "300_1",
-  "japanese_text": "この国では、親や子の<u>介護</u>を家族一人で行うことがあるが、家族だけで<u>面倒をみる</u>ことを<u>当たり前</u>のことにしてはいけない。国は、一人で苦しむことがないように、介護<u>施設</u>や<u>サポート</u>を利用するよう<u>呼びかけて</u>いる。",
+  "japanese_text": "この国では、親や子の<u>介護</u>を家族一人で行うことがあるが、家族だけで<u>面倒をみる</u>ことを<u>当たり前</u>のことにしてはいけない。国は、一人で苦しむことがないように、介護<u>施設</u>や<u>サポート</u>を利用するよう呼びかけている。",
   "english_translation": "In this country, a family member might be the sole caregiver for a parent or child, but it shouldn't be taken for granted that the family alone will look after the person. The government encourages people to use nursing care facilities and support so that they do not have to suffer alone.",
   "annotated_words": [
     {
@@ -14,25 +14,11 @@
       "meaning_en": "nursing care, give care"
     },
     {
-      "word_id": "n2_2101",
-      "word_number": 2101,
-      "kanji": "介護士",
-      "furigana": "かいごし",
-      "meaning_en": "caregiver"
-    },
-    {
       "word_id": "n2_2102",
       "word_number": 2102,
       "kanji": "面倒をみる",
       "furigana": "めんどうをみる",
       "meaning_en": "look after"
-    },
-    {
-      "word_id": "n2_2103",
-      "word_number": 2103,
-      "kanji": "面倒",
-      "furigana": "めんどう",
-      "meaning_en": "trouble"
     },
     {
       "word_id": "n2_2104",
@@ -54,13 +40,7 @@
       "kanji": "サポート[する]",
       "furigana": "さぽーと",
       "meaning_en": "support"
-    },
-    {
-      "word_id": "n2_2107",
-      "word_number": 2107,
-      "kanji": "呼びかける",
-      "furigana": "よびかける",
-      "meaning_en": "call out, encourage"
     }
-  ]
+  ],
+  "id": "300_1"
 }

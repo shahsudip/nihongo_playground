@@ -3,16 +3,9 @@
   "story_number": 2,
   "title": "Topic 19 健康",
   "page_story": "267_1",
-  "japanese_text": "先日、事故に遭った友達の<u>お見舞いに</u>行ってきた。友達は<u>輸血</u>を受けるぐらいの大けがで、まだ<u>青白い</u>顔をしていた。体はたくさんの<u>管</u>に繋がれ、ずっと<u>あおむけ</u>の状態で、頭にも<u>包帯</u>が巻いてあった。<u>回復</u>まで、まだ時間がかかりそうだ。",
+  "japanese_text": "先日、事故に遭った友達のお見舞いに行ってきた。友達は<u>輸血</u>を受けるぐらいの大けがで、まだ<u>青白い</u>顔をしていた。体はたくさんの<u>管</u>に繋がれ、ずっと<u>あおむけ</u>の状態で、頭にも<u>包帯</u>が巻いてあった。<u>回復</u>まで、まだ時間がかかりそうだ。",
   "english_translation": "The other day I went to visit a friend who'd been in an accident. She was so badly injured that she'd had a blood transfusion, and she still looked pale. Her body was connected to a lot of tubes, and she was lying on her back with bandages on her head. Apparently, it'll take her a long time to recover.",
   "annotated_words": [
-    {
-      "word_id": "n2_1846",
-      "word_number": 1846,
-      "kanji": "(お)見舞い",
-      "furigana": "(お)みまい",
-      "meaning_en": "visit (someone unwell)"
-    },
     {
       "word_id": "n2_1847",
       "word_number": 1847,
@@ -55,5 +48,6 @@
       "furigana": "かいふく",
       "meaning_en": "recovery, recover"
     }
-  ]
+  ],
+  "id": "267_1"
 }

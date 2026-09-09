@@ -1,18 +1,46 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "<ruby>最近<rt>さいきん</rt></ruby>の<ruby>冷凍<rt>れいとう</rt></ruby><ruby>食品<rt>しょくひん</rt></ruby>はとてもおいしい。<ruby>手作<rt>てづく</rt></ruby>りの<ruby>料理<rt>りょうり</rt></ruby>と<ruby>区別<rt>くべつ</rt></ruby>できない。それに、<u>トレー</u>を<ruby>分<rt>わ</rt></ruby>ければ、3<ruby>人分<rt>にんぶん</rt></ruby>とか1<ruby>人分<rt>ひとりぶん</rt></ruby>のように<ruby>必<rt>ひつ</rt></ruby><ruby>要<rt>よう</rt></ruby>な<ruby><u>量</u><rt>りょう</rt></ruby>だけを<ruby>使<rt>つか</rt></ruby>うことができる。",
+  "japanese_text": "<ruby>最近<rt>さいきん</rt></ruby>の<u><ruby>冷凍<rt>れいとう</rt></ruby><ruby>食品<rt>しょくひん</rt></ruby></u>はとてもおいしい。<u><ruby>手作<rt>てづく</rt></ruby>り</u>の<ruby>料理<rt>りょうり</rt></ruby>と<u><ruby>区別<rt>くべつ</rt></ruby></u>できない。それに、<u>トレー</u>を<ruby>分<rt>わ</rt></ruby>ければ、3<u><ruby>人分<rt>にんぶん</rt></ruby></u>とか1<ruby>人分<rt>ひとりぶん</rt></ruby>のように<ruby>必<rt>ひつ</rt></ruby><ruby>要<rt>よう</rt></ruby>な<u><ruby>量<rt>りょう</rt></ruby></u>だけを<ruby>使<rt>つか</rt></ruby>うことができる。",
   "english_translation": "Frozen foods these days are very delicious. They are indistinguishable from homemade dishes. Besides, if you divide the tray, you can use only the amount you need, such as for three people or just one person.",
   "annotated_words": [
     {
-      "word_id": "n3_0005",
-      "word_number": 5,
+      "word_id": "n3_0007",
+      "word_number": 7,
+      "kanji": "冷凍食品",
+      "furigana": "れいとうしょくひん",
+      "meaning_en": "frozen food"
+    },
+    {
+      "word_id": "n3_0008",
+      "word_number": 8,
+      "kanji": "手作り[する]",
+      "furigana": "てづく",
+      "meaning_en": "handmade, make by hand"
+    },
+    {
+      "word_id": "n3_0009",
+      "word_number": 9,
+      "kanji": "区別[する]",
+      "furigana": "くべつ",
+      "meaning_en": "distinguishing, distinguish"
+    },
+    {
+      "word_id": "n3_0010",
+      "word_number": 10,
       "kanji": "トレー",
       "furigana": "",
       "meaning_en": "tray"
     },
     {
-      "word_id": "n3_0006",
-      "word_number": 6,
+      "word_id": "n3_0011",
+      "word_number": 11,
+      "kanji": "～人分",
+      "furigana": "にんぶん",
+      "meaning_en": "for ~ person/people"
+    },
+    {
+      "word_id": "n3_0012",
+      "word_number": 12,
       "kanji": "量",
       "furigana": "りょう",
       "meaning_en": "amount"
@@ -20,5 +48,6 @@
   ],
   "story_number": 2,
   "is_story": true,
-  "page_story": "16_2"
+  "page_story": "16_2",
+  "id": "16_2"
 }

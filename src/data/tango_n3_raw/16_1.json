@@ -1,38 +1,53 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "A：<ruby>朝<rt>ちょう</rt></ruby><ruby>食<rt>しょく</rt></ruby>に<u>フルーツ</u>を<ruby>食<rt>た</rt></ruby>べるといいって<ruby>聞<rt>き</rt></ruby>いたんだけど、<u>皮</u>を<u>むく</u>のが<ruby>面倒<rt>めんどう</rt></ruby>くさいんだよね。<br>B：じゃあ<u>缶詰</u>でいいじゃない。<br>A：でも、<ruby>新鮮<rt>しんせん</rt></ruby>な<ruby>方<rt>ほう</rt></ruby>がよくない？",
+  "japanese_text": "A：<u><ruby>朝<rt>ちょう</rt></ruby><ruby>食<rt>しょく</rt></ruby></u>に<u>フルーツ</u>を<ruby>食<rt>た</rt></ruby>べるといいって<ruby>聞<rt>き</rt></ruby>いたんだけど、<u>皮</u>を<u>むく</u>のが<ruby>面倒<rt>めんどう</rt></ruby>くさいんだよね。<br>B：じゃあ<u>缶詰</u>でいいじゃない。<br>A：でも、<u><ruby>新鮮<rt>しんせん</rt></ruby>な</u><ruby>方<rt>ほう</rt></ruby>がよくない？",
   "english_translation": "A: I heard that you should eat fruit for breakfast, but peeling it is a hassle. B: Then canned food would be fine, wouldn't it? A: But isn't fresh fruit better?",
   "annotated_words": [
     {
       "word_id": "n3_0001",
       "word_number": 1,
+      "kanji": "朝食",
+      "furigana": "ちょうしょく",
+      "meaning_en": "breakfast"
+    },
+    {
+      "word_id": "n3_0002",
+      "word_number": 2,
       "kanji": "フルーツ",
       "furigana": "",
       "meaning_en": "fruit"
     },
     {
-      "word_id": "n3_0002",
-      "word_number": 2,
+      "word_id": "n3_0003",
+      "word_number": 3,
       "kanji": "皮",
       "furigana": "かわ",
       "meaning_en": "skin"
     },
     {
-      "word_id": "n3_0003",
-      "word_number": 3,
+      "word_id": "n3_0004",
+      "word_number": 4,
       "kanji": "むく",
       "furigana": "",
       "meaning_en": "peel"
     },
     {
-      "word_id": "n3_0004",
-      "word_number": 4,
+      "word_id": "n3_0005",
+      "word_number": 5,
       "kanji": "缶詰",
       "furigana": "かんづめ",
       "meaning_en": "canned goods"
+    },
+    {
+      "word_id": "n3_0006",
+      "word_number": 6,
+      "kanji": "新鮮な",
+      "furigana": "しんせん",
+      "meaning_en": "fresh"
     }
   ],
   "story_number": 1,
   "is_story": true,
-  "page_story": "16_1"
+  "page_story": "16_1",
+  "id": "16_1"
 }

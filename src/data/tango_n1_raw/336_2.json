@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 14,
   "title": "Topic 25",
-  "japanese_text": "この保険が<u>適用される</u>ためには<u>所定</u>の書類に必要<u>事項</u>を記入のうえ、保険会社へ申請することが求められる。",
+  "japanese_text": "この保険が<u>適用</u>されるためには<u>所定</u>の書類に必要<u>事項</u>を記入のうえ、保険会社へ申請することが求められる。",
   "english_translation": "To be covered by this insurance, you need to fill out the necessary items on the prescribed form, then apply to the insurance company.",
   "annotated_words": [
     {
@@ -26,5 +26,7 @@
       "furigana": "じこう",
       "meaning_en": "item, point"
     }
-  ]
+  ],
+  "id": "336_2",
+  "page_story": "336_2"
 }

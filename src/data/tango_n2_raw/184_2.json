@@ -3,7 +3,7 @@
   "story_number": 3,
   "title": "Topic 14 天気",
   "page_story": "184_2",
-  "japanese_text": "<u>紫外線</u>は太陽<u>光線</u>の一種であり、２月から夏にかけて<u>徐々に</u>増えていく。紫外線は<u>日焼け</u>やしみの原因になるが、<u>日光</u>を浴びなければ、ビタミンDが<u>不足して</u>しまう。",
+  "japanese_text": "<u>紫外線</u>は太陽<u>光線</u>の一種であり、２月から夏にかけて<u>徐々に</u>増えていく。紫外線は<u>日焼け</u>やしみの原因になるが、<u>日光</u>を浴びなければ、ビタミンDが<u>不足</u>してしまう。",
   "english_translation": "Ultraviolet rays are a type of solar radiation that gradually increases from February throughout summer. Although UV rays can cause sunburn and skin blotches, without exposure to sunlight, we would be deficient in vitamin D.",
   "annotated_words": [
     {
@@ -48,5 +48,6 @@
       "furigana": "ふそく",
       "meaning_en": "deficiency, be deficient"
     }
-  ]
+  ],
+  "id": "184_2"
 }

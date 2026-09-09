@@ -1,38 +1,46 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "<ruby>塩<rt>しお</rt></ruby>は<ruby>人間<rt>にんげん</rt></ruby>にとって、<ruby>最<rt>もっと</rt></ruby>も<ruby>基本的<rt>きほんてき</rt></ruby>な<ruby><u>調味料</u><rt>ちょうみりょう</rt></ruby>の1つだ。<ruby>塩<rt>しお</rt></ruby>は<ruby><u>海水</u><rt>かいすい</rt></ruby>から<ruby>作<rt>つく</rt></ruby>られる。だから、<ruby>海水<rt>かいすい</rt></ruby>を<ruby><u>舌</u><rt>した</rt></ruby>で<u>なめる</u>と、<ruby>塩辛<rt>しおから</rt></ruby>い<ruby>味<rt>あじ</rt></ruby>がする。",
+  "japanese_text": "<ruby>塩<rt>しお</rt></ruby>は<ruby>人間<rt>にんげん</rt></ruby>にとって、<ruby>最<rt>もっと</rt></ruby>も<ruby>基本的<rt>きほんてき</rt></ruby>な<u><ruby>調味料<rt>ちょうみりょう</rt></ruby></u>の1つだ。<ruby>塩<rt>しお</rt></ruby>は<u><ruby>海水<rt>かいすい</rt></ruby></u>から<ruby>作<rt>つく</rt></ruby>られる。だから、<ruby>海水<rt>かいすい</rt></ruby>を<u><ruby>舌<rt>した</rt></ruby></u>で<u>なめる</u>と、<u><ruby>塩辛<rt>しおから</rt></ruby>い</u><ruby>味<rt>あじ</rt></ruby>がする。",
   "english_translation": "Salt is one of the most basic seasonings for humans. Salt is made from seawater. So, if you lick seawater with your tongue, it tastes salty.",
   "annotated_words": [
     {
-      "word_id": "n3_0073",
-      "word_number": 73,
+      "word_id": "n3_0109",
+      "word_number": 109,
       "kanji": "調味料",
       "furigana": "ちょうみりょう",
       "meaning_en": "seasoning"
     },
     {
-      "word_id": "n3_0074",
-      "word_number": 74,
+      "word_id": "n3_0110",
+      "word_number": 110,
       "kanji": "海水",
       "furigana": "かいすい",
       "meaning_en": "seawater"
     },
     {
-      "word_id": "n3_0075",
-      "word_number": 75,
+      "word_id": "n3_0111",
+      "word_number": 111,
       "kanji": "舌",
       "furigana": "した",
       "meaning_en": "tongue"
     },
     {
-      "word_id": "n3_0076",
-      "word_number": 76,
+      "word_id": "n3_0112",
+      "word_number": 112,
       "kanji": "なめる",
       "furigana": "",
       "meaning_en": "lick"
+    },
+    {
+      "word_id": "n3_0113",
+      "word_number": 113,
+      "kanji": "塩辛い",
+      "furigana": "しおからい",
+      "meaning_en": "salty"
     }
   ],
   "story_number": 24,
   "is_story": true,
-  "page_story": "30_2"
+  "page_story": "30_2",
+  "id": "30_2"
 }

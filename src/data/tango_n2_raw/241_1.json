@@ -3,7 +3,7 @@
   "story_number": 11,
   "title": "Topic 17 仕事",
   "page_story": "241_1",
-  "japanese_text": "A：<u>部下</u>が<u>有能</u>なら、<u>上司</u>は<u>必ずしも</u>有能<u>じゃなくて</u>もいいよね。\nB：有能じゃなくてもいいけど、うちの上司みたいに<u>無能だ</u>と部下が迷惑するよ。",
+  "japanese_text": "A：<u>部下</u>が<u>有能な</u>ら、<u>上司</u>は必ずしも有能じゃなくてもいいよね。\nB：有能じゃなくてもいいけど、うちの上司みたいに<u>無能</u>だと部下が迷惑するよ。",
   "english_translation": "A: If those working under him are capable, the boss doesn't necessarily have to be capable. B: He doesn't have to be capable, but if he's as incompetent as our boss, the people working under him will be annoyed.",
   "annotated_words": [
     {
@@ -28,18 +28,12 @@
       "meaning_en": "boss, superior"
     },
     {
-      "word_id": "n2_1635",
-      "word_number": 1635,
-      "kanji": "必ずしも〜ない",
-      "furigana": "かならずしも〜ない",
-      "meaning_en": "not necessarily"
-    },
-    {
       "word_id": "n2_1636",
       "word_number": 1636,
       "kanji": "無能な",
       "furigana": "むのうな",
       "meaning_en": "incompetent"
     }
-  ]
+  ],
+  "id": "241_1"
 }

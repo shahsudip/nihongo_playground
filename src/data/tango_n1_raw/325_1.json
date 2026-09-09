@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 3,
   "title": "Topic 26",
-  "japanese_text": "大規模な<u>自然災害</u>が発生した際、政府は速やかに<u>非常事態</u>を<u>宣言</u>し、<u>被災地</u>への<u>緊急支援</u>を開始した。<u>自衛隊</u>が<u>派遣</u>され、<u>救助</u>活動が行われた。",
+  "japanese_text": "大規模な<u>自然災害</u>が発生した際、政府は速やかに<u>非常事態</u>を<u>宣言</u>し、<u>被災地</u>への緊急支援を開始した。<u>自衛隊</u>が<u>派遣</u>され、<u>救助</u>活動が行われた。",
   "english_translation": "When a large-scale natural disaster occurred, the government promptly declared a state of emergency and began emergency support for the disaster-stricken areas. The Self-Defense Forces were dispatched and rescue operations were carried out.",
   "annotated_words": [
     {
@@ -54,5 +54,7 @@
       "furigana": "きゅうじょ",
       "meaning_en": "rescue, rescue"
     }
-  ]
+  ],
+  "id": "325_1",
+  "page_story": "325_1"
 }

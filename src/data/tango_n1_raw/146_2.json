@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 6,
   "title": "Topic 12",
-  "japanese_text": "<u>貝殻</u>は、貝の膜から出る<u>分泌物</u>が結晶になることで作られる。貝殻に見られる<u>渦巻</u>のかたちは、その分泌物が貝殻に<u>付け足されて</u>いくプロセスを示している。",
+  "japanese_text": "<u>貝殻</u>は、貝の膜から出る<u>分泌物</u>が結晶になることで作られる。貝殻に見られる<u>渦巻</u>のかたちは、その<u>分泌</u>物が貝殻に付け足されていくプロセスを示している。",
   "english_translation": "Shells are formed when secretions from the shell's membrane crystallize. The spiral shape of the shell shows the process by which the secretions are added on to the shell.",
   "annotated_words": [
     {
@@ -32,20 +32,8 @@
       "kanji": "渦巻",
       "furigana": "うずまき",
       "meaning_en": "spiral"
-    },
-    {
-      "word_id": "n1_0997",
-      "word_number": 997,
-      "kanji": "渦",
-      "furigana": "うず",
-      "meaning_en": "whirlpool"
-    },
-    {
-      "word_id": "n1_0998",
-      "word_number": 998,
-      "kanji": "付け足す",
-      "furigana": "つけたす",
-      "meaning_en": "add on"
     }
-  ]
+  ],
+  "id": "146_2",
+  "page_story": "146_2"
 }

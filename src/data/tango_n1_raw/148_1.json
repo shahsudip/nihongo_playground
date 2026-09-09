@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 8,
   "title": "Topic 12",
-  "japanese_text": "動物の世界では、<u>雄</u>が<u>雌</u>に<u>変身する</u>ような変化は、<u>さほどまれなことではない</u>。<u>繁殖できる</u>ように<u>適応する</u>のである。",
+  "japanese_text": "動物の世界では、<u>雄</u>が<u>雌</u>に<u>変身</u>するような変化は、さほど<u>まれな</u>ことではない。<u>繁殖</u>できるように<u>適応</u>するのである。",
   "english_translation": "In the animal kingdom, changes such as a male transforming into a female are not so rare. Animals adapt so that they can reproduce.",
   "annotated_words": [
     {
@@ -27,13 +27,6 @@
       "meaning_en": "transformation, transform"
     },
     {
-      "word_id": "n1_1010",
-      "word_number": 1010,
-      "kanji": "さほど～ない",
-      "furigana": "さほど～ない",
-      "meaning_en": "not so ~"
-    },
-    {
       "word_id": "n1_1011",
       "word_number": 1011,
       "kanji": "まれな",
@@ -54,5 +47,7 @@
       "furigana": "てきおう",
       "meaning_en": "adaption, adapt"
     }
-  ]
+  ],
+  "id": "148_1",
+  "page_story": "148_1"
 }

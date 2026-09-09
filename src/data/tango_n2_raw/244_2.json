@@ -3,7 +3,7 @@
   "story_number": 18,
   "title": "Topic 17 仕事",
   "page_story": "244_2",
-  "japanese_text": "文字を<u>確定する</u>と、過去のデータから<u>推測して</u>、次に使用する<u>確率</u>が高い文字を出してくれます。",
+  "japanese_text": "文字を<u>確定</u>すると、過去のデータから<u>推測</u>して、次に使用する<u>確率</u>が高い文字を出してくれます。",
   "english_translation": "Whenever you confirm a character, it makes a guess based on past data and suggests the most likely character to be used next.",
   "annotated_words": [
     {
@@ -27,5 +27,6 @@
       "furigana": "かくりつ",
       "meaning_en": "probability, likelihood"
     }
-  ]
+  ],
+  "id": "244_2"
 }

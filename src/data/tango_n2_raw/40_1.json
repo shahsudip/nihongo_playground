@@ -3,7 +3,7 @@
   "story_number": 16,
   "title": "Topic 2 家事",
   "page_story": "40_1",
-  "japanese_text": "A：お<ruby>掃除<rt>そうじ</rt></ruby><u>完了</u>！\nB：おかげさまで<u>あっという間に</u><ruby>終<rt>お</rt></ruby>わったよ。<u>頼って</u>ばかりでごめんね。\nA：いいよいいよ。でも、<u>かび</u>が<ruby>生<rt>は</rt></ruby>えた<ruby>服<rt>ふく</rt></ruby>が<ruby>出<rt>で</rt></ruby>てきたときは、びっくりしたな。\nB：うっ…。<ruby>冬<rt>ふゆ</rt></ruby>は<ruby>服<rt>ふく</rt></ruby>が<ruby>乾<rt>かわ</rt></ruby>きにくいから…。\nA：エアコンをつけた<ruby>部屋<rt>へや</rt></ruby>に<u>つるして</u>おくといいよ。<ruby>部屋<rt>へや</rt></ruby>も<ruby>乾燥<rt>かんそう</rt></ruby>しないし。",
+  "japanese_text": "A：お<ruby>掃除<rt>そうじ</rt></ruby><u>完了</u>！\nB：おかげさまで<u>あっという間</u>に<ruby>終<rt>お</rt></ruby>わったよ。頼ってばかりでごめんね。\nA：いいよいいよ。でも、<u>かび</u>が<ruby>生<rt>は</rt></ruby>えた<ruby>服<rt>ふく</rt></ruby>が<ruby>出<rt>で</rt></ruby>てきたときは、びっくりしたな。\nB：うっ…。<ruby>冬<rt>ふゆ</rt></ruby>は<ruby>服<rt>ふく</rt></ruby>が<ruby>乾<rt>かわ</rt></ruby>きにくいから…。\nA：エアコンをつけた<ruby>部屋<rt>へや</rt></ruby>につるしておくといいよ。<ruby>部屋<rt>へや</rt></ruby>も<ruby>乾燥<rt>かんそう</rt></ruby>しないし。",
   "english_translation": "A: And the cleaning is finished! B: Thanks to you, we got it done in no time. I'm always relying on you, sorry. A: That's all right. But I was surprised to find mold growing on your clothes. B: Uh... It's hard to dry clothes in winter... A: You can hang them in an air-conditioned room. It keeps the room dry too.",
   "annotated_words": [
     {
@@ -21,25 +21,12 @@
       "meaning_en": "in no time"
     },
     {
-      "word_id": "n2_0173",
-      "word_number": 173,
-      "kanji": "頼る",
-      "furigana": "たよる",
-      "meaning_en": "depend, rely"
-    },
-    {
       "word_id": "n2_0174",
       "word_number": 174,
       "kanji": "かび",
       "furigana": "",
       "meaning_en": "mold"
-    },
-    {
-      "word_id": "n2_0175",
-      "word_number": 175,
-      "kanji": "つるす",
-      "furigana": "",
-      "meaning_en": "hang (something)"
     }
-  ]
+  ],
+  "id": "40_1"
 }

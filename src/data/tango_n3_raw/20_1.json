@@ -1,25 +1,32 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "この<ruby>店<rt>みせ</rt></ruby>のラーメンはとても<ruby>味<rt>あじ</rt></ruby>が<ruby>濃<rt>こ</rt></ruby>い、スープの<ruby><u>表面</u><rt>ひょうめん</rt></ruby>には<ruby><u>油</u><rt>あぶら</rt></ruby>が<ruby>浮<rt>う</rt></ruby>いている。しかし、<u>のり</u>とご<ruby>飯<rt>はん</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>食<rt>た</rt></ruby>べるとうまい。",
+  "japanese_text": "この<ruby>店<rt>みせ</rt></ruby>のラーメンはとても<ruby>味<rt>あじ</rt></ruby>が<u><ruby>濃<rt>こ</rt></ruby>い</u>、スープの<u><ruby>表面<rt>ひょうめん</rt></ruby></u>には<u><ruby>油<rt>あぶら</rt></ruby></u>が<ruby>浮<rt>う</rt></ruby>いている。しかし、<u>のり</u>とご<ruby>飯<rt>はん</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>食<rt>た</rt></ruby>べるとうまい。",
   "english_translation": "The ramen in this shop has a very strong taste, and oil floats on the surface of the soup. However, it is good to eat it with seaweed and rice.",
   "annotated_words": [
     {
-      "word_id": "n3_0022",
-      "word_number": 22,
+      "word_id": "n3_0038",
+      "word_number": 38,
+      "kanji": "濃い",
+      "furigana": "こい",
+      "meaning_en": "rich, strong"
+    },
+    {
+      "word_id": "n3_0039",
+      "word_number": 39,
       "kanji": "表面",
       "furigana": "ひょうめん",
       "meaning_en": "surface"
     },
     {
-      "word_id": "n3_0023",
-      "word_number": 23,
+      "word_id": "n3_0040",
+      "word_number": 40,
       "kanji": "油",
       "furigana": "あぶら",
       "meaning_en": "oil"
     },
     {
-      "word_id": "n3_0024",
-      "word_number": 24,
+      "word_id": "n3_0041",
+      "word_number": 41,
       "kanji": "のり",
       "furigana": "",
       "meaning_en": "seaweed"
@@ -27,5 +34,6 @@
   ],
   "story_number": 7,
   "is_story": true,
-  "page_story": "20_1"
+  "page_story": "20_1",
+  "id": "20_1"
 }

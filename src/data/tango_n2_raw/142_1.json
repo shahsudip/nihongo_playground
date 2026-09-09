@@ -3,16 +3,9 @@
   "story_number": 11,
   "title": "Topic 10 スポーツ",
   "page_story": "142_1",
-  "japanese_text": "最初は、<u>攻めた</u> <u>レース</u>を展開して相手チームを大きく<u>リードし</u>ていたが、<u>つまずいて</u>しまい、試合に<u>敗れて</u>しまった。残念だが、誰にも彼女を<u>責める</u>ことはできない。",
+  "japanese_text": "最初は、攻めた <u>レース</u>を展開して相手チームを大きく<u>リード</u>していたが、つまずいてしまい、試合に敗れてしまった。残念だが、誰にも彼女を<u>責める</u>ことはできない。",
   "english_translation": "At first, she took a large lead over the other team in an aggressive race, but then she stumbled and lost the race. It's a pity, but really, no one can blame her.",
   "annotated_words": [
-    {
-      "word_id": "n2_0863",
-      "word_number": 863,
-      "kanji": "攻める",
-      "furigana": "せめる",
-      "meaning_en": "attack, be aggressive"
-    },
     {
       "word_id": "n2_0864",
       "word_number": 864,
@@ -28,25 +21,12 @@
       "meaning_en": "lead, take the lead"
     },
     {
-      "word_id": "n2_0866",
-      "word_number": 866,
-      "kanji": "つまずく",
-      "furigana": "",
-      "meaning_en": "fall down, stumble"
-    },
-    {
-      "word_id": "n2_0867",
-      "word_number": 867,
-      "kanji": "敗れる",
-      "furigana": "やぶれる",
-      "meaning_en": "lose"
-    },
-    {
       "word_id": "n2_0868",
       "word_number": 868,
       "kanji": "責める",
       "furigana": "せめる",
       "meaning_en": "blame"
     }
-  ]
+  ],
+  "id": "142_1"
 }

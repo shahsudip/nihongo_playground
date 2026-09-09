@@ -1,53 +1,60 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "A：あのう、<ruby>今日<rt>きょう</rt></ruby>の<ruby>日替<rt>ひが</rt></ruby>わり<ruby><u>定食</u><rt>ていしょく</rt></ruby>って<ruby>何<rt>なん</rt></ruby>ですか。<br>B：<ruby><u>本日</u><rt>ほんじつ</rt></ruby>は、<u>エビ</u><u>フライ</u>と<u>おかず</u>が1つ、あとはご<ruby>飯<rt>はん</rt></ruby>と<u>みそ</u><ruby><u>汁</u><rt>しる</rt></ruby>です。",
+  "japanese_text": "A：あのう、<ruby>今日<rt>きょう</rt></ruby>の<u><ruby>日替<rt>ひが</rt></ruby>わり</u><u><ruby>定食<rt>ていしょく</rt></ruby></u>って<ruby>何<rt>なん</rt></ruby>ですか。<br>B：<u><ruby>本日<rt>ほんじつ</rt></ruby></u>は、<u>エビ</u><u>フライ</u>と<u>おかず</u>が1つ、あとはご<ruby>飯<rt>はん</rt></ruby>と<u>みそ</u><u><ruby>汁<rt>しる</rt></ruby></u>です。",
   "english_translation": "A: Um, what's in the daily set meal? B: Today, we have fried shrimp and one side dish, and also rice and miso soup.",
   "annotated_words": [
     {
-      "word_id": "n3_0007",
-      "word_number": 7,
+      "word_id": "n3_0013",
+      "word_number": 13,
+      "kanji": "日替わり",
+      "furigana": "ひがわり",
+      "meaning_en": "daily"
+    },
+    {
+      "word_id": "n3_0014",
+      "word_number": 14,
       "kanji": "定食",
       "furigana": "ていしょく",
       "meaning_en": "set meal"
     },
     {
-      "word_id": "n3_0008",
-      "word_number": 8,
+      "word_id": "n3_0015",
+      "word_number": 15,
       "kanji": "本日",
       "furigana": "ほんじつ",
       "meaning_en": "today"
     },
     {
-      "word_id": "n3_0009",
-      "word_number": 9,
+      "word_id": "n3_0016",
+      "word_number": 16,
       "kanji": "エビ",
       "furigana": "",
       "meaning_en": "shrimp"
     },
     {
-      "word_id": "n3_0010",
-      "word_number": 10,
+      "word_id": "n3_0017",
+      "word_number": 17,
       "kanji": "フライ",
       "furigana": "",
       "meaning_en": "fried, fry"
     },
     {
-      "word_id": "n3_0011",
-      "word_number": 11,
+      "word_id": "n3_0018",
+      "word_number": 18,
       "kanji": "おかず",
       "furigana": "",
       "meaning_en": "side dish"
     },
     {
-      "word_id": "n3_0012",
-      "word_number": 12,
+      "word_id": "n3_0019",
+      "word_number": 19,
       "kanji": "みそ",
       "furigana": "",
       "meaning_en": "miso"
     },
     {
-      "word_id": "n3_0013",
-      "word_number": 13,
+      "word_id": "n3_0020",
+      "word_number": 20,
       "kanji": "汁",
       "furigana": "しる",
       "meaning_en": "soup"
@@ -55,5 +62,6 @@
   ],
   "story_number": 3,
   "is_story": true,
-  "page_story": "17_1"
+  "page_story": "17_1",
+  "id": "17_1"
 }

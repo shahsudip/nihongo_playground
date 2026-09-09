@@ -3,7 +3,7 @@
   "story_number": 21,
   "title": "Topic 23 環境・科学",
   "page_story": "330_2",
-  "japanese_text": "A：<u>本</u>施設には<u>天然</u>ガスが<u>貯蔵されて</u>います。<u>通常</u>は発電用の燃料として使用されていますが、場合によっては都市ガスの原料としても利用されます。\nB：この施設の敷地面積はどのくらいなんですか。\nA：そうですね。<u>およそ</u>東京<u>ドーム</u>17個分です。",
+  "japanese_text": "A：<u>本</u>施設には<u>天然</u>ガスが<u>貯蔵</u>されています。<u>通常</u>は発電用の燃料として使用されていますが、場合によっては都市ガスの原料としても利用されます。\nB：この施設の敷地面積はどのくらいなんですか。\nA：そうですね。<u>およそ</u>東京<u>ドーム</u>17個分です。",
   "english_translation": "A: Natural gas is stored at this facility. It's usually used as fuel for generating power, but in some cases it's also used for the city's gas supply.\nB: How large in area is the facility site?\nA: Right. It's roughly the size of 17 Tokyo Domes.",
   "annotated_words": [
     {
@@ -48,5 +48,6 @@
       "furigana": "どーむ",
       "meaning_en": "dome"
     }
-  ]
+  ],
+  "id": "330_2"
 }

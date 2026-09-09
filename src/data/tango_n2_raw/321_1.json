@@ -3,7 +3,7 @@
   "story_number": 7,
   "title": "Topic 23 環境・科学",
   "page_story": "321_1",
-  "japanese_text": "A：ねえ、聞いた？例の地域の<u>水質</u>調査結果。検査<u>機関</u>によると汚染物質の濃度が平均より<u>およそ</u>５倍も高かったんだって。一応は<u>基準</u>値<u>未満</u>だったみたいだけど。\nB：それはびっくりだね。\nA：基準値未満とは言え、この<u>事実</u>をどう<u>解釈する</u>かが重要だね。今後は汚染物質を<u>薄める</u>ための対策をとらないと。",
+  "japanese_text": "A：ねえ、聞いた？例の地域の<u>水質</u>調査結果。検査<u>機関</u>によると汚染物質の濃度が平均より<u>およそ</u>５倍も高かったんだって。一応は<u>基準</u>値<u>未満</u>だったみたいだけど。\nB：それはびっくりだね。\nA：基準値未満とは言え、この<u>事実</u>をどう<u>解釈</u>するかが重要だね。今後は汚染物質を<u>薄める</u>ための対策をとらないと。",
   "english_translation": "A: Hey, did you hear about the results of the water quality survey in the sample area? According to the survey agency, the concentration of pollutants was approximately five times higher than average. Although it seems to be below the standard value.\nB: That's surprising.\nA: Although it is below the standard value, it's important how we interpret this fact. In the future, we need to take measures to dilute the pollutants.",
   "annotated_words": [
     {
@@ -62,5 +62,6 @@
       "furigana": "うすめる",
       "meaning_en": "dilute, weaken"
     }
-  ]
+  ],
+  "id": "321_1"
 }

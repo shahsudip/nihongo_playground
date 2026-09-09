@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 28,
   "title": "Topic 18",
-  "japanese_text": "「<u>恐れ入りますが</u>」「<u>お手数ですが</u>」「<u>差し支えなければ</u>」といった表現は、<u>先方に</u>お願い事をする際に使う<u>クッション</u>言葉として、ビジネスシーンでよく使われる。上手に使えば<u>憂うつな</u>依頼もスマートに<u>遂行できる</u>が、<u>乱用する</u>と相手を不快にさせてしまうこともあるので、気をつけなければならない。",
+  "japanese_text": "「<u>恐れ入ります</u>が」「お手数ですが」「差し支えなければ」といった表現は、<u>先方</u>にお願い事をする際に使う<u>クッション</u>言葉として、ビジネスシーンでよく使われる。上手に使えば<u>憂うつな</u>依頼もスマートに<u>遂行</u>できるが、<u>乱用</u>すると相手を不快にさせてしまうこともあるので、気をつけなければならない。",
   "english_translation": "Phrases such as \"Sorry to bother you,\" \"Sorry to trouble you,\" and \"If it's no inconvenience\" are often used as cushion words in business situations when making a request of another party. If used properly, they can ensure smooth performance of even the most depressing request, but if overused, they can cause discomfort, so care must be taken.",
   "annotated_words": [
     {
@@ -11,20 +11,6 @@
       "kanji": "恐れ入ります",
       "furigana": "おそれいります",
       "meaning_en": "sorry to bother you"
-    },
-    {
-      "word_id": "n1_1621",
-      "word_number": 1621,
-      "kanji": "(お)手数",
-      "furigana": "てすう",
-      "meaning_en": "trouble, hassle"
-    },
-    {
-      "word_id": "n1_1622",
-      "word_number": 1622,
-      "kanji": "差し支える",
-      "furigana": "さしつかえる",
-      "meaning_en": "inconvenience"
     },
     {
       "word_id": "n1_1623",
@@ -61,5 +47,7 @@
       "furigana": "らんよう",
       "meaning_en": "abuse, overuse"
     }
-  ]
+  ],
+  "id": "231_1",
+  "page_story": "231_1"
 }

@@ -3,7 +3,7 @@
   "story_number": 23,
   "title": "Topic 17 仕事",
   "page_story": "248_1",
-  "japanese_text": "A：<u>オーダー</u>を間違えた<u>件</u>、A社に説明しに行くのは来週でもいいかな。\nB：何の<u>んきな</u>こと言ってるんですか。<u>至急</u>、A社に<u>アポ</u>をとって、謝りに行ってください。",
+  "japanese_text": "A：<u>オーダー</u>を間違えた<u>件</u>、A社に説明しに行くのは来週でもいいかな。\nB：何<u>のんきな</u>こと言ってるんですか。<u>至急</u>、A社にアポをとって、謝りに行ってください。",
   "english_translation": "A: I suppose I can visit Company A next week to explain about the matter of the mistake in the order. B: Why are you being so complacent about this? Make an appointment immediately with Company A so you can apologize.",
   "annotated_words": [
     {
@@ -33,13 +33,7 @@
       "kanji": "至急",
       "furigana": "しきゅう",
       "meaning_en": "immediately, urgently"
-    },
-    {
-      "word_id": "n2_1692",
-      "word_number": 1692,
-      "kanji": "アポ(イントメント)",
-      "furigana": "あぽ",
-      "meaning_en": "appointment"
     }
-  ]
+  ],
+  "id": "248_1"
 }

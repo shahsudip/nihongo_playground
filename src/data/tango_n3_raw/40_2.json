@@ -1,6 +1,6 @@
 {
   "title": "Topic 2",
-  "japanese_text": "<ruby>仕事<rt>しごと</rt></ruby>が<ruby>忙<rt>いそが</rt></ruby>しくて<ruby>不規則<rt>ふきそく</rt></ruby>な<ruby>生活<rt>せいかつ</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>いた。<ruby>食事<rt>しょくじ</rt></ruby>は<u>インスタント<ruby>食品</u><rt>しょくひん</rt></ruby>ばかりで、<ruby>部屋<rt>へや</rt></ruby>も<ruby>散<rt>ち</rt></ruby>らかったままだ。",
+  "japanese_text": "<ruby>仕事<rt>しごと</rt></ruby>が<ruby>忙<rt>いそが</rt></ruby>しくて<ruby>不規則<rt>ふきそく</rt></ruby>な<ruby>生活<rt>せいかつ</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>いた。<ruby>食事<rt>しょくじ</rt></ruby>は<u>インスタント<ruby>食品<rt>しょくひん</rt></ruby></u>ばかりで、<ruby>部屋<rt>へや</rt></ruby>も<ruby>散<rt>ち</rt></ruby>らかったままだ。",
   "english_translation": "I was busy with work as my irregular life continued. All I eat is instant food, and my room stays messy.",
   "annotated_words": [
     {
@@ -13,5 +13,6 @@
   ],
   "story_number": 10,
   "is_story": true,
-  "page_story": "40_2"
+  "page_story": "40_2",
+  "id": "40_2"
 }

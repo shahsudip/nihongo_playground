@@ -1,5 +1,5 @@
 {
-  "is_story": false,
+  "is_story": true,
   "story_number": 3,
   "title": "Topic 16",
   "japanese_text": "A：この間東京に行ったときにアプリ使って<u>経路</u>を調べたら、変なところを通らされてさ。\nB：あー、アプリってたまに変なところに連れて行くよね。\nA：そうそう。現地に着くまで<u>治安</u>の悪そうな<u>路地</u>ばかり通らされるからドキドキしたよ。",
@@ -26,5 +26,7 @@
       "furigana": "ろじ",
       "meaning_en": "alley, alleyway"
     }
-  ]
+  ],
+  "id": "184_1",
+  "page_story": "184_1"
 }

@@ -3,7 +3,7 @@
   "story_number": 14,
   "title": "Topic 14 天気",
   "page_story": "191_1",
-  "japanese_text": "梅雨の時期は、<u>衣類</u>が<u>湿気</u>を含みやすいため、<u>油断する</u>と、<u>たちまち</u>かびが生えてしまう。",
+  "japanese_text": "梅雨の時期は、<u>衣類</u>が<u>湿気</u>を含みやすいため、<u>油断</u>すると、<u>たちまち</u>かびが生えてしまう。",
   "english_translation": "During the rainy season, clothes are prone to dampness, and if you're not careful, they can quickly become moldy.",
   "annotated_words": [
     {
@@ -21,13 +21,6 @@
       "meaning_en": "dampness, moisture"
     },
     {
-      "word_id": "n2_1267",
-      "word_number": 1267,
-      "kanji": "しける",
-      "furigana": "",
-      "meaning_en": "get damp"
-    },
-    {
       "word_id": "n2_1268",
       "word_number": 1268,
       "kanji": "油断[する]",
@@ -41,5 +34,6 @@
       "furigana": "",
       "meaning_en": "quickly, right away"
     }
-  ]
+  ],
+  "id": "191_1"
 }

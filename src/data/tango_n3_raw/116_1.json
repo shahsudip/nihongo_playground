@@ -1,6 +1,6 @@
 {
   "title": "Topic 8",
-  "japanese_text": "<u>マラソン</u><u>コース</u>の<ruby><u>両側</u><rt>りょうがわ</rt></ruby>に<u>ロープ</u>が<ruby>張<rt>は</rt></ruby>られ、<ruby>道路<rt>どうろ</rt></ruby>の<ruby><u>中央</u><rt>ちゅうおう</rt></ruby>を<ruby>走<rt>はし</rt></ruby>るようになっている。",
+  "japanese_text": "<u>マラソン</u><u>コース</u>の<u><ruby>両側<rt>りょうがわ</rt></ruby></u>に<u>ロープ</u>が<ruby>張<rt>は</rt></ruby>られ、<ruby>道路<rt>どうろ</rt></ruby>の<u><ruby>中央<rt>ちゅうおう</rt></ruby></u>を<ruby>走<rt>はし</rt></ruby>るようになっている。",
   "english_translation": "Rope is put on both sides of the marathon course, and people are supposed to run in the center of the road.",
   "annotated_words": [
     {
@@ -41,5 +41,6 @@
   ],
   "story_number": 5,
   "is_story": true,
-  "page_story": "116_1"
+  "page_story": "116_1",
+  "id": "116_1"
 }

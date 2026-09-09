@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 25,
   "title": "Topic 6",
-  "japanese_text": "A：ああっ、やられた！ <u>全滅した</u>！ <u>回避</u>率90％って出てたのに、なんで<u>よけ</u>ないんだよ！\nB：確率に頼る<u>作戦</u>は失敗するから。",
+  "japanese_text": "A：ああっ、やられた！ <u>全滅</u>した！ <u>回避</u>率90％って出てたのに、なんでよけないんだよ！\nB：確率に頼る<u>作戦</u>は失敗するから。",
   "english_translation": "A: Oh, I'm hit! I've been wiped out! The evade rate was 90%, but I didn't dodge! B: That's because a strategy that relies on probability will fail.",
   "annotated_words": [
     {
@@ -20,18 +20,13 @@
       "meaning_en": "evasion, evade"
     },
     {
-      "word_id": "n1_0496",
-      "word_number": 496,
-      "kanji": "よける",
-      "furigana": "",
-      "meaning_en": "dodge"
-    },
-    {
       "word_id": "n1_0497",
       "word_number": 497,
       "kanji": "作戦",
       "furigana": "さくせん",
       "meaning_en": "strategy"
     }
-  ]
+  ],
+  "id": "81_1",
+  "page_story": "81_1"
 }

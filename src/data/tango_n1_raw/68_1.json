@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 5,
   "title": "Topic 6",
-  "japanese_text": "A：いろいろな人が言ってるけど、アニメは<u>映像</u>の美しさよりも<u>脚本</u>の方が大事だよね。ストーリーに<u>共感できない</u>と意味がないから。\nB：映像も、単純な美しさよりも、ストーリーやキャラクターの感情に<u>マッチした</u> <u>演出</u>になっているかが大事だね。",
+  "japanese_text": "A：いろいろな人が言ってるけど、アニメは<u>映像</u>の美しさよりも<u>脚本</u>の方が大事だよね。ストーリーに<u>共感</u>できないと意味がないから。\nB：映像も、単純な美しさよりも、ストーリーやキャラクターの感情に<u>マッチ</u>した <u>演出</u>になっているかが大事だね。",
   "english_translation": "A: Many people say that for animation, the script is more important than the beauty of the images. If you can't relate to the story, it's meaningless. B: For the images too, rather than simply being beautiful, it's more important that their direction matches the story and the emotions of the characters.",
   "annotated_words": [
     {
@@ -40,5 +40,7 @@
       "furigana": "えんしゅつ",
       "meaning_en": "direction, direct"
     }
-  ]
+  ],
+  "id": "68_1",
+  "page_story": "68_1"
 }

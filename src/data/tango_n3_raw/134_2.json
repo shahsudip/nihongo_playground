@@ -1,6 +1,6 @@
 {
   "title": "Topic 9 動物 Animals",
-  "japanese_text": "<u><ruby>天井<rt>てんじょう</rt></ruby></u>にカビが<u><ruby>生<rt>は</rt></ruby>えている</u>のを<u><ruby>発見<rt>はっけん</rt></ruby></u>して、<ruby>思<rt>おも</rt></ruby>わず<ruby>大<rt>おお</rt></ruby>きな<ruby>声<rt>こえ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>してしまった。",
+  "japanese_text": "<u><ruby>天井<rt>てんじょう</rt></ruby></u>にカビが<ruby>生<rt>は</rt></ruby>えているのを<u><ruby>発見<rt>はっけん</rt></ruby></u>して、<ruby>思<rt>おも</rt></ruby>わず<ruby>大<rt>おお</rt></ruby>きな<ruby>声<rt>こえ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>してしまった。",
   "english_translation": "I found mold on the ceiling, and unintentionally screamed loudly.",
   "annotated_words": [
     {
@@ -9,13 +9,6 @@
       "kanji": "天井",
       "furigana": "てんじょう",
       "meaning_en": "ceiling"
-    },
-    {
-      "word_id": "n3_0931",
-      "word_number": 931,
-      "kanji": "生える",
-      "furigana": "はえる",
-      "meaning_en": "grow"
     },
     {
       "word_id": "n3_0932",
@@ -27,5 +20,6 @@
   ],
   "story_number": 13,
   "is_story": true,
-  "page_story": "134_2"
+  "page_story": "134_2",
+  "id": "134_2"
 }

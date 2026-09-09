@@ -1,7 +1,7 @@
 {
   "id": "141_1",
   "title": "Topic 10",
-  "japanese_text": "<ruby>寮<rt>りょう</rt></ruby>のリビングは<ruby>狭<rt>せま</rt></ruby>く、ソファーを<ruby>斜<rt>なな</rt></ruby>めにしか<ruby>置<rt>お</rt></ruby>けない。しかし、<ruby>低家賃<rt>ていやちん</rt></ruby>なので、わがままは<ruby>言<rt>い</rt></ruby>えない。<ruby>我慢<rt>がまん</rt></ruby>するしかない。",
+  "japanese_text": "<u><ruby>寮<rt>りょう</rt></ruby></u>の<u>リビング</u>は<ruby>狭<rt>せま</rt></ruby>く、<u>ソファー</u>を<u><ruby>斜<rt>なな</rt></ruby>め</u>にしか<ruby>置<rt>お</rt></ruby>けない。しかし、<u><ruby>低家賃<rt>ていやちん</rt></ruby></u>なので、<u>わがまま</u>は<ruby>言<rt>い</rt></ruby>えない。<u><ruby>我慢<rt>がまん</rt></ruby></u>するしかない。",
   "english_translation": "The dorm living room is cramped and the sofa can only be arranged diagonally. However, it's low rent, so I can't complain. I've no choice but to bear it.",
   "annotated_words": [
     {
@@ -25,11 +25,6 @@
       "meaning": "diagonal"
     },
     {
-      "kanji": "低〜",
-      "furigana": "てい〜",
-      "meaning": "low ~"
-    },
-    {
       "kanji": "家賃",
       "furigana": "やちん",
       "meaning": "rent"
@@ -44,5 +39,7 @@
       "furigana": "がまん",
       "meaning": "bearing, enduring, bear, endure"
     }
-  ]
+  ],
+  "page_story": "141_1",
+  "is_story": true
 }

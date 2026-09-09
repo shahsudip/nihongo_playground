@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 6,
   "title": "Topic 17",
-  "japanese_text": "弓道部の部長に選ばれた私は、「仲間と道具を大切に」という先輩の<u>教え</u>を<u>受け継いで</u>部を<u>運営している</u>つもりだった。しかし、弓や<u>矢</u>の管理について厳しく言いすぎたため、部員から<u>反感</u>を買ってしまった。",
+  "japanese_text": "弓道部の部長に選ばれた私は、「仲間と道具を大切に」という先輩の<u>教え</u>を受け継いで部を<u>運営</u>しているつもりだった。しかし、弓や<u>矢</u>の管理について厳しく言いすぎたため、部員から<u>反感</u>を買ってしまった。",
   "english_translation": "When I was selected as the head of the archery club, I’d intended to run the club following the teachings I’d inherited from the senior students to “Take good care of your friends and your tools.” However, I was too strict about bow and arrow management, and the other club members started feeling some animosity.",
   "annotated_words": [
     {
@@ -11,13 +11,6 @@
       "kanji": "教え",
       "furigana": "おしえ",
       "meaning_en": "teachings"
-    },
-    {
-      "word_id": "n1_1369",
-      "word_number": 1369,
-      "kanji": "受け継ぐ",
-      "furigana": "うけつぐ",
-      "meaning_en": "inherit, take over"
     },
     {
       "word_id": "n1_1370",
@@ -40,5 +33,7 @@
       "furigana": "はんかん",
       "meaning_en": "animosity, ill feeling"
     }
-  ]
+  ],
+  "id": "197_1",
+  "page_story": "197_1"
 }

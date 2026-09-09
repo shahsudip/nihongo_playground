@@ -3,16 +3,9 @@
   "story_number": 12,
   "title": "Topic 20 マナー",
   "page_story": "286_1",
-  "japanese_text": "リュックが何度もぶつかるのでその学生を<u>にらんだ</u>が、<u>無視された</u>ので、余計に<u>むかむか</u>した。",
+  "japanese_text": "リュックが何度もぶつかるのでその学生をにらんだが、<u>無視</u>されたので、余計に<u>むかむか</u>した。",
   "english_translation": "I glared at the student as his backpack kept bumping into me, but he ignored me, which was frustrating.",
   "annotated_words": [
-    {
-      "word_id": "n2_1987",
-      "word_number": 1987,
-      "kanji": "にらむ",
-      "furigana": "",
-      "meaning_en": "glare"
-    },
     {
       "word_id": "n2_1988",
       "word_number": 1988,
@@ -27,5 +20,6 @@
       "furigana": "",
       "meaning_en": "frustratedly, in an offended manner"
     }
-  ]
+  ],
+  "id": "286_1"
 }

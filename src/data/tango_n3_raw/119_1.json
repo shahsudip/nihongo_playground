@@ -1,6 +1,6 @@
 {
   "title": "Topic 8",
-  "japanese_text": "<ruby><u>球</u>場<rt>きゅうじょう</rt></ruby>では<ruby>多<rt>おお</rt></ruby>くの<ruby>観客<rt>かんきゃく</rt></ruby>がグローブを<ruby>手<rt>て</rt></ruby>にはめ、ホームランの<u>ボール</u>を<ruby>捕<rt>と</rt></ruby>ろうとしている。",
+  "japanese_text": "<u><ruby>球場<rt>きゅうじょう</rt></ruby></u>では<ruby>多<rt>おお</rt></ruby>くの<ruby>観客<rt>かんきゃく</rt></ruby>がグローブを<ruby>手<rt>て</rt></ruby>にはめ、ホームランの<u>ボール</u>を<ruby>捕<rt>と</rt></ruby>ろうとしている。",
   "english_translation": "In the stadium, many spectators have gloves on their hands and are trying to catch home run balls.",
   "annotated_words": [
     {
@@ -20,5 +20,6 @@
   ],
   "story_number": 11,
   "is_story": true,
-  "page_story": "119_1"
+  "page_story": "119_1",
+  "id": "119_1"
 }

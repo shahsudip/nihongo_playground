@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 7,
   "title": "Topic 24",
-  "japanese_text": "両国の<u>首脳</u>は<u>会談</u>を行い、<u>経済協力</u>や<u>安全保障</u>に関する<u>合意</u>に達した。<u>外交</u>関係の<u>強化</u>に向けた<u>共同声明</u>が発表された。",
+  "japanese_text": "両国の<u>首脳</u>は<u>会談</u>を行い、<u>経済協力</u>や安全保障に関する<u>合意</u>に達した。<u>外交</u>関係の強化に向けた<u>共同声明</u>が発表された。",
   "english_translation": "The leaders of both countries held a summit and reached an agreement on economic cooperation and national security. A joint statement was announced aimed at strengthening diplomatic relations.",
   "annotated_words": [
     {
@@ -47,5 +47,7 @@
       "furigana": "きょうどうせいめい",
       "meaning_en": "joint statement"
     }
-  ]
+  ],
+  "id": "317_1",
+  "page_story": "317_1"
 }

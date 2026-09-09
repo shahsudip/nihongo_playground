@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 3,
   "title": "Topic 8",
-  "japanese_text": "鴨長明が<u>執筆した</u>『方丈記』は、最もよく知られた日本の<u>随筆</u>の一つである。この<u>カテゴリー</u>の中で、『方丈記』の<u>災い</u>や庶民の苦しみの<u>描写</u>に<u>勝る</u>ものはほとんどないと<u>断言する</u>ことができる。",
+  "japanese_text": "鴨長明が<u>執筆</u>した『方丈記』は、最もよく知られた日本の<u>随筆</u>の一つである。この<u>カテゴリー</u>の中で、『方丈記』の<u>災い</u>や庶民の苦しみの<u>描写</u>に<u>勝る</u>ものはほとんどないと<u>断言</u>することができる。",
   "english_translation": "Hojoki, written by Kamo no Chomei, is one of the best-known Japanese essays. I declare that few works in this category can beat Hojoki for its depiction of calamities and the suffering of the common folk.",
   "annotated_words": [
     {
@@ -54,5 +54,7 @@
       "furigana": "だんげん",
       "meaning_en": "assertion, declare"
     }
-  ]
+  ],
+  "id": "94_1",
+  "page_story": "94_1"
 }

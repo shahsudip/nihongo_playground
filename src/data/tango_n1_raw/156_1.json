@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 1,
   "title": "Topic 13",
-  "japanese_text": "A：来年引っ越すって聞いたんだけど、転勤？\nB：そう。うちの部署、５年<u>周期</u>で大規模な<u>配置転換</u>があって。\nA：そっか。どこに住むの？\nB：うーん、東京<u>近郊</u>ならどこでもいいんだけど、<u>強いて</u>言うなら千葉かな。",
+  "japanese_text": "A：来年引っ越すって聞いたんだけど、転勤？\nB：そう。うちの部署、５年<u>周期</u>で大規模な<u>配置</u>転換があって。\nA：そっか。どこに住むの？\nB：うーん、東京<u>近郊</u>ならどこでもいいんだけど、<u>強いて</u>言うなら千葉かな。",
   "english_translation": "A: I heard you're moving next year. A transfer? B: Yes. Our department reassigns personnel on a five-year cycle. A: I see. Where will you live? B: Well, anywhere in the Tokyo suburbs would be fine, but if I had to say, probably Chiba.",
   "annotated_words": [
     {
@@ -33,5 +33,7 @@
       "furigana": "しいて",
       "meaning_en": "forcibly, if (one) has to"
     }
-  ]
+  ],
+  "id": "156_1",
+  "page_story": "156_1"
 }

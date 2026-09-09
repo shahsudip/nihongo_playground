@@ -3,7 +3,7 @@
   "story_number": 11,
   "title": "Topic 4 ファッション",
   "page_story": "58_2",
-  "japanese_text": "A：これ<u>試着して</u>みない？ 似合うと思う。\nB：<u>サイズ</u>いくつ？\nA：えっと、７<u>号</u>だね。\nB：無理無理！ 私いつも11 号だよ。<u>ウエスト</u>が入らないよ。",
+  "japanese_text": "A：これ<u>試着</u>してみない？ 似合うと思う。\nB：<u>サイズ</u>いくつ？\nA：えっと、７<u>号</u>だね。\nB：無理無理！ 私いつも11 号だよ。<u>ウエスト</u>が入らないよ。",
   "english_translation": "A: Wanna try this on? I think it'd suit you. B: What size is it? A: Let's see, it's a size 7. B: No way! I'm usually a size 11. I'll never fit into the waist.",
   "annotated_words": [
     {
@@ -34,5 +34,6 @@
       "furigana": "",
       "meaning_en": "waist"
     }
-  ]
+  ],
+  "id": "58_2"
 }

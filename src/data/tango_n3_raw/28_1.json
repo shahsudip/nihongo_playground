@@ -1,25 +1,39 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "この<ruby>店<rt>みせ</rt></ruby>の<u>スイーツ</u>は<u>クリーム</u>をたくさん<ruby>使<rt>つか</rt></ruby>っていて、<ruby>食<rt>た</rt></ruby>べるといつも<ruby>幸<rt>しあわ</rt></ruby>せな<ruby>気分<rt>きぶん</rt></ruby>になる。<ruby>問題<rt>もんだい</rt></ruby>は、すぐに<ruby>売<rt>う</rt></ruby>り<ruby>切<rt>き</rt></ruby>れることと、<ruby>大<rt>おお</rt></ruby>きいので、<u>おやつ</u>に<ruby>食<rt>た</rt></ruby>べると<ruby>夕食<rt>ゆうしょく</rt></ruby>があまり<ruby>食<rt>た</rt></ruby>べられなくなることだ。",
+  "japanese_text": "この<ruby>店<rt>みせ</rt></ruby>の<u>スイーツ</u>は<u>クリーム</u>をたくさん<ruby>使<rt>つか</rt></ruby>っていて、<ruby>食<rt>た</rt></ruby>べるといつも<u><ruby>幸<rt>しあわ</rt></ruby>せな</u><ruby>気分<rt>きぶん</rt></ruby>になる。<ruby>問題<rt>もんだい</rt></ruby>は、すぐに<u><ruby>売<rt>う</rt></ruby>り<ruby>切<rt>き</rt></ruby>れる</u>ことと、<ruby>大<rt>おお</rt></ruby>きいので、<u>おやつ</u>に<ruby>食<rt>た</rt></ruby>べると<ruby>夕食<rt>ゆうしょく</rt></ruby>があまり<ruby>食<rt>た</rt></ruby>べられなくなることだ。",
   "english_translation": "The sweets in this shop use a lot of cream, and I always feel happy when I eat them. The problem is that they sell out quickly, and they're so big that you won't be able to eat much dinner after you eat one as a snack.",
   "annotated_words": [
     {
-      "word_id": "n3_0061",
-      "word_number": 61,
+      "word_id": "n3_0093",
+      "word_number": 93,
       "kanji": "スイーツ",
       "furigana": "",
       "meaning_en": "sweets"
     },
     {
-      "word_id": "n3_0062",
-      "word_number": 62,
+      "word_id": "n3_0094",
+      "word_number": 94,
       "kanji": "クリーム",
       "furigana": "",
       "meaning_en": "cream"
     },
     {
-      "word_id": "n3_0063",
-      "word_number": 63,
+      "word_id": "n3_0095",
+      "word_number": 95,
+      "kanji": "幸せな",
+      "furigana": "しあわせ",
+      "meaning_en": "happy, joy"
+    },
+    {
+      "word_id": "n3_0096",
+      "word_number": 96,
+      "kanji": "売り切れる",
+      "furigana": "うりきれる",
+      "meaning_en": "be sold out"
+    },
+    {
+      "word_id": "n3_0097",
+      "word_number": 97,
       "kanji": "おやつ",
       "furigana": "",
       "meaning_en": "snack"
@@ -27,5 +41,6 @@
   ],
   "story_number": 20,
   "is_story": true,
-  "page_story": "28_1"
+  "page_story": "28_1",
+  "id": "28_1"
 }

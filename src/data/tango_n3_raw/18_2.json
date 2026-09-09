@@ -1,52 +1,60 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "<ruby><u>焼肉</u><rt>やきにく</rt></ruby>の<u>バイキング</u>は<u>セルフサービス</u>ではなく、テーブルで<ruby>注文<rt>ちゅうもん</rt></ruby>するスタイルが<ruby>多<rt>おお</rt></ruby>い。<ruby>肉<rt>にく</rt></ruby><ruby>以外<rt>いがい</rt></ruby>にも、<u>ライス</u>、<u>スープ</u>、<u>デザート</u>などが<ruby>注文<rt>ちゅうもん</rt></ruby>できる。もちろん、<ruby>残<rt>のこ</rt></ruby>すしてはいけない。",
+  "japanese_text": "<u><ruby>焼肉<rt>やきにく</rt></ruby></u>の<u>バイキング</u>は<u>セルフサービス</u>ではなく、テーブルで<ruby>注文<rt>ちゅうもん</rt></ruby>するスタイルが<ruby>多<rt>おお</rt></ruby>い。<ruby>肉<rt>にく</rt></ruby><ruby>以外<rt>いがい</rt></ruby>にも、<u>ライス</u>、<u>スープ</u>、<u>デザート</u>などが<ruby>注文<rt>ちゅうもん</rt></ruby>できる。もちろん、<u><ruby>残<rt>のこ</rt></ruby>す</u>してはいけない。",
   "english_translation": "Yakiniku buffet is not self-service, but is often ordered at the table. Besides meat, you can order rice, soup, dessert and more. Of course, you must not leave any leftovers.",
   "annotated_words": [
     {
-      "word_id": "n3_0015",
-      "word_number": 15,
+      "word_id": "n3_0027",
+      "word_number": 27,
       "kanji": "焼肉",
       "furigana": "やきにく",
       "meaning_en": "yakiniku, Korean bbq"
     },
     {
-      "word_id": "n3_0016",
-      "word_number": 16,
+      "word_id": "n3_0028",
+      "word_number": 28,
       "kanji": "バイキング",
       "furigana": "",
       "meaning_en": "buffet, all-you-can-eat"
     },
     {
-      "word_id": "n3_0017",
-      "word_number": 17,
+      "word_id": "n3_0029",
+      "word_number": 29,
       "kanji": "セルフサービス",
       "furigana": "",
       "meaning_en": "self service"
     },
     {
-      "word_id": "n3_0018",
-      "word_number": 18,
+      "word_id": "n3_0030",
+      "word_number": 30,
       "kanji": "ライス",
       "furigana": "",
       "meaning_en": "rice"
     },
     {
-      "word_id": "n3_0019",
-      "word_number": 19,
+      "word_id": "n3_0031",
+      "word_number": 31,
       "kanji": "スープ",
       "furigana": "",
       "meaning_en": "soup"
     },
     {
-      "word_id": "n3_0020",
-      "word_number": 20,
+      "word_id": "n3_0032",
+      "word_number": 32,
       "kanji": "デザート",
       "furigana": "",
       "meaning_en": "dessert"
+    },
+    {
+      "word_id": "n3_0033",
+      "word_number": 33,
+      "kanji": "残す",
+      "furigana": "のこす",
+      "meaning_en": "leave"
     }
   ],
   "story_number": 5,
   "is_story": true,
-  "page_story": "18_2"
+  "page_story": "18_2",
+  "id": "18_2"
 }

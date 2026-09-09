@@ -20,7 +20,6 @@ for (const f of files) {
   const content = fs.readFileSync(path.join(__dirname, f), 'utf8');
   const match = content.match(/const stories = (\[[\s\S]*?\]);/);
   if (match) {
-    // some files might use `export const stories`, but the regex `const stories = ` catches them.
     const fileStories = eval(match[1]);
     allStories = allStories.concat(fileStories);
   }
@@ -28,7 +27,6 @@ for (const f of files) {
 
 // Verb conjugation overrides (kanji -> exact string in text to underline)
 const overrides = {
-  // We can add them as we spot them. Let's start with a few known ones or just let it skip and we fix later.
   "燃える": "燃えた",
   "取り替える": "取り替えて",
   "嫌がる": "嫌がる",
@@ -41,77 +39,104 @@ const overrides = {
   "溶かす": "溶かして",
   "固める": "固めて",
   "ひっくり返す": "ひっくり返す",
-  "召し上がる": "召し上がり", // text has お召し上がり
+  "召し上がる": "召し上がり",
   "残す": "残す"
 };
 
-function extractPlainTextMap(html) {
-  let plain = "";
-  let map = [];
-  let inTag = false;
-  for (let i = 0; i < html.length; i++) {
-    if (html[i] === '<') inTag = true;
-    if (!inTag) {
-      plain += html[i];
-      map.push(i);
+function parseRubyHtml(html) {
+  let clean = html
+    .replace(/<span class=['"]annotated-word['"][^>]*>/g, '')
+    .replace(/<\/span>/g, '')
+    .replace(/<u>/g, '')
+    .replace(/<\/u>/g, '');
+
+  let baseText = "";
+  let baseMap = [];
+
+  let i = 0;
+  while (i < clean.length) {
+    if (clean.startsWith('<ruby', i)) {
+      const rubyEnd = clean.indexOf('</ruby>', i);
+      if (rubyEnd !== -1) {
+        const fullRubyHtml = clean.substring(i, rubyEnd + 7);
+        const insideRuby = clean.substring(clean.indexOf('>', i) + 1, rubyEnd);
+        const rtRemoved = insideRuby.replace(/<rt[\s\S]*?<\/rt>/gi, '').replace(/<rp[\s\S]*?<\/rp>/gi, '').replace(/<[^>]+>/g, '');
+        
+        for (let c of rtRemoved) {
+          baseText += c;
+          baseMap.push({
+            char: c,
+            htmlStart: i,
+            htmlEnd: rubyEnd + 7,
+            isRuby: true,
+            fullRubyHtml: fullRubyHtml
+          });
+        }
+        i = rubyEnd + 7;
+        continue;
+      }
     }
-    if (html[i] === '>') inTag = false;
+
+    if (clean[i] === '<') {
+      const tagEnd = clean.indexOf('>', i);
+      if (tagEnd !== -1) {
+        i = tagEnd + 1;
+        continue;
+      }
+    }
+
+    baseText += clean[i];
+    baseMap.push({
+      char: clean[i],
+      htmlStart: i,
+      htmlEnd: i + 1,
+      isRuby: false
+    });
+    i++;
   }
-  return { plain, map };
+
+  return { clean, baseText, baseMap };
 }
 
 function wrapWords(html, wordList) {
-  // 1. Strip existing wrappers
-  let cleanHtml = html.replace(/<span class=['"]annotated-word['"][^>]*>/g, '').replace(/<\/span>/g, '');
+  const { clean, baseText, baseMap } = parseRubyHtml(html);
   
-  // Also strip existing <u> tags if any
-  cleanHtml = cleanHtml.replace(/<u>/g, '').replace(/<\/u>/g, '');
-  
-  let { plain, map } = extractPlainTextMap(cleanHtml);
-  
-  let validWords = [];
-  let wrappedHtml = cleanHtml;
-  let offset = 0; // track length changes
-  
-  // Sort words by length descending so longer words get matched first (e.g. 冷凍食品 before 冷凍)
-  const sortedWords = [...wordList].sort((a,b) => {
-    const aLen = (overrides[a.kanji.replace(/［する］/g, '')] || a.kanji.replace(/［する］/g, '')).length;
-    const bLen = (overrides[b.kanji.replace(/［する］/g, '')] || b.kanji.replace(/［する］/g, '')).length;
-    return bLen - aLen;
+  let searchStr = baseText;
+  const sortedWords = [...wordList].sort((a, b) => {
+    const aPlain = a.kanji.replace(/［する］|\[する\]|（|）|～/g, '');
+    const bPlain = b.kanji.replace(/［する］|\[する\]|（|）|～/g, '');
+    const aTarget = overrides[aPlain] || aPlain;
+    const bTarget = overrides[bPlain] || bPlain;
+    return bTarget.length - aTarget.length;
   });
 
-  // Keep track of which original word objects were matched to keep original order later
   const matchedOriginals = new Set();
   const replacements = [];
 
   for (const w of sortedWords) {
-    const kanjiPlain = w.kanji.replace(/［する］/g, '');
+    const kanjiPlain = w.kanji.replace(/［する］|\[する\]|（|）|～/g, '');
     const searchTarget = overrides[kanjiPlain] || kanjiPlain;
     if (!searchTarget) continue;
 
-    // Find in plain text
-    const idx = plain.indexOf(searchTarget);
+    const idx = searchStr.indexOf(searchTarget);
     if (idx !== -1) {
       matchedOriginals.add(w);
-      // We found it! We need to record the replacement to apply later from right to left
-      const startHtmlIdx = map[idx];
-      const endHtmlIdx = map[idx + searchTarget.length - 1] + 1;
-      replacements.push({ start: startHtmlIdx, end: endHtmlIdx });
+      const startHtmlIdx = baseMap[idx].htmlStart;
+      const endHtmlIdx = baseMap[idx + searchTarget.length - 1].htmlEnd;
+      replacements.push({ start: startHtmlIdx, end: endHtmlIdx, word: w });
       
-      // Blank it out in plain so we don't double match inside it
-      plain = plain.substring(0, idx) + ' '.repeat(searchTarget.length) + plain.substring(idx + searchTarget.length);
+      searchStr = searchStr.substring(0, idx) + ' '.repeat(searchTarget.length) + searchStr.substring(idx + searchTarget.length);
     }
   }
 
-  // Apply replacements from right to left to avoid offsetting issues
-  replacements.sort((a,b) => b.start - a.start);
+  // Sort replacements from right to left
+  replacements.sort((a, b) => b.start - a.start);
+  let wrappedHtml = clean;
   for (const r of replacements) {
     wrappedHtml = wrappedHtml.substring(0, r.start) + '<u>' + wrappedHtml.substring(r.start, r.end) + '</u>' + wrappedHtml.substring(r.end);
   }
 
-  // Filter original word list to ONLY include those that were actually found (maintains original order)
   const filteredWords = wordList.filter(w => matchedOriginals.has(w));
-
   return { html: wrappedHtml, validWords: filteredWords };
 }
 
@@ -121,7 +146,6 @@ async function run() {
   for (let i = 0; i < allStories.length; i++) {
     const story = allStories[i];
     
-    // Some stories have "is_story" already, some don't
     story.title = "Topic 1 食事 Eating";
     story.story_number = i + 1;
     story.is_story = true;

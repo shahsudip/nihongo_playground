@@ -1,46 +1,53 @@
 {
   "title": "Topic 1 食事 Eating",
-  "japanese_text": "<ruby><u>食品</u><rt>しょくひん</rt></ruby>の<ruby><u>産地</u><rt>さんち</rt></ruby>を<ruby>気<rt>き</rt></ruby>にする<ruby>人<rt>ひと</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えてきた。<ruby><u>基本</u>的<rt>きほんてき</rt></ruby>なには<ruby><u>国産</u><rt>こくさん</rt></ruby>のものの<ruby>方<rt>ほう</rt></ruby>が<ruby><u>品質</u><rt>ひんしつ</rt></ruby>も<ruby>値段<rt>ねだん</rt></ruby>も<ruby>高<rt>たか</rt></ruby>い。そのため、<ruby>海外<rt>かいがい</rt></ruby><ruby>産<rt>さん</rt></ruby>の<ruby>食品<rt>しょくひん</rt></ruby>に、「<ruby>国産<rt>こくさん</rt></ruby>」の<u>ラベル</u>を<ruby>貼<rt>は</rt></ruby>る<ruby>事件<rt>じけん</rt></ruby>も<ruby>起<rt>お</rt></ruby>きた。",
+  "japanese_text": "<u><ruby>食品<rt>しょくひん</rt></ruby></u>の<u><ruby>産地<rt>さんち</rt></ruby></u>を<ruby>気<rt>き</rt></ruby>にする<ruby>人<rt>ひと</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えてきた。<u><ruby>基本的<rt>きほんてき</rt></ruby>な</u>には<u><ruby>国産<rt>こくさん</rt></ruby></u>のものの<ruby>方<rt>ほう</rt></ruby>が<u><ruby>品質<rt>ひんしつ</rt></ruby></u>も<ruby>値段<rt>ねだん</rt></ruby>も<ruby>高<rt>たか</rt></ruby>い。そのため、<ruby>海外<rt>かいがい</rt></ruby><u><ruby>産<rt>さん</rt></ruby></u>の<ruby>食品<rt>しょくひん</rt></ruby>に、「<ruby>国産<rt>こくさん</rt></ruby>」の<u>ラベル</u>を<ruby>貼<rt>は</rt></ruby>る<ruby>事件<rt>じけん</rt></ruby>も<ruby>起<rt>お</rt></ruby>きた。",
   "english_translation": "An increasing number of people are concerned about the production areas of their food. Generally, domestic products are higher in quality and price. As a result, there have been cases where overseas food products are labeled as \"domestic.\"",
   "annotated_words": [
     {
-      "word_id": "n3_0055",
-      "word_number": 55,
+      "word_id": "n3_0086",
+      "word_number": 86,
       "kanji": "食品",
       "furigana": "しょくひん",
       "meaning_en": "food"
     },
     {
-      "word_id": "n3_0056",
-      "word_number": 56,
+      "word_id": "n3_0087",
+      "word_number": 87,
       "kanji": "産地",
       "furigana": "さんち",
       "meaning_en": "production area"
     },
     {
-      "word_id": "n3_0057",
-      "word_number": 57,
-      "kanji": "基本",
-      "furigana": "きほん",
-      "meaning_en": "basics"
+      "word_id": "n3_0088",
+      "word_number": 88,
+      "kanji": "基本的な",
+      "furigana": "きほんてき",
+      "meaning_en": "basic, general"
     },
     {
-      "word_id": "n3_0058",
-      "word_number": 58,
+      "word_id": "n3_0089",
+      "word_number": 89,
       "kanji": "国産",
       "furigana": "こくさん",
       "meaning_en": "domestic product"
     },
     {
-      "word_id": "n3_0059",
-      "word_number": 59,
+      "word_id": "n3_0090",
+      "word_number": 90,
       "kanji": "品質",
       "furigana": "ひんしつ",
       "meaning_en": "quality"
     },
     {
-      "word_id": "n3_0060",
-      "word_number": 60,
+      "word_id": "n3_0091",
+      "word_number": 91,
+      "kanji": "～産",
+      "furigana": "さん",
+      "meaning_en": "made in ~, from ~"
+    },
+    {
+      "word_id": "n3_0092",
+      "word_number": 92,
       "kanji": "ラベル",
       "furigana": "",
       "meaning_en": "label"
@@ -48,5 +55,6 @@
   ],
   "story_number": 19,
   "is_story": true,
-  "page_story": "27_1"
+  "page_story": "27_1",
+  "id": "27_1"
 }

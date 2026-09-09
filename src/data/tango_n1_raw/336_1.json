@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 13,
   "title": "Topic 25",
-  "japanese_text": "警察によるスピード違反の<u>取り締まり</u>中、運転手が運転免許証を<u>所持して</u>おらず、そのまま車で<u>逃亡しよう</u>とした。",
+  "japanese_text": "警察によるスピード違反の<u>取り締まり</u>中、運転手が運転免許証を<u>所持</u>しておらず、そのまま車で<u>逃亡</u>しようとした。",
   "english_translation": "During a police crackdown on speeding, a driver who did not possess a driver's license and attempted to flee in his car.",
   "annotated_words": [
     {
@@ -11,13 +11,6 @@
       "kanji": "取り締まり",
       "furigana": "とりしまり",
       "meaning_en": "crackdown"
-    },
-    {
-      "word_id": "n1_2430",
-      "word_number": 2430,
-      "kanji": "取り締まる",
-      "furigana": "とりしまる",
-      "meaning_en": "crack down"
     },
     {
       "word_id": "n1_2431",
@@ -33,5 +26,7 @@
       "furigana": "とうぼう",
       "meaning_en": "escape, flee"
     }
-  ]
+  ],
+  "id": "336_1",
+  "page_story": "336_1"
 }

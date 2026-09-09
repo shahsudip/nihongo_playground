@@ -1,7 +1,7 @@
 {
   "title": "Topic 5 テクノロジー",
   "audio_id": "68",
-  "japanese_text": "A：新しいパソコン、どう？\nB：うん。<u>旧</u>モデルに比べて<u>多少</u>大きくなったけど、<u>反応</u>も速いから、<u>重たい</u>データ使った作業も<u>スムーズに</u>できるよ。",
+  "japanese_text": "A：新しいパソコン、どう？\nB：うん。<u>旧</u>モデルに比べて<u>多少</u>大きくなったけど、<u>反応</u>も速いから、<u>重たい</u>データ使った作業も<u>スムーズ</u>にできるよ。",
   "page_story": "67_1",
   "english_translation": "A: How do you like your new computer? B: Hmm., It's a little bigger than the previous model, but it also responds faster, so it can handle heavy amounts of data smoothly.",
   "annotated_words": [
@@ -41,5 +41,6 @@
       "meaning_en": "smooth"
     }
   ],
-  "is_story": true
+  "is_story": true,
+  "id": "67_1"
 }

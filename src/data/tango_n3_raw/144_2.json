@@ -1,7 +1,7 @@
 {
   "id": "144_2",
   "title": "Topic 10",
-  "japanese_text": "<ruby>昨日<rt>きのう</rt></ruby>の<ruby>大雪<rt>おおゆき</rt></ruby>のせいで、<ruby>首都<rt>しゅと</rt></ruby><ruby>高速道路<rt>こうそくどうろ</rt></ruby>の<ruby>出入口<rt>でいりぐち</rt></ruby>で<ruby>事故<rt>じこ</rt></ruby>があった。パトカーや<ruby>救急車<rt>きゅうきゅうしゃ</rt></ruby>が<ruby>集<rt>あつ</rt></ruby>まっている。けが<ruby>人<rt>にん</rt></ruby>がいないことを<ruby>願<rt>ねが</rt></ruby>う。",
+  "japanese_text": "<ruby>昨日<rt>きのう</rt></ruby>の<u><ruby>大雪<rt>おおゆき</rt></ruby></u>のせいで、<u><ruby>首都<rt>しゅと</rt></ruby></u><u><ruby>高速道路<rt>こうそくどうろ</rt></ruby></u>の<u><ruby>出入口<rt>でいりぐち</rt></ruby></u>で<ruby>事故<rt>じこ</rt></ruby>があった。<u>パトカー</u>や<u><ruby>救急車<rt>きゅうきゅうしゃ</rt></ruby></u>が<ruby>集<rt>あつ</rt></ruby>まっている。けが<ruby>人<rt>にん</rt></ruby>がいないことを<u><ruby>願<rt>ねが</rt></ruby>う</u>。",
   "english_translation": "Yesterday's heavy snow caused an accident at the on-ramp of the Tokyo Metropolitan Expressway. Police cars and ambulances have gathered there. I hope no one is hurt.",
   "annotated_words": [
     {
@@ -38,11 +38,8 @@
       "kanji": "願う",
       "furigana": "ねがう",
       "meaning": "make a wish, hope for"
-    },
-    {
-      "kanji": "願い",
-      "furigana": "ねがい",
-      "meaning": "wish, hope"
     }
-  ]
+  ],
+  "page_story": "144_2",
+  "is_story": true
 }

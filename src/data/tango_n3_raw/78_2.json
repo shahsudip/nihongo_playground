@@ -1,6 +1,6 @@
 {
   "title": "Topic 5",
-  "japanese_text": "<ruby><u>容量</u><rt>ようりょう</rt></ruby><ruby>がすぐになくなるので、<rt></rt></ruby><ruby>無駄<rt>むだ</rt></ruby><ruby>な<u>データ</u>や<rt></rt></ruby><ruby>使<rt>つか</rt></ruby><ruby>わない<u>ファイル</u>はなるべく<rt></rt></ruby><ruby>消<rt>け</rt></ruby><ruby>すようにしている。<rt></rt></ruby>",
+  "japanese_text": "<u><ruby>容量<rt>ようりょう</rt></ruby></u><ruby>がすぐになくなるので、<rt></rt></ruby><ruby>無駄<rt>むだ</rt></ruby><u><ruby>なデータや<rt></rt></ruby></u><ruby>使<rt>つか</rt></ruby><u><ruby>わないファイルはなるべく<rt></rt></ruby></u><ruby>消<rt>け</rt></ruby><ruby>すようにしている。<rt></rt></ruby>",
   "english_translation": "Since I (always) run out of storage space so quickly, I try to delete as much unneeded data and files as I can.",
   "annotated_words": [
     {
@@ -27,5 +27,6 @@
   ],
   "story_number": 10,
   "is_story": true,
-  "page_story": "78_2"
+  "page_story": "78_2",
+  "id": "78_2"
 }

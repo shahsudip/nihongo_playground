@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 18,
   "title": "Topic 20",
-  "japanese_text": "<u>先天的な</u>病気が原因で、「角膜」という眼の前面を覆う<u>膜</u>が濁っていたため、１年前、<u>移植</u>手術を受けた。術後の<u>経過</u>もよく、現在は視力が大幅に改善した。",
+  "japanese_text": "<u>先天的な</u>病気が原因で、「角<u>膜</u>」という眼の前面を覆う膜が濁っていたため、１年前、<u>移植</u>手術を受けた。術後の<u>経過</u>もよく、現在は視力が大幅に改善した。",
   "english_translation": "Due to a congenital condition, the membrane covering the front of my eyes, known as the \"cornea,\" had become cloudy, so I underwent transplant surgery a year ago. My postoperative progress has been good, and my vision has improved significantly.",
   "annotated_words": [
     {
@@ -33,5 +33,7 @@
       "furigana": "けいか",
       "meaning_en": "progress, make progress"
     }
-  ]
+  ],
+  "id": "272_1",
+  "page_story": "272_1"
 }

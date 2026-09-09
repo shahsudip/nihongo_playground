@@ -3,7 +3,7 @@
   "story_number": 4,
   "title": "Topic 11 動物",
   "page_story": "152_1",
-  "japanese_text": "山で<u>保護された</u>犬を飼い始めた。父は、最初は犬を<u>嫌い</u>、<u>触れる</u>ことも<u>近寄る</u>こともしなかった。しかし、犬は父を見るたびにうれしそうに<u>しっぽ</u>を振っていた。1カ月後、父は犬を<u>膝</u>に乗せて<u>頬</u>を<u>撫でる</u>ようになった。",
+  "japanese_text": "山で<u>保護</u>された犬を飼い始めた。父は、最初は犬を嫌い、<u>触れる</u>ことも<u>近寄る</u>こともしなかった。しかし、犬は父を見るたびにうれしそうに<u>しっぽ</u>を振っていた。1カ月後、父は犬を<u>膝</u>に乗せて<u>頬</u>を<u>撫でる</u>ようになった。",
   "english_translation": "I started keeping a dog that had taken shelter in the mountains. At first, my father disliked the dog and wouldn't touch it or approach it. But the dog wagged his tail with joy every time he saw my father. After a month, my father started putting the dog on his lap and stroking its cheeks.",
   "annotated_words": [
     {
@@ -12,13 +12,6 @@
       "kanji": "保護[する]",
       "furigana": "ほご",
       "meaning_en": "protection, shelter"
-    },
-    {
-      "word_id": "n2_0945",
-      "word_number": 945,
-      "kanji": "嫌う",
-      "furigana": "きらう",
-      "meaning_en": "dislike"
     },
     {
       "word_id": "n2_0946",
@@ -62,5 +55,6 @@
       "furigana": "なでる",
       "meaning_en": "pet, stroke"
     }
-  ]
+  ],
+  "id": "152_1"
 }

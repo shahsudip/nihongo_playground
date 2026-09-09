@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 1,
   "title": "Topic 15",
-  "japanese_text": "近所の公園の桜の<u>つぼみ</u>が日に日に<u>著しく</u>大きくなり、春の<u>兆し</u>が見られるようになった。感染症対策のため<u>見合わせて</u>いた花見が<u>じきに</u>できると思うと、うれしい。",
+  "japanese_text": "近所の公園の桜の<u>つぼみ</u>が日に日に著しく大きくなり、春の<u>兆し</u>が見られるようになった。感染症対策のため見合わせていた花見がじきにできると思うと、うれしい。",
   "english_translation": "The buds on the cherry trees in my neighborhood park are getting significantly bigger day by day: a sign of spring. It makes me happy to think that we will soon be able to enjoy cherry blossom viewing, which we had to postpone due to infection control measures.",
   "annotated_words": [
     {
@@ -13,32 +13,13 @@
       "meaning_en": "bud"
     },
     {
-      "word_id": "n1_1205",
-      "word_number": 1205,
-      "kanji": "著しい",
-      "furigana": "いちじるしい",
-      "meaning_en": "significant"
-    },
-    {
       "word_id": "n1_1206",
       "word_number": 1206,
       "kanji": "兆し",
       "furigana": "きざし",
       "meaning_en": "sign"
-    },
-    {
-      "word_id": "n1_1207",
-      "word_number": 1207,
-      "kanji": "見合わせる",
-      "furigana": "みあわせる",
-      "meaning_en": "postpone, suspend"
-    },
-    {
-      "word_id": "n1_1208",
-      "word_number": 1208,
-      "kanji": "じき(に)",
-      "furigana": "じき(に)",
-      "meaning_en": "right away, soon"
     }
-  ]
+  ],
+  "id": "174_1",
+  "page_story": "174_1"
 }

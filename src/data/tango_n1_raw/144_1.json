@@ -1,5 +1,5 @@
 {
-  "is_story": false,
+  "is_story": true,
   "story_number": 2,
   "title": "Topic 12",
   "japanese_text": "A：<u>触れ合い</u>動物園へ行ってきたんだ。\nB：どうだった？\nA：<u>柵</u>の間から野菜や果物を<u>差し出す</u>と、おいしそうに食べていたよ。",
@@ -11,13 +11,6 @@
       "kanji": "触れ合い",
       "furigana": "ふれあい",
       "meaning_en": "contact, encounter"
-    },
-    {
-      "word_id": "n1_0971",
-      "word_number": 971,
-      "kanji": "触れ合う",
-      "furigana": "ふれあう",
-      "meaning_en": "touch each other"
     },
     {
       "word_id": "n1_0972",
@@ -32,13 +25,8 @@
       "kanji": "差し出す",
       "furigana": "さしだす",
       "meaning_en": "give hold out"
-    },
-    {
-      "word_id": "n1_0974",
-      "word_number": 974,
-      "kanji": "差出人",
-      "furigana": "さしだしにん",
-      "meaning_en": "sender (of mail, etc.)"
     }
-  ]
+  ],
+  "id": "144_1",
+  "page_story": "144_1"
 }

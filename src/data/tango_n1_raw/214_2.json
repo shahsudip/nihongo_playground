@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 4,
   "title": "Topic 18",
-  "japanese_text": "A：各プロジェクトの<u>進度</u>は計画通りです。ここまで<u>スケール</u>の大きな仕事は初めてでしたが、無事完了できそうで安心しました。\nB：よかった。Aさんは物事を<u>秩序</u>立てて考えられるから、チームを<u>けん引する</u>のがうまいね。",
+  "japanese_text": "A：各プロジェクトの<u>進度</u>は計画通りです。ここまで<u>スケール</u>の大きな仕事は初めてでしたが、無事完了できそうで安心しました。\nB：よかった。Aさんは物事を<u>秩序</u>立てて考えられるから、チームを<u>けん引</u>するのがうまいね。",
   "english_translation": "A: Every project is making progress on schedule. I've never worked on such a large scale before, but I'm relieved that it will be completed successfully. B: Wonderful. You're great because you think in an orderly way and you're good at leading your team.",
   "annotated_words": [
     {
@@ -33,5 +33,7 @@
       "furigana": "けんいん",
       "meaning_en": "leading, lead"
     }
-  ]
+  ],
+  "id": "214_2",
+  "page_story": "214_2"
 }

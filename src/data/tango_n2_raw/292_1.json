@@ -3,7 +3,7 @@
   "story_number": 1,
   "title": "Topic 21 社会",
   "page_story": "292_1",
-  "japanese_text": "今の日本では、所得が増えると、<u>課税</u>の<u>対象</u>になる額も増える。<u>資本主義</u>における<u>税制</u>上の<u>恩恵</u>を<u>得ている</u>とは感じにくい。",
+  "japanese_text": "今の日本では、所得が増えると、<u>課税</u>の<u>対象</u>になる額も増える。<u>資本主義</u>における<u>税制</u>上の<u>恩恵</u>を得ているとは感じにくい。",
   "english_translation": "In Japan today, as your income increases, the amount subject to taxation also increases. I don't really feel like anyone gains any benefits from the taxation system under capitalism.",
   "annotated_words": [
     {
@@ -28,13 +28,6 @@
       "meaning_en": "capitalism"
     },
     {
-      "word_id": "n2_2032",
-      "word_number": 2032,
-      "kanji": "資本",
-      "furigana": "しほん",
-      "meaning_en": "capital"
-    },
-    {
       "word_id": "n2_2033",
       "word_number": 2033,
       "kanji": "税制",
@@ -47,13 +40,7 @@
       "kanji": "恩恵",
       "furigana": "おんけい",
       "meaning_en": "benefit"
-    },
-    {
-      "word_id": "n2_2035",
-      "word_number": 2035,
-      "kanji": "得る",
-      "furigana": "える",
-      "meaning_en": "gain, acquire"
     }
-  ]
+  ],
+  "id": "292_1"
 }

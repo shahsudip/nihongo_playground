@@ -3,7 +3,7 @@
   "story_number": 14,
   "title": "Topic 1 食事",
   "page_story": "23_1",
-  "japanese_text": "フランス<ruby>料理<rt>りょうり</rt></ruby>はマナーが<ruby>難<rt>むずか</rt></ruby>しい。パンの<u>くず</u>は<ruby>店<rt>みせ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>掃除<rt>そうじ</rt></ruby>するので<ruby>自分<rt>じぶん</rt></ruby>で<ruby>払<rt>はら</rt></ruby>ってはいけない。スープを<ruby>飲<rt>の</rt></ruby>むときは、<ruby>皿<rt>さら</rt></ruby>の<u>縁</u>からスプーンを<ruby>入<rt>い</rt></ruby>れる。<ruby>少<rt>すく</rt></ruby>なくなってきたら<ruby>皿<rt>さら</rt></ruby>を<u>傾けて</u>もいいが、<ruby>音<rt>おと</rt></ruby>をたててはいけない。ワインを<ruby>注文<rt>ちゅうもん</rt></ruby>するときは、はじめに<ruby>少量<rt>しょうりょう</rt></ruby>だけ<u>つがれ</u>、<ruby>味<rt>あじ</rt></ruby>や<ruby>香<rt>かお</rt></ruby>りをチェックすることになっている。",
+  "japanese_text": "フランス<ruby>料理<rt>りょうり</rt></ruby>はマナーが<ruby>難<rt>むずか</rt></ruby>しい。パンの<u>くず</u>は<ruby>店<rt>みせ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>掃除<rt>そうじ</rt></ruby>するので<ruby>自分<rt>じぶん</rt></ruby>で<ruby>払<rt>はら</rt></ruby>ってはいけない。スープを<ruby>飲<rt>の</rt></ruby>むときは、<ruby>皿<rt>さら</rt></ruby>の<u>縁</u>からスプーンを<ruby>入<rt>い</rt></ruby>れる。<ruby>少<rt>すく</rt></ruby>なくなってきたら<ruby>皿<rt>さら</rt></ruby>を傾けてもいいが、<ruby>音<rt>おと</rt></ruby>をたててはいけない。ワインを<ruby>注文<rt>ちゅうもん</rt></ruby>するときは、はじめに<ruby>少量<rt>しょうりょう</rt></ruby>だけつがれ、<ruby>味<rt>あじ</rt></ruby>や<ruby>香<rt>かお</rt></ruby>りをチェックすることになっている。",
   "english_translation": "Etiquette for French cuisine is difficult. You shouldn't sweep away bread crumbs yourself, since the waiter will clean them up. When eating soup, you put the spoon in from the edge of the bowl. When there's only a little soup left, you may tilt the bowl, but you shouldn't make any noise. When you order wine, only a small amount of wine is poured at the start so you can check the flavor and aroma.",
   "annotated_words": [
     {
@@ -19,20 +19,7 @@
       "kanji": "縁",
       "furigana": "ふち",
       "meaning_en": "edge"
-    },
-    {
-      "word_id": "n2_0072",
-      "word_number": 72,
-      "kanji": "傾ける",
-      "furigana": "かたむける",
-      "meaning_en": "tilt"
-    },
-    {
-      "word_id": "n2_0074",
-      "word_number": 74,
-      "kanji": "つぐ",
-      "furigana": "",
-      "meaning_en": "pour"
     }
-  ]
+  ],
+  "id": "23_1"
 }

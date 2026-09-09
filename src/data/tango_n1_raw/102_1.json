@@ -2,7 +2,7 @@
   "is_story": true,
   "story_number": 4,
   "title": "Topic 9",
-  "japanese_text": "5年前に祖母は<u>他界して</u>しまった。しかし、今でも盆や正月には<u>親族</u><u>一同</u>集まって、祖母の<u>生前</u>の話をして盛り上がっており、<u>いかに</u>祖母がみんなに愛されていたかが分かる。",
+  "japanese_text": "5年前に祖母は<u>他界</u>してしまった。しかし、今でも盆や正月には<u>親族</u><u>一同</u>集まって、祖母の<u>生前</u>の話をして盛り上がっており、<u>いかに</u>祖母がみんなに愛されていたかが分かる。",
   "english_translation": "My grandmother passed away five years ago. However, all my relatives still get together at Obon in summer and at New Year's to talk about her life and have a good time. It shows how much my grandmother was loved by everyone.",
   "annotated_words": [
     {
@@ -40,5 +40,7 @@
       "furigana": "いかに",
       "meaning_en": "how much"
     }
-  ]
+  ],
+  "id": "102_1",
+  "page_story": "102_1"
 }
