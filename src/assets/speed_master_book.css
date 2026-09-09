@@ -11,26 +11,8 @@
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-/* 1. Light Theme (Clean Crisp White & Slate) */
-.speed-master-page.theme-light {
-  --sm-bg: #f8fafc;
-  --sm-card-bg: #ffffff;
-  --sm-card-alt-bg: #f1f5f9;
-  --sm-text-primary: #0f172a;
-  --sm-text-secondary: #334155;
-  --sm-text-muted: #64748b;
-  --sm-border: #e2e8f0;
-  --sm-border-strong: #cbd5e1;
-  --sm-accent-blue: #2563eb;
-  --sm-accent-blue-light: #eff6ff;
-  --sm-accent-blue-border: #bfdbfe;
-  --sm-option-bg: #ffffff;
-  --sm-option-hover: #f8fafc;
-  --sm-vocab-bg: #f8fafc;
-  --sm-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-}
-
-/* 2. Sepia Theme (Authentic Japanese Textbook Parchment) */
+/* 1. Light & Sepia Theme (Authentic Japanese Textbook Parchment) */
+.speed-master-page.theme-light,
 .speed-master-page.theme-sepia {
   --sm-bg: #f4ecdc;
   --sm-card-bg: #fcf9f2;
@@ -657,7 +639,9 @@
   transition: all 0.25s ease;
 }
 
-.theme-sepia .speed-master-lined-paper {
+.theme-sepia .speed-master-lined-paper,
+.theme-light .speed-master-lined-paper,
+.speed-master-page.theme-light .speed-master-lined-paper {
   background-color: #fcf9f2 !important;
   border-color: #cbbe9f !important;
   box-shadow: 0 4px 16px rgba(99, 80, 61, 0.08);
@@ -683,7 +667,9 @@
   box-sizing: border-box;
 }
 
-.theme-sepia .speed-master-ruled-row {
+.theme-sepia .speed-master-ruled-row,
+.theme-light .speed-master-ruled-row,
+.speed-master-page.theme-light .speed-master-ruled-row {
   border-bottom: 1px solid rgba(180, 155, 120, 0.45) !important;
 }
 
@@ -768,7 +754,9 @@
   margin-bottom: 12px;
 }
 
-.theme-sepia .speed-master-transit-card {
+.theme-sepia .speed-master-transit-card,
+.theme-light .speed-master-transit-card,
+.speed-master-page.theme-light .speed-master-transit-card {
   background-color: #fcf9f2 !important;
   border-color: #cbbe9f !important;
 }
@@ -875,7 +863,9 @@
   transition: all 0.25s ease;
 }
 
-.theme-sepia .speed-master-flyer-card {
+.theme-sepia .speed-master-flyer-card,
+.theme-light .speed-master-flyer-card,
+.speed-master-page.theme-light .speed-master-flyer-card {
   background-color: #fdfaf3 !important;
   border-color: #cbbe9f !important;
   box-shadow: 0 4px 16px rgba(99, 80, 61, 0.1);
@@ -898,7 +888,13 @@
 /* Inner white boxes adapt cleanly per theme */
 .theme-sepia .speed-master-canvas .bg-white,
 .theme-sepia .speed-master-canvas .bg-slate-50,
-.theme-sepia .speed-master-canvas .bg-slate-100 {
+.theme-sepia .speed-master-canvas .bg-slate-100,
+.theme-light .speed-master-canvas .bg-white,
+.theme-light .speed-master-canvas .bg-slate-50,
+.theme-light .speed-master-canvas .bg-slate-100,
+.speed-master-page.theme-light .speed-master-canvas .bg-white,
+.speed-master-page.theme-light .speed-master-canvas .bg-slate-50,
+.speed-master-page.theme-light .speed-master-canvas .bg-slate-100 {
   background-color: var(--sm-card-bg) !important;
   border-color: var(--sm-border-strong) !important;
   color: var(--sm-text-primary) !important;
