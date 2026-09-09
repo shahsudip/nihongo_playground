@@ -7,10 +7,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nihongo Playground</title>
-    <script type="module" crossorigin src="/nihongo_playground/assets/index-CVbd-0Vh.js"></script>
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('app_theme') || localStorage.getItem('shin500_theme') || 'light';
+          var theme = saved === 'dark' ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', theme);
+          document.documentElement.classList.add('theme-' + theme);
+          if (theme === 'light') {
+            document.documentElement.style.backgroundColor = '#f4ecdc';
+            document.documentElement.style.color = '#2d2216';
+          } else {
+            document.documentElement.style.backgroundColor = '#0d1117';
+            document.documentElement.style.color = '#f0f6fc';
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/nihongo_playground/assets/index-DUpWIEzn.js"></script>
     <link rel="modulepreload" crossorigin href="/nihongo_playground/assets/vendor-react-BKFSlb1C.js">
     <link rel="modulepreload" crossorigin href="/nihongo_playground/assets/vendor-firebase-BtsYroWn.js">
-    <link rel="stylesheet" crossorigin href="/nihongo_playground/assets/index-BdIKxR4b.css">
+    <link rel="stylesheet" crossorigin href="/nihongo_playground/assets/index-ChkeVKH6.css">
   </head>
   <body>
     <div id="root"></div>
