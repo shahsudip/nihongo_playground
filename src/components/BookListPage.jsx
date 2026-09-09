@@ -138,7 +138,7 @@ const BookListPage = () => {
             'shin-nihongo-500-n3': 'linear-gradient(135deg, #0d9488 0%, #11998e 50%, #38ef7d 100%)',
             'shin-nihongo-500-n4-n5': 'linear-gradient(135deg, #7c3aed 0%, #9333ea 50%, #c084fc 100%)',
             'shinkanzen-master-n3-reading': 'linear-gradient(135deg, #b45309 0%, #d97706 50%, #f59e0b 100%)',
-            'speed-master-n3-reading': 'linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #38bdf8 100%)',
+            'speed-master-n3-reading': 'linear-gradient(135deg, #14532d 0%, #16a34a 50%, #22c55e 100%)',
             'sou-matome-n3-reading': 'linear-gradient(135deg, #312e81 0%, #4338ca 50%, #6366f1 100%)',
           };
           const gradient = levelGradients[book.id] || gradients[index % gradients.length];

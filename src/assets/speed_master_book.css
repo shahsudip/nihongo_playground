@@ -22,9 +22,9 @@
   --sm-text-muted: #7c634b;
   --sm-border: #decfae;
   --sm-border-strong: #cbbe9f;
-  --sm-accent-blue: #9a4b17;
-  --sm-accent-blue-light: #faedd9;
-  --sm-accent-blue-border: #e4caa9;
+  --sm-accent-blue: #16a34a;
+  --sm-accent-blue-light: #ecfdf5;
+  --sm-accent-blue-border: #86efac;
   --sm-option-bg: #fcf9f2;
   --sm-option-hover: #f4e8cf;
   --sm-vocab-bg: #f3ebda;
@@ -41,9 +41,9 @@
   --sm-text-muted: #94a3b8;
   --sm-border: #243048;
   --sm-border-strong: #384c6c;
-  --sm-accent-blue: #3b82f6;
-  --sm-accent-blue-light: #172554;
-  --sm-accent-blue-border: #1d4ed8;
+  --sm-accent-blue: #22c55e;
+  --sm-accent-blue-light: #064e3b;
+  --sm-accent-blue-border: #16a34a;
   --sm-option-bg: #151f33;
   --sm-option-hover: #1e2c4a;
   --sm-vocab-bg: #0d1527;
@@ -106,7 +106,7 @@
   background-color: var(--sm-accent-blue);
   color: #ffffff;
   border-color: var(--sm-accent-blue);
-  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 2px 6px rgba(22, 163, 74, 0.25);
 }
 
 /* =========================================================
@@ -161,7 +161,7 @@
    ========================================================= */
 
 .speed-master-header-banner {
-  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+  background: linear-gradient(135deg, #14532d 0%, #16a34a 50%, #22c55e 100%);
   border-radius: 16px;
   padding: 16px 20px;
   color: #ffffff;
@@ -169,7 +169,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.25);
   margin-bottom: 16px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   gap: 12px;
@@ -1503,7 +1503,7 @@
   background: var(--sm-card-bg);
   border-radius: 16px;
   border: 2px solid var(--sm-accent-blue);
-  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.15);
+  box-shadow: 0 8px 30px rgba(22, 163, 74, 0.15);
   padding: 24px;
   margin-bottom: 24px;
   text-align: center;
@@ -1640,7 +1640,7 @@
   background: var(--sm-accent-blue) !important;
   color: #ffffff !important;
   border-color: var(--sm-accent-blue) !important;
-  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.35);
   transform: scale(1.05);
 }
 
@@ -1725,11 +1725,11 @@
   background: var(--sm-accent-blue);
   color: #ffffff;
   border-color: var(--sm-accent-blue);
-  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 2px 6px rgba(22, 163, 74, 0.25);
 }
 
 .speed-master-nav-btn.primary:hover:not(:disabled) {
-  background: #1d4ed8;
+  background: #15803d;
   color: #ffffff;
 }
 

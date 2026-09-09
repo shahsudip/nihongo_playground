@@ -27,3 +27,8 @@ Before writing or generating any JSON or passage text:
 - Detailed standards: `.agents/rules/dokkai_extraction_standards.md`
 - UI Verification: `.agents/rules/ui_verification_rule.md`
 - Engineering standards: `.agents/rules/pro_developer_standards.md`
+
+
+## Workspace File Generation Rule
+- All generated files (.md notes, graphs, charts, images, scratch scripts, OCR outputs) MUST be generated directly inside this repository under scripts/, images/, or 	mp_inspect/.
+- NEVER generate files in C:\ or in Windows Temp (%TEMP%).

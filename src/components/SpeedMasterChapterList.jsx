@@ -17,14 +17,14 @@ const SpeedMasterChapterList = ({ book }) => {
         <Link
           key={part.num}
           to={`/books/${book.id}/chapters/${part.firstMondai}`}
-          className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-xl p-5 hover:border-blue-500 hover:shadow-md transition-all flex flex-col justify-between"
+          className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-xl p-5 hover:border-emerald-500 hover:shadow-md transition-all flex flex-col justify-between"
         >
           <div>
             <div className="flex items-center justify-between mb-1">
               <h3 className="text-lg font-bold text-[var(--color-text-primary)]">
                 {part.title}
               </h3>
-              <span className="text-xs font-semibold px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-200">
+              <span className="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
                 {part.time}
               </span>
             </div>
@@ -40,7 +40,7 @@ const SpeedMasterChapterList = ({ book }) => {
             </div>
             <div className="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
               <div 
-                className="bg-blue-600 h-full rounded-full transition-all duration-300"
+                className="bg-emerald-600 h-full rounded-full transition-all duration-300"
                 style={{ width: '0%' }}
               />
             </div>

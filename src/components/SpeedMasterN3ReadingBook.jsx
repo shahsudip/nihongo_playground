@@ -445,7 +445,7 @@ const SpeedMasterN3ReadingBook = () => {
               </span>
               <button
                 onClick={handleSubmitExam}
-                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-xs shadow transition cursor-pointer"
+                className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg text-xs shadow transition cursor-pointer"
               >
                 採点する (Submit & Grade) ✓
               </button>
@@ -501,9 +501,9 @@ const SpeedMasterN3ReadingBook = () => {
             <div>
               <h1 className="text-xl md:text-2xl font-bold tracking-tight text-white flex items-center gap-2">
                 <span>{data?.section || currentChapter.section}</span>
-                <span className="text-blue-200 text-sm font-medium">({data?.title || currentChapter.title})</span>
+                <span className="text-emerald-100 text-sm font-medium">({data?.title || currentChapter.title})</span>
               </h1>
-              <p className="text-xs md:text-sm text-blue-100 opacity-90 mt-0.5">
+              <p className="text-xs md:text-sm text-emerald-50 opacity-90 mt-0.5">
                 {data?.partTitle || currentChapter.partTitle} • {data?.partTitleEn || currentChapter.partTitleEn}
               </p>
             </div>
@@ -693,7 +693,7 @@ const SpeedMasterN3ReadingBook = () => {
                             if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
                           }
                         }}
-                        className={`speed-master-q-pill ${pillClass} ${isActive ? 'active ring-2 ring-blue-500 font-black' : ''}`}
+                        className={`speed-master-q-pill ${pillClass} ${isActive ? 'active ring-2 ring-emerald-500 font-black' : ''}`}
                         title={`Jump to Q${i + 1}`}
                       >
                         {i + 1}
@@ -728,7 +728,7 @@ const SpeedMasterN3ReadingBook = () => {
                 {examMode && !submitted && (
                   <button
                     onClick={handleSubmitExam}
-                    className="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-xs shadow transition cursor-pointer"
+                    className="px-3 py-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg text-xs shadow transition cursor-pointer"
                   >
                     Grade Exam ✓
                   </button>
@@ -802,7 +802,7 @@ const SpeedMasterN3ReadingBook = () => {
                   {currentScanUrl && (
                     <button
                       onClick={() => setShowScanModal(true)}
-                      className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-xs transition cursor-pointer"
+                      className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg text-xs transition cursor-pointer"
                     >
                       🔍 View Page Scan
                     </button>
@@ -828,10 +828,10 @@ const SpeedMasterN3ReadingBook = () => {
                     <div className="space-y-6">
                       {/* Active Section Header */}
                       <div className="flex items-center justify-between border-b border-[var(--sm-border)] pb-2">
-                        <span className="font-bold text-blue-600 dark:text-blue-400 text-sm md:text-base">
+                        <span className="font-bold text-emerald-600 dark:text-emerald-400 text-sm md:text-base">
                           {activeSec.sectionTitle} {activeSec.passageTitle ? `— ${activeSec.passageTitle}` : ''}
                         </span>
-                        <span className="text-xs bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded font-bold border border-blue-200 dark:border-blue-800">
+                        <span className="text-xs bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded font-bold border border-emerald-200 dark:border-emerald-800">
                           問 {activeQuestionIdx + 1} を回答中
                         </span>
                       </div>
@@ -900,10 +900,10 @@ const SpeedMasterN3ReadingBook = () => {
                   {data.sections.map((sec, secIdx) => (
                     <div key={sec.id || secIdx} className="space-y-4 pt-6 first:pt-0 border-t border-[var(--sm-border)] first:border-t-0">
                       <div className="flex items-center justify-between border-b border-[var(--sm-border)] pb-2">
-                        <h3 className="font-bold text-blue-600 dark:text-blue-400 text-base md:text-lg">
+                        <h3 className="font-bold text-emerald-600 dark:text-emerald-400 text-base md:text-lg">
                           {sec.sectionTitle} {sec.passageTitle ? `— ${sec.passageTitle}` : ''}
                         </h3>
-                        <span className="text-xs bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 px-2.5 py-1 rounded-full font-bold border border-blue-200 dark:border-blue-800">
+                        <span className="text-xs bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 px-2.5 py-1 rounded-full font-bold border border-emerald-200 dark:border-emerald-800">
                           問 {sec.questionIndices.map(qi => qi + 1).join('・')}
                         </span>
                       </div>
@@ -970,7 +970,7 @@ const SpeedMasterN3ReadingBook = () => {
                       </p>
                       <button
                         onClick={handleSubmitExam}
-                        className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl text-sm shadow-md transition cursor-pointer"
+                        className="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl text-sm shadow-md transition cursor-pointer"
                       >
                         すべての問題を採点する (Submit & Grade All Questions) ✓
                       </button>
