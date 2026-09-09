@@ -632,6 +632,17 @@
   display: block;
 }
 
+/* Authentic Japanese Memo / Scenario Prompt Card (e.g. Search-2, Search-9, Search-14, Search-15) */
+.speed-master-memo-card {
+  border: 1px solid var(--sm-border-strong) !important;
+  border-radius: 10px;
+  background-color: var(--sm-card-alt-bg) !important;
+  padding: 14px 18px;
+  color: var(--sm-text-primary);
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
 /* Authentic Japanese Ruled Stationery Letter Paper (便箋の罫線) - Mondai 12 (p. 88) & Mondai 15 (p. 63) */
 .speed-master-lined-paper {
   border: 1.5px solid var(--sm-border-strong) !important;
@@ -652,7 +663,8 @@
   box-shadow: 0 4px 16px rgba(99, 80, 61, 0.08);
 }
 
-.theme-dark .speed-master-lined-paper {
+.theme-dark .speed-master-lined-paper,
+.speed-master-page.theme-dark .speed-master-lined-paper {
   background-color: #131b2e !important;
   border-color: #384c6c !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
@@ -675,7 +687,8 @@
   border-bottom: 1px solid rgba(180, 155, 120, 0.45) !important;
 }
 
-.theme-dark .speed-master-ruled-row {
+.theme-dark .speed-master-ruled-row,
+.speed-master-page.theme-dark .speed-master-ruled-row {
   border-bottom: 1px solid rgba(71, 85, 105, 0.55) !important;
 }
 
@@ -760,7 +773,8 @@
   border-color: #cbbe9f !important;
 }
 
-.theme-dark .speed-master-transit-card {
+.theme-dark .speed-master-transit-card,
+.speed-master-page.theme-dark .speed-master-transit-card {
   background-color: #131b2e !important;
   border-color: #384c6c !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);

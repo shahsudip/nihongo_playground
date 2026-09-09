@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
+import { useTheme } from '../context/ThemeContext.jsx';
 import '../assets/speed_master_book.css';
 
 // Eagerly load all local Speed Master JSON files in data/speed_master_n3_reading/
@@ -116,8 +117,8 @@ const SpeedMasterN3ReadingBook = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Settings & Display States
-  const [theme, setTheme] = useState(() => localStorage.getItem('speed_master_theme') || 'light');
+  // Settings & Display States (Global Theme synced with top navbar)
+  const { theme } = useTheme();
   const [fontSize, setFontSize] = useState(() => localStorage.getItem('speed_master_font_size') || 'normal');
   const [showVocab, setShowVocab] = useState(true);
   const [showScanModal, setShowScanModal] = useState(false);
@@ -152,11 +153,6 @@ const SpeedMasterN3ReadingBook = () => {
       setActiveTab(currentChapter.category);
     }
   }, [chapterId, currentChapter.category]);
-
-  // Persist user theme
-  useEffect(() => {
-    localStorage.setItem('speed_master_theme', theme);
-  }, [theme]);
 
   // Persist font size
   useEffect(() => {
@@ -635,31 +631,6 @@ const SpeedMasterN3ReadingBook = () => {
                 title="Large Font"
               >
                 A+
-              </button>
-            </div>
-
-            {/* Theme Toggle (Light / Sepia / Dark) */}
-            <div className="speed-master-btn-group">
-              <button
-                onClick={() => setTheme('light')}
-                className={theme === 'light' ? 'active' : ''}
-                title="Light Clean Theme"
-              >
-                ☀️ Light
-              </button>
-              <button
-                onClick={() => setTheme('sepia')}
-                className={theme === 'sepia' ? 'active' : ''}
-                title="Sepia Book Theme"
-              >
-                📜 Sepia
-              </button>
-              <button
-                onClick={() => setTheme('dark')}
-                className={theme === 'dark' ? 'active' : ''}
-                title="Dark Theme"
-              >
-                🌙 Dark
               </button>
             </div>
           </div>
