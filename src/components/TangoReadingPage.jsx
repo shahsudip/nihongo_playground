@@ -329,6 +329,22 @@ export default function TangoReadingPage() {
     }));
   };
 
+  // Extract concise single sentence example for flashcard
+  const getCardExampleLine = (card) => {
+    if (!card?.storyJapanese) return '';
+    const lines = card.storyJapanese.split(/<br\s*\/?>/i);
+    const searchWord = (card.kanji || '').replace(/［する］|\[する\]|（|）|～/g, '');
+    
+    // Find line that contains the word
+    const matching = lines.find(l => {
+      const plain = l.replace(/<[^>]+>/g, '');
+      return plain.includes(searchWord) || l.includes(card.kanji);
+    });
+
+    const targetLine = matching || lines[0] || '';
+    return targetLine.replace(/^([A-Z]|男|女|店員|先生|客|[０-９0-9]+)[：:]\s*/, '');
+  };
+
   // Render Annotated Japanese Dialogue with Interactive Word Chips
   const renderAnnotatedStory = (story) => {
     if (!story?.japanese_text) return null;
@@ -778,21 +794,19 @@ export default function TangoReadingPage() {
                             <span>#{card.word_number || (currentCardIndex + 1)}</span>
                           </div>
 
-                          <div className="my-auto">
+                          <div className="my-auto w-full">
                             <h3 className="tango-card-meaning">{card.meaning_en}</h3>
-                            {card.storyJapanese && (
-                              <div className="tango-card-sentence mt-3">
-                                <div 
-                                  dangerouslySetInnerHTML={{ __html: card.storyJapanese }}
-                                  className="font-medium"
-                                />
-                                {card.storyEnglish && (
-                                  <p className="text-xs text-[var(--tango-text-muted)] mt-1 italic">
-                                    {card.storyEnglish}
-                                  </p>
-                                )}
-                              </div>
-                            )}
+                            {(() => {
+                              const exampleSentence = getCardExampleLine(card);
+                              return exampleSentence ? (
+                                <div className="tango-card-sentence mt-3">
+                                  <div 
+                                    dangerouslySetInnerHTML={{ __html: exampleSentence }}
+                                    className="font-medium text-sm md:text-base leading-relaxed"
+                                  />
+                                </div>
+                              ) : null;
+                            })()}
                           </div>
 
                           <div className="flex items-center gap-3 w-full justify-center">
