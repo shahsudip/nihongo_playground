@@ -26,6 +26,8 @@ const BookListPage = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  const [activeLevel, setActiveLevel] = useState('All');
+
   // Cover gradient mapping based on book level/index to look premium
   const gradients = [
     'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)', // Deep Blue
@@ -78,19 +80,37 @@ const BookListPage = () => {
 
   if (loading) return <LoadingSpinner />;
 
+  const filteredBooks = books.filter(b => activeLevel === 'All' || b.level === activeLevel);
+  const showStaticN3 = activeLevel === 'All' || activeLevel === 'N3';
+
   return (
     <div className="books-list-container">
       <div className="books-header">
         <h1 className="books-title">Japanese Book Collections</h1>
         <p className="books-subtitle">Chapter-based reading and grammar quizzes curated from standard textbooks and study materials.</p>
-        
+      </div>
 
+      <div className="flex justify-center mb-8 gap-2 flex-wrap">
+        {['All', 'N1', 'N2', 'N3', 'N4-N5'].map(level => (
+          <button
+            key={level}
+            onClick={() => setActiveLevel(level)}
+            className={`px-4 py-2 rounded-full text-sm font-bold transition-all border-2 ${
+              activeLevel === level 
+                ? 'bg-blue-600 text-white border-blue-600 shadow-md' 
+                : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500'
+            }`}
+          >
+            {level === 'N4-N5' ? 'N4/N5' : level}
+          </button>
+        ))}
       </div>
 
       {error && <div className="error-message">{error}</div>}
 
       <div className="books-grid">
         {/* Static Card for JLPT Practice Sets */}
+        {showStaticN3 && (
         <div className="book-card" style={{ borderColor: 'var(--color-primary, #059669)', borderWidth: '2px' }}>
           <div className="book-cover-artwork" style={{ padding: 0, overflow: 'hidden', background: '#0f172a' }}>
             <img 
@@ -119,8 +139,9 @@ const BookListPage = () => {
             </div>
           </div>
         </div>
+        )}
 
-        {books.map((book, index) => {
+        {filteredBooks.map((book, index) => {
           const progress = getBookProgress(book);
           const bookCovers = {
             'shin-nihongo-500-n1': coverN1,
