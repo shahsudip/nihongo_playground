@@ -2,7 +2,8 @@ const { initializeApp, cert } = require('firebase-admin/app');
 const { getFirestore } = require('firebase-admin/firestore');
 const fs = require('fs');
 
-const serviceAccount = JSON.parse(fs.readFileSync('./scraper-test/service-account.json', 'utf8'));
+const path = require('path');
+const serviceAccount = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'scraper-test', 'service-account.json'), 'utf8'));
 initializeApp({ credential: cert(serviceAccount) });
 const db = getFirestore();
 
