@@ -115,14 +115,14 @@ const BookListPage = () => {
           <div className="book-cover-artwork" style={{ padding: 0, overflow: 'hidden', background: '#0f172a' }}>
             <img 
               src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/n3_practice_sets_cover.jpg`} 
-              alt="Nihongo Power Drill N3 (15 Sets)" 
+              alt="Chokuzen Taisaku JLPT N3 (15 Sets)" 
               loading="lazy"
               decoding="async"
               style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', objectPosition: 'top' }} 
             />
           </div>
           <div className="book-card-details">
-            <h2 className="book-card-title">Nihongo Power Drill N3 (15 Sets)</h2>
+            <h2 className="book-card-title">Chokuzen Taisaku JLPT N3 (15 Sets)</h2>
             <p className="book-card-description">15 sets of comprehensive JLPT N3 practice covering Kanji, Vocabulary, and Grammar with premium layout.</p>
             
             <div className="book-progress-wrapper" style={{ marginTop: 'auto' }}>
