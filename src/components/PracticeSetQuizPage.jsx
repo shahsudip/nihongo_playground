@@ -196,23 +196,38 @@ const PracticeSetQuizPage = () => {
             )}
           <h2 className="text-xl md:text-2xl font-medium japanese-text leading-relaxed" dangerouslySetInnerHTML={{ __html: (() => {
             let html = currentQ.questionText;
-            // For vocabulary/kanji questions, strip furigana to prevent leaking the reading answer.
-            // Use robust regexes: handle attributes on tags, <rp> tags, and any ruby variant.
-            if (currentQ.sectionType === 'vocabulary-kanji') {
+            // 問題1 (reading quiz): question has <ruby>kanji<rt>reading</rt></ruby> — the rt IS the answer, strip it.
+            // 問題2 (kanji writing): question has ruby on the hiragana word — strip it too.
+            // 問題3/4/5 and grammar-reading: no ruby, leave untouched.
+            const instr = currentQ.instruction || '';
+            const isMondai1 = instr.includes('問題1') && currentQ.sectionType === 'vocabulary-kanji';
+            const isMondai2 = instr.includes('問題2') && currentQ.sectionType === 'vocabulary-kanji';
+            if (isMondai1 || isMondai2) {
               html = html
-                .replace(/<rp[^>]*>[\s\S]*?<\/rp>/gi, '')   // strip <rp>（</rp> fallback parens
-                .replace(/<rt[^>]*>[\s\S]*?<\/rt>/gi, '')    // strip <rt ...>reading</rt>
-                .replace(/<\/?ruby[^>]*>/gi, '');             // strip <ruby ...> and </ruby>
+                .replace(/<rp[^>]*>[\s\S]*?<\/rp>/gi, '')
+                .replace(/<rt[^>]*>[\s\S]*?<\/rt>/gi, '')
+                .replace(/<\/?ruby[^>]*>/gi, '');
             }
             return html.replace(/ (A「|B「|A：|B：|男：|女：|男の人：|女の人：|店員：|客：|Ａ「|Ｂ「|Ａ：|Ｂ：)/g, '<br />$1');
           })() }}></h2>
         </div>
 
         <div className="space-y-3 mb-8">
-          {currentQ.options.map((opt, optIdx) => (
+          {currentQ.options.map((opt, optIdx) => {
+            // 問題2 only: options contain <ruby>kanji<rt>reading</rt></ruby> on the correct kanji option.
+            // Strip ruby so only the kanji shows (no furigana hint). 問題1 options are plain hiragana — no ruby to strip.
+            const instr = currentQ.instruction || '';
+            const isMondai2 = instr.includes('問題2') && currentQ.sectionType === 'vocabulary-kanji';
+            const displayOpt = isMondai2
+              ? opt
+                  .replace(/<rp[^>]*>[\s\S]*?<\/rp>/gi, '')
+                  .replace(/<rt[^>]*>[\s\S]*?<\/rt>/gi, '')
+                  .replace(/<\/?ruby[^>]*>/gi, '')
+              : opt;
+            return (
             <OptionButton 
               key={optIdx}
-              text={opt}
+              text={displayOpt}
               index={optIdx}
               isSelected={selectedIdx === optIdx}
               isCorrect={currentQ.correctIndex !== -1 ? currentQ.correctIndex === optIdx : null}
@@ -220,7 +235,8 @@ const PracticeSetQuizPage = () => {
               onClick={() => handleOptionSelect(currentQ.id, optIdx)}
               disabled={feedbackMode === 'Immediate' && selectedIdx !== undefined}
             />
-          ))}
+            );
+          })}
         </div>
 
         <div className="flex justify-between items-center pt-4 border-t border-[var(--color-border)] mt-8">
