@@ -196,17 +196,19 @@ const PracticeSetQuizPage = () => {
             )}
           <h2 className="text-xl md:text-2xl font-medium japanese-text leading-relaxed" dangerouslySetInnerHTML={{ __html: (() => {
             let html = currentQ.questionText;
-            // 問題1 (reading quiz): question has <ruby>kanji<rt>reading</rt></ruby> — the rt IS the answer, strip it.
-            // 問題2 (kanji writing): question has ruby on the hiragana word — strip it too.
+            // 問題1 (reading quiz): question has <ruby>kanji<rt>reading</rt></ruby> — the rt IS the answer, strip it to show kanji.
+            // 問題2 (kanji writing): question has <ruby>kanji<rt>reading</rt></ruby> — we need to show the reading (rt) and hide the kanji!
             // 問題3/4/5 and grammar-reading: no ruby, leave untouched.
             const instr = currentQ.instruction || '';
             const isMondai1 = instr.includes('問題1') && currentQ.sectionType === 'vocabulary-kanji';
             const isMondai2 = instr.includes('問題2') && currentQ.sectionType === 'vocabulary-kanji';
-            if (isMondai1 || isMondai2) {
+            if (isMondai1) {
               html = html
                 .replace(/<rp[^>]*>[\s\S]*?<\/rp>/gi, '')
                 .replace(/<rt[^>]*>[\s\S]*?<\/rt>/gi, '')
                 .replace(/<\/?ruby[^>]*>/gi, '');
+            } else if (isMondai2) {
+              html = html.replace(/<ruby[^>]*>[\s\S]*?<rt[^>]*>([\s\S]*?)<\/rt>[\s\S]*?<\/ruby>/gi, '$1');
             }
             return html.replace(/ (A「|B「|A：|B：|男：|女：|男の人：|女の人：|店員：|客：|Ａ「|Ｂ「|Ａ：|Ｂ：)/g, '<br />$1');
           })() }}></h2>
