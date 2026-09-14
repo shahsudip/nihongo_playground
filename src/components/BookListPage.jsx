@@ -123,7 +123,7 @@ const BookListPage = () => {
           </div>
           <div className="book-card-details">
             <h2 className="book-card-title">Chokuzen Taisaku JLPT N3 (15 Sets)</h2>
-            <p className="book-card-description">15 sets of comprehensive JLPT N3 practice covering Kanji, Vocabulary, and Grammar with premium layout.</p>
+            <p className="book-card-description">Intensive last-minute preparation for JLPT N3. Perfect your Kanji, Vocabulary, and Grammar with 15 focused mock test sets right before exam day.</p>
             
             <div className="book-progress-wrapper" style={{ marginTop: 'auto' }}>
               <div className="book-progress-info">
