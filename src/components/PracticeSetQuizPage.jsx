@@ -196,9 +196,13 @@ const PracticeSetQuizPage = () => {
             )}
           <h2 className="text-xl md:text-2xl font-medium japanese-text leading-relaxed" dangerouslySetInnerHTML={{ __html: (() => {
             let html = currentQ.questionText;
-            // For vocabulary/kanji questions, strip furigana (rt tags) to prevent leaking the reading answer
+            // For vocabulary/kanji questions, strip furigana to prevent leaking the reading answer.
+            // Use robust regexes: handle attributes on tags, <rp> tags, and any ruby variant.
             if (currentQ.sectionType === 'vocabulary-kanji') {
-              html = html.replace(/<rt>[^<]*<\/rt>/g, '').replace(/<\/?ruby>/g, '');
+              html = html
+                .replace(/<rp[^>]*>[\s\S]*?<\/rp>/gi, '')   // strip <rp>（</rp> fallback parens
+                .replace(/<rt[^>]*>[\s\S]*?<\/rt>/gi, '')    // strip <rt ...>reading</rt>
+                .replace(/<\/?ruby[^>]*>/gi, '');             // strip <ruby ...> and </ruby>
             }
             return html.replace(/ (A「|B「|A：|B：|男：|女：|男の人：|女の人：|店員：|客：|Ａ「|Ｂ「|Ａ：|Ｂ：)/g, '<br />$1');
           })() }}></h2>
