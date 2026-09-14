@@ -1,0 +1,300 @@
+[set-1] Q1 (mondai1-reading)
+  Kanji: 並んでいる
+  Question: りんごが箱の中に並んでいるならんで。
+  Options: 0: つんで | 1: ならんで | 2: つつんで | 3: しずんで
+  Current correctIndex: 1 → "ならんで"
+
+[set-1] Q2 (mondai1-reading)
+  Kanji: 無事
+  Question: あの人が無事ぶじで、本当に安心しました。
+  Options: 0: むし | 1: むじ | 2: ぶし | 3: ぶじ
+  Current correctIndex: 3 → "ぶじ"
+
+[set-1] Q3 (mondai1-reading)
+  Kanji: 同時に
+  Question: 2つの事件が同時にとうき起こった。
+  Options: 0: とうじ | 1: どうじ | 2: とうき | 3: どうき
+  Current correctIndex: 2 → "とうき"
+
+[set-1] Q4 (mondai1-reading)
+  Kanji: 似ています
+  Question: 彼は、私の父に似ていますみて。
+  Options: 0: にて | 1: みて | 2: して | 3: きて
+  Current correctIndex: 1 → "みて"
+
+[set-1] Q5 (mondai1-reading)
+  Kanji: 券
+  Question: 友だちからコンサートの券げんをもらいました。
+  Options: 0: かん | 1: がん | 2: けん | 3: げん
+  Current correctIndex: 3 → "げん"
+
+[set-1] Q6 (mondai1-reading)
+  Kanji: 素直
+  Question: 彼女は素直そっちょくな性格だ。
+  Options: 0: そっちょく | 1: しょうじき | 2: すなお | 3: まっすぐ
+  Current correctIndex: 0 → "そっちょく"
+
+[set-1] Q7 (mondai1-reading)
+  Kanji: 机
+  Question: ここに机はこを持ってきてください。
+  Options: 0: だい | 1: つくえ | 2: たな | 3: はこ
+  Current correctIndex: 3 → "はこ"
+
+[set-1] Q8 (mondai1-reading)
+  Kanji: 営業
+  Question: この店は、1年中休まないで営業えいぎょうしている。
+  Options: 0: こうぎょう | 1: えいぎょう | 2: そうぎょう | 3: かいぎょう
+  Current correctIndex: 1 → "えいぎょう"
+
+[set-1] Q9 (mondai2-kanji)
+  Kanji: 幸福
+  Question: 彼女は、幸福こうふくに生活していた。
+  Options: 0: 幸復 | 1: 広復 | 2: <ruby>幸福<rt>こうふく</rt></ruby> | 3: 広福
+  Current correctIndex: 2 → "<ruby>幸福<rt>こうふく</rt></ruby>"
+
+[set-1] Q10 (mondai2-kanji)
+  Kanji: 改善
+  Question: 生活を改善かいぜんする。
+  Options: 0: 改正 | 1: 改造 | 2: 改良 | 3: <ruby>改善<rt>かいぜん</rt></ruby>
+  Current correctIndex: 3 → "<ruby>改善<rt>かいぜん</rt></ruby>"
+
+[set-1] Q11 (mondai2-kanji)
+  Kanji: 添って
+  Question: 大きな川に添ってそって歩く。
+  Options: 0: <ruby>添って<rt>そって</rt></ruby> | 1: 沢って | 2: 沿って | 3: 沼って
+  Current correctIndex: 0 → "<ruby>添って<rt>そって</rt></ruby>"
+
+[set-1] Q12 (mondai2-kanji)
+  Kanji: 課す
+  Question: 家を買いたい人に、金を課すかす。
+  Options: 0: 買す | 1: 貸す | 2: 借す | 3: <ruby>課す<rt>かす</rt></ruby>
+  Current correctIndex: 3 → "<ruby>課す<rt>かす</rt></ruby>"
+
+[set-1] Q13 (mondai2-kanji)
+  Kanji: 機回
+  Question: これを機回きかいに、たばこをやめようと思う。
+  Options: 0: 期回 | 1: 期会 | 2: <ruby>機回<rt>きかい</rt></ruby> | 3: 機会
+  Current correctIndex: 2 → "<ruby>機回<rt>きかい</rt></ruby>"
+
+[set-1] Q14 (mondai2-kanji)
+  Kanji: 物毎
+  Question: 物毎ものごとを深く考えることは大切だ。
+  Options: 0: 物事 | 1: 物言 | 2: 物語 | 3: <ruby>物毎<rt>ものごと</rt></ruby>
+  Current correctIndex: 3 → "<ruby>物毎<rt>ものごと</rt></ruby>"
+
+[set-2] Q59 (mondai1-reading)
+  Kanji: 咲いています
+  Question: 家の前に、きれいな花が咲いていますまいて。
+  Options: 0: まいて | 1: おいて | 2: ついて | 3: さいて
+  Current correctIndex: 0 → "まいて"
+
+[set-2] Q60 (mondai1-reading)
+  Kanji: 普通
+  Question: 父は、普通ぶつうの会社員です。
+  Options: 0: ふつう | 1: ふうつう | 2: ぶつう | 3: ふうづう
+  Current correctIndex: 2 → "ぶつう"
+
+[set-2] Q61 (mondai1-reading)
+  Kanji: 借金
+  Question: 借金しゃくきんして車を買った。
+  Options: 0: かりきん | 1: かしきん | 2: しゃっきん | 3: しゃくきん
+  Current correctIndex: 3 → "しゃくきん"
+
+[set-2] Q62 (mondai1-reading)
+  Kanji: 残っている
+  Question: 部屋に何人か残っているかえって。
+  Options: 0: あまって | 1: かえって | 2: そろって | 3: のこって
+  Current correctIndex: 1 → "かえって"
+
+[set-2] Q63 (mondai1-reading)
+  Kanji: 胃
+  Question: 仕事のことを考えると、胃ちょうが痛い。
+  Options: 0: おなか | 1: い | 2: ちょう | 3: はら
+  Current correctIndex: 2 → "ちょう"
+
+[set-2] Q64 (mondai1-reading)
+  Kanji: 帰宅
+  Question: アルバイトで遅くなり、午前1時に帰宅きたくしました。
+  Options: 0: きてく | 1: きでく | 2: きたく | 3: きだく
+  Current correctIndex: 2 → "きたく"
+
+[set-2] Q65 (mondai1-reading)
+  Kanji: 乱暴
+  Question: 私は、乱暴おうぼうな人はきらいです。
+  Options: 0: ほうりょく | 1: おうぼう | 2: らんぼう | 3: らんざつ
+  Current correctIndex: 1 → "おうぼう"
+
+[set-2] Q66 (mondai1-reading)
+  Kanji: 登場
+  Question: 有名な俳優がステージに登場とじょうした。
+  Options: 0: とじょう | 1: とうじょう | 2: とば | 3: とうば
+  Current correctIndex: 0 → "とじょう"
+
+[set-2] Q67 (mondai2-kanji)
+  Kanji: 時由
+  Question: 時由じゆうに生きたいと思っている。
+  Options: 0: 自由 | 1: <ruby>時由<rt>じゆう</rt></ruby> | 2: 治由 | 3: 事由
+  Current correctIndex: 1 → "<ruby>時由<rt>じゆう</rt></ruby>"
+
+[set-2] Q68 (mondai2-kanji)
+  Kanji: 感激
+  Question: その映画を見て、深く感激かんどうした。
+  Options: 0: 感情 | 1: 感動 | 2: 感働 | 3: <ruby>感激<rt>かんどう</rt></ruby>
+  Current correctIndex: 3 → "<ruby>感激<rt>かんどう</rt></ruby>"
+
+[set-2] Q69 (mondai2-kanji)
+  Kanji: 退げて
+  Question: 敵から退げてにげて、ここまで来た。
+  Options: 0: 込げて | 1: <ruby>退げて<rt>にげて</rt></ruby> | 2: 迫げて | 3: 逃げて
+  Current correctIndex: 1 → "<ruby>退げて<rt>にげて</rt></ruby>"
+
+[set-2] Q70 (mondai2-kanji)
+  Kanji: 元める
+  Question: できるだけ早い返事を元めるもとめる。
+  Options: 0: 許める | 1: 求める | 2: <ruby>元める<rt>もとめる</rt></ruby> | 3: 基める
+  Current correctIndex: 2 → "<ruby>元める<rt>もとめる</rt></ruby>"
+
+[set-2] Q71 (mondai2-kanji)
+  Kanji: 複雑
+  Question: 地図が複雑ふくざつすぎて、よくわからない。
+  Options: 0: 乱雑 | 1: 混雑 | 2: <ruby>複雑<rt>ふくざつ</rt></ruby> | 3: 服雑
+  Current correctIndex: 2 → "<ruby>複雑<rt>ふくざつ</rt></ruby>"
+
+[set-2] Q72 (mondai2-kanji)
+  Kanji: 文口
+  Question: 彼のやり方について、文口もんくを言う。
+  Options: 0: 文苦 | 1: <ruby>文口<rt>もんく</rt></ruby> | 2: 文句 | 3: 文言
+  Current correctIndex: 1 → "<ruby>文口<rt>もんく</rt></ruby>"
+
+[set-3] Q117 (mondai1-reading)
+  Kanji: 散って
+  Question: 桜の花は、もう散ってまってしまった。
+  Options: 0: いって | 1: まって | 2: さって | 3: ちって
+  Current correctIndex: 1 → "まって"
+
+[set-3] Q118 (mondai1-reading)
+  Kanji: 満足
+  Question: 今の生活に満足まんぞぐですか。
+  Options: 0: まんそく | 1: まんぞく | 2: まんそぐ | 3: まんぞぐ
+  Current correctIndex: 3 → "まんぞぐ"
+
+[set-3] Q119 (mondai1-reading)
+  Kanji: 急行
+  Question: この駅から急行きゅうこうに乗るつもりだ。
+  Options: 0: くこう | 1: くうこう | 2: きゅこう | 3: きゅうこう
+  Current correctIndex: 3 → "きゅうこう"
+
+[set-3] Q120 (mondai1-reading)
+  Kanji: 意識
+  Question: 彼女は川に落ち、意識ちしきがなくなった。
+  Options: 0: ちしき | 1: にんしき | 2: けんしき | 3: いしき
+  Current correctIndex: 0 → "ちしき"
+
+[set-3] Q121 (mondai1-reading)
+  Kanji: 差
+  Question: あの人と私の能力の差さいは大きい。
+  Options: 0: さ | 1: ざ | 2: さい | 3: ざい
+  Current correctIndex: 2 → "さい"
+
+[set-3] Q122 (mondai1-reading)
+  Kanji: 広告
+  Question: 新聞に広告こうくをのせる。
+  Options: 0: ここく | 1: こうく | 2: こうこく | 3: こうくう
+  Current correctIndex: 1 → "こうく"
+
+[set-3] Q123 (mondai1-reading)
+  Kanji: 汗
+  Question: 運動をして、汗なみだをたくさんかいた。
+  Options: 0: なみだ | 1: あせ | 2: いき | 3: みず
+  Current correctIndex: 0 → "なみだ"
+
+[set-3] Q124 (mondai1-reading)
+  Kanji: 禁止
+  Question: 夜中の外出を禁止ぎんしする。
+  Options: 0: きんし | 1: きんじ | 2: ぎんし | 3: ぎんじ
+  Current correctIndex: 2 → "ぎんし"
+
+[set-3] Q125 (mondai2-kanji)
+  Kanji: 広富
+  Question: この国は、天然資源が広富ほうふだ。
+  Options: 0: 盛富 | 1: 宝富 | 2: 豊富 | 3: <ruby>広富<rt>ほうふ</rt></ruby>
+  Current correctIndex: 3 → "<ruby>広富<rt>ほうふ</rt></ruby>"
+
+[set-3] Q126 (mondai2-kanji)
+  Kanji: 明記
+  Question: テストの前に、単語を明記あんきした。
+  Options: 0: 案記 | 1: <ruby>明記<rt>あんき</rt></ruby> | 2: 安記 | 3: 暗記
+  Current correctIndex: 1 → "<ruby>明記<rt>あんき</rt></ruby>"
+
+[set-3] Q127 (mondai2-kanji)
+  Kanji: 準えて
+  Question: 地震に準えてそなえて、水と食べ物を買う。
+  Options: 0: <ruby>準えて<rt>そなえて</rt></ruby> | 1: 備えて | 2: 供えて | 3: 背えて
+  Current correctIndex: 0 → "<ruby>準えて<rt>そなえて</rt></ruby>"
+
+[set-3] Q128 (mondai2-kanji)
+  Kanji: 矢う
+  Question: 大きなミスをして、仕事を矢ううしなうことになった。
+  Options: 0: 失う | 1: 夫う | 2: <ruby>矢う<rt>うしなう</rt></ruby> | 3: 央う
+  Current correctIndex: 2 → "<ruby>矢う<rt>うしなう</rt></ruby>"
+
+[set-3] Q129 (mondai2-kanji)
+  Kanji: 興味
+  Question: 日本のマンガに興味きょうみがあります。
+  Options: 0: 教味 | 1: 教見 | 2: <ruby>興味<rt>きょうみ</rt></ruby> | 3: 興見
+  Current correctIndex: 2 → "<ruby>興味<rt>きょうみ</rt></ruby>"
+
+[set-3] Q130 (mondai2-kanji)
+  Kanji: 婦夫
+  Question: 結婚して、2人は婦夫ふうふになった。
+  Options: 0: 夫妻 | 1: 妻夫 | 2: 夫婦 | 3: <ruby>婦夫<rt>ふうふ</rt></ruby>
+  Current correctIndex: 3 → "<ruby>婦夫<rt>ふうふ</rt></ruby>"
+
+[set-4] Q175 (mondai1-reading)
+  Kanji: 。
+  Question: 荷物は、もう届いています。とどいて
+  Options: 0: あいて | 1: ほどいて | 2: ついて | 3: とどいて
+  Current correctIndex: 3 → "とどいて"
+
+[set-4] Q176 (mondai1-reading)
+  Kanji: 運動は、体によい。
+  Question: 適度な運動は、体によい。てきど
+  Options: 0: てきと | 1: てきとう | 2: てきど | 3: てきどう
+  Current correctIndex: 2 → "てきど"
+
+[set-4] Q177 (mondai1-reading)
+  Kanji: しています。
+  Question: 部長は今、大阪へ出張しています。しゅっちょう
+  Options: 0: しゅちょう | 1: しゅっちょう | 2: でちょう | 3: でっちょう
+  Current correctIndex: 1 → "しゅっちょう"
+
+[set-4] Q178 (mondai1-reading)
+  Kanji: 。
+  Question: 両親が子どもたちを養う。やしなう
+  Options: 0: さそう | 1: やしなう | 2: ととのう | 3: うたがう
+  Current correctIndex: 1 → "やしなう"
+
+[set-4] Q179 (mondai1-reading)
+  Kanji: がなくて、好きな人に話しかけられない。
+  Question: 勇気がなくて、好きな人に話しかけられない。ゆうき
+  Options: 0: よき | 1: ようき | 2: ゆき | 3: ゆうき
+  Current correctIndex: 3 → "ゆうき"
+
+[set-4] Q180 (mondai1-reading)
+  Kanji: した。
+  Question: 空港で日本円をユーロに両替した。りょうがえ
+  Options: 0: りょかえ | 1: りょがえ | 2: りょうかえ | 3: りょうがえ
+  Current correctIndex: 3 → "りょうがえ"
+
+[set-4] Q181 (mondai1-reading)
+  Kanji: が見えます。
+  Question: 遠くに白い煙が見えます。けむり
+  Options: 0: くも | 1: きり | 2: けむり | 3: はい
+  Current correctIndex: 2 → "けむり"
+
+[set-4] Q182 (mondai1-reading)
+  Kanji: した。
+  Question: 家の前で車が停止した。ていし
+  Options: 0: ていし | 1: てんし | 2: ていじ | 3: てんじ
+  Current correctIndex: 0 → "ていし"
+

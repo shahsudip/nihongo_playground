@@ -50,6 +50,11 @@ const PracticeSetsListPage = lazy(() => import('./components/PracticeSetsListPag
 const PracticeSetDetailsPage = lazy(() => import('./components/PracticeSetDetailsPage.jsx'));
 const PracticeSetQuizPage = lazy(() => import('./components/PracticeSetQuizPage.jsx'));
 
+// N4 Practice Sets (Chokuzen Taisaku)
+const N4PracticeSetsListPage = lazy(() => import('./components/N4PracticeSetsListPage.jsx'));
+const N4PracticeSetDetailsPage = lazy(() => import('./components/N4PracticeSetDetailsPage.jsx'));
+const N4PracticeSetQuizPage = lazy(() => import('./components/N4PracticeSetQuizPage.jsx'));
+
 const KanjiListPage = lazy(() => import('./components/KanjiListPage.jsx'));
 const CustomKanjiDrillQuiz = lazy(() => import('./components/CustomKanjiDrillQuiz.jsx'));
 
@@ -211,6 +216,38 @@ export default function App() {
           <Route
             path="/practice-sets/:setId/:sectionId"
             element={<ProtectedRoute><PracticeSetQuizPage /></ProtectedRoute>}
+          />
+
+          {/* --- N4 PRACTICE SETS (CHOKUZEN TAISAKU) ROUTES --- */}
+          <Route
+            path="/chokuzen-taisaku-n4"
+            element={<ProtectedRoute><N4PracticeSetsListPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/chokuzen-taisaku-n4/:setId"
+            element={<ProtectedRoute><N4PracticeSetQuizPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/chokuzen-taisaku-n4/:setId/:sectionId"
+            element={<ProtectedRoute><N4PracticeSetQuizPage /></ProtectedRoute>}
+          />
+
+          {/* Direct aliases for /n4-practice-sets and /books/chokuzen-taisaku-n4 */}
+          <Route
+            path="/n4-practice-sets"
+            element={<Navigate to="/chokuzen-taisaku-n4" replace />}
+          />
+          <Route
+            path="/n4-practice-sets/:setId"
+            element={<ProtectedRoute><N4PracticeSetDetailsPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/n4-practice-sets/:setId/:sectionId"
+            element={<ProtectedRoute><N4PracticeSetQuizPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/books/chokuzen-taisaku-n4"
+            element={<Navigate to="/chokuzen-taisaku-n4" replace />}
           />
 
         </Route>

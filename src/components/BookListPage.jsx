@@ -82,6 +82,7 @@ const BookListPage = () => {
 
   const filteredBooks = books.filter(b => activeLevel === 'All' || b.level === activeLevel);
   const showStaticN3 = activeLevel === 'All' || activeLevel === 'N3';
+  const showStaticN4 = activeLevel === 'All' || activeLevel === 'N4-N5';
 
   return (
     <div className="books-list-container">
@@ -109,7 +110,7 @@ const BookListPage = () => {
       {error && <div className="error-message">{error}</div>}
 
       <div className="books-grid">
-        {/* Static Card for JLPT Practice Sets */}
+        {/* Static Card for JLPT N3 Practice Sets */}
         {showStaticN3 && (
         <div className="book-card" style={{ borderColor: 'var(--color-primary, #059669)', borderWidth: '2px' }}>
           <div className="book-cover-artwork" style={{ padding: 0, overflow: 'hidden', background: '#0f172a' }}>
@@ -134,6 +135,38 @@ const BookListPage = () => {
 
             <div className="book-card-footer">
               <Link to="/practice-sets" className="view-chapters-button">
+                Start Practice &rarr;
+              </Link>
+            </div>
+          </div>
+        </div>
+        )}
+
+        {/* Static Card for JLPT N4 Practice Sets */}
+        {showStaticN4 && (
+        <div className="book-card" style={{ borderColor: 'rgba(16, 185, 129, 0.4)', borderWidth: '2px' }}>
+          <div className="book-cover-artwork" style={{ padding: 0, overflow: 'hidden', background: '#0f172a' }}>
+            <img 
+              src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/n4_chokuzen_taisaku_cover.jpg`} 
+              alt="Chokuzen Taisaku JLPT N4 (10 Sets)" 
+              loading="lazy"
+              decoding="async"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', objectPosition: 'top' }} 
+            />
+          </div>
+          <div className="book-card-details">
+            <h2 className="book-card-title">Chokuzen Taisaku JLPT N4 (10 Sets)</h2>
+            <p className="book-card-description">Intensive last-minute preparation for JLPT N4. Perfect your Kanji, Vocabulary, Grammar, and Short Reading with 10 full official-style mock sets.</p>
+            
+            <div className="book-progress-wrapper" style={{ marginTop: 'auto' }}>
+              <div className="book-progress-info">
+                <span>10 Full Sets</span>
+                <span>590 Questions</span>
+              </div>
+            </div>
+
+            <div className="book-card-footer">
+              <Link to="/chokuzen-taisaku-n4" className="view-chapters-button" style={{ background: 'linear-gradient(135deg, #059669, #10b981)' }}>
                 Start Practice &rarr;
               </Link>
             </div>

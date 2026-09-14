@@ -1,0 +1,3334 @@
+[
+  {
+    "set": "set-1",
+    "qId": 1,
+    "qType": "mondai1-reading",
+    "kanjiWord": "並んでいる",
+    "rtText": "ならんで",
+    "correctIndex": 1,
+    "currentCorrectText": "ならんで",
+    "options": [
+      "0: つんで",
+      "1: ならんで",
+      "2: つつんで",
+      "3: しずんで"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "りんごが箱の中に並んでいるならんで。"
+  },
+  {
+    "set": "set-1",
+    "qId": 2,
+    "qType": "mondai1-reading",
+    "kanjiWord": "無事",
+    "rtText": "ぶじ",
+    "correctIndex": 3,
+    "currentCorrectText": "ぶじ",
+    "options": [
+      "0: むし",
+      "1: むじ",
+      "2: ぶし",
+      "3: ぶじ"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "あの人が無事ぶじで、本当に安心しました。"
+  },
+  {
+    "set": "set-1",
+    "qId": 3,
+    "qType": "mondai1-reading",
+    "kanjiWord": "同時に",
+    "rtText": "とうき",
+    "correctIndex": 2,
+    "currentCorrectText": "とうき",
+    "options": [
+      "0: とうじ",
+      "1: どうじ",
+      "2: とうき",
+      "3: どうき"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "2つの事件が同時にとうき起こった。"
+  },
+  {
+    "set": "set-1",
+    "qId": 4,
+    "qType": "mondai1-reading",
+    "kanjiWord": "似ています",
+    "rtText": "みて",
+    "correctIndex": 1,
+    "currentCorrectText": "みて",
+    "options": [
+      "0: にて",
+      "1: みて",
+      "2: して",
+      "3: きて"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "彼は、私の父に似ていますみて。"
+  },
+  {
+    "set": "set-1",
+    "qId": 5,
+    "qType": "mondai1-reading",
+    "kanjiWord": "券",
+    "rtText": "げん",
+    "correctIndex": 3,
+    "currentCorrectText": "げん",
+    "options": [
+      "0: かん",
+      "1: がん",
+      "2: けん",
+      "3: げん"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "友だちからコンサートの券げんをもらいました。"
+  },
+  {
+    "set": "set-1",
+    "qId": 6,
+    "qType": "mondai1-reading",
+    "kanjiWord": "素直",
+    "rtText": "そっちょく",
+    "correctIndex": 0,
+    "currentCorrectText": "そっちょく",
+    "options": [
+      "0: そっちょく",
+      "1: しょうじき",
+      "2: すなお",
+      "3: まっすぐ"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "彼女は素直そっちょくな性格だ。"
+  },
+  {
+    "set": "set-1",
+    "qId": 7,
+    "qType": "mondai1-reading",
+    "kanjiWord": "机",
+    "rtText": "はこ",
+    "correctIndex": 3,
+    "currentCorrectText": "はこ",
+    "options": [
+      "0: だい",
+      "1: つくえ",
+      "2: たな",
+      "3: はこ"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "ここに机はこを持ってきてください。"
+  },
+  {
+    "set": "set-1",
+    "qId": 8,
+    "qType": "mondai1-reading",
+    "kanjiWord": "営業",
+    "rtText": "えいぎょう",
+    "correctIndex": 1,
+    "currentCorrectText": "えいぎょう",
+    "options": [
+      "0: こうぎょう",
+      "1: えいぎょう",
+      "2: そうぎょう",
+      "3: かいぎょう"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "この店は、1年中休まないで営業えいぎょうしている。"
+  },
+  {
+    "set": "set-1",
+    "qId": 9,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "幸福",
+    "rtText": "こうふく",
+    "correctIndex": 2,
+    "currentCorrectText": "<ruby>幸福<rt>こうふく</rt></ruby>",
+    "options": [
+      "0: 幸復",
+      "1: 広復",
+      "2: <ruby>幸福<rt>こうふく</rt></ruby>",
+      "3: 広福"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "彼女は、幸福こうふくに生活していた。"
+  },
+  {
+    "set": "set-1",
+    "qId": 10,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "改善",
+    "rtText": "かいぜん",
+    "correctIndex": 3,
+    "currentCorrectText": "<ruby>改善<rt>かいぜん</rt></ruby>",
+    "options": [
+      "0: 改正",
+      "1: 改造",
+      "2: 改良",
+      "3: <ruby>改善<rt>かいぜん</rt></ruby>"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "生活を改善かいぜんする。"
+  },
+  {
+    "set": "set-1",
+    "qId": 11,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "添って",
+    "rtText": "そって",
+    "correctIndex": 0,
+    "currentCorrectText": "<ruby>添って<rt>そって</rt></ruby>",
+    "options": [
+      "0: <ruby>添って<rt>そって</rt></ruby>",
+      "1: 沢って",
+      "2: 沿って",
+      "3: 沼って"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "大きな川に添ってそって歩く。"
+  },
+  {
+    "set": "set-1",
+    "qId": 12,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "課す",
+    "rtText": "かす",
+    "correctIndex": 3,
+    "currentCorrectText": "<ruby>課す<rt>かす</rt></ruby>",
+    "options": [
+      "0: 買す",
+      "1: 貸す",
+      "2: 借す",
+      "3: <ruby>課す<rt>かす</rt></ruby>"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "家を買いたい人に、金を課すかす。"
+  },
+  {
+    "set": "set-1",
+    "qId": 13,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "機回",
+    "rtText": "きかい",
+    "correctIndex": 2,
+    "currentCorrectText": "<ruby>機回<rt>きかい</rt></ruby>",
+    "options": [
+      "0: 期回",
+      "1: 期会",
+      "2: <ruby>機回<rt>きかい</rt></ruby>",
+      "3: 機会"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "これを機回きかいに、たばこをやめようと思う。"
+  },
+  {
+    "set": "set-1",
+    "qId": 14,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "物毎",
+    "rtText": "ものごと",
+    "correctIndex": 3,
+    "currentCorrectText": "<ruby>物毎<rt>ものごと</rt></ruby>",
+    "options": [
+      "0: 物事",
+      "1: 物言",
+      "2: 物語",
+      "3: <ruby>物毎<rt>ものごと</rt></ruby>"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "物毎ものごとを深く考えることは大切だ。"
+  },
+  {
+    "set": "set-2",
+    "qId": 59,
+    "qType": "mondai1-reading",
+    "kanjiWord": "咲いています",
+    "rtText": "まいて",
+    "correctIndex": 0,
+    "currentCorrectText": "まいて",
+    "options": [
+      "0: まいて",
+      "1: おいて",
+      "2: ついて",
+      "3: さいて"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "家の前に、きれいな花が咲いていますまいて。"
+  },
+  {
+    "set": "set-2",
+    "qId": 60,
+    "qType": "mondai1-reading",
+    "kanjiWord": "普通",
+    "rtText": "ぶつう",
+    "correctIndex": 2,
+    "currentCorrectText": "ぶつう",
+    "options": [
+      "0: ふつう",
+      "1: ふうつう",
+      "2: ぶつう",
+      "3: ふうづう"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "父は、普通ぶつうの会社員です。"
+  },
+  {
+    "set": "set-2",
+    "qId": 61,
+    "qType": "mondai1-reading",
+    "kanjiWord": "借金",
+    "rtText": "しゃくきん",
+    "correctIndex": 3,
+    "currentCorrectText": "しゃくきん",
+    "options": [
+      "0: かりきん",
+      "1: かしきん",
+      "2: しゃっきん",
+      "3: しゃくきん"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "借金しゃくきんして車を買った。"
+  },
+  {
+    "set": "set-2",
+    "qId": 62,
+    "qType": "mondai1-reading",
+    "kanjiWord": "残っている",
+    "rtText": "かえって",
+    "correctIndex": 1,
+    "currentCorrectText": "かえって",
+    "options": [
+      "0: あまって",
+      "1: かえって",
+      "2: そろって",
+      "3: のこって"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "部屋に何人か残っているかえって。"
+  },
+  {
+    "set": "set-2",
+    "qId": 63,
+    "qType": "mondai1-reading",
+    "kanjiWord": "胃",
+    "rtText": "ちょう",
+    "correctIndex": 2,
+    "currentCorrectText": "ちょう",
+    "options": [
+      "0: おなか",
+      "1: い",
+      "2: ちょう",
+      "3: はら"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "仕事のことを考えると、胃ちょうが痛い。"
+  },
+  {
+    "set": "set-2",
+    "qId": 64,
+    "qType": "mondai1-reading",
+    "kanjiWord": "帰宅",
+    "rtText": "きたく",
+    "correctIndex": 2,
+    "currentCorrectText": "きたく",
+    "options": [
+      "0: きてく",
+      "1: きでく",
+      "2: きたく",
+      "3: きだく"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "アルバイトで遅くなり、午前1時に帰宅きたくしました。"
+  },
+  {
+    "set": "set-2",
+    "qId": 65,
+    "qType": "mondai1-reading",
+    "kanjiWord": "乱暴",
+    "rtText": "おうぼう",
+    "correctIndex": 1,
+    "currentCorrectText": "おうぼう",
+    "options": [
+      "0: ほうりょく",
+      "1: おうぼう",
+      "2: らんぼう",
+      "3: らんざつ"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "私は、乱暴おうぼうな人はきらいです。"
+  },
+  {
+    "set": "set-2",
+    "qId": 66,
+    "qType": "mondai1-reading",
+    "kanjiWord": "登場",
+    "rtText": "とじょう",
+    "correctIndex": 0,
+    "currentCorrectText": "とじょう",
+    "options": [
+      "0: とじょう",
+      "1: とうじょう",
+      "2: とば",
+      "3: とうば"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "有名な俳優がステージに登場とじょうした。"
+  },
+  {
+    "set": "set-2",
+    "qId": 67,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "時由",
+    "rtText": "じゆう",
+    "correctIndex": 1,
+    "currentCorrectText": "<ruby>時由<rt>じゆう</rt></ruby>",
+    "options": [
+      "0: 自由",
+      "1: <ruby>時由<rt>じゆう</rt></ruby>",
+      "2: 治由",
+      "3: 事由"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "時由じゆうに生きたいと思っている。"
+  },
+  {
+    "set": "set-2",
+    "qId": 68,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "感激",
+    "rtText": "かんどう",
+    "correctIndex": 3,
+    "currentCorrectText": "<ruby>感激<rt>かんどう</rt></ruby>",
+    "options": [
+      "0: 感情",
+      "1: 感動",
+      "2: 感働",
+      "3: <ruby>感激<rt>かんどう</rt></ruby>"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "その映画を見て、深く感激かんどうした。"
+  },
+  {
+    "set": "set-2",
+    "qId": 69,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "退げて",
+    "rtText": "にげて",
+    "correctIndex": 1,
+    "currentCorrectText": "<ruby>退げて<rt>にげて</rt></ruby>",
+    "options": [
+      "0: 込げて",
+      "1: <ruby>退げて<rt>にげて</rt></ruby>",
+      "2: 迫げて",
+      "3: 逃げて"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "敵から退げてにげて、ここまで来た。"
+  },
+  {
+    "set": "set-2",
+    "qId": 70,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "元める",
+    "rtText": "もとめる",
+    "correctIndex": 2,
+    "currentCorrectText": "<ruby>元める<rt>もとめる</rt></ruby>",
+    "options": [
+      "0: 許める",
+      "1: 求める",
+      "2: <ruby>元める<rt>もとめる</rt></ruby>",
+      "3: 基める"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "できるだけ早い返事を元めるもとめる。"
+  },
+  {
+    "set": "set-2",
+    "qId": 71,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "複雑",
+    "rtText": "ふくざつ",
+    "correctIndex": 2,
+    "currentCorrectText": "<ruby>複雑<rt>ふくざつ</rt></ruby>",
+    "options": [
+      "0: 乱雑",
+      "1: 混雑",
+      "2: <ruby>複雑<rt>ふくざつ</rt></ruby>",
+      "3: 服雑"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "地図が複雑ふくざつすぎて、よくわからない。"
+  },
+  {
+    "set": "set-2",
+    "qId": 72,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "文口",
+    "rtText": "もんく",
+    "correctIndex": 1,
+    "currentCorrectText": "<ruby>文口<rt>もんく</rt></ruby>",
+    "options": [
+      "0: 文苦",
+      "1: <ruby>文口<rt>もんく</rt></ruby>",
+      "2: 文句",
+      "3: 文言"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "彼のやり方について、文口もんくを言う。"
+  },
+  {
+    "set": "set-3",
+    "qId": 117,
+    "qType": "mondai1-reading",
+    "kanjiWord": "散って",
+    "rtText": "まって",
+    "correctIndex": 1,
+    "currentCorrectText": "まって",
+    "options": [
+      "0: いって",
+      "1: まって",
+      "2: さって",
+      "3: ちって"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "桜の花は、もう散ってまってしまった。"
+  },
+  {
+    "set": "set-3",
+    "qId": 118,
+    "qType": "mondai1-reading",
+    "kanjiWord": "満足",
+    "rtText": "まんぞぐ",
+    "correctIndex": 3,
+    "currentCorrectText": "まんぞぐ",
+    "options": [
+      "0: まんそく",
+      "1: まんぞく",
+      "2: まんそぐ",
+      "3: まんぞぐ"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "今の生活に満足まんぞぐですか。"
+  },
+  {
+    "set": "set-3",
+    "qId": 119,
+    "qType": "mondai1-reading",
+    "kanjiWord": "急行",
+    "rtText": "きゅうこう",
+    "correctIndex": 3,
+    "currentCorrectText": "きゅうこう",
+    "options": [
+      "0: くこう",
+      "1: くうこう",
+      "2: きゅこう",
+      "3: きゅうこう"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "この駅から急行きゅうこうに乗るつもりだ。"
+  },
+  {
+    "set": "set-3",
+    "qId": 120,
+    "qType": "mondai1-reading",
+    "kanjiWord": "意識",
+    "rtText": "ちしき",
+    "correctIndex": 0,
+    "currentCorrectText": "ちしき",
+    "options": [
+      "0: ちしき",
+      "1: にんしき",
+      "2: けんしき",
+      "3: いしき"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "彼女は川に落ち、意識ちしきがなくなった。"
+  },
+  {
+    "set": "set-3",
+    "qId": 121,
+    "qType": "mondai1-reading",
+    "kanjiWord": "差",
+    "rtText": "さい",
+    "correctIndex": 2,
+    "currentCorrectText": "さい",
+    "options": [
+      "0: さ",
+      "1: ざ",
+      "2: さい",
+      "3: ざい"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "あの人と私の能力の差さいは大きい。"
+  },
+  {
+    "set": "set-3",
+    "qId": 122,
+    "qType": "mondai1-reading",
+    "kanjiWord": "広告",
+    "rtText": "こうく",
+    "correctIndex": 1,
+    "currentCorrectText": "こうく",
+    "options": [
+      "0: ここく",
+      "1: こうく",
+      "2: こうこく",
+      "3: こうくう"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "新聞に広告こうくをのせる。"
+  },
+  {
+    "set": "set-3",
+    "qId": 123,
+    "qType": "mondai1-reading",
+    "kanjiWord": "汗",
+    "rtText": "なみだ",
+    "correctIndex": 0,
+    "currentCorrectText": "なみだ",
+    "options": [
+      "0: なみだ",
+      "1: あせ",
+      "2: いき",
+      "3: みず"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "運動をして、汗なみだをたくさんかいた。"
+  },
+  {
+    "set": "set-3",
+    "qId": 124,
+    "qType": "mondai1-reading",
+    "kanjiWord": "禁止",
+    "rtText": "ぎんし",
+    "correctIndex": 2,
+    "currentCorrectText": "ぎんし",
+    "options": [
+      "0: きんし",
+      "1: きんじ",
+      "2: ぎんし",
+      "3: ぎんじ"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "夜中の外出を禁止ぎんしする。"
+  },
+  {
+    "set": "set-3",
+    "qId": 125,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "広富",
+    "rtText": "ほうふ",
+    "correctIndex": 3,
+    "currentCorrectText": "<ruby>広富<rt>ほうふ</rt></ruby>",
+    "options": [
+      "0: 盛富",
+      "1: 宝富",
+      "2: 豊富",
+      "3: <ruby>広富<rt>ほうふ</rt></ruby>"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "この国は、天然資源が広富ほうふだ。"
+  },
+  {
+    "set": "set-3",
+    "qId": 126,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "明記",
+    "rtText": "あんき",
+    "correctIndex": 1,
+    "currentCorrectText": "<ruby>明記<rt>あんき</rt></ruby>",
+    "options": [
+      "0: 案記",
+      "1: <ruby>明記<rt>あんき</rt></ruby>",
+      "2: 安記",
+      "3: 暗記"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "テストの前に、単語を明記あんきした。"
+  },
+  {
+    "set": "set-3",
+    "qId": 127,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "準えて",
+    "rtText": "そなえて",
+    "correctIndex": 0,
+    "currentCorrectText": "<ruby>準えて<rt>そなえて</rt></ruby>",
+    "options": [
+      "0: <ruby>準えて<rt>そなえて</rt></ruby>",
+      "1: 備えて",
+      "2: 供えて",
+      "3: 背えて"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "地震に準えてそなえて、水と食べ物を買う。"
+  },
+  {
+    "set": "set-3",
+    "qId": 128,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "矢う",
+    "rtText": "うしなう",
+    "correctIndex": 2,
+    "currentCorrectText": "<ruby>矢う<rt>うしなう</rt></ruby>",
+    "options": [
+      "0: 失う",
+      "1: 夫う",
+      "2: <ruby>矢う<rt>うしなう</rt></ruby>",
+      "3: 央う"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "大きなミスをして、仕事を矢ううしなうことになった。"
+  },
+  {
+    "set": "set-3",
+    "qId": 129,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "興味",
+    "rtText": "きょうみ",
+    "correctIndex": 2,
+    "currentCorrectText": "<ruby>興味<rt>きょうみ</rt></ruby>",
+    "options": [
+      "0: 教味",
+      "1: 教見",
+      "2: <ruby>興味<rt>きょうみ</rt></ruby>",
+      "3: 興見"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "日本のマンガに興味きょうみがあります。"
+  },
+  {
+    "set": "set-3",
+    "qId": 130,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "婦夫",
+    "rtText": "ふうふ",
+    "correctIndex": 3,
+    "currentCorrectText": "<ruby>婦夫<rt>ふうふ</rt></ruby>",
+    "options": [
+      "0: 夫妻",
+      "1: 妻夫",
+      "2: 夫婦",
+      "3: <ruby>婦夫<rt>ふうふ</rt></ruby>"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "結婚して、2人は婦夫ふうふになった。"
+  },
+  {
+    "set": "set-4",
+    "qId": 175,
+    "qType": "mondai1-reading",
+    "kanjiWord": "。",
+    "rtText": "とどいて",
+    "correctIndex": 3,
+    "currentCorrectText": "とどいて",
+    "options": [
+      "0: あいて",
+      "1: ほどいて",
+      "2: ついて",
+      "3: とどいて"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "荷物は、もう届いています。とどいて"
+  },
+  {
+    "set": "set-4",
+    "qId": 176,
+    "qType": "mondai1-reading",
+    "kanjiWord": "運動は、体によい。",
+    "rtText": "てきど",
+    "correctIndex": 2,
+    "currentCorrectText": "てきど",
+    "options": [
+      "0: てきと",
+      "1: てきとう",
+      "2: てきど",
+      "3: てきどう"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "適度な運動は、体によい。てきど"
+  },
+  {
+    "set": "set-4",
+    "qId": 177,
+    "qType": "mondai1-reading",
+    "kanjiWord": "しています。",
+    "rtText": "しゅっちょう",
+    "correctIndex": 1,
+    "currentCorrectText": "しゅっちょう",
+    "options": [
+      "0: しゅちょう",
+      "1: しゅっちょう",
+      "2: でちょう",
+      "3: でっちょう"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "部長は今、大阪へ出張しています。しゅっちょう"
+  },
+  {
+    "set": "set-4",
+    "qId": 178,
+    "qType": "mondai1-reading",
+    "kanjiWord": "。",
+    "rtText": "やしなう",
+    "correctIndex": 1,
+    "currentCorrectText": "やしなう",
+    "options": [
+      "0: さそう",
+      "1: やしなう",
+      "2: ととのう",
+      "3: うたがう"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "両親が子どもたちを養う。やしなう"
+  },
+  {
+    "set": "set-4",
+    "qId": 179,
+    "qType": "mondai1-reading",
+    "kanjiWord": "がなくて、好きな人に話しかけられない。",
+    "rtText": "ゆうき",
+    "correctIndex": 3,
+    "currentCorrectText": "ゆうき",
+    "options": [
+      "0: よき",
+      "1: ようき",
+      "2: ゆき",
+      "3: ゆうき"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "勇気がなくて、好きな人に話しかけられない。ゆうき"
+  },
+  {
+    "set": "set-4",
+    "qId": 180,
+    "qType": "mondai1-reading",
+    "kanjiWord": "した。",
+    "rtText": "りょうがえ",
+    "correctIndex": 3,
+    "currentCorrectText": "りょうがえ",
+    "options": [
+      "0: りょかえ",
+      "1: りょがえ",
+      "2: りょうかえ",
+      "3: りょうがえ"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "空港で日本円をユーロに両替した。りょうがえ"
+  },
+  {
+    "set": "set-4",
+    "qId": 181,
+    "qType": "mondai1-reading",
+    "kanjiWord": "が見えます。",
+    "rtText": "けむり",
+    "correctIndex": 2,
+    "currentCorrectText": "けむり",
+    "options": [
+      "0: くも",
+      "1: きり",
+      "2: けむり",
+      "3: はい"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "遠くに白い煙が見えます。けむり"
+  },
+  {
+    "set": "set-4",
+    "qId": 182,
+    "qType": "mondai1-reading",
+    "kanjiWord": "した。",
+    "rtText": "ていし",
+    "correctIndex": 0,
+    "currentCorrectText": "ていし",
+    "options": [
+      "0: ていし",
+      "1: てんし",
+      "2: ていじ",
+      "3: てんじ"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "家の前で車が停止した。ていし"
+  },
+  {
+    "set": "set-4",
+    "qId": 183,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "全力",
+    "rtText": "で課題に取り組む。",
+    "correctIndex": 1,
+    "currentCorrectText": "<ruby>全力<rt>で課題に取り組む。</rt></ruby>",
+    "options": [
+      "0: 戦力",
+      "1: <ruby>全力<rt>で課題に取り組む。</rt></ruby>",
+      "2: 前力",
+      "3: 総力"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "ぜんりょく全力で課題に取り組む。"
+  },
+  {
+    "set": "set-4",
+    "qId": 184,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "集団",
+    "rtText": "で旅行する。",
+    "correctIndex": 1,
+    "currentCorrectText": "<ruby>集団<rt>で旅行する。</rt></ruby>",
+    "options": [
+      "0: 衆団",
+      "1: <ruby>集団<rt>で旅行する。</rt></ruby>",
+      "2: 衆段",
+      "3: 集段"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "しゅうだん集団で旅行する。"
+  },
+  {
+    "set": "set-4",
+    "qId": 185,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "議論",
+    "rtText": "した。",
+    "correctIndex": 3,
+    "currentCorrectText": "<ruby>議論<rt>した。</rt></ruby>",
+    "options": [
+      "0: 異論",
+      "1: 討論",
+      "2: 理論",
+      "3: <ruby>議論<rt>した。</rt></ruby>"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "あるテーマについて、全員でぎろん議論した。"
+  },
+  {
+    "set": "set-4",
+    "qId": 186,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "迎えて",
+    "rtText": "くれた。",
+    "correctIndex": 2,
+    "currentCorrectText": "<ruby>迎えて<rt>くれた。</rt></ruby>",
+    "options": [
+      "0: 拝えて",
+      "1: 待えて",
+      "2: <ruby>迎えて<rt>くれた。</rt></ruby>",
+      "3: 歓えて"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "ホストファミリーが私をあたたかくむかえて迎えてくれた。"
+  },
+  {
+    "set": "set-4",
+    "qId": 187,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "予習",
+    "rtText": "をしてきてください。",
+    "correctIndex": 2,
+    "currentCorrectText": "<ruby>予習<rt>をしてきてください。</rt></ruby>",
+    "options": [
+      "0: 余習",
+      "1: 復習",
+      "2: <ruby>予習<rt>をしてきてください。</rt></ruby>",
+      "3: 複習"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "来週の授業のよしゅう予習をしてきてください。"
+  },
+  {
+    "set": "set-4",
+    "qId": 188,
+    "qType": "mondai2-kanji",
+    "kanjiWord": "手間",
+    "rtText": "のかかる料理を作る。",
+    "correctIndex": 0,
+    "currentCorrectText": "<ruby>手間<rt>のかかる料理を作る。</rt></ruby>",
+    "options": [
+      "0: <ruby>手間<rt>のかかる料理を作る。</rt></ruby>",
+      "1: 手真",
+      "2: 手麻",
+      "3: 手誠"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "てま手間のかかる料理を作る。"
+  },
+  {
+    "set": "set-5",
+    "qId": 233,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 0,
+    "currentCorrectText": "こわして",
+    "options": [
+      "0: こわして",
+      "1: とおして",
+      "2: なおして",
+      "3: ゆるして"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "社長は、私の失敗を許してくれた。"
+  },
+  {
+    "set": "set-5",
+    "qId": 234,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "さいよう",
+    "options": [
+      "0: いんよう",
+      "1: さいよう",
+      "2: かつよう",
+      "3: うんよう"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "レポートに本の文章を引用した。"
+  },
+  {
+    "set": "set-5",
+    "qId": 235,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "ごんご",
+    "options": [
+      "0: がんご",
+      "1: ぐんご",
+      "2: げんご",
+      "3: ごんご"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "他の国の言語を学ぶのは、難しい。"
+  },
+  {
+    "set": "set-5",
+    "qId": 236,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "ものか",
+    "options": [
+      "0: ぶつだい",
+      "1: ものだい",
+      "2: ぶっか",
+      "3: ものか"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "日本は、物価が高いと思う。"
+  },
+  {
+    "set": "set-5",
+    "qId": 237,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "しょっき",
+    "options": [
+      "0: ていき",
+      "1: じょうぎ",
+      "2: しょっき",
+      "3: かぎ"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "そこにある定規を取ってください。"
+  },
+  {
+    "set": "set-5",
+    "qId": 238,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "じゅうぎ",
+    "options": [
+      "0: じゅぎ",
+      "1: じゅうぎ",
+      "2: しゅぎ",
+      "3: しゅうぎ"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "私は、休みの日には仕事をしない主義です。"
+  },
+  {
+    "set": "set-5",
+    "qId": 239,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 0,
+    "currentCorrectText": "ちゅうけん",
+    "options": [
+      "0: ちゅうけん",
+      "1: ちゅうかん",
+      "2: ちゅうしん",
+      "3: ちゅうてん"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "駅と公園の中間に、大学がある。"
+  },
+  {
+    "set": "set-5",
+    "qId": 240,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "かんじん",
+    "options": [
+      "0: かんしん",
+      "1: がんじん",
+      "2: かんじん",
+      "3: がんしん"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "彼女は、政治に関心があるようだ。"
+  },
+  {
+    "set": "set-5",
+    "qId": 241,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 0,
+    "currentCorrectText": "遠大",
+    "options": [
+      "0: 遠大",
+      "1: 遼大",
+      "2: 異大",
+      "3: 偉大"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "彼は、いだいな政治家だ。"
+  },
+  {
+    "set": "set-5",
+    "qId": 242,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "動件",
+    "options": [
+      "0: 操作",
+      "1: 動件",
+      "2: 操件",
+      "3: 動作"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "この機械をそうさするのは、簡単だ。"
+  },
+  {
+    "set": "set-5",
+    "qId": 243,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "授えた",
+    "options": [
+      "0: 与えた",
+      "1: 授えた",
+      "2: 余えた",
+      "3: 貸えた"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "子どもにお菓子をあたえた。"
+  },
+  {
+    "set": "set-5",
+    "qId": 244,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "曲がる",
+    "options": [
+      "0: 反がる",
+      "1: 折がる",
+      "2: 分がる",
+      "3: 曲がる"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "道を左にまがる。"
+  },
+  {
+    "set": "set-5",
+    "qId": 245,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "到達",
+    "options": [
+      "0: 配達",
+      "1: 発達",
+      "2: 伝達",
+      "3: 到達"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "彼は、筋肉がはったつしている。"
+  },
+  {
+    "set": "set-5",
+    "qId": 246,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 0,
+    "currentCorrectText": "徒山",
+    "options": [
+      "0: 徒山",
+      "1: 踏山",
+      "2: 登山",
+      "3: 道山"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "私の趣味は、とざんです。"
+  },
+  {
+    "set": "set-6",
+    "qId": 291,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "こわれ",
+    "options": [
+      "0: われ",
+      "1: おれ",
+      "2: こわれ",
+      "3: はなれ"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "箱が壊れました。"
+  },
+  {
+    "set": "set-6",
+    "qId": 292,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "かくち",
+    "options": [
+      "0: かくじ",
+      "1: かくち",
+      "2: きゃくじ",
+      "3: きゃくち"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "各地で雨が降り始めました。"
+  },
+  {
+    "set": "set-6",
+    "qId": 293,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "しゅじん",
+    "options": [
+      "0: しゅにん",
+      "1: じゅにん",
+      "2: しゅじん",
+      "3: じゅじん"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "あの店の主人は働き者だ。"
+  },
+  {
+    "set": "set-6",
+    "qId": 294,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "あらって",
+    "options": [
+      "0: きって",
+      "1: さわって",
+      "2: ぬって",
+      "3: あらって"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "このシャツは、もう洗ってあります。"
+  },
+  {
+    "set": "set-6",
+    "qId": 295,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 0,
+    "currentCorrectText": "ふべん",
+    "options": [
+      "0: ふべん",
+      "1: ふだん",
+      "2: ふまん",
+      "3: ふしん"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "アパートは通学に不便なところにある。"
+  },
+  {
+    "set": "set-6",
+    "qId": 296,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "なかま",
+    "options": [
+      "0: ながま",
+      "1: なかま",
+      "2: ちゅうかん",
+      "3: ちゅうげん"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "久しぶりに仲間が集まった。"
+  },
+  {
+    "set": "set-6",
+    "qId": 297,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "はだ",
+    "options": [
+      "0: ゆび",
+      "1: ひふ",
+      "2: はだ",
+      "3: つめ"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "あの人は、肌がきれいだ。"
+  },
+  {
+    "set": "set-6",
+    "qId": 298,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "ゆうそう",
+    "options": [
+      "0: はっそう",
+      "1: はいそう",
+      "2: ゆそう",
+      "3: ゆうそう"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "書類を郵送しておきました。"
+  },
+  {
+    "set": "set-6",
+    "qId": 299,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "不正",
+    "options": [
+      "0: 不生",
+      "1: 不性",
+      "2: 不正",
+      "3: 不成"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "彼は、ふせいな取引を禁じる。"
+  },
+  {
+    "set": "set-6",
+    "qId": 300,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "休暇",
+    "options": [
+      "0: 休憩",
+      "1: 休息",
+      "2: 休養",
+      "3: 休暇"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "長いきゅうかを取る。"
+  },
+  {
+    "set": "set-6",
+    "qId": 301,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 0,
+    "currentCorrectText": "頼んで",
+    "options": [
+      "0: 頼んで",
+      "1: 願んで",
+      "2: 望んで",
+      "3: 希んで"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "親にたのんで、車を買ってもらった。"
+  },
+  {
+    "set": "set-6",
+    "qId": 302,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "困る",
+    "options": [
+      "0: 苦る",
+      "1: 迷る",
+      "2: 因る",
+      "3: 困る"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "生活でこまることは何ですか。"
+  },
+  {
+    "set": "set-6",
+    "qId": 303,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "泊まる",
+    "options": [
+      "0: 止まる",
+      "1: 留まる",
+      "2: 停まる",
+      "3: 泊まる"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "ホテルにとまることにした。"
+  },
+  {
+    "set": "set-6",
+    "qId": 304,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "味方",
+    "options": [
+      "0: 見方",
+      "1: 味方",
+      "2: 見形",
+      "3: 味形"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "敵とみかたにわかれて争う。"
+  },
+  {
+    "set": "set-8",
+    "qId": 407,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "とんで",
+    "options": [
+      "0: あそんで",
+      "1: よんで",
+      "2: とんで",
+      "3: さけんで"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "大きな鳥が飛んでいるのを見ました。"
+  },
+  {
+    "set": "set-8",
+    "qId": 408,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "むりょう",
+    "options": [
+      "0: むりょ",
+      "1: むりょう",
+      "2: ぶりょ",
+      "3: ぶりょう"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "子どもは、無料で入れます。"
+  },
+  {
+    "set": "set-8",
+    "qId": 409,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "つうこう",
+    "options": [
+      "0: とうこう",
+      "1: とうごう",
+      "2: つうこう",
+      "3: つうごう"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "この道は、車の通行ができない。"
+  },
+  {
+    "set": "set-8",
+    "qId": 410,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 0,
+    "currentCorrectText": "つかれて",
+    "options": [
+      "0: つかれて",
+      "1: あきれて",
+      "2: くたびれて",
+      "3: おそれて"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "彼は、てとも疲れているようだ。"
+  },
+  {
+    "set": "set-8",
+    "qId": 411,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "めん",
+    "options": [
+      "0: てん",
+      "1: めん",
+      "2: へん",
+      "3: けん"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "この計画には、悪いところもあるが、よい面もある。"
+  },
+  {
+    "set": "set-8",
+    "qId": 412,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 0,
+    "currentCorrectText": "ちえ",
+    "options": [
+      "0: ちえ",
+      "1: ちしき",
+      "2: ちせい",
+      "3: ちのう"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "友だちの知恵を借りて、課題を完成させました。"
+  },
+  {
+    "set": "set-8",
+    "qId": 413,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "たよう",
+    "options": [
+      "0: おおさま",
+      "1: たさま",
+      "2: おおよう",
+      "3: たよう"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "現代には多様な生き方がある。"
+  },
+  {
+    "set": "set-8",
+    "qId": 414,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "とうちゃく",
+    "options": [
+      "0: とちゃく",
+      "1: とうちゃく",
+      "2: どちゃく",
+      "3: どうちゃく"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "荷物は、きのう到着しました。"
+  },
+  {
+    "set": "set-8",
+    "qId": 415,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "不満",
+    "options": [
+      "0: 否満",
+      "1: 無満",
+      "2: 不満",
+      "3: 未満"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "その決定に、ふまんを言う人がたくさんいた。"
+  },
+  {
+    "set": "set-8",
+    "qId": 416,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "建築",
+    "options": [
+      "0: 建設",
+      "1: 建造",
+      "2: 建立",
+      "3: 建築"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "駅前でビルをけんちくしている。"
+  },
+  {
+    "set": "set-8",
+    "qId": 417,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 0,
+    "currentCorrectText": "戻って",
+    "options": [
+      "0: 戻って",
+      "1: 帰って",
+      "2: 返って",
+      "3: 来て"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "旅行をして自宅にもどって、安心した。"
+  },
+  {
+    "set": "set-8",
+    "qId": 418,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "認める",
+    "options": [
+      "0: 求める",
+      "1: 救める",
+      "2: 許める",
+      "3: 認める"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "校則違反をみとめることはできない。"
+  },
+  {
+    "set": "set-8",
+    "qId": 419,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 0,
+    "currentCorrectText": "郊外",
+    "options": [
+      "0: 郊外",
+      "1: 戸外",
+      "2: 口外",
+      "3: 校外"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "東京のこうがいに家を買いました。"
+  },
+  {
+    "set": "set-8",
+    "qId": 420,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "家賃",
+    "options": [
+      "0: 家貸",
+      "1: 屋貸",
+      "2: 家賃",
+      "3: 屋賃"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "今月のやちんを払った。"
+  },
+  {
+    "set": "set-9",
+    "qId": 1,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "かざって",
+    "options": [
+      "0: ぬって",
+      "1: しまって",
+      "2: かざって",
+      "3: あらって"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "パーティーを開くので、部屋をきれいに飾っておく。"
+  },
+  {
+    "set": "set-9",
+    "qId": 2,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "きゃくし",
+    "options": [
+      "0: かくし",
+      "1: かくじ",
+      "2: きゃくし",
+      "3: きゃくじ"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "材料は、各自で用意してください。"
+  },
+  {
+    "set": "set-9",
+    "qId": 3,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "いけ",
+    "options": [
+      "0: みずうみ",
+      "1: いけ",
+      "2: ぬま",
+      "3: たき"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "ここが世界一大きな湖です。"
+  },
+  {
+    "set": "set-9",
+    "qId": 4,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "ないて",
+    "options": [
+      "0: きいて",
+      "1: たたいて",
+      "2: ないて",
+      "3: つついて"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "家の外で猫が鳴いている。"
+  },
+  {
+    "set": "set-9",
+    "qId": 5,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "おくしょう",
+    "options": [
+      "0: やしょう",
+      "1: やじょう",
+      "2: おくしょう",
+      "3: おくじょう"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "屋上から町がよく見えます。"
+  },
+  {
+    "set": "set-9",
+    "qId": 6,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "つうが",
+    "options": [
+      "0: つうか",
+      "1: つうが",
+      "2: とうか",
+      "3: とうが"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "ここを車が通過することはできません。"
+  },
+  {
+    "set": "set-9",
+    "qId": 7,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "は",
+    "options": [
+      "0: ば",
+      "1: は",
+      "2: し",
+      "3: じ"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "きのうからずっと歯が痛い。"
+  },
+  {
+    "set": "set-9",
+    "qId": 8,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "かいてん",
+    "options": [
+      "0: てんかい",
+      "1: てんがい",
+      "2: かいてん",
+      "3: かいでん"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "大きな車輪が回転する。"
+  },
+  {
+    "set": "set-9",
+    "qId": 9,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "規則",
+    "options": [
+      "0: 基則",
+      "1: 規則",
+      "2: 基測",
+      "3: 規測"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "やり方は、きそくで決まっています。"
+  },
+  {
+    "set": "set-9",
+    "qId": 10,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "友情",
+    "options": [
+      "0: 有情",
+      "1: 愛情",
+      "2: 友情",
+      "3: 真情"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "あの2人のゆうじょうは、すばらしい。"
+  },
+  {
+    "set": "set-9",
+    "qId": 11,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "結んだ",
+    "options": [
+      "0: 編んだ",
+      "1: 練んだ",
+      "2: 結んだ",
+      "3: 結んだ"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "赤ちゃんにセーターとマフラーをあんだ。"
+  },
+  {
+    "set": "set-9",
+    "qId": 12,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "主に",
+    "options": [
+      "0: 重に",
+      "1: 面に",
+      "2: 主に",
+      "3: 思に"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "わが社では、大事なことはおもに社長が決める。"
+  },
+  {
+    "set": "set-9",
+    "qId": 13,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "知識",
+    "options": [
+      "0: 意識",
+      "1: 認識",
+      "2: 常識",
+      "3: 知識"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "仕事についての新しいいちしきを得た。"
+  },
+  {
+    "set": "set-9",
+    "qId": 14,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "世話",
+    "options": [
+      "0: 世和",
+      "1: 施和",
+      "2: 世話",
+      "3: 施話"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "犬と猫のせわをする。"
+  },
+  {
+    "set": "set-10",
+    "qId": 1,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "ぬすんで",
+    "options": [
+      "0: にくんで",
+      "1: かんで",
+      "2: ぬすんで",
+      "3: ふんで"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "ものを盗んではいけません。"
+  },
+  {
+    "set": "set-10",
+    "qId": 2,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 0,
+    "currentCorrectText": "ていど",
+    "options": [
+      "0: ていど",
+      "1: でいど",
+      "2: しょうど",
+      "3: じょうど"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "彼のけがの程度は、まだわからない。"
+  },
+  {
+    "set": "set-10",
+    "qId": 3,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "きこく",
+    "options": [
+      "0: さくに",
+      "1: さぐに",
+      "2: きこく",
+      "3: きごく"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "帰国する前に先生に会いたいです。"
+  },
+  {
+    "set": "set-10",
+    "qId": 4,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "とじて",
+    "options": [
+      "0: かんじて",
+      "1: とじて",
+      "2: はじめて",
+      "3: ふうじて"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "彼女は、目を閉じて音楽を聞いていた。"
+  },
+  {
+    "set": "set-10",
+    "qId": 5,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "よく",
+    "options": [
+      "0: こころ",
+      "1: こころざし",
+      "2: いよく",
+      "3: よく"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "あの人は、あまり欲がないようです。"
+  },
+  {
+    "set": "set-10",
+    "qId": 6,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "しにゅう",
+    "options": [
+      "0: しんゆう",
+      "1: しにゅう",
+      "2: じんゆう",
+      "3: じにゅう"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "田中さんは、私の親友です。"
+  },
+  {
+    "set": "set-10",
+    "qId": 7,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "ふくろ",
+    "options": [
+      "0: ぬの",
+      "1: はこ",
+      "2: ひも",
+      "3: ふくろ"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "袋が破れているので、とりかえてください。"
+  },
+  {
+    "set": "set-10",
+    "qId": 8,
+    "qType": "mondai1-reading",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "いどう",
+    "options": [
+      "0: うんどう",
+      "1: かつどう",
+      "2: こうどう",
+      "3: いどう"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "次の場所へ移動しなければなりません。"
+  },
+  {
+    "set": "set-10",
+    "qId": 9,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "順調",
+    "options": [
+      "0: 順常",
+      "1: 順調",
+      "2: 順長",
+      "3: 順状"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "仕事は、じゅんちょうに進んでいる。"
+  },
+  {
+    "set": "set-10",
+    "qId": 10,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 0,
+    "currentCorrectText": "信用",
+    "options": [
+      "0: 信用",
+      "1: 信頼",
+      "2: 真用",
+      "3: 真頼"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "友だちのことばをしんようする。"
+  },
+  {
+    "set": "set-10",
+    "qId": 11,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "踊って",
+    "options": [
+      "0: 通って",
+      "1: 音って",
+      "2: 踊って",
+      "3: 舞って"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "一晩中おどって、とても楽しかった。"
+  },
+  {
+    "set": "set-10",
+    "qId": 12,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "避けて",
+    "options": [
+      "0: 逃げて",
+      "1: 裂けて",
+      "2: 割けて",
+      "3: 避けて"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "ラッシュアワーをさけて、早い時間の電車に乗った。"
+  },
+  {
+    "set": "set-10",
+    "qId": 13,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "平和",
+    "options": [
+      "0: 平安",
+      "1: 安平",
+      "2: 平和",
+      "3: 和平"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "へいわな生活を送りたい。"
+  },
+  {
+    "set": "set-10",
+    "qId": 14,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "試合",
+    "options": [
+      "0: 試場",
+      "1: 試合",
+      "2: 技場",
+      "3: 技合"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "サッカーのしあいに出場した。"
+  },
+  {
+    "set": "set-11",
+    "qId": 11000,
+    "qType": "mondai1-reading",
+    "kanjiWord": "天気",
+    "rtText": "かわいた",
+    "correctIndex": 3,
+    "currentCorrectText": "かわいた",
+    "options": [
+      "0: ひらいた",
+      "1: うごいた",
+      "2: みがいた",
+      "3: かわいた"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "天気かわいたがいいので、洗たく物がよく乾いた。"
+  },
+  {
+    "set": "set-11",
+    "qId": 11001,
+    "qType": "mondai1-reading",
+    "kanjiWord": "道",
+    "rtText": "きょうかい",
+    "correctIndex": 1,
+    "currentCorrectText": "きょうかい",
+    "options": [
+      "0: きょかい",
+      "1: きょうかい",
+      "2: きょがい",
+      "3: きょうがい"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "この道きょうかいがとなりの市との境界です。"
+  },
+  {
+    "set": "set-11",
+    "qId": 11002,
+    "qType": "mondai1-reading",
+    "kanjiWord": "以後",
+    "rtText": "いこう",
+    "correctIndex": 1,
+    "currentCorrectText": "いこう",
+    "options": [
+      "0: いこ",
+      "1: いこう",
+      "2: いご",
+      "3: いごう"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "以後いこうは、別々に行動しましょう。"
+  },
+  {
+    "set": "set-11",
+    "qId": 11003,
+    "qType": "mondai1-reading",
+    "kanjiWord": "土",
+    "rtText": "うめて",
+    "correctIndex": 3,
+    "currentCorrectText": "うめて",
+    "options": [
+      "0: こめて",
+      "1: ためて",
+      "2: とめて",
+      "3: うめて"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "もえないごみを土うめてに埋めてはいけません。"
+  },
+  {
+    "set": "set-11",
+    "qId": 11004,
+    "qType": "mondai1-reading",
+    "kanjiWord": "例",
+    "rtText": "れい",
+    "correctIndex": 1,
+    "currentCorrectText": "れい",
+    "options": [
+      "0: え",
+      "1: れい",
+      "2: ず",
+      "3: けん"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "例れいをあげて説明してください。"
+  },
+  {
+    "set": "set-11",
+    "qId": 11005,
+    "qType": "mondai1-reading",
+    "kanjiWord": "美",
+    "rtText": "ふうけい",
+    "correctIndex": 0,
+    "currentCorrectText": "ふうけい",
+    "options": [
+      "0: ふうけい",
+      "1: ふうげい",
+      "2: ふけい",
+      "3: ふげい"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "美ふうけいしい風景が広がっている。"
+  },
+  {
+    "set": "set-11",
+    "qId": 11006,
+    "qType": "mondai1-reading",
+    "kanjiWord": "甘",
+    "rtText": "ほね",
+    "correctIndex": 2,
+    "currentCorrectText": "ほね",
+    "options": [
+      "0: こつ",
+      "1: ごつ",
+      "2: ほね",
+      "3: ぼね"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "甘ほねいものは骨によくない。"
+  },
+  {
+    "set": "set-11",
+    "qId": 11007,
+    "qType": "mondai1-reading",
+    "kanjiWord": "人",
+    "rtText": "きみょう ---",
+    "correctIndex": 3,
+    "currentCorrectText": "きみょう ---",
+    "options": [
+      "0: びりょう",
+      "1: びみょう",
+      "2: きちょう",
+      "3: きみょう ---"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "ある人きみょう ---から奇妙な話を聞いた。"
+  },
+  {
+    "set": "set-11",
+    "qId": 11008,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "自然",
+    "options": [
+      "0: 仕然",
+      "1: 事然",
+      "2: 自然",
+      "3: 私然"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "しぜんの中で運動するのは、気持ちがよい。"
+  },
+  {
+    "set": "set-11",
+    "qId": 11009,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "教授",
+    "options": [
+      "0: 教師",
+      "1: 教示",
+      "2: 教授",
+      "3: 教授"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "きょうじゅの指導のもとで、論文を書いた。"
+  },
+  {
+    "set": "set-11",
+    "qId": 11010,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "浅い",
+    "options": [
+      "0: 深い",
+      "1: 浅い",
+      "2: 太い",
+      "3: 細い"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "この川は、あの川よりあさい。"
+  },
+  {
+    "set": "set-11",
+    "qId": 11011,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "枯れて",
+    "options": [
+      "0: 枝れて",
+      "1: 朽れて",
+      "2: 枯れて",
+      "3: 相れて"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "この木は、冬にかれてしまう。"
+  },
+  {
+    "set": "set-11",
+    "qId": 11012,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "主張",
+    "options": [
+      "0: 手長",
+      "1: 手張",
+      "2: 主張",
+      "3: 主張"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "自分の考えをしゅちょうする。"
+  },
+  {
+    "set": "set-11",
+    "qId": 11013,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "多勢",
+    "options": [
+      "0: 大勢",
+      "1: 多勢",
+      "2: 大盛",
+      "3: 多盛"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "コンサートホールにおおぜいの人が集まった。"
+  },
+  {
+    "set": "set-12",
+    "qId": 12000,
+    "qType": "mondai1-reading",
+    "kanjiWord": "木",
+    "rtText": "おれて",
+    "correctIndex": 2,
+    "currentCorrectText": "おれて",
+    "options": [
+      "0: かれて",
+      "1: われて",
+      "2: おれて",
+      "3: きれて"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "木おれての枝が折れています。"
+  },
+  {
+    "set": "set-12",
+    "qId": 12001,
+    "qType": "mondai1-reading",
+    "kanjiWord": "現金",
+    "rtText": "こうかん",
+    "correctIndex": 1,
+    "currentCorrectText": "こうかん",
+    "options": [
+      "0: こうさい",
+      "1: こうかん",
+      "2: こうりゅう",
+      "3: こうたい"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "現金こうかんと野菜を交換する。"
+  },
+  {
+    "set": "set-12",
+    "qId": 12002,
+    "qType": "mondai1-reading",
+    "kanjiWord": "新",
+    "rtText": "としょ",
+    "correctIndex": 0,
+    "currentCorrectText": "としょ",
+    "options": [
+      "0: としょ",
+      "1: とじょ",
+      "2: とうしょ",
+      "3: とうじょ"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "新としょしい図書を注文した。"
+  },
+  {
+    "set": "set-12",
+    "qId": 12003,
+    "qType": "mondai1-reading",
+    "kanjiWord": "国",
+    "rtText": "ろうじん",
+    "correctIndex": 2,
+    "currentCorrectText": "ろうじん",
+    "options": [
+      "0: のうじん",
+      "1: のうにん",
+      "2: ろうじん",
+      "3: ろうにん"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "この国ろうじんでは、老人がどんどん増えている。"
+  },
+  {
+    "set": "set-12",
+    "qId": 12004,
+    "qType": "mondai1-reading",
+    "kanjiWord": "缶",
+    "rtText": "かん",
+    "correctIndex": 0,
+    "currentCorrectText": "かん",
+    "options": [
+      "0: かん",
+      "1: びん",
+      "2: きん",
+      "3: ほん"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "その缶かんは金曜日に捨ててください。"
+  },
+  {
+    "set": "set-12",
+    "qId": 12005,
+    "qType": "mondai1-reading",
+    "kanjiWord": "南",
+    "rtText": "ほうこう",
+    "correctIndex": 2,
+    "currentCorrectText": "ほうこう",
+    "options": [
+      "0: ほうく",
+      "1: ほうこ",
+      "2: ほうこう",
+      "3: ほうこう"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "南ほうこうは、あちらの方向です。"
+  },
+  {
+    "set": "set-12",
+    "qId": 12006,
+    "qType": "mondai1-reading",
+    "kanjiWord": "料理",
+    "rtText": "にがい",
+    "correctIndex": 1,
+    "currentCorrectText": "にがい",
+    "options": [
+      "0: からい",
+      "1: にがい",
+      "2: すっぱい",
+      "3: あまい"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "この料理にがいは、とても苦いです。"
+  },
+  {
+    "set": "set-12",
+    "qId": 12007,
+    "qType": "mondai1-reading",
+    "kanjiWord": "公園",
+    "rtText": "あたり ---",
+    "correctIndex": 3,
+    "currentCorrectText": "あたり ---",
+    "options": [
+      "0: となり",
+      "1: ひだり",
+      "2: まわり",
+      "3: あたり ---"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "公園あたり ---の辺りを散歩します。"
+  },
+  {
+    "set": "set-12",
+    "qId": 12008,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 0,
+    "currentCorrectText": "不運",
+    "options": [
+      "0: 不運",
+      "1: 無運",
+      "2: 負運",
+      "3: 未運"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "ふうんなことに、事故にあった。"
+  },
+  {
+    "set": "set-12",
+    "qId": 12009,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "実績",
+    "options": [
+      "0: 実責",
+      "1: 実績",
+      "2: 実績",
+      "3: 実席"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "学者としてのじっせきを上げる。"
+  },
+  {
+    "set": "set-12",
+    "qId": 12010,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "迷って",
+    "options": [
+      "0: 悩って",
+      "1: 困って",
+      "2: 寄って",
+      "3: 迷って"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "森の中でまよって、一晩中歩き続けた。"
+  },
+  {
+    "set": "set-12",
+    "qId": 12011,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "触る",
+    "options": [
+      "0: 採る",
+      "1: 触る",
+      "2: 解る",
+      "3: 探る"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "この動物園では、動物にさわることができます。"
+  },
+  {
+    "set": "set-12",
+    "qId": 12012,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "農業",
+    "options": [
+      "0: 漁業",
+      "1: 林業",
+      "2: 工業",
+      "3: 農業"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "実家はのうぎょうを営んでいます。"
+  },
+  {
+    "set": "set-12",
+    "qId": 12013,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "品物",
+    "options": [
+      "0: 商品",
+      "1: 商者",
+      "2: 品物",
+      "3: 品者"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "この店には、よいしなものが置いてある。"
+  },
+  {
+    "set": "set-13",
+    "qId": 13000,
+    "qType": "mondai1-reading",
+    "kanjiWord": "結",
+    "rtText": "むすんで",
+    "correctIndex": 3,
+    "currentCorrectText": "むすんで",
+    "options": [
+      "0: あんで",
+      "1: たたんで",
+      "2: はさんで",
+      "3: むすんで"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "プレゼントにリボンが結むすんでんでありました。"
+  },
+  {
+    "set": "set-13",
+    "qId": 13001,
+    "qType": "mondai1-reading",
+    "kanjiWord": "病院",
+    "rtText": "かんじゃ",
+    "correctIndex": 2,
+    "currentCorrectText": "かんじゃ",
+    "options": [
+      "0: かんしゃ",
+      "1: がんしゃ",
+      "2: かんじゃ",
+      "3: がんじゃ"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "この病院かんじゃは、患者の数が多い。"
+  },
+  {
+    "set": "set-13",
+    "qId": 13002,
+    "qType": "mondai1-reading",
+    "kanjiWord": "方",
+    "rtText": "こうか",
+    "correctIndex": 3,
+    "currentCorrectText": "こうか",
+    "options": [
+      "0: きょか",
+      "1: きょうか",
+      "2: こか",
+      "3: こうか"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "そのやり方こうかで、効果がありますか。"
+  },
+  {
+    "set": "set-13",
+    "qId": 13003,
+    "qType": "mondai1-reading",
+    "kanjiWord": "苦",
+    "rtText": "ささえて",
+    "correctIndex": 1,
+    "currentCorrectText": "ささえて",
+    "options": [
+      "0: おしえて",
+      "1: ささえて",
+      "2: つかえて",
+      "3: かかえて"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "苦ささえてしいとき、クラスメートに支えてもらった。"
+  },
+  {
+    "set": "set-13",
+    "qId": 13004,
+    "qType": "mondai1-reading",
+    "kanjiWord": "城",
+    "rtText": "しろ",
+    "correctIndex": 0,
+    "currentCorrectText": "しろ",
+    "options": [
+      "0: しろ",
+      "1: とう",
+      "2: てら",
+      "3: もん"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "この城しろはとても有名です。"
+  },
+  {
+    "set": "set-13",
+    "qId": 13005,
+    "qType": "mondai1-reading",
+    "kanjiWord": "用事",
+    "rtText": "ようじ",
+    "correctIndex": 2,
+    "currentCorrectText": "ようじ",
+    "options": [
+      "0: つごう",
+      "1: しごと",
+      "2: ようじ",
+      "3: しょう"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "用事ようじがあるので、お先に失礼します。"
+  },
+  {
+    "set": "set-13",
+    "qId": 13006,
+    "qType": "mondai1-reading",
+    "kanjiWord": "毎日",
+    "rtText": "たいくつ",
+    "correctIndex": 2,
+    "currentCorrectText": "たいくつ",
+    "options": [
+      "0: さいくつ",
+      "1: きゅうくつ",
+      "2: たいくつ",
+      "3: ていくつ"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "毎日たいくつ、とても退屈だ。"
+  },
+  {
+    "set": "set-13",
+    "qId": 13007,
+    "qType": "mondai1-reading",
+    "kanjiWord": "新",
+    "rtText": "せいりつ",
+    "correctIndex": 0,
+    "currentCorrectText": "せいりつ",
+    "options": [
+      "0: せいりつ",
+      "1: ぜいりつ",
+      "2: しょうりつ",
+      "3: じょうりつ ---"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "新せいりつしい法案が成立した。"
+  },
+  {
+    "set": "set-13",
+    "qId": 13008,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 0,
+    "currentCorrectText": "通知",
+    "options": [
+      "0: 通知",
+      "1: 通告",
+      "2: 報知",
+      "3: 報告"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "日程については、メールでつうちします。"
+  },
+  {
+    "set": "set-13",
+    "qId": 13009,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "地位",
+    "options": [
+      "0: 時位",
+      "1: 自位",
+      "2: 値位",
+      "3: 地位"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "彼は、必死に働いて、今のちいについた。"
+  },
+  {
+    "set": "set-13",
+    "qId": 13010,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "注いで",
+    "options": [
+      "0: 主いで",
+      "1: 注いで",
+      "2: 住いで",
+      "3: 往いで"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "カップラーメンにお湯をそそいで、3分待った。"
+  },
+  {
+    "set": "set-13",
+    "qId": 13011,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "招く",
+    "options": [
+      "0: 傾く",
+      "1: 届く",
+      "2: 描く",
+      "3: 招く"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "友だちを家にまねく。"
+  },
+  {
+    "set": "set-13",
+    "qId": 13012,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "警察",
+    "options": [
+      "0: 警官",
+      "1: 警察",
+      "2: 検察",
+      "3: 検事"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "見つけたお金をけいさつに持っていった。"
+  },
+  {
+    "set": "set-13",
+    "qId": 13013,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "輸出",
+    "options": [
+      "0: 移出",
+      "1: 移入",
+      "2: 輸出",
+      "3: 輸入"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "この国では、石油のゆしゅつが増えている。"
+  },
+  {
+    "set": "set-14",
+    "qId": 14000,
+    "qType": "mondai1-reading",
+    "kanjiWord": "船",
+    "rtText": "しずんで",
+    "correctIndex": 3,
+    "currentCorrectText": "しずんで",
+    "options": [
+      "0: およんで",
+      "1: ころんで",
+      "2: きしんで",
+      "3: しずんで"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "その船しずんでは、太平洋に沈んでしまった。"
+  },
+  {
+    "set": "set-14",
+    "qId": 14001,
+    "qType": "mondai1-reading",
+    "kanjiWord": "彼",
+    "rtText": "こううん",
+    "correctIndex": 2,
+    "currentCorrectText": "こううん",
+    "options": [
+      "0: ごうん",
+      "1: ごううん",
+      "2: こううん",
+      "3: こううん"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "彼こううんはとても幸運な人だ。"
+  },
+  {
+    "set": "set-14",
+    "qId": 14002,
+    "qType": "mondai1-reading",
+    "kanjiWord": "遅",
+    "rtText": "ちょうしょく",
+    "correctIndex": 1,
+    "currentCorrectText": "ちょうしょく",
+    "options": [
+      "0: ちゅうしょく",
+      "1: ちょうしょく",
+      "2: ちゅうじょく",
+      "3: ちょうじょく"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "いつもより遅ちょうしょくく昼食をとった。"
+  },
+  {
+    "set": "set-14",
+    "qId": 14003,
+    "qType": "mondai1-reading",
+    "kanjiWord": "川",
+    "rtText": "ういて",
+    "correctIndex": 2,
+    "currentCorrectText": "ういて",
+    "options": [
+      "0: おいて",
+      "1: わいて",
+      "2: ういて",
+      "3: ついて"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "川ういてにたくさんのごみが浮いている。"
+  },
+  {
+    "set": "set-14",
+    "qId": 14004,
+    "qType": "mondai1-reading",
+    "kanjiWord": "引",
+    "rtText": "おく",
+    "correctIndex": 1,
+    "currentCorrectText": "おく",
+    "options": [
+      "0: すみ",
+      "1: おく",
+      "2: はし",
+      "3: なか"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "引おくき出しの奥に会議の資料があります。"
+  },
+  {
+    "set": "set-14",
+    "qId": 14005,
+    "qType": "mondai1-reading",
+    "kanjiWord": "料金",
+    "rtText": "りょうきん",
+    "correctIndex": 3,
+    "currentCorrectText": "りょうきん",
+    "options": [
+      "0: よきん",
+      "1: りょきん",
+      "2: ようきん",
+      "3: りょうきん"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "料金りょうきんが安いほうを選ぶ。"
+  },
+  {
+    "set": "set-14",
+    "qId": 14006,
+    "qType": "mondai1-reading",
+    "kanjiWord": "週末",
+    "rtText": "いなか",
+    "correctIndex": 3,
+    "currentCorrectText": "いなか",
+    "options": [
+      "0: たんぼ",
+      "1: はたけ",
+      "2: ののはら",
+      "3: いなか"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "週末いなか、田舎へ出かけた。"
+  },
+  {
+    "set": "set-14",
+    "qId": 14007,
+    "qType": "mondai1-reading",
+    "kanjiWord": "集会",
+    "rtText": "かいかい",
+    "correctIndex": 0,
+    "currentCorrectText": "かいかい",
+    "options": [
+      "0: かいかい",
+      "1: かいがい",
+      "2: へいかい",
+      "3: へいがい"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "その集会かいかいは、午後5時に開会した。"
+  },
+  {
+    "set": "set-14",
+    "qId": 14008,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "面倒",
+    "options": [
+      "0: 面頭",
+      "1: 面働",
+      "2: 面倒",
+      "3: 面動"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "めんどうな仕事をしなくてはいけない。"
+  },
+  {
+    "set": "set-14",
+    "qId": 14009,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "記録",
+    "options": [
+      "0: 紀録",
+      "1: 紀緑",
+      "2: 記録",
+      "3: 記緑"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "昔のきろくを参考にする。"
+  },
+  {
+    "set": "set-14",
+    "qId": 14010,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "捕らえて",
+    "options": [
+      "0: 取らえて",
+      "1: 担らえて",
+      "2: 捕らえて",
+      "3: 捕らえて"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "その小鳥をとらえて、かごの中に入れた。"
+  },
+  {
+    "set": "set-14",
+    "qId": 14011,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "比べて",
+    "options": [
+      "0: 批べて",
+      "1: 比べて",
+      "2: 調べて",
+      "3: 対べて"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "その新聞と、この新聞の書き方をくらべてください。"
+  },
+  {
+    "set": "set-14",
+    "qId": 14012,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "効能",
+    "options": [
+      "0: 性能",
+      "1: 効能",
+      "2: 技能",
+      "3: 機能"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "この電話には、きのうがたくさん付いている。"
+  },
+  {
+    "set": "set-14",
+    "qId": 14013,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 0,
+    "currentCorrectText": "恋人",
+    "options": [
+      "0: 恋人",
+      "1: 好人",
+      "2: 愛人",
+      "3: 来人"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "新しいこいびとができた。"
+  },
+  {
+    "set": "set-15",
+    "qId": 15000,
+    "qType": "mondai1-reading",
+    "kanjiWord": "大事",
+    "rtText": "ぶんしょう",
+    "correctIndex": 2,
+    "currentCorrectText": "ぶんしょう",
+    "options": [
+      "0: もんしょう",
+      "1: もんしょ",
+      "2: ぶんしょう",
+      "3: ぶんしょ"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "大事ぶんしょうなことなので、文書で回答してください。"
+  },
+  {
+    "set": "set-15",
+    "qId": 15001,
+    "qType": "mondai1-reading",
+    "kanjiWord": "毎日練習",
+    "rtText": "じつりょく",
+    "correctIndex": 1,
+    "currentCorrectText": "じつりょく",
+    "options": [
+      "0: しつりょく",
+      "1: じつりょく",
+      "2: しつりき",
+      "3: じつりき"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "毎日練習じつりょくをしたので、実力がついた。"
+  },
+  {
+    "set": "set-15",
+    "qId": 15002,
+    "qType": "mondai1-reading",
+    "kanjiWord": "冷蔵庫",
+    "rtText": "かたまる",
+    "correctIndex": 3,
+    "currentCorrectText": "かたまる",
+    "options": [
+      "0: つまる",
+      "1: あまる",
+      "2: あつまる",
+      "3: かたまる"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "冷蔵庫かたまるで氷が固まる。"
+  },
+  {
+    "set": "set-15",
+    "qId": 15003,
+    "qType": "mondai1-reading",
+    "kanjiWord": "風",
+    "rtText": "まって",
+    "correctIndex": 2,
+    "currentCorrectText": "まって",
+    "options": [
+      "0: おどって",
+      "1: ちって",
+      "2: まって",
+      "3: さって"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "風まってに木の葉が舞っていました。"
+  },
+  {
+    "set": "set-15",
+    "qId": 15004,
+    "qType": "mondai1-reading",
+    "kanjiWord": "食",
+    "rtText": "がい",
+    "correctIndex": 1,
+    "currentCorrectText": "がい",
+    "options": [
+      "0: かい",
+      "1: がい",
+      "2: とく",
+      "3: どく"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "食がいべ続けても、体に害はありません。"
+  },
+  {
+    "set": "set-15",
+    "qId": 15005,
+    "qType": "mondai1-reading",
+    "kanjiWord": "新",
+    "rtText": "ゆうり",
+    "correctIndex": 3,
+    "currentCorrectText": "ゆうり",
+    "options": [
+      "0: ふり",
+      "1: ふうり",
+      "2: ゆり",
+      "3: ゆうり"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "新ゆうりしいルールは、わが社にとって有利だ。"
+  },
+  {
+    "set": "set-15",
+    "qId": 15006,
+    "qType": "mondai1-reading",
+    "kanjiWord": "町",
+    "rtText": "みなと",
+    "correctIndex": 1,
+    "currentCorrectText": "みなと",
+    "options": [
+      "0: きし",
+      "1: みなと",
+      "2: うみ",
+      "3: はまべ"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "この町みなとには、有名な港があります。"
+  },
+  {
+    "set": "set-15",
+    "qId": 15007,
+    "qType": "mondai1-reading",
+    "kanjiWord": "人",
+    "rtText": "たいりつ",
+    "correctIndex": 0,
+    "currentCorrectText": "たいりつ",
+    "options": [
+      "0: たいりつ",
+      "1: だいりつ",
+      "2: たいりゅう",
+      "3: だいりゅう"
+    ],
+    "rtMatchesCorrect": true,
+    "questionClean": "2人たいりつの意見が対立している。"
+  },
+  {
+    "set": "set-15",
+    "qId": 15008,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "見事",
+    "options": [
+      "0: 身事",
+      "1: 味事",
+      "2: 夢事",
+      "3: 見事"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "みごとなポーズで着地した。"
+  },
+  {
+    "set": "set-15",
+    "qId": 15009,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "共同",
+    "options": [
+      "0: 強同",
+      "1: 強道",
+      "2: 共同",
+      "3: 共道"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "きょうどうで、新しい仕事をはじめた。"
+  },
+  {
+    "set": "set-15",
+    "qId": 15010,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "名刺",
+    "options": [
+      "0: 名氏",
+      "1: 名札",
+      "2: 名刺",
+      "3: 名紙"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "初めて会った人にめいしをもらった。"
+  },
+  {
+    "set": "set-15",
+    "qId": 15011,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 3,
+    "currentCorrectText": "救う",
+    "options": [
+      "0: 補う",
+      "1: 助う",
+      "2: 求う",
+      "3: 救う"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "あなたの行いは、だれかをすくうことができるかもしれない。"
+  },
+  {
+    "set": "set-15",
+    "qId": 15012,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 1,
+    "currentCorrectText": "定番",
+    "options": [
+      "0: 丁番",
+      "1: 定番",
+      "2: 丁版",
+      "3: 定版"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "クリスマスのていばんの商品は、このケーキだ。"
+  },
+  {
+    "set": "set-15",
+    "qId": 15013,
+    "qType": "mondai2-kanji",
+    "kanjiWord": null,
+    "rtText": null,
+    "correctIndex": 2,
+    "currentCorrectText": "足音",
+    "options": [
+      "0: 足声",
+      "1: 足後",
+      "2: 足音",
+      "3: 足元"
+    ],
+    "rtMatchesCorrect": false,
+    "questionClean": "夜中に家の外であしおとが聞こえた。"
+  }
+]
