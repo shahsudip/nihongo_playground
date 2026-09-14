@@ -155,6 +155,8 @@ const BookListPage = () => {
             'tango_n2': tangoN2Cover,
             'tango_n3': tangoN3Cover,
             'speed-master-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/speed_master_n3_pages/speed_master_n3_page-0001.jpg`,
+            'shinkanzen-master-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/shinkanzen_n3_reading_cover.jpg`,
+            'shinkanzen-master-n3-listening': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/shinkanzen_n3_listening_cover.jpg`,
           };
           const coverImg = bookCovers[book.id];
           const levelGradients = {
