@@ -92,13 +92,17 @@ const BookListPage = () => {
       <div className="books-grid">
         {/* Static Card for JLPT Practice Sets */}
         <div className="book-card" style={{ borderColor: 'var(--color-primary, #059669)', borderWidth: '2px' }}>
-          <div className="book-cover-artwork" style={{ background: 'linear-gradient(135deg, #10b981, #059669)' }}>
-            <span className="book-cover-badge">N3</span>
-            <h3 className="book-cover-title">JLPT N3 Practice Sets</h3>
-            <span className="book-cover-category">Mixed Practice</span>
+          <div className="book-cover-artwork" style={{ padding: 0, overflow: 'hidden', background: '#0f172a' }}>
+            <img 
+              src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/n3_practice_sets_cover.jpg`} 
+              alt="JLPT N3 Yosou Mondaishuu" 
+              loading="lazy"
+              decoding="async"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', objectPosition: 'top' }} 
+            />
           </div>
           <div className="book-card-details">
-            <h2 className="book-card-title">JLPT N3 Practice Sets</h2>
+            <h2 className="book-card-title">JLPT N3 Yosou Mondaishuu</h2>
             <p className="book-card-description">15 sets of comprehensive JLPT N3 practice covering Kanji, Vocabulary, and Grammar with premium layout.</p>
             
             <div className="book-progress-wrapper" style={{ marginTop: 'auto' }}>
