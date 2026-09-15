@@ -3,10 +3,15 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
 import { collection, query, getDocs, addDoc, doc, deleteDoc, orderBy } from 'firebase/firestore';
-import { formatDateTime } from '../utils/formatters.jsx';
+import { formatDateTime, parseRawDate } from '../utils/formatters.jsx';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
+import { STATIC_BOOKS } from '../data/static_books_catalog.js';
+import ExamPlanModal from './ExamPlanModal.jsx';
+import { getUpcomingJlptExams } from '../utils/jlptExamPlanner.js';
+import LiveJapanCountdownClock from './LiveJapanCountdownClock.jsx';
+import '../assets/profile_style.css';
 
-const parseCsvToQuizContent = (csvText, quizType) => {
+const parseCsvToQuizContent = (csvText) => {
   if (!csvText) return [];
   const lines = csvText.split('\n').map(line => line.trim()).filter(line => line);
   if (lines.length === 0) return [];
@@ -20,42 +25,123 @@ const parseCsvToQuizContent = (csvText, quizType) => {
   });
 };
 
-const ProfilePage = () => {
+const LEVEL_COLORS = {
+  N1: '#ef4444',
+  N2: '#a855f7',
+  N3: '#10b981',
+  N4: '#f59e0b',
+  N5: '#06b6d4',
+  'N4-N5': '#f59e0b',
+  JLPT: '#64748b'
+};
+
+export const inferItemLevel = (item) => {
+  if (!item) return 'N3';
+  let lvl = (item.level || '').toUpperCase();
+  if (lvl) return lvl === 'N4-N5' ? 'N4' : lvl;
+  const idStr = `${item.bookId || ''} ${item.quizId || ''} ${item.id || ''} ${item.title || ''}`.toLowerCase();
+  if (idStr.includes('n1')) return 'N1';
+  if (idStr.includes('n2')) return 'N2';
+  if (idStr.includes('n3')) return 'N3';
+  if (idStr.includes('n4')) return 'N4';
+  if (idStr.includes('n5')) return 'N5';
+  return 'N3';
+};
+
+const ProfileScreen = () => {
   const { currentUser, logout } = useAuth();
   const navigate = useNavigate();
 
-  const [standardQuizzes, setStandardQuizzes] = useState([]);
+  const [activeTab, setActiveTab] = useState('levels');
   const [customQuizzes, setCustomQuizzes] = useState([]);
   const [quizHistory, setQuizHistory] = useState([]);
+  const [activityFilterLevel, setActivityFilterLevel] = useState('All');
   const [isLoading, setIsLoading] = useState(true);
+  const [targetLevel, setTargetLevel] = useState(() => localStorage.getItem('user_target_level') || 'N3');
+
+  // In-UI Toast Notification State
+  const [toast, setToast] = useState(null);
+
+  // In-UI Confirmation Modal State
+  const [confirmDialog, setConfirmDialog] = useState({ isOpen: false, title: '', message: '', onConfirm: null });
+
+  // Exam Mode ON/OFF Toggle State
+  const [isExamMode, setIsExamMode] = useState(() => localStorage.getItem('user_exam_mode') !== 'false');
+
+  // Exam Plan Modal State
+  const [selectedBookForPlan, setSelectedBookForPlan] = useState(null);
+  const [isPlanModalOpen, setIsPlanModalOpen] = useState(false);
+
+  const upcomingExams = useMemo(() => getUpcomingJlptExams(), []);
+  const nearestExam = upcomingExams[0] || { name: 'July JLPT', formattedDate: 'Upcoming Sunday', daysLeft: 90 };
+
+  const handleToggleExamMode = () => {
+    const next = !isExamMode;
+    setIsExamMode(next);
+    localStorage.setItem('user_exam_mode', String(next));
+    showToast(`Exam Mode turned ${next ? 'ON 🎯' : 'OFF 💤'}`);
+  };
+
+  const handleOpenPlan = (book) => {
+    setSelectedBookForPlan(book);
+    setIsPlanModalOpen(true);
+  };
+
+
+  const showToast = (message, type = 'success') => {
+    setToast({ message, type });
+    setTimeout(() => {
+      setToast(null);
+    }, 3500);
+  };
+
+  // Custom Quiz Creator State
   const [newQuizTitle, setNewQuizTitle] = useState('');
   const [newQuizTag, setNewQuizTag] = useState('vocabulary');
   const [csvText, setCsvText] = useState('');
-  const [activeFilter, setActiveFilter] = useState('mastered');
 
   useEffect(() => {
-    if (!currentUser) {
-      setIsLoading(false);
-      return;
-    }
     const fetchData = async () => {
       setIsLoading(true);
       try {
-        const standardQuizzesQuery = query(collection(db, 'quizzes'));
-        const standardQuizzesSnapshot = await getDocs(standardQuizzesQuery);
-        const standardQuizzesData = standardQuizzesSnapshot.docs.map(doc => ({ ...doc.data(), id: doc.id }));
-        setStandardQuizzes(standardQuizzesData);
-        
-        const customQuizzesQuery = query(collection(db, 'users', currentUser.uid, 'customQuizzes'), orderBy('createdAt', 'desc'));
-        const customQuizzesSnapshot = await getDocs(customQuizzesQuery);
-        const customQuizzesData = customQuizzesSnapshot.docs.map(doc => ({ ...doc.data(), id: doc.id }));
-        setCustomQuizzes(customQuizzesData);
-        
-        const historyQuery = query(collection(db, 'users', currentUser.uid, 'quizHistory'));
-        const historySnapshot = await getDocs(historyQuery);
-        const historyData = historySnapshot.docs.map(doc => ({ ...doc.data(), id: doc.id }));
+        let historyData = [];
+
+        if (currentUser) {
+          try {
+            const customQuizzesQuery = query(collection(db, 'users', currentUser.uid, 'customQuizzes'), orderBy('createdAt', 'desc'));
+            const customQuizzesSnapshot = await getDocs(customQuizzesQuery);
+            const customQuizzesData = customQuizzesSnapshot.docs.map(doc => ({ ...doc.data(), id: doc.id }));
+            setCustomQuizzes(customQuizzesData);
+          } catch (err) {
+            console.warn("Could not fetch custom quizzes:", err);
+          }
+
+          try {
+            const historyQuery = query(collection(db, 'users', currentUser.uid, 'quizHistory'));
+            const historySnapshot = await getDocs(historyQuery);
+            historyData = historySnapshot.docs.map(doc => ({ ...doc.data(), id: doc.id }));
+          } catch (err) {
+            console.warn("Could not fetch quiz history from Firestore:", err);
+          }
+        }
+
+        // Merge local storage fallback if any
+        try {
+          const localHistory = JSON.parse(localStorage.getItem('quizHistory') || '[]');
+          if (Array.isArray(localHistory) && localHistory.length > 0) {
+            const existingKeys = new Set(historyData.map(h => h.quizId || h.id));
+            localHistory.forEach(item => {
+              const k = item.quizId || item.id;
+              if (k && !existingKeys.has(k)) {
+                historyData.push(item);
+              }
+            });
+          }
+        } catch (e) {
+          console.warn("Could not parse local quiz history:", e);
+        }
+
         setQuizHistory(historyData);
-        
       } catch (error) {
         console.error("Error fetching profile data:", error);
       } finally {
@@ -65,12 +151,262 @@ const ProfilePage = () => {
     fetchData();
   }, [currentUser]);
 
+  const handleTargetLevelChange = (newLevel) => {
+    setTargetLevel(newLevel);
+    localStorage.setItem('user_target_level', newLevel);
+  };
+
+  // Filtered Quiz History based on Target Level
+  const filteredQuizHistory = useMemo(() => {
+    if (targetLevel === 'All') return quizHistory;
+    return quizHistory.filter(item => {
+      const lvl = inferItemLevel(item);
+      if (targetLevel === 'N4' || targetLevel === 'N5') {
+        return lvl === targetLevel || lvl === 'N4-N5';
+      }
+      return lvl === targetLevel;
+    });
+  }, [quizHistory, targetLevel]);
+
+  // Calculate Daily Study Streak
+  const streak = useMemo(() => {
+    if (!quizHistory || quizHistory.length === 0) return 0;
+
+    const activityDates = new Set();
+    quizHistory.forEach(item => {
+      const rawDate = item.timestamp || item.createdAt;
+      if (rawDate) {
+        const d = new Date(rawDate);
+        if (!isNaN(d.getTime())) {
+          const dateStr = d.toISOString().split('T')[0];
+          activityDates.add(dateStr);
+        }
+      }
+    });
+
+    if (activityDates.size === 0) return 0;
+
+    const today = new Date();
+    const todayStr = today.toISOString().split('T')[0];
+
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    const yesterdayStr = yesterday.toISOString().split('T')[0];
+
+    let checkDate = new Date();
+    if (!activityDates.has(todayStr)) {
+      if (!activityDates.has(yesterdayStr)) {
+        return 0;
+      }
+      checkDate.setDate(checkDate.getDate() - 1);
+    }
+
+    let count = 0;
+    while (true) {
+      const checkStr = checkDate.toISOString().split('T')[0];
+      if (activityDates.has(checkStr)) {
+        count++;
+        checkDate.setDate(checkDate.getDate() - 1);
+      } else {
+        break;
+      }
+    }
+
+    return count;
+  }, [quizHistory]);
+
+  // Aggregated Stats for Selected Target Level
+  const stats = useMemo(() => {
+    let totalQuestions = 0;
+    let totalCorrect = 0;
+    let chaptersDone = 0;
+
+    filteredQuizHistory.forEach(item => {
+      const score = Number(item.score) || 0;
+      const total = Number(item.total) || 0;
+      totalQuestions += total;
+      totalCorrect += score;
+      const isMastered = total > 0 && score > 0 && (score / total >= 0.8) && item.status !== 'incomplete' && (!item.answered || item.answered >= total);
+      if (isMastered) {
+        chaptersDone += 1;
+      }
+    });
+
+    const accuracy = totalQuestions > 0 ? ((totalCorrect / totalQuestions) * 100).toFixed(1) : 0;
+    return { totalQuestions, totalCorrect, chaptersDone, accuracy };
+  }, [filteredQuizHistory]);
+
+  // JLPT Level Matrix Breakdown
+  const levelStats = useMemo(() => {
+    const levels = ['N1', 'N2', 'N3', 'N4', 'N5'];
+    const result = {};
+
+    levels.forEach(lvl => {
+      result[lvl] = {
+        total: 0,
+        correct: 0,
+        kanji: { total: 0, correct: 0 },
+        vocab: { total: 0, correct: 0 },
+        grammar: { total: 0, correct: 0 },
+        reading: { total: 0, correct: 0 },
+      };
+    });
+
+    quizHistory.forEach(item => {
+      const lvl = (item.level || '').toUpperCase();
+      const normalizedLvl = lvl === 'N4-N5' ? 'N4' : lvl;
+      if (!result[normalizedLvl]) return;
+
+      const score = Number(item.score) || 0;
+      const total = Number(item.total) || 0;
+      if (total <= 0) return;
+
+      result[normalizedLvl].total += total;
+      result[normalizedLvl].correct += score;
+
+      const cat = (item.category || item.type || '').toLowerCase();
+      if (cat.includes('kanji') || cat.includes('moji')) {
+        result[normalizedLvl].kanji.total += total;
+        result[normalizedLvl].kanji.correct += score;
+      } else if (cat.includes('vocab') || cat.includes('goi') || cat.includes('tango')) {
+        result[normalizedLvl].vocab.total += total;
+        result[normalizedLvl].vocab.correct += score;
+      } else if (cat.includes('grammar') || cat.includes('bunpou')) {
+        result[normalizedLvl].grammar.total += total;
+        result[normalizedLvl].grammar.correct += score;
+      } else if (cat.includes('reading') || cat.includes('dokkai')) {
+        result[normalizedLvl].reading.total += total;
+        result[normalizedLvl].reading.correct += score;
+      }
+    });
+
+    return result;
+  }, [quizHistory]);
+
+  // Book Progress Calculation (Filtered by Target Level)
+  const bookProgressMap = useMemo(() => {
+    const historyKeyMap = new Map();
+    quizHistory.forEach(item => {
+      const qid = item.quizId || item.id;
+      if (qid) historyKeyMap.set(qid, item);
+    });
+
+    const relevantBooks = STATIC_BOOKS.filter(book => {
+      if (targetLevel === 'All') return true;
+      if (targetLevel === 'N4' || targetLevel === 'N5') {
+        return book.level === targetLevel || book.level === 'N4-N5';
+      }
+      return book.level === targetLevel;
+    });
+
+    return relevantBooks.map(book => {
+      let completedCount = 0;
+      let totalQuestions = 0;
+      let totalScore = 0;
+
+      historyKeyMap.forEach((val, key) => {
+        if (key.startsWith(book.id)) {
+          if (val.status === 'mastered' || (val.total > 0 && val.score / val.total >= 0.8)) {
+            completedCount++;
+          }
+          totalQuestions += Number(val.total) || 0;
+          totalScore += Number(val.score) || 0;
+        }
+      });
+
+      const totalChapters = book.totalChapters || 1;
+      const percent = Math.min(100, Math.round((completedCount / totalChapters) * 100));
+      const accuracy = totalQuestions > 0 ? Math.round((totalScore / totalQuestions) * 100) : 0;
+
+      let thumbClass = 'thumb-shin';
+      if (book.id.includes('speed')) thumbClass = 'thumb-speed';
+      else if (book.id.includes('shinkanzen')) thumbClass = 'thumb-shinkanzen';
+      else if (book.id.includes('somatome') || book.id.includes('sou-matome')) thumbClass = 'thumb-somatome';
+      else if (book.id.includes('power')) thumbClass = 'thumb-power';
+      else if (book.id.includes('tango')) thumbClass = 'thumb-tango';
+
+      return {
+        ...book,
+        completedCount,
+        percent,
+        accuracy,
+        thumbClass
+      };
+    });
+  }, [quizHistory, targetLevel]);
+
+  const historyMap = useMemo(() => {
+    const map = {};
+    quizHistory.forEach(item => {
+      const qid = item.quizId || item.id;
+      if (qid) map[qid] = item;
+    });
+    return map;
+  }, [quizHistory]);
+
+  // Format clean activity title from item or ID
+  const getActivityTitle = (item) => {
+    if (item.title) return item.title;
+    if (item.quizTitle) return item.quizTitle;
+    const qid = item.quizId || item.id || '';
+    if (qid.startsWith('jlpt-n3-practice-sets')) {
+      const match = qid.match(/set-(\d+)/i);
+      const setNum = match ? match[1] : '';
+      return `JLPT N3 直前対策 第${setNum || '1'}回 (Chokuzen Taisaku Set ${setNum || '1'})`;
+    }
+    if (qid.startsWith('chokuzen-taisaku-n4')) {
+      const match = qid.match(/set-(\d+)/i);
+      const setNum = match ? match[1] : '';
+      return `JLPT N4 直前対策 第${setNum || '1'}回 (Chokuzen Taisaku Set ${setNum || '1'})`;
+    }
+    const cat = item.category ? `${item.category.charAt(0).toUpperCase() + item.category.slice(1)} ` : '';
+    if (item.quizId) {
+      const formatted = item.quizId
+        .split('-')
+        .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ');
+      return `${cat}${formatted}`;
+    }
+    if (item.id) {
+      const formattedId = item.id
+        .split('-')
+        .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ');
+      return `${cat}${formattedId}`;
+    }
+    return 'Practice Drill';
+  };
+
+  // Recent Activity Log (Strictly verified real database records across all levels)
+  const recentActivity = useMemo(() => {
+    return quizHistory
+      .filter(item => {
+        if (!item) return false;
+        if (!item.timestamp && !item.createdAt) return false;
+        if (item.total <= 0 && item.score === undefined) return false;
+        if (activityFilterLevel !== 'All') {
+          const lvl = inferItemLevel(item);
+          if (activityFilterLevel === 'N4' || activityFilterLevel === 'N5') {
+            if (lvl !== activityFilterLevel && lvl !== 'N4-N5') return false;
+          } else if (lvl !== activityFilterLevel) {
+            return false;
+          }
+        }
+        return true;
+      })
+      .sort((a, b) => {
+        const dateA = parseRawDate(a.timestamp || a.createdAt) || new Date(0);
+        const dateB = parseRawDate(b.timestamp || b.createdAt) || new Date(0);
+        return dateB.getTime() - dateA.getTime();
+      });
+  }, [quizHistory, activityFilterLevel]);
+
   const handleCreateQuiz = async () => {
-    if (!currentUser) { alert("You must be logged in to create a quiz."); return; }
-    if (!newQuizTitle.trim() || !csvText.trim()) { alert('Please provide a title and paste your vocabulary list.'); return; }
-    
-    const quizContent = parseCsvToQuizContent(csvText, newQuizTag);
-    if (quizContent.length === 0) { alert('Could not parse any questions. Please check the format.'); return; }
+    if (!currentUser) { showToast("You must be logged in to create a quiz.", "error"); return; }
+    if (!newQuizTitle.trim() || !csvText.trim()) { showToast("Please provide a title and paste your vocabulary list.", "error"); return; }
+
+    const quizContent = parseCsvToQuizContent(csvText);
+    if (quizContent.length === 0) { showToast("Could not parse any questions. Please check the CSV format.", "error"); return; }
 
     try {
       const newQuizData = {
@@ -82,26 +418,63 @@ const ProfilePage = () => {
       };
       const userQuizzesColRef = collection(db, 'users', currentUser.uid, 'customQuizzes');
       const docRef = await addDoc(userQuizzesColRef, newQuizData);
-      
-      setCustomQuizzes(prevQuizzes => [{...newQuizData, id: docRef.id}, ...prevQuizzes]);
+      setCustomQuizzes(prev => [{ id: docRef.id, ...newQuizData }, ...prev]);
       setNewQuizTitle('');
+      setNewQuizTag('General');
       setCsvText('');
+      setIsCreatingQuiz(false);
+      showToast("Custom quiz created successfully!", "success");
     } catch (error) {
-      console.error("Error creating quiz:", error);
-      alert("Failed to create quiz.");
+      console.error("Error creating custom quiz:", error);
+      showToast("Failed to create custom quiz.", "error");
     }
   };
 
-  const handleDeleteQuiz = async (quizIdToDelete) => {
-    if (!currentUser) { alert("You must be logged in to delete a quiz."); return; }
-    if (!window.confirm("Are you sure you want to delete this quiz? This cannot be undone.")) return;
-    try {
-      setCustomQuizzes(prevQuizzes => prevQuizzes.filter(q => q.id !== quizIdToDelete));
-      await deleteDoc(doc(db, 'users', currentUser.uid, 'customQuizzes', quizIdToDelete));
-    } catch (error) {
-      console.error("Error deleting quiz:", error);
-      alert("Failed to delete quiz.");
-    }
+  const handleDeleteQuiz = (quizIdToDelete) => {
+    if (!currentUser) return;
+    setConfirmDialog({
+      isOpen: true,
+      title: 'Delete Custom Quiz?',
+      message: 'Are you sure you want to permanently delete this quiz? This action cannot be undone.',
+      onConfirm: async () => {
+        setConfirmDialog({ isOpen: false, title: '', message: '', onConfirm: null });
+        try {
+          setCustomQuizzes(prev => prev.filter(q => q.id !== quizIdToDelete));
+          await deleteDoc(doc(db, 'users', currentUser.uid, 'customQuizzes', quizIdToDelete));
+          showToast("Quiz deleted successfully.");
+        } catch (error) {
+          console.error("Error deleting quiz:", error);
+          showToast("Failed to delete quiz.", "error");
+        }
+      }
+    });
+  };
+
+  const handleClearAllHistory = () => {
+    if (!currentUser) return;
+    setConfirmDialog({
+      isOpen: true,
+      title: 'Clear All Study History?',
+      message: 'This will reset all your answered questions, scores, and book progress across all JLPT levels.',
+      onConfirm: async () => {
+        setConfirmDialog({ isOpen: false, title: '', message: '', onConfirm: null });
+        try {
+          setIsLoading(true);
+          const historyColRef = collection(db, 'users', currentUser.uid, 'quizHistory');
+          const snapshot = await getDocs(historyColRef);
+          const deletePromises = snapshot.docs.map(d => deleteDoc(doc(db, 'users', currentUser.uid, 'quizHistory', d.id)));
+          await Promise.all(deletePromises);
+          localStorage.removeItem('quizHistory');
+          setQuizHistory([]);
+          showToast("All study history has been cleared.");
+        } catch (error) {
+          console.error("Error clearing history:", error);
+          showToast("Failed to clear history.", "error");
+        } finally {
+          setIsLoading(false);
+        }
+      }
+    });
   };
 
   const handleLogout = async () => {
@@ -110,180 +483,548 @@ const ProfilePage = () => {
       navigate('/');
     } catch (error) {
       console.error("Failed to log out", error);
-      alert("Failed to log out.");
+      showToast("Failed to log out.", "error");
     }
   };
-
-  const filteredList = useMemo(() => {
-    const historyMap = new Map(quizHistory.map(h => [h.quizId || h.id, h]));
-
-    if (activeFilter === 'unattended') {
-      const standardUnattended = standardQuizzes.filter(q => !historyMap.has(q.id));
-      const customUnattended = customQuizzes.filter(q => !historyMap.has(q.id));
-      return [...standardUnattended, ...customUnattended].sort((a, b) => (a.title > b.title) ? 1 : -1);
-    }
-    
-    const attendedQuizzes = quizHistory.map(historyItem => {
-      const quizId = historyItem.quizId || historyItem.exerciseId || historyItem.id;
-      let baseQuiz = standardQuizzes.find(q => q.id === quizId) || customQuizzes.find(q => q.id === quizId);
-
-      if (baseQuiz) {
-        return { ...baseQuiz, latestResult: historyItem };
-      }
-      
-      if (historyItem.type === 'jlpt') {
-        const title = `${historyItem.id?.replace('-', ' ')}`;
-        return {
-          id: quizId, title, type: 'jlpt',
-          level: historyItem.level, category: historyItem.category,
-          latestResult: historyItem
-        };
-      }
-      return null;
-    }).filter(Boolean);
-
-    if (activeFilter === 'mastered') {
-      return attendedQuizzes.filter(item => item.latestResult.status === 'mastered');
-    }
-    if (activeFilter === 'incomplete') {
-      return attendedQuizzes.filter(item => item.latestResult.status === 'incomplete');
-    }
-    return [];
-  }, [quizHistory, standardQuizzes, customQuizzes, activeFilter]);
 
   if (isLoading) {
     return <LoadingSpinner />;
   }
 
-  return (
-    <div className="profile-container">
-      <h1 className="profile-title">Welcome, {currentUser?.displayName || 'Student'}!</h1>
-      <div className="profile-grid-container">
-        <div className="profile-main-content">
-          <div className="profile-section">
-            <h2 className="profile-subtitle">Create a New Quiz</h2>
-            <div className="creator-form-inline">
-              <input type="text" value={newQuizTitle} onChange={(e) => setNewQuizTitle(e.target.value)} placeholder="Enter Quiz Title (e.g., Chapter 1 Vocab)" />
-              <div className="tag-selector">
-                <button className={`tag-button ${newQuizTag === 'vocabulary' ? 'active' : ''}`} onClick={() => setNewQuizTag('vocabulary')}>(Vocab)</button>
-                <button className={`tag-button ${newQuizTag === 'kanji' ? 'active' : ''}`} onClick={() => setNewQuizTag('kanji')}>(Kanji)</button>
-              </div>
-              <textarea value={csvText} onChange={(e) => setCsvText(e.target.value)} placeholder="Paste your list here...&#10;Format: Hiragana,Meaning,Kanji (Header is optional)" rows="8"></textarea>
-              <button onClick={handleCreateQuiz} className="action-button next-level create-button">Create and Save Quiz</button>
-            </div>
-          </div>
-          <div className="profile-section">
-            <h2 className="profile-subtitle">My Custom Quizzes</h2>
-            {customQuizzes.length === 0 ? (
-              <p className="empty-state-text">Your created quizzes will appear here.</p>
-            ) : (
-              <div className="history-list">
-                {customQuizzes.map((quiz) => {
-                  const historyRecord = quizHistory.find(h => (h.quizId || h.id) === quiz.id);
-                  const status = historyRecord?.status || 'unattended';
-                  const quizLink = `/custom-quiz/${quiz.id}`;
-                  const quizState = {
-                    quizId: quiz.id,
-                    quizTitle: quiz.title,
-                    type: 'custom',
-                    totalQuestions: quiz.quiz_content?.length || 0
-                  };
-                  
-                  return (
-                    <div key={quiz.id} className="history-item custom-quiz-card">
-                      <button onClick={() => handleDeleteQuiz(quiz.id)} className="delete-quiz-button" aria-label="Delete quiz">
-                        <i className="material-icons" style={{ fontSize: '36px', color: 'red' }}>delete</i>
-                      </button>
-                      <div className="card-header">
-                        <p className="custom-quiz-date">{formatDateTime(quiz.createdAt)}</p>
-                        <span className={`status-badge status-${status}`}>{status}</span>
-                      </div>
-                      <h3 className="custom-quiz-title">{quiz.title}</h3>
-                      <div className="custom-quiz-meta">
-                        <span className={`meta-tag tag-${quiz.tag}`}>{quiz.tag}</span>
-                        <span className="meta-count">{quiz.quiz_content?.length || 0} questions</span>
-                      </div>
-                      <div className="custom-quiz-actions">
-                        <Link to={quizLink} state={quizState} className="action-button next-level">Start Quiz</Link>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            )}
-          </div>
-        </div>
-        <div className="profile-sidebar">
-          <div className="profile-section">
-            <h2 className="profile-subtitle">Quiz Status</h2>
-            <div className="filter-tabs">
-              <button onClick={() => setActiveFilter('mastered')} className={`filter-mastered ${activeFilter === 'mastered' ? 'active' : ''}`}>Mastered</button>
-              <button onClick={() => setActiveFilter('incomplete')} className={`filter-incomplete ${activeFilter === 'incomplete' ? 'active' : ''}`}>Incomplete</button>
-              <button onClick={() => setActiveFilter('unattended')} className={`filter-unattended ${activeFilter === 'unattended' ? 'active' : ''}`}>Unattended</button>
-            </div>
-            {filteredList.length === 0 ? (
-              <div className="no-history-card"><p className="empty-state-text">No quizzes match this filter.</p></div>
-            ) : (
-              <div className="history-list">
-                {filteredList.map((item) => {
-                  let itemLink, itemState;
-                  const quizId = item.id;
-                  itemLink = `/quiz/${quizId}`;
-                  
-                  if (item.type === 'jlpt') {
-                    itemState = {
-                      quizId, quizTitle: item.title,
-                      level: item.level, category: item.category,
-                      type: 'jlpt',
-                    };
-                  } else if (item.userId) { // Custom quiz
-                    itemState = {
-                      quizId, quizTitle: item.title,
-                      type: 'custom',
-                      totalQuestions: item.quiz_content?.length || 0,
-                    };
-                  } else { // Standard quiz
-                    itemState = {
-                      quizId, quizTitle: item.title,
-                      level: item.level, category: item.category,
-                      difficulty: item.difficulty, type: 'standard',
-                      totalQuestions: item.quiz_content?.length || 0,
-                    };
-                  }
+  const userInitial = (currentUser?.displayName || currentUser?.email || 'S').charAt(0).toUpperCase();
 
-                  return activeFilter === 'unattended' ? (
-                    <div key={item.id} className="history-item unattended-item">
-                      <h3>{item.title}</h3>
-                      <Link to={itemLink} state={itemState} className="action-button next-level">Start Quiz</Link>
-                    </div>
-                  ) : (
-                    <div key={item.id} className="history-item">
-                      <div className="history-item-header">
-                        <h3>{item.title}</h3>
-                        <span className="history-item-date">{formatDateTime(item.latestResult.timestamp)}</span>
-                      </div>
-                      <div className="history-item-body">
-                        <p>Score: <strong>{item.latestResult.score} / {item.latestResult.total}</strong></p>
-                        <div className="progress-bar-container"><div className="progress-bar-fill" style={{ width: `${item.latestResult.total > 0 ? (item.latestResult.score / item.latestResult.total) * 100 : 0}%` }}></div></div>
-                      </div>
-                      {item.latestResult.status !== 'mastered' && (
-                        <div className="history-item-actions">
-                          <Link to={itemLink} state={itemState} className="action-button restart">Retry Quiz</Link>
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
-            )}
+  // Levels to display in score map based on target
+  const displayLevels = targetLevel === 'All' ? ['N1', 'N2', 'N3', 'N4', 'N5'] : [targetLevel];
+
+  return (
+    <div className="profile-page-wrapper">
+      {/* 1. Hero User Profile Card */}
+      <div className="profile-hero-card">
+        <div className="profile-avatar">{userInitial}</div>
+        <div className="profile-user-info">
+          <h1>
+            {currentUser?.displayName || currentUser?.email?.split('@')[0] || 'Learner'}
+            <span className="profile-target-badge">
+              🎯 Target: 
+              <select
+                value={targetLevel}
+                onChange={(e) => handleTargetLevelChange(e.target.value)}
+                style={{ background: 'transparent', border: 'none', color: '#10b981', fontWeight: 800, cursor: 'pointer', outline: 'none' }}
+              >
+                <option value="N3" style={{ color: '#000' }}>JLPT N3</option>
+                <option value="N2" style={{ color: '#000' }}>JLPT N2</option>
+                <option value="N1" style={{ color: '#000' }}>JLPT N1</option>
+                <option value="N4" style={{ color: '#000' }}>JLPT N4</option>
+                <option value="N5" style={{ color: '#000' }}>JLPT N5</option>
+                <option value="All" style={{ color: '#000' }}>All Levels</option>
+              </select>
+            </span>
+            <button
+              type="button"
+              onClick={handleToggleExamMode}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '4px 12px',
+                borderRadius: '20px',
+                border: isExamMode ? '1px solid #10b981' : '1px solid var(--color-border, #475569)',
+                background: isExamMode ? 'rgba(16, 185, 129, 0.18)' : 'rgba(255, 255, 255, 0.05)',
+                color: isExamMode ? '#10b981' : 'var(--color-text-secondary, #94a3b8)',
+                fontSize: '0.75rem',
+                fontWeight: 800,
+                cursor: 'pointer',
+                transition: 'all 0.2s ease'
+              }}
+              title={isExamMode ? 'Exam Mode is ON - Click to switch to casual mode' : 'Exam Mode is OFF - Click to enable Exam Mode'}
+            >
+              <span>{isExamMode ? '⚡ Exam Mode: ON' : '💤 Exam Mode: OFF'}</span>
+              <span style={{
+                display: 'inline-block',
+                width: '8px',
+                height: '8px',
+                borderRadius: '50%',
+                background: isExamMode ? '#10b981' : '#64748b',
+                boxShadow: isExamMode ? '0 0 8px #10b981' : 'none'
+              }}></span>
+            </button>
+          </h1>
+          <p>
+            Active Learner • {currentUser?.email}
+          </p>
+        </div>
+        <div className="profile-hero-stats">
+          <div className="profile-hero-stat-pill">
+            <div className="profile-stat-val" style={{ color: '#f59e0b' }}>🔥 {streak}</div>
+            <div className="profile-stat-lbl">Day Streak</div>
+          </div>
+          <div className="profile-hero-stat-pill">
+            <div className="profile-stat-val">{stats.totalQuestions}</div>
+            <div className="profile-stat-lbl">{targetLevel === 'All' ? 'Questions' : `${targetLevel} Questions`}</div>
+          </div>
+          <div className="profile-hero-stat-pill">
+            <div className="profile-stat-val">{stats.accuracy}%</div>
+            <div className="profile-stat-lbl">{targetLevel === 'All' ? 'Accuracy' : `${targetLevel} Accuracy`}</div>
+          </div>
+          <div className="profile-hero-stat-pill">
+            <div className="profile-stat-val">{stats.chaptersDone}</div>
+            <div className="profile-stat-lbl">Mastered</div>
           </div>
         </div>
       </div>
-      <div className="profile-logout-section">
-        <button onClick={handleLogout} className="action-button home logout-button">Logout</button>
+
+
+      {/* 2. Tab Navigation */}
+      <div className="profile-tab-nav">
+        <button
+          className={`profile-tab-btn ${activeTab === 'levels' ? 'active' : ''}`}
+          onClick={() => setActiveTab('levels')}
+        >
+          🗺️ {targetLevel === 'All' ? 'N1–N5 Level Score Map' : `${targetLevel} Score Map`}
+        </button>
+        <button
+          className={`profile-tab-btn ${activeTab === 'books' ? 'active' : ''}`}
+          onClick={() => setActiveTab('books')}
+        >
+          📚 {targetLevel === 'All' ? 'Book Collections' : `${targetLevel} Books (${bookProgressMap.length})`}
+        </button>
+        <button
+          className={`profile-tab-btn ${activeTab === 'history' ? 'active' : ''}`}
+          onClick={() => setActiveTab('history')}
+        >
+          🕒 Recent Activity ({recentActivity.length})
+        </button>
+        <button
+          className={`profile-tab-btn ${activeTab === 'custom' ? 'active' : ''}`}
+          onClick={() => setActiveTab('custom')}
+        >
+          ✨ Custom Quizzes ({customQuizzes.length})
+        </button>
       </div>
+
+      {/* TAB 1: Level Score Map (Filtered by Target) */}
+      {activeTab === 'levels' && (
+        <div>
+          {/* Big Live Japan Countdown Clock Block (Only when Exam Mode is ON) */}
+          {isExamMode && (
+            <LiveJapanCountdownClock
+              targetExam={nearestExam}
+              onOpenPlan={() => {
+                const defaultBook = bookProgressMap[0] || STATIC_BOOKS[0];
+                handleOpenPlan(defaultBook);
+              }}
+            />
+          )}
+
+          <div className="profile-section-title">
+            <span>{targetLevel === 'All' ? 'JLPT Level Mastery Matrix' : `${targetLevel} Mastery Breakdown`}</span>
+            <span style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary, #94a3b8)' }}>
+              Real-time calculation from completed drills & quizzes
+            </span>
+          </div>
+
+          <div className="profile-level-matrix-grid">
+            {displayLevels.map(lvl => {
+              const data = levelStats[lvl] || { total: 0, correct: 0, kanji: { total: 0, correct: 0 }, vocab: { total: 0, correct: 0 }, grammar: { total: 0, correct: 0 }, reading: { total: 0, correct: 0 } };
+              const overallPercent = data.total > 0 ? Math.round((data.correct / data.total) * 100) : 0;
+              const kanjiPercent = data.kanji.total > 0 ? Math.round((data.kanji.correct / data.kanji.total) * 100) : 0;
+              const vocabPercent = data.vocab.total > 0 ? Math.round((data.vocab.correct / data.vocab.total) * 100) : 0;
+              const grammarPercent = data.grammar.total > 0 ? Math.round((data.grammar.correct / data.grammar.total) * 100) : 0;
+              const readingPercent = data.reading.total > 0 ? Math.round((data.reading.correct / data.reading.total) * 100) : 0;
+              const color = LEVEL_COLORS[lvl] || '#10b981';
+
+              return (
+                <div key={lvl} className="profile-level-card">
+                  <div className="profile-level-card-header">
+                    <span className="profile-level-pill" style={{ background: color }}>{lvl}</span>
+                    <span className="profile-level-score" style={{ color }}>{overallPercent}%</span>
+                  </div>
+                  <div className="profile-progress-bar">
+                    <div className="profile-progress-fill" style={{ width: `${overallPercent}%`, background: color }}></div>
+                  </div>
+                  <div className="profile-skill-rows">
+                    <div className="profile-skill-row">
+                      <span>🈁 文字・Kanji</span>
+                      <span className="profile-skill-val">{data.kanji.total > 0 ? `${kanjiPercent}% (${data.kanji.correct}/${data.kanji.total})` : '—'}</span>
+                    </div>
+                    <div className="profile-skill-row">
+                      <span>📖 語彙・Vocab</span>
+                      <span className="profile-skill-val">{data.vocab.total > 0 ? `${vocabPercent}% (${data.vocab.correct}/${data.vocab.total})` : '—'}</span>
+                    </div>
+                    <div className="profile-skill-row">
+                      <span>📐 文法・Grammar</span>
+                      <span className="profile-skill-val">{data.grammar.total > 0 ? `${grammarPercent}% (${data.grammar.correct}/${data.grammar.total})` : '—'}</span>
+                    </div>
+                    <div className="profile-skill-row">
+                      <span>📑 読解・Reading</span>
+                      <span className="profile-skill-val">{data.reading.total > 0 ? `${readingPercent}% (${data.reading.correct}/${data.reading.total})` : '—'}</span>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* TAB 2: Book Collections Progress (Filtered by Target) */}
+      {activeTab === 'books' && (
+        <div>
+          <div className="profile-section-title">
+            <span>{targetLevel === 'All' ? 'All Book Collections Progress' : `${targetLevel} Book Collections`}</span>
+            <Link to="/books" className="profile-btn profile-btn-secondary" style={{ fontSize: '0.8rem' }}>
+              📚 View All Books Catalog &rarr;
+            </Link>
+          </div>
+
+          {bookProgressMap.length === 0 ? (
+            <div style={{ textAlign: 'center', padding: '40px', background: 'var(--color-bg-card)', borderRadius: '12px' }}>
+              <p>No {targetLevel} books found.</p>
+            </div>
+          ) : (
+            <div className="profile-books-grid">
+              {bookProgressMap.map(book => (
+                <div key={book.id} className="profile-book-card">
+                  <div>
+                    <div className="profile-book-top">
+                      <div className={`profile-book-thumb ${book.thumbClass}`}>
+                        {book.level}<br />{book.category.slice(0, 3)}
+                      </div>
+                      <div className="profile-book-meta">
+                        <span className="profile-book-category-tag">{book.level} • {book.category}</span>
+                        <h3>{book.title}</h3>
+                        <p style={{ fontSize: '0.8rem', color: 'var(--color-text-secondary, #94a3b8)' }}>
+                          {book.description}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="profile-progress-bar">
+                      <div
+                        className="profile-progress-fill"
+                        style={{ width: `${book.percent}%`, background: LEVEL_COLORS[book.level] || '#10b981' }}
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div className="profile-book-bottom">
+                    <div className="profile-book-progress-text">
+                      <strong>{book.completedCount} / {book.totalChapters}</strong> Sets/Chapters ({book.percent}%)
+                    </div>
+                    <Link
+                      to={book.customRoute || `/books/${book.id}`}
+                      state={{ from: 'profile' }}
+                      className="profile-btn profile-btn-primary"
+                      style={{ padding: '6px 12px', fontSize: '0.78rem' }}
+                    >
+                      {book.completedCount > 0 ? 'Continue' : 'Start'} &rarr;
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+
+
+      {/* TAB 3: Recent Activity Log (Filtered by Level) */}
+      {activeTab === 'history' && (
+        <div>
+          <div className="profile-section-title" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
+            <span>🕒 Chronological Study Activity ({recentActivity.length})</span>
+            <div style={{ display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' }}>
+              <div style={{ display: 'flex', gap: '6px', background: 'var(--color-bg-primary, #0f172a)', padding: '4px', borderRadius: '8px', border: '1px solid var(--color-border, #334155)' }}>
+                {['All', 'N1', 'N2', 'N3', 'N4', 'N5'].map(lvl => (
+                  <button
+                    key={lvl}
+                    onClick={() => setActivityFilterLevel(lvl)}
+                    style={{
+                      background: activityFilterLevel === lvl ? '#10b981' : 'transparent',
+                      color: activityFilterLevel === lvl ? '#ffffff' : 'var(--color-text-secondary, #94a3b8)',
+                      border: 'none',
+                      borderRadius: '6px',
+                      padding: '4px 10px',
+                      fontSize: '0.78rem',
+                      fontWeight: 700,
+                      cursor: 'pointer',
+                      transition: 'all 0.15s ease'
+                    }}
+                  >
+                    {lvl}
+                  </button>
+                ))}
+              </div>
+              {quizHistory.length > 0 && (
+                <button
+                  onClick={handleClearAllHistory}
+                  className="profile-btn profile-btn-danger"
+                  style={{ fontSize: '0.78rem', padding: '6px 12px' }}
+                >
+                  🗑️ Clear All History
+                </button>
+              )}
+            </div>
+          </div>
+
+          {recentActivity.length === 0 ? (
+            <div style={{ textAlign: 'center', padding: '40px', background: 'var(--color-bg-card)', borderRadius: '12px', border: '1px solid var(--color-border, #334155)' }}>
+              <p style={{ color: 'var(--color-text-secondary, #94a3b8)', margin: 0 }}>
+                No {activityFilterLevel !== 'All' ? `${activityFilterLevel} ` : ''}study sessions recorded yet. Start practicing from Books or Practice sets!
+              </p>
+            </div>
+          ) : (
+            <div className="profile-table-container">
+              <table className="profile-diagnostic-table">
+                <thead>
+                  <tr>
+                    <th>Date & Time</th>
+                    <th>Activity</th>
+                    <th>Level</th>
+                    <th>Score</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {recentActivity.map(item => {
+                    const score = Number(item.score) || 0;
+                    const total = Number(item.total) || 0;
+                    const pct = total > 0 ? Math.round((score / total) * 100) : 0;
+                    const itemLvl = inferItemLevel(item);
+                    
+                    let statusLabel = '⏳ Incomplete';
+                    let statusClass = 'badge-incomplete';
+
+                    const isMastered = total > 0 && score > 0 && pct >= 80 && item.status !== 'incomplete' && (!item.answered || item.answered >= total);
+                    const isCompleted = total > 0 && score > 0 && item.status !== 'incomplete' && (!item.answered || item.answered >= total);
+
+                    if (isMastered) {
+                      statusLabel = '🏆 Mastered';
+                      statusClass = 'badge-mastered';
+                    } else if (isCompleted) {
+                      statusLabel = '📝 Completed';
+                      statusClass = 'badge-completed';
+                    } else if (item.status === 'incomplete' || score === 0) {
+                      statusLabel = '⏳ Incomplete';
+                      statusClass = 'badge-incomplete';
+                    } else {
+                      statusLabel = '💡 Review Needed';
+                      statusClass = 'badge-review';
+                    }
+
+                    return (
+                      <tr key={item.id || item.timestamp || Math.random()}>
+                        <td>{formatDateTime(item.timestamp || item.createdAt)}</td>
+                        <td><strong>{getActivityTitle(item)}</strong></td>
+                        <td>
+                          <span className="profile-level-pill" style={{ background: LEVEL_COLORS[itemLvl] || '#64748b', fontSize: '0.75rem', padding: '2px 8px' }}>
+                            {itemLvl}
+                          </span>
+                        </td>
+                        <td><strong>{score} / {total}</strong> ({pct}%)</td>
+                        <td>
+                          <span className={`profile-badge-status ${statusClass}`}>
+                            {statusLabel}
+                          </span>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* TAB 4: Custom Quizzes */}
+      {activeTab === 'custom' && (
+        <div>
+          <div className="profile-section-title">
+            <span>Create & Manage Custom Quizzes</span>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px', marginBottom: '32px' }}>
+            {/* Create Quiz Form */}
+            <div style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-border)', borderRadius: '14px', padding: '20px' }}>
+              <h3 style={{ marginBottom: '12px', fontSize: '1.1rem', fontWeight: 700 }}>Add New Quiz</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                <input
+                  type="text"
+                  value={newQuizTitle}
+                  onChange={(e) => setNewQuizTitle(e.target.value)}
+                  placeholder="Quiz Title (e.g. Minna no Nihongo L1)"
+                  style={{ padding: '10px', borderRadius: '8px', border: '1px solid var(--color-border)', background: 'var(--color-bg-primary)', color: 'inherit' }}
+                />
+                <div style={{ display: 'flex', gap: '8px' }}>
+                  <button
+                    type="button"
+                    className={`profile-btn ${newQuizTag === 'vocabulary' ? 'profile-btn-primary' : 'profile-btn-secondary'}`}
+                    onClick={() => setNewQuizTag('vocabulary')}
+                    style={{ flex: 1, justifyContent: 'center' }}
+                  >
+                    Vocab
+                  </button>
+                  <button
+                    type="button"
+                    className={`profile-btn ${newQuizTag === 'kanji' ? 'profile-btn-primary' : 'profile-btn-secondary'}`}
+                    onClick={() => setNewQuizTag('kanji')}
+                    style={{ flex: 1, justifyContent: 'center' }}
+                  >
+                    Kanji
+                  </button>
+                </div>
+                <textarea
+                  value={csvText}
+                  onChange={(e) => setCsvText(e.target.value)}
+                  placeholder="Paste CSV format:&#10;Hiragana,Meaning,Kanji&#10;taberu,to eat,食べる"
+                  rows="6"
+                  style={{ padding: '10px', borderRadius: '8px', border: '1px solid var(--color-border)', background: 'var(--color-bg-primary)', color: 'inherit', fontFamily: 'monospace' }}
+                />
+                <button onClick={handleCreateQuiz} className="profile-btn profile-btn-primary" style={{ justifyContent: 'center' }}>
+                  Create and Save Quiz
+                </button>
+              </div>
+            </div>
+
+            {/* Custom Quizzes List */}
+            <div>
+              <h3 style={{ marginBottom: '12px', fontSize: '1.1rem', fontWeight: 700 }}>My Saved Quizzes</h3>
+              {customQuizzes.length === 0 ? (
+                <p style={{ color: 'var(--color-text-secondary)' }}>No custom quizzes created yet.</p>
+              ) : (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  {customQuizzes.map(quiz => (
+                    <div key={quiz.id} style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-border)', borderRadius: '12px', padding: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <div>
+                        <h4 style={{ fontWeight: 700, fontSize: '1rem' }}>{quiz.title}</h4>
+                        <span style={{ fontSize: '0.8rem', color: 'var(--color-text-secondary)' }}>
+                          {quiz.quiz_content?.length || 0} questions • {quiz.tag}
+                        </span>
+                      </div>
+                      <div style={{ display: 'flex', gap: '8px' }}>
+                        <Link
+                          to={`/custom-quiz/${quiz.id}`}
+                          state={{ quizId: quiz.id, quizTitle: quiz.title, type: 'custom', totalQuestions: quiz.quiz_content?.length || 0 }}
+                          className="profile-btn profile-btn-primary"
+                          style={{ padding: '6px 12px', fontSize: '0.78rem' }}
+                        >
+                          Start
+                        </Link>
+                        <button
+                          onClick={() => handleDeleteQuiz(quiz.id)}
+                          className="profile-btn profile-btn-danger"
+                          style={{ padding: '6px 12px', fontSize: '0.78rem' }}
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Logout Action */}
+      <div style={{ marginTop: '40px', textAlign: 'center' }}>
+        <button onClick={handleLogout} className="profile-btn profile-btn-danger">
+          Logout
+        </button>
+      </div>
+
+      {/* In-UI Confirmation Modal */}
+      {confirmDialog.isOpen && (
+        <div style={{
+          position: 'fixed',
+          inset: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.65)',
+          backdropFilter: 'blur(4px)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 9999,
+          padding: '20px'
+        }}>
+          <div style={{
+            background: 'var(--color-bg-card, #1e293b)',
+            border: '1px solid var(--color-border, #334155)',
+            borderRadius: '16px',
+            maxWidth: '440px',
+            width: '100%',
+            padding: '24px',
+            boxShadow: '0 20px 40px -10px rgba(0,0,0,0.5)',
+            animation: 'fadeIn 0.2s ease-out'
+          }}>
+            <h3 style={{ fontSize: '1.2rem', fontWeight: 800, marginBottom: '8px', color: 'var(--color-text-primary)' }}>
+              {confirmDialog.title}
+            </h3>
+            <p style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', marginBottom: '20px', lineHeight: 1.5 }}>
+              {confirmDialog.message}
+            </p>
+            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '10px' }}>
+              <button
+                onClick={() => setConfirmDialog({ isOpen: false, title: '', message: '', onConfirm: null })}
+                className="profile-btn profile-btn-secondary"
+                style={{ padding: '8px 16px', fontSize: '0.85rem' }}
+              >
+                Cancel
+              </button>
+              <button
+                onClick={confirmDialog.onConfirm}
+                className="profile-btn profile-btn-danger"
+                style={{ padding: '8px 16px', fontSize: '0.85rem' }}
+              >
+                Confirm
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* In-UI Toast Notification */}
+      {toast && (
+        <div style={{
+          position: 'fixed',
+          bottom: '30px',
+          right: '30px',
+          zIndex: 10000,
+          background: toast.type === 'error' ? 'rgba(239, 68, 68, 0.95)' : 'rgba(16, 185, 129, 0.95)',
+          color: '#ffffff',
+          padding: '12px 20px',
+          borderRadius: '12px',
+          fontWeight: 700,
+          fontSize: '0.9rem',
+          boxShadow: '0 10px 25px rgba(0,0,0,0.3)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
+          backdropFilter: 'blur(8px)',
+          animation: 'slideUp 0.3s ease-out'
+        }}>
+          <span>{toast.type === 'error' ? '⚠️' : '✓'}</span>
+          <span>{toast.message}</span>
+        </div>
+      )}
+
+      {/* Interactive Exam Plan Modal */}
+      {selectedBookForPlan && (
+        <ExamPlanModal
+          isOpen={isPlanModalOpen}
+          onClose={() => {
+            setIsPlanModalOpen(false);
+            setSelectedBookForPlan(null);
+          }}
+          book={selectedBookForPlan}
+          completedCount={selectedBookForPlan.completedCount || 0}
+          history={historyMap}
+        />
+      )}
     </div>
   );
 };
 
-export default ProfilePage;
+export default ProfileScreen;

@@ -7,6 +7,7 @@ import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { useTheme } from '../context/ThemeContext.jsx';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 import { STATIC_BOOKS } from '../data/static_books_catalog.js';
+import { ExitConfirmModal } from './ui/ExitConfirmModal.jsx';
 import '../assets/shin500_drill.css';
 
 const Shin500QuizPage = ({ bookId: propBookId }) => {
@@ -37,6 +38,20 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
   const [answers, setAnswers] = useState({}); // { [qId]: { selectedIndex, selectedText, isCorrect } }
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
+  const [showExitModal, setShowExitModal] = useState(false);
+
+  // Warn user if trying to close browser/tab with active answers
+  useEffect(() => {
+    const handleBeforeUnload = (e) => {
+      const answeredCount = Object.keys(answers).length;
+      if (answeredCount > 0 && !isFinished) {
+        e.preventDefault();
+        e.returnValue = '';
+      }
+    };
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, [answers, isFinished]);
 
   // Helper to extract correct index & text
   const getCorrectAnswerInfo = useCallback((q) => {
@@ -202,11 +217,28 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
   const saveProgress = useCallback(async (isFinal = false) => {
     if (!currentUser || !chapter || questions.length === 0) return;
 
+    const answeredCount = Object.keys(answers).length;
+    // If no questions were answered, do not record a false attempt
+    if (answeredCount === 0) return;
+
     try {
       let correctCount = 0;
       Object.values(answers).forEach(ans => {
         if (ans.isCorrect) correctCount++;
       });
+
+      const isAllAnswered = answeredCount === questions.length;
+      const accuracy = questions.length > 0 ? (correctCount / questions.length) : 0;
+      
+      // Strict Mastered rule: Must have completed ALL questions and scored >= 80%
+      let status = 'incomplete';
+      if (isAllAnswered || isFinal) {
+        if (accuracy >= 0.8 && correctCount > 0) {
+          status = 'mastered';
+        } else if (isAllAnswered) {
+          status = 'completed';
+        }
+      }
 
       const historyDocId = `${bookId}-${chapterId}`;
       const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
@@ -220,7 +252,9 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
         timestamp: new Date().toISOString(),
         score: correctCount,
         total: questions.length,
-        status: isFinal ? 'mastered' : 'incomplete'
+        answered: answeredCount,
+        accuracy: Math.round(accuracy * 100),
+        status
       };
 
       await setDoc(historyDocRef, record, { merge: true });
@@ -228,6 +262,21 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
       console.warn("Could not save Shin 500 progress:", err);
     }
   }, [currentUser, chapter, questions, answers, bookId, chapterId]);
+
+  const handleAttemptExit = () => {
+    const answeredCount = Object.keys(answers).length;
+    if (answeredCount > 0 && !isFinished) {
+      setShowExitModal(true);
+    } else {
+      navigate(`/books/${bookId}`);
+    }
+  };
+
+  const handleConfirmExit = () => {
+    saveProgress(false);
+    setShowExitModal(false);
+    navigate(`/books/${bookId}`);
+  };
 
   // Handle Option Click (locked after first selection)
   const handleSelectOption = (optIdx, optText) => {
@@ -386,13 +435,14 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
         {/* Top Header & Breadcrumb with Light / Dark Theme Switcher at Top Right */}
         <div className="flex items-center justify-between flex-wrap gap-4 mb-6">
           <div>
-            <Link
-              to={`/books/${bookId}`}
-              className="inline-flex items-center text-sm font-medium transition-colors mb-1 hover:underline"
+            <button
+              type="button"
+              onClick={handleAttemptExit}
+              className="inline-flex items-center text-sm font-medium transition-colors mb-1 hover:underline cursor-pointer bg-transparent border-0 p-0"
               style={{ color: 'var(--shin-text-muted)' }}
             >
               &larr; {bookTitle}
-            </Link>
+            </button>
             <h1 className="text-xl font-bold flex items-center gap-2" style={{ color: 'var(--shin-text-primary)' }}>
               <span>{chapter.title}</span>
               <span className="text-xs px-2.5 py-0.5 rounded-md font-bold text-white bg-emerald-600">
@@ -481,15 +531,20 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
               {currentQ.options?.map((opt, optIdx) => {
                 const optText = typeof opt === 'object' ? opt.text : opt;
                 const isSelected = currentAnswer?.selectedIndex === optIdx;
+                const isCorrect = (optIdx === currentCorrectInfo.index || optText === currentCorrectInfo.text);
                 
                 let optionStateClass = '';
                 if (currentAnswer) {
-                  if (optIdx === currentCorrectInfo.index || optText === currentCorrectInfo.text) {
+                  if (isCorrect) {
                     optionStateClass = 'is-correct';
                   } else if (isSelected && !currentAnswer.isCorrect) {
                     optionStateClass = 'is-wrong';
                   }
                 }
+
+                const showInlineExplanation = isCorrect && currentAnswer && currentQ.explanation && 
+                  currentQ.explanation !== "Answer will be updated soon." && 
+                  !currentQ.explanation.startsWith("Question ");
 
                 return (
                   <button
@@ -499,55 +554,39 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
                     disabled={Boolean(currentAnswer)}
                     className={`shin-option-btn ${optionStateClass}`}
                   >
-                    <span className="shin-key-badge">{optIdx + 1}</span>
-                    <span
-                      className="shin500-japanese-text flex-1"
-                      dangerouslySetInnerHTML={{ __html: optText }}
-                    />
-                    {currentAnswer && (
-                      <span className="ml-2 font-bold text-sm">
-                        {(optIdx === currentCorrectInfo.index || optText === currentCorrectInfo.text) ? '✓' : isSelected ? '✕' : ''}
-                      </span>
+                    <div className="flex items-center justify-between w-full">
+                      <div className="flex items-center gap-3 flex-1 min-w-0">
+                        <span className="shin-key-badge">{optIdx + 1}</span>
+                        <span
+                          className="shin500-japanese-text font-medium flex-1 text-left"
+                          dangerouslySetInnerHTML={{ __html: optText }}
+                        />
+                      </div>
+                      {currentAnswer && (
+                        <span className={`ml-2 text-[0.75rem] font-bold px-2 py-0.5 rounded flex items-center gap-1 shrink-0 ${
+                          isCorrect
+                            ? 'bg-emerald-600 text-white shadow-sm'
+                            : isSelected
+                            ? 'bg-rose-600 text-white shadow-sm'
+                            : 'opacity-0'
+                        }`}>
+                          {isCorrect ? '✓ 正解' : isSelected ? '✕ 不正解' : ''}
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Inline explanation directly inside the option */}
+                    {showInlineExplanation && (
+                      <div
+                        className="mt-2 pt-2 border-t text-xs leading-relaxed opacity-90 shin500-japanese-text w-full text-left"
+                        style={{ borderColor: 'rgba(5, 150, 105, 0.25)' }}
+                        dangerouslySetInnerHTML={{ __html: currentQ.explanation }}
+                      />
                     )}
                   </button>
                 );
               })}
             </div>
-
-            {/* Explanation Drawer (immediately shown when answered) */}
-            {currentAnswer && (
-              <div className="shin-explanation-card">
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-bold uppercase tracking-wider" style={{ color: 'var(--shin-text-muted)' }}>
-                      Answer &amp; Explanation
-                    </span>
-                    <span className={`text-xs font-bold px-2.5 py-0.5 rounded border ${
-                      currentAnswer.isCorrect 
-                        ? 'bg-emerald-100 text-emerald-900 border-emerald-300 dark:bg-emerald-950/80 dark:text-emerald-300 dark:border-emerald-700' 
-                        : 'bg-rose-100 text-rose-900 border-rose-300 dark:bg-rose-950/80 dark:text-rose-300 dark:border-rose-700'
-                    }`}>
-                      {currentAnswer.isCorrect ? 'Correct! ✓' : 'Incorrect ✕'}
-                    </span>
-                  </div>
-                  <span className="text-xs font-semibold" style={{ color: 'var(--shin-accent)' }}>
-                    Correct: Option {currentCorrectInfo.index !== null ? currentCorrectInfo.index + 1 : ''} ({currentCorrectInfo.text})
-                  </span>
-                </div>
-
-                {currentQ.explanation && currentQ.explanation !== "Answer will be updated soon." ? (
-                  <p
-                    className="text-sm leading-relaxed shin500-japanese-text"
-                    style={{ color: 'var(--shin-text-secondary)' }}
-                    dangerouslySetInnerHTML={{ __html: currentQ.explanation }}
-                  />
-                ) : (
-                  <p className="text-sm leading-relaxed" style={{ color: 'var(--shin-text-secondary)' }}>
-                    正解：<strong>{currentCorrectInfo.text}</strong>
-                  </p>
-                )}
-              </div>
-            )}
 
             {/* Bottom Actions */}
             <div className="flex items-center justify-between pt-6 border-t mt-6" style={{ borderColor: 'var(--shin-border)' }}>
@@ -587,6 +626,16 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
           </div>
         )}
       </div>
+
+      {/* Exit Confirmation Modal */}
+      <ExitConfirmModal
+        isOpen={showExitModal}
+        onClose={() => setShowExitModal(false)}
+        onConfirm={handleConfirmExit}
+        answeredCount={answeredCount}
+        totalQuestions={questions.length}
+        theme={theme}
+      />
     </div>
   );
 };

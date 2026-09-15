@@ -1,13 +1,16 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { db } from '../firebaseConfig.js';
-import { doc, getDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { useAuth } from '../context/AuthContext.jsx';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
+import { ExitConfirmModal } from './ui/ExitConfirmModal.jsx';
 import '../assets/n4_practice_sets.css';
 
 const N4PracticeSetQuizPage = () => {
   const { setId, sectionId } = useParams();
   const navigate = useNavigate();
+  const { currentUser } = useAuth();
 
   const [answers, setAnswers] = useState({});
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,6 +21,20 @@ const N4PracticeSetQuizPage = () => {
   const [fontSizeLevel, setFontSizeLevel] = useState(1); // 0: Normal, 1: Large, 2: Extra Large
   const [timerSeconds, setTimerSeconds] = useState(0);
   const [timerActive, setTimerActive] = useState(true);
+  const [showExitModal, setShowExitModal] = useState(false);
+
+  // Warn user if trying to close browser/tab with active answers
+  useEffect(() => {
+    const handleBeforeUnload = (e) => {
+      const answeredCount = Object.keys(answers).length;
+      if (answeredCount > 0 && !isFinished) {
+        e.preventDefault();
+        e.returnValue = '';
+      }
+    };
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, [answers, isFinished]);
 
   // Timer Effect
   useEffect(() => {
@@ -151,6 +168,75 @@ const N4PracticeSetQuizPage = () => {
   const accuracyPercent = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
   const overallPercent = questions.length > 0 ? Math.round((correctCount / questions.length) * 100) : 0;
 
+  // Save Progress to Firestore
+  const saveQuizHistory = useCallback(async () => {
+    if (!currentUser || !currentSet || questions.length === 0) return;
+    try {
+      const historyDocId = `chokuzen-taisaku-n4-${setId}${sectionId ? `-${sectionId}` : ''}`;
+      const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
+
+      const sectionLabel = sectionId === 'grammar' || sectionId === 'grammar-reading'
+        ? 'Grammar & Reading'
+        : sectionId === 'full'
+        ? 'Full Practice'
+        : 'Vocabulary & Kanji';
+
+      const isAllAnswered = answeredCount === questions.length;
+      let status = 'incomplete';
+      if (isAllAnswered || isFinished) {
+        if (overallPercent >= 80 && correctCount > 0) {
+          status = 'mastered';
+        } else if (isAllAnswered) {
+          status = 'completed';
+        }
+      }
+
+      const record = {
+        quizId: historyDocId,
+        bookId: 'chokuzen-taisaku-n4',
+        setId,
+        sectionId: sectionId || 'full',
+        title: `JLPT N4 直前対策 — ${currentSet.title || `第${currentSet.id?.replace(/\D/g, '') || setId}回`} (${sectionLabel})`,
+        level: 'N4',
+        category: 'Chokuzen Taisaku',
+        type: 'book',
+        score: correctCount,
+        total: questions.length,
+        answered: answeredCount,
+        percentage: overallPercent,
+        status,
+        timeElapsed: timerSeconds,
+        timestamp: new Date().toISOString(),
+        createdAt: new Date().toISOString()
+      };
+
+      await setDoc(historyDocRef, record, { merge: true });
+      console.log('Successfully saved N4 quiz history to Firestore:', historyDocId);
+    } catch (err) {
+      console.error('Error saving N4 practice set progress:', err);
+    }
+  }, [currentUser, currentSet, questions.length, answeredCount, isFinished, setId, sectionId, correctCount, overallPercent, timerSeconds]);
+
+  // Trigger save on completion
+  useEffect(() => {
+    if (isFinished) {
+      saveQuizHistory();
+    }
+  }, [isFinished, saveQuizHistory]);
+
+  const handleAttemptExit = () => {
+    if (answeredCount > 0 && !isFinished) {
+      setShowExitModal(true);
+    } else {
+      navigate('/chokuzen-taisaku-n4');
+    }
+  };
+
+  const handleConfirmExit = () => {
+    setShowExitModal(false);
+    navigate('/chokuzen-taisaku-n4');
+  };
+
   // Star question renderer
   const renderStarQuestion = (text) => {
     if (!text.includes('★') && !text.includes('___')) {
@@ -267,6 +353,12 @@ const N4PracticeSetQuizPage = () => {
             >
               &larr; Back to Sets List
             </Link>
+            <Link
+              to="/profile"
+              className="n4-btn-secondary"
+            >
+              👤 View in Profile
+            </Link>
           </div>
         </div>
       </div>
@@ -278,13 +370,14 @@ const N4PracticeSetQuizPage = () => {
       {/* Quiz Top Navigation Bar */}
       <div className="n4-quiz-header">
         <div className="flex items-center gap-3">
-          <Link
-            to="/chokuzen-taisaku-n4"
-            className="text-xs sm:text-sm font-bold flex items-center gap-1 transition-colors"
+          <button
+            type="button"
+            onClick={handleAttemptExit}
+            className="text-xs sm:text-sm font-bold flex items-center gap-1 transition-colors bg-transparent border-0 p-0 cursor-pointer"
             style={{ color: 'var(--n4-text-muted)' }}
           >
             &larr; Exit
-          </Link>
+          </button>
           <span className="opacity-40">|</span>
           <span
             className="font-extrabold text-xs sm:text-sm truncate max-w-[240px] sm:max-w-none"
@@ -501,39 +594,40 @@ const N4PracticeSetQuizPage = () => {
                   optClass = 'selected';
                 }
 
+                const showInlineExplanation = showFeedback && isCorrect && currentQ.explanation;
+
                 return (
                   <button
                     key={optIdx}
                     onClick={() => handleSelectOption(optIdx)}
                     disabled={showFeedback}
-                    className={`n4-option-btn ${optClass}`}
+                    className={`n4-option-btn flex-col items-stretch text-left ${optClass}`}
                   >
-                    <span className="n4-opt-num">{optIdx + 1}</span>
-                    <span className="flex-grow" dangerouslySetInnerHTML={{ __html: opt }} />
-                    {showFeedback && isCorrect && <span className="text-emerald-500 text-lg font-black">✓</span>}
-                    {showFeedback && isSelected && !isCorrect && <span className="text-rose-500 text-lg font-black">✗</span>}
+                    <div className="flex items-center w-full">
+                      <span className="n4-opt-num">{optIdx + 1}</span>
+                      <span className="flex-grow" dangerouslySetInnerHTML={{ __html: opt }} />
+                      {showFeedback && isCorrect && (
+                        <span className="ml-2 text-xs font-bold px-2 py-0.5 rounded bg-emerald-600 text-white shadow-sm shrink-0">
+                          ✓ 正解
+                        </span>
+                      )}
+                      {showFeedback && isSelected && !isCorrect && (
+                        <span className="ml-2 text-xs font-bold px-2 py-0.5 rounded bg-rose-600 text-white shadow-sm shrink-0">
+                          ✕ 不正解
+                        </span>
+                      )}
+                    </div>
+
+                    {showInlineExplanation && (
+                      <div 
+                        className="mt-2 pt-2 border-t text-xs leading-relaxed opacity-90 border-emerald-500/20 font-normal text-left"
+                        dangerouslySetInnerHTML={{ __html: currentQ.explanation }}
+                      />
+                    )}
                   </button>
                 );
               })}
             </div>
-
-            {/* Immediate Mode Explanation Card */}
-            {feedbackMode === 'Immediate' && answers[currentIndex] !== undefined && (
-              <div className={`n4-explanation-card ${answers[currentIndex] === currentQ.correctIndex ? 'correct' : 'wrong'}`}>
-                <span className="text-xl">
-                  {answers[currentIndex] === currentQ.correctIndex ? '🎉' : '💡'}
-                </span>
-                <div>
-                  <div className="font-extrabold mb-0.5">
-                    {answers[currentIndex] === currentQ.correctIndex ? '正解 (Correct!)' : '不正解 (Incorrect)'}
-                  </div>
-                  <div className="flex items-center gap-1.5 flex-wrap">
-                    <span>正しい答え: <strong>{currentQ.correctIndex + 1}.</strong></span>
-                    <span className="font-bold" dangerouslySetInnerHTML={{ __html: currentQ.options[currentQ.correctIndex] }} />
-                  </div>
-                </div>
-              </div>
-            )}
           </div>
 
           {/* Bottom Action Controls */}
@@ -568,6 +662,15 @@ const N4PracticeSetQuizPage = () => {
           </div>
         </div>
       </div>
+
+      {/* Exit Confirmation Modal */}
+      <ExitConfirmModal
+        isOpen={showExitModal}
+        onClose={() => setShowExitModal(false)}
+        onConfirm={handleConfirmExit}
+        answeredCount={answeredCount}
+        totalQuestions={questions.length}
+      />
     </div>
   );
 };

@@ -1,6 +1,9 @@
 // src/components/SpeedMasterN3ReadingBook.jsx
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext.jsx';
+import { db } from '../firebaseConfig.js';
+import { doc, setDoc } from 'firebase/firestore';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 import { useTheme } from '../context/ThemeContext.jsx';
 import '../assets/speed_master_book.css';
@@ -112,6 +115,7 @@ const SECTION_TABS = [
 const SpeedMasterN3ReadingBook = () => {
   const { chapterId = 'short-1' } = useParams();
   const navigate = useNavigate();
+  const { currentUser } = useAuth();
 
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -121,7 +125,6 @@ const SpeedMasterN3ReadingBook = () => {
   const { theme } = useTheme();
   const [fontSize, setFontSize] = useState(() => localStorage.getItem('speed_master_font_size') || 'normal');
   const [showVocab, setShowVocab] = useState(true);
-  const [showScanModal, setShowScanModal] = useState(false);
   const [showScoreModal, setShowScoreModal] = useState(false);
 
   // Timer States
@@ -131,7 +134,8 @@ const SpeedMasterN3ReadingBook = () => {
 
   // Answering & Exam Modes
   const isMock = chapterId === 'mock-exam';
-  const [examMode, setExamMode] = useState(isMock);
+  const isGlobalExam = localStorage.getItem('user_exam_mode') !== 'false';
+  const [examMode, setExamMode] = useState(isGlobalExam || isMock);
   const [mockViewMode, setMockViewMode] = useState('focus'); // 'focus' | 'full'
   const [answers, setAnswers] = useState({});
   const [revealed, setRevealed] = useState({});
@@ -170,7 +174,8 @@ const SpeedMasterN3ReadingBook = () => {
     setActiveQuestionIdx(0);
 
     const isCurrentMock = chapterId === 'mock-exam';
-    setExamMode(isCurrentMock);
+    const isGlobal = localStorage.getItem('user_exam_mode') !== 'false';
+    setExamMode(isGlobal || isCurrentMock);
 
     // Reset timer to chapter target
     const targetMins = currentChapter.targetMinutes || 3;
@@ -226,7 +231,6 @@ const SpeedMasterN3ReadingBook = () => {
         e.preventDefault();
         setTimerRunning(r => !r);
       } else if (e.key === 'Escape') {
-        setShowScanModal(false);
         setShowScoreModal(false);
       }
     };
@@ -258,7 +262,7 @@ const SpeedMasterN3ReadingBook = () => {
   };
 
   // Submit All Answers (Exam Mode)
-  const handleSubmitExam = () => {
+  const handleSubmitExam = async () => {
     if (!data?.questions) return;
     const newRevealed = {};
     data.questions.forEach((_, idx) => {
@@ -268,6 +272,58 @@ const SpeedMasterN3ReadingBook = () => {
     setSubmitted(true);
     setTimerRunning(false);
     setShowScoreModal(true);
+
+    // Save history strictly for Exam Mode (never in normal/study mode)
+    if (examMode) {
+      const qList = data.questions || [];
+      const tQ = qList.length;
+      let cC = 0;
+      qList.forEach((q, idx) => {
+        if (answers[`q-${idx}`] === q.correct) {
+          cC++;
+        }
+      });
+      const pct = tQ > 0 ? Math.round((cC / tQ) * 100) : 0;
+      const historyDocId = `speed-master-${chapterId}`;
+      const record = {
+        quizId: historyDocId,
+        bookId: 'speed-master-n3-reading',
+        chapterId,
+        title: `Speed Master N3: ${data?.title || currentChapter.title}`,
+        type: 'reading',
+        category: 'reading',
+        level: 'N3',
+        timestamp: new Date().toISOString(),
+        createdAt: new Date().toISOString(),
+        score: cC,
+        total: tQ,
+        answered: Object.keys(answers).length,
+        percentage: pct,
+        status: (pct >= 80 && cC > 0) ? 'mastered' : 'completed'
+      };
+
+      if (currentUser) {
+        try {
+          const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
+          await setDoc(historyDocRef, record, { merge: true });
+        } catch (err) {
+          console.warn("Failed to save Speed Master exam to Firestore:", err);
+        }
+      }
+
+      try {
+        const localHistory = JSON.parse(localStorage.getItem('quizHistory') || '[]');
+        const existingIdx = localHistory.findIndex(h => (h.quizId || h.id) === historyDocId);
+        if (existingIdx >= 0) {
+          localHistory[existingIdx] = record;
+        } else {
+          localHistory.unshift(record);
+        }
+        localStorage.setItem('quizHistory', JSON.stringify(localHistory));
+      } catch (e) {
+        console.warn("Failed to save Speed Master exam to localStorage:", e);
+      }
+    }
   };
 
   // Reset Answers for Retry
@@ -321,8 +377,6 @@ const SpeedMasterN3ReadingBook = () => {
   const targetSecs = (currentChapter.targetMinutes || 3) * 60;
   const isOvertime = timerMode === 'countdown' && timerSeconds < 0;
   const isWarning = timerMode === 'countdown' && timerSeconds >= 0 && timerSeconds <= Math.min(60, targetSecs * 0.2);
-
-  const currentScanUrl = resolveAssetUrl(data?.imageSrc || currentChapter?.pageScan);
 
   // Render Question Card Helper
   const renderQuestionCard = (currentQ, qIdx, showNav = false, isSingleView = false) => {
@@ -396,46 +450,41 @@ const SpeedMasterN3ReadingBook = () => {
                 btnClass = 'selected-exam font-semibold';
               }
 
+              const showInlineExplanation = isRevealed && optNum === currentQ.correct && currentQ.explanation;
+
               return (
                 <button
                   key={optIdx}
                   onClick={() => handleOptionClick(qIdx, optNum)}
                   disabled={isRevealed && !examMode}
-                  className={`speed-master-option-btn ${btnClass}`}
+                  className={`speed-master-option-btn flex-col items-stretch text-left ${btnClass}`}
                 >
-                  <span className="speed-master-opt-num">
-                    {optNum}
-                  </span>
-                  <span 
-                    className="flex-1"
-                    dangerouslySetInnerHTML={{ __html: opt }}
-                  />
-                  {isRevealed && optNum === currentQ.correct && (
-                    <span className="text-emerald-600 dark:text-emerald-400 font-bold text-sm shrink-0">✓ 正解</span>
-                  )}
-                  {isRevealed && userAns === optNum && optNum !== currentQ.correct && (
-                    <span className="text-red-500 dark:text-red-400 font-bold text-sm shrink-0">✗ 不正解</span>
+                  <div className="flex items-center w-full">
+                    <span className="speed-master-opt-num">
+                      {optNum}
+                    </span>
+                    <span 
+                      className="flex-1"
+                      dangerouslySetInnerHTML={{ __html: opt }}
+                    />
+                    {isRevealed && optNum === currentQ.correct && (
+                      <span className="text-emerald-600 dark:text-emerald-400 font-bold text-xs shrink-0 ml-2">✓ 正解</span>
+                    )}
+                    {isRevealed && userAns === optNum && optNum !== currentQ.correct && (
+                      <span className="text-red-500 dark:text-red-400 font-bold text-xs shrink-0 ml-2">✗ 不正解</span>
+                    )}
+                  </div>
+
+                  {showInlineExplanation && (
+                    <div 
+                      className="mt-2 pt-2 border-t text-xs leading-relaxed text-left text-[var(--sm-text-secondary)] opacity-90 border-emerald-500/20 font-normal"
+                      dangerouslySetInnerHTML={{ __html: currentQ.explanation }} 
+                    />
                   )}
                 </button>
               );
             })}
           </div>
-
-          {/* Explanation Box */}
-          {isRevealed && (
-            <div className={`speed-master-explanation ${isCorrect ? 'correct' : 'wrong'}`}>
-              <div className="speed-master-explanation-title">
-                <span>{isCorrect ? '🎉 Excellent! (正解)' : '💡 Explanation (解説)'}</span>
-                <span className="speed-master-explanation-badge">
-                  Correct: Option {currentQ.correct}
-                </span>
-              </div>
-              <div 
-                className="speed-master-explanation-body"
-                dangerouslySetInnerHTML={{ __html: currentQ.explanation }} 
-              />
-            </div>
-          )}
 
           {/* Exam Mode Submit Button inside Card (for Single View) */}
           {examMode && !submitted && isSingleView && (
@@ -748,15 +797,7 @@ const SpeedMasterN3ReadingBook = () => {
           <div className="bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800 rounded-2xl p-8 text-center text-amber-900 dark:text-amber-200 shadow-sm">
             <div className="text-5xl mb-3">📖</div>
             <h3 className="text-xl font-bold mb-2">Content Preparation</h3>
-            <p className="text-sm text-amber-700 dark:text-amber-300 mb-6 max-w-md mx-auto">{error}</p>
-            {currentScanUrl && (
-              <button
-                onClick={() => setShowScanModal(true)}
-                className="px-5 py-2.5 bg-amber-600 hover:bg-amber-500 text-white rounded-xl text-sm font-bold transition inline-flex items-center gap-2 shadow cursor-pointer"
-              >
-                <span>🔍 View Original Textbook Scan</span>
-              </button>
-            )}
+            <p className="text-sm text-amber-700 dark:text-amber-300 max-w-md mx-auto">{error}</p>
           </div>
         ) : data ? (
           <div className="space-y-6">
@@ -799,14 +840,6 @@ const SpeedMasterN3ReadingBook = () => {
                   >
                     ↺ Retake Chapter
                   </button>
-                  {currentScanUrl && (
-                    <button
-                      onClick={() => setShowScanModal(true)}
-                      className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg text-xs transition cursor-pointer"
-                    >
-                      🔍 View Page Scan
-                    </button>
-                  )}
                 </div>
               </div>
             )}
@@ -1090,45 +1123,9 @@ const SpeedMasterN3ReadingBook = () => {
               </div>
             )}
 
-            {/* Original Scan Button Footer */}
-            {currentScanUrl && (
-              <div className="text-center pt-4">
-                <button
-                  onClick={() => setShowScanModal(true)}
-                  className="px-4 py-2 bg-[var(--sm-card-alt-bg)] hover:bg-[var(--sm-option-hover)] text-[var(--sm-text-primary)] border border-[var(--sm-border)] rounded-xl text-xs font-bold transition inline-flex items-center gap-2 cursor-pointer shadow-sm"
-                >
-                  <span>📖 View Original Textbook Page Scan</span>
-                </button>
-              </div>
-            )}
-
           </div>
         ) : null}
       </main>
-
-      {/* Modal for Original Textbook Page Scan */}
-      {showScanModal && currentScanUrl && (
-        <div className="speed-master-modal-overlay" onClick={() => setShowScanModal(false)}>
-          <div className="speed-master-modal-content p-4" onClick={e => e.stopPropagation()}>
-            <div className="flex items-center justify-between pb-3 border-b border-[var(--sm-border)] mb-3">
-              <h3 className="font-bold text-[var(--sm-text-primary)] text-sm">
-                Original Textbook Scan — {currentChapter.title}
-              </h3>
-              <button
-                onClick={() => setShowScanModal(false)}
-                className="px-3 py-1 bg-[var(--sm-card-alt-bg)] hover:bg-[var(--sm-option-hover)] text-[var(--sm-text-primary)] border border-[var(--sm-border)] rounded-lg text-xs font-bold cursor-pointer"
-              >
-                Close ✕
-              </button>
-            </div>
-            <img
-              src={currentScanUrl}
-              alt="Speed Master Textbook Scan"
-              className="max-h-[80vh] w-auto mx-auto rounded border border-[var(--sm-border)] shadow"
-            />
-          </div>
-        </div>
-      )}
     </div>
   );
 };

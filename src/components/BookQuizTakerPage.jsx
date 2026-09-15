@@ -10,6 +10,7 @@ import { Button } from './ui/Button';
 import { ProgressBar } from './ui/ProgressBar';
 import { OptionButton } from './ui/OptionButton';
 import { QuestionNavigator } from './ui/QuestionNavigator';
+import { ExitConfirmModal } from './ui/ExitConfirmModal';
 
 const BookQuizTakerPage = () => {
   const { bookId, chapterId } = useParams();
@@ -25,6 +26,20 @@ const BookQuizTakerPage = () => {
   const [answers, setAnswers] = useState({});
   const [currentIndex, setCurrentIndex] = useState(0);
   const [feedbackMode, setFeedbackMode] = useState('Immediate'); // 'Immediate' or 'At End'
+  const [showExitModal, setShowExitModal] = useState(false);
+
+  // Warn user if trying to close browser/tab with active answers
+  useEffect(() => {
+    const handleBeforeUnload = (e) => {
+      const count = Object.keys(answers).length;
+      if (count > 0 && count < questions.length) {
+        e.preventDefault();
+        e.returnValue = '';
+      }
+    };
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, [answers, questions.length]);
 
   // Fetch chapter content
   useEffect(() => {
@@ -141,9 +156,12 @@ const BookQuizTakerPage = () => {
     fetchChapterData();
   }, [bookId, chapterId]);
 
-  // Save progress
+  // Save progress on exit/completion
   const saveProgress = useCallback(async (isFinal = false) => {
-    if (!currentUser || !chapter) return;
+    if (!currentUser || !chapter || questions.length === 0) return;
+
+    const answeredCount = Object.keys(answers).length;
+    if (answeredCount === 0) return; // Don't save empty attempt
 
     try {
       let correctCount = 0;
@@ -157,6 +175,18 @@ const BookQuizTakerPage = () => {
         }
       });
 
+      const isAllAnswered = answeredCount === questions.length;
+      const accuracy = questions.length > 0 ? (correctCount / questions.length) : 0;
+      
+      let status = 'incomplete';
+      if (isAllAnswered || isFinal) {
+        if (accuracy >= 0.8 && correctCount > 0) {
+          status = 'mastered';
+        } else if (isAllAnswered) {
+          status = 'completed';
+        }
+      }
+
       const historyDocId = `${bookId}-${chapterId}`;
       const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
       
@@ -169,7 +199,8 @@ const BookQuizTakerPage = () => {
         timestamp: new Date().toISOString(),
         score: correctCount,
         total: questions.length,
-        status: isFinal ? 'mastered' : 'incomplete'
+        answered: answeredCount,
+        status
       };
 
       await setDoc(historyDocRef, record, { merge: true });
@@ -186,6 +217,21 @@ const BookQuizTakerPage = () => {
 
   const handleFinish = () => {
     saveProgress(true);
+    navigate(`/books/${bookId}`);
+  };
+
+  const handleAttemptExit = () => {
+    const answeredCount = Object.keys(answers).length;
+    if (answeredCount > 0 && answeredCount < questions.length) {
+      setShowExitModal(true);
+    } else {
+      navigate(`/books/${bookId}`);
+    }
+  };
+
+  const handleConfirmExit = () => {
+    saveProgress(false);
+    setShowExitModal(false);
     navigate(`/books/${bookId}`);
   };
 
@@ -245,9 +291,13 @@ const BookQuizTakerPage = () => {
       
       {/* Top Header */}
       <div className="mb-6">
-        <Link to={`/books/${bookId}`} className="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors mb-4 inline-block">
+        <button
+          type="button"
+          onClick={handleAttemptExit}
+          className="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors mb-4 inline-block bg-transparent border-0 p-0 cursor-pointer"
+        >
           &larr; Exit Quiz
-        </Link>
+        </button>
         
         <div className="flex items-center justify-between flex-wrap gap-4">
           <div>
@@ -400,6 +450,15 @@ const BookQuizTakerPage = () => {
           const correctText = q.correctOption ? q.correctOption.text : q.options[q.correctIndex];
           return ans[q.id] === correctText;
         }}
+      />
+
+      {/* Exit Confirmation Modal */}
+      <ExitConfirmModal
+        isOpen={showExitModal}
+        onClose={() => setShowExitModal(false)}
+        onConfirm={handleConfirmExit}
+        answeredCount={answeredCount}
+        totalQuestions={totalQuestions}
       />
     </div>
   );

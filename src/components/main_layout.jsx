@@ -1,18 +1,20 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { NavLink, Outlet, useLocation } from 'react-router-dom';
+import { NavLink, Outlet, useLocation, Link } from 'react-router-dom';
 import logo from '../assets/logo_transparent.png';
 import ThemeToggle from './ThemeToggle.jsx';
+import { useAuth } from '../context/AuthContext.jsx';
 
 const navLinks = [
-  { to: '/levels',   label: 'Practice' },
+  { to: '/levels',   label: 'Levels' },
   { to: '/books',    label: 'Books' },
-  { to: '/profile',  label: 'Profile' },
 ];
 
 const MainHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const location = useLocation();
+  const { currentUser } = useAuth();
+  const userInitial = (currentUser?.displayName || currentUser?.email || 'U').charAt(0).toUpperCase();
 
   // Close menu on route change
   useEffect(() => { setMenuOpen(false); }, [location]);
@@ -32,7 +34,7 @@ const MainHeader = () => {
   const inactiveCls = 'text-[var(--color-text-secondary)] hover:text-emerald-400';
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[var(--color-bg-primary)]/95 backdrop-blur-md transition-all">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[var(--color-bg-primary)]/95 backdrop-blur-md transition-all border-b border-[var(--color-border)]">
       <div className="w-full px-4 md:px-12 h-16 md:h-20 flex justify-between items-center">
 
         {/* Logo */}
@@ -46,8 +48,8 @@ const MainHeader = () => {
           </NavLink>
         </div>
 
-        {/* Desktop nav + Global Theme Toggle */}
-        <div className="hidden md:flex items-center gap-6">
+        {/* Desktop nav + User Profile Pill + Global Theme Toggle at last */}
+        <div className="hidden md:flex items-center gap-5">
           <nav className="flex items-center gap-8">
             {navLinks.map(({ to, label }) => (
               <NavLink
@@ -64,11 +66,38 @@ const MainHeader = () => {
 
           <div className="h-6 w-px bg-[var(--color-border)] opacity-60" />
 
+          {currentUser && (
+            <NavLink
+              to="/profile"
+              className={({ isActive }) =>
+                `flex items-center gap-2 pl-2 pr-3 py-1.5 rounded-full border transition-all text-xs font-bold ${
+                  isActive
+                    ? 'bg-emerald-500/20 border-emerald-500 text-emerald-400 shadow-sm'
+                    : 'bg-emerald-500/10 border-emerald-500/30 hover:border-emerald-500 text-emerald-400'
+                }`
+              }
+            >
+              <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-400 text-white flex items-center justify-center text-xs font-extrabold shadow-sm">
+                {userInitial}
+              </div>
+              <span className="max-w-[100px] truncate">{currentUser.displayName || currentUser.email?.split('@')[0]}</span>
+            </NavLink>
+          )}
+
           <ThemeToggle />
         </div>
 
-        {/* Mobile controls: Theme Toggle + Hamburger button */}
-        <div className="md:hidden flex items-center gap-3">
+        {/* Mobile controls: User Avatar + Theme Toggle + Hamburger button */}
+        <div className="md:hidden flex items-center gap-2">
+          {currentUser && (
+            <Link
+              to="/profile"
+              className="w-8 h-8 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-400 text-white flex items-center justify-center text-xs font-extrabold shadow-sm border border-emerald-500/30"
+            >
+              {userInitial}
+            </Link>
+          )}
+
           <ThemeToggle compact={true} />
 
           <button
@@ -107,6 +136,24 @@ const MainHeader = () => {
               {label}
             </NavLink>
           ))}
+          {currentUser && (
+            <NavLink
+              to="/profile"
+              onClick={() => setMenuOpen(false)}
+              className={({ isActive }) =>
+                `px-4 py-3 rounded-xl text-[15px] font-medium transition-colors flex items-center gap-2 ${
+                  isActive
+                    ? 'bg-emerald-500/15 text-emerald-400'
+                    : 'text-[var(--color-text-secondary)] hover:bg-[var(--color-bg-secondary)] hover:text-emerald-400'
+                }`
+              }
+            >
+              <div className="w-5 h-5 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-400 text-white flex items-center justify-center text-[10px] font-extrabold">
+                {userInitial}
+              </div>
+              Profile ({currentUser.displayName || currentUser.email?.split('@')[0]})
+            </NavLink>
+          )}
         </nav>
       </div>
     </header>
@@ -116,7 +163,7 @@ const MainHeader = () => {
 const MainLayout = () => (
   <>
     <MainHeader />
-    <main className="content-overlay main-content-container">
+    <main className="content-overlay main-content-container pt-20 md:pt-24">
       <Outlet />
     </main>
   </>

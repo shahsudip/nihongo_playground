@@ -9,30 +9,62 @@ export default function ThemeToggle({ className = '', compact = false }) {
     <button
       type="button"
       onClick={toggleTheme}
-      className={`relative inline-flex items-center rounded-full p-0.5 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 shadow-inner select-none cursor-pointer ${
-        compact ? 'w-12 h-6' : 'w-14 h-7'
-      } ${
-        isDark
-          ? 'bg-slate-800 border border-slate-700 hover:border-slate-600'
-          : 'bg-[#ede3ce] border border-[#decfae] hover:border-[#cbbe9f]'
+      className={`relative inline-flex items-center justify-center p-2 rounded-full transition-all duration-300 focus:outline-none select-none cursor-pointer bg-transparent hover:scale-110 active:scale-90 ${
+        compact ? 'w-8 h-8' : 'w-9 h-9'
       } ${className}`}
       title={isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
       aria-label="Toggle light/dark theme"
     >
-      {/* Animated Sliding Thumb (Contains the SINGLE active Sun or Moon icon) */}
-      <span
-        className={`rounded-full flex items-center justify-center transition-all duration-300 ease-out shadow-sm transform ${
-          compact ? 'w-5 h-5 text-[11px]' : 'w-6 h-6 text-xs'
-        } ${
-          isDark
-            ? (compact ? 'translate-x-6' : 'translate-x-7') + ' bg-slate-900 text-amber-300 border border-slate-700'
-            : 'translate-x-0.5 bg-[#fcf9f2] text-amber-500 border border-[#decfae]'
-        }`}
-      >
-        <span className="transition-transform duration-300 transform active:scale-90 select-none">
-          {isDark ? '🌙' : '☀️'}
-        </span>
-      </span>
+      <div className="relative w-6 h-6 flex items-center justify-center transition-all duration-500 transform hover:rotate-12">
+        {isDark ? (
+          /* Crescent Moon with Stars */
+          <svg
+            className="w-6 h-6 text-amber-300 drop-shadow-[0_0_8px_rgba(252,211,77,0.4)] transition-all duration-300"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path
+              d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+              fill="currentColor"
+              fillOpacity="0.3"
+            />
+            {/* Sparkle Star 1 */}
+            <path
+              d="M19 3v4m-2-2h4"
+              strokeWidth="2"
+              strokeLinecap="round"
+              className="text-amber-200"
+            />
+            {/* Small star 2 */}
+            <circle cx="19" cy="11" r="0.75" fill="currentColor" />
+          </svg>
+        ) : (
+          /* Radiant Sun */
+          <svg
+            className="w-6 h-6 text-amber-500 drop-shadow-[0_0_8px_rgba(245,158,11,0.35)] transition-all duration-300"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <circle cx="12" cy="12" r="4" fill="currentColor" fillOpacity="0.35" />
+            <path d="M12 2v2" />
+            <path d="M12 20v2" />
+            <path d="m4.93 4.93 1.41 1.41" />
+            <path d="m17.66 17.66 1.41 1.41" />
+            <path d="M2 12h2" />
+            <path d="M20 12h2" />
+            <path d="m6.34 17.66-1.41 1.41" />
+            <path d="m19.07 4.93-1.41 1.41" />
+          </svg>
+        )}
+      </div>
     </button>
   );
 }

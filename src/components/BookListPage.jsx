@@ -28,6 +28,7 @@ const BookListPage = () => {
 
   const [activeLevel, setActiveLevel] = useState('All');
 
+
   // Cover gradient mapping based on book level/index to look premium
   const gradients = [
     'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)', // Deep Blue
@@ -80,9 +81,9 @@ const BookListPage = () => {
 
   if (loading) return <LoadingSpinner />;
 
-  const filteredBooks = books.filter(b => activeLevel === 'All' || b.level === activeLevel);
+  const filteredBooks = books.filter(b => !b.customRoute && (activeLevel === 'All' || b.level === activeLevel));
   const showStaticN3 = activeLevel === 'All' || activeLevel === 'N3';
-  const showStaticN4 = activeLevel === 'All' || activeLevel === 'N4-N5';
+  const showStaticN4 = activeLevel === 'All' || activeLevel === 'N4' || activeLevel === 'N4-N5';
 
   return (
     <div className="books-list-container">
@@ -237,7 +238,7 @@ const BookListPage = () => {
                 </div>
 
                 <div className="book-card-footer">
-                  <Link to={`/books/${book.id}`} className="view-chapters-button">
+                  <Link to={`/books/${book.id}`} state={{ from: 'books' }} className="view-chapters-button">
                     View Chapters &rarr;
                   </Link>
                 </div>

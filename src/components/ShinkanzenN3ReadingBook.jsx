@@ -86,7 +86,7 @@ const ShinkanzenN3ReadingBook = () => {
   const { chapterId = 'part-1' } = useParams();
   const navigate = useNavigate();
 
-  // Redirect Firebase 'part-X' IDs to the correct 'mondai-Y' IDs (except part-1 which is now merged)
+  // Redirect Firebase 'part-X' IDs or 'chapter-X' IDs to the correct 'mondai-Y' / 'part-1' IDs
   useEffect(() => {
     if (chapterId.startsWith('part-')) {
       const partNum = parseInt(chapterId.replace('part-', ''));
@@ -100,7 +100,7 @@ const ShinkanzenN3ReadingBook = () => {
       if (targetMondai) {
         navigate(`/books/shinkanzen-master-n3-reading/chapters/${targetMondai}`, { replace: true });
       }
-    } else if (chapterId === 'mondai-1') {
+    } else if (chapterId === 'mondai-1' || chapterId.startsWith('chapter-') || chapterId.startsWith('ch-')) {
       navigate(`/books/shinkanzen-master-n3-reading/chapters/part-1`, { replace: true });
     }
   }, [chapterId, navigate]);
@@ -396,10 +396,12 @@ const ShinkanzenN3ReadingBook = () => {
 
           <div className="shinkanzen-options-list">
             {q.options?.map((opt, optIdx) => {
-              let optClass = 'shinkanzen-option-btn';
+              const isCorrectOpt = optIdx === correctIdx;
+              const isSelectedWrong = userAnswer === optIdx + 1 && !isCorrectOpt;
+              let optClass = 'shinkanzen-option-btn flex-col items-stretch text-left';
               if (isRevealed) {
-                if (optIdx === correctIdx) optClass += ' selected-correct';
-                else if (userAnswer === optIdx + 1) optClass += ' selected-wrong';
+                if (isCorrectOpt) optClass += ' selected-correct';
+                else if (isSelectedWrong) optClass += ' selected-wrong';
                 else optClass += ' unselected';
               }
               return (
@@ -413,19 +415,33 @@ const ShinkanzenN3ReadingBook = () => {
                   disabled={isRevealed}
                   className={optClass}
                 >
-                  <span className="font-bold mr-2">{optIdx + 1}</span>
-                  <span dangerouslySetInnerHTML={{ __html: opt }} />
+                  <div className="flex items-center justify-between w-full">
+                    <div className="flex items-center gap-2 flex-1 min-w-0">
+                      <span className="font-bold shrink-0">{optIdx + 1}</span>
+                      <span dangerouslySetInnerHTML={{ __html: opt }} />
+                    </div>
+                    {isRevealed && isCorrectOpt && (
+                      <span className="ml-2 text-xs font-bold px-2 py-0.5 rounded bg-emerald-600 text-white shadow-sm shrink-0">
+                        ✓ 正解
+                      </span>
+                    )}
+                    {isRevealed && isSelectedWrong && (
+                      <span className="ml-2 text-xs font-bold px-2 py-0.5 rounded bg-rose-600 text-white shadow-sm shrink-0">
+                        ✕ 不正解
+                      </span>
+                    )}
+                  </div>
+
+                  {isRevealed && isCorrectOpt && q.explanation && (
+                    <div className="mt-2 pt-2 border-t text-xs leading-relaxed opacity-90 border-emerald-600/30 text-left w-full whitespace-pre-wrap font-normal">
+                      <span className="font-bold block mb-0.5 text-emerald-800 dark:text-emerald-300">解説:</span>
+                      <span dangerouslySetInnerHTML={{ __html: q.explanation }} />
+                    </div>
+                  )}
                 </button>
               );
             })}
           </div>
-
-          {isRevealed && q.explanation && (
-            <div className="shinkanzen-notes mt-4">
-              <div className="shinkanzen-notes-title">解説</div>
-              <div className="whitespace-pre-wrap" dangerouslySetInnerHTML={{ __html: q.explanation }} />
-            </div>
-          )}
         </div>
       </div>
     );

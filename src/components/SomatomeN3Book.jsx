@@ -92,7 +92,12 @@ const SomatomeN3Book = () => {
   const weekChapters = allChapters.filter(ch => ch.id.startsWith(`week${currentWeek}-`));
 
   // All available week numbers for the week selector
-  const weekNumbers = [...new Set(allChapters.map(ch => parseInt(ch.id.match(/week(\d+)/)?.[1] || '0', 10)))].filter(n => n > 0).sort((a, b) => a - b);
+  // Redirect invalid 'chapter-X' IDs to 'week1-day1'
+  useEffect(() => {
+    if (chapterId.startsWith('chapter-') || chapterId.startsWith('ch-')) {
+      navigate('/books/sou-matome-n3-reading/chapters/week1-day1', { replace: true });
+    }
+  }, [chapterId, navigate]);
 
   // Reset interactive states and load chapter data when chapterId changes
   useEffect(() => {
@@ -628,22 +633,32 @@ const SomatomeN3Book = () => {
                                 <div 
                                   key={oIdx}
                                   onClick={() => handleMondaiClick(q.id, oIdx)}
-                                  className={`p-3 border-2 rounded-sm transition-colors ${optStyle}`}
+                                  className={`p-3 border-2 rounded-sm transition-colors flex flex-col items-stretch ${optStyle}`}
                                 >
-                                  {opt}
-                                  {isRevealed && optNum === q.correct_answer && " ✅"}
-                                  {isRevealed && optNum === selectedOpt && selectedOpt !== q.correct_answer && " ❌"}
+                                  <div className="flex items-center justify-between w-full">
+                                    <span>{opt}</span>
+                                    {isRevealed && optNum === q.correct_answer && (
+                                      <span className="ml-2 text-xs font-bold px-2 py-0.5 rounded bg-emerald-600 text-white shadow-sm shrink-0">
+                                        ✓ 正解
+                                      </span>
+                                    )}
+                                    {isRevealed && optNum === selectedOpt && selectedOpt !== q.correct_answer && (
+                                      <span className="ml-2 text-xs font-bold px-2 py-0.5 rounded bg-rose-600 text-white shadow-sm shrink-0">
+                                        ✕ 不正解
+                                      </span>
+                                    )}
+                                  </div>
+
+                                  {isRevealed && optNum === q.correct_answer && q.explanation && q.explanation !== "No explanation available." && (
+                                    <div className="mt-2 pt-2 border-t text-xs leading-relaxed opacity-90 border-green-300 text-green-950 font-normal text-left">
+                                      <span className="font-bold block mb-0.5">解説:</span>
+                                      {q.explanation}
+                                    </div>
+                                  )}
                                 </div>
                               );
                             })}
                           </div>
-                          
-                          {isRevealed && (
-                            <div className="mt-2 p-4 bg-yellow-50 border-l-4 border-yellow-500 text-black shadow-sm text-sm">
-                              <span className="font-bold text-yellow-700 block mb-1">解説 (Explanation):</span>
-                              {q.explanation || "No explanation available."}
-                            </div>
-                          )}
                         </div>
                       );
                     })}

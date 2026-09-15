@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { db } from '../firebaseConfig.js';
-import { doc, getDoc } from 'firebase/firestore';
+import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
+import { useAuth } from '../context/AuthContext.jsx';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 import '../assets/n4_practice_sets.css';
 
@@ -13,7 +14,11 @@ const MOTIVATIONAL_QUOTES = [
 ];
 
 const N4PracticeSetsListPage = () => {
+  const { currentUser } = useAuth();
+  const location = useLocation();
+  const isFromProfile = location.state?.from === 'profile';
   const [bookData, setBookData] = useState(null);
+  const [userHistory, setUserHistory] = useState({});
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -22,12 +27,26 @@ const N4PracticeSetsListPage = () => {
   }, []);
 
   useEffect(() => {
-    const fetchBook = async () => {
+    const fetchBookAndHistory = async () => {
       try {
         const docRef = doc(db, 'books', 'chokuzen-taisaku-n4');
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
           setBookData(docSnap.data());
+        }
+
+        if (currentUser) {
+          const historyColRef = collection(db, 'users', currentUser.uid, 'quizHistory');
+          const historySnap = await getDocs(historyColRef);
+          const historyMap = {};
+          historySnap.forEach(d => {
+            const data = d.data();
+            const qid = data.quizId || d.id;
+            if (qid.startsWith('chokuzen-taisaku-n4')) {
+              historyMap[qid] = data;
+            }
+          });
+          setUserHistory(historyMap);
         }
       } catch (err) {
         console.error('Error fetching N4 practice sets from Firestore:', err);
@@ -35,8 +54,8 @@ const N4PracticeSetsListPage = () => {
         setLoading(false);
       }
     };
-    fetchBook();
-  }, []);
+    fetchBookAndHistory();
+  }, [currentUser]);
 
   if (loading) return <LoadingSpinner />;
 
@@ -47,6 +66,17 @@ const N4PracticeSetsListPage = () => {
     const g = s.sections?.['grammar-reading']?.questions?.length || 0;
     return acc + v + g;
   }, 0) || 590;
+
+  const completedSetsCount = sets.reduce((acc, set) => {
+    const fullKey = `chokuzen-taisaku-n4-${set.id}`;
+    const vocabKey = `chokuzen-taisaku-n4-${set.id}-vocabulary-kanji`;
+    const grammarKey = `chokuzen-taisaku-n4-${set.id}-grammar`;
+    const item = userHistory[fullKey] || userHistory[vocabKey] || userHistory[grammarKey];
+    if (item && (item.status === 'mastered' || (item.total > 0 && item.score / item.total >= 0.8))) {
+      return acc + 1;
+    }
+    return acc;
+  }, 0);
 
   const filteredSets = sets.filter((s, idx) => {
     if (!searchQuery) return true;
@@ -62,13 +92,15 @@ const N4PracticeSetsListPage = () => {
   return (
     <div className="n4-practice-container">
       {/* Breadcrumb */}
-      <nav aria-label="Breadcrumb" className="n4-breadcrumb">
-        <Link to="/">Home</Link>
-        <span className="separator">/</span>
-        <Link to="/books">Books</Link>
-        <span className="separator">/</span>
-        <span className="current">直前対策 JLPT N4</span>
-      </nav>
+      {!isFromProfile && (
+        <nav aria-label="Breadcrumb" className="n4-breadcrumb">
+          <Link to="/">Home</Link>
+          <span className="separator">/</span>
+          <Link to="/books">Books</Link>
+          <span className="separator">/</span>
+          <span className="current">直前対策 JLPT N4</span>
+        </nav>
+      )}
 
       {/* Modern Hero Shell */}
       <div className="n4-hero-shell">
@@ -172,14 +204,28 @@ const N4PracticeSetsListPage = () => {
           const setTotal = vocabQCount + grammarQCount;
           const setNum = parseInt(set.id?.replace(/\D/g, '')) || (idx + 1);
 
+          const fullKey = `chokuzen-taisaku-n4-${set.id}`;
+          const vocabKey = `chokuzen-taisaku-n4-${set.id}-vocabulary-kanji`;
+          const grammarKey = `chokuzen-taisaku-n4-${set.id}-grammar`;
+          const historyItem = userHistory[fullKey] || userHistory[vocabKey] || userHistory[grammarKey];
+          const isMastered = historyItem && (historyItem.status === 'mastered' || (historyItem.total > 0 && historyItem.score / historyItem.total >= 0.8));
+          const isAttempted = Boolean(historyItem);
+
           return (
-            <div key={set.id || idx} className="n4-modern-card">
+            <div key={set.id || idx} className={`n4-modern-card ${isMastered ? 'ring-2 ring-emerald-500/50' : ''}`}>
               <div className="n4-card-top">
                 <div className="n4-card-set-badge">
-                  <span className="n4-kanji-num">第{setNum}回</span>
+                  <span className="n4-kanji-num">{isMastered ? '🏆 第' : '第'}{setNum}回</span>
                   <span className="n4-en-set">Set {setNum}</span>
                 </div>
-                <span className="n4-card-q-badge">{setTotal} Questions</span>
+                <div className="flex items-center gap-2">
+                  {historyItem && (
+                    <span className={`text-xs px-2.5 py-0.5 rounded-full font-bold ${isMastered ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' : 'bg-orange-500/20 text-orange-300 border border-orange-500/30'}`}>
+                      {historyItem.score}/{historyItem.total} ({Math.round((historyItem.score / historyItem.total) * 100)}%)
+                    </span>
+                  )}
+                  <span className="n4-card-q-badge">{setTotal} Questions</span>
+                </div>
               </div>
 
               <div className="n4-card-rows">
@@ -194,7 +240,7 @@ const N4PracticeSetsListPage = () => {
               </div>
 
               <Link to={`/chokuzen-taisaku-n4/${set.id}`} className="n4-card-btn">
-                Practice Set {setNum} &rarr;
+                {isMastered ? 'Review Set' : isAttempted ? 'Continue Set' : `Practice Set ${setNum}`} &rarr;
               </Link>
             </div>
           );

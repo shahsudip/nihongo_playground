@@ -44,6 +44,9 @@ const ShinkanzenN3ListeningBook = lazy(() => import('./components/ShinkanzenN3Li
 const SpeedMasterN3ReadingBook = lazy(() => import('./components/SpeedMasterN3ReadingBook.jsx'));
 const Shin500QuizPage = lazy(() => import('./components/Shin500QuizPage.jsx'));
 const TangoReadingPage = lazy(() => import('./components/TangoReadingPage.jsx'));
+const DailySprintListPage = lazy(() => import('./components/DailySprintListPage.jsx'));
+const DailySprintRunnerPage = lazy(() => import('./components/DailySprintRunnerPage.jsx'));
+
 
 // Practice Sets
 const PracticeSetsListPage = lazy(() => import('./components/PracticeSetsListPage.jsx'));
@@ -164,9 +167,18 @@ export default function App() {
             element={<ProtectedRoute><SomatomeN3Book /></ProtectedRoute>}
           />
           <Route
+            path="/books/:bookId/sprints"
+            element={<ProtectedRoute><DailySprintListPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/books/:bookId/sprint/:dayNumber"
+            element={<ProtectedRoute><DailySprintRunnerPage /></ProtectedRoute>}
+          />
+          <Route
             path="/books/shinkanzen-master-n3-reading/chapters/:chapterId"
             element={<ProtectedRoute><ShinkanzenN3ReadingBook /></ProtectedRoute>}
           />
+
           <Route
             path="/books/shinkanzen-master-n3-listening/chapters/:chapterId"
             element={<ProtectedRoute><ShinkanzenN3ListeningBook /></ProtectedRoute>}
@@ -174,10 +186,6 @@ export default function App() {
           <Route
             path="/books/speed-master-n3-reading/chapters/:chapterId"
             element={<ProtectedRoute><SpeedMasterN3ReadingBook /></ProtectedRoute>}
-          />
-          <Route
-            path="/books/speed-master-n3-reading"
-            element={<Navigate to="/books/speed-master-n3-reading/chapters/short-1" replace />}
           />
           <Route
             path="/books/shin-nihongo-500-n1/chapters/:chapterId"

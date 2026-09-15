@@ -4,8 +4,10 @@ import { useTheme } from '../context/ThemeContext.jsx';
 import '../assets/shin500_drill.css';
 
 const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
+  const isExamMode = localStorage.getItem('user_exam_mode') !== 'false';
   const [selectedWeekFilter, setSelectedWeekFilter] = useState('all'); // 'all' or week number e.g. 1, 2, ...
   const [expandedWeeks, setExpandedWeeks] = useState({}); // Record<string, boolean>
+  const [showAllLessons, setShowAllLessons] = useState(!isExamMode);
   const { theme } = useTheme();
 
   // Question count helper supporting passages array or direct questions array
@@ -210,48 +212,64 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
         </div>
       </div>
 
-      {/* Week Selector Tabs */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
-        <button
-          onClick={() => setSelectedWeekFilter('all')}
-          className={`px-4 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap ${
-            selectedWeekFilter === 'all'
-              ? 'bg-emerald-600 text-white shadow-md'
-              : 'bg-[var(--color-bg-secondary)] hover:bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] border border-[var(--color-border)]'
-          }`}
-        >
-          All Weeks ({weekGroups.length})
-        </button>
+      {/* When in Exam Mode, provide a clean toggle button instead of sprawling classic chapters */}
+      {isExamMode && (
+        <div className="flex justify-center pt-2">
+          <button
+            type="button"
+            onClick={() => setShowAllLessons(prev => !prev)}
+            className="px-5 py-2.5 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] hover:bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] hover:text-white text-xs font-bold transition flex items-center gap-2 shadow-sm"
+          >
+            <span>{showAllLessons ? '▲ Hide Full Lessons Archive' : '📁 Browse All 105 Lessons Archive'}</span>
+          </button>
+        </div>
+      )}
 
-        {weekGroups.map((group) => {
-          const masteredInWeek = group.chapters.filter((c) => c.isMastered).length;
-          const isWeekDone = masteredInWeek === group.chapters.length && group.chapters.length > 0;
-
-          return (
+      {/* Classic Week Selector & Day List (Shown when Exam Mode is OFF or user clicked Browse) */}
+      {(!isExamMode || showAllLessons) && (
+        <>
+          {/* Week Selector Tabs */}
+          <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
             <button
-              key={group.weekNum}
-              onClick={() => setSelectedWeekFilter(String(group.weekNum))}
-              className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 whitespace-nowrap ${
-                selectedWeekFilter === String(group.weekNum)
+              onClick={() => setSelectedWeekFilter('all')}
+              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap ${
+                selectedWeekFilter === 'all'
                   ? 'bg-emerald-600 text-white shadow-md'
                   : 'bg-[var(--color-bg-secondary)] hover:bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] border border-[var(--color-border)]'
               }`}
             >
-              <span>Week {group.weekNum}</span>
-              {isWeekDone ? (
-                <span className="text-[10px] text-emerald-300">✓</span>
-              ) : (
-                <span className="text-[10px] opacity-75 font-normal">
-                  ({masteredInWeek}/{group.chapters.length})
-                </span>
-              )}
+              All Weeks ({weekGroups.length})
             </button>
-          );
-        })}
-      </div>
 
-      {/* Weeks & Days List */}
-      <div className="space-y-6">
+            {weekGroups.map((group) => {
+              const masteredInWeek = group.chapters.filter((c) => c.isMastered).length;
+              const isWeekDone = masteredInWeek === group.chapters.length && group.chapters.length > 0;
+
+              return (
+                <button
+                  key={group.weekNum}
+                  onClick={() => setSelectedWeekFilter(String(group.weekNum))}
+                  className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 whitespace-nowrap ${
+                    selectedWeekFilter === String(group.weekNum)
+                      ? 'bg-emerald-600 text-white shadow-md'
+                      : 'bg-[var(--color-bg-secondary)] hover:bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] border border-[var(--color-border)]'
+                  }`}
+                >
+                  <span>Week {group.weekNum}</span>
+                  {isWeekDone ? (
+                    <span className="text-[10px] text-emerald-300">✓</span>
+                  ) : (
+                    <span className="text-[10px] opacity-75 font-normal">
+                      ({masteredInWeek}/{group.chapters.length})
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Weeks & Days List */}
+          <div className="space-y-6">
         {displayedWeekGroups.map((group) => {
           const isCollapsed = expandedWeeks[group.weekNum] === false;
           const masteredCount = group.chapters.filter((c) => c.isMastered).length;
@@ -403,6 +421,8 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
           );
         })}
       </div>
+      </>
+    )}
     </div>
   );
 };

@@ -112,5 +112,23 @@ export const STATIC_BOOKS = [
     level: 'N3',
     category: 'Vocabulary',
     totalChapters: 12
+  },
+  {
+    id: 'jlpt-n3-practice-sets',
+    title: 'JLPT N3 Chokuzen Taisaku (直前対策 15 Sets)',
+    description: '15 intensive exam-simulation mock test sets covering Kanji, Vocabulary, and Grammar for N3.',
+    level: 'N3',
+    category: 'Chokuzen Taisaku',
+    totalChapters: 15,
+    customRoute: '/practice-sets'
+  },
+  {
+    id: 'chokuzen-taisaku-n4',
+    title: 'JLPT N4 Chokuzen Taisaku (直前対策 15 Sets)',
+    description: '15 intensive exam-simulation mock test sets covering Kanji, Vocabulary, and Grammar for N4.',
+    level: 'N4',
+    category: 'Chokuzen Taisaku',
+    totalChapters: 15,
+    customRoute: '/chokuzen-taisaku-n4'
   }
 ];

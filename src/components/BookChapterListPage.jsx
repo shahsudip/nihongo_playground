@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
 import { useTheme } from '../context/ThemeContext.jsx';
 import { db } from '../firebaseConfig.js';
@@ -17,9 +17,11 @@ import '../assets/shin500_drill.css';
 
 const BookChapterListPage = () => {
   const { bookId } = useParams();
+  const location = useLocation();
   const { currentUser } = useAuth();
   const { theme } = useTheme();
   
+  const isFromProfile = location.state?.from === 'profile';
   const staticBook = STATIC_BOOKS.find(b => b.id === bookId) || null;
   const [book, setBook] = useState(staticBook);
   const [chapters, setChapters] = useState([]);
@@ -154,21 +156,23 @@ const BookChapterListPage = () => {
 
   return (
     <div className={`book-detail-container ${isShin500 ? `shin500-chapter-page theme-${theme}` : ''}`}>
-      <nav aria-label="Breadcrumb" className="ps-breadcrumb mb-6">
-        <ol className="flex flex-wrap items-center gap-1 text-sm">
-          <li className="flex items-center">
-            <Link to="/" className="breadcrumb-link">Home</Link>
-          </li>
-          <li className="flex items-center">
-            <span className="mx-2 breadcrumb-separator">/</span>
-            <Link to="/books" className="breadcrumb-link">Books</Link>
-          </li>
-          <li className="flex items-center">
-            <span className="mx-2 breadcrumb-separator">/</span>
-            <span className="breadcrumb-current">{book.title}</span>
-          </li>
-        </ol>
-      </nav>
+      {!isFromProfile && (
+        <nav aria-label="Breadcrumb" className="ps-breadcrumb mb-6">
+          <ol className="flex flex-wrap items-center gap-1 text-sm">
+            <li className="flex items-center">
+              <Link to="/" className="breadcrumb-link">Home</Link>
+            </li>
+            <li className="flex items-center">
+              <span className="mx-2 breadcrumb-separator">/</span>
+              <Link to="/books" className="breadcrumb-link">Books</Link>
+            </li>
+            <li className="flex items-center">
+              <span className="mx-2 breadcrumb-separator">/</span>
+              <span className="breadcrumb-current">{book.title}</span>
+            </li>
+          </ol>
+        </nav>
+      )}
 
       {/* Clean Header */}
       <div className="book-detail-header pt-2">

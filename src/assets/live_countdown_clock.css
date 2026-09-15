@@ -1,0 +1,240 @@
+/* src/assets/live_countdown_clock.css */
+
+.live-clock-block {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.98) 50%, rgba(16, 185, 129, 0.12) 100%);
+  border: 1.5px solid rgba(16, 185, 129, 0.4);
+  border-radius: 20px;
+  padding: 24px 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35), 0 0 25px rgba(16, 185, 129, 0.12);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.live-clock-block:hover {
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.45), 0 0 30px rgba(56, 189, 248, 0.18);
+}
+
+.live-clock-ambient-glow {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.2) 0%, rgba(16, 185, 129, 0.08) 40%, transparent 70%);
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+/* Header */
+.live-clock-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.live-clock-badge {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 900;
+  padding: 4px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.06em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-transform: uppercase;
+}
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 8px #ffffff;
+  animation: liveBlink 1.4s infinite ease-in-out;
+}
+
+@keyframes liveBlink {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(0.75); }
+}
+
+.live-clock-target-title {
+  color: var(--color-text-primary, #ffffff);
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.live-clock-jst-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  font-size: 0.76rem;
+  font-family: 'JetBrains Mono', monospace, ui-monospace, sans-serif;
+  color: #94a3b8;
+}
+
+.live-clock-jst-pill .jst-label {
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.live-clock-jst-pill .jst-time {
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+/* Big Digit Grid */
+.live-clock-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px 0 22px;
+}
+
+.live-digit-tile {
+  flex: 1;
+  max-width: 140px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 16px 10px;
+  text-align: center;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5), 0 6px 16px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease;
+}
+
+.live-digit-tile:hover {
+  transform: translateY(-2px);
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.live-digit-tile.days-tile {
+  border-color: rgba(16, 185, 129, 0.4);
+  background: linear-gradient(180deg, rgba(16, 185, 129, 0.1) 0%, rgba(15, 23, 42, 0.9) 100%);
+}
+
+.live-digit-tile.days-tile .digit-value {
+  color: #10b981;
+}
+
+.live-digit-tile.seconds-tile {
+  border-color: rgba(56, 189, 248, 0.35);
+}
+
+.live-digit-tile.seconds-tile .digit-value {
+  color: #38bdf8;
+}
+
+.digit-value {
+  font-family: 'JetBrains Mono', 'SF Pro Display', -apple-system, monospace, sans-serif;
+  font-size: 2.6rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #ffffff;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+
+.digit-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--color-text-secondary, #94a3b8);
+  letter-spacing: 0.08em;
+}
+
+.digit-label .jp-label {
+  opacity: 0.6;
+  font-size: 0.65rem;
+}
+
+.live-clock-separator {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.25);
+  margin-top: -12px;
+}
+
+/* Footer & Actions */
+.live-clock-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.live-clock-subtext {
+  font-size: 0.82rem;
+  color: var(--color-text-secondary, #94a3b8);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.live-clock-subtext strong {
+  color: #ffffff;
+}
+
+.live-clock-plan-btn {
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #10b981;
+  font-size: 0.82rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.live-clock-plan-btn:hover {
+  background: #10b981;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .live-clock-block {
+    padding: 18px 16px;
+  }
+  .digit-value {
+    font-size: 1.8rem;
+  }
+  .live-clock-grid {
+    gap: 6px;
+  }
+  .live-clock-separator {
+    font-size: 1.4rem;
+    margin-top: -8px;
+  }
+  .live-digit-tile {
+    padding: 12px 6px;
+  }
+  .digit-label {
+    font-size: 0.62rem;
+  }
+}

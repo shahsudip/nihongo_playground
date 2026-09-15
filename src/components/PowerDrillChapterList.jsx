@@ -2,7 +2,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const PowerDrillChapterList = ({ book, chapters, history }) => {
+const PowerDrillChapterList = ({ book, chapters = [], history = {} }) => {
+  const isExamMode = localStorage.getItem('user_exam_mode') !== 'false';
+  const [showAllSections, setShowAllSections] = useState(!isExamMode);
   const [selectedSection, setSelectedSection] = useState(null);
   const [selectedGroup, setSelectedGroup] = useState(null);
 
@@ -111,43 +113,113 @@ const PowerDrillChapterList = ({ book, chapters, history }) => {
   };
 
   if (selectedSection === null) {
-    return (
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 max-w-4xl mx-auto">
-        {/* Card 1: Vocab & Kanji */}
-        <button
-          onClick={() => { setSelectedSection('vocab'); setSelectedGroup(null); }}
-          className="group relative bg-[var(--color-bg-secondary)] border border-[var(--color-border)] hover:border-emerald-500/50 rounded-2xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between items-start text-left h-60 overflow-hidden"
-        >
-          <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-emerald-500/10 to-teal-500/0 rounded-full blur-2xl group-hover:scale-150 transition-all"></div>
-          <div className="text-4xl mb-4">📖</div>
-          <div>
-            <h2 className="text-2xl font-bold text-[var(--color-text-primary)] group-hover:text-emerald-400 transition-colors mb-2">Vocab & Kanji</h2>
-            <p className="text-[var(--color-text-secondary)] text-sm font-medium">
-              漢字・語彙 - Kanji readings, orthography, and context meanings.
-            </p>
-          </div>
-          <div className="text-emerald-400 font-semibold text-sm mt-4 group-hover:translate-x-1 transition-transform flex items-center gap-1">
-            Select Drills &rarr;
-          </div>
-        </button>
+    const nextChapter = chapters.find(c => !history[c.id] || history[c.id].status !== 'mastered') || chapters[0];
 
-        {/* Card 2: Grammar */}
-        <button
-          onClick={() => { setSelectedSection('grammar'); setSelectedGroup(null); }}
-          className="group relative bg-[var(--color-bg-secondary)] border border-[var(--color-border)] hover:border-emerald-500/50 rounded-2xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between items-start text-left h-60 overflow-hidden"
-        >
-          <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-teal-500/10 to-emerald-500/0 rounded-full blur-2xl group-hover:scale-150 transition-all"></div>
-          <div className="text-4xl mb-4">✍️</div>
-          <div>
-            <h2 className="text-2xl font-bold text-[var(--color-text-primary)] group-hover:text-emerald-400 transition-colors mb-2">Grammar</h2>
-            <p className="text-[var(--color-text-secondary)] text-sm font-medium">
-              文法 - Sentence patterns, particles, and grammar structure.
-            </p>
+    return (
+      <div className="space-y-6 mt-6 max-w-4xl mx-auto">
+        {/* Exam Mode Focus Mission Card */}
+        {isExamMode && (
+          <div style={{
+            background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(30, 41, 59, 0.95) 100%)',
+            border: '1px solid rgba(16, 185, 129, 0.35)',
+            borderRadius: '16px',
+            padding: '24px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '16px',
+            boxShadow: '0 10px 25px rgba(0,0,0,0.2)'
+          }}>
+            <div>
+              <div className="flex items-center gap-2 mb-1.5">
+                <span style={{
+                  background: '#10b981',
+                  color: '#fff',
+                  fontSize: '0.72rem',
+                  fontWeight: 900,
+                  padding: '3px 8px',
+                  borderRadius: '6px',
+                  textTransform: 'uppercase'
+                }}>
+                  ⚡ EXAM MODE: DAILY POWER DRILL
+                </span>
+                <span className="text-xs font-bold text-amber-400">⏱️ High-Speed Drills</span>
+              </div>
+              <h2 className="text-xl font-black text-white mb-1">
+                {book?.title || 'Power Drill'} Daily Mission
+              </h2>
+              <p className="text-xs text-[var(--color-text-secondary)] m-0 max-w-lg leading-relaxed">
+                Target: {nextChapter ? (nextChapter.title || nextChapter.id) : 'Next Drill'}
+              </p>
+            </div>
+
+            <div className="flex gap-2.5 flex-wrap">
+              {nextChapter && (
+                <Link
+                  to={`/books/${book.id}/chapters/${nextChapter.id}`}
+                  className="px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-black text-xs transition shadow-md hover:shadow-emerald-500/25 flex items-center gap-1.5"
+                >
+                  🚀 Start Today's Drill &rarr;
+                </Link>
+              )}
+            </div>
           </div>
-          <div className="text-emerald-400 font-semibold text-sm mt-4 group-hover:translate-x-1 transition-transform flex items-center gap-1">
-            Select Drills &rarr;
+        )}
+
+        {/* When in Exam Mode, provide a clean toggle button instead of sprawling classic sections */}
+        {isExamMode && (
+          <div className="flex justify-center pt-2">
+            <button
+              type="button"
+              onClick={() => setShowAllSections(prev => !prev)}
+              className="px-5 py-2.5 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] hover:bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] hover:text-white text-xs font-bold transition flex items-center gap-2 shadow-sm"
+            >
+              <span>{showAllSections ? '▲ Hide Classic Sections' : '📁 Browse Vocab & Grammar Sections Archive'}</span>
+            </button>
           </div>
-        </button>
+        )}
+
+        {/* Classic Section Cards (Shown when Exam Mode is OFF or user toggled Browse) */}
+        {(!isExamMode || showAllSections) && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Card 1: Vocab & Kanji */}
+            <button
+              onClick={() => { setSelectedSection('vocab'); setSelectedGroup(null); }}
+              className="group relative bg-[var(--color-bg-secondary)] border border-[var(--color-border)] hover:border-emerald-500/50 rounded-2xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between items-start text-left h-60 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-emerald-500/10 to-teal-500/0 rounded-full blur-2xl group-hover:scale-150 transition-all"></div>
+              <div className="text-4xl mb-4">📖</div>
+              <div>
+                <h2 className="text-2xl font-bold text-[var(--color-text-primary)] group-hover:text-emerald-400 transition-colors mb-2">Vocab & Kanji</h2>
+                <p className="text-[var(--color-text-secondary)] text-sm font-medium">
+                  漢字・語彙 - Kanji readings, orthography, and context meanings.
+                </p>
+              </div>
+              <div className="text-emerald-400 font-semibold text-sm mt-4 group-hover:translate-x-1 transition-transform flex items-center gap-1">
+                Select Drills &rarr;
+              </div>
+            </button>
+
+            {/* Card 2: Grammar */}
+            <button
+              onClick={() => { setSelectedSection('grammar'); setSelectedGroup(null); }}
+              className="group relative bg-[var(--color-bg-secondary)] border border-[var(--color-border)] hover:border-emerald-500/50 rounded-2xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between items-start text-left h-60 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-teal-500/10 to-emerald-500/0 rounded-full blur-2xl group-hover:scale-150 transition-all"></div>
+              <div className="text-4xl mb-4">✍️</div>
+              <div>
+                <h2 className="text-2xl font-bold text-[var(--color-text-primary)] group-hover:text-emerald-400 transition-colors mb-2">Grammar</h2>
+                <p className="text-[var(--color-text-secondary)] text-sm font-medium">
+                  文法 - Sentence patterns, particles, and grammar structure.
+                </p>
+              </div>
+              <div className="text-emerald-400 font-semibold text-sm mt-4 group-hover:translate-x-1 transition-transform flex items-center gap-1">
+                Select Drills &rarr;
+              </div>
+            </button>
+          </div>
+        )}
       </div>
     );
   }
