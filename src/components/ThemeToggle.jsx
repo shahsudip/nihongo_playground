@@ -9,13 +9,13 @@ export default function ThemeToggle({ className = '', compact = false }) {
     <button
       type="button"
       onClick={toggleTheme}
-      className={`relative inline-flex items-center justify-center p-2 rounded-full transition-all duration-300 focus:outline-none select-none cursor-pointer bg-black/5 dark:bg-white/10 hover:scale-110 active:scale-95 border border-black/10 dark:border-white/10 shadow-sm ${
+      className={`relative inline-flex items-center justify-center p-2 rounded-full transition-all duration-300 focus:outline-none select-none cursor-pointer hover:bg-black/5 dark:hover:bg-white/10 hover:scale-110 active:scale-95 border-0 outline-none ${
         compact ? 'w-8 h-8' : 'w-9 h-9'
       } ${className}`}
       title={isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
       aria-label="Toggle light/dark theme"
     >
-      <div className="relative w-5 h-5 flex items-center justify-center">
+      <div className="relative w-5 h-5 flex items-center justify-center pointer-events-none">
         {/* Crescent Moon */}
         <svg
           className={`absolute inset-0 w-5 h-5 text-amber-300 drop-shadow-[0_0_8px_rgba(252,211,77,0.5)] transition-all duration-500 ease-out transform ${
