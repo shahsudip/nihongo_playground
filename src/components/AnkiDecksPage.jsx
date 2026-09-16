@@ -143,7 +143,7 @@ const AnkiDecksPage = () => {
             Anki Decks & .apkg Reader
           </h1>
           <p className="text-sm text-gray-800 dark:text-gray-200 mt-1 max-w-2xl font-semibold">
-            Study Japanese Anki decks (Core 10k, AnkiDrone, Shin Kanzen, Speed Master, Anime Mining) or open any <code className="font-mono bg-[#ede3ce] dark:bg-white/10 px-1.5 py-0.5 rounded font-bold text-gray-900 dark:text-white">.apkg</code> file directly in your browser.
+            Study Japanese Anki decks (Core 10k, AnkiDrone, Shin Kanzen, Speed Master, Anime Mining) or open any <code className="font-mono bg-gray-100 dark:bg-white/10 px-1.5 py-0.5 rounded font-bold text-gray-900 dark:text-white">.apkg</code> file directly in your browser.
           </p>
         </div>
 
