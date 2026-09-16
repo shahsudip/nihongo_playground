@@ -369,10 +369,10 @@ const ApkgDeckViewerPage = () => {
               {/* ======================================================== */}
               {/* FRONT FACE                                               */}
               {/* ======================================================== */}
-              <div className="[grid-area:stack] w-full min-h-[360px] sm:min-h-[380px] rounded-2xl p-6 sm:p-8 border-2 border-[#decfae] dark:border-white/10 bg-[#fcf9f2] dark:bg-zinc-900 shadow-xl flex flex-col justify-between [backface-visibility:hidden] [transform:rotateY(0deg)] hover:border-[#cbbe9f] dark:hover:border-white/25 transition-colors">
+              <div className="[grid-area:stack] w-full min-h-[360px] sm:min-h-[380px] rounded-2xl p-6 sm:p-8 border border-gray-200/80 dark:border-white/10 bg-white dark:bg-zinc-900 shadow-xl flex flex-col justify-between [backface-visibility:hidden] [transform:rotateY(0deg)] hover:border-emerald-500/40 dark:hover:border-white/25 transition-colors">
                 {/* Top Indicator */}
                 <div className="flex items-center justify-between w-full">
-                  <span className="px-2.5 py-0.5 rounded-md bg-emerald-50 dark:bg-indigo-950/40 text-emerald-700 dark:text-indigo-300 text-[11px] font-extrabold uppercase">
+                  <span className="px-2.5 py-0.5 rounded-md bg-emerald-50 dark:bg-purple-950/40 text-emerald-700 dark:text-purple-300 text-[11px] font-extrabold uppercase border border-emerald-200/60 dark:border-purple-800/40">
                     Front Face (Prompt)
                   </span>
                 </div>
@@ -409,10 +409,10 @@ const ApkgDeckViewerPage = () => {
               {/* ======================================================== */}
               {/* BACK FACE                                                */}
               {/* ======================================================== */}
-              <div className="[grid-area:stack] w-full min-h-[360px] sm:min-h-[380px] rounded-2xl p-6 sm:p-8 border-2 border-emerald-500/40 dark:border-indigo-500/40 bg-gradient-to-br from-[#fcf9f2] to-[#ede3ce] dark:from-zinc-900 dark:to-indigo-950/40 shadow-xl flex flex-col justify-between [backface-visibility:hidden] [transform:rotateY(180deg)] transition-colors">
+              <div className="[grid-area:stack] w-full min-h-[360px] sm:min-h-[380px] rounded-2xl p-6 sm:p-8 border-2 border-emerald-500/50 dark:border-purple-500/50 bg-white dark:bg-zinc-900 shadow-xl flex flex-col justify-between [backface-visibility:hidden] [transform:rotateY(180deg)] transition-colors">
                 {/* Top Indicator */}
                 <div className="flex items-center justify-between w-full">
-                  <span className="px-2.5 py-0.5 rounded-md bg-emerald-50 dark:bg-indigo-950/40 text-emerald-700 dark:text-indigo-300 text-[11px] font-extrabold uppercase">
+                  <span className="px-2.5 py-0.5 rounded-md bg-emerald-50 dark:bg-purple-950/40 text-emerald-700 dark:text-purple-300 text-[11px] font-extrabold uppercase border border-emerald-200/60 dark:border-purple-800/40">
                     Back Face (Answer)
                   </span>
                 </div>
