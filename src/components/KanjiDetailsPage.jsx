@@ -45,7 +45,7 @@ export default function KanjiDetailsPage() {
 
   return (
     <div className="bg-gray-50 min-h-screen text-black pb-12">
-      <div className="max-w-4xl mx-auto px-4 py-6">
+      <div className="max-w-4xl mx-auto px-4 pt-2 pb-8">
         <Link to={`/levels/${level}/kanji-list`} className="text-sm font-semibold text-blue-500 hover:underline mb-4 inline-block">
           &larr; Back to Kanji List
         </Link>
@@ -149,7 +149,7 @@ export default function KanjiDetailsPage() {
                 <div className="bg-black text-white rounded-lg px-4 py-3 text-center uppercase text-lg font-bold mb-6 tracking-wide shadow-md mt-10">
                   Example Sentences
                 </div>
-                <div className="space-y-6">
+                <div className={`grid gap-4 ${(kanji.exampleSentences || kanji.sentenceExamples || []).length > 1 ? 'grid-cols-1 md:grid-cols-2' : 'grid-cols-1'}`}>
                   {(kanji.exampleSentences || kanji.sentenceExamples || []).map((ex, i) => {
                     let jp, kana, romaji, eng;
                     if (typeof ex === 'string') {
@@ -170,12 +170,12 @@ export default function KanjiDetailsPage() {
                     }
 
                     return (
-                      <div key={i} className="flex flex-col md:flex-row items-center md:items-start justify-between p-6 border border-gray-300 rounded-lg shadow-sm bg-gradient-to-r from-gray-100 to-white hover:border-black transition-colors w-full">
-                        <div className="flex-grow min-w-0 text-center space-y-3 w-full">
-                          {jp && <p className="text-2xl md:text-3xl font-bold text-gray-800 leading-snug">{jp}</p>}
-                          {kana && kana !== jp && <p className="text-lg md:text-xl text-gray-600 italic leading-relaxed">{kana}</p>}
-                          {romaji && <p className="text-md md:text-lg text-gray-500 font-mono break-words">{romaji}</p>}
-                          {eng && <p className="text-lg md:text-xl text-black break-words font-bold">{eng}</p>}
+                      <div key={i} className="flex flex-col items-center justify-between p-5 border border-gray-300 rounded-xl shadow-sm bg-gradient-to-r from-gray-100 to-white hover:border-black transition-colors w-full">
+                        <div className="flex-grow min-w-0 text-center space-y-2 w-full">
+                          {jp && <p className="text-xl md:text-2xl font-bold text-gray-800 leading-snug">{jp}</p>}
+                          {kana && kana !== jp && <p className="text-base md:text-lg text-gray-600 italic leading-relaxed">{kana}</p>}
+                          {romaji && <p className="text-sm md:text-md text-gray-500 font-mono break-words">{romaji}</p>}
+                          {eng && <p className="text-base md:text-lg text-black break-words font-bold pt-1 border-t border-black/10">{eng}</p>}
                         </div>
                       </div>
                     );

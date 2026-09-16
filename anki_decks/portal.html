@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ultimate Japanese Anki Study Suite - Over 22,000 flashcards across all JLPT levels (N5 to N1), anime sentence mining, and grammar decks.">
+  <title>Ultimate Japanese Anki Study Suite (22,000+ Cards)</title>
+  <style>
+    :root {
+      --bg-base: #0a0e17;
+      --bg-card: rgba(17, 24, 39, 0.85);
+      --border-subtle: rgba(255, 255, 255, 0.12);
+      --text-main: #f9fafb;
+      --text-muted: #9ca3af;
+      --text-dim: #6b7280;
+      --accent-blue: #3b82f6;
+      --accent-emerald: #10b981;
+      --accent-purple: #8b5cf6;
+      --accent-cyan: #06b6d4;
+      --accent-pink: #ec4899;
+      --accent-amber: #f59e0b;
+      --accent-sky: #0ea5e9;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: var(--font-family);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(59, 130, 246, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(139, 92, 246, 0.12) 0%, transparent 40%);
+    }
+
+    .container {
+      max-width: 1320px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .header-banner {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .suite-badge {
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-pink));
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 20px;
+      box-shadow: 0 4px 14px rgba(236, 72, 153, 0.35);
+    }
+
+    .suite-title {
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+    }
+
+    .suite-subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+      max-width: 780px;
+      line-height: 1.6;
+    }
+
+    .stat-pill-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 4px;
+    }
+
+    .stat-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 12px;
+      color: var(--text-main);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .stat-pill strong {
+      color: var(--accent-cyan);
+    }
+
+    .grid-deck-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 22px;
+      margin-top: 8px;
+    }
+
+    .deck-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      backdrop-filter: blur(16px);
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .deck-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+    }
+
+    .card-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .deck-tag {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+    }
+
+    .tag-blue { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+    .tag-emerald { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+    .tag-purple { background: rgba(139, 92, 246, 0.15); color: #c084fc; }
+    .tag-cyan { background: rgba(6, 182, 212, 0.15); color: #22d3ee; }
+    .tag-pink { background: rgba(236, 72, 153, 0.15); color: #f472b6; }
+    .tag-sky { background: rgba(14, 165, 233, 0.15); color: #38bdf8; }
+    .tag-amber { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+
+    .count-indicator {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+
+    .deck-heading {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.3;
+    }
+
+    .deck-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .deck-features-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-size: 12px;
+      color: #cbd5e1;
+    }
+
+    .deck-features-list li::before {
+      content: "- ";
+      color: var(--accent-cyan);
+      font-weight: bold;
+    }
+
+    .card-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 18px;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
+      user-select: none;
+      transition: all 0.2s;
+    }
+
+    .btn-blue { background: linear-gradient(135deg, var(--accent-blue), #2563eb); color: #ffffff; }
+    .btn-emerald { background: linear-gradient(135deg, var(--accent-emerald), #059669); color: #ffffff; }
+    .btn-purple { background: linear-gradient(135deg, var(--accent-purple), #7c3aed); color: #ffffff; }
+    .btn-cyan { background: linear-gradient(135deg, var(--accent-cyan), #0284c7); color: #ffffff; }
+    .btn-pink { background: linear-gradient(135deg, var(--accent-pink), #db2777); color: #ffffff; }
+    .btn-sky { background: linear-gradient(135deg, var(--accent-sky), #0369a1); color: #ffffff; }
+    .btn-slate { background: rgba(255, 255, 255, 0.08); color: #ffffff; border-color: var(--border-subtle); }
+
+    .footer-bar {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-dim);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 24px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Top Hero Banner -->
+    <header class="header-banner">
+      <div class="suite-badge">All-in-One Study Suite</div>
+      <h1 class="suite-title">Ultimate Japanese Anki Study Portal</h1>
+      <p class="suite-subtitle">
+        Your offline-first web environment for studying Japanese vocabulary, grammar, anime mining, and frequency decks directly in the browser, with native audio, ruby furigana, and ready-to-export datasets for Flutter.
+      </p>
+
+      <div class="stat-pill-row">
+        <span class="stat-pill">Total Cards: <strong>22,604</strong></span>
+        <span class="stat-pill">Extracted Audio Files: <strong>2,412+ Clips</strong></span>
+        <span class="stat-pill">Anime Screenshots: <strong>500+ Scenes</strong></span>
+        <span class="stat-pill">Coverage: <strong>N5 to N1</strong></span>
+      </div>
+    </header>
+
+    <!-- Deck Cards Grid -->
+    <div class="grid-deck-cards">
+
+      <!-- Deck 1: AnkiDrone Core 10k -->
+      <a href="core10k_viewer.html" class="deck-card" style="border-top: 4px solid var(--accent-purple);">
+        <div class="card-top-bar">
+          <span class="deck-tag tag-purple">Core 10k Frequency</span>
+          <span class="count-indicator">9,363 Cards</span>
+        </div>
+        <div>
+          <h2 class="deck-heading">AnkiDrone Core 10,000</h2>
+          <p class="deck-desc" style="margin-top: 6px;">
+            The complete frequency-ranked Core 10k vocabulary deck with Netflix frequency ranks, contextual sentences, and furigana.
+          </p>
+        </div>
+        <ul class="deck-features-list">
+          <li>9,363 essential Japanese words</li>
+          <li>Netflix frequency popularity rank (#1 to #10,000)</li>
+          <li>Example sentence with English translation</li>
+          <li>Fast searchable table and 3D card flip</li>
+        </ul>
+        <div class="card-btn btn-purple">
+          Open Core 10k Reader -&gt;
+        </div>
+      </a>
+
+      <!-- Deck 2: Ankidrone Essentials V9 -->
+      <a href="ankidrone_viewer.html" class="deck-card" style="border-top: 4px solid var(--accent-cyan);">
+        <div class="card-top-bar">
+          <span class="deck-tag tag-cyan">N5 to N1 Essentials</span>
+          <span class="count-indicator">7,718 Cards</span>
+        </div>
+        <div>
+          <h2 class="deck-heading">Ankidrone Essentials (N5 - N1)</h2>
+          <p class="deck-desc" style="margin-top: 6px;">
+            Massive 7,718-card vocabulary deck covering Tango N5, N4, N3, N2, and N1 with pitch accents, ruby furigana, and sentences.
+          </p>
+        </div>
+        <ul class="deck-features-list">
+          <li>Covers all JLPT levels: N5, N4, N3, N2, and N1</li>
+          <li>Pitch accent pattern overlines and pitch numbers</li>
+          <li>Level filter dropdown (N5, N4, N3, N2, N1)</li>
+          <li>Interactive 3D flip flashcard with ruby furigana</li>
+        </ul>
+        <div class="card-btn btn-cyan">
+          Open Ankidrone Reader -&gt;
+        </div>
+      </a>
+
+      <!-- Deck 3: JLPT Tango N3 -->
+      <a href="tango_viewer.html" class="deck-card" style="border-top: 4px solid var(--accent-blue);">
+        <div class="card-top-bar">
+          <span class="deck-tag tag-blue">Vocabulary + Audio</span>
+          <span class="count-indicator">1,994 Cards</span>
+        </div>
+        <div>
+          <h2 class="deck-heading">JLPT Tango N3 Vocab</h2>
+          <p class="deck-desc" style="margin-top: 6px;">
+            Comprehensive core vocabulary deck with native audio recordings, ruby furigana, and contextual example sentences.
+          </p>
+        </div>
+        <ul class="deck-features-list">
+          <li>1,401 native MP3 pronunciation clips</li>
+          <li>Interactive 3D flip flashcard with ruby furigana</li>
+          <li>Instant search and chapter filters (Chap 1 - 14)</li>
+          <li>Audio replay shortcut key [R]</li>
+        </ul>
+        <div class="card-btn btn-blue">
+          Open Tango N3 Reader -&gt;
+        </div>
+      </a>
+
+      <!-- Deck 4: Speed Master Standard 2400 -->
+      <a href="speed_master_viewer.html" class="deck-card" style="border-top: 4px solid var(--accent-sky);">
+        <div class="card-top-bar">
+          <span class="deck-tag tag-sky">Speed Master 2400</span>
+          <span class="count-indicator">1,935 Cards</span>
+        </div>
+        <div>
+          <h2 class="deck-heading">Speed Master Standard 2400</h2>
+          <p class="deck-desc" style="margin-top: 6px;">
+            Core high-yield vocabulary from the renowned Speed Master Standard 2400 book with furigana readings and context sentences.
+          </p>
+        </div>
+        <ul class="deck-features-list">
+          <li>1,935 high-yield vocabulary cards</li>
+          <li>Ruby furigana on vocabulary and example sentences</li>
+          <li>Interactive 3D flashcard view and searchable table</li>
+          <li>Export ready JSON for Flutter integration</li>
+        </ul>
+        <div class="card-btn btn-sky">
+          Open Speed Master Reader -&gt;
+        </div>
+      </a>
+
+      <!-- Deck 5: Shin Kanzen Master N3 Vocabulary -->
+      <a href="skm_vocab_viewer.html" class="deck-card" style="border-top: 4px solid var(--accent-purple);">
+        <div class="card-top-bar">
+          <span class="deck-tag tag-purple">Official Definitions</span>
+          <span class="count-indicator">1,017 Cards</span>
+        </div>
+        <div>
+          <h2 class="deck-heading">Shin Kanzen Master N3 Vocab</h2>
+          <p class="deck-desc" style="margin-top: 6px;">
+            Official definition vocabulary cards from Shin Kanzen Master N3, tagged by unit with clean readings and English meanings.
+          </p>
+        </div>
+        <ul class="deck-features-list">
+          <li>1,017 high-frequency N3 words and expressions</li>
+          <li>Furigana reading with ruby toggle</li>
+          <li>Searchable data table and flashcard flip mode</li>
+          <li>Unit-based tagging</li>
+        </ul>
+        <div class="card-btn btn-purple">
+          Open SKM Vocab Reader -&gt;
+        </div>
+      </a>
+
+      <!-- Deck 6: Anime Sentence Mining -->
+      <a href="anime_viewer.html" class="deck-card" style="border-top: 4px solid var(--accent-pink);">
+        <div class="card-top-bar">
+          <span class="deck-tag tag-pink">Anime Voice &amp; Pictures</span>
+          <span class="count-indicator">344 Cards</span>
+        </div>
+        <div>
+          <h2 class="deck-heading">Anime Sentence Mining (N3-N2)</h2>
+          <p class="deck-desc" style="margin-top: 6px;">
+            Study natural Japanese from anime scenes with native character voice audio clips, anime screenshots, and full definitions.
+          </p>
+        </div>
+        <ul class="deck-features-list">
+          <li>Real anime scene screenshots on the back face</li>
+          <li>Character voice audio clips playable with [R]</li>
+          <li>Natural dialogue with ruby furigana and English translations</li>
+          <li>Search by anime title, word, or sentence</li>
+        </ul>
+        <div class="card-btn btn-pink">
+          Open Anime Mining Reader -&gt;
+        </div>
+      </a>
+
+      <!-- Deck 7: Shin Kanzen Master N3 Grammar -->
+      <a href="grammar_viewer.html" class="deck-card" style="border-top: 4px solid var(--accent-emerald);">
+        <div class="card-top-bar">
+          <span class="deck-tag tag-emerald">Grammar Cloze Sentences</span>
+          <span class="count-indicator">233 Cards</span>
+        </div>
+        <div>
+          <h2 class="deck-heading">Shin Kanzen Master N3 Grammar</h2>
+          <p class="deck-desc" style="margin-top: 6px;">
+            Master N3 grammar patterns with cloze fill-in sentences, formation rules, usage notes, and detailed explanations across Lessons 01 to 12.
+          </p>
+        </div>
+        <ul class="deck-features-list">
+          <li>Target sentence cloze recall with 【 … 】 blanks</li>
+          <li>Grammar formation rules with ruby notation</li>
+          <li>In-depth usage notes and state change rules</li>
+          <li>Filterable by individual lesson (Lessons 01 - 12)</li>
+        </ul>
+        <div class="card-btn btn-emerald">
+          Open Grammar Reader -&gt;
+        </div>
+      </a>
+
+      <!-- Tool 8: Readable Anki Deck Studio -->
+      <a href="index.html" class="deck-card" style="border-top: 4px solid var(--accent-amber);">
+        <div class="card-top-bar">
+          <span class="deck-tag tag-amber">Deck Creation &amp; Export</span>
+          <span class="count-indicator">Studio Tool</span>
+        </div>
+        <div>
+          <h2 class="deck-heading">Readable Anki Deck Studio</h2>
+          <p class="deck-desc" style="margin-top: 6px;">
+            Create and edit flashcards in human-readable Markdown or Q&amp;A format with real-time 3D preview and 1-click export to native .apkg.
+          </p>
+        </div>
+        <ul class="deck-features-list">
+          <li>Auto-detects Q&amp;A blocks, headings, and tables</li>
+          <li>Single-card form builder and batch text editor</li>
+          <li>Direct .apkg package export via WebAssembly SQLite</li>
+          <li>Standard Anki TSV and Markdown file exports</li>
+        </ul>
+        <div class="card-btn btn-slate">
+          Open Deck Studio -&gt;
+        </div>
+      </a>
+
+    </div>
+
+    <footer class="footer-bar">
+      Ultimate Japanese Anki Study Suite &amp; Deck Studio | Running at http://localhost:8088/portal.html
+    </footer>
+
+  </div>
+
+</body>
+</html>

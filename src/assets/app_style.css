@@ -15,6 +15,7 @@ html.theme-light,
   --feedback-mastered: #7c3aed;
 }
 
+html.dark,
 html.theme-dark,
 [data-theme='dark'] {
   --primary-green: #10b981;

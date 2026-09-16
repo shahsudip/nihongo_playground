@@ -5,8 +5,9 @@ import ThemeToggle from './ThemeToggle.jsx';
 import { useAuth } from '../context/AuthContext.jsx';
 
 const navLinks = [
-  { to: '/levels',   label: 'Levels' },
-  { to: '/books',    label: 'Books' },
+  { to: '/levels',     label: 'Levels' },
+  { to: '/books',      label: 'Books' },
+  { to: '/anki-decks', label: 'Anki Decks' },
 ];
 
 const MainHeader = () => {
@@ -30,8 +31,8 @@ const MainHeader = () => {
     return () => document.removeEventListener('mousedown', handler);
   }, [menuOpen]);
 
-  const activeCls = 'text-emerald-500 border-b-2 border-emerald-500 pb-1';
-  const inactiveCls = 'text-[var(--color-text-secondary)] hover:text-emerald-400';
+  const activeCls = 'text-emerald-700 dark:text-emerald-400 border-b-2 border-emerald-600 dark:border-emerald-400 pb-1 font-black';
+  const inactiveCls = 'text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 font-bold';
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[var(--color-bg-primary)]/95 backdrop-blur-md transition-all border-b border-[var(--color-border)]">
@@ -42,7 +43,7 @@ const MainHeader = () => {
           <img src={logo} alt="Logo" className="w-8 h-8 md:w-10 md:h-10 object-contain" />
           <NavLink
             to="/"
-            className="text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-emerald-600 hover:opacity-80 transition-opacity"
+            className="text-lg md:text-2xl font-black bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-300 hover:opacity-85 transition-opacity"
           >
             Nihongo Playground
           </NavLink>
@@ -56,7 +57,7 @@ const MainHeader = () => {
                 key={to}
                 to={to}
                 className={({ isActive }) =>
-                  `text-[15px] font-medium transition-colors ${isActive ? activeCls : inactiveCls}`
+                  `text-[15px] transition-colors ${isActive ? activeCls : inactiveCls}`
                 }
               >
                 {label}

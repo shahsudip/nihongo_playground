@@ -44,7 +44,7 @@ export default function VocabDetailsPage() {
 
   return (
     <div className="bg-gray-50 min-h-screen text-black pb-12">
-      <div className="max-w-4xl mx-auto px-4 py-6">
+      <div className="max-w-4xl mx-auto px-4 pt-2 pb-8">
         <Link to={`/levels/${level}/vocabulary-list`} className="text-sm font-semibold text-blue-500 hover:underline mb-4 inline-block">
           &larr; Back to Vocabulary List
         </Link>
@@ -82,14 +82,14 @@ export default function VocabDetailsPage() {
                 <div className="bg-black text-white rounded-lg px-4 py-3 text-center uppercase text-lg font-bold mb-6 tracking-wide shadow-md mt-10">
                   Examples using {word.japanese}
                 </div>
-                <div className="space-y-6">
+                <div className={`grid gap-4 ${word.examples.length > 1 ? 'grid-cols-1 md:grid-cols-2' : 'grid-cols-1'}`}>
                   {word.examples.map((ex, i) => (
-                    <div key={i} className="flex flex-col md:flex-row items-center md:items-start justify-between p-6 border border-gray-300 rounded-lg shadow-sm bg-gradient-to-r from-gray-100 to-white hover:border-black transition-colors">
-                      <div className="flex-grow min-w-0 text-center space-y-3 w-full">
-                        <p className="text-2xl md:text-3xl font-bold text-gray-800 leading-snug">{ex.japanese}</p>
-                        {ex.hiragana && ex.hiragana !== ex.japanese && <p className="text-lg md:text-xl text-gray-600 italic leading-relaxed">{ex.hiragana}</p>}
-                        {ex.romaji && <p className="text-md md:text-lg text-gray-500 font-mono break-words">{ex.romaji}</p>}
-                        <p className="text-lg md:text-xl text-black break-words font-bold">{ex.english}</p>
+                    <div key={i} className="flex flex-col items-center justify-between p-5 border border-gray-300 rounded-xl shadow-sm bg-gradient-to-r from-gray-100 to-white hover:border-black transition-colors">
+                      <div className="flex-grow min-w-0 text-center space-y-2 w-full">
+                        <p className="text-xl md:text-2xl font-bold text-gray-800 leading-snug">{ex.japanese}</p>
+                        {ex.hiragana && ex.hiragana !== ex.japanese && <p className="text-base md:text-lg text-gray-600 italic leading-relaxed">{ex.hiragana}</p>}
+                        {ex.romaji && <p className="text-sm md:text-md text-gray-500 font-mono break-words">{ex.romaji}</p>}
+                        <p className="text-base md:text-lg text-black break-words font-bold pt-1 border-t border-black/10">{ex.english}</p>
                       </div>
                     </div>
                   ))}

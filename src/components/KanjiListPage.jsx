@@ -42,48 +42,19 @@ export default function KanjiListPage() {
   const totalPages = Math.ceil(kanjis.length / ITEMS_PER_PAGE);
   const currentKanjis = kanjis.slice((page - 1) * ITEMS_PER_PAGE, page * ITEMS_PER_PAGE);
 
-  const handleDrillTest = () => {
-    if (!currentKanjis || currentKanjis.length === 0) return;
-
-    const storageKey = `drilled_kanji_${displayLevel}_page_${page}`;
-    let drilled = JSON.parse(localStorage.getItem(storageKey) || '[]');
-    
-    let availableKanjis = currentKanjis.filter(k => !drilled.includes(k.id));
-    
-    if (availableKanjis.length < 5) {
-      alert("You've completed all Kanji on this page! Resetting progress to start over.");
-      drilled = [];
-      availableKanjis = [...currentKanjis];
-    }
-
-    // Pick 5 random
-    const shuffled = [...availableKanjis].sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, 5);
-    
-    // Save to local storage
-    const newDrilled = [...drilled, ...selected.map(k => k.id)];
-    localStorage.setItem(storageKey, JSON.stringify(newDrilled));
-
-    // Navigate to new quiz screen
-    navigate(`/kanji-drill/${displayLevel}`, { state: { selectedKanjis: selected, allKanjis: currentKanjis } });
-  };
-
   if (loading) {
     return <div className="flex justify-center items-center h-screen"><p className="text-xl">Loading Kanji List...</p></div>;
   }
 
   return (
     <div className="bg-[var(--color-bg-primary)] min-h-screen">
-      <div className="max-w-screen-xl mx-auto px-4 py-8">
-        
-        <div className="flex flex-col justify-center items-center text-center mb-8">
-        <h1 className="text-[50px] md:text-[80px] font-extrabold uppercase leading-none" style={{ color: 'rgb(255, 161, 208)', textShadow: 'white -2px -2px 0px, white 2px -2px 0px, white -2px 2px 0px, white 2px 2px 0px' }}>
-          {displayLevel}
-        </h1>
-        <p className="text-[#3A3A3A] font-extrabold italic uppercase text-xl md:text-2xl mt-0">
-          Kanji List
-        </p>
-      </div>
+      <div className="max-w-screen-xl mx-auto px-4 pt-2 pb-8">
+        <button 
+          onClick={() => navigate(`/levels/${level ? level.toLowerCase() : 'n5'}`)}
+          className="text-sm font-semibold text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors mb-4 inline-flex items-center gap-1.5"
+        >
+          &larr; Back to JLPT {displayLevel}
+        </button>
 
       {errorMsg && (
         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4 text-center">
@@ -101,13 +72,7 @@ export default function KanjiListPage() {
         <div id="top" className="p-4">
           <h1 className="text-3xl font-bold text-center mb-6 text-black">JLPT {displayLevel} Kanji List</h1>
           
-          <div className="flex flex-col md:flex-row justify-between items-center mt-4 space-y-4 md:space-y-0 mb-8">
-            <button 
-              onClick={handleDrillTest}
-              className="px-6 py-2 bg-[var(--color-accent)] text-white font-bold rounded-lg shadow-md hover:bg-opacity-90 transition-all flex items-center"
-            >
-              <span className="mr-2">✏️</span> Take Drill Test
-            </button>
+          <div className="flex flex-col md:flex-row justify-end items-center mt-4 space-y-4 md:space-y-0 mb-8">
             <Pagination page={page} totalPages={totalPages} setPage={setPage} />
           </div>
         </div>

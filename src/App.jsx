@@ -27,6 +27,10 @@ const GrammarListPage = lazy(() => import('./components/grammar_list_page.jsx'))
 const KanjiDetailsPage = lazy(() => import('./components/KanjiDetailsPage.jsx'));
 const VocabDetailsPage = lazy(() => import('./components/VocabDetailsPage.jsx'));
 const GrammarDetailsPage = lazy(() => import('./components/GrammarDetailsPage.jsx'));
+const SRSReviewHub = lazy(() => import('./components/SRSReviewHub.jsx'));
+const AnkiDecksPage = lazy(() => import('./components/AnkiDecksPage.jsx'));
+const AnkiQuizViewer = lazy(() => import('./components/AnkiQuizViewer.jsx'));
+const ApkgDeckViewerPage = lazy(() => import('./components/ApkgDeckViewerPage.jsx'));
 
 // Practice Test Flow
 const PracticeCategoryPage = lazy(() => import('./components/PracticeCategoryPage.jsx'));
@@ -59,7 +63,6 @@ const N4PracticeSetDetailsPage = lazy(() => import('./components/N4PracticeSetDe
 const N4PracticeSetQuizPage = lazy(() => import('./components/N4PracticeSetQuizPage.jsx'));
 
 const KanjiListPage = lazy(() => import('./components/KanjiListPage.jsx'));
-const CustomKanjiDrillQuiz = lazy(() => import('./components/CustomKanjiDrillQuiz.jsx'));
 
 // This component protects routes that require a user to be logged in
 function ProtectedRoute({ children }) {
@@ -78,7 +81,6 @@ export default function App() {
           {/* All protected pages use the MainLayout */}
           <Route element={<MainLayout />}>
             <Route path="/levels/:level/kanji-list" element={<ProtectedRoute><KanjiListPage /></ProtectedRoute>} />
-            <Route path="/kanji-drill/:level" element={<ProtectedRoute><CustomKanjiDrillQuiz /></ProtectedRoute>} />
             <Route path="/levels/:level/vocabulary-list" element={<ProtectedRoute><VocabularyListPage /></ProtectedRoute>} />
             <Route path="/levels/:level/grammar-list" element={<ProtectedRoute><GrammarListPage /></ProtectedRoute>} />
             <Route path="/levels/:level/new-vocab-list" element={<ProtectedRoute><VocabularyListPage /></ProtectedRoute>} />
@@ -123,6 +125,12 @@ export default function App() {
             path="/reading-quiz/:quizId"
             element={<ProtectedRoute><ReadingQuizPage /></ProtectedRoute>}
           />
+          <Route path="/srs-review" element={<ProtectedRoute><SRSReviewHub /></ProtectedRoute>} />
+          <Route path="/srs" element={<ProtectedRoute><SRSReviewHub /></ProtectedRoute>} />
+          <Route path="/anki-decks" element={<ProtectedRoute><AnkiDecksPage /></ProtectedRoute>} />
+          <Route path="/anki-quiz/:deckId" element={<ProtectedRoute><AnkiQuizViewer /></ProtectedRoute>} />
+          <Route path="/apkg-viewer" element={<ProtectedRoute><ApkgDeckViewerPage /></ProtectedRoute>} />
+          <Route path="/flashcards/:level/:type/:chunkIndex" element={<ProtectedRoute><FlashcardViewer /></ProtectedRoute>} />
           <Route path="/flashcards/:level/vocabulary_list/:chunkIndex" element={<ProtectedRoute><FlashcardViewer /></ProtectedRoute>} />
 
           <Route 

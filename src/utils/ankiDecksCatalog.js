@@ -1,0 +1,109 @@
+// src/utils/ankiDecksCatalog.js
+
+export const getAssetUrl = (path) => {
+  if (!path) return '';
+  if (path.startsWith('blob:') || path.startsWith('http://') || path.startsWith('https://')) return path;
+  const base = import.meta.env.BASE_URL || '/';
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  const cleanBase = base.endsWith('/') ? base : `${base}/`;
+  return `${cleanBase}${cleanPath}`;
+};
+
+export const ANKI_DECKS_CATALOG = [
+  {
+    id: 'shin-kanzen-n3-grammar',
+    title: 'Shin Kanzen Master N3 Grammar',
+    japaneseTitle: '新完全マスター N3 文法',
+    level: 'N3',
+    levels: ['N3'],
+    category: 'Grammar Patterns',
+    icon: '🧩',
+    layoutName: 'Grammar Cloze & Rule Layout',
+    layoutIcon: '🧩',
+    color: 'from-cyan-600 to-blue-600',
+    cardCount: 140,
+    dataPath: 'anki_decks/shin_kanzen_n3_grammar_data.json',
+    description: 'Detailed grammar structures, formation rules, explanations, and sentence cloze blanks from Shin Kanzen Master.',
+    tags: ['Grammar Rules', 'Cloze Blanks', 'Formulas', 'JLPT N3']
+  },
+  {
+    id: 'ankidrone-essentials',
+    title: 'AnkiDrone Essentials V9',
+    japaneseTitle: '暗記ドローン エッセンシャル',
+    level: 'N5 - N1',
+    levels: ['N5', 'N4', 'N3', 'N2', 'N1'],
+    category: 'Vocabulary & Sentences',
+    icon: '🚁',
+    layoutName: 'Vocabulary & Context Layout',
+    layoutIcon: '🚁',
+    color: 'from-blue-600 to-indigo-600',
+    cardCount: 7718,
+    dataPath: 'anki_decks/ankidrone_essentials_data.json',
+    description: 'Comprehensive vocabulary cards with full contextual sentences and native audio recordings.',
+    tags: ['Audio', 'Sentences', 'Target Words', 'All Levels']
+  },
+  {
+    id: 'core-10k',
+    title: 'Core 10k Japanese Vocabulary',
+    japaneseTitle: 'コア 10,000 語彙',
+    level: 'Core 2k - 10k',
+    levels: ['Core 2k', 'Core 4k', 'Core 6k', 'Core 8k', 'Core 10k'],
+    category: 'Frequency Vocabulary',
+    icon: '📚',
+    layoutName: 'Frequency Vocabulary Layout',
+    layoutIcon: '📚',
+    color: 'from-emerald-600 to-teal-600',
+    cardCount: 9363,
+    dataPath: 'anki_decks/core10k_data.json',
+    description: 'The legendary Core 10,000 Japanese words sorted by real-world usage frequency into Core 2k–10k tiers with example sentences and audio.',
+    tags: ['Frequency', 'Core 2k-10k', 'High Yield', 'Essential']
+  },
+  {
+    id: 'shin-kanzen-n3-vocab',
+    title: 'Shin Kanzen Master N3 Vocab',
+    japaneseTitle: '新完全マスター N3 語彙',
+    level: 'N3',
+    levels: ['N3'],
+    category: 'JLPT Exam Prep',
+    icon: '🎯',
+    layoutName: 'Official Vocab Layout',
+    layoutIcon: '🎯',
+    color: 'from-rose-600 to-pink-600',
+    cardCount: 1017,
+    dataPath: 'anki_decks/shin_kanzen_n3_vocab_data.json',
+    description: 'Curated vocabulary with official Shin Kanzen Master definitions, thematic categorization, and synonyms.',
+    tags: ['Official SKM', 'JLPT N3', 'Exam Targeted']
+  },
+  {
+    id: 'speed-master-2400',
+    title: 'Speed Master Standard 2400',
+    japaneseTitle: 'スピードマスター 2400',
+    level: 'N3',
+    levels: ['N3'],
+    category: 'Rapid Vocabulary Drill',
+    icon: '⚡',
+    layoutName: 'Speed Drill Layout',
+    layoutIcon: '⚡',
+    color: 'from-amber-600 to-orange-600',
+    cardCount: 1935,
+    dataPath: 'anki_decks/speed_master_2400_data.json',
+    description: 'Official Nihongo Tango Speed Master Standard 2400 vocabulary drill cards with example sentences designed for fast JLPT N3 retention.',
+    tags: ['Speed Drill', 'Sentences', 'JLPT N3']
+  },
+  {
+    id: 'tango-n3',
+    title: 'JLPT Tango N3 Anki Deck',
+    japaneseTitle: '単語 N3 本',
+    level: 'N3',
+    levels: ['N3'],
+    category: 'Tango Vocabulary',
+    icon: '📖',
+    layoutName: 'Tango Context Layout',
+    layoutIcon: '📖',
+    color: 'from-fuchsia-600 to-rose-600',
+    cardCount: 1800,
+    dataPath: 'anki_decks/deck_data.json',
+    description: 'The complete Hajimete no Nihongo Tango N3 vocabulary collection with audio and contextual sentence translations.',
+    tags: ['Tango Book', 'Audio', 'JLPT N3']
+  }
+];

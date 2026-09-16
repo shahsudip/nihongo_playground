@@ -54,16 +54,13 @@ export default function GrammarListPage() {
 
   return (
     <div className="bg-[var(--color-bg-primary)] min-h-screen">
-      <div className="max-w-screen-xl mx-auto px-4 py-8">
-        
-        <div className="flex flex-col justify-center items-center text-center mb-8">
-        <h1 className="text-[50px] md:text-[80px] font-extrabold uppercase leading-none" style={{ color: 'rgb(255, 161, 208)', textShadow: 'white -2px -2px 0px, white 2px -2px 0px, white -2px 2px 0px, white 2px 2px 0px' }}>
-          {displayLevel}
-        </h1>
-        <p className="text-[var(--color-text-primary)] font-extrabold italic uppercase text-xl md:text-2xl mt-0">
-          Grammar List
-        </p>
-      </div>
+      <div className="max-w-screen-xl mx-auto px-4 pt-2 pb-8">
+        <button 
+          onClick={() => navigate(`/levels/${level ? level.toLowerCase() : 'n5'}`)}
+          className="text-sm font-semibold text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors mb-4 inline-flex items-center gap-1.5"
+        >
+          &larr; Back to JLPT {displayLevel}
+        </button>
 
       {errorMsg && (
         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4 text-center">
@@ -77,11 +74,13 @@ export default function GrammarListPage() {
         </div>
       )}
 
-      <div className="bg-white border border-black p-6 rounded-md shadow-md max-w-4xl mx-auto">
+      <div className="bg-white border border-black p-6 rounded-md shadow-md max-w-6xl mx-auto">
         <div id="top" className="p-4">
           <h1 className="text-3xl font-bold text-center mb-6 text-black">JLPT {displayLevel} Grammar List</h1>
           
-          <Pagination page={page} totalPages={totalPages} setPage={setPage} />
+          <div className="flex flex-col md:flex-row justify-end items-center mt-4 space-y-4 md:space-y-0 mb-8">
+            <Pagination page={page} totalPages={totalPages} setPage={setPage} />
+          </div>
         </div>
 
         <div id="grammar-list">

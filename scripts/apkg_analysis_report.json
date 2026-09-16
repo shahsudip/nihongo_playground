@@ -1,0 +1,608 @@
+{
+  "AnkiDrone Core10k.apkg": {
+    "note_count": 1,
+    "card_count": 1,
+    "media_count": 18729,
+    "models": {
+      "Basic": {
+        "fields": [
+          "Front",
+          "Back"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}"
+          }
+        ],
+        "css_sample": ".card {\n  font-family: arial;\n  font-size: 20px;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n"
+      },
+      "Basic (and reversed card)": {
+        "fields": [
+          "Front",
+          "Back"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}"
+          },
+          {
+            "name": "Card 2",
+            "qfmt": "{{Back}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Front}}"
+          }
+        ],
+        "css_sample": ".card {\n  font-family: arial;\n  font-size: 20px;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n"
+      },
+      "Basic (optional reversed card)": {
+        "fields": [
+          "Front",
+          "Back",
+          "Add Reverse"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}"
+          },
+          {
+            "name": "Card 2",
+            "qfmt": "{{#Add Reverse}}{{Back}}{{/Add Reverse}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Front}}"
+          }
+        ],
+        "css_sample": ".card {\n  font-family: arial;\n  font-size: 20px;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n"
+      },
+      "Basic (type in the answer)": {
+        "fields": [
+          "Front",
+          "Back"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}\n\n{{type:Back}}",
+            "afmt": "{{Front}}\n\n<hr id=answer>\n\n{{type:Back}}"
+          }
+        ],
+        "css_sample": ".card {\n  font-family: arial;\n  font-size: 20px;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n"
+      },
+      "Cloze": {
+        "fields": [
+          "Text",
+          "Back Extra"
+        ],
+        "templates": [
+          {
+            "name": "Cloze",
+            "qfmt": "{{cloze:Text}}",
+            "afmt": "{{cloze:Text}}<br>\n{{Back Extra}}"
+          }
+        ],
+        "css_sample": ".card {\n  font-family: arial;\n  font-size: 20px;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n\n.cloze {\n font-weight: bold;\n color: blue;\n}\n.nightMode .cloze {\n color: lightblue;"
+      }
+    },
+    "sample_notes": [
+      {
+        "id": 1639680319479,
+        "mid": 1639680319478,
+        "fields": [
+          "This file requires a newer version of Anki.",
+          ""
+        ],
+        "tags": ""
+      }
+    ]
+  },
+  "Ankidrone Essentials V9.apkg": {
+    "note_count": 7724,
+    "card_count": 7724,
+    "media_count": 0,
+    "models": {},
+    "sample_notes": [
+      {
+        "id": 1710710487551,
+        "mid": 1600967940346,
+        "fields": [
+          "1",
+          "",
+          "<b>Ankidrone Essentials</b>&nbsp;is an Anki deck for beginner Japanese learners. The deck was created using sentences extracted from <b>JLPT Tango</b> textbooks. When there was no example sentence for a word in the textbooks, the example sentence was sourced from elsewhere. For a small number of words there are no example sentences, they are formatted as&nbsp;<a href=\"https://tatsumoto.neocities.org/blog/discussing-various-card-templates.html#simple-word-cards\">SWC</a>. Other cards are formatted as&nbsp;<a href=\"https://tatsumoto.neocities.org/blog/discussing-various-card-templates.html#targeted-sentence-cards\">TSC</a>."
+        ],
+        "tags": " readme "
+      },
+      {
+        "id": 1710710487552,
+        "mid": 1600967940346,
+        "fields": [
+          "2",
+          "",
+          "This deck is meant to be used with the <a href=\"https://tatsumoto.neocities.org/blog/whats-ajatt\">AJATT method</a> of language learning. It assumes that you are immersing in Japanese media, mining sentences and studying Japanese grammar on your own.<br><br>We recommend this deck if you want to:<br><ul><li>Learn basic Japanese vocabulary to increase your comprehension,</li><li>To supplement the process of sentence mining,</li><li>Or to expand your <a href=\"https://tatsumoto.neocities.org/blog/cross-profile-search-and-import\">sentence bank</a>.</li></ul>We don't recommend this deck if you're not doing AJATT.<br>"
+        ],
+        "tags": " readme "
+      },
+      {
+        "id": 1710710487553,
+        "mid": 1600967940346,
+        "fields": [
+          "3",
+          "",
+          "<b>Ankidrone&nbsp;Essentials</b>&nbsp;contains all vocabulary from the original Tango books. Therefore, while studying the deck you will find cards that you may not be interested in, for example:<br><ul><li>Names of various places and countries. They are very specific and most likely were included in the books to teach people how to introduce themselves.</li><li>Katakana-words, loan-words. Most people who speak English can already understand them intuitively.</li></ul><div>If you want, suspend such cards by pressing @ or delete them by pressing Ctrl+Delete.</div>"
+        ],
+        "tags": " readme "
+      }
+    ]
+  },
+  "Japanese_N3_N2_N4_Anime_Sentence_images_audio.apkg": {
+    "note_count": 1,
+    "card_count": 1,
+    "media_count": 1008,
+    "models": {
+      "Basic (optional reversed card)": {
+        "fields": [
+          "Front",
+          "Back",
+          "Add Reverse"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}"
+          },
+          {
+            "name": "Card 2",
+            "qfmt": "{{#Add Reverse}}{{Back}}{{/Add Reverse}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Front}}"
+          }
+        ],
+        "css_sample": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n"
+      },
+      "Basic (and reversed card)": {
+        "fields": [
+          "Front",
+          "Back"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}"
+          },
+          {
+            "name": "Card 2",
+            "qfmt": "{{Back}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Front}}"
+          }
+        ],
+        "css_sample": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n"
+      },
+      "Basic (type in the answer)": {
+        "fields": [
+          "Front",
+          "Back"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}\n\n{{type:Back}}",
+            "afmt": "{{Front}}\n\n<hr id=answer>\n\n{{type:Back}}"
+          }
+        ],
+        "css_sample": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n"
+      },
+      "Cloze": {
+        "fields": [
+          "Text",
+          "Back Extra"
+        ],
+        "templates": [
+          {
+            "name": "Cloze",
+            "qfmt": "{{cloze:Text}}",
+            "afmt": "{{cloze:Text}}<br>\n{{Back Extra}}"
+          }
+        ],
+        "css_sample": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n.cloze {\n    font-weight: bold;\n    color: blue;\n}\n.nightMode .cloze {\n   "
+      },
+      "Basic": {
+        "fields": [
+          "Front",
+          "Back"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}"
+          }
+        ],
+        "css_sample": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n"
+      },
+      "Image Occlusion": {
+        "fields": [
+          "Occlusion",
+          "Image",
+          "Header",
+          "Back Extra",
+          "Comments"
+        ],
+        "templates": [
+          {
+            "name": "Image Occlusion",
+            "qfmt": "{{#Header}}<div>{{Header}}</div>{{/Header}}\n<div style=\"display: none\">{{cloze:Occlusion}}</div>\n<div id=\"err\"></div>\n<div id=\"image-occlusion-container\">\n    {{Image}}\n    <canvas id=\"image-occlusion-canvas\"></canvas>\n</div>\n<script>\ntry {\n    anki.imageOcclusion.setup();\n} catch (exc) {\n    document.getElementById(\"err\").innerHTML = `Error loading image occlusion. Is your Anki version up to date?<br><br>${exc}`;\n}\n</script>\n",
+            "afmt": "{{#Header}}<div>{{Header}}</div>{{/Header}}\n<div style=\"display: none\">{{cloze:Occlusion}}</div>\n<div id=\"err\"></div>\n<div id=\"image-occlusion-container\">\n    {{Image}}\n    <canvas id=\"image-occlusion-canvas\"></canvas>\n</div>\n<script>\ntry {\n    anki.imageOcclusion.setup();\n} catch (exc) {\n    document.getElementById(\"err\").innerHTML = `Error loading image occlusion. Is your Anki version up to date?<br><br>${exc}`;\n}\n</script>\n\n<div><button id=\"toggle\">Toggle Masks</button></div>\n{{#Back Extra}}<div>{{Back Extra}}</div>{{/Back Extra}}\n"
+          }
+        ],
+        "css_sample": "#image-occlusion-canvas {\n    --inactive-shape-color: #ffeba2;\n    --active-shape-color: #ff8e8e;\n    --inactive-shape-border: 1px #212121;\n    --active-shape-border: 1px #212121;\n    --highlight-shap"
+      }
+    },
+    "sample_notes": [
+      {
+        "id": 1738430325725,
+        "mid": 1738430325725,
+        "fields": [
+          "Please update to the latest Anki version, then import the .colpkg/.apkg file again.",
+          ""
+        ],
+        "tags": ""
+      }
+    ]
+  },
+  "JLPT Tango N3.apkg": {
+    "note_count": 1994,
+    "card_count": 1994,
+    "media_count": 0,
+    "models": {},
+    "sample_notes": [
+      {
+        "id": 1378555078090,
+        "mid": 1648634866506,
+        "fields": [
+          "改札口",
+          "ticket gate",
+          "<b> 改札[かいさつ] 口[ぐち]</b>で 会[あ]いましょう。",
+          "改札口[かいさつぐち]",
+          "<b> 改札[かいさつ] 口[ぐち]</b>で 会[あ]いましょう。",
+          "Let's meet at the ticket gate.",
+          "[sound:751V.mp3]",
+          "4",
+          "751",
+          ""
+        ],
+        "tags": " mm_comprehension mm_tooShort "
+      },
+      {
+        "id": 1378555094790,
+        "mid": 1648634866506,
+        "fields": [
+          "歓迎",
+          "welcome",
+          "温[あたた]かい<b> 歓迎[かんげい]</b>を 受[う]けました。",
+          "歓迎[かんげい]",
+          "温[あたた]かい<b> 歓迎[かんげい]</b>を 受[う]けました。",
+          "I received a warm welcome.",
+          "[sound:1881V.mp3]",
+          "0",
+          "1881",
+          ""
+        ],
+        "tags": " mm_comprehension mm_tooShort "
+      },
+      {
+        "id": 1378555096550,
+        "mid": 1648634866506,
+        "fields": [
+          "大げさ",
+          "exaggerated",
+          "彼[かれ]の 話[はなし]は<b> 大[おお]げさ</b>だ。",
+          "大[おお]げさ",
+          "彼[かれ]の 話[はなし]は<b> 大[おお]げさ</b>だ。",
+          "His story is exaggerated.",
+          "[sound:2465V.mp3]",
+          "0",
+          "2465",
+          ""
+        ],
+        "tags": " mm_comprehension mm_tooShort "
+      }
+    ]
+  },
+  "Shin_Kanzen_Master_N3_Grammar__Sentence_Deck.apkg": {
+    "note_count": 1,
+    "card_count": 1,
+    "media_count": 3,
+    "models": {
+      "Basic (optional reversed card)": {
+        "fields": [
+          "Front",
+          "Back",
+          "Add Reverse"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}"
+          },
+          {
+            "name": "Card 2",
+            "qfmt": "{{#Add Reverse}}{{Back}}{{/Add Reverse}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Front}}"
+          }
+        ],
+        "css_sample": ".card {\n    font-family: arial;\n    font-size: 20px;\n    line-height: 1.5;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n"
+      },
+      "Image Occlusion": {
+        "fields": [
+          "Occlusion",
+          "Image",
+          "Header",
+          "Back Extra",
+          "Comments"
+        ],
+        "templates": [
+          {
+            "name": "Image Occlusion",
+            "qfmt": "{{#Header}}<div>{{Header}}</div>{{/Header}}\n<div style=\"display: none\">{{cloze:Occlusion}}</div>\n<div id=\"err\"></div>\n<div id=\"image-occlusion-container\">\n    {{Image}}\n    <canvas id=\"image-occlusion-canvas\"></canvas>\n</div>\n<script>\ntry {\n    anki.imageOcclusion.setup();\n} catch (exc) {\n    document.getElementById(\"err\").innerHTML = `Error loading image occlusion. Is your Anki version up to date?<br><br>${exc}`;\n}\n</script>\n",
+            "afmt": "{{#Header}}<div>{{Header}}</div>{{/Header}}\n<div style=\"display: none\">{{cloze:Occlusion}}</div>\n<div id=\"err\"></div>\n<div id=\"image-occlusion-container\">\n    {{Image}}\n    <canvas id=\"image-occlusion-canvas\"></canvas>\n</div>\n<script>\ntry {\n    anki.imageOcclusion.setup();\n} catch (exc) {\n    document.getElementById(\"err\").innerHTML = `Error loading image occlusion. Is your Anki version up to date?<br><br>${exc}`;\n}\n</script>\n\n<div><button id=\"toggle\">Toggle Masks</button></div>\n{{#Back Extra}}<div>{{Back Extra}}</div>{{/Back Extra}}\n"
+          }
+        ],
+        "css_sample": "#image-occlusion-canvas {\n    --inactive-shape-color: #ffeba2;\n    --active-shape-color: #ff8e8e;\n    --inactive-shape-border: 1px #212121;\n    --active-shape-border: 1px #212121;\n    --highlight-shap"
+      },
+      "Basic (type in the answer)": {
+        "fields": [
+          "Front",
+          "Back"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}\n\n{{type:Back}}",
+            "afmt": "{{Front}}\n\n<hr id=answer>\n\n{{type:Back}}"
+          }
+        ],
+        "css_sample": ".card {\n    font-family: arial;\n    font-size: 20px;\n    line-height: 1.5;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n"
+      },
+      "Cloze": {
+        "fields": [
+          "Text",
+          "Back Extra"
+        ],
+        "templates": [
+          {
+            "name": "Cloze",
+            "qfmt": "{{cloze:Text}}",
+            "afmt": "{{cloze:Text}}<br>\n{{Back Extra}}"
+          }
+        ],
+        "css_sample": ".card {\n    font-family: arial;\n    font-size: 20px;\n    line-height: 1.5;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n.cloze {\n    font-weight: bold;\n    color: blue;\n}\n."
+      },
+      "Basic (and reversed card)": {
+        "fields": [
+          "Front",
+          "Back"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}"
+          },
+          {
+            "name": "Card 2",
+            "qfmt": "{{Back}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Front}}"
+          }
+        ],
+        "css_sample": ".card {\n    font-family: arial;\n    font-size: 20px;\n    line-height: 1.5;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n"
+      },
+      "Basic": {
+        "fields": [
+          "Front",
+          "Back"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}"
+          }
+        ],
+        "css_sample": ".card {\n    font-family: arial;\n    font-size: 20px;\n    line-height: 1.5;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n"
+      }
+    },
+    "sample_notes": [
+      {
+        "id": 1777448060086,
+        "mid": 1777448060084,
+        "fields": [
+          "Please update to the latest Anki version, then import the .colpkg/.apkg file again.",
+          ""
+        ],
+        "tags": ""
+      }
+    ]
+  },
+  "Shin_Kanzen_Master_Vocabulary_JLPT_N3_Official_Definitions.apkg": {
+    "note_count": 1,
+    "card_count": 1,
+    "media_count": 1,
+    "models": {
+      "Image Occlusion": {
+        "fields": [
+          "Occlusion",
+          "Image",
+          "Header",
+          "Back Extra",
+          "Comments"
+        ],
+        "templates": [
+          {
+            "name": "Image Occlusion",
+            "qfmt": "{{#Header}}<div>{{Header}}</div>{{/Header}}\n<div style=\"display: none\">{{cloze:Occlusion}}</div>\n<div id=\"err\"></div>\n<div id=\"image-occlusion-container\">\n    {{Image}}\n    <canvas id=\"image-occlusion-canvas\"></canvas>\n</div>\n<script>\ntry {\n    anki.imageOcclusion.setup();\n} catch (exc) {\n    document.getElementById(\"err\").innerHTML = `Error loading image occlusion. Is your Anki version up to date?<br><br>${exc}`;\n}\n</script>\n",
+            "afmt": "{{#Header}}<div>{{Header}}</div>{{/Header}}\n<div style=\"display: none\">{{cloze:Occlusion}}</div>\n<div id=\"err\"></div>\n<div id=\"image-occlusion-container\">\n    {{Image}}\n    <canvas id=\"image-occlusion-canvas\"></canvas>\n</div>\n<script>\ntry {\n    anki.imageOcclusion.setup();\n} catch (exc) {\n    document.getElementById(\"err\").innerHTML = `Error loading image occlusion. Is your Anki version up to date?<br><br>${exc}`;\n}\n</script>\n\n<div><button id=\"toggle\">Toggle Masks</button></div>\n{{#Back Extra}}<div>{{Back Extra}}</div>{{/Back Extra}}\n"
+          }
+        ],
+        "css_sample": "#image-occlusion-canvas {\n    --inactive-shape-color: #ffeba2;\n    --active-shape-color: #ff8e8e;\n    --inactive-shape-border: 1px #212121;\n    --active-shape-border: 1px #212121;\n    --highlight-shap"
+      },
+      "Basic": {
+        "fields": [
+          "Front",
+          "Back"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}"
+          }
+        ],
+        "css_sample": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n"
+      },
+      "Basic (and reversed card)": {
+        "fields": [
+          "Front",
+          "Back"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}"
+          },
+          {
+            "name": "Card 2",
+            "qfmt": "{{Back}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Front}}"
+          }
+        ],
+        "css_sample": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n"
+      },
+      "Basic (type in the answer)": {
+        "fields": [
+          "Front",
+          "Back"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}\n\n{{type:Back}}",
+            "afmt": "{{Front}}\n\n<hr id=answer>\n\n{{type:Back}}"
+          }
+        ],
+        "css_sample": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n"
+      },
+      "Cloze": {
+        "fields": [
+          "Text",
+          "Back Extra"
+        ],
+        "templates": [
+          {
+            "name": "Cloze",
+            "qfmt": "{{cloze:Text}}",
+            "afmt": "{{cloze:Text}}<br>\n{{Back Extra}}"
+          }
+        ],
+        "css_sample": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n.cloze {\n    font-weight: bold;\n    color: blue;\n}\n.nightMode .cloze {\n   "
+      },
+      "Basic (optional reversed card)": {
+        "fields": [
+          "Front",
+          "Back",
+          "Add Reverse"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}"
+          },
+          {
+            "name": "Card 2",
+            "qfmt": "{{#Add Reverse}}{{Back}}{{/Add Reverse}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Front}}"
+          }
+        ],
+        "css_sample": ".card {\n    font-family: arial;\n    font-size: 20px;\n    text-align: center;\n    color: black;\n    background-color: white;\n}\n"
+      }
+    },
+    "sample_notes": [
+      {
+        "id": 1745479318018,
+        "mid": 1745479318017,
+        "fields": [
+          "Please update to the latest Anki version, then import the .colpkg/.apkg file again.",
+          ""
+        ],
+        "tags": ""
+      }
+    ]
+  },
+  "_Standard_2400.apkg": {
+    "note_count": 1935,
+    "card_count": 1935,
+    "media_count": 0,
+    "models": {
+      "Japanese example_sentences": {
+        "fields": [
+          "Expression",
+          "Meaning",
+          "Reading",
+          "Examples",
+          "Audio"
+        ],
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "<div class=\"question\">\n<span style=\"font-size: 45; font-weight: 700; color: yellow;\">\n{{Expression}}<br><br>\n</span>\n</div>",
+            "afmt": "\n<div class=\"title\">{{furigana:Expression}}\n\n<hr id=answer>\n{{furigana:Reading}}<br>\n</div>\n{{Meaning}}<br><br>\n\n<button title=\"Click to Show/Hide Content\" type=\"button\" onclick=\"if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}\">Show/Hide examples</button>\n<br><br>\n<div id=\"spoiler\" style=\"display:none\">{{Examples}}</div>\n</div>"
+          }
+        ],
+        "css_sample": ".card {\n font-family: arial;\n font-size: 25px;\n text-align: center;\n color: yellow;\n background-color: white;\n position: absolute;\n width: 100%; \nheight: 100%; \ndisplay: -webkit-box; \n-webkit-box-alig"
+      }
+    },
+    "sample_notes": [
+      {
+        "id": 1588606430077,
+        "mid": 1505237147345,
+        "fields": [
+          "昨日",
+          "yesterday",
+          "さくじつ",
+          "<FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">昨日</FONT></FONT>彼がぶらっと立ち寄った。<br>He dropped in on me yesterday. {CHECKED}<br><br><FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">昨日</FONT></FONT>は全くついていなかった。<br>It just was not my day yesterday.<br><br>彼が<FONT COLOR=\"#ff0000\">きのう</FONT>そこにいたはずはない。<br>He cannot have been there yesterday.<br><br><FONT COLOR=\"#ff0000\">きのう</FONT>彼に電話をかけたのは私だった。<br>It was I that phoned him yesterday.<br><br>彼らは、<FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">昨日</FONT></FONT>魚釣りに行きました。<br>They went fishing yesterday.",
+          ""
+        ],
+        "tags": " 1-Time "
+      },
+      {
+        "id": 1588606430078,
+        "mid": 1505237147345,
+        "fields": [
+          "一昨日",
+          "the day before yesterday",
+          "いっさくじつ",
+          "「ウィキペディアを引用するな」という主張が昨日だか<FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">一昨日</FONT></FONT>だかの朝日新聞に載っていた。<br>The exhortation \"Don't quote Wikipedia\" was included in the Asahi newspaper of yesterday or the day before. {CHECKED}<br><br><FONT COLOR=\"#ff0000\">おととい</FONT>そこへ行きました。<br>I went there the day before yesterday.<br><br><FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">一昨日</FONT></FONT>成田に着きました。<br>I arrived at Narita the day before yesterday.<br><br><FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">一昨日</FONT></FONT>、彼らはそこを出発した。<br>They left there the day before yesterday.<br><br>その火事は<FONT COLOR=\"#ff0000\">おととい</FONT>発生した。<br>A fire broke out the day before yesterday.",
+          ""
+        ],
+        "tags": " 1-Time "
+      },
+      {
+        "id": 1588606430079,
+        "mid": 1505237147345,
+        "fields": [
+          "昨年",
+          "last year",
+          "さくねん",
+          "ヘレンは<FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">昨年</FONT></FONT>日本に来た。<br>Helen came to Japan last year. {CHECKED}<br><br>実は、私たちは<FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">昨年</FONT></FONT>結婚しました。<br>To tell the truth, we got married last year.<br><br><FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">昨年</FONT></FONT>の主な出来事は何でしたか。<br>What were the chief events of last year?<br><br>彼は<FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">昨年</FONT></FONT>遺書を。<br>He made a will last year.<br><br>私は<FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">昨年</FONT></FONT>退職しました。<br>I retired last year.",
+          ""
+        ],
+        "tags": " 1-Time "
+      }
+    ]
+  }
+}

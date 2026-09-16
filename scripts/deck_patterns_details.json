@@ -1,0 +1,445 @@
+{
+  "AnkiDrone Core10k.apkg": {
+    "decks": [
+      "AnkiDrone Core10k",
+      "Default"
+    ],
+    "models": [
+      {
+        "id": "1639680318127",
+        "name": "Basic",
+        "fields": [
+          "Front",
+          "Back"
+        ],
+        "css": ".card {\n  font-family: arial;\n  font-size: 20px;\n  text-align: center;\n  color: black;\n  background-color: white;\n}\n",
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "{{Front}}",
+            "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}"
+          }
+        ]
+      },
+      {
+        "id": "1624411489803",
+        "name": "Japanese Ankidrone sentences",
+        "fields": [
+          "SentKanji",
+          "SentFurigana",
+          "SentEng",
+          "SentAudio",
+          "VocabKanji",
+          "VocabFurigana",
+          "VocabDef",
+          "VocabAudio",
+          "Notes",
+          "NetfilxFreq",
+          "MakeProductionCard"
+        ],
+        "css": "@charset \"utf-8\";\n@font-face {\n\tfont-family: \"Yu Mincho\";\n\tsrc:\n\t\tlocal(\"Yu Mincho\"),\n\t\tlocal(\"游明朝\"),\n\t\turl(\"_yumin.ttf\");\n}\n@font-face {\n\tfont-family: \"Yu Mincho\";\n\tsrc:\n\t\tlocal(\"Yu Mincho Demibold\"),\n\t\tlocal(\"游明朝 Demibold\"),\n\t\turl(\"_yumindb.ttf\");\n\tfont-weight: 600;\n}\n@font-face {\n\tfont-family: \"KanjiStrokeOrders\";\n\tsrc:\n\t\tlocal(\"KanjiStrokeOrders\"),\n\t\turl('_kso.ttf');\n}\n\n* { box-sizing: border-box; padding: 0; margin: 0; }\n.card {\n\tbackground-color: #FFFAF0;\n\tcolor: #2A1B0A;\n\tfont-family:\t\"Noto Serif\",\n\t\t\t\t\t\t\t\t\t\"Noto Serif CJK JP\",\n\t\t\t\t\t\t\t\t\tYu Mincho,\n\t\t\t\t\t\t\t\t\t\"Liberation Serif\",\n\t\t\t\t\t\t\t\t\t\"Times New Roman\",\n\t\t\t\t\t\t\t\t\tTimes, Georgia,\n\t\t\t\t\t\t\t\t\tSerif;\n\tfont-size: 24px;\n\ttext-align: left;\n\tline-height: 1.4;\n\tmax-width: 800px;\n\tmargin: 20px auto;\n}\n.card1 { }\n.card2 .jpsentence ruby rt { opacity: 0; }\n.card2 .jpsentence:hover ruby rt { opacity: 1; }\n\nhr { margin: 2px 0; clear: both; }\nb { font-weight: 600; }\n\n/* links */\na { color: #532f2f; }\na:hover { color: #722a2a ; }\na.hint { text-decoration: none; display: block; }\n\n/* Hide furigana on front */\nnokana ruby rt { opacity:0.0; font-size:0; display: none; }\nnotext b { background-color: black; color:transparent; }\n\n/* Top */\nheader { font-size: 14px; line-height: 14px; clear: both; }\n\n/* Japanese sentence */\n.jpsentence { font-size: 35px; }\n.jpsentence b { color: SaddleBrown; }\n\n.tags {\n\tfont-family:\t\"Noto Sans\",\n\t\t\t\t\t\t\t\t\t\"Noto Sans CJK JP\",\n\t\t\t\t\t\t\t\t\t\"Liberation Sans\",\n\t\t\t\t\t\t\t\t\tArial,\n\t\t\t\t\t\t\t\t\tSans,\n\t\t\t\t\t\t\t\t\tsans-serif;\n\ttext-align: center;\n\tdisplay: inline-block;\n\ttext-transform: lowercase;\n\tbackground-color: #333;\n\tcolor: #FFFAF0;\n\tfont-weight: bold;\n\tpadding: 1px 3px;\n\tmargin: 0;\n\tcursor: pointer;\n\tborder-radius: 3px;\n\tfont-size: 12px;\n\tline-height: 14px;\n}\n\n/* AnkiDroid replay button */\n.replaybutton { margin: 0; margin-right: 3px; text-decoration: none; }\n.replaybutton span  { padding: 0; font-size: 16px; }\n.replaybutton span svg {\n\tfill: #FFFAF0;\n\tbackground: #333;\n\tborder-radius: 3px;\n\tvertical-align: top; \n\tmin-width: 16px;\n\tmin-height: 16px;\n}\n\n/* PC replay button */\na.replay-button { top: -.125em;  position: relative; }\na.replay-button svg {\n\theight: 1em;\n\twidth: 1em;\n}\na.replay-button svg path { fill: #FFFAF0; }\na.replay-button svg circle { fill: #333; }\n\n/* footer and dictionaries */\nfooter {font-size: 16px; text-align: center; }\nfooter>a { text-decoration: none; }\nfooter > a:after {content:\"·\";  color: brown; display: inline-block; width: 6px; }\nfooter > a:last-child:after {content:\"\"; width: 0; }\n\n/* definitions and notes */\n.vocab { margin-top: 16px; }\n.vocab div { display: inline-block; }\n.vocab  br { display: none; }\n.vocab > .tags { vertical-align: top; }\n.notes > .tags { vertical-align: bottom; }\n\n/* Production cards */\n.production b { visibility: hidden; }\n.strokeorder {\n\ttext-align: center;\n\tfont-size: 150px;\n\tfont-family: KanjiStrokeOrders;\n}\n\n/* Fix for Yomichan defs */\nul, ol {\n  list-style-type: none; \n  display: inline;\n  margin: 0px;\n  padding: 0px;\n}\n\n/* Fix for Yomichan pitch accents */\n.vocab ol > li { display: inline; }\n.vocab ol > li:after { content: \"・\"; }\n.vocab ol > li:last-child:after { content: \"\"; }",
+        "templates": [
+          {
+            "name": "Recognition",
+            "qfmt": "{{#Tags}}\n\t<header>\n\t\t<div class=\"tags\">{{Tags}}</div>\n\t</header>\n{{/Tags}}\n\n<div class=\"jpsentence\" lang=\"ja\">\n\t{{morphHighlight:furigana:SentKanji}}\n\t{{^SentKanji}}<nokana>{{kanji:SentFurigana}}</nokana>{{/SentKanji}}\n</div>",
+            "afmt": "{{FrontSide}}\n<hr id=\"answer\">\n<div class=\"jpsentence\" lang=\"ja\">\n\t{{edit:furigana:SentFurigana}}\n\t{{^SentFurigana}}{{furigana:SentKanji}}{{/SentFurigana}}\n</div>\n\n{{#SentEng}}\n\t<div lang=\"en\">{{hint:SentEng}}</div>\n{{/SentEng}}\n\n<div lang=\"ja\" class=\"vocab\">\n\t{{VocabAudio}}\n\t{{SentAudio}}\n\t{{kana:VocabFurigana}}\n\t{{#VocabKanji}}【{{kanji:VocabKanji}}】{{/VocabKanji}}\n</div>\n\n{{#VocabDef}}\t\n\t<div class=\"definitions\">{{edit:furigana:VocabDef}}</div>\n{{/VocabDef}}\n\n{{#Notes}}\t\n<div class=\"notes\">\n\t<div class=\"tags\">Notes</div>\n\t<div>{{furigana:Notes}}</div>\n</div>\n{{/Notes}}\n\n<hr>\n\n<footer\n\t>{{#SentKanji}}\t<a href=\"https://jisho.org/search?keyword={{kanji:text:SentKanji}}\" \n\ttitle=\"Sentence on Jisho\">Jisho</a\n\t><a href=\"https://www.google.co.jp/search?q={{kanji:text:SentKanji}}&tbm=isch\" \n\ttitle=\"Search images\">Images</a\n\t>{{/SentKanji}}{{#VocabKanji}}<a href=\"http://www.weblio.jp/content/{{text:VocabKanji}}\">Weblio</a\n\t><a href=\"https://wadoku.de/search/?q={{text:VocabKanji}}\">Wadoku</a\n\t>{{/VocabKanji}}</footer\n>"
+          },
+          {
+            "name": "Production",
+            "qfmt": "{{#MakeProductionCard}}\n{{#SentKanji}}\n\n<header>{{#Tags}}<div class=\"tags\">{{Tags}}</div>{{/Tags}}</header>\n<div class=\"images\" ></div>\n<div class=\"jpsentence production\">{{furigana:SentFurigana}}</div>\n<div style=\"text-align: center;\">{{VocabAudio}}{{SentAudio}}</div>\n<script>\n\tdocument.addEventListener('DOMContentLoaded', threeDots(), false);\n\n\tfunction threeDots() {\n\t\tconst sent = document.getElementsByClassName(\"production\")[0];\n\t\tif (sent) {\n\t\t\tconst hidden = sent.getElementsByTagName(\"b\");\n\t\t\tfor (i = 0; i < hidden.length; i++) {\n\t\t\t\tif (hidden[i]) {\n\t\t\t\t\thidden[i].style.visibility = \"visible\";\n\t\t\t\t\t//hidden[i].innerText = \"【{{kana:VocabFurigana}}】\";\n\t\t\t\t\thidden[i].innerText = \"【\"+hidden[i].innerText.replace(/[^ぁ-んァ-ン]/g, \"\")+\"】\";\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n</script>\n\n{{/SentKanji}}\n{{/MakeProductionCard}}",
+            "afmt": "{{FrontSide}}\n<hr>\n<div lang=\"en\" >{{SentEng}}</div>\n\n<div class=\"strokeorder\">{{VocabKanji}}</div>\n\n{{#VocabKanji}}\n<div class=\"vocab\">\n{{kana:VocabFurigana}}\n【{{VocabKanji}}】\n</div>\n{{/VocabKanji}}\n\n{{#VocabDef}}\t\n<div class=\"definitions\">{{furigana:VocabDef}}</div>\n{{/VocabDef}}\n\n<hr>\n\n<footer>\n\t{{#SentKanji}}\n\t\t<a href=\"https://jisho.org/search?keyword={{text:SentKanji}}\" title=\"Sentence on Jisho\">Jisho</a>\n\t\t<a href=\"https://www.google.co.jp/search?q={{text:SentKanji}}&tbm=isch\" title=\"Search images\">Images</a>\n\t{{/SentKanji}}{{#VocabKanji}}\n\t\t<a href=\"http://tangorin.com/dict.php?dict=general&s={{text:VocabKanji}}\">Tangorin</a>\n\t\t<a  href=\"http://www.weblio.jp/content/{{text:VocabKanji}}\">Weblio</a>\n\t\t<a  href=\"https://wadoku.de/search/?q={{text:VocabKanji}}\">Wadoku</a>\n\t{{/VocabKanji}}\n</footer>"
+          }
+        ]
+      }
+    ],
+    "samples": [
+      {
+        "noteId": 1614447503926,
+        "modelName": "Japanese Ankidrone sentences",
+        "data": {
+          "SentKanji": "友達と一緒に宿題を<b>した</b>。",
+          "SentFurigana": "友達[ともだち]と 一緒[いっしょ]に 宿題[しゅくだい]を<b>した</b>。",
+          "SentEng": "I did my homework with my friend.",
+          "SentAudio": "[sound:10S.ogg]",
+          "VocabKanji": "する",
+          "VocabFurigana": "する",
+          "VocabDef": "do, make",
+          "VocabAudio": "[sound:10V.ogg]",
+          "Notes": "",
+          "NetfilxFreq": "9",
+          "MakeProductionCard": ""
+        }
+      },
+      {
+        "noteId": 1614447503927,
+        "modelName": "Japanese Ankidrone sentences",
+        "data": {
+          "SentKanji": "今日は一日中家に<b>いました</b>。",
+          "SentFurigana": "今日[きょう]は 一日中[いちにちじゅう] 家[うち]に<b>いました</b>。",
+          "SentEng": "I was at home all day today.",
+          "SentAudio": "[sound:181S.ogg]",
+          "VocabKanji": "いる",
+          "VocabFurigana": "いる",
+          "VocabDef": "be present, stay",
+          "VocabAudio": "[sound:181V.ogg]",
+          "Notes": "",
+          "NetfilxFreq": "21",
+          "MakeProductionCard": ""
+        }
+      }
+    ]
+  },
+  "Ankidrone Essentials V9.apkg": {
+    "decks": [],
+    "models": [],
+    "samples": [
+      {
+        "noteId": 1710710487551,
+        "modelName": null,
+        "data": {
+          "Fld_0": "1",
+          "Fld_1": "",
+          "Fld_2": "<b>Ankidrone Essentials</b>&nbsp;is an Anki deck for beginner Japanese learners. The deck was created using sentences extracted from <b>JLPT Tango</b> textbooks. When there was no example sentence for a word in the textbooks, the example sentence was sourced from elsewhere. For a small number of words there are no example sentences, they are formatted as&nbsp;<a href=\"https://tatsumoto.neocities.org/blog/discussing-various-card-templates.html#simple-word-cards\">SWC</a>. Other cards are formatted as&nbsp;<a href=\"https://tatsumoto.neocities.org/blog/discussing-various-card-templates.html#targeted-sentence-cards\">TSC</a>."
+        }
+      },
+      {
+        "noteId": 1710710487552,
+        "modelName": null,
+        "data": {
+          "Fld_0": "2",
+          "Fld_1": "",
+          "Fld_2": "This deck is meant to be used with the <a href=\"https://tatsumoto.neocities.org/blog/whats-ajatt\">AJATT method</a> of language learning. It assumes that you are immersing in Japanese media, mining sentences and studying Japanese grammar on your own.<br><br>We recommend this deck if you want to:<br><ul><li>Learn basic Japanese vocabulary to increase your comprehension,</li><li>To supplement the process of sentence mining,</li><li>Or to expand your <a href=\"https://tatsumoto.neocities.org/blog/cross-profile-search-and-import\">sentence bank</a>.</li></ul>We don't recommend this deck if you're not doing AJATT.<br>"
+        }
+      }
+    ]
+  },
+  "Japanese_N3_N2_N4_Anime_Sentence_images_audio.apkg": {
+    "decks": [
+      "Japanese Sentence Mining Deck N3 - N2 Level Words with Meaning, Sentences, Audio (anime/movie characters), picture and images",
+      "Default"
+    ],
+    "models": [
+      {
+        "id": "1637704315966",
+        "name": "Japanese Mining Note",
+        "fields": [
+          "Key",
+          "Word",
+          "Sentence",
+          "EnglishSentence",
+          "SentenceReading",
+          "WordReading",
+          "PrimaryDefinition",
+          "WordAudio",
+          "SentenceAudio",
+          "MyPersonalDefinition",
+          "SecondaryDefinition",
+          "Picture",
+          "Comment",
+          "ExtraDefinitions"
+        ],
+        "css": ".card {\n font-family: Yu Mincho Demibold;\n font-size: 20px;\n max-width: 800px;\n text-align: center;\n margin-left: auto;\n margin-right: auto;\n}\n.kanjipopup {\n font-family: Yu Mincho Demibold;\n font-size: 30px;\n text-align: center;\n}\n.kanjipopup ruby rt { visibility: hidden; }\n.kanjipopup ruby:active rt { visibility: visible; }\n.kanjipopup ruby:hover rt { visibility: visible; }",
+        "templates": [
+          {
+            "name": "Mining Card",
+            "qfmt": "<style>\nimg {\n\tmax-width: 60%;\n\tmax-height: 100%;\n}\n</style>\n\n<div>{{SentenceAudio}}</div><br>\n{{Picture}}\n<div class=\"kanjipopup\">\n    <!-- Wrapping the word in ruby tags -->\n    <ruby>\n        {{furigana:WordReading}}\n    </ruby>\n</div>\n<div class=\"kanjipopup\">\n\n    <p style=\"font-size: 36px\">\n        {{furigana:SentenceReading}}\n    </p>\n</div>\n<p style=\"font-size: 12px\">Anime or Movie:</p>\n<div style=\"font-family: 'Bahnschrift Light'; font-size: 10px;\">{{ExtraDefinitions}}</div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+            "afmt": "<div>\n    <p style=\"font-size: 24px\">\n        {{furigana:SentenceReading}}\n    </p>\n</div>\n<br>\nTranslation: <div style='font-family: \"Georgia\"; font-size: 20px;'>{{EnglishSentence}}</div>\n\n\n\n<hr>\n<div>\n    <!-- Wrapping the word in ruby tags -->\n    <ruby style='font-family: \"Yu Mincho Demibold\"; font-size: 30px;'>\n        {{furigana:WordReading}}\n    </ruby>\n</div>\n\n\n<div>{{WordAudio}}</div>\n\n<div style='font-family: \"Bahnschrift SemiLight\"; font-size: 20px;'>{{MyPersonalDefinition}}</div>\n<br><br><br><br>\n\n<div style='font-family: \"Cascadia Code SemiBold\"; font-size: 17px;'>{{PrimaryDefinition}}</div>\n\n"
+          }
+        ]
+      }
+    ],
+    "samples": [
+      {
+        "noteId": 1731916983332,
+        "modelName": "Japanese Mining Note",
+        "data": {
+          "Key": "決める",
+          "Word": "決める",
+          "Sentence": "それを決めるのは勉強やスポーツではない",
+          "EnglishSentence": "It's not grades or athletic talent<br>that pull you to the top of the heap.",
+          "SentenceReading": "それを決[き]めるのは&nbsp;勉強[べんきょう]やスポーツではない",
+          "WordReading": "決[き]める",
+          "PrimaryDefinition": "<div style=\"text-align: left;\" class=\"yomitan-glossary\"><span><ul lang=\"ja\" style=\"list-style-type: &quot;＊&quot;;\"><li><span data-sc-code=\"v1\" title=\"Ichidan verb\" style=\"font-weight: bold; font-size: 0.8em; color: white; background-color: rgb(86, 86, 86); vertical-align: text-bottom; border-radius: 0.3em; margin-right: 0.25em; padding: 0.2em 0.3em; word-break: keep-all; cursor: help;\">1-dan</span><span data-sc-code=\"vt\" title=\"transitive verb\" style=\"font-weight: bold; font-size: 0.8em; color: white; background-color: rgb(86, 86, 86); vertical-align: text-bottom; border-radius: 0.3em; margin-right: 0.25em; padding: 0.2em 0.3em; word-break: keep-all; cursor: help;\">transitive</span><ol><li style=\"padding-left: 0.25em; list-style-type: &quot;①&quot;;\"><ul data-sc-content=\"glossary\"><li>to decide</li><li>to choose</li><li>to determine</li><li>to make up one's mind</li><li>to resolve</li><li>to set one's heart on</li><li>to settle</li><li>to arrange</li><li>to set</li><li>to appoint</li><li>to fix</li></ul><div data-sc-content=\"extra-info\" style=\"margin-left: 0.5em;\"><div><div data-sc-content=\"example-sentence\" data-sc-source=\"213665\" style=\"background-color: color-mix(in srgb, var(--text-color, var(--fg, #333)) 5%, transparent); border-color: var(--text-color, var(--fg, #333)); border-style: none none none solid; border-radius: 0.4rem; border-width: calc(3em / var(--font-size-no-units, 14)); margin-top: 0.5rem; margin-bottom: 0.5rem; padding: 0.5rem;\"><div data-sc-content=\"example-sentence-a\" style=\"font-size: 1.3em;\">そこに<ruby>行<rt>い</rt></ruby>くことに<span data-sc-content=\"example-keyword\" style=\"color: color-mix(in srgb, lime, var(--text-color, var(--fg, #333)));\"><ruby>決<rt>き</rt></ruby>めた</span>。</div><div data-sc-content=\"example-sentence-b\" style=\"font-size: 0.8em;\">I made up my mind to go there.</div></div></div></div></li><li style=\"padding-left: 0.25em; list-style-type: &quot;②&quot;;\"><ul data-sc-content=\"glossary\"><li>to clinch (a victory)</li><li>to decide (the outcome of a match)</li></ul></li><li style=\"padding-left: 0.25em; list-style-type: &quot;③&quot;;\"><ul data-sc-content=\"glossary\"><li>to persist in doing</li><li>to go through with</li></ul></li><li style=\"padding-left: 0.25em; list-style-type: &quot;④&quot;;\"><ul data-sc-content=\"glossary\"><li>to always do</li><li>to have made a habit of</li></ul><div data-sc-content=\"extra-info\" style=\"margin-left: 0.5em;\"><div data-sc-content=\"sense-note\" style=\"background-color: color-mix(in srgb, goldenrod 5%, transparent); border-color: goldenrod; border-style: none none none solid; border-radius: 0.4rem; border-width: calc(3em / var(--font-size-no-units, 14)); margin-top: 0.5rem; margin-bottom: 0.5rem; padding: 0.5rem;\"><div style=\"font-style: italic; font-size: 0.8em; color: rgb(119, 119, 119);\">Note</div><div style=\"margin-left: 0.5rem;\">as 決めている</div></div></div></li><li style=\"padding-left: 0.25em; list-style-type: &quot;⑤&quot;;\"><ul data-sc-content=\"glossary\"><li>to take for granted</li><li>to assume</li></ul></li><li style=\"padding-left: 0.25em; list-style-type: &quot;⑥&quot;;\"><ul data-sc-content=\"glossary\"><li>to dress up</li><li>to dress to kill</li><li>to dress to the nines</li></ul></li><li style=\"padding-left: 0.25em; list-style-type: &quot;⑦&quot;;\"><ul data-sc-content=\"glossary\"><li>to carry out successfully (a move in sports, a pose in dance, etc.)</li><li>to succeed in doing</li></ul></li><li style=\"padding-left: 0.25em; list-style-type: &quot;⑧&quot;;\"><span data-sc-code=\"MA\" style=\"font-weight: bold; font-size: 0.8em; color: white; background-color: purple; vertical-align: text-bottom; border-radius: 0.3em; margin-right: 0.25em; padding: 0.2em 0.3em; word-break: keep-all;\">martial arts</span><span data-sc-code=\"sumo\" title=\"sumo\" style=\"font-weight: bold; font-size: 0.8em; color: white; background-color: purple; vertical-align: text-bottom; border-radius: 0.3em; margin-right: 0.25em; padding: 0.2em 0.3em; word-break: keep-all; cursor: help;\">sumō</span><ul data-sc-content=\"glossary\" style=\"padding-left: 0px; list-style-type: none;\"><li>to immobilize with a double-arm lock (in sumo, judo, etc.)</li></ul></li><li style=\"padding-left: 0.25em; list-style-type: &quot;⑨&quot;;\"><ul data-sc-content=\"glossary\"><li>to eat or drink something</li><li>to take illegal drugs</li></ul></li></ol></li><li data-sc-content=\"forms\" style=\"margin-top: 0.5rem;\"><span title=\"spelling and reading variants\" style=\"font-weight: bold; font-size: 0.8em; color: white; background-color: rgb(86, 86, 86); vertical-align: text-bottom; border-radius: 0.3em; margin-right: 0.25em; padding: 0.2em 0.3em; word-break: keep-all; cursor: help;\">forms</span><ul style=\"font-size: 1.3em;\"><li>決める</li><li>極める</li><li>キメる</li></ul></li></ul><div data-sc-content=\"attribution\" style=\"font-size: 0.7em; text-align: right;\"><a href=\"https://www.edrdg.org/jmwsgi/entr.py?svc=jmdict&amp;q=1254180\"><span>JMdict</span><span style=\"display:none;\"></span></a> | <a href=\"https://tatoeba.org/en/sentences/show/213665\"><span>Tatoeba</span><span style=\"display:none;\"></span></a></div></span></div>",
+          "WordAudio": "[sound:yomitan_audio_2024-10-18-08-03-01-709.mp3]",
+          "SentenceAudio": "[sound:Kakegurui_S01E02_Episode_92926_lS78mZSb.mp3]",
+          "MyPersonalDefinition": "",
+          "SecondaryDefinition": "",
+          "Picture": "<img src=\"Kakegurui_S01E02_Episode_92926_Cm5zBsxU.jpeg\">",
+          "Comment": "https://www.netflix.com/watch/80192103?trackId=255824129",
+          "ExtraDefinitions": "Kakegurui S01E02 Episode 2 - ja - Japanese [CC].nfvtt (1m32s)"
+        }
+      },
+      {
+        "noteId": 1731917179696,
+        "modelName": "Japanese Mining Note",
+        "data": {
+          "Key": "せい",
+          "Word": "せい",
+          "Sentence": "早乙女のことは<br>君のせいじゃないよ<br>",
+          "EnglishSentence": "What happened to Mary<br>isn't your fault.",
+          "SentenceReading": "早乙女[さおとめ]のことは<br> 君[くん]のせいじゃないよ<br>",
+          "WordReading": "せい",
+          "PrimaryDefinition": "<div style=\"text-align: left;\" class=\"yomitan-glossary\"><span><div><span data-sc-code=\"n\" title=\"noun (common) (futsuumeishi)\" style=\"font-weight: bold; font-size: 0.8em; color: white; background-color: rgb(86, 86, 86); vertical-align: text-bottom; border-radius: 0.3em; margin-right: 0.25em; padding: 0.2em 0.3em; word-break: keep-all; cursor: help;\">noun</span><span data-sc-code=\"uk\" title=\"word usually written using kana alone\" style=\"font-weight: bold; font-size: 0.8em; color: white; background-color: brown; vertical-align: text-bottom; border-radius: 0.3em; margin-right: 0.25em; padding: 0.2em 0.3em; word-break: keep-all; cursor: help;\">kana</span><div><ul data-sc-content=\"glossary\"><li>consequence</li><li>outcome</li><li>result</li><li>blame</li><li>fault</li></ul><div data-sc-content=\"extra-info\" style=\"margin-left: 0.5em;\"><div data-sc-content=\"sense-note\" style=\"background-color: color-mix(in srgb, goldenrod 5%, transparent); border-color: goldenrod; border-style: none none none solid; border-radius: 0.4rem; border-width: calc(3em / var(--font-size-no-units, 14)); margin-top: 0.5rem; margin-bottom: 0.5rem; padding: 0.5rem;\"><div style=\"font-style: italic; font-size: 0.8em; color: rgb(119, 119, 119);\">Note</div><div lang=\"ja\" style=\"margin-left: 0.5rem;\">often ...のせい</div></div><div><div data-sc-content=\"example-sentence\" data-sc-source=\"233064\" style=\"background-color: color-mix(in srgb, var(--text-color, var(--fg, #333)) 5%, transparent); border-color: var(--text-color, var(--fg, #333)); border-style: none none none solid; border-radius: 0.4rem; border-width: calc(3em / var(--font-size-no-units, 14)); margin-top: 0.5rem; margin-bottom: 0.5rem; padding: 0.5rem;\"><div data-sc-content=\"example-sentence-a\" lang=\"ja\" style=\"font-size: 1.3em;\">あなたの<ruby lang=\"ja\">頭<rt lang=\"ja\">ず</rt></ruby><ruby lang=\"ja\">痛<rt lang=\"ja\">つう</rt></ruby>は<ruby lang=\"ja\">過<rt lang=\"ja\">か</rt></ruby><ruby lang=\"ja\">労<rt lang=\"ja\">ろう</rt></ruby>の<span lang=\"ja\" style=\"color: color-mix(in srgb, lime, var(--text-color, var(--fg, #333)));\">せい</span>だ。</div><div data-sc-content=\"example-sentence-b\" style=\"font-size: 0.8em;\">Your headache comes from overwork.</div></div></div></div></div></div><div data-sc-content=\"forms\" style=\"margin-top: 0.5rem;\"><span title=\"spelling and reading variants\" style=\"font-weight: bold; font-size: 0.8em; color: white; background-color: rgb(86, 86, 86); vertical-align: text-bottom; border-radius: 0.3em; margin-right: 0.25em; padding: 0.2em 0.3em; word-break: keep-all; cursor: help;\">forms</span><div style=\"margin-top: 0.2em;\"><div style=\"display:block;\"><table style=\"table-layout:auto;border-collapse:collapse;\"><tbody><tr><th style=\"font-weight:bold;border-style:solid;padding:0.25em;vertical-align:top;border-width:1px;border-color:currentColor;\"></th><th style=\"font-weight:bold;border-style:solid;padding:0.25em;vertical-align:top;border-width:1px;border-color:currentColor;font-weight: normal; font-size: 1.2em; text-align: center;\"><span title=\"no associated kanji forms\" style=\"color: crimson; cursor: help;\">∅</span></th><th lang=\"ja\" style=\"font-weight:bold;border-style:solid;padding:0.25em;vertical-align:top;border-width:1px;border-color:currentColor;font-weight: normal; font-size: 1.2em; text-align: center;\">所為</th></tr><tr><th lang=\"ja\" style=\"font-weight:bold;border-style:solid;padding:0.25em;vertical-align:top;border-width:1px;border-color:currentColor;font-weight: normal;\">せい</th><td style=\"border-style:solid;padding:0.25em;vertical-align:top;border-width:1px;border-color:currentColor;text-align: center;\"><div title=\"high priority form\" style=\"font-weight: bold; color: white; background: radial-gradient(green 50%, white 100%); clip-path: circle(); padding: 0px 0.5em; cursor: help;\">△</div></td><td style=\"border-style:solid;padding:0.25em;vertical-align:top;border-width:1px;border-color:currentColor;text-align: center;\"><div title=\"rarely used form\" style=\"font-weight: bold; color: white; background: radial-gradient(purple 50%, white 100%); clip-path: circle(); padding: 0px 0.5em; cursor: help;\">▽</div></td></tr></tbody></table></div></div></div><div data-sc-content=\"attribution\" style=\"font-size: 0.7em; text-align: right;\"><a href=\"https://www.edrdg.org/jmwsgi/entr.py?svc=jmdict&amp;q=1610040\"><span>JMdict</span><span style=\"display:none;\"></span></a> | <a href=\"https://tatoeba.org/en/sentences/show/233064\"><span>Tatoeba</span><span style=\"display:none;\"></span></a></div></span></div>",
+          "WordAudio": "[sound:yomitan_audio_2024-10-18-08-06-12-358.mp3]",
+          "SentenceAudio": "[sound:Kakegurui_S01E02_Episode_200700_JGky1zV6.mp3]",
+          "MyPersonalDefinition": "",
+          "SecondaryDefinition": "",
+          "Picture": "<img src=\"Kakegurui_S01E02_Episode_200700_EZhKxJfo.jpeg\">",
+          "Comment": "https://www.netflix.com/watch/80192103?trackId=255824129",
+          "ExtraDefinitions": "Kakegurui S01E02 Episode 2 - ja - Japanese [CC].nfvtt (3m20s)"
+        }
+      }
+    ]
+  },
+  "JLPT Tango N3.apkg": {
+    "decks": [],
+    "models": [],
+    "samples": [
+      {
+        "noteId": 1378555078090,
+        "modelName": null,
+        "data": {
+          "Fld_0": "改札口",
+          "Fld_1": "ticket gate",
+          "Fld_2": "<b> 改札[かいさつ] 口[ぐち]</b>で 会[あ]いましょう。",
+          "Fld_3": "改札口[かいさつぐち]",
+          "Fld_4": "<b> 改札[かいさつ] 口[ぐち]</b>で 会[あ]いましょう。",
+          "Fld_5": "Let's meet at the ticket gate.",
+          "Fld_6": "[sound:751V.mp3]",
+          "Fld_7": "4",
+          "Fld_8": "751",
+          "Fld_9": "",
+          "Fld_10": "<img src=\"751.jpg\" />",
+          "Fld_11": "noun",
+          "Fld_12": "かいさつぐち",
+          "Fld_13": "three",
+          "Fld_14": "改札口",
+          "Fld_15": "3k",
+          "Fld_16": "改札[かいさつ] 口[ぐち]で 切符[きっぷ]をお 見[み]せください。 Show your ticket at the barrier.<br> 彼女[かのじょ]は 私[わたし]に 別[わか]れを 告[つ]げて 改札[かいさつ] 口[ぐち]を 通[と]って 行[ ]った。 She said good-bye to me and went through the ticket gate.<br> 駅員[えきいん]に 連絡[れんらく]したが、 男[おとこ]はその 場[ば]を 立ち去[たちさ]り、 改札[かいさつ] 口[ぐち]を 出[で]て 行[ ]った。 They contacted the station staff but the man had left the area and gone out through the ticket barrier.<br><b>改札口</b>は東<b>改札</b>・中央<b>改札</b>の2か所がある。 There are 2 ticket gates: the east gate and the central gate.<br><b>改札口</b>は北<b>改札</b>と中央<b>改札</b>の2か所。 There are two ticket gates, the North Ticket Gate and the Central Ticket Gate.<br><b>改札口</b>は北<b>改札</b>と南<b>改札</b>の2か所。 There are two ticket gates: the north gate and the south gate.<br><b>改札口</b>は1か所のみ。 There is only one ticket gate.<br><b>改札口</b>は1ヶ所のみ。 There is only one ticket gate.<br><b>改札口</b>は1ヶ所のみ。 The station has only one ticket gate.<br><b>改札口</b>は1ヶ所のみ。 It has only one ticket gate.",
+          "Fld_17": "",
+          "Fld_18": "[sound:751S.mp3]"
+        }
+      },
+      {
+        "noteId": 1378555094790,
+        "modelName": null,
+        "data": {
+          "Fld_0": "歓迎",
+          "Fld_1": "welcome",
+          "Fld_2": "温[あたた]かい<b> 歓迎[かんげい]</b>を 受[う]けました。",
+          "Fld_3": "歓迎[かんげい]",
+          "Fld_4": "温[あたた]かい<b> 歓迎[かんげい]</b>を 受[う]けました。",
+          "Fld_5": "I received a warm welcome.",
+          "Fld_6": "[sound:1881V.mp3]",
+          "Fld_7": "0",
+          "Fld_8": "1881",
+          "Fld_9": "",
+          "Fld_10": "<img src=\"1881.jpg\" />",
+          "Fld_11": "verbal noun",
+          "Fld_12": "かんげい",
+          "Fld_13": "two",
+          "Fld_14": "歓迎",
+          "Fld_15": "2k",
+          "Fld_16": "投稿<b>歓迎</b>. Contributions (from readers) are cordially invited.<br>それは大<b>歓迎</b>です。 That is largely welcomed.<br>訪問者は<b>歓迎</b>する。 Visitors are welcome.<br>彼は何でも<b>歓迎</b>する。 Nothing comes amiss to him.<br>素朴な<b>歓迎</b>. a rough welcome<br><b>歓迎</b>の辞 an address of welcome<br><b>歓迎</b>会 a welcome meeting<br><b>歓迎</b>会 a reception<br><b>歓迎</b>員 a reception-committee<br><b>歓迎</b>門 a welcome arch",
+          "Fld_17": "3",
+          "Fld_18": "[sound:1881S.mp3]"
+        }
+      }
+    ]
+  },
+  "Shin_Kanzen_Master_N3_Grammar__Sentence_Deck.apkg": {
+    "decks": [
+      "Shin Kanzen N3 Grammar::Lesson 10",
+      "Shin Kanzen N3 Grammar::Lesson 09",
+      "Shin Kanzen N3 Grammar::Lesson 11",
+      "Shin Kanzen N3 Grammar::Lesson 06",
+      "Shin Kanzen N3 Grammar::Lesson 05",
+      "Shin Kanzen N3 Grammar::Lesson 02",
+      "Default",
+      "Shin Kanzen N3 Grammar::Lesson 07",
+      "Shin Kanzen N3 Grammar::Lesson 12",
+      "Shin Kanzen N3 Grammar::Lesson 08",
+      "Shin Kanzen N3 Grammar",
+      "Shin Kanzen N3 Grammar::Lesson 04",
+      "Shin Kanzen N3 Grammar::Lesson 03",
+      "Shin Kanzen N3 Grammar::Lesson 01"
+    ],
+    "models": [
+      {
+        "id": "1839274653",
+        "name": "JLPT N3 Grammar (English)+++",
+        "fields": [
+          "SortField",
+          "FrontSentence",
+          "DeckName",
+          "GrammarPattern",
+          "LessonInfo",
+          "BackSentence",
+          "Translation",
+          "AudioFile",
+          "RichGrammarFormation",
+          "GrammarExplanation",
+          "StyleNotes",
+          "AdditionalNotes",
+          "DetailedExplanation",
+          "Level",
+          "RowNum",
+          "IsSample"
+        ],
+        "css": "/* \n   AESTHETIC: ACADEMIC MINIMALIST (ANKI-NATIVE)\n   -------------------------\n   Built for speed, focus, and multi-device consistency. \n   Follows Anki's standard centering and night mode conventions.\n*/\n\n/* Base Card Styling */\n.card {\n  font-family: \"Hiragino Kaku Gothic ProN\", \"Yu Gothic\", \"Meiryo\", -apple-system, sans-serif;\n  font-size: 19px;\n  line-height: 1.5;\n  text-align: center;\n  color: #2D3748;\n  background-color: #FFFFFF;\n  padding: 20px;\n  margin: 0;\n}\n\n/* Container for Desktop/Mobile sizing */\n.card-front, .card-back {\n  max-width: 650px; /* Better for reading lines */\n  margin: 0 auto;\n}\n\n/* Metadata Header (Lesson & Pattern) */\n.lesson-info {\n  display: inline-block;\n  font-size: 14px;\n  font-weight: 600;\n  color: #718096;\n  background: #F7FAFC;\n  padding: 4px 12px;\n  border-radius: 100px;\n  border: 1px solid #E2E8F0;\n  margin-bottom: 25px;\n}\n\n/* The Core Focus: Large, clear Japanese */\n.sentence-placeholder, .sentence-complete {\n  font-size: 1.5em; \n  font-weight: 800;\n  color: #1A202C;\n  margin: 20px 0;\n  letter-spacing: 0.02em;\n}\n\n/* Cloze-style highlight for the answer */\n.grammar-highlight {\n  color: #C53030 !important; /* Professional Red */\n  background-color: #FFF5F5 !important;\n  font-weight: bold !important;\n  padding: 2px 4px !important;\n  border-radius: 4px !important;\n}\n\n/* Translation secondary text */\n.translation {\n  font-size: 0.9em;\n  color: #4A5568;\n  margin-top: 15px;\n  padding: 10px;\n  border-top: 1px solid #EDF2F7;\n}\n\n/* Interactive elements: Audio */\n.audio-section {\n  margin: 20px 0;\n}\n\n/* --- Explanations & Content --- */\n.grammar-section, .additional-notes, .detailed-section {\n  text-align: left; /* Switch to left for longer text readability */\n  margin-top: 30px;\n  padding: 15px;\n  background: #FBFCFE;\n  border: 1px solid #EBF4FF;\n  border-radius: 10px;\n}\n\nh3 {\n  font-size: 13px;\n  font-weight: 800;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: #3182CE;\n  margin: 0 0 12px 0;\n  border-bottom: 2px solid #EBF8FF;\n  padding-bottom: 4px;\n}\n\n.formation {\n  font-size: 15px;\n  background: #EDF2F7;\n  padding: 10px 15px;\n  border-radius: 6px;\n  margin-bottom: 12px;\n  font-family: Menlo, Monaco, Consolas, \"Courier New\", monospace;\n  word-break: break-all;\n}\n\n.detailed-content, .notes-content {\n  font-size: 15px;\n  color: #4A5568;\n}\n\n/* Grammar formation helpers */\n.grammar-connection {\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n  gap: 5px;\n}\n.g-block { background: #E2E8F0; padding: 2px 6px; border-radius: 4px; font-size: 13px; }\n.wt-verb { background: #C6F6D5; color: #22543d; }\n.wt-noun { background: #FEEBC8; color: #744210; }\n.arrow { color: #A0AEC0; }\n\n/* Night Mode Support (Standard Anki Classes) */\n.nightMode.card, .night_mode .card {\n  background-color: #2D3748;\n  color: #E2E8F0;\n}\n\n.nightMode .lesson-info, .night_mode .lesson-info {\n  background: #1A202C;\n  color: #A0AEC0;\n  border-color: #4A5568;\n}\n\n.nightMode .sentence-placeholder, .nightMode .sentence-complete,\n.night_mode .sentence-placeholder, .night_mode .sentence-complete {\n  color: #FFFFFF;\n}\n\n.nightMode .grammar-highlight, .night_mode .grammar-highlight {\n  color: #FEB2B2 !important;\n  background-color: #742A2A !important;\n}\n\n.nightMode .translation, .night_mode .translation {\n  border-top-color: #4A5568;\n  color: #CBD5E0;\n}\n\n.nightMode .grammar-section, .nightMode .additional-notes, .nightMode .detailed-section,\n.night_mode .grammar-section, .night_mode .additional-notes, .night_mode .detailed-section {\n  background: #1A202C;\n  border-color: #2D3748;\n}\n\n.nightMode h3, .night_mode h3 {\n  color: #63B3ED;\n  border-bottom-color: #2A4365;\n}\n\n.nightMode .formation, .night_mode .formation {\n  background: #2D3748;\n  color: #CBD5E0;\n}\n\n/* --- Mobile Specific Fixes --- */\n@media (max-width: 500px) {\n  .card { font-size: 17px; padding: 15px; }\n  .sentence-placeholder, .sentence-complete { font-size: 1.3em; }\n}\n\n/* --- Sentence Structure Formatting --- */\n.structure-diagram, .structure_diagram {\n  font-family: ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", monospace;\n  white-space: pre-wrap;\n  word-wrap: break-word;\n  background-color: #F7FAFC; /* Match existing academic background */\n  padding: 15px;\n  border-radius: 8px;\n  border: 1px solid #E2E8F0;\n  font-size: 14px;\n  line-height: 1.6;\n  color: #2D3748;\n  text-align: left;\n  margin: 20px 0;\n  overflow-x: auto;\n}\n\n.nightMode .structure-diagram, .nightMode .structure_diagram,\n.night_mode .structure-diagram, .night_mode .structure_diagram {\n  background-color: #1A202C; /* Match night mode sections */\n  border-color: #2D3748;\n  color: #E2E8F0;\n}\n\n/* --- Audio Hints & Promo --- */\n.sample-badge {\n  display: inline-block;\n  font-size: 11px;\n  font-weight: 700;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: #38A169;\n  background: #F0FFF4;\n  border: 1px solid #C6F6D5;\n  padding: 2px 8px;\n  border-radius: 100px;\n  margin-bottom: 10px;\n  cursor: pointer;\n}\n\n.nightMode .sample-badge, .night_mode .sample-badge {\n  background: #22543D;\n  color: #9AE6B4;\n  border-color: #276749;\n}\n\n.audio-locked {\n  margin: 10px 0;\n}\n\n.audio-locked a {\n  display: inline-block;\n  font-size: 13px;\n  color: #A0AEC0 !important;\n  text-decoration: none !important;\n  padding: 6px 14px;\n  border: 1px dashed #E2E8F0;\n  border-radius: 8px;\n  transition: all 0.2s ease;\n  cursor: pointer;\n}\n\n.audio-locked a:hover {\n  color: #718096 !important;\n  border-color: #CBD5E0;\n  background: #F7FAFC;\n}\n\n.nightMode .audio-locked a, .night_mode .audio-locked a {\n  color: #4A5568 !important;\n  border-color: #2D3748;\n}\n\n.nightMode .audio-locked a:hover, .night_mode .audio-locked a:hover {\n  background: #1A202C;\n  color: #718096 !important;\n}\n\n/* Purchase Fallback Styling */\n.purchase-fallback {\n  margin-top: 15px;\n  font-size: 12px;\n  text-align: center;\n}\n\n.purchase-fallback details {\n  display: inline-block;\n  text-align: left;\n  background: #F7FAFC;\n  border: 1px solid #E2E8F0;\n  border-radius: 6px;\n  padding: 4px 10px;\n  max-width: 90%;\n}\n\n.nightMode .purchase-fallback details, .night_mode .purchase-fallback details {\n  background: #1A202C;\n  border-color: #2D3748;\n}\n\n.purchase-fallback summary {\n  cursor: pointer;\n  color: #718096;\n  outline: none;\n  user-select: none;\n}\n\n.purchase-fallback summary::-webkit-details-marker {\n  color: #CBD5E0;\n}\n\n.copy-box {\n  display: flex;\n  gap: 5px;\n  margin-top: 8px;\n  background: #FFFFFF;\n  border: 1px solid #CBD5E0;\n  border-radius: 4px;\n  padding: 3px;\n}\n\n.nightMode .copy-box, .night_mode .copy-box {\n  background: #2D3748;\n  border-color: #4A5568;\n}\n\n.copy-box input {\n  flex: 1;\n  border: none;\n  background: transparent;\n  font-size: 11px;\n  color: #4A5568;\n  padding: 2px 5px;\n  outline: none;\n  min-width: 0;\n}\n\n.nightMode .copy-box input, .night_mode .copy-box input {\n  color: #A0AEC0;\n}\n\n.copy-box button {\n  background: #3182CE;\n  color: white;\n  border: none;\n  border-radius: 3px;\n  padding: 2px 8px;\n  font-size: 11px;\n  font-weight: 600;\n  cursor: pointer;\n  white-space: nowrap;\n}\n\n.copy-box button:hover {\n  background: #2B6CB0;\n}\n\n.copy-box button:active {\n  background: #2C5282;\n}\n\n/* Authorized Version Footer (Soft Protection) */\n.authorized-footer {\n  margin-top: 50px;\n  padding-top: 15px;\n  border-top: 1px dashed #E2E8F0;\n  font-size: 11px;\n  color: #A0AEC0;\n  text-align: center;\n  font-weight: 500;\n  letter-spacing: 0.02em;\n  font-style: italic;\n  opacity: 0.8;\n}\n\n.nightMode .authorized-footer, .night_mode .authorized-footer {\n  border-top-color: #48566d;\n  color: #4A5568;\n}\n\n.auth-id {\n  font-family: Menlo, Monaco, Consolas, \"Courier New\", monospace;\n  color: #CBD5E0;\n}\n\n.nightMode .auth-id, .night_mode .auth-id {\n  color: #2D3748;\n}\n\n/* --- Hint Details Toggle (Front Card) --- */\n.hint-details {\n  margin-top: 30px;\n  text-align: center;\n}\n\n.hint-summary {\n  display: inline-block;\n  cursor: pointer;\n  font-size: 14px;\n  font-weight: 600;\n  color: #718096;\n  background: transparent;\n  padding: 6px 12px;\n  border-radius: 6px;\n  border: 1px solid #E2E8F0;\n  user-select: none;\n  transition: all 0.2s ease;\n  line-height: 1.4;\n  list-style: none; /* Hide default triangle */\n}\n\n/* Hide webkit details marker */\n.hint-summary::-webkit-details-marker {\n  display: none;\n}\n\n.hint-summary:hover {\n  background: #EDF2F7;\n  color: #4A5568;\n}\n\n.hint-details[open] .hint-summary {\n  margin-bottom: 15px;\n  color: #4A5568;\n  background: #EDF2F7;\n}\n\n.nightMode .hint-summary, .night_mode .hint-summary {\n  background: transparent;\n  color: #A0AEC0;\n  border-color: #4A5568;\n}\n\n.nightMode .hint-summary:hover, .night_mode .hint-summary:hover,\n.nightMode .hint-details[open] .hint-summary, .night_mode .hint-details[open] .hint-summary {\n  background: #2D3748;\n  color: #E2E8F0;\n}",
+        "templates": [
+          {
+            "name": "Grammar Card",
+            "qfmt": "<div class=\"card-front\">\n  <div class=\"lesson-info\">{{LessonInfo}}</div>\n  <div class=\"sentence-placeholder\">{{FrontSentence}}</div>\n\n  {{#Translation}}\n  <details class=\"hint-details\" id=\"translation-toggle\">\n    <summary class=\"hint-summary\">Translation</summary>\n    <div class=\"translation\">\n      {{Translation}}\n    </div>\n  </details>\n  {{/Translation}}\n</div>\n\n<script>\n  (function() {\n    var toggle = document.getElementById(\"translation-toggle\");\n    if (!toggle) return;\n\n    // 1. Read saved state on load\n    if (sessionStorage.getItem(\"ankiJLPTTipsOpen\") === \"true\") {\n      toggle.setAttribute(\"open\", \"true\");\n    }\n\n    // 2. Save state on change\n    toggle.addEventListener(\"toggle\", function() {\n      sessionStorage.setItem(\"ankiJLPTTipsOpen\", toggle.open);\n    });\n  })();\n</script>",
+            "afmt": "<div class=\"card-back\">\n  <div class=\"lesson-info\">{{LessonInfo}}{{GrammarPattern}}</div>\n  <div class=\"sentence-complete\">{{BackSentence}}</div>\n  <div class=\"translation\">{{Translation}}</div>\n\n  <div class=\"audio-section\">\n            {{#IsSample}}<a href=\"https://harrysui.gumroad.com/l/jlpt-n3-grammar-sentence\" class=\"sample-badge\" onclick=\"openLink('https://harrysui.gumroad.com/l/jlpt-n3-grammar-sentence');\">🔊 Sample Audio (Full Pack Available →)</a>{{/IsSample}}\n        {{^AudioFile}}<div class=\"audio-locked\"><a href=\"https://harrysui.gumroad.com/l/jlpt-n3-grammar-sentence\" onclick=\"openLink('https://harrysui.gumroad.com/l/jlpt-n3-grammar-sentence');\">🔒 Audio: Complete Version Only →</a></div>{{/AudioFile}}\n        \n    {{#AudioFile}}{{AudioFile}}{{/AudioFile}}\n    \n        {{^AudioFile}}\n        <div class=\"purchase-fallback\">\n            <details>\n                <summary>Can't open the link? Copy it manually:</summary>\n                <div class=\"copy-box\">\n                    <input type=\"text\" value=\"https://harrysui.gumroad.com/l/jlpt-n3-grammar-sentence\" readonly onclick=\"this.select();\">\n                    <button onclick=\"copyLink('https://harrysui.gumroad.com/l/jlpt-n3-grammar-sentence', this)\">Copy</button>\n                </div>\n            </details>\n        </div>\n        {{/AudioFile}}\n        {{#IsSample}}\n        {{#AudioFile}}\n        <div class=\"purchase-fallback\">\n            <details>\n                <summary>Can't open the link? Copy it manually:</summary>\n                <div class=\"copy-box\">\n                    <input type=\"text\" value=\"https://harrysui.gumroad.com/l/jlpt-n3-grammar-sentence\" readonly onclick=\"this.select();\">\n                    <button onclick=\"copyLink('https://harrysui.gumroad.com/l/jlpt-n3-grammar-sentence', this)\">Copy</button>\n                </div>\n            </details>\n        </div>\n        {{/AudioFile}}\n        {{/IsSample}}\n        \n  </div>\n\n  <div class=\"grammar-section\">\n    <h3>Grammar Explanation</h3>\n    <div class=\"explanations\">\n      {{#RichGrammarFormation}}<div class=\"formation\">{{RichGrammarFormation}}</div>{{/RichGrammarFormation}}\n      {{#GrammarExplanation}}<div class=\"explanation-en\">{{GrammarExplanation}}</div>{{/GrammarExplanation}}\n    </div>\n  </div>\n\n    {{#AdditionalNotes}}\n  <div class=\"additional-notes\">\n    <h3>Additional Notes</h3>\n    <div class=\"notes-content\">{{AdditionalNotes}}</div>\n  </div>\n  {{/AdditionalNotes}}\n\n\n  {{#DetailedExplanation}}\n  <div class=\"detailed-section\">\n    <h3>Detailed Breakdown</h3>\n    <div class=\"detailed-content\">{{DetailedExplanation}}</div>\n  </div>\n  {{/DetailedExplanation}}\n\n  <!-- Soft Protection Footer -->\n  <div class=\"authorized-footer\">\n    Authorized Official Version · v1.0.1 (Full Audio)<br>\n    Original by HarrySui\n  </div>\n</div>\n\n<script>\nfunction openLink(url) {\n  if (typeof pycmd !== \"undefined\") {\n    // For Anki Desktop (Qt5/6)\n    pycmd(\"open:\" + url);\n  } else {\n    // For AnkiMobile/AnkiDroid and generic web\n    window.open(url, '_blank');\n  }\n}\n\nfunction copyLink(text, btn) {\n  var dummy = document.createElement(\"textarea\");\n  document.body.appendChild(dummy);\n  dummy.value = text;\n  dummy.select();\n  try {\n    document.execCommand(\"copy\");\n    var original = btn.innerHTML;\n    btn.innerHTML = \"✅ Done\";\n    setTimeout(function() { btn.innerHTML = original; }, 2000);\n  } catch (err) {\n    btn.innerHTML = \"❌ Fail\";\n  }\n  document.body.removeChild(dummy);\n}\n</script>"
+          }
+        ]
+      }
+    ],
+    "samples": [
+      {
+        "noteId": 1775610824000,
+        "modelName": "JLPT N3 Grammar (English)+++",
+        "data": {
+          "SortField": "01-001",
+          "FrontSentence": "<ruby>日本<rt>にほん</rt></ruby>に【…】<ruby>一度<rt>いちど</rt></ruby><ruby>富士<rt>ふじ</rt></ruby><ruby>山<rt>やま</rt></ruby>に<ruby>登<rt>のぼ</rt></ruby>ってみたい。",
+          "DeckName": "新完全掌握N3语法例句::Lesson 01",
+          "GrammarPattern": "～うちに…",
+          "LessonInfo": "第1課 - 1",
+          "BackSentence": "<ruby>日本<rt>にほん</rt></ruby>に<span class=\"grammar-highlight\" style=\"background-color: #ffeb3b; font-weight: bold; padding: 2px 4px; border-radius: 3px; color: #333;\">いるうちに</span><ruby>一度<rt>いちど</rt></ruby><ruby>富士<rt>ふじ</rt></ruby><ruby>山<rt>やま</rt></ruby>に<ruby>登<rt>のぼ</rt></ruby>ってみたい。",
+          "Translation": "I want to climb Mt. Fuji once while I am in Japan.",
+          "AudioFile": "[sound:第1課 - 1_1-77c445ca05362929af353ef300a6b5da33a63c46.mp3]",
+          "RichGrammarFormation": "<ruby>名<rt>な</rt></ruby>の・<ruby>動辞<rt>どうじ</rt></ruby><ruby>書<rt>しょ</rt></ruby><ruby>形<rt>けい</rt></ruby> / ている / ない<ruby>形<rt>かたち</rt></ruby>・イ<ruby>形<rt>がた</rt></ruby>い・ナ<ruby>形<rt>がた</rt></ruby>な ＋ うちに",
+          "GrammarExplanation": "While~ / Before~",
+          "StyleNotes": "",
+          "AdditionalNotes": "~ indicates a certain state before a change occurs; ... is a clause expressing a volitional action.",
+          "DetailedExplanation": "<div class=\"detailed-analysis\"><p class=\"target-sentence\"><b><ruby>日本<rt>にほん</rt></ruby>にいるうちに<ruby>一度<rt>いちど</rt></ruby><ruby>富士<rt>ふじ</rt></ruby><ruby>山<rt>やま</rt></ruby>に<ruby>登<rt>のぼ</rt></ruby>ってみたい。</b></p><h3>🏗️ Sentence Structure</h3><p>This sentence consists of a main clause expressing a desire to try an action, preceded by a temporal clause indicating the period during which that action is desired.</p><div class=\"structure-diagram\">[Sentence]\n- [Temporal Clause]\n- [Location Phrase]\n- [Noun] 日本 (Japan)\n- [Particle] に (in)\n- [Verb] いる (be)\n- [Grammar Pattern] うちに (while)\n- [Main Clause]\n- [Adverb] 一度 (once)\n- [Destination Phrase]\n- [Noun] 富士山 (Mt. Fuji)\n- [Particle] に (to)\n- [Verb Phrase (Desire to Try)]\n- [Verb (て-form)] <ruby>登<rt>のぼ</rt></ruby>って (climbing)\n- [Auxiliary Verb] み (try)\n- [Auxiliary Adjective] たい (want to)</div><h3>🔍 Word-by-Word Breakdown</h3><ul class=\"word-list\">  <li><b>日本</b>（にほん）— Japan · noun</li>  <li><b>に</b>（に）— in, at · particle (indicating location)</li>  <li><b>いる</b>（いる）— to be (animate) · verb (dictionary form)</li>  <li><b>うちに</b>（うちに）— while, during · grammar pattern (indicating \"while a certain state continues\")</li>  <li><b>一度</b>（いちど）— once, one time · adverb</li>  <li><b>富士山</b>（ふじさん）— Mt. Fuji · noun</li>  <li><b>に</b>（に）— to, toward · particle (indicating destination)</li>  <li><b><ruby>登<rt>のぼ</rt></ruby>って</b>（のぼって）— climbing (and) · verb (て-form of <ruby>登<rt>のぼ</rt></ruby>る)</li>  <li><b>みたい</b>（みたい）— want to try · auxiliary adjective (combining ～てみる \"to try\" with ～たい \"want to\")</li></ul></div>",
+          "Level": "3 N3",
+          "RowNum": "1",
+          "IsSample": "1"
+        }
+      },
+      {
+        "noteId": 1775610824002,
+        "modelName": "JLPT N3 Grammar (English)+++",
+        "data": {
+          "SortField": "01-002",
+          "FrontSentence": "はい、アイスクリーム。【…】<ruby>早<rt>はや</rt></ruby>く<ruby>食<rt>た</rt></ruby>べてくださいね。",
+          "DeckName": "新完全掌握N3语法例句::Lesson 01",
+          "GrammarPattern": "～うちに…",
+          "LessonInfo": "第1課 - 2",
+          "BackSentence": "はい、アイスクリーム。<span class=\"grammar-highlight\" style=\"background-color: #ffeb3b; font-weight: bold; padding: 2px 4px; border-radius: 3px; color: #333;\"><ruby>溶<rt>と</rt></ruby>けないうちに</span><ruby>早<rt>はや</rt></ruby>く<ruby>食<rt>た</rt></ruby>べてくださいね。",
+          "Translation": "Here, have an ice cream. Please eat it quickly before it melts.",
+          "AudioFile": "[sound:第1課 - 1_2.mp3]",
+          "RichGrammarFormation": "<ruby>名<rt>な</rt></ruby>の・<ruby>動辞<rt>どうじ</rt></ruby><ruby>書<rt>しょ</rt></ruby><ruby>形<rt>けい</rt></ruby> / ている / ない<ruby>形<rt>かたち</rt></ruby>・イ<ruby>形<rt>がた</rt></ruby>い・ナ<ruby>形<rt>がた</rt></ruby>な ＋ うちに",
+          "GrammarExplanation": "While~ / Before~",
+          "StyleNotes": "",
+          "AdditionalNotes": "~ indicates a certain state before a change occurs; ... is a clause expressing a volitional action.",
+          "DetailedExplanation": "<div class=\"detailed-analysis\"><p class=\"target-sentence\"><b>はい、アイスクリーム。<ruby>溶<rt>と</rt></ruby>けないうちに<ruby>早<rt>はや</rt></ruby>く<ruby>食<rt>た</rt></ruby>べてくださいね。</b></p><h3>🏗️ Sentence Structure</h3><p>This sentence consists of an introductory greeting and offering, followed by a main clause containing a temporal condition \"before it melts\" and a polite request.</p><div class=\"structure-diagram\">[Sentence]\n- [Interjection/Offering Phrase] - はい (Yes/Here) - アイスクリーム (ice cream)\n- [Main Request Clause]\n- [Temporal Clause] - <ruby>溶<rt>と</rt></ruby>けない (not melt) - うちに (before/while) - <ruby>早<rt>はや</rt></ruby>く (quickly) - <ruby>食<rt>た</rt></ruby>べて (eat\n- [te-form]</div><h3>🔍 Word-by-Word Breakdown</h3><ul class=\"word-list\">  <li><b>はい</b>（はい）— Yes/Here you go · interjection</li>  <li><b>、</b>（、）— comma · punctuation</li>  <li><b>アイスクリーム</b>（アイスクリーム）— ice cream · noun</li>  <li><b>。</b>（。）— period · punctuation</li>  <li><b><ruby>溶<rt>と</rt></ruby>けない</b>（とけない）— not melt · negative form of verb <ruby>溶<rt>と</rt></ruby>ける (to melt)</li>  <li><b>うちに</b>（うちに）— while/before · grammar pattern particle</li>  <li><b><ruby>早<rt>はや</rt></ruby>く</b>（はやく）— quickly · adverb</li>  <li><b><ruby>食<rt>た</rt></ruby>べて</b>（たべて）— eat · te-form of verb <ruby>食<rt>た</rt></ruby>べる (to eat)</li>  <li><b>ください</b>（ください）— please do · auxiliary verb for polite request</li>  <li><b>ね</b>（ね）— right? / emphatic particle · sentence-ending particle</li></ul></div>",
+          "Level": "3 N3",
+          "RowNum": "2",
+          "IsSample": "1"
+        }
+      }
+    ]
+  },
+  "Shin_Kanzen_Master_Vocabulary_JLPT_N3_Official_Definitions.apkg": {
+    "decks": [
+      "Default",
+      "新完全マスター語彙N3"
+    ],
+    "models": [
+      {
+        "id": "1619291849563",
+        "name": "Japanese ShinKanzenMasterVocabN3",
+        "fields": [
+          "Expression",
+          "Reading",
+          "Meaning",
+          "Notes"
+        ],
+        "css": "@font-face {\n    font-family: irohamaru mikami; \n    src: url('_irohamaru mikami.ttf');\n}\n\n.card-content {\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: column;\n    font-family: irohamaru mikami;\n}\n\n.card-tags-container {\n    margin-top: auto;\n    align-self: flex-start;\n    background-color: #f5f5f5;\n}\n\n.separator {\n    border: 0;\n    height: 1px;\n    background-color: #ccc;\n    width: 100%;\n    margin: 16px 0;\n}\n\n.center {\n    text-align: center;\n}\n\n.bottom {\n    font-size: 12px;\n    text-align: left;\n    padding: 4px;\n    overflow: hidden;\n}\n\n.left {\n    text-align: left;\n}\n\n.card.nightMode .card-tags-container {\n    background-color: #333;\n}",
+        "templates": [
+          {
+            "name": "Recognition",
+            "qfmt": "<div class=\"center\">\n  <span style=\"font-family: irohamaru mikami; font-size: 50px;\">{{Expression}}</span>\n</div>",
+            "afmt": "<div class=\"card-content center\">\n  <span style=\"font-size: 50px;\">{{furigana:Reading}}</span>\n\n  <hr id=\"answer\" class=\"separator\" />\n\n  <div class=\"left\">\n    <span style=\"font-size: 30px;\">{{furigana:Meaning}}</span>\n  </div>\n\n  <hr id=\"answer\" class=\"separator\" />\n\n  <div class=\"left\">\n    <span style=\"font-size: 30px;\">{{furigana:Notes}}</span>\n  </div>\n\n  <div class=\"card-tags-container\">\n    <div class=\"bottom\">{{Tags}}</div>\n  </div>\n</div>"
+          }
+        ]
+      }
+    ],
+    "samples": [
+      {
+        "noteId": 1619291929878,
+        "modelName": "Japanese ShinKanzenMasterVocabN3",
+        "data": {
+          "Expression": "愛",
+          "Reading": "愛[あい]",
+          "Meaning": "love",
+          "Notes": ""
+        }
+      },
+      {
+        "noteId": 1619291953704,
+        "modelName": "Japanese ShinKanzenMasterVocabN3",
+        "data": {
+          "Expression": "相手",
+          "Reading": "相[あい] 手[て]",
+          "Meaning": "partner, rival, the other person",
+          "Notes": ""
+        }
+      }
+    ]
+  },
+  "_Standard_2400.apkg": {
+    "decks": [
+      "Default",
+      "日本語単語スピードマスター Standard 2400"
+    ],
+    "models": [
+      {
+        "id": "1505237147345",
+        "name": "Japanese example_sentences",
+        "fields": [
+          "Expression",
+          "Meaning",
+          "Reading",
+          "Examples",
+          "Audio"
+        ],
+        "css": ".card {\n font-family: arial;\n font-size: 25px;\n text-align: center;\n color: yellow;\n background-color: white;\n position: absolute;\n width: 100%; \nheight: 100%; \ndisplay: -webkit-box; \n-webkit-box-align: stretch; \n-webkit-box-pack: center; \n-webkit-box-orient: vertical;\n}\n.question{\n font-weight:700;\n}\n\n.title{\n color:yellow;\n font-weight: 500;\n}\n\n.spoiler {\n  display: none;\n font-size: 15;\n}\n\n.show {\n  display: none; \n}\n\n.hide:target + .show {\n  display: inline; \n}\n\n.hide:target {\n  display: none; \n}\n\n.hide:target ~ .spoiler {\n  display: inline;\n}\n\n\n.forum-post {\n  padding: 20px;\n}\n\n.spoiler-content {\n  padding: 15px;\n}",
+        "templates": [
+          {
+            "name": "Card 1",
+            "qfmt": "<div class=\"question\">\n<span style=\"font-size: 45; font-weight: 700; color: yellow;\">\n{{Expression}}<br><br>\n</span>\n</div>",
+            "afmt": "\n<div class=\"title\">{{furigana:Expression}}\n\n<hr id=answer>\n{{furigana:Reading}}<br>\n</div>\n{{Meaning}}<br><br>\n\n<button title=\"Click to Show/Hide Content\" type=\"button\" onclick=\"if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}\">Show/Hide examples</button>\n<br><br>\n<div id=\"spoiler\" style=\"display:none\">{{Examples}}</div>\n</div>"
+          }
+        ]
+      }
+    ],
+    "samples": [
+      {
+        "noteId": 1588606430077,
+        "modelName": "Japanese example_sentences",
+        "data": {
+          "Expression": "昨日",
+          "Meaning": "yesterday",
+          "Reading": "さくじつ",
+          "Examples": "<FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">昨日</FONT></FONT>彼がぶらっと立ち寄った。<br>He dropped in on me yesterday. {CHECKED}<br><br><FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">昨日</FONT></FONT>は全くついていなかった。<br>It just was not my day yesterday.<br><br>彼が<FONT COLOR=\"#ff0000\">きのう</FONT>そこにいたはずはない。<br>He cannot have been there yesterday.<br><br><FONT COLOR=\"#ff0000\">きのう</FONT>彼に電話をかけたのは私だった。<br>It was I that phoned him yesterday.<br><br>彼らは、<FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">昨日</FONT></FONT>魚釣りに行きました。<br>They went fishing yesterday.",
+          "Audio": ""
+        }
+      },
+      {
+        "noteId": 1588606430078,
+        "modelName": "Japanese example_sentences",
+        "data": {
+          "Expression": "一昨日",
+          "Meaning": "the day before yesterday",
+          "Reading": "いっさくじつ",
+          "Examples": "「ウィキペディアを引用するな」という主張が昨日だか<FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">一昨日</FONT></FONT>だかの朝日新聞に載っていた。<br>The exhortation \"Don't quote Wikipedia\" was included in the Asahi newspaper of yesterday or the day before. {CHECKED}<br><br><FONT COLOR=\"#ff0000\">おととい</FONT>そこへ行きました。<br>I went there the day before yesterday.<br><br><FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">一昨日</FONT></FONT>成田に着きました。<br>I arrived at Narita the day before yesterday.<br><br><FONT COLOR=\"#ff0000\"><FONT COLOR=\"#ff0000\">一昨日</FONT></FONT>、彼らはそこを出発した。<br>They left there the day before yesterday.<br><br>その火事は<FONT COLOR=\"#ff0000\">おととい</FONT>発生した。<br>A fire broke out the day before yesterday.",
+          "Audio": ""
+        }
+      }
+    ]
+  }
+}

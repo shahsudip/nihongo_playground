@@ -1,16 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function Header() {
   const navigate = useNavigate();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="flex items-center justify-between p-4 bg-[var(--color-bg-secondary)] border-b border-[var(--color-border)] shadow-md">
       {/* Logo Area */}
-      <div className="flex items-center">
+      <div className="flex items-center space-x-6">
         <Link to="/" className="text-2xl font-black italic tracking-tighter" style={{ color: 'rgb(255, 161, 208)', textShadow: 'black -1px -1px 0px, black 1px -1px 0px, black -1px 1px 0px, black 1px 1px 0px' }}>
           Nihongo Playground
         </Link>
+
+        {/* Global Navigation Links */}
+        <nav className="hidden lg:flex items-center space-x-2">
+          <Link
+            to="/anki-decks"
+            className="px-3 py-1.5 rounded-lg text-xs font-black bg-purple-50 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300 hover:bg-purple-100 border border-purple-500/20 transition-all flex items-center gap-1.5 shadow-sm"
+          >
+            <span>🎴</span> Anki Decks & .apkg
+          </Link>
+          <Link
+            to="/srs-review"
+            className="px-3 py-1.5 rounded-lg text-xs font-black bg-indigo-50 dark:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 hover:bg-indigo-100 border border-indigo-500/20 transition-all flex items-center gap-1.5 shadow-sm"
+          >
+            <span>🧠</span> FSRS SRS Hub
+          </Link>
+          <Link
+            to="/levels"
+            className="px-3 py-1.5 rounded-lg text-xs font-bold text-gray-700 dark:text-gray-200 hover:bg-black/5 dark:hover:bg-white/5 transition-all"
+          >
+            JLPT Levels
+          </Link>
+          <Link
+            to="/books"
+            className="px-3 py-1.5 rounded-lg text-xs font-bold text-gray-700 dark:text-gray-200 hover:bg-black/5 dark:hover:bg-white/5 transition-all"
+          >
+            Books & Sprints
+          </Link>
+        </nav>
       </div>
 
       {/* Right side navigation & stats */}
@@ -56,12 +85,49 @@ export default function Header() {
         </div>
 
         {/* Mobile Hamburger Menu */}
-        <div className="block md:hidden">
-          <button className="w-[57px] h-[57px] bg-black hover:bg-white border text-white hover:text-black border-black rounded-[8px] p-2 flex items-center justify-center transition-all">
+        <div className="block lg:hidden relative">
+          <button 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="w-[57px] h-[57px] bg-black hover:bg-white border text-white hover:text-black border-black rounded-[8px] p-2 flex items-center justify-center transition-all"
+          >
             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 448 512" className="text-2xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
               <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
             </svg>
           </button>
+
+          {/* Mobile Menu Dropdown */}
+          {mobileMenuOpen && (
+            <div className="absolute right-0 top-16 w-56 bg-white dark:bg-zinc-900 border border-black/10 dark:border-white/10 rounded-2xl p-2 shadow-2xl z-50 flex flex-col gap-1 text-xs font-bold">
+              <Link
+                to="/anki-decks"
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-purple-950/40 text-purple-700 dark:text-purple-300 flex items-center gap-2"
+              >
+                <span>🎴</span> Anki Decks & .apkg
+              </Link>
+              <Link
+                to="/srs-review"
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-2.5 rounded-xl hover:bg-indigo-50 dark:hover:bg-indigo-950/40 text-indigo-700 dark:text-indigo-300 flex items-center gap-2"
+              >
+                <span>🧠</span> FSRS SRS Hub
+              </Link>
+              <Link
+                to="/levels"
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-2.5 rounded-xl hover:bg-gray-100 dark:hover:bg-zinc-800 flex items-center gap-2"
+              >
+                <span>🎯</span> JLPT Levels
+              </Link>
+              <Link
+                to="/books"
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-2.5 rounded-xl hover:bg-gray-100 dark:hover:bg-zinc-800 flex items-center gap-2"
+              >
+                <span>📚</span> Books & Sprints
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </header>

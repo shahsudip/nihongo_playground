@@ -51,16 +51,13 @@ export default function VocabularyListPage() {
 
   return (
     <div className="bg-[var(--color-bg-primary)] min-h-screen">
-      <div className="max-w-screen-xl mx-auto px-4 py-8">
-        
-        <div className="flex flex-col justify-center items-center text-center mb-8">
-        <h1 className="text-[50px] md:text-[80px] font-extrabold uppercase leading-none" style={{ color: 'rgb(255, 161, 208)', textShadow: 'white -2px -2px 0px, white 2px -2px 0px, white -2px 2px 0px, white 2px 2px 0px' }}>
-          {displayLevel}
-        </h1>
-        <p className="text-[var(--color-text-primary)] font-extrabold italic uppercase text-xl md:text-2xl mt-0">
-          Vocabulary List
-        </p>
-      </div>
+      <div className="max-w-screen-xl mx-auto px-4 pt-2 pb-8">
+        <button 
+          onClick={() => navigate(`/levels/${level ? level.toLowerCase() : 'n5'}`)}
+          className="text-sm font-semibold text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors mb-4 inline-flex items-center gap-1.5"
+        >
+          &larr; Back to JLPT {displayLevel}
+        </button>
 
       {errorMsg && (
         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4 text-center">
@@ -79,12 +76,20 @@ export default function VocabularyListPage() {
           <h1 className="text-3xl font-bold text-center mb-6 text-black">JLPT {displayLevel} Vocabulary List</h1>
           
           <div className="flex flex-col md:flex-row justify-between items-center mt-4 space-y-4 md:space-y-0 mb-8">
-            <button 
-              onClick={() => navigate(`/flashcards/${level}/vocabulary_list/0`)}
-              className="px-6 py-2 bg-[var(--color-accent)] text-white font-bold rounded-lg shadow-md hover:bg-opacity-90 transition-all flex items-center"
-            >
-              <span className="mr-2">🎴</span> Practice Flashcards
-            </button>
+            <div className="flex flex-wrap gap-3">
+              <button 
+                onClick={() => navigate(`/flashcards/${level}/vocabulary_list/0`)}
+                className="px-5 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-lg shadow-md hover:opacity-95 transition-all flex items-center gap-2 text-sm"
+              >
+                <span>⚡</span> FSRS Flashcard Review
+              </button>
+              <button 
+                onClick={() => navigate('/srs-review')}
+                className="px-4 py-2.5 border-2 border-indigo-500/40 hover:bg-indigo-50 dark:hover:bg-indigo-950/30 text-indigo-600 dark:text-indigo-400 font-bold rounded-lg transition-all flex items-center gap-2 text-sm"
+              >
+                <span>🧠</span> SRS Hub
+              </button>
+            </div>
             <Pagination page={page} totalPages={totalPages} setPage={setPage} />
           </div>
         </div>

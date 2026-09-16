@@ -24,15 +24,19 @@ export const ThemeProvider = ({ children }) => {
     const root = document.documentElement;
     root.setAttribute('data-theme', t);
     if (t === 'dark') {
-      root.classList.add('theme-dark');
+      root.classList.add('dark', 'theme-dark');
       root.classList.remove('theme-light', 'theme-sepia');
       root.style.backgroundColor = '#0d1117';
       root.style.color = '#f0f6fc';
+      document.body.style.backgroundColor = '#0d1117';
+      document.body.style.color = '#f0f6fc';
     } else {
       root.classList.add('theme-light');
-      root.classList.remove('theme-dark');
-      root.style.backgroundColor = '#f4ecdc';
-      root.style.color = '#2d2216';
+      root.classList.remove('dark', 'theme-dark');
+      root.style.backgroundColor = '#f8f6f0';
+      root.style.color = '#111827';
+      document.body.style.backgroundColor = '#f8f6f0';
+      document.body.style.color = '#111827';
     }
   };
 

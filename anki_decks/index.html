@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Readable Anki Deck Studio - Easily create, preview, and export human-readable flashcards to Anki TSV and native .apkg packages.">
+  <title>Anki Deck Studio - Readable Flashcard Creator</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- External libraries for .apkg generation (JSZip & SQL.js) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
+</head>
+<body>
+
+  <!-- Top Application Header -->
+  <header class="app-header">
+    <div class="brand-section">
+      <div class="brand-logo">AD</div>
+      <div>
+        <h1 class="brand-title">Anki Deck Studio</h1>
+        <p class="brand-subtitle">Readable Flashcard &amp; Deck Builder</p>
+      </div>
+    </div>
+
+    <div class="deck-meta-bar">
+      <label for="deckNameInput" style="font-size: 12px; color: var(--text-muted); font-weight: 600;">DECK:</label>
+      <input type="text" id="deckNameInput" class="deck-name-input" value="Computer Science Fundamentals" placeholder="Enter deck name...">
+    </div>
+
+    <div class="header-actions">
+      <button id="btnLoadSample" class="btn btn-secondary btn-sm" title="Load sample readable deck">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        Load Sample
+      </button>
+
+      <button id="btnExportModal" class="btn btn-primary btn-sm" title="Export deck in multiple formats">
+        <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Export Options
+      </button>
+
+      <button id="btnQuickApkg" class="btn btn-accent btn-sm" title="Direct 1-click .apkg package export">
+        <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+        Quick .apkg Export
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Workspace Container -->
+  <main class="app-container">
+
+    <!-- Left Panel: Readable Input & Form Builder -->
+    <section class="panel" id="editorPanel">
+      <div class="panel-header">
+        <div class="panel-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+          Card Source Editor
+        </div>
+        <div class="tab-group">
+          <button id="tabBatch" class="tab-btn active">Batch Text / Markdown</button>
+          <button id="tabForm" class="tab-btn">Card Form Builder</button>
+        </div>
+      </div>
+
+      <div class="panel-body">
+        
+        <!-- Batch Text Mode -->
+        <div id="batchEditorView" style="display: flex; flex-direction: column; flex: 1; gap: 10px;">
+          <div class="format-banner">
+            <div><strong>Supported Readable Formats (Auto-Detected):</strong></div>
+            <div style="margin-top: 4px;">
+              - <code>Q: Question</code> and <code>A: Answer</code> blocks with optional <code>Tags: tag1 tag2</code><br>
+              - Heading cards: <code>### Question</code> followed by Answer text<br>
+              - Cloze deletion: <code>Text with {{c1::hidden phrase}}</code><br>
+              - Markdown Tables: <code>| Front | Back | Tags |</code>
+            </div>
+            <div class="format-samples-bar">
+              <span class="sample-chip" id="chipQA">Insert Q&amp;A Template</span>
+              <span class="sample-chip" id="chipHeading">Insert Heading Template</span>
+              <span class="sample-chip" id="chipCloze">Insert Cloze Template</span>
+              <span class="sample-chip" id="chipTable">Insert Table Template</span>
+            </div>
+          </div>
+
+          <div class="editor-wrapper">
+            <textarea id="rawInputText" class="code-editor" spellcheck="false" placeholder="Type or paste readable flashcards here...
+
+Example:
+Q: What is an Anki package (.apkg)?
+A: A zipped SQLite database storing decks, notes, cards, and templates.
+Tags: anki flashcards
+
+Q: What is idempotency in REST?
+A: Making the same request multiple times produces the identical server state.
+Tags: api http web"></textarea>
+          </div>
+
+          <div class="editor-footer">
+            <div class="editor-stats">
+              <span id="detectedCardCount" class="badge-count">0 Cards Detected</span>
+              <span id="editorStatusText">Live sync active</span>
+            </div>
+            <div style="display: flex; gap: 8px;">
+              <button id="btnClearEditor" class="btn btn-secondary btn-sm">Clear Text</button>
+              <button id="btnSyncDeck" class="btn btn-primary btn-sm">Sync to Deck</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Card Form Mode -->
+        <div id="formBuilderView" style="display: none; flex-direction: column; gap: 14px;">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="formCardType" class="form-label">Card Type</label>
+              <select id="formCardType" class="form-select">
+                <option value="basic">Basic (Front -> Back)</option>
+                <option value="reversed">Basic &amp; Reversed (Creates 2 Cards)</option>
+                <option value="cloze">Cloze Deletion</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="formTags" class="form-label">Tags (Space or Comma Separated)</label>
+              <input type="text" id="formTags" class="form-input" placeholder="e.g. javascript web async">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label">
+              <span id="frontLabelText">Front / Question</span>
+              <button id="btnInsertClozeHelper" class="btn btn-secondary btn-sm" style="padding: 2px 6px; font-size: 11px;">Insert {{c1::cloze}}</button>
+            </div>
+            <textarea id="formFront" class="form-textarea" placeholder="Enter question or prompt..."></textarea>
+          </div>
+
+          <div class="form-group" id="backGroupContainer">
+            <div class="form-label">
+              <span>Back / Answer</span>
+            </div>
+            <textarea id="formBack" class="form-textarea" placeholder="Enter answer or detailed explanation..."></textarea>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 8px; margin-top: 6px;">
+            <button id="btnResetForm" class="btn btn-secondary">Reset Form</button>
+            <button id="btnAddCardFromForm" class="btn btn-primary">Add Card to Deck</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Right Panel: Live Flip Preview & Deck Manager -->
+    <section class="panel" id="previewPanel">
+      <div class="panel-header">
+        <div class="panel-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          Deck Inspector &amp; Live Flip Preview
+        </div>
+        <div class="tab-group">
+          <button id="tabViewFlip" class="tab-btn active">Interactive Flip Card</button>
+          <button id="tabViewTable" class="tab-btn">Deck Table View</button>
+        </div>
+      </div>
+
+      <div class="panel-body">
+
+        <!-- Search and Filter Bar -->
+        <div class="preview-controls">
+          <div class="search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="filterInput" class="search-input" placeholder="Search questions, answers, tags...">
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <label for="tagFilterSelect" style="font-size: 11px; color: var(--text-dim);">TAG:</label>
+            <select id="tagFilterSelect" class="form-select" style="padding: 5px 8px; font-size: 11px;">
+              <option value="all">All Tags</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Flip Card View Container -->
+        <div id="flipCardView">
+          <div class="flashcard-stage">
+            <div id="activeFlashcard" class="flashcard" title="Click anywhere on card or press Spacebar to flip">
+              
+              <!-- Front Face -->
+              <div class="card-face card-face-front">
+                <div class="card-face-header">
+                  <span class="face-badge-front">Question (Front)</span>
+                  <span id="previewCardCounter" class="card-counter">Card 1 of 1</span>
+                </div>
+                <div class="card-face-content" id="cardFrontDisplay">
+                  What is an Anki package (.apkg)?
+                </div>
+                <div class="card-face-footer">
+                  <div class="tag-list" id="cardFrontTags">
+                    <span class="tag-item">anki</span>
+                  </div>
+                  <span style="font-size: 11px; color: var(--text-dim);">[Click or Space to Flip]</span>
+                </div>
+              </div>
+
+              <!-- Back Face -->
+              <div class="card-face card-face-back">
+                <div class="card-face-header">
+                  <span class="face-badge-back">Answer (Back)</span>
+                  <span class="card-counter">Card 1 of 1</span>
+                </div>
+                <div class="card-face-content" id="cardBackDisplay">
+                  A zipped SQLite database storing decks, notes, cards, and templates.
+                </div>
+                <div class="card-face-footer">
+                  <div class="tag-list" id="cardBackTags">
+                    <span class="tag-item">anki</span>
+                  </div>
+                  <span style="font-size: 11px; color: var(--text-dim);">[Click or Space to Flip]</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Navigation Controls -->
+          <div class="card-nav-bar">
+            <div class="nav-buttons">
+              <button id="btnPrevCard" class="btn btn-secondary btn-sm" title="Previous card (Left Arrow)">
+                &lt;- Prev
+              </button>
+              <button id="btnFlipCard" class="btn btn-primary btn-sm" title="Flip card (Spacebar)">
+                Flip Card
+              </button>
+              <button id="btnNextCard" class="btn btn-secondary btn-sm" title="Next card (Right Arrow)">
+                Next -&gt;
+              </button>
+            </div>
+
+            <div class="card-actions-quick">
+              <button id="btnEditCurrentCard" class="btn btn-secondary btn-sm" title="Edit current card in form builder">Edit</button>
+              <button id="btnDuplicateCurrentCard" class="btn btn-secondary btn-sm" title="Duplicate card">Duplicate</button>
+              <button id="btnDeleteCurrentCard" class="btn btn-danger btn-sm" title="Delete card">Delete</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table View Container -->
+        <div id="deckTableView" style="display: none; flex-direction: column; flex: 1;">
+          <div class="table-wrapper">
+            <table class="deck-table">
+              <thead>
+                <tr>
+                  <th style="width: 35px;">#</th>
+                  <th>Front / Prompt</th>
+                  <th>Back / Solution</th>
+                  <th style="width: 110px;">Tags</th>
+                  <th style="width: 60px;">Type</th>
+                  <th style="width: 70px;">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="deckTableBody">
+                <!-- Populated dynamically via app.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Export Options Modal Dialog -->
+  <div id="exportModal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title">Export Flashcard Deck</div>
+        <button id="btnCloseExportModal" class="btn-icon" title="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div>
+          <label class="form-label" style="margin-bottom: 6px;">Select Export Format:</label>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <button id="optApkg" class="btn btn-primary" style="justify-content: flex-start; padding: 12px;">
+              <div style="text-align: left;">
+                <div style="font-weight: 700;">Native Anki Package (.apkg)</div>
+                <div style="font-size: 11px; opacity: 0.8; font-weight: normal;">1-Click direct import for Anki Desktop / Mobile</div>
+              </div>
+            </button>
+
+            <button id="optTsv" class="btn btn-secondary" style="justify-content: flex-start; padding: 12px;">
+              <div style="text-align: left;">
+                <div style="font-weight: 700;">Anki TSV Text File (.txt)</div>
+                <div style="font-size: 11px; opacity: 0.8; font-weight: normal;">Tab-delimited with #separator:tab headers</div>
+              </div>
+            </button>
+
+            <button id="optMarkdown" class="btn btn-secondary" style="justify-content: flex-start; padding: 12px;">
+              <div style="text-align: left;">
+                <div style="font-weight: 700;">Readable Markdown (.md)</div>
+                <div style="font-size: 11px; opacity: 0.8; font-weight: normal;">Clean Q&amp;A format for reading or GitHub</div>
+              </div>
+            </button>
+
+            <button id="optJson" class="btn btn-secondary" style="justify-content: flex-start; padding: 12px;">
+              <div style="text-align: left;">
+                <div style="font-weight: 700;">Deck JSON Backup (.json)</div>
+                <div style="font-size: 11px; opacity: 0.8; font-weight: normal;">Full structured data restore file</div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <div class="form-label">
+            <span>Export Content Preview</span>
+            <span id="previewFormatLabel" style="color: var(--accent-cyan);">Native .apkg (Binary SQLite Package)</span>
+          </div>
+          <div id="exportPreviewText" class="export-preview-box">
+Ready to generate .apkg package containing the SQLite collection and media index.
+Click "Download File" to save the file directly to your disk.
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button id="btnCopyExportText" class="btn btn-secondary">Copy to Clipboard</button>
+        <button id="btnDownloadExportFile" class="btn btn-primary">Download File</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

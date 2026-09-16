@@ -43,6 +43,11 @@ export function AuthProvider({ children }) {
   }
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && window.__MOCK_USER__) {
+      setCurrentUser(window.__MOCK_USER__);
+      setLoading(false);
+      return;
+    }
     // This listener handles all auth changes (login, logout, page refresh)
     const unsubscribe = onAuthStateChanged(auth, user => {
       if (user) {
