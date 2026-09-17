@@ -128,33 +128,14 @@ export default function ZenkamokuPageViewer() {
     const fetchData = async () => {
       try {
         setLoading(true);
-        let chapterData = null;
 
-        // Fallback to local import first for speed/safety
-        try {
-          const { sampleBooks } = await import('../data/book_data.jsx');
-          const localBook = sampleBooks.find(b => b.id === currentBookId);
-          if (localBook) {
-            const localChap = localBook.chapters?.find(c => c.id === chapterId);
-            if (localChap) chapterData = localChap;
-          }
-        } catch (e) {
-          console.warn("Local load failed", e);
-        }
-
-        // Firestore fetch if not in local memory
-        if (!chapterData) {
-          const docRef = doc(db, 'books', currentBookId, 'chapters', chapterId);
-          const snap = await getDoc(docRef);
-          if (snap.exists()) {
-            chapterData = snap.data();
-          }
-        }
-
-        if (chapterData) {
-          setIsSubmitted(false);
+        // Always fetch from Firestore
+        const docRef = doc(db, 'books', currentBookId, 'chapters', chapterId);
+        const snap = await getDoc(docRef);
+        if (snap.exists()) {
+          const chapterData = snap.data();
           setChapter(chapterData);
-          
+
           // Flatten questions
           let flatQs = [];
           if (chapterData.sections) {
