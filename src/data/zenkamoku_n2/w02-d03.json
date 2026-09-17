@@ -1,0 +1,186 @@
+{
+  "bookId": "zenkamoku-n2-best-workbook",
+  "chapterId": "w02-d03",
+  "week": 2,
+  "day": 3,
+  "weekTitle": "第2週",
+  "dayTitle": "3日目",
+  "sectionTitle": "文脈規定・言い換え類義",
+  "sectionTitleEn": "Contextually-defined expressions & Paraphrases",
+  "sections": [
+    {
+      "type": "contextually_defined_expressions",
+      "title": "文脈規定",
+      "titleEn": "Contextually-defined expressions",
+      "pageRef": "p.30",
+      "instruction": "（　　）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "子どもの（　　）ないたずらに対して、本気で怒ってしまった。",
+          "options": [
+            "1. 平凡",
+            "2. 純情",
+            "3. 無邪気",
+            "4. 不器用"
+          ],
+          "correct": 3,
+          "correctOption": "3. 無邪気",
+          "explanation": "<b>【正解】3. 無邪気</b><br/><ruby>無<rt>む</rt></ruby><ruby>邪<rt>じゃ</rt></ruby><ruby>気<rt>き</rt></ruby>(な)：悪い考えがない様子 天真无邪的，单纯的"
+        },
+        {
+          "number": 2,
+          "stem": "そんな（　　）服装で会社に来ないでください。",
+          "options": [
+            "1. 身近な",
+            "2. ずうずうしい",
+            "3. 滑らかな",
+            "4. だらしない"
+          ],
+          "correct": 4,
+          "correctOption": "4. だらしない",
+          "explanation": "<b>【正解】4. だらしない</b><br/>だらしない：品がなくきちんとしていない様子 不整洁；<br/>吊儿郎当"
+        },
+        {
+          "number": 3,
+          "stem": "温泉旅館でゆっくり過ごして、大変（　　）できました。",
+          "options": [
+            "1. ミックス",
+            "2. オーバー",
+            "3. リラックス",
+            "4. カバー"
+          ],
+          "correct": 3,
+          "correctOption": "3. リラックス",
+          "explanation": "<b>【正解】3. リラックス</b><br/>リラックス(する)：緊張を解いてゆっくりすること 放松"
+        },
+        {
+          "number": 4,
+          "stem": "外国から帰ってきたら、時間の感覚がすっかり（　　）しまった。",
+          "options": [
+            "1. 狂って",
+            "2. 破れて",
+            "3. 交わって",
+            "4. 外れて"
+          ],
+          "correct": 1,
+          "correctOption": "1. 狂って",
+          "explanation": "<b>【正解】1. 狂って</b><br/><ruby>狂<rt>くる</rt></ruby>う：正常ではなくなること 失常"
+        },
+        {
+          "number": 5,
+          "stem": "<ruby>太郎<rt>たろう</rt></ruby>くんと<ruby>奈々子<rt>ななこ</rt></ruby>さんは新婚（　　）のカップルだ。",
+          "options": [
+            "1. にやにや",
+            "2. ほやほや",
+            "3. ぎりぎり",
+            "4. ふわふわ"
+          ],
+          "correct": 2,
+          "correctOption": "2. ほやほや",
+          "explanation": "<b>【正解】2. ほやほや</b><br/>ほやほや：その状態になったばかりである様子 刚变成某<br/>种状态，刚〜的"
+        },
+        {
+          "number": 6,
+          "stem": "その日は（　　）忙しいので、翌日うかがってもよろしいでしょうか。",
+          "options": [
+            "1. せっかく",
+            "2. しばらく",
+            "3. ながらく",
+            "4. あいにく"
+          ],
+          "correct": 4,
+          "correctOption": "4. あいにく",
+          "explanation": "<b>【正解】4. あいにく</b><br/>あいにく：期待や目的に合わなくて都合が悪い様子<br/>不巧；遗憾"
+        },
+        {
+          "number": 7,
+          "stem": "この（　　）は暖かいので、3月の初めには桜が咲きはじめるそうだ。",
+          "options": [
+            "1. 地方",
+            "2. 方向",
+            "3. 分野",
+            "4. 団体"
+          ],
+          "correct": 1,
+          "correctOption": "1. 地方",
+          "explanation": "<b>【正解】1. 地方</b><br/><ruby>地<rt>ち</rt></ruby><ruby>方<rt>ほう</rt></ruby>：ある国の中のある地域 地方，地区"
+        }
+      ]
+    },
+    {
+      "type": "paraphrases",
+      "title": "言い換え類義",
+      "titleEn": "Paraphrases",
+      "pageRef": "p.31",
+      "instruction": "＿＿の言葉に意味が最も近いものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "友人のあのような発言を聞いて、<u>失望しました</u>。",
+          "options": [
+            "1. がっかりしました",
+            "2. おかしいと思いました",
+            "3. 勇気が出ました",
+            "4. 驚きました"
+          ],
+          "correct": 1,
+          "correctOption": "1. がっかりしました",
+          "explanation": "<b>【正解】1. がっかりしました</b><br/><ruby>失<rt>しつ</rt></ruby><ruby>望<rt>ぼう</rt></ruby>(する)：期待が外れてがっかりすること 失望"
+        },
+        {
+          "number": 2,
+          "stem": "毎日<u>あわただしく</u>過ごしています。",
+          "options": [
+            "1. 平和に",
+            "2. 健康に",
+            "3. 忙しく",
+            "4. 楽しく"
+          ],
+          "correct": 3,
+          "correctOption": "3. 忙しく",
+          "explanation": "<b>【正解】3. 忙しく</b><br/>あわただしい：落ち着かなくて忙しい様子 慌忙的"
+        },
+        {
+          "number": 3,
+          "stem": "新しい薬を使ったら、<u>いくらか</u>効果があった。",
+          "options": [
+            "1. 非常に",
+            "2. 予想以上に",
+            "3. いつの間にか",
+            "4. ある程度"
+          ],
+          "correct": 4,
+          "correctOption": "4. ある程度",
+          "explanation": "<b>【正解】4. ある程度</b><br/>いくらか：量や程度があまり多くない様子 少量，若干"
+        },
+        {
+          "number": 4,
+          "stem": "その人は私に<u>真実</u>を教えてくれた。",
+          "options": [
+            "1. 願い事",
+            "2. 本当のこと",
+            "3. 正しい方法",
+            "4. 得な情報"
+          ],
+          "correct": 2,
+          "correctOption": "2. 本当のこと",
+          "explanation": "<b>【正解】2. 本当のこと</b><br/><ruby>真<rt>しん</rt></ruby><ruby>実<rt>じつ</rt></ruby>：本当のこと 真相；真话"
+        },
+        {
+          "number": 5,
+          "stem": "小学生のお<ruby>小遣<rt>こづか</rt></ruby>いとして、月に1000円くらいは<u>妥当だ</u>と思います。",
+          "options": [
+            "1. 当たり前だ",
+            "2. 多すぎる",
+            "3. 適切だ",
+            "4. 少なすぎる"
+          ],
+          "correct": 3,
+          "correctOption": "3. 適切だ",
+          "explanation": "<b>【正解】3. 適切だ</b><br/><ruby>妥<rt>だ</rt></ruby><ruby>当<rt>とう</rt></ruby>(な)：状況に合っていてちょうどいい様子 妥当的"
+        }
+      ]
+    }
+  ]
+}

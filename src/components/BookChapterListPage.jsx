@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link, useLocation } from 'react-router-dom';
+import { useParams, Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
 import { useTheme } from '../context/ThemeContext.jsx';
 import { db } from '../firebaseConfig.js';
@@ -17,6 +17,18 @@ import '../assets/shin500_drill.css';
 
 const BookChapterListPage = () => {
   const { bookId } = useParams();
+
+  const navigate = useNavigate();
+
+  // Redirect Zenkamoku N3 directly to the book viewer (bypass chapter list)
+  useEffect(() => {
+    if (bookId.startsWith('zenkamoku')) {
+      navigate(`/books/${bookId}/chapters/w01-d01`, { replace: true });
+    }
+  }, [bookId, navigate]);
+
+  if (bookId.startsWith('zenkamoku')) return null;
+
   const location = useLocation();
   const { currentUser } = useAuth();
   const { theme } = useTheme();

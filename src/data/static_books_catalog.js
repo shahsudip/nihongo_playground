@@ -2,6 +2,27 @@
 
 export const STATIC_BOOKS = [
   {
+    id: 'zenkamoku-n2-best-workbook',
+    title: '全科目攻略JLPT日本語能力試験ベスト総合問題集N2',
+    description: 'A comprehensive workbook covering all subjects for JLPT N2.',
+    level: 'N2',
+    category: 'Grammar',
+    coverImage: '/images/zenkamoku_n2_cover.jpg',
+    color: 'from-blue-500 to-indigo-600',
+    tags: ['N2', 'Grammar', 'Reading', 'Listening', 'Vocabulary', 'Kanji', 'Zenkamoku'],
+    hasDigitalDrill: true,
+  },
+
+  {
+    id: 'zenkamoku-n3-best-workbook',
+    title: '全科目攻略！JLPT日本語能力試験ベスト総合問題集N3',
+    description: '12-week complete JLPT N3 workbook covering vocabulary, grammar, reading, and listening.',
+    coverUrl: '/images/zenkamoku_n3_cover.jpg',
+    level: 'N3',
+    category: 'Mixed',
+    totalChapters: 60
+  },
+  {
     id: 'shin-nihongo-500-n1',
     title: 'Shin Nihongo 500 Mon N1',
     description: '500 essential Kanji, Vocabulary, and Grammar questions for JLPT N1.',

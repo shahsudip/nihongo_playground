@@ -189,7 +189,8 @@ const BookListPage = () => {
             'tango_n2': tangoN2Cover,
             'tango_n3': tangoN3Cover,
             'speed-master-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/speed_master_n3_pages/speed_master_n3_page-0001.jpg`,
-            'shinkanzen-master-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/shinkanzen_n3_reading_cover.jpg`,
+            'zenkamoku-n3-best-workbook': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/images/zenkamoku_n3_cover.jpg`,
+    'shinkanzen-master-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/shinkanzen_n3_reading_cover.jpg`,
             'shinkanzen-master-n3-listening': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/shinkanzen_n3_listening_cover.jpg`,
             'sou-matome-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/sou_matome_n3_reading_cover.jpg`,
           };
@@ -199,7 +200,8 @@ const BookListPage = () => {
             'shin-nihongo-500-n2': 'linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #3a7bd5 100%)',
             'shin-nihongo-500-n3': 'linear-gradient(135deg, #0d9488 0%, #11998e 50%, #38ef7d 100%)',
             'shin-nihongo-500-n4-n5': 'linear-gradient(135deg, #7c3aed 0%, #9333ea 50%, #c084fc 100%)',
-            'shinkanzen-master-n3-reading': 'linear-gradient(135deg, #b45309 0%, #d97706 50%, #f59e0b 100%)',
+            'zenkamoku-n3-best-workbook': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/images/zenkamoku_n3_cover.jpg`,
+    'shinkanzen-master-n3-reading': 'linear-gradient(135deg, #b45309 0%, #d97706 50%, #f59e0b 100%)',
             'speed-master-n3-reading': 'linear-gradient(135deg, #14532d 0%, #16a34a 50%, #22c55e 100%)',
             'sou-matome-n3-reading': 'linear-gradient(135deg, #312e81 0%, #4338ca 50%, #6366f1 100%)',
           };

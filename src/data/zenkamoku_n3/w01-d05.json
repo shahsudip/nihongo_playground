@@ -1,0 +1,212 @@
+{
+  "bookId": "zenkamoku-n3-best-workbook",
+  "chapterId": "w01-d05",
+  "week": 1,
+  "day": 5,
+  "weekTitle": "第1週",
+  "dayTitle": "5日目",
+  "sectionTitle": "漢字読み・表記",
+  "sectionTitleEn": "Kanji Reading & Orthography",
+  "sections": [
+    {
+      "type": "kanji_reading",
+      "title": "漢字読み",
+      "titleEn": "Kanji reading",
+      "pageRef": "p.24",
+      "instruction": "＿＿のことばの読み方として最もよいものを、１・２・３・４から一つえらんでください。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "何があったのか<u>正確</u>に教えてください。",
+          "options": [
+            "1. せいかく",
+            "2. せいこう",
+            "3. しょうかく",
+            "4. しょうこう"
+          ],
+          "correct": 1,
+          "correctOption": "1. せいかく",
+          "explanation": "<b>【正解】1. せいかく</b><br/>正確(な)：間違いがなく正しい様子 precise<br/>【正】セイ・ただ-しい<br/>【確】カク・たし-かめる"
+        },
+        {
+          "number": 2,
+          "stem": "<ruby>息子<rt>むすこ</rt></ruby>は1から10まで<u>数える</u>ことができます。",
+          "options": [
+            "1. おぼえる",
+            "2. おしえる",
+            "3. かぞえる",
+            "4. かずえる"
+          ],
+          "correct": 3,
+          "correctOption": "3. かぞえる",
+          "explanation": "<b>【正解】3. かぞえる</b><br/>数える：いくつあるか調べる count<br/>【数】スウ・かぞ-える"
+        },
+        {
+          "number": 3,
+          "stem": "<u>文房具</u>は3階で売っています。",
+          "options": [
+            "1. ぷんぼうぐ",
+            "2. ぶんぼうぐ",
+            "3. ぷんぽうぐ",
+            "4. ぶんぽうぐ"
+          ],
+          "correct": 2,
+          "correctOption": "2. ぶんぼうぐ",
+          "explanation": "<b>【正解】2. ぶんぼうぐ</b><br/>文房具：ペン、消しゴムなど、紙に書くのに使う道具 stationery<br/>【文】ブン・モン<br/>【房】ボウ<br/>【具】グ"
+        },
+        {
+          "number": 4,
+          "stem": "<u>書類</u>をメールで送ります。",
+          "options": [
+            "1. しょもつ",
+            "2. しょるい",
+            "3. しょうもつ",
+            "4. しょうるい"
+          ],
+          "correct": 2,
+          "correctOption": "2. しょるい",
+          "explanation": "<b>【正解】2. しょるい</b><br/>書類：文字で書いたもの documents<br/>【書】ショ・か-く<br/>【類】ルイ"
+        },
+        {
+          "number": 5,
+          "stem": "父は車で<u>通勤</u>している。",
+          "options": [
+            "1. づうぎん",
+            "2. づうきん",
+            "3. つうぎん",
+            "4. つうきん"
+          ],
+          "correct": 4,
+          "correctOption": "4. つうきん",
+          "explanation": "<b>【正解】4. つうきん</b><br/>通勤(する)：家と会社の間を行ったり帰ったりすること commute<br/>【通】ツウ・とお-る<br/>【勤】キン・つと-める"
+        },
+        {
+          "number": 6,
+          "stem": "<u>残った</u>食べ物は持ち帰りたいです。",
+          "options": [
+            "1. かわった",
+            "2. さわった",
+            "3. あまった",
+            "4. のこった"
+          ],
+          "correct": 4,
+          "correctOption": "4. のこった",
+          "explanation": "<b>【正解】4. のこった</b><br/>残る：余る be leftover; remain<br/>【残】ザン・のこ-る"
+        },
+        {
+          "number": 7,
+          "stem": "<u>歩道橋</u>を<ruby>渡<rt>わた</rt></ruby>ります。",
+          "options": [
+            "1. ほどうきょう",
+            "2. ほうどうきょう",
+            "3. ほどうばし",
+            "4. ほうどうばし"
+          ],
+          "correct": 1,
+          "correctOption": "1. ほどうきょう",
+          "explanation": "<b>【正解】1. ほどうきょう</b><br/>歩道橋：人が歩くために車道の上にかかっている橋 pedestrian bridge<br/>【歩】ホ・ある-く<br/>【道】ドウ・みち<br/>【橋】キョウ・はし"
+        },
+        {
+          "number": 8,
+          "stem": "インターネットに<u>接続</u>した。",
+          "options": [
+            "1. せっそく",
+            "2. せっしょく",
+            "3. せつぞく",
+            "4. せつしょく"
+          ],
+          "correct": 3,
+          "correctOption": "3. せつぞく",
+          "explanation": "<b>【正解】3. せつぞく</b><br/>接続(する)：つなげること connect<br/>【接】セツ<br/>【続】ゾク・つづ-く・つづ-ける"
+        }
+      ]
+    },
+    {
+      "type": "orthography",
+      "title": "表記",
+      "titleEn": "Orthography",
+      "pageRef": "p.25",
+      "instruction": "＿＿のことばを漢字で書くとき、最もよいものを１・２・３・４から一つえらんでください。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "このゲームは<u>やさしい</u>から、子どもでも遊べます。",
+          "options": [
+            "1. 優しい",
+            "2. 易しい",
+            "3. 優い",
+            "4. 易い"
+          ],
+          "correct": 2,
+          "correctOption": "2. 易しい",
+          "explanation": "<b>【正解】2. 易しい</b><br/>易しい：簡単な様子 easy<br/>【易】やさ-しい"
+        },
+        {
+          "number": 2,
+          "stem": "兄は最近、<u>きんえん</u>しています。",
+          "options": [
+            "1. 勤延",
+            "2. 勤煙",
+            "3. 禁延",
+            "4. 禁煙"
+          ],
+          "correct": 4,
+          "correctOption": "4. 禁煙",
+          "explanation": "<b>【正解】4. 禁煙</b><br/>禁煙(する)：タバコを吸うのをやめること stop smoking<br/>【禁】キン<br/>【煙】エン・けむり"
+        },
+        {
+          "number": 3,
+          "stem": "今年は去年の2<u>ばい</u>のお<ruby>客<rt>きゃく</rt></ruby>さんが来た。",
+          "options": [
+            "1. 倍",
+            "2. 培",
+            "3. 部",
+            "4. 割"
+          ],
+          "correct": 1,
+          "correctOption": "1. 倍",
+          "explanation": "<b>【正解】1. 倍</b><br/>～倍：同じ数を足した量（例えば、２の３倍は６） -fold; ～ times<br/>【倍】バイ"
+        },
+        {
+          "number": 4,
+          "stem": "<ruby>肌<rt>はだ</rt></ruby>が<u>かんそう</u>しているので、クリームをぬる。",
+          "options": [
+            "1. 乾燥",
+            "2. 感想",
+            "3. 完走",
+            "4. 歓送"
+          ],
+          "correct": 1,
+          "correctOption": "1. 乾燥",
+          "explanation": "<b>【正解】1. 乾燥</b><br/>乾燥(する)：水分がなくなって乾くこと be dry<br/>【乾】カン・かわ-く<br/>【燥】ソウ"
+        },
+        {
+          "number": 5,
+          "stem": "<u>きゅうきゅうしゃ</u>が到着した。",
+          "options": [
+            "1. 球急車",
+            "2. 急球車",
+            "3. 救急車",
+            "4. 急救車"
+          ],
+          "correct": 3,
+          "correctOption": "3. 救急車",
+          "explanation": "<b>【正解】3. 救急車</b><br/>救急車：けがや病気の人を急いで病院に運ぶ車 ambulance<br/>【救】キュウ・すく-う<br/>【急】キュウ・いそ-ぐ<br/>【車】シャ・くるま"
+        },
+        {
+          "number": 6,
+          "stem": "大切なカップが<u>かけて</u>しまって悲しい。",
+          "options": [
+            "1. 割て",
+            "2. 割けて",
+            "3. 欠て",
+            "4. 欠けて"
+          ],
+          "correct": 4,
+          "correctOption": "4. 欠けて",
+          "explanation": "<b>【正解】4. 欠けて</b><br/>欠ける：一部分が無くなる chip<br/>【欠】ケツ・かけ-る・か-く"
+        }
+      ]
+    }
+  ]
+}

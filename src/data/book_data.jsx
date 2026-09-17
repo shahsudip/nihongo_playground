@@ -1,5 +1,26 @@
 export const sampleBooks = [
   {
+    id: 'zenkamoku-n2-best-workbook',
+    title: '全科目攻略JLPT日本語能力試験ベスト総合問題集N2',
+    description: 'A comprehensive workbook covering all subjects for JLPT N2.',
+    level: 'N2',
+    category: 'Grammar',
+    coverImage: '/images/zenkamoku_n2_cover.jpg',
+    color: 'from-blue-500 to-indigo-600',
+    tags: ['N2', 'Grammar', 'Reading', 'Listening', 'Vocabulary', 'Kanji', 'Zenkamoku'],
+    chapters: []
+  },
+
+  {
+    "id": "zenkamoku-n3-best-workbook",
+    "title": "全科目攻略！JLPT日本語能力試験ベスト総合問題集N3",
+    "description": "12-week complete JLPT N3 workbook covering vocabulary, grammar, reading, and listening.",
+    "coverUrl": "/images/zenkamoku_n3_cover.jpg",
+    "level": "N3",
+    "category": "All Subjects",
+    "chapters": []
+  },
+  {
     "id": "sou-matome-n3-reading",
     "title": "JLPT Sou Matome N3 Reading Comprehension",
     "description": "Focuses on comprehension of short letters, advertisements, and medium-length essays for the N3 level.",

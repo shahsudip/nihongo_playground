@@ -300,9 +300,36 @@ const BookQuizTakerPage = () => {
         </button>
         
         <div className="flex items-center justify-between flex-wrap gap-4">
-          <div>
-            <h1 className="text-xl font-bold">{bookTitle}</h1>
-            <p className="text-sm text-[var(--color-text-muted)]">{chapter.title}</p>
+          <div className="flex-1">
+            {bookId === 'zenkamoku-n3-best-workbook' && chapter.weekTitle ? (
+              <div className="flex flex-col gap-2 w-full max-w-2xl mb-2">
+                <div className="flex items-stretch shadow-sm">
+                   <div className="bg-[#1f2937] text-white px-4 py-2 font-bold text-lg rounded-l-md flex items-center justify-center border-r border-[#374151]">
+                     {chapter.weekTitle}
+                   </div>
+                   <div className="bg-[#e5e7eb] dark:bg-[#d1d5db] text-black px-4 py-2 font-bold text-lg flex-1 flex items-center justify-between">
+                     <span>{chapter.dayTitle}</span>
+                     <div className="flex items-center gap-1">
+                       <span className="text-xl">📅</span>
+                       <span className="border-b border-black w-8 inline-block mx-1"></span>
+                       <span className="text-sm">月</span>
+                       <span className="border-b border-black w-8 inline-block mx-1"></span>
+                       <span className="text-sm">日</span>
+                     </div>
+                   </div>
+                </div>
+                {chapter.sectionTitle && (
+                  <div className="inline-flex self-start border-2 border-black dark:border-white px-3 py-1 font-bold bg-white dark:bg-[#111827] text-black dark:text-white rounded-sm mt-1 shadow-sm">
+                    {chapter.sectionTitle} {chapter.sectionTitleEn ? ` ${chapter.sectionTitleEn}` : ''}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <>
+                <h1 className="text-xl font-bold">{bookTitle}</h1>
+                <p className="text-sm text-[var(--color-text-muted)]">{chapter.title}</p>
+              </>
+            )}
           </div>
           
           <div className="flex items-center gap-4 flex-wrap">
@@ -398,7 +425,22 @@ const BookQuizTakerPage = () => {
             </span>
             <span className="text-sm text-[var(--color-text-muted)]">{currentIndex + 1} of {totalQuestions}</span>
           </div>
-          <h2 className="text-xl md:text-2xl font-medium japanese-text leading-relaxed" dangerouslySetInnerHTML={{ __html: currentQ.questionText.replace(/^(問い|問\d+)/, '<span class="text-[var(--color-primary)] font-bold">$&</span>').replace(/ (A「|B「|A：|B：|男：|女：|男の人：|女の人：|店員：|客：|Ａ「|Ｂ「|Ａ：|Ｂ：)/g, '<br />$1') }}></h2>
+          <h2 className="text-xl md:text-2xl font-medium japanese-text leading-relaxed" dangerouslySetInnerHTML={{ __html: (currentQ.questionText || currentQ.stem || '').replace(/^(問い|問\d+)/, '<span class="text-[var(--color-primary)] font-bold">$&</span>').replace(/ (A「|B「|A：|B：|男：|女：|男の人：|女の人：|店員：|客：|Ａ「|Ｂ「|Ａ：|Ｂ：)/g, '<br />$1') }}></h2>
+          {/* Audio Player Support for Listening Questions */}
+          {currentQ.audioSrc && (
+            <div className="mt-4 p-4 bg-[var(--color-bg-secondary)] rounded-lg border border-[var(--color-border)] flex items-center justify-center">
+              <audio controls controlsList="nodownload" className="w-full max-w-md" key={currentQ.audioSrc}>
+                <source src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${currentQ.audioSrc}`} type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          )}
+          {/* Image Support directly on Question level */}
+          {currentQ.imageSrc && !currentQ.passageText && (
+            <div className="mt-4 p-4 text-center bg-[var(--color-bg-tertiary)] rounded-lg border border-[var(--color-border)]">
+              <img src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${currentQ.imageSrc}`} alt="Question illustration" className="max-w-full h-auto rounded-lg mx-auto" />
+            </div>
+          )}
         </div>
 
         <div className="space-y-3 mb-8">

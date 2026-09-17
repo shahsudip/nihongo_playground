@@ -42,6 +42,7 @@ const ConversationsPage = lazy(() => import('./components/ConversationsPage.jsx'
 const BookListPage = lazy(() => import('./components/BookListPage.jsx'));
 const BookChapterListPage = lazy(() => import('./components/BookChapterListPage.jsx'));
 const BookQuizTakerPage = lazy(() => import('./components/BookQuizTakerPage.jsx'));
+const ZenkamokuPageViewer = lazy(() => import('./components/ZenkamokuPageViewer.jsx'));
 const SomatomeN3Book = lazy(() => import('./components/SomatomeN3Book.jsx'));
 const ShinkanzenN3ReadingBook = lazy(() => import('./components/ShinkanzenN3ReadingBook.jsx'));
 const ShinkanzenN3ListeningBook = lazy(() => import('./components/ShinkanzenN3ListeningBook.jsx'));
@@ -210,6 +211,14 @@ export default function App() {
           <Route
             path="/books/shin-nihongo-500-n4-n5/chapters/:chapterId"
             element={<ProtectedRoute><Shin500QuizPage bookId="shin-nihongo-500-n4-n5" /></ProtectedRoute>}
+          />
+          <Route
+            path="/books/zenkamoku-n2-best-workbook/chapters/:chapterId"
+            element={<ProtectedRoute><ZenkamokuPageViewer /></ProtectedRoute>}
+          />
+          <Route
+            path="/books/zenkamoku-n3-best-workbook/chapters/:chapterId"
+            element={<ProtectedRoute><ZenkamokuPageViewer /></ProtectedRoute>}
           />
           <Route
             path="/books/:bookId/chapters/:chapterId"

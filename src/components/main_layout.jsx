@@ -45,7 +45,7 @@ const MainHeader = () => {
   return (
     <header
       ref={headerRef}
-      className="fixed top-0 left-0 w-full z-50 bg-[var(--color-bg-primary)]/95 backdrop-blur-md transition-all border-b border-[var(--color-border)]/30"
+      className="fixed top-0 left-0 w-full z-50 bg-[var(--color-bg-primary)]/95 backdrop-blur-md transition-all "
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 h-16 md:h-20 flex justify-between items-center">
 

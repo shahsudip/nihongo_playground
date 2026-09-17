@@ -1,0 +1,50 @@
+{
+  "bookId": "zenkamoku-n2-best-workbook",
+  "chapterId": "w08-d02",
+  "week": 8,
+  "day": 2,
+  "weekTitle": "第8週",
+  "dayTitle": "2日目",
+  "sectionTitle": "情報検索",
+  "sectionTitleEn": "Information retrieval",
+  "instruction": "右のページを読んで、後の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。",
+  "sections": [
+    {
+      "type": "information_retrieval",
+      "title": "情報検索",
+      "titleEn": "Information retrieval",
+      "imageSrc": "/images/zenkamoku_n2/w08_d02_passage.png",
+      "instruction": "右のページを読んで、後の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "[こ一大学生のリンさんは、授業がない月曜日か水曜日の午後に、友達と二人で日本文化が学べる講座を受講したいと考えている。4月20日現在、リンさんたちが申し込める講座はいくつあるか",
+          "imageSrc": "/images/zenkamoku_n2/w08_d02_passage.png",
+          "options": [
+            "1. ",
+            "2. つ",
+            "3. つ",
+            "4. つ"
+          ],
+          "correct": 1,
+          "correctOption": "1. ",
+          "explanation": "<b>【正解】1. </b><br/>月曜または水曜の午後、未経験2名で受講できる日本文化講座は「茶道入門」の1つのみなので、1が正解です。"
+        },
+        {
+          "number": 2,
+          "stem": "会員証を持っているサリーさんは5月の講座の「イギリス式庭づくり」を受講したいと考えている。受講するには、受付カウンターにいつ何を持っていけばいいか。",
+          "imageSrc": "/images/zenkamoku_n2/w08_d02_passage.png",
+          "options": [
+            "1. 4月25日までに会員証と5,000円と受講申込用紙を持っていく。",
+            "2. 4月25日までに会員証と10,000円と受講申込用紙を持っていく。",
+            "3. 4月25日までに入会金と運転め免んき許よい証うと5000円と受講申込用紙を持っていく。,",
+            "4. 受講初日に会員証と5,0開円と受講申込用紙を持っていく。"
+          ],
+          "correct": 1,
+          "correctOption": "1. 4月25日までに会員証と5,000円と受講申込用紙を持っていく。",
+          "explanation": "<b>【正解】1. 4月25日までに会員証と5,000円と受講申込用紙を持っていく。</b><br/>会員の受講申込期限と受講料、必要書類の記載から、1が正解です。"
+        }
+      ]
+    }
+  ]
+}
