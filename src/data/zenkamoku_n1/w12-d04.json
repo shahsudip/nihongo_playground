@@ -1,0 +1,76 @@
+{
+  "bookId": "zenkamoku-n1-best-workbook",
+  "chapterId": "w12-d04",
+  "week": 12,
+  "day": 4,
+  "weekTitle": "第12週",
+  "dayTitle": "4日目",
+  "sectionTitle": "統合理解",
+  "sectionTitleEn": "Integrated Comprehension",
+  "sections": [
+    {
+      "type": "integrated_comprehension",
+      "title": "統合理解",
+      "titleEn": "Integrated comprehension",
+      "instruction": "問題用紙(もんだいようし)に何(なに)も印刷(いんさつ)されていません。まず話(はなし)を聞(き)いてください。それから、質問(しつもん)と選択肢(せんたくし)を聞(き)いて、1から4の中(なか)から、最(もっと)もよいものを一(ひと)つ選(えら)んでください。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctOption": "1"
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctOption": "1"
+        }
+      ]
+    },
+    {
+      "type": "integrated_comprehension",
+      "title": "統合理解",
+      "titleEn": "Integrated comprehension",
+      "instruction": "まず話(はなし)を聞(き)いてください。それから、二(ふた)つの質問(しつもん)を聞(き)いて、それぞれ問題用紙(もんだいようし)の1から4の中(なか)から、最(もっと)もよいものを一(ひと)つ選(えら)んでください。",
+      "questions": [
+        {
+          "number": "3-1",
+          "stem": "質問1",
+          "options": [
+            "1 スタディツアー",
+            "2 海外(かいがい)インターンシップ",
+            "3 交換(こうかん)留学(りゅうがく)",
+            "4 自由(じゆう)留学(りゅうがく)"
+          ],
+          "correct": 1,
+          "correctOption": "1 スタディツアー"
+        },
+        {
+          "number": "3-2",
+          "stem": "質問2",
+          "options": [
+            "1 スタディツアー",
+            "2 海外(かいがい)インターンシップ",
+            "3 交換(こうかん)留学(りゅうがく)",
+            "4 自由(じゆう)留学(りゅうがく)"
+          ],
+          "correct": 1,
+          "correctOption": "1 スタディツアー"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+"""
+04_extract_answer_keys.py
+Generates the master answer key JSON files for "全科目攻略JLPT日本語能力試験ベスト総合問題集N2".
+Source: 別冊 pp.2-5 (PDF pages 194-197) and cross-verified with [解説] pp.1-38 (PDF pages 242-278).
+"""
+import sys
+import os
+import json
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+OUT_DIR = r"D:\sudip_software\nihongo_playground\scripts\zenkamoku_n2"
+RAW_OUT = os.path.join(OUT_DIR, "answer_keys_raw.json")
+DETAILED_OUT = os.path.join(OUT_DIR, "answer_keys_detailed.json")
+
+# 535 questions across 12 weeks, 5 days per week
+DETAILED_DATA = {
+    "w01": {
+        "d01": {
+            "漢字読み": {"page": "p.16", "answers": {1: 2, 2: 3, 3: 1, 4: 4, 5: 1}},
+            "表記":     {"page": "p.16", "answers": {1: 3, 2: 4, 3: 2, 4: 1, 5: 3}},
+            "語形成":   {"page": "p.17", "answers": {1: 3, 2: 4, 3: 1, 4: 2, 5: 3}}
+        },
+        "d02": {
+            "漢字読み": {"page": "p.18", "answers": {1: 2, 2: 1, 3: 4, 4: 2, 5: 3}},
+            "表記":     {"page": "p.18", "answers": {1: 4, 2: 1, 3: 4, 4: 4, 5: 3}},
+            "語形成":   {"page": "p.19", "answers": {1: 2, 2: 3, 3: 1, 4: 4, 5: 4}}
+        },
+        "d03": {
+            "漢字読み": {"page": "p.20", "answers": {1: 2, 2: 4, 3: 1, 4: 3, 5: 1}},
+            "表記":     {"page": "p.20", "answers": {1: 4, 2: 1, 3: 3, 4: 3, 5: 2}},
+            "語形成":   {"page": "p.21", "answers": {1: 3, 2: 2, 3: 3, 4: 1, 5: 4}}
+        },
+        "d04": {
+            "漢字読み": {"page": "p.22", "answers": {1: 2, 2: 3, 3: 1, 4: 4, 5: 2}},
+            "表記":     {"page": "p.22", "answers": {1: 3, 2: 2, 3: 1, 4: 4, 5: 3}},
+            "語形成":   {"page": "p.23", "answers": {1: 4, 2: 3, 3: 1, 4: 2, 5: 2}}
+        },
+        "d05": {
+            "漢字読み": {"page": "p.24", "answers": {1: 2, 2: 1, 3: 4, 4: 1, 5: 3}},
+            "表記":     {"page": "p.24", "answers": {1: 3, 2: 4, 3: 4, 4: 1, 5: 2}},
+            "語形成":   {"page": "p.25", "answers": {1: 3, 2: 4, 3: 2, 4: 4, 5: 2}}
+        }
+    },
+    "w02": {
+        "d01": {
+            "文脈規定":     {"page": "p.26", "answers": {1: 3, 2: 2, 3: 3, 4: 1, 5: 4, 6: 2, 7: 3}},
+            "言い換え類義": {"page": "p.27", "answers": {1: 3, 2: 4, 3: 1, 4: 4, 5: 2}}
+        },
+        "d02": {
+            "文脈規定":     {"page": "p.28", "answers": {1: 1, 2: 2, 3: 1, 4: 3, 5: 3, 6: 2, 7: 4}},
+            "言い換え類義": {"page": "p.29", "answers": {1: 1, 2: 1, 3: 4, 4: 3, 5: 1}}
+        },
+        "d03": {
+            "文脈規定":     {"page": "p.30", "answers": {1: 3, 2: 4, 3: 3, 4: 1, 5: 2, 6: 4, 7: 1}},
+            "言い換え類義": {"page": "p.31", "answers": {1: 1, 2: 3, 3: 4, 4: 2, 5: 3}}
+        },
+        "d04": {
+            "文脈規定":     {"page": "p.32", "answers": {1: 3, 2: 1, 3: 2, 4: 4, 5: 4, 6: 1, 7: 3}},
+            "言い換え類義": {"page": "p.33", "answers": {1: 2, 2: 3, 3: 1, 4: 4, 5: 1}}
+        },
+        "d05": {
+            "文脈規定":     {"page": "p.34", "answers": {1: 1, 2: 4, 3: 2, 4: 3, 5: 2, 6: 3, 7: 1}},
+            "言い換え類義": {"page": "p.35", "answers": {1: 4, 2: 2, 3: 1, 4: 2, 5: 3}}
+        }
+    },
+    "w03": {
+        "d01": {
+            "用法":         {"page": "p.36", "answers": {1: 2, 2: 4, 3: 1, 4: 3, 5: 3}},
+            "文の組み立て": {"page": "p.37", "answers": {1: 4, 2: 1, 3: 2, 4: 1, 5: 3}}
+        },
+        "d02": {
+            "用法":         {"page": "p.38", "answers": {1: 3, 2: 2, 3: 1, 4: 3, 5: 2}},
+            "文の組み立て": {"page": "p.39", "answers": {1: 3, 2: 4, 3: 3, 4: 1, 5: 2}}
+        },
+        "d03": {
+            "用法":         {"page": "p.40", "answers": {1: 4, 2: 2, 3: 3, 4: 4, 5: 1}},
+            "文の組み立て": {"page": "p.41", "answers": {1: 1, 2: 4, 3: 4, 4: 2, 5: 4}}
+        },
+        "d04": {
+            "用法":         {"page": "p.42", "answers": {1: 3, 2: 4, 3: 1, 4: 2, 5: 1}},
+            "文の組み立て": {"page": "p.43", "answers": {1: 1, 2: 2, 3: 1, 4: 2, 5: 1}}
+        },
+        "d05": {
+            "用法":         {"page": "p.44", "answers": {1: 4, 2: 2, 3: 3, 4: 4, 5: 1}},
+            "文の組み立て": {"page": "p.45", "answers": {1: 1, 2: 3, 3: 4, 4: 1, 5: 1}}
+        }
+    },
+    "w04": {
+        "d01": {
+            "文法形式の判断": {"page": "pp.46-47", "answers": {1: 4, 2: 2, 3: 1, 4: 2, 5: 3, 6: 2, 7: 4, 8: 3, 9: 1, 10: 3, 11: 4, 12: 2}},
+            "文章の文法":     {"page": "pp.48-49", "answers": {1: 1, 2: 4, 3: 3, 4: 2, 5: 4}}
+        },
+        "d02": {
+            "文法形式の判断": {"page": "pp.50-51", "answers": {1: 1, 2: 3, 3: 1, 4: 4, 5: 2, 6: 2, 7: 1, 8: 2, 9: 4, 10: 4, 11: 3, 12: 1}},
+            "文章の文法":     {"page": "pp.52-53", "answers": {1: 1, 2: 3, 3: 2, 4: 2, 5: 4}}
+        },
+        "d03": {
+            "文法形式の判断": {"page": "pp.54-55", "answers": {1: 2, 2: 1, 3: 4, 4: 3, 5: 1, 6: 2, 7: 4, 8: 1, 9: 2, 10: 3, 11: 2, 12: 1}},
+            "文章の文法":     {"page": "pp.56-57", "answers": {1: 3, 2: 1, 3: 3, 4: 2, 5: 4}}
+        },
+        "d04": {
+            "文法形式の判断": {"page": "pp.58-59", "answers": {1: 2, 2: 3, 3: 2, 4: 1, 5: 1, 6: 2, 7: 4, 8: 3, 9: 1, 10: 4, 11: 3, 12: 4}},
+            "文章の文法":     {"page": "pp.60-61", "answers": {1: 1, 2: 3, 3: 2, 4: 4, 5: 2}}
+        },
+        "d05": {
+            "文法形式の判断": {"page": "pp.62-63", "answers": {1: 1, 2: 1, 3: 2, 4: 3, 5: 1, 6: 4, 7: 3, 8: 2, 9: 4, 10: 4, 11: 3, 12: 2}},
+            "文章の文法":     {"page": "pp.64-65", "answers": {1: 2, 2: 2, 3: 1, 4: 3, 5: 4}}
+        }
+    },
+    "w05": {
+        "d01": {
+            "内容理解（短文）": {"page": "pp.76-79", "answers": {1: 3, 2: 4, 3: 2, 4: 3, 5: 3}}
+        },
+        "d02": {
+            "内容理解（短文）": {"page": "pp.80-83", "answers": {1: 3, 2: 3, 3: 1, 4: 2, 5: 3}}
+        },
+        "d03": {
+            "内容理解（短文）": {"page": "pp.84-87", "answers": {1: 2, 2: 4, 3: 4, 4: 2, 5: 1}}
+        },
+        "d04": {
+            "内容理解（短文）": {"page": "pp.88-91", "answers": {1: 3, 2: 2, 3: 4, 4: 4, 5: 4}}
+        },
+        "d05": {
+            "内容理解（短文）": {"page": "pp.92-95", "answers": {1: 3, 2: 1, 3: 2, 4: 4, 5: 3}}
+        }
+    },
+    "w06": {
+        "d01": {
+            "内容理解（中文）": {"page": "pp.96-101", "answers": {1: 1, 2: 2, 3: 3, 4: 2, 5: 3, 6: 2, 7: 3, 8: 2, 9: 4}}
+        },
+        "d02": {
+            "内容理解（中文）": {"page": "pp.102-107", "answers": {1: 3, 2: 4, 3: 1, 4: 2, 5: 1, 6: 2, 7: 2, 8: 3, 9: 1}}
+        },
+        "d03": {
+            "内容理解（中文）": {"page": "pp.108-113", "answers": {1: 2, 2: 1, 3: 4, 4: 3, 5: 3, 6: 4, 7: 1, 8: 4, 9: 2}}
+        },
+        "d04": {
+            "内容理解（中文）": {"page": "pp.114-119", "answers": {1: 1, 2: 3, 3: 4, 4: 2, 5: 4, 6: 3, 7: 3, 8: 1, 9: 4}}
+        },
+        "d05": {
+            "内容理解（中文）": {"page": "pp.120-125", "answers": {1: 4, 2: 1, 3: 3, 4: 3, 5: 1, 6: 4, 7: 4, 8: 2, 9: 1}}
+        }
+    },
+    "w07": {
+        "d01": {
+            "統合理解":         {"page": "pp.126-127", "answers": {1: 4, 2: 3}},
+            "主張理解（長文）": {"page": "pp.128-129", "answers": {1: 3, 2: 1, 3: 1}}
+        },
+        "d02": {
+            "統合理解":         {"page": "pp.130-131", "answers": {1: 3, 2: 1}},
+            "主張理解（長文）": {"page": "pp.132-133", "answers": {1: 3, 2: 4, 3: 4}}
+        },
+        "d03": {
+            "統合理解":         {"page": "pp.134-135", "answers": {1: 3, 2: 4}},
+            "主張理解（長文）": {"page": "pp.136-137", "answers": {1: 2, 2: 1, 3: 4}}
+        },
+        "d04": {
+            "統合理解":         {"page": "pp.138-139", "answers": {1: 1, 2: 3}},
+            "主張理解（長文）": {"page": "pp.140-141", "answers": {1: 4, 2: 2, 3: 1}}
+        },
+        "d05": {
+            "統合理解":         {"page": "pp.142-143", "answers": {1: 2, 2: 3}},
+            "主張理解（長文）": {"page": "pp.144-145", "answers": {1: 1, 2: 3, 3: 2}}
+        }
+    },
+    "w08": {
+        "d01": {
+            "情報検索": {"page": "pp.146-147", "answers": {1: 2, 2: 2}}
+        },
+        "d02": {
+            "情報検索": {"page": "pp.148-149", "answers": {1: 1, 2: 1}}
+        },
+        "d03": {
+            "情報検索": {"page": "pp.150-151", "answers": {1: 3, 2: 4}}
+        },
+        "d04": {
+            "情報検索": {"page": "pp.152-153", "answers": {1: 2, 2: 2}}
+        },
+        "d05": {
+            "情報検索": {"page": "pp.154-155", "answers": {1: 3, 2: 1}}
+        }
+    },
+    "w09": {
+        "d01": {
+            "課題理解":     {"page": "p.168", "answers": {1: 2, 2: 1, 3: 3, 4: 2, 5: 2}},
+            "ポイント理解": {"page": "p.169", "answers": {1: 2, 2: 3, 3: 3, 4: 4, 5: 1, 6: 3}}
+        },
+        "d02": {
+            "課題理解":     {"page": "p.170", "answers": {1: 2, 2: 2, 3: 3, 4: 2, 5: 1}},
+            "ポイント理解": {"page": "p.171", "answers": {1: 3, 2: 2, 3: 3, 4: 2, 5: 3, 6: 1}}
+        },
+        "d03": {
+            "課題理解":     {"page": "p.172", "answers": {1: 3, 2: 4, 3: 2, 4: 1, 5: 3}},
+            "ポイント理解": {"page": "p.173", "answers": {1: 4, 2: 3, 3: 3, 4: 2, 5: 3, 6: 1}}
+        },
+        "d04": {
+            "課題理解":     {"page": "p.174", "answers": {1: 3, 2: 4, 3: 3, 4: 2, 5: 2}},
+            "ポイント理解": {"page": "p.175", "answers": {1: 1, 2: 4, 3: 3, 4: 4, 5: 2, 6: 2}}
+        },
+        "d05": {
+            "課題理解":     {"page": "p.176", "answers": {1: 3, 2: 3, 3: 4, 4: 4, 5: 3}},
+            "ポイント理解": {"page": "p.177", "answers": {1: 4, 2: 4, 3: 3, 4: 1, 5: 2, 6: 2}}
+        }
+    },
+    "w10": {
+        "d01": {
+            "概要理解": {"page": "p.178", "answers": {1: 4, 2: 4, 3: 2, 4: 3, 5: 3}}
+        },
+        "d02": {
+            "概要理解": {"page": "p.179", "answers": {1: 2, 2: 1, 3: 4, 4: 3, 5: 3}}
+        },
+        "d03": {
+            "概要理解": {"page": "p.180", "answers": {1: 4, 2: 1, 3: 2, 4: 3, 5: 4}}
+        },
+        "d04": {
+            "概要理解": {"page": "p.181", "answers": {1: 4, 2: 2, 3: 3, 4: 4, 5: 2}}
+        },
+        "d05": {
+            "概要理解": {"page": "p.182", "answers": {1: 3, 2: 1, 3: 2, 4: 2, 5: 3}}
+        }
+    },
+    "w11": {
+        "d01": {
+            "即時応答": {"page": "p.183", "answers": {1: 3, 2: 1, 3: 2, 4: 3, 5: 1, 6: 3, 7: 1, 8: 2, 9: 1, 10: 2, 11: 2, 12: 1}}
+        },
+        "d02": {
+            "即時応答": {"page": "p.184", "answers": {1: 1, 2: 3, 3: 3, 4: 2, 5: 2, 6: 1, 7: 1, 8: 2, 9: 2, 10: 1, 11: 1, 12: 1}}
+        },
+        "d03": {
+            "即時応答": {"page": "p.185", "answers": {1: 3, 2: 1, 3: 1, 4: 3, 5: 2, 6: 1, 7: 3, 8: 1, 9: 3, 10: 1, 11: 2, 12: 3}}
+        },
+        "d04": {
+            "即時応答": {"page": "p.186", "answers": {1: 1, 2: 1, 3: 3, 4: 2, 5: 2, 6: 1, 7: 3, 8: 1, 9: 2, 10: 2, 11: 1, 12: 2}}
+        },
+        "d05": {
+            "即時応答": {"page": "p.187", "answers": {1: 2, 2: 3, 3: 1, 4: 3, 5: 2, 6: 2, 7: 1, 8: 2, 9: 1, 10: 3, 11: 1, 12: 3}}
+        }
+    },
+    "w12": {
+        "d01": {
+            "統合理解": {"page": "p.188", "answers": {1: 2, 2: 3, 3: 4, 4: 1}}  # 3: 質問1=4, 質問2=1
+        },
+        "d02": {
+            "統合理解": {"page": "p.189", "answers": {1: 1, 2: 4, 3: 3, 4: 1}}  # 3: 質問1=3, 質問2=1
+        },
+        "d03": {
+            "統合理解": {"page": "p.190", "answers": {1: 3, 2: 4, 3: 3, 4: 4}}  # 3: 質問1=3, 質問2=4
+        },
+        "d04": {
+            "統合理解": {"page": "p.191", "answers": {1: 4, 2: 2, 3: 4, 4: 2}}  # 3: 質問1=4, 質問2=2
+        },
+        "d05": {
+            "統合理解": {"page": "p.192", "answers": {1: 3, 2: 3, 3: 2, 4: 3}}  # 3: 質問1=2, 質問2=3
+        }
+    }
+}
+
+def build_raw_format(detailed):
+    """
+    Converts detailed structure to the flat { "w01": { "d01": { "q1": int, ... } } } format.
+    """
+    raw = {}
+    for w_key in sorted(detailed.keys()):
+        raw[w_key] = {}
+        for d_key in sorted(detailed[w_key].keys()):
+            raw[w_key][d_key] = {}
+            q_num = 1
+            day_content = detailed[w_key][d_key]
+            for sec_name, sec_info in day_content.items():
+                for _, ans_val in sec_info["answers"].items():
+                    raw[w_key][d_key][f"q{q_num}"] = ans_val
+                    q_num += 1
+    return raw
+
+def main():
+    raw_data = build_raw_format(DETAILED_DATA)
+
+    # Validate counts
+    total_weeks = len(raw_data)
+    total_days = sum(len(days) for days in raw_data.values())
+    total_questions = sum(
+        len(questions)
+        for days in raw_data.values()
+        for questions in days.values()
+    )
+
+    print(f"Validation: {total_weeks} weeks, {total_days} days, {total_questions} questions.")
+    assert total_weeks == 12, f"Expected 12 weeks, got {total_weeks}"
+    assert total_days == 60, f"Expected 60 days, got {total_days}"
+    assert total_questions == 535, f"Expected 535 questions, got {total_questions}"
+
+    # Write answer_keys_raw.json
+    with open(RAW_OUT, "w", encoding="utf-8") as f:
+        json.dump(raw_data, f, ensure_ascii=False, indent=2)
+    print(f"Successfully generated: {RAW_OUT}")
+
+    # Write answer_keys_detailed.json
+    with open(DETAILED_OUT, "w", encoding="utf-8") as f:
+        json.dump(DETAILED_DATA, f, ensure_ascii=False, indent=2)
+    print(f"Successfully generated: {DETAILED_OUT}")
+
+if __name__ == "__main__":
+    main()

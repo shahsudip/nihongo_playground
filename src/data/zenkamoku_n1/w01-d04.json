@@ -1,0 +1,184 @@
+{
+  "bookId": "zenkamoku-n1-best-workbook",
+  "chapterId": "w01-d04",
+  "week": 1,
+  "day": 4,
+  "weekTitle": "第1週",
+  "dayTitle": "4日目",
+  "sectionTitle": "文脈規定・漢字読み",
+  "sectionTitleEn": "Contextually-defined expression & Kanji reading",
+  "sections": [
+    {
+      "type": "contextually_defined_expression",
+      "title": "文脈規定",
+      "titleEn": "Contextually-defined expression",
+      "instruction": "（　　）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "思春期の反抗は大人になるために必要な（　　）として受け止めるのがよい。",
+          "options": [
+            "1. アレンジ",
+            "2. プロセス",
+            "3. タイミング",
+            "4. セクション"
+          ],
+          "correct": 2,
+          "correctOption": "2. プロセス"
+        },
+        {
+          "number": 2,
+          "stem": "偶然大学時代の友人に会って、つい１時間も話し（　　）しまった。",
+          "options": [
+            "1. 通して",
+            "2. 詰めて",
+            "3. かけて",
+            "4. 込んで"
+          ],
+          "correct": 4,
+          "correctOption": "4. 込んで"
+        },
+        {
+          "number": 3,
+          "stem": "当社は利益の一部を寄付や支援という形で地域社会へ（　　）していきたいと考えております。",
+          "options": [
+            "1. 還元",
+            "2. 返還",
+            "3. 募金",
+            "4. 譲渡"
+          ],
+          "correct": 1,
+          "correctOption": "1. 還元"
+        },
+        {
+          "number": 4,
+          "stem": "両親を事故で亡くし、兄は大学進学をあきらめて私たちを（　　）くれた。",
+          "options": [
+            "1. 養って",
+            "2. 稼いで",
+            "3. 施して",
+            "4. 労わって"
+          ],
+          "correct": 1,
+          "correctOption": "1. 養って"
+        },
+        {
+          "number": 5,
+          "stem": "彼女は一度も振り返らなかった。彼女との別れは（　　）ものだった。",
+          "options": [
+            "1. だらしない",
+            "2. なにげない",
+            "3. あっけない",
+            "4. さりげない"
+          ],
+          "correct": 3,
+          "correctOption": "3. あっけない"
+        },
+        {
+          "number": 6,
+          "stem": "敵チームは守備が（　　）だから、こちらから攻撃すればすぐに点が奪えるだろう。",
+          "options": [
+            "1. 軽薄",
+            "2. 手薄",
+            "3. 強固",
+            "4. 頑丈"
+          ],
+          "correct": 2,
+          "correctOption": "2. 手薄"
+        },
+        {
+          "number": 7,
+          "stem": "彼女はクラスメートの中でも際立って（　　）のできる人間だ。",
+          "options": [
+            "1. 心当たり",
+            "2. 気負い",
+            "3. 心配り",
+            "4. 気心"
+          ],
+          "correct": 3,
+          "correctOption": "3. 心配り"
+        }
+      ]
+    },
+    {
+      "type": "kanji_reading",
+      "title": "漢字読み",
+      "titleEn": "Kanji reading",
+      "instruction": "＿＿の言葉の読み方として最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "遅刻しそうになって、<u>慌てて</u>家を出た。",
+          "options": [
+            "1. あれてて",
+            "2. あわてて",
+            "3. かれてて",
+            "4. かわてて"
+          ],
+          "correct": 2,
+          "correctOption": "2. あわてて"
+        },
+        {
+          "number": 2,
+          "stem": "<u>道端</u>に咲く花を写真に収めた。",
+          "options": [
+            "1. みちばた",
+            "2. みちはじ",
+            "3. どうたん",
+            "4. どうてん"
+          ],
+          "correct": 1,
+          "correctOption": "1. みちばた"
+        },
+        {
+          "number": 3,
+          "stem": "走行中にタイヤが<u>破裂</u>すると大変危険だ。",
+          "options": [
+            "1. はかい",
+            "2. はれつ",
+            "3. ほうかい",
+            "4. ほうれつ"
+          ],
+          "correct": 2,
+          "correctOption": "2. はれつ"
+        },
+        {
+          "number": 4,
+          "stem": "<u>柔軟</u>な考え方をすれば、アイディアはいくらでも湧いてくるものだ。",
+          "options": [
+            "1. じゅうねん",
+            "2. ゆうねん",
+            "3. じゅうなん",
+            "4. ゆうなん"
+          ],
+          "correct": 3,
+          "correctOption": "3. じゅうなん"
+        },
+        {
+          "number": 5,
+          "stem": "<u>名残</u>惜しいですが、もう帰らなければなりません。",
+          "options": [
+            "1. なごり",
+            "2. のこり",
+            "3. めいざん",
+            "4. みょうざん"
+          ],
+          "correct": 1,
+          "correctOption": "1. なごり"
+        },
+        {
+          "number": 6,
+          "stem": "彼女には<u>淡い</u>色のスカーフがよく似合う。",
+          "options": [
+            "1. しぶい",
+            "2. もろい",
+            "3. やわい",
+            "4. あわい"
+          ],
+          "correct": 4,
+          "correctOption": "4. あわい"
+        }
+      ]
+    }
+  ]
+}

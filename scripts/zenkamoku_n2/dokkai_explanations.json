@@ -1,0 +1,62 @@
+import sys
+import os
+import re
+import json
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+PROJECT_ROOT = r"D:\sudip_software\nihongo_playground"
+KEY_FILE = os.path.join(PROJECT_ROOT, "scripts", "zenkamoku_n2", "answer_keys_raw.json")
+with open(KEY_FILE, "r", encoding="utf-8") as f:
+    ANSWER_KEYS = json.load(f)
+
+# Load kaisetsu text per page
+pages_text = {}
+for p in range(258, 268):
+    with open(f"tmp_inspect/zenkamoku_n2/kaisetsu_page_{p:03d}.txt", "r", encoding="utf-8") as f:
+        pages_text[p] = f.read()
+
+# For each week and day, let's extract explanations
+# We can use regex to split explanations by question answer markers
+def build_explanations():
+    exp_dict = {}
+    
+    # We will build clean explanations for each question
+    # Format: exp_dict[f"{w_key}_{d_key}_q{q_num}"] = explanation_text
+    
+    for w in range(5, 9):
+        w_key = f"w{w:02d}"
+        for d in range(1, 6):
+            d_key = f"d{d:02d}"
+            keys = ANSWER_KEYS[w_key][d_key]
+            for q_num, ans_val in keys.items():
+                exp_dict[f"{w_key}_{d_key}_{q_num}"] = f"正解は {ans_val} です。本文の内容と照らし合わせて確認しましょう。"
+                
+    # Now enrich with specific page text from kaisetsu
+    # We load each page and extract blocks matching "答え X"
+    for p in range(258, 268):
+        txt = pages_text[p]
+        lines = [l.strip() for l in txt.split("\n") if l.strip()]
+        # find lines mentioning answers
+        for idx, l in enumerate(lines):
+            clean = l.replace(" ", "")
+            m = re.search(r'答え\s*([1-4])', clean)
+            if m:
+                ans_num = int(m.group(1))
+                # Grab surrounding context lines (up to 4 lines)
+                ctx = []
+                for offset in range(1, 5):
+                    if idx + offset < len(lines):
+                        nxt = lines[idx + offset].strip()
+                        if "答え" in nxt or "第" in nxt and "週" in nxt:
+                            break
+                        ctx.append(nxt)
+                snippet = "".join(ctx).replace(" ", "")
+                # We will refine these per day in the master builder
+
+    out_file = os.path.join(PROJECT_ROOT, "scripts", "zenkamoku_n2", "dokkai_explanations.json")
+    with open(out_file, "w", encoding="utf-8") as f:
+        json.dump(exp_dict, f, ensure_ascii=False, indent=2)
+    print(f"Base explanations written to {out_file}")
+
+build_explanations()

@@ -1,0 +1,199 @@
+{
+  "bookId": "zenkamoku-n1-best-workbook",
+  "chapterId": "w01-d02",
+  "week": 1,
+  "day": 2,
+  "weekTitle": "第1週",
+  "dayTitle": "2日目",
+  "sectionTitle": "文字・語彙・文法",
+  "sectionTitleEn": "Vocabulary & Grammar",
+  "sections": [
+    {
+      "type": "kanji_reading",
+      "title": "漢字読み",
+      "titleEn": "Kanji reading",
+      "pageRef": "p.18",
+      "instruction": "＿＿の言葉の読み方として最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "昨夜の大雨のせいで、川の水が<u>濁って</u>いる。",
+          "options": [
+            "1. にごって",
+            "2. くもって",
+            "3. どもって",
+            "4. たまって"
+          ],
+          "correct": 1,
+          "correctOption": "1. にごって",
+          "explanation": ""
+        },
+        {
+          "number": 2,
+          "stem": "この辺りでは見たことがない<u>怪しい</u>男が、隣の家に入っていった。",
+          "options": [
+            "1. めずらしい",
+            "2. いやしい",
+            "3. あやしい",
+            "4. たくましい"
+          ],
+          "correct": 3,
+          "correctOption": "3. あやしい",
+          "explanation": ""
+        },
+        {
+          "number": 3,
+          "stem": "いくら正論を並べても、皆を<u>納得</u>させられなければ賛成は得られまい。",
+          "options": [
+            "1. のうどく",
+            "2. のうとく",
+            "3. なっどく",
+            "4. なっとく"
+          ],
+          "correct": 4,
+          "correctOption": "4. なっとく",
+          "explanation": ""
+        },
+        {
+          "number": 4,
+          "stem": "二人の結婚式は両家の親族が見守る中、<u>厳か</u>に<ruby>執<rt>と</rt></ruby>り行われた。",
+          "options": [
+            "1. おごそか",
+            "2. はなやか",
+            "3. おろそか",
+            "4. しとやか"
+          ],
+          "correct": 1,
+          "correctOption": "1. おごそか",
+          "explanation": ""
+        },
+        {
+          "number": 5,
+          "stem": "このドアのロックを<u>解除</u>するには暗証番号の入力が必須です。",
+          "options": [
+            "1. かいしょ",
+            "2. かいじょ",
+            "3. げしょ",
+            "4. げじょ"
+          ],
+          "correct": 2,
+          "correctOption": "2. かいじょ",
+          "explanation": ""
+        },
+        {
+          "number": 6,
+          "stem": "イベントが大変好評だったため、追加日程を<u>設ける</u>ことになった。",
+          "options": [
+            "1. しつける",
+            "2. もうける",
+            "3. しかける",
+            "4. さずける"
+          ],
+          "correct": 2,
+          "correctOption": "2. もうける",
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "type": "contextually_defined_expression",
+      "title": "文脈規定",
+      "titleEn": "Contextually-defined expression",
+      "pageRef": "p.19",
+      "instruction": "（　　）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "思春期の反抗は大人になるために必要な（　　）として受け止めるのがよい。",
+          "options": [
+            "1. アレンジ",
+            "2. プロセス",
+            "3. タイミング",
+            "4. セクション"
+          ],
+          "correct": 2,
+          "correctOption": "2. プロセス",
+          "explanation": ""
+        },
+        {
+          "number": 2,
+          "stem": "偶然大学時代の友人に会って、つい１時間も話し（　　）しまった。",
+          "options": [
+            "1. 通して",
+            "2. 詰めて",
+            "3. かけて",
+            "4. 込んで"
+          ],
+          "correct": 4,
+          "correctOption": "4. 込んで",
+          "explanation": ""
+        },
+        {
+          "number": 3,
+          "stem": "当社は利益の一部を寄付や支援という形で地域社会へ（　　）していきたいと考えております。",
+          "options": [
+            "1. 還元",
+            "2. 返還",
+            "3. 募金",
+            "4. 譲渡"
+          ],
+          "correct": 1,
+          "correctOption": "1. 還元",
+          "explanation": ""
+        },
+        {
+          "number": 4,
+          "stem": "両親を事故で亡くし、兄は大学進学をあきらめて私たちを（　　）くれた。",
+          "options": [
+            "1. 養って",
+            "2. 稼いで",
+            "3. 施して",
+            "4. 労わって"
+          ],
+          "correct": 1,
+          "correctOption": "1. 養って",
+          "explanation": ""
+        },
+        {
+          "number": 5,
+          "stem": "彼女は一度も振り返らなかった。彼女との別れは（　　）ものだった。",
+          "options": [
+            "1. だらしない",
+            "2. なにげない",
+            "3. あっけない",
+            "4. さりげない"
+          ],
+          "correct": 3,
+          "correctOption": "3. あっけない",
+          "explanation": ""
+        },
+        {
+          "number": 6,
+          "stem": "敵チームは守備が（　　）だから、こちらから攻撃すればすぐに点が奪えるだろう。",
+          "options": [
+            "1. 軽薄",
+            "2. 手薄",
+            "3. 強固",
+            "4. 頑丈"
+          ],
+          "correct": 2,
+          "correctOption": "2. 手薄",
+          "explanation": ""
+        },
+        {
+          "number": 7,
+          "stem": "彼女はクラスメートの中でも際立って（　　）のできる人間だ。",
+          "options": [
+            "1. 心当たり",
+            "2. 気負い",
+            "3. 心配り",
+            "4. 気心"
+          ],
+          "correct": 3,
+          "correctOption": "3. 心配り",
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}
