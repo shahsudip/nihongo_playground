@@ -1,0 +1,48 @@
+{
+  "bookId": "zenkamoku-n3-best-workbook",
+  "chapterId": "w04-d04",
+  "week": 4,
+  "day": 4,
+  "weekTitle": "第4週",
+  "dayTitle": "4日目",
+  "subSections": [
+    {
+      "type": "grammar_form",
+      "title": "文法形式の判断",
+      "titleEn": "Selecting grammar form",
+      "pageRef": "pp.58–59",
+      "instruction": "つぎの文の（　）に入れるのに最もよいものを、１・２・３・４から一つえらびなさい。",
+      "questions": [
+        { "number": 1, "stem": "先生「どうして他の席に<ruby>座<rt>すわ</rt></ruby>りたいんですか。」<br>学生「今の席からだと、黒板の字が（　）ので。」", "options": ["見させる", "見かける", "見やすい", "見づらい"], "correct": 4, "correctOption": "見づらい" },
+        { "number": 2, "stem": "この町に（　）以来、一度も両親に会っていません。", "options": ["<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>して", "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>した", "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>す", "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>し"], "correct": 1, "correctOption": "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>して" },
+        { "number": 3, "stem": "とてもおいしいケーキだから、みんなにもぜひ（　）。", "options": ["食べよう", "食べたがる", "食べてほしい", "食べたい"], "correct": 3, "correctOption": "食べてほしい" },
+        { "number": 4, "stem": "<ruby>井上<rt>いのうえ</rt></ruby>「昼ご飯は和食にしましょうか。（　）イタリア料理にしましょうか。」<br><ruby>村田<rt>むらた</rt></ruby>「イタリア料理にしましょう。」", "options": ["そういえば", "それとも", "すると", "それで"], "correct": 2, "correctOption": "それとも" },
+        { "number": 5, "stem": "仕事が<ruby>残<rt>のこ</rt></ruby>っている（　）、飲み会には参加できません。", "options": ["としても", "くらいなら", "かわりに", "ものですから"], "correct": 4, "correctOption": "ものですから" },
+        { "number": 6, "stem": "（スーパーで）<br><ruby>妻<rt>つま</rt></ruby>「ええと、まだ冷蔵庫に卵があった（　）？」<br><ruby>夫<rt>おっと</rt></ruby>「うん、あと３つあったと思う。」", "options": ["って", "っけ", "よ", "もん"], "correct": 2, "correctOption": "っけ" },
+        { "number": 7, "stem": "（　）ばかりの服を<ruby>汚<rt>よご</rt></ruby>してしまった。", "options": ["洗う", "洗い", "洗って", "洗った"], "correct": 4, "correctOption": "洗った" },
+        { "number": 8, "stem": "（うちで）<br>主人「こちらに<ruby>座<rt>すわ</rt></ruby>ってください。今お茶を持ってきますね。」<br><ruby>客<rt>きゃく</rt></ruby>「どうぞ（　）。」", "options": ["おかまいなく", "ご<ruby>遠慮<rt>えんりょ</rt></ruby>なく", "お持ちください", "いらっしゃいませ"], "correct": 1, "correctOption": "おかまいなく" },
+        { "number": 9, "stem": "先生が話している（　）、<ruby>誰<rt>だれ</rt></ruby>かの携帯電話が<ruby>鳴<rt>な</rt></ruby>った。", "options": ["ように", "とともに", "最中に", "中心に"], "correct": 3, "correctOption": "最中に" },
+        { "number": 10, "stem": "あまり行きたくないけれど、みんなが行くなら、私も（　）わけにはいかない。", "options": ["行けない", "行ける", "行かない", "行く"], "correct": 3, "correctOption": "行かない" },
+        { "number": 11, "stem": "大人になる（　）したがって、いろいろなことに<ruby>興味<rt>きょうみ</rt></ruby>を持つようになりました。", "options": ["の", "に", "と", "を"], "correct": 2, "correctOption": "に" },
+        { "number": 12, "stem": "<ruby>水野<rt>みずの</rt></ruby>「私のめがねを見ませんでしたか。」<br><ruby>木下<rt>きのした</rt></ruby>「<ruby>授業<rt>じゅぎょう</rt></ruby>の後、机の上に（　）ままでしたよ。」", "options": ["置かせる", "置かせた", "置く", "置いた"], "correct": 4, "correctOption": "置いた" },
+        { "number": 13, "stem": "先日、社長のお<ruby>宅<rt>たく</rt></ruby>に（　）とき、私は<ruby>傘<rt>かさ</rt></ruby>を置いてきてしまいました。", "options": ["<ruby>伺<rt>うかが</rt></ruby>った", "まいった", "いらっしゃった", "お越しになった"], "correct": 1, "correctOption": "<ruby>伺<rt>うかが</rt></ruby>った" }
+      ]
+    },
+    {
+      "type": "text_grammar",
+      "title": "文章の文法",
+      "titleEn": "Text grammar",
+      "pageRef": "pp.60–61",
+      "instruction": "つぎの文章を読んで、<ruby>文章全体<rt>ぶんしょうぜんたい</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>を考えて、［１］から［５］の中に入る最もよいものを、１・２・３・４から一つえらびなさい。",
+      "passageTitle": "ラジオを聞くこと",
+      "passage": "下の<ruby>文章<rt>ぶんしょう</rt></ruby>は、ある人のブログ（インターネット上の日記）の<ruby>文章<rt>ぶんしょう</rt></ruby>です。\n\n私の母はラジオが好きです。テレビは<ruby>全然<rt>ぜんぜん</rt></ruby>見ません。私は子どものころ、「テレビのほうがおもしろいのに、お母さんはなんでラジオ［１］聞くんだろう」と<ruby>不思議<rt>ふしぎ</rt></ruby>に思っていましたが、大人になってその理由がわかりました。<ruby>洗濯物<rt>せんたくもの</rt></ruby>をたたんでいるときや料理をしているとき、テレビを見るのは難しいですが、ラジオならば音を聞くだけで十分［２］のです。私も自分で家事をするようになって、ラジオをよく聞くようになりました。\n\nテレビでは、音だけではなく、<ruby>映像<rt>えいぞう</rt></ruby>や文字、そして<ruby>表情<rt>ひょうじょう</rt></ruby>や<ruby>動作<rt>どうさ</rt></ruby>を使って<ruby>情報<rt>じょうほう</rt></ruby>を伝えます。［３］、ラジオは声と音だけで伝えなければなりません。毎朝聞いているラジオ番組があるのですが、その番組の<ruby>司会者<rt>しかいしゃ</rt></ruby>は、<ruby>素晴<rt>すば</rt></ruby>らしいと思います。映像がなくてもニュースの<ruby>内容<rt>ないよう</rt></ruby>や<ruby>彼女<rt>かのじょ</rt></ruby>の意見がきちんと［４］。さらに、<ruby>彼女<rt>かのじょ</rt></ruby>の日本語はきれいで<ruby>丁寧<rt>ていねい</rt></ruby>です。私は<ruby>彼女<rt>かのじょ</rt></ruby>の声を［５］元気が出て、今日もいい一日になりそうだと思うのです。",
+      "questions": [
+        { "number": 1, "stem": "文章中の［１］に入るものをえらびなさい。", "options": ["なんか", "まで", "にしても", "やら"], "correct": 1, "correctOption": "なんか" },
+        { "number": 2, "stem": "文章中の［２］に入るものをえらびなさい。", "options": ["楽しんでもかまわない", "楽しむことができる", "楽しいに決まっている", "楽しいことになっている"], "correct": 2, "correctOption": "楽しむことができる" },
+        { "number": 3, "stem": "文章中の［３］に入るものをえらびなさい。", "options": ["または", "それなら", "ところで", "一方"], "correct": 4, "correctOption": "一方" },
+        { "number": 4, "stem": "文章中の［４］に入るものをえらびなさい。", "options": ["伝わってくるからです", "伝わらないからです", "伝えさせるからです", "伝えるからです"], "correct": 1, "correctOption": "伝わってくるからです" },
+        { "number": 5, "stem": "文章中の［５］に入るものをえらびなさい。", "options": ["聞いてから", "聞くように", "聞くと", "聞いて"], "correct": 3, "correctOption": "聞くと" }
+      ]
+    }
+  ]
+}

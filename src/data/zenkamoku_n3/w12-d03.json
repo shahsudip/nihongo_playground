@@ -1,0 +1,136 @@
+{
+  "bookId": "zenkamoku-n3-best-workbook",
+  "chapterId": "w12-d03",
+  "week": 12,
+  "day": 3,
+  "weekTitle": "第12週",
+  "dayTitle": "3日目",
+  "subSections": [
+    {
+      "type": "quick_response",
+      "title": "即時応答",
+      "titleEn": "Quick response",
+      "pageRef": "p.174",
+      "instruction": "問題用紙に何もいんさつされていません。まず文を聞いてください。それから、そのへんじを聞いて、1から3の中から、最もよいものを一つえらんでください。",
+      "questions": [
+        {
+          "number": 1,
+          "trackId": "N3-124",
+          "audioSrc": "/audio/zenkamoku_n3/N3-124.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "script": "～つもりだ＝～ようと考 かんが えている I plan to ～"
+        },
+        {
+          "number": 2,
+          "trackId": "N3-125",
+          "audioSrc": "/audio/zenkamoku_n3/N3-125.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "script": "～かけ＝～の途 と 中 ちゅう not finished ～"
+        },
+        {
+          "number": 3,
+          "trackId": "N3-126",
+          "audioSrc": "/audio/zenkamoku_n3/N3-126.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "script": "ばらばら：ものが壊 こわ れて散 ち らばっている様 よう 子 す in pieces"
+        },
+        {
+          "number": 4,
+          "trackId": "N3-127",
+          "audioSrc": "/audio/zenkamoku_n3/N3-127.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "script": "食 しょく 欲 よく ：食 た べたいと思 おも う気 き 持 も ち appetite"
+        },
+        {
+          "number": 5,
+          "trackId": "N3-128",
+          "audioSrc": "/audio/zenkamoku_n3/N3-128.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "script": "命 めい 令 れい (する)：相 あい 手 て に「～しろ」「～しなさい」と言 い う こと order"
+        },
+        {
+          "number": 6,
+          "trackId": "N3-129",
+          "audioSrc": "/audio/zenkamoku_n3/N3-129.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "script": "～ないこともない＝絶 ぜっ 対 たい ～だとは言 い えない can ～ to an extent; not impossible to ～"
+        },
+        {
+          "number": 7,
+          "trackId": "N3-130",
+          "audioSrc": "/audio/zenkamoku_n3/N3-130.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "script": "お召 め しになる：「着 き る」の尊 そん 敬 けい 語 ご wear [honorific]"
+        },
+        {
+          "number": 8,
+          "trackId": "N3-131",
+          "audioSrc": "/audio/zenkamoku_n3/N3-131.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "script": "受 じゅ 験 けん (する)：テストを受 う けること take an exam"
+        },
+        {
+          "number": 9,
+          "trackId": "N3-132",
+          "audioSrc": "/audio/zenkamoku_n3/N3-132.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "script": "～みたい＝まるで～のようだ is like ～"
+        }
+      ]
+    }
+  ]
+}

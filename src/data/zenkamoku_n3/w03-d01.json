@@ -1,0 +1,155 @@
+{
+  "bookId": "zenkamoku-n3-best-workbook",
+  "chapterId": "w03-d01",
+  "week": 3,
+  "day": 1,
+  "weekTitle": "第3週",
+  "dayTitle": "1日目",
+  "sectionTitle": "用法・文の組み立て",
+  "sectionTitleEn": "Usage & Sentence Composition",
+  "subSections": [
+    {
+      "type": "usage",
+      "title": "用法",
+      "titleEn": "Usage",
+      "pageRef": "p.36",
+      "instruction": "つぎのことばの使い方として最もよいものを、１・２・３・４から一つえらびなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "<ruby>指示<rt>しじ</rt></ruby>",
+          "options": [
+            "1. あのコーチは長い間、日本代表のサッカーチームを<u><ruby>指示<rt>しじ</rt></ruby></u>してきた。",
+            "2. 法律でタバコは二十歳になってからと<u><ruby>指示<rt>しじ</rt></ruby></u>されている。",
+            "3. 母は私に、毎月３万円ずつ<u><ruby>指示<rt>しじ</rt></ruby></u>して送ってくれている。",
+            "4. その犬は、飼い主が来るように<u><ruby>指示<rt>しじ</rt></ruby></u>しても、全く言うことを聞かない。"
+          ],
+          "correct": 4,
+          "correctOption": "4. その犬は、飼い主が来るように<u><ruby>指示<rt>しじ</rt></ruby></u>しても、全く言うことを聞かない。"
+        },
+        {
+          "number": 2,
+          "stem": "そる",
+          "options": [
+            "1. 友人から機械を借りて、畑の雑草を<u>そった</u>。",
+            "2. 彼は子どもっぽく見られるのが嫌で、ひげを<u>そる</u>のをやめた。",
+            "3. 古くなった床の表面を<u>そって</u>磨いたらきれいになった。",
+            "4. その店でパイナップルの硬い皮をナイフで<u>そって</u>もらった。"
+          ],
+          "correct": 2,
+          "correctOption": "2. 彼は子どもっぽく見られるのが嫌で、ひげを<u>そる</u>のをやめた。"
+        },
+        {
+          "number": 3,
+          "stem": "そろそろ",
+          "options": [
+            "1. <u>そろそろ</u>寒いので、風邪をひかないようにね。",
+            "2. 今から面接なので、<u>そろそろ</u>電話に出られません。",
+            "3. それでは、<u>そろそろ</u>出かける準備を始めましょうか。",
+            "4. もう９時か、会議は<u>そろそろ</u>終わったはずだね。"
+          ],
+          "correct": 3,
+          "correctOption": "3. それでは、<u>そろそろ</u>出かける準備を始めましょうか。"
+        },
+        {
+          "number": 4,
+          "stem": "<ruby>誤解<rt>ごかい</rt></ruby>",
+          "options": [
+            "1. 計算を間違えてテストに<u><ruby>誤解<rt>ごかい</rt></ruby></u>を書いてしまった。",
+            "2. 面接で質問の意味がわからずに<u><ruby>誤解<rt>ごかい</rt></ruby></u>を答えてしまった。",
+            "3. レポートの<u><ruby>誤解<rt>ごかい</rt></ruby></u>に気づいて、すぐに書き直した。",
+            "4. 彼の説明を聞いて、あれは<u><ruby>誤解<rt>ごかい</rt></ruby></u>だったと気がついた。"
+          ],
+          "correct": 4,
+          "correctOption": "4. 彼の説明を聞いて、あれは<u><ruby>誤解<rt>ごかい</rt></ruby></u>だったと気がついた。"
+        },
+        {
+          "number": 5,
+          "stem": "<ruby>余分<rt>よぶん</rt></ruby>",
+          "options": [
+            "1. 旅行に行くときは<u><ruby>余分<rt>よぶん</rt></ruby></u>な荷物を持っていかないようにしている。",
+            "2. 恋人とケンカした友達に<u><ruby>余分<rt>よぶん</rt></ruby></u>なことを聞いて怒られた。",
+            "3. 朝からずっと携帯電話を使っているが、まだ電池に<u><ruby>余分<rt>よぶん</rt></ruby></u>がある。",
+            "4. 忙しくなりそうなので、<u><ruby>余分<rt>よぶん</rt></ruby></u>なアルバイトを募集する。"
+          ],
+          "correct": 1,
+          "correctOption": "1. 旅行に行くときは<u><ruby>余分<rt>よぶん</rt></ruby></u>な荷物を持っていかないようにしている。"
+        }
+      ]
+    },
+    {
+      "type": "sentence_composition",
+      "title": "文の組み立て",
+      "titleEn": "Sentence composition",
+      "pageRef": "p.37",
+      "instruction": "つぎの文の ★ に入る最もよいものを、１・２・３・４から一つえらびなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "彼女は将来 ★ そうだ。",
+          "options": [
+            "1. 練習をしてきた",
+            "2. 歌手になるために",
+            "3. 歌とダンスの",
+            "4. 子どものときから"
+          ],
+          "correct": 3,
+          "correctOption": "3. 歌とダンスの",
+          "starPosition": 3
+        },
+        {
+          "number": 2,
+          "stem": "夜遅くまで音楽を ★ しまった。",
+          "options": [
+            "1. 聞いていたら",
+            "2. と言われて",
+            "3. 近所の人に",
+            "4. 静かにしろ"
+          ],
+          "correct": 3,
+          "correctOption": "3. 近所の人に",
+          "starPosition": 2
+        },
+        {
+          "number": 3,
+          "stem": "江口「確かに、朝のバスは ★ 、早い時間に家を出ているから大丈夫だよ。」",
+          "options": [
+            "1. けど",
+            "2. 遅れがちだ",
+            "3. から",
+            "4. たまに心配になる"
+          ],
+          "correct": 4,
+          "correctOption": "4. たまに心配になる",
+          "starPosition": 3
+        },
+        {
+          "number": 4,
+          "stem": "手紙をする ★ なものらしい。",
+          "options": [
+            "1. とても",
+            "2. ５分で終わる",
+            "3. といっても",
+            "4. 簡単"
+          ],
+          "correct": 2,
+          "correctOption": "2. ５分で終わる",
+          "starPosition": 2
+        },
+        {
+          "number": 5,
+          "stem": "先輩に今は日本語が ★ と言われた。",
+          "options": [
+            "1. 続けていれば",
+            "2. 上手に話せなくても",
+            "3. 毎日勉強を",
+            "4. 上手に話せるようになる"
+          ],
+          "correct": 1,
+          "correctOption": "1. 続けていれば",
+          "starPosition": 3
+        }
+      ]
+    }
+  ]
+}

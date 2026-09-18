@@ -1,0 +1,136 @@
+{
+  "bookId": "zenkamoku-n3-best-workbook",
+  "chapterId": "w12-d01",
+  "week": 12,
+  "day": 1,
+  "weekTitle": "第12週",
+  "dayTitle": "1日目",
+  "subSections": [
+    {
+      "type": "quick_response",
+      "title": "即時応答",
+      "titleEn": "Quick response",
+      "pageRef": "p.172",
+      "instruction": "問題用紙に何もいんさつされていません。まず文を聞いてください。それから、そのへんじを聞いて、1から3の中から、最もよいものを一つえらんでください。",
+      "questions": [
+        {
+          "number": 1,
+          "trackId": "N3-106",
+          "audioSrc": "/audio/zenkamoku_n3/N3-106.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "script": "～を中 ちゅう 心 しん に：～を真 ま ん中 なか に centered on ～"
+        },
+        {
+          "number": 2,
+          "trackId": "N3-107",
+          "audioSrc": "/audio/zenkamoku_n3/N3-107.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "script": "ぼんやり(する)：集 しゅう 中 ちゅう していない様 よう 子 す space out; daydream"
+        },
+        {
+          "number": 3,
+          "trackId": "N3-108",
+          "audioSrc": "/audio/zenkamoku_n3/N3-108.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "script": "～に限 かぎ る：～が一 いち 番 ばん いい nothing beats ～"
+        },
+        {
+          "number": 4,
+          "trackId": "N3-109",
+          "audioSrc": "/audio/zenkamoku_n3/N3-109.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "script": "～ようになっている：そのように決 き まっている その ようにしてある is designed/set up to ～"
+        },
+        {
+          "number": 5,
+          "trackId": "N3-110",
+          "audioSrc": "/audio/zenkamoku_n3/N3-110.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "script": "呼 よ び出 だ す：呼 よ んで、来 き てもらう call; summon"
+        },
+        {
+          "number": 6,
+          "trackId": "N3-111",
+          "audioSrc": "/audio/zenkamoku_n3/N3-111.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "script": "お上 あ がりください：「家 いえ に入 はい ってください」という意 い 味 み の丁 てい 寧 ねい な言 い い方 かた Please come in [honorific]"
+        },
+        {
+          "number": 7,
+          "trackId": "N3-112",
+          "audioSrc": "/audio/zenkamoku_n3/N3-112.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "script": "～てくる：～に変 へん 化 か している become ～ ※「眠 ねむ くなってきた」は、前 まえ は眠 ねむ くなかったが、今 いま は 少 すこ しずつ眠 ねむ い状 じょう 態 たい になっているという意 い 味 み 。 眠 ねむ くなってきた means that the speaker wasn’t sleepy at first, but now is becoming sleepy."
+        },
+        {
+          "number": 8,
+          "trackId": "N3-113",
+          "audioSrc": "/audio/zenkamoku_n3/N3-113.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "script": "～ていらっしゃる：「～ている」の尊 そん 敬 けい 表 ひょう 現 げん is ～ [honorific]"
+        },
+        {
+          "number": 9,
+          "trackId": "N3-114",
+          "audioSrc": "/audio/zenkamoku_n3/N3-114.mp3",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "script": "チャレンジ(する)：挑 ちょう 戦 せん (する) take on challenges"
+        }
+      ]
+    }
+  ]
+}

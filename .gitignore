@@ -34,8 +34,4 @@ n3_pages_temp/
 tmp_inspect/
 scripts/*.png
 
-# Zenkamoku data & extraction scripts — data lives in Firestore, not git
-src/data/zenkamoku_n2/
-src/data/zenkamoku_n3/
-scripts/zenkamoku_n2/
-scripts/zenkamoku_n3/
+# Zenkamoku data lives in Git now so Vite can bundle it dynamically

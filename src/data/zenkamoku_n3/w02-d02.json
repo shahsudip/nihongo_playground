@@ -1,0 +1,238 @@
+{
+  "bookId": "zenkamoku-n3-best-workbook",
+  "chapterId": "w02-d02",
+  "week": 2,
+  "day": 2,
+  "weekTitle": "第2週",
+  "dayTitle": "2日目",
+  "sectionTitle": "文脈規定・言い換え類義",
+  "sectionTitleEn": "Contextually-defined expressions & Paraphrases",
+  "sections": [
+    {
+      "type": "contextually_defined_expressions",
+      "title": "文脈規定",
+      "titleEn": "Contextually-defined expressions",
+      "pageRef": "pp.28-29",
+      "instruction": "（　　）に入れるのに最もよいものを、１・２・３・４から一つえらんでください。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "部長はさっき（　　）ができて、お帰りになりました。",
+          "options": [
+            "1. <ruby>急用<rt>きゅうよう</rt></ruby>",
+            "2. <ruby>都合<rt>つごう</rt></ruby>",
+            "3. <ruby>情報<rt>じょうほう</rt></ruby>",
+            "4. <ruby>機会<rt>きかい</rt></ruby>"
+          ],
+          "correct": 1,
+          "correctOption": "1. <ruby>急用<rt>きゅうよう</rt></ruby>",
+          "explanation": "<b>【正解】1. <ruby>急用<rt>きゅうよう</rt></ruby></b><br/>急用：急いでしなければならない用事 urgent business"
+        },
+        {
+          "number": 2,
+          "stem": "「がんばれ！　がんばれ！」と大きい声でチームを（　　）した。",
+          "options": [
+            "1. <ruby>発言<rt>はつげん</rt></ruby>",
+            "2. <ruby>応援<rt>おうえん</rt></ruby>",
+            "3. <ruby>指導<rt>しどう</rt></ruby>",
+            "4. <ruby>希望<rt>きぼう</rt></ruby>"
+          ],
+          "correct": 2,
+          "correctOption": "2. <ruby>応援<rt>おうえん</rt></ruby>",
+          "explanation": "<b>【正解】2. <ruby>応援<rt>おうえん</rt></ruby></b><br/>応援(する)：試合などで声をかけたり、拍手をしたりして選手やチームを励ますこと 力を貸して助けること cheer on"
+        },
+        {
+          "number": 3,
+          "stem": "<ruby>隣<rt>となり</rt></ruby>の家から晩ご飯のいい（　　）がする。",
+          "options": [
+            "1. <ruby>感<rt>かん</rt></ruby>じ",
+            "2. <ruby>雰囲気<rt>ふんいき</rt></ruby>",
+            "3. あじ",
+            "4. におい"
+          ],
+          "correct": 4,
+          "correctOption": "4. におい",
+          "explanation": "<b>【正解】4. におい</b><br/>匂い： smell"
+        },
+        {
+          "number": 4,
+          "stem": "（　　）を見ると、製品の<ruby>特徴<rt>とくちょう</rt></ruby>がよくわかる。",
+          "options": [
+            "1. アイディア",
+            "2. カタログ",
+            "3. メーカー",
+            "4. メニュー"
+          ],
+          "correct": 2,
+          "correctOption": "2. カタログ",
+          "explanation": "<b>【正解】2. カタログ</b><br/>カタログ：商品や展示物などについての案内書 catalog"
+        },
+        {
+          "number": 5,
+          "stem": "あのレストランの料理は（　　）したほどではなかった。",
+          "options": [
+            "1. <ruby>指示<rt>しじ</rt></ruby>",
+            "2. <ruby>要求<rt>ようきゅう</rt></ruby>",
+            "3. <ruby>期待<rt>きたい</rt></ruby>",
+            "4. <ruby>注目<rt>ちゅうもく</rt></ruby>"
+          ],
+          "correct": 3,
+          "correctOption": "3. <ruby>期待<rt>きたい</rt></ruby>",
+          "explanation": "<b>【正解】3. <ruby>期待<rt>きたい</rt></ruby></b><br/>期待(する)：あることの実現の可能性が高いと予想して楽しみに待つこと have high expectations"
+        },
+        {
+          "number": 6,
+          "stem": "道が<ruby>混<rt>こ</rt></ruby>んでいて、（　　）運転するしかなかった。",
+          "options": [
+            "1. くるくる",
+            "2. ふらふら",
+            "3. すらすら",
+            "4. のろのろ"
+          ],
+          "correct": 4,
+          "correctOption": "4. のろのろ",
+          "explanation": "<b>【正解】4. のろのろ</b><br/>のろのろ：動きがゆっくりしている様子 slowly"
+        },
+        {
+          "number": 7,
+          "stem": "私はいつも8時50分に（　　）している。",
+          "options": [
+            "1. <ruby>出勤<rt>しゅっきん</rt></ruby>",
+            "2. <ruby>労働<rt>ろうどう</rt></ruby>",
+            "3. <ruby>就職<rt>しゅうしょく</rt></ruby>",
+            "4. <ruby>残業<rt>ざんぎょう</rt></ruby>"
+          ],
+          "correct": 1,
+          "correctOption": "1. <ruby>出勤<rt>しゅっきん</rt></ruby>",
+          "explanation": "<b>【正解】1. <ruby>出勤<rt>しゅっきん</rt></ruby></b><br/>出勤(する)：勤め先に出かけること 仕事に出ること go to work"
+        },
+        {
+          "number": 8,
+          "stem": "<ruby>祖母<rt>そぼ</rt></ruby>が（　　）くれたセーターはとても<ruby>暖<rt>あたた</rt></ruby>かい。",
+          "options": [
+            "1. あんで",
+            "2. ぬって",
+            "3. くみたてて",
+            "4. かざって"
+          ],
+          "correct": 1,
+          "correctOption": "1. あんで",
+          "explanation": "<b>【正解】1. あんで</b><br/>編む： knit"
+        },
+        {
+          "number": 9,
+          "stem": "公園に<ruby>捨<rt>す</rt></ruby>てられていた（　　）<ruby>猫<rt>ねこ</rt></ruby>を<ruby>拾<rt>ひろ</rt></ruby>った。",
+          "options": [
+            "1. いじわるな",
+            "2. かわいそうな",
+            "3. おそろしい",
+            "4. にがい"
+          ],
+          "correct": 2,
+          "correctOption": "2. かわいそうな",
+          "explanation": "<b>【正解】2. かわいそうな</b><br/>かわいそう(な)： pitiful"
+        },
+        {
+          "number": 10,
+          "stem": "日が（　　）と、この辺は<ruby>真っ暗<rt>まっくら</rt></ruby>になる。",
+          "options": [
+            "1. <ruby>済<rt>す</rt></ruby>む",
+            "2. <ruby>過<rt>す</rt></ruby>ぎる",
+            "3. <ruby>沈<rt>しず</rt></ruby>む",
+            "4. <ruby>傾<rt>かたむ</rt></ruby>く"
+          ],
+          "correct": 3,
+          "correctOption": "3. <ruby>沈<rt>しず</rt></ruby>む",
+          "explanation": "<b>【正解】3. <ruby>沈<rt>しず</rt></ruby>む</b><br/>沈む：水の底に落ちる set; go down<br/>※「日が沈む」で太陽が下に移動して見えなくなること（夜になること） 日が沈む means “the sun sets.”"
+        },
+        {
+          "number": 11,
+          "stem": "まだ着られる服を<ruby>捨<rt>す</rt></ruby>てるのは（　　）。",
+          "options": [
+            "1. つまらない",
+            "2. きたない",
+            "3. もったいない",
+            "4. くだらない"
+          ],
+          "correct": 3,
+          "correctOption": "3. もったいない",
+          "explanation": "<b>【正解】3. もったいない</b><br/>もったいない：使えるものを十分に活用していなかったり、無駄にしていたりすることに対し、残念だと思う気持ち be a waste"
+        }
+      ]
+    },
+    {
+      "type": "paraphrases",
+      "title": "言い換え類義",
+      "titleEn": "Paraphrases",
+      "pageRef": "p.29",
+      "instruction": "＿＿に意味が最も近いものを、１・２・３・４から一つえらんでください。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "この<ruby>成績<rt>せいせき</rt></ruby>なら<ruby>希望<rt>きぼう</rt></ruby>の大学に<u>受かる</u>でしょう。",
+          "options": [
+            "1. <ruby>合格<rt>ごうかく</rt></ruby>する",
+            "2. <ruby>成功<rt>せいこう</rt></ruby>する",
+            "3. 申し込む",
+            "4. 間に合う"
+          ],
+          "correct": 1,
+          "correctOption": "1. <ruby>合格<rt>ごうかく</rt></ruby>する",
+          "explanation": "<b>【正解】1. <ruby>合格<rt>ごうかく</rt></ruby>する</b><br/>受かる：合格する be accepted"
+        },
+        {
+          "number": 2,
+          "stem": "この道は<ruby>狭<rt>せま</rt></ruby>いので、<u>速度</u>を落として運転したほうがいい。",
+          "options": [
+            "1. タイム",
+            "2. エネルギー",
+            "3. リズム",
+            "4. スピード"
+          ],
+          "correct": 4,
+          "correctOption": "4. スピード",
+          "explanation": "<b>【正解】4. スピード</b><br/>速度：物事の進む速さ スピード speed"
+        },
+        {
+          "number": 3,
+          "stem": "<ruby>寝<rt>ね</rt></ruby>ている<ruby>息子<rt>むすこ</rt></ruby>に<u>そっと</u><ruby>毛布<rt>もうふ</rt></ruby>をかけた。",
+          "options": [
+            "1. しずかに",
+            "2. いそいで",
+            "3. すこし",
+            "4. きちんと"
+          ],
+          "correct": 1,
+          "correctOption": "1. しずかに",
+          "explanation": "<b>【正解】1. しずかに</b><br/>そっと：音を立てないように物事をする様子 静かに gently"
+        },
+        {
+          "number": 4,
+          "stem": "この部屋は<u><ruby>散<rt>ち</rt></ruby>らかっている</u>。",
+          "options": [
+            "1. 物が少なくて広く感じる",
+            "2. 物が整理されずあちこちにある",
+            "3. <ruby>誰<rt>だれ</rt></ruby>も住んでいなくて静かだ",
+            "4. 人が集まっていてうるさい"
+          ],
+          "correct": 2,
+          "correctOption": "2. 物が整理されずあちこちにある",
+          "explanation": "<b>【正解】2. 物が整理されずあちこちにある</b><br/>散らかる：物が整理されずにあちこちに置かれている片付けられてない be messy"
+        },
+        {
+          "number": 5,
+          "stem": "あのホテルのサービスは<u>ひどかった</u>。",
+          "options": [
+            "1. あまりよくなかった",
+            "2. まあまあだった",
+            "3. 非常に悪かった",
+            "4. 非常によかった"
+          ],
+          "correct": 3,
+          "correctOption": "3. 非常に悪かった",
+          "explanation": "<b>【正解】3. 非常に悪かった</b><br/>ひどい：程度が非常に悪い terrible"
+        }
+      ]
+    }
+  ]
+}

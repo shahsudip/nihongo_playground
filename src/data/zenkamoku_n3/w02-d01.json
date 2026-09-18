@@ -1,0 +1,238 @@
+{
+  "bookId": "zenkamoku-n3-best-workbook",
+  "chapterId": "w02-d01",
+  "week": 2,
+  "day": 1,
+  "weekTitle": "第2週",
+  "dayTitle": "1日目",
+  "sectionTitle": "文脈規定・言い換え類義",
+  "sectionTitleEn": "Contextually-defined expressions & Paraphrases",
+  "sections": [
+    {
+      "type": "contextually_defined_expressions",
+      "title": "文脈規定",
+      "titleEn": "Contextually-defined expressions",
+      "pageRef": "pp.26-27",
+      "instruction": "（　　）に入れるのに最もよいものを、１・２・３・４から一つえらんでください。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "この<ruby>薬<rt>くすり</rt></ruby>はすぐに（　　）が感じられます。",
+          "options": [
+            "1. <ruby>能力<rt>のうりょく</rt></ruby>",
+            "2. <ruby>効果<rt>こうか</rt></ruby>",
+            "3. <ruby>程度<rt>ていど</rt></ruby>",
+            "4. <ruby>調子<rt>ちょうし</rt></ruby>"
+          ],
+          "correct": 2,
+          "correctOption": "2. <ruby>効果<rt>こうか</rt></ruby>",
+          "explanation": "<b>【正解】2. <ruby>効果<rt>こうか</rt></ruby></b><br/>効果：ききめ 望ましい結果 effect<br/>※選択肢１「能力」は、人のことを表すのに使う。<br/>Choice 1, 能力, is used for talking about people.<br/>※選択肢４「調子」は、人や物の状態について使う。<br/>Choice 4, 調子, is used to refer to the condition of people or things.<br/>１ 能力：何かをすることができる力<br/>３ 程度：度合い レベル<br/>４ 調子：調子がいい／悪い"
+        },
+        {
+          "number": 2,
+          "stem": "<ruby>留学<rt>りゅうがく</rt></ruby>する（　　）があれば、日本へ行きたい。",
+          "options": [
+            "1. レジャー",
+            "2. イメージ",
+            "3. チャンス",
+            "4. リポート"
+          ],
+          "correct": 3,
+          "correctOption": "3. チャンス",
+          "explanation": "<b>【正解】3. チャンス</b><br/>チャンス：機会 chance; opportunity<br/>１ レジャー：遊び<br/>２ イメージ：想像すること<br/>４ リポート：報告 報告書"
+        },
+        {
+          "number": 3,
+          "stem": "台風が来たので、旅行のスケジュールを（　　）した。",
+          "options": [
+            "1. <ruby>交換<rt>こうかん</rt></ruby>",
+            "2. <ruby>変更<rt>へんこう</rt></ruby>",
+            "3. <ruby>改正<rt>かいせい</rt></ruby>",
+            "4. <ruby>防止<rt>ぼうし</rt></ruby>"
+          ],
+          "correct": 2,
+          "correctOption": "2. <ruby>変更<rt>へんこう</rt></ruby>",
+          "explanation": "<b>【正解】2. <ruby>変更<rt>へんこう</rt></ruby></b><br/>変更(する)：変えること change<br/>１ 交換(する)：取りかえること<br/>３ 改正(する)：法律やルールなどを変えること<br/>４ 防止(する)：防ぐこと"
+        },
+        {
+          "number": 4,
+          "stem": "何時間も待たされて（　　）してしまった。",
+          "options": [
+            "1. じろじろ",
+            "2. ぺこぺこ",
+            "3. ぎらぎら",
+            "4. いらいら"
+          ],
+          "correct": 4,
+          "correctOption": "4. いらいら",
+          "explanation": "<b>【正解】4. いらいら</b><br/>いらいら(する)：思うようにならずに不快になり、落ち着かなくなること become irritated<br/>１ じろじろ：失礼なくらいよく見る様子<br/>２ ぺこぺこ：おなかがすいている様子<br/>３ ぎらぎら：強く光る様子"
+        },
+        {
+          "number": 5,
+          "stem": "兄は前からボランティアに（　　）があった。",
+          "options": [
+            "1. <ruby>関心<rt>かんしん</rt></ruby>",
+            "2. <ruby>協力<rt>きょうりょく</rt></ruby>",
+            "3. <ruby>掲示<rt>けいじ</rt></ruby>",
+            "4. <ruby>話題<rt>わだい</rt></ruby>"
+          ],
+          "correct": 1,
+          "correctOption": "1. <ruby>関心<rt>かんしん</rt></ruby>",
+          "explanation": "<b>【正解】1. <ruby>関心<rt>かんしん</rt></ruby></b><br/>関心：興味があること interest<br/>２ 協力：みんなで力を合わせること<br/>３ 掲示：お知らせなどを紙などに書いて知らせること<br/>４ 話題：話のテーマ"
+        },
+        {
+          "number": 6,
+          "stem": "暑い日が<ruby>続<rt>つづ</rt></ruby>いて、<ruby>庭<rt>にわ</rt></ruby>の花が（　　）しまった。",
+          "options": [
+            "1. かたまって",
+            "2. かれて",
+            "3. すべって",
+            "4. けずれて"
+          ],
+          "correct": 2,
+          "correctOption": "2. かれて",
+          "explanation": "<b>【正解】2. かれて</b><br/>枯れる：花や木などが、水分がなく乾燥して命が終わる wither<br/>１ 固まる：その場で動かなくなる<br/>３ 滑る：(凍った雪の上を歩く時など)足元が安定しない<br/>４ 削れる：削られて小さくなる"
+        },
+        {
+          "number": 7,
+          "stem": "<ruby>卒業<rt>そつぎょう</rt></ruby>の（　　）に時計をもらった。",
+          "options": [
+            "1. <ruby>記憶<rt>きおく</rt></ruby>",
+            "2. <ruby>記録<rt>きろく</rt></ruby>",
+            "3. <ruby>記念<rt>きねん</rt></ruby>",
+            "4. <ruby>記号<rt>きごう</rt></ruby>"
+          ],
+          "correct": 3,
+          "correctOption": "3. <ruby>記念<rt>きねん</rt></ruby>",
+          "explanation": "<b>【正解】3. <ruby>記念<rt>きねん</rt></ruby></b><br/>記念：思い出として残しておくこと commemoration<br/>１ 記憶：覚えていること<br/>２ 記録：伝える必要のある出来事を書いて残すこと 競技などの成績や結果"
+        },
+        {
+          "number": 8,
+          "stem": "<ruby>箱<rt>はこ</rt></ruby>のふたが開かないように上から（　　）ください。",
+          "options": [
+            "1. まとめて",
+            "2. おさえて",
+            "3. こぼして",
+            "4. むかえて"
+          ],
+          "correct": 2,
+          "correctOption": "2. おさえて",
+          "explanation": "<b>【正解】2. おさえて</b><br/>押さえる：力を加えて止める hold (down)<br/>１ まとめる：ばらばらのものを一つにする<br/>３ こぼす：液体を容器の外に出す<br/>４ 迎える：用意して待つ"
+        },
+        {
+          "number": 9,
+          "stem": "入社後、3週間の（　　）に参加した。",
+          "options": [
+            "1. <ruby>残業<rt>ざんぎょう</rt></ruby>",
+            "2. <ruby>宿泊<rt>しゅくはく</rt></ruby>",
+            "3. <ruby>休憩<rt>きゅうけい</rt></ruby>",
+            "4. <ruby>研修<rt>けんしゅう</rt></ruby>"
+          ],
+          "correct": 4,
+          "correctOption": "4. <ruby>研修<rt>けんしゅう</rt></ruby>",
+          "explanation": "<b>【正解】4. <ruby>研修<rt>けんしゅう</rt></ruby></b><br/>研修：必要な知識や能力を高めるための勉強会 training<br/>１ 残業：退勤予定時間後に働くこと<br/>２ 宿泊：泊まること<br/>３ 休憩：休むこと"
+        },
+        {
+          "number": 10,
+          "stem": "この道路は<ruby>事故<rt>じこ</rt></ruby>が多いので、道の<ruby>幅<rt>はば</rt></ruby>を（　　）工事をすることになった。",
+          "options": [
+            "1. ひろめる",
+            "2. ひろげる",
+            "3. のばす",
+            "4. ふくらませる"
+          ],
+          "correct": 2,
+          "correctOption": "2. ひろげる",
+          "explanation": "<b>【正解】2. ひろげる</b><br/>広げる：面積や幅を大きくする widen<br/>１ 広める：物事が広くいきわたるようにする<br/>３ 伸ばす：長くする<br/>４ ふくらませる：空気などを入れて大きくする"
+        },
+        {
+          "number": 11,
+          "stem": "コンクールで<ruby>優秀作品<rt>ゆうしゅうさくひん</rt></ruby>に<ruby>選<rt>えら</rt></ruby>ばれ、<ruby>彼<rt>かれ</rt></ruby>の絵の（　　）がやっと<ruby>認<rt>みと</rt></ruby>められた。",
+          "options": [
+            "1. <ruby>名所<rt>めいしょ</rt></ruby>",
+            "2. <ruby>利点<rt>りてん</rt></ruby>",
+            "3. <ruby>性質<rt>せいしつ</rt></ruby>",
+            "4. <ruby>価値<rt>かち</rt></ruby>"
+          ],
+          "correct": 4,
+          "correctOption": "4. <ruby>価値<rt>かち</rt></ruby>",
+          "explanation": "<b>【正解】4. <ruby>価値<rt>かち</rt></ruby></b><br/>価値：どれくらい大切か value<br/>１ 名所：観光地など有名な場所<br/>２ 利点：メリット<br/>３ 性質：ものの特徴"
+        }
+      ]
+    },
+    {
+      "type": "paraphrases",
+      "title": "言い換え類義",
+      "titleEn": "Paraphrases",
+      "pageRef": "p.27",
+      "instruction": "＿＿に意味が最も近いものを、１・２・３・４から一つえらんでください。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "その川で魚を<u>とって</u>遊んだ。",
+          "options": [
+            "1. おいかけて",
+            "2. ひっぱって",
+            "3. つかまえて",
+            "4. にぎって"
+          ],
+          "correct": 3,
+          "correctOption": "3. つかまえて",
+          "explanation": "<b>【正解】3. つかまえて</b><br/>捕る：生き物を捕まえる catch<br/>１ 追いかける：後ろから走ってついていく<br/>２ 引っ張る：ものの一部を手前に引く<br/>４ にぎる：手の指をそろえて曲げる"
+        },
+        {
+          "number": 2,
+          "stem": "メールが<u><ruby>受信<rt>じゅしん</rt></ruby>できませんでした</u>。",
+          "options": [
+            "1. 送れませんでした",
+            "2. 受け取れませんでした",
+            "3. <ruby>開<rt>ひら</rt></ruby>けませんでした",
+            "4. 使えませんでした"
+          ],
+          "correct": 2,
+          "correctOption": "2. 受け取れませんでした",
+          "explanation": "<b>【正解】2. 受け取れませんでした</b><br/>受信(する)：メールや電波などを受け取ること 届くこと receive"
+        },
+        {
+          "number": 3,
+          "stem": "私は、<u>めったに</u>テレビを見ません。",
+          "options": [
+            "1. 最近",
+            "2. ほとんど",
+            "3. 絶対に",
+            "4. ときどき"
+          ],
+          "correct": 2,
+          "correctOption": "2. ほとんど",
+          "explanation": "<b>【正解】2. ほとんど</b><br/>めったに：ほとんど～ない 非常に少ない rarely"
+        },
+        {
+          "number": 4,
+          "stem": "このゲームは子どもでも楽しめるように、もっと<u><ruby>工夫<rt>くふう</rt></ruby>した</u>ほうがいい。",
+          "options": [
+            "1. 小さくした",
+            "2. 軽くした",
+            "3. 説明書を作った",
+            "4. いいやり方を考えた"
+          ],
+          "correct": 4,
+          "correctOption": "4. いいやり方を考えた",
+          "explanation": "<b>【正解】4. いいやり方を考えた</b><br/>工夫(する)：よくなるように、あれこれ考えること devise (ways to do something)"
+        },
+        {
+          "number": 5,
+          "stem": "<u><ruby>意外<rt>いがい</rt></ruby>と</u><ruby>遊園地<rt>ゆうえんち</rt></ruby>は<ruby>空<rt>す</rt></ruby>いていた。",
+          "options": [
+            "1. <ruby>予想<rt>よそう</rt></ruby>通り",
+            "2. いつも以上に",
+            "3. 思っていたのと違って",
+            "4. <ruby>珍<rt>めずら</rt></ruby>しく"
+          ],
+          "correct": 3,
+          "correctOption": "3. 思っていたのと違って",
+          "explanation": "<b>【正解】3. 思っていたのと違って</b><br/>意外と：思っていたことと違う様子 surprisingly"
+        }
+      ]
+    }
+  ]
+}

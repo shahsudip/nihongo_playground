@@ -1,0 +1,186 @@
+{
+  "bookId": "zenkamoku-n2-best-workbook",
+  "chapterId": "w02-d04",
+  "week": 2,
+  "day": 4,
+  "weekTitle": "第2週",
+  "dayTitle": "4日目",
+  "sectionTitle": "文脈規定・言い換え類義",
+  "sectionTitleEn": "Contextually-defined expressions & Paraphrases",
+  "sections": [
+    {
+      "type": "contextually_defined_expressions",
+      "title": "文脈規定",
+      "titleEn": "Contextually-defined expressions",
+      "pageRef": "p.32",
+      "instruction": "（　　）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "小さな子どもが何人も殺されるという（　　）な事件が起きた。",
+          "options": [
+            "1. ユニーク",
+            "2. チェック",
+            "3. ショッキング",
+            "4. パック"
+          ],
+          "correct": 3,
+          "correctOption": "3. ショッキング",
+          "explanation": "<b>【正解】3. ショッキング</b><br/>ショッキング(な)：精神的ショックを感じる様子 驚く<br/>べき様子 令人震惊的"
+        },
+        {
+          "number": 2,
+          "stem": "明日も早いんだから、（　　）寝なさい。",
+          "options": [
+            "1. さっさと",
+            "2. せっせと",
+            "3. そっと",
+            "4. ほっと"
+          ],
+          "correct": 1,
+          "correctOption": "1. さっさと",
+          "explanation": "<b>【正解】1. さっさと</b><br/>さっさと：動作がすばやい様子 急ぐ様子 迅速的"
+        },
+        {
+          "number": 3,
+          "stem": "深刻な失業問題を（　　）ために、3兆円もの予算が組まれた。",
+          "options": [
+            "1. 解約する",
+            "2. 解決する",
+            "3. 解説する",
+            "4. 解散する"
+          ],
+          "correct": 2,
+          "correctOption": "2. 解決する",
+          "explanation": "<b>【正解】2. 解決する</b><br/><ruby>解<rt>かい</rt></ruby><ruby>決<rt>けつ</rt></ruby>(する)：事件や問題などをうまく処理すること 解决"
+        },
+        {
+          "number": 4,
+          "stem": "自分で宿題をせずに、友達にやらせるのは（　　）。",
+          "options": [
+            "1. おしい",
+            "2. あらい",
+            "3. きよい",
+            "4. ずるい"
+          ],
+          "correct": 4,
+          "correctOption": "4. ずるい",
+          "explanation": "<b>【正解】4. ずるい</b><br/>ずるい：人をだまして自分に有利に立ち回る様子 狡猾的"
+        },
+        {
+          "number": 5,
+          "stem": "事故に遭い、一時は意識もなく（　　）だったが、なんとか目を覚ました。",
+          "options": [
+            "1. 貴重",
+            "2. 慎重",
+            "3. 重心",
+            "4. 重体"
+          ],
+          "correct": 4,
+          "correctOption": "4. 重体",
+          "explanation": "<b>【正解】4. 重体</b><br/><ruby>重<rt>じゅう</rt></ruby><ruby>体<rt>たい</rt></ruby>：命にかかわるほどの重い病気や負傷のこと<br/>病危；重伤"
+        },
+        {
+          "number": 6,
+          "stem": "（　　）少しの間でいいので、荷物を持っていてくれませんか。",
+          "options": [
+            "1. ほんの",
+            "2. たったの",
+            "3. わずかに",
+            "4. たんに"
+          ],
+          "correct": 1,
+          "correctOption": "1. ほんの",
+          "explanation": "<b>【正解】1. ほんの</b><br/>ほんの：ただの それだけの 仅仅<br/>※程度が低いことを表す。表示程度很低"
+        },
+        {
+          "number": 7,
+          "stem": "このフックについている磁石はとても（　　）で、20kgの重さまで耐えられます。",
+          "options": [
+            "1. 強気",
+            "2. 強大",
+            "3. 強力",
+            "4. 強引"
+          ],
+          "correct": 3,
+          "correctOption": "3. 強力",
+          "explanation": "<b>【正解】3. 強力</b><br/><ruby>強<rt>きょう</rt></ruby><ruby>力<rt>りょく</rt></ruby>(な)：力が大きい様子 大力，强大"
+        }
+      ]
+    },
+    {
+      "type": "paraphrases",
+      "title": "言い換え類義",
+      "titleEn": "Paraphrases",
+      "pageRef": "p.33",
+      "instruction": "＿＿の言葉に意味が最も近いものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "厳しい現状を<u>なげく</u>よりも、それをどう改善していくかを考えるべきだ。",
+          "options": [
+            "1. 気にする",
+            "2. 悲しむ",
+            "3. 後悔する",
+            "4. 反省する"
+          ],
+          "correct": 2,
+          "correctOption": "2. 悲しむ",
+          "explanation": "<b>【正解】2. 悲しむ</b><br/>なげく：悲しく思う 悲伤<br/>8"
+        },
+        {
+          "number": 2,
+          "stem": "友人から<u>おそろしい</u>話を聞いた。",
+          "options": [
+            "1. おもしろい",
+            "2. くやしい",
+            "3. こわい",
+            "4. うまい"
+          ],
+          "correct": 3,
+          "correctOption": "3. こわい",
+          "explanation": "<b>【正解】3. こわい</b><br/>おそろしい：危険を感じて不安である こわい 可怕的"
+        },
+        {
+          "number": 3,
+          "stem": "自分はどちらかというと、<u>陽気な</u>性格だと思う。",
+          "options": [
+            "1. 明るい",
+            "2. おおざっぱな",
+            "3. あたたかい",
+            "4. 生意気な"
+          ],
+          "correct": 1,
+          "correctOption": "1. 明るい",
+          "explanation": "<b>【正解】1. 明るい</b><br/><ruby>陽<rt>よう</rt></ruby><ruby>気<rt>き</rt></ruby>(な)：にぎやかで明るい様子 开朗的"
+        },
+        {
+          "number": 4,
+          "stem": "みんなで集まり、<u>故人</u>について語り合った。",
+          "options": [
+            "1. 特別な人",
+            "2. 偉大な人",
+            "3. よく知っている人",
+            "4. 亡くなった人"
+          ],
+          "correct": 4,
+          "correctOption": "4. 亡くなった人",
+          "explanation": "<b>【正解】4. 亡くなった人</b><br/><ruby>故<rt>こ</rt></ruby><ruby>人<rt>じん</rt></ruby>：すでに死んでしまっている人 死者，亡人"
+        },
+        {
+          "number": 5,
+          "stem": "<ruby>田村<rt>たむら</rt></ruby>さんはいつも遅刻してくるが、<u>案の定</u>、今日も遅れてやってきた。",
+          "options": [
+            "1. やはり",
+            "2. ようやく",
+            "3. しきりに",
+            "4. いっせいに"
+          ],
+          "correct": 1,
+          "correctOption": "1. やはり",
+          "explanation": "<b>【正解】1. やはり</b><br/><ruby>案<rt>あん</rt></ruby>の定<br/>じょう<br/>：予想していた通りの結果になること 果然"
+        }
+      ]
+    }
+  ]
+}

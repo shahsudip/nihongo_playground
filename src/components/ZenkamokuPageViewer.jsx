@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 
 import { doc, getDoc, setDoc, deleteDoc } from 'firebase/firestore';
@@ -13,12 +13,15 @@ export default function ZenkamokuPageViewer() {
   
   const [chapter, setChapter] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [dataLoaded, setDataLoaded] = useState(false);
+  const [stateLoaded, setStateLoaded] = useState(false);
 
   // Persistent answers state
   const [savedAnswers, setSavedAnswers] = useState({});
 
   // Derive current bookId
-  const currentBookId = window.location.pathname.includes('zenkamoku-n2')
+  const location = useLocation();
+  const currentBookId = location.pathname.includes('zenkamoku-n2')
     ? 'zenkamoku-n2-best-workbook'
     : 'zenkamoku-n3-best-workbook';
   const historyDocId = currentUser ? `${currentBookId}-${chapterId}` : null;
@@ -70,6 +73,7 @@ export default function ZenkamokuPageViewer() {
       if (isMounted) {
         setSavedAnswers(answersToSet);
       }
+        setStateLoaded(true);
     };
 
     loadState();
@@ -158,6 +162,13 @@ export default function ZenkamokuPageViewer() {
     navigate(`/books/${currentBookId}/chapters/w${currentW}-d${newD}`);
   };
 
+
+  useEffect(() => {
+    setLoading(true);
+    setDataLoaded(false);
+    setStateLoaded(false);
+  }, [chapterId]);
+
   // Flattened questions array
   const [questions, setQuestions] = useState([]);
 
@@ -166,11 +177,17 @@ export default function ZenkamokuPageViewer() {
       try {
         setLoading(true);
 
-        // Always fetch from Firestore
-        const docRef = doc(db, 'books', currentBookId, 'chapters', chapterId);
-        const snap = await getDoc(docRef);
-        if (snap.exists()) {
-          const chapterData = snap.data();
+        // Fetch from local JSON pattern instead of Firestore
+        let chapterData;
+        try {
+          if (currentBookId.includes('n2')) {
+            chapterData = (await import(`../data/zenkamoku_n2/${chapterId}.json`)).default;
+          } else {
+            chapterData = (await import(`../data/zenkamoku_n3/${chapterId}.json`)).default;
+          }
+        } catch(e) { console.error('Failed to load local JSON', e); }
+
+        if (chapterData) {
           setChapter(chapterData);
 
           // Flatten questions
@@ -187,11 +204,18 @@ export default function ZenkamokuPageViewer() {
       } catch (err) {
         console.error(err);
       } finally {
-        setLoading(false);
+        setDataLoaded(true);
       }
     };
     fetchData();
   }, [chapterId, currentBookId]);
+
+
+  useEffect(() => {
+    if (dataLoaded && stateLoaded) {
+      setLoading(false);
+    }
+  }, [dataLoaded, stateLoaded]);
 
   const renderContent = () => {
     if (loading) return <div className="pt-32"><LoadingSpinner /></div>;
@@ -232,8 +256,8 @@ export default function ZenkamokuPageViewer() {
             </p>
           )}
 
-          {chapter.sections ? (
-            chapter.sections.map((sec, secIdx) => (
+          {(chapter.sections || chapter.subSections) ? (
+            (chapter.sections || chapter.subSections).map((sec, secIdx) => (
               <div key={secIdx} className="mb-12">
                 {sec.title && (
                   <h3 className="text-xl font-bold mb-3 border-b-2 border-black dark:border-white pb-1 inline-block">
@@ -243,7 +267,7 @@ export default function ZenkamokuPageViewer() {
 
                 {sec.instruction && (
                   <p className="text-lg mb-6 leading-relaxed font-medium">
-                    {sec.instruction}
+                    <span dangerouslySetInnerHTML={{ __html: sec.instruction }} />
                   </p>
                 )}
 
@@ -261,15 +285,13 @@ export default function ZenkamokuPageViewer() {
                   <div className="mb-8 p-6 bg-amber-50/40 dark:bg-slate-800/60 border border-amber-200 dark:border-slate-700 rounded-lg text-lg leading-relaxed">
                     {sec.passageTitle && (
                       <h4 className="text-center font-bold text-xl mb-4 border-b pb-2 border-gray-300 dark:border-gray-600">
-                        {sec.passageTitle}
+                        <span dangerouslySetInnerHTML={{ __html: sec.passageTitle }} />
                       </h4>
                     )}
-                    <div className="whitespace-pre-line font-serif leading-loose">
-                      {sec.passage}
-                    </div>
+                    <div className="whitespace-pre-line font-serif leading-loose" dangerouslySetInnerHTML={{ __html: sec.passage }} />
                     {sec.passageNote && (
                       <div className="mt-4 pt-3 border-t border-gray-300 dark:border-gray-600 text-sm text-gray-600 dark:text-gray-400">
-                        {sec.passageNote}
+                        <span dangerouslySetInnerHTML={{ __html: sec.passageNote }} />
                       </div>
                     )}
                   </div>
@@ -493,9 +515,15 @@ function QuestionBlock({ q, qIdx, onAnswer, savedOption }) {
         </div>
       </div>
 
-      {q.options && q.options.length > 0 && (
+      {q.options && q.options.length > 0 && (() => {
+        const hasLongOptions = q.options.some(opt => {
+          const text = typeof opt === 'object' ? opt.text : opt;
+          return String(text || '').length > 25;
+        });
+        const gridClass = hasLongOptions ? 'grid-cols-1' : 'grid-cols-2 md:grid-cols-4';
+        return (
         <div className="ml-0 sm:ml-12 flex flex-col gap-2 mt-3 w-full">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 w-full">
+          <div className={`grid ${gridClass} gap-3 md:gap-4 w-full`}>
             {q.options.map((opt, optIdx) => {
               const optText = typeof opt === 'object' ? opt.text : opt;
               const isThisCorrect = optText === correctOptionText;
@@ -569,7 +597,7 @@ function QuestionBlock({ q, qIdx, onAnswer, savedOption }) {
             </div>
           )}
         </div>
-      )}
+      )})()}
     </div>
   );
 }

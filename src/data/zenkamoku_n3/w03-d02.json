@@ -1,0 +1,155 @@
+{
+  "bookId": "zenkamoku-n3-best-workbook",
+  "chapterId": "w03-d02",
+  "week": 3,
+  "day": 2,
+  "weekTitle": "第3週",
+  "dayTitle": "2日目",
+  "sectionTitle": "用法・文の組み立て",
+  "sectionTitleEn": "Usage & Sentence Composition",
+  "subSections": [
+    {
+      "type": "usage",
+      "title": "用法",
+      "titleEn": "Usage",
+      "pageRef": "p.38",
+      "instruction": "つぎのことばの使い方として最もよいものを、１・２・３・４から一つえらびなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "<ruby>欠点<rt>けってん</rt></ruby>",
+          "options": [
+            "1. テストに名前を書かないと、<u><ruby>欠点<rt>けってん</rt></ruby></u>になります。",
+            "2. 弟の<u><ruby>欠点<rt>けってん</rt></ruby></u>は人の話を聞かないところです。",
+            "3. 宿題を全部持ってきたつもりだったが、１つ<u><ruby>欠点<rt>けってん</rt></ruby></u>があった。",
+            "4. 今あの選手の<u><ruby>欠点<rt>けってん</rt></ruby></u>は、けがをしている右足だ。"
+          ],
+          "correct": 2,
+          "correctOption": "2. 弟の<u><ruby>欠点<rt>けってん</rt></ruby></u>は人の話を聞かないところです。"
+        },
+        {
+          "number": 2,
+          "stem": "くわしい",
+          "options": [
+            "1. 野菜は一度水で洗ってから、<u>くわしく</u>切ってください。",
+            "2. この時計はとても<u>くわしく</u>できていて、一度も遅れたことがない。",
+            "3. 自動販売機でジュースを買いたかったが、<u>くわしい</u>お金がなくて困った。",
+            "4. 昨日の会議の内容について、<u>くわしい</u>ことは彼に聞いてください。"
+          ],
+          "correct": 4,
+          "correctOption": "4. 昨日の会議の内容について、<u>くわしい</u>ことは彼に聞いてください。"
+        },
+        {
+          "number": 3,
+          "stem": "<ruby>出来事<rt>できごと</rt></ruby>",
+          "options": [
+            "1. 毎晩、寝る前に一日の<u><ruby>出来事<rt>できごと</rt></ruby></u>を日記に書いている。",
+            "2. 警察は事件の<u><ruby>出来事<rt>できごと</rt></ruby></u>を見た人に<u><ruby>出来事<rt>できごと</rt></ruby></u>を聞きました。",
+            "3. 兄の結婚や父の入院など今年は<u><ruby>出来事<rt>できごと</rt></ruby></u>ばかりの一年だった。",
+            "4. 息子にとって運動会は学校で一番好きな<u><ruby>出来事<rt>できごと</rt></ruby></u>です。"
+          ],
+          "correct": 1,
+          "correctOption": "1. 毎晩、寝る前に一日の<u><ruby>出来事<rt>できごと</rt></ruby></u>を日記に書いている。"
+        },
+        {
+          "number": 4,
+          "stem": "たたむ",
+          "options": [
+            "1. テストをしますから、教科書をたたんでください。",
+            "2. 昨日の会議の内容を短くたたんで報告してください。",
+            "3. 洗濯物が乾いたら、たたんでたんすにしまいましょう。",
+            "4. 台風が来そうなので、今日の授業は１時間たたんで終わります。"
+          ],
+          "correct": 3,
+          "correctOption": "3. 洗濯物が乾いたら、たたんでたんすにしまいましょう。"
+        },
+        {
+          "number": 5,
+          "stem": "<ruby>新鮮<rt>しんせん</rt></ruby>",
+          "options": [
+            "1. 今朝採ったばかりの<u><ruby>新鮮<rt>しんせん</rt></ruby></u>なトマトを食べた。",
+            "2. 子どもはみんな<u><ruby>新鮮<rt>しんせん</rt></ruby></u>な心を持っている。",
+            "3. 今年大学を卒業して入社した<u><ruby>新鮮<rt>しんせん</rt></ruby></u>な社員を紹介します。",
+            "4. <u><ruby>新鮮<rt>しんせん</rt></ruby></u>な子犬が母犬の横で眠っている。"
+          ],
+          "correct": 1,
+          "correctOption": "1. 今朝採ったばかりの<u><ruby>新鮮<rt>しんせん</rt></ruby></u>なトマトを食べた。"
+        }
+      ]
+    },
+    {
+      "type": "sentence_composition",
+      "title": "文の組み立て",
+      "titleEn": "Sentence composition",
+      "pageRef": "p.39",
+      "instruction": "つぎの文の ★ に入る最もよいものを、１・２・３・４から一つえらびなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "先輩がインフルエンザで休むということなので、先輩 ★ とリーダーになって会議の準備をします。",
+          "options": [
+            "1. が",
+            "2. にかわって",
+            "3. 私",
+            "4. リーダー"
+          ],
+          "correct": 1,
+          "correctOption": "1. が",
+          "starPosition": 3
+        },
+        {
+          "number": 2,
+          "stem": "私の会社では社員の ★ できる部屋が食堂の隣にある。",
+          "options": [
+            "1. ゲームや",
+            "2. 交流を",
+            "3. カラオケが",
+            "4. 目的として"
+          ],
+          "correct": 4,
+          "correctOption": "4. 目的として",
+          "starPosition": 1
+        },
+        {
+          "number": 3,
+          "stem": "この薬を飲むと ★ ようにしてください。",
+          "options": [
+            "1. 眠くなる",
+            "2. ので",
+            "3. 恐れがある",
+            "4. 運転はしない"
+          ],
+          "correct": 3,
+          "correctOption": "3. 恐れがある",
+          "starPosition": 2
+        },
+        {
+          "number": 4,
+          "stem": "父は最近、 ★ 「あっ、忘れた」と言うことが多くなった。",
+          "options": [
+            "1. かけて",
+            "2. つぽくて",
+            "3. 忘れ",
+            "4. 何か言い"
+          ],
+          "correct": 2,
+          "correctOption": "2. つぽくて",
+          "starPosition": 2
+        },
+        {
+          "number": 5,
+          "stem": "暖かい色がはやった去年の夏とは違い、今年はうすい ★ 服が人気だそうだ。",
+          "options": [
+            "1. 感じる色の",
+            "2. といった",
+            "3. 青や緑",
+            "4. 涼しさを"
+          ],
+          "correct": 3,
+          "correctOption": "3. 青や緑",
+          "starPosition": 1
+        }
+      ]
+    }
+  ]
+}

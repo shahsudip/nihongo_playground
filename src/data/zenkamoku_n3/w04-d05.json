@@ -1,0 +1,48 @@
+{
+  "bookId": "zenkamoku-n3-best-workbook",
+  "chapterId": "w04-d05",
+  "week": 4,
+  "day": 5,
+  "weekTitle": "第4週",
+  "dayTitle": "5日目",
+  "subSections": [
+    {
+      "type": "grammar_form",
+      "title": "文法形式の判断",
+      "titleEn": "Selecting grammar form",
+      "pageRef": "pp.62–63",
+      "instruction": "つぎの文の（　）に入れるのに最もよいものを、１・２・３・４から一つえらびなさい。",
+      "questions": [
+        { "number": 1, "stem": "先生はスポーツ大会（　）説明しました。", "options": ["にとって", "といえば", "について", "といい"], "correct": 3, "correctOption": "について" },
+        { "number": 2, "stem": "結婚する（　）、親切でおもしろい人がいい。", "options": ["ばかりに", "ため", "ように", "なら"], "correct": 4, "correctOption": "なら" },
+        { "number": 3, "stem": "会議に<ruby>遅<rt>おく</rt></ruby>れてしまったと思った。（　）、まだ<ruby>誰<rt>だれ</rt></ruby>も来ていなかった。", "options": ["そこで", "ところが", "それから", "ところで"], "correct": 2, "correctOption": "ところが" },
+        { "number": 4, "stem": "<ruby>天野<rt>あまの</rt></ruby>「明日、<ruby>澤木<rt>さわき</rt></ruby>さんは忙しくて来られないそうですよ。」<br><ruby>福島<rt>ふくしま</rt></ruby>「<ruby>残念<rt>ざんねん</rt></ruby>ですね。<ruby>澤木<rt>さわき</rt></ruby>さんも（　）いいのに。」", "options": ["来ても", "来なくても", "来られれば", "来なければ"], "correct": 3, "correctOption": "来られれば" },
+        { "number": 5, "stem": "（旅行先で）<br>ガイド「昨<ruby>夜<rt>さくや</rt></ruby>はよく（　）か。」<br><ruby>客<rt>きゃく</rt></ruby>「ええ、おかげさまでよく眠れました。」", "options": ["お休みいたしました", "お休みになれました", "お休みされました", "お休みはとれました"], "correct": 2, "correctOption": "お休みになれました" },
+        { "number": 6, "stem": "<ruby>昨日<rt>きのう</rt></ruby>、私は遊びに行きたかったのに、母に妹の<ruby>世話<rt>せわ</rt></ruby>を（　）。", "options": ["しました", "されました", "させました", "させられました"], "correct": 4, "correctOption": "させられました" },
+        { "number": 7, "stem": "<ruby>妻<rt>つま</rt></ruby>「ねえ、そこの<ruby>窓<rt>まど</rt></ruby>を閉めてよ。寒いよ。」<br><ruby>夫<rt>おっと</rt></ruby>「さっき、タバコを<ruby>吸<rt>す</rt></ruby>ったから、（　）あるんだよ。」", "options": ["開いて", "開けて", "閉めて", "閉まって"], "correct": 2, "correctOption": "開けて" },
+        { "number": 8, "stem": "<ruby>寿司<rt>すし</rt></ruby>は（　）、世界中で食べられている。", "options": ["日本において", "日本によって", "日本をはじめ", "日本を通して"], "correct": 3, "correctOption": "日本をはじめ" },
+        { "number": 9, "stem": "去年<ruby>落<rt>お</rt></ruby>ちてしまったJLPTのN3に今年（　）<ruby>合格<rt>ごうかく</rt></ruby>したいので、毎日がんばって勉強しています。", "options": ["だけ", "さえ", "から", "こそ"], "correct": 4, "correctOption": "こそ" },
+        { "number": 10, "stem": "（うちで）<br><ruby>三吉<rt>みよし</rt></ruby>「どうぞ<ruby>遠慮<rt>えんりょ</rt></ruby>しないで（　）ください。」<br><ruby>渡部<rt>わたべ</rt></ruby>「ありがとうございます。では、サラダからいただきます。」", "options": ["いただいて", "ちょうだいして", "<ruby>召<rt>め</rt></ruby>し<ruby>上<rt>あ</rt></ruby>がって", "<ruby>差<rt>さ</rt></ruby>し<ruby>上<rt>あ</rt></ruby>げて"], "correct": 3, "correctOption": "<ruby>召<rt>め</rt></ruby>し<ruby>上<rt>あ</rt></ruby>がって" },
+        { "number": 11, "stem": "サッカーのルールを<ruby>全然<rt>ぜんぜん</rt></ruby>知らなかったが、試合を（　）だんだんわかってきた。", "options": ["見ようとしたら", "見ているうちに", "見たとたんに", "見るついでに"], "correct": 2, "correctOption": "見ているうちに" },
+        { "number": 12, "stem": "（待ち合わせ場所で）<br><ruby>石井<rt>いしい</rt></ruby>「まだ、出発しないんですか。」<br><ruby>岡田<rt>おかだ</rt></ruby>「全員（　）出発しますので、もうしばらくお待ちください。」", "options": ["集まると", "集まりしだい", "集まるかどうか", "集まったようで"], "correct": 2, "correctOption": "集まりしだい" },
+        { "number": 13, "stem": "明日の<ruby>遠足<rt>えんそく</rt></ruby>では飲み物が配られますから、自分で（　）。", "options": ["持っていこうと思っています", "持っていくことになっています", "持っていくことはありません", "持っていくつもりです"], "correct": 3, "correctOption": "持っていくことはありません" }
+      ]
+    },
+    {
+      "type": "text_grammar",
+      "title": "文章の文法",
+      "titleEn": "Text grammar",
+      "pageRef": "pp.64–65",
+      "instruction": "つぎの文章を読んで、文章全体の内容を考えて、［１］から［５］の中に入る最もよいものを、１・２・３・４から一つえらびなさい。",
+      "passageTitle": "日本に来て<ruby>驚<rt>おどろ</rt></ruby>いたこと",
+      "passage": "下の文章は、留学生が書いた作文です。\n\nファルホド　ジョン\n\n　私は日本に来て<ruby>驚<rt>おどろ</rt></ruby>いたことがたくさんあります。<ruby>例<rt>たと</rt></ruby>えば、レストランやコンビニに入ると店員さんが「いらっしゃいませ」と言って<ruby>笑顔<rt>えがお</rt></ruby>で<ruby>迎<rt>むか</rt></ruby>えてくれることです。はじめて「いらっしゃいませ」と言われたときは、なんと言って返事をすればいいのかわからなくて、日本語学校の先生に返事の<ruby>仕方<rt>しかた</rt></ruby>を聞きました。先生は、「あなたは<ruby>お客<rt>きゃく</rt></ruby>さんだから特に［１］」と教えてくださいましたが、私はそれでは何だか店員さんに悪いような気がして、いつも心の中で「はい」と返事をしています。\n\n　また、お知らせや<ruby>看板<rt>かんばん</rt></ruby>などにキャラクターなどの絵が多く［２］ことにも<ruby>驚<rt>おどろ</rt></ruby>きました。これは、子どもだけでなく、外国人の私たちにもわかりやすいです。［３］、<ruby>親<rt>した</rt></ruby>しみを感じられるのでとてもいいと思います。<ruby>例<rt>たと</rt></ruby>えば、工事の音がうるさいと思っていらいらしても、おじぎをしたキャラクターの絵と<ruby>一緒<rt>いっしょ</rt></ruby>に「ご<ruby>迷惑<rt>めいわく</rt></ruby>をおかけしております」と書かれた<ruby>看板<rt>かんばん</rt></ruby>を見ると、なぜか［４］。このようなことは、きっと日本に来なければ、経験することが［５］。\n\n　日本にはまだまだ私の知らないことがありますから、もっともっと日本について知りたいと思っています。",
+      "questions": [
+        { "number": 1, "stem": "文章中の［１］に入るものをえらびなさい。", "options": ["何か言わなければならない", "何も言わなくていい", "何か言ったかもしれない", "何も言っていないのならいい"], "correct": 2, "correctOption": "何も言わなくていい" },
+        { "number": 2, "stem": "文章中の［２］に入るものをえらびなさい。", "options": ["使う", "使った", "使われている", "使っている"], "correct": 3, "correctOption": "使われている" },
+        { "number": 3, "stem": "文章中の［３］に入るものをえらびなさい。", "options": ["つまり", "それに", "そこで", "一方"], "correct": 2, "correctOption": "それに" },
+        { "number": 4, "stem": "文章中の［４］に入るものをえらびなさい。", "options": ["<ruby>優<rt>やさ</rt></ruby>しくしたがります", "<ruby>優<rt>やさ</rt></ruby>しい気持ちになれません", "<ruby>優<rt>やさ</rt></ruby>しくされます", "<ruby>優<rt>やさ</rt></ruby>しい気持ちになります"], "correct": 4, "correctOption": "<ruby>優<rt>やさ</rt></ruby>しい気持ちになります" },
+        { "number": 5, "stem": "文章中の［５］に入るものをえらびなさい。", "options": ["できたのです", "できなかったわけではありません", "できるところでした", "できなかったはずです"], "correct": 4, "correctOption": "できなかったはずです" }
+      ]
+    }
+  ]
+}

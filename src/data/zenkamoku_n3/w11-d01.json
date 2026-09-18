@@ -1,0 +1,126 @@
+{
+  "bookId": "zenkamoku-n3-best-workbook",
+  "chapterId": "w11-d01",
+  "week": 11,
+  "day": 1,
+  "weekTitle": "第11週",
+  "dayTitle": "1日目",
+  "subSections": [
+    {
+      "type": "summary_comprehension",
+      "title": "概要理解",
+      "titleEn": "Summary comprehension",
+      "pageRef": "p.162",
+      "instruction": "問題用紙に何もいんさつされていません。この問題は、ぜんたいとしてどんなないようかを聞く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問とせんたくしを聞いて、1から4の中から、最もよいものを一つえらんでください。",
+      "questions": [
+        {
+          "number": 1,
+          "trackId": "N3-71",
+          "audioSrc": "/audio/zenkamoku_n3/N3-71.mp3",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "script": "女：昔むかしから、人ひとは緑みどり色いろを見みると落おち着つくと言いわれています。実じっ際さいに植しょく物ぶつを部へ屋やに置おくだけで、いらいらすることが減へったという研けん究きゅうデータもあります。"
+        },
+        {
+          "number": 2,
+          "trackId": "N3-72",
+          "audioSrc": "/audio/zenkamoku_n3/N3-72.mp3",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "script": "男：ここでの様さま々ざまな出で来き事ごとは、私わたしをさらに強つよく、大おおきく育そだててくれました。"
+        },
+        {
+          "number": 3,
+          "trackId": "N3-73",
+          "audioSrc": "/audio/zenkamoku_n3/N3-73.mp3",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctOption": "4",
+          "script": "一いち時じ的てきな愛あい情じょうではいけません。最さい期ごまで面めん倒どうをみる自じ信しんがない人ひとはペットを飼かうべきではないのです。"
+        }
+      ]
+    },
+    {
+      "type": "utterance_expression",
+      "title": "発話表現",
+      "titleEn": "Utterance expressions",
+      "pageRef": "pp.162-163",
+      "instruction": "えを見ながら質問を聞いてください。やじるし（➡）の人は何と言いますか。1から3の中から、最もよいものを一つえらんでください。",
+      "questions": [
+        {
+          "number": 1,
+          "trackId": "N3-74",
+          "audioSrc": "/audio/zenkamoku_n3/N3-74.mp3",
+          "imageSrc": "/images/zenkamoku_n3/w11_d1_q1.jpg",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "script": "今、お時じ間かんよろしいでしょうか。：Do you have some time to talk now?"
+        },
+        {
+          "number": 2,
+          "trackId": "N3-75",
+          "audioSrc": "/audio/zenkamoku_n3/N3-75.mp3",
+          "imageSrc": "/images/zenkamoku_n3/w11_d1_q2.jpg",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "script": "やむまでここで待またせていただけませんか。：Could you let me wait here until the rain stops?"
+        },
+        {
+          "number": 3,
+          "trackId": "N3-76",
+          "audioSrc": "/audio/zenkamoku_n3/N3-76.mp3",
+          "imageSrc": "/images/zenkamoku_n3/w11_d1_q3.jpg",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "script": "もう少すこし静しずかにしてもらえますか。：Could you quiet down some?"
+        },
+        {
+          "number": 4,
+          "trackId": "N3-77",
+          "audioSrc": "/audio/zenkamoku_n3/N3-77.mp3",
+          "imageSrc": "/images/zenkamoku_n3/w11_d1_q4.jpg",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "script": "すみません、部ぶ長ちょうはいつお戻もどりになりますか。：Excuse me, but when will the department manager return?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "bookId": "zenkamoku-n3-best-workbook",
+  "chapterId": "w03-d04",
+  "week": 3,
+  "day": 4,
+  "weekTitle": "第3週",
+  "dayTitle": "4日目",
+  "sectionTitle": "用法・文の組み立て",
+  "sectionTitleEn": "Usage & Sentence Composition",
+  "subSections": [
+    {
+      "type": "usage",
+      "title": "用法",
+      "titleEn": "Usage",
+      "pageRef": "p.42",
+      "instruction": "つぎのことばの使い方として最もよいものを、１・２・３・４から一つえらびなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "<ruby>楽<rt>らく</rt></ruby>",
+          "options": [
+            "1. このスポーツはルールが<u><ruby>楽<rt>らく</rt></ruby></u>で誰でも<u><ruby>楽<rt>らく</rt></ruby></u>しめる。",
+            "2. 今朝は時間がなかったので、<u><ruby>楽<rt>らく</rt></ruby></u>なご飯を食べました。",
+            "3. カラオケとかピクニックとか、何か<u><ruby>楽<rt>らく</rt></ruby></u>なことをしたい。",
+            "4. 洗濯機や掃除機が発明され、家事が<u><ruby>楽<rt>らく</rt></ruby></u>になった。"
+          ],
+          "correct": 4,
+          "correctOption": "4. 洗濯機や掃除機が発明され、家事が<u><ruby>楽<rt>らく</rt></ruby></u>になった。"
+        },
+        {
+          "number": 2,
+          "stem": "<ruby>出張<rt>しゅっちょう</rt></ruby>",
+          "options": [
+            "1. 来週、部長と一緒に大阪支社へ<u><ruby>出張<rt>しゅっちょう</rt></ruby></u>することになった。",
+            "2. 今年の夏休みは家族で北海道に<u><ruby>出張<rt>しゅっちょう</rt></ruby></u>するつもりだ。",
+            "3. あの店は電話をすると、30分以内に料理を<u><ruby>出張<rt>しゅっちょう</rt></ruby></u>してくれる。",
+            "4. 私はいつも同じ時間に会社に<u><ruby>出張<rt>しゅっちょう</rt></ruby></u>して、同じ時間に帰る。"
+          ],
+          "correct": 1,
+          "correctOption": "1. 来週、部長と一緒に大阪支社へ<u><ruby>出張<rt>しゅっちょう</rt></ruby></u>することになった。"
+        },
+        {
+          "number": 3,
+          "stem": "けずる",
+          "options": [
+            "1. 服についたケチャップを洗剤で<u>けずった</u>。",
+            "2. 体重を<u>けずる</u>ためにマラソンを始めた。",
+            "3. このナイフでえんぴつを<u>けずって</u>ください。",
+            "4. 間違いは消しゴムで<u>けずって</u>きれいに書き直そう。"
+          ],
+          "correct": 3,
+          "correctOption": "3. このナイフでえんぴつを<u>けずって</u>ください。"
+        },
+        {
+          "number": 4,
+          "stem": "<ruby>重大<rt>じゅうだい</rt></ruby>",
+          "options": [
+            "1. あの人は30年この会社に勤めている<u><ruby>重大<rt>じゅうだい</rt></ruby></u>な人だ。",
+            "2. パスポートなど<u><ruby>重大<rt>じゅうだい</rt></ruby></u>な物はここにしまってください。",
+            "3. 昨日、仕事で<u><ruby>重大<rt>じゅうだい</rt></ruby></u>なミスをしてしまった。",
+            "4. 今朝、<u><ruby>重大<rt>じゅうだい</rt></ruby></u>な地震で電車が止まった。"
+          ],
+          "correct": 3,
+          "correctOption": "3. 昨日、仕事で<u><ruby>重大<rt>じゅうだい</rt></ruby></u>なミスをしてしまった。"
+        },
+        {
+          "number": 5,
+          "stem": "<ruby>配る<rt>くばる</rt></ruby>",
+          "options": [
+            "1. 夏休みに帰国して買ったお土産を、クラスのみんなに<u>配った</u>。",
+            "2. 近所の人の手紙がうちのポストに入っていたので、郵便局に<u>配った</u>。",
+            "3. 新しい部屋に引っ越して、ベッドを壁側に、机を窓の近くに<u>配った</u>。",
+            "4. 昨日の宿題をクラスメートから集めて、村井先生に<u>配った</u>。"
+          ],
+          "correct": 1,
+          "correctOption": "1. 夏休みに帰国して買ったお土産を、クラスのみんなに<u>配った</u>。"
+        }
+      ]
+    },
+    {
+      "type": "sentence_composition",
+      "title": "文の組み立て",
+      "titleEn": "Sentence composition",
+      "pageRef": "p.43",
+      "instruction": "つぎの文の ★ に入る最もよいものを、１・２・３・４から一つえらびなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "ピアノは一生懸命 ★ なると思います。",
+          "options": [
+            "1. ほど",
+            "2. 上手に",
+            "3. 練習する",
+            "4. 練習すれば"
+          ],
+          "correct": 3,
+          "correctOption": "3. 練習する",
+          "starPosition": 2
+        },
+        {
+          "number": 2,
+          "stem": "大切な ★ ことはできません。",
+          "options": [
+            "1. 対して",
+            "2. 友達に",
+            "3. つく",
+            "4. うそを"
+          ],
+          "correct": 4,
+          "correctOption": "4. うそを",
+          "starPosition": 2
+        },
+        {
+          "number": 3,
+          "stem": "夜中に家の ★ 目が覚めてしまった。",
+          "options": [
+            "1. 大きな",
+            "2. して",
+            "3. 近くで",
+            "4. 音が"
+          ],
+          "correct": 3,
+          "correctOption": "3. 近くで",
+          "starPosition": 3
+        },
+        {
+          "number": 4,
+          "stem": "娘が ★ 学校から帰ってきた。",
+          "options": [
+            "1. 顔を",
+            "2. 泣きそうな",
+            "3. 今にも",
+            "4. して"
+          ],
+          "correct": 1,
+          "correctOption": "1. 顔を",
+          "starPosition": 2
+        },
+        {
+          "number": 5,
+          "stem": "このレストランは人気で、 ★ ことができない。",
+          "options": [
+            "1. 店に入る",
+            "2. からでない",
+            "3. 予約して",
+            "4. と"
+          ],
+          "correct": 2,
+          "correctOption": "2. からでない",
+          "starPosition": 3
+        }
+      ]
+    }
+  ]
+}

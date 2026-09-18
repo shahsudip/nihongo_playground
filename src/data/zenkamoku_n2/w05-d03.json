@@ -1,0 +1,123 @@
+{
+  "bookId": "zenkamoku-n2-best-workbook",
+  "chapterId": "w05-d03",
+  "week": 5,
+  "day": 3,
+  "weekTitle": "第5週",
+  "dayTitle": "3日目",
+  "sectionTitle": "内容理解（短文）",
+  "sectionTitleEn": "Comprehension (Short passages)",
+  "instruction": "次の(1)から(5)の文章を読んで、後の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。",
+  "sections": [
+    {
+      "type": "short_passage",
+      "title": "内容理解（短文） (1)",
+      "titleEn": "Short Passage (1)",
+      "imageSrc": "/images/zenkamoku_n2/w05_d03_p1.png",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "その企業とあるが、どんな企業か",
+          "imageSrc": "/images/zenkamoku_n2/w05_d03_p1.png",
+          "options": [
+            "1. 人々のために役立つものを作り出している業",
+            "2. 意味のある商品やサービスを提供する企業",
+            "3. 他の企業と比べて成功しているように見える企業",
+            "4. 社会の声に耳を傾けて、その要求にこたえる業"
+          ],
+          "correct": 2,
+          "correctOption": "2. 意味のある商品やサービスを提供する企業",
+          "explanation": "<b>【正解】2. 意味のある商品やサービスを提供する企業</b><br/>「提供するモノやサービスにどれだけ意味をもたせられるかを考えるべき」とあり、2が正解です。"
+        }
+      ]
+    },
+    {
+      "type": "short_passage",
+      "title": "内容理解（短文） (2)",
+      "titleEn": "Short Passage (2)",
+      "imageSrc": "/images/zenkamoku_n2/w05_d03_p2.png",
+      "questions": [
+        {
+          "number": 2,
+          "stem": "本文中のアリについて正しいものはどれか",
+          "imageSrc": "/images/zenkamoku_n2/w05_d03_p2.png",
+          "options": [
+            "1. 糖分以外の栄養を「アリ植物」から得ている。",
+            "2. 毛虫に襲われることがある。",
+            "3. 植物の上でしか生きられない。",
+            "4. 「アリ植物」の枝の中に住んでいる。"
+          ],
+          "correct": 4,
+          "correctOption": "4. 「アリ植物」の枝の中に住んでいる。",
+          "explanation": "<b>【正解】4. 「アリ植物」の枝の中に住んでいる。</b><br/>アリ植物の枝の中に住み、アリ植物を守っていることから、4が正解です。"
+        }
+      ]
+    },
+    {
+      "type": "short_passage",
+      "title": "内容理解（短文） (3)",
+      "titleEn": "Short Passage (3)",
+      "imageSrc": "/images/zenkamoku_n2/w05_d03_p3.png",
+      "questions": [
+        {
+          "number": 3,
+          "stem": "筆者の考えに合うのはどれか",
+          "imageSrc": "/images/zenkamoku_n2/w05_d03_p3.png",
+          "options": [
+            "1. どんなときでも、好き嫌いの感情に従うべきだ。",
+            "2. 好き嫌いの感情を抑えないことで自然と人生は楽しくなってくる。",
+            "3. 自分の行動をコントロールできない人は立派だとは言えない。",
+            "4. 好き嫌いの感情を抑えることが常に正しいわけではない。"
+          ],
+          "correct": 4,
+          "correctOption": "4. 好き嫌いの感情を抑えることが常に正しいわけではない。",
+          "explanation": "<b>【正解】4. 好き嫌いの感情を抑えることが常に正しいわけではない。</b><br/>感情を抑えることが常に正解ではないと述べているため、4が正解です。"
+        }
+      ]
+    },
+    {
+      "type": "short_passage",
+      "title": "内容理解（短文） (4)",
+      "titleEn": "Short Passage (4)",
+      "imageSrc": "/images/zenkamoku_n2/w05_d03_p4.png",
+      "questions": [
+        {
+          "number": 4,
+          "stem": "この議論とはどんな議論か",
+          "imageSrc": "/images/zenkamoku_n2/w05_d03_p4.png",
+          "options": [
+            "1. ゲームの芸術性をどう高めるかという議論",
+            "2. ゲームは芸術のひとつなのかという議論",
+            "3. ゲームで芸術を教えられるのかという議論",
+            "4. 何をもって芸術として認めるのかという議論"
+          ],
+          "correct": 2,
+          "correctOption": "2. ゲームは芸術のひとつなのかという議論",
+          "explanation": "<b>【正解】2. ゲームは芸術のひとつなのかという議論</b><br/>ゲームが芸術のひとつとして認められるかという議論について述べているため、2が正解です。"
+        }
+      ]
+    },
+    {
+      "type": "short_passage",
+      "title": "内容理解（短文） (5)",
+      "titleEn": "Short Passage (5)",
+      "imageSrc": "/images/zenkamoku_n2/w05_d03_p5.png",
+      "questions": [
+        {
+          "number": 5,
+          "stem": "このお知らせからわかることは何か。",
+          "imageSrc": "/images/zenkamoku_n2/w05_d03_p5.png",
+          "options": [
+            "1. 利用料金が請求されること",
+            "2. 10月分の請求料金",
+            "3. 契約内容が変更されること",
+            "4. 新しいプランの内容"
+          ],
+          "correct": 1,
+          "correctOption": "1. 利用料金が請求されること",
+          "explanation": "<b>【正解】1. 利用料金が請求されること</b><br/>クレジットカード会社から利用料金が請求されることを知らせているため、1が正解です。"
+        }
+      ]
+    }
+  ]
+}

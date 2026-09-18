@@ -1,0 +1,126 @@
+{
+  "bookId": "zenkamoku-n3-best-workbook",
+  "chapterId": "w11-d05",
+  "week": 11,
+  "day": 5,
+  "weekTitle": "第11週",
+  "dayTitle": "5日目",
+  "subSections": [
+    {
+      "type": "summary_comprehension",
+      "title": "概要理解",
+      "titleEn": "Summary comprehension",
+      "pageRef": "p.170",
+      "instruction": "問題用紙に何もいんさつされていません。この問題は、ぜんたいとしてどんなないようかを聞く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問とせんたくしを聞いて、1から4の中から、最もよいものを一つえらんでください。",
+      "questions": [
+        {
+          "number": 1,
+          "trackId": "N3-99",
+          "audioSrc": "/audio/zenkamoku_n3/N3-99.mp3",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "script": "男おとこは大おお雨あめで安あん全ぜんなところに避ひ難なんする場ば合あいについて、長なが靴ぐつは、「水みずが長なが靴ぐつの中なかに入はいって重おもくなり、歩あるきにくくなってしまうから」危き険けんだと言いっている。それから、サンダルも「瓶びんや缶かん、石いしなどを踏ふんでけがをする恐おそれがあるから」だめだと言いっている。「また、水みずの中なかには危き険けんなものが落おちていたり、急きゅうに深ふかくなっていたりすることがあります。」と言いって、避ひ難なん時じの注ちゅう意い点てんを述のべている。"
+        },
+        {
+          "number": 2,
+          "trackId": "N3-100",
+          "audioSrc": "/audio/zenkamoku_n3/N3-100.mp3",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "script": "男：少すくない量りょうでは売うっていないから、子こどもがたくさんいるような家か庭てい向むきらしいよ。僕ぼくたちが買かうと食たべ切きれなくてもったいないかな。／あまり買かいすぎないでね。しまう場ば所しょも少すくないんだから。"
+        },
+        {
+          "number": 3,
+          "trackId": "N3-101",
+          "audioSrc": "/audio/zenkamoku_n3/N3-101.mp3",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctOption": "4",
+          "script": "時とき、父ちちが海うみに連つれて行いってくれて、そこでイルカと一いっ緒しょに泳およいだんです。」「させられているのではなくて、させてもらっているって思おもえるようになってからは、水すい泳えいの練れん習しゅうが楽たのしくなりました。」"
+        }
+      ]
+    },
+    {
+      "type": "utterance_expression",
+      "title": "発話表現",
+      "titleEn": "Utterance expressions",
+      "pageRef": "pp.170-171",
+      "instruction": "えを見ながら質問を聞いてください。やじるし（➡）の人は何と言いますか。1から3の中から、最もよいものを一つえらんでください。",
+      "questions": [
+        {
+          "number": 1,
+          "trackId": "N3-102",
+          "audioSrc": "/audio/zenkamoku_n3/N3-102.mp3",
+          "imageSrc": "/images/zenkamoku_n3/w11_d5_q1.jpg",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "script": "検けん査さしましょう。：Let’s test it."
+        },
+        {
+          "number": 2,
+          "trackId": "N3-103",
+          "audioSrc": "/audio/zenkamoku_n3/N3-103.mp3",
+          "imageSrc": "/images/zenkamoku_n3/w11_d5_q2.jpg",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "script": "すみません。インタビューよろしいでしょうか。：Excuse me. May I interview you?"
+        },
+        {
+          "number": 3,
+          "trackId": "N3-104",
+          "audioSrc": "/audio/zenkamoku_n3/N3-104.mp3",
+          "imageSrc": "/images/zenkamoku_n3/w11_d5_q3.jpg",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "script": "このとおりに書かいてみて。：Try writing it like this."
+        },
+        {
+          "number": 4,
+          "trackId": "N3-105",
+          "audioSrc": "/audio/zenkamoku_n3/N3-105.mp3",
+          "imageSrc": "/images/zenkamoku_n3/w11_d5_q4.jpg",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "script": "ここに置おいたはずなんだけど、知しらない？：I’m surethat I put them here. Do you know where they are?"
+        }
+      ]
+    }
+  ]
+}

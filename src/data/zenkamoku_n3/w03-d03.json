@@ -1,0 +1,155 @@
+{
+  "bookId": "zenkamoku-n3-best-workbook",
+  "chapterId": "w03-d03",
+  "week": 3,
+  "day": 3,
+  "weekTitle": "第3週",
+  "dayTitle": "3日目",
+  "sectionTitle": "用法・文の組み立て",
+  "sectionTitleEn": "Usage & Sentence Composition",
+  "subSections": [
+    {
+      "type": "usage",
+      "title": "用法",
+      "titleEn": "Usage",
+      "pageRef": "p.40",
+      "instruction": "つぎのことばの使い方として最もよいものを、１・２・３・４から一つえらびなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "<ruby>育てる<rt>そだてる</rt></ruby>",
+          "options": [
+            "1. 私が<u>育てた</u>野菜を料理して、家族みんなで食べました。",
+            "2. 悪い関係を<u>育てない</u>ように、恋人とはなんでも話し合います。",
+            "3. このビルを<u><ruby>育てる<rt>そだてる</rt></ruby></u>のに、１億円以上かかりました。",
+            "4. 看護師は病気の人を<u><ruby>育てる<rt>そだてる</rt></ruby></u>仕事です。"
+          ],
+          "correct": 1,
+          "correctOption": "1. 私が<u>育てた</u>野菜を料理して、家族みんなで食べました。"
+        },
+        {
+          "number": 2,
+          "stem": "<ruby>穏やか<rt>おだやか</rt></ruby>",
+          "options": [
+            "1. このホテルは部屋が<u><ruby>穏やか<rt>おだやか</rt></ruby></u>なのでリラックスできる。",
+            "2. 春になって庭の花が<u><ruby>穏やか<rt>おだやか</rt></ruby></u>に咲き始めた。",
+            "3. 仕事が終わったし、<u><ruby>穏やか<rt>おだやか</rt></ruby></u>なお茶を飲んで休憩しましょう。",
+            "4. 今日の海は波が少なくて<u><ruby>穏やか<rt>おだやか</rt></ruby></u>なので、泳ぐことができますよ。"
+          ],
+          "correct": 4,
+          "correctOption": "4. 今日の海は波が少なくて<u><ruby>穏やか<rt>おだやか</rt></ruby></u>なので、泳ぐことができますよ。"
+        },
+        {
+          "number": 3,
+          "stem": "<ruby>生産<rt>せいさん</rt></ruby>",
+          "options": [
+            "1. この工場ではテレビを<u><ruby>生産<rt>せいさん</rt></ruby></u>している。",
+            "2. ５月に二人目の子どもを<u><ruby>生産<rt>せいさん</rt></ruby></u>しました。",
+            "3. 有名な作家が新しい本を<u><ruby>生産<rt>せいさん</rt></ruby></u>した。",
+            "4. 母がすてきなシャツを<u><ruby>生産<rt>せいさん</rt></ruby></u>してくれました。"
+          ],
+          "correct": 1,
+          "correctOption": "1. この工場ではテレビを<u><ruby>生産<rt>せいさん</rt></ruby></u>している。"
+        },
+        {
+          "number": 4,
+          "stem": "<ruby>結論<rt>けつろん</rt></ruby>",
+          "options": [
+            "1. そろそろ<u><ruby>結論<rt>けつろん</rt></ruby></u>しなければ、先生に叱られてしまいます。",
+            "2. ずっと考えているが、この問題はなかなか<u><ruby>結論<rt>けつろん</rt></ruby></u>が出ない。",
+            "3. 合格でも不合格でも、入学試験の<u><ruby>結論<rt>けつろん</rt></ruby></u>が出たら、すぐ報告します。",
+            "4. <u><ruby>結論<rt>けつろん</rt></ruby></u>を見ながら数学の宿題をするなんて、だめですよ。"
+          ],
+          "correct": 2,
+          "correctOption": "2. ずっと考えているが、この問題はなかなか<u><ruby>結論<rt>けつろん</rt></ruby></u>が出ない。"
+        },
+        {
+          "number": 5,
+          "stem": "<ruby>雇う<rt>やとう</rt></ruby>",
+          "options": [
+            "1. 新しいパソコンを雇って、仕事が早くなりました。",
+            "2. 大学を卒業したら、有名な会社に雇いたいです。",
+            "3. 店が忙しくなってきたので、アルバイトを雇った。",
+            "4. 気に入ったので、若い画家の作品を雇いました。"
+          ],
+          "correct": 3,
+          "correctOption": "3. 店が忙しくなってきたので、アルバイトを雇った。"
+        }
+      ]
+    },
+    {
+      "type": "sentence_composition",
+      "title": "文の組み立て",
+      "titleEn": "Sentence composition",
+      "pageRef": "p.41",
+      "instruction": "つぎの文の ★ に入る最もよいものを、１・２・３・４から一つえらびなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "ご飯を ★ おいてください。",
+          "options": [
+            "1. 終わったら",
+            "2. 食べ",
+            "3. 洗って",
+            "4. お皿を"
+          ],
+          "correct": 1,
+          "correctOption": "1. 終わったら",
+          "starPosition": 2
+        },
+        {
+          "number": 2,
+          "stem": "私は彼 ★ から、留学するのが不安なんです。",
+          "options": [
+            "1. 英語が",
+            "2. ではない",
+            "3. 上手",
+            "4. ほど"
+          ],
+          "correct": 3,
+          "correctOption": "3. 上手",
+          "starPosition": 3
+        },
+        {
+          "number": 3,
+          "stem": "「松井さんは連休中、何をしましたか。」松井「いつも仕事が大変で ★ いたよ。」",
+          "options": [
+            "1. いるから",
+            "2. 疲れて",
+            "3. ばかり",
+            "4. 寝て"
+          ],
+          "correct": 4,
+          "correctOption": "4. 寝て",
+          "starPosition": 3
+        },
+        {
+          "number": 4,
+          "stem": "お酒を飲んでもいい ★ 違うので、海外旅行をするときは気をつけたほうがいい。",
+          "options": [
+            "1. 年齢",
+            "2. 国",
+            "3. は",
+            "4. によって"
+          ],
+          "correct": 2,
+          "correctOption": "2. 国",
+          "starPosition": 3
+        },
+        {
+          "number": 5,
+          "stem": "あとで ★ きてくれませんか。",
+          "options": [
+            "1. 手紙を出して",
+            "2. 買い物に行く",
+            "3. さっき書いた",
+            "4. ついでに"
+          ],
+          "correct": 4,
+          "correctOption": "4. ついでに",
+          "starPosition": 2
+        }
+      ]
+    }
+  ]
+}

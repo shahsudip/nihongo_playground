@@ -1,0 +1,234 @@
+{
+  "bookId": "zenkamoku-n2-best-workbook",
+  "chapterId": "w01-d03",
+  "week": 1,
+  "day": 3,
+  "weekTitle": "第1週",
+  "dayTitle": "3日目",
+  "sectionTitle": "漢字読み・表記・語形成",
+  "sectionTitleEn": "Kanji Reading, Orthography & Word Formation",
+  "sections": [
+    {
+      "type": "kanji_reading",
+      "title": "漢字読み",
+      "titleEn": "Kanji reading",
+      "pageRef": "p.20",
+      "instruction": "＿＿の言葉の読み方として最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "黒い雲が出てきて、<u>急激に</u>天候が悪化した。",
+          "options": [
+            "1. きゅうけき",
+            "2. きゅうげき",
+            "3. きっけき",
+            "4. きっげき"
+          ],
+          "correct": 2,
+          "correctOption": "2. きゅうげき",
+          "explanation": "<b>【正解】2. きゅうげき</b><br/><ruby>急<rt>きゅう</rt></ruby><ruby>激<rt>げき</rt></ruby>(な)：変化や動きが急で、激しい様子 急剧的<br/>【急】キュウ・いそ-ぐ<br/>【激】ゲキ・はげ-しい"
+        },
+        {
+          "number": 2,
+          "stem": "いつか<u>砂漠</u>を旅してみたいです。",
+          "options": [
+            "1. じゃまく",
+            "2. じゃばく",
+            "3. さまく",
+            "4. さばく"
+          ],
+          "correct": 4,
+          "correctOption": "4. さばく",
+          "explanation": "<b>【正解】4. さばく</b><br/><ruby>砂<rt>さ</rt></ruby><ruby>漠<rt>ばく</rt></ruby>：雨があまり降らないので植物が育たず、岩、石、<br/>砂ばかりの地域 沙漠<br/>【砂】サ・すな<br/>【漠】バク"
+        },
+        {
+          "number": 3,
+          "stem": "容器の<u>底</u>に汚れが付いています。",
+          "options": [
+            "1. そこ",
+            "2. ふた",
+            "3. おもて",
+            "4. ふち"
+          ],
+          "correct": 1,
+          "correctOption": "1. そこ",
+          "explanation": "<b>【正解】1. そこ</b><br/><ruby>底<rt>そこ</rt></ruby>：入れ物の一番下の部分 底<br/>【底】テイ・そこ"
+        },
+        {
+          "number": 4,
+          "stem": "<u>潔く</u>自分の負けを認めなさい。",
+          "options": [
+            "1. いざぎよく",
+            "2. いざきよく",
+            "3. いさぎよく",
+            "4. いさきよく"
+          ],
+          "correct": 3,
+          "correctOption": "3. いさぎよく",
+          "explanation": "<b>【正解】3. いさぎよく</b><br/><ruby>潔<rt>いさぎよ</rt></ruby>い：思い切りがいい様子 さっぱりしている様子<br/>果断的，干脆的<br/>【潔】ケツ・いさぎよ-い"
+        },
+        {
+          "number": 5,
+          "stem": "仕事を<u>完了</u>したら、上司に報告しよう。",
+          "options": [
+            "1. かんりょう",
+            "2. かんてい",
+            "3. かくりょう",
+            "4. かくてい"
+          ],
+          "correct": 1,
+          "correctOption": "1. かんりょう",
+          "explanation": "<b>【正解】1. かんりょう</b><br/><ruby>完<rt>かん</rt></ruby><ruby>了<rt>りょう</rt></ruby>(する)：仕事などが完全に終わること。また、終え<br/>ること 完成<br/>【完】カン<br/>【了】リョウ"
+        }
+      ]
+    },
+    {
+      "type": "orthography",
+      "title": "表記",
+      "titleEn": "Orthography",
+      "pageRef": "pp.20-21",
+      "instruction": "＿＿の言葉を漢字で書くとき、最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "あなたのことが<u>にくくて</u>、こんなことを言っているのではありません。",
+          "options": [
+            "1. 増くくて",
+            "2. 憎くくて",
+            "3. 増くて",
+            "4. 憎くて"
+          ],
+          "correct": 4,
+          "correctOption": "4. 憎くて",
+          "explanation": "<b>【正解】4. 憎くて</b><br/><ruby>憎<rt>にく</rt></ruby>い：何かを強く嫌い、不快に思う様子 可憎的<br/>【憎】ゾウ・にく-い"
+        },
+        {
+          "number": 2,
+          "stem": "パーティーは<u>せいだい</u>に行われた。",
+          "options": [
+            "1. 盛大",
+            "2. 成大",
+            "3. 盛台",
+            "4. 成台"
+          ],
+          "correct": 1,
+          "correctOption": "1. 盛大",
+          "explanation": "<b>【正解】1. 盛大</b><br/><ruby>盛<rt>せい</rt></ruby><ruby>大<rt>だい</rt></ruby>(な)：イベントなどが立派で大規模な様子 盛大的<br/>【盛】セイ・さか-る・も-る<br/>【大】ダイ・おお-きい"
+        },
+        {
+          "number": 3,
+          "stem": "効率的な<u>いりょう</u>システムを整えることが必要だ。",
+          "options": [
+            "1. 匿療",
+            "2. 匿寮",
+            "3. 医療",
+            "4. 医寮"
+          ],
+          "correct": 3,
+          "correctOption": "3. 医療",
+          "explanation": "<b>【正解】3. 医療</b><br/><ruby>医<rt>い</rt></ruby><ruby>療<rt>りょう</rt></ruby>：医学の力で病気やけがを治すこと 医疗<br/>【医】イ<br/>【療】リョウ"
+        },
+        {
+          "number": 4,
+          "stem": "彼のようなすばらしい人に出会えた<u>こううん</u>に感謝しています。",
+          "options": [
+            "1. 幸連",
+            "2. 辛連",
+            "3. 幸運",
+            "4. 辛運"
+          ],
+          "correct": 3,
+          "correctOption": "3. 幸運",
+          "explanation": "<b>【正解】3. 幸運</b><br/><ruby>幸<rt>こう</rt></ruby><ruby>運<rt>うん</rt></ruby>：運がいいこと 幸运<br/>【幸】コウ・しあわ-せ<br/>【運】ウン・はこ-ぶ"
+        },
+        {
+          "number": 5,
+          "stem": "夏が終わったので、プールの水を<u>ぬいた</u>。",
+          "options": [
+            "1. 緩いた",
+            "2. 抜いた",
+            "3. 貫いた",
+            "4. 扶いた"
+          ],
+          "correct": 2,
+          "correctOption": "2. 抜いた",
+          "explanation": "<b>【正解】2. 抜いた</b><br/><ruby>抜<rt>ぬ</rt></ruby>く：中に入っているものを外に出すこと 拔<br/>【抜】バツ・ぬ-く"
+        }
+      ]
+    },
+    {
+      "type": "word_formation",
+      "title": "語形成",
+      "titleEn": "Word formation",
+      "pageRef": "p.21",
+      "instruction": "（　　）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "親切（　　）から手伝ったのだが、余計なことをしてしまったようだ。",
+          "options": [
+            "1. 力",
+            "2. 念",
+            "3. 心",
+            "4. 気"
+          ],
+          "correct": 3,
+          "correctOption": "3. 心",
+          "explanation": "<b>【正解】3. 心</b><br/>～心<br/>しん<br/>：～な性質の心を持っていることを表す ～心"
+        },
+        {
+          "number": 2,
+          "stem": "（　　）性能なパソコンを使用しています。",
+          "options": [
+            "1. 良",
+            "2. 高",
+            "3. 上",
+            "4. 極"
+          ],
+          "correct": 2,
+          "correctOption": "2. 高",
+          "explanation": "<b>【正解】2. 高</b><br/><ruby>高<rt>こう</rt></ruby>～：～の程度がいいこと 高～"
+        },
+        {
+          "number": 3,
+          "stem": "川（　　）の道を散歩した。",
+          "options": [
+            "1. 横",
+            "2. 元",
+            "3. 沿い",
+            "4. 通り"
+          ],
+          "correct": 3,
+          "correctOption": "3. 沿い",
+          "explanation": "<b>【正解】3. 沿い</b><br/>～沿<br/>ぞ<br/>い：～に沿っていること 沿着<br/>※～には道や川など長さがあるものが来る"
+        },
+        {
+          "number": 4,
+          "stem": "もっと具体（　　）のあるプランを提案してください。",
+          "options": [
+            "1. 性",
+            "2. 的",
+            "3. 感",
+            "4. 化"
+          ],
+          "correct": 1,
+          "correctOption": "1. 性",
+          "explanation": "<b>【正解】1. 性</b><br/><ruby>具<rt>ぐ</rt></ruby><ruby>体<rt>たい</rt></ruby><ruby>性<rt>せい</rt></ruby>：直接に見たり感じたりすることができる、形や<br/>内容があること 具体性<br/>～性<br/>せい<br/>：～な性質のこと ～性"
+        },
+        {
+          "number": 5,
+          "stem": "この歌は（　　）世界で流行しました。",
+          "options": [
+            "1. 諸",
+            "2. 両",
+            "3. 各",
+            "4. 全"
+          ],
+          "correct": 4,
+          "correctOption": "4. 全",
+          "explanation": "<b>【正解】4. 全</b><br/><ruby>全<rt>ぜん</rt></ruby>～：～の全体のこと 全～"
+        }
+      ]
+    }
+  ]
+}

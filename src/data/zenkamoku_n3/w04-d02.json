@@ -1,0 +1,48 @@
+{
+  "bookId": "zenkamoku-n3-best-workbook",
+  "chapterId": "w04-d02",
+  "week": 4,
+  "day": 2,
+  "weekTitle": "第4週",
+  "dayTitle": "2日目",
+  "subSections": [
+    {
+      "type": "grammar_form",
+      "title": "文法形式の判断",
+      "titleEn": "Selecting grammar form",
+      "pageRef": "pp.50–51",
+      "instruction": "つぎの文の（　）に入れるのに最もよいものを、１・２・３・４から一つえらびなさい。",
+      "questions": [
+        { "number": 1, "stem": "クラスのリーダーは<ruby>吉田<rt>よしだ</rt></ruby>さんがいい。（　）まじめだし、みんなの意見をまとめる力があるからだ。", "options": ["なぜなら", "そのため", "だが", "それに"], "correct": 1, "correctOption": "なぜなら" },
+        { "number": 2, "stem": "子「今日、学校であや子ちゃんに<ruby>冗談<rt>じょうだん</rt></ruby>を言ったら、泣いちゃって……。」<br>父「（　）冗談でも、相手が<ruby>嫌<rt>いや</rt></ruby>だと思うことを言ってはいけないよ。」", "options": ["もしかしたら", "どうも", "どうしても", "たとえ"], "correct": 4, "correctOption": "たとえ" },
+        { "number": 3, "stem": "母は仕事で海外に（　）たびに、その国の<ruby>珍<rt>めずら</rt></ruby>しいお<ruby>土産<rt>みやげ</rt></ruby>を買ってきてくれる。", "options": ["行って", "行く", "行った", "行こう"], "correct": 2, "correctOption": "行く" },
+        { "number": 4, "stem": "夕べたくさんお酒を飲んだ（　）、今日は朝から頭が<ruby>痛<rt>いた</rt></ruby>い。", "options": ["せいで", "ことから", "といえば", "とともに"], "correct": 1, "correctOption": "せいで" },
+        { "number": 5, "stem": "天気予報では晴れだと言っていたけど、雨が（　）から、<ruby>傘<rt>かさ</rt></ruby>を持っていこう。", "options": ["降るとは限らない", "降るわけだ", "降らないとは限らない", "降らないわけだ"], "correct": 3, "correctOption": "降らないとは限らない" },
+        { "number": 6, "stem": "<ruby>娘<rt>むすめ</rt></ruby>がどこに行くか（　）出かけたので心配です。", "options": ["言っては", "言ったから", "言わずに", "言わなかったもので"], "correct": 3, "correctOption": "言わずに" },
+        { "number": 7, "stem": "<ruby>窓<rt>まど</rt></ruby>を開けて（　）、鳥が入ってきてびっくりした。", "options": ["<ruby>寝<rt>ね</rt></ruby>れば", "<ruby>寝<rt>ね</rt></ruby>ようと思って", "<ruby>寝<rt>ね</rt></ruby>たのに", "<ruby>寝<rt>ね</rt></ruby>ていたら"], "correct": 4, "correctOption": "<ruby>寝<rt>ね</rt></ruby>ていたら" },
+        { "number": 8, "stem": "病院で<ruby>検査<rt>けんさ</rt></ruby>した結果、医者に食べ物のアレルギーだと（　）。", "options": ["言いました", "言われました", "言わせました", "言わせられました"], "correct": 2, "correctOption": "言われました" },
+        { "number": 9, "stem": "（先生のお<ruby>宅<rt>たく</rt></ruby>から帰るとき）<br>私「今日は、いろいろなおいしい料理、ごちそうさまでした。」<br>先生の<ruby>夫<rt>おっと</rt></ruby>「いいえ、こちらこそ楽しかったですよ。またいつでも（　）。」", "options": ["おいででしょうか", "おいでください", "おいでになりますか", "おいででございます"], "correct": 2, "correctOption": "おいでください" },
+        { "number": 10, "stem": "子「ただいま。」<br>親「おかえり。雨、まだ降ってる？」<br>子「うん。でも、<ruby>傘<rt>かさ</rt></ruby>をさす（　）じゃないよ。」", "options": ["ほど", "こと", "もの", "よう"], "correct": 1, "correctOption": "ほど" },
+        { "number": 11, "stem": "（<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>しの前日）<br><ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>す人「すみません、<ruby>隣<rt>となり</rt></ruby>の者ですが、明日引っ越しで荷物を車に乗せるのに、<ruby>空<rt>あ</rt></ruby>いている<ruby>駐車場<rt>ちゅうしゃじょう</rt></ruby>を1時間ほど（　）んですが……。」<br><ruby>隣<rt>となり</rt></ruby>の家の人「午前中なら使っていないので、かまいませんよ。」", "options": ["使わせていただきたい", "使っていただきたい", "使わされる", "使われたい"], "correct": 1, "correctOption": "使わせていただきたい" },
+        { "number": 12, "stem": "（スポーツ<ruby>選手<rt>せんしゅ</rt></ruby>へのインタビューで）<br>レポーター「<ruby>鈴木<rt>すずき</rt></ruby><ruby>選手<rt>せんしゅ</rt></ruby>、<ruby>優勝<rt>ゆうしょう</rt></ruby>おめでとうございます。」<br><ruby>鈴木<rt>すずき</rt></ruby><ruby>選手<rt>せんしゅ</rt></ruby>「ありがとうございます。みなさんが<ruby>応援<rt>おうえん</rt></ruby>して（　）おかげで、最後までがんばることができました」", "options": ["くださる", "くださって", "くださった", "ください"], "correct": 3, "correctOption": "くださった" },
+        { "number": 13, "stem": "正月に<ruby>田舎<rt>いなか</rt></ruby>に帰ると、食べては（　）。", "options": ["太ってしまった", "おいしいものがたくさんある", "食べてばかりいる", "<ruby>寝<rt>ね</rt></ruby>て<ruby>過<rt>す</rt></ruby>ごしてしまう"], "correct": 4, "correctOption": "<ruby>寝<rt>ね</rt></ruby>て<ruby>過<rt>す</rt></ruby>ごしてしまう" }
+      ]
+    },
+    {
+      "type": "text_grammar",
+      "title": "文章の文法",
+      "titleEn": "Text grammar",
+      "pageRef": "pp.52–53",
+      "instruction": "つぎの<ruby>文章<rt>ぶんしょう</rt></ruby>を読んで、<ruby>文章全体<rt>ぶんしょうぜんたい</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>を考えて、［１］から［５］の中に入る最もよいものを、１・２・３・４から一つえらびなさい。<br><br>下の<ruby>文章<rt>ぶんしょう</rt></ruby>は、ある大学の<ruby>就職課<rt>しゅうしょくか</rt></ruby>が書いた<ruby>就職活動<rt>しゅうしょくかつどう</rt></ruby>のアドバイスです。",
+      "passageTitle": "<ruby>就職<rt>しゅうしょく</rt></ruby>活動を始める学生さんへ",
+      "passage": "大学3年生になり、<ruby>就職<rt>しゅうしょく</rt></ruby>のための活動を考えていると思います。毎年、周りの学生が活動を［１］、まだ自分が何も始めていないことに不安を感じてしまう人が出てきます。不安になる人の多くは「自分に何が向いているかわからないし、<ruby>働<rt>はたら</rt></ruby>きたいという会社もなくて、何から始めたらいいかわからない」という場合が多いです。もし、あなたが同じように不安を感じているなら、まず仕事の<ruby>種類<rt>しゅるい</rt></ruby>［２］、どんな会社があるか知ることから始めてみてください。そして、少しでもいいと思う会社に同じ大学の<ruby>卒業生<rt>そつぎょう</rt></ruby>がいれば訪問して、その会社に入ったら1年目はどんなことをして、3年たったら何ができるのかを聞きましょう。入った後に、<ruby>期待<rt>きたい</rt></ruby>とは<ruby>全然<rt>ぜんぜん</rt></ruby>違ったと［３］ことも少なくないからです。\n\n［４］ように会社を調べたり、<ruby>卒業生<rt>そつぎょう</rt></ruby>を訪問して話を聞いたりするうちに、やりたいことが見えてくると思います。将来やりたいことが見えれば、その次にやるべきことがわかり、不安は<ruby>次第<rt>しだい</rt></ruby>に［５］と思います。あまり周りを気にせず、自分のペースで一つ一つ進めていくようにしましょう。",
+      "questions": [
+        { "number": 1, "stem": "文章中の［１］に入るものをえらびなさい。", "options": ["し始めて以来", "し始めるより", "し始めると", "し始めようと"], "correct": 3, "correctOption": "し始めると" },
+        { "number": 2, "stem": "文章中の［２］に入るものをえらびなさい。", "options": ["のように", "を通じて", "にかけて", "を<ruby>問<rt>と</rt></ruby>わず"], "correct": 4, "correctOption": "を<ruby>問<rt>と</rt></ruby>わず" },
+        { "number": 3, "stem": "文章中の［３］に入るものをえらびなさい。", "options": ["思ってしまう", "思われてしまう", "思わせてもらう", "思ってもらう"], "correct": 1, "correctOption": "思ってしまう" },
+        { "number": 4, "stem": "文章中の［４］に入るものをえらびなさい。", "options": ["この", "それ", "あの", "どれ"], "correct": 1, "correctOption": "この" },
+        { "number": 5, "stem": "文章中の［５］に入るものをえらびなさい。", "options": ["なくなりそうだ", "なくなっていく", "なくなるわけではない", "なくなってほしい"], "correct": 2, "correctOption": "なくなっていく" }
+      ]
+    }
+  ]
+}
