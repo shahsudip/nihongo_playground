@@ -81,27 +81,91 @@ const BookListPage = () => {
 
   if (loading) return <LoadingSpinner />;
 
-  const filteredBooks = books.filter(b => !b.customRoute && (activeLevel === 'All' || b.level === activeLevel));
-  const showStaticN3 = activeLevel === 'All' || activeLevel === 'N3';
-  const showStaticN4 = activeLevel === 'All' || activeLevel === 'N4' || activeLevel === 'N4-N5';
+  const bookCovers = {
+    'shin-nihongo-500-n1': coverN1,
+    'shin-nihongo-500-n2': coverN2,
+    'shin-nihongo-500-n3': coverN3,
+    'shin-nihongo-500-n4-n5': coverN4N5,
+    'nihongo-power-drill-n1': powerDrillN1,
+    'nihongo-power-drill-n2': powerDrillN2,
+    'nihongo-power-drill-n3': powerDrillN3,
+    'tango_n1': tangoN1Cover,
+    'tango_n2': tangoN2Cover,
+    'tango_n3': tangoN3Cover,
+    'speed-master-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/speed_master_n3_pages/speed_master_n3_page-0001.jpg`,
+    'zenkamoku-n2-best-workbook': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/images/zenkamoku_n2_cover.jpg`,
+    'zenkamoku-n3-best-workbook': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/images/zenkamoku_n3_cover.jpg`,
+    'shinkanzen-master-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/shinkanzen_n3_reading_cover.jpg`,
+    'shinkanzen-master-n3-listening': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/shinkanzen_n3_listening_cover.jpg`,
+    'sou-matome-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/sou_matome_n3_reading_cover.jpg`,
+    'jlpt-n3-practice-sets': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/n3_practice_sets_cover.jpg`,
+    'chokuzen-taisaku-n4': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/n4_chokuzen_taisaku_cover.jpg`,
+  };
+
+  const COVER_BOOK_NAMES = {
+    'zenkamoku-n2-best-workbook': '全科目攻略 ベスト総合問題集 N2',
+    'zenkamoku-n3-best-workbook': '全科目攻略 ベスト総合問題集 N3',
+    'shin-nihongo-500-n1': '新にほんご500問 N1',
+    'shin-nihongo-500-n2': '新にほんご500問 N2',
+    'shin-nihongo-500-n3': '新にほんご500問 N3',
+    'shin-nihongo-500-n4-n5': '新にほんご500問 N4-N5',
+    'shinkanzen-master-n3-reading': '新完全マスター 読解 N3',
+    'shinkanzen-master-n3-listening': '新完全マスター 聴解 N3',
+    'speed-master-n3-reading': '日本語スピードマスター 読解 N3',
+    'sou-matome-n3-reading': '日本語総まとめ 読解 N3',
+    'nihongo-power-drill-n1': '日本語パワードリル N1',
+    'nihongo-power-drill-n2': '日本語パワードリル N2',
+    'nihongo-power-drill-n3': '日本語パワードリル N3',
+    'tango_n1': '日本語能力試験 N1 単語 3000',
+    'tango_n2': '日本語能力試験 N2 単語 2500',
+    'tango_n3': '日本語能力試験 N3 単語 2000',
+    'jlpt-n3-practice-sets': '直前対策 N3 (15 Sets)',
+    'chokuzen-taisaku-n4': '直前対策 N4 (15 Sets)',
+  };
+
+  const getBookCover = (book) => {
+    if (!book) return null;
+    if (bookCovers[book.id]) return bookCovers[book.id];
+    if (book.coverUrl) {
+      return book.coverUrl.startsWith('http') || book.coverUrl.startsWith('data:')
+        ? book.coverUrl
+        : `${import.meta.env.BASE_URL.replace(/\/$/, '')}${book.coverUrl.startsWith('/') ? '' : '/'}${book.coverUrl}`;
+    }
+    if (book.coverImage) {
+      return book.coverImage.startsWith('http') || book.coverImage.startsWith('data:')
+        ? book.coverImage
+        : `${import.meta.env.BASE_URL.replace(/\/$/, '')}${book.coverImage.startsWith('/') ? '' : '/'}${book.coverImage}`;
+    }
+    return null;
+  };
+
+  const filteredBooks = books.filter(b => {
+    if (activeLevel === 'All') return true;
+    if (activeLevel === 'N4-N5') return b.level === 'N4' || b.level === 'N5' || b.level === 'N4-N5';
+    if (activeLevel === 'N4') return b.level === 'N4' || b.level === 'N4-N5';
+    return b.level === activeLevel;
+  });
 
   return (
-    <div className="books-list-container">
-      <div className="books-header">
-        <h1 className="books-title">Japanese Book Collections</h1>
-        <p className="books-subtitle">Chapter-based reading and grammar quizzes curated from standard textbooks and study materials.</p>
+    <div className="books-list-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+      <div className="books-header text-center mb-10">
+        <div className="inline-block px-3.5 py-1 rounded-full bg-emerald-500/10 dark:bg-purple-500/10 border border-emerald-500/30 dark:border-purple-500/30 text-emerald-700 dark:text-purple-300 text-xs font-black uppercase mb-3 shadow-xs">
+          Authentic Book Collections & Practice Sets
+        </div>
+        <h1 className="books-title text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 dark:text-white tracking-tight mb-3">
+          Japanese Book Collections
+        </h1>
+        <p className="books-subtitle text-sm sm:text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto font-medium">
+          Chapter-based reading, listening, and grammar quizzes curated from standard textbooks, official-style mock sets, and drill series.
+        </p>
       </div>
 
-      <div className="flex justify-center mb-8 gap-2 flex-wrap">
+      <div className="filter-pills-container flex justify-center items-center gap-2 flex-wrap mb-10">
         {['All', 'N1', 'N2', 'N3', 'N4-N5'].map(level => (
           <button
             key={level}
             onClick={() => setActiveLevel(level)}
-            className={`px-4 py-2 rounded-full text-sm font-bold transition-all border-2 ${
-              activeLevel === level 
-                ? 'bg-blue-600 text-white border-blue-600 shadow-md' 
-                : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500'
-            }`}
+            className={`filter-pill-btn ${activeLevel === level ? 'active' : ''}`}
           >
             {level === 'N4-N5' ? 'N4/N5' : level}
           </button>
@@ -110,140 +174,77 @@ const BookListPage = () => {
 
       {error && <div className="error-message">{error}</div>}
 
-      <div className="books-grid">
-        {/* Static Card for JLPT N3 Practice Sets */}
-        {showStaticN3 && (
-        <div className="book-card" style={{ borderColor: 'var(--color-primary, #059669)', borderWidth: '2px' }}>
-          <div className="book-cover-artwork" style={{ padding: 0, overflow: 'hidden', background: '#0f172a' }}>
-            <img 
-              src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/n3_practice_sets_cover.jpg`} 
-              alt="Chokuzen Taisaku JLPT N3 (15 Sets)" 
-              loading="lazy"
-              decoding="async"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', objectPosition: 'top' }} 
-            />
-          </div>
-          <div className="book-card-details">
-            <h2 className="book-card-title">Chokuzen Taisaku JLPT N3 (15 Sets)</h2>
-            <p className="book-card-description">Intensive last-minute preparation for JLPT N3. Perfect your Kanji, Vocabulary, and Grammar with 15 focused mock test sets right before exam day.</p>
-            
-            <div className="book-progress-wrapper" style={{ marginTop: 'auto' }}>
-              <div className="book-progress-info">
-                <span>15 Full Sets</span>
-                <span>500 Questions</span>
-              </div>
-            </div>
-
-            <div className="book-card-footer">
-              <Link to="/practice-sets" className="view-chapters-button">
-                Start Practice &rarr;
-              </Link>
-            </div>
-          </div>
-        </div>
-        )}
-
-        {/* Static Card for JLPT N4 Practice Sets */}
-        {showStaticN4 && (
-        <div className="book-card" style={{ borderColor: 'rgba(16, 185, 129, 0.4)', borderWidth: '2px' }}>
-          <div className="book-cover-artwork" style={{ padding: 0, overflow: 'hidden', background: '#0f172a' }}>
-            <img 
-              src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/n4_chokuzen_taisaku_cover.jpg`} 
-              alt="Chokuzen Taisaku JLPT N4 (10 Sets)" 
-              loading="lazy"
-              decoding="async"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', objectPosition: 'top' }} 
-            />
-          </div>
-          <div className="book-card-details">
-            <h2 className="book-card-title">Chokuzen Taisaku JLPT N4 (10 Sets)</h2>
-            <p className="book-card-description">Intensive last-minute preparation for JLPT N4. Perfect your Kanji, Vocabulary, Grammar, and Short Reading with 10 full official-style mock sets.</p>
-            
-            <div className="book-progress-wrapper" style={{ marginTop: 'auto' }}>
-              <div className="book-progress-info">
-                <span>10 Full Sets</span>
-                <span>590 Questions</span>
-              </div>
-            </div>
-
-            <div className="book-card-footer">
-              <Link to="/chokuzen-taisaku-n4" className="view-chapters-button" style={{ background: 'linear-gradient(135deg, #059669, #10b981)' }}>
-                Start Practice &rarr;
-              </Link>
-            </div>
-          </div>
-        </div>
-        )}
-
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-8">
         {filteredBooks.map((book, index) => {
           const progress = getBookProgress(book);
-          const bookCovers = {
-            'shin-nihongo-500-n1': coverN1,
-            'shin-nihongo-500-n2': coverN2,
-            'shin-nihongo-500-n3': coverN3,
-            'shin-nihongo-500-n4-n5': coverN4N5,
-            'nihongo-power-drill-n1': powerDrillN1,
-            'nihongo-power-drill-n2': powerDrillN2,
-            'nihongo-power-drill-n3': powerDrillN3,
-            'tango_n1': tangoN1Cover,
-            'tango_n2': tangoN2Cover,
-            'tango_n3': tangoN3Cover,
-            'speed-master-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/speed_master_n3_pages/speed_master_n3_page-0001.jpg`,
-            'zenkamoku-n3-best-workbook': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/images/zenkamoku_n3_cover.jpg`,
-    'shinkanzen-master-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/shinkanzen_n3_reading_cover.jpg`,
-            'shinkanzen-master-n3-listening': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/shinkanzen_n3_listening_cover.jpg`,
-            'sou-matome-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/sou_matome_n3_reading_cover.jpg`,
-          };
-          const coverImg = bookCovers[book.id];
-          const levelGradients = {
-            'shin-nihongo-500-n1': 'linear-gradient(135deg, #4a154b 0%, #861457 50%, #c1121f 100%)',
-            'shin-nihongo-500-n2': 'linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #3a7bd5 100%)',
-            'shin-nihongo-500-n3': 'linear-gradient(135deg, #0d9488 0%, #11998e 50%, #38ef7d 100%)',
-            'shin-nihongo-500-n4-n5': 'linear-gradient(135deg, #7c3aed 0%, #9333ea 50%, #c084fc 100%)',
-            'zenkamoku-n3-best-workbook': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/images/zenkamoku_n3_cover.jpg`,
-    'shinkanzen-master-n3-reading': 'linear-gradient(135deg, #b45309 0%, #d97706 50%, #f59e0b 100%)',
-            'speed-master-n3-reading': 'linear-gradient(135deg, #14532d 0%, #16a34a 50%, #22c55e 100%)',
-            'sou-matome-n3-reading': 'linear-gradient(135deg, #312e81 0%, #4338ca 50%, #6366f1 100%)',
-          };
-          const gradient = levelGradients[book.id] || gradients[index % gradients.length];
+          const coverImg = getBookCover(book);
+          const gradient = gradients[index % gradients.length];
+          const displayName = COVER_BOOK_NAMES[book.id] || book.title;
+
           return (
-            <div key={book.id} className="book-card">
-              {coverImg ? (
-                <div className="book-cover-artwork" style={{ padding: 0, overflow: 'hidden', background: '#0f172a' }}>
-                  <img 
-                    src={coverImg} 
-                    alt={book.title} 
+            <div
+              key={book.id}
+              className="group relative rounded-3xl overflow-hidden border border-gray-200/80 dark:border-white/10 bg-slate-900 shadow-lg hover:shadow-2xl hover:border-emerald-500/60 dark:hover:border-purple-500/50 transition-all duration-500 flex flex-col justify-between min-h-[460px] aspect-[3/4.2]"
+            >
+              {/* 1. Full Image in Background (Extended & Visible) */}
+              <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+                {coverImg ? (
+                  <img
+                    src={coverImg}
+                    alt={displayName}
                     loading="lazy"
                     decoding="async"
-                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} 
+                    className="w-full h-full object-cover object-top filter brightness-[0.95] contrast-[1.05] transform group-hover:scale-105 group-hover:brightness-100 transition-all duration-700 ease-out"
                   />
-                </div>
-              ) : (
-                <div className="book-cover-artwork" style={{ background: gradient }}>
-                  <span className="book-cover-badge">{book.level}</span>
-                  <h3 className="book-cover-title">{book.title.split(':')[0]}</h3>
-                  <span className="book-cover-category">{book.category}</span>
-                </div>
-              )}
-              <div className="book-card-details">
-                <h2 className="book-card-title">{book.title}</h2>
-                <p className="book-card-description">{book.description}</p>
-                
-                <div className="book-progress-wrapper">
-                  <div className="book-progress-info">
-                    <span>Progress: {progress.completed}/{progress.total} Chapters</span>
-                    <span>{progress.percent}%</span>
+                ) : (
+                  <div className="w-full h-full" style={{ background: gradient }} />
+                )}
+
+                {/* Scrim: bottom ~35% dark for readability, top ~65% fully visible */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/85 via-35% to-transparent transition-colors duration-500" />
+              </div>
+
+              {/* 2. Top Bar: Level Badge at Top Right (Capsule Pill) with Mode-Adaptive Colors */}
+              <div className="relative z-10 p-4 sm:p-5 flex items-center justify-end">
+                <span className="px-3.5 py-0.5 rounded-full text-xs font-black uppercase tracking-wider leading-relaxed shadow-md backdrop-blur-md transition-all duration-300 bg-white/95 text-emerald-800 border-2 border-emerald-500/80 dark:bg-purple-950/95 dark:text-purple-200 dark:border-purple-400 dark:shadow-[0_0_12px_rgba(168,85,247,0.35)] group-hover:scale-105">
+                  {book.level}
+                </span>
+              </div>
+
+              {/* 3. Bottom Card Content (Brought to front) */}
+              <div className="relative z-10 p-5 sm:p-6 flex flex-col justify-end">
+                {/* Book Name from cover: turns green in light mode, purple in dark mode on hover */}
+                <h2 className="text-xl sm:text-2xl font-black text-white leading-snug mb-3.5 drop-shadow-md group-hover:text-emerald-400 dark:group-hover:text-purple-300 transition-colors duration-300 line-clamp-2">
+                  {displayName}
+                </h2>
+
+                {/* Simple % Progress Bar: Completed label with increased boldness and size, turns green/purple on hover */}
+                <div className="mb-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-sm sm:text-base font-black text-gray-200 group-hover:text-emerald-300 dark:group-hover:text-purple-300 transition-colors duration-300 tracking-wide">
+                      Completed
+                    </span>
+                    <span className="font-mono text-base sm:text-lg font-black text-emerald-400 dark:text-purple-400 group-hover:text-emerald-300 dark:group-hover:text-purple-300 group-hover:scale-105 transition-all duration-300">
+                      {progress.percent}%
+                    </span>
                   </div>
-                  <div className="book-progress-bar-track">
-                    <div className="book-progress-bar-fill" style={{ width: `${progress.percent}%` }}></div>
+                  <div className="w-full h-2.5 rounded-full bg-black/60 overflow-hidden p-[1px] border border-white/15 group-hover:border-emerald-500/50 dark:group-hover:border-purple-500/50 backdrop-blur-xs transition-colors duration-300">
+                    <div
+                      className="h-full rounded-full bg-gradient-to-r from-emerald-500 via-teal-400 to-emerald-300 dark:from-purple-500 dark:via-indigo-400 dark:to-purple-300 group-hover:from-emerald-400 group-hover:via-emerald-300 group-hover:to-teal-200 dark:group-hover:from-purple-400 dark:group-hover:via-fuchsia-400 dark:group-hover:to-indigo-300 group-hover:shadow-[0_0_12px_rgba(52,211,153,0.7)] dark:group-hover:shadow-[0_0_12px_rgba(192,132,252,0.7)] transition-all duration-500"
+                      style={{ width: `${progress.percent}%` }}
+                    />
                   </div>
                 </div>
 
-                <div className="book-card-footer">
-                  <Link to={`/books/${book.id}`} state={{ from: 'books' }} className="view-chapters-button">
-                    View Chapters &rarr;
-                  </Link>
-                </div>
+                {/* Action Button (Brought directly to front: Emerald/Teal in light mode, Purple/Indigo gradient in dark mode) */}
+                <Link
+                  to={book.customRoute || `/books/${book.id}`}
+                  state={{ from: 'books' }}
+                  className="w-full py-3.5 px-5 rounded-2xl font-black text-sm text-white flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-purple-600 dark:to-indigo-600 hover:from-emerald-500 hover:to-teal-500 dark:hover:from-purple-500 dark:hover:to-indigo-500 active:scale-[0.98] shadow-lg shadow-emerald-950/50 dark:shadow-purple-950/50 hover:shadow-emerald-500/30 dark:hover:shadow-purple-500/30 transition-all duration-200 cursor-pointer group/btn"
+                >
+                  <span>{progress.percent > 0 ? 'Continue' : 'Start Reading'}</span>
+                  <span className="transform group-hover/btn:translate-x-1.5 transition-transform duration-200 font-bold">→</span>
+                </Link>
               </div>
             </div>
           );

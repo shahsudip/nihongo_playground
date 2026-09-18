@@ -89,8 +89,17 @@ const MainHeader = () => {
                 }`
               }
             >
-              <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-400 text-white flex items-center justify-center text-xs font-extrabold shadow-xs">
-                {userInitial}
+              <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-400 text-white flex items-center justify-center text-xs font-extrabold shadow-xs overflow-hidden">
+                {currentUser.photoURL ? (
+                  <img
+                    src={currentUser.photoURL}
+                    alt={currentUser.displayName || 'Avatar'}
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                ) : (
+                  userInitial
+                )}
               </div>
               <span className="max-w-[100px] truncate">{currentUser.displayName || currentUser.email?.split('@')[0]}</span>
             </NavLink>
@@ -167,8 +176,17 @@ const MainHeader = () => {
                   }`
                 }
               >
-                <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-400 text-white flex items-center justify-center text-xs font-extrabold shrink-0">
-                  {userInitial}
+                <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-400 text-white flex items-center justify-center text-xs font-extrabold shrink-0 overflow-hidden">
+                  {currentUser.photoURL ? (
+                    <img
+                      src={currentUser.photoURL}
+                      alt={currentUser.displayName || 'Avatar'}
+                      referrerPolicy="no-referrer"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  ) : (
+                    userInitial
+                  )}
                 </div>
                 <span className="truncate">{currentUser.displayName || currentUser.email}</span>
               </NavLink>
@@ -189,7 +207,7 @@ const MainHeader = () => {
 const MainLayout = () => (
   <>
     <MainHeader />
-    <main className="content-overlay main-content-container pt-20 md:pt-24">
+    <main className="content-overlay main-content-container pt-16 md:pt-20">
       <Outlet />
     </main>
   </>

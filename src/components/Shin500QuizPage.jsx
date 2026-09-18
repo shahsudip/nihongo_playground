@@ -190,10 +190,68 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
           });
         }
 
+        // 1. Restore saved attempt from localStorage first
+        const storageKey = currentUser
+          ? `shin500_quiz_${currentUser.uid}_${bookId}_${chapterId}`
+          : `shin500_quiz_guest_${bookId}_${chapterId}`;
+
+        let restoredAnswers = {};
+        let restoredIndex = 0;
+
+        try {
+          const cached = localStorage.getItem(storageKey);
+          if (cached) {
+            const parsed = JSON.parse(cached);
+            if (parsed && typeof parsed.answers === 'object') {
+              restoredAnswers = parsed.answers;
+              if (typeof parsed.currentIndex === 'number') {
+                restoredIndex = parsed.currentIndex;
+              }
+            }
+          }
+        } catch (e) {
+          console.warn("Could not read local Shin 500 quiz state:", e);
+        }
+
+        // 2. Also check Firestore if user is logged in
+        if (currentUser) {
+          try {
+            const historyDocId = `${bookId}-${chapterId}`;
+            const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
+            const historySnap = await getDoc(historyDocRef);
+            if (historySnap.exists()) {
+              const histData = historySnap.data();
+              if (histData.answers && typeof histData.answers === 'object') {
+                if (Object.keys(histData.answers).length >= Object.keys(restoredAnswers).length) {
+                  restoredAnswers = histData.answers;
+                  if (typeof histData.currentIndex === 'number') {
+                    restoredIndex = histData.currentIndex;
+                  }
+                }
+              }
+            }
+          } catch (e) {
+            console.warn("Could not read Firestore Shin 500 quiz state:", e);
+          }
+        }
+
         if (isMounted) {
           setQuestions(flat);
-          setCurrentIndex(0);
-          setAnswers({});
+          setAnswers(restoredAnswers);
+
+          if (Object.keys(restoredAnswers).length > 0) {
+            const firstUnanswered = flat.findIndex(q => !restoredAnswers[q.id]);
+            if (firstUnanswered !== -1) {
+              setCurrentIndex(firstUnanswered);
+            } else if (restoredIndex >= 0 && restoredIndex < flat.length) {
+              setCurrentIndex(restoredIndex);
+            } else {
+              setCurrentIndex(0);
+            }
+          } else {
+            setCurrentIndex(0);
+          }
+
           setIsFinished(false);
           setLoading(false);
         }
@@ -211,20 +269,37 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
     return () => {
       isMounted = false;
     };
-  }, [bookId, chapterId, staticBook]);
+  }, [bookId, chapterId, staticBook, currentUser]);
 
-  // Save Progress to Firestore
-  const saveProgress = useCallback(async (isFinal = false) => {
-    if (!currentUser || !chapter || questions.length === 0) return;
+  const getStorageKey = useCallback(() => {
+    return currentUser
+      ? `shin500_quiz_${currentUser.uid}_${bookId}_${chapterId}`
+      : `shin500_quiz_guest_${bookId}_${chapterId}`;
+  }, [currentUser, bookId, chapterId]);
 
-    const answeredCount = Object.keys(answers).length;
-    // If no questions were answered, do not record a false attempt
-    if (answeredCount === 0) return;
+  // Save Progress to localStorage and Firestore
+  const saveProgress = useCallback(async (currentAnswers = answers, isFinal = false, targetIndex = currentIndex) => {
+    if (!chapter || questions.length === 0) return;
+
+    // 1. Immediately cache in localStorage
+    const storageKey = getStorageKey();
+    try {
+      localStorage.setItem(storageKey, JSON.stringify({
+        answers: currentAnswers,
+        currentIndex: targetIndex,
+        timestamp: new Date().toISOString()
+      }));
+    } catch (e) {
+      console.warn("Could not cache Shin 500 state locally:", e);
+    }
+
+    const answeredCount = Object.keys(currentAnswers).length;
+    if (!currentUser || answeredCount === 0) return;
 
     try {
       let correctCount = 0;
-      Object.values(answers).forEach(ans => {
-        if (ans.isCorrect) correctCount++;
+      Object.values(currentAnswers).forEach(ans => {
+        if (ans && ans.isCorrect) correctCount++;
       });
 
       const isAllAnswered = answeredCount === questions.length;
@@ -253,6 +328,8 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
         score: correctCount,
         total: questions.length,
         answered: answeredCount,
+        answers: currentAnswers,
+        currentIndex: targetIndex,
         accuracy: Math.round(accuracy * 100),
         status
       };
@@ -261,7 +338,48 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
     } catch (err) {
       console.warn("Could not save Shin 500 progress:", err);
     }
-  }, [currentUser, chapter, questions, answers, bookId, chapterId]);
+  }, [currentUser, chapter, questions, answers, bookId, chapterId, getStorageKey, currentIndex]);
+
+  // Cleanup on unmount - ensure final state is persisted
+  useEffect(() => {
+    return () => {
+      saveProgress(answers, false, currentIndex);
+    };
+  }, [saveProgress, answers, currentIndex]);
+
+  const handleResetDrill = async () => {
+    if (!window.confirm("Are you sure you want to reset this drill? All your answers will be cleared so you can retake every question from scratch.")) {
+      return;
+    }
+
+    setAnswers({});
+    setCurrentIndex(0);
+    setIsFinished(false);
+
+    const storageKey = getStorageKey();
+    try {
+      localStorage.removeItem(storageKey);
+    } catch (e) {
+      console.warn("Failed to remove local Shin 500 state:", e);
+    }
+
+    if (currentUser) {
+      try {
+        const historyDocId = `${bookId}-${chapterId}`;
+        const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
+        await setDoc(historyDocRef, {
+          score: 0,
+          answered: 0,
+          answers: {},
+          currentIndex: 0,
+          status: 'incomplete',
+          timestamp: new Date().toISOString()
+        }, { merge: true });
+      } catch (err) {
+        console.warn("Failed to reset Shin 500 history doc:", err);
+      }
+    }
+  };
 
   const handleAttemptExit = () => {
     const answeredCount = Object.keys(answers).length;
@@ -273,7 +391,7 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
   };
 
   const handleConfirmExit = () => {
-    saveProgress(false);
+    saveProgress(answers, false, currentIndex);
     setShowExitModal(false);
     navigate(`/books/${bookId}`);
   };
@@ -288,14 +406,36 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
     const isCorrect = (correctInfo.index !== null && correctInfo.index === optIdx) ||
                       (correctInfo.text && correctInfo.text === optText);
 
-    setAnswers(prev => ({
-      ...prev,
+    const nextAnswers = {
+      ...answers,
       [currentQ.id]: {
         selectedIndex: optIdx,
         selectedText: optText,
         isCorrect
       }
-    }));
+    };
+
+    setAnswers(nextAnswers);
+    saveProgress(nextAnswers, false, currentIndex);
+  };
+
+  const handleNext = () => {
+    if (currentIndex < questions.length - 1) {
+      const nextIdx = currentIndex + 1;
+      setCurrentIndex(nextIdx);
+      saveProgress(answers, false, nextIdx);
+    } else if (Object.keys(answers).length >= questions.length) {
+      setIsFinished(true);
+      saveProgress(answers, true, currentIndex);
+    }
+  };
+
+  const handlePrev = () => {
+    if (currentIndex > 0) {
+      const prevIdx = currentIndex - 1;
+      setCurrentIndex(prevIdx);
+      saveProgress(answers, false, prevIdx);
+    }
   };
 
   // Keyboard navigation (1, 2, 3, 4 for options; Enter / Arrow Right for next)
@@ -310,22 +450,15 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
         const optIdx = num - 1;
         handleSelectOption(optIdx, currentQ.options[optIdx]);
       } else if (e.key === 'ArrowRight' || e.key === 'Enter') {
-        if (currentIndex < questions.length - 1) {
-          setCurrentIndex(prev => prev + 1);
-        } else if (Object.keys(answers).length >= questions.length) {
-          setIsFinished(true);
-          saveProgress(true);
-        }
+        handleNext();
       } else if (e.key === 'ArrowLeft') {
-        if (currentIndex > 0) {
-          setCurrentIndex(prev => prev - 1);
-        }
+        handlePrev();
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [loading, error, isFinished, questions, currentIndex, answers, handleSelectOption, saveProgress]);
+  }, [loading, error, isFinished, questions, currentIndex, answers, handleSelectOption, handleNext, handlePrev]);
 
   // Calculate statistics
   const answeredCount = Object.keys(answers).length;
@@ -404,15 +537,22 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
             <div className="flex flex-wrap items-center justify-center gap-4">
               <button
                 type="button"
+                onClick={handleResetDrill}
+                className="px-5 py-2.5 rounded-xl border font-semibold text-red-600 dark:text-red-400 border-red-300 dark:border-red-900/60 hover:bg-red-50 dark:hover:bg-red-950/30 transition-all flex items-center gap-2 cursor-pointer"
+              >
+                🔄 Reset & Retry Drill
+              </button>
+
+              <button
+                type="button"
                 onClick={() => {
-                  setAnswers({});
-                  setCurrentIndex(0);
                   setIsFinished(false);
+                  setCurrentIndex(0);
                 }}
-                className="px-5 py-2.5 rounded-xl border font-medium transition-all"
+                className="px-5 py-2.5 rounded-xl border font-medium transition-all cursor-pointer"
                 style={{ borderColor: 'var(--shin-border)', color: 'var(--shin-text-primary)', backgroundColor: 'var(--shin-card-alt)' }}
               >
-                🔄 Retry Drill
+                📖 Review Answers
               </button>
 
               <Link
@@ -452,6 +592,16 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
           </div>
 
           <div className="flex items-center gap-3">
+            <button
+              type="button"
+              onClick={handleResetDrill}
+              className="text-xs px-2.5 py-1.5 rounded-lg border border-red-300 dark:border-red-900/60 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors flex items-center gap-1.5 cursor-pointer font-medium"
+              title="Reset all answers and retake this drill from scratch"
+            >
+              <span>🔄</span>
+              <span>Reset</span>
+            </button>
+
             <span className="text-xs font-semibold px-3 py-1.5 rounded-lg border" style={{ backgroundColor: 'var(--shin-card-alt)', borderColor: 'var(--shin-border)', color: 'var(--shin-text-secondary)' }}>
               {answeredCount} / {questions.length}
             </span>
@@ -527,7 +677,7 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
             </div>
 
             {/* Options List / Grid */}
-            <div className={`gap-3 mb-6 ${currentQ.options?.length === 2 ? 'shin-dual-options-grid' : 'space-y-3'}`}>
+            <div className={`gap-3 mb-4 ${currentQ.options?.length === 2 ? 'shin-dual-options-grid' : 'space-y-3'}`}>
               {currentQ.options?.map((opt, optIdx) => {
                 const optText = typeof opt === 'object' ? opt.text : opt;
                 const isSelected = currentAnswer?.selectedIndex === optIdx;
@@ -541,10 +691,6 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
                     optionStateClass = 'is-wrong';
                   }
                 }
-
-                const showInlineExplanation = isCorrect && currentAnswer && currentQ.explanation && 
-                  currentQ.explanation !== "Answer will be updated soon." && 
-                  !currentQ.explanation.startsWith("Question ");
 
                 return (
                   <button
@@ -574,38 +720,60 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
                         </span>
                       )}
                     </div>
-
-                    {/* Inline explanation directly inside the option */}
-                    {showInlineExplanation && (
-                      <div
-                        className="mt-2 pt-2 border-t text-xs leading-relaxed opacity-90 shin500-japanese-text w-full text-left"
-                        style={{ borderColor: 'rgba(5, 150, 105, 0.25)' }}
-                        dangerouslySetInnerHTML={{ __html: currentQ.explanation }}
-                      />
-                    )}
                   </button>
                 );
               })}
             </div>
 
+            {/* Dedicated Explanation Card when answered */}
+            {currentAnswer && currentQ.explanation && (
+              <div 
+                className="mt-4 mb-2 p-4.5 rounded-2xl border shadow-sm transition-all animate-fade-in text-left"
+                style={{ 
+                  backgroundColor: 'var(--shin-card-alt)', 
+                  borderColor: currentAnswer.isCorrect ? 'rgba(16, 185, 129, 0.4)' : 'rgba(239, 68, 68, 0.4)' 
+                }}
+              >
+                <div className="flex items-center gap-2 mb-2 text-xs font-black uppercase tracking-wider" style={{ color: currentAnswer.isCorrect ? '#059669' : '#dc2626' }}>
+                  <span className="text-base">💡</span>
+                  <span>解説 • Explanation</span>
+                </div>
+                <div
+                  className="text-sm md:text-base leading-relaxed shin500-japanese-text font-medium"
+                  style={{ color: 'var(--shin-text-primary)' }}
+                  dangerouslySetInnerHTML={{ __html: currentQ.explanation }}
+                />
+              </div>
+            )}
+
             {/* Bottom Actions */}
-            <div className="flex items-center justify-between pt-6 border-t mt-6" style={{ borderColor: 'var(--shin-border)' }}>
+            <div className="flex items-center justify-between pt-6 border-t mt-6 gap-3 flex-wrap" style={{ borderColor: 'var(--shin-border)' }}>
               <button
                 type="button"
-                onClick={() => setCurrentIndex(prev => Math.max(0, prev - 1))}
+                onClick={handlePrev}
                 disabled={currentIndex === 0}
-                className="px-4 py-2 rounded-xl text-sm font-semibold border disabled:opacity-40 disabled:pointer-events-none transition-all"
+                className="px-4 py-2 rounded-xl text-sm font-semibold border disabled:opacity-40 disabled:pointer-events-none transition-all cursor-pointer"
                 style={{ borderColor: 'var(--shin-border)', backgroundColor: 'var(--shin-card-alt)', color: 'var(--shin-text-primary)' }}
               >
                 &larr; Prev
               </button>
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-3">
+                <button
+                  type="button"
+                  onClick={handleResetDrill}
+                  className="px-4 py-2 rounded-xl text-sm font-semibold border border-red-300 dark:border-red-900/60 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 transition-all flex items-center gap-1.5 cursor-pointer"
+                  title="Reset all answers and retake this drill from scratch"
+                >
+                  <span>🔄</span>
+                  <span>Reset Drill</span>
+                </button>
+
                 {currentIndex < questions.length - 1 ? (
                   <button
                     type="button"
-                    onClick={() => setCurrentIndex(prev => prev + 1)}
-                    className="px-6 py-2 rounded-xl text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition-all"
+                    onClick={handleNext}
+                    className="px-6 py-2 rounded-xl text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition-all cursor-pointer"
                   >
                     Next &rarr;
                   </button>
@@ -614,9 +782,9 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
                     type="button"
                     onClick={() => {
                       setIsFinished(true);
-                      saveProgress(true);
+                      saveProgress(answers, true, currentIndex);
                     }}
-                    className="px-6 py-2 rounded-xl text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition-all"
+                    className="px-6 py-2 rounded-xl text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition-all cursor-pointer"
                   >
                     Finish Drill ✓
                   </button>

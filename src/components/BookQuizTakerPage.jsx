@@ -142,8 +142,67 @@ const BookQuizTakerPage = () => {
         }
 
         setQuestions(flattened);
-        setCurrentIndex(0);
-        setAnswers({});
+
+        // 1. Restore saved attempt from localStorage first
+        const storageKey = currentUser
+          ? `book_quiz_${currentUser.uid}_${bookId}_${chapterId}`
+          : `book_quiz_guest_${bookId}_${chapterId}`;
+
+        let restoredAnswers = {};
+        let restoredIndex = 0;
+
+        try {
+          const cached = localStorage.getItem(storageKey);
+          if (cached) {
+            const parsed = JSON.parse(cached);
+            if (parsed && typeof parsed.answers === 'object') {
+              restoredAnswers = parsed.answers;
+              if (typeof parsed.currentIndex === 'number') {
+                restoredIndex = parsed.currentIndex;
+              }
+            }
+          }
+        } catch (e) {
+          console.warn("Could not read local quiz state:", e);
+        }
+
+        // 2. Also check Firestore record if user is logged in
+        if (currentUser) {
+          try {
+            const historyDocId = `${bookId}-${chapterId}`;
+            const historyRef = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
+            const historySnap = await getDoc(historyRef);
+            if (historySnap.exists()) {
+              const histData = historySnap.data();
+              if (histData.answers && typeof histData.answers === 'object') {
+                if (Object.keys(histData.answers).length >= Object.keys(restoredAnswers).length) {
+                  restoredAnswers = histData.answers;
+                  if (typeof histData.currentIndex === 'number') {
+                    restoredIndex = histData.currentIndex;
+                  }
+                }
+              }
+            }
+          } catch (e) {
+            console.warn("Could not read Firestore quiz state:", e);
+          }
+        }
+
+        setAnswers(restoredAnswers);
+
+        // Resume at first unanswered question or saved index
+        if (Object.keys(restoredAnswers).length > 0) {
+          const firstUnanswered = flattened.findIndex(q => restoredAnswers[q.id] === undefined);
+          if (firstUnanswered !== -1) {
+            setCurrentIndex(firstUnanswered);
+          } else if (restoredIndex >= 0 && restoredIndex < flattened.length) {
+            setCurrentIndex(restoredIndex);
+          } else {
+            setCurrentIndex(0);
+          }
+        } else {
+          setCurrentIndex(0);
+        }
 
       } catch (err) {
         console.error("Error loading chapter quiz:", err);
@@ -154,22 +213,72 @@ const BookQuizTakerPage = () => {
     };
 
     fetchChapterData();
-  }, [bookId, chapterId]);
+  }, [bookId, chapterId, currentUser]);
 
-  // Save progress on exit/completion
-  const saveProgress = useCallback(async (isFinal = false) => {
-    if (!currentUser || !chapter || questions.length === 0) return;
+  const getStorageKey = useCallback(() => {
+    return currentUser
+      ? `book_quiz_${currentUser.uid}_${bookId}_${chapterId}`
+      : `book_quiz_guest_${bookId}_${chapterId}`;
+  }, [currentUser, bookId, chapterId]);
 
-    const answeredCount = Object.keys(answers).length;
-    if (answeredCount === 0) return; // Don't save empty attempt
+  const getCorrectText = useCallback((q) => {
+    if (!q) return '';
+    if (q.correctOption) {
+      if (typeof q.correctOption === 'object' && q.correctOption.text) return q.correctOption.text;
+      if (typeof q.correctOption === 'string') return q.correctOption;
+    }
+    if (q.correctIndex !== undefined && q.options && q.options[q.correctIndex] !== undefined) {
+      const opt = q.options[q.correctIndex];
+      return typeof opt === 'object' ? opt.text : opt;
+    }
+    if (q.answer !== undefined) {
+      if (typeof q.answer === 'string') return q.answer;
+      if (typeof q.answer === 'number' && q.options && q.options[q.answer] !== undefined) {
+        const opt = q.options[q.answer];
+        return typeof opt === 'object' ? opt.text : opt;
+      }
+    }
+    return '';
+  }, []);
+
+  const checkOptionIsCorrect = useCallback((q, optText, optIdx) => {
+    if (!q) return false;
+    const correctText = getCorrectText(q);
+    if (correctText && optText) {
+      return optText === correctText;
+    }
+    if (q.correctIndex !== undefined) {
+      return optIdx === q.correctIndex;
+    }
+    return false;
+  }, [getCorrectText]);
+
+  // Save progress and full quiz answers state
+  const saveAnswersState = useCallback(async (currentAnswers, isFinal = false, targetIndex = currentIndex) => {
+    if (!chapter || questions.length === 0) return;
+
+    // 1. Immediately cache in localStorage
+    const storageKey = getStorageKey();
+    try {
+      localStorage.setItem(storageKey, JSON.stringify({
+        answers: currentAnswers,
+        currentIndex: targetIndex,
+        timestamp: new Date().toISOString()
+      }));
+    } catch (e) {
+      console.warn("Failed to save local quiz state:", e);
+    }
+
+    const answeredCount = Object.keys(currentAnswers).length;
+    if (!currentUser || answeredCount === 0) return;
 
     try {
       let correctCount = 0;
-      Object.keys(answers).forEach(qId => {
+      Object.keys(currentAnswers).forEach(qId => {
         const q = questions.find(qu => qu.id === qId);
         if (q) {
-          const correctText = q.correctOption ? q.correctOption.text : (typeof q.options[q.correctIndex] === 'object' ? q.options[q.correctIndex].text : q.options[q.correctIndex]);
-          if (answers[qId] === correctText) {
+          const correctText = getCorrectText(q);
+          if (currentAnswers[qId] === correctText) {
             correctCount++;
           }
         }
@@ -194,12 +303,14 @@ const BookQuizTakerPage = () => {
         quizId: historyDocId,
         bookId,
         chapterId,
-        title: chapter.title,
+        title: chapter.title || chapterId,
         type: 'book',
         timestamp: new Date().toISOString(),
         score: correctCount,
         total: questions.length,
         answered: answeredCount,
+        answers: currentAnswers,
+        currentIndex: targetIndex,
         status
       };
 
@@ -207,17 +318,50 @@ const BookQuizTakerPage = () => {
     } catch (err) {
       console.error("Failed to save chapter progress:", err);
     }
-  }, [bookId, chapterId, currentUser, chapter, answers, questions]);
+  }, [bookId, chapterId, currentUser, chapter, questions, currentIndex, getStorageKey, getCorrectText]);
 
   useEffect(() => {
     return () => {
-      saveProgress(false);
+      saveAnswersState(answers, false, currentIndex);
     };
-  }, [saveProgress]);
+  }, [saveAnswersState, answers, currentIndex]);
 
   const handleFinish = () => {
-    saveProgress(true);
+    saveAnswersState(answers, true, currentIndex);
     navigate(`/books/${bookId}`);
+  };
+
+  const handleResetQuiz = async () => {
+    if (!window.confirm("Are you sure you want to reset this quiz? All your answers will be cleared so you can retake every question from scratch.")) {
+      return;
+    }
+
+    setAnswers({});
+    setCurrentIndex(0);
+
+    const storageKey = getStorageKey();
+    try {
+      localStorage.removeItem(storageKey);
+    } catch (e) {
+      console.warn("Failed to remove local quiz state:", e);
+    }
+
+    if (currentUser) {
+      try {
+        const historyDocId = `${bookId}-${chapterId}`;
+        const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
+        await setDoc(historyDocRef, {
+          score: 0,
+          answered: 0,
+          answers: {},
+          currentIndex: 0,
+          status: 'incomplete',
+          timestamp: new Date().toISOString()
+        }, { merge: true });
+      } catch (err) {
+        console.warn("Failed to reset history record:", err);
+      }
+    }
   };
 
   const handleAttemptExit = () => {
@@ -230,55 +374,49 @@ const BookQuizTakerPage = () => {
   };
 
   const handleConfirmExit = () => {
-    saveProgress(false);
+    saveAnswersState(answers, false, currentIndex);
     setShowExitModal(false);
     navigate(`/books/${bookId}`);
   };
 
-  if (loading) return <LoadingSpinner />;
-  if (error) return <div className="error-message" style={{ color: 'white', padding: '100px', textAlign: 'center' }}>{error}</div>;
-  if (!chapter || questions.length === 0) return <div style={{ color: 'white', padding: '100px', textAlign: 'center' }}>No questions available.</div>;
-
-  const totalQuestions = questions.length;
-  const answeredCount = Object.keys(answers).length;
-  const progressPercent = Math.round((answeredCount / totalQuestions) * 100);
-
-  let correctCount = 0;
-  Object.keys(answers).forEach(qId => {
-    const q = questions.find(qu => qu.id === qId);
-    if (q) {
-      const correctText = q.correctOption ? q.correctOption.text : (typeof q.options[q.correctIndex] === 'object' ? q.options[q.correctIndex].text : q.options[q.correctIndex]);
-      if (answers[qId] === correctText) {
-        correctCount++;
-      }
-    }
-  });
-
   const handleOptionSelect = (questionId, optionText) => {
-    setAnswers(prev => ({
-      ...prev,
+    // Lock selection if in Immediate mode and already answered
+    if (feedbackMode === 'Immediate' && answers[questionId] !== undefined) return;
+
+    const nextAnswers = {
+      ...answers,
       [questionId]: optionText
-    }));
+    };
+    setAnswers(nextAnswers);
+
+    // Persist immediately on each answer
+    saveAnswersState(nextAnswers, false, currentIndex);
     
     // Auto advance if immediate feedback is off
     if (feedbackMode === 'At End') {
       setTimeout(() => {
-        if (currentIndex < totalQuestions - 1) {
-          setCurrentIndex(currentIndex + 1);
+        if (currentIndex < questions.length - 1) {
+          const nextIdx = currentIndex + 1;
+          setCurrentIndex(nextIdx);
+          saveAnswersState(nextAnswers, false, nextIdx);
         }
       }, 300);
     }
   };
 
   const handleNext = () => {
-    if (currentIndex < totalQuestions - 1) {
-      setCurrentIndex(currentIndex + 1);
+    if (currentIndex < questions.length - 1) {
+      const nextIdx = currentIndex + 1;
+      setCurrentIndex(nextIdx);
+      saveAnswersState(answers, false, nextIdx);
     }
   };
 
   const handlePrev = () => {
     if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
+      const prevIdx = currentIndex - 1;
+      setCurrentIndex(prevIdx);
+      saveAnswersState(answers, false, prevIdx);
     }
   };
 
@@ -332,7 +470,17 @@ const BookQuizTakerPage = () => {
             )}
           </div>
           
-          <div className="flex items-center gap-4 flex-wrap">
+          <div className="flex items-center gap-3 flex-wrap">
+            <button
+              type="button"
+              onClick={handleResetQuiz}
+              className="text-xs px-2.5 py-1.5 rounded-lg border border-red-200 dark:border-red-900/60 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors flex items-center gap-1.5 cursor-pointer font-medium"
+              title="Reset all answers and retake this chapter from scratch"
+            >
+              <span>🔄</span>
+              <span>Reset</span>
+            </button>
+
             <div className="flex items-center gap-2 px-3 py-2 bg-[var(--color-bg-secondary)] rounded-lg border border-[var(--color-border)]">
               <span className="text-xs text-[var(--color-text-muted)] mr-1">Feedback:</span>
               <button 
@@ -352,7 +500,7 @@ const BookQuizTakerPage = () => {
             <div className="text-right text-sm">
               <div className="text-[var(--color-text-secondary)]">{answeredCount} / {totalQuestions} answered</div>
               {feedbackMode === 'Immediate' && (
-                <div className="text-[var(--color-success-light)]">{correctCount} correct</div>
+                <div className="text-[var(--color-success-light)] font-semibold">{correctCount} correct</div>
               )}
             </div>
           </div>
@@ -364,7 +512,7 @@ const BookQuizTakerPage = () => {
         <div className="flex justify-between items-center mb-2 text-sm">
           <span className="text-[var(--color-text-secondary)]">Progress: {answeredCount}/{totalQuestions}</span>
           {feedbackMode === 'Immediate' && (
-             <span className="text-[var(--color-success-light)]">&#10003; {correctCount} correct</span>
+             <span className="text-[var(--color-success-light)] font-semibold">&#10003; {correctCount} correct</span>
           )}
         </div>
         <ProgressBar progressPercent={progressPercent} />
@@ -443,7 +591,7 @@ const BookQuizTakerPage = () => {
           )}
         </div>
 
-        <div className="space-y-3 mb-8">
+        <div className="space-y-3 mb-6">
           {currentQ.options.map((opt, optIdx) => {
             const optText = typeof opt === 'object' && opt !== null ? opt.text : opt;
             const cleanOpt = optText ? optText.replace(/\*\*/g, '') : '';
@@ -453,29 +601,57 @@ const BookQuizTakerPage = () => {
                 text={cleanOpt}
                 index={optIdx}
                 isSelected={selectedAnswer === optText}
-                isCorrect={currentQ.correctOption ? currentQ.correctOption.text === optText : currentQ.correctIndex === optIdx}
+                isCorrect={checkOptionIsCorrect(currentQ, optText, optIdx)}
                 feedbackMode={feedbackMode}
                 onClick={() => handleOptionSelect(currentQ.id, optText)}
                 disabled={feedbackMode === 'Immediate' && selectedAnswer !== undefined}
+                showFeedback={selectedAnswer !== undefined}
               />
             );
           })}
         </div>
 
-        <div className="flex justify-between items-center pt-4 border-t border-[var(--color-border)] mt-8">
+        {/* Dedicated Explanation Card when question is answered */}
+        {selectedAnswer !== undefined && (currentQ.explanation || currentQ.commentary || currentQ.notes) && (
+          <div className="mb-6 p-4.5 rounded-2xl bg-emerald-50/90 dark:bg-zinc-800/90 border-2 border-emerald-500/40 dark:border-purple-500/40 shadow-sm transition-all animate-fade-in">
+            <div className="flex items-center gap-2 mb-2 text-xs font-black uppercase tracking-wider text-emerald-800 dark:text-purple-300">
+              <span className="text-base">💡</span>
+              <span>解説 • Explanation</span>
+            </div>
+            <div 
+              className="text-sm md:text-base leading-relaxed text-gray-900 dark:text-gray-100 japanese-text font-medium"
+              dangerouslySetInnerHTML={{ __html: currentQ.explanation || currentQ.commentary || currentQ.notes }}
+            />
+          </div>
+        )}
+
+        {/* Bottom Actions Bar */}
+        <div className="flex justify-between items-center pt-4 border-t border-[var(--color-border)] mt-6 gap-3 flex-wrap">
           <Button variant="outline" onClick={handlePrev} disabled={currentIndex === 0}>
             &larr; Previous
           </Button>
           
-          {currentIndex === totalQuestions - 1 ? (
-            <Button variant="primary" onClick={handleFinish} className="bg-gradient-to-r from-emerald-500 to-teal-600">
-              Finish Chapter
-            </Button>
-          ) : (
-            <Button variant="primary" onClick={handleNext}>
-              Next &rarr;
-            </Button>
-          )}
+          <div className="flex items-center gap-3">
+            <button
+              type="button"
+              onClick={handleResetQuiz}
+              className="px-4 py-2 rounded-xl text-sm font-semibold border border-red-300 dark:border-red-900/60 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 transition-all flex items-center gap-1.5 cursor-pointer"
+              title="Reset all answers and retake this chapter from scratch"
+            >
+              <span>🔄</span>
+              <span>Reset Quiz</span>
+            </button>
+
+            {currentIndex === totalQuestions - 1 ? (
+              <Button variant="primary" onClick={handleFinish} className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold shadow-md">
+                Finish Chapter ✓
+              </Button>
+            ) : (
+              <Button variant="primary" onClick={handleNext}>
+                Next &rarr;
+              </Button>
+            )}
+          </div>
         </div>
       </Card>
       </div> {/* closes Question Card container */}
@@ -489,7 +665,7 @@ const BookQuizTakerPage = () => {
         setCurrentIndex={setCurrentIndex}
         feedbackMode={feedbackMode}
         checkIsCorrect={(q, ans) => {
-          const correctText = q.correctOption ? q.correctOption.text : q.options[q.correctIndex];
+          const correctText = getCorrectText(q);
           return ans[q.id] === correctText;
         }}
       />

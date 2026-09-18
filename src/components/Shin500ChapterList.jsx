@@ -234,7 +234,7 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
               onClick={() => setSelectedWeekFilter('all')}
               className={`px-4 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap ${
                 selectedWeekFilter === 'all'
-                  ? 'bg-emerald-600 text-white shadow-md'
+                  ? 'bg-primary text-white shadow-md'
                   : 'bg-[var(--color-bg-secondary)] hover:bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] border border-[var(--color-border)]'
               }`}
             >
@@ -251,7 +251,7 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
                   onClick={() => setSelectedWeekFilter(String(group.weekNum))}
                   className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 whitespace-nowrap ${
                     selectedWeekFilter === String(group.weekNum)
-                      ? 'bg-emerald-600 text-white shadow-md'
+                      ? 'bg-primary text-white shadow-md'
                       : 'bg-[var(--color-bg-secondary)] hover:bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] border border-[var(--color-border)]'
                   }`}
                 >

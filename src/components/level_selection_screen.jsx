@@ -104,15 +104,15 @@ const LevelSelectionPage = () => {
 
   // View 1: Select Level (N5, N4, N3, N2, N1)
   const renderLevelSelection = () => (
-    <div className="w-full max-w-5xl mx-auto px-4 py-8 animate-fade-in">
-      <div className="text-center mb-10">
-        <div className="inline-block px-3.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200/60 dark:border-emerald-800/40 text-emerald-700 dark:text-emerald-300 text-xs font-black uppercase mb-3">
+    <div className="w-full max-w-5xl mx-auto px-4 pt-2 pb-6 animate-fade-in">
+      <div className="text-center mb-5 md:mb-6">
+        <div className="inline-block px-3.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200/60 dark:border-emerald-800/40 text-emerald-700 dark:text-emerald-300 text-xs font-black uppercase mb-2">
           JLPT Mastery Roadmap
         </div>
         <h1 className="text-3xl md:text-5xl font-black text-gray-900 dark:text-white tracking-tight">
           Select a JLPT Level
         </h1>
-        <p className="text-sm text-gray-700 dark:text-gray-300 mt-2 max-w-lg mx-auto font-medium">
+        <p className="text-sm text-gray-700 dark:text-gray-300 mt-1.5 max-w-lg mx-auto font-medium">
           Choose your target level to explore Kanji, Vocabulary, and Grammar lists.
         </p>
       </div>

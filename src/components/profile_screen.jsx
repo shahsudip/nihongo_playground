@@ -70,6 +70,7 @@ const ProfileScreen = () => {
   const [activityFilterLevel, setActivityFilterLevel] = useState('All');
   const [isLoading, setIsLoading] = useState(true);
   const [targetLevel, setTargetLevel] = useState(() => localStorage.getItem('user_target_level') || 'N3');
+  const [avatarImgError, setAvatarImgError] = useState(false);
 
   // In-UI Toast Notification State
   const [toast, setToast] = useState(null);
@@ -236,9 +237,13 @@ const ProfileScreen = () => {
     filteredQuizHistory.forEach(item => {
       const score = Number(item.score) || 0;
       const total = Number(item.total) || 0;
+      const ansCount = item.answered !== undefined ? Number(item.answered) : (item.answers ? Object.keys(item.answers).length : null);
+      if (ansCount === 0 && score === 0) return;
+
       totalQuestions += total;
       totalCorrect += score;
-      const isMastered = total > 0 && score > 0 && (score / total >= 0.8) && item.status !== 'incomplete' && (!item.answered || item.answered >= total);
+      const answeredCount = item.answered !== undefined ? Number(item.answered) : (item.answers ? Object.keys(item.answers).length : total);
+      const isMastered = total > 0 && score > 0 && (score / total >= 0.8) && item.status !== 'incomplete' && answeredCount >= total && answeredCount > 0;
       if (isMastered) {
         chaptersDone += 1;
       }
@@ -307,18 +312,30 @@ const ProfileScreen = () => {
     'tango_n1': tangoN1Cover,
     'tango_n2': tangoN2Cover,
     'tango_n3': tangoN3Cover,
+    'zenkamoku-n2-best-workbook': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/images/zenkamoku_n2_cover.jpg`,
     'zenkamoku-n3-best-workbook': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/images/zenkamoku_n3_cover.jpg`,
     'shinkanzen-master-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/shinkanzen_n3_reading_cover.jpg`,
     'shinkanzen-master-n3-listening': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/shinkanzen_n3_listening_cover.jpg`,
     'sou-matome-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/sou_matome_n3_reading_cover.jpg`,
-    'speed-master-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/speed_master_n3_reading_cover.jpg`,
+    'speed-master-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/speed_master_n3_pages/speed_master_n3_page-0001.jpg`,
     'jlpt-n3-practice-sets': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/n3_practice_sets_cover.jpg`,
     'chokuzen-taisaku-n4': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/n4_chokuzen_taisaku_cover.jpg`,
   };
 
   const getBookCover = (book) => {
-    if (book.coverUrl) return book.coverUrl;
-    return bookCovers[book.id];
+    if (!book) return null;
+    if (bookCovers[book.id]) return bookCovers[book.id];
+    if (book.coverUrl) {
+      return book.coverUrl.startsWith('http') || book.coverUrl.startsWith('data:')
+        ? book.coverUrl
+        : `${import.meta.env.BASE_URL.replace(/\/$/, '')}${book.coverUrl.startsWith('/') ? '' : '/'}${book.coverUrl}`;
+    }
+    if (book.coverImage) {
+      return book.coverImage.startsWith('http') || book.coverImage.startsWith('data:')
+        ? book.coverImage
+        : `${import.meta.env.BASE_URL.replace(/\/$/, '')}${book.coverImage.startsWith('/') ? '' : '/'}${book.coverImage}`;
+    }
+    return null;
   };
 
   const bookProgressMap = useMemo(() => {
@@ -421,6 +438,10 @@ const ProfileScreen = () => {
         if (!item) return false;
         if (!item.timestamp && !item.createdAt) return false;
         if (item.total <= 0 && item.score === undefined) return false;
+        const ansCount = item.answered !== undefined ? Number(item.answered) : (item.answers ? Object.keys(item.answers).length : null);
+        const scr = Number(item.score) || 0;
+        if (ansCount === 0 && scr === 0) return false;
+
         if (activityFilterLevel !== 'All') {
           const lvl = inferItemLevel(item);
           if (activityFilterLevel === 'N4' || activityFilterLevel === 'N5') {
@@ -459,7 +480,6 @@ const ProfileScreen = () => {
       setNewQuizTitle('');
       setNewQuizTag('General');
       setCsvText('');
-      setIsCreatingQuiz(false);
       showToast("Custom quiz created successfully!", "success");
     } catch (error) {
       console.error("Error creating custom quiz:", error);
@@ -497,13 +517,33 @@ const ProfileScreen = () => {
         setConfirmDialog({ isOpen: false, title: '', message: '', onConfirm: null });
         try {
           setIsLoading(true);
+          // 1. Delete all user quiz history from Firestore
           const historyColRef = collection(db, 'users', currentUser.uid, 'quizHistory');
           const snapshot = await getDocs(historyColRef);
           const deletePromises = snapshot.docs.map(d => deleteDoc(doc(db, 'users', currentUser.uid, 'quizHistory', d.id)));
           await Promise.all(deletePromises);
-          localStorage.removeItem('quizHistory');
+
+          // 2. Clear all chapter quiz caches from localStorage so individual pages reset completely
+          const keysToRemove = [];
+          for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            if (
+              key &&
+              (key.startsWith('zenkamoku-progress-') ||
+               key.startsWith('shin500_quiz_') ||
+               key.startsWith('book_quiz_') ||
+               key.startsWith('tango_mastery_') ||
+               key.startsWith('jlpt_quiz_') ||
+               key.startsWith('practice_') ||
+               key === 'quizHistory')
+            ) {
+              keysToRemove.push(key);
+            }
+          }
+          keysToRemove.forEach(k => localStorage.removeItem(k));
+
           setQuizHistory([]);
-          showToast("All study history has been cleared.");
+          showToast("All study history and chapter progress have been reset.");
         } catch (error) {
           console.error("Error clearing history:", error);
           showToast("Failed to clear history.", "error");
@@ -537,7 +577,19 @@ const ProfileScreen = () => {
     <div className="profile-page-wrapper">
       {/* 1. Hero User Profile Card */}
       <div className="profile-hero-card">
-        <div className="profile-avatar">{userInitial}</div>
+        <div className="profile-avatar overflow-hidden">
+          {currentUser?.photoURL && !avatarImgError ? (
+            <img
+              src={currentUser.photoURL}
+              alt={currentUser.displayName || currentUser.email || 'Profile'}
+              referrerPolicy="no-referrer"
+              className="w-full h-full object-cover rounded-full"
+              onError={() => setAvatarImgError(true)}
+            />
+          ) : (
+            userInitial
+          )}
+        </div>
         <div className="profile-user-info">
           <h1>
             {currentUser?.displayName || currentUser?.email?.split('@')[0] || 'Learner'}
@@ -546,7 +598,7 @@ const ProfileScreen = () => {
               <select
                 value={targetLevel}
                 onChange={(e) => handleTargetLevelChange(e.target.value)}
-                style={{ background: 'transparent', border: 'none', color: '#10b981', fontWeight: 800, cursor: 'pointer', outline: 'none' }}
+                style={{ background: 'transparent', border: 'none', color: 'inherit', fontWeight: 800, cursor: 'pointer', outline: 'none' }}
               >
                 <option value="N3" style={{ color: '#000' }}>JLPT N3</option>
                 <option value="N2" style={{ color: '#000' }}>JLPT N2</option>
@@ -559,31 +611,11 @@ const ProfileScreen = () => {
             <button
               type="button"
               onClick={handleToggleExamMode}
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '6px',
-                padding: '4px 12px',
-                borderRadius: '20px',
-                border: isExamMode ? '1px solid #10b981' : '1px solid var(--color-border, #475569)',
-                background: isExamMode ? 'rgba(16, 185, 129, 0.18)' : 'rgba(255, 255, 255, 0.05)',
-                color: isExamMode ? '#10b981' : 'var(--color-text-secondary, #94a3b8)',
-                fontSize: '0.75rem',
-                fontWeight: 800,
-                cursor: 'pointer',
-                transition: 'all 0.2s ease'
-              }}
+              className={`profile-exam-toggle-btn ${isExamMode ? 'active' : ''}`}
               title={isExamMode ? 'Exam Mode is ON - Click to switch to casual mode' : 'Exam Mode is OFF - Click to enable Exam Mode'}
             >
               <span>{isExamMode ? '⚡ Exam Mode: ON' : '💤 Exam Mode: OFF'}</span>
-              <span style={{
-                display: 'inline-block',
-                width: '8px',
-                height: '8px',
-                borderRadius: '50%',
-                background: isExamMode ? '#10b981' : '#64748b',
-                boxShadow: isExamMode ? '0 0 8px #10b981' : 'none'
-              }}></span>
+              <span className="profile-exam-indicator"></span>
             </button>
           </h1>
           <p>
@@ -783,17 +815,7 @@ const ProfileScreen = () => {
                   <button
                     key={lvl}
                     onClick={() => setActivityFilterLevel(lvl)}
-                    style={{
-                      background: activityFilterLevel === lvl ? '#10b981' : 'transparent',
-                      color: activityFilterLevel === lvl ? '#ffffff' : 'var(--color-text-secondary, #94a3b8)',
-                      border: 'none',
-                      borderRadius: '6px',
-                      padding: '4px 10px',
-                      fontSize: '0.78rem',
-                      fontWeight: 700,
-                      cursor: 'pointer',
-                      transition: 'all 0.15s ease'
-                    }}
+                    className={`profile-filter-pill ${activityFilterLevel === lvl ? 'active' : ''}`}
                   >
                     {lvl}
                   </button>
@@ -837,11 +859,14 @@ const ProfileScreen = () => {
                     const pct = total > 0 ? Math.round((score / total) * 100) : 0;
                     const itemLvl = inferItemLevel(item);
                     
+                    const answeredCount = item.answered !== undefined ? Number(item.answered) : (item.answers ? Object.keys(item.answers).length : total);
+                    const isAllAttempted = total > 0 && answeredCount >= total && answeredCount > 0;
+
+                    const isMastered = isAllAttempted && score > 0 && pct >= 80 && item.status !== 'incomplete';
+                    const isCompleted = isAllAttempted && item.status !== 'incomplete';
+
                     let statusLabel = '⏳ Incomplete';
                     let statusClass = 'badge-incomplete';
-
-                    const isMastered = total > 0 && score > 0 && pct >= 80 && item.status !== 'incomplete' && (!item.answered || item.answered >= total);
-                    const isCompleted = total > 0 && score > 0 && item.status !== 'incomplete' && (!item.answered || item.answered >= total);
 
                     if (isMastered) {
                       statusLabel = '🏆 Mastered';
@@ -849,7 +874,7 @@ const ProfileScreen = () => {
                     } else if (isCompleted) {
                       statusLabel = '📝 Completed';
                       statusClass = 'badge-completed';
-                    } else if (item.status === 'incomplete' || score === 0) {
+                    } else if (item.status === 'incomplete' || answeredCount < total || score === 0) {
                       statusLabel = '⏳ Incomplete';
                       statusClass = 'badge-incomplete';
                     } else {
@@ -863,7 +888,28 @@ const ProfileScreen = () => {
                         <td className="text-gray-600 dark:text-gray-400 text-sm">
                           {item.bookId ? item.bookId.replace(/-/g, ' ').replace(/(^\w|\s\w)/g, m => m.toUpperCase()) : (item.type === 'practice' ? 'Practice Test' : 'Custom Deck')}
                         </td>
-                        <td><strong>{getActivityTitle(item)}</strong></td>
+                        <td>
+                          {item.bookId && item.chapterId ? (
+                            <Link 
+                              to={`/books/${item.bookId}/chapters/${item.chapterId}`}
+                              className="text-emerald-600 dark:text-purple-400 hover:underline font-bold inline-flex items-center gap-1.5 transition-colors"
+                              title="Open and review this chapter"
+                            >
+                              <span>{getActivityTitle(item)}</span>
+                              <span className="text-xs opacity-70">↗</span>
+                            </Link>
+                          ) : item.type === 'practice' ? (
+                            <Link
+                              to={`/practice-sets/${item.setId || 1}`}
+                              className="text-emerald-600 dark:text-purple-400 hover:underline font-bold inline-flex items-center gap-1.5 transition-colors"
+                            >
+                              <span>{getActivityTitle(item)}</span>
+                              <span className="text-xs opacity-70">↗</span>
+                            </Link>
+                          ) : (
+                            <strong>{getActivityTitle(item)}</strong>
+                          )}
+                        </td>
                         <td>
                           <span className="profile-level-pill" style={{ background: LEVEL_COLORS[itemLvl] || '#64748b', fontSize: '0.75rem', padding: '2px 8px' }}>
                             {itemLvl}

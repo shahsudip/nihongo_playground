@@ -8,28 +8,31 @@ export const OptionButton = ({
   feedbackMode, 
   onClick,
   disabled,
-  explanation
+  explanation,
+  showFeedback: showFeedbackProp
 }) => {
   let btnClass = "border-[var(--color-border)] hover:border-[var(--color-border-light)] hover:bg-[var(--color-bg-tertiary)] text-[var(--color-text-primary)]";
   let circleClass = "border-[var(--color-border)]";
-  const showFeedback = feedbackMode === 'Immediate' && disabled;
+  const showFeedback = showFeedbackProp !== undefined 
+    ? showFeedbackProp 
+    : (feedbackMode === 'Immediate' && disabled);
 
   if (isSelected) {
     btnClass = "border-[var(--color-accent)] bg-[var(--color-accent)]/5 text-[var(--color-accent)]";
     circleClass = "border-[var(--color-accent)] bg-[var(--color-accent)]";
-    if (showFeedback && isCorrect !== null) {
+    if (showFeedback && isCorrect !== null && isCorrect !== undefined) {
       if (isCorrect) {
-        btnClass = "border-emerald-500 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400";
-        circleClass = "border-emerald-500 bg-emerald-500";
+        btnClass = "border-emerald-500 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold";
+        circleClass = "border-emerald-500 bg-emerald-500 text-white";
       } else {
-        btnClass = "border-red-500 bg-red-500/10 text-red-600 dark:text-red-400";
-        circleClass = "border-red-500 bg-red-500";
+        btnClass = "border-red-500 bg-red-500/10 text-red-600 dark:text-red-400 font-semibold";
+        circleClass = "border-red-500 bg-red-500 text-white";
       }
     }
   } else if (showFeedback && isCorrect) {
-    // Show correct answer if they selected the wrong one
-    btnClass = "border-emerald-500 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400";
-    circleClass = "border-emerald-500 bg-emerald-500";
+    // Show correct answer if they selected the wrong one or in review mode
+    btnClass = "border-emerald-500/80 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-medium";
+    circleClass = "border-emerald-500 bg-emerald-500 text-white";
   }
 
   return (
@@ -44,16 +47,6 @@ export const OptionButton = ({
           <span className="text-[var(--color-text-muted)] mr-2">{index + 1})</span>
           <span dangerouslySetInnerHTML={{ __html: text }}></span>
         </span>
-        {showFeedback && isCorrect && (
-          <span className="ml-2 text-xs font-bold px-2 py-0.5 rounded bg-emerald-600 text-white shadow-sm shrink-0">
-            ✓ 正解
-          </span>
-        )}
-        {showFeedback && isSelected && !isCorrect && (
-          <span className="ml-2 text-xs font-bold px-2 py-0.5 rounded bg-rose-600 text-white shadow-sm shrink-0">
-            ✕ 不正解
-          </span>
-        )}
       </div>
 
       {showFeedback && isCorrect && explanation && (

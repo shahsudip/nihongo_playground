@@ -337,6 +337,16 @@
   text-align: left;
   border-bottom: 1px solid var(--color-border, #334155);
   font-size: 0.88rem;
+  color: var(--color-text-primary, #1e293b);
+}
+
+.profile-diagnostic-table td .datetime-display .date-part {
+  color: var(--color-text-primary, #1e293b);
+  font-weight: 600;
+}
+
+.profile-diagnostic-table td .datetime-display .time-part {
+  color: var(--color-text-muted, #64748b);
 }
 
 .profile-diagnostic-table th {
@@ -454,4 +464,161 @@
   border-color: #10b981;
   transform: translateY(-1px);
 }
+
+/* Exam Mode Toggle */
+.profile-exam-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--color-border, #475569);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-text-secondary, #94a3b8);
+  font-size: 0.75rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.profile-exam-toggle-btn.active {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.18);
+  color: #10b981;
+}
+
+.profile-exam-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #64748b;
+  transition: all 0.2s ease;
+}
+
+.profile-exam-toggle-btn.active .profile-exam-indicator {
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+
+/* Filter Pills */
+.profile-filter-pill {
+  background: transparent;
+  color: var(--color-text-secondary, #94a3b8);
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.profile-filter-pill.active {
+  background: #10b981;
+  color: #ffffff;
+}
+
+/* ========================================================= */
+/* === DARK MODE: PURPLE RADIANT THEME FOR PROFILE PAGE === */
+/* ========================================================= */
+
+html.dark .profile-avatar,
+html.theme-dark .profile-avatar,
+[data-theme='dark'] .profile-avatar {
+  background: linear-gradient(135deg, #9333ea, #6366f1);
+  box-shadow: 0 0 25px rgba(147, 51, 234, 0.45);
+}
+
+html.dark .profile-target-badge,
+html.theme-dark .profile-target-badge,
+[data-theme='dark'] .profile-target-badge {
+  background: rgba(147, 51, 234, 0.2);
+  color: #c084fc;
+  border-color: #a855f7;
+}
+
+html.dark .profile-stat-val,
+html.theme-dark .profile-stat-val,
+[data-theme='dark'] .profile-stat-val {
+  color: #c084fc;
+}
+
+html.dark .profile-tab-btn.active,
+html.theme-dark .profile-tab-btn.active,
+[data-theme='dark'] .profile-tab-btn.active {
+  color: #c084fc;
+  background: rgba(147, 51, 234, 0.16);
+}
+
+html.dark .profile-tab-btn.active::after,
+html.theme-dark .profile-tab-btn.active::after,
+[data-theme='dark'] .profile-tab-btn.active::after {
+  background: linear-gradient(90deg, #9333ea, #c084fc);
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
+}
+
+html.dark .profile-book-card:hover,
+html.theme-dark .profile-book-card:hover,
+[data-theme='dark'] .profile-book-card:hover {
+  border-color: #a855f7;
+  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.25);
+}
+
+html.dark .profile-btn-primary,
+html.theme-dark .profile-btn-primary,
+[data-theme='dark'] .profile-btn-primary {
+  background: linear-gradient(135deg, #9333ea 0%, #6366f1 100%);
+  color: #ffffff;
+  border-color: rgba(168, 85, 247, 0.4);
+  box-shadow: 0 4px 14px rgba(147, 51, 234, 0.35);
+}
+
+html.dark .profile-btn-primary:hover,
+html.theme-dark .profile-btn-primary:hover,
+[data-theme='dark'] .profile-btn-primary:hover {
+  background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.5);
+  transform: translateY(-1px);
+}
+
+html.dark .profile-plan-btn,
+html.theme-dark .profile-plan-btn,
+[data-theme='dark'] .profile-plan-btn {
+  background: rgba(147, 51, 234, 0.18);
+  border-color: rgba(168, 85, 247, 0.5);
+  color: #c084fc;
+}
+
+html.dark .profile-plan-btn:hover,
+html.theme-dark .profile-plan-btn:hover,
+[data-theme='dark'] .profile-plan-btn:hover {
+  background: rgba(147, 51, 234, 0.35);
+  border-color: #c084fc;
+  box-shadow: 0 0 14px rgba(168, 85, 247, 0.45);
+}
+
+html.dark .profile-exam-toggle-btn.active,
+html.theme-dark .profile-exam-toggle-btn.active,
+[data-theme='dark'] .profile-exam-toggle-btn.active {
+  border-color: #a855f7;
+  background: rgba(147, 51, 234, 0.22);
+  color: #c084fc;
+}
+
+html.dark .profile-exam-toggle-btn.active .profile-exam-indicator,
+html.theme-dark .profile-exam-toggle-btn.active .profile-exam-indicator,
+[data-theme='dark'] .profile-exam-toggle-btn.active .profile-exam-indicator {
+  background: #c084fc;
+  box-shadow: 0 0 10px #c084fc;
+}
+
+html.dark .profile-filter-pill.active,
+html.theme-dark .profile-filter-pill.active,
+[data-theme='dark'] .profile-filter-pill.active {
+  background: linear-gradient(135deg, #9333ea, #7c3aed);
+  color: #ffffff;
+  box-shadow: 0 2px 10px rgba(147, 51, 234, 0.45);
+}
+
 

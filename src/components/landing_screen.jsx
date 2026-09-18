@@ -60,20 +60,32 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="relative min-h-screen lg:h-screen w-full flex flex-col justify-between bg-[var(--color-bg-primary)] text-[var(--color-text-primary)] transition-colors duration-300 overflow-x-hidden select-none">
-      {/* Subtle Japanese Watermark Characters Background */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none overflow-hidden opacity-[0.03] dark:opacity-[0.04] flex items-center justify-center select-none z-0">
-        <div className="text-[34vw] font-black leading-none font-serif tracking-widest text-current">
+    <div className="relative h-screen h-[100dvh] w-full flex flex-col justify-between bg-[var(--color-bg-primary)] text-[var(--color-text-primary)] transition-colors duration-300 overflow-hidden select-none">
+      {/* Watermark: 日本語 (Japanese Characters Only, Vertical Tategaki) */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 pointer-events-none flex items-center justify-center select-none z-0 overflow-hidden"
+      >
+        <div
+          className="opacity-5 text-zinc-900 dark:text-white font-black leading-none tracking-[0.16em] transition-colors duration-300 select-none"
+          style={{
+            fontSize: 'min(24vh, 18vw)',
+            writingMode: 'vertical-rl',
+            textOrientation: 'upright',
+            fontFamily: "'Noto Serif JP', 'Yu Mincho', 'Hiragino Mincho ProN', serif",
+            userSelect: 'none',
+          }}
+        >
           日本語
         </div>
       </div>
 
       {/* Top Header */}
-      <header className="relative z-10 w-full px-6 md:px-12 py-4 md:py-6">
+      <header className="relative z-10 w-full px-6 md:px-12 py-3 md:py-4 shrink-0">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <img src={logo} alt="Nihongo Playground" className="w-8 h-8 md:w-10 md:h-10 object-contain drop-shadow-sm" />
-            <span className="text-xl md:text-2xl font-black bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-300">
+          <div className="flex items-center gap-2.5 sm:gap-3">
+            <img src={logo} alt="Nihongo Playground" className="w-8 h-8 md:w-9 md:h-9 object-contain drop-shadow-sm" />
+            <span className="text-lg md:text-xl font-black bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-300">
               Nihongo Playground
             </span>
           </div>
@@ -85,19 +97,19 @@ const LandingPage = () => {
       </header>
 
       {/* Main Expansive Content (Balanced 2-Column on Desktop/Widescreen) */}
-      <main className="relative z-10 flex-1 flex items-center justify-center px-6 md:px-12 py-6 w-full max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center w-full">
+      <main className="relative z-10 flex-1 min-h-0 flex items-center justify-center px-5 sm:px-8 md:px-12 py-2 sm:py-4 w-full max-w-7xl mx-auto overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 xl:gap-12 items-center w-full my-auto">
           
           {/* Left Column: Hero, Call to Action, and Levels */}
           <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
             {/* Pill Tag */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-400 text-xs md:text-sm font-black mb-5 shadow-xs animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-400 text-xs font-black mb-3 md:mb-4 shadow-xs">
               <span>🌸</span>
               <span>All-In-One Japanese Mastery Platform • JLPT N5 → N1</span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black tracking-tight text-gray-900 dark:text-white leading-[1.1] mb-5 animate-fade-in">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black tracking-tight text-gray-900 dark:text-white leading-[1.12] mb-3 md:mb-4">
               Your Ultimate Dojo for <br className="hidden sm:inline" />
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-700 dark:from-emerald-400 dark:via-teal-300 dark:to-indigo-300">
                 Mastering the JLPT
@@ -105,16 +117,16 @@ const LandingPage = () => {
             </h1>
 
             {/* Subtitle */}
-            <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 max-w-xl leading-relaxed mb-8 font-medium animate-fade-in">
+            <p className="text-xs sm:text-sm md:text-base text-gray-600 dark:text-gray-300 max-w-xl leading-relaxed mb-4 md:mb-6 font-medium line-clamp-2 sm:line-clamp-none">
               Interactive Dokkai reading passages, digitized textbooks (Shin Kanzen & Speed Master), browser-based Anki flashcard engine, and FSRS-5 spaced repetition.
             </p>
 
             {/* Google Sign-in Call To Action */}
-            <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-8 animate-fade-in">
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto mb-4 md:mb-6">
               <button
                 type="button"
                 onClick={handleGoogleSignIn}
-                className="w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-white dark:bg-zinc-900 text-gray-900 dark:text-white font-black text-base border border-gray-300 dark:border-white/15 shadow-md hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer group"
+                className="w-full sm:w-auto flex items-center justify-center gap-3 px-6 sm:px-7 py-3 sm:py-3.5 rounded-2xl bg-white dark:bg-zinc-900 text-gray-900 dark:text-white font-black text-sm sm:text-base border border-gray-300 dark:border-white/15 shadow-md hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer group"
               >
                 <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24">
                   <path
@@ -143,12 +155,12 @@ const LandingPage = () => {
             </div>
 
             {/* Level Pills Bar */}
-            <div className="flex items-center gap-2 flex-wrap justify-center lg:justify-start">
+            <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap justify-center lg:justify-start">
               <span className="text-xs font-black uppercase text-gray-400 dark:text-gray-500 mr-1">Roadmap:</span>
               {levelPills.map((p) => (
                 <span
                   key={p.lvl}
-                  className="px-3 py-1 rounded-lg bg-white/80 dark:bg-zinc-900/60 border border-gray-200/80 dark:border-white/10 text-xs font-bold text-gray-800 dark:text-gray-200 shadow-2xs"
+                  className="px-2.5 py-1 rounded-lg bg-white/80 dark:bg-zinc-900/60 border border-gray-200/80 dark:border-white/10 text-xs font-bold text-gray-800 dark:text-gray-200 shadow-2xs"
                 >
                   <strong className="text-emerald-700 dark:text-emerald-400 mr-1">{p.lvl}</strong> {p.label}
                 </span>
@@ -157,23 +169,23 @@ const LandingPage = () => {
           </div>
 
           {/* Right Column: 4 Feature Showcase Cards */}
-          <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full animate-fade-in">
+          <div className="lg:col-span-5 grid grid-cols-2 gap-2.5 sm:gap-3 lg:gap-3.5 w-full">
             {featureCards.map((feat, i) => (
               <div
                 key={i}
-                className="bg-white/90 dark:bg-zinc-900/80 border border-gray-200/80 dark:border-white/10 rounded-3xl p-5 shadow-sm hover:shadow-lg hover:border-emerald-500/50 dark:hover:border-emerald-500/40 transition-all flex flex-col justify-between group"
+                className="bg-white/90 dark:bg-zinc-900/80 border border-gray-200/80 dark:border-white/10 rounded-2xl sm:rounded-3xl p-3 sm:p-4 lg:p-4 shadow-xs hover:shadow-md hover:border-emerald-500/50 dark:hover:border-emerald-500/40 transition-all flex flex-col justify-between group"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-2xl">{feat.icon}</span>
-                    <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/40">
+                  <div className="flex items-center justify-between mb-2 sm:mb-2.5">
+                    <span className="text-xl sm:text-2xl">{feat.icon}</span>
+                    <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-wider px-1.5 sm:px-2 py-0.5 rounded-md bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/40">
                       {feat.tag}
                     </span>
                   </div>
-                  <h3 className="text-sm font-black text-gray-900 dark:text-white group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors mb-1.5">
+                  <h3 className="text-xs sm:text-sm font-black text-gray-900 dark:text-white group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors mb-1">
                     {feat.title}
                   </h3>
-                  <p className="text-xs text-gray-600 dark:text-gray-300 leading-relaxed font-medium">
+                  <p className="text-[11px] sm:text-xs text-gray-600 dark:text-gray-300 leading-relaxed font-medium line-clamp-2 sm:line-clamp-3">
                     {feat.desc}
                   </p>
                 </div>
@@ -185,10 +197,10 @@ const LandingPage = () => {
       </main>
 
       {/* Minimal Footer */}
-      <footer className="relative z-10 w-full px-6 md:px-12 py-4">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500 dark:text-gray-400">
+      <footer className="relative z-10 w-full px-6 md:px-12 py-2.5 md:py-3 shrink-0">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] sm:text-xs text-gray-500 dark:text-gray-400">
           <div className="flex items-center gap-2">
-            <img src={logo} alt="Logo" className="w-4 h-4 object-contain" />
+            <img src={logo} alt="Logo" className="w-3.5 h-3.5 object-contain" />
             <span className="font-bold text-gray-700 dark:text-gray-300">Nihongo Playground</span>
           </div>
           <p>© {new Date().getFullYear()} Nihongo Playground • Modern Japanese Learning Platform</p>

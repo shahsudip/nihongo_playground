@@ -708,17 +708,34 @@ body {
   background-color: #c0392b; /* Darker red on hover */
 }
 
-.datetime-display .date-part {
-  color: #f4f5f7; /* A professional blue */
-  font-weight: 500;
-  font-size: 0.7em;
+.datetime-display {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 0.85rem;
+}
 
+.datetime-display .date-part {
+  color: var(--color-text-primary, #111827);
+  font-weight: 600;
+  font-size: 0.9em;
 }
 
 .datetime-display .time-part {
-  color: #f9fbfc; /* A rich purple */
-  margin-left: 8px;
-  font-size: 0.7em;
+  color: var(--color-text-muted, #6b7280);
+  margin-left: 4px;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.theme-dark .datetime-display .date-part,
+[data-theme='dark'] .datetime-display .date-part {
+  color: #e2e8f0;
+}
+
+.theme-dark .datetime-display .time-part,
+[data-theme='dark'] .datetime-display .time-part {
+  color: #94a3b8;
 }
 
 /* Optional: Add a container for better layout on the quiz button */

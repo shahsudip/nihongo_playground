@@ -460,7 +460,7 @@ const DailySprintRunnerPage = () => {
                 type="button"
                 disabled={!currentChoice}
                 onClick={handleSubmitCurrentAnswer}
-                className="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-700 disabled:opacity-40 text-white font-bold transition shadow-md"
+                className="w-full py-3 rounded-xl bg-primary hover:bg-primary-dark disabled:opacity-40 text-white font-bold transition shadow-md"
               >
                 Check Answer
               </button>

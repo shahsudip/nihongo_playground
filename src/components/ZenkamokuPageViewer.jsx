@@ -16,8 +16,6 @@ export default function ZenkamokuPageViewer() {
 
   // Persistent answers state
   const [savedAnswers, setSavedAnswers] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isSaving, setIsSaving] = useState(false);
 
   // Derive current bookId
   const currentBookId = window.location.pathname.includes('zenkamoku-n2')
@@ -26,77 +24,116 @@ export default function ZenkamokuPageViewer() {
   const historyDocId = currentUser ? `${currentBookId}-${chapterId}` : null;
   const storageKey = currentUser ? `zenkamoku-progress-${currentUser.uid}-${historyDocId}` : null;
 
-  // Load progress on mount/chapter change
+  // Load progress on mount/chapter change from both localStorage and Firestore
   useEffect(() => {
-    if (storageKey) {
-      const cached = localStorage.getItem(storageKey);
-      if (cached) {
-        setSavedAnswers(JSON.parse(cached));
-      } else {
-        setSavedAnswers({});
-      }
-    }
-  }, [storageKey]);
+    let isMounted = true;
 
-  // Check if it was already submitted in Firestore
-  useEffect(() => {
-    if (currentUser && historyDocId) {
-      const checkHistory = async () => {
-        const ref = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
-        const snap = await getDoc(ref);
-        setIsSubmitted(snap.exists());
-      };
-      checkHistory();
-    }
-  }, [currentUser, historyDocId]);
+    const loadState = async () => {
+      let answersToSet = {};
+
+      // 1. Check localStorage first
+      if (storageKey) {
+        try {
+          const cached = localStorage.getItem(storageKey);
+          if (cached) {
+            const parsed = JSON.parse(cached);
+            if (parsed && typeof parsed === 'object') {
+              const localAns = parsed.answers || parsed;
+              if (localAns && typeof localAns === 'object' && Object.keys(localAns).length > 0) {
+                answersToSet = localAns;
+              }
+            }
+          }
+        } catch (e) {
+          console.warn("Could not read local Zenkamoku cache:", e);
+        }
+      }
+
+      // 2. Check Firestore record
+      if (currentUser && historyDocId) {
+        try {
+          const ref = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
+          const snap = await getDoc(ref);
+          if (snap.exists()) {
+            const data = snap.data();
+            if (data.answers && typeof data.answers === 'object' && Object.keys(data.answers).length > 0) {
+              if (Object.keys(data.answers).length >= Object.keys(answersToSet).length) {
+                answersToSet = data.answers;
+              }
+            }
+          }
+        } catch (err) {
+          console.warn("Could not read Firestore Zenkamoku history:", err);
+        }
+      }
+
+      if (isMounted) {
+        setSavedAnswers(answersToSet);
+      }
+    };
+
+    loadState();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [currentUser, historyDocId, storageKey]);
 
   const handleAnswer = (qIdx, optText, isCorrect) => {
     setSavedAnswers(prev => {
       const next = { ...prev, [qIdx]: { text: optText, isCorrect } };
-      if (storageKey) localStorage.setItem(storageKey, JSON.stringify(next));
+      
+      // 1. Immediately cache in localStorage
+      if (storageKey) {
+        try {
+          localStorage.setItem(storageKey, JSON.stringify({
+            answers: next,
+            timestamp: new Date().toISOString()
+          }));
+        } catch (e) {
+          console.warn("Could not save to localStorage:", e);
+        }
+      }
+
+      // 2. Auto-sync to Firestore so answers and score are preserved even if tab closes
+      if (currentUser && historyDocId && questions.length > 0) {
+        const correctCount = Object.values(next).filter(a => a && a.isCorrect).length;
+        const historyRef = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
+        setDoc(historyRef, {
+          quizId: historyDocId,
+          bookId: currentBookId,
+          chapterId,
+          title: (chapter?.weekTitle || '') + ' ' + (chapter?.dayTitle || ''),
+          type: 'book',
+          timestamp: new Date().toISOString(),
+          score: correctCount,
+          total: questions.length,
+          answered: Object.keys(next).length,
+          answers: next,
+          status: Object.keys(next).length === questions.length ? 'completed' : 'incomplete'
+        }, { merge: true }).catch(err => console.warn("Background answer sync error:", err));
+      }
+
       return next;
     });
   };
 
-  const submitChapter = async () => {
-    if (!currentUser) return;
-    setIsSaving(true);
-    try {
-      const historyRef = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
-      const correctCount = Object.values(savedAnswers).filter(a => a.isCorrect).length;
-      
-      const record = {
-        quizId: historyDocId,
-        bookId: currentBookId,
-        chapterId,
-        title: (chapter.weekTitle || '') + ' ' + (chapter.dayTitle || ''),
-        type: 'book',
-        timestamp: new Date().toISOString(),
-        score: correctCount,
-        total: questions.length,
-        answered: Object.keys(savedAnswers).length,
-        status: 'completed'
-      };
-
-      await setDoc(historyRef, record, { merge: true });
-      setIsSubmitted(true);
-    } catch (err) {
-      console.error('Failed to save score:', err);
-    } finally {
-      setIsSaving(false);
-    }
-  };
-
   const resetChapter = async () => {
-    if (!window.confirm('Are you sure you want to reset your progress? This will delete your score from your profile and clear all answers on this page.')) return;
+    if (!window.confirm('Are you sure you want to reset your progress? This will clear your score and answers so you can retake every question from scratch.')) return;
     
     setSavedAnswers({});
-    setIsSubmitted(false);
-    if (storageKey) localStorage.removeItem(storageKey);
+    if (storageKey) {
+      try {
+        localStorage.removeItem(storageKey);
+      } catch (e) {
+        console.warn(e);
+      }
+    }
     
     if (currentUser && historyDocId) {
       try {
-        await deleteDoc(doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId));
+        const historyRef = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
+        await deleteDoc(historyRef);
       } catch (err) {
         console.error('Failed to reset history in db:', err);
       }
@@ -179,14 +216,6 @@ export default function ZenkamokuPageViewer() {
               </div>
             </div>
           </div>
-          
-          {chapter.sectionTitle && (
-            <div className="px-6 mt-4">
-              <div className="inline-block border-2 border-black dark:border-white px-4 py-1 font-bold text-lg md:text-xl rounded-sm">
-                {chapter.sectionTitle} {chapter.sectionTitleEn ? <span className="font-normal ml-2 text-base">{chapter.sectionTitleEn}</span> : ''}
-              </div>
-            </div>
-          )}
         </div>
 
         {/* CONTENT AREA */}
@@ -253,7 +282,7 @@ export default function ZenkamokuPageViewer() {
                       q={q}
                       qIdx={`${secIdx}-${qIdx}`}
                       onAnswer={handleAnswer}
-                      savedOption={savedAnswers[`${secIdx}-${qIdx}`]?.text}
+                      savedOption={savedAnswers[`${secIdx}-${qIdx}`]}
                     />
                   ))}
                 </div>
@@ -267,35 +296,77 @@ export default function ZenkamokuPageViewer() {
                   q={q}
                   qIdx={`flat-${qIdx}`}
                   onAnswer={handleAnswer}
-                  savedOption={savedAnswers[`flat-${qIdx}`]?.text}
+                  savedOption={savedAnswers[`flat-${qIdx}`]}
                 />
               ))}
             </div>
           )}
 
-          {/* Submit/Reset Button */}
-          {questions.length > 0 && (
+          {/* Live Score & Retake Card (Only shown if at least one question has been answered) */}
+          {questions.length > 0 && Object.keys(savedAnswers).length > 0 && (
             <div className="mt-16 flex flex-col items-center justify-center border-t border-gray-300 dark:border-gray-700 pt-8 pb-12">
-              {!isSubmitted ? (
-                <button
-                  onClick={submitChapter}
-                  disabled={isSaving}
-                  className="px-8 py-3 bg-black dark:bg-white text-white dark:text-black font-bold text-lg rounded shadow hover:scale-105 transition-all disabled:opacity-50"
-                >
-                  {isSaving ? 'Saving...' : 'Finish Chapter & Save Score'}
-                </button>
-              ) : (
-                <div className="text-center w-full max-w-sm">
-                  <h3 className="text-2xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">Chapter Completed!</h3>
-                  <p className="text-xl font-medium mb-6">Score: {Object.values(savedAnswers).filter(a => a.isCorrect).length} / {questions.length} Points</p>
+              <div className="text-center w-full max-w-md bg-white dark:bg-[#1e293b] p-5 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
+                {(() => {
+                  const answeredCount = Object.keys(savedAnswers).length;
+                  const calculatedScore = Object.values(savedAnswers).filter(a => a && a.isCorrect).length;
+                  const finalScore = calculatedScore;
+                  const totalCount = questions.length;
+                  const pct = totalCount > 0 ? Math.round((finalScore / totalCount) * 100) : 0;
+                  const isAllAttempted = answeredCount === totalCount && totalCount > 0;
+
+                  let statusLabel = '⏳ Unfinished';
+                  let statusBadgeClass = 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300 border-amber-300 dark:border-amber-700';
+
+                  if (isAllAttempted) {
+                    if (pct >= 80 && finalScore > 0) {
+                      statusLabel = '🏆 Mastered';
+                      statusBadgeClass = 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 border-emerald-400';
+                    } else {
+                      statusLabel = '📝 Completed';
+                      statusBadgeClass = 'bg-blue-100 text-blue-800 dark:bg-blue-950/60 dark:text-blue-300 border-blue-400';
+                    }
+                  }
+
+                  return (
+                    <div className="flex flex-col items-center gap-2">
+                      <div className="flex items-center justify-center gap-2.5 flex-wrap">
+                        <span className="text-base font-semibold text-gray-800 dark:text-gray-200">
+                          Score: <strong className="text-lg font-bold text-gray-900 dark:text-white">{finalScore} / {totalCount}</strong> ({pct}%)
+                        </span>
+                        <span className={`px-2.5 py-0.5 rounded-full text-xs font-bold border ${statusBadgeClass}`}>
+                          {statusLabel}
+                        </span>
+                      </div>
+                    </div>
+                  );
+                })()}
+
+                <div className="flex items-center justify-center gap-3 mt-4 flex-wrap">
                   <button
                     onClick={resetChapter}
-                    className="w-full px-6 py-2 border-2 border-red-500 text-red-600 dark:text-red-400 font-bold rounded hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors"
+                    className="px-5 py-2 border-2 border-red-500 text-red-600 dark:text-red-400 font-bold rounded-xl hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors cursor-pointer text-sm flex items-center gap-1.5"
                   >
-                    Reset Score & Progress
+                    <span>🔄</span>
+                    <span>Reset Score &amp; Retake</span>
                   </button>
+                  {(() => {
+                    const nextChap = currentDay < 5
+                      ? `w${String(currentWeek).padStart(2, '0')}-d${String(currentDay + 1).padStart(2, '0')}`
+                      : currentWeek < 12
+                      ? `w${String(currentWeek + 1).padStart(2, '0')}-d01`
+                      : null;
+
+                    return nextChap ? (
+                      <button
+                        onClick={() => navigate(`/books/${currentBookId}/chapters/${nextChap}`)}
+                        className="px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl transition-colors cursor-pointer text-sm flex items-center gap-1.5 shadow-sm"
+                      >
+                        <span>Next Day &rarr;</span>
+                      </button>
+                    ) : null;
+                  })()}
                 </div>
-              )}
+              </div>
             </div>
           )}
         </div>
@@ -308,8 +379,8 @@ export default function ZenkamokuPageViewer() {
       <div className="w-full bg-white dark:bg-[#1e293b] shadow-xl min-h-[80vh] relative">
         <div className="absolute -top-12 left-0 w-full flex justify-between items-end">
           <button
-            onClick={() => navigate(`/books/${currentBookId}`)}
-            className="text-sm text-gray-500 hover:text-black dark:hover:text-white transition-colors pb-1"
+            onClick={() => navigate('/books')}
+            className="text-sm text-gray-500 hover:text-black dark:hover:text-white transition-colors pb-1 cursor-pointer"
           >
             ← Exit Book
           </button>
@@ -346,7 +417,9 @@ export default function ZenkamokuPageViewer() {
 
 function QuestionBlock({ q, qIdx, onAnswer, savedOption }) {
   const [showScript, setShowScript] = useState(false);
-  const selectedOption = savedOption || null;
+  const selectedOption = savedOption
+    ? (typeof savedOption === 'object' && savedOption !== null ? savedOption.text : savedOption)
+    : null;
   const correctOptionText = q.correctOption
     ? typeof q.correctOption === 'object'
       ? q.correctOption.text
@@ -356,8 +429,10 @@ function QuestionBlock({ q, qIdx, onAnswer, savedOption }) {
   return (
     <div className="flex flex-col gap-4 text-lg md:text-xl border-b border-gray-200 dark:border-gray-800 pb-10 last:border-0">
       <div className="flex items-start gap-4">
-        <div className="shrink-0 border border-black dark:border-white w-8 h-8 flex items-center justify-center font-bold text-lg">
-          {q.number || ''}
+        <div className="flex flex-col items-center gap-1.5 shrink-0">
+          <div className="border border-black dark:border-white w-8 h-8 flex items-center justify-center font-bold text-lg">
+            {q.number || ''}
+          </div>
         </div>
         <div className="flex-1">
           {q.trackId && (
@@ -385,7 +460,7 @@ function QuestionBlock({ q, qIdx, onAnswer, savedOption }) {
               </audio>
               <button
                 onClick={() => setShowScript(!showScript)}
-                className="px-3 py-1.5 text-sm font-bold bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded transition-colors"
+                className="px-3 py-1.5 text-sm font-bold bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded transition-colors cursor-pointer"
               >
                 {showScript ? 'Hide Script' : '📄 Show Script'}
               </button>
@@ -419,26 +494,28 @@ function QuestionBlock({ q, qIdx, onAnswer, savedOption }) {
       </div>
 
       {q.options && q.options.length > 0 && (
-        <div className="ml-12 flex flex-col gap-2 mt-2">
-          <div className="flex flex-wrap gap-x-6 gap-y-3">
+        <div className="ml-0 sm:ml-12 flex flex-col gap-2 mt-3 w-full">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 w-full">
             {q.options.map((opt, optIdx) => {
               const optText = typeof opt === 'object' ? opt.text : opt;
+              const isThisCorrect = optText === correctOptionText;
+              const isSelected = optText === selectedOption;
+
               let btnClass =
-                'px-4 py-2 border rounded cursor-pointer transition-colors whitespace-nowrap text-left ';
+                'w-full px-4 py-3 border-2 rounded-xl cursor-pointer transition-all text-left text-base flex items-center justify-start ';
               if (selectedOption === null) {
                 btnClass +=
-                  'border-gray-300 hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-800 bg-white dark:bg-gray-800';
+                  'border-gray-300 hover:border-gray-400 hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-800 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm';
               } else {
-                const isThisCorrect = optText === correctOptionText;
                 if (isThisCorrect) {
                   btnClass +=
-                    'bg-emerald-100 border-emerald-500 text-emerald-900 dark:bg-emerald-900/50 dark:text-emerald-400 dark:border-emerald-500 shadow-sm font-bold';
-                } else if (optText === selectedOption && !isThisCorrect) {
+                    'bg-emerald-50 border-emerald-500 text-emerald-900 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-500 shadow-sm font-semibold';
+                } else if (isSelected && !isThisCorrect) {
                   btnClass +=
-                    'bg-red-100 border-red-500 text-red-900 dark:bg-red-900/50 dark:text-red-400 dark:border-red-500 shadow-sm';
+                    'bg-rose-50 border-rose-500 text-rose-900 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-500 shadow-sm font-semibold';
                 } else {
                   btnClass +=
-                    'border-gray-200 opacity-50 dark:border-gray-700 bg-white dark:bg-gray-800';
+                    'border-gray-200 opacity-50 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400';
                 }
               }
 
@@ -447,14 +524,16 @@ function QuestionBlock({ q, qIdx, onAnswer, savedOption }) {
                   key={optIdx}
                   onClick={() => {
                     if (onAnswer) {
-                      const isCorrect = optText === correctOptionText;
-                      onAnswer(qIdx, optText, isCorrect);
+                      onAnswer(qIdx, optText, isThisCorrect);
                     }
                   }}
                   disabled={selectedOption !== null}
                   className={btnClass}
                 >
-                  <span dangerouslySetInnerHTML={{ __html: optText }} />
+                  <span
+                    className="w-full text-left leading-relaxed font-medium"
+                    dangerouslySetInnerHTML={{ __html: optText }}
+                  />
                 </button>
               );
             })}
@@ -462,16 +541,19 @@ function QuestionBlock({ q, qIdx, onAnswer, savedOption }) {
 
           {selectedOption !== null && (
             <div
-              className={`mt-4 p-4 rounded text-base border shadow-sm ${
+              className={`mt-5 p-4.5 md:p-5 rounded-2xl text-base border-2 shadow-sm transition-all animate-fade-in ${
                 selectedOption === correctOptionText
-                  ? 'bg-emerald-50 border-emerald-200 dark:bg-emerald-900/10 dark:border-emerald-800'
-                  : 'bg-red-50 border-red-200 dark:bg-red-900/10 dark:border-red-800'
+                  ? 'bg-emerald-50/90 border-emerald-500/40 dark:bg-emerald-950/30 dark:border-emerald-500/40 text-emerald-950 dark:text-emerald-100'
+                  : 'bg-rose-50/90 border-rose-500/40 dark:bg-rose-950/30 dark:border-rose-500/40 text-rose-950 dark:text-rose-100'
               }`}
             >
-              <div className="font-bold mb-2 text-lg">
-                {selectedOption === correctOptionText ? '✅ Correct' : '❌ Incorrect'}
+              <div className="flex items-center gap-2 font-black mb-2.5 text-xs uppercase tracking-wider">
+                <span className="text-base">{selectedOption === correctOptionText ? '✅' : '❌'}</span>
+                <span className={selectedOption === correctOptionText ? 'text-emerald-800 dark:text-emerald-300' : 'text-rose-800 dark:text-rose-300'}>
+                  {selectedOption === correctOptionText ? '正解 • Correct Answer Explanation' : '解説 • Incorrect Answer Explanation'}
+                </span>
               </div>
-              <div className="text-gray-800 dark:text-gray-200">
+              <div className="text-gray-900 dark:text-gray-100 leading-relaxed font-medium text-sm md:text-base">
                 {q.explanation || q.kaisetsu ? (
                   <div
                     dangerouslySetInnerHTML={{
