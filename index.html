@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700;900&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nihongo Playground</title>
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('app_theme') || localStorage.getItem('shin500_theme') || 'light';
+          var theme = saved === 'dark' ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', theme);
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark', 'theme-dark');
+            document.documentElement.classList.remove('theme-light');
+            document.documentElement.style.backgroundColor = '#0d1117';
+            document.documentElement.style.color = '#f0f6fc';
+          } else {
+            document.documentElement.classList.add('theme-light');
+            document.documentElement.classList.remove('dark', 'theme-dark');
+            document.documentElement.style.backgroundColor = '#f8f6f0';
+            document.documentElement.style.color = '#111827';
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/nihongo_playground/assets/index-B9Z6YMSo.js"></script>
+    <link rel="modulepreload" crossorigin href="/nihongo_playground/assets/vendor-react-B1MCYmX_.js">
+    <link rel="modulepreload" crossorigin href="/nihongo_playground/assets/vendor-firebase-B-p71S5E.js">
+    <link rel="stylesheet" crossorigin href="/nihongo_playground/assets/index-C5AtRXHy.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
