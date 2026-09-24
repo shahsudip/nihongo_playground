@@ -95,7 +95,14 @@
           ],
           "correct": 1,
           "correctOption": "1. 終わったら",
-          "starPosition": 2
+          "starPosition": 2,
+          "correctOrder": [
+            2,
+            1,
+            4,
+            3
+          ],
+          "explanation": "<b>【正解】1</b><br/>【文の並び替え】ご飯を <u>食べ</u> <u>★終わったら</u> <u>お皿を</u> <u>洗って</u> おいてください。<br/><b>～終わる</b>：動作の終わりを表す finish ～"
         },
         {
           "number": 2,
@@ -108,7 +115,14 @@
           ],
           "correct": 3,
           "correctOption": "3. 上手",
-          "starPosition": 3
+          "starPosition": 3,
+          "correctOrder": [
+            4,
+            1,
+            3,
+            2
+          ],
+          "explanation": "<b>【正解】3</b><br/>【文の並び替え】私は彼 <u>ほど</u> <u>英語が</u> <u>★上手</u> <u>ではない</u> から、留学するのが不安なんです。<br/><b>～ほど…ない</b>：～に比べると…ではない not … as ～"
         },
         {
           "number": 3,
@@ -121,7 +135,14 @@
           ],
           "correct": 4,
           "correctOption": "4. 寝て",
-          "starPosition": 3
+          "starPosition": 3,
+          "correctOrder": [
+            2,
+            1,
+            4,
+            3
+          ],
+          "explanation": "<b>【正解】4</b><br/>【文の並び替え】いつも仕事が大変で <u>疲れて</u> <u>いるから</u> <u>★寝て</u> <u>ばかり</u> いたよ。<br/><b>～てばかりいる</b>：同じことをずっとしている様子を表す always just ～"
         },
         {
           "number": 4,
@@ -134,7 +155,14 @@
           ],
           "correct": 2,
           "correctOption": "2. 国",
-          "starPosition": 3
+          "starPosition": 3,
+          "correctOrder": [
+            1,
+            3,
+            2,
+            4
+          ],
+          "explanation": "<b>【正解】2</b><br/>【文の並び替え】お酒を飲んでもいい <u>年齢</u> <u>は</u> <u>★国</u> <u>によって</u> 違う。<br/><b>…は～によって違う</b>：～が違うと…も変わる … differs by ～"
         },
         {
           "number": 5,
@@ -147,7 +175,14 @@
           ],
           "correct": 4,
           "correctOption": "4. ついでに",
-          "starPosition": 2
+          "starPosition": 2,
+          "correctOrder": [
+            2,
+            4,
+            3,
+            1
+          ],
+          "explanation": "<b>【正解】4</b><br/>【文の並び替え】あとで <u>買い物に行く</u> <u>★ついでに</u> <u>さっき書いた</u> <u>手紙を出して</u> きてくれませんか。<br/><b>～ついでに</b>：～するときに他の一緒にする while ～"
         }
       ]
     }

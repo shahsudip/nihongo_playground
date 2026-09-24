@@ -100,7 +100,14 @@
           ],
           "explanation": "<b>【正解】1</b><br/>【文の並び替え】皆様にお配り<u>した</u><u>資料</u><u>に沿って</u><u>ご説明して</u>いきます<br/><b>〜に沿って</b>：〜に従って　〜から離れないように",
           "correct": 1,
-          "correctOption": "1. に沿って"
+          "correctOption": "1. に沿って",
+          "starPosition": 3,
+          "correctOrder": [
+            3,
+            4,
+            1,
+            2
+          ]
         },
         {
           "number": 2,
@@ -113,7 +120,14 @@
           ],
           "explanation": "<b>【正解】3</b><br/>【文の並び替え】大雪の<u>影響で</u><u>電車が止まり</u><u>打ち合わせの場所へ</u><u>行きようが</u>なかったので、日程を変更してもらった<br/><b>〜ようがない</b>：〜したいが、手段・方法がなくてできない",
           "correct": 3,
-          "correctOption": "3. 電車が止まり"
+          "correctOption": "3. 電車が止まり",
+          "starPosition": 2,
+          "correctOrder": [
+            2,
+            3,
+            4,
+            1
+          ]
         },
         {
           "number": 3,
@@ -126,7 +140,14 @@
           ],
           "explanation": "<b>【正解】4</b><br/>【文の並び替え】的確に<u>答えられなかった</u><u>からといって</u><u>不合格</u><u>とは限らないんだから</u>そんなに落ち込む必要はないよ<br/><b>〜からといって</b>：たとえ〜という理由があっても",
           "correct": 4,
-          "correctOption": "4. とは限らないんだから"
+          "correctOption": "4. とは限らないんだから",
+          "starPosition": 4,
+          "correctOrder": [
+            3,
+            1,
+            2,
+            4
+          ]
         },
         {
           "number": 4,
@@ -139,7 +160,14 @@
           ],
           "explanation": "<b>【正解】1</b><br/>【文の並び替え】有名なこの祭りは<u>数日間</u><u>にわたって</u><u>行われ</u><u>毎年約100万人</u>の観光客が来る。<br/><b>〜にわたって</b>：〜の長い間　〜の範囲全体で",
           "correct": 1,
-          "correctOption": "1. にわたって"
+          "correctOption": "1. にわたって",
+          "starPosition": 2,
+          "correctOrder": [
+            2,
+            1,
+            3,
+            4
+          ]
         },
         {
           "number": 5,
@@ -152,7 +180,14 @@
           ],
           "explanation": "<b>【正解】1</b><br/>【文の並び替え】新入社員の皆さんも遠慮せず、<u>思う</u><u>ままに</u><u>発言して</u><u>もらいたい</u>と思っています<br/><b>〜ままに</b>：〜とおりに、そのまま",
           "correct": 1,
-          "correctOption": "1. ままに"
+          "correctOption": "1. ままに",
+          "starPosition": 2,
+          "correctOrder": [
+            4,
+            1,
+            2,
+            3
+          ]
         }
       ]
     }

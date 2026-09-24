@@ -100,7 +100,14 @@
           ],
           "explanation": "<b>【正解】3</b><br/>【文の並び替え】好きな<u>酒を買ってきて</u><u>おしゃべりし</u><u>つつ</u><u>桜を眺める</u>のが、春の一番の楽しみである<br/><b>〜つつ</b>：〜ながら　※動詞のます形に接続する。",
           "correct": 3,
-          "correctOption": "3. おしゃべりし"
+          "correctOption": "3. おしゃべりし",
+          "starPosition": 2,
+          "correctOrder": [
+            4,
+            3,
+            1,
+            2
+          ]
         },
         {
           "number": 2,
@@ -113,7 +120,14 @@
           ],
           "explanation": "<b>【正解】4</b><br/>【文の並び替え】親が反対している<u>以上</u><u>進学をあきらめて</u><u>進路を変え</u><u>ざるを得ない</u>だろう。<br/><b>〜ざるを得ない</b>：「本当は〜したくないが、しなければならない」という意味",
           "correct": 4,
-          "correctOption": "4. 進路を変え"
+          "correctOption": "4. 進路を変え",
+          "starPosition": 3,
+          "correctOrder": [
+            2,
+            3,
+            4,
+            1
+          ]
         },
         {
           "number": 3,
@@ -126,7 +140,14 @@
           ],
           "explanation": "<b>【正解】3</b><br/>【文の並び替え】家事を手伝ったが、<u>感謝される</u><u>どころか</u><u>やらない</u><u>ほうがましだ</u>と、ひどく怒られてしまった<br/><b>〜どころか…</b>：「〜という予想や期待とは全然違って…」という意味",
           "correct": 3,
-          "correctOption": "3. どころか"
+          "correctOption": "3. どころか",
+          "starPosition": 2,
+          "correctOrder": [
+            4,
+            3,
+            2,
+            1
+          ]
         },
         {
           "number": 4,
@@ -139,7 +160,14 @@
           ],
           "explanation": "<b>【正解】1</b><br/>【文の並び替え】安全が<u>確認され</u><u>次第</u><u>運転を</u><u>再開</u>いたしますので<br/><b>〜次第</b>：〜したら、すぐ　※動詞のます形に接続する。",
           "correct": 1,
-          "correctOption": "1. 運転を"
+          "correctOption": "1. 運転を",
+          "starPosition": 3,
+          "correctOrder": [
+            4,
+            2,
+            1,
+            3
+          ]
         },
         {
           "number": 5,
@@ -152,7 +180,14 @@
           ],
           "explanation": "<b>【正解】2</b><br/>【文の並び替え】優勝できる<u>かどうか</u><u>はともかく</u><u>後悔しないように</u><u>準備</u>はしっかりしておくべきだ<br/><b>〜はともかく…</b>：「〜も大切だが、今は〜を考えず…を優先させる」という意味",
           "correct": 2,
-          "correctOption": "2. 後悔しないように"
+          "correctOption": "2. 後悔しないように",
+          "starPosition": 3,
+          "correctOrder": [
+            3,
+            1,
+            2,
+            4
+          ]
         }
       ]
     }

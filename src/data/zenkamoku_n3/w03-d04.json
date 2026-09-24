@@ -95,7 +95,14 @@
           ],
           "correct": 3,
           "correctOption": "3. 練習する",
-          "starPosition": 2
+          "starPosition": 2,
+          "correctOrder": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "explanation": "<b>【正解】3</b><br/>【文の並び替え】ピアノは一生懸命 <u>練習すれば</u> <u>★練習する</u> <u>ほど</u> <u>上手に</u> なると思います。<br/><b>～ば～ほど</b>：～の程度が増すと、それと一緒に…も変化する the more ～, the more …"
         },
         {
           "number": 2,
@@ -108,7 +115,14 @@
           ],
           "correct": 4,
           "correctOption": "4. うそを",
-          "starPosition": 3
+          "starPosition": 3,
+          "correctOrder": [
+            2,
+            1,
+            4,
+            3
+          ],
+          "explanation": "<b>【正解】4</b><br/>【文の並び替え】大切な <u>友達に</u> <u>対して</u> <u>★うそを</u> <u>つく</u> ことはできません。<br/><b>～に対して</b>：行動の対象を表す to ～"
         },
         {
           "number": 3,
@@ -121,7 +135,14 @@
           ],
           "correct": 3,
           "correctOption": "3. 近くで",
-          "starPosition": 3
+          "starPosition": 1,
+          "correctOrder": [
+            3,
+            1,
+            4,
+            2
+          ],
+          "explanation": "<b>【正解】4</b><br/>【文の並び替え】夜中に家の <u>近くで</u> <u>大きな</u> <u>★音が</u> <u>して</u> 目が覚めてしまった。<br/><b>～がする</b>：声や音、味、匂いなどを感じる ～ occurs"
         },
         {
           "number": 4,
@@ -134,7 +155,14 @@
           ],
           "correct": 1,
           "correctOption": "1. 顔を",
-          "starPosition": 3
+          "starPosition": 3,
+          "correctOrder": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "explanation": "<b>【正解】1</b><br/>【文の並び替え】娘が <u>今にも</u> <u>泣きそうな</u> <u>★顔を</u> <u>して</u> 学校から帰ってきた。<br/><b>今にも</b>：すぐ もう少しで (be) on the verge of"
         },
         {
           "number": 5,
@@ -147,7 +175,14 @@
           ],
           "correct": 2,
           "correctOption": "2. からでない",
-          "starPosition": 2
+          "starPosition": 2,
+          "correctOrder": [
+            3,
+            2,
+            4,
+            1
+          ],
+          "explanation": "<b>【正解】2</b><br/>【文の並び替え】このレストランは人気で、<u>予約して</u> <u>★からでない</u> <u>と</u> <u>店に入る</u> ことができない。<br/><b>～てからでないと</b>：～が終わってからでなければ unless ～ first"
         }
       ]
     }

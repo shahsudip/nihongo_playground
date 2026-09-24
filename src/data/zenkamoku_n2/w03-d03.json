@@ -100,7 +100,14 @@
           ],
           "explanation": "<b>【正解】1</b><br/>【文の並び替え】体のほうが<u>大切だから</u><u>そんなに高い熱があるなら</u><u>無理してまで</u><u>来なくて</u>いいよ<br/><b>〜てまで</b>：〜のような程度まで",
           "correct": 1,
-          "correctOption": "1. 無理してまで"
+          "correctOption": "1. 無理してまで",
+          "starPosition": 3,
+          "correctOrder": [
+            4,
+            3,
+            1,
+            2
+          ]
         },
         {
           "number": 2,
@@ -113,7 +120,14 @@
           ],
           "explanation": "<b>【正解】4</b><br/>【文の並び替え】子どもに<u>車を</u><u>買って</u><u>やったと</u><u>いっても</u>新しいのではなくて、中古です<br/><b>〜といっても</b>：〜というけれど、実際は…",
           "correct": 4,
-          "correctOption": "4. やったと"
+          "correctOption": "4. やったと",
+          "starPosition": 3,
+          "correctOrder": [
+            2,
+            1,
+            4,
+            3
+          ]
         },
         {
           "number": 3,
@@ -126,7 +140,14 @@
           ],
           "explanation": "<b>【正解】4</b><br/>【文の並び替え】まだ<u>7歳なのに</u><u>こんな言葉を</u><u>知っているなんて</u><u>立派なものだと</u>感心した<br/><b>〜ものだ</b>：「本当に〜だなあ」と驚きを表す表現",
           "correct": 4,
-          "correctOption": "4. こんな言葉を"
+          "correctOption": "4. こんな言葉を",
+          "starPosition": 2,
+          "correctOrder": [
+            2,
+            4,
+            1,
+            3
+          ]
         },
         {
           "number": 4,
@@ -139,7 +160,14 @@
           ],
           "explanation": "<b>【正解】2</b><br/>【文の並び替え】屋外で行われるので<u>天候</u><u>に応じた</u><u>服装</u><u>で</u>ご参加ください<br/><b>〜に応じた</b>：〜に合わせた",
           "correct": 2,
-          "correctOption": "2. に応じた"
+          "correctOption": "2. に応じた",
+          "starPosition": 2,
+          "correctOrder": [
+            3,
+            2,
+            4,
+            1
+          ]
         },
         {
           "number": 5,
@@ -152,7 +180,14 @@
           ],
           "explanation": "<b>【正解】4</b><br/>【文の並び替え】この街に<u>来たからには</u><u>歴史のある</u><u>お寺や神社を</u><u>一度は見に</u>行きたい<br/><b>〜からには</b>：〜のだから、当然…",
           "correct": 4,
-          "correctOption": "4. 歴史のある"
+          "correctOption": "4. 歴史のある",
+          "starPosition": 2,
+          "correctOrder": [
+            1,
+            4,
+            2,
+            3
+          ]
         }
       ]
     }

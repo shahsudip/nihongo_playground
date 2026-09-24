@@ -437,6 +437,61 @@ export default function ZenkamokuPageViewer() {
   );
 }
 
+function SentenceCompositionStem({ q, placedMap }) {
+  const stem = q.stem || q.questionText || '';
+  const match = stem.match(/^(.*?)(?:(?:＿＿＿|＿＿|<u>\s*★\s*<\/u>|★|\s)+)([^＿★]*)$/);
+  
+  if (!match || !q.correctOrder) {
+    return <span className="leading-loose" dangerouslySetInnerHTML={{ __html: stem }} />;
+  }
+
+  const prefix = match[1].trim();
+  const suffix = match[2].trim();
+
+  return (
+    <div className="inline-flex flex-wrap items-baseline gap-y-3 gap-x-1.5 leading-loose text-lg md:text-xl font-medium text-gray-900 dark:text-gray-100">
+      {prefix && <span dangerouslySetInnerHTML={{ __html: prefix }} />}
+      
+      <div className="inline-flex flex-wrap items-center gap-1.5 align-middle mx-1 py-1">
+        {[1, 2, 3, 4].map((slotNum) => {
+          const isStar = slotNum === q.starPosition;
+          const placedText = placedMap[slotNum];
+          
+          return (
+            <div
+              key={slotNum}
+              className={`min-w-[80px] md:min-w-[100px] min-h-[38px] px-3 py-1 border-b-2 rounded-t flex items-center justify-center text-center transition-all duration-300 relative ${
+                placedText
+                  ? isStar
+                    ? 'border-amber-500 bg-amber-50/90 dark:bg-amber-950/40 text-amber-950 dark:text-amber-200 font-bold shadow-sm ring-2 ring-amber-400/30'
+                    : 'border-indigo-500 bg-indigo-50/80 dark:bg-indigo-950/30 text-indigo-950 dark:text-indigo-200 font-medium shadow-xs'
+                  : isStar
+                  ? 'border-amber-500 bg-amber-50/30 dark:bg-amber-950/20 text-amber-500 border-dashed hover:bg-amber-50/50'
+                  : 'border-gray-400 dark:border-gray-500 bg-gray-50/50 dark:bg-gray-800/40 text-gray-400 border-dashed'
+              }`}
+            >
+              {isStar && (
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 text-[10px] font-black text-amber-600 dark:text-amber-400 bg-amber-100 dark:bg-amber-900/80 px-1.5 py-0.2 rounded-full border border-amber-300 dark:border-amber-600 shadow-xs uppercase tracking-wider">
+                  ★
+                </span>
+              )}
+              {placedText ? (
+                <span className="text-sm md:text-base leading-tight animate-fade-in font-medium" dangerouslySetInnerHTML={{ __html: placedText }} />
+              ) : (
+                <span className="text-xs text-gray-400 dark:text-gray-500 font-mono select-none">
+                  ({slotNum})
+                </span>
+              )}
+            </div>
+          );
+        })}
+      </div>
+
+      {suffix && <span dangerouslySetInnerHTML={{ __html: suffix }} />}
+    </div>
+  );
+}
+
 function QuestionBlock({ q, qIdx, onAnswer, savedOption }) {
   const [showScript, setShowScript] = useState(false);
   const selectedOption = savedOption
@@ -447,6 +502,63 @@ function QuestionBlock({ q, qIdx, onAnswer, savedOption }) {
       ? q.correctOption.text
       : q.correctOption
     : null;
+
+  const [placedMap, setPlacedMap] = useState(() => {
+    if (selectedOption && q.correctOrder) {
+      const initialMap = {};
+      q.correctOrder.forEach((optNum, slotIdx) => {
+        const opt = q.options[optNum - 1];
+        const optText = typeof opt === 'object' ? opt.text : opt;
+        initialMap[slotIdx + 1] = optText.replace(/^\d+\.\s*/, '');
+      });
+      return initialMap;
+    }
+    return {};
+  });
+
+  useEffect(() => {
+    if (selectedOption && q.correctOrder) {
+      const fullMap = {};
+      q.correctOrder.forEach((optNum, slotIdx) => {
+        const opt = q.options[optNum - 1];
+        const optText = typeof opt === 'object' ? opt.text : opt;
+        fullMap[slotIdx + 1] = optText.replace(/^\d+\.\s*/, '');
+      });
+      setPlacedMap(fullMap);
+    } else if (!selectedOption) {
+      setPlacedMap({});
+    }
+  }, [selectedOption, q]);
+
+  const handleOptionSelect = (opt, optIdx) => {
+    const optText = typeof opt === 'object' ? opt.text : opt;
+    const isThisCorrect = optText === correctOptionText;
+    const optNum = optIdx + 1;
+
+    if (q.correctOrder) {
+      const cleanText = optText.replace(/^\d+\.\s*/, '');
+      const slotNum = q.correctOrder.indexOf(optNum) + 1;
+
+      if (isThisCorrect) {
+        const fullMap = {};
+        q.correctOrder.forEach((n, idx) => {
+          const o = q.options[n - 1];
+          const t = typeof o === 'object' ? o.text : o;
+          fullMap[idx + 1] = t.replace(/^\d+\.\s*/, '');
+        });
+        setPlacedMap(fullMap);
+      } else {
+        setPlacedMap(prev => ({
+          ...prev,
+          [slotNum]: cleanText
+        }));
+      }
+    }
+
+    if (onAnswer) {
+      onAnswer(qIdx, optText, isThisCorrect);
+    }
+  };
 
   return (
     <div className="flex flex-col gap-4 text-lg md:text-xl border-b border-gray-200 dark:border-gray-800 pb-10 last:border-0">
@@ -462,11 +574,15 @@ function QuestionBlock({ q, qIdx, onAnswer, savedOption }) {
               <span>🎵</span> {q.trackId}
             </div>
           )}
-          {(q.stem || q.questionText) && (
-            <span
-              className="leading-loose"
-              dangerouslySetInnerHTML={{ __html: q.stem || q.questionText }}
-            />
+          {q.correctOrder ? (
+            <SentenceCompositionStem q={q} placedMap={placedMap} />
+          ) : (
+            (q.stem || q.questionText) && (
+              <span
+                className="leading-loose"
+                dangerouslySetInnerHTML={{ __html: q.stem || q.questionText }}
+              />
+            )
           )}
           {q.audioSrc && (
             <div className="mt-3 mb-2 flex items-center gap-4 flex-wrap">
@@ -550,11 +666,7 @@ function QuestionBlock({ q, qIdx, onAnswer, savedOption }) {
               return (
                 <button
                   key={optIdx}
-                  onClick={() => {
-                    if (onAnswer) {
-                      onAnswer(qIdx, optText, isThisCorrect);
-                    }
-                  }}
+                  onClick={() => handleOptionSelect(opt, optIdx)}
                   disabled={selectedOption !== null}
                   className={btnClass}
                 >

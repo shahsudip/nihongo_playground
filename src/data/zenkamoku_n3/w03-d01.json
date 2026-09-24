@@ -95,7 +95,14 @@
           ],
           "correct": 3,
           "correctOption": "3. 歌とダンスの",
-          "starPosition": 3
+          "starPosition": 3,
+          "correctOrder": [
+            2,
+            4,
+            3,
+            1
+          ],
+          "explanation": "<b>【正解】3</b><br/>【文の並び替え】彼女は将来 <u>歌手になるために</u> <u>子どものときから</u> <u>★歌とダンスの</u> <u>練習をしてきた</u> そうだ。<br/><b>～てきた</b>：過去から現在まで～し続けたことを表す have been doing ～ (for long time)"
         },
         {
           "number": 2,
@@ -108,7 +115,14 @@
           ],
           "correct": 3,
           "correctOption": "3. 近所の人に",
-          "starPosition": 2
+          "starPosition": 2,
+          "correctOrder": [
+            1,
+            3,
+            4,
+            2
+          ],
+          "explanation": "<b>【正解】3</b><br/>【文の並び替え】夜遅くまで音楽を <u>聞いていたら</u> <u>★近所の人に</u> <u>静かにしろ</u> <u>と言われて</u> しまった。<br/><b>～しろ</b>：「する」の命令形 do ～ [command]"
         },
         {
           "number": 3,
@@ -121,7 +135,14 @@
           ],
           "correct": 4,
           "correctOption": "4. たまに心配になる",
-          "starPosition": 3
+          "starPosition": 3,
+          "correctOrder": [
+            2,
+            3,
+            4,
+            1
+          ],
+          "explanation": "<b>【正解】4</b><br/>【文の並び替え】江口「確かに、朝のバスは <u>遅れがちだ</u> <u>から</u> <u>★たまに心配になる</u> <u>けど</u>、早い時間に家を出ているから大丈夫だよ。」<br/><b>～がち</b>：よく～になる ～の状態になりやすい tending to ～"
         },
         {
           "number": 4,
@@ -134,7 +155,14 @@
           ],
           "correct": 2,
           "correctOption": "2. ５分で終わる",
-          "starPosition": 2
+          "starPosition": 2,
+          "correctOrder": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "explanation": "<b>【正解】2</b><br/>【文の並び替え】手紙をする <u>といっても</u> <u>★５分で終わる</u> <u>とても</u> <u>簡単</u> なものらしい。<br/><b>～といっても</b>：～というけれど実際は… though ～, …"
         },
         {
           "number": 5,
@@ -147,7 +175,14 @@
           ],
           "correct": 1,
           "correctOption": "1. 続けていれば",
-          "starPosition": 3
+          "starPosition": 3,
+          "correctOrder": [
+            2,
+            3,
+            1,
+            4
+          ],
+          "explanation": "<b>【正解】1</b><br/>【文の並び替え】先輩に今は日本語が <u>上手に話せなくても</u> <u>毎日勉強を</u> <u>★続けていれば</u> <u>上手に話せるようになる</u> と言われた。<br/><b>～ようになる</b>：以前とは違った状態に変わる become able to ～"
         }
       ]
     }

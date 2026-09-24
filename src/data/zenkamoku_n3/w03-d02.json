@@ -95,7 +95,14 @@
           ],
           "correct": 1,
           "correctOption": "1. が",
-          "starPosition": 3
+          "starPosition": 3,
+          "correctOrder": [
+            2,
+            3,
+            1,
+            4
+          ],
+          "explanation": "<b>【正解】1</b><br/>【文の並び替え】先輩がインフルエンザで休むということなので、先輩 <u>にかわって</u> <u>私</u> <u>★が</u> <u>リーダー</u> となって会議の準備をします。<br/><b>～にかわって</b>：～と交代して ～の代理として on behalf of ～"
         },
         {
           "number": 2,
@@ -108,7 +115,14 @@
           ],
           "correct": 4,
           "correctOption": "4. 目的として",
-          "starPosition": 2
+          "starPosition": 2,
+          "correctOrder": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "explanation": "<b>【正解】4</b><br/>【文の並び替え】私の会社では社員の <u>交流を</u> <u>★目的として</u> <u>ゲームや</u> <u>カラオケが</u> できる部屋が食堂の隣にある。<br/><b>～を…として</b>：～が…だと考えて／決めて having ～ as its …"
         },
         {
           "number": 3,
@@ -121,7 +135,14 @@
           ],
           "correct": 3,
           "correctOption": "3. 恐れがある",
-          "starPosition": 2
+          "starPosition": 2,
+          "correctOrder": [
+            1,
+            3,
+            2,
+            4
+          ],
+          "explanation": "<b>【正解】3</b><br/>【文の並び替え】この薬を飲むと <u>眠くなる</u> <u>★恐れがある</u> <u>ので</u> <u>運転はしない</u> ようにしてください。<br/><b>～恐れがある</b>：（よくない状態になる）かもしれない there is a risk of ～"
         },
         {
           "number": 4,
@@ -134,7 +155,14 @@
           ],
           "correct": 2,
           "correctOption": "2. つぽくて",
-          "starPosition": 2
+          "starPosition": 2,
+          "correctOrder": [
+            3,
+            2,
+            4,
+            1
+          ],
+          "explanation": "<b>【正解】2</b><br/>【文の並び替え】父は最近、<u>忘れ</u> <u>★っぽくて</u> <u>何か言い</u> <u>かけて</u> 「あっ、忘れた」と言うことが多くなった。<br/><b>～っぽい</b>：よく～する tending to ～"
         },
         {
           "number": 5,
@@ -147,7 +175,14 @@
           ],
           "correct": 3,
           "correctOption": "3. 青や緑",
-          "starPosition": 1
+          "starPosition": 1,
+          "correctOrder": [
+            3,
+            2,
+            4,
+            1
+          ],
+          "explanation": "<b>【正解】3</b><br/>【文の並び替え】今年はうすい <u>★青や緑</u> <u>といった</u> <u>涼しさを</u> <u>感じる色の</u> 服が人気だそうだ。<br/><b>～といった</b>：例を出すときに使う such as ～"
         }
       ]
     }

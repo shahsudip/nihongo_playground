@@ -95,7 +95,14 @@
           ],
           "correct": 3,
           "correctOption": "3. という",
-          "starPosition": 3
+          "starPosition": 3,
+          "correctOrder": [
+            2,
+            4,
+            3,
+            1
+          ],
+          "explanation": "<b>【正解】3</b><br/>【文の並び替え】母親が自分の <u>子どもに食事を</u> <u>与えない</u> <u>★という</u> <u>信じがたい</u> ニュースを見た。<br/><b>～という…</b>：…の内容や名前を～で説明する … about ～"
         },
         {
           "number": 2,
@@ -108,7 +115,14 @@
           ],
           "correct": 2,
           "correctOption": "2. 立派に",
-          "starPosition": 3
+          "starPosition": 3,
+          "correctOrder": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "explanation": "<b>【正解】2</b><br/>【文の並び替え】小学校の <u>先生</u> <u>として</u> <u>★立派に</u> <u>仕事をしている</u> と聞いて安心した。<br/><b>～として</b>：役割や立場などを表す as ～"
         },
         {
           "number": 3,
@@ -121,7 +135,14 @@
           ],
           "correct": 4,
           "correctOption": "4. 閉まらない",
-          "starPosition": 3
+          "starPosition": 3,
+          "correctOrder": [
+            2,
+            1,
+            4,
+            3
+          ],
+          "explanation": "<b>【正解】4</b><br/>【文の並び替え】このドアは壊れていて <u>閉めよう</u> <u>にも</u> <u>★閉まらない</u> <u>ので</u> 修理することにした。<br/><b>～ようにも～ない</b>：～したくても～できない even if try to ～, won't ～"
         },
         {
           "number": 4,
@@ -134,7 +155,14 @@
           ],
           "correct": 2,
           "correctOption": "2. ことなら",
-          "starPosition": 2
+          "starPosition": 2,
+          "correctOrder": [
+            4,
+            2,
+            1,
+            3
+          ],
+          "explanation": "<b>【正解】2</b><br/>【文の並び替え】シンさんはアニメ <u>に関する</u> <u>★ことなら</u> <u>何でも知っているので</u> <u>友達から</u> 「アニメ先生」と呼ばれている。<br/><b>～に関する</b>：～に関係する about ～"
         },
         {
           "number": 5,
@@ -147,7 +175,14 @@
           ],
           "correct": 3,
           "correctOption": "3. 日本料理",
-          "starPosition": 3
+          "starPosition": 3,
+          "correctOrder": [
+            4,
+            2,
+            3,
+            1
+          ],
+          "explanation": "<b>【正解】3</b><br/>【文の並び替え】私が通っていた日本語学校では <u>日本語</u> <u>はもちろん</u> <u>★日本料理</u> <u>の作り方</u> まで教えてくれた。<br/><b>～はもちろん</b>：～は当然 of course ～; not only ～"
         }
       ]
     }
