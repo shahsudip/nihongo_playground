@@ -49,7 +49,7 @@
           "explanation": "<b>【正解】3. 希望日に受じゅし診んしたい人は9月15日までに申込用紙を出さなければならない。</b><br/>受診申込用紙は9月15日までに提出する必要があり、期限までに提出しないと希望日に受けられない可能性があるため、3が正解です。"
         }
       ],
-      "passage": "<p class=\"mb-3 text-base text-gray-700 dark:text-gray-300\">以下は、ある会社の社内文書である。</p>\n<div class=\"border-2 border-gray-400 dark:border-gray-600 bg-white dark:bg-slate-900 p-6 md:p-8 rounded-lg shadow-sm font-sans leading-relaxed text-black dark:text-white\">\n  <div class=\"flex justify-end text-sm mb-4\">2021年９月１日</div>\n  <div class=\"flex justify-between items-start mb-6\">\n    <div class=\"text-base font-semibold\">社員各位</div>\n    <div class=\"text-right text-base\">\n      <div>管理部　安田光</div>\n    </div>\n  </div>\n  <h4 class=\"text-center font-bold text-xl md:text-2xl mb-6\">後期健康診断実施のお知らせ</h4>\n  <div class=\"space-y-4 mb-4 indent-4\">\n    <p>今年度の後期健康診断を、下記の通り実施いたします。対象者は受診申込用紙に氏名、生年月日、受診希望日を記入の上、９月15日（水）までに管理部の安田まで提出してください。</p>\n    <p>なお、出張などの都合で期間内に受診できない社員は９月10日（金）までにご連絡ください。こちらで受診日を調整します。期限までに受診申込用紙を提出しない場合は希望日に受けられない可能性がありますので、ご注意ください。</p>\n  </div>\n  <div class=\"text-center font-bold tracking-widest mb-4\">記</div>\n  <div class=\"bg-gray-50 dark:bg-slate-800/80 p-4 border border-gray-300 dark:border-gray-700 rounded mb-4 text-base space-y-2\">\n    <div class=\"flex\"><span class=\"w-20 font-bold shrink-0\">期間</span><span>：10月１日（金）から10月15日（金）</span></div>\n    <div class=\"flex\"><span class=\"w-20 font-bold shrink-0\">場所</span><span>：中央診療所</span></div>\n    <div class=\"flex flex-col sm:flex-row\">\n      <span class=\"w-20 font-bold shrink-0\">対象者</span>\n      <div>\n        <div>：前期健康診断を受診しなかった全社員</div>\n        <div class=\"text-sm text-gray-600 dark:text-gray-400 mt-1\">ただし、新入社員は入社前に健康診断を受けているので、除きます。</div>\n      </div>\n    </div>\n  </div>\n  <div class=\"text-right font-medium\">以上</div>\n</div>"
+      "passage": "<p class=\"mb-3 text-base text-gray-700 dark:text-gray-300\">以下は、ある会社の社内文書である。</p><div class=\"border-2 border-gray-400 dark:border-gray-600 bg-amber-50/20 dark:bg-slate-900/60 p-6 md:p-8 rounded-lg shadow-sm font-sans leading-relaxed text-black dark:text-white\"><div class=\"flex justify-end text-sm mb-4\">2021年９月１日</div><div class=\"flex justify-between items-start mb-6\"><div class=\"text-base font-semibold\">社員各位</div><div class=\"text-right text-base\"><div>管理部　安田光</div></div></div><h4 class=\"text-center font-bold text-xl md:text-2xl mb-6\">後期健康診断実施のお知らせ</h4><div class=\"space-y-4 mb-4 indent-4\"><p>今年度の後期健康診断を、下記の通り実施いたします。対象者は受診申込用紙に氏名、生年月日、受診希望日を記入の上、９月15日（水）までに管理部の安田まで提出してください。</p><p>なお、出張などの都合で期間内に受診できない社員は９月10日（金）までにご連絡ください。こちらで受診日を調整します。期限までに受診申込用紙を提出しない場合は希望日に受けられない可能性がありますので、ご注意ください。</p></div><div class=\"text-center font-bold tracking-widest mb-4\">記</div><div class=\"bg-gray-50 dark:bg-slate-800/80 p-4 border border-gray-300 dark:border-gray-700 rounded mb-4 text-base space-y-2\"><div class=\"flex\"><span class=\"w-20 font-bold shrink-0\">期間</span><span>：10月１日（金）から10月15日（金）</span></div><div class=\"flex\"><span class=\"w-20 font-bold shrink-0\">場所</span><span>：中央診療所</span></div><div class=\"flex flex-col sm:flex-row\"><span class=\"w-20 font-bold shrink-0\">対象者</span><div><div>：前期健康診断を受診しなかった全社員</div><div class=\"text-sm text-gray-600 dark:text-gray-400 mt-1\">ただし、新入社員は入社前に健康診断を受けているので、除きます。</div></div></div></div><div class=\"text-right font-medium\">以上</div></div>"
     },
     {
       "type": "short_passage",
@@ -70,7 +70,7 @@
           "explanation": "<b>【正解】1. 読者が好きなようにす隙き間まを埋めて楽しむものである。</b><br/>冒頭の「文学は〜隙間を読者の『好み』によって埋めさせる娯楽なのである」から、1が正解です。"
         }
       ],
-      "passage": "<div class=\"speed-master-lined-paper\">\n  文学は科学のように隙間なく「事実」を説明する学問ではなく、むしろ隙間を読者の「好み」によって埋める娯楽なのである。それが、文学に対する読者の仕事である。文学は読者が自らの仕事を果たすことによって文学たり得ている<sup>(注1)</sup>と言える。だから、文学は多義的<sup>(注2)</sup>であってかまわないし、断片的<sup>(注3)</sup>であってもかまわないのだ。いや、そうあるべきなのだ。それを縫い合わせ、一つの「物語」に織り上げるのが読者の仕事なのだから。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（石原千秋『未来形の読書術』筑摩書房による）</div>\n</div>",
+      "passage": "<div class=\"speed-master-lined-paper\">\n  文学は科学のように隙間なく「事実」を説明する学問ではなく、むしろ隙間を読者の「好み」によって埋める娯楽なのである。それが、文学に対する読者の仕事である。文学は読者が自らの仕事を果たすことによって文学たり得ている<sup>(注1)</sup>と言える。だから、文学は多義的<sup>(注2)</sup>であってかまわないし、断片的<sup>(注3)</sup>であってもかまわないのだ。いや、そうあるべきなのだ。それを縫い合わせ、一つの「物語」に織り上げるのが読者の仕事なのだから。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（石原千秋『未来形の読書術』筑摩書房による）</div></div>",
       "passageNote": "(注１) 文学たり得る：文学として成立する<br/>(注２) 多義的：一つの言葉が多くの意味を持っている様子<br/>(注３) 断片的：ばらばらでまとまっていない様子"
     },
     {
@@ -92,7 +92,7 @@
           "explanation": "<b>【正解】2. 議論は喧嘩ではなく良い結果を生むための過程だと考える人</b><br/>「少数派の人間は、意見が違っても敵だとは考えない」「違う意見をぶつけることで、もっと良い結果になると知っている」とあることから、2が正解です。"
         }
       ],
-      "passage": "<div class=\"speed-master-lined-paper\">\n  自分の意見が多数とは違うと認識している少数派の人間は、意見が違っても敵だとは考えない。意見が違うことが自然であり、違うからこそ議論ができる、と考える。違う意見をぶつけることで、もっと良い結果になると知っている。議論をするのは、意見は違っても相手を尊重するという姿勢を持っているからだ。多数派は、自分の意見に反対されると、それはもう喧嘩だ、と捉えがちだし、なんとか相手を説得しようとするだろう。少数派は、反対することは、協力の一種だと考えているし、説得は難しいけれど、お互いに歩み寄ろうとする。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（森博嗣『集中力はいらない』SBクリエイティブ）</div>\n</div>"
+      "passage": "<div class=\"speed-master-lined-paper\">\n  自分の意見が多数とは違うと認識している少数派の人間は、意見が違っても敵だとは考えない。意見が違うことが自然であり、違うからこそ議論ができる、と考える。違う意見をぶつけることで、もっと良い結果になると知っている。議論をするのは、意見は違っても相手を尊重するという姿勢を持っているからだ。多数派は、自分の意見に反対されると、それはもう喧嘩だ、と捉えがちだし、なんとか相手を説得しようとするだろう。少数派は、反対することは、協力の一種だと考えているし、説得は難しいけれど、お互いに歩み寄ろうとする。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（森博嗣『集中力はいらない』SBクリエイティブ）</div></div>"
     },
     {
       "type": "short_passage",
@@ -113,7 +113,7 @@
           "explanation": "<b>【正解】3. 知識があってこその創造力なのだから、詰め込み型の教育が悪いとは言えない。</b><br/>「創造力の土台には、知識の詰め込みがある」とあり、創造力には知識が必要であると述べているため、3が正解です。"
         }
       ],
-      "passage": "<div class=\"speed-master-lined-paper\">\n  現在のような先の見えない時代に、やはり力を発揮するのは、「考える力」であり、新しいビジョン<sup>(注1)</sup>や、いままでになかったものを生み出せる創造力だと思います。\n\n  しかし、そんな「考える力」や創造力の土台<sup>(注2)</sup>には、“知識の詰め込み”があることを忘れてはいけません。よく詰め込み型の学校教育を否定する人もいますが、短絡的<sup>(注3)</sup>発想です。本当は創造力を開花させるためにこそ、豊富な知識が必要なのです。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（榊原英資『榊原式スピード思考力』幻冬舎による）</div>\n</div>",
+      "passage": "<div class=\"speed-master-lined-paper\">\n  現在のような先の見えない時代に、やはり力を発揮するのは、「考える力」であり、新しいビジョン<sup>(注1)</sup>や、いままでになかったものを生み出せる創造力だと思います。\n\n  しかし、そんな「考える力」や創造力の土台<sup>(注2)</sup>には、“知識の詰め込み”があることを忘れてはいけません。よく詰め込み型の学校教育を否定する人もいますが、短絡的<sup>(注3)</sup>発想です。本当は創造力を開花させるためにこそ、豊富な知識が必要なのです。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（榊原英資『榊原式スピード思考力』幻冬舎による）</div></div>",
       "passageNote": "(注１) ビジョン：将来を見通す力<br/>(注２) 土台：物事の基礎<br/>(注３) 短絡的：考えが安易で単純であること"
     }
   ]

@@ -282,13 +282,17 @@ export default function ZenkamokuPageViewer() {
                 )}
 
                 {sec.passage && (
-                  <div className="mb-8 p-6 bg-amber-50/40 dark:bg-slate-800/60 border border-amber-200 dark:border-slate-700 rounded-lg text-lg leading-relaxed">
+                  <div className="mb-8 text-lg leading-relaxed">
                     {sec.passageTitle && (
                       <h4 className="text-center font-bold text-xl mb-4 border-b pb-2 border-gray-300 dark:border-gray-600">
                         <span dangerouslySetInnerHTML={{ __html: sec.passageTitle }} />
                       </h4>
                     )}
-                    <div className="whitespace-pre-line font-serif leading-loose" dangerouslySetInnerHTML={{ __html: sec.passage }} />
+                    {sec.passage.trim().startsWith('<') ? (
+                      <div className="font-serif leading-loose" dangerouslySetInnerHTML={{ __html: sec.passage }} />
+                    ) : (
+                      <div className="p-6 bg-amber-50/40 dark:bg-slate-800/60 border border-amber-200 dark:border-slate-700 rounded-lg whitespace-pre-line font-serif leading-loose" dangerouslySetInnerHTML={{ __html: sec.passage }} />
+                    )}
                     {sec.passageNote && (
                       <div className="mt-4 pt-3 border-t border-gray-300 dark:border-gray-600 text-sm text-gray-600 dark:text-gray-400">
                         <span dangerouslySetInnerHTML={{ __html: sec.passageNote }} />
