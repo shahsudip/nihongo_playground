@@ -439,9 +439,15 @@ export default function ZenkamokuPageViewer() {
 
 function SentenceCompositionStem({ q, placedMap }) {
   const stem = q.stem || q.questionText || '';
+  const hasPlaced = placedMap && Object.keys(placedMap).length > 0;
+
+  // Till user selects options, UI remains identical to previous authentic UI
+  if (!hasPlaced || !q.correctOrder) {
+    return <span className="leading-loose" dangerouslySetInnerHTML={{ __html: stem }} />;
+  }
+
   const match = stem.match(/^(.*?)(?:(?:＿＿＿|＿＿|<u>\s*★\s*<\/u>|★|\s)+)([^＿★]*)$/);
-  
-  if (!match || !q.correctOrder) {
+  if (!match) {
     return <span className="leading-loose" dangerouslySetInnerHTML={{ __html: stem }} />;
   }
 
@@ -449,46 +455,49 @@ function SentenceCompositionStem({ q, placedMap }) {
   const suffix = match[2].trim();
 
   return (
-    <div className="inline-flex flex-wrap items-baseline gap-y-3 gap-x-1.5 leading-loose text-lg md:text-xl font-medium text-gray-900 dark:text-gray-100">
-      {prefix && <span dangerouslySetInnerHTML={{ __html: prefix }} />}
-      
-      <div className="inline-flex flex-wrap items-center gap-1.5 align-middle mx-1 py-1">
-        {[1, 2, 3, 4].map((slotNum) => {
-          const isStar = slotNum === q.starPosition;
-          const placedText = placedMap[slotNum];
-          
-          return (
-            <div
-              key={slotNum}
-              className={`min-w-[80px] md:min-w-[100px] min-h-[38px] px-3 py-1 border-b-2 rounded-t flex items-center justify-center text-center transition-all duration-300 relative ${
-                placedText
-                  ? isStar
-                    ? 'border-amber-500 bg-amber-50/90 dark:bg-amber-950/40 text-amber-950 dark:text-amber-200 font-bold shadow-sm ring-2 ring-amber-400/30'
-                    : 'border-indigo-500 bg-indigo-50/80 dark:bg-indigo-950/30 text-indigo-950 dark:text-indigo-200 font-medium shadow-xs'
-                  : isStar
-                  ? 'border-amber-500 bg-amber-50/30 dark:bg-amber-950/20 text-amber-500 border-dashed hover:bg-amber-50/50'
-                  : 'border-gray-400 dark:border-gray-500 bg-gray-50/50 dark:bg-gray-800/40 text-gray-400 border-dashed'
-              }`}
-            >
-              {isStar && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 text-[10px] font-black text-amber-600 dark:text-amber-400 bg-amber-100 dark:bg-amber-900/80 px-1.5 py-0.2 rounded-full border border-amber-300 dark:border-amber-600 shadow-xs uppercase tracking-wider">
-                  ★
-                </span>
-              )}
-              {placedText ? (
-                <span className="text-sm md:text-base leading-tight animate-fade-in font-medium" dangerouslySetInnerHTML={{ __html: placedText }} />
-              ) : (
-                <span className="text-xs text-gray-400 dark:text-gray-500 font-mono select-none">
-                  ({slotNum})
-                </span>
-              )}
-            </div>
-          );
-        })}
-      </div>
+    <span className="leading-loose text-lg md:text-xl font-medium text-gray-900 dark:text-gray-100">
+      {prefix && <span dangerouslySetInnerHTML={{ __html: prefix }} />}{' '}
+      {[1, 2, 3, 4].map((slotNum) => {
+        const isStar = slotNum === q.starPosition;
+        const placedText = placedMap[slotNum];
 
+        if (placedText) {
+          if (isStar) {
+            return (
+              <span
+                key={slotNum}
+                className="inline-block px-1.5 py-0.5 mx-1 font-bold text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-amber-950/40 rounded border-b-2 border-amber-500 animate-fade-in"
+              >
+                ★ <span dangerouslySetInnerHTML={{ __html: placedText }} />
+              </span>
+            );
+          }
+          return (
+            <span
+              key={slotNum}
+              className="inline-block px-1.5 py-0.5 mx-1 font-semibold text-indigo-700 dark:text-indigo-300 bg-indigo-50/80 dark:bg-indigo-950/30 rounded border-b-2 border-indigo-500 animate-fade-in"
+            >
+              <span dangerouslySetInnerHTML={{ __html: placedText }} />
+            </span>
+          );
+        }
+
+        if (isStar) {
+          return (
+            <span key={slotNum} className="mx-1 text-amber-500 font-bold">
+              <u>　★　</u>
+            </span>
+          );
+        }
+
+        return (
+          <span key={slotNum} className="mx-1 text-gray-400 dark:text-gray-500 select-none">
+            ＿＿＿
+          </span>
+        );
+      })}{' '}
       {suffix && <span dangerouslySetInnerHTML={{ __html: suffix }} />}
-    </div>
+    </span>
   );
 }
 
