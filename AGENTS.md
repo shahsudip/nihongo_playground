@@ -33,6 +33,7 @@ When working on parallel series books (e.g. Zenkamoku N2 vs Zenkamoku N3):
 - Never extract partial stems or drop introductory lines.
 - For conversations, include all speaker labels and scene indicators:
   `（学校で）<br/>太田「...」<br/>江口「...」`
+- **Text Grammar (Week 4 / 文章の文法)**: The printed textbook has NO stem sentence between the question number and the 4 options. Question `stem` MUST strictly be `""` (empty string). NEVER insert synthetic text like `"文章中の［１］に入るものをえらびなさい。"` or passage fragments.
 - Verify that question numbers, options, and full sentences match the scanned page 100%.
 
 ### 6. Layout & CSS Invariants

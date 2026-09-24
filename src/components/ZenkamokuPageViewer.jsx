@@ -281,25 +281,70 @@ export default function ZenkamokuPageViewer() {
                   </div>
                 )}
 
-                {sec.passage && (
-                  <div className="mb-8 text-lg leading-relaxed">
-                    {sec.passageTitle && (
-                      <h4 className="text-center font-bold text-xl mb-4 border-b pb-2 border-gray-300 dark:border-gray-600">
-                        <span dangerouslySetInnerHTML={{ __html: sec.passageTitle }} />
-                      </h4>
-                    )}
-                    {sec.passage.trim().startsWith('<') ? (
-                      <div className="font-serif leading-loose" dangerouslySetInnerHTML={{ __html: sec.passage }} />
-                    ) : (
-                      <div className="p-6 bg-amber-50/40 dark:bg-slate-800/60 border border-amber-200 dark:border-slate-700 rounded-lg whitespace-pre-line font-serif leading-loose" dangerouslySetInnerHTML={{ __html: sec.passage }} />
-                    )}
-                    {sec.passageNote && (
-                      <div className="mt-4 pt-3 border-t border-gray-300 dark:border-gray-600 text-sm text-gray-600 dark:text-gray-400">
-                        <span dangerouslySetInnerHTML={{ __html: sec.passageNote }} />
+                {sec.passage && (() => {
+                  const isLinedPaper = sec.passage.includes('speed-master-lined-paper');
+                  const passageHtml = sec.passage;
+
+                  if (!isLinedPaper) {
+                    return (
+                      <div className="mb-8 text-lg leading-relaxed">
+                        {sec.passageTitle && (
+                          <h4 className="text-center font-bold text-xl mb-4 border-b pb-2 border-gray-300 dark:border-gray-600">
+                            <span dangerouslySetInnerHTML={{ __html: sec.passageTitle }} />
+                          </h4>
+                        )}
+                        {passageHtml.trim().startsWith('<') ? (
+                          <div className="font-serif leading-loose" dangerouslySetInnerHTML={{ __html: passageHtml }} />
+                        ) : (
+                          <div className="p-6 bg-amber-50/40 dark:bg-slate-800/60 border border-amber-200 dark:border-slate-700 rounded-lg whitespace-pre-line font-serif leading-loose" dangerouslySetInnerHTML={{ __html: passageHtml }} />
+                        )}
+                        {sec.passageNote && (
+                          <div className="mt-4 pt-3 border-t border-gray-300 dark:border-gray-600 text-sm text-gray-600 dark:text-gray-400">
+                            <span dangerouslySetInnerHTML={{ __html: sec.passageNote }} />
+                          </div>
+                        )}
                       </div>
-                    )}
-                  </div>
-                )}
+                    );
+                  }
+
+                  // For speed-master-lined-paper passages: extract inner content and render
+                  // with authentic left-margin line numbers (1, 5, 10, 15, 20…)
+                  // Strip outer div wrapper to get inner HTML
+                  const innerMatch = passageHtml.match(/<div class="speed-master-lined-paper">([\s\S]*?)<\/div>\s*$/);
+                  const innerHtml = innerMatch ? innerMatch[1] : passageHtml;
+                  // Split on newlines to get paragraph-level rows
+                  const paragraphs = innerHtml.split('\n').filter(p => p.trim() !== '');
+
+                  return (
+                    <div className="mb-8 text-lg leading-relaxed">
+                      {sec.passageTitle && (
+                        <h4 className="text-center font-bold text-xl mb-4 border-b pb-2 border-gray-300 dark:border-gray-600">
+                          <span dangerouslySetInnerHTML={{ __html: sec.passageTitle }} />
+                        </h4>
+                      )}
+                      <div className="speed-master-lined-paper font-serif leading-loose relative">
+                        {/* Line numbers in left margin — matches physical book */}
+                        <div
+                          aria-hidden="true"
+                          className="absolute left-0 top-0 bottom-0 flex flex-col items-end pr-1 pt-6 text-gray-400 dark:text-gray-600 text-xs font-mono select-none pointer-events-none"
+                          style={{ width: '1.4rem' }}
+                        >
+                          {[1,5,10,15,20,25,30].map(n => (
+                            <div key={n} className="italic" style={{ lineHeight: '2.15em' }}>{n}</div>
+                          ))}
+                        </div>
+                        {/* Passage text indented to make room for line numbers */}
+                        <div className="pl-6 whitespace-pre-line" dangerouslySetInnerHTML={{ __html: innerHtml }} />
+                      </div>
+                      {sec.passageNote && (
+                        <div className="mt-4 pt-3 border-t border-gray-300 dark:border-gray-600 text-sm text-gray-600 dark:text-gray-400">
+                          <span dangerouslySetInnerHTML={{ __html: sec.passageNote }} />
+                        </div>
+                      )}
+                    </div>
+                  );
+                })()}
+
                 
                 <div className="space-y-8">
                   {sec.questions?.map((q, qIdx) => (
