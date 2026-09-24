@@ -48,3 +48,13 @@ In every Japanese reading book, passages are categorized into distinct visual ge
 - **Ruby Tag Integrity**: Every `<ruby>` and `<rt>` tag must be properly paired and closed.
 - **Zero Missing Assets**: Every asset referenced in JSON or HTML must physically exist in `public/`.
 - **CI / Build Check**: Every book module must pass its dedicated verification script (e.g. `npm run verify:speedmaster`) and `npm run build` before completion.
+
+---
+
+## 4. Parallel Book & Sentence Composition Invariants (Zenkamoku, Speed Master, etc.)
+- **Sister Book Golden Master Reference**: Whenever digitizing a new level of an existing book series (e.g., N2 after N3), the completed sister book MUST be used as the structural template. Match key schemas, field names, and styling rules without exception.
+- **Star Blank Format**: In sentence composition questions, blank lines must strictly use continuous Japanese underlines with the centered star: `＿＿＿ ＿＿＿ <u>　★　</u> ＿＿＿`.
+- **Dialogue & Scene Preservation**: Never truncate opening lines, scene indicators `（学校で）`, or conversational speaker labels `太田「...」\n江口「...」`.
+- **Explanation Standardization**: Every sentence composition question must include `correctOrder: [n1, n2, n3, n4]`, `starPosition: n`, and formatted explanation showing the reconstructed sentence with `<u>★...</u>` highlighting and grammar notes.
+- **Theme Adaptability**: NEVER hardcode `bg-white` inside JSON passage HTML. Use theme-aware CSS classes to maintain flawless rendering across Light, Sepia, and Dark modes.
+
