@@ -13,12 +13,10 @@
       "type": "short_passage",
       "title": "内容理解（短文） (1)",
       "titleEn": "Short Passage (1)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d02_p1.png",
       "questions": [
         {
           "number": 1,
           "stem": "0東なし日には本んだ大い震しん災さいの津つな波みでこの小中学校の児童・生徒が助かったのはなぜか",
-          "imageSrc": "/images/zenkamoku_n2/w05_d02_p1.png",
           "options": [
             "1. 逃げる道が決められ、逃げ方を教育されていたから",
             "2. 自分のことだけ考えず、みんなで協力して逃げたから",
@@ -29,18 +27,17 @@
           "correctOption": "3. それぞれが自分で判断して逃げることができたから",
           "explanation": "<b>【正解】3. それぞれが自分で判断して逃げることができたから</b><br/>「津波てんでんこ」という教育により、それぞれが自分で考えて高台へ逃げたことから、3が正解です。"
         }
-      ]
+      ],
+      "passage": "<div class=\"speed-master-lined-paper\">\n  2011年３月11日に発生した東日本大震災による津波は多くの犠牲者を出した。そんな中、登校児童・生徒全員が無事だった小中学校が岩手県釜石市にある。昔から津波の被害があったこの地域では、「津波てんでんこ」という教育がなされている。「てんでんこ」とは「それぞれ」や「各自」を意味する「てんでん」に東北方言の「こ」が付いた言葉で、「津波のときは人にかまわず、てんでんに逃げ、高台で会おう」という教えである。てんでんがてんでんの逃げる力を信じ逃げろというのだ。震災から10年、てんでんに考える力を見せた子どもたちは、頼もしい大人になっているに違いない。\n</div>"
     },
     {
       "type": "short_passage",
       "title": "内容理解（短文） (2)",
       "titleEn": "Short Passage (2)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d02_p2.png",
       "questions": [
         {
           "number": 2,
           "stem": "後期健康診しんた断んについて、正しいものはどれか。",
-          "imageSrc": "/images/zenkamoku_n2/w05_d02_p2.png",
           "options": [
             "1. 後期健康診しんた断んの対象者は必す期間内に受しゅし診んしなければならない。",
             "2. 新入社員は全員、前期健康診しんた断んを受けているので、対象ではない。",
@@ -51,18 +48,17 @@
           "correctOption": "3. 希望日に受じゅし診んしたい人は9月15日までに申込用紙を出さなければならない。",
           "explanation": "<b>【正解】3. 希望日に受じゅし診んしたい人は9月15日までに申込用紙を出さなければならない。</b><br/>受診申込用紙は9月15日までに提出する必要があり、期限までに提出しないと希望日に受けられない可能性があるため、3が正解です。"
         }
-      ]
+      ],
+      "passage": "<p class=\"mb-3 text-base text-gray-700 dark:text-gray-300\">以下は、ある会社の社内文書である。</p>\n<div class=\"border-2 border-gray-400 dark:border-gray-600 bg-white dark:bg-slate-900 p-6 md:p-8 rounded-lg shadow-sm font-sans leading-relaxed text-black dark:text-white\">\n  <div class=\"flex justify-end text-sm mb-4\">2021年９月１日</div>\n  <div class=\"flex justify-between items-start mb-6\">\n    <div class=\"text-base font-semibold\">社員各位</div>\n    <div class=\"text-right text-base\">\n      <div>管理部　安田光</div>\n    </div>\n  </div>\n  <h4 class=\"text-center font-bold text-xl md:text-2xl mb-6\">後期健康診断実施のお知らせ</h4>\n  <div class=\"space-y-4 mb-4 indent-4\">\n    <p>今年度の後期健康診断を、下記の通り実施いたします。対象者は受診申込用紙に氏名、生年月日、受診希望日を記入の上、９月15日（水）までに管理部の安田まで提出してください。</p>\n    <p>なお、出張などの都合で期間内に受診できない社員は９月10日（金）までにご連絡ください。こちらで受診日を調整します。期限までに受診申込用紙を提出しない場合は希望日に受けられない可能性がありますので、ご注意ください。</p>\n  </div>\n  <div class=\"text-center font-bold tracking-widest mb-4\">記</div>\n  <div class=\"bg-gray-50 dark:bg-slate-800/80 p-4 border border-gray-300 dark:border-gray-700 rounded mb-4 text-base space-y-2\">\n    <div class=\"flex\"><span class=\"w-20 font-bold shrink-0\">期間</span><span>：10月１日（金）から10月15日（金）</span></div>\n    <div class=\"flex\"><span class=\"w-20 font-bold shrink-0\">場所</span><span>：中央診療所</span></div>\n    <div class=\"flex flex-col sm:flex-row\">\n      <span class=\"w-20 font-bold shrink-0\">対象者</span>\n      <div>\n        <div>：前期健康診断を受診しなかった全社員</div>\n        <div class=\"text-sm text-gray-600 dark:text-gray-400 mt-1\">ただし、新入社員は入社前に健康診断を受けているので、除きます。</div>\n      </div>\n    </div>\n  </div>\n  <div class=\"text-right font-medium\">以上</div>\n</div>"
     },
     {
       "type": "short_passage",
       "title": "内容理解（短文） (3)",
       "titleEn": "Short Passage (3)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d02_p3.png",
       "questions": [
         {
           "number": 3,
           "stem": "いコ筆者は文学についてどのように言っているか",
-          "imageSrc": "/images/zenkamoku_n2/w05_d02_p3.png",
           "options": [
             "1. 読者が好きなようにす隙き間まを埋めて楽しむものである。",
             "2. 読者の好みを考えて作る娯楽でなければならない。",
@@ -73,18 +69,18 @@
           "correctOption": "1. 読者が好きなようにす隙き間まを埋めて楽しむものである。",
           "explanation": "<b>【正解】1. 読者が好きなようにす隙き間まを埋めて楽しむものである。</b><br/>冒頭の「文学は〜隙間を読者の『好み』によって埋めさせる娯楽なのである」から、1が正解です。"
         }
-      ]
+      ],
+      "passage": "<div class=\"speed-master-lined-paper\">\n  文学は科学のように隙間なく「事実」を説明する学問ではなく、むしろ隙間を読者の「好み」によって埋める娯楽なのである。それが、文学に対する読者の仕事である。文学は読者が自らの仕事を果たすことによって文学たり得ている<sup>(注1)</sup>と言える。だから、文学は多義的<sup>(注2)</sup>であってかまわないし、断片的<sup>(注3)</sup>であってもかまわないのだ。いや、そうあるべきなのだ。それを縫い合わせ、一つの「物語」に織り上げるのが読者の仕事なのだから。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（石原千秋『未来形の読書術』筑摩書房による）</div>\n</div>",
+      "passageNote": "(注１) 文学たり得る：文学として成立する<br/>(注２) 多義的：一つの言葉が多くの意味を持っている様子<br/>(注３) 断片的：ばらばらでまとまっていない様子"
     },
     {
       "type": "short_passage",
       "title": "内容理解（短文） (4)",
       "titleEn": "Short Passage (4)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d02_p4.png",
       "questions": [
         {
           "number": 4,
           "stem": "筆者によると、少数派とはどのような人間か",
-          "imageSrc": "/images/zenkamoku_n2/w05_d02_p4.png",
           "options": [
             "1. 自分とは異なる意見を持っている人を敵と思っている人",
             "2. 議論は喧嘩ではなく良い結果を生むための過程だと考える人",
@@ -95,18 +91,17 @@
           "correctOption": "2. 議論は喧嘩ではなく良い結果を生むための過程だと考える人",
           "explanation": "<b>【正解】2. 議論は喧嘩ではなく良い結果を生むための過程だと考える人</b><br/>「少数派の人間は、意見が違っても敵だとは考えない」「違う意見をぶつけることで、もっと良い結果になると知っている」とあることから、2が正解です。"
         }
-      ]
+      ],
+      "passage": "<div class=\"speed-master-lined-paper\">\n  自分の意見が多数とは違うと認識している少数派の人間は、意見が違っても敵だとは考えない。意見が違うことが自然であり、違うからこそ議論ができる、と考える。違う意見をぶつけることで、もっと良い結果になると知っている。議論をするのは、意見は違っても相手を尊重するという姿勢を持っているからだ。多数派は、自分の意見に反対されると、それはもう喧嘩だ、と捉えがちだし、なんとか相手を説得しようとするだろう。少数派は、反対することは、協力の一種だと考えているし、説得は難しいけれど、お互いに歩み寄ろうとする。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（森博嗣『集中力はいらない』SBクリエイティブ）</div>\n</div>"
     },
     {
       "type": "short_passage",
       "title": "内容理解（短文） (5)",
       "titleEn": "Short Passage (5)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d02_p5.png",
       "questions": [
         {
           "number": 5,
           "stem": "[町筆者の考えに合うのはどれか",
-          "imageSrc": "/images/zenkamoku_n2/w05_d02_p5.png",
           "options": [
             "1. 現代のような先の見えない時代において、学校教育はそれほど重要でない。",
             "2. 知識が考える力の基礎になるとはいえ、詰め込み型で知識を得ようとするのは単純だ。",
@@ -117,7 +112,9 @@
           "correctOption": "3. 知識があってこその創造力なのだから、詰め込み型の教育が悪いとは言えない。",
           "explanation": "<b>【正解】3. 知識があってこその創造力なのだから、詰め込み型の教育が悪いとは言えない。</b><br/>「創造力の土台には、知識の詰め込みがある」とあり、創造力には知識が必要であると述べているため、3が正解です。"
         }
-      ]
+      ],
+      "passage": "<div class=\"speed-master-lined-paper\">\n  現在のような先の見えない時代に、やはり力を発揮するのは、「考える力」であり、新しいビジョン<sup>(注1)</sup>や、いままでになかったものを生み出せる創造力だと思います。\n\n  しかし、そんな「考える力」や創造力の土台<sup>(注2)</sup>には、“知識の詰め込み”があることを忘れてはいけません。よく詰め込み型の学校教育を否定する人もいますが、短絡的<sup>(注3)</sup>発想です。本当は創造力を開花させるためにこそ、豊富な知識が必要なのです。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（榊原英資『榊原式スピード思考力』幻冬舎による）</div>\n</div>",
+      "passageNote": "(注１) ビジョン：将来を見通す力<br/>(注２) 土台：物事の基礎<br/>(注３) 短絡的：考えが安易で単純であること"
     }
   ]
 }

@@ -13,12 +13,10 @@
       "type": "short_passage",
       "title": "内容理解（短文） (1)",
       "titleEn": "Short Passage (1)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d01_p1.png",
       "questions": [
         {
           "number": 1,
           "stem": "[工ー筆者は、自分の人生を生きるためにどうすることが必要だと考えているか",
-          "imageSrc": "/images/zenkamoku_n2/w05_d01_p1.png",
           "options": [
             "1. エネルギーを自分にばかりでなく、他人のためにも使うこと",
             "2. 羨ましいと思う人がいたら、その人に近づこうと努力すること",
@@ -29,18 +27,17 @@
           "correctOption": "3. 他人を変えようとするのではなく、自分で変えられることから変えていくこと",
           "explanation": "<b>【正解】3. 他人を変えようとするのではなく、自分で変えられることから変えていくこと</b><br/>「自分の人生を生きるには、他人をどうするかではなく、自分をどうするかを常に考えないといけない」「まずは自分の変えられる範囲のことから変えていく」とあることから、3が正解です。"
         }
-      ]
+      ],
+      "passage": "<div class=\"speed-master-lined-paper\">\n  自分の人生を生きるには、他人をどうするかではなく、自分をどうするかを常に考えないといけないのではないでしょうか。他人のことばかり考えていたって、その人にはなれないし、いずれその人が目の前から去った時、自分に残るものなんてありません。嫌いな人には無関心でいること。もし、誰かを羨む気持ちを持ったら、それを正しく、自分を向上させるエネルギーに変えること。他人の半径５メートルは他人のもので、自分には自分の半径５メートルがあるはずです。まずは自分の変えられる範囲のことから変えていくのが、正しいエネルギーの使い方ではないでしょうか。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（はあちゅう『半径５メートルの野望』講談社による）</div>\n</div>"
     },
     {
       "type": "short_passage",
       "title": "内容理解（短文） (2)",
       "titleEn": "Short Passage (2)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d01_p2.png",
       "questions": [
         {
           "number": 2,
           "stem": "このお知らせの内容に合うのはどれか",
-          "imageSrc": "/images/zenkamoku_n2/w05_d01_p2.png",
           "options": [
             "1. 株式会社NACは来月の新作発表会のスケジュールが変わったことを伝えている。",
             "2. 株式会社NACは来月の新作発表会は駐車場が使えなくなったことを伝えている。",
@@ -51,18 +48,17 @@
           "correctOption": "4. 株式会社KMIは来月の新作発表会の会場が変わったことを伝えている。",
           "explanation": "<b>【正解】4. 株式会社KMIは来月の新作発表会の会場が変わったことを伝えている。</b><br/>「さて、来月予定しておりました〜下記の通り会場が変更となりますことをお知らせいたします」とあることから、4が正解です。"
         }
-      ]
+      ],
+      "passage": "<p class=\"mb-3 text-base text-gray-700 dark:text-gray-300\">以下は、新作発表会についてのお知らせである。</p>\n<div class=\"border-2 border-gray-400 dark:border-gray-600 bg-white dark:bg-slate-900 p-6 md:p-8 rounded-lg shadow-sm font-sans leading-relaxed text-black dark:text-white\">\n  <div class=\"flex justify-end text-sm mb-4\">令和３年10月７日</div>\n  <div class=\"flex justify-between items-start mb-6\">\n    <div class=\"text-base\">\n      <div>株式会社NAC</div>\n      <div class=\"pl-2\">営業部　大山忠様</div>\n    </div>\n    <div class=\"text-right text-base\">\n      <div>株式会社KMI</div>\n      <div>広報部　宮本健二</div>\n    </div>\n  </div>\n  <h4 class=\"text-center font-bold text-xl md:text-2xl mb-6\">来月の新作発表会について</h4>\n  <div class=\"mb-2\">拝啓</div>\n  <div class=\"space-y-4 mb-4 indent-4\">\n    <p>朝夕はずいぶんと涼しくなって参りました。日頃よりお世話になり、厚くお礼申し上げます。</p>\n    <p>さて、来月予定しておりました弊社の新作発表会でございますが、当日、予定していた会場周辺で交通規制が行われることになったため、下記の通り会場が変更となりますことをお知らせいたします。</p>\n    <p>当日のスケジュールは、先日お知らせした内容で変更はございません。突然の変更でご迷惑をおかけして大変申し訳ございませんが、何卒ご了承いただけますようお願い申し上げます。</p>\n  </div>\n  <div class=\"text-right mb-4\">敬具</div>\n  <div class=\"text-center font-bold tracking-widest mb-4\">記</div>\n  <div class=\"bg-gray-50 dark:bg-slate-800/80 p-4 border border-gray-300 dark:border-gray-700 rounded mb-4 text-base space-y-3\">\n    <div>\n      <div class=\"font-bold text-red-600 dark:text-red-400\">【変更前】</div>\n      <div class=\"pl-4\">YUMI国際記念会館　１階中ホール（高丸駅　出口A2　徒歩４分）</div>\n    </div>\n    <div>\n      <div class=\"font-bold text-blue-600 dark:text-blue-400\">【変更後】</div>\n      <div class=\"pl-4\">イースト会議センター　３階セミナールーム（山国駅　出口E4　徒歩３分）</div>\n    </div>\n  </div>\n  <div class=\"text-right font-medium\">以上</div>\n</div>"
     },
     {
       "type": "short_passage",
       "title": "内容理解（短文） (3)",
       "titleEn": "Short Passage (3)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d01_p3.png",
       "questions": [
         {
           "number": 3,
           "stem": "匚」筆者によると、欲とはどんなものか。",
-          "imageSrc": "/images/zenkamoku_n2/w05_d01_p3.png",
           "options": [
             "1. 個人の利益だけを求める自分勝手なもの",
             "2. 人を成長させることができるもの",
@@ -73,18 +69,18 @@
           "correctOption": "2. 人を成長させることができるもの",
           "explanation": "<b>【正解】2. 人を成長させることができるもの</b><br/>「私は欲を持つことこそが成長への近道になると信じている」とあることから、2が正解です。"
         }
-      ]
+      ],
+      "passage": "<div class=\"speed-master-lined-paper\">\n  欲とは、何かをほしいと思ったり、したいと思ったりすることだ。欲とは自分自身の利益だけを追求する<sup>(注1)</sup>身勝手<sup>(注2)</sup>なものだというイメージを抱く人も多いようだが、私は欲を持つことこそが成長への近道になると信じている。ほしいものを手に入れるために、なりたい自分に近づくために、人は試行錯誤<sup>(注3)</sup>を重ねながら前に進んでいく。何かをほしがったり、したがったりすることは決して悪いことではないのだ。\n</div>",
+      "passageNote": "(注１) 追求する：あるものを得ようとどこまでも追い求めること<br/>(注２) 身勝手：自分勝手<br/>(注３) 試行錯誤：挑戦と失敗を繰り返しながら目標に近づいていくこと"
     },
     {
       "type": "short_passage",
       "title": "内容理解（短文） (4)",
       "titleEn": "Short Passage (4)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d01_p4.png",
       "questions": [
         {
           "number": 4,
           "stem": "筆者によると、子どもが親の命令や指示に背くようになるのはなぜか",
-          "imageSrc": "/images/zenkamoku_n2/w05_d01_p4.png",
           "options": [
             "1. 子どもの手本となるべき親が、子どもを無視しているから",
             "2. 親の言った通りにしても、結局叱られるから",
@@ -95,18 +91,18 @@
           "correctOption": "3. 親の命令や指示に背いたほうが、親からの関心を得られるから",
           "explanation": "<b>【正解】3. 親の命令や指示に背いたほうが、親からの関心を得られるから</b><br/>「子どもが言いつけ通りにしているときよりも、言いつけに背いたときに親が大きな関心を向けていると、子どもは言いつけに背くようになります」とあることから、3が正解です。"
         }
-      ]
+      ],
+      "passage": "<div class=\"speed-master-lined-paper\">\n  子どもは親の関心を強烈に必要としています。子どもにとって何よりつらいのは親に無視されること。ですから子どもは、親と楽しく遊んだりほめてもらったりするというプラスの関心が得られないなら、たとえ叱られるというマイナスの関心であっても、それを得ようとするのです。\n\n  ですから、子どもが言いつけ<sup>(注)</sup>通りにしているときよりも、言いつけに背いたときに親が大きな関心を向けていると、子どもは言いつけに背くようになります。親の愛情に飢えているからです。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（古宮昇『一緒にいてラクな人、疲れる人』PHP研究所による）</div>\n</div>",
+      "passageNote": "(注) 言いつけ：命令や指示"
     },
     {
       "type": "short_passage",
       "title": "内容理解（短文） (5)",
       "titleEn": "Short Passage (5)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d01_p5.png",
       "questions": [
         {
           "number": 5,
           "stem": "この文章の内容と合うものはどれか",
-          "imageSrc": "/images/zenkamoku_n2/w05_d01_p5.png",
           "options": [
             "1. 早起きをすることで、不快な気分を避けられる。",
             "2. 早起きをすることは気持ちがいいものだ。",
@@ -117,7 +113,9 @@
           "correctOption": "3. 早起きをするためには楽しめる目的を持つとよい。",
           "explanation": "<b>【正解】3. 早起きをするためには楽しめる目的を持つとよい。</b><br/>「目的を決めるときは『不快からの逃避』ではなく、『快の追求』をもとに考えるのがポイントです」とあり、早起きの目的は楽しめるものがよいと述べているため、3が正解です。"
         }
-      ]
+      ],
+      "passage": "<div class=\"speed-master-lined-paper\">\n  早起き習慣が身についている人ほど、「早起き」を目的にしていません。\n  早起きは手段でしかなく、「ジョギングしたいから早起きしよう」こんな感じで、早起きする目的を持ち、楽しみながら起きているのです。\n\n  なお、目的の持ち方にはコツ<sup>(注1)</sup>があります。\n  私たちは、「快の追求<sup>(注2)</sup>」あるいは「不快からの逃避<sup>(注3)</sup>」、この２つの理由で行動を起こします。目的を決めるときは、「不快からの逃避」ではなく、「快の追求」をもとに考えるのがポイントです。このほうがモチベーションが飛躍的に高まる<sup>(注4)</sup>ためです。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（塚本亮『頭が冴える！ 毎日が充実する！ スゴい早起き』すばる舎による）</div>\n</div>",
+      "passageNote": "(注１) コツ：物事をうまく処理する要領<br/>(注２) 追求：あるものを得ようとどこまでも追い求めること<br/>(注３) 逃避：何かを避けて逃げること<br/>(注４) モチベーションが飛躍的に高まる：やる気がとても高まる"
     }
   ]
 }

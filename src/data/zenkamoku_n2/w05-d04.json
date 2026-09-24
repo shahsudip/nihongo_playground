@@ -13,12 +13,10 @@
       "type": "short_passage",
       "title": "内容理解（短文） (1)",
       "titleEn": "Short Passage (1)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d04_p1.png",
       "questions": [
         {
           "number": 1,
           "stem": "ロ筆者が「負けずぎらい」という言葉は不思議だと言っているのはなぜか",
-          "imageSrc": "/images/zenkamoku_n2/w05_d04_p1.png",
           "options": [
             "1. 江戸時代にできたとされる古い言葉だから",
             "2. 人々の誤用や混同によってできた言葉だから",
@@ -29,18 +27,18 @@
           "correctOption": "3. 文字通りの意味と全く逆の意味の言葉だから",
           "explanation": "<b>【正解】3. 文字通りの意味と全く逆の意味の言葉だから</b><br/>「負けるのが嫌い」という意味なのに「負けず嫌い（負けないことが嫌い）」という言葉になっている不思議さを述べているため、3が正解です。"
         }
-      ]
+      ],
+      "passage": "<div class=\"speed-master-lined-paper\">\n  <u>「負けずぎらい」という言葉は不思議だ。そのまま読めば、「負けないことがきらい」なのだから</u>負けることを望んでいるみたいだが、もちろん意味は正反対。江戸時代<sup>(注1)</sup>に「負けぎらい」と言っていたのが誤用や「負けじ魂<sup>(注2)</sup>」との混同で「負けずぎらい」に変化したという説があるそうだ。\n\n  口に出すと「負けぎらい」よりも「負けずぎらい」の方がきっぱりと否定する「負けず」がある分、決意や意地を感じる。負けない。それを強調するあまり、言葉としてはおかしい「負けずぎらい」に変化したのかもしれない。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（東京新聞Web &lt;https://www.tokyo-np.co.jp/article/52206?rct=hissen&gt; 2020年８月31日による）</div>\n</div>",
+      "passageNote": "(注１) 江戸時代：西暦1603年～1868年<br/>(注２) 負けじ魂：他の人に負けないようにがんばろうという精神"
     },
     {
       "type": "short_passage",
       "title": "内容理解（短文） (2)",
       "titleEn": "Short Passage (2)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d04_p2.png",
       "questions": [
         {
           "number": 2,
           "stem": "このメールは何を伝えているか",
-          "imageSrc": "/images/zenkamoku_n2/w05_d04_p2.png",
           "options": [
             "1. ノートパソコンのセール開催について",
             "2. 周辺機器のセール開催について",
@@ -51,18 +49,17 @@
           "correctOption": "2. 周辺機器のセール開催について",
           "explanation": "<b>【正解】2. 周辺機器のセール開催について</b><br/>ノートパソコンではなく周辺機器のセール開催を知らせているため、2が正解です。"
         }
-      ]
+      ],
+      "passage": "<p class=\"mb-3 text-base text-gray-700 dark:text-gray-300\">以下は、ある家電量販店から来たメールである。</p>\n<div class=\"border-2 border-gray-500 rounded-t-md overflow-hidden font-sans max-w-3xl mx-auto shadow-sm bg-white dark:bg-slate-900 text-black dark:text-white relative\">\n  <!-- Window Title Bar -->\n  <div class=\"bg-[#555555] px-2 py-1.5 flex justify-end items-center gap-1.5 border-b-2 border-gray-700\">\n    <div class=\"w-4 h-4 border-2 border-white rounded-sm\"></div>\n    <div class=\"w-4 h-4 border-2 border-white rounded-sm\"></div>\n    <div class=\"w-4 h-4 border-2 border-white rounded-sm flex items-center justify-center text-[10px] font-bold text-white relative\">\n      <div class=\"absolute w-2.5 h-0.5 bg-white rotate-45\"></div>\n      <div class=\"absolute w-2.5 h-0.5 bg-white -rotate-45\"></div>\n    </div>\n  </div>\n  \n  <!-- Email Meta -->\n  <div class=\"p-5 border-b border-gray-300 dark:border-gray-700 leading-loose text-[15px]\">\n    <div class=\"flex\"><div class=\"w-20 font-semibold\">From</div><div>： nishino@sakuraden.co.jp</div></div>\n    <div class=\"flex\"><div class=\"w-20 font-semibold\">To</div><div>： miyashita@xxxmail.com</div></div>\n    <div class=\"flex\"><div class=\"w-20 font-semibold\">件名</div><div>： さくら電器からお客様へのお知らせ</div></div>\n  </div>\n  \n  <!-- Email Body with fake scrollbar on the right -->\n  <div class=\"flex\">\n    <div class=\"flex-1 p-6 pb-12 leading-[2.2] whitespace-pre-wrap text-[16px]\">宮下様\n\nさくら電器の西野でございます。\n先日は当店にてノートパソコン「MM21」をご購入いただき、ありがとうございました。\n何かお困りのことがございましたら、お気軽にサービスセンターまで修理・点検をご依頼ください。\n\nさて、この度、当店をご利用くださっているお客様を対象に、プリンターやプロジェクターなど周辺機器の販売会を行うことになりました。\n各メーカーの商品を取り揃え、30％から50％の割引価格で販売いたします。\nこの機会にぜひご購入を検討されてはいかがでしょうか。\nご来店をお待ちしております。\n\n・開催期間：10月12日（火）～10月15日（金）\n・時間：　　10:00 ～ 20:00\n・場所：　　さくら電器本店　６階イベントスペース\n────────────────────────\nさくら電器　西野\n03-1234-5678</div>\n    <!-- Scrollbar Track -->\n    <div class=\"w-5 bg-gray-200 dark:bg-gray-800 border-l border-gray-300 dark:border-gray-700 flex flex-col justify-between\">\n      <div class=\"h-4 bg-gray-300 dark:bg-gray-700 border-b border-gray-400 dark:border-gray-600 flex items-center justify-center\"><div class=\"w-0 h-0 border-l-4 border-r-4 border-b-4 border-l-transparent border-r-transparent border-b-gray-600 dark:border-b-gray-300\"></div></div>\n      <div class=\"flex-1 px-0.5 py-1\"><div class=\"w-full h-16 bg-gray-400 dark:bg-gray-600 rounded-sm\"></div></div>\n      <div class=\"h-4 bg-gray-300 dark:bg-gray-700 border-t border-gray-400 dark:border-gray-600 flex items-center justify-center\"><div class=\"w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-gray-600 dark:border-t-gray-300\"></div></div>\n    </div>\n  </div>\n</div>"
     },
     {
       "type": "short_passage",
       "title": "内容理解（短文） (3)",
       "titleEn": "Short Passage (3)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d04_p3.png",
       "questions": [
         {
           "number": 3,
           "stem": "この文章で筆者が最も言いたいことは何か。",
-          "imageSrc": "/images/zenkamoku_n2/w05_d04_p3.png",
           "options": [
             "1. 駅の中のトイレをきれいに使うよう、心がけてほしい。",
             "2. 人に何かを頼むときは、直接的に指示したほうがいい。",
@@ -73,18 +70,17 @@
           "correctOption": "4. 普段から、人に何か伝えるときは言葉選びに注意すべきだ。",
           "explanation": "<b>【正解】4. 普段から、人に何か伝えるときは言葉選びに注意すべきだ。</b><br/>言葉の選び方ひとつで相手の受ける印象や行動が変わることを述べているため、4が正解です。"
         }
-      ]
+      ],
+      "passage": "<div class=\"speed-master-lined-paper\">\n  駅の中などのトイレで「いつもきれいに使っていただき、ありがとうございます」という張り紙をよく見かける。トイレをきれいにつかうように、ということを言っているのだが、「トイレをきれいに使ってください」と直接的に指示されるよりも、すんなりと受け入れられる気がする。このように、同じ内容を伝えたい場合でも、言い方ひとつで受け手の印象は変わるのだ。日頃から、相手に自分の言いたいことをどのように伝えていくのか、言い回しには気を配りたいものだ。\n</div>"
     },
     {
       "type": "short_passage",
       "title": "内容理解（短文） (4)",
       "titleEn": "Short Passage (4)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d04_p4.png",
       "questions": [
         {
           "number": 4,
           "stem": "国この文章の内容に合うのはどれか",
-          "imageSrc": "/images/zenkamoku_n2/w05_d04_p4.png",
           "options": [
             "1. 就職に強い大学に通うことこそが、いい会社に就職する方法である。",
             "2. 就職率が高ければ高いほど、大学の人気は上がっていくものである。",
@@ -95,18 +91,18 @@
           "correctOption": "4. 就職率が高いからといって、就職に強い大学であるとは言い切れない。",
           "explanation": "<b>【正解】4. 就職率が高いからといって、就職に強い大学であるとは言い切れない。</b><br/>就職率が高いからといって本当に就職に強い大学とは限らないことを論じているため、4が正解です。"
         }
-      ]
+      ],
+      "passage": "<div class=\"speed-master-lined-paper\">\n  大学の就職率重視の傾向を象徴する<sup>(注1)</sup>言葉として、「就職に強い大学」という言葉もよく聞く。だが、「就職に強い」とはいったいどういう意味なのであろうか。この言葉は、実は奇妙なものである。一般的に、就職率が高いということを想像するであろうが、そもそも「就職率」という指標<sup>(注2)</sup>は、最終的な就職決定者を最終的な就職希望者で割ったものであり、途中で進路変更した人が抜けていくので、指標としてやや信頼性に欠けるものである。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（常見陽平『「就活」と日本社会　平等幻想を超えて』NHK出版による）</div>\n</div>",
+      "passageNote": "(注１) 象徴する：具体的に表現する<br/>(注２) 指標：何かを判断したり、評価したりするための基準となるもの"
     },
     {
       "type": "short_passage",
       "title": "内容理解（短文） (5)",
       "titleEn": "Short Passage (5)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d04_p5.png",
       "questions": [
         {
           "number": 5,
           "stem": "〔ロクジャクの目玉模様について、内容に合うのはどれか",
-          "imageSrc": "/images/zenkamoku_n2/w05_d04_p5.png",
           "options": [
             "1. 羽の音を出すためには目玉模様が必要である。",
             "2. 羽毛をこすることで目玉模様は大きくなっていく。",
@@ -117,7 +113,9 @@
           "correctOption": "4. 生命力が強い雄ほど羽に目玉模が多い。",
           "explanation": "<b>【正解】4. 生命力が強い雄ほど羽に目玉模が多い。</b><br/>目玉模様の数が多い雄ほど生存力・生命力が強いと述べているため、4が正解です。"
         }
-      ]
+      ],
+      "passage": "<p class=\"mb-3 text-base text-gray-700 dark:text-gray-300\">以下は、クジャクという鳥について書かれた文章である。</p>\n<div class=\"speed-master-lined-paper\">\n  クジャクの雄<sup>(注1)</sup>は上尾筒<sup>(注2)</sup>を持ち上げて、雌<sup>(注3)</sup>の周りをゆっくり回りながら、時々広げた羽を揺さぶり、羽毛のこすれる音を出して求愛する。宝石をちりばめたような飾り羽と、きらびやかな目玉模様が広がっている。雌はその目玉模様の数の多さと、魅力的な鳴き声で雄を選ぶという。毎年換羽する<sup>(注4)</sup>たびに扇状に広げる羽は大きくなるので、目玉模様の数はそれだけ捕食者<sup>(注5)</sup>や寄生虫<sup>(注6)</sup>の攻撃を切り抜けてきたことを示す。目玉模様が多いということは、その鳥が生き延びてきた証である。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（浅間茂『虫や鳥が見ている世界―紫外線写真が明かす生存戦略』中央公論新社による）</div>\n</div>",
+      "passageNote": "(注１) 雄：男。動物の性別を表す際に使われる<br/>(注２) 上尾筒：鳥の尾羽の付け根の上面をおおっている羽<br/>(注３) 雌：女。動物の性別を表す際に使われる<br/>(注４) 換羽する：鳥の羽毛が抜け変わること<br/>(注５) 捕食者：他の動物をえさとして食べる動物<br/>(注６) 寄生虫：動物の体表や体内から栄養をとって生活する生物"
     }
   ]
 }

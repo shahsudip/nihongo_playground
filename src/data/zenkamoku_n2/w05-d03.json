@@ -13,12 +13,10 @@
       "type": "short_passage",
       "title": "内容理解（短文） (1)",
       "titleEn": "Short Passage (1)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d03_p1.png",
       "questions": [
         {
           "number": 1,
           "stem": "その企業とあるが、どんな企業か",
-          "imageSrc": "/images/zenkamoku_n2/w05_d03_p1.png",
           "options": [
             "1. 人々のために役立つものを作り出している業",
             "2. 意味のある商品やサービスを提供する企業",
@@ -29,18 +27,18 @@
           "correctOption": "2. 意味のある商品やサービスを提供する企業",
           "explanation": "<b>【正解】2. 意味のある商品やサービスを提供する企業</b><br/>「提供するモノやサービスにどれだけ意味をもたせられるかを考えるべき」とあり、2が正解です。"
         }
-      ]
+      ],
+      "passage": "<div class=\"speed-master-lined-paper\">\n  ビジネスのポジション<sup>(注1)</sup>は「役に立つ・役に立たない」と「意味がある・意味がない」の２つの軸<sup>(注2)</sup>で整理できます。\n\n  日本の多くの企業はいまだに前者の軸だけで商品開発をしていますが、それだと生き残れるのはトップの企業だけ。ゆえに、戦略<sup>(注3)</sup>としては、提供するモノやサービスにどれだけ意味をもたせられるかを考えるべきなのです。\n\n  その際、こういう社会を実現しようとしているという企業の姿勢が明確になっている必要があります。そこがはっきりしていれば、それに賛同する人たちは、消費者として<u>その企業</u>を応援しようとするでしょう。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（プレジデントオンライン &lt;https://president.jp/articles/-/43373&gt; 2021年２月23日による）</div>\n</div>",
+      "passageNote": "(注１) ポジション：位置づけ<br/>(注２) 軸：物事の中心となるもの。ここでは基準<br/>(注３) 戦略：勝つための計画"
     },
     {
       "type": "short_passage",
       "title": "内容理解（短文） (2)",
       "titleEn": "Short Passage (2)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d03_p2.png",
       "questions": [
         {
           "number": 2,
           "stem": "本文中のアリについて正しいものはどれか",
-          "imageSrc": "/images/zenkamoku_n2/w05_d03_p2.png",
           "options": [
             "1. 糖分以外の栄養を「アリ植物」から得ている。",
             "2. 毛虫に襲われることがある。",
@@ -51,18 +49,18 @@
           "correctOption": "4. 「アリ植物」の枝の中に住んでいる。",
           "explanation": "<b>【正解】4. 「アリ植物」の枝の中に住んでいる。</b><br/>アリ植物の枝の中に住み、アリ植物を守っていることから、4が正解です。"
         }
-      ]
+      ],
+      "passage": "<p class=\"mb-3 text-base text-gray-700 dark:text-gray-300\">以下は、植物とアリの関係について書かれた文章である。</p>\n<div class=\"speed-master-lined-paper\">\n  アリを味方にしようと、さらに厚遇<sup>(注1)</sup>でアリを迎え入れる植物もある。\n\n  驚くことに、アリを懐柔する<sup>(注2)</sup>ために食べ物だけでなく、アリの家族が住む住居まで提供するのだ。「アリ植物」と呼ばれるこれらの植物は、枝の中に空間を作り、その中にアリを住まわせる。もちろん、食事も豪勢である<sup>(注3)</sup>。それらの植物は、蜜などの糖分ばかりか、たんぱく質や脂質などすべての栄養素をアリに与えている。そのため、アリは、この植物の上だけで過ごすことができる。そして、その代わりにアリたちは、木の葉を食べようとする毛虫などの昆虫から、植物を守っているのである。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（稲垣栄洋『たたかう植物 ――仁義なき生存戦略』筑摩書房による）</div>\n</div>",
+      "passageNote": "(注１) 厚遇：歓迎し、丁寧に扱うこと<br/>(注２) 懐柔する：上手く扱って自分の思い通りに動かす<br/>(注３) 豪勢な：非常にぜいたくで豪華な様子"
     },
     {
       "type": "short_passage",
       "title": "内容理解（短文） (3)",
       "titleEn": "Short Passage (3)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d03_p3.png",
       "questions": [
         {
           "number": 3,
           "stem": "筆者の考えに合うのはどれか",
-          "imageSrc": "/images/zenkamoku_n2/w05_d03_p3.png",
           "options": [
             "1. どんなときでも、好き嫌いの感情に従うべきだ。",
             "2. 好き嫌いの感情を抑えないことで自然と人生は楽しくなってくる。",
@@ -73,18 +71,18 @@
           "correctOption": "4. 好き嫌いの感情を抑えることが常に正しいわけではない。",
           "explanation": "<b>【正解】4. 好き嫌いの感情を抑えることが常に正しいわけではない。</b><br/>感情を抑えることが常に正解ではないと述べているため、4が正解です。"
         }
-      ]
+      ],
+      "passage": "<div class=\"speed-master-lined-paper\">\n  あなたは好きなことを思いっきりやっているだろうか。\n\n  どちらかというと、好きなことは我慢してやらず、嫌いなことを無理してやる。そんな生き方になっている人のほうが、むしろ多いのではないだろうか。\n\n  だが、好き嫌いの感情をいつも抑えていれば、ストレスは溜まるし、人生はつまらなくてやりきれないものになっていくに違いない。\n\n  好き嫌いの感情を抑えて理性<sup>(注)</sup>で行動をコントロールするのは、けっして立派なことではない。幸せな人生をおくるには、私たちは好き嫌いの感情にもう少し素直になってもいいのである。\n\n  <div class=\"text-right text-sm text-gray-600 dark:text-gray-400 mt-2\">（桜井章一『感情を整える』PHP研究所による）</div>\n</div>",
+      "passageNote": "(注) 理性：人として物事のいい、悪いを判断する心の働き"
     },
     {
       "type": "short_passage",
       "title": "内容理解（短文） (4)",
       "titleEn": "Short Passage (4)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d03_p4.png",
       "questions": [
         {
           "number": 4,
           "stem": "この議論とはどんな議論か",
-          "imageSrc": "/images/zenkamoku_n2/w05_d03_p4.png",
           "options": [
             "1. ゲームの芸術性をどう高めるかという議論",
             "2. ゲームは芸術のひとつなのかという議論",
@@ -95,18 +93,18 @@
           "correctOption": "2. ゲームは芸術のひとつなのかという議論",
           "explanation": "<b>【正解】2. ゲームは芸術のひとつなのかという議論</b><br/>ゲームが芸術のひとつとして認められるかという議論について述べているため、2が正解です。"
         }
-      ]
+      ],
+      "passage": "<div class=\"speed-master-lined-paper\">\n  最近のビデオゲーム、特にRPG<sup>(注1)</sup>は、映像や物語の質が高くプレイヤー<sup>(注2)</sup>に感動を与えたり、新しいものの見方を教えてくれたりすることもある。まるで自分で登場人物を動かすことができる映画のようだ。絵画や文芸、そして映画を芸術と呼ぶのならば、ゲームを芸術と呼んでもかまわないのではあるまいかという声すらある。しかし、一方で、ゲームは結局のところは子どものおもちゃにすぎないという意見も根強い。<u>この議論</u>に答えを出すためには、まずは芸術とは何かということから見直す必要があるだろう。\n</div>",
+      "passageNote": "(注１) RPG：ロールプレイングゲーム。自分が登場人物となり、目的に向かって物語を進めるゲーム<br/>(注２) プレイヤー：ゲームをする人"
     },
     {
       "type": "short_passage",
       "title": "内容理解（短文） (5)",
       "titleEn": "Short Passage (5)",
-      "imageSrc": "/images/zenkamoku_n2/w05_d03_p5.png",
       "questions": [
         {
           "number": 5,
           "stem": "このお知らせからわかることは何か。",
-          "imageSrc": "/images/zenkamoku_n2/w05_d03_p5.png",
           "options": [
             "1. 利用料金が請求されること",
             "2. 10月分の請求料金",
@@ -117,7 +115,8 @@
           "correctOption": "1. 利用料金が請求されること",
           "explanation": "<b>【正解】1. 利用料金が請求されること</b><br/>クレジットカード会社から利用料金が請求されることを知らせているため、1が正解です。"
         }
-      ]
+      ],
+      "passage": "<p class=\"mb-3 text-base text-gray-700 dark:text-gray-300\">以下は、携帯電話の会社から来たメールである。</p>\n<div class=\"border-2 border-gray-500 rounded-t-md overflow-hidden font-sans max-w-3xl mx-auto shadow-sm bg-white dark:bg-slate-900 text-black dark:text-white relative\">\n  <!-- Window Title Bar -->\n  <div class=\"bg-[#555555] px-2 py-1.5 flex justify-end items-center gap-1.5 border-b-2 border-gray-700\">\n    <div class=\"w-4 h-4 border-2 border-white rounded-sm\"></div>\n    <div class=\"w-4 h-4 border-2 border-white rounded-sm\"></div>\n    <div class=\"w-4 h-4 border-2 border-white rounded-sm flex items-center justify-center text-[10px] font-bold text-white relative\">\n      <div class=\"absolute w-2.5 h-0.5 bg-white rotate-45\"></div>\n      <div class=\"absolute w-2.5 h-0.5 bg-white -rotate-45\"></div>\n    </div>\n  </div>\n  \n  <!-- Email Meta -->\n  <div class=\"p-5 border-b border-gray-300 dark:border-gray-700 leading-loose text-[15px]\">\n    <div class=\"flex\"><div class=\"w-20 font-semibold\">From</div><div>： xxxx@xxxx.co.jp</div></div>\n    <div class=\"flex\"><div class=\"w-20 font-semibold\">To</div><div>： yyyy@yyyy.co.jp</div></div>\n    <div class=\"flex\"><div class=\"w-20 font-semibold\">件名</div><div>： お客様への大切なお知らせ</div></div>\n  </div>\n  \n  <!-- Email Body with fake scrollbar on the right -->\n  <div class=\"flex\">\n    <div class=\"flex-1 p-6 pb-12 leading-[2.2] whitespace-pre-wrap text-[16px]\">ご利用者様\n\n弊社の携帯電話（080-XXXX-XXXX）をご利用いただきありがとうございます。\n10月分（9月20日～10月19日）のご利用料金をご指定のクレジットカード会社よりご請求させていただきます。詳しくは、「お客様ポータルサイト」の「請求料金」をご確認ください。契約プランについては、同サイト内「契約内容の確認」のページよりご確認いただけます。\nまた、今月よりお得なプラン「話し放題ダブル」をお選びいただけるようになりました。全国の店頭にてプランの変更を承っております。プランの内容については\nhttps://www.xxx.jp/hanashihodai-double/をご覧ください。\n\n========================\n【お問い合わせ先】\nAAテレコムサポートセンター\nTEL: 012-432-3153\n（日本時間 9:00～19:00 年中無休）\n========================</div>\n    <!-- Scrollbar Track -->\n    <div class=\"w-5 bg-gray-200 dark:bg-gray-800 border-l border-gray-300 dark:border-gray-700 flex flex-col justify-between\">\n      <div class=\"h-4 bg-gray-300 dark:bg-gray-700 border-b border-gray-400 dark:border-gray-600 flex items-center justify-center\"><div class=\"w-0 h-0 border-l-4 border-r-4 border-b-4 border-l-transparent border-r-transparent border-b-gray-600 dark:border-b-gray-300\"></div></div>\n      <div class=\"flex-1 px-0.5 py-1\"><div class=\"w-full h-16 bg-gray-400 dark:bg-gray-600 rounded-sm\"></div></div>\n      <div class=\"h-4 bg-gray-300 dark:bg-gray-700 border-t border-gray-400 dark:border-gray-600 flex items-center justify-center\"><div class=\"w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-gray-600 dark:border-t-gray-300\"></div></div>\n    </div>\n  </div>\n</div>"
     }
   ]
 }
