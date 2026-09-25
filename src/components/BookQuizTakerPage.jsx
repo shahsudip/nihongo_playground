@@ -421,8 +421,27 @@ const BookQuizTakerPage = () => {
   };
 
 
-  const currentQ = questions[currentIndex];
-  const selectedAnswer = answers[currentQ.id];
+  if (loading) return <LoadingSpinner />;
+  if (error) return <div className="error-message" style={{ color: 'white', padding: '100px', textAlign: 'center' }}>{error}</div>;
+  if (!chapter || questions.length === 0) return <div style={{ color: 'white', padding: '100px', textAlign: 'center' }}>No questions available.</div>;
+
+  const totalQuestions = questions.length;
+  const answeredCount = Object.keys(answers).length;
+  const progressPercent = totalQuestions > 0 ? (answeredCount / totalQuestions) * 100 : 0;
+
+  let correctCount = 0;
+  Object.keys(answers).forEach(qId => {
+    const q = questions.find(qu => qu.id === qId);
+    if (q) {
+      const correctText = getCorrectText(q);
+      if (answers[qId] === correctText) {
+        correctCount++;
+      }
+    }
+  });
+
+  const currentQ = questions[currentIndex] || questions[0];
+  const selectedAnswer = currentQ ? answers[currentQ.id] : undefined;
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8 animate-fade-in pt-[100px]">
