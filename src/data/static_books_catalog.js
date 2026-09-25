@@ -2,6 +2,20 @@
 
 export const STATIC_BOOKS = [
   {
+    id: 'zenkamoku-n1-best-workbook',
+    title: '全科目攻略！JLPT日本語能力試験ベスト総合問題集N1',
+    description: '12-week complete JLPT N1 workbook covering vocabulary, grammar, reading, and listening.',
+    level: 'N1',
+    category: 'Mixed',
+    coverImage: '/images/zenkamoku_n1_cover.jpg',
+    coverUrl: '/images/zenkamoku_n1_cover.jpg',
+    color: 'from-rose-500 to-pink-600',
+    tags: ['N1', 'Grammar', 'Reading', 'Listening', 'Vocabulary', 'Kanji', 'Zenkamoku'],
+    hasDigitalDrill: true,
+    totalChapters: 60
+  },
+
+  {
     id: 'zenkamoku-n2-best-workbook',
     title: '全科目攻略JLPT日本語能力試験ベスト総合問題集N2',
     description: 'A comprehensive workbook covering all subjects for JLPT N2.',
