@@ -18,6 +18,7 @@ export default function ZenkamokuPageViewer() {
 
   // Persistent answers state
   const [savedAnswers, setSavedAnswers] = useState({});
+  const [attemptDate, setAttemptDate] = useState(null);
 
   // Derive current bookId
   const location = useLocation();
@@ -26,8 +27,10 @@ export default function ZenkamokuPageViewer() {
     : location.pathname.includes('zenkamoku-n2')
     ? 'zenkamoku-n2-best-workbook'
     : 'zenkamoku-n3-best-workbook';
-  const historyDocId = currentUser ? `${currentBookId}-${chapterId}` : null;
-  const storageKey = currentUser ? `zenkamoku-progress-${currentUser.uid}-${historyDocId}` : null;
+  const historyDocId = `${currentBookId}-${chapterId}`;
+  const storageKey = currentUser
+    ? `zenkamoku-progress-${currentUser.uid}-${historyDocId}`
+    : `zenkamoku-progress-guest-${historyDocId}`;
 
   // Load progress on mount/chapter change from both localStorage and Firestore
   useEffect(() => {
@@ -35,6 +38,7 @@ export default function ZenkamokuPageViewer() {
 
     const loadState = async () => {
       let answersToSet = {};
+      let loadedTimestamp = null;
 
       // 1. Check localStorage first
       if (storageKey) {
@@ -47,11 +51,30 @@ export default function ZenkamokuPageViewer() {
               if (localAns && typeof localAns === 'object' && Object.keys(localAns).length > 0) {
                 answersToSet = localAns;
               }
+              if (parsed.timestamp) {
+                loadedTimestamp = parsed.timestamp;
+              }
             }
           }
         } catch (e) {
           console.warn("Could not read local Zenkamoku cache:", e);
         }
+      }
+
+      // Also check global quizHistory localStorage cache
+      try {
+        const localHist = JSON.parse(localStorage.getItem('quizHistory') || '[]');
+        const entry = localHist.find(h => (h.quizId || h.id) === historyDocId);
+        if (entry) {
+          if (entry.answers && Object.keys(entry.answers).length >= Object.keys(answersToSet).length) {
+            answersToSet = entry.answers;
+          }
+          if (entry.timestamp && !loadedTimestamp) {
+            loadedTimestamp = entry.timestamp;
+          }
+        }
+      } catch (e) {
+        console.warn("Could not read local quizHistory:", e);
       }
 
       // 2. Check Firestore record
@@ -64,6 +87,9 @@ export default function ZenkamokuPageViewer() {
             if (data.answers && typeof data.answers === 'object' && Object.keys(data.answers).length > 0) {
               if (Object.keys(data.answers).length >= Object.keys(answersToSet).length) {
                 answersToSet = data.answers;
+                if (data.timestamp) {
+                  loadedTimestamp = data.timestamp;
+                }
               }
             }
           }
@@ -74,8 +100,13 @@ export default function ZenkamokuPageViewer() {
 
       if (isMounted) {
         setSavedAnswers(answersToSet);
+        if (loadedTimestamp) {
+          setAttemptDate(new Date(loadedTimestamp));
+        } else {
+          setAttemptDate(new Date());
+        }
       }
-        setStateLoaded(true);
+      setStateLoaded(true);
     };
 
     loadState();
@@ -86,6 +117,9 @@ export default function ZenkamokuPageViewer() {
   }, [currentUser, historyDocId, storageKey]);
 
   const handleAnswer = (qIdx, optText, isCorrect) => {
+    const nowIso = new Date().toISOString();
+    setAttemptDate(new Date(nowIso));
+
     setSavedAnswers(prev => {
       const next = { ...prev, [qIdx]: { text: optText, isCorrect } };
       
@@ -94,30 +128,57 @@ export default function ZenkamokuPageViewer() {
         try {
           localStorage.setItem(storageKey, JSON.stringify({
             answers: next,
-            timestamp: new Date().toISOString()
+            timestamp: nowIso
           }));
         } catch (e) {
           console.warn("Could not save to localStorage:", e);
         }
       }
 
-      // 2. Auto-sync to Firestore so answers and score are preserved even if tab closes
-      if (currentUser && historyDocId && questions.length > 0) {
-        const correctCount = Object.values(next).filter(a => a && a.isCorrect).length;
+      const totalCount = questions.length;
+      const correctCount = Object.values(next).filter(a => a && a.isCorrect).length;
+      const answeredCount = Object.keys(next).length;
+      const isAllAttempted = answeredCount === totalCount && totalCount > 0;
+      const pct = totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0;
+      
+      const level = currentBookId.includes('n1') ? 'N1' : currentBookId.includes('n2') ? 'N2' : 'N3';
+      const status = isAllAttempted ? (pct >= 80 && correctCount > 0 ? 'mastered' : 'completed') : 'incomplete';
+
+      const record = {
+        quizId: historyDocId,
+        id: historyDocId,
+        bookId: currentBookId,
+        chapterId,
+        title: `${chapter?.weekTitle || `第${currentWeek}週`} ${chapter?.dayTitle || `${currentDay}日目`}`,
+        level,
+        category: 'Dokkai & Grammar',
+        type: 'book',
+        timestamp: nowIso,
+        score: correctCount,
+        total: totalCount,
+        answered: answeredCount,
+        answers: next,
+        status
+      };
+
+      // 2. Also sync to global localStorage quizHistory array so Profile Review Activity immediately displays it
+      try {
+        const localHistory = JSON.parse(localStorage.getItem('quizHistory') || '[]');
+        const existingIdx = localHistory.findIndex(h => (h.quizId || h.id) === historyDocId);
+        if (existingIdx >= 0) {
+          localHistory[existingIdx] = { ...localHistory[existingIdx], ...record };
+        } else {
+          localHistory.unshift(record);
+        }
+        localStorage.setItem('quizHistory', JSON.stringify(localHistory));
+      } catch (e) {
+        console.warn("Could not update local quizHistory:", e);
+      }
+
+      // 3. Auto-sync to Firestore so answers and score are preserved in user's profile
+      if (currentUser && historyDocId && totalCount > 0) {
         const historyRef = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
-        setDoc(historyRef, {
-          quizId: historyDocId,
-          bookId: currentBookId,
-          chapterId,
-          title: (chapter?.weekTitle || '') + ' ' + (chapter?.dayTitle || ''),
-          type: 'book',
-          timestamp: new Date().toISOString(),
-          score: correctCount,
-          total: questions.length,
-          answered: Object.keys(next).length,
-          answers: next,
-          status: Object.keys(next).length === questions.length ? 'completed' : 'incomplete'
-        }, { merge: true }).catch(err => console.warn("Background answer sync error:", err));
+        setDoc(historyRef, record, { merge: true }).catch(err => console.warn("Background answer sync error:", err));
       }
 
       return next;
@@ -128,12 +189,23 @@ export default function ZenkamokuPageViewer() {
     if (!window.confirm('Are you sure you want to reset your progress? This will clear your score and answers so you can retake every question from scratch.')) return;
     
     setSavedAnswers({});
+    const nowIso = new Date().toISOString();
+    setAttemptDate(new Date(nowIso));
+
     if (storageKey) {
       try {
         localStorage.removeItem(storageKey);
       } catch (e) {
         console.warn(e);
       }
+    }
+
+    try {
+      const localHistory = JSON.parse(localStorage.getItem('quizHistory') || '[]');
+      const filtered = localHistory.filter(h => (h.quizId || h.id) !== historyDocId);
+      localStorage.setItem('quizHistory', JSON.stringify(filtered));
+    } catch (e) {
+      console.warn(e);
     }
     
     if (currentUser && historyDocId) {
@@ -179,17 +251,30 @@ export default function ZenkamokuPageViewer() {
       try {
         setLoading(true);
 
-        // Fetch from local JSON pattern instead of Firestore
-        let chapterData;
+        // 1. Fetch from Firestore database
+        let chapterData = null;
         try {
-          if (currentBookId.includes('n1')) {
-            chapterData = (await import(`../data/zenkamoku_n1/${chapterId}.json`)).default;
-          } else if (currentBookId.includes('n2')) {
-            chapterData = (await import(`../data/zenkamoku_n2/${chapterId}.json`)).default;
-          } else {
-            chapterData = (await import(`../data/zenkamoku_n3/${chapterId}.json`)).default;
+          const chapterRef = doc(db, 'books', currentBookId, 'chapters', chapterId);
+          const chapterSnap = await getDoc(chapterRef);
+          if (chapterSnap.exists()) {
+            chapterData = chapterSnap.data();
           }
-        } catch(e) { console.error('Failed to load local JSON', e); }
+        } catch (dbErr) {
+          console.warn('Firestore load error, checking local fallback:', dbErr);
+        }
+
+        // 2. Fallback to local bundle if Firestore has network failure
+        if (!chapterData) {
+          try {
+            if (currentBookId.includes('n1')) {
+              chapterData = (await import(`../data/zenkamoku_n1/${chapterId}.json`)).default;
+            } else if (currentBookId.includes('n2')) {
+              chapterData = (await import(`../data/zenkamoku_n2/${chapterId}.json`)).default;
+            } else {
+              chapterData = (await import(`../data/zenkamoku_n3/${chapterId}.json`)).default;
+            }
+          } catch(e) { console.error('Failed to load local JSON', e); }
+        }
 
         if (chapterData) {
           setChapter(chapterData);
@@ -225,6 +310,10 @@ export default function ZenkamokuPageViewer() {
     if (loading) return <div className="pt-32"><LoadingSpinner /></div>;
     if (!chapter) return <div className="text-center py-20 text-gray-500 dark:text-gray-400 font-bold text-xl">This chapter has not been extracted yet. Select a different Week/Day.</div>;
 
+    const activeDate = attemptDate || new Date();
+    const displayMonth = activeDate.getMonth() + 1;
+    const displayDay = activeDate.getDate();
+
     return (
       <>
         {/* AUTHENTIC HEADER */}
@@ -235,12 +324,16 @@ export default function ZenkamokuPageViewer() {
             </div>
             <div className="bg-[#e5e7eb] dark:bg-[#374151] text-black dark:text-white px-6 py-3 font-bold text-2xl md:text-3xl flex-1 flex items-center justify-between">
               <span>{chapter.dayTitle || currentDay + "日目"}</span>
-              <div className="flex items-center gap-1 text-gray-600 dark:text-gray-300">
-                <span className="text-2xl mr-2">📅</span>
-                <span className="border-b-2 border-black dark:border-white w-10 inline-block mx-1"></span>
-                <span className="text-lg">月</span>
-                <span className="border-b-2 border-black dark:border-white w-10 inline-block mx-1"></span>
-                <span className="text-lg">日</span>
+              <div className="flex items-center gap-1.5 text-gray-700 dark:text-gray-200 text-lg md:text-xl font-medium select-none">
+                <span className="text-2xl mr-1">📅</span>
+                <span className="font-bold text-xl md:text-2xl text-blue-600 dark:text-blue-400 border-b-2 border-black dark:border-white min-w-[2.2rem] text-center inline-block pb-0.5">
+                  {displayMonth}
+                </span>
+                <span className="text-base md:text-lg">月</span>
+                <span className="font-bold text-xl md:text-2xl text-blue-600 dark:text-blue-400 border-b-2 border-black dark:border-white min-w-[2.2rem] text-center inline-block pb-0.5 ml-1">
+                  {displayDay}
+                </span>
+                <span className="text-base md:text-lg">日</span>
               </div>
             </div>
           </div>
