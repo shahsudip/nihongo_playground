@@ -93,6 +93,7 @@ const BookListPage = () => {
     'tango_n2': tangoN2Cover,
     'tango_n3': tangoN3Cover,
     'speed-master-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/speed_master_n3_pages/speed_master_n3_page-0001.jpg`,
+    'zenkamoku-n1-best-workbook': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/images/zenkamoku_n1_cover.jpg`,
     'zenkamoku-n2-best-workbook': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/images/zenkamoku_n2_cover.jpg`,
     'zenkamoku-n3-best-workbook': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/images/zenkamoku_n3_cover.jpg`,
     'shinkanzen-master-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/shinkanzen_n3_reading_cover.jpg`,
@@ -103,6 +104,7 @@ const BookListPage = () => {
   };
 
   const COVER_BOOK_NAMES = {
+    'zenkamoku-n1-best-workbook': '全科目攻略 ベスト総合問題集 N1',
     'zenkamoku-n2-best-workbook': '全科目攻略 ベスト総合問題集 N2',
     'zenkamoku-n3-best-workbook': '全科目攻略 ベスト総合問題集 N3',
     'shin-nihongo-500-n1': '新にほんご500問 N1',
