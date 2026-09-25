@@ -13,78 +13,78 @@
     {
       "type": "short_passage",
       "title": "(1)",
-      "passage": "<div class=\"speed-master-lined-paper\">\n  犬を<ruby>飼<rt>か</rt></ruby>い始めて3か月たちますが、困っていることがあります。それは、散歩中に<ruby>突然<rt>とつぜん</rt></ruby>犬が動かなくなってしまうことです。そうなると、<ruby>引<rt>ひ</rt></ruby>っ<ruby>張<rt>ぱ</rt></ruby>っても、お<ruby>菓子<rt>かし</rt></ruby>を見せても、それ以上は歩いてくれず、<ruby>抱<rt>だ</rt></ruby>いて帰るしかありません。散歩の時間が長すぎて<ruby>疲<rt>つか</rt></ruby>れてしまうのかと思い、短くしてみたのですが、同じです。以前、散歩の道を変えたところ、車が多くて<ruby>危<rt>あぶ</rt></ruby>ないので、<ruby>抱<rt>だ</rt></ruby>いて帰ったことがありました。今考えると、そのときからこの<ruby>習慣<rt>しゅうかん</rt></ruby>がついたような気がします。もしかしたら、<ruby>抱<rt>だ</rt></ruby>いてほしくて、そうしているのかもしれません。\n</div>",
+      "passageIntro": "みどり体育館の入口に、このお知らせがはってある。",
+      "passage": "<div class=\"border-2 border-gray-600 dark:border-gray-400 p-6 md:p-8 max-w-2xl mx-auto rounded-sm bg-amber-50/20 dark:bg-slate-900/60 font-sans leading-loose text-black dark:text-white shadow-sm\">\n  <div class=\"text-center font-bold text-lg mb-6\">みどり体育館 ご<ruby>利用<rt>りよう</rt></ruby><ruby>者<rt>しゃ</rt></ruby>の<ruby>皆様<rt>みなさま</rt></ruby></div>\n  <div class=\"leading-[2.2] text-[16px] mb-6 indent-4\">いつもご利用ありがとうございます。<ruby>水道<rt>すいどう</rt></ruby><ruby>管<rt>かん</rt></ruby>の<ruby>修理<rt>しゅうり</rt></ruby>のため、2021年6月20日から7月10日まで、みどり体育館はお休みとなります。ご不便をおかけしますが、他の体育館のご利用をお願いいたします。予定されている運動教室は以下の通り、場所が<ruby>変更<rt>へんこう</rt></ruby>となりますので、ご注意ください。</div>\n  <div class=\"space-y-3 mb-8 text-[15px] pl-2 md:pl-4\">\n    <div class=\"flex items-center gap-3\">\n      <span>・月曜日 17時～18時　こどもダンス教室</span>\n      <span>➡</span>\n      <span class=\"font-medium\">市立第2小学校体育館</span>\n    </div>\n    <div class=\"flex items-center gap-3\">\n      <span>・木曜日 10時～11時　<ruby>健康<rt>けんこう</rt></ruby><ruby>体操<rt>たいそう</rt></ruby>教室</span>\n      <span>➡</span>\n      <span class=\"font-medium\">中央体育館</span>\n    </div>\n  </div>\n  <div class=\"text-right font-medium text-[16px]\">柳原市 みどり体育館</div>\n</div>",
       "questions": [
         {
           "number": 1,
-          "stem": "そのときとあるが、いつか。",
+          "stem": "このお知らせの内容として正しいものはどれか。",
           "options": [
-            "1. 犬を飼い始めたとき",
-            "2. 散歩の時間を短くしたとき",
-            "3. 散歩の道を変えたとき",
-            "4. 抱いてほしいとき"
+            "1. こどもダンス教室は体育館の修理中、休みになる。",
+            "2. みどり体育館が休みの間、他の体育館も休みになる。",
+            "3. 運動教室がない時間は、みどり体育館を自由に使うことができる。",
+            "4. みどり体育館の修理中、運動教室は別の場所で行われる。"
           ],
-          "correct": 3,
-          "correctOption": "3. 散歩の道を変えたとき"
+          "correct": 4,
+          "correctOption": "4. みどり体育館の修理中、運動教室は別の場所で行われる。"
         }
       ]
     },
     {
       "type": "short_passage",
       "title": "(2)",
-      "passageIntro": "これは日本語学校から学生に届いたメールである。",
-      "passage": "<div class=\"speed-master-email-card\">\n  <div class=\"speed-master-email-body\">\nあて先：ichiban-nihongo@xxxxx.co.jp\n件名：<ruby>卒業<rt>そつぎょう</rt></ruby>アルバムの写真<ruby>募集<rt>ぼしゅう</rt></ruby>\n送信日時：2021年12月15日 7:00\n\n来年<ruby>卒業<rt>そつぎょう</rt></ruby>する学生のみなさん\n\n今、学校ではみなさんの<ruby>卒業<rt>そつぎょう</rt></ruby>アルバムを作っています。そこで、みなさんから<ruby>遠足<rt>えんそく</rt></ruby>や花見など、学校のイベントで撮った思い出の写真を<ruby>募集<rt>ぼしゅう</rt></ruby>します。\n<ruby>卒業<rt>そつぎょう</rt></ruby>アルバムに<ruby>載<rt>の</rt></ruby>せてほしい写真があれば、メールで送ってください。一人3枚までです。\nその中からいいものをこちらで<ruby>選<rt>えら</rt></ruby>びます。どんな写真でもいいですが、学生が写っているものに限ります。また、アルバムに<ruby>載<rt>の</rt></ruby>せるコメントに使いたいので、できればそのときの気持ちを短く書いて送ってくれるとうれしいです。\nでは、みなさんからの写真を楽しみにしています。\n\nいちばん日本語学校　事務局　高橋\n  </div>\n</div>",
+      "passageIntro": "<ruby>娘<rt>むすめ</rt></ruby>がうちに帰ると、テーブルの上に母親からのメモが置いてあった。",
+      "passage": "<div class=\"border-2 border-gray-600 dark:border-gray-400 p-6 md:p-8 max-w-2xl mx-auto rounded-sm bg-amber-50/20 dark:bg-slate-900/60 font-serif leading-loose text-black dark:text-white shadow-sm\">\n  <div class=\"mb-4 font-bold text-lg\">いろはちゃんへ</div>\n  <div class=\"leading-[2.2] whitespace-pre-wrap text-[16px]\">おかえりなさい。今日の学校は楽しかった？\nお母さんは今日会議でいつもより<ruby>遅<rt>おそ</rt></ruby>くなります。晩ご飯は温めるだけにしてあるから、もしお母さんが帰る前におなかがすいたら、待たずに温めて食べてね。\n今日はゆう<ruby>太<rt>た</rt></ruby>くんのうちに遊びに行くと言っていたけど、行くなら暗くならないうちに帰ってきてね。\nそれから、お母さんが帰ってくる前に宿題をすること。\n明日おじいちゃんとおばあちゃんが遊びに来るから、今夜<ruby>一緒<rt>いっしょ</rt></ruby>に部屋を片付けようね。</div>\n  <div class=\"text-right mt-6 leading-relaxed\">\n    <div class=\"font-bold text-lg\">お母さんより</div>\n  </div>\n</div>",
       "questions": [
         {
           "number": 1,
-          "stem": "このメールからわかることは何か。",
+          "stem": "母親が、自分が帰ってくるまでに娘に必ずしてほしいことは何か。",
           "options": [
-            "1. 卒業式で撮った写真を送ることができる。",
-            "2. 送る写真には必ず感想を書かなければならない。",
-            "3. 送られてきた写真から先生がいいものを3枚選ぶ。",
-            "4. 送る写真には学生が写っていなければならない。"
+            "1. 晩ご飯を温める。",
+            "2. 友達のうちに行く。",
+            "3. 宿題をする。",
+            "4. 部屋を片付ける。"
           ],
-          "correct": 4,
-          "correctOption": "4. 送る写真には学生が写っていなければならない。"
+          "correct": 3,
+          "correctOption": "3. 宿題をする。"
         }
       ]
     },
     {
       "type": "short_passage",
       "title": "(3)",
-      "passage": "<div class=\"speed-master-lined-paper\">\n  今、私たちがずっと地球に住み続けられるように、「SDGs」という地球の<ruby>環境<rt>かんきょう</rt></ruby>と人々の生活を守るための17の<ruby>目標<rt>もくひょう</rt></ruby>を立て、各国がそれに向けて<ruby>努力<rt>どりょく</rt></ruby>をしている。その一つに「つくる<ruby>責任<rt>せきにん</rt></ruby>、つかう<ruby>責任<rt>せきにん</rt></ruby>」という<ruby>目標<rt>もくひょう</rt></ruby>があり、物を大切にすることを求めている。\n\n　それなのに、日本では1年間に約50万トンの<ruby>衣類<rt>いるい</rt></ruby>が<ruby>捨<rt>す</rt></ruby>てられているそうだ。イメージしにくい数字だが、1日に大型トラック130台分と聞くと<ruby>驚<rt>おどろ</rt></ruby>く。そこで、日本政府は、使い<ruby>捨<rt>す</rt></ruby>ての<ruby>習慣<rt>しゅうかん</rt></ruby>から長く大切に使う<ruby>習慣<rt>しゅうかん</rt></ruby>に<ruby>改<rt>あらた</rt></ruby>めることや、<ruby>生産<rt>せいさん</rt></ruby>においても消費においても「大量」から必要なだけという「<ruby>適量<rt>てきりょう</rt></ruby>」に変えることを<ruby>勧<rt>すす</rt></ruby>めている。\n</div>",
+      "passage": "<div class=\"speed-master-lined-paper\">\n  ニュースによると、高い音が聞こえにくいという若い日本人が増えているそうだ。年を取ると<ruby>誰<rt>だれ</rt></ruby>でも高い音は聞こえにくくなるのだが、その<ruby>症状<rt>しょうじょう</rt></ruby>が今、特に若い女性に多く見られるようになっているとのことだ。スマートフォンの使用やオンライン会議が増えるにつれ、イヤホンをつける時間が長くなっている。こうした<ruby>習慣<rt>しゅうかん</rt></ruby>が耳に悪い<ruby>影響<rt>えいきょう</rt></ruby>を与えている可能性がある。専門家は、イヤホンを長時間つけないことや、音量をあまり上げないこと、できればスピーカーで聞くことを<ruby>勧<rt>すす</rt></ruby>めている。\n</div>\n<div class=\"mt-3 text-xs text-gray-500 dark:text-gray-400\">\n  （注）オンライン会議：インターネットを使った会議\n</div>",
       "questions": [
         {
           "number": 1,
-          "stem": "この文章からわかることは何か。",
+          "stem": "この文章の内容と合っているものはどれか。",
           "options": [
-            "1. SDGsは日本から世界に広がったものである。",
-            "2. 物を大切にすることはSDGsの考えに合っている。",
-            "3. たくさん作ってたくさん買うことはSDGsの一つである。",
-            "4. SDGsでは生産数と消費数を同じにすることを求めている。"
+            "1. 日本人は年齢や性別を問わず、高い音が聞こえにくくなっている。",
+            "2. 女性は年を取ると、高い音が聞こえにくくなるという特徴がある。",
+            "3. 長時間イヤホンから大きな音を聞くことは、耳にとってよくない。",
+            "4. 耳が悪い人は、スマートフォンの使用やオンライン会議をしないほうがよい。"
           ],
-          "correct": 2,
-          "correctOption": "2. 物を大切にすることはSDGsの考えに合っている。"
+          "correct": 3,
+          "correctOption": "3. 長時間イヤホンから大きな音を聞くことは、耳にとってよくない。"
         }
       ]
     },
     {
       "type": "short_passage",
       "title": "(4)",
-      "passageIntro": "小池さんが営業先から会社に戻ると、机の上にリンさんからのメモが置いてあった。",
-      "passage": "<div class=\"speed-master-lined-paper\">\n  小池さん\n\nタンノ工業の久保田様より電話がありました。(TEL: 022 - 266 - 0000)\n先日久保田様が注文した新商品について、ご相談したいことがあるとのことです。\n「本日中に電話をいただければ」とおっしゃっていました。戻り<ruby>次第<rt>しだい</rt></ruby>お電話さしあげますとお返事しましたので、よろしくお願いします。\n久保田様は本日18時ごろまで会社にいらっしゃるそうです。\n\n7月18日 14:30\nリン\n</div>",
+      "passage": "<div class=\"speed-master-lined-paper\">\n  言葉はプラスのエネルギーとマイナスのエネルギーを持っているそうです。<br/>\n　<ruby>例<rt>たと</rt></ruby>えば、「ありがとう」や「大好き」といったプラスの言葉を日常的に使っていると、うれしいことが起きたり、ほしいものが手に入ったりすると言われています。反対に「<ruby>面倒<rt>めんどう</rt></ruby>だ」や「<ruby>疲<rt>つか</rt></ruby>れた」といったマイナスの言葉を<ruby>習慣<rt>しゅうかん</rt></ruby><ruby>的<rt>てき</rt></ruby>に使っていると、気持ちも考え方も暗くなり、周囲の人を<ruby>嫌<rt>いや</rt></ruby>な気持ちにしてしまうというのです。<br/>\n　それなら、例えば、<ruby>忙<rt>いそが</rt></ruby>しかった日も「<ruby>疲<rt>つか</rt></ruby>れた」という代わりに「今日もよくやった」と言ったほうが、人生が楽しくなるのではないでしょうか。\n</div>\n<div class=\"mt-3 text-xs text-gray-500 dark:text-gray-400\">\n  （注1）プラス：ここでは、いいという意味<br/>\n  （注2）マイナス：ここでは、よくないという意味\n</div>",
       "questions": [
         {
           "number": 1,
-          "stem": "これを読んで小池さんは何をしますか。",
+          "stem": "それとは、何か。",
           "options": [
-            "1. 新商品について相談する。",
-            "2. 久保田さんに電話する。",
-            "3. 久保田さんからの電話を待つ。",
-            "4. 18時ごろにタンノ工業に行く。"
+            "1. 日本語には不思議な力を持つ言葉があるということ",
+            "2. プラスの言葉を使い続ければ、必ず夢は本当になるということ",
+            "3. 使う言葉によって気持ちや生活がよくも悪くもなるということ",
+            "4. 習慣的に使う言葉が、周囲の人の気分を悪くしてしまうということ"
           ],
-          "correct": 2,
-          "correctOption": "2. 久保田さんに電話する。"
+          "correct": 3,
+          "correctOption": "3. 使う言葉によって気持ちや生活がよくも悪くもなるということ"
         }
       ]
     }

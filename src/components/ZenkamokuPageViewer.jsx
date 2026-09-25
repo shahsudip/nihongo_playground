@@ -21,7 +21,9 @@ export default function ZenkamokuPageViewer() {
 
   // Derive current bookId
   const location = useLocation();
-  const currentBookId = location.pathname.includes('zenkamoku-n2')
+  const currentBookId = location.pathname.includes('zenkamoku-n1')
+    ? 'zenkamoku-n1-best-workbook'
+    : location.pathname.includes('zenkamoku-n2')
     ? 'zenkamoku-n2-best-workbook'
     : 'zenkamoku-n3-best-workbook';
   const historyDocId = currentUser ? `${currentBookId}-${chapterId}` : null;
@@ -180,7 +182,9 @@ export default function ZenkamokuPageViewer() {
         // Fetch from local JSON pattern instead of Firestore
         let chapterData;
         try {
-          if (currentBookId.includes('n2')) {
+          if (currentBookId.includes('n1')) {
+            chapterData = (await import(`../data/zenkamoku_n1/${chapterId}.json`)).default;
+          } else if (currentBookId.includes('n2')) {
             chapterData = (await import(`../data/zenkamoku_n2/${chapterId}.json`)).default;
           } else {
             chapterData = (await import(`../data/zenkamoku_n3/${chapterId}.json`)).default;
@@ -279,6 +283,12 @@ export default function ZenkamokuPageViewer() {
                       className="max-w-2xl w-full h-auto border rounded shadow-sm"
                     />
                   </div>
+                )}
+
+                {sec.passageIntro && (
+                  <p className="mb-4 text-base text-gray-800 dark:text-gray-200 leading-relaxed">
+                    <span dangerouslySetInnerHTML={{ __html: sec.passageIntro }} />
+                  </p>
                 )}
 
                 {sec.passage && (() => {
