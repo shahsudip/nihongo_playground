@@ -1,0 +1,199 @@
+{
+  "bookId": "zenkamoku-n1-best-workbook",
+  "chapterId": "w01-d05",
+  "week": 1,
+  "day": 5,
+  "weekTitle": "第1週",
+  "dayTitle": "5日目",
+  "sectionTitle": "文字・語彙・文法",
+  "sectionTitleEn": "Vocabulary & Grammar",
+  "sections": [
+    {
+      "type": "kanji_reading",
+      "title": "漢字読み",
+      "titleEn": "Kanji reading",
+      "pageRef": "p.24",
+      "instruction": "＿＿の言葉の読み方として最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "最近は健康のために酒を<u>控えて</u>いる。",
+          "options": [
+            "1. おさえて",
+            "2. きたえて",
+            "3. そなえて",
+            "4. ひかえて"
+          ],
+          "correct": 4,
+          "correctOption": "4. ひかえて",
+          "explanation": ""
+        },
+        {
+          "number": 2,
+          "stem": "彼は私の頼みを<u>快く</u>引き受けてくれた。",
+          "options": [
+            "1. こころよく",
+            "2. いさぎよく",
+            "3. ここちよく",
+            "4. かっこよく"
+          ],
+          "correct": 1,
+          "correctOption": "1. こころよく",
+          "explanation": ""
+        },
+        {
+          "number": 3,
+          "stem": "この地域は<u>織物</u>の産地として有名だ。",
+          "options": [
+            "1. しきもつ",
+            "2. しきもの",
+            "3. おりもつ",
+            "4. おりもの"
+          ],
+          "correct": 4,
+          "correctOption": "4. おりもの",
+          "explanation": ""
+        },
+        {
+          "number": 4,
+          "stem": "社内で<u>検討</u>させていただきます。",
+          "options": [
+            "1. けんとう",
+            "2. げんとう",
+            "3. けんどう",
+            "4. げんどう"
+          ],
+          "correct": 1,
+          "correctOption": "1. けんとう",
+          "explanation": ""
+        },
+        {
+          "number": 5,
+          "stem": "在庫の<u>有無</u>を問い合わせた。",
+          "options": [
+            "1. ゆうむ",
+            "2. ゆうぶ",
+            "3. うむ",
+            "4. うぶ"
+          ],
+          "correct": 3,
+          "correctOption": "3. うむ",
+          "explanation": ""
+        },
+        {
+          "number": 6,
+          "stem": "当ホテルでは<u>田舎</u>ならではの風景と旬の味が楽しめます。",
+          "options": [
+            "1. でんしゃ",
+            "2. いなか",
+            "3. たしゃ",
+            "4. いなが"
+          ],
+          "correct": 2,
+          "correctOption": "2. いなか",
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "type": "contextually_defined_expression",
+      "title": "文脈規定",
+      "titleEn": "Contextually-defined expression",
+      "pageRef": "p.25",
+      "instruction": "（　　）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "長時間の通勤に嫌気がさしたので、会社までの（　　）がいい家に引っ越した。",
+          "options": [
+            "1. リーチ",
+            "2. ロード",
+            "3. アクセス",
+            "4. ターミナル"
+          ],
+          "correct": 3,
+          "correctOption": "3. アクセス",
+          "explanation": ""
+        },
+        {
+          "number": 2,
+          "stem": "夫は誰からも好かれ、初対面の人ともすぐに（　　）。",
+          "options": [
+            "1. 打ち込む",
+            "2. 打ち解ける",
+            "3. 打ち合わせる",
+            "4. 打ち消す"
+          ],
+          "correct": 2,
+          "correctOption": "2. 打ち解ける",
+          "explanation": ""
+        },
+        {
+          "number": 3,
+          "stem": "来年からしばらく海外に（　　）することになったが、国を出たことがないので不安だ。",
+          "options": [
+            "1. 転換",
+            "2. 赴任",
+            "3. 任命",
+            "4. 採用"
+          ],
+          "correct": 2,
+          "correctOption": "2. 赴任",
+          "explanation": ""
+        },
+        {
+          "number": 4,
+          "stem": "近年この俳優は（　　）活躍を見せている。今年も5本の映画に出演するそうだ。",
+          "options": [
+            "1. <ruby>相応<rt>ふさわ</rt></ruby>しい",
+            "2. 日覚ましい",
+            "3. <ruby>儚<rt>はかな</rt></ruby>い",
+            "4. 甚だしい"
+          ],
+          "correct": 2,
+          "correctOption": "2. 日覚ましい",
+          "explanation": ""
+        },
+        {
+          "number": 5,
+          "stem": "（　　）性格の彼があんなに怒っているなんて、余程のことがあったに違いない。",
+          "options": [
+            "1. 円滑な",
+            "2. 良質な",
+            "3. 濃厚な",
+            "4. 温和な"
+          ],
+          "correct": 4,
+          "correctOption": "4. 温和な",
+          "explanation": ""
+        },
+        {
+          "number": 6,
+          "stem": "私の行きつけの美容室では、毎回自分でも（　　）がしやすい髪型にしてくれる。",
+          "options": [
+            "1. 手入れ",
+            "2. 手際",
+            "3. 手触り",
+            "4. 手間"
+          ],
+          "correct": 1,
+          "correctOption": "1. 手入れ",
+          "explanation": ""
+        },
+        {
+          "number": 7,
+          "stem": "レース中に聞こえてきた仲間の（　　）に背中を押され、優勝することができた。",
+          "options": [
+            "1. 共鳴",
+            "2. 期待",
+            "3. 名声",
+            "4. 声援"
+          ],
+          "correct": 4,
+          "correctOption": "4. 声援",
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}
