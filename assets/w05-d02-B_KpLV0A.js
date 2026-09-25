@@ -1,0 +1,24 @@
+const e="zenkamoku-n1-best-workbook",t="w05-d02",a=5,i=2,p="第5週",c="2日目",s="内容理解（短文）",n="Reading Comprehension (Short)",r="次の(1)から(4)の文章を読んで、後の問いに対する答えとして最もよいものを、１・２・３・４から一つ選びなさい。",o=[{type:"short_passage",title:"内容理解（短文） (1)",titleEn:"Short Passage (1)",pageRef:"p.70",passage:`<div class="speed-master-lined-paper">
+以下は、株式会社サクラ出版の経理宛てに送られたメールである。<br/><br/>
+件名：出張旅費精算の件<br/>
+経理部　ご担当者様<br/><br/>
+お疲れ様です。営業部の佐藤です。<br/>
+先週の大阪出張における旅費の精算書を提出いたします。<br/>
+領収書を添付いたしましたので、内容のご確認をお願い申し上げます。<br/>
+なお、一部新幹線の領収書につきましては、発行機の不具合により手書きの領収書となっております。駅員の署名捺印がございますので、あわせてご確認いただけますと幸いです。<br/>
+お忙しいところ恐縮ですが、よろしくお願いいたします。
+</div>`,questions:[{number:1,stem:"このメールで佐藤さんが伝えていることは何か。",options:["1. 出張旅費の精算書を提出し、領収書の確認を依頼している。","2. 新幹線の領収書を紛失したため、再発行を依頼している。","3. 経理部の手続きが遅れているため、至急の精算を求めている。","4. 大阪出張の日程が変更になったことを報告している。"],correct:1,correctOption:"1. 出張旅費の精算書を提出し、領収書の確認を依頼している。"}]},{type:"short_passage",title:"内容理解（短文） (2)",titleEn:"Short Passage (2)",pageRef:"p.71",passage:`<div class="speed-master-lined-paper">
+以下は、ある出版社から顧客に向けたお知らせである。<br/><br/>
+2024年4月9日<br/>
+お客様各位<br/><br/>
+『月刊日本語フォーラム』定期購読料金改定のお知らせ<br/><br/>
+拝啓　平素は格別のお引き立てを賜り、厚く御礼申し上げます。<br/>
+さて、昨今の原材料費および輸送コストの高騰に伴い、誠に心苦しい限りではございますが、本年6月号より定期購読料金を改定させていただくこととなりました。<br/>
+何卒ご理解を賜りますようお願い申し上げます。
+</div>`,questions:[{number:2,stem:"このお知らせの主な目的は何か。",options:["1. 雑誌の休刊を告知すること","2. 定期購読の新規会員を募集すること","3. 購読料金の改定を通知し、理解を求めること","4. 雑誌の配送方法の変更を案内すること"],correct:3,correctOption:"3. 購読料金の改定を通知し、理解を求めること"}]},{type:"short_passage",title:"内容理解（短文） (3)",titleEn:"Short Passage (3)",pageRef:"p.72",passage:`<div class="speed-master-lined-paper">
+　一般に、体の大きな動物ほど長寿になる傾向があるとされます。小さい動物ほど代謝が盛んで、その分寿命は短く、大きい動物ほど代謝が低く長生きします。心臓の拍動数で言えば、ネズミもゾウも一生の間に打つ総拍動数はほぼ同じ約20億回だと言われています。しかし、人間はこの法則を大きく外れて長寿を獲得した珍しい動物なのです。
+<div class="text-right text-sm text-gray-500 mt-2">（本川達雄『ゾウの時間 ネズミの時間』中公新書による）</div>
+</div>`,questions:[{number:3,stem:"文章の内容と合っているものはどれか。",options:["1. 体の大きさに関わらず、哺乳類が一生で打つ心臓の拍動総数はほぼ同じである。","2. 小さい動物のほうが代謝が低いため、長生きしやすい。","3. 人間は動物の中で最も体が大きいため、寿命が一番長い。","4. 心臓の拍動が速い動物ほど、一生の総拍動数が多くなる。"],correct:1,correctOption:"1. 体の大きさに関わらず、哺乳類が一生で打つ心臓の拍動総数はほぼ同じである。"}]},{type:"short_passage",title:"内容理解（短文） (4)",titleEn:"Short Passage (4)",pageRef:"p.73",passage:`<div class="speed-master-lined-paper">
+　美術品を鑑賞するとき、私たちは往々にして「正解」を探そうとしてしまう。「この絵は何を表しているのか」「作者の意図は何か」と解説を読み、それと同じ感想を持とうとする。しかし、美術鑑賞に唯一の正解などない。見る人それぞれの経験や感性によって、自由に解釈し、感じ取ることこそが、美術と向き合う本来の楽しさなのである。
+<div class="text-right text-sm text-gray-500 mt-2">（末永幸歩『「自分だけの答え」が見つかる 13歳からのアート思考』ダイヤモンド社による）</div>
+</div>`,questions:[{number:4,stem:"筆者が美術鑑賞について言いたいことは何か。",options:["1. 作者の意図を正確に知るために、解説書を事前に読むべきだ。","2. 美術鑑賞には専門的な知識が必要不可欠である。","3. 正しい感想を持てない人は美術を鑑賞する資格がない。","4. 解説にとらわれず、自分自身の感性で自由に楽しむべきだ。"],correct:4,correctOption:"4. 解説にとらわれず、自分自身の感性で自由に楽しむべきだ。"}]}],d={bookId:e,chapterId:t,week:5,day:2,weekTitle:"第5週",dayTitle:"2日目",sectionTitle:s,sectionTitleEn:n,instruction:r,sections:o};export{e as bookId,t as chapterId,i as day,c as dayTitle,d as default,r as instruction,s as sectionTitle,n as sectionTitleEn,o as sections,a as week,p as weekTitle};
