@@ -251,29 +251,31 @@ export default function ZenkamokuPageViewer() {
       try {
         setLoading(true);
 
-        // 1. Fetch from Firestore database
+        // 1. Load local bundle first (instant, 0ms, works for all users)
         let chapterData = null;
         try {
-          const chapterRef = doc(db, 'books', currentBookId, 'chapters', chapterId);
-          const chapterSnap = await getDoc(chapterRef);
-          if (chapterSnap.exists()) {
-            chapterData = chapterSnap.data();
+          if (currentBookId.includes('n1')) {
+            chapterData = (await import(`../data/zenkamoku_n1/${chapterId}.json`)).default;
+          } else if (currentBookId.includes('n2')) {
+            chapterData = (await import(`../data/zenkamoku_n2/${chapterId}.json`)).default;
+          } else {
+            chapterData = (await import(`../data/zenkamoku_n3/${chapterId}.json`)).default;
           }
-        } catch (dbErr) {
-          console.warn('Firestore load error, checking local fallback:', dbErr);
+        } catch (e) {
+          console.warn('Local bundle load error, checking Firestore:', e);
         }
 
-        // 2. Fallback to local bundle if Firestore has network failure
+        // 2. Fallback to Firestore database
         if (!chapterData) {
           try {
-            if (currentBookId.includes('n1')) {
-              chapterData = (await import(`../data/zenkamoku_n1/${chapterId}.json`)).default;
-            } else if (currentBookId.includes('n2')) {
-              chapterData = (await import(`../data/zenkamoku_n2/${chapterId}.json`)).default;
-            } else {
-              chapterData = (await import(`../data/zenkamoku_n3/${chapterId}.json`)).default;
+            const chapterRef = doc(db, 'books', currentBookId, 'chapters', chapterId);
+            const chapterSnap = await getDoc(chapterRef);
+            if (chapterSnap.exists()) {
+              chapterData = chapterSnap.data();
             }
-          } catch(e) { console.error('Failed to load local JSON', e); }
+          } catch (dbErr) {
+            console.warn('Firestore load error:', dbErr);
+          }
         }
 
         if (chapterData) {
