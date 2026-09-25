@@ -1,0 +1,103 @@
+{
+  "bookId": "zenkamoku-n1-best-workbook",
+  "chapterId": "w08-d02",
+  "week": 8,
+  "day": 2,
+  "weekTitle": "第8週",
+  "dayTitle": "2日目",
+  "sectionTitle": "主張理解（長文）・情報検索",
+  "sectionTitleEn": "Understanding Main Argument (Long) & Information Search",
+  "instruction": "次の文章を読んで、後の問いに対する答えとして最もよいものを、１・２・３・４から一つ選びなさい。",
+  "sections": [
+    {
+      "type": "thematic_passage",
+      "title": "主張理解（長文）",
+      "titleEn": "Thematic Long Passage",
+      "pageRef": "pp.140-141",
+      "passage": "<div class=\"speed-master-lined-paper\">\n　多様性（ダイバーシティ）の重要性が叫ばれる昨今、単に異なる属性の人々を集めるだけでは真のイノベーションは生まれない。異なる視点や価値観が互いに衝突し、対話を通じて新たな止揚（アウフヘーベン）へと昇華されるプロセスこそが不可欠なのである。\n</div>",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "多様性について筆者が強調している点は何か。",
+          "options": [
+            "1. 異なる属性の人々を一箇所に集めるだけで十分である点",
+            "2. 意見の衝突を避け、常に調和を保つことが大切である点",
+            "3. 異なる視点同士の対話と衝突を通じて新たな価値を生み出す点",
+            "4. 多数派の意見に従って効率的に合意を形成する点"
+          ],
+          "correct": 3,
+          "correctOption": "3. 異なる視点同士の対話と衝突を通じて新たな価値を生み出す点"
+        },
+        {
+          "number": 2,
+          "stem": "筆者の考えに合うものはどれか。",
+          "options": [
+            "1. 多様性を進めると組織の効率が落ちるため最小限にとどめるべきだ。",
+            "2. イノベーションを起こすには意見の違いを恐れず建設的な対話を行うべきだ。",
+            "3. 少数派の意見は混乱を招くため排除するのが望ましい。",
+            "4. 過去の成功体験を踏襲することが確実な成果につながる。"
+          ],
+          "correct": 4,
+          "correctOption": "4. 過去の成功体験を踏襲することが確実な成果につながる。"
+        }
+      ]
+    },
+    {
+      "type": "information_search",
+      "title": "情報検索",
+      "titleEn": "Information Search",
+      "pageRef": "pp.142-143",
+      "passage": "<div class=\"speed-master-flyer-card max-w-2xl mx-auto my-2 p-4 bg-amber-50/20 dark:bg-slate-900/60 border border-slate-700 dark:border-slate-400 rounded-xl shadow-sm text-sm\">\n  <div class=\"text-center font-bold text-base pb-2 mb-2 border-b border-gray-400\">【さくら市 市民公開講座のご案内】</div>\n  <div class=\"space-y-2\">\n    <div>・講座A「デジタル時代の文章術」 日時：5月11日(土) 10:00-12:00 / 受講料：2,000円 / 定員：30名</div>\n    <div>・講座B「ビジネス交渉と論理思考」 日時：5月18日(土) 14:00-16:30 / 受講料：3,500円 / 定員：25名</div>\n    <div>・講座C「異文化理解とコミュニケーション」 日時：5月25日(土) 13:00-15:00 / 受講料：無料 / 定員：50名</div>\n    <div class=\"text-xs text-gray-500 mt-2\">※市内在住・在勤の方は受講料が半額となります（講座Cは全員無料）。</div>\n  </div>\n</div>",
+      "questions": [
+        {
+          "number": 3,
+          "stem": "市内在勤の会社員が講座Bを受講する場合、受講料はいくらになるか。",
+          "options": [
+            "1. 無料",
+            "2. 1,750円",
+            "3. 2,000円",
+            "4. 3,500円"
+          ],
+          "correct": 2,
+          "correctOption": "2. 1,750円"
+        },
+        {
+          "number": 4,
+          "stem": "受講料が無料で受講できる講座はどれか。",
+          "options": [
+            "1. 講座A",
+            "2. 講座B",
+            "3. 講座C",
+            "4. すべての講座"
+          ],
+          "correct": 1,
+          "correctOption": "1. 講座A"
+        },
+        {
+          "number": 5,
+          "stem": "土曜日の午後に開催される講座はどれか。",
+          "options": [
+            "1. 講座Aのみ",
+            "2. 講座Bのみ",
+            "3. 講座Bと講座C",
+            "4. 講座Aと講座C"
+          ],
+          "correct": 3,
+          "correctOption": "3. 講座Bと講座C"
+        },
+        {
+          "number": 6,
+          "stem": "定員が最も多い講座はどれか。",
+          "options": [
+            "1. 講座A",
+            "2. 講座B",
+            "3. 講座C",
+            "4. 講座Aと講座B"
+          ],
+          "correct": 4,
+          "correctOption": "4. 講座Aと講座B"
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,24 @@
-{
+"""
+build_all_n1_reading.py
+Systematically generates and updates all reading and remaining chapters for Zenkamoku N1:
+- Week 5: Days 1 to 5 (Short reading)
+- Week 6: Days 1 to 5 (Mid-size reading)
+- Week 7: Day 3 (Long reading & Integrated)
+- Week 8: Day 2 (Thematic Long reading & Info search)
+- Week 9: Days 3, 4, 5 (Listening task & point)
+"""
+import sys, os, json, re
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+BASE_DIR = r"D:\sudip_software\nihongo_playground"
+OUT_DIR = os.path.join(BASE_DIR, "src", "data", "zenkamoku_n1")
+
+# =========================================================================
+# WEEK 5: SHORT READING (短文読解 5 DAYS, 4 PASSAGES EACH = 20 QS)
+# =========================================================================
+
+w05_d01 = {
   "bookId": "zenkamoku-n1-best-workbook",
   "chapterId": "w05-d01",
   "week": 5,
@@ -36,6 +56,7 @@
       "titleEn": "Short Passage (2)",
       "pageRef": "p.67",
       "passage": "<div class=\"speed-master-lined-paper\">\n　古来、人間の食事には、栄養の補給以外にも他者との関係の維持や調整という機能が付与されてきた。いやむしろ、他者といい関係をつくるために食事の場や調度<sup>(注)</sup>、食器、メニュー、調理法、服装からマナーにいたるまで、多様な技術が考案されてきたといっても過言ではない。どの文化でも社交の場として食事を機能させるために、莫大な時間と金を消費してきたのである。それは効率化とはむしろ逆行する特徴をもっている。\n<div class=\"text-right text-sm text-gray-500 mt-2\">（山極寿一『ゴリラからの警告「人間社会、ここがおかしい」』毎日新聞出版による）</div>\n</div>",
+      "passageNote": "(注) 調度：日常的に使う身の回りの道具類",
       "questions": [
         {
           "number": 2,
@@ -49,8 +70,7 @@
           "correct": 1,
           "correctOption": "1. 人間の食事の仕方を見ると、効率的とは言えない。"
         }
-      ],
-      "passageNote": "(注) 調度：日常的に使う身の回りの道具類"
+      ]
     },
     {
       "type": "short_passage",
@@ -96,3 +116,8 @@
     }
   ]
 }
+
+with open(os.path.join(OUT_DIR, "w05-d01.json"), "w", encoding="utf-8") as f:
+    json.dump(w05_d01, f, ensure_ascii=False, indent=2)
+
+print("Saved w05-d01.json")

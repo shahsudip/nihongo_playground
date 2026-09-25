@@ -1,0 +1,243 @@
+{
+  "bookId": "zenkamoku-n1-best-workbook",
+  "chapterId": "w03-d05",
+  "week": 3,
+  "day": 5,
+  "weekTitle": "第3週",
+  "dayTitle": "5日目",
+  "sectionTitle": "文法形式の判断 / 文の組み立て",
+  "sectionTitleEn": "Grammar Forms / Sentence Composition",
+  "sections": [
+    {
+      "type": "grammar_form",
+      "title": "文法形式の判断",
+      "titleEn": "Selecting Grammar Form",
+      "instruction": "次の文の（　　）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "どんなに辛いことが（　　）、決して諦めてはいけない。",
+          "options": [
+            "1. あろうと",
+            "2. あろうが",
+            "3. あろうとあるまいと",
+            "4. あろうとも"
+          ],
+          "correct": 4,
+          "correctOption": "4. あろうとも"
+        },
+        {
+          "number": 2,
+          "stem": "親として、子どもの将来を心配しない（　　）はない。",
+          "options": [
+            "1. わけ",
+            "2. はず",
+            "3. こと",
+            "4. もの"
+          ],
+          "correct": 2,
+          "correctOption": "2. はず"
+        },
+        {
+          "number": 3,
+          "stem": "新しい事業を立ち上げる（　　）、十分な資金を準備した。",
+          "options": [
+            "1. に際して",
+            "2. に先立って",
+            "3. にあたって",
+            "4. に応じて"
+          ],
+          "correct": 2,
+          "correctOption": "2. に先立って"
+        },
+        {
+          "number": 4,
+          "stem": "彼の実績から（　　）、今回の昇進は誰もが納得するものだ。",
+          "options": [
+            "1. 見て",
+            "2. 言えば",
+            "3. すれば",
+            "4. とって"
+          ],
+          "correct": 1,
+          "correctOption": "1. 見て"
+        },
+        {
+          "number": 5,
+          "stem": "厳しい環境（　　）、彼女は前向きに努力を続けた。",
+          "options": [
+            "1. にあって",
+            "2. に即して",
+            "3. を兼ねて",
+            "4. にもかかわらず"
+          ],
+          "correct": 4,
+          "correctOption": "4. にもかかわらず"
+        },
+        {
+          "number": 6,
+          "stem": "今回の成功は、関係各位のご支援（　　）成し得なかったものです。",
+          "options": [
+            "1. に際して",
+            "2. を皮切りに",
+            "3. なくしては",
+            "4. に引き換え"
+          ],
+          "correct": 3,
+          "correctOption": "3. なくしては"
+        },
+        {
+          "number": 7,
+          "stem": "長年の研究が（　　）、ついに画期的な技術が開発された。",
+          "options": [
+            "1. 実り",
+            "2. 実るにつれて",
+            "3. 実るがゆえに",
+            "4. 実を結び"
+          ],
+          "correct": 4,
+          "correctOption": "4. 実を結び"
+        },
+        {
+          "number": 8,
+          "stem": "法律（　　）公正な運営を行うことが基本である。",
+          "options": [
+            "1. を兼ねて",
+            "2. に引き換え",
+            "3. に則って",
+            "4. を皮切りに"
+          ],
+          "correct": 3,
+          "correctOption": "3. に則って"
+        },
+        {
+          "number": 9,
+          "stem": "世界平和への祈りを（　　）やまない。",
+          "options": [
+            "1. 捧げて",
+            "2. 込めて",
+            "3. 願って",
+            "4. 祈って"
+          ],
+          "correct": 1,
+          "correctOption": "1. 捧げて"
+        },
+        {
+          "number": 10,
+          "stem": "社会のニーズに（　　）新しいサービスを提供する。",
+          "options": [
+            "1. 即した",
+            "2. 即して",
+            "3. 即する",
+            "4. 即したうえで"
+          ],
+          "correct": 1,
+          "correctOption": "1. 即した"
+        }
+      ]
+    },
+    {
+      "type": "sentence_composition",
+      "title": "文の組み立て",
+      "titleEn": "Sentence Composition",
+      "instruction": "次の文の　★　に入る最もよいものを、１・２・３・４から一つ選びなさい。",
+      "questions": [
+        {
+          "number": 11,
+          "stem": "長年の夢を＿＿＿ ＿＿＿ <u>　★　</u> ＿＿＿言えない。",
+          "options": [
+            "1. 叶えることができ",
+            "2. 喜びは",
+            "3. 言葉では",
+            "4. 今の私の"
+          ],
+          "correct": 4,
+          "correctOption": "4. 今の私の",
+          "starPosition": 3,
+          "correctOrder": [
+            1,
+            4,
+            2,
+            3
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "どんなに困難な道＿＿＿ ＿＿＿ <u>　★　</u> ＿＿＿進んでいきたい。",
+          "options": [
+            "1. であろうとも",
+            "2. 強い信念を持って",
+            "3. 一歩一歩",
+            "4. 諦めずに"
+          ],
+          "correct": 3,
+          "correctOption": "3. 一歩一歩",
+          "starPosition": 3,
+          "correctOrder": [
+            1,
+            4,
+            3,
+            2
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "彼のような情熱的な人材を＿＿＿ ＿＿＿ <u>　★　</u> ＿＿＿惜しい。",
+          "options": [
+            "1. 失うのは",
+            "2. 会社にとって",
+            "3. あまりにも",
+            "4. 大きな損失であり"
+          ],
+          "correct": 1,
+          "correctOption": "1. 失うのは",
+          "starPosition": 3,
+          "correctOrder": [
+            2,
+            4,
+            1,
+            3
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "環境保全に向けた＿＿＿ ＿＿＿ <u>　★　</u> ＿＿＿求められている。",
+          "options": [
+            "1. 取り組みが",
+            "2. 一人ひとりの",
+            "3. 今まさに",
+            "4. 意識改革とともに"
+          ],
+          "correct": 2,
+          "correctOption": "2. 一人ひとりの",
+          "starPosition": 3,
+          "correctOrder": [
+            4,
+            2,
+            1,
+            3
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "彼がこれほどまでに＿＿＿ ＿＿＿ <u>　★　</u> ＿＿＿思わなかった。",
+          "options": [
+            "1. 成長するとは",
+            "2. 周囲の誰もが",
+            "3. 当初は",
+            "4. 予想すらしていなかった"
+          ],
+          "correct": 1,
+          "correctOption": "1. 成長するとは",
+          "starPosition": 3,
+          "correctOrder": [
+            3,
+            2,
+            1,
+            4
+          ]
+        }
+      ]
+    }
+  ]
+}
