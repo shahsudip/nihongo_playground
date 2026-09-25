@@ -250,13 +250,13 @@ export default function ZenkamokuPageViewer() {
         <div className="px-6 md:px-12 pb-12">
           {chapter.instruction && (
             <p className="text-lg mb-6 leading-relaxed font-medium">
-              {chapter.instruction}
+              <span dangerouslySetInnerHTML={{ __html: chapter.instruction }} />
             </p>
           )}
 
           {chapter.listeningInstruction && (
             <p className="text-lg mb-8 leading-relaxed font-medium">
-              {chapter.listeningInstruction}
+              <span dangerouslySetInnerHTML={{ __html: chapter.listeningInstruction }} />
             </p>
           )}
 
@@ -265,7 +265,7 @@ export default function ZenkamokuPageViewer() {
               <div key={secIdx} className="mb-12">
                 {sec.title && (
                   <h3 className="text-xl font-bold mb-3 border-b-2 border-black dark:border-white pb-1 inline-block">
-                    {sec.title} {sec.titleEn ? <span className="font-normal text-sm ml-2 text-gray-600 dark:text-gray-400">{sec.titleEn}</span> : ''}
+                    <span dangerouslySetInnerHTML={{ __html: sec.title }} /> {sec.titleEn ? <span className="font-normal text-sm ml-2 text-gray-600 dark:text-gray-400">{sec.titleEn}</span> : ''}
                   </h3>
                 )}
 
