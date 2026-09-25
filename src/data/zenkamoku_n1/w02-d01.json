@@ -24,7 +24,8 @@
             "4. 珍しく"
           ],
           "correct": 1,
-          "correctOption": "1. 残らず全て"
+          "correctOption": "1. 残らず全て",
+          "explanation": "<b>【正解】1. 残らず全て</b><br/>ことごとく：あれもこれも全部 completely"
         },
         {
           "number": 2,
@@ -36,7 +37,8 @@
             "4. 遠慮しないで"
           ],
           "correct": 3,
-          "correctOption": "3. 気を遣って"
+          "correctOption": "3. 気を遣って",
+          "explanation": "<b>【正解】3. 気を遣って</b><br/><ruby>気<rt>き</rt></ruby><ruby>兼<rt>が</rt></ruby>ね(する)：気を使う defer; hesitate"
         },
         {
           "number": 3,
@@ -48,7 +50,8 @@
             "4. 丁寧に"
           ],
           "correct": 1,
-          "correctOption": "1. 曖昧に"
+          "correctOption": "1. 曖昧に",
+          "explanation": "<b>【正解】1. 曖昧に</b><br/>あやふや(な)：はっきりしない様子 ambiguous"
         },
         {
           "number": 4,
@@ -60,7 +63,8 @@
             "4. うっかり"
           ],
           "correct": 2,
-          "correctOption": "2. 何もしないで"
+          "correctOption": "2. 何もしないで",
+          "explanation": "<b>【正解】2. 何もしないで</b><br/>せわしい：落ち着かない 慌ただしい busy; hurried"
         },
         {
           "number": 5,
@@ -72,7 +76,8 @@
             "4. 背が高かった"
           ],
           "correct": 2,
-          "correctOption": "2. 洗練されていた"
+          "correctOption": "2. 洗練されていた",
+          "explanation": "<b>【正解】2. 洗練されていた</b><br/><ruby>過<rt>あやま</rt></ruby>ち：間違い ミス mistake"
         },
         {
           "number": 6,
@@ -84,7 +89,8 @@
             "4. 大いに"
           ],
           "correct": 1,
-          "correctOption": "1. 少し"
+          "correctOption": "1. 少し",
+          "explanation": "<b>【正解】1. 少し</b><br/><ruby>憤<rt>ふん</rt></ruby><ruby>慨<rt>がい</rt></ruby>(する)：激しく怒ること rage<br/><ruby>◆用<rt>よう</rt></ruby><ruby>法<rt>ほう</rt></ruby>Usage(pp.26-27)"
         }
       ]
     },
@@ -104,7 +110,8 @@
             "4. 花束がほつれて見栄えが悪いから、片付けてください。"
           ],
           "correct": 2,
-          "correctOption": "2. タオルの糸がほつれてきたので、雑巾にしようと思う。"
+          "correctOption": "2. タオルの糸がほつれてきたので、雑巾にしようと思う。",
+          "explanation": "<b>【正解】2. タオルの糸がほつれてきたので、雑巾にしようと思う。</b><br/><ruby>気<rt>き</rt></ruby>さく(な)：親しみやすい 友好的 friendly ※人の性格<br/>を表す Used to describe someone’s personality."
         },
         {
           "number": 2,
@@ -116,7 +123,8 @@
             "4. あの二人は来年結婚することを見込んでいるそうだ。"
           ],
           "correct": 3,
-          "correctOption": "3. 今期の売上高は前年比10％増を見込んでいる。"
+          "correctOption": "3. 今期の売上高は前年比10％増を見込んでいる。",
+          "explanation": "<b>【正解】3. 今期の売上高は前年比10％増を見込んでいる。</b><br/>ほつれる：束ねたり織ったり組んだりしてまとまってい<br/>るものが、端から緩んでほどけていく様子 come undone;<br/>loosen up"
         },
         {
           "number": 3,
@@ -128,7 +136,8 @@
             "4. 上司の冗談に愛想笑いを浮かべた。"
           ],
           "correct": 2,
-          "correctOption": "2. あの店員はいつも愛想がなくて、感じが悪い。"
+          "correctOption": "2. あの店員はいつも愛想がなくて、感じが悪い。",
+          "explanation": "<b>【正解】2. あの店員はいつも愛想がなくて、感じが悪い。</b><br/><ruby>見<rt>み</rt></ruby><ruby>込<rt>こ</rt></ruby>む：①有望だと思う ②予測して計算に入れる<br/>anticipate; expect"
         },
         {
           "number": 4,
@@ -140,7 +149,8 @@
             "4. 一連の書類に目を通してから、サインをしてください。"
           ],
           "correct": 1,
-          "correctOption": "1. この事件に関する一連の報道を見て、大変ショックを受けた。"
+          "correctOption": "1. この事件に関する一連の報道を見て、大変ショックを受けた。",
+          "explanation": "<b>【正解】1. この事件に関する一連の報道を見て、大変ショックを受けた。</b><br/>とっさに：すぐ その場で 瞬時に 反射的に<br/>immediately; on the spur of the moment"
         },
         {
           "number": 5,
@@ -152,7 +162,8 @@
             "4. その映画はおびただしい感動を呼んで、大ヒットした。"
           ],
           "correct": 1,
-          "correctOption": "1. 事故現場にはおびただしい数のパトカーが集まっていた。"
+          "correctOption": "1. 事故現場にはおびただしい数のパトカーが集まっていた。",
+          "explanation": "<b>【正解】1. 事故現場にはおびただしい数のパトカーが集まっていた。</b><br/><ruby>手<rt>て</rt></ruby><ruby>回<rt>まわ</rt></ruby>し：①手で回す passing/turning by hand ②あらかじめ<br/>手配、用意すること preparation<br/>※手回しがいい well-prepared／手回しが悪い poorly prepared"
         },
         {
           "number": 6,
@@ -164,7 +175,8 @@
             "4. 警察は犯人の足取りを発足した。"
           ],
           "correct": 1,
-          "correctOption": "1. 来月から新しいプロジェクトチームが発足する。"
+          "correctOption": "1. 来月から新しいプロジェクトチームが発足する。",
+          "explanation": "<b>【正解】1. 来月から新しいプロジェクトチームが発足する。</b><br/><ruby>雑<rt>ざつ</rt></ruby><ruby>談<rt>だん</rt></ruby>：特にテーマのない気楽なおしゃべり chat"
         }
       ]
     }

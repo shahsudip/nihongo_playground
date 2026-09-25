@@ -24,7 +24,8 @@
             "4 <ruby>問診票<rt>もんしんひょう</rt></ruby>を<ruby>埋<rt>う</rt></ruby>める"
           ],
           "correct": 1,
-          "correctOption": "1 マスクを<ruby>着用<rt>ちゃくよう</rt></ruby>する"
+          "correctOption": "1 マスクを<ruby>着用<rt>ちゃくよう</rt></ruby>する",
+          "explanation": "<b>【正解】1 マスクを<ruby>着用<rt>ちゃくよう</rt></ruby>する</b><br/>最初に男の人が問診票は記入してあると言っているが、<br/>受付の人に記入漏れを指摘されている。最後に男の人が<br/>未記入の部分に関して質問を始めていることから、答え<br/>がわかる。"
         },
         {
           "number": 2,
@@ -36,7 +37,8 @@
             "4 <ruby>充電器<rt>じゅうでんき</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>客室<rt>きゃくしつ</rt></ruby>に行く"
           ],
           "correct": 1,
-          "correctOption": "1 お<ruby>湯<rt>ゆ</rt></ruby>の<ruby>不具合<rt>ふぐあい</rt></ruby>を<ruby>見<rt>み</rt></ruby>に<ruby>客室<rt>きゃくしつ</rt></ruby>に行く"
+          "correctOption": "1 お<ruby>湯<rt>ゆ</rt></ruby>の<ruby>不具合<rt>ふぐあい</rt></ruby>を<ruby>見<rt>み</rt></ruby>に<ruby>客室<rt>きゃくしつ</rt></ruby>に行く",
+          "explanation": "<b>【正解】1 お<ruby>湯<rt>ゆ</rt></ruby>の<ruby>不具合<rt>ふぐあい</rt></ruby>を<ruby>見<rt>み</rt></ruby>に<ruby>客室<rt>きゃくしつ</rt></ruby>に行く</b><br/>フロント係は、女の宿泊客のルームサービス変更をレス<br/>トランに伝えると言っている。選択肢１のお湯の不具合<br/>は会話の中で解決済みである。さらに選択肢４の充電器<br/>はルームサービスと一緒に客室へ持っていくので不正解。"
         },
         {
           "number": 3,
@@ -48,7 +50,8 @@
             "4 <ruby>成績<rt>せいせき</rt></ruby>・<ruby>出席率証明書<rt>しゅっせきりつしょうめいしょ</rt></ruby>を<ruby>取<rt>と</rt></ruby>りに行く"
           ],
           "correct": 1,
-          "correctOption": "1 <ruby>受験料<rt>じゅけんりょう</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う"
+          "correctOption": "1 <ruby>受験料<rt>じゅけんりょう</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う",
+          "explanation": "<b>【正解】1 <ruby>受験料<rt>じゅけんりょう</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う</b><br/>先生は、選択肢２と３は「今日は金曜日」だから、「明<br/>日あさってで」、つまり週末にそろえるように言ってい<br/>る。それに対して選択肢１について最後に「郵便局は明<br/>日休みだから、さっき言った通りに帰りにお願いします」<br/>と言っている。"
         },
         {
           "number": 4,
@@ -60,7 +63,8 @@
             "4 <ruby>晩<rt>ばん</rt></ruby>ご飯を<ruby>食<rt>た</rt></ruby>べてから、<ruby>宿題<rt>しゅくだい</rt></ruby>をする"
           ],
           "correct": 1,
-          "correctOption": "1 <ruby>手<rt>て</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>い、うがいをしてから、おやつを<ruby>食<rt>た</rt></ruby>べる"
+          "correctOption": "1 <ruby>手<rt>て</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>い、うがいをしてから、おやつを<ruby>食<rt>た</rt></ruby>べる",
+          "explanation": "<b>【正解】1 <ruby>手<rt>て</rt></ruby>を<ruby>洗<rt>あら</rt></ruby>い、うがいをしてから、おやつを<ruby>食<rt>た</rt></ruby>べる</b><br/>母親は息子の宿題を確認し、夕飯前に手を付けるように<br/>言っている。選択肢１の手洗いとうがいはすでに終わっ<br/>ているので、間違い。"
         },
         {
           "number": 5,
@@ -72,7 +76,8 @@
             "4 レストランに<ruby>予約時間<rt>よやくじかん</rt></ruby>の<ruby>変更<rt>へんこう</rt></ruby>を<ruby>依頼<rt>いらい</rt></ruby>する"
           ],
           "correct": 1,
-          "correctOption": "1 <ruby>新商品<rt>しんしょうひん</rt></ruby>の<ruby>試食会<rt>ししょくかい</rt></ruby>の<ruby>準備<rt>じゅんび</rt></ruby>を<ruby>進<rt>すす</rt></ruby>める"
+          "correctOption": "1 <ruby>新商品<rt>しんしょうひん</rt></ruby>の<ruby>試食会<rt>ししょくかい</rt></ruby>の<ruby>準備<rt>じゅんび</rt></ruby>を<ruby>進<rt>すす</rt></ruby>める",
+          "explanation": "<b>【正解】1 <ruby>新商品<rt>しんしょうひん</rt></ruby>の<ruby>試食会<rt>ししょくかい</rt></ruby>の<ruby>準備<rt>じゅんび</rt></ruby>を<ruby>進<rt>すす</rt></ruby>める</b><br/>「それより」「至急」とあるので、各部長に会議室の利<br/>用時間について口頭で伝えるのが一番最初にすることで<br/>ある。"
         },
         {
           "number": 6,
@@ -84,7 +89,8 @@
             "4 <ruby>学生<rt>がくせい</rt></ruby>を<ruby>比較<rt>ひかく</rt></ruby>することで<ruby>学生<rt>がくせい</rt></ruby>の<ruby>競争心<rt>きょうそうしん</rt></ruby>をあおる"
           ],
           "correct": 1,
-          "correctOption": "1 <ruby>宿題<rt>しゅくだい</rt></ruby>の<ruby>未提出者<rt>みていしゅつしゃ</rt></ruby>にトイレ<ruby>掃除<rt>そうじ</rt></ruby>をさせる"
+          "correctOption": "1 <ruby>宿題<rt>しゅくだい</rt></ruby>の<ruby>未提出者<rt>みていしゅつしゃ</rt></ruby>にトイレ<ruby>掃除<rt>そうじ</rt></ruby>をさせる",
+          "explanation": "<b>【正解】1 <ruby>宿題<rt>しゅくだい</rt></ruby>の<ruby>未提出者<rt>みていしゅつしゃ</rt></ruby>にトイレ<ruby>掃除<rt>そうじ</rt></ruby>をさせる</b><br/>最後の男の教師の発話で、効果的だった方法として、リ<br/>ーダーを決めて任せたことが挙げられており、女の教師<br/>が「試してみます」と言っている。<br/><ruby>◆ポイント理<rt>り</rt></ruby><ruby>解<rt>かい</rt></ruby> Point comprehension (p.171)"
         }
       ]
     },
@@ -104,7 +110,8 @@
             "4 <ruby>世代<rt>せだい</rt></ruby>の<ruby>違<rt>ちが</rt></ruby>う<ruby>人<rt>ひと</rt></ruby>たちと<ruby>囲炉裏<rt>いろり</rt></ruby>を<ruby>囲<rt>かこ</rt></ruby>んだこと"
           ],
           "correct": 1,
-          "correctOption": "1 コーヒーが<ruby>大好<rt>だいす</rt></ruby>きだったこと"
+          "correctOption": "1 コーヒーが<ruby>大好<rt>だいす</rt></ruby>きだったこと",
+          "explanation": "<b>【正解】1 コーヒーが<ruby>大好<rt>だいす</rt></ruby>きだったこと</b><br/>レポーターの「どうしてこのようなことをしようと考え<br/>たんですか」という問いに対し、「近所に住んでいる母<br/>に、町の開発で昔ながらの気軽に集まれる喫茶店がなく<br/>なって寂しいって言われたこと」と返している。"
         },
         {
           "number": 2,
@@ -116,7 +123,8 @@
             "4 <ruby>漢字<rt>かんじ</rt></ruby>のレベルを<ruby>少<rt>すこ</rt></ruby>しずつ<ruby>上<rt>あ</rt></ruby>げられるから"
           ],
           "correct": 1,
-          "correctOption": "1 <ruby>多<rt>おお</rt></ruby>くの<ruby>日本語学校<rt>にほんごがっこう</rt></ruby>で<ruby>使<rt>つか</rt></ruby>われているから"
+          "correctOption": "1 <ruby>多<rt>おお</rt></ruby>くの<ruby>日本語学校<rt>にほんごがっこう</rt></ruby>で<ruby>使<rt>つか</rt></ruby>われているから",
+          "explanation": "<b>【正解】1 <ruby>多<rt>おお</rt></ruby>くの<ruby>日本語学校<rt>にほんごがっこう</rt></ruby>で<ruby>使<rt>つか</rt></ruby>われているから</b><br/>男の留学生の漢字の書きという弱点と、語彙を増やした<br/>いという要望の二つをカバーできるものとして、先生が<br/>「小４漢字」を勧めている。"
         },
         {
           "number": 3,
@@ -128,7 +136,8 @@
             "4 <ruby>夕食後<rt>ゆうしょくご</rt></ruby>の２<ruby>時間<rt>じかん</rt></ruby>"
           ],
           "correct": 1,
-          "correctOption": "1 <ruby>朝起<rt>あさお</rt></ruby>きてからの２<ruby>時間<rt>じかん</rt></ruby>"
+          "correctOption": "1 <ruby>朝起<rt>あさお</rt></ruby>きてからの２<ruby>時間<rt>じかん</rt></ruby>",
+          "explanation": "<b>【正解】1 <ruby>朝起<rt>あさお</rt></ruby>きてからの２<ruby>時間<rt>じかん</rt></ruby></b><br/>空腹時が脳のパフォーマンスが高いと言っており、勉強<br/>に適している時間の例として、夕食の２時間前が最適だ<br/>と言っている。朝起きてからの２時間もいいが、空腹を<br/>我慢するのはよくないと言っているので選択肢１は間違<br/>い。"
         },
         {
           "number": 4,
@@ -140,7 +149,8 @@
             "4 <ruby>今度<rt>こんど</rt></ruby>テニスボールをもらうお<ruby>礼<rt>れい</rt></ruby>"
           ],
           "correct": 1,
-          "correctOption": "1 テニスウェアをもらったお<ruby>礼<rt>れい</rt></ruby>"
+          "correctOption": "1 テニスウェアをもらったお<ruby>礼<rt>れい</rt></ruby>",
+          "explanation": "<b>【正解】1 テニスウェアをもらったお<ruby>礼<rt>れい</rt></ruby></b><br/>男の人の最初のお礼に対して、女の人は何のお礼かわか<br/>らない様子だったが、男の人が「息子さんのテニスウェ<br/>ア」とはっきりと何のお礼か答えている。"
         },
         {
           "number": 5,
@@ -152,7 +162,8 @@
             "4 <ruby>身<rt>み</rt></ruby>だしなみ"
           ],
           "correct": 1,
-          "correctOption": "1 <ruby>声<rt>こえ</rt></ruby>の<ruby>調子<rt>ちょうし</rt></ruby>"
+          "correctOption": "1 <ruby>声<rt>こえ</rt></ruby>の<ruby>調子<rt>ちょうし</rt></ruby>",
+          "explanation": "<b>【正解】1 <ruby>声<rt>こえ</rt></ruby>の<ruby>調子<rt>ちょうし</rt></ruby></b><br/>ホテルの支配人が様々な心得を述べているが、「勤務時<br/><ruby>間外の行動」、つまり普段の行動について何よりも肝<rt>きも</rt></ruby>に<br/><ruby>銘<rt>めい</rt></ruby>じてほしいと言っている。<br/>※<ruby>肝<rt>きも</rt></ruby><ruby>に銘<rt>めい</rt></ruby>じる：心に留め、決して忘れないようにすること<br/>firmly keep in mind"
         },
         {
           "number": 6,
@@ -164,7 +175,8 @@
             "4 <ruby>曇<rt>くも</rt></ruby>っていて、<ruby>朝<rt>あさ</rt></ruby>から<ruby>晩<rt>ばん</rt></ruby>まで<ruby>涼<rt>すず</rt></ruby>しい"
           ],
           "correct": 1,
-          "correctOption": "1 <ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ったりやんだりをくり<ruby>返<rt>かえ</rt></ruby>す"
+          "correctOption": "1 <ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ったりやんだりをくり<ruby>返<rt>かえ</rt></ruby>す",
+          "explanation": "<b>【正解】1 <ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ったりやんだりをくり<ruby>返<rt>かえ</rt></ruby>す</b><br/>「太平洋側の東日本では雲が広がり朝晩は涼しいものの、<br/>昼間は汗ばむような天気となるでしょう」と言っている。"
         },
         {
           "number": 7,
@@ -176,7 +188,8 @@
             "4 ラストシーンが<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>感動的<rt>かんどうてき</rt></ruby>だったこと"
           ],
           "correct": 1,
-          "correctOption": "1 <ruby>臨場感<rt>りんじょうかん</rt></ruby>があふれる<ruby>作品<rt>さくひん</rt></ruby>だったこと"
+          "correctOption": "1 <ruby>臨場感<rt>りんじょうかん</rt></ruby>があふれる<ruby>作品<rt>さくひん</rt></ruby>だったこと",
+          "explanation": "<b>【正解】1 <ruby>臨場感<rt>りんじょうかん</rt></ruby>があふれる<ruby>作品<rt>さくひん</rt></ruby>だったこと</b><br/>男の人が「この映画の要はあの俳優の演技に尽きる」と<br/>言っている。"
         }
       ]
     }

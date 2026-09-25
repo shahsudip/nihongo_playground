@@ -17,100 +17,170 @@
         {
           "number": 1,
           "stem": "",
-          "options": ["1", "2", "3"],
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
           "correct": 1,
-          "correctOption": "1"
+          "correctOption": "1",
+          "explanation": "<b>【正解】1</b><br/>～にもほどがある＝～の限度を超えている even ～ can go<br/>too far"
         },
         {
           "number": 2,
           "stem": "",
-          "options": ["1", "2", "3"],
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
           "correct": 1,
-          "correctOption": "1"
+          "correctOption": "1",
+          "explanation": "<b>【正解】1</b><br/>たくましい：力に満ちた様子 強くて丈夫な様子 brawny"
         },
         {
           "number": 3,
           "stem": "",
-          "options": ["1", "2", "3"],
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
           "correct": 1,
-          "correctOption": "1"
+          "correctOption": "1",
+          "explanation": "<b>【正解】1</b><br/>～てからというもの＝～てからずっと ever since ～"
         },
         {
           "number": 4,
           "stem": "",
-          "options": ["1", "2", "3"],
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
           "correct": 1,
-          "correctOption": "1"
+          "correctOption": "1",
+          "explanation": "<b>【正解】1</b><br/><ruby>案<rt>あん</rt></ruby><ruby>の定<rt>じょう</rt></ruby>：思った通り 予想通り as expected"
         },
         {
           "number": 5,
           "stem": "",
-          "options": ["1", "2", "3"],
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
           "correct": 1,
-          "correctOption": "1"
+          "correctOption": "1",
+          "explanation": "<b>【正解】1</b><br/>～とばかりに＝～と言うかのように as if saying ～"
         },
         {
           "number": 6,
           "stem": "",
-          "options": ["1", "2", "3"],
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
           "correct": 1,
-          "correctOption": "1"
+          "correctOption": "1",
+          "explanation": "<b>【正解】1</b><br/>ことのほか：予想と違って 案外 意外 (better, etc.) than<br/>expected"
         },
         {
           "number": 7,
           "stem": "",
-          "options": ["1", "2", "3"],
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
           "correct": 1,
-          "correctOption": "1"
+          "correctOption": "1",
+          "explanation": "<b>【正解】1</b><br/>～なり＝～した直後 ～したすぐ後 as soon as ～"
         },
         {
           "number": 8,
           "stem": "",
-          "options": ["1", "2", "3"],
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
           "correct": 1,
-          "correctOption": "1"
+          "correctOption": "1",
+          "explanation": "<b>【正解】1</b><br/>～っぱなし：～してそのままの状態 leaving (something)"
         },
         {
           "number": 9,
           "stem": "",
-          "options": ["1", "2", "3"],
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
           "correct": 1,
-          "correctOption": "1"
+          "correctOption": "1",
+          "explanation": "<b>【正解】1</b><br/><ruby>脅<rt>おど</rt></ruby>かす：不安にさせる 相手を怖がらせる scare"
         },
         {
           "number": 10,
           "stem": "",
-          "options": ["1", "2", "3"],
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
           "correct": 1,
-          "correctOption": "1"
+          "correctOption": "1",
+          "explanation": "<b>【正解】1</b><br/><ruby>取<rt>と</rt></ruby><ruby>り掛<rt>か</rt></ruby>かる＝今すぐ始める get started"
         },
         {
           "number": 11,
           "stem": "",
-          "options": ["1", "2", "3"],
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
           "correct": 1,
-          "correctOption": "1"
+          "correctOption": "1",
+          "explanation": "<b>【正解】1</b><br/><ruby>怯<rt>ひる</rt></ruby>む＝弱気になる 気後れする 尻込みする flinch"
         },
         {
           "number": 12,
           "stem": "",
-          "options": ["1", "2", "3"],
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
           "correct": 1,
-          "correctOption": "1"
+          "correctOption": "1",
+          "explanation": "<b>【正解】1</b><br/>～ときたら、…：批判する際の表現。～は批判する対<br/>象、…はその内容である。 that good-for-nothing ～…"
         },
         {
           "number": 13,
           "stem": "",
-          "options": ["1", "2", "3"],
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
           "correct": 1,
-          "correctOption": "1"
+          "correctOption": "1",
+          "explanation": "<b>【正解】1</b><br/><ruby>～に至<rt>いた</rt></ruby>っては：～についての極端な例をあげるのに用い<br/>る to give an extreme example, ～"
         },
         {
           "number": 14,
           "stem": "",
-          "options": ["1", "2", "3"],
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
           "correct": 1,
-          "correctOption": "1"
+          "correctOption": "1",
+          "explanation": "<b>【正解】1</b><br/><ruby>大<rt>だい</rt></ruby><ruby>胆<rt>たん</rt></ruby>(な)：思い切りがいいこと bold"
         }
       ]
     }
