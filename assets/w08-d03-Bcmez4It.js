@@ -1,0 +1,91 @@
+const t="zenkamoku-n2-best-workbook",e="w08-d03",l=8,o=3,n="第8週",b="3日目",r="情報検索",d="Information retrieval",s="右のページを読んで、後の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。",a=[{type:"information_retrieval",title:"情報検索",titleEn:"Information retrieval",instruction:"右のページを読んで、後の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。",questions:[{number:1,stem:"市川さん夫婦は、小学生の子ども2人を連れて、7月1日から1泊2日で「にこにこキャンプ場」に宿泊する。テントを1つだけ借りて、全員温泉に1回ずつ入る予定だ。会議室と駐車場は使用しない。料金は全部でいくらか。",options:["1. 2,000円","2. 13,000円","3. 18,600円","4. 20,200円"],correct:3,correctOption:"3. 18,600円",explanation:"<b>【正解】3. 18,600円</b><br/>大人2名＋小学生2名、7月1日（通常料金）のテントサイト宿泊料と利用料の合計は18,600円となるため、3が正解です。"},{number:2,stem:"「にこにこキャンプ場」でできることはどれか。",options:["1. 夏休みに登山部の合宿として、14歳の中学生6人だけでテントに一泊する。","2. 0時から1時間ほど温泉に入り、帰りに管理室で飲み物を買ってテントに戻る。","3. 調理コーナーで夕飯を作って食べたあと、テントの前で花火をして遊ぶ。","4. 会社の社員研修として10時から18時まで会議室で勉強し、夜はテントで寝る。"],correct:4,correctOption:"4. 会社の社員研修として10時から18時まで会議室で勉強し、夜はテントで寝る。",explanation:"<b>【正解】4. 会社の社員研修として10時から18時まで会議室で勉強し、夜はテントで寝る。</b><br/>キャンプ場の施設利用規定およびサービス内容から、4が正解です。"}],passage:`<div class="speed-master-flyer-card max-w-2xl mx-auto my-2 p-4 sm:p-6 bg-amber-50/20 dark:bg-slate-900/60 text-slate-800 dark:text-slate-100 border-2 border-slate-700 dark:border-slate-400 rounded-xl shadow-sm font-sans text-sm sm:text-base leading-normal">
+  <div class="flex items-center justify-between border-b-2 border-dotted border-slate-400 dark:border-slate-500 pb-3 mb-4">
+    <div>
+      <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">にこにこキャンプ場</h2>
+      <div class="text-lg sm:text-xl font-bold text-slate-800 dark:text-slate-200">利用案内</div>
+    </div>
+    <div class="text-3xl sm:text-4xl">🏕️ ☀️</div>
+  </div>
+
+  <div class="mb-5">
+    <div class="font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-1">
+      <span>◆</span><span>料金表</span>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full border-collapse border border-slate-400 dark:border-slate-600 text-xs sm:text-sm text-center">
+        <thead>
+          <tr class="bg-slate-700 text-white dark:bg-slate-800">
+            <th colspan="2" class="border border-slate-400 dark:border-slate-600 p-2 font-bold">区分</th>
+            <th class="border border-slate-400 dark:border-slate-600 p-2 font-bold w-1/4">通常料金</th>
+            <th class="border border-slate-400 dark:border-slate-600 p-2 font-bold w-1/4">割増料金</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-300 dark:divide-slate-700">
+          <tr>
+            <td rowspan="2" class="border border-slate-400 dark:border-slate-600 p-2 font-semibold bg-slate-50 dark:bg-slate-800/50 align-middle">入場料（1泊）</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2">大人</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">2,000円</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">3,000円</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-400 dark:border-slate-600 p-2">子ども（小学生まで）</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">1,000円</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">1,500円</td>
+          </tr>
+          <tr>
+            <td rowspan="2" class="border border-slate-400 dark:border-slate-600 p-2 font-semibold bg-slate-50 dark:bg-slate-800/50 align-middle">貸しテント（1泊）</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2">3〜6人用</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">5,000円</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">8,000円</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-400 dark:border-slate-600 p-2">1〜2人用</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">3,000円</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">5,000円</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-semibold bg-slate-50 dark:bg-slate-800/50">温泉（1回）</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2">大人</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">500円</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">800円</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-semibold bg-slate-50 dark:bg-slate-800/50">会議室</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2">1時間</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">1,000円</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">1,500円</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-semibold bg-slate-50 dark:bg-slate-800/50">駐車場（1泊）</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2">1台</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">1,000円</td>
+            <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">1,500円</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mt-2 space-y-0.5 text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+      <p>※7月〜9月は割増料金が適用されます（団体利用の場合を除く）。</p>
+      <p>※団体利用とは以下の場合を指します。<br/>　・教育機関の行事（修学旅行、クラブの合宿など）<br/>　・20名以上でのご利用</p>
+      <p>※チェックインの際に、代表者（18歳以上）の身分証を確認しています。顔写真と住所の確認できる書類（運転免許証、社員証など）をご提示ください。</p>
+      <p>※代表者不在でのキャンプ場利用はできませんのでご了承ください。</p>
+      <p>※子ども（小学生まで）の温泉のご利用は無料です。</p>
+    </div>
+  </div>
+
+  <div>
+    <div class="font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-1">
+      <span>◆</span><span>「にこにこキャンプ場」のご利用にあたって</span>
+    </div>
+    <ul class="list-disc pl-5 space-y-1.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+      <li>調理コーナーは他の利用客の方とゆずり合って使用しましょう。</li>
+      <li>調理コーナー、喫煙コーナー以外、キャンプ場での火の使用はできません。</li>
+      <li>ゴミは必ず指定の場所に捨てましょう。</li>
+      <li>ペットを<ruby>伴<rt>ともな</rt></ruby>ってのご入場はお断りしています。</li>
+      <li>11時から15時までは清掃時間のため、温泉の利用はできません。夜間のご利用は可能ですが、他のお客様の<ruby>迷惑<rt>めいわく</rt></ruby>にならないよう静かにご利用ください。</li>
+      <li>22時以降は音楽などを消して、静かにお過ごしください。</li>
+      <li>会議室は管理室の開室時間にのみ使用できます。</li>
+      <li>お困りの際は管理室にご相談ください（開室時間 7時〜20時）。管理室では調理器具の貸し出し（無料）、飲み物と軽食の販売をしております。管理室の閉室中は、<ruby>緊急時<rt>きんきゅうじ</rt></ruby>に限り夜間窓口（012-3456-7890）にお電話ください。</li>
+    </ul>
+  </div>
+</div>`}],i={bookId:t,chapterId:e,week:8,day:3,weekTitle:"第8週",dayTitle:"3日目",sectionTitle:r,sectionTitleEn:d,instruction:s,sections:a};export{t as bookId,e as chapterId,o as day,b as dayTitle,i as default,s as instruction,r as sectionTitle,d as sectionTitleEn,a as sections,l as week,n as weekTitle};
