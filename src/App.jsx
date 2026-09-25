@@ -213,6 +213,10 @@ export default function App() {
             element={<ProtectedRoute><Shin500QuizPage bookId="shin-nihongo-500-n4-n5" /></ProtectedRoute>}
           />
           <Route
+            path="/books/zenkamoku-n1-best-workbook/chapters/:chapterId"
+            element={<ProtectedRoute><ZenkamokuPageViewer /></ProtectedRoute>}
+          />
+          <Route
             path="/books/zenkamoku-n2-best-workbook/chapters/:chapterId"
             element={<ProtectedRoute><ZenkamokuPageViewer /></ProtectedRoute>}
           />
