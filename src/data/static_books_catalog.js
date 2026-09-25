@@ -12,7 +12,8 @@ export const STATIC_BOOKS = [
     color: 'from-rose-500 to-pink-600',
     tags: ['N1', 'Grammar', 'Reading', 'Listening', 'Vocabulary', 'Kanji', 'Zenkamoku'],
     hasDigitalDrill: true,
-    totalChapters: 60
+    totalChapters: 60,
+    customRoute: '/books/zenkamoku-n1-best-workbook/chapters/w01-d01'
   },
 
   {
@@ -26,7 +27,8 @@ export const STATIC_BOOKS = [
     color: 'from-blue-500 to-indigo-600',
     tags: ['N2', 'Grammar', 'Reading', 'Listening', 'Vocabulary', 'Kanji', 'Zenkamoku'],
     hasDigitalDrill: true,
-    totalChapters: 60
+    totalChapters: 60,
+    customRoute: '/books/zenkamoku-n2-best-workbook/chapters/w01-d01'
   },
 
   {
@@ -37,7 +39,8 @@ export const STATIC_BOOKS = [
     coverImage: '/images/zenkamoku_n3_cover.jpg',
     level: 'N3',
     category: 'Mixed',
-    totalChapters: 60
+    totalChapters: 60,
+    customRoute: '/books/zenkamoku-n3-best-workbook/chapters/w01-d01'
   },
   {
     id: 'shin-nihongo-500-n1',
