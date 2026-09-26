@@ -63,16 +63,30 @@ const BookListPage = () => {
 
 
   const getBookProgress = (book) => {
-    if (!currentUser) return { completed: 0, total: book.totalChapters || 0, percent: 0 };
-    
     let completedCount = 0;
     
-    // Count directly from the user history hash map for O(n) calculation without chapter docs
+    // Count directly from the user history hash map
     Object.keys(history).forEach(key => {
-      if (key.startsWith(`${book.id}-`) && history[key].status === 'mastered') {
-        completedCount++;
+      if (key.startsWith(`${book.id}-`)) {
+        const item = history[key];
+        if (item && (item.status === 'mastered' || item.status === 'completed' || (item.total > 0 && item.answered >= item.total))) {
+          completedCount++;
+        }
       }
     });
+
+    // Also check local storage for unauthenticated / cached progress
+    if (!currentUser) {
+      const guestPrefix = `book_quiz_guest_${book.id}_`;
+      try {
+        for (let i = 0; i < localStorage.length; i++) {
+          const key = localStorage.key(i);
+          if (key && key.startsWith(guestPrefix)) {
+            completedCount++;
+          }
+        }
+      } catch (e) {}
+    }
 
     const total = book.totalChapters || 0;
     const percent = total > 0 ? Math.round((completedCount / total) * 100) : 0;

@@ -52,7 +52,9 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
       const qCount = getQuestionCount(ch);
       const userProgress = history[ch.id];
       const isMastered = userProgress && userProgress.status === 'mastered';
-      const isIncomplete = userProgress && userProgress.status === 'incomplete';
+      const isCompleted = userProgress && userProgress.status === 'completed';
+      const isDone = isMastered || isCompleted;
+      const isIncomplete = userProgress && (userProgress.status === 'incomplete' || (!isDone && userProgress.answered > 0));
 
       return {
         ...ch,
@@ -62,6 +64,8 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
         qCount,
         userProgress,
         isMastered,
+        isCompleted,
+        isDone,
         isIncomplete,
       };
     });
@@ -94,17 +98,17 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
   // Overall book statistics
   const stats = useMemo(() => {
     const totalChapters = parsedChapters.length;
-    const mastered = parsedChapters.filter((c) => c.isMastered).length;
+    const completed = parsedChapters.filter((c) => c.isDone).length;
     const inProgress = parsedChapters.filter((c) => c.isIncomplete).length;
     const totalQuestions = parsedChapters.reduce((acc, c) => acc + (c.qCount || (c.isReview ? 15 : 3)), 0);
-    const progressPct = totalChapters > 0 ? Math.round((mastered / totalChapters) * 100) : 0;
+    const progressPct = totalChapters > 0 ? Math.round((completed / totalChapters) * 100) : 0;
 
-    // First unmastered chapter for "Quick Continue"
-    const nextChapter = parsedChapters.find((c) => !c.isMastered) || parsedChapters[0];
+    // First uncompleted chapter for "Quick Continue"
+    const nextChapter = parsedChapters.find((c) => !c.isDone) || parsedChapters[0];
 
     return {
       totalChapters,
-      mastered,
+      mastered: completed,
       inProgress,
       totalQuestions: totalQuestions || 500,
       progressPct,
@@ -242,8 +246,8 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
             </button>
 
             {weekGroups.map((group) => {
-              const masteredInWeek = group.chapters.filter((c) => c.isMastered).length;
-              const isWeekDone = masteredInWeek === group.chapters.length && group.chapters.length > 0;
+              const doneInWeek = group.chapters.filter((c) => c.isDone).length;
+              const isWeekDone = doneInWeek === group.chapters.length && group.chapters.length > 0;
 
               return (
                 <button
@@ -260,7 +264,7 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
                     <span className="text-[10px] text-emerald-300">✓</span>
                   ) : (
                     <span className="text-[10px] opacity-75 font-normal">
-                      ({masteredInWeek}/{group.chapters.length})
+                      ({doneInWeek}/{group.chapters.length})
                     </span>
                   )}
                 </button>
@@ -272,10 +276,10 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
           <div className="space-y-6">
         {displayedWeekGroups.map((group) => {
           const isCollapsed = expandedWeeks[group.weekNum] === false;
-          const masteredCount = group.chapters.filter((c) => c.isMastered).length;
+          const doneCount = group.chapters.filter((c) => c.isDone).length;
           const weekPct =
-            group.chapters.length > 0 ? Math.round((masteredCount / group.chapters.length) * 100) : 0;
-          const isWeekComplete = masteredCount === group.chapters.length && group.chapters.length > 0;
+            group.chapters.length > 0 ? Math.round((doneCount / group.chapters.length) * 100) : 0;
+          const isWeekComplete = doneCount === group.chapters.length && group.chapters.length > 0;
 
           return (
             <div
@@ -349,7 +353,7 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
                           key={chapter.id}
                           to={`/books/${book.id}/chapters/${chapter.id}`}
                           className={`group relative p-3.5 rounded-xl border transition-all duration-200 flex flex-col justify-between hover:-translate-y-0.5 hover:shadow-md ${
-                            chapter.isMastered
+                            chapter.isDone
                               ? 'bg-emerald-500/10 border-emerald-500/30 hover:border-emerald-500/60'
                               : chapter.isIncomplete
                                 ? 'bg-amber-500/10 border-amber-500/30 hover:border-amber-500/60'
@@ -388,9 +392,9 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
                           {/* Card Footer Status */}
                           <div className="pt-2 mt-1 border-t border-[var(--color-border)] flex items-center justify-between text-xs">
                             <div className="font-semibold text-[11px] whitespace-nowrap">
-                              {chapter.isMastered ? (
+                              {chapter.isDone ? (
                                 <span className="text-emerald-500 flex items-center gap-1">
-                                  <span>✓</span> Done
+                                  <span>✓</span> {chapter.isMastered ? 'Mastered' : 'Completed'}
                                 </span>
                               ) : chapter.isIncomplete ? (
                                 <span className="text-amber-500 flex items-center gap-1">
@@ -405,7 +409,7 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
 
                             {chapter.userProgress && (
                               <span className="text-[10px] font-bold text-[var(--color-text-muted)]">
-                                {chapter.isMastered
+                                {chapter.isDone
                                   ? `${chapter.userProgress.mastered || chapter.userProgress.score || 0}/${chapter.userProgress.numberOfQuestions || chapter.userProgress.total || chapter.qCount || 3}`
                                   : `${chapter.userProgress.score || 0}/${chapter.userProgress.total || chapter.qCount || 3}`}
                               </span>

@@ -257,45 +257,49 @@ const BookQuizTakerPage = () => {
   const saveAnswersState = useCallback(async (currentAnswers, isFinal = false, targetIndex = currentIndex) => {
     if (!chapter || questions.length === 0) return;
 
+    const answeredCount = Object.keys(currentAnswers).length;
+    let correctCount = 0;
+    Object.keys(currentAnswers).forEach(qId => {
+      const q = questions.find(qu => qu.id === qId);
+      if (q) {
+        const correctText = getCorrectText(q);
+        if (currentAnswers[qId] === correctText) {
+          correctCount++;
+        }
+      }
+    });
+
+    const isAllAnswered = answeredCount === questions.length;
+    const accuracy = questions.length > 0 ? (correctCount / questions.length) : 0;
+    
+    let status = 'incomplete';
+    if (isAllAnswered || isFinal) {
+      if (accuracy >= 0.8 && correctCount > 0) {
+        status = 'mastered';
+      } else {
+        status = 'completed';
+      }
+    }
+
     // 1. Immediately cache in localStorage
     const storageKey = getStorageKey();
     try {
       localStorage.setItem(storageKey, JSON.stringify({
         answers: currentAnswers,
         currentIndex: targetIndex,
+        status,
+        score: correctCount,
+        total: questions.length,
+        answered: answeredCount,
         timestamp: new Date().toISOString()
       }));
     } catch (e) {
       console.warn("Failed to save local quiz state:", e);
     }
 
-    const answeredCount = Object.keys(currentAnswers).length;
     if (!currentUser || answeredCount === 0) return;
 
     try {
-      let correctCount = 0;
-      Object.keys(currentAnswers).forEach(qId => {
-        const q = questions.find(qu => qu.id === qId);
-        if (q) {
-          const correctText = getCorrectText(q);
-          if (currentAnswers[qId] === correctText) {
-            correctCount++;
-          }
-        }
-      });
-
-      const isAllAnswered = answeredCount === questions.length;
-      const accuracy = questions.length > 0 ? (correctCount / questions.length) : 0;
-      
-      let status = 'incomplete';
-      if (isAllAnswered || isFinal) {
-        if (accuracy >= 0.8 && correctCount > 0) {
-          status = 'mastered';
-        } else if (isAllAnswered) {
-          status = 'completed';
-        }
-      }
-
       const historyDocId = `${bookId}-${chapterId}`;
       const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
       

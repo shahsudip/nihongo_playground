@@ -119,12 +119,52 @@ const BookChapterListPage = () => {
           }
         }
 
-        // 3. Fetch progress history for this book in background
+        // 3. Fetch progress history for this book (both local cache and Firestore)
+        const localHistory = {};
+        try {
+          const guestPrefix = `book_quiz_guest_${bookId}_`;
+          const userPrefix = currentUser ? `book_quiz_${currentUser.uid}_${bookId}_` : null;
+          for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            if (!key) continue;
+            let chapId = null;
+            if (userPrefix && key.startsWith(userPrefix)) {
+              chapId = key.replace(userPrefix, '');
+            } else if (key.startsWith(guestPrefix)) {
+              chapId = key.replace(guestPrefix, '');
+            }
+            if (chapId) {
+              try {
+                const saved = JSON.parse(localStorage.getItem(key));
+                if (saved && saved.answers) {
+                  const ansCount = Object.keys(saved.answers).length;
+                  localHistory[chapId] = {
+                    quizId: `${bookId}-${chapId}`,
+                    bookId,
+                    chapterId: chapId,
+                    status: saved.status || (ansCount > 0 ? 'completed' : 'incomplete'),
+                    score: saved.score || 0,
+                    total: saved.total || 0,
+                    answered: ansCount,
+                    answers: saved.answers
+                  };
+                }
+              } catch (e) {}
+            }
+          }
+        } catch (e) {
+          console.warn("Could not read local quiz progress:", e);
+        }
+
+        if (isMounted && Object.keys(localHistory).length > 0) {
+          setHistory(localHistory);
+        }
+
         if (currentUser) {
           const historyColRef = collection(db, 'users', currentUser.uid, 'quizHistory');
           getDocs(historyColRef).then(historySnap => {
             if (!isMounted) return;
-            const bookHistory = {};
+            const bookHistory = { ...localHistory };
             historySnap.forEach(docSnap => {
               const data = docSnap.data();
               if (data && data.type === 'book' && data.quizId.startsWith(`${bookId}-`)) {

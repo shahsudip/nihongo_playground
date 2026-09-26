@@ -30,8 +30,8 @@ const StandardChapterList = ({ book, chapters = [], history = {} }) => {
     let inProgress = 0;
     weekChapters.forEach(ch => {
       const progress = history?.[ch.id];
-      if (progress?.status === 'mastered') completed++;
-      else if (progress) inProgress++;
+      if (progress?.status === 'mastered' || progress?.status === 'completed') completed++;
+      else if (progress && (progress.status === 'incomplete' || (progress.answered && progress.answered > 0))) inProgress++;
     });
     return { completed, inProgress, total: weekChapters.length };
   };
@@ -46,7 +46,10 @@ const StandardChapterList = ({ book, chapters = [], history = {} }) => {
   const weekGroups = groupByWeek(chapters);
 
   const nextChapter = useMemo(() => {
-    return chapters.find(c => !history[c.id] || history[c.id].status !== 'mastered') || chapters[0];
+    return chapters.find(c => {
+      const p = history[c.id];
+      return !p || (p.status !== 'mastered' && p.status !== 'completed');
+    }) || chapters[0];
   }, [chapters, history]);
 
   if (weekGroups.length === 0) {
@@ -157,19 +160,21 @@ const StandardChapterList = ({ book, chapters = [], history = {} }) => {
                   const qCount = getQuestionCount(chapter);
                   const userProgress = history[chapter.id];
                   const isMastered = userProgress && userProgress.status === 'mastered';
-                  const isIncomplete = userProgress && userProgress.status === 'incomplete';
+                  const isCompleted = userProgress && userProgress.status === 'completed';
+                  const isDone = isMastered || isCompleted;
+                  const isIncomplete = userProgress && (userProgress.status === 'incomplete' || (!isDone && userProgress.answered > 0));
                   const dayLabel = getDayLabel(chapter.title);
 
                   return (
                     <Link
                       key={chapter.id}
                       to={`/books/${book.id}/chapters/${chapter.id}`}
-                      className={`day-card ${isMastered ? 'day-mastered' : isIncomplete ? 'day-progress' : ''}`}
+                      className={`day-card ${isDone ? 'day-mastered' : isIncomplete ? 'day-progress' : ''}`}
                     >
                       <div className="day-card-label">{dayLabel}</div>
                       <div className="day-card-questions">{qCount} Q</div>
                       <div className="day-card-status">
-                        {isMastered ? (
+                        {isDone ? (
                           <span className="day-status-badge mastered">✓</span>
                         ) : isIncomplete ? (
                           <span className="day-status-badge progress">◕</span>
@@ -180,8 +185,8 @@ const StandardChapterList = ({ book, chapters = [], history = {} }) => {
                       {userProgress && (
                         <div className="day-card-score">
                           {isMastered
-                            ? `${userProgress.mastered}/${userProgress.numberOfQuestions}`
-                            : `${userProgress.score}/${userProgress.total}`
+                            ? `${userProgress.mastered || userProgress.score}/${userProgress.numberOfQuestions || userProgress.total || qCount}`
+                            : `${userProgress.score}/${userProgress.total || qCount}`
                           }
                         </div>
                       )}

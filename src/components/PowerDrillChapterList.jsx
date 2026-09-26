@@ -106,14 +106,17 @@ const PowerDrillChapterList = ({ book, chapters = [], history = {} }) => {
     let inProgress = 0;
     groupChapters.forEach(ch => {
       const progress = history[ch.id];
-      if (progress?.status === 'mastered') completed++;
-      else if (progress) inProgress++;
+      if (progress?.status === 'mastered' || progress?.status === 'completed') completed++;
+      else if (progress && (progress.status === 'incomplete' || (progress.answered && progress.answered > 0))) inProgress++;
     });
     return { completed, inProgress, total: groupChapters.length };
   };
 
   if (selectedSection === null) {
-    const nextChapter = chapters.find(c => !history[c.id] || history[c.id].status !== 'mastered') || chapters[0];
+    const nextChapter = chapters.find(c => {
+      const p = history[c.id];
+      return !p || (p.status !== 'mastered' && p.status !== 'completed');
+    }) || chapters[0];
 
     return (
       <div className="space-y-6 mt-6 max-w-4xl mx-auto">
@@ -280,7 +283,9 @@ const PowerDrillChapterList = ({ book, chapters = [], history = {} }) => {
                     {group.chapters.map((chapter) => {
                       const userProgress = history[chapter.id];
                       const isMastered = userProgress && userProgress.status === 'mastered';
-                      const isIncomplete = userProgress && userProgress.status === 'incomplete';
+                      const isCompleted = userProgress && userProgress.status === 'completed';
+                      const isDone = isMastered || isCompleted;
+                      const isIncomplete = userProgress && (userProgress.status === 'incomplete' || (!isDone && userProgress.answered > 0));
                       const info = getChapterInfo(chapter.id);
                       
                       let drillNum = '';
@@ -296,7 +301,7 @@ const PowerDrillChapterList = ({ book, chapters = [], history = {} }) => {
                         <span
                           key={chapter.id}
                           className={`text-[10px] font-black w-6 h-6 rounded-full flex items-center justify-center border transition-all ${
-                            isMastered
+                            isDone
                               ? 'bg-emerald-500/15 border-emerald-500/40 text-emerald-400'
                               : isIncomplete
                                 ? 'bg-amber-500/15 border-amber-500/40 text-amber-400'
@@ -339,7 +344,10 @@ const PowerDrillChapterList = ({ book, chapters = [], history = {} }) => {
               </h3>
             </div>
             <span className="text-xs font-semibold text-[var(--color-text-muted)]">
-              {groups[selectedGroup]?.chapters.filter(ch => history[ch.id]?.status === 'mastered').length || 0} / {groups[selectedGroup]?.chapters.length || 0} Done
+              {groups[selectedGroup]?.chapters.filter(ch => {
+                const p = history[ch.id];
+                return p && (p.status === 'mastered' || p.status === 'completed');
+              }).length || 0} / {groups[selectedGroup]?.chapters.length || 0} Done
             </span>
           </div>
 
@@ -347,7 +355,9 @@ const PowerDrillChapterList = ({ book, chapters = [], history = {} }) => {
             {(groups[selectedGroup]?.chapters || []).map((chapter) => {
               const userProgress = history[chapter.id];
               const isMastered = userProgress && userProgress.status === 'mastered';
-              const isIncomplete = userProgress && userProgress.status === 'incomplete';
+              const isCompleted = userProgress && userProgress.status === 'completed';
+              const isDone = isMastered || isCompleted;
+              const isIncomplete = userProgress && (userProgress.status === 'incomplete' || (!isDone && userProgress.answered > 0));
               const info = getChapterInfo(chapter.id);
               
               let drillNum = '';
@@ -364,7 +374,7 @@ const PowerDrillChapterList = ({ book, chapters = [], history = {} }) => {
                   key={chapter.id}
                   to={`/books/${book.id}/chapters/${chapter.id}`}
                   className={`p-5 rounded-2xl border flex flex-col justify-center items-center text-center transition-all hover:-translate-y-1 ${
-                    isMastered
+                    isDone
                       ? 'bg-emerald-500/10 border-emerald-500/30 hover:bg-emerald-500/15 hover:border-emerald-500/50'
                       : isIncomplete
                         ? 'bg-amber-500/10 border-amber-500/30 hover:bg-amber-500/15 hover:border-amber-500/50'
@@ -378,6 +388,8 @@ const PowerDrillChapterList = ({ book, chapters = [], history = {} }) => {
                   <span className="text-[11px] font-semibold">
                     {isMastered ? (
                       <span className="text-emerald-400">✓ Mastered</span>
+                    ) : isCompleted ? (
+                      <span className="text-emerald-400">✓ Completed</span>
                     ) : isIncomplete ? (
                       <span className="text-amber-400">◕ In Progress</span>
                     ) : (

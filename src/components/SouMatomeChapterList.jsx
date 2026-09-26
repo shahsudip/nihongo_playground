@@ -20,7 +20,7 @@ const SouMatomeChapterList = ({ book, history = {} }) => {
     for (let day = 1; day <= 7; day++) {
       const chapId = `week${weekNum}-day${day}`;
       const p = history[chapId];
-      if (p?.status === 'mastered') completed++;
+      if (p?.status === 'mastered' || p?.status === 'completed') completed++;
     }
     return { completed, total: 7 };
   };
@@ -30,7 +30,8 @@ const SouMatomeChapterList = ({ book, history = {} }) => {
     for (const w of weeks) {
       for (let day = 1; day <= 7; day++) {
         const chapId = `week${w.weekNum}-day${day}`;
-        if (!history[chapId] || history[chapId].status !== 'mastered') {
+        const p = history[chapId];
+        if (!p || (p.status !== 'mastered' && p.status !== 'completed')) {
           return `/books/${book.id}/chapters/${chapId}`;
         }
       }

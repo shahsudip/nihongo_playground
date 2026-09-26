@@ -361,7 +361,7 @@ const ProfileScreen = () => {
 
       historyKeyMap.forEach((val, key) => {
         if (key.startsWith(book.id)) {
-          if (val.status === 'mastered' || (val.total > 0 && val.score / val.total >= 0.8)) {
+          if (val.status === 'mastered' || val.status === 'completed' || (val.total > 0 && val.score / val.total >= 0.8)) {
             completedCount++;
           }
           totalQuestions += Number(val.total) || 0;
