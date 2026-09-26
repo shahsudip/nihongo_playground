@@ -312,6 +312,7 @@ const ProfileScreen = () => {
     'tango_n1': tangoN1Cover,
     'tango_n2': tangoN2Cover,
     'tango_n3': tangoN3Cover,
+    'zenkamoku-n1-best-workbook': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/images/zenkamoku_n1_cover.jpg`,
     'zenkamoku-n2-best-workbook': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/images/zenkamoku_n2_cover.jpg`,
     'zenkamoku-n3-best-workbook': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/images/zenkamoku_n3_cover.jpg`,
     'shinkanzen-master-n3-reading': `${import.meta.env.BASE_URL.replace(/\/$/, '')}/shinkanzen_n3_reading_cover.jpg`,

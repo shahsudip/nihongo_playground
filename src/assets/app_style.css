@@ -1767,6 +1767,50 @@ width: 100%;
   margin: 0;
 }
 
+/* Zenkamoku & SpeedMaster Text Passage Box and Vertical Card */
+.speed-master-text-box {
+  border: 2px solid #334155 !important;
+  border-radius: 8px;
+  padding: 24px 28px;
+  background-color: rgba(254, 252, 246, 0.9) !important;
+  color: #1e293b;
+  font-family: 'Noto Serif JP', serif;
+  line-height: 2.2;
+  margin-bottom: 1.5rem;
+}
+
+.theme-dark .speed-master-text-box,
+.dark .speed-master-text-box {
+  border-color: #64748b !important;
+  background-color: rgba(15, 23, 42, 0.85) !important;
+  color: #f1f5f9;
+}
+
+.speed-master-vertical-card {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  border: 2px solid #334155 !important;
+  border-radius: 8px;
+  padding: 28px 24px;
+  min-height: 380px;
+  max-height: 480px;
+  overflow-x: auto;
+  line-height: 2.4;
+  font-family: 'Noto Serif JP', serif;
+  background-color: rgba(254, 252, 246, 0.9) !important;
+  color: #1e293b;
+  margin: 0 auto 1.5rem auto;
+  box-sizing: border-box;
+}
+
+.theme-dark .speed-master-vertical-card,
+.dark .speed-master-vertical-card {
+  border-color: #64748b !important;
+  background-color: rgba(15, 23, 42, 0.85) !important;
+  color: #f1f5f9;
+}
+
 /* --- AI ADDED: Book List Page Styles --- */
 .book-page-wrapper {
   padding: 80px 20px 20px;

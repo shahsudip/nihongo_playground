@@ -5,8 +5,8 @@
   "day": 5,
   "weekTitle": "第1週",
   "dayTitle": "5日目",
-  "sectionTitle": "文字・語彙・文法",
-  "sectionTitleEn": "Vocabulary & Grammar",
+  "sectionTitle": "漢字読み・文脈規定",
+  "sectionTitleEn": "Kanji Reading & Contextually-defined Expression",
   "sections": [
     {
       "type": "kanji_reading",
@@ -26,7 +26,7 @@
           ],
           "correct": 4,
           "correctOption": "4. ひかえて",
-          "explanation": "<b>【正解】4. ひかえて</b><br/><ruby>控<rt>ひか</rt></ruby>える：やめておく 少なめに抑える 近い将来に予定<br/>される abstain; cut back on; to have something coming up<br/>【控】コウ・ひか-える"
+          "explanation": "<b>【正解】4. ひかえて</b><br/><ruby>控<rt>ひか</rt></ruby>える：やめておく 少なめに抑える 近い将来に予定される abstain; cut back on; to have something coming up<br/>【控】コウ・ひか-える"
         },
         {
           "number": 2,
@@ -65,7 +65,7 @@
           ],
           "correct": 1,
           "correctOption": "1. けんとう",
-          "explanation": "<b>【正解】1. けんとう</b><br/><ruby>検<rt>けん</rt></ruby><ruby>討<rt>とう</rt></ruby>(する)：物事をよく調べて考えること study (an issue);<br/>consider<br/>【検】ケン<br/>【討】トウ・う-つ"
+          "explanation": "<b>【正解】1. けんとう</b><br/><ruby>検<rt>けん</rt></ruby><ruby>討<rt>とう</rt></ruby>(する)：物事をよく調べて考えること study (an issue); consider<br/>【検】ケン<br/>【討】トウ・う-つ"
         },
         {
           "number": 5,
@@ -91,7 +91,7 @@
           ],
           "correct": 2,
           "correctOption": "2. いなか",
-          "explanation": "<b>【正解】2. いなか</b><br/><ruby>田舎<rt>いなか</rt></ruby>：都会から離れた所 生まれ故郷 country(side); hometown<br/>【田】デン・た<br/>【舎】シャ<br/><ruby>◆文脈規定<rt>ぶんみゃく</rt></ruby>Contextually-defined expressions(p.25)"
+          "explanation": "<b>【正解】2. いなか</b><br/><ruby>田舎<rt>いなか</rt></ruby>：都会から離れた所 生まれ故郷 country(side); hometown<br/>【田】デン・た<br/>【舎】シャ"
         }
       ]
     },
@@ -139,20 +139,20 @@
           ],
           "correct": 2,
           "correctOption": "2. 赴任",
-          "explanation": "<b>【正解】2. 赴任</b><br/><ruby>赴<rt>ふ</rt></ruby><ruby>任<rt>にん</rt></ruby>(する)：新しい勤務地に行くこと relocate to a new<br/>assignment"
+          "explanation": "<b>【正解】2. 赴任</b><br/><ruby>赴<rt>ふ</rt></ruby><ruby>任<rt>にん</rt></ruby>(する)：新しい勤務地に行くこと relocate to a new assignment"
         },
         {
           "number": 4,
           "stem": "近年この俳優は（　　）活躍を見せている。今年も5本の映画に出演するそうだ。",
           "options": [
             "1. <ruby>相応<rt>ふさわ</rt></ruby>しい",
-            "2. 日覚ましい",
+            "2. 目覚ましい",
             "3. <ruby>儚<rt>はかな</rt></ruby>い",
             "4. 甚だしい"
           ],
           "correct": 2,
-          "correctOption": "2. 日覚ましい",
-          "explanation": "<b>【正解】2. 日覚ましい</b><br/><ruby>目<rt>め</rt></ruby><ruby>覚<rt>ざ</rt></ruby>ましい：驚くほど素晴らしい remarkable; impressive"
+          "correctOption": "2. 目覚ましい",
+          "explanation": "<b>【正解】2. 目覚ましい</b><br/><ruby>目<rt>め</rt></ruby><ruby>覚<rt>ざ</rt></ruby>ましい：驚くほど素晴らしい remarkable; impressive"
         },
         {
           "number": 5,
@@ -165,7 +165,7 @@
           ],
           "correct": 4,
           "correctOption": "4. 温和な",
-          "explanation": "<b>【正解】4. 温和な</b><br/><ruby>温<rt>おん</rt></ruby><ruby>和<rt>わ</rt></ruby>(な)：物事が受け入れられやすい様子 性質などが<br/>優しく穏やかな様子 気候が暖かく厳しい変化がない様<br/>子 amicable"
+          "explanation": "<b>【正解】4. 温和な</b><br/><ruby>温<rt>おん</rt></ruby><ruby>和<rt>わ</rt></ruby>(な)：物事が受け入れられやすい様子 性質などが優しく穏やかな様子 気候が暖かく厳しい変化がない様子 amicable"
         },
         {
           "number": 6,
@@ -178,7 +178,7 @@
           ],
           "correct": 1,
           "correctOption": "1. 手入れ",
-          "explanation": "<b>【正解】1. 手入れ</b><br/><ruby>手<rt>て</rt></ruby><ruby>入<rt>い</rt></ruby>れ：よい状態を保つために世話や補修をすること<br/>care; upkeep"
+          "explanation": "<b>【正解】1. 手入れ</b><br/><ruby>手<rt>て</rt></ruby><ruby>入<rt>い</rt></ruby>れ：よい状態を保つために世話や補修をすること care; upkeep"
         },
         {
           "number": 7,

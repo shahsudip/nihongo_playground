@@ -1,0 +1,961 @@
+[
+  {
+    "lesson": "lesson-2",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-2/saini",
+    "title": "〜際（に）・〜に際して",
+    "meaning_en": "when / on the occasion of (formal)",
+    "point_id": "n2-l2-saini"
+  },
+  {
+    "lesson": "lesson-2",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-2/niatatte",
+    "title": "〜にあたって・〜にあたり",
+    "meaning_en": "when about to / upon (starting)",
+    "point_id": "n2-l2-niatatte"
+  },
+  {
+    "lesson": "lesson-2",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-2/nisakidatte",
+    "title": "〜に先立って・〜に先立ち・〜に先立つN",
+    "meaning_en": "prior to / ahead of",
+    "point_id": "n2-l2-nisakidatte"
+  },
+  {
+    "lesson": "lesson-2",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-2/teirai",
+    "title": "〜て以来・〜てこのかた",
+    "meaning_en": "ever since (and still)",
+    "point_id": "n2-l2-teirai"
+  },
+  {
+    "lesson": "lesson-2",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-2/orini",
+    "title": "〜折（に）・〜折には",
+    "meaning_en": "when / on the occasion (polite)",
+    "point_id": "n2-l2-orini"
+  },
+  {
+    "lesson": "lesson-3",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-3/kanaikanouchini",
+    "title": "〜か〜ないかのうちに",
+    "meaning_en": "the moment ~ (almost the same instant)",
+    "point_id": "n2-l3-kanaikanouchini"
+  },
+  {
+    "lesson": "lesson-3",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-3/tsutsuaru",
+    "title": "〜つつある",
+    "meaning_en": "is in the process of changing (formal)",
+    "point_id": "n2-l3-tsutsuaru"
+  },
+  {
+    "lesson": "lesson-3",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-3/tsutsu",
+    "title": "〜つつ",
+    "meaning_en": "while doing (written ながら)",
+    "point_id": "n2-l3-tsutsu"
+  },
+  {
+    "lesson": "lesson-3",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-3/youtoshiteiru",
+    "title": "〜（よ）うとしている",
+    "meaning_en": "is about to (a change is on the verge)",
+    "point_id": "n2-l3-youtoshiteiru"
+  },
+  {
+    "lesson": "lesson-3",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-3/tauede",
+    "title": "〜た上で・〜上で",
+    "meaning_en": "after (carefully) doing / in doing",
+    "point_id": "n2-l3-tauede"
+  },
+  {
+    "lesson": "lesson-4",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-4/niwatatte",
+    "title": "〜にわたって・〜にわたり・〜にわたる N",
+    "meaning_en": "over the whole extent of (time / space / field)",
+    "point_id": "n2-l4-niwatatte"
+  },
+  {
+    "lesson": "lesson-4",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-4/otsujite",
+    "title": "〜を通じて・〜を通して",
+    "meaning_en": "throughout / through (via)",
+    "point_id": "n2-l4-otsujite"
+  },
+  {
+    "lesson": "lesson-4",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-4/kagiri",
+    "title": "〜限り",
+    "meaning_en": "as long as / as far as (I know)",
+    "point_id": "n2-l4-kagiri"
+  },
+  {
+    "lesson": "lesson-4",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-4/nikagiri",
+    "title": "〜に限り・〜に限って・〜に限らず",
+    "meaning_en": "only (for) / of all… / not only",
+    "point_id": "n2-l4-nikagiri"
+  },
+  {
+    "lesson": "lesson-4",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-4/dake",
+    "title": "〜だけ・〜だけ〜てみる・〜だけあって・〜だけに",
+    "meaning_en": "as much as one can / just as expected of",
+    "point_id": "n2-l4-dake"
+  },
+  {
+    "lesson": "lesson-5",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-5/nominarazu",
+    "title": "〜のみならず",
+    "meaning_en": "not only… (formal)",
+    "point_id": "n2-l5-nominarazu"
+  },
+  {
+    "lesson": "lesson-5",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-5/bakarika",
+    "title": "〜ばかりか",
+    "meaning_en": "not only… but even (surprise)",
+    "point_id": "n2-l5-bakarika"
+  },
+  {
+    "lesson": "lesson-5",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-5/hamotoyori",
+    "title": "〜はもとより",
+    "meaning_en": "of course… and also (formal)",
+    "point_id": "n2-l5-hamotoyori"
+  },
+  {
+    "lesson": "lesson-5",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-5/ueni",
+    "title": "〜上（に）",
+    "meaning_en": "on top of that (same-direction pile-up)",
+    "point_id": "n2-l5-ueni"
+  },
+  {
+    "lesson": "lesson-5",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-5/nikuwaete",
+    "title": "〜に加えて・〜に加え",
+    "meaning_en": "in addition to",
+    "point_id": "n2-l5-nikuwaete"
+  },
+  {
+    "lesson": "lesson-5",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-5/nomi",
+    "title": "〜のみ",
+    "meaning_en": "only (written notice)",
+    "point_id": "n2-l5-nomi"
+  },
+  {
+    "lesson": "lesson-6",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-6/omegutte",
+    "title": "〜をめぐって・〜をめぐる N",
+    "meaning_en": "over / surrounding (dispute, debate)",
+    "point_id": "n2-l6-omegutte"
+  },
+  {
+    "lesson": "lesson-6",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-6/nikaketewa",
+    "title": "〜にかけては",
+    "meaning_en": "when it comes to (X is unbeatable)",
+    "point_id": "n2-l6-nikaketewa"
+  },
+  {
+    "lesson": "lesson-6",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-6/nikotaete",
+    "title": "〜にこたえて・〜にこたえ・〜にこたえる N",
+    "meaning_en": "in response to (expectation, request)",
+    "point_id": "n2-l6-nikotaete"
+  },
+  {
+    "lesson": "lesson-6",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-6/omotoni",
+    "title": "〜をもとに（して）・〜をもとにした N",
+    "meaning_en": "based on (as raw material / source)",
+    "point_id": "n2-l6-omotoni"
+  },
+  {
+    "lesson": "lesson-6",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-6/nimotozuite",
+    "title": "〜に基づいて・〜に基づき・〜に基づく／基づいた N",
+    "meaning_en": "based on (as standard / rule)",
+    "point_id": "n2-l6-nimotozuite"
+  },
+  {
+    "lesson": "lesson-6",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-6/nisotte",
+    "title": "〜に沿って・〜に沿い・〜に沿う／沿った N",
+    "meaning_en": "along / in line with",
+    "point_id": "n2-l6-nisotte"
+  },
+  {
+    "lesson": "lesson-6",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-6/nomotode",
+    "title": "〜のもとで・〜のもとに",
+    "meaning_en": "under (guidance, influence, conditions)",
+    "point_id": "n2-l6-nomotode"
+  },
+  {
+    "lesson": "lesson-6",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-6/okikkakeni",
+    "title": "〜をきっかけに（して）・〜がきっかけで・〜を契機に",
+    "meaning_en": "taking ~ as the trigger / occasion",
+    "point_id": "n2-l6-okikkakeni"
+  },
+  {
+    "lesson": "lesson-6",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-6/nikansuru",
+    "title": "助詞相当語の名詞修飾形（〜に関する N・〜に対する N・〜にとっての N・〜に沿った N・〜に伴う N・〜をめぐる N・〜という／〜との N）",
+    "meaning_en": "how these particle phrases modify a noun",
+    "point_id": "n2-l6-nikansuru"
+  },
+  {
+    "lesson": "lesson-7",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-7/nitomonatte",
+    "title": "〜に伴って・〜に伴い・〜に伴う N",
+    "meaning_en": "along with / accompanying (a change or event)",
+    "point_id": "n2-l7-nitomonatte"
+  },
+  {
+    "lesson": "lesson-7",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-7/shidaida",
+    "title": "〜次第だ・〜次第で（は）・〜次第です",
+    "meaning_en": "depends on / depending on / that is how it came about",
+    "point_id": "n2-l7-shidaida"
+  },
+  {
+    "lesson": "lesson-7",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-7/nioujite",
+    "title": "〜に応じて・〜に応じ・〜に応じた N",
+    "meaning_en": "according to / in proportion to (adjusted to fit)",
+    "point_id": "n2-l7-nioujite"
+  },
+  {
+    "lesson": "lesson-7",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-7/nitsuke",
+    "title": "〜につけ（て）・〜につけ〜につけ",
+    "meaning_en": "whenever (I see/hear) … I feel / whether … or …",
+    "point_id": "n2-l7-nitsuke"
+  },
+  {
+    "lesson": "lesson-7",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-7/nihanshite",
+    "title": "〜に反して・〜に反し・〜に反する／反した N",
+    "meaning_en": "contrary to (an expectation, a rule)",
+    "point_id": "n2-l7-nihanshite"
+  },
+  {
+    "lesson": "lesson-8",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-8/yarayara",
+    "title": "〜やら〜やら",
+    "meaning_en": "A and B and so on (chaotic, overwhelmed)",
+    "point_id": "n2-l8-yarayara"
+  },
+  {
+    "lesson": "lesson-8",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-8/nishironishiro",
+    "title": "〜にしろ〜にしろ・〜にしても〜にしても・〜にせよ〜にせよ",
+    "meaning_en": "whether A or B, the same holds",
+    "point_id": "n2-l8-nishironishiro"
+  },
+  {
+    "lesson": "lesson-8",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-8/nishiro",
+    "title": "〜にしろ・〜にせよ・〜にしても",
+    "meaning_en": "even if / even granting that (formal)",
+    "point_id": "n2-l8-nishiro"
+  },
+  {
+    "lesson": "lesson-8",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-8/danodano",
+    "title": "〜だの〜だの",
+    "meaning_en": "A and B and the like (fed-up tone)",
+    "point_id": "n2-l8-danodano"
+  },
+  {
+    "lesson": "lesson-8",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-8/ntoiun",
+    "title": "N という N",
+    "meaning_en": "every single N, without exception",
+    "point_id": "n2-l8-ntoiun"
+  },
+  {
+    "lesson": "lesson-9",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-9/otowazu",
+    "title": "〜を問わず",
+    "meaning_en": "regardless of (age, nationality, weather)",
+    "point_id": "n2-l9-otowazu"
+  },
+  {
+    "lesson": "lesson-9",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-9/nikakawarazu",
+    "title": "〜にかかわらず・〜にかかわりなく",
+    "meaning_en": "regardless of / irrespective of",
+    "point_id": "n2-l9-nikakawarazu"
+  },
+  {
+    "lesson": "lesson-9",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-9/mokamawazu",
+    "title": "〜もかまわず",
+    "meaning_en": "heedless of / not caring about",
+    "point_id": "n2-l9-mokamawazu"
+  },
+  {
+    "lesson": "lesson-9",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-9/watomokaku",
+    "title": "〜はともかく（として）・〜はさておき",
+    "meaning_en": "setting ~ aside (for now)",
+    "point_id": "n2-l9-watomokaku"
+  },
+  {
+    "lesson": "lesson-9",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-9/wamadashimo",
+    "title": "〜はまだしも",
+    "meaning_en": "N might be acceptable, but…",
+    "point_id": "n2-l9-wamadashimo"
+  },
+  {
+    "lesson": "lesson-9",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-9/nukide",
+    "title": "〜抜きで・〜（は）抜きにして・〜を抜きにしては…ない",
+    "meaning_en": "without / cannot without",
+    "point_id": "n2-l9-nukide"
+  },
+  {
+    "lesson": "lesson-10",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-10/nimokakawarazu",
+    "title": "〜にもかかわらず",
+    "meaning_en": "in spite of / despite",
+    "point_id": "n2-l10-nimokakawarazu"
+  },
+  {
+    "lesson": "lesson-10",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-10/monono",
+    "title": "〜ものの・〜とはいうものの・〜とはいいながら",
+    "meaning_en": "although it is true that… (the expected result did not follow)",
+    "point_id": "n2-l10-monono"
+  },
+  {
+    "lesson": "lesson-10",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-10/tsutsumo",
+    "title": "〜つつ（も）",
+    "meaning_en": "while (knowing / thinking) ~, one still does otherwise",
+    "point_id": "n2-l10-tsutsumo"
+  },
+  {
+    "lesson": "lesson-10",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-10/karatoitte",
+    "title": "〜からといって",
+    "meaning_en": "just because ~, (it doesn't mean)",
+    "point_id": "n2-l10-karatoitte"
+  },
+  {
+    "lesson": "lesson-10",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-10/kuseshite",
+    "title": "〜くせして",
+    "meaning_en": "even though (critical, spoken)",
+    "point_id": "n2-l10-kuseshite"
+  },
+  {
+    "lesson": "lesson-11",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-11/mononara",
+    "title": "〜ものなら・〜もんなら",
+    "meaning_en": "if only one could (but can't)",
+    "point_id": "n2-l11-mononara"
+  },
+  {
+    "lesson": "lesson-11",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-11/youmononara",
+    "title": "〜（よ）うものなら",
+    "meaning_en": "if one dared to ~, (disaster)",
+    "point_id": "n2-l11-youmononara"
+  },
+  {
+    "lesson": "lesson-11",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-11/naikotoniwa",
+    "title": "〜ないことには…ない",
+    "meaning_en": "unless ~, nothing (can happen / is known)",
+    "point_id": "n2-l11-naikotoniwa"
+  },
+  {
+    "lesson": "lesson-11",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-11/tekoso",
+    "title": "〜てこそ・〜ばこそ",
+    "meaning_en": "only by / precisely because",
+    "point_id": "n2-l11-tekoso"
+  },
+  {
+    "lesson": "lesson-11",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-11/youdewa",
+    "title": "〜ようでは・〜ようじゃ",
+    "meaning_en": "if things stay like this, (no good)",
+    "point_id": "n2-l11-youdewa"
+  },
+  {
+    "lesson": "lesson-11",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-11/tonaruto",
+    "title": "〜となると・〜となれば・〜となったら",
+    "meaning_en": "when it comes to / if it turns out that",
+    "point_id": "n2-l11-tonaruto"
+  },
+  {
+    "lesson": "lesson-12",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-12/nitsuki",
+    "title": "〜につき",
+    "meaning_en": "due to (public notice)",
+    "point_id": "n2-l12-nitsuki"
+  },
+  {
+    "lesson": "lesson-12",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-12/kotodashi",
+    "title": "〜ことだし",
+    "meaning_en": "since ~ (among other reasons), let's…",
+    "point_id": "n2-l12-kotodashi"
+  },
+  {
+    "lesson": "lesson-12",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-12/nokotodakara",
+    "title": "〜のことだから",
+    "meaning_en": "knowing N (character), surely…",
+    "point_id": "n2-l12-nokotodakara"
+  },
+  {
+    "lesson": "lesson-12",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-12/karaniwa",
+    "title": "〜からには・〜以上（は）・〜上は",
+    "meaning_en": "now that / since (naturally … should / will)",
+    "point_id": "n2-l12-karaniwa"
+  },
+  {
+    "lesson": "lesson-12",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-12/kotonaku",
+    "title": "〜ことなく",
+    "meaning_en": "without doing (formal ないで)",
+    "point_id": "n2-l12-kotonaku"
+  },
+  {
+    "lesson": "lesson-12",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-12/kaigaatte",
+    "title": "〜かいがあって・〜かいもなく・〜がい",
+    "meaning_en": "worth it / in vain / worth doing",
+    "point_id": "n2-l12-kaigaatte"
+  },
+  {
+    "lesson": "lesson-12",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-12/amari",
+    "title": "〜あまり（に）・あまりの〜に",
+    "meaning_en": "out of excessive ~ (unusual result)",
+    "point_id": "n2-l12-amari"
+  },
+  {
+    "lesson": "lesson-13",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-13/kaneru",
+    "title": "〜かねる／〜かねない",
+    "meaning_en": "cannot (politely) / might well (bad)",
+    "point_id": "n2-l13-kaneru"
+  },
+  {
+    "lesson": "lesson-13",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-13/yoganai",
+    "title": "〜ようがない・〜ようもない",
+    "meaning_en": "there is no way to ~",
+    "point_id": "n2-l13-yoganai"
+  },
+  {
+    "lesson": "lesson-13",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-13/uru",
+    "title": "〜得る／〜得ない",
+    "meaning_en": "can / possible ／ cannot / impossible",
+    "point_id": "n2-l13-uru"
+  },
+  {
+    "lesson": "lesson-13",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-13/kkonai",
+    "title": "〜っこない",
+    "meaning_en": "no way (can) ~ (spoken)",
+    "point_id": "n2-l13-kkonai"
+  },
+  {
+    "lesson": "lesson-13",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-13/dokorodewanai",
+    "title": "〜どころではない・〜どころじゃない",
+    "meaning_en": "this is no time / no situation for ~",
+    "point_id": "n2-l13-dokorodewanai"
+  },
+  {
+    "lesson": "lesson-13",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-13/zaruoenai",
+    "title": "〜ざるを得ない",
+    "meaning_en": "have no choice but to (reluctantly)",
+    "point_id": "n2-l13-zaruoenai"
+  },
+  {
+    "lesson": "lesson-14",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-14/nishitara",
+    "title": "〜にしたら・〜にすれば・〜にしてみれば・〜にしても",
+    "meaning_en": "from N's standpoint (a person)",
+    "point_id": "n2-l14-nishitara"
+  },
+  {
+    "lesson": "lesson-14",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-14/karamiruto",
+    "title": "〜から見ると・〜からいうと・〜からすると",
+    "meaning_en": "judging from / from the viewpoint of",
+    "point_id": "n2-l14-karamiruto"
+  },
+  {
+    "lesson": "lesson-14",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-14/karashite",
+    "title": "〜からして",
+    "meaning_en": "even judging from / starting with",
+    "point_id": "n2-l14-karashite"
+  },
+  {
+    "lesson": "lesson-14",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-14/jou",
+    "title": "〜上（は）・〜上では",
+    "meaning_en": "in terms of / on (paper, theory, law)",
+    "point_id": "n2-l14-jou"
+  },
+  {
+    "lesson": "lesson-14",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-14/tetouzenda",
+    "title": "〜て当然だ・〜のももっともだ・〜も同然だ",
+    "meaning_en": "naturally / reasonably / as good as",
+    "point_id": "n2-l14-tetouzenda"
+  },
+  {
+    "lesson": "lesson-14",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-14/mashida",
+    "title": "〜（ほうが）ましだ",
+    "meaning_en": "better (than the worst) / at least",
+    "point_id": "n2-l14-mashida"
+  },
+  {
+    "lesson": "lesson-15",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-15/ageku",
+    "title": "〜あげく（に）",
+    "meaning_en": "after all that ~, in the end (bad result)",
+    "point_id": "n2-l15-ageku"
+  },
+  {
+    "lesson": "lesson-15",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-15/sueni",
+    "title": "〜末（に）",
+    "meaning_en": "after much ~, finally (a decision / result)",
+    "point_id": "n2-l15-sueni"
+  },
+  {
+    "lesson": "lesson-15",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-15/zujimai",
+    "title": "〜ずじまいだ",
+    "meaning_en": "ended up never doing ~",
+    "point_id": "n2-l15-zujimai"
+  },
+  {
+    "lesson": "lesson-15",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-15/takotonisuru",
+    "title": "〜（た）ことにする",
+    "meaning_en": "pretend it (didn't) happen; treat it as",
+    "point_id": "n2-l15-takotonisuru"
+  },
+  {
+    "lesson": "lesson-15",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-15/tsumoride",
+    "title": "〜つもりで",
+    "meaning_en": "with the mindset of (though not really)",
+    "point_id": "n2-l15-tsumoride"
+  },
+  {
+    "lesson": "lesson-16",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-16/toshitenai",
+    "title": "〜として〜ない",
+    "meaning_en": "not a single ~ / not even one ~",
+    "point_id": "n2-l16-toshitenai"
+  },
+  {
+    "lesson": "lesson-16",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-16/tedemo",
+    "title": "〜てでも",
+    "meaning_en": "even if it means ~ing / by any means",
+    "point_id": "n2-l16-tedemo"
+  },
+  {
+    "lesson": "lesson-16",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-16/madeshite",
+    "title": "〜まで・〜までして・〜てまで",
+    "meaning_en": "going so far as to ~",
+    "point_id": "n2-l16-madeshite"
+  },
+  {
+    "lesson": "lesson-16",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-16/monoka",
+    "title": "〜ものか・〜もんか・〜ものですか",
+    "meaning_en": "never! / as if!",
+    "point_id": "n2-l16-monoka"
+  },
+  {
+    "lesson": "lesson-16",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-16/toiumonodewanai",
+    "title": "〜というものではない・〜というものでもない",
+    "meaning_en": "it's not (necessarily) the case that…",
+    "point_id": "n2-l16-toiumonodewanai"
+  },
+  {
+    "lesson": "lesson-16",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-16/nonannotte",
+    "title": "〜のなんのって",
+    "meaning_en": "so ~ I can't even describe it",
+    "point_id": "n2-l16-nonannotte"
+  },
+  {
+    "lesson": "lesson-16",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-16/ttara",
+    "title": "〜ったら・〜ってば",
+    "meaning_en": "honestly, (name)! (exasperated address)",
+    "point_id": "n2-l16-ttara"
+  },
+  {
+    "lesson": "lesson-17",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-17/tomieru",
+    "title": "〜とみえる・〜とみえて",
+    "meaning_en": "it appears that (judging from evidence)",
+    "point_id": "n2-l17-tomieru"
+  },
+  {
+    "lesson": "lesson-17",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-17/osoregaaru",
+    "title": "〜おそれがある",
+    "meaning_en": "there is a risk that ~ (something bad)",
+    "point_id": "n2-l17-osoregaaru"
+  },
+  {
+    "lesson": "lesson-17",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-17/mai",
+    "title": "〜まい・〜（よ）うか〜まいか・〜ではあるまいか",
+    "meaning_en": "probably not / will not / whether or not / isn't it perhaps",
+    "point_id": "n2-l17-mai"
+  },
+  {
+    "lesson": "lesson-17",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-17/nikimatteiru",
+    "title": "〜にきまっている（・〜に相違ない）",
+    "meaning_en": "is definitely / bound to (spoken)",
+    "point_id": "n2-l17-nikimatteiru"
+  },
+  {
+    "lesson": "lesson-17",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-17/kanoyouda",
+    "title": "〜かのようだ・〜かのように・〜かのような N",
+    "meaning_en": "as if it were (though it isn't)",
+    "point_id": "n2-l17-kanoyouda"
+  },
+  {
+    "lesson": "lesson-17",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-17/toka",
+    "title": "〜とか（言っていた）［伝聞］",
+    "meaning_en": "I hear that ~ (vague)",
+    "point_id": "n2-l17-toka"
+  },
+  {
+    "lesson": "lesson-18",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-18/monoda",
+    "title": "〜ものだ（本来・忠告・回想・深い感動・願望）",
+    "meaning_en": "it is natural / should / used to / how… / really want",
+    "point_id": "n2-l18-monoda"
+  },
+  {
+    "lesson": "lesson-18",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-18/toiumonoda",
+    "title": "〜というものだ",
+    "meaning_en": "that is exactly what ~ is (common sense)",
+    "point_id": "n2-l18-toiumonoda"
+  },
+  {
+    "lesson": "lesson-18",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-18/nisuginai",
+    "title": "〜にすぎない",
+    "meaning_en": "is nothing more than / merely",
+    "point_id": "n2-l18-nisuginai"
+  },
+  {
+    "lesson": "lesson-18",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-18/nihokanaranai",
+    "title": "〜にほかならない",
+    "meaning_en": "is nothing other than / precisely",
+    "point_id": "n2-l18-nihokanaranai"
+  },
+  {
+    "lesson": "lesson-18",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-18/nikoshitakotowanai",
+    "title": "〜に越したことはない",
+    "meaning_en": "nothing beats ~ / it's best to",
+    "point_id": "n2-l18-nikoshitakotowanai"
+  },
+  {
+    "lesson": "lesson-18",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-18/yorihokanai",
+    "title": "〜よりほか（は）ない・〜よりしかたがない",
+    "meaning_en": "there is no other way but to",
+    "point_id": "n2-l18-yorihokanai"
+  },
+  {
+    "lesson": "lesson-19",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-19/youdehanaika",
+    "title": "〜（よ）うではないか・〜（よ）うじゃないか",
+    "meaning_en": "let us ~ (formal exhortation)",
+    "point_id": "n2-l19-youdehanaika"
+  },
+  {
+    "lesson": "lesson-19",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-19/naimonoka",
+    "title": "〜ないもの（だろう）か・〜ないものか",
+    "meaning_en": "isn't there some way to ~? (wish)",
+    "point_id": "n2-l19-naimonoka"
+  },
+  {
+    "lesson": "lesson-19",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-19/monogaaru",
+    "title": "〜ものがある",
+    "meaning_en": "there is something ~ about it",
+    "point_id": "n2-l19-monogaaru"
+  },
+  {
+    "lesson": "lesson-19",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-19/kotoda",
+    "title": "〜ことだ［感動］・〜ことだろう・〜ことか",
+    "meaning_en": "how ~! (exclamation)",
+    "point_id": "n2-l19-kotoda"
+  },
+  {
+    "lesson": "lesson-19",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-19/towa",
+    "title": "〜とは",
+    "meaning_en": "what ~ means is… (definition)",
+    "point_id": "n2-l19-towa"
+  },
+  {
+    "lesson": "lesson-19",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-19/toittara",
+    "title": "〜といったら",
+    "meaning_en": "the ~ of it! (extraordinary degree)",
+    "point_id": "n2-l19-toittara"
+  },
+  {
+    "lesson": "lesson-20",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-20/teshikataganai",
+    "title": "〜てしかたがない・〜てしょうがない・〜てたまらない・〜てかなわない",
+    "meaning_en": "unbearably ~ / can't stand ~ (feeling, sensation)",
+    "point_id": "n2-l20-teshikataganai"
+  },
+  {
+    "lesson": "lesson-20",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-20/tenaranai",
+    "title": "〜てならない",
+    "meaning_en": "can't help feeling ~ (spontaneous emotion)",
+    "point_id": "n2-l20-tenaranai"
+  },
+  {
+    "lesson": "lesson-20",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-20/naidewairarenai",
+    "title": "〜ないではいられない・〜ずにはいられない",
+    "meaning_en": "cannot help doing ~",
+    "point_id": "n2-l20-naidewairarenai"
+  },
+  {
+    "lesson": "lesson-20",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-20/tewairarenai",
+    "title": "〜てはいられない・〜ちゃいられない・〜てばかりはいられない",
+    "meaning_en": "can't keep on ~ing / can't afford to ~",
+    "point_id": "n2-l20-tewairarenai"
+  },
+  {
+    "lesson": "lesson-20",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-20/nebanaranai",
+    "title": "〜ねばならない・〜てはならない",
+    "meaning_en": "must / must not (formal, written)",
+    "point_id": "n2-l20-nebanaranai"
+  },
+  {
+    "lesson": "lesson-21",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-21/ge",
+    "title": "〜げ",
+    "meaning_en": "looking ~ (visible emotion)",
+    "point_id": "n2-l21-ge"
+  },
+  {
+    "lesson": "lesson-21",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-21/nuku",
+    "title": "〜抜く",
+    "meaning_en": "do ~ through to the end / thoroughly",
+    "point_id": "n2-l21-nuku"
+  },
+  {
+    "lesson": "lesson-21",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-21/buru",
+    "title": "〜ぶる・〜ぶった N",
+    "meaning_en": "act as if / put on airs of",
+    "point_id": "n2-l21-buru"
+  },
+  {
+    "lesson": "lesson-22",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-22/sorenanoni",
+    "title": "それなのに・それでも・それなら・それが",
+    "meaning_en": "and yet / even so / in that case / but actually",
+    "point_id": "n2-l22-sorenanoni"
+  },
+  {
+    "lesson": "lesson-22",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-22/souieba",
+    "title": "そういえば・それはそうと・さて・なお",
+    "meaning_en": "now that you mention it / by the way / now then / note that",
+    "point_id": "n2-l22-souieba"
+  },
+  {
+    "lesson": "lesson-22",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-22/toiukotowa",
+    "title": "ということは・というのは・要するに",
+    "meaning_en": "that means / the reason is / in short",
+    "point_id": "n2-l22-toiukotowa"
+  },
+  {
+    "lesson": "lesson-22",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-22/mottomo",
+    "title": "もっとも・ちなみに・おまけに",
+    "meaning_en": "though / incidentally / on top of that",
+    "point_id": "n2-l22-mottomo"
+  },
+  {
+    "lesson": "lesson-22",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-22/aruiwa",
+    "title": "あるいは・すなわち・したがって・だが",
+    "meaning_en": "or / namely / therefore / but (written)",
+    "point_id": "n2-l22-aruiwa"
+  },
+  {
+    "lesson": "lesson-23",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-23/tokubetsu-keigo",
+    "title": "特別な敬語の言葉（お見えになる・承る・拝借する…）",
+    "meaning_en": "special honorific / humble vocabulary (business)",
+    "point_id": "n2-l23-tokubetsu-keigo"
+  },
+  {
+    "lesson": "lesson-23",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-23/negaimasu",
+    "title": "お／ご〜願います・願えますでしょうか",
+    "meaning_en": "could you please ~ (very polite request)",
+    "point_id": "n2-l23-negaimasu"
+  },
+  {
+    "lesson": "lesson-23",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-23/moushiageru",
+    "title": "お／ご〜申し上げる",
+    "meaning_en": "I (humbly) do ~ for you",
+    "point_id": "n2-l23-moushiageru"
+  },
+  {
+    "lesson": "lesson-23",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-23/rebatoomoimasu",
+    "title": "〜（いただけ）ればと思います",
+    "meaning_en": "I would appreciate it if… / I hope…",
+    "point_id": "n2-l23-rebatoomoimasu"
+  },
+  {
+    "lesson": "lesson-23",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-23/nitsukimashite",
+    "title": "〜につきまして・〜にとりまして・〜におきまして・〜としまして／といたしまして・〜に関しまして",
+    "meaning_en": "polite 〜まして forms of について・にとって・において・として・に関して",
+    "point_id": "n2-l23-nitsukimashite"
+  },
+  {
+    "lesson": "lesson-24",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-24/nite",
+    "title": "〜にて",
+    "meaning_en": "at / by (very formal で)",
+    "point_id": "n2-l24-nite"
+  },
+  {
+    "lesson": "lesson-24",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-24/otayorini",
+    "title": "〜を頼りに（して）",
+    "meaning_en": "relying on / with the help of",
+    "point_id": "n2-l24-otayorini"
+  },
+  {
+    "lesson": "lesson-24",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-24/nikakawatte",
+    "title": "〜にかかわって・〜にかかわる N",
+    "meaning_en": "involved in / concerning / affecting (serious)",
+    "point_id": "n2-l24-nikakawatte"
+  },
+  {
+    "lesson": "lesson-25",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-25/fukushibunmatsu",
+    "title": "副詞と文末の呼応",
+    "meaning_en": "adverbs that fix the sentence ending",
+    "point_id": "n2-l25-fukushibunmatsu"
+  },
+  {
+    "lesson": "lesson-25",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-25/kimattabunmatsu",
+    "title": "決まった文末をとる表現",
+    "meaning_en": "expressions that fix the sentence ending",
+    "point_id": "n2-l25-kimattabunmatsu"
+  },
+  {
+    "lesson": "lesson-25",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-25/setsuzokuhyougen",
+    "title": "接続表現の整理",
+    "meaning_en": "connectives by job",
+    "point_id": "n2-l25-setsuzokuhyougen"
+  },
+  {
+    "lesson": "lesson-25",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-25/kataihyougen",
+    "title": "硬い表現 ↔ 日常表現",
+    "meaning_en": "formal ↔ everyday equivalents",
+    "point_id": "n2-l25-kataihyougen"
+  },
+  {
+    "lesson": "lesson-25",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-25/takiri",
+    "title": "〜たきり（…ない）・〜っきり",
+    "meaning_en": "nothing since ~ / stuck to ~ / only ~",
+    "point_id": "n2-l25-takiri"
+  },
+  {
+    "lesson": "lesson-25",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-25/monodakara",
+    "title": "〜ものだから・〜もので・〜ものですから",
+    "meaning_en": "because ~ (polite excuse)",
+    "point_id": "n2-l25-monodakara"
+  },
+  {
+    "lesson": "lesson-25",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-25/nitaishite",
+    "title": "〜に対して［対比］・〜に対し・〜のに対して",
+    "meaning_en": "whereas / in contrast to",
+    "point_id": "n2-l25-nitaishite"
+  },
+  {
+    "lesson": "lesson-25",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-25/uchini",
+    "title": "〜うちに［変化］",
+    "meaning_en": "while doing ~, a change came about",
+    "point_id": "n2-l25-uchini"
+  },
+  {
+    "lesson": "lesson-25",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-25/toieba",
+    "title": "〜といえば［譲歩］・〜ことは〜が",
+    "meaning_en": "granted… but",
+    "point_id": "n2-l25-toieba"
+  },
+  {
+    "lesson": "lesson-25",
+    "url": "https://growwithkitty.com/jlpt/n2/grammar/lesson-25/nagara",
+    "title": "〜ながら［前置き］（残念ながら・失礼ながら・勝手ながら・及ばずながら）",
+    "meaning_en": "regrettably / with respect / if I may (fixed openers)",
+    "point_id": "n2-l25-nagara"
+  }
+]

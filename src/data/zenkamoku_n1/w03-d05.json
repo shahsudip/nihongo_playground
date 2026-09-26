@@ -16,133 +16,133 @@
       "questions": [
         {
           "number": 1,
-          "stem": "どんなに辛いことが（　　）、決して諦めてはいけない。",
+          "stem": "<ruby>前田<rt>まえだ</rt></ruby>「先輩、昇進おめでとうございます。」<br/><ruby>小池<rt>こいけ</rt></ruby>「ありがとう。まあ、昇進した（　　）、給料はあまり変わらないんだけどね。」",
           "options": [
-            "1. あろうと",
-            "2. あろうが",
-            "3. あろうとあるまいと",
-            "4. あろうとも"
+            "1. からには",
+            "2. とあれば",
+            "3. だけあって",
+            "4. とはいえ"
           ],
           "correct": 4,
-          "correctOption": "4. あろうとも",
-          "explanation": "<b>【正解】4. あろうとも</b><br/>～とはいうものの＝～は事実だが、しかし although ～"
+          "correctOption": "4. とはいえ",
+          "explanation": "<b>【正解】4. とはいえ</b><br/><b>～とはいうものの／～とはいえ</b>：～は事実だが、しかし although ～"
         },
         {
           "number": 2,
-          "stem": "親として、子どもの将来を心配しない（　　）はない。",
+          "stem": "私の地元のお菓子を送らせていただきました。（　　）いただければ幸いです。",
           "options": [
-            "1. わけ",
-            "2. はず",
-            "3. こと",
-            "4. もの"
+            "1. お気になさって",
+            "2. お気に召して",
+            "3. 頂戴して",
+            "4. お目にかかって"
           ],
           "correct": 2,
-          "correctOption": "2. はず",
-          "explanation": "<b>【正解】2. はず</b><br/><ruby>お気<rt>き</rt></ruby><ruby>に召<rt>め</rt></ruby>す：「気に入る」の尊敬語 honorific form of 気に入る"
+          "correctOption": "2. お気に召して",
+          "explanation": "<b>【正解】2. お気に召して</b><br/><b>お気に召す</b>：「気に入る」の尊敬語 honorific form of 気に入る"
         },
         {
           "number": 3,
-          "stem": "新しい事業を立ち上げる（　　）、十分な資金を準備した。",
+          "stem": "母「学生は気楽でいいよね。毎日遊んでいられて。」<br/>娘「そんなことないよ。学生は学生（　　）大変なんだから。」",
           "options": [
-            "1. に際して",
-            "2. に先立って",
-            "3. にあたって",
-            "4. に応じて"
+            "1. にして",
+            "2. なりに",
+            "3. に則って",
+            "4. ならでは"
           ],
           "correct": 2,
-          "correctOption": "2. に先立って",
-          "explanation": "<b>【正解】2. に先立って</b><br/>～なりに：物事の欠点や不足を認めた上で、～の性質や<br/>状態で考えれば十分な程度であることを表す。<br/>reasonable/sufficient for ～"
+          "correctOption": "2. なりに",
+          "explanation": "<b>【正解】2. なりに</b><br/><b>～なりに</b>：物事の欠点や不足を認めた上で、～の性質や状態で考えれば十分な程度であることを表す。reasonable/sufficient for ～"
         },
         {
           "number": 4,
-          "stem": "彼の実績から（　　）、今回の昇進は誰もが納得するものだ。",
+          "stem": "そのカメラマンは周囲の反対を（　　）、紛争中の危険な地域に向かった。",
           "options": [
-            "1. 見て",
-            "2. 言えば",
-            "3. すれば",
-            "4. とって"
+            "1. よそに",
+            "2. めぐって",
+            "3. もとに",
+            "4. 機に"
           ],
           "correct": 1,
-          "correctOption": "1. 見て",
-          "explanation": "<b>【正解】1. 見て</b><br/>～をよそに＝～を無視して ～を気にしないで ～を恐<br/>れないで ignore ～; without thinking about ～<br/>※相手を非難する時に使うことが多い。Often used to criticize<br/>the person being described."
+          "correctOption": "1. よそに",
+          "explanation": "<b>【正解】1. よそに</b><br/><b>～をよそに</b>：～を無視して ～を気にしないで ～を恐れないで ignore ～; without thinking about ～<br/>※相手を非難する時に使うことが多い。Often used to criticize the person being described."
         },
         {
           "number": 5,
-          "stem": "厳しい環境（　　）、彼女は前向きに努力を続けた。",
+          "stem": "（　　）かれ（　　）かれ、人は必ず死ぬのだから、後悔のない人生を送りたい。",
           "options": [
-            "1. にあって",
-            "2. に即して",
-            "3. を兼ねて",
-            "4. にもかかわらず"
+            "1. 遅い／早い",
+            "2. 遅く／早く",
+            "3. 遅くな／早くな",
+            "4. 遅／早"
           ],
           "correct": 4,
-          "correctOption": "4. にもかかわらず",
-          "explanation": "<b>【正解】4. にもかかわらず</b><br/>～かれ…かれ＝～でも…でも、どちらの場合でも<br/>(regardless of) whether ～ or …<br/>※～と…には反対の意味の言葉が入る。程度に差はあっ<br/>ても、どちらでも変わらないことを表す。<br/>The ～ or … parts take words with the opposite meaning. This pattern<br/>expresses that though a certain condition may vary in degree, the result is<br/>always the same."
+          "correctOption": "4. 遅／早",
+          "explanation": "<b>【正解】4. 遅／早</b><br/><b>～かれ…かれ</b>：～でも…でも、どちらの場合でも (regardless of) whether ～ or …<br/>※～と…には反対の意味の言葉が入る。程度に差はあっても、どちらでも変わらないことを表す。"
         },
         {
           "number": 6,
-          "stem": "今回の成功は、関係各位のご支援（　　）成し得なかったものです。",
+          "stem": "試験に合格できたので、（　　）かたがたお世話になった先生に手紙を書くことにした。",
           "options": [
-            "1. に際して",
-            "2. を皮切りに",
-            "3. なくしては",
-            "4. に引き換え"
+            "1. 報告する",
+            "2. 報告し",
+            "3. 報告",
+            "4. 報告の"
           ],
           "correct": 3,
-          "correctOption": "3. なくしては",
-          "explanation": "<b>【正解】3. なくしては</b><br/>～かたがた＝～を兼ねて ～のついでに also as ～; while ～"
+          "correctOption": "3. 報告",
+          "explanation": "<b>【正解】3. 報告</b><br/><b>～かたがた</b>：～を兼ねて ～のついでに also as ～; while ～"
         },
         {
           "number": 7,
-          "stem": "長年の研究が（　　）、ついに画期的な技術が開発された。",
+          "stem": "まさか自分が有名な女優と結婚することになるなんて、想像（　　）。まるで夢のようだ。",
           "options": [
-            "1. 実り",
-            "2. 実るにつれて",
-            "3. 実るがゆえに",
-            "4. 実を結び"
+            "1. するべからず",
+            "2. しないではすまなかった",
+            "3. してはかなわない",
+            "4. だにしなかった"
           ],
           "correct": 4,
-          "correctOption": "4. 実を結び",
-          "explanation": "<b>【正解】4. 実を結び</b><br/>～だにしない＝全く～しない not ～ at all<br/>※～には「想像」「予想」「微動」など限られた言葉が<br/>入る。The ～ part takes only a limited range of expressions, such as<br/>想像, 予想, or 微動."
+          "correctOption": "4. だにしなかった",
+          "explanation": "<b>【正解】4. だにしなかった</b><br/><b>～だにしない</b>：全く～しない not ～ at all<br/>※～には「想像」「予想」「微動」など限られた言葉が入る。"
         },
         {
           "number": 8,
-          "stem": "法律（　　）公正な運営を行うことが基本である。",
+          "stem": "<ruby>愛知県<rt>あいちけん</rt></ruby><ruby>豊田市<rt>とよたし</rt></ruby>の「<ruby>豊田<rt>とよた</rt></ruby>」という名称は、市内にトヨタ自動車の本社があることに（　　）。",
           "options": [
-            "1. を兼ねて",
-            "2. に引き換え",
-            "3. に則って",
-            "4. を皮切りに"
+            "1. まつわる",
+            "2. ともなう",
+            "3. 由来する",
+            "4. 起因する"
           ],
           "correct": 3,
-          "correctOption": "3. に則って",
-          "explanation": "<b>【正解】3. に則って</b><br/><ruby>～に由<rt>ゆ</rt></ruby><ruby>来<rt>らい</rt></ruby>する＝～をもとにしている derives from ～<br/>※物事が何をもとにして起こったのか、どのように始ま<br/>ったかを説明する。Indicates the origin or derivation of something."
+          "correctOption": "3. 由来する",
+          "explanation": "<b>【正解】3. 由来する</b><br/><b>～に由来する</b>：～をもとにしている derives from ～<br/>※物事が何をもとにして起こったのか、どのように始まったかを説明する。"
         },
         {
           "number": 9,
-          "stem": "世界平和への祈りを（　　）やまない。",
+          "stem": "今のあなたがＮ１に合格（　　）はっきりとは言えないが、努力次第では夢ではないと思う。",
           "options": [
-            "1. 捧げて",
-            "2. 込めて",
-            "3. 願って",
-            "4. 祈って"
+            "1. できるか否か",
+            "2. できるや否や",
+            "3. しようがしまいが",
+            "4. しようかしまいか"
           ],
           "correct": 1,
-          "correctOption": "1. 捧げて",
-          "explanation": "<b>【正解】1. 捧げて</b><br/><ruby>～か否<rt>いな</rt></ruby>か＝～かどうか whether or not ～"
+          "correctOption": "1. できるか否か",
+          "explanation": "<b>【正解】1. できるか否か</b><br/><b>～か否か</b>：～かどうか whether or not ～"
         },
         {
           "number": 10,
-          "stem": "社会のニーズに（　　）新しいサービスを提供する。",
+          "stem": "家族のためにも、生命保険に（　　）が、保険料が家計を圧迫している場合は見直しが必要だ。",
           "options": [
-            "1. 即した",
-            "2. 即して",
-            "3. 即する",
-            "4. 即したうえで"
+            "1. 入っているに越したことはない",
+            "2. 入るといったらたい",
+            "3. 入っていることはない",
+            "4. 入るおそれがある"
           ],
           "correct": 1,
-          "correctOption": "1. 即した",
-          "explanation": "<b>【正解】1. 即した</b><br/><ruby>～に越<rt>こ</rt></ruby>したことはない＝できれば～が一番いい ～が理<br/>想的だ nothing better than ～<br/><ruby>◆文の組<rt>ぶん</rt></ruby><ruby>み立<rt>た</rt></ruby>てSentence composition(p.45)"
+          "correctOption": "1. 入っているに越したことはない",
+          "explanation": "<b>【正解】1. 入っているに越したことはない</b><br/><b>～に越したことはない</b>：できれば～が一番いい ～が理想的だ nothing better than ～"
         }
       ]
     },
@@ -153,104 +153,69 @@
       "instruction": "次の文の　★　に入る最もよいものを、１・２・３・４から一つ選びなさい。",
       "questions": [
         {
-          "number": 11,
-          "stem": "長年の夢を＿＿＿ ＿＿＿ <u>　★　</u> ＿＿＿言えない。",
+          "number": 1,
+          "stem": "テレビの討論番組に出演した<ruby>平野<rt>ひらの</rt></ruby>氏は、＿＿＿ ＿＿＿ <u>　★　</u> ＿＿＿をしたことで辞任に追い込まれてしまった。",
           "options": [
-            "1. 叶えることができ",
-            "2. 喜びは",
-            "3. 言葉では",
-            "4. 今の私の"
+            "1. ともあろう",
+            "2. 差別的な発言",
+            "3. 政治家",
+            "4. 人が言ってはいけない"
           ],
           "correct": 4,
-          "correctOption": "4. 今の私の",
-          "starPosition": 3,
-          "correctOrder": [
-            1,
-            4,
-            2,
-            3
-          ],
-          "explanation": "<b>【正解】4. 今の私の</b><br/>平野氏は 政治家 ともあろう 人が言ってはいけない<br/>差別的な発言 をしたことで辞任に追い込まれてしまっ<br/>た。<br/>～ともあろう…が＝～のような素晴らしい…がfor … as<br/>great as ～<br/>※話し手が高く評価している～が、ふさわしくない行動<br/>をしたときに使う。話し手の非難の気持ちを表す。<br/>Expresses the speaker’s criticism that the subject mentioned in ～ is in a<br/>respectable position but did something inappropriate for someone in that<br/>position."
+          "correctOption": "4. 人が言ってはいけない",
+          "explanation": "<b>【正解】4. 人が言ってはいけない</b><br/>【文の並び替え】平野氏は政治家（３）ともあろう（１）<u>人が言ってはいけない（４）</u>差別的な発言（２）をしたことで辞任に追い込まれてしまった。<br/><b>～ともあろう…が</b>：～のような素晴らしい…が for … as great as ～<br/>※話し手が高く評価している～が、ふさわしくない行動をしたときに使う。話し手の非難の気持ちを表す。"
         },
         {
-          "number": 12,
-          "stem": "どんなに困難な道＿＿＿ ＿＿＿ <u>　★　</u> ＿＿＿進んでいきたい。",
+          "number": 2,
+          "stem": "私は＿＿＿ <u>　★　</u> ＿＿＿ ＿＿＿歌やダンスのレッスンを受けるなど、日々努力している。",
           "options": [
-            "1. であろうとも",
-            "2. 強い信念を持って",
-            "3. 一歩一歩",
-            "4. 諦めずに"
+            "1. 歌手になる",
+            "2. 実現するべく",
+            "3. という",
+            "4. 幼少期からの夢を"
           ],
           "correct": 3,
-          "correctOption": "3. 一歩一歩",
-          "starPosition": 3,
-          "correctOrder": [
-            1,
-            4,
-            3,
-            2
-          ],
-          "explanation": "<b>【正解】3. 一歩一歩</b><br/>歌手になる という 幼少期からの夢を 実現するべく<br/>歌やダンスのレッスンを受けるなど、日々努力してい<br/>る。<br/>～べく＝～するために in order to ～"
+          "correctOption": "3. という",
+          "explanation": "<b>【正解】3. という</b><br/>【文の並び替え】私は歌手になる（１）<u>という（３）</u>幼少期からの夢を（４）実現するべく（２）歌やダンスのレッスンを受けるなど、日々努力している。<br/><b>～べく</b>：～するために in order to ～"
         },
         {
-          "number": 13,
-          "stem": "彼のような情熱的な人材を＿＿＿ ＿＿＿ <u>　★　</u> ＿＿＿惜しい。",
+          "number": 3,
+          "stem": "来月、大阪へ転勤することになった。私の＿＿＿ ＿＿＿ <u>　★　</u> ＿＿＿と考えていたので、後任として推薦することにした。",
           "options": [
-            "1. 失うのは",
-            "2. 会社にとって",
-            "3. あまりにも",
-            "4. 大きな損失であり"
+            "1. <ruby>森山<rt>もりやま</rt></ruby>さんを",
+            "2. 任せられるのは",
+            "3. 大事な顧客を",
+            "4. おいてほかにいない"
           ],
           "correct": 1,
-          "correctOption": "1. 失うのは",
-          "starPosition": 3,
-          "correctOrder": [
-            2,
-            4,
-            1,
-            3
-          ],
-          "explanation": "<b>【正解】1. 失うのは</b><br/>私の 大事な顧客を 任せられるのは 森山さんを<br/>おいてほかにいない と考えていた<br/>～をおいて…ない＝～以外に…ないno … other than ～<br/>※話者が～を高く評価していて、他に代わるものがない<br/>と言いたいときに使う。Used to express that person or thing<br/>mentioned in ～ is of unparalleled ability or quality."
+          "correctOption": "1. 森山さんを",
+          "explanation": "<b>【正解】1. 森山さんを</b><br/>【文の並び替え】私の大事な顧客を（３）任せられるのは（２）<u>森山さんを（１）</u>おいてほかにいない（４）と考えていたので、後任として推薦することにした。<br/><b>～をおいて…ない</b>：～以外に…ない no … other than ～<br/>※話者が～を高く評価していて、他に代わるものがないと言いたいときに使う。"
         },
         {
-          "number": 14,
-          "stem": "環境保全に向けた＿＿＿ ＿＿＿ <u>　★　</u> ＿＿＿求められている。",
+          "number": 4,
+          "stem": "今さら＿＿＿ <u>　★　</u> ＿＿＿ ＿＿＿ことを今後に生かせばいいのである。",
           "options": [
-            "1. 取り組みが",
-            "2. 一人ひとりの",
-            "3. 今まさに",
-            "4. 意識改革とともに"
+            "1. ものの",
+            "2. 結果が変わることはない",
+            "3. 失敗から学べる",
+            "4. 悔やんだところで"
           ],
           "correct": 2,
-          "correctOption": "2. 一人ひとりの",
-          "starPosition": 3,
-          "correctOrder": [
-            4,
-            2,
-            1,
-            3
-          ],
-          "explanation": "<b>【正解】2. 一人ひとりの</b><br/>今さら 悔やんだところで 結果が変わることはない<br/>ものの 失敗から学べる ことを今後に生かせばいいので<br/>ある。<br/>～ものの＝～けれどもthough ～"
+          "correctOption": "2. 結果が変わることはない",
+          "explanation": "<b>【正解】2. 結果が変わることはない</b><br/>【文の並び替え】今さら悔やんだところで（４）<u>結果が変わることはない（２）</u>ものの（１）失敗から学べる（３）ことを今後に生かせばいいのである。<br/><b>～ものの</b>：～けれども though ～"
         },
         {
-          "number": 15,
-          "stem": "彼がこれほどまでに＿＿＿ ＿＿＿ <u>　★　</u> ＿＿＿思わなかった。",
+          "number": 5,
+          "stem": "街を裸で歩いていた男が、駆けつけた警察官に逮捕された。その際、彼は自分は何もしないでと叫んでいたそうだが、言う＿＿＿ <u>　★　</u> ＿＿＿ ＿＿＿は犯罪である。",
           "options": [
-            "1. 成長するとは",
-            "2. 周囲の誰もが",
-            "3. 当初は",
-            "4. 予想すらしていなかった"
+            "1. 裸で",
+            "2. 街を歩く",
+            "3. までもなく",
+            "4. こと"
           ],
           "correct": 1,
-          "correctOption": "1. 成長するとは",
-          "starPosition": 3,
-          "correctOrder": [
-            3,
-            2,
-            1,
-            4
-          ],
-          "explanation": "<b>【正解】1. 成長するとは</b><br/>言う までもなく 裸で 街を歩く こと は犯罪である。<br/>～までもない＝わざわざ～する必要はない needless to ～;<br/>no point in ～<br/>※「言うまでもない」は慣用句的な表現で、「言わなく<br/>ても分かるぐらい当然のことだ」という意味で使う。言う<br/>までもない is an idiom that means “needless to say.”"
+          "correctOption": "1. 裸で",
+          "explanation": "<b>【正解】1. 裸で</b><br/>【文の並び替え】言うまでもなく（３）<u>裸で（１）</u>街を歩く（２）こと（４）は犯罪である。<br/><b>～までもない</b>：わざわざ～する必要はない needless to ～; no point in ～<br/>※「言うまでもない」は慣用句的な表現で、「言わなくても分かるぐらい当然のことだ」という意味で使う。"
         }
       ]
     }

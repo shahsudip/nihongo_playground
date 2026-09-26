@@ -4,9 +4,9 @@
 
 These rules are permanently active for all book extractions (Shin Kanzen Master, Speed Master N3/N2/N1, Power Drill, etc.):
 
-### 1. Mandatory Visual-First Inspection (NEVER do blind text OCR)
-Before writing or generating any JSON or passage text:
-- **Inspect the high-resolution scanned page first**.
+### 1. Mandatory Visual-First Inspection & Zero-Assumption Rule (NEVER ASSUME BEFORE DOING IT)
+- **NEVER assume book structure, section counts, question layouts, or answer mappings before inspecting the raw physical page.**
+- **Inspect the high-resolution scanned page first** for every single chapter.
 - **Classify the visual archetype**:
   1. *Lined Stationery / Letter* -> Must use `.speed-master-lined-paper` with `.speed-master-ruled-row`.
   2. *Promotional Flyer / Pamphlet / Menu* -> **NEVER** use plain HTML tables. Crop edge-cleaned HD visual assets and wrap in `.speed-master-flyer-card`.
@@ -40,7 +40,13 @@ When working on parallel series books (e.g. Zenkamoku N2 vs Zenkamoku N3):
 - **NO hardcoded `bg-white`** inside passage JSON HTML (breaks dark mode and creates stark bright cards). Use theme-adaptive classes (`.speed-master-lined-paper`, `.speed-master-flyer-card`, or `border border-gray-400 dark:border-gray-600 bg-amber-50/20 dark:bg-slate-900/60`).
 - **NO unhandled multi-line HTML in `whitespace-pre-line` containers**.
 
-### 7. Associated Rule Files
+### 7. End-to-End Extraction Integrity & Anti-Corruption Invariant (Learned Invariant)
+- **NEVER Decouple Questions & Explanations Blindly**: When extracting questions from the main book and explanations from the Kaisetsu booklet, always verify that the target tested word / stem keyword is explicitly referenced in the corresponding explanation before committing JSON.
+- **Cross-Day Stem Uniqueness Enforcement**: NEVER clone template JSON files across days without completely replacing all question stems. Run cross-day duplicate detection scripts across all chapter JSONs.
+- **Level-Specific Syllabus Validation**: NEVER assume different JLPT levels share identical section counts (e.g., Zenkamoku N1 has 2 sections per day in W1, whereas N2/N3 have 3). Always inspect physical page headers and table of contents first.
+- **Mandatory Guardian Script Execution**: Every newly digitized or updated chapter MUST pass the automated audit script (checking 4 options, balanced tags, matching `correctOption`, and non-empty explanations) before presenting work.
+
+### 8. Associated Rule Files
 - Detailed standards: `.agents/rules/dokkai_extraction_standards.md`
 - UI Verification: `.agents/rules/ui_verification_rule.md`
 - Engineering standards: `.agents/rules/pro_developer_standards.md`

@@ -5,8 +5,8 @@
   "day": 1,
   "weekTitle": "第1週",
   "dayTitle": "1日目",
-  "sectionTitle": "文字・語彙・文法",
-  "sectionTitleEn": "Vocabulary & Grammar",
+  "sectionTitle": "漢字読み・文脈規定",
+  "sectionTitleEn": "Kanji Reading & Contextually-defined Expression",
   "sections": [
     {
       "type": "kanji_reading",
@@ -52,7 +52,7 @@
           ],
           "correct": 1,
           "correctOption": "1. しせい",
-          "explanation": "<b>【正解】1. しせい</b><br/><ruby>姿<rt>し</rt></ruby><ruby>勢<rt>せい</rt></ruby>：物事に対する心の持ち方や取り組み方 attitude;<br/>posture<br/>【姿】シ・すがた<br/>【勢】セイ・いきお-い"
+          "explanation": "<b>【正解】1. しせい</b><br/><ruby>姿<rt>し</rt></ruby><ruby>勢<rt>せい</rt></ruby>：物事に対する心の持ち方や取り組み方 attitude; posture<br/>【姿】シ・すがた<br/>【勢】セイ・いきお-い"
         },
         {
           "number": 4,
@@ -91,7 +91,7 @@
           ],
           "correct": 3,
           "correctOption": "3. すでに",
-          "explanation": "<b>【正解】3. すでに</b><br/><ruby>既<rt>すで</rt></ruby>に：以前に 前に もう already<br/>【既】キ・すで-に<br/><ruby>◆文脈規<rt>ぶんみゃく</rt></ruby><ruby>定<rt>てい</rt></ruby>Contextually-defined expressions(p.17)"
+          "explanation": "<b>【正解】3. すでに</b><br/><ruby>既<rt>すで</rt></ruby>に：以前に 前に もう already<br/>【既】キ・すで-に"
         }
       ]
     },
@@ -126,7 +126,7 @@
           ],
           "correct": 2,
           "correctOption": "2. てっきり",
-          "explanation": "<b>【正解】2. てっきり</b><br/>てっきり：確実だと思っていた予想が外れ、結果が反対<br/>だった時に用いる語 (was mistakenly) convinced that"
+          "explanation": "<b>【正解】2. てっきり</b><br/>てっきり：確実だと思っていた予想が外れ、結果が反対だった時に用いる語 (was mistakenly) convinced that"
         },
         {
           "number": 3,
@@ -152,7 +152,7 @@
           ],
           "correct": 2,
           "correctOption": "2. 抗議",
-          "explanation": "<b>【正解】2. 抗議</b><br/><ruby>抗<rt>こう</rt></ruby><ruby>議<rt>ぎ</rt></ruby>：異議を申し立てる 反対の意見・要求を主張する<br/>こと protest; objection"
+          "explanation": "<b>【正解】2. 抗議</b><br/><ruby>抗<rt>こう</rt></ruby><ruby>議<rt>ぎ</rt></ruby>：異議を申し立てる 反対の意見・要求を主張すること protest; objection"
         },
         {
           "number": 5,
@@ -191,7 +191,7 @@
           ],
           "correct": 4,
           "correctOption": "4. ローテーション",
-          "explanation": "<b>【正解】4. ローテーション</b><br/>ローテーション：交替すること rotation ※ローテーショ<br/>ンを組む＝交替で"
+          "explanation": "<b>【正解】4. ローテーション</b><br/>ローテーション：交替すること rotation ※ローテーションを組む＝交替で"
         }
       ]
     }

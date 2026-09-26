@@ -276,3 +276,101 @@
   text-decoration-color: #a5b4fc;
   background-color: rgba(129, 140, 248, 0.22);
 }
+
+/* Dokkai & Workbook Reading Passage Styles */
+.speed-master-text-box {
+  border: 2px solid #334155 !important;
+  border-radius: 8px;
+  padding: 24px 28px;
+  background-color: rgba(254, 252, 246, 0.95) !important;
+  color: #1e293b;
+  font-family: 'Noto Serif JP', serif;
+  line-height: 2.2;
+  margin-bottom: 1.5rem;
+  display: block;
+  box-sizing: border-box;
+}
+
+.theme-dark .speed-master-text-box,
+.dark .speed-master-text-box,
+[data-theme='dark'] .speed-master-text-box {
+  border-color: #64748b !important;
+  background-color: rgba(15, 23, 42, 0.9) !important;
+  color: #f1f5f9;
+}
+
+.speed-master-vertical-card {
+  writing-mode: vertical-rl !important;
+  -webkit-writing-mode: vertical-rl !important;
+  -ms-writing-mode: tb-rl !important;
+  border: 2px solid #334155 !important;
+  border-radius: 8px;
+  padding: 28px 24px;
+  min-height: 380px;
+  max-height: 480px;
+  overflow-x: auto;
+  line-height: 2.4;
+  font-family: 'Noto Serif JP', serif;
+  background-color: rgba(254, 252, 246, 0.95) !important;
+  color: #1e293b;
+  margin: 0 auto 1.5rem auto;
+  box-sizing: border-box;
+  display: block;
+}
+
+.theme-dark .speed-master-vertical-card,
+.dark .speed-master-vertical-card,
+[data-theme='dark'] .speed-master-vertical-card {
+  border-color: #64748b !important;
+  background-color: rgba(15, 23, 42, 0.9) !important;
+  color: #f1f5f9;
+}
+
+.speed-master-lined-paper {
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 20px 24px;
+  background-color: rgba(254, 252, 246, 0.85);
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+}
+
+.theme-dark .speed-master-lined-paper,
+.dark .speed-master-lined-paper,
+[data-theme='dark'] .speed-master-lined-paper {
+  border-color: #475569;
+  background-color: rgba(15, 23, 42, 0.75);
+  color: #f1f5f9;
+}
+
+.speed-master-email-card {
+  border: 2px solid #94a3b8;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+}
+
+.theme-dark .speed-master-email-card,
+.dark .speed-master-email-card,
+[data-theme='dark'] .speed-master-email-card {
+  border-color: #475569;
+  background-color: rgba(15, 23, 42, 0.9);
+  color: #f1f5f9;
+}
+
+.speed-master-flyer-card {
+  border: 2px solid #94a3b8;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+}
+
+.theme-dark .speed-master-flyer-card,
+.dark .speed-master-flyer-card,
+[data-theme='dark'] .speed-master-flyer-card {
+  border-color: #475569;
+  background-color: rgba(15, 23, 42, 0.9);
+  color: #f1f5f9;
+}
