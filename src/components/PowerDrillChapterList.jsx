@@ -301,11 +301,13 @@ const PowerDrillChapterList = ({ book, chapters = [], history = {} }) => {
                         <span
                           key={chapter.id}
                           className={`text-[10px] font-black w-6 h-6 rounded-full flex items-center justify-center border transition-all ${
-                            isDone
+                            isMastered
                               ? 'bg-emerald-500/15 border-emerald-500/40 text-emerald-400'
-                              : isIncomplete
+                              : isCompleted
                                 ? 'bg-amber-500/15 border-amber-500/40 text-amber-400'
-                                : 'bg-[var(--color-bg-primary)] border-[var(--color-border)] text-[var(--color-text-muted)]'
+                                : isIncomplete
+                                  ? 'bg-rose-500/15 border-rose-500/40 text-rose-400'
+                                  : 'bg-[var(--color-bg-primary)] border-[var(--color-border)] text-[var(--color-text-muted)]'
                           }`}
                           title={info.isReview ? 'Review' : info.isTraining ? `Training ${info.num}` : `Drill ${info.num}`}
                         >
@@ -374,11 +376,13 @@ const PowerDrillChapterList = ({ book, chapters = [], history = {} }) => {
                   key={chapter.id}
                   to={`/books/${book.id}/chapters/${chapter.id}`}
                   className={`p-5 rounded-2xl border flex flex-col justify-center items-center text-center transition-all hover:-translate-y-1 ${
-                    isDone
+                    isMastered
                       ? 'bg-emerald-500/10 border-emerald-500/30 hover:bg-emerald-500/15 hover:border-emerald-500/50'
-                      : isIncomplete
+                      : isCompleted
                         ? 'bg-amber-500/10 border-amber-500/30 hover:bg-amber-500/15 hover:border-amber-500/50'
-                        : 'bg-[var(--color-bg-secondary)] border-[var(--color-border)] hover:border-emerald-500/50 hover:bg-[var(--color-bg-tertiary)]'
+                        : isIncomplete
+                          ? 'bg-rose-500/10 border-rose-500/30 hover:bg-rose-500/15 hover:border-rose-500/50'
+                          : 'bg-[var(--color-bg-secondary)] border-[var(--color-border)] hover:border-emerald-500/50 hover:bg-[var(--color-bg-tertiary)]'
                   }`}
                 >
                   <span className="text-[10px] font-bold text-[var(--color-text-muted)] tracking-wider uppercase">
@@ -389,9 +393,9 @@ const PowerDrillChapterList = ({ book, chapters = [], history = {} }) => {
                     {isMastered ? (
                       <span className="text-emerald-400">✓ Mastered</span>
                     ) : isCompleted ? (
-                      <span className="text-emerald-400">✓ Completed</span>
+                      <span className="text-amber-400">✓ Completed</span>
                     ) : isIncomplete ? (
-                      <span className="text-amber-400">◕ In Progress</span>
+                      <span className="text-rose-400">◕ Incomplete</span>
                     ) : (
                       <span className="text-[var(--color-text-muted)]">○ New</span>
                     )}

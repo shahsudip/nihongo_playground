@@ -353,13 +353,15 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
                           key={chapter.id}
                           to={`/books/${book.id}/chapters/${chapter.id}`}
                           className={`group relative p-3.5 rounded-xl border transition-all duration-200 flex flex-col justify-between hover:-translate-y-0.5 hover:shadow-md ${
-                            chapter.isDone
+                            chapter.isMastered
                               ? 'bg-emerald-500/10 border-emerald-500/30 hover:border-emerald-500/60'
-                              : chapter.isIncomplete
+                              : chapter.isCompleted
                                 ? 'bg-amber-500/10 border-amber-500/30 hover:border-amber-500/60'
-                                : isRev
-                                  ? 'bg-purple-500/5 border-purple-500/30 hover:border-purple-500/60'
-                                  : 'bg-[var(--color-bg-secondary)] border-[var(--color-border)] hover:border-emerald-500/50'
+                                : chapter.isIncomplete
+                                  ? 'bg-rose-500/10 border-rose-500/30 hover:border-rose-500/60'
+                                  : isRev
+                                    ? 'bg-purple-500/5 border-purple-500/30 hover:border-purple-500/60'
+                                    : 'bg-[var(--color-bg-secondary)] border-[var(--color-border)] hover:border-emerald-500/50'
                           }`}
                         >
                           {/* Card Top */}
@@ -392,13 +394,17 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
                           {/* Card Footer Status */}
                           <div className="pt-2 mt-1 border-t border-[var(--color-border)] flex items-center justify-between text-xs">
                             <div className="font-semibold text-[11px] whitespace-nowrap">
-                              {chapter.isDone ? (
+                              {chapter.isMastered ? (
                                 <span className="text-emerald-500 flex items-center gap-1">
-                                  <span>✓</span> {chapter.isMastered ? 'Mastered' : 'Completed'}
+                                  <span>✓</span> Mastered
+                                </span>
+                              ) : chapter.isCompleted ? (
+                                <span className="text-amber-500 flex items-center gap-1">
+                                  <span>✓</span> Completed
                                 </span>
                               ) : chapter.isIncomplete ? (
-                                <span className="text-amber-500 flex items-center gap-1">
-                                  <span>◕</span> Ongoing
+                                <span className="text-rose-500 flex items-center gap-1">
+                                  <span>◕</span> Incomplete
                                 </span>
                               ) : (
                                 <span className="text-[var(--color-text-muted)] flex items-center gap-1">

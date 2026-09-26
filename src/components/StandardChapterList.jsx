@@ -169,13 +169,15 @@ const StandardChapterList = ({ book, chapters = [], history = {} }) => {
                     <Link
                       key={chapter.id}
                       to={`/books/${book.id}/chapters/${chapter.id}`}
-                      className={`day-card ${isDone ? 'day-mastered' : isIncomplete ? 'day-progress' : ''}`}
+                      className={`day-card ${isMastered ? 'day-mastered' : isCompleted ? 'day-completed' : isIncomplete ? 'day-progress' : ''}`}
                     >
                       <div className="day-card-label">{dayLabel}</div>
                       <div className="day-card-questions">{qCount} Q</div>
                       <div className="day-card-status">
-                        {isDone ? (
+                        {isMastered ? (
                           <span className="day-status-badge mastered">✓</span>
+                        ) : isCompleted ? (
+                          <span className="day-status-badge completed">✓</span>
                         ) : isIncomplete ? (
                           <span className="day-status-badge progress">◕</span>
                         ) : (

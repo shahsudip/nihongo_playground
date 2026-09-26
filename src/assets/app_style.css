@@ -2609,13 +2609,18 @@ width: 100%;
 }
 
 .day-card.day-mastered {
-  border-color: rgba(159, 122, 234, 0.5);
-  background-color: rgba(159, 122, 234, 0.08);
+  border-color: rgba(16, 185, 129, 0.5);
+  background-color: rgba(16, 185, 129, 0.08);
+}
+
+.day-card.day-completed {
+  border-color: rgba(245, 158, 11, 0.5);
+  background-color: rgba(245, 158, 11, 0.08);
 }
 
 .day-card.day-progress {
-  border-color: rgba(72, 187, 120, 0.4);
-  background-color: rgba(72, 187, 120, 0.05);
+  border-color: rgba(244, 63, 94, 0.4);
+  background-color: rgba(244, 63, 94, 0.08);
 }
 
 .day-card-label {
@@ -2639,11 +2644,15 @@ width: 100%;
 }
 
 .day-status-badge.mastered {
-  color: var(--feedback-mastered);
+  color: #10b981;
+}
+
+.day-status-badge.completed {
+  color: #f59e0b;
 }
 
 .day-status-badge.progress {
-  color: var(--primary-green);
+  color: #f43f5e;
 }
 
 .day-status-badge.new {
