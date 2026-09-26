@@ -32,6 +32,9 @@ somatome_pages/
 n2_pages_temp/
 n3_pages_temp/
 tmp_inspect/
+scratch/
+nihongo_app/
+*.pdf
 scripts/*.png
 
 # Zenkamoku data lives in Git now so Vite can bundle it dynamically

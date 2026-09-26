@@ -321,7 +321,7 @@ const Shin500ChapterList = ({ book, chapters = [], history = {} }) => {
                 <div className="flex items-center gap-4">
                   <div className="text-right sm:block flex items-center justify-between w-full sm:w-auto">
                     <div className="text-xs font-semibold text-[var(--color-text-muted)]">
-                      {masteredCount} / {group.chapters.length} Done
+                      {doneCount} / {group.chapters.length} Done
                     </div>
                     <div className="w-24 bg-[var(--color-bg-primary)] h-1.5 rounded-full overflow-hidden border border-[var(--color-border)] mt-1">
                       <div

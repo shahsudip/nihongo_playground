@@ -11,18 +11,24 @@ export const SHINKANZEN_N3_LISTENING_CHAPTERS = Object.keys(localChapterModules)
     return {
       id: data.chapterId,
       part: data.part,
-      title: `Part ${data.part} - ${data.title}`,
+      title: `${data.title} ${data.partTitleEn ? `(${data.partTitleEn})` : ''}`,
+      rawTitle: data.title,
       mondaiNumber: data.mondaiNumber,
     };
   })
   .sort((a, b) => a.mondaiNumber - b.mondaiNumber);
 
 const PART_TITLES = {
-  1: '第1部：課題理解',
-  2: '第2部：ポイント理解',
-  3: '第3部：概要理解',
-  4: '第4部：発話表現・即時応答',
-  5: '模擬試験'
+  1: '第1部：問題紹介',
+  2: '第2部：実力養成編',
+};
+
+const MONDAI_NAMES = {
+  'mondai-1': '課題理解 (Task-Based)',
+  'mondai-2': 'ポイント理解 (Key Points)',
+  'mondai-3': '概要理解 (General Outline)',
+  'mondai-4': '発話表現 (Utterance Expressions)',
+  'mondai-5': '即時応答 (Quick Response)',
 };
 
 const ShinkanzenN3ListeningBook = () => {
@@ -33,12 +39,11 @@ const ShinkanzenN3ListeningBook = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const [currentPage, setCurrentPage] = useState(0);
-  const totalPages = 2;
-
+  // User state — SCRIPT IS CLOSED BY DEFAULT
   const [answers, setAnswers] = useState({});
   const [revealed, setRevealed] = useState({});
-  const [startX, setStartX] = useState(null);
+  const [playbackRate, setPlaybackRate] = useState(1.0);
+  const [showScript, setShowScript] = useState(false);
 
   // Audio & Mode State
   const [mode, setMode] = useState('study'); // 'study' or 'exam'
@@ -46,8 +51,7 @@ const ShinkanzenN3ListeningBook = () => {
   const [currentAudioTime, setCurrentAudioTime] = useState(0);
   const [currentAudioDuration, setCurrentAudioDuration] = useState(0);
   const [activeAudioSrc, setActiveAudioSrc] = useState(null);
-  const [showScript, setShowScript] = useState(false);
-  const [playCount, setPlayCount] = useState({}); // Track how many times an audio has been played (for exam mode limit)
+  const [playCount, setPlayCount] = useState({});
 
   const audioRef = useRef(null);
 
@@ -58,22 +62,36 @@ const ShinkanzenN3ListeningBook = () => {
   const nextChapter = currentChapterIndex >= 0 && currentChapterIndex < allChapters.length - 1 ? allChapters[currentChapterIndex + 1] : null;
   const currentPart = currentChapter?.part || 1;
   const partChapters = allChapters.filter(ch => ch.part === currentPart);
-  const partNumbers = [...new Set(allChapters.map(ch => ch.part))].sort((a, b) => a - b);
+
+  const resolvePublicUrl = (path) => {
+    if (!path) return path;
+    if (path.startsWith('http')) return path;
+    return path.startsWith('/') ? import.meta.env.BASE_URL + path.slice(1) : import.meta.env.BASE_URL + path;
+  };
 
   useEffect(() => {
-    setCurrentPage(0);
     setAnswers({});
     setRevealed({});
     setLoading(true);
     setError(null);
-    setActiveAudioSrc(null);
-    setShowScript(false);
+    setShowScript(false); // Always closed by default on chapter change
 
     try {
       const matchedKey = Object.keys(localChapterModules).find(k => k.endsWith(`/${chapterId}.json`));
       if (matchedKey && localChapterModules[matchedKey]) {
         const mod = localChapterModules[matchedKey];
-        setData(mod.default || mod);
+        const loadedData = mod.default || mod;
+        setData(loadedData);
+
+        // Auto-assign first audio track from hotspots
+        if (loadedData?.hotspots && loadedData.hotspots.length > 0) {
+          const firstAudio = loadedData.hotspots[0].audioSrc;
+          setActiveAudioSrc(firstAudio);
+          if (audioRef.current) {
+            audioRef.current.src = resolvePublicUrl(firstAudio);
+            audioRef.current.load();
+          }
+        }
       } else {
         setData(null);
         setError(`Content for "${chapterId}" is currently in preparation.`);
@@ -110,61 +128,25 @@ const ShinkanzenN3ListeningBook = () => {
     };
   }, [activeAudioSrc]);
 
-  // Keyboard navigation
-  useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === 'ArrowRight') setCurrentPage(p => Math.min(totalPages - 1, p + 1));
-      if (e.key === 'ArrowLeft') setCurrentPage(p => Math.max(0, p - 1));
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [totalPages]);
+  const togglePlay = () => {
+    if (!audioRef.current) return;
 
-  const handleDragStart = (e) => setStartX(e.type.includes('touch') ? e.touches[0].clientX : e.clientX);
-  const handleDragEnd = (e) => {
-    if (startX === null) return;
-    const endX = e.type.includes('touch') ? e.changedTouches[0].clientX : e.clientX;
-    const diff = startX - endX;
-    
-    // Ignore drag if dragging over scrub bar or audio controls to prevent accidental flipping
-    if (e.target.closest('.audio-control-area')) return;
-
-    if (diff > 50 && currentPage < totalPages - 1) setCurrentPage(p => p + 1);
-    else if (diff < -50 && currentPage > 0) setCurrentPage(p => p - 1);
-    setStartX(null);
-  };
-
-  const playAudio = (src, trackId) => {
-    // Exam mode check: if played once, prevent re-playing
-    if (mode === 'exam' && playCount[trackId]) {
-      alert("Exam Mode: You can only listen to the audio once!");
+    if (mode === 'exam' && playCount[chapterId] >= 1 && !isPlaying) {
+      alert("Exam Mode: Audio can only be played once!");
       return;
     }
 
-    if (activeAudioSrc !== src) {
-      // New source: set .src directly and call load()+play() synchronously
-      // within the user gesture so mobile browsers don't block playback.
-      const resolvedSrc = resolvePublicUrl(src);
-      setActiveAudioSrc(src);
-      setPlayCount(prev => ({ ...prev, [trackId]: (prev[trackId] || 0) + 1 }));
-      if (audioRef.current) {
-        audioRef.current.src = resolvedSrc;
-        audioRef.current.load();
-        audioRef.current.play().catch(e => console.error('Audio play error:', e));
-      }
+    if (isPlaying) {
+      audioRef.current.pause();
     } else {
-      if (audioRef.current) {
-        if (isPlaying) audioRef.current.pause();
-        else {
-          audioRef.current.play().catch(e => console.error('Audio play error:', e));
-          setPlayCount(prev => ({ ...prev, [trackId]: (prev[trackId] || 0) + 1 }));
-        }
-      }
+      audioRef.current.play().then(() => {
+        setPlayCount(prev => ({ ...prev, [chapterId]: (prev[chapterId] || 0) + 1 }));
+      }).catch(err => console.error("Audio playback error:", err));
     }
   };
 
   const handleScrub = (e) => {
-    if (mode === 'exam') return; // Scrubbing disabled in exam mode
+    if (mode === 'exam') return;
     if (audioRef.current) {
       const newTime = parseFloat(e.target.value);
       audioRef.current.currentTime = newTime;
@@ -172,8 +154,23 @@ const ShinkanzenN3ListeningBook = () => {
     }
   };
 
+  const setSpeed = (rate) => {
+    setPlaybackRate(rate);
+    if (audioRef.current) {
+      audioRef.current.playbackRate = rate;
+    }
+  };
+
+  const seekToTime = (time) => {
+    if (mode === 'exam') return;
+    if (audioRef.current) {
+      audioRef.current.currentTime = time;
+      audioRef.current.play().catch(e => console.error(e));
+    }
+  };
+
   const formatTime = (seconds) => {
-    if (isNaN(seconds)) return "0:00";
+    if (isNaN(seconds) || seconds === null) return "0:00";
     const m = Math.floor(seconds / 60);
     const s = Math.floor(seconds % 60);
     return `${m}:${s.toString().padStart(2, '0')}`;
@@ -183,264 +180,429 @@ const ShinkanzenN3ListeningBook = () => {
     if (id) navigate(`/books/shinkanzen-master-n3-listening/chapters/${id}`);
   };
 
-  const resolvePublicUrl = (path) => {
-    if (!path) return path;
-    if (path.startsWith('http')) return path;
-    // Prepend Vite's BASE_URL (e.g. /nihongo_playground/) so assets resolve correctly on GitHub Pages
-    return path.startsWith('/') ? import.meta.env.BASE_URL + path.slice(1) : import.meta.env.BASE_URL + path;
+  const getSpeakerBadgeStyle = (speaker) => {
+    if (!speaker) return 'bg-gray-500/10 text-gray-500 dark:text-gray-400 border border-gray-500/20';
+    if (speaker.includes('女') || speaker.includes('女性')) return 'bg-pink-500/10 text-pink-600 dark:text-pink-400 border border-pink-500/20';
+    if (speaker.includes('男') || speaker.includes('男性')) return 'bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20';
+    if (speaker.includes('ナレーション') || speaker.includes('質問')) return 'bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20';
+    if (speaker.includes('指示')) return 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20';
+    return 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20';
   };
 
-  if (loading) return <div className="min-h-screen bg-gray-100 dark:bg-gray-900 pb-8 pt-24 md:pt-28 flex flex-col items-center"><LoadingSpinner /></div>;
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-[var(--color-bg-primary)] pt-28 flex flex-col items-center justify-center">
+        <LoadingSpinner />
+        <p className="text-xs text-[var(--color-text-muted)] mt-4">Loading Shin Kanzen Master Listening...</p>
+      </div>
+    );
+  }
+
+  if (error || !data) {
+    return (
+      <div className="min-h-screen bg-[var(--color-bg-primary)] pt-28 px-4 flex flex-col items-center">
+        <div className="max-w-md w-full bg-[var(--color-bg-secondary)] border border-red-500/30 rounded-2xl p-6 text-center">
+          <p className="text-red-500 font-bold mb-3">⚠️ Chapter Error</p>
+          <p className="text-sm text-[var(--color-text-secondary)] mb-4">{error || "Chapter not found"}</p>
+          <Link to="/books/shinkanzen-master-n3-listening" className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold transition">
+            Back to Book Index
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  const currentTrackLabel = data.hotspots?.[0]?.label || 'Audio Track';
 
   return (
-    <div className="min-h-screen bg-gray-200 dark:bg-gray-900 pb-6 pt-24 md:pt-28 flex flex-col items-center overflow-hidden">
+    <div className="min-h-screen bg-[var(--color-bg-primary)] text-[var(--color-text-primary)] pb-20 pt-20 sm:pt-24 transition-colors">
       
-      {/* Hidden Audio Element — playsInline is required for iOS Safari */}
-      <audio ref={audioRef} src={resolvePublicUrl(activeAudioSrc)} playsInline preload="auto" />
+      {/* Hidden Native Audio Element */}
+      <audio 
+        ref={audioRef} 
+        src={resolvePublicUrl(activeAudioSrc)} 
+        playsInline 
+        preload="auto" 
+      />
 
-      <div className="w-full max-w-[850px] px-4 mb-2 z-20 relative">
-        <Link to="/books/shinkanzen-master-n3-listening" className="text-sm font-semibold text-blue-500 hover:underline mb-2 inline-block">
-          &larr; Back to Chapters
-        </Link>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
-        {/* Navigation & Mode Toggle */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 bg-gray-900 text-white px-4 py-3 mt-2 rounded-xl shadow-md text-sm border border-gray-700">
-          
-          {/* Chapter Selector */}
-          <div className="flex items-center gap-2 w-full sm:w-auto">
-            <select
-              value={currentPart}
-              onChange={(e) => {
-                const targetPart = parseInt(e.target.value);
-                const firstInPart = allChapters.find(ch => ch.part === targetPart);
-                if (firstInPart) navigateToChapter(firstInPart.id);
-              }}
-              className="bg-gray-800 text-white py-1.5 px-3 rounded-lg border border-gray-600 focus:ring-2 focus:ring-blue-500"
+        {/* Top Breadcrumb & Controls Bar */}
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4">
+          <div className="flex items-center gap-2">
+            <Link 
+              to="/books/shinkanzen-master-n3-listening" 
+              className="text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline transition flex items-center gap-1 bg-blue-500/10 px-3 py-1.5 rounded-xl border border-blue-500/20"
             >
-              {partNumbers.map(pn => <option key={pn} value={pn}>第{pn}部</option>)}
-            </select>
+              &larr; Book Index
+            </Link>
+            <span className="text-xs text-[var(--color-text-muted)]">•</span>
+            <span className="text-xs font-semibold text-[var(--color-text-secondary)]">
+              {data.partTitle || PART_TITLES[data.part]}
+            </span>
+          </div>
+
+          {/* Chapter Quick-Switcher */}
+          <div className="flex items-center gap-2 w-full sm:w-auto">
             <select
               value={chapterId}
               onChange={(e) => navigateToChapter(e.target.value)}
-              className="bg-gray-800 text-white py-1.5 px-3 rounded-lg border border-gray-600 focus:ring-2 focus:ring-blue-500 max-w-[120px] truncate"
+              className="bg-[var(--color-bg-secondary)] text-[var(--color-text-primary)] text-xs font-bold py-2 px-3.5 rounded-xl border border-[var(--color-border)] focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm"
             >
-              {partChapters.map(ch => <option key={ch.id} value={ch.id}>{ch.title.split('- ')[1]}</option>)}
+              {partChapters.map(ch => (
+                <option key={ch.id} value={ch.id}>
+                  {ch.rawTitle} — {MONDAI_NAMES[ch.id] || ch.id}
+                </option>
+              ))}
             </select>
-          </div>
 
-          {/* Global Mode Toggle */}
-          <div className="flex items-center bg-gray-800 rounded-lg p-1 border border-gray-600 w-full sm:w-auto justify-center">
-            <button 
-              onClick={() => setMode('study')}
-              className={`px-4 py-1.5 rounded-md text-xs font-bold transition-all ${mode === 'study' ? 'bg-blue-600 text-white shadow' : 'text-gray-400 hover:text-white'}`}
-            >
-              Study Mode
-            </button>
-            <button 
-              onClick={() => setMode('exam')}
-              className={`px-4 py-1.5 rounded-md text-xs font-bold transition-all ${mode === 'exam' ? 'bg-red-600 text-white shadow' : 'text-gray-400 hover:text-white'}`}
-            >
-              Exam Mode (Strict)
-            </button>
+            {/* Mode Switcher */}
+            <div className="flex bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-xl p-0.5 shadow-sm">
+              <button
+                onClick={() => setMode('study')}
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                  mode === 'study' ? 'bg-blue-600 text-white shadow-sm' : 'text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]'
+                }`}
+              >
+                Study
+              </button>
+              <button
+                onClick={() => {
+                  setMode('exam');
+                  setShowScript(false);
+                }}
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                  mode === 'exam' ? 'bg-red-600 text-white shadow-sm' : 'text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]'
+                }`}
+              >
+                Exam
+              </button>
+            </div>
           </div>
         </div>
 
-        {/* Global Audio Player Bar */}
-        <div className="bg-gray-800 text-white px-5 py-4 mt-2 rounded-xl shadow-lg border border-gray-700 flex flex-col gap-3 audio-control-area">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <button 
-                onClick={() => {
-                  if(activeAudioSrc) playAudio(activeAudioSrc, 'current-track');
-                }}
-                disabled={!activeAudioSrc}
-                className={`w-10 h-10 rounded-full flex items-center justify-center transition-all ${!activeAudioSrc ? 'bg-gray-700 text-gray-500' : isPlaying ? 'bg-blue-600 hover:bg-blue-700 text-white' : 'bg-green-600 hover:bg-green-700 text-white shadow-md'}`}
+        {/* ================= STICKY AUDIO PLAYER BAR ================= */}
+        <div className="sticky top-16 z-30 bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-[var(--color-text-primary)] rounded-2xl p-4 sm:p-5 shadow-lg mb-6 backdrop-blur-md">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            
+            {/* Play Button & Track Info */}
+            <div className="flex items-center gap-3.5">
+              <button
+                onClick={togglePlay}
+                className={`w-12 h-12 rounded-2xl flex items-center justify-center font-black transition-all shadow-md transform active:scale-95 ${
+                  isPlaying 
+                    ? 'bg-amber-500 hover:bg-amber-600 text-slate-950 shadow-amber-500/25' 
+                    : 'bg-gradient-to-tr from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white shadow-blue-500/30'
+                }`}
+                title={isPlaying ? "Pause Audio" : "Play Audio"}
               >
-                {isPlaying ? <span className="text-sm font-bold">||</span> : <span className="text-sm ml-1 font-bold">▶</span>}
+                {isPlaying ? (
+                  <span className="text-sm tracking-tighter">❚❚</span>
+                ) : (
+                  <span className="text-base ml-1">▶</span>
+                )}
               </button>
-              <div className="flex flex-col">
-                <span className="text-sm font-bold">{activeAudioSrc ? 'Now Playing' : 'Select a track on the page'}</span>
-                <span className="text-xs text-gray-400">{activeAudioSrc ? activeAudioSrc.split('/').pop() : 'No audio loaded'}</span>
+
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="px-2 py-0.5 text-[10px] font-black uppercase rounded bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
+                    {currentTrackLabel}
+                  </span>
+                  <h3 className="text-sm font-black text-[var(--color-text-primary)] m-0 truncate max-w-[200px] sm:max-w-xs">
+                    {data.title} — {MONDAI_NAMES[chapterId] || data.partTitleEn}
+                  </h3>
+                </div>
+                <p className="text-[11px] text-[var(--color-text-muted)] m-0 mt-0.5">
+                  {isPlaying ? '🎧 Playing audio...' : 'Click Play to listen to the dialogue'}
+                </p>
               </div>
             </div>
-            <div className="text-xs font-mono bg-gray-900 px-3 py-1.5 rounded-md border border-gray-700">
-              {formatTime(currentAudioTime)} / {formatTime(currentAudioDuration)}
-            </div>
-          </div>
-          
-          {/* Scrub Bar */}
-          <input 
-            type="range" 
-            min="0" 
-            max={currentAudioDuration || 0} 
-            value={currentAudioTime} 
-            onChange={handleScrub}
-            disabled={!activeAudioSrc || mode === 'exam'}
-            className={`w-full h-2 rounded-lg appearance-none cursor-pointer ${mode === 'exam' ? 'bg-gray-700 opacity-50' : 'bg-gray-600 accent-blue-500'}`}
-          />
-          {mode === 'exam' && <span className="text-[10px] text-red-400 font-medium text-center">Audio seeking is disabled in Exam Mode</span>}
-        </div>
-      </div>
-      
-      {/* A4 Paper Viewport */}
-      <div 
-        className="relative bg-white text-black shadow-2xl border-2 border-gray-400 dark:border-gray-700 w-full max-w-[850px] h-[85vh] min-h-[800px] overflow-hidden flex select-none rounded-xl mt-2 z-10"
-        onMouseDown={handleDragStart} 
-        onMouseUp={handleDragEnd} 
-        onTouchStart={handleDragStart} 
-        onTouchEnd={handleDragEnd}
-      >
-        <div className="flex w-full h-full transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${currentPage * 100}%)` }}>
-          
-          {/* ================= PAGE 1: SCANNED BOOK PAGE WITH HOTSPOTS ================= */}
-          <div className="w-full h-full flex-shrink-0 relative bg-gray-100 overflow-y-auto overflow-x-hidden flex justify-center">
-            {data?.imageSrc && (
-              <div className="relative inline-block h-max shadow-md">
-                <img src={resolvePublicUrl(data.imageSrc)} alt="Scanned Page" className="max-w-full h-auto object-contain" />
-                
-                {/* Interactive Audio Hotspots */}
-                {data.hotspots?.map((hotspot) => (
+
+            {/* Audio Speed & Time Controls */}
+            <div className="flex items-center justify-between sm:justify-end gap-3">
+              <div className="flex bg-[var(--color-bg-primary)] border border-[var(--color-border)] rounded-xl p-0.5">
+                {[0.8, 1.0, 1.2].map(speed => (
                   <button
-                    key={hotspot.id}
-                    onClick={() => playAudio(hotspot.audioSrc, hotspot.trackId)}
-                    className="absolute bg-blue-500/30 hover:bg-blue-500/60 border-2 border-blue-600 rounded-md transition-all flex items-center justify-center group shadow-[0_0_15px_rgba(37,99,235,0.5)]"
-                    style={{ 
-                      top: `${hotspot.y}%`, 
-                      left: `${hotspot.x}%`, 
-                      width: `${hotspot.width}%`, 
-                      height: `${hotspot.height}%` 
-                    }}
-                    title={`Play ${hotspot.label}`}
+                    key={speed}
+                    onClick={() => setSpeed(speed)}
+                    disabled={mode === 'exam'}
+                    className={`px-2.5 py-1 text-[11px] font-bold rounded-lg transition ${
+                      playbackRate === speed ? 'bg-blue-600 text-white shadow-sm' : 'text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
+                    }`}
                   >
-                    <div className="hidden group-hover:flex bg-black/80 text-white text-[10px] font-bold px-2 py-1 rounded absolute -top-8 whitespace-nowrap">
-                      ▶ Play Audio
-                    </div>
+                    {speed}x
                   </button>
                 ))}
               </div>
-            )}
-            
-            <div className="absolute bottom-4 right-4 bg-black/60 text-white text-xs font-bold px-4 py-2 rounded-full backdrop-blur pointer-events-none">
-              Swipe Left for Quiz ➜
-            </div>
-          </div>
-          
-          {/* ================= PAGE 2: QUIZ & REAL-TIME SCRIPT ================= */}
-          <div className="w-full h-full flex-shrink-0 p-4 md:p-8 overflow-y-auto pb-20">
-            <div className="bg-blue-800 text-white rounded-t-xl p-4 flex justify-between items-end mb-5 shadow">
-              <div className="flex flex-col">
-                <span className="text-sm font-bold opacity-80">{PART_TITLES[data?.part]}</span>
-                <span className="text-2xl font-black">{data?.title}</span>
+
+              <div className="font-mono text-xs font-bold text-[var(--color-text-secondary)] bg-[var(--color-bg-primary)] border border-[var(--color-border)] px-3 py-1.5 rounded-xl">
+                {formatTime(currentAudioTime)} / {formatTime(currentAudioDuration)}
               </div>
             </div>
+          </div>
 
-            {/* Questions */}
-            <div className="space-y-6 mb-8">
-              {data?.questions?.map((q, qIdx) => {
-                const qKey = `q-${qIdx}`;
-                const userAnswer = answers[qKey];
-                const isRevealed = revealed[qKey];
-                const correctIdx = q.correctOption?.index;
+          {/* Precision Seek Bar */}
+          <div className="mt-3.5 flex items-center gap-2">
+            <input
+              type="range"
+              min="0"
+              max={currentAudioDuration || 100}
+              step="0.1"
+              value={currentAudioTime}
+              onChange={handleScrub}
+              disabled={mode === 'exam'}
+              className="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer accent-blue-600 disabled:opacity-50"
+            />
+          </div>
+          {mode === 'exam' && (
+            <p className="text-[10px] text-rose-500 font-semibold text-center mt-1.5 m-0">
+              ⚠️ Exam Mode: Audio seeking is disabled. Listen carefully once!
+            </p>
+          )}
+        </div>
+
+        {/* ================= SECTION HEADER & STRATEGY CARD ================= */}
+        <div className="bg-[var(--color-bg-secondary)] border border-blue-500/20 rounded-2xl p-5 sm:p-6 mb-6 shadow-sm">
+          <div className="flex items-center gap-2.5 mb-2.5">
+            <span className="w-8 h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center font-black text-sm shadow-sm">
+              {data.mondaiNumber}
+            </span>
+            <div>
+              <h2 className="text-lg font-black text-[var(--color-text-primary)] m-0">
+                {data.title}：{MONDAI_NAMES[chapterId] || data.partTitle}
+              </h2>
+              <span className="text-xs font-medium text-[var(--color-text-secondary)]">
+                {data.partTitleEn || 'JLPT N3 Listening Strategy & Drill'}
+              </span>
+            </div>
+          </div>
+
+          <p className="text-xs sm:text-sm text-[var(--color-text-secondary)] leading-relaxed whitespace-pre-line m-0 bg-[var(--color-bg-primary)] p-4 rounded-xl border border-[var(--color-border)]">
+            {data.mondaiHeader}
+          </p>
+        </div>
+
+        {/* ================= OPTIONAL ILLUSTRATION BOX (e.g. MONDAI 4) ================= */}
+        {data.illustrationSrc && (
+          <div className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-2xl p-5 mb-6 text-center shadow-sm">
+            <div className="flex items-center justify-between mb-3 px-1">
+              <span className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
+                🖼️ Problem Scene Illustration (イラスト)
+              </span>
+              <span className="text-[11px] text-[var(--color-text-muted)]">
+                Look at the arrow (矢印 →) person
+              </span>
+            </div>
+            <div className="flex justify-center bg-transparent rounded-xl p-2">
+              <img 
+                src={resolvePublicUrl(data.illustrationSrc)} 
+                alt="Problem Illustration" 
+                className="max-h-72 object-contain drop-shadow-md"
+              />
+            </div>
+          </div>
+        )}
+
+        {/* ================= INTERACTIVE QUESTIONS LIST ================= */}
+        <div className="space-y-6 mb-8">
+          {data.questions?.map((q, qIdx) => {
+            const qKey = `q-${qIdx}`;
+            const userAnswer = answers[qKey];
+            const isRevealed = revealed[qKey] || (mode === 'exam' && false);
+            const correctIdx = q.correctOption?.index;
+
+            return (
+              <div 
+                key={qIdx} 
+                className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-2xl p-5 sm:p-7 shadow-sm transition-all"
+              >
+                {/* Question Header */}
+                <div className="flex items-center gap-2 mb-3 pb-2 border-b border-[var(--color-border)]">
+                  <span className="px-2.5 py-1 bg-blue-600 text-white rounded-lg font-black text-xs shadow-sm">
+                    ☆ 例題 {data.questions.length > 1 ? `（${qIdx + 1}）` : qIdx + 1}
+                  </span>
+                  <span className="text-xs font-bold text-[var(--color-text-muted)]">
+                    {MONDAI_NAMES[chapterId] || data.title}
+                  </span>
+                </div>
+
+                {/* Authentic Printed Direction Box (この問題では...) */}
+                {(q.instruction || data.instruction) && (
+                  <div className="mb-4 bg-[var(--color-bg-primary)] p-3.5 rounded-xl border border-[var(--color-border)]">
+                    <span className="text-[10px] font-black uppercase text-blue-600 dark:text-blue-400 tracking-wider block mb-1">
+                      問題の指示 (Direction)
+                    </span>
+                    <p className="text-xs sm:text-sm text-[var(--color-text-primary)] font-medium leading-relaxed m-0">
+                      {q.instruction || data.instruction}
+                    </p>
+                  </div>
+                )}
+
+                {/* Main Spoken Question & Context */}
+                {q.questionText && (
+                  <div className="mb-5 px-1">
+                    {q.context && (
+                      <p className="text-xs font-semibold text-[var(--color-text-muted)] mb-1 m-0">
+                        （{q.context}）
+                      </p>
+                    )}
+                    <h3 className="text-base sm:text-lg font-black text-[var(--color-text-primary)] leading-snug m-0 flex items-center gap-2">
+                      <span className="text-blue-600 dark:text-blue-400 text-sm">❓</span>
+                      <span dangerouslySetInnerHTML={{ __html: q.questionText }} />
+                    </h3>
+                  </div>
+                )}
+
+                {/* Choices Grid */}
+                <div className="grid grid-cols-1 gap-2.5">
+                  {q.options?.map((optText, optIdx) => {
+                    const isSelected = userAnswer === optIdx + 1;
+                    const isCorrect = optIdx === correctIdx;
+
+                    let btnStyle = "bg-[var(--color-bg-primary)] border-[var(--color-border)] text-[var(--color-text-primary)] hover:border-blue-500 hover:bg-blue-500/5";
+
+                    if (isRevealed) {
+                      if (isCorrect) {
+                        btnStyle = "bg-emerald-500/15 border-emerald-500 text-emerald-600 dark:text-emerald-400 font-bold ring-1 ring-emerald-500";
+                      } else if (isSelected && !isCorrect) {
+                        btnStyle = "bg-rose-500/15 border-rose-500 text-rose-600 dark:text-rose-400 line-through ring-1 ring-rose-500";
+                      } else {
+                        btnStyle = "bg-[var(--color-bg-primary)] border-[var(--color-border)] opacity-40 text-[var(--color-text-muted)]";
+                      }
+                    }
+
+                    return (
+                      <button
+                        key={optIdx}
+                        onClick={() => {
+                          if (isRevealed) return;
+                          setAnswers(prev => ({ ...prev, [qKey]: optIdx + 1 }));
+                          setRevealed(prev => ({ ...prev, [qKey]: true }));
+                        }}
+                        disabled={isRevealed}
+                        className={`w-full text-left p-3.5 sm:p-4 rounded-xl border transition-all flex items-center justify-between gap-3 text-sm sm:text-base font-medium ${btnStyle}`}
+                      >
+                        <span dangerouslySetInnerHTML={{ __html: optText }} />
+                        {isRevealed && isCorrect && (
+                          <span className="text-emerald-600 dark:text-emerald-400 font-black text-sm shrink-0">✓ 正解</span>
+                        )}
+                        {isRevealed && isSelected && !isCorrect && (
+                          <span className="text-rose-600 dark:text-rose-400 font-black text-sm shrink-0">✗ 不正解</span>
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Detailed Japanese Explanation */}
+                {isRevealed && q.explanation && (
+                  <div className="mt-5 p-4 sm:p-5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-[var(--color-text-primary)] text-xs sm:text-sm leading-relaxed animate-fadeIn">
+                    <div className="flex items-center gap-2 mb-2 font-bold text-amber-600 dark:text-amber-400">
+                      <span>💡</span>
+                      <span>問題のポイント・正解の理由 (Explanation)</span>
+                    </div>
+                    <div 
+                      className="space-y-1 text-[var(--color-text-secondary)]"
+                      dangerouslySetInnerHTML={{ __html: q.explanation }} 
+                    />
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+        {/* ================= KARAOKE LIVE SCRIPT / TRANSCRIPT DRAWER ================= */}
+        <div className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-2xl overflow-hidden shadow-sm mb-8">
+          <div className="p-4 sm:p-5 flex items-center justify-between border-b border-[var(--color-border)]">
+            <div className="flex items-center gap-2">
+              <span className="text-lg">📜</span>
+              <h3 className="text-sm sm:text-base font-black text-[var(--color-text-primary)] m-0">
+                音声スクリプト (Audio Transcript & Dialogue)
+              </h3>
+            </div>
+            
+            <button
+              onClick={() => setShowScript(!showScript)}
+              className="px-3.5 py-1.5 bg-blue-500/10 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 border border-blue-500/30 rounded-xl text-xs font-bold transition flex items-center gap-1"
+            >
+              {showScript ? 'Hide Script ▲' : 'Show Dialogue Script ▼'}
+            </button>
+          </div>
+
+          {showScript && (
+            <div className="p-4 sm:p-6 space-y-3 bg-[var(--color-bg-primary)]/50 max-h-[480px] overflow-y-auto">
+              <p className="text-[11px] text-[var(--color-text-muted)] italic mb-3">
+                💡 Click any dialogue line below to seek and play audio from that exact point:
+              </p>
+              
+              {data.transcript?.map((line, idx) => {
+                const isPast = currentAudioTime >= line.time;
+                const nextLineTime = data.transcript[idx + 1]?.time || Infinity;
+                const isActive = isPast && currentAudioTime < nextLineTime;
 
                 return (
-                  <div key={qIdx} className="bg-gray-50 rounded-xl p-5 border border-gray-200 shadow-sm">
-                    <div className="mb-4">
-                      <span className="inline-block bg-blue-600 text-white text-xs font-bold px-2.5 py-1 rounded-full mr-2">Q{qIdx + 1}</span>
-                      <span className="text-gray-900 font-bold text-base" dangerouslySetInnerHTML={{ __html: q.questionText }} />
-                    </div>
-
-                    <div className="space-y-2">
-                      {q.options?.map((opt, optIdx) => {
-                        let optClass = 'bg-white border border-gray-300 hover:border-blue-500 hover:bg-blue-50 cursor-pointer text-black';
-                        if (isRevealed) {
-                          if (optIdx === correctIdx) optClass = 'bg-green-100 border-2 border-green-600 text-green-800 font-bold';
-                          else if (userAnswer === optIdx + 1) optClass = 'bg-red-100 border-2 border-red-600 text-red-700 line-through';
-                          else optClass = 'bg-gray-100 border border-gray-200 text-gray-400';
-                        }
-                        return (
-                          <button
-                            key={optIdx}
-                            onClick={() => {
-                              if(isRevealed) return;
-                              setAnswers(prev => ({ ...prev, [qKey]: optIdx + 1 }));
-                              setRevealed(prev => ({ ...prev, [qKey]: true }));
-                            }}
-                            disabled={isRevealed}
-                            className={`w-full text-left px-4 py-3 rounded-lg transition-all text-sm font-medium ${optClass}`}
-                            dangerouslySetInnerHTML={{ __html: opt }}
-                          />
-                        );
-                      })}
+                  <div
+                    key={idx}
+                    onClick={() => seekToTime(line.time)}
+                    className={`p-3.5 rounded-xl cursor-pointer transition-all duration-200 border flex items-start gap-3 ${
+                      isActive
+                        ? 'bg-blue-500/15 border-blue-500 text-blue-600 dark:text-blue-300 font-bold shadow-sm ring-1 ring-blue-500 translate-x-1'
+                        : isPast
+                        ? 'bg-[var(--color-bg-secondary)] border-[var(--color-border)] text-[var(--color-text-primary)] hover:border-blue-500/60'
+                        : 'bg-[var(--color-bg-secondary)]/50 border-[var(--color-border)] text-[var(--color-text-muted)] hover:border-blue-500/40'
+                    }`}
+                  >
+                    <span className="font-mono text-[10px] font-bold px-2 py-0.5 rounded bg-[var(--color-bg-primary)] text-[var(--color-text-muted)] border border-[var(--color-border)] shrink-0 mt-0.5">
+                      {formatTime(line.time)}
+                    </span>
+                    
+                    <div className="flex-1">
+                      {line.speaker && (
+                        <span className={`inline-block text-[10px] font-extrabold px-2 py-0.5 rounded mr-2 ${getSpeakerBadgeStyle(line.speaker)}`}>
+                          {line.speaker}
+                        </span>
+                      )}
+                      <span className="text-sm sm:text-base leading-relaxed">{line.text}</span>
                     </div>
                   </div>
                 );
               })}
             </div>
-
-            {/* Real-time Script Reveal */}
-            <div className="border-t-2 border-dashed border-gray-300 pt-6">
-              {!showScript ? (
-                <button 
-                  onClick={() => setShowScript(true)}
-                  className="w-full py-4 bg-gray-100 hover:bg-gray-200 border-2 border-gray-300 rounded-xl font-bold text-gray-700 transition flex items-center justify-center gap-2"
-                >
-                  <span>📝</span> Reveal Audio Script (Transcript)
-                </button>
-              ) : (
-                <div className="bg-blue-50 rounded-xl border-2 border-blue-200 overflow-hidden shadow-sm">
-                  <div className="bg-blue-100 px-4 py-3 border-b border-blue-200 flex justify-between items-center">
-                    <span className="font-bold text-blue-900 flex items-center gap-2">
-                      <span className="animate-pulse text-red-500">●</span> Live Transcript (Karaoke)
-                    </span>
-                    <button onClick={() => setShowScript(false)} className="text-blue-700 hover:text-blue-900 text-xs font-bold px-2 py-1 bg-white rounded border border-blue-300 shadow-sm">Hide</button>
-                  </div>
-                  <div className="p-5 max-h-[300px] overflow-y-auto space-y-3 audio-control-area">
-                    {data?.transcript?.map((line, i) => {
-                      const isPast = currentAudioTime >= line.time;
-                      const nextLineTime = data.transcript[i + 1]?.time || Infinity;
-                      const isActive = isPast && currentAudioTime < nextLineTime;
-
-                      return (
-                        <div 
-                          key={i} 
-                          className={`p-2 rounded transition-all duration-300 cursor-pointer hover:bg-blue-100 ${isActive ? 'bg-yellow-200 shadow font-bold text-black border-l-4 border-yellow-500' : isPast ? 'text-gray-800' : 'text-gray-400'}`}
-                          onClick={() => {
-                            if (audioRef.current && mode !== 'exam') {
-                              audioRef.current.currentTime = line.time;
-                              audioRef.current.play();
-                            }
-                          }}
-                        >
-                          {line.speaker && <span className="font-bold text-blue-800 mr-2 bg-blue-100 px-2 py-0.5 rounded text-xs">{line.speaker}</span>}
-                          <span className="text-base">{line.text}</span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* Prev/Next Buttons */}
-            <div className="flex justify-between items-center mt-8 pt-4 border-t border-gray-200">
-              <button 
-                onClick={() => prevChapter && navigateToChapter(prevChapter.id)}
-                disabled={!prevChapter}
-                className={`px-4 py-2 rounded-lg text-sm font-bold transition ${prevChapter ? 'bg-gray-800 hover:bg-gray-700 text-white' : 'bg-gray-200 text-gray-400 cursor-not-allowed'}`}
-              >
-                &larr; Prev
-              </button>
-              <button 
-                onClick={() => nextChapter && navigateToChapter(nextChapter.id)}
-                disabled={!nextChapter}
-                className={`px-4 py-2 rounded-lg text-sm font-bold transition ${nextChapter ? 'bg-blue-600 hover:bg-blue-500 text-white' : 'bg-gray-200 text-gray-400 cursor-not-allowed'}`}
-              >
-                Next &rarr;
-              </button>
-            </div>
-            
-          </div>
+          )}
         </div>
+
+        {/* ================= BOTTOM PAGINATION & NAVIGATION ================= */}
+        <div className="flex items-center justify-between gap-4 pt-6 border-t border-[var(--color-border)]">
+          <button
+            onClick={() => prevChapter && navigateToChapter(prevChapter.id)}
+            disabled={!prevChapter}
+            className={`px-5 py-3 rounded-xl text-xs font-bold transition flex items-center gap-1.5 ${
+              prevChapter
+                ? 'bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-[var(--color-text-primary)] hover:border-blue-500 hover:shadow-md'
+                : 'opacity-40 bg-[var(--color-bg-secondary)] text-[var(--color-text-muted)] cursor-not-allowed'
+            }`}
+          >
+            &larr; Previous Section
+          </button>
+
+          <span className="text-xs font-bold text-[var(--color-text-muted)]">
+            Section {currentChapterIndex + 1} of {allChapters.length}
+          </span>
+
+          <button
+            onClick={() => nextChapter && navigateToChapter(nextChapter.id)}
+            disabled={!nextChapter}
+            className={`px-6 py-3 rounded-xl text-xs font-bold transition flex items-center gap-1.5 ${
+              nextChapter
+                ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-md shadow-blue-500/20'
+                : 'opacity-40 bg-[var(--color-bg-secondary)] text-[var(--color-text-muted)] cursor-not-allowed'
+            }`}
+          >
+            Next Section &rarr;
+          </button>
+        </div>
+
       </div>
     </div>
   );
