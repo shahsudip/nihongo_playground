@@ -59,7 +59,8 @@ def validate_chapter(data, filename):
 
         # Option count (reading/grammar = 4; some listening = 3 for 即時応答)
         q_stype = q.get('_sub_type', '')
-        expected_opts = 3 if q_stype == 'quick_response' else 4
+        is_quick_response = q_stype == 'quick_response' or data.get('sectionType') == 'listening_response'
+        expected_opts = 3 if is_quick_response else 4
         if len(opts) != expected_opts:
             errors.append(f'{ctx}: Expected {expected_opts} options, got {len(opts)}')
 

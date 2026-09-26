@@ -6,93 +6,99 @@
   "weekTitle": "第10週",
   "dayTitle": "4日目",
   "sectionTitle": "概要理解",
-  "sectionTitleEn": "Overview Comprehension",
-  "sections": [
+  "sectionTitleEn": "Summary comprehension",
+  "sectionType": "listening_summary",
+  "pageRef": "p.181",
+  "questions": [
     {
-      "type": "overview_comprehension",
-      "title": "概要理解",
-      "titleEn": "Summary comprehension",
-      "instruction": "<ruby>問題用紙<rt>もんだいようし</rt></ruby>に<ruby>何<rt>なに</rt></ruby>も<ruby>印刷<rt>いんさつ</rt></ruby>されていません。この<ruby>問題<rt>もんだい</rt></ruby>は、<ruby>全体<rt>ぜんたい</rt></ruby>としてどんな<ruby>内容<rt>ないよう</rt></ruby>かを<ruby>聞<rt>き</rt></ruby>く<ruby>問題<rt>もんだい</rt></ruby>です。<ruby>話<rt>はなし</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に<ruby>質問<rt>しつもん</rt></ruby>はありません。まず<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてください。それから、<ruby>質問<rt>しつもん</rt></ruby>と<ruby>選択肢<rt>せんたくし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、1から4の<ruby>中<rt>なか</rt></ruby>から、<ruby>最<rt>もっ</rt></ruby>もよいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>んでください。",
-      "questions": [
-        {
-          "number": 1,
-          "stem": "音声を聞いて答えてください。",
-          "options": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>レポーターは水耕栽培が、自然環境による影響を受けな<br/>いこと、害虫の被害がないこと、成長のスピードが速い<br/>ことについて話している。ここから、「水耕栽培がもた<br/>らすメリット」について話していることがわかる。"
-        },
-        {
-          "number": 2,
-          "stem": "音声を聞いて答えてください。",
-          "options": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>専門家が最後に「孤独死を防止する糸口になるのではな<br/>いでしょうか」と言っていることから、「孤独死を防ぐ<br/>方法」について話していることがわかる。"
-        },
-        {
-          "number": 3,
-          "stem": "音声を聞いて答えてください。",
-          "options": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>先生は、レポートは「ある程度書き方が決まっている」<br/>「こつさえ飲み込んでしまえば、誰でも書けるようにな<br/>ります」「そんなに身構えないで」と言っていることか<br/>ら、答えを選ぶ。"
-        },
-        {
-          "number": 4,
-          "stem": "音声を聞いて答えてください。",
-          "options": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>女の人は、防災グッズの「置き場」「置き場所」「設置<br/>場所」など、場所に関する話をしている。"
-        },
-        {
-          "number": 5,
-          "stem": "音声を聞いて答えてください。",
-          "options": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>レポーターは「ちょっと変わった植物園」にはどんな植<br/>物が栽培、展示されているのかについて話している。"
-        },
-        {
-          "number": 6,
-          "stem": "音声を聞いて答えてください。",
-          "options": [
-            "1",
-            "2",
-            "3",
-            "4"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>男の人は「柔軟な発想を持った、若い力が必要」、「新<br/>しい提案や独創的なアイディアを持ち、～そんな人材を<br/>募集しています」と話していることから答えを選ぶ。"
-        }
-      ]
+      "number": 1,
+      "trackId": "N1-92",
+      "audioSrc": "/audio/zenkamoku_n1/N1-92.mp3",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 1,
+      "correctOption": "1",
+      "script": "",
+      "explanation": "<b>【正解】１</b><br/>レポーターは水耕栽培が、自然環境による影響を受けな<br/>いこと、害虫の被害がないこと、成長のスピードが速い<br/>ことについて話している。ここから、「水耕栽培がもた<br/>らすメリット」について話していることがわかる。"
+    },
+    {
+      "number": 2,
+      "trackId": "N1-93",
+      "audioSrc": "/audio/zenkamoku_n1/N1-93.mp3",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 4,
+      "correctOption": "4",
+      "script": "",
+      "explanation": "<b>【正解】４</b><br/>専門家が最後に「孤独死を防止する糸口になるのではな<br/>いでしょうか」と言っていることから、「孤独死を防ぐ<br/>方法」について話していることがわかる。"
+    },
+    {
+      "number": 3,
+      "trackId": "N1-94",
+      "audioSrc": "/audio/zenkamoku_n1/N1-94.mp3",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 2,
+      "correctOption": "2",
+      "script": "",
+      "explanation": "<b>【正解】２</b><br/>先生は、レポートは「ある程度書き方が決まっている」<br/>「こつさえ飲み込んでしまえば、誰でも書けるようにな<br/>ります」「そんなに身構えないで」と言っていることか<br/>ら、答えを選ぶ。"
+    },
+    {
+      "number": 4,
+      "trackId": "N1-95",
+      "audioSrc": "/audio/zenkamoku_n1/N1-95.mp3",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 3,
+      "correctOption": "3",
+      "script": "",
+      "explanation": "<b>【正解】３</b><br/>女の人は、防災グッズの「置き場」「置き場所」「設置<br/>場所」など、場所に関する話をしている。"
+    },
+    {
+      "number": 5,
+      "trackId": "N1-96",
+      "audioSrc": "/audio/zenkamoku_n1/N1-96.mp3",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 2,
+      "correctOption": "2",
+      "script": "",
+      "explanation": "<b>【正解】２</b><br/>レポーターは「ちょっと変わった植物園」にはどんな植<br/>物が栽培、展示されているのかについて話している。"
+    },
+    {
+      "number": 6,
+      "trackId": "N1-97",
+      "audioSrc": "/audio/zenkamoku_n1/N1-97.mp3",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": 3,
+      "correctOption": "3",
+      "script": "",
+      "explanation": "<b>【正解】３</b><br/>男の人は「柔軟な発想を持った、若い力が必要」、「新<br/>しい提案や独創的なアイディアを持ち、～そんな人材を<br/>募集しています」と話していることから答えを選ぶ。"
     }
   ]
 }

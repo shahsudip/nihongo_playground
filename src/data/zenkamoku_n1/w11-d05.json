@@ -7,182 +7,204 @@
   "dayTitle": "5日目",
   "sectionTitle": "即時応答",
   "sectionTitleEn": "Quick response",
-  "sections": [
+  "sectionType": "listening_response",
+  "pageRef": "p.187",
+  "questions": [
     {
-      "type": "quick_response",
-      "title": "即時応答",
-      "titleEn": "Quick response",
-      "instruction": "<ruby>問題用紙<rt>もんだいようし</rt></ruby>に<ruby>何<rt>なに</rt></ruby>も<ruby>印刷<rt>いんさつ</rt></ruby>されていません。まず<ruby>文<rt>ぶん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてください。それから、それに<ruby>対<rt>たい</rt></ruby>する<ruby>返事<rt>へんじ</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、1から3の<ruby>中<rt>なか</rt></ruby>から、<ruby>最<rt>もっと</rt></ruby>もよいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>んでください。",
-      "questions": [
-        {
-          "number": 1,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/><ruby>害<rt>がい</rt></ruby>する：損なう 傷つける hurt"
-        },
-        {
-          "number": 2,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/><ruby>以<rt>い</rt></ruby><ruby>前<rt>ぜん</rt></ruby>にもまして＝前よりもっと more than before"
-        },
-        {
-          "number": 3,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>いかなる～でも＝どんな～でも no matter what ～"
-        },
-        {
-          "number": 4,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>そっけない：対応や態度が冷たく、思いやりがない様子<br/>curt; cold"
-        },
-        {
-          "number": 5,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/><ruby>かみ合<rt>あ</rt></ruby>う：それぞれ違う内容を持つ者同士がしっくりと<br/>合って、うまく事が進む 両方の凸凹の部分がぴったり<br/>と合う mesh<br/>※「話がかみ合わない」は、「話題などがすれ違ってい<br/>てうまくいかない」という意味である。<br/>話がかみ合わない means “not on the same wavelength/page.”"
-        },
-        {
-          "number": 6,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/><ruby>～に照<rt>て</rt></ruby>らして＝～を参照して ～を確認しながら<br/>in the context of ～; according to ～"
-        },
-        {
-          "number": 7,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>～にも～ない＝～したいが、できない want to ～ but can’t ～"
-        },
-        {
-          "number": 8,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>～ところを＝～という状況なのに a time when ～"
-        },
-        {
-          "number": 9,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/><ruby>華<rt>はな</rt></ruby>やか(な)：際立って人目を引く様子 明るく美しい様<br/>子 glamorous"
-        },
-        {
-          "number": 10,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>とやかく＝あれこれと this and that (とやかく言う means “nag.”)"
-        },
-        {
-          "number": 11,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/><ruby>虫<rt>むし</rt></ruby>がいい：自分の都合ばかり考えている 身勝手である<br/>self-serving"
-        },
-        {
-          "number": 12,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>～ことはあっても…ことはない＝～可能性はあっても…<br/>可能性はない though may ～, probably never …"
-        },
-        {
-          "number": 13,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>～ばこそ＝～からこそ it is exactly because ～"
-        },
-        {
-          "number": 14,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>～ずくめ＝～ばかり completely ～"
-        }
-      ]
+      "number": 1,
+      "trackId": "N1-160",
+      "audioSrc": "/audio/zenkamoku_n1/N1-160.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 1,
+      "correctOption": "1",
+      "script": "",
+      "explanation": "<b>【正解】１</b><br/>害<br/>がい<br/>する：損なう 傷つける hurt"
+    },
+    {
+      "number": 2,
+      "trackId": "N1-161",
+      "audioSrc": "/audio/zenkamoku_n1/N1-161.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 1,
+      "correctOption": "1",
+      "script": "",
+      "explanation": "<b>【正解】１</b><br/>以<br/>い<br/>前<br/>ぜん<br/>にもまして＝前よりもっと more than before"
+    },
+    {
+      "number": 3,
+      "trackId": "N1-162",
+      "audioSrc": "/audio/zenkamoku_n1/N1-162.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 3,
+      "correctOption": "3",
+      "script": "",
+      "explanation": "<b>【正解】３</b><br/>いかなる～でも＝どんな～でも no matter what ～"
+    },
+    {
+      "number": 4,
+      "trackId": "N1-163",
+      "audioSrc": "/audio/zenkamoku_n1/N1-163.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 2,
+      "correctOption": "2",
+      "script": "",
+      "explanation": "<b>【正解】２</b><br/>そっけない：対応や態度が冷たく、思いやりがない様子<br/>curt; cold"
+    },
+    {
+      "number": 5,
+      "trackId": "N1-164",
+      "audioSrc": "/audio/zenkamoku_n1/N1-164.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 2,
+      "correctOption": "2",
+      "script": "",
+      "explanation": "<b>【正解】２</b><br/>かみ合<br/>あ<br/>う：それぞれ違う内容を持つ者同士がしっくりと<br/>合って、うまく事が進む 両方の凸凹の部分がぴったり<br/>と合う mesh<br/>※「話がかみ合わない」は、「話題などがすれ違ってい<br/>てうまくいかない」という意味である。<br/>話がかみ合わない means “not on the same wavelength/page.”"
+    },
+    {
+      "number": 6,
+      "trackId": "N1-165",
+      "audioSrc": "/audio/zenkamoku_n1/N1-165.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 1,
+      "correctOption": "1",
+      "script": "",
+      "explanation": "<b>【正解】１</b><br/>～に照<br/>て<br/>らして＝～を参照して ～を確認しながら<br/>in the context of ～; according to ～"
+    },
+    {
+      "number": 7,
+      "trackId": "N1-166",
+      "audioSrc": "/audio/zenkamoku_n1/N1-166.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 1,
+      "correctOption": "1",
+      "script": "",
+      "explanation": "<b>【正解】１</b><br/>～にも～ない＝ ～し たい が、 で きな い want to ～ but can’t ～"
+    },
+    {
+      "number": 8,
+      "trackId": "N1-167",
+      "audioSrc": "/audio/zenkamoku_n1/N1-167.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 3,
+      "correctOption": "3",
+      "script": "",
+      "explanation": "<b>【正解】３</b><br/>～ところを＝～という状況なのに a time when ～"
+    },
+    {
+      "number": 9,
+      "trackId": "N1-168",
+      "audioSrc": "/audio/zenkamoku_n1/N1-168.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 1,
+      "correctOption": "1",
+      "script": "",
+      "explanation": "<b>【正解】１</b><br/>華<br/>はな<br/>やか(な)：際立って人目を引く様子 明るく美しい様<br/>子 glamorous"
+    },
+    {
+      "number": 10,
+      "trackId": "N1-169",
+      "audioSrc": "/audio/zenkamoku_n1/N1-169.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 2,
+      "correctOption": "2",
+      "script": "",
+      "explanation": "<b>【正解】２</b><br/>とやかく＝あ れ これ と this and that (とやかく言う means “nag.”)"
+    },
+    {
+      "number": 11,
+      "trackId": "N1-170",
+      "audioSrc": "/audio/zenkamoku_n1/N1-170.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 1,
+      "correctOption": "1",
+      "script": "",
+      "explanation": "<b>【正解】１</b><br/>虫<br/>むし<br/>がいい：自分の都合ばかり考えている 身勝手である<br/>self-serving"
+    },
+    {
+      "number": 12,
+      "trackId": "N1-171",
+      "audioSrc": "/audio/zenkamoku_n1/N1-171.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 2,
+      "correctOption": "2",
+      "script": "",
+      "explanation": "<b>【正解】２</b><br/>～ことはあっても…ことはない＝～可能性はあっても…<br/>可能性はない though may ～, probably never …"
+    },
+    {
+      "number": 13,
+      "trackId": "N1-172",
+      "audioSrc": "/audio/zenkamoku_n1/N1-172.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 3,
+      "correctOption": "3",
+      "script": "",
+      "explanation": "<b>【正解】３</b><br/>～ばこそ＝～からこそ it is exactly because ～"
+    },
+    {
+      "number": 14,
+      "trackId": "N1-173",
+      "audioSrc": "/audio/zenkamoku_n1/N1-173.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 1,
+      "correctOption": "1",
+      "script": "",
+      "explanation": "<b>【正解】１</b><br/>～ずくめ＝～ばかり completely ～"
     }
   ]
 }

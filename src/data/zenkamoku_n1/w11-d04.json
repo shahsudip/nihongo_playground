@@ -7,182 +7,204 @@
   "dayTitle": "4日目",
   "sectionTitle": "即時応答",
   "sectionTitleEn": "Quick response",
-  "sections": [
+  "sectionType": "listening_response",
+  "pageRef": "p.186",
+  "questions": [
     {
-      "type": "quick_response",
-      "title": "即時応答",
-      "titleEn": "Quick response",
-      "instruction": "<ruby>問題用紙<rt>もんだいようし</rt></ruby>に<ruby>何<rt>なに</rt></ruby>も<ruby>印刷<rt>いんさつ</rt></ruby>されていません。まず<ruby>文<rt>ぶん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてください。それから、それに<ruby>対<rt>たい</rt></ruby>する<ruby>返事<rt>へんじ</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、1から3の<ruby>中<rt>なか</rt></ruby>から、<ruby>最<rt>もっと</rt></ruby>もよいものを<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>んでください。",
-      "questions": [
-        {
-          "number": 1,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>〜かいがある：「苦労して～する価値がある」という意<br/>味。いい評価をするときに使う。be worth ～"
-        },
-        {
-          "number": 2,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/><ruby>容<rt>よう</rt></ruby><ruby>体<rt>だい</rt></ruby>：病気やけがの様子 condition (of a patient)"
-        },
-        {
-          "number": 3,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>いやに＝いつもとは違って、変に unusually<br/><ruby>ご機<rt>き</rt></ruby><ruby>嫌<rt>げん</rt></ruby>：機嫌がよく、気分がいい cheerful"
-        },
-        {
-          "number": 4,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/><ruby>取<rt>と</rt></ruby><ruby>り寄<rt>よ</rt></ruby>せ：注文して送ってもらうこと order"
-        },
-        {
-          "number": 5,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>～だからといって、…ものではない＝～という理由があ<br/>っても、…するべきではない just because ～ doesn’t mean …"
-        },
-        {
-          "number": 6,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/><ruby>～を控<rt>ひか</rt></ruby>えた＝近い将来に～の予定がある with ～ coming up"
-        },
-        {
-          "number": 7,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/><ruby>～極<rt>きわ</rt></ruby>まりない：「これ以上ないくらいに～だ」という意<br/>味。程度が非常に高いことを表す。couldn’t be any ～-er/more ～"
-        },
-        {
-          "number": 8,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>～たところで＝いくら～ても no matter if ～<br/>※後ろには「しょうがない」「無駄だ」「意味がない」<br/>などの否定的な表現がくる。<br/>This pattern is followed by expressions with negative connotations, such<br/>as しょうがない, 無駄だ, or 意味がない."
-        },
-        {
-          "number": 9,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/><ruby>～た手<rt>て</rt></ruby><ruby>前<rt>まえ</rt></ruby>…＝～という状況なので、…するしかない<br/>given that ～ (have no choice but to) …"
-        },
-        {
-          "number": 10,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>～かろうが：どのような状況であっても、変わらないこ<br/>とを表す。no matter how ～"
-        },
-        {
-          "number": 11,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>ひび：細く入った割れ目 crack"
-        },
-        {
-          "number": 12,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>あべこべ：順番や位置、関係などが反対であること<br/>the other way around<br/><ruby>つじつまが合<rt>あ</rt></ruby>う：一貫性があり、前に言ったことと後で<br/>言ったことが一致している様子 make sense"
-        },
-        {
-          "number": 13,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/>それにしては＝予想と違って that being said<br/>※前に述べたことから当然予想されるような結果になっ<br/>ていないことを表す。Expresses that some situation is contrary to<br/>what was said in the preceding statement."
-        },
-        {
-          "number": 14,
-          "stem": "",
-          "options": [
-            "1",
-            "2",
-            "3"
-          ],
-          "correct": 1,
-          "correctOption": "1",
-          "explanation": "<b>【正解】1</b><br/><ruby>几<rt>き</rt></ruby><ruby>帳<rt>ちょう</rt></ruby><ruby>面<rt>めん</rt></ruby>さ：何事にも丁寧で、細かいところまで物事をき<br/>ちんと行う様子 meticulous"
-        }
-      ]
+      "number": 1,
+      "trackId": "N1-146",
+      "audioSrc": "/audio/zenkamoku_n1/N1-146.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 2,
+      "correctOption": "2",
+      "script": "",
+      "explanation": "<b>【正解】２</b><br/>〜かいがある：「苦労して～する価値がある」という意<br/>味。いい評価をするときに使う。be worth ～"
+    },
+    {
+      "number": 2,
+      "trackId": "N1-147",
+      "audioSrc": "/audio/zenkamoku_n1/N1-147.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 1,
+      "correctOption": "1",
+      "script": "",
+      "explanation": "<b>【正解】１</b><br/>容<br/>よう<br/>体<br/>だい<br/>：病気やけがの様子 condition (of a patient)"
+    },
+    {
+      "number": 3,
+      "trackId": "N1-148",
+      "audioSrc": "/audio/zenkamoku_n1/N1-148.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 3,
+      "correctOption": "3",
+      "script": "",
+      "explanation": "<b>【正解】３</b><br/>いやに＝いつもとは違って、変に unusually<br/>ご機<br/>き<br/>嫌<br/>げん<br/>：機嫌がよく、気分がいい cheerful"
+    },
+    {
+      "number": 4,
+      "trackId": "N1-149",
+      "audioSrc": "/audio/zenkamoku_n1/N1-149.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 1,
+      "correctOption": "1",
+      "script": "",
+      "explanation": "<b>【正解】１</b><br/>取<br/>と<br/>り寄<br/>よ<br/>せ：注文して送ってもらうこと order"
+    },
+    {
+      "number": 5,
+      "trackId": "N1-150",
+      "audioSrc": "/audio/zenkamoku_n1/N1-150.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 3,
+      "correctOption": "3",
+      "script": "",
+      "explanation": "<b>【正解】３</b><br/>～だからといって、…ものではない＝～という理由があ<br/>っても、…するべきではない just because ～ doesn’t mean …"
+    },
+    {
+      "number": 6,
+      "trackId": "N1-151",
+      "audioSrc": "/audio/zenkamoku_n1/N1-151.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 1,
+      "correctOption": "1",
+      "script": "",
+      "explanation": "<b>【正解】１</b><br/>～を控<br/>ひか<br/>えた＝近い将来に～の予定がある with ～ coming up"
+    },
+    {
+      "number": 7,
+      "trackId": "N1-152",
+      "audioSrc": "/audio/zenkamoku_n1/N1-152.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 2,
+      "correctOption": "2",
+      "script": "",
+      "explanation": "<b>【正解】２</b><br/>～極<br/>きわ<br/>ま り な い： 「 こ れ 以 上 な い く ら い に ～ だ 」 と い う 意<br/>味。程度が非常に高い こ と を表す。couldn’t be any ～-er/more ～"
+    },
+    {
+      "number": 8,
+      "trackId": "N1-153",
+      "audioSrc": "/audio/zenkamoku_n1/N1-153.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 3,
+      "correctOption": "3",
+      "script": "",
+      "explanation": "<b>【正解】３</b><br/>～たところで＝いくら～ても no matter if ～<br/>※後ろには「しょうがない」「無駄だ」「意味がない」<br/>などの否定的な表現がくる。<br/>This pattern is followed by expressions with negative connotations, such<br/>as しょうがない, 無駄だ, or 意味がない."
+    },
+    {
+      "number": 9,
+      "trackId": "N1-154",
+      "audioSrc": "/audio/zenkamoku_n1/N1-154.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 2,
+      "correctOption": "2",
+      "script": "",
+      "explanation": "<b>【正解】２</b><br/>～た手<br/>て<br/>前<br/>まえ<br/>…＝～という状況なので、…するしかない<br/>given that ～ (have no choice but to) …"
+    },
+    {
+      "number": 10,
+      "trackId": "N1-155",
+      "audioSrc": "/audio/zenkamoku_n1/N1-155.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 3,
+      "correctOption": "3",
+      "script": "",
+      "explanation": "<b>【正解】３</b><br/>～かろうが：どのような状況であっても、変わらないこ<br/>とを表す。no matter how ～"
+    },
+    {
+      "number": 11,
+      "trackId": "N1-156",
+      "audioSrc": "/audio/zenkamoku_n1/N1-156.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 1,
+      "correctOption": "1",
+      "script": "",
+      "explanation": "<b>【正解】１</b><br/>ひび：細く入った割れ目 crack"
+    },
+    {
+      "number": 12,
+      "trackId": "N1-157",
+      "audioSrc": "/audio/zenkamoku_n1/N1-157.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 3,
+      "correctOption": "3",
+      "script": "",
+      "explanation": "<b>【正解】３</b><br/>あべこべ：順番や位置、関係などが反対であること<br/>the other way around<br/>つじつまが合<br/>あ<br/>う：一貫性があり、前に言ったことと後で<br/>言ったことが一致している様子 make sense"
+    },
+    {
+      "number": 13,
+      "trackId": "N1-158",
+      "audioSrc": "/audio/zenkamoku_n1/N1-158.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 1,
+      "correctOption": "1",
+      "script": "",
+      "explanation": "<b>【正解】１</b><br/>それにしては＝予想と違って that being said<br/>※前に述べたことから当然予想されるような結果になっ<br/>ていないことを表す。Expresses that some situation is contrary to<br/>what was said in the preceding statement."
+    },
+    {
+      "number": 14,
+      "trackId": "N1-159",
+      "audioSrc": "/audio/zenkamoku_n1/N1-159.mp3",
+      "options": [
+        "1",
+        "2",
+        "3"
+      ],
+      "correct": 2,
+      "correctOption": "2",
+      "script": "",
+      "explanation": "<b>【正解】２</b><br/>几<br/>き<br/>帳<br/>ちょう<br/>面<br/>めん<br/>さ：何事にも丁寧で、細かいところまで物事をき<br/>ちんと行う様子 meticulous"
     }
   ]
 }
