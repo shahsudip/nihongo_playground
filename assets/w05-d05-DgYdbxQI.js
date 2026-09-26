@@ -1,0 +1,42 @@
+const e="zenkamoku-n1-best-workbook",s="w05-d05",r=5,i=5,d="第5週",p="5日目",t="内容理解（短文）",n="Reading Comprehension (Short Passages)",o="次の(1)から(4)の文章を読んで、後の問いに対する答えとして最もよいものを、１・２・３・４から一つ選びなさい。",a=[{type:"short_passage",title:"内容理解（短文） (1)",titleEn:"Short Passage (1)",pageRef:"p.82",passage:`<div class="speed-master-lined-paper whitespace-pre-line font-serif leading-loose">
+　長い間、呼吸という働きは、脳の生命維持をつかさどる<sup>(注)</sup>部位の指令によって、心臓の鼓動や睡眠と同じく自動的になされているものだと考えられてきました。けれども、実は、呼吸によって自分の精神状態を変えることもできます。呼吸の速さを変えたり、呼吸について多少の注意を払ったりすることには、無意識の呼吸をつかさどるのとは別の、脳の他の部位が関わっていることがわかってきています。
+　ヒトも他の動物も、走ったり休んだりパニックになったりすると、自然に呼吸が変化しますが、私たちヒトは、意識して呼吸を変えたり整えたりすることのできる唯一の動物です。
+<div class="text-right text-sm text-gray-500 mt-2">（エラ・フランシス・サンダース 著　前田まゆみ 訳『ことばにできない宇宙のふしぎ』創元社による）</div>
+</div>`,passageNote:"(注) つかさどる：管理する、支配する",questions:[{number:1,stem:"この文章の内容に合うものはどれか。",options:["1. ヒトは意識的に呼吸することで、脳の他の部位を活性化させられるということが明らかになった。","2. 呼吸には２種類あり、あらゆる生き物は精神状態に合わせて意識的に呼吸法を選んでいる。","3. 動物の呼吸の仕方は状況に応じて自動的に変わるが、ヒトは意図的にも変えることができる。","4. 生き物は呼吸が変化することで精神状態が乱れ、パニックを起こすことがある。"],correct:3,correctOption:"3. 動物の呼吸の仕方は状況に応じて自動的に変わるが、ヒトは意図的にも変えることができる。",explanation:"<b>【正解】3. 動物の呼吸の仕方は状況に応じて自動的に変わるが、ヒトは意図的にも変えることができる。</b><br/>「ヒトも他の動物も、走ったり休んだりパニックになったりすると、自然に呼吸が変化しますが、私たちヒトは、意識して呼吸を変えたり整えたりすることのできる唯一の動物です（6-7行目）」から答えがわかる。"}]},{type:"short_passage",title:"内容理解（短文） (2)",titleEn:"Short Passage (2)",pageRef:"p.83",passage:`<div class="text-xs text-gray-500 mb-2">以下は、ある会社の社内メールである。</div>
+<div class="speed-master-email-card rounded-lg border border-stone-400 dark:border-stone-600 overflow-hidden shadow-sm font-sans">
+  <div class="bg-stone-200 dark:bg-stone-800 px-4 py-2 border-b border-stone-300 dark:border-stone-700 flex items-center justify-between text-xs text-stone-600 dark:text-stone-300">
+    <span>Mail - 月例報告会 日程変更のお知らせ</span>
+    <div class="flex space-x-1">
+      <span class="inline-block w-3 h-3 border border-stone-400 rounded-sm"></span>
+      <span class="inline-block w-3 h-3 border border-stone-400 rounded-sm"></span>
+      <span class="inline-block w-3 h-3 border border-stone-400 rounded-sm"></span>
+    </div>
+  </div>
+  <div class="p-4 bg-stone-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 text-sm space-y-1 border-b border-stone-200 dark:border-stone-800 font-mono text-xs">
+    <div><span class="text-stone-500 inline-block w-16">From:</span> k-sato@jt-inc.co.jp</div>
+    <div><span class="text-stone-500 inline-block w-16">To:</span> bucho_member@jt-inc.co.jp</div>
+    <div><span class="text-stone-500 inline-block w-16">件名:</span> 月例報告会 日程変更のお知らせ</div>
+  </div>
+  <div class="p-6 bg-amber-50/20 dark:bg-slate-900/60 text-stone-800 dark:text-stone-100 text-sm leading-relaxed space-y-4">
+    <div class="font-medium">部長各位</div>
+    <p>お疲れさまです。管理部総務課の<ruby>佐藤<rt>さとう</rt></ruby>です。<br/>
+    10日に予定していました今月の月例報告会ですが、秘書課から社長のスケジュール変更の連絡がありましたため、以下のとおり変更いたします。</p>
+    <div class="my-2 pl-4 space-y-1">
+      <div>日時　9月15日（水）14時から</div>
+      <div>場所　第１会議室</div>
+    </div>
+    <p>急な変更ではございますが、全員参加を原則といたしますので、スケジュールをご調整ください。やむを得ず参加できない場合は、代理を立てていただくようお願いいたします。<br/>
+    なお、9月10日にはベトナム支社の支社長が取引先の社長をお連れして、本社を見学する予定となっております。それにともない、５階フロアの全会議室の使用はできませんので、併せてご注意ください。</p>
+    <div class="pt-4 text-xs text-stone-600 dark:text-stone-400 border-t border-dashed border-stone-300 dark:border-stone-700 space-y-1">
+      <div>=======================</div>
+      <div class="font-medium text-stone-800 dark:text-stone-200">管理部総務課　<ruby>佐藤<rt>さとう</rt></ruby><ruby>一子<rt>かずこ</rt></ruby>（内線：1005）</div>
+    </div>
+  </div>
+</div>`,questions:[{number:1,stem:"このメールからわかることは何か。",options:["1. 月例報告会は秘書課の都合により変更を余儀なくされた。","2. 月例報告会当日に５階の会議室を予約している場合は変更しなければならない。","3. 部長が月例報告会に出席できない場合は、部長に代わる者が出席しなければならない。","4. 理由のいかんによらず、月例報告会には部長が出席しなければならない。"],correct:3,correctOption:"3. 部長が月例報告会に出席できない場合は、部長に代わる者が出席しなければならない。",explanation:"<b>【正解】3. 部長が月例報告会に出席できない場合は、部長に代わる者が出席しなければならない。</b><br/>「参加できない場合は、代理を立てていただくようお願いいたします」とあることから、部長が出席できない場合は、部長に代わる者が出席しなければならないことがわかる。"}]},{type:"short_passage",title:"内容理解（短文） (3)",titleEn:"Short Passage (3)",pageRef:"p.84",passage:`<div class="speed-master-vertical-card whitespace-pre-line">
+　仕事は心のとらえ方ひとつでまったく違ったものになります。例えば、「仕事はしょせん、生活の糧を得るための労役にしかすぎない」と思ってしまえば、一生、忍耐労働の対価として金銭をもらうという形が続いていきます。
+　ところが、「仕事はチャンスのかたまりだ」ととらえると、仕事は収入機会であるばかりでなく、成長機会、感動機会、触発機会、学習機会、貢献機会、財成機会になります。どんな仕事であれ、こうしたチャンスが目に見えない形で潜んでいます。
+<span class="text-xs text-gray-500 block mt-4">（村山昇『働き方の哲学 360度の視点で仕事を考える』ディスカヴァー・トゥエンティワンによる）</span>
+</div>`,questions:[{number:1,stem:"筆者の考えに合うのはどれか。",options:["1. 金銭のためだけの仕事はやめて、チャンスを与えてくれる仕事をするべきだ。","2. 金銭のための労働も様々な機会のある労働と等しく、かけがえがないと言える。","3. 仕事には多くのすばらしいチャンスがあるので、人生をかけて臨むべきだ。","4. 自分の視点を変えるだけで、つまらなかった仕事が様々なチャンスになりうる。"],correct:4,correctOption:"4. 自分の視点を変えるだけで、つまらなかった仕事が様々なチャンスになりうる。",explanation:"<b>【正解】4. 自分の視点を変えるだけで、つまらなかった仕事が様々なチャンスになりうる。</b><br/>「仕事は心のとらえ方ひとつでまったく違ったものになります(1行目)」「『仕事はチャンスのかたまりだ』ととらえると、仕事は収入機会であるばかりでなく、～になります(5-7行目)」から、自分の視点を変えるだけで、つまらない仕事も様々なチャンスになりうることがわかる。"}]},{type:"short_passage",title:"内容理解（短文） (4)",titleEn:"Short Passage (4)",pageRef:"p.85",passage:`<div class="speed-master-lined-paper whitespace-pre-line font-serif leading-loose">
+　学習指導場面では内発的動機づけが望ましいことはいうまでもない。しかし、この場面での教科学習<sup>(注1)</sup>は元来子どもが興味を示す対象とは思われないし、また教科学習を行う子どもがその学習の実社会での効用をあらかじめ認識してとり組んでいるとも思われない。それゆえ、学習活動を外側から応援する動機づけが必要とされる。それはたとえば、ことばによる賞賛や評価、賞の授与から、受容の表情・態度などの非言語的手段、教師によるフィードバック<sup>(注2)</sup>まで多様であるが、いずれも認知的動機づけを用いたところの外発的動機づけである。
+<div class="text-right text-sm text-gray-500 mt-2">（米澤富士雄・足立正常・倉盛一郎 編著『教育心理学』北大路書房による）</div>
+</div>`,passageNote:"(注1) 教科学習：学校教育で学習すべき知識や技術のこと。国語、算数、理科、社会など<br/>(注2) フィードバック：反応、評価、意見などを与えること",questions:[{number:1,stem:"筆者の考えに合うのはどれか。",options:["1. 子どもを学習活動にとり組ませるには、内発的動機づけだけでなく、外発的動機づけも用いることが必要だ。","2. 子どもが学習活動にとり組むにあたっては、内発的動機づけは必要なく、外発的動機づけを用いることが必要だ。","3. 子どもは外発的動機づけを用いられると、内発的動機づけが弱くなり、学習効果が下がる。","4. 教科学習の有用さを子どもに認識させることで、子どもの外発的動機づけを高めることができる。"],correct:1,correctOption:"1. 子どもを学習活動にとり組ませるには、内発的動機づけだけでなく、外発的動機づけも用いることが必要だ。",explanation:"<b>【正解】1. 子どもを学習活動にとり組ませるには、内発的動機づけだけでなく、外発的動機づけも用いることが必要だ。</b><br/>本文では、「内発的動機づけが望ましいことはいうまでもない(1行目)」としつつも、「学習活動を外側から応援する動機づけが必要とされる(3-4行目)」と述べられており、外発的動機づけの必要性を説いている。"}]}],c={bookId:e,chapterId:s,week:5,day:5,weekTitle:"第5週",dayTitle:"5日目",sectionTitle:t,sectionTitleEn:n,instruction:o,sections:a};export{e as bookId,s as chapterId,i as day,p as dayTitle,c as default,o as instruction,t as sectionTitle,n as sectionTitleEn,a as sections,r as week,d as weekTitle};

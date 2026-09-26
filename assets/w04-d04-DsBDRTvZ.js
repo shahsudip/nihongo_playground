@@ -1,0 +1,20 @@
+const r="zenkamoku-n1-best-workbook",t="w04-d04",b=4,a=4,s="第4週",c="4日目",e="文章の文法",n="Text Grammar",o=[{type:"text_grammar",title:"文章の文法",titleEn:"Text grammar",pageRef:"pp.52-53",instruction:"次の文章を読んで、文章全体の趣旨を踏まえて、［ １ ］から［ ５ ］の中に入る最もよいものを、１・２・３・４から一つ選びなさい。",passage:`<div class="speed-master-text-box whitespace-pre-line">
+　コンビニエンスストア本部が加盟店に24時間営業を押しつければ、<ruby>独占禁止法<rt>（注１）</rt></ruby>に違反する可能性がある。そう警告する報告書を、<ruby>公正取引委員会<rt>（注２）</rt></ruby>がまとめた。
+　人手不足の中、コンビニは深夜勤務の従業員を確保するのが難しい。このため、営業時間の<ruby>短縮<rt>（注３）</rt></ruby>を求める加盟店が増えている。公取が大手8社を対象に行った調査では、約7割が希望していた。
+　しかし、見直しの動きは鈍い。この1年半で時短に踏み切った店舗は<span class="inline-block border-2 border-gray-800 dark:border-gray-200 px-2 py-0.5 mx-1 font-bold text-center rounded">［ １ ］</span>。本部は24時間営業を続けたいのが<ruby>本音<rt>ほんね</rt></ruby>だ。
+　背景には、加盟店との契約方式がある。店舗の売上高が伸びる<span class="inline-block border-2 border-gray-800 dark:border-gray-200 px-2 py-0.5 mx-1 font-bold text-center rounded">［ ２ ］</span>本部の収益も増える仕組みだ。本部は営業時間を長くして、売上高を増やそうとする。
+　<span class="inline-block border-2 border-gray-800 dark:border-gray-200 px-2 py-0.5 mx-1 font-bold text-center rounded">［ ３ ］</span>、多くの加盟店にとって深夜営業はデメリットも大きい。深夜帯は人件費などのコストがかさむ割に売上高が少なく、店舗の利益を押し下げがちだ。
+　24時間営業に限らず、本部と加盟店で利害が対立するような契約や取引、店舗戦略は多い。一定地域に集中して出店する「ドミナント戦略」もその一つだ。本部にとっては商品配送の効率が高まるといった利点があるが、加盟店は顧客を奪い合う形になり、収益が<span class="inline-block border-2 border-gray-800 dark:border-gray-200 px-2 py-0.5 mx-1 font-bold text-center rounded">［ ４ ］</span>。加盟店は店舗運営の<ruby>ノウハウ<rt>（注４）</rt></ruby>や商品を本部に依存している。その弱い立場につけ込んで、本部が加盟店に不利な取引を押しつけることは許されない。
+　コンビニの経営は転機を迎えている。人口減少などで、2019年末の店舗数は初めて前年比で減少に転じた。
+　成長期には本部と加盟店が利益を分け合えたが、売上高の伸び悩みと人件費の上昇に直面し、収益の基盤が揺らいでいる。
+　一方で、公共料金の支払いや住民票の発行、災害時の物資供給拠点としての活用など、社会インフラとしての機能を期待されるようになった。公取が独禁法をちらつかせて改革を迫るのは、このような側面を<span class="inline-block border-2 border-gray-800 dark:border-gray-200 px-2 py-0.5 mx-1 font-bold text-center rounded">［ ５ ］</span>。
+　安定的に店舗を運営できる仕組みの再構築が急務だ。ITを活用した店舗の無人化や省力化も検討されている。こうした経営の革新で、新たなコンビニのあり方を模索してほしい。
+
+<div class="text-right text-sm text-gray-600 dark:text-gray-400 mt-3">（毎日新聞2020年9月9日付朝刊による）</div>
+<div class="text-xs text-gray-500 dark:text-gray-400 mt-4 border-t pt-2 space-y-1">
+（注１）独占禁止法：公正な競争環境を保つための法律。「独禁法」と略される。<br/>
+（注２）公正取引委員会：公正な市場取引を監視する委員会。「公取」と略される。<br/>
+（注３）時短：時間の短縮<br/>
+（注４）ノウハウ：技術や知識、経験に関する情報
+</div>
+</div>`,questions:[{number:1,stem:"",options:["1. 約4％に限らない","2. 約4％に過ぎない","3. 約4％にとどまらない","4. 約4％に相違ない"],correct:2,correctOption:"2. 約4％に過ぎない",explanation:"<b>【正解】2. 約4％に過ぎない</b><br/>「時短に踏み切った店舗は約４％に過ぎない」<br/><b>～に過ぎない</b>：非常に低い程度を表す no more than ～"},{number:2,stem:"",options:["1. ほど","2. くらい","3. さえ","4. より"],correct:1,correctOption:"1. ほど",explanation:"<b>【正解】1. ほど</b><br/>「店舗の売り上げが伸びるほど本部の収益も増える仕組みだ。」<br/><b>～ほど…</b>＝～という変化があると、…という変化も起こる the more that ～, the more …"},{number:3,stem:"",options:["1. これにしては","2. これにつけて","3. これに対し","4. これに向けて"],correct:3,correctOption:"3. これに対し",explanation:"<b>【正解】3. これに対し</b><br/><b>これに対し</b>：前に述べたこととこれから述べることを対比させる表現。in contrast"},{number:4,stem:"",options:["1. 悪化するというものではない","2. 悪化しないとでもいうべきだ","3. 悪化しない次第である","4. 悪化しかねない"],correct:4,correctOption:"4. 悪化しかねない",explanation:"<b>【正解】4. 悪化しかねない</b><br/>「加盟店は顧客を奪い合う形になり、収益が悪化しかねない」<br/><b>～かねない</b>＝～という悪い結果になる可能性がある might ～ (undesirable outcome)"},{number:5,stem:"",options:["1. 考慮するというのだ","2. 考慮したためだろう","3. 考慮するのだそうだ","4. 考慮したまでのことだ"],correct:2,correctOption:"2. 考慮したためだろう",explanation:"<b>【正解】2. 考慮したためだろう</b><br/>内容から考えて「考慮したためだろう」となる。"}]}],d={bookId:r,chapterId:t,week:4,day:4,weekTitle:"第4週",dayTitle:"4日目",sectionTitle:e,sectionTitleEn:n,sections:o};export{r as bookId,t as chapterId,a as day,c as dayTitle,d as default,e as sectionTitle,n as sectionTitleEn,o as sections,b as week,s as weekTitle};

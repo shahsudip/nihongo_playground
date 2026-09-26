@@ -1,0 +1,32 @@
+const e="zenkamoku-n1-best-workbook",t="w05-d01",o=5,r=1,d="第5週",p="1日目",s="内容理解（短文）",n="Reading Comprehension (Short Passages)",a="次の(1)から(4)の文章を読んで、後の問いに対する答えとして最もよいものを、１・２・３・４から一つ選びなさい。",i=[{type:"short_passage",title:"内容理解（短文） (1)",titleEn:"Short Passage (1)",pageRef:"p.66",passage:`<div class="speed-master-lined-paper whitespace-pre-line font-serif leading-loose">
+　私たちは、自分の生き方に関わることを誰かに委ねるべきではない。また誰かに代わって考えて決めてあげることもやめなければならない。人間は自ら考えて決めたことにしか責任はとれないし、自分の人生には自分しか責任はとれないのだ。
+　もちろん学校にせよ会社にせよ、一から自分で決められるわけではないし、そんなことは必要ですらない。しかし自ら考え、自ら選び、自ら決められる余地がなければならない。そのためには、自由に考えられる場、何でも話していい場が、つねにでなくても、どこかで絶対に必要なのである。しかもそのさい、一人で考えるのではなく、他者と共に考えることが重要なのだ。
+<div class="text-right text-sm text-gray-500 mt-2">（梶谷真司『考えるとはどういうことか』幻冬舎による）</div>
+</div>`,questions:[{number:1,stem:"筆者は、生き方はどのように決めることが大事だと述べているか。",options:["1. 何でも話せる人とお互いに相談し合いながら決めること","2. 一人きりになって自らを見つめ、自問自答しながら決めること","3. 誰かと一緒に考え、最終的には自分で決めること","4. まずは一人で考え、その考えを他者に伝えて決めてもらうこと"],correct:3,correctOption:"3. 誰かと一緒に考え、最終的には自分で決めること",explanation:"<b>【正解】3. 誰かと一緒に考え、最終的には自分で決めること</b><br/>「大事だと述べている」のは何かを答える問題。最初の文の「～べきではない」と最後の文の「～が重要なのだ」に注目する。"}]},{type:"short_passage",title:"内容理解（短文） (2)",titleEn:"Short Passage (2)",pageRef:"p.67",passage:`<div class="text-xs text-gray-500 mb-2">以下は、ある温泉旅館のホームページに掲載されたお知らせである。</div>
+<div class="speed-master-flyer-card p-6 font-sans text-stone-800 dark:text-stone-100 border border-stone-300 dark:border-stone-600 rounded-lg shadow-sm">
+  <div class="text-right text-sm text-stone-600 dark:text-stone-400 mb-2">2021年6月1日</div>
+  <div class="text-center text-xl font-bold mb-6 tracking-wide">施設改修工事のお知らせ</div>
+  <p class="mb-4 text-sm leading-relaxed indent-4">日頃より「美肌温泉　嵐の湯旅館」をご利用いただき誠にありがとうございます。</p>
+  <p class="mb-4 text-sm leading-relaxed indent-4">この度、老朽化に伴い最上階のお部屋の改修工事を行うこととなりました。</p>
+  <p class="mb-6 text-sm leading-relaxed indent-4">工事に当たっては、細心の注意を払いますが、騒音や振動などが発生することが予想されます。お客様には大変ご迷惑をおかけいたしますが、ご理解、ご協力をお願い申し上げます。</p>
+  <div class="my-6 text-sm text-center space-y-2">
+    <div><span class="font-medium inline-block w-24 text-left">工事期間</span> 6月15日 ～ 6月30日</div>
+    <div><span class="font-medium inline-block w-24 text-left">工事時間</span> 午前10：00 ～ 午後5：00</div>
+  </div>
+  <p class="text-sm text-center mb-2 font-medium">＊工事期間中も宿泊、温泉など通常どおりご利用可能でございます。</p>
+  <p class="text-sm text-center mb-8">皆様のお越しをお待ちしております。</p>
+  <div class="text-right text-sm text-stone-600 dark:text-stone-300 space-y-1">
+    <div class="font-medium">美肌温泉　嵐の湯旅館　　〒001-2345 横都市大町4-12</div>
+    <div>TEL 025-123-0123</div>
+  </div>
+</div>`,questions:[{number:1,stem:"施設改修工事について、このお知らせは何を知らせているか。",options:["1. 老朽化により館内施設を改修するため、しばらく休館すること","2. 老朽化により一部客室を改修するため、不便をかける可能性があること","3. 改修工事期間中は営業時間が短縮されること","4. 改修工事期間中は温泉の利用が制限されること"],correct:2,correctOption:"2. 老朽化により一部客室を改修するため、不便をかける可能性があること",explanation:"<b>【正解】2. 老朽化により一部客室を改修するため、不便をかける可能性があること</b><br/>「老朽化に伴い～改修工事を行うこととなりました」「騒音～予想されます。お客様には大変ご迷惑をおかけいたします…」とある。"}]},{type:"short_passage",title:"内容理解（短文） (3)",titleEn:"Short Passage (3)",pageRef:"p.68",passage:`<div class="speed-master-vertical-card whitespace-pre-line">
+　行動にはつねに動機があり目的がある。動機が正義であり、目的が善であって、その行動だけが悪だということは、人間にはありえない。
+　行動を生む動機とか目的は、その人間の思想が組み立てるものだ。思想が正しくなければ、正しい行動は<ruby>生<rt>う</rt></ruby>まれない。何をするかより、何を考えているかが重要なのである。行動という刃物が、利器<sup>(注1)</sup>となるか、<ruby>兇器<rt>きょうき</rt></ruby><sup>(注2)</sup>となるかは、その行動を支える思想あるいは理論が正しいか、正しくないかによってきまるのだと思う。
+<span class="text-xs text-gray-500 block mt-4">（本田宗一郎『得手に帆あげて』光文社による）</span>
+</div>`,passageNote:"(注1) 利器：役に立つ優れた器具<br/>(注2) 兇器：人を殺傷するのに使う器具",questions:[{number:1,stem:"この文章の内容に合うものはどれか。",options:["1. 人はいくら思想がすばらしくても、ひどい行動をしてしまうことがある。","2. すぐに実行に移すより、まずは頭の中で想像することが大切である。","3. 人の行動をすべて善悪で判断することがあってはならない。","4. 思想の善し悪しと行動は切り離して考えることはできない。"],correct:4,correctOption:"4. 思想の善し悪しと行動は切り離して考えることはできない。",explanation:"<b>【正解】4. 思想の善し悪しと行動は切り離して考えることはできない。</b><br/>「行動にはつねに動機があり目的がある(1行目)」「思想が正しくなければ、正しい行動は生れない(5行目)」「その行動を支える思想あるいは理論が正しいか、正しくないかによってきまる(7-9行目)」これらの部分と合うものは選択肢４番である。"}]},{type:"short_passage",title:"内容理解（短文） (4)",titleEn:"Short Passage (4)",pageRef:"p.69",passage:`<div class="speed-master-lined-paper whitespace-pre-line font-serif leading-loose">
+　人間のエネルギー源のひとつに、間違いなく「劣等感」があると私は考えている。すべての人がもっている「劣等感」。そしてそれを「優越感」に変えるための決意。
+　その決意をした瞬間に、エネルギーが発生する。そして今もっている「劣等感」と目指す「優越感」の距離が遠ければ遠いほど巨大なエネルギーが発生するのだ。
+　今まで数多く出会ってきた「社長」と呼ばれる人たちにも、強烈な「劣等感」をもっている人が多い。
+　「社長」と呼ばれる人種は、世間で思われているほど優秀な人たちばかりではない。ただ、彼らの違うところは、劣等感を劣等感のままで置いておかなかったことである。
+<div class="text-right text-sm text-gray-500 mt-2">（安田佳生『採用の超プロが教える 仕事の選び方 人生の選び方』サンマーク出版による）</div>
+</div>`,questions:[{number:1,stem:"筆者の考えに合うものはどれか。",options:["1. 劣等感を強く感じたことがある人は社会的地位が高くなる。","2. 劣等感を優越感に転化しようと決心することで力が出てくる。","3. 劣等感を払拭しようとするのではなく、持ち続けることが成功につながる。","4. 劣等感と優越感があればあるほどエネルギーは強くなっていく。"],correct:2,correctOption:"2. 劣等感を優越感に転化しようと決心することで力が出てくる。",explanation:"<b>【正解】2. 劣等感を優越感に転化しようと決心することで力が出てくる。</b><br/>第2段落「それを「優越感」に変えるための決意。その決意をした瞬間に、エネルギーが発生する」とある。ここでは、エネルギー＝力と理解する。"}]}],c={bookId:e,chapterId:t,week:5,day:1,weekTitle:"第5週",dayTitle:"1日目",sectionTitle:s,sectionTitleEn:n,instruction:a,sections:i};export{e as bookId,t as chapterId,r as day,p as dayTitle,c as default,a as instruction,s as sectionTitle,n as sectionTitleEn,i as sections,o as week,d as weekTitle};
