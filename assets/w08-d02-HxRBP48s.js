@@ -1,0 +1,70 @@
+const t="zenkamoku-n1-best-workbook",r="w08-d02",b=8,o=2,n="第8週",l="2日目",e="主張理解（長文）・情報検索",s="Thematic Comprehension (Long Passage) & Information Retrieval",a="次の文章を読んで、後の問いに対する答えとして最もよいものを、１・２・３・４から一つ選びなさい。",d=[{type:"thematic_passage",title:"主張理解（長文）",titleEn:"Thematic Comprehension (Long Passage)",pageRef:"pp.140-141",passage:`<div class="speed-master-text-box whitespace-pre-line font-serif leading-loose">
+　科学が対象とする現象は、いつでも、どこでも、誰でも、それが再現できねばならない。繰り返し実験で同じ現象が生じることが確かめられなければ、普遍性があるとは言いがたいのだ。科学の客観性は再現可能性で保証されるのである。しかし、一回きりの現象も扱わねばならない場合が多い。宇宙の<ruby>創成<rt>そうせい</rt></ruby><sup>(注1)</sup>と進化、地球の<ruby>生成<rt>せいせい</rt></ruby><sup>(注2)</sup>と進化、生物の誕生と進化など、（特に歴史性を問題とする場合）私たちは、一つの例しか知らないし、それを再現してやり直すわけにもいかない。だから、たまたまの偶然による<ruby>巧<rt>うま</rt></ruby>い組み合わせで生じた現象なのか、物理法則に従って必然的な道をたどったのかは明らかではない。だから、<u>①一回きりの現象が科学の対象になるのかならないのかの議論</u>は、これまで何度も繰り返されてきた。
+　しかしながら、現代では、一回きりであってもそれは必然的に生じた事象であり、研究するに値するという合意ができている。偶然のように見える事象であっても必然の過程から位置づけられるはずだから、徹底して必然性を追求すれば合理的に説明できるという考え方を採用しているためである。言い換えるなら、自然が歩んだ道は（一見偶然に見えるが）論理から外れた偶然はなく、すべて必然の<ruby>範疇<rt>はんちゅう</rt></ruby><sup>(注3)</sup>で説明できると信じているのだ。例えば、地球上における生命の誕生物語は、ある特殊な化学物質がたまたま偶然に出会って反応した結果としてではなく、さまざまな組み合わせが試された上での必然的な産物であるとみなし、それを調べ上げることに<ruby>傾注<rt>けいちゅう</rt></ruby><sup>(注4)</sup>する。そうすれば偶然も必然のひとつとなる。宇宙論におけるビッグバン<sup>(注5)</sup>や地球科学におけるプレートテクトニクス<sup>(注6)</sup>も、<u>②そのような方向</u>で研究され、現在では正統的理論として確立している。
+　そこに<ruby>底流<rt>ていりゅう</rt></ruby><sup>(注7)</sup>している信念は、「自然の一様性の原理」である。自然界の現象は一見するとバラバラに見え、たまたま例外事象が起こったかのようだが、そこには何らかの規則性があって筋をたどることができ、またそうすることによって<ruby>因果<rt>いんが</rt></ruby><sup>(注8)</sup>関係を明らかにできる、と考えるのだ。もちろん、これは<ruby>森羅万象<rt>しんらばんしょう</rt></ruby><sup>(注9)</sup>にわたって成立しているとは限らない。全く偶然に起こった事象が原因となって結果を変えてしまう場合もあり、それを解きほぐすのは簡単ではない。しかし、<ruby>果敢<rt>かかん</rt></ruby><sup>(注10)</sup>に挑戦して何らかの<ruby>辻褄<rt>つじつま</rt></ruby>を合わせていくのが科学の営みなのかもしれない。
+<div class="text-right text-sm text-gray-500 mt-2">（池内了『科学の限界』筑摩書房による）</div>
+</div>`,passageNote:"(注1) 創成：初めて作り上げること<br/>(注2) 生成：新たに作り出すこと<br/>(注3) 範疇：範囲<br/>(注4) 傾注：精神や力を一つのことに集中すること<br/>(注5) ビッグバン：宇宙の始めの大爆発<br/>(注6) プレートテクトニクス：地球表面の変動はプレートの境界で起こるという学説<br/>(注7) 底流：底にある思想、感情、勢いなど<br/>(注8) 因果：原因と結果<br/>(注9) 森羅万象：宇宙間に存在するすべてのもの<br/>(注10) 果敢：思い切って",questions:[{number:1,stem:"<u>①一回きりの現象が科学の対象になるのかならないのかの議論</u>とあるが、一回きりの現象が科学の対象にならないと考えるのはなぜか。",options:["1. 科学は繰り返されている現象のみを取り上げるものだから","2. 再現ができないため、科学の客観性が保証されないから","3. 一回きりの現象は必ず偶然であって、科学が入りこむ余地はないから","4. 一回きりの現象では、将来、その証明が再び必要になるかが保証できないから"],correct:2,correctOption:"2. 再現ができないため、科学の客観性が保証されないから",explanation:"<b>【正解】2. 再現ができないため、科学の客観性が保証されないから</b><br/>「科学が対象とする現象は、～再現できなければならない(1行目)」「科学の客観性は再現可能性で保証される(2-3行目)」とある。つまり、一回きりの現象が科学の対象にならないと考えるのは、再現不可能な現象は客観性が保証されないから、ということがわかる。"},{number:2,stem:"<u>②そのような方向</u>とは何か。",options:["1. 偶然的な事象でも徹底して必然性を追求すれば合理的に説明できるという考え方","2. 一回しか起こっていない現象でも科学の対象とするために、再現を試みようとする考え方","3. 一回きりの偶然の事象はこの世に存在せず、すべて研究価値があるという考え方","4. ビッグバンやプレートテクトニクスの仕組みを研究し、真理を解き明かすべきだという考え方"],correct:1,correctOption:"1. 偶然的な事象でも徹底して必然性を追求すれば合理的に説明できるという考え方",explanation:"<b>【正解】1. 偶然的な事象でも徹底して必然性を追求すれば合理的に説明できるという考え方</b><br/>「偶然のように見える事象であっても～ためである(10-12行目)」と、「偶然も必然のひとつとなる(15-16行目)」から答えがわかる。"},{number:3,stem:"現在の科学者たちについて、文章の内容に合うのはどれか。",options:["1. 一回きりの事象を研究する必要性を感じる科学者は少数派である。","2. 多くの科学者は、地球上の生命は奇跡の積み重ねで生じたものだと考えている。","3. 一つの例しかない事象は、再現可能かどうかに関わらず研究の対象にしている。","4. 合理的な説明ができない事象の存在を科学者たちは認めている。"],correct:3,correctOption:"3. 一つの例しかない事象は、再現可能かどうかに関わらず研究の対象にしている。",explanation:"<b>【正解】3. 一つの例しかない事象は、再現可能かどうかに関わらず研究の対象にしている。</b><br/>9-10行目の一文を読むと答えがわかる。"},{number:4,stem:"筆者の考えに合うのはどれか。",options:["1. 偶然性の高い事象でも、徹底して必然性を追求すれば、再現可能性を保証できるという考え方を採用すべきである。","2. 普遍性が認められなければ、必然的に生じた事象とは言えないため、再現可能性を実証していくのが科学の使命である。","3. 自然界で起こる現象は、偶然に見えるものであってもすべて必然に起こるものであり、その普遍性を立証していくのが科学の営みである。","4. 科学とは再現可能な事象ばかり取り上げるのではなく、一回きり、あるいは偶然に起こったと見える事象でさえ追求し、規則性を求めていくものである。"],correct:4,correctOption:"4. 科学とは再現可能な事象ばかり取り上げるのではなく、一回きり、あるいは偶然に起こったと見える事象でさえ追求し、規則性を求めていくものである。",explanation:"<b>【正解】4. 科学とは再現可能な事象ばかり取り上げるのではなく、一回きり、あるいは偶然に起こったと見える事象でさえ追求し、規則性を求めていくものである。</b><br/>元来、科学は再現可能な事象だけ対象としてきたが、現代では一回きり、あるいは偶然の事象も扱っている、ということは17行目までに読み取れる。それを踏まえ、18行目以降は「何らかの規則性があり、～因果関係を明らかにできる(19-20行目)」「果敢に挑戦して何らかの辻褄を合わせていくのが科学の営み(22-23行目)」とあり、選択肢４のようにまとめられる。"}]},{type:"information_retrieval",title:"情報検索",titleEn:"Information Retrieval",pageRef:"pp.142-143",instruction:"右のページは、東北市にある駐輪場の案内である。下の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。",passage:`<div class="speed-master-flyer-card max-w-2xl mx-auto my-2 p-4 sm:p-6 bg-amber-50/20 dark:bg-slate-900/60 text-slate-800 dark:text-slate-100 border-2 border-slate-700 dark:border-slate-400 rounded-xl shadow-sm font-sans text-sm sm:text-base leading-normal">
+  <div class="border-b-4 border-double border-slate-700 dark:border-slate-400 pb-2 mb-4 text-center">
+    <h2 class="text-xl sm:text-2xl font-extrabold tracking-widest text-slate-900 dark:text-white"><ruby>東北市<rt>とうほくし</rt></ruby>　駐輪場案内</h2>
+  </div>
+  <p class="mb-4 text-slate-700 dark:text-slate-300">東北市では市内中心部をはじめ、各駅周辺に駐輪場を整備しています。放置自転車は歩行者や緊急車両の通行の妨げになるばかりでなく、都市景観も損ないます。ルールを守って安全に利用しましょう。</p>
+  
+  <div class="font-bold mb-2">利用可能車種および利用料金</div>
+  <div class="overflow-x-auto mb-2">
+    <table class="w-full border-collapse border border-slate-400 dark:border-slate-600 text-xs sm:text-sm">
+      <thead>
+        <tr class="bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100">
+          <th class="border border-slate-400 dark:border-slate-600 p-2 text-center font-bold w-1/3">区分</th>
+          <th class="border border-slate-400 dark:border-slate-600 p-2 text-center font-bold w-1/3">自転車</th>
+          <th class="border border-slate-400 dark:border-slate-600 p-2 text-center font-bold w-1/3">バイク</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">一時利用券</td>
+          <td class="border border-slate-400 dark:border-slate-600 p-2 text-center">100 円</td>
+          <td class="border border-slate-400 dark:border-slate-600 p-2 text-center">150 円</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">定期１か月</td>
+          <td class="border border-slate-400 dark:border-slate-600 p-2 text-center">1,200 円（1,500 円）</td>
+          <td class="border border-slate-400 dark:border-slate-600 p-2 text-center">1,800 円（2,200 円）</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">定期３か月</td>
+          <td class="border border-slate-400 dark:border-slate-600 p-2 text-center">3,500 円（4,200 円）</td>
+          <td class="border border-slate-400 dark:border-slate-600 p-2 text-center">5,300 円（6,300 円）</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">定期６か月</td>
+          <td class="border border-slate-400 dark:border-slate-600 p-2 text-center">6,500 円（7,800 円）</td>
+          <td class="border border-slate-400 dark:border-slate-600 p-2 text-center">9,800 円（12,000 円）</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-400 dark:border-slate-600 p-2 font-medium">回数券（12枚）</td>
+          <td class="border border-slate-400 dark:border-slate-600 p-2 text-center">1,000 円</td>
+          <td class="border border-slate-400 dark:border-slate-600 p-2 text-center">1,500 円</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="text-xs text-slate-600 dark:text-slate-400 mb-4">＊（　）内料金は東北市外在住の方の料金です。</div>
+
+  <div class="border-t border-slate-400 dark:border-slate-600 pt-3 text-xs sm:text-sm space-y-3">
+    <div>
+      <span class="font-bold">利用方法</span>　利用券は自転車やバイクの後部の見やすいところに<ruby>貼付<rt>ちょうふ</rt></ruby>してください。<br/>
+      <div class="mt-1">
+        <b>１）一時利用</b><br/>
+        　券売機で一時利用券を購入の上、ご利用ください。なお、一時利用券は発券から24時間有効です。時間は利用券に印刷されています。２日以上連続で利用される方は、利用券の有効期限内に新しい券を再度購入して貼り替えてください。
+      </div>
+      <div class="mt-2">
+        <b>２）回数券利用</b><br/>
+        　券売機で回数券（12枚）を購入し、利用時に管理室で日付印を押印の上、ご利用ください。回数券の払い戻しはできませんのでご了承の上ご購入願います。回数券１枚のご利用時間は一時利用券と同様です。２日以上連続で利用される方は管理室にその旨をお申し出になり、日数に応じて日付印押印の上で、並べて貼付してください。なお、回数券の使用期限は購入日から１年間です。
+      </div>
+      <div class="mt-2">
+        <b>３）定期利用</b><br/>
+        　毎月25日〜翌月５日の間のみ各駐輪場で申し込むことができます。利用開始日からの定期期間ではなく、毎月１日から末日までの定期ですので、購入をお考えの際は申込期間にご注意ください。
+      </div>
+    </div>
+  </div>
+</div>`,questions:[{number:1,stem:"<ruby>西南市<rt>せいなんし</rt></ruby>に住む大学生のリンさんは、<ruby>東北市<rt>とうほくし</rt></ruby>の駐輪場に９月26日から10月25日までの30日間、毎日、自転車を預けたいと思っている。リンさんが安く利用すると、全部でいくらかかるか。",options:["1. 1,500円","2. 1,700円","3. 2,000円","4. 2,600円"],correct:3,correctOption:"3. 2,000円",explanation:"<b>【正解】3. 2,000円</b><br/>定期券は毎月１日から末日までなので、9月と10月にまたがる場合は２か月分の定期券が必要になるため、定期券１か月分の選択肢１は選べない。<br/>したがって、選択肢３の9月26日～30日の５日間は一時利用券を、10月は定期券を利用するのが一番安い方法である。<br/>選択肢１：定期券１か月（市外）の1,500円で間違い。<br/>選択肢２：９月は一時利用券５枚 500円、10月は定期券１か月（市内）1,200円、合計1,700円で間違い（リンさんは西南市在住のため市外料金）。<br/>選択肢３：９月は一時利用券５枚 500円、10月は定期券１か月（市外）1,500円、合計2,000円で正しい。<br/>選択肢４：回数券24枚 2,000円と、一時利用券6枚 600円、合計2,600円で間違い。"},{number:2,stem:"<ruby>木村<rt>きむら</rt></ruby>さんはバイクで<ruby>東北市<rt>とうほくし</rt></ruby>まで旅行する予定だ。金曜日の晩に到着して、日曜日の午前中には東北市を出発する。一昨年買ったバイク用の回数券がまだ５枚残っているので、できれば使いたいと思っている。新しい回数券を買うつもりはない。どのような手順で東北市の駐輪場を利用すればいいか。",options:["1. 到着日の晩に、管理室に断ってから以前購入した回数券に押印し、バイクに２枚貼る。","2. 到着日の晩に、管理室に断ってから以前購入した回数券に押印し、バイクに３枚貼る。","3. 到着日の晩に、一時利用券を日数分購入し、バイクに貼る。","4. 到着日の晩と翌日の晩に、一時利用券を１枚ずつ購入し、バイクに貼る。"],correct:4,correctOption:"4. 到着日の晩と翌日の晩に、一時利用券を１枚ずつ購入し、バイクに貼る。",explanation:"<b>【正解】4. 到着日の晩と翌日の晩に、一時利用券を１枚ずつ購入し、バイクに貼る。</b><br/>回数券の使用期限は購入日より１年間なので、一昨年買ったバイクの回数券は使えない。また、新しい回数券を買うつもりはないので、「回数券に押印」がある選択肢１と２は間違い。利用方法の１）を見ると、「２日以上連続で利用される方は、～貼り替えてください」とあるので、選択肢３は間違い。到着日（金曜日）の晩とその翌日（土曜日）の晩に一時利用券を購入して貼るのが正しい方法である。"}]}],c={bookId:t,chapterId:r,week:8,day:2,weekTitle:"第8週",dayTitle:"2日目",sectionTitle:e,sectionTitleEn:s,instruction:a,sections:d};export{t as bookId,r as chapterId,o as day,l as dayTitle,c as default,a as instruction,e as sectionTitle,s as sectionTitleEn,d as sections,b as week,n as weekTitle};
