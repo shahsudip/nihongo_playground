@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
-import { getTestById, savePracticeTestRecord, getPracticeTestHistory } from '../utils/jlpt_practice_tests_service.js';
+import { getTestById, savePracticeTestRecord } from '../utils/jlpt_practice_tests_service.js';
+import { getPastExamById, savePastExamRecord } from '../utils/jlpt_past_exams_service.js';
+import { calculateJlptExamScore } from '../utils/jlptScoring.js';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 
 // Reusable UI
@@ -10,6 +12,7 @@ import { Button } from './ui/Button';
 import { OptionButton } from './ui/OptionButton';
 import { ExitConfirmModal } from './ui/ExitConfirmModal';
 import { JlptOmrAnswerSheet } from './ui/JlptOmrAnswerSheet';
+import { JlptScoreCertificateModal } from './ui/JlptScoreCertificateModal';
 import { formatJlptRuby } from '../utils/jlptRubyParser.js';
 
 // Official JLPT Mondai Instructions mapped to typeLabel / types
@@ -47,16 +50,22 @@ function getMondaiInstruction(q) {
   return '最もよいものを、１・２・３・４から一つ選びなさい。';
 }
 
-const JlptPracticeTestQuizPage = () => {
+const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
   const { level, testId, sectionId } = useParams();
   const navigate = useNavigate();
   const { currentUser } = useAuth();
+
+  const isPastExam = Boolean(
+    propIsPastExam ||
+    window.location.hash.includes('past-questions') ||
+    (testId && (testId.includes('past_') || testId.startsWith('past-')))
+  );
 
   const [testData, setTestData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Section state (defaults to sectionId from URL or the first section: 言語知識（文字・語彙）)
+  // Section state (defaults to sectionId from URL or the first section)
   const [selectedSectionId, setSelectedSectionId] = useState(sectionId || null);
 
   // Quiz state
@@ -67,6 +76,7 @@ const JlptPracticeTestQuizPage = () => {
   const [timerActive, setTimerActive] = useState(true);
   const [showExitModal, setShowExitModal] = useState(false);
   const [showMobileSheet, setShowMobileSheet] = useState(false);
+  const [showCertificateModal, setShowCertificateModal] = useState(false);
 
   // Audio & Script state
   const [isPlaying, setIsPlaying] = useState(false);
@@ -86,10 +96,13 @@ const JlptPracticeTestQuizPage = () => {
       setLoading(true);
       setError(null);
       try {
-        const data = await getTestById(testId);
+        const data = isPastExam
+          ? await getPastExamById(testId, lvlUpper)
+          : await getTestById(testId);
+
         if (isMounted) {
           if (!data) {
-            setError(`Practice test "${testId}" could not be found.`);
+            setError(`Test "${testId}" could not be found.`);
           } else {
             setTestData(data);
           }
@@ -102,7 +115,7 @@ const JlptPracticeTestQuizPage = () => {
     };
     fetchTest();
     return () => { isMounted = false; };
-  }, [testId]);
+  }, [testId, isPastExam, lvlUpper]);
 
   // Sync selectedSectionId with testData or route param
   useEffect(() => {
@@ -258,6 +271,19 @@ const JlptPracticeTestQuizPage = () => {
 
   const accuracyPercent = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
 
+  // Official JLPT scaled score report
+  const scoreReport = useMemo(() => {
+    if (!testData?.sections) return null;
+    return calculateJlptExamScore(lvlUpper, testData.sections, answers);
+  }, [testData, lvlUpper, answers]);
+
+  const backUrl = isPastExam
+    ? `/levels/${lvlKey}/past-questions`
+    : `/levels/${lvlKey}/practice-tests`;
+  const backLabel = isPastExam
+    ? `Back to ${lvlUpper} Past Exams`
+    : `Back to ${lvlUpper} Practice Tests`;
+
   // Persist attempt
   const persistAttempt = useCallback(async (nextAnswers, targetIndex, isFinal = false) => {
     if (!testData || totalQuestions === 0) return;
@@ -276,7 +302,9 @@ const JlptPracticeTestQuizPage = () => {
       status = accuracy >= 80 && score > 0 ? 'mastered' : 'completed';
     }
 
-    const quizId = `jlpt-mock-${testData.id}${sectionId ? `-${sectionId}` : ''}`;
+    const report = calculateJlptExamScore(lvlUpper, testData.sections, nextAnswers);
+    const prefix = isPastExam ? 'jlpt-past-' : 'jlpt-mock-';
+    const quizId = `${prefix}${testData.id}${sectionId ? `-${sectionId}` : ''}`;
     const sectionTitle = sectionId
       ? testData.sections.find(s => s.id === sectionId)?.title || sectionId
       : 'Full Exam';
@@ -284,9 +312,10 @@ const JlptPracticeTestQuizPage = () => {
     const record = {
       quizId,
       testId: testData.id,
-      level: testData.level,
+      level: testData.level || lvlUpper,
       title: `${testData.title} (${sectionTitle})`,
       sectionId: sectionId || 'full',
+      isPastExam,
       score,
       total: totalQuestions,
       answered: ansCount,
@@ -294,6 +323,14 @@ const JlptPracticeTestQuizPage = () => {
       currentIndex: targetIndex,
       percentage: accuracy,
       status,
+      // Authentic JLPT Scaled Scoring Fields
+      totalScaledScore: report.totalScaledScore,
+      maxScore: report.maxScore,
+      overallPassMark: report.overallPassMark,
+      isPassed: report.isPassed,
+      failReason: report.failReason,
+      allSectionsPassed: report.allSectionsPassed,
+      sectionsBreakdown: report.sections,
       timerSeconds,
       timestamp: new Date().toISOString(),
     };
@@ -310,8 +347,12 @@ const JlptPracticeTestQuizPage = () => {
     }
 
     // Save to global history & Firestore
-    await savePracticeTestRecord(currentUser, record);
-  }, [testData, totalQuestions, activeQuestions, sectionId, timerSeconds, storageKey, currentUser]);
+    if (isPastExam) {
+      await savePastExamRecord(currentUser, record);
+    } else {
+      await savePracticeTestRecord(currentUser, record);
+    }
+  }, [testData, totalQuestions, activeQuestions, sectionId, timerSeconds, storageKey, currentUser, isPastExam, lvlUpper]);
 
   const questionCardRef = useRef(null);
 
@@ -370,6 +411,7 @@ const JlptPracticeTestQuizPage = () => {
   const handleFinish = () => {
     setIsFinished(true);
     setTimerActive(false);
+    setShowCertificateModal(true);
     persistAttempt(answers, currentIndex, true);
   };
 
@@ -404,13 +446,13 @@ const JlptPracticeTestQuizPage = () => {
           {error || 'No questions available for this test.'}
         </h2>
         <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
-          The test content could not be loaded. Please return to the practice tests list.
+          The test content could not be loaded. Please return to the test list.
         </p>
         <Link
-          to={`/levels/${lvlKey}/practice-tests`}
+          to={backUrl}
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 text-white font-bold text-sm hover:bg-emerald-500 transition-colors"
         >
-          &larr; Back to {lvlUpper} Practice Tests
+          &larr; {backLabel}
         </Link>
       </div>
     );
@@ -418,56 +460,159 @@ const JlptPracticeTestQuizPage = () => {
 
   // COMPLETION VIEW
   if (isFinished) {
+    const isPassed = scoreReport?.isPassed;
+    const totalScaled = scoreReport?.totalScaledScore || 0;
+    const maxScaled = scoreReport?.maxScore || 180;
+    const passThreshold = scoreReport?.overallPassMark || 95;
+    const failReason = scoreReport?.failReason;
+
     return (
       <div className="w-full max-w-5xl mx-auto px-4 py-8 animate-fade-in">
-        <div className="mb-6">
+        {/* Certificate Modal */}
+        <JlptScoreCertificateModal
+          isOpen={showCertificateModal}
+          scoreReport={scoreReport}
+          onClose={() => setShowCertificateModal(false)}
+          onRetake={handleReset}
+          onBackToList={() => navigate(backUrl)}
+        />
+
+        <div className="mb-6 flex items-center justify-between">
           <Link
-            to={`/levels/${lvlKey}/practice-tests`}
+            to={backUrl}
             className="inline-flex items-center gap-1.5 text-xs font-bold text-gray-500 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
           >
-            &larr; Back to {lvlUpper} Practice Tests
+            &larr; {backLabel}
           </Link>
+          <button
+            type="button"
+            onClick={() => setShowCertificateModal(true)}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-800 hover:bg-amber-100 transition-all cursor-pointer"
+          >
+            <span>📜</span>
+            <span>View Certificate (合否結果通知書)</span>
+          </button>
         </div>
 
-        <Card className="text-center p-6 sm:p-10 shadow-2xl border border-gray-200 dark:border-white/10 rounded-3xl">
-          <div className="w-20 h-20 mx-auto mb-4 rounded-3xl flex items-center justify-center text-4xl bg-emerald-500/10 border border-emerald-500/30">
-            {accuracyPercent >= 80 ? '🎉' : accuracyPercent >= 60 ? '👍' : '💪'}
+        <Card className="text-center p-6 sm:p-10 shadow-2xl border border-gray-200 dark:border-white/10 rounded-3xl relative overflow-hidden">
+          {/* Authentic Pass/Fail Stamp */}
+          <div className="flex justify-center mb-4">
+            <div
+              className={`w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 flex flex-col items-center justify-center font-black uppercase tracking-wider transform rotate-[-8deg] shadow-md select-none ${
+                isPassed
+                  ? 'border-emerald-600 bg-emerald-50/80 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400'
+                  : 'border-rose-600 bg-rose-50/80 dark:bg-rose-950/60 text-rose-700 dark:text-rose-400'
+              }`}
+            >
+              <span className="text-base sm:text-xl leading-none">
+                {isPassed ? '合格' : '不合格'}
+              </span>
+              <span className="text-[10px] sm:text-xs font-mono font-bold mt-1 tracking-widest">
+                {isPassed ? 'PASSED' : 'FAILED'}
+              </span>
+            </div>
           </div>
 
           <h1 className="text-2xl sm:text-3xl font-black text-gray-900 dark:text-white mb-1">
-            Exam Completed!
+            {testData.title}
           </h1>
-          <p className="text-sm text-gray-500 dark:text-gray-400 mb-6 font-medium">
-            {testData.title} • {sectionId ? sectionId.toUpperCase() : 'Full Exam'} • Time: {formatTime(timerSeconds)}
+          <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mb-6 font-medium">
+            {sectionId ? sectionId.toUpperCase() : 'Full Official Exam'} • Time: {formatTime(timerSeconds)}
           </p>
 
-          {/* Score Stats */}
-          <div className="grid grid-cols-3 gap-3 max-w-md mx-auto mb-8">
-            <div className="p-4 rounded-2xl bg-gray-50 dark:bg-white/5 border border-gray-200/80 dark:border-white/5">
-              <span className="block text-2xl font-black text-gray-900 dark:text-white">
-                {correctCount} / {totalQuestions}
+          {/* Sectional Failure Alert */}
+          {failReason === 'sectional_insufficient' && (
+            <div className="max-w-xl mx-auto mb-6 p-4 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-800 text-amber-900 dark:text-amber-200 text-xs sm:text-sm text-left">
+              <div className="font-bold flex items-center gap-1.5 mb-1">
+                <span>⚠️</span>
+                <span>Sectional Threshold Not Met (基準点未達)</span>
+              </div>
+              <p>
+                Your overall score reached <span className="font-mono font-black">{totalScaled} / {maxScaled} 点</span> (which meets the {passThreshold} 点 pass mark), but you did not pass because at least one section scored below the official <span className="font-bold">19-point minimum threshold</span>.
+              </p>
+            </div>
+          )}
+
+          {/* Official JLPT Scaled Scores Banner */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-xl mx-auto mb-6">
+            <div className="p-4 rounded-2xl bg-gray-50 dark:bg-white/5 border border-gray-200/80 dark:border-white/5 text-center">
+              <span className="text-[11px] font-black uppercase tracking-wider text-gray-500 dark:text-gray-400 block mb-1">
+                Total Scaled Score
               </span>
-              <span className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                Score
+              <span className={`block text-3xl font-black font-mono ${isPassed ? 'text-emerald-600 dark:text-emerald-400' : 'text-gray-900 dark:text-white'}`}>
+                {totalScaled} <span className="text-sm font-normal text-gray-400">/ {maxScaled} 点</span>
+              </span>
+              <span className="text-[11px] font-bold text-gray-500 dark:text-gray-400 mt-1 block">
+                Pass Mark: {passThreshold} 点
               </span>
             </div>
-            <div className="p-4 rounded-2xl bg-gray-50 dark:bg-white/5 border border-gray-200/80 dark:border-white/5">
-              <span className="block text-2xl font-black text-emerald-600 dark:text-emerald-400">
+
+            <div className="p-4 rounded-2xl bg-gray-50 dark:bg-white/5 border border-gray-200/80 dark:border-white/5 text-center">
+              <span className="text-[11px] font-black uppercase tracking-wider text-gray-500 dark:text-gray-400 block mb-1">
+                Raw Accuracy
+              </span>
+              <span className="block text-3xl font-black font-mono text-emerald-600 dark:text-emerald-400">
                 {accuracyPercent}%
               </span>
-              <span className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                Accuracy
+              <span className="text-[11px] font-bold text-gray-500 dark:text-gray-400 mt-1 block">
+                {correctCount} / {totalQuestions} Correct
               </span>
             </div>
-            <div className="p-4 rounded-2xl bg-gray-50 dark:bg-white/5 border border-gray-200/80 dark:border-white/5">
-              <span className="block text-2xl font-black text-gray-900 dark:text-white">
+
+            <div className="p-4 rounded-2xl bg-gray-50 dark:bg-white/5 border border-gray-200/80 dark:border-white/5 text-center">
+              <span className="text-[11px] font-black uppercase tracking-wider text-gray-500 dark:text-gray-400 block mb-1">
+                Time Elapsed
+              </span>
+              <span className="block text-3xl font-black font-mono text-gray-900 dark:text-white">
                 {formatTime(timerSeconds)}
               </span>
-              <span className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                Time Taken
+              <span className="text-[11px] font-bold text-gray-500 dark:text-gray-400 mt-1 block">
+                {isPassed ? '✓ Qualified' : '✕ Unqualified'}
               </span>
             </div>
           </div>
+
+          {/* Sectional Score Breakdown (60 pts each, min 19 pts) */}
+          {scoreReport?.sections?.length > 0 && (
+            <div className="max-w-xl mx-auto mb-8 text-left">
+              <div className="flex items-center justify-between text-xs font-black uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3 px-1">
+                <span>得点区分 • Sectional Breakdown</span>
+                <span>基準点 • Min 19 点</span>
+              </div>
+              <div className="space-y-2">
+                {scoreReport.sections.map((sec, idx) => (
+                  <div
+                    key={sec.sectionId || idx}
+                    className="p-3 sm:p-4 rounded-2xl bg-gray-50/80 dark:bg-white/[0.03] border border-gray-200/80 dark:border-white/10 flex items-center justify-between gap-3"
+                  >
+                    <div className="flex items-center gap-2 truncate">
+                      <span className="w-5 h-5 rounded-full flex items-center justify-center font-mono font-bold text-xs bg-gray-200 dark:bg-zinc-700 text-gray-700 dark:text-gray-300 shrink-0">
+                        {idx + 1}
+                      </span>
+                      <span className="text-xs sm:text-sm font-bold text-gray-900 dark:text-white truncate">
+                        {sec.title}
+                      </span>
+                    </div>
+
+                    <div className="flex items-center gap-2 shrink-0">
+                      <span className="font-mono font-black text-xs sm:text-sm text-gray-900 dark:text-white">
+                        {sec.scaledScore} / {sec.maxPoints} 点
+                      </span>
+                      <span
+                        className={`text-[10px] font-black px-2 py-0.5 rounded-md uppercase font-mono ${
+                          sec.isPassed
+                            ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300'
+                            : 'bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300'
+                        }`}
+                      >
+                        {sec.isPassed ? 'PASS' : 'FAIL (<19)'}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Question Review Breakdown Grid */}
           <div className="p-5 rounded-2xl border border-gray-200/80 dark:border-white/10 bg-gray-50/50 dark:bg-white/[0.02] mb-8 text-left">
@@ -476,7 +621,7 @@ const JlptPracticeTestQuizPage = () => {
                 <span>🗂️</span> Question Review Breakdown
               </span>
               <span className="text-xs text-gray-500 dark:text-gray-400">
-                Click any question number to review explanation & transcript
+                Click any question number to review answer & explanation
               </span>
             </div>
 
@@ -513,7 +658,7 @@ const JlptPracticeTestQuizPage = () => {
             <Button
               variant="outline"
               onClick={handleReset}
-              className="border-red-300 dark:border-red-900/60 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 font-semibold"
+              className="border-red-300 dark:border-red-900/60 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 font-semibold cursor-pointer"
             >
               🔄 Reset & Retake
             </Button>
@@ -523,19 +668,21 @@ const JlptPracticeTestQuizPage = () => {
                 setIsFinished(false);
                 setCurrentIndex(0);
               }}
-              className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold"
+              className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold cursor-pointer"
             >
               📝 Review Answers
             </Button>
-            <Link
-              to="/profile"
-              className="px-4 py-2 rounded-xl text-sm font-medium border border-gray-200 dark:border-white/10 bg-white dark:bg-zinc-800 hover:bg-gray-100 dark:hover:bg-zinc-700 transition-colors text-gray-800 dark:text-gray-200 inline-flex items-center gap-1.5"
-            >
-              🕒 Activity Log
-            </Link>
             <Button
               variant="outline"
-              onClick={() => navigate(`/levels/${lvlKey}/practice-tests`)}
+              onClick={() => setShowCertificateModal(true)}
+              className="border-amber-300 dark:border-amber-800 text-amber-700 dark:text-amber-300 hover:bg-amber-50 dark:hover:bg-amber-950/30 font-bold cursor-pointer"
+            >
+              📜 Score Certificate
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => navigate(backUrl)}
+              className="cursor-pointer"
             >
               &larr; Back to Tests List
             </Button>

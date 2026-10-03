@@ -41,6 +41,14 @@ const categories = [
     desc: 'Full JLPT mock exams with Vocabulary, Grammar, Reading passages, and Listening audio.',
     badge: '5 Full Tests',
   },
+  {
+    id: 'past-questions',
+    title: 'Past Exam Papers',
+    japaneseTitle: '過去問テスト',
+    icon: '🏛️',
+    desc: 'Official real exam sessions organized by year with authentic 180-pt scaled scoring.',
+    badge: 'Real Exams',
+  },
 ];
 
 const LevelSelectionPage = () => {
@@ -51,7 +59,7 @@ const LevelSelectionPage = () => {
   const currentLvlUpper = level ? level.toUpperCase() : '';
   const currentLvlInfo = level ? levelMeta[level.toLowerCase()] : null;
 
-  // View 2: Select List (Kanji, Vocabulary, Grammar, Practice Tests)
+  // View 2: Select List (Kanji, Vocabulary, Grammar, Practice Tests, Past Exams)
   const renderCategorySelection = () => (
     <div className="w-full max-w-7xl mx-auto px-4 py-8 animate-fade-in">
       <div className="flex items-center gap-2 mb-6">
@@ -76,7 +84,7 @@ const LevelSelectionPage = () => {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 stagger-children">
         {categories.map((cat) => (
           <Link
             key={cat.id}

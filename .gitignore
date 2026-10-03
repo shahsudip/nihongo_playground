@@ -45,6 +45,7 @@ scripts/*
 !scripts/verify_all_shinkanzen.cjs
 !scripts/verify_speedmaster.cjs
 jlpt_practice_tests/
+jlpt_past_exams/
 plans/
 public/n3_practice_sets_pages/
 public/sync-db.html
