@@ -10,6 +10,8 @@ import { Card } from './ui/Card';
 import { Button } from './ui/Button';
 import { OptionButton } from './ui/OptionButton';
 import { ExitConfirmModal } from './ui/ExitConfirmModal';
+import { JlptScoreCertificateModal } from './ui/JlptScoreCertificateModal';
+import { calculateJlptExamScore } from '../utils/jlptScoring.js';
 
 const N3PracticeSetQuizPage = () => {
   const { setId, sectionId } = useParams();
@@ -23,6 +25,7 @@ const N3PracticeSetQuizPage = () => {
   const [timerSeconds, setTimerSeconds] = useState(0);
   const [timerActive, setTimerActive] = useState(true);
   const [showExitModal, setShowExitModal] = useState(false);
+  const [showCertificateModal, setShowCertificateModal] = useState(false);
 
   const [currentSet, setCurrentSet] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -119,6 +122,27 @@ const N3PracticeSetQuizPage = () => {
   const totalQuestions = questions.length;
   const answeredCount = Object.keys(answers).length;
   const progressPercent = totalQuestions > 0 ? Math.round((answeredCount / totalQuestions) * 100) : 0;
+
+  // Official JLPT Scaled Score Report
+  const scoreReport = useMemo(() => {
+    if (!currentSet?.sections) return null;
+    const examSections = [];
+    if (sectionsToShow.includes('vocabulary-kanji') && currentSet.sections['vocabulary-kanji']?.questions) {
+      examSections.push({
+        id: 'vocab',
+        title: '言語知識（文字・語彙）',
+        questions: currentSet.sections['vocabulary-kanji'].questions,
+      });
+    }
+    if (sectionsToShow.includes('grammar') && currentSet.sections['grammar']?.questions) {
+      examSections.push({
+        id: 'grammar_reading',
+        title: '言語知識（文法）・読解',
+        questions: currentSet.sections['grammar'].questions,
+      });
+    }
+    return calculateJlptExamScore('N3', examSections, answers);
+  }, [currentSet, sectionsToShow, answers]);
 
   const getStorageKey = useCallback(() => {
     return currentUser
@@ -255,6 +279,14 @@ const N3PracticeSetQuizPage = () => {
       currentIndex: targetIndex,
       percentage: accuracy,
       status,
+      // Official JLPT Scaled Scoring Fields
+      totalScaledScore: scoreReport?.totalScaledScore,
+      maxScore: scoreReport?.maxScore,
+      overallPassMark: scoreReport?.overallPassMark,
+      isPassed: scoreReport?.isPassed,
+      failReason: scoreReport?.failReason,
+      allSectionsPassed: scoreReport?.allSectionsPassed,
+      sectionsBreakdown: scoreReport?.sections,
       timeElapsed: timerSeconds,
       timestamp: new Date().toISOString(),
       createdAt: new Date().toISOString()
@@ -372,50 +404,163 @@ const N3PracticeSetQuizPage = () => {
 
   const handleFinish = () => {
     setIsFinished(true);
+    setTimerActive(false);
+    setShowCertificateModal(true);
     persistAttempt(answers, currentIndex, true);
   };
 
   // Completion View
   if (isFinished) {
+    const isPassed = scoreReport?.isPassed;
+    const totalScaled = scoreReport?.totalScaledScore || 0;
+    const maxScaled = scoreReport?.maxScore || 120;
+    const passThreshold = scoreReport?.overallPassMark || 63;
+    const failReason = scoreReport?.failReason;
+
     return (
       <div className="w-full max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 animate-fade-in pt-[84px] md:pt-[96px]">
-        <div className="mb-6">
-          <Link to={`/practice-sets/${setId}`} className="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors mb-4 inline-block">
+        {/* Certificate Modal */}
+        <JlptScoreCertificateModal
+          isOpen={showCertificateModal}
+          scoreReport={scoreReport}
+          onClose={() => setShowCertificateModal(false)}
+          onRetake={handleReset}
+          onBackToList={() => navigate(`/practice-sets/${setId}`)}
+        />
+
+        <div className="mb-6 flex items-center justify-between">
+          <Link to={`/practice-sets/${setId}`} className="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors inline-block">
             &larr; Back to Set Details
           </Link>
+          <button
+            type="button"
+            onClick={() => setShowCertificateModal(true)}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-800 hover:bg-amber-100 transition-all cursor-pointer"
+          >
+            <span>📜</span>
+            <span>View Certificate (合否結果通知書)</span>
+          </button>
         </div>
 
-        <Card className="text-center p-6 sm:p-10 shadow-2xl border border-[var(--color-border)] w-full">
-          <div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-3xl bg-emerald-500/10 border border-emerald-500/30">
-            {overallPercent >= 80 ? '🎉' : overallPercent >= 60 ? '👍' : '💪'}
+        <Card className="text-center p-6 sm:p-10 shadow-2xl border border-[var(--color-border)] w-full relative overflow-hidden">
+          {/* Authentic Pass/Fail Stamp */}
+          <div className="flex justify-center mb-4">
+            <div
+              className={`w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 flex flex-col items-center justify-center font-black uppercase tracking-wider transform rotate-[-8deg] shadow-md select-none ${
+                isPassed
+                  ? 'border-emerald-600 bg-emerald-50/80 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400'
+                  : 'border-rose-600 bg-rose-50/80 dark:bg-rose-950/60 text-rose-700 dark:text-rose-400'
+              }`}
+            >
+              <span className="text-base sm:text-xl leading-none">
+                {isPassed ? '合格' : '不合格'}
+              </span>
+              <span className="text-[10px] sm:text-xs font-mono font-bold mt-1 tracking-widest">
+                {isPassed ? 'PASSED' : 'FAILED'}
+              </span>
+            </div>
           </div>
 
-          <h1 className="text-2xl sm:text-3xl font-bold mb-1">Practice Completed!</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold mb-1">
+            N3 {currentSet.title}
+          </h1>
           <p className="text-sm text-[var(--color-text-muted)] mb-6">
-            N3 {currentSet.title} &bull; {pageTitle}
+            {pageTitle} &bull; Time: {formatTime(timerSeconds)}
           </p>
 
-          {/* Score Stats Grid */}
-          <div className="grid grid-cols-3 gap-3 max-w-md mx-auto mb-6">
-            <div className="p-4 rounded-xl bg-[var(--color-bg-secondary)] border border-[var(--color-border)]">
-              <span className="block text-2xl font-black text-[var(--color-text-primary)]">
-                {correctCount} / {totalQuestions}
-              </span>
-              <span className="text-xs font-medium text-[var(--color-text-muted)]">Score</span>
+          {/* Sectional Failure Alert */}
+          {failReason === 'sectional_insufficient' && (
+            <div className="max-w-xl mx-auto mb-6 p-4 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-800 text-amber-900 dark:text-amber-200 text-xs sm:text-sm text-left">
+              <div className="font-bold flex items-center gap-1.5 mb-1">
+                <span>⚠️</span>
+                <span>Sectional Threshold Not Met (基準点未達)</span>
+              </div>
+              <p>
+                Your overall score reached <span className="font-mono font-black">{totalScaled} / {maxScaled} 点</span> (which meets the passing mark), but you did not pass because at least one section scored below the official <span className="font-bold">19-point minimum threshold</span>.
+              </p>
             </div>
-            <div className="p-4 rounded-xl bg-[var(--color-bg-secondary)] border border-[var(--color-border)]">
-              <span className="block text-2xl font-black text-emerald-400">
+          )}
+
+          {/* Official JLPT Scaled Scores Banner */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-xl mx-auto mb-6">
+            <div className="p-4 rounded-xl bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-center">
+              <span className="text-[11px] font-black uppercase tracking-wider text-[var(--color-text-muted)] block mb-1">
+                Scaled Score
+              </span>
+              <span className={`block text-3xl font-black font-mono ${isPassed ? 'text-emerald-500' : 'text-[var(--color-text-primary)]'}`}>
+                {totalScaled} <span className="text-sm font-normal text-gray-400">/ {maxScaled} 点</span>
+              </span>
+              <span className="text-[11px] font-bold text-[var(--color-text-muted)] mt-1 block">
+                Pass Mark: {passThreshold} 点
+              </span>
+            </div>
+
+            <div className="p-4 rounded-xl bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-center">
+              <span className="text-[11px] font-black uppercase tracking-wider text-[var(--color-text-muted)] block mb-1">
+                Raw Accuracy
+              </span>
+              <span className="block text-3xl font-black font-mono text-emerald-400">
                 {overallPercent}%
               </span>
-              <span className="text-xs font-medium text-[var(--color-text-muted)]">Accuracy</span>
-            </div>
-            <div className="p-4 rounded-xl bg-[var(--color-bg-secondary)] border border-[var(--color-border)]">
-              <span className="block text-2xl font-black text-[var(--color-text-primary)]">
-                {totalQuestions}
+              <span className="text-[11px] font-bold text-[var(--color-text-muted)] mt-1 block">
+                {correctCount} / {totalQuestions} Correct
               </span>
-              <span className="text-xs font-medium text-[var(--color-text-muted)]">Questions</span>
+            </div>
+
+            <div className="p-4 rounded-xl bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-center">
+              <span className="text-[11px] font-black uppercase tracking-wider text-[var(--color-text-muted)] block mb-1">
+                Time Elapsed
+              </span>
+              <span className="block text-3xl font-black font-mono text-[var(--color-text-primary)]">
+                {formatTime(timerSeconds)}
+              </span>
+              <span className="text-[11px] font-bold text-[var(--color-text-muted)] mt-1 block">
+                {isPassed ? '✓ Qualified' : '✕ Unqualified'}
+              </span>
             </div>
           </div>
+
+          {/* Sectional Score Breakdown (each with 19-pt threshold) */}
+          {scoreReport?.sections?.length > 0 && (
+            <div className="max-w-xl mx-auto mb-6 text-left">
+              <div className="flex items-center justify-between text-xs font-black uppercase tracking-wider text-[var(--color-text-muted)] mb-3 px-1">
+                <span>得点区分 • Sectional Breakdown</span>
+                <span>基準点 • Min 19 点</span>
+              </div>
+              <div className="space-y-2">
+                {scoreReport.sections.map((sec, idx) => (
+                  <div
+                    key={sec.sectionId || idx}
+                    className="p-3 sm:p-4 rounded-xl bg-[var(--color-bg-secondary)] border border-[var(--color-border)] flex items-center justify-between gap-3"
+                  >
+                    <div className="flex items-center gap-2 truncate">
+                      <span className="w-5 h-5 rounded-full flex items-center justify-center font-mono font-bold text-xs bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] shrink-0">
+                        {idx + 1}
+                      </span>
+                      <span className="text-xs sm:text-sm font-bold text-[var(--color-text-primary)] truncate">
+                        {sec.title}
+                      </span>
+                    </div>
+
+                    <div className="flex items-center gap-2 shrink-0">
+                      <span className="font-mono font-black text-xs sm:text-sm text-[var(--color-text-primary)]">
+                        {sec.scaledScore} / {sec.maxPoints} 点
+                      </span>
+                      <span
+                        className={`text-[10px] font-black px-2 py-0.5 rounded-md uppercase font-mono ${
+                          sec.isPassed
+                            ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300'
+                            : 'bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300'
+                        }`}
+                      >
+                        {sec.isPassed ? 'PASS' : 'FAIL (<19)'}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Question Breakdown Box in Results Screen */}
           <div className="p-4 sm:p-5 rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] shadow-sm mb-6 text-left">
@@ -453,12 +598,12 @@ const N3PracticeSetQuizPage = () => {
             </div>
           </div>
 
-          {/* Action Buttons: Reset, Review, Activity List */}
+          {/* Action Buttons: Reset, Review, Certificate, Activity List */}
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Button
               variant="outline"
               onClick={handleReset}
-              className="border-red-300 dark:border-red-900/60 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 font-semibold"
+              className="border-red-300 dark:border-red-900/60 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 font-semibold cursor-pointer"
             >
               🔄 Reset & Retake
             </Button>
@@ -468,8 +613,16 @@ const N3PracticeSetQuizPage = () => {
                 setIsFinished(false);
                 setCurrentIndex(0);
               }}
+              className="cursor-pointer"
             >
               📝 Review Answers
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => setShowCertificateModal(true)}
+              className="border-amber-300 dark:border-amber-800 text-amber-700 dark:text-amber-300 hover:bg-amber-50 dark:hover:bg-amber-950/30 font-bold cursor-pointer"
+            >
+              📜 Score Certificate
             </Button>
             <Link
               to="/profile"
@@ -480,6 +633,7 @@ const N3PracticeSetQuizPage = () => {
             <Button
               variant="outline"
               onClick={() => navigate(`/practice-sets/${setId}`)}
+              className="cursor-pointer"
             >
               &larr; Back to Set
             </Button>
