@@ -1,10 +1,11 @@
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc, collection, getDocs, setDoc } from 'firebase/firestore';
+import fallbackMeta from '../data/jlpt_past_exams_meta.json';
 
 const COLLECTION_NAME = 'jlpt_past_exams';
 
 /** Helper to timeout a promise */
-const withTimeout = (promise, ms = 1500) =>
+const withTimeout = (promise, ms = 1200) =>
   Promise.race([
     promise,
     new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), ms)),
@@ -12,39 +13,51 @@ const withTimeout = (promise, ms = 1500) =>
 
 /**
  * Fetch past exams index for a specific level (e.g. 'N3', 'N2', etc.)
- * Priority: Firestore index doc -> local public JSON fallback.
+ * Priority: bundled metadata (instant) -> Firestore update -> local public JSON fallback.
  */
 export async function getPastExamsIndex(level = 'N3') {
   const normLevel = (level || 'N3').toLowerCase();
   const upperLevel = normLevel.toUpperCase();
 
+  let allExams = fallbackMeta.filter(e => (e.level || 'N3').toUpperCase() === upperLevel);
+
   // Helper to load local public index
   const fetchLocalIndex = async () => {
     const baseUrl = import.meta.env.BASE_URL || '/';
     const cleanBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
-    const resp = await fetch(`${cleanBase}data/jlpt_past_exams/${normLevel}/_index.json`);
-    if (resp.ok) return await resp.json();
-    throw new Error(`Local index for ${normLevel} not found`);
+    try {
+      const resp = await fetch(`${cleanBase}data/jlpt_past_exams/${normLevel}/_index.json`);
+      if (resp.ok) return await resp.json();
+    } catch (_) {}
+    try {
+      const resp2 = await fetch(`/data/jlpt_past_exams/${normLevel}/_index.json`);
+      if (resp2.ok) return await resp2.json();
+    } catch (_) {}
+    return null;
   };
 
   // 1. Try Firestore `jlpt_past_exams/{level}_index`
   try {
     const indexRef = doc(db, COLLECTION_NAME, `${normLevel}_index`);
-    const snap = await withTimeout(getDoc(indexRef), 1500);
+    const snap = await withTimeout(getDoc(indexRef), 1200);
     if (snap?.exists && snap.exists() && Array.isArray(snap.data()?.exams)) {
       return snap.data();
     }
   } catch (err) {
-    // Firestore timed out or network error; fall back to local JSON
+    // Firestore timed out or network error; fall back to local JSON or bundled
   }
 
   // 2. Fall back to local public JSON
   try {
-    return await fetchLocalIndex();
+    const local = await fetchLocalIndex();
+    if (local && Array.isArray(local.exams) && local.exams.length > 0) {
+      return local;
+    }
   } catch (err) {
-    console.error(`[jlpt_past_exams_service] Failed to fetch index for ${upperLevel}:`, err);
-    return { level: upperLevel, totalExams: 0, exams: [] };
+    // Ignore and return bundled
   }
+
+  return { level: upperLevel, totalExams: allExams.length, exams: allExams };
 }
 
 /**
@@ -60,8 +73,14 @@ export async function getPastExamById(examId, level = 'N3') {
   const fetchLocalExam = async () => {
     const baseUrl = import.meta.env.BASE_URL || '/';
     const cleanBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
-    const resp = await fetch(`${cleanBase}data/jlpt_past_exams/${normLevel}/${normId}.json`);
-    if (resp.ok) return await resp.json();
+    try {
+      const resp = await fetch(`${cleanBase}data/jlpt_past_exams/${normLevel}/${normId}.json`);
+      if (resp.ok) return await resp.json();
+    } catch (_) {}
+    try {
+      const resp2 = await fetch(`/data/jlpt_past_exams/${normLevel}/${normId}.json`);
+      if (resp2.ok) return await resp2.json();
+    } catch (_) {}
     throw new Error(`Local exam file ${normId}.json not found`);
   };
 
