@@ -224,7 +224,8 @@ const JlptPastQuestionsListPage = () => {
       {/* Grid of Past Exam Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
         {filteredExams.map((exam) => {
-          const qid = `jlpt-past-${exam.id}`;
+          const testIdentifier = exam.testId || exam.id;
+          const qid = `jlpt-past-${testIdentifier}`;
           const attempt = history[qid];
           const hasAttempt = Boolean(attempt);
           const isPassed = attempt?.isPassed;
@@ -233,7 +234,7 @@ const JlptPastQuestionsListPage = () => {
 
           return (
             <div
-              key={exam.id}
+              key={testIdentifier}
               className="bg-white dark:bg-zinc-900 border border-gray-200/80 dark:border-white/10 rounded-3xl p-6 shadow-sm hover:shadow-xl hover:border-red-500/50 dark:hover:border-red-500/40 transition-all duration-300 flex flex-col justify-between"
             >
               <div>
@@ -304,7 +305,7 @@ const JlptPastQuestionsListPage = () => {
                     return (
                       <Link
                         key={sec.id}
-                        to={`/levels/${lvlKey}/past-questions/${exam.id}/${sec.id}`}
+                        to={`/levels/${lvlKey}/past-questions/${testIdentifier}/${sec.id}`}
                         className="flex items-center justify-between p-2 rounded-xl text-xs font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-zinc-800 transition-colors border border-transparent hover:border-gray-200 dark:hover:border-zinc-700 group"
                       >
                         <span className="flex items-center gap-2 truncate">
@@ -324,7 +325,7 @@ const JlptPastQuestionsListPage = () => {
               <div className="pt-4 border-t border-gray-100 dark:border-white/5 flex items-center gap-2">
                 <button
                   type="button"
-                  onClick={() => navigate(`/levels/${lvlKey}/past-questions/${exam.id}`)}
+                  onClick={() => navigate(`/levels/${lvlKey}/past-questions/${testIdentifier}`)}
                   className="w-full py-2.5 px-4 rounded-xl text-xs font-black bg-red-600 hover:bg-red-500 text-white shadow-sm hover:shadow transition-all flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <span>{hasAttempt ? '🔄 Retake Full Exam' : '🚀 Take Full Exam (本番模試)'}</span>

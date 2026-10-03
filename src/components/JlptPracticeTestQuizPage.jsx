@@ -93,6 +93,14 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
   useEffect(() => {
     let isMounted = true;
     const fetchTest = async () => {
+      if (!testId || testId === 'undefined') {
+        if (isMounted) {
+          setError(`Invalid test specified. Please select an exam session from the ${lvlUpper} list.`);
+          setLoading(false);
+        }
+        return;
+      }
+
       setLoading(true);
       setError(null);
       try {
