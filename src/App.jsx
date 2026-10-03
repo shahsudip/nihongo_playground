@@ -65,6 +65,10 @@ const N4PracticeSetQuizPage = lazy(() => import('./components/N4PracticeSetQuizP
 
 const KanjiListPage = lazy(() => import('./components/KanjiListPage.jsx'));
 
+// JLPT Mock Practice Tests (N1-N5 from Bunpro)
+const JlptPracticeTestsListPage = lazy(() => import('./components/JlptPracticeTestsListPage.jsx'));
+const JlptPracticeTestQuizPage = lazy(() => import('./components/JlptPracticeTestQuizPage.jsx'));
+
 // This component protects routes that require a user to be logged in
 function ProtectedRoute({ children }) {
   const { currentUser } = useAuth();
@@ -84,6 +88,9 @@ export default function App() {
             <Route path="/levels/:level/kanji-list" element={<ProtectedRoute><KanjiListPage /></ProtectedRoute>} />
             <Route path="/levels/:level/vocabulary-list" element={<ProtectedRoute><VocabularyListPage /></ProtectedRoute>} />
             <Route path="/levels/:level/grammar-list" element={<ProtectedRoute><GrammarListPage /></ProtectedRoute>} />
+            <Route path="/levels/:level/practice-tests" element={<ProtectedRoute><JlptPracticeTestsListPage /></ProtectedRoute>} />
+            <Route path="/levels/:level/practice-tests/:testId" element={<ProtectedRoute><JlptPracticeTestQuizPage /></ProtectedRoute>} />
+            <Route path="/levels/:level/practice-tests/:testId/:sectionId" element={<ProtectedRoute><JlptPracticeTestQuizPage /></ProtectedRoute>} />
             <Route path="/levels/:level/new-vocab-list" element={<ProtectedRoute><VocabularyListPage /></ProtectedRoute>} />
             <Route path="/levels/:level/new-grammar-list" element={<ProtectedRoute><GrammarListPage /></ProtectedRoute>} />
             <Route path="/levels/:level/kanji-details/:id" element={<ProtectedRoute><KanjiDetailsPage /></ProtectedRoute>} />

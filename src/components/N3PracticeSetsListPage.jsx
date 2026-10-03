@@ -3,6 +3,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext.jsx';
+import { practiceSetsBook as localPracticeSetsBook } from '../data/practice_sets_data.js';
 
 const N3PracticeSetsListPage = () => {
   const navigate = useNavigate();
@@ -16,29 +17,52 @@ const N3PracticeSetsListPage = () => {
   useEffect(() => {
     const fetchBookAndHistory = async () => {
       try {
-        const docRef = doc(db, 'books', 'jlpt-n3-practice-sets');
-        const docSnap = await getDoc(docRef);
-        if (docSnap.exists()) {
-          setPracticeSetsBook(docSnap.data());
-        } else {
-          console.error("No such document!");
+        let bookData = { ...localPracticeSetsBook, id: 'jlpt-n3-practice-sets', title: 'Chokuzen Taisaku JLPT N3 (15 Sets)' };
+        
+        try {
+          const docRef = doc(db, 'books', 'jlpt-n3-practice-sets');
+          const docSnap = await getDoc(docRef);
+          if (docSnap.exists()) {
+            const data = docSnap.data();
+            bookData = { ...bookData, ...data };
+            if (Array.isArray(data.sets) && data.sets.length > 0) {
+              bookData.sets = data.sets;
+            }
+          }
+        } catch (dbErr) {
+          console.warn("Could not fetch book from Firestore, using local fallback:", dbErr.message);
         }
 
+        
+
+        // Guarantee sets fallback
+        if (!bookData.sets || !Array.isArray(bookData.sets) || bookData.sets.length === 0) {
+          bookData.sets = localPracticeSetsBook?.sets || [];
+        }
+
+        setPracticeSetsBook(bookData);
+
+        // Fetch user history isolated so permissions never block book view
         if (currentUser) {
-          const historyColRef = collection(db, 'users', currentUser.uid, 'quizHistory');
-          const historySnap = await getDocs(historyColRef);
-          const historyMap = {};
-          historySnap.forEach(d => {
-            const data = d.data();
-            const qid = data.quizId || d.id;
-            if (qid.startsWith('jlpt-n3-practice-sets')) {
-              historyMap[qid] = data;
-            }
-          });
-          setUserHistory(historyMap);
+          try {
+            const historyColRef = collection(db, 'users', currentUser.uid, 'quizHistory');
+            const historySnap = await getDocs(historyColRef);
+            const historyMap = {};
+            historySnap.forEach(d => {
+              const data = d.data();
+              const qid = data.quizId || d.id;
+              if (qid.startsWith('jlpt-n3-practice-sets')) {
+                historyMap[qid] = data;
+              }
+            });
+            setUserHistory(historyMap);
+          } catch (hErr) {
+            console.warn("Could not fetch user history:", hErr.message);
+          }
         }
       } catch (err) {
         console.error("Error fetching book or history:", err);
+        setPracticeSetsBook(localPracticeSetsBook);
       } finally {
         setLoading(false);
       }
@@ -51,7 +75,7 @@ const N3PracticeSetsListPage = () => {
   const completedSetsCount = useMemo(() => {
     if (!practiceSetsBook?.sets) return 0;
     let count = 0;
-    practiceSetsBook.sets.forEach(set => {
+    (practiceSetsBook.sets || []).forEach(set => {
       // Check if any matching history entry is mastered or completed
       const fullKey = `jlpt-n3-practice-sets-${set.id}`;
       const vocabKey = `jlpt-n3-practice-sets-${set.id}-vocabulary-kanji`;
@@ -105,7 +129,7 @@ const N3PracticeSetsListPage = () => {
       <h2 className="practice-sets-section-title">{totalSets} Chokuzen Taisaku Mock Exam Sets (N3)</h2>
       
       <div className="practice-sets-grid">
-        {practiceSetsBook.sets.map((set) => {
+        {(practiceSetsBook.sets || []).map((set) => {
           const fullKey = `jlpt-n3-practice-sets-${set.id}`;
           const vocabKey = `jlpt-n3-practice-sets-${set.id}-vocabulary-kanji`;
           const grammarKey = `jlpt-n3-practice-sets-${set.id}-grammar`;

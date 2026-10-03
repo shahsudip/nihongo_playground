@@ -36,5 +36,22 @@ scratch/
 nihongo_app/
 *.pdf
 scripts/*.png
+__pycache__/
+*.pyc
+scripts/q1_check.txt
+
+# Scripts & scrapers (DB is untouched in Firebase; scripts not needed for online UI)
+scripts/*
+!scripts/verify_all_shinkanzen.cjs
+!scripts/verify_speedmaster.cjs
+jlpt_practice_tests/
+plans/
+public/n3_practice_sets_pages/
+public/sync-db.html
+images/image*.jpg
+public/images/practice_sets/
+.agents/
 
 # Zenkamoku data lives in Git now so Vite can bundle it dynamically
+
+

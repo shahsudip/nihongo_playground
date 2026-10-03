@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc } from 'firebase/firestore';
+import { practiceSetsBook as localPracticeSetsBook } from '../data/practice_sets_data.js';
 
 const N3PracticeSetDetailsPage = () => {
   const { setId } = useParams();
@@ -11,18 +12,30 @@ const N3PracticeSetDetailsPage = () => {
 
   useEffect(() => {
     const fetchBook = async () => {
+      const localSet = localPracticeSetsBook?.sets?.find(s => s.id === setId) || null;
       try {
-        const docRef = doc(db, 'books', 'jlpt-n3-practice-sets');
-        const docSnap = await getDoc(docRef);
-        if (docSnap.exists()) {
-          const bookData = docSnap.data();
-          const set = bookData.sets.find(s => s.id === setId);
-          setCurrentSet(set);
-        } else {
-          console.error("No such document!");
+        let setFound = null;
+
+        // 1. Try parent document first (where sync_practice_sets.mjs writes)
+        try {
+          const docRef = doc(db, 'books', 'jlpt-n3-practice-sets');
+          const docSnap = await getDoc(docRef);
+          if (docSnap.exists()) {
+            const bookData = docSnap.data();
+            setFound = Array.isArray(bookData.sets)
+              ? bookData.sets.find(s => s.id === setId)
+              : (bookData.sets ? bookData.sets[setId] : null);
+          }
+        } catch (parentErr) {
+          console.warn("Parent doc fetch error:", parentErr.message);
         }
+
+        
+
+        setCurrentSet(setFound || localSet);
       } catch (err) {
-        console.error("Error fetching book:", err);
+        console.warn("Error fetching book, using local fallback:", err.message);
+        setCurrentSet(localSet);
       } finally {
         setLoading(false);
       }
@@ -37,8 +50,8 @@ const N3PracticeSetDetailsPage = () => {
   }
 
   // Count questions
-  const vocabKanjiTotal = currentSet.sections['vocabulary-kanji']?.questions?.length || 0;
-  const grammarTotal = currentSet.sections['grammar-reading']?.questions?.length || 0;
+  const vocabKanjiTotal = currentSet?.sections?.['vocabulary-kanji']?.questions?.length || 0;
+  const grammarTotal = currentSet?.sections?.['grammar-reading']?.questions?.length || 0;
 
   return (
     <div className="ps-details-container animate-fade-in">

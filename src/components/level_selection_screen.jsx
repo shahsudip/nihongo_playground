@@ -33,6 +33,14 @@ const categories = [
     icon: '📜',
     desc: 'Study sentence structures, formation rules, connection points, and example sentences.',
   },
+  {
+    id: 'practice-tests',
+    title: 'Practice Tests',
+    japaneseTitle: '模擬試験リスト',
+    icon: '📝',
+    desc: 'Full JLPT mock exams with Vocabulary, Grammar, Reading passages, and Listening audio.',
+    badge: '5 Full Tests',
+  },
 ];
 
 const LevelSelectionPage = () => {
@@ -43,9 +51,9 @@ const LevelSelectionPage = () => {
   const currentLvlUpper = level ? level.toUpperCase() : '';
   const currentLvlInfo = level ? levelMeta[level.toLowerCase()] : null;
 
-  // View 2: Select List (Kanji, Vocabulary, Grammar)
+  // View 2: Select List (Kanji, Vocabulary, Grammar, Practice Tests)
   const renderCategorySelection = () => (
-    <div className="w-full max-w-5xl mx-auto px-4 py-8 animate-fade-in">
+    <div className="w-full max-w-7xl mx-auto px-4 py-8 animate-fade-in">
       <div className="flex items-center gap-2 mb-6">
         <button 
           onClick={() => navigate('/levels')} 
@@ -68,17 +76,24 @@ const LevelSelectionPage = () => {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 stagger-children">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
         {categories.map((cat) => (
           <Link
             key={cat.id}
             to={`/levels/${level}/${cat.id}`}
             className="block group"
           >
-            <div className="h-full bg-white dark:bg-zinc-900 border border-gray-200/80 dark:border-white/10 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl hover:border-emerald-500/60 dark:hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between group-hover:-translate-y-1">
+            <div className="h-full bg-white dark:bg-zinc-900 border border-gray-200/80 dark:border-white/10 rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-xl hover:border-emerald-500/60 dark:hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between group-hover:-translate-y-1">
               <div>
-                <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl shadow-sm bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-zinc-800 dark:to-zinc-800/60 border border-emerald-200/50 dark:border-white/5 mb-5">
-                  {cat.icon}
+                <div className="flex items-center justify-between mb-5">
+                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl shadow-sm bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-zinc-800 dark:to-zinc-800/60 border border-emerald-200/50 dark:border-white/5">
+                    {cat.icon}
+                  </div>
+                  {cat.badge && (
+                    <span className="px-2.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/40 text-[11px] font-black">
+                      {cat.badge}
+                    </span>
+                  )}
                 </div>
                 <div className="text-xs font-bold text-emerald-700 dark:text-emerald-400 mb-1">
                   {cat.japaneseTitle}

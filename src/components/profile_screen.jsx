@@ -899,9 +899,9 @@ const ProfileScreen = () => {
                               <span>{getActivityTitle(item)}</span>
                               <span className="text-xs opacity-70">↗</span>
                             </Link>
-                          ) : item.type === 'practice' ? (
+                          ) : (item.type === 'practice' || item.bookId === 'jlpt-n3-practice-sets') ? (
                             <Link
-                              to={`/practice-sets/${item.setId || 1}`}
+                              to={`/practice-sets/${item.setId || 1}${item.sectionId && item.sectionId !== 'full' ? `/${item.sectionId}` : ''}`}
                               className="text-emerald-600 dark:text-purple-400 hover:underline font-bold inline-flex items-center gap-1.5 transition-colors"
                             >
                               <span>{getActivityTitle(item)}</span>
