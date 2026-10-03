@@ -67,7 +67,8 @@ export async function getPastExamsIndex(level = 'N3') {
 export async function getPastExamById(examId, level = 'N3') {
   if (!examId) return null;
   const normId = examId.toLowerCase();
-  const normLevel = (level || 'N3').toLowerCase();
+  const idLevelMatch = normId.match(/^n([1-5])/);
+  const normLevel = idLevelMatch ? `n${idLevelMatch[1]}` : (level || 'N3').toLowerCase();
 
   // Helper to load local public JSON
   const fetchLocalExam = async () => {

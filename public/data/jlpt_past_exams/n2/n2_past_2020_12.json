@@ -1,0 +1,2218 @@
+{
+  "testId": "n2_past_2020_12",
+  "level": "N2",
+  "year": 2020,
+  "month": 12,
+  "sessionName": "2020年12月 JLPT N2 本試験過去問",
+  "shortName": "2020/12",
+  "totalDurationMinutes": 155,
+  "totalQuestions": 100,
+  "hasListening": true,
+  "hasAudio": true,
+  "officialScoreMax": 180,
+  "officialPassMark": 90,
+  "sections": [
+    {
+      "id": "gengo_chisiki",
+      "title": "言語知識（文字・語彙・文法）",
+      "durationMinutes": 55,
+      "questionCount": 51,
+      "questions": [
+        {
+          "id": "n2_past_2020_12_gengo_q1",
+          "number": 1,
+          "position": 0,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "倒さないように気をつけてください。",
+          "options": [
+            "くずさない",
+            "たおさない",
+            "こわさない&nbsp;",
+            "つぶさない"
+          ],
+          "correct": 2,
+          "correctOption": "たおさない",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q2",
+          "number": 2,
+          "position": 1,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "今回の件での損害は数千万円にのぼった。",
+          "options": [
+            "ひかい&nbsp;",
+            "そんかい",
+            "そんがい",
+            "ひがい"
+          ],
+          "correct": 3,
+          "correctOption": "そんがい",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q3",
+          "number": 3,
+          "position": 2,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "思ったより険しい山道だった。",
+          "options": [
+            "くるしい",
+            "さびしい&nbsp;",
+            "はげしい&nbsp;",
+            "けわしい"
+          ],
+          "correct": 4,
+          "correctOption": "けわしい",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q4",
+          "number": 4,
+          "position": 3,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "この辺りは比較的人通りが少ない。",
+          "options": [
+            "ひこうてき",
+            "ひこてき",
+            "ひかくてき&nbsp;",
+            "ひかてき"
+          ],
+          "correct": 3,
+          "correctOption": "ひかくてき&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q5",
+          "number": 5,
+          "position": 4,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "飛行機は下降を始めた。",
+          "options": [
+            "かこう",
+            "かくう",
+            "げこう",
+            "げくう"
+          ],
+          "correct": 1,
+          "correctOption": "かこう",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q6",
+          "number": 6,
+          "position": 5,
+          "mondai": 2,
+          "audioUrl": "",
+          "stem": "鈴木さんはあざやかな色のシャツを着ていた。",
+          "options": [
+            "鮮やか&nbsp;",
+            "美やか",
+            "清やか",
+            "純やか"
+          ],
+          "correct": 1,
+          "correctOption": "鮮やか&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q7",
+          "number": 7,
+          "position": 6,
+          "mondai": 2,
+          "audioUrl": "",
+          "stem": "今年の夏休みはきせいの予定はありません。",
+          "options": [
+            "帰勢",
+            "帰斉",
+            "帰省&nbsp;",
+            "帰成"
+          ],
+          "correct": 3,
+          "correctOption": "帰省&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q8",
+          "number": 8,
+          "position": 7,
+          "mondai": 2,
+          "audioUrl": "",
+          "stem": "もう少しちぢめてください。",
+          "options": [
+            "薄めて",
+            "納めて",
+            "貯めて",
+            "縮めて"
+          ],
+          "correct": 4,
+          "correctOption": "縮めて",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q9",
+          "number": 9,
+          "position": 8,
+          "mondai": 2,
+          "audioUrl": "",
+          "stem": "これからさまざまなことをじっせんしていきたい。",
+          "options": [
+            "実施&nbsp;",
+            "実践&nbsp;",
+            "実桟",
+            "&nbsp;実旋"
+          ],
+          "correct": 2,
+          "correctOption": "実践&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q10",
+          "number": 10,
+          "position": 9,
+          "mondai": 2,
+          "audioUrl": "",
+          "stem": "西村氏の作品の中ではこの小説は、かなりいしょくだ。",
+          "options": [
+            "異色",
+            "違色",
+            "異食",
+            "違食"
+          ],
+          "correct": 1,
+          "correctOption": "異色",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q11",
+          "number": 11,
+          "position": 10,
+          "mondai": 3,
+          "audioUrl": "",
+          "stem": "宿題を（&nbsp; &nbsp; &nbsp;） 提 出するよう、先生に言われた。",
+          "options": [
+            "復",
+            "改",
+            "再",
+            "補"
+          ],
+          "correct": 3,
+          "correctOption": "再",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q12",
+          "number": 12,
+          "position": 11,
+          "mondai": 3,
+          "audioUrl": "",
+          "stem": "あの人は都会（&nbsp; &nbsp; &nbsp;）だ。",
+          "options": [
+            "育ち",
+            "過ごし",
+            "始まり",
+            "生き"
+          ],
+          "correct": 1,
+          "correctOption": "育ち",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q13",
+          "number": 13,
+          "position": 12,
+          "mondai": 3,
+          "audioUrl": "",
+          "stem": "（&nbsp; &nbsp; &nbsp;）仕事終わったので、休憩しよう。",
+          "options": [
+            "半",
+            "短",
+            "小",
+            "一"
+          ],
+          "correct": 4,
+          "correctOption": "一",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q14",
+          "number": 14,
+          "position": 13,
+          "mondai": 4,
+          "audioUrl": "",
+          "stem": "彼の演技はとても個性的で、見る人の（&nbsp; &nbsp; &nbsp;）が大きく分かれる。",
+          "options": [
+            "考慮",
+            "評価",
+            "信頼",
+            "測定"
+          ],
+          "correct": 2,
+          "correctOption": "評価",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q15",
+          "number": 15,
+          "position": 14,
+          "mondai": 4,
+          "audioUrl": "",
+          "stem": "話し合いでは、相手の意見を（&nbsp; &nbsp; &nbsp;）し、よく聞くことが大切だ。",
+          "options": [
+            "尊重",
+            "信仰",
+            "提案",
+            "発揮"
+          ],
+          "correct": 1,
+          "correctOption": "尊重",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q16",
+          "number": 16,
+          "position": 15,
+          "mondai": 4,
+          "audioUrl": "",
+          "stem": "この商品は、健康を気にする 40 代から 50 代の人を（&nbsp; &nbsp; &nbsp;）に開発した。",
+          "options": [
+            "ゴール",
+            "インパクト&nbsp;",
+            "アピール",
+            "ターゲット"
+          ],
+          "correct": 4,
+          "correctOption": "ターゲット",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q17",
+          "number": 17,
+          "position": 16,
+          "mondai": 4,
+          "audioUrl": "",
+          "stem": "佐藤さんは服装や髪形が個性的で、他の人とは違う（&nbsp; &nbsp; &nbsp;）の雰囲気がある。",
+          "options": [
+            "定着&nbsp;",
+            "専用&nbsp;",
+            "独特",
+            "区別"
+          ],
+          "correct": 3,
+          "correctOption": "独特",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q18",
+          "number": 18,
+          "position": 17,
+          "mondai": 4,
+          "audioUrl": "",
+          "stem": "前回の大会では、あの二人は最後まで優勝を（&nbsp; &nbsp; &nbsp;）いた。",
+          "options": [
+            "戦って",
+            "争って",
+            "奪って",
+            "破って"
+          ],
+          "correct": 2,
+          "correctOption": "争って",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q19",
+          "number": 19,
+          "position": 18,
+          "mondai": 4,
+          "audioUrl": "",
+          "stem": "高橋さんの家を訪ねたが、みんな出かけているようで、人の（&nbsp; &nbsp; &nbsp;）が なかった。",
+          "options": [
+            "動作&nbsp;",
+            "実感&nbsp;",
+            "気配&nbsp;",
+            "状態"
+          ],
+          "correct": 3,
+          "correctOption": "気配&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q20",
+          "number": 20,
+          "position": 19,
+          "mondai": 4,
+          "audioUrl": "",
+          "stem": "彼は自分で決めたルールも守らない、（&nbsp; &nbsp; &nbsp;）人だ。",
+          "options": [
+            "不規則な",
+            "あやふやな&nbsp;",
+            "大まかな",
+            "いいかげんな"
+          ],
+          "correct": 4,
+          "correctOption": "いいかげんな",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q21",
+          "number": 21,
+          "position": 20,
+          "mondai": 5,
+          "audioUrl": "",
+          "stem": "ボランティアで町の名所をガイドしている。",
+          "options": [
+            "案内して",
+            "宣伝して",
+            "調査して",
+            "記録して"
+          ],
+          "correct": 4,
+          "correctOption": "記録して",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q22",
+          "number": 22,
+          "position": 21,
+          "mondai": 5,
+          "audioUrl": "",
+          "stem": "山口さんも真剣に作っていた。",
+          "options": [
+            "上手に",
+            "自由に",
+            "積極的に&nbsp;",
+            "まじめに"
+          ],
+          "correct": 1,
+          "correctOption": "上手に",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q23",
+          "number": 23,
+          "position": 22,
+          "mondai": 5,
+          "audioUrl": "",
+          "stem": "彼女のような歌手はまれだと思う。",
+          "options": [
+            "あまりいない",
+            "人気が出ない",
+            "人気が出る",
+            "たくさんいる"
+          ],
+          "correct": 1,
+          "correctOption": "あまりいない",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q24",
+          "number": 24,
+          "position": 23,
+          "mondai": 5,
+          "audioUrl": "",
+          "stem": "この道は&nbsp;終 日通行止めです。",
+          "options": [
+            "週末&nbsp;",
+            "夜間",
+            "一日中&nbsp;",
+            "今日まで"
+          ],
+          "correct": 3,
+          "correctOption": "一日中&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q25",
+          "number": 25,
+          "position": 24,
+          "mondai": 5,
+          "audioUrl": "",
+          "stem": "青木さんは髪をいじっていた。",
+          "options": [
+            "切って",
+            "触って",
+            "洗って",
+            "乾かして"
+          ],
+          "correct": 2,
+          "correctOption": "触って",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q26",
+          "number": 26,
+          "position": 25,
+          "mondai": 6,
+          "audioUrl": "",
+          "stem": "初期",
+          "options": [
+            "曲の初期の部分を聞いただけで、題名が何かわかりま。",
+            "この建物は有名な建築物で、明治時代の初期に建てられました。",
+            "池田選手は、試合の初期では負けていたが、最後には勝つことができた。",
+            "今日は朝から雲に覆われ、初期は雨だったが、途中から雪に変わった。"
+          ],
+          "correct": 2,
+          "correctOption": "この建物は有名な建築物で、明治時代の初期に建てられました。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q27",
+          "number": 27,
+          "position": 26,
+          "mondai": 6,
+          "audioUrl": "",
+          "stem": "打ち明ける",
+          "options": [
+            "仕事でわからないことがあれば、彼が何でも打ち明けてくれますよ。",
+            "谷口さんが戻ってきたら、伝言を打ち明けておいてもらえますか。",
+            "大事な情報はすぐに上司に打ち明けましょう。",
+            "ずっと秘密にしていたことを友達に打ち明けた。"
+          ],
+          "correct": 4,
+          "correctOption": "ずっと秘密にしていたことを友達に打ち明けた。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q28",
+          "number": 28,
+          "position": 27,
+          "mondai": 6,
+          "audioUrl": "",
+          "stem": "欠陥",
+          "options": [
+            "あの人の欠陥は、自分に都合の悪いことがあるとうそをつくことだ。",
+            "眼鏡のレンズを硬い布でふいたら、欠陥がついてしまった。",
+            "先月発売された車のブレーキに欠陥が見つかり、販売が中止された。",
+            "このサービスを利用することの欠陥は費用が非常にかかることだ。"
+          ],
+          "correct": 3,
+          "correctOption": "先月発売された車のブレーキに欠陥が見つかり、販売が中止された。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q29",
+          "number": 29,
+          "position": 28,
+          "mondai": 6,
+          "audioUrl": "",
+          "stem": "引退",
+          "options": [
+            "山本さんは去年入学したばかりの大学を引退し、別の大学を受験するらしい。&nbsp;",
+            "これまで多くの名作を残した映画監督が、今回限りで引退することを発表した。",
+            "この書店はもうすぐ商店街から引退し、駅前のビルの中で店を始めるらしい。",
+            "中村選手は前大会でのけがが回復せず、次の試合への出場を引退した。"
+          ],
+          "correct": 2,
+          "correctOption": "これまで多くの名作を残した映画監督が、今回限りで引退することを発表した。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q30",
+          "number": 30,
+          "position": 29,
+          "mondai": 6,
+          "audioUrl": "",
+          "stem": "ぎっしり",
+          "options": [
+            "大きな箱に本がぎっしり詰まっている。",
+            "ジュースがコップにぎっしり入っている。",
+            "少し太ったせいで、ズボンがぎっしりしている。",
+            "朝の電車はいつも人でぎっしりしている。"
+          ],
+          "correct": 1,
+          "correctOption": "大きな箱に本がぎっしり詰まっている。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q31",
+          "number": 31,
+          "position": 30,
+          "mondai": 7,
+          "audioUrl": "",
+          "stem": "明日、海外に留学中の友人が１年（&nbsp; &nbsp; &nbsp;）帰国する。会って話を聞くのが 楽しみだ。",
+          "options": [
+            "おきに",
+            "&nbsp;たびに",
+            "ぶりに&nbsp;",
+            "うちに"
+          ],
+          "correct": 3,
+          "correctOption": "ぶりに&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q32",
+          "number": 32,
+          "position": 31,
+          "mondai": 7,
+          "audioUrl": "",
+          "stem": "12 年間付き合っている彼女に、今年（&nbsp; &nbsp; &nbsp;）結婚を申し込もうと思っている。",
+          "options": [
+            "こそ",
+            "さえ",
+            "すら",
+            "のみ"
+          ],
+          "correct": 1,
+          "correctOption": "こそ",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q33",
+          "number": 33,
+          "position": 32,
+          "mondai": 7,
+          "audioUrl": "",
+          "stem": "腰の曲がった老人に似ている（&nbsp; &nbsp; &nbsp;）、エビは「海老」とも書かれると 聞いた。",
+          "options": [
+            "ものを",
+            "とともに&nbsp;",
+            "うえで",
+            "ところから"
+          ],
+          "correct": 4,
+          "correctOption": "ところから",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q34",
+          "number": 34,
+          "position": 33,
+          "mondai": 7,
+          "audioUrl": "",
+          "stem": "上司「セミナー会場の準備はどう？順調？」部下「ええ、いすも並べ終わりましたし、（&nbsp; &nbsp; &nbsp;）資料を受付に運ぶだけ です。」",
+          "options": [
+            "特に",
+            "あとは",
+            "少しも",
+            "あまりに"
+          ],
+          "correct": 2,
+          "correctOption": "あとは",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q35",
+          "number": 35,
+          "position": 34,
+          "mondai": 7,
+          "audioUrl": "",
+          "stem": "このテニスコートの利用料金は 2 時間 1,000 円で、1 時間しか使わない (&nbsp; &nbsp; &nbsp;)、1,000 円払わなければならない。",
+          "options": [
+            "場合でも",
+            "点でも",
+            "場合には",
+            "点には"
+          ],
+          "correct": 1,
+          "correctOption": "場合でも",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q36",
+          "number": 36,
+          "position": 35,
+          "mondai": 7,
+          "audioUrl": "",
+          "stem": "毎日日記を書きつづけることは、（&nbsp; &nbsp; &nbsp;）、けっこう難しいことだ。",
+          "options": [
+            "簡単らしいし",
+            "簡単なようであれば&nbsp;",
+            "簡単らしくて",
+            "簡単なようでいて"
+          ],
+          "correct": 4,
+          "correctOption": "簡単なようでいて",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q37",
+          "number": 37,
+          "position": 36,
+          "mondai": 7,
+          "audioUrl": "",
+          "stem": "梅雨に入ってもほとんど雨が降らないので、庭の花が（&nbsp; &nbsp; &nbsp;）心配だ。",
+          "options": [
+            "枯れていないことで",
+            "枯れてしまわないか",
+            "枯れていないからと",
+            "枯れてしまわないのを"
+          ],
+          "correct": 2,
+          "correctOption": "枯れてしまわないか",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q38",
+          "number": 38,
+          "position": 37,
+          "mondai": 7,
+          "audioUrl": "",
+          "stem": "梅雨に入ってもほとんど雨が降らないので、庭の花が（&nbsp; &nbsp; &nbsp;）心配だ。",
+          "options": [
+            "見に行ってばかりだ&nbsp;",
+            "見に行ったばかりだ&nbsp;",
+            "見に行くつもりだった",
+            "見に行ったつもりだった"
+          ],
+          "correct": 3,
+          "correctOption": "見に行くつもりだった",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q39",
+          "number": 39,
+          "position": 38,
+          "mondai": 7,
+          "audioUrl": "",
+          "stem": "今回の戦略が有効であったかどうかは、まだ結果が出ていない現時点では (&nbsp; &nbsp; &nbsp;)。",
+          "options": [
+            "判断すべきだ&nbsp;",
+            "判断しかねる",
+            "判断したにすぎない",
+            "判断せざるを得ない"
+          ],
+          "correct": 2,
+          "correctOption": "判断しかねる",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q40",
+          "number": 40,
+          "position": 39,
+          "mondai": 7,
+          "audioUrl": "",
+          "stem": "この馬の絵は本物そっくりに描かれていて、今にも(&nbsp; &nbsp; )。",
+          "options": [
+            "走っていたい",
+            "走っているようだ",
+            "走り出しそうだ&nbsp;",
+            "走り出したがる"
+          ],
+          "correct": 3,
+          "correctOption": "走り出しそうだ&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q41",
+          "number": 41,
+          "position": 40,
+          "mondai": 7,
+          "audioUrl": "",
+          "stem": "わたしたちが旅館に着くと、従業員たちが笑顔で「ようこそ(&nbsp; &nbsp; &nbsp;)。」とあ いさつしてくれた。",
+          "options": [
+            "お越しくださいました",
+            "お伺いしました&nbsp;",
+            "お呼びいただきました&nbsp;",
+            "お迎えしました"
+          ],
+          "correct": 1,
+          "correctOption": "お越しくださいました",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q42",
+          "number": 42,
+          "position": 41,
+          "mondai": 7,
+          "audioUrl": "",
+          "stem": "木村「田中さん、アルバイトを探してるんだって?」田中「うん、そうなんだ。」木村「私が働いてる店がアルバイトを募集してるから、応募して みな い？もちろん、 田中さんが(&nbsp; &nbsp; &nbsp;)」",
+          "options": [
+            "いいなんて",
+            "よかったっけ",
+            "いいからだよね&nbsp;",
+            "よければだけど"
+          ],
+          "correct": 4,
+          "correctOption": "よければだけど",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q43",
+          "number": 43,
+          "position": 42,
+          "mondai": 8,
+          "audioUrl": "",
+          "stem": "昨日、初めてパンを作ってみた。料理雑誌の ___ _★_ ___ ___ 、うまく膨らまなかった。",
+          "options": [
+            "のに",
+            "レシピに書いてある",
+            "とおりにし",
+            "作った"
+          ],
+          "correct": 4,
+          "correctOption": "作った",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q44",
+          "number": 44,
+          "position": 43,
+          "mondai": 8,
+          "audioUrl": "",
+          "stem": "「10 倍がゆ」とは、 ___ ___ _★_ ___ おかゆのことです。",
+          "options": [
+            "作った",
+            "水で&nbsp;",
+            "10 倍の&nbsp;",
+            "米 1に対して"
+          ],
+          "correct": 2,
+          "correctOption": "水で&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q45",
+          "number": 45,
+          "position": 44,
+          "mondai": 8,
+          "audioUrl": "",
+          "stem": "私が 就 職した商社は、大手の ___ ___ _★_ ___ 新人でも大きな仕事を任 せてもらえるので、やりがいがある。",
+          "options": [
+            "決して",
+            "商社に比べると",
+            "やる気があれば&nbsp;",
+            "規模は大きくないが"
+          ],
+          "correct": 4,
+          "correctOption": "規模は大きくないが",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q46",
+          "number": 46,
+          "position": 45,
+          "mondai": 8,
+          "audioUrl": "",
+          "stem": "彼女は 1970 年代に活躍したジャズピアニストで、この人 ___ ___ _★_ ___ 大きな存在だった。",
+          "options": [
+            "語れない&nbsp;",
+            "日本のジャズは&nbsp;",
+            "抜きには",
+            "というほど"
+          ],
+          "correct": 1,
+          "correctOption": "語れない&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q47",
+          "number": 47,
+          "position": 46,
+          "mondai": 8,
+          "audioUrl": "",
+          "stem": "贈り物をするときは、自分の勝手な ___ ___ _★_ ___ 、相手の趣味や都合 をよく考えて決めましょう。",
+          "options": [
+            "思い込みだけで",
+            "喜ばれるどころか",
+            "迷惑 をかけることもあるので",
+            "品物を選ぶと"
+          ],
+          "correct": 2,
+          "correctOption": "喜ばれるどころか",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q48",
+          "number": 48,
+          "position": 47,
+          "mondai": 9,
+          "audioUrl": "",
+          "stem": "【48 】",
+          "options": [
+            "ご存知でしょう",
+            "ご存知だと思います",
+            "こ存知でしょうか",
+            "ご存知だと思いますか"
+          ],
+          "correct": 3,
+          "correctOption": "こ存知でしょうか",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q49",
+          "number": 49,
+          "position": 48,
+          "mondai": 9,
+          "audioUrl": "",
+          "stem": "【49 】",
+          "options": [
+            "そこで",
+            "そのうえ",
+            "それなのに",
+            "そういえば"
+          ],
+          "correct": 1,
+          "correctOption": "そこで",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q50",
+          "number": 50,
+          "position": 49,
+          "mondai": 9,
+          "audioUrl": "",
+          "stem": "【50 】",
+          "options": [
+            "得られる点です",
+            "得られてもかまいません",
+            "得られるのだそうです",
+            "得られなければなりません"
+          ],
+          "correct": 3,
+          "correctOption": "得られるのだそうです",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_gengo_q51",
+          "number": 51,
+          "position": 50,
+          "mondai": 9,
+          "audioUrl": "",
+          "stem": "【51 】",
+          "options": [
+            "貢献するつもりでした",
+            "貢献すべきだからです",
+            "貢献できるようにしています",
+            "貢献できるようになりたいです"
+          ],
+          "correct": 4,
+          "correctOption": "貢献できるようになりたいです",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dokkai",
+      "title": "読解",
+      "durationMinutes": 50,
+      "questionCount": 19,
+      "questions": [
+        {
+          "id": "n2_past_2020_12_reading_q1",
+          "number": 1,
+          "position": 0,
+          "mondai": 10,
+          "audioUrl": "",
+          "stem": "以下は、ペットとして犬を簡う人に向けて書かれた文章である。犬は、本能(注 1)のままに動くことに喜びを感じます。獲物(注 2)を探す、追いかける、取ってくる—などはその象徴的な行動です。しかし現代の人間社会では、このような行動はほとんど必要なくなってしまいました。その結果、「犬がしたいこと」と「飼い主がさせたいこと」との間に、ギャップが生じるようになってきました。(注 1)本能:ここでは、生まれつき持っている性質(注 2)獲物:ここでは、食べるための動物ギャップが生じるのはなぜか。",
+          "options": [
+            "犬の生まれつき持っている性質が、人間社会に合わせて変化したから。",
+            "犬がしたい行動は、現代の人間社会では必要ないことが多いから。",
+            "犬が喜びを感じる行動が、飼い主にはわからなくなったから。&nbsp;",
+            "飼い主がさせたい行動は、犬にはできないことが多いから。"
+          ],
+          "correct": 2,
+          "correctOption": "犬がしたい行動は、現代の人間社会では必要ないことが多いから。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q2",
+          "number": 2,
+          "position": 1,
+          "mondai": 10,
+          "audioUrl": "",
+          "stem": "壁はともすれば(注 1)行動の限界を決めてしまうネガティヴな(注 2)イメージをもたれていますが、実は人間が他の個体と関係を調整するための大変重要なエレメント(注 3)だったのではないか、とぼくは考えています。壁があったから、人間は仲良く暮らしてこられたのだ、と。壁によって隔てられれば、心理的な距離ができますから、密度高く住むこともできて、移動する距離は少なくてすむ。会おうと思えば会えますし、会いたくなければ壁のうちにこもっていればいい(注 4)。(注 1) ともすれば～もたれる: ここでは、～もたれることもある(注 2) ネガティヴな： ここでは、マイナスの(注 3) エレメント: 要素(注 4) ～にこもっている: ～から出ないでいる。筆者は、壁にはどのような役割があると考えているか。",
+          "options": [
+            "生きていくために必要な場所を確保する。",
+            "周りの人との心理的なつながりを切る。",
+            "周りの人との適度な距離を保つ。",
+            "人間の行動範囲を制限する。"
+          ],
+          "correct": 3,
+          "correctOption": "周りの人との適度な距離を保つ。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q3",
+          "number": 3,
+          "position": 2,
+          "mondai": 10,
+          "audioUrl": "",
+          "stem": "以下は、ある会社で回覧された文書である。10 月 15 日各課 担当者各位事務課年始の挨拶状について取引先にお送りする年始の災拶状につきまして、総務課から一括発送する相手先のリストを作成しました。添付の資料を各課でご確認のうえ、修正が必要な箇所があれば来週木曜（22 日）までに総務課にご連絡ください。また、そのほかに各課から直接送付したい相手先がある場合、各課で発送を お願いします。必要分の挨拶状を配りますので、10 月 30 日までにその数を お知らせください。12 月初旬に各課に配る予定です。以上各課の担当者がしなければならないこととして合っているのはどれか。",
+          "options": [
+            "総務課から送付してほしい相手先のリストを作成し、22日までに総務課に出す。",
+            "総務課から送付する相手先のリストを確認し、修正があれば22日までに総務課に知らせる。",
+            "各課から直接送付する相手先のリストを作成し、30日までに総務課に出す。",
+            "各課から直接送付する相手先のリストを確認し、修正があれば 30日までに総務課に知らせる。"
+          ],
+          "correct": 2,
+          "correctOption": "総務課から送付する相手先のリストを確認し、修正があれば22日までに総務課に知らせる。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q4",
+          "number": 4,
+          "position": 3,
+          "mondai": 10,
+          "audioUrl": "",
+          "stem": "研究者人口が増えれば、それだけ科学の進歩は速くなる。もちろん、重要な科学的成果があげられるかどうか、研究の作業量に比例するものではない。運にも左右される偶然性の高いものだ。だが、様々な考えを持った多様な研究者が多数研究に従事する(注 1)ことで、誰かが大発見をする確率が高くなる。多くの研究者が、多様な考えに基づいて研究することはこのうえなく(注 2)重要だ。多数の研究者がひとつの考え方に沿って研究するというのでは、未来はないだろう。(注 1) ～に従事する: ここでは、～を行う(注 2) このうえなく: 最も筆者の考えに合うのはどれか。",
+          "options": [
+            "研究者が増加し考え方も多様化すれば、科学はより進歩する。",
+            "科学が進歩すればするほど研究者人口が増え、研究は多様化する。",
+            "&nbsp;一人一人の研究者が研究の作業量を増やせば、科学はより進歩する。",
+            "多数の研究者が、ひとつの考え方に沿って研究することが大発見につながる。"
+          ],
+          "correct": 1,
+          "correctOption": "研究者が増加し考え方も多様化すれば、科学はより進歩する。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q5",
+          "number": 5,
+          "position": 4,
+          "mondai": 10,
+          "audioUrl": "",
+          "stem": "もしつらい恋愛で苦しんだ人が、ある恋愛ものを読んで慰められたとすると、そのときのことというのは、あとあとまで、ずうっと覚えているものです。人生でそういう経験をもっている人はやっぱり幸いだと、私は思います。何も恋愛に限らないけれど、そのような深い体験をもっていると、こんどは「源氏物語」のような古典作品を流れでも、深く味わうことができる。そうやって人間の精神は大人になっていくんです。筆者によると、人間の精神が大人になるには、何が必要か。",
+          "options": [
+            "つらい出来事を読書で認められた経験&nbsp;",
+            "つらい恋愛をいつまでも忘れられない経験&nbsp;",
+            "苦しんでいる人を慰めた経験&nbsp;",
+            "古典作品をたくさん読ん経験"
+          ],
+          "correct": 1,
+          "correctOption": "つらい出来事を読書で認められた経験&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q6",
+          "number": 6,
+          "position": 5,
+          "mondai": 11,
+          "audioUrl": "",
+          "stem": "「嫌いなピーマンを無理に食べさせる必要はない」と考える理由として 合っているのはどれか。",
+          "options": [
+            "幼児期の子どもの食事は栄美にこだわる必要はないから",
+            "無理に食べさせると将来食事に関心を持てなくなるから&nbsp;",
+            "人にはそれぞれ好き嫌いがあるのは当たり前だから&nbsp;",
+            "他の野菜でも同じ栄養を摂ることができるから"
+          ],
+          "correct": 4,
+          "correctOption": "他の野菜でも同じ栄養を摂ることができるから",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q7",
+          "number": 7,
+          "position": 6,
+          "mondai": 11,
+          "audioUrl": "",
+          "stem": "筆者は、幼児期の子どもにどのようなことをするのがいいと言っているか。",
+          "options": [
+            "いろいろなものを食べる経験をさせる。&nbsp;",
+            "栄養のあるものをたくさん食べさせる。",
+            "子ども自身の好き嫌いに任せる。",
+            "食事のときに話しかける。"
+          ],
+          "correct": 1,
+          "correctOption": "いろいろなものを食べる経験をさせる。&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q8",
+          "number": 8,
+          "position": 7,
+          "mondai": 11,
+          "audioUrl": "",
+          "stem": "筆者は、嫌いなものを食べて表められた経験がどのようなことにつながる と考えているか。",
+          "options": [
+            "物事に積極的になり、周囲にいる人たちに勧められるようになる。&nbsp;",
+            "苦手意識がなくなり、気が合わないと感じる人もいなくなる。",
+            "自信が生まれ、物事に積極的に取り組めるようになる。&nbsp;",
+            "自信を持てるようになり、どんなことでも好きになる。"
+          ],
+          "correct": 3,
+          "correctOption": "自信が生まれ、物事に積極的に取り組めるようになる。&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q9",
+          "number": 9,
+          "position": 8,
+          "mondai": 11,
+          "audioUrl": "",
+          "stem": "そのような状態とあるが、どのような状態か。",
+          "options": [
+            "ストレスを感じすぎている状態",
+            "よいストレスしか感じていない状態&nbsp;",
+            "どんなストレスも感じていない状態",
+            "いろいろなストレスを感じている状態"
+          ],
+          "correct": 3,
+          "correctOption": "どんなストレスも感じていない状態",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q10",
+          "number": 10,
+          "position": 9,
+          "mondai": 11,
+          "audioUrl": "",
+          "stem": "ストレスのよい面とは何か。",
+          "options": [
+            "のんびりすることのよさがわかる。",
+            "するべきことをする気になる。&nbsp;",
+            "繁張感を楽しめるようになる。",
+            "いろいろなことが気にならなくなる。"
+          ],
+          "correct": 2,
+          "correctOption": "するべきことをする気になる。&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q11",
+          "number": 11,
+          "position": 10,
+          "mondai": 11,
+          "audioUrl": "",
+          "stem": "ストレスについて、筆者はどのように述べているか。",
+          "options": [
+            "よいストレスはこころと体にとって大切だ。",
+            "よいストレスは緊張をなくすのに役立つ。",
+            "ストレスはできるだけ避けたほうがいい。",
+            "ストレスは仕事や勉強には必ずあるものだ。"
+          ],
+          "correct": 1,
+          "correctOption": "よいストレスはこころと体にとって大切だ。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q12",
+          "number": 12,
+          "position": 11,
+          "mondai": 11,
+          "audioUrl": "",
+          "stem": "①そこにあるものとは何か。",
+          "options": [
+            "撮る人の個性",
+            "撮る人の正直な気持ち",
+            "&nbsp;撮られる人の個性",
+            "撮られる人の外見"
+          ],
+          "correct": 3,
+          "correctOption": "&nbsp;撮られる人の個性",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q13",
+          "number": 13,
+          "position": 12,
+          "mondai": 11,
+          "audioUrl": "",
+          "stem": "②写真は 2 度撮られるとあるが、なぜそう考えられるのか。",
+          "options": [
+            "度写真を撮れば、重要な一枚を選びやすくなるから",
+            "写真を撮る前に撮るものを選ぶことも重要だから",
+            "写真を選ぶことも写真を撮ることと同じくらい重要だから",
+            "写真家の気づいたことも気づいていないことも写っているから"
+          ],
+          "correct": 3,
+          "correctOption": "写真を選ぶことも写真を撮ることと同じくらい重要だから",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q14",
+          "number": 14,
+          "position": 13,
+          "mondai": 11,
+          "audioUrl": "",
+          "stem": "筆者によると、いい写真家とはどのような人か。",
+          "options": [
+            "どう撮れば成功作になるか、事前に知ろうとする人",
+            "撮るたびに、撮られる人の新しい一面を発見できる人",
+            "うまく撮れなくても、あきらめないで写真を撮り続ける人",
+            "自分が撮った写真から得た発見を、次の撮影に役立てていける人"
+          ],
+          "correct": 4,
+          "correctOption": "自分が撮った写真から得た発見を、次の撮影に役立てていける人",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q15",
+          "number": 15,
+          "position": 14,
+          "mondai": 12,
+          "audioUrl": "",
+          "stem": "睡眠不足で悩む人について、A と B が共通して原因だと指摘していること は何か。",
+          "options": [
+            "不規則な生活を送っていること&nbsp;",
+            "深い睡眠が取れていないこと",
+            "夜遅くまで活動していること",
+            "睡眠時間が足りないこと"
+          ],
+          "correct": 2,
+          "correctOption": "深い睡眠が取れていないこと",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q16",
+          "number": 16,
+          "position": 15,
+          "mondai": 12,
+          "audioUrl": "",
+          "stem": "睡眠不足を解消するために、A と B はどのようなアドバイスをしている か。",
+          "options": [
+            "A も B も、できるだけ生活のリズムを乱さないようにしたほうがいいと述べている。",
+            "A も B も、寝る前の時間を有効に活用したほうがいいと述べている。",
+            "A は寝る前に気持ちを落ち着かけたほうがいいと述べ、B は基本的な生活習慣を見直したほうがいいと述べている。",
+            "A は寝る前の行動に気をつけたほうがいいと述べ、Ｂは寝るときの環境や使う物を意識したほうがいいと述べている。"
+          ],
+          "correct": 4,
+          "correctOption": "A は寝る前の行動に気をつけたほうがいいと述べ、Ｂは寝るときの環境や使う物を意識したほうがいいと述べている。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q17",
+          "number": 17,
+          "position": 16,
+          "mondai": 13,
+          "audioUrl": "",
+          "stem": "筆者によると、相談者が最初に相手に求めることは何か。",
+          "options": [
+            "時間をかけて、ただ話を聞いてくれること",
+            "悩むような難問ではないと言ってくれること",
+            "&nbsp;話しやすい雰囲気を作ってくれること",
+            "話を聞いて、解決策を一緒に考えてくれること"
+          ],
+          "correct": 1,
+          "correctOption": "時間をかけて、ただ話を聞いてくれること",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q18",
+          "number": 18,
+          "position": 17,
+          "mondai": 13,
+          "audioUrl": "",
+          "stem": "筆者によると、語り合いの中で相談者はどのように話そうとするか。",
+          "options": [
+            "聞き手が関心を持つように、工夫しながら話す。",
+            "聞き手が知りたいと思っていることを中心に話す。&nbsp;",
+            "聞き手がわかるように、事情や悩みをできるだけ詳しく話す。",
+            "聞き手が理解できるように、説明のしかたを考えながら話す。"
+          ],
+          "correct": 4,
+          "correctOption": "聞き手が理解できるように、説明のしかたを考えながら話す。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_reading_q19",
+          "number": 19,
+          "position": 18,
+          "mondai": 13,
+          "audioUrl": "",
+          "stem": "筆者の考えに合うのはどれか。",
+          "options": [
+            "語り合いによって、それまで気づかなかった視点が得られる。",
+            "語り合っているうちに、聞き手の視点で考えられるようになる。",
+            "違う経験をした人に相談すれば、現実の見え方も変わる。",
+            "自分の視点を大切にして語ることで、悩みの解決につながる。"
+          ],
+          "correct": 1,
+          "correctOption": "語り合いによって、それまで気づかなかった視点が得られる。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "title": "聴解",
+      "durationMinutes": 50,
+      "questionCount": 30,
+      "questions": [
+        {
+          "id": "n2_past_2020_12_listening_q1",
+          "number": 1,
+          "position": 0,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/05/28/05288df46d0f339c96d579cedb82f3e1791182f7",
+          "stem": "1番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "ホームで忘れ物をさがす",
+            "そうじの人に忘れ物がないか聞く",
+            "じむしょで忘れ物がないかたずねる",
+            "忘れ物センターに問い合わせる"
+          ],
+          "correct": 3,
+          "correctOption": "じむしょで忘れ物がないかたずねる",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q2",
+          "number": 2,
+          "position": 1,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/29/30/2930f0730ec4b8e0003f9e9328e5d39171be5572",
+          "stem": "2番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "会社のけんしゅうに参加する&nbsp;",
+            "通信教育を受ける&nbsp;",
+            "外国人の友達と話す",
+            "試験に申し込む"
+          ],
+          "correct": 2,
+          "correctOption": "通信教育を受ける&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q3",
+          "number": 3,
+          "position": 2,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/34/98/3498ab1f7bcba3e76c3d8114eef0f45394d95f79",
+          "stem": "3番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "⓪⓪②→開く→⑦②⑤&nbsp;",
+            "⓪⓪②→開く→⑦②⑤→開く",
+            "&nbsp;⑦②⑤→開く→⓪⓪②",
+            "⑦②⑤→開く→⓪⓪②→開く"
+          ],
+          "correct": 4,
+          "correctOption": "⑦②⑤→開く→⓪⓪②→開く",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q4",
+          "number": 4,
+          "position": 3,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/68/32/683251181d0fe26fa8cf11f565b8c013cb2cbed1",
+          "stem": "4番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "自分の部屋&nbsp;",
+            "ビジネスセンター",
+            "インターネットカフェ",
+            "ロビー"
+          ],
+          "correct": 3,
+          "correctOption": "インターネットカフェ",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q5",
+          "number": 5,
+          "position": 4,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/9c/df/9cdf0de74ecf503addcf59f057afcb9aaed70737",
+          "stem": "5番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "本にラベルをつける",
+            "本を図書館のたなに入れる&nbsp;",
+            "本のデータを入力する",
+            "本を箱に入れる。"
+          ],
+          "correct": 2,
+          "correctOption": "本を図書館のたなに入れる&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q6",
+          "number": 6,
+          "position": 5,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/82/a3/82a3691be07f894f6dce7bd460c0497e66dc2514",
+          "stem": "1番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "来客が増えたから",
+            "運動が足りないから",
+            "えさが足りないから&nbsp;",
+            "生活かんきょうが変わったから"
+          ],
+          "correct": 4,
+          "correctOption": "生活かんきょうが変わったから",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q7",
+          "number": 7,
+          "position": 6,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/11/1a/111a46b5b4e6ef613147c8e46ab18723f1f99e13",
+          "stem": "2番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "おいしいおかしが食べられるから&nbsp;",
+            "さまざまな世代の人と知り合えるから&nbsp;",
+            "れいぎが学べるから",
+            "着物を着ることができるから"
+          ],
+          "correct": 2,
+          "correctOption": "さまざまな世代の人と知り合えるから&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q8",
+          "number": 8,
+          "position": 7,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/c9/df/c9dff6426a9d94117b1612a9e54ea4c682eaad5b",
+          "stem": "3番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "野菜の種類を変えたほうがいい&nbsp;",
+            "ドレッシングの味を変えたほうがいい&nbsp;",
+            "入れる肉の量を増やしたほうがいい。",
+            "値段を少し安くしたほうがいい"
+          ],
+          "correct": 3,
+          "correctOption": "入れる肉の量を増やしたほうがいい。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q9",
+          "number": 9,
+          "position": 8,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/42/06/4206b1386b0001efb69e56ae5fbb9b45d62e36c3",
+          "stem": "4番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "歩いて行く。",
+            "バスに乗って行く",
+            "地下鉄で南駅へ行き、そこから歩く",
+            "地下鉄で南駅へ行き、そこからバスに乗る"
+          ],
+          "correct": 4,
+          "correctOption": "地下鉄で南駅へ行き、そこからバスに乗る",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q10",
+          "number": 10,
+          "position": 9,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/81/de/81de863cbf6ed369b95a1d7aeb35cff377a9e72d",
+          "stem": "5番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "せんしんてきなゆたかさを味わえるから&nbsp;",
+            "のうぎょうの経験がなくても始められるから&nbsp;",
+            "じちたいのしえん制度があるから&nbsp;",
+            "のうぎょうしどうが受けられるから"
+          ],
+          "correct": 1,
+          "correctOption": "せんしんてきなゆたかさを味わえるから&nbsp;",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q11",
+          "number": 11,
+          "position": 10,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/02/17/0217c6266e8ac50c4479f215d5f766547a96ced9",
+          "stem": "6番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "作家に面白いアイディアをていあんすること",
+            "作家に読者の立場からの意見を伝えること",
+            "さまざまな分野の人と付き合うこと",
+            "さまざまな情報を集めること&nbsp;"
+          ],
+          "correct": 2,
+          "correctOption": "作家に読者の立場からの意見を伝えること",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q12",
+          "number": 12,
+          "position": 11,
+          "mondai": 3,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/8d/e6/8de6e5be05a761871011e8d1c958d4d7e8eab752",
+          "stem": "1番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q13",
+          "number": 13,
+          "position": 12,
+          "mondai": 3,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/aa/1e/aa1e40b0953cd7d979e250a5a16e09fb6468cd9e",
+          "stem": "2番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q14",
+          "number": 14,
+          "position": 13,
+          "mondai": 3,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/52/78/5278f56b270bf8f16b541e3b33455ebd51a67371",
+          "stem": "3番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctOption": "4",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q15",
+          "number": 15,
+          "position": 14,
+          "mondai": 3,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/aa/5d/aa5d7e9c947cd1ece8e413ac442856cc6a8bd6d1",
+          "stem": "4番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q16",
+          "number": 16,
+          "position": 15,
+          "mondai": 3,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/7c/ea/7ceaab49eaebf75e55923c00e436ec67e85f3f94",
+          "stem": "5番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q17",
+          "number": 17,
+          "position": 16,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/17/7d/177d9c55d76f43c4045812572f95dad2316825c3",
+          "stem": "1番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q18",
+          "number": 18,
+          "position": 17,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/9b/2f/9b2f37c0032d4530fca97f545f9166ae42524d54",
+          "stem": "2番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q19",
+          "number": 19,
+          "position": 18,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/14/96/1496b96a13994cb7d9bf1b2baf6cb9a039be36fe",
+          "stem": "３番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q20",
+          "number": 20,
+          "position": 19,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/e6/46/e646c63f6028062f71ca537b54f2b50a8cc0f8ac",
+          "stem": "４番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q21",
+          "number": 21,
+          "position": 20,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/fc/e2/fce262772bf8851da3c5a8bf02bdddd357fcf9c8",
+          "stem": "５番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q22",
+          "number": 22,
+          "position": 21,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/c3/88/c388e65087fdc1ed1f97bc15ce3a5448c3144ba1",
+          "stem": "６番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q23",
+          "number": 23,
+          "position": 22,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/cf/0b/cf0b4a02b6ac7b96e95cc2f5e0c1c82c7e088cca",
+          "stem": "７番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q24",
+          "number": 24,
+          "position": 23,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/05/19/05191b78637e770271abcff4cff9bc78783356e7",
+          "stem": "８番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q25",
+          "number": 25,
+          "position": 24,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/5a/c9/5ac9d1c6922455a62935fcdbb87d464f78fa6740",
+          "stem": "９番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q26",
+          "number": 26,
+          "position": 25,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/22/49/2249b19892e7b86706c6b39279d85c9c8f2fd097",
+          "stem": "10 番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q27",
+          "number": 27,
+          "position": 26,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/f7/fe/f7fe5395132de9030bcfb3abb7dc2d6698b9478a",
+          "stem": "11 番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q28",
+          "number": 28,
+          "position": 27,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/21/b1/21b112004255082dc5b9de2ff9a1de5dba48ff34",
+          "stem": "1番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q29",
+          "number": 29,
+          "position": 28,
+          "mondai": 5,
+          "audioUrl": "",
+          "stem": "質問1",
+          "options": [
+            "１番の仕事",
+            "２番の仕事",
+            "３番の仕事",
+            "４番の仕事"
+          ],
+          "correct": 3,
+          "correctOption": "３番の仕事",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n2_past_2020_12_listening_q30",
+          "number": 30,
+          "position": 29,
+          "mondai": 5,
+          "audioUrl": "",
+          "stem": "質問2",
+          "options": [
+            "１番の仕事",
+            "２番の仕事",
+            "３番の仕事",
+            "４番の仕事"
+          ],
+          "correct": 4,
+          "correctOption": "４番の仕事",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    }
+  ]
+}

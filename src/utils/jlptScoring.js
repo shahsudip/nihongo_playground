@@ -116,18 +116,24 @@ export function calculateJlptExamScore(level = 'N3', sections = [], answers = {}
     let minPassPoints = 19;
 
     const secIdLower = (sec.id || '').toLowerCase();
-    if (normLevel === 'N4' || normLevel === 'N5') {
-      if (secIdLower.includes('listening') || secIdLower.includes('choukai')) {
-        maxPoints = 60;
-        minPassPoints = 19;
-      } else {
-        maxPoints = 120;
-        minPassPoints = 38;
-      }
-    } else {
-      // N1, N2, N3: 3 sections of 60 points each
+    const isListening = secIdLower.includes('listening') || secIdLower.includes('choukai');
+
+    if (isListening) {
       maxPoints = 60;
       minPassPoints = 19;
+    } else {
+      const writtenSecCount = sections.filter(s => {
+        const sid = (s.id || '').toLowerCase();
+        return !sid.includes('listening') && !sid.includes('choukai');
+      }).length;
+
+      if (writtenSecCount === 1) {
+        maxPoints = 120;
+        minPassPoints = 38;
+      } else {
+        maxPoints = 60;
+        minPassPoints = 19;
+      }
     }
 
     calculatedMaxScore += maxPoints;
