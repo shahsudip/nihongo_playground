@@ -1,6 +1,6 @@
 {
   "level": "N3",
-  "updatedAt": "2026-10-03T17:45:18.660Z",
+  "updatedAt": "2026-10-03T18:01:31.947Z",
   "totalExams": 13,
   "exams": [
     {
@@ -129,8 +129,8 @@
       "sessionName": "2022年12月",
       "title": "JLPT N3 Past Exam (2022年12月)",
       "japaneseTitle": "日本語能力試験 N3 2022年12月 過去問",
-      "totalQuestions": 73,
-      "totalMinutes": 100,
+      "totalQuestions": 101,
+      "totalMinutes": 140,
       "sections": [
         {
           "id": "vocab",
@@ -143,6 +143,12 @@
           "title": "言語知識（文法）・読解",
           "questionCount": 38,
           "durationMinutes": 70
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "questionCount": 28,
+          "durationMinutes": 40
         }
       ]
     },

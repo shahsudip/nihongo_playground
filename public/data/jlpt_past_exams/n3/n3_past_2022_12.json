@@ -6,8 +6,8 @@
   "sessionName": "2022年12月",
   "title": "JLPT N3 Past Exam (2022年12月)",
   "japaneseTitle": "日本語能力試験 N3 2022年12月 過去問",
-  "totalQuestions": 73,
-  "totalMinutes": 100,
+  "totalQuestions": 101,
+  "totalMinutes": 140,
   "sections": [
     {
       "id": "vocab",
@@ -1589,6 +1589,604 @@
           "correctOption": "8500 円の40%を払う。",
           "explanations": [
             "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "title": "聴解",
+      "durationMinutes": 40,
+      "questionCount": 28,
+      "questions": [
+        {
+          "id": "n3_past_2022_12_listening_q1",
+          "number": 1,
+          "position": 0,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/3c/3f/3c3f45e2743e677b24a62925d9ab4424096d6f43",
+          "stem": "1 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "チケット売り場にチケットを買いに行く",
+            "インターネットでチケットを買う",
+            "川野さんにお金をわたす",
+            "わりびきけんを もらいに行く"
+          ],
+          "correct": 3,
+          "correctOption": "川野さんにお金をわたす",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q2",
+          "number": 2,
+          "position": 1,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/1a/3c/1a3c2dbd43b4b445e59658b328782903f34c59b7",
+          "stem": "２番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "しょるいをいんさつする",
+            "先生にメールでしょるいを送る",
+            "先生のメールにへんしんする",
+            "先生に会いに行く時間を決める"
+          ],
+          "correct": 2,
+          "correctOption": "先生にメールでしょるいを送る",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q3",
+          "number": 3,
+          "position": 2,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/6e/6e/6e6e8622b5ae4dddb8ab64353643a7a05d2ac1e2",
+          "stem": "3 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "ア イ",
+            "ア エ",
+            "イ ウ",
+            "ウ エ"
+          ],
+          "correct": 1,
+          "correctOption": "ア イ",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q4",
+          "number": 4,
+          "position": 3,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/ea/bf/eabfb01f15493617d603116c1b8ea4f4083e0428",
+          "stem": "4 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "だいひょうしゃの名前を書く",
+            "メンバーぜんいんに住所を聞く",
+            "利用の注意点をかくにんする",
+            "使用料をはらう"
+          ],
+          "correct": 2,
+          "correctOption": "メンバーぜんいんに住所を聞く",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q5",
+          "number": 5,
+          "position": 4,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/93/61/9361a241536e1d7bbb1a2d0a92c2725a966dc71b",
+          "stem": "５番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "ほかの大学のとしよかんに行く",
+            "本のゆうそうを しんせいする",
+            "本のコピーをしんせいする",
+            "ぶんがくぶのしりょうしつに行く"
+          ],
+          "correct": 4,
+          "correctOption": "ぶんがくぶのしりょうしつに行く",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q6",
+          "number": 6,
+          "position": 5,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/78/76/7876cb5c5fdba46a81c50e25ccde0fb6dabf8957",
+          "stem": "6 番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "テーブルを動かす",
+            "いすを運ぶ",
+            "かびんをかたづける",
+            "ゆかをそうじする"
+          ],
+          "correct": 2,
+          "correctOption": "いすを運ぶ",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q7",
+          "number": 7,
+          "position": 6,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/2d/67/2d674c6dc7b528dc738dab8384795ec3ac76a738",
+          "stem": "1番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "前を見て話す",
+            "もう少しゆっくり話す",
+            "決められた時間内に話し終える",
+            "スピーチをみじかくする"
+          ],
+          "correct": 2,
+          "correctOption": "もう少しゆっくり話す",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q8",
+          "number": 8,
+          "position": 7,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/45/cb/45cb7776a864132e04e7a6b58af577369dcb3b9b",
+          "stem": "２番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "広くてきれいなところ",
+            "動物とあそべる場所があるところ",
+            "めずらしい動物がいるところ",
+            "動物のしゅるいが多いところ"
+          ],
+          "correct": 2,
+          "correctOption": "動物とあそべる場所があるところ",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q9",
+          "number": 9,
+          "position": 8,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/af/e3/afe387dbcb64ea4ea35efd0df3f336602d015bfc",
+          "stem": "３番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "毎日れんしゅうする",
+            "きほんのれんしゅうをふやす",
+            "1 日のれんしゅう時間をへらす",
+            "週1 日はれんしゅうを休む"
+          ],
+          "correct": 4,
+          "correctOption": "週1 日はれんしゅうを休む",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q10",
+          "number": 10,
+          "position": 9,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/20/7f/207fd0ea0c9b43e1d9d2f88bd6d1c0ca2ccc6650",
+          "stem": "４番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "出発の前日の午後 6 時",
+            "出発の前日の午後 8 時",
+            "出発の日の午前 6 時",
+            "出発の日の午前 8 時"
+          ],
+          "correct": 3,
+          "correctOption": "出発の日の午前 6 時",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q11",
+          "number": 11,
+          "position": 10,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/c6/8f/c68f3276adc29631a6bdb5fa9ab99bdddee2b9d0",
+          "stem": "5 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "むすこがやりたいと言ったから",
+            "体力をつけさせたかったから",
+            "じしんをつけさせたかったから",
+            "勉強をがんばるようになると聞いたから"
+          ],
+          "correct": 2,
+          "correctOption": "体力をつけさせたかったから",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q12",
+          "number": 12,
+          "position": 11,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/60/2c/602c889c4acce3b193238166424939ddf91f7c6e",
+          "stem": "６番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "しょうひんを売るためのくふう",
+            "店でいちばん売れているもの",
+            "開店前にじゅんびすること",
+            "店を始めた年"
+          ],
+          "correct": 1,
+          "correctOption": "しょうひんを売るためのくふう",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q13",
+          "number": 13,
+          "position": 12,
+          "mondai": 3,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/de/c6/dec656ed2702d7a4b162a115188b5941e65d6ad5",
+          "stem": "1番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q14",
+          "number": 14,
+          "position": 13,
+          "mondai": 3,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/a3/62/a3622300d0213439b5be5cc62b40c060439f6202",
+          "stem": "2 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q15",
+          "number": 15,
+          "position": 14,
+          "mondai": 3,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/6a/9e/6a9e267a83d0bcac25ccb58eecbe78b14690edc0",
+          "stem": "3 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q16",
+          "number": 16,
+          "position": 15,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/cf/d7/cfd7a18214f15ab7d1c7ee4f179ba6937cb2d128",
+          "stem": "1 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q17",
+          "number": 17,
+          "position": 16,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/de/ac/deac954b3237e86307b6d86d10e46df6fa5cb1af",
+          "stem": "2 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q18",
+          "number": 18,
+          "position": 17,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/ba/55/ba55baf97c1cfde95b8d5c166374150b8193db12",
+          "stem": "&nbsp;3 番:\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q19",
+          "number": 19,
+          "position": 18,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/96/75/96757942703c439c831888fe7c93a18977f21e7e",
+          "stem": "4 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q20",
+          "number": 20,
+          "position": 19,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/4d/a7/4da78eaf0fac72002c86dd80e15cd76f9d397634",
+          "stem": "1番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q21",
+          "number": 21,
+          "position": 20,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/de/e7/dee708d5388592de472d0189071632c9549e7ee1",
+          "stem": "2番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q22",
+          "number": 22,
+          "position": 21,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/a5/62/a5628079589d15d47b4f62d23ea4569e9c06a385",
+          "stem": "3番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q23",
+          "number": 23,
+          "position": 22,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/7a/61/7a615270178f0f53a4f304aafdd0d96d5de6f382",
+          "stem": "4番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q24",
+          "number": 24,
+          "position": 23,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/f7/56/f75627fd040eff1140fbdb767fe8689addc09d75",
+          "stem": "5番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q25",
+          "number": 25,
+          "position": 24,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/b6/ee/b6eec724b30b02ad2f3e314de948aab432395bbb",
+          "stem": "6番:&nbsp;&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q26",
+          "number": 26,
+          "position": 25,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/02/d2/02d22b879da306f6b1f603d0af670cd7facf1226",
+          "stem": "7番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q27",
+          "number": 27,
+          "position": 26,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/7a/ba/7aba6797644fb11a4915a2e5b06748be56f16d7b",
+          "stem": "8番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q28",
+          "number": 28,
+          "position": 27,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/82/b8/82b84ca5549a0686a5201e5a63b88d7c8d8c7d64",
+          "stem": "9番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
             "",
             "",
             ""
