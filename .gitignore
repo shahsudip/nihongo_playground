@@ -44,8 +44,10 @@ scripts/q1_check.txt
 scripts/*
 !scripts/verify_all_shinkanzen.cjs
 !scripts/verify_speedmaster.cjs
-jlpt_practice_tests/
-jlpt_past_exams/
+/jlpt_practice_tests/
+/jlpt_past_exams/
+!public/data/jlpt_past_exams/
+!public/data/jlpt_mock_tests/
 plans/
 public/n3_practice_sets_pages/
 public/sync-db.html
