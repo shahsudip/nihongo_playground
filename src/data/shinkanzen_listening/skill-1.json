@@ -1,0 +1,2579 @@
+{
+  "bookId": "shinkanzen-master-n3-listening",
+  "chapterId": "skill-1",
+  "part": 2,
+  "partTitle": "第2部：実力養成編",
+  "partTitleEn": "Skill Building: Speech Characteristics",
+  "mondaiNumber": 1,
+  "order": 1,
+  "title": "第1単元：音声の特徴に慣れる",
+  "mondaiHeader": "【第1単元：音声の特徴に慣れる】\n実際の日本語の会話では、文字通りに発音されない音や、似ていて聞き分けにくい音が頻出します。この単元では、以下の3つの重要な特徴に慣れて正しく聞き取る練習を行います：\n1. 似ている音の聞き分け（濁音・促音・長音、アクセント・イントネーション、数字）\n2. 音の変化（「～ちゃう」「～なくちゃ」「～てる」「～てく」「～とく」などの縮約形）\n3. 音の高さや長さに注意する（イントネーションによる同意・不同意の判断）",
+  "instruction": "音声を聞いて、それぞれの指示に従って正しい答えを一つえらんでください。",
+  "hotspots": [
+    {
+      "id": "hotspot-1",
+      "trackId": "cd1-track06",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "label": "練習1-A [A06]"
+    },
+    {
+      "id": "hotspot-2",
+      "trackId": "cd1-track07",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "label": "練習1-B [A07]"
+    },
+    {
+      "id": "hotspot-3",
+      "trackId": "cd1-track08",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "label": "練習1-C [A08]"
+    },
+    {
+      "id": "hotspot-4",
+      "trackId": "cd1-track09",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "label": "練習2-1 [A09]"
+    },
+    {
+      "id": "hotspot-5",
+      "trackId": "cd1-track10",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "label": "練習2-2 [A10]"
+    },
+    {
+      "id": "hotspot-6",
+      "trackId": "cd1-track11",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/11 Track 11.mp3",
+      "label": "例1・2 [A11]"
+    },
+    {
+      "id": "hotspot-7",
+      "trackId": "cd1-track12",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/12 Track 12.mp3",
+      "label": "例題3 [A12]"
+    },
+    {
+      "id": "hotspot-8",
+      "trackId": "cd1-track13",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "label": "練習3 [A13]"
+    }
+  ],
+  "questions": [
+    {
+      "sectionTitle": "練習1-A 間違えやすい音",
+      "badge": "練習1-A (1)",
+      "subtitle": "1-A 間違えやすい音",
+      "trackId": "cd1-track06",
+      "trackLabel": "練習1-A [A06]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "instruction": "聞いてください。最初の言葉と同じものはどれですか。",
+      "questionText": "最初の言葉：<b>音（おと）</b> と同じものはどれですか。",
+      "options": [
+        "a. 音",
+        "b. 夫",
+        "c. 元"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 音"
+      },
+      "explanation": "<b>【正解】a</b><br/>最初の言葉は「音（おと）」です。bの「夫（おっと）」は小さい「っ」（促音）が入っており、cの「元（もと）」は頭の音が「も」です。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-A 間違えやすい音",
+      "badge": "練習1-A (2)",
+      "subtitle": "1-A 間違えやすい音",
+      "trackId": "cd1-track06",
+      "trackLabel": "練習1-A [A06]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "instruction": "聞いてください。最初の言葉と同じものはどれですか。",
+      "questionText": "最初の言葉：<b>時計（とけい）</b> と同じものはどれですか。",
+      "options": [
+        "a. 統計",
+        "b. 時計",
+        "c. 峠"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. 時計"
+      },
+      "explanation": "<b>【正解】b</b><br/>最初の言葉は「時計（とけい）」です。aの「統計（とうけい）」は「とう」と長音になり、cの「峠（とうげ）」は「とう」に加えて濁音「げ」です。正解は <b>b</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-A 間違えやすい音",
+      "badge": "練習1-A (3)",
+      "subtitle": "1-A 間違えやすい音",
+      "trackId": "cd1-track06",
+      "trackLabel": "練習1-A [A06]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "instruction": "聞いてください。最初の言葉と同じものはどれですか。",
+      "questionText": "最初の言葉：<b>以内（いない）</b> と同じものはどれですか。",
+      "options": [
+        "a. 以来",
+        "b. 以内",
+        "c. 以外"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. 以内"
+      },
+      "explanation": "<b>【正解】b</b><br/>最初の言葉は「以内（いない）」です。aは「以来（いらい）」で「な行」と「ら行」の違い、cは「以外（いがい）」で濁音「が」の違いです。正解は <b>b</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-A 間違えやすい音",
+      "badge": "練習1-A (4)",
+      "subtitle": "1-A 間違えやすい音",
+      "trackId": "cd1-track06",
+      "trackLabel": "練習1-A [A06]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "instruction": "聞いてください。最初の言葉と同じものはどれですか。",
+      "questionText": "最初の言葉：<b>数（かず）</b> と同じものはどれですか。",
+      "options": [
+        "a. 勝つ",
+        "b. 数",
+        "c. ガス"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. 数"
+      },
+      "explanation": "<b>【正解】b</b><br/>最初の言葉は「数（かず）」です。aは清音「つ（勝つ）」、cは頭音が濁音「が（ガス）」です。「ず」の濁音を聞き分けることがポイントです。正解は <b>b</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-A 間違えやすい音",
+      "badge": "練習1-A (5)",
+      "subtitle": "1-A 間違えやすい音",
+      "trackId": "cd1-track06",
+      "trackLabel": "練習1-A [A06]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "instruction": "聞いてください。最初の言葉と同じものはどれですか。",
+      "questionText": "最初の言葉：<b>作家（さっか）</b> と同じものはどれですか。",
+      "options": [
+        "a. 雑貨",
+        "b. 坂",
+        "c. 作家"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "c. 作家"
+      },
+      "explanation": "<b>【正解】c</b><br/>最初の言葉は促音を含む「作家（さっか）」です。aは濁音の「雑貨（ざっか）」、bは促音のない「坂（さか）」です。正解は <b>c</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-A 間違えやすい音",
+      "badge": "練習1-A (6)",
+      "subtitle": "1-A 間違えやすい音",
+      "trackId": "cd1-track06",
+      "trackLabel": "練習1-A [A06]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "instruction": "聞いてください。最初の言葉と同じものはどれですか。",
+      "questionText": "最初の言葉：<b>銀色（ぎんいろ）</b> と同じものはどれですか。",
+      "options": [
+        "a. 金色",
+        "b. 黄色",
+        "c. 銀色"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "c. 銀色"
+      },
+      "explanation": "<b>【正解】c</b><br/>最初の言葉は「銀色（ぎんいろ）」です。aは清音「金色（きんいろ）」、bは撥音「ん」がない「黄色（きいろ）」です。正解は <b>c</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-A 間違えやすい音",
+      "badge": "練習1-A (7)",
+      "subtitle": "1-A 間違えやすい音",
+      "trackId": "cd1-track06",
+      "trackLabel": "練習1-A [A06]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "instruction": "聞いてください。最初の言葉と同じものはどれですか。",
+      "questionText": "最初の言葉：<b>パンダ</b> と同じものはどれですか。",
+      "options": [
+        "a. バター",
+        "b. パンダ",
+        "c. 肌"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. パンダ"
+      },
+      "explanation": "<b>【正解】b</b><br/>最初の言葉は半濁音と撥音を含む「パンダ」です。aは濁音「ば」と長音の「バター」、cは清音「は」の「肌（はだ）」です。正解は <b>b</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-A 間違えやすい音",
+      "badge": "練習1-A (8)",
+      "subtitle": "1-A 間違えやすい音",
+      "trackId": "cd1-track06",
+      "trackLabel": "練習1-A [A06]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "instruction": "聞いてください。最初の言葉と同じものはどれですか。",
+      "questionText": "最初の言葉：<b>カード</b> と同じものはどれですか。",
+      "options": [
+        "a. 角",
+        "b. カット",
+        "c. カード"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "c. カード"
+      },
+      "explanation": "<b>【正解】c</b><br/>最初の言葉は長音を含む「カード」です。aは短音の「角（かど）」、bは促音の「カット」です。正解は <b>c</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-A 間違えやすい音",
+      "badge": "練習1-A (9)",
+      "subtitle": "1-A 間違えやすい音",
+      "trackId": "cd1-track06",
+      "trackLabel": "練習1-A [A06]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "instruction": "聞いてください。最初の言葉と同じものはどれですか。",
+      "questionText": "最初の言葉：<b>将来（しょうらい）</b> と同じものはどれですか。",
+      "options": [
+        "a. 将来",
+        "b. 町内",
+        "c. 場内"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 将来"
+      },
+      "explanation": "<b>【正解】a</b><br/>最初の言葉は拗音と長音の「将来（しょうらい）」です。bは「町内（ちょうない）」、cは濁音の「場内（じょうない）」です。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-A 間違えやすい音",
+      "badge": "練習1-A (10)",
+      "subtitle": "1-A 間違えやすい音",
+      "trackId": "cd1-track06",
+      "trackLabel": "練習1-A [A06]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "instruction": "聞いてください。最初の言葉と同じものはどれですか。",
+      "questionText": "最初の言葉：<b>知っている（しっている）</b> と同じものはどれですか。",
+      "options": [
+        "a. している",
+        "b. 敷いている",
+        "c. 知っている"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "c. 知っている"
+      },
+      "explanation": "<b>【正解】c</b><br/>最初の言葉は促音を含む「知っている（しっている）」です。aは促音なしの「している」、bは長音（母音連続）の「敷いている（しいている）」です。正解は <b>c</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-B アクセントやイントネーション",
+      "badge": "練習1-B (1)",
+      "subtitle": "1-B アクセント・イントネーション",
+      "trackId": "cd1-track07",
+      "trackLabel": "練習1-B [A07]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "questionText": "すみません、(＿＿＿＿)、お願いします。",
+      "options": [
+        "a. コーヒー",
+        "b. コピー"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. コピー"
+      },
+      "explanation": "<b>【正解】b. コピー</b><br/>音声では「コピー（頭高型アクセント・短音）」と言っています。「コーヒー」は長音が入ります。正解は <b>b</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-B アクセントやイントネーション",
+      "badge": "練習1-B (2)",
+      "subtitle": "1-B アクセント・イントネーション",
+      "trackId": "cd1-track07",
+      "trackLabel": "練習1-B [A07]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "questionText": "(＿＿＿＿)、田中さんに会いました。",
+      "options": [
+        "a. さっき",
+        "b. 最近"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. 最近"
+      },
+      "explanation": "<b>【正解】b. 最近</b><br/>音声では「最近（さいきん）」と言っています。「さっき」と「さいきん」の促音・長音・母音構成の違いを聞き取ります。正解は <b>b</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-B アクセントやイントネーション",
+      "badge": "練習1-B (3)",
+      "subtitle": "1-B アクセント・イントネーション",
+      "trackId": "cd1-track07",
+      "trackLabel": "練習1-B [A07]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "questionText": "これは (＿＿＿＿) でないとできません。",
+      "options": [
+        "a. 今",
+        "b. 暇"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 今"
+      },
+      "explanation": "<b>【正解】a. 今</b><br/>音声では「今（いま）」と言っています。「暇（ひま）」との子音 [i] vs [hi] の聞き分けです。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-B アクセントやイントネーション",
+      "badge": "練習1-B (4)",
+      "subtitle": "1-B アクセント・イントネーション",
+      "trackId": "cd1-track07",
+      "trackLabel": "練習1-B [A07]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "questionText": "(＿＿＿＿) と思います。",
+      "options": [
+        "a. あればいい",
+        "b. あれはいい"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. あればいい"
+      },
+      "explanation": "<b>【正解】a. あればいい</b><br/>音声では仮定の「あればいい」と言っています。「あれはいい（助詞『は』）」との聞き分けです。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-B アクセントやイントネーション",
+      "badge": "練習1-B (5)",
+      "subtitle": "1-B アクセント・イントネーション",
+      "trackId": "cd1-track07",
+      "trackLabel": "練習1-B [A07]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "questionText": "早く (＿＿＿＿) ほうがいいですよ。",
+      "options": [
+        "a. 帰った",
+        "b. 変えた"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. 変えた"
+      },
+      "explanation": "<b>【正解】b. 変えた</b><br/>音声では「変えた（かえた）」と言っています。「帰った（かえった、促音あり）」との違いです。正解は <b>b</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-B アクセントやイントネーション",
+      "badge": "練習1-B (6)",
+      "subtitle": "1-B アクセント・イントネーション",
+      "trackId": "cd1-track07",
+      "trackLabel": "練習1-B [A07]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "questionText": "この服、(＿＿＿＿) いいですね。",
+      "options": [
+        "a. ちょっと",
+        "b. ちょうど"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. ちょうど"
+      },
+      "explanation": "<b>【正解】b. ちょうど</b><br/>音声では長音の「ちょうど（ちょうどいい＝ぴったり）」と言っています。「ちょっと（促音）」との聞き分けです。正解は <b>b</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-B アクセントやイントネーション",
+      "badge": "練習1-B (7)",
+      "subtitle": "1-B アクセント・イントネーション",
+      "trackId": "cd1-track07",
+      "trackLabel": "練習1-B [A07]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "questionText": "この映画は (＿＿＿＿)。",
+      "options": [
+        "a. もう一度見た",
+        "b. もう一度見たい"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. もう一度見た"
+      },
+      "explanation": "<b>【正解】a. もう一度見た</b><br/>音声では過去形の「もう一度見た（みた）」と言っています。「見たい（みたい、希望）」ではありません。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-B アクセントやイントネーション",
+      "badge": "練習1-B (8)",
+      "subtitle": "1-B アクセント・イントネーション",
+      "trackId": "cd1-track07",
+      "trackLabel": "練習1-B [A07]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "questionText": "ねえ、(＿＿＿＿) の？",
+      "options": [
+        "a. これは買った",
+        "b. これ、わかった"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. これは買った"
+      },
+      "explanation": "<b>【正解】a. これは買った</b><br/>音声では「これは買った（かった）」と言っています。「わかった」との頭音の違いです。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-B アクセントやイントネーション",
+      "badge": "練習1-B (9)",
+      "subtitle": "1-B アクセント・イントネーション",
+      "trackId": "cd1-track07",
+      "trackLabel": "練習1-B [A07]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "questionText": "みんな (＿＿＿＿) 待ちましょう。",
+      "options": [
+        "a. 車で",
+        "b. 来るまで"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. 来るまで"
+      },
+      "explanation": "<b>【正解】b. 来るまで</b><br/>音声では「来るまで（くるまで）」と言っています。「車で（くるまで）」とはアクセントの位置が異なります。正解は <b>b</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-B アクセントやイントネーション",
+      "badge": "練習1-B (10)",
+      "subtitle": "1-B アクセント・イントネーション",
+      "trackId": "cd1-track07",
+      "trackLabel": "練習1-B [A07]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "questionText": "あと (＿＿＿＿) よ。",
+      "options": [
+        "a. もう少し、できます",
+        "b. もう少しで、来ます"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. もう少し、できます"
+      },
+      "explanation": "<b>【正解】a. もう少し、できます</b><br/>音声では「もう少し、できます」と言っています。「来ます（きます）」との濁音・アクセントの違いを聞き取ります。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-C 似ている数字",
+      "badge": "練習1-C (1)",
+      "subtitle": "1-C 似ている数字",
+      "trackId": "cd1-track08",
+      "trackLabel": "練習1-C [A08]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "context": "男：ここにはどのぐらい魚がいるんですか。／ 女：……ぐらいですね。",
+      "questionText": "女の人はどのぐらい魚がいると言っていますか。",
+      "options": [
+        "a. 8匹",
+        "b. 100匹"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. 100匹"
+      },
+      "explanation": "<b>【正解】b. 100匹</b><br/>音声では「100匹（ひゃっぴき）」と言っています。「8匹（はっぴき）」と似ていますが、頭の音「ひゃ」を聞き分けます。正解は <b>b</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-C 似ている数字",
+      "badge": "練習1-C (2)",
+      "subtitle": "1-C 似ている数字",
+      "trackId": "cd1-track08",
+      "trackLabel": "練習1-C [A08]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "context": "男：いつが空いていますか。／ 女：……なら大丈夫です。",
+      "questionText": "女の人はいつなら大丈夫だと言っていますか。",
+      "options": [
+        "a. 8日か9日",
+        "b. 4日か9日"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 8日か9日"
+      },
+      "explanation": "<b>【正解】a. 8日か9日</b><br/>音声では「8日（ようか）」と言っています。「4日（よっか）」は小さい「っ」が入りますが、「8日（ようか）」は長音です。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-C 似ている数字",
+      "badge": "練習1-C (3)",
+      "subtitle": "1-C 似ている数字",
+      "trackId": "cd1-track08",
+      "trackLabel": "練習1-C [A08]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "context": "女：そろそろ出ないといけないかな。／ 男：まだ……だよ。",
+      "questionText": "男の人は何と言っていますか。",
+      "options": [
+        "a. 3時5分",
+        "b. 35分"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. 35分"
+      },
+      "explanation": "<b>【正解】b. 35分</b><br/>音声では「まだ35分（さんじゅうごふん）だよ」と言っています。「3時5分（さんじごふん）」ではありません。正解は <b>b</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-C 似ている数字",
+      "badge": "練習1-C (4)",
+      "subtitle": "1-C 似ている数字",
+      "trackId": "cd1-track08",
+      "trackLabel": "練習1-C [A08]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "context": "女：この大学にはどのぐらい留学生がいるんですか。／ 男：全体の……です。",
+      "questionText": "留学生は全体のどのくらいですか。",
+      "options": [
+        "a. 11.1パーセント",
+        "b. 10.1パーセント"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 11.1パーセント"
+      },
+      "explanation": "<b>【正解】a. 11.1パーセント</b><br/>音声では「全体の11.1パーセント（じゅういちてんいち）」と言っています。「10.1（じゅってんいち）」との聞き分けです。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-C 似ている数字",
+      "badge": "練習1-C (5)",
+      "subtitle": "1-C 似ている数字",
+      "trackId": "cd1-track08",
+      "trackLabel": "練習1-C [A08]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "context": "男：ずいぶん待つんですね。／ 女：ええ、もう……ですよ。",
+      "questionText": "女の人はどのくらい待つと言っていますか。",
+      "options": [
+        "a. 7、8分",
+        "b. 7時8分"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 7、8分"
+      },
+      "explanation": "<b>【正解】a. 7、8分</b><br/>音声では「もう7、8分（しちはちふん）ですよ」と言っています。「時（じ）」の有無を聞き取ります。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-C 似ている数字",
+      "badge": "練習1-C (6)",
+      "subtitle": "1-C 似ている数字",
+      "trackId": "cd1-track08",
+      "trackLabel": "練習1-C [A08]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "context": "女：古い建物ね。いつごろ建てられたのかな。／ 男：……だそうですよ。",
+      "questionText": "建物は何年に建てられたと言っていますか。",
+      "options": [
+        "a. 1017年",
+        "b. 1011年"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 1017年"
+      },
+      "explanation": "<b>【正解】a. 1017年</b><br/>音声では「1017年（せんじゅうななねん）」と言っています。「1011年（せんじゅういちねん）」との聞き分けです。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-C 似ている数字",
+      "badge": "練習1-C (7)",
+      "subtitle": "1-C 似ている数字",
+      "trackId": "cd1-track08",
+      "trackLabel": "練習1-C [A08]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "context": "女：どう、どの辺まで読んだ？／ 男：やっと……まで行ったよ。",
+      "questionText": "男の人はどの辺まで読んだと言っていますか。",
+      "options": [
+        "a. 3分の2",
+        "b. 3部の2"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 3分の2"
+      },
+      "explanation": "<b>【正解】a. 3分の2</b><br/>音声では「3分の2（さんぶんのに、分数）」と言っています。「3部の2（さんぶのに）」との助詞・単位の聞き分けです。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-C 似ている数字",
+      "badge": "練習1-C (8)",
+      "subtitle": "1-C 似ている数字",
+      "trackId": "cd1-track08",
+      "trackLabel": "練習1-C [A08]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "context": "男：全部で何点取れた？／ 女：……かな。",
+      "questionText": "女の人は何点取れたと言っていますか。",
+      "options": [
+        "a. 356点",
+        "b. 3百5、60点"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. 3百5、60点"
+      },
+      "explanation": "<b>【正解】b. 3百5、60点</b><br/>音声では「3百5、60点（さんびゃくご・ろくじゅってん＝350〜360点くらい）」と言っています。確定した「356点（さんびゃくごじゅうろくてん）」ではありません。正解は <b>b</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-C 似ている数字",
+      "badge": "練習1-C (9)",
+      "subtitle": "1-C 似ている数字",
+      "trackId": "cd1-track08",
+      "trackLabel": "練習1-C [A08]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "context": "女：どのぐらい本読む？／ 男：そうだな、1か月に……ぐらいかな。",
+      "questionText": "男の人は1か月に本をどのくらい読むと言っていますか。",
+      "options": [
+        "a. 2、3冊",
+        "b. 3冊"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. 3冊"
+      },
+      "explanation": "<b>【正解】b. 3冊</b><br/>音声では「3冊（さんさつ）ぐらいかな」と言っています。「2、3冊（に・さんさつ）」の「に」はありません。正解は <b>b</b> です。"
+    },
+    {
+      "sectionTitle": "練習1-C 似ている数字",
+      "badge": "練習1-C (10)",
+      "subtitle": "1-C 似ている数字",
+      "trackId": "cd1-track08",
+      "trackLabel": "練習1-C [A08]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "instruction": "文を聞いてください。どちらですか。",
+      "context": "男：何人ぐらい集まるんですか。／ 女：……です。",
+      "questionText": "女の人は何人ぐらい集まると言っていますか。",
+      "options": [
+        "a. 約50人",
+        "b. 150人"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 約50人"
+      },
+      "explanation": "<b>【正解】a. 約50人</b><br/>音声では「約50人（やくごじゅうにん）」と言っています。「150人（ひゃくごじゅうにん）」との頭音「や」と「ひゃ」の聞き分けです。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習2-1 音の変化",
+      "badge": "練習2-1 (1)",
+      "subtitle": "2 音の変化（意味の聞き分け）",
+      "trackId": "cd1-track09",
+      "trackLabel": "練習2-1 [A09]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "instruction": "文を聞いてください。どちらの意味ですか。",
+      "questionText": "「今日は行かなくちゃ。」はどちらの意味ですか。",
+      "options": [
+        "a. 行かなくてはならない",
+        "b. 行かなかった"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 行かなくてはならない"
+      },
+      "explanation": "<b>【正解】a. 行かなくてはならない</b><br/>「～なくちゃ」は「～なくては（ならない）」の縮約形です。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習2-1 音の変化",
+      "badge": "練習2-1 (2)",
+      "subtitle": "2 音の変化（意味の聞き分け）",
+      "trackId": "cd1-track09",
+      "trackLabel": "練習2-1 [A09]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "instruction": "文を聞いてください。どちらの意味ですか。",
+      "questionText": "「昼ご飯、食べてくね。」はどちらの意味ですか。",
+      "options": [
+        "a. 食べていく",
+        "b. 食べに行く"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 食べていく"
+      },
+      "explanation": "<b>【正解】a. 食べていく</b><br/>「～てく」は「～ていく（食べてから行く）」の縮約形です。「食べに行く（目的）」ではありません。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習2-1 音の変化",
+      "badge": "練習2-1 (3)",
+      "subtitle": "2 音の変化（意味の聞き分け）",
+      "trackId": "cd1-track09",
+      "trackLabel": "練習2-1 [A09]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "instruction": "文を聞いてください。どちらの意味ですか。",
+      "questionText": "「水、持ってった？」はどちらの意味ですか。",
+      "options": [
+        "a. 持っていった",
+        "b. 持っていた"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 持っていった"
+      },
+      "explanation": "<b>【正解】a. 持っていった</b><br/>「～てった」は「～ていった（持っていくの過去）」の縮約形です。「持っていた（～てた）」ではありません。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習2-1 音の変化",
+      "badge": "練習2-1 (4)",
+      "subtitle": "2 音の変化（意味の聞き分け）",
+      "trackId": "cd1-track09",
+      "trackLabel": "練習2-1 [A09]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "instruction": "文を聞いてください。どちらの意味ですか。",
+      "questionText": "「切符、なくしちゃったよ。」はどちらの意味ですか。",
+      "options": [
+        "a. なくしてはいけない",
+        "b. なくしてしまった"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. なくしてしまった"
+      },
+      "explanation": "<b>【正解】b. なくしてしまった</b><br/>「～ちゃった」は「～てしまった（完了・後悔）」の縮約形です。正解は <b>b</b> です。"
+    },
+    {
+      "sectionTitle": "練習2-1 音の変化",
+      "badge": "練習2-1 (5)",
+      "subtitle": "2 音の変化（意味の聞き分け）",
+      "trackId": "cd1-track09",
+      "trackLabel": "練習2-1 [A09]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "instruction": "文を聞いてください。どちらの意味ですか。",
+      "questionText": "「かばん、持つって言ったんだよ。」はどちらの意味ですか。",
+      "options": [
+        "a. 持っていった",
+        "b. 持つと言った"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. 持つと言った"
+      },
+      "explanation": "<b>【正解】b. 持つと言った</b><br/>「～って」は引用の助詞「～と」の口語形です。「持つと言った」という意味になります。正解は <b>b</b> です。"
+    },
+    {
+      "sectionTitle": "練習2-2 音の変化",
+      "badge": "練習2-2 (1)",
+      "subtitle": "2 音の変化（元の形の把握）",
+      "trackId": "cd1-track10",
+      "trackLabel": "練習2-2 [A10]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "instruction": "文を聞いて、元の形を書いてください。",
+      "context": "音声：あ、そろそろ帰らなきゃ。",
+      "questionText": "あ、そろそろ (＿＿＿＿)。",
+      "options": [
+        "a. 帰らなければ",
+        "b. 帰らなくては",
+        "c. 帰らなかった",
+        "d. 帰りたい"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 帰らなければ"
+      },
+      "explanation": "<b>【正解】a. 帰らなければ</b><br/>音声は「帰らなきゃ」と言っています。「～なきゃ」の元の形は「～なければ（ならない）」です。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習2-2 音の変化",
+      "badge": "練習2-2 (2)",
+      "subtitle": "2 音の変化（元の形の把握）",
+      "trackId": "cd1-track10",
+      "trackLabel": "練習2-2 [A10]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "instruction": "文を聞いて、元の形を書いてください。",
+      "context": "音声：うち、寄ってく？",
+      "questionText": "うち、(＿＿＿＿)？",
+      "options": [
+        "a. 寄っていく",
+        "b. 寄ってくる",
+        "c. 寄ってから",
+        "d. 寄っていた"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 寄っていく"
+      },
+      "explanation": "<b>【正解】a. 寄っていく</b><br/>音声は「寄ってく？」と言っています。「～てく」の元の形は「～ていく」です。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習2-2 音の変化",
+      "badge": "練習2-2 (3)",
+      "subtitle": "2 音の変化（元の形の把握）",
+      "trackId": "cd1-track10",
+      "trackLabel": "練習2-2 [A10]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "instruction": "文を聞いて、元の形を書いてください。",
+      "context": "音声：ここに捨てちゃだめだよ。",
+      "questionText": "ここに (＿＿＿＿) だめだよ。",
+      "options": [
+        "a. 捨てては",
+        "b. 捨ててから",
+        "c. 捨ててしまう",
+        "d. 捨てないで"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 捨てては"
+      },
+      "explanation": "<b>【正解】a. 捨てては</b><br/>音声は「捨てちゃだめだよ」と言っています。「～ちゃ（だめ）」の元の形は「～ては（だめ）」です。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習2-2 音の変化",
+      "badge": "練習2-2 (4)",
+      "subtitle": "2 音の変化（元の形の把握）",
+      "trackId": "cd1-track10",
+      "trackLabel": "練習2-2 [A10]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "instruction": "文を聞いて、元の形を書いてください。",
+      "context": "音声：先生の話、ちゃんと聞いてた？",
+      "questionText": "先生の話、ちゃんと (＿＿＿＿)？",
+      "options": [
+        "a. 聞いていた",
+        "b. 聞いていく",
+        "c. 聞いておく",
+        "d. 聞いてみた"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 聞いていた"
+      },
+      "explanation": "<b>【正解】a. 聞いていた</b><br/>音声は「聞いてた？」と言っています。「～てた」の元の形は「～ていた」です。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習2-2 音の変化",
+      "badge": "練習2-2 (5)",
+      "subtitle": "2 音の変化（元の形の把握）",
+      "trackId": "cd1-track10",
+      "trackLabel": "練習2-2 [A10]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "instruction": "文を聞いて、元の形を書いてください。",
+      "context": "音声：先に食べちゃうね。",
+      "questionText": "先に (＿＿＿＿) ね。",
+      "options": [
+        "a. 食べてしまう",
+        "b. 食べておく",
+        "c. 食べてみる",
+        "d. 食べていく"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 食べてしまう"
+      },
+      "explanation": "<b>【正解】a. 食べてしまう</b><br/>音声は「食べちゃうね」と言っています。「～ちゃう」の元の形は「～てしまう」です。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習2-2 音の変化",
+      "badge": "練習2-2 (6)",
+      "subtitle": "2 音の変化（元の形の把握）",
+      "trackId": "cd1-track10",
+      "trackLabel": "練習2-2 [A10]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "instruction": "文を聞いて、元の形を書いてください。",
+      "context": "音声：店、もう開いてるよ。",
+      "questionText": "店、もう (＿＿＿＿) よ。",
+      "options": [
+        "a. 開いている",
+        "b. 開いていく",
+        "c. 開いておく",
+        "d. 開いてきた"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 開いている"
+      },
+      "explanation": "<b>【正解】a. 開いている</b><br/>音声は「開いてるよ」と言っています。「～てる」の元の形は「～ている」です。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習2-2 音の変化",
+      "badge": "練習2-2 (7)",
+      "subtitle": "2 音の変化（元の形の把握）",
+      "trackId": "cd1-track10",
+      "trackLabel": "練習2-2 [A10]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "instruction": "文を聞いて、元の形を書いてください。",
+      "context": "音声：飲み物、買ってかない？",
+      "questionText": "飲み物、(＿＿＿＿)？",
+      "options": [
+        "a. 買っていかない",
+        "b. 買っておかない",
+        "c. 買ってこない",
+        "d. 買ってしまわない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 買っていかない"
+      },
+      "explanation": "<b>【正解】a. 買っていかない</b><br/>音声は「買ってかない？」と言っています。「～てかない」の元の形は「～ていかない」です。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習2-2 音の変化",
+      "badge": "練習2-2 (8)",
+      "subtitle": "2 音の変化（元の形の把握）",
+      "trackId": "cd1-track10",
+      "trackLabel": "練習2-2 [A10]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "instruction": "文を聞いて、元の形を書いてください。",
+      "context": "音声：さっきそっちに入れといたんだけど。",
+      "questionText": "さっき (＿＿＿＿) んだけど。",
+      "options": [
+        "a. そちらに入れておいた",
+        "b. そちらに入れていった",
+        "c. そちらに入れていた",
+        "d. そちらに入れてしまった"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. そちらに入れておいた"
+      },
+      "explanation": "<b>【正解】a. そちらに入れておいた</b><br/>音声は「そっちに入れといたんだけど」と言っています。「～といた」の元の形は「～ておいた」です。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習2-2 音の変化",
+      "badge": "練習2-2 (9)",
+      "subtitle": "2 音の変化（元の形の把握）",
+      "trackId": "cd1-track10",
+      "trackLabel": "練習2-2 [A10]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "instruction": "文を聞いて、元の形を書いてください。",
+      "context": "音声：DVDなら、田中さんが持ってったよ。",
+      "questionText": "DVDなら、田中さんが (＿＿＿＿) よ。",
+      "options": [
+        "a. 持っていった",
+        "b. 持っていた",
+        "c. 持っておいた",
+        "d. 持ってしまった"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 持っていった"
+      },
+      "explanation": "<b>【正解】a. 持っていった</b><br/>音声は「持ってったよ」と言っています。「～てった」の元の形は「～ていった」です。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "練習2-2 音の変化",
+      "badge": "練習2-2 (10)",
+      "subtitle": "2 音の変化（元の形の把握）",
+      "trackId": "cd1-track10",
+      "trackLabel": "練習2-2 [A10]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "instruction": "文を聞いて、元の形を書いてください。",
+      "context": "音声：ずっと同じのばっかり見てるね。",
+      "questionText": "ずっと同じの (＿＿＿＿) ね。",
+      "options": [
+        "a. ばかり見ている",
+        "b. ばかり見ていった",
+        "c. ばっかり見ておく",
+        "d. ばかり見ていた"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. ばかり見ている"
+      },
+      "explanation": "<b>【正解】a. ばかり見ている</b><br/>音声は「ばっかり見てるね」と言っています。「ばっかり」の元の形は「ばかり」、「～てる」は「～ている」です。正解は <b>a</b> です。"
+    },
+    {
+      "sectionTitle": "例題3 音の高さや長さ",
+      "badge": "例題3 (1)",
+      "subtitle": "3 音の高さや長さに注意する",
+      "trackId": "cd1-track12",
+      "trackLabel": "例題3 [A12]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/12 Track 12.mp3",
+      "instruction": "会話を聞いてください。男の人が同意していないものに×をつけてください。",
+      "context": "女：土曜日に行きませんか。／ 男：あ、土曜日ですか。",
+      "questionText": "男の人は同意していますか、それとも同意していませんか。",
+      "options": [
+        "○ 同意している（行く）",
+        "× 同意していない（断る・消極的）"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 同意している（行く）"
+      },
+      "explanation": "<b>【判定】○ 同意している（答え：－）</b><br/>男の人は「あ、土曜日ですか」と明るく短く返答しており、提案に同意しています。×はつきません。"
+    },
+    {
+      "sectionTitle": "例題3 音の高さや長さ",
+      "badge": "例題3 (2)",
+      "subtitle": "3 音の高さや長さに注意する",
+      "trackId": "cd1-track12",
+      "trackLabel": "例題3 [A12]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/12 Track 12.mp3",
+      "instruction": "会話を聞いてください。男の人が同意していないものに×をつけてください。",
+      "context": "女：これ、古いからやめたほうがいいよ。／ 男：えー、古いかあ？",
+      "questionText": "男の人は同意していますか、それとも同意していませんか。",
+      "options": [
+        "○ 同意している",
+        "× 同意していない（不満・不同意）"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 同意していない（不満・不同意）"
+      },
+      "explanation": "<b>【判定】× 同意していない（答え：×）</b><br/>男の人は「えー、古いかあ？」と音を長く伸ばして疑問形で発音しており、相手の意見に同意していません。"
+    },
+    {
+      "sectionTitle": "練習3 音の高さや長さに注意する",
+      "badge": "練習3 (1)",
+      "subtitle": "3 音の高さや長さ（同意・不同意）",
+      "trackId": "cd1-track13",
+      "trackLabel": "練習3 [A13]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "instruction": "会話を聞いてください。女の人が同意していないものに×をつけてください。",
+      "context": "男：スポーツ大会、出てみたらどうですか。／ 女：うーん、そうだねえ。",
+      "questionText": "女の人は同意していますか、それとも同意していませんか。",
+      "options": [
+        "○ 同意している",
+        "× 同意していない（消極的・ためらい）"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 同意していない（消極的・ためらい）"
+      },
+      "explanation": "<b>【正解】× 同意していない</b><br/>女の人は「うーん、そうだねえ」と語尾を伸ばしてためらっており、乗り気ではなく同意していません（公式解答：×）。"
+    },
+    {
+      "sectionTitle": "練習3 音の高さや長さに注意する",
+      "badge": "練習3 (2)",
+      "subtitle": "3 音の高さや長さ（同意・不同意）",
+      "trackId": "cd1-track13",
+      "trackLabel": "練習3 [A13]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "instruction": "会話を聞いてください。女の人が同意していないものに×をつけてください。",
+      "context": "男：あした、10時にお電話しましょうか。／ 女：あ、10時ですね。",
+      "questionText": "女の人は同意していますか、それとも同意していませんか。",
+      "options": [
+        "○ 同意している",
+        "× 同意していない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 同意している"
+      },
+      "explanation": "<b>【正解】○ 同意している（公式解答：－）</b><br/>女の人は「あ、10時ですね」と明確に確認しており、提案を受け入れて同意しています。"
+    },
+    {
+      "sectionTitle": "練習3 音の高さや長さに注意する",
+      "badge": "練習3 (3)",
+      "subtitle": "3 音の高さや長さ（同意・不同意）",
+      "trackId": "cd1-track13",
+      "trackLabel": "練習3 [A13]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "instruction": "会話を聞いてください。女の人が同意していないものに×をつけてください。",
+      "context": "男：こっちの方がいいですよ。／ 女：そうですかあ？",
+      "questionText": "女の人は同意していますか、それとも同意していませんか。",
+      "options": [
+        "○ 同意している",
+        "× 同意していない（疑問・不満）"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 同意していない（疑問・不満）"
+      },
+      "explanation": "<b>【正解】× 同意していない</b><br/>女の人は「そうですかあ？」と語尾を伸ばして疑問・不同意を表しています（公式解答：×）。"
+    },
+    {
+      "sectionTitle": "練習3 音の高さや長さに注意する",
+      "badge": "練習3 (4)",
+      "subtitle": "3 音の高さや長さ（同意・不同意）",
+      "trackId": "cd1-track13",
+      "trackLabel": "練習3 [A13]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "instruction": "会話を聞いてください。女の人が同意していないものに×をつけてください。",
+      "context": "男：駅前の店にしませんか。／ 女：ああ、あの店ね。",
+      "questionText": "女の人は同意していますか、それとも同意していませんか。",
+      "options": [
+        "○ 同意している",
+        "× 同意していない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 同意している"
+      },
+      "explanation": "<b>【正解】○ 同意している（公式解答：－）</b><br/>女の人は「ああ、あの店ね」と納得した調子で答えており、同意しています。"
+    },
+    {
+      "sectionTitle": "練習3 音の高さや長さに注意する",
+      "badge": "練習3 (5)",
+      "subtitle": "3 音の高さや長さ（同意・不同意）",
+      "trackId": "cd1-track13",
+      "trackLabel": "練習3 [A13]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "instruction": "会話を聞いてください。女の人が同意していないものに×をつけてください。",
+      "context": "男：ここ、寒いよね。／ 女：え？ 寒い？",
+      "questionText": "女の人は同意していますか、それとも同意していませんか。",
+      "options": [
+        "○ 同意している",
+        "× 同意していない（反論・意外）"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 同意していない（反論・意外）"
+      },
+      "explanation": "<b>【正解】× 同意していない</b><br/>女の人は「え？ 寒い？」と驚きと反問を返しており、相手の感覚に同意していません（公式解答：×）。"
+    },
+    {
+      "sectionTitle": "練習3 音の高さや長さに注意する",
+      "badge": "練習3 (6)",
+      "subtitle": "3 音の高さや長さ（同意・不同意）",
+      "trackId": "cd1-track13",
+      "trackLabel": "練習3 [A13]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "instruction": "会話を聞いてください。女の人が同意していないものに×をつけてください。",
+      "context": "男：ね、もう出ようよ。／ 女：えー、もう？",
+      "questionText": "女の人は同意していますか、それとも同意していませんか。",
+      "options": [
+        "○ 同意している",
+        "× 同意していない（不満・引き延ばし）"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 同意していない（不満・引き延ばし）"
+      },
+      "explanation": "<b>【正解】× 同意していない</b><br/>女の人は「えー、もう？」と不満を込めて引き延ばしており、出ることに対して不同意です（公式解答：×）。"
+    },
+    {
+      "sectionTitle": "練習3 音の高さや長さに注意する",
+      "badge": "練習3 (7)",
+      "subtitle": "3 音の高さや長さ（同意・不同意）",
+      "trackId": "cd1-track13",
+      "trackLabel": "練習3 [A13]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "instruction": "会話を聞いてください。女の人が同意していないものに×をつけてください。",
+      "context": "男：こちら、いかがですか。／ 女：うん、5,000円か。",
+      "questionText": "女の人は同意していますか、それとも同意していませんか。",
+      "options": [
+        "○ 同意している",
+        "× 同意していない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 同意している"
+      },
+      "explanation": "<b>【正解】○ 同意している（公式解答：－）</b><br/>女の人は「うん、5,000円か」と受容のトーンで話しており、提案を受け入れています。"
+    },
+    {
+      "sectionTitle": "練習3 音の高さや長さに注意する",
+      "badge": "練習3 (8)",
+      "subtitle": "3 音の高さや長さ（同意・不同意）",
+      "trackId": "cd1-track13",
+      "trackLabel": "練習3 [A13]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "instruction": "会話を聞いてください。女の人が同意していないものに×をつけてください。",
+      "context": "男：一緒に歌おうよ。／ 女：うん、いいよ。",
+      "questionText": "女の人は同意していますか、それとも同意していませんか。",
+      "options": [
+        "○ 同意している",
+        "× 同意していない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 同意している"
+      },
+      "explanation": "<b>【正解】○ 同意している（公式解答：－）</b><br/>女の人は「うん、いいよ」と快く同意しています。"
+    },
+    {
+      "sectionTitle": "練習3 音の高さや長さに注意する",
+      "badge": "練習3 (9)",
+      "subtitle": "3 音の高さや長さ（同意・不同意）",
+      "trackId": "cd1-track13",
+      "trackLabel": "練習3 [A13]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "instruction": "会話を聞いてください。女の人が同意していないものに×をつけてください。",
+      "context": "男：運動したほうがいいね。／ 女：あー、運動ねえ。",
+      "questionText": "女の人は同意していますか、それとも同意していませんか。",
+      "options": [
+        "○ 同意している",
+        "× 同意していない（消極的・気乗りしない）"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 同意していない（消極的・気乗りしない）"
+      },
+      "explanation": "<b>【正解】× 同意していない</b><br/>女の人は「あー、運動ねえ」と気乗りしないトーンで語尾を伸ばしており、同意していません（公式解答：×）。"
+    },
+    {
+      "sectionTitle": "練習3 音の高さや長さに注意する",
+      "badge": "練習3 (10)",
+      "subtitle": "3 音の高さや長さ（同意・不同意）",
+      "trackId": "cd1-track13",
+      "trackLabel": "練習3 [A13]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "instruction": "会話を聞いてください。女の人が同意していないものに×をつけてください。",
+      "context": "男：金曜日の夜に行かない？／ 女：うーん、金曜日かー。",
+      "questionText": "女の人は同意していますか、それとも同意していませんか。",
+      "options": [
+        "○ 同意している",
+        "× 同意していない（ためらい・難色）"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 同意していない（ためらい・難色）"
+      },
+      "explanation": "<b>【正解】× 同意していない</b><br/>女の人は「うーん、金曜日かー」と難色を示して語尾を伸ばしており、同意していません（公式解答：×）。"
+    }
+  ],
+  "transcript": [
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 0.0,
+      "speaker": "指示",
+      "text": "練習1-A。聞いてください。最初の言葉と同じものはどれですか。"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 3.6,
+      "speaker": "ナレーション",
+      "text": "例"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 4.9,
+      "speaker": "音声",
+      "text": "天気"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 6.8,
+      "speaker": "ナレーション",
+      "text": "a. 電気　b. 天気　c. 元気"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 17.8,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 19.1,
+      "speaker": "音声",
+      "text": "音"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 20.9,
+      "speaker": "ナレーション",
+      "text": "a. 音　b. 夫　c. 元"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 31.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 32.7,
+      "speaker": "音声",
+      "text": "時計"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 34.6,
+      "speaker": "ナレーション",
+      "text": "a. 統計　b. 時計　c. 峠"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 45.8,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 47.1,
+      "speaker": "音声",
+      "text": "以内"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 48.9,
+      "speaker": "ナレーション",
+      "text": "a. 以来　b. 以内　c. 以外"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 57.8,
+      "speaker": "ナレーション",
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 61.0,
+      "speaker": "音声",
+      "text": "数"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 62.6,
+      "speaker": "ナレーション",
+      "text": "a. 勝つ　b. 数　c. ガス"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 71.3,
+      "speaker": "ナレーション",
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 74.2,
+      "speaker": "音声",
+      "text": "作家"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 76.2,
+      "speaker": "ナレーション",
+      "text": "a. 雑貨　b. 坂　c. 作家"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 85.4,
+      "speaker": "ナレーション",
+      "text": "6"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 88.7,
+      "speaker": "音声",
+      "text": "銀色"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 90.5,
+      "speaker": "ナレーション",
+      "text": "a. 金色　b. 黄色　c. 銀色"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 99.7,
+      "speaker": "ナレーション",
+      "text": "7"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 103.0,
+      "speaker": "音声",
+      "text": "パンダ"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 104.8,
+      "speaker": "ナレーション",
+      "text": "a. バター　b. パンダ　c. 肌"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 115.8,
+      "speaker": "ナレーション",
+      "text": "8"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 117.1,
+      "speaker": "音声",
+      "text": "カード"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 119.0,
+      "speaker": "ナレーション",
+      "text": "a. 角　b. カット　c. カード"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 129.7,
+      "speaker": "ナレーション",
+      "text": "9"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 131.1,
+      "speaker": "音声",
+      "text": "将来"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 133.0,
+      "speaker": "ナレーション",
+      "text": "a. 将来　b. 町内　c. 場内"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 144.2,
+      "speaker": "ナレーション",
+      "text": "10"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 145.5,
+      "speaker": "音声",
+      "text": "知っている"
+    },
+    {
+      "trackId": "cd1-track06",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/06 Track 6.mp3",
+      "trackLabel": "練習1-A [A06]",
+      "time": 147.7,
+      "speaker": "ナレーション",
+      "text": "a. している　b. 敷いている　c. 知っている"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 0.0,
+      "speaker": "指示",
+      "text": "練習1-B。文を聞いてください。どちらですか。"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 3.7,
+      "speaker": "ナレーション",
+      "text": "例"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 5.0,
+      "speaker": "音声",
+      "text": "これから美容院へ行きます。"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 10.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 11.3,
+      "speaker": "音声",
+      "text": "すみません、コピー、お願いします。"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 16.8,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 17.9,
+      "speaker": "音声",
+      "text": "最近、田中さんに会いました。"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 23.2,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 24.4,
+      "speaker": "音声",
+      "text": "これは今でないとできません。"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 29.1,
+      "speaker": "ナレーション",
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 30.4,
+      "speaker": "音声",
+      "text": "あればいいと思います。"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 34.9,
+      "speaker": "ナレーション",
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 36.0,
+      "speaker": "音声",
+      "text": "早く変えたほうがいいですよ。"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 40.7,
+      "speaker": "ナレーション",
+      "text": "6"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 42.0,
+      "speaker": "音声",
+      "text": "この服、ちょうどいいですね。"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 47.1,
+      "speaker": "ナレーション",
+      "text": "7"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 48.4,
+      "speaker": "音声",
+      "text": "この映画はもう一度見た。"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 53.4,
+      "speaker": "ナレーション",
+      "text": "8"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 54.6,
+      "speaker": "音声",
+      "text": "ねえ、これは買ったの？"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 59.2,
+      "speaker": "ナレーション",
+      "text": "9"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 61.0,
+      "speaker": "音声",
+      "text": "みんな来るまで待ちましょう。"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 65.4,
+      "speaker": "ナレーション",
+      "text": "10"
+    },
+    {
+      "trackId": "cd1-track07",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/07 Track 7.mp3",
+      "trackLabel": "練習1-B [A07]",
+      "time": 66.7,
+      "speaker": "音声",
+      "text": "あともう少し、できますよ。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 0.0,
+      "speaker": "指示",
+      "text": "練習1-C。文を聞いてください。どちらですか。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 3.6,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 5.1,
+      "speaker": "男",
+      "text": "ここにはどのぐらい魚がいるんですか。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 8.3,
+      "speaker": "女",
+      "text": "100匹ぐらいですね。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 12.7,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 14.0,
+      "speaker": "男",
+      "text": "いつが空いていますか。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 16.0,
+      "speaker": "女",
+      "text": "8日か9日なら大丈夫です。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 21.3,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 22.8,
+      "speaker": "女",
+      "text": "そろそろ出ないといけないかな。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 25.5,
+      "speaker": "男",
+      "text": "まだ35分だよ。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 30.1,
+      "speaker": "ナレーション",
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 31.5,
+      "speaker": "女",
+      "text": "この大学にはどのぐらい留学生がいるんですか。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 36.0,
+      "speaker": "男",
+      "text": "全体の11.1パーセントです。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 41.7,
+      "speaker": "ナレーション",
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 43.0,
+      "speaker": "男",
+      "text": "ずいぶん待つんですね。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 45.0,
+      "speaker": "女",
+      "text": "ええ、もう7、8分ですよ。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 50.7,
+      "speaker": "ナレーション",
+      "text": "6"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 52.2,
+      "speaker": "女",
+      "text": "古い建物ね。いつごろ建てられたのかな。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 56.7,
+      "speaker": "男",
+      "text": "1017年だそうですよ。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 61.5,
+      "speaker": "ナレーション",
+      "text": "7"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 63.0,
+      "speaker": "女",
+      "text": "どう、どの辺まで読んだ？"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 66.8,
+      "speaker": "男",
+      "text": "やっと3分の2まで行ったよ。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 71.7,
+      "speaker": "ナレーション",
+      "text": "8"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 73.2,
+      "speaker": "男",
+      "text": "全部で何点取れた？"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 75.6,
+      "speaker": "女",
+      "text": "3百5、60点かな。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 80.7,
+      "speaker": "ナレーション",
+      "text": "9"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 82.1,
+      "speaker": "女",
+      "text": "どのぐらい本読む？"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 84.2,
+      "speaker": "男",
+      "text": "そうだな、1か月に3冊ぐらいかな。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 90.6,
+      "speaker": "ナレーション",
+      "text": "10"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 92.0,
+      "speaker": "男",
+      "text": "何人ぐらい集まるんですか。"
+    },
+    {
+      "trackId": "cd1-track08",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/08 Track 8.mp3",
+      "trackLabel": "練習1-C [A08]",
+      "time": 94.6,
+      "speaker": "女",
+      "text": "約50人です。"
+    },
+    {
+      "trackId": "cd1-track09",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "trackLabel": "練習2-1 [A09]",
+      "time": 0.0,
+      "speaker": "指示",
+      "text": "練習2-1。文を聞いてください。どちらの意味ですか。"
+    },
+    {
+      "trackId": "cd1-track09",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "trackLabel": "練習2-1 [A09]",
+      "time": 3.4,
+      "speaker": "ナレーション",
+      "text": "例"
+    },
+    {
+      "trackId": "cd1-track09",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "trackLabel": "練習2-1 [A09]",
+      "time": 4.6,
+      "speaker": "音声",
+      "text": "この本、読んでる？"
+    },
+    {
+      "trackId": "cd1-track09",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "trackLabel": "練習2-1 [A09]",
+      "time": 8.9,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track09",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "trackLabel": "練習2-1 [A09]",
+      "time": 10.2,
+      "speaker": "音声",
+      "text": "今日は行かなくちゃ。"
+    },
+    {
+      "trackId": "cd1-track09",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "trackLabel": "練習2-1 [A09]",
+      "time": 14.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track09",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "trackLabel": "練習2-1 [A09]",
+      "time": 15.6,
+      "speaker": "音声",
+      "text": "昼ご飯、食べてくね。"
+    },
+    {
+      "trackId": "cd1-track09",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "trackLabel": "練習2-1 [A09]",
+      "time": 20.2,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track09",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "trackLabel": "練習2-1 [A09]",
+      "time": 21.4,
+      "speaker": "音声",
+      "text": "水、持ってった？"
+    },
+    {
+      "trackId": "cd1-track09",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "trackLabel": "練習2-1 [A09]",
+      "time": 25.9,
+      "speaker": "ナレーション",
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track09",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "trackLabel": "練習2-1 [A09]",
+      "time": 27.2,
+      "speaker": "音声",
+      "text": "切符、なくしちゃったよ。"
+    },
+    {
+      "trackId": "cd1-track09",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "trackLabel": "練習2-1 [A09]",
+      "time": 31.9,
+      "speaker": "ナレーション",
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track09",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/09 Track 9.mp3",
+      "trackLabel": "練習2-1 [A09]",
+      "time": 33.0,
+      "speaker": "音声",
+      "text": "かばん、持つって言ったんだよ。"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 0.0,
+      "speaker": "指示",
+      "text": "練習2-2。文を聞いて、元の形を書いてください。"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 3.2,
+      "speaker": "ナレーション",
+      "text": "例"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 4.4,
+      "speaker": "音声",
+      "text": "カメラ、持ってるよ。"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 8.7,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 9.9,
+      "speaker": "音声",
+      "text": "あ、そろそろ帰らなきゃ。"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 15.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 16.2,
+      "speaker": "音声",
+      "text": "うち、寄ってく？"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 20.2,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 21.5,
+      "speaker": "音声",
+      "text": "ここに捨てちゃだめだよ。"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 25.8,
+      "speaker": "ナレーション",
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 27.2,
+      "speaker": "音声",
+      "text": "先生の話、ちゃんと聞いてた？"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 32.4,
+      "speaker": "ナレーション",
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 33.4,
+      "speaker": "音声",
+      "text": "先に食べちゃうね。"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 37.6,
+      "speaker": "ナレーション",
+      "text": "6"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 38.8,
+      "speaker": "音声",
+      "text": "店、もう開いてるよ。"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 43.3,
+      "speaker": "ナレーション",
+      "text": "7"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 44.5,
+      "speaker": "音声",
+      "text": "飲み物、買ってかない？"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 49.0,
+      "speaker": "ナレーション",
+      "text": "8"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 50.2,
+      "speaker": "音声",
+      "text": "さっきそっちに入れといたんだけど。"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 55.4,
+      "speaker": "ナレーション",
+      "text": "9"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 56.6,
+      "speaker": "音声",
+      "text": "DVDなら、田中さんが持ってったよ。"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 62.2,
+      "speaker": "ナレーション",
+      "text": "10"
+    },
+    {
+      "trackId": "cd1-track10",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/10 Track 10.mp3",
+      "trackLabel": "練習2-2 [A10]",
+      "time": 63.2,
+      "speaker": "音声",
+      "text": "ずっと同じのばっかり見てるね。"
+    },
+    {
+      "trackId": "cd1-track11",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/11 Track 11.mp3",
+      "trackLabel": "例1・2 [A11]",
+      "time": 0.0,
+      "speaker": "ナレーション",
+      "text": "例1"
+    },
+    {
+      "trackId": "cd1-track11",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/11 Track 11.mp3",
+      "trackLabel": "例1・2 [A11]",
+      "time": 2.2,
+      "speaker": "女",
+      "text": "これにしたらどう？"
+    },
+    {
+      "trackId": "cd1-track11",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/11 Track 11.mp3",
+      "trackLabel": "例1・2 [A11]",
+      "time": 5.0,
+      "speaker": "男",
+      "text": "うん、そうだね。（同意する）"
+    },
+    {
+      "trackId": "cd1-track11",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/11 Track 11.mp3",
+      "trackLabel": "例1・2 [A11]",
+      "time": 7.9,
+      "speaker": "男",
+      "text": "うーん、そうだねえ。（同意しない）"
+    },
+    {
+      "trackId": "cd1-track11",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/11 Track 11.mp3",
+      "trackLabel": "例1・2 [A11]",
+      "time": 13.1,
+      "speaker": "ナレーション",
+      "text": "例2"
+    },
+    {
+      "trackId": "cd1-track11",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/11 Track 11.mp3",
+      "trackLabel": "例1・2 [A11]",
+      "time": 15.5,
+      "speaker": "女",
+      "text": "あした7時に来てくれませんか。"
+    },
+    {
+      "trackId": "cd1-track11",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/11 Track 11.mp3",
+      "trackLabel": "例1・2 [A11]",
+      "time": 18.8,
+      "speaker": "男",
+      "text": "あ、7時ですか。（同意する）"
+    },
+    {
+      "trackId": "cd1-track11",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/11 Track 11.mp3",
+      "trackLabel": "例1・2 [A11]",
+      "time": 21.8,
+      "speaker": "男",
+      "text": "あー、7時ですかー。（同意しない）"
+    },
+    {
+      "trackId": "cd1-track11",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/11 Track 11.mp3",
+      "trackLabel": "例1・2 [A11]",
+      "time": 25.8,
+      "speaker": "男",
+      "text": "えー、7時ですかあ？（同意しない）"
+    },
+    {
+      "trackId": "cd1-track12",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/12 Track 12.mp3",
+      "trackLabel": "例題3 [A12]",
+      "time": 0.0,
+      "speaker": "指示",
+      "text": "例題3。会話を聞いてください。男の人が同意していないものに×をつけてください。"
+    },
+    {
+      "trackId": "cd1-track12",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/12 Track 12.mp3",
+      "trackLabel": "例題3 [A12]",
+      "time": 2.7,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track12",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/12 Track 12.mp3",
+      "trackLabel": "例題3 [A12]",
+      "time": 4.3,
+      "speaker": "女",
+      "text": "土曜日に行きませんか。"
+    },
+    {
+      "trackId": "cd1-track12",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/12 Track 12.mp3",
+      "trackLabel": "例題3 [A12]",
+      "time": 6.6,
+      "speaker": "男",
+      "text": "あ、土曜日ですか。"
+    },
+    {
+      "trackId": "cd1-track12",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/12 Track 12.mp3",
+      "trackLabel": "例題3 [A12]",
+      "time": 10.2,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track12",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/12 Track 12.mp3",
+      "trackLabel": "例題3 [A12]",
+      "time": 12.5,
+      "speaker": "女",
+      "text": "これ、古いからやめたほうがいいよ。"
+    },
+    {
+      "trackId": "cd1-track12",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/12 Track 12.mp3",
+      "trackLabel": "例題3 [A12]",
+      "time": 15.9,
+      "speaker": "男",
+      "text": "えー、古いかあ？"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 0.0,
+      "speaker": "指示",
+      "text": "練習3。会話を聞いてください。女の人が同意していないものに×をつけてください。"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 2.7,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 4.1,
+      "speaker": "男",
+      "text": "スポーツ大会、出てみたらどうですか。"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 7.3,
+      "speaker": "女",
+      "text": "うーん、そうだねえ。"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 13.6,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 14.8,
+      "speaker": "男",
+      "text": "あした、10時にお電話しましょうか。"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 17.7,
+      "speaker": "女",
+      "text": "あ、10時ですね。"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 22.4,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 23.8,
+      "speaker": "男",
+      "text": "こっちの方がいいですよ。"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 25.9,
+      "speaker": "女",
+      "text": "そうですかあ？"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 30.4,
+      "speaker": "ナレーション",
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 31.9,
+      "speaker": "男",
+      "text": "駅前の店にしませんか。"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 34.1,
+      "speaker": "女",
+      "text": "ああ、あの店ね。"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 38.7,
+      "speaker": "ナレーション",
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 40.0,
+      "speaker": "男",
+      "text": "ここ、寒いよね。"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 41.9,
+      "speaker": "女",
+      "text": "え？ 寒い？"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 46.7,
+      "speaker": "ナレーション",
+      "text": "6"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 48.3,
+      "speaker": "男",
+      "text": "ね、もう出ようよ。"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 50.4,
+      "speaker": "女",
+      "text": "えー、もう？"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 55.2,
+      "speaker": "ナレーション",
+      "text": "7"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 56.7,
+      "speaker": "男",
+      "text": "こちら、いかがですか。"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 59.0,
+      "speaker": "女",
+      "text": "うん、5,000円か。"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 63.8,
+      "speaker": "ナレーション",
+      "text": "8"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 65.2,
+      "speaker": "男",
+      "text": "一緒に歌おうよ。"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 66.8,
+      "speaker": "女",
+      "text": "うん、いいよ。"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 71.0,
+      "speaker": "ナレーション",
+      "text": "9"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 72.4,
+      "speaker": "男",
+      "text": "運動したほうがいいね。"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 74.5,
+      "speaker": "女",
+      "text": "あー、運動ねえ。"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 80.3,
+      "speaker": "ナレーション",
+      "text": "10"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 81.7,
+      "speaker": "男",
+      "text": "金曜日の夜に行かない？"
+    },
+    {
+      "trackId": "cd1-track13",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/13 Track 13.mp3",
+      "trackLabel": "練習3 [A13]",
+      "time": 84.0,
+      "speaker": "女",
+      "text": "うーん、金曜日かー。"
+    }
+  ]
+}

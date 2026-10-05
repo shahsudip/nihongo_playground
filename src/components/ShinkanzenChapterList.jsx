@@ -1,6 +1,7 @@
 // src/components/ShinkanzenChapterList.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { SHINKANZEN_N3_LISTENING_CHAPTERS } from './ShinkanzenN3ListeningBook.jsx';
 
 const ShinkanzenChapterList = ({ book }) => {
   const isExamMode = localStorage.getItem('user_exam_mode') !== 'false';
@@ -165,16 +166,27 @@ const ShinkanzenChapterList = ({ book }) => {
 
             <div>
               <div className="flex justify-between text-xs text-[var(--color-text-secondary)] mb-2 font-medium">
-                <span>{part.count} セクション</span>
+                {(() => {
+                  const avail = SHINKANZEN_N3_LISTENING_CHAPTERS.filter(c => c.part === part.num).length;
+                  return (
+                    <span>{avail} / {part.count} セクション完成</span>
+                  );
+                })()}
                 <span className="text-blue-500 font-bold group-hover:translate-x-0.5 transition-transform inline-block">
                   Open Digital Book &rarr;
                 </span>
               </div>
               <div className="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
-                <div 
-                  className="bg-blue-600 h-full rounded-full transition-all duration-300"
-                  style={{ width: part.num === 1 ? '100%' : '0%' }}
-                />
+                {(() => {
+                  const avail = SHINKANZEN_N3_LISTENING_CHAPTERS.filter(c => c.part === part.num).length;
+                  const pct = Math.min(100, Math.round((avail / part.count) * 100));
+                  return (
+                    <div 
+                      className="bg-blue-600 h-full rounded-full transition-all duration-300"
+                      style={{ width: `${pct}%` }}
+                    />
+                  );
+                })()}
               </div>
             </div>
           </Link>

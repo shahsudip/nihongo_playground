@@ -12,8 +12,10 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "verify:shinkanzen": "node scripts/verify_all_shinkanzen.cjs",
+    "verify:shinkanzen:listening": "python scripts/verify_shinkanzen_listening_all.py",
     "verify:speedmaster": "node scripts/verify_speedmaster.cjs",
     "sync:shinkanzen": "node scripts/sync_shinkanzen_to_firestore.cjs",
+    "sync:shinkanzen:listening": "node scripts/sync_shinkanzen_listening_to_firestore.cjs",
     "sync:speedmaster": "node scripts/sync_speedmaster_to_firestore.cjs",
     "sync:zenkamoku": "node scripts/sync_zenkamoku_to_firestore.cjs",
     "sync-tests": "node sync_tests.js"

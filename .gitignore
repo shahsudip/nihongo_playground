@@ -44,6 +44,8 @@ scripts/q1_check.txt
 scripts/*
 !scripts/verify_all_shinkanzen.cjs
 !scripts/verify_speedmaster.cjs
+!scripts/verify_shinkanzen_listening_all.py
+!scripts/sync_shinkanzen_listening_to_firestore.cjs
 /jlpt_practice_tests/
 /jlpt_past_exams/
 !public/data/jlpt_past_exams/

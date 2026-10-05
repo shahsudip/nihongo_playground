@@ -1,0 +1,2679 @@
+{
+  "bookId": "shinkanzen-master-n3-listening",
+  "chapterId": "skill-4",
+  "part": 2,
+  "partTitle": "第2部：実力養成編",
+  "partTitleEn": "Skill Building: Task Comprehension",
+  "mondaiNumber": 4,
+  "order": 4,
+  "title": "第4単元：「課題理解」のスキルを学ぶ",
+  "mondaiHeader": "【第4単元：「課題理解」のスキルを学ぶ】\nまとまりのある話から依頼や指示、提案などを聞き取り、これからするべきことを理解する問題（第1問形式）です。以下の重要な聞き取りポイントを習得します：\n1. するべきことを聞き取る（依頼・指示・申し出・助言の表現と同意表現）\n2. 提案や誘いに対して同意しているかどうかを判断する（「〜んじゃない？」などの意図）\n3. するべきことが複数ある場合は、優先順位（「まず」「先に」「後で」）を整理する",
+  "instruction": "音声を聞いて、それぞれの指示に従って正しい答えを一つえらんでください。",
+  "hotspots": [
+    {
+      "id": "hotspot-1",
+      "trackId": "cd1-track27",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/27 Track 27.mp3",
+      "label": "例題1-1 [A27]"
+    },
+    {
+      "id": "hotspot-2",
+      "trackId": "cd1-track28",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/28 Track 28.mp3",
+      "label": "練習1-1 [A28]"
+    },
+    {
+      "id": "hotspot-3",
+      "trackId": "cd1-track29",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/29 Track 29.mp3",
+      "label": "表現例 [A29]"
+    },
+    {
+      "id": "hotspot-4",
+      "trackId": "cd1-track30",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/30 Track 30.mp3",
+      "label": "例題1-2 [A30]"
+    },
+    {
+      "id": "hotspot-5",
+      "trackId": "cd1-track31",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/31 Track 31.mp3",
+      "label": "練習1-2 [A31]"
+    },
+    {
+      "id": "hotspot-6",
+      "trackId": "cd1-track32",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/32 Track 32.mp3",
+      "label": "例題1 [A32]"
+    },
+    {
+      "id": "hotspot-7",
+      "trackId": "cd1-track33",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/33 Track 33.mp3",
+      "label": "練習1 (1) [A33]"
+    },
+    {
+      "id": "hotspot-8",
+      "trackId": "cd1-track34",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/34 Track 34.mp3",
+      "label": "練習1 (2) [A34]"
+    },
+    {
+      "id": "hotspot-9",
+      "trackId": "cd1-track35",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/35 Track 35.mp3",
+      "label": "練習1 (3) [A35]"
+    },
+    {
+      "id": "hotspot-10",
+      "trackId": "cd1-track36",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/36 Track 36.mp3",
+      "label": "練習1 (4) [A36]"
+    },
+    {
+      "id": "hotspot-11",
+      "trackId": "cd1-track37",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/37 Track 37.mp3",
+      "label": "練習1 (5) [A37]"
+    },
+    {
+      "id": "hotspot-12",
+      "trackId": "cd1-track38",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/38 Track 38.mp3",
+      "label": "例題2 [A38]"
+    },
+    {
+      "id": "hotspot-13",
+      "trackId": "cd1-track39",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/39 Track 39.mp3",
+      "label": "練習2 (1) [A39]"
+    },
+    {
+      "id": "hotspot-14",
+      "trackId": "cd1-track40",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/40 Track 40.mp3",
+      "label": "練習2 (2) [A40]"
+    },
+    {
+      "id": "hotspot-15",
+      "trackId": "cd1-track41",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/41 Track 41.mp3",
+      "label": "練習2 (3) [A41]"
+    },
+    {
+      "id": "hotspot-16",
+      "trackId": "cd1-track42",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/42 Track 42.mp3",
+      "label": "練習2 (4) [A42]"
+    },
+    {
+      "id": "hotspot-17",
+      "trackId": "cd1-track43",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/43 Track 43.mp3",
+      "label": "練習2 (5) [A43]"
+    },
+    {
+      "id": "hotspot-18",
+      "trackId": "cd1-track44",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/44 Track 44.mp3",
+      "label": "確認問題 説明 [A44]"
+    },
+    {
+      "id": "hotspot-19",
+      "trackId": "cd1-track45",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/45 Track 45.mp3",
+      "label": "確認問題 1 [A45]"
+    },
+    {
+      "id": "hotspot-20",
+      "trackId": "cd1-track46",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/46 Track 46.mp3",
+      "label": "確認問題 2 [A46]"
+    },
+    {
+      "id": "hotspot-21",
+      "trackId": "cd1-track47",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/47 Track 47.mp3",
+      "label": "確認問題 3 [A47]"
+    }
+  ],
+  "questions": [
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "例題1-1 (1)",
+      "subtitle": "1-A 依頼・指示・申し出と同意",
+      "trackId": "cd1-track27",
+      "trackLabel": "例題1-1 [A27]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/27 Track 27.mp3",
+      "instruction": "会話を聞いてください。女の人はこれからどうしますか。",
+      "context": "女：これ、あっちに運んでおこうか。<br/>男：あ、それはいいよ。",
+      "questionText": "女の人はこれから荷物をどうしますか。",
+      "options": [
+        "運ぶ",
+        "運ばない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "運ばない"
+      },
+      "explanation": "<b>【正解】運ばない</b><br/>女の人が「運んでお（く）」ことを申し出ましたが、男の人は「それはいいよ」と断っています。したがって運ばなくていいことになります。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "例題1-1 (2)",
+      "subtitle": "1-A 依頼・指示・申し出と同意",
+      "trackId": "cd1-track27",
+      "trackLabel": "例題1-1 [A27]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/27 Track 27.mp3",
+      "instruction": "会話を聞いてください。女の人はこれからどうしますか。",
+      "context": "男：この本、あした返さないと。<br/>女：うん、わかった。",
+      "questionText": "女の人はこれから本をどうしますか。",
+      "options": [
+        "返す",
+        "返さない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "返す"
+      },
+      "explanation": "<b>【正解】返す</b><br/>男の人の「返さないと」はこれからするべきことを表しており、女の人は「うん、わかった」と同意しています。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "練習1-1 (1)",
+      "subtitle": "1-A 依頼・指示・申し出と同意",
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/28 Track 28.mp3",
+      "instruction": "会話を聞いてください。女の人はこれからどうしますか。",
+      "context": "男：手袋、絶対必要だよ。<br/>女：うん、さっきかばんに入れておいた。",
+      "questionText": "女の人はこれから手袋をかばんにどうしますか。",
+      "options": [
+        "入れる",
+        "入れない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "入れない"
+      },
+      "explanation": "<b>【正解】入れない</b><br/>「さっきかばんに入れておいた」と既に完了しているため、これから入れる必要はありません。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "練習1-1 (2)",
+      "subtitle": "1-A 依頼・指示・申し出と同意",
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/28 Track 28.mp3",
+      "instruction": "会話を聞いてください。女の人はこれからどうしますか。",
+      "context": "女：いす、並べておいたほうがいいかな。<br/>男：そうだね。",
+      "questionText": "女の人はこれからいすをどうしますか。",
+      "options": [
+        "並べる",
+        "並べない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "並べる"
+      },
+      "explanation": "<b>【正解】並べる</b><br/>女の人の提案「並べておいたほうがいいかな」に対し、男の人が「そうだね」と同意しています。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "練習1-1 (3)",
+      "subtitle": "1-A 依頼・指示・申し出と同意",
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/28 Track 28.mp3",
+      "instruction": "会話を聞いてください。女の人はこれからどうしますか。",
+      "context": "女：これ、片付けましょうか。<br/>男：あ、そのままにしておいて。",
+      "questionText": "女の人はこれからこれをどうしますか。",
+      "options": [
+        "片付ける",
+        "片付けない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "片付けない"
+      },
+      "explanation": "<b>【正解】片付けない</b><br/>女の人の「片付けましょうか」という申し出に対し、男の人は「そのままにしておいて」と断っています。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "練習1-1 (4)",
+      "subtitle": "1-A 依頼・指示・申し出と同意",
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/28 Track 28.mp3",
+      "instruction": "会話を聞いてください。女の人はこれからどうしますか。",
+      "context": "男：松本さんに連絡しておいてもらえる？<br/>女：うん、そうする。",
+      "questionText": "女の人はこれから松本さんにどうしますか。",
+      "options": [
+        "連絡する",
+        "連絡しない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "連絡する"
+      },
+      "explanation": "<b>【正解】連絡する</b><br/>男の人の「連絡しておいてもらえる？」という依頼に対し、女の人は「うん、そうする」と同意しています。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "練習1-1 (5)",
+      "subtitle": "1-A 依頼・指示・申し出と同意",
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/28 Track 28.mp3",
+      "instruction": "会話を聞いてください。女の人はこれからどうしますか。",
+      "context": "男：風邪薬も持ってく？<br/>女：うーん、それはいいよ。",
+      "questionText": "女の人はこれから風邪薬をどうしますか。",
+      "options": [
+        "持っていく",
+        "持っていかない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "持っていかない"
+      },
+      "explanation": "<b>【正解】持っていかない</b><br/>男の人の提案に対し、女の人は「うーん、それはいいよ」と断っています。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "例題1-2 (1)",
+      "subtitle": "1-B 「〜んじゃない？」の聞き取り",
+      "trackId": "cd1-track30",
+      "trackLabel": "例題1-2 [A30]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/30 Track 30.mp3",
+      "instruction": "会話を聞いてください。男の人はこれからどうしますか。",
+      "context": "男：予約しておきましょうか。<br/>女：しなくてもいいんじゃないかな。",
+      "questionText": "男の人はこれから予約をどうしますか。",
+      "options": [
+        "予約する",
+        "予約しない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "予約しない"
+      },
+      "explanation": "<b>【正解】予約しない</b><br/>女の人が「しなくてもいいんじゃないかな（＝しなくていいと思う）」と否定的な意見を述べているため、予約しません。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "例題1-2 (2)",
+      "subtitle": "1-B 「〜んじゃない？」の聞き取り",
+      "trackId": "cd1-track30",
+      "trackLabel": "例題1-2 [A30]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/30 Track 30.mp3",
+      "instruction": "会話を聞いてください。男の人はこれからどうしますか。",
+      "context": "男：田中さんにも電話しとく？<br/>女：ああ、そうしたほうがいいんじゃない？",
+      "questionText": "男の人はこれから田中さんにどうしますか。",
+      "options": [
+        "電話する",
+        "電話しない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "電話する"
+      },
+      "explanation": "<b>【正解】電話する</b><br/>女の人が「そうしたほうがいいんじゃない？（＝したほうがいいと思う）」と賛成しているので、電話します。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "練習1-2 (1)",
+      "subtitle": "1-B 「〜んじゃない？」の聞き取り",
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/31 Track 31.mp3",
+      "instruction": "会話を聞いてください。男の人はこれからどうしますか。",
+      "context": "男：これ、洗ったほうがいいかな。<br/>女：ああ、そうしたほうがいいんじゃない？",
+      "questionText": "男の人はこれからこれをどうしますか。",
+      "options": [
+        "洗う",
+        "洗わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "洗う"
+      },
+      "explanation": "<b>【正解】洗う</b><br/>女の人が「そうしたほうがいいんじゃない？」と賛成しているので、洗います。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "練習1-2 (2)",
+      "subtitle": "1-B 「〜んじゃない？」の聞き取り",
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/31 Track 31.mp3",
+      "instruction": "会話を聞いてください。男の人はこれからどうしますか。",
+      "context": "男：田中さんにネクタイ、プレゼントしない？<br/>女：別のもののほうがいいんじゃない？",
+      "questionText": "男の人はこれから田中さんにネクタイをどうしますか。",
+      "options": [
+        "あげる",
+        "あげない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "あげない"
+      },
+      "explanation": "<b>【正解】あげない</b><br/>女の人が「別のもののほうがいいんじゃない？」と提案しているので、ネクタイはあげません。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "練習1-2 (3)",
+      "subtitle": "1-B 「〜んじゃない？」の聞き取り",
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/31 Track 31.mp3",
+      "instruction": "会話を聞いてください。男の人はこれからどうしますか。",
+      "context": "男：これ、どこかに運んだほうがいいよね。<br/>女：あー、それは大丈夫なんじゃない？",
+      "questionText": "男の人はこれから荷物をどこかにどうしますか。",
+      "options": [
+        "運ぶ",
+        "運ばない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "運ばない"
+      },
+      "explanation": "<b>【正解】運ばない</b><br/>「それは大丈夫なんじゃない？」は運ぶ必要がない（そのままでいい）という意味です。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "練習1-2 (4)",
+      "subtitle": "1-B 「〜んじゃない？」の聞き取り",
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/31 Track 31.mp3",
+      "instruction": "会話を聞いてください。男の人はこれからどうしますか。",
+      "context": "男：あしたのパーティー、佐藤さんも誘ってみる？<br/>女：ああ、誘ってみたらいいんじゃないかな。",
+      "questionText": "男の人はこれから佐藤さんをどうしますか。",
+      "options": [
+        "誘う",
+        "誘わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "誘う"
+      },
+      "explanation": "<b>【正解】誘う</b><br/>女の人が「誘ってみたらいいんじゃないかな」と賛成しているので、誘います。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "練習1-2 (5)",
+      "subtitle": "1-B 「〜んじゃない？」の聞き取り",
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/31 Track 31.mp3",
+      "instruction": "会話を聞いてください。男の人はこれからどうしますか。",
+      "context": "男：エアコン、つけようか。<br/>女：そんなに暑くないんじゃないの？",
+      "questionText": "男の人はこれからエアコンをどうしますか。",
+      "options": [
+        "つける",
+        "つけない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "つけない"
+      },
+      "explanation": "<b>【正解】つけない</b><br/>女の人が「そんなに暑くないんじゃないの？」と否定的な意見を述べているため、エアコンはつけません。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "ステップアップ 例題1",
+      "subtitle": "ステップアップ問題（第1問形式）",
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/32 Track 32.mp3",
+      "instruction": "話を聞いて、質問の答えとして合うものを1つ選んでください。",
+      "context": "男の人と女の人が会社でスポーツ大会の賞品について話しています。",
+      "questionText": "女の人は賞品を何にしますか。",
+      "options": [
+        "お金",
+        "図書カード",
+        "タオルとお茶",
+        "タオルとコーヒー"
+      ],
+      "correctOption": {
+        "index": 3,
+        "text": "タオルとコーヒー"
+      },
+      "explanation": "<b>【正解】4（タオルとコーヒー）</b><br/>・「お金」は男の人が「つまらないんじゃないの？」と反対。<br/>・「図書カード」は女の人が「みんなあまり本、読まないでしょう？」と反対。<br/>・「去年と同じ（タオルとお茶）」にしようとしますが、男の人が「お茶よりはビールがいいな。コーヒーでもいいし」と言い、女の人が「ビールは飲まない人もいるんじゃない？ でも、お茶よりはコーヒーがいいかもね。じゃ、そうしよう」と同意したため、<b>4「タオルとコーヒー」</b> に決まりました。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "ステップアップ 練習1 (1)",
+      "subtitle": "ステップアップ問題（イラスト選択）",
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/33 Track 33.mp3",
+      "instruction": "話を聞いて、質問の答えとして合うものを1つ選んでください。",
+      "context": "女の人と男の人が家で旅行の準備をしています。<br/><img src=\"/images/shinkanzen_listening/skill-4/stepup1_q1_items.png\" alt=\"持ち物のイラスト\" class=\"max-w-md mx-auto my-3 border rounded shadow-sm\" />",
+      "questionText": "女の人はこの後何をかばんに入れますか。",
+      "options": [
+        "ア　ウ",
+        "ア　イ　エ",
+        "イ　ウ",
+        "イ　エ　オ"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "イ　ウ"
+      },
+      "explanation": "<b>【正解】3（イ　ウ）</b><br/>・ア（カメラ）：既にかばんに入っています。<br/>・イ（電池）：「わたしの引き出しにあるから入れておくね」とこれから入れます。<br/>・ウ（水着）：「水着も入れなくちゃ」とこれから入れます。<br/>・エ（帽子）：「一番上に入れた」と既に入っています。<br/>・オ（ビデオ）：「カメラがあるからいいんじゃない？」と持っていきません。<br/>したがって女の人がこの後かばんに入れるのは <b>イ（電池）とウ（水着）</b> です。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "ステップアップ 練習1 (2)",
+      "subtitle": "ステップアップ問題（机の配置図）",
+      "trackId": "cd1-track34",
+      "trackLabel": "練習1 (2) [A34]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/34 Track 34.mp3",
+      "instruction": "話を聞いて、質問の答えとして合うものを1つ選んでください。",
+      "context": "男の学生と先生が発表の準備をしています。<br/><img src=\"/images/shinkanzen_listening/skill-4/stepup1_q2_tables.png\" alt=\"机の並べ方\" class=\"max-w-md mx-auto my-3 border rounded shadow-sm\" />",
+      "questionText": "男の学生はどのように机を並べますか。",
+      "options": [
+        "1（四角く囲む）",
+        "2（コの字型・角型）",
+        "3（円形）",
+        "4（半円形・前を空ける）"
+      ],
+      "correctOption": {
+        "index": 3,
+        "text": "4（半円形・前を空ける）"
+      },
+      "explanation": "<b>【正解】4</b><br/>・授業と同じ「横3列」は後で話し合いがあるので不可。<br/>・「四角」や「丸」は発表する人の顔が見にくい人が出るため不可。<br/>・先生が「じゃ、前の席だけ並べないでおきましょう」と指示したため、半円形で前が空いている <b>4</b> が正解です。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "ステップアップ 練習1 (3)",
+      "subtitle": "ステップアップ問題",
+      "trackId": "cd1-track35",
+      "trackLabel": "練習1 (3) [A35]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/35 Track 35.mp3",
+      "instruction": "話を聞いて、質問の答えとして合うものを1つ選んでください。",
+      "context": "男の人と女の人がバーベキューの準備について話しています。",
+      "questionText": "男の人は何を準備しますか。",
+      "options": [
+        "バーベキューの道具",
+        "キャンプ用のコップと皿",
+        "紙皿と紙コップ",
+        "食べ物と飲み物"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "バーベキューの道具"
+      },
+      "explanation": "<b>【正解】1（バーベキューの道具）</b><br/>男の人は「うちに大勢で使えるのがあるんです。古いのによかったら」と申し出て、バーベキューの道具を準備することになりました。コップと皿はキャンプ用のでは足りないため、女の人が買い出しのついでに紙皿と紙コップを用意します。したがって男の人が準備するのは <b>1「バーベキューの道具」</b> です。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "ステップアップ 練習1 (4)",
+      "subtitle": "ステップアップ問題（イラスト選択）",
+      "trackId": "cd1-track36",
+      "trackLabel": "練習1 (4) [A36]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/36 Track 36.mp3",
+      "instruction": "話を聞いて、質問の答えとして合うものを1つ選んでください。",
+      "context": "先生が学生にあしたの工場見学について話しています。<br/><img src=\"/images/shinkanzen_listening/skill-4/stepup1_q4_items.png\" alt=\"持ち物のイラスト\" class=\"max-w-md mx-auto my-3 border rounded shadow-sm\" />",
+      "questionText": "学生はあした何を持っていかなければなりませんか。",
+      "options": [
+        "ア　イ",
+        "ア　イ　ウ",
+        "ア　ウ　エ",
+        "ウ　エ　オ"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "ア　イ"
+      },
+      "explanation": "<b>【正解】1（ア　イ）</b><br/>インタビュー用に「自分たちで考えた質問の紙（ア）」と「ペン（イ）」を忘れないように指示されています。お弁当やお茶は学校で用意され、工場内は飲食禁止（バスの中でのみ飲食可）なので持参必須ではありません。したがって必ず持っていくのは <b>ア（質問の紙）とイ（ペン）</b> です。"
+    },
+    {
+      "sectionTitle": "1 するべきことを考える",
+      "badge": "ステップアップ 練習1 (5)",
+      "subtitle": "ステップアップ問題",
+      "trackId": "cd1-track37",
+      "trackLabel": "練習1 (5) [A37]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/37 Track 37.mp3",
+      "instruction": "話を聞いて、質問の答えとして合うものを1つ選んでください。",
+      "context": "温泉の受付で男の人が係の人と話しています。",
+      "questionText": "男の人は受付でいくら払いますか。",
+      "options": [
+        "500円",
+        "700円",
+        "800円",
+        "900円"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "700円"
+      },
+      "explanation": "<b>【正解】2（700円）</b><br/>料金は700円です。学生証があれば500円ですが「今日は持ってきてない」ため通常料金です。タオルは持参しているため追加料金100円は不要。ロッカーの100円は脱衣所のロッカー利用時に一時投入し後で戻るお金なので受付では支払いません。したがって受付で払うのは <b>2「700円」</b> です。"
+    },
+    {
+      "sectionTitle": "2 最初にすることを考える",
+      "badge": "例題2",
+      "subtitle": "順番・優先順位の聞き取り",
+      "trackId": "cd1-track38",
+      "trackLabel": "例題2 [A38]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/38 Track 38.mp3",
+      "instruction": "話を聞いて、質問の答えとして合うものを1つ選んでください。",
+      "context": "女の人と男の人が新商品の発表会の準備をしながら話しています。",
+      "questionText": "女の人は、この後すぐ何をしなければなりませんか。",
+      "options": [
+        "マイクを準備する",
+        "商品を並べる",
+        "名札を並べる",
+        "資料を運んでおく"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "名札を並べる"
+      },
+      "explanation": "<b>【正解】3（名札を並べる）</b><br/>・マイク：「後で借りてきます」<br/>・商品：「もう見てもらえるように置いてある」<br/>・資料：「もうまとめて受付のところに置いておきました」<br/>・名札：「先に並べておかないと……」「あ、ここにあるので、今やります」<br/>したがってこの後すぐに行うのは <b>3「名札を並べる」</b> です。"
+    },
+    {
+      "sectionTitle": "2 最初にすることを考える",
+      "badge": "練習2 (1)",
+      "subtitle": "順番・優先順位の聞き取り",
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/39 Track 39.mp3",
+      "instruction": "話を聞いて、質問の答えとして合うものを1つ選んでください。",
+      "context": "男の人と女の人がパーティーの後で話しています。",
+      "questionText": "男の人はこの後まず何をしますか。",
+      "options": [
+        "いすを片付ける",
+        "お皿を運ぶ",
+        "テーブルをふく",
+        "ごみを外に出す"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "お皿を運ぶ"
+      },
+      "explanation": "<b>【正解】2（お皿を運ぶ）</b><br/>男の人は最初「僕、いす片付けますね」と言いますが、女の人から「先に残ったお皿を運ぶの手伝ってくれますか」と頼まれ、「わかりました」と承諾しています。テーブル拭きはその後、ごみ出しは最後です。したがってまず行うのは <b>2「お皿を運ぶ」</b> です。"
+    },
+    {
+      "sectionTitle": "2 最初にすることを考える",
+      "badge": "練習2 (2)",
+      "subtitle": "順番・優先順位の聞き取り",
+      "trackId": "cd1-track40",
+      "trackLabel": "練習2 (2) [A40]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/40 Track 40.mp3",
+      "instruction": "話を聞いて、質問の答えとして合うものを1つ選んでください。",
+      "context": "会社で男の人と女の人が話しています。",
+      "questionText": "女の人はこの後すぐ何をしますか。",
+      "options": [
+        "松下さんに連絡する",
+        "松下さんに書類を渡す",
+        "書類をコピーする",
+        "会議の資料を作る"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "書類をコピーする"
+      },
+      "explanation": "<b>【正解】3（書類をコピーする）</b><br/>男の人が岡田電気に出かける前に「あ、これ、コピー取っておくの忘れてた。悪いんだけど、すぐに1部取って僕の机の上に置いておいてくれる？」と急ぎの依頼をし、女の人は「わかりました」と返答しています。松下さんが来たら書類を渡すのは「もし戻るまでの間にいらっしゃったら」という条件付きの後の行動です。したがってすぐにするのは <b>3「書類をコピーする」</b> です。"
+    },
+    {
+      "sectionTitle": "2 最初にすることを考える",
+      "badge": "練習2 (3)",
+      "subtitle": "順番・優先順位の聞き取り",
+      "trackId": "cd1-track41",
+      "trackLabel": "練習2 (3) [A41]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/41 Track 41.mp3",
+      "instruction": "話を聞いて、質問の答えとして合うものを1つ選んでください。",
+      "context": "女の人がカードの作り方について説明しています。",
+      "questionText": "このグループの人たちはこれからまず何をしますか。",
+      "options": [
+        "写真や絵を探す",
+        "カードの色を選ぶ",
+        "写真や絵をはる",
+        "あいさつの言葉を書く"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "カードの色を選ぶ"
+      },
+      "explanation": "<b>【正解】2（カードの色を選ぶ）</b><br/>説明の中で「最初にその写真や絵に合う色のカードを1枚選んでください」と指示されています。その後に写真や絵を貼り、挨拶の言葉を書き、最後に飾りをつけます。したがって最初にするのは <b>2「カードの色を選ぶ」</b> です。"
+    },
+    {
+      "sectionTitle": "2 最初にすることを考える",
+      "badge": "練習2 (4)",
+      "subtitle": "順番・優先順位の聞き取り",
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/42 Track 42.mp3",
+      "instruction": "話を聞いて、質問の答えとして合うものを1つ選んでください。",
+      "context": "うちで夫と妻が話しています。",
+      "questionText": "夫はこれからまず何をしますか。",
+      "options": [
+        "コンビニで荷物を送る",
+        "猫にえさをやる",
+        "スーパーでしょうゆを買う",
+        "木村さんの住所を調べる"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "猫にえさをやる"
+      },
+      "explanation": "<b>【正解】2（猫にえさをやる）</b><br/>夫は「ちょっとコンビニに行ってタバコ買ってくるよ」と言いますが、妻から「その前にミケにご飯やってくれる？ お腹空かせて鳴いてるから」と頼まれ、「うん、わかった」と承諾しています。しょうゆは後で妻がスーパーで買い、荷物の発送は猫にご飯をやった後にコンビニで行います。したがってまずするのは <b>2「猫にえさをやる」</b> です。"
+    },
+    {
+      "sectionTitle": "2 最初にすることを考える",
+      "badge": "練習2 (5)",
+      "subtitle": "順番・優先順位の聞き取り",
+      "trackId": "cd1-track43",
+      "trackLabel": "練習2 (5) [A43]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/43 Track 43.mp3",
+      "instruction": "話を聞いて、質問の答えとして合うものを1つ選んでください。",
+      "context": "学校で先生が話しています。",
+      "questionText": "女の学生はまず何をしなければなりませんか。",
+      "options": [
+        "作文を直す",
+        "メモを作る",
+        "自己紹介をする",
+        "紙に感想を書く"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "メモを作る"
+      },
+      "explanation": "<b>【正解】2（メモを作る）</b><br/>先週作文を書いた人はそれを直しますが、女の学生は「先週休んでしまった」ため、先生から「じゃ、今から発表のメモを作ってください。自分の性格で紹介したいところ1つと例を書きましょう」と指示されました。したがって女の学生がまずするのは <b>2「メモを作る」</b> です。"
+    },
+    {
+      "sectionTitle": "確認問題",
+      "badge": "確認問題 1",
+      "subtitle": "課題理解 実戦演習（チェックリスト選択）",
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/45 Track 45.mp3",
+      "instruction": "まず質問を聞いてください。それから話を聞いて、1から4の中から最もよいものを1つ選んでください。",
+      "context": "会社で女の人と男の人が地震が起きた時のための準備について話しています。<br/><img src=\"/images/shinkanzen_listening/skill-4/kakunin_q1_checklist.png\" alt=\"チェックリスト\" class=\"max-w-md mx-auto my-3 border rounded shadow-sm\" />",
+      "questionText": "女の人はこの後何を注文しますか。",
+      "options": [
+        "ア　イ　ウ",
+        "ア　イ　エ",
+        "イ　ウ　オ",
+        "ウ　エ　オ"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "ア　イ　エ"
+      },
+      "explanation": "<b>【正解】2（ア　イ　エ）</b><br/>・食料（ア）と水（イ）：「そろそろ古いんじゃないかな」「じゃあ新しいのが要りますね」と注文決定。<br/>・毛布（エ）：「もっとあったほうがいいから、あと10枚頼んでよ」と注文決定。<br/>・懐中電灯（ウ）とラジオ（オ）：「5点ずつか」「ラジオは3台」「それだけあればいいと思うよ」と注文不要。<br/>したがって女の人が注文するのは <b>ア（食料）、イ（水）、エ（毛布）</b> です。"
+    },
+    {
+      "sectionTitle": "確認問題",
+      "badge": "確認問題 2",
+      "subtitle": "課題理解 実戦演習",
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/46 Track 46.mp3",
+      "instruction": "まず質問を聞いてください。それから話を聞いて、1から4の中から最もよいものを1つ選んでください。",
+      "context": "男の人と女の人が市民会館で絵本の勉強会の準備をしています。",
+      "questionText": "女の人はこれから何をしますか。",
+      "options": [
+        "先生に連絡する",
+        "絵本を借りる",
+        "ビデオの準備をする",
+        "会場の準備をする"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "先生に連絡する"
+      },
+      "explanation": "<b>【正解】1（先生に連絡する）</b><br/>絵本は既に借りて揃えてあります。ビデオ撮影について当日先生に聞くのは失礼なので「じゃ、悪いけど先生に電話してみて」と男の人から頼まれ、女の人がこれから行うことになりました。会場準備は翌朝9時からでよいため、これからすぐに行うのは <b>1「先生に連絡する」</b> です。"
+    },
+    {
+      "sectionTitle": "確認問題",
+      "badge": "確認問題 3",
+      "subtitle": "課題理解 実戦演習",
+      "trackId": "cd1-track47",
+      "trackLabel": "確認問題 3 [A47]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/47 Track 47.mp3",
+      "instruction": "まず質問を聞いてください。それから話を聞いて、1から4の中から最もよいものを1つ選んでください。",
+      "context": "女の人が講師に説明しています。",
+      "questionText": "講師は部屋に来て最初に何をしなければなりませんか。",
+      "options": [
+        "エアコンを入れる",
+        "ノートにサインする",
+        "コーヒーをいれる",
+        "昼ご飯の予約をする"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "ノートにサインする"
+      },
+      "explanation": "<b>【正解】2（ノートにサインする）</b><br/>エアコンは事前にスタッフが開錠時に入れておきます。「おいでになったら、まずこちらのノートにサインをお願いします」と説明されているため、講師が部屋に来て最初にするのは <b>2「ノートにサインする」</b> です。お弁当は希望者のみ電話予約します。"
+    }
+  ],
+  "transcript": [
+    {
+      "trackId": "cd1-track27",
+      "trackLabel": "例題1-1 [A27]",
+      "start": 0.0,
+      "end": 3.2,
+      "text": "例題。1の1。"
+    },
+    {
+      "trackId": "cd1-track27",
+      "trackLabel": "例題1-1 [A27]",
+      "start": 3.2,
+      "end": 4.7,
+      "text": "1。"
+    },
+    {
+      "trackId": "cd1-track27",
+      "trackLabel": "例題1-1 [A27]",
+      "start": 4.7,
+      "end": 8.16,
+      "text": "これ、あちに運んでおこうか?"
+    },
+    {
+      "trackId": "cd1-track27",
+      "trackLabel": "例題1-1 [A27]",
+      "start": 8.16,
+      "end": 10.54,
+      "text": "あ、それはいいよ。"
+    },
+    {
+      "trackId": "cd1-track27",
+      "trackLabel": "例題1-1 [A27]",
+      "start": 12.7,
+      "end": 14.0,
+      "text": "2。"
+    },
+    {
+      "trackId": "cd1-track27",
+      "trackLabel": "例題1-1 [A27]",
+      "start": 14.0,
+      "end": 16.8,
+      "text": "この本、明日会さないと。"
+    },
+    {
+      "trackId": "cd1-track27",
+      "trackLabel": "例題1-1 [A27]",
+      "start": 16.8,
+      "end": 19.0,
+      "text": "うん、わかった。"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 0.0,
+      "end": 3.36,
+      "text": "練習1の1"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 3.36,
+      "end": 4.86,
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 4.86,
+      "end": 7.66,
+      "text": "手袋絶対必要だよ"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 7.66,
+      "end": 11.76,
+      "text": "うん 先かわに入れておいた"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 12.92,
+      "end": 14.22,
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 14.22,
+      "end": 15.4,
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 15.4,
+      "end": 17.6,
+      "text": "並べとおいた方がいいかな"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 17.6,
+      "end": 20.2,
+      "text": "そうだね"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 21.3,
+      "end": 22.7,
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 22.7,
+      "end": 25.24,
+      "text": "これ 片付けましょうか"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 25.24,
+      "end": 29.04,
+      "text": "あ そのままにしておいて"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 30.2,
+      "end": 31.5,
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 31.5,
+      "end": 34.2,
+      "text": "田中さんに連楽しておいてもらえる"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 34.2,
+      "end": 36.2,
+      "text": "うん 騒する"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 38.4,
+      "end": 39.7,
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 39.7,
+      "end": 41.9,
+      "text": "風呂すりも持ってく"
+    },
+    {
+      "trackId": "cd1-track28",
+      "trackLabel": "練習1-1 [A28]",
+      "start": 41.9,
+      "end": 45.4,
+      "text": "うーん それはいよ"
+    },
+    {
+      "trackId": "cd1-track29",
+      "trackLabel": "表現例 [A29]",
+      "start": 0.0,
+      "end": 2.64,
+      "text": "れい 1"
+    },
+    {
+      "trackId": "cd1-track29",
+      "trackLabel": "表現例 [A29]",
+      "start": 2.64,
+      "end": 6.04,
+      "text": "防止 持っていった方がいいかな"
+    },
+    {
+      "trackId": "cd1-track29",
+      "trackLabel": "表現例 [A29]",
+      "start": 6.04,
+      "end": 9.08,
+      "text": "必要ないんじゃない"
+    },
+    {
+      "trackId": "cd1-track29",
+      "trackLabel": "表現例 [A29]",
+      "start": 9.08,
+      "end": 11.36,
+      "text": "れい 2"
+    },
+    {
+      "trackId": "cd1-track29",
+      "trackLabel": "表現例 [A29]",
+      "start": 11.36,
+      "end": 14.0,
+      "text": "これあっちに持っていこうか"
+    },
+    {
+      "trackId": "cd1-track29",
+      "trackLabel": "表現例 [A29]",
+      "start": 14.0,
+      "end": 17.52,
+      "text": "置いといていいんじゃないかな"
+    },
+    {
+      "trackId": "cd1-track29",
+      "trackLabel": "表現例 [A29]",
+      "start": 17.52,
+      "end": 19.92,
+      "text": "れい 3"
+    },
+    {
+      "trackId": "cd1-track29",
+      "trackLabel": "表現例 [A29]",
+      "start": 19.92,
+      "end": 23.24,
+      "text": "チケット忘れてるんじゃないの?"
+    },
+    {
+      "trackId": "cd1-track29",
+      "trackLabel": "表現例 [A29]",
+      "start": 23.24,
+      "end": 27.24,
+      "text": "本当だ 持っていかなきゃ"
+    },
+    {
+      "trackId": "cd1-track30",
+      "trackLabel": "例題1-2 [A30]",
+      "start": 0.0,
+      "end": 7.0,
+      "text": "例題。1の2。1。予約しておきましょうか。"
+    },
+    {
+      "trackId": "cd1-track30",
+      "trackLabel": "例題1-2 [A30]",
+      "start": 7.0,
+      "end": 11.0,
+      "text": "しなくてもいいんじゃないかな。"
+    },
+    {
+      "trackId": "cd1-track30",
+      "trackLabel": "例題1-2 [A30]",
+      "start": 11.0,
+      "end": 15.0,
+      "text": "2。田中さんにも電話しておく。"
+    },
+    {
+      "trackId": "cd1-track30",
+      "trackLabel": "例題1-2 [A30]",
+      "start": 15.0,
+      "end": 20.0,
+      "text": "はぁ、そうした方がいいんじゃない。"
+    },
+    {
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "start": 0.0,
+      "end": 3.36,
+      "text": "練習1の2"
+    },
+    {
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "start": 3.36,
+      "end": 4.88,
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "start": 4.88,
+      "end": 7.72,
+      "text": "これ、洗った方がいいかな"
+    },
+    {
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "start": 7.72,
+      "end": 10.88,
+      "text": "あ、そうした方がいいんじゃない?"
+    },
+    {
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "start": 13.04,
+      "end": 14.36,
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "start": 14.36,
+      "end": 17.92,
+      "text": "田中さんにネクタイプレゼントしない?"
+    },
+    {
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "start": 17.92,
+      "end": 21.0,
+      "text": "別のものの方がいいんじゃない?"
+    },
+    {
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "start": 23.2,
+      "end": 24.6,
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "start": 24.6,
+      "end": 28.0,
+      "text": "これ、どこかに運んだ方がいいよね"
+    },
+    {
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "start": 28.2,
+      "end": 31.72,
+      "text": "ああ、それは大丈夫なんじゃない?"
+    },
+    {
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "start": 33.76,
+      "end": 35.24,
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "start": 35.24,
+      "end": 38.84,
+      "text": "明日のパーティー、佐藤さんも誘ってみる?"
+    },
+    {
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "start": 38.84,
+      "end": 42.44,
+      "text": "ああ、誘ってみたらいいんじゃないかな"
+    },
+    {
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "start": 44.64,
+      "end": 46.0,
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "start": 46.0,
+      "end": 48.0,
+      "text": "エアコン、付けようか"
+    },
+    {
+      "trackId": "cd1-track31",
+      "trackLabel": "練習1-2 [A31]",
+      "start": 48.0,
+      "end": 51.0,
+      "text": "そんなに寒くないんじゃないの?"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 0.0,
+      "end": 4.84,
+      "text": "ステップアップ問題 例題1"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 4.84,
+      "end": 14.44,
+      "text": "男の人と女の人が 会社でスポーツ大会の商品について話しています"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 14.44,
+      "end": 19.76,
+      "text": "女の人は商品を何にしますか"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 19.76,
+      "end": 24.12,
+      "text": "スポーツ大会の商品のかかり 君だったよね"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 24.12,
+      "end": 27.16,
+      "text": "優勝チームの商品も決めた"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 27.16,
+      "end": 31.5,
+      "text": "うん 何がいいかよくわからなくて"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 31.5,
+      "end": 34.2,
+      "text": "ね お金はどうかな"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 34.2,
+      "end": 36.88,
+      "text": "それはつまらないんじゃないの"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 36.88,
+      "end": 40.68,
+      "text": "それなら 年をかードか何かの方がいいと思うけど"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 40.68,
+      "end": 45.92,
+      "text": "うん 今 みんなあまり本読まないでしょ"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 45.92,
+      "end": 51.4,
+      "text": "そうだなぁ 去年はタオルとお茶だったよね"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 51.4,
+      "end": 54.92,
+      "text": "じゃあ 去年と同じにしようかな"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 54.92,
+      "end": 59.56,
+      "text": "それなら 飲み物はお茶よりビールのほうがいいな"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 59.56,
+      "end": 61.36,
+      "text": "コーヒーでもいいし"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 61.36,
+      "end": 64.6,
+      "text": "ビールは飲まない人もいるんじゃない"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 64.6,
+      "end": 68.6,
+      "text": "でも お茶よりはコーヒーがいいかもね"
+    },
+    {
+      "trackId": "cd1-track32",
+      "trackLabel": "例題1 [A32]",
+      "start": 68.6,
+      "end": 69.6,
+      "text": "じゃあ そうしよう"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 0.0,
+      "end": 6.0,
+      "text": "ステップアップ問題 1"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 6.0,
+      "end": 7.5,
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 7.5,
+      "end": 14.4,
+      "text": "女の人と男の人が家で旅行の準備をしています"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 14.4,
+      "end": 20.4,
+      "text": "女の人はこの後何をかばんに入れますか"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 20.4,
+      "end": 23.56,
+      "text": "久しぶりの力を楽しみね"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 23.56,
+      "end": 25.76,
+      "text": "ね カメラは?"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 25.76,
+      "end": 28.2,
+      "text": "もうかばんに入ってるよ"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 28.2,
+      "end": 33.0,
+      "text": "だけど電値がまだだから後で忘れずに入れないと"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 33.0,
+      "end": 37.6,
+      "text": "あ 私の引き出しにあるから入れておくね"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 37.6,
+      "end": 40.44,
+      "text": "あ 水着も入れなくちゃ"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 40.44,
+      "end": 42.84,
+      "text": "僕もさっき入れたところ"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 42.84,
+      "end": 45.88,
+      "text": "あとは気が入れないとな"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 45.88,
+      "end": 48.48,
+      "text": "私の話入れたんだけど"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 48.48,
+      "end": 52.64,
+      "text": "それから防止も忘れない方がいいよ"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 52.64,
+      "end": 56.04,
+      "text": "私は一番最初に入れたんだ"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 56.04,
+      "end": 59.24,
+      "text": "あ ビデオ忘れてた"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 59.24,
+      "end": 62.72,
+      "text": "カメラがあるからそれはいいんじゃない"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 62.72,
+      "end": 65.8,
+      "text": "それに水の中じゃ使えないよ"
+    },
+    {
+      "trackId": "cd1-track33",
+      "trackLabel": "練習1 (1) [A33]",
+      "start": 65.8,
+      "end": 68.8,
+      "text": "あ そうだね"
+    },
+    {
+      "trackId": "cd1-track34",
+      "trackLabel": "練習1 (2) [A34]",
+      "start": 0.0,
+      "end": 4.0,
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track34",
+      "trackLabel": "練習1 (2) [A34]",
+      "start": 4.0,
+      "end": 10.46,
+      "text": "男の学生と先生が発表の準備をしています"
+    },
+    {
+      "trackId": "cd1-track34",
+      "trackLabel": "練習1 (2) [A34]",
+      "start": 10.46,
+      "end": 16.16,
+      "text": "男の学生はどのように作業を並べますか"
+    },
+    {
+      "trackId": "cd1-track34",
+      "trackLabel": "練習1 (2) [A34]",
+      "start": 16.16,
+      "end": 18.7,
+      "text": "発表の時の責難ですけど"
+    },
+    {
+      "trackId": "cd1-track34",
+      "trackLabel": "練習1 (2) [A34]",
+      "start": 18.7,
+      "end": 20.72,
+      "text": "授業の時と同じように"
+    },
+    {
+      "trackId": "cd1-track34",
+      "trackLabel": "練習1 (2) [A34]",
+      "start": 20.72,
+      "end": 23.84,
+      "text": "横に3列並べておいていいでしょうか"
+    },
+    {
+      "trackId": "cd1-track34",
+      "trackLabel": "練習1 (2) [A34]",
+      "start": 23.84,
+      "end": 26.9,
+      "text": "そうですね"
+    },
+    {
+      "trackId": "cd1-track34",
+      "trackLabel": "練習1 (2) [A34]",
+      "start": 26.9,
+      "end": 32.88,
+      "text": "後で話し合いがあるので横じゃない方がいいかもしれませんね"
+    },
+    {
+      "trackId": "cd1-track34",
+      "trackLabel": "練習1 (2) [A34]",
+      "start": 32.88,
+      "end": 36.28,
+      "text": "前の時は視覚にならべたんですけど"
+    },
+    {
+      "trackId": "cd1-track34",
+      "trackLabel": "練習1 (2) [A34]",
+      "start": 36.28,
+      "end": 38.9,
+      "text": "角の人が身にくそうだったので"
+    },
+    {
+      "trackId": "cd1-track34",
+      "trackLabel": "練習1 (2) [A34]",
+      "start": 38.9,
+      "end": 42.18,
+      "text": "今回は丸にしておきますか"
+    },
+    {
+      "trackId": "cd1-track34",
+      "trackLabel": "練習1 (2) [A34]",
+      "start": 42.18,
+      "end": 48.0,
+      "text": "そうすると発表する人の方を身にくい人がいるんじゃないかと思いますが"
+    },
+    {
+      "trackId": "cd1-track34",
+      "trackLabel": "練習1 (2) [A34]",
+      "start": 48.0,
+      "end": 49.62,
+      "text": "そうですね"
+    },
+    {
+      "trackId": "cd1-track34",
+      "trackLabel": "練習1 (2) [A34]",
+      "start": 49.62,
+      "end": 53.62,
+      "text": "じゃあ前の方だけ並べないでおきましょう"
+    },
+    {
+      "trackId": "cd1-track34",
+      "trackLabel": "練習1 (2) [A34]",
+      "start": 53.62,
+      "end": 57.2,
+      "text": "わたりました"
+    },
+    {
+      "trackId": "cd1-track35",
+      "trackLabel": "練習1 (3) [A35]",
+      "start": 0.0,
+      "end": 4.0,
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track35",
+      "trackLabel": "練習1 (3) [A35]",
+      "start": 4.0,
+      "end": 12.0,
+      "text": "男の人と女の人が、バーベキューの準備について話しています。"
+    },
+    {
+      "trackId": "cd1-track35",
+      "trackLabel": "練習1 (3) [A35]",
+      "start": 12.0,
+      "end": 16.5,
+      "text": "男の人は何を準備しますか?"
+    },
+    {
+      "trackId": "cd1-track35",
+      "trackLabel": "練習1 (3) [A35]",
+      "start": 16.5,
+      "end": 20.0,
+      "text": "そろそろバーベキューの準備考えないといけませんね。"
+    },
+    {
+      "trackId": "cd1-track35",
+      "trackLabel": "練習1 (3) [A35]",
+      "start": 20.0,
+      "end": 24.0,
+      "text": "そうですね。まず、道具を借りないと、"
+    },
+    {
+      "trackId": "cd1-track35",
+      "trackLabel": "練習1 (3) [A35]",
+      "start": 24.0,
+      "end": 28.5,
+      "text": "明日バーベキュー上に電話して頼んでおきましょうか。"
+    },
+    {
+      "trackId": "cd1-track35",
+      "trackLabel": "練習1 (3) [A35]",
+      "start": 28.5,
+      "end": 34.0,
+      "text": "あ、うちに大勢で使えるのがあるんです。古いので良かったら。"
+    },
+    {
+      "trackId": "cd1-track35",
+      "trackLabel": "練習1 (3) [A35]",
+      "start": 34.0,
+      "end": 37.0,
+      "text": "じゃあお願いしてもいいですか?"
+    },
+    {
+      "trackId": "cd1-track35",
+      "trackLabel": "練習1 (3) [A35]",
+      "start": 37.0,
+      "end": 40.3,
+      "text": "それからコップやお皿は?"
+    },
+    {
+      "trackId": "cd1-track35",
+      "trackLabel": "練習1 (3) [A35]",
+      "start": 40.3,
+      "end": 44.3,
+      "text": "あ、それもキャンプ用のがありますよ。"
+    },
+    {
+      "trackId": "cd1-track35",
+      "trackLabel": "練習1 (3) [A35]",
+      "start": 44.3,
+      "end": 47.3,
+      "text": "でも何人来るんでしょうか?"
+    },
+    {
+      "trackId": "cd1-track35",
+      "trackLabel": "練習1 (3) [A35]",
+      "start": 47.3,
+      "end": 50.3,
+      "text": "全部で20人くらいです。"
+    },
+    {
+      "trackId": "cd1-track35",
+      "trackLabel": "練習1 (3) [A35]",
+      "start": 50.3,
+      "end": 53.7,
+      "text": "それじゃあ全然足りないなぁ。"
+    },
+    {
+      "trackId": "cd1-track35",
+      "trackLabel": "練習1 (3) [A35]",
+      "start": 53.8,
+      "end": 59.7,
+      "text": "あらうのも大変なので、髪皿と髪コップにしませんか?"
+    },
+    {
+      "trackId": "cd1-track35",
+      "trackLabel": "練習1 (3) [A35]",
+      "start": 59.7,
+      "end": 65.7,
+      "text": "食べ物と飲み物を買う時についてに用意しますね。"
+    },
+    {
+      "trackId": "cd1-track36",
+      "trackLabel": "練習1 (4) [A36]",
+      "start": 0.0,
+      "end": 17.76,
+      "text": "4.先生が学生に明日の工場見学について話しています 学生は明日何を持っていかなければなりませんか"
+    },
+    {
+      "trackId": "cd1-track36",
+      "trackLabel": "練習1 (4) [A36]",
+      "start": 17.76,
+      "end": 31.36,
+      "text": "えー明日の自動車工場の見学ですが工場の人にインタビューをして後でまとめます 自分たちで考えた質問の紙を忘れないようにしてください"
+    },
+    {
+      "trackId": "cd1-track36",
+      "trackLabel": "練習1 (4) [A36]",
+      "start": 31.36,
+      "end": 39.64,
+      "text": "もちろんペンもね それからおかしや飲み物などを持っていこうと思っているかもしれませんが"
+    },
+    {
+      "trackId": "cd1-track36",
+      "trackLabel": "練習1 (4) [A36]",
+      "start": 39.64,
+      "end": 47.24,
+      "text": "工場の中では食べたり飲んだりできません 食べられるのはバスの中だけなので"
+    },
+    {
+      "trackId": "cd1-track36",
+      "trackLabel": "練習1 (4) [A36]",
+      "start": 47.24,
+      "end": 57.6,
+      "text": "持っていきたい人はカバンに入れてバスの中に置いておいてください オベントお茶は学校で用意します"
+    },
+    {
+      "trackId": "cd1-track37",
+      "trackLabel": "練習1 (5) [A37]",
+      "start": 0.0,
+      "end": 3.9,
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track37",
+      "trackLabel": "練習1 (5) [A37]",
+      "start": 3.9,
+      "end": 10.08,
+      "text": "音線の受け付けで男の人がかかりの人と話しています"
+    },
+    {
+      "trackId": "cd1-track37",
+      "trackLabel": "練習1 (5) [A37]",
+      "start": 10.08,
+      "end": 15.24,
+      "text": "男の人は受け付けでいくら払いますか"
+    },
+    {
+      "trackId": "cd1-track37",
+      "trackLabel": "練習1 (5) [A37]",
+      "start": 15.24,
+      "end": 18.78,
+      "text": "すみません 男の一人お願いします"
+    },
+    {
+      "trackId": "cd1-track37",
+      "trackLabel": "練習1 (5) [A37]",
+      "start": 18.78,
+      "end": 21.54,
+      "text": "はい 700円です"
+    },
+    {
+      "trackId": "cd1-track37",
+      "trackLabel": "練習1 (5) [A37]",
+      "start": 21.54,
+      "end": 25.24,
+      "text": "えーっと学生さんですか"
+    },
+    {
+      "trackId": "cd1-track37",
+      "trackLabel": "練習1 (5) [A37]",
+      "start": 25.24,
+      "end": 29.12,
+      "text": "学生賞をお持ちでしたら500円になりますが"
+    },
+    {
+      "trackId": "cd1-track37",
+      "trackLabel": "練習1 (5) [A37]",
+      "start": 29.12,
+      "end": 32.2,
+      "text": "ああ 今日は持ってきてないんです"
+    },
+    {
+      "trackId": "cd1-track37",
+      "trackLabel": "練習1 (5) [A37]",
+      "start": 32.2,
+      "end": 39.06,
+      "text": "そうですか それからタオルが必要でしたら100円お願いします"
+    },
+    {
+      "trackId": "cd1-track37",
+      "trackLabel": "練習1 (5) [A37]",
+      "start": 39.06,
+      "end": 40.52,
+      "text": "タオルはあります"
+    },
+    {
+      "trackId": "cd1-track37",
+      "trackLabel": "練習1 (5) [A37]",
+      "start": 40.52,
+      "end": 49.36,
+      "text": "あ そうですか それと中に入ってからロッカーを使うときは100円を入れてください"
+    },
+    {
+      "trackId": "cd1-track37",
+      "trackLabel": "練習1 (5) [A37]",
+      "start": 49.36,
+      "end": 54.2,
+      "text": "使った後で戻ってきますので忘れずにお取りください"
+    },
+    {
+      "trackId": "cd1-track37",
+      "trackLabel": "練習1 (5) [A37]",
+      "start": 54.2,
+      "end": 56.8,
+      "text": "わかりました"
+    },
+    {
+      "trackId": "cd1-track38",
+      "trackLabel": "例題2 [A38]",
+      "start": 0.0,
+      "end": 2.46,
+      "text": "例題2"
+    },
+    {
+      "trackId": "cd1-track38",
+      "trackLabel": "例題2 [A38]",
+      "start": 2.46,
+      "end": 11.0,
+      "text": "女の人と男の人が、新商品の発表会の準備をしながら話しています。"
+    },
+    {
+      "trackId": "cd1-track38",
+      "trackLabel": "例題2 [A38]",
+      "start": 11.0,
+      "end": 17.34,
+      "text": "女の人は、この後すぐ何をしなければなりませんか?"
+    },
+    {
+      "trackId": "cd1-track38",
+      "trackLabel": "例題2 [A38]",
+      "start": 17.34,
+      "end": 24.0,
+      "text": "あの、マイクは発表者様と司会者様の日本でよろしいでしょうか?"
+    },
+    {
+      "trackId": "cd1-track38",
+      "trackLabel": "例題2 [A38]",
+      "start": 24.0,
+      "end": 29.4,
+      "text": "ああ、質問者様にもう一本、後ろに用意しておいたほうがいいね。"
+    },
+    {
+      "trackId": "cd1-track38",
+      "trackLabel": "例題2 [A38]",
+      "start": 29.4,
+      "end": 33.2,
+      "text": "わかりました。じゃあ、後で借りてきます。"
+    },
+    {
+      "trackId": "cd1-track38",
+      "trackLabel": "例題2 [A38]",
+      "start": 33.2,
+      "end": 43.6,
+      "text": "えーっと、もう商品は見ていただけるようにおいてあるし、あ、なふだはどうなってる?先に並べておかないと。"
+    },
+    {
+      "trackId": "cd1-track38",
+      "trackLabel": "例題2 [A38]",
+      "start": 43.6,
+      "end": 47.44,
+      "text": "あ、ここにあるので、今やります。"
+    },
+    {
+      "trackId": "cd1-track38",
+      "trackLabel": "例題2 [A38]",
+      "start": 47.44,
+      "end": 53.3,
+      "text": "それから、資料はもうまとめて受け付けのところにおいておきました。"
+    },
+    {
+      "trackId": "cd1-track38",
+      "trackLabel": "例題2 [A38]",
+      "start": 53.4,
+      "end": 55.6,
+      "text": "そう、ありがとう。"
+    },
+    {
+      "trackId": "cd1-track38",
+      "trackLabel": "例題2 [A38]",
+      "start": 55.6,
+      "end": 62.1,
+      "text": "じゃあ、僕はちょっと新聞社の人に電話してくるよ。"
+    },
+    {
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "start": 0.0,
+      "end": 2.0,
+      "text": "練習2"
+    },
+    {
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "start": 2.6,
+      "end": 3.6,
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "start": 4.1,
+      "end": 7.0,
+      "text": "男の人と女の人が"
+    },
+    {
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "start": 7.3,
+      "end": 10.1,
+      "text": "パーティーの後で話しています"
+    },
+    {
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "start": 10.9,
+      "end": 15.3,
+      "text": "男の人はこの後まず何をしますか?"
+    },
+    {
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "start": 16.2,
+      "end": 19.1,
+      "text": "今日のパーティー楽しかったですね"
+    },
+    {
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "start": 19.4,
+      "end": 22.4,
+      "text": "さて、後かたずけしましょうか"
+    },
+    {
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "start": 22.8,
+      "end": 25.5,
+      "text": "僕、いっすかたずけますね"
+    },
+    {
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "start": 25.9,
+      "end": 28.4,
+      "text": "私、お皿を洗いますから"
+    },
+    {
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "start": 28.8,
+      "end": 33.0,
+      "text": "先に使ったお皿を運ぶの手伝ってくれますか?"
+    },
+    {
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "start": 33.7,
+      "end": 36.3,
+      "text": "その後でテーブルも含ないと"
+    },
+    {
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "start": 36.6,
+      "end": 37.6,
+      "text": "わかりました"
+    },
+    {
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "start": 38.3,
+      "end": 39.9,
+      "text": "ゴミはどうしましょうか"
+    },
+    {
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "start": 40.5,
+      "end": 43.5,
+      "text": "カンやペットボトルを分けないといけないので"
+    },
+    {
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "start": 43.8,
+      "end": 47.0,
+      "text": "最後に2人で分けて外に運びましょう"
+    },
+    {
+      "trackId": "cd1-track39",
+      "trackLabel": "練習2 (1) [A39]",
+      "start": 47.4,
+      "end": 49.4,
+      "text": "じゃあ早速やりましょう"
+    },
+    {
+      "trackId": "cd1-track40",
+      "trackLabel": "練習2 (2) [A40]",
+      "start": 0.0,
+      "end": 6.68,
+      "text": "に 会社で男の人と女の人が話しています"
+    },
+    {
+      "trackId": "cd1-track40",
+      "trackLabel": "練習2 (2) [A40]",
+      "start": 6.68,
+      "end": 14.28,
+      "text": "女の人はこの後すぐ何をしますか じゃこれからおかだ電気に行って"
+    },
+    {
+      "trackId": "cd1-track40",
+      "trackLabel": "練習2 (2) [A40]",
+      "start": 14.28,
+      "end": 18.36,
+      "text": "きます 三次ごろには戻ると思うけど"
+    },
+    {
+      "trackId": "cd1-track40",
+      "trackLabel": "練習2 (2) [A40]",
+      "start": 18.36,
+      "end": 24.48,
+      "text": "もしいない間に今度の仕事のことで 松下さんがいらっしゃったらこの処理"
+    },
+    {
+      "trackId": "cd1-track40",
+      "trackLabel": "練習2 (2) [A40]",
+      "start": 24.48,
+      "end": 29.64,
+      "text": "私手をいてもらえるかな 松下さんには連絡してあるから"
+    },
+    {
+      "trackId": "cd1-track40",
+      "trackLabel": "練習2 (2) [A40]",
+      "start": 29.64,
+      "end": 33.92,
+      "text": "はいこれをお私するだけでいいんですね"
+    },
+    {
+      "trackId": "cd1-track40",
+      "trackLabel": "練習2 (2) [A40]",
+      "start": 33.92,
+      "end": 38.68,
+      "text": "あ これコピーとっておくの忘れてた"
+    },
+    {
+      "trackId": "cd1-track40",
+      "trackLabel": "練習2 (2) [A40]",
+      "start": 38.68,
+      "end": 44.44,
+      "text": "悪いんだけどすぐに一部とって 僕の机の上においておいてくれる"
+    },
+    {
+      "trackId": "cd1-track40",
+      "trackLabel": "練習2 (2) [A40]",
+      "start": 44.44,
+      "end": 50.04,
+      "text": "分かりました 来週の会議の資料は今週中に頼むよ"
+    },
+    {
+      "trackId": "cd1-track40",
+      "trackLabel": "練習2 (2) [A40]",
+      "start": 50.04,
+      "end": 52.04,
+      "text": "はい"
+    },
+    {
+      "trackId": "cd1-track41",
+      "trackLabel": "練習2 (3) [A41]",
+      "start": 0.0,
+      "end": 2.0,
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track41",
+      "trackLabel": "練習2 (3) [A41]",
+      "start": 2.0,
+      "end": 8.0,
+      "text": "女の人がカードの作り方について説明しています"
+    },
+    {
+      "trackId": "cd1-track41",
+      "trackLabel": "練習2 (3) [A41]",
+      "start": 8.0,
+      "end": 14.0,
+      "text": "このグループの人たちはこれからまず何をしますか?"
+    },
+    {
+      "trackId": "cd1-track41",
+      "trackLabel": "練習2 (3) [A41]",
+      "start": 14.0,
+      "end": 21.0,
+      "text": "今日は単純ビア記念ビなどに送るカードを作りたいと思います"
+    },
+    {
+      "trackId": "cd1-track41",
+      "trackLabel": "練習2 (3) [A41]",
+      "start": 21.0,
+      "end": 29.0,
+      "text": "カードの色は赤、白、黒、緑、アウト、黄色の六色あります"
+    },
+    {
+      "trackId": "cd1-track41",
+      "trackLabel": "練習2 (3) [A41]",
+      "start": 31.0,
+      "end": 40.0,
+      "text": "このカードに貼る写真や絵を持ってきてくださいとお願いしますが、皆さんお持ちですか?"
+    },
+    {
+      "trackId": "cd1-track41",
+      "trackLabel": "練習2 (3) [A41]",
+      "start": 40.0,
+      "end": 48.0,
+      "text": "では最初にその写真や絵に合う色のカードを一枚選んでください"
+    },
+    {
+      "trackId": "cd1-track41",
+      "trackLabel": "練習2 (3) [A41]",
+      "start": 48.0,
+      "end": 52.0,
+      "text": "それに写真や絵を張りましょう"
+    },
+    {
+      "trackId": "cd1-track41",
+      "trackLabel": "練習2 (3) [A41]",
+      "start": 52.0,
+      "end": 59.0,
+      "text": "それからこちらのペンを使って挨拶の言葉を書きます"
+    },
+    {
+      "trackId": "cd1-track41",
+      "trackLabel": "練習2 (3) [A41]",
+      "start": 59.0,
+      "end": 66.0,
+      "text": "最後にこちらのテープやシール、スタンプなどで飾りをつけます"
+    },
+    {
+      "trackId": "cd1-track41",
+      "trackLabel": "練習2 (3) [A41]",
+      "start": 66.0,
+      "end": 70.0,
+      "text": "どれでも好きなのを使ってください"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 0.0,
+      "end": 1.48,
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 1.48,
+      "end": 5.68,
+      "text": "うちで、おっととつまが話しています。"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 5.68,
+      "end": 10.68,
+      "text": "おっとは、これからまず何をしますか?"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 10.68,
+      "end": 14.56,
+      "text": "ちょっと、コンビニに行って、たばこ買ってくるよ。"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 14.56,
+      "end": 18.92,
+      "text": "あ、その前に、みけにご飯やってくれる?"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 18.92,
+      "end": 23.36,
+      "text": "さっきからお腹すかせてニャニャー泣いてるから。"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 23.36,
+      "end": 26.2,
+      "text": "ごち、ちょっと手が離せないんだ。"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 26.2,
+      "end": 28.24,
+      "text": "うん、わかった。"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 28.44,
+      "end": 30.24,
+      "text": "あ、いけない。"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 30.24,
+      "end": 32.64,
+      "text": "少有なくなっちゃった。"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 32.64,
+      "end": 34.64,
+      "text": "コンビニで買ってこようか?"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 34.64,
+      "end": 40.0,
+      "text": "うん、いつも使ってるのはコンビニにはないんだよね。"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 40.0,
+      "end": 43.44,
+      "text": "じゃあ、後で買い物に行くからいいわ。"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 43.44,
+      "end": 46.68,
+      "text": "あ、そうそう。コンビニに行くなら、"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 46.68,
+      "end": 49.84,
+      "text": "この荷物出してきて欲しいんだけど、"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 49.84,
+      "end": 53.04,
+      "text": "キムラさんに本送り約束したの。"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 53.04,
+      "end": 55.12,
+      "text": "え、コンビニから?"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 55.12,
+      "end": 57.6,
+      "text": "そう、たくはいびんでね。"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 57.6,
+      "end": 59.2,
+      "text": "重症はこれ。"
+    },
+    {
+      "trackId": "cd1-track42",
+      "trackLabel": "練習2 (4) [A42]",
+      "start": 59.2,
+      "end": 62.2,
+      "text": "うん。じゃあ、行ってきます。"
+    },
+    {
+      "trackId": "cd1-track43",
+      "trackLabel": "練習2 (5) [A43]",
+      "start": 0.0,
+      "end": 5.72,
+      "text": "5 学校で先生が話しています"
+    },
+    {
+      "trackId": "cd1-track43",
+      "trackLabel": "練習2 (5) [A43]",
+      "start": 5.72,
+      "end": 11.36,
+      "text": "女の学生はまず何をしなければなりませんか"
+    },
+    {
+      "trackId": "cd1-track43",
+      "trackLabel": "練習2 (5) [A43]",
+      "start": 11.36,
+      "end": 18.6,
+      "text": "えーっと 先週は自分の正確について説明する作文を書きましたね"
+    },
+    {
+      "trackId": "cd1-track43",
+      "trackLabel": "練習2 (5) [A43]",
+      "start": 18.6,
+      "end": 21.66,
+      "text": "今日はまずそれを直しましょう"
+    },
+    {
+      "trackId": "cd1-track43",
+      "trackLabel": "練習2 (5) [A43]",
+      "start": 21.66,
+      "end": 26.74,
+      "text": "その後みんなの前で一人ずつ発表してもらいます"
+    },
+    {
+      "trackId": "cd1-track43",
+      "trackLabel": "練習2 (5) [A43]",
+      "start": 26.74,
+      "end": 32.04,
+      "text": "発表を聞く人は今から配るこの髪に感想を書いてください"
+    },
+    {
+      "trackId": "cd1-track43",
+      "trackLabel": "練習2 (5) [A43]",
+      "start": 32.04,
+      "end": 37.12,
+      "text": "先生 私 先週休んでしまったんですが"
+    },
+    {
+      "trackId": "cd1-track43",
+      "trackLabel": "練習2 (5) [A43]",
+      "start": 37.12,
+      "end": 41.68,
+      "text": "じゃあ 今から発表のメモを作ってください"
+    },
+    {
+      "trackId": "cd1-track43",
+      "trackLabel": "練習2 (5) [A43]",
+      "start": 41.68,
+      "end": 48.28,
+      "text": "自分の正確で紹介したいところ一つとそれがよくわかる例を書きましょう"
+    },
+    {
+      "trackId": "cd1-track43",
+      "trackLabel": "練習2 (5) [A43]",
+      "start": 48.28,
+      "end": 50.72,
+      "text": "アイディアだけでいいです"
+    },
+    {
+      "trackId": "cd1-track43",
+      "trackLabel": "練習2 (5) [A43]",
+      "start": 50.72,
+      "end": 53.28,
+      "text": "それを見ながら発表してください"
+    },
+    {
+      "trackId": "cd1-track43",
+      "trackLabel": "練習2 (5) [A43]",
+      "start": 53.28,
+      "end": 55.42,
+      "text": "わかりました"
+    },
+    {
+      "trackId": "cd1-track44",
+      "trackLabel": "確認問題 説明 [A44]",
+      "start": 0.0,
+      "end": 2.0,
+      "text": "確認問題"
+    },
+    {
+      "trackId": "cd1-track44",
+      "trackLabel": "確認問題 説明 [A44]",
+      "start": 2.0,
+      "end": 6.0,
+      "text": "まず、質問を聞いてください"
+    },
+    {
+      "trackId": "cd1-track44",
+      "trackLabel": "確認問題 説明 [A44]",
+      "start": 6.0,
+      "end": 11.0,
+      "text": "それから話を聞いて、1から4の中から"
+    },
+    {
+      "trackId": "cd1-track44",
+      "trackLabel": "確認問題 説明 [A44]",
+      "start": 11.0,
+      "end": 15.0,
+      "text": "最も良いものを一つ選んでください"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 0.0,
+      "end": 4.0,
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 4.0,
+      "end": 7.8,
+      "text": "会社で、女の人と男の人が、"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 7.8,
+      "end": 13.2,
+      "text": "自信が起きた時のための準備について話しています。"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 13.2,
+      "end": 18.8,
+      "text": "女の人は、この後、何を注文しますか?"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 18.8,
+      "end": 24.7,
+      "text": "あの、自信が起きた時のために、用意しておくもののことなんですけど。"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 24.7,
+      "end": 29.6,
+      "text": "ああ、今週注文しなくちゃいけないんだったね。"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 29.7,
+      "end": 34.5,
+      "text": "えーっと、これが今あるもののリストだね。"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 34.5,
+      "end": 37.9,
+      "text": "食料と水はそろそろ古いんじゃないかな。"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 37.9,
+      "end": 40.9,
+      "text": "じゃあ、新しいのが言いますね。"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 40.9,
+      "end": 42.5,
+      "text": "うん。"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 42.5,
+      "end": 46.8,
+      "text": "モーフや開中電灯はどのぐらいある?"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 46.8,
+      "end": 49.3,
+      "text": "5点ずつか。"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 49.3,
+      "end": 53.9,
+      "text": "モーフはもっとあったほうがいいから、あと10枚頼んでよ。"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 53.9,
+      "end": 56.7,
+      "text": "ラジオは3台しかないんですが。"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 56.8,
+      "end": 59.9,
+      "text": "まあ、それだけあればいいと思うよ。"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 59.9,
+      "end": 61.9,
+      "text": "わかりました。"
+    },
+    {
+      "trackId": "cd1-track45",
+      "trackLabel": "確認問題 1 [A45]",
+      "start": 64.7,
+      "end": 70.7,
+      "text": "女の人は、この後、何を注文しますか?"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 0.0,
+      "end": 3.9,
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 3.9,
+      "end": 6.9,
+      "text": "男の人と女の人が"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 6.9,
+      "end": 8.5,
+      "text": "市民会館で"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 8.5,
+      "end": 12.6,
+      "text": "絵本の勉強会の準備をしています"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 12.6,
+      "end": 17.3,
+      "text": "女の人はこれから何をしますか?"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 17.3,
+      "end": 19.6,
+      "text": "明日の親子絵本教室"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 19.6,
+      "end": 22.2,
+      "text": "よろしくお願いしますね"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 22.2,
+      "end": 25.7,
+      "text": "先生に頼まれた本はもう準備してある?"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 25.7,
+      "end": 32.2,
+      "text": "はい、先生から言われた本は年奏なあから借りて揃えてあります"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 32.2,
+      "end": 37.7,
+      "text": "その他の本も何かこちらで用意しておいた方がいいでしょうか?"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 37.7,
+      "end": 41.7,
+      "text": "いや、言われた本だけでいいんじゃないかな"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 41.7,
+      "end": 46.7,
+      "text": "先生も、なんさつか持ってきてくださるらしいし"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 46.7,
+      "end": 48.9,
+      "text": "あ、そうだ"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 48.9,
+      "end": 53.7,
+      "text": "後でもう一度聞きたい人のために、ビデオをとっておいたらいいね"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 53.7,
+      "end": 58.9,
+      "text": "でもそれ先生にお聞きしてから出ないと"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 58.9,
+      "end": 61.9,
+      "text": "ビデオの準備はすぐできるんですけど"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 61.9,
+      "end": 64.9,
+      "text": "あ、そうだね"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 64.9,
+      "end": 68.4,
+      "text": "じゃあ先生がいらっしゃったら聞いてみて"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 68.4,
+      "end": 71.3,
+      "text": "オーケーだったらビデオを準備して"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 71.3,
+      "end": 75.8,
+      "text": "あの、当日では失礼じゃないでしょうか?"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 75.8,
+      "end": 78.3,
+      "text": "それもそうだね"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 78.3,
+      "end": 82.5,
+      "text": "じゃあ悪いけど先生に電話してみて"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 82.6,
+      "end": 87.1,
+      "text": "会場の準備は朝9時からで十分だね"
+    },
+    {
+      "trackId": "cd1-track46",
+      "trackLabel": "確認問題 2 [A46]",
+      "start": 90.1,
+      "end": 95.1,
+      "text": "女の人はこれから何をしますか?"
+    },
+    {
+      "trackId": "cd1-track47",
+      "trackLabel": "確認問題 3 [A47]",
+      "start": 0.0,
+      "end": 4.0,
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track47",
+      "trackLabel": "確認問題 3 [A47]",
+      "start": 4.0,
+      "end": 13.04,
+      "text": "女の人が公子に説明しています 公子は部屋に来て最初に何をしなければ"
+    },
+    {
+      "trackId": "cd1-track47",
+      "trackLabel": "確認問題 3 [A47]",
+      "start": 13.04,
+      "end": 15.36,
+      "text": "なりませんか"
+    },
+    {
+      "trackId": "cd1-track47",
+      "trackLabel": "確認問題 3 [A47]",
+      "start": 15.36,
+      "end": 21.84,
+      "text": "この旅はカルチャーセンターの公子 をお引き受けくださいましてありがとうございます"
+    },
+    {
+      "trackId": "cd1-track47",
+      "trackLabel": "確認問題 3 [A47]",
+      "start": 21.84,
+      "end": 25.76,
+      "text": "半年間よろしくお願いいたします"
+    },
+    {
+      "trackId": "cd1-track47",
+      "trackLabel": "確認問題 3 [A47]",
+      "start": 25.76,
+      "end": 29.4,
+      "text": "こちらの部屋が公子室でございます"
+    },
+    {
+      "trackId": "cd1-track47",
+      "trackLabel": "確認問題 3 [A47]",
+      "start": 29.4,
+      "end": 34.04,
+      "text": "8時半に鍵を開けてエアコンを入れておきます"
+    },
+    {
+      "trackId": "cd1-track47",
+      "trackLabel": "確認問題 3 [A47]",
+      "start": 34.04,
+      "end": 39.92,
+      "text": "おいでになったらまずこちらのノートにサインをお願いします"
+    },
+    {
+      "trackId": "cd1-track47",
+      "trackLabel": "確認問題 3 [A47]",
+      "start": 39.92,
+      "end": 46.28,
+      "text": "あちらにコーヒーと新聞のコーナーがありますのでご自由にお伝えください"
+    },
+    {
+      "trackId": "cd1-track47",
+      "trackLabel": "確認問題 3 [A47]",
+      "start": 46.28,
+      "end": 52.44,
+      "text": "あそれからお昼ご飯ですが近くに食堂がありませんので"
+    },
+    {
+      "trackId": "cd1-track47",
+      "trackLabel": "確認問題 3 [A47]",
+      "start": 52.44,
+      "end": 60.44,
+      "text": "お弁当が必要な場合はあちらに書いてある電話番号に予約の電話をなさってください"
+    },
+    {
+      "trackId": "cd1-track47",
+      "trackLabel": "確認問題 3 [A47]",
+      "start": 60.44,
+      "end": 65.2,
+      "text": "12時にここに運んできてくれます"
+    },
+    {
+      "trackId": "cd1-track47",
+      "trackLabel": "確認問題 3 [A47]",
+      "start": 67.92,
+      "end": 75.08,
+      "text": "公子は部屋に来て最初に何をしなければなりませんか"
+    }
+  ]
+}

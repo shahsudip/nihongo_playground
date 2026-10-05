@@ -13,12 +13,15 @@
       "id": "hotspot-1",
       "trackId": "cd1-track02",
       "audioSrc": "/audio/shinkanzen_listening/CD1/02 Track 2.mp3",
-      "label": "例題2 [A-02]"
+      "label": "例題2 [A-02]",
+      "trackCode": "A-02"
     }
   ],
   "questions": [
     {
-      "questionText": "男の人はどうして飲み会に行けませんか。",
+      "label": "例題 2",
+      "trackCode": "A-02",
+      "questionText": "<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はどうして<ruby>飲<rt>の</rt></ruby>み<ruby>会<rt>かい</rt></ruby>に<ruby>行<rt>い</rt></ruby>けませんか。",
       "instruction": "この問題では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それから話を聞いて、問題用紙の１から４の中から、最もよいものを一つえらんでください。",
       "options": [
         "1. アルバイトがあるから",
@@ -30,60 +33,46 @@
         "index": 1,
         "text": "2. 子供の世話をするから"
       },
-      "explanation": "<b>【正解】2</b><br/>男の人が飲み会に行けない理由を、選択肢を手がかりに考えます。「アルバイト」は「いい（＝問題ない）」と言っているので違います。「子供」を「預かってほしいって頼まれ（た）」と言っているので、<b>2</b>が答えです。「友達の結婚式に行く」のは姉で、「いつもなら週末は休みなんだけど（＝今週は休みではない）」のは兄です。<br/>このように、話の中に出てくる選択肢と同じ言葉、または同じ意味の言葉に注意して、それについて話す人が言いたいこと（肯定的か否定的か）を考えます。",
-      "context": "女の人と男の人が話しています。"
+      "explanation": "<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>飲<rt>の</rt></ruby>み<ruby>会<rt>かい</rt></ruby>に<ruby>行<rt>い</rt></ruby>けない<ruby>理由<rt>りゆう</rt></ruby>を、<ruby>選択肢<rt>せんたくし</rt></ruby>を<ruby>手<rt>て</rt></ruby>がかりに<ruby>考<rt>かんが</rt></ruby>えます。「アルバイト」は「いい（＝<ruby>問題<rt>もんだい</rt></ruby>ない）」と<ruby>言<rt>い</rt></ruby>っているので<ruby>違<rt>ちが</rt></ruby>います。「<ruby>子供<rt>こども</rt></ruby>」を「<ruby>預<rt>あず</rt></ruby>かってほしいって<ruby>頼<rt>たの</rt></ruby>まれ（た）」と<ruby>言<rt>い</rt></ruby>っているので、<b>2</b>が<ruby>答<rt>こた</rt></ruby>えです。「<ruby>友達<rt>ともだち</rt></ruby>の<ruby>結婚式<rt>けっこんしき</rt></ruby>に<ruby>行<rt>い</rt></ruby>く」のは<ruby>姉<rt>あね</rt></ruby>で、「いつもなら<ruby>週末<rt>しゅうまつ</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みなんだけど（＝<ruby>今週<rt>こんしゅう</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みではない）」のは<ruby>兄<rt>あに</rt></ruby>です。<br/><br/>このように、<ruby>話<rt>はなし</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>出<rt>で</rt></ruby>てくる<ruby>選択肢<rt>せんたくし</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じ<ruby>言葉<rt>ことば</rt></ruby>、または<ruby>同<rt>おな</rt></ruby>じ<ruby>意味<rt>いみ</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>して、それについて<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>が<ruby>言<rt>い</rt></ruby>いたいこと（<ruby>肯定的<rt>こうていてき</rt></ruby>か<ruby>否定的<rt>ひていてき</rt></ruby>か）を<ruby>考<rt>かんが</rt></ruby>えます。",
+      "explanationEn": "Using the choices as hints for suggesting the reasons why the man cannot go to the drinking party should be considered. His「アルバイト (part-time job)」is not the answer, as he says「いい [=問題ない no problem]」. He then says「預かってほしいって頼まれ(た) (I have been asked to look after)」「子供(を) (my elder sister's child)」, thus the correct answer is 2. The person who「友達の結婚式に行く (is going to a friend's wedding party)」is his elder sister and「いつもなら週末は休みなんだけど (always has the weekend off, but... [=今週は休みではない this weekend is not off])」is his elder brother.<br/><br/>In this manner, attention will be focused on the same words being in the choices or the words that have the same meaning as the choices and one should consider what the person talking about this really wants to say (answering in the affirmative or negative)."
     }
   ],
   "transcript": [
     {
-      "time": 0,
-      "speaker": "指示",
-      "text": "例題2　この問題では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それから話を聞いて、問題用紙の１から４の中から、最もよいものを一つえらんでください。"
-    },
-    {
-      "time": 34,
       "speaker": "ナレーション",
-      "text": "女の人と男の人が話しています。男の人はどうして飲み会に行けませんか。"
+      "text": "<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>と<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>話<rt>はな</rt></ruby>しています。<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はどうして<ruby>飲<rt>の</rt></ruby>み<ruby>会<rt>かい</rt></ruby>に<ruby>行<rt>い</rt></ruby>けませんか。"
     },
     {
-      "time": 56,
       "speaker": "女",
-      "text": "渡辺君、あしたの飲み会、行く？"
+      "text": "<ruby>渡辺<rt>わたなべ</rt></ruby><ruby>君<rt>くん</rt></ruby>、あしたの<ruby>飲<rt>の</rt></ruby>み<ruby>会<rt>かい</rt></ruby>、<ruby>行<rt>い</rt></ruby>く？"
     },
     {
-      "time": 60,
       "speaker": "男",
-      "text": "あー、行こうと思っていたんだけど……。"
+      "text": "あー、<ruby>行<rt>い</rt></ruby>こうと<ruby>思<rt>おも</rt></ruby>っていたんだけど……。"
     },
     {
-      "time": 64,
       "speaker": "女",
-      "text": "あ、アルバイトの日か。"
+      "text": "あ、アルバイトの<ruby>日<rt>ひ</rt></ruby>か。"
     },
     {
-      "time": 67,
       "speaker": "男",
-      "text": "それは前から休みもらってたからいいんだけど。あしたはさ、姉の子供を預かってほしいって頼まれちゃってね。友達の結婚式に行くからって。"
+      "text": "それは<ruby>前<rt>まえ</rt></ruby>から<ruby>休<rt>やす</rt></ruby>みもらってたからいいんだけど。あしたはさ、<ruby>姉<rt>あね</rt></ruby>の<ruby>子供<rt>こども</rt></ruby>を<ruby>預<rt>あず</rt></ruby>かってほしいって<ruby>頼<rt>たの</rt></ruby>まれちゃってね。<ruby>友達<rt>ともだち</rt></ruby>の<ruby>結婚式<rt>けっこんしき</rt></ruby>に<ruby>行<rt>い</rt></ruby>くからって。"
     },
     {
-      "time": 80,
       "speaker": "女",
-      "text": "お兄さんはいないの？"
+      "text": "お<ruby>兄<rt>にい</rt></ruby>さんはいないの？"
     },
     {
-      "time": 83,
       "speaker": "男",
-      "text": "うん、いつもなら週末は休みなんだけど……。子供が1人じゃかわいそうだしね。"
+      "text": "うん、いつもなら<ruby>週末<rt>しゅうまつ</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みなんだけど……。<ruby>子供<rt>こども</rt></ruby>が1<ruby>人<rt>ひとり</rt></ruby>じゃかわいそうだしね。"
     },
     {
-      "time": 91,
       "speaker": "女",
-      "text": "ふうん。大変そうだけど、頑張ってね。"
+      "text": "ふうん。<ruby>大変<rt>たいへん</rt></ruby>そうだけど、<ruby>頑張<rt>がんば</rt></ruby>ってね。"
     },
     {
-      "time": 99,
-      "speaker": "ナレーション",
-      "text": "男の人はどうして飲み会に行けませんか。"
+      "speaker": "質問",
+      "text": "<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はどうして<ruby>飲<rt>の</rt></ruby>み<ruby>会<rt>かい</rt></ruby>に<ruby>行<rt>い</rt></ruby>けませんか。"
     }
   ]
 }

@@ -1,0 +1,3838 @@
+{
+  "bookId": "shinkanzen-master-n3-listening",
+  "chapterId": "skill-2",
+  "part": 2,
+  "partTitle": "第2部：実力養成編",
+  "partTitleEn": "Skill Building: Utterance Expressions",
+  "mondaiNumber": 2,
+  "order": 2,
+  "title": "第2単元：「発話表現」のスキルを学ぶ",
+  "mondaiHeader": "【第2単元：「発話表現」のスキルを学ぶ】\nイラストを見ながら適切な発話を選ぶ問題（第4問形式）です。以下の4つの重要な聞き分け・表現スキルを習得します：\n1. 状況説明文を聞き分ける（話す人と聞く人のどちらが動作をするのか）\n2. 許可や依頼の発話を聞き分ける（「～てもいい？」「～てもらえますか」等の視点）\n3. 問題を知らせる・助けを申し出る表現に注意する（「～んですが」「～ましょうか」）\n4. あいさつ表現に注意する（場面にふさわしい決まり文句）",
+  "instruction": "音声を聞いて、それぞれの指示に従って正しい答えを一つえらんでください。",
+  "hotspots": [
+    {
+      "id": "hotspot-1",
+      "trackId": "cd1-track14",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "label": "練習1 [A14]"
+    },
+    {
+      "id": "hotspot-2",
+      "trackId": "cd1-track15",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "label": "練習2-A [A15]"
+    },
+    {
+      "id": "hotspot-3",
+      "trackId": "cd1-track16",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "label": "練習2-B [A16]"
+    },
+    {
+      "id": "hotspot-4",
+      "trackId": "cd1-track17",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "label": "練習3 [A17]"
+    },
+    {
+      "id": "hotspot-5",
+      "trackId": "cd1-track18",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "label": "練習4 [A18]"
+    },
+    {
+      "id": "hotspot-6",
+      "trackId": "cd1-track19",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/19 Track 19.mp3",
+      "label": "確認問題 [A19]"
+    }
+  ],
+  "questions": [
+    {
+      "sectionTitle": "練習1 状況説明文を聞き分ける",
+      "badge": "練習1 (1)",
+      "subtitle": "1 動作をする人の聞き分け",
+      "trackId": "cd1-track14",
+      "trackLabel": "練習1 [A14]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "instruction": "状況説明文を聞いてください。どちらが動作をしますか。選んでください。",
+      "context": "状況：漢字の読み方を友達に教えてもらいたいです。",
+      "questionText": "<b>（ 話す人 ・ 友達 ）が教える</b>",
+      "options": [
+        "a. 話す人",
+        "b. 友達"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. 友達"
+      },
+      "explanation": "<b>【正解】友達</b><br/>状況文：「漢字の読み方を友達に教えてもらいたいです。」<br/>「〜てもらいたい」は相手に動作を希望する表現です。したがって、教える動作をするのは<b>友達</b>です。"
+    },
+    {
+      "sectionTitle": "練習1 状況説明文を聞き分ける",
+      "badge": "練習1 (2)",
+      "subtitle": "1 動作をする人の聞き分け",
+      "trackId": "cd1-track14",
+      "trackLabel": "練習1 [A14]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "instruction": "状況説明文を聞いてください。どちらが動作をしますか。選んでください。",
+      "context": "状況：友達のうちのトイレを使いたいです。",
+      "questionText": "<b>（ 話す人 ・ 友達 ）が使う</b>",
+      "options": [
+        "a. 話す人",
+        "b. 友達"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 話す人"
+      },
+      "explanation": "<b>【正解】話す人</b><br/>状況文：「友達のうちのトイレを使いたいです。」<br/>「〜たい」は話す人自身の希望を表します。したがって、トイレを使うのは<b>話す人</b>です。"
+    },
+    {
+      "sectionTitle": "練習1 状況説明文を聞き分ける",
+      "badge": "練習1 (3)",
+      "subtitle": "1 動作をする人の聞き分け",
+      "trackId": "cd1-track14",
+      "trackLabel": "練習1 [A14]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "instruction": "状況説明文を聞いてください。どちらが動作をしますか。選んでください。",
+      "context": "状況：食堂で隣の席の人にしょうゆを取ってほしいです。",
+      "questionText": "<b>（ 話す人 ・ 隣の席の人 ）が取る</b>",
+      "options": [
+        "a. 話す人",
+        "b. 隣の席の人"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. 隣の席の人"
+      },
+      "explanation": "<b>【正解】隣の席の人</b><br/>状況文：「食堂で隣の席の人にしょうゆを取ってほしいです。」<br/>「〜てほしい」は相手に動作を希望・依頼する表現です。したがって、しょうゆを取るのは<b>隣の席の人</b>です。"
+    },
+    {
+      "sectionTitle": "練習1 状況説明文を聞き分ける",
+      "badge": "練習1 (4)",
+      "subtitle": "1 動作をする人の聞き分け",
+      "trackId": "cd1-track14",
+      "trackLabel": "練習1 [A14]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "instruction": "状況説明文を聞いてください。どちらが動作をしますか。選んでください。",
+      "context": "状況：商品の説明がわからなかったので、店の人にもう一度説明してもらいたいです。",
+      "questionText": "<b>（ 話す人 ・ 店の人 ）が説明する</b>",
+      "options": [
+        "a. 話す人",
+        "b. 店の人"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. 店の人"
+      },
+      "explanation": "<b>【正解】店の人</b><br/>状況文：「商品の説明がわからなかったので、店の人にもう一度説明してもらいたいです。」<br/>「〜てもらいたい」は相手に対する依頼です。したがって、説明をする動作の主体は<b>店の人</b>です。"
+    },
+    {
+      "sectionTitle": "練習1 状況説明文を聞き分ける",
+      "badge": "練習1 (5)",
+      "subtitle": "1 動作をする人の聞き分け",
+      "trackId": "cd1-track14",
+      "trackLabel": "練習1 [A14]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "instruction": "状況説明文を聞いてください。どちらが動作をしますか。選んでください。",
+      "context": "状況：きれいな着物を着ている人の写真を撮りたいです。",
+      "questionText": "<b>（ 話す人 ・ 着物を着ている人 ）が撮る</b>",
+      "options": [
+        "a. 話す人",
+        "b. 着物を着ている人"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 話す人"
+      },
+      "explanation": "<b>【正解】話す人</b><br/>状況文：「きれいな着物を着ている人の写真を撮りたいです。」<br/>「〜たい」は話す人自身の希望です。写真を撮る動作をするのは<b>話す人</b>です。"
+    },
+    {
+      "sectionTitle": "練習1 状況説明文を聞き分ける",
+      "badge": "練習1 (6)",
+      "subtitle": "1 動作をする人の聞き分け",
+      "trackId": "cd1-track14",
+      "trackLabel": "練習1 [A14]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "instruction": "状況説明文を聞いてください。どちらが動作をしますか。選んでください。",
+      "context": "状況：机を動かすので、近くの人に手伝ってほしいです。",
+      "questionText": "<b>（ 話す人 ・ 近くの人 ）が手伝う</b>",
+      "options": [
+        "a. 話す人",
+        "b. 近くの人"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. 近くの人"
+      },
+      "explanation": "<b>【正解】近くの人</b><br/>状況文：「机を動かすので、近くの人に手伝ってほしいです。」<br/>「〜てほしい」は相手への依頼です。手伝う動作をするのは<b>近くの人</b>です。"
+    },
+    {
+      "sectionTitle": "練習1 状況説明文を聞き分ける",
+      "badge": "練習1 (7)",
+      "subtitle": "1 動作をする人の聞き分け",
+      "trackId": "cd1-track14",
+      "trackLabel": "練習1 [A14]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "instruction": "状況説明文を聞いてください。どちらが動作をしますか。選んでください。",
+      "context": "状況：図書館で日本の歴史について調べたいです。",
+      "questionText": "<b>（ 話す人 ・ 図書館の人 ）が調べる</b>",
+      "options": [
+        "a. 話す人",
+        "b. 図書館の人"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 話す人"
+      },
+      "explanation": "<b>【正解】話す人</b><br/>状況文：「図書館で日本の歴史について調べたいです。」<br/>「〜たい」は話す人自身の希望を表します。調べる動作をするのは<b>話す人</b>です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (1-1)",
+      "subtitle": "2-A (1) 発話 1",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：友達の隣の席に荷物を置きたいです。何と言いますか。",
+      "questionText": "発話 1：「<b>荷物、そこに置いてもいい？</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「〜てもいい？」は自分が置くことへの許可を求める表現で適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (1-2)",
+      "subtitle": "2-A (1) 発話 2",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：友達の隣の席に荷物を置きたいです。何と言いますか。",
+      "questionText": "発話 2：「<b>荷物、そこに置いたらどう？</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>「〜たらどう？」は相手への提案やアドバイスの表現なので不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (1-3)",
+      "subtitle": "2-A (1) 発話 3",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：友達の隣の席に荷物を置きたいです。何と言いますか。",
+      "questionText": "発話 3：「<b>荷物、そこに置かせてもらえる？</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>使役受動・使役依頼「〜（さ）せてもらえる？」は自分が置く許可を求める表現で適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (2-1)",
+      "subtitle": "2-A (2) 発話 1",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：先輩にレポートを見てもらいたいです。何と言いますか。",
+      "questionText": "発話 1：「<b>レポートをチェックしてもいいですか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>「〜てもいいですか」は自分がチェックする許可を求めることになり不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (2-2)",
+      "subtitle": "2-A (2) 発話 2",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：先輩にレポートを見てもらいたいです。何と言いますか。",
+      "questionText": "発話 2：「<b>レポートをチェックしてくれませんか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「〜てくれませんか」は先輩にチェックしてもらう依頼の表現で適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (2-3)",
+      "subtitle": "2-A (2) 発話 3",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：先輩にレポートを見てもらいたいです。何と言いますか。",
+      "questionText": "発話 3：「<b>レポートをチェックしたいんですが。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>「〜たいんですが」は自分がチェックしたい意味になり不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (3-1)",
+      "subtitle": "2-A (3) 発話 1",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：コンビニで英語の新聞を買いたいです。店員に何と言いますか。",
+      "questionText": "発話 1：「<b>あの、英語の新聞、ありますか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「ありますか」と商品の有無を尋ねて購入の意志を伝える表現として適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (3-2)",
+      "subtitle": "2-A (3) 発話 2",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：コンビニで英語の新聞を買いたいです。店員に何と言いますか。",
+      "questionText": "発話 2：「<b>あの、英語の新聞、買えばいいですか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>「〜ばいいですか」は方法や指示を尋ねる表現なので不自然です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (3-3)",
+      "subtitle": "2-A (3) 発話 3",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：コンビニで英語の新聞を買いたいです。店員に何と言いますか。",
+      "questionText": "発話 3：「<b>あの、英語の新聞、買っていただけませんか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>「買っていただけませんか」は相手（店員）に買ってもらう依頼になってしまいます。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (4-1)",
+      "subtitle": "2-A (4) 発話 1",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：駅までの道がわかりません。何と言いますか。",
+      "questionText": "発話 1：「<b>駅までの道を教えていただきたいんですが。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「〜ていただきたいんですが」は相手に道を教えてもらう丁寧な依頼で適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (4-2)",
+      "subtitle": "2-A (4) 発話 2",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：駅までの道がわかりません。何と言いますか。",
+      "questionText": "発話 2：「<b>駅に行ったらどうですか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>相手への提案になっており不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (4-3)",
+      "subtitle": "2-A (4) 発話 3",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：駅までの道がわかりません。何と言いますか。",
+      "questionText": "発話 3：「<b>駅にはどう行けばいいでしょうか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「どう行けばいいでしょうか」と行き方を尋ねる表現として適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (5-1)",
+      "subtitle": "2-A (5) 発話 1",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：病院に一緒に行ってほしいので、友達に頼みます。何と言いますか。",
+      "questionText": "発話 1：「<b>一緒に病院に行ってもいい？</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>自分が一緒に行く許可を求める形になり、頼む状況に合いません。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (5-2)",
+      "subtitle": "2-A (5) 発話 2",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：病院に一緒に行ってほしいので、友達に頼みます。何と言いますか。",
+      "questionText": "発話 2：「<b>一緒に病院に行ってもらえない？</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「〜てもらえない？」は相手に一緒に行ってもらう依頼として適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (5-3)",
+      "subtitle": "2-A (5) 発話 3",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：病院に一緒に行ってほしいので、友達に頼みます。何と言いますか。",
+      "questionText": "発話 3：「<b>一緒に病院に行かせてくれない？</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>使役「行かせてくれない？」は自分が病院に行く許可を相手に求める形になり不自然です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (6-1)",
+      "subtitle": "2-A (6) 発話 1",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：一人では全部できません。友達に何と言いますか。",
+      "questionText": "発話 1：「<b>ちょっと手伝ってもらえないかな？</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「〜てもらえないかな」は相手に手伝いを頼む表現として適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (6-2)",
+      "subtitle": "2-A (6) 発話 2",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：一人では全部できません。友達に何と言いますか。",
+      "questionText": "発話 2：「<b>何を手伝ったらいいかな？</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>自分が相手を手伝おうとする表現になり不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (6-3)",
+      "subtitle": "2-A (6) 発話 3",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：一人では全部できません。友達に何と言いますか。",
+      "questionText": "発話 3：「<b>ちょっと手伝いましょうか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>相手に手伝いを申し出る表現で不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (7-1)",
+      "subtitle": "2-A (7) 発話 1",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：相手の名前の漢字が読めません。何と言いますか。",
+      "questionText": "発話 1：「<b>お名前、読んでもよろしいでしょうか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>自分が相手の名前を読む許可を求めており、読み方を尋ねる表現になっていません。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (7-2)",
+      "subtitle": "2-A (7) 発話 2",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：相手の名前の漢字が読めません。何と言いますか。",
+      "questionText": "発話 2：「<b>お名前、どう読めばいいでしょうか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「どう読めばいいでしょうか」と読み方を尋ねる表現として適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (7-3)",
+      "subtitle": "2-A (7) 発話 3",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：相手の名前の漢字が読めません。何と言いますか。",
+      "questionText": "発話 3：「<b>お名前の読み方、教えていただけませんか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「〜ていただけませんか」は相手に教えてもらう依頼として適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (8-1)",
+      "subtitle": "2-A (8) 発話 1",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：会社の車を使いたいです。何と言いますか。",
+      "questionText": "発話 1：「<b>車、使ってくださいませんか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>相手に使ってもらう依頼になってしまい不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (8-2)",
+      "subtitle": "2-A (8) 発話 2",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：会社の車を使いたいです。何と言いますか。",
+      "questionText": "発話 2：「<b>車、使わせていただきたいんですけど。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>使役謙譲「〜（さ）せていただきたい」は自分が車を使う許可を求める表現で適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 許可や依頼の表現",
+      "badge": "練習2-A (8-3)",
+      "subtitle": "2-A (8) 発話 3",
+      "trackId": "cd1-track15",
+      "trackLabel": "練習2-A [A15]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：会社の車を使いたいです。何と言いますか。",
+      "questionText": "発話 3：「<b>車、使ったらいいでしょうか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>車を使うべきかどうか判断を仰ぐような不自然な表現です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (1-1)",
+      "subtitle": "2-B (1) 発話 1",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：友達のメールアドレスを知りたいです。何と言いますか。",
+      "questionText": "発話 1：「<b>メールアドレス、教えてもらえない？</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「〜てもらえない？」は相手に教えてもらう依頼表現として適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (1-2)",
+      "subtitle": "2-B (1) 発話 2",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：友達のメールアドレスを知りたいです。何と言いますか。",
+      "questionText": "発話 2：「<b>メールアドレス、聞いてくれない？</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>相手に誰かから聞くよう頼む意味になり、友達のアドレスをその場で知りたい状況に合いません。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (1-3)",
+      "subtitle": "2-B (1) 発話 3",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：友達のメールアドレスを知りたいです。何と言いますか。",
+      "questionText": "発話 3：「<b>メールアドレス、聞いてもいい？</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「〜てもいい？」は自分が相手に尋ねる許可を求める表現として適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (2-1)",
+      "subtitle": "2-B (2) 発話 1",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：会議室のかぎを使いたいです。受付の人に何と言いますか。",
+      "questionText": "発話 1：「<b>会議室のかぎを借りていただきたいんですが。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>「借りていただく」は相手に借りてもらうことになり不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (2-2)",
+      "subtitle": "2-B (2) 発話 2",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：会議室のかぎを使いたいです。受付の人に何と言いますか。",
+      "questionText": "発話 2：「<b>会議室のかぎを貸してくださいますか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「貸してください」は相手に貸してもらう依頼として適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (2-3)",
+      "subtitle": "2-B (2) 発話 3",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：会議室のかぎを使いたいです。受付の人に何と言いますか。",
+      "questionText": "発話 3：「<b>会議室のかぎを貸したいんですけど。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>自分が相手にかぎを貸したいという意味になり不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (3-1)",
+      "subtitle": "2-B (3) 発話 1",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：店でケースに入った時計を近くで見たいです。店員に何と言いますか。",
+      "questionText": "発話 1：「<b>この時計、見せてもいいですか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>自分が時計を相手に見せる許可を求める形になり不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (3-2)",
+      "subtitle": "2-B (3) 発話 2",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：店でケースに入った時計を近くで見たいです。店員に何と言いますか。",
+      "questionText": "発話 2：「<b>この時計、見てもらいたいんですが。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>相手に見てもらう希望になり不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (3-3)",
+      "subtitle": "2-B (3) 発話 3",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：店でケースに入った時計を近くで見たいです。店員に何と言いますか。",
+      "questionText": "発話 3：「<b>この時計、見せていただけますか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「見せていただけますか」は店員に見せてもらう丁寧な依頼として適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (4-1)",
+      "subtitle": "2-B (4) 発話 1",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：留守の間、猫の世話を友達に頼みます。何と言いますか。",
+      "questionText": "発話 1：「<b>猫、預かるよ。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>自分が猫を預かる申し出になり不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (4-2)",
+      "subtitle": "2-B (4) 発話 2",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：留守の間、猫の世話を友達に頼みます。何と言いますか。",
+      "questionText": "発話 2：「<b>猫、預かってもらえる？</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「預かってもらえる？」は相手に預かってもらう依頼として適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (4-3)",
+      "subtitle": "2-B (4) 発話 3",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：留守の間、猫の世話を友達に頼みます。何と言いますか。",
+      "questionText": "発話 3：「<b>猫、預けてくれない？</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>「預けてくれる」は相手が自分に預ける意味になり不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (5-1)",
+      "subtitle": "2-B (5) 発話 1",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：店で商品のパンフレットがほしいです。何と言いますか。",
+      "questionText": "発話 1：「<b>パンフレットをもらってもいいですか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>自分がパンフレットをもらう許可を求める表現で適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (5-2)",
+      "subtitle": "2-B (5) 発話 2",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：店で商品のパンフレットがほしいです。何と言いますか。",
+      "questionText": "発話 2：「<b>パンフレットをいただけますか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「いただけますか」はもらうことの丁寧な依頼表現で適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (5-3)",
+      "subtitle": "2-B (5) 発話 3",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：店で商品のパンフレットがほしいです。何と言いますか。",
+      "questionText": "発話 3：「<b>パンフレットをもらってくださいませんか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>相手にもらってもらう形になり不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (6-1)",
+      "subtitle": "2-B (6) 発話 1",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：友達の辞書を使いたいです。何と言いますか。",
+      "questionText": "発話 1：「<b>辞書、借りてくれない？</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>相手に借りてもらう形になり不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (6-2)",
+      "subtitle": "2-B (6) 発話 2",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：友達の辞書を使いたいです。何と言いますか。",
+      "questionText": "発話 2：「<b>辞書、貸してもいい？</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>自分が貸す許可を求める形になり不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (6-3)",
+      "subtitle": "2-B (6) 発話 3",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：友達の辞書を使いたいです。何と言いますか。",
+      "questionText": "発話 3：「<b>辞書、貸してもらえる？</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>相手に貸してもらう依頼表現として適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (7-1)",
+      "subtitle": "2-B (7) 発話 1",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：わからないところを先生に質問します。何と言いますか。",
+      "questionText": "発話 1：「<b>ここ、聞いていただきたいんですけど。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>先生に聞いてもらう意味になり不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (7-2)",
+      "subtitle": "2-B (7) 発話 2",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：わからないところを先生に質問します。何と言いますか。",
+      "questionText": "発話 2：「<b>ここ、教えてもよろしいでしょうか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>自分が先生に教える許可を求めており不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (7-3)",
+      "subtitle": "2-B (7) 発話 3",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：わからないところを先生に質問します。何と言いますか。",
+      "questionText": "発話 3：「<b>ここ、教えていただけませんか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「教えていただけませんか」は先生に教えてもらう丁寧な依頼として適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (8-1)",
+      "subtitle": "2-B (8) 発話 1",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：大学で隣の席の人に教科書を見せてもらいます。何と言いますか。",
+      "questionText": "発話 1：「<b>あの、教科書、見せてくれませんか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "○ 状況に合う"
+      },
+      "explanation": "<b>【判定】○ 状況に合う</b><br/>「見せてくれませんか」は相手に見せてもらう依頼表現として適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (8-2)",
+      "subtitle": "2-B (8) 発話 2",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：大学で隣の席の人に教科書を見せてもらいます。何と言いますか。",
+      "questionText": "発話 2：「<b>あの、教科書、見せてもいいでしょうか。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>自分が教科書を見せる許可を求める形になり不適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 注意するべき動詞",
+      "badge": "練習2-B (8-3)",
+      "subtitle": "2-B (8) 発話 3",
+      "trackId": "cd1-track16",
+      "trackLabel": "練習2-B [A16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "instruction": "状況説明文と発話を聞いてください。状況に合う発話に○を、そうでないものには×をつけてください。",
+      "context": "状況：大学で隣の席の人に教科書を見せてもらいます。何と言いますか。",
+      "questionText": "発話 3：「<b>あの、教科書、見てほしいんですけど。</b>」は状況に合っていますか。",
+      "options": [
+        "○ 状況に合う",
+        "× 状況に合わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "× 状況に合わない"
+      },
+      "explanation": "<b>【判定】× 状況に合わない</b><br/>相手に見てほしい意味になり不適切です。"
+    },
+    {
+      "sectionTitle": "練習3 問題を知らせる・助けを申し出る",
+      "badge": "練習3 (1)",
+      "subtitle": "3 助けや問題の伝達表現",
+      "trackId": "cd1-track17",
+      "trackLabel": "練習3 [A17]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "instruction": "状況説明文と発話を聞いてください。３つの発話の中から最もよいものを１つ選んでください。",
+      "context": "状況：教室の窓が開きません。何と言いますか。",
+      "questionText": "<b>教室の窓が開きません。何と言いますか。</b> 何と言いますか。",
+      "options": [
+        "1. 窓を開けてもよろしいでしょうか。",
+        "2. この窓、開かないんですが。",
+        "3. この窓、開けませんか。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "2. この窓、開かないんですが。"
+      },
+      "explanation": "<b>【正解】2</b><br/>窓が開かないという問題を相手に伝えて助けを求める状況です。「〜んですが」を使って問題を伝える <b>2「この窓、開かないんですが」</b> が最も適切です。<br/>1は自分が窓を開ける許可を求める表現、3は一緒に窓を開けようと誘う表現です。"
+    },
+    {
+      "sectionTitle": "練習3 問題を知らせる・助けを申し出る",
+      "badge": "練習3 (2)",
+      "subtitle": "3 助けや問題の伝達表現",
+      "trackId": "cd1-track17",
+      "trackLabel": "練習3 [A17]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "instruction": "状況説明文と発話を聞いてください。３つの発話の中から最もよいものを１つ選んでください。",
+      "context": "状況：会社でほかの人がたくさん荷物を持っています。何と言いますか。",
+      "questionText": "<b>会社でほかの人がたくさん荷物を持っています。何と言いますか。</b> 何と言いますか。",
+      "options": [
+        "1. 荷物、持ってあげますか。",
+        "2. 荷物、持ったらいいですか。",
+        "3. 荷物、持ちましょうか。"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "3. 荷物、持ちましょうか。"
+      },
+      "explanation": "<b>【正解】3</b><br/>相手に助けを申し出る状況です。「〜ましょうか」を使った <b>3「荷物、持ちましょうか」</b> が適切です。<br/>1「〜てあげますか」は相手に対して恩着せがましく失礼な表現です。2「〜たらいいですか」は指示を仰ぐ表現です。"
+    },
+    {
+      "sectionTitle": "練習3 問題を知らせる・助けを申し出る",
+      "badge": "練習3 (3)",
+      "subtitle": "3 助けや問題の伝達表現",
+      "trackId": "cd1-track17",
+      "trackLabel": "練習3 [A17]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "instruction": "状況説明文と発話を聞いてください。３つの発話の中から最もよいものを１つ選んでください。",
+      "context": "状況：友達のシャツがソースで汚れています。何と言いますか。",
+      "questionText": "<b>友達のシャツがソースで汚れています。何と言いますか。</b> 何と言いますか。",
+      "options": [
+        "1. シャツにソースがついていますよ。",
+        "2. ソースはそこにありますよ。",
+        "3. シャツにソースがつきますよ。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "1. シャツにソースがついていますよ。"
+      },
+      "explanation": "<b>【正解】1</b><br/>聞く人に関係する問題・事実を知らせる状況です。「〜ていますよ」を使った <b>1「シャツにソースがついていますよ」</b> が適切です。<br/>2はソースの場所を教える表現、3は未来の発生を表す表現です。"
+    },
+    {
+      "sectionTitle": "練習3 問題を知らせる・助けを申し出る",
+      "badge": "練習3 (4)",
+      "subtitle": "3 助けや問題の伝達表現",
+      "trackId": "cd1-track17",
+      "trackLabel": "練習3 [A17]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "instruction": "状況説明文と発話を聞いてください。３つの発話の中から最もよいものを１つ選んでください。",
+      "context": "状況：レストランで自分のスプーンが落ちました。店の人に何と言いますか。",
+      "questionText": "<b>レストランで自分のスプーンが落ちました。店の人に何と言いますか。</b> 何と言いますか。",
+      "options": [
+        "1. スプーン、落ちましたよ。",
+        "2. スプーン、落としちゃったんですが。",
+        "3. スプーン、持ってきてもいいですか。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "2. スプーン、落としちゃったんですが。"
+      },
+      "explanation": "<b>【正解】2</b><br/>自分に起きた問題を店員に伝えて新しいものを持ってきてもらう状況です。「〜ちゃったんですが」を使った <b>2「スプーン、落としちゃったんですが」</b> が適切です。<br/>1は相手の物が落ちたことを知らせる表現、3は自分がスプーンを持ってくる許可を求める表現です。"
+    },
+    {
+      "sectionTitle": "練習3 問題を知らせる・助けを申し出る",
+      "badge": "練習3 (5)",
+      "subtitle": "3 助けや問題の伝達表現",
+      "trackId": "cd1-track17",
+      "trackLabel": "練習3 [A17]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "instruction": "状況説明文と発話を聞いてください。３つの発話の中から最もよいものを１つ選んでください。",
+      "context": "状況：会社でほかの人の仕事を手伝います。何と言いますか。",
+      "questionText": "<b>会社でほかの人の仕事を手伝います。何と言いますか。</b> 何と言いますか。",
+      "options": [
+        "1. 手伝っていただきます。",
+        "2. お手伝いしますよ。",
+        "3. お手伝いしませんか。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "2. お手伝いしますよ。"
+      },
+      "explanation": "<b>【正解】2</b><br/>自分から手伝いを申し出る状況です。「お＋動詞連用形＋しますよ」を使った <b>2「お手伝いしますよ」</b> が適切です。<br/>1は相手に手伝ってもらう受動・謙譲の表現、3は一緒に手伝わないかと誘う表現です。"
+    },
+    {
+      "sectionTitle": "練習3 問題を知らせる・助けを申し出る",
+      "badge": "練習3 (6)",
+      "subtitle": "3 助けや問題の伝達表現",
+      "trackId": "cd1-track17",
+      "trackLabel": "練習3 [A17]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "instruction": "状況説明文と発話を聞いてください。３つの発話の中から最もよいものを１つ選んでください。",
+      "context": "状況：電車の中にかばんを忘れました。駅員に何と言いますか。",
+      "questionText": "<b>電車の中にかばんを忘れました。駅員に何と言いますか。</b> 何と言いますか。",
+      "options": [
+        "1. 電車の中にかばんを忘れていますよ。",
+        "2. 電車の中にかばんがありますか。",
+        "3. 電車の中に忘れ物をしたんですけど。"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "3. 電車の中に忘れ物をしたんですけど。"
+      },
+      "explanation": "<b>【正解】3</b><br/>自分が起こした問題を駅員に伝えて対応を求める状況です。「〜たんですけど」を使った <b>3「電車の中に忘れ物をしたんですけど」</b> が適切です。<br/>1は相手がかばんを忘れていることを指摘する表現、2はかばんの存在を唐突に尋ねる不自然な表現です。"
+    },
+    {
+      "sectionTitle": "練習3 問題を知らせる・助けを申し出る",
+      "badge": "練習3 (7)",
+      "subtitle": "3 助けや問題の伝達表現",
+      "trackId": "cd1-track17",
+      "trackLabel": "練習3 [A17]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "instruction": "状況説明文と発話を聞いてください。３つの発話の中から最もよいものを１つ選んでください。",
+      "context": "状況：今日は図書館は休みです。図書館に行こうとしている友達に何と言いますか。",
+      "questionText": "<b>今日は図書館は休みです。図書館に行こうとしている友達に何と言いますか。</b> 何と言いますか。",
+      "options": [
+        "1. 今日は図書館は閉まってるよ。",
+        "2. 今日は図書館で休んでるよ。",
+        "3. 図書館、閉まると思うよ。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "1. 今日は図書館は閉まってるよ。"
+      },
+      "explanation": "<b>【正解】1</b><br/>相手に関係する事実・問題を知らせる状況です。「〜てるよ（閉まっているよ）」を使った <b>1「今日は図書館は閉まってるよ」</b> が適切です。<br/>2は自分が図書館で休憩している意味、3は推測の表現です。"
+    },
+    {
+      "sectionTitle": "練習3 問題を知らせる・助けを申し出る",
+      "badge": "練習3 (8)",
+      "subtitle": "3 助けや問題の伝達表現",
+      "trackId": "cd1-track17",
+      "trackLabel": "練習3 [A17]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "instruction": "状況説明文と発話を聞いてください。３つの発話の中から最もよいものを１つ選んでください。",
+      "context": "状況：前を歩いている人の手袋を拾いました。何と言いますか。",
+      "questionText": "<b>前を歩いている人の手袋を拾いました。何と言いますか。</b> 何と言いますか。",
+      "options": [
+        "1. これは手袋ですよ。",
+        "2. 手袋、落としましたよ。",
+        "3. 手袋、拾ったらどうですか。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "2. 手袋、落としましたよ。"
+      },
+      "explanation": "<b>【正解】2</b><br/>相手が物を落としたことを知らせる状況です。「落としましたよ」を使った <b>2「手袋、落としましたよ」</b> が適切です。<br/>1は物の名前を教える表現、3は相手に拾うよう促す不自然な表現です。"
+    },
+    {
+      "sectionTitle": "練習4 あいさつ表現に注意する",
+      "badge": "練習4 (1)",
+      "subtitle": "4 場面ごとのあいさつ",
+      "trackId": "cd1-track18",
+      "trackLabel": "練習4 [A18]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "instruction": "状況説明文と発話を聞いてください。３つの発話の中から最もよいものを１つ選んでください。",
+      "context": "状況：会社で先輩より先に帰ります。何と言いますか。",
+      "questionText": "<b>会社で先輩より先に帰ります。何と言いますか。</b> 何と言いますか。",
+      "options": [
+        "1. お先に失礼します。",
+        "2. おじゃまします。",
+        "3. お世話になりました。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "1. お先に失礼します。"
+      },
+      "explanation": "<b>【正解】1</b><br/>会社で先に帰るときの決まり文句は <b>1「お先に失礼します」</b> です。<br/>2「おじゃまします」は人の家や部屋に入るとき、3「お世話になりました」は退職やプロジェクト終了時の挨拶です。"
+    },
+    {
+      "sectionTitle": "練習4 あいさつ表現に注意する",
+      "badge": "練習4 (2)",
+      "subtitle": "4 場面ごとのあいさつ",
+      "trackId": "cd1-track18",
+      "trackLabel": "練習4 [A18]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "instruction": "状況説明文と発話を聞いてください。３つの発話の中から最もよいものを１つ選んでください。",
+      "context": "状況：会社で部長に話したいことがあります。何と言いますか。",
+      "questionText": "<b>会社で部長に話したいことがあります。何と言いますか。</b> 何と言いますか。",
+      "options": [
+        "1. ごめんください。",
+        "2. ちょっとよろしいですか。",
+        "3. お世話になります。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "2. ちょっとよろしいですか。"
+      },
+      "explanation": "<b>【正解】2</b><br/>目上の人に話しかけて時間を取ってもらうときは <b>2「ちょっとよろしいですか」</b>（または「お時間ありますか」）が適切です。<br/>1「ごめんください」は他人の家を訪れたとき、3「お世話になります」は挨拶です。"
+    },
+    {
+      "sectionTitle": "練習4 あいさつ表現に注意する",
+      "badge": "練習4 (3)",
+      "subtitle": "4 場面ごとのあいさつ",
+      "trackId": "cd1-track18",
+      "trackLabel": "練習4 [A18]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "instruction": "状況説明文と発話を聞いてください。３つの発話の中から最もよいものを１つ選んでください。",
+      "context": "状況：風邪を引いた人が早く帰ります。その人に何と言いますか。",
+      "questionText": "<b>風邪を引いた人が早く帰ります。その人に何と言いますか。</b> 何と言いますか。",
+      "options": [
+        "1. お大事に。",
+        "2. お元気で。",
+        "3. お先に。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "1. お大事に。"
+      },
+      "explanation": "<b>【正解】1</b><br/>病気や体調不良の人を気遣う挨拶は <b>1「お大事に」</b> です。<br/>2「お元気で」は長期間会わなくなる別れ際、3「お先に」は自分が先に帰るときの挨拶です。"
+    },
+    {
+      "sectionTitle": "練習4 あいさつ表現に注意する",
+      "badge": "練習4 (4)",
+      "subtitle": "4 場面ごとのあいさつ",
+      "trackId": "cd1-track18",
+      "trackLabel": "練習4 [A18]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "instruction": "状況説明文と発話を聞いてください。３つの発話の中から最もよいものを１つ選んでください。",
+      "context": "状況：先生に久しぶりに会いました。何と言いますか。",
+      "questionText": "<b>先生に久しぶりに会いました。何と言いますか。</b> 何と言いますか。",
+      "options": [
+        "1. お待たせしました。",
+        "2. 失礼いたしました。",
+        "3. ごぶさたしております。"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "3. ごぶさたしております。"
+      },
+      "explanation": "<b>【正解】3</b><br/>長い間会っていなかった相手（特に目上の人）に対する挨拶は <b>3「ごぶさたしております」</b>（無沙汰＝連絡を怠っていたこと）が適切です。<br/>1は待たせたときの言葉、2は失礼なことをしたときの謝罪です。"
+    },
+    {
+      "sectionTitle": "練習4 あいさつ表現に注意する",
+      "badge": "練習4 (5)",
+      "subtitle": "4 場面ごとのあいさつ",
+      "trackId": "cd1-track18",
+      "trackLabel": "練習4 [A18]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "instruction": "状況説明文と発話を聞いてください。３つの発話の中から最もよいものを１つ選んでください。",
+      "context": "状況：お客さんに席を勧めます。何と言いますか。",
+      "questionText": "<b>お客さんに席を勧めます。何と言いますか。</b> 何と言いますか。",
+      "options": [
+        "1. お口に合うかどうか。",
+        "2. お出かけください。",
+        "3. おかけください。"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "3. おかけください。"
+      },
+      "explanation": "<b>【正解】3</b><br/>人に椅子・席に座るよう勧める敬語表現は <b>3「おかけください」</b>（腰掛ける）です。<br/>1は食べ物を勧めるときの謙遜表現、2は外出を促す表現です。"
+    },
+    {
+      "sectionTitle": "練習4 あいさつ表現に注意する",
+      "badge": "練習4 (6)",
+      "subtitle": "4 場面ごとのあいさつ",
+      "trackId": "cd1-track18",
+      "trackLabel": "練習4 [A18]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "instruction": "状況説明文と発話を聞いてください。３つの発話の中から最もよいものを１つ選んでください。",
+      "context": "状況：先生に今から話せるかどうか聞きます。何と言いますか。",
+      "questionText": "<b>先生に今から話せるかどうか聞きます。何と言いますか。</b> 何と言いますか。",
+      "options": [
+        "1. お話をしたいでしょうか。",
+        "2. お時間ありますか。",
+        "3. 何か問題がありますか。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "2. お時間ありますか。"
+      },
+      "explanation": "<b>【正解】2</b><br/>今話す都合があるか確認する表現は <b>2「お時間ありますか」</b>（または「今、ちょっとよろしいですか」）が適切です。<br/>1は先生の希望を不自然に推測する表現、3は問題の有無を問う表現です。"
+    },
+    {
+      "sectionTitle": "練習4 あいさつ表現に注意する",
+      "badge": "練習4 (7)",
+      "subtitle": "4 場面ごとのあいさつ",
+      "trackId": "cd1-track18",
+      "trackLabel": "練習4 [A18]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "instruction": "状況説明文と発話を聞いてください。３つの発話の中から最もよいものを１つ選んでください。",
+      "context": "状況：社長室に入ります。何と言いますか。",
+      "questionText": "<b>社長室に入ります。何と言いますか。</b> 何と言いますか。",
+      "options": [
+        "1. 失礼します。",
+        "2. ごめんください。",
+        "3. うかがいます。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "1. 失礼します。"
+      },
+      "explanation": "<b>【正解】1</b><br/>部屋に入るときは <b>1「失礼します」</b> と挨拶します。<br/>2「ごめんください」は民家などの玄関で人を呼ぶとき、3「うかがいます」は訪問する動作を表す謙譲語です。"
+    },
+    {
+      "sectionTitle": "練習4 あいさつ表現に注意する",
+      "badge": "練習4 (8)",
+      "subtitle": "4 場面ごとのあいさつ",
+      "trackId": "cd1-track18",
+      "trackLabel": "練習4 [A18]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "instruction": "状況説明文と発話を聞いてください。３つの発話の中から最もよいものを１つ選んでください。",
+      "context": "状況：会社の人があしたから出張に行きます。何と言いますか。",
+      "questionText": "<b>会社の人があしたから出張に行きます。何と言いますか。</b> 何と言いますか。",
+      "options": [
+        "1. 行ってきます。",
+        "2. お気をつけて。",
+        "3. お元気で。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "2. お気をつけて。"
+      },
+      "explanation": "<b>【正解】2</b><br/>旅行や出張に出かける人を送り出すときは <b>2「お気をつけて」</b> が適切です。<br/>1「行ってきます」は自分が出かけるときの挨拶、3「お元気で」は長期の別れ（引越し・転職など）の挨拶です。"
+    },
+    {
+      "sectionTitle": "確認問題",
+      "badge": "確認問題 (1)",
+      "subtitle": "発話表現 実戦形式",
+      "trackId": "cd1-track19",
+      "trackLabel": "確認問題 [A19]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/19 Track 19.mp3",
+      "illustrationSrc": "/images/shinkanzen_listening/skill-2/kakunin_01.png",
+      "instruction": "えを見ながら質問を聞いてください。やじるし（→）の人は何と言いますか。１から３の中から、最もよいものを一つえらんでください。",
+      "context": "（研究室で。学生が先生に書類を持参して頼んでいます）",
+      "questionText": "先生に推薦状を書いてもらいたいです。何と言いますか。",
+      "options": [
+        "1. 推薦状を書いてもいいですか。",
+        "2. 推薦状を書いていただけませんか。",
+        "3. 推薦状をお書きしましょうか。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "2. 推薦状を書いていただけませんか。"
+      },
+      "explanation": "<b>【正解】2</b><br/>先生に推薦状を書いてもらう依頼をする場面です。<br/>・1「書いてもいいですか」は自分が書く許可を求める表現です。<br/>・<b>2「書いていただけませんか」</b>は目上の相手に書いてもらう丁寧な依頼表現で、最も適切です。<br/>・3「お書きしましょうか」は自分が相手のために書く申し出の表現です。"
+    },
+    {
+      "sectionTitle": "確認問題",
+      "badge": "確認問題 (2)",
+      "subtitle": "発話表現 実戦形式",
+      "trackId": "cd1-track19",
+      "trackLabel": "確認問題 [A19]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/19 Track 19.mp3",
+      "illustrationSrc": "/images/shinkanzen_listening/skill-2/kakunin_02.png",
+      "instruction": "えを見ながら質問を聞いてください。やじるし（→）の人は何と言いますか。１から３の中から、最もよいものを一つえらんでください。",
+      "context": "（雨が降る建物の前で。折りたたみ傘を持った女性が、雨に濡れて困っている友人に話しかけます）",
+      "questionText": "友達がかさがなくて困っているようです。何と言いますか。",
+      "options": [
+        "1. かさ、借りてくれない？",
+        "2. かさ、貸したらどう？",
+        "3. かさ、貸そうか。"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "3. かさ、貸そうか。"
+      },
+      "explanation": "<b>【正解】3</b><br/>友達が傘を持っていなくて困っているのを見て、自分が持っている傘を貸そうと申し出る場面です。<br/>・1「借りてくれない？」は相手に借りるよう頼む不自然な表現です。<br/>・2「貸したらどう？」は相手が誰かに貸すことを提案する表現です。<br/>・<b>3「かさ、貸そうか」</b>は「～ようか」で相手に親切な申し出をする表現として最も適切です。"
+    }
+  ],
+  "transcript": [
+    {
+      "trackId": "cd1-track14",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "trackLabel": "練習1 [A14]",
+      "time": 0.0,
+      "speaker": "ナレーション",
+      "text": "練習 1"
+    },
+    {
+      "trackId": "cd1-track14",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "trackLabel": "練習1 [A14]",
+      "time": 3.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track14",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "trackLabel": "練習1 [A14]",
+      "time": 4.3,
+      "speaker": "女",
+      "text": "漢字の読み方を友達に教えてもらいたいです。"
+    },
+    {
+      "trackId": "cd1-track14",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "trackLabel": "練習1 [A14]",
+      "time": 10.8,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track14",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "trackLabel": "練習1 [A14]",
+      "time": 13.2,
+      "speaker": "男",
+      "text": "友達のうちのトイレを使いたいです。"
+    },
+    {
+      "trackId": "cd1-track14",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "trackLabel": "練習1 [A14]",
+      "time": 18.2,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track14",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "trackLabel": "練習1 [A14]",
+      "time": 20.7,
+      "speaker": "女",
+      "text": "食堂で、隣の席の人にしょうゆを取ってほしいです。"
+    },
+    {
+      "trackId": "cd1-track14",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "trackLabel": "練習1 [A14]",
+      "time": 29.1,
+      "speaker": "ナレーション",
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track14",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "trackLabel": "練習1 [A14]",
+      "time": 30.9,
+      "speaker": "男",
+      "text": "商品の説明がわからなかったので、店の人にもう一度説明してもらいたいです。"
+    },
+    {
+      "trackId": "cd1-track14",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "trackLabel": "練習1 [A14]",
+      "time": 40.9,
+      "speaker": "ナレーション",
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track14",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "trackLabel": "練習1 [A14]",
+      "time": 43.1,
+      "speaker": "女",
+      "text": "きれいな着物を着ている人の写真を撮りたいです。"
+    },
+    {
+      "trackId": "cd1-track14",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "trackLabel": "練習1 [A14]",
+      "time": 49.5,
+      "speaker": "ナレーション",
+      "text": "6"
+    },
+    {
+      "trackId": "cd1-track14",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "trackLabel": "練習1 [A14]",
+      "time": 52.1,
+      "speaker": "男",
+      "text": "机を動かすので、近くの人に手伝ってほしいです。"
+    },
+    {
+      "trackId": "cd1-track14",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "trackLabel": "練習1 [A14]",
+      "time": 58.5,
+      "speaker": "ナレーション",
+      "text": "7"
+    },
+    {
+      "trackId": "cd1-track14",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/14 Track 14.mp3",
+      "trackLabel": "練習1 [A14]",
+      "time": 60.8,
+      "speaker": "女",
+      "text": "図書館で日本の歴史について調べたいです。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 0.0,
+      "speaker": "ナレーション",
+      "text": "練習 2-A"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 3.4,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 4.9,
+      "speaker": "女",
+      "text": "友達の隣の席に荷物を置きたいです。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 13.3,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 14.6,
+      "speaker": "女",
+      "text": "荷物、そこに置いてもいい？"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 18.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 19.8,
+      "speaker": "女",
+      "text": "荷物、そこに置いたらどう？"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 23.8,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 25.0,
+      "speaker": "女",
+      "text": "荷物、そこに置かせてもらえる？"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 29.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 31.0,
+      "speaker": "男",
+      "text": "先輩にレポートを見てもらいたいです。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 38.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 39.3,
+      "speaker": "男",
+      "text": "レポートをチェックしてもいいですか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 43.7,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 45.0,
+      "speaker": "男",
+      "text": "レポートをチェックしてくれませんか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 49.2,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 50.5,
+      "speaker": "男",
+      "text": "レポートをチェックしたいんですが。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 55.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 56.5,
+      "speaker": "女",
+      "text": "コンビニで英語の新聞を買いたいです。店員に何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 63.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 64.8,
+      "speaker": "女",
+      "text": "あの、英語の新聞、ありますか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 69.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 70.3,
+      "speaker": "女",
+      "text": "あの、英語の新聞、買えばいいですか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 75.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 76.3,
+      "speaker": "女",
+      "text": "あの、英語の新聞、買っていただけませんか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 81.5,
+      "speaker": "ナレーション",
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 83.0,
+      "speaker": "男",
+      "text": "駅までの道がわかりません。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 89.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 90.3,
+      "speaker": "男",
+      "text": "駅までの道を教えていただきたいんですが。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 95.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 96.3,
+      "speaker": "男",
+      "text": "駅に行ったらどうですか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 100.5,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 101.8,
+      "speaker": "男",
+      "text": "駅にはどう行けばいいでしょうか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 107.0,
+      "speaker": "ナレーション",
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 108.5,
+      "speaker": "女",
+      "text": "病院に一緒に行ってほしいので、友達に頼みます。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 115.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 116.8,
+      "speaker": "女",
+      "text": "一緒に病院に行ってもいい？"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 121.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 122.3,
+      "speaker": "女",
+      "text": "一緒に病院に行ってもらえない？"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 126.8,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 128.0,
+      "speaker": "女",
+      "text": "一緒に病院に行かせてくれない？"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 133.0,
+      "speaker": "ナレーション",
+      "text": "6"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 134.5,
+      "speaker": "男",
+      "text": "一人では全部できません。友達に何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 141.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 142.3,
+      "speaker": "男",
+      "text": "ちょっと手伝ってもらえないかな？"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 146.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 147.8,
+      "speaker": "男",
+      "text": "何を手伝ったらいいかな？"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 152.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 153.3,
+      "speaker": "男",
+      "text": "ちょっと手伝いましょうか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 158.0,
+      "speaker": "ナレーション",
+      "text": "7"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 159.5,
+      "speaker": "女",
+      "text": "相手の名前の漢字が読めません。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 166.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 167.3,
+      "speaker": "女",
+      "text": "お名前、読んでもよろしいでしょうか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 172.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 173.3,
+      "speaker": "女",
+      "text": "お名前、どう読めばいいでしょうか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 178.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 179.3,
+      "speaker": "女",
+      "text": "お名前の読み方、教えていただけませんか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 185.0,
+      "speaker": "ナレーション",
+      "text": "8"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 186.5,
+      "speaker": "男",
+      "text": "会社の車を使いたいです。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 192.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 193.8,
+      "speaker": "男",
+      "text": "車、使ってくださいませんか。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 198.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 199.8,
+      "speaker": "男",
+      "text": "車、使わせていただきたいんですけど。"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 204.5,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track15",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/15 Track 15.mp3",
+      "trackLabel": "練習2-A [A15]",
+      "time": 205.8,
+      "speaker": "男",
+      "text": "車、使ったらいいでしょうか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 0.0,
+      "speaker": "ナレーション",
+      "text": "練習 2-B"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 3.2,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 4.7,
+      "speaker": "女",
+      "text": "友達のメールアドレスを知りたいです。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 11.8,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 13.2,
+      "speaker": "女",
+      "text": "メールアドレス、教えてもらえない？"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 17.8,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 19.2,
+      "speaker": "女",
+      "text": "メールアドレス、聞いてくれない？"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 23.5,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 24.8,
+      "speaker": "女",
+      "text": "メールアドレス、聞いてもいい？"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 29.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 30.5,
+      "speaker": "男",
+      "text": "会議室のかぎを使いたいです。受付の人に何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 37.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 38.8,
+      "speaker": "男",
+      "text": "会議室のかぎを借りていただきたいんですが。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 43.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 44.8,
+      "speaker": "男",
+      "text": "会議室のかぎを貸してくださいますか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 49.2,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 50.5,
+      "speaker": "男",
+      "text": "会議室のかぎを貸したいんですけど。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 55.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 56.5,
+      "speaker": "女",
+      "text": "店でケースに入った時計を近くで見たいです。店員に何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 64.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 65.8,
+      "speaker": "女",
+      "text": "この時計、見せてもいいですか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 70.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 71.3,
+      "speaker": "女",
+      "text": "この時計、見てもらいたいんですが。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 76.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 77.3,
+      "speaker": "女",
+      "text": "この時計、見せていただけますか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 82.0,
+      "speaker": "ナレーション",
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 83.5,
+      "speaker": "男",
+      "text": "留守の間、猫の世話を友達に頼みます。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 90.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 91.3,
+      "speaker": "男",
+      "text": "猫、預かるよ。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 95.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 96.8,
+      "speaker": "男",
+      "text": "猫、預かってもらえる？"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 101.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 102.3,
+      "speaker": "男",
+      "text": "猫、預けてくれない？"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 107.0,
+      "speaker": "ナレーション",
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 108.5,
+      "speaker": "女",
+      "text": "店で商品のパンフレットがほしいです。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 115.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 116.3,
+      "speaker": "女",
+      "text": "パンフレットをもらってもいいですか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 121.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 122.3,
+      "speaker": "女",
+      "text": "パンフレットをいただけますか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 126.8,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 128.0,
+      "speaker": "女",
+      "text": "パンフレットをもらってくださいませんか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 133.0,
+      "speaker": "ナレーション",
+      "text": "6"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 134.5,
+      "speaker": "男",
+      "text": "友達の辞書を使いたいです。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 140.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 141.8,
+      "speaker": "男",
+      "text": "辞書、借りてくれない？"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 146.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 147.3,
+      "speaker": "男",
+      "text": "辞書、貸してもいい？"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 151.5,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 152.8,
+      "speaker": "男",
+      "text": "辞書、貸してもらえる？"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 157.5,
+      "speaker": "ナレーション",
+      "text": "7"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 159.0,
+      "speaker": "女",
+      "text": "わからないところを先生に質問します。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 165.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 166.8,
+      "speaker": "女",
+      "text": "ここ、聞いていただきたいんですけど。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 171.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 172.8,
+      "speaker": "女",
+      "text": "ここ、教えてもよろしいでしょうか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 177.5,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 178.8,
+      "speaker": "女",
+      "text": "ここ、教えていただけませんか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 184.0,
+      "speaker": "ナレーション",
+      "text": "8"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 185.5,
+      "speaker": "男",
+      "text": "大学で隣の席の人に教科書を見せてもらいます。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 192.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 193.8,
+      "speaker": "男",
+      "text": "あの、教科書、見せてくれませんか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 198.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 199.8,
+      "speaker": "男",
+      "text": "あの、教科書、見せてもいいでしょうか。"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 204.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track16",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/16 Track 16.mp3",
+      "trackLabel": "練習2-B [A16]",
+      "time": 205.3,
+      "speaker": "男",
+      "text": "あの、教科書、見てほしいんですけど。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 0.0,
+      "speaker": "ナレーション",
+      "text": "練習 3"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 2.9,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 4.4,
+      "speaker": "男",
+      "text": "教室の窓が開きません。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 10.6,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 11.9,
+      "speaker": "男",
+      "text": "窓を開けてもよろしいでしょうか。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 16.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 17.8,
+      "speaker": "男",
+      "text": "この窓、開かないんですが。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 22.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 23.3,
+      "speaker": "男",
+      "text": "この窓、開けませんか。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 27.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 29.0,
+      "speaker": "女",
+      "text": "会社でほかの人がたくさん荷物を持っています。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 36.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 37.3,
+      "speaker": "女",
+      "text": "荷物、持ってあげますか。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 41.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 42.8,
+      "speaker": "女",
+      "text": "荷物、持ったらいいですか。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 47.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 48.3,
+      "speaker": "女",
+      "text": "荷物、持ちましょうか。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 53.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 54.5,
+      "speaker": "男",
+      "text": "友達のシャツがソースで汚れています。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 61.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 62.3,
+      "speaker": "男",
+      "text": "シャツにソースがついていますよ。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 67.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 68.3,
+      "speaker": "男",
+      "text": "ソースはそこにありますよ。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 72.5,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 73.8,
+      "speaker": "男",
+      "text": "シャツにソースがつきますよ。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 78.5,
+      "speaker": "ナレーション",
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 80.0,
+      "speaker": "女",
+      "text": "レストランで自分のスプーンが落ちました。店の人に何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 87.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 88.8,
+      "speaker": "女",
+      "text": "スプーン、落ちましたよ。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 93.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 94.3,
+      "speaker": "女",
+      "text": "スプーン、落としちゃったんですが。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 99.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 100.3,
+      "speaker": "女",
+      "text": "スプーン、持ってきてもいいですか。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 105.0,
+      "speaker": "ナレーション",
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 106.5,
+      "speaker": "男",
+      "text": "会社でほかの人の仕事を手伝います。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 113.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 114.3,
+      "speaker": "男",
+      "text": "手伝っていただきます。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 118.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 119.8,
+      "speaker": "男",
+      "text": "お手伝いしますよ。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 124.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 125.3,
+      "speaker": "男",
+      "text": "お手伝いしませんか。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 130.0,
+      "speaker": "ナレーション",
+      "text": "6"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 131.5,
+      "speaker": "女",
+      "text": "電車の中にかばんを忘れました。駅員に何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 138.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 139.8,
+      "speaker": "女",
+      "text": "電車の中にかばんを忘れていますよ。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 144.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 145.8,
+      "speaker": "女",
+      "text": "電車の中にかばんがありますか。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 150.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 151.3,
+      "speaker": "女",
+      "text": "電車の中に忘れ物をしたんですけど。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 156.5,
+      "speaker": "ナレーション",
+      "text": "7"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 158.0,
+      "speaker": "男",
+      "text": "今日は図書館は休みです。図書館に行こうとしている友達に何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 166.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 167.3,
+      "speaker": "男",
+      "text": "今日は図書館は閉まってるよ。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 171.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 172.8,
+      "speaker": "男",
+      "text": "今日は図書館で休んでるよ。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 177.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 178.3,
+      "speaker": "男",
+      "text": "図書館、閉まると思うよ。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 183.0,
+      "speaker": "ナレーション",
+      "text": "8"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 184.5,
+      "speaker": "女",
+      "text": "前を歩いている人の手袋を拾いました。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 191.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 192.3,
+      "speaker": "女",
+      "text": "これは手袋ですよ。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 196.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 197.8,
+      "speaker": "女",
+      "text": "手袋、落としましたよ。"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 202.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track17",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/17 Track 17.mp3",
+      "trackLabel": "練習3 [A17]",
+      "time": 203.3,
+      "speaker": "女",
+      "text": "手袋、拾ったらどうですか。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 0.0,
+      "speaker": "ナレーション",
+      "text": "練習 4"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 2.7,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 4.2,
+      "speaker": "女",
+      "text": "会社で先輩より先に帰ります。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 11.3,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 12.5,
+      "speaker": "女",
+      "text": "お先に失礼します。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 16.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 17.8,
+      "speaker": "女",
+      "text": "おじゃまします。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 21.8,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 23.0,
+      "speaker": "女",
+      "text": "お世話になりました。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 27.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 28.5,
+      "speaker": "男",
+      "text": "会社で部長に話したいことがあります。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 35.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 36.8,
+      "speaker": "男",
+      "text": "ごめんください。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 40.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 41.8,
+      "speaker": "男",
+      "text": "ちょっとよろしいですか。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 46.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 47.3,
+      "speaker": "男",
+      "text": "お世話になります。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 51.5,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 53.0,
+      "speaker": "女",
+      "text": "風邪を引いた人が早く帰ります。その人に何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 59.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 60.8,
+      "speaker": "女",
+      "text": "お大事に。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 64.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 65.8,
+      "speaker": "女",
+      "text": "お元気で。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 69.8,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 71.0,
+      "speaker": "女",
+      "text": "お先に。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 75.0,
+      "speaker": "ナレーション",
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 76.5,
+      "speaker": "男",
+      "text": "先生に久しぶりに会いました。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 83.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 84.3,
+      "speaker": "男",
+      "text": "お待たせしました。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 88.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 89.8,
+      "speaker": "男",
+      "text": "失礼いたしました。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 94.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 95.3,
+      "speaker": "男",
+      "text": "ごぶさたしております。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 100.0,
+      "speaker": "ナレーション",
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 101.5,
+      "speaker": "女",
+      "text": "お客さんに席を勧めます。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 107.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 108.8,
+      "speaker": "女",
+      "text": "お口に合うかどうか。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 113.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 114.3,
+      "speaker": "女",
+      "text": "お出かけください。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 118.5,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 119.8,
+      "speaker": "女",
+      "text": "おかけください。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 124.0,
+      "speaker": "ナレーション",
+      "text": "6"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 125.5,
+      "speaker": "男",
+      "text": "先生に今から話せるかどうか聞きます。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 132.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 133.3,
+      "speaker": "男",
+      "text": "お話をしたいでしょうか。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 137.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 138.8,
+      "speaker": "男",
+      "text": "お時間ありますか。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 143.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 144.3,
+      "speaker": "男",
+      "text": "何か問題がありますか。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 149.0,
+      "speaker": "ナレーション",
+      "text": "7"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 150.5,
+      "speaker": "女",
+      "text": "社長室に入ります。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 156.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 157.3,
+      "speaker": "女",
+      "text": "失礼します。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 161.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 162.3,
+      "speaker": "女",
+      "text": "ごめんください。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 166.5,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 167.8,
+      "speaker": "女",
+      "text": "うかがいます。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 172.0,
+      "speaker": "ナレーション",
+      "text": "8"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 173.5,
+      "speaker": "男",
+      "text": "会社の人があしたから出張に行きます。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 180.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 181.8,
+      "speaker": "男",
+      "text": "行ってきます。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 185.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 186.8,
+      "speaker": "男",
+      "text": "お気をつけて。"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 191.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track18",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/18 Track 18.mp3",
+      "trackLabel": "練習4 [A18]",
+      "time": 192.3,
+      "speaker": "男",
+      "text": "お元気で。"
+    },
+    {
+      "trackId": "cd1-track19",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/19 Track 19.mp3",
+      "trackLabel": "確認問題 [A19]",
+      "time": 0.0,
+      "speaker": "ナレーション",
+      "text": "確認問題"
+    },
+    {
+      "trackId": "cd1-track19",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/19 Track 19.mp3",
+      "trackLabel": "確認問題 [A19]",
+      "time": 2.0,
+      "speaker": "ナレーション",
+      "text": "絵を見ながら質問を聞いてください。矢印の人は何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track19",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/19 Track 19.mp3",
+      "trackLabel": "確認問題 [A19]",
+      "time": 12.0,
+      "speaker": "ナレーション",
+      "text": "1から3の中から、最も良いものを1つ選んでください。"
+    },
+    {
+      "trackId": "cd1-track19",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/19 Track 19.mp3",
+      "trackLabel": "確認問題 [A19]",
+      "time": 21.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track19",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/19 Track 19.mp3",
+      "trackLabel": "確認問題 [A19]",
+      "time": 22.8,
+      "speaker": "女",
+      "text": "先生に推薦状を書いてもらいたいです。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track19",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/19 Track 19.mp3",
+      "trackLabel": "確認問題 [A19]",
+      "time": 31.0,
+      "speaker": "女",
+      "text": "1 推薦状を書いてもいいですか。"
+    },
+    {
+      "trackId": "cd1-track19",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/19 Track 19.mp3",
+      "trackLabel": "確認問題 [A19]",
+      "time": 36.0,
+      "speaker": "女",
+      "text": "2 推薦状を書いていただけませんか。"
+    },
+    {
+      "trackId": "cd1-track19",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/19 Track 19.mp3",
+      "trackLabel": "確認問題 [A19]",
+      "time": 41.0,
+      "speaker": "女",
+      "text": "3 推薦状をお書きしましょうか。"
+    },
+    {
+      "trackId": "cd1-track19",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/19 Track 19.mp3",
+      "trackLabel": "確認問題 [A19]",
+      "time": 47.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track19",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/19 Track 19.mp3",
+      "trackLabel": "確認問題 [A19]",
+      "time": 49.2,
+      "speaker": "女",
+      "text": "友達がかさがなくて困っているようです。何と言いますか。"
+    },
+    {
+      "trackId": "cd1-track19",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/19 Track 19.mp3",
+      "trackLabel": "確認問題 [A19]",
+      "time": 57.5,
+      "speaker": "女",
+      "text": "1 かさ、借りてくれない？"
+    },
+    {
+      "trackId": "cd1-track19",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/19 Track 19.mp3",
+      "trackLabel": "確認問題 [A19]",
+      "time": 62.0,
+      "speaker": "女",
+      "text": "2 かさ、貸したらどう？"
+    },
+    {
+      "trackId": "cd1-track19",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/19 Track 19.mp3",
+      "trackLabel": "確認問題 [A19]",
+      "time": 66.5,
+      "speaker": "女",
+      "text": "3 かさ、貸そうか。"
+    }
+  ]
+}

@@ -7,18 +7,22 @@
   "mondaiNumber": 1,
   "title": "問題1",
   "mondaiHeader": "まとまりのある話から依頼や指示、提案などを聞き取り、何をするべきかを考える問題です。選択肢は問題用紙に書かれていて、絵があるものと文字だけのものがあります。実際の試験では、問題の前に練習があります。",
+  "mondaiHeaderEn": "The problem is to listen carefully and pick up the requests, instructions and suggestions of a coherent conversation or spoken statement and to think what should be done. On the problem sheet, the choices are shown in written form or as illustrations. In the actual examination there will be an exercise before the problem is presented.",
   "instruction": "この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の１から４の中から、最もよいものを一つえらんでください。",
   "hotspots": [
     {
       "id": "hotspot-1",
       "trackId": "cd1-track01",
       "audioSrc": "/audio/shinkanzen_listening/CD1/01 Track 1.mp3",
-      "label": "例題1 [A-01]"
+      "label": "例題1 [A-01]",
+      "trackCode": "A-01"
     }
   ],
   "questions": [
     {
-      "questionText": "男の学生はまず何をしなければなりませんか。",
+      "label": "例題 1",
+      "trackCode": "A-01",
+      "questionText": "<ruby>男<rt>おとこ</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>はまず<ruby>何<rt>なに</rt></ruby>をしなければなりませんか。",
       "instruction": "この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の１から４の中から、最もよいものを一つえらんでください。",
       "options": [
         "1. 写真を準備する",
@@ -30,50 +34,38 @@
         "index": 1,
         "text": "2. 原稿を直す"
       },
-      "explanation": "<b>【正解】2</b><br/>質問で「まず」と言っているので、最初にすることを考えます。先生は「原稿ができていない」と言った後、「すぐにやって、見せて」と言っています。学生は「はい」と言って指示に同意し、「書き直すのはまとめのところだけでいい（か）」と確認しているので、<b>2</b>が答えです。<br/>このように、指示や依頼などするべきことを示す言葉や、相手が同意しているかどうかに注意します。",
-      "context": "日本語のクラスで女の先生が発表の準備について話しています。"
+      "explanation": "<ruby>質問<rt>しつもん</rt></ruby>で「まず」と<ruby>言<rt>い</rt></ruby>っているので、<ruby>最初<rt>さいしょ</rt></ruby>にすることを<ruby>考<rt>かんが</rt></ruby>えます。<ruby>先生<rt>せんせい</rt></ruby>は「<ruby>原稿<rt>げんこう</rt></ruby>ができていない」と<ruby>言<rt>い</rt></ruby>った<ruby>後<rt>あと</rt></ruby>、「すぐにやって、<ruby>見<rt>み</rt></ruby>せて」と<ruby>言<rt>い</rt></ruby>っています。<ruby>学生<rt>がくせい</rt></ruby>は「はい」と<ruby>言<rt>い</rt></ruby>って<ruby>指示<rt>しじ</rt></ruby>に<ruby>同意<rt>どうい</rt></ruby>し、「<ruby>書<rt>か</rt></ruby>き<ruby>直<rt>なお</rt></ruby>すのはまとめのところだけでいい（か）」と<ruby>確認<rt>かくにん</rt></ruby>しているので、<b>2</b>が<ruby>答<rt>こた</rt></ruby>えです。<br/><br/>このように、<ruby>指示<rt>しじ</rt></ruby>や<ruby>依頼<rt>いらい</rt></ruby>などするべきことを<ruby>示<rt>しめ</rt></ruby>す<ruby>言葉<rt>ことば</rt></ruby>や、<ruby>相手<rt>あいて</rt></ruby>が<ruby>同意<rt>どうい</rt></ruby>しているかどうかに<ruby>注意<rt>ちゅうい</rt></ruby>します。",
+      "explanationEn": "Since the question says「まず (first)」, one should think about what is done at the beginning. The teacher has said「原稿ができていない (the manuscript is not ready yet)」and「すぐにやって、見せて (do it first and let me see it)」. As the student says「はい (yes)」, agreeing to the teacher's instructions, and then asks「書き直すのはまとめのところだけでいい(か) (Is it okay to only rewrite the conclusion?)」, the correct answer is 2.<br/><br/>In this manner, attention will be focused on the words expressing what should be done, that is, on words that denote an instruction or request, and on whether or not the opposite party has given its consent to the instruction or request."
     }
   ],
   "transcript": [
     {
-      "time": 0,
-      "speaker": "指示",
-      "text": "例題1　この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の１から４の中から、最もよいものを一つえらんでください。"
-    },
-    {
-      "time": 21,
       "speaker": "ナレーション",
-      "text": "日本語のクラスで女の先生が発表の準備について話しています。男の学生はまず何をしなければなりませんか。"
+      "text": "<ruby>日本語<rt>にほんご</rt></ruby>のクラスで<ruby>女<rt>おんな</rt></ruby>の<ruby>先生<rt>せんせい</rt></ruby>が<ruby>発表<rt>はっぴょう</rt></ruby>の<ruby>準備<rt>じゅんび</rt></ruby>について<ruby>話<rt>はな</rt></ruby>しています。<ruby>男<rt>おとこ</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>はまず<ruby>何<rt>なに</rt></ruby>をしなければなりませんか。"
     },
     {
-      "time": 39,
       "speaker": "女",
-      "text": "先週お話ししたように、あさっての授業では発表をしてもらいますから、準備しておいてください。"
+      "text": "<ruby>先週<rt>せんしゅう</rt></ruby>お<ruby>話<rt>はな</rt></ruby>ししたように、あさっての<ruby>授業<rt>じゅぎょう</rt></ruby>では<ruby>発表<rt>はっぴょう</rt></ruby>をしてもらいますから、<ruby>準備<rt>じゅんび</rt></ruby>しておいてください。"
     },
     {
-      "time": 48,
       "speaker": "男",
-      "text": "発表の時パソコンを使ってもいいですか。写真を見せたいんですけど。"
+      "text": "<ruby>発表<rt>はっぴょう</rt></ruby>の<ruby>時<rt>とき</rt></ruby>パソコンを<ruby>使<rt>つか</rt></ruby>ってもいいですか。<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>見<rt>み</rt></ruby>せたいんですけど。"
     },
     {
-      "time": 54,
       "speaker": "女",
-      "text": "いいですけど、リーさんはまだ原稿ができていないでしょう？ 写真だけでは発表になりませんよ。すぐにやって、見せてください。"
+      "text": "いいですけど、リーさんはまだ<ruby>原稿<rt>げんこう</rt></ruby>ができていないでしょう？<ruby>写真<rt>しゃしん</rt></ruby>だけでは<ruby>発表<rt>はっぴょう</rt></ruby>になりませんよ。すぐにやって、<ruby>見<rt>み</rt></ruby>せてください。"
     },
     {
-      "time": 66,
       "speaker": "男",
-      "text": "はい。書き直すのはまとめのところだけでいいですか。"
+      "text": "はい。<ruby>書<rt>か</rt></ruby>き<ruby>直<rt>なお</rt></ruby>すのはまとめのところだけでいいですか。"
     },
     {
-      "time": 71,
       "speaker": "女",
-      "text": "ええ、そこがちょっとわかりにくいので、もう少し直さないと。ほかの準備は原稿が完成してからでいいです。それから、あしたはグループで発表の練習をするので、漢字の読み方も確認してきてくださいね。"
+      "text": "ええ、そこがちょっとわかりにくいので、もう<ruby>少<rt>すこ</rt></ruby>し<ruby>直<rt>なお</rt></ruby>さないと。ほかの<ruby>準備<rt>じゅんび</rt></ruby>は<ruby>原稿<rt>げんこう</rt></ruby>が<ruby>完成<rt>かんせい</rt></ruby>してからでいいです。それから、あしたはグループで<ruby>発表<rt>はっぴょう</rt></ruby>の<ruby>練習<rt>れんしゅう</rt></ruby>をするので、<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>も<ruby>確認<rt>かくにん</rt></ruby>してきてくださいね。"
     },
     {
-      "time": 91,
-      "speaker": "ナレーション",
-      "text": "男の学生はまず何をしなければなりませんか。"
+      "speaker": "質問",
+      "text": "<ruby>男<rt>おとこ</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>はまず<ruby>何<rt>なに</rt></ruby>をしなければなりませんか。"
     }
   ]
 }

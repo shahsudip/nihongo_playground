@@ -1,0 +1,3666 @@
+{
+  "bookId": "shinkanzen-master-n3-listening",
+  "chapterId": "skill-3",
+  "part": 2,
+  "partTitle": "第2部：実力養成編",
+  "partTitleEn": "Skill Building: Immediate Response",
+  "mondaiNumber": 3,
+  "order": 3,
+  "title": "第3単元：「即時応答」のスキルを学ぶ",
+  "mondaiHeader": "【第3単元：「即時応答」のスキルを学ぶ】\n質問、報告、依頼、あいさつなどの短い文を聞いた後、すぐにそれに合う答え方を選ぶ問題（第5問形式）です。以下の4つの重要な聞き取り・返答ポイントを習得します：\n1. だれの動作かに注意する（敬語：尊敬語と謙譲語の主体の聞き分け）\n2. 間違えやすい表現（「〜ましょうか」「〜ませんか」「〜ない？」などの意味・主体の違い）\n3. 会話でよく使われる表現や決まった答え方（口語短縮形、挨拶の定型返答）\n4. 間接的な答え方に注意する（「はい」「いいえ」を直接言わずに理由や状況を伝える表現）",
+  "instruction": "音声を聞いて、それぞれの指示に従って正しい答えを一つえらんでください。",
+  "hotspots": [
+    {
+      "id": "hotspot-1",
+      "trackId": "cd1-track20",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "label": "練習1-A [A20]"
+    },
+    {
+      "id": "hotspot-2",
+      "trackId": "cd1-track21",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "label": "練習1-B [A21]"
+    },
+    {
+      "id": "hotspot-3",
+      "trackId": "cd1-track22",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "label": "練習2-A [A22]"
+    },
+    {
+      "id": "hotspot-4",
+      "trackId": "cd1-track23",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "label": "練習2-B [A23]"
+    },
+    {
+      "id": "hotspot-5",
+      "trackId": "cd1-track24",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/24 Track 24.mp3",
+      "label": "例1・2 [A24]"
+    },
+    {
+      "id": "hotspot-6",
+      "trackId": "cd1-track25",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "label": "練習3 [A25]"
+    },
+    {
+      "id": "hotspot-7",
+      "trackId": "cd1-track26",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "label": "確認問題 [A26]"
+    }
+  ],
+  "questions": [
+    {
+      "sectionTitle": "練習1-A 敬語",
+      "badge": "練習1-A (例)",
+      "subtitle": "1-A だれの動作かに注意する（敬語）",
+      "trackId": "cd1-track20",
+      "trackLabel": "練習1-A [A20]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：これ、召し上がりませんか。",
+      "questionText": "<b>女：これ、召し上がりませんか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. はい、いただきます。",
+        "b. はい、まいります。",
+        "c. はい、うかがいます。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. はい、いただきます。"
+      },
+      "explanation": "<b>【正解】a</b><br/>「召し上がる」は「食べる・飲む」の尊敬語です。相手からの勧めに答えて自分が食べるので、「食べる」の謙譲語 <b>a「いただきます」</b> が適切です。<br/>b「まいる」・c「うかがう」は「行く・来る」の謙譲語です。"
+    },
+    {
+      "sectionTitle": "練習1-A 敬語",
+      "badge": "練習1-A (1)",
+      "subtitle": "1-A だれの動作かに注意する（敬語）",
+      "trackId": "cd1-track20",
+      "trackLabel": "練習1-A [A20]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：土曜日、よかったらうちに<ruby>いらっしゃいませんか<rt>・</rt></ruby>。",
+      "questionText": "<b>男：土曜日、よかったらうちに<ruby>いらっしゃいませんか<rt>・</rt></ruby>。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. はい、喜んで行かせます。",
+        "b. はい、喜んでうかがいます。",
+        "c. はい、喜んでいただきます。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. はい、喜んでうかがいます。"
+      },
+      "explanation": "<b>【正解】b</b><br/>「いらっしゃる」は「行く・来る」の尊敬語で、相手の家への招待です。自分が相手の家を訪問するので、「行く・訪問する」の謙譲語 <b>b「うかがいます」</b> が正解です。<br/>a「行かせる」は使役、c「いただく」はもらう・食べるの謙譲語です。"
+    },
+    {
+      "sectionTitle": "練習1-A 敬語",
+      "badge": "練習1-A (2)",
+      "subtitle": "1-A だれの動作かに注意する（敬語）",
+      "trackId": "cd1-track20",
+      "trackLabel": "練習1-A [A20]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：申込書の書き方はこれでいいでしょうか。",
+      "questionText": "<b>女：申込書の書き方はこれでいいでしょうか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. じゃ、ちょっと拝見しますね。",
+        "b. じゃ、ちょっとご覧になってください。",
+        "c. じゃ、ちょっとお目にかかりましょう。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. じゃ、ちょっと拝見しますね。"
+      },
+      "explanation": "<b>【正解】a</b><br/>相手の申込書を確認する場面です。相手の書類を自分が見るので、「見る」の謙譲語 <b>a「拝見します」</b> が適切です。<br/>b「ご覧になる」は「見る」の尊敬語、c「お目にかかる」は「会う」の謙譲語です。"
+    },
+    {
+      "sectionTitle": "練習1-A 敬語",
+      "badge": "練習1-A (3)",
+      "subtitle": "1-A だれの動作かに注意する（敬語）",
+      "trackId": "cd1-track20",
+      "trackLabel": "練習1-A [A20]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：これ、1枚もらってもいいですか。",
+      "questionText": "<b>女：これ、1枚もらってもいいですか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. ご自由にお取りください。",
+        "b. いつでもいただきますよ。",
+        "c. どなたでもくださいますよ。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. ご自由にお取りください。"
+      },
+      "explanation": "<b>【正解】a</b><br/>相手が「もらってもいいですか」と許可を求めてきたので、相手に取ることを勧める <b>a「ご自由にお取りください」</b> が適切です。<br/>b「いただく」は自分がもらう謙譲語、c「くださる」は相手が自分にくれる尊敬語で文脈に合いません。"
+    },
+    {
+      "sectionTitle": "練習1-A 敬語",
+      "badge": "練習1-A (4)",
+      "subtitle": "1-A だれの動作かに注意する（敬語）",
+      "trackId": "cd1-track20",
+      "trackLabel": "練習1-A [A20]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：すみません。よく聞き取れなかったのですが……。",
+      "questionText": "<b>女：すみません。よく聞き取れなかったのですが……。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. では、もう一度ご説明いたします。",
+        "b. では、もう一度ご説明なさいます。",
+        "c. では、もう一度ご説明になります。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. では、もう一度ご説明いたします。"
+      },
+      "explanation": "<b>【正解】a</b><br/>相手が聞き取れなかったので、自分がもう一度説明します。自分の動作をへりくだる謙譲語 <b>a「ご説明いたします」</b> が適切です。<br/>b「〜なさる」・c「〜になる」は尊敬語なので、自分の動作には使えません。"
+    },
+    {
+      "sectionTitle": "練習1-A 敬語",
+      "badge": "練習1-A (5)",
+      "subtitle": "1-A だれの動作かに注意する（敬語）",
+      "trackId": "cd1-track20",
+      "trackLabel": "練習1-A [A20]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：あの、何かご用でしょうか。",
+      "questionText": "<b>男：あの、何かご用でしょうか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. 田中さんを拝見したいのですが。",
+        "b. 田中さんにお会いになるのですが。",
+        "c. 田中さんにお目にかかりたいのですが。"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "c. 田中さんにお目にかかりたいのですが。"
+      },
+      "explanation": "<b>【正解】c</b><br/>訪問先で田中さんに会いたいという自分の希望を伝えます。「会う」の謙譲語 <b>c「お目にかかりたいのですが」</b> が適切です。<br/>a「拝見する」は見る、b「お会いになる」は尊敬語です。"
+    },
+    {
+      "sectionTitle": "練習1-A 敬語",
+      "badge": "練習1-A (6)",
+      "subtitle": "1-A だれの動作かに注意する（敬語）",
+      "trackId": "cd1-track20",
+      "trackLabel": "練習1-A [A20]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：パソコン、使わせていただきたいんですが。",
+      "questionText": "<b>女：パソコン、使わせていただきたいんですが。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. あちらのを使わせていただけませんか。",
+        "b. あちらのをお使いください。",
+        "c. あちらのを使われますよ。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. あちらのをお使いください。"
+      },
+      "explanation": "<b>【正解】b</b><br/>パソコンを使いたいという申し出に対し、利用を許可・案内する場面です。相手に対して勧める尊敬語 <b>b「お使いください」</b> が適切です。<br/>aは自分が相手に依頼する表現、cは受動表現で不自然です。"
+    },
+    {
+      "sectionTitle": "練習1-A 敬語",
+      "badge": "練習1-A (7)",
+      "subtitle": "1-A だれの動作かに注意する（敬語）",
+      "trackId": "cd1-track20",
+      "trackLabel": "練習1-A [A20]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：あの、お客様、ご予約はされましたか。",
+      "questionText": "<b>男：あの、お客様、ご予約はされましたか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. いえ、されていませんが。",
+        "b. ええ、昨日、電話いたしました。",
+        "c. ええ、お電話でなさいましたが。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. ええ、昨日、電話いたしました。"
+      },
+      "explanation": "<b>【正解】b</b><br/>予約したかどうか尋ねられ、自分が電話で予約したことを伝えます。自分の動作をへりくだる <b>b「昨日、電話いたしました」</b> が適切です。<br/>a「されていません」は身内の行為に対する尊敬表現の誤用、c「なさいました」は相手への尊敬語です。"
+    },
+    {
+      "sectionTitle": "練習1-A 敬語",
+      "badge": "練習1-A (8)",
+      "subtitle": "1-A だれの動作かに注意する（敬語）",
+      "trackId": "cd1-track20",
+      "trackLabel": "練習1-A [A20]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：今朝の新聞、お読みになりましたか。",
+      "questionText": "<b>男：今朝の新聞、お読みになりましたか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. いいえ、読んでいませんが。",
+        "b. いえ、お読みしませんでした。",
+        "c. いえ、拝見したいんですが。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. いいえ、読んでいませんが。"
+      },
+      "explanation": "<b>【正解】a</b><br/>新聞を読んだか尋ねられ、読んでいないと答えます。自分の動作なので普通の丁寧形 <b>a「読んでいませんが」</b> が適切です。<br/>b「お読みしませんでした」は不自然な謙譲語、c「拝見したい」は見たいという希望で質問への答えになっていません。"
+    },
+    {
+      "sectionTitle": "練習1-A 敬語",
+      "badge": "練習1-A (9)",
+      "subtitle": "1-A だれの動作かに注意する（敬語）",
+      "trackId": "cd1-track20",
+      "trackLabel": "練習1-A [A20]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：どなたがいらっしゃったんですか。",
+      "questionText": "<b>女：どなたがいらっしゃったんですか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. 京都におりました。",
+        "b. 昨日おいでになりました。",
+        "c. うちの父がまいりました。"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "c. うちの父がまいりました。"
+      },
+      "explanation": "<b>【正解】c</b><br/>誰が来たのか尋ねられ、自分の身内（父）が来たと答えます。身内の「行く・来る」には謙譲語 <b>c「まいりました」</b> を使います。<br/>a「おりました」は場所を表し、b「おいでになりました」は身内に尊敬語を使っているので不適切です。"
+    },
+    {
+      "sectionTitle": "練習1-A 敬語",
+      "badge": "練習1-A (10)",
+      "subtitle": "1-A だれの動作かに注意する（敬語）",
+      "trackId": "cd1-track20",
+      "trackLabel": "練習1-A [A20]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：何名様ですか。",
+      "questionText": "<b>女：何名様ですか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. 4人です。",
+        "b. 田中と申します。",
+        "c. いえ、鈴木です。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 4人です。"
+      },
+      "explanation": "<b>【正解】a</b><br/>「何名様ですか」は人数の確認です。人数を答える <b>a「4人です」</b> が適切です。<br/>b・cは名前を名乗る返答です。"
+    },
+    {
+      "sectionTitle": "練習1-B 間違えやすい表現",
+      "badge": "練習1-B (例)",
+      "subtitle": "1-B 申し出・勧誘・確認の聞き分け",
+      "trackId": "cd1-track21",
+      "trackLabel": "練習1-B [A21]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：この本、よかったですよ。読みますか。",
+      "questionText": "<b>女：この本、よかったですよ。読みますか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. ええ、読みましょう。",
+        "b. はい、読みます。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. はい、読みます。"
+      },
+      "explanation": "<b>【正解】b</b><br/>「読みますか」と勧められたので、自分が読む意志を答える <b>b「はい、読みます」</b> が適切です。<br/>a「読みましょう」は一緒に読もうと勧誘・合意する表現です。"
+    },
+    {
+      "sectionTitle": "練習1-B 間違えやすい表現",
+      "badge": "練習1-B (1)",
+      "subtitle": "1-B 申し出・勧誘・確認の聞き分け",
+      "trackId": "cd1-track21",
+      "trackLabel": "練習1-B [A21]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：もう3時ですね。そろそろ行きませんか。",
+      "questionText": "<b>男：もう3時ですね。そろそろ行きませんか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. いいえ、行きますよ。",
+        "b. ええ、行きましょう。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. ええ、行きましょう。"
+      },
+      "explanation": "<b>【正解】b</b><br/>「行きませんか」は一緒に行こうという勧誘・提案です。同意して <b>b「ええ、行きましょう」</b> と応じるのが適切です。<br/>aは「いいえ（否定）」と「行きますよ（肯定）」が矛盾しています。"
+    },
+    {
+      "sectionTitle": "練習1-B 間違えやすい表現",
+      "badge": "練習1-B (2)",
+      "subtitle": "1-B 申し出・勧誘・確認の聞き分け",
+      "trackId": "cd1-track21",
+      "trackLabel": "練習1-B [A21]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：暑くないですか。エアコン、つけましょうか。",
+      "questionText": "<b>女：暑くないですか。エアコン、つけましょうか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. ええ、つけてください。",
+        "b. ええ、つけませんか。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. ええ、つけてください。"
+      },
+      "explanation": "<b>【正解】a</b><br/>相手の親切な申し出「〜ましょうか」に対して、お願いする <b>a「ええ、つけてください」</b> が適切です。<br/>b「つけませんか」は相手に勧誘する形になり不自然です。"
+    },
+    {
+      "sectionTitle": "練習1-B 間違えやすい表現",
+      "badge": "練習1-B (3)",
+      "subtitle": "1-B 申し出・勧誘・確認の聞き分け",
+      "trackId": "cd1-track21",
+      "trackLabel": "練習1-B [A21]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：あ、薬を飲まれるなら、水をお持ちしましょう。",
+      "questionText": "<b>男：あ、薬を飲まれるなら、水をお持ちしましょう。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. すみません。お願いします。",
+        "b. ええ、持ちますよ。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. すみません。お願いします。"
+      },
+      "explanation": "<b>【正解】a</b><br/>相手の申し出「お持ちしましょう」に対し、感謝してお願いする <b>a「すみません。お願いします」</b> が適切です。<br/>b「持ちますよ」は自分が水を持つと言っており文脈が合いません。"
+    },
+    {
+      "sectionTitle": "練習1-B 間違えやすい表現",
+      "badge": "練習1-B (4)",
+      "subtitle": "1-B 申し出・勧誘・確認の聞き分け",
+      "trackId": "cd1-track21",
+      "trackLabel": "練習1-B [A21]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：今度の会議で司会をしませんか。",
+      "questionText": "<b>女：今度の会議で司会をしませんか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. はい、させていただきます。",
+        "b. ええ、させませんよ。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. はい、させていただきます。"
+      },
+      "explanation": "<b>【正解】a</b><br/>司会をやらないかと勧め・依頼されたので、引き受ける謙譲表現 <b>a「はい、させていただきます」</b> が適切です。<br/>bは拒絶・禁止の形になり不自然です。"
+    },
+    {
+      "sectionTitle": "練習1-B 間違えやすい表現",
+      "badge": "練習1-B (5)",
+      "subtitle": "1-B 申し出・勧誘・確認の聞き分け",
+      "trackId": "cd1-track21",
+      "trackLabel": "練習1-B [A21]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：今年の夏の旅行はどこがいいでしょうか。",
+      "questionText": "<b>男：今年の夏の旅行はどこがいいでしょうか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. 今年も富士山にしましょうか。",
+        "b. 今年も富士山にします。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 今年も富士山にしましょうか。"
+      },
+      "explanation": "<b>【正解】a</b><br/>相手と相談しながら提案しているので、相手の意向を伺う <b>a「今年も富士山にしましょうか」</b> が適切です。<br/>b「〜にします」は相談相手を無視して一方的に決める言い方です。"
+    },
+    {
+      "sectionTitle": "練習1-B 間違えやすい表現",
+      "badge": "練習1-B (6)",
+      "subtitle": "1-B 申し出・勧誘・確認の聞き分け",
+      "trackId": "cd1-track21",
+      "trackLabel": "練習1-B [A21]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：このDVD、面白かったから、よかったら見てみない？",
+      "questionText": "<b>女：このDVD、面白かったから、よかったら見てみない？</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. ありがとう、見てみるね。",
+        "b. ありがとう、見てみようね。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. ありがとう、見てみるね。"
+      },
+      "explanation": "<b>【正解】a</b><br/>相手からDVDを勧められたので、自分が試してみる <b>a「ありがとう、見てみるね」</b> が適切です。<br/>b「見てみようね」は一緒に見ようと相手を誘う形になり不自然です。"
+    },
+    {
+      "sectionTitle": "練習1-B 間違えやすい表現",
+      "badge": "練習1-B (7)",
+      "subtitle": "1-B 申し出・勧誘・確認の聞き分け",
+      "trackId": "cd1-track21",
+      "trackLabel": "練習1-B [A21]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：ごみ、捨てに行くけど、ついでにこれも捨ててこようか。",
+      "questionText": "<b>男：ごみ、捨てに行くけど、ついでにこれも捨ててこようか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. うん、お願い。",
+        "b. うん、捨てるよ。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. うん、お願い。"
+      },
+      "explanation": "<b>【正解】a</b><br/>相手が「捨ててこようか」と申し出てくれたので、依頼する <b>a「うん、お願い」</b> が適切です。<br/>b「捨てるよ」は自分が捨てると言っていることになり不自然です。"
+    },
+    {
+      "sectionTitle": "練習1-B 間違えやすい表現",
+      "badge": "練習1-B (8)",
+      "subtitle": "1-B 申し出・勧誘・確認の聞き分け",
+      "trackId": "cd1-track21",
+      "trackLabel": "練習1-B [A21]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：田中君。テニス部に入ったのね。面白いの？",
+      "questionText": "<b>女：田中君。テニス部に入ったのね。面白いの？</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. うん、佐藤さんも入らない？",
+        "b. うん、佐藤さんも入ろうか。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. うん、佐藤さんも入らない？"
+      },
+      "explanation": "<b>【正解】a</b><br/>佐藤さんをテニス部に勧誘する表現なので、疑問・勧誘の <b>a「うん、佐藤さんも入らない？」</b> が適切です。<br/>b「入ろうか」は話し手自身も一緒に入るニュアンスになり、既に入部している田中君の言葉として不自然です。"
+    },
+    {
+      "sectionTitle": "練習2-A 会話でよく使われる表現",
+      "badge": "練習2-A (1)",
+      "subtitle": "2-A 口語短縮形と文末表現",
+      "trackId": "cd1-track22",
+      "trackLabel": "練習2-A [A22]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：あした、来ないの？",
+      "questionText": "<b>女：あした、来ないの？</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. へえ、ないんだ。",
+        "b. ううん、行くよ。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. ううん、行くよ。"
+      },
+      "explanation": "<b>【正解】b</b><br/>「来ないの？」と来訪の有無を聞かれ、「ううん（否定＝行かないわけではない）、行くよ」と答える <b>b</b> が正解です。"
+    },
+    {
+      "sectionTitle": "練習2-A 会話でよく使われる表現",
+      "badge": "練習2-A (2)",
+      "subtitle": "2-A 口語短縮形と文末表現",
+      "trackId": "cd1-track22",
+      "trackLabel": "練習2-A [A22]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：これ、冷蔵庫に入れておかないと。",
+      "questionText": "<b>男：これ、冷蔵庫に入れておかないと。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. うん、入れてないよ。",
+        "b. うん、入れとくよ。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. うん、入れとくよ。"
+      },
+      "explanation": "<b>【正解】b</b><br/>「〜ておかないと（＝入れなくてはいけない）」に対し、「うん、入れとくよ（＝入れておくよ）」と引き受ける <b>b</b> が正解です。"
+    },
+    {
+      "sectionTitle": "練習2-A 会話でよく使われる表現",
+      "badge": "練習2-A (3)",
+      "subtitle": "2-A 口語短縮形と文末表現",
+      "trackId": "cd1-track22",
+      "trackLabel": "練習2-A [A22]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：大切だから、書いといて。",
+      "questionText": "<b>女：大切だから、書いといて。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. わかった。メモするよ。",
+        "b. ふーん、そうか。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. わかった。メモするよ。"
+      },
+      "explanation": "<b>【正解】a</b><br/>「書いといて（＝書いておいてください）」という依頼に対し、「わかった。メモするよ」と応じる <b>a</b> が正解です。"
+    },
+    {
+      "sectionTitle": "練習2-A 会話でよく使われる表現",
+      "badge": "練習2-A (4)",
+      "subtitle": "2-A 口語短縮形と文末表現",
+      "trackId": "cd1-track22",
+      "trackLabel": "練習2-A [A22]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：あの店、火曜日は休みだって。",
+      "questionText": "<b>男：あの店、火曜日は休みだって。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. そうなんだ。じゃ、あした行こう。",
+        "b. ありがとう。ゆっくり休むよ。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. そうなんだ。じゃ、あした行こう。"
+      },
+      "explanation": "<b>【正解】a</b><br/>「〜だって（＝〜だそうだ）」という情報伝達に対し、「そうなんだ。じゃ、あした行こう」と予定を変更する <b>a</b> が適切です。<br/>bは自分が休むことになっており文脈が合いません。"
+    },
+    {
+      "sectionTitle": "練習2-A 会話でよく使われる表現",
+      "badge": "練習2-A (5)",
+      "subtitle": "2-A 口語短縮形と文末表現",
+      "trackId": "cd1-track22",
+      "trackLabel": "練習2-A [A22]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：もう少し前の方に座ったらどう？",
+      "questionText": "<b>女：もう少し前の方に座ったらどう？</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. じゃ、座ってみたらいいよ。",
+        "b. いや、ここで大丈夫だよ。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. いや、ここで大丈夫だよ。"
+      },
+      "explanation": "<b>【正解】b</b><br/>「〜たらどう？」と席の移動を提案されたのに対し、「いや、ここで大丈夫だよ」と辞退する <b>b</b> が適切です。<br/>aは相手に勧める形になり不自然です。"
+    },
+    {
+      "sectionTitle": "練習2-A 会話でよく使われる表現",
+      "badge": "練習2-A (6)",
+      "subtitle": "2-A 口語短縮形と文末表現",
+      "trackId": "cd1-track22",
+      "trackLabel": "練習2-A [A22]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：忘れずに名前を書くようにね。",
+      "questionText": "<b>女：忘れずに名前を書くようにね。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. はい、わかりました。",
+        "b. ええ、そのようですね。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. はい、わかりました。"
+      },
+      "explanation": "<b>【正解】a</b><br/>「〜ようにね（＝〜してください）」という指示に対し、「はい、わかりました」と了解する <b>a</b> が適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 会話でよく使われる表現",
+      "badge": "練習2-A (7)",
+      "subtitle": "2-A 口語短縮形と文末表現",
+      "trackId": "cd1-track22",
+      "trackLabel": "練習2-A [A22]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：「かるた」って何か知ってる？",
+      "questionText": "<b>女：「かるた」って何か知ってる？</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. うん、テレビで見たことある。",
+        "b. ああ、そうなんだ。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. うん、テレビで見たことある。"
+      },
+      "explanation": "<b>【正解】a</b><br/>「〜って（＝というのは）」と知識を尋ねられたので、「うん、テレビで見たことある」と答える <b>a</b> が適切です。"
+    },
+    {
+      "sectionTitle": "練習2-A 会話でよく使われる表現",
+      "badge": "練習2-A (8)",
+      "subtitle": "2-A 口語短縮形と文末表現",
+      "trackId": "cd1-track22",
+      "trackLabel": "練習2-A [A22]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：なんで昨日、来なかったの？",
+      "questionText": "<b>男：なんで昨日、来なかったの？</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. 電車で来たんだよ。",
+        "b. おなかが痛かったんだ。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. おなかが痛かったんだ。"
+      },
+      "explanation": "<b>【正解】b</b><br/>「なんで（＝どうして）」と理由を聞かれているので、「おなかが痛かったんだ」と理由を答える <b>b</b> が適切です。<br/>aは交通手段を答えており不自然です。"
+    },
+    {
+      "sectionTitle": "練習2-A 会話でよく使われる表現",
+      "badge": "練習2-A (9)",
+      "subtitle": "2-A 口語短縮形と文末表現",
+      "trackId": "cd1-track22",
+      "trackLabel": "練習2-A [A22]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：お子さん、おいくつですか。",
+      "questionText": "<b>女：お子さん、おいくつですか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. 来月8歳になります。",
+        "b. 男の子が3人です。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 来月8歳になります。"
+      },
+      "explanation": "<b>【正解】a</b><br/>「おいくつ（＝何歳）」と年齢を聞かれているので、「来月8歳になります」と答える <b>a</b> が適切です。<br/>bは子どもの人数を答えています。"
+    },
+    {
+      "sectionTitle": "練習2-A 会話でよく使われる表現",
+      "badge": "練習2-A (10)",
+      "subtitle": "2-A 口語短縮形と文末表現",
+      "trackId": "cd1-track22",
+      "trackLabel": "練習2-A [A22]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：先生、何て言ってた？",
+      "questionText": "<b>女：先生、何て言ってた？</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. 休んじゃだめだって。",
+        "b. 忙しいんだね。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. 休んじゃだめだって。"
+      },
+      "explanation": "<b>【正解】a</b><br/>「何て言ってた？（＝何と言っていましたか）」と発言内容を尋ねられているので、「休んじゃだめだって（＝休んではだめだと言っていた）」と伝聞で答える <b>a</b> が適切です。"
+    },
+    {
+      "sectionTitle": "練習2-B 決まった答え方",
+      "badge": "練習2-B (1)",
+      "subtitle": "2-B 挨拶と決まり文句の返答",
+      "trackId": "cd1-track23",
+      "trackLabel": "練習2-B [A23]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：ごぶさたしております。お元気ですか。",
+      "questionText": "<b>女：ごぶさたしております。お元気ですか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. ええ、おかげさまで。",
+        "b. ええ、おかまいなく。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. ええ、おかげさまで。"
+      },
+      "explanation": "<b>【正解】a</b><br/>「お元気ですか」に対する決まった挨拶の返答は <b>a「ええ、おかげさまで」</b> です。<br/>b「おかまいなく」はもてなしを遠慮する言葉です。"
+    },
+    {
+      "sectionTitle": "練習2-B 決まった答え方",
+      "badge": "練習2-B (2)",
+      "subtitle": "2-B 挨拶と決まり文句の返答",
+      "trackId": "cd1-track23",
+      "trackLabel": "練習2-B [A23]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：あの、今ちょっとよろしいでしょうか。",
+      "questionText": "<b>男：あの、今ちょっとよろしいでしょうか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. ええ、どういたしまして。",
+        "b. ええ、何でしょうか。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. ええ、何でしょうか。"
+      },
+      "explanation": "<b>【正解】b</b><br/>話しかけられて都合を尋ねられたときは <b>b「ええ、何でしょうか」</b> と用件を聞くのが適切です。<br/>a「どういたしまして」はお礼に対する返答です。"
+    },
+    {
+      "sectionTitle": "練習2-B 決まった答え方",
+      "badge": "練習2-B (3)",
+      "subtitle": "2-B 挨拶と決まり文句の返答",
+      "trackId": "cd1-track23",
+      "trackLabel": "練習2-B [A23]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：お先に失礼します。",
+      "questionText": "<b>女：お先に失礼します。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. お元気で。",
+        "b. お疲れ様でした。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. お疲れ様でした。"
+      },
+      "explanation": "<b>【正解】b</b><br/>先に退勤・退出する人に対する挨拶は <b>b「お疲れ様でした」</b> です。<br/>a「お元気で」は長期の別れ際の挨拶です。"
+    },
+    {
+      "sectionTitle": "練習2-B 決まった答え方",
+      "badge": "練習2-B (4)",
+      "subtitle": "2-B 挨拶と決まり文句の返答",
+      "trackId": "cd1-track23",
+      "trackLabel": "練習2-B [A23]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：冷たいお飲み物でもいかがですか。",
+      "questionText": "<b>男：冷たいお飲み物でもいかがですか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. いただきます。",
+        "b. おじゃまします。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. いただきます。"
+      },
+      "explanation": "<b>【正解】a</b><br/>飲み物を勧められたときは <b>a「いただきます」</b>（または「どうぞおかまいなく」）と答えるのが適切です。<br/>b「おじゃまします」は他人の家に入るときの挨拶です。"
+    },
+    {
+      "sectionTitle": "練習2-B 決まった答え方",
+      "badge": "練習2-B (5)",
+      "subtitle": "2-B 挨拶と決まり文句の返答",
+      "trackId": "cd1-track23",
+      "trackLabel": "練習2-B [A23]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：いろいろお世話になりました。",
+      "questionText": "<b>女：いろいろお世話になりました。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. どうもお待たせしました。",
+        "b. またいらっしゃってください。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. またいらっしゃってください。"
+      },
+      "explanation": "<b>【正解】b</b><br/>「お世話になりました」と感謝されたときは <b>b「またいらっしゃってください」</b>（または「いいえ、こちらこそ」）が適切です。<br/>aは人を待たせたときの言葉です。"
+    },
+    {
+      "sectionTitle": "練習3 間接的な答え方",
+      "badge": "練習3 (1)",
+      "subtitle": "3 間接的な答え方に注意する",
+      "trackId": "cd1-track25",
+      "trackLabel": "練習3 [A25]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：映画でも見ない？",
+      "questionText": "<b>男：映画でも見ない？</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. えー、どうして見てないの？",
+        "b. いいよ。ちょうど見たいのがあるんだ。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. いいよ。ちょうど見たいのがあるんだ。"
+      },
+      "explanation": "<b>【正解】b</b><br/>映画への誘いに対し、「いいよ（↑）。ちょうど見たいのがあるんだ」と前向きに同意する <b>b</b> が適切です。"
+    },
+    {
+      "sectionTitle": "練習3 間接的な答え方",
+      "badge": "練習3 (2)",
+      "subtitle": "3 間接的な答え方に注意する",
+      "trackId": "cd1-track25",
+      "trackLabel": "練習3 [A25]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：もう佐々木さんに連絡した？",
+      "questionText": "<b>女：もう佐々木さんに連絡した？</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. へえ、もうしたんだ。",
+        "b. あー、今日は一日忙しかったんだ。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. あー、今日は一日忙しかったんだ。"
+      },
+      "explanation": "<b>【正解】b</b><br/>連絡したか尋ねられ、「あー、今日は一日忙しかったんだ」と忙しくてまだ連絡できていない理由を間接的に伝える <b>b</b> が適切です。"
+    },
+    {
+      "sectionTitle": "練習3 間接的な答え方",
+      "badge": "練習3 (3)",
+      "subtitle": "3 間接的な答え方に注意する",
+      "trackId": "cd1-track25",
+      "trackLabel": "練習3 [A25]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：レポート、もう書けた？",
+      "questionText": "<b>男：レポート、もう書けた？</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. あと4分の1ぐらいかな。",
+        "b. え、早いねえ。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. あと4分の1ぐらいかな。"
+      },
+      "explanation": "<b>【正解】a</b><br/>レポートの進捗を聞かれ、「あと4分の1ぐらいかな」と進み具合を間接的に答える <b>a</b> が適切です。"
+    },
+    {
+      "sectionTitle": "練習3 間接的な答え方",
+      "badge": "練習3 (4)",
+      "subtitle": "3 間接的な答え方に注意する",
+      "trackId": "cd1-track25",
+      "trackLabel": "練習3 [A25]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：ね、かさ、持ってったら？",
+      "questionText": "<b>女：ね、かさ、持ってったら？</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. え？持っていっちゃったの？",
+        "b. いいよ。今日は降りそうもないよ。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. いいよ。今日は降りそうもないよ。"
+      },
+      "explanation": "<b>【正解】b</b><br/>傘を持っていく提案に対し、「いいよ（↓：不要）。今日は降りそうもないよ」と理由を添えて断る <b>b</b> が適切です。"
+    },
+    {
+      "sectionTitle": "練習3 間接的な答え方",
+      "badge": "練習3 (5)",
+      "subtitle": "3 間接的な答え方に注意する",
+      "trackId": "cd1-track25",
+      "trackLabel": "練習3 [A25]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：あしたのパーティー、僕も出席しなくちゃいけない？",
+      "questionText": "<b>男：あしたのパーティー、僕も出席しなくちゃいけない？</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. できればそうしてほしいな。",
+        "b. 行けなくなったんだってね。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. できればそうしてほしいな。"
+      },
+      "explanation": "<b>【正解】a</b><br/>出席すべきか尋ねられ、「できればそうしてほしいな（＝出席してほしい）」と希望を伝える <b>a</b> が適切です。"
+    },
+    {
+      "sectionTitle": "練習3 間接的な答え方",
+      "badge": "練習3 (6)",
+      "subtitle": "3 間接的な答え方に注意する",
+      "trackId": "cd1-track25",
+      "trackLabel": "練習3 [A25]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：これ、ちょっと貸してくれる？",
+      "questionText": "<b>男：これ、ちょっと貸してくれる？</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. すぐ返してね。",
+        "b. いいの？じゃ、遠慮なく。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. すぐ返してね。"
+      },
+      "explanation": "<b>【正解】a</b><br/>物を貸してほしいと頼まれ、「すぐ返してね」と条件をつけて承諾する <b>a</b> が適切です。<br/>bは自分が借りるときの言葉です。"
+    },
+    {
+      "sectionTitle": "練習3 間接的な答え方",
+      "badge": "練習3 (7)",
+      "subtitle": "3 間接的な答え方に注意する",
+      "trackId": "cd1-track25",
+      "trackLabel": "練習3 [A25]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：お茶、いれようか。",
+      "questionText": "<b>女：お茶、いれようか。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. はい、おかげさまで。",
+        "b. あー、さっき飲んだところ。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. あー、さっき飲んだところ。"
+      },
+      "explanation": "<b>【正解】b</b><br/>お茶をいれる申し出に対し、「あー、さっき飲んだところ」と間接的に不要であることを伝える <b>b</b> が適切です。"
+    },
+    {
+      "sectionTitle": "練習3 間接的な答え方",
+      "badge": "練習3 (8)",
+      "subtitle": "3 間接的な答え方に注意する",
+      "trackId": "cd1-track25",
+      "trackLabel": "練習3 [A25]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：男：あの、これ、使わせてもらいたいんだけど。",
+      "questionText": "<b>男：あの、これ、使わせてもらいたいんだけど。</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. ごめん。これ、友達のなんだ。",
+        "b. あ、じゃ、使ってみるね。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "a. ごめん。これ、友達のなんだ。"
+      },
+      "explanation": "<b>【正解】a</b><br/>借りたいと頼まれたのに対し、「ごめん。これ、友達のなんだ」と貸せない事情を説明して断る <b>a</b> が適切です。"
+    },
+    {
+      "sectionTitle": "練習3 間接的な答え方",
+      "badge": "練習3 (9)",
+      "subtitle": "3 間接的な答え方に注意する",
+      "trackId": "cd1-track25",
+      "trackLabel": "練習3 [A25]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：今度のスポーツ大会、出るの？",
+      "questionText": "<b>女：今度のスポーツ大会、出るの？</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. へえ、体に気をつけて頑張ってね。",
+        "b. 参加したいんだけど、用事があるんだ。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. 参加したいんだけど、用事があるんだ。"
+      },
+      "explanation": "<b>【正解】b</b><br/>大会に出るか尋ねられ、「参加したいんだけど、用事があるんだ」と出られない事情を間接的に説明する <b>b</b> が適切です。"
+    },
+    {
+      "sectionTitle": "練習3 間接的な答え方",
+      "badge": "練習3 (10)",
+      "subtitle": "3 間接的な答え方に注意する",
+      "trackId": "cd1-track25",
+      "trackLabel": "練習3 [A25]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "instruction": "文を聞いて、いい返事を選んでください。",
+      "context": "音声：女：駅前のレストラン、行ってみない？",
+      "questionText": "<b>女：駅前のレストラン、行ってみない？</b> に対するいい返事はどれですか。",
+      "options": [
+        "a. 行ってみなかったんだよ。",
+        "b. いいね。ピザがおいしいんだってね。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "b. いいね。ピザがおいしいんだってね。"
+      },
+      "explanation": "<b>【正解】b</b><br/>レストランへの誘いに対し、「いいね。ピザがおいしいんだってね」と賛同する <b>b</b> が適切です。"
+    },
+    {
+      "sectionTitle": "確認問題",
+      "badge": "確認問題 (1)",
+      "subtitle": "即時応答 実戦形式",
+      "trackId": "cd1-track26",
+      "trackLabel": "確認問題 [A26]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "instruction": "まず文を聞いてください。それから、そのへんじを聞いて、１から３の中から、最もよいものを一つえらんでください。",
+      "context": "文：男：ちょっと手伝ってほしいんだけど。",
+      "questionText": "<b>男：ちょっと手伝ってほしいんだけど。</b> に対する最もよいへんじはどれですか。",
+      "options": [
+        "1. ありがとう。早く終わったよ。",
+        "2. ちょっと後でもいい？",
+        "3. そうだったんだ。残念だね。"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "2. ちょっと後でもいい？"
+      },
+      "explanation": "<b>【正解】2</b><br/>「ちょっと手伝ってほしいんだけど」と手伝いを依頼された場面です。<br/>・1は自分が手伝ってもらった後の感謝なので不適切です。<br/>・<b>2「ちょっと後でもいい？」</b>は「少し後なら手伝える」という引き受け・条件確認の返答で最も適切です。<br/>・3は残念な知らせを聞いたときの相槌なので不適切です。"
+    },
+    {
+      "sectionTitle": "確認問題",
+      "badge": "確認問題 (2)",
+      "subtitle": "即時応答 実戦形式",
+      "trackId": "cd1-track26",
+      "trackLabel": "確認問題 [A26]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "instruction": "まず文を聞いてください。それから、そのへんじを聞いて、１から３の中から、最もよいものを一つえらんでください。",
+      "context": "文：女：子供が熱出しちゃって……。",
+      "questionText": "<b>女：子供が熱出しちゃって……。</b> に対する最もよいへんじはどれですか。",
+      "options": [
+        "1. それはご心配ですね。",
+        "2. それは心配いたしましたよ。",
+        "3. それは心配をおかけしましたね。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "1. それはご心配ですね。"
+      },
+      "explanation": "<b>【正解】1</b><br/>「子供が熱出しちゃって……」と心配事を打ち明けられた場面です。<br/>・<b>1「それはご心配ですね」</b>は相手の心中を気遣う適切な返答です。<br/>・2「心配いたしました」は自分が過去に心配した表現なので不自然です。<br/>・3「心配をおかけしました」は自分が相手に心配をかけたときの謝罪です。"
+    },
+    {
+      "sectionTitle": "確認問題",
+      "badge": "確認問題 (3)",
+      "subtitle": "即時応答 実戦形式",
+      "trackId": "cd1-track26",
+      "trackLabel": "確認問題 [A26]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "instruction": "まず文を聞いてください。それから、そのへんじを聞いて、１から３の中から、最もよいものを一つえらんでください。",
+      "context": "文：女：来週の試験に出るところ、教えていただけませんか。",
+      "questionText": "<b>女：来週の試験に出るところ、教えていただけませんか。</b> に対する最もよいへんじはどれですか。",
+      "options": [
+        "1. 8課から勉強したところまでですよ。",
+        "2. いつもの教室に行けばいいでしょうか。",
+        "3. 11時半には出たいんですけど……。"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "1. 8課から勉強したところまでですよ。"
+      },
+      "explanation": "<b>【正解】1</b><br/>「試験に出るところを教えていただけませんか」と試験範囲を尋ねられた場面です。<br/>・<b>1「8課から勉強したところまでですよ」</b>は試験範囲を具体的に答えており最も適切です。<br/>・2は試験会場の場所を尋ねる表現です。<br/>・3は自分が退出したい時間を伝える表現です。"
+    }
+  ],
+  "transcript": [
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 0.0,
+      "speaker": "ナレーション",
+      "text": "練習 1-A"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 3.7,
+      "speaker": "ナレーション",
+      "text": "例"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 5.2,
+      "speaker": "女",
+      "text": "これ、召し上がりませんか。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 8.8,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 10.1,
+      "speaker": "男",
+      "text": "はい、いただきます。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 13.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 14.8,
+      "speaker": "男",
+      "text": "はい、まいります。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 18.2,
+      "speaker": "ナレーション",
+      "text": "c"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 19.5,
+      "speaker": "男",
+      "text": "はい、うかがいます。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 24.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 25.5,
+      "speaker": "男",
+      "text": "土曜日、よかったらうちに、いらっしゃいませんか。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 31.2,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 32.5,
+      "speaker": "女",
+      "text": "はい、喜んで行かせます。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 36.8,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 38.0,
+      "speaker": "女",
+      "text": "はい、喜んでうかがいます。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 42.5,
+      "speaker": "ナレーション",
+      "text": "c"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 43.8,
+      "speaker": "女",
+      "text": "はい、喜んでいただきます。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 48.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 50.0,
+      "speaker": "女",
+      "text": "申込書の書き方はこれでいいでしょうか。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 54.8,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 56.0,
+      "speaker": "男",
+      "text": "じゃ、ちょっと拝見しますね。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 60.2,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 61.5,
+      "speaker": "男",
+      "text": "じゃ、ちょっとご覧になってください。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 66.5,
+      "speaker": "ナレーション",
+      "text": "c"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 67.8,
+      "speaker": "男",
+      "text": "じゃ、ちょっとお目にかかりましょう。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 72.5,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 74.0,
+      "speaker": "女",
+      "text": "これ、1枚もらってもいいですか。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 78.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 79.8,
+      "speaker": "男",
+      "text": "ご自由にお取りください。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 84.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 85.2,
+      "speaker": "男",
+      "text": "いつでもいただきますよ。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 89.5,
+      "speaker": "ナレーション",
+      "text": "c"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 90.8,
+      "speaker": "男",
+      "text": "どなたでもくださいますよ。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 95.5,
+      "speaker": "ナレーション",
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 97.0,
+      "speaker": "女",
+      "text": "すみません。よく聞き取れなかったのですが……。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 102.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 103.8,
+      "speaker": "男",
+      "text": "では、もう一度ご説明いたします。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 108.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 109.8,
+      "speaker": "男",
+      "text": "では、もう一度ご説明なさいます。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 114.5,
+      "speaker": "ナレーション",
+      "text": "c"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 115.8,
+      "speaker": "男",
+      "text": "では、もう一度ご説明になります。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 120.5,
+      "speaker": "ナレーション",
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 122.0,
+      "speaker": "男",
+      "text": "あの、何かご用でしょうか。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 126.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 127.3,
+      "speaker": "女",
+      "text": "田中さんを拝見したいのですが。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 131.8,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 133.0,
+      "speaker": "女",
+      "text": "田中さんにお会いになるのですが。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 137.5,
+      "speaker": "ナレーション",
+      "text": "c"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 138.8,
+      "speaker": "女",
+      "text": "田中さんにお目にかかりたいのですが。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 144.0,
+      "speaker": "ナレーション",
+      "text": "6"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 145.5,
+      "speaker": "女",
+      "text": "パソコン、使わせていただきたいんですが。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 150.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 151.8,
+      "speaker": "男",
+      "text": "あちらのを使わせていただけませんか。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 156.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 157.8,
+      "speaker": "男",
+      "text": "あちらのをお使いください。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 162.2,
+      "speaker": "ナレーション",
+      "text": "c"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 163.5,
+      "speaker": "男",
+      "text": "あちらのを使われますよ。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 168.0,
+      "speaker": "ナレーション",
+      "text": "7"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 169.5,
+      "speaker": "男",
+      "text": "あの、お客様、ご予約はされましたか。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 174.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 175.8,
+      "speaker": "女",
+      "text": "いえ、されていませんが。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 180.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 181.3,
+      "speaker": "女",
+      "text": "ええ、昨日、電話いたしました。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 186.0,
+      "speaker": "ナレーション",
+      "text": "c"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 187.3,
+      "speaker": "女",
+      "text": "ええ、お電話でなさいましたが。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 192.0,
+      "speaker": "ナレーション",
+      "text": "8"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 193.5,
+      "speaker": "男",
+      "text": "今朝の新聞、お読みになりましたか。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 198.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 199.8,
+      "speaker": "女",
+      "text": "いいえ、読んでいませんが。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 204.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 205.2,
+      "speaker": "女",
+      "text": "いえ、お読みしませんでした。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 209.8,
+      "speaker": "ナレーション",
+      "text": "c"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 211.0,
+      "speaker": "女",
+      "text": "いえ、拝見したいんですが。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 215.5,
+      "speaker": "ナレーション",
+      "text": "9"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 217.0,
+      "speaker": "女",
+      "text": "どなたがいらっしゃったんですか。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 221.2,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 222.5,
+      "speaker": "男",
+      "text": "京都におりました。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 226.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 227.8,
+      "speaker": "男",
+      "text": "昨日おいでになりました。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 232.0,
+      "speaker": "ナレーション",
+      "text": "c"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 233.2,
+      "speaker": "男",
+      "text": "うちの父がまいりました。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 238.0,
+      "speaker": "ナレーション",
+      "text": "10"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 239.5,
+      "speaker": "女",
+      "text": "何名様ですか。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 243.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 244.2,
+      "speaker": "男",
+      "text": "4人です。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 247.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 248.8,
+      "speaker": "男",
+      "text": "田中と申します。"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 252.8,
+      "speaker": "ナレーション",
+      "text": "c"
+    },
+    {
+      "trackId": "cd1-track20",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/20 Track 20.mp3",
+      "trackLabel": "練習1-A [A20]",
+      "time": 254.0,
+      "speaker": "男",
+      "text": "いえ、鈴木です。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 0.0,
+      "speaker": "ナレーション",
+      "text": "練習 1-B"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 3.8,
+      "speaker": "ナレーション",
+      "text": "例"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 5.3,
+      "speaker": "女",
+      "text": "この本、よかったですよ。読みますか。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 9.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 10.8,
+      "speaker": "男",
+      "text": "ええ、読みましょう。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 14.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 15.8,
+      "speaker": "男",
+      "text": "はい、読みます。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 20.0,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 21.5,
+      "speaker": "男",
+      "text": "もう3時ですね。そろそろ行きませんか。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 26.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 27.8,
+      "speaker": "女",
+      "text": "いいえ、行きますよ。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 32.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 33.2,
+      "speaker": "女",
+      "text": "ええ、行きましょう。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 38.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 39.5,
+      "speaker": "女",
+      "text": "暑くないですか。エアコン、つけましょうか。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 45.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 46.3,
+      "speaker": "男",
+      "text": "ええ、つけてください。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 50.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 51.8,
+      "speaker": "男",
+      "text": "ええ、つけませんか。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 56.5,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 58.0,
+      "speaker": "男",
+      "text": "あ、薬を飲まれるなら、水をお持ちしましょう。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 64.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 65.3,
+      "speaker": "女",
+      "text": "すみません。お願いします。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 70.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 71.2,
+      "speaker": "女",
+      "text": "ええ、持ちますよ。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 76.0,
+      "speaker": "ナレーション",
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 77.5,
+      "speaker": "女",
+      "text": "今度の会議で司会をしませんか。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 82.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 83.8,
+      "speaker": "男",
+      "text": "はい、させていただきます。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 88.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 89.8,
+      "speaker": "男",
+      "text": "ええ、させませんよ。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 94.5,
+      "speaker": "ナレーション",
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 96.0,
+      "speaker": "男",
+      "text": "今年の夏の旅行はどこがいいでしょうか。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 101.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 102.8,
+      "speaker": "女",
+      "text": "今年も富士山にしましょうか。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 107.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 108.8,
+      "speaker": "女",
+      "text": "今年も富士山にします。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 113.5,
+      "speaker": "ナレーション",
+      "text": "6"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 115.0,
+      "speaker": "女",
+      "text": "このDVD、面白かったから、よかったら見てみない？"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 121.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 122.8,
+      "speaker": "男",
+      "text": "ありがとう、見てみるね。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 127.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 128.8,
+      "speaker": "男",
+      "text": "ありがとう、見てみようね。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 133.5,
+      "speaker": "ナレーション",
+      "text": "7"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 135.0,
+      "speaker": "男",
+      "text": "ごみ、捨てに行くけど、ついでにこれも捨ててこようか。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 141.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 142.8,
+      "speaker": "女",
+      "text": "うん、お願い。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 146.8,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 148.0,
+      "speaker": "女",
+      "text": "うん、捨てるよ。"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 152.5,
+      "speaker": "ナレーション",
+      "text": "8"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 154.0,
+      "speaker": "女",
+      "text": "田中君。テニス部に入ったのね。面白いの？"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 160.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 161.3,
+      "speaker": "男",
+      "text": "うん、佐藤さんも入らない？"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 166.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track21",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/21 Track 21.mp3",
+      "trackLabel": "練習1-B [A21]",
+      "time": 167.3,
+      "speaker": "男",
+      "text": "うん、佐藤さんも入ろうか。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 0.0,
+      "speaker": "ナレーション",
+      "text": "練習 2-A"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 3.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 5.0,
+      "speaker": "女",
+      "text": "あした、来ないの？"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 7.8,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 9.0,
+      "speaker": "男",
+      "text": "へえ、ないんだ。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 12.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 13.8,
+      "speaker": "男",
+      "text": "ううん、行くよ。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 18.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 19.5,
+      "speaker": "男",
+      "text": "これ、冷蔵庫に入れておかないと。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 24.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 25.2,
+      "speaker": "女",
+      "text": "うん、入れてないよ。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 29.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 30.8,
+      "speaker": "女",
+      "text": "うん、入れとくよ。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 35.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 36.5,
+      "speaker": "女",
+      "text": "大切だから、書いといて。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 40.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 41.8,
+      "speaker": "男",
+      "text": "わかった。メモするよ。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 46.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 47.2,
+      "speaker": "男",
+      "text": "ふーん、そうか。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 51.5,
+      "speaker": "ナレーション",
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 53.0,
+      "speaker": "男",
+      "text": "あの店、火曜日は休みだって。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 58.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 59.2,
+      "speaker": "女",
+      "text": "そうなんだ。じゃ、あした行こう。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 64.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 65.8,
+      "speaker": "女",
+      "text": "ありがとう。ゆっくり休むよ。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 70.5,
+      "speaker": "ナレーション",
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 72.0,
+      "speaker": "女",
+      "text": "もう少し前の方に座ったらどう？"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 77.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 78.2,
+      "speaker": "男",
+      "text": "じゃ、座ってみたらいいよ。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 83.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 84.2,
+      "speaker": "男",
+      "text": "いや、ここで大丈夫だよ。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 89.0,
+      "speaker": "ナレーション",
+      "text": "6"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 90.5,
+      "speaker": "女",
+      "text": "忘れずに名前を書くようにね。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 95.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 96.2,
+      "speaker": "男",
+      "text": "はい、わかりました。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 100.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 101.8,
+      "speaker": "男",
+      "text": "ええ、そのようですね。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 106.5,
+      "speaker": "ナレーション",
+      "text": "7"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 108.0,
+      "speaker": "女",
+      "text": "「かるた」って何か知ってる？"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 112.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 113.8,
+      "speaker": "男",
+      "text": "うん、テレビで見たことある。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 118.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 119.8,
+      "speaker": "男",
+      "text": "ああ、そうなんだ。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 124.0,
+      "speaker": "ナレーション",
+      "text": "8"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 125.5,
+      "speaker": "男",
+      "text": "なんで昨日、来なかったの？"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 130.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 131.2,
+      "speaker": "女",
+      "text": "電車で来たんだよ。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 135.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 136.8,
+      "speaker": "女",
+      "text": "おなかが痛かったんだ。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 141.5,
+      "speaker": "ナレーション",
+      "text": "9"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 143.0,
+      "speaker": "女",
+      "text": "お子さん、おいくつですか。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 147.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 148.8,
+      "speaker": "男",
+      "text": "来月8歳になります。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 153.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 154.8,
+      "speaker": "男",
+      "text": "男の子が3人です。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 159.5,
+      "speaker": "ナレーション",
+      "text": "10"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 161.0,
+      "speaker": "女",
+      "text": "先生、何て言ってた？"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 165.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 166.2,
+      "speaker": "男",
+      "text": "休んじゃだめだって。"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 170.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track22",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/22 Track 22.mp3",
+      "trackLabel": "練習2-A [A22]",
+      "time": 171.8,
+      "speaker": "男",
+      "text": "忙しいんだね。"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 0.0,
+      "speaker": "ナレーション",
+      "text": "練習 2-B"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 3.6,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 5.1,
+      "speaker": "女",
+      "text": "ごぶさたしております。お元気ですか。"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 9.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 10.8,
+      "speaker": "男",
+      "text": "ええ、おかげさまで。"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 14.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 15.8,
+      "speaker": "男",
+      "text": "ええ、おかまいなく。"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 20.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 21.5,
+      "speaker": "男",
+      "text": "あの、今ちょっとよろしいでしょうか。"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 26.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 27.8,
+      "speaker": "女",
+      "text": "ええ、どういたしまして。"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 32.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 33.2,
+      "speaker": "女",
+      "text": "ええ、何でしょうか。"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 37.5,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 39.0,
+      "speaker": "女",
+      "text": "お先に失礼します。"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 43.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 44.2,
+      "speaker": "男",
+      "text": "お元気で。"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 48.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 49.2,
+      "speaker": "男",
+      "text": "お疲れ様でした。"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 54.0,
+      "speaker": "ナレーション",
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 55.5,
+      "speaker": "男",
+      "text": "冷たいお飲み物でもいかがですか。"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 60.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 61.8,
+      "speaker": "女",
+      "text": "いただきます。"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 65.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 66.8,
+      "speaker": "女",
+      "text": "おじゃまします。"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 71.0,
+      "speaker": "ナレーション",
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 72.5,
+      "speaker": "女",
+      "text": "いろいろお世話になりました。"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 77.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 78.8,
+      "speaker": "男",
+      "text": "どうもお待たせしました。"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 83.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track23",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/23 Track 23.mp3",
+      "trackLabel": "練習2-B [A23]",
+      "time": 84.2,
+      "speaker": "男",
+      "text": "またいらっしゃってください。"
+    },
+    {
+      "trackId": "cd1-track24",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/24 Track 24.mp3",
+      "trackLabel": "例1・2 [A24]",
+      "time": 0.0,
+      "speaker": "ナレーション",
+      "text": "例 1"
+    },
+    {
+      "trackId": "cd1-track24",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/24 Track 24.mp3",
+      "trackLabel": "例1・2 [A24]",
+      "time": 2.3,
+      "speaker": "女",
+      "text": "ちょっと手伝ってよ。"
+    },
+    {
+      "trackId": "cd1-track24",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/24 Track 24.mp3",
+      "trackLabel": "例1・2 [A24]",
+      "time": 4.4,
+      "speaker": "男",
+      "text": "いいよ。(↑) 何すればいい？"
+    },
+    {
+      "trackId": "cd1-track24",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/24 Track 24.mp3",
+      "trackLabel": "例1・2 [A24]",
+      "time": 9.0,
+      "speaker": "ナレーション",
+      "text": "例 2"
+    },
+    {
+      "trackId": "cd1-track24",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/24 Track 24.mp3",
+      "trackLabel": "例1・2 [A24]",
+      "time": 11.2,
+      "speaker": "女",
+      "text": "上着着ていったら？"
+    },
+    {
+      "trackId": "cd1-track24",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/24 Track 24.mp3",
+      "trackLabel": "例1・2 [A24]",
+      "time": 13.5,
+      "speaker": "男",
+      "text": "いいよ。(↓) そんなに寒くないから。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 0.0,
+      "speaker": "ナレーション",
+      "text": "練習 3"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 2.8,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 4.3,
+      "speaker": "男",
+      "text": "映画でも見ない？"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 7.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 8.2,
+      "speaker": "女",
+      "text": "えー、どうして見てないの？"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 13.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 14.2,
+      "speaker": "女",
+      "text": "いいよ。ちょうど見たいのがあるんだ。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 19.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 21.0,
+      "speaker": "女",
+      "text": "もう佐々木さんに連絡した？"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 25.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 26.2,
+      "speaker": "男",
+      "text": "へえ、もうしたんだ。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 30.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 31.8,
+      "speaker": "男",
+      "text": "あー、今日は一日忙しかったんだ。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 37.5,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 39.0,
+      "speaker": "男",
+      "text": "レポート、もう書けた？"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 43.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 44.2,
+      "speaker": "女",
+      "text": "あと4分の1ぐらいかな。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 49.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 50.2,
+      "speaker": "女",
+      "text": "え、早いねえ。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 55.0,
+      "speaker": "ナレーション",
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 56.5,
+      "speaker": "女",
+      "text": "ね、かさ、持ってったら？"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 61.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 62.2,
+      "speaker": "男",
+      "text": "え？持っていっちゃったの？"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 67.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 68.2,
+      "speaker": "男",
+      "text": "いいよ。今日は降りそうもないよ。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 73.5,
+      "speaker": "ナレーション",
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 75.0,
+      "speaker": "男",
+      "text": "あしたのパーティー、僕も出席しなくちゃいけない？"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 81.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 82.8,
+      "speaker": "女",
+      "text": "できればそうしてほしいな。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 88.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 89.2,
+      "speaker": "女",
+      "text": "行けなくなったんだってね。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 94.5,
+      "speaker": "ナレーション",
+      "text": "6"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 96.0,
+      "speaker": "男",
+      "text": "これ、ちょっと貸してくれる？"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 100.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 101.8,
+      "speaker": "女",
+      "text": "すぐ返してね。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 106.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 107.2,
+      "speaker": "女",
+      "text": "いいの？じゃ、遠慮なく。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 112.5,
+      "speaker": "ナレーション",
+      "text": "7"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 114.0,
+      "speaker": "女",
+      "text": "お茶、いれようか。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 118.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 119.2,
+      "speaker": "男",
+      "text": "はい、おかげさまで。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 124.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 125.2,
+      "speaker": "男",
+      "text": "あー、さっき飲んだところ。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 130.5,
+      "speaker": "ナレーション",
+      "text": "8"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 132.0,
+      "speaker": "男",
+      "text": "あの、これ、使わせてもらいたいんだけど。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 138.0,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 139.2,
+      "speaker": "女",
+      "text": "ごめん。これ、友達のなんだ。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 144.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 145.8,
+      "speaker": "女",
+      "text": "あ、じゃ、使ってみるね。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 151.0,
+      "speaker": "ナレーション",
+      "text": "9"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 152.5,
+      "speaker": "女",
+      "text": "今度のスポーツ大会、出るの？"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 157.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 158.8,
+      "speaker": "男",
+      "text": "へえ、体に気をつけて頑張ってね。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 164.0,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 165.2,
+      "speaker": "男",
+      "text": "参加したいんだけど、用事があるんだ。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 171.0,
+      "speaker": "ナレーション",
+      "text": "10"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 172.5,
+      "speaker": "女",
+      "text": "駅前のレストラン、行ってみない？"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 177.5,
+      "speaker": "ナレーション",
+      "text": "a"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 178.8,
+      "speaker": "男",
+      "text": "行ってみなかったんだよ。"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 183.5,
+      "speaker": "ナレーション",
+      "text": "b"
+    },
+    {
+      "trackId": "cd1-track25",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/25 Track 25.mp3",
+      "trackLabel": "練習3 [A25]",
+      "time": 184.8,
+      "speaker": "男",
+      "text": "いいね。ピザがおいしいんだってね。"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 0.0,
+      "speaker": "ナレーション",
+      "text": "確認問題"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 2.0,
+      "speaker": "ナレーション",
+      "text": "まず文を聞いてください。それから、その返事を聞いて、1から3の中から、最も良いものを1つ選んでください。"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 17.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 19.2,
+      "speaker": "男",
+      "text": "ちょっと手伝ってほしいんだけど。"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 24.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 25.8,
+      "speaker": "女",
+      "text": "ありがとう。早く終わったよ。"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 30.2,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 31.5,
+      "speaker": "女",
+      "text": "ちょっと後でもいい？"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 36.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 37.2,
+      "speaker": "女",
+      "text": "そうだったんだ。残念だね。"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 43.5,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 45.2,
+      "speaker": "女",
+      "text": "子供が熱出しちゃって……。"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 50.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 51.8,
+      "speaker": "男",
+      "text": "それはご心配ですね。"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 56.2,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 57.5,
+      "speaker": "男",
+      "text": "それは心配いたしましたよ。"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 62.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 63.2,
+      "speaker": "男",
+      "text": "それは心配をおかけしましたね。"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 69.5,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 71.2,
+      "speaker": "女",
+      "text": "来週の試験に出るところ、教えていただけませんか。"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 77.5,
+      "speaker": "ナレーション",
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 78.8,
+      "speaker": "男",
+      "text": "8課から勉強したところまでですよ。"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 84.0,
+      "speaker": "ナレーション",
+      "text": "2"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 85.2,
+      "speaker": "男",
+      "text": "いつもの教室に行けばいいでしょうか。"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 90.0,
+      "speaker": "ナレーション",
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track26",
+      "trackSrc": "/audio/shinkanzen_listening/CD1/26 Track 26.mp3",
+      "trackLabel": "確認問題 [A26]",
+      "time": 91.2,
+      "speaker": "男",
+      "text": "11時半には出たいんですけど……。"
+    }
+  ]
+}

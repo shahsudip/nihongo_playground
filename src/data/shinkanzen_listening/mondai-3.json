@@ -13,13 +13,16 @@
       "id": "hotspot-1",
       "trackId": "cd1-track03",
       "audioSrc": "/audio/shinkanzen_listening/CD1/03 Track 3.mp3",
-      "label": "例題3 [A-03]"
+      "label": "例題3 [A-03]",
+      "trackCode": "A-03"
     }
   ],
   "questions": [
     {
-      "questionText": "女の人は何について話していますか。",
-      "instruction": "この問題では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、質問と選択肢を聞いて、１から４の中から、最もよいものを一つ選んでください。",
+      "label": "例題 3",
+      "trackCode": "A-03",
+      "questionText": "<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は<ruby>何<rt>なに</rt></ruby>について<ruby>話<rt>はな</rt></ruby>していますか。",
+      "instruction": "この問題では、問題用紙に何もいんさつされていません。この問題はぜんたいとしてどんなないようかを聞く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問とせんたくしを聞いて、１から４の中から、最もよいものを一つえらんでください。",
       "options": [
         "1. 人が緊張する理由",
         "2. 落ち着くための方法",
@@ -30,50 +33,22 @@
         "index": 1,
         "text": "2. 落ち着くための方法"
       },
-      "explanation": "<b>【正解】2</b><br/>「ご紹介しましょう」と言って示している話題は、「緊張してしま（う）」ときに「役立つ、いくつかのやり方」なので、<b>2</b>が答えです。「感謝を心の中で言う」ことと「体に一度ぐっと力を入れて、その後力を抜く」ことはやり方の例です。<br/>このように、全体として何について話しているかや、話す人の意図に注意します。",
-      "context": "テレビで女の人が話しています。"
+      "explanation": "「ご<ruby>紹介<rt>しょうかい</rt></ruby>しましょう」と<ruby>言<rt>い</rt></ruby>って<ruby>示<rt>しめ</rt></ruby>している<ruby>話題<rt>わだい</rt></ruby>は、「<ruby>緊張<rt>きんちょう</rt></ruby>してしま（う）」ときに「<ruby>役立<rt>やくだ</rt></ruby>つ、いくつかのやり<ruby>方<rt>かた</rt></ruby>」なので、<b>2</b>が<ruby>答<rt>こた</rt></ruby>えです。「<ruby>感謝<rt>かんしゃ</rt></ruby>を<ruby>心<rt>こころ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>言<rt>い</rt></ruby>う」ことと「<ruby>体<rt>からだ</rt></ruby>に<ruby>一度<rt>いちど</rt></ruby>ぐっと<ruby>力<rt>ちから</rt></ruby>を<ruby>入<rt>い</rt></ruby>れて、その<ruby>後<rt>あと</rt></ruby><ruby>力<rt>ちから</rt></ruby>を<ruby>抜<rt>ぬ</rt></ruby>く」ことはやり<ruby>方<rt>かた</rt></ruby>の<ruby>例<rt>れい</rt></ruby>です。<br/><br/>このように、<ruby>全体<rt>ぜんたい</rt></ruby>として<ruby>何<rt>なに</rt></ruby>について<ruby>話<rt>はな</rt></ruby>しているかや、<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>の<ruby>意図<rt>いと</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>します。",
+      "explanationEn": "Since the topic that is indicated by saying「ご紹介しましょう (let me introduce)」is about「役立つ、いくつかのやり方 (some useful methods)」that are useful when one is「緊張してしま(う) (all tensed up)」, the correct answer is 2.「感謝を心の中で言う (expressing gratitude in one's heart)」and「体に一度ぐっと力を入れて、その後力を抜く (tensing your body and then relaxing it)」are examples of these methods.<br/><br/>In this manner, attention will be focused on what the conversation or the spoken statement as a whole is saying and what the intentions of the persons speaking are."
     }
   ],
   "transcript": [
     {
-      "time": 0,
-      "speaker": "指示",
-      "text": "例題3　この問題では、問題用紙に何もいんさつされていません。この問題はぜんたいとしてどんなないようかを聞く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問とせんたくしを聞いて、１から４の中から、最もよいものを一つえらんでください。"
-    },
-    {
-      "time": 42,
       "speaker": "ナレーション",
-      "text": "テレビで女の人が話しています。"
+      "text": "テレビで<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>話<rt>はな</rt></ruby>しています。"
     },
     {
-      "time": 47,
       "speaker": "女",
-      "text": "試験の時などに、緊張してしまって困ったことはありませんか。そんな時に役立つ、いくつかのやり方をご紹介しましょう。ある人は、緊張しているときに「お父さん、ありがとう。お母さん、ありがとう」とほかの人への感謝を心の中で言うと、落ち着けるそうです。また、体に一度ぐっと力を入れて、その後力を抜くと、落ち着けるという人もいます。一度試してみてはいかがですか。"
+      "text": "<ruby>試験<rt>しけん</rt></ruby>の<ruby>時<rt>とき</rt></ruby>などに、<ruby>緊張<rt>きんちょう</rt></ruby>してしまって<ruby>困<rt>こま</rt></ruby>ったことはありませんか。そんな<ruby>時<rt>とき</rt></ruby>に<ruby>役立<rt>やくだ</rt></ruby>つ、いくつかのやり<ruby>方<rt>かた</rt></ruby>をご<ruby>紹介<rt>しょうかい</rt></ruby>しましょう。ある<ruby>人<rt>ひと</rt></ruby>は、<ruby>緊張<rt>きんちょう</rt></ruby>しているときに「お<ruby>父<rt>とう</rt></ruby>さん、ありがとう。お<ruby>母<rt>かあ</rt></ruby>さん、ありがとう」とほかの<ruby>人<rt>ひと</rt></ruby>への<ruby>感謝<rt>かんしゃ</rt></ruby>を<ruby>心<rt>こころ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>言<rt>い</rt></ruby>うと、<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>けるそうです。また、<ruby>体<rt>からだ</rt></ruby>に<ruby>一度<rt>いちど</rt></ruby>ぐっと<ruby>力<rt>ちから</rt></ruby>を<ruby>入<rt>い</rt></ruby>れて、その<ruby>後<rt>あと</rt></ruby><ruby>力<rt>ちから</rt></ruby>を<ruby>抜<rt>ぬ</rt></ruby>くと、<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>けるという<ruby>人<rt>ひと</rt></ruby>もいます。<ruby>一度<rt>いちど</rt></ruby><ruby>試<rt>ため</rt></ruby>してみてはいかがですか。"
     },
     {
-      "time": 92,
-      "speaker": "ナレーション",
-      "text": "女の人は何について話していますか。"
-    },
-    {
-      "time": 98,
-      "speaker": "選択肢1",
-      "text": "1　人が緊張する理由"
-    },
-    {
-      "time": 103,
-      "speaker": "選択肢2",
-      "text": "2　落ち着くための方法"
-    },
-    {
-      "time": 108,
-      "speaker": "選択肢3",
-      "text": "3　両親への感謝の伝え方"
-    },
-    {
-      "time": 114,
-      "speaker": "選択肢4",
-      "text": "4　力の入れ方と緊張の関係"
+      "speaker": "質問",
+      "text": "<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は<ruby>何<rt>なに</rt></ruby>について<ruby>話<rt>はな</rt></ruby>していますか。"
     }
   ]
 }

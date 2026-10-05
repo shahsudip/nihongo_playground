@@ -14,51 +14,43 @@
       "id": "hotspot-1",
       "trackId": "cd1-track04",
       "audioSrc": "/audio/shinkanzen_listening/CD1/04 Track 4.mp3",
-      "label": "例題4 [A-04]"
+      "label": "例題4 [A-04]",
+      "trackCode": "A-04"
     }
   ],
   "questions": [
     {
-      "questionText": "大学で事務の人に書類の書き方を聞きます。何と言いますか。",
-      "instruction": "この問題では、絵を見ながら質問を聞いてください。矢印（→）の人は何と言いますか。１から３の中から、最もよいものを一つ選んでください。",
+      "label": "例題 4",
+      "trackCode": "A-04",
+      "questionText": "<ruby>大学<rt>だいがく</rt></ruby>で<ruby>事務<rt>じむ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>に<ruby>書類<rt>しょるい</rt></ruby>の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きます。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。",
+      "instruction": "この問題では、えを見ながら質問を聞いてください。やじるし（→）の人は何と言いますか。１から３の中から、最もよいものを一つえらんでください。",
+      "optionsOnlyNumbers": true,
       "options": [
-        "1. あの、この書類の書き方、教えてもよろしいでしょうか。",
-        "2. あの、この書類の書き方、教えていただきたいんですけど。",
-        "3. あの、この書類の書き方、教えていただきましょうか。"
+        "1",
+        "2",
+        "3"
       ],
       "correctOption": {
         "index": 1,
-        "text": "2. あの、この書類の書き方、教えていただきたいんですけど。"
+        "text": "2"
       },
-      "explanation": "<b>【正解】2</b><br/>状況説明文で「事務の人に聞く」と言っているので、事務の人がやじるし（→）の人（話す人）に書き方を教えます。<b>2</b>は話す人が教えてほしいと頼む言い方で、状況と合います。1は話す人が許可を求める言い方、3は話す人が提案する言い方です。<br/>このように、状況や場面を理解して、それに合う表現を選びます。だれの動作を表す表現かや、ある状況で使われる決まった表現に注意します。",
-      "context": "大学の事務室で"
+      "spokenOptions": [
+        "1. あの、この<ruby>書類<rt>しょるい</rt></ruby>の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>、<ruby>教<rt>おし</rt></ruby>えてもよろしいでしょうか。",
+        "2. あの、この<ruby>書類<rt>しょるい</rt></ruby>の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>、<ruby>教<rt>おし</rt></ruby>えていただきたいんですけど。",
+        "3. あの、この<ruby>書類<rt>しょるい</rt></ruby>の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>、<ruby>教<rt>おし</rt></ruby>えていただきましょうか。"
+      ],
+      "explanation": "<ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>で「<ruby>事務<rt>じむ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>に<ruby>聞<rt>き</rt></ruby>く」と<ruby>言<rt>い</rt></ruby>っているので、<ruby>事務<rt>じむ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>がやじるし（→）の<ruby>人<rt>ひと</rt></ruby>（<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>）に<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えます。<b>2</b>は<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>が<ruby>教<rt>おし</rt></ruby>えてほしいと<ruby>頼<rt>たの</rt></ruby>む<ruby>言<rt>い</rt></ruby>い<ruby>方<rt>かた</rt></ruby>で、<ruby>状況<rt>じょうきょう</rt></ruby>と<ruby>合<rt>あ</rt></ruby>います。1は<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>が<ruby>許可<rt>きょか</rt></ruby>を<ruby>求<rt>もと</rt></ruby>める<ruby>言<rt>い</rt></ruby>い<ruby>方<rt>かた</rt></ruby>、3は<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>が<ruby>提案<rt>ていあん</rt></ruby>する<ruby>言<rt>い</rt></ruby>い<ruby>方<rt>かた</rt></ruby>です。<br/><br/>このように、<ruby>状況<rt>じょうきょう</rt></ruby>や<ruby>場面<rt>ばめん</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>して、それに<ruby>合<rt>あ</rt></ruby>う<ruby>表現<rt>ひょうげん</rt></ruby>を<ruby>選<rt>えら</rt></ruby>びます。だれの<ruby>動作<rt>どうさ</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す<ruby>表現<rt>ひょうげん</rt></ruby>かや、ある<ruby>状況<rt>じょうきょう</rt></ruby>で<ruby>使<rt>つか</rt></ruby>われる<ruby>決<rt>き</rt></ruby>まった<ruby>表現<rt>ひょうげん</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>します。",
+      "explanationEn": "Since the explanation of the situational context says「事務の人に聞く (ask the office clerk)」, the office clerk explains to the persons marked with an arrow (the person speaking) the way in which the form should be completed. Choice 2 fits the situation because it gives the way of asking for an explanation to the person asking. Choice 1 gives the way in which the person speaking asks for permission and choice 3 the way in which the person speaking makes a suggestion.<br/><br/>In this manner, the fitting expression is selected on a proper understanding of the circumstance and the situation. Attention should be given to the expression that explains whose action it is and the fixed expression used in the given circumstance."
     }
   ],
   "transcript": [
     {
-      "time": 0,
-      "speaker": "指示",
-      "text": "例題4　この問題では、えを見ながら質問を聞いてください。やじるし（→）の人は何と言いますか。１から３の中から、最もよいものを一つえらんでください。"
-    },
-    {
-      "time": 23,
       "speaker": "ナレーション",
-      "text": "大学で事務の人に書類の書き方を聞きます。何と言いますか。"
+      "text": "<ruby>大学<rt>だいがく</rt></ruby>で<ruby>事務<rt>じむ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>に<ruby>書類<rt>しょるい</rt></ruby>の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きます。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。"
     },
     {
-      "time": 35,
-      "speaker": "男（1）",
-      "text": "1　あの、この書類の書き方、教えてもよろしいでしょうか。"
-    },
-    {
-      "time": 42,
-      "speaker": "男（2）",
-      "text": "2　あの、この書類の書き方、教えていただきたいんですけど。"
-    },
-    {
-      "time": 49,
-      "speaker": "男（3）",
-      "text": "3　あの、この書類の書き方、教えていただきましょうか。"
+      "speaker": "男",
+      "text": "1　あの、この<ruby>書類<rt>しょるい</rt></ruby>の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>、<ruby>教<rt>おし</rt></ruby>えてもよろしいでしょうか。<br/>2　あの、この<ruby>書類<rt>しょるい</rt></ruby>の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>、<ruby>教<rt>おし</rt></ruby>えていただきたいんですけど。<br/>3　あの、この<ruby>書類<rt>しょるい</rt></ruby>の<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>、<ruby>教<rt>おし</rt></ruby>えていただきましょうか。"
     }
   ]
 }

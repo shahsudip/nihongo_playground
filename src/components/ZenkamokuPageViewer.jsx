@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 
 import { doc, getDoc, setDoc, deleteDoc } from 'firebase/firestore';
-import { db } from '../firebaseConfig.js';
+import { db, functions, storage } from '../firebaseConfig.js';
+import { httpsCallable } from 'firebase/functions';
+import { getDownloadURL, ref } from 'firebase/storage';
 import { useAuth } from '../context/AuthContext';
 
 export default function ZenkamokuPageViewer() {
@@ -415,6 +417,8 @@ export default function ZenkamokuPageViewer() {
                       qIdx={`${secIdx}-${qIdx}`}
                       onAnswer={handleAnswer}
                       savedOption={savedAnswers[`${secIdx}-${qIdx}`]}
+                      currentUser={currentUser}
+                      videoKey={`${currentBookId}-${chapterId}-${secIdx}-${qIdx}`}
                     />
                   ))}
                 </div>
@@ -429,6 +433,8 @@ export default function ZenkamokuPageViewer() {
                   qIdx={`flat-${qIdx}`}
                   onAnswer={handleAnswer}
                   savedOption={savedAnswers[`flat-${qIdx}`]}
+                  currentUser={currentUser}
+                  videoKey={`${currentBookId}-${chapterId}-flat-${qIdx}`}
                 />
               ))}
             </div>
@@ -611,8 +617,55 @@ function SentenceCompositionStem({ q, placedMap }) {
   );
 }
 
-function QuestionBlock({ q, qIdx, onAnswer, savedOption }) {
+function QuestionBlock({ q, qIdx, onAnswer, savedOption, currentUser, videoKey }) {
   const [showScript, setShowScript] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
+  const [videoState, setVideoState] = useState({ status: 'idle', url: null, message: null });
+  const [audioTime, setAudioTime] = useState(0);
+  const [audioDuration, setAudioDuration] = useState(0);
+  const audioRef = useRef(null);
+  const script = q.script || q.transcript || '';
+  const scriptText = script.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+  const subtitleLines = scriptText.split(/(?<=[。！？!?])\s*/).filter(Boolean);
+  const activeSubtitle = subtitleLines.length && audioDuration > 0
+    ? subtitleLines[Math.min(subtitleLines.length - 1, Math.floor((audioTime / audioDuration) * subtitleLines.length))]
+    : subtitleLines[0];
+
+  const loadVideoStatus = useCallback(async () => {
+    const result = await httpsCallable(functions, 'getListeningVideo')({ chapterId: videoKey });
+    const video = result.data;
+    if (video.status === 'completed' && video.storagePath) {
+      const url = await getDownloadURL(ref(storage, video.storagePath));
+      setVideoState({ status: 'completed', url, message: null });
+      return true;
+    }
+    setVideoState({ status: video.status || 'queued', url: null, message: video.error || null });
+    return false;
+  }, [videoKey]);
+
+  const handleGenerateVideo = async () => {
+    if (!currentUser) {
+      setShowVideo(true);
+      setVideoState({ status: 'error', url: null, message: 'Please sign in before generating a video.' });
+      return;
+    }
+    setShowVideo(true);
+    setVideoState({ status: 'checking', url: null, message: null });
+    try {
+      if (await loadVideoStatus()) return;
+      const result = await httpsCallable(functions, 'generateListeningVideo')({ chapterId: videoKey, transcript: scriptText });
+      setVideoState({ status: result.data.status || 'queued', url: null, message: result.data.error || null });
+    } catch (error) {
+      console.error('Video generation request failed:', error);
+      setVideoState({ status: 'error', url: null, message: error.message || 'Could not start video generation.' });
+    }
+  };
+
+  useEffect(() => {
+    if (!showVideo || !['checking', 'queued', 'in_progress'].includes(videoState.status)) return undefined;
+    const timer = window.setInterval(() => loadVideoStatus().catch(error => console.error('Video status check failed:', error)), 8000);
+    return () => window.clearInterval(timer);
+  }, [showVideo, videoState.status, loadVideoStatus]);
   const selectedOption = savedOption
     ? (typeof savedOption === 'object' && savedOption !== null ? savedOption.text : savedOption)
     : null;
@@ -706,9 +759,12 @@ function QuestionBlock({ q, qIdx, onAnswer, savedOption }) {
           {q.audioSrc && (
             <div className="mt-3 mb-2 flex items-center gap-4 flex-wrap">
               <audio
+                ref={audioRef}
                 controls
                 controlsList="nodownload"
                 className="h-10 w-full max-w-sm"
+                onTimeUpdate={(event) => setAudioTime(event.currentTarget.currentTime)}
+                onLoadedMetadata={(event) => setAudioDuration(event.currentTarget.duration)}
               >
                 <source
                   src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${q.audioSrc}`}
@@ -721,6 +777,15 @@ function QuestionBlock({ q, qIdx, onAnswer, savedOption }) {
               >
                 {showScript ? 'Hide Script' : '📄 Show Script'}
               </button>
+              {scriptText && (
+                <button
+                  onClick={handleGenerateVideo}
+                  disabled={['checking', 'queued', 'in_progress'].includes(videoState.status)}
+                  className="px-3 py-1.5 text-sm font-bold bg-violet-100 dark:bg-violet-950/40 hover:bg-violet-200 dark:hover:bg-violet-900/60 disabled:opacity-60 disabled:cursor-wait text-violet-800 dark:text-violet-200 rounded transition-colors cursor-pointer"
+                >
+                  {['checking', 'queued', 'in_progress'].includes(videoState.status) ? 'Generating video…' : '✨ Generate Video'}
+                </button>
+              )}
             </div>
           )}
           {showScript && (
@@ -735,6 +800,26 @@ function QuestionBlock({ q, qIdx, onAnswer, savedOption }) {
                 <span className="text-gray-500 italic">
                   Script not yet available in database.
                 </span>
+              )}
+            </div>
+          )}
+          {showVideo && (
+            <div className="mt-2 mb-4 p-3 bg-slate-950 border border-slate-700 rounded overflow-hidden">
+              {videoState.status === 'completed' && videoState.url ? (
+                <div className="relative max-w-sm mx-auto rounded overflow-hidden">
+                  <video className="w-full aspect-[9/16] object-cover" controls muted loop playsInline preload="metadata">
+                    <source src={videoState.url} type="video/mp4" />
+                  </video>
+                  {activeSubtitle && (
+                    <p key={`${audioTime}-${activeSubtitle}`} className="absolute inset-x-0 bottom-0 m-0 px-3 py-4 text-center text-sm font-bold leading-relaxed text-white bg-gradient-to-t from-black/95 to-transparent animate-fadeIn">
+                      {activeSubtitle}
+                    </p>
+                  )}
+                </div>
+              ) : videoState.status === 'error' || videoState.status === 'failed' ? (
+                <p className="m-0 text-sm text-rose-300">{videoState.message || 'Video generation failed. Please try again later.'}</p>
+              ) : (
+                <p className="m-0 text-sm text-slate-200">Creating a short visual study video. Keep the listening audio playing to see synchronized subtitles.</p>
               )}
             </div>
           )}

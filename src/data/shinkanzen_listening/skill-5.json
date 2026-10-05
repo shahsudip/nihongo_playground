@@ -1,0 +1,3426 @@
+{
+  "bookId": "shinkanzen-master-n3-listening",
+  "chapterId": "skill-5",
+  "part": 2,
+  "partTitle": "第2部：実力養成編",
+  "partTitleEn": "Skill Building: Key Points Comprehension",
+  "mondaiNumber": 5,
+  "order": 5,
+  "title": "第5単元：「ポイント理解」のスキルを学ぶ",
+  "mondaiHeader": "【第5単元：「ポイント理解」のスキルを学ぶ】\nまとまりのある話を聞いて、出来事の理由、目的や話し手の気持ちなど、はじめに質問文で指示されたポイントを聞き取る問題（第2問形式）です。以下の重要な聞き取りポイントを習得します：\n1. 選択肢と同じ言葉・類語が出てくる部分に特に注意して聞く（「最も」「特に」「最高」などの強調表現）\n2. 答える文で言いたいこと（肯定的か否定的か）を判断する（「〜けど」「〜し」「〜ば……けど」などの含み）\n3. 追加情報に注意する（「実は」「それが」「やっぱり」「それより」などの情報修正・真の意図）",
+  "instruction": "状況説明文と質問文を聞いてから選択肢を読み、話を聞いて正しい答えを一つえらんでください。",
+  "hotspots": [
+    {
+      "id": "hotspot-1",
+      "trackId": "cd1-track48",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/48 Track 48.mp3",
+      "label": "例題1 [A48]"
+    },
+    {
+      "id": "hotspot-2",
+      "trackId": "cd1-track49",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/49 Track 49.mp3",
+      "label": "練習1 (1) [A49]"
+    },
+    {
+      "id": "hotspot-3",
+      "trackId": "cd1-track50",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/50 Track 50.mp3",
+      "label": "練習1 (2) [A50]"
+    },
+    {
+      "id": "hotspot-4",
+      "trackId": "cd1-track51",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/51 Track 51.mp3",
+      "label": "練習1 (3) [A51]"
+    },
+    {
+      "id": "hotspot-5",
+      "trackId": "cd1-track52",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/52 Track 52.mp3",
+      "label": "練習1 (4) [A52]"
+    },
+    {
+      "id": "hotspot-6",
+      "trackId": "cd1-track53",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/53 Track 53.mp3",
+      "label": "練習1 (5) [A53]"
+    },
+    {
+      "id": "hotspot-7",
+      "trackId": "cd2-track01",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/01 Track 1.mp3",
+      "label": "例題2-1 [B01]"
+    },
+    {
+      "id": "hotspot-8",
+      "trackId": "cd2-track02",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/02 Track 2.mp3",
+      "label": "練習2-1 [B02]"
+    },
+    {
+      "id": "hotspot-9",
+      "trackId": "cd2-track03",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/03 Track 3.mp3",
+      "label": "例題2-2 [B03]"
+    },
+    {
+      "id": "hotspot-10",
+      "trackId": "cd2-track04",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/04 Track 4.mp3",
+      "label": "練習2-2 (1) [B04]"
+    },
+    {
+      "id": "hotspot-11",
+      "trackId": "cd2-track05",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/05 Track 5.mp3",
+      "label": "練習2-2 (2) [B05]"
+    },
+    {
+      "id": "hotspot-12",
+      "trackId": "cd2-track06",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/06 Track 6.mp3",
+      "label": "練習2-2 (3) [B06]"
+    },
+    {
+      "id": "hotspot-13",
+      "trackId": "cd2-track07",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/07 Track 7.mp3",
+      "label": "練習2-2 (4) [B07]"
+    },
+    {
+      "id": "hotspot-14",
+      "trackId": "cd2-track08",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/08 Track 8.mp3",
+      "label": "練習2-2 (5) [B08]"
+    },
+    {
+      "id": "hotspot-15",
+      "trackId": "cd2-track09",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/09 Track 9.mp3",
+      "label": "例題3 [B09]"
+    },
+    {
+      "id": "hotspot-16",
+      "trackId": "cd2-track10",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/10 Track 10.mp3",
+      "label": "練習3 (1) [B10]"
+    },
+    {
+      "id": "hotspot-17",
+      "trackId": "cd2-track11",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/11 Track 11.mp3",
+      "label": "練習3 (2) [B11]"
+    },
+    {
+      "id": "hotspot-18",
+      "trackId": "cd2-track12",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/12 Track 12.mp3",
+      "label": "練習3 (3) [B12]"
+    },
+    {
+      "id": "hotspot-19",
+      "trackId": "cd2-track13",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/13 Track 13.mp3",
+      "label": "練習3 (4) [B13]"
+    },
+    {
+      "id": "hotspot-20",
+      "trackId": "cd2-track14",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/14 Track 14.mp3",
+      "label": "練習3 (5) [B14]"
+    },
+    {
+      "id": "hotspot-21",
+      "trackId": "cd2-track15",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/15 Track 15.mp3",
+      "label": "確認問題 説明 [B15]"
+    },
+    {
+      "id": "hotspot-22",
+      "trackId": "cd2-track16",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/16 Track 16.mp3",
+      "label": "確認問題 1 [B16]"
+    },
+    {
+      "id": "hotspot-23",
+      "trackId": "cd2-track17",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/17 Track 17.mp3",
+      "label": "確認問題 2 [B17]"
+    },
+    {
+      "id": "hotspot-24",
+      "trackId": "cd2-track18",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/18 Track 18.mp3",
+      "label": "確認問題 3 [B18]"
+    }
+  ],
+  "questions": [
+    {
+      "sectionTitle": "1 選択肢と同じ言葉に注意して聞く",
+      "badge": "例題1",
+      "subtitle": "1 ポイントの聞き取り（留守番電話）",
+      "trackId": "cd1-track48",
+      "trackLabel": "例題1 [A48]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/48 Track 48.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "留守番電話を聞いています。<br/><img src=\"/images/shinkanzen_listening/skill-5/section1_expressions.png\" alt=\"表現\" class=\"max-w-md mx-auto my-2 border rounded shadow-sm\" />",
+      "questionText": "この女の人はいつ本を返すと言っていますか。",
+      "options": [
+        "今週の金曜日",
+        "今週の木曜日",
+        "来週の月曜日",
+        "再来週の月曜日"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "今週の木曜日"
+      },
+      "explanation": "<b>【正解】2（今週の木曜日）</b><br/>質問は「いつ本を返すか」です。「今週の金曜日」は「ちょっと行けなくなってしまった」ので除外。「前の日の木曜日の夕方、アルバイトの帰りにお宅にうかがってもいいでしょうか」と言っているので <b>2「今週の木曜日」</b> が正解です。「来週の月曜日」は祝日でお休み、「再来週」は遅すぎると言っています。"
+    },
+    {
+      "sectionTitle": "1 選択肢と同じ言葉に注意して聞く",
+      "badge": "練習1 (1)",
+      "subtitle": "1 ポイントの聞き取り",
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/49 Track 49.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "女の人と男の人が歌のクラブの練習について話しています。",
+      "questionText": "女の人はどうして金曜日に来られませんか。",
+      "options": [
+        "アルバイトに行くから",
+        "アルバイトの面接があるから",
+        "先生と会うから",
+        "授業があるから"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "アルバイトの面接があるから"
+      },
+      "explanation": "<b>【正解】2（アルバイトの面接があるから）</b><br/>金曜日に休む理由について女の人は「これから始めるの。その面接なんだ」と言っています。木曜日は先生と会う約束があり、水曜日は授業が休みになったため出席できます。したがって金曜日に来られない理由は <b>2「アルバイトの面接があるから」</b> です。"
+    },
+    {
+      "sectionTitle": "1 選択肢と同じ言葉に注意して聞く",
+      "badge": "練習1 (2)",
+      "subtitle": "1 ポイントの聞き取り",
+      "trackId": "cd1-track50",
+      "trackLabel": "練習1 (2) [A50]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/50 Track 50.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "女の人がテレビで話しています。",
+      "questionText": "今年のダイコンはどうですか。",
+      "options": [
+        "太くておいしい",
+        "細すぎて甘くない",
+        "葉が大きい",
+        "味がはっきりしない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "太くておいしい"
+      },
+      "explanation": "<b>【正解】1（太くておいしい）</b><br/>「寒さによってこのように大きくしっかりと育ち、甘みのあるダイコンになるんですね」と言っています。暖かい年はおいしいものができませんが、今年は寒い冬だったため大きく育って甘みがあります。したがって <b>1「太くておいしい」</b> が正解です。"
+    },
+    {
+      "sectionTitle": "1 選択肢と同じ言葉に注意して聞く",
+      "badge": "練習1 (3)",
+      "subtitle": "1 ポイントの聞き取り",
+      "trackId": "cd1-track51",
+      "trackLabel": "練習1 (3) [A51]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/51 Track 51.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "留守番電話を聞いています。",
+      "questionText": "男の人は今日、どうして遅れると言っていますか。",
+      "options": [
+        "体の具合が悪いから",
+        "電車が止まっているから",
+        "事故があったから",
+        "仕事が終わらないから"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "電車が止まっているから"
+      },
+      "explanation": "<b>【正解】2（電車が止まっているから）</b><br/>「気分が悪くなった人がいたらしい」「電車が止まっている」と説明しています。事故ではなく、男の人自身の体調不良でもありません。したがって遅れる理由は <b>2「電車が止まっているから」</b> です。"
+    },
+    {
+      "sectionTitle": "1 選択肢と同じ言葉に注意して聞く",
+      "badge": "練習1 (4)",
+      "subtitle": "1 ポイントの聞き取り",
+      "trackId": "cd1-track52",
+      "trackLabel": "練習1 (4) [A52]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/52 Track 52.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "男の留学生が先生とスピーチ大会について話しています。",
+      "questionText": "男の留学生はスピーチで何が最も難しかったと言っていますか。",
+      "options": [
+        "長いスピーチを覚えること",
+        "スピーチのテーマを決めること",
+        "日本語でスピーチを書くこと",
+        "人の顔を見ながら話すこと"
+      ],
+      "correctOption": {
+        "index": 3,
+        "text": "人の顔を見ながら話すこと"
+      },
+      "explanation": "<b>【正解】4（人の顔を見ながら話すこと）</b><br/>覚えるのには時間がかかりましたが、「発表の時、聞いている人たちの顔を見ながら話すのが一番難しかったです」とはっきり述べています。したがって最も難しかったのは <b>4「人の顔を見ながら話すこと」</b> です。"
+    },
+    {
+      "sectionTitle": "1 選択肢と同じ言葉に注意して聞く",
+      "badge": "練習1 (5)",
+      "subtitle": "1 ポイントの聞き取り",
+      "trackId": "cd1-track53",
+      "trackLabel": "練習1 (5) [A53]",
+      "audioSrc": "/audio/shinkanzen_listening/CD1/53 Track 53.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "女の人と男の人が話しています。",
+      "questionText": "男の人は出張で最も困ったことは何だと言っていますか。",
+      "options": [
+        "仕事で問題があったこと",
+        "言葉がわからなかったこと",
+        "料理が口に合わなかったこと",
+        "シャワーのお湯が出なかったこと"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "料理が口に合わなかったこと"
+      },
+      "explanation": "<b>【正解】3（料理が口に合わなかったこと）</b><br/>「それより僕は食事が合わなくてね。毎食あの辛い料理を食べなくちゃいけないのが一番困ったな」と述べています。シャワーが出ないトラブルは部屋を変えてもらって解決しました。したがって最も困ったのは <b>3「料理が口に合わなかったこと」</b> です。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "例題2-1 (1)",
+      "subtitle": "2-A 肯定的か否定的かの聞き分け",
+      "trackId": "cd2-track01",
+      "trackLabel": "例題2-1 [B01]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/01 Track 1.mp3",
+      "instruction": "会話を聞いてください。女の人は何が言いたいですか。",
+      "context": "男：カラオケ、行かない？<br/>女：わたし、あんまり上手じゃないから……。<br/><img src=\"/images/shinkanzen_listening/skill-5/section2_expressions.png\" alt=\"表現\" class=\"max-w-md mx-auto my-2 border rounded shadow-sm\" />",
+      "questionText": "女の人はカラオケに行きたいですか。",
+      "options": [
+        "行きたい",
+        "行きたくない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "行きたくない"
+      },
+      "explanation": "<b>【正解】行きたくない</b><br/>「（歌が）あんまり上手じゃない」という理由を表す「から……」をつけて答えており、「行きたくない」という否定的な意図を表しています。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "例題2-1 (2)",
+      "subtitle": "2-A 肯定的か否定的かの聞き分け",
+      "trackId": "cd2-track01",
+      "trackLabel": "例題2-1 [B01]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/01 Track 1.mp3",
+      "instruction": "会話を聞いてください。女の人は何が言いたいですか。",
+      "context": "男：これ、食べないの？<br/>女：おなかいっぱいじゃなければ、食べたいんだけど。",
+      "questionText": "女の人はこれを食べますか。",
+      "options": [
+        "食べる",
+        "食べない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "食べない"
+      },
+      "explanation": "<b>【正解】食べない</b><br/>「〜ば……けど」を使って実際とは違う状況（仮定）を示しています。実際はお腹がいっぱいなので「食べない」という意味です。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "練習2-1 (1)",
+      "subtitle": "2-A 肯定的か否定的かの聞き分け",
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/02 Track 2.mp3",
+      "instruction": "会話を聞いてください。女の人は何が言いたいですか。",
+      "context": "男：テニス、好きなの？<br/>女：見るだけだけどね。",
+      "questionText": "テニスをすることについてどう言っていますか。",
+      "options": [
+        "テニスをするのは好きだ",
+        "テニスをするのは好きではない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "テニスをするのは好きではない"
+      },
+      "explanation": "<b>【正解】テニスをするのは好きではない</b><br/>「見るだけ」と言っているため、自分がプレーするのは好きではありません。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "練習2-1 (2)",
+      "subtitle": "2-A 肯定的か否定的かの聞き分け",
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/02 Track 2.mp3",
+      "instruction": "会話を聞いてください。女の人は何が言いたいですか。",
+      "context": "男：あ、この映画、面白そうだよね。<br/>女：出てる人もいいしね。",
+      "questionText": "この映画についてどう思っていますか。",
+      "options": [
+        "面白い",
+        "面白くない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "面白い"
+      },
+      "explanation": "<b>【正解】面白い</b><br/>「出てる人もいいしね」と肯定的な理由を付け加えて賛同しています。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "練習2-1 (3)",
+      "subtitle": "2-A 肯定的か否定的かの聞き分け",
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/02 Track 2.mp3",
+      "instruction": "会話を聞いてください。女の人は何が言いたいですか。",
+      "context": "男：これ、高いよ。ほんとに買うの？<br/>女：給料もらったばかりだし、ずっとほしかったから。",
+      "questionText": "この商品を買いますか。",
+      "options": [
+        "買う",
+        "買わない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "買う"
+      },
+      "explanation": "<b>【正解】買う</b><br/>「給料もらったばかり」「ずっとほしかったから」と買う理由を述べています。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "練習2-1 (4)",
+      "subtitle": "2-A 肯定的か否定的かの聞き分け",
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/02 Track 2.mp3",
+      "instruction": "会話を聞いてください。女の人は何が言いたいですか。",
+      "context": "男：夏休み、ハワイに行くの？<br/>女：お金があったら、行きたいんだけどね。",
+      "questionText": "ハワイに行きますか。",
+      "options": [
+        "行く",
+        "行かない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "行かない"
+      },
+      "explanation": "<b>【正解】行かない</b><br/>「お金があったら行きたいんだけど」という仮定表現を使っており、実際はお金がないため行きません。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "練習2-1 (5)",
+      "subtitle": "2-A 肯定的か否定的かの聞き分け",
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/02 Track 2.mp3",
+      "instruction": "会話を聞いてください。女の人は何が言いたいですか。",
+      "context": "男：今でもジョギングしてるの？<br/>女：ちょっと大変だけどね。",
+      "questionText": "今ジョギングをしていますか。",
+      "options": [
+        "している",
+        "していない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "している"
+      },
+      "explanation": "<b>【正解】している</b><br/>「大変だけどね」と前置きしつつ、現在も続けていることを認めています。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "練習2-1 (6)",
+      "subtitle": "2-A 肯定的か否定的かの聞き分け",
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/02 Track 2.mp3",
+      "instruction": "会話を聞いてください。女の人は何が言いたいですか。",
+      "context": "男：これ、片付けましょうか。<br/>女：あ、また後で使いますから。",
+      "questionText": "片付けについてどう言っていますか。",
+      "options": [
+        "片付けてほしい",
+        "片付けなくてもいい"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "片付けなくてもいい"
+      },
+      "explanation": "<b>【正解】片付けなくてもいい</b><br/>「また後で使いますから」と理由を言って片付けを断っています。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "練習2-1 (7)",
+      "subtitle": "2-A 肯定的か否定的かの聞き分け",
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/02 Track 2.mp3",
+      "instruction": "会話を聞いてください。女の人は何が言いたいですか。",
+      "context": "男：コーヒーでもいれましょうか。<br/>女：おいしいお菓子もありますしね。",
+      "questionText": "コーヒーを飲みたいですか。",
+      "options": [
+        "コーヒーを飲みたい",
+        "コーヒーを飲みたくない"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "コーヒーを飲みたい"
+      },
+      "explanation": "<b>【正解】コーヒーを飲みたい</b><br/>「お菓子もありますしね」と飲むことに前向きな賛意を示しています。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "練習2-1 (8)",
+      "subtitle": "2-A 肯定的か否定的かの聞き分け",
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/02 Track 2.mp3",
+      "instruction": "会話を聞いてください。女の人は何が言いたいですか。",
+      "context": "男：あのレストラン、よく行ってるみたいだけど、おいしいの？<br/>女：そういうわけじゃないんだけど、料理が出てくるのが早くて。",
+      "questionText": "おいしいから行っているのですか。",
+      "options": [
+        "おいしいから行く",
+        "おいしいから行くのではない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "おいしいから行くのではない"
+      },
+      "explanation": "<b>【正解】おいしいから行くのではない</b><br/>「そういうわけじゃない（＝おいしいからではない）」とはっきり否定しています。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "練習2-1 (9)",
+      "subtitle": "2-A 肯定的か否定的かの聞き分け",
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/02 Track 2.mp3",
+      "instruction": "会話を聞いてください。女の人は何が言いたいですか。",
+      "context": "男：このソファー、いいよね。<br/>女：うちがもっと広ければ、買いたいけど。",
+      "questionText": "ソファーを買いますか。",
+      "options": [
+        "買う",
+        "買わない"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "買わない"
+      },
+      "explanation": "<b>【正解】買わない</b><br/>「広ければ買いたいけど」と部屋が狭い現実を示し、買わない意向を表しています。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "練習2-1 (10)",
+      "subtitle": "2-A 肯定的か否定的かの聞き分け",
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/02 Track 2.mp3",
+      "instruction": "会話を聞いてください。女の人は何が言いたいですか。",
+      "context": "男：昨日の飲み会、行ったの？<br/>女：先輩に誘われなかったら、行かなかったんだけど。",
+      "questionText": "昨日の飲み会に行きましたか。",
+      "options": [
+        "行った",
+        "行かなかった"
+      ],
+      "correctOption": {
+        "index": 0,
+        "text": "行った"
+      },
+      "explanation": "<b>【正解】行った</b><br/>「誘われなかったら行かなかった」＝先輩に誘われたので行った、という意味です。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "例題2-2",
+      "subtitle": "2-B 肯定・否定の整理",
+      "trackId": "cd2-track03",
+      "trackLabel": "例題2-2 [B03]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/03 Track 3.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "女の人と男の人がお父さんへのプレゼントについて話しています。",
+      "questionText": "女の人は何をあげることにしましたか。",
+      "options": [
+        "ネクタイ",
+        "お酒",
+        "ジョギング用の靴",
+        "ジョギング用の服"
+      ],
+      "correctOption": {
+        "index": 3,
+        "text": "ジョギング用の服"
+      },
+      "explanation": "<b>【正解】4（ジョギング用の服）</b><br/>・ネクタイ：「仕事に行く時もほとんどしなくて……」と否定。<br/>・お酒：「去年もそうだったしねえ」と否定。<br/>・ジョギング用の靴と服：「走る時履く靴とか着る物なんていいんじゃない？」に対し、「靴はサイズが難しいから……、うん、決めた。ありがとう！」と着る物（服）を選びました。したがって <b>4「ジョギング用の服」</b> が正解です。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "練習2-2 (1)",
+      "subtitle": "2-B 肯定・否定の整理",
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/04 Track 4.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "男の人と女の人が話しています。",
+      "questionText": "女の人は今、何を習っていますか。",
+      "options": [
+        "ピアノ",
+        "ダンス",
+        "水泳",
+        "ダイビング"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "水泳"
+      },
+      "explanation": "<b>【正解】3（水泳）</b><br/>ピアノはたまに弾くだけ、ダンスは「いつかはやってみたい」と未着手、ダイビングは「実はダイビングをしたいんだけど、全然うまく泳げないから、水泳教室に通い始めたの」と言っています。したがって今習っているのは <b>3「水泳」</b> です。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "練習2-2 (2)",
+      "subtitle": "2-B 肯定・否定の整理",
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/05 Track 5.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "女の人と男の人が話しています。",
+      "questionText": "女の人がハワイに行った一番の理由は何ですか。",
+      "options": [
+        "海で遊ぶため",
+        "観光するため",
+        "結婚式に出るため",
+        "買い物をするため"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "結婚式に出るため"
+      },
+      "explanation": "<b>【正解】3（結婚式に出るため）</b><br/>海で泳ぐのは好きではなく、観光も時間がなくてできませんでした。「今回は友達の結婚式があったからね」と言っており、これがハワイを訪れた一番の理由です。したがって <b>3「結婚式に出るため」</b> が正解です。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "練習2-2 (3)",
+      "subtitle": "2-B 肯定・否定の整理",
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/06 Track 6.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "女の人が友達とビデオカメラについて話しています。",
+      "questionText": "女の人はビデオカメラをどうしますか。",
+      "options": [
+        "田中君に借りる",
+        "加藤さんから受け取る",
+        "鈴木さんに借りる",
+        "田中君の弟のを借りる"
+      ],
+      "correctOption": {
+        "index": 3,
+        "text": "田中君の弟のを借りる"
+      },
+      "explanation": "<b>【正解】4（田中君の弟のを借りる）</b><br/>田中君自身のカメラは加藤さんに貸出中です。そこで田中君が「弟に前に持ってた古いのをやったんだ。普段使ってないみたいだから来週持ってくるよ」と提案し、女の人がお願いしたため、<b>4「田中君の弟のを借りる」</b> が正解です。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "練習2-2 (4)",
+      "subtitle": "2-B 肯定・否定の整理",
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/07 Track 7.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "男の人と女の人が駅で話しています。",
+      "questionText": "男の人はどうして特急ではなく各駅停車の電車に乗りたいのですか。",
+      "options": [
+        "切符が安いから",
+        "すいているから",
+        "ゲームをしたいから",
+        "女の人と一緒にいたいから"
+      ],
+      "correctOption": {
+        "index": 3,
+        "text": "女の人と一緒にいたいから"
+      },
+      "explanation": "<b>【正解】4（女の人と一緒にいたいから）</b><br/>男の人は最後に「君と2時間半も一緒に座っていられるなんて、めったにないことだからね」と本音を明かしています。したがって各駅停車に乗りたい一番の理由は <b>4「女の人と一緒にいたいから」</b> です。"
+    },
+    {
+      "sectionTitle": "2 答える文で言いたいことを考える",
+      "badge": "練習2-2 (5)",
+      "subtitle": "2-B 肯定・否定の整理",
+      "trackId": "cd2-track08",
+      "trackLabel": "練習2-2 (5) [B08]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/08 Track 8.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "女の人と男の人が話しています。",
+      "questionText": "男の人はどうしてダイエットをすることにしましたか。",
+      "options": [
+        "医者に言われたから",
+        "妻に言われたから",
+        "体が重いと動きにくいから",
+        "新しい服を買いたくないから"
+      ],
+      "correctOption": {
+        "index": 3,
+        "text": "新しい服を買いたくないから"
+      },
+      "explanation": "<b>【正解】4（新しい服を買いたくないから）</b><br/>太ると服が着られなくなりますが、「太るたびに新しい服買うより、別のことにお金を使いたいなと思って」と述べています。したがってダイエットをすることにした理由は <b>4「新しい服を買いたくないから」</b> です。"
+    },
+    {
+      "sectionTitle": "3 追加情報に注意する",
+      "badge": "例題3",
+      "subtitle": "3 追加情報・意図の修正",
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/09 Track 9.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "会社で男の人と女の人が話しています。<br/><img src=\"/images/shinkanzen_listening/skill-5/section3_expressions.png\" alt=\"表現\" class=\"max-w-md mx-auto my-2 border rounded shadow-sm\" />",
+      "questionText": "女の人が中国語を勉強している目的は何ですか。",
+      "options": [
+        "仕事で使うため",
+        "中国に行くため",
+        "友達と話すため",
+        "歌の意味を知るため"
+      ],
+      "correctOption": {
+        "index": 3,
+        "text": "歌の意味を知るため"
+      },
+      "explanation": "<b>【正解】4（歌の意味を知るため）</b><br/>仕事で使えるといいと認めつつも「単に趣味で」、飛行機が苦手なので旅行でもなく、中国人の友達もいません。「実は最近、中国のお土産でCDをもらったんですけど、それがすごくいいんです。音楽だけじゃなくて意味を知りたいなと思って」と真の目的を述べているため、<b>4「歌の意味を知るため」</b> が正解です。"
+    },
+    {
+      "sectionTitle": "3 追加情報に注意する",
+      "badge": "練習3 (1)",
+      "subtitle": "3 追加情報・意図の修正",
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/10 Track 10.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "夫と妻が子どもの名前について話しています。",
+      "questionText": "妻が考えている赤ちゃんの名前は何ですか。",
+      "options": [
+        "さくら",
+        "ローズ",
+        "ゆり",
+        "リリー"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "ゆり"
+      },
+      "explanation": "<b>【正解】3（ゆり）</b><br/>生まれるのが5月なのでさくらは除外、ばらやローズ・リリーも検討しますが「それより5月は庭のゆりの花がきれいで、ひらがなで二文字、日本語のほうがいい」と決めたため、<b>3「ゆり」</b> が正解です。"
+    },
+    {
+      "sectionTitle": "3 追加情報に注意する",
+      "badge": "練習3 (2)",
+      "subtitle": "3 追加情報・意図の修正",
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/11 Track 11.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "女の人と男の人が話しています。",
+      "questionText": "女の人は何が一番よかったと言っていますか。",
+      "options": [
+        "料理がおいしかったこと",
+        "相手の人が素敵だったこと",
+        "有名な歌手の歌が聴けたこと",
+        "友達が幸せそうだったこと"
+      ],
+      "correctOption": {
+        "index": 3,
+        "text": "友達が幸せそうだったこと"
+      },
+      "explanation": "<b>【正解】4（友達が幸せそうだったこと）</b><br/>歌手KENの生歌も上手でよかったと述べていますが、「でも、やっぱり友達の幸せそうな姿を見られたのが最高だったな」と「最高」を強調しています。したがって一番よかったのは <b>4「友達が幸せそうだったこと」</b> です。"
+    },
+    {
+      "sectionTitle": "3 追加情報に注意する",
+      "badge": "練習3 (3)",
+      "subtitle": "3 追加情報・意図の修正",
+      "trackId": "cd2-track12",
+      "trackLabel": "練習3 (3) [B12]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/12 Track 12.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "男の人と女の人が話しています。",
+      "questionText": "男の人はどうしてその店に行きたいのですか。",
+      "options": [
+        "少し歩きたいから",
+        "ランチが割引になるから",
+        "コーヒーがおいしいから",
+        "雑誌が安く買えるから"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "ランチが割引になるから"
+      },
+      "explanation": "<b>【正解】2（ランチが割引になるから）</b><br/>本屋にカフェがあり、普段は高くてなかなか行けないが「実は割引券があってさ。50%オフ、半額だよ」と行きたい理由を述べています。雑誌の割引ではなくランチの半額券です。したがって <b>2「ランチが割引になるから」</b> が正解です。"
+    },
+    {
+      "sectionTitle": "3 追加情報に注意する",
+      "badge": "練習3 (4)",
+      "subtitle": "3 追加情報・意図の修正",
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/13 Track 13.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "うちで夫と妻が話しています。",
+      "questionText": "妻はどうして楽しそうではないのですか。",
+      "options": [
+        "たくさん歩いて疲れたから",
+        "犬が歩こうとしなかったから",
+        "犬がほかの犬とけんかしたから",
+        "おばあさんと言われたから"
+      ],
+      "correctOption": {
+        "index": 3,
+        "text": "おばあさんと言われたから"
+      },
+      "explanation": "<b>【正解】4（おばあさんと言われたから）</b><br/>散歩で会った男の子が犬に「いい子にするんだよ。おばあさんを困らせたらだめだよ」と言ったことにショックを受けて不機嫌になっています。したがって楽しそうではない理由は <b>4「おばあさんと言われたから」</b> です。"
+    },
+    {
+      "sectionTitle": "3 追加情報に注意する",
+      "badge": "練習3 (5)",
+      "subtitle": "3 追加情報・意図の修正",
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/14 Track 14.mp3",
+      "instruction": "状況説明文と質問文を聞いてから、選択肢を読んでください。それから話を聞いて、正しい答えを1つ選んでください。",
+      "context": "うちで子どもとお母さんが話しています。",
+      "questionText": "息子はどうしてお弁当を持っていきたくないのですか。",
+      "options": [
+        "母親が作ったものを食べたくないから",
+        "友達が皆コンビニで買うから",
+        "弁当箱が大きすぎるから",
+        "コンビニ弁当の方がおいしいから"
+      ],
+      "correctOption": {
+        "index": 2,
+        "text": "弁当箱が大きすぎるから"
+      },
+      "explanation": "<b>【正解】3（弁当箱が大きすぎるから）</b><br/>「行きも帰りも大きい荷物持って歩かなくて済むから」「今のは大きすぎてかばんに入らない」と言っており、荷物になる大きな弁当箱を持ち歩きたくないのが本質です。したがって <b>3「弁当箱が大きすぎるから」</b> が正解です。"
+    },
+    {
+      "sectionTitle": "確認問題",
+      "badge": "確認問題 1",
+      "subtitle": "ポイント理解 実戦演習",
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/16 Track 16.mp3",
+      "instruction": "まず質問を聞いてください。そのあと、選択肢を見てください。読む時間があります。それから話を聞いて、1から4の中から最もよいものを1つ選んでください。",
+      "context": "男の人と女の人がアルバイトの雑誌を見ながら話しています。",
+      "questionText": "女の人はどこでアルバイトをしますか。",
+      "options": [
+        "引っ越し会社",
+        "水泳教室",
+        "英語教室",
+        "ホテル"
+      ],
+      "correctOption": {
+        "index": 1,
+        "text": "水泳教室"
+      },
+      "explanation": "<b>【正解】2（水泳教室）</b><br/>引っ越しやホテルのシーツ替え・風呂掃除は力仕事で苦手。英語教室は英語ができないので無理。女の人は「水泳は得意なんだ。子供と一緒って楽しそう」と言い、「やっぱり自分の得意なことにしよう」と決めたため、<b>2「水泳教室」</b> が正解です。"
+    },
+    {
+      "sectionTitle": "確認問題",
+      "badge": "確認問題 2",
+      "subtitle": "ポイント理解 実戦演習",
+      "trackId": "cd2-track17",
+      "trackLabel": "確認問題 2 [B17]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/17 Track 17.mp3",
+      "instruction": "まず質問を聞いてください。そのあと、選択肢を見てください。読む時間があります。それから話を聞いて、1から4の中から最もよいものを1つ選んでください。",
+      "context": "ボランティアグループで女の人が自己紹介をしています。",
+      "questionText": "この女の人がボランティアを始めたい一番の目的は何ですか。",
+      "options": [
+        "市をきれいにするため",
+        "体を動かすため",
+        "外国人の友達を作るため",
+        "市のことを知るため"
+      ],
+      "correctOption": {
+        "index": 3,
+        "text": "市のことを知るため"
+      },
+      "explanation": "<b>【正解】4（市のことを知るため）</b><br/>留学生のホームステイを受け入れる予定ですが、仕事が忙しくて市内のことを何も知らないため「外国の若い方にこの市を気に入ってもらいたいと思っても、自分が何も知らないんじゃ仕方がない。ボランティアしながら良い所を見つけていきたい」と語っています。したがって一番の目的は <b>4「市のことを知るため」</b> です。"
+    },
+    {
+      "sectionTitle": "確認問題",
+      "badge": "確認問題 3",
+      "subtitle": "ポイント理解 実戦演習",
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "audioSrc": "/audio/shinkanzen_listening/CD2/18 Track 18.mp3",
+      "instruction": "まず質問を聞いてください。そのあと、選択肢を見てください。読む時間があります。それから話を聞いて、1から4の中から最もよいものを1つ選んでください。",
+      "context": "会社で女の人と男の人が話しています。",
+      "questionText": "男の人は今度の出張でどうして日帰りしますか。",
+      "options": [
+        "交通が便利な所だから",
+        "会社から泊まるお金がもらえないから",
+        "次の日に会社で仕事があるから",
+        "次の日に家の用事があるから"
+      ],
+      "correctOption": {
+        "index": 3,
+        "text": "次の日に家の用事があるから"
+      },
+      "explanation": "<b>【正解】4（次の日に家の用事があるから）</b><br/>出張先は遠く新幹線で3時間半かかり宿泊手当も出ますが、翌日は土曜日で「朝から家族で出かけることになっててね」と家族との予定があるため日帰りにします。したがって日帰りする理由は <b>4「次の日に家の用事があるから」</b> です。"
+    }
+  ],
+  "transcript": [
+    {
+      "trackId": "cd1-track48",
+      "trackLabel": "例題1 [A48]",
+      "start": 0.0,
+      "end": 2.52,
+      "text": "例題1"
+    },
+    {
+      "trackId": "cd1-track48",
+      "trackLabel": "例題1 [A48]",
+      "start": 2.52,
+      "end": 5.72,
+      "text": "ルスバンデンはを聞いています"
+    },
+    {
+      "trackId": "cd1-track48",
+      "trackLabel": "例題1 [A48]",
+      "start": 5.72,
+      "end": 11.72,
+      "text": "この女の人はいつ本を返すと言っていますか?"
+    },
+    {
+      "trackId": "cd1-track48",
+      "trackLabel": "例題1 [A48]",
+      "start": 24.72,
+      "end": 27.08,
+      "text": "もしもし、すぎうちです"
+    },
+    {
+      "trackId": "cd1-track48",
+      "trackLabel": "例題1 [A48]",
+      "start": 27.08,
+      "end": 29.74,
+      "text": "借りていた本のことなんですけど"
+    },
+    {
+      "trackId": "cd1-track48",
+      "trackLabel": "例題1 [A48]",
+      "start": 29.74,
+      "end": 33.04,
+      "text": "今週の金曜日に返す約束でしたが"
+    },
+    {
+      "trackId": "cd1-track48",
+      "trackLabel": "例題1 [A48]",
+      "start": 33.04,
+      "end": 35.92,
+      "text": "ちょっと行けなくなってしまったんです"
+    },
+    {
+      "trackId": "cd1-track48",
+      "trackLabel": "例題1 [A48]",
+      "start": 35.92,
+      "end": 39.72,
+      "text": "それで、前の日の目曜日の夕方"
+    },
+    {
+      "trackId": "cd1-track48",
+      "trackLabel": "例題1 [A48]",
+      "start": 39.72,
+      "end": 43.84,
+      "text": "アルバイトの帰りにお宅に浮かがってもいいでしょうか?"
+    },
+    {
+      "trackId": "cd1-track48",
+      "trackLabel": "例題1 [A48]",
+      "start": 43.84,
+      "end": 47.02,
+      "text": "ルスだったらポストに入れておきます"
+    },
+    {
+      "trackId": "cd1-track48",
+      "trackLabel": "例題1 [A48]",
+      "start": 47.02,
+      "end": 50.28,
+      "text": "月曜日のゼミの時にとも思ったんですが"
+    },
+    {
+      "trackId": "cd1-track48",
+      "trackLabel": "例題1 [A48]",
+      "start": 50.28,
+      "end": 54.12,
+      "text": "来週は宿実でお休みなんですよね"
+    },
+    {
+      "trackId": "cd1-track48",
+      "trackLabel": "例題1 [A48]",
+      "start": 54.12,
+      "end": 57.12,
+      "text": "さらい週だとおすすぎるので"
+    },
+    {
+      "trackId": "cd1-track48",
+      "trackLabel": "例題1 [A48]",
+      "start": 57.12,
+      "end": 59.32,
+      "text": "どうもすみません"
+    },
+    {
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "start": 0.0,
+      "end": 3.04,
+      "text": "練習1"
+    },
+    {
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "start": 3.04,
+      "end": 4.38,
+      "text": "1"
+    },
+    {
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "start": 4.38,
+      "end": 11.4,
+      "text": "女の人と男の人が歌のクラブの練習について話しています"
+    },
+    {
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "start": 11.4,
+      "end": 17.6,
+      "text": "女の人はどうして金曜日に来られませんか"
+    },
+    {
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "start": 17.88,
+      "end": 28.38,
+      "text": "同じ人たちの男の人は聞き込みをしろ"
+    },
+    {
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "start": 28.38,
+      "end": 34.94,
+      "text": "ね、来週の歌の練習なんだけど金曜日休んでもいいかな"
+    },
+    {
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "start": 34.94,
+      "end": 36.42,
+      "text": "何かあるの?"
+    },
+    {
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "start": 36.42,
+      "end": 38.88,
+      "text": "うん、アルバイトのね"
+    },
+    {
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "start": 38.88,
+      "end": 41.3,
+      "text": "あー、アルバイトしてるんだ"
+    },
+    {
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "start": 41.3,
+      "end": 45.7,
+      "text": "うん、これから始めるの、その mensetなんだ"
+    },
+    {
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "start": 45.7,
+      "end": 47.24,
+      "text": "ふん"
+    },
+    {
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "start": 47.24,
+      "end": 49.24,
+      "text": "他の日は来られる?"
+    },
+    {
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "start": 49.24,
+      "end": 54.24,
+      "text": "えっと、木曜日は先生と青役即があるから"
+    },
+    {
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "start": 54.24,
+      "end": 58.24,
+      "text": "ちょっと遅れていくかもしれないけど、あとは大丈夫"
+    },
+    {
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "start": 58.24,
+      "end": 63.24,
+      "text": "でも、水曜日は事業があって来られないって言ってなかった?"
+    },
+    {
+      "trackId": "cd1-track49",
+      "trackLabel": "練習1 (1) [A49]",
+      "start": 63.24,
+      "end": 68.24,
+      "text": "あ、来週は事業が休みになったから、そっちは出られるよ"
+    },
+    {
+      "trackId": "cd1-track50",
+      "trackLabel": "練習1 (2) [A50]",
+      "start": 0.0,
+      "end": 5.56,
+      "text": "2 女の人がテレビで話しています"
+    },
+    {
+      "trackId": "cd1-track50",
+      "trackLabel": "練習1 (2) [A50]",
+      "start": 5.56,
+      "end": 9.92,
+      "text": "今年の大根はどうですか"
+    },
+    {
+      "trackId": "cd1-track50",
+      "trackLabel": "練習1 (2) [A50]",
+      "start": 20.52,
+      "end": 26.24,
+      "text": "今年の冬はとても寒く 各地でよく雪が降りました"
+    },
+    {
+      "trackId": "cd1-track50",
+      "trackLabel": "練習1 (2) [A50]",
+      "start": 26.44,
+      "end": 31.44,
+      "text": "寒くて嫌だなと感じている方もいらっしゃるかもしれません"
+    },
+    {
+      "trackId": "cd1-track50",
+      "trackLabel": "練習1 (2) [A50]",
+      "start": 31.44,
+      "end": 38.54,
+      "text": "でも実は大根のような野菜にとっては寒い冬の方がいいのです"
+    },
+    {
+      "trackId": "cd1-track50",
+      "trackLabel": "練習1 (2) [A50]",
+      "start": 38.54,
+      "end": 41.96,
+      "text": "見てくださいこちらの大根"
+    },
+    {
+      "trackId": "cd1-track50",
+      "trackLabel": "練習1 (2) [A50]",
+      "start": 41.96,
+      "end": 47.12,
+      "text": "大根は寒さによってこのように大きくしっかりと育ち"
+    },
+    {
+      "trackId": "cd1-track50",
+      "trackLabel": "練習1 (2) [A50]",
+      "start": 47.12,
+      "end": 50.64,
+      "text": "甘みのある大根になるんですね"
+    },
+    {
+      "trackId": "cd1-track50",
+      "trackLabel": "練習1 (2) [A50]",
+      "start": 50.64,
+      "end": 56.32,
+      "text": "去年やおととしのように温かいとあまり良いものができません"
+    },
+    {
+      "trackId": "cd1-track50",
+      "trackLabel": "練習1 (2) [A50]",
+      "start": 56.32,
+      "end": 63.24,
+      "text": "ねが太らないで葉っぱばかり育っていって味がぼんやりします"
+    },
+    {
+      "trackId": "cd1-track51",
+      "trackLabel": "練習1 (3) [A51]",
+      "start": 0.0,
+      "end": 1.52,
+      "text": "3"
+    },
+    {
+      "trackId": "cd1-track51",
+      "trackLabel": "練習1 (3) [A51]",
+      "start": 1.52,
+      "end": 4.26,
+      "text": "ルスバンデンはお聞いています。"
+    },
+    {
+      "trackId": "cd1-track51",
+      "trackLabel": "練習1 (3) [A51]",
+      "start": 4.26,
+      "end": 10.46,
+      "text": "男の人は、今日、どうしておくれると言っていますか?"
+    },
+    {
+      "trackId": "cd1-track51",
+      "trackLabel": "練習1 (3) [A51]",
+      "start": 22.3,
+      "end": 26.94,
+      "text": "あ、もしもし、二シムラです。"
+    },
+    {
+      "trackId": "cd1-track51",
+      "trackLabel": "練習1 (3) [A51]",
+      "start": 26.94,
+      "end": 32.7,
+      "text": "今日の約束なんですけど、ちょっとおくれます。すみません。"
+    },
+    {
+      "trackId": "cd1-track51",
+      "trackLabel": "練習1 (3) [A51]",
+      "start": 32.7,
+      "end": 40.94,
+      "text": "今、朝日焼きなんですけど、気分が悪くなった人がいたらしくて、電車が止まっているんです。"
+    },
+    {
+      "trackId": "cd1-track51",
+      "trackLabel": "練習1 (3) [A51]",
+      "start": 40.94,
+      "end": 46.18,
+      "text": "事故じゃないので、その打ち動くと思うんですけど。"
+    },
+    {
+      "trackId": "cd1-track51",
+      "trackLabel": "練習1 (3) [A51]",
+      "start": 46.18,
+      "end": 52.18,
+      "text": "せっかく仕事を早く終わらせてもらったのに、お待たせしてしまってすみません。"
+    },
+    {
+      "trackId": "cd1-track51",
+      "trackLabel": "練習1 (3) [A51]",
+      "start": 52.18,
+      "end": 54.78,
+      "text": "ついたらまた連絡します。"
+    },
+    {
+      "trackId": "cd1-track52",
+      "trackLabel": "練習1 (4) [A52]",
+      "start": 0.0,
+      "end": 1.48,
+      "text": "4"
+    },
+    {
+      "trackId": "cd1-track52",
+      "trackLabel": "練習1 (4) [A52]",
+      "start": 1.48,
+      "end": 8.24,
+      "text": "男の留学生が先生とスピーチ大会について話しています"
+    },
+    {
+      "trackId": "cd1-track52",
+      "trackLabel": "練習1 (4) [A52]",
+      "start": 8.24,
+      "end": 16.24,
+      "text": "男の留学生はスピーチで何がもっとも難しかったと言っていますか"
+    },
+    {
+      "trackId": "cd1-track52",
+      "trackLabel": "練習1 (4) [A52]",
+      "start": 16.24,
+      "end": 31.02,
+      "text": "先生いろいろとごしどうありがとうございました"
+    },
+    {
+      "trackId": "cd1-track52",
+      "trackLabel": "練習1 (4) [A52]",
+      "start": 31.02,
+      "end": 35.52,
+      "text": "いいえいいスピーチでしたよよく頑張りましたね"
+    },
+    {
+      "trackId": "cd1-track52",
+      "trackLabel": "練習1 (4) [A52]",
+      "start": 35.52,
+      "end": 43.68,
+      "text": "はい日本語でこんなに長い話をするのは初めてで大変でしたがいい勉強になりました"
+    },
+    {
+      "trackId": "cd1-track52",
+      "trackLabel": "練習1 (4) [A52]",
+      "start": 43.68,
+      "end": 51.04,
+      "text": "テーマを決めるまでは大変そうでしたけど 元行を書き始めたら楽しんで書いていたようですね"
+    },
+    {
+      "trackId": "cd1-track52",
+      "trackLabel": "練習1 (4) [A52]",
+      "start": 51.04,
+      "end": 57.48,
+      "text": "はい各のは好きなんです 覚えるのはちょっと時間がかかりましたが"
+    },
+    {
+      "trackId": "cd1-track52",
+      "trackLabel": "練習1 (4) [A52]",
+      "start": 57.48,
+      "end": 64.96,
+      "text": "でも発表の時聞いている人たちの顔を見ながら話すのが一番難しかったです"
+    },
+    {
+      "trackId": "cd1-track52",
+      "trackLabel": "練習1 (4) [A52]",
+      "start": 64.96,
+      "end": 66.76,
+      "text": "とても緊張しました"
+    },
+    {
+      "trackId": "cd1-track52",
+      "trackLabel": "練習1 (4) [A52]",
+      "start": 66.76,
+      "end": 77.12,
+      "text": "はらそうですか落ち着いているように見えましたけど そうですかでも終わって良かったです"
+    },
+    {
+      "trackId": "cd1-track53",
+      "trackLabel": "練習1 (5) [A53]",
+      "start": 0.0,
+      "end": 1.28,
+      "text": "5"
+    },
+    {
+      "trackId": "cd1-track53",
+      "trackLabel": "練習1 (5) [A53]",
+      "start": 1.28,
+      "end": 5.56,
+      "text": "女の人と男の人が話しています"
+    },
+    {
+      "trackId": "cd1-track53",
+      "trackLabel": "練習1 (5) [A53]",
+      "start": 5.56,
+      "end": 12.28,
+      "text": "男の人は、出張で最も困ったことはなんだと言っていますか?"
+    },
+    {
+      "trackId": "cd1-track53",
+      "trackLabel": "練習1 (5) [A53]",
+      "start": 22.96,
+      "end": 26.96,
+      "text": "出張、お疲れ様でした。いかがでしたか?"
+    },
+    {
+      "trackId": "cd1-track53",
+      "trackLabel": "練習1 (5) [A53]",
+      "start": 26.96,
+      "end": 36.92,
+      "text": "うん。仕事は心配してたような問題が起きなかったから良かったんだけど、まあ外国だといろいろ大変なこともあるね。"
+    },
+    {
+      "trackId": "cd1-track53",
+      "trackLabel": "練習1 (5) [A53]",
+      "start": 36.92,
+      "end": 40.12,
+      "text": "言葉も通じないから大変ですよね。"
+    },
+    {
+      "trackId": "cd1-track53",
+      "trackLabel": "練習1 (5) [A53]",
+      "start": 40.12,
+      "end": 50.68,
+      "text": "そうだね。料理を注文するのにも時間がかかるからね。でも、それより僕は食事が合わなくてね。"
+    },
+    {
+      "trackId": "cd1-track53",
+      "trackLabel": "練習1 (5) [A53]",
+      "start": 50.68,
+      "end": 55.24,
+      "text": "毎日あの辛い料理を食べなくちゃいけないのが一番困ったな。"
+    },
+    {
+      "trackId": "cd1-track53",
+      "trackLabel": "練習1 (5) [A53]",
+      "start": 55.24,
+      "end": 56.84,
+      "text": "そうですか?"
+    },
+    {
+      "trackId": "cd1-track53",
+      "trackLabel": "練習1 (5) [A53]",
+      "start": 56.84,
+      "end": 65.24,
+      "text": "そうそう。ホテルで一度シャワーのお湯が出なくて困ったんだけど、そしたら、とてもいい部屋に帰ってくれてね。"
+    },
+    {
+      "trackId": "cd1-track53",
+      "trackLabel": "練習1 (5) [A53]",
+      "start": 65.24,
+      "end": 68.44,
+      "text": "まあ、いい経験になったよ。"
+    },
+    {
+      "trackId": "cd2-track01",
+      "trackLabel": "例題2-1 [B01]",
+      "start": 0.0,
+      "end": 3.04,
+      "text": "例題。2の1。"
+    },
+    {
+      "trackId": "cd2-track01",
+      "trackLabel": "例題2-1 [B01]",
+      "start": 3.04,
+      "end": 4.74,
+      "text": "1。"
+    },
+    {
+      "trackId": "cd2-track01",
+      "trackLabel": "例題2-1 [B01]",
+      "start": 4.74,
+      "end": 6.94,
+      "text": "カラオケ、行かない?"
+    },
+    {
+      "trackId": "cd2-track01",
+      "trackLabel": "例題2-1 [B01]",
+      "start": 6.94,
+      "end": 10.54,
+      "text": "私、あんまり上手じゃないから。"
+    },
+    {
+      "trackId": "cd2-track01",
+      "trackLabel": "例題2-1 [B01]",
+      "start": 12.7,
+      "end": 14.0,
+      "text": "2。"
+    },
+    {
+      "trackId": "cd2-track01",
+      "trackLabel": "例題2-1 [B01]",
+      "start": 14.0,
+      "end": 16.34,
+      "text": "これ、食べないの?"
+    },
+    {
+      "trackId": "cd2-track01",
+      "trackLabel": "例題2-1 [B01]",
+      "start": 16.34,
+      "end": 20.34,
+      "text": "お腹いっぱいじゃなければ食べたいんだけど。"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 0.0,
+      "end": 3.36,
+      "text": "練習2の1"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 3.36,
+      "end": 4.86,
+      "text": "1"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 4.86,
+      "end": 6.96,
+      "text": "テニス好きなの?"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 6.96,
+      "end": 10.24,
+      "text": "ミルだけだけどね"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 11.28,
+      "end": 12.56,
+      "text": "2"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 12.56,
+      "end": 16.46,
+      "text": "あ、この映画面白いよね"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 16.46,
+      "end": 19.96,
+      "text": "出てる人もいいしね"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 20.96,
+      "end": 22.44,
+      "text": "3"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 22.44,
+      "end": 24.64,
+      "text": "これ、高いよ"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 24.64,
+      "end": 26.52,
+      "text": "本当に買うの?"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 26.52,
+      "end": 32.0,
+      "text": "給料もらったばかりだし、ずっと欲しかったから"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 33.0,
+      "end": 34.5,
+      "text": "4"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 34.5,
+      "end": 38.0,
+      "text": "夏休み、旅行行くの?"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 38.0,
+      "end": 42.4,
+      "text": "お金があったら行きたいんだけどね"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 43.4,
+      "end": 44.7,
+      "text": "5"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 44.7,
+      "end": 47.58,
+      "text": "毎朝、ジョギングしてるの?"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 47.58,
+      "end": 51.04,
+      "text": "ちょっと大変だけどね"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 52.04,
+      "end": 53.56,
+      "text": "6"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 53.56,
+      "end": 56.2,
+      "text": "これ、片付けましょうか"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 56.32,
+      "end": 60.2,
+      "text": "あ、また後で使いますから"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 61.56,
+      "end": 63.06,
+      "text": "7"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 63.06,
+      "end": 65.4,
+      "text": "コーヒーでも入れましょうか"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 65.4,
+      "end": 69.4,
+      "text": "おいしいお菓子もありますしね"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 70.4,
+      "end": 72.0,
+      "text": "8"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 72.0,
+      "end": 76.6,
+      "text": "アノレストランよく言ってるみたいだけど、おいしいの?"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 76.6,
+      "end": 82.84,
+      "text": "そういうわけじゃないんだけど、料理が出てくるのが早くて"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 83.96,
+      "end": 85.4,
+      "text": "9"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 85.44,
+      "end": 87.76,
+      "text": "このソファー、いいよね"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 87.76,
+      "end": 91.76,
+      "text": "内がもっと広ければ、買いたいけど"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 93.6,
+      "end": 95.12,
+      "text": "10"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 95.12,
+      "end": 97.76,
+      "text": "昨日の飲み会、行ったの?"
+    },
+    {
+      "trackId": "cd2-track02",
+      "trackLabel": "練習2-1 [B02]",
+      "start": 97.76,
+      "end": 102.76,
+      "text": "先輩に誘われなかったら、行かなかったんだけど"
+    },
+    {
+      "trackId": "cd2-track03",
+      "trackLabel": "例題2-2 [B03]",
+      "start": 0.0,
+      "end": 3.2,
+      "text": "例題 二の二"
+    },
+    {
+      "trackId": "cd2-track03",
+      "trackLabel": "例題2-2 [B03]",
+      "start": 3.2,
+      "end": 11.04,
+      "text": "女の人と男の人が 男さんへのプレゼントについて話しています"
+    },
+    {
+      "trackId": "cd2-track03",
+      "trackLabel": "例題2-2 [B03]",
+      "start": 11.04,
+      "end": 16.44,
+      "text": "女の人は何をあげることにしましたか"
+    },
+    {
+      "trackId": "cd2-track03",
+      "trackLabel": "例題2-2 [B03]",
+      "start": 16.64,
+      "end": 18.68,
+      "text": "女の人iling"
+    },
+    {
+      "trackId": "cd2-track03",
+      "trackLabel": "例題2-2 [B03]",
+      "start": 26.92,
+      "end": 28.12,
+      "text": "愛衆"
+    },
+    {
+      "trackId": "cd2-track03",
+      "trackLabel": "例題2-2 [B03]",
+      "start": 31.32,
+      "end": 32.78,
+      "text": "小箇才"
+    },
+    {
+      "trackId": "cd2-track03",
+      "trackLabel": "例題2-2 [B03]",
+      "start": 33.98,
+      "end": 36.06,
+      "text": "わたまお父さんか"
+    },
+    {
+      "trackId": "cd2-track03",
+      "trackLabel": "例題2-2 [B03]",
+      "start": 36.8,
+      "end": 38.56,
+      "text": "目課題です"
+    },
+    {
+      "trackId": "cd2-track03",
+      "trackLabel": "例題2-2 [B03]",
+      "start": 40.98,
+      "end": 43.7,
+      "text": "私は行く時も反噂政治今天"
+    },
+    {
+      "trackId": "cd2-track03",
+      "trackLabel": "例題2-2 [B03]",
+      "start": 43.7,
+      "end": 47.7,
+      "text": "そうか。じゃあ、お酒とか?"
+    },
+    {
+      "trackId": "cd2-track03",
+      "trackLabel": "例題2-2 [B03]",
+      "start": 47.7,
+      "end": 53.7,
+      "text": "お酒は喜んでくれると思うんだけど、でも去年もそうだったしね。"
+    },
+    {
+      "trackId": "cd2-track03",
+      "trackLabel": "例題2-2 [B03]",
+      "start": 53.7,
+      "end": 58.7,
+      "text": "そうなんだ。お父さん、なんか趣味ないの?"
+    },
+    {
+      "trackId": "cd2-track03",
+      "trackLabel": "例題2-2 [B03]",
+      "start": 58.7,
+      "end": 62.7,
+      "text": "あ、最近、ジョギングを始めたみたい。"
+    },
+    {
+      "trackId": "cd2-track03",
+      "trackLabel": "例題2-2 [B03]",
+      "start": 62.7,
+      "end": 67.7,
+      "text": "じゃあ、走る時に白くくつとか、切るものなんていいんじゃない?"
+    },
+    {
+      "trackId": "cd2-track03",
+      "trackLabel": "例題2-2 [B03]",
+      "start": 67.7,
+      "end": 75.7,
+      "text": "いいね。くつはサイズが難しいから。うん、決めた。ありがとう。"
+    },
+    {
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "start": 0.0,
+      "end": 3.04,
+      "text": "練習2の2"
+    },
+    {
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "start": 3.04,
+      "end": 4.68,
+      "text": "1"
+    },
+    {
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "start": 4.68,
+      "end": 9.08,
+      "text": "男の人と女の人が話しています"
+    },
+    {
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "start": 9.08,
+      "end": 13.84,
+      "text": "女の人は今何を習っていますか?"
+    },
+    {
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "start": 25.12,
+      "end": 28.04,
+      "text": "鈴木さん今日の夜暇?"
+    },
+    {
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "start": 28.2,
+      "end": 31.4,
+      "text": "あ、ごめん、習い事があって"
+    },
+    {
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "start": 31.4,
+      "end": 36.12,
+      "text": "そうか、そういえばずっとピアノやってたんだよね"
+    },
+    {
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "start": 36.12,
+      "end": 41.4,
+      "text": "うん、でも今はたまに自分で弾くぐらいかな"
+    },
+    {
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "start": 41.4,
+      "end": 44.72,
+      "text": "それより今は体を使うこと"
+    },
+    {
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "start": 44.72,
+      "end": 47.12,
+      "text": "何?ダンスとか?"
+    },
+    {
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "start": 47.12,
+      "end": 49.72,
+      "text": "ダンスか、いいね"
+    },
+    {
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "start": 49.72,
+      "end": 52.48,
+      "text": "いつかはやってみたいけど"
+    },
+    {
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "start": 52.48,
+      "end": 56.76,
+      "text": "今はね、水焼教室に通ってるんだ"
+    },
+    {
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "start": 56.76,
+      "end": 59.44,
+      "text": "実はダイビングをしたいんだけど"
+    },
+    {
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "start": 59.44,
+      "end": 61.64,
+      "text": "全然うまくを汚げないから"
+    },
+    {
+      "trackId": "cd2-track04",
+      "trackLabel": "練習2-2 (1) [B04]",
+      "start": 61.64,
+      "end": 65.08,
+      "text": "先に並い始めたの"
+    },
+    {
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "start": 0.0,
+      "end": 1.2,
+      "text": "2"
+    },
+    {
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "start": 1.2,
+      "end": 5.7,
+      "text": "女の人と男の人が話しています"
+    },
+    {
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "start": 5.7,
+      "end": 11.4,
+      "text": "女の人が可愛いに行った目的は何ですか?"
+    },
+    {
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "start": 22.0,
+      "end": 25.1,
+      "text": "戦終ね、可愛いに行ってきたんだ"
+    },
+    {
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "start": 25.1,
+      "end": 27.8,
+      "text": "へぇ、いいね"
+    },
+    {
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "start": 27.8,
+      "end": 29.6,
+      "text": "およぎに行ってきたの?"
+    },
+    {
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "start": 29.6,
+      "end": 33.1,
+      "text": "海でおよぎのはあんまり好きじゃなくて"
+    },
+    {
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "start": 33.1,
+      "end": 37.1,
+      "text": "だから、ハワイはそんなに興味なかったんだけど"
+    },
+    {
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "start": 37.1,
+      "end": 40.4,
+      "text": "今回は友達の結婚式があったからね"
+    },
+    {
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "start": 40.4,
+      "end": 43.6,
+      "text": "へぇ、観光はできたの?"
+    },
+    {
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "start": 43.6,
+      "end": 45.9,
+      "text": "したかったんだけどね"
+    },
+    {
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "start": 45.9,
+      "end": 48.3,
+      "text": "時間があんまりなかったから"
+    },
+    {
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "start": 48.3,
+      "end": 52.3,
+      "text": "ふーん、ゆっくりできなくて残念だったね"
+    },
+    {
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "start": 52.3,
+      "end": 56.7,
+      "text": "でも、景色はすごく綺麗で楽しかったよ"
+    },
+    {
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "start": 56.8,
+      "end": 60.3,
+      "text": "帰る時、たくさんショッピングもしたしね"
+    },
+    {
+      "trackId": "cd2-track05",
+      "trackLabel": "練習2-2 (2) [B05]",
+      "start": 60.3,
+      "end": 63.3,
+      "text": "はい、これお見上げ"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 0.0,
+      "end": 2.0,
+      "text": "3"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 2.0,
+      "end": 7.6,
+      "text": "女の人が友達とビデオカメラについて話しています"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 7.6,
+      "end": 12.8,
+      "text": "女の人はビデオカメラをどうしますか?"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 12.8,
+      "end": 20.8,
+      "text": "3日後、女の人は友達とビデオカメラを作っています"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 20.8,
+      "end": 29.8,
+      "text": "女の人は友達とビデオカメラを作っています"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 29.8,
+      "end": 37.8,
+      "text": "女の人は友達とビデオカメラを作っています"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 38.24,
+      "end": 40.24,
+      "text": "いついるの?"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 40.24,
+      "end": 43.8,
+      "text": "あのビデオカメラ今カトウさんに賢してて"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 43.8,
+      "end": 45.86,
+      "text": "え、そうなの?"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 45.86,
+      "end": 50.12,
+      "text": "えっと、さらい州の土日なんだけど"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 50.12,
+      "end": 53.6,
+      "text": "私からカトウさんに聞いてみてもいいかな"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 53.6,
+      "end": 56.8,
+      "text": "なんか映画を作るって言ってたから"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 56.8,
+      "end": 60.36,
+      "text": "すぐには返してもらえないんじゃないかな"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 60.36,
+      "end": 62.34,
+      "text": "僕も同説変わないから"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 62.34,
+      "end": 65.76,
+      "text": "返すのいつでもいいよって言ってあるからな"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 65.76,
+      "end": 69.56,
+      "text": "わぁそうか、困ったなぁ。"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 69.56,
+      "end": 73.68,
+      "text": "すすきさんにも使う予定があるって言われたし…"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 73.68,
+      "end": 75.76,
+      "text": "あ、そうだ。"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 75.76,
+      "end": 78.0,
+      "text": "おとうとうのがあるよ。"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 78.0,
+      "end": 82.52,
+      "text": "おとうとうに、前に持ってた古いのやったんだ。"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 82.52,
+      "end": 86.04,
+      "text": "普段使ってないみたいだから、来週持ってくるよ。"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 86.04,
+      "end": 88.36,
+      "text": "ほんと、助かる。"
+    },
+    {
+      "trackId": "cd2-track06",
+      "trackLabel": "練習2-2 (3) [B06]",
+      "start": 88.36,
+      "end": 91.36,
+      "text": "じゃあ、お願いね。"
+    },
+    {
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "start": 0.0,
+      "end": 1.48,
+      "text": "4"
+    },
+    {
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "start": 1.48,
+      "end": 6.52,
+      "text": "男の人と女の人が生きで話しています"
+    },
+    {
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "start": 6.52,
+      "end": 10.52,
+      "text": "男の人はどうして特急ではなく"
+    },
+    {
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "start": 10.52,
+      "end": 15.32,
+      "text": "確意規定者の電車に乗りたいのですか"
+    },
+    {
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "start": 15.32,
+      "end": 23.64,
+      "text": "10分で特急電車が来るよ"
+    },
+    {
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "start": 23.64,
+      "end": 33.32,
+      "text": "え?確意規定者にしようよ"
+    },
+    {
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "start": 33.32,
+      "end": 35.32,
+      "text": "遺憾必要ないし"
+    },
+    {
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "start": 35.32,
+      "end": 39.68,
+      "text": "確意規定者で言ったら二時間半も書かるでしょう"
+    },
+    {
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "start": 39.68,
+      "end": 42.32,
+      "text": "値段もそんなに違わないし"
+    },
+    {
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "start": 42.32,
+      "end": 44.56,
+      "text": "ゆっくりできるのがいいんじゃない"
+    },
+    {
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "start": 44.56,
+      "end": 48.08,
+      "text": "まあついててゆっくりできるけど"
+    },
+    {
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "start": 48.08,
+      "end": 50.6,
+      "text": "二時間半もね"
+    },
+    {
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "start": 50.6,
+      "end": 55.16,
+      "text": "こういう機会でもなければなかなかゆっくり楽しめないでしょう"
+    },
+    {
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "start": 55.16,
+      "end": 58.8,
+      "text": "楽しむゲームでもするの?"
+    },
+    {
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "start": 58.8,
+      "end": 62.16,
+      "text": "君と二時間半も一緒に座っていられるなんて"
+    },
+    {
+      "trackId": "cd2-track07",
+      "trackLabel": "練習2-2 (4) [B07]",
+      "start": 62.16,
+      "end": 65.68,
+      "text": "めったにないことだからね"
+    },
+    {
+      "trackId": "cd2-track08",
+      "trackLabel": "練習2-2 (5) [B08]",
+      "start": 0.0,
+      "end": 1.28,
+      "text": "5"
+    },
+    {
+      "trackId": "cd2-track08",
+      "trackLabel": "練習2-2 (5) [B08]",
+      "start": 1.28,
+      "end": 5.84,
+      "text": "女の人と男の人が話しています"
+    },
+    {
+      "trackId": "cd2-track08",
+      "trackLabel": "練習2-2 (5) [B08]",
+      "start": 5.84,
+      "end": 12.28,
+      "text": "男の人はどうしてライエットをすることにしましたか?"
+    },
+    {
+      "trackId": "cd2-track08",
+      "trackLabel": "練習2-2 (5) [B08]",
+      "start": 22.72,
+      "end": 26.88,
+      "text": "あれ?本田さん?ちょっとやせましたか?"
+    },
+    {
+      "trackId": "cd2-track08",
+      "trackLabel": "練習2-2 (5) [B08]",
+      "start": 26.88,
+      "end": 31.12,
+      "text": "あ、わかりますか?ダイエットしてるんですよ"
+    },
+    {
+      "trackId": "cd2-track08",
+      "trackLabel": "練習2-2 (5) [B08]",
+      "start": 31.12,
+      "end": 37.28,
+      "text": "へぇー?健康診断で、お医者さんに何か言われたんですか?"
+    },
+    {
+      "trackId": "cd2-track08",
+      "trackLabel": "練習2-2 (5) [B08]",
+      "start": 37.28,
+      "end": 40.8,
+      "text": "そろそろ言われそうだなとは思っているんですけどね"
+    },
+    {
+      "trackId": "cd2-track08",
+      "trackLabel": "練習2-2 (5) [B08]",
+      "start": 40.8,
+      "end": 44.24,
+      "text": "じゃあ、おくさんに言われたんですか?"
+    },
+    {
+      "trackId": "cd2-track08",
+      "trackLabel": "練習2-2 (5) [B08]",
+      "start": 44.24,
+      "end": 48.88,
+      "text": "結婚したばかりだったら、いろいろ言われたかもしれませんけど"
+    },
+    {
+      "trackId": "cd2-track08",
+      "trackLabel": "練習2-2 (5) [B08]",
+      "start": 48.88,
+      "end": 56.16,
+      "text": "そうですか?まあ、太ると体が重くなって大変ですからね"
+    },
+    {
+      "trackId": "cd2-track08",
+      "trackLabel": "練習2-2 (5) [B08]",
+      "start": 56.16,
+      "end": 61.52,
+      "text": "私も階段を登ったり折りたりするとき、ちょっと気になって"
+    },
+    {
+      "trackId": "cd2-track08",
+      "trackLabel": "練習2-2 (5) [B08]",
+      "start": 61.52,
+      "end": 65.68,
+      "text": "まあ、自分ではあまり気にならないんですけど"
+    },
+    {
+      "trackId": "cd2-track08",
+      "trackLabel": "練習2-2 (5) [B08]",
+      "start": 65.68,
+      "end": 69.2,
+      "text": "太ると、服が嫌れなくなるんでね"
+    },
+    {
+      "trackId": "cd2-track08",
+      "trackLabel": "練習2-2 (5) [B08]",
+      "start": 69.2,
+      "end": 76.16,
+      "text": "太るたびに新しい服買うより別のことにお金を使いたいなと思って"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 0.0,
+      "end": 2.64,
+      "text": "例題 3"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 2.64,
+      "end": 7.64,
+      "text": "会社で男の人と女の人が話しています"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 7.64,
+      "end": 14.4,
+      "text": "女の人が中国語を勉強している目的は何ですか"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 25.12,
+      "end": 26.24,
+      "text": "あれ?"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 26.24,
+      "end": 29.84,
+      "text": "松元さん、中国語勉強しているの?"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 29.84,
+      "end": 32.2,
+      "text": "あ、ちょっとだけ"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 32.2,
+      "end": 37.6,
+      "text": "最近、うちの会社も中国の人と仕事をする機会が増えたし"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 37.6,
+      "end": 40.44,
+      "text": "これからは役に立つだろうね"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 40.44,
+      "end": 43.72,
+      "text": "中国語ができれば旅行にもいけるし"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 43.72,
+      "end": 48.08,
+      "text": "ああ、私、一行気に勝てなんで"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 48.08,
+      "end": 53.08,
+      "text": "まあ、確かに仕事で使えるぐらいになれればいいでしょうけど"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 53.08,
+      "end": 55.84,
+      "text": "私の場合は単に趣味で"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 55.84,
+      "end": 57.28,
+      "text": "へぇ"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 57.28,
+      "end": 60.12,
+      "text": "中国人の友達でもできたの?"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 60.12,
+      "end": 63.8,
+      "text": "そういうチャンスでもあればいいんですけど"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 63.8,
+      "end": 68.8,
+      "text": "実は最近中国のお見上げでCDをもらったんですけど"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 68.8,
+      "end": 71.36,
+      "text": "それがすごくいいんです"
+    },
+    {
+      "trackId": "cd2-track09",
+      "trackLabel": "例題3 [B09]",
+      "start": 71.36,
+      "end": 77.24,
+      "text": "音楽だけじゃなくて意味を知りたいなって思って"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 0.0,
+      "end": 2.82,
+      "text": "練習 3"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 2.82,
+      "end": 4.22,
+      "text": "1"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 4.22,
+      "end": 9.52,
+      "text": "おっととつまが子供の名前について話しています"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 9.52,
+      "end": 16.76,
+      "text": "つまが考えている赤ちゃんの名前は何ですか?"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 16.76,
+      "end": 30.44,
+      "text": "おんなの子の名前何かいいの思いついた?"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 30.44,
+      "end": 34.84,
+      "text": "私、鼻が好きだから鼻の名前がいいなぁ"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 34.84,
+      "end": 36.16,
+      "text": "へぇー"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 36.16,
+      "end": 39.32,
+      "text": "じゃあ、桜とかバラとか?"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 39.32,
+      "end": 44.68,
+      "text": "4月だったら桜もいいけど、生まれるの5月でしょ?"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 44.68,
+      "end": 46.84,
+      "text": "あ、そうか"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 46.84,
+      "end": 49.56,
+      "text": "5月ならバラだよね"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 49.56,
+      "end": 53.88,
+      "text": "でも、バラなんて名前聞いたことないしなぁ"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 53.88,
+      "end": 58.12,
+      "text": "アメリカ人の友達でローズっていう怖いだけど"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 58.12,
+      "end": 63.36,
+      "text": "ローズかぁ、猫の名前ならいいけどね"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 63.36,
+      "end": 68.56,
+      "text": "それより5月はニワのゆりの鼻がきれいなのよ"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 68.56,
+      "end": 70.8,
+      "text": "ひらがなでふたもじ"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 70.8,
+      "end": 72.48,
+      "text": "いいと思わない?"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 72.48,
+      "end": 75.6,
+      "text": "英語ではリリーだね"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 75.6,
+      "end": 76.96,
+      "text": "リリーはどう?"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 76.96,
+      "end": 79.28,
+      "text": "それも可愛いわね"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 79.28,
+      "end": 83.04,
+      "text": "だけど、やっぱり日本語の方がいいんじゃない?"
+    },
+    {
+      "trackId": "cd2-track10",
+      "trackLabel": "練習3 (1) [B10]",
+      "start": 83.04,
+      "end": 86.04,
+      "text": "うん、そうだね"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 0.0,
+      "end": 1.4,
+      "text": "2"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 1.4,
+      "end": 5.56,
+      "text": "女の人と男の人が話しています"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 5.56,
+      "end": 11.4,
+      "text": "女の人は何が一番良かったと言っていますか?"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 22.12,
+      "end": 25.76,
+      "text": "昨日友達の結婚式に行ってきたの"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 25.92,
+      "end": 28.52,
+      "text": "へぇ、そうなんだ"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 28.52,
+      "end": 31.4,
+      "text": "たくさんおいしい料理食べたんでしょ?"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 31.4,
+      "end": 33.24,
+      "text": "そうでもないの"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 33.24,
+      "end": 38.56,
+      "text": "私、挨拶することになってたから緊張しちゃってね"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 38.56,
+      "end": 41.2,
+      "text": "相手の人も素敵な人だったし"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 41.2,
+      "end": 43.72,
+      "text": "いい結婚式だったな"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 43.72,
+      "end": 46.64,
+      "text": "ね、歌手の県って知ってる?"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 46.64,
+      "end": 48.88,
+      "text": "へ?知ってるよ?"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 48.88,
+      "end": 52.4,
+      "text": "その人が来ていて歌を歌ったんだけど"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 52.4,
+      "end": 55.16,
+      "text": "それがとっても良かったの"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 55.16,
+      "end": 57.6,
+      "text": "本当に上手だったよ"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 57.6,
+      "end": 60.28,
+      "text": "なかなかなまで聞けないからね"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 60.28,
+      "end": 63.52,
+      "text": "へぇ、それは良かったね"
+    },
+    {
+      "trackId": "cd2-track11",
+      "trackLabel": "練習3 (2) [B11]",
+      "start": 63.52,
+      "end": 71.16,
+      "text": "でもやっぱり友達の幸せそうな姿を見られたのが最高だったな"
+    },
+    {
+      "trackId": "cd2-track12",
+      "trackLabel": "練習3 (3) [B12]",
+      "start": 0.0,
+      "end": 1.48,
+      "text": "3"
+    },
+    {
+      "trackId": "cd2-track12",
+      "trackLabel": "練習3 (3) [B12]",
+      "start": 1.48,
+      "end": 6.08,
+      "text": "男の人と女の人が話しています"
+    },
+    {
+      "trackId": "cd2-track12",
+      "trackLabel": "練習3 (3) [B12]",
+      "start": 6.08,
+      "end": 12.28,
+      "text": "男の人はどうしてその店に行きたいのですか?"
+    },
+    {
+      "trackId": "cd2-track12",
+      "trackLabel": "練習3 (3) [B12]",
+      "start": 22.72,
+      "end": 27.52,
+      "text": "さてと、ここからちょっと歩くけど、本屋に行こう"
+    },
+    {
+      "trackId": "cd2-track12",
+      "trackLabel": "練習3 (3) [B12]",
+      "start": 27.6,
+      "end": 34.4,
+      "text": "え、本屋?それより先にランチにしようよ、お腹すいたよ"
+    },
+    {
+      "trackId": "cd2-track12",
+      "trackLabel": "練習3 (3) [B12]",
+      "start": 34.4,
+      "end": 38.6,
+      "text": "そう、ランチに行くんだよ、本屋にね"
+    },
+    {
+      "trackId": "cd2-track12",
+      "trackLabel": "練習3 (3) [B12]",
+      "start": 38.6,
+      "end": 45.2,
+      "text": "え、ちょっと待って、本屋にランチってどこで食べるの?"
+    },
+    {
+      "trackId": "cd2-track12",
+      "trackLabel": "練習3 (3) [B12]",
+      "start": 45.2,
+      "end": 47.76,
+      "text": "中にキサテンがあるんだよ"
+    },
+    {
+      "trackId": "cd2-track12",
+      "trackLabel": "練習3 (3) [B12]",
+      "start": 47.76,
+      "end": 53.84,
+      "text": "実は割引件があってさ、50%奥、反額だよ"
+    },
+    {
+      "trackId": "cd2-track12",
+      "trackLabel": "練習3 (3) [B12]",
+      "start": 53.84,
+      "end": 58.0,
+      "text": "本屋見ながらゆっくりコーヒーが飲める店なんだ"
+    },
+    {
+      "trackId": "cd2-track12",
+      "trackLabel": "練習3 (3) [B12]",
+      "start": 58.0,
+      "end": 60.28,
+      "text": "おいしいサンドイッチもあるよ"
+    },
+    {
+      "trackId": "cd2-track12",
+      "trackLabel": "練習3 (3) [B12]",
+      "start": 60.28,
+      "end": 63.76,
+      "text": "え、そういう店があるんだ"
+    },
+    {
+      "trackId": "cd2-track12",
+      "trackLabel": "練習3 (3) [B12]",
+      "start": 63.76,
+      "end": 66.0,
+      "text": "雰囲気をさそうだね"
+    },
+    {
+      "trackId": "cd2-track12",
+      "trackLabel": "練習3 (3) [B12]",
+      "start": 66.0,
+      "end": 72.96,
+      "text": "雰囲気はいいんだけどさ、結構高いから普段は行きたくてもなかなか行けないんだ"
+    },
+    {
+      "trackId": "cd2-track12",
+      "trackLabel": "練習3 (3) [B12]",
+      "start": 72.96,
+      "end": 76.0,
+      "text": "ちょうど買いたい雑誌もあるしね"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 0.0,
+      "end": 1.48,
+      "text": "4"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 1.48,
+      "end": 5.52,
+      "text": "うちで、おっととつまが話しています。"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 5.52,
+      "end": 10.28,
+      "text": "つまはどうして楽しくなさそうなのですか?"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 21.16,
+      "end": 22.88,
+      "text": "おかえり。"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 22.88,
+      "end": 25.6,
+      "text": "あれ?どうかしたの?"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 25.6,
+      "end": 27.72,
+      "text": "ロンの3歩で疲れた?"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 27.72,
+      "end": 32.4,
+      "text": "ちょっとはね。いつもより長いコース歩いたし。"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 32.4,
+      "end": 36.04,
+      "text": "じゃあ、ロンが他の犬と検討したの?"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 36.04,
+      "end": 37.2,
+      "text": "うん。"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 37.2,
+      "end": 39.44,
+      "text": "おとなしくついてきたよ。"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 39.44,
+      "end": 44.64,
+      "text": "前はよく他の犬と検討しそうになったりしたけどね。"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 44.64,
+      "end": 49.68,
+      "text": "公園であった男の子にも可愛い犬だねって褒められたのよ。"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 49.68,
+      "end": 52.48,
+      "text": "じゃあ、怒ることないじゃないか。"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 52.48,
+      "end": 57.88,
+      "text": "それがね、その子がロンに、いい子にするんだよ。"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 57.88,
+      "end": 61.4,
+      "text": "おばあさんを困らせたらダメだよって。"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 61.4,
+      "end": 64.24,
+      "text": "おばあさんって誰のことよ?"
+    },
+    {
+      "trackId": "cd2-track13",
+      "trackLabel": "練習3 (4) [B13]",
+      "start": 64.24,
+      "end": 69.24,
+      "text": "まあまあ、小さい子供から見ればそんな問題よ。"
+    },
+    {
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "start": 0.0,
+      "end": 1.24,
+      "text": "5"
+    },
+    {
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "start": 1.24,
+      "end": 5.96,
+      "text": "うちで、子供とお母さんが話しています。"
+    },
+    {
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "start": 5.96,
+      "end": 11.96,
+      "text": "子供は、どうして弁当を持っていきたくないのですか?"
+    },
+    {
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "start": 22.56,
+      "end": 26.16,
+      "text": "お母さん、これから弁当をいらないよ。"
+    },
+    {
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "start": 26.16,
+      "end": 29.64,
+      "text": "いらないって、じゃあどうするの?"
+    },
+    {
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "start": 29.84,
+      "end": 34.32,
+      "text": "学校の近くにコンビニあるからさ、そこで買うよ。"
+    },
+    {
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "start": 34.32,
+      "end": 37.0,
+      "text": "そうしてる友達多いよ。"
+    },
+    {
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "start": 37.0,
+      "end": 39.96,
+      "text": "コンビニのって結構おいしいし。"
+    },
+    {
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "start": 39.96,
+      "end": 41.84,
+      "text": "どうしたの?"
+    },
+    {
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "start": 41.84,
+      "end": 44.84,
+      "text": "お母さんが作るのおいしくない?"
+    },
+    {
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "start": 44.84,
+      "end": 47.16,
+      "text": "お金もかかるでしょ。"
+    },
+    {
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "start": 47.16,
+      "end": 55.28,
+      "text": "確かにお金はかかるけど、それより、息も帰りも大きい荷物持ってあるかなくて進むから。"
+    },
+    {
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "start": 55.28,
+      "end": 59.28,
+      "text": "大きい荷物って、弁当箱のこと?"
+    },
+    {
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "start": 59.44,
+      "end": 64.36,
+      "text": "そういえば、今のは大きすぎて、かばに入らないわね。"
+    },
+    {
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "start": 64.36,
+      "end": 69.12,
+      "text": "小学生の時使ってたお弁当箱、まだあるわよ。"
+    },
+    {
+      "trackId": "cd2-track14",
+      "trackLabel": "練習3 (5) [B14]",
+      "start": 69.12,
+      "end": 73.64,
+      "text": "いやだよ。そんなの恥ずかしいよ。"
+    },
+    {
+      "trackId": "cd2-track15",
+      "trackLabel": "確認問題 説明 [B15]",
+      "start": 0.0,
+      "end": 2.0,
+      "text": "確認問題"
+    },
+    {
+      "trackId": "cd2-track15",
+      "trackLabel": "確認問題 説明 [B15]",
+      "start": 2.0,
+      "end": 6.0,
+      "text": "まず、質問を聞いてください"
+    },
+    {
+      "trackId": "cd2-track15",
+      "trackLabel": "確認問題 説明 [B15]",
+      "start": 6.0,
+      "end": 10.0,
+      "text": "その後、選択肢を見てください"
+    },
+    {
+      "trackId": "cd2-track15",
+      "trackLabel": "確認問題 説明 [B15]",
+      "start": 10.0,
+      "end": 13.0,
+      "text": "読む時間があります"
+    },
+    {
+      "trackId": "cd2-track15",
+      "trackLabel": "確認問題 説明 [B15]",
+      "start": 13.0,
+      "end": 18.0,
+      "text": "それから話を聞いて、1から4の中から"
+    },
+    {
+      "trackId": "cd2-track15",
+      "trackLabel": "確認問題 説明 [B15]",
+      "start": 18.0,
+      "end": 23.0,
+      "text": "もっともよいものを一つ選んでください"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 0.0,
+      "end": 4.0,
+      "text": "1"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 4.0,
+      "end": 11.0,
+      "text": "男の人と女の人が、アルバイトの雑誌を見ながら話しています。"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 11.0,
+      "end": 16.0,
+      "text": "女の人は、どこでアルバイトをしますか?"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 17.0,
+      "end": 22.0,
+      "text": "男の人は、どこでアルバイトをしますか?"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 23.0,
+      "end": 27.0,
+      "text": "男の人は、どこでアルバイトをしますか?"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 28.0,
+      "end": 32.0,
+      "text": "あ、見てこれ。引っ越しの手伝い。"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 32.0,
+      "end": 36.0,
+      "text": "結構吸料もいいし、僕、やってみようかな。"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 36.0,
+      "end": 42.0,
+      "text": "でも大変そう。私は体使うの苦手だな。"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 42.0,
+      "end": 44.0,
+      "text": "一日で疲れちゃうそうだから。"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 45.0,
+      "end": 48.0,
+      "text": "じゃあ、この子ども水焼教室もダメだね。"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 48.0,
+      "end": 54.0,
+      "text": "あ、私、水焼は得意なんだ。子どもと一緒って楽しさ。"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 54.0,
+      "end": 60.0,
+      "text": "へぇ、子どもが好きなら、こっちの子どもの英語教室もいいんじゃない?"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 60.0,
+      "end": 67.0,
+      "text": "うん。国語ならを教えられるかもしれないけど、英語はちょっとね。"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 67.0,
+      "end": 72.0,
+      "text": "あ、こっちはホテルの仕事だって、かっこよさそう。"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 72.0,
+      "end": 77.0,
+      "text": "でも、静かえたり、お風呂を掃除したりって書いてあるよ。"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 77.0,
+      "end": 80.0,
+      "text": "こういうのも力仕事なんじゃない?"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 80.0,
+      "end": 86.0,
+      "text": "あ、それもそうだね。やっぱり自分の得意なことにしよう。"
+    },
+    {
+      "trackId": "cd2-track16",
+      "trackLabel": "確認問題 1 [B16]",
+      "start": 90.0,
+      "end": 94.0,
+      "text": "女の人は、どこでアルバイトをしますか?"
+    },
+    {
+      "trackId": "cd2-track17",
+      "trackLabel": "確認問題 2 [B17]",
+      "start": 0.0,
+      "end": 3.9,
+      "text": "2"
+    },
+    {
+      "trackId": "cd2-track17",
+      "trackLabel": "確認問題 2 [B17]",
+      "start": 3.9,
+      "end": 9.86,
+      "text": "ボランティアグループで、女の人が自己紹介をしています。"
+    },
+    {
+      "trackId": "cd2-track17",
+      "trackLabel": "確認問題 2 [B17]",
+      "start": 9.86,
+      "end": 17.14,
+      "text": "この女の人がボランティアを始めた一番の目的は何ですか?"
+    },
+    {
+      "trackId": "cd2-track17",
+      "trackLabel": "確認問題 2 [B17]",
+      "start": 17.14,
+      "end": 31.6,
+      "text": "1. 初めまして、高橋と申します。"
+    },
+    {
+      "trackId": "cd2-track17",
+      "trackLabel": "確認問題 2 [B17]",
+      "start": 31.6,
+      "end": 40.84,
+      "text": "このボランティアグループに入ったのは、もちろん、死のあっちこちの公園をきれいにしようという気持ちもあるんですが、"
+    },
+    {
+      "trackId": "cd2-track17",
+      "trackLabel": "確認問題 2 [B17]",
+      "start": 40.84,
+      "end": 49.92,
+      "text": "私、この死に引っ越してきて、6年ぐらいになるんですけど、死のこと何も知らないんです。"
+    },
+    {
+      "trackId": "cd2-track17",
+      "trackLabel": "確認問題 2 [B17]",
+      "start": 49.92,
+      "end": 64.14,
+      "text": "ずっと仕事が忙しかったので、仕事をやめて少し暇ができたんで、今度、留学生のホームステーの受け入れを死に申し込んだんですが、"
+    },
+    {
+      "trackId": "cd2-track17",
+      "trackLabel": "確認問題 2 [B17]",
+      "start": 64.14,
+      "end": 74.14,
+      "text": "外国の若い方に、この死を気に行ってもらいたいと思っても、自分が何も知らないんじゃ仕方がありませんよね。"
+    },
+    {
+      "trackId": "cd2-track17",
+      "trackLabel": "確認問題 2 [B17]",
+      "start": 74.14,
+      "end": 83.34,
+      "text": "おてらとか公園とか、面白そうなところをボランティアしながら見つけていきたいと思っています。"
+    },
+    {
+      "trackId": "cd2-track17",
+      "trackLabel": "確認問題 2 [B17]",
+      "start": 83.34,
+      "end": 92.94,
+      "text": "この女の人がボランティアを始めた一番の目的は何ですか?"
+    },
+    {
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "start": 0.0,
+      "end": 9.2,
+      "text": "3 会社で女の人と男の人が話しています"
+    },
+    {
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "start": 9.2,
+      "end": 15.88,
+      "text": "男の人は今度の出張でどうして被害りしますか"
+    },
+    {
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "start": 15.88,
+      "end": 23.76,
+      "text": "3 会社で女の人が話しています"
+    },
+    {
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "start": 23.76,
+      "end": 26.36,
+      "text": "3 会社で女の人が話しています"
+    },
+    {
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "start": 26.36,
+      "end": 31.12,
+      "text": "むらたさん今度の出張被害りなんですね"
+    },
+    {
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "start": 31.12,
+      "end": 35.0,
+      "text": "あそこは結構時間かかるんじゃないですか"
+    },
+    {
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "start": 35.0,
+      "end": 38.4,
+      "text": "うん 新幹線で3時間"
+    },
+    {
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "start": 38.4,
+      "end": 41.0,
+      "text": "またそこから乗り替えていかないと"
+    },
+    {
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "start": 41.0,
+      "end": 44.04,
+      "text": "前回は止まりましたよね"
+    },
+    {
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "start": 44.04,
+      "end": 48.6,
+      "text": "この距離なら止まりたければ会社からお金が出るんだけど"
+    },
+    {
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "start": 48.6,
+      "end": 51.88,
+      "text": "次の日こっちで仕事ですか"
+    },
+    {
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "start": 51.88,
+      "end": 57.0,
+      "text": "いや次の日は土曜日だから会社には来ないよ"
+    },
+    {
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "start": 57.0,
+      "end": 59.96,
+      "text": "あ じゃあお宝の方で"
+    },
+    {
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "start": 59.96,
+      "end": 65.08,
+      "text": "そうなんだ朝から家族で出かけることになっててね"
+    },
+    {
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "start": 65.08,
+      "end": 68.24,
+      "text": "忙しいけど仕方がないよ"
+    },
+    {
+      "trackId": "cd2-track18",
+      "trackLabel": "確認問題 3 [B18]",
+      "start": 68.24,
+      "end": 77.36,
+      "text": "おとこの人は今度の出張でどうして被害りしますか"
+    }
+  ]
+}
