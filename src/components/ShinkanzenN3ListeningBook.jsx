@@ -33,18 +33,105 @@ const PART_TITLES = {
 };
 
 const MONDAI_NAMES = {
-  'mondai-1': '課題理解 (Task-Based)',
-  'mondai-2': 'ポイント理解 (Key Points)',
-  'mondai-3': '概要理解 (General Outline)',
-  'mondai-4': '発話表現 (Utterance Expressions)',
-  'mondai-5': '即時応答 (Quick Response)',
-  'skill-1': 'Ⅰ 音声の特徴に慣れる (Speech Characteristics)',
-  'skill-2': 'Ⅱ 「発話表現」のスキルを学ぶ (Utterance Expressions)',
-  'skill-3': 'Ⅲ 「即時応答」のスキルを学ぶ (Immediate Response)',
-  'skill-4': 'Ⅳ 「課題理解」のスキルを学ぶ (Task Comprehension)',
-  'skill-5': 'Ⅴ 「ポイント理解」のスキルを学ぶ (Point Comprehension)',
-  'skill-6': 'Ⅵ 「概要理解」のスキルを学ぶ (General Comprehension)',
+  'mondai-1': '第1問：課題理解 (Task-Based)',
+  'mondai-2': '第2問：ポイント理解 (Key Points)',
+  'mondai-3': '第3問：概要理解 (General Outline)',
+  'mondai-4': '第4問：発話表現 (Utterance Expressions)',
+  'mondai-5': '第5問：即時応答 (Quick Response)',
+  'skill-1': '第1単元：Ⅰ 音声の特徴に慣れる (Speech Characteristics)',
+  'skill-2': '第2単元：Ⅱ 「発話表現」のスキルを学ぶ (Utterance Expressions)',
+  'skill-3': '第3単元：Ⅲ 「即時応答」のスキルを学ぶ (Immediate Response)',
+  'skill-4': '第4単元：Ⅳ 「課題理解」のスキルを学ぶ (Task Comprehension)',
+  'skill-5': '第5単元：Ⅴ 「ポイント理解」のスキルを学ぶ (Point Comprehension)',
+  'skill-6': '第6単元：Ⅵ 「概要理解」のスキルを学ぶ (General Comprehension)',
 };
+
+/**
+ * Curated Textbook Guidance & Notice Boxes matching the original Shin Kanzen Master PDF
+ */
+const SKILL_SECTION_NOTICES = {
+  // Unit 1 (skill-1) - Speech Characteristics (音声の特徴)
+  '練習1-A 間違えやすい音': {
+    code: '1-A',
+    title: '<ruby>間違<rt>まちが</rt></ruby>えやすい<ruby>音<rt>おと</rt></ruby>',
+    descJp: '「゛」や<ruby>小<rt>ちい</rt></ruby>さい「っ」「ゃ／ゅ／ょ」で<ruby>表<rt>あらわ</rt></ruby>す<ruby>音<rt>おと</rt></ruby>、「ん」や<ruby>長音<rt>ちょうおん</rt></ruby>（えいご／ノート）など、<ruby>間違<rt>まちが</rt></ruby>えやすい<ruby>音<rt>おと</rt></ruby>に<ruby>気<rt>き</rt></ruby>をつけて<ruby>聞<rt>き</rt></ruby>きましょう。',
+    descEn: 'Be sure to listen carefully for misunderstood sounds expressed by raised 「゛」 and small 「っ」 and 「ゃ／ゅ／ょ」 and 「ん」 and the long sounds in 「えいご／ノート」.'
+  },
+  '練習1-B アクセントやイントネーション': {
+    code: '1-B',
+    title: 'アクセントやイントネーション',
+    descJp: 'アクセントの違いによって意味が変わる言葉や、文末のイントネーションの違いに注意して聞きましょう。',
+    descEn: 'Pay attention to words whose meaning changes depending on pitch accent, and listen carefully to sentence-ending intonations.'
+  },
+  '練習1-C 似ている数字': {
+    code: '1-C',
+    title: '似ている数字',
+    descJp: '似ている数字（４と７、１と８など）や単位、数え方の表現に注意して聞き分けましょう。',
+    descEn: 'Listen carefully to distinguish similar numbers (such as 4 and 7, 1 and 8), units, and counters.'
+  },
+  '練習2-1 音の変化': {
+    code: '2-1',
+    title: '音の変化（縮約形）',
+    descJp: '話し言葉でよく使われる音の変化（「～ちゃう」「～なくちゃ」「～てる」など）に慣れましょう。',
+    descEn: 'Get accustomed to sound changes and colloquial contractions commonly heard in casual speech.'
+  },
+  '練習2-2 音の変化': {
+    code: '2-2',
+    title: '音の変化（文末の形）',
+    descJp: '縮約された文末表現を聞いて、元の形（完全な文法表現）を理解できるように練習しましょう。',
+    descEn: 'Practice recognizing the original grammatical form behind contracted conversational endings.'
+  },
+  '例題3 音の高さや長さ': {
+    code: '3-例',
+    title: '音の高さや長さ（イントネーション）',
+    descJp: '文末のイントネーションが上がるか下がるかで、話し手が同意しているのか断っているのかを判断しましょう。',
+    descEn: 'Determine whether the speaker agrees or declines based on rising or falling intonation at the end of the sentence.'
+  },
+  '練習3 音の高さや長さに注意する': {
+    code: '3',
+    title: '音の高さや長さに注意する',
+    descJp: '短い返事や相槌のイントネーションの違いを聞き分けて、肯定・否定のニュアンスを掴みましょう。',
+    descEn: 'Listen carefully to the intonation of short responses and backchanneling to catch affirmative or negative nuances.'
+  },
+  // Unit 2 (skill-2) - Utterance Expressions (発話表現)
+  '練習1 状況説明文を聞き分ける': {
+    code: '2-1',
+    title: '状況説明文を聞き分ける（動作をする人）',
+    descJp: '状況説明文を聞いて、「～てもらいたい」「～たい」などの表現から、話す人と相手のどちらがその動作をするのかを素早く判断しましょう。',
+    descEn: 'Listen to the situation setup and quickly identify whether the speaker or the other person will perform the action.'
+  },
+  '練習2-A 許可や依頼の表現': {
+    code: '2-A',
+    title: '許可や依頼の表現',
+    descJp: '「～てもいい？」「～てもらえない？」など、自分の行動の許可を求めるのか、相手に行動を依頼するのかを聞き分けましょう。',
+    descEn: 'Distinguish between asking for permission for one\'s own actions and requesting someone else to take action.'
+  },
+  '練習2-B 注意するべき動詞': {
+    code: '2-B',
+    title: '注意するべき動詞（授受動詞・使役など）',
+    descJp: '「教える・教わる」「貸す・借りる」など、視点によって主語が変わる動詞の使い方に注意しましょう。',
+    descEn: 'Pay attention to paired verbs like lending/borrowing or teaching/learning where the subject shifts.'
+  },
+  '練習3 問題を知らせる・助けを申し出る': {
+    code: '2-3',
+    title: '問題を知らせる・助けを申し出る',
+    descJp: '困っている状況を相手に伝える表現（「～んですが」）や、相手を助ける親切な申し出（「～ましょうか」）を適切に選びましょう。',
+    descEn: 'Select suitable utterances for reporting an issue or kindly offering assistance.'
+  },
+  '練習4 あいさつ表現に注意する': {
+    code: '2-4',
+    title: 'あいさつ表現に注意する',
+    descJp: '日本の職場や日常生活における、場面や相手に合わせた決まり文句の挨拶表現を身につけましょう。',
+    descEn: 'Master customary greeting expressions suited to specific workplace and daily-life situations.'
+  },
+  '確認問題': {
+    code: '確認',
+    title: '実戦形式：発話表現',
+    descJp: 'イラストを見ながら質問を聞いて、矢印（→）の人が言うべき最も適切な発話を選びましょう。',
+    descEn: 'Look at the illustration and choose the most appropriate utterance for the person indicated by the arrow (→).'
+  }
+};
+
 
 /**
  * Authentic Headphone Earphone Badge matching Shin Kanzen Master physical textbook:
@@ -162,6 +249,7 @@ const ShinkanzenN3ListeningBook = () => {
   const [showScript, setShowScript] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
   const [videoState, setVideoState] = useState({ status: 'idle', url: null, message: null });
+  const [expandedDetails, setExpandedDetails] = useState({});
 
   // Audio State
   const [isPlaying, setIsPlaying] = useState(false);
@@ -186,9 +274,45 @@ const ShinkanzenN3ListeningBook = () => {
     return path.startsWith('/') ? import.meta.env.BASE_URL + path.slice(1) : import.meta.env.BASE_URL + path;
   };
 
+  const isSkillChapter = Boolean(data?.part === 2 || (chapterId && chapterId.startsWith('skill-')));
+
+  const groupedSections = React.useMemo(() => {
+    if (!isSkillChapter || !data?.questions) return [];
+    const map = new Map();
+    data.questions.forEach((q, originalIdx) => {
+      const title = q.sectionTitle || '練習';
+      if (!map.has(title)) {
+        const firstHs = data.hotspots?.find(h => h.trackId === q.trackId) || data.hotspots?.find(h => h.audioSrc === q.audioSrc);
+        map.set(title, {
+          title,
+          trackId: q.trackId,
+          trackLabel: q.trackLabel || firstHs?.label,
+          trackCode: q.trackCode || firstHs?.trackCode || firstHs?.label?.match(/\[(.*?)\]/)?.[1] || 'A-01',
+          audioSrc: q.audioSrc || firstHs?.audioSrc,
+          instruction: q.instruction || data.instruction,
+          questions: []
+        });
+      }
+      map.get(title).questions.push({ ...q, originalIdx });
+    });
+    return Array.from(map.values());
+  }, [isSkillChapter, data]);
+
+  const handleSelectAnswer = (qKey, optionIndex) => {
+    if (revealed[qKey]) return;
+    setAnswers(prev => ({ ...prev, [qKey]: optionIndex }));
+    setRevealed(prev => ({ ...prev, [qKey]: true }));
+    setExpandedDetails(prev => ({ ...prev, [qKey]: true }));
+  };
+
+  const toggleDetail = (qKey) => {
+    setExpandedDetails(prev => ({ ...prev, [qKey]: !prev[qKey] }));
+  };
+
   useEffect(() => {
     setAnswers({});
     setRevealed({});
+    setExpandedDetails({});
     setLoading(true);
     setError(null);
     setShowScript(false);
@@ -376,9 +500,546 @@ const ShinkanzenN3ListeningBook = () => {
   const currentTrackObj = data.hotspots?.find(h => h.audioSrc === activeAudioSrc) || data.hotspots?.[0];
   const currentTrackLabel = currentTrackObj?.label || 'Audio Track';
   const currentTrackCode = currentTrackObj?.trackCode || currentTrackObj?.label?.match(/\[(.*?)\]/)?.[1] || 'A-01';
-  const activeTranscriptLine = [...(data.transcript || [])]
-    .reverse()
-    .find(line => (!line.trackSrc || line.trackSrc === activeAudioSrc) && currentAudioTime >= line.time);
+  const renderSkillChapter = () => {
+    return (
+      <div className="space-y-10 mb-8">
+        {/* Render Each Section */}
+        {groupedSections.map((sec, secIdx) => {
+          const notice = SKILL_SECTION_NOTICES[sec.title];
+          const isTrackPlaying = isPlaying && activeAudioSrc === sec.audioSrc;
+          
+          // Determine section render mode
+          const isTrueFalseSection = sec.questions.every(q => 
+            q.options?.some(o => o.includes('○') || o.includes('×'))
+          );
+
+          // Inline phrase questions have brackets inside the prompt sentence (e.g. 練習1: （ 話す人 ・ 友達 ）が教える)
+          const isInlinePhraseSection = !isTrueFalseSection && sec.questions.every(q =>
+            q.questionText?.includes('（') && q.questionText?.includes('）') && !q.questionText?.includes('最初の言葉')
+          );
+
+          // Bubble letters mode: for 1-A, 1-B, 1-C, or pure choice letter questions where options are just letters tested aurally
+          const isBubbleLetterSection = !isTrueFalseSection && !isInlinePhraseSection && (
+            sec.title.includes('1-A') || sec.title.includes('1-B') || sec.title.includes('1-C') ||
+            sec.questions.every(q => q.options?.length <= 4 && q.options?.every(o => /^[a-d]\./i.test(o.trim())))
+          );
+
+          return (
+            <div key={secIdx} className="space-y-4">
+              {/* Textbook Top Notice Box (e.g. [ 1-A ] 間違えやすい音) */}
+              {notice && (
+                <div className="shinkanzen-skill-notice-box">
+                  <div className="flex items-center gap-3 mb-2.5">
+                    <span className="shinkanzen-notice-badge">
+                      {notice.code}
+                    </span>
+                    <h4 
+                      className="text-base sm:text-lg font-black text-slate-800 dark:text-slate-100 m-0"
+                      dangerouslySetInnerHTML={{ __html: notice.title }}
+                    />
+                  </div>
+                  <p 
+                    className="text-sm sm:text-base leading-relaxed text-slate-800 dark:text-slate-200 m-0 font-serif"
+                    dangerouslySetInnerHTML={{ __html: notice.descJp }}
+                  />
+                  {notice.descEn && (
+                    <p className="text-xs sm:text-sm leading-relaxed text-slate-500 dark:text-slate-400 mt-2 m-0 italic font-sans border-t border-stone-200 dark:border-stone-700/60 pt-1.5">
+                      {notice.descEn}
+                    </p>
+                  )}
+                </div>
+              )}
+
+              {/* Authentic Exercise Paper Sheet */}
+              <div className="shinkanzen-listening-paper rounded-xl p-4 sm:p-6 mb-8">
+                {/* Exercise Header Banner */}
+                <div className="shinkanzen-exercise-header-banner">
+                  <div className="flex items-start gap-3">
+                    <div className="mt-1">
+                      <span className="shinkanzen-hatch-icon" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg sm:text-xl font-black text-slate-900 dark:text-slate-100 m-0 flex items-center gap-2">
+                        <span>{sec.title}</span>
+                      </h3>
+                      {sec.instruction && (
+                        <p 
+                          className="text-xs sm:text-sm text-stone-600 dark:text-stone-300 font-serif mt-1 m-0 leading-relaxed"
+                          dangerouslySetInnerHTML={{ __html: sec.instruction }}
+                        />
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Single prominent Headphone Badge for this exercise */}
+                  <div className="flex items-center gap-2 shrink-0">
+                    <HeadphoneBadge
+                      trackCode={sec.trackCode}
+                      isPlaying={isTrackPlaying}
+                      onClick={() => {
+                        if (sec.audioSrc) {
+                          if (isTrackPlaying) {
+                            audioRef.current?.pause();
+                          } else {
+                            switchTrack(sec.audioSrc);
+                          }
+                        }
+                      }}
+                      title={`Play Exercise Audio [${sec.trackCode}]`}
+                    />
+                  </div>
+                </div>
+
+                {/* Sub-renderer A: Bubble Letter Mode (e.g. 練習1-A, 1-B, 1-C) */}
+                {isBubbleLetterSection ? (
+                  <div className="space-y-4">
+                    {/* (例) Row in the textbook */}
+                    {sec.title.includes('1-A') && (
+                      <div className="shinkanzen-example-row flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <span className="font-bold text-stone-600 dark:text-stone-300 font-serif w-8">
+                            （例）
+                          </span>
+                          <div className="shinkanzen-bubble-group">
+                            <span>(</span>
+                            <span className="shinkanzen-bubble-btn opacity-60">a</span>
+                            <span className="text-stone-400">・</span>
+                            <span className="shinkanzen-bubble-btn selected font-bold bg-slate-900 text-white">ⓑ</span>
+                            <span className="text-stone-400">・</span>
+                            <span className="shinkanzen-bubble-btn opacity-60">c</span>
+                            <span>)</span>
+                          </div>
+                        </div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400 font-sans italic">
+                          例題 (Example) : ⓑ が正解
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Question Rows */}
+                    <div className="space-y-2">
+                      {sec.questions.map((q, qSubIdx) => {
+                        const qKey = `q-${q.originalIdx}`;
+                        const userAnswer = answers[qKey];
+                        const isRevealed = revealed[qKey];
+                        const correctIdx = q.correctOption?.index;
+                        const subNum = q.badge?.match(/\((\d+)\)/)?.[1] || (qSubIdx + 1);
+                        const isDetailOpen = expandedDetails[qKey] ?? isRevealed;
+
+                        return (
+                          <div key={q.originalIdx} className="border-b last:border-b-0 border-stone-200/70 dark:border-stone-800/70 pb-2">
+                            <div className="shinkanzen-bubble-row">
+                              <span className="font-bold text-slate-800 dark:text-slate-200 font-serif w-8">
+                                ({subNum})
+                              </span>
+
+                              <div className="shinkanzen-bubble-group">
+                                <span>(</span>
+                                {q.options?.map((opt, optIdx) => {
+                                  const letter = String.fromCharCode(97 + optIdx);
+                                  const isSelected = userAnswer === optIdx + 1;
+                                  const isCorrect = optIdx === correctIdx;
+                                  let btnClass = "shinkanzen-bubble-btn";
+                                  if (isRevealed) {
+                                    if (isCorrect) btnClass += " correct";
+                                    else if (isSelected && !isCorrect) btnClass += " wrong";
+                                    else btnClass += " dimmed";
+                                  } else if (isSelected) {
+                                    btnClass += " selected";
+                                  }
+
+                                  return (
+                                    <React.Fragment key={optIdx}>
+                                      {optIdx > 0 && <span className="text-stone-400">・</span>}
+                                      <button
+                                        type="button"
+                                        onClick={() => handleSelectAnswer(qKey, optIdx + 1)}
+                                        disabled={isRevealed}
+                                        className={btnClass}
+                                        title={opt}
+                                      >
+                                        {letter}
+                                      </button>
+                                    </React.Fragment>
+                                  );
+                                })}
+                                <span>)</span>
+                              </div>
+
+                              {/* Status and Toggle */}
+                              <div className="ml-auto flex items-center gap-2">
+                                {isRevealed && (
+                                  <span className={`text-xs font-bold px-2 py-0.5 rounded ${
+                                    userAnswer === correctIdx + 1
+                                      ? 'text-emerald-700 dark:text-emerald-300 bg-emerald-500/10'
+                                      : 'text-rose-700 dark:text-rose-400 bg-rose-500/10'
+                                  }`}>
+                                    {userAnswer === correctIdx + 1 ? '✓ 正解' : `✗ (正解: ${String.fromCharCode(97 + correctIdx)})`}
+                                  </span>
+                                )}
+                                {isRevealed && (
+                                  <button
+                                    type="button"
+                                    onClick={() => toggleDetail(qKey)}
+                                    className="text-[11px] font-bold text-stone-500 hover:text-stone-800 dark:text-stone-400 dark:hover:text-stone-200 underline cursor-pointer"
+                                  >
+                                    {isDetailOpen ? '隠す ▲' : '解説 ▼'}
+                                  </button>
+                                )}
+                              </div>
+                            </div>
+
+                            {/* Detail / Explanation Drawer */}
+                            {isRevealed && isDetailOpen && (
+                              <div className="mt-2 ml-10 p-3 sm:p-4 rounded-xl border border-stone-200 dark:border-stone-700 bg-stone-50/90 dark:bg-slate-900/60 text-xs sm:text-sm space-y-2 animate-fadeIn">
+                                {/* Spoken prompt text */}
+                                {q.questionText && (
+                                  <div className="font-serif text-slate-800 dark:text-slate-100 font-bold">
+                                    <span dangerouslySetInnerHTML={{ __html: q.questionText }} />
+                                  </div>
+                                )}
+
+                                {/* Choices breakdown */}
+                                <div className="flex flex-wrap gap-2 text-stone-600 dark:text-stone-300 font-serif">
+                                  {q.options?.map((opt, oIdx) => (
+                                    <span 
+                                      key={oIdx}
+                                      className={`px-2 py-0.5 rounded ${
+                                        oIdx === correctIdx
+                                          ? 'bg-emerald-500/15 text-emerald-800 dark:text-emerald-200 font-bold border border-emerald-500/30'
+                                          : 'bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] border border-[var(--color-border)]'
+                                      }`}
+                                    >
+                                      {opt}
+                                    </span>
+                                  ))}
+                                </div>
+
+                                {/* Japanese Explanation */}
+                                {q.explanation && (
+                                  <div 
+                                    className="text-stone-700 dark:text-stone-200 leading-relaxed font-serif pt-1"
+                                    dangerouslySetInnerHTML={{ __html: q.explanation }}
+                                  />
+                                )}
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ) : isInlinePhraseSection ? (
+                  /* Sub-renderer B: Inline Phrase Mode (e.g. 練習1 in Chapter 2) */
+                  <div className="space-y-4">
+                    {sec.questions.map((q, qSubIdx) => {
+                      const qKey = `q-${q.originalIdx}`;
+                      const userAnswer = answers[qKey];
+                      const isRevealed = revealed[qKey];
+                      const correctIdx = q.correctOption?.index;
+                      const subNum = q.badge?.match(/\((\d+)\)/)?.[1] || (qSubIdx + 1);
+
+                      const opt1 = q.options?.[0]?.replace(/^[a-z]\.\s*/i, '') || '話す人';
+                      const opt2 = q.options?.[1]?.replace(/^[a-z]\.\s*/i, '') || '友達';
+                      const verbEnding = q.questionText?.match(/）(.*?)<\/b>/)?.[1] || q.questionText?.replace(/<[^>]+>/g, '').match(/）(.*)/)?.[1] || '';
+
+                      return (
+                        <div key={q.originalIdx} className="pb-3 border-b last:border-b-0 border-stone-200/70 dark:border-stone-800/70">
+                          <div className="flex flex-wrap items-center justify-between gap-2 py-1">
+                            <div className="flex items-center flex-wrap gap-2 text-base sm:text-lg font-serif">
+                              <span className="font-bold text-slate-800 dark:text-slate-200 w-8">
+                                ({subNum})
+                              </span>
+                              <span>（</span>
+                              
+                              <button
+                                type="button"
+                                onClick={() => handleSelectAnswer(qKey, 1)}
+                                disabled={isRevealed}
+                                className={`shinkanzen-inline-choice-btn ${
+                                  isRevealed
+                                    ? correctIdx === 0
+                                      ? 'correct'
+                                      : userAnswer === 1
+                                      ? 'wrong'
+                                      : 'dimmed'
+                                    : userAnswer === 1
+                                    ? 'selected'
+                                    : ''
+                                }`}
+                              >
+                                {opt1}
+                              </button>
+
+                              <span>・</span>
+
+                              <button
+                                type="button"
+                                onClick={() => handleSelectAnswer(qKey, 2)}
+                                disabled={isRevealed}
+                                className={`shinkanzen-inline-choice-btn ${
+                                  isRevealed
+                                    ? correctIdx === 1
+                                      ? 'correct'
+                                      : userAnswer === 2
+                                      ? 'wrong'
+                                      : 'dimmed'
+                                    : userAnswer === 2
+                                    ? 'selected'
+                                    : ''
+                                }`}
+                              >
+                                {opt2}
+                              </button>
+
+                              <span>）{verbEnding}</span>
+                            </div>
+
+                            {isRevealed && (
+                              <span className={`text-xs font-bold px-2 py-0.5 rounded ${
+                                userAnswer === correctIdx + 1
+                                  ? 'text-emerald-700 dark:text-emerald-300 bg-emerald-500/10'
+                                  : 'text-rose-700 dark:text-rose-400 bg-rose-500/10'
+                              }`}>
+                                {userAnswer === correctIdx + 1 ? '✓ 正解' : `✗ (正解: ${correctIdx === 0 ? opt1 : opt2})`}
+                              </span>
+                            )}
+                          </div>
+
+                          {isRevealed && (
+                            <div className="mt-2 ml-8 p-3 rounded-lg border border-stone-200 dark:border-stone-700 bg-stone-50 dark:bg-slate-900/60 text-xs sm:text-sm space-y-1.5 animate-fadeIn">
+                              {q.context && (
+                                <div className="text-stone-600 dark:text-stone-300 font-serif">
+                                  {q.context}
+                                </div>
+                              )}
+                              {q.explanation && (
+                                <div 
+                                  className="text-stone-700 dark:text-stone-200 font-serif"
+                                  dangerouslySetInnerHTML={{ __html: q.explanation }}
+                                />
+                              )}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                ) : isTrueFalseSection ? (
+                  /* Sub-renderer C: Situation Utterances with [ ○ ] [ × ] (e.g. 練習2-A, 練習2-B) */
+                  <div className="space-y-4">
+                    {(() => {
+                      const situationMap = new Map();
+                      sec.questions.forEach(q => {
+                        const sitMatch = q.badge?.match(/\((\d+)-(\d+)\)/);
+                        const sitNum = sitMatch ? sitMatch[1] : '1';
+                        const uttNum = sitMatch ? sitMatch[2] : '1';
+                        if (!situationMap.has(sitNum)) {
+                          situationMap.set(sitNum, {
+                            sitNum,
+                            context: q.context,
+                            utterances: []
+                          });
+                        }
+                        situationMap.get(sitNum).utterances.push({ ...q, uttNum });
+                      });
+
+                      return Array.from(situationMap.values()).map((sit, sitIdx) => (
+                        <div key={sitIdx} className="shinkanzen-situation-card">
+                          <div className="flex items-center gap-2 pb-2 mb-3 border-b border-stone-200 dark:border-stone-700">
+                            <span className="font-bold text-sm sm:text-base text-slate-900 dark:text-slate-100 font-serif">
+                              ({sit.sitNum})
+                            </span>
+                            <span className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 font-serif font-medium">
+                              {sit.context || '状況を聞いて判断してください。'}
+                            </span>
+                          </div>
+
+                          <div className="space-y-2.5">
+                            {sit.utterances.map((u, uIdx) => {
+                              const qKey = `q-${u.originalIdx}`;
+                              const userAnswer = answers[qKey];
+                              const isRevealed = revealed[qKey];
+                              const correctIdx = u.correctOption?.index;
+                              const cleanUttText = u.questionText?.replace(/^発話\s*\d+：/, '') || u.questionText;
+
+                              return (
+                                <div key={uIdx} className="p-2 rounded-lg bg-stone-50/60 dark:bg-slate-900/40 border border-stone-200/50 dark:border-stone-800">
+                                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                                    <div className="flex items-start gap-2 text-xs sm:text-sm font-serif">
+                                      <span className="font-bold text-stone-500 shrink-0 mt-0.5">
+                                        {u.uttNum}.
+                                      </span>
+                                      <span 
+                                        className="text-slate-800 dark:text-slate-200 leading-relaxed"
+                                        dangerouslySetInnerHTML={{ __html: cleanUttText }}
+                                      />
+                                    </div>
+
+                                    <div className="flex items-center gap-2 shrink-0 self-end sm:self-center">
+                                      <button
+                                        type="button"
+                                        onClick={() => handleSelectAnswer(qKey, 1)}
+                                        disabled={isRevealed}
+                                        className={`shinkanzen-tf-btn ${
+                                          isRevealed
+                                            ? correctIdx === 0
+                                              ? 'correct'
+                                              : userAnswer === 1
+                                              ? 'wrong'
+                                              : 'dimmed'
+                                            : userAnswer === 1
+                                            ? 'selected'
+                                            : ''
+                                        }`}
+                                        title="状況に合う (○)"
+                                      >
+                                        ○
+                                      </button>
+
+                                      <button
+                                        type="button"
+                                        onClick={() => handleSelectAnswer(qKey, 2)}
+                                        disabled={isRevealed}
+                                        className={`shinkanzen-tf-btn ${
+                                          isRevealed
+                                            ? correctIdx === 1
+                                              ? 'correct'
+                                              : userAnswer === 2
+                                              ? 'wrong'
+                                              : 'dimmed'
+                                            : userAnswer === 2
+                                              ? 'selected'
+                                            : ''
+                                        }`}
+                                        title="状況に合わない (×)"
+                                      >
+                                        ×
+                                      </button>
+                                    </div>
+                                  </div>
+
+                                  {isRevealed && (
+                                    <div className="mt-2 pt-2 border-t border-stone-200 dark:border-stone-800 text-xs text-stone-600 dark:text-stone-300 font-serif">
+                                      <span dangerouslySetInnerHTML={{ __html: u.explanation }} />
+                                    </div>
+                                  )}
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      ));
+                    })()}
+                  </div>
+                ) : (
+                  /* Sub-renderer D: Standard Utterance Choices & Illustration Mode (e.g. 練習3, 4, 確認問題) */
+                  <div className="space-y-6">
+                    {sec.questions.map((q, qSubIdx) => {
+                      const qKey = `q-${q.originalIdx}`;
+                      const userAnswer = answers[qKey];
+                      const isRevealed = revealed[qKey];
+                      const correctIdx = q.correctOption?.index;
+                      const subNum = q.badge?.match(/\((\d+)\)/)?.[1] || (qSubIdx + 1);
+
+                      return (
+                        <div key={q.originalIdx} className="p-4 sm:p-5 rounded-xl border border-[var(--color-border)] bg-transparent space-y-3">
+                          <div className="flex items-start justify-between gap-3">
+                            <div className="flex items-start gap-2.5">
+                              <span className="font-bold text-base sm:text-lg text-slate-900 dark:text-slate-100 font-serif">
+                                ({subNum})
+                              </span>
+                              <div className="space-y-1">
+                                {q.context && (
+                                  <p className="text-xs sm:text-sm text-stone-500 dark:text-stone-400 font-serif italic m-0">
+                                    {q.context}
+                                  </p>
+                                )}
+                                <p 
+                                  className="text-sm sm:text-base font-serif font-bold text-slate-800 dark:text-slate-100 m-0 leading-relaxed"
+                                  dangerouslySetInnerHTML={{ __html: q.questionText }}
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          {q.illustrationSrc && (
+                            <div className="p-2 sm:p-3 bg-transparent rounded-xl border border-[var(--color-border)] text-center">
+                              <img 
+                                src={resolvePublicUrl(q.illustrationSrc)} 
+                                alt="Scene Illustration"
+                                className="max-h-64 mx-auto object-contain drop-shadow-sm rounded-lg"
+                              />
+                              <p className="text-[11px] text-stone-500 dark:text-stone-400 mt-1 m-0">
+                                矢印（→）の人の発話に注意
+                              </p>
+                            </div>
+                          )}
+
+                          <div className="space-y-2 pt-1">
+                            {q.options?.map((opt, oIdx) => {
+                              const isSelected = userAnswer === oIdx + 1;
+                              const isCorrect = oIdx === correctIdx;
+                              let optClass = "shinkanzen-listening-option-row";
+                              if (isRevealed) {
+                                if (isCorrect) optClass += " correct";
+                                else if (isSelected && !isCorrect) optClass += " wrong";
+                                else optClass += " dimmed";
+                              }
+                              const cleanOpt = opt.replace(/^\d+[\.\s　]*/, '');
+
+                              return (
+                                <button
+                                  key={oIdx}
+                                  type="button"
+                                  onClick={() => handleSelectAnswer(qKey, oIdx + 1)}
+                                  disabled={isRevealed}
+                                  className={optClass}
+                                >
+                                  <div className="flex items-center justify-between w-full">
+                                    <div className="flex items-baseline gap-3">
+                                      <span className="font-bold shrink-0 text-base">{oIdx + 1}</span>
+                                      <span dangerouslySetInnerHTML={{ __html: cleanOpt }} />
+                                    </div>
+                                    {isRevealed && isCorrect && (
+                                      <span className="text-emerald-700 dark:text-emerald-300 font-bold text-xs shrink-0 bg-emerald-500/10 px-2 py-0.5 rounded">
+                                        ✓ 正解
+                                      </span>
+                                    )}
+                                    {isRevealed && isSelected && !isCorrect && (
+                                      <span className="text-rose-700 dark:text-rose-400 font-bold text-xs shrink-0 bg-rose-500/10 px-2 py-0.5 rounded">
+                                        ✗ 不正解
+                                      </span>
+                                    )}
+                                  </div>
+                                </button>
+                              );
+                            })}
+                          </div>
+
+                          {isRevealed && q.explanation && (
+                            <div className="mt-3 p-3.5 rounded-lg border border-[var(--color-border)] bg-transparent text-xs sm:text-sm font-serif space-y-1.5 animate-fadeIn">
+                              <div className="font-bold text-xs text-stone-600 dark:text-stone-300">
+                                【解説・正解の理由】
+                              </div>
+                              <div 
+                                className="text-stone-700 dark:text-stone-200 leading-relaxed"
+                                dangerouslySetInnerHTML={{ __html: q.explanation }}
+                              />
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
 
   return (
     <div className="min-h-screen bg-[var(--color-bg-primary)] text-[var(--color-text-primary)] pb-16 pt-3 sm:pt-4 transition-colors font-sans">
@@ -391,14 +1052,14 @@ const ShinkanzenN3ListeningBook = () => {
         preload="auto" 
       />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 shinkanzen-page">
+      <div className="w-full max-w-6xl xl:max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 transition-all duration-300 shinkanzen-page">
         
         {/* Top Controls & Breadcrumbs Bar */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-3 mb-4">
           <div className="flex items-center gap-2">
             <Link 
               to="/books/shinkanzen-master-n3-listening" 
-              className="text-xs font-bold text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-purple-400 transition flex items-center gap-1.5 bg-slate-200/60 dark:bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700"
+              className="text-xs font-bold text-slate-700 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-purple-400 transition flex items-center gap-1.5 bg-slate-200/60 dark:bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 shrink-0"
             >
               &larr; Book Index
             </Link>
@@ -409,11 +1070,11 @@ const ShinkanzenN3ListeningBook = () => {
             <select
               value={chapterId}
               onChange={(e) => navigateToChapter(e.target.value)}
-              className="bg-white dark:bg-slate-800 text-[var(--color-text-primary)] text-xs font-bold py-1.5 px-3 rounded-lg border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 dark:focus:ring-purple-500 shadow-sm"
+              className="w-full sm:w-auto max-w-full bg-[var(--color-bg-secondary)] text-[var(--color-text-primary)] text-xs font-bold py-1.5 px-3 rounded-lg border border-[var(--color-border)] focus:outline-none focus:ring-2 focus:ring-emerald-500 dark:focus:ring-purple-500 shadow-sm"
             >
               {partChapters.map(ch => (
                 <option key={ch.id} value={ch.id}>
-                  {ch.rawTitle} — {MONDAI_NAMES[ch.id] || ch.id}
+                  {MONDAI_NAMES[ch.id] || ch.rawTitle}
                 </option>
               ))}
             </select>
@@ -452,26 +1113,28 @@ const ShinkanzenN3ListeningBook = () => {
           </div>
         </div>
 
-        {/* ================= AUTHENTIC MONDAI HEADER & OVERVIEW ================= */}
-        <div className="shinkanzen-listening-paper rounded-xl p-5 sm:p-6 mb-6">
-          <div className="shinkanzen-mondai-header">
-            <div className="shinkanzen-mondai-badge">
-              {data.title}：{MONDAI_NAMES[chapterId] || data.partTitle}
+        {/* ================= AUTHENTIC MONDAI HEADER & OVERVIEW (Only for Part 1) ================= */}
+        {!isSkillChapter && (
+          <div className="shinkanzen-listening-paper rounded-xl p-5 sm:p-6 mb-6">
+            <div className="shinkanzen-mondai-header">
+              <div className="shinkanzen-mondai-badge">
+                {MONDAI_NAMES[chapterId] || data.title}
+              </div>
+            </div>
+
+            <div className="space-y-3 font-serif">
+              <p 
+                className="text-sm sm:text-base leading-relaxed text-slate-800 dark:text-slate-200 m-0"
+                dangerouslySetInnerHTML={{ __html: data.mondaiHeader }}
+              />
+              {data.mondaiHeaderEn && (
+                <p className="text-xs sm:text-sm leading-relaxed text-slate-500 dark:text-slate-400 italic m-0 border-t border-dashed border-slate-200 dark:border-slate-700/60 pt-2 font-sans">
+                  {data.mondaiHeaderEn}
+                </p>
+              )}
             </div>
           </div>
-
-          <div className="space-y-3 font-serif">
-            <p 
-              className="text-sm sm:text-base leading-relaxed text-slate-800 dark:text-slate-200 m-0"
-              dangerouslySetInnerHTML={{ __html: data.mondaiHeader }}
-            />
-            {data.mondaiHeaderEn && (
-              <p className="text-xs sm:text-sm leading-relaxed text-slate-500 dark:text-slate-400 italic m-0 border-t border-dashed border-slate-200 dark:border-slate-700/60 pt-2 font-sans">
-                {data.mondaiHeaderEn}
-              </p>
-            )}
-          </div>
-        </div>
+        )}
 
         {/* ================= OPTIONAL STANDALONE ILLUSTRATION (non-Mondai 4) ================= */}
         {data.illustrationSrc && chapterId !== 'mondai-4' && (
@@ -484,7 +1147,7 @@ const ShinkanzenN3ListeningBook = () => {
                 矢印（→）の人の発話に注意
               </span>
             </div>
-            <div className="flex justify-center p-2 bg-white dark:bg-slate-900/60 rounded-lg border border-slate-200 dark:border-slate-800">
+            <div className="flex justify-center p-2 bg-transparent rounded-lg border border-[var(--color-border)]">
               <img 
                 src={resolvePublicUrl(data.illustrationSrc)} 
                 alt="Problem Illustration" 
@@ -495,7 +1158,9 @@ const ShinkanzenN3ListeningBook = () => {
         )}
 
         {/* ================= AUTHENTIC QUESTION SHEET (問題用紙) ================= */}
-        {chapterId === 'mondai-5' ? (
+        {isSkillChapter ? (
+          renderSkillChapter()
+        ) : chapterId === 'mondai-5' ? (
           /* ================= MONDAI 5: AUTHENTIC COMBINED (1) & (2) NUMBER BOX SHEET ================= */
           <div className="shinkanzen-listening-paper rounded-xl p-5 sm:p-7 mb-8 transition-all">
             {/* Header: ☆ 例題 5 + A-05 Earphone Badge */}
@@ -986,30 +1651,30 @@ const ShinkanzenN3ListeningBook = () => {
         </div>
 
         {/* ================= BOTTOM PAGINATION & NAVIGATION ================= */}
-        <div className="flex items-center justify-between gap-4 pt-4 border-t border-stone-200 dark:border-stone-700/80">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-4 border-t border-[var(--color-border)]">
           <button
             onClick={() => prevChapter && navigateToChapter(prevChapter.id)}
             disabled={!prevChapter}
-            className={`px-4 py-2.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 ${
+            className={`w-full sm:w-auto px-4 py-2.5 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5 ${
               prevChapter
-                ? 'bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-200 hover:border-emerald-500 dark:hover:border-purple-500 hover:shadow-sm cursor-pointer'
-                : 'opacity-40 bg-slate-100 dark:bg-slate-900 text-slate-400 cursor-not-allowed border border-transparent'
+                ? 'bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-[var(--color-text-primary)] hover:border-emerald-500 dark:hover:border-purple-500 hover:shadow-sm cursor-pointer'
+                : 'opacity-40 bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)] cursor-not-allowed border border-transparent'
             }`}
           >
             &larr; Previous Section
           </button>
 
-          <span className="text-xs font-bold text-stone-500 dark:text-stone-400">
+          <span className="text-xs font-bold text-[var(--color-text-muted)] py-1">
             Section {currentChapterIndex + 1} of {allChapters.length}
           </span>
 
           <button
             onClick={() => nextChapter && navigateToChapter(nextChapter.id)}
             disabled={!nextChapter}
-            className={`px-5 py-2.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 ${
+            className={`w-full sm:w-auto px-5 py-2.5 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5 ${
               nextChapter
                 ? 'bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-purple-600 dark:to-indigo-600 hover:opacity-95 text-white shadow-md shadow-emerald-600/15 dark:shadow-purple-600/15 cursor-pointer active:scale-95'
-                : 'opacity-40 bg-slate-100 dark:bg-slate-900 text-slate-400 cursor-not-allowed'
+                : 'opacity-40 bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)] cursor-not-allowed'
             }`}
           >
             Next Section &rarr;

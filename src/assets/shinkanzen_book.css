@@ -413,20 +413,16 @@
    SHINKANZEN LISTENING EXTENSIONS (Authentic Textbook Aesthetic)
    ───────────────────────────────────────────────────────────── */
 
-/* Authentic Book Paper Card */
+/* Authentic Book Paper Container */
 .shinkanzen-listening-paper {
-  background-color: #ffffff;
-  border: 1px solid #e6e0d2;
-  color: #111827;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.02);
-  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+  background-color: transparent;
+  color: var(--color-text-primary, #111827);
+  transition: color 0.25s ease;
 }
 
 :is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-listening-paper {
-  background-color: #161b22;
-  border-color: #30363d;
-  color: #f0f6fc;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  background-color: transparent;
+  color: var(--color-text-primary, #f0f6fc);
 }
 
 /* Authentic Star Reidai Title */
@@ -677,5 +673,382 @@
   color: #94a3b8 !important;
   cursor: default;
 }
+/* ================= AUTHENTIC SKILL UNITS (PART 2) TEXTBOOK STYLES ================= */
 
+/* Top Notice / Guidance Box matching PDF (e.g. [ 1-A ] 間違えやすい音) */
+.shinkanzen-skill-notice-box {
+  background-color: transparent;
+  border: 1.5px solid var(--color-border, #94a3b8);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  color: var(--color-text-primary, #1e293b);
+}
 
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-skill-notice-box {
+  border-color: var(--color-border, #475569);
+  color: var(--color-text-primary, #f1f5f9);
+}
+
+.shinkanzen-notice-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--color-border, #64748b);
+  border-radius: 6px;
+  padding: 2px 10px;
+  font-size: 0.95rem;
+  font-weight: 900;
+  font-family: 'Hiragino Kaku Gothic ProN', 'Yu Gothic', monospace;
+  color: var(--color-text-primary, #1e293b);
+  background-color: transparent;
+}
+
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-notice-badge {
+  border-color: var(--color-border, #94a3b8);
+  color: var(--color-text-primary, #f8fafc);
+  background-color: transparent;
+}
+
+/* Hatched icon matching textbook [▨] */
+.shinkanzen-hatch-icon {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid currentColor;
+  border-radius: 3px;
+  display: inline-block;
+  background-image: repeating-linear-gradient(
+    45deg,
+    currentColor,
+    currentColor 1.5px,
+    transparent 1.5px,
+    transparent 4px
+  );
+  opacity: 0.85;
+}
+
+/* Exercise Navigation Pills / Tabs */
+.shinkanzen-exercise-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  scrollbar-width: thin;
+}
+
+.shinkanzen-exercise-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  border: 1.5px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #475569;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-exercise-tab-btn {
+  border-color: #334155;
+  background-color: #1e293b;
+  color: #94a3b8;
+}
+
+.shinkanzen-exercise-tab-btn:hover {
+  border-color: #059669;
+  color: #059669;
+}
+
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-exercise-tab-btn:hover {
+  border-color: #a855f7;
+  color: #c084fc;
+}
+
+.shinkanzen-exercise-tab-btn.active {
+  background-color: #0f172a;
+  border-color: #0f172a;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-exercise-tab-btn.active {
+  background-color: #9333ea;
+  border-color: #9333ea;
+  color: #ffffff;
+}
+
+/* Exercise Header Banner within Paper */
+.shinkanzen-exercise-header-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+  border-bottom: 1.5px solid #e2e8f0;
+}
+
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-exercise-header-banner {
+  border-bottom-color: #334155;
+}
+
+/* Authentic Bubble Row: (1) ( a ・ b ・ c ) */
+.shinkanzen-bubble-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background-color 0.15s ease;
+}
+
+.shinkanzen-bubble-row:hover {
+  background-color: rgba(241, 245, 249, 0.6);
+}
+
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-bubble-row:hover {
+  background-color: rgba(30, 41, 59, 0.5);
+}
+
+.shinkanzen-bubble-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  font-size: 1.15rem;
+}
+
+.shinkanzen-bubble-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  border: 1.5px solid #334155;
+  background-color: transparent;
+  color: #0f172a;
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  line-height: 1;
+}
+
+@media (max-width: 640px) {
+  .shinkanzen-bubble-row {
+    padding: 6px 4px;
+    gap: 6px 8px;
+  }
+
+  .shinkanzen-bubble-group {
+    font-size: 1rem;
+    gap: 3px;
+  }
+
+  .shinkanzen-bubble-btn {
+    width: 25px;
+    height: 25px;
+    font-size: 0.85rem;
+  }
+
+  .shinkanzen-inline-choice-btn {
+    padding: 2px 6px;
+    font-size: 0.85rem;
+    margin: 0 1px;
+  }
+
+  .shinkanzen-tf-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 0.95rem;
+  }
+}
+
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-bubble-btn {
+  border-color: #94a3b8;
+  color: #f1f5f9;
+}
+
+.shinkanzen-bubble-btn:not(:disabled):hover {
+  background-color: #e2e8f0;
+  transform: scale(1.08);
+}
+
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-bubble-btn:not(:disabled):hover {
+  background-color: #334155;
+}
+
+.shinkanzen-bubble-btn.selected {
+  background-color: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+}
+
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-bubble-btn.selected {
+  background-color: #9333ea;
+  border-color: #9333ea;
+}
+
+.shinkanzen-bubble-btn.correct {
+  background-color: #059669 !important;
+  color: #ffffff !important;
+  border-color: #047857 !important;
+}
+
+.shinkanzen-bubble-btn.wrong {
+  background-color: #f43f5e !important;
+  color: #ffffff !important;
+  border-color: #e11d48 !important;
+  text-decoration: line-through;
+}
+
+.shinkanzen-bubble-btn.dimmed {
+  opacity: 0.35;
+  border-color: #cbd5e1;
+}
+
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-bubble-btn.dimmed {
+  border-color: #475569;
+}
+
+/* Example Row (例) in the textbook */
+.shinkanzen-example-row {
+  background-color: transparent;
+  border: 1px dashed var(--color-border, #cbd5e1);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+}
+
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-example-row {
+  background-color: transparent;
+  border-color: var(--color-border, #334155);
+}
+
+/* Inline Japanese Choice Buttons: （ 話す人 ・ 友達 ） */
+.shinkanzen-inline-choice-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: 1.5px solid #64748b;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 0 3px;
+}
+
+.shinkanzen-inline-choice-btn:not(:disabled):hover {
+  background-color: #e2e8f0;
+  border-color: #0f172a;
+}
+
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-inline-choice-btn:not(:disabled):hover {
+  background-color: #334155;
+  border-color: #cbd5e1;
+}
+
+.shinkanzen-inline-choice-btn.selected {
+  background-color: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+}
+
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-inline-choice-btn.selected {
+  background-color: #9333ea;
+  border-color: #9333ea;
+}
+
+.shinkanzen-inline-choice-btn.correct {
+  background-color: #059669 !important;
+  color: #ffffff !important;
+  border-color: #047857 !important;
+}
+
+.shinkanzen-inline-choice-btn.wrong {
+  background-color: #f43f5e !important;
+  color: #ffffff !important;
+  border-color: #e11d48 !important;
+}
+
+.shinkanzen-inline-choice-btn.dimmed {
+  opacity: 0.4;
+}
+
+/* True / False [ ○ ] [ × ] Buttons */
+.shinkanzen-tf-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1.5px solid #475569;
+  background-color: transparent;
+  color: inherit;
+  font-size: 1.1rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.shinkanzen-tf-btn:not(:disabled):hover {
+  background-color: #e2e8f0;
+}
+
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-tf-btn:not(:disabled):hover {
+  background-color: #334155;
+}
+
+.shinkanzen-tf-btn.selected {
+  background-color: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+}
+
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-tf-btn.selected {
+  background-color: #9333ea;
+  border-color: #9333ea;
+}
+
+.shinkanzen-tf-btn.correct {
+  background-color: #059669 !important;
+  color: #ffffff !important;
+  border-color: #047857 !important;
+}
+
+.shinkanzen-tf-btn.wrong {
+  background-color: #f43f5e !important;
+  color: #ffffff !important;
+  border-color: #e11d48 !important;
+}
+
+.shinkanzen-tf-btn.dimmed {
+  opacity: 0.35;
+}
+
+/* Situation Group Box */
+.shinkanzen-situation-card {
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  background-color: transparent;
+  color: var(--color-text-primary, #111827);
+}
+
+:is(.dark, .theme-dark, [data-theme='dark']) .shinkanzen-situation-card {
+  border-color: var(--color-border, #334155);
+  background-color: transparent;
+  color: var(--color-text-primary, #f0f6fc);
+}
