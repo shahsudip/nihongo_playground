@@ -1,0 +1,40 @@
+const t="zenkamoku-n3-best-workbook",r="w05-d04",b=5,o=4,i="第5週",d="4日目",u="15分",e="内容理解（短文）",s="Comprehension (Short passages)",n="つぎの（1）から（4）の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",a=[{type:"short_passage",title:"(1)",passageIntro:"みどり体育館の入口に、このお知らせがはってある。",passage:`<div class="border-2 border-gray-600 dark:border-gray-400 p-6 md:p-8 max-w-2xl mx-auto rounded-sm bg-amber-50/20 dark:bg-slate-900/60 font-sans leading-loose text-black dark:text-white shadow-sm">
+  <div class="text-center font-bold text-lg mb-6">みどり体育館 ご<ruby>利用<rt>りよう</rt></ruby><ruby>者<rt>しゃ</rt></ruby>の<ruby>皆様<rt>みなさま</rt></ruby></div>
+  <div class="leading-[2.2] text-[16px] mb-6 indent-4">いつもご利用ありがとうございます。<ruby>水道<rt>すいどう</rt></ruby><ruby>管<rt>かん</rt></ruby>の<ruby>修理<rt>しゅうり</rt></ruby>のため、2021年6月20日から7月10日まで、みどり体育館はお休みとなります。ご不便をおかけしますが、他の体育館のご利用をお願いいたします。予定されている運動教室は以下の通り、場所が<ruby>変更<rt>へんこう</rt></ruby>となりますので、ご注意ください。</div>
+  <div class="space-y-3 mb-8 text-[15px] pl-2 md:pl-4">
+    <div class="flex items-center gap-3">
+      <span>・月曜日 17時～18時　こどもダンス教室</span>
+      <span>➡</span>
+      <span class="font-medium">市立第2小学校体育館</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <span>・木曜日 10時～11時　<ruby>健康<rt>けんこう</rt></ruby><ruby>体操<rt>たいそう</rt></ruby>教室</span>
+      <span>➡</span>
+      <span class="font-medium">中央体育館</span>
+    </div>
+  </div>
+  <div class="text-right font-medium text-[16px]">柳原市 みどり体育館</div>
+</div>`,questions:[{number:1,stem:"このお知らせの内容として正しいものはどれか。",options:["1. こどもダンス教室は体育館の修理中、休みになる。","2. みどり体育館が休みの間、他の体育館も休みになる。","3. 運動教室がない時間は、みどり体育館を自由に使うことができる。","4. みどり体育館の修理中、運動教室は別の場所で行われる。"],correct:4,correctOption:"4. みどり体育館の修理中、運動教室は別の場所で行われる。"}]},{type:"short_passage",title:"(2)",passageIntro:"<ruby>娘<rt>むすめ</rt></ruby>がうちに帰ると、テーブルの上に母親からのメモが置いてあった。",passage:`<div class="border-2 border-gray-600 dark:border-gray-400 p-6 md:p-8 max-w-2xl mx-auto rounded-sm bg-amber-50/20 dark:bg-slate-900/60 font-serif leading-loose text-black dark:text-white shadow-sm">
+  <div class="mb-4 font-bold text-lg">いろはちゃんへ</div>
+  <div class="leading-[2.2] whitespace-pre-wrap text-[16px]">おかえりなさい。今日の学校は楽しかった？
+お母さんは今日会議でいつもより<ruby>遅<rt>おそ</rt></ruby>くなります。晩ご飯は温めるだけにしてあるから、もしお母さんが帰る前におなかがすいたら、待たずに温めて食べてね。
+今日はゆう<ruby>太<rt>た</rt></ruby>くんのうちに遊びに行くと言っていたけど、行くなら暗くならないうちに帰ってきてね。
+それから、お母さんが帰ってくる前に宿題をすること。
+明日おじいちゃんとおばあちゃんが遊びに来るから、今夜<ruby>一緒<rt>いっしょ</rt></ruby>に部屋を片付けようね。</div>
+  <div class="text-right mt-6 leading-relaxed">
+    <div class="font-bold text-lg">お母さんより</div>
+  </div>
+</div>`,questions:[{number:1,stem:"母親が、自分が帰ってくるまでに娘に必ずしてほしいことは何か。",options:["1. 晩ご飯を温める。","2. 友達のうちに行く。","3. 宿題をする。","4. 部屋を片付ける。"],correct:3,correctOption:"3. 宿題をする。"}]},{type:"short_passage",title:"(3)",passage:`<div class="speed-master-lined-paper">
+  ニュースによると、高い音が聞こえにくいという若い日本人が増えているそうだ。年を取ると<ruby>誰<rt>だれ</rt></ruby>でも高い音は聞こえにくくなるのだが、その<ruby>症状<rt>しょうじょう</rt></ruby>が今、特に若い女性に多く見られるようになっているとのことだ。スマートフォンの使用やオンライン会議が増えるにつれ、イヤホンをつける時間が長くなっている。こうした<ruby>習慣<rt>しゅうかん</rt></ruby>が耳に悪い<ruby>影響<rt>えいきょう</rt></ruby>を与えている可能性がある。専門家は、イヤホンを長時間つけないことや、音量をあまり上げないこと、できればスピーカーで聞くことを<ruby>勧<rt>すす</rt></ruby>めている。
+</div>
+<div class="mt-3 text-xs text-gray-500 dark:text-gray-400">
+  （注）オンライン会議：インターネットを使った会議
+</div>`,questions:[{number:1,stem:"この文章の内容と合っているものはどれか。",options:["1. 日本人は年齢や性別を問わず、高い音が聞こえにくくなっている。","2. 女性は年を取ると、高い音が聞こえにくくなるという特徴がある。","3. 長時間イヤホンから大きな音を聞くことは、耳にとってよくない。","4. 耳が悪い人は、スマートフォンの使用やオンライン会議をしないほうがよい。"],correct:3,correctOption:"3. 長時間イヤホンから大きな音を聞くことは、耳にとってよくない。"}]},{type:"short_passage",title:"(4)",passage:`<div class="speed-master-lined-paper">
+  言葉はプラスのエネルギーとマイナスのエネルギーを持っているそうです。<br/>
+　<ruby>例<rt>たと</rt></ruby>えば、「ありがとう」や「大好き」といったプラスの言葉を日常的に使っていると、うれしいことが起きたり、ほしいものが手に入ったりすると言われています。反対に「<ruby>面倒<rt>めんどう</rt></ruby>だ」や「<ruby>疲<rt>つか</rt></ruby>れた」といったマイナスの言葉を<ruby>習慣<rt>しゅうかん</rt></ruby><ruby>的<rt>てき</rt></ruby>に使っていると、気持ちも考え方も暗くなり、周囲の人を<ruby>嫌<rt>いや</rt></ruby>な気持ちにしてしまうというのです。<br/>
+　それなら、例えば、<ruby>忙<rt>いそが</rt></ruby>しかった日も「<ruby>疲<rt>つか</rt></ruby>れた」という代わりに「今日もよくやった」と言ったほうが、人生が楽しくなるのではないでしょうか。
+</div>
+<div class="mt-3 text-xs text-gray-500 dark:text-gray-400">
+  （注1）プラス：ここでは、いいという意味<br/>
+  （注2）マイナス：ここでは、よくないという意味
+</div>`,questions:[{number:1,stem:"それとは、何か。",options:["1. 日本語には不思議な力を持つ言葉があるということ","2. プラスの言葉を使い続ければ、必ず夢は本当になるということ","3. 使う言葉によって気持ちや生活がよくも悪くもなるということ","4. 習慣的に使う言葉が、周囲の人の気分を悪くしてしまうということ"],correct:3,correctOption:"3. 使う言葉によって気持ちや生活がよくも悪くもなるということ"}]}],y={bookId:t,chapterId:r,week:5,day:4,weekTitle:"第5週",dayTitle:"4日目",targetTime:"15分",sectionTitle:e,sectionTitleEn:s,instruction:n,subSections:a};export{t as bookId,r as chapterId,o as day,d as dayTitle,y as default,n as instruction,e as sectionTitle,s as sectionTitleEn,a as subSections,u as targetTime,b as week,i as weekTitle};

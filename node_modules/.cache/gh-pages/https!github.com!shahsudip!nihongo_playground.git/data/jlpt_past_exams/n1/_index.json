@@ -1,0 +1,396 @@
+{
+  "level": "N1",
+  "totalExams": 12,
+  "exams": [
+    {
+      "testId": "n1_past_2024_12",
+      "level": "n1",
+      "year": 2024,
+      "month": 12,
+      "sessionName": "2024年12月 JLPT N1 本試験過去問",
+      "shortName": "2024/12",
+      "totalDurationMinutes": 170,
+      "totalQuestions": 66,
+      "hasListening": false,
+      "hasAudio": false,
+      "officialScoreMax": 180,
+      "officialPassMark": 100,
+      "sections": [
+        {
+          "id": "gengo_chisiki",
+          "title": "言語知識（文字・語彙・文法）",
+          "durationMinutes": 60,
+          "questionCount": 40
+        },
+        {
+          "id": "dokkai",
+          "title": "読解",
+          "durationMinutes": 50,
+          "questionCount": 26
+        }
+      ],
+      "id": "n1_past_2024_12"
+    },
+    {
+      "testId": "n1_past_2024_07",
+      "level": "n1",
+      "year": 2024,
+      "month": 7,
+      "sessionName": "2024年7月 JLPT N1 本試験過去問",
+      "shortName": "2024/07",
+      "totalDurationMinutes": 170,
+      "totalQuestions": 96,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 100,
+      "sections": [
+        {
+          "id": "gengo_chisiki",
+          "title": "言語知識（文字・語彙・文法）",
+          "durationMinutes": 60,
+          "questionCount": 40
+        },
+        {
+          "id": "dokkai",
+          "title": "読解",
+          "durationMinutes": 50,
+          "questionCount": 26
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 60,
+          "questionCount": 30
+        }
+      ],
+      "id": "n1_past_2024_07"
+    },
+    {
+      "testId": "n1_past_2023_07",
+      "level": "n1",
+      "year": 2023,
+      "month": 7,
+      "sessionName": "2023年7月 JLPT N1 本試験過去問",
+      "shortName": "2023/07",
+      "totalDurationMinutes": 170,
+      "totalQuestions": 96,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 100,
+      "sections": [
+        {
+          "id": "gengo_chisiki",
+          "title": "言語知識（文字・語彙・文法）",
+          "durationMinutes": 60,
+          "questionCount": 40
+        },
+        {
+          "id": "dokkai",
+          "title": "読解",
+          "durationMinutes": 50,
+          "questionCount": 26
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 60,
+          "questionCount": 30
+        }
+      ],
+      "id": "n1_past_2023_07"
+    },
+    {
+      "testId": "n1_past_2022_12",
+      "level": "n1",
+      "year": 2022,
+      "month": 12,
+      "sessionName": "2022年12月 JLPT N1 本試験過去問",
+      "shortName": "2022/12",
+      "totalDurationMinutes": 170,
+      "totalQuestions": 96,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 100,
+      "sections": [
+        {
+          "id": "gengo_chisiki",
+          "title": "言語知識（文字・語彙・文法）",
+          "durationMinutes": 60,
+          "questionCount": 40
+        },
+        {
+          "id": "dokkai",
+          "title": "読解",
+          "durationMinutes": 50,
+          "questionCount": 26
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 60,
+          "questionCount": 30
+        }
+      ],
+      "id": "n1_past_2022_12"
+    },
+    {
+      "testId": "n1_past_2022_07",
+      "level": "n1",
+      "year": 2022,
+      "month": 7,
+      "sessionName": "2022年7月 JLPT N1 本試験過去問",
+      "shortName": "2022/07",
+      "totalDurationMinutes": 170,
+      "totalQuestions": 103,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 100,
+      "sections": [
+        {
+          "id": "gengo_chisiki",
+          "title": "言語知識（文字・語彙・文法）",
+          "durationMinutes": 60,
+          "questionCount": 40
+        },
+        {
+          "id": "dokkai",
+          "title": "読解",
+          "durationMinutes": 50,
+          "questionCount": 28
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 60,
+          "questionCount": 35
+        }
+      ],
+      "id": "n1_past_2022_07"
+    },
+    {
+      "testId": "n1_past_2021_12",
+      "level": "n1",
+      "year": 2021,
+      "month": 12,
+      "sessionName": "2021年12月 JLPT N1 本試験過去問",
+      "shortName": "2021/12",
+      "totalDurationMinutes": 170,
+      "totalQuestions": 104,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 100,
+      "sections": [
+        {
+          "id": "gengo_chisiki",
+          "title": "言語知識（文字・語彙・文法）",
+          "durationMinutes": 60,
+          "questionCount": 40
+        },
+        {
+          "id": "dokkai",
+          "title": "読解",
+          "durationMinutes": 50,
+          "questionCount": 29
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 60,
+          "questionCount": 35
+        }
+      ],
+      "id": "n1_past_2021_12"
+    },
+    {
+      "testId": "n1_past_2021_07",
+      "level": "n1",
+      "year": 2021,
+      "month": 7,
+      "sessionName": "2021年7月 JLPT N1 本試験過去問",
+      "shortName": "2021/07",
+      "totalDurationMinutes": 170,
+      "totalQuestions": 103,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 100,
+      "sections": [
+        {
+          "id": "gengo_chisiki",
+          "title": "言語知識（文字・語彙・文法）",
+          "durationMinutes": 60,
+          "questionCount": 39
+        },
+        {
+          "id": "dokkai",
+          "title": "読解",
+          "durationMinutes": 50,
+          "questionCount": 29
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 60,
+          "questionCount": 35
+        }
+      ],
+      "id": "n1_past_2021_07"
+    },
+    {
+      "testId": "n1_past_2020_12",
+      "level": "n1",
+      "year": 2020,
+      "month": 12,
+      "sessionName": "2020年12月 JLPT N1 本試験過去問",
+      "shortName": "2020/12",
+      "totalDurationMinutes": 170,
+      "totalQuestions": 103,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 100,
+      "sections": [
+        {
+          "id": "gengo_chisiki",
+          "title": "言語知識（文字・語彙・文法）",
+          "durationMinutes": 60,
+          "questionCount": 68
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 60,
+          "questionCount": 35
+        }
+      ],
+      "id": "n1_past_2020_12"
+    },
+    {
+      "testId": "n1_past_2019_12",
+      "level": "n1",
+      "year": 2019,
+      "month": 12,
+      "sessionName": "2019年12月 JLPT N1 本試験過去問",
+      "shortName": "2019/12",
+      "totalDurationMinutes": 170,
+      "totalQuestions": 104,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 100,
+      "sections": [
+        {
+          "id": "gengo_chisiki",
+          "title": "言語知識（文字・語彙・文法）",
+          "durationMinutes": 60,
+          "questionCount": 40
+        },
+        {
+          "id": "dokkai",
+          "title": "読解",
+          "durationMinutes": 50,
+          "questionCount": 29
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 60,
+          "questionCount": 35
+        }
+      ],
+      "id": "n1_past_2019_12"
+    },
+    {
+      "testId": "n1_past_2019_07",
+      "level": "n1",
+      "year": 2019,
+      "month": 7,
+      "sessionName": "2019年7月 JLPT N1 本試験過去問",
+      "shortName": "2019/07",
+      "totalDurationMinutes": 170,
+      "totalQuestions": 104,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 100,
+      "sections": [
+        {
+          "id": "gengo_chisiki",
+          "title": "言語知識（文字・語彙・文法）",
+          "durationMinutes": 60,
+          "questionCount": 69
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 60,
+          "questionCount": 35
+        }
+      ],
+      "id": "n1_past_2019_07"
+    },
+    {
+      "testId": "n1_past_2018_12",
+      "level": "n1",
+      "year": 2018,
+      "month": 12,
+      "sessionName": "2018年12月 JLPT N1 本試験過去問",
+      "shortName": "2018/12",
+      "totalDurationMinutes": 170,
+      "totalQuestions": 105,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 100,
+      "sections": [
+        {
+          "id": "gengo_chisiki",
+          "title": "言語知識（文字・語彙・文法）",
+          "durationMinutes": 60,
+          "questionCount": 70
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 60,
+          "questionCount": 35
+        }
+      ],
+      "id": "n1_past_2018_12"
+    },
+    {
+      "testId": "n1_past_2018_07",
+      "level": "n1",
+      "year": 2018,
+      "month": 7,
+      "sessionName": "2018年7月 JLPT N1 本試験過去問",
+      "shortName": "2018/07",
+      "totalDurationMinutes": 170,
+      "totalQuestions": 105,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 100,
+      "sections": [
+        {
+          "id": "gengo_chisiki",
+          "title": "言語知識（文字・語彙・文法）",
+          "durationMinutes": 60,
+          "questionCount": 70
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 60,
+          "questionCount": 35
+        }
+      ],
+      "id": "n1_past_2018_07"
+    }
+  ]
+}
