@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Firestore Sync - JLPT N3 15 Practice Sets</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 32px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+    h1 {
+      font-size: 22px;
+      margin-top: 0;
+      color: #38bdf8;
+    }
+    p {
+      color: #94a3b8;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .badge {
+      display: inline-block;
+      background: #0284c7;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    button {
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      color: white;
+      border: none;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 20px;
+      transition: opacity 0.2s;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    #status {
+      margin-top: 20px;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      display: none;
+      word-break: break-all;
+    }
+    .success {
+      background: rgba(16, 185, 129, 0.2);
+      border: 1px solid #10b981;
+      color: #34d399;
+    }
+    .error {
+      background: rgba(239, 68, 68, 0.2);
+      border: 1px solid #ef4444;
+      color: #f87171;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="badge">Database Division & Sync Utility</span>
+    <h1>Sync 15 Sets (Vocab & Grammar) to Firestore</h1>
+    <p>
+      Target: <code>books/jlpt-n3-practice-sets</code><br />
+      This replaces the ~9500 flat array with <strong>15 distinct Sets</strong>, each divided into:
+    </p>
+    <ul>
+      <li><strong>vocabulary-kanji</strong> (35 questions with restored underlines and no spoiler furigana)</li>
+      <li><strong>grammar-reading</strong> (23 questions with full passage text)</li>
+    </ul>
+
+    <button id="syncBtn">⚡ Sync 15 Sets to Database Now</button>
+    <div id="status"></div>
+  </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
+    import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCWBeflLL18D730hf9lOPscL_GUQnbmLdg",
+      authDomain: "study-planner-40bc8.firebaseapp.com",
+      projectId: "study-planner-40bc8",
+      storageBucket: "study-planner-40bc8.firebasestorage.app",
+      messagingSenderId: "808543753290",
+      appId: "1:808543753290:web:6cc08ec36211fa7f7942b3",
+      measurementId: "G-8EWKV909K8"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const auth = getAuth(app);
+
+    const btn = document.getElementById('syncBtn');
+    const statusDiv = document.getElementById('status');
+
+    function showStatus(text, isError) {
+      statusDiv.style.display = 'block';
+      statusDiv.className = isError ? 'error' : 'success';
+      statusDiv.innerHTML = text;
+    }
+
+    btn.addEventListener('click', async () => {
+      btn.disabled = true;
+      btn.innerText = "Reading Clean 15 Sets Data...";
+      try {
+        // Fetch clean dataset from local app
+        const res = await fetch('/15%20practice%20sets%20to%20firebase/all_firebase_sets.json');
+        if (!res.ok) throw new Error("Could not load clean dataset: HTTP " + res.status);
+        const bookData = await res.json();
+
+        btn.innerText = `Pushing ${bookData.sets.length} Sets to Firestore...`;
+        
+        // Ensure user is signed in if needed
+        if (!auth.currentUser) {
+          try {
+            const provider = new GoogleAuthProvider();
+            await signInWithPopup(auth, provider);
+          } catch (authErr) {
+            console.log("Proceeding with existing or anonymous context:", authErr.message);
+          }
+        }
+
+        const docRef = doc(db, 'books', 'jlpt-n3-practice-sets');
+        await setDoc(docRef, bookData);
+
+        showStatus(`🎉 <strong>SUCCESS!</strong> Firestore document <code>books/jlpt-n3-practice-sets</code> has been divided into <strong>${bookData.sets.length} Sets</strong>, each with <strong>vocabulary-kanji</strong> (35 Qs) and <strong>grammar-reading</strong> (23 Qs)! Refresh your Firebase Console to confirm.`, false);
+        btn.innerText = "✅ Successfully Synced!";
+      } catch (err) {
+        console.error(err);
+        showStatus(`❌ <strong>Error:</strong> ${err.message}`, true);
+        btn.disabled = false;
+        btn.innerText = "Retry Sync";
+      }
+    });
+  </script>
+</body>
+</html>

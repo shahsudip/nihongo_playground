@@ -1,0 +1,2198 @@
+{
+  "id": "n3_past_2022_12",
+  "level": "N3",
+  "year": 2022,
+  "month": 12,
+  "sessionName": "2022年12月",
+  "title": "JLPT N3 Past Exam (2022年12月)",
+  "japaneseTitle": "日本語能力試験 N3 2022年12月 過去問",
+  "totalQuestions": 101,
+  "totalMinutes": 140,
+  "sections": [
+    {
+      "id": "vocab",
+      "title": "言語知識（文字・語彙）",
+      "durationMinutes": 30,
+      "questionCount": 35,
+      "questions": [
+        {
+          "id": "n3_past_2022_12_vocab_q1",
+          "number": 1,
+          "position": 0,
+          "mondai": 1,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">この店では、いろいろな<u>容器</u>を売っています。<br>",
+          "options": [
+            "ようぎ",
+            "ようき",
+            "どうぐ",
+            "どうく"
+          ],
+          "correct": 2,
+          "correctOption": "ようき",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q2",
+          "number": 2,
+          "position": 1,
+          "mondai": 1,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">山本さんは何と何を<u>比べた</u>んですか。<br>",
+          "options": [
+            "くらべた",
+            "ならべた",
+            "しらべた",
+            "えらべた"
+          ],
+          "correct": 1,
+          "correctOption": "くらべた",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q3",
+          "number": 3,
+          "position": 2,
+          "mondai": 1,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">書類が<u>複数</u>あるので、間違えないでください。<br>",
+          "options": [
+            "ふくす",
+            "ふうすう",
+            "ふくすう",
+            "ふうす"
+          ],
+          "correct": 3,
+          "correctOption": "ふくすう",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q4",
+          "number": 4,
+          "position": 3,
+          "mondai": 1,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">昨日病院で<u>血圧</u>を計りました。<br>",
+          "options": [
+            "けつあつ",
+            "けつやつ",
+            "ちあつ",
+            "ちやつ"
+          ],
+          "correct": 1,
+          "correctOption": "けつあつ",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q5",
+          "number": 5,
+          "position": 4,
+          "mondai": 1,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">ここから見る<u>夕日</u>はきれいだ。<br>",
+          "options": [
+            "ゆび",
+            "ゆひ",
+            "ゆうび",
+            "ゆうひ"
+          ],
+          "correct": 4,
+          "correctOption": "ゆうひ",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q6",
+          "number": 6,
+          "position": 5,
+          "mondai": 1,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">そこに一人で行くのは<u>難しい</u>と思います。<br>",
+          "options": [
+            "きびしい",
+            "めずらしい",
+            "さびしい",
+            "むずかしい"
+          ],
+          "correct": 4,
+          "correctOption": "むずかしい",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q7",
+          "number": 7,
+          "position": 6,
+          "mondai": 1,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">中村さんから出張の<span><strong>件</strong></span>でお電話がありました。<br>",
+          "options": [
+            "けい",
+            "よう",
+            "けん",
+            "よん"
+          ],
+          "correct": 3,
+          "correctOption": "けん",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q8",
+          "number": 8,
+          "position": 7,
+          "mondai": 1,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">ここを<u>横断</u>するときは気をつけてください。<br>",
+          "options": [
+            "おうざん",
+            "おうだん",
+            "きだん",
+            "きざん"
+          ],
+          "correct": 2,
+          "correctOption": "おうだん",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q9",
+          "number": 9,
+          "position": 8,
+          "mondai": 2,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">車から出て、外の空気を<u>すった</u>。<br>",
+          "options": [
+            "吹った",
+            "呼った",
+            "吸った",
+            "叫った"
+          ],
+          "correct": 3,
+          "correctOption": "吸った",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q10",
+          "number": 10,
+          "position": 9,
+          "mondai": 2,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">あしたのアルバイトは、いつもより時間が<u>みじかい</u>。<br>",
+          "options": [
+            "早い",
+            "長い",
+            "短い",
+            "遅い"
+          ],
+          "correct": 3,
+          "correctOption": "短い",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q11",
+          "number": 11,
+          "position": 10,
+          "mondai": 2,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">今日は少し、&nbsp;<u>い</u>の調子がよくない。<br>",
+          "options": [
+            "肩",
+            "胃",
+            "腰",
+            "肌"
+          ],
+          "correct": 2,
+          "correctOption": "胃",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q12",
+          "number": 12,
+          "position": 11,
+          "mondai": 2,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">その話を聞いて、みんなが<u>えがお</u>になった。<br>",
+          "options": [
+            "楽顔",
+            "悲顔",
+            "泣顔",
+            "笑顔"
+          ],
+          "correct": 4,
+          "correctOption": "笑顔",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q13",
+          "number": 13,
+          "position": 12,
+          "mondai": 2,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\"><u>こくばん</u>を見てください。<br>",
+          "options": [
+            "黒板",
+            "黒坂",
+            "告板",
+            "告坂"
+          ],
+          "correct": 1,
+          "correctOption": "黒板",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q14",
+          "number": 14,
+          "position": 13,
+          "mondai": 2,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">それは<u>いっぱんてき</u>なことだと思う。<br>",
+          "options": [
+            "一段的",
+            "一般的",
+            "一役的",
+            "一設的"
+          ],
+          "correct": 2,
+          "correctOption": "一般的",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q15",
+          "number": 15,
+          "position": 14,
+          "mondai": 3,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">田中さんは私のめいと結婚したので、私たちは(&nbsp; &nbsp; &nbsp;)にまりました。<br>",
+          "options": [
+            "夫婦",
+            "家内",
+            "親戚",
+            "兄弟"
+          ],
+          "correct": 3,
+          "correctOption": "親戚",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q16",
+          "number": 16,
+          "position": 15,
+          "mondai": 3,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">昨日は駅で、学生時代の友達に(&nbsp; &nbsp; &nbsp;)会って、びっくりした。<br>",
+          "options": [
+            "ついでに",
+            "当然",
+            "たまに",
+            "偶然"
+          ],
+          "correct": 4,
+          "correctOption": "偶然",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q17",
+          "number": 17,
+          "position": 16,
+          "mondai": 3,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">洗剤は種類が多いので、どれを買おうか(&nbsp; &nbsp; &nbsp;)しまう<br>",
+          "options": [
+            "迷って",
+            "騒いで",
+            "疑って",
+            "飽きて"
+          ],
+          "correct": 1,
+          "correctOption": "迷って",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q18",
+          "number": 18,
+          "position": 17,
+          "mondai": 3,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">足に(&nbsp; &nbsp; &nbsp;)合う靴がなかなか見つからない。<br>",
+          "options": [
+            "はっきり",
+            "ぴったり",
+            "うっかり",
+            "がっかり"
+          ],
+          "correct": 2,
+          "correctOption": "ぴったり",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q19",
+          "number": 19,
+          "position": 18,
+          "mondai": 3,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">天気がいいので、庭に洗濯物を(&nbsp; &nbsp; &nbsp;)。<br>",
+          "options": [
+            "混ぜた",
+            "揚げた",
+            "干した",
+            "こぼした"
+          ],
+          "correct": 3,
+          "correctOption": "干した",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q20",
+          "number": 20,
+          "position": 19,
+          "mondai": 3,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">今日の晩ご飯は、森さんが教えてくれた日本料理の(&nbsp; &nbsp; &nbsp;)を見て作りました。<br>",
+          "options": [
+            "メッセージ",
+            "レシピ",
+            "サイン",
+            "アナウンス"
+          ],
+          "correct": 2,
+          "correctOption": "レシピ",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q21",
+          "number": 21,
+          "position": 20,
+          "mondai": 3,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">&nbsp;映画の中に(&nbsp; &nbsp; &nbsp;)する男性が、父にそっくりだった。<br>",
+          "options": [
+            "発生",
+            "支出",
+            "掲示",
+            "登場"
+          ],
+          "correct": 4,
+          "correctOption": "登場",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q22",
+          "number": 22,
+          "position": 21,
+          "mondai": 3,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">大勢の前で歌うのは初めてだったので、(&nbsp; &nbsp; &nbsp;)した。<br>",
+          "options": [
+            "どきどき",
+            "だぶだぶ",
+            "ぐうぐう",
+            "ざあざあ"
+          ],
+          "correct": 1,
+          "correctOption": "どきどき",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q23",
+          "number": 23,
+          "position": 22,
+          "mondai": 3,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">ホテルで海側の部屋を(&nbsp; &nbsp; &nbsp;)したが、空いていなかった。<br>",
+          "options": [
+            "納得",
+            "承知",
+            "希望",
+            "準備"
+          ],
+          "correct": 3,
+          "correctOption": "希望",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q24",
+          "number": 24,
+          "position": 23,
+          "mondai": 3,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">夜になると、隣の家の犬が(&nbsp; &nbsp; &nbsp;)ので、うるさくてなかなか眠れない。<br>",
+          "options": [
+            "ほえる",
+            "ひびく",
+            "しゃべる",
+            "どなる"
+          ],
+          "correct": 1,
+          "correctOption": "ほえる",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q25",
+          "number": 25,
+          "position": 24,
+          "mondai": 3,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">この道は狭いので、前の車を(&nbsp; &nbsp; &nbsp;)のは危険ですよ。<br>",
+          "options": [
+            "飛び出す",
+            "追い越す",
+            "申し込む",
+            "取り替える"
+          ],
+          "correct": 2,
+          "correctOption": "追い越す",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q26",
+          "number": 26,
+          "position": 25,
+          "mondai": 4,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">もう少し時間を<u>あたえよう</u>と思う 。<br>",
+          "options": [
+            "あげよう",
+            "もらおう",
+            "作ろう",
+            "使おう"
+          ],
+          "correct": 1,
+          "correctOption": "あげよう",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q27",
+          "number": 27,
+          "position": 26,
+          "mondai": 4,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">ここは車が<u>ずいぶん</u>多いですね。<br>",
+          "options": [
+            "最も",
+            "非常に",
+            "まあまあ",
+            "やっぱり"
+          ],
+          "correct": 2,
+          "correctOption": "非常に",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q28",
+          "number": 28,
+          "position": 27,
+          "mondai": 4,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">荷物は、<u>指定</u>の場所に置いてください 。<br>",
+          "options": [
+            "決められた",
+            "空いている",
+            "近くの",
+            "ほかの"
+          ],
+          "correct": 1,
+          "correctOption": "決められた",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q29",
+          "number": 29,
+          "position": 28,
+          "mondai": 4,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">山田さんの話を聞くまでは<u>不安</u>だった。<br>",
+          "options": [
+            "賛成",
+            "大変",
+            "心配",
+            "反対"
+          ],
+          "correct": 3,
+          "correctOption": "心配",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q30",
+          "number": 30,
+          "position": 29,
+          "mondai": 4,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\"><u>スケジュール</u>は川井さんに聞いてください 。<br>",
+          "options": [
+            "行き方",
+            "理由",
+            "やり方",
+            "予定"
+          ],
+          "correct": 4,
+          "correctOption": "予定",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q31",
+          "number": 31,
+          "position": 30,
+          "mondai": 5,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\"><u>発展</u><br>",
+          "options": [
+            "毎朝ジョギングを続けたら、健康が発展するだろう。",
+            "テレビで紹介されてから、この店は客の数が発展した。",
+            "林さんは中学校のとき、成績が急に発展したそうだ 。",
+            "この町は歴史的な建物が多く、観光地として発展してきた。"
+          ],
+          "correct": 4,
+          "correctOption": "この町は歴史的な建物が多く、観光地として発展してきた。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q32",
+          "number": 32,
+          "position": 31,
+          "mondai": 5,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\"><u>だく</u><br>",
+          "options": [
+            "朝作ったお弁当を大きめのハンカチでだいてかばんに入れた 。",
+            "生まれた子を初めてだいたとき、とても小さくて軽いと感じた 。",
+            "けがをしないように、包丁をしっかりだいて魚を切った。",
+            "引っ越しのとき運びやすいように、本や雑誌をひもでだいた。"
+          ],
+          "correct": 2,
+          "correctOption": "生まれた子を初めてだいたとき、とても小さくて軽いと感じた 。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q33",
+          "number": 33,
+          "position": 32,
+          "mondai": 5,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\"><u>原料</u><br>",
+          "options": [
+            "ここから見える景色を原料にして、抽象的な絵をかくつもりだ。",
+            "大学を卒業したら、留学の経験を原料にして仕事がしたい。",
+            "このドラマは、海外の小説を原料にしたそうです。",
+            "牛乳を原料にして、チーズやバターが作られます。"
+          ],
+          "correct": 4,
+          "correctOption": "牛乳を原料にして、チーズやバターが作られます。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q34",
+          "number": 34,
+          "position": 33,
+          "mondai": 5,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\"><u>異常</u><br>",
+          "options": [
+            "今年の夏は異常な暑さで、エアコンがよく売れたそうだ。",
+            "その色は見えにくいので、赤などの異常な色を使ってください。",
+            "妹の作文は上手に書けていたが、異常な漢字が一つあった。",
+            "姉の靴は、私とは異常なサイズなので、借りることができない。"
+          ],
+          "correct": 1,
+          "correctOption": "今年の夏は異常な暑さで、エアコンがよく売れたそうだ。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_vocab_q35",
+          "number": 35,
+          "position": 34,
+          "mondai": 5,
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\"><u>重なる</u><br>",
+          "options": [
+            "A銀行とB銀行が重なって、新しい銀行ができました。",
+            "私たちの研究会に、来月から新しい仲間が重なります。",
+            "子どもの運動会が大切な会議と重なった、見に行けない。",
+            "貯金がたくさん重なったら、車を買おうと思っている。"
+          ],
+          "correct": 3,
+          "correctOption": "子どもの運動会が大切な会議と重なった、見に行けない。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar_reading",
+      "title": "言語知識（文法）・読解",
+      "durationMinutes": 70,
+      "questionCount": 38,
+      "questions": [
+        {
+          "id": "n3_past_2022_12_grammar_reading_q1",
+          "number": 1,
+          "position": 0,
+          "mondai": 1,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">（教室で）<br>アン「先生、スピ—チ大会の申込書を書いてきました。書き方がよくわからないところがあった んですが、 ここの書き方はこれ(&nbsp; &nbsp; )大丈夫でしょうか。」<br>",
+          "options": [
+            "に",
+            "で",
+            "と",
+            "が"
+          ],
+          "correct": 2,
+          "correctOption": "で",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q2",
+          "number": 2,
+          "position": 1,
+          "mondai": 1,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">（北山市のホームページで）<br>7 月 25 日と 26 日の 2 日間、北山公園(&nbsp; &nbsp; &nbsp;)夏祭りが行われました 。<br>",
+          "options": [
+            "において",
+            "にとって",
+            "に対して",
+            "について"
+          ],
+          "correct": 1,
+          "correctOption": "において",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q3",
+          "number": 3,
+          "position": 2,
+          "mondai": 1,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">私は、誰(&nbsp; &nbsp; &nbsp;)親切で優しい兄をとても尊敬している。<br>",
+          "options": [
+            "にだけ",
+            "からだけ",
+            "にでも",
+            "からでも"
+          ],
+          "correct": 3,
+          "correctOption": "にでも",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q4",
+          "number": 4,
+          "position": 3,
+          "mondai": 1,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">（教室で）<br>先生「来週の授業でこのプリントを使いますから、(&nbsp; &nbsp; &nbsp;)持ってきてください。」<br>",
+          "options": [
+            "全く",
+            "非常に",
+            "決して",
+            "必ず"
+          ],
+          "correct": 4,
+          "correctOption": "必ず",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q5",
+          "number": 5,
+          "position": 4,
+          "mondai": 1,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">友達の結婚式に招待されたが、出張があって(&nbsp; &nbsp; &nbsp;)行けない。<br>",
+          "options": [
+            "どうしても",
+            "それほど",
+            "せっかく",
+            "つい"
+          ],
+          "correct": 1,
+          "correctOption": "どうしても",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q6",
+          "number": 6,
+          "position": 5,
+          "mondai": 1,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">私の応援している野球選手が、肩のけがの(&nbsp; &nbsp; &nbsp;)、しばらく試合に出られなくなっ た。とても心配だ。<br>",
+          "options": [
+            "途中で",
+            "&nbsp;一方で",
+            "ように",
+            "ために"
+          ],
+          "correct": 4,
+          "correctOption": "ために",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q7",
+          "number": 7,
+          "position": 6,
+          "mondai": 1,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">歯医者「歯を(&nbsp; &nbsp; &nbsp;)寝てしまうと、虫歯になりやすくなります。寝る前にきちんと磨くようにしてください。」<br>",
+          "options": [
+            "磨いて",
+            "磨かずに",
+            "磨くたび",
+            "磨かなくて"
+          ],
+          "correct": 2,
+          "correctOption": "磨かずに",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q8",
+          "number": 8,
+          "position": 7,
+          "mondai": 1,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">（電話で）<br>中川「もしもし。林さん、今ちょっといい？J<br>林「あ、ごめん。これから(&nbsp; &nbsp; &nbsp;)、あとでこっちから電話するね。」<br>",
+          "options": [
+            "出かけるところなのに",
+            "出かけているところなのに",
+            "出かけるところだから",
+            "出かけているところだから"
+          ],
+          "correct": 3,
+          "correctOption": "出かけるところだから",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q9",
+          "number": 9,
+          "position": 8,
+          "mondai": 1,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">（道で）<br>A「すみません。東図書館を探しているんですが……。」<br>B 「ああ、東図書館ですね。この坂を(&nbsp; &nbsp; &nbsp;)郵便局がありますから、その角を右に曲がってください。右に曲がってすぐ図書館があります。」<br>",
+          "options": [
+            "のぼっていくと",
+            "のぼっていきながら",
+            "のぼってくるには",
+            "のぼってくるとき"
+          ],
+          "correct": 1,
+          "correctOption": "のぼっていくと",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q10",
+          "number": 10,
+          "position": 9,
+          "mondai": 1,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">A「さくら駅の近くに新しくできたラーメン屋、(&nbsp; &nbsp; &nbsp;)？」<br>B 「ううん、知らない 。」<br>A「昨日初めて行ったんだけど、すごくおいしかったよ。」<br>",
+          "options": [
+            "知っとく",
+            "知っちゃう",
+            "知ってく",
+            "知ってる"
+          ],
+          "correct": 4,
+          "correctOption": "知ってる",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q11",
+          "number": 11,
+          "position": 10,
+          "mondai": 1,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">（電話で）<br>山下「はい、X建設営業課、山下です。」<br>石田「ABC銀行の石田と申しますが、中川さんか林さんはいらっしゃいますか。」<br>山下「はい、中川が(&nbsp; &nbsp; &nbsp;)ので、今、代わります。」<br>",
+          "options": [
+            "いたします",
+            "おります",
+            "いただきます",
+            "ございます"
+          ],
+          "correct": 1,
+          "correctOption": "いたします",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q12",
+          "number": 12,
+          "position": 11,
+          "mondai": 1,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">私は美術館が好きで、今までいろいろな美術館に行った。国内の美術館が多い が、海外の美術館に(&nbsp; &nbsp; &nbsp;)。<br>",
+          "options": [
+            "行ったこともある",
+            "行ったことはない",
+            "行くこともできる",
+            "行くこともできない"
+          ],
+          "correct": 2,
+          "correctOption": "行ったことはない",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q13",
+          "number": 13,
+          "position": 12,
+          "mondai": 1,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">（靴屋で）<br>客「すみません。この靴、(&nbsp; &nbsp; &nbsp;)。」<br>店員「どうぞ。サイズはこちらでよろしいですか。」<br>客 「はい。」<br>",
+          "options": [
+            "履いてもらえませんか",
+            "履かないんですか",
+            "履いてみてもいいですか",
+            "履くことになりますか"
+          ],
+          "correct": 3,
+          "correctOption": "履いてみてもいいですか",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q14",
+          "number": 14,
+          "position": 13,
+          "mondai": 2,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">留学している息子___ ___ _★_ ___ 毎日楽しく過ごしていると書かれていて安心した。<br>",
+          "options": [
+            "メール",
+            "から",
+            "に",
+            "の"
+          ],
+          "correct": 1,
+          "correctOption": "メール",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q15",
+          "number": 15,
+          "position": 14,
+          "mondai": 2,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">来週から 1 か月間、 出張で東京に行く。東京には ___ ___ _★_ ___ 一緒に 食事でもしたいと思う。<br>",
+          "options": [
+            "いるので",
+            "いる間に",
+            "友達が",
+            "東京に"
+          ],
+          "correct": 4,
+          "correctOption": "東京に",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q16",
+          "number": 16,
+          "position": 15,
+          "mondai": 2,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">A バイオリンが ___ ___ _★_ ___ こんなに面白い楽器はないと感じる。<br>",
+          "options": [
+            "年前に習い始めたのだが",
+            "&nbsp;弾くほど",
+            "弾けば",
+            "弾けるようになりたくて"
+          ],
+          "correct": 3,
+          "correctOption": "弾けば",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q17",
+          "number": 17,
+          "position": 16,
+          "mondai": 2,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">A「お誕生日おめでとう。これ、プレゼントだよ。」&nbsp;<p dir=\"ltr\" style=\"text-align: left;\">B 「わあ、かばんだ。ちょうど ___ ___ _★_ ___ んだ。ありがとう 。」<br>",
+          "options": [
+            "こういう色の",
+            "欲しい",
+            "と思っていた",
+            "かばんが"
+          ],
+          "correct": 2,
+          "correctOption": "欲しい",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q18",
+          "number": 18,
+          "position": 17,
+          "mondai": 2,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">都会と田舎には違うところも多いが、 どちらも、人が働き 、___ ___ _★_ ___<br>",
+          "options": [
+            "という点で",
+            "違いは",
+            "生活している",
+            "ない"
+          ],
+          "correct": 2,
+          "correctOption": "違いは",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q19",
+          "number": 19,
+          "position": 18,
+          "mondai": 3,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">【19】<br>",
+          "options": [
+            "温泉",
+            "あの温泉",
+            "そんな温泉",
+            "これらの温泉"
+          ],
+          "correct": 1,
+          "correctOption": "温泉",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q20",
+          "number": 20,
+          "position": 19,
+          "mondai": 3,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">【20】<br>",
+          "options": [
+            "まで",
+            "しか",
+            "は",
+            "が"
+          ],
+          "correct": 4,
+          "correctOption": "が",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q21",
+          "number": 21,
+          "position": 20,
+          "mondai": 3,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">【21】<br>",
+          "options": [
+            "落ちたままです",
+            "落ちたばかりです",
+            "落ちていたそうです",
+            "落ちていたことです"
+          ],
+          "correct": 3,
+          "correctOption": "落ちていたそうです",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q22",
+          "number": 22,
+          "position": 21,
+          "mondai": 3,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">【22】<br>",
+          "options": [
+            "なっただろうと思います",
+            "なるのだと感じました",
+            "なったのではないでしょうか",
+            "なるでしょうか"
+          ],
+          "correct": 3,
+          "correctOption": "なったのではないでしょうか",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q23",
+          "number": 23,
+          "position": 22,
+          "mondai": 4,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\"><div>（１）<br>（会社で）コピー機の上に、この紙が置いてある。<br><br>営業課の皆さんヘ<br><br>営業課のコピー機は今、故障していて使えません。修理を頼んでいますが、明日の午後まで来られないそうです。急ぎでないコピーは、明日まで待ってください。<br><br>今日中にコピーしなければならない書類がある場合は、会計課のコピー機を使用してください。50枚以上コピーをする場合は、先に会計課に連絡をしておく必要がありますので、コピーをする前に中島に知らせてください。",
+          "options": [
+            "営業課でコピーをする。中島さんに言う必要はない。",
+            "会計課でコピーをする。中島さんに言う必要はない。",
+            "中島さんに言ってから、営業課でコピーをする。",
+            "中島さんに言ってから、会計課でコピーをする。"
+          ],
+          "correct": 2,
+          "correctOption": "会計課でコピーをする。中島さんに言う必要はない。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q24",
+          "number": 24,
+          "position": 23,
+          "mondai": 4,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\"><div>（２）<br>6歳の娘がボールを上手に投げられるようになりたいと言う。私は娘の投げ方の悪い点をいろいろと説明して、何回もボールを投げさせているが、娘はなかなかうまくならない。<br><br>昨日、あるテレビ番組でボール投げについて取り上げていた。番組では、子供に大きさや重さの違うさまざまなボールを投げさせたり、紙飛行機を飛ばさせたりして、ちょうどいい力の入れ方を体で覚えさせていた。娘に必要なのは、これかもしれない。次は、このやり方を娘にやらせてみようと思う。",
+          "options": [
+            "上手な投げ方についての「私」の説明が下手だったから。",
+            "繰り返し同じ投げ方で投げる練習をさせていなかったから。",
+            "実際に「私」 が上手に投げているところを見せていなかったから。",
+            "ちょうどいい力の入れ方を体で覚える練習をさせていなかったから。"
+          ],
+          "correct": 4,
+          "correctOption": "ちょうどいい力の入れ方を体で覚える練習をさせていなかったから。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q25",
+          "number": 25,
+          "position": 24,
+          "mondai": 4,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\"><div>（３）<br>これは、ある店が客の寺坂さんに書いたメールである。<br>寺坂ゆき様<br><br>いつもご利用いただき、ありがとうございます。<br>2月4日にいただいたご注文についてのご連絡です。寺坂様がホームページからご注文になった革製財布（茶色）ですが、直前の電話注文で品切れになっておりました。大変申し訳ございません。お届けできるのは3月上旬になってしまいますが、いかがいたしましょうか。キャンセルもお受けいたしますので、ご希望をお聞かせください。<br><br>なお、同じ商品の違う色でしたら、すぐにお送りできます。あわせてご検討ください。<br>財布専門店タキグチ 広田",
+          "options": [
+            "商品が品切れになったから、3月上旬に送る。",
+            "商品が品切れになったから、3月上旬にもう一度注文してほしい。",
+            "商品が品切れで、届けるまでに時間がかかるから、どうしたいか知らせてほしい。",
+            "注文と違う色の商品を送ってしまったから、正しい色のものをすぐに送る。"
+          ],
+          "correct": 3,
+          "correctOption": "商品が品切れで、届けるまでに時間がかかるから、どうしたいか知らせてほしい。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q26",
+          "number": 26,
+          "position": 25,
+          "mondai": 4,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\"><div>（４）<br>私の家には、履かなくなった古い靴がたくさんある。捨てようかと思っていたとき、ある靴屋のちらしを見た。いらない靴を店に持っていけば、その店で使える割引券と交換してくれるそうだ。回収した靴を燃やす（注）ときに出る熱が、電気を作るためのエネルギーに利用できて、環境にいいとも書かれていた。私一人が持っていっても、環境にそんなに大きい影響はないと思うが、新しい靴が安く買えるなら、古い靴は捨てないで店に持っていこうと思った。<br><br>（注） 燃やす： 焼く",
+          "options": [
+            "古い靴を割引券と交換して、新しい靴を買うときに使いたいと思ったから。",
+            "古い靴を売ってお金をもらい、そのお金で新しい靴を買いたいと思ったから。",
+            "古い靴をきれいに直してもらって、もう一度履きたいと思ったから。",
+            "古い靴を利用してもらって、環境をよくしたいと思ったから。"
+          ],
+          "correct": 1,
+          "correctOption": "古い靴を割引券と交換して、新しい靴を買うときに使いたいと思ったから。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q27",
+          "number": 27,
+          "position": 26,
+          "mondai": 5,
+          "context": "（１）先日、押し入れから父の古いラジオが出てきた。スイッチを入れてみたら、①懐かしい声が流れてきた。高校生のころ、大好きだったラジオの音楽番組のアナウンサーだった。私はつい番組を聞き続けてしまった。あのころ私はよくラジオを聞いていた。ラジオのおかげで、勉強をしながらでも、ニュースや最新の音楽などさまざまな情報を知ることができた。今考えると、私にとってラジオはテレビよりも身近で便利なものだった。今はラジオを聞く人が減っているそうだ。インターネットなどで、好きなときに知りたいニュースが見られるし、聞きたい音楽も聞けるようになったのだから、当然だ。しかし、考えてみれば、車を運転する人や畑で仕事をする人などは、今でもよくラジオを聞いている。ほかのことをしながらでも、さまざまな情報が手に入るというラジオにしかない良さ、便利さがあるのだ。私も掃除や料理をするようなときには、②また、ラジオを聞こうと思った。",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">①<u>懐かしい声</u>とあるが、何か。<br>",
+          "options": [
+            "「私」が高校生のころの父の声。",
+            "「私」高校生のころの自分の声。",
+            "「私」が高校生のころ大好きだった歌手の声。",
+            "「私」が高校生のころ聞いていたアナウンサーの声。"
+          ],
+          "correct": 4,
+          "correctOption": "「私」が高校生のころ聞いていたアナウンサーの声。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q28",
+          "number": 28,
+          "position": 27,
+          "mondai": 5,
+          "context": "（１）先日、押し入れから父の古いラジオが出てきた。スイッチを入れてみたら、①懐かしい声が流れてきた。高校生のころ、大好きだったラジオの音楽番組のアナウンサーだった。私はつい番組を聞き続けてしまった。あのころ私はよくラジオを聞いていた。ラジオのおかげで、勉強をしながらでも、ニュースや最新の音楽などさまざまな情報を知ることができた。今考えると、私にとってラジオはテレビよりも身近で便利なものだった。今はラジオを聞く人が減っているそうだ。インターネットなどで、好きなときに知りたいニュースが見られるし、聞きたい音楽も聞けるようになったのだから、当然だ。しかし、考えてみれば、車を運転する人や畑で仕事をする人などは、今でもよくラジオを聞いている。ほかのことをしながらでも、さまざまな情報が手に入るというラジオにしかない良さ、便利さがあるのだ。私も掃除や料理をするようなときには、②また、ラジオを聞こうと思った。",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">②<u>また、ラジオを聞こうと思った</u>のはどうしてか。<br>",
+          "options": [
+            "ラジオは、テレビより小さくて身近に置くことができるから",
+            "ラジオは、インターネットより多くのことを教えてくれるから",
+            "ラジオは、新しいことだけでなく古いことも伝えてくれるから",
+            "ラジオは、何かをしながらでも、いろいろなことを知ることができるから"
+          ],
+          "correct": 4,
+          "correctOption": "ラジオは、何かをしながらでも、いろいろなことを知ることができるから",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q29",
+          "number": 29,
+          "position": 28,
+          "mondai": 5,
+          "context": "（１）先日、押し入れから父の古いラジオが出てきた。スイッチを入れてみたら、①懐かしい声が流れてきた。高校生のころ、大好きだったラジオの音楽番組のアナウンサーだった。私はつい番組を聞き続けてしまった。あのころ私はよくラジオを聞いていた。ラジオのおかげで、勉強をしながらでも、ニュースや最新の音楽などさまざまな情報を知ることができた。今考えると、私にとってラジオはテレビよりも身近で便利なものだった。今はラジオを聞く人が減っているそうだ。インターネットなどで、好きなときに知りたいニュースが見られるし、聞きたい音楽も聞けるようになったのだから、当然だ。しかし、考えてみれば、車を運転する人や畑で仕事をする人などは、今でもよくラジオを聞いている。ほかのことをしながらでも、さまざまな情報が手に入るというラジオにしかない良さ、便利さがあるのだ。私も掃除や料理をするようなときには、②また、ラジオを聞こうと思った。",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">この文章のテーマは何か。<br>",
+          "options": [
+            "ラジオ番組の楽しさ。",
+            "ラジオの良さ。",
+            "ラジオの歴史の長さ。",
+            "ラジオの使い方の工夫。"
+          ],
+          "correct": 2,
+          "correctOption": "ラジオの良さ。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q30",
+          "number": 30,
+          "position": 29,
+          "mondai": 5,
+          "context": "（２）私たち夫婦の夢は、田舎に引っ越して農業を始めることです。そこで先日、ある町が東京で聞いた①説明会に参加してみました。その町では人口が減ったので、町民を募集するために説明会を聞いています。もう100人以上が移り住んでいて、多くの人は楽しく生活しています。しかし、うまくいかなかった例もあるそうです。そのような例には②共通点があると思いました。ある人は、田舎の生活にあこがれて引っ越して来ましたが、すぐに退屈な毎日が嫌になったそうです。農業がしたくて来たのにあまりにも大変で、都会に戻ってしまった例もありました。毎月の町内の掃除など、都会では経験したことがなかったことが意外にめんどうくさいと感じる人もいるそうです。説明会では、このような例も知ってから検討してほしいと言っていました。成功例ばかり見ていた私たちは、考えが甘かったようです。でも、夢はあきらめたくないので、よく調べて、計画を立てて、実行できるように頑張りたいと思います。",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">町が①<u>説明会</u>を開いた目的は何か。<br>",
+          "options": [
+            "町に引っ越して来てくれる人を募集すること。",
+            "町に引っ越して来る人を助けてくれる町民を募集すること。",
+            "町の農業について、アドバイスをしてくれる専門家を募集すること。",
+            "町の人口を増やすにはどうしたらいいか、考えてくれる人を募集すること。"
+          ],
+          "correct": 1,
+          "correctOption": "町に引っ越して来てくれる人を募集すること。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q31",
+          "number": 31,
+          "position": 30,
+          "mondai": 5,
+          "context": "（２）私たち夫婦の夢は、田舎に引っ越して農業を始めることです。そこで先日、ある町が東京で聞いた①説明会に参加してみました。その町では人口が減ったので、町民を募集するために説明会を聞いています。もう100人以上が移り住んでいて、多くの人は楽しく生活しています。しかし、うまくいかなかった例もあるそうです。そのような例には②共通点があると思いました。ある人は、田舎の生活にあこがれて引っ越して来ましたが、すぐに退屈な毎日が嫌になったそうです。農業がしたくて来たのにあまりにも大変で、都会に戻ってしまった例もありました。毎月の町内の掃除など、都会では経験したことがなかったことが意外にめんどうくさいと感じる人もいるそうです。説明会では、このような例も知ってから検討してほしいと言っていました。成功例ばかり見ていた私たちは、考えが甘かったようです。でも、夢はあきらめたくないので、よく調べて、計画を立てて、実行できるように頑張りたいと思います。",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">②<u>共通点</u>とあるが、それはどのような点だと考えられるか。<br>",
+          "options": [
+            "期待していた生活ができていないが、我慢して生活している点。",
+            "期待していた生活ができるようになり、楽しく生活ができている点。",
+            "期待していた生活と実際の生活が同じではなかったが、満足している点。",
+            "期待していた生活と実際の生活が違い、不満を感じた点。"
+          ],
+          "correct": 4,
+          "correctOption": "期待していた生活と実際の生活が違い、不満を感じた点。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q32",
+          "number": 32,
+          "position": 31,
+          "mondai": 5,
+          "context": "（２）私たち夫婦の夢は、田舎に引っ越して農業を始めることです。そこで先日、ある町が東京で聞いた①説明会に参加してみました。その町では人口が減ったので、町民を募集するために説明会を聞いています。もう100人以上が移り住んでいて、多くの人は楽しく生活しています。しかし、うまくいかなかった例もあるそうです。そのような例には②共通点があると思いました。ある人は、田舎の生活にあこがれて引っ越して来ましたが、すぐに退屈な毎日が嫌になったそうです。農業がしたくて来たのにあまりにも大変で、都会に戻ってしまった例もありました。毎月の町内の掃除など、都会では経験したことがなかったことが意外にめんどうくさいと感じる人もいるそうです。説明会では、このような例も知ってから検討してほしいと言っていました。成功例ばかり見ていた私たちは、考えが甘かったようです。でも、夢はあきらめたくないので、よく調べて、計画を立てて、実行できるように頑張りたいと思います。",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">説明会に行ってから、自分の夢について、「私」はどう思うようになったか。<br>",
+          "options": [
+            "失敗例が多すぎるから、実行するのはあきらめたほうがよさそうだ。",
+            "失敗例を知ったので、実行するかしないかを検討したい。",
+            "失敗例のことも考えて、しっかり計画を立てて実行したい。",
+            "失敗例より成功例がたくさんあるから、失敗例は気にせずにすぐ実行したい。"
+          ],
+          "correct": 3,
+          "correctOption": "失敗例のことも考えて、しっかり計画を立てて実行したい。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q33",
+          "number": 33,
+          "position": 32,
+          "mondai": 6,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">①<u>全然変わらない</u>とあるが、何が変わらないのか。<br>",
+          "options": [
+            "布団に入ってもしばらく眠れないこと。",
+            "運動しないと眠れないこと。",
+            "朝、決まった時間に起きられないこと。",
+            "1時間も走り続けられないこと。"
+          ],
+          "correct": 1,
+          "correctOption": "布団に入ってもしばらく眠れないこと。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q34",
+          "number": 34,
+          "position": 33,
+          "mondai": 6,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">②<u>体の中心の温度の変化が重要だ</u>とあるが 、この変化を起こすためには、どうすればい いか。<br>",
+          "options": [
+            "体の中心の温度をまず下げることで、中心の温度が上がる状態を作る。",
+            "体の中心の温度をまず上げることで、中心の温度が下がる状態を作る。",
+            "体の中心の温度を上げて、中心の温度が決まった温度から下がらない状態を作る。",
+            "体の中心の温度を上げたり下げたりして、中心の温度が変化し続ける状態を作る 。"
+          ],
+          "correct": 2,
+          "correctOption": "体の中心の温度をまず上げることで、中心の温度が下がる状態を作る。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q35",
+          "number": 35,
+          "position": 34,
+          "mondai": 6,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">③<u>間違い</u>とあるが、「私」が間違えて、していたことは何か。<br>",
+          "options": [
+            "寝る 1時間前に体が疲れるまで運動をすること。",
+            "寝る 1時間前に軽い運動をすること。",
+            "寝る 2、3 時間前に体が疲れるまで運動をすること。",
+            "寝る 2、3時間前に軽い運動をすること。"
+          ],
+          "correct": 1,
+          "correctOption": "寝る 1時間前に体が疲れるまで運動をすること。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q36",
+          "number": 36,
+          "position": 35,
+          "mondai": 6,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">(&nbsp; &nbsp; &nbsp;) に入れるのに最もよいものはどれか。<br>",
+          "options": [
+            "起きる時間を遅くしよう。",
+            "布団に入って自然に眠くなるのを待とう。",
+            "ぬるめの風呂にゆっくり入ってから寝ょう。",
+            "軽く走ってから寝ょう。"
+          ],
+          "correct": 3,
+          "correctOption": "ぬるめの風呂にゆっくり入ってから寝ょう。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q37",
+          "number": 37,
+          "position": 36,
+          "mondai": 7,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">田中さんは、出発日が土曜日のパス旅行に申し込みたいと思っている 。昼食がついていて、 温泉に行けるものがいい。田中さんの希望に合うのはどれか 。<br>",
+          "options": [
+            "①",
+            "②",
+            "③",
+            "④"
+          ],
+          "correct": 4,
+          "correctOption": "④",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_grammar_reading_q38",
+          "number": 38,
+          "position": 37,
+          "mondai": 7,
+          "context": "",
+          "stem": "<p dir=\"ltr\" style=\"text-align: left;\">ロパートさんは、出発日が明日 10 月 6 日（土）の「①川中市内観光と川中東温泉」に申し込んでいたが、行けなくなった。今日の受付時間のうちにキャンセルする場合、キャンセル料はどうなるか。<br>",
+          "options": [
+            "7500 円の 40 %を払う。",
+            "8500 円の40%を払う。",
+            "7500 円の50%を払う 。",
+            "8500 円の50%を払う。"
+          ],
+          "correct": 2,
+          "correctOption": "8500 円の40%を払う。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "title": "聴解",
+      "durationMinutes": 40,
+      "questionCount": 28,
+      "questions": [
+        {
+          "id": "n3_past_2022_12_listening_q1",
+          "number": 1,
+          "position": 0,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/3c/3f/3c3f45e2743e677b24a62925d9ab4424096d6f43",
+          "stem": "1 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "チケット売り場にチケットを買いに行く",
+            "インターネットでチケットを買う",
+            "川野さんにお金をわたす",
+            "わりびきけんを もらいに行く"
+          ],
+          "correct": 3,
+          "correctOption": "川野さんにお金をわたす",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q2",
+          "number": 2,
+          "position": 1,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/1a/3c/1a3c2dbd43b4b445e59658b328782903f34c59b7",
+          "stem": "２番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "しょるいをいんさつする",
+            "先生にメールでしょるいを送る",
+            "先生のメールにへんしんする",
+            "先生に会いに行く時間を決める"
+          ],
+          "correct": 2,
+          "correctOption": "先生にメールでしょるいを送る",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q3",
+          "number": 3,
+          "position": 2,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/6e/6e/6e6e8622b5ae4dddb8ab64353643a7a05d2ac1e2",
+          "stem": "3 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "ア イ",
+            "ア エ",
+            "イ ウ",
+            "ウ エ"
+          ],
+          "correct": 1,
+          "correctOption": "ア イ",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q4",
+          "number": 4,
+          "position": 3,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/ea/bf/eabfb01f15493617d603116c1b8ea4f4083e0428",
+          "stem": "4 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "だいひょうしゃの名前を書く",
+            "メンバーぜんいんに住所を聞く",
+            "利用の注意点をかくにんする",
+            "使用料をはらう"
+          ],
+          "correct": 2,
+          "correctOption": "メンバーぜんいんに住所を聞く",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q5",
+          "number": 5,
+          "position": 4,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/93/61/9361a241536e1d7bbb1a2d0a92c2725a966dc71b",
+          "stem": "５番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "ほかの大学のとしよかんに行く",
+            "本のゆうそうを しんせいする",
+            "本のコピーをしんせいする",
+            "ぶんがくぶのしりょうしつに行く"
+          ],
+          "correct": 4,
+          "correctOption": "ぶんがくぶのしりょうしつに行く",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q6",
+          "number": 6,
+          "position": 5,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/78/76/7876cb5c5fdba46a81c50e25ccde0fb6dabf8957",
+          "stem": "6 番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "テーブルを動かす",
+            "いすを運ぶ",
+            "かびんをかたづける",
+            "ゆかをそうじする"
+          ],
+          "correct": 2,
+          "correctOption": "いすを運ぶ",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q7",
+          "number": 7,
+          "position": 6,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/2d/67/2d674c6dc7b528dc738dab8384795ec3ac76a738",
+          "stem": "1番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "前を見て話す",
+            "もう少しゆっくり話す",
+            "決められた時間内に話し終える",
+            "スピーチをみじかくする"
+          ],
+          "correct": 2,
+          "correctOption": "もう少しゆっくり話す",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q8",
+          "number": 8,
+          "position": 7,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/45/cb/45cb7776a864132e04e7a6b58af577369dcb3b9b",
+          "stem": "２番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "広くてきれいなところ",
+            "動物とあそべる場所があるところ",
+            "めずらしい動物がいるところ",
+            "動物のしゅるいが多いところ"
+          ],
+          "correct": 2,
+          "correctOption": "動物とあそべる場所があるところ",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q9",
+          "number": 9,
+          "position": 8,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/af/e3/afe387dbcb64ea4ea35efd0df3f336602d015bfc",
+          "stem": "３番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "毎日れんしゅうする",
+            "きほんのれんしゅうをふやす",
+            "1 日のれんしゅう時間をへらす",
+            "週1 日はれんしゅうを休む"
+          ],
+          "correct": 4,
+          "correctOption": "週1 日はれんしゅうを休む",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q10",
+          "number": 10,
+          "position": 9,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/20/7f/207fd0ea0c9b43e1d9d2f88bd6d1c0ca2ccc6650",
+          "stem": "４番&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "出発の前日の午後 6 時",
+            "出発の前日の午後 8 時",
+            "出発の日の午前 6 時",
+            "出発の日の午前 8 時"
+          ],
+          "correct": 3,
+          "correctOption": "出発の日の午前 6 時",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q11",
+          "number": 11,
+          "position": 10,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/c6/8f/c68f3276adc29631a6bdb5fa9ab99bdddee2b9d0",
+          "stem": "5 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "むすこがやりたいと言ったから",
+            "体力をつけさせたかったから",
+            "じしんをつけさせたかったから",
+            "勉強をがんばるようになると聞いたから"
+          ],
+          "correct": 2,
+          "correctOption": "体力をつけさせたかったから",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q12",
+          "number": 12,
+          "position": 11,
+          "mondai": 2,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/60/2c/602c889c4acce3b193238166424939ddf91f7c6e",
+          "stem": "６番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "しょうひんを売るためのくふう",
+            "店でいちばん売れているもの",
+            "開店前にじゅんびすること",
+            "店を始めた年"
+          ],
+          "correct": 1,
+          "correctOption": "しょうひんを売るためのくふう",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q13",
+          "number": 13,
+          "position": 12,
+          "mondai": 3,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/de/c6/dec656ed2702d7a4b162a115188b5941e65d6ad5",
+          "stem": "1番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q14",
+          "number": 14,
+          "position": 13,
+          "mondai": 3,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/a3/62/a3622300d0213439b5be5cc62b40c060439f6202",
+          "stem": "2 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q15",
+          "number": 15,
+          "position": 14,
+          "mondai": 3,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/6a/9e/6a9e267a83d0bcac25ccb58eecbe78b14690edc0",
+          "stem": "3 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q16",
+          "number": 16,
+          "position": 15,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/cf/d7/cfd7a18214f15ab7d1c7ee4f179ba6937cb2d128",
+          "stem": "1 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q17",
+          "number": 17,
+          "position": 16,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/de/ac/deac954b3237e86307b6d86d10e46df6fa5cb1af",
+          "stem": "2 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q18",
+          "number": 18,
+          "position": 17,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/ba/55/ba55baf97c1cfde95b8d5c166374150b8193db12",
+          "stem": "&nbsp;3 番:\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q19",
+          "number": 19,
+          "position": 18,
+          "mondai": 4,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/96/75/96757942703c439c831888fe7c93a18977f21e7e",
+          "stem": "4 番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q20",
+          "number": 20,
+          "position": 19,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/4d/a7/4da78eaf0fac72002c86dd80e15cd76f9d397634",
+          "stem": "1番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q21",
+          "number": 21,
+          "position": 20,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/de/e7/dee708d5388592de472d0189071632c9549e7ee1",
+          "stem": "2番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q22",
+          "number": 22,
+          "position": 21,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/a5/62/a5628079589d15d47b4f62d23ea4569e9c06a385",
+          "stem": "3番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q23",
+          "number": 23,
+          "position": 22,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/7a/61/7a615270178f0f53a4f304aafdd0d96d5de6f382",
+          "stem": "4番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q24",
+          "number": 24,
+          "position": 23,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/f7/56/f75627fd040eff1140fbdb767fe8689addc09d75",
+          "stem": "5番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q25",
+          "number": 25,
+          "position": 24,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/b6/ee/b6eec724b30b02ad2f3e314de948aab432395bbb",
+          "stem": "6番:&nbsp;&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q26",
+          "number": 26,
+          "position": 25,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/02/d2/02d22b879da306f6b1f603d0af670cd7facf1226",
+          "stem": "7番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q27",
+          "number": 27,
+          "position": 26,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/7a/ba/7aba6797644fb11a4915a2e5b06748be56f16d7b",
+          "stem": "8番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n3_past_2022_12_listening_q28",
+          "number": 28,
+          "position": 27,
+          "mondai": 5,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/82/b8/82b84ca5549a0686a5201e5a63b88d7c8d8c7d64",
+          "stem": "9番:&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    }
+  ]
+}
