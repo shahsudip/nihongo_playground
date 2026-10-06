@@ -95,39 +95,425 @@ const SKILL_SECTION_NOTICES = {
   },
   // Unit 2 (skill-2) - Utterance Expressions (発話表現)
   '練習1 状況説明文を聞き分ける': {
-    code: '2-1',
-    title: '状況説明文を聞き分ける（動作をする人）',
-    descJp: '状況説明文を聞いて、「～てもらいたい」「～たい」などの表現から、話す人と相手のどちらがその動作をするのかを素早く判断しましょう。',
-    descEn: 'Listen to the situation setup and quickly identify whether the speaker or the other person will perform the action.'
+    code: '1',
+    title: '<ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>き<ruby>分<rt>わ</rt></ruby>ける',
+    descJp: '<ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、<ruby>発話<rt>はつわ</rt></ruby>の<ruby>状況<rt>じょうきょう</rt></ruby>や<ruby>場面<rt>ばめん</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>します。<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>（→の<ruby>人<rt>ひと</rt></ruby>）と<ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>のどちらが<ruby>動作<rt>どうさ</rt></ruby>をする<ruby>状況<rt>じょうきょう</rt></ruby>なのかを<ruby>考<rt>かんが</rt></ruby>えることが<ruby>大切<rt>たいせつ</rt></ruby>です。',
+    descEn: 'The point here is to listen to the explanation of the situational context and to comprehend the circumstances and situations of the utterance. It is important to consider what the situation is in which the speaker (person marked with an arrow) and the listener are acting.',
+    descZh: '此类题目先给出一段话，介绍相关情况或情景。答题时要注意整体把握相关情况或情景，并认真判断到底是说话人（标有→）的动作还是听话人的动作。',
+    tableHtml: `
+<div class="mt-4">
+  <div class="font-bold text-sm text-slate-800 dark:text-slate-200 mb-2 font-serif flex items-center gap-2">
+    <span>◇ <ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>の<ruby>例<rt>れい</rt></ruby></span>
+    <span class="text-xs text-stone-500 font-sans font-normal">(Examples of Situational Context)</span>
+  </div>
+  <div class="shinkanzen-example-grid font-serif">
+    <div class="shinkanzen-example-card">
+      <div class="shinkanzen-example-card-header text-emerald-700 dark:text-emerald-400 flex items-center justify-between">
+        <span class="shinkanzen-table-pill speaker">【話す人がする】</span>
+        <span class="text-[11px] text-stone-500 italic font-sans">Speaker takes action</span>
+      </div>
+      <div class="space-y-2 mt-2">
+        <div class="shinkanzen-example-item">
+          <div class="text-slate-800 dark:text-slate-200">
+            <span class="font-bold text-stone-400 mr-1.5 font-sans">例1</span>
+            <ruby>友達<rt>ともだち</rt></ruby>の<ruby>消<rt>け</rt></ruby>しゴムを<ruby>使<rt>つか</rt></ruby>いたいです。
+          </div>
+          <div class="text-xs font-bold text-emerald-600 dark:text-emerald-400 pl-6">
+            （<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>が<ruby>使<rt>つか</rt></ruby>う）
+          </div>
+        </div>
+        <div class="shinkanzen-example-item">
+          <div class="text-slate-800 dark:text-slate-200">
+            <span class="font-bold text-stone-400 mr-1.5 font-sans">例2</span>
+            <ruby>友達<rt>ともだち</rt></ruby>が<ruby>疲<rt>つか</rt></ruby>れたので、<ruby>運転<rt>うんてん</rt></ruby>を<ruby>代<rt>か</rt></ruby>わってあげます。
+          </div>
+          <div class="text-xs font-bold text-emerald-600 dark:text-emerald-400 pl-6">
+            （<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>が<ruby>運転<rt>うんてん</rt></ruby>する）
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shinkanzen-example-card">
+      <div class="shinkanzen-example-card-header text-blue-700 dark:text-blue-400 flex items-center justify-between">
+        <span class="shinkanzen-table-pill listener">【聞く人がする】</span>
+        <span class="text-[11px] text-stone-500 italic font-sans">Listener takes action</span>
+      </div>
+      <div class="space-y-2 mt-2">
+        <div class="shinkanzen-example-item">
+          <div class="text-slate-800 dark:text-slate-200">
+            <span class="font-bold text-stone-400 mr-1.5 font-sans">例3</span>
+            <ruby>友達<rt>ともだち</rt></ruby>に<ruby>自転車<rt>じてんしゃ</rt></ruby>を<ruby>貸<rt>か</rt></ruby>してもらいます。
+          </div>
+          <div class="text-xs font-bold text-blue-600 dark:text-blue-400 pl-6">
+            （<ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>が<ruby>貸<rt>か</rt></ruby>す）
+          </div>
+        </div>
+        <div class="shinkanzen-example-item">
+          <div class="text-slate-800 dark:text-slate-200">
+            <span class="font-bold text-stone-400 mr-1.5 font-sans">例4</span>
+            <ruby>先生<rt>せんせい</rt></ruby>に<ruby>作文<rt>さくぶん</rt></ruby>の<ruby>間違<rt>まちが</rt></ruby>いを<ruby>直<rt>なお</rt></ruby>してほしいです。
+          </div>
+          <div class="text-xs font-bold text-blue-600 dark:text-blue-400 pl-6">
+            （<ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>が<ruby>直<rt>なお</rt></ruby>す）
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`
   },
   '練習2-A 許可や依頼の表現': {
     code: '2-A',
-    title: '許可や依頼の表現',
-    descJp: '「～てもいい？」「～てもらえない？」など、自分の行動の許可を求めるのか、相手に行動を依頼するのかを聞き分けましょう。',
-    descEn: 'Distinguish between asking for permission for one\'s own actions and requesting someone else to take action.'
+    title: '2 <ruby>許可<rt>きょか</rt></ruby>や<ruby>依頼<rt>いらい</rt></ruby>の<ruby>発話<rt>はつわ</rt></ruby>を<ruby>聞<rt>き</rt></ruby>き<ruby>分<rt>わ</rt></ruby>ける：<ruby>許可<rt>きょか</rt></ruby>や<ruby>依頼<rt>いらい</rt></ruby>の<ruby>表現<rt>ひょうげん</rt></ruby>',
+    descJp: '<ruby>発話<rt>はつわ</rt></ruby>の<ruby>選択肢<rt>せんたくし</rt></ruby>にある<ruby>表現<rt>ひょうげん</rt></ruby>が、<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>がするときの<ruby>表現<rt>ひょうげん</rt></ruby>か<ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>がするときの<ruby>表現<rt>ひょうげん</rt></ruby>かに<ruby>注意<rt>ちゅうい</rt></ruby>します。まず<ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>で、<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>がする<ruby>状況<rt>じょうきょう</rt></ruby>か<ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>がする<ruby>状況<rt>じょうきょう</rt></ruby>かを<ruby>理解<rt>りかい</rt></ruby>した<ruby>後<rt>あと</rt></ruby>、それと<ruby>合<rt>あ</rt></ruby>う<ruby>発話<rt>はつわ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>びます。（<ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>ではどちらがするか<ruby>言<rt>い</rt></ruby>わない<ruby>場合<rt>ばあい</rt></ruby>もあります。）',
+    descEn: 'The point here is to focus attention on whether the expression given in the choices of the utterances is the expression made by the speaker or the expression made by the listener. The selection of the utterance best suited to the situation is made after it has first been understood from the explanation of the situational context whether the situation is one brought about by the speaker or one brought about by the listener.',
+    descZh: '此类题目的答题关键在于搞清楚各选项的事项的动作主体到底是说话人还是听话人。首先，要正确把握情景，据此判断动作是由说话人来做还是听话人来做，然后选择恰当的表达方式。',
+    tableHtml: `
+<div class="mt-4 space-y-4">
+  <div>
+    <div class="flex items-center gap-2 mb-1.5">
+      <span class="shinkanzen-table-pill speaker font-bold">【話す人がするとき】</span>
+      <span class="text-xs text-stone-500 italic font-sans">Expressions when the speaker performs the action</span>
+    </div>
+    <div class="shinkanzen-textbook-table-wrapper">
+      <table class="shinkanzen-textbook-table">
+        <thead>
+          <tr>
+            <th class="w-1/3 sm:w-1/4">意図・機能</th>
+            <th>表現の形式・パターン</th>
+          </tr>
+        </thead>
+        <tbody class="font-serif">
+          <tr>
+            <td>
+              <div class="font-bold text-slate-900 dark:text-slate-100"><ruby>許可<rt>きょか</rt></ruby>を<ruby>求<rt>もと</rt></ruby>める</div>
+              <div class="text-[11px] text-stone-500 italic font-sans mt-0.5">Asking permission / 征求许可</div>
+            </td>
+            <td class="space-y-1">
+              <div>・<b>〜ても ＋ いい？／いいですか／いいでしょうか／よろしいでしょうか</b></div>
+              <div>・<b>〜させて ＋ もらえる？／もらえませんか／いただきたいんですが／くれる？／くれませんか／ください／くださいませんか／ほしいんだけど</b></div>
+              <div>・<b>〜たいんですが／〜たいんですけど</b></div>
+              <div class="text-stone-600 dark:text-stone-300 text-xs pt-1 border-t border-dashed border-stone-200 dark:border-stone-700/60 mt-1">
+                <span class="text-stone-400 font-sans">（使いたい）</span> ○○、ありますか／使えますか（可能の形＋か）<br/>
+                <span class="text-stone-400 font-sans">（座りたい）</span> ここ、いいですか／空いていますか／だれかいますか
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="font-bold text-slate-900 dark:text-slate-100"><ruby>方法<rt>ほうほう</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く</div>
+              <div class="text-[11px] text-stone-500 italic font-sans mt-0.5">Asking how to do something / 询问方法、方式</div>
+            </td>
+            <td class="space-y-1">
+              <div>・<b>どう ＋ 〜ばいいでしょうか</b></div>
+              <div>・<b>どう ＋ 〜たらいいですか</b></div>
+              <div>・<b>〜方がわからないんですが／〜がわからないんですけど</b></div>
+              <div>・<b>〜たいんですが／〜たいんですけど</b></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div>
+    <div class="flex items-center gap-2 mb-1.5">
+      <span class="shinkanzen-table-pill listener font-bold">【聞く人がするとき】</span>
+      <span class="text-xs text-stone-500 italic font-sans">Expressions when the listener performs the action</span>
+    </div>
+    <div class="shinkanzen-textbook-table-wrapper">
+      <table class="shinkanzen-textbook-table">
+        <thead>
+          <tr>
+            <th class="w-1/3 sm:w-1/4">意図・機能</th>
+            <th>表現の形式・パターン</th>
+          </tr>
+        </thead>
+        <tbody class="font-serif">
+          <tr>
+            <td>
+              <div class="font-bold text-slate-900 dark:text-slate-100">お<ruby>願<rt>ねが</rt></ruby>いする</div>
+              <div class="text-[11px] text-stone-500 italic font-sans mt-0.5">Asking for a favor / 表示请求</div>
+            </td>
+            <td class="space-y-1">
+              <div>・<b>〜て ＋ もらえる？／もらえませんか／いただきたいんですが／くれる？／くれませんか／ください／くださいませんか／ほしいんだけど</b></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>`
   },
   '練習2-B 注意するべき動詞': {
     code: '2-B',
-    title: '注意するべき動詞（授受動詞・使役など）',
-    descJp: '「教える・教わる」「貸す・借りる」など、視点によって主語が変わる動詞の使い方に注意しましょう。',
-    descEn: 'Pay attention to paired verbs like lending/borrowing or teaching/learning where the subject shifts.'
+    title: '<ruby>注意<rt>ちゅうい</rt></ruby>するべき<ruby>動詞<rt>どうし</rt></ruby>（<ruby>視点<rt>してん</rt></ruby>による<ruby>動詞<rt>どうし</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>け）',
+    descJp: '<ruby>同<rt>おな</rt></ruby>じ<ruby>場面<rt>ばめん</rt></ruby>で<ruby>違<rt>ちが</rt></ruby>う<ruby>動詞<rt>どうし</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うことがあります。<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>の<ruby>動作<rt>どうさ</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す<ruby>動詞<rt>どうし</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うとき（<ruby>例<rt>れい</rt></ruby>：<ruby>借<rt>か</rt></ruby>りる）と、<ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>の<ruby>動作<rt>どうさ</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す<ruby>動詞<rt>どうし</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うとき（<ruby>例<rt>れい</rt></ruby>：<ruby>貸<rt>か</rt></ruby>す）では、<ruby>後<rt>うし</rt></ruby>ろに<ruby>続<rt>つづ</rt></ruby>く<ruby>表現<rt>ひょうげん</rt></ruby>が<ruby>違<rt>ちが</rt></ruby>うので<ruby>注意<rt>ちゅうい</rt></ruby>します。',
+    descEn: 'Different verbs may be used in the same situation. It should be noted that when a verb expressing the action of the speaker (e.g., 借りる to borrow) is used, the expression that follows afterwards will be different from when a verb is used expressing the action of the listener (e.g., 貸す to lend).',
+    descZh: '即便是同一动作，有时要根据站在说话人的视角还是听话人的视角叙述而使用不同的动词，而且所使用的动词不同，其后续的补助动词也会不同，需要注意。',
+    diagramSrc: '/images/shinkanzen_listening/skill-2/section2b_verbs.png',
+    diagramCaption: '本、借りてもいい？（借りる：話す人の動作） ← ── → 本、貸してもらえない？（貸す：聞く人の動作）',
+    tableHtml: `
+<div class="mt-4">
+  <div class="shinkanzen-textbook-table-wrapper">
+    <table class="shinkanzen-textbook-table">
+      <thead>
+        <tr>
+          <th class="w-1/4 sm:w-1/5"><ruby>動詞<rt>どうし</rt></ruby></th>
+          <th><ruby>例文<rt>れいぶん</rt></ruby>（話す人の動作 vs 聞く人の動作）</th>
+        </tr>
+      </thead>
+      <tbody class="font-serif">
+        <tr>
+          <td>
+            <div class="font-bold text-slate-900 dark:text-slate-100"><ruby>借<rt>か</rt></ruby>りる</div>
+            <div class="font-bold text-slate-900 dark:text-slate-100 mt-1.5"><ruby>貸<rt>か</rt></ruby>す</div>
+          </td>
+          <td class="space-y-1.5">
+            <div>
+              <span class="shinkanzen-table-pill speaker mr-2">【話す人の動作】</span>
+              <b><ruby>借<rt>か</rt></ruby>りてもよろしいですか。</b>
+            </div>
+            <div>
+              <span class="shinkanzen-table-pill listener mr-2">【聞く人の動作】</span>
+              <b><ruby>貸<rt>か</rt></ruby>していただけませんか。</b>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="font-bold text-slate-900 dark:text-slate-100"><ruby>見<rt>み</rt></ruby>る</div>
+            <div class="font-bold text-slate-900 dark:text-slate-100 mt-1.5"><ruby>見<rt>み</rt></ruby>せる</div>
+          </td>
+          <td class="space-y-1.5">
+            <div>
+              <span class="shinkanzen-table-pill speaker mr-2">【話す人の動作】</span>
+              <b><ruby>見<rt>み</rt></ruby>てもいい？</b>
+            </div>
+            <div>
+              <span class="shinkanzen-table-pill listener mr-2">【聞く人の動作】</span>
+              <b><ruby>見<rt>み</rt></ruby>せてよ。</b>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="font-bold text-slate-900 dark:text-slate-100"><ruby>聞<rt>き</rt></ruby>く</div>
+            <div class="font-bold text-slate-900 dark:text-slate-100 mt-1.5"><ruby>教<rt>おし</rt></ruby>える</div>
+          </td>
+          <td class="space-y-1.5">
+            <div>
+              <span class="shinkanzen-table-pill speaker mr-2">【話す人の動作】</span>
+              <b>お<ruby>聞<rt>き</rt></ruby>きしたいんですが。</b>
+            </div>
+            <div>
+              <span class="shinkanzen-table-pill listener mr-2">【聞く人の動作】</span>
+              <b><ruby>教<rt>おし</rt></ruby>えていただきたいんですが。</b>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="font-bold text-slate-900 dark:text-slate-100">もらう／いただく</div>
+            <div class="font-bold text-slate-900 dark:text-slate-100 mt-1.5">くれる／くださる</div>
+          </td>
+          <td class="space-y-1.5">
+            <div>
+              <span class="shinkanzen-table-pill speaker mr-2">【話す人の動作】</span>
+              <b>もらってもいいでしょうか。</b>
+            </div>
+            <div>
+              <span class="shinkanzen-table-pill listener mr-2">【聞く人の動作】</span>
+              <b>くださいませんか。</b>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="font-bold text-slate-900 dark:text-slate-100"><ruby>預<rt>あず</rt></ruby>ける</div>
+            <div class="font-bold text-slate-900 dark:text-slate-100 mt-1.5"><ruby>預<rt>あず</rt></ruby>かる</div>
+          </td>
+          <td class="space-y-1.5">
+            <div>
+              <span class="shinkanzen-table-pill speaker mr-2">【話す人の動作】</span>
+              <b><ruby>荷物<rt>にもつ</rt></ruby>、<ruby>預<rt>あず</rt></ruby>けたいんですけど。</b>
+            </div>
+            <div>
+              <span class="shinkanzen-table-pill listener mr-2">【聞く人の動作】</span>
+              <b><ruby>荷物<rt>にもつ</rt></ruby>、<ruby>預<rt>あず</rt></ruby>かっていただけませんか。</b>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>`
   },
   '練習3 問題を知らせる・助けを申し出る': {
-    code: '2-3',
-    title: '問題を知らせる・助けを申し出る',
-    descJp: '困っている状況を相手に伝える表現（「～んですが」）や、相手を助ける親切な申し出（「～ましょうか」）を適切に選びましょう。',
-    descEn: 'Select suitable utterances for reporting an issue or kindly offering assistance.'
+    code: '3',
+    title: '3 <ruby>問題<rt>もんだい</rt></ruby>を<ruby>知<rt>し</rt></ruby>らせる・<ruby>助<rt>たす</rt></ruby>けを<ruby>申<rt>もう</rt></ruby>し<ruby>出<rt>で</rt></ruby>る<ruby>表現<rt>ひょうげん</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>する',
+    descJp: '<ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>に<ruby>何<rt>なに</rt></ruby>か<ruby>問題<rt>もんだい</rt></ruby>を<ruby>知<rt>し</rt></ruby>らせたり、<ruby>自分<rt>じぶん</rt></ruby>から<ruby>助<rt>たす</rt></ruby>けを<ruby>申<rt>もう</rt></ruby>し<ruby>出<rt>で</rt></ruby>たりする<ruby>状況<rt>じょうきょう</rt></ruby>では、<ruby>次<rt>つぎ</rt></ruby>のような<ruby>表現<rt>ひょうげん</rt></ruby>が<ruby>使<rt>つか</rt></ruby>われます。',
+    descEn: 'The following expressions are used in situations in which some problem is made known to the listener or in which help is offered by the speaker.',
+    descZh: '告知问题所在或申请提供帮助时，通常使用下面的表达方式。',
+    tableHtml: `
+<div class="mt-4">
+  <div class="shinkanzen-textbook-table-wrapper">
+    <table class="shinkanzen-textbook-table">
+      <thead>
+        <tr>
+          <th class="w-1/2"><ruby>状況<rt>じょうきょう</rt></ruby>と<ruby>表現<rt>ひょうげん</rt></ruby></th>
+          <th class="w-1/2"><ruby>発話例<rt>はつわれい</rt></ruby></th>
+        </tr>
+      </thead>
+      <tbody class="font-serif">
+        <tr>
+          <td>
+            <div class="font-bold text-slate-900 dark:text-slate-100">
+              <ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>する<ruby>問題<rt>もんだい</rt></ruby>を<ruby>知<rt>し</rt></ruby>らせて、<ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>に<ruby>助<rt>たす</rt></ruby>けを<ruby>求<rt>もと</rt></ruby>める：
+            </div>
+            <div class="text-[11px] text-stone-500 italic font-sans mt-0.5">Making known a problem involving the speaker and asking for help from the listener</div>
+            <div class="text-[11px] text-stone-400 font-sans">告知说话人遇到了什么样的难题，并向听话人求助。</div>
+            <div class="mt-2 text-emerald-700 dark:text-emerald-400 font-bold text-sm bg-emerald-500/10 px-2.5 py-1 rounded inline-block">
+              〜んですが／〜んですけど
+            </div>
+          </td>
+          <td class="space-y-1">
+            <div>・<ruby>忘<rt>わす</rt></ruby>れ<ruby>物<rt>もの</rt></ruby>をしたんですが。</div>
+            <div>・エアコンが<ruby>動<rt>うご</rt></ruby>かないんですが。</div>
+            <div>・いすが<ruby>壊<rt>こわ</rt></ruby>れているんですけど。</div>
+            <div>・<ruby>電気<rt>でんき</rt></ruby>がつかないんですけど。</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="font-bold text-slate-900 dark:text-slate-100">
+              <ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>する<ruby>問題<rt>もんだい</rt></ruby>を<ruby>知<rt>し</rt></ruby>らせる：
+            </div>
+            <div class="text-[11px] text-stone-500 italic font-sans mt-0.5">Making known a problem involving the listener</div>
+            <div class="text-[11px] text-stone-400 font-sans">告知听话人有什么样的问题</div>
+            <div class="mt-2 text-emerald-700 dark:text-emerald-400 font-bold text-sm bg-emerald-500/10 px-2.5 py-1 rounded inline-block">
+              〜よ、〜ていますよ／〜てるよ
+            </div>
+          </td>
+          <td class="space-y-1">
+            <div>・ハンカチ、<ruby>落<rt>お</rt></ruby>ちましたよ。</div>
+            <div>・かさ、<ruby>忘<rt>わす</rt></ruby>れていますよ。</div>
+            <div>・かばんが<ruby>開<rt>あ</rt></ruby>いていますよ。</div>
+            <div>・<ruby>服<rt>ふく</rt></ruby>に<ruby>何<rt>なに</rt></ruby>か<ruby>付<rt>つ</rt></ruby>いてるよ。</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="font-bold text-slate-900 dark:text-slate-100">
+              <ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>に<ruby>助<rt>たす</rt></ruby>けを<ruby>申<rt>もう</rt></ruby>し<ruby>出<rt>で</rt></ruby>る：
+            </div>
+            <div class="text-[11px] text-stone-500 italic font-sans mt-0.5">Offering of help to the listener</div>
+            <div class="text-[11px] text-stone-400 font-sans">向听话人申请提供帮助</div>
+            <div class="mt-2 text-emerald-700 dark:text-emerald-400 font-bold text-sm bg-emerald-500/10 px-2.5 py-1 rounded inline-block">
+              〜ましょうか／〜ようか、〜ますね／〜ますよ
+            </div>
+          </td>
+          <td class="space-y-1">
+            <div>・<ruby>手伝<rt>てつだ</rt></ruby>いましょうか。</div>
+            <div>・<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>運<rt>はこ</rt></ruby>ぼうか。</div>
+            <div>・これ、<ruby>持<rt>も</rt></ruby>っていきますね。</div>
+            <div>・<ruby>片付<rt>かたづ</rt></ruby>け、<ruby>一緒<rt>いっしょ</rt></ruby>にやりますよ。</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>`
   },
   '練習4 あいさつ表現に注意する': {
-    code: '2-4',
-    title: 'あいさつ表現に注意する',
-    descJp: '日本の職場や日常生活における、場面や相手に合わせた決まり文句の挨拶表現を身につけましょう。',
-    descEn: 'Master customary greeting expressions suited to specific workplace and daily-life situations.'
+    code: '4',
+    title: '4 あいさつ<ruby>表現<rt>ひょうげん</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>する',
+    descJp: '<ruby>日本<rt>にほん</rt></ruby>の<ruby>職場<rt>しょくば</rt></ruby>や<ruby>日常生活<rt>にちじょうせいかつ</rt></ruby>における、<ruby>場面<rt>ばめん</rt></ruby>や<ruby>相手<rt>あいて</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わせた<ruby>決<rt>き</rt></ruby>まり<ruby>文句<rt>もんく</rt></ruby>の<ruby>挨拶表現<rt>あいさつひょうげん</rt></ruby>です。<ruby>状況<rt>じょうきょう</rt></ruby>にふさわしい<ruby>言<rt>い</rt></ruby>い<ruby>方<rt>かた</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>しましょう。',
+    descEn: 'Master customary greeting expressions suited to specific workplace and daily-life situations in Japan.',
+    tableHtml: `
+<div class="mt-4">
+  <div class="font-bold text-sm text-slate-800 dark:text-slate-200 mb-2 font-serif">
+    ＜<ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>と<ruby>表現<rt>ひょうげん</rt></ruby>＞
+  </div>
+  <div class="shinkanzen-textbook-table-wrapper">
+    <table class="shinkanzen-textbook-table">
+      <thead>
+        <tr>
+          <th class="w-1/2 sm:w-7/12"><ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>の<ruby>例<rt>れい</rt></ruby></th>
+          <th class="w-1/2 sm:w-5/12"><ruby>表現<rt>ひょうげん</rt></ruby>の<ruby>例<rt>れい</rt></ruby></th>
+        </tr>
+      </thead>
+      <tbody class="font-serif">
+        <tr>
+          <td>1. <ruby>会社<rt>かいしゃ</rt></ruby>でほかの<ruby>人<rt>ひと</rt></ruby>より<ruby>自分<rt>じぶん</rt></ruby>が<ruby>先<rt>さき</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>ります。</td>
+          <td class="font-bold text-emerald-800 dark:text-emerald-300">お<ruby>先<rt>さき</rt></ruby>に<ruby>失礼<rt>しつれい</rt></ruby>します。</td>
+        </tr>
+        <tr>
+          <td>2. <ruby>会社<rt>かいしゃ</rt></ruby>でほかの<ruby>人<rt>ひと</rt></ruby>が<ruby>自分<rt>じぶん</rt></ruby>より<ruby>先<rt>さき</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>ります。</td>
+          <td class="font-bold text-emerald-800 dark:text-emerald-300">お<ruby>疲<rt>つか</rt></ruby>れ<ruby>様<rt>さま</rt></ruby>でした。</td>
+        </tr>
+        <tr>
+          <td>3. ほかの<ruby>人<rt>ひと</rt></ruby>のうちに<ruby>入<rt>はい</rt></ruby>ります。</td>
+          <td class="font-bold text-emerald-800 dark:text-emerald-300">おじゃまします。</td>
+        </tr>
+        <tr>
+          <td>4. ほかの<ruby>人<rt>ひと</rt></ruby>のうちを<ruby>出<rt>で</rt></ruby>ます。</td>
+          <td class="font-bold text-emerald-800 dark:text-emerald-300">おじゃましました。</td>
+        </tr>
+        <tr>
+          <td>5. ほかのうちの<ruby>人<rt>ひと</rt></ruby>に、<ruby>来<rt>き</rt></ruby>たことを<ruby>知<rt>し</rt></ruby>らせます。</td>
+          <td class="font-bold text-emerald-800 dark:text-emerald-300">ごめんください。</td>
+        </tr>
+        <tr>
+          <td>6. <ruby>先生<rt>せんせい</rt></ruby>に<ruby>今<rt>いま</rt></ruby>から<ruby>話<rt>はな</rt></ruby>せるかどうか<ruby>聞<rt>き</rt></ruby>きます。</td>
+          <td class="font-bold text-emerald-800 dark:text-emerald-300">お<ruby>時間<rt>じかん</rt></ruby>、ありますか。／<ruby>今<rt>いま</rt></ruby>、ちょっとよろしいですか。</td>
+        </tr>
+        <tr>
+          <td>7. <ruby>先生<rt>せんせい</rt></ruby>に<ruby>質問<rt>しつもん</rt></ruby>したいです。</td>
+          <td class="font-bold text-emerald-800 dark:text-emerald-300"><ruby>質問<rt>しつもん</rt></ruby>があるんですが。</td>
+        </tr>
+        <tr>
+          <td>8. <ruby>受付<rt>うけつけ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>に<ruby>質問<rt>しつもん</rt></ruby>したいことがあります。</td>
+          <td class="font-bold text-emerald-800 dark:text-emerald-300">うかがいたいんですが。</td>
+        </tr>
+        <tr>
+          <td>9. お<ruby>世話<rt>せわ</rt></ruby>になった<ruby>人<rt>ひと</rt></ruby>に<ruby>久<rt>ひさ</rt></ruby>しぶりに<ruby>会<rt>あ</rt></ruby>いました。</td>
+          <td class="font-bold text-emerald-800 dark:text-emerald-300">ごぶさたしております。</td>
+        </tr>
+        <tr>
+          <td>10. <ruby>病気<rt>びょうき</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>と<ruby>別<rt>わか</rt></ruby>れます。</td>
+          <td class="font-bold text-emerald-800 dark:text-emerald-300">お<ruby>大事<rt>だいじ</rt></ruby>に。</td>
+        </tr>
+        <tr>
+          <td>11. お<ruby>客<rt>きゃく</rt></ruby>さんにいすを<ruby>勧<rt>すす</rt></ruby>めます。</td>
+          <td class="font-bold text-emerald-800 dark:text-emerald-300">どうぞおかけください。</td>
+        </tr>
+        <tr>
+          <td>12. お<ruby>客<rt>きゃく</rt></ruby>さんに<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>や<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>勧<rt>すす</rt></ruby>めます。</td>
+          <td class="font-bold text-emerald-800 dark:text-emerald-300">お<ruby>口<rt>くち</rt></ruby>に<ruby>合<rt>あ</rt></ruby>うかどうか。</td>
+        </tr>
+        <tr>
+          <td>13. <ruby>先輩<rt>せんぱい</rt></ruby>が<ruby>自分<rt>じぶん</rt></ruby>を<ruby>待<rt>ま</rt></ruby>っていました。</td>
+          <td class="font-bold text-emerald-800 dark:text-emerald-300">お<ruby>待<rt>ま</rt></ruby>たせしました。</td>
+        </tr>
+        <tr>
+          <td>14. これから<ruby>長<rt>なが</rt></ruby>い<ruby>間<rt>あいだ</rt></ruby><ruby>会<rt>あ</rt></ruby>わない<ruby>人<rt>ひと</rt></ruby>と<ruby>別<rt>わか</rt></ruby>れます。</td>
+          <td class="font-bold text-emerald-800 dark:text-emerald-300">お<ruby>元気<rt>げんき</rt></ruby>で。</td>
+        </tr>
+        <tr>
+          <td>15. <ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>に<ruby>会<rt>あ</rt></ruby>いました。</td>
+          <td class="font-bold text-emerald-800 dark:text-emerald-300">お<ruby>気<rt>き</rt></ruby>をつけて。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>`
   },
   '確認問題': {
     code: '確認',
-    title: '実戦形式：発話表現',
-    descJp: 'イラストを見ながら質問を聞いて、矢印（→）の人が言うべき最も適切な発話を選びましょう。',
+    title: '<ruby>確認問題<rt>かくにんもんだい</rt></ruby>（実戦形式：発話表現）',
+    descJp: 'えを<ruby>見<rt>み</rt></ruby>ながら<ruby>質問<rt>しつもん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてください。やじるし（→）の<ruby>人<rt>ひと</rt></ruby>は<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。１から３の<ruby>中<rt>なか</rt></ruby>から、<ruby>最<rt>もっと</rt></ruby>もよいものを<ruby>一<rt>ひと</rt></ruby>つえらんでください。',
     descEn: 'Look at the illustration and choose the most appropriate utterance for the person indicated by the arrow (→).'
   }
 };
@@ -503,6 +889,38 @@ const ShinkanzenN3ListeningBook = () => {
   const renderSkillChapter = () => {
     return (
       <div className="space-y-10 mb-8">
+        {/* Authentic Unit Overview Header for Skill Chapters */}
+        {data.mondaiHeader && (
+          <div className="shinkanzen-listening-paper rounded-xl p-5 sm:p-6 mb-2">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-3 mb-3 border-b border-[var(--color-border)]">
+              <div>
+                <span className="text-[11px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">
+                  {data.partTitle || '第2部：実力養成編'}
+                </span>
+                <h2 className="text-lg sm:text-xl font-black text-slate-900 dark:text-slate-100 mt-2 mb-0">
+                  {MONDAI_NAMES[chapterId] || data.title}
+                </h2>
+              </div>
+              {chapterId === 'skill-2' && (
+                <div className="p-1 rounded-lg border border-[var(--color-border)] bg-white dark:bg-slate-900 shrink-0 shadow-xs">
+                  <img 
+                    src={resolvePublicUrl('/images/shinkanzen_listening/skill-2/unit_overview.png')}
+                    alt="Unit Overview"
+                    className="h-16 sm:h-20 object-contain rounded"
+                  />
+                </div>
+              )}
+            </div>
+
+            <div className="font-serif">
+              <p 
+                className="text-xs sm:text-sm leading-relaxed text-slate-800 dark:text-slate-200 m-0 whitespace-pre-line"
+                dangerouslySetInnerHTML={{ __html: data.mondaiHeader.replace(/\n/g, '<br/>') }}
+              />
+            </div>
+          </div>
+        )}
+
         {/* Render Each Section */}
         {groupedSections.map((sec, secIdx) => {
           const notice = SKILL_SECTION_NOTICES[sec.title];
@@ -546,6 +964,31 @@ const ShinkanzenN3ListeningBook = () => {
                     <p className="text-xs sm:text-sm leading-relaxed text-slate-500 dark:text-slate-400 mt-2 m-0 italic font-sans border-t border-stone-200 dark:border-stone-700/60 pt-1.5">
                       {notice.descEn}
                     </p>
+                  )}
+                  {notice.descZh && (
+                    <p className="text-xs sm:text-sm leading-relaxed text-slate-500 dark:text-slate-400 mt-1.5 m-0 font-sans">
+                      {notice.descZh}
+                    </p>
+                  )}
+                  {notice.diagramSrc && (
+                    <div className="my-4 p-3 bg-white/80 dark:bg-slate-900/60 rounded-xl border border-[var(--color-border)] text-center shadow-xs">
+                      <img 
+                        src={resolvePublicUrl(notice.diagramSrc)} 
+                        alt={notice.diagramCaption || "Diagram"} 
+                        className="max-h-56 mx-auto object-contain rounded-lg"
+                      />
+                      {notice.diagramCaption && (
+                        <p className="text-xs text-stone-600 dark:text-stone-300 mt-2 m-0 font-serif font-bold">
+                          {notice.diagramCaption}
+                        </p>
+                      )}
+                    </div>
+                  )}
+                  {notice.tableHtml && (
+                    <div 
+                      className="mt-3 leading-relaxed"
+                      dangerouslySetInnerHTML={{ __html: notice.tableHtml }}
+                    />
                   )}
                 </div>
               )}
