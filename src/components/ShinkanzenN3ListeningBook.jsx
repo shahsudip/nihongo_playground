@@ -882,37 +882,28 @@ const ShinkanzenN3ListeningBook = () => {
   const renderSkillChapter = () => {
     return (
       <div className="space-y-10 mb-8">
-        {/* Authentic Unit Overview Header for Skill Chapters */}
-        {data.mondaiHeader && (
-          <div className="shinkanzen-listening-paper rounded-xl p-5 sm:p-6 mb-2">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-3 mb-3 border-b border-[var(--color-border)]">
-              <div>
-                <span className="text-[11px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">
-                  {data.partTitle || '第2部：実力養成編'}
-                </span>
-                <h2 className="text-lg sm:text-xl font-black text-slate-900 dark:text-slate-100 mt-2 mb-0">
-                  {MONDAI_NAMES[chapterId] || data.title}
-                </h2>
+        {/* Authentic Unit Header for Skill Chapters */}
+        <div className="shinkanzen-listening-paper rounded-xl p-4 sm:p-5 mb-2">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <span className="text-[11px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">
+                {data.partTitle || '第2部：実力養成編'}
+              </span>
+              <h2 className="text-lg sm:text-xl font-black text-slate-900 dark:text-slate-100 mt-2 mb-0">
+                {MONDAI_NAMES[chapterId] || data.title}
+              </h2>
+            </div>
+            {chapterId === 'skill-2' && (
+              <div className="p-1 rounded-lg border border-[var(--color-border)] bg-white dark:bg-slate-900 shrink-0 shadow-xs">
+                <img 
+                  src={resolvePublicUrl('/images/shinkanzen_listening/skill-2/unit_overview.png')}
+                  alt="Unit Overview"
+                  className="h-16 sm:h-20 object-contain rounded"
+                />
               </div>
-              {chapterId === 'skill-2' && (
-                <div className="p-1 rounded-lg border border-[var(--color-border)] bg-white dark:bg-slate-900 shrink-0 shadow-xs">
-                  <img 
-                    src={resolvePublicUrl('/images/shinkanzen_listening/skill-2/unit_overview.png')}
-                    alt="Unit Overview"
-                    className="h-16 sm:h-20 object-contain rounded"
-                  />
-                </div>
-              )}
-            </div>
-
-            <div className="font-serif">
-              <p 
-                className="text-xs sm:text-sm leading-relaxed text-slate-800 dark:text-slate-200 m-0 whitespace-pre-line"
-                dangerouslySetInnerHTML={{ __html: data.mondaiHeader.replace(/\n/g, '<br/>') }}
-              />
-            </div>
+            )}
           </div>
-        )}
+        </div>
 
         {/* Render Each Section */}
         {groupedSections.map((sec, secIdx) => {
