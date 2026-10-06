@@ -99,7 +99,6 @@ const SKILL_SECTION_NOTICES = {
     title: '<ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>き<ruby>分<rt>わ</rt></ruby>ける',
     descJp: '<ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、<ruby>発話<rt>はつわ</rt></ruby>の<ruby>状況<rt>じょうきょう</rt></ruby>や<ruby>場面<rt>ばめん</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>します。<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>（→の<ruby>人<rt>ひと</rt></ruby>）と<ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>のどちらが<ruby>動作<rt>どうさ</rt></ruby>をする<ruby>状況<rt>じょうきょう</rt></ruby>なのかを<ruby>考<rt>かんが</rt></ruby>えることが<ruby>大切<rt>たいせつ</rt></ruby>です。',
     descEn: 'The point here is to listen to the explanation of the situational context and to comprehend the circumstances and situations of the utterance. It is important to consider what the situation is in which the speaker (person marked with an arrow) and the listener are acting.',
-    descZh: '此类题目先给出一段话，介绍相关情况或情景。答题时要注意整体把握相关情况或情景，并认真判断到底是说话人（标有→）的动作还是听话人的动作。',
     tableHtml: `
 <div class="mt-4">
   <div class="font-bold text-sm text-slate-800 dark:text-slate-200 mb-2 font-serif flex items-center gap-2">
@@ -168,7 +167,6 @@ const SKILL_SECTION_NOTICES = {
     title: '2 <ruby>許可<rt>きょか</rt></ruby>や<ruby>依頼<rt>いらい</rt></ruby>の<ruby>発話<rt>はつわ</rt></ruby>を<ruby>聞<rt>き</rt></ruby>き<ruby>分<rt>わ</rt></ruby>ける：<ruby>許可<rt>きょか</rt></ruby>や<ruby>依頼<rt>いらい</rt></ruby>の<ruby>表現<rt>ひょうげん</rt></ruby>',
     descJp: '<ruby>発話<rt>はつわ</rt></ruby>の<ruby>選択肢<rt>せんたくし</rt></ruby>にある<ruby>表現<rt>ひょうげん</rt></ruby>が、<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>がするときの<ruby>表現<rt>ひょうげん</rt></ruby>か<ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>がするときの<ruby>表現<rt>ひょうげん</rt></ruby>かに<ruby>注意<rt>ちゅうい</rt></ruby>します。まず<ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>で、<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>がする<ruby>状況<rt>じょうきょう</rt></ruby>か<ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>がする<ruby>状況<rt>じょうきょう</rt></ruby>かを<ruby>理解<rt>りかい</rt></ruby>した<ruby>後<rt>あと</rt></ruby>、それと<ruby>合<rt>あ</rt></ruby>う<ruby>発話<rt>はつわ</rt></ruby>を<ruby>選<rt>えら</rt></ruby>びます。（<ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>ではどちらがするか<ruby>言<rt>い</rt></ruby>わない<ruby>場合<rt>ばあい</rt></ruby>もあります。）',
     descEn: 'The point here is to focus attention on whether the expression given in the choices of the utterances is the expression made by the speaker or the expression made by the listener. The selection of the utterance best suited to the situation is made after it has first been understood from the explanation of the situational context whether the situation is one brought about by the speaker or one brought about by the listener.',
-    descZh: '此类题目的答题关键在于搞清楚各选项的事项的动作主体到底是说话人还是听话人。首先，要正确把握情景，据此判断动作是由说话人来做还是听话人来做，然后选择恰当的表达方式。',
     tableHtml: `
 <div class="mt-4 space-y-4">
   <div>
@@ -188,7 +186,7 @@ const SKILL_SECTION_NOTICES = {
           <tr>
             <td>
               <div class="font-bold text-slate-900 dark:text-slate-100"><ruby>許可<rt>きょか</rt></ruby>を<ruby>求<rt>もと</rt></ruby>める</div>
-              <div class="text-[11px] text-stone-500 italic font-sans mt-0.5">Asking permission / 征求许可</div>
+              <div class="text-[11px] text-stone-500 italic font-sans mt-0.5">Asking permission</div>
             </td>
             <td class="space-y-1">
               <div>・<b>〜ても ＋ いい？／いいですか／いいでしょうか／よろしいでしょうか</b></div>
@@ -203,7 +201,7 @@ const SKILL_SECTION_NOTICES = {
           <tr>
             <td>
               <div class="font-bold text-slate-900 dark:text-slate-100"><ruby>方法<rt>ほうほう</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く</div>
-              <div class="text-[11px] text-stone-500 italic font-sans mt-0.5">Asking how to do something / 询问方法、方式</div>
+              <div class="text-[11px] text-stone-500 italic font-sans mt-0.5">Asking how to do something</div>
             </td>
             <td class="space-y-1">
               <div>・<b>どう ＋ 〜ばいいでしょうか</b></div>
@@ -234,7 +232,7 @@ const SKILL_SECTION_NOTICES = {
           <tr>
             <td>
               <div class="font-bold text-slate-900 dark:text-slate-100">お<ruby>願<rt>ねが</rt></ruby>いする</div>
-              <div class="text-[11px] text-stone-500 italic font-sans mt-0.5">Asking for a favor / 表示请求</div>
+              <div class="text-[11px] text-stone-500 italic font-sans mt-0.5">Asking for a favor</div>
             </td>
             <td class="space-y-1">
               <div>・<b>〜て ＋ もらえる？／もらえませんか／いただきたいんですが／くれる？／くれませんか／ください／くださいませんか／ほしいんだけど</b></div>
@@ -251,7 +249,6 @@ const SKILL_SECTION_NOTICES = {
     title: '<ruby>注意<rt>ちゅうい</rt></ruby>するべき<ruby>動詞<rt>どうし</rt></ruby>（<ruby>視点<rt>してん</rt></ruby>による<ruby>動詞<rt>どうし</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>け）',
     descJp: '<ruby>同<rt>おな</rt></ruby>じ<ruby>場面<rt>ばめん</rt></ruby>で<ruby>違<rt>ちが</rt></ruby>う<ruby>動詞<rt>どうし</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うことがあります。<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>の<ruby>動作<rt>どうさ</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す<ruby>動詞<rt>どうし</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うとき（<ruby>例<rt>れい</rt></ruby>：<ruby>借<rt>か</rt></ruby>りる）と、<ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>の<ruby>動作<rt>どうさ</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す<ruby>動詞<rt>どうし</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うとき（<ruby>例<rt>れい</rt></ruby>：<ruby>貸<rt>か</rt></ruby>す）では、<ruby>後<rt>うし</rt></ruby>ろに<ruby>続<rt>つづ</rt></ruby>く<ruby>表現<rt>ひょうげん</rt></ruby>が<ruby>違<rt>ちが</rt></ruby>うので<ruby>注意<rt>ちゅうい</rt></ruby>します。',
     descEn: 'Different verbs may be used in the same situation. It should be noted that when a verb expressing the action of the speaker (e.g., 借りる to borrow) is used, the expression that follows afterwards will be different from when a verb is used expressing the action of the listener (e.g., 貸す to lend).',
-    descZh: '即便是同一动作，有时要根据站在说话人的视角还是听话人的视角叙述而使用不同的动词，而且所使用的动词不同，其后续的补助动词也会不同，需要注意。',
     diagramSrc: '/images/shinkanzen_listening/skill-2/section2b_verbs.png',
     diagramCaption: '本、借りてもいい？（借りる：話す人の動作） ← ── → 本、貸してもらえない？（貸す：聞く人の動作）',
     tableHtml: `
@@ -355,7 +352,6 @@ const SKILL_SECTION_NOTICES = {
     title: '3 <ruby>問題<rt>もんだい</rt></ruby>を<ruby>知<rt>し</rt></ruby>らせる・<ruby>助<rt>たす</rt></ruby>けを<ruby>申<rt>もう</rt></ruby>し<ruby>出<rt>で</rt></ruby>る<ruby>表現<rt>ひょうげん</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>する',
     descJp: '<ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>に<ruby>何<rt>なに</rt></ruby>か<ruby>問題<rt>もんだい</rt></ruby>を<ruby>知<rt>し</rt></ruby>らせたり、<ruby>自分<rt>じぶん</rt></ruby>から<ruby>助<rt>たす</rt></ruby>けを<ruby>申<rt>もう</rt></ruby>し<ruby>出<rt>で</rt></ruby>たりする<ruby>状況<rt>じょうきょう</rt></ruby>では、<ruby>次<rt>つぎ</rt></ruby>のような<ruby>表現<rt>ひょうげん</rt></ruby>が<ruby>使<rt>つか</rt></ruby>われます。',
     descEn: 'The following expressions are used in situations in which some problem is made known to the listener or in which help is offered by the speaker.',
-    descZh: '告知问题所在或申请提供帮助时，通常使用下面的表达方式。',
     tableHtml: `
 <div class="mt-4">
   <div class="shinkanzen-textbook-table-wrapper">
@@ -373,7 +369,6 @@ const SKILL_SECTION_NOTICES = {
               <ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>する<ruby>問題<rt>もんだい</rt></ruby>を<ruby>知<rt>し</rt></ruby>らせて、<ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>に<ruby>助<rt>たす</rt></ruby>けを<ruby>求<rt>もと</rt></ruby>める：
             </div>
             <div class="text-[11px] text-stone-500 italic font-sans mt-0.5">Making known a problem involving the speaker and asking for help from the listener</div>
-            <div class="text-[11px] text-stone-400 font-sans">告知说话人遇到了什么样的难题，并向听话人求助。</div>
             <div class="mt-2 text-emerald-700 dark:text-emerald-400 font-bold text-sm bg-emerald-500/10 px-2.5 py-1 rounded inline-block">
               〜んですが／〜んですけど
             </div>
@@ -391,7 +386,6 @@ const SKILL_SECTION_NOTICES = {
               <ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>する<ruby>問題<rt>もんだい</rt></ruby>を<ruby>知<rt>し</rt></ruby>らせる：
             </div>
             <div class="text-[11px] text-stone-500 italic font-sans mt-0.5">Making known a problem involving the listener</div>
-            <div class="text-[11px] text-stone-400 font-sans">告知听话人有什么样的问题</div>
             <div class="mt-2 text-emerald-700 dark:text-emerald-400 font-bold text-sm bg-emerald-500/10 px-2.5 py-1 rounded inline-block">
               〜よ、〜ていますよ／〜てるよ
             </div>
@@ -409,7 +403,6 @@ const SKILL_SECTION_NOTICES = {
               <ruby>聞<rt>き</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>に<ruby>助<rt>たす</rt></ruby>けを<ruby>申<rt>もう</rt></ruby>し<ruby>出<rt>で</rt></ruby>る：
             </div>
             <div class="text-[11px] text-stone-500 italic font-sans mt-0.5">Offering of help to the listener</div>
-            <div class="text-[11px] text-stone-400 font-sans">向听话人申请提供帮助</div>
             <div class="mt-2 text-emerald-700 dark:text-emerald-400 font-bold text-sm bg-emerald-500/10 px-2.5 py-1 rounded inline-block">
               〜ましょうか／〜ようか、〜ますね／〜ますよ
             </div>
@@ -963,11 +956,6 @@ const ShinkanzenN3ListeningBook = () => {
                   {notice.descEn && (
                     <p className="text-xs sm:text-sm leading-relaxed text-slate-500 dark:text-slate-400 mt-2 m-0 italic font-sans border-t border-stone-200 dark:border-stone-700/60 pt-1.5">
                       {notice.descEn}
-                    </p>
-                  )}
-                  {notice.descZh && (
-                    <p className="text-xs sm:text-sm leading-relaxed text-slate-500 dark:text-slate-400 mt-1.5 m-0 font-sans">
-                      {notice.descZh}
                     </p>
                   )}
                   {notice.diagramSrc && (
