@@ -60,38 +60,172 @@ const SKILL_SECTION_NOTICES = {
   '練習1-B アクセントやイントネーション': {
     code: '1-B',
     title: 'アクセントやイントネーション',
-    descJp: 'アクセントの違いによって意味が変わる言葉や、文末のイントネーションの違いに注意して聞きましょう。',
-    descEn: 'Pay attention to words whose meaning changes depending on pitch accent, and listen carefully to sentence-ending intonations.'
+    descJp: 'アクセントやイントネーションを<ruby>手<rt>て</rt></ruby>がかりにして<ruby>聞<rt>き</rt></ruby>くと、<ruby>意味<rt>いみ</rt></ruby>の<ruby>違<rt>ちが</rt></ruby>いがわかりやすくなります。',
+    descEn: 'Differences in meaning are made easier to understand when listening by using accents and intonation as a clue.'
   },
   '練習1-C 似ている数字': {
     code: '1-C',
-    title: '似ている数字',
-    descJp: '似ている数字（４と７、１と８など）や単位、数え方の表現に注意して聞き分けましょう。',
-    descEn: 'Listen carefully to distinguish similar numbers (such as 4 and 7, 1 and 8), units, and counters.'
+    title: '<ruby>似<rt>に</rt></ruby>ている<ruby>数字<rt>すうじ</rt></ruby>',
+    descJp: '<ruby>数字<rt>すうじ</rt></ruby>は「〜<ruby>時<rt>じ</rt></ruby>」「〜<ruby>分<rt>ふん</rt></ruby>」などの<ruby>単位<rt>たんい</rt></ruby>がついたり、「４、５<ruby>日<rt>にち</rt></ruby>」のような<ruby>言<rt>い</rt></ruby>い<ruby>方<rt>かた</rt></ruby>をしたりすると、<ruby>聞<rt>き</rt></ruby>き<ruby>取<rt>と</rt></ruby>りにくくなります。アクセントやイントネーションに<ruby>注意<rt>ちゅうい</rt></ruby>して、<ruby>正<rt>ただ</rt></ruby>しく<ruby>聞<rt>き</rt></ruby>き<ruby>取<rt>と</rt></ruby>りましょう。',
+    descEn: 'It may be hard to understand what the speaker is saying if counter suffixes, such as ~o\'clock and ~ minute(s), or expressions like "4、5日 (4 or 5 days)" are used. Pay attention to accent and intonation to help you correctly understand what is being said.'
   },
   '練習2-1 音の変化': {
-    code: '2-1',
-    title: '音の変化（縮約形）',
-    descJp: '話し言葉でよく使われる音の変化（「～ちゃう」「～なくちゃ」「～てる」など）に慣れましょう。',
-    descEn: 'Get accustomed to sound changes and colloquial contractions commonly heard in casual speech.'
+    code: '2',
+    title: '2 <ruby>音<rt>おと</rt></ruby>の<ruby>変化<rt>へんか</rt></ruby>',
+    descJp: '<ruby>親<rt>した</rt></ruby>しい<ruby>人<rt>ひと</rt></ruby>と<ruby>話<rt>はな</rt></ruby>すときは、<ruby>音<rt>おと</rt></ruby>が<ruby>省略<rt>しょうりゃく</rt></ruby>されたり、<ruby>書<rt>か</rt></ruby>いたものとは<ruby>違<rt>ちが</rt></ruby>った<ruby>音<rt>おと</rt></ruby>になったりすることがあります。',
+    descEn: 'When talking with close friends certain sounds may be omitted or sounds different from written language may be used.',
+    tableHtml: `
+<div class="mt-4">
+  <div class="shinkanzen-textbook-table-wrapper">
+    <table class="shinkanzen-textbook-table">
+      <thead>
+        <tr>
+          <th class="w-1/2 text-center text-sm font-bold bg-amber-100/60 dark:bg-amber-950/40 text-amber-900 dark:text-amber-200 py-2 border-b border-stone-300 dark:border-stone-700">
+            <ruby>変化<rt>へんか</rt></ruby>した<ruby>形<rt>かたち</rt></ruby> <span class="text-xs font-normal text-stone-500 font-sans block sm:inline">(Changed Form)</span>
+          </th>
+          <th class="w-1/2 text-center text-sm font-bold bg-amber-100/60 dark:bg-amber-950/40 text-amber-900 dark:text-amber-200 py-2 border-b border-stone-300 dark:border-stone-700">
+            <ruby>元<rt>もと</rt></ruby>の<ruby>形<rt>かたち</rt></ruby> <span class="text-xs font-normal text-stone-500 font-sans block sm:inline">(Original Form)</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody class="font-serif text-xs sm:text-sm divide-y divide-stone-200 dark:divide-stone-800">
+        <tr>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜ちゃう」「〜じゃう」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>行<rt>い</rt></ruby>っちゃう／<ruby>休<rt>やす</rt></ruby>んじゃう</div>
+          </td>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜てしまう」「〜でしまう」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>行<rt>い</rt></ruby>ってしまう／<ruby>休<rt>やす</rt></ruby>んでしまう</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜ちゃ」「〜じゃ」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>言<rt>い</rt></ruby>っちゃ／それじゃ</div>
+          </td>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜ては」「〜では」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>言<rt>い</rt></ruby>っては／それでは</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜(なく)ちゃ」「〜(な)きゃ」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>出<rt>だ</rt></ruby>さなくちゃ／しなきゃ</div>
+          </td>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜(なく)ては」「〜(な)ければ」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>出<rt>だ</rt></ruby>さなくては／しなければ</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜てる」「〜でる」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>知<rt>し</rt></ruby>ってる／<ruby>飲<rt>の</rt></ruby>んでる</div>
+          </td>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜ている」「〜でいる」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>知<rt>し</rt></ruby>っている／<ruby>飲<rt>の</rt></ruby>んでいる</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜てた」「〜でた」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>知<rt>し</rt></ruby>ってた／<ruby>飲<rt>の</rt></ruby>んでた</div>
+          </td>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜ていた」「〜でいた」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>知<rt>し</rt></ruby>っていた／<ruby>飲<rt>の</rt></ruby>んでいた</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜てく」「〜でく」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>持<rt>も</rt></ruby>ってく／<ruby>飛<rt>と</rt></ruby>んでく</div>
+          </td>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜ていく」「〜でいく」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>持<rt>も</rt></ruby>っていく／<ruby>飛<rt>と</rt></ruby>んでいく</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜てった」「〜でった」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>持<rt>も</rt></ruby>ってった／<ruby>飛<rt>と</rt></ruby>んでった</div>
+          </td>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜ていった」「〜でいった」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>持<rt>も</rt></ruby>っていった／<ruby>飛<rt>と</rt></ruby>んでいった</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜とく」「〜どく」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>置<rt>お</rt></ruby>いとく／<ruby>読<rt>よ</rt></ruby>んどく</div>
+          </td>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜ておく」「〜でおく」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>置<rt>お</rt></ruby>いておく／<ruby>読<rt>よ</rt></ruby>んでおく</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜って」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>呉<rt>くれ</rt></ruby>っていう<ruby>町<rt>まち</rt></ruby>／いいって<ruby>言<rt>い</rt></ruby>った</div>
+          </td>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">「〜と」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span><ruby>呉<rt>くれ</rt></ruby>という<ruby>町<rt>まち</rt></ruby>／いいと<ruby>言<rt>い</rt></ruby>った</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">＋「っ」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span>とっても／すっごく／ばっかり</div>
+          </td>
+          <td class="p-2 sm:p-2.5">
+            <div class="font-bold text-slate-900 dark:text-slate-100">ー「っ」</div>
+            <div class="text-stone-600 dark:text-stone-300 text-xs mt-0.5"><span class="text-stone-400 font-sans">例：</span>とても／すごく／ばかり</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>`
   },
   '練習2-2 音の変化': {
     code: '2-2',
-    title: '音の変化（文末の形）',
-    descJp: '縮約された文末表現を聞いて、元の形（完全な文法表現）を理解できるように練習しましょう。',
-    descEn: 'Practice recognizing the original grammatical form behind contracted conversational endings.'
+    title: '<ruby>音<rt>おと</rt></ruby>の<ruby>変化<rt>へんか</rt></ruby>（<ruby>元<rt>もと</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>を<ruby>書<rt>か</rt></ruby>く）',
+    descJp: '<ruby>話<rt>はな</rt></ruby>し<ruby>言葉<rt>ことば</rt></ruby>で<ruby>変化<rt>へんか</rt></ruby>した<ruby>文末<rt>ぶんまつ</rt></ruby>の<ruby>表現<rt>ひょうげん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、その<ruby>元<rt>もと</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>（<ruby>完全<rt>かんぜん</rt></ruby>な<ruby>文法<rt>ぶんぽう</rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby>）を<ruby>選<rt>えら</rt></ruby>びましょう。',
+    descEn: 'Listen to conversational sound changes and choose the original grammatical form.'
   },
   '例題3 音の高さや長さ': {
-    code: '3-例',
-    title: '音の高さや長さ（イントネーション）',
-    descJp: '文末のイントネーションが上がるか下がるかで、話し手が同意しているのか断っているのかを判断しましょう。',
-    descEn: 'Determine whether the speaker agrees or declines based on rising or falling intonation at the end of the sentence.'
+    code: '3',
+    title: '3 <ruby>音<rt>おと</rt></ruby>の<ruby>高<rt>たか</rt></ruby>さや<ruby>長<rt>なが</rt></ruby>さに<ruby>注意<rt>ちゅうい</rt></ruby>する',
+    descJp: 'イントネーションによって、<ruby>相手<rt>あいて</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>に<ruby>同意<rt>どうい</rt></ruby>しているかどうかがわかることがあります。',
+    descEn: 'In some cases whether or not there is agreement with what the interlocutor says is indicated by intonation.',
+    tableHtml: `
+<div class="mt-3 p-3 bg-stone-50 dark:bg-slate-900/50 rounded-xl border border-stone-200 dark:border-stone-800 text-xs sm:text-sm font-serif space-y-2">
+  <div class="font-bold text-slate-800 dark:text-slate-200 flex items-center gap-2">
+    <span>【表現】<ruby>同意<rt>どうい</rt></ruby>しない・<ruby>断<rt>ことわ</rt></ruby>る・<ruby>残念<rt>ざんねん</rt></ruby>な<ruby>気持<rt>きも</rt></ruby>ち</span>
+    <span class="text-[11px] text-stone-500 italic font-sans">(Do not agree / Refuse / Feel sorry)</span>
+  </div>
+  <div class="pl-2 space-y-1 text-slate-700 dark:text-slate-300">
+    <div>・うーん／あー／えー</div>
+    <div>・〇〇ねえ／〇〇かー／〇〇ですかあ？</div>
+  </div>
+  <div class="pt-2 border-t border-dashed border-stone-300 dark:border-stone-700 text-xs space-y-1">
+    <div><span class="font-bold text-stone-500 font-sans">例1：</span>これにしたらどう？ → <b>うーん、そうだねえ。（同意しない）</b></div>
+    <div><span class="font-bold text-stone-500 font-sans">例2：</span>あした７時に来てくれませんか。 → <b>あー、７時ですかー。／えー、７時ですかあ？（同意しない）</b></div>
+  </div>
+</div>`
   },
   '練習3 音の高さや長さに注意する': {
     code: '3',
-    title: '音の高さや長さに注意する',
-    descJp: '短い返事や相槌のイントネーションの違いを聞き分けて、肯定・否定のニュアンスを掴みましょう。',
-    descEn: 'Listen carefully to the intonation of short responses and backchanneling to catch affirmative or negative nuances.'
+    title: '3 <ruby>音<rt>おと</rt></ruby>の<ruby>高<rt>たか</rt></ruby>さや<ruby>長<rt>なが</rt></ruby>さに<ruby>注意<rt>ちゅうい</rt></ruby>する',
+    descJp: 'イントネーションによって、<ruby>相手<rt>あいて</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>に<ruby>同意<rt>どうい</rt></ruby>しているかどうかがわかることがあります。',
+    descEn: 'In some cases whether or not there is agreement with what the interlocutor says is indicated by intonation.'
   },
   // Unit 2 (skill-2) - Utterance Expressions (発話表現)
   '練習1 状況説明文を聞き分ける': {
@@ -915,15 +1049,16 @@ const ShinkanzenN3ListeningBook = () => {
             q.options?.some(o => o.includes('○') || o.includes('×'))
           );
 
-          // Inline phrase questions have brackets inside the prompt sentence (e.g. 練習1: （ 話す人 ・ 友達 ）が教える)
-          const isInlinePhraseSection = !isTrueFalseSection && sec.questions.every(q =>
-            q.questionText?.includes('（') && q.questionText?.includes('）') && !q.questionText?.includes('最初の言葉')
-          );
+          // Bubble letters mode: ONLY 1-A has bare letter choices without text (a ・ ⓑ ・ c)
+          const isBubbleLetterSection = !isTrueFalseSection && sec.title.includes('1-A');
 
-          // Bubble letters mode: for 1-A, 1-B, 1-C, or pure choice letter questions where options are just letters tested aurally
-          const isBubbleLetterSection = !isTrueFalseSection && !isInlinePhraseSection && (
-            sec.title.includes('1-A') || sec.title.includes('1-B') || sec.title.includes('1-C') ||
-            sec.questions.every(q => q.options?.length <= 4 && q.options?.every(o => /^[a-d]\./i.test(o.trim())))
+          // Inline choice questions: For 1-B, 1-C, 2-1, and Unit 2 練習1
+          const isInlineChoiceSection = !isTrueFalseSection && !isBubbleLetterSection && (
+            sec.title.includes('1-B') ||
+            sec.title.includes('1-C') ||
+            sec.title.includes('2-1') ||
+            (sec.title.includes('練習1') && !sec.title.includes('1-A')) ||
+            sec.questions.every(q => q.options?.length === 2 && (q.questionText?.includes('（') || q.questionText?.includes('(') || !q.questionText || q.questionText.includes('＿＿＿＿')))
           );
 
           return (
@@ -1151,101 +1286,207 @@ const ShinkanzenN3ListeningBook = () => {
                       })}
                     </div>
                   </div>
-                ) : isInlinePhraseSection ? (
-                  /* Sub-renderer B: Inline Phrase Mode (e.g. 練習1 in Chapter 2) */
+                ) : isInlineChoiceSection ? (
+                  /* Sub-renderer B: Inline Choice Mode (e.g. 練習1-B, 1-C, 2-1, and Unit 2 練習1) */
                   <div className="space-y-4">
-                    {sec.questions.map((q, qSubIdx) => {
-                      const qKey = `q-${q.originalIdx}`;
-                      const userAnswer = answers[qKey];
-                      const isRevealed = revealed[qKey];
-                      const correctIdx = q.correctOption?.index;
-                      const subNum = q.badge?.match(/\((\d+)\)/)?.[1] || (qSubIdx + 1);
+                    {/* (例) Row in the textbook for 1-B */}
+                    {sec.title.includes('1-B') && (
+                      <div className="shinkanzen-example-row flex items-center justify-between">
+                        <div className="flex items-center flex-wrap gap-1.5 text-sm sm:text-base font-serif">
+                          <span className="font-bold text-stone-600 dark:text-stone-300 font-serif w-8">
+                            （例）
+                          </span>
+                          <span>これから</span>
+                          <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-stone-100/90 dark:bg-slate-800/90 border border-stone-300 dark:border-stone-700 shadow-2xs mx-1">
+                            <span className="text-stone-400 font-bold font-serif select-none">(</span>
+                            <span className="shinkanzen-inline-choice-btn correct">
+                              <span className="font-bold font-sans mr-1">ⓐ</span>
+                              <span>美容院</span>
+                            </span>
+                            <span className="text-stone-400 font-bold font-serif select-none px-0.5">・</span>
+                            <span className="shinkanzen-inline-choice-btn dimmed">
+                              <span className="font-bold font-sans mr-1">b</span>
+                              <span>病院</span>
+                            </span>
+                            <span className="text-stone-400 font-bold font-serif select-none">)</span>
+                          </span>
+                          <span>へ行きます。</span>
+                        </div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400 font-sans italic shrink-0">
+                          例題 (Example) : ⓐ 美容院 が正解
+                        </div>
+                      </div>
+                    )}
 
-                      const opt1 = q.options?.[0]?.replace(/^[a-z]\.\s*/i, '') || '話す人';
-                      const opt2 = q.options?.[1]?.replace(/^[a-z]\.\s*/i, '') || '友達';
-                      const verbEnding = q.questionText?.match(/）(.*?)<\/b>/)?.[1] || q.questionText?.replace(/<[^>]+>/g, '').match(/）(.*)/)?.[1] || '';
+                    {/* (例) Row in the textbook for 2-1 */}
+                    {sec.title.includes('2-1') && (
+                      <div className="shinkanzen-example-row flex items-center justify-between">
+                        <div className="flex items-center flex-wrap gap-1.5 text-sm sm:text-base font-serif">
+                          <span className="font-bold text-stone-600 dark:text-stone-300 font-serif w-8">
+                            （例）
+                          </span>
+                          <span>この本、</span>
+                          <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-stone-100/90 dark:bg-slate-800/90 border border-stone-300 dark:border-stone-700 shadow-2xs mx-1">
+                            <span className="text-stone-400 font-bold font-serif select-none">(</span>
+                            <span className="shinkanzen-inline-choice-btn dimmed">
+                              <span className="font-bold font-sans mr-1">a</span>
+                              <span>読んでみる</span>
+                            </span>
+                            <span className="text-stone-400 font-bold font-serif select-none px-0.5">・</span>
+                            <span className="shinkanzen-inline-choice-btn correct">
+                              <span className="font-bold font-sans mr-1">ⓑ</span>
+                              <span>読んでいる</span>
+                            </span>
+                            <span className="text-stone-400 font-bold font-serif select-none">)</span>
+                          </span>
+                          <span>？</span>
+                        </div>
+                        <div className="text-xs text-stone-500 dark:text-stone-400 font-sans italic shrink-0">
+                          例題 (Example) : ⓑ 読んでいる が正解
+                        </div>
+                      </div>
+                    )}
 
-                      return (
-                        <div key={q.originalIdx} className="pb-3 border-b last:border-b-0 border-stone-200/70 dark:border-stone-800/70">
-                          <div className="flex flex-wrap items-center justify-between gap-2 py-1">
-                            <div className="flex items-center flex-wrap gap-2 text-base sm:text-lg font-serif">
-                              <span className="font-bold text-slate-800 dark:text-slate-200 w-8">
-                                ({subNum})
-                              </span>
-                              <span>（</span>
-                              
-                              <button
-                                type="button"
-                                onClick={() => handleSelectAnswer(qKey, 1)}
-                                disabled={isRevealed}
-                                className={`shinkanzen-inline-choice-btn ${
-                                  isRevealed
-                                    ? correctIdx === 0
-                                      ? 'correct'
-                                      : userAnswer === 1
-                                      ? 'wrong'
-                                      : 'dimmed'
-                                    : userAnswer === 1
-                                    ? 'selected'
-                                    : ''
-                                }`}
-                              >
-                                {opt1}
-                              </button>
+                    {/* Questions */}
+                    <div className="space-y-3">
+                      {sec.questions.map((q, qSubIdx) => {
+                        const qKey = `q-${q.originalIdx}`;
+                        const userAnswer = answers[qKey];
+                        const isRevealed = revealed[qKey];
+                        const correctIdx = q.correctOption?.index;
+                        const subNum = q.badge?.match(/\((\d+)\)/)?.[1] || (qSubIdx + 1);
+                        const isDetailOpen = expandedDetails[qKey] ?? isRevealed;
 
-                              <span>・</span>
+                        // Parse questionText into prefix and suffix
+                        let prefix = '';
+                        let suffix = '';
+                        const qText = q.questionText || '';
 
-                              <button
-                                type="button"
-                                onClick={() => handleSelectAnswer(qKey, 2)}
-                                disabled={isRevealed}
-                                className={`shinkanzen-inline-choice-btn ${
-                                  isRevealed
-                                    ? correctIdx === 1
-                                      ? 'correct'
-                                      : userAnswer === 2
-                                      ? 'wrong'
-                                      : 'dimmed'
-                                    : userAnswer === 2
-                                    ? 'selected'
-                                    : ''
-                                }`}
-                              >
-                                {opt2}
-                              </button>
+                        const blankMatch = qText.match(/^(.*?)[（\(][＿_—\-]+[）\)](.*)$/);
+                        const parenMatch = qText.match(/^(.*?)[（\(][^）\)]+[）\)](.*)$/);
 
-                              <span>）{verbEnding}</span>
+                        if (blankMatch) {
+                          prefix = blankMatch[1];
+                          suffix = blankMatch[2];
+                        } else if (parenMatch && !qText.includes('最初の言葉')) {
+                          prefix = parenMatch[1];
+                          suffix = parenMatch[2];
+                        } else if (qText && !qText.includes('どちらですか') && !qText.includes('どちらの意味ですか') && !qText.includes('言っていますか')) {
+                          prefix = qText;
+                          suffix = '';
+                        }
+
+                        // Whether to show letter tags (a, b) inside the buttons
+                        const showLetter = sec.title.includes('1-B') || sec.title.includes('1-C') || sec.title.includes('2-1') || q.options?.every(o => /^[a-z]\./i.test(o));
+
+                        return (
+                          <div key={q.originalIdx} className="pb-3 border-b last:border-b-0 border-stone-200/70 dark:border-stone-800/70">
+                            <div className="flex flex-wrap items-center justify-between gap-2.5 py-1.5">
+                              <div className="flex items-center flex-wrap gap-1.5 text-sm sm:text-base font-serif leading-loose">
+                                <span className="font-bold text-slate-800 dark:text-slate-200 font-serif w-8 shrink-0">
+                                  ({subNum})
+                                </span>
+
+                                {prefix && (
+                                  <span 
+                                    className="text-slate-800 dark:text-slate-200 font-bold"
+                                    dangerouslySetInnerHTML={{ __html: prefix }}
+                                  />
+                                )}
+
+                                <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-stone-100/90 dark:bg-slate-800/90 border border-stone-300 dark:border-stone-700 shadow-2xs mx-1">
+                                  <span className="text-stone-400 font-bold font-serif select-none">(</span>
+                                  {q.options?.map((opt, optIdx) => {
+                                    const letter = String.fromCharCode(97 + optIdx);
+                                    const isSelected = userAnswer === optIdx + 1;
+                                    const isCorrect = optIdx === correctIdx;
+                                    const cleanText = opt.replace(/^[a-z][\.\s　]*/i, '').trim();
+
+                                    let btnClass = "shinkanzen-inline-choice-btn";
+                                    if (isRevealed) {
+                                      if (isCorrect) btnClass += " correct";
+                                      else if (isSelected && !isCorrect) btnClass += " wrong";
+                                      else btnClass += " dimmed";
+                                    } else if (isSelected) {
+                                      btnClass += " selected";
+                                    }
+
+                                    return (
+                                      <React.Fragment key={optIdx}>
+                                        {optIdx > 0 && (
+                                          <span className="text-stone-400 font-bold font-serif select-none px-0.5">・</span>
+                                        )}
+                                        <button
+                                          type="button"
+                                          onClick={() => handleSelectAnswer(qKey, optIdx + 1)}
+                                          disabled={isRevealed}
+                                          className={btnClass}
+                                        >
+                                          {showLetter && (
+                                            <span className="font-bold font-sans mr-1">{letter}</span>
+                                          )}
+                                          <span>{cleanText}</span>
+                                        </button>
+                                      </React.Fragment>
+                                    );
+                                  })}
+                                  <span className="text-stone-400 font-bold font-serif select-none">)</span>
+                                </span>
+
+                                {suffix && (
+                                  <span 
+                                    className="text-slate-800 dark:text-slate-200 font-bold"
+                                    dangerouslySetInnerHTML={{ __html: suffix }}
+                                  />
+                                )}
+                              </div>
+
+                              {/* Status indicator and drawer toggle */}
+                              <div className="ml-auto flex items-center gap-2 shrink-0">
+                                {isRevealed && (
+                                  <span className={`text-xs font-bold px-2 py-0.5 rounded ${
+                                    userAnswer === correctIdx + 1
+                                      ? 'text-emerald-700 dark:text-emerald-300 bg-emerald-500/10'
+                                      : 'text-rose-700 dark:text-rose-400 bg-rose-500/10'
+                                  }`}>
+                                    {userAnswer === correctIdx + 1 
+                                      ? '✓ 正解' 
+                                      : `✗ (正解: ${q.options?.[correctIdx]?.replace(/^[a-z][\.\s　]*/i, '') || String.fromCharCode(97 + correctIdx)})`}
+                                  </span>
+                                )}
+                                {isRevealed && (
+                                  <button
+                                    type="button"
+                                    onClick={() => toggleDetail(qKey)}
+                                    className="text-[11px] font-bold text-stone-500 hover:text-stone-800 dark:text-stone-400 dark:hover:text-stone-200 underline cursor-pointer"
+                                  >
+                                    {isDetailOpen ? '隠す ▲' : '解説 ▼'}
+                                  </button>
+                                )}
+                              </div>
                             </div>
 
-                            {isRevealed && (
-                              <span className={`text-xs font-bold px-2 py-0.5 rounded ${
-                                userAnswer === correctIdx + 1
-                                  ? 'text-emerald-700 dark:text-emerald-300 bg-emerald-500/10'
-                                  : 'text-rose-700 dark:text-rose-400 bg-rose-500/10'
-                              }`}>
-                                {userAnswer === correctIdx + 1 ? '✓ 正解' : `✗ (正解: ${correctIdx === 0 ? opt1 : opt2})`}
-                              </span>
+                            {/* Detail / Explanation Drawer */}
+                            {isRevealed && isDetailOpen && (
+                              <div className="mt-2.5 ml-8 sm:ml-10 p-3 sm:p-4 rounded-xl border border-stone-200 dark:border-stone-700 bg-stone-50/90 dark:bg-slate-900/60 text-xs sm:text-sm space-y-2 animate-fadeIn">
+                                {q.context && (
+                                  <div className="font-serif text-slate-700 dark:text-slate-300 font-medium pb-1 border-b border-stone-200/60 dark:border-stone-800/60">
+                                    <span className="text-stone-500 text-xs mr-1 font-sans">【音声スクリプト】</span>
+                                    <span dangerouslySetInnerHTML={{ __html: q.context }} />
+                                  </div>
+                                )}
+                                {q.explanation && (
+                                  <div 
+                                    className="text-stone-700 dark:text-stone-200 leading-relaxed font-serif pt-1"
+                                    dangerouslySetInnerHTML={{ __html: q.explanation }}
+                                  />
+                                )}
+                              </div>
                             )}
                           </div>
-
-                          {isRevealed && (
-                            <div className="mt-2 ml-8 p-3 rounded-lg border border-stone-200 dark:border-stone-700 bg-stone-50 dark:bg-slate-900/60 text-xs sm:text-sm space-y-1.5 animate-fadeIn">
-                              {q.context && (
-                                <div className="text-stone-600 dark:text-stone-300 font-serif">
-                                  {q.context}
-                                </div>
-                              )}
-                              {q.explanation && (
-                                <div 
-                                  className="text-stone-700 dark:text-stone-200 font-serif"
-                                  dangerouslySetInnerHTML={{ __html: q.explanation }}
-                                />
-                              )}
-                            </div>
-                          )}
-                        </div>
-                      );
-                    })}
+                        );
+                      })}
+                    </div>
                   </div>
                 ) : isTrueFalseSection ? (
                   /* Sub-renderer C: Situation Utterances with [ ○ ] [ × ] (e.g. 練習2-A, 練習2-B) */

@@ -1176,7 +1176,7 @@ export const practiceSetsBook = {
             },
             {
               "id": 82,
-              "questionText": "伊藤「山田さんは、大学の先生なんですって。」",
+              "questionText": "伊藤「山田さんは、大学の先生なんですって。」<br/>清水「へえ。（　　）、田中さんも大学に勤めているそうですよ。」",
               "options": [
                 "そうしたら",
                 "それとも",
@@ -1186,7 +1186,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "vocabulary-kanji",
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【正解】4（そういえば）\n【意味】伊藤「山田さんは、大学の先生なんですって。」高田「そういえば、...」\n【英訳】Speaking of which...\n【解説】会話の話題に関連する情報を思い出したときに使う表現は「そういえば」です。"
+              "explanation": "【正解】4（そういえば）\n【意味】伊藤「山田さんは、大学の先生なんですって。」\n清水「へえ。そういえば、田中さんも大学に勤めているそうですよ。」\n【英訳】Ito: I hear Yamada is a university professor. Shimizu: Oh. By the way, I hear Tanaka also works at a university.\n【解説】会話の話題に関連する情報を思い出したときに使う表現は「そういえば」です。"
             },
             {
               "id": 83,
