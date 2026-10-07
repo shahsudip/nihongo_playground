@@ -92,6 +92,8 @@ const SomatomeN3Book = () => {
   const weekChapters = allChapters.filter(ch => ch.id.startsWith(`week${currentWeek}-`));
 
   // All available week numbers for the week selector
+  const weekNumbers = [...new Set(allChapters.map(ch => parseInt(ch.id.match(/week(\d+)/)?.[1] || '0', 10)))].filter(n => n > 0).sort((a, b) => a - b);
+
   // Redirect invalid 'chapter-X' IDs to 'week1-day1'
   useEffect(() => {
     if (chapterId.startsWith('chapter-') || chapterId.startsWith('ch-')) {
