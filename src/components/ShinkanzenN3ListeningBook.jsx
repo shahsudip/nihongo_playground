@@ -730,6 +730,34 @@ const SKILL_OVERVIEWS = {
       },
     ],
   },
+  'skill-6': {
+    numeral: 'VI',
+    titleHtml: '「<ruby>概要理解<rt>がいようりかい</rt></ruby>」のスキルを<ruby>学<rt>まな</rt></ruby>ぶ',
+    headingHtml: '<ruby>問題形式<rt>もんだいけいしき</rt></ruby>と<ruby>内容<rt>ないよう</rt></ruby>',
+    descriptionJp: 'まとまりのある<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、<ruby>全体<rt>ぜんたい</rt></ruby>として<ruby>言<rt>い</rt></ruby>いたいことや<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>の<ruby>意図<rt>いと</rt></ruby>などを<ruby>理解<rt>りかい</rt></ruby>します。<ruby>話<rt>はなし</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に<ruby>質問<rt>しつもん</rt></ruby>はありません。',
+    descriptionEn: 'Listen to a coherent conversation or spoken statement and try to understand what the speaker wants to say as a whole and what his or her intentions are. There will be no questions before listening to the conversation or spoken statement.',
+    steps: ['<ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く', '<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く', '<ruby>質問文<rt>しつもんぶん</rt></ruby>と<ruby>選択肢<rt>せんたくし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く', '<ruby>答<rt>こた</rt></ruby>えを<ruby>選<rt>えら</rt></ruby>ぶ'],
+    points: [
+      {
+        jp: '<ruby>話題<rt>わだい</rt></ruby>をつかみ、<ruby>全体<rt>ぜんたい</rt></ruby>として<ruby>言<rt>い</rt></ruby>いたいことを<ruby>理解<rt>りかい</rt></ruby>する',
+        en: 'Catch the subject and understand what the speaker wants to say as a whole.',
+      },
+      {
+        jp: '<ruby>前置<rt>まえお</rt></ruby>きの<ruby>表現<rt>ひょうげん</rt></ruby>を<ruby>手<rt>て</rt></ruby>がかりに、<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>の<ruby>意図<rt>いと</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>えながら<ruby>聞<rt>き</rt></ruby>く',
+        en: 'Listen while considering the speaker intentions using preliminary expressions as clues.',
+      },
+      {
+        jp: '<ruby>意見<rt>いけん</rt></ruby>や<ruby>主張<rt>しゅちょう</rt></ruby>を<ruby>話<rt>はな</rt></ruby>すときの<ruby>話<rt>はなし</rt></ruby>のパターンに<ruby>慣<rt>な</rt></ruby>れる',
+        en: 'Get used to patterns used for stating opinions and assertions.',
+      },
+    ],
+  },
+};
+
+const SKILL_6_PART_TITLES = {
+  1: '<ruby>話題<rt>わだい</rt></ruby>をつかみ、<ruby>全体<rt>ぜんたい</rt></ruby>として<ruby>言<rt>い</rt></ruby>いたいことを<ruby>考<rt>かんが</rt></ruby>える',
+  2: '<ruby>前置<rt>まえお</rt></ruby>きの<ruby>表現<rt>ひょうげん</rt></ruby>を<ruby>手<rt>て</rt></ruby>がかりにして<ruby>意図<rt>いと</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>える',
+  3: '<ruby>話<rt>はなし</rt></ruby>のパターンを<ruby>手<rt>て</rt></ruby>がかりにして<ruby>意見<rt>いけん</rt></ruby>・<ruby>主張<rt>しゅちょう</rt></ruby>を<ruby>聞<rt>き</rt></ruby>き<ruby>取<rt>と</rt></ruby>る',
 };
 
 
@@ -1164,7 +1192,9 @@ const ShinkanzenN3ListeningBook = () => {
     const activeSkillPartNotice = activeSkillPart?.sections?.[0]
       ? chapterSectionNotices[activeSkillPart.sections[0].title]
       : null;
-    const activeSkillPartTitleHtml = (activeSkillPartNotice?.title || activeSkillPart?.title || '')
+    const activeSkillPartTitleHtml = (chapterId === 'skill-6'
+      ? SKILL_6_PART_TITLES[activeSkillPart?.partNumber] || activeSkillPart?.title || ''
+      : activeSkillPartNotice?.title || activeSkillPart?.title || '')
       .replace(/^\s*\d+(?:-[A-Z])?\s*/, '');
     return (
       <div className="space-y-10 mb-8">
@@ -1400,7 +1430,7 @@ const ShinkanzenN3ListeningBook = () => {
           );
 
           // Inline choice questions: For 1-B, 1-C, 2-1, and Unit 2 練習1
-          const isInlineChoiceSection = !isTrueFalseSection && !isBubbleLetterSection && (
+          const isInlineChoiceSection = chapterId !== 'skill-6' && !isTrueFalseSection && !isBubbleLetterSection && (
             sec.title.includes('1-B') ||
             sec.title.includes('1-C') ||
             sec.title.includes('2-1') ||
@@ -1507,7 +1537,7 @@ const ShinkanzenN3ListeningBook = () => {
                   </div>
 
                   {/* Single prominent Headphone Badge for this exercise */}
-                  {chapterId !== 'skill-5' && !isSkill4Part2Practice && (
+                  {chapterId !== 'skill-5' && chapterId !== 'skill-6' && !isSkill4Part2Practice && (
                   <div className="flex items-center gap-2 shrink-0">
                     <HeadphoneBadge
                       trackCode={sec.trackCode}
@@ -2097,7 +2127,7 @@ const ShinkanzenN3ListeningBook = () => {
                   </div>
                 ) : (
                   /* Sub-renderer D: Standard Utterance Choices & Illustration Mode (e.g. 練習3, 4, 確認問題) */
-                  <div className={isSkill4Part2 ? 'space-y-3' : 'space-y-6'}>
+                  <div className={isSkill4Part2 || chapterId === 'skill-6' ? 'space-y-3' : 'space-y-6'}>
                     {sec.questions.map((q, qSubIdx) => {
                       const qKey = `q-${q.originalIdx}`;
                       const userAnswer = answers[qKey];
@@ -2109,9 +2139,10 @@ const ShinkanzenN3ListeningBook = () => {
                       const questionTrackCode = q.trackCode || questionHotspot?.trackCode || questionHotspot?.label?.match(/\[(.*?)\]/)?.[1] || sec.trackCode;
                       const isQuestionTrackPlaying = isPlaying && activeAudioSrc === q.audioSrc;
                       const isSkill4Part2Example = isSkill4Part2 && isExampleSection;
+                      const usesQuestionAudioBadge = isSkill4Part2Practice || chapterId === 'skill-6';
 
                       return (
-                        <div key={q.originalIdx} className={isSkill4Part2 ? 'py-1.5 space-y-2' : 'p-4 sm:p-5 rounded-xl border border-[var(--color-border)] bg-transparent space-y-3'}>
+                        <div key={q.originalIdx} className={isSkill4Part2 || chapterId === 'skill-6' ? 'py-1.5 space-y-2' : 'p-4 sm:p-5 rounded-xl border border-[var(--color-border)] bg-transparent space-y-3'}>
                           <div className="flex items-start justify-between gap-3">
                             <div className="flex items-start gap-2.5">
                               {!isSkill4Part2Example && (
@@ -2119,7 +2150,7 @@ const ShinkanzenN3ListeningBook = () => {
                                   ({subNum})
                                 </span>
                               )}
-                              {isSkill4Part2Practice && (
+                              {usesQuestionAudioBadge && (
                                 <HeadphoneBadge
                                   compact
                                   trackCode={questionTrackCode}
@@ -2190,7 +2221,9 @@ const ShinkanzenN3ListeningBook = () => {
                           )}
 
                           <div className="space-y-2 pt-1">
-                            {q.options?.map((opt, oIdx) => {
+                            {q.freeResponse ? (
+                              <div aria-label="Written answer line" className="h-9 border-b border-stone-400 dark:border-stone-600" />
+                            ) : q.options?.map((opt, oIdx) => {
                               const isSelected = userAnswer === oIdx + 1;
                               const isCorrect = oIdx === correctIdx;
                               let optClass = "shinkanzen-listening-option-row";
