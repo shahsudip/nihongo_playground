@@ -6,6 +6,9 @@ import LoadingSpinner from '../utils/loading_spinner.jsx';
 import '../assets/shinkanzen_book.css';
 import { functions, storage } from '../firebaseConfig.js';
 import { useAuth } from '../context/AuthContext';
+import { parseQuestionPresentation } from '../utils/shinkanzenQuestionMarkup.js';
+import { SKILL_3_SECTION_NOTICES } from '../data/shinkanzen_listening/skill-3-notices.js';
+import { SKILL_4_SECTION_NOTICES } from '../data/shinkanzen_listening/skill-4-notices.js';
 
 // Eagerly load all local Shinkanzen Listening JSON files
 const localChapterModules = import.meta.glob('../data/shinkanzen_listening/*.json', { eager: true });
@@ -645,6 +648,67 @@ const SKILL_SECTION_NOTICES = {
   }
 };
 
+const SKILL_OVERVIEWS = {
+  'skill-2': {
+    numeral: 'II',
+    titleHtml: '<ruby>「発話表現」<rt>はつ わ ひょうげん</rt></ruby>のスキルを<ruby>学<rt>まな</rt></ruby>ぶ',
+    headingHtml: '<ruby>問題形式<rt>もんだいけいしき</rt></ruby>と<ruby>内容<rt>ないよう</rt></ruby>',
+    descriptionJp: '絵を見ながら状況説明文と質問を聞きます。それから、3つの選択肢を聞いて、やじるし（→）の人の発話として最もよいものを選びます。',
+    descriptionEn: 'The problem is to listen to the explanation of the situational context and to the question while looking at a picture and then to listen to the three choices and select the one you think is best as an utterance of the person marked with an arrow.',
+    steps: ['絵を見ながら状況説明文と質問を聞く', '3つの選択肢を聞く', '答えを選ぶ'],
+    imageSrc: '/images/shinkanzen_listening/skill-2/unit_overview.png',
+    imageAlt: 'Textbook scene showing the person marked by an arrow',
+  },
+  'skill-3': {
+    numeral: 'III',
+    titleHtml: '<ruby>「即時応答」<rt>そくじおうとう</rt></ruby>のスキルを<ruby>学<rt>まな</rt></ruby>ぶ',
+    headingHtml: '<ruby>問題形式<rt>もんだいけいしき</rt></ruby>と<ruby>内容<rt>ないよう</rt></ruby>',
+    descriptionJp: '質問、報告、依頼、あいさつなどの短い文を聞いた後、すぐにそれに合う答え方を考えます。',
+    descriptionEn: 'After you have listened to the short sentences consisting of questions, report statements, requests or greetings, you should think immediately of the way of answering them in a suitable manner.',
+    steps: ['短い文を聞く', '3つの選択肢を聞く', '答えを選ぶ'],
+    points: [
+      {
+        jp: 'だれの動作を表す表現かに注意する',
+        en: 'Pay attention to the expression that indicates who performs the action.',
+      },
+      {
+        jp: '敬語の表現に注意する',
+        en: 'Pay attention to expressions that indicate honorifics.',
+      },
+      {
+        jp: '会話で使われる表現やあいさつの表現に注意する',
+        en: 'Pay attention to expressions that are used in colloquial language and expressions for greeting.',
+      },
+      {
+        jp: '間接的な答え方に注意する',
+        en: 'Pay attention to ways of answering in an indirect manner.',
+      },
+    ],
+  },
+  'skill-4': {
+    numeral: 'IV',
+    titleHtml: '<ruby>「課題理解」<rt>かだいりかい</rt></ruby>のスキルを<ruby>学<rt>まな</rt></ruby>ぶ',
+    headingHtml: '<ruby>問題形式<rt>もんだいけいしき</rt></ruby>と<ruby>内容<rt>ないよう</rt></ruby>',
+    descriptionJp: 'まとまりのある話から依頼や指示、提案などを聞き取り、これからするべきことを理解します。選択肢は文字または絵で問題用紙に印刷されているので、それを見ながら話を聞きます。',
+    descriptionEn: 'The problem is to listen carefully and pick up the requests, instructions, and suggestions in a coherent conversation or spoken statement, and to understand what should be done next. The choices are printed as text or illustrations, so listen while looking at them.',
+    steps: ['状況説明文と質問文を聞く', '話を聞く', 'もう一度質問文を聞く', '選択肢から答えを選ぶ'],
+    points: [
+      {
+        jp: 'するべきことを聞き取る',
+        en: 'Listen for what has to be done.',
+      },
+      {
+        jp: '指示や提案に対して同意しているかどうかを考える',
+        en: 'Consider whether the instruction or suggestion is accepted.',
+      },
+      {
+        jp: 'するべきことがいくつかある場合は、その中で優先することを考える',
+        en: 'When several actions are required, decide which one takes priority.',
+      },
+    ],
+  },
+};
+
 
 /**
  * Authentic Headphone Earphone Badge matching Shin Kanzen Master physical textbook:
@@ -763,6 +827,7 @@ const ShinkanzenN3ListeningBook = () => {
   const [showVideo, setShowVideo] = useState(false);
   const [videoState, setVideoState] = useState({ status: 'idle', url: null, message: null });
   const [expandedDetails, setExpandedDetails] = useState({});
+  const [selectedSkillPartIndex, setSelectedSkillPartIndex] = useState(() => SKILL_OVERVIEWS[chapterId] ? -1 : 0);
 
   // Audio State
   const [isPlaying, setIsPlaying] = useState(false);
@@ -788,15 +853,20 @@ const ShinkanzenN3ListeningBook = () => {
   };
 
   const isSkillChapter = Boolean(data?.part === 2 || (chapterId && chapterId.startsWith('skill-')));
+  const skillOverview = SKILL_OVERVIEWS[chapterId];
+  const hasSkillOverview = Boolean(skillOverview);
 
   const groupedSections = React.useMemo(() => {
     if (!isSkillChapter || !data?.questions) return [];
     const map = new Map();
     data.questions.forEach((q, originalIdx) => {
       const title = q.sectionTitle || '練習';
-      if (!map.has(title)) {
+      const sectionKey = chapterId === 'skill-4'
+        ? `${title}::${q.trackId || q.audioSrc || originalIdx}`
+        : title;
+      if (!map.has(sectionKey)) {
         const firstHs = data.hotspots?.find(h => h.trackId === q.trackId) || data.hotspots?.find(h => h.audioSrc === q.audioSrc);
-        map.set(title, {
+        map.set(sectionKey, {
           title,
           trackId: q.trackId,
           trackLabel: q.trackLabel || firstHs?.label,
@@ -806,10 +876,46 @@ const ShinkanzenN3ListeningBook = () => {
           questions: []
         });
       }
-      map.get(title).questions.push({ ...q, originalIdx });
+      map.get(sectionKey).questions.push({ ...q, originalIdx });
     });
     return Array.from(map.values());
-  }, [isSkillChapter, data]);
+  }, [isSkillChapter, data, chapterId]);
+
+  const skillPartGroups = React.useMemo(() => {
+    const groups = [];
+
+    groupedSections.forEach((section) => {
+      const mainPartMatch = section.title.match(/^(?:練習|例題)?\s*(\d+)/);
+      const mainPartNumber = mainPartMatch ? Number(mainPartMatch[1]) : null;
+      const key = mainPartNumber === null ? `section-${section.title}` : `part-${mainPartNumber}`;
+      let group = groups.find(item => item.key === key);
+
+      if (!group) {
+        group = {
+          key,
+          partNumber: mainPartNumber,
+          label: mainPartNumber === null ? 'Confirmation' : `Part ${mainPartNumber}`,
+          title: section.title,
+          sections: [],
+        };
+        groups.push(group);
+      }
+
+      group.sections.push(section);
+      if (group.sections.length > 1 && mainPartNumber !== null) {
+        group.title = `練習${mainPartNumber}`;
+      }
+    });
+
+    return groups;
+  }, [groupedSections]);
+
+  const showSkillOverview = hasSkillOverview && selectedSkillPartIndex === -1;
+  const activeSkillPartIndex = selectedSkillPartIndex >= 0 && selectedSkillPartIndex < skillPartGroups.length
+    ? selectedSkillPartIndex
+    : 0;
+  const activeSkillPart = skillPartGroups[activeSkillPartIndex];
+  const visibleGroupedSections = !showSkillOverview ? activeSkillPart?.sections || [] : [];
 
   const handleSelectAnswer = (qKey, optionIndex) => {
     if (revealed[qKey]) return;
@@ -831,6 +937,7 @@ const ShinkanzenN3ListeningBook = () => {
     setShowScript(false);
     setShowVideo(false);
     setVideoState({ status: 'idle', url: null, message: null });
+    setSelectedSkillPartIndex(SKILL_OVERVIEWS[chapterId] ? -1 : 0);
 
     try {
       const matchedKey = Object.keys(localChapterModules).find(k => k.endsWith(`/${chapterId}.json`));
@@ -1014,55 +1121,228 @@ const ShinkanzenN3ListeningBook = () => {
   const currentTrackLabel = currentTrackObj?.label || 'Audio Track';
   const currentTrackCode = currentTrackObj?.trackCode || currentTrackObj?.label?.match(/\[(.*?)\]/)?.[1] || 'A-01';
   const renderSkillChapter = () => {
+    const isBookFaithfulUnit2 = chapterId === 'skill-2';
+    const chapterSectionNotices = chapterId === 'skill-3'
+      ? SKILL_3_SECTION_NOTICES
+      : chapterId === 'skill-4'
+        ? SKILL_4_SECTION_NOTICES
+        : SKILL_SECTION_NOTICES;
+    const activeSkillPartNotice = activeSkillPart?.sections?.[0]
+      ? chapterSectionNotices[activeSkillPart.sections[0].title]
+      : null;
+    const activeSkillPartTitleHtml = (activeSkillPartNotice?.title || activeSkillPart?.title || '')
+      .replace(/^\s*\d+(?:-[A-Z])?\s*/, '');
     return (
       <div className="space-y-10 mb-8">
         {/* Authentic Unit Header for Skill Chapters */}
-        <div className="shinkanzen-listening-paper rounded-xl p-4 sm:p-5 mb-2">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div>
-              <span className="text-[11px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">
-                {data.partTitle || '第2部：実力養成編'}
-              </span>
-              <h2 className="text-lg sm:text-xl font-black text-slate-900 dark:text-slate-100 mt-2 mb-0">
-                {MONDAI_NAMES[chapterId] || data.title}
-              </h2>
+        {showSkillOverview && (
+          <div data-skill-unit-header={chapterId} className="relative flex min-h-20 items-center justify-between overflow-hidden border-y border-stone-700 bg-stone-700 px-4 py-3 text-white shadow-sm sm:min-h-24 sm:px-7">
+            <div className="flex min-w-0 items-center gap-3 sm:gap-5">
+              <span className="shrink-0 font-serif text-3xl leading-none sm:text-4xl">{skillOverview.numeral}</span>
+              <h2
+                className="m-0 min-w-0 font-serif text-xl font-bold leading-tight tracking-wide text-white sm:text-3xl"
+                dangerouslySetInnerHTML={{ __html: skillOverview.titleHtml }}
+              />
             </div>
-            {chapterId === 'skill-2' && (
-              <div className="p-1 rounded-lg border border-[var(--color-border)] bg-white dark:bg-slate-900 shrink-0 shadow-xs">
-                <img 
-                  src={resolvePublicUrl('/images/shinkanzen_listening/skill-2/unit_overview.png')}
-                  alt="Unit Overview"
-                  className="h-16 sm:h-20 object-contain rounded"
-                />
+
+            <div className="relative ml-4 hidden h-14 w-16 shrink-0 sm:block" aria-hidden="true">
+              <div className="absolute left-1 top-5 grid h-8 w-8 rotate-45 grid-cols-2 gap-0.5 border border-white/90 p-1">
+                <span className="border border-white/80" />
+                <span className="border border-white/80" />
+                <span className="border border-white/80" />
+                <span className="border border-white/80" />
+              </div>
+              <div className="absolute right-1 top-1 grid h-8 w-8 rotate-45 grid-cols-2 gap-0.5 border border-white/90 p-1">
+                <span className="border border-white/80" />
+                <span className="border border-white/80" />
+                <span className="border border-white/80" />
+                <span className="border border-white/80" />
+              </div>
+            </div>
+          </div>
+        )}
+
+        {!hasSkillOverview && (
+          <div className="shinkanzen-listening-paper rounded-xl p-4 sm:p-5 mb-2">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div>
+                <span className="text-[11px] font-extrabold uppercase px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">
+                  {data.partTitle || '第2部：実力養成編'}
+                </span>
+                <h2 className="text-lg sm:text-xl font-black text-slate-900 dark:text-slate-100 mt-2 mb-0">
+                  {MONDAI_NAMES[chapterId] || data.title}
+                </h2>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {showSkillOverview && (
+          <section
+            data-skill-overview={chapterId}
+            className="shinkanzen-listening-paper rounded-xl border border-[var(--color-border)] p-5 shadow-sm sm:p-7"
+            aria-labelledby={`${chapterId}-overview-title`}
+          >
+            <h3
+              id={`${chapterId}-overview-title`}
+              className="m-0 font-serif text-2xl font-medium leading-tight text-slate-800 dark:text-slate-100 sm:text-3xl"
+              dangerouslySetInnerHTML={{ __html: skillOverview.headingHtml }}
+            />
+
+            <div className="mt-7 space-y-4">
+              <p className="m-0 font-serif text-base leading-8 text-slate-800 dark:text-slate-200 sm:text-lg">{skillOverview.descriptionJp}</p>
+              <p lang="en" className="m-0 text-sm italic leading-6 text-slate-600 dark:text-slate-400 sm:text-base">
+                {skillOverview.descriptionEn}
+              </p>
+            </div>
+
+            <div className="mt-7 flex flex-col items-stretch justify-center gap-2 sm:flex-row sm:items-center">
+              {skillOverview.steps.map((step, stepIndex) => (
+                <React.Fragment key={step}>
+                  <div className="flex-1 border border-stone-400 bg-white px-3 py-2 text-center font-serif text-sm text-slate-800 shadow-sm dark:border-stone-600 dark:bg-slate-900 dark:text-slate-100 sm:text-base">
+                    {step}
+                  </div>
+                  {stepIndex < skillOverview.steps.length - 1 && (
+                    <span className="rotate-90 self-center text-xl text-stone-500 sm:rotate-0" aria-hidden="true">&rarr;</span>
+                  )}
+                </React.Fragment>
+              ))}
+            </div>
+
+            {skillOverview.points?.length > 0 && (
+              <div className="mt-7 border-t border-stone-300 pt-5 dark:border-stone-700">
+                <h4 className="m-0 font-serif text-lg font-bold text-slate-800 dark:text-slate-100">
+                  ◇<ruby>聞<rt>き</rt></ruby>き<ruby>取<rt>と</rt></ruby>りのポイント
+                  <span className="ml-2 text-xs font-normal italic text-stone-500">Listening Points</span>
+                </h4>
+                <ol className="mt-4 space-y-3">
+                  {skillOverview.points.map((point, pointIndex) => (
+                    <li key={point.en} className="grid grid-cols-[auto_1fr] gap-x-3 border-b border-stone-200 pb-3 last:border-b-0 dark:border-stone-800">
+                      <span className="font-serif text-base font-bold text-stone-500">{pointIndex + 1}</span>
+                      <div>
+                        <p className="m-0 font-serif text-base text-slate-800 dark:text-slate-200">{point.jp}</p>
+                        <p className="m-0 mt-1 text-xs italic text-stone-500 sm:text-sm">{point.en}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ol>
               </div>
             )}
+
+            {skillOverview.imageSrc && (
+              <figure className="mx-auto mb-0 mt-7 max-w-xl">
+                <img
+                  src={resolvePublicUrl(skillOverview.imageSrc)}
+                  alt={skillOverview.imageAlt}
+                  className="block h-auto w-full border border-stone-400 bg-white"
+                />
+              </figure>
+            )}
+          </section>
+        )}
+
+        {hasSkillOverview && !showSkillOverview && activeSkillPart && (
+          <div
+            data-skill-part-banner={activeSkillPart.partNumber ?? activeSkillPart.key}
+            className="relative flex min-h-16 items-center justify-between overflow-hidden border-y border-stone-600 bg-stone-600 px-4 py-2 text-white shadow-sm sm:min-h-20 sm:px-7"
+            style={{ backgroundImage: 'repeating-linear-gradient(0deg, rgba(255,255,255,0.04) 0, rgba(255,255,255,0.04) 1px, transparent 1px, transparent 3px)' }}
+          >
+            <div className="flex min-w-0 items-center gap-3 sm:gap-4">
+              <span className="shrink-0 font-serif text-3xl leading-none text-white sm:text-4xl">
+                {activeSkillPart.partNumber ?? activeSkillPart.label}
+              </span>
+              <div data-skill-part-title className="min-w-0 rounded-xl bg-white px-4 py-2 text-stone-800 shadow-sm sm:px-5">
+                <h2
+                  className="m-0 font-serif text-lg font-bold leading-tight tracking-wide sm:text-2xl"
+                  dangerouslySetInnerHTML={{ __html: activeSkillPartTitleHtml }}
+                />
+              </div>
+            </div>
+
+            <div className="relative ml-4 hidden h-12 w-14 shrink-0 sm:block" aria-hidden="true">
+              <div className="absolute left-1 top-4 grid h-7 w-7 rotate-45 grid-cols-2 gap-0.5 border border-white/90 p-1">
+                <span className="border border-white/80" />
+                <span className="border border-white/80" />
+                <span className="border border-white/80" />
+                <span className="border border-white/80" />
+              </div>
+              <div className="absolute right-1 top-1 grid h-7 w-7 rotate-45 grid-cols-2 gap-0.5 border border-white/90 p-1">
+                <span className="border border-white/80" />
+                <span className="border border-white/80" />
+                <span className="border border-white/80" />
+                <span className="border border-white/80" />
+              </div>
+            </div>
           </div>
-        </div>
+        )}
+
+        {groupedSections.length === 0 && data.hotspots?.length > 0 && (
+          <div className="space-y-4">
+            <div className="shinkanzen-listening-paper rounded-xl p-4 sm:p-5">
+              <h3 className="text-base font-black text-slate-900 dark:text-slate-100 m-0">Unit audio</h3>
+              <p className="text-sm text-[var(--color-text-secondary)] mt-1 mb-4">
+                Verified CD2 tracks for this unit. Exercise text will be added only from the matching book pages.
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+                {(data.hotspots || []).map(track => {
+                  const isTrackPlaying = isPlaying && activeAudioSrc === track.audioSrc;
+                  return (
+                    <button
+                      key={track.id}
+                      type="button"
+                      onClick={() => switchTrack(track.audioSrc)}
+                      className={`rounded-lg border px-3 py-2 text-left text-xs font-bold transition ${isTrackPlaying
+                        ? 'border-emerald-500 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300'
+                        : 'border-[var(--color-border)] text-[var(--color-text-primary)] hover:border-emerald-500/50'}`}
+                    >
+                      {track.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Render Each Section */}
-        {groupedSections.map((sec, secIdx) => {
-          const notice = SKILL_SECTION_NOTICES[sec.title];
+        {visibleGroupedSections.map((sec, secIdx) => {
+          const notice = chapterId === 'skill-4' && secIdx > 0
+            ? null
+            : chapterSectionNotices[sec.title];
           const isTrackPlaying = isPlaying && activeAudioSrc === sec.audioSrc;
+          const exerciseTitle = chapterId === 'skill-4'
+            ? (sec.trackLabel || sec.title).replace(/\s*\[[^\]]+\]\s*$/, '')
+            : sec.title;
+          const supplementalTrackAfterSection = chapterId === 'skill-4' && sec.trackCode === 'A28'
+            ? data.hotspots?.find((hotspot) => hotspot.label?.includes('[A29]'))
+            : null;
           
           // Determine section render mode
           const isTrueFalseSection = sec.questions.every(q => 
             q.options?.some(o => o.includes('○') || o.includes('×'))
           );
 
-          // Bubble letters mode: ONLY 1-A has bare letter choices without text (a ・ ⓑ ・ c)
-          const isBubbleLetterSection = !isTrueFalseSection && sec.title.includes('1-A');
+          // Unit 3 choices are heard in the audio, so the page shows only answer letters.
+          const isBubbleLetterSection = !isTrueFalseSection && (
+            chapterId === 'skill-3' || sec.title.includes('1-A')
+          );
+          const usesNumberedAudioChoices = chapterId === 'skill-3' && sec.questions.every(q =>
+            q.options?.every((opt, optIdx) => new RegExp(`^${optIdx + 1}[.\\s]`).test(opt))
+          );
 
           // Inline choice questions: For 1-B, 1-C, 2-1, and Unit 2 練習1
           const isInlineChoiceSection = !isTrueFalseSection && !isBubbleLetterSection && (
             sec.title.includes('1-B') ||
             sec.title.includes('1-C') ||
             sec.title.includes('2-1') ||
+            (chapterId === 'skill-4' && sec.questions.every(q => q.options?.length === 2)) ||
             (sec.title.includes('練習1') && !sec.title.includes('1-A')) ||
             sec.questions.every(q => q.options?.length === 2 && (q.questionText?.includes('（') || q.questionText?.includes('(') || !q.questionText || q.questionText.includes('＿＿＿＿')))
           );
 
           return (
-            <div key={secIdx} className="space-y-4">
+            <React.Fragment key={`${sec.title}-${sec.trackId || sec.audioSrc}`}>
+            <div data-skill-section={sec.title} className="space-y-4">
               {/* Textbook Top Notice Box (e.g. [ 1-A ] 間違えやすい音) */}
               {notice && (
                 <div className="shinkanzen-skill-notice-box">
@@ -1083,6 +1363,30 @@ const ShinkanzenN3ListeningBook = () => {
                     <p className="text-xs sm:text-sm leading-relaxed text-slate-500 dark:text-slate-400 mt-2 m-0 italic font-sans border-t border-stone-200 dark:border-stone-700/60 pt-1.5">
                       {notice.descEn}
                     </p>
+                  )}
+                  {notice.audioTrackCodes?.length > 0 && (
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {notice.audioTrackCodes.map((trackCode) => {
+                        const track = data.hotspots?.find((hotspot) => hotspot.label?.includes(`[${trackCode}]`));
+                        if (!track?.audioSrc) return null;
+                        const isSupplementalTrackPlaying = isPlaying && activeAudioSrc === track.audioSrc;
+
+                        return (
+                          <div key={trackCode} className="flex items-center gap-2 rounded-lg border border-[var(--color-border)] bg-white/70 px-3 py-2 dark:bg-slate-900/40">
+                            <HeadphoneBadge
+                              trackCode={trackCode}
+                              isPlaying={isSupplementalTrackPlaying}
+                              onClick={() => {
+                                if (isSupplementalTrackPlaying) audioRef.current?.pause();
+                                else switchTrack(track.audioSrc);
+                              }}
+                              title={`Play supplemental audio [${trackCode}]`}
+                            />
+                            <span className="text-xs font-bold text-slate-700 dark:text-slate-200">{track.label}</span>
+                          </div>
+                        );
+                      })}
+                    </div>
                   )}
                   {notice.diagramSrc && (
                     <div className="my-4 p-3 bg-white/80 dark:bg-slate-900/60 rounded-xl border border-[var(--color-border)] text-center shadow-xs">
@@ -1117,7 +1421,7 @@ const ShinkanzenN3ListeningBook = () => {
                     </div>
                     <div>
                       <h3 className="text-lg sm:text-xl font-black text-slate-900 dark:text-slate-100 m-0 flex items-center gap-2">
-                        <span>{sec.title}</span>
+                        <span>{exerciseTitle}</span>
                       </h3>
                       {sec.instruction && (
                         <p 
@@ -1182,6 +1486,9 @@ const ShinkanzenN3ListeningBook = () => {
                         const correctIdx = q.correctOption?.index;
                         const subNum = q.badge?.match(/\((\d+)\)/)?.[1] || (qSubIdx + 1);
                         const isDetailOpen = expandedDetails[qKey] ?? isRevealed;
+                        const correctChoiceLabel = usesNumberedAudioChoices
+                          ? String(correctIdx + 1)
+                          : String.fromCharCode(97 + correctIdx);
 
                         return (
                           <div key={q.originalIdx} className="border-b last:border-b-0 border-stone-200/70 dark:border-stone-800/70 pb-2">
@@ -1193,7 +1500,9 @@ const ShinkanzenN3ListeningBook = () => {
                               <div className="shinkanzen-bubble-group">
                                 <span>(</span>
                                 {q.options?.map((opt, optIdx) => {
-                                  const letter = String.fromCharCode(97 + optIdx);
+                                  const choiceLabel = usesNumberedAudioChoices
+                                    ? String(optIdx + 1)
+                                    : String.fromCharCode(97 + optIdx);
                                   const isSelected = userAnswer === optIdx + 1;
                                   const isCorrect = optIdx === correctIdx;
                                   let btnClass = "shinkanzen-bubble-btn";
@@ -1213,9 +1522,10 @@ const ShinkanzenN3ListeningBook = () => {
                                         onClick={() => handleSelectAnswer(qKey, optIdx + 1)}
                                         disabled={isRevealed}
                                         className={btnClass}
-                                        title={opt}
+                                        title={chapterId === 'skill-3' ? `Option ${choiceLabel}` : opt}
+                                        aria-label={chapterId === 'skill-3' ? `Option ${choiceLabel}` : undefined}
                                       >
-                                        {letter}
+                                        {choiceLabel}
                                       </button>
                                     </React.Fragment>
                                   );
@@ -1231,7 +1541,7 @@ const ShinkanzenN3ListeningBook = () => {
                                       ? 'text-emerald-700 dark:text-emerald-300 bg-emerald-500/10'
                                       : 'text-rose-700 dark:text-rose-400 bg-rose-500/10'
                                   }`}>
-                                    {userAnswer === correctIdx + 1 ? '✓ 正解' : `✗ (正解: ${String.fromCharCode(97 + correctIdx)})`}
+                                    {userAnswer === correctIdx + 1 ? '✓ 正解' : `✗ (正解: ${correctChoiceLabel})`}
                                   </span>
                                 )}
                                 {isRevealed && (
@@ -1376,6 +1686,11 @@ const ShinkanzenN3ListeningBook = () => {
                           suffix = '';
                         }
 
+                        if (chapterId === 'skill-4') {
+                          prefix = '';
+                          suffix = '';
+                        }
+
                         // Whether to show letter tags (a, b) inside the buttons
                         const showLetter = sec.title.includes('1-B') || sec.title.includes('1-C') || sec.title.includes('2-1') || q.options?.every(o => /^[a-z]\./i.test(o));
 
@@ -1513,9 +1828,11 @@ const ShinkanzenN3ListeningBook = () => {
                             <span className="font-bold text-sm sm:text-base text-slate-900 dark:text-slate-100 font-serif">
                               ({sit.sitNum})
                             </span>
-                            <span className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 font-serif font-medium">
-                              {sit.context || '状況を聞いて判断してください。'}
-                            </span>
+                            {!isBookFaithfulUnit2 && (
+                              <span className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 font-serif font-medium">
+                                {sit.context || '状況を聞いて判断してください。'}
+                              </span>
+                            )}
                           </div>
 
                           <div className="space-y-2.5">
@@ -1531,12 +1848,14 @@ const ShinkanzenN3ListeningBook = () => {
                                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                                     <div className="flex items-start gap-2 text-xs sm:text-sm font-serif">
                                       <span className="font-bold text-stone-500 shrink-0 mt-0.5">
-                                        {u.uttNum}.
+                                        {u.uttNum}{isBookFaithfulUnit2 ? '' : '.'}
                                       </span>
-                                      <span 
-                                        className="text-slate-800 dark:text-slate-200 leading-relaxed"
-                                        dangerouslySetInnerHTML={{ __html: cleanUttText }}
-                                      />
+                                      {!isBookFaithfulUnit2 && (
+                                        <span
+                                          className="text-slate-800 dark:text-slate-200 leading-relaxed"
+                                          dangerouslySetInnerHTML={{ __html: cleanUttText }}
+                                        />
+                                      )}
                                     </div>
 
                                     <div className="flex items-center gap-2 shrink-0 self-end sm:self-center">
@@ -1604,6 +1923,7 @@ const ShinkanzenN3ListeningBook = () => {
                       const isRevealed = revealed[qKey];
                       const correctIdx = q.correctOption?.index;
                       const subNum = q.badge?.match(/\((\d+)\)/)?.[1] || (qSubIdx + 1);
+                      const presentation = parseQuestionPresentation(q);
 
                       return (
                         <div key={q.originalIdx} className="p-4 sm:p-5 rounded-xl border border-[var(--color-border)] bg-transparent space-y-3">
@@ -1613,27 +1933,29 @@ const ShinkanzenN3ListeningBook = () => {
                                 ({subNum})
                               </span>
                               <div className="space-y-1">
-                                {q.context && (
-                                  <p className="text-xs sm:text-sm text-stone-500 dark:text-stone-400 font-serif italic m-0">
-                                    {q.context}
+                                {!isBookFaithfulUnit2 && presentation.context && (
+                                  <p className="text-xs sm:text-sm text-stone-500 dark:text-stone-400 font-serif italic m-0 whitespace-pre-line">
+                                    {presentation.context}
                                   </p>
                                 )}
-                                <p 
-                                  className="text-sm sm:text-base font-serif font-bold text-slate-800 dark:text-slate-100 m-0 leading-relaxed"
-                                  dangerouslySetInnerHTML={{ __html: q.questionText }}
-                                />
+                                {!isBookFaithfulUnit2 && (
+                                  <p
+                                    className="text-sm sm:text-base font-serif font-bold text-slate-800 dark:text-slate-100 m-0 leading-relaxed"
+                                    dangerouslySetInnerHTML={{ __html: presentation.questionText }}
+                                  />
+                                )}
                               </div>
                             </div>
                           </div>
 
-                          {q.illustrationSrc && (
+                          {presentation.illustrationSrc && (
                             <div className="p-2 sm:p-3 bg-transparent rounded-xl border border-[var(--color-border)] text-center">
                               <img 
-                                src={resolvePublicUrl(q.illustrationSrc)} 
-                                alt="Scene Illustration"
+                                src={resolvePublicUrl(presentation.illustrationSrc)}
+                                alt={presentation.illustrationAlt}
                                 className="max-h-64 mx-auto object-contain drop-shadow-sm rounded-lg"
                               />
-                              <p className="text-[11px] text-stone-500 dark:text-stone-400 mt-1 m-0">
+                              <p className="hidden">
                                 矢印（→）の人の発話に注意
                               </p>
                             </div>
@@ -1649,7 +1971,12 @@ const ShinkanzenN3ListeningBook = () => {
                                 else if (isSelected && !isCorrect) optClass += " wrong";
                                 else optClass += " dimmed";
                               }
-                              const cleanOpt = opt.replace(/^\d+[\.\s　]*/, '');
+                              const optionNumber = String(oIdx + 1);
+                              const optionPrefixPattern = new RegExp(`^${optionNumber}(?:[.\\s\\u3000]+|(?=[\\uFF08(]))`);
+                              const cleanOpt = opt.trim() === optionNumber
+                                ? ''
+                                : opt.replace(optionPrefixPattern, '').trim();
+                              const visibleOpt = isBookFaithfulUnit2 ? String(oIdx + 1) : cleanOpt;
 
                               return (
                                 <button
@@ -1662,7 +1989,7 @@ const ShinkanzenN3ListeningBook = () => {
                                   <div className="flex items-center justify-between w-full">
                                     <div className="flex items-baseline gap-3">
                                       <span className="font-bold shrink-0 text-base">{oIdx + 1}</span>
-                                      <span dangerouslySetInnerHTML={{ __html: cleanOpt }} />
+                                      <span dangerouslySetInnerHTML={{ __html: visibleOpt }} />
                                     </div>
                                     {isRevealed && isCorrect && (
                                       <span className="text-emerald-700 dark:text-emerald-300 font-bold text-xs shrink-0 bg-emerald-500/10 px-2 py-0.5 rounded">
@@ -1698,6 +2025,31 @@ const ShinkanzenN3ListeningBook = () => {
                 )}
               </div>
             </div>
+            {supplementalTrackAfterSection?.audioSrc && (
+              <div
+                data-skill-supplemental-track="A29"
+                className="shinkanzen-listening-paper rounded-xl p-4 sm:p-6"
+              >
+                <div className="shinkanzen-exercise-header-banner">
+                  <div className="flex items-start gap-3">
+                    <span className="shinkanzen-hatch-icon mt-1" />
+                    <h3 className="m-0 text-lg font-black text-slate-900 dark:text-slate-100 sm:text-xl">
+                      {supplementalTrackAfterSection.label.replace(/\s*\[[^\]]+\]\s*$/, '')}
+                    </h3>
+                  </div>
+                  <HeadphoneBadge
+                    trackCode="A29"
+                    isPlaying={isPlaying && activeAudioSrc === supplementalTrackAfterSection.audioSrc}
+                    onClick={() => {
+                      if (isPlaying && activeAudioSrc === supplementalTrackAfterSection.audioSrc) audioRef.current?.pause();
+                      else switchTrack(supplementalTrackAfterSection.audioSrc);
+                    }}
+                    title="Play supplemental audio [A29]"
+                  />
+                </div>
+              </div>
+            )}
+            </React.Fragment>
           );
         })}
       </div>
@@ -1733,6 +2085,7 @@ const ShinkanzenN3ListeningBook = () => {
             <select
               value={chapterId}
               onChange={(e) => navigateToChapter(e.target.value)}
+              aria-label="Select unit"
               className="w-full sm:w-auto max-w-full bg-[var(--color-bg-secondary)] text-[var(--color-text-primary)] text-xs font-bold py-1.5 px-3 rounded-lg border border-[var(--color-border)] focus:outline-none focus:ring-2 focus:ring-emerald-500 dark:focus:ring-purple-500 shadow-sm"
             >
               {partChapters.map(ch => (
@@ -1741,40 +2094,59 @@ const ShinkanzenN3ListeningBook = () => {
                 </option>
               ))}
             </select>
+
+            {isSkillChapter && groupedSections.length > 0 && (
+              <select
+                key={`part-selector-${chapterId}`}
+                value={showSkillOverview ? -1 : activeSkillPartIndex}
+                onChange={(e) => setSelectedSkillPartIndex(Number(e.target.value))}
+                aria-label="Select part"
+                className="w-full sm:w-auto max-w-full bg-[var(--color-bg-secondary)] text-[var(--color-text-primary)] text-xs font-bold py-1.5 px-3 rounded-lg border border-[var(--color-border)] focus:outline-none focus:ring-2 focus:ring-emerald-500 dark:focus:ring-purple-500 shadow-sm"
+              >
+                {hasSkillOverview && <option value={-1}>Introduction</option>}
+                {skillPartGroups.map((part, partIndex) => (
+                  <option key={part.key} value={partIndex}>
+                    {part.label}
+                  </option>
+                ))}
+              </select>
+            )}
           </div>
         </div>
 
         {/* ================= AUTHENTIC SHIN KANZEN PART BANNER ================= */}
-        <div className="shinkanzen-part-header mb-5">
-          <div className="shinkanzen-part-banner">
-            <div className="flex items-center">
-              <div className="shinkanzen-registration-marks">
-                <div className="shinkanzen-reg-bar"></div>
-                <div className="shinkanzen-reg-bar"></div>
-                <div className="shinkanzen-reg-bar"></div>
-                <div className="shinkanzen-reg-bar"></div>
-              </div>
-              <div className="shinkanzen-white-pill">
-                <div className="shinkanzen-pill-num-box">
-                  {data.mondaiNumber || data.part || 1}
+        {!hasSkillOverview && (
+          <div className="shinkanzen-part-header mb-5">
+            <div className="shinkanzen-part-banner">
+              <div className="flex items-center">
+                <div className="shinkanzen-registration-marks">
+                  <div className="shinkanzen-reg-bar"></div>
+                  <div className="shinkanzen-reg-bar"></div>
+                  <div className="shinkanzen-reg-bar"></div>
+                  <div className="shinkanzen-reg-bar"></div>
                 </div>
-                <span className="shinkanzen-pill-title">
-                  {data.partTitle || PART_TITLES[data.part] || '第1部：問題紹介'}
-                </span>
-                {data.partTitleEn && (
-                  <span className="shinkanzen-pill-en">
-                    {data.partTitleEn}
+                <div className="shinkanzen-white-pill">
+                  <div className="shinkanzen-pill-num-box">
+                    {data.mondaiNumber || data.part || 1}
+                  </div>
+                  <span className="shinkanzen-pill-title">
+                    {data.partTitle || PART_TITLES[data.part] || '第1部：問題紹介'}
                   </span>
-                )}
+                  {data.partTitleEn && (
+                    <span className="shinkanzen-pill-en">
+                      {data.partTitleEn}
+                    </span>
+                  )}
+                </div>
               </div>
-            </div>
 
-            {/* Diamond registration pattern on right */}
-            <div className="hidden sm:flex items-center text-slate-400 opacity-60 text-xs font-mono tracking-widest">
-              ◇◇◇
+              {/* Diamond registration pattern on right */}
+              <div className="hidden sm:flex items-center text-slate-400 opacity-60 text-xs font-mono tracking-widest">
+                ◇◇◇
+              </div>
             </div>
           </div>
-        </div>
+        )}
 
         {/* ================= AUTHENTIC MONDAI HEADER & OVERVIEW (Only for Part 1) ================= */}
         {!isSkillChapter && (
@@ -2143,8 +2515,12 @@ const ShinkanzenN3ListeningBook = () => {
                           else optClass += " dimmed";
                         }
 
-                        // Format option text cleanly (strip leading digits like "1. ")
-                        const cleanOptText = optText.replace(/^\d+[\.\s　]*/, '');
+                        // Strip only the current choice label, preserving numeric answer content.
+                        const optionNumber = String(optIdx + 1);
+                        const optionPrefixPattern = new RegExp(`^${optionNumber}(?:[.\\s\\u3000]+|(?=[\\uFF08(]))`);
+                        const cleanOptText = optText.trim() === optionNumber
+                          ? ''
+                          : optText.replace(optionPrefixPattern, '').trim();
 
                         return (
                           <button
