@@ -1471,7 +1471,7 @@ const ShinkanzenN3ListeningBook = () => {
               )}
 
               {/* Authentic Exercise Paper Sheet */}
-              <div className="shinkanzen-listening-paper rounded-xl p-4 sm:p-6 mb-8">
+              <div className={`shinkanzen-listening-paper rounded-xl px-4 sm:px-6 ${chapterId === 'skill-5' && !showExerciseHeader ? 'mb-4 py-3 sm:py-4' : 'mb-8 py-4 sm:py-6'}`}>
                 {/* Exercise Header Banner */}
                 {showExerciseHeader && (
                 <div className="shinkanzen-exercise-header-banner">
