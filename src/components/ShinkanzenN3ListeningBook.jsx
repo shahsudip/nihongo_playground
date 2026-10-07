@@ -760,6 +760,43 @@ const SKILL_6_PART_TITLES = {
   3: '<ruby>話<rt>はなし</rt></ruby>のパターンを<ruby>手<rt>て</rt></ruby>がかりにして<ruby>意見<rt>いけん</rt></ruby>・<ruby>主張<rt>しゅちょう</rt></ruby>を<ruby>聞<rt>き</rt></ruby>き<ruby>取<rt>と</rt></ruby>る',
 };
 
+const SKILL_6_PART_INTROS = {
+  1: {
+    descriptionJp: '<ruby>話<rt>はな</rt></ruby>しを<ruby>始<rt>はじ</rt></ruby>めるとき、はじめに<ruby>話題<rt>わだい</rt></ruby>を<ruby>知<rt>し</rt></ruby>らせることがよくあるので、<ruby>下<rt>した</rt></ruby>のような<ruby>表現<rt>ひょうげん</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>して、まず<ruby>話題<rt>わだい</rt></ruby>をつかみます。そして、<ruby>内容<rt>ないよう</rt></ruby>を<ruby>予想<rt>よそう</rt></ruby>しながら、その<ruby>後<rt>あと</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、<ruby>全体<rt>ぜんたい</rt></ruby>として<ruby>言<rt>い</rt></ruby>いたいことを<ruby>考<rt>かんが</rt></ruby>えます。',
+    descriptionEn: 'It is quite normal practice to make the subject known first at the beginning of a talk. Focus attention on the expressions below to get a good grasp of the subject first. And then listen to the talk while anticipating the contents and consider the contents as a whole.',
+    expressionHeading: '<ruby>表現<rt>ひょうげん</rt></ruby>',
+    expressionLabel: '<ruby>話題<rt>わだい</rt></ruby>を<ruby>知<rt>し</rt></ruby>らせる',
+    expressionEn: 'Making the subject known',
+    expressions: ['<ruby>最近<rt>さいきん</rt></ruby>、〜が<ruby>増<rt>ふ</rt></ruby>えています／よく〜ています', '〜（こと）があります／よく〜（こと）があります', '〜をご<ruby>紹介<rt>しょうかい</rt></ruby>します', 'これは〜です／ここは〜です', '〜を<ruby>知<rt>し</rt></ruby>っていますか／ご<ruby>存<rt>ぞん</rt></ruby>じですか'],
+  },
+  2: {
+    descriptionJp: '<ruby>何<rt>なに</rt></ruby>かを<ruby>頼<rt>たの</rt></ruby>んだり<ruby>謝<rt>あやま</rt></ruby>ったりする<ruby>前<rt>まえ</rt></ruby>には、<ruby>前置<rt>まえお</rt></ruby>きの<ruby>表現<rt>ひょうげん</rt></ruby>をよく<ruby>使<rt>つか</rt></ruby>います。これらの<ruby>表現<rt>ひょうげん</rt></ruby>は<ruby>話<rt>はな</rt></ruby>し<ruby>手<rt>て</rt></ruby>の<ruby>意図<rt>いと</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>える<ruby>手<rt>て</rt></ruby>がかりになります。',
+    descriptionEn: 'Preliminary expressions are often used before one asks or apologizes for something. These expressions provide a clue for considering the speaker intentions.',
+    expressionHeading: '<ruby>表現<rt>ひょうげん</rt></ruby>',
+    expressionRows: [
+      { label: '<ruby>意図<rt>いと</rt></ruby>を<ruby>知<rt>し</rt></ruby>らせる', en: 'Making known ones intentions', values: '<ruby>お願<rt>ねが</rt></ruby>い／うかがいたいこと／<ruby>質問<rt>しつもん</rt></ruby>／ご<ruby>相談<rt>そうだん</rt></ruby>／お<ruby>話<rt>はなし</rt></ruby>があるんですが' },
+      { label: '<ruby>話題<rt>わだい</rt></ruby>を<ruby>知<rt>し</rt></ruby>らせる', en: 'Making known ones subject', values: '〜のことなんですけど／〜なんだけど／〜んですが' },
+      { label: '<ruby>大切<rt>たいせつ</rt></ruby>なことを<ruby>言<rt>い</rt></ruby>う', en: 'Saying things of great importance', values: '<ruby>実<rt>じつ</rt></ruby>は／それが' },
+    ],
+  },
+  3: {
+    descriptionJp: '<ruby>自分<rt>じぶん</rt></ruby>の<ruby>意見<rt>いけん</rt></ruby>や<ruby>主張<rt>しゅちょう</rt></ruby>などを<ruby>述<rt>の</rt></ruby>べるとき、<ruby>一般的<rt>いっぱんてき</rt></ruby>に<ruby>言<rt>い</rt></ruby>われていることやこれまでのことと<ruby>比較<rt>ひかく</rt></ruby>しながら<ruby>話<rt>はな</rt></ruby>すことがあります。そのパターンを<ruby>手<rt>て</rt></ruby>がかりにして、<ruby>意見<rt>いけん</rt></ruby>・<ruby>主張<rt>しゅちょう</rt></ruby>を<ruby>聞<rt>き</rt></ruby>き<ruby>取<rt>と</rt></ruby>ります。',
+    descriptionEn: 'It is quite common for people stating their own opinions and making their own assertions to say what is generally said and to talk by comparing with things that have been around until now. Try to catch their opinions and assertions by taking their pattern of speech as a clue.',
+    expressionHeading: '〈<ruby>意見<rt>いけん</rt></ruby>・<ruby>主張<rt>しゅちょう</rt></ruby>を<ruby>述<rt>の</rt></ruby>べるパターンと<ruby>表現<rt>ひょうげん</rt></ruby>〉',
+    patternColumns: [
+      { label: '<ruby>一般論<rt>いっぱんろん</rt></ruby>・これまでの<ruby>状況<rt>じょうきょう</rt></ruby>など', values: ['よく〜／〜と<ruby>言<rt>い</rt></ruby>われます', 'みんな／もちろん', 'これまで〜でした／ました'] },
+      { label: '', values: ['しかし', '〜が／でも', 'それより'] },
+      { label: '<ruby>話<rt>はな</rt></ruby>す<ruby>人<rt>ひと</rt></ruby>の<ruby>意見<rt>いけん</rt></ruby>・<ruby>主張<rt>しゅちょう</rt></ruby>など', values: ['〜のではないでしょうか', '〜のです／〜と<ruby>思<rt>おも</rt></ruby>います', 'これからは〜／<ruby>今後<rt>こんご</rt></ruby>は〜'] },
+    ],
+  },
+};
+
+const SKILL_6_CONFIRMATION_INTRO = {
+  title: '<ruby>確認問題<rt>かくにんもんだい</rt></ruby>',
+  descriptionJp: 'この<ruby>問題<rt>もんだい</rt></ruby>は、ぜんたいとしてどんなないようかを<ruby>聞<rt>き</rt></ruby>く<ruby>問題<rt>もんだい</rt></ruby>です。<ruby>話<rt>はなし</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に<ruby>質問<rt>しつもん</rt></ruby>はありません。<br/><br/>まず<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてください。それから<ruby>質問<rt>しつもん</rt></ruby>とせんたくしを<ruby>聞<rt>き</rt></ruby>いて、1から4の<ruby>中<rt>なか</rt></ruby>から、<ruby>最<rt>もっと</rt></ruby>もよいものを一つえらんでください。',
+  trackCode: 'B45',
+};
+
 
 /**
  * Authentic Headphone Earphone Badge matching Shin Kanzen Master physical textbook:
@@ -1188,6 +1225,8 @@ const ShinkanzenN3ListeningBook = () => {
         ? SKILL_4_SECTION_NOTICES
         : chapterId === 'skill-5'
           ? SKILL_5_SECTION_NOTICES
+          : chapterId === 'skill-6'
+            ? {}
           : SKILL_SECTION_NOTICES;
     const activeSkillPartNotice = activeSkillPart?.sections?.[0]
       ? chapterSectionNotices[activeSkillPart.sections[0].title]
@@ -1196,6 +1235,12 @@ const ShinkanzenN3ListeningBook = () => {
       ? SKILL_6_PART_TITLES[activeSkillPart?.partNumber] || activeSkillPart?.title || ''
       : activeSkillPartNotice?.title || activeSkillPart?.title || '')
       .replace(/^\s*\d+(?:-[A-Z])?\s*/, '');
+    const activeSkillPartIntro = chapterId === 'skill-6'
+      ? SKILL_6_PART_INTROS[activeSkillPart?.partNumber]
+      : null;
+    const skill6ConfirmationIntro = chapterId === 'skill-6' && !activeSkillPart?.partNumber
+      ? SKILL_6_CONFIRMATION_INTRO
+      : null;
     return (
       <div className="space-y-10 mb-8">
         {/* Authentic Unit Header for Skill Chapters */}
@@ -1346,6 +1391,94 @@ const ShinkanzenN3ListeningBook = () => {
             </div>
           </div>
         )}
+
+        {activeSkillPartIntro && (
+          <section data-skill-part-intro={activeSkillPart.partNumber} className="px-1 sm:px-5">
+            <p
+              className="m-0 font-serif text-base leading-8 text-slate-800 dark:text-slate-200 sm:text-lg"
+              dangerouslySetInnerHTML={{ __html: activeSkillPartIntro.descriptionJp }}
+            />
+            <p className="m-0 mt-4 text-sm italic leading-6 text-slate-600 dark:text-slate-400 sm:text-base">
+              {activeSkillPartIntro.descriptionEn}
+            </p>
+
+            <div className="mt-8 font-serif text-slate-800 dark:text-slate-200">
+              <h3
+                className="m-0 inline-block border-2 border-stone-500 px-2 py-0.5 text-lg font-bold"
+                dangerouslySetInnerHTML={{ __html: activeSkillPartIntro.expressionHeading }}
+              />
+
+              {activeSkillPartIntro.expressions && (
+                <div className="mt-4">
+                  <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                    <h4
+                      className="m-0 text-lg font-medium"
+                      dangerouslySetInnerHTML={{ __html: activeSkillPartIntro.expressionLabel }}
+                    />
+                    <span className="text-sm italic text-stone-500">{activeSkillPartIntro.expressionEn}</span>
+                  </div>
+                  <ul className="m-0 mt-3 list-none space-y-2 pl-4 text-base leading-7 sm:pl-10 sm:text-lg">
+                    {activeSkillPartIntro.expressions.map((expression) => (
+                      <li key={expression} dangerouslySetInnerHTML={{ __html: expression }} />
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {activeSkillPartIntro.expressionRows && (
+                <div className="mt-4 space-y-5">
+                  {activeSkillPartIntro.expressionRows.map((row) => (
+                    <div key={row.en}>
+                      <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                        <h4 className="m-0 text-lg font-medium" dangerouslySetInnerHTML={{ __html: row.label }} />
+                        <span className="text-sm italic text-stone-500">{row.en}</span>
+                      </div>
+                      <p className="m-0 mt-2 pl-4 text-base leading-7 sm:pl-10 sm:text-lg" dangerouslySetInnerHTML={{ __html: row.values }} />
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {activeSkillPartIntro.patternColumns && (
+                <div className="mt-5 grid items-center gap-3 text-center sm:grid-cols-[1fr_auto_1fr]">
+                  {activeSkillPartIntro.patternColumns.map((column, index) => (
+                    <div key={index} className={index === 1 ? 'space-y-2 text-lg sm:border-x sm:border-stone-300 sm:px-6' : 'space-y-2'}>
+                      {column.label && <h4 className="m-0 border border-stone-400 px-3 py-1 text-lg font-medium" dangerouslySetInnerHTML={{ __html: column.label }} />}
+                      {column.values.map((value) => <p key={value} className="m-0 text-base leading-7 sm:text-lg" dangerouslySetInnerHTML={{ __html: value }} />)}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </section>
+        )}
+
+        {skill6ConfirmationIntro && (() => {
+          const confirmationTrack = data.hotspots?.find((hotspot) => hotspot.trackCode === skill6ConfirmationIntro.trackCode);
+          const isConfirmationTrackPlaying = isPlaying && activeAudioSrc === confirmationTrack?.audioSrc;
+          return (
+            <section data-skill-confirmation-intro className="px-1 sm:px-5">
+              <div className="flex items-center gap-3">
+                <h3 className="m-0 font-serif text-2xl font-medium text-slate-800 dark:text-slate-100" dangerouslySetInnerHTML={{ __html: skill6ConfirmationIntro.title }} />
+                {confirmationTrack?.audioSrc && (
+                  <HeadphoneBadge
+                    trackCode={skill6ConfirmationIntro.trackCode}
+                    isPlaying={isConfirmationTrackPlaying}
+                    onClick={() => {
+                      if (isConfirmationTrackPlaying) audioRef.current?.pause();
+                      else switchTrack(confirmationTrack.audioSrc);
+                    }}
+                    title={`Play Confirmation Instructions [${skill6ConfirmationIntro.trackCode}]`}
+                  />
+                )}
+              </div>
+              <p
+                className="m-0 mt-4 font-serif text-base leading-8 text-slate-800 dark:text-slate-200 sm:text-lg"
+                dangerouslySetInnerHTML={{ __html: skill6ConfirmationIntro.descriptionJp }}
+              />
+            </section>
+          );
+        })()}
 
         {groupedSections.length === 0 && data.hotspots?.length > 0 && (
           <div className="space-y-4">
@@ -2140,6 +2273,8 @@ const ShinkanzenN3ListeningBook = () => {
                       const isQuestionTrackPlaying = isPlaying && activeAudioSrc === q.audioSrc;
                       const isSkill4Part2Example = isSkill4Part2 && isExampleSection;
                       const usesQuestionAudioBadge = isSkill4Part2Practice || chapterId === 'skill-6';
+                      const shouldShowQuestionText = !isBookFaithfulUnit2 && !isSkill4Part2
+                        && !(chapterId === 'skill-6' && sec.title === '確認問題');
 
                       return (
                         <div key={q.originalIdx} className={isSkill4Part2 || chapterId === 'skill-6' ? 'py-1.5 space-y-2' : 'p-4 sm:p-5 rounded-xl border border-[var(--color-border)] bg-transparent space-y-3'}>
@@ -2184,7 +2319,7 @@ const ShinkanzenN3ListeningBook = () => {
                                     {presentation.context}
                                   </p>
                                 )}
-                                {!isBookFaithfulUnit2 && !isSkill4Part2 && (
+                                {shouldShowQuestionText && (
                                   <p
                                     className="text-sm sm:text-base font-serif font-bold text-slate-800 dark:text-slate-100 m-0 leading-relaxed"
                                     dangerouslySetInnerHTML={{ __html: presentation.questionText }}
