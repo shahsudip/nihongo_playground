@@ -9,6 +9,7 @@ import { useAuth } from '../context/AuthContext';
 import { parseQuestionPresentation } from '../utils/shinkanzenQuestionMarkup.js';
 import { SKILL_3_SECTION_NOTICES } from '../data/shinkanzen_listening/skill-3-notices.js';
 import { SKILL_4_SECTION_NOTICES } from '../data/shinkanzen_listening/skill-4-notices.js';
+import { SKILL_5_SECTION_NOTICES } from '../data/shinkanzen_listening/skill-5-notices.js';
 
 // Eagerly load all local Shinkanzen Listening JSON files
 const localChapterModules = import.meta.glob('../data/shinkanzen_listening/*.json', { eager: true });
@@ -651,59 +652,81 @@ const SKILL_SECTION_NOTICES = {
 const SKILL_OVERVIEWS = {
   'skill-2': {
     numeral: 'II',
-    titleHtml: '<ruby>「発話表現」<rt>はつ わ ひょうげん</rt></ruby>のスキルを<ruby>学<rt>まな</rt></ruby>ぶ',
+    titleHtml: '「<ruby>発話表現<rt>はつわひょうげん</rt></ruby>」のスキルを<ruby>学<rt>まな</rt></ruby>ぶ',
     headingHtml: '<ruby>問題形式<rt>もんだいけいしき</rt></ruby>と<ruby>内容<rt>ないよう</rt></ruby>',
-    descriptionJp: '絵を見ながら状況説明文と質問を聞きます。それから、3つの選択肢を聞いて、やじるし（→）の人の発話として最もよいものを選びます。',
+    descriptionJp: '<ruby>絵<rt>え</rt></ruby>を<ruby>見<rt>み</rt></ruby>ながら<ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>と<ruby>質問<rt>しつもん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きます。それから、3つの<ruby>選択肢<rt>せんたくし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、やじるし（→）の<ruby>人<rt>ひと</rt></ruby>の<ruby>発話<rt>はつわ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>もよいものを<ruby>選<rt>えら</rt></ruby>びます。',
     descriptionEn: 'The problem is to listen to the explanation of the situational context and to the question while looking at a picture and then to listen to the three choices and select the one you think is best as an utterance of the person marked with an arrow.',
-    steps: ['絵を見ながら状況説明文と質問を聞く', '3つの選択肢を聞く', '答えを選ぶ'],
+    steps: ['<ruby>絵<rt>え</rt></ruby>を<ruby>見<rt>み</rt></ruby>ながら<ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>と<ruby>質問<rt>しつもん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く', '3つの<ruby>選択肢<rt>せんたくし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く', '<ruby>答<rt>こた</rt></ruby>えを<ruby>選<rt>えら</rt></ruby>ぶ'],
     imageSrc: '/images/shinkanzen_listening/skill-2/unit_overview.png',
     imageAlt: 'Textbook scene showing the person marked by an arrow',
   },
   'skill-3': {
     numeral: 'III',
-    titleHtml: '<ruby>「即時応答」<rt>そくじおうとう</rt></ruby>のスキルを<ruby>学<rt>まな</rt></ruby>ぶ',
+    titleHtml: '「<ruby>即時応答<rt>そくじおうとう</rt></ruby>」のスキルを<ruby>学<rt>まな</rt></ruby>ぶ',
     headingHtml: '<ruby>問題形式<rt>もんだいけいしき</rt></ruby>と<ruby>内容<rt>ないよう</rt></ruby>',
-    descriptionJp: '質問、報告、依頼、あいさつなどの短い文を聞いた後、すぐにそれに合う答え方を考えます。',
+    descriptionJp: '<ruby>質問<rt>しつもん</rt></ruby>、<ruby>報告<rt>ほうこく</rt></ruby>、<ruby>依頼<rt>いらい</rt></ruby>、あいさつなどの<ruby>短<rt>みじか</rt></ruby>い<ruby>文<rt>ぶん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いた<ruby>後<rt>あと</rt></ruby>、すぐにそれに<ruby>合<rt>あ</rt></ruby>う<ruby>答<rt>こた</rt></ruby>え<ruby>方<rt>かた</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>えます。',
     descriptionEn: 'After you have listened to the short sentences consisting of questions, report statements, requests or greetings, you should think immediately of the way of answering them in a suitable manner.',
-    steps: ['短い文を聞く', '3つの選択肢を聞く', '答えを選ぶ'],
+    steps: ['<ruby>短<rt>みじか</rt></ruby>い<ruby>文<rt>ぶん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く', '3つの<ruby>選択肢<rt>せんたくし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く', '<ruby>答<rt>こた</rt></ruby>えを<ruby>選<rt>えら</rt></ruby>ぶ'],
     points: [
       {
-        jp: 'だれの動作を表す表現かに注意する',
+        jp: 'だれの<ruby>動作<rt>どうさ</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す<ruby>表現<rt>ひょうげん</rt></ruby>かに<ruby>注意<rt>ちゅうい</rt></ruby>する',
         en: 'Pay attention to the expression that indicates who performs the action.',
       },
       {
-        jp: '敬語の表現に注意する',
+        jp: '<ruby>敬語<rt>けいご</rt></ruby>の<ruby>表現<rt>ひょうげん</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>する',
         en: 'Pay attention to expressions that indicate honorifics.',
       },
       {
-        jp: '会話で使われる表現やあいさつの表現に注意する',
+        jp: '<ruby>会話<rt>かいわ</rt></ruby>で<ruby>使<rt>つか</rt></ruby>われる<ruby>表現<rt>ひょうげん</rt></ruby>やあいさつの<ruby>表現<rt>ひょうげん</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>する',
         en: 'Pay attention to expressions that are used in colloquial language and expressions for greeting.',
       },
       {
-        jp: '間接的な答え方に注意する',
+        jp: '<ruby>間接的<rt>かんせつてき</rt></ruby>な<ruby>答<rt>こた</rt></ruby>え<ruby>方<rt>かた</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>する',
         en: 'Pay attention to ways of answering in an indirect manner.',
       },
     ],
   },
   'skill-4': {
     numeral: 'IV',
-    titleHtml: '<ruby>「課題理解」<rt>かだいりかい</rt></ruby>のスキルを<ruby>学<rt>まな</rt></ruby>ぶ',
+    titleHtml: '「<ruby>課題理解<rt>かだいりかい</rt></ruby>」のスキルを<ruby>学<rt>まな</rt></ruby>ぶ',
     headingHtml: '<ruby>問題形式<rt>もんだいけいしき</rt></ruby>と<ruby>内容<rt>ないよう</rt></ruby>',
-    descriptionJp: 'まとまりのある話から依頼や指示、提案などを聞き取り、これからするべきことを理解します。選択肢は文字または絵で問題用紙に印刷されているので、それを見ながら話を聞きます。',
-    descriptionEn: 'The problem is to listen carefully and pick up the requests, instructions, and suggestions in a coherent conversation or spoken statement, and to understand what should be done next. The choices are printed as text or illustrations, so listen while looking at them.',
-    steps: ['状況説明文と質問文を聞く', '話を聞く', 'もう一度質問文を聞く', '選択肢から答えを選ぶ'],
+    descriptionJp: 'まとまりのある<ruby>話<rt>はなし</rt></ruby>から<ruby>依頼<rt>いらい</rt></ruby>や<ruby>指示<rt>しじ</rt></ruby>、<ruby>提案<rt>ていあん</rt></ruby>などを<ruby>聞<rt>き</rt></ruby>き<ruby>取<rt>と</rt></ruby>り、これからするべきことを<ruby>理解<rt>りかい</rt></ruby>します。<ruby>選択肢<rt>せんたくし</rt></ruby>は<ruby>文字<rt>もじ</rt></ruby>または<ruby>絵<rt>え</rt></ruby>で<ruby>問題用紙<rt>もんだいようし</rt></ruby>に<ruby>印刷<rt>いんさつ</rt></ruby>されているので、それを<ruby>見<rt>み</rt></ruby>ながら<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きます。',
+    descriptionEn: 'The problem is to listen carefully and pick up the requests, instructions and the suggestions of a coherent conversation or spoken statement and to comprehend what should be done next. On the problem sheet, the choices are shown in written form or as illustrations. While looking at these, listen to what is being said.',
+    steps: ['<ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>と<ruby>質問文<rt>しつもんぶん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く', '<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く', 'もう<ruby>一度<rt>いちど</rt></ruby><ruby>質問文<rt>しつもんぶん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く', '<ruby>選択肢<rt>せんたくし</rt></ruby>から<ruby>答<rt>こた</rt></ruby>えを<ruby>選<rt>えら</rt></ruby>ぶ'],
     points: [
       {
-        jp: 'するべきことを聞き取る',
+        jp: 'するべきことを<ruby>聞<rt>き</rt></ruby>き<ruby>取<rt>と</rt></ruby>る',
         en: 'Listen for what has to be done.',
       },
       {
-        jp: '指示や提案に対して同意しているかどうかを考える',
-        en: 'Consider whether the instruction or suggestion is accepted.',
+        jp: '<ruby>指示<rt>しじ</rt></ruby>や<ruby>提案<rt>ていあん</rt></ruby>に<ruby>対<rt>たい</rt></ruby>して<ruby>同意<rt>どうい</rt></ruby>しているかどうかを<ruby>考<rt>かんが</rt></ruby>える',
+        en: 'Consider whether or not the instruction or suggestion is assented to.',
       },
       {
-        jp: 'するべきことがいくつかある場合は、その中で優先することを考える',
-        en: 'When several actions are required, decide which one takes priority.',
+        jp: 'するべきことがいくつかある<ruby>場合<rt>ばあい</rt></ruby>は、その<ruby>中<rt>なか</rt></ruby>で<ruby>優先<rt>ゆうせん</rt></ruby>することを<ruby>考<rt>かんが</rt></ruby>える',
+        en: 'When there are many things that should be done, consider which takes precedence among them.',
+      },
+    ],
+  },
+  'skill-5': {
+    numeral: 'V',
+    titleHtml: '「ポイント<ruby>理解<rt>りかい</rt></ruby>」のスキルを<ruby>学<rt>まな</rt></ruby>ぶ',
+    headingHtml: '<ruby>問題形式<rt>もんだいけいしき</rt></ruby>と<ruby>内容<rt>ないよう</rt></ruby>',
+    descriptionJp: 'まとまりのある<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、<ruby>出来事<rt>できごと</rt></ruby>の<ruby>理由<rt>りゆう</rt></ruby>、<ruby>目的<rt>もくてき</rt></ruby>や<ruby>話<rt>はな</rt></ruby>し<ruby>手<rt>て</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちなど、はじめに<ruby>質問文<rt>しつもんぶん</rt></ruby>で<ruby>指示<rt>しじ</rt></ruby>されたポイントを<ruby>聞<rt>き</rt></ruby>き<ruby>取<rt>と</rt></ruby>ります。<ruby>選択肢<rt>せんたくし</rt></ruby>は<ruby>印刷<rt>いんさつ</rt></ruby>されていて、<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く<ruby>前<rt>まえ</rt></ruby>に<ruby>読<rt>よ</rt></ruby>む<ruby>時間<rt>じかん</rt></ruby>があります。',
+    descriptionEn: 'The problem is to listen to a coherent conversation or spoken statement and to catch the points indicated at the beginning in the question text, the reason for and the purpose of the event and the feelings of the speakers. The choices are printed and before listening to the conversation there will be time for reading them.',
+    steps: ['<ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>と<ruby>質問文<rt>しつもんぶん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く', '<ruby>問題用紙<rt>もんだいようし</rt></ruby>にある<ruby>選択肢<rt>せんたくし</rt></ruby>を<ruby>読<rt>よ</rt></ruby>む', '<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く', 'もう<ruby>一度<rt>いちど</rt></ruby><ruby>質問文<rt>しつもんぶん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く', '<ruby>選択肢<rt>せんたくし</rt></ruby>から<ruby>答<rt>こた</rt></ruby>えを<ruby>選<rt>えら</rt></ruby>ぶ'],
+    points: [
+      {
+        jp: '<ruby>選択肢<rt>せんたくし</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じ<ruby>言葉<rt>ことば</rt></ruby>が<ruby>出<rt>で</rt></ruby>てくる<ruby>部分<rt>ぶぶん</rt></ruby>に<ruby>特<rt>とく</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>して<ruby>聞<rt>き</rt></ruby>く',
+        en: 'Listen carefully particularly for the part where a word that is the same as in the choices is used.',
+      },
+      {
+        jp: '<ruby>答<rt>こた</rt></ruby>える<ruby>文<rt>ぶん</rt></ruby>で<ruby>言<rt>い</rt></ruby>いたいこと（<ruby>肯定的<rt>こうていてき</rt></ruby>か<ruby>否定的<rt>ひていてき</rt></ruby>か）を<ruby>考<rt>かんが</rt></ruby>える',
+        en: 'Consider what the speaker wants to say in reply (affirmative or negative).',
+      },
+      {
+        jp: '<ruby>追加情報<rt>ついかじょうほう</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>する',
+        en: 'Pay attention to additional information.',
       },
     ],
   },
@@ -714,7 +737,7 @@ const SKILL_OVERVIEWS = {
  * Authentic Headphone Earphone Badge matching Shin Kanzen Master physical textbook:
  * Headband arc, two earpads, dotted halo, with Disc Letter (e.g. A) on top and Track No (e.g. 01) below.
  */
-const HeadphoneBadge = ({ trackCode = "A-01", isPlaying = false, onClick, title }) => {
+const HeadphoneBadge = ({ trackCode = "A-01", isPlaying = false, onClick, title, compact = false }) => {
   let letter = "A";
   let num = "01";
   if (trackCode) {
@@ -738,11 +761,11 @@ const HeadphoneBadge = ({ trackCode = "A-01", isPlaying = false, onClick, title 
         isPlaying ? 'scale-105' : 'hover:scale-105'
       }`}
     >
-      <div className="relative w-11 h-11 sm:w-12 sm:h-12 flex items-center justify-center">
+      <div className={`relative flex items-center justify-center ${compact ? 'h-9 w-9 sm:h-10 sm:w-10' : 'w-11 h-11 sm:w-12 sm:h-12'}`}>
         {isPlaying && (
           <div className="absolute inset-0 rounded-full bg-emerald-500/25 dark:bg-purple-400/35 animate-ping pointer-events-none" />
         )}
-        <svg viewBox="0 0 60 60" className="w-11 h-11 sm:w-12 sm:h-12 text-[#1e293b] dark:text-slate-200 transition-colors">
+        <svg viewBox="0 0 60 60" className={`${compact ? 'h-9 w-9 sm:h-10 sm:w-10' : 'w-11 h-11 sm:w-12 sm:h-12'} text-[#1e293b] dark:text-slate-200 transition-colors`}>
           {/* Subtle dotted halo circle like the original book print */}
           <circle
             cx="30"
@@ -827,6 +850,7 @@ const ShinkanzenN3ListeningBook = () => {
   const [showVideo, setShowVideo] = useState(false);
   const [videoState, setVideoState] = useState({ status: 'idle', url: null, message: null });
   const [expandedDetails, setExpandedDetails] = useState({});
+  const [openMarkChoices, setOpenMarkChoices] = useState({});
   const [selectedSkillPartIndex, setSelectedSkillPartIndex] = useState(() => SKILL_OVERVIEWS[chapterId] ? -1 : 0);
 
   // Audio State
@@ -861,7 +885,7 @@ const ShinkanzenN3ListeningBook = () => {
     const map = new Map();
     data.questions.forEach((q, originalIdx) => {
       const title = q.sectionTitle || '練習';
-      const sectionKey = chapterId === 'skill-4'
+      const sectionKey = chapterId === 'skill-4' || chapterId === 'skill-5'
         ? `${title}::${q.trackId || q.audioSrc || originalIdx}`
         : title;
       if (!map.has(sectionKey)) {
@@ -872,6 +896,7 @@ const ShinkanzenN3ListeningBook = () => {
           trackLabel: q.trackLabel || firstHs?.label,
           trackCode: q.trackCode || firstHs?.trackCode || firstHs?.label?.match(/\[(.*?)\]/)?.[1] || 'A-01',
           audioSrc: q.audioSrc || firstHs?.audioSrc,
+          exerciseTitleHtml: q.exerciseTitleHtml,
           instruction: q.instruction || data.instruction,
           questions: []
         });
@@ -932,6 +957,7 @@ const ShinkanzenN3ListeningBook = () => {
     setAnswers({});
     setRevealed({});
     setExpandedDetails({});
+    setOpenMarkChoices({});
     setLoading(true);
     setError(null);
     setShowScript(false);
@@ -1126,7 +1152,9 @@ const ShinkanzenN3ListeningBook = () => {
       ? SKILL_3_SECTION_NOTICES
       : chapterId === 'skill-4'
         ? SKILL_4_SECTION_NOTICES
-        : SKILL_SECTION_NOTICES;
+        : chapterId === 'skill-5'
+          ? SKILL_5_SECTION_NOTICES
+          : SKILL_SECTION_NOTICES;
     const activeSkillPartNotice = activeSkillPart?.sections?.[0]
       ? chapterSectionNotices[activeSkillPart.sections[0].title]
       : null;
@@ -1190,7 +1218,10 @@ const ShinkanzenN3ListeningBook = () => {
             />
 
             <div className="mt-7 space-y-4">
-              <p className="m-0 font-serif text-base leading-8 text-slate-800 dark:text-slate-200 sm:text-lg">{skillOverview.descriptionJp}</p>
+              <p
+                className="m-0 font-serif text-base leading-8 text-slate-800 dark:text-slate-200 sm:text-lg"
+                dangerouslySetInnerHTML={{ __html: skillOverview.descriptionJp }}
+              />
               <p lang="en" className="m-0 text-sm italic leading-6 text-slate-600 dark:text-slate-400 sm:text-base">
                 {skillOverview.descriptionEn}
               </p>
@@ -1199,9 +1230,10 @@ const ShinkanzenN3ListeningBook = () => {
             <div className="mt-7 flex flex-col items-stretch justify-center gap-2 sm:flex-row sm:items-center">
               {skillOverview.steps.map((step, stepIndex) => (
                 <React.Fragment key={step}>
-                  <div className="flex-1 border border-stone-400 bg-white px-3 py-2 text-center font-serif text-sm text-slate-800 shadow-sm dark:border-stone-600 dark:bg-slate-900 dark:text-slate-100 sm:text-base">
-                    {step}
-                  </div>
+                  <div
+                    className="flex-1 border border-stone-400 bg-white px-3 py-2 text-center font-serif text-sm text-slate-800 shadow-sm dark:border-stone-600 dark:bg-slate-900 dark:text-slate-100 sm:text-base"
+                    dangerouslySetInnerHTML={{ __html: step }}
+                  />
                   {stepIndex < skillOverview.steps.length - 1 && (
                     <span className="rotate-90 self-center text-xl text-stone-500 sm:rotate-0" aria-hidden="true">&rarr;</span>
                   )}
@@ -1220,7 +1252,10 @@ const ShinkanzenN3ListeningBook = () => {
                     <li key={point.en} className="grid grid-cols-[auto_1fr] gap-x-3 border-b border-stone-200 pb-3 last:border-b-0 dark:border-stone-800">
                       <span className="font-serif text-base font-bold text-stone-500">{pointIndex + 1}</span>
                       <div>
-                        <p className="m-0 font-serif text-base text-slate-800 dark:text-slate-200">{point.jp}</p>
+                        <p
+                          className="m-0 font-serif text-base text-slate-800 dark:text-slate-200"
+                          dangerouslySetInnerHTML={{ __html: point.jp }}
+                        />
                         <p className="m-0 mt-1 text-xs italic text-stone-500 sm:text-sm">{point.en}</p>
                       </div>
                     </li>
@@ -1306,19 +1341,43 @@ const ShinkanzenN3ListeningBook = () => {
 
         {/* Render Each Section */}
         {visibleGroupedSections.map((sec, secIdx) => {
-          const notice = chapterId === 'skill-4' && secIdx > 0
+          const notice = (chapterId === 'skill-4' || chapterId === 'skill-5') && secIdx > 0
             ? null
             : chapterSectionNotices[sec.title];
           const isTrackPlaying = isPlaying && activeAudioSrc === sec.audioSrc;
-          const exerciseTitle = chapterId === 'skill-4'
+          const isSkill5MarkingSection = chapterId === 'skill-5' && /^[13]\s/.test(sec.title) && sec.questions.every(q => q.options?.length === 4);
+          const rawExerciseTitle = chapterId === 'skill-4' || chapterId === 'skill-5'
             ? (sec.trackLabel || sec.title).replace(/\s*\[[^\]]+\]\s*$/, '')
             : sec.title;
+          const normalizeSkill5ExerciseTitle = (title) => title
+            .replace(/\s*\(\d+\)\s*$/, '')
+            .replace(/^(確認問題)\s+\d+$/, '$1');
+          const exerciseTitle = chapterId === 'skill-5'
+            ? normalizeSkill5ExerciseTitle(rawExerciseTitle)
+            : rawExerciseTitle;
+          const previousSection = visibleGroupedSections[secIdx - 1];
+          const previousRawExerciseTitle = previousSection
+            ? (previousSection.trackLabel || previousSection.title).replace(/\s*\[[^\]]+\]\s*$/, '')
+            : '';
+          const isRepeatedSkill5ExerciseHeader = chapterId === 'skill-5' && secIdx > 0
+            && normalizeSkill5ExerciseTitle(previousRawExerciseTitle) === exerciseTitle;
+          const showExerciseHeader = !isRepeatedSkill5ExerciseHeader;
+          const exerciseTitleHtml = sec.exerciseTitleHtml || (chapterId === 'skill-5'
+            ? exerciseTitle
+                .replace(/^例題/, '<ruby>例題<rt>れいだい</rt></ruby>')
+                .replace(/^練習/, '<ruby>練習<rt>れんしゅう</rt></ruby>')
+                .replace(/^確認問題/, '<ruby>確認問題<rt>かくにんもんだい</rt></ruby>')
+            : exerciseTitle);
+          const sectionInstructionHtml = isSkill5MarkingSection
+            ? '<ruby>状況説明文<rt>じょうきょうせつめいぶん</rt></ruby>と<ruby>質問文<rt>しつもんぶん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてから、<ruby>選択肢<rt>せんたくし</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んでください。それから<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、<ruby>答<rt>こた</rt></ruby>えになるものに○、ならないものに×を<ruby>書<rt>か</rt></ruby>いてください。'
+            : sec.instruction;
+          const isExampleSection = /例題/.test(exerciseTitle);
           const supplementalTrackAfterSection = chapterId === 'skill-4' && sec.trackCode === 'A28'
             ? data.hotspots?.find((hotspot) => hotspot.label?.includes('[A29]'))
             : null;
           
           // Determine section render mode
-          const isTrueFalseSection = sec.questions.every(q => 
+          const isTrueFalseSection = isSkill5MarkingSection || sec.questions.every(q =>
             q.options?.some(o => o.includes('○') || o.includes('×'))
           );
 
@@ -1414,25 +1473,31 @@ const ShinkanzenN3ListeningBook = () => {
               {/* Authentic Exercise Paper Sheet */}
               <div className="shinkanzen-listening-paper rounded-xl p-4 sm:p-6 mb-8">
                 {/* Exercise Header Banner */}
+                {showExerciseHeader && (
                 <div className="shinkanzen-exercise-header-banner">
                   <div className="flex items-start gap-3">
                     <div className="mt-1">
-                      <span className="shinkanzen-hatch-icon" />
+                      {isExampleSection ? (
+                        <span className="shinkanzen-reidai-star-badge text-xl" aria-hidden="true">☆</span>
+                      ) : (
+                        <span className="shinkanzen-hatch-icon" />
+                      )}
                     </div>
                     <div>
                       <h3 className="text-lg sm:text-xl font-black text-slate-900 dark:text-slate-100 m-0 flex items-center gap-2">
-                        <span>{exerciseTitle}</span>
+                        <span dangerouslySetInnerHTML={{ __html: exerciseTitleHtml }} />
                       </h3>
-                      {sec.instruction && (
+                      {sectionInstructionHtml && (
                         <p 
                           className="text-xs sm:text-sm text-stone-600 dark:text-stone-300 font-serif mt-1 m-0 leading-relaxed"
-                          dangerouslySetInnerHTML={{ __html: sec.instruction }}
+                          dangerouslySetInnerHTML={{ __html: sectionInstructionHtml }}
                         />
                       )}
                     </div>
                   </div>
 
                   {/* Single prominent Headphone Badge for this exercise */}
+                  {chapterId !== 'skill-5' && (
                   <div className="flex items-center gap-2 shrink-0">
                     <HeadphoneBadge
                       trackCode={sec.trackCode}
@@ -1449,7 +1514,9 @@ const ShinkanzenN3ListeningBook = () => {
                       title={`Play Exercise Audio [${sec.trackCode}]`}
                     />
                   </div>
+                  )}
                 </div>
+                )}
 
                 {/* Sub-renderer A: Bubble Letter Mode (e.g. 練習1-A, 1-B, 1-C) */}
                 {isBubbleLetterSection ? (
@@ -1701,6 +1768,20 @@ const ShinkanzenN3ListeningBook = () => {
                                 <span className="font-bold text-slate-800 dark:text-slate-200 font-serif w-8 shrink-0">
                                   ({subNum})
                                 </span>
+                                {chapterId === 'skill-5' && qSubIdx === 0 && (
+                                  <HeadphoneBadge
+                                    compact
+                                    trackCode={sec.trackCode}
+                                    isPlaying={isTrackPlaying}
+                                    onClick={() => {
+                                      if (sec.audioSrc) {
+                                        if (isTrackPlaying) audioRef.current?.pause();
+                                        else switchTrack(sec.audioSrc);
+                                      }
+                                    }}
+                                    title={`Play Exercise Audio [${sec.trackCode}]`}
+                                  />
+                                )}
 
                                 {prefix && (
                                   <span 
@@ -1810,95 +1891,184 @@ const ShinkanzenN3ListeningBook = () => {
                       const situationMap = new Map();
                       sec.questions.forEach(q => {
                         const sitMatch = q.badge?.match(/\((\d+)-(\d+)\)/);
-                        const sitNum = sitMatch ? sitMatch[1] : '1';
+                        const printedNumberMatch = q.badge?.match(/\((\d+)\)/);
+                        const sitNum = sitMatch ? sitMatch[1] : (isSkill5MarkingSection ? printedNumberMatch?.[1] || '1' : '1');
                         const uttNum = sitMatch ? sitMatch[2] : '1';
                         if (!situationMap.has(sitNum)) {
                           situationMap.set(sitNum, {
                             sitNum,
-                            context: q.context,
+                            context: isSkill5MarkingSection ? '' : q.context,
+                            hideContext: isSkill5MarkingSection,
+                            flat: q.flatTrueFalse,
                             utterances: []
                           });
                         }
-                        situationMap.get(sitNum).utterances.push({ ...q, uttNum });
+                        if (isSkill5MarkingSection) {
+                          q.options.forEach((option, optionIndex) => {
+                            const isAnswer = optionIndex === q.correctOption?.index;
+                            situationMap.get(sitNum).utterances.push({
+                              ...q,
+                              originalIdx: `${q.originalIdx}-${optionIndex}`,
+                              questionText: option,
+                              options: ['○', '×'],
+                              correctOption: { index: isAnswer ? 0 : 1, text: isAnswer ? '○' : '×' },
+                              uttNum: String(optionIndex + 1),
+                            });
+                          });
+                        } else {
+                          situationMap.get(sitNum).utterances.push({ ...q, uttNum });
+                        }
                       });
 
                       return Array.from(situationMap.values()).map((sit, sitIdx) => (
-                        <div key={sitIdx} className="shinkanzen-situation-card">
-                          <div className="flex items-center gap-2 pb-2 mb-3 border-b border-stone-200 dark:border-stone-700">
-                            <span className="font-bold text-sm sm:text-base text-slate-900 dark:text-slate-100 font-serif">
-                              ({sit.sitNum})
-                            </span>
-                            {!isBookFaithfulUnit2 && (
-                              <span className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 font-serif font-medium">
-                                {sit.context || '状況を聞いて判断してください。'}
-                              </span>
-                            )}
-                          </div>
+                        <div
+                          key={sitIdx}
+                          className={chapterId === 'skill-5'
+                            ? 'space-y-1.5 py-2 sm:py-3'
+                            : 'shinkanzen-situation-card'}
+                        >
+                          {chapterId === 'skill-5' && sit.flat && (
+                            <div className="flex justify-end pr-[18%] sm:pr-[30%]">
+                              <HeadphoneBadge
+                                compact
+                                trackCode={sec.trackCode}
+                                isPlaying={isTrackPlaying}
+                                onClick={() => {
+                                  if (sec.audioSrc) {
+                                    if (isTrackPlaying) audioRef.current?.pause();
+                                    else switchTrack(sec.audioSrc);
+                                  }
+                                }}
+                                title={`Play Exercise Audio [${sec.trackCode}]`}
+                              />
+                            </div>
+                          )}
+                          {!sit.flat && (
+                            <div className={chapterId === 'skill-5' ? 'mb-1 flex items-center gap-1.5' : 'mb-3 flex items-center justify-between gap-3 border-b border-stone-200 pb-2 dark:border-stone-700'}>
+                              <div className="flex items-center gap-2">
+                                <span className="font-bold text-sm sm:text-base text-slate-900 dark:text-slate-100 font-serif">
+                                  ({sit.sitNum})
+                                </span>
+                                {isSkill5MarkingSection && (
+                                  <HeadphoneBadge
+                                    compact
+                                    trackCode={sec.trackCode}
+                                    isPlaying={isTrackPlaying}
+                                    onClick={() => {
+                                      if (sec.audioSrc) {
+                                        if (isTrackPlaying) audioRef.current?.pause();
+                                        else switchTrack(sec.audioSrc);
+                                      }
+                                    }}
+                                    title={`Play Exercise Audio [${sec.trackCode}]`}
+                                  />
+                                )}
+                                {!isBookFaithfulUnit2 && !sit.hideContext && (
+                                  <span className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 font-serif font-medium">
+                                    {sit.context || '状況を聞いて判断してください。'}
+                                  </span>
+                                )}
+                              </div>
+                              {isSkill5MarkingSection && chapterId !== 'skill-5' && (
+                                <HeadphoneBadge
+                                  trackCode={sec.trackCode}
+                                  isPlaying={isTrackPlaying}
+                                  onClick={() => {
+                                    if (sec.audioSrc) {
+                                      if (isTrackPlaying) audioRef.current?.pause();
+                                      else switchTrack(sec.audioSrc);
+                                    }
+                                  }}
+                                  title={`Play Exercise Audio [${sec.trackCode}]`}
+                                />
+                              )}
+                            </div>
+                          )}
 
                           <div className="space-y-2.5">
                             {sit.utterances.map((u, uIdx) => {
                               const qKey = `q-${u.originalIdx}`;
                               const userAnswer = answers[qKey];
                               const isRevealed = revealed[qKey];
+                              const isMarkChoiceOpen = openMarkChoices[qKey];
                               const correctIdx = u.correctOption?.index;
                               const cleanUttText = u.questionText?.replace(/^発話\s*\d+：/, '') || u.questionText;
 
                               return (
-                                <div key={uIdx} className="p-2 rounded-lg bg-stone-50/60 dark:bg-slate-900/40 border border-stone-200/50 dark:border-stone-800">
-                                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                                    <div className="flex items-start gap-2 text-xs sm:text-sm font-serif">
-                                      <span className="font-bold text-stone-500 shrink-0 mt-0.5">
+                                <div key={uIdx} className={chapterId === 'skill-5' ? 'py-0.5' : 'p-2 rounded-lg bg-stone-50/60 dark:bg-slate-900/40 border border-stone-200/50 dark:border-stone-800'}>
+                                  <div className={chapterId === 'skill-5' ? 'grid grid-cols-[1.75rem_minmax(0,1fr)_3.5rem] items-center gap-x-1.5 sm:grid-cols-[2.5rem_minmax(0,28rem)_4.5rem] sm:gap-x-2' : 'flex flex-col sm:flex-row sm:items-center justify-between gap-2'}>
+                                    <div className={chapterId === 'skill-5' ? 'contents' : 'flex items-start gap-2 text-xs sm:text-sm font-serif'}>
+                                      <span className={chapterId === 'skill-5' ? 'font-serif text-sm font-medium text-slate-800 dark:text-slate-200' : 'font-bold text-stone-500 shrink-0 mt-0.5'}>
                                         {u.uttNum}{isBookFaithfulUnit2 ? '' : '.'}
                                       </span>
                                       {!isBookFaithfulUnit2 && (
                                         <span
-                                          className="text-slate-800 dark:text-slate-200 leading-relaxed"
+                                          className={chapterId === 'skill-5' ? 'min-w-0 font-serif text-sm leading-relaxed text-slate-800 dark:text-slate-200 sm:text-base' : 'text-slate-800 dark:text-slate-200 leading-relaxed'}
                                           dangerouslySetInnerHTML={{ __html: cleanUttText }}
                                         />
                                       )}
                                     </div>
 
-                                    <div className="flex items-center gap-2 shrink-0 self-end sm:self-center">
-                                      <button
-                                        type="button"
-                                        onClick={() => handleSelectAnswer(qKey, 1)}
-                                        disabled={isRevealed}
-                                        className={`shinkanzen-tf-btn ${
-                                          isRevealed
-                                            ? correctIdx === 0
-                                              ? 'correct'
-                                              : userAnswer === 1
-                                              ? 'wrong'
-                                              : 'dimmed'
-                                            : userAnswer === 1
-                                            ? 'selected'
-                                            : ''
-                                        }`}
-                                        title="状況に合う (○)"
-                                      >
-                                        ○
-                                      </button>
-
-                                      <button
-                                        type="button"
-                                        onClick={() => handleSelectAnswer(qKey, 2)}
-                                        disabled={isRevealed}
-                                        className={`shinkanzen-tf-btn ${
-                                          isRevealed
-                                            ? correctIdx === 1
-                                              ? 'correct'
-                                              : userAnswer === 2
-                                              ? 'wrong'
-                                              : 'dimmed'
-                                            : userAnswer === 2
-                                              ? 'selected'
-                                            : ''
-                                        }`}
-                                        title="状況に合わない (×)"
-                                      >
-                                        ×
-                                      </button>
-                                    </div>
+                                    {chapterId === 'skill-5' ? (
+                                      <div className="flex min-h-8 w-14 shrink-0 items-center justify-center gap-0.5 font-serif text-sm sm:min-h-9 sm:w-16 sm:text-base">
+                                        <span aria-hidden="true">（</span>
+                                        {isRevealed ? (
+                                          <span className={`text-lg font-black ${userAnswer === 1 ? 'text-emerald-600 dark:text-emerald-300' : 'text-rose-600 dark:text-rose-300'}`}>
+                                            {userAnswer === 1 ? '○' : '×'}
+                                          </span>
+                                        ) : isMarkChoiceOpen ? (
+                                          <>
+                                            <button
+                                              type="button"
+                                              onClick={() => handleSelectAnswer(qKey, 1)}
+                                              className="rounded px-1.5 text-lg font-black text-emerald-600 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-500 dark:text-emerald-300 dark:hover:bg-emerald-950/40"
+                                              aria-label="Select circle"
+                                            >
+                                              ○
+                                            </button>
+                                            <button
+                                              type="button"
+                                              onClick={() => handleSelectAnswer(qKey, 2)}
+                                              className="rounded px-1.5 text-lg font-black text-rose-600 hover:bg-rose-50 focus:outline-none focus:ring-2 focus:ring-rose-500 dark:text-rose-300 dark:hover:bg-rose-950/40"
+                                              aria-label="Select cross"
+                                            >
+                                              ×
+                                            </button>
+                                          </>
+                                        ) : (
+                                          <button
+                                            type="button"
+                                            onClick={() => setOpenMarkChoices(prev => ({ ...prev, [qKey]: true }))}
+                                            className="h-7 min-w-8 rounded text-stone-400 hover:bg-stone-100 focus:outline-none focus:ring-2 focus:ring-emerald-500 dark:hover:bg-slate-800"
+                                            aria-label="Open circle or cross choices"
+                                          >
+                                            &nbsp;
+                                          </button>
+                                        )}
+                                        <span aria-hidden="true">）</span>
+                                      </div>
+                                    ) : (
+                                      <div className="flex items-center gap-2 shrink-0 self-end sm:self-center">
+                                        <button
+                                          type="button"
+                                          onClick={() => handleSelectAnswer(qKey, 1)}
+                                          disabled={isRevealed}
+                                          className={`shinkanzen-tf-btn ${isRevealed ? (correctIdx === 0 ? 'correct' : userAnswer === 1 ? 'wrong' : 'dimmed') : userAnswer === 1 ? 'selected' : ''}`}
+                                          title="状況に合う (○)"
+                                        >
+                                          ○
+                                        </button>
+                                        <button
+                                          type="button"
+                                          onClick={() => handleSelectAnswer(qKey, 2)}
+                                          disabled={isRevealed}
+                                          className={`shinkanzen-tf-btn ${isRevealed ? (correctIdx === 1 ? 'correct' : userAnswer === 2 ? 'wrong' : 'dimmed') : userAnswer === 2 ? 'selected' : ''}`}
+                                          title="状況に合わない (×)"
+                                        >
+                                          ×
+                                        </button>
+                                      </div>
+                                    )}
                                   </div>
 
                                   {isRevealed && (
@@ -1932,6 +2102,20 @@ const ShinkanzenN3ListeningBook = () => {
                               <span className="font-bold text-base sm:text-lg text-slate-900 dark:text-slate-100 font-serif">
                                 ({subNum})
                               </span>
+                              {chapterId === 'skill-5' && qSubIdx === 0 && (
+                                <HeadphoneBadge
+                                  compact
+                                  trackCode={sec.trackCode}
+                                  isPlaying={isTrackPlaying}
+                                  onClick={() => {
+                                    if (sec.audioSrc) {
+                                      if (isTrackPlaying) audioRef.current?.pause();
+                                      else switchTrack(sec.audioSrc);
+                                    }
+                                  }}
+                                  title={`Play Exercise Audio [${sec.trackCode}]`}
+                                />
+                              )}
                               <div className="space-y-1">
                                 {!isBookFaithfulUnit2 && presentation.context && (
                                   <p className="text-xs sm:text-sm text-stone-500 dark:text-stone-400 font-serif italic m-0 whitespace-pre-line">
@@ -1946,6 +2130,19 @@ const ShinkanzenN3ListeningBook = () => {
                                 )}
                               </div>
                             </div>
+                            {isRepeatedSkill5ExerciseHeader && chapterId !== 'skill-5' && (
+                              <HeadphoneBadge
+                                trackCode={sec.trackCode}
+                                isPlaying={isTrackPlaying}
+                                onClick={() => {
+                                  if (sec.audioSrc) {
+                                    if (isTrackPlaying) audioRef.current?.pause();
+                                    else switchTrack(sec.audioSrc);
+                                  }
+                                }}
+                                title={`Play Exercise Audio [${sec.trackCode}]`}
+                              />
+                            )}
                           </div>
 
                           {presentation.illustrationSrc && (
