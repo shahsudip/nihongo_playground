@@ -1993,6 +1993,7 @@ const ShinkanzenN3ListeningBook = () => {
                               const isMarkChoiceOpen = openMarkChoices[qKey];
                               const correctIdx = u.correctOption?.index;
                               const cleanUttText = u.questionText?.replace(/^発話\s*\d+：/, '') || u.questionText;
+                              const usesBracketMarkPicker = chapterId === 'skill-5' || isBookFaithfulUnit2;
 
                               return (
                                 <div key={uIdx} className={chapterId === 'skill-5' ? 'py-0.5' : 'p-2 rounded-lg bg-stone-50/60 dark:bg-slate-900/40 border border-stone-200/50 dark:border-stone-800'}>
@@ -2009,7 +2010,7 @@ const ShinkanzenN3ListeningBook = () => {
                                       )}
                                     </div>
 
-                                    {chapterId === 'skill-5' ? (
+                                    {usesBracketMarkPicker ? (
                                       <div className="flex min-h-8 w-14 shrink-0 items-center justify-center gap-0.5 font-serif text-sm sm:min-h-9 sm:w-16 sm:text-base">
                                         <span aria-hidden="true">（</span>
                                         {isRevealed ? (
