@@ -885,7 +885,12 @@ const ShinkanzenN3ListeningBook = () => {
     const map = new Map();
     data.questions.forEach((q, originalIdx) => {
       const title = q.sectionTitle || '練習';
-      const sectionKey = chapterId === 'skill-4' || chapterId === 'skill-5'
+      const isSkill4Part2Practice = chapterId === 'skill-4'
+        && title.startsWith('2 ')
+        && q.trackLabel?.startsWith('練習2');
+      const sectionKey = isSkill4Part2Practice
+        ? `${title}::practice-2`
+        : chapterId === 'skill-4' || chapterId === 'skill-5'
         ? `${title}::${q.trackId || q.audioSrc || originalIdx}`
         : title;
       if (!map.has(sectionKey)) {
@@ -898,6 +903,7 @@ const ShinkanzenN3ListeningBook = () => {
           audioSrc: q.audioSrc || firstHs?.audioSrc,
           exerciseTitleHtml: q.exerciseTitleHtml,
           instruction: q.instruction || data.instruction,
+          isSkill4Part2Practice,
           questions: []
         });
       }
@@ -1345,8 +1351,12 @@ const ShinkanzenN3ListeningBook = () => {
             ? null
             : chapterSectionNotices[sec.title];
           const isTrackPlaying = isPlaying && activeAudioSrc === sec.audioSrc;
+          const isSkill4Part2 = chapterId === 'skill-4' && sec.title.startsWith('2 ');
+          const isSkill4Part2Practice = isSkill4Part2 && sec.isSkill4Part2Practice;
           const isSkill5MarkingSection = chapterId === 'skill-5' && /^[13]\s/.test(sec.title) && sec.questions.every(q => q.options?.length === 4);
-          const rawExerciseTitle = chapterId === 'skill-4' || chapterId === 'skill-5'
+          const rawExerciseTitle = isSkill4Part2Practice
+            ? '練習2'
+            : chapterId === 'skill-4' || chapterId === 'skill-5'
             ? (sec.trackLabel || sec.title).replace(/\s*\[[^\]]+\]\s*$/, '')
             : sec.title;
           const normalizeSkill5ExerciseTitle = (title) => title
@@ -1497,7 +1507,7 @@ const ShinkanzenN3ListeningBook = () => {
                   </div>
 
                   {/* Single prominent Headphone Badge for this exercise */}
-                  {chapterId !== 'skill-5' && (
+                  {chapterId !== 'skill-5' && !isSkill4Part2Practice && (
                   <div className="flex items-center gap-2 shrink-0">
                     <HeadphoneBadge
                       trackCode={sec.trackCode}
@@ -2087,7 +2097,7 @@ const ShinkanzenN3ListeningBook = () => {
                   </div>
                 ) : (
                   /* Sub-renderer D: Standard Utterance Choices & Illustration Mode (e.g. 練習3, 4, 確認問題) */
-                  <div className="space-y-6">
+                  <div className={isSkill4Part2 ? 'space-y-3' : 'space-y-6'}>
                     {sec.questions.map((q, qSubIdx) => {
                       const qKey = `q-${q.originalIdx}`;
                       const userAnswer = answers[qKey];
@@ -2095,14 +2105,34 @@ const ShinkanzenN3ListeningBook = () => {
                       const correctIdx = q.correctOption?.index;
                       const subNum = q.badge?.match(/\((\d+)\)/)?.[1] || (qSubIdx + 1);
                       const presentation = parseQuestionPresentation(q);
+                      const questionHotspot = data.hotspots?.find((hotspot) => hotspot.trackId === q.trackId || hotspot.audioSrc === q.audioSrc);
+                      const questionTrackCode = q.trackCode || questionHotspot?.trackCode || questionHotspot?.label?.match(/\[(.*?)\]/)?.[1] || sec.trackCode;
+                      const isQuestionTrackPlaying = isPlaying && activeAudioSrc === q.audioSrc;
+                      const isSkill4Part2Example = isSkill4Part2 && isExampleSection;
 
                       return (
-                        <div key={q.originalIdx} className="p-4 sm:p-5 rounded-xl border border-[var(--color-border)] bg-transparent space-y-3">
+                        <div key={q.originalIdx} className={isSkill4Part2 ? 'py-1.5 space-y-2' : 'p-4 sm:p-5 rounded-xl border border-[var(--color-border)] bg-transparent space-y-3'}>
                           <div className="flex items-start justify-between gap-3">
                             <div className="flex items-start gap-2.5">
-                              <span className="font-bold text-base sm:text-lg text-slate-900 dark:text-slate-100 font-serif">
-                                ({subNum})
-                              </span>
+                              {!isSkill4Part2Example && (
+                                <span className="font-bold text-base sm:text-lg text-slate-900 dark:text-slate-100 font-serif">
+                                  ({subNum})
+                                </span>
+                              )}
+                              {isSkill4Part2Practice && (
+                                <HeadphoneBadge
+                                  compact
+                                  trackCode={questionTrackCode}
+                                  isPlaying={isQuestionTrackPlaying}
+                                  onClick={() => {
+                                    if (q.audioSrc) {
+                                      if (isQuestionTrackPlaying) audioRef.current?.pause();
+                                      else switchTrack(q.audioSrc);
+                                    }
+                                  }}
+                                  title={`Play Question Audio [${questionTrackCode}]`}
+                                />
+                              )}
                               {chapterId === 'skill-5' && qSubIdx === 0 && (
                                 <HeadphoneBadge
                                   compact
@@ -2118,12 +2148,12 @@ const ShinkanzenN3ListeningBook = () => {
                                 />
                               )}
                               <div className="space-y-1">
-                                {!isBookFaithfulUnit2 && presentation.context && (
+                                {!isBookFaithfulUnit2 && !isSkill4Part2 && presentation.context && (
                                   <p className="text-xs sm:text-sm text-stone-500 dark:text-stone-400 font-serif italic m-0 whitespace-pre-line">
                                     {presentation.context}
                                   </p>
                                 )}
-                                {!isBookFaithfulUnit2 && (
+                                {!isBookFaithfulUnit2 && !isSkill4Part2 && (
                                   <p
                                     className="text-sm sm:text-base font-serif font-bold text-slate-800 dark:text-slate-100 m-0 leading-relaxed"
                                     dangerouslySetInnerHTML={{ __html: presentation.questionText }}
