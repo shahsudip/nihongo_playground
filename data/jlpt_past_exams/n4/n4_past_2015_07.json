@@ -1,0 +1,2176 @@
+{
+  "testId": "n4_past_2015_07",
+  "level": "N4",
+  "year": 2015,
+  "month": 7,
+  "sessionName": "2015年7月 JLPT N4 本試験過去問",
+  "shortName": "2015/07",
+  "totalDurationMinutes": 125,
+  "totalQuestions": 98,
+  "hasListening": true,
+  "hasAudio": true,
+  "officialScoreMax": 180,
+  "officialPassMark": 90,
+  "sections": [
+    {
+      "id": "vocab",
+      "title": "言語知識（文字・語彙）",
+      "durationMinutes": 30,
+      "questionCount": 35,
+      "questions": [
+        {
+          "id": "n4_past_2015_07_goi_q1",
+          "number": 1,
+          "position": 0,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "お名前と生年月日をここに書いて ください。",
+          "options": [
+            "せいねんがつび",
+            "せいねんげつび",
+            "せいねんがっぴ",
+            "しょうねんがっぴ"
+          ],
+          "correct": 3,
+          "correctOption": "せいねんがっぴ",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q2",
+          "number": 2,
+          "position": 1,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "あの子は今日、袖なしの　シャツを　着て　きた。",
+          "options": [
+            "えり",
+            "すそ",
+            "くび",
+            "そで"
+          ],
+          "correct": 4,
+          "correctOption": "そで",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q3",
+          "number": 3,
+          "position": 2,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "つよい　台風が　来る　そうです。",
+          "options": [
+            "たいふ",
+            "だいふ",
+            "たいふう",
+            "だいふう"
+          ],
+          "correct": 3,
+          "correctOption": "たいふう",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q4",
+          "number": 4,
+          "position": 3,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "じぶんの　うちに　いるから、自然な　座り方で　いいです。",
+          "options": [
+            "じぜん",
+            "しぜん",
+            "じねん",
+            "しねん"
+          ],
+          "correct": 2,
+          "correctOption": "しぜん",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q5",
+          "number": 5,
+          "position": 4,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "あの　店員の　ことばづかいは　とくに　丁寧ですね。",
+          "options": [
+            "ていねい",
+            "ていれい",
+            "てんねい",
+            "てんれい"
+          ],
+          "correct": 1,
+          "correctOption": "ていねい",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q6",
+          "number": 6,
+          "position": 5,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "やせて　いる　かのじょが　羨ましいです。",
+          "options": [
+            "あつかましい",
+            "うらやましい",
+            "いたましい",
+            "いさましい"
+          ],
+          "correct": 2,
+          "correctOption": "うらやましい",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q7",
+          "number": 7,
+          "position": 6,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "大阪と　愛知県で　ＥＸＰＯが　行われた。",
+          "options": [
+            "しまわれた",
+            "はらわれた",
+            "てつだわれた",
+            "おこなわれた"
+          ],
+          "correct": 4,
+          "correctOption": "おこなわれた",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q8",
+          "number": 8,
+          "position": 7,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "乗る　人が　すくなく、電車が　空いて いる。",
+          "options": [
+            "あいて",
+            "おいて",
+            "すいて",
+            "しいて"
+          ],
+          "correct": 1,
+          "correctOption": "あいて",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q9",
+          "number": 9,
+          "position": 8,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "誕生日に　ともだちから　きれいな　カードが　届いた。",
+          "options": [
+            "つついた",
+            "つづいた",
+            "とどいた",
+            "とといた"
+          ],
+          "correct": 3,
+          "correctOption": "とどいた",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q10",
+          "number": 10,
+          "position": 9,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "一週間の　せんたく物が　たまって　いる。",
+          "options": [
+            "選択",
+            "撰択",
+            "洗濯",
+            "洗擢"
+          ],
+          "correct": 3,
+          "correctOption": "洗濯",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q11",
+          "number": 11,
+          "position": 10,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "いもうとは　せんげつ　大学を　そつぎょうした　ばかりです。",
+          "options": [
+            "卒業",
+            "卆業",
+            "率業",
+            "辛業"
+          ],
+          "correct": 1,
+          "correctOption": "卒業",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q12",
+          "number": 12,
+          "position": 11,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "からい　料理は　きらいではないが、好きでもない。",
+          "options": [
+            "厭い",
+            "悪い",
+            "嫌い",
+            "謙い"
+          ],
+          "correct": 3,
+          "correctOption": "嫌い",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q13",
+          "number": 13,
+          "position": 12,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "あさい 流れだから、中で　泳いでも　だいじょうぶだろう。",
+          "options": [
+            "狭い",
+            "淡い",
+            "浅い",
+            "薄い"
+          ],
+          "correct": 3,
+          "correctOption": "浅い",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q14",
+          "number": 14,
+          "position": 13,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "蛇が　ながい　からだを　まるく　まいて 寝て　います。",
+          "options": [
+            "巻いて",
+            "円いて",
+            "曲いて",
+            "間いて"
+          ],
+          "correct": 1,
+          "correctOption": "巻いて",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q15",
+          "number": 15,
+          "position": 14,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "あの　人は　お酒を　飲むと、さわぎ出す。",
+          "options": [
+            "躁ぎ",
+            "騒ぎ",
+            "暴ぎ",
+            "掻ぎ"
+          ],
+          "correct": 2,
+          "correctOption": "騒ぎ",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q16",
+          "number": 16,
+          "position": 15,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "この（　　　）は　よるに　なると　しずかに　なる。",
+          "options": [
+            "あまり",
+            "あたり",
+            "あつまり",
+            "あかり"
+          ],
+          "correct": 2,
+          "correctOption": "あたり",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q17",
+          "number": 17,
+          "position": 16,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "（　　　）の　乱暴な　態度を　見て、こちらも　おこったよ。",
+          "options": [
+            "対象",
+            "他人",
+            "相手",
+            "両側"
+          ],
+          "correct": 3,
+          "correctOption": "相手",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q18",
+          "number": 18,
+          "position": 17,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "Ａ社の ものは 品質も いいし、使いやすいから、（ ）感が 持\r\nてる。",
+          "options": [
+            "安心",
+            "安全",
+            "丈夫",
+            "大切"
+          ],
+          "correct": 1,
+          "correctOption": "安心",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q19",
+          "number": 19,
+          "position": 18,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "好きに　なった　彼女に　会えなくて、とても（　　　）です。",
+          "options": [
+            "すごい",
+            "からい",
+            "にがい",
+            "つらい"
+          ],
+          "correct": 4,
+          "correctOption": "つらい",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q20",
+          "number": 20,
+          "position": 19,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "アパートで、ペットを（　　　）いけないんですよ。",
+          "options": [
+            "かっては",
+            "すっては",
+            "もっては",
+            "まっては"
+          ],
+          "correct": 1,
+          "correctOption": "かっては",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q21",
+          "number": 21,
+          "position": 20,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "会社の　人から　ゴルフに（　　　）が、忙しいので、断った。",
+          "options": [
+            "いかれた",
+            "かよわれた",
+            "さそわれた",
+            "むかれた"
+          ],
+          "correct": 3,
+          "correctOption": "さそわれた",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q22",
+          "number": 22,
+          "position": 21,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "あなたの　ことは（　　　）忘れません。どうぞ　お大事に。",
+          "options": [
+            "いつかも",
+            "いつも",
+            "いつまでも",
+            "いつにも"
+          ],
+          "correct": 3,
+          "correctOption": "いつまでも",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q23",
+          "number": 23,
+          "position": 22,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "先生を（　　　）「おとうさん」と　呼んで、わらわれて　しまった。",
+          "options": [
+            "がっかり",
+            "しっかり",
+            "にっこり",
+            "うっかり"
+          ],
+          "correct": 4,
+          "correctOption": "うっかり",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q24",
+          "number": 24,
+          "position": 23,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "この　工場では　危険な　仕事は（　　　）ロボットが　やって　くれる。",
+          "options": [
+            "だから",
+            "そのままに",
+            "または",
+            "かわりに"
+          ],
+          "correct": 4,
+          "correctOption": "かわりに",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q25",
+          "number": 25,
+          "position": 24,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "にもつを　出す　まえに、もう　一度（　　　）をする　必要が　ある。",
+          "options": [
+            "レシート",
+            "チャンス",
+            "チェック",
+            "チーム"
+          ],
+          "correct": 3,
+          "correctOption": "チェック",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q26",
+          "number": 26,
+          "position": 25,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "もう　すこしで　手を　きる　ところだった。",
+          "options": [
+            "うっかり　手を　きって　しまった。",
+            "手を　きらないで　よかった。",
+            "手に　かるい　けがを　して　しまった。",
+            "手が　すべって　きることが　できなかった。"
+          ],
+          "correct": 2,
+          "correctOption": "手を　きらないで　よかった。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q27",
+          "number": 27,
+          "position": 26,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "どうして　かいしゃを　やすんだ　のですか。",
+          "options": [
+            "かいしゃへ　いかなかった　わけを　ききました。",
+            "かいしゃを　やめた　理由を　ききました。",
+            "かいしゃの　やすみの　日にちを　ききました。",
+            "かいしゃが　たおれた　原因を　ききました　。"
+          ],
+          "correct": 1,
+          "correctOption": "かいしゃへ　いかなかった　わけを　ききました。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q28",
+          "number": 28,
+          "position": 27,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "三日　いないに　病院へ　行く　ことに　なって　いる。",
+          "options": [
+            "できるだけ　三日に　病院に　行くように　されて　いる。",
+            "できるだけ　三日の　うちに　病院に　行くように　されて　いる。",
+            "かならず　三日に　病院に　行くことに　決められて　いる。",
+            "かならず　三日の　うちに　病院に　行くことに　決まって　いる。"
+          ],
+          "correct": 4,
+          "correctOption": "かならず　三日の　うちに　病院に　行くことに　決まって　いる。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q29",
+          "number": 29,
+          "position": 28,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "今日の　会議は　たしか　３時から　でしたね。",
+          "options": [
+            "会議は　もう　３時からに　なって　しまった。",
+            "会議は　もう　３時からではなく　なって　しまった。",
+            "会議は　ちょうど　３時に　始まるだろうと　おぼえて　います。",
+            "会議は　３時からか　どうか　ぜんぜん　知りませんでした。"
+          ],
+          "correct": 3,
+          "correctOption": "会議は　ちょうど　３時に　始まるだろうと　おぼえて　います。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q30",
+          "number": 30,
+          "position": 29,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "部長は　さいきん　仕事が　うまく　いって　いない　ようです。",
+          "options": [
+            "部長は　このあいだ　仕事を　さがして　いる　みたいです。",
+            "部長は　このあいだ　仕事を　やって　いない　そうです。",
+            "部長は　このころ　仕事が　なくなったと　言われて　います。",
+            "部長は　このころ　仕事に　何か　もんだいが　出たと　思います。"
+          ],
+          "correct": 4,
+          "correctOption": "部長は　このころ　仕事に　何か　もんだいが　出たと　思います。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q31",
+          "number": 31,
+          "position": 30,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "お見舞い",
+          "options": [
+            "春が　待て　ないように、お見舞いが　来ました。&nbsp;",
+            "入院中の　クラスメートを　お見舞いに　行きました",
+            "おじいさんの　たんじょうびに　お見舞いの　あいさつを　した。",
+            "新年の　とき、したしい　友だちの　あいだで、お見舞いを　します。"
+          ],
+          "correct": 2,
+          "correctOption": "入院中の　クラスメートを　お見舞いに　行きました",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q32",
+          "number": 32,
+          "position": 31,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "適度",
+          "options": [
+            "毎日の　適度な　うんどうは　からだに　よい。",
+            "彼は　その　仕事の　適度な　人だった。",
+            "病院に　適度した　食べ物を　食べさせる。",
+            "いやな　仕事だから、適度に　すれば　いい。"
+          ],
+          "correct": 1,
+          "correctOption": "毎日の　適度な　うんどうは　からだに　よい。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q33",
+          "number": 33,
+          "position": 32,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "急ぐ",
+          "options": [
+            "こころが　急いだら 失敗しやすく　なる。",
+            "試験に　おちたと　分かったら、彼は　急いだ。",
+            "急いで 歩かないと、時間に　まに　あわないよ。",
+            "さいきん、いろいろな　ことが　あって　たいへん　急いで いる。"
+          ],
+          "correct": 3,
+          "correctOption": "急いで 歩かないと、時間に　まに　あわないよ。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q34",
+          "number": 34,
+          "position": 33,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "ただ",
+          "options": [
+            "交通も　べんりだし、　みどりも　多い。ただ 会社まで　とおすぎる。",
+            "彼女に　きょねん　一回　会いました。それただですよ。",
+            "子どもの　話だから、そんなに　深く　ただ考えないでね。",
+            "教室に 青山さん 一人ただで、ほかの 学生が みんな 帰りまし\r\nた"
+          ],
+          "correct": 1,
+          "correctOption": "交通も　べんりだし、　みどりも　多い。ただ 会社まで　とおすぎる。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_goi_q35",
+          "number": 35,
+          "position": 34,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "スピード",
+          "options": [
+            "年を　とると、だんだん　あたまの　スピードが　おそく　なる。",
+            "日本語能力試験は　まいとし　2回の　スピードで　やっている。",
+            "スピードを　おとして、ゆっくり　運転する",
+            "もう　時間が　ないから、食事を　スピードに　しなさい。"
+          ],
+          "correct": 3,
+          "correctOption": "スピードを　おとして、ゆっくり　運転する",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grammar_reading",
+      "title": "言語知識（文法）・読解",
+      "durationMinutes": 60,
+      "questionCount": 35,
+      "questions": [
+        {
+          "id": "n4_past_2015_07_bunpo_q1",
+          "number": 1,
+          "position": 0,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "本を　さがしやすい（　　　）ほんだなに　ならべる。",
+          "options": [
+            "ために",
+            "ままで",
+            "ほどで",
+            "ほど"
+          ],
+          "correct": 1,
+          "correctOption": "ために",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q2",
+          "number": 2,
+          "position": 1,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "かいぎの　ことは　もう　伝えて（　　　）から、そろそろ　来るでしょう。",
+          "options": [
+            "います",
+            "あります",
+            "おきます",
+            "いきます"
+          ],
+          "correct": 2,
+          "correctOption": "あります",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q3",
+          "number": 3,
+          "position": 2,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "うちの　主人は　まいばん、おそく（　　　）仕事を　する。",
+          "options": [
+            "ぐらい",
+            "ごろ",
+            "から",
+            "まで"
+          ],
+          "correct": 4,
+          "correctOption": "まで",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q4",
+          "number": 4,
+          "position": 3,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "この　クラスには　たなかさん（　　　）あたまの　いい人は　いません。",
+          "options": [
+            "らしく",
+            "みたいで",
+            "ばかり",
+            "ほど"
+          ],
+          "correct": 4,
+          "correctOption": "ほど",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q5",
+          "number": 5,
+          "position": 4,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "鳥が　そら（　　　）飛ぶのが　さいきん　あまり　見られなく　なった。",
+          "options": [
+            "に",
+            "は",
+            "を",
+            "から"
+          ],
+          "correct": 3,
+          "correctOption": "を",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q6",
+          "number": 6,
+          "position": 5,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "たなかさんの 話（&nbsp; &nbsp; &nbsp; ）、すずき君は もう 中国へ 出張に 行ったそ\r\nうです。",
+          "options": [
+            "には",
+            "では",
+            "により",
+            "によって"
+          ],
+          "correct": 2,
+          "correctOption": "では",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q7",
+          "number": 7,
+          "position": 6,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "生徒たちは あたらしい 先生を こわがって いると いう（&nbsp; &nbsp; &nbsp;）を聞\r\nきましたか。",
+          "options": [
+            "まま",
+            "こと",
+            "もの",
+            "はず"
+          ],
+          "correct": 2,
+          "correctOption": "こと",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q8",
+          "number": 8,
+          "position": 7,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "かれは　国へ　帰った（　　　）、まだ　会社に　戻って　いない。",
+          "options": [
+            "まま",
+            "はず",
+            "ように",
+            "わけ"
+          ],
+          "correct": 1,
+          "correctOption": "まま",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q9",
+          "number": 9,
+          "position": 8,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "あの 人は すずきさんの おかあさんではなさ（&nbsp; &nbsp; &nbsp;）。かれの\r\nおかあさんは　 あの 　人より 　もっと 　わかいです。",
+          "options": [
+            "ようです",
+            "そうです",
+            "らしいです",
+            "みたいです"
+          ],
+          "correct": 2,
+          "correctOption": "そうです",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q10",
+          "number": 10,
+          "position": 9,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "Ａ：この　 アパートの 　部屋を 　見たいのですが。&nbsp;Ｂ：じゃ、係りの　者に　案内（　　　）。",
+          "options": [
+            "させます",
+            "なさいます",
+            "されます",
+            "ございます"
+          ],
+          "correct": 1,
+          "correctOption": "させます",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q11",
+          "number": 11,
+          "position": 10,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "ご主人は　何時ごろ&nbsp;&nbsp; お帰りに（　　　）か。",
+          "options": [
+            "ございます",
+            "いたします",
+            "なります",
+            "あります"
+          ],
+          "correct": 3,
+          "correctOption": "なります",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q12",
+          "number": 12,
+          "position": 11,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "わたしと かれとの 事（&nbsp; &nbsp; &nbsp; ）母からの Ｅメールに 「賛成だ」と 書い\r\nて　あった。",
+          "options": [
+            "だけでなく",
+            "といって",
+            "については",
+            "のつもりで"
+          ],
+          "correct": 3,
+          "correctOption": "については",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q13",
+          "number": 13,
+          "position": 12,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "歌が 上手に なりたければ、音楽教師の たなか先生に（&nbsp; &nbsp; &nbsp;）です\r\nよ。",
+          "options": [
+            "ならっている",
+            "おしえて　もらった",
+            "おしえよう",
+            "ならえば　いい"
+          ],
+          "correct": 4,
+          "correctOption": "ならえば　いい",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q14",
+          "number": 14,
+          "position": 13,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "Ａ「新聞社を 　見学したいんですが、（　　　）。」&nbsp;Ｂ「すみません。わたしも知りません。」",
+          "options": [
+            "どうしたんでしょうか",
+            "どうしたら　いいでしょうか",
+            "どうしてでしょうかな",
+            "どうして 　くれるでしょうか"
+          ],
+          "correct": 2,
+          "correctOption": "どうしたら　いいでしょうか",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q15",
+          "number": 15,
+          "position": 14,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "Ａ「わたしは この 色の かばんを 買う つもりですが、あなたも\r\n買いますか。」&nbsp;Ｂ「えーと、（　　　）わたしも　買います。」",
+          "options": [
+            "あなたが　買って　いれば",
+            "あなたが　買うと",
+            "あなたが　買うなら",
+            "あなたが　買っても"
+          ],
+          "correct": 3,
+          "correctOption": "あなたが　買うなら",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q16",
+          "number": 16,
+          "position": 15,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "今日　学校に　　★　　　　　　　　　　　　　　からです。",
+          "options": [
+            "なかった",
+            "のは",
+            "授業が",
+            "行かなかった"
+          ],
+          "correct": 4,
+          "correctOption": "行かなかった",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q17",
+          "number": 17,
+          "position": 16,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "明日の　ばん、　　　　　　　　　　　　　★　　あります。",
+          "options": [
+            "映画を　見に",
+            "いっしょに",
+            "約束して",
+            "行くと"
+          ],
+          "correct": 3,
+          "correctOption": "約束して",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q18",
+          "number": 18,
+          "position": 17,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "あたらしい　家の　　　　　　★　　　　　　　　　　ありません。",
+          "options": [
+            "以前の　所",
+            "静かでは",
+            "ほど",
+            "まわりは"
+          ],
+          "correct": 1,
+          "correctOption": "以前の　所",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q19",
+          "number": 19,
+          "position": 18,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "★　　　　　　　　　　です。",
+          "options": [
+            "必要",
+            "飛行機か　船が",
+            "のには",
+            "海を　わたる"
+          ],
+          "correct": 3,
+          "correctOption": "のには",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q20",
+          "number": 20,
+          "position": 19,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "ドアに「入るな」と　　　　　　★　　　　　　　　　　いいよ　。」",
+          "options": [
+            "入らない",
+            "から",
+            "書いて　ある",
+            "ほうが"
+          ],
+          "correct": 2,
+          "correctOption": "から",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q21",
+          "number": 21,
+          "position": 20,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "( 21 )",
+          "options": [
+            "来てあげて",
+            "参って",
+            "来てくれて",
+            "参るから"
+          ],
+          "correct": 3,
+          "correctOption": "来てくれて",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q22",
+          "number": 22,
+          "position": 21,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "( 22 )",
+          "options": [
+            "会うとき",
+            "会ったら",
+            "会うのでは",
+            "会っていて"
+          ],
+          "correct": 1,
+          "correctOption": "会うとき",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q23",
+          "number": 23,
+          "position": 22,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "( 23 )",
+          "options": [
+            "ですから",
+            "それとも",
+            "ところで",
+            "そういえば"
+          ],
+          "correct": 3,
+          "correctOption": "ところで",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q24",
+          "number": 24,
+          "position": 23,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "( 24 )",
+          "options": [
+            "くれるためには",
+            "くれようとして",
+            "くれるぐらいに",
+            "くれるように"
+          ],
+          "correct": 4,
+          "correctOption": "くれるように",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q25",
+          "number": 25,
+          "position": 24,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "( 25 )",
+          "options": [
+            "わたしのかわりに",
+            "わたしがかわりに",
+            "わたしにかわって",
+            "わたしにかわり"
+          ],
+          "correct": 2,
+          "correctOption": "わたしがかわりに",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q26",
+          "number": 26,
+          "position": 25,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "日本の 　経済は 　まだまだ　 厳しい。しかし、日本では 　外食、つまり、外 で　食事を　する　家庭が　増えている。外食に　使われて　いる　お金が　家庭の　食費の　中で、1984年には15%だったのが、2009年に 　20%に　増 えたと　いう。日本の　 家庭の 　中で　 外食が 　増えた 　理由を 　いえば、会社や 　店など の 　週休二日制が 　進んで　 自由な　 時間が 　増えたので、遊びに　 出かけ る　ことが　多く なった　こと、若い　家庭が　よく 　外で　食事する　よ うに　なったこと、働く　 女性が　増えて家の　中の　仕事を　軽く したいと　 思って 　いる こと、などが 　考えられる 　だろう。外食が　 増えた 　主な　 理由は　 何ですか。",
+          "options": [
+            "以前より　遊びに　使える　お金が　増えたから。",
+            "会社や　店などは　定休日が　多く 　なったから。",
+            "外で　食事を　する　若い　人が　増えたから。",
+            "自由に　選ぶ　時間が　多く 　なったから。"
+          ],
+          "correct": 4,
+          "correctOption": "自由に　選ぶ　時間が　多く 　なったから。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q27",
+          "number": 27,
+          "position": 26,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "私は 　犬が 　あまり　 好きではなかった。だから 　母と 　妹が、犬を 　飼う と　 言い出した 時、私は 　すごく 　反対した。今から　 10年ほど前の こと である。犬の 　世話は たいへんだと 　いう ことを 知って　 いたし、汚い感じが 　するので、いやだった。でも、何日か　 経って、私の 　留守の 　あ いだに、母が 　隣り近所の　人から 　子犬を 　もらって　 きて 　しまった。私 は、犬の 　世話は 　しないからと、少し 　不満を 　言って、いやいや 　承知し ました。父は 　ひとりで 　遠い　 ところで　 働いて　 いたので、電話で 　事後　 報告しただけだった。（専門出版社による）。「いやいや承知しました」 とありますが、筆者の気持ちを正しく説明した のはどれですか。",
+          "options": [
+            "どうしてもその事実が信じられなかった。",
+            "母と妹が自分の都合ばかり考えていることをいやがった。",
+            "不満があった。そしてたいへん怒った。",
+            "いやだが、しかたがなく認めてあげた。"
+          ],
+          "correct": 4,
+          "correctOption": "いやだが、しかたがなく認めてあげた。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q28",
+          "number": 28,
+          "position": 27,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "今日は岡山くん、田中さんといっしょに6時ごろ会社を出ました。ゆうがただっ たのに、気温はまだ30度もあって、とても暑かったです。そこで、岡山くんが、つめたいビールでも飲みに行かないかと言いました。 わたしはすぐ賛成しましたが、田中さんは用事があると言って、先に帰りまし た。ちょっと残念でした。店は、岡山くんと相談して決めました。最初はわたしは国際ビルの裏のとお りに ある店はすずしいところで、あそこに行ったらどうかと聞いてみましたが、岡山くんは賛成しませんでした。すずしいところですが、おおぜいで、とてもうるさいという理由です。そのあと、ふたりでちかくのビルの屋上ビアガーデンに行きました。ちょっと高かったですが、券囲気がよくてたのしかったです。（星野恵子・遠藤藍子の文より、一部改）。ビアガーデンはどんなところですか。",
+          "options": [
+            "ビルの屋上にある西洋料理店。",
+            "ビルの屋上にある高級レストラン。",
+            "屋外ですずしい風を受けるところ。",
+            "屋外でビールを飲むところ。"
+          ],
+          "correct": 4,
+          "correctOption": "屋外でビールを飲むところ。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q29",
+          "number": 29,
+          "position": 28,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "すずきさんと大学の友だち二人8月のにちょう日に「箱根温泉旅行」に\r\n参加したいです。ふたりいくらで行けますか。",
+          "options": [
+            "40,000",
+            "36,000",
+            "32,000",
+            "30,000"
+          ],
+          "correct": 4,
+          "correctOption": "30,000",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q30",
+          "number": 30,
+          "position": 29,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "①「返事はありません」とありますが、どうしてですか。",
+          "options": [
+            "世話がよくなくて、母が怒ったから。",
+            "なにも言いたくなかったから。",
+            "病気で、話ができなくなったから。",
+            "夫が死んで、寂しくなったから。"
+          ],
+          "correct": 3,
+          "correctOption": "病気で、話ができなくなったから。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q31",
+          "number": 31,
+          "position": 30,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "②「早く終わること」とはどういうことですか。",
+          "options": [
+            "母が早くよくなることです。",
+            "母が早く死ぬことです。",
+            "仕事が早く終わることです。",
+            "夫が早く帰ってくることです。"
+          ],
+          "correct": 2,
+          "correctOption": "母が早く死ぬことです。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q32",
+          "number": 32,
+          "position": 31,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "③「これだけは」とありますが、何を指していますか。",
+          "options": [
+            "仕事です。",
+            "家庭です。",
+            "病気です。",
+            "気持ちです。"
+          ],
+          "correct": 3,
+          "correctOption": "病気です。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q33",
+          "number": 33,
+          "position": 32,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "この家には今何人住んでいますか。",
+          "options": [
+            "3人です。",
+            "4人です。",
+            "5人です。",
+            "6人です。"
+          ],
+          "correct": 2,
+          "correctOption": "4人です。",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q34",
+          "number": 34,
+          "position": 33,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "かばんは 今日 いくらに なって いますか。",
+          "options": [
+            "12,500円",
+            "13,750円",
+            "21,250円",
+            "25,000円"
+          ],
+          "correct": 2,
+          "correctOption": "13,750円",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_bunpo_q35",
+          "number": 35,
+          "position": 34,
+          "mondai": 1,
+          "audioUrl": "",
+          "stem": "山田さんは何を買いたかったですか。",
+          "options": [
+            "ワンピース",
+            "水着",
+            "洋服",
+            "かばん"
+          ],
+          "correct": 2,
+          "correctOption": "水着",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "title": "聴解",
+      "durationMinutes": 35,
+      "questionCount": 28,
+      "questions": [
+        {
+          "id": "n4_past_2015_07_listening_q1",
+          "number": 1,
+          "position": 0,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/fa/13/fa13963986fb345e8b892f98abebf566d39c63ed",
+          "stem": "１番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctOption": "4",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q2",
+          "number": 2,
+          "position": 1,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/54/c8/54c88b087161da37599fe4d7a6ad5c82e70887e4",
+          "stem": "２番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "漢学を読みます",
+            "本を読みます",
+            "テープを聞きます",
+            "辞書を引きます"
+          ],
+          "correct": 4,
+          "correctOption": "辞書を引きます",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q3",
+          "number": 3,
+          "position": 2,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/cd/05/cd053bfc4989221f5c2e02e2803548fe829c0845",
+          "stem": "３番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctOption": "4",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q4",
+          "number": 4,
+          "position": 3,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/04/18/041816a6527d1c9980d1daa0d7bdf1dcf7f1e5ce",
+          "stem": "４番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q5",
+          "number": 5,
+          "position": 4,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/cd/b6/cdb68f3f7d6a9d9ace796d2467276f49852afa36",
+          "stem": "５番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "カバン",
+            "財布",
+            "時計",
+            "飾"
+          ],
+          "correct": 4,
+          "correctOption": "飾",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q6",
+          "number": 6,
+          "position": 5,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/e7/2e/e72e6fe388b26e45df741548d62956314b886a72",
+          "stem": "６番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q7",
+          "number": 7,
+          "position": 6,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/18/f8/18f8b1acbd9174e9feac04c5d9b86bbc513a4b3a",
+          "stem": "７番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "おとうさん",
+            "おかあさん",
+            "お兑 さん",
+            "妹"
+          ],
+          "correct": 4,
+          "correctOption": "妹",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q8",
+          "number": 8,
+          "position": 7,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/41/73/4173127b9fef1d80ee42e00e21331cbb52fe1dca",
+          "stem": "８番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "4,000円",
+            "3,000 円",
+            "3,900円",
+            "2,900 円"
+          ],
+          "correct": 2,
+          "correctOption": "3,000 円",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q9",
+          "number": 9,
+          "position": 8,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/18/63/18634ad377cb31f450f60d4f74af2174f6d33671",
+          "stem": "１番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "女の子が人形に着せるため",
+            "女の子がペットに耆せるため",
+            "おとなが人形に着せるため",
+            "お と な が ペ ッ ト に 著せるため"
+          ],
+          "correct": 4,
+          "correctOption": "お と な が ペ ッ ト に 著せるため",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q10",
+          "number": 10,
+          "position": 9,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/0c/3b/0c3bf7a388f139016892b2b680ff4bedffb844c8",
+          "stem": "２番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "遅くまでテレビを見ていたから",
+            "遅くまで本を読んでいたから",
+            "隣の部屋がうるさかったから",
+            "隣の部屋でカラオケをしていたから"
+          ],
+          "correct": 4,
+          "correctOption": "隣の部屋でカラオケをしていたから",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q11",
+          "number": 11,
+          "position": 10,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/25/d8/25d81228e0cea2491fb5b75331933a5cb3463d3a",
+          "stem": "３番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "安いが おいしい",
+            "安いがおいしく ない",
+            "高いが おいしい",
+            "高いが おいしく ない"
+          ],
+          "correct": 2,
+          "correctOption": "安いがおいしく ない",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q12",
+          "number": 12,
+          "position": 11,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/08/ba/08bad25acfb5385b6b99763fe3e7c6df53868fbc",
+          "stem": "４番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctOption": "4",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q13",
+          "number": 13,
+          "position": 12,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/56/f0/56f0d55928dd6ac66edf08b0c796514992485a3b",
+          "stem": "５番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "洗濯を した",
+            "掃除を した",
+            "勉強を した",
+            "遊んでいた"
+          ],
+          "correct": 4,
+          "correctOption": "遊んでいた",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q14",
+          "number": 14,
+          "position": 13,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/b9/81/b9817c695224cc85a7441ad07636c1169d5dd6f5",
+          "stem": "６番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "2時30分のバスで行く",
+            "2時30分の電車で行く",
+            "1時30分のバスで行く",
+            "1時30分の電車で行く"
+          ],
+          "correct": 3,
+          "correctOption": "1時30分のバスで行く",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q15",
+          "number": 15,
+          "position": 14,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/96/81/9681e3d17fcc93caa5cad68bb199a1323d4fd0aa",
+          "stem": "７番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "12人",
+            "11人",
+            "10人",
+            "9人"
+          ],
+          "correct": 3,
+          "correctOption": "10人",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q16",
+          "number": 16,
+          "position": 15,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/e7/01/e7010509c272b77d6633f20bc89750018a8845ef",
+          "stem": "１番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q17",
+          "number": 17,
+          "position": 16,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/0d/4b/0d4bc22dd9819b02622007c33bf00c839cd32f6c",
+          "stem": "２番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q18",
+          "number": 18,
+          "position": 17,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/22/ed/22ed9eb49ec345b8f1ca5275134481058f435ad4",
+          "stem": "３番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q19",
+          "number": 19,
+          "position": 18,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/e4/99/e499a23e7842ee6a42f1035efba9afa5516fd738",
+          "stem": "４番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q20",
+          "number": 20,
+          "position": 19,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/c8/8e/c88e42ec1f7993e10b67b06f382e670052aeb307",
+          "stem": "５番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q21",
+          "number": 21,
+          "position": 20,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/ea/05/ea05f65e718867da1b42326b8df03ec475cec55b",
+          "stem": "１番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q22",
+          "number": 22,
+          "position": 21,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/3d/57/3d5722d724627459efb6f61545ede1ac40ec88d8",
+          "stem": "２番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q23",
+          "number": 23,
+          "position": 22,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/97/d0/97d00e45bfb051a13de3e92791600a3aa1e733f2",
+          "stem": "３番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q24",
+          "number": 24,
+          "position": 23,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/a3/70/a3705aace214f0d97e663b69b234ac3cd01d0da5",
+          "stem": "４番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 2,
+          "correctOption": "2",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q25",
+          "number": 25,
+          "position": 24,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/11/da/11da185bbd7e5fd9c5e33cba358f7f38e94f0002",
+          "stem": "５番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q26",
+          "number": 26,
+          "position": 25,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/40/57/40574169aaf547d616f2925ba6b9c935feb64839",
+          "stem": "６番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 1,
+          "correctOption": "1",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q27",
+          "number": 27,
+          "position": 26,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/40/8a/408a5525e984745c70cf9e7a5128fb5a120a695a",
+          "stem": "７番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "n4_past_2015_07_listening_q28",
+          "number": 28,
+          "position": 27,
+          "mondai": 1,
+          "audioUrl": "https://trynihongo.com/upload/mooddata/bd/1a/bd1a4c35db1fddf9f8354798ae3a3a1dfe1120ec",
+          "stem": "８番：&nbsp;\n                        \n                            \n                                \n                            \n                        \n                    &nbsp;",
+          "options": [
+            "1",
+            "2",
+            "3"
+          ],
+          "correct": 3,
+          "correctOption": "3",
+          "explanations": [
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    }
+  ]
+}

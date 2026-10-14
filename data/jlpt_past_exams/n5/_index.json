@@ -1,0 +1,245 @@
+{
+  "level": "N5",
+  "totalExams": 7,
+  "exams": [
+    {
+      "testId": "n5_past_mock_04",
+      "level": "n5",
+      "year": 2023,
+      "month": 12,
+      "sessionName": "JLPT N5 総合実戦模試 第4回 (全科目・聴解付)",
+      "shortName": "MOCK_04",
+      "totalDurationMinutes": 105,
+      "totalQuestions": 89,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 80,
+      "sections": [
+        {
+          "id": "vocab",
+          "title": "言語知識（文字・語彙）",
+          "durationMinutes": 25,
+          "questionCount": 33
+        },
+        {
+          "id": "grammar_reading",
+          "title": "言語知識（文法）・読解",
+          "durationMinutes": 50,
+          "questionCount": 32
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 30,
+          "questionCount": 24
+        }
+      ],
+      "id": "n5_past_mock_04"
+    },
+    {
+      "testId": "n5_past_mock_05",
+      "level": "n5",
+      "year": 2023,
+      "month": 7,
+      "sessionName": "JLPT N5 総合実戦模試 第5回 (全科目・聴解付)",
+      "shortName": "MOCK_05",
+      "totalDurationMinutes": 105,
+      "totalQuestions": 89,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 80,
+      "sections": [
+        {
+          "id": "vocab",
+          "title": "言語知識（文字・語彙）",
+          "durationMinutes": 25,
+          "questionCount": 33
+        },
+        {
+          "id": "grammar_reading",
+          "title": "言語知識（文法）・読解",
+          "durationMinutes": 50,
+          "questionCount": 32
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 30,
+          "questionCount": 24
+        }
+      ],
+      "id": "n5_past_mock_05"
+    },
+    {
+      "testId": "n5_past_mock_06",
+      "level": "n5",
+      "year": 2022,
+      "month": 12,
+      "sessionName": "JLPT N5 総合実戦模試 第6回 (全科目・聴解付)",
+      "shortName": "MOCK_06",
+      "totalDurationMinutes": 105,
+      "totalQuestions": 89,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 80,
+      "sections": [
+        {
+          "id": "vocab",
+          "title": "言語知識（文字・語彙）",
+          "durationMinutes": 25,
+          "questionCount": 33
+        },
+        {
+          "id": "grammar_reading",
+          "title": "言語知識（文法）・読解",
+          "durationMinutes": 50,
+          "questionCount": 32
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 30,
+          "questionCount": 24
+        }
+      ],
+      "id": "n5_past_mock_06"
+    },
+    {
+      "testId": "n5_past_2018_07",
+      "level": "n5",
+      "year": 2018,
+      "month": 7,
+      "sessionName": "2018年7月 JLPT N5 本試験過去問",
+      "shortName": "2018_07",
+      "totalDurationMinutes": 105,
+      "totalQuestions": 91,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 80,
+      "sections": [
+        {
+          "id": "vocab",
+          "title": "言語知識（文字・語彙）",
+          "durationMinutes": 25,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "title": "言語知識（文法）・読解",
+          "durationMinutes": 50,
+          "questionCount": 32
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 30,
+          "questionCount": 24
+        }
+      ],
+      "id": "n5_past_2018_07"
+    },
+    {
+      "testId": "n5_past_2017_07",
+      "level": "n5",
+      "year": 2017,
+      "month": 7,
+      "sessionName": "2017年7月 JLPT N5 本試験過去問",
+      "shortName": "2017_07",
+      "totalDurationMinutes": 105,
+      "totalQuestions": 79,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 80,
+      "sections": [
+        {
+          "id": "vocab",
+          "title": "言語知識（文字・語彙）",
+          "durationMinutes": 25,
+          "questionCount": 34
+        },
+        {
+          "id": "grammar_reading",
+          "title": "言語知識（文法）・読解",
+          "durationMinutes": 50,
+          "questionCount": 21
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 30,
+          "questionCount": 24
+        }
+      ],
+      "id": "n5_past_2017_07"
+    },
+    {
+      "testId": "n5_past_2016_12",
+      "level": "n5",
+      "year": 2016,
+      "month": 12,
+      "sessionName": "2016年12月 JLPT N5 本試験過去問",
+      "shortName": "2016_12",
+      "totalDurationMinutes": 105,
+      "totalQuestions": 90,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 80,
+      "sections": [
+        {
+          "id": "vocab",
+          "title": "言語知識（文字・語彙）",
+          "durationMinutes": 25,
+          "questionCount": 34
+        },
+        {
+          "id": "grammar_reading",
+          "title": "言語知識（文法）・読解",
+          "durationMinutes": 50,
+          "questionCount": 32
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 30,
+          "questionCount": 24
+        }
+      ],
+      "id": "n5_past_2016_12"
+    },
+    {
+      "testId": "n5_past_2016_07",
+      "level": "n5",
+      "year": 2016,
+      "month": 7,
+      "sessionName": "2016年7月 JLPT N5 本試験過去問",
+      "shortName": "2016_07",
+      "totalDurationMinutes": 105,
+      "totalQuestions": 59,
+      "hasListening": true,
+      "hasAudio": true,
+      "officialScoreMax": 180,
+      "officialPassMark": 80,
+      "sections": [
+        {
+          "id": "vocab",
+          "title": "言語知識（文字・語彙）",
+          "durationMinutes": 25,
+          "questionCount": 35
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "durationMinutes": 30,
+          "questionCount": 24
+        }
+      ],
+      "id": "n5_past_2016_07"
+    }
+  ]
+}
