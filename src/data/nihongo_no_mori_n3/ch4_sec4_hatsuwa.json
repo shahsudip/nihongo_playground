@@ -1,0 +1,132 @@
+{
+  "bookId": "nihongo-no-mori-n3",
+  "bookTitle": "JLPT N3 この一冊で合格する",
+  "chapter": 4,
+  "chapterTitle": "第4章 聴解",
+  "sectionId": "ch4-hatsuwa",
+  "sectionTitle": "問題4 発話表現",
+  "instruction": "<ruby>問題<rt>もんだい</rt></ruby>4では、えを<ruby>見<rt>み</rt></ruby>ながら<ruby>質問<rt>しつもん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてください。やじるし（→）の<ruby>人<rt>ひと</rt></ruby>は<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。1から3の<ruby>中<rt>なか</rt></ruby>から<ruby>最<rt>もっと</rt></ruby>もよいものを<ruby>一<rt>ひと</rt></ruby>つえらんでください。",
+  "groupAudio": "/audio/nihongo_no_mori_n3/問題4　1番-4番.mp3",
+  "totalQuestions": 5,
+  "pages": [
+    {
+      "pageNumber": 1,
+      "title": "問題4 発話表現",
+      "instruction": "<ruby>問題<rt>もんだい</rt></ruby>4では、えを<ruby>見<rt>み</rt></ruby>ながら<ruby>質問<rt>しつもん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてください。やじるし（→）の<ruby>人<rt>ひと</rt></ruby>は<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。1から3の<ruby>中<rt>なか</rt></ruby>から<ruby>最<rt>もっと</rt></ruby>もよいものを<ruby>一<rt>ひと</rt></ruby>つえらんでください。",
+      "questions": [
+        {
+          "id": "ch4-m4-ex",
+          "questionNumber": "例",
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題4　1番-4番.mp3",
+          "image": "/nihongo_no_mori_n3/chokai/mondai4_example.png",
+          "situation": "<ruby>花<rt>はな</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいです。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。",
+          "stem": "<ruby>花<rt>はな</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいです。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。",
+          "script": [
+            {
+              "speaker": "状況",
+              "text": "<ruby>花<rt>はな</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいです。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。"
+            }
+          ],
+          "options": [
+            "ええ、1<ruby>本<rt>ぽん</rt></ruby>だけですか。",
+            "すみません、1<ruby>本<rt>ぽん</rt></ruby>ください。",
+            "そうですね、1<ruby>本<rt>ぽん</rt></ruby>で<ruby>十分<rt>じゅうぶん</rt></ruby>です。"
+          ],
+          "correct_answer": 2,
+          "explanation": "<b>【正解】2</b><br/>花屋で花を注文するときは店員に対して丁寧に「すみません、1本ください」と言います。したがって正解は2です。"
+        },
+        {
+          "id": "ch4-m4-q1",
+          "questionNumber": 1,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題4　1番.mp3",
+          "image": "/nihongo_no_mori_n3/chokai/mondai4_q1.png",
+          "situation": "<ruby>友達<rt>ともだち</rt></ruby>に<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>を<ruby>運<rt>はこ</rt></ruby>ぶのを<ruby>手伝<rt>てつだ</rt></ruby>ってほしいです。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。",
+          "stem": "<ruby>友達<rt>ともだち</rt></ruby>に<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>を<ruby>運<rt>はこ</rt></ruby>ぶのを<ruby>手伝<rt>てつだ</rt></ruby>ってほしいです。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。",
+          "script": [
+            {
+              "speaker": "状況",
+              "text": "<ruby>友達<rt>ともだち</rt></ruby>に<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>を<ruby>運<rt>はこ</rt></ruby>ぶのを<ruby>手伝<rt>てつだ</rt></ruby>ってほしいです。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。"
+            }
+          ],
+          "options": [
+            "<ruby>重<rt>おも</rt></ruby>かったかな？",
+            "<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>持<rt>も</rt></ruby>ってもらっていい？",
+            "<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby><ruby>運<rt>はこ</rt></ruby>んでいくの？"
+          ],
+          "correct_answer": 2,
+          "explanation": "<b>【正解】2</b><br/>友達に運ぶのを手伝ってほしいときの依頼の表現として「一緒に持ってもらっていい？（〜てもらう）」が適切です。したがって正解は2です。"
+        },
+        {
+          "id": "ch4-m4-q2",
+          "questionNumber": 2,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題4　2番.mp3",
+          "image": "/nihongo_no_mori_n3/chokai/mondai4_q2.png",
+          "situation": "バイオリンがうまく<ruby>弾<rt>ひ</rt></ruby>けません。<ruby>娘<rt>むすめ</rt></ruby>にアドバイスします。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。",
+          "stem": "バイオリンがうまく<ruby>弾<rt>ひ</rt></ruby>けません。<ruby>娘<rt>むすめ</rt></ruby>にアドバイスします。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。",
+          "script": [
+            {
+              "speaker": "状況",
+              "text": "バイオリンがうまく<ruby>弾<rt>ひ</rt></ruby>けません。<ruby>娘<rt>むすめ</rt></ruby>にアドバイスします。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。"
+            }
+          ],
+          "options": [
+            "もっと<ruby>優<rt>やさ</rt></ruby>しく<ruby>弾<rt>ひ</rt></ruby>いたら？",
+            "うまくなったもんね。",
+            "もうしまっていいよ。"
+          ],
+          "correct_answer": 1,
+          "explanation": "<b>【正解】1</b><br/>娘に弾き方のアドバイス・助言をする表現として「〜たら（どう）？」を用いた「もっと優しく弾いたら？」が最も適切です。したがって正解は1です。"
+        },
+        {
+          "id": "ch4-m4-q3",
+          "questionNumber": 3,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題4　3番.mp3",
+          "image": "/nihongo_no_mori_n3/chokai/mondai4_q3.png",
+          "situation": "<ruby>試合後<rt>しあいご</rt></ruby>の<ruby>選手<rt>せんしゅ</rt></ruby>に<ruby>話<rt>はな</rt></ruby>しかけます。インタビューできるかまだわかりません。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。",
+          "stem": "<ruby>試合後<rt>しあいご</rt></ruby>の<ruby>選手<rt>せんしゅ</rt></ruby>に<ruby>話<rt>はな</rt></ruby>しかけます。インタビューできるかまだわかりません。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。",
+          "script": [
+            {
+              "speaker": "状況",
+              "text": "<ruby>試合後<rt>しあいご</rt></ruby>の<ruby>選手<rt>せんしゅ</rt></ruby>に<ruby>話<rt>はな</rt></ruby>しかけます。インタビューできるかまだわかりません。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。"
+            }
+          ],
+          "options": [
+            "<ruby>今<rt>いま</rt></ruby>インタビューしてもよろしいですか。",
+            "<ruby>今<rt>いま</rt></ruby>インタビューに<ruby>答<rt>こた</rt></ruby>えましょうか。",
+            "<ruby>今<rt>いま</rt></ruby>インタビューを<ruby>伝<rt>つた</rt></ruby>えますか。"
+          ],
+          "correct_answer": 1,
+          "explanation": "<b>【正解】1</b><br/>相手にインタビューの可否・許可を丁寧に尋ねる表現は「〜てもよろしいですか」です。2は自分が答える提案になってしまいます。したがって正解は1です。"
+        },
+        {
+          "id": "ch4-m4-q4",
+          "questionNumber": 4,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題4　4番.mp3",
+          "image": "/nihongo_no_mori_n3/chokai/mondai4_q4.png",
+          "situation": "<ruby>友達<rt>ともだち</rt></ruby>が<ruby>料理<rt>りょうり</rt></ruby>をおいしそうに<ruby>食<rt>た</rt></ruby>べています。<ruby>感想<rt>かんそう</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きたいです。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。",
+          "stem": "<ruby>友達<rt>ともだち</rt></ruby>が<ruby>料理<rt>りょうり</rt></ruby>をおいしそうに<ruby>食<rt>た</rt></ruby>べています。<ruby>感想<rt>かんそう</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きたいです。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。",
+          "script": [
+            {
+              "speaker": "状況",
+              "text": "<ruby>友達<rt>ともだち</rt></ruby>が<ruby>料理<rt>りょうり</rt></ruby>をおいしそうに<ruby>食<rt>た</rt></ruby>べています。<ruby>感想<rt>かんそう</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きたいです。<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>いますか。"
+            }
+          ],
+          "options": [
+            "<ruby>味<rt>あじ</rt></ruby>はどう？<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>った？",
+            "ラーメンって<ruby>聞<rt>き</rt></ruby>いたよ？",
+            "お<ruby>腹<rt>なか</rt></ruby><ruby>空<rt>す</rt></ruby>いちゃった。"
+          ],
+          "correct_answer": 1,
+          "explanation": "<b>【正解】1</b><br/>料理を食べている友達に味や感想を尋ねる表現として「味はどう？気に入った？」がぴったりです。したがって正解は1です。"
+        }
+      ],
+      "answers": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}

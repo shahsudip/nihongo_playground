@@ -1,0 +1,232 @@
+{
+  "bookId": "nihongo-no-mori-n3",
+  "bookTitle": "JLPT N3 この一冊で合格する",
+  "chapter": 4,
+  "chapterTitle": "第4章 聴解",
+  "sectionId": "ch4-sokuji",
+  "sectionTitle": "問題5 即時応答",
+  "instruction": "<ruby>問題<rt>もんだい</rt></ruby>5では、<ruby>問題用紙<rt>もんだいようし</rt></ruby>に<ruby>何<rt>なに</rt></ruby>もいんさつされていません。まず<ruby>文<rt>ぶん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてください。それから、そのへんじを<ruby>聞<rt>き</rt></ruby>いて、1から3の<ruby>中<rt>なか</rt></ruby>から、<ruby>最<rt>もっと</rt></ruby>もよいものを<ruby>一<rt>ひと</rt></ruby>つえらんでください。",
+  "groupAudio": "/audio/nihongo_no_mori_n3/問題5　1番-9番.mp3",
+  "totalQuestions": 10,
+  "pages": [
+    {
+      "pageNumber": 1,
+      "title": "問題5 即時応答",
+      "instruction": "<ruby>問題<rt>もんだい</rt></ruby>5では、<ruby>問題用紙<rt>もんだいようし</rt></ruby>に<ruby>何<rt>なに</rt></ruby>もいんさつされていません。まず<ruby>文<rt>ぶん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてください。それから、そのへんじを<ruby>聞<rt>き</rt></ruby>いて、1から3の<ruby>中<rt>なか</rt></ruby>から、<ruby>最<rt>もっと</rt></ruby>もよいものを<ruby>一<rt>ひと</rt></ruby>つえらんでください。",
+      "questions": [
+        {
+          "id": "ch4-m5-ex",
+          "questionNumber": "例",
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題5　1番-9番.mp3",
+          "situation": "<ruby>午前中<rt>ごぜんちゅう</rt></ruby>にこの<ruby>資料<rt>しりょう</rt></ruby>まとめといてって<ruby>言<rt>い</rt></ruby>ったじゃん。",
+          "stem": "<ruby>午前中<rt>ごぜんちゅう</rt></ruby>にこの<ruby>資料<rt>しりょう</rt></ruby>まとめといてって<ruby>言<rt>い</rt></ruby>ったじゃん。",
+          "script": [
+            {
+              "speaker": "発話",
+              "text": "<ruby>午前中<rt>ごぜんちゅう</rt></ruby>にこの<ruby>資料<rt>しりょう</rt></ruby>まとめといてって<ruby>言<rt>い</rt></ruby>ったじゃん。"
+            }
+          ],
+          "options": [
+            "はい、<ruby>部長<rt>ぶちょう</rt></ruby>のおかげです。",
+            "もうまとめてくれたんですね。",
+            "<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わなくて、すみません。"
+          ],
+          "correct_answer": 3,
+          "explanation": "<b>【正解】3</b><br/>相手から「午前中に資料をまとめておいてと言ったのに（やっていない）」と注意されたときの返事なので、謝罪する「間に合わなくて、すみません」が適切です。したがって正解は3です。"
+        },
+        {
+          "id": "ch4-m5-q1",
+          "questionNumber": 1,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題5　1番.mp3",
+          "situation": "<ruby>山田<rt>やまだ</rt></ruby>さん、<ruby>今<rt>いま</rt></ruby>どこ？もうすぐ<ruby>着<rt>つ</rt></ruby>きそう？",
+          "stem": "<ruby>山田<rt>やまだ</rt></ruby>さん、<ruby>今<rt>いま</rt></ruby>どこ？もうすぐ<ruby>着<rt>つ</rt></ruby>きそう？",
+          "script": [
+            {
+              "speaker": "女",
+              "text": "<ruby>山田<rt>やまだ</rt></ruby>さん、<ruby>今<rt>いま</rt></ruby>どこ？もうすぐ<ruby>着<rt>つ</rt></ruby>きそう？"
+            }
+          ],
+          "options": [
+            "もう<ruby>着<rt>つ</rt></ruby>くの？<ruby>待<rt>ま</rt></ruby>ってて。",
+            "そろそろ<ruby>着<rt>つ</rt></ruby>くよ。",
+            "<ruby>着<rt>つ</rt></ruby>くらしいよ。"
+          ],
+          "correct_answer": 2,
+          "explanation": "<b>【正解】2</b><br/>「もうすぐ着きそう？」と自分の状況を尋ねられているので、「そろそろ着くよ」と答えるのが自然です。したがって正解は2です。"
+        },
+        {
+          "id": "ch4-m5-q2",
+          "questionNumber": 2,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題5　2番.mp3",
+          "situation": "あ、ダニエルさん、<ruby>先週<rt>せんしゅう</rt></ruby><ruby>調子<rt>ちょうし</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くて<ruby>学校<rt>がっこう</rt></ruby>を<ruby>休<rt>やす</rt></ruby>んだんだって？",
+          "stem": "あ、ダニエルさん、<ruby>先週<rt>せんしゅう</rt></ruby><ruby>調子<rt>ちょうし</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くて<ruby>学校<rt>がっこう</rt></ruby>を<ruby>休<rt>やす</rt></ruby>んだんだって？",
+          "script": [
+            {
+              "speaker": "女",
+              "text": "あ、ダニエルさん、<ruby>先週<rt>せんしゅう</rt></ruby><ruby>調子<rt>ちょうし</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くて<ruby>学校<rt>がっこう</rt></ruby>を<ruby>休<rt>やす</rt></ruby>んだんだって？"
+            }
+          ],
+          "options": [
+            "そうなの？<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>かな。",
+            "ええ、<ruby>悪<rt>わる</rt></ruby>いことはしてないよ。",
+            "うん、でも<ruby>普通<rt>ふつう</rt></ruby>のかぜだったよ。"
+          ],
+          "correct_answer": 3,
+          "explanation": "<b>【正解】3</b><br/>体調不良で学校を休んだと聞いた相手からの問いかけに対し、「うん、でも普通のかぜだったよ」と自分の当時の病状を答えるのが適切です。したがって正解は3です。"
+        },
+        {
+          "id": "ch4-m5-q3",
+          "questionNumber": 3,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題5　3番.mp3",
+          "situation": "<ruby>明日<rt>あした</rt></ruby>の10<ruby>時<rt>じ</rt></ruby>に、<ruby>山田<rt>やまだ</rt></ruby>さんのご<ruby>自宅<rt>じたく</rt></ruby>に<ruby>伺<rt>うかが</rt></ruby>いたいのですが、よろしいでしょうか。",
+          "stem": "<ruby>明日<rt>あした</rt></ruby>の10<ruby>時<rt>じ</rt></ruby>に、<ruby>山田<rt>やまだ</rt></ruby>さんのご<ruby>自宅<rt>じたく</rt></ruby>に<ruby>伺<rt>うかが</rt></ruby>いたいのですが、よろしいでしょうか。",
+          "script": [
+            {
+              "speaker": "男",
+              "text": "<ruby>明日<rt>あした</rt></ruby>の10<ruby>時<rt>じ</rt></ruby>に、<ruby>山田<rt>やまだ</rt></ruby>さんのご<ruby>自宅<rt>じたく</rt></ruby>に<ruby>伺<rt>うかが</rt></ruby>いたいのですが、よろしいでしょうか。"
+            }
+          ],
+          "options": [
+            "そちらに<ruby>行<rt>い</rt></ruby>くということですね。",
+            "はい、お<ruby>待<rt>ま</rt></ruby>ちしております。",
+            "いいですよ、<ruby>見<rt>み</rt></ruby>てみますね。"
+          ],
+          "correct_answer": 2,
+          "explanation": "<b>【正解】2</b><br/>相手が「伺いたい（訪問したい）」と申し出ているのを受ける敬語表現として、「はい、お待ちしております」が最も適切です。したがって正解は2です。"
+        },
+        {
+          "id": "ch4-m5-q4",
+          "questionNumber": 4,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題5　4番.mp3",
+          "situation": "ミンさん、<ruby>無<rt>な</rt></ruby>くしてた<ruby>免許証<rt>めんきょしょう</rt></ruby>、<ruby>結局<rt>けっきょく</rt></ruby><ruby>見<rt>み</rt></ruby>つかったの？",
+          "stem": "ミンさん、<ruby>無<rt>な</rt></ruby>くしてた<ruby>免許証<rt>めんきょしょう</rt></ruby>、<ruby>結局<rt>けっきょく</rt></ruby><ruby>見<rt>み</rt></ruby>つかったの？",
+          "script": [
+            {
+              "speaker": "男",
+              "text": "ミンさん、<ruby>無<rt>な</rt></ruby>くしてた<ruby>免許証<rt>めんきょしょう</rt></ruby>、<ruby>結局<rt>けっきょく</rt></ruby><ruby>見<rt>み</rt></ruby>つかったの？"
+            }
+          ],
+          "options": [
+            "いいえ、まだです。",
+            "ええ、<ruby>見<rt>み</rt></ruby>つかったんですか。",
+            "はい、<ruby>免許<rt>めんきょ</rt></ruby>を<ruby>取<rt>と</rt></ruby>りました。"
+          ],
+          "correct_answer": 1,
+          "explanation": "<b>【正解】1</b><br/>紛失した免許証が見つかったかどうかを尋ねられているので、「いいえ、まだです」と答えるのが自然です。したがって正解は1です。"
+        },
+        {
+          "id": "ch4-m5-q5",
+          "questionNumber": 5,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題5　5番.mp3",
+          "situation": "お<ruby>客様<rt>きゃくさま</rt></ruby>、お<ruby>預<rt>あず</rt></ruby>かりする<ruby>荷物<rt>にもつ</rt></ruby>はありますでしょうか。",
+          "stem": "お<ruby>客様<rt>きゃくさま</rt></ruby>、お<ruby>預<rt>あず</rt></ruby>かりする<ruby>荷物<rt>にもつ</rt></ruby>はありますでしょうか。",
+          "script": [
+            {
+              "speaker": "男（店員）",
+              "text": "お<ruby>客様<rt>きゃくさま</rt></ruby>、お<ruby>預<rt>あず</rt></ruby>かりする<ruby>荷物<rt>にもつ</rt></ruby>はありますでしょうか。"
+            }
+          ],
+          "options": [
+            "はい、<ruby>持<rt>も</rt></ruby>ちました。",
+            "いえ、<ruby>預<rt>あず</rt></ruby>けていません。",
+            "これをお<ruby>願<rt>ねが</rt></ruby>いします。"
+          ],
+          "correct_answer": 3,
+          "explanation": "<b>【正解】3</b><br/>預ける荷物があるかを尋ねられた客の返答として、荷物を差し出しながら「これをお願いします」と依頼するのが自然です。したがって正解は3です。"
+        },
+        {
+          "id": "ch4-m5-q6",
+          "questionNumber": 6,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題5　6番.mp3",
+          "situation": "お<ruby>客様<rt>きゃくさま</rt></ruby>、<ruby>美術館<rt>びじゅつかん</rt></ruby>で<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>るのはご<ruby>遠慮<rt>えんりょ</rt></ruby>ください。",
+          "stem": "お<ruby>客様<rt>きゃくさま</rt></ruby>、<ruby>美術館<rt>びじゅつかん</rt></ruby>で<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>るのはご<ruby>遠慮<rt>えんりょ</rt></ruby>ください。",
+          "script": [
+            {
+              "speaker": "女（係員）",
+              "text": "お<ruby>客様<rt>きゃくさま</rt></ruby>、<ruby>美術館<rt>びじゅつかん</rt></ruby>で<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>るのはご<ruby>遠慮<rt>えんりょ</rt></ruby>ください。"
+            }
+          ],
+          "options": [
+            "はい、この<ruby>写真<rt>しゃしん</rt></ruby>が<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>りました。",
+            "ぜひ、<ruby>撮<rt>と</rt></ruby>らせてください。",
+            "すみません、<ruby>気<rt>き</rt></ruby>を<ruby>付<rt>つ</rt></ruby>けます。"
+          ],
+          "correct_answer": 3,
+          "explanation": "<b>【正解】3</b><br/>「〜はご遠慮ください」は禁止・注意を促す表現です。注意されたときは謝罪して従う「すみません、気を付けます」と返すのが適切です。したがって正解は3です。"
+        },
+        {
+          "id": "ch4-m5-q7",
+          "questionNumber": 7,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題5　7番.mp3",
+          "situation": "<ruby>先生<rt>せんせい</rt></ruby>、<ruby>今<rt>いま</rt></ruby>お<ruby>時間<rt>じかん</rt></ruby>よろしいでしょうか。",
+          "stem": "<ruby>先生<rt>せんせい</rt></ruby>、<ruby>今<rt>いま</rt></ruby>お<ruby>時間<rt>じかん</rt></ruby>よろしいでしょうか。",
+          "script": [
+            {
+              "speaker": "女（学生）",
+              "text": "<ruby>先生<rt>せんせい</rt></ruby>、<ruby>今<rt>いま</rt></ruby>お<ruby>時間<rt>じかん</rt></ruby>よろしいでしょうか。"
+            }
+          ],
+          "options": [
+            "<ruby>結構<rt>けっこう</rt></ruby>です。",
+            "<ruby>構<rt>かま</rt></ruby>いませんよ。",
+            "ご<ruby>遠慮<rt>えんりょ</rt></ruby>ください。"
+          ],
+          "correct_answer": 2,
+          "explanation": "<b>【正解】2</b><br/>学生から「今お時間よろしいでしょうか（話してもいいですか）」と尋ねられた先生の返答として、「構いませんよ（いいですよ）」と応じるのが適切です。したがって正解は2です。"
+        },
+        {
+          "id": "ch4-m5-q8",
+          "questionNumber": 8,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題5　8番.mp3",
+          "situation": "キムさん、ごあいさつのため、すぐにお<ruby>目<rt>め</rt></ruby>にかかりたいのですが。",
+          "stem": "キムさん、ごあいさつのため、すぐにお<ruby>目<rt>め</rt></ruby>にかかりたいのですが。",
+          "script": [
+            {
+              "speaker": "女",
+              "text": "キムさん、ごあいさつのため、すぐにお<ruby>目<rt>め</rt></ruby>にかかりたいのですが。"
+            }
+          ],
+          "options": [
+            "そうですね、<ruby>明日<rt>あした</rt></ruby>はいかがですか。",
+            "<ruby>今日<rt>きょう</rt></ruby>はお<ruby>会<rt>あ</rt></ruby>いできてよかったです。",
+            "ぜひ<ruby>見<rt>み</rt></ruby>せてください。"
+          ],
+          "correct_answer": 1,
+          "explanation": "<b>【正解】1</b><br/>「お目にかかる（会う）」を希望されたときの返答として、会う日程を提案する「そうですね、明日はいかがですか」が自然です。したがって正解は1です。"
+        },
+        {
+          "id": "ch4-m5-q9",
+          "questionNumber": 9,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題5　9番.mp3",
+          "situation": "<ruby>子<rt>こ</rt></ruby>どものころ、プールでおぼれちゃったことがあるんだ。",
+          "stem": "<ruby>子<rt>こ</rt></ruby>どものころ、プールでおぼれちゃったことがあるんだ。",
+          "script": [
+            {
+              "speaker": "男",
+              "text": "<ruby>子<rt>こ</rt></ruby>どものころ、プールでおぼれちゃったことがあるんだ。"
+            }
+          ],
+          "options": [
+            "それはこわかったよね。",
+            "おぼれている<ruby>子<rt>こ</rt></ruby>はどこにいるの？",
+            "<ruby>泳<rt>およ</rt></ruby>げるんだ、すごいね。"
+          ],
+          "correct_answer": 1,
+          "explanation": "<b>【正解】1</b><br/>相手が「昔プールでおぼれてしまったことがある」と打ち明けてきたときの共感の相槌として「それはこわかったよね」が最も自然です。したがって正解は1です。"
+        }
+      ],
+      "answers": [
+        3,
+        2,
+        3,
+        2,
+        1,
+        3,
+        3,
+        2,
+        1,
+        1
+      ]
+    }
+  ]
+}

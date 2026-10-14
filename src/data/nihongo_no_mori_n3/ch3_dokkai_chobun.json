@@ -1,0 +1,184 @@
+{
+  "bookId": "nihongo-no-mori-n3",
+  "bookTitle": "JLPT N3 この一冊で合格する",
+  "chapter": 3,
+  "chapterTitle": "第3章 読解",
+  "section": 6,
+  "sectionTitle": "問題6 内容理解（長文） (4問)",
+  "sectionDescription": "問題6では、長文（700字程度）を読みます。文章を書いた人の考え、原因や理由についての問題が出ます。内容理解（長文）は大問が1つあり、4つの小問が出ます。",
+  "instruction": "問題6 つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "totalPages": 1,
+  "totalQuestions": 4,
+  "passages": [
+    {
+      "id": 1,
+      "passageNumber": 1,
+      "passageLabel": "",
+      "pageNumber": 1,
+      "bookPage": 258,
+      "pdfPage": 261,
+      "kaisetsuBookPage": 260,
+      "kaisetsuPdfPage": 263,
+      "passageLayout": "essay",
+      "passageText": "2020年から、全国の小学校でパソコンの使い方の<ruby>基本<rt>きほん</rt></ruby>を教えることになった。そして私も、来年の春から、4年生にパソコンの<ruby>授業<rt>じゅぎょう</rt></ruby>をすることになった。\n\nパソコンについて勉強することは、インターネット社会を生きるために必要な「情報を調べる力」を身につけられるという。また、<ruby>迷<rt>まよ</rt></ruby>ったり悩んだりしたとき、正しい情報を<ruby>探<rt>さが</rt></ruby>したり、正しい方を選んだりすることができるようになるだろう。\n\n「ゲームが<ruby>得意<rt>とくい</rt></ruby>だから」という理由で先生に選ばれたが、実は、私が好きなのは<ruby>携帯<rt>けいたい</rt></ruby>電話のゲームだ。パソコンはあまり使わないし、どのように教えればいいのかわからないので<span class=\"underline decoration-2 underline-offset-4 font-semibold\">とても不安だ</span>。早速、教え方について調べることにした。\n\nまず、子どもにパソコンの使い方を教えるときに大切なことは「パソコンを好きになってもらうこと」だそうだ。もうパソコンの<ruby>授業<rt>じゅぎょう</rt></ruby>を始めている学校が、<ruby>実際<rt>じっさい</rt></ruby>に使っている有名なサイトが二つある。\n\n一つ目は、パソコンを使って絵をかき、その絵を自由に動かすことができるというものだ。使い方は簡単だが、なかなか自由に動かすことができずに苦労した。二つ目は、ゲームやクイズをしながら、パソコンの使い方を勉強するというものだ。クイズは数学の内容のものが多く、大人の私でも難しいレベルのものもあった。どちらにしても、<ruby>授業<rt>じゅぎょう</rt></ruby>の前に、先生が使い方をよく理解する必要がありそうだ。\n\nパソコンの<ruby>扱<rt>あつか</rt></ruby>いに<ruby>慣<rt>な</rt></ruby>れることももちろん必要だが、私も生徒側になって学ぶ経験が必要だと考えた。<ruby>授業<rt>じゅぎょう</rt></ruby>が始まる前に、私もパソコン教室に通って、教えてもらう経験をしなければならないと思う。",
+      "questions": [
+        {
+          "id": 1,
+          "questionNumber": 1,
+          "stem": "この文章では、子どもにパソコンの使い方を教えることにはどんな効果があると言っているか。",
+          "options": [
+            "子どもたちが、ゲームをもっと楽しむことができる。",
+            "インターネット社会を調べることができる。",
+            "<ruby>将来<rt>しょうらい</rt></ruby>、<ruby>迷<rt>まよ</rt></ruby>ったり悩んだりしなくなる。",
+            "インターネット社会で必要な力を身につけられる。"
+          ],
+          "correct_answer": 4,
+          "optionsKaisetsu": [
+            {
+              "optionNumber": 1,
+              "text": "子どもたちが、ゲームをもっと<ruby>楽<rt>たの</rt></ruby>しむことができる。",
+              "isCorrect": false,
+              "note": "「ゲームをもっと楽しむことができる」とは言っていない。"
+            },
+            {
+              "optionNumber": 2,
+              "text": "インターネット<ruby>社会<rt>しゃかい</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べることができる。",
+              "isCorrect": false,
+              "note": "「インターネット社会を調べる」ではなく、全部言っていない。"
+            },
+            {
+              "optionNumber": 3,
+              "text": "<ruby>将来<rt>しょうらい</rt></ruby>、<ruby>迷<rt>まよ</rt></ruby>ったり<ruby>悩<rt>なや</rt></ruby>んだりしなくなる。",
+              "isCorrect": false,
+              "note": "「迷ったり悩んだりしなくなる」とは言っていない（悩んだとき正しい情報を探せる）。"
+            },
+            {
+              "optionNumber": 4,
+              "text": "インターネット<ruby>社会<rt>しゃかい</rt></ruby>で<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>力<rt>ちから</rt></ruby>を<ruby>身<rt>み</rt></ruby>につけられる。",
+              "isCorrect": true,
+              "note": ""
+            }
+          ],
+          "explanation": "【正解】4\n第2段落に「パソコンについて勉強することは、インターネット社会を生きるために必要な「情報を調べる力」を身につけられるという」と明確に述べられているため、4が正解です。\n1：「ゲームをもっと楽しむことができる」とは言っていません。\n2：「インターネット社会を調べる」とは言っていません。\n3：「迷ったり悩んだりしなくなる」とは言っていません（悩んだときに正しい情報を探せるようになると述べています）。"
+        },
+        {
+          "id": 2,
+          "questionNumber": 2,
+          "stem": "<u>とても不安だ</u>とあるが、何が不安なのか。",
+          "options": [
+            "<ruby>携帯<rt>けいたい</rt></ruby>やパソコンのゲームの教え方がわからないから。",
+            "<ruby>携帯<rt>けいたい</rt></ruby>やパソコンのゲームがよくわからないから。",
+            "ゲームが<ruby>得意<rt>とくい</rt></ruby>だと、パソコンの使い方を教えることは難しいから。",
+            "ゲームは<ruby>得意<rt>とくい</rt></ruby>だが、パソコンは<ruby>得意<rt>とくい</rt></ruby>ではないから。"
+          ],
+          "correct_answer": 4,
+          "optionsKaisetsu": [
+            {
+              "optionNumber": 1,
+              "text": "<ruby>携帯<rt>けいたい</rt></ruby>やパソコンのゲームの<ruby>教<rt>おし</rt></ruby>え<ruby>方<rt>かた</rt></ruby>がわからないから。",
+              "isCorrect": false,
+              "note": "教えるのはゲームではなくパソコンの使い方。"
+            },
+            {
+              "optionNumber": 2,
+              "text": "<ruby>携帯<rt>けいたい</rt></ruby>やパソコンのゲームがよくわからないから。",
+              "isCorrect": false,
+              "note": "携帯のゲームは好きで得意である。"
+            },
+            {
+              "optionNumber": 3,
+              "text": "ゲームが<ruby>得意<rt>とくい</rt></ruby>だと、パソコンの<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えることは<ruby>難<rt>むずか</rt></ruby>しいから。",
+              "isCorrect": false,
+              "note": "「ゲームが得意だと教えるのが難しい」とは言っていない。"
+            },
+            {
+              "optionNumber": 4,
+              "text": "ゲームは<ruby>得意<rt>とくい</rt></ruby>だが、パソコンは<ruby>得意<rt>とくい</rt></ruby>ではないから。",
+              "isCorrect": true,
+              "note": ""
+            }
+          ],
+          "explanation": "【正解】4\n※「パソコンはあまり使わないし、どのように教えればいいのかわからない」とあるので、4が正解。\n第3段落で「実は、私が好きなのは携帯電話のゲームだ。パソコンはあまり使わないし、どのように教えればいいのかわからないのでとても不安だ」と述べています。"
+        },
+        {
+          "id": 3,
+          "questionNumber": 3,
+          "stem": "サイトについて、<ruby>合<rt>あ</rt></ruby>っているものはどれか。",
+          "options": [
+            "絵をかくサイトは、クイズを解くだけなので簡単だ。",
+            "絵をかくサイトは、絵を動かすのが難しい。",
+            "ゲームで勉強するサイトは、数学の<ruby>授業<rt>じゅぎょう</rt></ruby>で使える。",
+            "ゲームで勉強するサイトは、使い方が簡単だ。"
+          ],
+          "correct_answer": 2,
+          "optionsKaisetsu": [
+            {
+              "optionNumber": 1,
+              "text": "<ruby>絵<rt>え</rt></ruby>をかくサイトは、クイズを<ruby>解<rt>と</rt></ruby>くだけなので<ruby>簡単<rt>かんたん</rt></ruby>だ。",
+              "isCorrect": false,
+              "note": "絵をかくサイトに「クイズを解く」とは言っていない。"
+            },
+            {
+              "optionNumber": 2,
+              "text": "<ruby>絵<rt>え</rt></ruby>をかくサイトは、<ruby>絵<rt>え</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かすのが<ruby>難<rt>むずか</rt></ruby>しい。",
+              "isCorrect": true,
+              "note": ""
+            },
+            {
+              "optionNumber": 3,
+              "text": "ゲームで<ruby>勉強<rt>べんきょう</rt></ruby>するサイトは、<ruby>数学<rt>すうがく</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>で<ruby>使<rt>つか</rt></ruby>える。",
+              "isCorrect": false,
+              "note": "「数学の授業で使える」とは言っていない。"
+            },
+            {
+              "optionNumber": 4,
+              "text": "ゲームで<ruby>勉強<rt>べんきょう</rt></ruby>するサイトは、<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>だ。",
+              "isCorrect": false,
+              "note": "「使い方が簡単」とは言っていない。"
+            }
+          ],
+          "explanation": "【正解】2\n第5段落に「一つ目は、パソコンを使って絵をかき、その絵を自由に動かすことができるというものだ。使い方は簡単だが、なかなか自由に動かすことができずに苦労した」とあるため、2の「絵をかくサイトは、絵を動かすのが難しい」が合っています。\n1：絵をかくサイトに「クイズを解く」とは言っていません。\n3：「数学の授業で使える」とは言っていません。\n4：「使い方が簡単」とは言っていません。"
+        },
+        {
+          "id": 4,
+          "questionNumber": 4,
+          "stem": "パソコンの<ruby>授業<rt>じゅぎょう</rt></ruby>をする<ruby>前<rt>まえ</rt></ruby>に、「<ruby>私<rt>わたし</rt></ruby>」はどうしなければならないと考えているか。",
+          "options": [
+            "<ruby>生徒<rt>せいと</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>にパソコン教室に通う必要がある。",
+            "パソコンを好きになって使い方に<ruby>慣<rt>な</rt></ruby>れる必要がある。",
+            "<ruby>生徒<rt>せいと</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちがわかるように、教えてもらうという経験をする必要がある。",
+            "パソコン教室に通って、<ruby>教<rt>おし</rt></ruby>え<ruby>方<rt>かた</rt></ruby>を勉強する必要がある。"
+          ],
+          "correct_answer": 3,
+          "optionsKaisetsu": [
+            {
+              "optionNumber": 1,
+              "text": "<ruby>生徒<rt>せいと</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>にパソコン<ruby>教室<rt>きょうしつ</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>う<ruby>必要<rt>ひつよう</rt></ruby>がある。",
+              "isCorrect": false,
+              "note": "「生徒と一緒に」とは言っていない。"
+            },
+            {
+              "optionNumber": 2,
+              "text": "パソコンを<ruby>好<rt>す</rt></ruby>きになって<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>に<ruby>慣<rt>な</rt></ruby>れる<ruby>必要<rt>ひつよう</rt></ruby>がある。",
+              "isCorrect": false,
+              "note": "「パソコンを好きになって」とは言っていない（それは子どもたちに対して）。"
+            },
+            {
+              "optionNumber": 3,
+              "text": "<ruby>生徒<rt>せいと</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちがわかるように、<ruby>教<rt>おし</rt></ruby>えてもらうという<ruby>経験<rt>けいけん</rt></ruby>をする<ruby>必要<rt>ひつよう</rt></ruby>がある。",
+              "isCorrect": true,
+              "note": ""
+            },
+            {
+              "optionNumber": 4,
+              "text": "パソコン<ruby>教室<rt>きょうしつ</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>って、<ruby>教<rt>おし</rt></ruby>え<ruby>方<rt>かた</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>する<ruby>必要<rt>ひつよう</rt></ruby>がある。",
+              "isCorrect": false,
+              "note": "「教え方を勉強する必要がある」とは言っていない。"
+            }
+          ],
+          "explanation": "【正解】3\n第6段落で「私も生徒側になって学ぶ経験が必要だと考えた。授業が始まる前に、私もパソコン教室に通って、教えてもらう経験をしなければならないと思う」と述べており、生徒の気持ちがわかるように教えてもらう経験が必要という3が正解です。\n1：「生徒と一緒に」とは言っていません。\n2：「パソコンを好きになって」とは言っていません。\n4：「教え方を勉強する必要がある」とは言っていません。"
+        }
+      ]
+    }
+  ]
+}

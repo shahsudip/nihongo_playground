@@ -1,0 +1,126 @@
+{
+  "bookId": "nihongo-no-mori-n3",
+  "bookTitle": "JLPT N3 この一冊で合格する",
+  "chapter": 4,
+  "chapterTitle": "第4章 聴解",
+  "sectionId": "ch4-gaiyou",
+  "sectionTitle": "問題3 概要理解",
+  "instruction": "<ruby>問題<rt>もんだい</rt></ruby>3では、<ruby>問題用紙<rt>もんだいようし</rt></ruby>に<ruby>何<rt>なに</rt></ruby>もいんさつされていません。この<ruby>問題<rt>もんだい</rt></ruby>は、ぜんたいとしてどんなないようかを<ruby>聞<rt>き</rt></ruby>く<ruby>問題<rt>もんだい</rt></ruby>です。<ruby>話<rt>はなし</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に<ruby>質問<rt>しつもん</rt></ruby>はありません。まず<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてください。それから、<ruby>質問<rt>しつもん</rt></ruby>とせんたくしを<ruby>聞<rt>き</rt></ruby>いて、1から4の<ruby>中<rt>なか</rt></ruby>から、<ruby>最<rt>もっと</rt></ruby>もよいものを<ruby>一<rt>ひと</rt></ruby>つえらんでください。",
+  "groupAudio": "/audio/nihongo_no_mori_n3/問題3　1番-3番.mp3",
+  "totalQuestions": 4,
+  "pages": [
+    {
+      "pageNumber": 1,
+      "title": "問題3 概要理解",
+      "instruction": "<ruby>問題<rt>もんだい</rt></ruby>3では、<ruby>問題用紙<rt>もんだいようし</rt></ruby>に<ruby>何<rt>なに</rt></ruby>もいんさつされていません。この<ruby>問題<rt>もんだい</rt></ruby>は、ぜんたいとしてどんなないようかを<ruby>聞<rt>き</rt></ruby>く<ruby>問題<rt>もんだい</rt></ruby>です。<ruby>話<rt>はなし</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に<ruby>質問<rt>しつもん</rt></ruby>はありません。まず<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてください。それから、<ruby>質問<rt>しつもん</rt></ruby>とせんたくしを<ruby>聞<rt>き</rt></ruby>いて、1から4の<ruby>中<rt>なか</rt></ruby>から、<ruby>最<rt>もっと</rt></ruby>もよいものを<ruby>一<rt>ひと</rt></ruby>つえらんでください。",
+      "questions": [
+        {
+          "id": "ch4-m3-ex",
+          "questionNumber": "例",
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題3　1番-3番.mp3",
+          "situation": "テレビでアナウンサーが<ruby>話<rt>はな</rt></ruby>しています。",
+          "stem": "アナウンサーは<ruby>何<rt>なに</rt></ruby>について<ruby>話<rt>はな</rt></ruby>していますか。",
+          "script": [
+            {
+              "speaker": "アナウンサー（女）",
+              "text": "<ruby>最近<rt>さいきん</rt></ruby>、<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>行<rt>い</rt></ruby>かないで<ruby>家<rt>いえ</rt></ruby>で<ruby>仕事<rt>しごと</rt></ruby>をするというやり<ruby>方<rt>かた</rt></ruby>を、<ruby>多<rt>おお</rt></ruby>くの<ruby>会社<rt>かいしゃ</rt></ruby>が<ruby>行<rt>おこな</rt></ruby>っています。インターネットを<ruby>使<rt>つか</rt></ruby>えば、<ruby>同<rt>おな</rt></ruby>じ<ruby>場所<rt>ばしょ</rt></ruby>にいなくても<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>情報<rt>じょうほう</rt></ruby>を<ruby>伝<rt>つた</rt></ruby>えることができる<ruby>便利<rt>べんり</rt></ruby>な<ruby>時代<rt>じだい</rt></ruby>になりました。しかし、<ruby>今回<rt>こんかい</rt></ruby>のインタビューで「<ruby>家<rt>いえ</rt></ruby>に<ruby>家族<rt>かぞく</rt></ruby>がいるので<ruby>仕事<rt>しごと</rt></ruby>に<ruby>集中<rt>しゅうちゅう</rt></ruby>できない」「わからないことがあってもすぐに<ruby>相談<rt>そうだん</rt></ruby>ができない」「<ruby>人<rt>ひと</rt></ruby>との<ruby>関<rt>かか</rt></ruby>わりがなくなり、ストレスがたまる」などの<ruby>意見<rt>いけん</rt></ruby>があることがわかりました。"
+            }
+          ],
+          "options": [
+            "<ruby>家<rt>いえ</rt></ruby>で<ruby>仕事<rt>しごと</rt></ruby>をする<ruby>理由<rt>りゆう</rt></ruby>",
+            "<ruby>家<rt>いえ</rt></ruby>での<ruby>働<rt>はたら</rt></ruby>き<ruby>方<rt>かた</rt></ruby>",
+            "<ruby>家<rt>いえ</rt></ruby>で<ruby>仕事<rt>しごと</rt></ruby>をすることの<ruby>問題点<rt>もんだいてん</rt></ruby>",
+            "<ruby>家<rt>いえ</rt></ruby>で<ruby>仕事<rt>しごと</rt></ruby>をするいい<ruby>点<rt>てん</rt></ruby>"
+          ],
+          "correct_answer": 3,
+          "explanation": "<b>【正解】3</b><br/>アナウンサーは在宅勤務の利便性に少し触れた後、「集中できない」「相談できない」「ストレスがたまるなどの意見がある」と、在宅勤務に伴う課題・マイナス面を取り上げています。したがって正解は「家で仕事をすることの問題点」（3）です。"
+        },
+        {
+          "id": "ch4-m3-q1",
+          "questionNumber": 1,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題3　1番.mp3",
+          "situation": "<ruby>会社<rt>かいしゃ</rt></ruby>で<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>と<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>話<rt>はな</rt></ruby>しています。",
+          "stem": "<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は<ruby>何<rt>なに</rt></ruby>について<ruby>話<rt>はな</rt></ruby>していますか。",
+          "script": [
+            {
+              "speaker": "女",
+              "text": "<ruby>加藤<rt>かとう</rt></ruby>さんって<ruby>絵<rt>え</rt></ruby>を<ruby>描<rt>か</rt></ruby>くことが<ruby>好<rt>す</rt></ruby>きなんだってね。"
+            },
+            {
+              "speaker": "男（加藤）",
+              "text": "うん。<ruby>去年<rt>きょねん</rt></ruby>から<ruby>始<rt>はじ</rt></ruby>めてね、<ruby>休日<rt>きゅうじつ</rt></ruby>は<ruby>絵画教室<rt>かいがきょうしつ</rt></ruby>にも<ruby>通<rt>かよ</rt></ruby>ってるんだ。"
+            },
+            {
+              "speaker": "女",
+              "text": "それが<ruby>最近<rt>さいきん</rt></ruby>の<ruby>楽<rt>たの</rt></ruby>しみなんだね。いいね。"
+            },
+            {
+              "speaker": "男（加藤）",
+              "text": "プロみたいにはうまく<ruby>描<rt>か</rt></ruby>けないんだけどね。でも、<ruby>描<rt>か</rt></ruby>いていると<ruby>気分<rt>きぶん</rt></ruby>がいいし、<ruby>仕事<rt>しごと</rt></ruby>に<ruby>集中<rt>しゅうちゅう</rt></ruby>できないときも、<ruby>絵<rt>え</rt></ruby>を<ruby>描<rt>か</rt></ruby>くときのことを<ruby>考<rt>かんが</rt></ruby>えると<ruby>頑張<rt>がんば</rt></ruby>れるんだ。それに1つの<ruby>作品<rt>さくひん</rt></ruby>を<ruby>描<rt>か</rt></ruby>き<ruby>終<rt>お</rt></ruby>わったときはすごく<ruby>自信<rt>じしん</rt></ruby>がつくしね。"
+            },
+            {
+              "speaker": "女",
+              "text": "そうなんだ。私<ruby>私<rt>わたし</rt></ruby>もやってみようかな。"
+            }
+          ],
+          "options": [
+            "<ruby>絵<rt>え</rt></ruby>を<ruby>描<rt>か</rt></ruby>き<ruby>始<rt>はじ</rt></ruby>めた<ruby>理由<rt>りゆう</rt></ruby>",
+            "<ruby>絵<rt>え</rt></ruby>を<ruby>描<rt>か</rt></ruby>くことの<ruby>楽<rt>たの</rt></ruby>しさ",
+            "<ruby>絵<rt>え</rt></ruby>をうまく<ruby>描<rt>か</rt></ruby>く<ruby>方法<rt>ほうほう</rt></ruby>",
+            "<ruby>絵<rt>え</rt></ruby>に<ruby>集中<rt>しゅうちゅう</rt></ruby>できない<ruby>理由<rt>りゆう</rt></ruby>"
+          ],
+          "correct_answer": 2,
+          "explanation": "<b>【正解】2</b><br/>男の人は絵を描くことについて「気分がいい」「仕事も頑張れる」「自信がつく」と、絵を描くことの魅力や楽しさについて語っています。したがって正解は「絵を描くことの楽しさ」（2）です。"
+        },
+        {
+          "id": "ch4-m3-q2",
+          "questionNumber": 2,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題3　2番.mp3",
+          "situation": "<ruby>料理教室<rt>りょうりきょうしつ</rt></ruby>で、<ruby>先生<rt>せんせい</rt></ruby>が<ruby>話<rt>はな</rt></ruby>しています。",
+          "stem": "<ruby>先生<rt>せんせい</rt></ruby>は、<ruby>料理<rt>りょうり</rt></ruby>の<ruby>何<rt>なに</rt></ruby>について<ruby>話<rt>はな</rt></ruby>していますか。",
+          "script": [
+            {
+              "speaker": "先生（女）",
+              "text": "この<ruby>料理<rt>りょうり</rt></ruby>は、<ruby>難<rt>むずか</rt></ruby>しくはありませんが、いくつかのポイントがあります。<ruby>今<rt>いま</rt></ruby>から<ruby>順番<rt>じゅんばん</rt></ruby>に<ruby>説明<rt>せつめい</rt></ruby>します。<ruby>最初<rt>さいしょ</rt></ruby>に、<ruby>肉<rt>にく</rt></ruby>に<ruby>塩<rt>しお</rt></ruby>で<ruby>味<rt>あじ</rt></ruby>をつけます。10<ruby>分<rt>ぷん</rt></ruby>くらい<ruby>置<rt>お</rt></ruby>いてから、<ruby>冷<rt>つめ</rt></ruby>たいフライパンに<ruby>乗<rt>の</rt></ruby>せて<ruby>火<rt>ひ</rt></ruby>をつけます。そうすることで、どの<ruby>肉<rt>にく</rt></ruby>にも<ruby>同<rt>おな</rt></ruby>じくらい<ruby>火<rt>ひ</rt></ruby>が<ruby>通<rt>とお</rt></ruby>ります。<ruby>火<rt>ひ</rt></ruby>は<ruby>弱<rt>よわ</rt></ruby>くしてくださいね。この<ruby>通<rt>とお</rt></ruby>りにすれば、とってもおいしくできあがりますよ。"
+            }
+          ],
+          "options": [
+            "<ruby>料理<rt>りょうり</rt></ruby>の<ruby>難<rt>むずか</rt></ruby>しさ",
+            "<ruby>料理<rt>りょうり</rt></ruby>で<ruby>使<rt>つか</rt></ruby>う<ruby>調味料<rt>ちょうみりょう</rt></ruby>",
+            "<ruby>料理<rt>りょうり</rt></ruby>のおいしさ",
+            "<ruby>料理<rt>りょうり</rt></ruby>の<ruby>方法<rt>ほうほう</rt></ruby>"
+          ],
+          "correct_answer": 4,
+          "explanation": "<b>【正解】4</b><br/>先生は「今から順番に説明します。最初に…冷たいフライパンに乗せて…火は弱く…この通りにすればおいしくできあがります」と、調理の具体的な手順やコツ（方法）を説明しています。したがって正解は「料理の方法」（4）です。"
+        },
+        {
+          "id": "ch4-m3-q3",
+          "questionNumber": 3,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題3　3番.mp3",
+          "situation": "テレビで<ruby>遊園地<rt>ゆうえんち</rt></ruby>の<ruby>係<rt>かかり</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>話<rt>はな</rt></ruby>しています。",
+          "stem": "<ruby>遊園地<rt>ゆうえんち</rt></ruby>の<ruby>係<rt>かかり</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は<ruby>何<rt>なに</rt></ruby>について<ruby>話<rt>はな</rt></ruby>していますか。",
+          "script": [
+            {
+              "speaker": "係の人（女）",
+              "text": "<ruby>皆<rt>みな</rt></ruby>さん、<ruby>大人<rt>おとな</rt></ruby>になってから<ruby>遊園地<rt>ゆうえんち</rt></ruby>に<ruby>行<rt>い</rt></ruby>く<ruby>機会<rt>きかい</rt></ruby>が<ruby>減<rt>へ</rt></ruby>ってませんか。<ruby>遊園地<rt>ゆうえんち</rt></ruby>には、<ruby>大人<rt>おとな</rt></ruby>が<ruby>乗<rt>の</rt></ruby>れるような<ruby>乗<rt>の</rt></ruby>り<ruby>物<rt>もの</rt></ruby>がない、<ruby>行<rt>い</rt></ruby>くと<ruby>歩<rt>ある</rt></ruby>き<ruby>回<rt>まわ</rt></ruby>って<ruby>疲<rt>つか</rt></ruby>れてしまうと<ruby>考<rt>かんが</rt></ruby>える<ruby>人<rt>ひと</rt></ruby>も<ruby>少<rt>すく</rt></ruby>なくないと<ruby>思<rt>おも</rt></ruby>います。しかし、<ruby>遊園地<rt>ゆうえんち</rt></ruby>も<ruby>見方<rt>みかた</rt></ruby>によっては、<ruby>子<rt>こ</rt></ruby>どもたちだけではなく<ruby>大人<rt>おとな</rt></ruby>も<ruby>楽<rt>たの</rt></ruby>しむことができる<ruby>場所<rt>ばしょ</rt></ruby>なんですよ。<ruby>園内<rt>えんない</rt></ruby>にあるおしゃれなレストランやカフェでご飯をご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたり、<ruby>夜<rt>よる</rt></ruby>には<ruby>電気<rt>でんき</rt></ruby>が<ruby>光<rt>ひか</rt></ruby>ってきれいな<ruby>景色<rt>けしき</rt></ruby>を<ruby>見<rt>み</rt></ruby>ながら<ruby>閉園<rt>へいえん</rt></ruby><ruby>時間<rt>じかん</rt></ruby>までゆっくり<ruby>過<rt>す</rt></ruby>ごすなんてことも。<ruby>遊園地<rt>ゆうえんち</rt></ruby>の<ruby>新<rt>あたら</rt></ruby>しい<ruby>発見<rt>はっけん</rt></ruby>をしてみてはどうでしょうか。"
+            }
+          ],
+          "options": [
+            "<ruby>遊園地<rt>ゆうえんち</rt></ruby>のお<ruby>客<rt>きゃく</rt></ruby>さんがへった<ruby>理由<rt>りゆう</rt></ruby>",
+            "<ruby>遊園地<rt>ゆうえんち</rt></ruby>が<ruby>人気<rt>にんき</rt></ruby>の<ruby>理由<rt>りゆう</rt></ruby>",
+            "<ruby>遊園地<rt>ゆうえんち</rt></ruby>の<ruby>営業<rt>えいぎょう</rt></ruby><ruby>時間<rt>じかん</rt></ruby>",
+            "<ruby>遊園地<rt>ゆうえんち</rt></ruby>で<ruby>大人<rt>おとな</rt></ruby>も<ruby>楽<rt>たの</rt></ruby>しむ<ruby>方法<rt>ほうほう</rt></ruby>"
+          ],
+          "correct_answer": 4,
+          "explanation": "<b>【正解】4</b><br/>係の人は、大人が遊園地を敬遠しがちな点に触れた上で、おしゃれなカフェでの食事や夜のきれいなイルミネーションなど、大人ならではの楽しみ方を提案しています。したがって正解は「遊園地で大人も楽しむ方法」（4）です。"
+        }
+      ],
+      "answers": [
+        3,
+        2,
+        4,
+        4
+      ]
+    }
+  ]
+}

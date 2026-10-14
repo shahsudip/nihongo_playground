@@ -1,0 +1,1781 @@
+{
+  "bookId": "nihongo-no-mori-n3",
+  "bookTitle": "JLPT N3 この一冊で合格する",
+  "chapter": 1,
+  "chapterTitle": "第1章 文字・語彙",
+  "section": 3,
+  "sectionTitle": "問題3 文脈規定",
+  "instruction": "（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+  "totalPages": 13,
+  "totalQuestions": 117,
+  "pages": [
+    {
+      "pageNumber": 1,
+      "pdfPage": 83,
+      "bookPage": 80,
+      "title": "文脈規定 (1〜9)",
+      "answers": [
+        4,
+        1,
+        3,
+        2,
+        2,
+        4,
+        3,
+        3,
+        1
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "stem": "夏休みの<ruby>自由課題<rt>じゆうかだい</rt></ruby>では、<ruby>美術館<rt>びじゅつかん</rt></ruby>へ行った（　）を書いて<ruby>提出<rt>ていしゅつ</rt></ruby>した。",
+          "targetWord": "感想",
+          "options": [
+            "<ruby>相談<rt>そうだん</rt></ruby>",
+            "<ruby>目標<rt>もくひょう</rt></ruby>",
+            "<ruby>解説<rt>かいせつ</rt></ruby>",
+            "<ruby>感想<rt>かんそう</rt></ruby>"
+          ],
+          "correct_answer": 4,
+          "explanation": "「感想（かんそう）」は、物事について心に感じたことや考えのことです。美術館に行った後の感想を書いて提出した文脈に合います。（English: impressions, thoughts）"
+        },
+        {
+          "id": 2,
+          "stem": "最近帰りが<ruby>遅<rt>おそ</rt></ruby>い父は、なんだか<ruby>疲<rt>つか</rt></ruby>れている（　）だ。",
+          "targetWord": "様子",
+          "options": [
+            "<ruby>様子<rt>ようす</rt></ruby>",
+            "<ruby>体操<rt>たいそう</rt></ruby>",
+            "<ruby>合図<rt>あいず</rt></ruby>",
+            "<ruby>調子<rt>ちょうし</rt></ruby>"
+          ],
+          "correct_answer": 1,
+          "explanation": "「様子（ようす）」は、人の姿や状態を表します。「疲れている様子だ」で、父が疲れているように見えるという意味になります。（English: appearance, look, state）"
+        },
+        {
+          "id": 3,
+          "stem": "バナナには、さまざまな（　）があるため、毎日食べるといいそうだ。",
+          "targetWord": "栄養",
+          "options": [
+            "<ruby>技術<rt>ぎじゅつ</rt></ruby>",
+            "<ruby>研究<rt>けんきゅう</rt></ruby>",
+            "<ruby>栄養<rt>えいよう</rt></ruby>",
+            "<ruby>資源<rt>しげん</rt></ruby>"
+          ],
+          "correct_answer": 3,
+          "explanation": "「栄養（えいよう）」は、生命を維持し成長を助ける成分のことです。食べ物に含まれる良い成分を表す文脈に適しています。（English: nutrition, nourishment）"
+        },
+        {
+          "id": 4,
+          "stem": "音楽が好きな父は、楽器についての（　）がある。",
+          "targetWord": "知識",
+          "options": [
+            "<ruby>意識<rt>いしき</rt></ruby>",
+            "<ruby>知識<rt>ちしき</rt></ruby>",
+            "<ruby>中身<rt>なかみ</rt></ruby>",
+            "<ruby>内容<rt>ないよう</rt></ruby>"
+          ],
+          "correct_answer": 2,
+          "explanation": "「知識（ちしき）」は、知っていることや知識・理解のことです。「楽器についての知識がある」の文脈で正しく使われます。（English: knowledge）"
+        },
+        {
+          "id": 5,
+          "stem": "（　）ばかり言ってないで、少しは<ruby>頑張<rt>がんば</rt></ruby>ってみようよ。",
+          "targetWord": "文句",
+          "options": [
+            "<ruby>言葉<rt>ことば</rt></ruby>",
+            "<ruby>文句<rt>もんく</rt></ruby>",
+            "<ruby>秘密<rt>ひみつ</rt></ruby>",
+            "<ruby>言語<rt>げんご</rt></ruby>"
+          ],
+          "correct_answer": 2,
+          "explanation": "「文句（もんく）」は不平や不満のことです。「文句ばかり言ってないで」で、不満ばかり並べずに努力しようと促す表現になります。（English: complaint）"
+        },
+        {
+          "id": 6,
+          "stem": "今回の試合で負けたのは、集中力が切れた事が（　）です。",
+          "targetWord": "原因",
+          "options": [
+            "<ruby>基本<rt>きほん</rt></ruby>",
+            "<ruby>原料<rt>げんりょう</rt></ruby>",
+            "<ruby>材料<rt>ざいりょう</rt></ruby>",
+            "<ruby>原因<rt>げんいん</rt></ruby>"
+          ],
+          "correct_answer": 4,
+          "explanation": "「原因（げんいん）」は、ある結果や出来事を引き起こしたもとのことです。試合で負けた理由を説明する文脈に適しています。（English: cause）"
+        },
+        {
+          "id": 7,
+          "stem": "初めて海外へ行ったときから、いろんな国の文化に（　）を持つようになった。",
+          "targetWord": "興味",
+          "options": [
+            "<ruby>役割<rt>やくわり</rt></ruby>",
+            "<ruby>理由<rt>りゆう</rt></ruby>",
+            "<ruby>興味<rt>きょうみ</rt></ruby>",
+            "<ruby>目的<rt>もくてき</rt></ruby>"
+          ],
+          "correct_answer": 3,
+          "explanation": "「興味（きょうみ）を持つ」で、特定の物事に関心を寄せるという意味の定型コロケーションです。（English: interest）"
+        },
+        {
+          "id": 8,
+          "stem": "今日は（　）が悪いので、また今度<ruby>一緒<rt>いっしょ</rt></ruby>にご飯を食べにいきましょう。",
+          "targetWord": "都合",
+          "options": [
+            "<ruby>性格<rt>せいかく</rt></ruby>",
+            "<ruby>姿勢<rt>しせい</rt></ruby>",
+            "<ruby>都合<rt>つごう</rt></ruby>",
+            "<ruby>印象<rt>いんしょう</rt></ruby>"
+          ],
+          "correct_answer": 3,
+          "explanation": "「都合（つごう）が悪い」で、日程やスケジュールの都合がつかないことを表します。（English: circumstances, convenience）"
+        },
+        {
+          "id": 9,
+          "stem": "<ruby>出張先<rt>しゅっちょうさき</rt></ruby>でたくさんの人と（　）を<ruby>交換<rt>こうかん</rt></ruby>しました。",
+          "targetWord": "名刺",
+          "options": [
+            "<ruby>名刺<rt>めいし</rt></ruby>",
+            "<ruby>看板<rt>かんばん</rt></ruby>",
+            "<ruby>氏名<rt>しめい</rt></ruby>",
+            "<ruby>企業<rt>きぎょう</rt></ruby>"
+          ],
+          "correct_answer": 1,
+          "explanation": "「名刺（めいし）」はビジネスなどで交換する氏名や所属を記したカードです。「名刺を交換する」が自然な表現です。（English: business card）"
+        }
+      ]
+    },
+    {
+      "pageNumber": 2,
+      "pdfPage": 84,
+      "bookPage": 81,
+      "title": "文脈規定 (10〜18)",
+      "answers": [
+        2,
+        3,
+        2,
+        3,
+        1,
+        4,
+        1,
+        4,
+        2
+      ],
+      "questions": [
+        {
+          "id": 10,
+          "stem": "わたしの働いている服屋は、4月10日から17日の（　）でセールを行う予定です。",
+          "targetWord": "期間",
+          "options": [
+            "<ruby>期限<rt>きげん</rt></ruby>",
+            "<ruby>期間<rt>きかん</rt></ruby>",
+            "<ruby>延期<rt>えんき</rt></ruby>",
+            "<ruby>同時<rt>どうじ</rt></ruby>"
+          ],
+          "correct_answer": 2,
+          "explanation": "「期間（きかん）」はある時からある時までの間の時間のことです。日付の範囲を示す文脈に合います。（English: period, interval）"
+        },
+        {
+          "id": 11,
+          "stem": "テストの点がよかったので（　）が上がり、母に<ruby>褒<rt>ほ</rt></ruby>められた。",
+          "targetWord": "成績",
+          "options": [
+            "<ruby>進学<rt>しんがく</rt></ruby>",
+            "<ruby>成功<rt>せいこう</rt></ruby>",
+            "<ruby>成績<rt>せいせき</rt></ruby>",
+            "<ruby>進歩<rt>しんぽ</rt></ruby>"
+          ],
+          "correct_answer": 3,
+          "explanation": "「成績（せいせき）が上がる」で、学業やテストの結果・評価が良くなることを表します。（English: grade, academic record）"
+        },
+        {
+          "id": 12,
+          "stem": "ダンスの（　）を学びに、アメリカへ留学することにした。",
+          "targetWord": "基礎",
+          "options": [
+            "<ruby>正解<rt>せいかい</rt></ruby>",
+            "<ruby>基礎<rt>きそ</rt></ruby>",
+            "<ruby>中心<rt>ちゅうしん</rt></ruby>",
+            "<ruby>見本<rt>みほん</rt></ruby>"
+          ],
+          "correct_answer": 2,
+          "explanation": "「基礎（きそ）」は物事の土台や基本のことです。「基礎を学ぶ」で基本を習得するという意味になります。（English: foundation, basics）"
+        },
+        {
+          "id": 13,
+          "stem": "水と電気の使いすぎに注意し、（　）に優しい生活をしましょう。",
+          "targetWord": "環境",
+          "options": [
+            "<ruby>大家<rt>おおや</rt></ruby>",
+            "<ruby>季節<rt>きせつ</rt></ruby>",
+            "<ruby>環境<rt>かんきょう</rt></ruby>",
+            "<ruby>相手<rt>あいて</rt></ruby>"
+          ],
+          "correct_answer": 3,
+          "explanation": "「環境（かんきょう）に優しい」は、自然環境への負荷が少ないことを表す定型表現です。（English: environment）"
+        },
+        {
+          "id": 14,
+          "stem": "17時までに、明後日の<ruby>講演会<rt>こうえんかい</rt></ruby>の（　）を作らなければなりません。",
+          "targetWord": "書類",
+          "options": [
+            "<ruby>書類<rt>しょるい</rt></ruby>",
+            "<ruby>辞書<rt>じしょ</rt></ruby>",
+            "<ruby>印刷<rt>いんさつ</rt></ruby>",
+            "<ruby>記録<rt>きろく</rt></ruby>"
+          ],
+          "correct_answer": 1,
+          "explanation": "「書類（しょるい）」は事務的な文書や資料のことです。「講演会の書類を作る」という文脈に合います。（English: document, papers）"
+        },
+        {
+          "id": 15,
+          "stem": "<ruby>祖父<rt>そふ</rt></ruby>の子どもの（　）は、アイスクリームが10円で買えたそうです。",
+          "targetWord": "時代",
+          "options": [
+            "<ruby>都会<rt>とかい</rt></ruby>",
+            "<ruby>世界<rt>せかい</rt></ruby>",
+            "<ruby>社会<rt>しゃかい</rt></ruby>",
+            "<ruby>時代<rt>じだい</rt></ruby>"
+          ],
+          "correct_answer": 4,
+          "explanation": "「時代（じだい）」は一定の区切られた年代・時期のことです。「子どもの時代（子どもの頃）」という意味で使われます。（English: era, time, period）"
+        },
+        {
+          "id": 16,
+          "stem": "わたしは、英語を話すことよりも読むことの方が（　）がある。",
+          "targetWord": "自信",
+          "options": [
+            "<ruby>自信<rt>じしん</rt></ruby>",
+            "<ruby>感覚<rt>かんかく</rt></ruby>",
+            "<ruby>効果<rt>こうか</rt></ruby>",
+            "<ruby>特徴<rt>とくちょう</rt></ruby>"
+          ],
+          "correct_answer": 1,
+          "explanation": "「自信（じしん）がある」で、自分の能力や行動に確信を持っていることを表します。（English: confidence）"
+        },
+        {
+          "id": 17,
+          "stem": "車に乗って、家から学校までの（　）を確かめる。",
+          "targetWord": "距離",
+          "options": [
+            "<ruby>時差<rt>じさ</rt></ruby>",
+            "<ruby>間隔<rt>かんかく</rt></ruby>",
+            "<ruby>成長<rt>せいちょう</rt></ruby>",
+            "<ruby>距離<rt>きょり</rt></ruby>"
+          ],
+          "correct_answer": 4,
+          "explanation": "「距離（きょり）」は二点間の長さ・隔たりのことです。家から学校までの道のりの長さを表します。（English: distance）"
+        },
+        {
+          "id": 18,
+          "stem": "わたしが住んでいるアパートの（　）は毎月7万円だ。",
+          "targetWord": "家賃",
+          "options": [
+            "<ruby>現金<rt>げんきん</rt></ruby>",
+            "<ruby>家賃<rt>やちん</rt></ruby>",
+            "<ruby>給料<rt>きゅうりょう</rt></ruby>",
+            "<ruby>物価<rt>ぶっか</rt></ruby>"
+          ],
+          "correct_answer": 2,
+          "explanation": "「家賃（やちん）」はアパートや借家の毎月の賃貸料のことです。（English: house rent）"
+        }
+      ]
+    },
+    {
+      "pageNumber": 3,
+      "pdfPage": 85,
+      "bookPage": 82,
+      "title": "文脈規定 (19〜27)",
+      "answers": [
+        2,
+        3,
+        4,
+        1,
+        2,
+        4,
+        3,
+        4,
+        3
+      ],
+      "questions": [
+        {
+          "id": 19,
+          "stem": "今日の試合に勝って、優勝することを（　）しています。",
+          "targetWord": "期待",
+          "options": [
+            "<ruby>用意<rt>ようい</rt></ruby>",
+            "<ruby>期待<rt>きたい</rt></ruby>",
+            "<ruby>予約<rt>よやく</rt></ruby>",
+            "<ruby>解決<rt>かいけつ</rt></ruby>"
+          ],
+          "correct_answer": 2,
+          "explanation": "「期待（きたい）する」は、望ましいことが実現することを待ち望むことです。（English: expectation, anticipation）"
+        },
+        {
+          "id": 20,
+          "stem": "<ruby>将来<rt>しょうらい</rt></ruby>は、英語を（　）する仕事で世界中を回りたいです。",
+          "targetWord": "通訳",
+          "options": [
+            "<ruby>共通<rt>きょうつう</rt></ruby>",
+            "<ruby>意味<rt>いみ</rt></ruby>",
+            "<ruby>通訳<rt>つうやく</rt></ruby>",
+            "<ruby>伝言<rt>でんごん</rt></ruby>"
+          ],
+          "correct_answer": 3,
+          "explanation": "「通訳（つうやく）する」は、異なる言語を口頭で別の言語に訳すことです。（English: interpreting）"
+        },
+        {
+          "id": 21,
+          "stem": "彼は、テストでいい点をとったことをみんなに（　）している。",
+          "targetWord": "自慢",
+          "options": [
+            "<ruby>申請<rt>しんせい</rt></ruby>",
+            "<ruby>意見<rt>いけん</rt></ruby>",
+            "<ruby>宣伝<rt>せんでん</rt></ruby>",
+            "<ruby>自慢<rt>じまん</rt></ruby>"
+          ],
+          "correct_answer": 4,
+          "explanation": "「自慢（じまん）する」は、自分の優れている点や良い成果を誇らしげに他人に話すことです。（English: boast, brag）"
+        },
+        {
+          "id": 22,
+          "stem": "最近太ってきたので、毎日（　）するために新しい<ruby>靴<rt>くつ</rt></ruby>を買った。",
+          "targetWord": "運動",
+          "options": [
+            "<ruby>運動<rt>うんどう</rt></ruby>",
+            "<ruby>実験<rt>じっけん</rt></ruby>",
+            "<ruby>移動<rt>いどう</rt></ruby>",
+            "<ruby>実行<rt>じっこう</rt></ruby>"
+          ],
+          "correct_answer": 1,
+          "explanation": "「運動（うんどう）する」は体を動かして健康を維持したり体重を減らしたりすることです。（English: exercise, sports）"
+        },
+        {
+          "id": 23,
+          "stem": "<ruby>修学旅行<rt>しゅうがくりょこう</rt></ruby>で、有名なパン工場を（　）する予定だ。",
+          "targetWord": "見学",
+          "options": [
+            "<ruby>教育<rt>きょういく</rt></ruby>",
+            "<ruby>見学<rt>けんがく</rt></ruby>",
+            "<ruby>発見<rt>はっけん</rt></ruby>",
+            "<ruby>就職<rt>しゅうしょく</rt></ruby>"
+          ],
+          "correct_answer": 2,
+          "explanation": "「見学（けんがく）する」は、施設や現場を実際に見て学ぶことです。（English: field trip, tour, observation）"
+        },
+        {
+          "id": 24,
+          "stem": "<ruby>田中<rt>たなか</rt></ruby>さんの<ruby>誕生日<rt>たんじょうび</rt></ruby>パーティーをこっそり（　）する。",
+          "targetWord": "計画",
+          "options": [
+            "<ruby>世話<rt>せわ</rt></ruby>",
+            "<ruby>経営<rt>けいえい</rt></ruby>",
+            "<ruby>関係<rt>かんけい</rt></ruby>",
+            "<ruby>計画<rt>けいかく</rt></ruby>"
+          ],
+          "correct_answer": 4,
+          "explanation": "「計画（けいかく）する」は、あらかじめ日程や手順を考えることです。（English: plan）"
+        },
+        {
+          "id": 25,
+          "stem": "今回の<ruby>宿題<rt>しゅくだい</rt></ruby>は、家で植物の成長を（　）して記録することだ。",
+          "targetWord": "観察",
+          "options": [
+            "<ruby>証明<rt>しょうめい</rt></ruby>",
+            "<ruby>記念<rt>きねん</rt></ruby>",
+            "<ruby>観察<rt>かんさつ</rt></ruby>",
+            "<ruby>見物<rt>けんぶつ</rt></ruby>"
+          ],
+          "correct_answer": 3,
+          "explanation": "「観察（かんさつ）する」は、対象を注意深く見守って状態を調べることです。（English: observation）"
+        },
+        {
+          "id": 26,
+          "stem": "新入社員を（　）する会が開かれ、たくさんお<ruby>酒<rt>さけ</rt></ruby>を飲んだ。",
+          "targetWord": "歓迎",
+          "options": [
+            "<ruby>維持<rt>いじ</rt></ruby>",
+            "<ruby>安心<rt>あんしん</rt></ruby>",
+            "<ruby>感激<rt>かんげき</rt></ruby>",
+            "<ruby>歓迎<rt>かんげい</rt></ruby>"
+          ],
+          "correct_answer": 4,
+          "explanation": "「歓迎（かんげい）する」は、新しく来た人を喜んで温かく迎えることです。「新入社員を歓迎する会（歓迎会）」の文脈に合います。（English: welcome）"
+        },
+        {
+          "id": 27,
+          "stem": "海の水を（　）したところ、昨年よりも<ruby>汚<rt>よご</rt></ruby>れていました。",
+          "targetWord": "調査",
+          "options": [
+            "<ruby>工夫<rt>くふう</rt></ruby>",
+            "<ruby>仮定<rt>かてい</rt></ruby>",
+            "<ruby>調査<rt>ちょうさ</rt></ruby>",
+            "<ruby>指定<rt>してい</rt></ruby>"
+          ],
+          "correct_answer": 3,
+          "explanation": "「調査（ちょうさ）する」は、物事の実態を詳しく調べることです。（English: investigation, survey）"
+        }
+      ]
+    },
+    {
+      "pageNumber": 4,
+      "pdfPage": 86,
+      "bookPage": 83,
+      "title": "文脈規定 (28〜36)",
+      "answers": [
+        3,
+        1,
+        2,
+        3,
+        4,
+        2,
+        3,
+        4,
+        2
+      ],
+      "questions": [
+        {
+          "id": 28,
+          "stem": "いつか日本に行ったら、<ruby>京都<rt>きょうと</rt></ruby>と<ruby>大阪<rt>おおさか</rt></ruby>を（　）したいと思っています。",
+          "targetWord": "観光",
+          "options": [
+            "<ruby>位置<rt>いち</rt></ruby>",
+            "<ruby>集中<rt>しゅうちゅう</rt></ruby>",
+            "<ruby>観光<rt>かんこう</rt></ruby>",
+            "<ruby>入門<rt>にゅうもん</rt></ruby>"
+          ],
+          "correct_answer": 3,
+          "explanation": "「観光（かんこう）する」は、名所や景勝地を巡って見物することです。（English: sightseeing）"
+        },
+        {
+          "id": 29,
+          "stem": "働く人が足りないので、アルバイトを（　）することにした。",
+          "targetWord": "募集",
+          "options": [
+            "<ruby>募集<rt>ぼしゅう</rt></ruby>",
+            "<ruby>交換<rt>こうかん</rt></ruby>",
+            "<ruby>持参<rt>じさん</rt></ruby>",
+            "<ruby>回収<rt>かいしゅう</rt></ruby>"
+          ],
+          "correct_answer": 1,
+          "explanation": "「募集（ぼしゅう）する」は、広く人員や応募者をつのることです。（English: recruitment）"
+        },
+        {
+          "id": 30,
+          "stem": "昨日、娘の<ruby>保育園<rt>ほいくえん</rt></ruby>を（　）しました。",
+          "targetWord": "訪問",
+          "options": [
+            "<ruby>通行<rt>つうこう</rt></ruby>",
+            "<ruby>訪問<rt>ほうもん</rt></ruby>",
+            "<ruby>開園<rt>かいえん</rt></ruby>",
+            "<ruby>受験<rt>じゅけん</rt></ruby>"
+          ],
+          "correct_answer": 2,
+          "explanation": "「訪問（ほうもん）する」は、人の家や施設を訪ねることです。（English: visit）"
+        },
+        {
+          "id": 31,
+          "stem": "<ruby>混雑<rt>こんざつ</rt></ruby>を<ruby>防<rt>ふせ</rt></ruby>ぐため、店に入れる人数を（　）している。",
+          "targetWord": "制限",
+          "options": [
+            "<ruby>主張<rt>しゅちょう</rt></ruby>",
+            "<ruby>命令<rt>めいれい</rt></ruby>",
+            "<ruby>制限<rt>せいげん</rt></ruby>",
+            "<ruby>禁止<rt>きんし</rt></ruby>"
+          ],
+          "correct_answer": 3,
+          "explanation": "「制限（せいげん）する」は、上限や枠を決めてそれ以上に増えないようにすることです。（English: limit, restriction）"
+        },
+        {
+          "id": 32,
+          "stem": "こんなに売れるなんて、（　）していませんでした。",
+          "targetWord": "予想",
+          "options": [
+            "<ruby>予報<rt>よほう</rt></ruby>",
+            "<ruby>注意<rt>ちゅうい</rt></ruby>",
+            "<ruby>約束<rt>やくそく</rt></ruby>",
+            "<ruby>予想<rt>よそう</rt></ruby>"
+          ],
+          "correct_answer": 4,
+          "explanation": "「予想（よそう）する」は、将来の成り行きを前もっておしはかることです。（English: forecast, expectation）"
+        },
+        {
+          "id": 33,
+          "stem": "道で<ruby>迷<rt>まよ</rt></ruby>っている人を、駅まで（　）しました。",
+          "targetWord": "案内",
+          "options": [
+            "<ruby>指導<rt>しどう</rt></ruby>",
+            "<ruby>案内<rt>あんない</rt></ruby>",
+            "<ruby>受付<rt>うけつけ</rt></ruby>",
+            "<ruby>紹介<rt>しょうかい</rt></ruby>"
+          ],
+          "correct_answer": 2,
+          "explanation": "「案内（あんない）する」は、道や場所を教えて連れて行くことです。（English: guide, lead）"
+        },
+        {
+          "id": 34,
+          "stem": "<ruby>山田<rt>やまだ</rt></ruby>さんは今月で会社を<ruby>辞<rt>や</rt></ruby>めて、アメリカへ留学するという（　）だ。",
+          "targetWord": "うわさ",
+          "options": [
+            "<ruby>通<rt>とお</rt></ruby>り",
+            "<ruby>扱<rt>あつか</rt></ruby>い",
+            "うわさ",
+            "うそ"
+          ],
+          "correct_answer": 3,
+          "explanation": "「うわさ」は世間で人の口から口へと伝わる話のことです。「〜といううわさだ」で伝聞の文脈に合います。（English: rumor）"
+        },
+        {
+          "id": 35,
+          "stem": "昨日、友人と（　）してしまい、気分が悪い。",
+          "targetWord": "けんか",
+          "options": [
+            "<ruby>減少<rt>げんしょう</rt></ruby>",
+            "なっとく",
+            "<ruby>消費<rt>しょうひ</rt></ruby>",
+            "けんか"
+          ],
+          "correct_answer": 4,
+          "explanation": "「けんかする」は言い争いや口論をすることです。（English: quarrel, fight）"
+        },
+        {
+          "id": 36,
+          "stem": "工場で（　）したお肉を、スーパーで売る。",
+          "targetWord": "加工",
+          "options": [
+            "<ruby>変化<rt>へんか</rt></ruby>",
+            "<ruby>加工<rt>かこう</rt></ruby>",
+            "<ruby>調節<rt>ちょうせつ</rt></ruby>",
+            "<ruby>応用<rt>おうよう</rt></ruby>"
+          ],
+          "correct_answer": 2,
+          "explanation": "「加工（かこう）する」は原材料に手を加えて製品にすることです。（English: processing）"
+        }
+      ]
+    },
+    {
+      "pageNumber": 5,
+      "pdfPage": 87,
+      "bookPage": 84,
+      "title": "文脈規定 (37〜45)",
+      "answers": [
+        3,
+        2,
+        3,
+        2,
+        4,
+        3,
+        2,
+        1,
+        2
+      ],
+      "questions": [
+        {
+          "id": 37,
+          "stem": "<ruby>靴<rt>くつ</rt></ruby>ひもをしっかり（　）から歩きましょう。",
+          "targetWord": "結んで",
+          "options": [
+            "つつんで",
+            "<ruby>組<rt>く</rt></ruby>んで",
+            "<ruby>結<rt>むす</rt></ruby>んで",
+            "たたんで"
+          ],
+          "correct_answer": 3,
+          "explanation": "「結（むす）ぶ」はひもや糸をつなぎ合わせることです。「靴ひもを結ぶ」の文脈です。（English: tie, fasten）"
+        },
+        {
+          "id": 38,
+          "stem": "友人が急に大きな声を出したので、（　）。",
+          "targetWord": "おどろいた",
+          "options": [
+            "あこがれた",
+            "おどろいた",
+            "くたびれた",
+            "あきらめた"
+          ],
+          "correct_answer": 2,
+          "explanation": "「おどろく」は予期しないことに出会ってびっくりすることです。（English: was surprised）"
+        },
+        {
+          "id": 39,
+          "stem": "<ruby>階段<rt>かいだん</rt></ruby>から落ちて、かけていたメガネが（　）しまった。",
+          "targetWord": "曲がって",
+          "options": [
+            "<ruby>転<rt>ころ</rt></ruby>んで",
+            "<ruby>戻<rt>もど</rt></ruby>って",
+            "<ruby>曲<rt>ま</rt></ruby>がって",
+            "<ruby>降<rt>ふ</rt></ruby>って"
+          ],
+          "correct_answer": 3,
+          "explanation": "「曲（ま）がる」はまっすぐなものが折れ曲がったり歪んだりすることです。（English: bent, warped）"
+        },
+        {
+          "id": 40,
+          "stem": "海を歩いていたら、大きい貝を（　）けがをしました。",
+          "targetWord": "ふんで",
+          "options": [
+            "おさえて",
+            "ふんで",
+            "うって",
+            "ほって"
+          ],
+          "correct_answer": 2,
+          "explanation": "「ふむ（踏む）」は足の裏を物の上に乗せることです。「貝をふんでけがをした」の文脈に合います。（English: stepped on）"
+        },
+        {
+          "id": 41,
+          "stem": "最近は、朝から夜まで予定が（　）いて<ruby>忙<rt>いそが</rt></ruby>しい。",
+          "targetWord": "埋まって",
+          "options": [
+            "まとまって",
+            "たまって",
+            "<ruby>残<rt>のこ</rt></ruby>って",
+            "<ruby>埋<rt>う</rt></ruby>まって"
+          ],
+          "correct_answer": 4,
+          "explanation": "「埋（う）まる」は空間や時間が空きなしに満たされることです。「予定が埋まっている」でスケジュールが詰まっている状態を表します。（English: filled up, packed）"
+        },
+        {
+          "id": 42,
+          "stem": "<ruby>傘<rt>かさ</rt></ruby>を二本持っていたので、<ruby>友達<rt>ともだち</rt></ruby>に大きい方を（　）あげた。",
+          "targetWord": "貸して",
+          "options": [
+            "<ruby>掛<rt>か</rt></ruby>けて",
+            "<ruby>持<rt>も</rt></ruby>って",
+            "<ruby>貸<rt>か</rt></ruby>して",
+            "<ruby>扱<rt>あつか</rt></ruby>って"
+          ],
+          "correct_answer": 3,
+          "explanation": "「貸（か）す」は自分の物を他人に一時的に使わせることです。（English: lend）"
+        },
+        {
+          "id": 43,
+          "stem": "<ruby>先輩<rt>せんぱい</rt></ruby>から夜ご飯に<ruby>誘<rt>さそ</rt></ruby>われたが、明日は早く起きなければいけないので（　）。",
+          "targetWord": "断った",
+          "options": [
+            "あやまった",
+            "<ruby>断<rt>ことわ</rt></ruby>った",
+            "<ruby>逆<rt>さか</rt></ruby>らった",
+            "たしかめた"
+          ],
+          "correct_answer": 2,
+          "explanation": "「断（ことわ）る」は頼みや誘いを受け入れず拒むことです。（English: declined, refused）"
+        },
+        {
+          "id": 44,
+          "stem": "昨日の強い台風で、大きな木が（　）しまった。",
+          "targetWord": "倒れて",
+          "options": [
+            "<ruby>倒<rt>たお</rt></ruby>れて",
+            "<ruby>降<rt>ふ</rt></ruby>って",
+            "<ruby>生<rt>は</rt></ruby>えて",
+            "<ruby>引<rt>ひ</rt></ruby>いて"
+          ],
+          "correct_answer": 1,
+          "explanation": "「倒（たお）れる」は立っていたものが横に倒れることです。（English: fell down, toppled）"
+        },
+        {
+          "id": 45,
+          "stem": "銀行に行って、今月の<ruby>家賃<rt>やちん</rt></ruby>と電気代を（　）。",
+          "targetWord": "払う",
+          "options": [
+            "<ruby>頼<rt>たの</rt></ruby>む",
+            "<ruby>払<rt>はら</rt></ruby>う",
+            "<ruby>渡<rt>わた</rt></ruby>す",
+            "<ruby>伝<rt>つた</rt></ruby>える"
+          ],
+          "correct_answer": 2,
+          "explanation": "「払（はら）う」はお金・料金を支払うことです。（English: pay）"
+        }
+      ]
+    },
+    {
+      "pageNumber": 6,
+      "pdfPage": 88,
+      "bookPage": 85,
+      "title": "文脈規定 (46〜54)",
+      "answers": [
+        4,
+        3,
+        3,
+        1,
+        2,
+        4,
+        1,
+        4,
+        3
+      ],
+      "questions": [
+        {
+          "id": 46,
+          "stem": "バスケットボールの試合で負けてしまった友人を（　）。",
+          "targetWord": "なぐさめる",
+          "options": [
+            "<ruby>手伝<rt>てつだ</rt></ruby>う",
+            "たよる",
+            "<ruby>治<rt>なお</rt></ruby>す",
+            "なぐさめる"
+          ],
+          "correct_answer": 4,
+          "explanation": "「なぐさめる」は落ち込んだり悲しんだりしている人を思いやり元気づけることです。（English: comfort, console）"
+        },
+        {
+          "id": 47,
+          "stem": "川で（　）子犬を助けて、病院に連れて行きました。",
+          "targetWord": "おぼれていた",
+          "options": [
+            "<ruby>揺<rt>ゆ</rt></ruby>れていた",
+            "あふれていた",
+            "おぼれていた",
+            "<ruby>沈<rt>しず</rt></ruby>んでいた"
+          ],
+          "correct_answer": 3,
+          "explanation": "「おぼれる」は水に落ちて泳げず息ができなくなることです。（English: drowning）"
+        },
+        {
+          "id": 48,
+          "stem": "そっと<ruby>閉<rt>し</rt></ruby>めないと、ドアが（　）しまいますよ。",
+          "targetWord": "壊れて",
+          "options": [
+            "<ruby>飽<rt>あ</rt></ruby>きて",
+            "<ruby>疲<rt>つか</rt></ruby>れて",
+            "<ruby>壊<rt>こわ</rt></ruby>れて",
+            "<ruby>溶<rt>と</rt></ruby>けて"
+          ],
+          "correct_answer": 3,
+          "explanation": "「壊（こわ）れる」は物が力を受けて破損することです。（English: break）"
+        },
+        {
+          "id": 49,
+          "stem": "みんな<ruby>疲<rt>つか</rt></ruby>れている<ruby>様子<rt>ようす</rt></ruby>だったので、社員全員に3日間の休日を（　）ました。",
+          "targetWord": "与え",
+          "options": [
+            "<ruby>与<rt>あた</rt></ruby>え",
+            "<ruby>渡<rt>わた</rt></ruby>し",
+            "<ruby>配<rt>くば</rt></ruby>り",
+            "<ruby>置<rt>お</rt></ruby>き"
+          ],
+          "correct_answer": 1,
+          "explanation": "「与（あた）える」は目下の者や権利・休暇などを授けることです。「休日を与える」の文脈です。（English: grant, give）"
+        },
+        {
+          "id": 50,
+          "stem": "<ruby>汚<rt>よご</rt></ruby>れている机を（　）きれいにした。",
+          "targetWord": "拭いて",
+          "options": [
+            "しぼって",
+            "<ruby>拭<rt>ふ</rt></ruby>いて",
+            "たたいて",
+            "<ruby>弾<rt>ひ</rt></ruby>いて"
+          ],
+          "correct_answer": 2,
+          "explanation": "「拭（ふ）く」は布などでこすって汚れや水分を取ることです。（English: wipe）"
+        },
+        {
+          "id": 51,
+          "stem": "近くにあった<ruby>交番<rt>こうばん</rt></ruby>で駅までの道を（　）。",
+          "targetWord": "尋ねた",
+          "options": [
+            "<ruby>開<rt>ひら</rt></ruby>いた",
+            "<ruby>勧<rt>すす</rt></ruby>めた",
+            "<ruby>選<rt>えら</rt></ruby>んだ",
+            "<ruby>尋<rt>たず</rt></ruby>ねた"
+          ],
+          "correct_answer": 4,
+          "explanation": "「尋（たず）ねる」はわからないことを人に聞くことです。「道を尋ねる」の文脈です。（English: asked）"
+        },
+        {
+          "id": 52,
+          "stem": "学校の授業で、英語を（　）練習をする。",
+          "targetWord": "聞き取る",
+          "options": [
+            "<ruby>聞<rt>き</rt></ruby>き<ruby>取<rt>と</rt></ruby>る",
+            "<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>る",
+            "ふき<ruby>取<rt>と</rt></ruby>る",
+            "きり<ruby>取<rt>と</rt></ruby>る"
+          ],
+          "correct_answer": 1,
+          "explanation": "「聞き取る」は話される言葉を耳で聞いて理解することです。（English: listen and comprehend / catch）"
+        },
+        {
+          "id": 53,
+          "stem": "カレンダーを見て、今夜の大事な予定を（　）。",
+          "targetWord": "思い出した",
+          "options": [
+            "<ruby>作<rt>つく</rt></ruby>り<ruby>出<rt>だ</rt></ruby>した",
+            "<ruby>引<rt>ひ</rt></ruby>き<ruby>出<rt>だ</rt></ruby>した",
+            "<ruby>貸<rt>か</rt></ruby>し<ruby>出<rt>だ</rt></ruby>した",
+            "<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>した"
+          ],
+          "correct_answer": 4,
+          "explanation": "「思い出す」は忘れていた記憶や予定を心によみがえらせることです。（English: remembered, recalled）"
+        },
+        {
+          "id": 54,
+          "stem": "入学式で、生徒を代表してお祝いの言葉を言う<ruby>役割<rt>やくわり</rt></ruby>を（　）ました。",
+          "targetWord": "引き受け",
+          "options": [
+            "<ruby>引<rt>ひ</rt></ruby>っ<ruby>張<rt>ぱ</rt></ruby>り",
+            "<ruby>取<rt>と</rt></ruby>り<ruby>出<rt>だ</rt></ruby>し",
+            "<ruby>引<rt>ひ</rt></ruby>き<ruby>受<rt>う</rt></ruby>け",
+            "<ruby>取<rt>と</rt></ruby>り<ruby>込<rt>こ</rt></ruby>み"
+          ],
+          "correct_answer": 3,
+          "explanation": "「引き受ける」は頼まれた役目や仕事を引き受けて担当することです。（English: undertook, accepted）"
+        }
+      ]
+    },
+    {
+      "pageNumber": 7,
+      "pdfPage": 89,
+      "bookPage": 86,
+      "title": "文脈規定 (55〜63)",
+      "answers": [
+        2,
+        4,
+        2,
+        4,
+        2,
+        3,
+        4,
+        1,
+        3
+      ],
+      "questions": [
+        {
+          "id": 55,
+          "stem": "週末は、新しく買ったロボットを（　）、<ruby>息子<rt>むすこ</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>遊<rt>あそ</rt></ruby>ぶ予定です。",
+          "targetWord": "組み立てて",
+          "options": [
+            "<ruby>掛<rt>か</rt></ruby>け<ruby>直<rt>なお</rt></ruby>して",
+            "<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>てて",
+            "<ruby>切<rt>き</rt></ruby>り<ruby>替<rt>か</rt></ruby>えて",
+            "<ruby>見<rt>み</rt></ruby>て<ruby>回<rt>まわ</rt></ruby>って"
+          ],
+          "correct_answer": 2,
+          "explanation": "「組み立てる」は部品を合わせて一つの形に作ることです。（English: assemble）"
+        },
+        {
+          "id": 56,
+          "stem": "思ったよりも<ruby>応募者<rt>おうぼしゃ</rt></ruby>が多かったので、明日で（　）ことにした。",
+          "targetWord": "締め切る",
+          "options": [
+            "<ruby>飲<rt>の</rt></ruby>み<ruby>切<rt>き</rt></ruby>る",
+            "<ruby>言<rt>い</rt></ruby>い<ruby>切<rt>き</rt></ruby>る",
+            "<ruby>走<rt>はし</rt></ruby>り<ruby>切<rt>き</rt></ruby>る",
+            "<ruby>締<rt>し</rt></ruby>め<ruby>切<rt>き</rt></ruby>る"
+          ],
+          "correct_answer": 4,
+          "explanation": "「締め切る」は募集や受付を打ち切って終了することです。（English: close / cutoff）"
+        },
+        {
+          "id": 57,
+          "stem": "7月の旅行について、本やインターネットで調べながら（　）。",
+          "targetWord": "話し合う",
+          "options": [
+            "<ruby>向<rt>む</rt></ruby>かい<ruby>合<rt>あ</rt></ruby>う",
+            "<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>う",
+            "<ruby>見<rt>み</rt></ruby>つめ<ruby>合<rt>あ</rt></ruby>う",
+            "<ruby>掛<rt>か</rt></ruby>け<ruby>合<rt>あ</rt></ruby>う"
+          ],
+          "correct_answer": 2,
+          "explanation": "「話し合う」は互いに意見を交わして相談することです。（English: discuss together）"
+        },
+        {
+          "id": 58,
+          "stem": "<ruby>財布<rt>さいふ</rt></ruby>と<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>だけは、いつも（　）ようにしています。",
+          "targetWord": "持ち歩く",
+          "options": [
+            "<ruby>待<rt>ま</rt></ruby>ち<ruby>続<rt>つづ</rt></ruby>ける",
+            "<ruby>持<rt>も</rt></ruby>ち<ruby>替<rt>か</rt></ruby>える",
+            "<ruby>待<rt>ま</rt></ruby>ち<ruby>合<rt>あ</rt></ruby>わせる",
+            "<ruby>持<rt>も</rt></ruby>ち<ruby>歩<rt>ある</rt></ruby>く"
+          ],
+          "correct_answer": 4,
+          "explanation": "「持ち歩く」は身につけたり持って出歩くことです。（English: carry around）"
+        },
+        {
+          "id": 59,
+          "stem": "<ruby>山本<rt>やまもと</rt></ruby>さんなら、先週<ruby>家族<rt>かぞく</rt></ruby>で<ruby>東京<rt>とうきょう</rt></ruby>に（　）ましたよ。",
+          "targetWord": "引っ越し",
+          "options": [
+            "<ruby>引<rt>ひ</rt></ruby>っ<ruby>掛<rt>か</rt></ruby>け",
+            "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>し",
+            "<ruby>飛<rt>と</rt></ruby>び<ruby>越<rt>こ</rt></ruby>し",
+            "<ruby>駆<rt>か</rt></ruby>け<ruby>出<rt>だ</rt></ruby>し"
+          ],
+          "correct_answer": 2,
+          "explanation": "「引っ越しする」は住む場所を別のところへ移すことです。（English: moved / relocated）"
+        },
+        {
+          "id": 60,
+          "stem": "学校の先生たちが、インフルエンザの<ruby>予防<rt>よぼう</rt></ruby>を（　）。",
+          "targetWord": "呼びかける",
+          "options": [
+            "<ruby>言<rt>い</rt></ruby>いかける",
+            "<ruby>問<rt>と</rt></ruby>いかける",
+            "<ruby>呼<rt>よ</rt></ruby>びかける",
+            "<ruby>思<rt>おも</rt></ruby>いかける"
+          ],
+          "correct_answer": 3,
+          "explanation": "「呼びかける」は大勢の人に対して注意や行動を促すことです。（English: appeal, call on）"
+        },
+        {
+          "id": 61,
+          "stem": "<ruby>中国語<rt>ちゅうごくご</rt></ruby>を勉強するために、会話のクラスに（　）。",
+          "targetWord": "申し込む",
+          "options": [
+            "<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>む",
+            "<ruby>呼<rt>よ</rt></ruby>び<ruby>込<rt>こ</rt></ruby>む",
+            "<ruby>書<rt>か</rt></ruby>き<ruby>込<rt>こ</rt></ruby>む",
+            "<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>む"
+          ],
+          "correct_answer": 4,
+          "explanation": "「申し込む」は講座やイベントへの参加を申請・申し込みすることです。（English: apply, sign up）"
+        },
+        {
+          "id": 62,
+          "stem": "この資料は、最初から（　）必要があります。",
+          "targetWord": "作り直す",
+          "options": [
+            "<ruby>作<rt>つく</rt></ruby>り<ruby>直<rt>なお</rt></ruby>す",
+            "<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>す",
+            "<ruby>取<rt>と</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>す",
+            "<ruby>取<rt>と</rt></ruby>り<ruby>消<rt>け</rt></ruby>す"
+          ],
+          "correct_answer": 1,
+          "explanation": "「作り直す」はもう一度最初から改めて作ることです。（English: remake, redo）"
+        },
+        {
+          "id": 63,
+          "stem": "学校に<ruby>遅刻<rt>ちこく</rt></ruby>しそうだったので、雨の中<ruby>傘<rt>かさ</rt></ruby>を差さずに家を（　）た。",
+          "targetWord": "飛び出し",
+          "options": [
+            "<ruby>追<rt>お</rt></ruby>い<ruby>越<rt>こ</rt></ruby>し",
+            "<ruby>掛<rt>か</rt></ruby>け<ruby>直<rt>なお</rt></ruby>し",
+            "<ruby>飛<rt>と</rt></ruby>び<ruby>出<rt>だ</rt></ruby>し",
+            "<ruby>走<rt>はし</rt></ruby>り<ruby>出<rt>だ</rt></ruby>し"
+          ],
+          "correct_answer": 3,
+          "explanation": "「飛び出す」は勢いよく外へ出ることです。（English: dashed out, rushed out）"
+        }
+      ]
+    },
+    {
+      "pageNumber": 8,
+      "pdfPage": 90,
+      "bookPage": 87,
+      "title": "文脈規定 (64〜72)",
+      "answers": [
+        3,
+        4,
+        2,
+        4,
+        3,
+        1,
+        3,
+        4,
+        3
+      ],
+      "questions": [
+        {
+          "id": 64,
+          "stem": "買い物に来たのに、<ruby>財布<rt>さいふ</rt></ruby>を忘れて（　）家に帰った。",
+          "targetWord": "仕方なく",
+          "options": [
+            "だらしなく",
+            "<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>なく",
+            "<ruby>仕方<rt>しかた</rt></ruby>なく",
+            "にくらしく"
+          ],
+          "correct_answer": 3,
+          "explanation": "「仕方なく」は他の方法がないためやむを得ず行う様子です。（English: reluctantly, having no other choice）"
+        },
+        {
+          "id": 65,
+          "stem": "ふるさとが（　）、久しぶりに中学の<ruby>友達<rt>ともだち</rt></ruby>に電話をかけた。",
+          "targetWord": "恋しくて",
+          "options": [
+            "<ruby>愛<rt>いと</rt></ruby>しくて",
+            "<ruby>優<rt>やさ</rt></ruby>しくて",
+            "<ruby>美<rt>うつく</rt></ruby>しくて",
+            "<ruby>恋<rt>こい</rt></ruby>しくて"
+          ],
+          "correct_answer": 4,
+          "explanation": "「恋しい（こいしい）」は離れている人や故郷を慕わしく思う気持ちを表します。（English: missing, yearning for）"
+        },
+        {
+          "id": 66,
+          "stem": "<ruby>木村<rt>きむら</rt></ruby>さんのピアノの<ruby>演奏<rt>えんそう</rt></ruby>は、とても（　）です。",
+          "targetWord": "すばらしかった",
+          "options": [
+            "あやしかった",
+            "すばらしかった",
+            "うらやましかった",
+            "おいしかった"
+          ],
+          "correct_answer": 2,
+          "explanation": "「すばらしい」は見事ですぐれていることを称賛する表現です。（English: wonderful, splendid）"
+        },
+        {
+          "id": 67,
+          "stem": "レストランに入ると、昔よく聞いていた曲が店内で流れていて（　）気持ちになった。",
+          "targetWord": "なつかしい",
+          "options": [
+            "<ruby>恥<rt>は</rt></ruby>ずかしい",
+            "<ruby>親<rt>した</rt></ruby>しい",
+            "しょうがない",
+            "なつかしい"
+          ],
+          "correct_answer": 4,
+          "explanation": "「なつかしい」は昔のことを思い出して慕わしく心惹かれる気持ちです。（English: nostalgic, fond）"
+        },
+        {
+          "id": 68,
+          "stem": "台風が近づいているせいで、雨も風も（　）なってきました。",
+          "targetWord": "ひどく",
+          "options": [
+            "かたく",
+            "<ruby>忙<rt>いそが</rt></ruby>しく",
+            "ひどく",
+            "<ruby>苦<rt>くる</rt></ruby>しく"
+          ],
+          "correct_answer": 3,
+          "explanation": "「ひどい」は程度が甚だしく激しい様子です。（English: terrible, severe）"
+        },
+        {
+          "id": 69,
+          "stem": "この時間になると、部屋に太陽の光が<ruby>当<rt>あ</rt></ruby>たって（　）。",
+          "targetWord": "まぶしい",
+          "options": [
+            "まぶしい",
+            "もったいない",
+            "うるさい",
+            "ぬるい"
+          ],
+          "correct_answer": 1,
+          "explanation": "「まぶしい」は光が強くて目を開けていられない様子です。（English: dazzling, bright）"
+        },
+        {
+          "id": 70,
+          "stem": "ここの川は（　）ので、小さい子どもも安心して<ruby>遊<rt>あそ</rt></ruby>べます。",
+          "targetWord": "浅い",
+          "options": [
+            "<ruby>薄<rt>うす</rt></ruby>い",
+            "<ruby>貧<rt>まず</rt></ruby>しい",
+            "<ruby>浅<rt>あさ</rt></ruby>い",
+            "<ruby>軽<rt>かる</rt></ruby>い"
+          ],
+          "correct_answer": 3,
+          "explanation": "「浅い（あさい）」は水深が深くないことです。（English: shallow）"
+        },
+        {
+          "id": 71,
+          "stem": "卒業したら、みんなに毎日会うことができなくなるので（　）。",
+          "targetWord": "さびしい",
+          "options": [
+            "あぶない",
+            "くやしい",
+            "なさけない",
+            "さびしい"
+          ],
+          "correct_answer": 4,
+          "explanation": "「さびしい」は仲間と離れて心が満たされず心細い気持ちです。（English: lonely, sad）"
+        },
+        {
+          "id": 72,
+          "stem": "今日はたくさん食べる予定なので、お<ruby>腹<rt>なか</rt></ruby>の<ruby>周<rt>まわ</rt></ruby>りが（　）ズボンを<ruby>履<rt>は</rt></ruby>いてきました。",
+          "targetWord": "ゆるい",
+          "options": [
+            "きびしい",
+            "やさしい",
+            "ゆるい",
+            "えらい"
+          ],
+          "correct_answer": 3,
+          "explanation": "「ゆるい」は衣服などがきつくなくゆったりしている様子です。（English: loose）"
+        }
+      ]
+    },
+    {
+      "pageNumber": 9,
+      "pdfPage": 91,
+      "bookPage": 88,
+      "title": "文脈規定 (73〜81)",
+      "answers": [
+        4,
+        1,
+        2,
+        2,
+        1,
+        3,
+        2,
+        4,
+        3
+      ],
+      "questions": [
+        {
+          "id": 73,
+          "stem": "<ruby>後輩<rt>こうはい</rt></ruby>が作ってくれた<ruby>資料<rt>しりょう</rt></ruby>に<ruby>間違<rt>まちが</rt></ruby>いがないか（　）チェックする。",
+          "targetWord": "こまかく",
+          "options": [
+            "<ruby>濃<rt>こ</rt></ruby>く",
+            "きつく",
+            "<ruby>難<rt>むずか</rt></ruby>しく",
+            "こまかく"
+          ],
+          "correct_answer": 4,
+          "explanation": "「こまかい（細かい）」は隅々まで行き届いている様子です。「こまかくチェックする」で念入りに確認することを表します。（English: in detail, meticulously）"
+        },
+        {
+          "id": 74,
+          "stem": "このドラマはおもしろいと聞いていたけど、<ruby>実際<rt>じっさい</rt></ruby>は（　）。",
+          "targetWord": "つまらなかった",
+          "options": [
+            "つまらなかった",
+            "おかしかった",
+            "めずらしかった",
+            "あかるかった"
+          ],
+          "correct_answer": 1,
+          "explanation": "「つまらない」は興味がわかず退屈であることです。（English: boring, dull）"
+        },
+        {
+          "id": 75,
+          "stem": "お<ruby>菓子<rt>かし</rt></ruby>を食べ<ruby>過<rt>す</rt></ruby>ぎたせいで、顔が（　）なった。",
+          "targetWord": "丸く",
+          "options": [
+            "<ruby>広<rt>ひろ</rt></ruby>く",
+            "<ruby>丸<rt>まる</rt></ruby>く",
+            "<ruby>狭<rt>せま</rt></ruby>く",
+            "<ruby>厚<rt>あつ</rt></ruby>く"
+          ],
+          "correct_answer": 2,
+          "explanation": "「丸い（まるい）」は円形・球形であることです。「顔が丸くなった」で太ってふっくらした様子を表します。（English: round）"
+        },
+        {
+          "id": 76,
+          "stem": "いつも<ruby>真面目<rt>まじめ</rt></ruby>な<ruby>鈴木<rt>すずき</rt></ruby>さんは、（　）ことにお<ruby>酒<rt>さけ</rt></ruby>が大好きらしい。",
+          "targetWord": "意外な",
+          "options": [
+            "<ruby>得意<rt>とくい</rt></ruby>な",
+            "<ruby>意外<rt>いがい</rt></ruby>な",
+            "<ruby>大変<rt>たいへん</rt></ruby>な",
+            "<ruby>相当<rt>そうとう</rt></ruby>な"
+          ],
+          "correct_answer": 2,
+          "explanation": "「意外（いがい）なことに」で、予想や印象と違って驚くような事実を表す定型句です。（English: surprising, unexpected）"
+        },
+        {
+          "id": 77,
+          "stem": "ここは<ruby>遊園地<rt>ゆうえんち</rt></ruby>や水族館がある、とても（　）町だ。",
+          "targetWord": "にぎやかな",
+          "options": [
+            "にぎやかな",
+            "<ruby>平気<rt>へいき</rt></ruby>な",
+            "<ruby>派手<rt>はで</rt></ruby>な",
+            "たいくつな"
+          ],
+          "correct_answer": 1,
+          "explanation": "「にぎやか」は人が多く活気に満ちている様子です。（English: lively, bustling）"
+        },
+        {
+          "id": 78,
+          "stem": "数学は好きだが、（　）計算が少し苦手だ。",
+          "targetWord": "複雑な",
+          "options": [
+            "<ruby>確実<rt>かくじつ</rt></ruby>な",
+            "<ruby>正常<rt>せいじょう</rt></ruby>な",
+            "<ruby>複雑<rt>ふくざつ</rt></ruby>な",
+            "<ruby>危険<rt>きけん</rt></ruby>な"
+          ],
+          "correct_answer": 3,
+          "explanation": "「複雑（ふくざつ）な」はいろいろな要素が絡み合って入り組んでいる様子です。（English: complex, complicated）"
+        },
+        {
+          "id": 79,
+          "stem": "コンビニは24時間開いていて、なんでも売っているので（　）。",
+          "targetWord": "便利だ",
+          "options": [
+            "<ruby>熱心<rt>ねっしん</rt></ruby>だ",
+            "<ruby>便利<rt>べんり</rt></ruby>だ",
+            "<ruby>上品<rt>じょうひん</rt></ruby>だ",
+            "<ruby>新鮮<rt>しんせん</rt></ruby>だ"
+          ],
+          "correct_answer": 2,
+          "explanation": "「便利（べんり）だ」は都合がよく役に立つことです。（English: convenient）"
+        },
+        {
+          "id": 80,
+          "stem": "仕事の後に映画をみにいこうと思っていたが、残業のせいで（　）。",
+          "targetWord": "無理だった",
+          "options": [
+            "<ruby>残念<rt>ざんねん</rt></ruby>だった",
+            "<ruby>迷惑<rt>めいわく</rt></ruby>だった",
+            "<ruby>不安<rt>ふあん</rt></ruby>だった",
+            "<ruby>無理<rt>むり</rt></ruby>だった"
+          ],
+          "correct_answer": 4,
+          "explanation": "「無理（むり）だった」は実現が不可能な状態を表します。（English: was impossible）"
+        },
+        {
+          "id": 81,
+          "stem": "先生の（　）説明のおかげで、難しい問題も解けるようになりました。",
+          "targetWord": "丁寧な",
+          "options": [
+            "<ruby>重大<rt>じゅうだい</rt></ruby>な",
+            "<ruby>可能<rt>かのう</rt></ruby>な",
+            "<ruby>丁寧<rt>ていねい</rt></ruby>な",
+            "<ruby>高価<rt>こうか</rt></ruby>な"
+          ],
+          "correct_answer": 3,
+          "explanation": "「丁寧（ていねい）な」は細やかで配慮が行き届いている様子です。（English: polite, careful, thorough）"
+        }
+      ]
+    },
+    {
+      "pageNumber": 10,
+      "pdfPage": 92,
+      "bookPage": 89,
+      "title": "文脈規定 (82〜90)",
+      "answers": [
+        3,
+        2,
+        3,
+        4,
+        4,
+        2,
+        3,
+        3,
+        1
+      ],
+      "questions": [
+        {
+          "id": 82,
+          "stem": "この<ruby>事件<rt>じけん</rt></ruby>について、（　）情報を知りたい。",
+          "targetWord": "確かな",
+          "options": [
+            "<ruby>盛<rt>さか</rt></ruby>んな",
+            "<ruby>正直<rt>しょうじき</rt></ruby>な",
+            "<ruby>確<rt>たし</rt></ruby>かな",
+            "<ruby>単純<rt>たんじゅん</rt></ruby>な"
+          ],
+          "correct_answer": 3,
+          "explanation": "「確（たし）かな」は間違いがなく信頼できる様子です。（English: reliable, certain）"
+        },
+        {
+          "id": 83,
+          "stem": "野菜をたくさん食べることは、<ruby>健康<rt>けんこう</rt></ruby>にもダイエットにも（　）だ。",
+          "targetWord": "効果的",
+          "options": [
+            "<ruby>実用的<rt>じつようてき</rt></ruby>",
+            "<ruby>効果的<rt>こうかてき</rt></ruby>",
+            "<ruby>基本的<rt>きほんてき</rt></ruby>",
+            "<ruby>全体的<rt>ぜんたいてき</rt></ruby>"
+          ],
+          "correct_answer": 2,
+          "explanation": "「効果的（こうかてき）だ」は良い効果・効き目があることです。（English: effective）"
+        },
+        {
+          "id": 84,
+          "stem": "<ruby>恥<rt>は</rt></ruby>ずかしがらず、もっと（　）に意見を出し合いましょう。",
+          "targetWord": "積極的",
+          "options": [
+            "<ruby>基礎的<rt>きそてき</rt></ruby>",
+            "<ruby>活動的<rt>かつどうてき</rt></ruby>",
+            "<ruby>積極的<rt>せっきょくてき</rt></ruby>",
+            "<ruby>一般的<rt>いっぱんてき</rt></ruby>"
+          ],
+          "correct_answer": 3,
+          "explanation": "「積極的（せっきょくてき）に」は進んで物事に取り組む様子です。（English: proactive, active）"
+        },
+        {
+          "id": 85,
+          "stem": "日本のタクシーのドアは、自分で開けなくても（　）に開きます。",
+          "targetWord": "自動的",
+          "options": [
+            "<ruby>最終的<rt>さいしゅうてき</rt></ruby>",
+            "<ruby>人工的<rt>じんこうてき</rt></ruby>",
+            "<ruby>具体的<rt>ぐたいてき</rt></ruby>",
+            "<ruby>自動的<rt>じどうてき</rt></ruby>"
+          ],
+          "correct_answer": 4,
+          "explanation": "「自動的（じどうてき）に」は機械などが自ら動くことです。（English: automatically）"
+        },
+        {
+          "id": 86,
+          "stem": "わたしは大学で植物について研究したので、農業について（　）な知識がある。",
+          "targetWord": "専門的",
+          "options": [
+            "<ruby>代表的<rt>だいひょうてき</rt></ruby>",
+            "<ruby>経済的<rt>けいざいてき</rt></ruby>",
+            "<ruby>数学的<rt>すうがくてき</rt></ruby>",
+            "<ruby>専門的<rt>せんもんてき</rt></ruby>"
+          ],
+          "correct_answer": 4,
+          "explanation": "「専門的（せんもんてき）な」は特定の分野について深く詳しい様子です。（English: specialized, expert）"
+        },
+        {
+          "id": 87,
+          "stem": "明日、みんなに（　）お知らせをする予定だ。",
+          "targetWord": "重要な",
+          "options": [
+            "<ruby>立派<rt>りっぱ</rt></ruby>な",
+            "<ruby>重要<rt>じゅうよう</rt></ruby>な",
+            "<ruby>地味<rt>じみ</rt></ruby>な",
+            "<ruby>慎重<rt>しんちょう</rt></ruby>な"
+          ],
+          "correct_answer": 2,
+          "explanation": "「重要（じゅうよう）な」は大切で欠かせない様子です。（English: important）"
+        },
+        {
+          "id": 88,
+          "stem": "遠い場所に住んでいる恋人と、一年ぶりに（　）会えた。",
+          "targetWord": "ようやく",
+          "options": [
+            "なかなか",
+            "いつでも",
+            "ようやく",
+            "はじめて"
+          ],
+          "correct_answer": 3,
+          "explanation": "「ようやく」は長い時間や困難の末についに達成される様子です。（English: finally, at last）"
+        },
+        {
+          "id": 89,
+          "stem": "（　）雨が<ruby>降<rt>ふ</rt></ruby>ったら、海ではなくプールに行きましょう。",
+          "targetWord": "もし",
+          "options": [
+            "<ruby>今<rt>いま</rt></ruby>にも",
+            "<ruby>確<rt>たし</rt></ruby>か",
+            "もし",
+            "<ruby>一度<rt>いちど</rt></ruby>に"
+          ],
+          "correct_answer": 3,
+          "explanation": "「もし」は仮定の条件を表す言葉で、「もし〜たら」の呼応で使われます。（English: if）"
+        },
+        {
+          "id": 90,
+          "stem": "二時までにこの仕事が終わるかはわかりませんが、（　）早く終わらせます。",
+          "targetWord": "なるべく",
+          "options": [
+            "なるべく",
+            "<ruby>主<rt>おも</rt></ruby>に",
+            "<ruby>次第<rt>しだい</rt></ruby>に",
+            "だいたい"
+          ],
+          "correct_answer": 1,
+          "explanation": "「なるべく」はできる限り、可能な限りの意味を表します。（English: as ... as possible）"
+        }
+      ]
+    },
+    {
+      "pageNumber": 11,
+      "pdfPage": 93,
+      "bookPage": 90,
+      "title": "文脈規定 (91〜99)",
+      "answers": [
+        3,
+        2,
+        4,
+        3,
+        4,
+        3,
+        2,
+        4,
+        3
+      ],
+      "questions": [
+        {
+          "id": 91,
+          "stem": "だめだとわかっていても、（　）お<ruby>菓子<rt>かし</rt></ruby>を食べ<ruby>過<rt>す</rt></ruby>ぎてしまいます。",
+          "targetWord": "つい",
+          "options": [
+            "まず",
+            "きちんと",
+            "つい",
+            "だんだん"
+          ],
+          "correct_answer": 3,
+          "explanation": "「つい」はしてはいけないと知りつつうっかり・思わずやってしまう様子を表します。（English: unintentionally, involuntarily）"
+        },
+        {
+          "id": 92,
+          "stem": "たくさん勉強したが、（　）試験に合格するとは<ruby>限<rt>かぎ</rt></ruby>らない。",
+          "targetWord": "必ずしも",
+          "options": [
+            "<ruby>例<rt>たと</rt></ruby>えば",
+            "<ruby>必<rt>かなら</rt></ruby>ずしも",
+            "<ruby>多少<rt>たしょう</rt></ruby>",
+            "いくらでも"
+          ],
+          "correct_answer": 2,
+          "explanation": "「必ずしも（かならずしも）〜とは限らない」で、100%そうとは言えないという部分否定を表します。（English: not necessarily）"
+        },
+        {
+          "id": 93,
+          "stem": "<ruby>支払<rt>しはら</rt></ruby>う<ruby>金額<rt>きんがく</rt></ruby>を（　）出すことができた。",
+          "targetWord": "ちょうど",
+          "options": [
+            "そのまま",
+            "まっすぐ",
+            "ただ",
+            "ちょうど"
+          ],
+          "correct_answer": 4,
+          "explanation": "「ちょうど」はお釣りの出ないぴったりの金額を表します。（English: exactly, just the right amount）"
+        },
+        {
+          "id": 94,
+          "stem": "<ruby>割<rt>わ</rt></ruby>れたコップは、危ないので（　）<ruby>触<rt>さわ</rt></ruby>らないでください。",
+          "targetWord": "絶対",
+          "options": [
+            "<ruby>先<rt>さき</rt></ruby>に",
+            "<ruby>突然<rt>とつぜん</rt></ruby>",
+            "<ruby>絶対<rt>ぜったい</rt></ruby>",
+            "<ruby>最<rt>もっと</rt></ruby>も"
+          ],
+          "correct_answer": 3,
+          "explanation": "「絶対（ぜったい）〜ないでください」で、強い禁止を表します。（English: definitely, absolutely）"
+        },
+        {
+          "id": 95,
+          "stem": "多分その作り方で合っていますが、（　）確認しましょう。",
+          "targetWord": "一応",
+          "options": [
+            "<ruby>次々<rt>つぎつぎ</rt></ruby>",
+            "<ruby>結構<rt>けっこう</rt></ruby>",
+            "<ruby>相当<rt>そうとう</rt></ruby>",
+            "<ruby>一応<rt>いちおう</rt></ruby>"
+          ],
+          "correct_answer": 4,
+          "explanation": "「一応（いちおう）」は念のため、念を押して行う様子を表します。（English: just in case, for now）"
+        },
+        {
+          "id": 96,
+          "stem": "たくさん見たけど、（　）最初に行ったお店の服が欲しいな。",
+          "targetWord": "やっぱり",
+          "options": [
+            "やっと",
+            "もちろん",
+            "やっぱり",
+            "ずいぶん"
+          ],
+          "correct_answer": 3,
+          "explanation": "「やっぱり」は色々考えた結果、当初の思いや予想通りの結論に至ることを表します。（English: after all, as expected）"
+        },
+        {
+          "id": 97,
+          "stem": "卒業してから一度も会っていなかった<ruby>佐藤<rt>さとう</rt></ruby>さんと（　）駅で会った。",
+          "targetWord": "偶然",
+          "options": [
+            "かなり",
+            "<ruby>偶然<rt>ぐうぜん</rt></ruby>",
+            "せっかく",
+            "<ruby>結局<rt>けっきょく</rt></ruby>"
+          ],
+          "correct_answer": 2,
+          "explanation": "「偶然（ぐうぜん）」は思いがけず、予期せずに出会うことです。（English: by chance, coincidentally）"
+        },
+        {
+          "id": 98,
+          "stem": "<ruby>普段<rt>ふだん</rt></ruby>はお<ruby>酒<rt>さけ</rt></ruby>を飲まないが、（　）飲むとおいしく感じる。",
+          "targetWord": "たまに",
+          "options": [
+            "すぐに",
+            "あまり",
+            "もっと",
+            "たまに"
+          ],
+          "correct_answer": 4,
+          "explanation": "「たまに」は頻度が低く時々起こる様子を表します。（English: occasionally, once in a while）"
+        },
+        {
+          "id": 99,
+          "stem": "大学生になってから、（　）実家に帰っていない。",
+          "targetWord": "しばらく",
+          "options": [
+            "まるで",
+            "<ruby>時々<rt>ときどき</rt></ruby>",
+            "しばらく",
+            "たいてい"
+          ],
+          "correct_answer": 3,
+          "explanation": "「しばらく〜ていない」で、ある程度の長い間その行動をしていないことを表します。（English: for a while）"
+        }
+      ]
+    },
+    {
+      "pageNumber": 12,
+      "pdfPage": 94,
+      "bookPage": 91,
+      "title": "文脈規定 (100〜108)",
+      "answers": [
+        2,
+        4,
+        3,
+        3,
+        4,
+        3,
+        4,
+        4,
+        1
+      ],
+      "questions": [
+        {
+          "id": 100,
+          "stem": "<ruby>本当<rt>ほんとう</rt></ruby>はどう思っているのか、（　）言ってください。",
+          "targetWord": "はっきり",
+          "options": [
+            "そっくり",
+            "はっきり",
+            "てっきり",
+            "きっかり"
+          ],
+          "correct_answer": 2,
+          "explanation": "「はっきり」はあいまいでなく明確に言葉を述べる様子です。（English: clearly, plainly）"
+        },
+        {
+          "id": 101,
+          "stem": "今日は時間がないから、また今度（　）話しましょう。",
+          "targetWord": "ゆっくり",
+          "options": [
+            "ぐっすり",
+            "さっと",
+            "そっと",
+            "ゆっくり"
+          ],
+          "correct_answer": 4,
+          "explanation": "「ゆっくり」は時間を気にせず落ち着いてくつろいで過ごす様子を表します。（English: leisurely, unhurriedly）"
+        },
+        {
+          "id": 102,
+          "stem": "まだ本を読みたいけど、明日も早いし（　）寝よう。",
+          "targetWord": "そろそろ",
+          "options": [
+            "ころころ",
+            "ごろごろ",
+            "そろそろ",
+            "のろのろ"
+          ],
+          "correct_answer": 3,
+          "explanation": "「そろそろ」はちょうどその行為をするのにふさわしい時間になる様子を表します。（English: soon, about time）"
+        },
+        {
+          "id": 103,
+          "stem": "<ruby>坂井<rt>さかい</rt></ruby>さんはアメリカに留学していたので、英語が（　）話せます。",
+          "targetWord": "ぺらぺら",
+          "options": [
+            "こんこん",
+            "うろうろ",
+            "ぺらぺら",
+            "べらべら"
+          ],
+          "correct_answer": 3,
+          "explanation": "「ぺらぺら」は外国語などをよどみなくなめらかに上手に話す様子です。（English: fluently）"
+        },
+        {
+          "id": 104,
+          "stem": "（　）して、大事な<ruby>資料<rt>しりょう</rt></ruby>を家に忘れてきてしまった。",
+          "targetWord": "うっかり",
+          "options": [
+            "すっかり",
+            "びっくり",
+            "きっちり",
+            "うっかり"
+          ],
+          "correct_answer": 4,
+          "explanation": "「うっかりする」は注意が不十分で油断や不注意から失敗してしまう様子です。（English: carelessly, inadvertently）"
+        },
+        {
+          "id": 105,
+          "stem": "この<ruby>皿<rt>さら</rt></ruby>は大切なものだから、落とさないように（　）持っていてね。",
+          "targetWord": "しっかり",
+          "options": [
+            "すっと",
+            "ぴったり",
+            "しっかり",
+            "そっと"
+          ],
+          "correct_answer": 3,
+          "explanation": "「しっかり」は手元や気持ちを緩めず堅固に保つ様子です。「しっかり持つ」で落とさないように強く保持することを表します。（English: firmly, tightly）"
+        },
+        {
+          "id": 106,
+          "stem": "暑い中一時間も山を歩いたので、のどが（　）だ。",
+          "targetWord": "からから",
+          "options": [
+            "がらがら",
+            "ざらざら",
+            "さらさら",
+            "からから"
+          ],
+          "correct_answer": 4,
+          "explanation": "「からから」は水分が完全になくなってひどく乾いている様子です。（English: parched, completely dry）"
+        },
+        {
+          "id": 107,
+          "stem": "朝から何も食べていないので、お<ruby>腹<rt>なか</rt></ruby>が（　）だ。",
+          "targetWord": "ぺこぺこ",
+          "options": [
+            "どきどき",
+            "ぺろぺろ",
+            "いらいら",
+            "ぺこぺこ"
+          ],
+          "correct_answer": 4,
+          "explanation": "「ぺこぺこ」はお腹が空いてたまらない空腹の様子を表します。（English: starving, famished）"
+        },
+        {
+          "id": 108,
+          "stem": "家に着いたとたん、仕事の<ruby>疲<rt>つか</rt></ruby>れが（　）出てきた。",
+          "targetWord": "どっと",
+          "options": [
+            "どっと",
+            "ぎっしり",
+            "さっぱり",
+            "じっと"
+          ],
+          "correct_answer": 1,
+          "explanation": "「どっと」は溜まっていた疲れや感情が一気に押し寄せる様子です。（English: all at once, suddenly in a rush）"
+        }
+      ]
+    },
+    {
+      "pageNumber": 13,
+      "pdfPage": 95,
+      "bookPage": 92,
+      "title": "文脈規定 (109〜117)",
+      "answers": [
+        3,
+        2,
+        2,
+        1,
+        3,
+        1,
+        3,
+        2,
+        3
+      ],
+      "questions": [
+        {
+          "id": 109,
+          "stem": "来月行われる、マラソン大会の（　）を考える。",
+          "targetWord": "コース",
+          "options": [
+            "エネルギー",
+            "ケース",
+            "コース",
+            "サンプル"
+          ],
+          "correct_answer": 3,
+          "explanation": "「コース（course）」はマラソンや競技で走る道筋・経路のことです。（English: course, route）"
+        },
+        {
+          "id": 110,
+          "stem": "<ruby>山下<rt>やました</rt></ruby>さんは、性格が明るく（　）を取ることが<ruby>得意<rt>とくい</rt></ruby>です。",
+          "targetWord": "コミュニケーション",
+          "options": [
+            "アイデア",
+            "コミュニケーション",
+            "マナー",
+            "メッセージ"
+          ],
+          "correct_answer": 2,
+          "explanation": "「コミュニケーション（communication）を取る」で、他者と良好な意思疎通をはかることを表します。（English: communication）"
+        },
+        {
+          "id": 111,
+          "stem": "<ruby>興味<rt>きょうみ</rt></ruby>のある会社のホームページに（　）する。",
+          "targetWord": "アクセス",
+          "options": [
+            "インタビュー",
+            "アクセス",
+            "ファックス",
+            "チェックイン"
+          ],
+          "correct_answer": 2,
+          "explanation": "「アクセス（access）する」はウェブサイトを訪れたり接続したりすることです。（English: access, visit）"
+        },
+        {
+          "id": 112,
+          "stem": "りんごを買いに行ったら、店員さんが（　）で一つ多く入れてくれた。",
+          "targetWord": "サービス",
+          "options": [
+            "サービス",
+            "センター",
+            "ベランダ",
+            "ヒント"
+          ],
+          "correct_answer": 1,
+          "explanation": "「サービス（service）」は客への無料の配慮やおまけのことです。「サービスで」でおまけとしてという意味になります。（English: free of charge / complimentary bonus）"
+        },
+        {
+          "id": 113,
+          "stem": "今まで一度もやったことがなかったサッカーに（　）する。",
+          "targetWord": "チャレンジ",
+          "options": [
+            "トレーニング",
+            "アップ",
+            "チャレンジ",
+            "ダビング"
+          ],
+          "correct_answer": 3,
+          "explanation": "「チャレンジ（challenge）する」は新しいことや困難なことに挑戦することです。（English: take on the challenge, try）"
+        },
+        {
+          "id": 114,
+          "stem": "会社でビジネスの（　）を教える。",
+          "targetWord": "マナー",
+          "options": [
+            "マナー",
+            "サイズ",
+            "レシピ",
+            "メニュー"
+          ],
+          "correct_answer": 1,
+          "explanation": "「マナー（manner）」は社会生活や仕事上の礼儀・作法のことです。「ビジネスマナー」の文脈です。（English: manners, etiquette）"
+        },
+        {
+          "id": 115,
+          "stem": "急に用事ができてしまい、仕方なく明日の予定を（　）した。",
+          "targetWord": "キャンセル",
+          "options": [
+            "アナウンス",
+            "リサイクル",
+            "キャンセル",
+            "ストップ"
+          ],
+          "correct_answer": 3,
+          "explanation": "「キャンセル（cancel）する」は約束や予定を取り消すことです。（English: cancel）"
+        },
+        {
+          "id": 116,
+          "stem": "<ruby>資料<rt>しりょう</rt></ruby>を読んだら、最後に（　）をお願いします。",
+          "targetWord": "サイン",
+          "options": [
+            "リスト",
+            "サイン",
+            "デザイン",
+            "テキスト"
+          ],
+          "correct_answer": 2,
+          "explanation": "「サイン（sign）」は署名・サインのことです。（English: signature, sign）"
+        },
+        {
+          "id": 117,
+          "stem": "二か月前に買ったペンの（　）がもうなくなってしまいました。",
+          "targetWord": "インク",
+          "options": [
+            "ソース",
+            "エンジン",
+            "インク",
+            "ペンキ"
+          ],
+          "correct_answer": 3,
+          "explanation": "「インク（ink）」は筆記具に入れる液体のことです。「ペンのインクがなくなる」の文脈です。（English: ink）"
+        }
+      ]
+    }
+  ]
+}

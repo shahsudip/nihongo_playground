@@ -1,0 +1,108 @@
+{
+  "bookId": "nihongo-no-mori-n3",
+  "bookTitle": "JLPT N3 この一冊で合格する",
+  "chapter": 3,
+  "chapterTitle": "第3章 読解",
+  "section": 7,
+  "sectionTitle": "問題7 情報検索 (2問)",
+  "sectionDescription": "問題7では、お知らせの紙・パンフレット・ちらし・ポスターなど（600字程度）を読みます。そして、その内容について答える問題が出ます。情報検索は大問が1つあり、2つの小問が出ます。",
+  "instruction": "問題7 右のページは、鉄道公園のポスターである。これを読んで、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "totalPages": 1,
+  "totalQuestions": 2,
+  "passages": [
+    {
+      "id": 1,
+      "passageNumber": 1,
+      "passageLabel": "",
+      "pageNumber": 1,
+      "bookPage": 262,
+      "pdfPage": 265,
+      "kaisetsuBookPage": 264,
+      "kaisetsuPdfPage": 267,
+      "passageLayout": "flyer",
+      "imageAsset": "/nihongo_no_mori_n3/ch3_dokkai_kensaku_flyer.png",
+      "preText": "右のページは、<ruby>鉄道<rt>てつどう</rt></ruby>公園のポスターである。",
+      "passageText": "<div class=\"p-4 sm:p-6 border-2 border-slate-400 dark:border-slate-600 rounded-2xl bg-amber-50/20 dark:bg-slate-900/60 leading-relaxed font-sans\">\n  <div class=\"text-center border-b border-slate-300 dark:border-slate-700 pb-4 mb-4\">\n    <div class=\"text-xs text-slate-500 font-bold mb-1\">てつどう</div>\n    <h2 class=\"text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-wide\">\n      鉄道公園 夏休みだけの特別イベントのお知らせ\n    </h2>\n    <p class=\"text-base sm:text-lg font-bold text-emerald-700 dark:text-emerald-400 mt-2\">\n      ミニ列車・モーリー君に乗ろう！\n    </p>\n  </div>\n\n  <div class=\"space-y-3 text-sm sm:text-base\">\n    <div class=\"pl-2 border-l-4 border-emerald-500\">\n      <div class=\"font-bold\">◇日時：7月21日、28日、8月4日、8月11日、8月18日</div>\n      <div class=\"ml-4\">17：30〜21：30（最終入園は20：00まで）</div>\n      <div class=\"ml-4 text-xs sm:text-sm text-slate-600 dark:text-slate-400\">※この日程以外は、いつも通り、17時以降は入園できません。</div>\n    </div>\n\n    <div class=\"pl-2 border-l-4 border-blue-500\">\n      <div class=\"font-bold\">◇モーリー君出発時間　①17：45〜　②19：30〜</div>\n      <div class=\"ml-4 text-xs sm:text-sm\">乗車の時間は出発の10分前までです。<ruby>遅<rt>おく</rt></ruby>れないように、モーリー君乗り場に集合してください。</div>\n    </div>\n\n    <div class=\"pl-2 border-l-4 border-indigo-500\">\n      <div class=\"font-bold\">◇参加のしかた：昼間と同じ入園料がかかります。</div>\n      <div class=\"ml-4 text-xs sm:text-sm\">モーリー君に乗るにはチケットが必要です。入園のときに、正面入り口のチケット売り場で入園料と乗り物料金を合わせた料金を支払ってください。</div>\n    </div>\n\n    <div class=\"pl-2 border-l-4 border-amber-500\">\n      <div class=\"font-bold\">◇レストラン：営業しています。</div>\n      <div class=\"ml-4 text-xs sm:text-sm\">モーリー君の車内でも、モーリー<ruby>弁当<rt>べんとう</rt></ruby>、焼きそば、オレンジジュース、コーヒー、アイスクリームなどの<ruby>販売<rt>はんばい</rt></ruby>があります。</div>\n    </div>\n  </div>\n\n  <div class=\"mt-6 pt-4 border-t border-slate-300 dark:border-slate-700\">\n    <p class=\"font-bold mb-3\">ほかにも<ruby>鉄道<rt>てつどう</rt></ruby>をもっと好きになってもらうためのイベントを、毎週開いています。</p>\n    \n    <div class=\"border border-slate-300 dark:border-slate-700 divide-y divide-slate-300 dark:divide-slate-700 rounded-lg overflow-hidden text-xs sm:text-sm\">\n      <div class=\"p-3 bg-white dark:bg-slate-800/80\">\n        <div class=\"font-black text-blue-700 dark:text-blue-300 mb-1\">A　<ruby>鉄道<rt>てつどう</rt></ruby>公園案内</div>\n        <p class=\"mb-1\">専門スタッフの話を聞きながら、バスに乗って園内を一周します（約30分）。昔の<ruby>鉄道<rt>てつどう</rt></ruby>のことや、電車の<ruby>歴史<rt>れきし</rt></ruby>について知りましょう。</p>\n        <p class=\"font-semibold text-slate-700 dark:text-slate-300\">毎日3回　①10：30〜　②13：00〜　③15：30〜</p>\n      </div>\n      \n      <div class=\"p-3 bg-white dark:bg-slate-800/80\">\n        <div class=\"font-black text-purple-700 dark:text-purple-300 mb-1\">B　駅のお仕事をやってみよう</div>\n        <p class=\"mb-1\">本物の<ruby>制服<rt>せいふく</rt></ruby>を着て、駅員の仕事をやってみましょう。</p>\n        <p class=\"font-semibold text-slate-700 dark:text-slate-300\">毎週土曜　14：30〜16：00　（予約が必要。一回10人まで。）</p>\n      </div>\n\n      <div class=\"p-3 bg-white dark:bg-slate-800/80\">\n        <div class=\"font-black text-emerald-700 dark:text-emerald-300 mb-1\">C　電車見学</div>\n        <p class=\"mb-1\">園内にある全ての電車の車内を見学することができます。普段は見られない、エンジンの中も公開！</p>\n        <p class=\"font-semibold text-slate-700 dark:text-slate-300\">毎週日曜　13：30〜15：30</p>\n      </div>\n\n      <div class=\"p-3 bg-white dark:bg-slate-800/80\">\n        <div class=\"font-black text-rose-700 dark:text-rose-300 mb-1\">D　交通ルール教室</div>\n        <p class=\"mb-1\">電車にも交通ルールがあります。園内にある電車の運転席に乗って、<ruby>一緒<rt>いっしょ</rt></ruby>に勉強しましょう。</p>\n        <p class=\"font-semibold text-slate-700 dark:text-slate-300\">毎週月曜、木曜　14：00〜15：00<br/>毎週土曜　13：30〜14：30</p>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"mt-4 pt-3 border-t border-slate-300 dark:border-slate-700 text-xs sm:text-sm space-y-1\">\n    <div><span class=\"font-bold\">参加料金：</span>無料</div>\n    <div><span class=\"font-bold\">集合場所：</span>A、C、D：正面入り口　B：<ruby>鉄道<rt>てつどう</rt></ruby>公園駅入り口</div>\n    <div><span class=\"font-bold\">申し込み：</span>Bのみ当日12時までに予約が必要です。正面入り口のチケット売り場で予約を受け付けています。</div>\n  </div>\n</div>",
+      "questions": [
+        {
+          "id": 1,
+          "questionNumber": 1,
+          "stem": "アリさんは8月4日に娘を<ruby>連<rt>つ</rt></ruby>れて、モーリー君に乗りたいと思っている。アリさんがしなければならないことはどれか。",
+          "options": [
+            "19：30に娘と<ruby>一緒<rt>いっしょ</rt></ruby>にモーリー君乗り場へ行く。",
+            "入園料と乗り物料金をチケット売り場で<ruby>一緒<rt>いっしょ</rt></ruby>に支払う。",
+            "先に入園料を払って、モーリー君乗り場でチケットを買う。",
+            "モーリー君に乗ると食事ができないので、先にレストランで食事をする。"
+          ],
+          "correct_answer": 2,
+          "optionsKaisetsu": [
+            {
+              "optionNumber": 1,
+              "text": "19：30に<ruby>娘<rt>むすめ</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>にモーリー<ruby>君<rt>くん</rt></ruby><ruby>乗<rt>の</rt></ruby>り<ruby>場<rt>ば</rt></ruby>へ<ruby>行<rt>い</rt></ruby>く。",
+              "isCorrect": false,
+              "note": "10分前に集合なので、「19：30」ではなく「19：20」。"
+            },
+            {
+              "optionNumber": 2,
+              "text": "<ruby>入園料<rt>にゅうえんりょう</rt></ruby>と<ruby>乗<rt>の</rt></ruby>り<ruby>物<rt>もの</rt></ruby><ruby>料金<rt>りょうきん</rt></ruby>をチケット<ruby>売<rt>う</rt></ruby>り<ruby>場<rt>ば</rt></ruby>で<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>支払<rt>しはら</rt></ruby>う。",
+              "isCorrect": true,
+              "note": ""
+            },
+            {
+              "optionNumber": 3,
+              "text": "<ruby>先<rt>さき</rt></ruby>に<ruby>入園料<rt>にゅうえんりょう</rt></ruby>を<ruby>払<rt>はら</rt></ruby>って、モーリー<ruby>君<rt>くん</rt></ruby><ruby>乗<rt>の</rt></ruby>り<ruby>場<rt>ば</rt></ruby>でチケットを<ruby>買<rt>か</rt></ruby>う。",
+              "isCorrect": false,
+              "note": "「先に」ではなく、乗り物料金と一緒に支払う。"
+            },
+            {
+              "optionNumber": 4,
+              "text": "モーリー<ruby>君<rt>くん</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ると<ruby>食事<rt>しょくじ</rt></ruby>ができないので、<ruby>先<rt>さき</rt></ruby>にレストランで<ruby>食事<rt>しょくじ</rt></ruby>をする。",
+              "isCorrect": false,
+              "note": "「食事ができない」とは言っていない（車内販売あり）。"
+            }
+          ],
+          "explanation": "【正解】2\nポスターの「◇参加のしかた」に「入園のときに、正面入り口のチケット売り場で入園料と乗り物料金を合わせた料金を支払ってください」と明記されているため、2が正解です。\n1：「10分前に集合なので、「19：30」ではなく「19：20」」\n3：「「先に」ではなく、乗り物料金と一緒に支払う」\n4：「「食事ができない」とは言っていない（車内販売でモーリー弁当等の販売があります）」"
+        },
+        {
+          "id": 2,
+          "questionNumber": 2,
+          "stem": "今日は土曜日である。ユスラさんは13時に<ruby>鉄道<rt>てつどう</rt></ruby>公園に来た。できるだけたくさんのイベントに参加したいと思っているが、<ruby>鉄道<rt>てつどう</rt></ruby>公園が昼間に開いているイベントで、今から参加できるものはどれか。",
+          "options": [
+            "Aだけ",
+            "BとD",
+            "AとCとD",
+            "AとD"
+          ],
+          "correct_answer": 4,
+          "optionsKaisetsu": [
+            {
+              "optionNumber": 1,
+              "text": "Aだけ",
+              "isCorrect": false,
+              "note": "Dも参加できるので「Aだけ」は不完全。"
+            },
+            {
+              "optionNumber": 2,
+              "text": "BとD",
+              "isCorrect": false,
+              "note": "Bは当日12時までに予約が必要なので、13時到着のユスラさんは参加できない。"
+            },
+            {
+              "optionNumber": 3,
+              "text": "AとCとD",
+              "isCorrect": false,
+              "note": "Cは日曜日に行われるイベントなので土曜日は参加できない。"
+            },
+            {
+              "optionNumber": 4,
+              "text": "AとD",
+              "isCorrect": true,
+              "note": ""
+            }
+          ],
+          "explanation": "【正解】4\nユスラさんは土曜日の13時に来園しています。\n・A（案内）：毎日3回あり、今から参加できるのは②13：00〜（ギリギリ）または③15：30〜で参加可能。\n・B（駅のお仕事）：土曜14:30〜16:00ですが「Bのみ当日12時までに予約が必要」なので13時到着では参加不可。\n・C（電車見学）：毎週日曜日のみ開催なので土曜日は不可。\n・D（交通ルール教室）：土曜13:30〜14:30に開催されており、予約不要で正面入り口集合のため参加可能。\nしたがって、今から参加できるイベントは「AとD」の4が正解です。"
+        }
+      ]
+    }
+  ]
+}

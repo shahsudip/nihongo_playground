@@ -2,6 +2,20 @@
 
 export const STATIC_BOOKS = [
   {
+    id: 'nihongo-no-mori-n3',
+    title: 'JLPT N3 この一冊で合格する (日本語の森)',
+    description: 'Complete JLPT N3 all-in-one workbook by Nihongo no Mori: Kanji, Vocabulary, Grammar, Reading, and Listening.',
+    level: 'N3',
+    category: 'Mixed',
+    coverImage: '/images/books/nihongo_no_mori_n3_cover.jpg',
+    coverUrl: '/images/books/nihongo_no_mori_n3_cover.jpg',
+    color: 'from-emerald-500 to-teal-600',
+    tags: ['N3', 'Kanji', 'Vocabulary', 'Grammar', 'Nihongo no Mori'],
+    hasDigitalDrill: true,
+    totalChapters: 5,
+    customRoute: '/books/nihongo-no-mori-n3'
+  },
+  {
     id: 'zenkamoku-n1-best-workbook',
     title: '全科目攻略！JLPT日本語能力試験ベスト総合問題集N1',
     description: '12-week complete JLPT N1 workbook covering vocabulary, grammar, reading, and listening.',

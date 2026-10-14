@@ -47,6 +47,7 @@ const SomatomeN3Book = lazy(() => import('./components/SomatomeN3Book.jsx'));
 const ShinkanzenN3ReadingBook = lazy(() => import('./components/ShinkanzenN3ReadingBook.jsx'));
 const ShinkanzenN3ListeningBook = lazy(() => import('./components/ShinkanzenN3ListeningBook.jsx'));
 const SpeedMasterN3ReadingBook = lazy(() => import('./components/SpeedMasterN3ReadingBook.jsx'));
+const NihongoNoMoriN3Book = lazy(() => import('./components/NihongoNoMoriN3Book.jsx'));
 const Shin500QuizPage = lazy(() => import('./components/Shin500QuizPage.jsx'));
 const TangoReadingPage = lazy(() => import('./components/TangoReadingPage.jsx'));
 const DailySprintListPage = lazy(() => import('./components/DailySprintListPage.jsx'));
@@ -183,6 +184,10 @@ export default function App() {
           <Route
             path="/books/:bookId"
             element={<ProtectedRoute><BookChapterListPage /></ProtectedRoute>}
+          />
+          <Route
+            path="/books/nihongo-no-mori-n3"
+            element={<ProtectedRoute><NihongoNoMoriN3Book /></ProtectedRoute>}
           />
           <Route
             path="/books/sou-matome-n3-reading/chapters/:chapterId"

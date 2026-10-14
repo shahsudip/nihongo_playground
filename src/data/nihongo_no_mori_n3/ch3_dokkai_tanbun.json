@@ -1,0 +1,226 @@
+{
+  "bookId": "nihongo-no-mori-n3",
+  "bookTitle": "JLPT N3 この一冊で合格する",
+  "chapter": 3,
+  "chapterTitle": "第3章 読解",
+  "section": 4,
+  "sectionTitle": "問題4 内容理解（短文） (4問)",
+  "sectionDescription": "問題4では、短文（200字程度）を読みます。そして、お知らせやメールの内容、または文章を書いた人の考えについての問題が出ます。内容理解（短文）は4つの大問があり、1つの大問ごとに1つの小問が出ます。",
+  "instruction": "問題4 つぎの（1）から（4）の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "totalPages": 4,
+  "totalQuestions": 4,
+  "passages": [
+    {
+      "id": 1,
+      "passageNumber": 1,
+      "passageLabel": "(1)",
+      "pageNumber": 1,
+      "bookPage": 241,
+      "pdfPage": 244,
+      "kaisetsuBookPage": 242,
+      "kaisetsuPdfPage": 245,
+      "passageLayout": "essay",
+      "passageText": "私は英語がどうしても苦手だ。いくら勉強しても単語の意味や発音を覚えることができず、先週も単語のテストで悪い点を取ってしまった。その一方、友達の<ruby>田中<rt>たなか</rt></ruby>さんは習ったばかりの単語もすぐ覚えてしまうくらい、英語が<ruby>得意<rt>とくい</rt></ruby>だ。「どうやっているの。」と質問したら、「覚えた<ruby>い単<rt>じっ</rt></ruby><ruby>語の<rt>さい</rt></ruby>例文を、実際に会話しているような感じで読んでみるといいよ。文字を見るだけだとすぐに忘れちゃうよね。」と答えてくれた。彼の考え方はとてもおもしろいと思った。",
+      "question": {
+        "id": 1,
+        "questionNumber": 1,
+        "stem": "「私」は<ruby>田中<rt>たなか</rt></ruby>さんの何がおもしろいと言っていますか。",
+        "options": [
+          "英語の単語の覚え方",
+          "単語の意味の調べ方",
+          "英語で会話する方法",
+          "単語テストの受け方"
+        ],
+        "correct_answer": 1,
+        "optionsKaisetsu": [
+          {
+            "optionNumber": 1,
+            "text": "<ruby>英語<rt>えいご</rt></ruby>の<ruby>単語<rt>たんご</rt></ruby>の<ruby>覚<rt>おぼ</rt></ruby>え<ruby>方<rt>かた</rt></ruby>",
+            "isCorrect": true,
+            "note": ""
+          },
+          {
+            "optionNumber": 2,
+            "text": "<ruby>単語<rt>たんご</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby>の<ruby>調<rt>しら</rt></ruby>べ<ruby>方<rt>かた</rt></ruby>",
+            "isCorrect": false,
+            "note": "「<ruby>調<rt>しら</rt></ruby>べ<ruby>方<rt>かた</rt></ruby>」については<ruby>言<rt>い</rt></ruby>っていない"
+          },
+          {
+            "optionNumber": 3,
+            "text": "<ruby>英語<rt>えいご</rt></ruby>で<ruby>会話<rt>かいわ</rt></ruby>する<ruby>方法<rt>ほうほう</rt></ruby>",
+            "isCorrect": false,
+            "note": "「<ruby>会話<rt>かいわ</rt></ruby>する<ruby>方法<rt>ほうほう</rt></ruby>」については<ruby>言<rt>い</rt></ruby>っていない"
+          },
+          {
+            "optionNumber": 4,
+            "text": "<ruby>単語<rt>たんご</rt></ruby>テストの<ruby>受<rt>う</rt></ruby>け<ruby>方<rt>かた</rt></ruby>",
+            "isCorrect": false,
+            "note": "「<ruby>受<rt>う</rt></ruby>け<ruby>方<rt>かた</rt></ruby>」については<ruby>言<rt>い</rt></ruby>っていない"
+          }
+        ],
+        "explanation": "【正解】1\n「私」は英語の単語が覚えられずに困って田中さんに相談したところ、田中さんは「覚えたい単語の例文を、実際に会話しているような感じで読んでみるといいよ」という単語の覚え方を教えてくれました。「私」は「彼の考え方はとてもおもしろいと思った」と述べているため、1の「英語の単語の覚え方」が正解です。\n2「単語の意味の調べ方」、3「英語で会話する方法」、4「単語テストの受け方」については本文で言っていません。"
+      }
+    },
+    {
+      "id": 2,
+      "passageNumber": 2,
+      "passageLabel": "(2)",
+      "pageNumber": 2,
+      "bookPage": 243,
+      "pdfPage": 246,
+      "kaisetsuBookPage": 244,
+      "kaisetsuPdfPage": 247,
+      "passageLayout": "essay",
+      "passageText": "3か月前から、食事する回数を一日一回にしている。「一日3回食べないと、体の具合が悪くなる」と子どものころから言われてきたが、それは人によって違うと思う。\n以前は「一日3回しっかりご飯を食べるべき」だと考えていた。しかし、一日中座って仕事をしていて、あまりお腹が空かないときがあったため、お腹が空いたときだけ食べるようにしてみたのだ。すると、自然に体重が減って、体が軽くなった。\n一回の食事で、一日に必要な<ruby>栄養<rt>えいよう</rt></ruby>をとることが必要だし、無理をしたら本当に体の具合が悪くなるので注意が必要だ。でも、今は自分の運動量に合った食事ができているので、これからもこの生活を続けたい。",
+      "question": {
+        "id": 2,
+        "questionNumber": 1,
+        "stem": "食事について、「私」はどのように考えているか。",
+        "options": [
+          "一日3回ご飯を食べるべきだと言われたが、面倒だったら、食べなくてもいい。",
+          "一日3回食べたいが、食事よりも、仕事の方が大切だ。",
+          "一回の食事で<ruby>栄養<rt>えいよう</rt></ruby>をとるのは難しいし、<ruby>健康<rt>けんこう</rt></ruby>に悪いので、一日3回食べた方がいい。",
+          "食事の内容に注意する必要はあるが、一日3回ご飯を食べる必要はない。"
+        ],
+        "correct_answer": 4,
+        "optionsKaisetsu": [
+          {
+            "optionNumber": 1,
+            "text": "<ruby>一日<rt>いちにち</rt></ruby>3<ruby>回<rt>かい</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べるべきだと<ruby>言<rt>い</rt></ruby>われたが、<ruby>面倒<rt>めんどう</rt></ruby>だったら、<ruby>食<rt>た</rt></ruby>べなくてもいい。",
+            "isCorrect": false,
+            "note": "「<ruby>面倒<rt>めんどう</rt></ruby>だったら、<ruby>食<rt>た</rt></ruby>べなくてもいい」とは<ruby>言<rt>い</rt></ruby>っていない"
+          },
+          {
+            "optionNumber": 2,
+            "text": "<ruby>一日<rt>いちにち</rt></ruby>3<ruby>回<rt>かい</rt></ruby><ruby>食<rt>た</rt></ruby>べたいが、<ruby>食事<rt>しょくじ</rt></ruby>よりも、<ruby>仕事<rt>しごと</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>が<ruby>大切<rt>たいせつ</rt></ruby>だ。",
+            "isCorrect": false,
+            "note": "「<ruby>仕事<rt>しごと</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>が<ruby>大切<rt>たいせつ</rt></ruby>だ」とは<ruby>言<rt>い</rt></ruby>っていない"
+          },
+          {
+            "optionNumber": 3,
+            "text": "<ruby>一回<rt>いっかい</rt></ruby>の<ruby>食事<rt>しょくじ</rt></ruby>で<ruby>栄養<rt>えいよう</rt></ruby>をとるのは<ruby>難<rt>むずか</rt></ruby>しいし、<ruby>健康<rt>けんこう</rt></ruby>に<ruby>悪<rt>わる</rt></ruby>いので、<ruby>一日<rt>いちにち</rt></ruby>3<ruby>回<rt>かい</rt></ruby><ruby>食<rt>た</rt></ruby>べた<ruby>方<rt>ほう</rt></ruby>がいい。",
+            "isCorrect": false,
+            "note": "「<ruby>健康<rt>けんこう</rt></ruby>に<ruby>悪<rt>わる</rt></ruby>いので、<ruby>一日<rt>いちにち</rt></ruby>3<ruby>回<rt>かい</rt></ruby><ruby>食<rt>た</rt></ruby>べた<ruby>方<rt>ほう</rt></ruby>がいい」とは<ruby>言<rt>い</rt></ruby>っていない"
+          },
+          {
+            "optionNumber": 4,
+            "text": "<ruby>食事<rt>しょくじ</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>する<ruby>必要<rt>ひつよう</rt></ruby>はあるが、<ruby>一日<rt>いちにち</rt></ruby>3<ruby>回<rt>かい</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる<ruby>必要<rt>ひつよう</rt></ruby>はない。",
+            "isCorrect": true,
+            "note": ""
+          }
+        ],
+        "explanation": "【正解】4\n「私」は「一日3回食べないと、体の具合が悪くなる」というのは「人によって違うと思う」と考え、お腹が空いたときだけ（一日一回）食べるようにしたところ体重が減って体が軽くなったと述べています。また「一回の食事で、一日に必要な栄養をとることが必要」と食事の内容に注意しつつ、「今は自分の運動量に合った食事ができているので、これからもこの生活を続けたい」と考えています。したがって、4の「食事の内容に注意する必要はあるが、一日3回ご飯を食べる必要はない」が正解です。"
+      }
+    },
+    {
+      "id": 3,
+      "passageNumber": 3,
+      "passageLabel": "(3)",
+      "pageNumber": 3,
+      "bookPage": 245,
+      "pdfPage": 248,
+      "kaisetsuBookPage": 246,
+      "kaisetsuPdfPage": 249,
+      "passageLayout": "email",
+      "preText": "これは会社の<ruby>先輩<rt>せんぱい</rt></ruby>からジョンへさんに<ruby>届<rt>とど</rt></ruby>いたメールである。",
+      "passageText": "<div class=\"p-4 border border-gray-400 dark:border-gray-600 rounded bg-amber-50/20 dark:bg-slate-900/60 leading-relaxed\">\n  <p class=\"mb-4\">ジョンへさん</p>\n  <p class=\"mb-3\">来月の新入社員<ruby>歓迎会<rt>かんげいかい</rt></ruby>の<ruby>準備<rt>じゅんび</rt></ruby>を、ジョンへさんにお願いします。<br/>\n<ruby>資料<rt>しりょう</rt></ruby>と参加者のリストを送りますので、<ruby>確認<rt>かくにん</rt></ruby>して、みなさんへの<ruby>案内<rt>あんない</rt></ruby>の手紙を作ってください。<ruby>案内<rt>あんない</rt></ruby>には、会場の場所、時間、会費について書いてください。</p>\n  <p class=\"mb-3\">また、会場もまだ予約できていません。場所は昨年と同じホテルでいいので、午前中に予約をしておいてください。<br/>\n<ruby>案内状<rt>あんないじょう</rt></ruby>の作成の手伝いが必要な場合は、今日の夜までに連絡をお願いします。</p>\n  <p class=\"mb-4\">もし、わからないことがあれば何でも聞いてください。</p>\n  <p class=\"text-right\"><ruby>山本<rt>やまもと</rt></ruby></p>\n</div>",
+      "question": {
+        "id": 3,
+        "questionNumber": 1,
+        "stem": "ジョンへさんがこのメールで<ruby>頼<rt>たの</rt></ruby>まれていることはどれか。",
+        "options": [
+          "新入社員<ruby>歓迎会<rt>かんげいかい</rt></ruby>の<ruby>案内状<rt>あんないじょう</rt></ruby>に、会場の場所のほかに参加者の名前も書く。",
+          "新入社員<ruby>歓迎会<rt>かんげいかい</rt></ruby>の会場を予約したあとで、参加者に送る<ruby>案内状<rt>あんないじょう</rt></ruby>を作る。",
+          "新入社員<ruby>歓迎会<rt>かんげいかい</rt></ruby>の会場を予約したら、<ruby>山本<rt>やまもと</rt></ruby>さんに連絡する。",
+          "新入社員<ruby>歓迎会<rt>かんげいかい</rt></ruby>の<ruby>資料<rt>しりょう</rt></ruby>と参加者を<ruby>山本<rt>やまもと</rt></ruby>さんに連絡して聞く。"
+        ],
+        "optionsPrinted": [
+          "新入社員歓迎会の案内状に、会場の場所のほかに参加者の名前も書く。",
+          "新入社員歓迎会の会場を予約したあとで、参加者に送る案内状を作る。",
+          "新入社員歓迎会の会場を予約したら、夜までに山本さんに連絡する。",
+          "新入社員歓迎会の資料と参加者を山本さんに連絡して聞く。"
+        ],
+        "correct_answer": 2,
+        "optionsKaisetsu": [
+          {
+            "optionNumber": 1,
+            "text": "<ruby>新入社員歓迎会<rt>しんにゅうしゃいんかんげいかい</rt></ruby>の<ruby>案内状<rt>あんないじょう</rt></ruby>に、<ruby>会場<rt>かいじょう</rt></ruby>の<ruby>場所<rt>ばしょ</rt></ruby>のほかに<ruby>参加者<rt>さんかしゃ</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>も<ruby>書<rt>か</rt></ruby>く。",
+            "isCorrect": false,
+            "note": "<ruby>案内状<rt>あんないじょう</rt></ruby>に<ruby>書<rt>か</rt></ruby>くのは、「<ruby>会場<rt>かいじょう</rt></ruby>の<ruby>場所<rt>ばしょ</rt></ruby>」「<ruby>時間<rt>じかん</rt></ruby>」「<ruby>会費<rt>かいひ</rt></ruby>」"
+          },
+          {
+            "optionNumber": 2,
+            "text": "<ruby>新入社員歓迎会<rt>しんにゅうしゃいんかんげいかい</rt></ruby>の<ruby>会場<rt>かいじょう</rt></ruby>を<ruby>予約<rt>よやく</rt></ruby>したあとで、<ruby>参加者<rt>さんかしゃ</rt></ruby>に<ruby>送<rt>おく</rt></ruby>る<ruby>案内状<rt>あんないじょう</rt></ruby>を<ruby>作<rt>つく</rt></ruby>る。",
+            "isCorrect": true,
+            "note": ""
+          },
+          {
+            "optionNumber": 3,
+            "text": "<ruby>新入社員歓迎会<rt>しんにゅうしゃいんかんげいかい</rt></ruby>の<ruby>会場<rt>かいじょう</rt></ruby>を<ruby>予約<rt>よやく</rt></ruby>したら、<ruby>夜<rt>よる</rt></ruby>までに<ruby>山本<rt>やまもと</rt></ruby>さんに<ruby>連絡<rt>れんらく</rt></ruby>する。",
+            "isCorrect": false,
+            "note": "<ruby>手伝<rt>てつだ</rt></ruby>いが<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>場合<rt>ばあい</rt></ruby>だけ、<ruby>山本<rt>やまもと</rt></ruby>さんに<ruby>連絡<rt>れんらく</rt></ruby>する"
+          },
+          {
+            "optionNumber": 4,
+            "text": "<ruby>新入社員歓迎会<rt>しんにゅうしゃいんかんげいかい</rt></ruby>の<ruby>資料<rt>しりょう</rt></ruby>と<ruby>参加者<rt>さんかしゃ</rt></ruby>を<ruby>山本<rt>やまもと</rt></ruby>さんに<ruby>連絡<rt>れんらく</rt></ruby>して<ruby>聞<rt>き</rt></ruby>く。",
+            "isCorrect": false,
+            "note": "「<ruby>山本<rt>やまもと</rt></ruby>さんに<ruby>連絡<rt>れんらく</rt></ruby>して<ruby>聞<rt>き</rt></ruby>く」ではなく、メールといっしょに<ruby>届<rt>とど</rt></ruby>いている"
+          }
+        ],
+        "explanation": "【正解】2\nメール本文では、案内状には「会場の場所、時間、会費について書いてください」とあり、会場はまだ予約できていないので「午前中に予約をしておいてください」と指示されています。案内状には会場の場所を書く必要があるため、まず会場を予約したあとで案内状を作成することになります。したがって、2の「新入社員歓迎会の会場を予約したあとで、参加者に送る案内状を作る」が正解です。\n1：案内状に書くのは「会場の場所」「時間」「会費」であり、参加者の名前ではありません。\n3：山本さんに連絡するのは「案内状の作成の手伝いが必要な場合」だけです。\n4：資料と参加者のリストはメールと一緒に届いています。"
+      }
+    },
+    {
+      "id": 4,
+      "passageNumber": 4,
+      "passageLabel": "(4)",
+      "pageNumber": 4,
+      "bookPage": 247,
+      "pdfPage": 250,
+      "kaisetsuBookPage": 248,
+      "kaisetsuPdfPage": 251,
+      "passageLayout": "notice",
+      "preText": "これは図書館にはってあるお知らせである。",
+      "passageText": "<div class=\"p-4 border border-gray-400 dark:border-gray-600 rounded bg-amber-50/20 dark:bg-slate-900/60 leading-relaxed\">\n  <p class=\"mb-4 font-bold\">利用社のみなさんへ</p>\n  <p class=\"mb-3\">森図書館では、月に3回『映画会』を行っています。<br/>\n週末は、映画会のあと『おはなし会』もあります。お菓子を食べながら映画について話しましょう。日程は以下の通りです。</p>\n  <div class=\"my-4 pl-2 font-mono text-sm md:text-base space-y-1\">\n    <div>11月13日（土）13：30〜16：30（森図書館一階　子どもの<ruby>部屋<rt>へや</rt></ruby>）</div>\n    <div>11月21日（日）15：30〜17：30（森図書館三階　子どもの<ruby>部屋<rt>へや</rt></ruby>）</div>\n    <div>11月29日（月）10：30〜12：30（森図書館三階　会議室）</div>\n  </div>\n  <p>また、森図書館二階のまんがの<ruby>部屋<rt>へや</rt></ruby>では交流会を行っていますので、間違えないようお気を付けください。</p>\n</div>",
+      "question": {
+        "id": 4,
+        "questionNumber": 1,
+        "stem": "おはなし会に参加するにはどこに行けばよいですか。",
+        "options": [
+          "一階子どもの<ruby>部屋<rt>へや</rt></ruby>か三階子どもの<ruby>部屋<rt>へや</rt></ruby>",
+          "三階会議室",
+          "一階子どもの<ruby>部屋<rt>へや</rt></ruby>か三階会議室",
+          "二階のまんがの<ruby>部屋<rt>へや</rt></ruby>"
+        ],
+        "correct_answer": 1,
+        "optionsKaisetsu": [
+          {
+            "optionNumber": 1,
+            "text": "<ruby>一階<rt>いっかい</rt></ruby>子どもの<ruby>部屋<rt>へや</rt></ruby>か<ruby>三階<rt>さんがい</rt></ruby>子どもの<ruby>部屋<rt>へや</rt></ruby>",
+            "isCorrect": true,
+            "note": ""
+          },
+          {
+            "optionNumber": 2,
+            "text": "<ruby>三階会議室<rt>さんがいかいぎしつ</rt></ruby>",
+            "isCorrect": false,
+            "note": "「<ruby>三階会議室<rt>さんがいかいぎしつ</rt></ruby>」で「<ruby>映画会<rt>えいがかい</rt></ruby>」を<ruby>行<rt>おこな</rt></ruby>う<ruby>日<rt>ひ</rt></ruby>は<ruby>月曜日<rt>げつようび</rt></ruby>なので、「おはなし<ruby>会<rt>かい</rt></ruby>」は<ruby>行<rt>おこな</rt></ruby>われない"
+          },
+          {
+            "optionNumber": 3,
+            "text": "<ruby>一階<rt>いっかい</rt></ruby>子どもの<ruby>部屋<rt>へや</rt></ruby>か<ruby>三階会議室<rt>さんがいかいぎしつ</rt></ruby>",
+            "isCorrect": false,
+            "note": "「<ruby>三階会議室<rt>さんがいかいぎしつ</rt></ruby>」で「<ruby>映画会<rt>えいがかい</rt></ruby>」を<ruby>行<rt>おこな</rt></ruby>う<ruby>日<rt>ひ</rt></ruby>は<ruby>月曜日<rt>げつようび</rt></ruby>なので、「おはなし<ruby>会<rt>かい</rt></ruby>」は<ruby>行<rt>おこな</rt></ruby>われない"
+          },
+          {
+            "optionNumber": 4,
+            "text": "<ruby>二階<rt>にかい</rt></ruby>のまんがの<ruby>部屋<rt>へや</rt></ruby>",
+            "isCorrect": false,
+            "note": "「<ruby>二階<rt>にかい</rt></ruby>のまんがの<ruby>部屋<rt>へや</rt></ruby>」は、<ruby>交流会<rt>こうりゅうかい</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う<ruby>場所<rt>ばしょ</rt></ruby>"
+          }
+        ],
+        "explanation": "【正解】1\nお知らせには「週末は、映画会のあと『おはなし会』もあります」と書かれています。日程を見ると、週末（土・日）に開催されるのは「11月13日（土）（森図書館一階 子どもの部屋）」と「11月21日（日）（森図書館三階 子どもの部屋）」です。11月29日（月）は月曜日のためおはなし会は行われません。また「二階のまんがの部屋」は交流会を行う場所です。したがって、1の「一階子どもの部屋か三階子どもの部屋」が正解です。"
+      }
+    }
+  ]
+}

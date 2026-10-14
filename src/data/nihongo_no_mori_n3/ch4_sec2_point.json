@@ -1,0 +1,304 @@
+{
+  "bookId": "nihongo-no-mori-n3",
+  "bookTitle": "JLPT N3 この一冊で合格する",
+  "chapter": 4,
+  "chapterTitle": "第4章 聴解",
+  "sectionId": "ch4-point",
+  "sectionTitle": "問題2 ポイント理解",
+  "instruction": "<ruby>問題<rt>もんだい</rt></ruby>2では、まず<ruby>質問<rt>しつもん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてください。そのあと、<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>見<rt>み</rt></ruby>てください。<ruby>読<rt>よ</rt></ruby>む<ruby>時間<rt>じかん</rt></ruby>があります。それから<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、<ruby>問題用紙<rt>もんだいようし</rt></ruby>の1から4の<ruby>中<rt>なか</rt></ruby>から、<ruby>最<rt>もっと</rt></ruby>もよいものを<ruby>一<rt>ひと</rt></ruby>つえらんでください。",
+  "groupAudio": "/audio/nihongo_no_mori_n3/問題2　1番-6番.mp3",
+  "totalQuestions": 7,
+  "pages": [
+    {
+      "pageNumber": 1,
+      "title": "問題2 ポイント理解",
+      "instruction": "<ruby>問題<rt>もんだい</rt></ruby>2では、まず<ruby>質問<rt>しつもん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてください。そのあと、<ruby>問題用紙<rt>もんだいようし</rt></ruby>を<ruby>見<rt>み</rt></ruby>てください。<ruby>読<rt>よ</rt></ruby>む<ruby>時間<rt>じかん</rt></ruby>があります。それから<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、<ruby>問題用紙<rt>もんだいようし</rt></ruby>の1から4の<ruby>中<rt>なか</rt></ruby>から、<ruby>最<rt>もっと</rt></ruby>もよいものを<ruby>一<rt>ひと</rt></ruby>つえらんでください。",
+      "questions": [
+        {
+          "id": "ch4-m2-ex",
+          "questionNumber": "例",
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題2　1番-6番.mp3",
+          "situation": "<ruby>大学<rt>だいがく</rt></ruby>で、<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>と<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>話<rt>はな</rt></ruby>しています。<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はどうして<ruby>元気<rt>げんき</rt></ruby>がないのですか。",
+          "stem": "<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はどうして<ruby>元気<rt>げんき</rt></ruby>がないのですか。",
+          "script": [
+            {
+              "speaker": "男",
+              "text": "どうしたの？なんか<ruby>元気<rt>げんき</rt></ruby>がないね。<ruby>最近<rt>さいきん</rt></ruby>、<ruby>宿題<rt>しゅくだい</rt></ruby>が<ruby>多<rt>おお</rt></ruby>くてあまり<ruby>寝<rt>ね</rt></ruby>ていないんじゃない？"
+            },
+            {
+              "speaker": "女",
+              "text": "それはいつものことだから<ruby>慣<rt>な</rt></ruby>れたよ。<ruby>最近<rt>さいきん</rt></ruby>アルバイトを<ruby>始<rt>はじ</rt></ruby>めたって<ruby>話<rt>はな</rt></ruby>したと<ruby>思<rt>おも</rt></ruby>うんだけど。"
+            },
+            {
+              "speaker": "男",
+              "text": "ああ、パン<ruby>屋<rt>や</rt></ruby>さんの。<ruby>残<rt>のこ</rt></ruby>ったパンが<ruby>無料<rt>むりょう</rt></ruby>でもらえてうれしいって<ruby>言<rt>い</rt></ruby>ってたよね。"
+            },
+            {
+              "speaker": "女",
+              "text": "でも、<ruby>店<rt>みせ</rt></ruby>が<ruby>人気<rt>にんき</rt></ruby>すぎて<ruby>忙<rt>いそが</rt></ruby>しいから<ruby>大変<rt>たいへん</rt></ruby>なんだよ。もう<ruby>辞<rt>や</rt></ruby>めようかな。"
+            },
+            {
+              "speaker": "男",
+              "text": "ああ、わかった。<ruby>彼氏<rt>かれし</rt></ruby>に<ruby>会<rt>あ</rt></ruby>う<ruby>時間<rt>じかん</rt></ruby>が<ruby>少<rt>すく</rt></ruby>なくなって<ruby>嫌<rt>いや</rt></ruby>なんでしょ。"
+            },
+            {
+              "speaker": "女",
+              "text": "それは<ruby>関係<rt>かんけい</rt></ruby>ないよ、<ruby>毎日<rt>まいにち</rt></ruby><ruby>連絡<rt>れんらく</rt></ruby>してるし。ああ、アルバイトのことを<ruby>考<rt>かんが</rt></ruby>えてたら<ruby>気分<rt>きぶん</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くなっちゃう。"
+            }
+          ],
+          "options": [
+            "<ruby>宿題<rt>しゅくだい</rt></ruby>が<ruby>多<rt>おお</rt></ruby>くて<ruby>寝<rt>ね</rt></ruby>ていないから",
+            "アルバイトがいそがしいから",
+            "<ruby>彼氏<rt>かれし</rt></ruby>に<ruby>会<rt>あ</rt></ruby>えないから",
+            "<ruby>気分<rt>きぶん</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>いから"
+          ],
+          "correct_answer": 2,
+          "explanation": "<b>【正解】2</b><br/>女の人は「店が人気すぎて忙しいから大変なんだよ。もう辞めようかな」「アルバイトのことを考えてたら気分が悪くなっちゃう」と言っています。宿題や彼氏は直接の原因ではないと否定しています。したがって、元気がない理由は「アルバイトがいそがしいから」（2）です。"
+        },
+        {
+          "id": "ch4-m2-q1",
+          "questionNumber": 1,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題2　1番.mp3",
+          "situation": "<ruby>大学<rt>だいがく</rt></ruby>で、<ruby>女<rt>おんな</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>と<ruby>男<rt>おとこ</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>が<ruby>話<rt>はな</rt></ruby>しています。<ruby>女<rt>おんな</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>はこの<ruby>男<rt>おとこ</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>のことでどんなことを<ruby>心配<rt>しんぱい</rt></ruby>していますか。",
+          "stem": "<ruby>女<rt>おんな</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>はこの<ruby>男<rt>おとこ</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>のことでどんなことを<ruby>心配<rt>しんぱい</rt></ruby>していますか。",
+          "script": [
+            {
+              "speaker": "女の学生",
+              "text": "<ruby>上野<rt>うえの</rt></ruby>さん、<ruby>最近<rt>さいきん</rt></ruby>クラブ<ruby>活動<rt>かつどう</rt></ruby>でうまくいってないみたいだね。<ruby>昨日<rt>きのう</rt></ruby>も<ruby>練習<rt>れんしゅう</rt></ruby><ruby>中<rt>ちゅう</rt></ruby>に<ruby>転<rt>ころ</rt></ruby>んだって<ruby>山内<rt>やまうち</rt></ruby>さんから<ruby>聞<rt>き</rt></ruby>いたよ。"
+            },
+            {
+              "speaker": "男の学生",
+              "text": "でもまあ、そんなにひどいけがじゃないから。"
+            },
+            {
+              "speaker": "女の学生",
+              "text": "<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>？<ruby>実<rt>じつ</rt></ruby>はそれが<ruby>心配<rt>しんぱい</rt></ruby>だったわけじゃなくてね。"
+            },
+            {
+              "speaker": "男の学生",
+              "text": "うん。"
+            },
+            {
+              "speaker": "女の学生",
+              "text": "<ruby>山内<rt>やまうち</rt></ruby>さんが、<ruby>上野<rt>うえの</rt></ruby>さんはあまり<ruby>寝<rt>ね</rt></ruby>てないって<ruby>言<rt>い</rt></ruby>ってたよ。<ruby>夜<rt>よる</rt></ruby><ruby>遅<rt>おそ</rt></ruby>くまで<ruby>起<rt>お</rt></ruby>きているの？"
+            },
+            {
+              "speaker": "男の学生",
+              "text": "うん、もうすぐ3<ruby>年生<rt>ねんせい</rt></ruby>になるし、<ruby>進学<rt>しんがく</rt></ruby>について<ruby>考<rt>かんが</rt></ruby>えることが<ruby>増<rt>ふ</rt></ruby>えてね。"
+            },
+            {
+              "speaker": "女の学生",
+              "text": "<ruby>学校<rt>がっこう</rt></ruby>の<ruby>勉強<rt>べんきょう</rt></ruby>に<ruby>集中<rt>しゅうちゅう</rt></ruby>できなくて、<ruby>成績<rt>せいせき</rt></ruby>が<ruby>落<rt>お</rt></ruby>ちてしまうかもしれないよ。<ruby>先生<rt>せんせい</rt></ruby>や<ruby>友達<rt>ともだち</rt></ruby>に<ruby>相談<rt>そうだん</rt></ruby>してみたらどう？"
+            },
+            {
+              "speaker": "男の学生",
+              "text": "そうだね、ありがとう。"
+            }
+          ],
+          "options": [
+            "けがをしたこと",
+            "<ruby>眠<rt>ねむ</rt></ruby>れていないこと",
+            "<ruby>進学<rt>しんがく</rt></ruby>できなかったこと",
+            "<ruby>成績<rt>せいせき</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くなったこと"
+          ],
+          "correct_answer": 2,
+          "explanation": "<b>【正解】2</b><br/>女の学生は「けがが心配だったわけじゃなくて」「上野さんはあまり寝てないって言ってたよ。夜遅くまで起きているの？」と述べており、男の学生が睡眠不足（眠れていないこと）を心配しています。したがって正解は2です。"
+        },
+        {
+          "id": "ch4-m2-q2",
+          "questionNumber": 2,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題2　2番.mp3",
+          "situation": "<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>と<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>話<rt>はな</rt></ruby>しています。<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は、<ruby>美術館<rt>びじゅつかん</rt></ruby>に<ruby>行<rt>い</rt></ruby>って<ruby>何<rt>なに</rt></ruby>がよかったと<ruby>言<rt>い</rt></ruby>っていますか。",
+          "stem": "<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は、<ruby>美術館<rt>びじゅつかん</rt></ruby>に<ruby>行<rt>い</rt></ruby>って<ruby>何<rt>なに</rt></ruby>がよかったと<ruby>言<rt>い</rt></ruby>っていますか。",
+          "script": [
+            {
+              "speaker": "女",
+              "text": "<ruby>昨日<rt>きのう</rt></ruby>、<ruby>東京<rt>とうきょう</rt></ruby>に<ruby>新<rt>あたら</rt></ruby>しくできた<ruby>美術館<rt>びじゅつかん</rt></ruby>に<ruby>行<rt>い</rt></ruby>ったんだけど、とても<ruby>感動<rt>かんどう</rt></ruby>したの。"
+            },
+            {
+              "speaker": "男",
+              "text": "あそこ、<ruby>自然<rt>しぜん</rt></ruby>に<ruby>囲<rt>かこ</rt></ruby>まれていて<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>くんだってね。<ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>絵<rt>え</rt></ruby>はたくさん<ruby>飾<rt>かざ</rt></ruby>ってあった？"
+            },
+            {
+              "speaker": "女",
+              "text": "みんなが<ruby>知<rt>し</rt></ruby>っているような<ruby>絵<rt>え</rt></ruby>はあまりなくて、<ruby>場所<rt>ばしょ</rt></ruby>も<ruby>大<rt>おお</rt></ruby>きい<ruby>道路<rt>どうろ</rt></ruby>が<ruby>近<rt>ちか</rt></ruby>くにあったからそんなに<ruby>静<rt>しず</rt></ruby>かではなかったよ。でも、<ruby>建物<rt>たてもの</rt></ruby>がすごくかっこよくて、<ruby>作品<rt>さくひん</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つひとつの<ruby>絵<rt>え</rt></ruby>に<ruby>集中<rt>しゅうちゅう</rt></ruby>できるようにくふうされたデザインになっていて。"
+            },
+            {
+              "speaker": "男",
+              "text": "へえ、<ruby>気<rt>き</rt></ruby>になるな。"
+            },
+            {
+              "speaker": "女",
+              "text": "<ruby>毎週<rt>まいしゅう</rt></ruby><ruby>日曜日<rt>にちようび</rt></ruby>は<ruby>美術館<rt>びじゅつかん</rt></ruby>に<ruby>飾<rt>かざ</rt></ruby>られている<ruby>絵<rt>え</rt></ruby>のポスターがもらえるみたいよ。"
+            },
+            {
+              "speaker": "男",
+              "text": "それは<ruby>行<rt>い</rt></ruby>ってみないとね。"
+            }
+          ],
+          "options": [
+            "<ruby>自然<rt>しぜん</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いところ",
+            "<ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>絵<rt>え</rt></ruby>がたくさんあるところ",
+            "<ruby>建物<rt>たてもの</rt></ruby>がくふうされているところ",
+            "ポスターがもらえるところ"
+          ],
+          "correct_answer": 3,
+          "explanation": "<b>【正解】3</b><br/>女の人は男の人の想像（自然が多い、有名な絵がある）を否定し、「でも、建物がすごくかっこよくて、作品の一つひとつの絵に集中できるようにくふうされたデザインになっていて」と評価しています。したがって正解は3です。"
+        },
+        {
+          "id": "ch4-m2-q3",
+          "questionNumber": 3,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題2　3番.mp3",
+          "situation": "<ruby>留守番電話<rt>るすばんでんわ</rt></ruby>のメッセージを<ruby>聞<rt>き</rt></ruby>いています。<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はどうして<ruby>会議<rt>かいぎ</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>に<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>いませんか。",
+          "stem": "<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はどうして<ruby>会議<rt>かいぎ</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>に<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>いませんか。",
+          "script": [
+            {
+              "speaker": "男（留守電）",
+              "text": "もしもし、<ruby>鈴木<rt>すずき</rt></ruby>です。<ruby>明日<rt>あした</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>なんだけど、<ruby>少<rt>すこ</rt></ruby>し<ruby>遅<rt>おく</rt></ruby>れそうで。<ruby>急<rt>きゅう</rt></ruby>に<ruby>明日<rt>あした</rt></ruby>の<ruby>午前<rt>ごぜん</rt></ruby>に出張先での<ruby>予定<rt>よてい</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えてね。<ruby>社長<rt>しゃちょう</rt></ruby>が、<ruby>大事<rt>だいじ</rt></ruby>なお<ruby>客<rt>きゃく</rt></ruby>さんだから<ruby>帰<rt>かえ</rt></ruby>りの<ruby>飛行機<rt>ひこうき</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>を<ruby>遅<rt>おく</rt></ruby>らせてでも<ruby>行<rt>い</rt></ruby>ってくれって。あと、<ruby>部長<rt>ぶちょう</rt></ruby>と<ruby>大事<rt>だいじ</rt></ruby>な<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>いがあって、<ruby>夕方<rt>ゆうがた</rt></ruby>にある<ruby>新入社員<rt>しんにゅうしゃいん</rt></ruby>の<ruby>教育会<rt>きょういくかい</rt></ruby>に<ruby>遅<rt>おく</rt></ruby>れて<ruby>参加<rt>さんか</rt></ruby>するって<ruby>話<rt>はな</rt></ruby>してたけど、<ruby>教育会<rt>きょういくかい</rt></ruby>のあとにすることになったから、<ruby>最初<rt>さいしょ</rt></ruby>から<ruby>出<rt>で</rt></ruby>られることになったよ。<ruby>悪<rt>わる</rt></ruby>いんだけど、よろしくね。"
+            }
+          ],
+          "options": [
+            "しゅっちょうのよていがかわったから",
+            "<ruby>社長<rt>しゃちょう</rt></ruby>がひこうきに<ruby>乗<rt>の</rt></ruby>れなかったから",
+            "<ruby>部長<rt>ぶちょう</rt></ruby>と<ruby>話<rt>はな</rt></ruby>すから",
+            "しんにゅうしゃいんのきょういくかいがあるから"
+          ],
+          "correct_answer": 1,
+          "explanation": "<b>【正解】1</b><br/>鈴木さんは「急に明日の午前に出張先での予定が増えてね、社長が帰りの飛行機の時間を遅らせてでも行ってくれって」と説明しています。つまり「出張の予定が変わったから」（1）が会議に間に合わない理由です。"
+        },
+        {
+          "id": "ch4-m2-q4",
+          "questionNumber": 4,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題2　4番.mp3",
+          "situation": "テレビで、ある<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>について<ruby>話<rt>はな</rt></ruby>しています。この<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>の<ruby>何<rt>なに</rt></ruby>が<ruby>特徴<rt>とくちょう</rt></ruby>だと<ruby>言<rt>い</rt></ruby>っていますか。",
+          "stem": "この<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>の<ruby>何<rt>なに</rt></ruby>が<ruby>特徴<rt>とくちょう</rt></ruby>だと<ruby>言<rt>い</rt></ruby>っていますか。",
+          "script": [
+            {
+              "speaker": "男（テレビ）",
+              "text": "<ruby>皆<rt>みな</rt></ruby>さん、<ruby>今<rt>いま</rt></ruby><ruby>人気<rt>にんき</rt></ruby>のこの<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>を<ruby>知<rt>し</rt></ruby>っていますか。とても<ruby>便利<rt>べんり</rt></ruby>だと<ruby>話題<rt>わだい</rt></ruby>になっているんです。<ruby>最近<rt>さいきん</rt></ruby>の<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>は、たくさんのゲームをすることができたり、<ruby>道<rt>みち</rt></ruby>がわからなくなってしまったときに<ruby>地図<rt>ちず</rt></ruby>を<ruby>見<rt>み</rt></ruby>ることができます。それに、どこにいても<ruby>本<rt>ほん</rt></ruby>が<ruby>読<rt>よ</rt></ruby>めるようになりました。この<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>はそれだけではなく、<ruby>家<rt>いえ</rt></ruby>のかぎにもなるんです。こんな<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>は、<ruby>今<rt>いま</rt></ruby>までにありませんでしたよね。かぎを<ruby>持<rt>も</rt></ruby>つ<ruby>必要<rt>ひつよう</rt></ruby>がなくなっていいですね。"
+            }
+          ],
+          "options": [
+            "<ruby>地図<rt>ちず</rt></ruby>が<ruby>見<rt>み</rt></ruby>られる",
+            "どこでも<ruby>本<rt>ほん</rt></ruby>が<ruby>読<rt>よ</rt></ruby>める",
+            "<ruby>家<rt>いえ</rt></ruby>のかぎになる",
+            "いろいろなゲームができる"
+          ],
+          "correct_answer": 3,
+          "explanation": "<b>【正解】3</b><br/>ゲームや地図、読書は最近の一般的な携帯電話にもある機能として挙げられており、この製品独自の他にはない特徴として「それだけではなく、家のかぎにもなるんです。こんな携帯電話は今までありませんでしたよね」と強調しています。したがって正解は3です。"
+        },
+        {
+          "id": "ch4-m2-q5",
+          "questionNumber": 5,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題2　5番.mp3",
+          "situation": "<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>と<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が、<ruby>楽器屋<rt>がっきや</rt></ruby>について<ruby>話<rt>はな</rt></ruby>しています。<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はこの<ruby>楽器屋<rt>がっきや</rt></ruby>の<ruby>何<rt>なに</rt></ruby>が<ruby>一番<rt>いちばん</rt></ruby><ruby>好<rt>す</rt></ruby>きだと<ruby>言<rt>い</rt></ruby>っていますか。",
+          "stem": "<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はこの<ruby>楽器屋<rt>がっきや</rt></ruby>の<ruby>何<rt>なに</rt></ruby>が<ruby>一番<rt>いちばん</rt></ruby><ruby>好<rt>す</rt></ruby>きだと<ruby>言<rt>い</rt></ruby>っていますか。",
+          "script": [
+            {
+              "speaker": "女",
+              "text": "すぐ<ruby>近<rt>ちか</rt></ruby>くに、<ruby>楽器屋<rt>がっきや</rt></ruby>があるので<ruby>少<rt>すこ</rt></ruby>し<ruby>寄<rt>よ</rt></ruby>ってもいいですか。"
+            },
+            {
+              "speaker": "男",
+              "text": "あ、<ruby>森<rt>もり</rt></ruby><ruby>楽器屋<rt>がっきや</rt></ruby>ですよね。<ruby>私<rt>わたし</rt></ruby>もよく<ruby>行<rt>い</rt></ruby>くんですよ。"
+            },
+            {
+              "speaker": "女",
+              "text": "そうなんですか！<ruby>実<rt>じつ</rt></ruby>はずっと<ruby>行<rt>い</rt></ruby>ってみたくて。"
+            },
+            {
+              "speaker": "男",
+              "text": "<ruby>楽器<rt>がっき</rt></ruby>の<ruby>種類<rt>しゅるい</rt></ruby>がたくさんあるので<ruby>選<rt>えら</rt></ruby>ぶのには<ruby>時間<rt>じかん</rt></ruby>がかかりますが、<ruby>日本<rt>にほん</rt></ruby>ではあまり<ruby>見<rt>み</rt></ruby>ないような<ruby>楽器<rt>がっき</rt></ruby>もあっておもしろいんですよ。それを<ruby>見<rt>み</rt></ruby>るのが<ruby>楽<rt>たの</rt></ruby>しみで、つい<ruby>仕事<rt>しごと</rt></ruby><ruby>帰<rt>がえ</rt></ruby>りに<ruby>寄<rt>よ</rt></ruby>っちゃうんですよ。"
+            },
+            {
+              "speaker": "女",
+              "text": "そうなんですか。<ruby>値段<rt>ねだん</rt></ruby>はどうですか。"
+            },
+            {
+              "speaker": "男",
+              "text": "<ruby>値段<rt>ねだん</rt></ruby>は<ruby>普通<rt>ふつう</rt></ruby>です。でも、<ruby>人気<rt>にんき</rt></ruby>のある<ruby>楽器<rt>がっき</rt></ruby>しか<ruby>置<rt>お</rt></ruby>いてないので、どれを<ruby>買<rt>か</rt></ruby>っても<ruby>間違<rt>まちが</rt></ruby>いないと<ruby>思<rt>おも</rt></ruby>いますよ。あと、<ruby>無料<rt>むりょう</rt></ruby>で<ruby>楽器<rt>がっき</rt></ruby>の<ruby>掃除<rt>そうじ</rt></ruby>をしてくれるサービスもあるんですよ。まあ、<ruby>掃除<rt>そうじ</rt></ruby>は<ruby>自分<rt>じぶん</rt></ruby>でもできると<ruby>思<rt>おも</rt></ruby>うんですけど。"
+            },
+            {
+              "speaker": "女",
+              "text": "なるほど。じゃあ<ruby>今度<rt>こんど</rt></ruby>ゆっくりその<ruby>店<rt>みせ</rt></ruby>でギターを<ruby>選<rt>えら</rt></ruby>ぼうと<ruby>思<rt>おも</rt></ruby>います。"
+            }
+          ],
+          "options": [
+            "めずらしいがっきがあるところ",
+            "ねだんが<ruby>高<rt>たか</rt></ruby>いところ",
+            "たくさんギターをおいているところ",
+            "むりょうのサービスがあるところ"
+          ],
+          "correct_answer": 1,
+          "explanation": "<b>【正解】1</b><br/>男の人は「日本ではあまり見ないような楽器もあっておもしろいんですよ。それを見るのが楽しみでつい仕事帰りに寄っちゃうんです」と述べており、「めずらしい楽器があるところ」（1）が一番好きな点です。"
+        },
+        {
+          "id": "ch4-m2-q6",
+          "questionNumber": 6,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題2　6番.mp3",
+          "situation": "<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>と<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>会社<rt>かいしゃ</rt></ruby>で<ruby>新<rt>あたら</rt></ruby>しい<ruby>商品<rt>しょうひん</rt></ruby>の<ruby>計画書<rt>けいかくしょ</rt></ruby>について<ruby>話<rt>はな</rt></ruby>しています。<ruby>二人<rt>ふたり</rt></ruby>はこのあとまず<ruby>何<rt>なに</rt></ruby>をしますか。",
+          "stem": "<ruby>二人<rt>ふたり</rt></ruby>はこのあとまず<ruby>何<rt>なに</rt></ruby>をしますか。",
+          "script": [
+            {
+              "speaker": "女",
+              "text": "<ruby>松下<rt>まつした</rt></ruby>くん、この<ruby>前<rt>まえ</rt></ruby><ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>考<rt>かんが</rt></ruby>えた<ruby>新商品<rt>しんしょうひん</rt></ruby>の<ruby>計画書<rt>けいかくしょ</rt></ruby>のことなんだけど。"
+            },
+            {
+              "speaker": "男（松下）",
+              "text": "うん、もうあとは<ruby>提出<rt>ていしゅつ</rt></ruby>するだけだね。"
+            },
+            {
+              "speaker": "女",
+              "text": "それがね、<ruby>部長<rt>ぶちょう</rt></ruby>にどんな<ruby>商品<rt>しょうひん</rt></ruby>を<ruby>計画<rt>けいかく</rt></ruby>しているか<ruby>見<rt>み</rt></ruby>せてくれって<ruby>言<rt>い</rt></ruby>われて<ruby>見<rt>み</rt></ruby>せたんだけど、<ruby>今<rt>いま</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>じゃわかりにくいって<ruby>言<rt>い</rt></ruby>われちゃって。"
+            },
+            {
+              "speaker": "男（松下）",
+              "text": "<ruby>何<rt>なに</rt></ruby>がわかりにくいって？"
+            },
+            {
+              "speaker": "女",
+              "text": "<ruby>二<rt>ふた</rt></ruby>つアドバイスをもらったんだけど、<ruby>一<rt>ひと</rt></ruby>つ<ruby>目<rt>め</rt></ruby>は、すごくおもしろい<ruby>内容<rt>ないよう</rt></ruby>なのに、<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>説明<rt>せつめい</rt></ruby>だけで<ruby>絵<rt>え</rt></ruby>も<ruby>何<rt>なに</rt></ruby>もないから<ruby>商品<rt>しょうひん</rt></ruby>の<ruby>想像<rt>そうぞう</rt></ruby>ができなくてもったいないって。"
+            },
+            {
+              "speaker": "男（松下）",
+              "text": "<ruby>確<rt>たし</rt></ruby>かに、<ruby>絵<rt>え</rt></ruby>を<ruby>入<rt>い</rt></ruby>れないといけないね。"
+            },
+            {
+              "speaker": "女",
+              "text": "そうね。<ruby>二<rt>ふた</rt></ruby>つ<ruby>目<rt>め</rt></ruby>は、<ruby>今<rt>いま</rt></ruby>のままだとアンケートの<ruby>情報<rt>じょうほう</rt></ruby>がまとまってなくて、この<ruby>商品<rt>しょうひん</rt></ruby>がどんな<ruby>人<rt>ひと</rt></ruby>たちに<ruby>向<rt>む</rt></ruby>けて<ruby>作<rt>つく</rt></ruby>られているのかが<ruby>伝<rt>つた</rt></ruby>わらないって。<ruby>松下<rt>まつした</rt></ruby>くん、アンケートの<ruby>内容<rt>ないよう</rt></ruby>、まとめ<ruby>直<rt>なお</rt></ruby>さない？"
+            },
+            {
+              "speaker": "男（松下）",
+              "text": "そうだな、そうしよう。まとめたら、<ruby>商品<rt>しょうひん</rt></ruby>の<ruby>想像<rt>そうぞう</rt></ruby>もしやすくなるだろうから、<ruby>絵<rt>え</rt></ruby>はそのあとに<ruby>考<rt>かんが</rt></ruby>えよう。"
+            },
+            {
+              "speaker": "女",
+              "text": "うん、そうだね。"
+            },
+            {
+              "speaker": "男（松下）",
+              "text": "<ruby>部長<rt>ぶちょう</rt></ruby>に<ruby>僕<rt>ぼく</rt></ruby>からもお<ruby>礼<rt>れい</rt></ruby>を<ruby>言<rt>い</rt></ruby>っておくよ。"
+            }
+          ],
+          "options": [
+            "<ruby>部長<rt>ぶちょう</rt></ruby>にしんしょうひんを<ruby>見<rt>み</rt></ruby>せる",
+            "ちがうしょうひんを<ruby>考<rt>かんが</rt></ruby>える",
+            "しょうひんの<ruby>絵<rt>え</rt></ruby>を入れる",
+            "アンケートのじょうほうをまとめる"
+          ],
+          "correct_answer": 4,
+          "explanation": "<b>【正解】4</b><br/>部長から「絵がない」「アンケート情報がまとまっていない」と2点指摘されましたが、男の人が「まとめたら商品の想像もしやすくなるだろうから、絵はそのあとに考えよう」と提案し、女の人も同意しています。したがって、二人がまず行うのは「アンケートのじょうほうをまとめる」（4）です。"
+        }
+      ],
+      "answers": [
+        2,
+        2,
+        3,
+        1,
+        3,
+        1,
+        4
+      ]
+    }
+  ]
+}

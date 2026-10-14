@@ -1,0 +1,276 @@
+{
+  "bookId": "nihongo-no-mori-n3",
+  "bookTitle": "JLPT N3 この一冊で合格する",
+  "chapter": 3,
+  "chapterTitle": "第3章 読解",
+  "section": 5,
+  "sectionTitle": "問題5 内容理解（中文） (6問)",
+  "sectionDescription": "問題5では、中文（400字程度）を読みます。そして、文章を書いた人の考え、原因や理由についての問題が出ます。内容理解（中文）は2つの大問があり、1つの大問ごとに3つの小問が出ます。",
+  "instruction": "問題5 つぎの（1）と（2）の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+  "totalPages": 2,
+  "totalQuestions": 6,
+  "passages": [
+    {
+      "id": 1,
+      "passageNumber": 1,
+      "passageLabel": "(1)",
+      "pageNumber": 1,
+      "bookPage": 250,
+      "pdfPage": 253,
+      "kaisetsuBookPage": 252,
+      "kaisetsuPdfPage": 255,
+      "passageLayout": "essay",
+      "passageText": "私は電車の旅が好きです。観光地で写真を撮ったり、買い物をしたりするのも好きですが、それだけではなく、電車に乗りながら<ruby>景色<rt>けしき</rt></ruby>を見たり、目的地に着いたら何をするか考えるのが好きなのです。\n\n今日も北駅に向かうために電車に乗りました。しかし、電車が動き出してしばらく経ってから<span class=\"underline decoration-2 underline-offset-4 font-semibold\">①私は大変なことに気づきました</span>。電車は私の行きたい方向と反対に向かって走っていたのです。<ruby>驚<rt>おどろ</rt></ruby>いて、もう一度よく調べると、北駅に行く電車と南駅に行く電車が同じ時間に出発していました。今から<ruby>戻<rt>もど</rt></ruby>っても、北駅へ行く電車が来るのは3時間後でした。\n\nいつも細かい<ruby>確認<rt>かくにん</rt></ruby>を忘れてしまい、目的地に着くまでに時間がかかってしまうのです。道を間違えるたびに<span class=\"underline decoration-2 underline-offset-4 font-semibold\">②そんな自分の性格を直したい</span>と思っています。\n\nしかし、目的地とは違う場所でも新しい発見があります。なので何度道を間違えても、旅が<ruby>嫌<rt>きら</rt></ruby>いになることはないと思います。",
+      "questions": [
+        {
+          "id": 1,
+          "questionNumber": 1,
+          "stem": "①<u>大変なことに気づきました</u>とあるが、どのようなことか。",
+          "options": [
+            "二本の電車が、同じ時間に出発しなかったこと",
+            "乗った電車が、目的地とは反対に進んでいたこと",
+            "乗った電車の出発が、3時間遅れていたこと",
+            "乗っている電車が、しばらく動かなかったこと"
+          ],
+          "correct_answer": 2,
+          "optionsKaisetsu": [
+            {
+              "optionNumber": 1,
+              "text": "<ruby>二本<rt>にほん</rt></ruby>の<ruby>電車<rt>でんしゃ</rt></ruby>が、<ruby>同<rt>おな</rt></ruby>じ<ruby>時間<rt>じかん</rt></ruby>に<ruby>出発<rt>しゅっぱつ</rt></ruby>しなかったこと",
+              "isCorrect": false,
+              "note": "本文では「同じ時間に出発していました」と書かれており、不一致。"
+            },
+            {
+              "optionNumber": 2,
+              "text": "<ruby>乗<rt>の</rt></ruby>った<ruby>電車<rt>でんしゃ</rt></ruby>が、<ruby>目的地<rt>もくてきち</rt></ruby>とは<ruby>反対<rt>はんたい</rt></ruby>に<ruby>進<rt>すす</rt></ruby>んでいたこと",
+              "isCorrect": true,
+              "note": ""
+            },
+            {
+              "optionNumber": 3,
+              "text": "<ruby>乗<rt>の</rt></ruby>った<ruby>電車<rt>でんしゃ</rt></ruby>の<ruby>出発<rt>しゅっぱつ</rt></ruby>が、3<ruby>時間<rt>じかん</rt></ruby><ruby>遅<rt>おく</rt></ruby>れていたこと",
+              "isCorrect": false,
+              "note": "3時間後は次の電車が来る時間であり、出発が遅れたわけではない。"
+            },
+            {
+              "optionNumber": 4,
+              "text": "<ruby>乗<rt>の</rt></ruby>っている<ruby>電車<rt>でんしゃ</rt></ruby>が、しばらく<ruby>動<rt>うご</rt></ruby>かなかったこと",
+              "isCorrect": false,
+              "note": "電車が動かなかったとは書かれていない。"
+            }
+          ],
+          "explanation": "【正解】2\n※「電車は私の行きたい方向と反対に向かって走っていたのです。」が理由だから2が正解。\n本文第2段落に「電車が動き出してしばらく経ってから私は大変なことに気づきました。電車は私の行きたい方向と反対に向かって走っていたのです」と直後に理由が明記されています。"
+        },
+        {
+          "id": 2,
+          "questionNumber": 2,
+          "stem": "②<u>そんな自分の性格を直したい</u>とあるが、それはなぜか。",
+          "options": [
+            "目的地に到着するまで、旅を楽しむことが出来ないから。",
+            "目的地に到着する前に、<ruby>疲<rt>つか</rt></ruby>れて楽しめないから。",
+            "細かい<ruby>確認<rt>かくにん</rt></ruby>を忘れてしまい、目的地になかなか到着できないから。",
+            "細かい<ruby>確認<rt>かくにん</rt></ruby>をしすぎて、目的地に予定より早く到着してしまうから。"
+          ],
+          "correct_answer": 3,
+          "optionsKaisetsu": [
+            {
+              "optionNumber": 1,
+              "text": "<ruby>目的地<rt>もくてきち</rt></ruby>に<ruby>到着<rt>とうちゃく</rt></ruby>するまで、<ruby>旅<rt>たび</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しむことが<ruby>出来<rt>でき</rt></ruby>ないから。",
+              "isCorrect": false,
+              "note": "電車に乗りながら景色を見たり何をするか考えるのが好きとあり、楽しめないわけではない。"
+            },
+            {
+              "optionNumber": 2,
+              "text": "<ruby>目的地<rt>もくてきち</rt></ruby>に<ruby>到着<rt>とうちゃく</rt></ruby>する<ruby>前<rt>まえ</rt></ruby>に、<ruby>疲<rt>つか</rt></ruby>れて<ruby>楽<rt>たの</rt></ruby>しめないから。",
+              "isCorrect": false,
+              "note": "「疲れて楽しめない」とは書かれていない。"
+            },
+            {
+              "optionNumber": 3,
+              "text": "<ruby>細<rt>こま</rt></ruby>かい<ruby>確認<rt>かくにん</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れてしまい、<ruby>目的地<rt>もくてきち</rt></ruby>になかなか<ruby>到着<rt>とうちゃく</rt></ruby>できないから。",
+              "isCorrect": true,
+              "note": ""
+            },
+            {
+              "optionNumber": 4,
+              "text": "<ruby>細<rt>こま</rt></ruby>かい<ruby>確認<rt>かくにん</rt></ruby>をしすぎて、<ruby>目的地<rt>もくてきち</rt></ruby>に<ruby>予定<rt>よてい</rt></ruby>より<ruby>早<rt>はや</rt></ruby>く<ruby>到着<rt>とうちゃく</rt></ruby>してしまうから。",
+              "isCorrect": false,
+              "note": "確認をしすぎたのではなく、忘れて遅くなってしまう。"
+            }
+          ],
+          "explanation": "【正解】3\n※「いつも細かい確認を忘れてしまい、目的地に着くまでに時間がかかってしまうのです。」が理由だから3が正解。\n直前の文で「いつも細かい確認を忘れてしまい、目的地に着くまでに時間がかかってしまうのです。道を間違えるたびにそんな自分の性格を直したいと思っています」と述べています。"
+        },
+        {
+          "id": 3,
+          "questionNumber": 3,
+          "stem": "旅をすることについて「私」はどう思っているか。",
+          "options": [
+            "旅を好きになれるように、新しい発見をしながら旅をするだろう。",
+            "また道を間違えると思うが、これからも楽しく旅をするだろう。",
+            "今度から道を間違えないように、もっと調べてから旅をするだろう。",
+            "今よりも旅が楽しくなるように、時間に注意して旅をするだろう。"
+          ],
+          "correct_answer": 2,
+          "optionsKaisetsu": [
+            {
+              "optionNumber": 1,
+              "text": "<ruby>旅<rt>たび</rt></ruby>を<ruby>好<rt>す</rt></ruby>きになれるように、<ruby>新<rt>あたら</rt></ruby>しい<ruby>発見<rt>はっけん</rt></ruby>をしながら<ruby>旅<rt>たび</rt></ruby>をするだろう。",
+              "isCorrect": false,
+              "note": "「旅を好きになれるように」とは言っていない（もともと旅が好き）。"
+            },
+            {
+              "optionNumber": 2,
+              "text": "また<ruby>道<rt>みち</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>えると<ruby>思<rt>おも</rt></ruby>うが、これからも<ruby>楽<rt>たの</rt></ruby>しく<ruby>旅<rt>たび</rt></ruby>をするだろう。",
+              "isCorrect": true,
+              "note": ""
+            },
+            {
+              "optionNumber": 3,
+              "text": "<ruby>今度<rt>こんど</rt></ruby>から<ruby>道<rt>みち</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>えないように、もっと<ruby>調<rt>しら</rt></ruby>べてから<ruby>旅<rt>たび</rt></ruby>をするだろう。",
+              "isCorrect": false,
+              "note": "「今度から道を間違えないように」とは言っていない。"
+            },
+            {
+              "optionNumber": 4,
+              "text": "<ruby>今<rt>いま</rt></ruby>よりも<ruby>旅<rt>たび</rt></ruby>が<ruby>楽<rt>たの</rt></ruby>しくなるように、<ruby>時間<rt>じかん</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>して<ruby>旅<rt>たび</rt></ruby>をするだろう。",
+              "isCorrect": false,
+              "note": "全部言っていない。"
+            }
+          ],
+          "explanation": "【正解】2\n本文の結びで「目的地とは違う場所でも新しい発見があります。なので何度道を間違えても、旅が嫌いになることはないと思います」と述べており、また道を間違えても楽しく旅を続けるという2が正解です。\n1：「旅を好きになれるように」とは言っていません。\n3：「今度から道を間違えないように」とは言っていません。\n4：時間に注意して旅をするなどは「全部言っていない」ため不適切です。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "passageNumber": 2,
+      "passageLabel": "(2)",
+      "pageNumber": 2,
+      "bookPage": 254,
+      "pdfPage": 257,
+      "kaisetsuBookPage": 256,
+      "kaisetsuPdfPage": 259,
+      "passageLayout": "essay",
+      "passageText": "<ruby>祖母<rt>そぼ</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に買い物に出かけたときのことだ。お店に入ると、<ruby>猫<rt>ねこ</rt></ruby>の形をした物がたくさんかざってあった。それを見た祖母は「<span class=\"underline decoration-2 underline-offset-4 font-semibold\">いいお店だね</span>」と言った。そして、「猫の形のものを置くと、商品が売れるようになるんだよ。」と教えてくれた。\n\n昔から、猫は家の野菜やお米を食べる虫などを<ruby>捕<rt>つか</rt></ruby>まえてくれるいい動物だと言われてきた。それで、猫を<ruby>飼<rt>か</rt></ruby>っていない家でも入り口などに猫の形のものをかざるようになったらしい。特にお店を経営している人は、商売が成功するようにと願って、猫をかざるという。八百屋を経営する祖母も、家のたんすの上に猫を置いていて、「うちの八百屋がうまくいくように」と願っているそうだ。\n\n祖母の話を聞いてから、猫を見るたび、私も猫から守られているように感じる。しかし、本当にそのような効果があるかはわからない。猫がなんでも助けてくれるわけではないし、自分で努力することも必要だと思う。",
+      "questions": [
+        {
+          "id": 4,
+          "questionNumber": 1,
+          "stem": "<ruby>祖母<rt>そぼ</rt></ruby>が<u>いいお店だね</u>と言ったとあるが、どうしてか。",
+          "options": [
+            "店員さんが<ruby>猫<rt>ねこ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>っていたから。",
+            "<ruby>猫<rt>ねこ</rt></ruby>の形の商品が売っていたから。",
+            "商品がたくさん売れたから。",
+            "<ruby>猫<rt>ねこ</rt></ruby>の形をしたものがかざってあったから。"
+          ],
+          "correct_answer": 4,
+          "optionsKaisetsu": [
+            {
+              "optionNumber": 1,
+              "text": "<ruby>店員<rt>てんいん</rt></ruby>さんが<ruby>猫<rt>ねこ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>っていたから。",
+              "isCorrect": false,
+              "note": "店員が猫を飼っているとは言っていない。"
+            },
+            {
+              "optionNumber": 2,
+              "text": "<ruby>猫<rt>ねこ</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>の<ruby>商品<rt>しょうひん</rt></ruby>が<ruby>売<rt>う</rt></ruby>っていたから。",
+              "isCorrect": false,
+              "note": "猫の形の商品を売っていたのではなく、猫の形をした物が飾ってあった。"
+            },
+            {
+              "optionNumber": 3,
+              "text": "<ruby>商品<rt>しょうひん</rt></ruby>がたくさん<ruby>売<rt>う</rt></ruby>れたから。",
+              "isCorrect": false,
+              "note": "お店に入った時点で商品がたくさん売れたからではない。"
+            },
+            {
+              "optionNumber": 4,
+              "text": "<ruby>猫<rt>ねこ</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>をしたものがかざってあったから。",
+              "isCorrect": true,
+              "note": ""
+            }
+          ],
+          "explanation": "【正解】4\n※「お店に入ると、猫の形をした物がたくさんかざってあった。」ことが理由だから4が正解。\n第1段落に「お店に入ると、猫の形をした物がたくさんかざってあった。それを見た祖母は「いいお店だね」と言った」と理由が明確に書かれています。"
+        },
+        {
+          "id": 5,
+          "questionNumber": 2,
+          "stem": "<ruby>祖母<rt>そぼ</rt></ruby>が猫の置物をタンスの上に置くのはなぜか。",
+          "options": [
+            "野菜やお米をたくさん食べたいから。",
+            "<ruby>猫<rt>ねこ</rt></ruby>にたくさんの虫を<ruby>捕<rt>つか</rt></ruby>まえてほしいから。",
+            "商売がうまくいってほしいから。",
+            "必ず店の経営が成功するから。"
+          ],
+          "correct_answer": 3,
+          "optionsKaisetsu": [
+            {
+              "optionNumber": 1,
+              "text": "<ruby>野菜<rt>やさい</rt></ruby>やお<ruby>米<rt>こめ</rt></ruby>をたくさん<ruby>食<rt>た</rt></ruby>べたいから。",
+              "isCorrect": false,
+              "note": "野菜やお米をたくさん食べたいからではない。"
+            },
+            {
+              "optionNumber": 2,
+              "text": "<ruby>猫<rt>ねこ</rt></ruby>にたくさんの<ruby>虫<rt>むし</rt></ruby>を<ruby>捕<rt>つか</rt></ruby>まえてほしいから。",
+              "isCorrect": false,
+              "note": "本物の猫ではなく置物なので、虫を捕まえてほしいからではない。"
+            },
+            {
+              "optionNumber": 3,
+              "text": "<ruby>商売<rt>しょうばい</rt></ruby>がうまくいってほしいから。",
+              "isCorrect": true,
+              "note": ""
+            },
+            {
+              "optionNumber": 4,
+              "text": "<ruby>必<rt>かなら</rt></ruby>ず<ruby>店<rt>みせ</rt></ruby>の<ruby>経営<rt>けいえい</rt></ruby>が<ruby>成功<rt>せいこう</rt></ruby>するから。",
+              "isCorrect": false,
+              "note": "「必ず成功するから」と言い切っているわけではない。"
+            }
+          ],
+          "explanation": "【正解】3\n※「八百屋を経営する祖母も、家のたんすの上に猫を置いていて、「うちの八百屋がうまくいくように」と願っている」とあるので、3が正解。"
+        },
+        {
+          "id": 6,
+          "questionNumber": 3,
+          "stem": "「私」は猫をかざることについて、どう思っているか。",
+          "options": [
+            "効果はないが、心を落ち着かせるためにかざりたい。",
+            "<ruby>猫<rt>ねこ</rt></ruby>も努力しているので、自分もがんばろうという気持ちになる。",
+            "効果があるかわからないが、守られているような気持ちになる。",
+            "だいたいは<ruby>猫<rt>ねこ</rt></ruby>が守ってくれるようになるので、安心している。"
+          ],
+          "correct_answer": 3,
+          "optionsKaisetsu": [
+            {
+              "optionNumber": 1,
+              "text": "<ruby>効果<rt>こうか</rt></ruby>はないが、<ruby>心<rt>こころ</rt></ruby>を<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>かせるためにかざりたい。",
+              "isCorrect": false,
+              "note": "「効果はない」とは言っていない。"
+            },
+            {
+              "optionNumber": 2,
+              "text": "<ruby>猫<rt>ねこ</rt></ruby>も<ruby>努力<rt>どりょく</rt></ruby>しているので、<ruby>自分<rt>じぶん</rt></ruby>もがんばろうという<ruby>気持<rt>きも</rt></ruby>ちになる。",
+              "isCorrect": false,
+              "note": "全部言っていない。"
+            },
+            {
+              "optionNumber": 3,
+              "text": "<ruby>効果<rt>こうか</rt></ruby>があるかわからないが、<ruby>守<rt>まも</rt></ruby>られているような<ruby>気持<rt>きも</rt></ruby>ちになる。",
+              "isCorrect": true,
+              "note": ""
+            },
+            {
+              "optionNumber": 4,
+              "text": "だいたいは<ruby>猫<rt>ねこ</rt></ruby>が<ruby>守<rt>まも</rt></ruby>ってくれるようになるので、<ruby>安心<rt>あんしん</rt></ruby>している。",
+              "isCorrect": false,
+              "note": "「だいたいは猫が守ってくれるようになる」とは言っていない。"
+            }
+          ],
+          "explanation": "【正解】3\n第3段落で「猫を見るたび、私も猫から守られているように感じる。しかし、本当にそのような効果があるかはわからない」と述べているため、3の「効果があるかわからないが、守られているような気持ちになる」が正解です。\n1：「効果はない」とは言っていません。\n2：「猫も努力している」などは全部言っていません。\n4：「だいたいは猫が守ってくれるようになる」とは言っていません。"
+        }
+      ]
+    }
+  ]
+}

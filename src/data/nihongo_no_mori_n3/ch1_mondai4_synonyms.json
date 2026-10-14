@@ -1,0 +1,763 @@
+{
+  "bookId": "nihongo-no-mori-n3",
+  "bookTitle": "JLPT N3 この一冊で合格する",
+  "chapter": 1,
+  "chapterTitle": "第1章 文字・語彙",
+  "section": 4,
+  "sectionTitle": "問題4 言い換え類義",
+  "instruction": "＿＿に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+  "totalPages": 5,
+  "totalQuestions": 50,
+  "pages": [
+    {
+      "pageNumber": 1,
+      "pdfPage": 97,
+      "bookPage": 94,
+      "title": "言い換え類義 (1〜10)",
+      "answers": [
+        3,
+        1,
+        2,
+        3,
+        4,
+        2,
+        3,
+        3,
+        4,
+        2
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "stem": "他の<u>ほうほう</u>を考えましょう。",
+          "targetWord": "ほうほう",
+          "options": [
+            "じょうたい",
+            "<ruby>意味<rt>いみ</rt></ruby>",
+            "<ruby>やり方<rt>かた</rt></ruby>",
+            "<ruby>原因<rt>げんいん</rt></ruby>"
+          ],
+          "correct_answer": 3,
+          "explanation": "「ほうほう（方法）」に最も近い意味は「やり方」です。（他の方法・やり方を考えましょう。）"
+        },
+        {
+          "id": 2,
+          "stem": "<ruby>中本<rt>なかもと</rt></ruby>さんは、元気で明るい<u><ruby>印象<rt>いんしょう</rt></ruby></u>です。",
+          "targetWord": "印象",
+          "options": [
+            "イメージ",
+            "<ruby>性格<rt>せいかく</rt></ruby>",
+            "メンバー",
+            "<ruby>人<rt>ひと</rt></ruby>"
+          ],
+          "correct_answer": 1,
+          "explanation": "「印象」に最も近い意味は「イメージ」です。（中本さんは、元気で明るい印象・イメージです。）"
+        },
+        {
+          "id": 3,
+          "stem": "この仕事は<u>共同</u>で作業しましょう。",
+          "targetWord": "共同",
+          "options": [
+            "<ruby>一人<rt>ひとり</rt></ruby>で",
+            "<ruby>一緒<rt>いっしょ</rt></ruby>に",
+            "<ruby>後<rt>あと</rt></ruby>で",
+            "<ruby>先<rt>さき</rt></ruby>に"
+          ],
+          "correct_answer": 2,
+          "explanation": "「共同」に最も近い意味は「一緒に」です。（この仕事は共同で・一緒に作業しましょう。）"
+        },
+        {
+          "id": 4,
+          "stem": "<ruby>村上<rt>むらかみ</rt></ruby>さんは<u>ふだん</u>、スカートをはいている。",
+          "targetWord": "ふだん",
+          "options": [
+            "けっきょく",
+            "ときどき",
+            "いつも",
+            "<ruby>初<rt>はじ</rt></ruby>めて"
+          ],
+          "correct_answer": 3,
+          "explanation": "「ふだん（普段）」に最も近い意味は「いつも」です。（村上さんは普段・いつも、スカートをはいている。）"
+        },
+        {
+          "id": 5,
+          "stem": "商品が<u>わりびき</u>になっている。",
+          "targetWord": "わりびき",
+          "options": [
+            "売れて無くなっている",
+            "あまっている",
+            "高くなっている",
+            "<ruby>安<rt>やす</rt></ruby>くなっている"
+          ],
+          "correct_answer": 4,
+          "explanation": "「わりびき（割引）」に最も近い意味は「安くなっている」です。（商品が割引・安くなっている。）"
+        },
+        {
+          "id": 6,
+          "stem": "<u>かんかく</u>をあけてください。",
+          "targetWord": "かんかく",
+          "options": [
+            "よてい",
+            "あいだ",
+            "みち",
+            "せき"
+          ],
+          "correct_answer": 2,
+          "explanation": "「かんかく（間隔）」に最も近い意味は「あいだ（間）」です。（間隔・あいだをあけてください。）"
+        },
+        {
+          "id": 7,
+          "stem": "どの学校にも、<u>きそく</u>がある。",
+          "targetWord": "きそく",
+          "options": [
+            "グラウンド",
+            "<ruby>制服<rt>せいふく</rt></ruby>",
+            "ルール",
+            "<ruby>試験<rt>しけん</rt></ruby>"
+          ],
+          "correct_answer": 3,
+          "explanation": "「きそく（規則）」に最も近い意味は「ルール」です。（どの学校にも、規則・ルールがある。）"
+        },
+        {
+          "id": 8,
+          "stem": "父は、声に<u><ruby>特徴<rt>とくちょう</rt></ruby>がある</u>。",
+          "targetWord": "特徴がある",
+          "options": [
+            "<ruby>自信<rt>じしん</rt></ruby>を持っている",
+            "<ruby>不満<rt>ふまん</rt></ruby>を持っている",
+            "他とは<ruby>違<rt>ちが</rt></ruby>うところがある",
+            "他と同じところがある"
+          ],
+          "correct_answer": 3,
+          "explanation": "「特徴がある」に最も近い意味は「他とは違うところがある」です。（父は、声に特徴がある・他とは違うところがある。）"
+        },
+        {
+          "id": 9,
+          "stem": "<u>具合</u>があまりよくない。",
+          "targetWord": "具合",
+          "options": [
+            "<ruby>成績<rt>せいせき</rt></ruby>",
+            "<ruby>天気<rt>てんき</rt></ruby>",
+            "<ruby>結果<rt>けっか</rt></ruby>",
+            "<ruby>調子<rt>ちょうし</rt></ruby>"
+          ],
+          "correct_answer": 4,
+          "explanation": "「具合」に最も近い意味は「調子」です。（具合・調子があまりよくない。）"
+        },
+        {
+          "id": 10,
+          "stem": "<u><ruby>生活習慣<rt>せいかつしゅうかん</rt></ruby></u>を見直しましょう。",
+          "targetWord": "生活習慣",
+          "options": [
+            "たまに<ruby>行<rt>おこな</rt></ruby>っていること",
+            "<ruby>毎日行<rt>まいにちおこな</rt></ruby>っていること",
+            "たまにできること",
+            "毎日できること"
+          ],
+          "correct_answer": 2,
+          "explanation": "「生活習慣」に最も近い意味は「毎日行っていること」です。（生活習慣・毎日行っていることを見直しましょう。）"
+        }
+      ]
+    },
+    {
+      "pageNumber": 2,
+      "pdfPage": 99,
+      "bookPage": 96,
+      "title": "言い換え類義 (11〜20)",
+      "answers": [
+        2,
+        1,
+        2,
+        3,
+        1,
+        4,
+        4,
+        3,
+        2,
+        3
+      ],
+      "questions": [
+        {
+          "id": 11,
+          "stem": "イベントを<u><ruby>延期<rt>えんき</rt></ruby>する</u>ことにした。",
+          "targetWord": "延期する",
+          "options": [
+            "早く行う",
+            "<ruby>先<rt>さき</rt></ruby>にのばす",
+            "新しく考える",
+            "全てやめる"
+          ],
+          "correct_answer": 2,
+          "explanation": "「延期する」に最も近い意味は「先にのばす」です。（イベントを延期する・先にのばすことにした。）"
+        },
+        {
+          "id": 12,
+          "stem": "新しいパソコンが<u><ruby>故障<rt>こしょう</rt></ruby>した</u>。",
+          "targetWord": "故障した",
+          "options": [
+            "こわれた",
+            "<ruby>出<rt>で</rt></ruby>た",
+            "<ruby>売<rt>う</rt></ruby>れた",
+            "とどいた"
+          ],
+          "correct_answer": 1,
+          "explanation": "「故障した」に最も近い意味は「こわれた」です。（新しいパソコンが故障した・こわれた。）"
+        },
+        {
+          "id": 13,
+          "stem": "兄に、自転車を<u><ruby>修理<rt>しゅうり</rt></ruby>して</u>もらう。",
+          "targetWord": "修理して",
+          "options": [
+            "<ruby>買<rt>か</rt></ruby>って",
+            "なおして",
+            "<ruby>降<rt>お</rt></ruby>りて",
+            "かして"
+          ],
+          "correct_answer": 2,
+          "explanation": "「修理して」に最も近い意味は「なおして」です。（兄に、自転車を修理して・なおしてもらう。）"
+        },
+        {
+          "id": 14,
+          "stem": "ビルを<u>けんせつする</u>そうだ。",
+          "targetWord": "けんせつする",
+          "options": [
+            "<ruby>貸<rt>か</rt></ruby>す",
+            "こわす",
+            "たてる",
+            "<ruby>借<rt>か</rt></ruby>りる"
+          ],
+          "correct_answer": 3,
+          "explanation": "「けんせつする（建設する）」に最も近い意味は「たてる（建てる）」です。（ビルを建設する・たてるそうだ。）"
+        },
+        {
+          "id": 15,
+          "stem": "結果を<u>ほうこくする</u>。",
+          "targetWord": "ほうこくする",
+          "options": [
+            "知らせる",
+            "<ruby>確<rt>たし</rt></ruby>かめる",
+            "<ruby>残<rt>のこ</rt></ruby>す",
+            "<ruby>出<rt>だ</rt></ruby>す"
+          ],
+          "correct_answer": 1,
+          "explanation": "「ほうこくする（報告する）」に最も近い意味は「知らせる」です。（結果を報告する・知らせる。）"
+        },
+        {
+          "id": 16,
+          "stem": "アンケートを<u>かいしゅうする</u>。",
+          "targetWord": "かいしゅうする",
+          "options": [
+            "<ruby>作<rt>つく</rt></ruby>る",
+            "<ruby>書<rt>か</rt></ruby>く",
+            "<ruby>配<rt>くば</rt></ruby>る",
+            "<ruby>集<rt>あつ</rt></ruby>める"
+          ],
+          "correct_answer": 4,
+          "explanation": "「かいしゅうする（回収する）」に最も近い意味は「集める」です。（アンケートを回収する・集める。）"
+        },
+        {
+          "id": 17,
+          "stem": "サービスを<u>りようする</u>。",
+          "targetWord": "りようする",
+          "options": [
+            "<ruby>中止<rt>ちゅうし</rt></ruby>する",
+            "<ruby>始<rt>はじ</rt></ruby>める",
+            "<ruby>用意<rt>ようい</rt></ruby>する",
+            "<ruby>使<rt>つか</rt></ruby>う"
+          ],
+          "correct_answer": 4,
+          "explanation": "「りようする（利用する）」に最も近い意味は「使う」です。（サービスを利用する・使う。）"
+        },
+        {
+          "id": 18,
+          "stem": "会議を<u>しんこうする</u>。",
+          "targetWord": "しんこうする",
+          "options": [
+            "<ruby>見学<rt>けんがく</rt></ruby>する",
+            "<ruby>準備<rt>じゅんび</rt></ruby>する",
+            "すすめる",
+            "おわらせる"
+          ],
+          "correct_answer": 3,
+          "explanation": "「しんこうする（進行する）」に最も近い意味は「すすめる（進める）」です。（会議を進行する・すすめる。）"
+        },
+        {
+          "id": 19,
+          "stem": "50メートルの橋を<u><ruby>往復<rt>おうふく</rt></ruby>する</u>。",
+          "targetWord": "往復する",
+          "options": [
+            "最後まで<ruby>渡<rt>わた</rt></ruby>る",
+            "<ruby>行<rt>い</rt></ruby>って<ruby>戻<rt>もど</rt></ruby>る",
+            "<ruby>走<rt>はし</rt></ruby>る",
+            "<ruby>歩<rt>ある</rt></ruby>く"
+          ],
+          "correct_answer": 2,
+          "explanation": "「往復する」に最も近い意味は「行って戻る」です。（50メートルの橋を往復する・行って戻る。）"
+        },
+        {
+          "id": 20,
+          "stem": "かんそうさせた食べ物には、<ruby>栄養<rt>えいよう</rt></ruby>がある。",
+          "targetWord": "かんそうさせた",
+          "options": [
+            "やいた",
+            "にた",
+            "かわかした",
+            "あたためた"
+          ],
+          "correct_answer": 3,
+          "explanation": "「かんそうさせた（乾燥させた）」に最も近い意味は「かわかした（乾かした）」です。（乾燥させた・かわかした食べ物には、栄養がある。）"
+        }
+      ]
+    },
+    {
+      "pageNumber": 3,
+      "pdfPage": 101,
+      "bookPage": 98,
+      "title": "言い換え類義 (21〜30)",
+      "answers": [
+        4,
+        4,
+        2,
+        4,
+        3,
+        3,
+        1,
+        3,
+        1,
+        2
+      ],
+      "questions": [
+        {
+          "id": 21,
+          "stem": "先生が急に<u>だまった</u>。",
+          "targetWord": "だまった",
+          "options": [
+            "怒りはじめた",
+            "大きな声を出した",
+            "泣き出した",
+            "何も言わなくなった"
+          ],
+          "correct_answer": 4,
+          "explanation": "「だまった（黙った）」に最も近い意味は「何も言わなくなった」です。（先生が急に黙った・何も言わなくなった。）"
+        },
+        {
+          "id": 22,
+          "stem": "いつまでたっても<ruby>友達<rt>ともだち</rt></ruby>が待ち合わせの場所に来ないので、<u>くたびれて</u>しまった。",
+          "targetWord": "くたびれて",
+          "options": [
+            "<ruby>怒<rt>おこ</rt></ruby>って",
+            "<ruby>帰<rt>かえ</rt></ruby>って",
+            "<ruby>困<rt>こま</rt></ruby>って",
+            "<ruby>疲<rt>つか</rt></ruby>れて"
+          ],
+          "correct_answer": 4,
+          "explanation": "「くたびれて」に最も近い意味は「疲れて」です。（いつまでたっても友達が待ち合わせの場所に来ないので、くたびれて・疲れてしまった。）"
+        },
+        {
+          "id": 23,
+          "stem": "おもちゃを<u><ruby>片付<rt>かたづ</rt></ruby>けて</u>ください。",
+          "targetWord": "片付けて",
+          "options": [
+            "広げてください",
+            "<ruby>整理<rt>せいり</rt></ruby>してください",
+            "買ってください",
+            "<ruby>準備<rt>じゅんび</rt></ruby>してください"
+          ],
+          "correct_answer": 2,
+          "explanation": "「片付けて」に最も近い意味は「整理してください」です。（おもちゃを片付けて・整理してください。）"
+        },
+        {
+          "id": 24,
+          "stem": "用事を<u><ruby>済<rt>す</rt></ruby>ませて</u>から、そちらに向かいます。",
+          "targetWord": "済ませて",
+          "options": [
+            "入れて",
+            "<ruby>断<rt>ことわ</rt></ruby>って",
+            "<ruby>思<rt>おも</rt></ruby>い出して",
+            "<ruby>終<rt>お</rt></ruby>わらせて"
+          ],
+          "correct_answer": 4,
+          "explanation": "「済ませて」に最も近い意味は「終わらせて」です。（用事を済ませて・終わらせてから、そちらに向かいます。）"
+        },
+        {
+          "id": 25,
+          "stem": "この仕事は、<ruby>簡単<rt>かんたん</rt></ruby>な作業なのですぐに<u><ruby>慣<rt>な</rt></ruby>れる</u>と思います。",
+          "targetWord": "慣れる",
+          "options": [
+            "楽しくなる",
+            "<ruby>辛<rt>つら</rt></ruby>くなる",
+            "<ruby>上手<rt>じょうず</rt></ruby>になる",
+            "<ruby>下手<rt>へた</rt></ruby>になる"
+          ],
+          "correct_answer": 3,
+          "explanation": "「慣れる」に最も近い意味は「上手になる」です。（この仕事は、簡単な作業なのですぐに慣れる・上手になると思います。）"
+        },
+        {
+          "id": 26,
+          "stem": "小さい弟を<u>かまう</u>。",
+          "targetWord": "かまう",
+          "options": [
+            "<ruby>注意<rt>ちゅうい</rt></ruby>する",
+            "<ruby>笑<rt>わら</rt></ruby>わせる",
+            "<ruby>世話<rt>せわ</rt></ruby>する",
+            "<ruby>泣<rt>な</rt></ruby>かせる"
+          ],
+          "correct_answer": 3,
+          "explanation": "「かまう」に最も近い意味は「世話する」です。（小さい弟をかまう・世話する。）"
+        },
+        {
+          "id": 27,
+          "stem": "3時間も時間が<u><ruby>経<rt>た</rt></ruby>った</u>。",
+          "targetWord": "経った",
+          "options": [
+            "<ruby>過<rt>す</rt></ruby>ぎた",
+            "<ruby>残<rt>のこ</rt></ruby>った",
+            "あった",
+            "なかった"
+          ],
+          "correct_answer": 1,
+          "explanation": "「経った」に最も近い意味は「過ぎた」です。（3時間も時間が経った・過ぎた。）"
+        },
+        {
+          "id": 28,
+          "stem": "このアプリは、英語を<u>訳す</u>ことができる。",
+          "targetWord": "訳す",
+          "options": [
+            "<ruby>調<rt>しら</rt></ruby>べる",
+            "<ruby>覚<rt>おぼ</rt></ruby>える",
+            "<ruby>他<rt>ほか</rt></ruby>の国の言葉に変える",
+            "他の国の言葉で<ruby>勉強<rt>べんきょう</rt></ruby>する"
+          ],
+          "correct_answer": 3,
+          "explanation": "「訳す」に最も近い意味は「他の国の言葉に変える」です。（このアプリは、英語を訳す・他の国の言葉に変えることができる。）"
+        },
+        {
+          "id": 29,
+          "stem": "新しいメンバーを<u><ruby>加<rt>くわ</rt></ruby>える</u>。",
+          "targetWord": "加える",
+          "options": [
+            "<ruby>足<rt>た</rt></ruby>す",
+            "<ruby>決<rt>き</rt></ruby>める",
+            "<ruby>変<rt>か</rt></ruby>える",
+            "<ruby>集<rt>あつ</rt></ruby>める"
+          ],
+          "correct_answer": 1,
+          "explanation": "「加える」に最も近い意味は「足す」です。（新しいメンバーを加える・足す。）"
+        },
+        {
+          "id": 30,
+          "stem": "<u>どなる</u>のはよくないことだ。",
+          "targetWord": "どなる",
+          "options": [
+            "<ruby>迷惑<rt>めいわく</rt></ruby>をかける",
+            "大きな声でおこる",
+            "<ruby>失礼<rt>しつれい</rt></ruby>なことを言う",
+            "うそをつく"
+          ],
+          "correct_answer": 2,
+          "explanation": "「どなる（怒鳴る）」に最も近い意味は「大きな声でおこる」です。（怒鳴る・大きな声でおこるのはよくないことだ。）"
+        }
+      ]
+    },
+    {
+      "pageNumber": 4,
+      "pdfPage": 103,
+      "bookPage": 100,
+      "title": "言い換え類義 (31〜40)",
+      "answers": [
+        2,
+        1,
+        3,
+        2,
+        4,
+        2,
+        1,
+        2,
+        3,
+        2
+      ],
+      "questions": [
+        {
+          "id": 31,
+          "stem": "毎日<u>だらしない</u>生活をしている。",
+          "targetWord": "だらしない",
+          "options": [
+            "楽しい",
+            "きちんとしていない",
+            "楽しくない",
+            "きちんとした"
+          ],
+          "correct_answer": 2,
+          "explanation": "「だらしない」に最も近い意味は「きちんとしていない」です。（毎日だらしない・きちんとしていない生活をしている。）"
+        },
+        {
+          "id": 32,
+          "stem": "彼女は、上品で<u>おとなしい</u>人です。",
+          "targetWord": "おとなしい",
+          "options": [
+            "<ruby>静<rt>しず</rt></ruby>かな",
+            "<ruby>優<rt>やさ</rt></ruby>しい",
+            "きれいな",
+            "<ruby>明<rt>あか</rt></ruby>るい"
+          ],
+          "correct_answer": 1,
+          "explanation": "「おとなしい」に最も近い意味は「静かな」です。（彼女は、上品でおとなしい・静かな人です。）"
+        },
+        {
+          "id": 33,
+          "stem": "<ruby>息子<rt>むすこ</rt></ruby>は、<ruby>虫<rt>むし</rt></ruby>について<u><ruby>詳<rt>くわ</rt></ruby>しい</u>。",
+          "targetWord": "詳しい",
+          "options": [
+            "あまり知らない",
+            "よく話している",
+            "よく知っている",
+            "あまり話さない"
+          ],
+          "correct_answer": 3,
+          "explanation": "「詳しい」に最も近い意味は「よく知っている」です。（息子は、虫について詳しい・よく知っている。）"
+        },
+        {
+          "id": 34,
+          "stem": "長い<ruby>距離<rt>きょり</rt></ruby>を走ることは<u>きつい</u>。",
+          "targetWord": "きつい",
+          "options": [
+            "<ruby>楽<rt>たの</rt></ruby>しい",
+            "つらい",
+            "<ruby>危<rt>あぶ</rt></ruby>ない",
+            "えらい"
+          ],
+          "correct_answer": 2,
+          "explanation": "「きつい」に最も近い意味は「つらい」です。（長い距離を走ることはきつい・つらい。）"
+        },
+        {
+          "id": 35,
+          "stem": "母から、<u>めずらしい</u>品物をもらった。",
+          "targetWord": "めずらしい",
+          "options": [
+            "いらない",
+            "どこにでもある",
+            "<ruby>欲<rt>ほ</rt></ruby>しかった",
+            "あまり見たことのない"
+          ],
+          "correct_answer": 4,
+          "explanation": "「めずらしい（珍しい）」に最も近い意味は「あまり見たことのない」です。（母から、珍しい・あまり見たことのない品物をもらった。）"
+        },
+        {
+          "id": 36,
+          "stem": "日本人でも、<u>多少</u>漢字を<ruby>間違<rt>まちが</rt></ruby>えることはある。",
+          "targetWord": "多少",
+          "options": [
+            "たくさん",
+            "<ruby>少<rt>すこ</rt></ruby>し",
+            "<ruby>多<rt>おお</rt></ruby>くの",
+            "<ruby>全<rt>すべ</rt></ruby>ての"
+          ],
+          "correct_answer": 2,
+          "explanation": "「多少」に最も近い意味は「少し」です。（日本人でも、多少・少し漢字を間違えることはある。）"
+        },
+        {
+          "id": 37,
+          "stem": "昨日のけんかのことは、<u>ちっとも</u>気にしてないよ。",
+          "targetWord": "ちっとも",
+          "options": [
+            "<ruby>全然<rt>ぜんぜん</rt></ruby>",
+            "<ruby>正直<rt>しょうじき</rt></ruby>",
+            "しばらく",
+            "<ruby>相変<rt>あいか</rt></ruby>わらず"
+          ],
+          "correct_answer": 1,
+          "explanation": "「ちっとも」に最も近い意味は「全然」です。（昨日のけんかのことは、ちっとも・全然気にしてないよ。）"
+        },
+        {
+          "id": 38,
+          "stem": "このマンガは、<u>なかなか</u>おもしろい。",
+          "targetWord": "なかなか",
+          "options": [
+            "<ruby>特<rt>とく</rt></ruby>に",
+            "<ruby>相当<rt>そうとう</rt></ruby>",
+            "<ruby>絶対<rt>ぜったい</rt></ruby>",
+            "たまに"
+          ],
+          "correct_answer": 2,
+          "explanation": "「なかなか」に最も近い意味は「相当」です。（このマンガは、なかなか・相当おもしろい。）"
+        },
+        {
+          "id": 39,
+          "stem": "この本は、<u>ほとんど</u>読み終わっている。",
+          "targetWord": "ほとんど",
+          "options": [
+            "<ruby>初<rt>はじ</rt></ruby>めて",
+            "<ruby>十分<rt>じゅうぶん</rt></ruby>",
+            "たいてい",
+            "きちんと"
+          ],
+          "correct_answer": 3,
+          "explanation": "「ほとんど」に最も近い意味は「たいてい」です。（この本は、ほとんど・たいてい読み終わっている。）"
+        },
+        {
+          "id": 40,
+          "stem": "大きかったきず口が<u>だんだん</u><ruby>治<rt>なお</rt></ruby>ってきた。",
+          "targetWord": "だんだん",
+          "options": [
+            "<ruby>急<rt>きゅう</rt></ruby>に",
+            "<ruby>少<rt>すこ</rt></ruby>しずつ",
+            "さっそく",
+            "かなり"
+          ],
+          "correct_answer": 2,
+          "explanation": "「だんだん」に最も近い意味は「少しずつ」です。（大きかったきず口がだんだん・少しずつ治ってきた。）"
+        }
+      ]
+    },
+    {
+      "pageNumber": 5,
+      "pdfPage": 105,
+      "bookPage": 102,
+      "title": "言い換え類義 (41〜50)",
+      "answers": [
+        2,
+        1,
+        3,
+        4,
+        3,
+        3,
+        4,
+        3,
+        4,
+        2
+      ],
+      "questions": [
+        {
+          "id": 41,
+          "stem": "<ruby>薬<rt>くすり</rt></ruby>を飲んで、<u>ぐっすり</u><ruby>眠<rt>ねむ</rt></ruby>る。",
+          "targetWord": "ぐっすり",
+          "options": [
+            "<ruby>浅<rt>あさ</rt></ruby>く",
+            "<ruby>深<rt>ふか</rt></ruby>く",
+            "<ruby>早<rt>はや</rt></ruby>く",
+            "<ruby>遅<rt>おそ</rt></ruby>く"
+          ],
+          "correct_answer": 2,
+          "explanation": "「ぐっすり」に最も近い意味は「深く」です。（薬を飲んで、ぐっすり・深く眠る。）"
+        },
+        {
+          "id": 42,
+          "stem": "<ruby>閉店前<rt>へいてんまえ</rt></ruby>の店内は、<u>がらがら</u>だ。",
+          "targetWord": "がらがら",
+          "options": [
+            "<ruby>空<rt>す</rt></ruby>いている",
+            "<ruby>空<rt>あ</rt></ruby>いていない",
+            "<ruby>汚<rt>よご</rt></ruby>れている",
+            "<ruby>汚<rt>よご</rt></ruby>れていない"
+          ],
+          "correct_answer": 1,
+          "explanation": "「がらがら」に最も近い意味は「空いている」です。（閉店前の店内は、がらがら・空いている。）"
+        },
+        {
+          "id": 43,
+          "stem": "弟はお母さんと顔が<u>そっくり</u>だ。",
+          "targetWord": "そっくり",
+          "options": [
+            "<ruby>似<rt>に</rt></ruby>ていない",
+            "ちょっと<ruby>違<rt>ちが</rt></ruby>う",
+            "<ruby>似<rt>に</rt></ruby>ている",
+            "<ruby>全<rt>まった</rt></ruby>く<ruby>同<rt>おな</rt></ruby>じだ"
+          ],
+          "correct_answer": 3,
+          "explanation": "「そっくり」に最も近い意味は「似ている」です。（弟はお母さんと顔がそっくり・似ている。）"
+        },
+        {
+          "id": 44,
+          "stem": "意見が<u>ばらばら</u>だ。",
+          "targetWord": "ばらばら",
+          "options": [
+            "<ruby>一緒<rt>いっしょ</rt></ruby>だ",
+            "<ruby>正<rt>ただ</rt></ruby>しい",
+            "<ruby>間違<rt>まちが</rt></ruby>っている",
+            "べつべつだ"
+          ],
+          "correct_answer": 4,
+          "explanation": "「ばらばら」に最も近い意味は「べつべつだ」です。（意見がばらばら・べつべつだ。）"
+        },
+        {
+          "id": 45,
+          "stem": "<u>そっと</u>ドアを<ruby>閉<rt>し</rt></ruby>めた。",
+          "targetWord": "そっと",
+          "options": [
+            "<ruby>強<rt>つよ</rt></ruby>く",
+            "<ruby>確<rt>たし</rt></ruby>かに",
+            "<ruby>静<rt>しず</rt></ruby>かに",
+            "<ruby>早速<rt>さっそく</rt></ruby>"
+          ],
+          "correct_answer": 3,
+          "explanation": "「そっと」に最も近い意味は「静かに」です。（そっと・静かにドアを閉めた。）"
+        },
+        {
+          "id": 46,
+          "stem": "いろいろなくだものを<u>ミックスする</u>。",
+          "targetWord": "ミックスする",
+          "options": [
+            "こおらせる",
+            "にる",
+            "まぜる",
+            "いためる"
+          ],
+          "correct_answer": 3,
+          "explanation": "「ミックスする」に最も近い意味は「まぜる（混ぜる）」です。（いろいろなくだものをミックスする・まぜる。）"
+        },
+        {
+          "id": 47,
+          "stem": "社長室のドアを<u>ノックしました</u>。",
+          "targetWord": "ノックしました",
+          "options": [
+            "<ruby>開<rt>あ</rt></ruby>けました",
+            "<ruby>閉<rt>し</rt></ruby>めました",
+            "こわしました",
+            "たたきました"
+          ],
+          "correct_answer": 4,
+          "explanation": "「ノックしました」に最も近い意味は「たたきました」です。（社長室のドアをノックしました・たたきました。）"
+        },
+        {
+          "id": 48,
+          "stem": "かみの毛を<u>カットした</u>。",
+          "targetWord": "カットした",
+          "options": [
+            "かわかした",
+            "<ruby>洗<rt>あら</rt></ruby>った",
+            "<ruby>切<rt>き</rt></ruby>った",
+            "のばした"
+          ],
+          "correct_answer": 3,
+          "explanation": "「カットした」に最も近い意味は「切った」です。（かみの毛をカットした・切った。）"
+        },
+        {
+          "id": 49,
+          "stem": "<u>リビング</u>でゆっくりと<ruby>過<rt>す</rt></ruby>ごす。",
+          "targetWord": "リビング",
+          "options": [
+            "ねる部屋",
+            "ふろ",
+            "にわ",
+            "<ruby>居間<rt>いま</rt></ruby>"
+          ],
+          "correct_answer": 4,
+          "explanation": "「リビング」に最も近い意味は「居間」です。（リビング・居間でゆっくりと過ごす。）"
+        },
+        {
+          "id": 50,
+          "stem": "お店が<u>オープンする</u>のはいつですか。",
+          "targetWord": "オープンする",
+          "options": [
+            "<ruby>閉<rt>し</rt></ruby>まる",
+            "<ruby>開<rt>ひら</rt></ruby>く",
+            "できる",
+            "なくなる"
+          ],
+          "correct_answer": 2,
+          "explanation": "「オープンする」に最も近い意味は「開く」です。（お店がオープンする・開くのはいつですか。）"
+        }
+      ]
+    }
+  ]
+}

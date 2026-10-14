@@ -1,0 +1,300 @@
+{
+  "bookId": "nihongo-no-mori-n3",
+  "bookTitle": "JLPT N3 この一冊で合格する",
+  "chapter": 4,
+  "chapterTitle": "第4章 聴解",
+  "sectionId": "ch4-kadai",
+  "sectionTitle": "問題1 課題理解",
+  "instruction": "<ruby>問題<rt>もんだい</rt></ruby>1では、まず<ruby>質問<rt>しつもん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてください。それから<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、<ruby>問題用紙<rt>もんだいようし</rt></ruby>の1から4の<ruby>中<rt>なか</rt></ruby>から、<ruby>最<rt>もっと</rt></ruby>もよいものを<ruby>一<rt>ひと</rt></ruby>つえらんでください。",
+  "groupAudio": "/audio/nihongo_no_mori_n3/問題1　1番-6番.mp3",
+  "totalQuestions": 7,
+  "pages": [
+    {
+      "pageNumber": 1,
+      "title": "問題1 課題理解",
+      "instruction": "<ruby>問題<rt>もんだい</rt></ruby>1では、まず<ruby>質問<rt>しつもん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてください。それから<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、<ruby>問題用紙<rt>もんだいようし</rt></ruby>の1から4の<ruby>中<rt>なか</rt></ruby>から、<ruby>最<rt>もっと</rt></ruby>もよいものを<ruby>一<rt>ひと</rt></ruby>つえらんでください。",
+      "questions": [
+        {
+          "id": "ch4-m1-ex",
+          "questionNumber": "例",
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題1　1番-6番.mp3",
+          "situation": "<ruby>学校<rt>がっこう</rt></ruby>で<ruby>先生<rt>せんせい</rt></ruby>が<ruby>話<rt>はな</rt></ruby>しています。<ruby>学生<rt>がくせい</rt></ruby>は<ruby>英会話<rt>えいかいわ</rt></ruby>の<ruby>先生<rt>せんせい</rt></ruby>と<ruby>昼食<rt>ちゅうしょく</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたいとき、どのように<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みますか。",
+          "stem": "<ruby>学生<rt>がくせい</rt></ruby>は<ruby>英会話<rt>えいかいわ</rt></ruby>の<ruby>先生<rt>せんせい</rt></ruby>と<ruby>昼食<rt>ちゅうしょく</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたいとき、どのように<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みますか。",
+          "script": [
+            {
+              "speaker": "先生（男）",
+              "text": "ええと、<ruby>英会話<rt>えいかいわ</rt></ruby>の<ruby>先生<rt>せんせい</rt></ruby>と<ruby>昼食<rt>ちゅうしょく</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたい<ruby>人<rt>ひと</rt></ruby>は、<ruby>必<rt>かなら</rt></ruby>ず<ruby>朝<rt>あさ</rt></ruby>の10<ruby>時<rt>じ</rt></ruby>までに<ruby>申込書<rt>もうしこみしょ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>してください。"
+            },
+            {
+              "speaker": "学生（女）",
+              "text": "どこに<ruby>出<rt>だ</rt></ruby>したらいいですか。"
+            },
+            {
+              "speaker": "先生（男）",
+              "text": "<ruby>職員室<rt>しょくいんしつ</rt></ruby>の<ruby>入口<rt>いりぐち</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に<ruby>箱<rt>はこ</rt></ruby>がありますので、そこに<ruby>入<rt>い</rt></ruby>れてください。それから、<ruby>申込書<rt>もうしこみしょ</rt></ruby>には<ruby>必<rt>かなら</rt></ruby>ず<ruby>名前<rt>なまえ</rt></ruby>を<ruby>書<rt>か</rt></ruby>いてくださいね。<ruby>友達<rt>ともだち</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>したい<ruby>場合<rt>ばあい</rt></ruby>は、1<ruby>人<rt>ひとり</rt></ruby>1<ruby>枚<rt>まい</rt></ruby><ruby>書<rt>か</rt></ruby>いて<ruby>出<rt>だ</rt></ruby>すようにしてください。"
+            },
+            {
+              "speaker": "学生（女）",
+              "text": "はい。"
+            },
+            {
+              "speaker": "先生（男）",
+              "text": "あと、<ruby>先生<rt>せんせい</rt></ruby>たちのスケジュールは<ruby>食堂<rt>しょくどう</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>の<ruby>掲示板<rt>けいじばん</rt></ruby>に<ruby>貼<rt>は</rt></ruby>ってあります。<ruby>毎週<rt>まいしゅう</rt></ruby><ruby>金曜日<rt>きんようび</rt></ruby>に<ruby>貼<rt>は</rt></ruby>り<ruby>替<rt>か</rt></ruby>えるので、そこで<ruby>確認<rt>かくにん</rt></ruby>してくださいね。"
+            },
+            {
+              "speaker": "学生（女）",
+              "text": "<ruby>毎日<rt>まいにち</rt></ruby><ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>んでもいいんですか？"
+            },
+            {
+              "speaker": "先生（男）",
+              "text": "もちろんいいですよ。"
+            }
+          ],
+          "options": [
+            "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>申込書<rt>もうしこみしょ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す",
+            "<ruby>友達<rt>ともだち</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>申込書<rt>もうしこみしょ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す",
+            "<ruby>申込書<rt>もうしこみしょ</rt></ruby>に<ruby>名前<rt>なまえ</rt></ruby>を<ruby>書<rt>か</rt></ruby>いて<ruby>箱<rt>はこ</rt></ruby>に<ruby>入<rt>い</rt></ruby>れる",
+            "<ruby>掲示板<rt>けいじばん</rt></ruby>に<ruby>名前<rt>なまえ</rt></ruby>を<ruby>書<rt>か</rt></ruby>く"
+          ],
+          "correct_answer": 3,
+          "explanation": "<b>【正解】3</b><br/>先生は「職員室の入口の前の箱に申込書を入れてください」「必ず名前を書いてください」と言っています。友達と参加する場合でも「1人1枚書いて出す」必要があり、掲示板には名前を書くのではなくスケジュールを確認します。したがって、正解は3です。"
+        },
+        {
+          "id": "ch4-m1-q1",
+          "questionNumber": 1,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題1　1番.mp3",
+          "situation": "レストランで<ruby>店長<rt>てんちょう</rt></ruby>と<ruby>女<rt>おんな</rt></ruby>の<ruby>店員<rt>てんいん</rt></ruby>が<ruby>店<rt>みせ</rt></ruby>の<ruby>片付<rt>かたづ</rt></ruby>けをしようとしています。<ruby>女<rt>おんな</rt></ruby>の<ruby>店員<rt>てんいん</rt></ruby>はこのあとまず<ruby>何<rt>なに</rt></ruby>をしますか。",
+          "stem": "<ruby>女<rt>おんな</rt></ruby>の<ruby>店員<rt>てんいん</rt></ruby>はこのあとまず<ruby>何<rt>なに</rt></ruby>をしますか。",
+          "script": [
+            {
+              "speaker": "男（店長）",
+              "text": "もうすぐ<ruby>夕方<rt>ゆうがた</rt></ruby>の6<ruby>時<rt>じ</rt></ruby>になるね。そろそろ<ruby>片付<rt>かたづ</rt></ruby>けを<ruby>始<rt>はじ</rt></ruby>めようか。"
+            },
+            {
+              "speaker": "女（店員）",
+              "text": "はい。"
+            },
+            {
+              "speaker": "男（店長）",
+              "text": "<ruby>私<rt>わたし</rt></ruby>は<ruby>食材<rt>しょくざい</rt></ruby>を<ruby>買<rt>か</rt></ruby>ってくるから、テーブルを<ruby>拭<rt>ふ</rt></ruby>いておいてもらえる？<ruby>台所<rt>だいどころ</rt></ruby>に<ruby>白<rt>しろ</rt></ruby>い<ruby>布<rt>ぬの</rt></ruby>があるから、<ruby>水<rt>みず</rt></ruby>で<ruby>濡<rt>ぬ</rt></ruby>らしてから<ruby>拭<rt>ふ</rt></ruby>いてね。"
+            },
+            {
+              "speaker": "女（店員）",
+              "text": "わかりました。それと、<ruby>使<rt>つか</rt></ruby>ったお<ruby>皿<rt>さら</rt></ruby>はどうしますか。"
+            },
+            {
+              "speaker": "男（店長）",
+              "text": "お<ruby>皿<rt>さら</rt></ruby>はしっかり<ruby>洗<rt>あら</rt></ruby>って<ruby>立<rt>た</rt></ruby>てておこうか。お<ruby>皿<rt>さら</rt></ruby>は<ruby>乾<rt>かわ</rt></ruby>くのに<ruby>時間<rt>じかん</rt></ruby>がかかるから、テーブルを<ruby>拭<rt>ふ</rt></ruby>くのはそのあとににしてね。"
+            },
+            {
+              "speaker": "女（店員）",
+              "text": "わかりました。<ruby>乾<rt>かわ</rt></ruby>いたお<ruby>皿<rt>さら</rt></ruby>は<ruby>棚<rt>たな</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>せばいいんですよね。"
+            },
+            {
+              "speaker": "男（店長）",
+              "text": "うん、そうして。30<ruby>分<rt>ぷん</rt></ruby>くらいで<ruby>戻<rt>もど</rt></ruby>ってくるから、よろしくね。"
+            }
+          ],
+          "options": [
+            "<ruby>食材<rt>しょくざい</rt></ruby>を<ruby>買<rt>か</rt></ruby>う",
+            "<ruby>皿<rt>さら</rt></ruby>をあらう",
+            "テーブルをふく",
+            "<ruby>棚<rt>たな</rt></ruby>に<ruby>皿<rt>さら</rt></ruby>をもどす"
+          ],
+          "correct_answer": 2,
+          "explanation": "<b>【正解】2</b><br/>店長は最初テーブルを拭くよう頼みましたが、店員がお皿について聞くと「お皿は乾くのに時間がかかるから、テーブルを拭くのはそのあとにしてね」と指示を変えました。したがって、女の店員がまず行うのは「皿をあらう」（2）です。"
+        },
+        {
+          "id": "ch4-m1-q2",
+          "questionNumber": 2,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題1　2番.mp3",
+          "situation": "<ruby>空港<rt>くうこう</rt></ruby>で<ruby>先生<rt>せんせい</rt></ruby>が<ruby>生徒<rt>せいと</rt></ruby>に<ruby>話<rt>はな</rt></ruby>しています。<ruby>生徒<rt>せいと</rt></ruby>はこのあとまず<ruby>何<rt>なに</rt></ruby>をしなければなりませんか。",
+          "stem": "<ruby>生徒<rt>せいと</rt></ruby>はこのあとまず<ruby>何<rt>なに</rt></ruby>をしなければなりませんか。",
+          "script": [
+            {
+              "speaker": "先生（男）",
+              "text": "みなさん、これから<ruby>飛行機<rt>ひこうき</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ります。いまからチケットを<ruby>配<rt>くば</rt></ruby>りますので、<ruby>係<rt>かかり</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>に<ruby>見<rt>み</rt></ruby>せてから<ruby>荷物<rt>にもつ</rt></ruby>の<ruby>検査<rt>けんさ</rt></ruby>をしてもらってください。チケットは<ruby>絶対<rt>ぜったい</rt></ruby>に<ruby>無<rt>な</rt></ruby>くさないでくださいね。それからもう<ruby>一度<rt>いちど</rt></ruby><ruby>集合<rt>しゅうごう</rt></ruby>します。そのあとお<ruby>手洗<rt>てあら</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く<ruby>時間<rt>じかん</rt></ruby>があるので、<ruby>必<rt>かなら</rt></ruby>ず<ruby>済<rt>す</rt></ruby>ませてください。では、<ruby>飛行機<rt>ひこうき</rt></ruby>ではなかなかお<ruby>手洗<rt>てあら</rt></ruby>いに<ruby>行<rt>い</rt></ruby>くことができないので。"
+            }
+          ],
+          "options": [
+            "<ruby>係<rt>かかり</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>にチケットを<ruby>見<rt>み</rt></ruby>せる",
+            "<ruby>荷物<rt>にもつ</rt></ruby>のけんさをする",
+            "みんなで<ruby>集<rt>あつ</rt></ruby>まる",
+            "おてあらいに<ruby>行<rt>い</rt></ruby>く"
+          ],
+          "correct_answer": 1,
+          "explanation": "<b>【正解】1</b><br/>先生は「チケットを配りますので、係の人に見せてから荷物の検査をしてもらってください」と言っています。荷物検査の前にまず「係の人にチケットを見せる」（1）必要があります。"
+        },
+        {
+          "id": "ch4-m1-q3",
+          "questionNumber": 3,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題1　3番.mp3",
+          "situation": "<ruby>自宅<rt>じたく</rt></ruby>で<ruby>妻<rt>つま</rt></ruby>と<ruby>夫<rt>おっと</rt></ruby>が<ruby>息子<rt>むすこ</rt></ruby>の<ruby>誕生日会<rt>たんじょうびかい</rt></ruby>について<ruby>話<rt>はな</rt></ruby>しています。<ruby>夫<rt>おっと</rt></ruby>はこのあとまず<ruby>何<rt>なに</rt></ruby>をしますか。",
+          "stem": "<ruby>夫<rt>おっと</rt></ruby>はこのあとまず<ruby>何<rt>なに</rt></ruby>をしますか。",
+          "script": [
+            {
+              "speaker": "女（妻）",
+              "text": "<ruby>今日<rt>きょう</rt></ruby>、サトルの<ruby>誕生日会<rt>たんじょうびかい</rt></ruby>があるでしょう？それで、お<ruby>願<rt>ねが</rt></ruby>いがあるんだけど。"
+            },
+            {
+              "speaker": "男（夫）",
+              "text": "うん、<ruby>何<rt>なん</rt></ruby>だい。"
+            },
+            {
+              "speaker": "女（妻）",
+              "text": "<ruby>誕生日<rt>たんじょうび</rt></ruby>ケーキを<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>ってくれない？<ruby>駅前<rt>えきまえ</rt></ruby>にあるケーキ<ruby>屋<rt>や</rt></ruby>のチョコレートケーキを<ruby>買<rt>か</rt></ruby>うって<ruby>決<rt>き</rt></ruby>めてるんだけど、<ruby>料理<rt>りょうり</rt></ruby>も<ruby>作<rt>つく</rt></ruby>らないといけなくて<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>く<ruby>時間<rt>じかん</rt></ruby>がないのよ。"
+            },
+            {
+              "speaker": "男（夫）",
+              "text": "うん、いいよ。"
+            },
+            {
+              "speaker": "女（妻）",
+              "text": "ケーキを<ruby>買<rt>か</rt></ruby>ったら、おじいちゃんとおばあちゃんを<ruby>家<rt>いえ</rt></ruby>まで<ruby>車<rt>くるま</rt></ruby>で<ruby>迎<rt>むか</rt></ruby>えに<ruby>行<rt>い</rt></ruby>ってくれる？うちまで<ruby>歩<rt>ある</rt></ruby>いてくるのは<ruby>大変<rt>たいへん</rt></ruby>だから。あ、あとおじいちゃんとおばあちゃんを<ruby>車<rt>くるま</rt></ruby>に<ruby>乗<rt>の</rt></ruby>せたら、<ruby>近<rt>ちか</rt></ruby>くのスーパーでお<ruby>菓子<rt>かし</rt></ruby>と<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>買<rt>か</rt></ruby>ってきて。"
+            },
+            {
+              "speaker": "男（夫）",
+              "text": "わかった。ほかに<ruby>何<rt>なに</rt></ruby>か<ruby>手伝<rt>てつだ</rt></ruby>えることはある？"
+            },
+            {
+              "speaker": "女（妻）",
+              "text": "んー、<ruby>誕生日会<rt>たんじょうびかい</rt></ruby>のために<ruby>部屋<rt>へや</rt></ruby>を<ruby>飾<rt>かざ</rt></ruby>りたいと<ruby>思<rt>おも</rt></ruby>ってるんだけど、<ruby>時間<rt>じかん</rt></ruby><ruby>見<rt>み</rt></ruby>つけて<ruby>私<rt>わたし</rt></ruby>がやるわ。"
+            }
+          ],
+          "options": [
+            "ケーキ<ruby>屋<rt>や</rt></ruby>に<ruby>行<rt>い</rt></ruby>く",
+            "<ruby>車<rt>くるま</rt></ruby>でむかえに<ruby>行<rt>い</rt></ruby>く",
+            "スーパーで<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をする",
+            "かざりをする"
+          ],
+          "correct_answer": 1,
+          "explanation": "<b>【正解】1</b><br/>妻は夫にまず駅前のケーキ屋でチョコレートケーキを買うよう頼み、そのあと祖父母を車で迎えに行ってスーパーで買い物をするよう話しています。部屋の飾り付けは妻自身がやると言っています。したがって、夫がまず行うのは「ケーキ屋に行く」（1）です。"
+        },
+        {
+          "id": "ch4-m1-q4",
+          "questionNumber": 4,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題1　4番.mp3",
+          "situation": "<ruby>授業<rt>じゅぎょう</rt></ruby>で、<ruby>先生<rt>せんせい</rt></ruby>が<ruby>話<rt>はな</rt></ruby>しています。<ruby>学生<rt>がくせい</rt></ruby>は<ruby>来週<rt>らいしゅう</rt></ruby>どんな<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>発表<rt>はっぴょう</rt></ruby>しますか。",
+          "stem": "<ruby>学生<rt>がくせい</rt></ruby>は<ruby>来週<rt>らいしゅう</rt></ruby>どんな<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>発表<rt>はっぴょう</rt></ruby>しますか。",
+          "script": [
+            {
+              "speaker": "先生（男）",
+              "text": "<ruby>皆<rt>みな</rt></ruby>さんはこれまでに、どのような<ruby>場所<rt>ばしょ</rt></ruby>へ<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>ったことがありますか。そこでは、<ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>観光地<rt>かんこうち</rt></ruby>または<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>の<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>ってきたと<ruby>思<rt>おも</rt></ruby>います。そこで、みんなが<ruby>旅行<rt>りょこう</rt></ruby>で<ruby>撮<rt>と</rt></ruby>ってきた<ruby>写真<rt>しゃしん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>一番<rt>いちばん</rt></ruby><ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>っている<ruby>写真<rt>しゃしん</rt></ruby>が<ruby>何<rt>なに</rt></ruby>かをご<ruby>紹介<rt>しょうかい</rt></ruby>してほしいです。<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>までに1<ruby>枚<rt>まい</rt></ruby><ruby>選<rt>えら</rt></ruby>んで、その<ruby>写真<rt>しゃしん</rt></ruby>はいつごろ<ruby>撮<rt>と</rt></ruby>ったのか、どこで<ruby>撮<rt>と</rt></ruby>ったのか、どうして<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>っているのかを<ruby>発表<rt>はっぴょう</rt></ruby>してもらいたいと<ruby>思<rt>おも</rt></ruby>います。<ruby>例<rt>たと</rt></ruby>えば、<ruby>旅行<rt>りょこう</rt></ruby>で<ruby>利用<rt>りよう</rt></ruby>した<ruby>列車<rt>れっしゃ</rt></ruby>の<ruby>写真<rt>しゃしん</rt></ruby>でもいいですよ。"
+            }
+          ],
+          "options": [
+            "<ruby>古<rt>ふる</rt></ruby>いれっしゃの<ruby>写真<rt>しゃしん</rt></ruby>",
+            "<ruby>一番<rt>いちばん</rt></ruby><ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>っている<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>をとった<ruby>写真<rt>しゃしん</rt></ruby>",
+            "<ruby>観光地<rt>かんこうち</rt></ruby>で<ruby>売<rt>う</rt></ruby>られている<ruby>写真<rt>しゃしん</rt></ruby>",
+            "<ruby>自分<rt>じぶん</rt></ruby>が<ruby>一番<rt>いちばん</rt></ruby><ruby>好<rt>す</rt></ruby>きな<ruby>写真<rt>しゃしん</rt></ruby>"
+          ],
+          "correct_answer": 4,
+          "explanation": "<b>【正解】4</b><br/>先生は「旅行で撮ってきた写真の中で一番気に入っている写真（＝自分が一番好きな写真）」を1枚選んで発表するように言っています。古い列車や食べ物は単なる例です。したがって正解は4です。"
+        },
+        {
+          "id": "ch4-m1-q5",
+          "questionNumber": 5,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題1　5番.mp3",
+          "situation": "スーパーで<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>と<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>話<rt>はな</rt></ruby>しています。<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は<ruby>何<rt>なに</rt></ruby>を<ruby>買<rt>か</rt></ruby>いますか。",
+          "stem": "<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は<ruby>何<rt>なに</rt></ruby>を<ruby>買<rt>か</rt></ruby>いますか。",
+          "script": [
+            {
+              "speaker": "男",
+              "text": "<ruby>会社<rt>かいしゃ</rt></ruby>から<ruby>電話<rt>でんわ</rt></ruby>がきちゃって、<ruby>今<rt>いま</rt></ruby>すぐ<ruby>来<rt>き</rt></ruby>てほしいって<ruby>言<rt>い</rt></ruby>われちゃって。<ruby>悪<rt>わる</rt></ruby>いけど、このあとの<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>を<ruby>任<rt>まか</rt></ruby>せてもいい？"
+            },
+            {
+              "speaker": "女",
+              "text": "いいわよ。"
+            },
+            {
+              "speaker": "男",
+              "text": "ありがとう。<ruby>今日<rt>きょう</rt></ruby>はハンバーグを<ruby>作<rt>つく</rt></ruby>ろうと<ruby>思<rt>おも</rt></ruby>って、<ruby>肉<rt>にく</rt></ruby>は<ruby>昨日<rt>きのう</rt></ruby><ruby>買<rt>か</rt></ruby>ったから、<ruby>玉<rt>たま</rt></ruby>ねぎと、<ruby>今日<rt>きょう</rt></ruby><ruby>飲<rt>の</rt></ruby>むお<ruby>酒<rt>さけ</rt></ruby>も<ruby>買<rt>か</rt></ruby>ってね。あとサラダ<ruby>用<rt>よう</rt></ruby>のトマトも。<ruby>一応<rt>いちおう</rt></ruby>、<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>リストを<ruby>渡<rt>わた</rt></ruby>しておくね。"
+            },
+            {
+              "speaker": "女",
+              "text": "うん、わかった。お<ruby>酒<rt>さけ</rt></ruby>は<ruby>何<rt>なに</rt></ruby>を<ruby>飲<rt>の</rt></ruby>む？ビールとワイン、どっちも<ruby>買<rt>か</rt></ruby>おうか。"
+            },
+            {
+              "speaker": "男",
+              "text": "いや、ワインは<ruby>家<rt>いえ</rt></ruby>にあったからいいよ。"
+            },
+            {
+              "speaker": "女",
+              "text": "わかった。"
+            }
+          ],
+          "options": [
+            "<ruby>玉<rt>たま</rt></ruby>ねぎ、トマト",
+            "<ruby>玉<rt>たま</rt></ruby>ねぎ、トマト、ビール",
+            "<ruby>肉<rt>にく</rt></ruby>、<ruby>玉<rt>たま</rt></ruby>ねぎ、トマト、ワイン",
+            "ビール、ワイン"
+          ],
+          "correct_answer": 2,
+          "explanation": "<b>【正解】2</b><br/>男の人は肉は昨日買ったと言っており、玉ねぎ、トマト、今日飲むお酒を買ってほしいと頼んでいます。お酒については「ワインは家にあるからいい」と言ったため、ビールを買うことになります。したがって、女の人が買うのは「玉ねぎ、トマト、ビール」（2）です。"
+        },
+        {
+          "id": "ch4-m1-q6",
+          "questionNumber": 6,
+          "audioUrl": "/audio/nihongo_no_mori_n3/問題1　6番.mp3",
+          "situation": "<ruby>学校<rt>がっこう</rt></ruby>で<ruby>男<rt>おとこ</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>と<ruby>女<rt>おんな</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>が<ruby>話<rt>はな</rt></ruby>しています。<ruby>男<rt>おとこ</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>はこのあとまず<ruby>何<rt>なに</rt></ruby>をしますか。",
+          "stem": "<ruby>男<rt>おとこ</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>はこのあとまず<ruby>何<rt>なに</rt></ruby>をしますか。",
+          "script": [
+            {
+              "speaker": "男の学生",
+              "text": "<ruby>頑張<rt>がんば</rt></ruby>って<ruby>勉強<rt>べんきょう</rt></ruby>してるのに、なかなか<ruby>英語<rt>えいご</rt></ruby>がうまく<ruby>話<rt>はな</rt></ruby>せるようにならないんだよね。<ruby>鈴木<rt>すずき</rt></ruby>さんはなんでそんなに<ruby>上手<rt>じょうず</rt></ruby>なの？"
+            },
+            {
+              "speaker": "女の学生",
+              "text": "<ruby>実<rt>じつ</rt></ruby>は<ruby>小学校<rt>しょうがっこう</rt></ruby>までアメリカに<ruby>住<rt>す</rt></ruby>んでたんだ。そうだ、<ruby>海外<rt>かいがい</rt></ruby>に<ruby>留学<rt>りゅうがく</rt></ruby>してみるなんてどう？でも、お<ruby>金<rt>かね</rt></ruby>もかかるしそんな<ruby>簡単<rt>かんたん</rt></ruby>なことじゃないか。"
+            },
+            {
+              "speaker": "男の学生",
+              "text": "うん、<ruby>留学<rt>りゅうがく</rt></ruby>はしてみたいんだけどね。"
+            },
+            {
+              "speaker": "女の学生",
+              "text": "あ、インターネットでやる<ruby>会話<rt>かいわ</rt></ruby><ruby>授業<rt>じゅぎょう</rt></ruby>って<ruby>知<rt>し</rt></ruby>ってる？<ruby>学校<rt>がっこう</rt></ruby>で<ruby>先生<rt>せんせい</rt></ruby>をしている<ruby>友達<rt>ともだち</rt></ruby>が<ruby>教<rt>おし</rt></ruby>えてるんだけど、<ruby>実際<rt>じっさい</rt></ruby>に<ruby>会話<rt>かいわ</rt></ruby>して<ruby>学<rt>まな</rt></ruby>ぶことができるから、<ruby>自信<rt>じしん</rt></ruby>がつくと<ruby>思<rt>おも</rt></ruby>うよ。"
+            },
+            {
+              "speaker": "男の学生",
+              "text": "へえ、<ruby>知<rt>し</rt></ruby>らなかったよ、<ruby>便利<rt>べんり</rt></ruby>だね。"
+            },
+            {
+              "speaker": "女の学生",
+              "text": "<ruby>最初<rt>さいしょ</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>は<ruby>無料<rt>むりょう</rt></ruby>らしいよ、やってみたら？"
+            },
+            {
+              "speaker": "男の学生",
+              "text": "うん、そうするよ。"
+            },
+            {
+              "speaker": "女の学生",
+              "text": "そうだ、<ruby>海外<rt>かいがい</rt></ruby>の<ruby>映画<rt>えいが</rt></ruby>をみて<ruby>楽<rt>たの</rt></ruby>しみながら<ruby>英語<rt>えいご</rt></ruby>を<ruby>聞<rt>き</rt></ruby>くのもいいと<ruby>思<rt>おも</rt></ruby>うよ、よかったら<ruby>今度<rt>こんど</rt></ruby>うちでみようよ。"
+            },
+            {
+              "speaker": "男の学生",
+              "text": "いいね、そうしよう。"
+            }
+          ],
+          "options": [
+            "りゅうがくをする",
+            "<ruby>英語<rt>えいご</rt></ruby>が<ruby>勉強<rt>べんきょう</rt></ruby>できる<ruby>学校<rt>がっこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>く",
+            "インターネットのじゅぎょうをもうしこむ",
+            "<ruby>海外<rt>かいがい</rt></ruby>のえいがをみる"
+          ],
+          "correct_answer": 3,
+          "explanation": "<b>【正解】3</b><br/>男の学生は英語の会話レッスンについて、女の学生から「最初の授業は無料らしいよ、やってみたら？」と勧められ、「うん、そうするよ」と答えています。映画を見るのは「今度」の話です。したがって、男の学生がまず行うのは「インターネットの授業を申し込む」（3）です。"
+        }
+      ],
+      "answers": [
+        3,
+        2,
+        1,
+        1,
+        4,
+        2,
+        3
+      ]
+    }
+  ]
+}

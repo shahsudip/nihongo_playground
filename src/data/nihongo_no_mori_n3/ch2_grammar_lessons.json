@@ -1,0 +1,1596 @@
+{
+  "bookId": "nihongo-no-mori-n3",
+  "bookTitle": "JLPT N3 この一冊で合格する",
+  "chapter": 2,
+  "chapterTitle": "第2章 文法",
+  "sections": [
+    {
+      "section": 1,
+      "sectionTitle": "第1節 理由・原因",
+      "englishTitle": "Section 1: Reason & Cause",
+      "grammarCount": 9,
+      "lessons": [
+        {
+          "id": "01",
+          "title": "01 〜せい",
+          "grammarPoint": "〜せい",
+          "meaning": "〜が<ruby>原因<rt>げんいん</rt></ruby>で、<ruby>悪<rt>わる</rt></ruby>い<ruby>結果<rt>けっか</rt></ruby>になった",
+          "meaningEn": "Because of / due to (results in a bad / negative outcome)",
+          "connection": "普通形 (ナAだ→な / Nだ→の) + せい (で / か / だ)",
+          "connectionEn": "Plain form (Na-adj + な / N + の) + せい (で / か / だ)",
+          "connectionExamples": [
+            "おまえのせいで",
+            "<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>遅<rt>おく</rt></ruby>れたせいだ",
+            "<ruby>部屋<rt>へや</rt></ruby>が<ruby>暑<rt>あつ</rt></ruby>いせいか"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "テストの<ruby>結果<rt>けっか</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>かったのは、しっかり<ruby>勉強<rt>べんきょう</rt></ruby>しなかった<span class=\"grammar-highlight\">せいだ</span>。",
+              "english": "The reason my test results were bad is because I didn't study properly."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>道<rt>みち</rt></ruby>にあった<ruby>石<rt>いし</rt></ruby>の<span class=\"grammar-highlight\">せいで</span>、<ruby>転<rt>ころ</rt></ruby>んでけがをしてしまった。",
+              "english": "Because of a stone on the road, I tripped and got injured."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>り<ruby>続<rt>つづ</rt></ruby>いた<span class=\"grammar-highlight\">せいで</span>、<ruby>夏祭<rt>なつまつ</rt></ruby>りが<ruby>中止<rt>ちゅうし</rt></ruby>になった。",
+              "english": "Due to the continuous rain, the summer festival was cancelled."
+            }
+          ],
+          "notes": "Used when assigning blame or responsibility for an undesirable or negative outcome. '〜せいか' indicates 'perhaps because... / maybe due to...' where the speaker is not entirely certain."
+        },
+        {
+          "id": "02",
+          "title": "02 〜おかげ",
+          "grammarPoint": "〜おかげ",
+          "meaning": "〜が<ruby>原因<rt>げんいん</rt></ruby>で、いい<ruby>結果<rt>けっか</rt></ruby>になった",
+          "meaningEn": "Thanks to / owing to (results in a good / positive outcome)",
+          "connection": "普通形 (ナAだ→な・である / Nだ→の・である) + おかげ (で / か / だ)",
+          "connectionEn": "Plain form (Na-adj + な・である / N + の・である) + おかげ (で / か / だ)",
+          "connectionExamples": [
+            "<ruby>友達<rt>ともだち</rt></ruby>のおかげだ",
+            "<ruby>母<rt>はは</rt></ruby>のおかげか",
+            "<ruby>応援<rt>おうえん</rt></ruby>してくれたおかげで",
+            "★おかげさまで"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>先生<rt>せんせい</rt></ruby>が<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてくれた<span class=\"grammar-highlight\">おかげで</span>、<ruby>試験<rt>しけん</rt></ruby>に<ruby>合格<rt>ごうかく</rt></ruby>することができた。",
+              "english": "Thanks to my teacher teaching me Japanese, I was able to pass the exam."
+            },
+            {
+              "id": 2,
+              "sentence": "こうしてプロの<ruby>選手<rt>せんしゅ</rt></ruby>になれたのも、<ruby>指導<rt>しどう</rt></ruby>してくれた<ruby>父<rt>ちち</rt></ruby>の<span class=\"grammar-highlight\">おかげだ</span>。",
+              "english": "The reason I was able to become a professional athlete like this is also thanks to my father who coached me."
+            },
+            {
+              "id": 3,
+              "sentence": "みんなの<ruby>応援<rt>おうえん</rt></ruby>の<span class=\"grammar-highlight\">おかげで</span>、<ruby>苦<rt>くる</rt></ruby>しくても<ruby>最後<rt>さいご</rt></ruby>まで<ruby>走<rt>はし</rt></ruby>ることができた。",
+              "english": "Thanks to everyone's cheering, I was able to run all the way to the end even though it was tough."
+            }
+          ],
+          "notes": "Expresses gratitude or appreciation for a favorable cause that led to a positive result. Note: Ironical use is possible in casual speech to blame someone sarcastically, but on JLPT it almost always denotes positive results. 'おかげさまで' is a set polite greeting expression meaning 'Thanks to you / Fortunately'."
+        },
+        {
+          "id": "03",
+          "title": "03 〜もの",
+          "grammarPoint": "〜もの",
+          "meaning": "〜だから",
+          "meaningEn": "Because / given that (giving an excuse, reason, or justification)",
+          "connection": "普通形 (ナAだ→な / Nだ→な) + ものだから / もので\n普通形 + もの / もん",
+          "connectionEn": "Plain form (Na-adj + な / N + な) + ものだから / もので; Plain form + もの / もん",
+          "connectionExamples": [
+            "よくわからなかったもので",
+            "<ruby>苦手<rt>にがて</rt></ruby>なものだから",
+            "<ruby>頑張<rt>がんば</rt></ruby>ったもん"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>宿題<rt>しゅくだい</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れてしまった<span class=\"grammar-highlight\">ものだから</span>、<ruby>先生<rt>せんせい</rt></ruby>に<ruby>怒<rt>おこ</rt></ruby>られてしまった。",
+              "english": "Because I forgot my homework, the teacher got angry at me."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>松下<rt>まつした</rt></ruby>「ちょっと<ruby>食<rt>た</rt></ruby>べ<ruby>過<rt>す</rt></ruby>ぎじゃない？」<br/><ruby>泉<rt>いずみ</rt></ruby>「だって、お<ruby>腹<rt>なか</rt></ruby><ruby>空<rt>す</rt></ruby>いてるんだ<span class=\"grammar-highlight\">もん</span>。」",
+              "english": "Matsushita: 'Aren't you eating a bit too much?' / Izumi: 'Well, it's because I'm so hungry!'"
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>久<rt>ひさ</rt></ruby>しぶりの<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>だった<span class=\"grammar-highlight\">もので</span>、つい<ruby>買<rt>か</rt></ruby>い<ruby>過<rt>す</rt></ruby>ぎてしまいました。",
+              "english": "Because it had been such a long time since I went shopping, I inadvertently overspent."
+            }
+          ],
+          "notes": "'〜ものだから / 〜もので' is used in polite contexts to give an unavoidable reason or excuse for an unexpected outcome. '〜んだもん / 〜もの' is a casual feminine/childish ending used to justify one's actions, often following 'だって'."
+        },
+        {
+          "id": "04",
+          "title": "04 〜ため",
+          "grammarPoint": "〜ため",
+          "meaning": "〜なので（お<ruby>知<rt>し</rt></ruby>らせなど、たくさんの<ruby>人<rt>ひと</rt></ruby>に<ruby>伝<rt>つた</rt></ruby>える<ruby>場面<rt>ばめん</rt></ruby>で<ruby>使<rt>つか</rt></ruby>う）",
+          "meaningEn": "Because of / due to (formal reason, used in public announcements, news, and official reports)",
+          "connection": "普通形 (ナAだ→な・である / Nだ→の・である) + ため (に / だ)",
+          "connectionEn": "Plain form (Na-adj + な・である / N + の・である) + ため (に / だ)",
+          "connectionExamples": [
+            "<ruby>病気<rt>びょうき</rt></ruby>のため",
+            "<ruby>雨<rt>あめ</rt></ruby>のためだ",
+            "<ruby>忙<rt>いそが</rt></ruby>しいために"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>急<rt>きゅう</rt></ruby>に<ruby>店<rt>みせ</rt></ruby>を<ruby>休<rt>やす</rt></ruby>みにしたのは、<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>の<ruby>調子<rt>ちょうし</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>い<span class=\"grammar-highlight\">ためだ</span>。",
+              "english": "The reason the shop was closed suddenly is because the refrigerator malfunctioned."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>相手<rt>あいて</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちを<ruby>考<rt>かんが</rt></ruby>えずに<ruby>言<rt>い</rt></ruby>ってしまった<span class=\"grammar-highlight\">ために</span>、ひどくきずつけてしまった。",
+              "english": "Because I spoke without considering the other person's feelings, I hurt them deeply."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>体調<rt>たいちょう</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>い<span class=\"grammar-highlight\">ため</span>、<ruby>今日<rt>きょう</rt></ruby>は<ruby>仕事<rt>しごと</rt></ruby>を<ruby>休<rt>やす</rt></ruby>みました。",
+              "english": "Due to feeling unwell, I took the day off from work today."
+            }
+          ],
+          "notes": "A formal, objective expression for stating cause and effect. Often found in public announcements, train delay notices, news broadcasts, and business communications. Does not express the speaker's personal intention or command in the following clause."
+        },
+        {
+          "id": "05",
+          "title": "05 〜のだから",
+          "grammarPoint": "〜のだから",
+          "meaning": "〜なので（<ruby>相手<rt>あいて</rt></ruby>もわかっていること）",
+          "meaningEn": "Since / because ... (as is known by both speaker and listener, so naturally...)",
+          "connection": "普通形 (ナAだ→な / Nだ→な) + のだから / のですから / んだから / んですから",
+          "connectionEn": "Plain form (Na-adj + な / N + な) + のだから / のですから / んだから / んですから",
+          "connectionExamples": [
+            "<ruby>子<rt>こ</rt></ruby>どもじゃないんだから",
+            "<ruby>疲<rt>つか</rt></ruby>れているのですから",
+            "<ruby>歩<rt>ある</rt></ruby>くのだから"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>山本<rt>やまもと</rt></ruby>さんは<ruby>車<rt>くるま</rt></ruby>の<ruby>免許<rt>めんきょ</rt></ruby>を<ruby>持<rt>も</rt></ruby>っている<span class=\"grammar-highlight\">んだから</span>、たまには<ruby>運転<rt>うんてん</rt></ruby>すればいいのに。",
+              "english": "Since Yamamoto-san has a driver's license, he should drive once in a while."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>最近<rt>さいきん</rt></ruby>ちゃんと<ruby>眠<rt>ねむ</rt></ruby>れていない<span class=\"grammar-highlight\">のですから</span>、<ruby>今日<rt>きょう</rt></ruby>は<ruby>早<rt>はや</rt></ruby>く<ruby>寝<rt>ね</rt></ruby>てください。",
+              "english": "Since you haven't been sleeping well lately, please go to bed early tonight."
+            },
+            {
+              "id": 3,
+              "sentence": "せっかくのパーティーな<span class=\"grammar-highlight\">んですから</span>、<ruby>楽<rt>たの</rt></ruby>しんでいってくださいね。",
+              "english": "Since it's a special party, please enjoy yourself!"
+            }
+          ],
+          "notes": "Expresses a premise that both speaker and listener understand or accept as an obvious fact. The following clause often contains a suggestion, advice, request, judgment, or expectation (〜てください, 〜ばいいのに, etc.)."
+        },
+        {
+          "id": "06",
+          "title": "06 〜をきっかけに",
+          "grammarPoint": "〜をきっかけに",
+          "meaning": "〜のときから、…を<ruby>始<rt>はじ</rt></ruby>めた",
+          "meaningEn": "Triggered by / taking the opportunity of / starting from",
+          "connection": "Vた+ことをきっかけに / ことがきっかけで / のをきっかけに / のがきっかけで\nN + をきっかけに / がきっかけで",
+          "connectionEn": "V-ta + ことをきっかけに / ことがきっかけで / のをきっかけに / のがきっかけで; N + をきっかけに / がきっかけで",
+          "connectionExamples": [
+            "<ruby>趣味<rt>しゅみ</rt></ruby>をきっかけに",
+            "<ruby>留学<rt>りゅうがく</rt></ruby>したことがきっかけで",
+            "<ruby>友達<rt>ともだち</rt></ruby>ができたのがきっかけで"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>仕事<rt>しごと</rt></ruby>を<ruby>辞<rt>や</rt></ruby>めた<span class=\"grammar-highlight\">のがきっかけで</span>、<ruby>世界中<rt>せかいじゅう</rt></ruby>をまわる<ruby>旅<rt>たび</rt></ruby>をしようと<ruby>思<rt>おも</rt></ruby>うようになった。",
+              "english": "Taking the opportunity of quitting my job, I came to want to travel all around the world."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>子<rt>こ</rt></ruby>どものころに<ruby>行<rt>い</rt></ruby>った<ruby>映画<rt>えいが</rt></ruby><span class=\"grammar-highlight\">がきっかけで</span>、<ruby>音楽<rt>おんがく</rt></ruby>を<ruby>学<rt>まな</rt></ruby>ぶようになった。",
+              "english": "Starting from a movie I went to see in my childhood, I came to study music."
+            },
+            {
+              "id": 3,
+              "sentence": "パソコンを<ruby>買<rt>か</rt></ruby>った<span class=\"grammar-highlight\">のをきっかけに</span>、<ruby>書類<rt>しょるい</rt></ruby>の<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えた。",
+              "english": "Taking the opportunity of buying a computer, I learned how to create documents."
+            }
+          ],
+          "notes": "Indicates a catalyst or turning point that motivated someone to begin a new action or brought about a significant lifestyle change. 'きっかけ' means catalyst, trigger, or initial motivation."
+        },
+        {
+          "id": "07",
+          "title": "07 〜わけだ",
+          "grammarPoint": "〜わけだ",
+          "meaning": "①だから〜なんだね（<ruby>相手<rt>あいて</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、<ruby>納得<rt>なっとく</rt></ruby>したとき）\n②〜ということだね（<ruby>相手<rt>あいて</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いて、<ruby>内容<rt>ないよう</rt></ruby>をまとめて<ruby>言<rt>い</rt></ruby>うとき）",
+          "meaningEn": "① That explains why... / No wonder... (upon hearing a reason and understanding)\n② In other words, that means... (summarizing what was said)",
+          "connection": "普通形 (ナAだ→な / Nだ→な) + わけだ",
+          "connectionEn": "Plain form (Na-adj + な / N + な) + わけだ",
+          "connectionExamples": [
+            "きれいなわけだ",
+            "<ruby>人気<rt>にんき</rt></ruby>があるわけだ",
+            "<ruby>忙<rt>いそが</rt></ruby>しいわけだ"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>君<rt>きみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>をまとめると、つまり<ruby>明日<rt>あした</rt></ruby>から<ruby>一週間<rt>いっしゅうかん</rt></ruby><ruby>休<rt>やす</rt></ruby>みたいという<span class=\"grammar-highlight\">わけだ</span>。",
+              "english": "To summarize what you're saying, you mean you want to take a week off starting tomorrow."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>佐藤<rt>さとう</rt></ruby>さん、3<ruby>年間<rt>ねんかん</rt></ruby><ruby>海外<rt>かいがい</rt></ruby>で<ruby>仕事<rt>しごと</rt></ruby>をしていたんだってね。<ruby>英語<rt>えいご</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>な<span class=\"grammar-highlight\">わけだ</span>。",
+              "english": "Sato-san, I heard you worked overseas for 3 years. No wonder your English is so fluent!"
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>美容師<rt>びようし</rt></ruby>だそうだ。だからかみの<ruby>毛<rt>け</rt></ruby>の<ruby>色<rt>いろ</rt></ruby>が<ruby>素敵<rt>すてき</rt></ruby>な<span class=\"grammar-highlight\">わけだ</span>。",
+              "english": "I heard she is a hairstylist. That explains why her hair color is so lovely."
+            }
+          ],
+          "notes": "Expresses natural logical consequence. Meaning 1 indicates a realization of 'No wonder! / That's why...' when a puzzle or question makes total sense after learning the reason. Meaning 2 indicates restating or rephrasing a conclusion: 'So that means...'."
+        },
+        {
+          "id": "08",
+          "title": "08 〜以来",
+          "grammarPoint": "〜以来",
+          "meaning": "〜のときから、ずっと<ruby>同<rt>おな</rt></ruby>じだ",
+          "meaningEn": "Ever since / from that time onward (and the state has continued unchanged)",
+          "connection": "Vて / N + <ruby>以来<rt>いらい</rt></ruby>",
+          "connectionEn": "V-te / N + 以来 (いらい)",
+          "connectionExamples": [
+            "<ruby>卒業<rt>そつぎょう</rt></ruby>して<ruby>以来<rt>いらい</rt></ruby>",
+            "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>して<ruby>以来<rt>いらい</rt></ruby>",
+            "<ruby>出会<rt>であ</rt></ruby>って<ruby>以来<rt>いらい</rt></ruby>",
+            "★あれ<ruby>以来<rt>いらい</rt></ruby>"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>彼女<rt>かのじょ</rt></ruby>とは<ruby>高校<rt>こうこう</rt></ruby>で<ruby>出会<rt>であ</rt></ruby>って<span class=\"grammar-highlight\"><ruby>以来<rt>いらい</rt></ruby></span>、ずっと<ruby>一番<rt>いちばん</rt></ruby>の<ruby>親友<rt>しんゆう</rt></ruby>だ。",
+              "english": "Ever since meeting her in high school, she has been my best friend continuously."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>彼<rt>かれ</rt></ruby>とは、<span class=\"grammar-highlight\">あれ<ruby>以来<rt>いらい</rt></ruby></span><ruby>連絡<rt>れんらく</rt></ruby>を<ruby>取<rt>と</rt></ruby>っていない。",
+              "english": "Ever since that incident, I haven't contacted him."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>初<rt>はじ</rt></ruby>めて<ruby>海外<rt>かいがい</rt></ruby>に<ruby>行<rt>い</rt></ruby>って<span class=\"grammar-highlight\"><ruby>以来<rt>いらい</rt></ruby></span>、<ruby>文化<rt>ぶんか</rt></ruby>の<ruby>違<rt>ちが</rt></ruby>いに<ruby>興味<rt>きょうみ</rt></ruby>を<ruby>持<rt>も</rt></ruby>つようになった。",
+              "english": "Ever since I went abroad for the first time, I have become interested in cultural differences."
+            }
+          ],
+          "notes": "Indicates that since a certain past event occurred, a state or action has persisted continuously up to the present. Cannot be used for immediate or very recent events (e.g. 'since yesterday morning'). 'あれ以来' is a common fixed phrase meaning 'ever since then'."
+        },
+        {
+          "id": "09",
+          "title": "09 〜によって①",
+          "grammarPoint": "〜によって①",
+          "meaning": "〜が<ruby>理由<rt>りゆう</rt></ruby>で",
+          "meaningEn": "Due to / caused by / because of",
+          "connection": "N + によって / により",
+          "connectionEn": "N + によって / により",
+          "connectionExamples": [
+            "<ruby>地震<rt>じしん</rt></ruby>によって",
+            "<ruby>交通事故<rt>こうつうじこ</rt></ruby>によって",
+            "<ruby>値上<rt>ねあ</rt></ruby>げにより"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>病気<rt>びょうき</rt></ruby>の<ruby>流行<rt>りゅうこう</rt></ruby><span class=\"grammar-highlight\">によって</span>、<ruby>生活<rt>せいかつ</rt></ruby>や<ruby>仕事<rt>しごと</rt></ruby>の<ruby>仕方<rt>しかた</rt></ruby>が<ruby>大<rt>おお</rt></ruby>きく<ruby>変<rt>か</rt></ruby>わった。",
+              "english": "Due to the epidemic of the illness, our ways of life and work changed drastically."
+            },
+            {
+              "id": 2,
+              "sentence": "この<ruby>本<rt>ほん</rt></ruby>と<ruby>出会<rt>であ</rt></ruby>ったこと<span class=\"grammar-highlight\">によって</span>、<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>む<ruby>楽<rt>たの</rt></ruby>しさがわかった。",
+              "english": "Through encountering this book, I came to appreciate the joy of reading books."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>大雪<rt>おおゆき</rt></ruby><span class=\"grammar-highlight\">により</span>、いくつかの<ruby>道<rt>みち</rt></ruby>が<ruby>通<rt>とお</rt></ruby>れなくなっている。",
+              "english": "Due to heavy snow, several roads have become impassable."
+            }
+          ],
+          "notes": "Indicates a cause, reason, or condition that led to a major result or change. 'により' is more formal and commonly used in news reports, announcements, and written Japanese. (Note: other usages of 〜によって indicate means/method, agent of passive voice, or variation according to condition)."
+        }
+      ]
+    },
+    {
+      "section": 2,
+      "sectionTitle": "第2節 状況・変化",
+      "englishTitle": "Section 2: Situation & Change",
+      "grammarCount": 7,
+      "lessons": [
+        {
+          "id": "10",
+          "title": "10 〜まま",
+          "grammarPoint": "〜まま",
+          "category": "状況",
+          "meaning": "<ruby>変<rt>か</rt></ruby>わらないで",
+          "meaningEn": "Remaining as it is / while still in the state of",
+          "connection": "Vた / Vない / イA / ナAな + まま\nN + のまま",
+          "connectionEn": "V-ta / V-nai / I-adj / Na-adj + な + まま; N + のまま",
+          "connectionExamples": [
+            "<ruby>壊<rt>こわ</rt></ruby>れたまま",
+            "<ruby>昨日<rt>きのう</rt></ruby>のまま",
+            "<ruby>自然<rt>しぜん</rt></ruby>なまま",
+            "★そのまま"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>私<rt>わたし</rt></ruby>のふるさとの<ruby>景色<rt>けしき</rt></ruby>は、<ruby>子<rt>こ</rt></ruby>どものころの<span class=\"grammar-highlight\">まま</span><ruby>変<rt>か</rt></ruby>わっていない。",
+              "english": "The scenery of my hometown has not changed, remaining just as it was in my childhood."
+            },
+            {
+              "id": 2,
+              "sentence": "エアコンをつけた<span class=\"grammar-highlight\">まま</span>、<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>てしまった。",
+              "english": "I left the house with the air conditioner still on."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>片付<rt>かたづ</rt></ruby>けはせず、<span class=\"grammar-highlight\">そのまま</span>にしておいてください。",
+              "english": "Please don't tidy up, just leave it as it is."
+            }
+          ],
+          "notes": "Expresses that a certain condition or state remains unchanged, often when something that should normally be undone (e.g. turning off the AC, taking off shoes) was left unattended."
+        },
+        {
+          "id": "11",
+          "title": "11 〜つつ",
+          "grammarPoint": "〜つつ",
+          "category": "状況",
+          "meaning": "〜ながら",
+          "meaningEn": "While / although / despite (doing A while doing B; or although acknowledging A, doing B)",
+          "connection": "Vます + つつ",
+          "connectionEn": "Verb (stem of masu form) + つつ",
+          "connectionExamples": [
+            "<ruby>思<rt>おも</rt></ruby>いつつ",
+            "<ruby>理解<rt>りかい</rt></ruby>しつつ",
+            "<ruby>我慢<rt>がまん</rt></ruby>しつつ"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>彼女<rt>かのじょ</rt></ruby>が<ruby>僕<rt>ぼく</rt></ruby>のことを<ruby>好<rt>す</rt></ruby>きではないと<ruby>知<rt>し</rt></ruby>り<span class=\"grammar-highlight\">つつも</span>、あきらめることができない。",
+              "english": "Even while knowing that she does not love me, I cannot give up."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>洗濯<rt>せんたく</rt></ruby>しなければと<ruby>思<rt>おも</rt></ruby>い<span class=\"grammar-highlight\">つつも</span>、<ruby>疲<rt>つか</rt></ruby>れたせいか<ruby>帰<rt>かえ</rt></ruby>ってすぐに<ruby>寝<rt>ね</rt></ruby>てしまった。",
+              "english": "Although thinking I had to do laundry, perhaps because I was exhausted, I fell asleep right after returning home."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>料理<rt>りょうり</rt></ruby>をし<span class=\"grammar-highlight\">つつ</span>、<ruby>子<rt>こ</rt></ruby>どもの<ruby>面倒<rt>めんどう</rt></ruby>を<ruby>見<rt>み</rt></ruby>るのはとても<ruby>大変<rt>たいへん</rt></ruby>だ。",
+              "english": "Taking care of children while cooking is very difficult."
+            }
+          ],
+          "notes": "Has two uses: 1) Simultaneous action (= ながら), more formal and literary. 2) Contradiction (= けれども, often as 〜つつも: 'while knowing/feeling X, doing Y anyway')."
+        },
+        {
+          "id": "12",
+          "title": "12 〜とともに",
+          "grammarPoint": "〜とともに",
+          "category": "状況・変化",
+          "meaning": "〜と<ruby>同時<rt>どうじ</rt></ruby>に",
+          "meaningEn": "Together with / at the same time as / along with (as one thing changes, another changes)",
+          "connection": "Vる / N / Nである + とともに",
+          "connectionEn": "V-dictionary / N / N + である + とともに",
+          "connectionExamples": [
+            "<ruby>変化<rt>へんか</rt></ruby>するとともに",
+            "<ruby>時代<rt>じだい</rt></ruby>とともに",
+            "<ruby>社長<rt>しゃちょう</rt></ruby>であるとともに"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>私<rt>わたし</rt></ruby>に<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてくれる<ruby>先生<rt>せんせい</rt></ruby>である<span class=\"grammar-highlight\">とともに</span>、<ruby>私<rt>わたし</rt></ruby>の<ruby>友人<rt>ゆうじん</rt></ruby>でもある。",
+              "english": "She is a teacher who teaches me Japanese, and at the same time, also a friend of mine."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>気温<rt>きおん</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がる<span class=\"grammar-highlight\">とともに</span>、<ruby>体調<rt>たいちょう</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くなる<ruby>人<rt>ひと</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えてきた。",
+              "english": "As the temperature rises, the number of people who feel unwell has increased."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>高校<rt>こうこう</rt></ruby><ruby>卒業<rt>そつぎょう</rt></ruby><span class=\"grammar-highlight\">とともに</span>、<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>しをして<ruby>東京<rt>とうきょう</rt></ruby>で<ruby>仕事<rt>しごと</rt></ruby>を<ruby>始<rt>はじ</rt></ruby>めた。",
+              "english": "At the same time as graduating from high school, I moved and started working in Tokyo."
+            }
+          ],
+          "notes": "Can express: 1) Simultaneous state/role ('A and at the same time B'). 2) Proportional change ('as A progresses, B also progresses'). 3) Doing something together with someone / concurrent event."
+        },
+        {
+          "id": "13",
+          "title": "13 〜つつある",
+          "grammarPoint": "〜つつある",
+          "category": "変化",
+          "meaning": "どんどん〜になる（<ruby>少<rt>すこ</rt></ruby>しずつ<ruby>変化<rt>へんか</rt></ruby>している<ruby>様子<rt>ようす</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>すときに<ruby>使<rt>つか</rt></ruby>う）",
+          "meaningEn": "In the process of / steadily becoming (gradual ongoing transformation)",
+          "connection": "Vます + つつある",
+          "connectionEn": "Verb (stem of masu form) + つつある",
+          "connectionExamples": [
+            "<ruby>減少<rt>げんしょう</rt></ruby>しつつある",
+            "<ruby>広<rt>ひろ</rt></ruby>まりつつある",
+            "<ruby>消<rt>き</rt></ruby>えつつある"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "アニメや<ruby>漫画<rt>まんが</rt></ruby>の<ruby>人気<rt>にんき</rt></ruby>によって、<ruby>日本語<rt>にほんご</rt></ruby><ruby>学習者<rt>がくしゅうしゃ</rt></ruby>は<ruby>増加<rt>ぞうか</rt></ruby>し<span class=\"grammar-highlight\">つつある</span>。",
+              "english": "Due to the popularity of anime and manga, the number of Japanese learners is steadily increasing."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>時代<rt>じだい</rt></ruby>の<ruby>変化<rt>へんか</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わせて、<ruby>人々<rt>ひとびと</rt></ruby>の<ruby>働<rt>はたら</rt></ruby>き<ruby>方<rt>かた</rt></ruby>は<ruby>変<rt>か</rt></ruby>わり<span class=\"grammar-highlight\">つつある</span>。",
+              "english": "In accordance with changing times, people's ways of working are in the process of changing."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>彼<rt>かれ</rt></ruby>の<ruby>病気<rt>びょうき</rt></ruby>は<ruby>治<rt>なお</rt></ruby>り<span class=\"grammar-highlight\">つつある</span>が、まだ<ruby>病院<rt>びょういん</rt></ruby>へ<ruby>通<rt>かよ</rt></ruby>わなければならないらしい。",
+              "english": "His illness is gradually recovering, but it seems he still has to visit the hospital."
+            }
+          ],
+          "notes": "A formal, written expression used with verbs indicating change (増加する, 減少する, 回復する, 変わる, etc.) to show a continuous shift or evolution in progress toward a particular direction."
+        },
+        {
+          "id": "14",
+          "title": "14 〜ば〜ほど",
+          "grammarPoint": "〜ば〜ほど",
+          "category": "変化",
+          "meaning": "〜なら、もっと…",
+          "meaningEn": "The more... the more...",
+          "connection": "Vば + Vる + ほど\nイAければ + イA + ほど\nナA / Nであれば + ナA / Nであるほど\nナA / Nであればあるほど",
+          "connectionEn": "V-ba + V-dictionary + ほど; I-adj-ければ + I-adj + ほど; Na-adj / N + であれば + であれば / であるほど / であればあるほど",
+          "connectionExamples": [
+            "<ruby>話<rt>はな</rt></ruby>せば<ruby>話<rt>はな</rt></ruby>すほど",
+            "<ruby>早<rt>はや</rt></ruby>ければ<ruby>早<rt>はや</rt></ruby>いほど",
+            "<ruby>有名<rt>ゆうめい</rt></ruby>であればあるほど"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "マンゴーやバナナは<ruby>甘<rt>あま</rt></ruby>ければ<span class=\"grammar-highlight\"><ruby>甘<rt>あま</rt></ruby>いほど</span>いい。",
+              "english": "When it comes to mangoes and bananas, the sweeter they are, the better."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>大変<rt>たいへん</rt></ruby>であれば<span class=\"grammar-highlight\"><ruby>大変<rt>たいへん</rt></ruby>であるほど</span>、やり<ruby>終<rt>お</rt></ruby>えたときの<ruby>喜<rt>よろこ</rt></ruby>びは<ruby>大<rt>おお</rt></ruby>きい。",
+              "english": "The tougher something is, the greater the joy is when you finish it."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>料理<rt>りょうり</rt></ruby>は<ruby>作<rt>つく</rt></ruby>れば<span class=\"grammar-highlight\"><ruby>作<rt>つく</rt></ruby>るほど</span><ruby>上手<rt>じょうず</rt></ruby>になるものだ。",
+              "english": "With cooking, the more you make, the better you become."
+            }
+          ],
+          "notes": "Indicates that an increase in degree in the first condition directly results in an increase in degree in the second condition. The first conditional part can sometimes be omitted in casual speech (e.g. 早いほどいい)."
+        },
+        {
+          "id": "15",
+          "title": "15 〜にしたがって",
+          "grammarPoint": "〜にしたがって",
+          "category": "変化",
+          "meaning": "〜すると、だんだんと…も<ruby>変<rt>か</rt></ruby>わる",
+          "meaningEn": "As ... / in proportion to / along with (as one thing changes, another changes in tandem)",
+          "connection": "Vる / N + にしたがって",
+          "connectionEn": "V-dictionary / N + にしたがって",
+          "connectionExamples": [
+            "<ruby>寒<rt>さむ</rt></ruby>くなるにしたがって",
+            "<ruby>変化<rt>へんか</rt></ruby>にしたがって",
+            "<ruby>時間<rt>じかん</rt></ruby>が<ruby>過<rt>す</rt></ruby>ぎるにしたがって"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>年<rt>とし</rt></ruby>を<ruby>取<rt>と</rt></ruby>る<span class=\"grammar-highlight\">にしたがって</span>、<ruby>小<rt>ちい</rt></ruby>さなことが<ruby>気<rt>き</rt></ruby>にならなくなる。",
+              "english": "As you grow older, small matters bother you less and less."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>昼間<rt>ひるま</rt></ruby>は<ruby>暑<rt>あつ</rt></ruby>いが、<ruby>日<rt>ひ</rt></ruby>が<ruby>落<rt>お</rt></ruby>ちる<span class=\"grammar-highlight\">にしたがって</span><ruby>涼<rt>すず</rt></ruby>しくなる。",
+              "english": "It is hot during daytime, but as the sun goes down, it gets cooler."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>春<rt>はる</rt></ruby>が<ruby>近<rt>ちか</rt></ruby>づく<span class=\"grammar-highlight\">にしたがって</span>、<ruby>桜<rt>さくら</rt></ruby>の<ruby>花<rt>はな</rt></ruby>が<ruby>咲<rt>さ</rt></ruby>き<ruby>始<rt>はじ</rt></ruby>める。",
+              "english": "As spring approaches, cherry blossoms begin to bloom."
+            }
+          ],
+          "notes": "Describes proportional, parallel, or concurrent change in one state as another progresses naturally. Also can mean 'in accordance with / obeying' (rules, directions), though in this section it focuses on natural change."
+        },
+        {
+          "id": "16",
+          "title": "16 〜ばかりだ①",
+          "grammarPoint": "〜ばかりだ①",
+          "category": "変化",
+          "meaning": "どんどん〜になる（<ruby>悪<rt>わる</rt></ruby>くなる、よくならない）",
+          "meaningEn": "Continues to / keep on ... (trending in a negative or undesirable direction)",
+          "connection": "Vる + ばかり (で / だ)",
+          "connectionEn": "V-dictionary + ばかり (で / だ)",
+          "connectionExamples": [
+            "ひどくなるばかり",
+            "<ruby>減<rt>へ</rt></ruby>るばかりで",
+            "<ruby>下<rt>さ</rt></ruby>がるばかりだ"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>給料<rt>きゅうりょう</rt></ruby>は<ruby>上<rt>あ</rt></ruby>がらないのに、<ruby>物価<rt>ぶっか</rt></ruby>は<ruby>高<rt>たか</rt></ruby>くなる<span class=\"grammar-highlight\">ばかりだ</span>。",
+              "english": "Even though salaries do not rise, commodity prices just keep getting higher."
+            },
+            {
+              "id": 2,
+              "sentence": "かぜをひいてしまい、<ruby>体調<rt>たいちょう</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くなる<span class=\"grammar-highlight\">ばかりだ</span>。",
+              "english": "I caught a cold, and my physical condition just keeps deteriorating."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>毎日<rt>まいにち</rt></ruby>の<ruby>残業<rt>ざんぎょう</rt></ruby>で<ruby>疲<rt>つか</rt></ruby>れがたまる<span class=\"grammar-highlight\">ばかりだ</span>。",
+              "english": "With overtime every day, fatigue just keeps accumulating."
+            }
+          ],
+          "notes": "Paired with a dictionary-form verb expressing change to emphasize that a negative situation or deterioration is proceeding unstopped in one direction. Compare with 〜一方だ (which can occasionally be neutral, while 〜ばかりだ① emphasizes negative/worsening trends)."
+        }
+      ]
+    },
+    {
+      "section": 3,
+      "sectionTitle": "第3節 立場・基準",
+      "englishTitle": "Section 3: Standpoint & Standard",
+      "grammarCount": 9,
+      "lessons": [
+        {
+          "id": "17",
+          "title": "17 〜として",
+          "grammarPoint": "〜として",
+          "category": "立場",
+          "meaning": "〜の<ruby>立場<rt>たちば</rt></ruby>で",
+          "meaningEn": "As / in the capacity of / in the role of",
+          "connection": "N + として\nN1 + としての + N2",
+          "connectionEn": "N + として; N1 + としての + N2",
+          "connectionExamples": [
+            "<ruby>医者<rt>いしゃ</rt></ruby>として",
+            "<ruby>学生<rt>がくせい</rt></ruby>として",
+            "<ruby>親<rt>おや</rt></ruby>としての<ruby>責任<rt>せきにん</rt></ruby>"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>入学式<rt>にゅうがくしき</rt></ruby>では、<ruby>新入生<rt>しんにゅうせい</rt></ruby>の<ruby>代表<rt>だいひょう</rt></ruby><span class=\"grammar-highlight\">として</span>みんなの<ruby>前<rt>まえ</rt></ruby>で<ruby>話<rt>はなし</rt></ruby>をした。",
+              "english": "At the entrance ceremony, I gave a speech in front of everyone as the representative of new students."
+            },
+            {
+              "id": 2,
+              "sentence": "もう<ruby>少<rt>すこ</rt></ruby>し、<ruby>大人<rt>おとな</rt></ruby><span class=\"grammar-highlight\">としての</span><ruby>行動<rt>こうどう</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>え<ruby>直<rt>なお</rt></ruby>しましょう。",
+              "english": "Let us rethink our behavior a bit more from the standpoint of an adult."
+            },
+            {
+              "id": 3,
+              "sentence": "コンビニの<ruby>店長<rt>てんちょう</rt></ruby><span class=\"grammar-highlight\">として</span>、<ruby>仕事<rt>しごと</rt></ruby>は<ruby>全部<rt>ぜんぶ</rt></ruby>できるようになるべきだ。",
+              "english": "As a convenience store manager, one should become able to perform all tasks."
+            }
+          ],
+          "notes": "Indicates a role, status, capacity, qualification, or standpoint from which someone acts or evaluates something."
+        },
+        {
+          "id": "18",
+          "title": "18 〜にとって",
+          "grammarPoint": "〜にとって",
+          "category": "立場",
+          "meaning": "〜の<ruby>立場<rt>たちば</rt></ruby>から<ruby>考<rt>かんが</rt></ruby>えて",
+          "meaningEn": "For / to / from the perspective of",
+          "connection": "N + にとって\nN1 + にとっての + N2",
+          "connectionEn": "N + にとって; N1 + にとっての + N2",
+          "connectionExamples": [
+            "<ruby>私<rt>わたし</rt></ruby>にとって",
+            "<ruby>外国人<rt>がいこくじん</rt></ruby>にとって",
+            "<ruby>植物<rt>しょくぶつ</rt></ruby>にとっての<ruby>栄養<rt>えいよう</rt></ruby>"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "どんな<ruby>人<rt>ひと</rt></ruby><span class=\"grammar-highlight\">にとっても</span><ruby>生活<rt>せいかつ</rt></ruby>しやすい<ruby>国<rt>くに</rt></ruby>にすることを<ruby>目標<rt>もくひょう</rt></ruby>にしている。",
+              "english": "We aim to make it an easy country to live in for everyone."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>私<rt>わたし</rt></ruby><span class=\"grammar-highlight\">にとっての</span><ruby>幸<rt>しあわ</rt></ruby>せとは、<ruby>家族<rt>かぞく</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>過<rt>す</rt></ruby>ごすことだ。",
+              "english": "To me, happiness means spending time together with my family."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>中村<rt>なかむら</rt></ruby>さん<span class=\"grammar-highlight\">にとって</span><ruby>一番<rt>いちばん</rt></ruby>の<ruby>楽<rt>たの</rt></ruby>しみは、<ruby>孫<rt>まご</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>にご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べることだそうです。",
+              "english": "For Nakamura-san, the greatest pleasure is said to be having meals together with his grandchild."
+            }
+          ],
+          "notes": "Indicates an evaluation, opinion, judgment, or feeling assessed from the perspective or standpoint of a person or entity."
+        },
+        {
+          "id": "19",
+          "title": "19 〜に基づいて",
+          "grammarPoint": "〜に基づいて",
+          "category": "基準",
+          "meaning": "〜をもとにして",
+          "meaningEn": "Based on / upon the basis of",
+          "connection": "N + に<ruby>基<rt>もと</rt></ruby>づいて\nN1 + に<ruby>基<rt>もと</rt></ruby>づく / に<ruby>基<rt>もと</rt></ruby>づいた + N2",
+          "connectionEn": "N + に基づいて; N1 + に基づく / に基づいた + N2",
+          "connectionExamples": [
+            "<ruby>計画<rt>けいかく</rt></ruby>に<ruby>基<rt>もと</rt></ruby>づいて",
+            "<ruby>考<rt>かんが</rt></ruby>えに<ruby>基<rt>もと</rt></ruby>づく<ruby>行動<rt>こうどう</rt></ruby>",
+            "<ruby>経験<rt>けいけん</rt></ruby>に<ruby>基<rt>もと</rt></ruby>づいたアドバイス"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>年<rt>とし</rt></ruby>の<ruby>初<rt>はじ</rt></ruby>めに<ruby>決<rt>き</rt></ruby>めた<ruby>目標<rt>もくひょう</rt></ruby><span class=\"grammar-highlight\">に<ruby>基<rt>もと</rt></ruby>づいて</span>、<ruby>計画<rt>けいかく</rt></ruby>を<ruby>立<rt>た</rt></ruby>てる。",
+              "english": "I make plans based on the goals decided at the beginning of the year."
+            },
+            {
+              "id": 2,
+              "sentence": "この<ruby>商品<rt>しょうひん</rt></ruby>は、<ruby>多<rt>おお</rt></ruby>くの<ruby>人<rt>ひと</rt></ruby>の<ruby>意見<rt>いけん</rt></ruby><span class=\"grammar-highlight\">に<ruby>基<rt>もと</rt></ruby>づいて</span><ruby>作<rt>つく</rt></ruby>られている。",
+              "english": "This product was made based on the opinions of many people."
+            },
+            {
+              "id": 3,
+              "sentence": "この<ruby>映画<rt>えいが</rt></ruby>は、<ruby>実際<rt>じっさい</rt></ruby>にあった<ruby>出来事<rt>できごと</rt></ruby><span class=\"grammar-highlight\">に<ruby>基<rt>もと</rt></ruby>づいて</span><ruby>作<rt>つく</rt></ruby>られました。",
+              "english": "This movie was created based on true events that actually occurred."
+            }
+          ],
+          "notes": "Indicates taking a factual source, theory, principle, policy, or data as the foundation/basis for an action or creation."
+        },
+        {
+          "id": "20",
+          "title": "20 〜を中心に",
+          "grammarPoint": "〜を中心に",
+          "category": "基準",
+          "meaning": "〜を<ruby>基本<rt>きほん</rt></ruby>に<ruby>考<rt>かんが</rt></ruby>えて",
+          "meaningEn": "Focusing on / centered around / primarily",
+          "connection": "N + を<ruby>中心<rt>ちゅうしん</rt></ruby>に (して)\nN + を<ruby>中心<rt>ちゅうしん</rt></ruby>として",
+          "connectionEn": "N + を中心に(して) / を中心として",
+          "connectionExamples": [
+            "インターネットを<ruby>中心<rt>ちゅうしん</rt></ruby>にして",
+            "<ruby>大学生<rt>だいがくせい</rt></ruby>を<ruby>中心<rt>ちゅうしん</rt></ruby>に",
+            "<ruby>首都<rt>しゅと</rt></ruby>を<ruby>中心<rt>ちゅうしん</rt></ruby>として"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>若者<rt>わかもの</rt></ruby><span class=\"grammar-highlight\">を<ruby>中心<rt>ちゅうしん</rt></ruby>にして</span>、<ruby>古<rt>ふる</rt></ruby>いカメラで<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>ることが<ruby>流行<rt>はや</rt></ruby>っている。",
+              "english": "Taking photos with vintage cameras is trending, mainly centered around young people."
+            },
+            {
+              "id": 2,
+              "sentence": "この<ruby>地域<rt>ちいき</rt></ruby>の<ruby>人々<rt>ひとびと</rt></ruby>は、<ruby>中学生<rt>ちゅうがくせい</rt></ruby><span class=\"grammar-highlight\">を<ruby>中心<rt>ちゅうしん</rt></ruby>として</span><ruby>町<rt>まち</rt></ruby>のごみ<ruby>拾<rt>ひろ</rt></ruby>いを<ruby>行<rt>おこな</rt></ruby>っている。",
+              "english": "Residents of this community conduct town cleanups, with middle school students playing the central role."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>今夜<rt>こんや</rt></ruby>は、<ruby>西日本<rt>にしにほん</rt></ruby><span class=\"grammar-highlight\">を<ruby>中心<rt>ちゅうしん</rt></ruby>に</span><ruby>大雨<rt>おおあめ</rt></ruby>になると<ruby>予報<rt>よほう</rt></ruby>されている。",
+              "english": "Heavy rain is forecast for tonight, predominantly centered around western Japan."
+            }
+          ],
+          "notes": "Indicates that someone or something is treated as the focal point, main agent, or geographic core of an activity."
+        },
+        {
+          "id": "21",
+          "title": "21 〜とおり",
+          "grammarPoint": "〜とおり",
+          "category": "基準",
+          "meaning": "〜と<ruby>同<rt>おな</rt></ruby>じように",
+          "meaningEn": "Just as / exactly as / in accordance with",
+          "connection": "Vる / Vた + とおり (に)\nN + のとおり (に) / どおり (に)",
+          "connectionEn": "V-dict / V-ta + とおり(に); N + のとおり(に) / どおり(に)",
+          "connectionExamples": [
+            "<ruby>思<rt>おも</rt></ruby>ったとおり",
+            "<ruby>言<rt>い</rt></ruby>うとおりに",
+            "<ruby>予定<rt>よてい</rt></ruby>どおり"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>本<rt>ほん</rt></ruby>に<ruby>書<rt>か</rt></ruby>いてある<span class=\"grammar-highlight\">とおりに</span>やったのに、うまくいかない。",
+              "english": "Even though I did it exactly as written in the book, it isn't going well."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>計画<rt>けいかく</rt></ruby><span class=\"grammar-highlight\">どおり</span><ruby>進<rt>すす</rt></ruby>まないことはよくあることなので、<ruby>心配<rt>しんぱい</rt></ruby>しなくてもいいですよ。",
+              "english": "Things not going according to plan is very common, so you don't need to worry."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>母<rt>はは</rt></ruby>が<ruby>教<rt>おし</rt></ruby>えてくれた<span class=\"grammar-highlight\">とおりに</span><ruby>作<rt>つく</rt></ruby>ってみたが、なかなかおいしく<ruby>作<rt>つく</rt></ruby>ることができない。",
+              "english": "I tried making it just as my mother taught me, but I can't quite make it delicious."
+            }
+          ],
+          "notes": "When attached directly to certain Kanji nouns (予定, 計画, 時間, 思い), it undergoes rendaku and becomes '〜どおり'."
+        },
+        {
+          "id": "22",
+          "title": "22 〜という",
+          "grammarPoint": "〜という",
+          "category": "基準",
+          "meaning": "〜という<ruby>名前<rt>なまえ</rt></ruby>の（<ruby>知<rt>し</rt></ruby>らないことを<ruby>説明<rt>せつめい</rt></ruby>したり<ruby>教<rt>おし</rt></ruby>えてもらったりするときに<ruby>使<rt>つか</rt></ruby>う）",
+          "meaningEn": "Called / named / by the name of",
+          "connection": "N1 + という / っていう / って + N2",
+          "connectionEn": "N1 + という / っていう / って + N2",
+          "connectionExamples": [
+            "<ruby>立川<rt>たちかわ</rt></ruby>という<ruby>街<rt>まち</rt></ruby>",
+            "<ruby>佐藤<rt>さとう</rt></ruby>さんっていう<ruby>人<rt>ひと</rt></ruby>",
+            "日本語の森って<ruby>会社<rt>かいしゃ</rt></ruby>"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>客<rt>きゃく</rt></ruby>「ひたち<span class=\"grammar-highlight\">っていう</span><ruby>駅<rt>えき</rt></ruby>に<ruby>行<rt>い</rt></ruby>きたいんですが、どの<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ればいいですか？」<br/><ruby>駅員<rt>えきいん</rt></ruby>「ひたちですか？3<ruby>番線<rt>ばんせん</rt></ruby>の<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ってください。」",
+              "english": "Customer: 'I want to go to a station called Hitachi; which train should I take?' Station staff: 'Hitachi? Please board the train on platform 3.'"
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>私<rt>わたし</rt></ruby>は、トイプードル<span class=\"grammar-highlight\">という</span><ruby>種類<rt>しゅるい</rt></ruby>の<ruby>犬<rt>いぬ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>っています。",
+              "english": "I have a dog of the breed called toy poodle."
+            },
+            {
+              "id": 3,
+              "sentence": "となりに<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>してきた<ruby>加藤<rt>かとう</rt></ruby>さん<span class=\"grammar-highlight\">って</span><ruby>人<rt>ひと</rt></ruby>、<ruby>知<rt>し</rt></ruby>ってる？",
+              "english": "Do you know that person called Kato-san who moved in next door?"
+            }
+          ],
+          "notes": "Used to introduce or ask about a name that is presumed to be unfamiliar to the listener. 'っていう' and 'って' are conversational spoken variants."
+        },
+        {
+          "id": "23",
+          "title": "23 〜に対して①",
+          "grammarPoint": "〜に対して①",
+          "category": "基準",
+          "meaning": "〜に / 〜を<ruby>相手<rt>あいて</rt></ruby>に",
+          "meaningEn": "Toward / to / regarding (attitude, action directed at a person/target)",
+          "connection": "N + に<ruby>対<rt>たい</rt></ruby>して\nN1 + に<ruby>対<rt>たい</rt></ruby>する + N2",
+          "connectionEn": "N + に対して; N1 + に対する + N2",
+          "connectionExamples": [
+            "<ruby>祖母<rt>そぼ</rt></ruby>に<ruby>対<rt>たい</rt></ruby>して",
+            "<ruby>過去<rt>かこ</rt></ruby>に<ruby>対<rt>たい</rt></ruby>して",
+            "ニュースに<ruby>対<rt>たい</rt></ruby>する<ruby>意見<rt>いけん</rt></ruby>"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>友達<rt>ともだち</rt></ruby>からの<ruby>相談<rt>そうだん</rt></ruby><span class=\"grammar-highlight\">に<ruby>対<rt>たい</rt></ruby>して</span>、なんと<ruby>答<rt>こた</rt></ruby>えようか<ruby>考<rt>かんが</rt></ruby>えている。",
+              "english": "I am thinking about how to reply to the consultation from my friend."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>中学生<rt>ちゅうがくせい</rt></ruby>になった<ruby>弟<rt>おとうと</rt></ruby>は、<ruby>母<rt>はは</rt></ruby><span class=\"grammar-highlight\">に<ruby>対<rt>たい</rt></ruby>して</span>ひどい<ruby>事<rt>こと</rt></ruby>ばかり<ruby>言<rt>い</rt></ruby>っている。",
+              "english": "My younger brother who became a middle schooler says nothing but terrible things to our mother."
+            },
+            {
+              "id": 3,
+              "sentence": "あなたの<ruby>仕事<rt>しごと</rt></ruby><span class=\"grammar-highlight\">に<ruby>対<rt>たい</rt></ruby>する</span><ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。",
+              "english": "Please tell me your approach and mindset toward work."
+            }
+          ],
+          "notes": "Indicates the target towards which a behavior, attitude, feeling, or policy is directed. (Distinguished from 〜に対して② which is used for contrast)."
+        },
+        {
+          "id": "24",
+          "title": "24 〜について",
+          "grammarPoint": "〜について",
+          "category": "基準",
+          "meaning": "〜のことを（〜のことを<ruby>話<rt>はな</rt></ruby>す、<ruby>考<rt>かんが</rt></ruby>えるというときに<ruby>使<rt>つか</rt></ruby>う）",
+          "meaningEn": "About / on / regarding",
+          "connection": "N + について",
+          "connectionEn": "N + について",
+          "connectionExamples": [
+            "<ruby>家族<rt>かぞく</rt></ruby>について",
+            "<ruby>将来<rt>しょうらい</rt></ruby>について",
+            "<ruby>仕事<rt>しごと</rt></ruby>について"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>父<rt>ちち</rt></ruby>とおじさんたちが、<ruby>野球<rt>やきゅう</rt></ruby>の<ruby>試合<rt>しあい</rt></ruby><span class=\"grammar-highlight\">について</span><ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>っている。",
+              "english": "My father and uncles are discussing the baseball match."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>彼<rt>かれ</rt></ruby>は、<ruby>日本<rt>にほん</rt></ruby>の<ruby>文化<rt>ぶんか</rt></ruby><span class=\"grammar-highlight\">について</span>よく<ruby>知<rt>し</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>だ。",
+              "english": "He is someone who is deeply knowledgeable about Japanese culture."
+            },
+            {
+              "id": 3,
+              "sentence": "ふるさとに<ruby>帰<rt>かえ</rt></ruby>ると、<ruby>両親<rt>りょうしん</rt></ruby>から<ruby>一人暮<rt>ひとりぐ</rt></ruby>らしの<ruby>生活<rt>せいかつ</rt></ruby><span class=\"grammar-highlight\">について</span>たくさん<ruby>質問<rt>しつもん</rt></ruby>された。",
+              "english": "When I returned to my hometown, my parents asked me many questions about my life living alone."
+            }
+          ],
+          "notes": "Used when specifying the subject matter of talking, thinking, examining, asking, or investigating."
+        },
+        {
+          "id": "25",
+          "title": "25 〜に関して",
+          "grammarPoint": "〜に関して",
+          "category": "基準",
+          "meaning": "〜について",
+          "meaningEn": "Regarding / concerning / in connection with (formal equivalent of 〜について)",
+          "connection": "N + に<ruby>関<rt>かん</rt></ruby>して\nN1 + に<ruby>関<rt>かん</rt></ruby>する / に<ruby>関<rt>かん</rt></ruby>しての + N2",
+          "connectionEn": "N + に関して; N1 + に関する / に関しての + N2",
+          "connectionExamples": [
+            "<ruby>研究<rt>けんきゅう</rt></ruby>に<ruby>関<rt>かん</rt></ruby>して",
+            "<ruby>会議<rt>かいぎ</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>資料<rt>しりょう</rt></ruby>",
+            "<ruby>料理<rt>りょうり</rt></ruby>に<ruby>関<rt>かん</rt></ruby>しての<ruby>本<rt>ほん</rt></ruby>"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "アフリカに<ruby>行<rt>い</rt></ruby>った<ruby>目的<rt>もくてき</rt></ruby>は、<ruby>文化<rt>ぶんか</rt></ruby><span class=\"grammar-highlight\">に<ruby>関<rt>かん</rt></ruby>する</span><ruby>研究<rt>けんきゅう</rt></ruby>をするためだった。",
+              "english": "My purpose for going to Africa was to conduct research concerning culture."
+            },
+            {
+              "id": 2,
+              "sentence": "その<ruby>場<rt>ば</rt></ruby>にいた<ruby>人<rt>ひと</rt></ruby>から、<ruby>事件<rt>じけん</rt></ruby><span class=\"grammar-highlight\">に<ruby>関<rt>かん</rt></ruby>しての</span><ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>き<ruby>出<rt>だ</rt></ruby>した。",
+              "english": "I drew out information concerning the incident from someone who was at the scene."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>植物<rt>しょくぶつ</rt></ruby><span class=\"grammar-highlight\">に<ruby>関<rt>かん</rt></ruby>して</span>、<ruby>父<rt>ちち</rt></ruby>はかなり<ruby>詳<rt>くわ</rt></ruby>しい。",
+              "english": "My father is quite knowledgeable regarding plants."
+            }
+          ],
+          "notes": "A more formal, written, and broad expression than 〜について, often used in reports, news, academic research, and business."
+        }
+      ]
+    },
+    {
+      "section": 4,
+      "sectionTitle": "第4節 逆接・否定",
+      "englishTitle": "Section 4: Contrast & Negation",
+      "grammarCount": 8,
+      "lessons": [
+        {
+          "id": "26",
+          "title": "26 〜わけではない",
+          "grammarPoint": "〜わけではない",
+          "category": "逆接",
+          "meaning": "はっきり〜とは<ruby>言<rt>い</rt></ruby>えない",
+          "meaningEn": "It does not mean that / it's not necessarily the case that (partial negation)",
+          "connection": "普通形 (ナAだ→な / Nだ→な) + わけではない / わけじゃない",
+          "connectionEn": "Plain form (Na-adj + な / N + な) + わけではない / わけじゃない",
+          "connectionExamples": [
+            "<ruby>行<rt>い</rt></ruby>きたくないわけではない",
+            "<ruby>困<rt>こま</rt></ruby>っているわけではない",
+            "<ruby>嫌<rt>きら</rt></ruby>いなわけじゃない"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "すしは<ruby>嫌<rt>きら</rt></ruby>いな<span class=\"grammar-highlight\">わけではない</span>んですが、<ruby>好<rt>す</rt></ruby>きでもないです。",
+              "english": "It's not that I dislike sushi, but I don't particularly love it either."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>彼<rt>かれ</rt></ruby>はいつも<ruby>明<rt>あか</rt></ruby>るいけど、<ruby>悩<rt>なや</rt></ruby>みがない<span class=\"grammar-highlight\">わけじゃない</span>と<ruby>思<rt>おも</rt></ruby>うよ。",
+              "english": "He is always cheerful, but I don't think it means he has no worries."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>行<rt>い</rt></ruby>けない<span class=\"grammar-highlight\">わけではない</span>んですが、<ruby>到着<rt>とうちゃく</rt></ruby>がぎりぎりになると<ruby>思<rt>おも</rt></ruby>います。",
+              "english": "It's not that I can't go, but I think my arrival will be right down to the wire."
+            }
+          ],
+          "notes": "Expresses partial negation or softness in tone, preventing a total, absolute affirmative or negative conclusion. '〜わけじゃない' is casual."
+        },
+        {
+          "id": "27",
+          "title": "27 〜ながら",
+          "grammarPoint": "〜ながら",
+          "category": "逆接",
+          "meaning": "〜けれども",
+          "meaningEn": "Although / while / even though (adversative contrast)",
+          "connection": "Vます / ナA / イA / N + ながら (も)\nナA / N + でありながら (も)",
+          "connectionEn": "V-stem / Na-adj / I-adj / N + ながら(も); Na-adj / N + でありながら(も)",
+          "connectionExamples": [
+            "<ruby>貧<rt>まず</rt></ruby>しいながら",
+            "<ruby>初心者<rt>しょしんしゃ</rt></ruby>でありながら",
+            "<ruby>決意<rt>けつい</rt></ruby>しながらも",
+            "★しかしながら"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>残念<rt>ざんねん</rt></ruby><span class=\"grammar-highlight\">ながら</span>、<ruby>田中商店<rt>たなかしょうてん</rt></ruby>は<ruby>来月末<rt>らいげつまつ</rt></ruby>でお<ruby>店<rt>みせ</rt></ruby>を<ruby>閉<rt>し</rt></ruby>めることにしました。",
+              "english": "Regrettably, Tanaka Shoten has decided to close down its store at the end of next month."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>赤<rt>あか</rt></ruby>ちゃんは、<ruby>小<rt>ちい</rt></ruby>さな<ruby>体<rt>からだ</rt></ruby><span class=\"grammar-highlight\">でありながらも</span><ruby>一生懸命生<rt>いっしょうけんめいい</rt></ruby>きている。",
+              "english": "Despite having such a tiny body, the baby is living with all its might."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>恥<rt>は</rt></ruby>ずかしくないとき<ruby>言<rt>い</rt></ruby>い<span class=\"grammar-highlight\">ながら</span>、<ruby>彼<rt>かれ</rt></ruby>の<ruby>顔<rt>かお</rt></ruby>は<ruby>真<rt>ま</rt></ruby>っ<ruby>赤<rt>か</rt></ruby>になっていた。",
+              "english": "Even while claiming he wasn't embarrassed, his face was turning bright red."
+            }
+          ],
+          "notes": "Unlike concurrent action (〜ながら doing A while doing B), this pattern functions as an adversative conjunction meaning 'despite / although'."
+        },
+        {
+          "id": "28",
+          "title": "28 〜かわりに①",
+          "grammarPoint": "〜かわりに①",
+          "category": "逆接",
+          "meaning": "〜はいいところと、<ruby>悪<rt>わる</rt></ruby>いところがある",
+          "meaningEn": "In exchange for / on the other hand / but in return (pros and cons balance)",
+          "connection": "普通形 (ナAだ→な・である) + かわりに\n※Nは使えない",
+          "connectionEn": "Plain form (Na-adj + な・である) + かわりに (N cannot be used for this sense)",
+          "connectionExamples": [
+            "<ruby>楽<rt>らく</rt></ruby>をしたかわりに",
+            "<ruby>苦<rt>にが</rt></ruby>いかわりに",
+            "<ruby>大変<rt>たいへん</rt></ruby>なかわりに",
+            "★そのかわりに"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "この<ruby>薬<rt>くすり</rt></ruby>は、<ruby>効果<rt>こうか</rt></ruby>がある<span class=\"grammar-highlight\">かわりに</span>とても<ruby>苦<rt>にが</rt></ruby>いです。",
+              "english": "While this medicine is effective, it is very bitter in exchange."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>明日<rt>あした</rt></ruby>は<ruby>仕事<rt>しごと</rt></ruby>を<ruby>休<rt>やす</rt></ruby>んでもいいですよ。<span class=\"grammar-highlight\">そのかわりに</span>、<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>土曜日<rt>どようび</rt></ruby>は<ruby>出勤<rt>しゅっきん</rt></ruby>してください。",
+              "english": "You may take off from work tomorrow. But in exchange, please come in to work next Saturday."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>明日<rt>あした</rt></ruby>はいつもより<ruby>早<rt>はや</rt></ruby>く<ruby>出勤<rt>しゅっきん</rt></ruby>する<span class=\"grammar-highlight\">かわりに</span>、<ruby>早<rt>はや</rt></ruby>く<ruby>帰<rt>かえ</rt></ruby>れることになった。",
+              "english": "In exchange for arriving at work earlier than usual tomorrow, I am permitted to leave early."
+            }
+          ],
+          "notes": "Presents a balancing trade-off: a positive point balanced against a drawback, or compensation/compromise between two conditions."
+        },
+        {
+          "id": "29",
+          "title": "29 〜反面",
+          "grammarPoint": "〜反面",
+          "category": "逆接",
+          "meaning": "〜なところがあるが、<ruby>反対<rt>はんたい</rt></ruby>に…",
+          "meaningEn": "On the other hand / but at the same time (two opposing sides of one subject)",
+          "connection": "普通形 (ナAだ→な・である / Nだ→の・である) + <ruby>反面<rt>はんめん</rt></ruby>",
+          "connectionEn": "Plain form (Na-adj + な・である / N + の・である) + 反面",
+          "connectionExamples": [
+            "<ruby>難<rt>むずか</rt></ruby>しい<ruby>反面<rt>はんめん</rt></ruby>",
+            "お金がある<ruby>反面<rt>はんめん</rt></ruby>",
+            "<ruby>得意<rt>とくい</rt></ruby>な<ruby>反面<rt>はんめん</rt></ruby>"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>日本<rt>にほん</rt></ruby>では、<ruby>都会<rt>とかい</rt></ruby>に<ruby>住<rt>す</rt></ruby>む<ruby>若者<rt>わかもの</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えている<span class=\"grammar-highlight\"><ruby>反面<rt>はんめん</rt></ruby></span>、<ruby>地方<rt>ちほう</rt></ruby>に<ruby>住<rt>す</rt></ruby>む<ruby>若者<rt>わかもの</rt></ruby>は<ruby>減<rt>へ</rt></ruby>っている。",
+              "english": "In Japan, while young people living in urban cities are increasing, on the other hand those in rural areas are decreasing."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>今<rt>いま</rt></ruby>の<ruby>仕事<rt>しごと</rt></ruby>は<ruby>忙<rt>いそが</rt></ruby>しくて<ruby>大変<rt>たいへん</rt></ruby>である<span class=\"grammar-highlight\"><ruby>反面<rt>はんめん</rt></ruby></span>、<ruby>人<rt>ひと</rt></ruby>のためになるいい<ruby>仕事<rt>しごと</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>う。",
+              "english": "While my current job is busy and demanding, on the flip side I feel it is rewarding work that helps people."
+            },
+            {
+              "id": 3,
+              "sentence": "この<ruby>家<rt>いえ</rt></ruby>は<ruby>広<rt>ひろ</rt></ruby>い<span class=\"grammar-highlight\"><ruby>反面<rt>はんめん</rt></ruby></span>、<ruby>掃除<rt>そうじ</rt></ruby>するのが<ruby>大変<rt>たいへん</rt></ruby>だ。",
+              "english": "While this house is spacious, on the downside cleaning it is tough work."
+            }
+          ],
+          "notes": "Coexists two contradictory aspects within the same single entity, phenomenon, or situation."
+        },
+        {
+          "id": "30",
+          "title": "30 〜ようがない",
+          "grammarPoint": "〜ようがない",
+          "category": "否定",
+          "meaning": "〜する<ruby>方法<rt>ほうほう</rt></ruby>がない",
+          "meaningEn": "There is no way to / impossible to (no available method)",
+          "connection": "Vます + ようがない",
+          "connectionEn": "V-stem + ようがない",
+          "connectionExamples": [
+            "<ruby>説明<rt>せつめい</rt></ruby>しようがない",
+            "<ruby>怒<rt>おこ</rt></ruby>りようがない",
+            "あきらめようがない"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>を<ruby>水<rt>みず</rt></ruby>でぬらしてしまったら、もう<ruby>直<rt>なお</rt></ruby>し<span class=\"grammar-highlight\">ようがない</span>。",
+              "english": "If a mobile phone gets soaked in water, there is simply no way to fix it."
+            },
+            {
+              "id": 2,
+              "sentence": "こんなに<ruby>点数<rt>てんすう</rt></ruby>を<ruby>入<rt>い</rt></ruby>れられてしまっては、<ruby>相手<rt>あいて</rt></ruby>に<ruby>勝<rt>か</rt></ruby>ち<span class=\"grammar-highlight\">ようがない</span>。",
+              "english": "With this many points scored against us, there is no way we can defeat our opponent."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>何度教<rt>なんどおし</rt></ruby>えても<ruby>仕事<rt>しごと</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えないので、もう<ruby>教<rt>おし</rt></ruby>え<span class=\"grammar-highlight\">ようがない</span>。",
+              "english": "No matter how many times I teach him he doesn't learn the job, so I have no way left to instruct him."
+            }
+          ],
+          "notes": "Indicates that even if one desires to take an action, there is absolutely no possibility, technique, or method available to accomplish it."
+        },
+        {
+          "id": "31",
+          "title": "31 〜がたい",
+          "grammarPoint": "〜がたい",
+          "category": "否定",
+          "meaning": "〜するのが<ruby>難<rt>むずか</rt></ruby>しい",
+          "meaningEn": "Hard to / difficult to (psychologically difficult to do)",
+          "connection": "Vます + がたい",
+          "connectionEn": "V-stem + がたい",
+          "connectionExamples": [
+            "<ruby>理解<rt>りかい</rt></ruby>しがたい",
+            "<ruby>捨<rt>す</rt></ruby>てがたい",
+            "<ruby>忘<rt>わす</rt></ruby>れがたい"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "あの<ruby>優<rt>やさ</rt></ruby>しい<ruby>先生<rt>せんせい</rt></ruby>が<ruby>大<rt>おお</rt></ruby>きな<ruby>声<rt>こえ</rt></ruby>で<ruby>怒<rt>おこ</rt></ruby>るなんて、<ruby>信<rt>しん</rt></ruby>じ<span class=\"grammar-highlight\">がたい</span><ruby>話<rt>はなし</rt></ruby>だ。",
+              "english": "That that gentle teacher shouted in anger is a story hard to believe."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>受<rt>う</rt></ruby>け<ruby>入<rt>い</rt></ruby>れ<span class=\"grammar-highlight\">がたい</span><ruby>悲<rt>かな</rt></ruby>しいニュースが<ruby>流<rt>なが</rt></ruby>れていた。",
+              "english": "Heartbreaking news that is difficult to accept was being broadcast."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>私<rt>わたし</rt></ruby>にとって、うそをつかれることは<ruby>許<rt>ゆる</rt></ruby>し<span class=\"grammar-highlight\">がたい</span>ことである。",
+              "english": "To me, being lied to is an unforgivable thing."
+            }
+          ],
+          "notes": "Used predominantly with mental and psychological verbs (信じる, 理解する, 許す, 忘れ) to express that psychological factors make it nearly impossible."
+        },
+        {
+          "id": "32",
+          "title": "32 〜ずに",
+          "grammarPoint": "〜ずに",
+          "category": "否定",
+          "meaning": "〜しないで",
+          "meaningEn": "Without doing / without having done",
+          "connection": "Vない + ず (に)\n※しない → せず (に)",
+          "connectionEn": "V-nai + ず(に); Exception: する → せず(に)",
+          "connectionExamples": [
+            "<ruby>寝<rt>ね</rt></ruby>ずに",
+            "おどろかずに",
+            "<ruby>無理<rt>むり</rt></ruby>せず"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>財布<rt>さいふ</rt></ruby>を<ruby>持<rt>も</rt></ruby>た<span class=\"grammar-highlight\">ずに</span><ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>てしまったので、<ruby>急<rt>いそ</rt></ruby>いで<ruby>家<rt>いえ</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>った。",
+              "english": "Because I left home without taking my wallet, I hurried back home."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>体調<rt>たいちょう</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>いのであれば、<ruby>今日<rt>きょう</rt></ruby>は<ruby>無理<rt>むり</rt></ruby><span class=\"grammar-highlight\">せず</span><ruby>帰<rt>かえ</rt></ruby>ってください。",
+              "english": "If you are not feeling well, please go home today without overexerting yourself."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>前日<rt>ぜんじつ</rt></ruby>に<ruby>何<rt>なに</rt></ruby>も<ruby>準備<rt>じゅんび</rt></ruby>を<span class=\"grammar-highlight\">せずに</span><ruby>寝<rt>ね</rt></ruby>てしまい、<ruby>集合時間<rt>しゅうごうじかん</rt></ruby>に<ruby>遅刻<rt>ちこく</rt></ruby>した。",
+              "english": "I went to sleep the day before the trip without preparing anything, and ended up late for the meeting time."
+            }
+          ],
+          "notes": "Classic written counterpart of '〜ないで'. Note that 'する' uniquely conjugates to 'せず(に)'."
+        },
+        {
+          "id": "33",
+          "title": "33 〜はずがない / 〜わけがない",
+          "grammarPoint": "〜はずがない / 〜わけがない",
+          "category": "否定",
+          "meaning": "<ruby>絶対<rt>ぜったい</rt></ruby>に〜ない（はっきりとはわからないけど、そう<ruby>信<rt>しん</rt></ruby>じている）",
+          "meaningEn": "Cannot possibly / there's no way that / completely impossible",
+          "connection": "普通形 (ナAだ→な・である / Nだ→の・である) + はずがない / わけがない",
+          "connectionEn": "Plain form (Na-adj + な・である / N + の・である) + はずがない / わけがない",
+          "connectionExamples": [
+            "<ruby>寝坊<rt>ねぼう</rt></ruby>するはずがない",
+            "<ruby>田中<rt>たなか</rt></ruby>さんのはずがない",
+            "<ruby>嫌<rt>いや</rt></ruby>なわけがない"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "いつも<ruby>正直<rt>しょうじき</rt></ruby>な<ruby>彼女<rt>かのじょ</rt></ruby>が、うそをつく<span class=\"grammar-highlight\">わけがない</span>。",
+              "english": "There is no way that she, who is always honest, would tell a lie."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>遊<rt>あそ</rt></ruby>んでばかりいる<ruby>弟<rt>おとうと</rt></ruby>が、<ruby>東京大学<rt>とうきょうだいがく</rt></ruby>に<ruby>受<rt>う</rt></ruby>かる<span class=\"grammar-highlight\">はずがない</span>。",
+              "english": "There is no chance that my younger brother, who only ever plays around, could pass the entrance exam for Tokyo University."
+            },
+            {
+              "id": 3,
+              "sentence": "あんなにたくさん<ruby>勉強<rt>べんきょう</rt></ruby>したんだ。<ruby>試験<rt>しけん</rt></ruby>に<ruby>落<rt>お</rt></ruby>ちる<span class=\"grammar-highlight\">わけがない</span>。",
+              "english": "I studied that much! There is absolutely no way I will fail the exam."
+            }
+          ],
+          "notes": "Emphatically denies a possibility based on strong conviction or logical deduction."
+        }
+      ]
+    },
+    {
+      "section": 5,
+      "sectionTitle": "第5節 程度・強調・比較",
+      "englishTitle": "Section 5: Degree, Emphasis & Comparison",
+      "grammarCount": 14,
+      "lessons": [
+        {
+          "id": "34",
+          "title": "34 〜くらい",
+          "grammarPoint": "〜くらい",
+          "category": "程度",
+          "meaning": "〜と<ruby>同<rt>おな</rt></ruby>じ<ruby>程度<rt>ていど</rt></ruby>だ（<ruby>例<rt>れい</rt></ruby>を<ruby>出<rt>だ</rt></ruby>して、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちを<ruby>話<rt>はな</rt></ruby>す）",
+          "meaningEn": "To the extent that / so ... that / about as",
+          "connection": "普通形 (ナAだ→な) + くらい / ぐらい",
+          "connectionEn": "Plain form (Na-adj + な) + くらい / ぐらい",
+          "connectionExamples": [
+            "<ruby>痛<rt>いた</rt></ruby>いくらい",
+            "オーバーなくらい",
+            "こわいぐらい"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>出発<rt>しゅっぱつ</rt></ruby>する<ruby>前<rt>まえ</rt></ruby>に、<ruby>痛<rt>いた</rt></ruby>い<span class=\"grammar-highlight\">くらい</span>しっかりと<ruby>抱<rt>だ</rt></ruby>き<ruby>合<rt>あ</rt></ruby>った。",
+              "english": "Before departing, we hugged each other so tightly that it almost hurt."
+            },
+            {
+              "id": 2,
+              "sentence": "おもしろいテレビをみて、<ruby>涙<rt>なみだ</rt></ruby>が<ruby>出<rt>で</rt></ruby>る<span class=\"grammar-highlight\">ぐらい</span><ruby>笑<rt>わら</rt></ruby>った。",
+              "english": "I watched an entertaining TV show and laughed to the point of tears."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>部屋<rt>へや</rt></ruby>にいるだけで、みんなが<ruby>笑顔<rt>えがお</rt></ruby>になる<span class=\"grammar-highlight\">くらい</span><ruby>明<rt>あか</rt></ruby>るい<ruby>人<rt>ひと</rt></ruby>だ。",
+              "english": "She is such a cheerful person that just having her in the room makes everyone smile."
+            }
+          ],
+          "notes": "Gives an illustrative extreme or vivid example to emphasize the intensity of an emotion, action, or state."
+        },
+        {
+          "id": "35",
+          "title": "35 〜ほど",
+          "grammarPoint": "〜ほど",
+          "category": "程度",
+          "meaning": "〜と<ruby>同<rt>おな</rt></ruby>じ<ruby>程度<rt>ていど</rt></ruby>だ（「〜くらい」よりかたい<ruby>表現<rt>ひょうげん</rt></ruby>）",
+          "meaningEn": "So ... that / to the extent that (more formal than くらい)",
+          "connection": "普通形 (ナAだ→な) + ほど",
+          "connectionEn": "Plain form (Na-adj + な) + ほど",
+          "connectionExamples": [
+            "<ruby>死<rt>し</rt></ruby>ぬほど",
+            "<ruby>涙<rt>なみだ</rt></ruby>が<ruby>出<rt>で</rt></ruby>るほど",
+            "<ruby>残念<rt>ざんねん</rt></ruby>なほど"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>父<rt>ちち</rt></ruby>は、<ruby>一人<rt>ひとり</rt></ruby>では<ruby>持<rt>も</rt></ruby>ちきれない<span class=\"grammar-highlight\">ほど</span>たくさんのあお<ruby>土産<rt>みやげ</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>帰<rt>かえ</rt></ruby>ってきた。",
+              "english": "My father returned home with so many souvenirs that one person could not carry them all."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>会場<rt>かいじょう</rt></ruby>には、びっくりする<span class=\"grammar-highlight\">ほど</span><ruby>人<rt>ひと</rt></ruby>が<ruby>集<rt>あつ</rt></ruby>まった。",
+              "english": "An astonishing number of people gathered at the venue."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>昨日<rt>きのう</rt></ruby>の<ruby>夜<rt>よる</rt></ruby>は、<ruby>電話<rt>でんわ</rt></ruby>で<ruby>友達<rt>ともだち</rt></ruby>と<ruby>死<rt>し</rt></ruby>ぬ<span class=\"grammar-highlight\">ほど</span><ruby>笑<rt>わら</rt></ruby>った。",
+              "english": "Last night I laughed myself to death talking with my friend over the phone."
+            }
+          ],
+          "notes": "Similar in function to 〜くらい, but sounds more formal and dramatic."
+        },
+        {
+          "id": "36",
+          "title": "36 〜だらけ",
+          "category": "程度",
+          "grammarPoint": "〜だらけ",
+          "meaning": "〜がたくさんある、〜がたくさんついている（<ruby>悪<rt>わる</rt></ruby>いことや、<ruby>汚<rt>きたな</rt></ruby>いもの）",
+          "meaningEn": "Full of / covered with / riddled with (undesirable, dirty things)",
+          "connection": "N + だらけ",
+          "connectionEn": "N + だらけ",
+          "connectionExamples": [
+            "<ruby>失敗<rt>しっぱい</rt></ruby>だらけ",
+            "<ruby>血<rt>ち</rt></ruby>だらけ",
+            "ごみだらけ"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>仕事<rt>しごと</rt></ruby>からの<ruby>帰<rt>かえ</rt></ruby>り<ruby>道<rt>みち</rt></ruby>、きず<span class=\"grammar-highlight\">だらけ</span>の<ruby>猫<rt>ねこ</rt></ruby>を<ruby>拾<rt>ひろ</rt></ruby>った。",
+              "english": "On the way home from work, I picked up a stray cat covered in scratches."
+            },
+            {
+              "id": 2,
+              "sentence": "ほこり<span class=\"grammar-highlight\">だらけ</span>の<ruby>箱<rt>はこ</rt></ruby>から、なつかしい<ruby>写真<rt>しゃしん</rt></ruby>がたくさん<ruby>出<rt>で</rt></ruby>てきた。",
+              "english": "Many nostalgic photographs came out of a dust-covered box."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>庭<rt>にわ</rt></ruby>に<ruby>植<rt>う</rt></ruby>えていた<ruby>植物<rt>しょくぶつ</rt></ruby>の<ruby>葉<rt>は</rt></ruby>っぱが、<ruby>虫<rt>むし</rt></ruby>に<ruby>食<rt>た</rt></ruby>べられて<ruby>穴<rt>あな</rt></ruby><span class=\"grammar-highlight\">だらけ</span>になっていた。",
+              "english": "The leaves of the plants in my garden were eaten by insects and became riddled with holes."
+            }
+          ],
+          "notes": "Always carries a negative nuance (wounds, dust, debt, mistakes, trash) indicating an excessive, unsightly presence."
+        },
+        {
+          "id": "37",
+          "title": "37 〜やすい",
+          "grammarPoint": "〜やすい",
+          "category": "程度",
+          "meaning": "<ruby>簡単<rt>かんたん</rt></ruby>に〜できる",
+          "meaningEn": "Easy to / prone to",
+          "connection": "Vます + やすい",
+          "connectionEn": "V-stem + やすい",
+          "connectionExamples": [
+            "<ruby>食<rt>た</rt></ruby>べやすい",
+            "<ruby>使<rt>つか</rt></ruby>いやすい",
+            "<ruby>洗<rt>あら</rt></ruby>いやすい"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>私<rt>わたし</rt></ruby>の<ruby>高校<rt>こうこう</rt></ruby>は、<ruby>駅<rt>えき</rt></ruby>の<ruby>目<rt>め</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>にあるので<ruby>通<rt>かよ</rt></ruby>い<span class=\"grammar-highlight\">やすい</span>。",
+              "english": "Because my high school is right in front of the station, it is easy to commute to."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>村上先生<rt>むらかみせんせい</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>はわかり<span class=\"grammar-highlight\">やすくて</span>、<ruby>楽<rt>たの</rt></ruby>しく<ruby>勉強<rt>べんきょう</rt></ruby>することができる。",
+              "english": "Murakami-sensei's classes are easy to understand, making learning enjoyable."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>彼女<rt>かのじょ</rt></ruby>が<ruby>書<rt>か</rt></ruby>く<ruby>文字<rt>もじ</rt></ruby>は<ruby>大<rt>おお</rt></ruby>きくてきれいなので、とても<ruby>読<rt>よ</rt></ruby>み<span class=\"grammar-highlight\">やすい</span>。",
+              "english": "The characters she writes are large and neat, so they are very easy to read."
+            }
+          ],
+          "notes": "Attached to verb stems to describe actions that can be carried out smoothly, conveniently, and without difficulty."
+        },
+        {
+          "id": "38",
+          "title": "38 〜はず",
+          "grammarPoint": "〜はず",
+          "category": "強調",
+          "meaning": "<ruby>絶対<rt>ぜったい</rt></ruby>に〜だ",
+          "meaningEn": "Ought to / must be / expected to be (high logical expectation)",
+          "connection": "普通形 (ナAだ→な・である / Nだ→の・である) + はず (だ)",
+          "connectionEn": "Plain form (Na-adj + な・である / N + の・である) + はず(だ)",
+          "connectionExamples": [
+            "おもしろいはずだ",
+            "あげたはず",
+            "<ruby>大変<rt>たいへん</rt></ruby>であるはずだ"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>友達<rt>ともだち</rt></ruby>みんなで<ruby>行<rt>い</rt></ruby>く<ruby>旅行<rt>りょこう</rt></ruby>なんて、<ruby>絶対<rt>ぜったい</rt></ruby>に<ruby>楽<rt>たの</rt></ruby>しい<span class=\"grammar-highlight\">はずだ</span>。",
+              "english": "A trip going with all my friends is bound to be fun without a doubt."
+            },
+            {
+              "id": 2,
+              "sentence": "しっかり<ruby>勉強<rt>べんきょう</rt></ruby>をしたので、<ruby>今回<rt>こんかい</rt></ruby>の<ruby>試験<rt>しけん</rt></ruby>では<ruby>満点<rt>まんてん</rt></ruby>を<ruby>取<rt>と</rt></ruby>れた<span class=\"grammar-highlight\">はず</span>。",
+              "english": "Because I studied thoroughly, I should have gotten a perfect score on this exam."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>確<rt>たし</rt></ruby>か、<ruby>文房具<rt>ぶんぼうぐ</rt></ruby>はこの<ruby>棚<rt>たな</rt></ruby>に<ruby>置<rt>お</rt></ruby>いてあった<span class=\"grammar-highlight\">はずだ</span>。",
+              "english": "I am fairly sure the stationery was placed on this shelf."
+            }
+          ],
+          "notes": "Expresses firm expectation or subjective certainty based on convincing reasons or personal memory."
+        },
+        {
+          "id": "39",
+          "title": "39 〜ずにはいられない",
+          "grammarPoint": "〜ずにはいられない",
+          "category": "強調",
+          "meaning": "どうしても〜してしまう",
+          "meaningEn": "Cannot help but / cannot resist doing / compelled to",
+          "connection": "Vない + ずにはいられない\n※しない → せずにはいられない",
+          "connectionEn": "V-nai + ずにはいられない; Exception: する → せずにはいられない",
+          "connectionExamples": [
+            "<ruby>驚<rt>おどろ</rt></ruby>かずにはいられない",
+            "<ruby>見<rt>み</rt></ruby>ずにはいられない",
+            "<ruby>気<rt>き</rt></ruby>にせずにはいられない"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>好<rt>す</rt></ruby>きな<ruby>作家<rt>さっか</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>が<ruby>発売<rt>はつばい</rt></ruby>されると、<ruby>買<rt>か</rt></ruby>わ<span class=\"grammar-highlight\">ずにはいられない</span>。",
+              "english": "Whenever a new book by my favorite author is published, I cannot help but buy it."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>頑張<rt>がんば</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>を<ruby>見<rt>み</rt></ruby>ると、<ruby>応援<rt>おうえん</rt></ruby><span class=\"grammar-highlight\">せずにはいられない</span>。",
+              "english": "When I see people striving hard, I cannot resist cheering them on."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>暑<rt>あつ</rt></ruby>くなってくると、<ruby>夏<rt>なつ</rt></ruby>の<ruby>歌<rt>うた</rt></ruby>を<ruby>聴<rt>き</rt></ruby>か<span class=\"grammar-highlight\">ずにはいられない</span>。",
+              "english": "As the weather gets hot, I simply can't help listening to summer songs."
+            }
+          ],
+          "notes": "Expresses natural, spontaneous emotions or urges that the speaker cannot hold back or suppress."
+        },
+        {
+          "id": "40",
+          "title": "40 〜くらい〜はない",
+          "grammarPoint": "〜くらい〜はない",
+          "category": "強調",
+          "meaning": "〜がいちばん〜だ",
+          "meaningEn": "Nothing / nobody is more ... than ~",
+          "connection": "N1 + くらい / ぐらい + N2 + はない",
+          "connectionEn": "N1 + くらい / ぐらい + N2 + はない",
+          "connectionExamples": [
+            "<ruby>彼女<rt>かのじょ</rt></ruby>くらい<ruby>熱心<rt>ねっしん</rt></ruby>な<ruby>先生<rt>せんせい</rt></ruby>はいない",
+            "<ruby>今日<rt>きょう</rt></ruby>ぐらいつまらない<ruby>日<rt>ひ</rt></ruby>はない",
+            "<ruby>彼<rt>かれ</rt></ruby>ぐらい<ruby>頭<rt>あたま</rt></ruby>がいい<ruby>人<rt>ひと</rt></ruby>はいない"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>私<rt>わたし</rt></ruby>は、<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>勉強<rt>べんきょう</rt></ruby><span class=\"grammar-highlight\">くらい</span><ruby>楽<rt>たの</rt></ruby>しいことは<span class=\"grammar-highlight\">ない</span>と<ruby>思<rt>おも</rt></ruby>っています。",
+              "english": "I feel that nothing is more enjoyable than studying Japanese."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>村上<rt>むらかみ</rt></ruby>さん<span class=\"grammar-highlight\">ぐらい</span>きれいな<ruby>女性<rt>じょせい</rt></ruby>はどこを<ruby>探<rt>さが</rt></ruby>しても<span class=\"grammar-highlight\">いない</span>だろう。",
+              "english": "No matter where you search, there is probably no woman as beautiful as Murakami-san."
+            },
+            {
+              "id": 3,
+              "sentence": "あの<ruby>店<rt>みせ</rt></ruby><span class=\"grammar-highlight\">くらい</span>おいしいカレー<ruby>屋<rt>や</rt></ruby>さんは<ruby>他<rt>ほか</rt></ruby>に<span class=\"grammar-highlight\">ありません</span>。",
+              "english": "There is no other curry shop that is as delicious as that one."
+            }
+          ],
+          "notes": "Denies that anything else matches the standard of N1, thereby expressing that N1 ranks supreme in that aspect."
+        },
+        {
+          "id": "41",
+          "title": "41 〜まで",
+          "grammarPoint": "〜まで",
+          "category": "強調",
+          "meaning": "〜も（たくさんある、<ruby>充分<rt>じゅうぶん</rt></ruby>だ、ということを<ruby>強調<rt>きょうちょう</rt></ruby>して<ruby>言<rt>い</rt></ruby>う）",
+          "meaningEn": "Even / as far as (emphasizing an unexpected or extreme addition)",
+          "connection": "N + まで",
+          "connectionEn": "N + まで",
+          "connectionExamples": [
+            "<ruby>鳥<rt>とり</rt></ruby>まで<ruby>飼<rt>か</rt></ruby>っている",
+            "<ruby>日本語<rt>にほんご</rt></ruby>まで<ruby>話<rt>はな</rt></ruby>せる",
+            "<ruby>漢字<rt>かんじ</rt></ruby>まである"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>料理<rt>りょうり</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>な<ruby>彼女<rt>かのじょ</rt></ruby>は、ケーキ<span class=\"grammar-highlight\">まで</span><ruby>作<rt>つく</rt></ruby>ることができる。",
+              "english": "She, who is skilled at cooking, can even bake cakes."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>日本語能力試験<rt>にほんごのうりょくしけん</rt></ruby>では、<ruby>見<rt>み</rt></ruby>て<ruby>解<rt>と</rt></ruby>く<ruby>問題<rt>もんだい</rt></ruby>だけでなく<ruby>聞<rt>き</rt></ruby>いて<ruby>解<rt>と</rt></ruby>く<ruby>問題<rt>もんだい</rt></ruby><span class=\"grammar-highlight\">まで</span>ある。",
+              "english": "In the JLPT, in addition to visual reading problems, there are even listening questions."
+            },
+            {
+              "id": 3,
+              "sentence": "このレストランは<ruby>料理<rt>りょうり</rt></ruby>がとてもおいしい。そのうえ、<ruby>値段<rt>ねだん</rt></ruby><span class=\"grammar-highlight\">まで</span><ruby>安<rt>やす</rt></ruby>い。",
+              "english": "The cuisine at this restaurant is delicious. On top of that, even the prices are cheap."
+            }
+          ],
+          "notes": "Indicates an extreme item that goes beyond ordinary expectations to emphasize extent or abundance."
+        },
+        {
+          "id": "42",
+          "title": "42 〜ほど〜はない",
+          "grammarPoint": "〜ほど〜はない",
+          "category": "強調",
+          "meaning": "〜がいちばん〜だ",
+          "meaningEn": "Nothing / nobody is as ... as ~ (more formal than 〜くらい〜はない)",
+          "connection": "N1 + ほど + N2 + はない",
+          "connectionEn": "N1 + ほど + N2 + はない",
+          "connectionExamples": [
+            "あなたほど<ruby>親切<rt>しんせつ</rt></ruby>な<ruby>人<rt>ひと</rt></ruby>はいない",
+            "<ruby>母<rt>はは</rt></ruby>の<ruby>料理<rt>りょうり</rt></ruby>ほどおいしいものはない",
+            "これほど<ruby>苦<rt>にが</rt></ruby>い<ruby>薬<rt>くすり</rt></ruby>はない"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>彼女<rt>かのじょ</rt></ruby><span class=\"grammar-highlight\">ほど</span><ruby>絵<rt>え</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>な<ruby>人<rt>ひと</rt></ruby>は、<ruby>他<rt>ほか</rt></ruby>に<span class=\"grammar-highlight\">いません</span>。",
+              "english": "There is no one else who is as skilled at painting as she is."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>日本<rt>にほん</rt></ruby>では、<ruby>富士山<rt>ふじさん</rt></ruby><span class=\"grammar-highlight\">ほど</span><ruby>高<rt>たか</rt></ruby>くて<ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>山<rt>やま</rt></ruby>は<span class=\"grammar-highlight\">ない</span>。",
+              "english": "In Japan, there is no mountain as high and renowned as Mt. Fuji."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>彼<rt>かれ</rt></ruby><span class=\"grammar-highlight\">ほど</span><ruby>優<rt>やさ</rt></ruby>しくて<ruby>頼<rt>たよ</rt></ruby>りになる<ruby>人<rt>ひと</rt></ruby>は<span class=\"grammar-highlight\">いません</span>。",
+              "english": "There is no one who is as kind and dependable as he is."
+            }
+          ],
+          "notes": "Asserts the supreme quality or degree of N1 in a formal tone."
+        },
+        {
+          "id": "43",
+          "title": "43 〜てしかたがない",
+          "grammarPoint": "〜てしかたがない",
+          "category": "強調",
+          "meaning": "とても〜だ（<ruby>気持<rt>きも</rt></ruby>ちを<ruby>表現<rt>ひょうげん</rt></ruby>する<ruby>言葉<rt>ことば</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>使<rt>つか</rt></ruby>う）",
+          "meaningEn": "Cannot help feeling / extremely / unbearably",
+          "connection": "Vたい / イAい → くてしかたがない / くてしょうがない\nナA + でしかたがない / でしょうがない",
+          "connectionEn": "V-tai / I-adj (-い → -くてしかたがない/しょうがない); Na-adj + でしかたがない/でしょうがない",
+          "connectionExamples": [
+            "<ruby>遊<rt>あそ</rt></ruby>びたくてしかたがない",
+            "<ruby>残念<rt>ざんねん</rt></ruby>でしかたがない",
+            "<ruby>楽<rt>たの</rt></ruby>しくてしょうがない"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>外国<rt>がいこく</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいると、ときどき<ruby>家族<rt>かぞく</rt></ruby>に<ruby>会<rt>あ</rt></ruby>いたく<span class=\"grammar-highlight\">てしょうがなくなる</span>。",
+              "english": "When living abroad, from time to time I get an overwhelming desire to see my family."
+            },
+            {
+              "id": 2,
+              "sentence": "あんなにかっこいい<ruby>彼<rt>かれ</rt></ruby>と<ruby>付<rt>つ</rt></ruby>き<ruby>合<rt>あ</rt></ruby>えるなんて、<ruby>友達<rt>ともだち</rt></ruby>がうらやましく<span class=\"grammar-highlight\">てしかたがない</span>。",
+              "english": "Being able to date such a handsome guy makes me overwhelmingly envious of my friend."
+            },
+            {
+              "id": 3,
+              "sentence": "いらいらしているときは、ビールが<ruby>飲<rt>の</rt></ruby>みたく<span class=\"grammar-highlight\">てしかたがなくなる</span>。",
+              "english": "When feeling irritated, I get an irresistible urge to drink beer."
+            }
+          ],
+          "notes": "Expresses an emotional or physical sensation so intense that one cannot suppress or control it. '〜てしょうがない' is colloquial."
+        },
+        {
+          "id": "44",
+          "title": "44 〜に違いない",
+          "grammarPoint": "〜に違いない",
+          "category": "強調",
+          "meaning": "<ruby>絶対<rt>ぜったい</rt></ruby>に〜だ、きっと〜だ",
+          "meaningEn": "Must be / definitely is / without a doubt",
+          "connection": "普通形 (ナAだ / Nだ) + に<ruby>違<rt>ちが</rt></ruby>いない\nナA / N + であるに<ruby>違<rt>ちが</rt></ruby>いない",
+          "connectionEn": "Plain form (drop だ for Na-adj and N) + に違いない; or であるに違いない",
+          "connectionExamples": [
+            "おいしいに<ruby>違<rt>ちが</rt></ruby>いない",
+            "<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>に<ruby>違<rt>ちが</rt></ruby>いない",
+            "<ruby>犯人<rt>はんにん</rt></ruby>であるに<ruby>違<rt>ちが</rt></ruby>いない",
+            "★そうに<ruby>違<rt>ちが</rt></ruby>いない"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>昨日買<rt>きのうか</rt></ruby>ったお<ruby>菓子<rt>かし</rt></ruby>がもうないのは、<ruby>妻<rt>つま</rt></ruby>が<ruby>食<rt>た</rt></ruby>べたから<span class=\"grammar-highlight\">に<ruby>違<rt>ちが</rt></ruby>いない</span>。",
+              "english": "The reason the snacks bought yesterday are already gone must be that my wife ate them."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>何度<rt>なんど</rt></ruby>もお<ruby>願<rt>ねが</rt></ruby>い<ruby>事<rt>ごと</rt></ruby>をしてしまっては、<ruby>相手<rt>あいて</rt></ruby>に<ruby>迷惑<rt>めいわく</rt></ruby>である<span class=\"grammar-highlight\">に<ruby>違<rt>ちが</rt></ruby>いない</span>。",
+              "english": "Asking for favors so many times must surely be an annoyance to the other person."
+            },
+            {
+              "id": 3,
+              "sentence": "この<ruby>服<rt>ふく</rt></ruby>は<ruby>彼女<rt>かのじょ</rt></ruby>に<ruby>似合<rt>にあ</rt></ruby>う<span class=\"grammar-highlight\">に<ruby>違<rt>ちが</rt></ruby>いない</span>。",
+              "english": "These clothes will definitely look great on her."
+            }
+          ],
+          "notes": "Expresses strong conviction based on situational clues or personal intuition."
+        },
+        {
+          "id": "45",
+          "title": "45 〜に対して②",
+          "grammarPoint": "〜に対して②",
+          "category": "比較",
+          "meaning": "〜と<ruby>比<rt>くら</rt></ruby>べて<ruby>考<rt>かんが</rt></ruby>えると",
+          "meaningEn": "In contrast to / whereas / while",
+          "connection": "普通形 (ナAだ→な・である / Nだ→な・である) + のに<ruby>対<rt>たい</rt></ruby>して\nN + に<ruby>対<rt>たい</rt></ruby>して",
+          "connectionEn": "Plain form (Na-adj + な・である / N + な・である) + のに対して; N + に対して",
+          "connectionExamples": [
+            "<ruby>優<rt>やさ</rt></ruby>しい<ruby>父<rt>ちち</rt></ruby>に<ruby>対<rt>たい</rt></ruby>して",
+            "<ruby>働<rt>はたら</rt></ruby>いているのに<ruby>対<rt>たい</rt></ruby>して",
+            "<ruby>真面目<rt>まじめ</rt></ruby>であるのに<ruby>対<rt>たい</rt></ruby>して"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>私<rt>わたし</rt></ruby>の<ruby>国<rt>くに</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>は<ruby>発音<rt>はつおん</rt></ruby>が<ruby>難<rt>むずか</rt></ruby>しい<span class=\"grammar-highlight\">のに<ruby>対<rt>たい</rt></ruby>して</span>、<ruby>日本語<rt>にほんご</rt></ruby>は<ruby>文法<rt>ぶんぽう</rt></ruby>が<ruby>難<rt>むずか</rt></ruby>しい。",
+              "english": "Whereas my native language has difficult pronunciation, Japanese has difficult grammar."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>日本<rt>にほん</rt></ruby>は<ruby>夜<rt>よる</rt></ruby>の10<ruby>時<rt>じ</rt></ruby>である<span class=\"grammar-highlight\">のに<ruby>対<rt>たい</rt></ruby>して</span>、アメリカは<ruby>朝<rt>あさ</rt></ruby>の8<ruby>時<rt>じ</rt></ruby>だそうだ。",
+              "english": "While it is 10:00 PM in Japan, in America it is reportedly 8:00 AM."
+            },
+            {
+              "id": 3,
+              "sentence": "とても<ruby>優<rt>やさ</rt></ruby>しい<ruby>父<rt>ちち</rt></ruby><span class=\"grammar-highlight\">に<ruby>対<rt>たい</rt></ruby>して</span>、<ruby>母<rt>はは</rt></ruby>はかなり<ruby>厳<rt>きび</rt></ruby>しい<ruby>人<rt>ひと</rt></ruby>だ。",
+              "english": "In contrast to my very gentle father, my mother is quite a strict person."
+            }
+          ],
+          "notes": "Compares two different subjects, contrasting their sharp differences or opposite attributes."
+        },
+        {
+          "id": "46",
+          "title": "46 〜どころか",
+          "grammarPoint": "〜どころか",
+          "category": "比較",
+          "meaning": "〜よりもっと（<ruby>比較<rt>ひかく</rt></ruby>して<ruby>強調<rt>きょうちょう</rt></ruby>するときに<ruby>使<rt>つか</rt></ruby>う）",
+          "meaningEn": "Far from / let alone / not just ... but even",
+          "connection": "普通形 (ナAだ→な / Nだ) + どころか",
+          "connectionEn": "Plain form (Na-adj + な / N) + どころか",
+          "connectionExamples": [
+            "ほめられるどころか",
+            "<ruby>有名<rt>ゆうめい</rt></ruby>などころか",
+            "<ruby>困<rt>こま</rt></ruby>るどころか"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>昔<rt>むかし</rt></ruby>の<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>は、<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>る<span class=\"grammar-highlight\">どころか</span>メッセージを<ruby>送<rt>おく</rt></ruby>ることもできなかった。",
+              "english": "Old mobile phones were far from capable of taking photos; they couldn't even send messages."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>私<rt>わたし</rt></ruby>と<ruby>彼<rt>かれ</rt></ruby>が<ruby>付<rt>つ</rt></ruby>き<ruby>合<rt>あ</rt></ruby>っているということは、クラスの<ruby>友達<rt>ともだち</rt></ruby><span class=\"grammar-highlight\">どころか</span><ruby>先生<rt>せんせい</rt></ruby>も<ruby>親<rt>おや</rt></ruby>もみんな<ruby>知<rt>し</rt></ruby>っている。",
+              "english": "That he and I are dating is known not only to our classmates, but even to teachers and parents."
+            },
+            {
+              "id": 3,
+              "sentence": "この<ruby>子犬<rt>こいぬ</rt></ruby>は、<ruby>病気<rt>びょうき</rt></ruby>が<ruby>原因<rt>げんいん</rt></ruby>で<ruby>最初<rt>さいしょ</rt></ruby>は<ruby>歩<rt>ある</rt></ruby>く<span class=\"grammar-highlight\">どころか</span><ruby>立<rt>た</rt></ruby>つこともできなかった。",
+              "english": "Because of illness, this puppy could not even stand at first, let alone walk."
+            }
+          ],
+          "notes": "Emphasizes that the actual state is vastly different from or far more extreme than the baseline mentioned."
+        },
+        {
+          "id": "47",
+          "title": "47 〜に比べて",
+          "grammarPoint": "〜に比べて",
+          "category": "比較",
+          "meaning": "〜より",
+          "meaningEn": "Compared to / in comparison with",
+          "connection": "N + に / と + <ruby>比<rt>くら</rt></ruby>べて / <ruby>比<rt>くら</rt></ruby>べると",
+          "connectionEn": "N + に/と + 比べて / 比べると",
+          "connectionExamples": [
+            "<ruby>去年<rt>きょねん</rt></ruby>と<ruby>比<rt>くら</rt></ruby>べて",
+            "<ruby>妹<rt>いもうと</rt></ruby>に<ruby>比<rt>くら</rt></ruby>べると",
+            "<ruby>日本語<rt>にほんご</rt></ruby>に<ruby>比<rt>くら</rt></ruby>べて"
+          ],
+          "examples": [
+            {
+              "id": 1,
+              "sentence": "<ruby>私<rt>わたし</rt></ruby>の<ruby>子<rt>こ</rt></ruby>どものころ<span class=\"grammar-highlight\">に<ruby>比<rt>くら</rt></ruby>べて</span>、ここ<ruby>数年<rt>すうねん</rt></ruby>、<ruby>雪<rt>ゆき</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ることが<ruby>少<rt>すく</rt></ruby>なくなった。",
+              "english": "Compared to when I was a child, in recent years snowfall has become much less frequent."
+            },
+            {
+              "id": 2,
+              "sentence": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>料理<rt>りょうり</rt></ruby>は<ruby>韓国<rt>かんこく</rt></ruby>の<ruby>料理<rt>りょうり</rt></ruby><span class=\"grammar-highlight\">に<ruby>比<rt>くら</rt></ruby>べて</span>、そんなに<ruby>辛<rt>から</rt></ruby>くない。",
+              "english": "Compared to Korean cuisine, Japanese food is not that spicy."
+            },
+            {
+              "id": 3,
+              "sentence": "<ruby>兄<rt>あに</rt></ruby>は<ruby>昔<rt>むかし</rt></ruby><span class=\"grammar-highlight\">に<ruby>比<rt>くら</rt></ruby>べて</span>、<ruby>料理<rt>りょうり</rt></ruby>がとてもうまくなったと<ruby>思<rt>おも</rt></ruby>う。",
+              "english": "I think my older brother has gotten much better at cooking compared to the past."
+            }
+          ],
+          "notes": "Directly compares two items, times, or people to highlight a difference in degree or quality."
+        }
+      ]
+    }
+  ]
+}
