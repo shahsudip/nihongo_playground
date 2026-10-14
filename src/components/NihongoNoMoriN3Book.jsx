@@ -978,9 +978,15 @@ export default function NihongoNoMoriN3Book() {
               }`}
             >
               <div className="flex items-start gap-3 mb-3">
-                <span className="w-7 h-7 rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-200 font-black text-sm flex items-center justify-center shrink-0">
-                  {idx + 1}
-                </span>
+                {q.questionNumber === '例' || String(q.id).includes('-ex') ? (
+                  <span className="px-2.5 py-1 rounded-lg bg-amber-500 text-white font-black text-xs flex items-center justify-center shrink-0 shadow-sm">
+                    例
+                  </span>
+                ) : (
+                  <span className="w-7 h-7 rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-200 font-black text-sm flex items-center justify-center shrink-0">
+                    {q.questionNumber || (idx + 1)}
+                  </span>
+                )}
                 <div className="text-base sm:text-lg font-bold leading-relaxed pt-0.5 grow">
                   {renderHtml(q.stem)}
                 </div>
