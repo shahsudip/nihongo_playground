@@ -154,6 +154,8 @@ export default function NihongoNoMoriN3Book() {
 
   // Load saved progress from localStorage and Firestore
   useEffect(() => {
+    let isActive = true;
+
     setSectionScores({});
     const storageKey = currentUser
       ? `nihongo_no_mori_n3_scores_${currentUser.uid}`
@@ -172,7 +174,7 @@ export default function NihongoNoMoriN3Book() {
         try {
           const docRef = doc(db, 'users', currentUser.uid, 'bookProgress', 'nihongo-no-mori-n3');
           const snap = await getDoc(docRef);
-          if (snap.exists() && snap.data()?.sections) {
+          if (isActive && snap.exists() && snap.data()?.sections) {
             setSectionScores(previousScores => {
               const mergedScores = { ...previousScores };
               Object.entries(snap.data().sections).forEach(([sectionId, record]) => {
@@ -182,11 +184,15 @@ export default function NihongoNoMoriN3Book() {
             });
           }
         } catch (e) {
-          console.warn("Could not fetch remote section scores", e);
+          if (isActive) console.warn("Could not fetch remote section scores", e);
         }
       };
       fetchScores();
     }
+
+    return () => {
+      isActive = false;
+    };
   }, [currentUser]);
 
   // Load section answers when entering a section
@@ -1018,8 +1024,9 @@ export default function NihongoNoMoriN3Book() {
   const pages = sectionData?.pages || [];
   const currentPage = pages[currentPageIndex] || null;
   const pageQuestions = currentPage?.questions || [];
-  const pageAnsweredCount = pageQuestions.filter(q => userAnswers[q.id] !== undefined).length;
-  const pageCorrectCount = pageQuestions.filter(q => userAnswers[q.id] === q.correct_answer).length;
+  const scoredPageQuestions = pageQuestions.filter(isScoredQuestion);
+  const pageAnsweredCount = scoredPageQuestions.filter(q => userAnswers[q.id] !== undefined).length;
+  const pageCorrectCount = scoredPageQuestions.filter(q => userAnswers[q.id] === q.correct_answer).length;
 
   return (
     <div className="min-h-screen bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-slate-100 pb-20 pt-24 md:pt-28 px-3 sm:px-6 flex flex-col items-center">
@@ -1282,7 +1289,7 @@ export default function NihongoNoMoriN3Book() {
           </div>
           <div className="w-px h-4 bg-slate-300 dark:bg-slate-700" />
           <div className="text-slate-500 dark:text-slate-400">
-            ページ達成率: {Math.round((pageAnsweredCount / pageQuestions.length) * 100)}%
+            ページ達成率: {Math.round((pageAnsweredCount / scoredPageQuestions.length) * 100)}%
           </div>
         </div>
       )}

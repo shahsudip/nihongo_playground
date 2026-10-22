@@ -19,6 +19,9 @@
     "sync:speedmaster": "node scripts/sync_speedmaster_to_firestore.cjs",
     "sync:first-time-n3-kanji": "node scripts/first_time_n3_350_kanji/sync_firestore.cjs",
     "sync:pass-n3-20-days": "node scripts/pass_n3_within_20_days/sync_firestore.cjs",
+    "sync:nihongo-no-mori-n3": "node scripts/nihongo_no_mori_n3/sync_firestore.cjs",
+    "verify:new-books": "node scripts/verify_new_books.cjs",
+    "verify:new-books:firebase": "node scripts/verify_new_books.cjs --firebase",
     "sync:zenkamoku": "node scripts/sync_zenkamoku_to_firestore.cjs",
     "sync-tests": "node sync_tests.js"
   },

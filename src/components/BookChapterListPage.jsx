@@ -42,6 +42,7 @@ const BookChapterListPage = () => {
   const [book, setBook] = useState(staticBook);
   const [chapters, setChapters] = useState([]);
   const [history, setHistory] = useState({});
+  const [loadedRuntimeBookId, setLoadedRuntimeBookId] = useState(null);
   // If we already have static book info and it's a specialized reading book, no blocking spinner needed
   const isReadingBook = ['speed-master-n3-reading', 'shinkanzen-master-n3-reading', 'shinkanzen-master-n3-listening', 'sou-matome-n3-reading'].includes(bookId);
   const [loading, setLoading] = useState(!staticBook);
@@ -63,11 +64,15 @@ const BookChapterListPage = () => {
 
     const fetchChaptersAndProgress = async () => {
       try {
-        if (!staticBook) {
+        if (!staticBook || usesRuntimeBookData) {
           setLoading(true);
         }
         setError(null);
         setHistory({});
+        if (usesRuntimeBookData) {
+          setBook(staticBook);
+          setChapters([]);
+        }
 
         // 1. Development reads source JSON; production reads the same book shape from Firebase.
         let runtimeBookData = null;
@@ -101,6 +106,7 @@ const BookChapterListPage = () => {
         } else if (usesRuntimeBookData) {
           if (isMounted) {
             setChapters(runtimeBookData.chapters || []);
+            setLoadedRuntimeBookId(bookId);
             setLoading(false);
           }
         } else {
@@ -219,7 +225,7 @@ const BookChapterListPage = () => {
 
   if (bookId.startsWith('zenkamoku')) return null;
 
-  if (loading) {
+  if (loading || (usesRuntimeBookData && loadedRuntimeBookId !== bookId && !error)) {
     if (isShin500) {
       return (
         <div className={`shin500-chapter-page theme-${theme} flex items-center justify-center min-h-screen`}>

@@ -47,6 +47,16 @@ const BookQuizTakerPage = () => {
   const [showMobileNavigator, setShowMobileNavigator] = useState(false);
   const latestAttemptRef = useRef({ answers: {}, currentIndex: 0 });
   const saveAnswersStateRef = useRef(null);
+  const remoteSaveQueueRef = useRef(Promise.resolve());
+  const skipUnmountSaveRef = useRef(false);
+
+  const queueRemoteWrite = useCallback((operation) => {
+    const queuedWrite = remoteSaveQueueRef.current
+      .catch(() => undefined)
+      .then(operation);
+    remoteSaveQueueRef.current = queuedWrite;
+    return queuedWrite;
+  }, []);
 
   // Warn user if trying to close browser/tab with active answers
   useEffect(() => {
@@ -63,6 +73,8 @@ const BookQuizTakerPage = () => {
 
   // Fetch chapter content
   useEffect(() => {
+    let isActive = true;
+
     const fetchChapterData = async () => {
       try {
         setLoading(true);
@@ -72,12 +84,14 @@ const BookQuizTakerPage = () => {
 
         if (usesRuntimeBookData) {
           const runtimeBook = await loadRuntimeBook(bookId);
+          if (!isActive) return;
           setBookTitle(runtimeBook.title || bookId);
           chapterData = runtimeBook.chapters?.find(chapterItem => chapterItem.id === chapterId) || null;
         } else {
           // Legacy books retain their existing local-first fallback behavior.
           try {
             const { sampleBooks } = await import('../data/book_data.jsx');
+            if (!isActive) return;
             const localBook = sampleBooks.find(b => b.id === bookId);
             if (localBook) {
               setBookTitle(localBook.title);
@@ -94,12 +108,14 @@ const BookQuizTakerPage = () => {
           if (!chapterData) {
             const bookDocRef = doc(db, 'books', bookId);
             const bookSnap = await getDoc(bookDocRef);
+            if (!isActive) return;
             if (bookSnap.exists()) {
               setBookTitle(bookSnap.data().title || bookId);
             }
 
             const docRef = doc(db, 'books', bookId, 'chapters', chapterId);
             const docSnap = await getDoc(docRef);
+            if (!isActive) return;
             if (docSnap.exists()) {
               chapterData = docSnap.data();
             }
@@ -204,6 +220,7 @@ const BookQuizTakerPage = () => {
             const historyDocId = `${bookId}-${attemptChapterId}`;
             const historyRef = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
             const historySnap = await getDoc(historyRef);
+            if (!isActive) return;
             if (historySnap.exists()) {
               const histData = historySnap.data();
               if (histData.answers && typeof histData.answers === 'object') {
@@ -237,14 +254,19 @@ const BookQuizTakerPage = () => {
         }
 
       } catch (err) {
+        if (!isActive) return;
         console.error("Error loading chapter quiz:", err);
         setError("Failed to load quiz content: " + err.message);
       } finally {
-        setLoading(false);
+        if (isActive) setLoading(false);
       }
     };
 
     fetchChapterData();
+
+    return () => {
+      isActive = false;
+    };
   }, [bookId, chapterId, currentUser, activeSection, attemptChapterId, usesRuntimeBookData]);
 
   const getStorageKey = useCallback(() => {
@@ -286,7 +308,7 @@ const BookQuizTakerPage = () => {
   }, [getCorrectText]);
 
   // Save progress and full quiz answers state
-  const saveAnswersState = useCallback(async (currentAnswers, isFinal = false, targetIndex = currentIndex) => {
+  const saveAnswersState = useCallback(async (currentAnswers, targetIndex = currentIndex) => {
     if (!chapter || questions.length === 0) return;
 
     const answeredCount = Object.keys(currentAnswers).length;
@@ -353,11 +375,11 @@ const BookQuizTakerPage = () => {
         status
       };
 
-      await setDoc(historyDocRef, record, { merge: true });
+      await queueRemoteWrite(() => setDoc(historyDocRef, record, { merge: true }));
     } catch (err) {
       console.error("Failed to save chapter progress:", err);
     }
-  }, [bookId, chapterId, attemptChapterId, currentUser, chapter, questions, currentIndex, getStorageKey, getCorrectText, isEnhancedDrillBook]);
+  }, [bookId, chapterId, attemptChapterId, currentUser, chapter, questions, currentIndex, getStorageKey, getCorrectText, isEnhancedDrillBook, queueRemoteWrite]);
 
   useEffect(() => {
     latestAttemptRef.current = { answers, currentIndex };
@@ -368,16 +390,16 @@ const BookQuizTakerPage = () => {
   }, [saveAnswersState]);
 
   useEffect(() => () => {
+    if (skipUnmountSaveRef.current) return;
     const latestAttempt = latestAttemptRef.current;
     saveAnswersStateRef.current?.(
       latestAttempt.answers,
-      false,
       latestAttempt.currentIndex
     );
   }, []);
 
   const handleFinish = () => {
-    saveAnswersState(answers, true, currentIndex);
+    saveAnswersState(answers, currentIndex);
     if (isEnhancedDrillBook && feedbackMode === 'At End' && !examSubmitted) {
       setExamSubmitted(true);
       setShowMobileNavigator(true);
@@ -394,6 +416,8 @@ const BookQuizTakerPage = () => {
 
     setAnswers({});
     setCurrentIndex(0);
+    latestAttemptRef.current = { answers: {}, currentIndex: 0 };
+    skipUnmountSaveRef.current = true;
 
     const storageKey = getStorageKey();
     try {
@@ -406,14 +430,14 @@ const BookQuizTakerPage = () => {
       try {
         const historyDocId = `${bookId}-${attemptChapterId}`;
         const historyDocRef = doc(db, 'users', currentUser.uid, 'quizHistory', historyDocId);
-        await setDoc(historyDocRef, {
+        await queueRemoteWrite(() => setDoc(historyDocRef, {
           score: 0,
           answered: 0,
           answers: {},
           currentIndex: 0,
           status: 'incomplete',
           timestamp: new Date().toISOString()
-        }, { merge: true });
+        }, { merge: true }));
       } catch (err) {
         console.warn("Failed to reset history record:", err);
       }
@@ -430,7 +454,7 @@ const BookQuizTakerPage = () => {
   };
 
   const handleConfirmExit = () => {
-    saveAnswersState(answers, false, currentIndex);
+    saveAnswersState(answers, currentIndex);
     setShowExitModal(false);
     navigate(`/books/${bookId}`);
   };
@@ -439,6 +463,7 @@ const BookQuizTakerPage = () => {
     // Lock selection if in Immediate mode and already answered
     if (feedbackMode === 'Immediate' && answers[questionId] !== undefined) return;
     if (isEnhancedDrillBook && examSubmitted) return;
+    skipUnmountSaveRef.current = false;
 
     const nextAnswers = {
       ...answers,
@@ -447,7 +472,7 @@ const BookQuizTakerPage = () => {
     setAnswers(nextAnswers);
 
     // Persist immediately on each answer
-    saveAnswersState(nextAnswers, false, currentIndex);
+    saveAnswersState(nextAnswers, currentIndex);
     
     // Auto advance if immediate feedback is off
     if (feedbackMode === 'At End') {
@@ -455,7 +480,7 @@ const BookQuizTakerPage = () => {
         if (currentIndex < questions.length - 1) {
           const nextIdx = currentIndex + 1;
           setCurrentIndex(nextIdx);
-          saveAnswersState(nextAnswers, false, nextIdx);
+          saveAnswersState(nextAnswers, nextIdx);
         }
       }, 300);
     }
@@ -465,7 +490,7 @@ const BookQuizTakerPage = () => {
     if (currentIndex < questions.length - 1) {
       const nextIdx = currentIndex + 1;
       setCurrentIndex(nextIdx);
-      saveAnswersState(answers, false, nextIdx);
+      saveAnswersState(answers, nextIdx);
     }
   }, [currentIndex, questions.length, saveAnswersState, answers]);
 
@@ -473,7 +498,7 @@ const BookQuizTakerPage = () => {
     if (currentIndex > 0) {
       const prevIdx = currentIndex - 1;
       setCurrentIndex(prevIdx);
-      saveAnswersState(answers, false, prevIdx);
+      saveAnswersState(answers, prevIdx);
     }
   }, [currentIndex, saveAnswersState, answers]);
 
