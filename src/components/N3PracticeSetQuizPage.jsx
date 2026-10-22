@@ -2,7 +2,6 @@ import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc, setDoc, deleteDoc } from 'firebase/firestore';
-import { practiceSetsBook as localPracticeSetsBook } from '../data/practice_sets_data.js';
 import { useAuth } from '../context/AuthContext.jsx';
 
 // Reusable UI Components
@@ -62,30 +61,14 @@ const N3PracticeSetQuizPage = () => {
 
   useEffect(() => {
     const fetchBook = async () => {
-      const localSet = localPracticeSetsBook?.sets?.find(s => s.id === setId) || null;
+      setLoading(true);
       try {
-        let setFound = null;
-
-        // 1. Try parent document first (where sync_practice_sets.mjs writes)
-        try {
-          const docRef = doc(db, 'books', 'jlpt-n3-practice-sets');
-          const docSnap = await getDoc(docRef);
-          if (docSnap.exists()) {
-            const bookData = docSnap.data();
-            setFound = Array.isArray(bookData.sets)
-              ? bookData.sets.find(s => s.id === setId)
-              : (bookData.sets ? bookData.sets[setId] : null);
-          }
-        } catch (parentErr) {
-          console.warn("Parent doc fetch error:", parentErr.message);
-        }
-
-        
-
-        setCurrentSet(setFound || localSet);
+        const setRef = doc(db, 'books', 'jlpt-n3-practice-sets', 'sets', setId);
+        const setSnap = await getDoc(setRef);
+        setCurrentSet(setSnap.exists() ? { ...setSnap.data(), id: setSnap.id } : null);
       } catch (err) {
-        console.warn("Error fetching book, using local fallback:", err.message);
-        setCurrentSet(localSet);
+        console.error("Error fetching practice set from Firebase:", err);
+        setCurrentSet(null);
       } finally {
         setLoading(false);
       }
@@ -255,7 +238,7 @@ const N3PracticeSetQuizPage = () => {
     
     let status = 'incomplete';
     if (isAllAnswered || isFinal) {
-      if (accuracy >= 80 && score > 0) {
+      if (accuracy > 90 && score > 0) {
         status = 'mastered';
       } else if (isAllAnswered) {
         status = 'completed';

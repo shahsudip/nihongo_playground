@@ -19,10 +19,75 @@ import tangoN1Cover from '../assets/tango_n1_cover.jpg';
 import tangoN2Cover from '../assets/tango_n2_cover.jpg';
 import tangoN3Cover from '../assets/tango_n3_cover.jpg';
 
+const N3_PRACTICE_BOOK_ID = 'jlpt-n3-practice-sets';
+
+const getRecordTime = (record) => {
+  const value = record?.timestamp || record?.updatedAt || record?.createdAt;
+  if (value && typeof value.toMillis === 'function') return value.toMillis();
+  const parsed = Date.parse(value || '');
+  return Number.isFinite(parsed) ? parsed : 0;
+};
+
+const selectLatestRecord = (currentRecord, incomingRecord) => {
+  if (!currentRecord) return incomingRecord;
+  if (!incomingRecord) return currentRecord;
+  return getRecordTime(incomingRecord) >= getRecordTime(currentRecord) ? incomingRecord : currentRecord;
+};
+
+const loadLocalHistory = () => {
+  try {
+    const storedHistory = JSON.parse(localStorage.getItem('quizHistory') || '[]');
+    const records = Array.isArray(storedHistory) ? storedHistory : Object.values(storedHistory || {});
+    return records.reduce((historyMap, record) => {
+      const quizId = record?.quizId || record?.id;
+      if (quizId) historyMap[quizId] = selectLatestRecord(historyMap[quizId], record);
+      return historyMap;
+    }, {});
+  } catch (error) {
+    console.warn('Could not read local book progress:', error.message);
+    return {};
+  }
+};
+
+const getAnsweredCount = (record) => {
+  const savedCount = Number(record?.answered || 0);
+  const answerCount = Object.keys(record?.answers || {}).length;
+  return Math.max(savedCount, answerCount);
+};
+
+const getN3PracticeProgress = (book, history) => {
+  const totalSets = book.totalChapters || 15;
+  const totalQuestions = book.totalQuestions || totalSets * 58;
+  const questionsPerSet = totalQuestions / totalSets;
+  let answeredQuestions = 0;
+  let completedSets = 0;
+
+  for (let setNumber = 1; setNumber <= totalSets; setNumber += 1) {
+    const setKey = `${book.id}-set-${setNumber}`;
+    const fullRecord = history[setKey];
+    const vocabularyRecord = history[`${setKey}-vocabulary-kanji`];
+    const grammarRecord = selectLatestRecord(history[`${setKey}-grammar`], history[`${setKey}-grammar-reading`]);
+    const hasSectionRecords = Boolean(vocabularyRecord || grammarRecord);
+    const setAnswered = hasSectionRecords
+      ? getAnsweredCount(vocabularyRecord) + getAnsweredCount(grammarRecord)
+      : getAnsweredCount(fullRecord);
+    const cappedAnswered = Math.min(setAnswered, questionsPerSet);
+
+    answeredQuestions += cappedAnswered;
+    completedSets += Number(cappedAnswered >= questionsPerSet);
+  }
+
+  return {
+    completed: completedSets,
+    total: totalSets,
+    percent: totalQuestions > 0 ? Math.round((answeredQuestions / totalQuestions) * 100) : 0,
+  };
+};
+
 const BookListPage = () => {
   const { currentUser } = useAuth();
   const [books, setBooks] = useState(STATIC_BOOKS);
-  const [history, setHistory] = useState({});
+  const [history, setHistory] = useState(loadLocalHistory);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -48,11 +113,17 @@ const BookListPage = () => {
           const userHistory = {};
           historySnap.forEach(docSnap => {
             const data = docSnap.data();
-            if (data && data.type === 'book') {
+            if (data && (data.type === 'book' || data.bookId === N3_PRACTICE_BOOK_ID)) {
               userHistory[data.quizId] = data;
             }
           });
-          setHistory(userHistory);
+          setHistory(currentHistory => {
+            const mergedHistory = { ...currentHistory };
+            Object.entries(userHistory).forEach(([quizId, record]) => {
+              mergedHistory[quizId] = selectLatestRecord(mergedHistory[quizId], record);
+            });
+            return mergedHistory;
+          });
         })
         .catch(err => {
           console.warn("Background progress fetch:", err);
@@ -63,6 +134,10 @@ const BookListPage = () => {
 
 
   const getBookProgress = (book) => {
+    if (book.id === N3_PRACTICE_BOOK_ID) {
+      return getN3PracticeProgress(book, history);
+    }
+
     let completedCount = 0;
     
     // Count directly from the user history hash map

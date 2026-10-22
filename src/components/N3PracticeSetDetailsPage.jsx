@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc } from 'firebase/firestore';
-import { practiceSetsBook as localPracticeSetsBook } from '../data/practice_sets_data.js';
 
 const N3PracticeSetDetailsPage = () => {
   const { setId } = useParams();
@@ -12,30 +11,14 @@ const N3PracticeSetDetailsPage = () => {
 
   useEffect(() => {
     const fetchBook = async () => {
-      const localSet = localPracticeSetsBook?.sets?.find(s => s.id === setId) || null;
+      setLoading(true);
       try {
-        let setFound = null;
-
-        // 1. Try parent document first (where sync_practice_sets.mjs writes)
-        try {
-          const docRef = doc(db, 'books', 'jlpt-n3-practice-sets');
-          const docSnap = await getDoc(docRef);
-          if (docSnap.exists()) {
-            const bookData = docSnap.data();
-            setFound = Array.isArray(bookData.sets)
-              ? bookData.sets.find(s => s.id === setId)
-              : (bookData.sets ? bookData.sets[setId] : null);
-          }
-        } catch (parentErr) {
-          console.warn("Parent doc fetch error:", parentErr.message);
-        }
-
-        
-
-        setCurrentSet(setFound || localSet);
+        const setRef = doc(db, 'books', 'jlpt-n3-practice-sets', 'sets', setId);
+        const setSnap = await getDoc(setRef);
+        setCurrentSet(setSnap.exists() ? { ...setSnap.data(), id: setSnap.id } : null);
       } catch (err) {
-        console.warn("Error fetching book, using local fallback:", err.message);
-        setCurrentSet(localSet);
+        console.error("Error fetching practice set from Firebase:", err);
+        setCurrentSet(null);
       } finally {
         setLoading(false);
       }
