@@ -9,221 +9,184 @@
     "title": "場所や方向を正しく読もう！",
     "subtitle": "Try to read the places and directions correctly!",
     "comic": {
-      "situation": "交差点と四つ角の違いや数え方について話している。",
-      "dialogue": [
-        {
-          "speaker": "鳥",
-          "text": "「四つ角」って四つ目の角のこと？"
-        },
-        {
-          "speaker": "先生鳥",
-          "text": "ここが四つ角"
-        },
-        {
-          "speaker": "先生鳥",
-          "text": "その四つ角を入れて数えて、ここが四つ目の角"
-        }
-      ]
+      "text1": "「四つ角」って四つ目の角のこと？",
+      "text2": "ここが四つ角。その四つ角を入れて数えて、ここが四つ目の角。",
+      "sign": "会場の案内図",
+      "note": "交差点や信号の数え方に注意しよう。"
     }
   },
   "vocabulary": [
     {
       "word": "向かい",
       "reading": "むかい",
-      "meaning": "across from / opposite",
-      "example": "スーパーの向かい"
+      "meaning": "across from"
     },
     {
       "word": "ななめ向かい",
       "reading": "ななめむかい",
-      "meaning": "diagonally opposite",
-      "example": "銀行のななめ向かい"
+      "meaning": "diagonally opposite"
     },
     {
       "word": "向こう",
       "reading": "むこう",
-      "meaning": "across from / opposite / beyond",
-      "example": "川の向こう"
+      "meaning": "across from"
     },
     {
       "word": "手前",
       "reading": "てまえ",
-      "meaning": "before",
-      "example": "橋の手前"
+      "meaning": "before"
     },
     {
       "word": "角",
       "reading": "かど",
-      "meaning": "corner",
-      "example": "二つ目の角"
+      "meaning": "corner"
     },
     {
       "word": "四つ角",
       "reading": "よつかど",
-      "meaning": "crossroads",
-      "example": "四つ角を曲がる"
+      "meaning": "crossroads"
     },
     {
       "word": "交差点",
       "reading": "こうさてん",
-      "meaning": "intersection",
-      "example": "大きな交差点"
+      "meaning": "intersection"
     },
     {
       "word": "有料駐車場",
       "reading": "ゆうりょうちゅうしゃじょう",
-      "meaning": "a pay parking lot",
-      "example": "駅前の有料駐車場"
+      "meaning": "a pay parking lot"
     },
     {
       "word": "つきあたり",
       "reading": "つきあたり",
-      "meaning": "the end of",
-      "example": "通りのつきあたり"
+      "meaning": "the end of"
     },
     {
       "word": "前方",
       "reading": "ぜんぽう",
-      "meaning": "ahead",
-      "example": "前方に注意する"
+      "meaning": "ahead"
     },
     {
       "word": "後方",
       "reading": "こうほう",
-      "meaning": "behind",
-      "example": "後方を確認する"
+      "meaning": "behind"
     },
     {
       "word": "右折する",
       "reading": "うせつする",
-      "meaning": "to turn right",
-      "example": "次の角を右折する"
+      "meaning": "to turn right"
     },
     {
       "word": "左折する",
       "reading": "させつする",
-      "meaning": "to turn left",
-      "example": "交差点を左折する"
+      "meaning": "to turn left"
     },
     {
       "word": "徒歩",
       "reading": "とほ",
-      "meaning": "on foot",
-      "example": "徒歩10分"
+      "meaning": "on foot"
     },
     {
       "word": "面している",
       "reading": "めんしている",
-      "meaning": "facing",
-      "example": "大通りに面している"
+      "meaning": "facing"
     },
     {
       "word": "一方通行",
       "reading": "いっぽうつうこう",
-      "meaning": "a one-way street",
-      "example": "この道は一方通行だ"
+      "meaning": "a one-way street"
     }
+  ],
+  "grammar_notes": [
+    "＊道案内の表現（「〜に向かって歩く」「〜つ目の信号を左折」「〜軒向こう」など）を正確に把握しましょう。"
   ],
   "practice": {
     "title": "れんしゅう",
-    "instruction": "次の会話文を読んで、後の文から正しいものを二つ選ぼう。(答えは次のページ)",
+    "instruction": "次の会話文を読んで、後の文から正しいものを選ぼう。(答えは次のページ)",
     "conversation": [
       {
-        "speaker": "女子学生",
-        "text": "今日のゼミの会場、駅からちょっと遠いね。"
+        "speaker": "<ruby>女子学生<rt>じょしがくせい</rt></ruby>",
+        "text": "ねえ、そろそろ<ruby>会場<rt>かいじょう</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いてもいいころじゃない？"
       },
       {
-        "speaker": "男子学生",
-        "text": "うん。でも、行き方は簡単だよ。駅の東口を出て、大通りをまっすぐ行って、4つ目の信号を右折するんだ。"
+        "speaker": "<ruby>男子学生<rt>だんしがくせい</rt></ruby>",
+        "text": "そうだね。ずいぶん<ruby>歩<rt>ある</rt></ruby>いたし、<ruby>変<rt>へん</rt></ruby>だよね。ドラッグストア(※)の<ruby>向<rt>む</rt></ruby>こうって<ruby>書<rt>か</rt></ruby>いてあるけれど、ドラッグストアなんてどこにもないよ。"
       },
       {
-        "speaker": "女子学生",
-        "text": "あ、その角にドラッグストアがあるところね。"
+        "speaker": "<ruby>女子学生<rt>じょしがくせい</rt></ruby>",
+        "text": "えーと、ちゃんと４つ<ruby>目<rt>め</rt></ruby>の<ruby>信号<rt>しんごう</rt></ruby>を<ruby>左<rt>ひだり</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がったよね。<ruby>変<rt>へん</rt></ruby>ねえ。"
       },
       {
-        "speaker": "男子学生",
-        "text": "そう。その角を曲がって、100メートルくらい行くと、左側にあるんだ。"
+        "speaker": "<ruby>男子学生<rt>だんしがくせい</rt></ruby>",
+        "text": "あー、４つ<ruby>目<rt>め</rt></ruby>の<ruby>信号<rt>しんごう</rt></ruby>って、<ruby>地下鉄<rt>ちかてつ</rt></ruby>の<ruby>出口<rt>でぐち</rt></ruby>を<ruby>出<rt>で</rt></ruby>たところの<ruby>信号<rt>しんごう</rt></ruby>も<ruby>入<rt>い</rt></ruby>れて４つ<ruby>目<rt>め</rt></ruby>っていうことだったんだよ、きっと。さあ、<ruby>戻<rt>もど</rt></ruby>ろう。"
       },
       {
-        "speaker": "女子学生",
-        "text": "分かった。じゃ、迷わずに行けそうね。"
+        "speaker": "<ruby>女子学生<rt>じょしがくせい</rt></ruby>",
+        "text": "うん、もうすぐ<ruby>説明会<rt>せつめいかい</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まっちゃうから、<ruby>急<rt>いそ</rt></ruby>ごう。"
       }
     ],
     "options": [
-      "1 駅の東口を出て、4つ目の信号を右に曲がる。",
-      "2 会場は駅から歩いてすぐのところにある。",
-      "3 4つ目の信号の角にはスーパーがある。",
-      "4 会場はドラッグストアの向かいにある。",
-      "5 ドラッグストアの角を曲がって少し歩くと、左側に会場がある。"
+      "1　この<ruby>学生<rt>がくせい</rt></ruby>たちは、<ruby>説明会<rt>せつめいかい</rt></ruby>に<ruby>行<rt>い</rt></ruby>くところである。",
+      "2　この<ruby>学生<rt>がくせい</rt></ruby>たちは、<ruby>反対<rt>はんたい</rt></ruby>に<ruby>曲<rt>ま</rt></ruby>がってしまったようだ。",
+      "3　ドラッグストアの<ruby>手前<rt>てまえ</rt></ruby>に<ruby>会場<rt>かいじょう</rt></ruby>がある。",
+      "4　この<ruby>学生<rt>がくせい</rt></ruby>たちは、ドラッグストアを<ruby>通<rt>とお</rt></ruby>り<ruby>過<rt>す</rt></ruby>ぎてしまったようだ。",
+      "5　この<ruby>学生<rt>がくせい</rt></ruby>たちは、<ruby>曲<rt>ま</rt></ruby>がるところを<ruby>間違<rt>まちが</rt></ruby>えたようだ。"
     ],
     "correct_answers": [
       1,
       5
     ],
     "options_explanation": {
-      "1": "正しい。男子学生が「駅の東口を出て、大通りをまっすぐ行って、4つ目の信号を右折するんだ」と言っています。",
-      "2": "間違い。女子学生が「駅からちょっと遠いね」と言っており、すぐのところではありません。",
-      "3": "間違い。4つ目の信号の角にあるのは「ドラッグストア」です。",
-      "4": "間違い。会場はドラッグストアの角を曲がって100メートルほど進んだ左側にあります。",
-      "5": "正しい。男子学生が「その角を曲がって、100メートルくらい行くと、左側にあるんだ」と言っています。"
+      "1": "正しい。女子学生が「もうすぐ説明会が始まっちゃうから、急ごう」と言っています。",
+      "2": "間違い。反対に曲がったのではなく、曲がる信号の番号を数え間違えました。",
+      "3": "間違い。案内に「ドラッグストアの向こう」「４軒向こう」とあります。",
+      "4": "間違い。ドラッグストアを通り過ぎたのではなく、手前で曲がってしまいまだ見つかっていません。",
+      "5": "正しい。男子学生が「地下鉄の出口を出たところの信号も入れて４つ目っていうことだったんだよ」「さあ、戻ろう」と言っており、曲がる場所を間違えていました。"
     }
   },
   "mondai": {
     "title": "もんだい",
-    "instruction": "次の案内図を読んで、後の問いに答えなさい。(答えは別冊 p.2)",
+    "instruction": "次の案内を見て、後の問いに答えなさい。(答えは別冊 p.2)",
     "notice": {
       "heading": "会場の案内図",
-      "subheading": "地下鉄さくら野駅より徒歩10分",
-      "content": [
-        "5番出口を出て、さくら野通りを直進してください。",
-        "二つ目の交差点（さくら野交差点）を左折し、そのまま200m直進します。",
-        "つきあたりの四つ角を右折すると、前方にさくらホールが見えます。",
-        "※さくらホールの手前に有料駐車場がございます。",
-        "※ホール前の道路は一方通行となっておりますので、お車でお越しの際はご注意ください。"
-      ]
+      "html": "<div class=\"font-sans text-gray-900 dark:text-gray-100\">\n  <!-- Map Image Container -->\n  <div class=\"mb-4 rounded border border-gray-300 dark:border-gray-700 overflow-hidden shadow-sm bg-white dark:bg-slate-900 flex justify-center\">\n    <img src=\"/nihongo_playground/somatome/w1_d2_map.png\" alt=\"会場の案内図\" class=\"w-full max-w-2xl h-auto object-contain\" />\n  </div>\n\n  <!-- Notice Directions Text Box -->\n  <div class=\"border-2 border-gray-800 dark:border-gray-200 p-4 sm:p-5 rounded leading-relaxed text-sm sm:text-base space-y-3\">\n    <div class=\"flex items-start gap-2\">\n      <span class=\"font-bold shrink-0\">・</span>\n      <span><ruby>地下鉄<rt>ちかてつ</rt></ruby>さくら<ruby>野駅<rt>のえき</rt></ruby>より<ruby>徒歩<rt>とほ</rt></ruby>10<ruby>分<rt>ぷん</rt></ruby></span>\n    </div>\n    <div class=\"flex items-start gap-2\">\n      <span class=\"font-bold shrink-0\">・</span>\n      <span>5<ruby>番出口<rt>ばんでぐち</rt></ruby>を<ruby>出<rt>で</rt></ruby>て、<u class=\"underline decoration-2\"><ruby>タワービル<rt></rt></ruby><ruby>方面<rt>ほうめん</rt></ruby>に<ruby>向<rt>む</rt></ruby>かって<ruby>歩<rt>ある</rt></ruby>き</u>、4つ<ruby>目<rt>め</rt></ruby>の<ruby>信号<rt>しんごう</rt></ruby>で<ruby>左折<rt>させつ</rt></ruby>してください。そこから100メートルほど<ruby>行<rt>い</rt></ruby>ったところにドラッグストアがあります。その<ruby>角<rt>かど</rt></ruby>から4<ruby>軒向<rt>けんむ</rt></ruby>こうのビルの<ruby>地下<rt>ちか</rt></ruby>です*。</span>\n    </div>\n    <div class=\"flex items-start gap-2\">\n      <span class=\"font-bold shrink-0\">・</span>\n      <span><ruby>会場<rt>かいじょう</rt></ruby>のななめ<ruby>向<rt>む</rt></ruby>かいに<ruby>有料駐車場<rt>ゆうりょうちゅうしゃじょう</rt></ruby>があります。</span>\n    </div>\n    <div class=\"pt-1 text-xs sm:text-sm text-gray-800 dark:text-gray-200\">\n      ※ ビルに<ruby>面<rt>めん</rt></ruby>した<ruby>道路<rt>どうろ</rt></ruby>は<ruby>一方通行<rt>いっぽうつうこう</rt></ruby>になっています**。<ruby>車<rt>くるま</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>は、ご<ruby>注意<rt>ちゅうい</rt></ruby>ください。\n    </div>\n  </div>\n</div>"
     },
     "notice_vocabulary": [
       {
-        "word": "直進する",
-        "reading": "ちょくしんする",
-        "meaning": "to go straight"
-      },
-      {
-        "word": "出口",
-        "reading": "でぐち",
-        "meaning": "exit"
-      },
-      {
-        "word": "お越しの際",
-        "reading": "おこしのさい",
-        "meaning": "when coming / visiting"
+        "word": "(※) ドラッグストア",
+        "reading": "ドラッグストア",
+        "meaning": "a drugstore"
       }
     ],
     "questions": [
       {
         "question_number": 1,
-        "question": "さくらホールに行く道順として正しいものはどれか。",
+        "question": "<u>タワービル<ruby>方面<rt>ほうめん</rt></ruby>に<ruby>向<rt>む</rt></ruby>かって<ruby>歩<rt>ある</rt></ruby>き</u>とはどういう<ruby>意味<rt>いみ</rt></ruby>か。",
         "options": [
-          "1 5番出口を出て直進し、最初の交差点を左折する。",
-          "2 5番出口を出て直進し、二つ目の交差点を左折してつきあたりを右折する。",
-          "3 5番出口を出て左折し、突き当たりを右折する。",
-          "4 5番出口を出て直進し、さくら野交差点を右折する。"
+          "1　タワービルに<ruby>着<rt>つ</rt></ruby>くまで<ruby>歩<rt>ある</rt></ruby>く",
+          "2　タワービルを<ruby>前<rt>まえ</rt></ruby>のほうに<ruby>見<rt>み</rt></ruby>ながら<ruby>歩<rt>ある</rt></ruby>く",
+          "3　タワービルに<ruby>向<rt>む</rt></ruby>かって<ruby>左<rt>ひだり</rt></ruby>のほうに<ruby>歩<rt>ある</rt></ruby>く",
+          "4　タワービルを<ruby>通<rt>とお</rt></ruby>り<ruby>過<rt>す</rt></ruby>ぎるまで<ruby>歩<rt>ある</rt></ruby>く"
         ],
         "correct_answer": 2,
-        "explanation": "案内文に「5番出口を出て、さくら野通りを直進」「二つ目の交差点（さくら野交差点）を左折」「つきあたりの四つ角を右折」と書かれているので、2が正しいです。"
+        "explanation": "「〜方面に向かって歩く」は、その目標物を前方に視界に入れながらその方角へ進むことを表すため、2の「タワービルを前のほうに見ながら歩く」が正しいです（タワービルに到着するまで歩くわけではなく、途中の4つ目の信号で左折します）。"
       },
       {
         "question_number": 2,
-        "question": "さくらホールについて、案内と合っているものはどれか。",
+        "question": "この<ruby>案内<rt>あんない</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>と<u style=\"text-decoration: underline wavy; text-decoration-color: currentColor;\"><ruby>合<rt>あ</rt></ruby>っている</u>ものはどれか。",
         "options": [
-          "1 さくらホールの向かいに無料の駐車場がある。",
-          "2 さくらホール前の道は両方向とも車が通れる。",
-          "3 さくらホールの手前に有料の駐車場がある。",
-          "4 駅からさくらホールまでは車で10分かかる。"
+          "1　ドラッグストアの4<ruby>軒<rt>けん</rt></ruby>となりに<ruby>有料駐車場<rt>ゆうりょうちゅうしゃじょう</rt></ruby>がある。",
+          "2　ドラッグストアと<ruby>会場<rt>かいじょう</rt></ruby>は約100メートル<ruby>離<rt>はな</rt></ruby>れている。",
+          "3　ビルの<ruby>前<rt>まえ</rt></ruby>の<ruby>道<rt>みち</rt></ruby>は<ruby>一方通行<rt>いっぽうつうこう</rt></ruby>である。",
+          "4　<ruby>会場<rt>かいじょう</rt></ruby>へは<ruby>車<rt>くるま</rt></ruby>で<ruby>来<rt>き</rt></ruby>てはいけない。"
         ],
         "correct_answer": 3,
-        "explanation": "注記に「※さくらホールの手前に有料駐車場がございます」とあるため、3が正しいです。"
+        "explanation": "案内の注記に「※ビルに面した道路は一方通行になっています」と明記されているため、3が合致しています。別冊解答解説にも「4つ目の信号からドラッグストアまで100メートル離れている」ため2は誤りであると解説されています。"
       }
+    ],
+    "footnotes": [
+      "* You'll find it in the basement of the fourth building from the corner.",
+      "** The building is on a one-way street."
     ]
   }
 }

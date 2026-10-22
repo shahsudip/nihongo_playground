@@ -5,9 +5,10 @@ import ThemeToggle from './ThemeToggle.jsx';
 import { useAuth } from '../context/AuthContext.jsx';
 
 const navLinks = [
-  { to: '/levels',     label: 'Levels' },
-  { to: '/books',      label: 'Books' },
-  { to: '/anki-decks', label: 'Anki Decks' },
+  { to: '/levels',      label: 'Levels' },
+  { to: '/check-level', label: 'Check Your Level' },
+  { to: '/books',       label: 'Books' },
+  { to: '/anki-decks',  label: 'Anki Decks' },
 ];
 
 const MainHeader = () => {

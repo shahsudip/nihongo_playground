@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "optionLabelOverrides": [
+    {
+      "id": "c6-m2-q8",
+      "sourcePage": 28,
+      "sourceLabels": [
+        "1",
+        "2",
+        "3",
+        "3"
+      ],
+      "displayLabels": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "reason": "The fourth printed label duplicates 3. The option remains position 4."
+    }
+  ]
+}

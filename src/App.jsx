@@ -73,6 +73,9 @@ const JlptPracticeTestQuizPage = lazy(() => import('./components/JlptPracticeTes
 // JLPT Past Exam Papers (Real Questions from recent years)
 const JlptPastQuestionsListPage = lazy(() => import('./components/JlptPastQuestionsListPage.jsx'));
 
+// Omni-Source 20-Question Level Check
+const LevelCheckPage = lazy(() => import('./components/LevelCheckPage.jsx'));
+
 // This component protects routes that require a user to be logged in
 function ProtectedRoute({ children }) {
   const { currentUser } = useAuth();
@@ -89,6 +92,8 @@ export default function App() {
         
           {/* All protected pages use the MainLayout */}
           <Route element={<MainLayout />}>
+            <Route path="/check-level" element={<ProtectedRoute><LevelCheckPage /></ProtectedRoute>} />
+            <Route path="/levels/:level/check-level" element={<ProtectedRoute><LevelCheckPage /></ProtectedRoute>} />
             <Route path="/levels/:level/kanji-list" element={<ProtectedRoute><KanjiListPage /></ProtectedRoute>} />
             <Route path="/levels/:level/vocabulary-list" element={<ProtectedRoute><VocabularyListPage /></ProtectedRoute>} />
             <Route path="/levels/:level/grammar-list" element={<ProtectedRoute><GrammarListPage /></ProtectedRoute>} />

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "pipelineVersion": 1,
+  "sourceFile": "134. First time JLPT N3 350 Kanji Test.pdf",
+  "sourceSha256": "9924b9619a92e6d5911be49c29e29b487d1377505a6ab86496f9bdb1e4c69562",
+  "pageCount": 36,
+  "chapterCount": 7,
+  "sectionCount": 28,
+  "questionCount": 280,
+  "overrideIds": [
+    "c6-m2-q8"
+  ],
+  "generatedFiles": {
+    "book.json": "613ed6753f75fc2c6d962377c92d22bad28acef830a9287a03632a37cfa66d09",
+    "chapter-1.json": "a56f5f303365c083fa6a334b0b9d293955f8662bd62e555fed4e2de47ddabac4",
+    "chapter-2.json": "3dcae07817dff22f9c2c8cc5a5086d8178fb77661d171a33ae7294c16f4e534d",
+    "chapter-3.json": "9687685b1ab51cfc4e4d388e8b4f006ab9f7af5964e3f3285eaa1d2ab3b2c724",
+    "chapter-4.json": "46cea4721cdecd64bafa998e6dc05ae28b65644632f2da3a5590394d4c074e96",
+    "chapter-5.json": "f6aa0c6eafb9db0ea97d31f8a746ef615bb78da18d2cd5259113f091d912b3a0",
+    "chapter-6.json": "e1e3e618c0e6c60e902f780bb953069104484a9b51e66961c7b8d85f4d9acb65",
+    "chapter-7.json": "d51b738eea21df6bc8e199814839a2039811f40a59147814c2a2b79d494c368e",
+    "index.js": "13fa425f6bb5e36612c51b13656cff28c80bee259a31a73ce92a5aaa0d20f770"
+  }
+}

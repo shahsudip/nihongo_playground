@@ -1,0 +1,30 @@
+{
+  "id": "first-time-jlpt-n3-350-kanji",
+  "title": "First Time JLPT N3 350 Kanji Test",
+  "description": "Seven chapter JLPT N3 kanji workbook with 280 reading and spelling questions covering 350 kanji.",
+  "level": "N3",
+  "category": "Kanji",
+  "coverImage": "/images/books/first_time_n3_350_kanji_cover.png",
+  "coverUrl": "/images/books/first_time_n3_350_kanji_cover.png",
+  "color": "from-blue-700 to-red-600",
+  "tags": [
+    "N3",
+    "Kanji",
+    "Reading",
+    "Spelling",
+    "JLPT"
+  ],
+  "hasDigitalDrill": true,
+  "totalChapters": 7,
+  "totalSections": 28,
+  "totalQuestions": 280,
+  "practiceModes": [
+    "study",
+    "exam"
+  ],
+  "practiceSizes": [
+    10,
+    40
+  ],
+  "sourcePdfSha256": "9924b9619a92e6d5911be49c29e29b487d1377505a6ab86496f9bdb1e4c69562"
+}

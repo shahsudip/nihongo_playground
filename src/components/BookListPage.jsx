@@ -5,6 +5,12 @@ import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
 import { collection, getDocs } from 'firebase/firestore';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
+import {
+  getAnsweredCount,
+  getCombinedAttemptCount,
+  mergeHistoryMaps,
+  selectPreferredAttempt,
+} from '../utils/bookProgress.js';
 import { STATIC_BOOKS } from '../data/static_books_catalog.js';
 
 import coverN1 from '../assets/shin_cover_n1.jpg';
@@ -20,76 +26,190 @@ import tangoN2Cover from '../assets/tango_n2_cover.jpg';
 import tangoN3Cover from '../assets/tango_n3_cover.jpg';
 
 const N3_PRACTICE_BOOK_ID = 'jlpt-n3-practice-sets';
+const NIHONGO_NO_MORI_BOOK_ID = 'nihongo-no-mori-n3';
+const NIHONGO_NO_MORI_TOTAL_QUESTIONS = 500;
+const NIHONGO_NO_MORI_SECTION_COUNT = 19;
 
-const getRecordTime = (record) => {
-  const value = record?.timestamp || record?.updatedAt || record?.createdAt;
-  if (value && typeof value.toMillis === 'function') return value.toMillis();
-  const parsed = Date.parse(value || '');
-  return Number.isFinite(parsed) ? parsed : 0;
+const QUESTION_PROGRESS_BOOKS = {
+  'first-time-jlpt-n3-350-kanji': {
+    unitCount: 7,
+    totalQuestions: 280,
+    getUnitId: unitNumber => `chapter-${unitNumber}`,
+    getSectionRecords: (history, unitKey) => (
+      Array.from({ length: 4 }, (_, index) => history[`${unitKey}--section-${index + 1}`])
+    ),
+  },
+  'pass-n3-within-20-days': {
+    unitCount: 20,
+    totalQuestions: 1160,
+    getUnitId: unitNumber => `chapter-${unitNumber}`,
+    getSectionRecords: (history, unitKey) => (
+      Array.from({ length: 8 }, (_, index) => history[`${unitKey}--section-${index + 1}`])
+    ),
+  },
+  [N3_PRACTICE_BOOK_ID]: {
+    unitCount: 15,
+    totalQuestions: 870,
+    getUnitId: unitNumber => `set-${unitNumber}`,
+    getSectionRecords: (history, unitKey) => [
+      history[`${unitKey}-vocabulary-kanji`],
+      selectPreferredAttempt(
+        history[`${unitKey}-grammar`],
+        history[`${unitKey}-grammar-reading`]
+      ),
+    ],
+  },
 };
 
-const selectLatestRecord = (currentRecord, incomingRecord) => {
-  if (!currentRecord) return incomingRecord;
-  if (!incomingRecord) return currentRecord;
-  return getRecordTime(incomingRecord) >= getRecordTime(currentRecord) ? incomingRecord : currentRecord;
+const addHistoryRecord = (historyMap, quizId, record) => {
+  if (!quizId || !record) return;
+  historyMap[quizId] = selectPreferredAttempt(historyMap[quizId], {
+    ...record,
+    quizId,
+  });
 };
 
-const loadLocalHistory = () => {
+const loadCachedAttemptHistory = (currentUser = null) => {
+  const historyMap = {};
+  if (typeof localStorage === 'undefined') return historyMap;
+
+  const bookPrefixes = Object.keys(QUESTION_PROGRESS_BOOKS)
+    .filter(bookId => bookId !== N3_PRACTICE_BOOK_ID)
+    .flatMap(bookId => [
+      { prefix: `book_quiz_guest_${bookId}_`, bookId },
+      ...(currentUser ? [{ prefix: `book_quiz_${currentUser.uid}_${bookId}_`, bookId }] : []),
+    ]);
+  const practicePrefixes = [
+    'n3_practice_set_guest_',
+    ...(currentUser ? [`n3_practice_set_${currentUser.uid}_`] : []),
+  ];
+
+  try {
+    for (let index = 0; index < localStorage.length; index += 1) {
+      const storageKey = localStorage.key(index);
+      if (!storageKey) continue;
+
+      const bookMatch = bookPrefixes.find(({ prefix }) => storageKey.startsWith(prefix));
+      if (bookMatch) {
+        const attemptId = storageKey.slice(bookMatch.prefix.length);
+        const cachedRecord = JSON.parse(localStorage.getItem(storageKey) || 'null');
+        addHistoryRecord(historyMap, `${bookMatch.bookId}-${attemptId}`, cachedRecord);
+        continue;
+      }
+
+      const practicePrefix = practicePrefixes.find(prefix => storageKey.startsWith(prefix));
+      if (practicePrefix) {
+        const attemptId = storageKey.slice(practicePrefix.length);
+        const match = attemptId.match(/^(set-\d+)_(.+)$/);
+        if (!match) continue;
+        const [, setId, sectionId] = match;
+        const suffix = sectionId === 'full' ? '' : `-${sectionId}`;
+        const cachedRecord = JSON.parse(localStorage.getItem(storageKey) || 'null');
+        addHistoryRecord(historyMap, `${N3_PRACTICE_BOOK_ID}-${setId}${suffix}`, cachedRecord);
+      }
+    }
+
+    const nihongoNoMoriScoreKeys = [
+      'nihongo_no_mori_n3_scores_guest',
+      ...(currentUser ? [`nihongo_no_mori_n3_scores_${currentUser.uid}`] : []),
+    ];
+    nihongoNoMoriScoreKeys.forEach(storageKey => {
+      const savedScores = JSON.parse(localStorage.getItem(storageKey) || 'null');
+      Object.entries(savedScores || {}).forEach(([sectionId, record]) => {
+        addHistoryRecord(
+          historyMap,
+          `${NIHONGO_NO_MORI_BOOK_ID}-${sectionId}`,
+          record
+        );
+      });
+    });
+  } catch (error) {
+    console.warn('Could not read cached book attempts:', error.message);
+  }
+
+  return historyMap;
+};
+
+const getNihongoNoMoriProgress = (history) => {
+  const sectionPrefix = `${NIHONGO_NO_MORI_BOOK_ID}-`;
+  const sectionRecords = new Map();
+
+  Object.entries(history).forEach(([quizId, record]) => {
+    if (!quizId.startsWith(sectionPrefix)) return;
+    const sectionId = quizId.slice(sectionPrefix.length);
+    sectionRecords.set(
+      sectionId,
+      selectPreferredAttempt(sectionRecords.get(sectionId), record)
+    );
+  });
+
+  let answeredQuestions = 0;
+  let completedSections = 0;
+  sectionRecords.forEach(record => {
+    const total = Math.max(Number(record?.total || 0), 0);
+    const answered = Math.min(getAnsweredCount(record), total);
+    answeredQuestions += answered;
+    completedSections += Number(total > 0 && answered >= total);
+  });
+
+  return {
+    completed: completedSections,
+    total: NIHONGO_NO_MORI_SECTION_COUNT,
+    percent: Math.round((Math.min(answeredQuestions, NIHONGO_NO_MORI_TOTAL_QUESTIONS) / NIHONGO_NO_MORI_TOTAL_QUESTIONS) * 100),
+    label: 'Progress',
+  };
+};
+
+const loadLocalHistory = (currentUser = null) => {
+  const historyMap = {};
   try {
     const storedHistory = JSON.parse(localStorage.getItem('quizHistory') || '[]');
     const records = Array.isArray(storedHistory) ? storedHistory : Object.values(storedHistory || {});
-    return records.reduce((historyMap, record) => {
+    records.forEach(record => {
       const quizId = record?.quizId || record?.id;
-      if (quizId) historyMap[quizId] = selectLatestRecord(historyMap[quizId], record);
-      return historyMap;
-    }, {});
+      addHistoryRecord(historyMap, quizId, record);
+    });
   } catch (error) {
     console.warn('Could not read local book progress:', error.message);
-    return {};
   }
+
+  return mergeHistoryMaps(historyMap, loadCachedAttemptHistory(currentUser));
 };
 
-const getAnsweredCount = (record) => {
-  const savedCount = Number(record?.answered || 0);
-  const answerCount = Object.keys(record?.answers || {}).length;
-  return Math.max(savedCount, answerCount);
-};
-
-const getN3PracticeProgress = (book, history) => {
-  const totalSets = book.totalChapters || 15;
-  const totalQuestions = book.totalQuestions || totalSets * 58;
-  const questionsPerSet = totalQuestions / totalSets;
+const getQuestionBasedProgress = (book, history) => {
+  const config = QUESTION_PROGRESS_BOOKS[book.id];
+  const unitCount = book.totalChapters || config.unitCount;
+  const totalQuestions = book.totalQuestions || config.totalQuestions;
+  const questionsPerUnit = totalQuestions / unitCount;
   let answeredQuestions = 0;
-  let completedSets = 0;
+  let completedUnits = 0;
 
-  for (let setNumber = 1; setNumber <= totalSets; setNumber += 1) {
-    const setKey = `${book.id}-set-${setNumber}`;
-    const fullRecord = history[setKey];
-    const vocabularyRecord = history[`${setKey}-vocabulary-kanji`];
-    const grammarRecord = selectLatestRecord(history[`${setKey}-grammar`], history[`${setKey}-grammar-reading`]);
-    const hasSectionRecords = Boolean(vocabularyRecord || grammarRecord);
-    const setAnswered = hasSectionRecords
-      ? getAnsweredCount(vocabularyRecord) + getAnsweredCount(grammarRecord)
-      : getAnsweredCount(fullRecord);
-    const cappedAnswered = Math.min(setAnswered, questionsPerSet);
+  for (let unitNumber = 1; unitNumber <= unitCount; unitNumber += 1) {
+    const unitKey = `${book.id}-${config.getUnitId(unitNumber)}`;
+    const unitAnswered = getCombinedAttemptCount(
+      history[unitKey],
+      config.getSectionRecords(history, unitKey),
+      questionsPerUnit
+    );
 
-    answeredQuestions += cappedAnswered;
-    completedSets += Number(cappedAnswered >= questionsPerSet);
+    answeredQuestions += unitAnswered;
+    completedUnits += Number(unitAnswered >= questionsPerUnit);
   }
 
   return {
-    completed: completedSets,
-    total: totalSets,
+    completed: completedUnits,
+    total: unitCount,
     percent: totalQuestions > 0 ? Math.round((answeredQuestions / totalQuestions) * 100) : 0,
+    label: 'Progress',
   };
 };
 
 const BookListPage = () => {
   const { currentUser } = useAuth();
-  const [books, setBooks] = useState(STATIC_BOOKS);
-  const [history, setHistory] = useState(loadLocalHistory);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const books = STATIC_BOOKS;
+  const [history, setHistory] = useState(() => loadLocalHistory());
+  const loading = false;
+  const error = null;
 
   const [activeLevel, setActiveLevel] = useState('All');
 
@@ -105,6 +225,8 @@ const BookListPage = () => {
   ];
 
   useEffect(() => {
+    setHistory(loadLocalHistory(currentUser));
+
     // 1. Fetch user history in background asynchronously without blocking UI
     if (currentUser) {
       const historyColRef = collection(db, 'users', currentUser.uid, 'quizHistory');
@@ -113,14 +235,18 @@ const BookListPage = () => {
           const userHistory = {};
           historySnap.forEach(docSnap => {
             const data = docSnap.data();
-            if (data && (data.type === 'book' || data.bookId === N3_PRACTICE_BOOK_ID)) {
+            if (data && (
+              data.type === 'book'
+              || data.bookId === N3_PRACTICE_BOOK_ID
+              || data.quizId?.startsWith(N3_PRACTICE_BOOK_ID)
+            )) {
               userHistory[data.quizId] = data;
             }
           });
           setHistory(currentHistory => {
             const mergedHistory = { ...currentHistory };
             Object.entries(userHistory).forEach(([quizId, record]) => {
-              mergedHistory[quizId] = selectLatestRecord(mergedHistory[quizId], record);
+              mergedHistory[quizId] = selectPreferredAttempt(mergedHistory[quizId], record);
             });
             return mergedHistory;
           });
@@ -134,8 +260,12 @@ const BookListPage = () => {
 
 
   const getBookProgress = (book) => {
-    if (book.id === N3_PRACTICE_BOOK_ID) {
-      return getN3PracticeProgress(book, history);
+    if (book.id === NIHONGO_NO_MORI_BOOK_ID) {
+      return getNihongoNoMoriProgress(history);
+    }
+
+    if (QUESTION_PROGRESS_BOOKS[book.id]) {
+      return getQuestionBasedProgress(book, history);
     }
 
     let completedCount = 0;
@@ -160,7 +290,9 @@ const BookListPage = () => {
             completedCount++;
           }
         }
-      } catch (e) {}
+      } catch (storageError) {
+        console.warn('Could not inspect cached book progress:', storageError.message);
+      }
     }
 
     const total = book.totalChapters || 0;
@@ -313,7 +445,7 @@ const BookListPage = () => {
                 <div className="mb-4">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-sm sm:text-base font-black text-gray-200 group-hover:text-emerald-300 dark:group-hover:text-purple-300 transition-colors duration-300 tracking-wide">
-                      Completed
+                      {progress.label || 'Completed'}
                     </span>
                     <span className="font-mono text-base sm:text-lg font-black text-emerald-400 dark:text-purple-400 group-hover:text-emerald-300 dark:group-hover:text-purple-300 group-hover:scale-105 transition-all duration-300">
                       {progress.percent}%

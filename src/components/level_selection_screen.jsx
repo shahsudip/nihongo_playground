@@ -59,10 +59,10 @@ const LevelSelectionPage = () => {
   const currentLvlUpper = level ? level.toUpperCase() : '';
   const currentLvlInfo = level ? levelMeta[level.toLowerCase()] : null;
 
-  // View 2: Select List (Kanji, Vocabulary, Grammar, Practice Tests, Past Exams)
+  // View 2: Select List (Kanji, Vocabulary, Grammar, Practice Tests, Past Exams, Check Level)
   const renderCategorySelection = () => (
     <div className="w-full max-w-7xl mx-auto px-4 py-8 animate-fade-in">
-      <div className="flex items-center gap-2 mb-6">
+      <div className="flex items-center justify-between gap-2 mb-6 flex-wrap">
         <button 
           onClick={() => navigate('/levels')} 
           className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-gray-600 dark:text-gray-400 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-black/5 dark:hover:bg-white/5 transition-all cursor-pointer"
@@ -70,6 +70,14 @@ const LevelSelectionPage = () => {
           <span>←</span>
           <span>Back to All Levels</span>
         </button>
+
+        <Link
+          to={`/check-level?level=${currentLvlUpper}`}
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-xs font-black shadow-md hover:opacity-95 transition-all"
+        >
+          <span>🎲</span>
+          <span>Check Your {currentLvlUpper} Level (20 Random Qs) →</span>
+        </Link>
       </div>
 
       <div className="text-center mb-10">
@@ -138,6 +146,27 @@ const LevelSelectionPage = () => {
         <p className="text-sm text-gray-700 dark:text-gray-300 mt-1.5 max-w-lg mx-auto font-medium">
           Choose your target level to explore Kanji, Vocabulary, and Grammar lists.
         </p>
+      </div>
+
+      {/* Omni-Source Check Your Level Call-to-Action Banner */}
+      <div className="mb-6 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 rounded-3xl p-5 sm:p-6 text-white shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="text-center sm:text-left">
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/20 text-[11px] font-black uppercase mb-1.5">
+            <span>🎲 New Feature • 20 Random Questions</span>
+          </div>
+          <h2 className="text-xl sm:text-2xl font-black">
+            Check Your Level (実力レベル診断)
+          </h2>
+          <p className="text-xs sm:text-sm text-white/90 mt-1 max-w-xl font-medium">
+            Every test randomly pulls 4 Kanji, 4 Vocab, 6 Grammar, 4 Reading, and 2 Listening Audio questions from all books, past exams, and static lists.
+          </p>
+        </div>
+        <Link
+          to="/check-level"
+          className="shrink-0 px-5 py-3 rounded-2xl bg-white text-emerald-700 font-black text-xs sm:text-sm shadow-md hover:scale-105 transition-transform"
+        >
+          Start Level Check →
+        </Link>
       </div>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">

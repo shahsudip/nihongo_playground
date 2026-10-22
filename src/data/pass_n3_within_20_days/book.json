@@ -1,0 +1,37 @@
+{
+  "id": "pass-n3-within-20-days",
+  "title": "Pass N3 Within 20 Days",
+  "description": "A focused 20-day JLPT N3 course with daily kanji, vocabulary, grammar, sentence ordering, and passage practice.",
+  "level": "N3",
+  "category": "Mixed",
+  "coverImage": "/images/books/pass_n3_within_20_days_cover.png",
+  "coverUrl": "/images/books/pass_n3_within_20_days_cover.png",
+  "color": "from-sky-700 to-orange-500",
+  "tags": [
+    "N3",
+    "Kanji",
+    "Vocabulary",
+    "Grammar",
+    "JLPT"
+  ],
+  "hasDigitalDrill": true,
+  "totalChapters": 20,
+  "totalSections": 160,
+  "totalQuestions": 1160,
+  "practiceModes": [
+    "study",
+    "exam"
+  ],
+  "practiceSizes": [
+    8,
+    6,
+    11,
+    5,
+    5,
+    13,
+    5,
+    5,
+    58
+  ],
+  "sourcePdfSha256": "48e9062cf43778904593dadaeb2bd48d8de28fa52b835ae20201ea148c1c53be"
+}

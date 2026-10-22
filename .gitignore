@@ -42,6 +42,16 @@ scripts/q1_check.txt
 
 # Scripts & scrapers (DB is untouched in Firebase; scripts not needed for online UI)
 scripts/*
+!scripts/first_time_n3_350_kanji/
+!scripts/first_time_n3_350_kanji/**
+!scripts/pass_n3_within_20_days/
+!scripts/pass_n3_within_20_days/**
+!scripts/chokuzen_n3_set5/
+!scripts/chokuzen_n3_set5/**
+!scripts/firebase_backup/
+scripts/firebase_backup/*
+!scripts/firebase_backup/export_books.cjs
+!scripts/firebase_backup/README.md
 !scripts/verify_all_shinkanzen.cjs
 !scripts/verify_speedmaster.cjs
 !scripts/verify_shinkanzen_listening_all.py

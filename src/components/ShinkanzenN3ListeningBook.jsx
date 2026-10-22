@@ -2273,6 +2273,12 @@ const ShinkanzenN3ListeningBook = () => {
                       const isQuestionTrackPlaying = isPlaying && activeAudioSrc === q.audioSrc;
                       const isSkill4Part2Example = isSkill4Part2 && isExampleSection;
                       const usesQuestionAudioBadge = isSkill4Part2Practice || chapterId === 'skill-6';
+                      const previousQuestion = sec.questions[qSubIdx - 1];
+                      const skill6GroupMatch = q.badge?.match(/^(\(\d+\))\s*/);
+                      const skill6BadgeLabel = chapterId === 'skill-6' && skill6GroupMatch && previousQuestion?.badge?.startsWith(skill6GroupMatch[1])
+                        ? q.badge.replace(/^\(\d+\)\s*/, '')
+                        : q.badge || `(${subNum})`;
+                      const questionBadgeTrackCodes = q.badgeTrackCodes || (q.audioSrc ? [questionTrackCode] : []);
                       const shouldShowQuestionText = !isBookFaithfulUnit2 && !isSkill4Part2
                         && !(chapterId === 'skill-6' && sec.title === '確認問題');
 
@@ -2282,23 +2288,27 @@ const ShinkanzenN3ListeningBook = () => {
                             <div className="flex items-start gap-2.5">
                               {!isSkill4Part2Example && (
                                 <span className="font-bold text-base sm:text-lg text-slate-900 dark:text-slate-100 font-serif">
-                                  ({subNum})
+                                  {chapterId === 'skill-6' ? skill6BadgeLabel : `(${subNum})`}
                                 </span>
                               )}
-                              {usesQuestionAudioBadge && (
-                                <HeadphoneBadge
-                                  compact
-                                  trackCode={questionTrackCode}
-                                  isPlaying={isQuestionTrackPlaying}
-                                  onClick={() => {
-                                    if (q.audioSrc) {
-                                      if (isQuestionTrackPlaying) audioRef.current?.pause();
-                                      else switchTrack(q.audioSrc);
-                                    }
-                                  }}
-                                  title={`Play Question Audio [${questionTrackCode}]`}
-                                />
-                              )}
+                              {usesQuestionAudioBadge && questionBadgeTrackCodes.map((trackCode) => {
+                                const track = data.hotspots?.find((hotspot) => hotspot.trackCode === trackCode);
+                                const trackAudioSrc = track?.audioSrc || (trackCode === questionTrackCode ? q.audioSrc : null);
+                                const isTrackPlaying = isPlaying && activeAudioSrc === trackAudioSrc;
+                                return trackAudioSrc ? (
+                                  <HeadphoneBadge
+                                    key={trackCode}
+                                    compact
+                                    trackCode={trackCode}
+                                    isPlaying={isTrackPlaying}
+                                    onClick={() => {
+                                      if (isTrackPlaying) audioRef.current?.pause();
+                                      else switchTrack(trackAudioSrc);
+                                    }}
+                                    title={`Play Question Audio [${trackCode}]`}
+                                  />
+                                ) : null;
+                              })}
                               {chapterId === 'skill-5' && qSubIdx === 0 && (
                                 <HeadphoneBadge
                                   compact

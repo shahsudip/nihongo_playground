@@ -1,0 +1,495 @@
+.pass-n3-20-page {
+  --pass20-ink: #10253f;
+  --pass20-blue: #155eaa;
+  --pass20-blue-dark: #0c3e73;
+  --pass20-cyan: #12a8b5;
+  --pass20-orange: #f36b38;
+  --pass20-paper: #f7fbff;
+  --pass20-card: #ffffff;
+  --pass20-line: #cfdfec;
+  --pass20-muted: #63778c;
+  max-width: 1180px;
+  padding-bottom: 5rem;
+}
+
+.pass-n3-20-page .pass20-book-header {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  padding: 1.75rem;
+  border: 1px solid var(--pass20-line);
+  border-left: 7px solid var(--pass20-orange);
+  background:
+    linear-gradient(125deg, transparent 62%, rgba(18, 168, 181, 0.1) 62%),
+    var(--pass20-card);
+  box-shadow: 0 16px 45px rgba(21, 94, 170, 0.09);
+}
+
+.pass-n3-20-page .book-detail-level {
+  background: var(--pass20-blue);
+  color: #ffffff;
+}
+
+.pass-n3-20-page .book-detail-title {
+  color: var(--pass20-blue-dark);
+}
+
+.pass20-dashboard {
+  color: var(--pass20-ink);
+}
+
+.pass20-quiz {
+  --ft-navy: #155eaa;
+  --ft-navy-deep: #0c3e73;
+  --ft-red: #f36b38;
+}
+
+.pass20-quiz .ft350-quiz-header {
+  border-top-color: var(--ft-red);
+}
+
+.pass20-quiz .ft350-question-number {
+  background: linear-gradient(135deg, var(--ft-navy), var(--ft-red));
+}
+
+.pass20-quiz .ft350-section-switcher {
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.pass20-overview {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(260px, 0.75fr);
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.pass20-overview-copy,
+.pass20-progress-card {
+  border: 1px solid var(--pass20-line);
+  background: var(--pass20-card);
+}
+
+.pass20-overview-copy {
+  padding: clamp(1.5rem, 4vw, 2.75rem);
+  background-image:
+    radial-gradient(circle at 90% 15%, rgba(18, 168, 181, 0.13) 0 55px, transparent 56px),
+    linear-gradient(135deg, transparent 78%, rgba(21, 94, 170, 0.06) 78%);
+}
+
+.pass20-kicker {
+  margin: 0 0 0.65rem;
+  color: var(--pass20-orange);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.pass20-overview-copy h2 {
+  max-width: 680px;
+  margin: 0;
+  color: var(--pass20-blue-dark);
+  font-size: clamp(1.8rem, 4vw, 3.15rem);
+  font-weight: 900;
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+.pass20-overview-copy > p:not(.pass20-kicker) {
+  max-width: 720px;
+  margin: 1rem 0 0;
+  color: var(--pass20-muted);
+  line-height: 1.7;
+}
+
+.pass20-skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 1.35rem;
+}
+
+.pass20-skill-list span {
+  padding: 0.38rem 0.62rem;
+  border: 1px solid var(--pass20-line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--pass20-paper) 86%, transparent);
+  color: var(--pass20-blue-dark);
+  font-size: 0.7rem;
+  font-weight: 750;
+}
+
+.pass20-progress-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.6rem;
+  border-top: 6px solid var(--pass20-cyan);
+}
+
+.pass20-progress-label {
+  color: var(--pass20-cyan);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.pass20-progress-card > strong {
+  margin-top: 0.4rem;
+  color: var(--pass20-blue-dark);
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.pass20-progress-card > strong small {
+  margin-left: 0.35rem;
+  color: var(--pass20-muted);
+  font-size: 0.78rem;
+}
+
+.pass20-progress-track,
+.pass20-day-progress {
+  overflow: hidden;
+  background: color-mix(in srgb, var(--pass20-line) 72%, transparent);
+}
+
+.pass20-progress-track {
+  height: 8px;
+  margin-top: 1rem;
+  border-radius: 999px;
+}
+
+.pass20-progress-track span,
+.pass20-day-progress span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--pass20-cyan), var(--pass20-blue));
+}
+
+.pass20-progress-card p {
+  margin: 0.6rem 0 0;
+  color: var(--pass20-muted);
+  font-size: 0.78rem;
+}
+
+.pass20-progress-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.pass20-progress-stats span {
+  padding: 0.55rem 0.4rem;
+  border: 1px solid var(--pass20-line);
+  color: var(--pass20-muted);
+  font-size: 0.66rem;
+  text-align: center;
+}
+
+.pass20-progress-stats strong {
+  color: var(--pass20-blue-dark);
+  font-size: 0.86rem;
+}
+
+.pass20-progress-card a {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.2rem;
+  border: 2px solid var(--pass20-blue);
+  background: var(--pass20-blue);
+  color: #ffffff;
+  font-weight: 850;
+  text-decoration: none;
+  transition: 150ms ease;
+}
+
+.pass20-progress-card a:hover {
+  background: transparent;
+  color: var(--pass20-blue);
+}
+
+.pass20-phases {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.pass20-phase {
+  overflow: hidden;
+  border: 1px solid var(--pass20-line);
+  background: var(--pass20-card);
+  box-shadow: 0 12px 35px rgba(16, 37, 63, 0.06);
+}
+
+.pass20-phase-header {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.45fr) minmax(0, 1fr) auto;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1.25rem 1.4rem;
+  border-bottom: 1px solid var(--pass20-line);
+  background: linear-gradient(90deg, rgba(21, 94, 170, 0.07), transparent);
+}
+
+.pass20-phase-header span {
+  color: var(--pass20-orange);
+  font-size: 0.65rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.pass20-phase-header h3 {
+  margin: 0.15rem 0 0;
+  color: var(--pass20-blue-dark);
+  font-size: 1.25rem;
+}
+
+.pass20-phase-header p {
+  margin: 0;
+  color: var(--pass20-muted);
+  font-size: 0.82rem;
+}
+
+.pass20-phase-header > strong {
+  padding: 0.45rem 0.65rem;
+  border: 1px solid var(--pass20-cyan);
+  color: var(--pass20-blue-dark);
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+.pass20-day-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pass20-day-card {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  min-height: 172px;
+  border-right: 1px solid var(--pass20-line);
+  border-bottom: 1px solid var(--pass20-line);
+}
+
+.pass20-day-card:nth-child(2n) {
+  border-right: 0;
+}
+
+.pass20-day-card:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.pass20-day-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--pass20-blue-dark);
+  color: #ffffff;
+}
+
+.pass20-day-number span {
+  color: #a9d8f4;
+  font-size: 0.58rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.pass20-day-number strong {
+  margin-top: 0.1rem;
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.pass20-day-card.is-completed .pass20-day-number {
+  background: var(--pass20-blue);
+}
+
+.pass20-day-card.is-mastered .pass20-day-number {
+  background: #167357;
+}
+
+.pass20-day-card.is-in-progress .pass20-day-number {
+  background: var(--pass20-orange);
+}
+
+.pass20-day-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 1rem 1.15rem;
+}
+
+.pass20-day-heading,
+.pass20-day-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.pass20-day-heading span {
+  color: var(--pass20-cyan);
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pass20-day-card.is-in-progress .pass20-day-heading span {
+  color: var(--pass20-orange);
+}
+
+.pass20-day-card.is-mastered .pass20-day-heading span {
+  color: #167357;
+}
+
+.pass20-day-heading h4 {
+  overflow: hidden;
+  margin: 0.15rem 0 0;
+  color: var(--pass20-ink);
+  font-size: 0.95rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pass20-day-heading > strong {
+  color: var(--pass20-blue-dark);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.pass20-day-progress {
+  height: 5px;
+  margin: 0.8rem 0 0.45rem;
+}
+
+.pass20-section-rail {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 3px;
+  margin-bottom: 0.65rem;
+}
+
+.pass20-section-rail span {
+  height: 4px;
+  background: color-mix(in srgb, var(--pass20-line) 80%, transparent);
+}
+
+.pass20-section-rail .is-in-progress {
+  background: var(--pass20-orange);
+}
+
+.pass20-section-rail .is-completed {
+  background: var(--pass20-blue);
+}
+
+.pass20-section-rail .is-mastered {
+  background: #167357;
+}
+
+.pass20-day-footer {
+  color: var(--pass20-muted);
+  font-size: 0.7rem;
+}
+
+.pass20-day-footer > span {
+  min-width: 0;
+}
+
+.pass20-day-footer a {
+  color: var(--pass20-blue);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.pass20-day-footer a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.pass20-dashboard a:focus-visible {
+  outline: 3px solid var(--pass20-orange);
+  outline-offset: 3px;
+}
+
+[data-theme='dark'] .pass-n3-20-page {
+  --pass20-ink: #edf6ff;
+  --pass20-blue: #69b7ff;
+  --pass20-blue-dark: #a6d4ff;
+  --pass20-cyan: #52d3dc;
+  --pass20-orange: #ff9369;
+  --pass20-paper: #111a24;
+  --pass20-card: #151f2a;
+  --pass20-line: #314253;
+  --pass20-muted: #aab9c8;
+}
+
+@media (max-width: 780px) {
+  .pass20-quiz .ft350-section-switcher {
+    grid-template-columns: repeat(9, minmax(64px, 1fr));
+  }
+
+  .pass-n3-20-page {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .pass20-overview,
+  .pass20-day-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pass20-phase-header {
+    grid-template-columns: 1fr auto;
+  }
+
+  .pass20-phase-header p {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .pass20-day-card,
+  .pass20-day-card:nth-child(2n),
+  .pass20-day-card:nth-last-child(-n + 2) {
+    border-right: 0;
+    border-bottom: 1px solid var(--pass20-line);
+  }
+
+  .pass20-day-card:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .pass20-overview-copy {
+    background-image: none;
+  }
+
+  .pass20-phase-header {
+    grid-template-columns: 1fr;
+  }
+
+  .pass20-phase-header > strong {
+    justify-self: start;
+  }
+
+  .pass20-day-card {
+    grid-template-columns: 62px minmax(0, 1fr);
+  }
+
+  .pass20-day-content {
+    padding-right: 0.85rem;
+    padding-left: 0.85rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pass20-dashboard * {
+    transition-duration: 0.01ms !important;
+  }
+}

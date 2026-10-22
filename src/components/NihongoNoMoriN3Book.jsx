@@ -1,33 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
-
-// Import datasets for Nihongo no Mori N3
-import mondai1Data from '../data/nihongo_no_mori_n3/ch1_mondai1_kanji_reading.json';
-import mondai2Data from '../data/nihongo_no_mori_n3/ch1_mondai2_hyouki.json';
-import mondai3Data from '../data/nihongo_no_mori_n3/ch1_mondai3_context.json';
-import mondai4Data from '../data/nihongo_no_mori_n3/ch1_mondai4_synonyms.json';
-import mondai5Data from '../data/nihongo_no_mori_n3/ch1_mondai5_usage.json';
-import grammarSec1Data from '../data/nihongo_no_mori_n3/ch2_sec1_grammar_reason.json';
-import grammarSec2Data from '../data/nihongo_no_mori_n3/ch2_sec2_grammar_situation.json';
-import grammarSec3Data from '../data/nihongo_no_mori_n3/ch2_sec3_grammar_standpoint.json';
-import grammarSec4Data from '../data/nihongo_no_mori_n3/ch2_sec4_grammar_contrast.json';
-import grammarSec5Data from '../data/nihongo_no_mori_n3/ch2_sec5_grammar_degree.json';
-import grammarLessonsData from '../data/nihongo_no_mori_n3/ch2_grammar_lessons.json';
-import dokkaiTanbunData from '../data/nihongo_no_mori_n3/ch3_dokkai_tanbun.json';
-import dokkaiChubunData from '../data/nihongo_no_mori_n3/ch3_dokkai_chubun.json';
-import dokkaiChobunData from '../data/nihongo_no_mori_n3/ch3_dokkai_chobun.json';
-import dokkaiKensakuData from '../data/nihongo_no_mori_n3/ch3_dokkai_kensaku.json';
-import ch4KadaiData from '../data/nihongo_no_mori_n3/ch4_sec1_kadai.json';
-import ch4PointData from '../data/nihongo_no_mori_n3/ch4_sec2_point.json';
-import ch4GaiyouData from '../data/nihongo_no_mori_n3/ch4_sec3_gaiyou.json';
-import ch4HatsuwaData from '../data/nihongo_no_mori_n3/ch4_sec4_hatsuwa.json';
-import ch4SokujiData from '../data/nihongo_no_mori_n3/ch4_sec5_sokuji.json';
+import { doc, getDoc, setDoc, deleteDoc } from 'firebase/firestore';
+import LoadingSpinner from '../utils/loading_spinner.jsx';
+import { loadRuntimeBook } from '../dataSources/runtimeBookDataSource.js';
+import {
+  getRecordedProgress,
+  selectPreferredAttempt,
+  summarizeProgress,
+} from '../utils/bookProgress.js';
 
 // Section & Chapter Definitions
-const BOOK_PARTS = [
+const BOOK_PARTS_TEMPLATE = [
   {
     id: 'moji_goi',
     number: '第1部',
@@ -37,11 +22,11 @@ const BOOK_PARTS = [
     badge: '381問全問収録',
     color: 'from-amber-500 to-orange-600',
     sections: [
-      { id: 'ch1-m1', title: '問題1 漢字読み (90問)', desc: '下線部の漢字の読み方を選ぶ', totalQ: 90, type: 'quiz', data: mondai1Data },
-      { id: 'ch1-m2', title: '問題2 表記 (70問)', desc: 'ひらがなを正しい漢字に直す', totalQ: 70, type: 'quiz', data: mondai2Data },
-      { id: 'ch1-m3', title: '問題3 文脈規定 (117問)', desc: '文脈に合った語彙を選ぶ', totalQ: 117, type: 'quiz', data: mondai3Data },
-      { id: 'ch1-m4', title: '問題4 言い換え類義 (50問)', desc: '同じ意味のことばを選ぶ', totalQ: 50, type: 'quiz', data: mondai4Data },
-      { id: 'ch1-m5', title: '問題5 用法 (54問)', desc: 'ことばの正しい使い方の文を選ぶ', totalQ: 54, type: 'quiz', data: mondai5Data },
+      { id: 'ch1-m1', title: '問題1 漢字読み (90問)', desc: '下線部の漢字の読み方を選ぶ', totalQ: 90, type: 'quiz', data: null },
+      { id: 'ch1-m2', title: '問題2 表記 (70問)', desc: 'ひらがなを正しい漢字に直す', totalQ: 70, type: 'quiz', data: null },
+      { id: 'ch1-m3', title: '問題3 文脈規定 (117問)', desc: '文脈に合った語彙を選ぶ', totalQ: 117, type: 'quiz', data: null },
+      { id: 'ch1-m4', title: '問題4 言い換え類義 (50問)', desc: '同じ意味のことばを選ぶ', totalQ: 50, type: 'quiz', data: null },
+      { id: 'ch1-m5', title: '問題5 用法 (54問)', desc: 'ことばの正しい使い方の文を選ぶ', totalQ: 54, type: 'quiz', data: null },
     ]
   },
   {
@@ -53,12 +38,12 @@ const BOOK_PARTS = [
     badge: '110文法・実践問題',
     color: 'from-blue-600 to-indigo-700',
     sections: [
-      { id: 'ch2-lessons', title: '文法解説 (47文法マスター)', desc: '意味・接続・例文・英語解説 (第1節〜第5節)', totalQ: 47, type: 'lesson', data: grammarLessonsData },
-      { id: 'ch2-sec1', title: '第1節 理由・原因 練習問題 (15問)', desc: '〜せい、〜おかげ、〜ため、〜によって 他', totalQ: 15, type: 'quiz', data: grammarSec1Data },
-      { id: 'ch2-sec2', title: '第2節 状況・変化 練習問題 (15問)', desc: '〜まま、〜つつ、〜つつある、〜にしたがって 他', totalQ: 15, type: 'quiz', data: grammarSec2Data },
-      { id: 'ch2-sec3', title: '第3節 立場・基準 練習問題 (15問)', desc: '〜にとって、〜に対して、〜として 他', totalQ: 15, type: 'quiz', data: grammarSec3Data },
-      { id: 'ch2-sec4', title: '第4節 逆接・否定 練習問題 (15問)', desc: '〜わりに、〜くせに、〜どころか 他', totalQ: 15, type: 'quiz', data: grammarSec4Data },
-      { id: 'ch2-sec5', title: '第5節 程度・強調・比較 練習問題 (15問)', desc: '〜ほど、〜くらい、〜ばかりか 他', totalQ: 15, type: 'quiz', data: grammarSec5Data },
+      { id: 'ch2-lessons', title: '文法解説 (47文法マスター)', desc: '意味・接続・例文・英語解説 (第1節〜第5節)', totalQ: 47, type: 'lesson', data: null },
+      { id: 'ch2-sec1', title: '第1節 理由・原因 練習問題 (15問)', desc: '〜せい、〜おかげ、〜ため、〜によって 他', totalQ: 15, type: 'quiz', data: null },
+      { id: 'ch2-sec2', title: '第2節 状況・変化 練習問題 (15問)', desc: '〜まま、〜つつ、〜つつある、〜にしたがって 他', totalQ: 15, type: 'quiz', data: null },
+      { id: 'ch2-sec3', title: '第3節 立場・基準 練習問題 (15問)', desc: '〜にとって、〜に対して、〜として 他', totalQ: 15, type: 'quiz', data: null },
+      { id: 'ch2-sec4', title: '第4節 逆接・否定 練習問題 (15問)', desc: '〜わりに、〜くせに、〜どころか 他', totalQ: 15, type: 'quiz', data: null },
+      { id: 'ch2-sec5', title: '第5節 程度・強調・比較 練習問題 (15問)', desc: '〜ほど、〜くらい、〜ばかりか 他', totalQ: 15, type: 'quiz', data: null },
       { id: 'ch2-sec6', title: '第6節 想像・予想 (準備中)', desc: '〜にちがいない、〜はずだ、〜おそれがある 他', totalQ: 15, type: 'quiz', data: null },
     ]
   },
@@ -71,10 +56,10 @@ const BOOK_PARTS = [
     badge: '短文・中文・長文・情報検索',
     color: 'from-emerald-600 to-teal-700',
     sections: [
-      { id: 'ch3-tanbun', title: '問題4 内容理解 (短文 - 4問)', desc: 'お知らせ・メール・意見文 (約200字)', totalQ: 4, type: 'dokkai', data: dokkaiTanbunData },
-      { id: 'ch3-chubun', title: '問題5 内容理解 (中文 - 6問)', desc: '解説文・エッセイ (約400字)', totalQ: 6, type: 'dokkai', data: dokkaiChubunData },
-      { id: 'ch3-chobun', title: '問題6 内容理解 (長文 - 4問)', desc: '論説文・解説 (約700字)', totalQ: 4, type: 'dokkai', data: dokkaiChobunData },
-      { id: 'ch3-kensaku', title: '問題7 情報検索 (2問)', desc: 'ポスター・チラシから条件に合う情報を探す', totalQ: 2, type: 'dokkai', data: dokkaiKensakuData },
+      { id: 'ch3-tanbun', title: '問題4 内容理解 (短文 - 4問)', desc: 'お知らせ・メール・意見文 (約200字)', totalQ: 4, type: 'dokkai', data: null },
+      { id: 'ch3-chubun', title: '問題5 内容理解 (中文 - 6問)', desc: '解説文・エッセイ (約400字)', totalQ: 6, type: 'dokkai', data: null },
+      { id: 'ch3-chobun', title: '問題6 内容理解 (長文 - 4問)', desc: '論説文・解説 (約700字)', totalQ: 4, type: 'dokkai', data: null },
+      { id: 'ch3-kensaku', title: '問題7 情報検索 (2問)', desc: 'ポスター・チラシから条件に合う情報を探す', totalQ: 2, type: 'dokkai', data: null },
     ]
   },
   {
@@ -83,17 +68,42 @@ const BOOK_PARTS = [
     title: '聴解 (Listening Comprehension)',
     desc: '課題理解、ポイント理解、概要理解、発話表現、即時応答の実践演習。',
     icon: '🎧',
-    badge: '33問完全収録 (音声つき)',
+    badge: '28問 + 5例題 (音声つき)',
     color: 'from-purple-600 to-pink-600',
     sections: [
-      { id: 'ch4-kadai', title: '問題1 課題理解 (7問)', desc: '次にするべき行動を聞き取る (例題 + 6問)', totalQ: 7, type: 'quiz', data: ch4KadaiData },
-      { id: 'ch4-point', title: '問題2 ポイント理解 (7問)', desc: 'ポイント・要点を聞き取る (例題 + 6問)', totalQ: 7, type: 'quiz', data: ch4PointData },
-      { id: 'ch4-gaiyou', title: '問題3 概要理解 (4問)', desc: '全体のテーマや話者の言いたいこと (例題 + 3問)', totalQ: 4, type: 'quiz', data: ch4GaiyouData },
-      { id: 'ch4-hatsuwa', title: '問題4 発話表現 (5問)', desc: '状況に合った適切な一言 (例題 + 4問)', totalQ: 5, type: 'quiz', data: ch4HatsuwaData },
-      { id: 'ch4-sokuji', title: '問題5 即時応答 (10問)', desc: '質問や挨拶に対する瞬時の返答 (例題 + 9問)', totalQ: 10, type: 'quiz', data: ch4SokujiData },
+      { id: 'ch4-kadai', title: '問題1 課題理解 (6問 + 例題)', desc: '次にするべき行動を聞き取る', totalQ: 6, type: 'quiz', data: null },
+      { id: 'ch4-point', title: '問題2 ポイント理解 (6問 + 例題)', desc: 'ポイント・要点を聞き取る', totalQ: 6, type: 'quiz', data: null },
+      { id: 'ch4-gaiyou', title: '問題3 概要理解 (3問 + 例題)', desc: '全体のテーマや話者の言いたいこと', totalQ: 3, type: 'quiz', data: null },
+      { id: 'ch4-hatsuwa', title: '問題4 発話表現 (4問 + 例題)', desc: '状況に合った適切な一言', totalQ: 4, type: 'quiz', data: null },
+      { id: 'ch4-sokuji', title: '問題5 即時応答 (9問 + 例題)', desc: '質問や挨拶に対する瞬時の返答', totalQ: 9, type: 'quiz', data: null },
     ]
   }
 ];
+
+const PLANNED_SECTION_IDS = new Set(['ch2-sec6']);
+
+const isScoredQuestion = (question) => (
+  question?.questionNumber !== '例'
+  && !String(question?.id || '').endsWith('-ex')
+);
+
+const isTrackableSection = (section) => (
+  section?.data !== null && (section?.type === 'quiz' || section?.type === 'dokkai')
+);
+
+const getSectionQuestionCount = (section) => {
+  if (!isTrackableSection(section)) return 0;
+  if (section.type === 'dokkai') {
+    return (section.data?.passages || []).reduce((total, passage) => {
+      const questions = passage.questions || (passage.question ? [passage.question] : []);
+      return total + questions.filter(isScoredQuestion).length;
+    }, 0);
+  }
+  return (section.data?.pages || []).reduce(
+    (total, page) => total + (page.questions || []).filter(isScoredQuestion).length,
+    0
+  );
+};
 
 export default function NihongoNoMoriN3Book() {
   const { currentUser } = useAuth();
@@ -103,9 +113,48 @@ export default function NihongoNoMoriN3Book() {
   const [userAnswers, setUserAnswers] = useState({});
   const [showFurigana, setShowFurigana] = useState(true);
   const [sectionScores, setSectionScores] = useState({});
+  const [bookParts, setBookParts] = useState([]);
+  const [contentLoading, setContentLoading] = useState(true);
+  const [contentError, setContentError] = useState(null);
+
+  useEffect(() => {
+    let isMounted = true;
+    loadRuntimeBook('nihongo-no-mori-n3')
+      .then((book) => {
+        const contentBySection = new Map(
+          (book.chapters || []).map(section => [section.id, section.data || section])
+        );
+        const hydratedParts = BOOK_PARTS_TEMPLATE.map(part => ({
+          ...part,
+          sections: part.sections.map(section => ({
+            ...section,
+            data: contentBySection.get(section.id) || null,
+          })),
+        }));
+        const missingSectionIds = hydratedParts
+          .flatMap(part => part.sections)
+          .filter(section => !PLANNED_SECTION_IDS.has(section.id) && section.data === null)
+          .map(section => section.id);
+        if (missingSectionIds.length > 0) {
+          throw new Error(`Missing section content: ${missingSectionIds.join(', ')}`);
+        }
+        if (isMounted) setBookParts(hydratedParts);
+      })
+      .catch((error) => {
+        if (isMounted) setContentError(error.message);
+      })
+      .finally(() => {
+        if (isMounted) setContentLoading(false);
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   // Load saved progress from localStorage and Firestore
   useEffect(() => {
+    setSectionScores({});
     const storageKey = currentUser
       ? `nihongo_no_mori_n3_scores_${currentUser.uid}`
       : `nihongo_no_mori_n3_scores_guest`;
@@ -124,7 +173,13 @@ export default function NihongoNoMoriN3Book() {
           const docRef = doc(db, 'users', currentUser.uid, 'bookProgress', 'nihongo-no-mori-n3');
           const snap = await getDoc(docRef);
           if (snap.exists() && snap.data()?.sections) {
-            setSectionScores(prev => ({ ...prev, ...snap.data().sections }));
+            setSectionScores(previousScores => {
+              const mergedScores = { ...previousScores };
+              Object.entries(snap.data().sections).forEach(([sectionId, record]) => {
+                mergedScores[sectionId] = selectPreferredAttempt(mergedScores[sectionId], record);
+              });
+              return mergedScores;
+            });
           }
         } catch (e) {
           console.warn("Could not fetch remote section scores", e);
@@ -150,15 +205,15 @@ export default function NihongoNoMoriN3Book() {
       } else {
         setUserAnswers({});
       }
-    } catch (e) {
+    } catch {
       setUserAnswers({});
     }
   }, [activeSectionId, currentUser]);
 
-  const selectedPart = BOOK_PARTS.find(p => p.id === selectedPartId) || null;
+  const selectedPart = bookParts.find(p => p.id === selectedPartId) || null;
   
   let currentSectionMeta = null;
-  for (const part of BOOK_PARTS) {
+  for (const part of bookParts) {
     const found = part.sections.find(s => s.id === activeSectionId);
     if (found) {
       currentSectionMeta = found;
@@ -167,6 +222,34 @@ export default function NihongoNoMoriN3Book() {
   }
 
   const sectionData = currentSectionMeta?.data || null;
+  const sectionProgress = useMemo(() => {
+    const progressMap = {};
+    bookParts.forEach(part => {
+      part.sections.forEach(section => {
+        if (isTrackableSection(section)) {
+          progressMap[section.id] = getRecordedProgress(
+            sectionScores[section.id],
+            getSectionQuestionCount(section)
+          );
+        }
+      });
+    });
+    return progressMap;
+  }, [bookParts, sectionScores]);
+  const overallProgress = useMemo(
+    () => summarizeProgress(Object.values(sectionProgress)),
+    [sectionProgress]
+  );
+  const completedSectionCount = Object.values(sectionProgress)
+    .filter(progress => progress.isCompleted).length;
+  const masteredSectionCount = Object.values(sectionProgress)
+    .filter(progress => progress.isMastered).length;
+  const getPartProgress = (part) => summarizeProgress(
+    part.sections
+      .filter(isTrackableSection)
+      .map(section => sectionProgress[section.id])
+  );
+  const selectedPartProgress = selectedPart ? getPartProgress(selectedPart) : null;
 
   // Save answers & score whenever user selects an option
   const handleSelectOption = async (qId, optIdx) => {
@@ -181,38 +264,33 @@ export default function NihongoNoMoriN3Book() {
         : `nihongo_no_mori_n3_ans_guest_${activeSectionId}`;
       try {
         localStorage.setItem(ansKey, JSON.stringify(newAnswers));
-      } catch (e) {}
-
-      // Calculate total questions & correct count
-      let totalQuestions = 0;
-      let correctCount = 0;
-
-      if (currentSectionMeta?.type === 'dokkai') {
-        const passages = sectionData?.passages || [];
-        passages.forEach(p => {
-          const qs = p.questions || (p.question ? [p.question] : []);
-          qs.forEach(q => {
-            totalQuestions++;
-            if (newAnswers[q.id] === q.correct_answer) {
-              correctCount++;
-            }
-          });
-        });
-      } else if (currentSectionMeta?.type === 'quiz') {
-        const pages = sectionData?.pages || [];
-        pages.forEach(p => {
-          (p.questions || []).forEach(q => {
-            totalQuestions++;
-            if (newAnswers[q.id] === q.correct_answer) {
-              correctCount++;
-            }
-          });
-        });
+      } catch (storageError) {
+        console.warn('Could not save local section answers:', storageError);
       }
 
-      const answeredCount = Object.keys(newAnswers).length;
-      const percentage = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
-      const status = answeredCount >= totalQuestions ? 'completed' : 'in-progress';
+      const sectionQuestions = currentSectionMeta?.type === 'dokkai'
+        ? (sectionData?.passages || []).flatMap(passage => (
+            passage.questions || (passage.question ? [passage.question] : [])
+          )).filter(isScoredQuestion)
+        : (sectionData?.pages || []).flatMap(page => page.questions || []).filter(isScoredQuestion);
+      const scoredAnswers = Object.fromEntries(
+        sectionQuestions
+          .filter(question => newAnswers[question.id] !== undefined)
+          .map(question => [question.id, newAnswers[question.id]])
+      );
+      const totalQuestions = sectionQuestions.length;
+      const answeredCount = Object.keys(scoredAnswers).length;
+      const correctCount = sectionQuestions.reduce((total, question) => (
+        total + Number(scoredAnswers[question.id] === question.correct_answer)
+      ), 0);
+      const completionPercent = totalQuestions > 0 ? Math.round((answeredCount / totalQuestions) * 100) : 0;
+      const accuracyPercent = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
+      const isCompleted = totalQuestions > 0 && answeredCount >= totalQuestions;
+      const status = isCompleted && correctCount / totalQuestions > 0.9
+        ? 'mastered'
+        : isCompleted
+          ? 'completed'
+          : 'in-progress';
 
       const updatedScores = {
         ...sectionScores,
@@ -221,7 +299,10 @@ export default function NihongoNoMoriN3Book() {
           score: correctCount,
           total: totalQuestions,
           answered: answeredCount,
-          percentage,
+          answers: scoredAnswers,
+          percentage: accuracyPercent,
+          completionPercent,
+          accuracyPercent,
           status,
           updatedAt: new Date().toISOString()
         }
@@ -234,7 +315,9 @@ export default function NihongoNoMoriN3Book() {
         : `nihongo_no_mori_n3_scores_guest`;
       try {
         localStorage.setItem(storageKey, JSON.stringify(updatedScores));
-      } catch (e) {}
+      } catch (storageError) {
+        console.warn('Could not save local section progress:', storageError);
+      }
 
       // Sync to Firebase & quizHistory if logged in
       if (currentUser) {
@@ -251,7 +334,10 @@ export default function NihongoNoMoriN3Book() {
             score: correctCount,
             total: totalQuestions,
             answered: answeredCount,
-            percentage,
+            answers: scoredAnswers,
+            percentage: accuracyPercent,
+            completionPercent,
+            accuracyPercent,
             status,
             type: 'book',
             category: selectedPart?.id || 'jlpt',
@@ -264,22 +350,36 @@ export default function NihongoNoMoriN3Book() {
     }
   };
 
-  const handleResetSection = () => {
+  const handleResetSection = async (sectionId = activeSectionId) => {
     if (!window.confirm("このセクションの回答履歴をリセットして最初からやり直しますか？")) return;
-    setUserAnswers({});
-    if (activeSectionId) {
+    if (sectionId) {
+      if (sectionId === activeSectionId) setUserAnswers({});
       const ansKey = currentUser
-        ? `nihongo_no_mori_n3_ans_${currentUser.uid}_${activeSectionId}`
-        : `nihongo_no_mori_n3_ans_guest_${activeSectionId}`;
+        ? `nihongo_no_mori_n3_ans_${currentUser.uid}_${sectionId}`
+        : `nihongo_no_mori_n3_ans_guest_${sectionId}`;
       localStorage.removeItem(ansKey);
 
       const updatedScores = { ...sectionScores };
-      delete updatedScores[activeSectionId];
+      delete updatedScores[sectionId];
       setSectionScores(updatedScores);
       const storageKey = currentUser
         ? `nihongo_no_mori_n3_scores_${currentUser.uid}`
         : `nihongo_no_mori_n3_scores_guest`;
       localStorage.setItem(storageKey, JSON.stringify(updatedScores));
+
+      if (currentUser) {
+        try {
+          const progressRef = doc(db, 'users', currentUser.uid, 'bookProgress', 'nihongo-no-mori-n3');
+          await setDoc(progressRef, {
+            sections: updatedScores,
+            updatedAt: new Date().toISOString(),
+          });
+          const historyRef = doc(db, 'users', currentUser.uid, 'quizHistory', `nihongo-no-mori-n3-${sectionId}`);
+          await deleteDoc(historyRef);
+        } catch (error) {
+          console.warn('Could not reset remote section progress:', error);
+        }
+      }
     }
   };
 
@@ -291,6 +391,11 @@ export default function NihongoNoMoriN3Book() {
     }
     return <span dangerouslySetInnerHTML={{ __html: processed }} />;
   };
+
+  if (contentLoading) return <LoadingSpinner />;
+  if (contentError) {
+    return <div className="error-message" style={{ padding: '100px', textAlign: 'center' }}>Failed to load book content: {contentError}</div>;
+  }
 
   // 1. HUB VIEW: 4 Parts
   if (!selectedPartId && !activeSectionId) {
@@ -309,37 +414,66 @@ export default function NihongoNoMoriN3Book() {
           <div className="absolute -right-8 -bottom-8 opacity-10 text-9xl font-black select-none pointer-events-none">
             N3
           </div>
-          <div className="flex items-center gap-2 mb-2 text-emerald-400 font-extrabold text-xs tracking-wider uppercase">
-            <span>🌱 日本語の森 • JLPT 一冊合格シリーズ</span>
-          </div>
-          <h1 className="text-2xl sm:text-4xl font-black mb-3 tracking-tight">
-            JLPT N3 この一冊で合格する
-          </h1>
-          <p className="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed mb-6">
-            文字・語彙から文法、読解、聴解まで、合格に必要な全てのパートを網羅。学習したいパートを選んで練習問題を始めましょう。
-          </p>
+          <div className="relative z-10 grid gap-6 md:grid-cols-[minmax(0,1fr)_220px] md:items-stretch">
+            <div>
+              <div className="flex items-center gap-2 mb-2 text-emerald-400 font-extrabold text-xs tracking-wider uppercase">
+                <span>🌱 日本語の森 • JLPT 一冊合格シリーズ</span>
+              </div>
+              <h1 className="text-2xl sm:text-4xl font-black mb-3 tracking-tight">
+                JLPT N3 この一冊で合格する
+              </h1>
+              <p className="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed mb-6">
+                文字・語彙から文法、読解、聴解まで、合格に必要な全てのパートを網羅。学習したいパートを選んで練習問題を始めましょう。
+              </p>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            {BOOK_PARTS.map(part => {
-              const liveCount = part.sections.filter(s => s.data !== null).length;
-              return (
-                <div key={part.id} className="bg-white/5 border border-white/10 rounded-2xl p-3 text-center">
-                  <div className="text-2xl mb-1">{part.icon}</div>
-                  <div className="text-xs text-slate-400 font-semibold">{part.number}</div>
-                  <div className="text-sm font-black text-white">{part.title.split(' ')[0]}</div>
-                  <div className="text-[11px] text-emerald-400 mt-1 font-bold">
-                    {liveCount > 0 ? `${liveCount}セクション稼働中` : '準備中'}
-                  </div>
-                </div>
-              );
-            })}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {bookParts.map(part => {
+                  const partProgress = getPartProgress(part);
+                  return (
+                    <div key={part.id} className="bg-white/5 border border-white/10 rounded-2xl p-3 text-center">
+                      <div className="text-2xl mb-1">{part.icon}</div>
+                      <div className="text-xs text-slate-400 font-semibold">{part.number}</div>
+                      <div className="text-sm font-black text-white">{part.title.split(' ')[0]}</div>
+                      <div className="text-[11px] text-emerald-400 mt-1 font-bold">
+                        {partProgress.completionPercent}% complete
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            <aside className="rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur-sm flex flex-col justify-center">
+              <span className="text-[11px] font-black uppercase tracking-widest text-emerald-400">Overall progress</span>
+              <strong className="mt-2 text-4xl font-black text-white">{overallProgress.completionPercent}%</strong>
+              <div className="mt-3 h-2 overflow-hidden rounded-full bg-black/40">
+                <span
+                  className="block h-full rounded-full bg-gradient-to-r from-emerald-500 to-cyan-400"
+                  style={{ width: `${overallProgress.completionPercent}%` }}
+                />
+              </div>
+              <span className="mt-2 text-xs text-slate-300">
+                {overallProgress.answered}/{overallProgress.total} questions attempted
+              </span>
+              <div className="mt-4 grid grid-cols-2 gap-2 text-center">
+                <span className="rounded-xl border border-white/10 bg-black/20 p-2 text-[10px] text-slate-300">
+                  <strong className="block text-sm text-white">{completedSectionCount}/19</strong>
+                  completed
+                </span>
+                <span className="rounded-xl border border-white/10 bg-black/20 p-2 text-[10px] text-slate-300">
+                  <strong className="block text-sm text-emerald-400">{masteredSectionCount}/19</strong>
+                  mastered
+                </span>
+              </div>
+            </aside>
           </div>
         </div>
 
         <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-5">
-          {BOOK_PARTS.map(part => {
+          {bookParts.map(part => {
             const liveSections = part.sections.filter(s => s.data !== null);
-            const totalQuestionsLive = liveSections.reduce((acc, s) => acc + (s.data?.totalQuestions || s.totalQ || 0), 0);
+            const partProgress = getPartProgress(part);
+            const totalQuestionsLive = partProgress.total;
 
             return (
               <div
@@ -367,6 +501,22 @@ export default function NihongoNoMoriN3Book() {
                   <p className="text-slate-500 dark:text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
                     {part.desc}
                   </p>
+                  <div className="mb-5 rounded-2xl border border-slate-200 bg-slate-50 p-3 dark:border-slate-800 dark:bg-slate-950/60">
+                    <div className="mb-2 flex items-center justify-between text-xs font-bold">
+                      <span className="text-slate-500 dark:text-slate-400">Question progress</span>
+                      <strong className="text-blue-600 dark:text-blue-400">{partProgress.completionPercent}%</strong>
+                    </div>
+                    <div className="h-1.5 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800">
+                      <span
+                        className={`block h-full rounded-full bg-gradient-to-r ${part.color}`}
+                        style={{ width: `${partProgress.completionPercent}%` }}
+                      />
+                    </div>
+                    <div className="mt-2 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                      <span>{partProgress.answered}/{partProgress.total} attempted</span>
+                      <span>{liveSections.length} sections available</span>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-bold">
@@ -418,6 +568,26 @@ export default function NihongoNoMoriN3Book() {
           <p className="text-slate-500 dark:text-slate-400 text-sm mt-2">
             {selectedPart.desc}
           </p>
+          {selectedPartProgress && selectedPartProgress.total > 0 && (
+            <div className="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-950/60">
+              <div className="mb-2 flex items-center justify-between text-xs font-bold">
+                <span className="text-slate-500 dark:text-slate-400">Part progress</span>
+                <strong className="text-blue-600 dark:text-blue-400">{selectedPartProgress.completionPercent}%</strong>
+              </div>
+              <div className="h-2 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800">
+                <span
+                  className={`block h-full rounded-full bg-gradient-to-r ${selectedPart.color}`}
+                  style={{ width: `${selectedPartProgress.completionPercent}%` }}
+                />
+              </div>
+              <div className="mt-2 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500 dark:text-slate-400">
+                <span>{selectedPartProgress.answered}/{selectedPartProgress.total} questions attempted</span>
+                {selectedPartProgress.answered > 0 && (
+                  <span>{selectedPartProgress.accuracyPercent}% accuracy</span>
+                )}
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="w-full max-w-4xl space-y-3">
@@ -427,6 +597,8 @@ export default function NihongoNoMoriN3Book() {
 
           {selectedPart.sections.map((sec, idx) => {
             const isAvailable = sec.data !== null;
+            const progress = sectionProgress[sec.id] || null;
+            const hasProgress = Boolean(progress?.answered);
 
             return (
               <div
@@ -461,30 +633,40 @@ export default function NihongoNoMoriN3Book() {
                       }`}>
                         {isAvailable ? `${sec.totalQ}項目 プレイ可能` : '準備中'}
                       </span>
-                      {sectionScores[sec.id] && (
-                        <span className={`text-[11px] font-extrabold px-2 py-0.5 rounded-full border ${
-                          sectionScores[sec.id].percentage >= 80
-                            ? 'bg-emerald-500 text-white border-emerald-600'
-                            : 'bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-300 border-blue-300'
-                        }`}>
-                          スコア: {sectionScores[sec.id].score}/{sectionScores[sec.id].total} ({sectionScores[sec.id].percentage}%)
-                        </span>
-                      )}
                     </div>
                     <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
                       {sec.desc}
                     </p>
+                    {progress && (
+                      <div className="mt-3 max-w-xl">
+                        <div className="mb-1.5 flex flex-wrap items-center justify-between gap-2 text-[11px] font-bold">
+                          <span className="text-slate-500 dark:text-slate-400">
+                            {progress.answered}/{progress.total} attempted
+                          </span>
+                          <span className={progress.isMastered ? 'text-emerald-600 dark:text-emerald-400' : 'text-blue-600 dark:text-blue-400'}>
+                            {progress.completionPercent}% complete
+                            {hasProgress ? ` - ${progress.accuracyPercent}% accuracy` : ''}
+                          </span>
+                        </div>
+                        <div className="h-1.5 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800">
+                          <span
+                            className={`block h-full rounded-full ${progress.isMastered ? 'bg-emerald-500' : 'bg-blue-600'}`}
+                            style={{ width: `${progress.completionPercent}%` }}
+                          />
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3 shrink-0">
                   {isAvailable ? (
                     <div className="flex items-center gap-2">
-                      {sectionScores[sec.id] && (
+                      {hasProgress && (
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
-                            handleResetSection();
+                            handleResetSection(sec.id);
                           }}
                           className="px-2.5 py-1.5 rounded-lg text-xs font-bold text-slate-400 hover:text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/40 transition"
                           title="スコアをリセット"
@@ -493,7 +675,7 @@ export default function NihongoNoMoriN3Book() {
                         </button>
                       )}
                       <button className="px-4 py-2 bg-blue-600 text-white font-bold rounded-xl text-xs hover:bg-blue-700 transition flex items-center gap-1.5 shadow-sm">
-                        <span>{sectionScores[sec.id] ? '続ける' : '開始する'}</span> <span>&rarr;</span>
+                        <span>{hasProgress ? '続ける' : '開始する'}</span> <span>&rarr;</span>
                       </button>
                     </div>
                   ) : (

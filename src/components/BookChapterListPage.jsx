@@ -12,8 +12,14 @@ import SpeedMasterChapterList from './SpeedMasterChapterList.jsx';
 import SouMatomeChapterList from './SouMatomeChapterList.jsx';
 import TangoChapterList from './TangoChapterList.jsx';
 import StandardChapterList from './StandardChapterList.jsx';
+import FirstTimeN3KanjiChapterList from './FirstTimeN3KanjiChapterList.jsx';
+import PassN3Within20DaysChapterList from './PassN3Within20DaysChapterList.jsx';
 import { STATIC_BOOKS } from '../data/static_books_catalog.js';
+import { isRuntimeBookId, loadRuntimeBook } from '../dataSources/runtimeBookDataSource.js';
+import { mergeHistoryMaps, selectPreferredAttempt } from '../utils/bookProgress.js';
 import '../assets/shin500_drill.css';
+import '../assets/first_time_n3_350_kanji.css';
+import '../assets/pass_n3_within_20_days.css';
 
 const BookChapterListPage = () => {
   const { bookId } = useParams();
@@ -26,8 +32,6 @@ const BookChapterListPage = () => {
       navigate(`/books/${bookId}/chapters/w01-d01`, { replace: true });
     }
   }, [bookId, navigate]);
-
-  if (bookId.startsWith('zenkamoku')) return null;
 
   const location = useLocation();
   const { currentUser } = useAuth();
@@ -48,8 +52,13 @@ const BookChapterListPage = () => {
   const isSpeedMaster = bookId.startsWith('speed-master');
   const isSouMatome = bookId.startsWith('sou-matome') || bookId.startsWith('somatome');
   const isTango = bookId.startsWith('tango');
+  const isFirstTimeN3Kanji = bookId === 'first-time-jlpt-n3-350-kanji';
+  const isPassN3Within20Days = bookId === 'pass-n3-within-20-days';
+  const usesRuntimeBookData = isRuntimeBookId(bookId);
 
   useEffect(() => {
+    if (bookId.startsWith('zenkamoku')) return undefined;
+
     let isMounted = true;
 
     const fetchChaptersAndProgress = async () => {
@@ -58,10 +67,17 @@ const BookChapterListPage = () => {
           setLoading(true);
         }
         setError(null);
+        setHistory({});
 
-        // 1. Fetch book metadata if not in static catalog
+        // 1. Development reads source JSON; production reads the same book shape from Firebase.
+        let runtimeBookData = null;
         let bookData = staticBook;
-        if (!bookData) {
+        if (usesRuntimeBookData) {
+          runtimeBookData = await loadRuntimeBook(bookId);
+          const { chapters: runtimeChapters, ...runtimeMetadata } = runtimeBookData;
+          void runtimeChapters;
+          bookData = { ...staticBook, ...runtimeMetadata };
+        } else if (!bookData) {
           const bookDocRef = doc(db, 'books', bookId);
           const bookSnap = await getDoc(bookDocRef);
           if (bookSnap.exists()) {
@@ -82,6 +98,11 @@ const BookChapterListPage = () => {
         // 2. Specialized reading books have static UI layouts and don't need heavy chapter downloads
         if (isReadingBook) {
           if (isMounted) setLoading(false);
+        } else if (usesRuntimeBookData) {
+          if (isMounted) {
+            setChapters(runtimeBookData.chapters || []);
+            setLoading(false);
+          }
         } else {
           // Fetch chapters or topics for quiz books (Power Drill, Tango, Shin Nihongo 500)
           const subColName = bookId.startsWith('tango') ? 'topics' : 'chapters';
@@ -138,7 +159,7 @@ const BookChapterListPage = () => {
                 const saved = JSON.parse(localStorage.getItem(key));
                 if (saved && saved.answers) {
                   const ansCount = Object.keys(saved.answers).length;
-                  localHistory[chapId] = {
+                  localHistory[chapId] = selectPreferredAttempt(localHistory[chapId], {
                     quizId: `${bookId}-${chapId}`,
                     bookId,
                     chapterId: chapId,
@@ -146,10 +167,13 @@ const BookChapterListPage = () => {
                     score: saved.score || 0,
                     total: saved.total || 0,
                     answered: ansCount,
-                    answers: saved.answers
-                  };
+                    answers: saved.answers,
+                    timestamp: saved.timestamp || saved.updatedAt || saved.createdAt,
+                  });
                 }
-              } catch (e) {}
+              } catch {
+                continue;
+              }
             }
           }
         } catch (e) {
@@ -157,14 +181,14 @@ const BookChapterListPage = () => {
         }
 
         if (isMounted && Object.keys(localHistory).length > 0) {
-          setHistory(localHistory);
+          setHistory(currentHistory => mergeHistoryMaps(currentHistory, localHistory));
         }
 
         if (currentUser) {
           const historyColRef = collection(db, 'users', currentUser.uid, 'quizHistory');
           getDocs(historyColRef).then(historySnap => {
             if (!isMounted) return;
-            const bookHistory = { ...localHistory };
+            const bookHistory = {};
             historySnap.forEach(docSnap => {
               const data = docSnap.data();
               if (data && data.type === 'book' && data.quizId.startsWith(`${bookId}-`)) {
@@ -172,7 +196,7 @@ const BookChapterListPage = () => {
                 bookHistory[chapId] = data;
               }
             });
-            setHistory(bookHistory);
+            setHistory(currentHistory => mergeHistoryMaps(currentHistory, bookHistory));
           }).catch(err => {
             console.warn("Background history load:", err);
           });
@@ -191,7 +215,9 @@ const BookChapterListPage = () => {
     return () => {
       isMounted = false;
     };
-  }, [bookId, currentUser, staticBook, isReadingBook]);
+  }, [bookId, currentUser, staticBook, isReadingBook, usesRuntimeBookData]);
+
+  if (bookId.startsWith('zenkamoku')) return null;
 
   if (loading) {
     if (isShin500) {
@@ -207,7 +233,7 @@ const BookChapterListPage = () => {
   if (!book) return null;
 
   return (
-    <div className={`book-detail-container ${isShin500 ? `shin500-chapter-page theme-${theme}` : ''}`}>
+    <div className={`book-detail-container ${isShin500 ? `shin500-chapter-page theme-${theme}` : ''} ${isFirstTimeN3Kanji ? 'first-time-n3-kanji-page' : ''} ${isPassN3Within20Days ? 'pass-n3-20-page' : ''}`}>
       {!isFromProfile && (
         <nav aria-label="Breadcrumb" className="ps-breadcrumb mb-6">
           <ol className="flex flex-wrap items-center gap-1 text-sm">
@@ -227,13 +253,17 @@ const BookChapterListPage = () => {
       )}
 
       {/* Clean Header */}
-      <div className="book-detail-header pt-2">
+      <div className={`book-detail-header pt-2 ${isFirstTimeN3Kanji ? 'ft350-book-header' : ''} ${isPassN3Within20Days ? 'pass20-book-header' : ''}`}>
         <div className="book-detail-info">
           <span className="book-detail-level">{book.level}</span>
           <h1 className="book-detail-title">{book.title}</h1>
           <p className="book-detail-desc">{book.description}</p>
           <div className="book-detail-meta">
-            {isPowerDrill ? (
+            {isFirstTimeN3Kanji ? (
+              <span>7 Chapters &bull; 28 Sections &bull; 280 Questions</span>
+            ) : isPassN3Within20Days ? (
+              <span>20 Days &bull; 8 Question Types &bull; 1,160 Questions</span>
+            ) : isPowerDrill ? (
               <span>
                 {chapters.filter(c => c.id.startsWith('vocab') || c.id.startsWith('training')).length} Vocab Drills &amp; {chapters.filter(c => c.id.startsWith('grammar')).length} Grammar Drills
               </span>
@@ -249,7 +279,19 @@ const BookChapterListPage = () => {
       </div>
 
       {/* Dedicated layout components per book family */}
-      {isPowerDrill ? (
+      {isFirstTimeN3Kanji ? (
+        <FirstTimeN3KanjiChapterList
+          book={book}
+          chapters={chapters}
+          history={history}
+        />
+      ) : isPassN3Within20Days ? (
+        <PassN3Within20DaysChapterList
+          book={book}
+          chapters={chapters}
+          history={history}
+        />
+      ) : isPowerDrill ? (
         <PowerDrillChapterList
           book={book}
           chapters={chapters}

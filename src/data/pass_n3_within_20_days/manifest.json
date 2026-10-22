@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "pipelineVersion": 1,
+  "sourceFile": "131. Pass N3 within 20 days.pdf",
+  "sourceSha256": "48e9062cf43778904593dadaeb2bd48d8de28fa52b835ae20201ea148c1c53be",
+  "pageCount": 214,
+  "ocrPageRange": [
+    3,
+    204
+  ],
+  "skippedDuplicatePages": [
+    153,
+    154
+  ],
+  "chapterCount": 20,
+  "sectionCount": 160,
+  "questionCount": 1160,
+  "sourceTargetCount": 380,
+  "visualCorrectionCount": 155,
+  "recoveredQuestionNumbers": [
+    {
+      "day": 2,
+      "question": 17,
+      "ocrText": "明日からインドネシアに出張なので、あちらの天気が（"
+    },
+    {
+      "day": 3,
+      "question": 1,
+      "ocrText": "118歳の高校生も選挙に参加できるようになった。"
+    },
+    {
+      "day": 4,
+      "question": 4,
+      "ocrText": "4この映画の終了予定時間は17時15分です。"
+    },
+    {
+      "day": 4,
+      "question": 9,
+      "ocrText": "日本のレストランでは、冬でもよくこおりの入った飲み物が出される。"
+    },
+    {
+      "day": 5,
+      "question": 23,
+      "ocrText": "）ことは、先にやってしまおう。"
+    },
+    {
+      "day": 6,
+      "question": 1,
+      "ocrText": "この地方都市では学校の数が減少している。"
+    },
+    {
+      "day": 7,
+      "question": 4,
+      "ocrText": "この問題はあとで改めて考える。"
+    },
+    {
+      "day": 9,
+      "question": 6,
+      "ocrText": "うまくできなかった原因は、あわてていたからだ。"
+    },
+    {
+      "day": 12,
+      "question": 12,
+      "ocrText": "13プールのそこに何か落ちている。"
+    },
+    {
+      "day": 14,
+      "question": 1,
+      "ocrText": "18月11日は「山の日」で、日本では祝日だ。"
+    },
+    {
+      "day": 15,
+      "question": 3,
+      "ocrText": "3 古新聞を束にする。"
+    },
+    {
+      "day": 15,
+      "question": 4,
+      "ocrText": "427日ですが、10時からのご都合はいかがでしょうか。"
+    },
+    {
+      "day": 17,
+      "question": 4,
+      "ocrText": "毎月の電気代やガス代は月末に払っている。"
+    },
+    {
+      "day": 18,
+      "question": 4,
+      "ocrText": "ごれからも彼女の活躍を楽しみにしている。"
+    },
+    {
+      "day": 18,
+      "question": 53,
+      "ocrText": "なれる。"
+    },
+    {
+      "day": 20,
+      "question": 7,
+      "ocrText": "71キ口ぐらい泳いでも平気です。"
+    },
+    {
+      "day": 20,
+      "question": 50,
+      "ocrText": "ありがとうございます。"
+    }
+  ],
+  "reviewFlagCount": 500,
+  "reviewFlags": {
+    "low-confidence-option": 97,
+    "low-confidence-passage": 5,
+    "low-confidence-ruby": 177,
+    "low-confidence-stem": 4,
+    "option-1-duplicate-label-candidates": 47,
+    "option-1-label-not-recognized": 2,
+    "option-1-recovered-positionally": 4,
+    "option-1-visually-corrected": 1,
+    "option-2-duplicate-label-candidates": 45,
+    "option-2-label-not-recognized": 1,
+    "option-2-recovered-positionally": 2,
+    "option-3-duplicate-label-candidates": 41,
+    "option-3-label-not-recognized": 1,
+    "option-3-recovered-positionally": 3,
+    "option-3-visually-corrected": 1,
+    "option-4-duplicate-label-candidates": 42,
+    "option-4-recovered-positionally": 2,
+    "question-number-not-recognized": 17,
+    "ruby-overlap-review": 6,
+    "stem-visually-corrected": 2
+  },
+  "generatedFiles": {
+    "book.json": "5179aae4747ec195bbac7ace189e3938642e2024d4ede1667d849ad7c30399a4",
+    "chapter-1.json": "c931313afcfe8f188bc0c2112b637710b92b5d14270a7d0e522c260855d13b54",
+    "chapter-2.json": "f7d683ec83b54fc040270ec9b5fd96566ed25e59ca64aab1705c6b04b5e5892c",
+    "chapter-3.json": "70724918cea595a9fa8f267c8ef9b7d904d33e0fe7d537a0de6de3c476f14b6b",
+    "chapter-4.json": "ced5875342de9dae3b8f2f7bc3277884e267ca3bb81e9505526c61a7970f7132",
+    "chapter-5.json": "0404bfaa27a5629a84b9a4145fd51e18ec7f4194826fa83df0485a0c92bd552a",
+    "chapter-6.json": "682a4987210a6451e30fa3e6e6639328a7744640e76286260d661181ea5d4666",
+    "chapter-7.json": "86b7ae90038b66414c9c966f12e77d96459b2ffa8b7f70235a84053bfe731b15",
+    "chapter-8.json": "8bcd8d9f2883fb32d655ba0ac37b854842945eb5e810e3569f99fffd0bed9af0",
+    "chapter-9.json": "fca1c442161e6a82e7d3c1c30616680544ac63ca823f70a22a57cf93df678435",
+    "chapter-10.json": "22b09e082bfb26ae8c36f88bc8b09a70cbe4958d636c63343c482c9b379b37e1",
+    "chapter-11.json": "39abe395513de0821b9f242482affaa9b737277ef781586fd7177c7a0f26a9ff",
+    "chapter-12.json": "bd63db021cb335ca1ea908f383842d0153386f84c7878c90b6cccdb1253f2e61",
+    "chapter-13.json": "bc874fb3366897d98ff82831f4a4ec862567ffa2e46b430ab15d498e26201776",
+    "chapter-14.json": "69c0ded38ded0e591f4efabb6d903088fd3b800f302a96857a15e06157068a99",
+    "chapter-15.json": "c07a3125917c0717c960c2f33a63f580571f8374646adb58a2e52c3dd74de1ed",
+    "chapter-16.json": "378fd43e2960a6e8c7e58f5068f6e82ee6a28a081ba0b5530ff640ef11090f23",
+    "chapter-17.json": "7038c0829650fc8966039fa2305a4e6f599510f26bb4d62ccb68b84e047578fe",
+    "chapter-18.json": "70141bf29d22d3837eb405566694dd573ff428b27dd117f8c5cb813c6ea385f7",
+    "chapter-19.json": "35834c61aa43803f1e2dbb28169d2d0b7d23e8db74933fb11c76c235dd471f4c",
+    "chapter-20.json": "593ed64f88a4638f962a752cc3d9a24d00f17ba51dd7f5c74a83331531cf8f38",
+    "index.js": "58433b0d9189766bb863b93fc1bd318d65af5ce7e192f2f9203d6f1907521d72"
+  }
+}

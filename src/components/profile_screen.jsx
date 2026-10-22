@@ -618,9 +618,31 @@ const ProfileScreen = () => {
               <span>{isExamMode ? '⚡ Exam Mode: ON' : '💤 Exam Mode: OFF'}</span>
               <span className="profile-exam-indicator"></span>
             </button>
+            <Link
+              to="/check-level"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-xs font-black shadow-sm hover:opacity-95 transition-all"
+              style={{ textDecoration: 'none' }}
+              title="Take a 20-question randomized JLPT level check across all sources"
+            >
+              <span>🎲</span>
+              <span>Check Your Level</span>
+            </Link>
           </h1>
           <p>
             Active Learner • {currentUser?.email}
+            {(() => {
+              try {
+                const lastDiag = JSON.parse(localStorage.getItem('user_last_level_check') || 'null');
+                if (lastDiag && lastDiag.diagnosedLevel) {
+                  return (
+                    <span className="ml-2 inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 text-xs font-bold">
+                      🏆 Latest Diagnosis: {lastDiag.diagnosedLevel} ({lastDiag.accuracyPercent}%)
+                    </span>
+                  );
+                }
+              } catch (_) {}
+              return null;
+            })()}
           </p>
         </div>
         <div className="profile-hero-stats">

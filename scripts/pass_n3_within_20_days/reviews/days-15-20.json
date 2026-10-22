@@ -1,0 +1,571 @@
+{
+  "corrections": [
+    {
+      "day": 15,
+      "question": 4,
+      "sourcePage": 143,
+      "field": "stem",
+      "ocrText": "427\u65e5\u3067\u3059\u304c\u300110\u6642\u304b\u3089\u306e\u3054\u90fd\u5408\u306f\u3044\u304b\u304c\u3067\u3057\u3087\u3046\u304b\u3002",
+      "correctedText": "27\u65e5\u3067\u3059\u304c\u300110\u6642\u304b\u3089\u306e\u3054\u90fd\u5408\u306f\u3044\u304b\u304c\u3067\u3057\u3087\u3046\u304b\u3002",
+      "visualEvidence": "The boxed question number 4 is separate from the stem, which begins with 27."
+    },
+    {
+      "day": 15,
+      "question": 9,
+      "sourcePage": 144,
+      "field": "stem",
+      "ocrText": "\u6765\u65e5\u3059\u308b\u53cb\u3060\u3061\u3092\u3001\u7a7a\u6e2f\u306e\u3068\u3046\u3061\u3083\u304f\u53e3\u30d3\u30fc\u3067\u5f85\u3063\u305f\u3002",
+      "correctedText": "\u6765\u65e5\u3059\u308b\u53cb\u3060\u3061\u3092\u3001\u7a7a\u6e2f\u306e\u3068\u3046\u3061\u3083\u304f\u30ed\u30d3\u30fc\u3067\u5f85\u3063\u305f\u3002",
+      "visualEvidence": "The source prints katakana \u30ed\u30d3\u30fc after the underlined target."
+    },
+    {
+      "day": 15,
+      "question": 17,
+      "sourcePage": 145,
+      "field": "option2",
+      "ocrText": "\u7ed3\u5c40",
+      "correctedText": "\u7d50\u5c40",
+      "visualEvidence": "Option 2 uses the Japanese glyph \u7d50 in the scan."
+    },
+    {
+      "day": 15,
+      "question": 21,
+      "sourcePage": 145,
+      "field": "option1",
+      "ocrText": "\u4e8b\u5606",
+      "correctedText": "\u4e8b\u5b9f",
+      "visualEvidence": "Option 1 visibly reads \u4e8b\u5b9f with furigana \u3058\u3058\u3064."
+    },
+    {
+      "day": 15,
+      "question": 49,
+      "sourcePage": 150,
+      "field": "starPosition",
+      "ocrText": "missing",
+      "correctedText": "3",
+      "visualEvidence": "The printed star is centered over the third ordering blank."
+    },
+    {
+      "day": 15,
+      "question": 50,
+      "sourcePage": 150,
+      "field": "starPosition",
+      "ocrText": "missing",
+      "correctedText": "3",
+      "visualEvidence": "The printed star is centered over the third ordering blank."
+    },
+    {
+      "day": 15,
+      "question": 54,
+      "sourcePage": 151,
+      "field": "passage",
+      "ocrText": "\u3053\u3046\u3057\u305f\u56f3\u8a18\u53f7\u306f02\u5e74\u306e\u30b5\u30c3\u30ab\u4e00\u65e5\u97d3W\u676f(\u6ce86)\u3092\u6a5f(\u6ce87)\u306bJIS\u306b\u5b9a\u3081\u3089\u308c\u3001\u591a\u304f\u306e",
+      "correctedText": "\u3053\u3046\u3057\u305f\u56f3\u8a18\u53f7\u306f02\u5e74\u306e\u30b5\u30c3\u30ab\u30fc\u65e5\u97d3W\u676f(\u6ce86)\u3092\u6a5f(\u6ce87)\u306bJIS\u306b\u5b9a\u3081\u3089\u308c\u3001\u591a\u304f\u306e",
+      "visualEvidence": "The source uses the katakana long-vowel mark in \u30b5\u30c3\u30ab\u30fc, not the kanji \u4e00."
+    },
+    {
+      "day": 15,
+      "question": 54,
+      "sourcePage": 151,
+      "field": "passageCitation",
+      "ocrText": "(\u671d\u65e5\u65b0\u805e\u300f2016\u5e747\u67088\u65e5\u4ed8)",
+      "correctedText": "\uff08\u300e\u671d\u65e5\u65b0\u805e\u300f2016\u5e747\u67088\u65e5\u4ed8\uff09",
+      "visualEvidence": "The source citation includes the opening book-title bracket and full-width parentheses."
+    },
+    {
+      "day": 16,
+      "question": 15,
+      "sourcePage": 157,
+      "field": "stem",
+      "ocrText": "\u4e45\u4fdd\u7530\u3055\u3093\u306f\u5e83\u5cf6\u306e\uff08 / \u5ef7\u305f",
+      "correctedText": "\u4e45\u4fdd\u7530\u3055\u3093\u306f\u5e83\u5cf6\u306e\uff08\u3000\uff09\u3067\u3059\u3002",
+      "visualEvidence": "The scan clearly ends the stem with the closing blank and \u3067\u3059\u3002"
+    },
+    {
+      "day": 16,
+      "question": 15,
+      "sourcePage": 157,
+      "field": "option3",
+      "ocrText": "\u6545\u9109",
+      "correctedText": "\u6545\u90f7",
+      "visualEvidence": "Option 3 prints the Japanese \u90f7 glyph."
+    },
+    {
+      "day": 16,
+      "question": 18,
+      "sourcePage": 157,
+      "field": "option3",
+      "ocrText": "\u4ee3",
+      "correctedText": "\u4ea4\u4ee3",
+      "visualEvidence": "Option 3 visibly contains both characters \u4ea4\u4ee3 under furigana \u3053\u3046\u305f\u3044."
+    },
+    {
+      "day": 16,
+      "question": 50,
+      "sourcePage": 162,
+      "field": "starPosition",
+      "ocrText": "missing",
+      "correctedText": "3",
+      "visualEvidence": "The printed star is centered over the third ordering blank."
+    },
+    {
+      "day": 16,
+      "question": 53,
+      "sourcePage": 162,
+      "field": "starPosition",
+      "ocrText": "missing",
+      "correctedText": "3",
+      "visualEvidence": "The printed star is centered over the third ordering blank."
+    },
+    {
+      "day": 16,
+      "question": 54,
+      "sourcePage": 163,
+      "field": "passageFootnote",
+      "ocrText": "(\u6ce82\uff09\uff1a\u6e1b\u308b\u3001\u52aa\u529b\u3092\u3057\u3066\u3082\u3088\u3044\u7d50\u679c\u304c\u51fa\u306a\u3044",
+      "correctedText": "\uff08\u6ce82\uff09\u640d\uff1a\u6e1b\u308b\u3001\u52aa\u529b\u3092\u3057\u3066\u3082\u3088\u3044\u7d50\u679c\u304c\u51fa\u306a\u3044",
+      "visualEvidence": "Footnote 2 visibly begins with the headword \u640d."
+    },
+    {
+      "day": 17,
+      "question": 14,
+      "sourcePage": 166,
+      "field": "printedFurigana",
+      "ocrText": "\u3058\u3057A",
+      "correctedText": "\u3058\u3057\u3093",
+      "visualEvidence": "The furigana above \u5730\u9707 reads \u3058\u3057\u3093."
+    },
+    {
+      "day": 17,
+      "question": 14,
+      "sourcePage": 166,
+      "field": "printedFurigana",
+      "ocrText": "\u307e\u3061",
+      "correctedText": "\u307e\u3082",
+      "visualEvidence": "The furigana above \u5b88 reads \u307e\u3082."
+    },
+    {
+      "day": 17,
+      "question": 17,
+      "sourcePage": 167,
+      "field": "option4",
+      "ocrText": "\u30da\u3089\u30da\u3089",
+      "correctedText": "\u307a\u3089\u307a\u3089",
+      "visualEvidence": "Option 4 is printed entirely in hiragana."
+    },
+    {
+      "day": 17,
+      "question": 23,
+      "sourcePage": 168,
+      "field": "option4",
+      "ocrText": "\u62db\u793c",
+      "correctedText": "\u304a\u793c",
+      "visualEvidence": "Option 4 visibly reads \u304a\u793c."
+    },
+    {
+      "day": 17,
+      "question": 24,
+      "sourcePage": 168,
+      "field": "option2",
+      "ocrText": "\u719f\u5fc3",
+      "correctedText": "\u71b1\u5fc3",
+      "visualEvidence": "Option 2 visibly uses \u71b1, with furigana \u306d\u3063\u3057\u3093."
+    },
+    {
+      "day": 17,
+      "question": 27,
+      "sourcePage": 168,
+      "field": "option2",
+      "ocrText": "\u5c11\u513f",
+      "correctedText": "\u5c11\u3057",
+      "visualEvidence": "Option 2 visibly reads \u5c11\u3057."
+    },
+    {
+      "day": 17,
+      "question": 48,
+      "sourcePage": 171,
+      "field": "stem",
+      "ocrText": "\u308f\u305f\u3057\u306f\u30a8\u30f3\u30b8\u30cb\u30a2\u306b\u306a\u308a\u305f\u3050\u3066\u3001\uff08",
+      "correctedText": "\u308f\u305f\u3057\u306f\u30a8\u30f3\u30b8\u30cb\u30a2\u306b\u306a\u308a\u305f\u304f\u3066\u3001\uff08",
+      "visualEvidence": "The source prints the unvoiced kana \u304f in \u306a\u308a\u305f\u304f\u3066."
+    },
+    {
+      "day": 17,
+      "question": 49,
+      "sourcePage": 172,
+      "field": "starPosition",
+      "ocrText": "missing",
+      "correctedText": "3",
+      "visualEvidence": "The printed star is centered over the third ordering blank."
+    },
+    {
+      "day": 17,
+      "question": 50,
+      "sourcePage": 172,
+      "field": "starPosition",
+      "ocrText": "missing",
+      "correctedText": "3",
+      "visualEvidence": "The printed star is centered over the third ordering blank."
+    },
+    {
+      "day": 17,
+      "question": 51,
+      "sourcePage": 172,
+      "field": "starPosition",
+      "ocrText": "missing",
+      "correctedText": "3",
+      "visualEvidence": "The printed star is centered over the third ordering blank."
+    },
+    {
+      "day": 17,
+      "question": 52,
+      "sourcePage": 172,
+      "field": "starPosition",
+      "ocrText": "missing",
+      "correctedText": "3",
+      "visualEvidence": "The printed star is centered over the third ordering blank."
+    },
+    {
+      "day": 17,
+      "question": 54,
+      "sourcePage": 174,
+      "field": "printedFurigana",
+      "ocrText": "\u3072\u304b\u3057\u306b\u307b\u3093\u3060\u3044\u3057\u3093\u3055\u3044",
+      "correctedText": "\u3072\u304c\u3057\u306b\u307b\u3093\u3060\u3044\u3057\u3093\u3055\u3044",
+      "visualEvidence": "The furigana above \u6771\u65e5\u672c\u5927\u9707\u707d uses \u304c in \u3072\u304c\u3057."
+    },
+    {
+      "day": 18,
+      "question": 4,
+      "sourcePage": 175,
+      "field": "stem",
+      "ocrText": "\u3054\u308c\u304b\u3089\u3082\u5f7c\u5973\u306e\u6d3b\u8e8d\u3092\u697d\u3057\u307f\u306b\u3057\u3066\u3044\u308b\u3002",
+      "correctedText": "\u3053\u308c\u304b\u3089\u3082\u5f7c\u5973\u306e\u6d3b\u8e8d\u3092\u697d\u3057\u307f\u306b\u3057\u3066\u3044\u308b\u3002",
+      "visualEvidence": "The first kana in the source is \u3053, without a dakuten."
+    },
+    {
+      "day": 18,
+      "question": 10,
+      "sourcePage": 176,
+      "field": "option3",
+      "ocrText": "\u51b3\u5fc3",
+      "correctedText": "\u6c7a\u5fc3",
+      "visualEvidence": "Option 3 uses the Japanese \u6c7a glyph."
+    },
+    {
+      "day": 18,
+      "question": 15,
+      "sourcePage": 177,
+      "field": "printedFurigana",
+      "ocrText": "\u307f\u3088\u3046\u3054\u306b\u3061",
+      "correctedText": "\u307f\u3087\u3046\u3054\u306b\u3061",
+      "visualEvidence": "The furigana above \u660e\u5f8c\u65e5 uses small \u3087."
+    },
+    {
+      "day": 18,
+      "question": 17,
+      "sourcePage": 177,
+      "field": "option1Label",
+      "ocrText": "!",
+      "correctedText": "1",
+      "visualEvidence": "The source prints option label 1 before \u3042\u308f\u306a\u304b\u3063\u305f."
+    },
+    {
+      "day": 18,
+      "question": 18,
+      "sourcePage": 177,
+      "field": "option4",
+      "ocrText": "\u56e2\u4f53",
+      "correctedText": "\u56e3\u4f53",
+      "visualEvidence": "Option 4 uses the Japanese \u56e3 glyph."
+    },
+    {
+      "day": 18,
+      "question": 20,
+      "sourcePage": 177,
+      "field": "option3",
+      "ocrText": "\u4fe1\u8d56",
+      "correctedText": "\u4fe1\u983c",
+      "visualEvidence": "Option 3 uses the Japanese \u983c glyph."
+    },
+    {
+      "day": 18,
+      "question": 20,
+      "sourcePage": 177,
+      "field": "option4",
+      "ocrText": "\u9032\u6b65",
+      "correctedText": "\u9032\u6b69",
+      "visualEvidence": "Option 4 uses the Japanese \u6b69 glyph."
+    },
+    {
+      "day": 18,
+      "question": 40,
+      "sourcePage": 180,
+      "field": "printedFurigana",
+      "ocrText": "4\u3044",
+      "correctedText": "\u3044\u305b\u3044",
+      "visualEvidence": "The furigana above \u7570\u6027 reads \u3044\u305b\u3044."
+    },
+    {
+      "day": 18,
+      "question": 50,
+      "sourcePage": 182,
+      "field": "starPosition",
+      "ocrText": "missing",
+      "correctedText": "3",
+      "visualEvidence": "The printed star is centered over the third ordering blank."
+    },
+    {
+      "day": 18,
+      "question": 52,
+      "sourcePage": 182,
+      "field": "starPosition",
+      "ocrText": "missing",
+      "correctedText": "3",
+      "visualEvidence": "The printed star is centered over the third ordering blank."
+    },
+    {
+      "day": 18,
+      "question": 53,
+      "sourcePage": 182,
+      "field": "stemAndStar",
+      "ocrText": "\u306a\u308c\u308b\u3002",
+      "correctedText": "\u6749\u672c\u3055\u3093\u306f\u3001\u306f\u3058\u3081\u3066 \uff3f\uff3f\uff3f \uff3f\uff3f\uff3f \u2605 \uff3f\uff3f\uff3f \u306a\u308c\u308b\u3002",
+      "visualEvidence": "The source includes the omitted prefix and shows the star over the third blank."
+    },
+    {
+      "day": 18,
+      "question": 54,
+      "sourcePage": 183,
+      "field": "passage",
+      "ocrText": "\u4f11\u696d\u306b\u3057\u3066\u304a\u304f\u5fc5\u8981\u304c\u3042\u308b\u3002",
+      "correctedText": "\u4f11\u990a\u306b\u3057\u3066\u304a\u304f\u5fc5\u8981\u304c\u3042\u308b\u3002",
+      "visualEvidence": "The source prints \u4f11\u990a, not \u4f11\u696d."
+    },
+    {
+      "day": 19,
+      "question": 11,
+      "sourcePage": 186,
+      "field": "option2",
+      "ocrText": "\u53f3\u6d4b",
+      "correctedText": "\u53f3\u6e2c",
+      "visualEvidence": "Option 2 uses the Japanese \u6e2c glyph."
+    },
+    {
+      "day": 19,
+      "question": 12,
+      "sourcePage": 186,
+      "field": "option2",
+      "ocrText": "\u51b3\u5e2d",
+      "correctedText": "\u6c7a\u5e2d",
+      "visualEvidence": "Option 2 uses the Japanese \u6c7a glyph."
+    },
+    {
+      "day": 19,
+      "question": 20,
+      "sourcePage": 187,
+      "field": "option1",
+      "ocrText": "\u665a",
+      "correctedText": "\u6669",
+      "visualEvidence": "Option 1 uses the Japanese \u6669 glyph."
+    },
+    {
+      "day": 19,
+      "question": 25,
+      "sourcePage": 188,
+      "field": "printedFurigana",
+      "ocrText": "\u3053\u304b\u3044",
+      "correctedText": "\u3054\u304b\u3044",
+      "visualEvidence": "The furigana above \u8aa4\u89e3 begins with \u3054."
+    },
+    {
+      "day": 19,
+      "question": 34,
+      "sourcePage": 189,
+      "field": "targetWord",
+      "ocrText": "\u6c61\u3059",
+      "correctedText": "\u6c5a\u3059",
+      "visualEvidence": "The printed target uses the Japanese \u6c5a glyph."
+    },
+    {
+      "day": 19,
+      "question": 34,
+      "sourcePage": 189,
+      "field": "option3",
+      "ocrText": "\u304a\u624b\u6d17\u3044\u306f\u304d\u308c\u3044\u306b\u4f7f\u3044\u3001\u6c5a\u3055\u306a\u3044\u306a\u3044\u3088\u3046\u306b\u3002",
+      "correctedText": "\u304a\u624b\u6d17\u3044\u306f\u304d\u308c\u3044\u306b\u4f7f\u3044\u3001\u6c5a\u3055\u306a\u3044\u3088\u3046\u306b\u3002",
+      "visualEvidence": "The source contains one occurrence of \u306a\u3044 after \u6c5a\u3055."
+    },
+    {
+      "day": 19,
+      "question": 49,
+      "sourcePage": 192,
+      "field": "printedFurigana",
+      "ocrText": "\u3080\u3051\u3053",
+      "correctedText": "\u3080\u3059\u3053",
+      "visualEvidence": "The furigana above \u606f\u5b50 reads \u3080\u3059\u3053."
+    },
+    {
+      "day": 19,
+      "question": 50,
+      "sourcePage": 192,
+      "field": "starPosition",
+      "ocrText": "missing",
+      "correctedText": "3",
+      "visualEvidence": "The printed star is centered over the third ordering blank."
+    },
+    {
+      "day": 19,
+      "question": 51,
+      "sourcePage": 192,
+      "field": "starPosition",
+      "ocrText": "missing",
+      "correctedText": "3",
+      "visualEvidence": "The printed star is centered over the third ordering blank."
+    },
+    {
+      "day": 19,
+      "question": 53,
+      "sourcePage": 192,
+      "field": "starPosition",
+      "ocrText": "missing",
+      "correctedText": "3",
+      "visualEvidence": "The printed star is centered over the third ordering blank."
+    },
+    {
+      "day": 19,
+      "question": 54,
+      "sourcePage": 193,
+      "field": "passage",
+      "ocrText": "\u82f1\u4f1a\u8a71\u53e3\u30dc\u30c3\u535c",
+      "correctedText": "\u82f1\u4f1a\u8a71\u30ed\u30dc\u30c3\u30c8",
+      "visualEvidence": "The source prints katakana \u30ed\u30dc\u30c3\u30c8."
+    },
+    {
+      "day": 19,
+      "question": 54,
+      "sourcePage": 193,
+      "field": "passageFootnote",
+      "ocrText": "(\u6ce84\uff09\u5c0e\u4eba\uff1a\u53d6\u308a\u5165\u308c\u3066\u3001\u5f79\u7acb\u3066\u308b",
+      "correctedText": "\uff08\u6ce84\uff09\u5c0e\u5165\uff1a\u53d6\u308a\u5165\u308c\u3066\u3001\u5f79\u7acb\u3066\u308b",
+      "visualEvidence": "Footnote 4 prints the headword \u5c0e\u5165."
+    },
+    {
+      "day": 20,
+      "question": 7,
+      "sourcePage": 196,
+      "field": "stem",
+      "ocrText": "\uff11\u30ad\u53e3\u3050\u3089\u3044\u6cf3\u3044\u3067\u3082\u5e73\u6c17\u3067\u3059\u3002",
+      "correctedText": "1\u30ad\u30ed\u3050\u3089\u3044\u6cf3\u3044\u3067\u3082\u5e73\u6c17\u3067\u3059\u3002",
+      "visualEvidence": "The source prints katakana \u30ad\u30ed and an ASCII-style numeral 1."
+    },
+    {
+      "day": 20,
+      "question": 12,
+      "sourcePage": 196,
+      "field": "option3",
+      "ocrText": "\u8d0a\u6b63",
+      "correctedText": "\u8cdb\u6b63",
+      "visualEvidence": "Option 3 uses the Japanese \u8cdb glyph."
+    },
+    {
+      "day": 20,
+      "question": 16,
+      "sourcePage": 197,
+      "field": "printedFurigana",
+      "ocrText": "\u3051\u3044\u3074\u3044\u3093",
+      "correctedText": "\u3051\u3044\u3073\u3044\u3093",
+      "visualEvidence": "The furigana above \u8b66\u5099\u54e1 uses \u3073."
+    },
+    {
+      "day": 20,
+      "question": 19,
+      "sourcePage": 197,
+      "field": "printedFurigana",
+      "ocrText": "\u304e\u3061\u3093",
+      "correctedText": "\u304e\u3082\u3093",
+      "visualEvidence": "The furigana above \u7591\u554f reads \u304e\u3082\u3093."
+    },
+    {
+      "day": 20,
+      "question": 24,
+      "sourcePage": 198,
+      "field": "option2",
+      "ocrText": "\u30da5\u30da5",
+      "correctedText": "\u307a\u3089\u307a\u3089",
+      "visualEvidence": "Option 2 visibly reads \u307a\u3089\u307a\u3089 in hiragana."
+    },
+    {
+      "day": 20,
+      "question": 25,
+      "sourcePage": 198,
+      "field": "option4",
+      "ocrText": "missing",
+      "correctedText": "\u7406\u60f3",
+      "visualEvidence": "The source visibly includes option 4 \u7406\u60f3."
+    },
+    {
+      "day": 20,
+      "question": 29,
+      "sourcePage": 198,
+      "field": "option4",
+      "ocrText": "\u503c\u6bb5",
+      "correctedText": "\u5024\u6bb5",
+      "visualEvidence": "Option 4 uses the Japanese \u5024 glyph."
+    },
+    {
+      "day": 20,
+      "question": 34,
+      "sourcePage": 199,
+      "field": "option4",
+      "ocrText": "\u9280\u884c\u306e\u901a\u5e33\u306f\u3001\u3079\u30c3\u30c8\u306e\u4e0b\u306b\u5dfb\u3044\u3066\u3042\u308b",
+      "correctedText": "\u9280\u884c\u306e\u901a\u5e33\u306f\u3001\u30d9\u30c3\u30c8\u306e\u4e0b\u306b\u5dfb\u3044\u3066\u3042\u308b",
+      "visualEvidence": "The source prints katakana \u30d9 at the start of \u30d9\u30c3\u30c8."
+    },
+    {
+      "day": 20,
+      "question": 35,
+      "sourcePage": 199,
+      "field": "targetWord",
+      "ocrText": "\u7d14\u7cb9",
+      "correctedText": "\u7d14\u7c8b",
+      "visualEvidence": "The printed target word uses the Japanese \u7c8b glyph."
+    },
+    {
+      "day": 20,
+      "question": 50,
+      "sourcePage": 202,
+      "field": "stemAndStar",
+      "ocrText": "\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002",
+      "correctedText": "\u672c\u65e5\u306f \uff3f\uff3f\uff3f \uff3f\uff3f\uff3f \u2605 \uff3f\uff3f\uff3f \u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002",
+      "visualEvidence": "The source includes \u672c\u65e5\u306f and shows the star over the third blank."
+    },
+    {
+      "day": 20,
+      "question": 51,
+      "sourcePage": 202,
+      "field": "starPosition",
+      "ocrText": "missing",
+      "correctedText": "3",
+      "visualEvidence": "The printed star is centered over the third ordering blank."
+    },
+    {
+      "day": 20,
+      "question": 54,
+      "sourcePage": 203,
+      "field": "passage",
+      "ocrText": "\u3066\u3044\u308b\u5b66\u7fd2\u306f\u7d9a\u3051\u3089\u308c\u306a\u3044\u300d\u3068\u6821\u9577\uff0858\uff09\u306f\u8a00\u3046\u3002",
+      "correctedText": "\u3066\u3044\u308b\u5b66\u7fd2\u306f\u7d9a\u3051\u3089\u308c\u306a\u3044\u300d\u3068\u6821\u9577\uff0858\u6b73\uff09\u306f\u8a00\u3046\u3002",
+      "visualEvidence": "The parenthetical 58 is the principal's age and is followed by \u6b73."
+    },
+    {
+      "day": 20,
+      "question": 55,
+      "sourcePage": 203,
+      "field": "printedFurigana",
+      "ocrText": "\u305f\u3044\u308a\u3087\u304f\u3053\u3046\u3057\u3087\u3046",
+      "correctedText": "\u305f\u3044\u308a\u3087\u304f\u3053\u3046\u3058\u3087\u3046",
+      "visualEvidence": "The furigana above \u4f53\u529b\u5411\u4e0a ends \u3053\u3046\u3058\u3087\u3046."
+    }
+  ]
+}

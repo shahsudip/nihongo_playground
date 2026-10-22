@@ -12,13 +12,13 @@
       "text1": "もう開いているのかな？",
       "text2": "今日は休みだよ！",
       "sign": "休館日",
-      "note": "例外がないか注意して読もう。"
+      "note": "★例外がないか注意して読もう。 (Try to read paying attentions to exceptions. / 阅读时注意是否有所例外。 / 예외가 있는지 주의하면서 읽어 봅시다.)"
     }
   },
   "vocabulary": [
     {
-      "word": "上旬 / 初旬",
-      "reading": "じょうじゅん / しょじゅん",
+      "word": "上旬／初旬",
+      "reading": "じょうじゅん／しょじゅん",
       "meaning": "the first 10 days of the month"
     },
     {
@@ -33,13 +33,8 @@
     },
     {
       "word": "第2月曜日",
-      "reading": "だいにげつようび",
+      "reading": "だい2げつようび",
       "meaning": "the second Monday of the month"
-    },
-    {
-      "word": "ただし",
-      "reading": "",
-      "meaning": "however"
     },
     {
       "word": "年末年始",
@@ -62,138 +57,117 @@
       "meaning": "national holiday"
     },
     {
+      "word": "ただし",
+      "reading": "ただし",
+      "meaning": "however"
+    },
+    {
       "word": "なお",
-      "reading": "",
+      "reading": "なお",
       "meaning": "further"
     }
   ],
   "grammar_notes": [
-    "＊「ただし、……」は例外を言うとき、「なお、……」は説明をつけ加えるときに使います。",
-    "▶「休みなんじゃないの？」は「休みだと思う」という意味で言っている。"
+    "＊「ただし、……」は例外を言うとき、「なお、……」は説明をつけ加えるときに使います。( \"Tadashi...\" is used when an exception is given. \"Nao...\" is used when an explanation is added. / 「ただし……」用在表示例外的时候，「なお……」在追加说明的时候使用。 / 「ただし……」는 예외를 말할 때, 「なお……」는 설명을 덧붙일 때에 사용합니다. )",
+    "▶「休みなんじゃないの？」は「休みだと思う」という意味で言っている。( \"Yasumi nan ja nai no?\" is a colloquial form of \"Yasumi de wa arimasen ka?\")"
   ],
   "practice": {
     "title": "れんしゅう",
     "instruction": "次の会話文を読んで、後の文から正しいものを選ぼう。(答えは次のページ)",
     "conversation": [
       {
-        "speaker": "女子学生",
+        "speaker": "<ruby>女子学生<rt>じょしがくせい</rt></ruby>",
         "text": "これからどうするの？"
       },
       {
-        "speaker": "男子学生",
-        "text": "レポート書かないといけないから、中央図書館へいくつもりなんだ。"
+        "speaker": "<ruby>男子学生<rt>だんしがくせい</rt></ruby>",
+        "text": "レポート<ruby>書<rt>か</rt></ruby>かないといけないから、<ruby>中央図書館<rt>ちゅうおうとしょかん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くつもりなんだ。"
       },
       {
-        "speaker": "女子学生",
-        "text": "え？ 今日は第3月曜日だから休みなんじゃないの？"
+        "speaker": "<ruby>女子学生<rt>じょしがくせい</rt></ruby>",
+        "text": "え？　<ruby>今日<rt>きょう</rt></ruby>は<ruby>第<rt>だい</rt></ruby>3<ruby>月曜日<rt>げつようび</rt></ruby>だから<ruby>休<rt>やす</rt></ruby>みなんじゃないの？"
       },
       {
-        "speaker": "男子学生",
-        "text": "ううん、開いてるよ。第3月曜日が祝日の場合は次の日が休みになるんだ。"
+        "speaker": "<ruby>男子学生<rt>だんしがくせい</rt></ruby>",
+        "text": "ううん、<ruby>開<rt>あ</rt></ruby>いてるよ。<ruby>第<rt>だい</rt></ruby>3<ruby>月曜日<rt>げつようび</rt></ruby>が<ruby>祝日<rt>しゅくじつ</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>は<ruby>次<rt>つぎ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>が<ruby>休<rt>やす</rt></ruby>みになるんだ。"
       },
       {
-        "speaker": "女子学生",
-        "text": "あ、そう。知らなかった。じゃ、明日が休みということね。私も調べたいことがあるから、一緒に行こう。"
+        "speaker": "<ruby>女子学生<rt>じょしがくせい</rt></ruby>",
+        "text": "あ、そう。<ruby>知<rt>し</rt></ruby>らなかった。じゃ、<ruby>明日<rt>あした</rt></ruby>が<ruby>休<rt>やす</rt></ruby>みということね。<ruby>私<rt>わたし</rt></ruby>も<ruby>調<rt>しら</rt></ruby>べたいことがあるから、<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>こう。"
       }
     ],
-    "question": "正しいものを選ぼう。",
     "options": [
-      "1 今日は祝日である。",
-      "2 今日、図書館は休みである。",
-      "3 男子学生は今日が第3月曜日だということを知らなかった。",
-      "4 女子学生は最初、今日は図書館が休みだと思っていた。",
-      "5 明日は火曜日で図書館は開いている。"
+      "1　<ruby>今日<rt>きょう</rt></ruby>は<ruby>祝日<rt>しゅくじつ</rt></ruby>である。",
+      "2　<ruby>今日<rt>きょう</rt></ruby>、<ruby>図書館<rt>としょかん</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みである。",
+      "3　<ruby>男子学生<rt>だんしがくせい</rt></ruby>は<ruby>今日<rt>きょう</rt></ruby>が<ruby>第<rt>だい</rt></ruby>3<ruby>月曜日<rt>げつようび</rt></ruby>だということを<ruby>知<rt>し</rt></ruby>らなかった。",
+      "4　<ruby>女子学生<rt>じょしがくせい</rt></ruby>は<ruby>最初<rt>さいしょ</rt></ruby>、<ruby>今日<rt>きょう</rt></ruby>は<ruby>図書館<rt>としょかん</rt></ruby>が<ruby>休<rt>やす</rt></ruby>みだと<ruby>思<rt>おも</rt></ruby>っていた。",
+      "5　<ruby>明日<rt>あす</rt></ruby>は<ruby>火曜日<rt>かようび</rt></ruby>で<ruby>図書館<rt>としょかん</rt></ruby>は<ruby>開<rt>あ</rt></ruby>いている。"
     ],
     "correct_answers": [
       1,
       4
     ],
     "options_explanation": {
-      "1": "Correct. The girl states 'Today is the 3rd Monday...' and the boy replies 'When the 3rd Monday is a national holiday, the next day is closed.' This confirms today is a holiday.",
-      "2": "Incorrect. The boy says 'No, it is open' (ううん、開いてるよ).",
-      "3": "Incorrect. The boy corrects the girl about the holiday rule, so he is well aware of the date.",
-      "4": "Correct. The girl says 'Oh? Isn't it closed today because it's the 3rd Monday?' (え？今日は第3月曜日だから休みなんじゃないの？).",
-      "5": "Incorrect. Tomorrow is Tuesday and it will be closed (火曜日が休館), so it will not be open."
+      "1": "正しい。女子学生が「今日は第3月曜日だから休みなんじゃないの？」と言い、男子学生が「第3月曜日が祝日の場合は次の日が休みになるんだ」「開いてるよ」と答えていることから、今日が祝日であることがわかります。",
+      "2": "間違い。男子学生が「ううん、開いてるよ」と述べています。",
+      "3": "間違い。男子学生は第3月曜日であることを把握した上で、祝日の場合の例外規定を説明しています。",
+      "4": "正しい。女子学生は「え？ 今日は第3月曜日だから休みなんじゃないの？」と発言しており、最初は休みだと思っていました。",
+      "5": "間違い。第3月曜日が祝日のため、次の日である火曜日は振替で休館になります（「じゃ、明日が休みということね」）。"
     }
   },
   "mondai": {
     "title": "もんだい",
-    "instruction": "次の案内を見て、後の問いに答えなさい。",
+    "instruction": "次の案内を見て、後の問いに答えなさい。(答えは別冊 p.2)",
     "notice": {
-      "title": "たから市 中央図書館 利用案内",
-      "sections": [
-        {
-          "header": "開館時間（※１）",
-          "rows": [
-            {
-              "label": "平日",
-              "value": "午前10時から午後8時\n(児童室（※２）は午後6時まで)"
-            },
-            {
-              "label": "土曜日\n日曜日\n祝日",
-              "value": "午前10時から午後6時"
-            }
-          ]
-        },
-        {
-          "header": "休館日（※３）",
-          "rows": [
-            {
-              "label": "第3月曜日",
-              "value": "ただし祝日と重なった場合は火曜日が休館*"
-            },
-            {
-              "label": "年末年始",
-              "value": "12月28日から1月4日"
-            },
-            {
-              "label": "特別休館日",
-              "value": "2月11日・5月3日〜5日・9月23日"
-            }
-          ]
-        }
-      ],
-      "footer": "＊なお、10月1日より10日まで電気工事のために臨時で休館します**。"
+      "heading": "たから市 中央図書館 利用案内",
+      "html": "<div class=\"font-sans text-gray-900 dark:text-gray-100\">\n  <!-- Title Header -->\n  <div class=\"text-center font-bold text-2xl sm:text-3xl tracking-widest pb-1 mb-1\">\n    たから<ruby>市<rt>し</rt></ruby>　<ruby>中央図書館<rt>ちゅうおうとしょかん</rt></ruby>\n  </div>\n  <div class=\"text-center font-bold text-lg sm:text-xl tracking-wider pb-3 mb-4\">\n    <ruby>利用案内<rt>りようあんない</rt></ruby>\n  </div>\n\n  <!-- Notice Table -->\n  <div class=\"overflow-x-auto mb-4\">\n    <table class=\"w-full border-collapse border-2 border-gray-800 dark:border-gray-200 text-sm sm:text-base\">\n      <tbody>\n        <!-- 開館時間 Row 1 -->\n        <tr class=\"border-b border-gray-800 dark:border-gray-200\">\n          <th rowspan=\"2\" class=\"w-1/4 border-r-2 border-gray-800 dark:border-gray-200 p-2 sm:p-3 text-center font-bold align-middle bg-slate-100 dark:bg-slate-800\">\n            <ruby>開館時間<rt>かいかんじかん</rt></ruby>(※1)\n          </th>\n          <td class=\"w-1/4 border-r border-gray-800 dark:border-gray-200 p-2 sm:p-3 text-center font-medium align-middle\">\n            <ruby>平日<rt>へいじつ</rt></ruby>\n          </td>\n          <td class=\"p-2 sm:p-3 leading-relaxed\">\n            <div class=\"font-bold\"><ruby>午前<rt>ごぜん</rt></ruby>10<ruby>時<rt>じ</rt></ruby>から<ruby>午後<rt>ごご</rt></ruby>8<ruby>時<rt>じ</rt></ruby></div>\n            <div class=\"text-xs sm:text-sm text-gray-700 dark:text-gray-300\">(<ruby>児童室<rt>じどうしつ</rt></ruby>(※2)は<ruby>午後<rt>ごご</rt></ruby>6<ruby>時<rt>じ</rt></ruby>まで)</div>\n          </td>\n        </tr>\n        <!-- 開館時間 Row 2 -->\n        <tr class=\"border-b-2 border-gray-800 dark:border-gray-200\">\n          <td class=\"border-r border-gray-800 dark:border-gray-200 p-2 sm:p-3 text-center font-medium leading-tight align-middle\">\n            <ruby>土曜日<rt>どようび</rt></ruby><br/><ruby>日曜日<rt>にちようび</rt></ruby><br/><ruby>祝日<rt>しゅくじつ</rt></ruby>\n          </td>\n          <td class=\"p-2 sm:p-3 font-bold align-middle\">\n            <ruby>午前<rt>ごぜん</rt></ruby>10<ruby>時<rt>じ</rt></ruby>から<ruby>午後<rt>ごご</rt></ruby>6<ruby>時<rt>じ</rt></ruby>\n          </td>\n        </tr>\n\n        <!-- 休館日 Row 1 -->\n        <tr class=\"border-b border-gray-800 dark:border-gray-200\">\n          <th rowspan=\"3\" class=\"border-r-2 border-gray-800 dark:border-gray-200 p-2 sm:p-3 text-center font-bold align-middle bg-slate-100 dark:bg-slate-800\">\n            <ruby>休館日<rt>きゅうかんび</rt></ruby>(※3)\n          </th>\n          <td class=\"border-r border-gray-800 dark:border-gray-200 p-2 sm:p-3 text-center font-medium align-middle\">\n            <ruby>第<rt>だい</rt></ruby>3<ruby>月曜日<rt>げつようび</rt></ruby>\n          </td>\n          <td class=\"p-2 sm:p-3 align-middle\">\n            ただし<ruby>祝日<rt>しゅくじつ</rt></ruby>と<ruby>重<rt>かさ</rt></ruby>なった<ruby>場合<rt>ばあい</rt></ruby>は<ruby>火曜日<rt>かようび</rt></ruby>が<ruby>休館<rt>きゅうかん</rt></ruby>*\n          </td>\n        </tr>\n        <!-- 休館日 Row 2 -->\n        <tr class=\"border-b border-gray-800 dark:border-gray-200\">\n          <td class=\"border-r border-gray-800 dark:border-gray-200 p-2 sm:p-3 text-center font-medium align-middle\">\n            <ruby>年末年始<rt>ねんまつねんし</rt></ruby>\n          </td>\n          <td class=\"p-2 sm:p-3 align-middle\">\n            12<ruby>月<rt>がつ</rt></ruby>28<ruby>日<rt>にち</rt></ruby>から1<ruby>月<rt>がつ</rt></ruby>4<ruby>日<rt>よっか</rt></ruby>\n          </td>\n        </tr>\n        <!-- 休館日 Row 3 -->\n        <tr>\n          <td class=\"border-r border-gray-800 dark:border-gray-200 p-2 sm:p-3 text-center font-medium align-middle\">\n            <ruby>特別休館日<rt>とくべつきゅうかんび</rt></ruby>\n          </td>\n          <td class=\"p-2 sm:p-3 align-middle\">\n            2<ruby>月<rt>がつ</rt></ruby>11<ruby>日<rt>にち</rt></ruby>・5<ruby>月<rt>がつ</rt></ruby>3<ruby>日<rt>みっか</rt></ruby>～5<ruby>日<rt>いつか</rt></ruby>・9<ruby>月<rt>がつ</rt></ruby>23<ruby>日<rt>にち</rt></ruby>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n\n  <!-- Box Notice Note -->\n  <div class=\"border border-gray-700 dark:border-gray-300 p-2.5 sm:p-3 text-sm sm:text-base font-medium rounded\">\n    ＊なお、10<ruby>月<rt>がつ</rt></ruby>1<ruby>日<rt>ついたち</rt></ruby>より10<ruby>日<rt>とおか</rt></ruby>まで<ruby>電気工事<rt>でんきこうじ</rt></ruby>のために<ruby>臨時<rt>りんじ</rt></ruby>で<ruby>休館<rt>きゅうかん</rt></ruby>します**。\n  </div>\n</div>"
     },
-    "notice_vocab": [
+    "notice_vocabulary": [
       {
-        "word": "（※１）開館時間",
-        "meaning": "opening hours"
+        "word": "(※1) <ruby>開館時間<rt>かいかんじかん</rt></ruby>",
+        "reading": "かいかんじかん",
+        "meaning": "opening hours　开馆时间"
       },
       {
-        "word": "（※２）児童室",
-        "meaning": "children's room"
+        "word": "(※2) <ruby>児童室<rt>じどうしつ</rt></ruby>",
+        "reading": "じどうしつ",
+        "meaning": "children's room　儿童室"
       },
       {
-        "word": "（※３）休館日",
-        "meaning": "holidays"
+        "word": "(※3) <ruby>休館日<rt>きゅうかんび</rt></ruby>",
+        "reading": "きゅうかんび",
+        "meaning": "holidays　休馆日"
       }
     ],
     "questions": [
       {
-        "id": "問1",
-        "text": "この図書館で、使用できないのはどの場合か。",
+        "question_number": 1,
+        "question": "この<ruby>図書館<rt>としょかん</rt></ruby>で、<u style=\"text-decoration: underline wavy; text-decoration-color: currentColor;\"><ruby>使用<rt>しよう</rt></ruby>できない</u>のはどの場合か。",
         "options": [
-          "1 児童室を午前中に使用する場合",
-          "2 10月の第3金曜日に20時まで使用する場合",
-          "3 第3月曜日が祝日の場合",
-          "4 10月10日の正午から午後2時"
+          "1　<ruby>児童室<rt>じどうしつ</rt></ruby>を<ruby>午前中<rt>ごぜんちゅう</rt></ruby>に<ruby>使用<rt>しよう</rt></ruby>する<ruby>場合<rt>ばあい</rt></ruby>",
+          "2　10<ruby>月<rt>がつ</rt></ruby>の<ruby>第<rt>だい</rt></ruby>3<ruby>金曜日<rt>きんようび</rt></ruby>に20<ruby>時<rt>じ</rt></ruby>まで<ruby>使用<rt>しよう</rt></ruby>する<ruby>場合<rt>ばあい</rt></ruby>",
+          "3　<ruby>第<rt>だい</rt></ruby>3<ruby>月曜日<rt>げつようび</rt></ruby>が<ruby>祝日<rt>しゅくじつ</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>",
+          "4　10<ruby>月<rt>がつ</rt></ruby>10<ruby>日<rt>とおか</rt></ruby>の<ruby>正午<rt>しょうご</rt></ruby>から<ruby>午後<rt>ごご</rt></ruby>2<ruby>時<rt>じ</rt></ruby>"
         ],
         "correct_answer": 4,
-        "explanation": "The library is closed from Oct 1 to Oct 10 due to electrical work (10月1日より10日まで電気工事のために臨時で休館します). Therefore, Option 4 (Oct 10th from noon to 2pm) is a time when the library cannot be used."
+        "explanation": "案内文末の囲み記事に「10月1日より10日まで電気工事のために臨時で休館します」とあります。したがって、10月10日の正午から午後2時（4）は休館期間中のため使用できません。"
       },
       {
-        "id": "問2",
-        "text": "この案内の内容と合っているものはどれか。",
+        "question_number": 2,
+        "question": "この<ruby>案内<rt>あんない</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>と<u style=\"text-decoration: underline wavy; text-decoration-color: currentColor;\"><ruby>合<rt>あ</rt></ruby>っている</u>ものはどれか。",
         "options": [
-          "1 この図書館は、第3月曜日とその翌日は閉まっている。",
-          "2 この図書館は、第3月曜日と年末年始以外は開いている。",
-          "3 この図書館では、児童室も毎日図書館の閉館まで使用できる。",
-          "4 この図書館は、休館日以外にも臨時で休む日がある。"
+          "1　この<ruby>図書館<rt>としょかん</rt></ruby>は、<ruby>第<rt>だい</rt></ruby>3<ruby>月曜日<rt>げつようび</rt></ruby>とその<ruby>翌日<rt>よくじつ</rt></ruby>は<ruby>閉<rt>し</rt></ruby>まっている。",
+          "2　この<ruby>図書館<rt>としょかん</rt></ruby>は、<ruby>第<rt>だい</rt></ruby>3<ruby>月曜日<rt>げつようび</rt></ruby>と<ruby>年末年始以外<rt>ねんまつねんしいがい</rt></ruby>は<ruby>開<rt>あ</rt></ruby>いている。",
+          "3　この<ruby>図書館<rt>としょかん</rt></ruby>では、<ruby>児童室<rt>じどうしつ</rt></ruby>も<ruby>毎日図書館<rt>まいにちとしょかん</rt></ruby>の<ruby>閉館<rt>へいかん</rt></ruby>まで<ruby>使用<rt>しよう</rt></ruby>できる。",
+          "4　この<ruby>図書館<rt>としょかん</rt></ruby>は、<ruby>休館日以外<rt>きゅうかんびいがい</rt></ruby>にも<ruby>臨時<rt>りんじ</rt></ruby>で<ruby>休<rt>やす</rt></ruby>む<ruby>日<rt>ひ</rt></ruby>がある。"
         ],
         "correct_answer": 4,
-        "explanation": "The notice says 'from Oct 1 to Oct 10, it will be temporarily closed' (臨時で休館します). This matches Option 4: 'In addition to regular holidays, there are days when the library is temporarily closed' (休館日以外にも臨時で休む日がある)."
+        "explanation": "表の下に「10月1日より10日まで電気工事のために臨時で休館します」とあるため、「休館日以外にも臨時で休む日がある」（4）が案内の内容と合致しています。"
       }
+    ],
+    "footnotes": [
+      "* If Monday falls on a national holiday, the library will be closed on Tuesday.",
+      "** Please note that the library will be temporarily closed from October 1st until October 10th for electrical work. 10月1日到10日期间，"
     ]
   }
 }

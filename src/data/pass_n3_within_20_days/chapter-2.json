@@ -1,0 +1,3650 @@
+{
+  "id": "chapter-2",
+  "bookId": "pass-n3-within-20-days",
+  "chapterNumber": 2,
+  "dayNumber": 2,
+  "title": "Day 2",
+  "sourceTitle": "第2日",
+  "maxScore": 58,
+  "totalQuestions": 58,
+  "practiceModes": [
+    "study",
+    "exam"
+  ],
+  "source": {
+    "questionPages": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "answerPage": 205,
+    "pdfSha256": "48e9062cf43778904593dadaeb2bd48d8de28fa52b835ae20201ea148c1c53be",
+    "skippedDuplicatePages": []
+  },
+  "sections": [
+    {
+      "id": "mondai-1",
+      "number": 1,
+      "type": "kanji-reading",
+      "title": "問題1 漢字読み",
+      "instruction": "＿＿＿のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
+      "instructionHtml": "<u class=\"kanji-target\">＿＿＿</u>のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
+      "sourcePages": [
+        13,
+        14
+      ],
+      "questionCount": 8,
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "d02-m1-q01",
+          "number": 1,
+          "questionText": "道路では制<u class=\"kanji-target\" data-target=\"true\">限</u>速度を守って運転する。",
+          "stem": "道路では制<u class=\"kanji-target\" data-target=\"true\">限</u>速度を守って運転する。",
+          "targetText": "限",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">限</u>",
+          "options": [
+            "せけん",
+            "せげん",
+            "せいけん",
+            "せいげん"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "せいげん",
+          "explanation": "Correct answer: せいげん",
+          "sourcePage": 13,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 13,
+            "stemBbox": [
+              111.0,
+              497.0,
+              473.0,
+              527.0
+            ],
+            "optionsBbox": [
+              114.0,
+              544.0,
+              843.0,
+              580.0
+            ],
+            "ocrLineIndices": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "underlineBbox": [
+              248.0,
+              527.0,
+              268.0,
+              528.0
+            ]
+          }
+        },
+        {
+          "id": "d02-m1-q02",
+          "number": 2,
+          "questionText": "お正月に<u class=\"kanji-target\" data-target=\"true\">神</u>社にお参<ruby>り<rt>まい</rt></ruby>に行く。",
+          "stem": "お正月に<u class=\"kanji-target\" data-target=\"true\">神</u>社にお参<ruby>り<rt>まい</rt></ruby>に行く。",
+          "targetText": "神",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">神</u>",
+          "options": [
+            "しんしゃ",
+            "じんじゃ",
+            "じんしゃ",
+            "しんじゃ"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "じんじゃ",
+          "explanation": "Correct answer: じんじゃ",
+          "sourcePage": 13,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 13,
+            "stemBbox": [
+              108.0,
+              627.0,
+              411.0,
+              656.0
+            ],
+            "optionsBbox": [
+              133.0,
+              675.0,
+              839.0,
+              708.0
+            ],
+            "ocrLineIndices": [
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "underlineBbox": [
+              228.0,
+              655.0,
+              247.0,
+              656.0
+            ]
+          }
+        },
+        {
+          "id": "d02-m1-q03",
+          "number": 3,
+          "questionText": "両親の離婚は、とても<u class=\"kanji-target\" data-target=\"true\">悲しかった</u>。",
+          "stem": "両親の離婚は、とても<u class=\"kanji-target\" data-target=\"true\">悲しかった</u>。",
+          "targetText": "悲しかった",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">悲しかった</u>",
+          "options": [
+            "かなしかった",
+            "くるしかった",
+            "いそがしかった",
+            "おかしかった"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "かなしかった",
+          "explanation": "Correct answer: かなしかった",
+          "sourcePage": 13,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 13,
+            "stemBbox": [
+              106.0,
+              756.0,
+              448.0,
+              785.0
+            ],
+            "optionsBbox": [
+              129.0,
+              804.0,
+              678.0,
+              874.0
+            ],
+            "ocrLineIndices": [
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "underlineBbox": [
+              341.0,
+              785.0,
+              435.0,
+              786.0
+            ]
+          }
+        },
+        {
+          "id": "d02-m1-q04",
+          "number": 4,
+          "questionText": "新聞で<u class=\"kanji-target\" data-target=\"true\">首相</u>のスケジュールを知った。",
+          "stem": "新聞で<u class=\"kanji-target\" data-target=\"true\">首相</u>のスケジュールを知った。",
+          "targetText": "首相",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">首相</u>",
+          "options": [
+            "しゅしょう",
+            "しゅうしょう",
+            "しゅそう",
+            "しゅうそう"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "しゅしょう",
+          "explanation": "Correct answer: しゅしょう",
+          "sourcePage": 13,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 13,
+            "stemBbox": [
+              106.0,
+              924.0,
+              466.0,
+              954.0
+            ],
+            "optionsBbox": [
+              129.0,
+              973.0,
+              850.0,
+              1004.0
+            ],
+            "ocrLineIndices": [
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "underlineBbox": [
+              203.0,
+              953.0,
+              242.0,
+              954.0
+            ]
+          }
+        },
+        {
+          "id": "d02-m1-q05",
+          "number": 5,
+          "questionText": "外国の友だちに、日本の<u class=\"kanji-target\" data-target=\"true\">人形</u>をプレゼントしたい。",
+          "stem": "外国の友だちに、日本の<u class=\"kanji-target\" data-target=\"true\">人形</u>をプレゼントしたい。",
+          "targetText": "人形",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">人形</u>",
+          "options": [
+            "ひとぎょう",
+            "ひとけい",
+            "にんぎょう",
+            "にんけい"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "にんぎょう",
+          "explanation": "Correct answer: にんぎょう",
+          "sourcePage": 13,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 13,
+            "stemBbox": [
+              103.0,
+              1052.0,
+              581.0,
+              1083.0
+            ],
+            "optionsBbox": [
+              126.0,
+              1099.0,
+              853.0,
+              1133.0
+            ],
+            "ocrLineIndices": [
+              27,
+              28,
+              29,
+              30,
+              31
+            ],
+            "underlineBbox": [
+              356.0,
+              1082.0,
+              395.0,
+              1083.0
+            ]
+          }
+        },
+        {
+          "id": "d02-m1-q06",
+          "number": 6,
+          "questionText": "この情<ruby>報は<rt>じょうほう</rt></ruby>、<u class=\"kanji-target\" data-target=\"true\">全て</u>秘<ruby>密に<rt>ひみつ</rt></ruby>してください。",
+          "stem": "この情<ruby>報は<rt>じょうほう</rt></ruby>、<u class=\"kanji-target\" data-target=\"true\">全て</u>秘<ruby>密に<rt>ひみつ</rt></ruby>してください。",
+          "targetText": "全て",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">全て</u>",
+          "options": [
+            "まったって",
+            "すべて",
+            "ぜんて",
+            "あわせて"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "すべて",
+          "explanation": "Correct answer: すべて",
+          "sourcePage": 13,
+          "sourceReviewFlags": [
+            "option-1-duplicate-label-candidates",
+            "option-2-label-not-recognized",
+            "option-2-recovered-positionally"
+          ],
+          "source": {
+            "pdfPage": 13,
+            "stemBbox": [
+              100.0,
+              1182.0,
+              480.0,
+              1210.0
+            ],
+            "optionsBbox": [
+              123.0,
+              1229.0,
+              829.0,
+              1261.0
+            ],
+            "ocrLineIndices": [
+              34,
+              35,
+              36,
+              37,
+              38
+            ],
+            "underlineBbox": [
+              257.0,
+              1211.0,
+              294.0,
+              1212.0
+            ]
+          }
+        },
+        {
+          "id": "d02-m1-q07",
+          "number": 7,
+          "questionText": "学校の<u class=\"kanji-target\" data-target=\"true\">授業料</u>は半年に1回、支払う。",
+          "stem": "学校の<u class=\"kanji-target\" data-target=\"true\">授業料</u>は半年に1回、支払う。",
+          "targetText": "授業料",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">授業料</u>",
+          "options": [
+            "じゅぎょりょう",
+            "じゅぎょうりょう",
+            "じゅうぎょうりょう",
+            "じゅうぎょりょ"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "じゅぎょうりょう",
+          "explanation": "Correct answer: じゅぎょうりょう",
+          "sourcePage": 14,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 14,
+            "stemBbox": [
+              132.0,
+              109.0,
+              490.0,
+              138.0
+            ],
+            "optionsBbox": [
+              155.0,
+              155.0,
+              730.0,
+              226.0
+            ],
+            "ocrLineIndices": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "underlineBbox": [
+              231.0,
+              138.0,
+              289.0,
+              139.0
+            ]
+          }
+        },
+        {
+          "id": "d02-m1-q08",
+          "number": 8,
+          "questionText": "あそこにある段<ruby>ボ<rt>だん</rt></ruby>ール箱は、みんな<u class=\"kanji-target\" data-target=\"true\">空</u>です。",
+          "stem": "あそこにある段<ruby>ボ<rt>だん</rt></ruby>ール箱は、みんな<u class=\"kanji-target\" data-target=\"true\">空</u>です。",
+          "targetText": "空",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">空</u>",
+          "options": [
+            "そら",
+            "から",
+            "くう",
+            "あき"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "から",
+          "explanation": "Correct answer: から",
+          "sourcePage": 14,
+          "sourceReviewFlags": [
+            "low-confidence-option",
+            "low-confidence-ruby",
+            "option-1-duplicate-label-candidates",
+            "option-2-duplicate-label-candidates",
+            "option-3-duplicate-label-candidates",
+            "option-4-duplicate-label-candidates"
+          ],
+          "source": {
+            "pdfPage": 14,
+            "stemBbox": [
+              131.0,
+              276.0,
+              545.0,
+              306.0
+            ],
+            "optionsBbox": [
+              154.0,
+              325.0,
+              813.0,
+              357.0
+            ],
+            "ocrLineIndices": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "underlineBbox": [
+              480.0,
+              307.0,
+              498.0,
+              308.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mondai-2",
+      "number": 2,
+      "type": "kanji-spelling",
+      "title": "問題2 漢字表記",
+      "instruction": "＿＿＿のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
+      "instructionHtml": "<u class=\"kanji-target\">＿＿＿</u>のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
+      "sourcePages": [
+        14
+      ],
+      "questionCount": 6,
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "d02-m2-q09",
+          "number": 9,
+          "questionText": "<ruby>小山教<rt>こやま</rt></ruby>授の<u class=\"kanji-target\" data-target=\"true\">せんもん</u>は、物理です。こやま",
+          "stem": "<ruby>小山教<rt>こやま</rt></ruby>授の<u class=\"kanji-target\" data-target=\"true\">せんもん</u>は、物理です。こやま",
+          "targetText": "せんもん",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">せんもん</u>",
+          "options": [
+            "専間",
+            "専攻",
+            "専門",
+            "専問"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "専門",
+          "explanation": "Correct answer: 専門",
+          "sourcePage": 14,
+          "sourceReviewFlags": [
+            "low-confidence-option"
+          ],
+          "source": {
+            "pdfPage": 14,
+            "stemBbox": [
+              160.0,
+              597.0,
+              466.0,
+              632.0
+            ],
+            "optionsBbox": [
+              151.0,
+              652.0,
+              812.0,
+              684.0
+            ],
+            "ocrLineIndices": [
+              14,
+              15,
+              17,
+              18,
+              19,
+              20
+            ],
+            "underlineBbox": [
+              265.0,
+              633.0,
+              341.0,
+              634.0
+            ]
+          }
+        },
+        {
+          "id": "d02-m2-q10",
+          "number": 10,
+          "questionText": "国は、<u class=\"kanji-target\" data-target=\"true\">せいしょうねん</u>の教育に力を入れている。",
+          "stem": "国は、<u class=\"kanji-target\" data-target=\"true\">せいしょうねん</u>の教育に力を入れている。",
+          "targetText": "せいしょうねん",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">せいしょうねん</u>",
+          "options": [
+            "青小年",
+            "青少年",
+            "正小年",
+            "正少年"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "青少年",
+          "explanation": "Correct answer: 青少年",
+          "sourcePage": 14,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 14,
+            "stemBbox": [
+              126.0,
+              733.0,
+              580.0,
+              761.0
+            ],
+            "optionsBbox": [
+              150.0,
+              781.0,
+              829.0,
+              811.0
+            ],
+            "ocrLineIndices": [
+              21,
+              22,
+              23,
+              24,
+              25
+            ],
+            "underlineBbox": [
+              226.0,
+              762.0,
+              359.0,
+              763.0
+            ]
+          }
+        },
+        {
+          "id": "d02-m2-q11",
+          "number": 11,
+          "questionText": "自分の進路は<u class=\"kanji-target\" data-target=\"true\">みずから</u>の手で選びたい。",
+          "stem": "自分の進路は<u class=\"kanji-target\" data-target=\"true\">みずから</u>の手で選びたい。",
+          "targetText": "みずから",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">みずから</u>",
+          "options": [
+            "自ら",
+            "白ら",
+            "分ら",
+            "身ら"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "自ら",
+          "explanation": "Correct answer: 自ら",
+          "sourcePage": 14,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 14,
+            "stemBbox": [
+              124.0,
+              861.0,
+              502.0,
+              890.0
+            ],
+            "optionsBbox": [
+              149.0,
+              909.0,
+              806.0,
+              940.0
+            ],
+            "ocrLineIndices": [
+              26,
+              27,
+              28,
+              29,
+              30
+            ],
+            "underlineBbox": [
+              283.0,
+              890.0,
+              358.0,
+              891.0
+            ]
+          }
+        },
+        {
+          "id": "d02-m2-q12",
+          "number": 12,
+          "questionText": "当社の工場は、大きな<ruby>看板が<rt>かんほん</rt></ruby><u class=\"kanji-target\" data-target=\"true\">めじるし</u>です。",
+          "stem": "当社の工場は、大きな<ruby>看板が<rt>かんほん</rt></ruby><u class=\"kanji-target\" data-target=\"true\">めじるし</u>です。",
+          "targetText": "めじるし",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">めじるし</u>",
+          "options": [
+            "日印",
+            "見印",
+            "矢印",
+            "目印"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "目印",
+          "explanation": "Correct answer: 目印",
+          "sourcePage": 14,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 14,
+            "stemBbox": [
+              124.0,
+              989.0,
+              538.0,
+              1018.0
+            ],
+            "optionsBbox": [
+              148.0,
+              1038.0,
+              807.0,
+              1069.0
+            ],
+            "ocrLineIndices": [
+              32,
+              33,
+              34,
+              35,
+              36
+            ],
+            "underlineBbox": [
+              415.0,
+              1019.0,
+              493.0,
+              1020.0
+            ]
+          }
+        },
+        {
+          "id": "d02-m2-q13",
+          "number": 13,
+          "questionText": "母はどんなときも<u class=\"kanji-target\" data-target=\"true\">つとめて</u>明るく笑っていた。",
+          "stem": "母はどんなときも<u class=\"kanji-target\" data-target=\"true\">つとめて</u>明るく笑っていた。",
+          "targetText": "つとめて",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">つとめて</u>",
+          "options": [
+            "務めて",
+            "努めて",
+            "勤めて",
+            "働めて"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "努めて",
+          "explanation": "Correct answer: 努めて",
+          "sourcePage": 14,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 14,
+            "stemBbox": [
+              123.0,
+              1118.0,
+              556.0,
+              1146.0
+            ],
+            "optionsBbox": [
+              148.0,
+              1167.0,
+              824.0,
+              1197.0
+            ],
+            "ocrLineIndices": [
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "underlineBbox": [
+              318.0,
+              1147.0,
+              393.0,
+              1148.0
+            ]
+          }
+        },
+        {
+          "id": "d02-m2-q14",
+          "number": 14,
+          "questionText": "教室の入り口のかぎ、<u class=\"kanji-target\" data-target=\"true\">あけて</u>おいてくれた？",
+          "stem": "教室の入り口のかぎ、<u class=\"kanji-target\" data-target=\"true\">あけて</u>おいてくれた？",
+          "targetText": "あけて",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">あけて</u>",
+          "options": [
+            "閉けて",
+            "開けて",
+            "関けて",
+            "間けて"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "開けて",
+          "explanation": "Correct answer: 開けて",
+          "sourcePage": 14,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 14,
+            "stemBbox": [
+              121.0,
+              1247.0,
+              545.0,
+              1275.0
+            ],
+            "optionsBbox": [
+              146.0,
+              1296.0,
+              823.0,
+              1324.0
+            ],
+            "ocrLineIndices": [
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "underlineBbox": [
+              354.0,
+              1276.0,
+              412.0,
+              1277.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mondai-3",
+      "number": 3,
+      "type": "contextual-vocabulary",
+      "title": "問題3 文脈規定",
+      "instruction": "（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+      "instructionHtml": "（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+      "sourcePages": [
+        15,
+        16
+      ],
+      "questionCount": 11,
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "d02-m3-q15",
+          "number": 15,
+          "questionText": "<ruby>香川<rt>かがわ</rt></ruby>さんは、休みの日にサッカーチームの（かがわ）をしている。",
+          "stem": "<ruby>香川<rt>かがわ</rt></ruby>さんは、休みの日にサッカーチームの（かがわ）をしている。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "インターン",
+            "ビジネス",
+            "コーチ",
+            "トーク"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "コーチ",
+          "explanation": "Correct answer: コーチ",
+          "sourcePage": 15,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 15,
+            "stemBbox": [
+              108.0,
+              178.0,
+              744.0,
+              214.0
+            ],
+            "optionsBbox": [
+              135.0,
+              242.0,
+              818.0,
+              271.0
+            ],
+            "ocrLineIndices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m3-q16",
+          "number": 16,
+          "questionText": "使わない机はじゃまなので、部屋の（）に置いておこう。",
+          "stem": "使わない机はじゃまなので、部屋の（）に置いておこう。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "内側",
+            "入口",
+            "真ん中",
+            "隅"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "隅",
+          "explanation": "Correct answer: 隅",
+          "sourcePage": 15,
+          "sourceReviewFlags": [
+            "option-4-recovered-positionally"
+          ],
+          "source": {
+            "pdfPage": 15,
+            "stemBbox": [
+              109.0,
+              324.0,
+              724.0,
+              353.0
+            ],
+            "optionsBbox": [
+              133.0,
+              369.0,
+              785.0,
+              412.0
+            ],
+            "ocrLineIndices": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              14
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m3-q17",
+          "number": 17,
+          "questionText": "17明日からインドネシア<ruby>に出張<rt>しゅっちょう</rt></ruby>なので、あちらの天気が（）です。",
+          "stem": "17明日からインドネシア<ruby>に出張<rt>しゅっちょう</rt></ruby>なので、あちらの天気が（）です。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "<ruby>興味<rt>きょうみ</rt></ruby>",
+            "気<ruby>の<rt>き</rt></ruby><ruby>毒<rt>どく</rt></ruby>",
+            "心配",
+            "課題"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "心配",
+          "explanation": "Correct answer: 心配",
+          "sourcePage": 15,
+          "sourceReviewFlags": [
+            "low-confidence-ruby",
+            "question-number-not-recognized"
+          ],
+          "source": {
+            "pdfPage": 15,
+            "stemBbox": [
+              113.0,
+              463.0,
+              784.0,
+              490.0
+            ],
+            "optionsBbox": [
+              133.0,
+              518.0,
+              801.0,
+              551.0
+            ],
+            "ocrLineIndices": [
+              16,
+              17,
+              18,
+              22,
+              23,
+              24,
+              25
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m3-q18",
+          "number": 18,
+          "questionText": "週3日以上アルバイトができる（）を<ruby>募集し<rt>ぼしゅう</rt></ruby>ます。ぼしゅう",
+          "stem": "週3日以上アルバイトができる（）を<ruby>募集し<rt>ぼしゅう</rt></ruby>ます。ぼしゅう",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "方",
+            "様",
+            "者",
+            "人々"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "方",
+          "explanation": "Correct answer: 方",
+          "sourcePage": 15,
+          "sourceReviewFlags": [
+            "low-confidence-option"
+          ],
+          "source": {
+            "pdfPage": 15,
+            "stemBbox": [
+              108.0,
+              591.0,
+              667.0,
+              630.0
+            ],
+            "optionsBbox": [
+              132.0,
+              658.0,
+              799.0,
+              690.0
+            ],
+            "ocrLineIndices": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m3-q19",
+          "number": 19,
+          "questionText": "<ruby>内藤<rt>ないと</rt></ruby>さんは（）人で、いっしょにいると楽しくなる。",
+          "stem": "<ruby>内藤<rt>ないと</rt></ruby>さんは（）人で、いっしょにいると楽しくなる。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "ほがらかな",
+            "おおげさな",
+            "<ruby>真剣<rt>しんけん</rt></ruby>な",
+            "気<ruby>軽<rt>きがる</rt></ruby>な"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "ほがらかな",
+          "explanation": "Correct answer: ほがらかな",
+          "sourcePage": 15,
+          "sourceReviewFlags": [
+            "option-3-recovered-positionally"
+          ],
+          "source": {
+            "pdfPage": 15,
+            "stemBbox": [
+              109.0,
+              741.0,
+              684.0,
+              771.0
+            ],
+            "optionsBbox": [
+              135.0,
+              795.0,
+              820.0,
+              827.0
+            ],
+            "ocrLineIndices": [
+              34,
+              35,
+              38,
+              39,
+              40,
+              41
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m3-q20",
+          "number": 20,
+          "questionText": "人気マンガの<ruby>最新<rt>さいしん</rt></ruby>（）がよく売れている。",
+          "stem": "人気マンガの<ruby>最新<rt>さいしん</rt></ruby>（）がよく売れている。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "册",
+            "巻",
+            "部",
+            "点"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "巻",
+          "explanation": "Correct answer: 巻",
+          "sourcePage": 15,
+          "sourceReviewFlags": [
+            "low-confidence-option",
+            "option-2-recovered-positionally"
+          ],
+          "source": {
+            "pdfPage": 15,
+            "stemBbox": [
+              109.0,
+              879.0,
+              587.0,
+              909.0
+            ],
+            "optionsBbox": [
+              132.0,
+              928.0,
+              784.0,
+              969.0
+            ],
+            "ocrLineIndices": [
+              44,
+              45,
+              46,
+              47,
+              48,
+              49
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m3-q21",
+          "number": 21,
+          "questionText": "日曜日の午前中は（）プールで泳いでいる。",
+          "stem": "日曜日の午前中は（）プールで泳いでいる。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "たいてい",
+            "少しも",
+            "每日",
+            "そのうち"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "たいてい",
+          "explanation": "Correct answer: たいてい",
+          "sourcePage": 15,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 15,
+            "stemBbox": [
+              109.0,
+              1019.0,
+              605.0,
+              1046.0
+            ],
+            "optionsBbox": [
+              135.0,
+              1073.0,
+              837.0,
+              1104.0
+            ],
+            "ocrLineIndices": [
+              51,
+              52,
+              53,
+              54,
+              55,
+              56
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m3-q22",
+          "number": 22,
+          "questionText": "どんなところに住むのかは（）の自由だ。",
+          "stem": "どんなところに住むのかは（）の自由だ。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "他人",
+            "<ruby>成人<rt>せいじん</rt></ruby>",
+            "個人",
+            "数人"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "個人",
+          "explanation": "Correct answer: 個人",
+          "sourcePage": 15,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 15,
+            "stemBbox": [
+              108.0,
+              1155.0,
+              588.0,
+              1186.0
+            ],
+            "optionsBbox": [
+              131.0,
+              1210.0,
+              801.0,
+              1246.0
+            ],
+            "ocrLineIndices": [
+              57,
+              59,
+              60,
+              61,
+              62
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m3-q23",
+          "number": 23,
+          "questionText": "ずっと使っていなかったパソコンの（）が思い出せない。",
+          "stem": "ずっと使っていなかったパソコンの（）が思い出せない。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "キーワード",
+            "サイン",
+            "パスワード",
+            "チェック"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "パスワード",
+          "explanation": "Correct answer: パスワード",
+          "sourcePage": 16,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 16,
+            "stemBbox": [
+              133.0,
+              112.0,
+              741.0,
+              143.0
+            ],
+            "optionsBbox": [
+              159.0,
+              170.0,
+              854.0,
+              200.0
+            ],
+            "ocrLineIndices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m3-q24",
+          "number": 24,
+          "questionText": "パソコンでレポートを書いたあと、プリンターで紙に（)した。",
+          "stem": "パソコンでレポートを書いたあと、プリンターで紙に（)した。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "使用",
+            "<ruby>印刷<rt>いんさつ</rt></ruby>",
+            "<ruby>引用<rt>いんよう</rt></ruby>",
+            "<ruby>発行<rt>はっとう</rt></ruby>"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "<ruby>印刷<rt>いんさつ</rt></ruby>",
+          "explanation": "Correct answer: <ruby>印刷<rt>いんさつ</rt></ruby>",
+          "sourcePage": 16,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 16,
+            "stemBbox": [
+              132.0,
+              251.0,
+              800.0,
+              282.0
+            ],
+            "optionsBbox": [
+              156.0,
+              307.0,
+              820.0,
+              343.0
+            ],
+            "ocrLineIndices": [
+              6,
+              7,
+              11,
+              12,
+              13,
+              14
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m3-q25",
+          "number": 25,
+          "questionText": "前を歩いていた友だちを、自転車で（)。",
+          "stem": "前を歩いていた友だちを、自転車で（)。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "追い出した",
+            "追い付いた",
+            "追い返した",
+            "追い越した"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "追い越した",
+          "explanation": "Correct answer: 追い越した",
+          "sourcePage": 16,
+          "sourceReviewFlags": [
+            "low-confidence-option",
+            "option-1-duplicate-label-candidates",
+            "option-2-duplicate-label-candidates",
+            "option-3-duplicate-label-candidates",
+            "option-4-duplicate-label-candidates"
+          ],
+          "source": {
+            "pdfPage": 16,
+            "stemBbox": [
+              131.0,
+              369.0,
+              596.0,
+              400.0
+            ],
+            "optionsBbox": [
+              154.0,
+              417.0,
+              873.0,
+              461.0
+            ],
+            "ocrLineIndices": [
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ],
+            "underlineBbox": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "mondai-4",
+      "number": 4,
+      "type": "paraphrase",
+      "title": "問題4 言い換え類義",
+      "instruction": "＿＿＿に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+      "instructionHtml": "<u class=\"kanji-target\">＿＿＿</u>に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+      "sourcePages": [
+        16
+      ],
+      "questionCount": 5,
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "d02-m4-q26",
+          "number": 26,
+          "questionText": "あの人の話はいつも<u class=\"kanji-target\" data-target=\"true\">たいくつだ</u>。",
+          "stem": "あの人の話はいつも<u class=\"kanji-target\" data-target=\"true\">たいくつだ</u>。",
+          "targetText": "たいくつだ",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">たいくつだ</u>",
+          "options": [
+            "おもしろい",
+            "難しい",
+            "つまらない",
+            "長い"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "つまらない",
+          "explanation": "Correct answer: つまらない",
+          "sourcePage": 16,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 16,
+            "stemBbox": [
+              128.0,
+              667.0,
+              447.0,
+              695.0
+            ],
+            "optionsBbox": [
+              155.0,
+              726.0,
+              812.0,
+              757.0
+            ],
+            "ocrLineIndices": [
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "underlineBbox": [
+              342.0,
+              696.0,
+              437.0,
+              697.0
+            ]
+          }
+        },
+        {
+          "id": "d02-m4-q27",
+          "number": 27,
+          "questionText": "明日の出発時間を、<u class=\"kanji-target\" data-target=\"true\">覚えて</u>おく。",
+          "stem": "明日の出発時間を、<u class=\"kanji-target\" data-target=\"true\">覚えて</u>おく。",
+          "targetText": "覚えて",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">覚えて</u>",
+          "options": [
+            "利用して",
+            "記入して",
+            "<ruby>確認し<rt>かくにん</rt></ruby>て",
+            "記<ruby>憶<rt>きおく</rt></ruby>して"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "記<ruby>憶<rt>きおく</rt></ruby>して",
+          "explanation": "Correct answer: 記<ruby>憶<rt>きおく</rt></ruby>して",
+          "sourcePage": 16,
+          "sourceReviewFlags": [
+            "low-confidence-ruby"
+          ],
+          "source": {
+            "pdfPage": 16,
+            "stemBbox": [
+              128.0,
+              805.0,
+              445.0,
+              834.0
+            ],
+            "optionsBbox": [
+              153.0,
+              864.0,
+              849.0,
+              895.0
+            ],
+            "ocrLineIndices": [
+              27,
+              30,
+              31,
+              32,
+              33
+            ],
+            "underlineBbox": [
+              341.0,
+              835.0,
+              397.0,
+              836.0
+            ]
+          }
+        },
+        {
+          "id": "d02-m4-q28",
+          "number": 28,
+          "questionText": "コーヒーでも<u class=\"kanji-target\" data-target=\"true\">いれましょう</u>か。",
+          "stem": "コーヒーでも<u class=\"kanji-target\" data-target=\"true\">いれましょう</u>か。",
+          "targetText": "いれましょう",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">いれましょう</u>",
+          "options": [
+            "温めましょう",
+            "買いましょう",
+            "作りましょう",
+            "飲みましょう"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "作りましょう",
+          "explanation": "Correct answer: 作りましょう",
+          "sourcePage": 16,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 16,
+            "stemBbox": [
+              125.0,
+              943.0,
+              423.0,
+              973.0
+            ],
+            "optionsBbox": [
+              152.0,
+              1002.0,
+              882.0,
+              1031.0
+            ],
+            "ocrLineIndices": [
+              34,
+              35,
+              36,
+              37,
+              38
+            ],
+            "underlineBbox": [
+              280.0,
+              973.0,
+              395.0,
+              974.0
+            ]
+          }
+        },
+        {
+          "id": "d02-m4-q29",
+          "number": 29,
+          "questionText": "あなたにとって、日本の<u class=\"kanji-target\" data-target=\"true\">イメージ</u>は何ですか。",
+          "stem": "あなたにとって、日本の<u class=\"kanji-target\" data-target=\"true\">イメージ</u>は何ですか。",
+          "targetText": "イメージ",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">イメージ</u>",
+          "options": [
+            "長所",
+            "<ruby>印象<rt>いんしょう</rt></ruby>",
+            "<ruby>魅力<rt>みりよく</rt></ruby>",
+            "<ruby>風景<rt>ふうけい</rt></ruby>"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "<ruby>印象<rt>いんしょう</rt></ruby>",
+          "explanation": "Correct answer: <ruby>印象<rt>いんしょう</rt></ruby>",
+          "sourcePage": 16,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 16,
+            "stemBbox": [
+              124.0,
+              1082.0,
+              557.0,
+              1110.0
+            ],
+            "optionsBbox": [
+              148.0,
+              1140.0,
+              808.0,
+              1173.0
+            ],
+            "ocrLineIndices": [
+              39,
+              43,
+              44,
+              45,
+              46
+            ],
+            "underlineBbox": [
+              376.0,
+              1112.0,
+              452.0,
+              1113.0
+            ]
+          }
+        },
+        {
+          "id": "d02-m4-q30",
+          "number": 30,
+          "questionText": "この駅の<u class=\"kanji-target\" data-target=\"true\">あたり</u>に、交番はありませんか。",
+          "stem": "この駅の<u class=\"kanji-target\" data-target=\"true\">あたり</u>に、交番はありませんか。",
+          "targetText": "あたり",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">あたり</u>",
+          "options": [
+            "近く",
+            "前",
+            "横",
+            "通り"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "近く",
+          "explanation": "Correct answer: 近く",
+          "sourcePage": 16,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 16,
+            "stemBbox": [
+              120.0,
+              1218.0,
+              520.0,
+              1250.0
+            ],
+            "optionsBbox": [
+              146.0,
+              1277.0,
+              803.0,
+              1310.0
+            ],
+            "ocrLineIndices": [
+              47,
+              48,
+              49,
+              50,
+              51
+            ],
+            "underlineBbox": [
+              239.0,
+              1249.0,
+              298.0,
+              1250.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mondai-5",
+      "number": 5,
+      "type": "word-usage",
+      "title": "問題5 用法",
+      "instruction": "つぎのことばの使い方として最もよいものを、1・2・3・4から一つえらびなさい。",
+      "instructionHtml": "つぎのことばの使い方として最もよいものを、1・2・3・4から一つえらびなさい。",
+      "sourcePages": [
+        17
+      ],
+      "questionCount": 5,
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "d02-m5-q31",
+          "number": 31,
+          "questionText": "気になる",
+          "stem": "気になる",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "今日の試合の結果が、気になっている。",
+            "そんなに気になっても、きっとうまくいくと思う。",
+            "何が難しいか考えて、学習者の気になる。",
+            "帰りが気になって、<ruby>傘を<rt>かさ</rt></ruby>持って行く。"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "今日の試合の結果が、気になっている。",
+          "explanation": "Correct answer: 今日の試合の結果が、気になっている。",
+          "sourcePage": 17,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 17,
+            "stemBbox": [
+              115.0,
+              184.0,
+              237.0,
+              212.0
+            ],
+            "optionsBbox": [
+              141.0,
+              236.0,
+              615.0,
+              369.0
+            ],
+            "ocrLineIndices": [
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m5-q32",
+          "number": 32,
+          "questionText": "かなり",
+          "stem": "かなり",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "いつも、かなりお世話になっております。",
+            "わたしが聞いた話では、そんなことはかなりないだろう。",
+            "彼女はかぜをひいていて、かなりつらそうだ。",
+            "この町に移って来てから、かなり10年になる。"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "彼女はかぜをひいていて、かなりつらそうだ。",
+          "explanation": "Correct answer: 彼女はかぜをひいていて、かなりつらそうだ。",
+          "sourcePage": 17,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 17,
+            "stemBbox": [
+              113.0,
+              420.0,
+              216.0,
+              448.0
+            ],
+            "optionsBbox": [
+              139.0,
+              469.0,
+              671.0,
+              602.0
+            ],
+            "ocrLineIndices": [
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m5-q33",
+          "number": 33,
+          "questionText": "ほとんど<br/>さいきんけいたいでんわ",
+          "stem": "ほとんど<br/>さいきんけいたいでんわ",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "<ruby>最近は<rt>さいきん</rt></ruby>ほとんどの人が<ruby>携帯電話を<rt>けいたいでんわ</rt></ruby>持っている。",
+            "彼は試合をほとんど見ないほど、ラグビーが好きだ。",
+            "来日したころは、日本語がほとんどわかって、とても大変だった。",
+            "今度時間があったら、ほとんど遊びに行きましょう。"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "<ruby>最近は<rt>さいきん</rt></ruby>ほとんどの人が<ruby>携帯電話を<rt>けいたいでんわ</rt></ruby>持っている。",
+          "explanation": "Correct answer: <ruby>最近は<rt>さいきん</rt></ruby>ほとんどの人が<ruby>携帯電話を<rt>けいたいでんわ</rt></ruby>持っている。",
+          "sourcePage": 17,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 17,
+            "stemBbox": [
+              114.0,
+              656.0,
+              444.0,
+              708.0
+            ],
+            "optionsBbox": [
+              139.0,
+              704.0,
+              748.0,
+              838.0
+            ],
+            "ocrLineIndices": [
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m5-q34",
+          "number": 34,
+          "questionText": "まし",
+          "stem": "まし",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "この<ruby>報告書が<rt>ほうこくしょ</rt></ruby>もう少しましに出るよう、もう一度書く。",
+            "あのアルバイトをするくらいなら、はじめから働かないほうがましだ。",
+            "<ruby>太田さ<rt>おおた</rt></ruby>んの子どものころの話に、みんながましに大笑いした。",
+            "そんなましなお願いを言ってもしかたがない。"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "あのアルバイトをするくらいなら、はじめから働かないほうがましだ。",
+          "explanation": "Correct answer: あのアルバイトをするくらいなら、はじめから働かないほうがましだ。",
+          "sourcePage": 17,
+          "sourceReviewFlags": [
+            "low-confidence-ruby"
+          ],
+          "source": {
+            "pdfPage": 17,
+            "stemBbox": [
+              110.0,
+              886.0,
+              198.0,
+              918.0
+            ],
+            "optionsBbox": [
+              137.0,
+              938.0,
+              787.0,
+              1072.0
+            ],
+            "ocrLineIndices": [
+              19,
+              21,
+              22,
+              24,
+              25
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m5-q35",
+          "number": 35,
+          "questionText": "くしゃみ",
+          "stem": "くしゃみ",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "薬局に行って、くしゃみを止めるマスクを買った。",
+            "今、大学ではくしゃみがはやっている。",
+            "さっきからくしゃみばかりしているけど、昨日寝てないの?",
+            "急に寒くなり、くしゃみが止まらなかった。"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "急に寒くなり、くしゃみが止まらなかった。",
+          "explanation": "Correct answer: 急に寒くなり、くしゃみが止まらなかった。",
+          "sourcePage": 17,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 17,
+            "stemBbox": [
+              109.0,
+              1121.0,
+              235.0,
+              1152.0
+            ],
+            "optionsBbox": [
+              136.0,
+              1171.0,
+              695.0,
+              1306.0
+            ],
+            "ocrLineIndices": [
+              26,
+              27,
+              28,
+              29,
+              30
+            ],
+            "underlineBbox": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "mondai-6",
+      "number": 6,
+      "type": "grammar-selection",
+      "title": "問題6 文の文法1",
+      "instruction": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+      "instructionHtml": "つぎの文の（　）に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "questionCount": 13,
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "d02-m6-q36",
+          "number": 36,
+          "questionText": "わたしの説明は（）ですが、何かご質問があれば、どうぞ。",
+          "stem": "わたしの説明は（）ですが、何かご質問があれば、どうぞ。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "以上",
+            "以上のまま",
+            "以上<ruby>通<rt>どお</rt></ruby>り",
+            "以上の<ruby>限<rt>かぎ</rt></ruby>り"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "以上",
+          "explanation": "Correct answer: 以上",
+          "sourcePage": 18,
+          "sourceReviewFlags": [
+            "low-confidence-ruby"
+          ],
+          "source": {
+            "pdfPage": 18,
+            "stemBbox": [
+              131.0,
+              233.0,
+              755.0,
+              258.0
+            ],
+            "optionsBbox": [
+              152.0,
+              289.0,
+              673.0,
+              360.0
+            ],
+            "ocrLineIndices": [
+              2,
+              3,
+              4,
+              5,
+              8,
+              9
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m6-q37",
+          "number": 37,
+          "questionText": "小さいときは、よく父に庭仕事の手伝いを（)いた。",
+          "stem": "小さいときは、よく父に庭仕事の手伝いを（)いた。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "して",
+            "されて",
+            "させて",
+            "させられて"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "させられて",
+          "explanation": "Correct answer: させられて",
+          "sourcePage": 18,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 18,
+            "stemBbox": [
+              131.0,
+              410.0,
+              699.0,
+              437.0
+            ],
+            "optionsBbox": [
+              153.0,
+              468.0,
+              870.0,
+              496.0
+            ],
+            "ocrLineIndices": [
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m6-q38",
+          "number": 38,
+          "questionText": "インフルエンザにかかったら、治るまで会社に（)。",
+          "stem": "インフルエンザにかかったら、治るまで会社に（)。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "来るはずでもない",
+            "来るべきではない",
+            "来るときでもない",
+            "来ることではない"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "来るべきではない",
+          "explanation": "Correct answer: 来るべきではない",
+          "sourcePage": 18,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 18,
+            "stemBbox": [
+              119.0,
+              548.0,
+              689.0,
+              575.0
+            ],
+            "optionsBbox": [
+              156.0,
+              609.0,
+              730.0,
+              672.0
+            ],
+            "ocrLineIndices": [
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m6-q39",
+          "number": 39,
+          "questionText": "この病院、待ち時間が長いんだ（)。もう嫌になってきた。",
+          "stem": "この病院、待ち時間が長いんだ（)。もう嫌になってきた。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "し",
+            "けれども",
+            "もん",
+            "っけ"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "もん",
+          "explanation": "Correct answer: もん",
+          "sourcePage": 18,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 18,
+            "stemBbox": [
+              130.0,
+              727.0,
+              742.0,
+              752.0
+            ],
+            "optionsBbox": [
+              152.0,
+              783.0,
+              812.0,
+              812.0
+            ],
+            "ocrLineIndices": [
+              22,
+              23,
+              24,
+              25,
+              26,
+              27
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m6-q40",
+          "number": 40,
+          "questionText": "学生「テストを受けられないのですか?」<br/>先生「5分以上遅刻した人には、試験を受けさせる（)んだよ。」",
+          "stem": "学生「テストを受けられないのですか?」<br/>先生「5分以上遅刻した人には、試験を受けさせる（)んだよ。」",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "わけにはいかない",
+            "わけでもない",
+            "ようではない",
+            "よりほかない"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "わけにはいかない",
+          "explanation": "Correct answer: わけにはいかない",
+          "sourcePage": 18,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 18,
+            "stemBbox": [
+              130.0,
+              867.0,
+              804.0,
+              930.0
+            ],
+            "optionsBbox": [
+              152.0,
+              964.0,
+              691.0,
+              1028.0
+            ],
+            "ocrLineIndices": [
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m6-q41",
+          "number": 41,
+          "questionText": "秋葉原に行った（）に、近くにある有名な<ruby>献血セ<rt>けんけつ</rt></ruby>ンターにも行ってきた。",
+          "stem": "秋葉原に行った（）に、近くにある有名な<ruby>献血セ<rt>けんけつ</rt></ruby>ンターにも行ってきた。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "つもり",
+            "ついで",
+            "おかげ",
+            "ため"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "ついで",
+          "explanation": "Correct answer: ついで",
+          "sourcePage": 18,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 18,
+            "stemBbox": [
+              128.0,
+              1082.0,
+              870.0,
+              1109.0
+            ],
+            "optionsBbox": [
+              151.0,
+              1139.0,
+              812.0,
+              1169.0
+            ],
+            "ocrLineIndices": [
+              36,
+              37,
+              38,
+              39,
+              40,
+              41
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m6-q42",
+          "number": 42,
+          "questionText": "しょうがのお茶を飲む（）で、体を<ruby>温め<rt>あたた</rt></ruby>てかぜを治す。あたた",
+          "stem": "しょうがのお茶を飲む（）で、体を<ruby>温め<rt>あたた</rt></ruby>てかぜを治す。あたた",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "もの",
+            "わけ",
+            "そう",
+            "こと"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "こと",
+          "explanation": "Correct answer: こと",
+          "sourcePage": 18,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 18,
+            "stemBbox": [
+              129.0,
+              1213.0,
+              713.0,
+              1247.0
+            ],
+            "optionsBbox": [
+              151.0,
+              1278.0,
+              810.0,
+              1307.0
+            ],
+            "ocrLineIndices": [
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m6-q43",
+          "number": 43,
+          "questionText": "みんなは進学説明会に行かないの（）が、わたしは行きたい。",
+          "stem": "みんなは進学説明会に行かないの（）が、わたしは行きたい。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "つもりだ",
+            "かもしれない",
+            "ではない",
+            "ところだ"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "かもしれない",
+          "explanation": "Correct answer: かもしれない",
+          "sourcePage": 19,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 19,
+            "stemBbox": [
+              123.0,
+              97.0,
+              780.0,
+              129.0
+            ],
+            "optionsBbox": [
+              138.0,
+              155.0,
+              859.0,
+              185.0
+            ],
+            "ocrLineIndices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m6-q44",
+          "number": 44,
+          "questionText": "いらっしゃいませ。お客様、何を（）か。",
+          "stem": "いらっしゃいませ。お客様、何を（）か。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "お<ruby>探し<rt>さが</rt></ruby>です",
+            "お探しさしあげます",
+            "お探しにいたします",
+            "お探しになります"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "お<ruby>探し<rt>さが</rt></ruby>です",
+          "explanation": "Correct answer: お<ruby>探し<rt>さが</rt></ruby>です",
+          "sourcePage": 19,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 19,
+            "stemBbox": [
+              125.0,
+              239.0,
+              606.0,
+              267.0
+            ],
+            "optionsBbox": [
+              148.0,
+              296.0,
+              754.0,
+              363.0
+            ],
+            "ocrLineIndices": [
+              6,
+              7,
+              9,
+              10,
+              11,
+              12
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m6-q45",
+          "number": 45,
+          "questionText": "この歌を聞いていると、元気が（)。",
+          "stem": "この歌を聞いていると、元気が（)。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "出てくる",
+            "出ていく",
+            "出た",
+            "出ている"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "出てくる",
+          "explanation": "Correct answer: 出てくる",
+          "sourcePage": 19,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 19,
+            "stemBbox": [
+              150.0,
+              418.0,
+              555.0,
+              446.0
+            ],
+            "optionsBbox": [
+              148.0,
+              474.0,
+              853.0,
+              503.0
+            ],
+            "ocrLineIndices": [
+              13,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m6-q46",
+          "number": 46,
+          "questionText": "大きな病気をして（）、健康の大切さがわかった。",
+          "stem": "大きな病気をして（）、健康の大切さがわかった。",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "まで",
+            "こそ",
+            "はじめて",
+            "さえ"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "はじめて",
+          "explanation": "Correct answer: はじめて",
+          "sourcePage": 19,
+          "sourceReviewFlags": [
+            "low-confidence-option"
+          ],
+          "source": {
+            "pdfPage": 19,
+            "stemBbox": [
+              121.0,
+              556.0,
+              670.0,
+              582.0
+            ],
+            "optionsBbox": [
+              145.0,
+              613.0,
+              814.0,
+              643.0
+            ],
+            "ocrLineIndices": [
+              20,
+              21,
+              22,
+              23,
+              24,
+              25
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m6-q47",
+          "number": 47,
+          "questionText": "チンさん、今度中国に帰る（)。知っていた？",
+          "stem": "チンさん、今度中国に帰る（)。知っていた？",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "のだ",
+            "らしいね",
+            "ことだね",
+            "だって"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "らしいね",
+          "explanation": "Correct answer: らしいね",
+          "sourcePage": 19,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 19,
+            "stemBbox": [
+              122.0,
+              696.0,
+              638.0,
+              720.0
+            ],
+            "optionsBbox": [
+              145.0,
+              752.0,
+              832.0,
+              781.0
+            ],
+            "ocrLineIndices": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m6-q48",
+          "number": 48,
+          "questionText": "A「お子さんは、何人いらっしゃいますか?」<br/>B「男の子が二人（",
+          "stem": "A「お子さんは、何人いらっしゃいますか?」<br/>B「男の子が二人（",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "なさいます",
+            "なります",
+            "おります",
+            "おられます"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "おります",
+          "explanation": "Correct answer: おります",
+          "sourcePage": 19,
+          "sourceReviewFlags": [
+            "option-2-duplicate-label-candidates"
+          ],
+          "source": {
+            "pdfPage": 19,
+            "stemBbox": [
+              119.0,
+              833.0,
+              554.0,
+              897.0
+            ],
+            "optionsBbox": [
+              144.0,
+              931.0,
+              870.0,
+              959.0
+            ],
+            "ocrLineIndices": [
+              32,
+              33,
+              34,
+              35,
+              36,
+              37
+            ],
+            "underlineBbox": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "mondai-7",
+      "number": 7,
+      "type": "sentence-ordering",
+      "title": "問題7 文の文法2",
+      "instruction": "つぎの文の★に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+      "instructionHtml": "つぎの文の★に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+      "sourcePages": [
+        20
+      ],
+      "questionCount": 5,
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "d02-m7-q49",
+          "number": 49,
+          "questionText": "英会話は聞けば<u class=\"kanji-target\" data-target=\"true\">★</u>上手になるものだ。",
+          "stem": "英会話は聞けば<u class=\"kanji-target\" data-target=\"true\">★</u>上手になるものだ。",
+          "targetText": "★",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">★</u>",
+          "options": [
+            "聞くほど",
+            "話すほど",
+            "話せば",
+            "そして"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "話せば",
+          "explanation": "Correct answer: 話せば",
+          "sourcePage": 20,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 20,
+            "stemBbox": [
+              129.0,
+              191.0,
+              789.0,
+              219.0
+            ],
+            "optionsBbox": [
+              154.0,
+              246.0,
+              831.0,
+              279.0
+            ],
+            "ocrLineIndices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m7-q50",
+          "number": 50,
+          "questionText": "一人娘は大きく<u class=\"kanji-target\" data-target=\"true\">★</u>母親ににてきた。",
+          "stem": "一人娘は大きく<u class=\"kanji-target\" data-target=\"true\">★</u>母親ににてきた。",
+          "targetText": "★",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">★</u>",
+          "options": [
+            "話し方",
+            "につれて",
+            "まで",
+            "なる"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "話し方",
+          "explanation": "Correct answer: 話し方",
+          "sourcePage": 20,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 20,
+            "stemBbox": [
+              129.0,
+              331.0,
+              770.0,
+              359.0
+            ],
+            "optionsBbox": [
+              155.0,
+              387.0,
+              811.0,
+              417.0
+            ],
+            "ocrLineIndices": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m7-q51",
+          "number": 51,
+          "questionText": "日本語の漢字のように ＿＿＿ ＿＿＿ <u class=\"kanji-target\" data-target=\"true\">★</u> ＿＿＿",
+          "stem": "日本語の漢字のように ＿＿＿ ＿＿＿ <u class=\"kanji-target\" data-target=\"true\">★</u> ＿＿＿",
+          "targetText": "★",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">★</u>",
+          "options": [
+            "大変だ",
+            "たくさんあると",
+            "読み方が",
+            "覚えるのが"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "覚えるのが",
+          "explanation": "Correct answer: 覚えるのが",
+          "sourcePage": 20,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 20,
+            "stemBbox": [
+              129.0,
+              469.0,
+              361.0,
+              496.0
+            ],
+            "optionsBbox": [
+              153.0,
+              525.0,
+              866.0,
+              556.0
+            ],
+            "ocrLineIndices": [
+              15,
+              16,
+              17,
+              18
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m7-q52",
+          "number": 52,
+          "questionText": "まじめな姉は<u class=\"kanji-target\" data-target=\"true\">★</u>妹は、好きなことをしている",
+          "stem": "まじめな姉は<u class=\"kanji-target\" data-target=\"true\">★</u>妹は、好きなことをしている",
+          "targetText": "★",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">★</u>",
+          "options": [
+            "生きてきたの",
+            "会社員",
+            "に対して",
+            "として"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "生きてきたの",
+          "explanation": "Correct answer: 生きてきたの",
+          "sourcePage": 20,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 20,
+            "stemBbox": [
+              128.0,
+              606.0,
+              857.0,
+              636.0
+            ],
+            "optionsBbox": [
+              155.0,
+              663.0,
+              828.0,
+              693.0
+            ],
+            "ocrLineIndices": [
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m7-q53",
+          "number": 53,
+          "questionText": "とても器用な<ruby>本田<rt>ほんだ</rt></ruby>さんは、折り紙でほんだ<u class=\"kanji-target\" data-target=\"true\">★</u>作ることがで<br/>きる。",
+          "stem": "とても器用な<ruby>本田<rt>ほんだ</rt></ruby>さんは、折り紙でほんだ<u class=\"kanji-target\" data-target=\"true\">★</u>作ることがで<br/>きる。",
+          "targetText": "★",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">★</u>",
+          "options": [
+            "ばかりでなく",
+            "どんな",
+            "動物も",
+            "犬"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "どんな",
+          "explanation": "Correct answer: どんな",
+          "sourcePage": 20,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 20,
+            "stemBbox": [
+              128.0,
+              739.0,
+              926.0,
+              814.0
+            ],
+            "optionsBbox": [
+              156.0,
+              842.0,
+              794.0,
+              872.0
+            ],
+            "ocrLineIndices": [
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33
+            ],
+            "underlineBbox": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "mondai-8",
+      "number": 8,
+      "type": "passage-grammar",
+      "title": "問題8 文章の文法",
+      "instruction": "つぎの文章を読んで、文章全体の内容を考えて、54から58の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "instructionHtml": "つぎの文章を読んで、文章全体の内容を考えて、54から58の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+      "sourcePages": [
+        21,
+        22
+      ],
+      "questionCount": 5,
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "d02-m8-q54",
+          "number": 54,
+          "questionText": "54",
+          "stem": "54",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "ついに",
+            "いよいよ",
+            "すぐ",
+            "ようやく"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "ようやく",
+          "explanation": "Correct answer: ようやく",
+          "sourcePage": 22,
+          "sourceReviewFlags": [
+            "low-confidence-ruby"
+          ],
+          "source": {
+            "pdfPage": 22,
+            "passagePage": 21,
+            "stemBbox": [
+              129.0,
+              202.0,
+              163.0,
+              227.0
+            ],
+            "optionsBbox": [
+              156.0,
+              244.0,
+              849.0,
+              276.0
+            ],
+            "ocrLineIndices": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "passageOcrLineIndices": [
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              18,
+              20,
+              22,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              31,
+              32,
+              34
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m8-q55",
+          "number": 55,
+          "questionText": "55",
+          "stem": "55",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "なのか",
+            "なんだね",
+            "なのに",
+            "なんで"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "なのに",
+          "explanation": "Correct answer: なのに",
+          "sourcePage": 22,
+          "sourceReviewFlags": [
+            "low-confidence-ruby"
+          ],
+          "source": {
+            "pdfPage": 22,
+            "passagePage": 21,
+            "stemBbox": [
+              128.0,
+              331.0,
+              163.0,
+              356.0
+            ],
+            "optionsBbox": [
+              154.0,
+              375.0,
+              832.0,
+              405.0
+            ],
+            "ocrLineIndices": [
+              6,
+              7,
+              8,
+              9
+            ],
+            "passageOcrLineIndices": [
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              18,
+              20,
+              22,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              31,
+              32,
+              34
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m8-q56",
+          "number": 56,
+          "questionText": "56",
+          "stem": "56",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "では",
+            "にも",
+            "との",
+            "なら"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "にも",
+          "explanation": "Correct answer: にも",
+          "sourcePage": 22,
+          "sourceReviewFlags": [
+            "low-confidence-ruby"
+          ],
+          "source": {
+            "pdfPage": 22,
+            "passagePage": 21,
+            "stemBbox": [
+              129.0,
+              460.0,
+              162.0,
+              485.0
+            ],
+            "optionsBbox": [
+              151.0,
+              504.0,
+              808.0,
+              535.0
+            ],
+            "ocrLineIndices": [
+              11,
+              12,
+              13,
+              14
+            ],
+            "passageOcrLineIndices": [
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              18,
+              20,
+              22,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              31,
+              32,
+              34
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m8-q57",
+          "number": 57,
+          "questionText": "57",
+          "stem": "57",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "<ruby>呼<rt>よ</rt></ruby>ばれ",
+            "<ruby>呼<rt>よ</rt></ruby>んで",
+            "呼ばせ",
+            "呼び"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "<ruby>呼<rt>よ</rt></ruby>ばれ",
+          "explanation": "Correct answer: <ruby>呼<rt>よ</rt></ruby>ばれ",
+          "sourcePage": 22,
+          "sourceReviewFlags": [
+            "low-confidence-ruby"
+          ],
+          "source": {
+            "pdfPage": 22,
+            "passagePage": 21,
+            "stemBbox": [
+              128.0,
+              588.0,
+              162.0,
+              614.0
+            ],
+            "optionsBbox": [
+              153.0,
+              620.0,
+              814.0,
+              665.0
+            ],
+            "ocrLineIndices": [
+              16,
+              19,
+              20,
+              21
+            ],
+            "passageOcrLineIndices": [
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              18,
+              20,
+              22,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              31,
+              32,
+              34
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "d02-m8-q58",
+          "number": 58,
+          "questionText": "58",
+          "stem": "58",
+          "targetText": "",
+          "targetMarkup": "",
+          "options": [
+            "来てあげた",
+            "来ていられた",
+            "来てくれた",
+            "来てみた"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "来てくれた",
+          "explanation": "Correct answer: 来てくれた",
+          "sourcePage": 22,
+          "sourceReviewFlags": [
+            "low-confidence-ruby"
+          ],
+          "source": {
+            "pdfPage": 22,
+            "passagePage": 21,
+            "stemBbox": [
+              128.0,
+              717.0,
+              161.0,
+              742.0
+            ],
+            "optionsBbox": [
+              151.0,
+              763.0,
+              690.0,
+              830.0
+            ],
+            "ocrLineIndices": [
+              23,
+              24,
+              25,
+              26
+            ],
+            "passageOcrLineIndices": [
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              18,
+              20,
+              22,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              31,
+              32,
+              34
+            ],
+            "underlineBbox": null
+          }
+        }
+      ],
+      "passageText": "3月27日の朝。僕はブレザー(注1)を着て学校に向かった。（中略）3日前に卒業式<br/>があったけど、僕は39度の熱が出て、出席できなかった。<br/><span class=\"pass20-passage-blank\" data-question=\"54\">54</span>熱も下がって、卒業証<ruby>書(注<rt>しょうしょ</rt></ruby>2)を受け取りに行く。毎日通った通学路(注3)。きよ<br/>うは、お母さん、お兄ちゃん、弟も一緒だ。<br/>あれ？同級生の男の子がいる。もう春休み<span class=\"pass20-passage-blank\" data-question=\"55\">55</span>。「どうしたの？」。声をかけたら、<br/>少し慌てた様子。「卒業式の日に、お父さんが間違えて学校のスリッパを持ってきちゃっ<br/>た。返しに行く」。（中略）走って行っちゃった。<br/>ほか<span class=\"pass20-passage-blank\" data-question=\"56\">56</span>同級生が学校に向かっている。<br/>学校に着くと、体育館に案内された。1人だから、校長室じゃないの？<br/>体育館の扉を開けると、みんながいた。約40人が、一斉<ruby>に(<rt>いっせい</rt></ruby>注4)僕を見る。（中略)<br/>「S君」。名前を<span class=\"pass20-passage-blank\" data-question=\"57\">57</span>、練習どおりに<ruby>背筋を<rt>せすじ</rt></ruby>ぴんとさせて、校長先生から卒業証書<br/>を受け取った。振り返ると、みんなの顔が見えた。涙が出そうだったけど<ruby>、唇<rt>くちびる</rt></ruby>をかん<br/>で<ruby>我慢し<rt>がまん</rt></ruby>た。(中略)<br/>僕の卒業式は、友だちのお母さんがみんなに呼びかけてくれたそうだ。<br/>家に帰って、おばあちゃんに電話した。「きょう、卒業式してもらったんだ。1人じゃ<br/>なかった。みんな<span class=\"pass20-passage-blank\" data-question=\"58\">58</span>んだよ」<br/>(朝日新聞』2017年4月12日付)<br/>(注1)ブレザー：上着<br/>（注2）卒業証書：卒業を証明す<ruby>る賞状<rt>しょうじょう</rt></ruby><br/>（注3）通学路：学校に通うための道<br/>(注4<ruby>）一斉<rt>いっせい</rt></ruby>に：みんながそろって同時に",
+      "passageLayout": "html",
+      "passageSourcePage": 21
+    }
+  ]
+}

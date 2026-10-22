@@ -1,0 +1,2148 @@
+{
+  "id": "chapter-7",
+  "bookId": "first-time-jlpt-n3-350-kanji",
+  "chapterNumber": 7,
+  "title": "Chapter 7 - Kanji 301-350",
+  "sourceTitle": "Chapter 7 漢字301～350 ドリル",
+  "kanjiRange": "301-350",
+  "maxScore": 40,
+  "totalQuestions": 40,
+  "practiceModes": [
+    "study",
+    "exam"
+  ],
+  "source": {
+    "questionPages": [
+      32,
+      33,
+      34,
+      35
+    ],
+    "answerPage": 36,
+    "pdfSha256": "9924b9619a92e6d5911be49c29e29b487d1377505a6ab86496f9bdb1e4c69562"
+  },
+  "sections": [
+    {
+      "id": "mondai-1",
+      "number": 1,
+      "type": "reading-in-context",
+      "title": "問題1 文脈の中の漢字の読み",
+      "instruction": "＿＿＿のことばの読み方として最もよいものを、１・２・３・４から一つえらびなさい。",
+      "instructionHtml": "<u class=\"kanji-target\">　　　</u>のことばの読み方として最もよいものを、１・２・３・４から一つえらびなさい。",
+      "sourcePage": 32,
+      "questionCount": 10,
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "c7-m1-q1",
+          "number": 1,
+          "questionText": "<ruby>娘<rt>むすめ</rt></ruby>の<ruby>誕<rt>たん</rt></ruby><ruby>生<rt>じょう</rt></ruby><ruby>日<rt>び</rt></ruby>にかわいい<u class=\"kanji-target\" data-target=\"true\">人形</u>をプレゼントした。",
+          "stem": "<ruby>娘<rt>むすめ</rt></ruby>の<ruby>誕<rt>たん</rt></ruby><ruby>生<rt>じょう</rt></ruby><ruby>日<rt>び</rt></ruby>にかわいい<u class=\"kanji-target\" data-target=\"true\">人形</u>をプレゼントした。",
+          "targetText": "人形",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">人形</u>",
+          "options": [
+            "にんけい",
+            "じんけい",
+            "にんぎょう",
+            "じんぎょう"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "にんぎょう",
+          "explanation": "「人形」の正しい読みは「にんぎょう」です。",
+          "sourcePage": 32,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 32,
+            "stemBbox": [
+              62.06,
+              193.34,
+              299.33,
+              204.38
+            ],
+            "optionsBbox": [
+              63.62,
+              213.38,
+              481.01,
+              224.42
+            ],
+            "underlineBbox": [
+              178.22,
+              205.7,
+              200.32,
+              206.3
+            ]
+          }
+        },
+        {
+          "id": "c7-m1-q2",
+          "number": 2,
+          "questionText": "久しぶりに<ruby>故<rt>こ</rt></ruby><ruby>郷<rt>きょう</rt></ruby>に帰ったら、町がすっかり<u class=\"kanji-target\" data-target=\"true\">変わって</u>いた。",
+          "stem": "久しぶりに<ruby>故<rt>こ</rt></ruby><ruby>郷<rt>きょう</rt></ruby>に帰ったら、町がすっかり<u class=\"kanji-target\" data-target=\"true\">変わって</u>いた。",
+          "targetText": "変わって",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">変わって</u>",
+          "options": [
+            "まわって",
+            "かわって",
+            "つたわって",
+            "かかわって"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "かわって",
+          "explanation": "「変わって」の正しい読みは「かわって」です。",
+          "sourcePage": 32,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 32,
+            "stemBbox": [
+              60.12,
+              253.34,
+              350.35,
+              264.38
+            ],
+            "optionsBbox": [
+              63.62,
+              273.41,
+              481.01,
+              284.45
+            ],
+            "underlineBbox": [
+              273.29,
+              265.7,
+              317.23,
+              266.3
+            ]
+          }
+        },
+        {
+          "id": "c7-m1-q3",
+          "number": 3,
+          "questionText": "どんなにつらいことがあっても、<u class=\"kanji-target\" data-target=\"true\">命</u>は大切にするべきだ。",
+          "stem": "どんなにつらいことがあっても、<u class=\"kanji-target\" data-target=\"true\">命</u>は大切にするべきだ。",
+          "targetText": "命",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">命</u>",
+          "options": [
+            "めい",
+            "みょ",
+            "みょう",
+            "いのち"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "いのち",
+          "explanation": "「命」の正しい読みは「いのち」です。",
+          "sourcePage": 32,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 32,
+            "stemBbox": [
+              60.12,
+              313.37,
+              346.25,
+              324.41
+            ],
+            "optionsBbox": [
+              42.6,
+              333.41,
+              460.01,
+              344.45
+            ],
+            "underlineBbox": [
+              225.29,
+              325.73,
+              236.21,
+              326.33
+            ]
+          }
+        },
+        {
+          "id": "c7-m1-q4",
+          "number": 4,
+          "questionText": "<ruby>息子<rt>むすこ</rt></ruby>の<u class=\"kanji-target\" data-target=\"true\">成人式</u>で、思わず泣いてしまった。",
+          "stem": "<ruby>息子<rt>むすこ</rt></ruby>の<u class=\"kanji-target\" data-target=\"true\">成人式</u>で、思わず泣いてしまった。",
+          "targetText": "成人式",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">成人式</u>",
+          "options": [
+            "せいじんしき",
+            "せいじんじき",
+            "じょうじんしき",
+            "じょうじんじき"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "せいじんしき",
+          "explanation": "「成人式」の正しい読みは「せいじんしき」です。",
+          "sourcePage": 32,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 32,
+            "stemBbox": [
+              60.12,
+              373.37,
+              269.17,
+              384.41
+            ],
+            "optionsBbox": [
+              63.62,
+              393.41,
+              503.09,
+              404.45
+            ],
+            "underlineBbox": [
+              93.14,
+              385.73,
+              126.14,
+              386.33
+            ]
+          }
+        },
+        {
+          "id": "c7-m1-q5",
+          "number": 5,
+          "questionText": "いつまでも<u class=\"kanji-target\" data-target=\"true\">平和</u>な世界であってほしい。",
+          "stem": "いつまでも<u class=\"kanji-target\" data-target=\"true\">平和</u>な世界であってほしい。",
+          "targetText": "平和",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">平和</u>",
+          "options": [
+            "へいお",
+            "へいわ",
+            "びょうわ",
+            "びょうお"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "へいわ",
+          "explanation": "「平和」の正しい読みは「へいわ」です。",
+          "sourcePage": 32,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 32,
+            "stemBbox": [
+              60.12,
+              433.37,
+              258.26,
+              444.41
+            ],
+            "optionsBbox": [
+              63.62,
+              453.41,
+              470.09,
+              464.45
+            ],
+            "underlineBbox": [
+              115.22,
+              445.73,
+              137.18,
+              446.33
+            ]
+          }
+        },
+        {
+          "id": "c7-m1-q6",
+          "number": 6,
+          "questionText": "私はこのプロジェクトに<u class=\"kanji-target\" data-target=\"true\">反対</u>だ。",
+          "stem": "私はこのプロジェクトに<u class=\"kanji-target\" data-target=\"true\">反対</u>だ。",
+          "targetText": "反対",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">反対</u>",
+          "options": [
+            "たんたい",
+            "はんたい",
+            "ほんつい",
+            "はんつい"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "はんたい",
+          "explanation": "「反対」の正しい読みは「はんたい」です。",
+          "sourcePage": 32,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 32,
+            "stemBbox": [
+              60.12,
+              493.39,
+              225.29,
+              504.43
+            ],
+            "optionsBbox": [
+              63.62,
+              513.43,
+              470.09,
+              524.47
+            ],
+            "underlineBbox": [
+              181.22,
+              505.75,
+              203.2,
+              506.35
+            ]
+          }
+        },
+        {
+          "id": "c7-m1-q7",
+          "number": 7,
+          "questionText": "留学の<u class=\"kanji-target\" data-target=\"true\">目的</u>をはっきりしてから、留学先を決める。",
+          "stem": "留学の<u class=\"kanji-target\" data-target=\"true\">目的</u>をはっきりしてから、留学先を決める。",
+          "targetText": "目的",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">目的</u>",
+          "options": [
+            "もくてき",
+            "もくでき",
+            "ぼくてき",
+            "ぼくでき"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "もくてき",
+          "explanation": "「目的」の正しい読みは「もくてき」です。",
+          "sourcePage": 32,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 32,
+            "stemBbox": [
+              60.12,
+              553.39,
+              313.21,
+              564.43
+            ],
+            "optionsBbox": [
+              63.62,
+              573.43,
+              470.09,
+              584.47
+            ],
+            "underlineBbox": [
+              93.14,
+              565.75,
+              115.22,
+              566.35
+            ]
+          }
+        },
+        {
+          "id": "c7-m1-q8",
+          "number": 8,
+          "questionText": "森田君にはピアノの<u class=\"kanji-target\" data-target=\"true\">才能</u>がある。",
+          "stem": "森田君にはピアノの<u class=\"kanji-target\" data-target=\"true\">才能</u>がある。",
+          "targetText": "才能",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">才能</u>",
+          "options": [
+            "せいのう",
+            "ぜいのう",
+            "ざいのう",
+            "さいのう"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "さいのう",
+          "explanation": "「才能」の正しい読みは「さいのう」です。",
+          "sourcePage": 32,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 32,
+            "stemBbox": [
+              60.12,
+              613.39,
+              225.26,
+              624.43
+            ],
+            "optionsBbox": [
+              63.62,
+              633.43,
+              470.09,
+              644.47
+            ],
+            "underlineBbox": [
+              159.14,
+              625.75,
+              181.22,
+              626.35
+            ]
+          }
+        },
+        {
+          "id": "c7-m1-q9",
+          "number": 9,
+          "questionText": "<u class=\"kanji-target\" data-target=\"true\">静か</u>な町に住みたい。",
+          "stem": "<u class=\"kanji-target\" data-target=\"true\">静か</u>な町に住みたい。",
+          "targetText": "静か",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">静か</u>",
+          "options": [
+            "しづか",
+            "しつか",
+            "しずか",
+            "しすか"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "しずか",
+          "explanation": "「静か」の正しい読みは「しずか」です。",
+          "sourcePage": 32,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 32,
+            "stemBbox": [
+              60.12,
+              673.42,
+              170.18,
+              684.46
+            ],
+            "optionsBbox": [
+              42.6,
+              693.46,
+              460.01,
+              704.5
+            ],
+            "underlineBbox": [
+              60.12,
+              685.78,
+              82.22,
+              686.38
+            ]
+          }
+        },
+        {
+          "id": "c7-m1-q10",
+          "number": 10,
+          "questionText": "久しぶりに会った妹は、すっかり<u class=\"kanji-target\" data-target=\"true\">美人</u>になっていた。",
+          "stem": "久しぶりに会った妹は、すっかり<u class=\"kanji-target\" data-target=\"true\">美人</u>になっていた。",
+          "targetText": "美人",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">美人</u>",
+          "options": [
+            "みじん",
+            "みにん",
+            "びじん",
+            "びにん"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "びじん",
+          "explanation": "「美人」の正しい読みは「びじん」です。",
+          "sourcePage": 32,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 32,
+            "stemBbox": [
+              63.74,
+              733.42,
+              327.77,
+              744.46
+            ],
+            "optionsBbox": [
+              42.6,
+              753.46,
+              460.01,
+              764.5
+            ],
+            "underlineBbox": [
+              228.77,
+              745.78,
+              250.73,
+              746.38
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mondai-2",
+      "number": 2,
+      "type": "kanji-in-context",
+      "title": "問題2 文脈の中の漢字表記",
+      "instruction": "＿＿＿のことばを漢字で書くとき、最もよいものを、１・２・３・４から一つえらびなさい。",
+      "instructionHtml": "<u class=\"kanji-target\">　　　</u>のことばを漢字で書くとき、最もよいものを、１・２・３・４から一つえらびなさい。",
+      "sourcePage": 33,
+      "questionCount": 10,
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "c7-m2-q1",
+          "number": 1,
+          "questionText": "女性に<ruby>年<rt>ねん</rt></ruby><ruby>齢<rt>れい</rt></ruby>を聞くのは<u class=\"kanji-target\" data-target=\"true\">しつれい</u>なことだ。",
+          "stem": "女性に<ruby>年<rt>ねん</rt></ruby><ruby>齢<rt>れい</rt></ruby>を聞くのは<u class=\"kanji-target\" data-target=\"true\">しつれい</u>なことだ。",
+          "targetText": "しつれい",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">しつれい</u>",
+          "options": [
+            "失業",
+            "失敗",
+            "失礼",
+            "失望"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "失礼",
+          "explanation": "「しつれい」の正しい漢字表記は「失礼」です。",
+          "sourcePage": 33,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 33,
+            "stemBbox": [
+              60.12,
+              108.38,
+              269.33,
+              119.42
+            ],
+            "optionsBbox": [
+              63.62,
+              128.3,
+              404.06,
+              139.34
+            ],
+            "underlineBbox": [
+              170.3,
+              120.74,
+              214.36,
+              121.34
+            ]
+          }
+        },
+        {
+          "id": "c7-m2-q2",
+          "number": 2,
+          "questionText": "このお店には、面白い商品がたくさん<u class=\"kanji-target\" data-target=\"true\">ならんで</u>いる。",
+          "stem": "このお店には、面白い商品がたくさん<u class=\"kanji-target\" data-target=\"true\">ならんで</u>いる。",
+          "targetText": "ならんで",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">ならんで</u>",
+          "options": [
+            "並んで",
+            "運んで",
+            "呼んで",
+            "選んで"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "並んで",
+          "explanation": "「ならんで」の正しい漢字表記は「並んで」です。",
+          "sourcePage": 33,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 33,
+            "stemBbox": [
+              60.12,
+              168.38,
+              324.29,
+              179.42
+            ],
+            "optionsBbox": [
+              63.62,
+              188.3,
+              414.98,
+              199.34
+            ],
+            "underlineBbox": [
+              247.25,
+              180.74,
+              291.17,
+              181.34
+            ]
+          }
+        },
+        {
+          "id": "c7-m2-q3",
+          "number": 3,
+          "questionText": "大学を<u class=\"kanji-target\" data-target=\"true\">そつぎょう</u>して、高校の数学教師になった。",
+          "stem": "大学を<u class=\"kanji-target\" data-target=\"true\">そつぎょう</u>して、高校の数学教師になった。",
+          "targetText": "そつぎょう",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">そつぎょう</u>",
+          "options": [
+            "卒業",
+            "失業",
+            "残業",
+            "営業"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "卒業",
+          "explanation": "「そつぎょう」の正しい漢字表記は「卒業」です。",
+          "sourcePage": 33,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 33,
+            "stemBbox": [
+              60.12,
+              228.38,
+              313.21,
+              239.42
+            ],
+            "optionsBbox": [
+              42.6,
+              248.3,
+              405.02,
+              259.34
+            ],
+            "underlineBbox": [
+              93.14,
+              240.74,
+              148.22,
+              241.34
+            ]
+          }
+        },
+        {
+          "id": "c7-m2-q4",
+          "number": 4,
+          "questionText": "<u class=\"kanji-target\" data-target=\"true\">せんそう</u>は人々を不幸にする。",
+          "stem": "<u class=\"kanji-target\" data-target=\"true\">せんそう</u>は人々を不幸にする。",
+          "targetText": "せんそう",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">せんそう</u>",
+          "options": [
+            "単争",
+            "戦静",
+            "単静",
+            "戦争"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "戦争",
+          "explanation": "「せんそう」の正しい漢字表記は「戦争」です。",
+          "sourcePage": 33,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 33,
+            "stemBbox": [
+              60.12,
+              288.41,
+              214.22,
+              299.45
+            ],
+            "optionsBbox": [
+              42.6,
+              308.33,
+              405.02,
+              319.37
+            ],
+            "underlineBbox": [
+              60.12,
+              300.77,
+              104.18,
+              301.37
+            ]
+          }
+        },
+        {
+          "id": "c7-m2-q5",
+          "number": 5,
+          "questionText": "<ruby>犯<rt>はん</rt></ruby><ruby>人<rt>にん</rt></ruby>は二十年の間に、十人も<u class=\"kanji-target\" data-target=\"true\">ころした</u>そうだ。",
+          "stem": "<ruby>犯<rt>はん</rt></ruby><ruby>人<rt>にん</rt></ruby>は二十年の間に、十人も<u class=\"kanji-target\" data-target=\"true\">ころした</u>そうだ。",
+          "targetText": "ころした",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">ころした</u>",
+          "options": [
+            "表した",
+            "汚した",
+            "移した",
+            "殺した"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "殺した",
+          "explanation": "「ころした」の正しい漢字表記は「殺した」です。",
+          "sourcePage": 33,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 33,
+            "stemBbox": [
+              60.12,
+              348.41,
+              291.41,
+              359.45
+            ],
+            "optionsBbox": [
+              53.64,
+              368.33,
+              416.06,
+              379.37
+            ],
+            "underlineBbox": [
+              203.33,
+              360.77,
+              247.37,
+              361.37
+            ]
+          }
+        },
+        {
+          "id": "c7-m2-q6",
+          "number": 6,
+          "questionText": "前の仕事を辞めて、IT 会社に<u class=\"kanji-target\" data-target=\"true\">てんしょく</u>した。",
+          "stem": "前の仕事を辞めて、IT 会社に<u class=\"kanji-target\" data-target=\"true\">てんしょく</u>した。",
+          "targetText": "てんしょく",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">てんしょく</u>",
+          "options": [
+            "転移",
+            "転職",
+            "転換",
+            "転勤"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "転職",
+          "explanation": "「てんしょく」の正しい漢字表記は「転職」です。",
+          "sourcePage": 33,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 33,
+            "stemBbox": [
+              60.12,
+              408.41,
+              294.77,
+              419.45
+            ],
+            "optionsBbox": [
+              63.62,
+              428.33,
+              404.06,
+              439.37
+            ],
+            "underlineBbox": [
+              206.81,
+              420.77,
+              261.77,
+              421.37
+            ]
+          }
+        },
+        {
+          "id": "c7-m2-q7",
+          "number": 7,
+          "questionText": "宅配便の<u class=\"kanji-target\" data-target=\"true\">なかみ</u>を<ruby>確<rt>かく</rt></ruby><ruby>認<rt>にん</rt></ruby>する。",
+          "stem": "宅配便の<u class=\"kanji-target\" data-target=\"true\">なかみ</u>を<ruby>確<rt>かく</rt></ruby><ruby>認<rt>にん</rt></ruby>する。",
+          "targetText": "なかみ",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">なかみ</u>",
+          "options": [
+            "中央",
+            "中心",
+            "中身",
+            "中古"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "中身",
+          "explanation": "「なかみ」の正しい漢字表記は「中身」です。",
+          "sourcePage": 33,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 33,
+            "stemBbox": [
+              60.12,
+              468.43,
+              203.3,
+              479.47
+            ],
+            "optionsBbox": [
+              63.62,
+              488.35,
+              404.06,
+              499.39
+            ],
+            "underlineBbox": [
+              104.18,
+              480.79,
+              137.18,
+              481.39
+            ]
+          }
+        },
+        {
+          "id": "c7-m2-q8",
+          "number": 8,
+          "questionText": "この情報を信じていいのか、<u class=\"kanji-target\" data-target=\"true\">ぎもん</u>に思う。",
+          "stem": "この情報を信じていいのか、<u class=\"kanji-target\" data-target=\"true\">ぎもん</u>に思う。",
+          "targetText": "ぎもん",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">ぎもん</u>",
+          "options": [
+            "学問",
+            "質問",
+            "訪問",
+            "疑問"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "疑問",
+          "explanation": "「ぎもん」の正しい漢字表記は「疑問」です。",
+          "sourcePage": 33,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 33,
+            "stemBbox": [
+              60.12,
+              528.43,
+              280.25,
+              539.47
+            ],
+            "optionsBbox": [
+              42.6,
+              548.35,
+              405.02,
+              559.39
+            ],
+            "underlineBbox": [
+              203.21,
+              540.79,
+              236.21,
+              541.39
+            ]
+          }
+        },
+        {
+          "id": "c7-m2-q9",
+          "number": 9,
+          "questionText": "ファイルを<u class=\"kanji-target\" data-target=\"true\">ほぞん</u>せずに閉じてしまった。",
+          "stem": "ファイルを<u class=\"kanji-target\" data-target=\"true\">ほぞん</u>せずに閉じてしまった。",
+          "targetText": "ほぞん",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">ほぞん</u>",
+          "options": [
+            "保存",
+            "保証",
+            "保険",
+            "保育"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "保存",
+          "explanation": "「ほぞん」の正しい漢字表記は「保存」です。",
+          "sourcePage": 33,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 33,
+            "stemBbox": [
+              60.12,
+              588.43,
+              269.3,
+              599.47
+            ],
+            "optionsBbox": [
+              63.62,
+              608.35,
+              404.06,
+              619.39
+            ],
+            "underlineBbox": [
+              115.22,
+              600.79,
+              148.22,
+              601.39
+            ]
+          }
+        },
+        {
+          "id": "c7-m2-q10",
+          "number": 10,
+          "questionText": "本当に<u class=\"kanji-target\" data-target=\"true\">ひつよう</u>なものだけ買いましょう。",
+          "stem": "本当に<u class=\"kanji-target\" data-target=\"true\">ひつよう</u>なものだけ買いましょう。",
+          "targetText": "ひつよう",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">ひつよう</u>",
+          "options": [
+            "不要",
+            "必要",
+            "主要",
+            "重要"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "必要",
+          "explanation": "「ひつよう」の正しい漢字表記は「必要」です。",
+          "sourcePage": 33,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 33,
+            "stemBbox": [
+              63.74,
+              648.46,
+              272.78,
+              659.5
+            ],
+            "optionsBbox": [
+              42.6,
+              668.38,
+              405.02,
+              679.42
+            ],
+            "underlineBbox": [
+              96.74,
+              660.82,
+              140.66,
+              661.42
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mondai-3",
+      "number": 3,
+      "type": "word-reading",
+      "title": "問題3 単語の読み",
+      "instruction": "以下のことばの読み方として最もよいものを、１・２・３・４から一つえらびなさい。",
+      "instructionHtml": "以下のことばの読み方として最もよいものを、１・２・３・４から一つえらびなさい。",
+      "sourcePage": 34,
+      "questionCount": 10,
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "c7-m3-q1",
+          "number": 1,
+          "questionText": "求める",
+          "stem": "求める",
+          "targetText": "求める",
+          "targetMarkup": "求める",
+          "options": [
+            "こめる",
+            "つとめる",
+            "めざめる",
+            "もとめる"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "もとめる",
+          "explanation": "「求める」の正しい読みは「もとめる」です。",
+          "sourcePage": 34,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 34,
+            "stemBbox": [
+              60.12,
+              113.78,
+              93.24,
+              124.82
+            ],
+            "optionsBbox": [
+              42.6,
+              136.7,
+              460.13,
+              147.74
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "c7-m3-q2",
+          "number": 2,
+          "questionText": "教育",
+          "stem": "教育",
+          "targetText": "教育",
+          "targetMarkup": "教育",
+          "options": [
+            "きょういく",
+            "きゅういく",
+            "きょうえい",
+            "きゅうえい"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "きょういく",
+          "explanation": "「教育」の正しい読みは「きょういく」です。",
+          "sourcePage": 34,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 34,
+            "stemBbox": [
+              60.12,
+              182.78,
+              82.2,
+              193.82
+            ],
+            "optionsBbox": [
+              53.64,
+              205.7,
+              471.05,
+              216.74
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "c7-m3-q3",
+          "number": 3,
+          "questionText": "歯科",
+          "stem": "歯科",
+          "targetText": "歯科",
+          "targetMarkup": "歯科",
+          "options": [
+            "はか",
+            "しか",
+            "はが",
+            "しが"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "しか",
+          "explanation": "「歯科」の正しい読みは「しか」です。",
+          "sourcePage": 34,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 34,
+            "stemBbox": [
+              60.12,
+              251.78,
+              82.2,
+              262.82
+            ],
+            "optionsBbox": [
+              42.6,
+              274.73,
+              438.05,
+              285.77
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "c7-m3-q4",
+          "number": 4,
+          "questionText": "現在",
+          "stem": "現在",
+          "targetText": "現在",
+          "targetMarkup": "現在",
+          "options": [
+            "けんさい",
+            "けんざい",
+            "げんさい",
+            "げんざい"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "げんざい",
+          "explanation": "「現在」の正しい読みは「げんざい」です。",
+          "sourcePage": 34,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 34,
+            "stemBbox": [
+              60.12,
+              320.81,
+              82.2,
+              331.85
+            ],
+            "optionsBbox": [
+              42.6,
+              343.73,
+              460.13,
+              354.77
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "c7-m3-q5",
+          "number": 5,
+          "questionText": "広告",
+          "stem": "広告",
+          "targetText": "広告",
+          "targetMarkup": "広告",
+          "options": [
+            "こうこう",
+            "こうごう",
+            "こうこく",
+            "こうごく"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "こうこく",
+          "explanation": "「広告」の正しい読みは「こうこく」です。",
+          "sourcePage": 34,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 34,
+            "stemBbox": [
+              60.12,
+              389.81,
+              82.2,
+              400.85
+            ],
+            "optionsBbox": [
+              42.6,
+              412.73,
+              460.13,
+              423.77
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "c7-m3-q6",
+          "number": 6,
+          "questionText": "比べる",
+          "stem": "比べる",
+          "targetText": "比べる",
+          "targetMarkup": "比べる",
+          "options": [
+            "しらべる",
+            "くらべる",
+            "ならべる",
+            "うかべる"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "くらべる",
+          "explanation": "「比べる」の正しい読みは「くらべる」です。",
+          "sourcePage": 34,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 34,
+            "stemBbox": [
+              60.12,
+              458.83,
+              93.24,
+              469.87
+            ],
+            "optionsBbox": [
+              42.6,
+              481.75,
+              460.13,
+              492.79
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "c7-m3-q7",
+          "number": 7,
+          "questionText": "日当たり",
+          "stem": "日当たり",
+          "targetText": "日当たり",
+          "targetMarkup": "日当たり",
+          "options": [
+            "にちあたり",
+            "にちなたり",
+            "ひあたり",
+            "ひなたり"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "ひあたり",
+          "explanation": "「日当たり」の正しい読みは「ひあたり」です。",
+          "sourcePage": 34,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 34,
+            "stemBbox": [
+              60.12,
+              527.83,
+              104.16,
+              538.87
+            ],
+            "optionsBbox": [
+              42.6,
+              550.75,
+              460.13,
+              561.79
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "c7-m3-q8",
+          "number": 8,
+          "questionText": "美しい",
+          "stem": "美しい",
+          "targetText": "美しい",
+          "targetMarkup": "美しい",
+          "options": [
+            "ひさしい",
+            "うつくしい",
+            "こいしい",
+            "くるしい"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "うつくしい",
+          "explanation": "「美しい」の正しい読みは「うつくしい」です。",
+          "sourcePage": 34,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 34,
+            "stemBbox": [
+              60.12,
+              596.83,
+              93.24,
+              607.87
+            ],
+            "optionsBbox": [
+              42.6,
+              619.75,
+              460.13,
+              630.79
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "c7-m3-q9",
+          "number": 9,
+          "questionText": "丸い",
+          "stem": "丸い",
+          "targetText": "丸い",
+          "targetMarkup": "丸い",
+          "options": [
+            "しかくい",
+            "かたい",
+            "にがい",
+            "まるい"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "まるい",
+          "explanation": "「丸い」の正しい読みは「まるい」です。",
+          "sourcePage": 34,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 34,
+            "stemBbox": [
+              60.12,
+              665.86,
+              82.2,
+              676.9
+            ],
+            "optionsBbox": [
+              42.6,
+              688.78,
+              449.09,
+              699.82
+            ],
+            "underlineBbox": null
+          }
+        },
+        {
+          "id": "c7-m3-q10",
+          "number": 10,
+          "questionText": "中央",
+          "stem": "中央",
+          "targetText": "中央",
+          "targetMarkup": "中央",
+          "options": [
+            "ちゅうおう",
+            "ちゅうえい",
+            "ちゅうこう",
+            "ちゅうけい"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "ちゅうおう",
+          "explanation": "「中央」の正しい読みは「ちゅうおう」です。",
+          "sourcePage": 34,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 34,
+            "stemBbox": [
+              63.74,
+              734.86,
+              85.7,
+              745.9
+            ],
+            "optionsBbox": [
+              42.6,
+              757.78,
+              471.05,
+              768.82
+            ],
+            "underlineBbox": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "mondai-4",
+      "number": 4,
+      "type": "kanji-in-phrase",
+      "title": "問題4 句の中の漢字表記",
+      "instruction": "＿＿＿のことばを漢字で書くとき、最もよいものを、１・２・３・４から一つえらびなさい。",
+      "instructionHtml": "<u class=\"kanji-target\">　　　</u>のことばを漢字で書くとき、最もよいものを、１・２・３・４から一つえらびなさい。",
+      "sourcePage": 35,
+      "questionCount": 10,
+      "pointsPerQuestion": 1,
+      "questions": [
+        {
+          "id": "c7-m4-q1",
+          "number": 1,
+          "questionText": "山に<u class=\"kanji-target\" data-target=\"true\">のぼる</u>",
+          "stem": "山に<u class=\"kanji-target\" data-target=\"true\">のぼる</u>",
+          "targetText": "のぼる",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">のぼる</u>",
+          "options": [
+            "座る",
+            "配る",
+            "渡る",
+            "登る"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "登る",
+          "explanation": "「のぼる」の正しい漢字表記は「登る」です。",
+          "sourcePage": 35,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 35,
+            "stemBbox": [
+              60.12,
+              113.78,
+              115.22,
+              124.82
+            ],
+            "optionsBbox": [
+              42.6,
+              136.7,
+              405.02,
+              147.74
+            ],
+            "underlineBbox": [
+              82.22,
+              126.14,
+              115.1,
+              126.74
+            ]
+          }
+        },
+        {
+          "id": "c7-m4-q2",
+          "number": 2,
+          "questionText": "<u class=\"kanji-target\" data-target=\"true\">ひこうき</u>に乗る",
+          "stem": "<u class=\"kanji-target\" data-target=\"true\">ひこうき</u>に乗る",
+          "targetText": "ひこうき",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">ひこうき</u>",
+          "options": [
+            "協行機",
+            "協行械",
+            "飛行機",
+            "飛行械"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "飛行機",
+          "explanation": "「ひこうき」の正しい漢字表記は「飛行機」です。",
+          "sourcePage": 35,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 35,
+            "stemBbox": [
+              60.12,
+              182.78,
+              137.18,
+              193.82
+            ],
+            "optionsBbox": [
+              42.6,
+              205.7,
+              416.06,
+              216.74
+            ],
+            "underlineBbox": [
+              60.12,
+              195.14,
+              104.18,
+              195.74
+            ]
+          }
+        },
+        {
+          "id": "c7-m4-q3",
+          "number": 3,
+          "questionText": "メールを<u class=\"kanji-target\" data-target=\"true\">じゅしん</u>する",
+          "stem": "メールを<u class=\"kanji-target\" data-target=\"true\">じゅしん</u>する",
+          "targetText": "じゅしん",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">じゅしん</u>",
+          "options": [
+            "受信",
+            "授信",
+            "命信",
+            "並信"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "受信",
+          "explanation": "「じゅしん」の正しい漢字表記は「受信」です。",
+          "sourcePage": 35,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 35,
+            "stemBbox": [
+              60.12,
+              251.78,
+              170.18,
+              262.82
+            ],
+            "optionsBbox": [
+              42.6,
+              274.73,
+              405.02,
+              285.77
+            ],
+            "underlineBbox": [
+              104.18,
+              264.14,
+              148.22,
+              264.74
+            ]
+          }
+        },
+        {
+          "id": "c7-m4-q4",
+          "number": 4,
+          "questionText": "<ruby>誘<rt>さそ</rt></ruby>いを<u class=\"kanji-target\" data-target=\"true\">ことわる</u>",
+          "stem": "<ruby>誘<rt>さそ</rt></ruby>いを<u class=\"kanji-target\" data-target=\"true\">ことわる</u>",
+          "targetText": "ことわる",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">ことわる</u>",
+          "options": [
+            "配る",
+            "断る",
+            "登る",
+            "鳴る"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "断る",
+          "explanation": "「ことわる」の正しい漢字表記は「断る」です。",
+          "sourcePage": 35,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 35,
+            "stemBbox": [
+              60.12,
+              320.81,
+              137.3,
+              331.85
+            ],
+            "optionsBbox": [
+              42.6,
+              343.73,
+              405.02,
+              354.77
+            ],
+            "underlineBbox": [
+              93.26,
+              333.17,
+              137.18,
+              333.77
+            ]
+          }
+        },
+        {
+          "id": "c7-m4-q5",
+          "number": 5,
+          "questionText": "<u class=\"kanji-target\" data-target=\"true\">ちかてつ</u>に乗る",
+          "stem": "<u class=\"kanji-target\" data-target=\"true\">ちかてつ</u>に乗る",
+          "targetText": "ちかてつ",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">ちかてつ</u>",
+          "options": [
+            "地下鉄",
+            "地下銀",
+            "地下鋭",
+            "地下録"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "地下鉄",
+          "explanation": "「ちかてつ」の正しい漢字表記は「地下鉄」です。",
+          "sourcePage": 35,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 35,
+            "stemBbox": [
+              60.12,
+              389.81,
+              137.18,
+              400.85
+            ],
+            "optionsBbox": [
+              42.6,
+              412.73,
+              416.06,
+              423.77
+            ],
+            "underlineBbox": [
+              60.12,
+              402.17,
+              104.18,
+              402.77
+            ]
+          }
+        },
+        {
+          "id": "c7-m4-q6",
+          "number": 6,
+          "questionText": "商品を<u class=\"kanji-target\" data-target=\"true\">ゆにゅう</u>する",
+          "stem": "商品を<u class=\"kanji-target\" data-target=\"true\">ゆにゅう</u>する",
+          "targetText": "ゆにゅう",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">ゆにゅう</u>",
+          "options": [
+            "収入",
+            "提出",
+            "輸入",
+            "輸出"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "輸入",
+          "explanation": "「ゆにゅう」の正しい漢字表記は「輸入」です。",
+          "sourcePage": 35,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 35,
+            "stemBbox": [
+              60.12,
+              458.83,
+              159.26,
+              469.87
+            ],
+            "optionsBbox": [
+              42.6,
+              481.75,
+              405.02,
+              492.79
+            ],
+            "underlineBbox": [
+              93.14,
+              471.19,
+              137.18,
+              471.79
+            ]
+          }
+        },
+        {
+          "id": "c7-m4-q7",
+          "number": 7,
+          "questionText": "内容を<u class=\"kanji-target\" data-target=\"true\">たしかめる</u>",
+          "stem": "内容を<u class=\"kanji-target\" data-target=\"true\">たしかめる</u>",
+          "targetText": "たしかめる",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">たしかめる</u>",
+          "options": [
+            "難かめる",
+            "雑かめる",
+            "職かめる",
+            "確かめる"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 4,
+          "correctIndex": 3,
+          "correctOption": "確かめる",
+          "explanation": "「たしかめる」の正しい漢字表記は「確かめる」です。",
+          "sourcePage": 35,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 35,
+            "stemBbox": [
+              60.12,
+              527.83,
+              148.22,
+              538.87
+            ],
+            "optionsBbox": [
+              42.6,
+              550.75,
+              426.98,
+              561.79
+            ],
+            "underlineBbox": [
+              93.14,
+              540.19,
+              148.1,
+              540.79
+            ]
+          }
+        },
+        {
+          "id": "c7-m4-q8",
+          "number": 8,
+          "questionText": "<u class=\"kanji-target\" data-target=\"true\">きょうかん</u>を呼ぶ",
+          "stem": "<u class=\"kanji-target\" data-target=\"true\">きょうかん</u>を呼ぶ",
+          "targetText": "きょうかん",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">きょうかん</u>",
+          "options": [
+            "共同",
+            "共感",
+            "共通",
+            "共有"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 2,
+          "correctIndex": 1,
+          "correctOption": "共感",
+          "explanation": "「きょうかん」の正しい漢字表記は「共感」です。",
+          "sourcePage": 35,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 35,
+            "stemBbox": [
+              60.12,
+              596.83,
+              148.22,
+              607.87
+            ],
+            "optionsBbox": [
+              42.6,
+              619.75,
+              405.02,
+              630.79
+            ],
+            "underlineBbox": [
+              60.12,
+              609.19,
+              115.22,
+              609.79
+            ]
+          }
+        },
+        {
+          "id": "c7-m4-q9",
+          "number": 9,
+          "questionText": "<u class=\"kanji-target\" data-target=\"true\">しんちょう</u>が<ruby>伸<rt>の</rt></ruby>びる",
+          "stem": "<u class=\"kanji-target\" data-target=\"true\">しんちょう</u>が<ruby>伸<rt>の</rt></ruby>びる",
+          "targetText": "しんちょう",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">しんちょう</u>",
+          "options": [
+            "身長",
+            "特長",
+            "延長",
+            "成長"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 1,
+          "correctIndex": 0,
+          "correctOption": "身長",
+          "explanation": "「しんちょう」の正しい漢字表記は「身長」です。",
+          "sourcePage": 35,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 35,
+            "stemBbox": [
+              60.12,
+              665.86,
+              159.26,
+              676.9
+            ],
+            "optionsBbox": [
+              42.6,
+              688.78,
+              405.02,
+              699.82
+            ],
+            "underlineBbox": [
+              60.12,
+              678.22,
+              115.22,
+              678.82
+            ]
+          }
+        },
+        {
+          "id": "c7-m4-q10",
+          "number": 10,
+          "questionText": "資料を<u class=\"kanji-target\" data-target=\"true\">くばる</u>",
+          "stem": "資料を<u class=\"kanji-target\" data-target=\"true\">くばる</u>",
+          "targetText": "くばる",
+          "targetMarkup": "<u class=\"kanji-target\" data-target=\"true\">くばる</u>",
+          "options": [
+            "量る",
+            "参る",
+            "配る",
+            "断る"
+          ],
+          "sourceOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "displayOptionLabels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correct": 3,
+          "correctIndex": 2,
+          "correctOption": "配る",
+          "explanation": "「くばる」の正しい漢字表記は「配る」です。",
+          "sourcePage": 35,
+          "sourceReviewFlags": [],
+          "source": {
+            "pdfPage": 35,
+            "stemBbox": [
+              63.74,
+              734.86,
+              129.74,
+              745.9
+            ],
+            "optionsBbox": [
+              42.6,
+              757.78,
+              405.02,
+              768.82
+            ],
+            "underlineBbox": [
+              96.74,
+              747.22,
+              129.62,
+              747.82
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

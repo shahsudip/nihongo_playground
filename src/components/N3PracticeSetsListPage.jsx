@@ -3,39 +3,19 @@ import { Link, useLocation } from 'react-router-dom';
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext.jsx';
+import {
+  getQuestionGroupProgress,
+  selectPreferredAttempt,
+  summarizeProgress,
+} from '../utils/bookProgress.js';
 
 const BOOK_ID = 'jlpt-n3-practice-sets';
-const MASTERY_RATIO = 0.9;
 
 const STATUS_LABELS = {
   'not-started': 'Not started',
   'in-progress': 'In progress',
   completed: 'Completed',
   mastered: 'Mastered',
-};
-
-const clamp = (value, minimum, maximum) => Math.min(Math.max(value, minimum), maximum);
-
-const getRecordTime = (record) => {
-  const value = record?.timestamp || record?.updatedAt || record?.createdAt;
-  if (value && typeof value.toMillis === 'function') return value.toMillis();
-  const parsed = Date.parse(value || '');
-  return Number.isFinite(parsed) ? parsed : 0;
-};
-
-const selectLatestRecord = (currentRecord, incomingRecord) => {
-  if (!currentRecord) return incomingRecord;
-  if (!incomingRecord) return currentRecord;
-
-  const currentTime = getRecordTime(currentRecord);
-  const incomingTime = getRecordTime(incomingRecord);
-  if (incomingTime !== currentTime) {
-    return incomingTime > currentTime ? incomingRecord : currentRecord;
-  }
-
-  return Number(incomingRecord.answered || 0) >= Number(currentRecord.answered || 0)
-    ? incomingRecord
-    : currentRecord;
 };
 
 const loadLocalHistory = () => {
@@ -46,7 +26,7 @@ const loadLocalHistory = () => {
     return records.reduce((historyMap, record) => {
       const quizId = record?.quizId || record?.id;
       if (quizId?.startsWith(BOOK_ID)) {
-        historyMap[quizId] = selectLatestRecord(historyMap[quizId], record);
+        historyMap[quizId] = selectPreferredAttempt(historyMap[quizId], record);
       }
       return historyMap;
     }, {});
@@ -56,65 +36,6 @@ const loadLocalHistory = () => {
   }
 };
 
-const emptySectionProgress = (total) => ({
-  total,
-  answered: 0,
-  score: 0,
-  completionPercent: 0,
-  accuracyPercent: 0,
-  status: 'not-started',
-  isCompleted: false,
-  isMastered: false,
-});
-
-const getSectionProgress = (questions, sectionRecord, fullRecord) => {
-  const total = questions.length;
-  if (total === 0) return emptySectionProgress(0);
-
-  const record = sectionRecord || fullRecord;
-  const questionMap = new Map(questions.map(question => [String(question.id), question]));
-  const matchingAnswers = Object.entries(record?.answers || {})
-    .filter(([questionId]) => questionMap.has(String(questionId)));
-  const usesFullRecord = !sectionRecord && Boolean(fullRecord);
-
-  if (!record || (usesFullRecord && matchingAnswers.length === 0)) {
-    return emptySectionProgress(total);
-  }
-
-  const recordedAnswered = sectionRecord ? Number(sectionRecord.answered || 0) : 0;
-  const answered = clamp(Math.max(recordedAnswered, matchingAnswers.length), 0, total);
-  const derivedScore = matchingAnswers.reduce((score, [questionId, answer]) => {
-    const question = questionMap.get(String(questionId));
-    return score + (question && Number(answer) === Number(question.correctIndex) ? 1 : 0);
-  }, 0);
-  const recordedScore = sectionRecord && Number.isFinite(Number(sectionRecord.score))
-    ? Number(sectionRecord.score)
-    : derivedScore;
-  const score = clamp(recordedScore, 0, answered);
-  const completionPercent = Math.round((answered / total) * 100);
-  const accuracyPercent = answered > 0 ? Math.round((score / answered) * 100) : 0;
-  const isCompleted = answered >= total;
-  const isMastered = isCompleted && score / total > MASTERY_RATIO;
-  const status = isMastered
-    ? 'mastered'
-    : isCompleted
-      ? 'completed'
-      : answered > 0
-        ? 'in-progress'
-        : 'not-started';
-
-  return {
-    total,
-    answered,
-    score,
-    completionPercent,
-    accuracyPercent,
-    status,
-    isCompleted,
-    isMastered,
-  };
-};
-
 const getSetProgress = (set, userHistory) => {
   const fullKey = `${BOOK_ID}-${set.id}`;
   const vocabularyKey = `${BOOK_ID}-${set.id}-vocabulary-kanji`;
@@ -122,26 +43,25 @@ const getSetProgress = (set, userHistory) => {
   const grammarReadingKey = `${BOOK_ID}-${set.id}-grammar-reading`;
   const fullRecord = userHistory[fullKey];
   const vocabularyRecord = userHistory[vocabularyKey];
-  const grammarRecord = selectLatestRecord(userHistory[grammarKey], userHistory[grammarReadingKey]);
+  const grammarRecords = [userHistory[grammarKey], userHistory[grammarReadingKey]];
   const vocabularyQuestions = set.sections?.['vocabulary-kanji']?.questions || [];
   const grammarQuestions = set.sections?.['grammar-reading']?.questions || [];
-  const vocabulary = getSectionProgress(vocabularyQuestions, vocabularyRecord, fullRecord);
-  const grammar = getSectionProgress(grammarQuestions, grammarRecord, fullRecord);
+  const vocabulary = getQuestionGroupProgress(vocabularyQuestions, {
+    scopedRecords: [vocabularyRecord],
+    fullRecords: [fullRecord],
+  });
+  const grammar = getQuestionGroupProgress(grammarQuestions, {
+    scopedRecords: grammarRecords,
+    fullRecords: [fullRecord],
+  });
   const sections = [vocabulary, grammar].filter(section => section.total > 0);
-  const total = sections.reduce((sum, section) => sum + section.total, 0);
-  const answered = sections.reduce((sum, section) => sum + section.answered, 0);
-  const isCompleted = sections.length > 0 && sections.every(section => section.isCompleted);
-  const isMastered = sections.length > 0 && sections.every(section => section.isMastered);
+  const summary = summarizeProgress(sections);
 
   return {
+    ...summary,
     vocabulary,
     grammar,
-    total,
-    answered,
-    completionPercent: total > 0 ? Math.round((answered / total) * 100) : 0,
-    isAttempted: answered > 0,
-    isCompleted,
-    isMastered,
+    isAttempted: summary.answered > 0,
   };
 };
 
@@ -215,7 +135,7 @@ const N3PracticeSetsListPage = () => {
               const data = historyDoc.data();
               const quizId = data.quizId || historyDoc.id;
               if (quizId.startsWith(BOOK_ID)) {
-                historyMap[quizId] = selectLatestRecord(historyMap[quizId], data);
+                historyMap[quizId] = selectPreferredAttempt(historyMap[quizId], data);
               }
             });
             setUserHistory(historyMap);
@@ -339,13 +259,14 @@ const N3PracticeSetsListPage = () => {
             key={set.id}
             className={`practice-set-card ${progress.isMastered ? 'is-mastered' : progress.isCompleted ? 'is-completed' : progress.isAttempted ? 'is-progress' : ''}`}
           >
-            {progress.isAttempted && (
-              <div className="set-card-top">
-                <div className="set-card-top-badges">
-                  <span className="set-card-attempt-badge">{progress.completionPercent}% attempted</span>
-                </div>
+            <div className="set-card-top">
+              <span className={`set-card-status-badge status-${progress.status}`}>
+                {STATUS_LABELS[progress.status]}
+              </span>
+              <div className="set-card-top-badges">
+                <span className="set-card-attempt-badge">{progress.completionPercent}% complete</span>
               </div>
-            )}
+            </div>
 
             <div className="set-card-body">
               <h3 className="set-card-title">{set.title}</h3>

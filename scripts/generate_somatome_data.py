@@ -229,100 +229,165 @@ day4 = {
   "title": "Week 1 - Day 4: 試験要項",
   "learning_focus": {
     "title": "似ている言葉に注意しよう！",
-    "subtitle": "Pay attention to similar words!",
+    "subtitle": "Pay attention to similar words! / 注意相似的词汇！ / 비슷한 말에 주의합시다!",
     "comic": {
-      "situation": "「〜まで」と「〜までに」の違いについて説明している。",
-      "dialogue": [
-        {"speaker": "鳥", "text": "「10日まで」と「10日までに」はどう違うの？"},
-        {"speaker": "先生鳥", "text": "「10日まで受け付けます」は10日まで受付が続く（継続）。"},
-        {"speaker": "先生鳥", "text": "「10日までに提出してください」は10日より前のどこかの時点で提出する（期限・完了）。"}
-      ]
+      "sign": "レポートは 7月31日までに提出すること",
+      "text1": "レポートは 7月31日までに提出しないといけないって。",
+      "text2": "7月31日って、明日だ！",
+      "note": "「〜まで」と「〜までに」の違いに注意しよう。"
     }
   },
   "vocabulary": [
-    {"word": "〜まで", "reading": "〜まで", "meaning": "until ~ (action continues up to that point)", "example": "10日まで受け付けます"},
-    {"word": "〜までに", "reading": "〜までに", "meaning": "by / before ~ (deadline/action must be completed before or on that time)", "example": "10日までに提出してください"},
-    {"word": "今回の〜", "reading": "こんかいの〜", "meaning": "this time's ~", "example": "今回の試験"},
-    {"word": "今度", "reading": "こんど", "meaning": "next time / this time", "example": "今度（＝次回）のテストはがんばろう"},
-    {"word": "今回／今度", "reading": "こんかい／こんど", "meaning": "this time", "example": "今回／今度のテストは難しかった"}
+    {
+      "word": "10日まで受け付けます。",
+      "reading": "とおかまでうけつけます",
+      "meaning": "It will be accepted until the 10th. / 报名截止到10日为止。 / 10일까지 접수합니다.",
+      "example": "10日まで受け付けます。"
+    },
+    {
+      "word": "10日までに提出してください。",
+      "reading": "とおかまでにていしゅつしてください",
+      "meaning": "It must be submitted by the 10th. / 请在10日之前提交。 / 10일까지는 제출해 주십시오.",
+      "example": "10日までに提出してください。"
+    },
+    {
+      "word": "今回の〜（＝何度も行われている中で、現在の〜）",
+      "reading": "こんかいの〜",
+      "meaning": "This time ... (used for things that occur repeatedly) / 这次的〜 / 이번의~",
+      "example": "今回の試験"
+    },
+    {
+      "word": "今度（＝次回）のテストはがんばろう。",
+      "reading": "こんど（＝じかい）のテストはがんばろう",
+      "meaning": "I will do my best on the next (coming) test. / 下次的考试要一起努力哦！ / 그 다음 (=다음 회) 의 테스트에 열심히 해야지.",
+      "example": "今度（＝次回）のテストはがんばろう。"
+    },
+    {
+      "word": "今回／今度のテストは難しかった。",
+      "reading": "こんかい／こんどのテストはむずかしかった",
+      "meaning": "The test this time was difficult. / 这次的考试真难。 / 이번 회 / 이번 테스트는 어려웠다.",
+      "example": "今回／今度のテストは難しかった。"
+    }
+  ],
+  "grammar_notes": [
+    "＊「今回」「今度」は終わったばかりのものにも使う。( 'konkai' and 'kondo' are also used for things just finished. / 「今回」、「今度」也可以用于刚发生过的事。 / 「이번 회」, 「이번」은 막 끝난 것에도 사용한다. )"
   ],
   "practice": {
     "title": "れんしゅう",
     "instruction": "次の会話文を読んで、後の文から正しいものを二つ選ぼう。(答えは次のページ)",
     "conversation": [
-      {"speaker": "男子学生", "text": "先週の日本語文法の授業、休んじゃったんだけど、試験について何か先生言ってた？"},
-      {"speaker": "女子学生", "text": "うん、期末試験は来週の水曜日で、レポートの提出締め切りは今週の金曜日の午後5時までだって。"},
-      {"speaker": "男子学生", "text": "えっ、金曜日までにレポート出さなきゃいけないの？大変だ！ノート見せてもらってもいい？"},
-      {"speaker": "女子学生", "text": "いいよ。でも、レポートは窓口に直接提出しなきゃいけなくて、メールでの提出は不可だから気をつけてね。"},
-      {"speaker": "男子学生", "text": "ありがとう、助かるよ！"}
+      {
+        "speaker": "男子学生",
+        "text": "もうすぐ、<ruby>試験<rt>しけん</rt></ruby>だね。ノート、<ruby>貸<rt>か</rt></ruby>してくれない？"
+      },
+      {
+        "speaker": "女子学生",
+        "text": "いいけど、<ruby>土曜日<rt>どようび</rt></ruby>までに<ruby>返<rt>かえ</rt></ruby>してよね。<ruby>私<rt>わたし</rt></ruby>も<ruby>試験勉強<rt>しけんべんきょう</rt></ruby>しないといけないから。"
+      },
+      {
+        "speaker": "男子学生",
+        "text": "うん、わかった。ところで、レポート、<ruby>書<rt>か</rt></ruby>いてる？ おれ、まだ１ページしか<ruby>書<rt>か</rt></ruby>いていないんだ。"
+      },
+      {
+        "speaker": "女子学生",
+        "text": "わー、それは<ruby>大変<rt>たいへん</rt></ruby>！ 31<ruby>日<rt>にち</rt></ruby>までに<ruby>提出<rt>ていしゅつ</rt></ruby>しない(※1)と、<ruby>減点<rt>げんてん</rt></ruby>(※2)って<ruby>書<rt>か</rt></ruby>いてあるし、もし<ruby>出<rt>だ</rt></ruby>さなかったら、<ruby>単位<rt>たんい</rt></ruby>(※3)、もらえないよ。"
+      }
+    ],
+    "vocab_notes": [
+      {
+        "word": "(※1) <ruby>提出<rt>ていしゅつ</rt></ruby>する",
+        "meaning": "to submit, hand in　提出　제출하다"
+      },
+      {
+        "word": "(※2) <ruby>減点<rt>げんてん</rt></ruby>",
+        "meaning": "points taken off　扣分　감점"
+      },
+      {
+        "word": "(※3) <ruby>単位<rt>たんい</rt></ruby>",
+        "meaning": "a credit　学分　(대학 등의) 학점"
+      }
     ],
     "options": [
-      "1 レポートは今週の金曜日の午後5時までに提出しなければならない。",
-      "2 レポートはメールで送って提出することができる。",
-      "3 期末試験は今週の金曜日に行われる。",
-      "4 男子学生は先週の授業を休んだのでノートを借りる。",
-      "5 女子学生はレポートの提出期限を知らない。"
+      "1 <ruby>男子学生<rt>だんしがくせい</rt></ruby>と<ruby>女子学生<rt>じょしがくせい</rt></ruby>は<ruby>同<rt>おな</rt></ruby>じ<ruby>試験<rt>しけん</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける。",
+      "2 これから<ruby>男子学生<rt>だんしがくせい</rt></ruby>は<ruby>女子学生<rt>じょしがくせい</rt></ruby>にノートを<ruby>貸<rt>か</rt></ruby>してあげる。",
+      "3 <ruby>男子学生<rt>だんしがくせい</rt></ruby>はレポートを<ruby>書<rt>か</rt></ruby>かないつもりである。",
+      "4 レポートは31<ruby>日<rt>にち</rt></ruby>に<ruby>提出<rt>ていしゅつ</rt></ruby>すれば、<ruby>減点<rt>げんてん</rt></ruby>にならない。",
+      "5 レポートの<ruby>期限<rt>きげん</rt></ruby>に<ruby>遅<rt>おく</rt></ruby>れた<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>単位<rt>たんい</rt></ruby>がもらえない。"
     ],
-    "correct_answers": [1, 4],
+    "correct_answers": [
+      1,
+      4
+    ],
     "options_explanation": {
-      "1": "正しい。女子学生が「金曜日の午後5時まで」、男子学生が「金曜日までにレポート出さなきゃいけないの？」と確認しています。",
-      "2": "間違い。女子学生が「メールでの提出は不可」と言っています。",
-      "3": "間違い。期末試験は「来週の水曜日」です。",
-      "4": "正しい。男子学生が「先週の授業休んじゃった」「ノート見せてもらってもいい？」と頼んでいます。",
-      "5": "間違い。女子学生は期限を把握しており教えてあげています。"
+      "1": "正しい。男子学生が「試験勉強しないといけない」と言っている女子学生にノートを借り、同じ試験を受けることがわかります。",
+      "2": "間違い。男子学生が女子学生からノートを借りるので、「女子学生が男子学生にノートを貸す」が正しいです。",
+      "3": "間違い。男子学生は「まだ1ページしか書いていないんだ」と言っており、書かないつもりではありません。",
+      "4": "正しい。女子学生が「31日までに提出しないと減点」と言っているため、31日に提出すれば減点にはなりません（31日を含む）。",
+      "5": "間違い。31日までに提出しないと減点になりますが、単位がもらえないのは「出さなかった場合」です。"
     }
   },
   "mondai": {
     "title": "もんだい",
-    "instruction": "次の案内を読んで、後の問いに答えなさい。(答えは別冊 p.2)",
+    "instruction": "<ruby>次<rt>つぎ</rt></ruby>の<ruby>掲示<rt>けいじ</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んで、<ruby>後<rt>あと</rt></ruby>の<ruby>問<rt>と</rt></ruby>いに<ruby>答<rt>こた</rt></ruby>えなさい。(答えは別冊 p.2)",
     "notice": {
-      "heading": "日本語文法Ⅱ 試験とレポートの提出について",
-      "subheading": "担当：佐藤教授",
+      "heading": "<ruby>日本語文法Ⅱ<rt>にほんごぶんぽう</rt></ruby>　<u><ruby>試験<rt>しけん</rt></ruby>とレポートの<ruby>提出<rt>ていしゅつ</rt></ruby>について</u>",
+      "author": "<ruby>中田<rt>なかた</rt></ruby> <ruby>敬一<rt>けいいち</rt></ruby>",
+      "html": "<div class=\"relative font-sans text-gray-900 dark:text-gray-100\">\n  <!-- Corner Magnets -->\n  <span class=\"absolute -top-3 -left-3 w-4 h-4 rounded-full bg-slate-500 dark:bg-slate-400 border border-slate-700 shadow pointer-events-none\"></span>\n  <span class=\"absolute -top-3 -right-3 w-4 h-4 rounded-full bg-slate-500 dark:bg-slate-400 border border-slate-700 shadow pointer-events-none\"></span>\n  <span class=\"absolute -bottom-3 -left-3 w-4 h-4 rounded-full bg-slate-500 dark:bg-slate-400 border border-slate-700 shadow pointer-events-none\"></span>\n  <span class=\"absolute -bottom-3 -right-3 w-4 h-4 rounded-full bg-slate-500 dark:bg-slate-400 border border-slate-700 shadow pointer-events-none\"></span>\n\n  <!-- Notice Title -->\n  <div class=\"text-center font-bold text-xl sm:text-2xl pb-1 mb-1 tracking-wider\">\n    <u class=\"underline decoration-2\"><ruby>日本語文法Ⅱ<rt>にほんごぶんぽう</rt></ruby>　<ruby>試験<rt>しけん</rt></ruby>とレポートの<ruby>提出<rt>ていしゅつ</rt></ruby>について</u>\n  </div>\n\n  <!-- Instructor Name -->\n  <div class=\"text-right text-base sm:text-lg mb-5 font-medium pr-1\">\n    <ruby>中田<rt>なかた</rt></ruby> <ruby>敬一<rt>けいいち</rt></ruby>\n  </div>\n\n  <!-- Section 1: 試験について -->\n  <div class=\"mb-5\">\n    <div class=\"font-bold text-base sm:text-lg mb-1\">【<ruby>試験<rt>しけん</rt></ruby>について】</div>\n    <ul class=\"space-y-1.5 pl-1 leading-relaxed\">\n      <li class=\"flex items-start gap-1.5\">\n        <span class=\"font-bold shrink-0\">・</span>\n        <span><ruby>授業<rt>じゅぎょう</rt></ruby>の<ruby>最終日<rt>さいしゅうび</rt></ruby>に<ruby>試験<rt>しけん</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>います。</span>\n      </li>\n      <li class=\"flex items-start gap-1.5\">\n        <span class=\"font-bold shrink-0\">・</span>\n        <span><ruby>試験範囲<rt>しけんはんい</rt></ruby>は、<ruby>教科書<rt>きょうかしょ</rt></ruby>の５<ruby>課<rt>か</rt></ruby>～９<ruby>課<rt>か</rt></ruby>です。（ただし、P. 35～39 までは<ruby>除<rt>のぞ</rt></ruby>きます*。）</span>\n      </li>\n      <li class=\"flex items-start gap-1.5 text-sm sm:text-base text-gray-700 dark:text-gray-300 mt-1 pl-1\">\n        <span class=\"font-bold shrink-0\">※</span>\n        <span>これ<ruby>以外<rt>いがい</rt></ruby>に、<ruby>授業<rt>じゅぎょう</rt></ruby>で<ruby>話<rt>はな</rt></ruby>したことも<ruby>出<rt>だ</rt></ruby>しますので、<ruby>授業<rt>じゅぎょう</rt></ruby>のノートをしっかり<ruby>見直<rt>みなお</rt></ruby>しておいてください。</span>\n      </li>\n    </ul>\n  </div>\n\n  <!-- Section 2: レポートについて -->\n  <div class=\"mb-3\">\n    <div class=\"font-bold text-base sm:text-lg mb-1\">【レポートについて】</div>\n    <ul class=\"space-y-1.5 pl-1 mb-3 leading-relaxed\">\n      <li class=\"flex items-start gap-1.5\">\n        <span class=\"font-bold shrink-0\">・</span>\n        <span><ruby>内容<rt>ないよう</rt></ruby>については、<ruby>今学期<rt>こんがっき</rt></ruby>の１<ruby>週目<rt>しゅうめ</rt></ruby>に<ruby>渡<rt>わた</rt></ruby>したプリントで<u class=\"underline font-bold decoration-2\"><ruby>伝<rt>つた</rt></ruby>えた<ruby>通<rt>とお</rt></ruby>り</u>です。</span>\n      </li>\n      <li class=\"flex items-start gap-1.5\">\n        <span class=\"font-bold shrink-0\">・</span>\n        <span><ruby>提出期限<rt>ていしゅつきげん</rt></ruby>は、７<ruby>月<rt>がつ</rt></ruby>３１<ruby>日<rt>にち</rt></ruby>です。</span>\n      </li>\n    </ul>\n    <div class=\"pl-2 indent-4 sm:indent-6 leading-loose tracking-wide text-[15px] sm:text-base\">\n      <ruby>今回<rt>こんかい</rt></ruby>は、<ruby>試験<rt>しけん</rt></ruby>50% レポート50% という<ruby>配分<rt>はいぶん</rt></ruby>(※1)で<ruby>成績<rt>せいせき</rt></ruby>をつけますので、レポートを<ruby>提出<rt>ていしゅつ</rt></ruby>しない<ruby>場合<rt>ばあい</rt></ruby>は<ruby>単位<rt>たんい</rt></ruby>を<ruby>与<rt>あた</rt></ruby>えません。<ruby>必<rt>かなら</rt></ruby>ず7<ruby>月<rt>がつ</rt></ruby>31<ruby>日<rt>にち</rt></ruby>までに<ruby>提出<rt>ていしゅつ</rt></ruby>してください。<ruby>遅<rt>おく</rt></ruby>れた<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>減点<rt>げんてん</rt></ruby>しますので<ruby>注意<rt>ちゅうい</rt></ruby>してください。なお、<ruby>病気<rt>びょうき</rt></ruby>などの<ruby>理由<rt>りゆう</rt></ruby>で<ruby>試験<rt>しけん</rt></ruby>が<ruby>受<rt>う</rt></ruby>けられなかった<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>上記<rt>じょうき</rt></ruby>の(※2) レポートとは<ruby>別<rt>べつ</rt></ruby>にレポートを<ruby>提出<rt>ていしゅつ</rt></ruby>しなければなりません**。<ruby>何<rt>なに</rt></ruby>か<ruby>質問<rt>しつもん</rt></ruby>があれば、<ruby>中田<rt>なかた</rt></ruby>まで<ruby>連絡<rt>れんらく</rt></ruby>してください。\n    </div>\n  </div>\n</div>",
       "content": [
-        "1. 期末試験について",
-        "・日時：7月20日（水） 10:30〜12:00（3号館201教室）",
-        "・持ち物：学生証、筆記用具（辞書や教科書の持ち込みは不可）",
-        "2. レポートの提出について",
-        "・提出期限：7月15日（金） 17:00厳守",
-        "・提出場所：教務課窓口（レポート提出BOX）",
-        "・注意：郵送やメールによる提出は一切受け付けません。期限を過ぎたレポートは無効となります。"
+        "【<ruby>試験<rt>しけん</rt></ruby>について】",
+        "・<ruby>授業<rt>じゅぎょう</rt></ruby>の<ruby>最終日<rt>さいしゅうび</rt></ruby>に<ruby>試験<rt>しけん</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>います。",
+        "・<ruby>試験範囲<rt>しけんはんい</rt></ruby>は、<ruby>教科書<rt>きょうかしょ</rt></ruby>の５<ruby>課<rt>か</rt></ruby>～９<ruby>課<rt>か</rt></ruby>です。（ただし、P. 35～39 までは<ruby>除<rt>のぞ</rt></ruby>きます*。）",
+        "※ これ<ruby>以外<rt>いがい</rt></ruby>に、<ruby>授業<rt>じゅぎょう</rt></ruby>で<ruby>話<rt>はな</rt></ruby>したことも<ruby>出<rt>だ</rt></ruby>しますので、<ruby>授業<rt>じゅぎょう</rt></ruby>のノートをしっかり<ruby>見直<rt>みなお</rt></ruby>しておいてください。",
+        "【レポートについて】",
+        "・<ruby>内容<rt>ないよう</rt></ruby>については、<ruby>今学期<rt>こんがっき</rt></ruby>の１<ruby>週目<rt>しゅうめ</rt></ruby>に<ruby>渡<rt>わた</rt></ruby>したプリントで<u><ruby>伝<rt>つた</rt></ruby>えた<ruby>通<rt>とお</rt></ruby>り</u>です。",
+        "・<ruby>提出期限<rt>ていしゅつきげん</rt></ruby>は、７<ruby>月<rt>がつ</rt></ruby>３１<ruby>日<rt>にち</rt></ruby>です。",
+        "　<ruby>今回<rt>こんかい</rt></ruby>は、<ruby>試験<rt>しけん</rt></ruby>50% レポート50% という<ruby>配分<rt>はいぶん</rt></ruby>(※1)で<ruby>成績<rt>せいせき</rt></ruby>をつけますので、レポートを<ruby>提出<rt>ていしゅつ</rt></ruby>しない<ruby>場合<rt>ばあい</rt></ruby>は<ruby>単位<rt>たんい</rt></ruby>を<ruby>与<rt>あた</rt></ruby>えません。<ruby>必<rt>かなら</rt></ruby>ず7<ruby>月<rt>がつ</rt></ruby>31<ruby>日<rt>にち</rt></ruby>までに<ruby>提出<rt>ていしゅつ</rt></ruby>してください。<ruby>遅<rt>おく</rt></ruby>れた<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>減点<rt>げんてん</rt></ruby>しますので<ruby>注意<rt>ちゅうい</rt></ruby>してください。なお、<ruby>病気<rt>びょうき</rt></ruby>などの<ruby>理由<rt>りゆう</rt></ruby>で<ruby>試験<rt>しけん</rt></ruby>が<ruby>受<rt>う</rt></ruby>けられなかった<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>上記<rt>じょうき</rt></ruby>の(※2) レポートとは<ruby>別<rt>べつ</rt></ruby>にレポートを<ruby>提出<rt>ていしゅつ</rt></ruby>しなければなりません**。<ruby>何<rt>なに</rt></ruby>か<ruby>質問<rt>しつもん</rt></ruby>があれば、<ruby>中田<rt>なかた</rt></ruby>まで<ruby>連絡<rt>れんらく</rt></ruby>してください。"
       ]
     },
     "notice_vocabulary": [
-      {"word": "厳守", "reading": "げんしゅ", "meaning": "strict adherence / strictly observing (the deadline)"},
-      {"word": "持ち込み", "reading": "もちこみ", "meaning": "bringing in (materials/items)"},
-      {"word": "一切", "reading": "いっさい", "meaning": "absolutely / not at all (with negative)"},
-      {"word": "無効", "reading": "むこう", "meaning": "invalid / void"}
+      {
+        "word": "(※1) <ruby>配分<rt>はいぶん</rt></ruby>",
+        "reading": "はいぶん",
+        "meaning": "a distribution　分配　배분"
+      },
+      {
+        "word": "(※2) <ruby>上記<rt>じょうき</rt></ruby>の",
+        "reading": "じょうき",
+        "meaning": "above mentioned　上述的　상기의"
+      }
     ],
     "questions": [
       {
         "question_number": 1,
-        "question": "試験のときに持って入ってよいものはどれか。",
+        "question": "<u><ruby>伝<rt>つた</rt></ruby>えた<ruby>通<rt>とお</rt></ruby>り</u>ですとあるが、いつどのように<ruby>伝<rt>つた</rt></ruby>えたか。",
         "options": [
-          "1 教科書とノート",
-          "2 電子辞書と筆記用具",
-          "3 学生証と筆記用具",
-          "4 参考書と学生証"
+          "1 <ruby>今学期<rt>こんがっき</rt></ruby>の１<ruby>週目<rt>しゅうめ</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>のときに、<ruby>教師<rt>きょうし</rt></ruby>が<ruby>話<rt>はな</rt></ruby>した。",
+          "2 ７<ruby>月<rt>がつ</rt></ruby>の<ruby>第<rt>だい</rt></ruby>１<ruby>週目<rt>しゅうめ</rt></ruby>に、<ruby>紙<rt>かみ</rt></ruby>に<ruby>印刷<rt>いんさつ</rt></ruby>したものを<ruby>配<rt>くば</rt></ruby>った。",
+          "3 <ruby>今学期<rt>こんがっき</rt></ruby>の<ruby>最初<rt>さいしょ</rt></ruby>の<ruby>週<rt>しゅう</rt></ruby>に、<ruby>紙<rt>かみ</rt></ruby>に<ruby>印刷<rt>いんさつ</rt></ruby>したものを<ruby>渡<rt>わた</rt></ruby>した。",
+          "4 <ruby>今学期<rt>こんがっき</rt></ruby>の<ruby>初<rt>はじ</rt></ruby>めに、メールで<ruby>知<rt>し</rt></ruby>らせた。"
         ],
         "correct_answer": 3,
-        "explanation": "案内に「持ち物：学生証、筆記用具（辞書や教科書の持ち込みは不可）」とあるため、3が正しいです。"
+        "explanation": "案内の【レポートについて】に「今学期の１週目に渡したプリントで伝えた通りです」とあります。「今学期の１週目」＝「今学期の最初の週」、「プリント」＝「紙に印刷したもの」、「渡した」＝「渡した」なので、3が正解です。"
       },
       {
         "question_number": 2,
-        "question": "レポートの提出方法として正しいものはどれか。",
+        "question": "この<ruby>掲示<rt>けいじ</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>と<u style=\"text-decoration: underline wavy; text-decoration-color: currentColor;\">合っていない</u>ものはどれか。",
         "options": [
-          "1 7月15日の17時以降に教務課へ持参する。",
-          "2 佐藤教授宛てにメールで送付する。",
-          "3 7月20日の試験当日に教室で先生に手渡す。",
-          "4 7月15日の17:00までに教務課の提出BOXに入れる。"
+          "1 <ruby>試験<rt>しけん</rt></ruby>を<ruby>受<rt>う</rt></ruby>けられなかった<ruby>人<rt>ひと</rt></ruby>は、２<ruby>種類<rt>しゅるい</rt></ruby>のレポートを<ruby>出<rt>だ</rt></ruby>さなければならない。",
+          "2 <ruby>試験<rt>しけん</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける<ruby>人<rt>ひと</rt></ruby>は、１<ruby>種類<rt>しゅるい</rt></ruby>のレポートを<ruby>書<rt>か</rt></ruby>くだけでよい。",
+          "3 <ruby>試験<rt>しけん</rt></ruby>で<ruby>満点<rt>まんてん</rt></ruby>を<ruby>取<rt>と</rt></ruby>っても、レポートを<ruby>出<rt>だ</rt></ruby>さない<ruby>人<rt>ひと</rt></ruby>は<ruby>単位<rt>たんい</rt></ruby>がもらえない。",
+          "4 <ruby>試験<rt>しけん</rt></ruby>で<ruby>満点<rt>まんてん</rt></ruby>を<ruby>取<rt>と</rt></ruby>れば、レポートを<ruby>出<rt>だ</rt></ruby>さなくてもいい。"
         ],
         "correct_answer": 4,
-        "explanation": "「提出期限：7月15日（金） 17:00厳守」「提出場所：教務課窓口（レポート提出BOX）」「メールや郵送は不可」とあるため、4が正しいです。"
+        "explanation": "案内に「今回は、試験50% レポート50% という配分で成績をつけますので、レポートを提出しない場合は単位を与えません」と明記されているため、試験で満点を取ってもレポートを出さなければ単位はもらえません。したがって、4の「レポートを出さなくてもいい」は掲示の内容と合っておらず、4が正解です。"
       }
+    ],
+    "footnotes": [
+      "* Note that this excludes p. 35-39. 但是不包括P.35~P.39页. 35페이지부터 39페이지까지는 제외합니다.",
+      "** If you are unable to take the test due to illness or other circumstances, you must submit a separate report in addition to the report described above. 如果因疾病等原因而不能参加考试时，除上述论文之外，还必须另外提交一份论文。아울러, 질병 등으로 말미암아 시험을 보지 못한 경우는, 위의 리포트와는 별도로 리포트를 제출하여야 합니다."
     ]
   }
 }
-
 # Week 1 Day 5
 day5 = {
   "bookId": "sou-matome-n3-reading",

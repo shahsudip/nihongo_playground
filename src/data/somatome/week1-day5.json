@@ -9,110 +9,89 @@
     "title": "特別な表現方法に注意しよう！",
     "subtitle": "Pay attention to special expressions!",
     "comic": {
-      "situation": "求人広告などで使われる省略表現や専門表現を学んでいる。",
-      "dialogue": [
-        {
-          "speaker": "鳥",
-          "text": "「要普免」や「時間応相談」ってどういう意味？"
-        },
-        {
-          "speaker": "先生鳥",
-          "text": "「要〜」は〜が必要ということ、「〜不可」は〜はダメということだよ。"
-        },
-        {
-          "speaker": "先生鳥",
-          "text": "「応相談」は相談して決めることができるという意味です。"
-        }
-      ]
+      "text1": "求人案内は、漢字を並べて短くすることがよくあります。",
+      "text2": "数字しかわからないよ……",
+      "sign": "アルバイト募集！\n・週3日〜\n・高校生不可\n・要普通免許",
+      "note": "漢字を並べて短く表現した求人用語（「要普免」「高校生不可」「応相談」など）の意味を正確につかみましょう。"
     }
   },
   "vocabulary": [
     {
-      "word": "要普通免許",
-      "reading": "ようふつうめんきょ",
-      "meaning": "a standard driver's license is required",
-      "example": "要普免（要普通免許）"
+      "word": "要普通免許 → 車の普通運転免許証が必要（＝車の運転ができない人は応募できない）",
+      "reading": "ようふつうめんきょ → くるまのふつううんてんめんきょしょうがひつよう",
+      "meaning": "A driver's license is required"
     },
     {
-      "word": "高校生不可",
-      "reading": "こうこうせいふか",
-      "meaning": "no high school students",
-      "example": "高校生不可"
+      "word": "高校生不可 → 高校生は応募できない",
+      "reading": "こうこうせいふか → こうこうせいはおうぼできない",
+      "meaning": "High school students are not eligible to apply"
     },
     {
-      "word": "時間応相談",
-      "reading": "じかんおうそうだん",
-      "meaning": "working hours are negotiable",
-      "example": "勤務時間応相談"
+      "word": "時間応相談 → 時間は相談に応じる",
+      "reading": "じかんおうそうだん → じかんはそうだんにおうじる",
+      "meaning": "Hours are negotiable"
     },
     {
-      "word": "バイト",
+      "word": "バイト（＝アルバイト）",
       "reading": "バイト",
-      "meaning": "part-time job",
-      "example": "バイトを探す"
+      "meaning": "part-time job"
     },
     {
       "word": "時給",
       "reading": "じきゅう",
-      "meaning": "hourly wage",
-      "example": "時給1,100円"
+      "meaning": "an hourly rate"
     },
     {
       "word": "履歴書",
       "reading": "りれきしょ",
-      "meaning": "resume / CV",
-      "example": "履歴書持参"
+      "meaning": "a resume / curriculum vitae"
     },
     {
       "word": "資格",
       "reading": "しかく",
-      "meaning": "qualifications / certification",
-      "example": "応募資格"
+      "meaning": "qualifications"
     },
     {
       "word": "全額支給",
       "reading": "ぜんがくしきゅう",
-      "meaning": "full payment / fully paid (e.g. transportation expenses)",
-      "example": "交通費全額支給"
+      "meaning": "full amount paid"
     },
     {
       "word": "応募",
       "reading": "おうぼ",
-      "meaning": "application / to apply",
-      "example": "電話で応募する"
+      "meaning": "application"
     }
+  ],
+  "grammar_notes": [
+    "＊求人広告では語句を短縮した表現が多く用いられます。「〜不可」（〜はダメ）、「要〜」（〜が必要）、「全額支給」（全額を会社が支払う）などの意味を把握しましょう。"
   ],
   "practice": {
     "title": "れんしゅう",
     "instruction": "次の会話文を読んで、後の文から正しいものを三つ選ぼう。(答えは次のページ)",
     "conversation": [
       {
-        "speaker": "留学生A",
-        "text": "スーパーまるみやのバイト募集のチラシを見たんだけど、私でも応募できるかな？"
+        "speaker": "<ruby>学生<rt>がくせい</rt></ruby>A",
+        "text": "このバイトの<ruby>面接<rt>めんせつ</rt></ruby>、<ruby>受<rt>う</rt></ruby>けようと<ruby>思<rt>おも</rt></ruby>うんだけど、どう<ruby>思<rt>おも</rt></ruby>う？"
       },
       {
-        "speaker": "留学生B",
-        "text": "どれどれ？「時給1,000円〜、交通費全額支給、週3日からOK、時間応相談」って書いてあるよ。"
+        "speaker": "<ruby>学生<rt>がくせい</rt></ruby>B",
+        "text": "<ruby>時給<rt>じきゅう</rt></ruby>、なかなかいいね。へえ、<ruby>曜日<rt>ようび</rt></ruby>も<ruby>選<rt>えら</rt></ruby>べるんだ。"
       },
       {
-        "speaker": "留学生A",
-        "text": "車の運転免許は持ってないんだけど、大丈夫かな？"
+        "speaker": "<ruby>学生<rt>がくせい</rt></ruby>A",
+        "text": "うん、この<ruby>会社<rt>かいしゃ</rt></ruby>、<ruby>交通費<rt>こうつうひ</rt></ruby>も<ruby>全部<rt>ぜんぶ</rt></ruby>くれるし、<ruby>電話<rt>でんわ</rt></ruby>してみようかな。"
       },
       {
-        "speaker": "留学生B",
-        "text": "「レジ・品出しスタッフ：資格不問（免許不要）」って書いてあるから、免許がなくても大丈夫だよ。高校生は不可だけど、大学生なら問題ないね。"
-      },
-      {
-        "speaker": "留学生A",
-        "text": "よかった！まずは電話して面接の予約をしてみるよ。履歴書も書いておかなきゃね。"
+        "speaker": "<ruby>学生<rt>がくせい</rt></ruby>B",
+        "text": "うん、<ruby>早<rt>はや</rt></ruby>くしたほうがいいよ。そうだ、<ruby>履歴書<rt>りれきしょ</rt></ruby>の<ruby>用紙<rt>ようし</rt></ruby>、<ruby>余<rt>あま</rt></ruby>ってるからあげるよ。"
       }
     ],
     "options": [
-      "1 このアルバイトは高校生でも応募できる。",
-      "2 交通費は全額もらえる。",
-      "3 運転免許を持っていなくても応募できる。",
-      "4 働く曜日や時間は決まっていて相談できない。",
-      "5 面接のときには履歴書が必要である。"
+      "1　<ruby>学生<rt>がくせい</rt></ruby>Aは、<ruby>学生<rt>がくせい</rt></ruby>Bにアルバイトをすすめている。",
+      "2　<ruby>学生<rt>がくせい</rt></ruby>Aは、アルバイトの<ruby>面接<rt>めんせつ</rt></ruby>に<ruby>行<rt>い</rt></ruby>くつもりである。",
+      "3　この<ruby>会社<rt>かいしゃ</rt></ruby>は、<ruby>通勤<rt>つうきん</rt></ruby>にかかった<ruby>費用<rt>ひよう</rt></ruby>を<ruby>全部払<rt>ぜんぶはら</rt></ruby>ってくれる。",
+      "4　<ruby>学生<rt>がくせい</rt></ruby>Aは、<ruby>電話<rt>でんわ</rt></ruby>して<ruby>交通費<rt>こうつうひ</rt></ruby>のことを<ruby>聞<rt>き</rt></ruby>くつもりである。",
+      "5　<ruby>学生<rt>がくせい</rt></ruby>Bは、<ruby>履歴書<rt>りれきしょ</rt></ruby>の<ruby>用紙<rt>ようし</rt></ruby>を<ruby>余分<rt>よぶん</rt></ruby>に<ruby>持<rt>も</rt></ruby>っている。"
     ],
     "correct_answers": [
       2,
@@ -120,11 +99,11 @@
       5
     ],
     "options_explanation": {
-      "1": "間違い。「高校生不可」なので応募できません。",
-      "2": "正しい。「交通費全額支給」と書かれています。",
-      "3": "正しい。「資格不問（免許不要）」なので運転免許がなくても応募できます。",
-      "4": "間違い。「時間応相談」なので勤務日や時間は相談できます。",
-      "5": "正しい。面接には履歴書を準備して持参します（公式解説：面接のときに履歴書が必要である）。"
+      "1": "間違い。学生Aが自分が受けることについて学生Bに意見を聞いています（「受けようと思うんだけど、どう思う？」）。",
+      "2": "正しい。学生Aは「電話してみようかな」と言っており、面接を受ける気でいます。",
+      "3": "正しい。学生Aが「この会社、交通費も全部くれるし」と言っており、交通費全額支給のことです。",
+      "4": "間違い。交通費はすでに全部くれるとわかっているので、それを聞くためではありません。",
+      "5": "正しい。学生Bが「履歴書の用紙、余ってるからあげるよ」と言っています。"
     }
   },
   "mondai": {
@@ -132,58 +111,45 @@
     "instruction": "次の募集広告を読んで、後の問いに答えなさい。(答えは別冊 p.2)",
     "notice": {
       "heading": "アルバイト募集（スーパーまるみや）",
-      "subheading": "明るく元気なスタッフ大募集！未経験者も大歓迎！",
-      "content": [
-        "【職種】レジ・品出しスタッフ（接客・商品陳列）",
-        "【時給】1,000円〜（※22時以降は時給25％アップ）",
-        "【時間】8:00〜23:00の間で1日4時間〜、週3日〜（※時間・曜日応相談）",
-        "【待遇】交通費全額支給、制服貸与、社員割引あり",
-        "【資格】高校生不可、要日本語日常会話レベル、未経験者歓迎",
-        "【応募】まずはお気軽にお電話ください。面接時に写真付き履歴書をご持参ください。"
-      ]
+      "html": "<div class=\"font-sans text-gray-900 dark:text-gray-100 border-2 border-gray-800 dark:border-gray-200 rounded-lg overflow-hidden flex flex-col md:flex-row\">\n  <!-- Vertical Title Banner -->\n  <div class=\"bg-slate-700 text-white p-3 md:p-5 flex md:flex-col items-center justify-center font-bold tracking-widest text-xl md:text-2xl shrink-0\">\n    <div class=\"[writing-mode:horizontal-tb] md:[writing-mode:vertical-rl] font-black\">\n      アルバイト<ruby>募集<rt>ぼしゅう</rt></ruby>\n    </div>\n  </div>\n\n  <!-- Main Content -->\n  <div class=\"p-4 sm:p-5 flex-1 space-y-4 text-sm sm:text-base leading-relaxed\">\n    <!-- Catchphrase -->\n    <div class=\"border-b-2 border-gray-800 dark:border-gray-200 pb-2 text-center\">\n      <div class=\"font-extrabold text-xl sm:text-2xl tracking-wide\">\n        <ruby>経験不問<rt>けいけんふもん</rt></ruby>・<u style=\"text-decoration: underline wavy; text-decoration-color: currentColor;\">やる<ruby>気<rt>き</rt></ruby>のある<ruby>方<rt>かた</rt></ruby></u>(※) <ruby>歓迎<rt>かんげい</rt></ruby>*！\n      </div>\n    </div>\n\n    <!-- Details List -->\n    <div class=\"grid grid-cols-[80px_1fr] sm:grid-cols-[100px_1fr] gap-y-2.5 items-baseline\">\n      <div class=\"font-bold\"><ruby>内容<rt>ないよう</rt></ruby></div>\n      <div><ruby>商品<rt>しょうひん</rt></ruby>の<ruby>管理<rt>かんり</rt></ruby>**</div>\n\n      <div class=\"font-bold\"><ruby>資格<rt>しかく</rt></ruby></div>\n      <div>\n        <div>18<ruby>歳以上<rt>さいいじょう</rt></ruby>35<ruby>歳<rt>さい</rt></ruby>くらいまで</div>\n        <div class=\"font-bold text-red-600 dark:text-red-400 text-xs sm:text-sm mt-0.5\">※ <ruby>高校生不可<rt>こうこうせいふか</rt></ruby></div>\n      </div>\n\n      <div class=\"font-bold\"><ruby>時間<rt>じかん</rt></ruby></div>\n      <div>\n        <div>9:00～18:00　または 10:00～19:00</div>\n        <div class=\"text-xs sm:text-sm text-gray-700 dark:text-gray-300 mt-0.5\">\n          ※ 1<ruby>日<rt>にち</rt></ruby>5<ruby>時間以上<rt>じかんいじょう</rt></ruby>、<ruby>週<rt>しゅう</rt></ruby>3<ruby>日以上可能<rt>みっかいじょうかのう</rt></ruby>な<ruby>方<rt>かた</rt></ruby>（<ruby>曜日応相談<rt>ようびおうそうだん</rt></ruby>）\n        </div>\n      </div>\n\n      <div class=\"font-bold\"><ruby>時給<rt>じきゅう</rt></ruby></div>\n      <div>\n        <span class=\"font-bold text-base sm:text-lg\">850<ruby>円<rt>えん</rt></ruby>～1,000<ruby>円<rt>えん</rt></ruby></span>\n        <span class=\"text-xs sm:text-sm text-gray-700 dark:text-gray-300 ml-2\">（<ruby>交通費全額支給<rt>こうつうひぜんがくしきゅう</rt></ruby>）</span>\n      </div>\n\n      <div class=\"font-bold\"><ruby>応募<rt>おうぼ</rt></ruby></div>\n      <div>\n        <ruby>電話連絡<rt>でんわれんらく</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>、<ruby>面接<rt>めんせつ</rt></ruby>***（<ruby>要履歴書<rt>ようりれきしょ</rt></ruby>）\n      </div>\n    </div>\n\n    <!-- Store Footer -->\n    <div class=\"border-t-2 border-gray-800 dark:border-gray-200 pt-3 text-center\">\n      <div class=\"text-2xl sm:text-3xl font-black tracking-widest mb-1\">\n        スーパーまるみや\n      </div>\n      <div class=\"text-sm sm:text-base font-bold text-gray-700 dark:text-gray-300\">\n        TEL. 045－486－XXXX\n      </div>\n    </div>\n  </div>\n</div>"
     },
     "notice_vocabulary": [
       {
-        "word": "品出し",
-        "reading": "しなだし",
-        "meaning": "stocking shelves / displaying goods"
-      },
-      {
-        "word": "貸与",
-        "reading": "たいよ",
-        "meaning": "lending / loaning (uniforms, etc.)"
-      },
-      {
-        "word": "持参",
-        "reading": "じさん",
-        "meaning": "bringing with oneself"
+        "word": "(※) やる気のある方",
+        "reading": "やるきのあるかた",
+        "meaning": "willing workers"
       }
     ],
     "questions": [
       {
         "question_number": 1,
-        "question": "この募集広告について、合っているものはどれか。",
+        "question": "この<ruby>募集<rt>ぼしゅう</rt></ruby>に<u style=\"text-decoration: underline wavy; text-decoration-color: currentColor;\"><ruby>応募<rt>おうぼ</rt></ruby>できない</u>のはどの場合か。",
         "options": [
-          "1 面接のときに写真付きの履歴書を持っていく必要がある。",
-          "2 高校生でもアルバイトに応募できる。",
-          "3 交通費は一部しか支給されない。",
-          "4 22時以降に働いても時給は変わらない。"
+          "1　<ruby>土日<rt>どにち</rt></ruby>だけ<ruby>働<rt>はたら</rt></ruby>きたい<ruby>人<rt>ひと</rt></ruby>",
+          "2　スーパーで<ruby>働<rt>はたら</rt></ruby>いたことがない<ruby>人<rt>ひと</rt></ruby>",
+          "3　20<ruby>歳<rt>さい</rt></ruby>の<ruby>大学生<rt>だいがくせい</rt></ruby>",
+          "4　<ruby>車<rt>くるま</rt></ruby>の<ruby>免許<rt>めんきょ</rt></ruby>がない<ruby>人<rt>ひと</rt></ruby>"
         ],
         "correct_answer": 1,
-        "explanation": "「面接時に写真付き履歴書をご持参ください」とあるため、1が正しいです。"
+        "explanation": "案内に「週3日以上可能な方」と明記されているため、土日だけ（週2日）働きたい人（1）は応募できません。「経験不問」なので2は可、20歳の大学生は35歳以下かつ高校生ではないので3も可、免許の指定はないので4も応募可能です。"
       },
       {
         "question_number": 2,
-        "question": "勤務条件について合っているものはどれか。",
+        "question": "この<ruby>求人案内<rt>きゅうじんあんない</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>と<u style=\"text-decoration: underline wavy; text-decoration-color: currentColor;\"><ruby>合<rt>あ</rt></ruby>っている</u>ものはどれか。",
         "options": [
-          "1 週に1日だけ働くことができる。",
-          "2 働く時間や曜日は相談して決めることができる。",
-          "3 毎日必ず朝8時から23時まで働かなければならない。",
-          "4 車の運転免許が必ず必要である。"
+          "1　35<ruby>歳<rt>さい</rt></ruby>くらいになったら、<ruby>時給<rt>じきゅう</rt></ruby>は1,000<ruby>円<rt>えん</rt></ruby>になる。",
+          "2　18<ruby>歳<rt>さい</rt></ruby>でも<ruby>高校生<rt>こうこうせい</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>応募<rt>おうぼ</rt></ruby>することができない。",
+          "3　この<ruby>会社<rt>かいしゃ</rt></ruby>は、<ruby>週<rt>しゅう</rt></ruby>に3<ruby>日<rt>にち</rt></ruby>しか<ruby>来<rt>こ</rt></ruby>られない<ruby>人<rt>ひと</rt></ruby>は<ruby>必要<rt>ひつよう</rt></ruby>ではない。",
+          "4　<ruby>応募<rt>おうぼ</rt></ruby>するためには、<ruby>電話<rt>でんわ</rt></ruby>をしてから<ruby>履歴書<rt>りれきしょ</rt></ruby>を<ruby>送<rt>おく</rt></ruby>らなければならない。"
         ],
         "correct_answer": 2,
-        "explanation": "「時間・曜日応相談」とあるため、2が正しいです。"
+        "explanation": "「18歳以上35歳くらいまで ※高校生不可」とあるため、18歳であっても高校生の場合は応募できません（2）。（別冊解答解説：面接のときに履歴書が必要であるため4は誤り、「週3日以上」なので週3日の人は必要であるため3は誤り）。"
       }
+    ],
+    "footnotes": [
+      "* Looking for motivated individuals!",
+      "** inventory",
+      "*** Contact us by phone to set up an interview (A resume must be brought to the interview)."
     ]
   }
 }

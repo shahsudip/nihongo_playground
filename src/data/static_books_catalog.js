@@ -2,6 +2,34 @@
 
 export const STATIC_BOOKS = [
   {
+    id: 'pass-n3-within-20-days',
+    title: 'Pass N3 Within 20 Days',
+    description: 'A focused 20-day JLPT N3 course with daily kanji, vocabulary, grammar, sentence ordering, and passage practice.',
+    level: 'N3',
+    category: 'Mixed',
+    coverImage: '/images/books/pass_n3_within_20_days_cover.png',
+    coverUrl: '/images/books/pass_n3_within_20_days_cover.png',
+    color: 'from-sky-700 to-orange-500',
+    tags: ['N3', 'Kanji', 'Vocabulary', 'Grammar', 'JLPT'],
+    hasDigitalDrill: true,
+    totalChapters: 20,
+    totalQuestions: 1160
+  },
+  {
+    id: 'first-time-jlpt-n3-350-kanji',
+    title: 'First Time JLPT N3 350 Kanji Test',
+    description: 'Seven chapter JLPT N3 kanji workbook with 280 reading and spelling questions covering 350 essential kanji.',
+    level: 'N3',
+    category: 'Kanji',
+    coverImage: '/images/books/first_time_n3_350_kanji_cover.png',
+    coverUrl: '/images/books/first_time_n3_350_kanji_cover.png',
+    color: 'from-blue-700 to-red-600',
+    tags: ['N3', 'Kanji', 'Reading', 'Spelling', 'JLPT'],
+    hasDigitalDrill: true,
+    totalChapters: 7,
+    totalQuestions: 280
+  },
+  {
     id: 'nihongo-no-mori-n3',
     title: 'JLPT N3 この一冊で合格する (日本語の森)',
     description: 'Complete JLPT N3 all-in-one workbook by Nihongo no Mori: Kanji, Vocabulary, Grammar, Reading, and Listening.',
@@ -12,7 +40,9 @@ export const STATIC_BOOKS = [
     color: 'from-emerald-500 to-teal-600',
     tags: ['N3', 'Kanji', 'Vocabulary', 'Grammar', 'Nihongo no Mori'],
     hasDigitalDrill: true,
-    totalChapters: 5,
+    totalChapters: 4,
+    totalSections: 19,
+    totalQuestions: 500,
     customRoute: '/books/nihongo-no-mori-n3'
   },
   {
@@ -175,6 +205,7 @@ export const STATIC_BOOKS = [
     level: 'N3',
     category: 'Chokuzen Taisaku',
     totalChapters: 15,
+    totalQuestions: 870,
     customRoute: '/practice-sets'
   },
   {

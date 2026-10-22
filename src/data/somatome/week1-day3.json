@@ -9,119 +9,92 @@
     "title": "意味を間違えやすい言葉に注意しよう！",
     "subtitle": "Pay attention to tricky expressions!",
     "comic": {
-      "situation": "「以上」「以下」「未満」などの違いについて説明している。",
-      "dialogue": [
-        {
-          "speaker": "鳥",
-          "text": "「以上」や「以下」はその数も入るの？"
-        },
-        {
-          "speaker": "先生鳥",
-          "text": "そう！「以上」「以下」「以内」「以前」「以後」はその数が入ります。"
-        },
-        {
-          "speaker": "先生鳥",
-          "text": "「未満」はその数が入らないよ（その数より下）。"
-        }
-      ]
+      "text1": "1000円割引だって！行こう！行こう！",
+      "text2": "それ、ずっと前のチラシだよ。今は12月だよ！",
+      "sign": "1000円割引！ 9月末まで",
+      "note": "「〜以前／以後／以上／以下」（その数字を含む）と「〜未満」（その数字を含まない）の違いに注意しよう。"
     }
   },
   "vocabulary": [
     {
       "word": "チラシ",
       "reading": "チラシ",
-      "meaning": "a leaflet / a flier",
-      "example": "新聞のチラシ"
+      "meaning": "a leaflet"
     },
     {
-      "word": "〜以前",
-      "reading": "〜いぜん",
-      "meaning": "before / earlier than ~ (including the specified time)",
-      "example": "2000年以前"
+      "word": "5日以内",
+      "reading": "いつかいない",
+      "meaning": "within 5 days"
     },
     {
-      "word": "〜以上",
-      "reading": "〜いじょう",
-      "meaning": "more than / not less than ~ (including the specified number)",
-      "example": "4人以上のグループ"
+      "word": "2000年以前",
+      "reading": "にせんねんいぜん",
+      "meaning": "prior to year 2000"
     },
     {
-      "word": "〜未満",
-      "reading": "〜みまん",
-      "meaning": "less than ~ (not including the specified number)",
-      "example": "14歳未満の少年"
+      "word": "10時以後／以降",
+      "reading": "じゅうじいご／いこう",
+      "meaning": "after 10 o'clock"
     },
     {
-      "word": "〜以内",
-      "reading": "〜いない",
-      "meaning": "within ~ (including the limit)",
-      "example": "5日以内"
+      "word": "4人以上のグループ",
+      "reading": "よにんいじょうのグループ",
+      "meaning": "a group of four or more"
     },
     {
-      "word": "〜以後／以降",
-      "reading": "〜いご／いこう",
-      "meaning": "after / from ~ on (including the specified time)",
-      "example": "10時以後／以降"
+      "word": "30歳以下の女性",
+      "reading": "さんじゅっさいいかのじょせい",
+      "meaning": "women 30 years old or under"
     },
     {
-      "word": "〜以下",
-      "reading": "〜いか",
-      "meaning": "less than / not more than ~ (including the specified number)",
-      "example": "30歳以下の女性"
+      "word": "14歳未満の少年",
+      "reading": "じゅうよんさいみまんのしょうねん",
+      "meaning": "boys under 14 years old"
     },
     {
-      "word": "〜周年記念",
-      "reading": "〜しゅうねんきねん",
-      "meaning": "~th anniversary",
-      "example": "10周年記念"
+      "word": "10周年記念",
+      "reading": "じゅっしゅうねんきねん",
+      "meaning": "the 10th anniversary"
     }
+  ],
+  "grammar_notes": [
+    "＊「以」がつく場合はその前の数字を含みますが、「未満」がつく場合はその前の数字を含みません。( 'I' means it includes the figure in question while 'miman' means it excludes the figure. / 有「以」出现时，表示包含其数字，在「未満」出现时，表示不包含其数字。 / '이(以)'라는 표현이 있으면 앞에 있는 숫자를 포함하지만, '미만(未満)'의 경우는 앞의 숫자를 포함하지 않습니다. )",
+    "▶ 日本の法律は、二十歳未満の人が酒を飲むことを禁じている。( Drinking is illegal in Japan for people below the age of twenty. )"
   ],
   "practice": {
     "title": "れんしゅう",
-    "instruction": "次の会話文を読んで、後の文から正しいものを二つ選ぼう。(答えは次のページ)",
+    "instruction": "次の会話文を読んで、後の文から正しいものを選ぼう。(答えは次のページ)",
     "conversation": [
       {
-        "speaker": "父",
-        "text": "このチラシ見てごらん。「レストラン レオン 10周年記念サービス」だって。"
+        "speaker": "<ruby>父<rt>ちち</rt></ruby>",
+        "text": "このチラシに<ruby>書<rt>か</rt></ruby>いてある「レオン」って、<ruby>駅前<rt>えきまえ</rt></ruby>のレストランのことだよね。……ふーん、<ruby>今<rt>いま</rt></ruby>、10<ruby>周年記念<rt>しゅうねんきねん</rt></ruby>サービス<ruby>期間中<rt>きかんちゅう</rt></ruby>か。<ruby>明日<rt>あした</rt></ruby>、みんなで<ruby>行<rt>い</rt></ruby>こうか。"
       },
       {
-        "speaker": "娘",
-        "text": "わあ、おいしそう！何て書いてあるの？"
+        "speaker": "<ruby>娘<rt>むすめ</rt></ruby>",
+        "text": "うん、<ruby>行<rt>い</rt></ruby>こう、<ruby>行<rt>い</rt></ruby>こう。5,000<ruby>円<rt>えん</rt></ruby><ruby>以上<rt>いじょう</rt></ruby><ruby>食<rt>た</rt></ruby>べたら、1,000<ruby>円割引<rt>えんわりびき</rt></ruby>だし。あそこ、ワインがおいしいんでしょ。<ruby>今度<rt>こんど</rt></ruby>は<ruby>私<rt>わたし</rt></ruby>も<ruby>飲<rt>の</rt></ruby>もうかなあ。"
       },
       {
-        "speaker": "父",
-        "text": "「4人以上でお食事されたお客様に、ワイン1本プレゼント」だって。うちも家族4人で行けばもらえるね。"
-      },
-      {
-        "speaker": "娘",
-        "text": "でも、私とお兄ちゃんはワイン飲めないよ。"
-      },
-      {
-        "speaker": "父",
-        "text": "大丈夫、「お酒が飲めない方や、20歳未満の方にはソフトドリンクをサービス」って書いてあるよ。"
-      },
-      {
-        "speaker": "娘",
-        "text": "やった！じゃあ今度の週末に行こうよ！"
+        "speaker": "<ruby>父<rt>ちち</rt></ruby>",
+        "text": "え？　おまえは、<ruby>二十歳未満<rt>はたちみまん</rt></ruby>なんだから、まだ<ruby>酒<rt>さけ</rt></ruby>はダメだよ。"
       }
     ],
     "options": [
-      "1 このレストランはオープンしてまだ1年以内である。",
-      "2 家族4人でお店に行けば、ワインのサービスが受けられる。",
-      "3 娘とお兄ちゃんもワインを飲むことができる。",
-      "4 20歳の人はソフトドリンクしかもらえない。",
-      "5 20歳未満の子どもにはソフトドリンクのサービスがある。"
+      "1　<ruby>父<rt>ちち</rt></ruby>は「レオン」のある<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>知<rt>し</rt></ruby>らない。",
+      "2　「レオン」は10<ruby>年前<rt>ねんまえ</rt></ruby>に<ruby>開店<rt>かいてん</rt></ruby>した。",
+      "3　<ruby>娘<rt>むすめ</rt></ruby>は「レオン」でワインを<ruby>飲<rt>の</rt></ruby>んだことがある。",
+      "4　<ruby>利用金額<rt>りようきんがく</rt></ruby>がちょうど5,000<ruby>円<rt>えん</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>は、1,000<ruby>円割引<rt>えんわりびき</rt></ruby>にならない。",
+      "5　<ruby>娘<rt>むすめ</rt></ruby>はまだ<ruby>二十歳<rt>はたち</rt></ruby>になっていない。"
     ],
     "correct_answers": [
       2,
       5
     ],
     "options_explanation": {
-      "1": "間違い。「10周年記念」なので、オープンして10年です。",
-      "2": "正しい。「4人以上でお食事されたお客様にワイン1本プレゼント」とあり、家族4人なら対象になります。",
-      "3": "間違い。20歳未満の子どもはお酒（ワイン）を飲めません。",
-      "4": "間違い。「20歳未満」はお酒が飲めないためソフトドリンクですが、20歳以上はワインの対象です。",
-      "5": "正しい。「20歳未満の方にはソフトドリンクをサービス」と明記されています。"
+      "1": "間違い。父は「駅前のレストランのことだよね」と場所を知っています。",
+      "2": "正しい。父が「10周年記念サービス期間中か」と言っており、10年前に開店しました。",
+      "3": "間違い。娘は「今度は私も飲もうかなあ」と言っており、まだ飲んだことはありません。",
+      "4": "間違い。「5,000円以上」はちょうど5,000円を含みますので、1,000円割引になります。",
+      "5": "正しい。父が「おまえは、二十歳未満なんだから、まだ酒はダメだよ」と言っており、まだ20歳になっていません（未満はその数字を含まないため20歳未満＝20歳になっていない）。"
     }
   },
   "mondai": {
@@ -129,62 +102,43 @@
     "instruction": "次のチラシを読んで、後の問いに答えなさい。(答えは別冊 p.2)",
     "notice": {
       "heading": "ワインがおいしいレストラン レオン 10周年記念サービス",
-      "subheading": "期間：201X年4月1日〜4月30日",
-      "content": [
-        "【特典1】4名様以上でディナーをご予約・ご利用のお客様に、特選ワイン1本を無料でサービスいたします。",
-        "（※お酒を召し上がらない方、20歳未満の方には、人数分のソフトドリンクをご用意いたします。）",
-        "【特典2】ランチタイムにお食事をご注文のお客様全員に、自家製アイスクリームをサービス！",
-        "（※お食事をご注文の方に限ります。お飲み物のみのご注文の場合は対象外となります。）",
-        "【特典3】次回使える500円割引券を、お会計3,000円以上のお客様に進呈いたします。"
-      ]
+      "html": "<div class=\"font-sans text-gray-900 dark:text-gray-100 border-2 border-gray-800 dark:border-gray-200 rounded-lg overflow-hidden p-3 sm:p-5\">\n  <!-- Header Banner with Wine Illustration -->\n  <div class=\"bg-slate-700 text-white rounded-t p-3 sm:p-4 mb-4 flex flex-col sm:flex-row items-center justify-between gap-3\">\n    <div class=\"w-28 sm:w-36 shrink-0 flex justify-center\">\n      <img src=\"/nihongo_playground/somatome/w1_d3_wine.png\" alt=\"ワインと料理\" class=\"w-full h-auto object-contain drop-shadow\" />\n    </div>\n    <div class=\"flex-1 text-center sm:text-right\">\n      <div class=\"text-xs sm:text-sm font-semibold tracking-wider text-amber-200 mb-1\">\n        5<ruby>月<rt>がつ</rt></ruby>15<ruby>日<rt>にち</rt></ruby>～6<ruby>月<rt>がつ</rt></ruby>30<ruby>日<rt>にち</rt></ruby>\n      </div>\n      <div class=\"inline-block bg-white text-slate-800 px-3 py-1 rounded-full text-xs sm:text-sm font-bold mb-2 shadow-sm\">\n        ワインがおいしいレストラン\n      </div>\n      <div class=\"text-3xl sm:text-4xl font-extrabold tracking-widest text-white mb-1\">\n        レオン\n      </div>\n      <div class=\"text-lg sm:text-xl font-bold tracking-wider text-amber-300\">\n        10<ruby>周年記念<rt>しゅうねんきねん</rt></ruby>サービス\n      </div>\n    </div>\n  </div>\n\n  <!-- Intro Text -->\n  <div class=\"text-center space-y-1 mb-5 text-sm sm:text-base leading-relaxed\">\n    <div>おかげさまで、「レオン」はこの6<ruby>月<rt>がつ</rt></ruby>に<ruby>開店<rt>かいてん</rt></ruby>10<ruby>周年<rt>しゅうねん</rt></ruby>を<ruby>迎<rt>むか</rt></ruby>えます。</div>\n    <div>みなさまに<ruby>感謝<rt>かんしゃ</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちを<ruby>込<rt>こ</rt></ruby>めまして、</div>\n    <div><ruby>期間中<rt>きかんちゅう</rt></ruby>、<ruby>次<rt>つぎ</rt></ruby>のプレゼントをご<ruby>用意<rt>ようい</rt></ruby>してお<ruby>待<rt>ま</rt></ruby>ちしております！</div>\n  </div>\n\n  <!-- Offer 1 -->\n  <div class=\"bg-amber-50 dark:bg-slate-800 border border-amber-300 dark:border-amber-600 rounded p-3 sm:p-4 mb-3\">\n    <div class=\"flex flex-wrap items-center gap-2 mb-1\">\n      <span class=\"bg-gray-900 text-white dark:bg-amber-500 dark:text-gray-900 text-xs sm:text-sm font-bold px-2.5 py-0.5 rounded-full\">その 1</span>\n      <span class=\"text-base sm:text-lg font-bold\">ご<ruby>利用金額<rt>りようきんがく</rt></ruby>より <span class=\"text-2xl sm:text-3xl font-black text-red-600 dark:text-red-400\">1,000</span> <ruby>円割引<rt>えんわりびき</rt></ruby>！</span>\n    </div>\n    <div class=\"text-xs sm:text-sm text-gray-700 dark:text-gray-300 pl-2\">\n      （ただし、1グループ(※)で5,000<ruby>円以上<rt>えんいじょう</rt></ruby>のご<ruby>利用<rt>りよう</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>）\n    </div>\n  </div>\n\n  <!-- Offer 2 -->\n  <div class=\"bg-amber-50 dark:bg-slate-800 border border-amber-300 dark:border-amber-600 rounded p-3 sm:p-4 mb-4\">\n    <div class=\"flex flex-wrap items-center gap-2 mb-1\">\n      <span class=\"bg-gray-900 text-white dark:bg-amber-500 dark:text-gray-900 text-xs sm:text-sm font-bold px-2.5 py-0.5 rounded-full\">その 2</span>\n      <span class=\"text-base sm:text-lg font-bold\">お<ruby>食事<rt>しょくじ</rt></ruby>をご<ruby>注文<rt>ちゅうもん</rt></ruby>のお<ruby>客様全員<rt>きゃくさまぜんいん</rt></ruby>に <span class=\"text-xl sm:text-2xl font-black text-amber-700 dark:text-amber-300\">アイスクリーム</span> を！</span>\n    </div>\n    <div class=\"text-xs sm:text-sm text-gray-700 dark:text-gray-300 pl-2\">\n      そのほか、<ruby>特別<rt>とくべつ</rt></ruby>メニューもご<ruby>用意<rt>ようい</rt></ruby>しております。この<ruby>機会<rt>きかい</rt></ruby>にぜひご<ruby>利用<rt>りよう</rt></ruby>ください。\n    </div>\n  </div>\n\n  <!-- Year-round Service Box -->\n  <div class=\"border-t-2 border-dashed border-gray-400 dark:border-gray-600 pt-3 text-xs sm:text-sm space-y-1.5 leading-relaxed text-gray-800 dark:text-gray-200\">\n    <div class=\"font-medium\">なお、サービス<ruby>期間<rt>きかん</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>なく、<ruby>一年中<rt>いちねんじゅう</rt></ruby>、<ruby>次<rt>つぎ</rt></ruby>のサービスを<ruby>行<rt>おこな</rt></ruby>っています。</div>\n    <div class=\"flex items-start gap-1.5 pl-2\">\n      <span>✿</span>\n      <div>\n        <span class=\"font-bold\">4<ruby>名様以上<rt>めいさまいじょう</rt></ruby>のグループでご<ruby>利用<rt>りよう</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>、<ruby>全員<rt>ぜんいん</rt></ruby>にアイスクリームを！</span>\n        <span class=\"text-xs text-gray-600 dark:text-gray-400\">（お<ruby>食事<rt>しょくじ</rt></ruby>をご<ruby>注文<rt>ちゅうもん</rt></ruby>のお<ruby>客様<rt>きゃくさま</rt></ruby>に<ruby>限<rt>かぎ</rt></ruby>ります。）</span>\n      </div>\n    </div>\n    <div class=\"flex items-start gap-1.5 pl-2 font-bold\">\n      <span>✿</span>\n      <div>コーヒーはお<ruby>代<rt>か</rt></ruby>わり<ruby>自由<rt>じゆう</rt></ruby>*です！</div>\n    </div>\n  </div>\n</div>"
     },
     "notice_vocabulary": [
       {
-        "word": "特典",
-        "reading": "とくてん",
-        "meaning": "special benefit / privilege"
-      },
-      {
-        "word": "特選",
-        "reading": "とくせん",
-        "meaning": "specially selected"
-      },
-      {
-        "word": "自家製",
-        "reading": "じかせい",
-        "meaning": "homemade"
-      },
-      {
-        "word": "進呈",
-        "reading": "しんてい",
-        "meaning": "present / give as a gift"
+        "word": "(※) 1グループ",
+        "reading": "1グループ",
+        "meaning": "1 group　1组　1"
       }
     ],
     "questions": [
       {
         "question_number": 1,
-        "question": "このチラシの説明と合っているものはどれか。",
+        "question": "アイスクリームのサービスが<ruby>受<rt>う</rt></ruby>けられるのはどの場合か。",
         "options": [
-          "1 ランチでお食事を頼んだ人にはアイスクリームがもらえる。",
-          "2 飲み物だけを頼んだ人にもアイスクリームがサービスされる。",
-          "3 3人以下のグループでもワインが1本もらえる。",
-          "4 20歳未満の人には何もサービスされない。"
+          "1　6<ruby>月<rt>がつ</rt></ruby>に1<ruby>人<rt>ひとり</rt></ruby>で<ruby>食事<rt>しょくじ</rt></ruby>した<ruby>場合<rt>ばあい</rt></ruby>",
+          "2　6<ruby>月<rt>がつ</rt></ruby>に4<ruby>人<rt>にん</rt></ruby>で<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>だけ<ruby>注文<rt>ちゅうもん</rt></ruby>した<ruby>場合<rt>ばあい</rt></ruby>",
+          "3　7<ruby>月<rt>がつ</rt></ruby>に1<ruby>人<rt>ひとり</rt></ruby>で<ruby>食事<rt>しょくじ</rt></ruby>した<ruby>場合<rt>ばあい</rt></ruby>",
+          "4　7<ruby>月<rt>がつ</rt></ruby>に4<ruby>人<rt>にん</rt></ruby>で<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>だけ<ruby>注文<rt>ちゅうもん</rt></ruby>した<ruby>場合<rt>ばあい</rt></ruby>"
         ],
         "correct_answer": 1,
-        "explanation": "チラシに「ランチタイムにお食事をご注文のお客様全員に、自家製アイスクリームをサービス」とあり、飲み物のみは対象外と記載されているため、1が正しいです。"
+        "explanation": "チラシの【その2】に「5月15日〜6月30日の期間中、お食事をご注文のお客様全員にアイスクリームを！」とあるため、6月に1人で食事した場合（1）はサービスが受けられます（別冊解答解説にも『飲み物だけ注文した場合は、アイスクリームのサービスはない』とあり、2や4は除外されます）。"
       },
       {
         "question_number": 2,
-        "question": "ディナーを予約してワインのプレゼントをもらうための条件として正しいものはどれか。",
+        "question": "6<ruby>月<rt>がつ</rt></ruby>に2<ruby>人<rt>ふたり</rt></ruby>でこのレストランに<ruby>行<rt>い</rt></ruby>き、2<ruby>人合<rt>ふたりあ</rt></ruby>わせて5,000<ruby>円分飲食<rt>えんぶんいんしょく</rt></ruby>した<ruby>場合<rt>ばあい</rt></ruby>、<ruby>支払額<rt>しはらいがく</rt></ruby>はいくらになるか。",
         "options": [
-          "1 お会計が3,000円未満であること。",
-          "2 4人以上のグループでディナーを利用すること。",
-          "3 全員が20歳未満であること。",
-          "4 昼のランチタイムに来店すること。"
+          "1　3,000<ruby>円<rt>えん</rt></ruby>",
+          "2　4,000<ruby>円<rt>えん</rt></ruby>",
+          "3　5,000<ruby>円<rt>えん</rt></ruby>",
+          "4　8,000<ruby>円<rt>えん</rt></ruby>"
         ],
         "correct_answer": 2,
-        "explanation": "「4名様以上でディナーをご予約・ご利用のお客様に、特選ワイン1本を無料でサービス」とあるため、2が正しいです。"
+        "explanation": "6月は10周年記念サービス期間中であり、【その1】に「1グループで5,000円以上のご利用の場合、ご利用金額より1,000円割引」とあります。ちょうど5,000円は「5,000円以上」に含まれるため、1,000円引きとなり支払額は4,000円（2）となります。"
       }
+    ],
+    "footnotes": [
+      "* free refills / bottomless cup　免费续杯"
     ]
   }
 }

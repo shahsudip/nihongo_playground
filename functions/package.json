@@ -1,0 +1,13 @@
+{
+  "name": "nihongo-playground-functions",
+  "private": true,
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^14.1.0",
+    "firebase-functions": "^7.0.0",
+    "nihongo_playground": "file:.."
+  }
+}

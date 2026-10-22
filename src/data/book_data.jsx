@@ -1,4 +1,19 @@
+import { firstTimeN3KanjiBook } from './first_time_n3_350_kanji';
+
+const optionalPassN3Modules = import.meta.glob('./pass_n3_within_20_days/index.js', { eager: true });
+const passN3Within20DaysBook =
+  Object.values(optionalPassN3Modules)[0]?.passN3Within20DaysBook ||
+  Object.values(optionalPassN3Modules)[0]?.default || {
+    id: 'pass-n3-within-20-days',
+    title: 'Pass N3 Within 20 Days',
+    level: 'N3',
+    category: 'Mixed',
+    chapters: [],
+  };
+
 export const sampleBooks = [
+  passN3Within20DaysBook,
+  firstTimeN3KanjiBook,
   {
     id: 'zenkamoku-n1-best-workbook',
     title: '全科目攻略！JLPT日本語能力試験ベスト総合問題集N1',

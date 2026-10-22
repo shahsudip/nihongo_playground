@@ -9,196 +9,139 @@
     "title": "家やアパートの案内で使われている特別な言葉を覚えよう！",
     "subtitle": "Let's look at some special language used in real estate advertisements!",
     "comic": {
-      "situation": "間取りの記号や用語（K, D, L）について説明している。",
-      "dialogue": [
-        {
-          "speaker": "鳥",
-          "text": "1K・2LDK・3LDKって何のこと？"
-        },
-        {
-          "speaker": "先生鳥",
-          "text": "数字は部屋の数で、Kはキッチン、Dはダイニング（食事をする部屋）、Lはリビングルームのことです。読み方に注意しましょう。"
-        }
-      ]
+      "text1": "１Ｋ・２ＬＤＫ・３ＬＤＫって何のこと？",
+      "text2": "数字は部屋の数で、Ｋはキッチン、Ｄはダイニング（食事をする部屋）、Ｌはリビングルームのことです。読み方に注意しましょう。",
+      "sign": "アパート 1K 3.2万円\nマンション 2LDK 9万円\nマンション 3LDK 12万円",
+      "note": "1K（ワンケー）、2LDK（にエルディーケー）、3LDK（さんエルディーケー）。"
     }
   },
   "vocabulary": [
     {
       "word": "マンション",
       "reading": "マンション",
-      "meaning": "an apartment (well built / concrete building)",
-      "example": "マンション 2LDK"
+      "meaning": "an apartment: well built"
     },
     {
       "word": "間取り",
       "reading": "まどり",
-      "meaning": "a floor plan",
-      "example": "使いやすい間取り"
+      "meaning": "a floor plan"
     },
     {
       "word": "和室",
       "reading": "わしつ",
-      "meaning": "a Japanese style room",
-      "example": "和室6畳"
+      "meaning": "a Japanese style room"
     },
     {
       "word": "敷金",
       "reading": "しききん",
-      "meaning": "security deposit (a one-time deposit to the owner when renting)",
-      "example": "敷金／3ヵ月"
+      "meaning": "A one-time payment to the owner when you rent an apartment or house."
     },
     {
       "word": "礼金",
       "reading": "れいきん",
-      "meaning": "key money (one-time non-refundable gratuity payment to owner)",
-      "example": "礼金／なし"
+      "meaning": "One time payment to the owner when you rent an apartment or house. In some cases this payment isn't required."
     },
     {
       "word": "管理費",
       "reading": "かんりひ",
-      "meaning": "a monthly management fee",
-      "example": "管理費／月4,000円"
+      "meaning": "a monthly management fee"
     },
     {
       "word": "専有面積",
       "reading": "せんゆうめんせき",
-      "meaning": "floor space / exclusive private area",
-      "example": "専有面積／52.05㎡"
+      "meaning": "floor space"
     },
     {
       "word": "〜㎡",
-      "reading": "へいほうメートル / へいべい",
-      "meaning": "square meters",
-      "example": "50㎡"
+      "reading": "〜へいべい／〜へいほうメートル",
+      "meaning": "... square meters (㎡) is read as 'heihou meetoru', but it is also often read as 'heebee'."
     },
     {
       "word": "一軒家",
       "reading": "いっけんや",
-      "meaning": "a detached house",
-      "example": "一軒家に住む"
+      "meaning": "a house"
     },
     {
-      "word": "〜畳",
-      "reading": "〜じょう",
-      "meaning": "tatami mats (counter for room size)",
-      "example": "洋室8畳"
+      "word": "6畳",
+      "reading": "ろくじょう",
+      "meaning": "a 6-tatami mat room"
     },
     {
       "word": "洋室",
       "reading": "ようしつ",
-      "meaning": "a Western-style room",
-      "example": "洋室8畳"
+      "meaning": "a Western-style room"
     },
     {
       "word": "エアコン",
       "reading": "エアコン",
-      "meaning": "an air-conditioner",
-      "example": "エアコン付"
+      "meaning": "an air-conditioner"
     },
     {
-      "word": "築〜年",
-      "reading": "ちく〜ねん",
-      "meaning": "built ~ years ago (building age)",
-      "example": "築15年"
+      "word": "築15年",
+      "reading": "ちくじゅうごねん",
+      "meaning": "built 15 years ago"
     }
   ],
   "practice": {
-    "title": "れんしゅう",
-    "instruction": "次の会話文を読んで、後の文から正しいものを三つ選ぼう。(答えは次のページ)",
+    "instruction": "次の会話文を読んで、後の文から正しいものを選ぼう。（答えは次のページ）",
     "conversation": [
       {
         "speaker": "妻",
-        "text": "このマンションはどう？ 駅から徒歩5分って書いてあるし、広さもちょうどいいんじゃない？ 家賃もそんなに高くないし。"
+        "text": "このマンションはどう？　<ruby>駅<rt>えき</rt></ruby>から<ruby>徒歩<rt>とほ</rt></ruby>５<ruby>分<rt>ふん</rt></ruby>って<ruby>書<rt>か</rt></ruby>いてあるし、<ruby>広<rt>ひろ</rt></ruby>さもちょうどいいんじゃない？　<ruby>家賃<rt>やちん</rt></ruby>もそんなに<ruby>高<rt>たか</rt></ruby>くないし。"
       },
       {
         "speaker": "夫",
-        "text": "そうだね。敷金は3ヵ月分だけれど、礼金はなしって書いてあるし、いいかもしれないね。でも、本当は一軒家のほうがいいんだけどなあ。"
+        "text": "そうだね。<ruby>敷金<rt>しききん</rt></ruby>は３ヵ<ruby>月分<rt>げつぶん</rt></ruby>だけれど、<ruby>礼金<rt>れいきん</rt></ruby>はなしって<ruby>書<rt>か</rt></ruby>いてあるし、いいかもしれないね。でも、<ruby>本当<rt>ほんとう</rt></ruby>は<ruby>一軒家<rt>いっけんや</rt></ruby>のほうがいいんだけどなあ。"
       }
     ],
     "options": [
-      "1 夫婦は住むところをさがしている。",
-      "2 夫婦は今、マンションを見学している。",
-      "3 このマンションを借りる場合、敷金は3ヵ月前に払わなければならない。",
-      "4 このマンションを借りる場合、礼金を払わなくてもいい。",
-      "5 夫はマンションより一軒家に住みたいと思っている。"
+      "1　<ruby>夫婦<rt>ふうふ</rt></ruby>は<ruby>住<rt>す</rt></ruby>むところをさがしている。",
+      "2　<ruby>夫婦<rt>ふうふ</rt></ruby>は<ruby>今<rt>いま</rt></ruby>、マンションを<ruby>見学<rt>けんがく</rt></ruby>している。",
+      "3　このマンションを<ruby>借<rt>か</rt></ruby>りる<ruby>場合<rt>ばあい</rt></ruby>、<ruby>敷金<rt>しききん</rt></ruby>は３ヵ<ruby>月前<rt>げつまえ</rt></ruby>に<ruby>払<rt>はら</rt></ruby>わなければならない。",
+      "4　このマンションを<ruby>借<rt>か</rt></ruby>りる<ruby>場合<rt>ばあい</rt></ruby>、<ruby>礼金<rt>れいきん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>わなくてもいい。",
+      "5　<ruby>夫<rt>おっと</rt></ruby>はマンションより<ruby>一軒家<rt>いっけんや</rt></ruby>に<ruby>住<rt>す</rt></ruby>みたいと<ruby>思<rt>おも</rt></ruby>っている。"
     ],
     "correct_answers": [
       1,
       4,
       5
     ],
-    "options_explanation": {
-      "1": "正しい。夫婦が物件広告を見ながら住む部屋を探しています。",
-      "2": "間違い。「書いてあるし」と言っており、広告を見ている段階で見学中ではありません。",
-      "3": "間違い。「敷金3ヵ月」は家賃の3か月分の金額という意味であり、3か月前に払うことではありません。",
-      "4": "正しい。夫が「礼金はなしって書いてある」と言っており、礼金は不要です。",
-      "5": "正しい。夫が「本当は一軒家のほうがいいんだけどなあ」と言っています。"
-    }
+    "options_explanation": "1: 妻と夫が住居の広告を見ながら相談しているので正しいです。<br/>2: マンションを実際に見学しているのではなく、広告の文字を読んでいます（「書いてあるし」）。<br/>3: 敷金「3ヵ月分」は家賃3か月分の金額という意味で、「3か月前に払う」という意味ではありません。<br/>4: 広告に「礼金はなし」とあるので、礼金を払わなくてよいのは正しいです。<br/>5: 夫が「本当は一軒家のほうがいいんだけどなあ」と言っているので正しいです。"
   },
   "mondai": {
-    "title": "もんだい",
-    "instruction": "次の募集広告を読んで、後の問いに答えなさい。(答えは別冊 p.2)",
-    "notice": {
-      "heading": "マンション 2K 中央線中野駅徒歩5分",
-      "subheading": "使いやすい間取り！！ バス・トイレ別* エアコン付 ペット不可",
-      "content": [
-        "・家賃／9.6万円",
-        "・敷金／3ヵ月",
-        "・礼金／なし",
-        "・管理費／月4,000円",
-        "・専有面積／52.05㎡",
-        "・4階建て3階",
-        "・築15年",
-        "・間取り詳細：和室6畳、洋室8畳、キッチン、バス・トイレ別、ベランダ",
-        "※ * a separate bathroom and toilet"
-      ]
-    },
-    "notice_vocabulary": [
+    "instruction": "次の募集広告を読んで、後の問いに答えなさい。（答えは別冊 p.2）",
+    "notice": "<div class=\"p-4 md:p-6 rounded-xl border border-gray-300 dark:border-gray-700 bg-amber-50/30 dark:bg-slate-900/40 text-gray-800 dark:text-gray-200\">\n  <div class=\"grid grid-cols-1 md:grid-cols-2 gap-6 items-center\">\n    <div class=\"space-y-3\">\n      <div class=\"border-b pb-2 border-gray-300 dark:border-gray-600\">\n        <span class=\"text-2xl font-bold tracking-wide\">マンション　2K</span>\n      </div>\n      <div class=\"text-xl font-bold text-blue-700 dark:text-blue-400\">\n        <ruby>中央線<rt>ちゅうおうせん</rt></ruby><ruby>中野駅<rt>なかのえき</rt></ruby><ruby>徒歩<rt>とほ</rt></ruby>5<ruby>分<rt>ふん</rt></ruby>\n      </div>\n      <div class=\"space-y-1.5 text-base\">\n        <div><ruby>家賃<rt>やちん</rt></ruby>／<span class=\"text-lg font-bold\">9.6 <ruby>万円<rt>まんえん</rt></ruby></span></div>\n        <div><ruby>敷金<rt>しききん</rt></ruby>／<span class=\"font-semibold\">3 ヵ<ruby>月<rt>げつ</rt></ruby></span></div>\n        <div><ruby>礼金<rt>れいきん</rt></ruby>／<span class=\"font-semibold\">なし</span></div>\n        <div><ruby>管理費<rt>かんりひ</rt></ruby>／<ruby>月<rt>つき</rt></ruby> 4,000 <ruby>円<rt>えん</rt></ruby></div>\n        <div><ruby>専有面積<rt>せんゆうめんせき</rt></ruby>／52.05 ㎡</div>\n        <div>4<ruby>階建て<rt>かいだて</rt></ruby> 3<ruby>階<rt>がい</rt></ruby></div>\n        <div><ruby>築<rt>ちく</rt></ruby> 15 <ruby>年<rt>ねん</rt></ruby></div>\n      </div>\n    </div>\n    <div class=\"flex flex-col items-center justify-center space-y-3\">\n      <img src=\"/somatome/w1_d6_floorplan.png\" alt=\"間取り 2K\" class=\"max-w-full h-auto max-h-64 object-contain rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-100 p-1\" />\n      <div class=\"text-center space-y-1 text-sm md:text-base font-medium\">\n        <div class=\"text-base font-bold text-gray-900 dark:text-gray-100\"><ruby>使<rt>つか</rt></ruby>いやすい<ruby>間取り<rt>まどり</rt></ruby>！！</div>\n        <div>バス・トイレ<ruby>別<rt>べつ</rt></ruby><sup>*</sup>　エアコン<ruby>付<rt>つき</rt></ruby></div>\n        <div>ペット<ruby>不可<rt>ふか</rt></ruby></div>\n      </div>\n    </div>\n  </div>\n</div>",
+    "notes": [],
+    "footnotes": [
       {
-        "word": "中央線",
-        "reading": "ちゅうおうせん",
-        "meaning": "Chuo Line"
-      },
-      {
-        "word": "中野駅",
-        "reading": "なかのえき",
-        "meaning": "Nakano Station"
-      },
-      {
-        "word": "階建て",
-        "reading": "かいだて",
-        "meaning": "-story building"
-      },
-      {
-        "word": "ペット不可",
-        "reading": "ペットふか",
-        "meaning": "no pets allowed"
+        "symbol": "*",
+        "text": "a separate bathroom and toilet"
       }
     ],
     "questions": [
       {
-        "question_number": 1,
-        "question": "この広告でわからないのはどれか。",
+        "number": 1,
+        "stem": "この<ruby>広告<rt>こうこく</rt></ruby>で<u style=\"text-decoration-style: wavy;\">わからない</u>のはどれか。",
         "options": [
-          "1 エアコンがいくつついてあるか。",
-          "2 敷金をいくらはらえばいいか。",
-          "3 この部屋が何階にあるか。",
-          "4 このマンションが何年前に建てられたか。"
+          "1　エアコンがいくつついてるか。",
+          "2　<ruby>敷金<rt>しききん</rt></ruby>をいくらはらえばいいか。",
+          "3　この<ruby>部屋<rt>へや</rt></ruby>が<ruby>何階<rt>なんがい</rt></ruby>にあるか。",
+          "4　このマンションが<ruby>何年前<rt>なんねんまえ</rt></ruby>に<ruby>建<rt>た</rt></ruby>てられたか。"
         ],
         "correct_answer": 1,
-        "explanation": "広告には「エアコン付」と書かれていますが、エアコンが何台（いくつ）ついているかは書かれていません。敷金（9.6万×3）、階数（3階）、築年数（15年前）はすべて分かります。"
+        "explanation": "正解：1<br/>広告には「エアコン付」としか書かれておらず、部屋にエアコンが何台あるのかはわかりません。<br/>2は「敷金／3ヵ月」（96,000円×3＝288,000円）、3は「4階建て 3階」、4は「築15年」（15年前に建てられた）と明記されており、わかります。"
       },
       {
-        "question_number": 2,
-        "question": "この広告の内容と合っているものはどれか。",
+        "number": 2,
+        "stem": "この<ruby>広告<rt>こうこく</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>と<u style=\"text-decoration-style: wavy;\"><ruby>合<rt>あ</rt></ruby>っている</u>ものはどれか。",
         "options": [
-          "1 毎月払うのは96,000円である。",
-          "2 敷金は96,000円の3倍分を払わなければならない。",
-          "3 エアコンの代金を払わなければならない。",
-          "4 洋室より和室のほうが広い。"
+          "1　<ruby>毎月払<rt>まいつきはら</rt></ruby>うのは96,000<ruby>円<rt>えん</rt></ruby>である。",
+          "2　<ruby>敷金<rt>しききん</rt></ruby>は96,000<ruby>円<rt>えん</rt></ruby>の3<ruby>倍分<rt>ばいぶん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>わなければならない。",
+          "3　エアコンの<ruby>代金<rt>だいきん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>わなければならない。",
+          "4　<ruby>洋室<rt>ようしつ</rt></ruby>より<ruby>和室<rt>わしつ</rt></ruby>のほうが<ruby>広<rt>ひろ</rt></ruby>い。"
         ],
         "correct_answer": 2,
-        "explanation": "敷金は3ヵ月分なので「96,000円の3倍分」となります（公式解説：毎月払うのは家賃9.6万＋管理費4,000円＝100,000円。洋室8畳＞和室6畳）。したがって2が正しいです。"
+        "explanation": "正解：2<br/>＊毎月払うのは100,000円（家賃96,000円＋管理費4,000円）である。（The total monthly payment is 100,000 yen (96,000 yen rent plus a 4,000 yen management fee).）したがって1は誤りです。<br/>敷金は「3ヵ月」なので家賃（96,000円）の3倍分（288,000円）となり、2が合っています。<br/>「エアコン付」は設備として付いているため別途エアコン代を払う必要はなく、3は誤りです。<br/>間取りを見ると和室は6畳、洋室は8畳なので洋室のほうが広く、4は誤りです。"
       }
     ]
   }
