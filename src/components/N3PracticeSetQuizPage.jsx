@@ -12,6 +12,28 @@ import { ExitConfirmModal } from './ui/ExitConfirmModal';
 import { JlptScoreCertificateModal } from './ui/JlptScoreCertificateModal';
 import { calculateJlptExamScore } from '../utils/jlptScoring.js';
 
+const CHOKUZEN_IRT_OPTIONS = Object.freeze({
+  scoringModel: 'irt-3pl-eap-estimate',
+  sectionMaxPoints: 60,
+  sectionPassMark: 19,
+});
+
+const CHOKUZEN_SCORE_SECTION_CONFIG = [
+  { sectionKey: 'vocabulary-kanji', id: 'vocabulary-kanji', title: 'Vocabulary and Kanji' },
+  { sectionKey: 'grammar-reading', id: 'grammar', title: 'Grammar' },
+];
+
+const buildChokuzenScoreSections = (currentSet, sectionsToShow) => (
+  CHOKUZEN_SCORE_SECTION_CONFIG
+    .filter(config => sectionsToShow.includes(config.sectionKey))
+    .map(config => ({
+      id: config.id,
+      title: config.title,
+      questions: currentSet?.sections?.[config.sectionKey]?.questions || [],
+    }))
+    .filter(section => section.questions.length > 0)
+);
+
 const N3PracticeSetQuizPage = () => {
   const { setId, sectionId } = useParams();
   const navigate = useNavigate();
@@ -106,25 +128,11 @@ const N3PracticeSetQuizPage = () => {
   const answeredCount = Object.keys(answers).length;
   const progressPercent = totalQuestions > 0 ? Math.round((answeredCount / totalQuestions) * 100) : 0;
 
-  // Official JLPT Scaled Score Report
+  // Response-pattern IRT practice estimate
   const scoreReport = useMemo(() => {
     if (!currentSet?.sections) return null;
-    const examSections = [];
-    if (sectionsToShow.includes('vocabulary-kanji') && currentSet.sections['vocabulary-kanji']?.questions) {
-      examSections.push({
-        id: 'vocab',
-        title: '言語知識（文字・語彙）',
-        questions: currentSet.sections['vocabulary-kanji'].questions,
-      });
-    }
-    if (sectionsToShow.includes('grammar') && currentSet.sections['grammar']?.questions) {
-      examSections.push({
-        id: 'grammar_reading',
-        title: '言語知識（文法）・読解',
-        questions: currentSet.sections['grammar'].questions,
-      });
-    }
-    return calculateJlptExamScore('N3', examSections, answers);
+    const examSections = buildChokuzenScoreSections(currentSet, sectionsToShow);
+    return calculateJlptExamScore('N3', examSections, answers, CHOKUZEN_IRT_OPTIONS);
   }, [currentSet, sectionsToShow, answers]);
 
   const getStorageKey = useCallback(() => {
@@ -245,6 +253,14 @@ const N3PracticeSetQuizPage = () => {
       }
     }
 
+    const attemptSections = buildChokuzenScoreSections(currentSet, sectionsToShow);
+    const attemptScoreReport = calculateJlptExamScore(
+      'N3',
+      attemptSections,
+      nextAnswers,
+      CHOKUZEN_IRT_OPTIONS,
+    );
+
     const historyDocId = `jlpt-n3-practice-sets-${setId}${sectionId ? `-${sectionId}` : ''}`;
     const record = {
       quizId: historyDocId,
@@ -262,14 +278,17 @@ const N3PracticeSetQuizPage = () => {
       currentIndex: targetIndex,
       percentage: accuracy,
       status,
-      // Official JLPT Scaled Scoring Fields
-      totalScaledScore: scoreReport?.totalScaledScore,
-      maxScore: scoreReport?.maxScore,
-      overallPassMark: scoreReport?.overallPassMark,
-      isPassed: scoreReport?.isPassed,
-      failReason: scoreReport?.failReason,
-      allSectionsPassed: scoreReport?.allSectionsPassed,
-      sectionsBreakdown: scoreReport?.sections,
+      // IRT-based practice estimate fields
+      scoringMethod: attemptScoreReport.scoringMethod,
+      scoringModelVersion: attemptScoreReport.scoringModelVersion,
+      isEstimatedScore: attemptScoreReport.isEstimated,
+      totalScaledScore: attemptScoreReport.totalScaledScore,
+      maxScore: attemptScoreReport.maxScore,
+      overallPassMark: attemptScoreReport.overallPassMark,
+      isPassed: attemptScoreReport.isPassed,
+      failReason: attemptScoreReport.failReason,
+      allSectionsPassed: attemptScoreReport.allSectionsPassed,
+      sectionsBreakdown: attemptScoreReport.sections,
       timeElapsed: timerSeconds,
       timestamp: new Date().toISOString(),
       createdAt: new Date().toISOString()
@@ -309,7 +328,7 @@ const N3PracticeSetQuizPage = () => {
         console.warn("Error saving quiz history to Firestore:", err);
       }
     }
-  }, [currentSet, totalQuestions, getStorageKey, setId, sectionId, pageTitle, questions, timerSeconds, currentUser]);
+  }, [currentSet, totalQuestions, getStorageKey, setId, sectionId, sectionsToShow, pageTitle, questions, timerSeconds, currentUser]);
 
   const handleAttemptExit = () => {
     if (answeredCount > 0 && !isFinished) {
@@ -421,12 +440,12 @@ const N3PracticeSetQuizPage = () => {
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-800 hover:bg-amber-100 transition-all cursor-pointer"
           >
             <span>📜</span>
-            <span>View Certificate (合否結果通知書)</span>
+            <span>View IRT Score Report</span>
           </button>
         </div>
 
         <Card className="text-center p-6 sm:p-10 shadow-2xl border border-[var(--color-border)] w-full relative overflow-hidden">
-          {/* Authentic Pass/Fail Stamp */}
+          {/* Practice target status */}
           <div className="flex justify-center mb-4">
             <div
               className={`w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 flex flex-col items-center justify-center font-black uppercase tracking-wider transform rotate-[-8deg] shadow-md select-none ${
@@ -436,10 +455,10 @@ const N3PracticeSetQuizPage = () => {
               }`}
             >
               <span className="text-base sm:text-xl leading-none">
-                {isPassed ? '合格' : '不合格'}
+                {isPassed ? 'TARGET' : 'REVIEW'}
               </span>
               <span className="text-[10px] sm:text-xs font-mono font-bold mt-1 tracking-widest">
-                {isPassed ? 'PASSED' : 'FAILED'}
+                {isPassed ? 'MET' : 'NEEDED'}
               </span>
             </div>
           </div>
@@ -451,30 +470,41 @@ const N3PracticeSetQuizPage = () => {
             {pageTitle} &bull; Time: {formatTime(timerSeconds)}
           </p>
 
+          {scoreReport?.isEstimated && (
+            <div className="max-w-xl mx-auto mb-6 p-3.5 rounded-2xl border border-sky-300/70 dark:border-sky-800 bg-sky-50/80 dark:bg-sky-950/30 text-left">
+              <div className="text-xs font-black uppercase tracking-wider text-sky-700 dark:text-sky-300 mb-1">
+                IRT Practice Estimate
+              </div>
+              <p className="text-xs sm:text-sm text-sky-900 dark:text-sky-100">
+                {scoreReport.scoringModelLabel}. {scoreReport.scoreNotice}
+              </p>
+            </div>
+          )}
+
           {/* Sectional Failure Alert */}
           {failReason === 'sectional_insufficient' && (
             <div className="max-w-xl mx-auto mb-6 p-4 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-800 text-amber-900 dark:text-amber-200 text-xs sm:text-sm text-left">
               <div className="font-bold flex items-center gap-1.5 mb-1">
                 <span>⚠️</span>
-                <span>Sectional Threshold Not Met (基準点未達)</span>
+                <span>Practice Section Target Not Met</span>
               </div>
               <p>
-                Your overall score reached <span className="font-mono font-black">{totalScaled} / {maxScaled} 点</span> (which meets the passing mark), but you did not pass because at least one section scored below the official <span className="font-bold">19-point minimum threshold</span>.
+                The estimated total reached <span className="font-mono font-black">{totalScaled} / {maxScaled} points</span>, but at least one practice section remains below the <span className="font-bold">19-point target</span>.
               </p>
             </div>
           )}
 
-          {/* Official JLPT Scaled Scores Banner */}
+          {/* IRT practice estimate banner */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-xl mx-auto mb-6">
             <div className="p-4 rounded-xl bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-center">
               <span className="text-[11px] font-black uppercase tracking-wider text-[var(--color-text-muted)] block mb-1">
-                Scaled Score
+                Estimated IRT Score
               </span>
               <span className={`block text-3xl font-black font-mono ${isPassed ? 'text-emerald-500' : 'text-[var(--color-text-primary)]'}`}>
                 {totalScaled} <span className="text-sm font-normal text-gray-400">/ {maxScaled} 点</span>
               </span>
               <span className="text-[11px] font-bold text-[var(--color-text-muted)] mt-1 block">
-                Pass Mark: {passThreshold} 点
+                Practice Target: {passThreshold} points
               </span>
             </div>
 
@@ -498,12 +528,12 @@ const N3PracticeSetQuizPage = () => {
                 {formatTime(timerSeconds)}
               </span>
               <span className="text-[11px] font-bold text-[var(--color-text-muted)] mt-1 block">
-                {isPassed ? '✓ Qualified' : '✕ Unqualified'}
+                {isPassed ? 'Target met' : 'Review needed'}
               </span>
             </div>
           </div>
 
-          {/* Sectional Score Breakdown (each with 19-pt threshold) */}
+          {/* Section-level IRT estimates */}
           {scoreReport?.sections?.length > 0 && (
             <div className="max-w-xl mx-auto mb-6 text-left">
               <div className="flex items-center justify-between text-xs font-black uppercase tracking-wider text-[var(--color-text-muted)] mb-3 px-1">
@@ -520,9 +550,16 @@ const N3PracticeSetQuizPage = () => {
                       <span className="w-5 h-5 rounded-full flex items-center justify-center font-mono font-bold text-xs bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] shrink-0">
                         {idx + 1}
                       </span>
-                      <span className="text-xs sm:text-sm font-bold text-[var(--color-text-primary)] truncate">
-                        {sec.title}
-                      </span>
+                      <div className="min-w-0">
+                        <span className="block text-xs sm:text-sm font-bold text-[var(--color-text-primary)] truncate">
+                          {sec.title}
+                        </span>
+                        {sec.isEstimated && (
+                          <span className="block text-[10px] font-mono text-[var(--color-text-muted)] mt-0.5">
+                            Ability: {sec.abilityEstimate} | SE: {sec.standardError}
+                          </span>
+                        )}
+                      </div>
                     </div>
 
                     <div className="flex items-center gap-2 shrink-0">
@@ -536,7 +573,7 @@ const N3PracticeSetQuizPage = () => {
                             : 'bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300'
                         }`}
                       >
-                        {sec.isPassed ? 'PASS' : 'FAIL (<19)'}
+                        {sec.isPassed ? 'TARGET' : 'REVIEW'}
                       </span>
                     </div>
                   </div>
@@ -605,7 +642,7 @@ const N3PracticeSetQuizPage = () => {
               onClick={() => setShowCertificateModal(true)}
               className="border-amber-300 dark:border-amber-800 text-amber-700 dark:text-amber-300 hover:bg-amber-50 dark:hover:bg-amber-950/30 font-bold cursor-pointer"
             >
-              📜 Score Certificate
+              IRT Score Report
             </Button>
             <Link
               to="/profile"
@@ -824,7 +861,7 @@ const N3PracticeSetQuizPage = () => {
             className="text-xs font-bold px-3 py-1.5 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-secondary)] text-emerald-400 flex items-center gap-1.5"
             title="Current score / Answered count"
           >
-            <span>Score:</span>
+            <span>Correct:</span>
             <span>{correctCount}/{answeredCount}</span>
             <span className="text-[var(--color-text-muted)] font-normal">({totalQuestions})</span>
           </span>

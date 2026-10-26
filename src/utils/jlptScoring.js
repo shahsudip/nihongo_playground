@@ -1,13 +1,13 @@
 /**
  * jlptScoring.js
  * 
- * Official JLPT Scaled Scoring Engine (JEES / Japan Foundation Standard).
- * Standard total score: 180 points.
+ * JLPT score-range definitions and practice scoring helpers.
+ * Exact official IRT item parameters and conversions are not public.
  * 
  * Official Passing Criteria by Level:
  * - N1: Overall >= 100 / 180, each section >= 19 / 60
  * - N2: Overall >= 90 / 180,  each section >= 19 / 60
- * - N3: Overall >= 95 / 180,  each section >= 19 / 60 (Vocab: 19/60, Grammar/Reading: 19/60, Listening: 19/60)
+ * - N3: Overall >= 95 / 180, each official scoring section >= 19 / 60
  * - N4: Overall >= 90 / 180,  Knowledge & Reading >= 38 / 120, Listening >= 19 / 60
  * - N5: Overall >= 80 / 180,  Knowledge & Reading >= 38 / 120, Listening >= 19 / 60
  */
@@ -63,8 +63,164 @@ export const JLPT_LEVEL_STANDARDS = {
   },
 };
 
+export const IRT_ESTIMATE_MODEL = Object.freeze({
+  id: 'irt-3pl-eap-estimate',
+  label: '3PL EAP practice estimate',
+  version: '1.0.0',
+  thetaMin: -4,
+  thetaMax: 4,
+  thetaStep: 0.05,
+  scaleThetaMin: -3,
+  scaleThetaMax: 3,
+});
+
+const clamp = (value, minimum, maximum) => Math.min(maximum, Math.max(minimum, value));
+
+const finiteOr = (value, fallback) => {
+  const numericValue = Number(value);
+  return Number.isFinite(numericValue) ? numericValue : fallback;
+};
+
+export function getIrtItemParameters(question, index, totalQuestions) {
+  const explicit = question?.irt || {};
+  const position = totalQuestions > 1 ? index / (totalQuestions - 1) : 0.5;
+  const distanceFromCenter = Math.abs(position - 0.5) * 2;
+  const fallbackDifficulty = -1.75 + (position * 3.5);
+  const fallbackDiscrimination = 1.25 - (distanceFromCenter * 0.35);
+  const optionCount = Array.isArray(question?.options) && question.options.length > 1
+    ? question.options.length
+    : 4;
+
+  return {
+    difficulty: clamp(finiteOr(explicit.difficulty, fallbackDifficulty), -3, 3),
+    discrimination: clamp(finiteOr(explicit.discrimination, fallbackDiscrimination), 0.35, 2.5),
+    guessing: clamp(finiteOr(explicit.guessing, 1 / optionCount), 0, 0.35),
+    isExplicit: Number.isFinite(Number(explicit.difficulty))
+      || Number.isFinite(Number(explicit.discrimination))
+      || Number.isFinite(Number(explicit.guessing)),
+  };
+}
+
+const getCorrectOptionIndex = question => (
+  question?.correct !== undefined ? question.correct : question?.correctIndex
+);
+
+const getItemSuccessProbability = (theta, parameters) => {
+  const exponent = -1.7 * parameters.discrimination * (theta - parameters.difficulty);
+  const logistic = exponent >= 0
+    ? Math.exp(-exponent) / (1 + Math.exp(-exponent))
+    : 1 / (1 + Math.exp(exponent));
+  const probability = parameters.guessing + ((1 - parameters.guessing) * logistic);
+  return clamp(probability, 1e-9, 1 - 1e-9);
+};
+
+const thetaToScaledScore = (theta, maximumScore) => {
+  const boundedTheta = clamp(
+    theta,
+    IRT_ESTIMATE_MODEL.scaleThetaMin,
+    IRT_ESTIMATE_MODEL.scaleThetaMax,
+  );
+  const scaleRange = IRT_ESTIMATE_MODEL.scaleThetaMax - IRT_ESTIMATE_MODEL.scaleThetaMin;
+  const normalized = (boundedTheta - IRT_ESTIMATE_MODEL.scaleThetaMin) / scaleRange;
+  return Math.round(normalized * maximumScore);
+};
+
+export function estimateIrtSectionScore(questions = [], answers = {}, maximumScore = 60) {
+  const questionList = Array.isArray(questions) ? questions : [];
+  const totalQuestions = questionList.length;
+  const safeMaximumScore = Math.max(1, finiteOr(maximumScore, 60));
+
+  if (totalQuestions === 0) {
+    return {
+      scaledScore: 0,
+      abilityEstimate: 0,
+      standardError: 0,
+      scaledStandardError: 0,
+      answeredCount: 0,
+      correctCount: 0,
+      explicitParameterCount: 0,
+      parameterSource: 'none',
+    };
+  }
+
+  const items = questionList.map((question, index) => {
+    const userChoice = answers?.[question.id];
+    const isAnswered = userChoice !== undefined && userChoice !== null;
+    return {
+      parameters: getIrtItemParameters(question, index, totalQuestions),
+      isAnswered,
+      response: isAnswered && userChoice === getCorrectOptionIndex(question) ? 1 : 0,
+    };
+  });
+
+  const answeredCount = items.filter(item => item.isAnswered).length;
+  const correctCount = items.reduce((sum, item) => sum + item.response, 0);
+  const explicitParameterCount = items.filter(item => item.parameters.isExplicit).length;
+  const gridPointCount = Math.round(
+    (IRT_ESTIMATE_MODEL.thetaMax - IRT_ESTIMATE_MODEL.thetaMin)
+      / IRT_ESTIMATE_MODEL.thetaStep,
+  );
+  const posteriorPoints = [];
+
+  for (let gridIndex = 0; gridIndex <= gridPointCount; gridIndex += 1) {
+    const theta = IRT_ESTIMATE_MODEL.thetaMin + (gridIndex * IRT_ESTIMATE_MODEL.thetaStep);
+    let logPosterior = -0.5 * theta * theta;
+
+    items.forEach((item) => {
+      const probability = getItemSuccessProbability(theta, item.parameters);
+      logPosterior += item.response === 1
+        ? Math.log(probability)
+        : Math.log(1 - probability);
+    });
+
+    posteriorPoints.push({ theta, logPosterior });
+  }
+
+  const maximumLogPosterior = Math.max(...posteriorPoints.map(point => point.logPosterior));
+  const weightedPoints = posteriorPoints.map(point => ({
+    theta: point.theta,
+    weight: Math.exp(point.logPosterior - maximumLogPosterior),
+  }));
+  const totalWeight = weightedPoints.reduce((sum, point) => sum + point.weight, 0);
+  const abilityEstimate = weightedPoints.reduce(
+    (sum, point) => sum + (point.theta * point.weight),
+    0,
+  ) / totalWeight;
+  const variance = weightedPoints.reduce(
+    (sum, point) => sum + (((point.theta - abilityEstimate) ** 2) * point.weight),
+    0,
+  ) / totalWeight;
+  const standardError = Math.sqrt(Math.max(0, variance));
+
+  let scaledScore = thetaToScaledScore(abilityEstimate, safeMaximumScore);
+  if (answeredCount === 0 || correctCount === 0) scaledScore = 0;
+  if (answeredCount === totalQuestions && correctCount === totalQuestions) {
+    scaledScore = safeMaximumScore;
+  }
+
+  let parameterSource = 'deterministic-position-fallback';
+  if (explicitParameterCount === totalQuestions) parameterSource = 'item-metadata';
+  else if (explicitParameterCount > 0) parameterSource = 'mixed';
+
+  return {
+    scaledScore,
+    abilityEstimate: Number(abilityEstimate.toFixed(3)),
+    standardError: Number(standardError.toFixed(3)),
+    scaledStandardError: Math.round(
+      standardError
+        * (safeMaximumScore / (
+          IRT_ESTIMATE_MODEL.scaleThetaMax - IRT_ESTIMATE_MODEL.scaleThetaMin
+        )),
+    ),
+    answeredCount,
+    correctCount,
+    explicitParameterCount,
+    parameterSource,
+  };
+}
+
 /**
- * Calculates official JLPT scaled scores and sectional pass/fail status.
+ * Calculates a practice score report and sectional target status.
  * 
  * Supports:
  * - 3-section full exams (180 points standard, e.g. Vocab 60, Grammar/Reading 60, Listening 60)
@@ -74,11 +230,14 @@ export const JLPT_LEVEL_STANDARDS = {
  * @param {string} level - 'N1' | 'N2' | 'N3' | 'N4' | 'N5'
  * @param {Array} sections - array of section objects from the exam (each with id, questions)
  * @param {Object} answers - map of { [questionId]: chosenOption }
+ * @param {Object} options - scoring model and section scale overrides
  * @returns {Object} Full breakdown of scores, scaled points, and pass/fail decision
  */
-export function calculateJlptExamScore(level = 'N3', sections = [], answers = {}) {
+export function calculateJlptExamScore(level = 'N3', sections = [], answers = {}, options = {}) {
   const normLevel = (level || 'N3').toUpperCase();
   const standard = JLPT_LEVEL_STANDARDS[normLevel] || JLPT_LEVEL_STANDARDS.N3;
+  const useIrtEstimate = options.scoringModel === IRT_ESTIMATE_MODEL.id
+    || options.scoringModel === 'irt-eap';
 
   const sectionBreakdowns = [];
   let totalScaledScore = 0;
@@ -115,31 +274,47 @@ export function calculateJlptExamScore(level = 'N3', sections = [], answers = {}
     let maxPoints = 60;
     let minPassPoints = 19;
 
-    const secIdLower = (sec.id || '').toLowerCase();
-    const isListening = secIdLower.includes('listening') || secIdLower.includes('choukai');
+    const configuredMaxPoints = finiteOr(sec.maxPoints, finiteOr(options.sectionMaxPoints, 0));
+    const configuredPassPoints = finiteOr(
+      sec.minPassPoints,
+      finiteOr(options.sectionPassMark, 0),
+    );
 
-    if (isListening) {
-      maxPoints = 60;
-      minPassPoints = 19;
+    if (configuredMaxPoints > 0) {
+      maxPoints = configuredMaxPoints;
+      minPassPoints = configuredPassPoints > 0 ? configuredPassPoints : 19;
     } else {
-      const writtenSecCount = sections.filter(s => {
-        const sid = (s.id || '').toLowerCase();
-        return !sid.includes('listening') && !sid.includes('choukai');
-      }).length;
+      const secIdLower = (sec.id || '').toLowerCase();
+      const isListening = secIdLower.includes('listening') || secIdLower.includes('choukai');
 
-      if (writtenSecCount === 1) {
-        maxPoints = 120;
-        minPassPoints = 38;
-      } else {
+      if (isListening) {
         maxPoints = 60;
         minPassPoints = 19;
+      } else {
+        const writtenSecCount = sections.filter(s => {
+          const sid = (s.id || '').toLowerCase();
+          return !sid.includes('listening') && !sid.includes('choukai');
+        }).length;
+
+        if (writtenSecCount === 1) {
+          maxPoints = 120;
+          minPassPoints = 38;
+        } else {
+          maxPoints = 60;
+          minPassPoints = 19;
+        }
       }
     }
 
     calculatedMaxScore += maxPoints;
 
     const accuracy = totalQ > 0 ? (correctQ / totalQ) : 0;
-    const scaledScore = Math.min(maxPoints, Math.round(accuracy * maxPoints));
+    const irtEstimate = useIrtEstimate
+      ? estimateIrtSectionScore(qList, answers, maxPoints)
+      : null;
+    const scaledScore = irtEstimate
+      ? irtEstimate.scaledScore
+      : Math.min(maxPoints, Math.round(accuracy * maxPoints));
     const isSectionPassed = scaledScore >= minPassPoints;
 
     if (!isSectionPassed) {
@@ -159,6 +334,13 @@ export function calculateJlptExamScore(level = 'N3', sections = [], answers = {}
       maxPoints,
       minPassPoints,
       isPassed: isSectionPassed,
+      scoringMethod: useIrtEstimate ? IRT_ESTIMATE_MODEL.id : 'raw-linear',
+      isEstimated: useIrtEstimate,
+      abilityEstimate: irtEstimate?.abilityEstimate ?? null,
+      standardError: irtEstimate?.standardError ?? null,
+      scaledStandardError: irtEstimate?.scaledStandardError ?? null,
+      parameterSource: irtEstimate?.parameterSource ?? null,
+      explicitParameterCount: irtEstimate?.explicitParameterCount ?? 0,
     });
   });
 
@@ -189,6 +371,13 @@ export function calculateJlptExamScore(level = 'N3', sections = [], answers = {}
 
   return {
     level: normLevel,
+    scoringMethod: useIrtEstimate ? IRT_ESTIMATE_MODEL.id : 'raw-linear',
+    scoringModelLabel: useIrtEstimate ? IRT_ESTIMATE_MODEL.label : 'Raw accuracy scaling',
+    scoringModelVersion: useIrtEstimate ? IRT_ESTIMATE_MODEL.version : '1.0.0',
+    isEstimated: useIrtEstimate,
+    scoreNotice: useIrtEstimate
+      ? 'Practice estimate only. Official JLPT item parameters and score conversion are not public.'
+      : null,
     totalScaledScore,
     maxScore: effectiveMaxScore,
     overallPassMark: effectivePassMark,
