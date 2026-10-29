@@ -48,6 +48,11 @@ scripts/*
 !scripts/pass_n3_within_20_days/**
 !scripts/chokuzen_n3_set5/
 !scripts/chokuzen_n3_set5/**
+!scripts/chokuzen_n2/
+!scripts/chokuzen_n2/**
+!scripts/fix_power_drill_n3_options.cjs
+!scripts/fix_power_drill_n2_options.cjs
+!scripts/add_power_drill_n3_translations.cjs
 !scripts/firebase_backup/
 scripts/firebase_backup/*
 !scripts/firebase_backup/export_books.cjs

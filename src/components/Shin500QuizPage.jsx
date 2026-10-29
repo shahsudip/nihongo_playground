@@ -40,17 +40,19 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
   const [isFinished, setIsFinished] = useState(false);
   const [showExitModal, setShowExitModal] = useState(false);
 
-  // Warn user if trying to close browser/tab with active answers
+  // Handle browser back button: trigger in-app UI exit modal instead of native dialog
   useEffect(() => {
-    const handleBeforeUnload = (e) => {
-      const answeredCount = Object.keys(answers).length;
-      if (answeredCount > 0 && !isFinished) {
-        e.preventDefault();
-        e.returnValue = '';
-      }
-    };
-    window.addEventListener('beforeunload', handleBeforeUnload);
-    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+    const answeredCount = Object.keys(answers).length;
+    if (answeredCount > 0 && !isFinished) {
+      window.history.pushState({ modalGuard: true }, '');
+      const handlePopState = () => {
+        setShowExitModal(true);
+      };
+      window.addEventListener('popstate', handlePopState);
+      return () => {
+        window.removeEventListener('popstate', handlePopState);
+      };
+    }
   }, [answers, isFinished]);
 
   // Helper to extract correct index & text

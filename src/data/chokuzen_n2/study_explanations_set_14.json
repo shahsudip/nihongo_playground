@@ -1,0 +1,974 @@
+{
+  "n2-set-14-q-1": {
+    "translation": "Taking responsibility, I will resign as a council member.",
+    "correctAnswerEnglish": "yameru / 辞める - to resign, step down, or quit an official post.",
+    "choices": [
+      {
+        "reason": "あきらめる means to give up or abandon hope; not the reading or meaning of 辞める."
+      },
+      {
+        "reason": "うめる means to bury or fill in; not the reading of 辞める."
+      },
+      {
+        "reason": "つとめる means to serve, work, or make an effort (務める/勤める/努める), not resign."
+      },
+      {
+        "reason": "やめる is the correct reading of 辞める, meaning to step down or resign from an office."
+      }
+    ]
+  },
+  "n2-set-14-q-2": {
+    "translation": "LED bulbs have low power consumption and a long lifespan.",
+    "correctAnswerEnglish": "shouhi / 消費 - consumption; 消費電力 means power consumption.",
+    "choices": [
+      {
+        "reason": "じょうひ incorrectly voices 消 as jyou."
+      },
+      {
+        "reason": "しょうひ is the correct on-yomi reading of 消費 (shouhi)."
+      },
+      {
+        "reason": "しょうび incorrectly voices 費 as bi."
+      },
+      {
+        "reason": "じょうび incorrectly voices both kanji as jyoubi."
+      }
+    ]
+  },
+  "n2-set-14-q-3": {
+    "translation": "It is important to make efforts toward the future with clear goals.",
+    "correctAnswerEnglish": "meikaku / 明確 - clear, distinct, definite.",
+    "choices": [
+      {
+        "reason": "めいたく misreads 確 as taku."
+      },
+      {
+        "reason": "めいかく is the correct on-yomi reading of 明確 (clear/definite)."
+      },
+      {
+        "reason": "みょうたく uses the kan-on reading myou and misreads 確 as taku."
+      },
+      {
+        "reason": "みょうかく uses myou instead of the standard mei for 明 in this word."
+      }
+    ]
+  },
+  "n2-set-14-q-4": {
+    "translation": "Because the cold weather suddenly returned, I caught a cold.",
+    "correctAnswerEnglish": "gyakumodori / 逆戻り - reverting, returning back, or relapsing.",
+    "choices": [
+      {
+        "reason": "さかもどり uses the kun-yomi saka instead of the on-yomi gyaku."
+      },
+      {
+        "reason": "ぎゃくもどり is the correct reading of 逆戻り (reversion/turning back)."
+      },
+      {
+        "reason": "ぎゃくもとり fails to voice 戻り (modori) in this compound."
+      },
+      {
+        "reason": "さかさもどり is an incorrect reading using sakasa."
+      }
+    ]
+  },
+  "n2-set-14-q-5": {
+    "translation": "He is good at his job, but he has no sense of time.",
+    "correctAnswerEnglish": "kannen / 観念 - sense, concept, awareness (時間の観念 = sense of time / punctuality).",
+    "choices": [
+      {
+        "reason": "がいねん is the reading of 概念 (general concept), not 観念."
+      },
+      {
+        "reason": "けねん is the reading of 懸念 (concern/worry)."
+      },
+      {
+        "reason": "かんねん is the correct reading of 観念; 時間の観念 means a sense of time or punctuality."
+      },
+      {
+        "reason": "りねん is the reading of 理念 (philosophy/ideology)."
+      }
+    ]
+  },
+  "n2-set-14-q-6": {
+    "translation": "I make a conscious effort to have leeway both mentally and in terms of time.",
+    "correctAnswerEnglish": "yoyuu / 余裕 - surplus, margin, leeway, or room to spare.",
+    "choices": [
+      {
+        "reason": "予裕 uses 予 (beforehand) instead of 余 (surplus/remainder)."
+      },
+      {
+        "reason": "余裕 is the correct kanji combination for yoyuu (leeway/room to spare)."
+      },
+      {
+        "reason": "予有 uses 予 and 有, which is incorrect."
+      },
+      {
+        "reason": "余有 uses 有 instead of 裕 (abundant)."
+      }
+    ]
+  },
+  "n2-set-14-q-7": {
+    "translation": "My mobile phone broke, so I cannot get in touch with my friends.",
+    "correctAnswerEnglish": "kowarete / 壊れて - broken or malfunctioning.",
+    "choices": [
+      {
+        "reason": "壊れて is the correct kanji for kowarete, describing a broken device or machine."
+      },
+      {
+        "reason": "傷れて is not a standard verb form; 傷つく means to get hurt or damaged."
+      },
+      {
+        "reason": "破れて is yaburete (torn, ripped, or defeated)."
+      },
+      {
+        "reason": "崩れて is kuzurete (collapsed, crumbled)."
+      }
+    ]
+  },
+  "n2-set-14-q-8": {
+    "translation": "I pay utility bills such as electricity and water by credit card.",
+    "correctAnswerEnglish": "koukyou / 公共 - public or communal; 公共料金 means utility bills.",
+    "choices": [
+      {
+        "reason": "公協 is not the word for public; 協 means cooperate."
+      },
+      {
+        "reason": "交協 uses 交 (intersect/traffic) and 協, which is incorrect."
+      },
+      {
+        "reason": "公共 is the correct kanji combination for koukyou (public/communal)."
+      },
+      {
+        "reason": "交共 uses 交 instead of 公."
+      }
+    ]
+  },
+  "n2-set-14-q-9": {
+    "translation": "Through education with stricter school rules and exams, juvenile delinquency was reduced.",
+    "correctAnswerEnglish": "hanzai / 犯罪 - crime or offense; 少年犯罪 means juvenile delinquency.",
+    "choices": [
+      {
+        "reason": "犯罰 combines crime and punishment (罰) and is read hanbatsu, not hanzai."
+      },
+      {
+        "reason": "犯罪 is the correct kanji combination for hanzai (crime/offense)."
+      },
+      {
+        "reason": "反罰 uses 反 (anti/oppose) and 罰, which is incorrect."
+      },
+      {
+        "reason": "反罪 uses 反 instead of 犯 (commit/perpetrate)."
+      }
+    ]
+  },
+  "n2-set-14-q-10": {
+    "translation": "There are quite a few single women living alone who suffer burglaries.",
+    "correctAnswerEnglish": "au / 遭う - to encounter or suffer (an undesirable event, damage, or crime).",
+    "choices": [
+      {
+        "reason": "遂う is an invalid reading/kanji here; 遂げる means to accomplish."
+      },
+      {
+        "reason": "遣う is tsukau (to use, dispatch)."
+      },
+      {
+        "reason": "逸う is not used for au; 逸らす/逸れる means to deviate or divert."
+      },
+      {
+        "reason": "遭う is the correct kanji for suffering misfortune or crime (被害に遭う)."
+      }
+    ]
+  },
+  "n2-set-14-q-11": {
+    "translation": "Regarding the procedures, please refer to the distributed booklet.",
+    "correctAnswerEnglish": "shousasshi / 小冊子 - booklet, pamphlet, or brochure.",
+    "choices": [
+      {
+        "reason": "薄冊子 is not an established compound; the adjective form is 薄い冊子."
+      },
+      {
+        "reason": "厚冊子 is not a compound."
+      },
+      {
+        "reason": "大冊子 is not a standard Japanese term for a booklet."
+      },
+      {
+        "reason": "小冊子 (shousasshi) is the standard compound meaning a booklet or brochure."
+      }
+    ]
+  },
+  "n2-set-14-q-12": {
+    "translation": "They say it takes 10 years to become a full-fledged artisan in this field.",
+    "correctAnswerEnglish": "ichininmae / 一人前 - full-fledged, independent, adult, or fully qualified.",
+    "choices": [
+      {
+        "reason": "一人力 (ichininriki) means the strength or labor of one person."
+      },
+      {
+        "reason": "一人前 (ichininmae) is the established idiom meaning a fully qualified, independent professional."
+      },
+      {
+        "reason": "一人者 (ichininsha) means the foremost authority or leader in a field, not a full-fledged worker."
+      },
+      {
+        "reason": "一人並 is not standard; 人並み (hitonami) means average or ordinary."
+      }
+    ]
+  },
+  "n2-set-14-q-13": {
+    "translation": "The weekly magazine sensationalized the entertainer's private life.",
+    "correctAnswerEnglish": "shiseikatsu / 私生活 - private life or personal life.",
+    "choices": [
+      {
+        "reason": "俗生活 is not standard; 俗世 refers to the secular or mundane world."
+      },
+      {
+        "reason": "個生活 is not an established compound; 個人 (individual) is used differently."
+      },
+      {
+        "reason": "私生活 (shiseikatsu) is the standard term for a person's private life."
+      },
+      {
+        "reason": "自生活 is not a valid Japanese compound."
+      }
+    ]
+  },
+  "n2-set-14-q-14": {
+    "translation": "In this area, wild animals sometimes wander into humans' sphere of living.",
+    "correctAnswerEnglish": "seikatsuken / 生活圏 - sphere of daily life / living territory.",
+    "choices": [
+      {
+        "reason": "生活圏 (seikatsuken) is the established term meaning sphere or zone of daily life."
+      },
+      {
+        "reason": "生活層 is not a natural compound; 層 typically designates social strata."
+      },
+      {
+        "reason": "生活間 does not form a valid compound for living territory."
+      },
+      {
+        "reason": "生活中 means 'in the middle of living' and cannot describe entering a territory."
+      }
+    ]
+  },
+  "n2-set-14-q-15": {
+    "translation": "Numbered tickets will be distributed on a first-come, first-served basis.",
+    "correctAnswerEnglish": "senchakujun / 先着順 - first-come, first-served order.",
+    "choices": [
+      {
+        "reason": "先着着 is redundant and not a valid word."
+      },
+      {
+        "reason": "先着番 is not standard; the suffix for order of arrival is 順."
+      },
+      {
+        "reason": "先着順 (senchakujun) is the standard expression meaning in order of arrival."
+      },
+      {
+        "reason": "先着人 is not a word."
+      }
+    ]
+  },
+  "n2-set-14-q-16": {
+    "translation": "Around the time I took office as president in place of my father, all I thought about was wanting to surpass him.",
+    "correctAnswerEnglish": "shuunin / 就任 - taking office, assuming an official post.",
+    "choices": [
+      {
+        "reason": "社長に就任する is the correct collocation for assuming the post of company president."
+      },
+      {
+        "reason": "交代 means replacement or alternation; one does not say 社長に交代した in this role-taking sense."
+      },
+      {
+        "reason": "就職 means finding employment or getting a job, not assuming a presidency."
+      },
+      {
+        "reason": "後任 is a noun meaning successor; it does not take する directly in this sentence structure."
+      }
+    ]
+  },
+  "n2-set-14-q-17": {
+    "translation": "That many elementary school pupils go to school without eating breakfast is a serious problem.",
+    "correctAnswerEnglish": "shinkoku / 深刻 - serious, grave, acute (深刻な問題 = serious problem).",
+    "choices": [
+      {
+        "reason": "皮肉 means ironic or sarcastic, not a grave social issue."
+      },
+      {
+        "reason": "深刻 (shinkoku) means serious or grave; 深刻な問題 is the standard collocation."
+      },
+      {
+        "reason": "格別 means exceptional or special, not serious."
+      },
+      {
+        "reason": "真剣 means earnest or serious in attitude, but does not modify 問題 like 深刻 does."
+      }
+    ]
+  },
+  "n2-set-14-q-18": {
+    "translation": "My part-time jobs during my student days were purely for covering living expenses.",
+    "correctAnswerEnglish": "junsui ni / 純粋に - purely, solely, entirely.",
+    "choices": [
+      {
+        "reason": "平等に means equally or fairly, not purely for living expenses."
+      },
+      {
+        "reason": "陽気に means cheerfully or merrily."
+      },
+      {
+        "reason": "面倒に means troublesomely."
+      },
+      {
+        "reason": "純粋に (junsui ni) means purely or solely, emphasizing that the sole purpose was living costs."
+      }
+    ]
+  },
+  "n2-set-14-q-19": {
+    "translation": "The route where the president was to pass was strictly guarded by a large number of police officers.",
+    "correctAnswerEnglish": "genjuu / 厳重 - strict, tight, heavy (厳重に警備する = strictly guard).",
+    "choices": [
+      {
+        "reason": "厳重に警備する is the standard collocation for tightly guarding or securing an area."
+      },
+      {
+        "reason": "強力 means powerful or strong, not strict security."
+      },
+      {
+        "reason": "膨大 means enormous or vast in quantity, not strict."
+      },
+      {
+        "reason": "過多 means excessive or surplus, not strict."
+      }
+    ]
+  },
+  "n2-set-14-q-20": {
+    "translation": "In the horse racing world, winning the Derby is the highest source of pride.",
+    "correctAnswerEnglish": "hokori / 誇り - pride, honor, boast (最高の誇り = greatest pride).",
+    "choices": [
+      {
+        "reason": "栄え (sakae) means prosperity or glory, but 最高の誇り (greatest pride/honor) is the natural idiom."
+      },
+      {
+        "reason": "譲り means conceding or inheriting."
+      },
+      {
+        "reason": "誇り (hokori) means pride; 最高の誇り denotes the greatest source of pride or honor."
+      },
+      {
+        "reason": "見ばえ means outward appearance or showiness."
+      }
+    ]
+  },
+  "n2-set-14-q-21": {
+    "translation": "Since it has gotten late, it is about time I took my leave. Thank you very much for the meal.",
+    "correctAnswerEnglish": "sorosoro / そろそろ - about time, soon, gradually.",
+    "choices": [
+      {
+        "reason": "とうとう means at last or in the end after a prolonged process."
+      },
+      {
+        "reason": "いよいよ means finally, at long last, or more and more."
+      },
+      {
+        "reason": "そろそろ失礼致します is the standard polite formula for taking one's leave ('it is about time I went')."
+      },
+      {
+        "reason": "たまたま means by chance or accidentally."
+      }
+    ]
+  },
+  "n2-set-14-q-22": {
+    "translation": "As remarks continued regarding the amendment of the ordinance, the debate heated up.",
+    "correctAnswerEnglish": "hiito appu / ヒートアップ - heat up, become heated or intense.",
+    "choices": [
+      {
+        "reason": "ヒートアップ accurately describes a debate or argument becoming heated and intense."
+      },
+      {
+        "reason": "イメージアップ means improving one's public image."
+      },
+      {
+        "reason": "バックアップ means backing up data or providing support."
+      },
+      {
+        "reason": "タイアップ means a business collaboration or tie-up."
+      }
+    ]
+  },
+  "n2-set-14-q-23": {
+    "translation": "He denied / retracted his own statement.",
+    "correctAnswerEnglish": "hitei shita / 否定した - denied or negated, matching 打ち消した.",
+    "choices": [
+      {
+        "reason": "修正した means modified or corrected."
+      },
+      {
+        "reason": "伝達した means transmitted or conveyed."
+      },
+      {
+        "reason": "記録した means recorded."
+      },
+      {
+        "reason": "否定した means denied, directly paraphrasing 打ち消した (negated/denied)."
+      }
+    ]
+  },
+  "n2-set-14-q-24": {
+    "translation": "This newspaper article criticizing politics is very sharp / incisive.",
+    "correctAnswerEnglish": "sugurete iru / 優れている - excellent, outstanding, perceptive; matches 鋭い in this context.",
+    "choices": [
+      {
+        "reason": "間違っている means incorrect or mistaken."
+      },
+      {
+        "reason": "優れている means excellent or perceptive, capturing the keen insight of 鋭い (sharp/incisive)."
+      },
+      {
+        "reason": "冷静である means calm or composed."
+      },
+      {
+        "reason": "読まれている means widely read."
+      }
+    ]
+  },
+  "n2-set-14-q-25": {
+    "translation": "Ms. Kimura is constantly checking her mobile phone emails.",
+    "correctAnswerEnglish": "itsumo / いつも - always or constantly, matching 始終 (shijuu).",
+    "choices": [
+      {
+        "reason": "何度か means several times."
+      },
+      {
+        "reason": "いつも means always or all the time, directly matching 始終 (continuously from start to finish)."
+      },
+      {
+        "reason": "はじめに means at the beginning or first."
+      },
+      {
+        "reason": "たまに means occasionally or once in a while."
+      }
+    ]
+  },
+  "n2-set-14-q-26": {
+    "translation": "I am entrusting this work to you, so do your best as much as you can.",
+    "correctAnswerEnglish": "dekiru dake / できるだけ - as much as possible, matching せいぜい (to the utmost).",
+    "choices": [
+      {
+        "reason": "いいかげんに means half-heartedly or carelessly."
+      },
+      {
+        "reason": "つらくても means even if it is painful or hard."
+      },
+      {
+        "reason": "できるだけ means as much as possible, matching せいぜい used in an encouraging imperative sense."
+      },
+      {
+        "reason": "最後まで means until the very end."
+      }
+    ]
+  },
+  "n2-set-14-q-27": {
+    "translation": "If we implement this plan, what advantages will there be?",
+    "correctAnswerEnglish": "yuuri na ten / 有利な点 - advantageous points / benefits, matching メリット.",
+    "choices": [
+      {
+        "reason": "不利な点 means disadvantageous points (demerits)."
+      },
+      {
+        "reason": "有利な点 means advantageous points, directly matching メリット (merits/advantages)."
+      },
+      {
+        "reason": "疑問点 means doubtful or questionable points."
+      },
+      {
+        "reason": "問題点 means problematic points or issues."
+      }
+    ]
+  },
+  "n2-set-14-q-28": {
+    "translation": "Japan relies on imports for the vast majority of its energy.",
+    "correctAnswerEnglish": "taihan / 大半 - the majority, most, or greater part of.",
+    "choices": [
+      {
+        "reason": "For reaching an amount like 2 trillion yen, 約 (approximately) or およそ fits; 大半 cannot modify a numerical total like this."
+      },
+      {
+        "reason": "エネルギーの大半を輸入に頼っている correctly uses 大半 to mean the vast majority of a whole."
+      },
+      {
+        "reason": "For evidence being plentiful, 十分 (sufficiently) or 数多く fits; 大半 cannot adverbially modify having evidence."
+      },
+      {
+        "reason": "For amassing wealth, 莫大な富 (enormous wealth) or 多額の fits; 大半 cannot modify 富 as an adjective here."
+      }
+    ]
+  },
+  "n2-set-14-q-29": {
+    "translation": "My husband uses work socializing as a pretext to come home drinking every night.",
+    "correctAnswerEnglish": "koujitsu / 口実 - pretext, excuse.",
+    "choices": [
+      {
+        "reason": "仕事の付き合いを口実に correctly uses 口実 meaning a pretext or excuse to justify an action."
+      },
+      {
+        "reason": "Picking up a wallet was the trigger or opportunity (きっかけ), not a pretext (口実)."
+      },
+      {
+        "reason": "For borrowing money, there are conditions or rules (条件/手続き), not 口実."
+      },
+      {
+        "reason": "Bullying would be the actual cause or reason (原因/理由), not an excuse or pretext (口実)."
+      }
+    ]
+  },
+  "n2-set-14-q-30": {
+    "translation": "The public was disappointed in the prime minister, who repeatedly made ambiguous statements.",
+    "correctAnswerEnglish": "aimai / あいまい - ambiguous, vague, equivocal.",
+    "choices": [
+      {
+        "reason": "For a dream that is indistinct, ぼんやりとした or かすかな fits, not あいまい."
+      },
+      {
+        "reason": "あいまいな発言 correctly refers to vague or ambiguous political remarks."
+      },
+      {
+        "reason": "If information is ambiguous (あいまい), it contradicts being likely true (確からしい); 不確かな would describe uncertainty."
+      },
+      {
+        "reason": "For books left unread due to lack of time, 放置されている or 読まずじまい fits; あいまい cannot mean unfinished."
+      }
+    ]
+  },
+  "n2-set-14-q-31": {
+    "translation": "When explaining something to someone, speak while keeping to the main points.",
+    "correctAnswerEnglish": "youten / 要点 - main point, gist, essential point.",
+    "choices": [
+      {
+        "reason": "For a speech summarized efficiently, 要領よく (skillfully/concisely) fits, not 要点よく."
+      },
+      {
+        "reason": "For someone being clumsy or inept at tasks, 要領が悪い fits, not 要点が悪い."
+      },
+      {
+        "reason": "要点をおさえて話す correctly uses 要点 for grasping and focusing on the core/essential points."
+      },
+      {
+        "reason": "For famous sightseeing spots in an ancient capital, 名所 or 見どころ fits, not 要点."
+      }
+    ]
+  },
+  "n2-set-14-q-32": {
+    "translation": "The efficacy of this headache medicine lasts for about 12 hours.",
+    "correctAnswerEnglish": "jizoku / 持続 - lasting, persisting, continuation (効き目が持続する = efficacy lasts).",
+    "choices": [
+      {
+        "reason": "効き目が持続する is the natural and correct collocation for the effects of medicine persisting over time."
+      },
+      {
+        "reason": "For driving continuously through the night without stopping, 連続して or 続けて fits, not 持続して."
+      },
+      {
+        "reason": "For unpleasant incidents occurring repeatedly or in succession, 立て続けに or 連続して fits."
+      },
+      {
+        "reason": "For food spoiling quickly or not keeping fresh, 日持ちしない (does not keep) fits, not 持続しない."
+      }
+    ]
+  },
+  "n2-set-14-q-33": {
+    "translation": "A: 'When was the exam again?' B: 'If I remember correctly, Yao said something like it's next week.'",
+    "correctAnswerEnglish": "da to ka / だとか - something like ... / indirect hearsay of uncertain information.",
+    "choices": [
+      {
+        "reason": "だか does not naturally attach to quote reported information to a third party like this."
+      },
+      {
+        "reason": "だとか expresses hearsay or indirect quotation where the speaker is not entirely certain of the exact detail."
+      },
+      {
+        "reason": "だが is a conjunctive particle meaning 'but/however', not a hearsay marker."
+      },
+      {
+        "reason": "だけど means 'however/although' and does not fit quoting Yao's statement."
+      }
+    ]
+  },
+  "n2-set-14-q-34": {
+    "translation": "As for my niece's cuteness, she is just like an angel!",
+    "correctAnswerEnglish": "to ittara / といったら - speaking of ... / the extent of ... is extraordinary.",
+    "choices": [
+      {
+        "reason": "としたら sets up a hypothetical condition ('if we assume that...')."
+      },
+      {
+        "reason": "といえば brings up a topic based on association ('speaking of...')."
+      },
+      {
+        "reason": "といっても means 'even though one says...' (qualifying a statement)."
+      },
+      {
+        "reason": "といったら emphasizes the extreme degree of the niece's cuteness, matching まるで天使のようだ."
+      }
+    ]
+  },
+  "n2-set-14-q-35": {
+    "translation": "Precisely because I made the same mistake myself, I am warning you.",
+    "correctAnswerEnglish": "kara koso / からこそ - precisely because, for the very reason that.",
+    "choices": [
+      {
+        "reason": "からこそ emphasizes the precise reason: it is exactly because the speaker failed that they are warning you."
+      },
+      {
+        "reason": "からには means 'now that / since', expressing determination or obligation, not explaining the speaker's motive like this."
+      },
+      {
+        "reason": "くせに expresses blame or contempt ('even though/despite'), which does not make sense here."
+      },
+      {
+        "reason": "ことだから is used with people's character ('knowing him / since it is X'), not a personal past failure."
+      }
+    ]
+  },
+  "n2-set-14-q-36": {
+    "translation": "Our company publishes many books, focusing primarily on picture books for children.",
+    "correctAnswerEnglish": "chuushin ni / 中心に - centered on, with a focus on.",
+    "choices": [
+      {
+        "reason": "真ん中に refers to a physical middle spot, not an operational or thematic focus."
+      },
+      {
+        "reason": "中心に (chuushin ni) means 'centered around / focusing primarily on', fitting the publisher's core lineup."
+      },
+      {
+        "reason": "中央に refers to physical central location or central government."
+      },
+      {
+        "reason": "最大に means 'at most' or 'to the maximum extent', which does not link a category to the rest of the publications."
+      }
+    ]
+  },
+  "n2-set-14-q-37": {
+    "translation": "The government instructed companies to recruit employees regardless of age.",
+    "correctAnswerEnglish": "ni kakawarinaku / にかかわりなく - regardless of, irrespective of.",
+    "choices": [
+      {
+        "reason": "にかぎりなく means 'infinitely / boundlessly' (e.g. 限りなく透明), not regardless of."
+      },
+      {
+        "reason": "にかかわりなく means 'regardless of / irrespective of', perfectly fitting recruitment open to all ages."
+      },
+      {
+        "reason": "はぬきにして means 'leaving aside / omitting' (e.g. お世辞は抜きにして), which is not the legal/formal standard for recruitment."
+      },
+      {
+        "reason": "のせいで means 'because of / due to (a bad cause)', which does not fit."
+      }
+    ]
+  },
+  "n2-set-14-q-38": {
+    "translation": "That person not only gave me directions, but even took the trouble of taking me all the way to the station.",
+    "correctAnswerEnglish": "bakari ka / ばかりか - not only ... but even/also.",
+    "choices": [
+      {
+        "reason": "ばかりに expresses 'simply because of ... (an unfortunate result occurred)'."
+      },
+      {
+        "reason": "ところに marks a temporal intersection ('just when...')."
+      },
+      {
+        "reason": "ばかりか expresses 'not only X, but also Y on top of it', matching the kind guide taking them to the station."
+      },
+      {
+        "reason": "どころか means 'far from / on the contrary', contrasting an expectation with a reality, not additive kindness."
+      }
+    ]
+  },
+  "n2-set-14-q-39": {
+    "translation": "Taking the change of president as an opportunity / turning point, it was decided to change the company name.",
+    "correctAnswerEnglish": "keiki ni shite / 契機にして - taking ... as an opportunity or turning point.",
+    "choices": [
+      {
+        "reason": "事情にして is not an established grammatical pattern."
+      },
+      {
+        "reason": "結果として means 'as a result', but does not take the を...として grammatical structure here."
+      },
+      {
+        "reason": "を契機にして is the standard pattern meaning 'taking X as a trigger/turning point for a positive new step'."
+      },
+      {
+        "reason": "原因にして is not a natural idiom; を原因として is occasionally used for causes of accidents, not institutional renewal."
+      }
+    ]
+  },
+  "n2-set-14-q-40": {
+    "translation": "You don't need to worry about the exam. With your level of academic ability, you are bound to pass.",
+    "correctAnswerEnglish": "goukaku suru ni kimatte iru / 合格するに決まっている - bound to pass / certain to pass.",
+    "choices": [
+      {
+        "reason": "合格するわけがある would imply there is a reason/justification, but わけがない is the normal pattern for impossibility; this phrasing is unnatural."
+      },
+      {
+        "reason": "合格するものがある is ungrammatical; ものがある expresses a deep emotional quality ('there is something touching about...')."
+      },
+      {
+        "reason": "合格することに決めてある implies a personal plan decided beforehand, not an inevitable outcome."
+      },
+      {
+        "reason": "合格するに決まっている expresses the speaker's firm conviction that passing is certain."
+      }
+    ]
+  },
+  "n2-set-14-q-41": {
+    "translation": "It is said that one should not give kitchen knives as wedding gifts, but if the recipient wants one, isn't it fine?",
+    "correctAnswerEnglish": "okuru mono de wa nai / 贈るものではない - one should not give; it is improper to give.",
+    "choices": [
+      {
+        "reason": "贈らないものでない is a double negative meaning 'it is not that one doesn't give', contrary to the Japanese cultural superstition against giving knives."
+      },
+      {
+        "reason": "贈るものではない expresses a social norm or moral guideline: 'one ought not to give (knives as wedding gifts)'."
+      },
+      {
+        "reason": "贈らないわけではない means 'it's not that I don't give', which does not express the customary prohibition."
+      },
+      {
+        "reason": "贈るわけはない means 'there is no reason/way anyone would give', which does not fit the proverb-like advice."
+      }
+    ]
+  },
+  "n2-set-14-q-42": {
+    "translation": "People who do not push themselves too hard often end up lasting longer.",
+    "correctAnswerEnglish": "ganbarisuginai / がんばりすぎない - not overdoing it / not pushing oneself too hard.",
+    "choices": [
+      {
+        "reason": "がんばるにすぎない means 'merely doing one's best', which does not fit modifying people who pace themselves."
+      },
+      {
+        "reason": "がんばりすぎない means not pushing oneself beyond reasonable limits, which explains why they last longer (長続きする)."
+      },
+      {
+        "reason": "がんばろうとする means 'trying to do one's best', which would not explain the paradox marked by かえって (on the contrary)."
+      },
+      {
+        "reason": "がんばるばかりの means 'doing nothing but working hard', which would lead to burnout rather than lasting long."
+      }
+    ]
+  },
+  "n2-set-14-q-43": {
+    "translation": "Under normal circumstances the president himself should have come to visit you, but if you will excuse me, I, the department manager, have come instead.",
+    "correctAnswerEnglish": "omimai ni kuru tokoro / お見舞いにくるところ - should properly be the situation where he comes to visit.",
+    "choices": [
+      {
+        "reason": "お見舞いにくるところ captures the nuance of 'the situation where he ought to come in person, but...'."
+      },
+      {
+        "reason": "お見舞いされるはず means the president was supposed to be visited by others (passive), which reverses the courtesy."
+      },
+      {
+        "reason": "お見舞いにくること merely nominalizes the action without the counterfactual contrast marked by 本来なら...ですが."
+      },
+      {
+        "reason": "お見舞いにくるとき refers strictly to the time of arrival, which does not contrast properly with 本来なら."
+      }
+    ]
+  },
+  "n2-set-14-q-44": {
+    "translation": "A: 'It seems more people are acting violently at Coming-of-Age ceremonies.' B: 'In Japan, even upon turning 20, there are many people who are unable to fully become adults.'",
+    "correctAnswerEnglish": "narikirenai / なりきれない - unable to become completely / fully mature.",
+    "choices": [
+      {
+        "reason": "なりそうもない means 'showing no signs of becoming / unlikely to become', which lacks the nuance of incomplete transition into adulthood."
+      },
+      {
+        "reason": "なるはずがない means 'it is impossible that they become', which is too absolute and inaccurate."
+      },
+      {
+        "reason": "なりきれない means unable to become fully or completely, perfectly describing young adults who remain immature."
+      },
+      {
+        "reason": "なっていられない means 'cannot afford to stay as', which does not fit the grammar or context."
+      }
+    ]
+  },
+  "n2-set-14-q-45": {
+    "translation": "Pictographic marks are displayed so that even people who cannot read Japanese can understand them.",
+    "correctAnswerEnglish": "you ni / ように - so that; option 2 sits at the star in 'にも 理解できる ように 絵による'.",
+    "choices": [
+      {
+        "reason": "にも attaches to 日本語が読めない人 to mean 'even for people who cannot read Japanese', placing it 1st."
+      },
+      {
+        "reason": "ように follows the potential verb 理解できる to express purpose ('so that they can understand'), placing it 3rd at the star."
+      },
+      {
+        "reason": "理解できる describes the ability of the non-readers, placing it 2nd after にも."
+      },
+      {
+        "reason": "絵による modifies マーク ('marks based on pictures'), placing it 4th before マーク."
+      }
+    ]
+  },
+  "n2-set-14-q-46": {
+    "translation": "When you are hesitating over whether to do something or not, doing it often saves you from regret.",
+    "correctAnswerEnglish": "ka to / かと - quoting hesitation between options; option 3 sits at the star in 'やめよう かと 迷ったときは やったほうが'.",
+    "choices": [
+      {
+        "reason": "やったほうが ('it is better to do it') serves as the subject phrase before 悔やまなくてすむ, placing it 4th."
+      },
+      {
+        "reason": "迷ったときは ('when you are hesitating') sets the conditional context, placing it 3rd."
+      },
+      {
+        "reason": "かと completes the quotation やろうかやめようかと ('wondering whether to do it or not'), placing it 2nd at the star."
+      },
+      {
+        "reason": "やめよう balances やろうか to form the dilemma 'do it or refrain', placing it 1st."
+      }
+    ]
+  },
+  "n2-set-14-q-47": {
+    "translation": "A meeting was held to create new products based on customers' feedback.",
+    "correctAnswerEnglish": "shite / して - based on (をもとにして); option 4 sits at the star in 'もとに して 新製品を 作る'.",
+    "choices": [
+      {
+        "reason": "新製品を is the direct object of the verb 作る, placing it 3rd."
+      },
+      {
+        "reason": "もとに follows お客様の意見を to start the pattern をもとにして, placing it 1st."
+      },
+      {
+        "reason": "作る modifies ための会議 ('meeting for making...'), placing it 4th."
+      },
+      {
+        "reason": "して completes the compound particle をもとにして ('based on'), placing it 2nd at the star."
+      }
+    ]
+  },
+  "n2-set-14-q-48": {
+    "translation": "After fiercely disputing over their parents' inheritance, the siblings ended up parting ways in bitter conflict.",
+    "correctAnswerEnglish": "hageshiku arasotta / はげしく争った - fiercely disputed; option 4 sits at the star in 'めぐって 兄弟が はげしく争った あげく'.",
+    "choices": [
+      {
+        "reason": "めぐって follows 親の遺産を to mean 'concerning / over parents' inheritance', placing it 1st."
+      },
+      {
+        "reason": "兄弟が is the grammatical subject performing the dispute, placing it 2nd."
+      },
+      {
+        "reason": "あげく follows the past tense verb 争った to mean 'in the end after...', placing it 4th."
+      },
+      {
+        "reason": "はげしく争った expresses the fierce fighting and sits 3rd at the star."
+      }
+    ]
+  },
+  "n2-set-14-q-49": {
+    "translation": "The reason why many housewives love traveling is not only that they enjoy seeing rare scenery, but also that they don't have to cook.",
+    "correctAnswerEnglish": "ryouri o shinakute ii / 料理をしなくていい - not having to cook; option 1 sits at the star in '好きな だけでなく 料理をしなくていい ということ'.",
+    "choices": [
+      {
+        "reason": "料理をしなくていい introduces the second benefit ('not having to cook'), placing it 3rd at the star."
+      },
+      {
+        "reason": "好きな attaches to 見るのが to form 'liking to see...', placing it 1st."
+      },
+      {
+        "reason": "だけでなく follows 好きな to mean 'not only liking...', placing it 2nd."
+      },
+      {
+        "reason": "ということ nominalizes the clause before も理由の1つだ, placing it 4th."
+      }
+    ]
+  },
+  "n2-set-14-q-50": {
+    "translation": "Communication involves the process of taking information inward through 'listening' and 'reading', and transmitting information outward through 'speaking' and 'writing'.",
+    "correctAnswerEnglish": "a yomu / b kaku - taking in input is reading (読む); transmitting output is writing (書く).",
+    "choices": [
+      {
+        "reason": "'Reading' (読む) takes information in (中に取り入れる) alongside listening, while 'writing' (書く) transmits information outward (外に発信する) alongside speaking."
+      },
+      {
+        "reason": "Reverses reading and writing, placing writing as input and reading as output."
+      },
+      {
+        "reason": "Places speaking and listening into the blanks, which duplicates the words already in the sentence."
+      },
+      {
+        "reason": "Places listening into b, which contradicts transmitting information outward."
+      }
+    ]
+  },
+  "n2-set-14-q-51": {
+    "translation": "Listening accounts for as much as 45% of time; nevertheless, practice in listening tends rarely to be conducted.",
+    "correctAnswerEnglish": "ni mo kakawarazu / にもかかわらず - despite that / nevertheless.",
+    "choices": [
+      {
+        "reason": "だからこそ means 'precisely for that reason', which would illogically imply that high usage causes a lack of practice."
+      },
+      {
+        "reason": "のために indicates purpose or negative causality, which does not link the contrasting facts."
+      },
+      {
+        "reason": "それにもかかわらず ('in spite of that / nevertheless') correctly introduces the surprising contrast between 45% usage and the lack of listening training."
+      },
+      {
+        "reason": "にしたがって means 'in accordance with / as X changes', which does not express contradiction."
+      }
+    ]
+  },
+  "n2-set-14-q-52": {
+    "translation": "This is likely because, whereas voices and sounds enter the ears naturally, speaking, reading, and writing are conscious activities.",
+    "correctAnswerEnglish": "ishikiteki na / 意識的な - conscious, deliberate (contrasting with 自然に耳に入ってくる).",
+    "choices": [
+      {
+        "reason": "無意識の means unconscious, which is the opposite of the active effort required for speaking, reading, and writing."
+      },
+      {
+        "reason": "自然な means natural, failing to contrast with 'sounds entering the ear naturally' (自然に耳に入ってくる)."
+      },
+      {
+        "reason": "意識的な (conscious/deliberate) provides the exact contrast to sounds naturally entering the ears without effort."
+      },
+      {
+        "reason": "不自然な means unnatural or awkward, which is not the distinction being made between passive sensation and active effort."
+      }
+    ]
+  },
+  "n2-set-14-q-53": {
+    "translation": "Next, listening to another person means paying attention to them, acknowledging their existence; conversely, if you do not listen, the person feels as if they have been rejected / denied.",
+    "correctAnswerEnglish": "hitei sareta you ni / 否定されたように - as if they have been negated / rejected (the opposite of 存在を認める).",
+    "choices": [
+      {
+        "reason": "攻撃されたように means as if attacked, which is an exaggerated physical/verbal assault rather than the denial of recognition."
+      },
+      {
+        "reason": "否定されたように (as if rejected/denied) is the exact opposite of 存在を認める (acknowledging one's existence) marked by 逆に (conversely)."
+      },
+      {
+        "reason": "認められたように means as if recognized, which contradicts not listening to them."
+      },
+      {
+        "reason": "注目されたように means as if paid attention to, which contradicts not listening."
+      }
+    ]
+  },
+  "n2-set-14-q-54": {
+    "translation": "By listening attentively to what they say, along with entering into a close relationship with the other person, they also come to feel goodwill toward you.",
+    "correctAnswerEnglish": "naru to tomo ni / なるとともに - along with becoming ... / at the same time as becoming ...",
+    "choices": [
+      {
+        "reason": "なりそうになると means 'when it seems about to become', which introduces an uncertain prospective state."
+      },
+      {
+        "reason": "なるとしても means 'even assuming that one enters', expressing a concession that contradicts the positive progression."
+      },
+      {
+        "reason": "なるにつけても means 'whenever one enters', which does not fit linking two parallel outcomes."
+      },
+      {
+        "reason": "なるとともに means 'along with becoming / at the same time as becoming', smoothly joining developing closeness and evoking goodwill."
+      }
+    ]
+  }
+}

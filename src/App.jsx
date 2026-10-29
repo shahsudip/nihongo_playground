@@ -63,6 +63,7 @@ const PracticeSetQuizPage = lazy(() => import('./components/PracticeSetQuizPage.
 const N4PracticeSetsListPage = lazy(() => import('./components/N4PracticeSetsListPage.jsx'));
 const N4PracticeSetDetailsPage = lazy(() => import('./components/N4PracticeSetDetailsPage.jsx'));
 const N4PracticeSetQuizPage = lazy(() => import('./components/N4PracticeSetQuizPage.jsx'));
+const ChokuzenN2Book = lazy(() => import('./components/ChokuzenN2Book.jsx'));
 
 const KanjiListPage = lazy(() => import('./components/KanjiListPage.jsx'));
 
@@ -257,6 +258,10 @@ export default function App() {
           />
 
           {/* --- PRACTICE SETS ROUTES --- */}
+          <Route path="/n2-practice-sets" element={<ChokuzenN2Book />} />
+          <Route path="/n2-practice-sets/:setId" element={<ChokuzenN2Book />} />
+          <Route path="/n2-practice-sets/:setId/:sectionId" element={<ChokuzenN2Book />} />
+          <Route path="/books/jlpt-n2-practice-sets" element={<Navigate to="/n2-practice-sets" replace />} />
           <Route
             path="/practice-sets"
             element={<ProtectedRoute><PracticeSetsListPage /></ProtectedRoute>}

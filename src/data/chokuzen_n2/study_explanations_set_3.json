@@ -1,0 +1,542 @@
+{
+  "n2-set-3-q-1": {
+    "translation": "More universities are incorporating volunteer activities into their elective courses.",
+    "correctAnswerEnglish": "選択 (sentaku) - selection; an elective course",
+    "choices": [
+      { "romaji": "sendaku", "reason": "The second kanji 択 is read taku here, not daku; this voices the wrong syllable." },
+      { "romaji": "zendaku", "reason": "Both syllables are incorrectly voiced; 選択 begins with sen and ends with taku." },
+      { "romaji": "sentaku", "reason": "選択 is read sentaku; 選択科目 is an elective subject or course." },
+      { "romaji": "zentaku", "reason": "The ending taku is right, but 選 is sen, not zen, in 選択." }
+    ]
+  },
+  "n2-set-3-q-2": {
+    "translation": "Constructing an airport requires an enormous amount of money.",
+    "correctAnswerEnglish": "膨大 (boudai) - enormous or vast",
+    "choices": [
+      { "romaji": "boudai", "reason": "膨大 is read boudai and describes an enormous cost or quantity." },
+      { "romaji": "choudai", "reason": "The first kanji 膨 is read bou in this word, not chou; choudai is not 膨大." },
+      { "romaji": "bakudai", "reason": "Bakudai is the reading of 莫大, another word for enormous, but the printed word is 膨大." },
+      { "romaji": "jindai", "reason": "The first kanji is not read jin; 膨大 begins with bou." }
+    ]
+  },
+  "n2-set-3-q-3": {
+    "translation": "A joke that I thought I had made lightly ended up hurting my friend.",
+    "correctAnswerEnglish": "冗談 (joudan) - joke",
+    "choices": [
+      { "romaji": "shoudan", "reason": "冗 is voiced as jou in 冗談, not shou." },
+      { "romaji": "jodan", "reason": "The first syllable is long: jou, not short jo." },
+      { "romaji": "joutan", "reason": "談 is read dan, with a voiced d, not tan." },
+      { "romaji": "joudan", "reason": "冗談 is read joudan and means a joke or joking remark." }
+    ]
+  },
+  "n2-set-3-q-4": {
+    "translation": "If the population keeps increasing like this, people around the world will probably end up fighting over food and water.",
+    "correctAnswerEnglish": "奪い合い (ubaiai) - struggle or competition to take something from one another",
+    "choices": [
+      { "romaji": "kisoi", "reason": "Kisoi corresponds to 競い, meaning competition; the printed verb 奪う is read ubau." },
+      { "romaji": "ubai", "reason": "奪い is ubai, from 奪う (ubau); 奪い合い means a struggle over a limited resource." },
+      { "romaji": "arasoi", "reason": "Arasoi means a dispute and is written 争い, not 奪い." },
+      { "romaji": "ukagai", "reason": "Ukagai comes from 伺う, to inquire or visit; it is not the reading of 奪い." }
+    ]
+  },
+  "n2-set-3-q-5": {
+    "translation": "Recently, various efforts have been advancing to build apartments and homes with strong crime-prevention capabilities.",
+    "correctAnswerEnglish": "性能 (seinou) - performance or functional capability",
+    "choices": [
+      { "romaji": "zeinou", "reason": "性 is read sei in 性能, not zei." },
+      { "romaji": "shounou", "reason": "Neither syllable matches the standard reading of 性能, seinou." },
+      { "romaji": "suunou", "reason": "性 is not read suu here; 防犯性能 refers to security performance." },
+      { "romaji": "seinou", "reason": "性能 is read seinou; 防犯性能 is the effectiveness of crime-prevention features." }
+    ]
+  },
+  "n2-set-3-q-6": {
+    "translation": "That coach is good at bringing out the players' hidden abilities.",
+    "correctAnswerEnglish": "隠れた (kakureta) - hidden or latent",
+    "choices": [
+      { "romaji": "kakureta", "reason": "隠れる means to be hidden; 隠れた能力 is a hidden ability." },
+      { "reason": "陰 means shade or shadow, but 陰れた is not the standard spelling of kakureta." },
+      { "reason": "隆 means flourishing or rising; 隆れた does not spell kakureta." },
+      { "reason": "隔 means to separate; 隔れた is not the standard spelling of hidden." }
+    ]
+  },
+  "n2-set-3-q-7": {
+    "translation": "Volcanic ash can enter electrical systems and cause various malfunctions.",
+    "correctAnswerEnglish": "系統 (keitou) - system or network",
+    "choices": [
+      { "reason": "計 relates to counting or planning; 計統 is not the compound for an electrical system." },
+      { "reason": "形 means shape; 形統 does not mean a system." },
+      { "romaji": "keitou", "reason": "系統 means a system or line; 電気系統 is the electrical system." },
+      { "reason": "経 means passing through or managing, but 経統 is not the spelling of keitou here." }
+    ]
+  },
+  "n2-set-3-q-8": {
+    "translation": "From now on, buildings in cities will probably become increasingly high-rise.",
+    "correctAnswerEnglish": "高層 (kousou) - high-rise or multistory",
+    "choices": [
+      { "reason": "構想 means a plan or concept; 構想化 does not describe buildings growing taller." },
+      { "romaji": "kousou", "reason": "高層 means high-rise; 高層化 means the shift toward taller buildings." },
+      { "reason": "後送 means sending something back or to the rear, unrelated to building height." },
+      { "reason": "効相 is not the compound for high-rise buildings; the intended kanji are 高層." }
+    ]
+  },
+  "n2-set-3-q-9": {
+    "translation": "I think human beings are never freed from worrying throughout their lives.",
+    "correctAnswerEnglish": "解放 (kaihou) - release or liberation",
+    "choices": [
+      { "reason": "倣 means to imitate; 解倣 is not the word for being freed from worries." },
+      { "reason": "封 means to seal; 解封 would refer to unsealing, not liberation from worries." },
+      { "reason": "報 means report or reward; 解報 is not the word meaning release." },
+      { "romaji": "kaihou", "reason": "解放される means to be released or freed; 悩むことから解放されない means never being free of worry." }
+    ]
+  },
+  "n2-set-3-q-10": {
+    "translation": "The nutritional value of vegetables and fruit has fallen compared with what it used to be.",
+    "correctAnswerEnglish": "比べて (kurabete) - compared with",
+    "choices": [
+      { "reason": "並べて means arranging side by side, not making a comparison of nutritional value." },
+      { "romaji": "kurabete", "reason": "比べて is the te-form of 比べる, to compare; 昔のものと比べて means compared with earlier produce." },
+      { "reason": "列べて is not the standard spelling of kurabete for comparison." },
+      { "reason": "対べて is not the standard spelling; 比 is the kanji used in 比べる." }
+    ]
+  },
+  "n2-set-3-q-11": {
+    "translation": "Due to various circumstances, this event will be canceled.",
+    "correctAnswerEnglish": "諸事情 (shojijou) - various circumstances",
+    "choices": [
+      { "reason": "多 means many, but 多事情 is not the conventional compound in this notice." },
+      { "reason": "複 means multiple or complex, but 複事情 is not the idiomatic expression." },
+      { "reason": "重 means heavy or repeated, but 重事情 does not mean various circumstances." },
+      { "romaji": "shojijou", "reason": "諸 means various; 諸事情により is a standard formal phrase meaning due to various circumstances." }
+    ]
+  },
+  "n2-set-3-q-12": {
+    "translation": "On Sunday, the family enjoyed a day trip.",
+    "correctAnswerEnglish": "日帰り (higaeri) - a day trip, returning the same day",
+    "choices": [
+      { "romaji": "higaeri", "reason": "日帰り means returning on the same day; 日帰りの旅行 is a day trip." },
+      { "reason": "泊 means an overnight stay, so 泊帰り is not the day-trip compound." },
+      { "reason": "行 relates to going, but 行帰り is not the set expression for a trip without an overnight stay." },
+      { "reason": "出 means going out; 出帰り is not the standard compound here." }
+    ]
+  },
+  "n2-set-3-q-13": {
+    "translation": "The road construction will begin in the next fiscal year.",
+    "correctAnswerEnglish": "来年度 (rainendo) - next fiscal or school year",
+    "choices": [
+      { "reason": "未 means not yet, but 未年度 is not the word for next fiscal year." },
+      { "romaji": "rainendo", "reason": "来年度 means the coming fiscal or school year, matching when construction is to start." },
+      { "reason": "数 means several or number; 数年度 is not the standard expression for next year." },
+      { "reason": "真 means true or real; 真年度 is not a time expression." }
+    ]
+  },
+  "n2-set-3-q-14": {
+    "translation": "A modern building equipped with the latest devices was constructed.",
+    "correctAnswerEnglish": "近代的 (kindaiteki) - modern",
+    "choices": [
+      { "reason": "風 means style, but 近代風な is not the expected adjective in this sentence." },
+      { "reason": "式 denotes a type or ceremony; 近代式な is not the intended adjectival form." },
+      { "romaji": "kindaiteki", "reason": "The suffix 的 forms the na-adjective 近代的な, meaning modern." },
+      { "reason": "性 means nature or tendency; 近代性な does not form the adjective used here." }
+    ]
+  },
+  "n2-set-3-q-15": {
+    "translation": "I see promise in him because he often asks precise questions.",
+    "correctAnswerEnglish": "将来性 (shouraisei) - future potential or promise",
+    "choices": [
+      { "reason": "将来感 is not the usual compound for a person's future potential." },
+      { "romaji": "shouraisei", "reason": "将来性を感じる means to sense that someone has future potential." },
+      { "reason": "化 indicates a process of change; 将来化 is not a word for promise." },
+      { "reason": "風 means style or manner; 将来風 is not the expression here." }
+    ]
+  },
+  "n2-set-3-q-16": {
+    "translation": "How did I do on the exam? It was not extremely good, but I think it was so-so.",
+    "correctAnswerEnglish": "まあまあ (maa maa) - so-so or reasonably good",
+    "choices": [
+      { "reason": "せいぜい means at most; it does not serve as the predicate せいぜいだった for this moderate assessment." },
+      { "reason": "そろそろ means soon or about time, not an assessment of exam performance." },
+      { "reason": "ゆうゆう means easily or leisurely, inconsistent with the speaker's modest evaluation." },
+      { "romaji": "maa maa", "reason": "まあまあだった says the result was passable or fairly good, fitting 'not extremely good.'" }
+    ]
+  },
+  "n2-set-3-q-17": {
+    "translation": "If you compared her to an animal, her fickle side would make her rather catlike.",
+    "correctAnswerEnglish": "例える (tatoeru) - compare or liken to",
+    "choices": [
+      { "romaji": "tatoeru", "reason": "動物に例える means to liken someone to an animal; it introduces the cat comparison." },
+      { "reason": "比べる means to compare two things, usually AとBを比べる, not to liken a person to an animal with に." },
+      { "reason": "たたえる means to praise or extol, not to make an analogy." },
+      { "reason": "こたえる means to answer or respond, unrelated to the catlike description." }
+    ]
+  },
+  "n2-set-3-q-18": {
+    "translation": "Because he acts on everything immediately, people mistakenly think he is an impatient person.",
+    "correctAnswerEnglish": "誤解 (gokai) - misunderstanding or mistaking someone for something",
+    "choices": [
+      { "reason": "評判 is a reputation, but 評判されている is not the natural construction for being mistakenly regarded as impatient." },
+      { "reason": "結論 means conclusion; 結論されている is not how one says people misjudge him." },
+      { "romaji": "gokai", "reason": "気が短い人間だと誤解されている means he is misunderstood as being short-tempered." },
+      { "reason": "決定 means decision; his personality is not being formally decided by others." }
+    ]
+  },
+  "n2-set-3-q-19": {
+    "translation": "In the past, poor people who were not aristocrats lived in small, humble houses.",
+    "correctAnswerEnglish": "粗末 (somatsu) - shabby or humble",
+    "choices": [
+      { "reason": "不利 means disadvantageous, not a description of the physical condition of a house." },
+      { "reason": "不幸 means unhappy or unfortunate; it does not naturally modify 家 as a house's quality." },
+      { "reason": "地味 means plain or subdued, but the poor, small dwellings are described as 粗末, humble or shabby." },
+      { "romaji": "somatsu", "reason": "粗末な家 is a shabby or humble home, consistent with poverty in the sentence." }
+    ]
+  },
+  "n2-set-3-q-20": {
+    "translation": "New employees are full of fresh appeal.",
+    "correctAnswerEnglish": "フレッシュ (furesshu) - fresh or youthful",
+    "choices": [
+      { "reason": "オープン means open, but オープンな魅力 is not the intended description of new employees' fresh appeal." },
+      { "romaji": "furesshu", "reason": "フレッシュな魅力 expresses the youthful, new appeal associated with new employees." },
+      { "reason": "ダイレクト means direct; ダイレクトな魅力 does not convey the newness emphasized by 新入社員." },
+      { "reason": "ショック means a shock and does not form the natural description ショックな魅力." }
+    ]
+  },
+  "n2-set-3-q-21": {
+    "translation": "These sneakers combine ease of walking with a good design.",
+    "correctAnswerEnglish": "兼ね備えている (kanesonaete iru) - possess both qualities",
+    "choices": [
+      { "reason": "持ち備える is not the idiomatic compound for having two qualities at once." },
+      { "reason": "造り備える is not a natural verb; 造る concerns making or building." },
+      { "reason": "取り備える is not the set compound for combining qualities." },
+      { "romaji": "kanesonaete iru", "reason": "兼ね備える means to possess both; here the shoes have comfort and good design." }
+    ]
+  },
+  "n2-set-3-q-22": {
+    "translation": "Everything needed for daily life is available in this shopping district.",
+    "correctAnswerEnglish": "生活必需品 (seikatsu hitsujuhin) - daily necessities",
+    "choices": [
+      { "reason": "季節品 would mean seasonal goods, not all essentials for everyday living." },
+      { "romaji": "seikatsu hitsujuhin", "reason": "生活必需品 is the fixed compound for items necessary in daily life." },
+      { "reason": "付属品 are accessories or attachments, not everyday necessities." },
+      { "reason": "消耗品 are consumables; the sentence refers more broadly to daily necessities." }
+    ]
+  },
+  "n2-set-3-q-23": {
+    "translation": "My older sister indiscriminately buys even things she does not need.",
+    "correctAnswerEnglish": "考えなしに (kangae nashi ni) - without thinking or indiscriminately",
+    "choices": [
+      { "romaji": "kangae nashi ni", "reason": "やたらに means recklessly or indiscriminately, so 'without thinking' fits buying unnecessary things." },
+      { "reason": "思いっきり means with all one's might or to one's heart's content, not necessarily without judgment." },
+      { "reason": "絶えず means continually; frequency alone does not express やたらに's lack of restraint." },
+      { "reason": "大量に means in large quantities; quantity is not the same as indiscriminate buying." }
+    ]
+  },
+  "n2-set-3-q-24": {
+    "translation": "She is a person who never lets her guard down.",
+    "correctAnswerEnglish": "油断 (yudan) - carelessness or letting one's guard down",
+    "choices": [
+      { "reason": "余裕 means room or composure; 隙がない here means no vulnerable opening, not no spare capacity." },
+      { "reason": "夢 means dream, unrelated to 隙, an opening or lapse." },
+      { "romaji": "yudan", "reason": "隙のない describes someone who leaves no opening; 油断 is the lapse or carelessness such a person avoids." },
+      { "reason": "特徴 means characteristic; it does not convey an unguarded opening." }
+    ]
+  },
+  "n2-set-3-q-25": {
+    "translation": "They are proceeding carefully with drafting a new bill.",
+    "correctAnswerEnglish": "注意深く (chuui bukaku) - carefully or attentively",
+    "choices": [
+      { "reason": "容易に means easily, not with caution." },
+      { "reason": "計画的に means systematically or according to a plan; that is not the same as 慎重に, cautiously." },
+      { "romaji": "chuui bukaku", "reason": "注意深く means attentively and carefully, matching 慎重に when preparing a bill." },
+      { "reason": "素早く means quickly, which says nothing about carefulness." }
+    ]
+  },
+  "n2-set-3-q-26": {
+    "translation": "The president of the company that caused the accident was criticized by the media.",
+    "correctAnswerEnglish": "非難された (hinan sareta) - was criticized or condemned",
+    "choices": [
+      { "reason": "質問された means was questioned; 叩かれた here implies hostile criticism, not merely questions." },
+      { "reason": "称賛された means was praised, the opposite of the negative media response." },
+      { "reason": "注目された means attracted attention; 叩かれた is specifically critical attention." },
+      { "romaji": "hinan sareta", "reason": "In this media context, 叩かれた figuratively means was attacked or condemned in public." }
+    ]
+  },
+  "n2-set-3-q-27": {
+    "translation": "This guitar is a rare, limited-production item.",
+    "correctAnswerEnglish": "めずらしい (mezurashii) - rare or unusual",
+    "choices": [
+      { "reason": "新しい means new; a limited-production item can be rare without being new." },
+      { "romaji": "mezurashii", "reason": "レア means rare; limited production explains why this guitar is unusual." },
+      { "reason": "高い means expensive; rarity does not by itself state the price." },
+      { "reason": "すばらしい means excellent; the sentence emphasizes scarcity, not quality." }
+    ]
+  },
+  "n2-set-3-q-28": {
+    "translation": "This festival expresses gratitude for receiving the blessings of nature.",
+    "correctAnswerEnglish": "恩恵 (onkei) - benefit or blessing bestowed on someone",
+    "choices": [
+      { "romaji": "onkei", "reason": "自然の恩恵に浴する means to enjoy or receive nature's benefits; this is the appropriate use of 恩恵." },
+      { "reason": "Returning a personal favor is 恩返し, not 恩恵返し; 恩恵 names a benefit received." },
+      { "reason": "A shrine amulet may have ご利益, a blessing or efficacy, but 恩恵がある is not the intended amulet expression." },
+      { "reason": "For being able to graduate thanks to a teacher, おかげで is natural; 先生の恩恵で is not the intended usage here." }
+    ]
+  },
+  "n2-set-3-q-29": {
+    "translation": "This is a dish that an amateur could never make.",
+    "correctAnswerEnglish": "素人 (shirouto) - amateur or nonexpert",
+    "choices": [
+      { "reason": "The intended group affected by higher taxes is ordinary people, not necessarily amateurs; 素人 contrasts with experts." },
+      { "romaji": "shirouto", "reason": "素人には作れない contrasts an amateur's skills with those required for this dish." },
+      { "reason": "For an unknown man as a marriage prospect, どこの誰だかわからない fits; 素人 describes expertise, not identity." },
+      { "reason": "Being very beautiful is not a consequence of being 素人, an amateur; the causal だけあって is misplaced." }
+    ]
+  },
+  "n2-set-3-q-30": {
+    "translation": "What a spineless person to get discouraged by something like that.",
+    "correctAnswerEnglish": "だらしない (darashinai) - spineless, sloppy or undisciplined",
+    "choices": [
+      { "reason": "A poor job of helping with housework would be いい加減 or 雑; だらしない alone does not describe the work naturally here." },
+      { "reason": "For work that is too dull to continue, つまらなくて fits; だらしない describes conduct or self-discipline." },
+      { "romaji": "darashinai", "reason": "だらしない can criticize lack of resolve; giving up over something minor makes the person seem spineless." },
+      { "reason": "Keeping careful household accounts indicates discipline with money, the opposite of お金にだらしない." }
+    ]
+  },
+  "n2-set-3-q-31": {
+    "translation": "Even now, many schools in Japan place more emphasis on reading than on speaking.",
+    "correctAnswerEnglish": "重点を置く (juuten o oku) - place emphasis on",
+    "choices": [
+      { "romaji": "juuten o oku", "reason": "重点を置く is the fixed expression for placing emphasis on something, here reading study." },
+      { "reason": "The key to a plan's success is 鍵 or 重要な点, not 成功の重点." },
+      { "reason": "An influential figure in business is 重鎮, not 重点; 重点 means emphasis or focus." },
+      { "reason": "Words may have weight or substance, 重み, but 重点のある言葉 is not the intended expression." }
+    ]
+  },
+  "n2-set-3-q-32": {
+    "translation": "At this company, family allowances are paid in addition to salary.",
+    "correctAnswerEnglish": "支給される (shikyuu sareru) - be provided or paid out",
+    "choices": [
+      { "reason": "A qualification is granted or awarded, 資格を与える, rather than 支給する, which supplies money or goods." },
+      { "reason": "A customer pays a shopkeeper, 支払う; 支給する is not used for a retail payment." },
+      { "reason": "A passport is issued, 旅券の発給, not 支給; the latter is for funds or supplies." },
+      { "romaji": "shikyuu sareru", "reason": "Family allowances are monetary benefits a company pays out; 手当が支給される is natural." }
+    ]
+  },
+  "n2-set-3-q-33": {
+    "translation": "Now that I have accepted the job, I must finish it no matter what happens.",
+    "correctAnswerEnglish": "上は (ue wa) - now that; since one has committed to doing it",
+    "choices": [
+      { "reason": "上から means from above or from the point of view of; it does not express the obligation following acceptance." },
+      { "reason": "上で after a past verb means after doing something; it does not itself convey the resolve 'now that I have accepted it.'" },
+      { "reason": "上に means in addition to; the second clause is not an added fact about accepting the job." },
+      { "romaji": "ue wa", "reason": "Verb-past plus 上は means now that a decision is made; it naturally leads to the firm obligation 完成させなければならない." }
+    ]
+  },
+  "n2-set-3-q-34": {
+    "translation": "I forgot my wallet, but thanks to having a credit card, I managed to shop anyway.",
+    "correctAnswerEnglish": "おかげで (okage de) - thanks to; because of a favorable cause",
+    "choices": [
+      { "reason": "せいで blames a cause for a bad result, but being able to shop is a favorable result." },
+      { "reason": "くせに means despite or even though, often with reproach; it does not credit the card for helping." },
+      { "reason": "ものの means although; it marks contrast, not the helpful cause of being able to shop." },
+      { "romaji": "okage de", "reason": "持っていたおかげで identifies the credit card as the reason the speaker could still make purchases." }
+    ]
+  },
+  "n2-set-3-q-35": {
+    "translation": "Knowing how stingy she is, she would never buy a real diamond.",
+    "correctAnswerEnglish": "のことだから (no koto dakara) - knowing that person's character",
+    "choices": [
+      { "reason": "のことから is not the pattern used to predict someone's behavior from a known personality trait." },
+      { "romaji": "no koto dakara", "reason": "彼女のことだから uses her known stinginess to infer that she would not buy a real diamond." },
+      { "reason": "のこととはいえ means even though it concerns that person; it does not make the character-based inference." },
+      { "reason": "のことにしては is not the grammatical pattern for this prediction; にしては usually marks an unexpected contrast." }
+    ]
+  },
+  "n2-set-3-q-36": {
+    "translation": "Company A is a rival, but depending on the terms, we could negotiate a merger.",
+    "correctAnswerEnglish": "次第では (shidai de wa) - depending on the conditions",
+    "choices": [
+      { "reason": "以前では means before, not depending on the proposed merger terms." },
+      { "romaji": "shidai de wa", "reason": "条件次第では means if the conditions allow it; this determines whether merger talks are possible." },
+      { "reason": "程度では means at that degree or level; it does not express a conditional decision based on terms." },
+      { "reason": "事情では refers to circumstances but is not the fixed pattern 条件次第では." }
+    ]
+  },
+  "n2-set-3-q-37": {
+    "translation": "In preparation for a major earthquake, let's check the route home on a map.",
+    "correctAnswerEnglish": "に備えて (ni sonaete) - in preparation for",
+    "choices": [
+      { "reason": "に応じて means in response to or according to; the quake has not happened yet." },
+      { "reason": "に向かって means toward; checking a map is not movement toward an earthquake." },
+      { "romaji": "ni sonaete", "reason": "大地震に備えて means preparing for a possible major earthquake in advance." },
+      { "reason": "に関して means concerning; it does not express the purpose of advance preparation." }
+    ]
+  },
+  "n2-set-3-q-38": {
+    "translation": "In Japan, cherry blossoms are so central to spring that even their blooming makes the news; you cannot talk about spring without them.",
+    "correctAnswerEnglish": "ぬきには (nuki ni wa) - without; not apart from",
+    "choices": [
+      { "reason": "だけでは means with only; さくらだけでは語れない would say blossoms alone are insufficient, the opposite emphasis." },
+      { "romaji": "nuki ni wa", "reason": "さくらぬきには語れない means spring cannot be discussed without mentioning cherry blossoms." },
+      { "reason": "ほどには means not to the extent of; it does not form the 'cannot do without' pattern." },
+      { "reason": "のみでは means with only; like だけでは, it does not say blossoms are indispensable." }
+    ]
+  },
+  "n2-set-3-q-39": {
+    "translation": "Caller: Hello, is President Yamashita available? Staff member: He is away from his desk at the moment, so I will have him call you back.",
+    "correctAnswerEnglish": "席をはずしておりますので (seki o hazushite orimasu node) - he is away from his desk, so...",
+    "choices": [
+      { "reason": "はずされております is passive, as though someone removed him from the seat; the idiom is 席をはずす." },
+      { "reason": "はずしていらっしゃいます uses honorific language for one's own company president to an outside caller; the printed explanation requires humble language." },
+      { "romaji": "seki o hazushite orimasu node", "reason": "席をはずしております is the polite, humble form used by company staff when speaking to an outside caller about their own president." },
+      { "reason": "はずしてしまいます suggests he will leave or has unfortunately left, not that he is currently away from his desk." }
+    ]
+  },
+  "n2-set-3-q-40": {
+    "translation": "I am writing the paper in a hurry, but at this rate it does not look as though I will meet the deadline.",
+    "correctAnswerEnglish": "間に合いそうもない (maniai sou mo nai) - unlikely to make it in time",
+    "choices": [
+      { "romaji": "maniai sou mo nai", "reason": "The masu-stem plus そうもない expresses that meeting the deadline appears very unlikely." },
+      { "reason": "間に合わないはずがない means there is no way I will fail to make it, contrary to このままでは." },
+      { "reason": "間に合うわけでもない only says it is not necessarily true that I will make it; it misses the strong negative outlook." },
+      { "reason": "間に合うほかない means there is no alternative but to make it, not that success looks unlikely." }
+    ]
+  },
+  "n2-set-3-q-41": {
+    "translation": "Just because I did not know the rules here, I caused everyone trouble.",
+    "correctAnswerEnglish": "知らなかったばかりに (shiranakatta bakari ni) - solely because I did not know",
+    "choices": [
+      { "reason": "知っていただけに means precisely because I knew, usually followed by a contrast; the speaker did not know the rules." },
+      { "reason": "知らなかっただけに means all the more because I did not know; the printed causal pattern for the bad outcome is ばかりに." },
+      { "reason": "知っていたばかりに blames knowing the rules, contradicting the intended cause." },
+      { "romaji": "shiranakatta bakari ni", "reason": "ばかりに marks a cause that produced an undesirable outcome: the speaker's ignorance inconvenienced others." }
+    ]
+  },
+  "n2-set-3-q-42": {
+    "translation": "Unless you speak up, there should be no one who knows about this.",
+    "correctAnswerEnglish": "人はいないはずだ (hito wa inai hazu da) - there should be no one",
+    "choices": [
+      { "reason": "人がいるはずだ says somebody must know, opposite to the condition 'unless you speak.'" },
+      { "romaji": "hito wa inai hazu da", "reason": "しゃべらない限り means unless you speak; with no other source of disclosure, no one should know." },
+      { "reason": "人がいるということだ asserts that someone knows, contrary to the conditional secrecy." },
+      { "reason": "人がいないということだ reports a conclusion as fact; はずだ expresses the expected result of the condition more naturally." }
+    ]
+  },
+  "n2-set-3-q-43": {
+    "translation": "Food is not necessarily tastier the fresher it is; some foods taste better when they are a little older.",
+    "correctAnswerEnglish": "おいしいわけではなく (oishii wake de wa naku) - it is not necessarily tasty",
+    "choices": [
+      { "reason": "おいしいはずで says it should be tasty, leaving no room for the contrast that some older foods taste better." },
+      { "romaji": "oishii wake de wa naku", "reason": "わけではない gives a partial negation: freshness does not always guarantee better taste." },
+      { "reason": "おいしくないはずで predicts fresher food should not taste good, opposite to the usual expectation in the first clause." },
+      { "reason": "おいしくないわけではなく says it is not necessarily bad, which does not directly negate 'fresher is tastier.'" }
+    ]
+  },
+  "n2-set-3-q-44": {
+    "translation": "In modern Japan, being the eldest son does not necessarily mean that you will take over the family line or business.",
+    "correctAnswerEnglish": "つぐわけではない (tsugu wake de wa nai) - does not necessarily inherit or succeed",
+    "choices": [
+      { "romaji": "tsugu wake de wa nai", "reason": "だからといって with わけではない rejects the claim that every eldest son must succeed the family." },
+      { "reason": "つがないではいられない says one cannot help succeeding, which would imply compulsion." },
+      { "reason": "ついではならない means must not take over, a prohibition not stated in the sentence." },
+      { "reason": "つがざるを得ない means have no choice but to succeed, the opposite of the partial negation." }
+    ]
+  },
+  "n2-set-3-q-45": {
+    "translation": "If you are having trouble, I would like to help you, for my part, but...",
+    "correctAnswerEnglish": "しては (shite wa) - as for, in the phrase 私としては at the marked third blank",
+    "choices": [
+      { "reason": "助けて (tasukete) connects to あげたい, 'want to help you'; it is the fourth fragment, not the starred third one." },
+      { "romaji": "shite wa", "reason": "The complete order is いるなら, 私と, しては, 助けて. 私としては means 'as far as I am concerned'; しては fills the starred third blank." },
+      { "reason": "いるなら (iru nara) completes 困っているなら, 'if you are in trouble'; it belongs first." },
+      { "reason": "私と (watashi to) begins 私としては and follows 困っているなら; it belongs second, immediately before the star." }
+    ]
+  },
+  "n2-set-3-q-46": {
+    "translation": "My wife saves even ten yen on the one hand, yet sometimes buys expensive clothes without a second thought.",
+    "correctAnswerEnglish": "一方で (ippou de) - while, on the other hand, at the marked third blank",
+    "choices": [
+      { "reason": "平気 (heiki) combines with the printed で to make 平気で, 'without hesitation'; it is the fourth fragment." },
+      { "reason": "10円を (juu-en o) is the object of 節約する, 'save ten yen'; it is the first fragment." },
+      { "romaji": "ippou de", "reason": "The complete order is 10円を, 節約する, 一方で, 平気. 節約する一方で contrasts her thrift with expensive shopping; 一方で is the starred third fragment." },
+      { "reason": "節約する (setsuyaku suru) completes 10円を節約する and stands before 一方で, in the second blank." }
+    ]
+  },
+  "n2-set-3-q-47": {
+    "translation": "Because this shop's cakes are not too sweet, they are popular with men as well as women.",
+    "correctAnswerEnglish": "もちろん (mochiron) - of course; part of 'not only women but also men' at the star",
+    "choices": [
+      { "romaji": "mochiron", "reason": "The order is 甘すぎないので, 女性は, もちろん, 男性に. 女性はもちろん男性にも means 'not only with women but with men too'; もちろん is the third, starred fragment." },
+      { "reason": "甘すぎないので (amasuginai node) gives the reason the cakes appeal broadly; it belongs first." },
+      { "reason": "女性は (josei wa) begins the paired phrase 女性はもちろん男性にも, so it is second, before the star." },
+      { "reason": "男性に (dansei ni) takes the printed も to make 男性にも, 'also among men'; it is fourth." }
+    ]
+  },
+  "n2-set-3-q-48": {
+    "translation": "Knowing how careless Yamashita is about time, he is probably slacking off somewhere again.",
+    "correctAnswerEnglish": "だから (dakara) - because of; completing 山下さんのことだから at the star",
+    "choices": [
+      { "reason": "こと (koto) completes 山下さんのこと, 'knowing Yamashita'; it is the first fragment." },
+      { "reason": "また (mata) means again and modifies the suspected repeated slacking; it belongs after だから, in the third blank overall after the star." },
+      { "reason": "どこか (dokoka) means somewhere and combines with the printed で, forming どこかで; it is last." },
+      { "romaji": "dakara", "reason": "The complete order is こと, だから, また, どこか. 山下さんのことだから draws an inference from his known habit; だから is the starred second blank." }
+    ]
+  },
+  "n2-set-3-q-49": {
+    "translation": "When I followed the flow of people walking, the event venue was farther ahead.",
+    "correctAnswerEnglish": "沿って (sotte) - following or along; the starred third fragment",
+    "choices": [
+      { "reason": "流れに (nagare ni) means 'to/along the flow' and follows 人の歩く; it is second, not starred." },
+      { "reason": "進むと (susumu to) means 'when I went forward' and follows 沿って; it is the fourth fragment." },
+      { "romaji": "sotte", "reason": "The complete order is 歩く, 流れに, 沿って, 進むと. 人の歩く流れに沿って進むと means 'when I went along the flow of people walking'; 沿って is starred." },
+      { "reason": "歩く (aruku) modifies 流れ, forming 'the flow of people walking'; it belongs first." }
+    ]
+  },
+  "n2-set-3-q-50": {
+    "translation": "Single-mother households receive a child-rearing allowance according to their income, along with other forms of support.",
+    "correctAnswerEnglish": "に応じた (ni oujita) - according to or corresponding to income",
+    "choices": [
+      { "reason": "に伴った (ni tomonatta) means accompanying a change or event; the allowance amount is tied to the income level." },
+      { "romaji": "ni oujita", "reason": "収入に応じた means adjusted according to income; it modifies the child-rearing allowance paid to single-mother households." },
+      { "reason": "に比べた (ni kurabeta) means compared with; no second income is being compared in this clause." },
+      { "reason": "に沿った (ni sotta) means in line with a policy or path, not calibrated to household income." }
+    ]
+  },
+  "n2-set-3-q-51": {
+    "translation": "Because the traditional view expected husbands to earn money and wives to manage the home and children, single-mother households often struggled financially. By contrast, people assumed single-father households had no financial problems compared with single-mother households.",
+    "correctAnswerEnglish": "a 母子家庭 / b 母子家庭 / c 父子家庭 (boshi katei / boshi katei / fushi katei) - single-mother, single-mother, single-father households",
+    "choices": [
+      { "reason": "Putting 父子家庭 at a reverses the passage's claim: it was single-mother households thought to face financial difficulty. Putting 母子家庭 at c reverses the comparison too." },
+      { "reason": "a must be 母子家庭, because the preceding traditional division of labor explains mothers' lost earnings; this option wrongly places fathers at a and mothers at c." },
+      { "romaji": "boshi katei / boshi katei / fushi katei", "reason": "a is single-mother households, formerly seen as needing aid. b is the same comparison group; c is single-father households, formerly assumed financially secure." },
+      { "reason": "Although a is correctly single-mother households, b and c are reversed: the sentence compares single-father households with single-mother households, not with themselves." }
+    ]
+  },
+  "n2-set-3-q-52": {
+    "translation": "However, although the income of single-father households is not as low as that of single-mother households, it was found to be far below the overall average.",
+    "correctAnswerEnglish": "低くはないものの (hikuku wa nai mono no) - although it is not as low",
+    "choices": [
+      { "reason": "低いにしても means even if it is low; the passage instead says fathers' income is not as low as mothers', but still below average." },
+      { "reason": "低いはずがなく means it cannot possibly be low; the passage reports that it is substantially below average." },
+      { "romaji": "hikuku wa nai mono no", "reason": "低くはないものの concedes that single-father income is not as low as single-mother income, then contrasts it with the much lower-than-average figure." },
+      { "reason": "低いと思ったら means when one thought it was low; this does not set up the intended concession before the comparison with the average." }
+    ]
+  },
+  "n2-set-3-q-53": {
+    "translation": "This is because long overtime and weekend work are taken for granted for men in Japan, and few companies will employ a man who must leave at five to collect his child from daycare.",
+    "correctAnswerEnglish": "というのも (to iu no mo) - this is because",
+    "choices": [
+      { "romaji": "to iu no mo", "reason": "This introduces the explanation for the preceding finding that single-father households earn less than average: workplace expectations make caregiving difficult." },
+      { "reason": "だからといって means even so or just because of that; the following sentences explain the cause rather than qualify it." },
+      { "reason": "にもかかわらず means despite, which would contradict the causal link between long work hours and lower earnings." },
+      { "reason": "とはいえ means nevertheless or that said; the passage needs an explanatory connector, not another concession." }
+    ]
+  },
+  "n2-set-3-q-54": {
+    "translation": "Even men who are already employed may have to switch from full-time positions to part-time work; men, too, can therefore end up on low incomes. The government accordingly decided to extend child-rearing allowances to low-income single-father households.",
+    "correctAnswerEnglish": "低収入になり得るのです (teishuunyuu ni nari uru no desu) - can end up with a low income",
+    "choices": [
+      { "reason": "高収入になりかねません means may end up with a high income, which conflicts with the problem of low-income single fathers." },
+      { "reason": "高収入にならざるを得ません means have no choice but to earn a high income, the opposite of the described economic difficulty." },
+      { "reason": "低収入になり得ないのです means cannot become low-income, contradicting the finding that some single-father households need support." },
+      { "romaji": "teishuunyuu ni nari uru no desu", "reason": "なり得る expresses real possibility: childcare constraints can leave men on low incomes, motivating the extension of benefits." }
+    ]
+  }
+}

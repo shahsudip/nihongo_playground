@@ -216,16 +216,18 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
     return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
   };
 
-  // Warn before unload
+  // Handle browser back button: trigger in-app UI exit modal instead of native dialog
   useEffect(() => {
-    const handleBeforeUnload = (e) => {
-      if (answeredCount > 0 && !isFinished) {
-        e.preventDefault();
-        e.returnValue = '';
-      }
-    };
-    window.addEventListener('beforeunload', handleBeforeUnload);
-    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+    if (answeredCount > 0 && !isFinished) {
+      window.history.pushState({ modalGuard: true }, '');
+      const handlePopState = () => {
+        setShowExitModal(true);
+      };
+      window.addEventListener('popstate', handlePopState);
+      return () => {
+        window.removeEventListener('popstate', handlePopState);
+      };
+    }
   }, [answeredCount, isFinished]);
 
   const currentQ = activeQuestions[currentIndex];

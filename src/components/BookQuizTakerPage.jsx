@@ -58,18 +58,25 @@ const BookQuizTakerPage = () => {
     return queuedWrite;
   }, []);
 
-  // Warn user if trying to close browser/tab with active answers
+  // Handle browser back button: trigger in-app UI exit modal instead of native dialog
   useEffect(() => {
-    const handleBeforeUnload = (e) => {
-      const count = Object.keys(answers).length;
-      if (count > 0 && count < questions.length) {
-        e.preventDefault();
-        e.returnValue = '';
-      }
+    const count = Object.keys(answers).length;
+    const isExamPending = isEnhancedDrillBook && feedbackMode === 'At End' && !examSubmitted;
+    const shouldPrompt = (count > 0 && count < questions.length) || isExamPending;
+
+    if (!shouldPrompt) return;
+
+    window.history.pushState({ modalGuard: true }, '');
+
+    const handlePopState = () => {
+      setShowExitModal(true);
     };
-    window.addEventListener('beforeunload', handleBeforeUnload);
-    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
-  }, [answers, questions.length]);
+
+    window.addEventListener('popstate', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, [answers, questions.length, isEnhancedDrillBook, feedbackMode, examSubmitted]);
 
   // Fetch chapter content
   useEffect(() => {
@@ -446,7 +453,8 @@ const BookQuizTakerPage = () => {
 
   const handleAttemptExit = () => {
     const answeredCount = Object.keys(answers).length;
-    if (answeredCount > 0 && answeredCount < questions.length) {
+    const isExamPending = isEnhancedDrillBook && feedbackMode === 'At End' && !examSubmitted;
+    if ((answeredCount > 0 && answeredCount < questions.length) || isExamPending) {
       setShowExitModal(true);
     } else {
       navigate(`/books/${bookId}`);

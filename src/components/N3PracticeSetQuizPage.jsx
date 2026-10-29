@@ -51,17 +51,19 @@ const N3PracticeSetQuizPage = () => {
   const [currentSet, setCurrentSet] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // Warn user if trying to close browser/tab with active answers
+  // Handle browser back button: trigger in-app UI exit modal instead of native dialog
   useEffect(() => {
-    const handleBeforeUnload = (e) => {
-      const count = Object.keys(answers).length;
-      if (count > 0 && !isFinished) {
-        e.preventDefault();
-        e.returnValue = '';
-      }
-    };
-    window.addEventListener('beforeunload', handleBeforeUnload);
-    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+    const count = Object.keys(answers).length;
+    if (count > 0 && !isFinished) {
+      window.history.pushState({ modalGuard: true }, '');
+      const handlePopState = () => {
+        setShowExitModal(true);
+      };
+      window.addEventListener('popstate', handlePopState);
+      return () => {
+        window.removeEventListener('popstate', handlePopState);
+      };
+    }
   }, [answers, isFinished]);
 
   // Timer Effect

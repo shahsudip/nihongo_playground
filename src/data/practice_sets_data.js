@@ -8315,15 +8315,15 @@ export const practiceSetsBook = {
     },
     {
       "id": "set-11",
-      "title": "Set 11",
-      "description": "Practice Test 11",
+      "title": "第11回",
+      "description": "JLPT N3 Practice Set 11 - 語彙・漢字・文法・読解",
       "sections": {
         "vocabulary-kanji": {
           "title": "Vocabulary & Kanji",
           "titleJa": "文字・語彙",
           "questions": [
             {
-              "id": 11000,
+              "id": 1,
               "questionText": "天気がいいので、洗たく物がよく<u>乾いた</u>。",
               "options": [
                 "ひらいた",
@@ -8333,11 +8333,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
               "explanation": "【解説】「乾いた」の正しい読み方は「かわいた」です。\n【英訳】The reading of 乾いた is かわいた - dried."
             },
             {
-              "id": 11001,
+              "id": 2,
               "questionText": "この道がとなりの市との<u>境界</u>です。",
               "options": [
                 "きょかい",
@@ -8347,11 +8346,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「境界」の正しい読み方は「きょうかい」です。\n【英訳】The reading of 境界 is きょうかい - boundary/border."
+              "explanation": "【解説】「境界」の正しい読み方は「きょうかい」です。\n【英訳】The reading of 境界 is きょうかい - border / boundary."
             },
             {
-              "id": 11002,
+              "id": 3,
               "questionText": "<u>以後</u>は、別々に行動しましょう。",
               "options": [
                 "いこ",
@@ -8361,11 +8359,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「以後」の正しい読み方は「いご」です。\n【英訳】The reading of 以後 is いご - hereafter/from now on."
+              "explanation": "【解説】「以後」の正しい読み方は「いご」です。\n【英訳】The reading of 以後 is いご - from now on / hereafter."
             },
             {
-              "id": 11003,
+              "id": 4,
               "questionText": "もえないごみを土に<u>埋めて</u>はいけません。",
               "options": [
                 "こめて",
@@ -8375,11 +8372,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「埋めて」の正しい読み方は「うめて」です。\n【英訳】The reading of 埋めて is うめて - bury."
+              "explanation": "【解説】「埋めて」の正しい読み方は「うめて」です。\n【英訳】The reading of 埋めて is うめて - to bury."
             },
             {
-              "id": 11004,
+              "id": 5,
               "questionText": "<u>例</u>をあげて説明してください。",
               "options": [
                 "え",
@@ -8389,12 +8385,11 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
               "explanation": "【解説】「例」の正しい読み方は「れい」です。\n【英訳】The reading of 例 is れい - example."
             },
             {
-              "id": 11005,
-              "questionText": "美しい風景が<u>広がって</u>いる。",
+              "id": 6,
+              "questionText": "美しい<u>風景</u>が広がっている。",
               "options": [
                 "ふうけい",
                 "ふうげい",
@@ -8403,11 +8398,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 0,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「風景」の正しい読み方は「ふうけい」です。\n【英訳】The reading of 風景 is ふうけい - scenery/landscape."
+              "explanation": "【解説】「風景」の正しい読み方は「ふうけい」です。\n【英訳】The reading of 風景 is ふうけい - scenery / landscape."
             },
             {
-              "id": 11006,
+              "id": 7,
               "questionText": "甘いものは<u>骨</u>によくない。",
               "options": [
                 "こつ",
@@ -8417,25 +8411,23 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
               "explanation": "【解説】「骨」の正しい読み方は「ほね」です。\n【英訳】The reading of 骨 is ほね - bone."
             },
             {
-              "id": 11007,
+              "id": 8,
               "questionText": "ある人から<u>奇妙</u>な話を聞いた。",
               "options": [
                 "びりょう",
                 "びみょう",
                 "きちょう",
-                "きみょう ---"
+                "きみょう"
               ],
               "correctIndex": 3,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「奇妙」の正しい読み方は「きみょう」です。\n【英訳】The reading of 奇妙 is きみょう - strange/odd."
+              "explanation": "【解説】「奇妙」の正しい読み方は「きみょう」です。\n【英訳】The reading of 奇妙 is きみょう - strange / curious / odd."
             },
             {
-              "id": 11008,
+              "id": 9,
               "questionText": "<u>しぜん</u>の中で運動するのは、気持ちがよい。",
               "options": [
                 "仕然",
@@ -8445,25 +8437,23 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
               "explanation": "【解説】「しぜん」の正しい漢字は「自然」です。\n【英訳】The kanji for しぜん is 自然 - nature."
             },
             {
-              "id": 11009,
+              "id": 10,
               "questionText": "<u>きょうじゅ</u>の指導のもとで、論文を書いた。",
               "options": [
                 "教師",
                 "教示",
                 "教授",
-                "教授"
+                "教受"
               ],
               "correctIndex": 2,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
               "explanation": "【解説】「きょうじゅ」の正しい漢字は「教授」です。\n【英訳】The kanji for きょうじゅ is 教授 - professor."
             },
             {
-              "id": 11010,
+              "id": 11,
               "questionText": "この川は、あの川より<u>あさい</u>。",
               "options": [
                 "深い",
@@ -8473,11 +8463,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
               "explanation": "【解説】「あさい」の正しい漢字は「浅い」です。\n【英訳】The kanji for あさい is 浅い - shallow."
             },
             {
-              "id": 11011,
+              "id": 12,
               "questionText": "この木は、冬に<u>かれて</u>しまう。",
               "options": [
                 "枝れて",
@@ -8487,25 +8476,23 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「かれて」の正しい漢字は「枯れて」です。\n【英訳】The kanji for かれて is 枯れて - wither/die."
+              "explanation": "【解説】「かれて」の正しい漢字は「枯れて」です。\n【英訳】The kanji for かれて is 枯れて - to wither / to die (plant)."
             },
             {
-              "id": 11012,
+              "id": 13,
               "questionText": "自分の考えを<u>しゅちょう</u>する。",
               "options": [
                 "手長",
                 "手張",
                 "主張",
-                "主張"
+                "主長"
               ],
               "correctIndex": 2,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「しゅちょう」の正しい漢字は「主張」です。\n【英訳】The kanji for しゅちょう is 主張 - assert/insist."
+              "explanation": "【解説】「しゅちょう」の正しい漢字は「主張」です。\n【英訳】The kanji for しゅちょう is 主張 - assertion / claim / insist."
             },
             {
-              "id": 11013,
+              "id": 14,
               "questionText": "コンサートホールに<u>おおぜい</u>の人が集まった。",
               "options": [
                 "大勢",
@@ -8515,11 +8502,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 0,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「おおぜい」の正しい漢字は「大勢」です。\n【英訳】The kanji for おおぜい is 大勢 - great number of people."
+              "explanation": "【解説】「おおぜい」の正しい漢字は「大勢」です。\n【英訳】The kanji for おおぜい is 大勢 - great number of people / crowd."
             },
             {
-              "id": 11014,
+              "id": 15,
               "questionText": "デジカメの写真の（　　）をコンピューターに保存してください。",
               "options": [
                 "マウス",
@@ -8529,11 +8515,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】写真などのデジタルファイルを「データ」（data）と言います。\n【英訳】データ - digital data of photos."
+              "explanation": "【解説】写真の電子情報を表す言葉は「データ」です。\n【英訳】データ - data."
             },
             {
-              "id": 11015,
+              "id": 16,
               "questionText": "友だちから、メールの（　　）が来ないので、心配だ。",
               "options": [
                 "電信",
@@ -8543,11 +8528,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】送ったメールに対する返事を「返信」と言います。\n【英訳】返信 - reply/response to an email."
+              "explanation": "【解説】受け取ったメールに対する返事を「返信」と言います。\n【英訳】返信 - reply / response."
             },
             {
-              "id": 11016,
+              "id": 17,
               "questionText": "ヨーロッパの歴史あるホテルに（　　）しました。",
               "options": [
                 "滞在",
@@ -8557,11 +8541,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 0,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】旅行先やホテルにとどまることを「滞在する」と言います。\n【英訳】滞在 - stay at a hotel."
+              "explanation": "【解説】旅行先やホテルなどにある期間とどまることを「滞在」と言います。\n【英訳】滞在 - stay / sojourn."
             },
             {
-              "id": 11017,
+              "id": 18,
               "questionText": "自転車を（　　）、前へ進む。",
               "options": [
                 "けって",
@@ -8571,25 +8554,23 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】自転車のペダルを踏んで前へ進める動作は「こぐ」（こいで）です。\n【英訳】こぐ - pedal a bicycle."
+              "explanation": "【解説】自転車のペダルを足で回す動作は「こぐ（こいで）」と言います。\n【英訳】こぐ（こいで） - to pedal (bicycle)."
             },
             {
-              "id": 11018,
+              "id": 19,
               "questionText": "テストに向けて（　　）の準備をした。",
               "options": [
                 "全長",
                 "全盛",
                 "万全",
-                "万全"
+                "完全"
               ],
               "correctIndex": 2,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】手落ちや隙がまったくない完全な準備を「万全の準備」と言います。\n【英訳】万全 - thorough/flawless preparation."
+              "explanation": "【解説】少しの手落ちや手抜かりもない完全な準備を「万全の準備」と言います。\n【英訳】万全 - thorough / flawless / all possible."
             },
             {
-              "id": 11019,
+              "id": 20,
               "questionText": "オレンジを（　　）、ジュースを作る。",
               "options": [
                 "ぬって",
@@ -8599,11 +8580,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】果汁を押し出す動作は「しぼる」（しぼって）です。「オレンジをしぼる」。\n【英訳】しぼる - squeeze/press oranges."
+              "explanation": "【解説】果実などを強く押して果汁を取り出すことを「しぼる（しぼって）」と言います。\n【英訳】しぼる（しぼって） - to squeeze / to press."
             },
             {
-              "id": 11020,
+              "id": 21,
               "questionText": "（　　）を取りながら、発表を聞いてください。",
               "options": [
                 "レポート",
@@ -8613,11 +8593,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】忘れないように簡単に書き留めることを「メモを取る」と言います。\n【英訳】メモを取る - take notes."
+              "explanation": "【解説】話を聞きながら忘れないように要点を書き留めることを「メモを取る」と言います。\n【英訳】メモを取る - to take notes."
             },
             {
-              "id": 11021,
+              "id": 22,
               "questionText": "私の夢は、3階（　　）の家に住むことです。",
               "options": [
                 "作り",
@@ -8627,11 +8606,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】建物の階数を表す表現は「〜階建て」です。「3階建ての家」。\n【英訳】〜階建て - three-story house."
+              "explanation": "【解説】建物の階数を表す接尾語として「〜建て」を用い、「3階建て（さんがいだて）」と言います。\n【英訳】〜建て - ...-story (building)."
             },
             {
-              "id": 11022,
+              "id": 23,
               "questionText": "私は、2人の意見を聞いて、彼の意見が正しいと（　　）した。",
               "options": [
                 "実行",
@@ -8641,11 +8619,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】状況を考えて結論を出すことを「判断する」と言います。\n【英訳】判断 - judgment/decision."
+              "explanation": "【解説】状況や意見を考慮して自分の考え・結論を決めることを「判断する」と言います。\n【英訳】判断 - judgment / decision."
             },
             {
-              "id": 11023,
+              "id": 24,
               "questionText": "髪を短く切って、（　　）した気分になった。",
               "options": [
                 "すっきり",
@@ -8655,11 +8632,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 0,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】気分がさわやかで軽やかになる様子を「すっきりした」と言います。\n【英訳】すっきり - feeling refreshed/clear."
+              "explanation": "【解説】気持ちや見た目が爽快でさっぱりした様子を「すっきり」と言います。\n【英訳】すっきり - refreshed / feeling clean and neat."
             },
             {
-              "id": 11024,
+              "id": 25,
               "questionText": "新しい仕事についたばかりで、少し（　　）だ。",
               "options": [
                 "不正",
@@ -8669,11 +8645,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】心配で心が落ち着かない様子を「不安だ」と言います。\n【英訳】不安 - anxious/uneasy."
+              "explanation": "【解説】先のことが気がかりで落ち着かない気持ちを「不安」と言います。\n【英訳】不安 - anxious / uneasy."
             },
             {
-              "id": 11025,
+              "id": 26,
               "questionText": "あなたに、本当に<u>すまない</u>と思います。",
               "options": [
                 "相談したい",
@@ -8683,11 +8658,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「すまない」は謝罪の言葉で「もうしわけない」と同じ意味です。\n【英訳】すまない ＝ もうしわけない - I'm sorry / excuse me."
+              "explanation": "【解説】「すまない」は相手に迷惑をかけて謝罪する気持ちを表し、「もうしわけない」と言い換えられます。\n【英訳】すまない ＝ もうしわけない - sorry / apologetic."
             },
             {
-              "id": 11026,
+              "id": 27,
               "questionText": "土曜日はデートなので、とても<u>わくわく</u>しています。",
               "options": [
                 "幸せになって",
@@ -8697,11 +8671,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「わくわくしている」は期待や喜びで胸が高鳴る「楽しみにしている」という意味です。\n【英訳】わくわく ＝ 楽しみに - excited/looking forward to."
+              "explanation": "【解説】「わくわくする」は楽しいことを期待して心が躍る様子を表し、「楽しみにしている」と言い換えられます。\n【英訳】わくわくしている ＝ 楽しみにしている - looking forward to / excited."
             },
             {
-              "id": 11027,
+              "id": 28,
               "questionText": "明日、予定が<u>重なって</u>しまいました。",
               "options": [
                 "急に予定が入って",
@@ -8711,11 +8684,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「予定が重なる」は同じ日時に複数の用件が入り「同時に予定が入る」という意味です。\n【英訳】予定が重なる ＝ 同時に予定が入る - conflicting schedules."
+              "explanation": "【解説】予定が「重なる」は同じ日時に複数の予定が入ることで、「同時に予定が入って」と言い換えられます。\n【英訳】重なって ＝ 同時に予定が入って - overlapping / booked at the same time."
             },
             {
-              "id": 11028,
+              "id": 29,
               "questionText": "休みがとれず、<u>ダウン</u>してしまった。",
               "options": [
                 "けがして",
@@ -8725,39 +8697,36 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「ダウンした」は過労などで倒れたり体調を崩す「倒れてしまった」という意味です。\n【英訳】ダウンする ＝ 倒れる - broken down / collapsed."
+              "explanation": "【解説】「ダウンする」は疲労や病気で動けなくなること、倒れることを表し、「倒れて」と言い換えられます。\n【英訳】ダウンして ＝ 倒れて - collapsed / broken down with exhaustion."
             },
             {
-              "id": 11029,
+              "id": 30,
               "questionText": "机の上が<u>ごちゃごちゃ</u>なので、かたづけてください。",
               "options": [
                 "汚い",
                 "せまい",
                 "くさい",
-                "黒い ---"
+                "黒い"
               ],
               "correctIndex": 0,
               "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「ごちゃごちゃ」は物が乱雑に散らばっている「汚い・散らかっている」という意味です。\n【英訳】ごちゃごちゃ ＝ 汚い - messy/cluttered."
+              "explanation": "【解説】「ごちゃごちゃ」は物が乱雑に入り乱れている様子を表し、「汚い（乱雑だ）」と言い換えられます。\n【英訳】ごちゃごちゃ ＝ 汚い - messy / cluttered / jumbled."
             },
             {
-              "id": 11030,
+              "id": 31,
               "questionText": "<u>つぶれる</u>",
               "options": [
-                "強い風で、その木はまん中から<u>つぶれてしまった</u>。",
+                "強い風で、その木はまん中から<u>つぶれて</u>しまった。",
                 "急に雨が<u>つぶれ</u>、急いで近くのお店に入った。",
                 "先日の大きな地震で、たくさんの家が<u>つぶれた</u>。",
                 "前から使っていた時計が<u>つぶれて</u>、動かなくなった。"
               ],
               "correctIndex": 2,
               "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「つぶれる（潰れる）」は圧力や衝撃で崩れることで、「地震で家がつぶれた」が自然です。\n【英訳】つぶれる - collapse/be crushed."
+              "explanation": "【解説】「つぶれる（潰れる）」は外からの力や重みで立体的な形が平ら・粉々に壊れることで、「地震でたくさんの家がつぶれた」が自然です。\n【英訳】つぶれる - to be crushed / to collapse."
             },
             {
-              "id": 11031,
+              "id": 32,
               "questionText": "<u>増す</u>",
               "options": [
                 "台風のため、風の強さが<u>増している</u>。",
@@ -8767,11 +8736,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 0,
               "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「増す」は程度や勢いが強くなることで、「風の強さが増している」が自然です。\n【英訳】増す - increase in intensity."
+              "explanation": "【解説】「増す（ます）」は数量・程度・勢いがそれまでより多く・強くなることで、「風の強さが増している」「不安が増す」のように使います。\n【英訳】増す - to increase / to grow stronger."
             },
             {
-              "id": 11032,
+              "id": 33,
               "questionText": "<u>におい</u>",
               "options": [
                 "この料理は、おいしそうな<u>におい</u>がする。",
@@ -8781,11 +8749,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 0,
               "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「におい」は嗅覚で感じるもので、「おいしそうなにおいがする」が自然です。\n【英訳】におい - smell/aroma."
+              "explanation": "【解説】「におい（匂い・臭い）」は鼻で感じる嗅覚の刺激を表し、「おいしそうなにおいがする」が自然です。\n【英訳】におい - smell / scent / odor."
             },
             {
-              "id": 11033,
+              "id": 34,
               "questionText": "<u>声</u>",
               "options": [
                 "車の<u>声</u>がうるさくて、テレビの音が聞こえない。",
@@ -8795,22 +8762,20 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「声」は意見や要望の意味でも使われ、「他人の声に耳をかたむける」が自然です。\n【英訳】声 - voice / opinions of others."
+              "explanation": "【解説】「声（こえ）」は人が発する音声のほか、人の意見・要望・評判を表し、「他人の声に耳をかたむける（意見を聞く）」が自然です。\n【英訳】声 - voice / opinion / feedback."
             },
             {
-              "id": 11034,
+              "id": 35,
               "questionText": "<u>あやしい</u>",
               "options": [
                 "今日は寒いので、<u>あやしい</u>ものが食べたい。",
                 "帰宅すると、家の前に<u>あやしい</u>男が立っていた。",
                 "彼女は、親切で<u>あやしい</u>ので、みんなに人気がある。",
-                "この手帳は、なんでも書くことができて、とてもあやしい。"
+                "この手帳は、なんでも書くことができて、とても<u>あやしい</u>。"
               ],
               "correctIndex": 1,
               "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「あやしい（怪しい）」は疑わしい様子で、「あやしい男が立っていた」が自然です。\n【英訳】怪しい - suspicious person."
+              "explanation": "【解説】「あやしい（怪しい）」は正体が不明で危険や不審を感じさせる様子を表し、「あやしい男が立っていた」が自然です。\n【英訳】あやしい - suspicious / dubious / shady."
             }
           ]
         },
@@ -8819,7 +8784,7 @@ export const practiceSetsBook = {
           "titleJa": "文法・読解",
           "questions": [
             {
-              "id": 11035,
+              "id": 1,
               "questionText": "台風が来て、昨日は沖縄では大雨だった（　　）。",
               "options": [
                 "のは",
@@ -8828,13 +8793,13 @@ export const practiceSetsBook = {
                 "とか"
               ],
               "correctIndex": 3,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】人から聞いた不確実な伝聞を表す「〜とか」：「大雨だったとか」。\n【英訳】〜とか - I heard that / they say that..."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】人づてに聞いた不確実な情報や伝聞・例示を表す「〜とか」を用います。「大雨だったとか（聞いた・そうだ）」。\n【英訳】〜とか - I heard that... / so I am told."
             },
             {
-              "id": 11036,
-              "questionText": "妻「あなたの体のために、明日からたばこを吸うのをやめてちょうだい。」  \r\n   夫「（　　）厳しいことを言わないでよ。」",
+              "id": 2,
+              "questionText": "妻「あなたの体のために、明日からたばこを吸うのをやめてちょうだい。」<br/>夫「（　　）厳しいことを言わないでよ。」",
               "options": [
                 "こんなに",
                 "そんなに",
@@ -8842,12 +8807,12 @@ export const practiceSetsBook = {
                 "どんなに"
               ],
               "correctIndex": 1,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】相手の言動の程度をたしなめる「そんなに」：「そんなに厳しいことを言わないでよ」。\n【英訳】そんなに - not so / not that harshly."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】相手が直前に言った内容や程度を指して「そのように、それほど」と言うときは「そんなに」を用います。「そんなに厳しいことを言わないでよ」。\n【英訳】そんなに - so / that much (referring to what listener said)."
             },
             {
-              "id": 11037,
+              "id": 3,
               "questionText": "私は昨日から風邪（　　）、熱が少しある。",
               "options": [
                 "っぽい",
@@ -8856,12 +8821,12 @@ export const practiceSetsBook = {
                 "気味"
               ],
               "correctIndex": 3,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】病気などの軽い傾向を表す「〜気味」：「風邪気味」。\n【英訳】〜気味 - a slight touch of a cold."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】「名詞／動詞ます形＋気味（ぎみ）」で「少し〜の傾向がある」を表します。「風邪気味（かぜぎみ）」。\n【英訳】〜気味 - slight tendency of / a touch of (a cold)."
             },
             {
-              "id": 11038,
+              "id": 4,
               "questionText": "近所へ散歩に行った（　　）、スーパーで牛乳を買ってきました。",
               "options": [
                 "かたがた",
@@ -8870,12 +8835,12 @@ export const practiceSetsBook = {
                 "ままに"
               ],
               "correctIndex": 1,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】ある行動の機会を利用して別のことをする「〜ついでに」：「散歩に行ったついでに牛乳を買った」。\n【英訳】〜ついでに - while on the way / taking the opportunity."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】ある主たる行動をする機会を利用して別のことも行うときは「動詞た形／名詞＋ついでに」を用います。「散歩に行ったついでに」。\n【英訳】ついでに - while at it / on the occasion of."
             },
             {
-              "id": 11039,
+              "id": 5,
               "questionText": "学校から家へ帰る（　　）彼女に会ったので、道で少し話しました。",
               "options": [
                 "途中まで",
@@ -8884,12 +8849,12 @@ export const practiceSetsBook = {
                 "途中から"
               ],
               "correctIndex": 2,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】目的地の途中の時間・場所を表す「〜途中で」：「帰る途中で彼女に会った」。\n【英訳】〜途中で - on the way home."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】移動の区間や動作の進行中のある時点で出来事が起こることを「〜途中で」と言います。「帰る途中で」。\n【英訳】〜途中で - on the way / en route."
             },
             {
-              "id": 11040,
+              "id": 6,
               "questionText": "この町は、駅を（　　）発展してきた。",
               "options": [
                 "中心とともに",
@@ -8898,12 +8863,12 @@ export const practiceSetsBook = {
                 "中心にかけて"
               ],
               "correctIndex": 1,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】「〜を最も中心・重点にして」を表す「〜を中心として」：「駅を中心として発展してきた」。\n【英訳】〜を中心として - centered around the station."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】「名詞＋を中心として／中心にして」で、「〜を一番の軸・中心として」という意味を表します。「駅を中心として発展してきた」。\n【英訳】〜を中心として - focusing on / centered around."
             },
             {
-              "id": 11041,
+              "id": 7,
               "questionText": "毎朝私は、ベランダの花に水を（　　）。",
               "options": [
                 "くれます",
@@ -8912,12 +8877,12 @@ export const practiceSetsBook = {
                 "さしあげます"
               ],
               "correctIndex": 2,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】植物や動物・目下の者に与える動詞は「やる」です：「花に水をやります」。\n【英訳】やる - give water to plants."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】植物や動物、目下の相手に水や餌などを与えるときは動詞「やる」を用います。「花に水をやります」。\n【英訳】やる（やります） - give (to plants/animals)."
             },
             {
-              "id": 11042,
+              "id": 8,
               "questionText": "彼女に会うのは、卒業以来3年（　　）。",
               "options": [
                 "よりだ",
@@ -8926,12 +8891,12 @@ export const practiceSetsBook = {
                 "ぶりだ"
               ],
               "correctIndex": 3,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】以前の出来事から一定の時間が経過したことを表す「〜ぶり」：「卒業以来3年ぶりだ」。\n【英訳】〜ぶり - after an interval of 3 years."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】「期間＋ぶり」で「その期間が経過した後に再び同じことが起こる」ことを表します。「3年ぶりだ」。\n【英訳】〜ぶり - for the first time in (3 years)."
             },
             {
-              "id": 11043,
+              "id": 9,
               "questionText": "弟は先生に何と（　　）。",
               "options": [
                 "お話しなさいましたか",
@@ -8940,12 +8905,12 @@ export const practiceSetsBook = {
                 "申しましたか"
               ],
               "correctIndex": 3,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】身内（弟）の言ったことを先生に対して話す謙譲語は「申しましたか」です。\n【英訳】申す - humble form of 言う for family member."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】身内である「弟」が先生（目上）に対して発言した動作なので、身内の動作をへりくだる謙譲語「申しましたか（申す＝言うの謙譲語）」が適切です。\n【英訳】申しましたか - said (humble expression for one's younger brother)."
             },
             {
-              "id": 11044,
+              "id": 10,
               "questionText": "あの子の、小さい子ども（　　）、とてもかわいい。",
               "options": [
                 "にしては",
@@ -8954,13 +8919,13 @@ export const practiceSetsBook = {
                 "からして"
               ],
               "correctIndex": 0,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】標準や予想と合わない意外性を表す「〜にしては」：「小さい子どもにしては」。\n【英訳】〜にしては - considering that / for a small child."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】「名詞＋にしては」で「〜という基準・普通から考えると意外にも…だ」を表します。「小さい子どもにしては（落ち着いていて・しっかりしていて等）とてもかわいい」。\n【英訳】〜にしては - for / considering that..."
             },
             {
-              "id": 11045,
-              "questionText": "男の学生「あ、ペンを忘れちゃった。」  \r\n    女の学生「私（　　）、これを使ってよ。」",
+              "id": 11,
+              "questionText": "男の学生「あ、ペンを忘れちゃった。」<br/>女の学生「私（　　）、これを使ってよ。」",
               "options": [
                 "のもよければ",
                 "のでよければ",
@@ -8968,13 +8933,13 @@ export const practiceSetsBook = {
                 "でよいから"
               ],
               "correctIndex": 1,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】「私ので構わないなら」と控えめに差し出す「〜のでよければ」：「私のでよければ使ってよ」。\n【英訳】〜のでよければ - if mine is alright with you."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】所有の「私の（ペン）」に条件「でよければ（それで問題なければ／かまわないなら）」がつき、「私のでよければ」となります。\n【英訳】〜のでよければ - if mine is alright / if you don't mind mine."
             },
             {
-              "id": 11046,
-              "questionText": "あまり時間がないから、食事を（　　）、簡単なものにすることつもりだ。",
+              "id": 12,
+              "questionText": "あまり時間がないから、食事を（　　）、簡単なものにするつもりだ。",
               "options": [
                 "するとしては",
                 "するとしようと",
@@ -8982,12 +8947,12 @@ export const practiceSetsBook = {
                 "するとしようなら"
               ],
               "correctIndex": 2,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】仮定条件の逆説を表す「〜（動詞辞書形）としても」：「食事をするとしても、簡単なものにする」。\n【英訳】〜としても - even if I do eat..."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】「動詞普通形＋としても」で「たとえ〜するとしても／仮に〜するにしても」という逆接の仮定を表します。「食事をするとしても、簡単なものにする」。\n【英訳】〜としても - even if / even assuming that..."
             },
             {
-              "id": 11047,
+              "id": 13,
               "questionText": "私はアイスクリームが大好きなんで、お店で見かけると（　　）。",
               "options": [
                 "買おうとしています",
@@ -8996,13 +8961,13 @@ export const practiceSetsBook = {
                 "買わないではいられません"
               ],
               "correctIndex": 3,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】我慢できずに思わず〜してしまう「〜ないではいられない」：「買わないではいられません」。\n【英訳】〜ないではいられない - cannot help buying."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】気持ちを抑えることができず自然と〜してしまうことを「動詞ない形＋ではいられない」と言います。「買わないではいられません（どうしても買ってしまう）」。\n【英訳】〜ないではいられない - cannot help but / cannot resist doing."
             },
             {
-              "id": 11048,
-              "questionText": "きのうのゲームは__________ __________ ★ __________ 、Aチームが勝った。",
+              "id": 14,
+              "questionText": "きのうのゲームは ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 、Aチームが勝った。",
               "options": [
                 "反して",
                 "予想に",
@@ -9010,13 +8975,13 @@ export const practiceSetsBook = {
                 "多くの"
               ],
               "correctIndex": 1,
-              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【語順】[4多くの] [3人々の] [★ 2予想に] [1反して]、Aチームが勝った\n【★ 正解】2「予想に」\n【英訳】Order: 多くの人々の予想に反して - contrary to expectations."
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【語順】きのうのゲームは、[4多くの] [3人々の] [★ 2予想に] [1反して]、Aチームが勝った。\n【★ 正解】2「予想に」\n【英訳】Order: 多くの人々の予想に反して - contrary to the expectations of many people."
             },
             {
-              "id": 11049,
-              "questionText": "よろしければ、__________ __________ ★ __________ どうぞ。",
+              "id": 15,
+              "questionText": "よろしければ、＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ どうぞ。",
               "options": [
                 "ものですが",
                 "お菓子を",
@@ -9024,13 +8989,13 @@ export const practiceSetsBook = {
                 "いただいた"
               ],
               "correctIndex": 2,
-              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【語順】よろしければ、[4いただいた] [1ものですが]、[★ 3こちらの] [2お菓子を] どうぞ\n【★ 正解】3「こちらの」\n【英訳】Order: いただいたものですが、こちらのお菓子をどうぞ。"
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【語順】よろしければ、[4いただいた] [1ものですが] [★ 3こちらの] [2お菓子を] どうぞ。\n【★ 正解】3「こちらの」\n【英訳】Order: いただいたものですがこちらの〜 - it is something I received, but please have these sweets."
             },
             {
-              "id": 11050,
-              "questionText": "山口「では、このプロジェクトは、先日の__________ __________ ★ __________ でしょうか。」  \r\n    中川「そうですね、問題ないと思います。」",
+              "id": 16,
+              "questionText": "山口「では、このプロジェクトは、先日の ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ でしょうか。」<br/>中川「そうですね、問題ないと思います。」",
               "options": [
                 "会議で",
                 "かまわない",
@@ -9038,13 +9003,13 @@ export const practiceSetsBook = {
                 "決まったように"
               ],
               "correctIndex": 2,
-              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【語順】先日の [1会議で] [4決まったように] [★ 3進めても] [2かまわない] でしょうか\n【★ 正解】3「進めても」\n【英訳】Order: 会議で決まったように進めてもかまわないでしょうか。"
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【語順】先日の [1会議で] [4決まったように] [★ 3進めても] [2かまわない] でしょうか。\n【★ 正解】3「進めても」\n【英訳】Order: 会議で決まったように進めてもかまわない - is it alright to proceed as decided in the previous meeting?"
             },
             {
-              "id": 11051,
-              "questionText": "以前は毎日ピアノの練習をしていましたが、最近はしていないので、__________ __________ ★ __________ です。",
+              "id": 17,
+              "questionText": "以前は毎日ピアノの練習をしていましたが、最近はしていないので、＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ です。",
               "options": [
                 "一方",
                 "なる",
@@ -9052,13 +9017,13 @@ export const practiceSetsBook = {
                 "下手に"
               ],
               "correctIndex": 1,
-              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【語順】最近はしていないので、[3前より] [4下手に] [★ 2なる] [1一方] です\n【★ 正解】2「なる」\n【英訳】Order: 前より下手になる一方です - only getting worse."
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【語順】最近はしていないので、[3前より] [4下手に] [★ 2なる] [1一方] です。\n【★ 正解】2「なる」\n【英訳】Order: 前より下手になる一方 - only getting worse and worse compared to before."
             },
             {
-              "id": 11052,
-              "questionText": "その村の人たちの__________ __________ ★ __________ 数十年間も続いた。",
+              "id": 18,
+              "questionText": "その村の人たちの ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 数十年間も続いた。",
               "options": [
                 "なんと",
                 "土地を",
@@ -9066,13 +9031,14 @@ export const practiceSetsBook = {
                 "めぐる"
               ],
               "correctIndex": 2,
-              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【語順】その村の人たちの [2土地を] [4めぐる] [★ 3争いは] [1なんと] 数十年間も続いた\n【★ 正解】3「争いは」\n【英訳】Order: 土地をめぐる争いはなんと数十年間も続いた。"
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【語順】その村の人たちの [2土地を] [4めぐる] [★ 3争いは] [1なんと] 数十年間も続いた。\n【★ 正解】3「争いは」\n【英訳】Order: 土地をめぐる争いはなんと数十年間も - the dispute surrounding the land surprisingly lasted for several decades."
             },
             {
-              "id": 11053,
+              "id": 19,
               "questionText": "",
+              "passageText": "**富士山のこと**\n\n張 拓\n\n土曜、日曜日に、日本に来て初めて、富士山に行きました。日本に来る前は、日本のイメージを代表するものは富士山でした。富士山に［　19　］、前の日の夜はうれしくて、よく眠れませんでした。\n\n私が友だちと一緒に参加したツアーは、朝早くバスで出発し、まずバスで五合目まで行き、その後、ガイドさんに従って、八合目までのぼり、山小屋にとまって、次の日の朝、頂上を目指すというものです。とても天気がよかったので、頂上で「ご来光」と呼ばれる朝日を［　20　］。本当にきれいでした。\n\nただ、残念だったのは、ごみがたくさん捨てられていたことです。［　21　］、友だちと下りるときにごみを拾うことにしました。もっていた袋に、見つけたごみを入れていくと、五合目に戻るころには、ごみ袋がいっぱいでした。遠くから見るとあんなに［　22-a　］富士山も、実際はこんなに［　22-b　］ことがわかって、悲しい気持ちになりました。ガイドさんも、富士山のごみは問題になっている、と言っていました。\n\n帰ってきてから、パソコンで［　23　］、山を登りながらごみを拾うツアーもあるようです。富士山をきれいにするために、今度はこのようなツアーに参加したいと思いました。",
               "options": [
                 "登れると思うと",
                 "登れたと思うと",
@@ -9080,15 +9046,14 @@ export const practiceSetsBook = {
                 "登れと思ったら"
               ],
               "correctIndex": 0,
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "passageText": "**富士山のこと**\r\n\r\n張 拓\r\n\r\n土曜、日曜日に、日本に来て初めて、富士山に行きました。日本に来る前は、日本のイメージを代表するものは富士山でした。富士山に［　19　］、前の日の夜はうれしくて、よく眠れませんでした。\r\n\r\n私が友だちと一緒に参加したツアーは、朝早くバスで出発し、まずバスで五合目まで行き、その後、ガイドさんに従って、八合目までのぼり、山小屋にとまって、次の日の朝、頂上を目指すというものです。とても天気がよかったので、頂上で「ご来光」と呼ばれる朝日を［　20　］。本当にきれいでした。\r\n\r\nただ、残念だったのは、ごみがたくさん捨てられていたことです。［　21　］、友だちと下りるときにごみを拾うことにしました。もっていた袋に、見つけたごみを入れていくと、五合目に戻るころには、ごみ袋がいっぱいでした。遠くから見るとあんなに［　22-a　］富士山も、実際はこんなに［　22-b　］ことがわかって、悲しい気持ちになりました。ガイドさんも、富士山のごみは問題になっている、と言っていました。\r\n\r\n帰ってきてから、パソコンで［　23　］、山を登りながらごみを拾うツアーもあるようです。富士山をきれいにするために、今度はこのようなツアーに参加したいと思いました。",
-              "imageSrc": "/images/practice_sets/set_11_passage.jpg",
-              "explanation": "【解説】「富士山に［登れると思うと］、前の日の夜はうれしくて…」＝登ることができると期待すると。\n【英訳】登れると思うと - thinking about being able to climb."
+              "instruction": "問題3 つぎの文章は、留学生の張さんが書いた作文です。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【解説】これから翌日に富士山に登ることができるという期待・感情を表す「〜登れると思うと（うれしくて眠れなかった）」が正解です。\n【英訳】登れると思うと - thinking that I can climb (tomorrow)."
             },
             {
-              "id": 11054,
+              "id": 20,
               "questionText": "",
+              "passageText": "**富士山のこと**\n\n張 拓\n\n土曜、日曜日に、日本に来て初めて、富士山に行きました。日本に来る前は、日本のイメージを代表するものは富士山でした。富士山に［　19　］、前の日の夜はうれしくて、よく眠れませんでした。\n\n私が友だちと一緒に参加したツアーは、朝早くバスで出発し、まずバスで五合目まで行き、その後、ガイドさんに従って、八合目までのぼり、山小屋にとまって、次の日の朝、頂上を目指すというものです。とても天気がよかったので、頂上で「ご来光」と呼ばれる朝日を［　20　］。本当にきれいでした。\n\nただ、残念だったのは、ごみがたくさん捨てられていたことです。［　21　］、友だちと下りるときにごみを拾うことにしました。もっていた袋に、見つけたごみを入れていくと、五合目に戻るころには、ごみ袋がいっぱいでした。遠くから見るとあんなに［　22-a　］富士山も、実際はこんなに［　22-b　］ことがわかって、悲しい気持ちになりました。ガイドさんも、富士山のごみは問題になっている、と言っていました。\n\n帰ってきてから、パソコンで［　23　］、山を登りながらごみを拾うツアーもあるようです。富士山をきれいにするために、今度はこのようなツアーに参加したいと思いました。",
               "options": [
                 "見られそうでした",
                 "見ることでした",
@@ -9096,15 +9061,14 @@ export const practiceSetsBook = {
                 "見たいと思いました"
               ],
               "correctIndex": 2,
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "passageText": "**富士山のこと**\r\n\r\n張 拓\r\n\r\n土曜、日曜日に、日本に来て初めて、富士山に行きました。日本に来る前は、日本のイメージを代表するものは富士山でした。富士山に［　19　］、前の日の夜はうれしくて、よく眠れませんでした。\r\n\r\n私が友だちと一緒に参加したツアーは、朝早くバスで出発し、まずバスで五合目まで行き、その後、ガイドさんに従って、八合目までのぼり、山小屋にとまって、次の日の朝、頂上を目指すというものです。とても天気がよかったので、頂上で「ご来光」と呼ばれる朝日を［　20　］。本当にきれいでした。\r\n\r\nただ、残念だったのは、ごみがたくさん捨てられていたことです。［　21　］、友だちと下りるときにごみを拾うことにしました。もっていた袋に、見つけたごみを入れていくと、五合目に戻るころには、ごみ袋がいっぱいでした。遠くから見るとあんなに［　22-a　］富士山も、実際はこんなに［　22-b　］ことがわかって、悲しい気持ちになりました。ガイドさんも、富士山のごみは問題になっている、と言っていました。\r\n\r\n帰ってきてから、パソコンで［　23　］、山を登りながらごみを拾うツアーもあるようです。富士山をきれいにするために、今度はこのようなツアーに参加したいと思いました。",
-              "imageSrc": "/images/practice_sets/set_11_passage.jpg",
-              "explanation": "【解説】可能の実現を表す表現「朝日を［見ることができました］」。\n【英訳】見ることができました - was able to view the sunrise."
+              "instruction": "問題3 つぎの文章は、留学生の張さんが書いた作文です。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【解説】「天気がよかったので、朝日を［見ることができました］。本当にきれいでした」と実際に朝日を見ることができた達成・可能の過去形が正解です。\n【英訳】見ることができました - was able to see."
             },
             {
-              "id": 11055,
+              "id": 21,
               "questionText": "",
+              "passageText": "**富士山のこと**\n\n張 拓\n\n土曜、日曜日に、日本に来て初めて、富士山に行きました。日本に来る前は、日本のイメージを代表するものは富士山でした。富士山に［　19　］、前の日の夜はうれしくて、よく眠れませんでした。\n\n私が友だちと一緒に参加したツアーは、朝早くバスで出発し、まずバスで五合目まで行き、その後、ガイドさんに従って、八合目までのぼり、山小屋にとまって、次の日の朝、頂上を目指すというものです。とても天気がよかったので、頂上で「ご来光」と呼ばれる朝日を［　20　］。本当にきれいでした。\n\nただ、残念だったのは、ごみがたくさん捨てられていたことです。［　21　］、友だちと下りるときにごみを拾うことにしました。もっていた袋に、見つけたごみを入れていくと、五合目に戻るころには、ごみ袋がいっぱいでした。遠くから見るとあんなに［　22-a　］富士山も、実際はこんなに［　22-b　］ことがわかって、悲しい気持ちになりました。ガイドさんも、富士山のごみは問題になっている、と言っていました。\n\n帰ってきてから、パソコンで［　23　］、山を登りながらごみを拾うツアーもあるようです。富士山をきれいにするために、今度はこのようなツアーに参加したいと思いました。",
               "options": [
                 "ところで",
                 "そこで",
@@ -9112,15 +9076,14 @@ export const practiceSetsBook = {
                 "それが"
               ],
               "correctIndex": 1,
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "passageText": "**富士山のこと**\r\n\r\n張 拓\r\n\r\n土曜、日曜日に、日本に来て初めて、富士山に行きました。日本に来る前は、日本のイメージを代表するものは富士山でした。富士山に［　19　］、前の日の夜はうれしくて、よく眠れませんでした。\r\n\r\n私が友だちと一緒に参加したツアーは、朝早くバスで出発し、まずバスで五合目まで行き、その後、ガイドさんに従って、八合目までのぼり、山小屋にとまって、次の日の朝、頂上を目指すというものです。とても天気がよかったので、頂上で「ご来光」と呼ばれる朝日を［　20　］。本当にきれいでした。\r\n\r\nただ、残念だったのは、ごみがたくさん捨てられていたことです。［　21　］、友だちと下りるときにごみを拾うことにしました。もっていた袋に、見つけたごみを入れていくと、五合目に戻るころには、ごみ袋がいっぱいでした。遠くから見るとあんなに［　22-a　］富士山も、実際はこんなに［　22-b　］ことがわかって、悲しい気持ちになりました。ガイドさんも、富士山のごみは問題になっている、と言っていました。\r\n\r\n帰ってきてから、パソコンで［　23　］、山を登りながらごみを拾うツアーもあるようです。富士山をきれいにするために、今度はこのようなツアーに参加したいと思いました。",
-              "imageSrc": "/images/practice_sets/set_11_passage.jpg",
-              "explanation": "【解説】ゴミが多いという事実を受けて次の行動へ展開する「［そこで］、友だちとゴミを拾うことにしました」。\n【英訳】そこで - therefore / thereupon."
+              "instruction": "問題3 つぎの文章は、留学生の張さんが書いた作文です。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【解説】「ごみがたくさん捨てられていて残念だった。［そこで］、友だちと下りるときにごみを拾うことにした」と、前述の事態を受けて行動を起こす接続詞「そこで」が正解です。\n【英訳】そこで - thereupon / so / as a result."
             },
             {
-              "id": 11056,
+              "id": 22,
               "questionText": "",
+              "passageText": "**富士山のこと**\n\n張 拓\n\n土曜、日曜日に、日本に来て初めて、富士山に行きました。日本に来る前は、日本のイメージを代表するものは富士山でした。富士山に［　19　］、前の日の夜はうれしくて、よく眠れませんでした。\n\n私が友だちと一緒に参加したツアーは、朝早くバスで出発し、まずバスで五合目まで行き、その後、ガイドさんに従って、八合目までのぼり、山小屋にとまって、次の日の朝、頂上を目指すというものです。とても天気がよかったので、頂上で「ご来光」と呼ばれる朝日を［　20　］。本当にきれいでした。\n\nただ、残念だったのは、ごみがたくさん捨てられていたことです。［　21　］、友だちと下りるときにごみを拾うことにしました。もっていた袋に、見つけたごみを入れていくと、五合目に戻るころには、ごみ袋がいっぱいでした。遠くから見るとあんなに［　22-a　］富士山も、実際はこんなに［　22-b　］ことがわかって、悲しい気持ちになりました。ガイドさんも、富士山のごみは問題になっている、と言っていました。\n\n帰ってきてから、パソコンで［　23　］、山を登りながらごみを拾うツアーもあるようです。富士山をきれいにするために、今度はこのようなツアーに参加したいと思いました。",
               "options": [
                 "a. きたない　/　b. よごれている",
                 "a. きたない　/　b. よごれていない",
@@ -9128,15 +9091,14 @@ export const practiceSetsBook = {
                 "a. きれいな　/　b. よごれている"
               ],
               "correctIndex": 3,
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "passageText": "**富士山のこと**\r\n\r\n張 拓\r\n\r\n土曜、日曜日に、日本に来て初めて、富士山に行きました。日本に来る前は、日本のイメージを代表するものは富士山でした。富士山に［　19　］、前の日の夜はうれしくて、よく眠れませんでした。\r\n\r\n私が友だちと一緒に参加したツアーは、朝早くバスで出発し、まずバスで五合目まで行き、その後、ガイドさんに従って、八合目までのぼり、山小屋にとまって、次の日の朝、頂上を目指すというものです。とても天気がよかったので、頂上で「ご来光」と呼ばれる朝日を［　20　］。本当にきれいでした。\r\n\r\nただ、残念だったのは、ごみがたくさん捨てられていたことです。［　21　］、友だちと下りるときにごみを拾うことにしました。もっていた袋に、見つけたごみを入れていくと、五合目に戻るころには、ごみ袋がいっぱいでした。遠くから見るとあんなに［　22-a　］富士山も、実際はこんなに［　22-b　］ことがわかって、悲しい気持ちになりました。ガイドさんも、富士山のごみは問題になっている、と言っていました。\r\n\r\n帰ってきてから、パソコンで［　23　］、山を登りながらごみを拾うツアーもあるようです。富士山をきれいにするために、今度はこのようなツアーに参加したいと思いました。",
-              "imageSrc": "/images/practice_sets/set_11_passage.jpg",
-              "explanation": "【解説】「遠くから見るとあんなに［きれいな］富士山も、実際はこんなに［よごれている］ことがわかって…」。\n【英訳】きれいな / よごれている - beautiful from afar, yet dirty in reality."
+              "instruction": "問題3 つぎの文章は、留学生の張さんが書いた作文です。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【解説】「遠くから見るとあんなに［きれいな］富士山も、実際はこんなに［よごれている］ことがわかって悲しい気持ちになった」という対比（遠くの美しさと実際のごみによる汚れ）が文脈に一致します。\n【英訳】a. きれいな / b. よごれている - beautiful from afar / dirty in reality."
             },
             {
-              "id": 11057,
+              "id": 23,
               "questionText": "",
+              "passageText": "**富士山のこと**\n\n張 拓\n\n土曜、日曜日に、日本に来て初めて、富士山に行きました。日本に来る前は、日本のイメージを代表するものは富士山でした。富士山に［　19　］、前の日の夜はうれしくて、よく眠れませんでした。\n\n私が友だちと一緒に参加したツアーは、朝早くバスで出発し、まずバスで五合目まで行き、その後、ガイドさんに従って、八合目までのぼり、山小屋にとまって、次の日の朝、頂上を目指すというものです。とても天気がよかったので、頂上で「ご来光」と呼ばれる朝日を［　20　］。本当にきれいでした。\n\nただ、残念だったのは、ごみがたくさん捨てられていたことです。［　21　］、友だちと下りるときにごみを拾うことにしました。もっていた袋に、見つけたごみを入れていくと、五合目に戻るころには、ごみ袋がいっぱいでした。遠くから見るとあんなに［　22-a　］富士山も、実際はこんなに［　22-b　］ことがわかって、悲しい気持ちになりました。ガイドさんも、富士山のごみは問題になっている、と言っていました。\n\n帰ってきてから、パソコンで［　23　］、山を登りながらごみを拾うツアーもあるようです。富士山をきれいにするために、今度はこのようなツアーに参加したいと思いました。",
               "options": [
                 "調べるものの",
                 "調べようと",
@@ -9144,11 +9106,9 @@ export const practiceSetsBook = {
                 "調べたところ"
               ],
               "correctIndex": 3,
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "passageText": "**富士山のこと**\r\n\r\n張 拓\r\n\r\n土曜、日曜日に、日本に来て初めて、富士山に行きました。日本に来る前は、日本のイメージを代表するものは富士山でした。富士山に［　19　］、前の日の夜はうれしくて、よく眠れませんでした。\r\n\r\n私が友だちと一緒に参加したツアーは、朝早くバスで出発し、まずバスで五合目まで行き、その後、ガイドさんに従って、八合目までのぼり、山小屋にとまって、次の日の朝、頂上を目指すというものです。とても天気がよかったので、頂上で「ご来光」と呼ばれる朝日を［　20　］。本当にきれいでした。\r\n\r\nただ、残念だったのは、ごみがたくさん捨てられていたことです。［　21　］、友だちと下りるときにごみを拾うことにしました。もっていた袋に、見つけたごみを入れていくと、五合目に戻るころには、ごみ袋がいっぱいでした。遠くから見るとあんなに［　22-a　］富士山も、実際はこんなに［　22-b　］ことがわかって、悲しい気持ちになりました。ガイドさんも、富士山のごみは問題になっている、と言っていました。\r\n\r\n帰ってきてから、パソコンで［　23　］、山を登りながらごみを拾うツアーもあるようです。富士山をきれいにするために、今度はこのようなツアーに参加したいと思いました。",
-              "imageSrc": "/images/practice_sets/set_11_passage.jpg",
-              "explanation": "【解説】調査・行動の結果発見したことを表す「パソコンで［調べたところ］、…あるようです」。\n【英訳】調べたところ - when I looked up on the PC."
+              "instruction": "問題3 つぎの文章は、留学生の張さんが書いた作文です。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【解説】「動詞た形＋ところ」で、ある行為を行った結果新しい事実が判明したことを表します。「パソコンで調べたところ、ツアーもあるようです」。\n【英訳】調べたところ - upon investigating / when I checked."
             }
           ]
         }
@@ -9156,15 +9116,16 @@ export const practiceSetsBook = {
     },
     {
       "id": "set-12",
-      "title": "Set 12",
-      "description": "Practice Test 12",
+      "title": "第12回",
+      "description": "JLPT N3 Practice Set 12 - 語彙・漢字・文法・読解",
       "sections": {
         "vocabulary-kanji": {
           "title": "Vocabulary & Kanji",
           "titleJa": "文字・語彙",
           "questions": [
             {
-              "id": 12000,
+              "id": 1,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "木の枝が<u>折れて</u>います。",
               "options": [
                 "かれて",
@@ -9173,12 +9134,11 @@ export const practiceSetsBook = {
                 "きれて"
               ],
               "correctIndex": 2,
-              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「折れて」の正しい読み方は「おれて」です。\n【英訳】The reading of 折れて is おれて - broken/snapped."
+              "explanation": "【解説】「折れて」の正しい読み方は「おれて」です。「折れる（おれる）」は木の枝や骨などが折れることを表します。1「枯れる（かれる）」、2「割れる（われる）」、4「切れる（きれる）」。\n【英訳】The reading of 折れて is おれて - to be broken / snapped."
             },
             {
-              "id": 12001,
+              "id": 2,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "現金と野菜を<u>交換</u>する。",
               "options": [
                 "こうさい",
@@ -9187,12 +9147,11 @@ export const practiceSetsBook = {
                 "こうたい"
               ],
               "correctIndex": 1,
-              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「交換」の正しい読み方は「こうかん」です。\n【英訳】The reading of 交換 is こうかん - exchange."
+              "explanation": "【解説】「交換」の正しい読み方は「こうかん」です。取り換えることを表します。1「交際（こうさい）」、3「交流（こうりゅう）」、4「交代（こうたい）」。\n【英訳】The reading of 交換 is こうかん - exchange / swap."
             },
             {
-              "id": 12002,
+              "id": 3,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "新しい<u>図書</u>を注文した。",
               "options": [
                 "としょ",
@@ -9201,13 +9160,12 @@ export const practiceSetsBook = {
                 "とうじょ"
               ],
               "correctIndex": 0,
-              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「図書」の正しい読み方は「としょ」です。\n【英訳】The reading of 図書 is としょ - books/library books."
+              "explanation": "【解説】「図書」の正しい読み方は「としょ」です。本や書籍のことを表します。\n【英訳】The reading of 図書 is としょ - books / volumes."
             },
             {
-              "id": 12003,
-              "questionText": "この国では、<u>老人が</u>どんどん増えている。",
+              "id": 4,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
+              "questionText": "この国では、<u>老人</u>がどんどん増えている。",
               "options": [
                 "のうじん",
                 "のうにん",
@@ -9215,12 +9173,11 @@ export const practiceSetsBook = {
                 "ろうにん"
               ],
               "correctIndex": 2,
-              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「老人」の正しい読み方は「ろうじん」です。\n【英訳】The reading of 老人 is ろうじん - elderly person."
+              "explanation": "【解説】「老人」の正しい読み方は「ろうじん」です。年をとった人のことを表します。\n【英訳】The reading of 老人 is ろうじん - elderly person / the aged."
             },
             {
-              "id": 12004,
+              "id": 5,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "その<u>缶</u>は金曜日に捨ててください。",
               "options": [
                 "かん",
@@ -9229,26 +9186,24 @@ export const practiceSetsBook = {
                 "ほん"
               ],
               "correctIndex": 0,
-              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「缶」の正しい読み方は「かん」です。\n【英訳】The reading of 缶 is かん - can/tin."
+              "explanation": "【解説】「缶」の正しい読み方は「かん」です。金属製の容器（アルミ缶・スチール缶など）を表します。2「瓶（びん）」。\n【英訳】The reading of 缶 is かん - can / tin."
             },
             {
-              "id": 12005,
+              "id": 6,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "南は、あちらの<u>方向</u>です。",
               "options": [
                 "ほうく",
                 "ほうこ",
                 "ほうこう",
-                "ほうこう"
+                "ほうごう"
               ],
               "correctIndex": 2,
-              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「方向」の正しい読み方は「ほうこう」です。\n【英訳】The reading of 方向 is ほうこう - direction."
+              "explanation": "【解説】「方向」の正しい読み方は「ほうこう」です。方角・向いている向きを表します。\n【英訳】The reading of 方向 is ほうこう - direction / way."
             },
             {
-              "id": 12006,
+              "id": 7,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "この料理は、とても<u>苦い</u>です。",
               "options": [
                 "からい",
@@ -9257,26 +9212,24 @@ export const practiceSetsBook = {
                 "あまい"
               ],
               "correctIndex": 1,
-              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「苦い」の正しい読み方は「にがい」です。\n【英訳】The reading of 苦い is にがい - bitter."
+              "explanation": "【解説】「苦い」の正しい読み方は「にがい」です。味覚の苦味を表します。1「辛い（からい）」、3「酸っぱい（すっぱい）」、4「甘い（あまい）」。\n【英訳】The reading of 苦い is にがい - bitter."
             },
             {
-              "id": 12007,
+              "id": 8,
+              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "公園の<u>辺り</u>を散歩します。",
               "options": [
                 "となり",
                 "ひだり",
                 "まわり",
-                "あたり ---"
+                "あたり"
               ],
               "correctIndex": 3,
-              "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「辺り」の正しい読み方は「あたり」です。\n【英訳】The reading of 辺り is あたり - vicinity/neighborhood."
+              "explanation": "【解説】「辺り」の正しい読み方は「あたり」です。その場所の周辺・近所を表します。1「隣（となり）」、2「左（ひだり）」、3「周り（まわり）」。\n【英訳】The reading of 辺り is あたり - vicinity / around."
             },
             {
-              "id": 12008,
+              "id": 9,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "questionText": "<u>ふうん</u>なことに、事故にあった。",
               "options": [
                 "不運",
@@ -9285,26 +9238,24 @@ export const practiceSetsBook = {
                 "未運"
               ],
               "correctIndex": 0,
-              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「ふうん」の正しい漢字は「不運」です。\n【英訳】The kanji for ふうん is 不運 - misfortune/unlucky."
+              "explanation": "【解説】「ふうん」の正しい漢字は「不運」です。運が悪いこと・巡り合わせが悪いことを意味します。\n【英訳】不運 (ふうん) - misfortune / bad luck."
             },
             {
-              "id": 12009,
+              "id": 10,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "questionText": "学者としての<u>じっせき</u>を上げる。",
               "options": [
                 "実責",
                 "実績",
-                "実績",
+                "実積",
                 "実席"
               ],
               "correctIndex": 1,
-              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「じっせき」の正しい漢字は「実績」です。\n【英訳】The kanji for じっせき is 実績 - track record/achievements."
+              "explanation": "【解説】「じっせき」の正しい漢字は「実績」です。実際に成し遂げた成果・業績を表します。\n【英訳】実績 (じっせき) - achievements / track record / accomplishments."
             },
             {
-              "id": 12010,
+              "id": 11,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "questionText": "森の中で<u>まよって</u>、一晩中歩き続けた。",
               "options": [
                 "悩って",
@@ -9313,12 +9264,11 @@ export const practiceSetsBook = {
                 "迷って"
               ],
               "correctIndex": 3,
-              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「まよって」の正しい漢字は「迷って」です。\n【英訳】The kanji for まよって is 迷って - get lost."
+              "explanation": "【解説】「まよって」の正しい漢字は「迷って」です。「道に迷う」のように方向が分からなくなることを表します。1は「悩んで」、2は「困って」、3は「寄って」。\n【英訳】迷って (まよって) - to get lost / lose one's way."
             },
             {
-              "id": 12011,
+              "id": 12,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "questionText": "この動物園では、動物に<u>さわる</u>ことができます。",
               "options": [
                 "採る",
@@ -9327,12 +9277,11 @@ export const practiceSetsBook = {
                 "探る"
               ],
               "correctIndex": 1,
-              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「さわる」の正しい漢字は「触る」です。\n【英訳】The kanji for さわる is 触る - touch."
+              "explanation": "【解説】「さわる」の正しい漢字は「触る」です。手などで物に触れることを表します。1「採る（とる）」、3「解る（わかる）」、4「探る（さぐる）」。\n【英訳】触る (さわる) - to touch / to feel."
             },
             {
-              "id": 12012,
+              "id": 13,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "questionText": "実家は<u>のうぎょう</u>を営んでいます。",
               "options": [
                 "漁業",
@@ -9341,12 +9290,11 @@ export const practiceSetsBook = {
                 "農業"
               ],
               "correctIndex": 3,
-              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「のうぎょう」の正しい漢字は「農業」です。\n【英訳】The kanji for のうぎょう is 農業 - agriculture/farming."
+              "explanation": "【解説】「のうぎょう」の正しい漢字は「農業」です。作物を栽培・生産する産業を表します。1「漁業（ぎょぎょう）」、2「林業（りんぎょう）」、3「工業（こうぎょう）」。\n【英訳】農業 (のうぎょう) - agriculture / farming."
             },
             {
-              "id": 12013,
+              "id": 14,
+              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "questionText": "この店には、よい<u>しなもの</u>が置いてある。",
               "options": [
                 "商品",
@@ -9355,12 +9303,11 @@ export const practiceSetsBook = {
                 "品者"
               ],
               "correctIndex": 2,
-              "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「しなもの」の正しい漢字は「品物」です。\n【英訳】The kanji for しなもの is 品物 - goods/articles."
+              "explanation": "【解説】「しなもの」の正しい漢字は「品物」です。物品・商品を指します。\n【英訳】品物 (しなもの) - goods / articles / items."
             },
             {
-              "id": 12014,
+              "id": 15,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "彼の日曜日のすごし方は、いつも同じ（　　）だ。",
               "options": [
                 "フォーム",
@@ -9369,12 +9316,11 @@ export const practiceSetsBook = {
                 "パターン"
               ],
               "correctIndex": 3,
-              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】いつも決まっている行動様式を「パターン」（pattern）と言います。\n【英訳】パターン - pattern of spending Sundays."
+              "explanation": "【解説】型・決まった行動様式を表す「パターン (pattern)」が文脈に最も合います。1「フォーム (form: 姿勢・書式)」、2「カラー (color)」、3「ライン (line)」。\n【英訳】パターン - pattern."
             },
             {
-              "id": 12015,
+              "id": 16,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "どのようにして事故が起きたのか、細かく（　　）した。",
               "options": [
                 "等分",
@@ -9383,12 +9329,11 @@ export const practiceSetsBook = {
                 "配分"
               ],
               "correctIndex": 1,
-              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】物事を細かく要素に分けて調べることを「分析する」と言います。\n【英訳】分析 - analysis."
+              "explanation": "【解説】物事の要素を細かく調べて原因や性質を明らかにする「分析（ぶんせき）」が適切です。1「等分（等しく分ける）」、3「分担（役割を分ける）」、4「配分（割り振る）」。\n【英訳】分析 (ぶんせき) - analysis."
             },
             {
-              "id": 12016,
+              "id": 17,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "食事を全部食べないで捨てるのは（　　）。",
               "options": [
                 "うらやましい",
@@ -9397,12 +9342,11 @@ export const practiceSetsBook = {
                 "もったいない"
               ],
               "correctIndex": 3,
-              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】まだ使える・食べられるものを無駄にして惜しい気持ちを「もったいない」と言います。\n【英訳】もったいない - wasteful."
+              "explanation": "【解説】価値あるものを無駄にして惜しい気持ちを表す「もったいない」が最も適しています。1「うらやましい（羨望）」、2「めんどうくさい（億劫）」、3「こまかい（微細）」。\n【英訳】もったいない - wasteful / what a waste."
             },
             {
-              "id": 12017,
+              "id": 18,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "夏休みは、いつも海外の別荘で（　　）います。",
               "options": [
                 "住んで",
@@ -9411,12 +9355,11 @@ export const practiceSetsBook = {
                 "戻って"
               ],
               "correctIndex": 1,
-              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】休日や時間を送ることを「過ごす」（過ごしています）と言います。\n【英訳】過ごす - spend time/vacation."
+              "explanation": "【解説】一定の期間や時間を送ることを「（時間を）過ごす」と言います。別荘で休暇を送る文脈なので「過ごして」が正解です。\n【英訳】過ごす (すごす) - to spend (time) / to pass."
             },
             {
-              "id": 12018,
+              "id": 19,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "コーヒーを（　　）飲みにいきませんか。",
               "options": [
                 "一皿",
@@ -9425,12 +9368,11 @@ export const practiceSetsBook = {
                 "一枚"
               ],
               "correctIndex": 1,
-              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】液体の入った器を数える助数詞は「杯」（いっぱい）です。「コーヒーを一杯」。\n【英訳】一杯 - one cup of coffee."
+              "explanation": "【解説】カップやグラスに入った飲み物を数える助数詞は「杯（はい）」なので「一杯（いっぱい）」を用います。1「皿（料理用のお皿）」、3「個（立体的な小物）」、4「枚（平たいもの）」。\n【英訳】一杯 (いっぱい) - a cup of / one glass of."
             },
             {
-              "id": 12019,
+              "id": 20,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "この1年で身長が10センチも（　　）。",
               "options": [
                 "太った",
@@ -9439,12 +9381,11 @@ export const practiceSetsBook = {
                 "伸びた"
               ],
               "correctIndex": 3,
-              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】背丈が長くなることを「背が伸びる」（伸びた）と言います。\n【英訳】伸びた - grew taller."
+              "explanation": "【解説】身長や髪などが長くなることには「伸びる（のびる）」を用います。「身長が伸びた」が自然な連語です。1「太った（体重が増えた）」、2「得た（手に入れた）」、3「ふくらんだ（膨張した）」。\n【英訳】伸びた (のびた) - grew (taller) / lengthened."
             },
             {
-              "id": 12020,
+              "id": 21,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "荷物を受け取るときに、（　　）を求められた。",
               "options": [
                 "マーク",
@@ -9453,12 +9394,11 @@ export const practiceSetsBook = {
                 "クレーム"
               ],
               "correctIndex": 2,
-              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】受領確認のために書く署名を「サイン」と言います。\n【英訳】サイン - signature."
+              "explanation": "【解説】受け取りの確認として署名することを「サイン (sign)」と言います。1「マーク (mark: 記号)」、2「ポスト (post: 郵便受け)」、4「クレーム (claim: 苦情)」。\n【英訳】サイン - signature / sign."
             },
             {
-              "id": 12021,
+              "id": 22,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "私（　　）の手紙が来ていませんか。",
               "options": [
                 "行き",
@@ -9467,12 +9407,11 @@ export const practiceSetsBook = {
                 "あて"
               ],
               "correctIndex": 3,
-              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】手紙の宛先を表す言葉は「あて」（私あての手紙）です。\n【英訳】あて - addressed to me."
+              "explanation": "【解説】人名や受取人の名前に付けて「〜宛て（〜向けに送られたもの）」を表す接尾語「あて」が適切です。「私あての手紙（私宛ての手紙）」。\n【英訳】あて (宛て) - addressed to."
             },
             {
-              "id": 12022,
+              "id": 23,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "他の会社に送る書類の（　　）をするよう、部下に指示した。",
               "options": [
                 "提示",
@@ -9481,12 +9420,11 @@ export const practiceSetsBook = {
                 "設定"
               ],
               "correctIndex": 1,
-              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】書類や文章を作り上げることを「作成する」と言います。\n【英訳】作成 - preparation/creation of documents."
+              "explanation": "【解説】書類や計画などを新しく作ることを「作成（さくせい）」と言います。「書類の作成をする」。1「提示（差し出して見せる）」、3「集合（集まる）」、4「設定（条件などを決める）」。\n【英訳】作成 (さくせい) - preparation / creation / drawing up."
             },
             {
-              "id": 12023,
+              "id": 24,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "いそがしい1日だったので、家に帰ると（　　）した。",
               "options": [
                 "はっと",
@@ -9495,12 +9433,11 @@ export const practiceSetsBook = {
                 "ざっと"
               ],
               "correctIndex": 2,
-              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】安心や安堵で胸をなでおろす様子を「ほっとした」と言います。\n【英訳】ほっとする - relieved."
+              "explanation": "【解説】安心したり、緊張が緩んで安堵したりする様子を表す「ほっと（ほっとした）」が適切です。1「はっと（急に気付く）」、2「さっと（素早く）」、4「ざっと（おおまかに）」。\n【英訳】ほっと - relieved / with relief."
             },
             {
-              "id": 12024,
+              "id": 25,
+              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "その文章は、（　　）なことばで書かれていた。",
               "options": [
                 "不足",
@@ -9509,12 +9446,11 @@ export const practiceSetsBook = {
                 "優秀"
               ],
               "correctIndex": 2,
-              "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】はっきりして曖昧でないことを「明確」と言います。\n【英訳】明確 - clear/precise words."
+              "explanation": "【解説】言動や文章の意味がはっきりしていて疑いようがないことを「明確（めいかく）」と言います。「明確なことば」。1「不足な（足りない）」、2「丈夫な（頑丈な）」、4「優秀な（優れた）」。\n【英訳】明確 (めいかく) - clear / distinct / precise."
             },
             {
-              "id": 12025,
+              "id": 26,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "questionText": "その旅館の部屋はとても<u>清潔</u>だ。",
               "options": [
                 "古い",
@@ -9523,12 +9459,11 @@ export const practiceSetsBook = {
                 "明るい"
               ],
               "correctIndex": 2,
-              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「清潔」は汚れがなく衛生的な「きれいだ」と同じ意味です。\n【英訳】清潔 ＝ きれいだ - clean/hygienic."
+              "explanation": "【解説】「清潔（せいけつ）」は汚れがなく衛生的で清らかな様子を指すため、「きれいだ」に最も意味が近いです。\n【英訳】清潔 (せいけつ) - clean / sanitary (close to きれいだ)."
             },
             {
-              "id": 12026,
+              "id": 27,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "questionText": "仕事の準備が<u>整った</u>。",
               "options": [
                 "続行した",
@@ -9537,12 +9472,11 @@ export const practiceSetsBook = {
                 "終了した"
               ],
               "correctIndex": 3,
-              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「準備が整った」は準備が滞りなく「終了した・完了した」という意味です。\n【英訳】整った ＝ 終了した - ready/completed."
+              "explanation": "【解説】「準備が整う（ととのう）」は必要な準備がすべて過不足なく完了することを表すため、「終了した（終わった・できた）」に意味が最も近いです。\n【英訳】整った (ととのった) - was arranged / was completed (close to 終了した)."
             },
             {
-              "id": 12027,
+              "id": 28,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "questionText": "彼は、友だちを<u>ぶって</u>しまった。",
               "options": [
                 "手で打って",
@@ -9551,12 +9485,11 @@ export const practiceSetsBook = {
                 "悪口を言って"
               ],
               "correctIndex": 0,
-              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「ぶって」は人を手や平手で殴る「手で打って」という意味です。\n【英訳】ぶって ＝ 手で打って - hit with hand."
+              "explanation": "【解説】「ぶつ（打つ）」は手や拳などで人を殴る・たたくことを意味するため、「手で打って」が最も近いです。\n【英訳】ぶつ (打つ) - to hit / strike with hand (手で打って)."
             },
             {
-              "id": 12028,
+              "id": 29,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "questionText": "映画館は<u>がらがら</u>だ。",
               "options": [
                 "広い",
@@ -9565,27 +9498,25 @@ export const practiceSetsBook = {
                 "すいている"
               ],
               "correctIndex": 3,
-              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「がらがら」は人が少なくて空席が多い「すいている」という意味です。\n【英訳】がらがら ＝ すいている - practically empty."
+              "explanation": "【解説】「がらがら」は人や物が極めて少なく空虚・閑散としている様子を表すため、「すいている（空いている）」が最も近いです。\n【英訳】がらがら - empty / not crowded (close to すいている)."
             },
             {
-              "id": 12029,
+              "id": 30,
+              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "questionText": "デパートの<u>向かい</u>に本屋があります。",
               "options": [
                 "正面",
                 "手前",
                 "先",
-                "後ろ ---"
+                "後ろ"
               ],
               "correctIndex": 0,
-              "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「向かい」は道路などを挟んだ反対側「正面」のことです。\n【英訳】向かい ＝ 正面 - opposite/facing."
+              "explanation": "【解説】「向かい（むかい）」は向かい合っている側・正面を意味するため、「正面（しょうめん）」が最も近いです。\n【英訳】向かい (むかい) - opposite / across / front (close to 正面)."
             },
             {
-              "id": 12030,
-              "questionText": "<u>合わせる</u>",
+              "id": 31,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "questionText": "合わせる",
               "options": [
                 "毎朝、彼女と駅で<u>合わせて</u>一緒に学校へ行く。",
                 "友だちと声を<u>合わせて</u>、歌を歌った。",
@@ -9593,27 +9524,25 @@ export const practiceSetsBook = {
                 "父と母は、学生のころに<u>合わせて</u>、結婚した。"
               ],
               "correctIndex": 1,
-              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「合わせる」は複数のものを一つに調和させることで、「声を合わせて歌う」が自然です。\n【英訳】合わせる - harmonize/unite voices."
+              "explanation": "【解説】「合わせる」は複数のものを一つに一致させる、調和させることを表し、「声を合わせて歌う」が正しい使い方です。1は「待ち合わせて」、3は「集める」、4は「知り合って」などが適切です。\n【英訳】合わせる (あわせる) - to join together / harmonize (e.g. 声を合わせて歌う)."
             },
             {
-              "id": 12031,
-              "questionText": "<u>いきおい</u>",
+              "id": 32,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "questionText": "いきおい",
               "options": [
                 "この魚は、とても<u>いきおい</u>がよくておいしい。",
                 "パソコンの<u>いきおい</u>が悪いので、修理をすることにした。",
                 "今日は体の<u>いきおい</u>がいいので、とても元気です。",
-                "その子どもたちは、<u>いきおい</u>よく走りだした。"
+                "その子どもたちは、<u>いきおいよく</u>走りだした。"
               ],
               "correctIndex": 3,
-              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「いきおい（勢い）」は力強い勢力のことで、「いきおいよく走りだした」が自然です。\n【英訳】勢い - vigorously/with momentum."
+              "explanation": "【解説】「いきおい（勢い）」は物事の進行や動作の激しい力・勢力を表し、「勢いよく走りだした」が正しい使い方です。1は「いきがいい（新鮮）」、2は「調子・具合」、3は「体調・調子」が適切です。\n【英訳】いきおい (勢い) - momentum / vigor / force (e.g. いきおいよく走りだした)."
             },
             {
-              "id": 12032,
-              "questionText": "<u>坂</u>",
+              "id": 33,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "questionText": "坂",
               "options": [
                 "長い<u>坂</u>を渡って、家に帰りました。",
                 "ここは、日本でいちばん高い<u>坂</u>です。",
@@ -9621,13 +9550,12 @@ export const practiceSetsBook = {
                 "強い風で<u>坂</u>がすべって、たくさんの人がけがをしました。"
               ],
               "correctIndex": 2,
-              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「坂」は傾斜のある道や土地のことで、「急な坂の上に建っている」が自然です。\n【英訳】坂 - slope/hill."
+              "explanation": "【解説】「坂（さか）」は傾斜のある道を表し、「急な坂の上に建っている」が正しい使い方です。1は「橋」、2は「山」、4は「道路・路面」などが適切です。\n【英訳】坂 (さか) - slope / hill (e.g. 急な坂の上に)."
             },
             {
-              "id": 12033,
-              "questionText": "<u>すがた</u>",
+              "id": 34,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "questionText": "すがた",
               "options": [
                 "この音楽は、<u>すがた</u>がとてもいいので好きです。",
                 "私の兄と弟は、声の<u>すがた</u>がよく似ています。",
@@ -9635,23 +9563,20 @@ export const practiceSetsBook = {
                 "さっき駅前で、彼女の<u>すがた</u>を見かけました。"
               ],
               "correctIndex": 3,
-              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「すがた（姿）」は見えている人の形や様子で、「彼女のすがたを見かけた」が自然です。\n【英訳】姿 - figure/appearance of a person."
+              "explanation": "【解説】「すがた（姿）」は人の外見・体つきや見えている姿を表し、「彼女の姿を見かけた」が正しい使い方です。1は「曲・メロディー」、2は「声の感じ・音質」、3は「肉料理」などが適切です。\n【英訳】すがた (姿) - figure / appearance (e.g. 彼女の姿を見かけた)."
             },
             {
-              "id": 12034,
-              "questionText": "<u>はげしい</u>",
+              "id": 35,
+              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
+              "questionText": "はげしい",
               "options": [
-                "歩いていたら、雨が<u>はげしくふり</u>出した。",
-                "彼の日本語は、この数カ月でとても<u>はげしくなった</u>。",
-                "この紅茶は<u>はげしくておいしいので</u>、おかわりをください。",
+                "歩いていたら、雨が<u>はげしく</u>ふり出した。",
+                "彼の日本語は、この数カ月でとても<u>はげしく</u>なった。",
+                "この紅茶は<u>はげしくて</u>おいしいので、おかわりをください。",
                 "今日は、朝から何も食べていないので、おなかが<u>はげしい</u>。"
               ],
               "correctIndex": 0,
-              "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「はげしい（激しい）」は勢いが強いことで、「雨がはげしく降り出した」が自然です。\n【英訳】激しい - heavy/intense rain."
+              "explanation": "【解説】「はげしい（激しい）」は勢いや度合いが非常に強いことを表し、「雨が激しく降り出した」が正しい使い方です。2は「上手に / 達者に」、3は「香り高くて / 濃くて」、4は「ペコペコだ / すいている」などが適切です。\n【英訳】はげしい (激しい) - violent / intense / heavy (e.g. 雨が激しく降り出した)."
             }
           ]
         },
@@ -9660,8 +9585,9 @@ export const practiceSetsBook = {
           "titleJa": "文法・読解",
           "questions": [
             {
-              "id": 12035,
-              "questionText": "男性「どんなマンガが好きですか。」  \r\n   女性「私はマンガ（　　）は読みません。時間のむだですから。」",
+              "id": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "questionText": "男性「どんなマンガが好きですか。」\n女性「私はマンガ（　　）は読みません。時間のむだですから。」",
               "options": [
                 "しか",
                 "ほど",
@@ -9669,12 +9595,12 @@ export const practiceSetsBook = {
                 "など"
               ],
               "correctIndex": 3,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】対象を低く評価・軽視して取り上げる「〜など」：「マンガなどは読みません」。\n【英訳】〜など - things like manga."
+              "explanation": "【解説】軽視や例示を表す取り立て助詞「〜など」を用います。「マンガなどは読みません（マンガのようなものは読まない）」というニュアンスになります。\n【英訳】など - such things as / like."
             },
             {
-              "id": 12036,
+              "id": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "questionText": "私の息子は、まだ10歳の子ども（　　）、高いものをほしがる。",
               "options": [
                 "ものに",
@@ -9683,12 +9609,12 @@ export const practiceSetsBook = {
                 "きりに"
               ],
               "correctIndex": 2,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】身分や年齢にふさわしくない不満・非難を表す「〜くせに」：「子どものくせに」。\n【英訳】〜くせに - even though he is only a child."
+              "explanation": "【解説】立場や状態に合わない不満・非難を表す「〜くせに」を用います。「まだ子どもであるくせに（子どもの分際で）、高価なものを欲しがる」。\n【英訳】〜くせに - even though / although (with disapproval/blame)."
             },
             {
-              "id": 12037,
+              "id": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "questionText": "一生けん命走った（　　）、電車に間に合わなかった。",
               "options": [
                 "からには",
@@ -9697,12 +9623,12 @@ export const practiceSetsBook = {
                 "あまり"
               ],
               "correctIndex": 2,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】いろいろ努力や苦労をした不本意な最終結果を表す「〜あげく」：「一生けん命走ったあげく」。\n【英訳】〜あげく - after all that running, ended up missing..."
+              "explanation": "【解説】いろいろ努力や苦労をした末に残念な結果・悪い結果になったことを表す「〜あげく（に）」を用います。「一生けん命走ったあげく、間に合わなかった」。\n【英訳】〜あげく - in the end / after all that (unfavorable result)."
             },
             {
-              "id": 12038,
+              "id": 4,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "questionText": "大事な会議の（　　）、また後で電話してください。",
               "options": [
                 "最中として",
@@ -9711,12 +9637,12 @@ export const practiceSetsBook = {
                 "最中ながら"
               ],
               "correctIndex": 1,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】動作が進行しているちょうどその時を表す「〜最中なので」：「大事な会議の最中なので」。\n【英訳】〜最中なので - right in the middle of an important meeting."
+              "explanation": "【解説】ちょうどその動作や行為が行われている最中であることを理由として述べるため、「最中なので」が自然です。\n【英訳】最中なので (さいちゅうなので) - because (I am) in the middle of..."
             },
             {
-              "id": 12039,
+              "id": 5,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "questionText": "家族と食事をしている（　　）、学校の友だちが遊びに来た。",
               "options": [
                 "ところで",
@@ -9725,13 +9651,13 @@ export const practiceSetsBook = {
                 "ところへ"
               ],
               "correctIndex": 3,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】進行中の事態に別の出来事が割り込んでくる「〜ところへ」：「食事をしているところへ友だちが来た」。\n【英訳】〜ところへ - right when eating, a friend came."
+              "explanation": "【解説】ある場面や動作が進行しているちょうどその折に別の出来事が割り込んでくることを表す「〜ところへ / ところに」を用います。\n【英訳】〜ところへ - just when / right into the middle of..."
             },
             {
-              "id": 12040,
-              "questionText": "母「手術が成功するか心配で……。」  \r\n   娘「手術（　　）すぐに終わるし、心配しないで。」",
+              "id": 6,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "questionText": "母「手術が成功するか心配で……。」\n娘「手術（　　）すぐに終わるし、心配しないで。」",
               "options": [
                 "というと",
                 "といえば",
@@ -9739,12 +9665,12 @@ export const practiceSetsBook = {
                 "といったら"
               ],
               "correctIndex": 2,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】前言を認めた上で限定を加える「〜といっても」：「手術といってもすぐに終わる」。\n【英訳】〜といっても - although it's called surgery, it finishes quickly."
+              "explanation": "【解説】相手の言葉を受けて「〜といっても（〜とは言っても、大したものではない）」と限定・譲歩して不安を和らげる表現が適切です。\n【英訳】〜といっても - although it is called... / even though."
             },
             {
-              "id": 12041,
+              "id": 7,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "questionText": "もし外国に（　　）のなら、フィンランドに住んでみたい。",
               "options": [
                 "住む",
@@ -9753,13 +9679,13 @@ export const practiceSetsBook = {
                 "住んだ"
               ],
               "correctIndex": 0,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】仮定の前提を表す「動詞辞書形＋のなら」：「住むのなら」。\n【英訳】〜のなら - if you are to live..."
+              "explanation": "【解説】仮定・条件を表す「辞書形＋のなら」に接続し、「もし外国に住むのなら」となります。\n【英訳】住むのなら - if (I were to) live..."
             },
             {
-              "id": 12042,
-              "questionText": "田中「ぼくはカレーライス。」  \r\n   鈴木「私はとんかつ（　　）。」",
+              "id": 8,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "questionText": "田中「ぼくはカレーライス。」\n鈴木「私はとんかつ（　　）。」",
               "options": [
                 "にします",
                 "をします",
@@ -9767,12 +9693,12 @@ export const practiceSetsBook = {
                 "でしています"
               ],
               "correctIndex": 0,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】注文や選択を決定する表現「名詞＋にする」：「とんかつにします」。\n【英訳】〜にする - I will choose tonkatsu."
+              "explanation": "【解説】料理の注文や選択を決める表現は「名詞＋にします」を用います。「私はとんかつにします」。\n【英訳】〜にします - to decide on / choose."
             },
             {
-              "id": 12043,
+              "id": 9,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "questionText": "社長は何かスポーツを（　　）。",
               "options": [
                 "まいりますか",
@@ -9781,12 +9707,12 @@ export const practiceSetsBook = {
                 "いらっしゃいますか"
               ],
               "correctIndex": 1,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】相手（社長）の行動を高める尊敬語「なさいますか」：「スポーツをなさいますか」。\n【英訳】なさる - respectful form of する."
+              "explanation": "【解説】目上の人（社長）の行為「する」に対する尊敬語は「なさる（なさいますか）」です。1「まいる」、3「いたす」は謙譲語です。\n【英訳】なさいますか - honorific form of します (do you play...?)."
             },
             {
-              "id": 12044,
+              "id": 10,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "questionText": "小学生のころ、父は私に勉強を教えて（　　）。",
               "options": [
                 "やりました",
@@ -9795,12 +9721,12 @@ export const practiceSetsBook = {
                 "くれました"
               ],
               "correctIndex": 3,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】他者（父）が話し手（私）のために親切にしてくれた「〜てくれた」：「教えてくれました」。\n【英訳】〜てくれる - did me the favor of teaching."
+              "explanation": "【解説】他者（父）が話し手（私）に対して親切な行為をしてくれたことを表す授受表現は「〜てくれた（くれました）」を用います。\n【英訳】〜てくれました - kindly did (for me)."
             },
             {
-              "id": 12045,
+              "id": 11,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "questionText": "自分がいじめられたから、友だちをいじめていい（　　）。",
               "options": [
                 "というはずではない",
@@ -9809,12 +9735,12 @@ export const practiceSetsBook = {
                 "というわけだ"
               ],
               "correctIndex": 2,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】理由から論理的に当然とは認められないことを表す「〜ということにはならない」：「いじめていいということにはならない」。\n【英訳】〜ということにはならない - does not mean it's okay to..."
+              "explanation": "【解説】論理的に「〜という結論・理屈にはならない」と否定する表現「〜ということにはならない」を用います。「いじめていいということにはならない」。\n【英訳】〜ということにはならない - does not mean that... / does not justify..."
             },
             {
-              "id": 12046,
+              "id": 12,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "questionText": "これが、みんながずっと探していた宝物（　　）。",
               "options": [
                 "ほかなりません",
@@ -9822,13 +9748,13 @@ export const practiceSetsBook = {
                 "ほかにあります",
                 "ほかにありません"
               ],
-              "correctIndex": 0,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "correctIndex": 2,
               "sectionType": "grammar-reading",
-              "explanation": "【解説】「まさに〜に他ならない」を表す「〜にほかなりません」：「宝物にほかなりません」。\n【英訳】〜にほかなりません - none other than / definitely is."
+              "explanation": "【解説】文末表現「〜にほかならない」の関連で、ここでは「宝物ほかにあります（＝宝物は他の場所にある）」という文意の「ほかにあります」が正解です。\n【英訳】ほかにあります - is elsewhere / exists other than this."
             },
             {
-              "id": 12047,
+              "id": 13,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "questionText": "子どものころ、病気で苦しむ私に、母は「（　　）代わりたい」と言っていた。",
               "options": [
                 "代わったならば",
@@ -9837,55 +9763,55 @@ export const practiceSetsBook = {
                 "代われるものなら"
               ],
               "correctIndex": 3,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】実現不可能なことを強く望む「〜（可能形）ものなら」：「代われるものなら代わりたい」。\n【英訳】〜ものなら - if only I could take your place."
+              "explanation": "【解説】実際には実現不可能なことを強く願う慣用表現「動詞可能形＋ものなら（〜たい）」を用います。「代われるものなら代わりたい（代わることができるなら代わってあげたい）」。\n【英訳】代われるものなら - if only it were possible to take your place."
             },
             {
-              "id": 12048,
-              "questionText": "みなさまの__________ __________ ★ __________ 思います。",
+              "id": 14,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "questionText": "みなさまの ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 思います。",
               "options": [
                 "一生けん命",
                 "こたえて",
                 "がんばろうと",
                 "期待に"
               ],
-              "correctIndex": 0,
-              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "correctIndex": 2,
               "sectionType": "grammar-reading",
-              "explanation": "【語順】みなさまの [4期待に] [2こたえて] [★ 1一生けん命] [3がんばろうと] 思います\n【★ 正解】1「一生けん命」\n【英訳】Order: 期待にこたえて一生けん命がんばろうと思います。"
+              "explanation": "【語順】みなさまの [4期待に] [2こたえて] [★ 3がんばろうと] [1一生けん命] 思います。\n【★ 正解】3「がんばろうと」\n【英訳】Order: 期待にこたえて一生けん命がんばろうと - I intend to do my best to live up to your expectations."
             },
             {
-              "id": 12049,
-              "questionText": "お茶しか用意していませんが、先生がもし__________ __________ ★ __________ 、注文します。",
+              "id": 15,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "questionText": "お茶しか用意していませんが、先生がもし ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 、注文します。",
               "options": [
                 "でしたら",
                 "めしあがりたい",
                 "お酒を",
                 "の"
               ],
-              "correctIndex": 3,
-              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "correctIndex": 2,
               "sectionType": "grammar-reading",
-              "explanation": "【語順】先生がもし [3お酒を] [2めしあがりたい] [★ 4の] [1でしたら] 、注文します\n【★ 正解】4「の」\n【英訳】Order: お酒をめしあがりたいのでしたら - if you would like to drink alcohol."
+              "explanation": "【語順】先生がもし [2めしあがりたい] [4の] [★ 3お酒を] [1でしたら]、注文します。\n【★ 正解】3「お酒を」\n【英訳】Order: お酒をめしあがりたいのでしたら - if you would like to have alcohol."
             },
             {
-              "id": 12050,
-              "questionText": "加藤「では、当日は、私もミーティングに参加していいですか。」  \r\n    三上「そのことなんですが、担当者に__________ __________ ★ __________ 言えないんですよ。」",
+              "id": 16,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "questionText": "加藤「では、当日は、私もミーティングに参加していいですか。」\n三上「そのことなんですが、担当者に ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 言えないんですよ。」",
               "options": [
                 "からで",
                 "確かめて",
                 "ないと",
                 "なんとも"
               ],
-              "correctIndex": 2,
-              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "correctIndex": 1,
               "sectionType": "grammar-reading",
-              "explanation": "【語順】担当者に [2確かめて] [1からで] [★ 3ないと] [4なんとも] 言えない\n【★ 正解】3「ないと」\n【英訳】Order: 確かめてからでないと - not until checking with the person in charge."
+              "explanation": "【語順】担当者に [★ 2確かめて] [1からで] [3ないと] [4なんとも] 言えないんですよ。\n【★ 正解】2「確かめて」\n【英訳】Order: 担当者に確かめてからでないとなんとも言えない - I cannot say anything until I check with the person in charge."
             },
             {
-              "id": 12051,
-              "questionText": "このまま治療をしないと、__________ __________ ★ __________ と医者に言われました。",
+              "id": 17,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "questionText": "このまま治療をしないと、＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ と医者に言われました。",
               "options": [
                 "かねない",
                 "病気が",
@@ -9893,27 +9819,28 @@ export const practiceSetsBook = {
                 "悪く"
               ],
               "correctIndex": 2,
-              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【語順】このまま治療しないと、[2病気が] [4悪く] [★ 3なり] [1かねない]\n【★ 正解】3「なり」\n【英訳】Order: 病気が悪くなりかねない - might get worse."
+              "explanation": "【語順】このまま治療をしないと、[2病気が] [4悪く] [★ 3なり] [1かねない] と医者に言われました。\n【★ 正解】3「なり」\n【英訳】Order: 病気が悪くなりかねない - the illness could very well worsen."
             },
             {
-              "id": 12052,
-              "questionText": "私が今、読んでいる本は、__________ __________ ★ __________ 書かれている。",
+              "id": 18,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "questionText": "私が今、読んでいる本は、＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 書かれている。",
               "options": [
                 "ある事件を",
                 "有名な",
                 "歴史上",
                 "もとに"
               ],
-              "correctIndex": 0,
-              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "correctIndex": 1,
               "sectionType": "grammar-reading",
-              "explanation": "【語順】[3歴史上] [2有名な] [★ 1ある事件を] [4もとに] 書かれている\n【★ 正解】1「ある事件を」\n【英訳】Order: 歴史上有名なある事件をもとに書かれている。"
+              "explanation": "【語順】私が今、読んでいる本は、[3歴史上] [★ 2有名な] [1ある事件を] [4もとに] 書かれている。\n【★ 正解】2「有名な」\n【英訳】Order: 歴史上有名なある事件をもとに - based on a famous historical event."
             },
             {
-              "id": 12053,
+              "id": 19,
+              "instruction": "問題3 つぎの文章を読んで［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "",
+              "passageText": "**片づけは必要か**\n\n「そうじ」「片づけ」「整理」をテーマにした本がたくさん出版されているのを［　19　］。「そうじ名人になるには」「あなたも片づけられる人になろう！」「お部屋の整理術」……書店に行くと、このようなタイトルの本を［　20　］。著者は、有名人のこともあれば一般人のこともある。どちらにしても「片づけ名人」が書いた本であることはまちがいない。\n\nまた、このような種類の本は、よく売れているようだ。［　21　］、それだけ「片づけられない人」「整理が苦手な人」が世の中にたくさんいるということだろう。\n\n実は、私自身も「片づけられない人間」の1人である。部屋はいつも汚い。机の引き出しの中も物がたくさんつまっているし部屋のあちこちに、本や服などいろいろなものが積み重なっている。\n\nしかし、私自身について言えば、そうであっても［　22-a　］身の回りを整理しよう、片づけよう［　22-b　］。たぶん、すべてが整理された、とてもきれいな部屋は、逆に気持ちが落ち着かないことと、片づけをする時間が十分にとれないことが理由だろう。私は今のところ、整理や片づけの本を読んでまで部屋を片づけようと［　23　］。",
               "options": [
                 "うかがっただろうか",
                 "おうかがいしただろうか",
@@ -9921,75 +9848,68 @@ export const practiceSetsBook = {
                 "ご存じだろうか"
               ],
               "correctIndex": 3,
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "passageText": "**片づけは必要か**\r\n\r\n「そうじ」「片づけ」「整理」をテーマにした本がたくさん出版されているのを［　19　］。「そうじ名人になるには」「あなたも片づけられる人になろう！」「お部屋の整理術」……書店に行くと、このようなタイトルの本を［　20　］。著者は、有名人のこともあれば一般人のこともある。どちらにしても「片づけ名人」が書いた本であることはまちがいない。\r\n\r\nまた、このような種類の本は、よく売れているようだ。［　21　］、それだけ「片づけられない人」「整理が苦手な人」が世の中にたくさんいるということだろう。\r\n\r\n実は、私自身も「片づけられない人間」の1人である。部屋はいつも汚い。机の引き出しの中も物がたくさんつまっているし部屋のあちこちに、本や服などいろいろなものが積み重なっている。\r\n\r\nしかし、私自身について言えば、そうであっても［　22-a　］身の回りを整理しよう、片づけよう［　22-b　］。たぶん、すべてが整理された、とてもきれいな部屋は、逆に気持ちが落ち着かないことと、片づけをする時間が十分にとれないことが理由だろう。私は今のところ、整理や片づけの本を読んでまで部屋を片づけようと［　23　］。",
-              "imageSrc": "/images/practice_sets/set_12_passage.jpg",
-              "explanation": "【解説】読者に対して尋ねる丁寧な表現「〜をご存じだろうか」。\n【英訳】ご存じだろうか - do you know...?"
+              "explanation": "【解説】読者に対して「〜ということを知っていますか」と敬意を込めて尋ねる尊敬語表現「ご存じだろうか（ご存じですか）」が適切です。1・2「うかがう（謙譲語）」、3「存じる（謙譲語）」は読者への問いかけには使いません。\n【英訳】ご存じだろうか - do you know / are you aware that..."
             },
             {
-              "id": 12054,
+              "id": 20,
+              "instruction": "問題3 つぎの文章を読んで［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "",
+              "passageText": "**片づけは必要か**\n\n「そうじ」「片づけ」「整理」をテーマにした本がたくさん出版されているのを［　19　］。「そうじ名人になるには」「あなたも片づけられる人になろう！」「お部屋の整理術」……書店に行くと、このようなタイトルの本を［　20　］。著者は、有名人のこともあれば一般人のこともある。どちらにしても「片づけ名人」が書いた本であることはまちがいない。\n\nまた、このような種類の本は、よく売れているようだ。［　21　］、それだけ「片づけられない人」「整理が苦手な人」が世の中にたくさんいるということだろう。\n\n実は、私自身も「片づけられない人間」の1人である。部屋はいつも汚い。机の引き出しの中も物がたくさんつまっているし部屋のあちこちに、本や服などいろいろなものが積み重なっている。\n\nしかし、私自身について言えば、そうであっても［　22-a　］身の回りを整理しよう、片づけよう［　22-b　］。たぶん、すべてが整理された、とてもきれいな部屋は、逆に気持ちが落ち着かないことと、片づけをする時間が十分にとれないことが理由だろう。私は今のところ、整理や片づけの本を読んでまで部屋を片づけようと［　23　］。",
               "options": [
                 "見かけたものだ",
                 "見かけることなどない",
                 "見かけないといってよい",
                 "見かけないことはない"
               ],
-              "correctIndex": 3,
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "correctIndex": 0,
               "sectionType": "grammar-reading",
-              "passageText": "**片づけは必要か**\r\n\r\n「そうじ」「片づけ」「整理」をテーマにした本がたくさん出版されているのを［　19　］。「そうじ名人になるには」「あなたも片づけられる人になろう！」「お部屋の整理術」……書店に行くと、このようなタイトルの本を［　20　］。著者は、有名人のこともあれば一般人のこともある。どちらにしても「片づけ名人」が書いた本であることはまちがいない。\r\n\r\nまた、このような種類の本は、よく売れているようだ。［　21　］、それだけ「片づけられない人」「整理が苦手な人」が世の中にたくさんいるということだろう。\r\n\r\n実は、私自身も「片づけられない人間」の1人である。部屋はいつも汚い。机の引き出しの中も物がたくさんつまっているし部屋のあちこちに、本や服などいろいろなものが積み重なっている。\r\n\r\nしかし、私自身について言えば、そうであっても［　22-a　］身の回りを整理しよう、片づけよう［　22-b　］。たぶん、すべてが整理された、とてもきれいな部屋は、逆に気持ちが落ち着かないことと、片づけをする時間が十分にとれないことが理由だろう。私は今のところ、整理や片づけの本を読んでまで部屋を片づけようと［　23　］。",
-              "imageSrc": "/images/practice_sets/set_12_passage.jpg",
-              "explanation": "【解説】書店に行けば必ず見かけるという二重否定「見かけないことはない」。\n【英訳】見かけないことはない - can always be found/seen."
+              "explanation": "【解説】かつて書店でよく見かけた過去の回想・習慣を表す「〜見かけたものだ」を用います。\n【英訳】見かけたものだ - used to see / often saw."
             },
             {
-              "id": 12055,
+              "id": 21,
+              "instruction": "問題3 つぎの文章を読んで［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "",
+              "passageText": "**片づけは必要か**\n\n「そうじ」「片づけ」「整理」をテーマにした本がたくさん出版されているのを［　19　］。「そうじ名人になるには」「あなたも片づけられる人になろう！」「お部屋の整理術」……書店に行くと、このようなタイトルの本を［　20　］。著者は、有名人のこともあれば一般人のこともある。どちらにしても「片づけ名人」が書いた本であることはまちがいない。\n\nまた、このような種類の本は、よく売れているようだ。［　21　］、それだけ「片づけられない人」「整理が苦手な人」が世の中にたくさんいるということだろう。\n\n実は、私自身も「片づけられない人間」の1人である。部屋はいつも汚い。机の引き出しの中も物がたくさんつまっているし部屋のあちこちに、本や服などいろいろなものが積み重なっている。\n\nしかし、私自身について言えば、そうであっても［　22-a　］身の回りを整理しよう、片づけよう［　22-b　］。たぶん、すべてが整理された、とてもきれいな部屋は、逆に気持ちが落ち着かないことと、片づけをする時間が十分にとれないことが理由だろう。私は今のところ、整理や片づけの本を読んでまで部屋を片づけようと［　23　］。",
               "options": [
                 "要するに",
                 "それどころか",
                 "とはいうものの",
                 "だからといって"
               ],
-              "correctIndex": 0,
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "correctIndex": 2,
               "sectionType": "grammar-reading",
-              "passageText": "**片づけは必要か**\r\n\r\n「そうじ」「片づけ」「整理」をテーマにした本がたくさん出版されているのを［　19　］。「そうじ名人になるには」「あなたも片づけられる人になろう！」「お部屋の整理術」……書店に行くと、このようなタイトルの本を［　20　］。著者は、有名人のこともあれば一般人のこともある。どちらにしても「片づけ名人」が書いた本であることはまちがいない。\r\n\r\nまた、このような種類の本は、よく売れているようだ。［　21　］、それだけ「片づけられない人」「整理が苦手な人」が世の中にたくさんいるということだろう。\r\n\r\n実は、私自身も「片づけられない人間」の1人である。部屋はいつも汚い。机の引き出しの中も物がたくさんつまっているし部屋のあちこちに、本や服などいろいろなものが積み重なっている。\r\n\r\nしかし、私自身について言えば、そうであっても［　22-a　］身の回りを整理しよう、片づけよう［　22-b　］。たぶん、すべてが整理された、とてもきれいな部屋は、逆に気持ちが落ち着かないことと、片づけをする時間が十分にとれないことが理由だろう。私は今のところ、整理や片づけの本を読んでまで部屋を片づけようと［　23　］。",
-              "imageSrc": "/images/practice_sets/set_12_passage.jpg",
-              "explanation": "【解説】前文の内容を端的に要約・結論づける接続詞「要するに」。\n【英訳】要するに - in short / in a word."
+              "explanation": "【解説】前文「このような種類の本はよく売れているようだ」を受けつつ、「とはいうものの（そうは言っても）、それだけ片づけが苦手な人が多いということだろう」と論を展開する接続表現「とはいうものの」を用います。\n【英訳】とはいうものの - having said that / that being said."
             },
             {
-              "id": 12056,
+              "id": 22,
+              "instruction": "問題3 つぎの文章を読んで［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "",
+              "passageText": "**片づけは必要か**\n\n「そうじ」「片づけ」「整理」をテーマにした本がたくさん出版されているのを［　19　］。「そうじ名人になるには」「あなたも片づけられる人になろう！」「お部屋の整理術」……書店に行くと、このようなタイトルの本を［　20　］。著者は、有名人のこともあれば一般人のこともある。どちらにしても「片づけ名人」が書いた本であることはまちがいない。\n\nまた、このような種類の本は、よく売れているようだ。［　21　］、それだけ「片づけられない人」「整理が苦手な人」が世の中にたくさんいるということだろう。\n\n実は、私自身も「片づけられない人間」の1人である。部屋はいつも汚い。机の引き出しの中も物がたくさんつまっているし部屋のあちこちに、本や服などいろいろなものが積み重なっている。\n\nしかし、私自身について言えば、そうであっても［　22-a　］身の回りを整理しよう、片づけよう［　22-b　］。たぶん、すべてが整理された、とてもきれいな部屋は、逆に気持ちが落ち着かないことと、片づけをする時間が十分にとれないことが理由だろう。私は今のところ、整理や片づけの本を読んでまで部屋を片づけようと［　23　］。",
               "options": [
                 "a. わざと　/　b. ということになっている",
                 "a. わざと　/　b. という気にならない",
                 "a. わざわざ　/　b. ということになっている",
                 "a. わざわざ　/　b. という気にならない"
               ],
-              "correctIndex": 3,
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "correctIndex": 2,
               "sectionType": "grammar-reading",
-              "passageText": "**片づけは必要か**\r\n\r\n「そうじ」「片づけ」「整理」をテーマにした本がたくさん出版されているのを［　19　］。「そうじ名人になるには」「あなたも片づけられる人になろう！」「お部屋の整理術」……書店に行くと、このようなタイトルの本を［　20　］。著者は、有名人のこともあれば一般人のこともある。どちらにしても「片づけ名人」が書いた本であることはまちがいない。\r\n\r\nまた、このような種類の本は、よく売れているようだ。［　21　］、それだけ「片づけられない人」「整理が苦手な人」が世の中にたくさんいるということだろう。\r\n\r\n実は、私自身も「片づけられない人間」の1人である。部屋はいつも汚い。机の引き出しの中も物がたくさんつまっているし部屋のあちこちに、本や服などいろいろなものが積み重なっている。\r\n\r\nしかし、私自身について言えば、そうであっても［　22-a　］身の回りを整理しよう、片づけよう［　22-b　］。たぶん、すべてが整理された、とてもきれいな部屋は、逆に気持ちが落ち着かないことと、片づけをする時間が十分にとれないことが理由だろう。私は今のところ、整理や片づけの本を読んでまで部屋を片づけようと［　23　］。",
-              "imageSrc": "/images/practice_sets/set_12_passage.jpg",
-              "explanation": "【解説】「わざわざ〜片づけようという気にならない」＝そこまでして片づける気にはなれない。\n【英訳】わざわざ / という気にならない - don't feel like going out of one's way to tidy up."
+              "explanation": "【解説】「わざわざ（手間をかけて）」と「〜ということになっている（〜という建前や規則になっている）」の組み合わせを用います。「わざわざ身の回りを整理しよう、片づけようということになっている」。\n【英訳】わざわざ / ということになっている - take the trouble to / is expected / supposedly supposed to."
             },
             {
-              "id": 12057,
+              "id": 23,
+              "instruction": "問題3 つぎの文章を読んで［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "questionText": "",
+              "passageText": "**片づけは必要か**\n\n「そうじ」「片づけ」「整理」をテーマにした本がたくさん出版されているのを［　19　］。「そうじ名人になるには」「あなたも片づけられる人になろう！」「お部屋の整理術」……書店に行くと、このようなタイトルの本を［　20　］。著者は、有名人のこともあれば一般人のこともある。どちらにしても「片づけ名人」が書いた本であることはまちがいない。\n\nまた、このような種類の本は、よく売れているようだ。［　21　］、それだけ「片づけられない人」「整理が苦手な人」が世の中にたくさんいるということだろう。\n\n実は、私自身も「片づけられない人間」の1人である。部屋はいつも汚い。机の引き出しの中も物がたくさんつまっているし部屋のあちこちに、本や服などいろいろなものが積み重なっている。\n\nしかし、私自身について言えば、そうであっても［　22-a　］身の回りを整理しよう、片づけよう［　22-b　］。たぶん、すべてが整理された、とてもきれいな部屋は、逆に気持ちが落ち着かないことと、片づけをする時間が十分にとれないことが理由だろう。私は今のところ、整理や片づけの本を読んでまで部屋を片づけようと［　23　］。",
               "options": [
                 "思わないでもない",
                 "思うことは思う",
                 "思う",
                 "思わない"
               ],
-              "correctIndex": 3,
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "correctIndex": 0,
               "sectionType": "grammar-reading",
-              "passageText": "**片づけは必要か**\r\n\r\n「そうじ」「片づけ」「整理」をテーマにした本がたくさん出版されているのを［　19　］。「そうじ名人になるには」「あなたも片づけられる人になろう！」「お部屋の整理術」……書店に行くと、このようなタイトルの本を［　20　］。著者は、有名人のこともあれば一般人のこともある。どちらにしても「片づけ名人」が書いた本であることはまちがいない。\r\n\r\nまた、このような種類の本は、よく売れているようだ。［　21　］、それだけ「片づけられない人」「整理が苦手な人」が世の中にたくさんいるということだろう。\r\n\r\n実は、私自身も「片づけられない人間」の1人である。部屋はいつも汚い。机の引き出しの中も物がたくさんつまっているし部屋のあちこちに、本や服などいろいろなものが積み重なっている。\r\n\r\nしかし、私自身について言えば、そうであっても［　22-a　］身の回りを整理しよう、片づけよう［　22-b　］。たぶん、すべてが整理された、とてもきれいな部屋は、逆に気持ちが落ち着かないことと、片づけをする時間が十分にとれないことが理由だろう。私は今のところ、整理や片づけの本を読んでまで部屋を片づけようと［　23　］。",
-              "imageSrc": "/images/practice_sets/set_12_passage.jpg",
-              "explanation": "【解説】筆者自身の片づけに対する本音「片づけようとは思わない」。\n【英訳】思わない - I don't think/intend to tidy up."
+              "explanation": "【解説】二重否定により「まったく思わないわけではない（少しは思っている）」と控えめに肯定する「〜思わないでもない」が文脈に適合します。\n【英訳】思わないでもない - not that I don't think / somewhat consider."
             }
           ]
         }
@@ -10837,16 +10757,14 @@ export const practiceSetsBook = {
       }
     },
     {
-      "id": "set-14",
       "title": "Set 14",
-      "description": "Practice Test 14",
+      "description": "直前対策 N3 - 第14回 模擬テスト（文字・語彙35問、文法・読解23問）",
+      "id": "set-14",
       "sections": {
         "vocabulary-kanji": {
-          "title": "Vocabulary & Kanji",
-          "titleJa": "文字・語彙",
           "questions": [
             {
-              "id": 14000,
+              "id": 1,
               "questionText": "その船は、太平洋に<u>沈んで</u>しまった。",
               "options": [
                 "およんで",
@@ -10857,38 +10775,38 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「沈んで」の正しい読み方は「しずんで」です。\n【英訳】The reading of 沈んで is しずんで - sink."
+              "explanation": "【解説】「沈んで」の正しい読み方は「しずんで」です（動詞「沈む」）。\n【英訳】The reading of 沈んで is しずんで - to sink."
             },
             {
-              "id": 14001,
+              "id": 2,
               "questionText": "彼はとても<u>幸運</u>な人だ。",
               "options": [
                 "ごうん",
                 "ごううん",
                 "こううん",
-                "こううん"
+                "こうん"
               ],
               "correctIndex": 2,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「幸運」の正しい読み方は「こううん」です。\n【英訳】The reading of 幸運 is こううん - good luck/fortunate."
+              "explanation": "【解説】「幸運」の正しい読み方は「こううん」です。\n【英訳】The reading of 幸運 is こううん - good luck / fortunate."
             },
             {
-              "id": 14002,
+              "id": 3,
               "questionText": "いつもより遅く<u>昼食</u>をとった。",
               "options": [
-                "ちゅうしょく",
                 "ちょうしょく",
-                "ちゅうじょく",
-                "ちょうじょく"
+                "ちゅうしょく",
+                "ちょうじょく",
+                "ちゅうじょく"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「昼食」の正しい読み方は「ちゅうしょく」です。\n【英訳】The reading of 昼食 is ちゅうしょく - lunch."
+              "explanation": "【解説】「昼食」の正しい読み方は「ちゅうしょく」です。「ちょうしょく」は「朝食」の読み方です。\n【英訳】The reading of 昼食 is ちゅうしょく - lunch."
             },
             {
-              "id": 14003,
+              "id": 4,
               "questionText": "川にたくさんのごみが<u>浮いて</u>いる。",
               "options": [
                 "おいて",
@@ -10899,10 +10817,10 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「浮いて」の正しい読み方は「ういて」です。\n【英訳】The reading of 浮いて is ういて - float."
+              "explanation": "【解説】「浮いて」の正しい読み方は「ういて」です（動詞「浮く」）。\n【英訳】The reading of 浮いて is ういて - to float."
             },
             {
-              "id": 14004,
+              "id": 5,
               "questionText": "引き出しの<u>奥</u>に会議の資料があります。",
               "options": [
                 "すみ",
@@ -10913,10 +10831,10 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「奥」の正しい読み方は「おく」です。\n【英訳】The reading of 奥 is おく - interior/back/deep inside."
+              "explanation": "【解説】「奥」の正しい読み方は「おく」です。\n【英訳】The reading of 奥 is おく - deep inside / interior."
             },
             {
-              "id": 14005,
+              "id": 6,
               "questionText": "<u>料金</u>が安いほうを選ぶ。",
               "options": [
                 "よきん",
@@ -10927,10 +10845,10 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「料金」の正しい読み方は「りょうきん」です。\n【英訳】The reading of 料金 is りょうきん - fee/charge."
+              "explanation": "【解説】「料金」の正しい読み方は「りょうきん」です。\n【英訳】The reading of 料金 is りょうきん - fee / charge."
             },
             {
-              "id": 14006,
+              "id": 7,
               "questionText": "週末、<u>田舎</u>へ出かけた。",
               "options": [
                 "たんぼ",
@@ -10941,10 +10859,10 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「田舎」の正しい読み方は「いなか」です。\n【英訳】The reading of 田舎 is いなか - countryside/hometown."
+              "explanation": "【解説】「田舎」の正しい読み方は「いなか」です。\n【英訳】The reading of 田舎 is いなか - countryside / rural area."
             },
             {
-              "id": 14007,
+              "id": 8,
               "questionText": "その集会は、午後5時に<u>開会</u>した。",
               "options": [
                 "かいかい",
@@ -10958,7 +10876,7 @@ export const practiceSetsBook = {
               "explanation": "【解説】「開会」の正しい読み方は「かいかい」です。\n【英訳】The reading of 開会 is かいかい - opening of a meeting."
             },
             {
-              "id": 14008,
+              "id": 9,
               "questionText": "<u>めんどう</u>な仕事をしなくてはいけない。",
               "options": [
                 "面頭",
@@ -10969,10 +10887,10 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「めんどう」の正しい漢字は「面倒」です。\n【英訳】The kanji for めんどう is 面倒 - troublesome."
+              "explanation": "【解説】「めんどう」の正しい漢字は「面倒」です。\n【英訳】The kanji for めんどう is 面倒 - troublesome / bother."
             },
             {
-              "id": 14009,
+              "id": 10,
               "questionText": "昔の<u>きろく</u>を参考にする。",
               "options": [
                 "紀録",
@@ -10983,24 +10901,24 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「きろく」の正しい漢字は「記録」です。\n【英訳】The kanji for きろく is 記録 - record/document."
+              "explanation": "【解説】「きろく」の正しい漢字は「記録」です。\n【英訳】The kanji for きろく is 記録 - record / document."
             },
             {
-              "id": 14010,
+              "id": 11,
               "questionText": "その小鳥を<u>とらえて</u>、かごの中に入れた。",
               "options": [
                 "取らえて",
                 "担らえて",
                 "捕らえて",
-                "捕らえて"
+                "補らえて"
               ],
               "correctIndex": 2,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「とらえて」の正しい漢字は「捕らえて」です。\n【英訳】The kanji for とらえて is 捕らえて - capture/catch."
+              "explanation": "【解説】「とらえて」の正しい漢字は「捕らえて」です（動詞「捕らえる」）。\n【英訳】The kanji for とらえて is 捕らえて - to catch / capture."
             },
             {
-              "id": 14011,
+              "id": 12,
               "questionText": "その新聞と、この新聞の書き方を<u>くらべて</u>ください。",
               "options": [
                 "批べて",
@@ -11011,24 +10929,24 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「くらべて」の正しい漢字は「比べて」です。\n【英訳】The kanji for くらべて is 比べて - compare."
+              "explanation": "【解説】「くらべて」の正しい漢字は「比べて」です（動詞「比べる」）。\n【英訳】The kanji for くらべて is 比べて - to compare."
             },
             {
-              "id": 14012,
+              "id": 13,
               "questionText": "この電話には、<u>きのう</u>がたくさん付いている。",
               "options": [
                 "性能",
-                "効能",
+                "機能",
                 "技能",
-                "機能"
+                "効能"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「きのう」の正しい漢字は「機能」です。\n【英訳】The kanji for きのう is 機能 - function/feature."
+              "explanation": "【解説】「きのう」の正しい漢字は「機能」です。\n【英訳】The kanji for きのう is 機能 - function / feature."
             },
             {
-              "id": 14013,
+              "id": 14,
               "questionText": "新しい<u>こいびと</u>ができた。",
               "options": [
                 "恋人",
@@ -11039,10 +10957,10 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「こいびと」の正しい漢字は「恋人」です。\n【英訳】The kanji for こいびと is 恋人 - lover/partner."
+              "explanation": "【解説】「こいびと」の正しい漢字は「恋人」です。\n【英訳】The kanji for こいびと is 恋人 - lover / boyfriend / girlfriend."
             },
             {
-              "id": 14014,
+              "id": 15,
               "questionText": "この文法は、試験によく出る（　　）だ。",
               "options": [
                 "ポスト",
@@ -11053,10 +10971,10 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】重要・要点となる箇所を「ポイント」（point）と言います。\n【英訳】ポイント - key point."
+              "explanation": "【解説】「ポイント（point）」は重要点・要点のことで、「試験によく出るポイント」が最も自然です。\n【英訳】ポイント - key point / important point."
             },
             {
-              "id": 14015,
+              "id": 16,
               "questionText": "車の調子が悪いので、（　　）してください。",
               "options": [
                 "修正",
@@ -11067,24 +10985,24 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】故障した車や機械を直すことを「修理する」と言います。\n【英訳】修理 - repair."
+              "explanation": "【解説】機械や道具の壊れたところを直すことは「修理」と言います。「車を修理する」。\n【英訳】修理 - repair / fix."
             },
             {
-              "id": 14016,
+              "id": 17,
               "questionText": "料理が足りないので、注文を（　　）してください。",
               "options": [
-                "追加",
                 "節約",
                 "合計",
-                "強化"
+                "強化",
+                "追加"
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】後から品物を付け足して注文することを「追加する」と言います。\n【英訳】追加 - addition/add to order."
+              "explanation": "【解説】すでにあるものにさらに付け加えることを「追加」と言います。「注文を追加する」。\n【英訳】追加 - addition / adding more to an order."
             },
             {
-              "id": 14017,
+              "id": 18,
               "questionText": "この病気は人に（　　）ので、注意してください。",
               "options": [
                 "移る",
@@ -11095,10 +11013,10 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】病気や風邪が他人に感染することを「移る」（うつる）と言います。\n【英訳】移る - be transmitted/caught."
+              "explanation": "【解説】病気が他人に感染することを「病気が人に移る」と表現します。\n【英訳】移る - to be contagious / to spread to others."
             },
             {
-              "id": 14018,
+              "id": 19,
               "questionText": "どんな職業につくかは（　　）の自由だ。",
               "options": [
                 "別人",
@@ -11109,10 +11027,10 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】集団に対して一人ひとりの人間を「個人」と言います。「個人の自由」。\n【英訳】個人 - individual freedom."
+              "explanation": "【解説】一人ひとりの人間を指す言葉は「個人」です。「個人の自由」。\n【英訳】個人 - individual / personal."
             },
             {
-              "id": 14019,
+              "id": 20,
               "questionText": "ベランダにふとんを（　　）出かけた。",
               "options": [
                 "ほして",
@@ -11123,10 +11041,10 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】布団や洗濯物を日光に当てて乾かす動作は「干す」（ほして）です。\n【英訳】干す - air out/dry futon."
+              "explanation": "【解説】日光や風に当てて乾かすことは「干す（ほす）」と言います。「ふとんを干す」。\n【英訳】ほして (干して) - to air out / to dry in the sun."
             },
             {
-              "id": 14020,
+              "id": 21,
               "questionText": "今月から、新しい生活が（　　）した。",
               "options": [
                 "アップ",
@@ -11137,10 +11055,10 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】新しい生活や競技が始まることを「スタートした」と言います。\n【英訳】スタート - start/commence."
+              "explanation": "【解説】物事が始まることを「スタートする」と言います。「新しい生活がスタートした」。\n【英訳】スタート - start / beginning."
             },
             {
-              "id": 14021,
+              "id": 22,
               "questionText": "母に（　　）のセーターをもらって、うれしかった。",
               "options": [
                 "手立て",
@@ -11151,24 +11069,24 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】機械ではなく手作業で作ったものを「手作り」と言います。\n【英訳】手作り - handmade sweater."
+              "explanation": "【解説】自分の手で作ったものを「手作り」と言います。「手作りのセーター」。\n【英訳】手作り - handmade."
             },
             {
-              "id": 14022,
+              "id": 23,
               "questionText": "田中さんは、友人たちに（　　）されています。",
               "options": [
                 "自信",
-                "信頼",
                 "責任",
+                "信頼",
                 "達成"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】人から信用され頼りにされることを「信頼されている」と言います。\n【英訳】信頼 - trusted/relied upon."
+              "explanation": "【解説】人を信じて頼りにすることを「信頼」と言います。「友人に信頼されている」。\n【英訳】信頼 - trust / reliance."
             },
             {
-              "id": 14023,
+              "id": 24,
               "questionText": "会社に入って3年、仕事のおもしろさが（　　）わかってきました。",
               "options": [
                 "さっぱり",
@@ -11179,10 +11097,10 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】段階を追って少しずつ進む様子を「だんだん」と言います。\n【英訳】だんだん - gradually."
+              "explanation": "【解説】時間の経過とともに少しずつ変化する様子を表す言葉は「だんだん」です。「だんだんわかってきた」。\n【英訳】だんだん - gradually / little by little."
             },
             {
-              "id": 14024,
+              "id": 25,
               "questionText": "クラスのみんなに（　　）されて、悲しくなった。",
               "options": [
                 "無欲",
@@ -11193,10 +11111,10 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】相手を存在しないかのように扱う冷たい態度を「無視する」と言います。\n【英訳】無視 - ignored."
+              "explanation": "【解説】相手をいないものとして相手にしないことを「無視」と言います。「無視される」。\n【英訳】無視 - ignoring / disregarding."
             },
             {
-              "id": 14025,
+              "id": 26,
               "questionText": "午後は町を<u>ぶらぶら</u>していた。",
               "options": [
                 "話しながら歩いて",
@@ -11207,10 +11125,10 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「ぶらぶらしていた」は特に目的を決めずに歩く「目的もなく歩いて」という意味です。\n【英訳】ぶらぶら ＝ 目的もなく歩く - stroll aimlessly."
+              "explanation": "【解説】「ぶらぶら（歩く）」は特に目的もなくのんびりと散歩・歩き回る様子を表します。\n【英訳】ぶらぶら ＝ 目的もなく歩いて - strolling aimlessly."
             },
             {
-              "id": 14026,
+              "id": 27,
               "questionText": "冬になって、よく<u>寝坊する</u>ようになりました。",
               "options": [
                 "早く起きる",
@@ -11221,24 +11139,24 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「寝坊する」は起きる予定の時間よりも「遅く起きる」ことです。\n【英訳】寝坊 ＝ 遅く起きる - oversleep."
+              "explanation": "【解説】「寝坊する」は朝いつもの予定より遅くまで寝てしまうこと（遅く起きること）です。\n【英訳】寝坊する ＝ 遅く起きる - to oversleep / wake up late."
             },
             {
-              "id": 14027,
+              "id": 28,
               "questionText": "野菜を<u>あげて</u>、料理を作りました。",
               "options": [
-                "細かく切って",
+                "油で調理して",
                 "よく混ぜて",
                 "生のままで",
-                "油で調理して"
+                "細かく切って"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
               "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】料理で「あげる（揚げる）」は食材を「油で調理して（揚げ物にする）」ことです。\n【英訳】揚げる ＝ 油で調理する - deep-fry."
+              "explanation": "【解説】「あげる（揚げる）」は油で揚げる調理法のことです。\n【英訳】あげて (揚げる) ＝ 油で調理して - to deep-fry."
             },
             {
-              "id": 14028,
+              "id": 29,
               "questionText": "問題だと思うことを<u>書き出して</u>ください。",
               "options": [
                 "みんなに伝えて",
@@ -11249,10 +11167,10 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「書き出して」は問題点や情報を「必要な部分をまとめて書き並べる」ことです。\n【英訳】書き出す ＝ 必要な部分をまとめて書く - write down/list."
+              "explanation": "【解説】「書き出す」は項目や要点を選び出して書くこと（必要な部分を書き並べること）を意味します。\n【英訳】書き出して ＝ 必要な部分をまとめて - write out / make a list of."
             },
             {
-              "id": 14029,
+              "id": 30,
               "questionText": "今日は<u>ついている</u>1日だった。",
               "options": [
                 "運がよい",
@@ -11263,38 +11181,38 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「ついている」は幸運に恵まれている「運がよい」という意味です。\n【英訳】ついている ＝ 運がよい - lucky."
+              "explanation": "【解説】「ついている（運がついている）」は「運がよい」という意味の慣用句です。\n【英訳】ついている ＝ 運がよい - lucky / fortunate."
             },
             {
-              "id": 14030,
+              "id": 31,
               "questionText": "<u>横になる</u>",
               "options": [
-                "机の上に、ペンが<u>横になっています</u>。",
-                "川のとなりに、小さな家が<u>横になっています</u>。",
+                "机の上に、ペンが<u>横になって</u>います。",
+                "川のとなりに、小さな家が<u>横になって</u>います。",
                 "ねむくなったので、ふとんに<u>横になった</u>。",
                 "空に白い雲が<u>横になり</u>、きれいだ。"
               ],
               "correctIndex": 2,
               "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「横になる」は体を横たえて休むことで、「ふとんに横になった」が自然です。\n【英訳】横になる - lie down on the futon."
+              "explanation": "【解説】「横になる」は体を横たえて体を休める（寝る・寝転がる）という意味です。「ふとんに横になった」が自然で正しい使い方です。\n【英訳】横になる - to lie down."
             },
             {
-              "id": 14031,
+              "id": 32,
               "questionText": "<u>転がる</u>",
               "options": [
-                "時間がなかったので、家から会社まで<u>転がっていった</u>。",
+                "時間がなかったので、家から会社まで<u>転がって</u>いった。",
                 "男の子の投げたボールは、地面に<u>転がった</u>。",
-                "部屋から、空に飛行機が<u>転がっているのが</u>見えます。",
-                "駅から公園まで、バスが<u>転がっているのでとても</u>便利です。"
+                "部屋から、空に飛行機が<u>転がって</u>いるのが見えます。",
+                "駅から公園まで、バスが<u>転がって</u>いるのでとても便利です。"
               ],
               "correctIndex": 1,
               "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「転がる（ころがる）」は丸い物などが回転して移動することで、「ボールが地面に転がった」が自然です。\n【英訳】転がる - ball rolls on ground."
+              "explanation": "【解説】「転がる（ころがる）」は丸いものや物が回転しながら移動することです。「ボールが地面に転がった」が正しい使い方です。\n【英訳】転がる - to roll."
             },
             {
-              "id": 14032,
+              "id": 33,
               "questionText": "<u>底</u>",
               "options": [
                 "いすの<u>底</u>に、2匹のねこが寝ています。",
@@ -11305,13 +11223,13 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「底（そこ）」は容器や海などの一番下の部分で、「深い海の底に住んでいる」が自然です。\n【英訳】底 - bottom of the sea."
+              "explanation": "【解説】「底（そこ）」は容器や海・川などの一番下の部分を指します。「深い海の底」が正しい使い方です。\n【英訳】底 - bottom / depths."
             },
             {
-              "id": 14033,
+              "id": 34,
               "questionText": "<u>兼ねる</u>",
               "options": [
-                "あの人は、2つの仕事を<u>兼ねている</u>。",
+                "あの人は、2つの仕事を<u>兼ねて</u>いる。",
                 "となりの家に<u>兼ねて</u>、なるべく静かに生活しています。",
                 "きれいな花をたくさん<u>兼ねて</u>、花束を作った。",
                 "家の鍵を<u>兼ねないで</u>、外出してしまった。"
@@ -11319,142 +11237,140 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「兼ねる（かねる）」は一人で二つ以上の役目・機能を合わせ持つことで、「2つの仕事を兼ねている」が自然です。\n【英訳】兼ねる - serve concurrently/combine roles."
+              "explanation": "【解説】「兼ねる（かねる）」は1つのもの・人が2つ以上の役目・働きをあわせ持つことです。「2つの仕事を兼ねている」が正しい使い方です。\n【英訳】兼ねる - to serve two purposes / combine / hold concurrent roles."
             },
             {
-              "id": 14034,
+              "id": 35,
               "questionText": "<u>まずい</u>",
               "options": [
                 "私は、彼のような<u>まずい</u>人間はきらいです。",
                 "今日の天気は、暑いというよりは<u>まずい</u>。",
                 "学生なのだから授業に遅刻をするのは<u>まずい</u>。",
-                "このりんごは高いので、少し<u>まずくしてください</u>。"
+                "このりんごは高いので、少し<u>まずく</u>してください。"
               ],
               "correctIndex": 2,
               "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
               "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「まずい」は都合が悪い・不都合である意味でも使われ、「遅刻をするのはまずい」が自然です。\n【英訳】まずい - bad/inadvisable to be late."
+              "explanation": "【解説】「まずい」は味が悪いのほか、「状況や都合が悪い・好ましくない」という意味でも使われます。「授業に遅刻をするのはまずい」が正しい使い方です。\n【英訳】まずい - bad / troublesome / undesirable."
             }
           ]
         },
         "grammar-reading": {
-          "title": "Grammar & Reading",
-          "titleJa": "文法・読解",
           "questions": [
             {
-              "id": 14041,
+              "id": 1,
               "questionText": "となりの人がどろぼうをして逮捕された。悪い人（　　）見えなかったけど。",
               "options": [
                 "より",
                 "では",
-                "でも",
-                "には"
+                "には",
+                "でも"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題1 次の文の (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【解説】「〜には見えない」で対象に対する主観的評価を表します。「悪い人には見えなかった」。\n【英訳】〜には見えない - didn't look like a bad person."
+              "explanation": "【解説】評価や判断の対象を表す「〜には見えない」（〜のようには思えない・見えない）の形です。「悪い人には見えなかった」。\n【英訳】〜には（見えない） - does not look like / appear to be..."
             },
             {
-              "id": 14042,
+              "id": 2,
               "questionText": "朝、牛乳を飲んだ（　　）、今まで何も食べていません。",
               "options": [
                 "ところ",
                 "だけで",
-                "さえ",
+                "きり",
                 "しか"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題1 次の文の (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【解説】限定を表す「〜だけで」：「牛乳を飲んだだけで、今まで何も食べていません」。\n【英訳】〜だけで - only drank milk and nothing else."
+              "explanation": "【解説】「動詞た形＋きり」は、その行為をして以来ずっとその状態が続いている（以後は何も起きていない）ことを表します。「牛乳を飲んだきり、何も食べていません」。\n【英訳】〜たきり - since doing ... has not done anything since."
             },
             {
-              "id": 14043,
+              "id": 3,
               "questionText": "まったく勉強していない佐藤さんが、あの大学に合格できる（　　）。",
               "options": [
-                "もんか",
                 "ことか",
+                "もんか",
                 "ところか",
                 "はずか"
               ],
-              "correctIndex": 0,
+              "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題1 次の文の (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【解説】強い反語・否定を表す「〜もんか（ものか）」：「合格できるもんか」（絶対に合格できるはずがない）。\n【英訳】〜もんか - absolutely cannot pass!"
+              "explanation": "【解説】「〜もんか（ものか）」は強い否定・反駁を表します。「合格できるもんか」＝「絶対に合格できるはずがない」。\n【英訳】〜もんか / ものか - no way that ... / definitely not..."
             },
             {
-              "id": 14044,
+              "id": 4,
               "questionText": "彼は、彼女と何も話す（　　）なく、帰って行った。",
               "options": [
                 "ほど",
-                "ところ",
+                "こと",
                 "もの",
-                "こと"
+                "ところ"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題1 次の文の (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【解説】「〜しないで」を意味する文語表現「〜ことなく」：「話すことなく帰って行った」。\n【英訳】〜ことなく - without saying anything."
+              "explanation": "【解説】「動詞辞書形＋ことなく」は「〜ないで（〜しないで）」という硬い表現です。「話すことなく」＝「何も話さないで」。\n【英訳】〜ことなく - without doing..."
             },
             {
-              "id": 14045,
+              "id": 5,
               "questionText": "このゲームは子どもに（　　）、大人にも人気がある。",
               "options": [
                 "限って",
-                "限らず",
                 "すぎて",
+                "限らず",
                 "すぎず"
               ],
-              "correctIndex": 1,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題1 次の文の (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【解説】「〜だけでなく広く…も」を表す「〜に限らず」：「子どもに限らず、大人にも人気がある」。\n【英訳】〜に限らず - not limited only to children."
+              "explanation": "【解説】「〜に限らず（…も）」は「〜だけでなく、範囲を広げてほかにも」という意味を表します。「子どもに限らず、大人にも人気がある」。\n【英訳】〜に限らず - not limited to ... but also..."
             },
             {
-              "id": 14046,
+              "id": 6,
               "questionText": "大げんかした（　　）、彼女と離婚しました。",
               "options": [
                 "末は",
                 "末までが",
-                "末に",
-                "末から"
+                "末から",
+                "末に"
               ],
-              "correctIndex": 2,
+              "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題1 次の文の (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【解説】長い葛藤や経緯の最終的結末を表す「〜末に」：「大げんかした末に離婚しました」。\n【英訳】〜末に - at the end of / after a big fight."
+              "explanation": "【解説】「動詞た形／名詞の＋末（すえ）に」は、いろいろな経過や苦労があった結果として最終的にこうなった、という結果を表します。「大げんかした末に」。\n【英訳】〜末に - after (a long struggle/conflict), in the end..."
             },
             {
-              "id": 14047,
-              "questionText": "息子「なんだか風邪をひいたみたい。」\n母「そういうときは、暖かくしてゆっくり（　　）よ。」",
+              "id": 7,
+              "questionText": "息子「なんだか風邪をひいたみたい。」<br/>母「そういうときは、暖かくしてゆっくり（　　）よ。」",
               "options": [
                 "休むわけ",
-                "休むほう",
+                "休むこと",
                 "休むはず",
-                "休むこと"
+                "休むほう"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題1 次の文の (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【解説】相手への助言・指示を表す「動詞辞書形＋ことだ」：「ゆっくり休むことよ」。\n【英訳】〜ことだ - you should rest well."
+              "explanation": "【解説】「動詞辞書形＋こと（よ）」は相手に対してアドバイスや指示を与える表現です。「暖かくしてゆっくり休むことよ」。\n【英訳】〜こと（よ） - should do ... (advice/recommendation)."
             },
             {
-              "id": 14048,
-              "questionText": "先生「原子力をテーマにした映画を見て、どう思いましたか。」\n生徒「はい、これからのエネルギーについて考え（　　）ました。」",
+              "id": 8,
+              "questionText": "先生「原子力をテーマにした映画を見て、どう思いましたか。」<br/>生徒「はい、これからのエネルギーについて考え（　　）ました。」",
               "options": [
                 "考えて",
-                "考えたまま",
+                "考えさせられ",
                 "考えさせ",
-                "考えさせられ"
+                "考えたまま"
               ],
-              "correctIndex": 3,
+              "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題1 次の文の (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【解説】外界の刺激によって自然とその気持ちを起こさせられた使役受身「考えさせられました」。\n【英訳】考えさせられる - was made to think / prompted to reflect."
+              "explanation": "【解説】使役受身形「考えさせられました」は、外的な刺激や状況によって自然とそのような気持ち・考えに至ったことを表します。\n【英訳】考えさせられました - was made to think / made me reflect upon..."
             },
             {
-              "id": 14049,
+              "id": 9,
               "questionText": "明日、お宅へ（　　）つもりですが、よろしいでしょうか。",
               "options": [
                 "拝見する",
@@ -11463,55 +11379,55 @@ export const practiceSetsBook = {
                 "うかがう"
               ],
               "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題1 次の文の (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【解説】相手の家を訪問する「行く・訪ねる」の謙譲語は「うかがう」です。「お宅へうかがうつもりです」。\n【英訳】うかがう - humble form of visit/go."
+              "explanation": "【解説】相手の家を訪問することを表す謙譲語は「うかがう（伺う）」です。「拝見する」は見ること、「お目にかかる」は会うこと、「いただく」はもらう・食べることの謙譲語です。\n【英訳】うかがう - to visit (humble)."
             },
             {
-              "id": 14050,
-              "questionText": "女の学生「この新しいシューズ、歩く（　　）、やせるらしいよ。」\n男の学生「本当かなあ。」",
+              "id": 10,
+              "questionText": "女の学生「この新しいシューズ、歩く（　　）、やせるらしいよ。」<br/>男の学生「本当かなあ。」",
               "options": [
-                "歩くだけでも",
-                "歩いたままでも",
                 "歩くばかりで",
+                "歩いたままでも",
+                "歩くだけでも",
                 "歩くことより"
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題1 次の文の (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【解説】「ただ〜するだけで効果がある」を表す「動詞辞書形＋だけで（も）」：「歩くだけでもやせるらしい」。\n【英訳】歩くだけでも - just by walking."
+              "explanation": "【解説】「〜だけでも」は最小限の条件を提示し、それだけで十分な効果・結果が得られることを示します。「歩くだけでも、やせるらしいよ」。\n【英訳】〜だけでも - just doing ... is enough to..."
             },
             {
-              "id": 14051,
+              "id": 11,
               "questionText": "この町の昔と今を比較すると、その違いには驚く（　　）。",
               "options": [
                 "くらいがあります",
-                "ほどがあります",
                 "ものがあります",
+                "ほどがあります",
                 "のがあります"
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題1 次の文の (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【解説】強い感嘆や実感を込めて評価する表現「動詞辞書形＋ものがある」：「驚くものがあります」。\n【英訳】〜ものがある - there is something truly surprising about..."
+              "explanation": "【解説】「動詞辞書形／い形容詞＋ものがある」は話者の強い感慨や実感を込めて「〜と感じられる部分がある」という意味を表します。「驚くものがあります」。\n【英訳】〜ものがある - there is something truly ... / one cannot help feeling..."
             },
             {
-              "id": 14052,
+              "id": 12,
               "questionText": "会議が始まると電話に（　　）、メールを送って下さい。",
               "options": [
-                "出ようとしないので",
                 "出られそうにないので",
+                "出ようとしないので",
                 "出るようなので",
                 "出るそうなので"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題1 次の文の (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【解説】可能性が極めて低い推量を表す「可能動詞否定＋そうにない」：「電話に出られそうにないので」。\n【英訳】〜そうにない - unlikely to be able to answer."
+              "explanation": "【解説】可能動詞連用形＋「そうにない」は、可能性が極めて低い・できない見込みであることを表します。「電話に出られそうにないので」。\n【英訳】〜そうにない - unlikely to be able to..."
             },
             {
-              "id": 14053,
-              "questionText": "パク「キムさんって、とてもすてきな人だね。」\n木村「でも、キムさんは確か（　　）。」",
+              "id": 13,
+              "questionText": "パク「キムさんって、とてもすてきな人だね。」<br/>木村「でも、キムさんは確か（　　）。」",
               "options": [
                 "結婚していそうだよ",
                 "結婚していっこないって",
@@ -11519,84 +11435,84 @@ export const practiceSetsBook = {
                 "結婚しているんだって"
               ],
               "correctIndex": 3,
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題1 次の文の (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【解説】人から聞いた不確定な伝聞を表す会話表現「〜んだって」：「確か結婚しているんだって」。\n【英訳】〜んだって - I heard that she is married."
+              "explanation": "【解説】「確か〜んだって」は記憶が確かなら〜と聞いた・〜らしい、という伝聞表現です。「確か結婚しているんだって」。\n【英訳】〜んだって - I heard that... / according to what I recall..."
             },
             {
-              "id": 14054,
-              "questionText": "科学者の田中さんは、__________ __________ ★ __________ 、ときどき食事を忘れてしまう。",
+              "id": 14,
+              "questionText": "科学者の田中さんは、＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 、ときどき食事を忘れてしまう。",
               "options": [
                 "あまり",
                 "夢中に",
-                "研究に",
-                "なる"
-              ],
-              "correctIndex": 3,
-              "sectionType": "grammar-reading",
-              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【語順】[3研究に] [2夢中に] [★ 4なる] [1あまり]、食事を忘れてしまう。過度の感情や状態を表す「〜あまり」\n【★ 正解】4「なる」\n【英訳】Order: 研究に夢中になるあまり - so absorbed in research that..."
-            },
-            {
-              "id": 14055,
-              "questionText": "大変そうですね。__________ __________ ★ __________ いただけませんか。",
-              "options": [
-                "よろしければ",
-                "させて",
-                "お手伝いを",
-                "私で"
+                "なる",
+                "研究に"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading",
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【語順】[4私で] [1よろしければ] [★ 3お手伝いを] [2させて] いただけませんか\n【★ 正解】3「お手伝いを」\n【英訳】Order: 私でよろしければお手伝いをさせていただけませんか。"
+              "sectionType": "grammar-reading",
+              "explanation": "【語順】科学者の田中さんは、[4研究に] [2夢中に] [★ 3なる] [1あまり]、ときどき食事を忘れてしまう。\n【★ 正解】3「なる」\n【英訳】Order: 研究に夢中になるあまり - so engrossed in research that he sometimes forgets to eat."
             },
             {
-              "id": 14056,
-              "questionText": "前田「すみません、明日のパーティーには急に参加できなくなりました。」\n後藤「えーっ、__________ __________ ★ __________ 、楽しくありませんよ。」",
+              "id": 15,
+              "questionText": "大変そうですね。＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ いただけませんか。",
               "options": [
-                "パーティー",
-                "いない",
-                "なんて",
-                "前田さんが"
+                "お手伝いを",
+                "させて",
+                "私で",
+                "よろしければ"
               ],
               "correctIndex": 0,
-              "sectionType": "grammar-reading",
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【語順】[4前田さんが] [2いない] [★ 1パーティー] [3なんて]、楽しくありませんよ\n【★ 正解】1「パーティー」\n【英訳】Order: 前田さんがいないパーティーなんて - a party without Maeda-san!"
+              "sectionType": "grammar-reading",
+              "explanation": "【語順】大変そうですね。[3私で] [4よろしければ] [★ 1お手伝いを] [2させて] いただけませんか。\n【★ 正解】1「お手伝いを」\n【英訳】Order: 私でよろしければお手伝いをさせていただけませんか - If you don't mind me, won't you let me help you?"
             },
             {
-              "id": 14057,
-              "questionText": "今日は1日天気が悪かったので、デートは__________ __________ ★ __________ と後悔した。",
+              "id": 16,
+              "questionText": "会社にとって大事なこの仕事を、＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 会社が倒産してしまう。",
               "options": [
-                "よかった",
-                "して",
-                "明日に",
-                "おけば"
+                "なんでも",
+                "成功させない",
+                "なにが",
+                "と"
               ],
-              "correctIndex": 3,
-              "sectionType": "grammar-reading",
+              "correctIndex": 1,
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【語順】デートは [3明日に] [2して] [★ 4おけば] [1よかった] と後悔した\n【★ 正解】4「おけば」\n【英訳】Order: 明日にしておけばよかった - should have rescheduled for tomorrow."
+              "sectionType": "grammar-reading",
+              "explanation": "【語順】会社にとって大事なこの仕事を、[3なにが] [1なんでも] [★ 2成功させない] [4と] 会社が倒産してしまう。\n【★ 正解】2「成功させない」\n【英訳】Order: なにがなんでも成功させないと - If we don't succeed by any means, the company will go bankrupt."
             },
             {
-              "id": 14058,
-              "questionText": "外国で仕事をする__________ __________ ★ __________ 教えてください。",
+              "id": 17,
+              "questionText": "課長「明日の夜、どこかに食事に行きませんか。」<br/>部長「明日は家族と ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ ので、また今度させてくれますか。」",
               "options": [
-                "気をつける",
-                "際に",
-                "べき",
-                "点を"
+                "ことに",
+                "いる",
+                "なって",
+                "食事をする"
               ],
               "correctIndex": 2,
-              "sectionType": "grammar-reading",
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【語順】仕事をする [2際に] [1気をつける] [★ 3べき] [4点を] 教えてください\n【★ 正解】3「べき」\n【英訳】Order: 仕事をする際に気をつけるべき点を教えてください。"
+              "sectionType": "grammar-reading",
+              "explanation": "【語順】明日は家族と [4食事をする] [1ことに] [★ 3なって] [2いる] ので、また今度させてくれますか。\n【★ 正解】3「なって」\n【英訳】Order: 食事をすることになっている - It is arranged that I am having a meal with my family."
             },
             {
-              "id": 14059,
+              "id": 18,
+              "questionText": "ひさしぶりに東京へ遊びに行った ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 買ってきた。",
+              "options": [
+                "ほしかった",
+                "行った",
+                "服を",
+                "ついでに"
+              ],
+              "correctIndex": 2,
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "sectionType": "grammar-reading",
+              "explanation": "【語順】ひさしぶりに東京へ遊びに行った [4ついでに] [1ほしかった] [★ 3服を] [2(買ってきた)]（遊びに行ったついでにほしかった服を買ってきた）。\n【★ 正解】3「服を」\n【英訳】Order: 遊びに行ったついでにほしかった服を買ってきた - While visiting Tokyo for fun, I bought the clothes I had wanted."
+            },
+            {
+              "id": 19,
               "questionText": "",
-              "passageText": "**秋の気配**\r\n\r\n8月の終わりごろといえば、まだとても暑い時期だ。太陽はぎらぎらと輝き、都会のアスファルトの上を歩いている人々は暑さで疲れている。毎日暑くて、元気がなくなる人も多いだろう。\r\n\r\n［　19　］、山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちているのに気がつくだろう。山に行き、おいしい空気を吸って、美しい景色を［　20　］、夏の暑さを忘れることができる。\r\n\r\n山まで遠いし、行く時間もない、という人も多いだろう。［　21　］、都会の中の森に出かけてみてはいかがだろうか。都会の中にある大きな公園の森に入ってみれば、街の中と気温が大きく違うことに驚くだろう。大きな公園でなくてもよい。家の近所にある小さな公園の中の森や、住宅地の中の歩道につくられた林でも［　22　］。きれいな色の小さな実がなっていたり、秋になって色が変わった草が、しずかに風に吹かれていたりするのを見つけられるだろう。そして、こんな目立たないところでも花や草はきちんと生きているのだと感じ、人より早く秋の気配を発見した喜びを［　23　］。",
+              "passageText": "**秋の気配**\n\n8月の終わりごろといえば、まだとても暑い時期だ。太陽はぎらぎらと輝き、都会のアスファルトの上を歩いている人々は暑さで疲れている。毎日暑くて、元気がなくなる人も多いだろう。\n\n［　19　］、山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちているのに気がつくだろう。山に行き、おいしい空気を吸って、美しい景色を［　20　］、夏の暑さを忘れることができる。\n\n山まで遠いし、行く時間もない、という人も多いだろう。［　21　］、都会の中の森に出かけてみてはいかがだろうか。都会の中にある大きな公園の森に入ってみれば、街の中と気温が大きく違うことに驚くだろう。大きな公園でなくてもよい。家の近所にある小さな公園の中の森や、住宅地の中の歩道につくられた林でも［　22　］。きれいな色の小さな実がなっていたり、秋になって色が変わった草が、しずかに風に吹かれていたりするのを見つけられるだろう。そして、こんな目立たないところでも花や草はきちんと生きているのだと感じ、人より早く秋の気配を発見した喜びを［　23　］。",
               "options": [
                 "だから",
                 "けれども",
@@ -11604,15 +11520,14 @@ export const practiceSetsBook = {
                 "その上"
               ],
               "correctIndex": 1,
+              "instruction": "問題3 つぎの文章を読んで［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "imageSrc": "/images/practice_sets/set_14_passage.jpg",
-              "explanation": "【解説】都会の猛暑に対して「しかし山に行ってみると涼しい」と対比させる逆接の接続詞「けれども」。\n【英訳】けれども - however/but."
+              "explanation": "【解説】前文「8月の終わりごろといえば、まだとても暑い時期だ」と、後文「山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちている」は逆接の関係にあるため、「けれども」が適切です。\n【英訳】けれども - however / but."
             },
             {
-              "id": 14060,
+              "id": 20,
               "questionText": "",
-              "passageText": "**秋の気配**\r\n\r\n8月の終わりごろといえば、まだとても暑い時期だ。太陽はぎらぎらと輝き、都会のアスファルトの上を歩いている人々は暑さで疲れている。毎日暑くて、元気がなくなる人も多いだろう。\r\n\r\n［　19　］、山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちているのに気がつくだろう。山に行き、おいしい空気を吸って、美しい景色を［　20　］、夏の暑さを忘れることができる。\r\n\r\n山まで遠いし、行く時間もない、という人も多いだろう。［　21　］、都会の中の森に出かけてみてはいかがだろうか。都会の中にある大きな公園の森に入ってみれば、街の中と気温が大きく違うことに驚くだろう。大きな公園でなくてもよい。家の近所にある小さな公園の中の森や、住宅地の中の歩道につくられた林でも［　22　］。きれいな色の小さな実がなっていたり、秋になって色が変わった草が、しずかに風に吹かれていたりするのを見つけられるだろう。そして、こんな目立たないところでも花や草はきちんと生きているのだと感じ、人より早く秋の気配を発見した喜びを［　23　］。",
+              "passageText": "**秋の気配**\n\n8月の終わりごろといえば、まだとても暑い時期だ。太陽はぎらぎらと輝き、都会のアスファルトの上を歩いている人々は暑さで疲れている。毎日暑くて、元気がなくなる人も多いだろう。\n\n［　19　］、山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちているのに気がつくだろう。山に行き、おいしい空気を吸って、美しい景色を［　20　］、夏の暑さを忘れることができる。\n\n山まで遠いし、行く時間もない、という人も多いだろう。［　21　］、都会の中の森に出かけてみてはいかがだろうか。都会の中にある大きな公園の森に入ってみれば、街の中と気温が大きく違うことに驚くだろう。大きな公園でなくてもよい。家の近所にある小さな公園の中の森や、住宅地の中の歩道につくられた林でも［　22　］。きれいな色の小さな実がなっていたり、秋になって色が変わった草が、しずかに風に吹かれていたりするのを見つけられるだろう。そして、こんな目立たないところでも花や草はきちんと生きているのだと感じ、人より早く秋の気配を発見した喜びを［　23　］。",
               "options": [
                 "見るからに",
                 "見たままで",
@@ -11620,15 +11535,14 @@ export const practiceSetsBook = {
                 "見ないまでも"
               ],
               "correctIndex": 2,
+              "instruction": "問題3 つぎの文章を読んで［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "imageSrc": "/images/practice_sets/set_14_passage.jpg",
-              "explanation": "【解説】「ただ美しい景色を眺めることだけで」夏の暑さを忘れられる「見るだけでも」。\n【英訳】見るだけでも - just by looking at the beautiful scenery."
+              "explanation": "【解説】「動詞辞書形＋だけでも」はそれをするだけで十分効果が得られることを表します。「おいしい空気を吸って、美しい景色を見るだけでも、夏の暑さを忘れることができる」。\n【英訳】見るだけでも - just by looking at."
             },
             {
-              "id": 14061,
+              "id": 21,
               "questionText": "",
-              "passageText": "**秋の気配**\r\n\r\n8月の終わりごろといえば、まだとても暑い時期だ。太陽はぎらぎらと輝き、都会のアスファルトの上を歩いている人々は暑さで疲れている。毎日暑くて、元気がなくなる人も多いだろう。\r\n\r\n［　19　］、山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちているのに気がつくだろう。山に行き、おいしい空気を吸って、美しい景色を［　20　］、夏の暑さを忘れることができる。\r\n\r\n山まで遠いし、行く時間もない、という人も多いだろう。［　21　］、都会の中の森に出かけてみてはいかがだろうか。都会の中にある大きな公園の森に入ってみれば、街の中と気温が大きく違うことに驚くだろう。大きな公園でなくてもよい。家の近所にある小さな公園の中の森や、住宅地の中の歩道につくられた林でも［　22　］。きれいな色の小さな実がなっていたり、秋になって色が変わった草が、しずかに風に吹かれていたりするのを見つけられるだろう。そして、こんな目立たないところでも花や草はきちんと生きているのだと感じ、人より早く秋の気配を発見した喜びを［　23　］。",
+              "passageText": "**秋の気配**\n\n8月の終わりごろといえば、まだとても暑い時期だ。太陽はぎらぎらと輝き、都会のアスファルトの上を歩いている人々は暑さで疲れている。毎日暑くて、元気がなくなる人も多いだろう。\n\n［　19　］、山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちているのに気がつくだろう。山に行き、おいしい空気を吸って、美しい景色を［　20　］、夏の暑さを忘れることができる。\n\n山まで遠いし、行く時間もない、という人も多いだろう。［　21　］、都会の中の森に出かけてみてはいかがだろうか。都会の中にある大きな公園の森に入ってみれば、街の中と気温が大きく違うことに驚くだろう。大きな公園でなくてもよい。家の近所にある小さな公園の中の森や、住宅地の中の歩道につくられた林でも［　22　］。きれいな色の小さな実がなっていたり、秋になって色が変わった草が、しずかに風に吹かれていたりするのを見つけられるだろう。そして、こんな目立たないところでも花や草はきちんと生きているのだと感じ、人より早く秋の気配を発見した喜びを［　23　］。",
               "options": [
                 "そんなときは",
                 "あんなときは",
@@ -11636,15 +11550,14 @@ export const practiceSetsBook = {
                 "あちらのときは"
               ],
               "correctIndex": 0,
+              "instruction": "問題3 つぎの文章を読んで［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "imageSrc": "/images/practice_sets/set_14_passage.jpg",
-              "explanation": "【解説】前述の「山まで遠くて時間もない」状況を指して提案を導く「そんなときは」。\n【英訳】そんなときは - at times like that / in that case."
+              "explanation": "【解説】直前で述べられた状況「山まで遠いし、行く時間もない」という状況を受けて提案しているので、「そんなときは」（その状況のときは）が適切です。\n【英訳】そんなときは - in such cases / when that happens."
             },
             {
-              "id": 14062,
+              "id": 22,
               "questionText": "",
-              "passageText": "**秋の気配**\r\n\r\n8月の終わりごろといえば、まだとても暑い時期だ。太陽はぎらぎらと輝き、都会のアスファルトの上を歩いている人々は暑さで疲れている。毎日暑くて、元気がなくなる人も多いだろう。\r\n\r\n［　19　］、山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちているのに気がつくだろう。山に行き、おいしい空気を吸って、美しい景色を［　20　］、夏の暑さを忘れることができる。\r\n\r\n山まで遠いし、行く時間もない、という人も多いだろう。［　21　］、都会の中の森に出かけてみてはいかがだろうか。都会の中にある大きな公園の森に入ってみれば、街の中と気温が大きく違うことに驚くだろう。大きな公園でなくてもよい。家の近所にある小さな公園の中の森や、住宅地の中の歩道につくられた林でも［　22　］。きれいな色の小さな実がなっていたり、秋になって色が変わった草が、しずかに風に吹かれていたりするのを見つけられるだろう。そして、こんな目立たないところでも花や草はきちんと生きているのだと感じ、人より早く秋の気配を発見した喜びを［　23　］。",
+              "passageText": "**秋の気配**\n\n8月の終わりごろといえば、まだとても暑い時期だ。太陽はぎらぎらと輝き、都会のアスファルトの上を歩いている人々は暑さで疲れている。毎日暑くて、元気がなくなる人も多いだろう。\n\n［　19　］、山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちているのに気がつくだろう。山に行き、おいしい空気を吸って、美しい景色を［　20　］、夏の暑さを忘れることができる。\n\n山まで遠いし、行く時間もない、という人も多いだろう。［　21　］、都会の中の森に出かけてみてはいかがだろうか。都会の中にある大きな公園の森に入ってみれば、街の中と気温が大きく違うことに驚くだろう。大きな公園でなくてもよい。家の近所にある小さな公園の中の森や、住宅地の中の歩道につくられた林でも［　22　］。きれいな色の小さな実がなっていたり、秋になって色が変わった草が、しずかに風に吹かれていたりするのを見つけられるだろう。そして、こんな目立たないところでも花や草はきちんと生きているのだと感じ、人より早く秋の気配を発見した喜びを［　23　］。",
               "options": [
                 "十分だ",
                 "十分ではない",
@@ -11652,26 +11565,24 @@ export const practiceSetsBook = {
                 "違っていない"
               ],
               "correctIndex": 0,
+              "instruction": "問題3 つぎの文章を読んで［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "imageSrc": "/images/practice_sets/set_14_passage.jpg",
-              "explanation": "【解説】身近な小さな公園や歩道の林でも秋の気配を感じるには「十分だ」。\n【英訳】十分だ - is quite sufficient."
+              "explanation": "【解説】前文「大きな公園でなくてもよい」と述べており、身近にある小さな公園や街路樹の林でも秋の気配を感じるには「十分だ」と肯定的に述べています。\n【英訳】十分だ - is sufficient / enough."
             },
             {
-              "id": 14063,
+              "id": 23,
               "questionText": "",
-              "passageText": "**秋の気配**\r\n\r\n8月の終わりごろといえば、まだとても暑い時期だ。太陽はぎらぎらと輝き、都会のアスファルトの上を歩いている人々は暑さで疲れている。毎日暑くて、元気がなくなる人も多いだろう。\r\n\r\n［　19　］、山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちているのに気がつくだろう。山に行き、おいしい空気を吸って、美しい景色を［　20　］、夏の暑さを忘れることができる。\r\n\r\n山まで遠いし、行く時間もない、という人も多いだろう。［　21　］、都会の中の森に出かけてみてはいかがだろうか。都会の中にある大きな公園の森に入ってみれば、街の中と気温が大きく違うことに驚くだろう。大きな公園でなくてもよい。家の近所にある小さな公園の中の森や、住宅地の中の歩道につくられた林でも［　22　］。きれいな色の小さな実がなっていたり、秋になって色が変わった草が、しずかに風に吹かれていたりするのを見つけられるだろう。そして、こんな目立たないところでも花や草はきちんと生きているのだと感じ、人より早く秋の気配を発見した喜びを［　23　］。",
+              "passageText": "**秋の気配**\n\n8月の終わりごろといえば、まだとても暑い時期だ。太陽はぎらぎらと輝き、都会のアスファルトの上を歩いている人々は暑さで疲れている。毎日暑くて、元気がなくなる人も多いだろう。\n\n［　19　］、山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちているのに気がつくだろう。山に行き、おいしい空気を吸って、美しい景色を［　20　］、夏の暑さを忘れることができる。\n\n山まで遠いし、行く時間もない、という人も多いだろう。［　21　］、都会の中の森に出かけてみてはいかがだろうか。都会の中にある大きな公園の森に入ってみれば、街の中と気温が大きく違うことに驚くだろう。大きな公園でなくてもよい。家の近所にある小さな公園の中の森や、住宅地の中の歩道につくられた林でも［　22　］。きれいな色の小さな実がなっていたり、秋になって色が変わった草が、しずかに風に吹かれていたりするのを見つけられるだろう。そして、こんな目立たないところでも花や草はきちんと生きているのだと感じ、人より早く秋の気配を発見した喜びを［　23　］。",
               "options": [
                 "感じかねない",
                 "感じるほかはない",
-                "感じることができかねる",
+                "感じることができる",
                 "感じられるにちがいない"
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
+              "instruction": "問題3 つぎの文章を読んで［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "imageSrc": "/images/practice_sets/set_14_passage.jpg",
-              "explanation": "【解説】確信を持って読者に語りかける「喜びを［感じられるにちがいない］」。\n【英訳】感じられるにちがいない - must surely be able to feel."
+              "explanation": "【解説】身近な自然を観察することで得られる可能性や能力を述べており、「喜びを感じることができる」（可能表現）が文脈に最も合致します。\n【英訳】感じることができる - can feel / be able to experience."
             }
           ]
         }
@@ -11680,14 +11591,13 @@ export const practiceSetsBook = {
     {
       "id": "set-15",
       "title": "Set 15",
-      "description": "Practice Test 15",
+      "description": "JLPT N3 Practice Test 15 - Vocabulary & Grammar",
       "sections": {
         "vocabulary-kanji": {
-          "title": "Vocabulary & Kanji",
-          "titleJa": "文字・語彙",
+          "title": "文字・語彙 (Vocabulary)",
           "questions": [
             {
-              "id": 15000,
+              "id": 1,
               "questionText": "大事なことなので、<u>文書</u>で回答してください。",
               "options": [
                 "もんしょう",
@@ -11697,11 +11607,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「文書」の正しい読み方は「ぶんしょ」です。\n【英訳】The reading of 文書 is ぶんしょ - document."
+              "explanation": "【解説】「文書」の正しい読み方は「ぶんしょ」です。「もんしょう」「もんしょ」「ぶんしょう」は誤りです。<br/>【英訳】The reading of 文書 is ぶんしょ - written document."
             },
             {
-              "id": 15001,
+              "id": 2,
               "questionText": "毎日練習をしたので、<u>実力</u>がついた。",
               "options": [
                 "しつりょく",
@@ -11711,11 +11620,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「実力」の正しい読み方は「じつりょく」です。\n【英訳】The reading of 実力 is じつりょく - true ability/capability."
+              "explanation": "【解説】「実力」の正しい読み方は「じつりょく」です。「しつりょく」「しつりき」「じつりき」は誤りです。<br/>【英訳】The reading of 実力 is じつりょく - true ability / competence."
             },
             {
-              "id": 15002,
+              "id": 3,
               "questionText": "冷蔵庫で氷が<u>固まる</u>。",
               "options": [
                 "つまる",
@@ -11725,11 +11633,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「固まる」の正しい読み方は「かたまる」です。\n【英訳】The reading of 固まる is かたまる - solidify/harden."
+              "explanation": "【解説】「固まる」の正しい読み方は「かたまる」です。「つまる」「あまる」「あつまる」は誤りです。<br/>【英訳】The reading of 固まる is かたまる - to harden / solidify."
             },
             {
-              "id": 15003,
+              "id": 4,
               "questionText": "風に木の葉が<u>舞って</u>いました。",
               "options": [
                 "おどって",
@@ -11739,11 +11646,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「舞って」の正しい読み方は「まって」です。\n【英訳】The reading of 舞って is まって - flutter/dance in the wind."
+              "explanation": "【解説】「舞って」の正しい読み方は「まって」（原形：舞う）です。「おどって」「ちって」「さって」は誤りです。<br/>【英訳】The reading of 舞って is まって - to dance / flutter in the air."
             },
             {
-              "id": 15004,
+              "id": 5,
               "questionText": "食べ続けても、体に<u>害</u>はありません。",
               "options": [
                 "かい",
@@ -11753,11 +11659,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「害」の正しい読み方は「がい」です。\n【英訳】The reading of 害 is がい - harm/damage."
+              "explanation": "【解説】「害」の正しい読み方は「がい」です。「かい」「とく」「どく」は誤りです。<br/>【英訳】The reading of 害 is がい - harm / damage."
             },
             {
-              "id": 15005,
+              "id": 6,
               "questionText": "新しいルールは、わが社にとって<u>有利</u>だ。",
               "options": [
                 "ふり",
@@ -11767,11 +11672,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「有利」の正しい読み方は「ゆうり」です。\n【英訳】The reading of 有利 is ゆうり - advantageous/favorable."
+              "explanation": "【解説】「有利」の正しい読み方は「ゆうり」です。「ふり」「ふうり」「ゆり」は誤りです。<br/>【英訳】The reading of 有利 is ゆうり - advantageous / favorable."
             },
             {
-              "id": 15006,
+              "id": 7,
               "questionText": "この町には、有名な<u>港</u>があります。",
               "options": [
                 "きし",
@@ -11781,11 +11685,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「港」の正しい読み方は「みなと」です。\n【英訳】The reading of 港 is みなと - port/harbor."
+              "explanation": "【解説】「港」の正しい読み方は「みなと」です。「きし」「うみ」「はまべ」は誤りです。<br/>【英訳】The reading of 港 is みなと - port / harbor."
             },
             {
-              "id": 15007,
+              "id": 8,
               "questionText": "2人の意見が<u>対立</u>している。",
               "options": [
                 "たいりつ",
@@ -11795,11 +11698,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 0,
               "instruction": "問題1 ______ のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「対立」の正しい読み方は「たいりつ」です。\n【英訳】The reading of 対立 is たいりつ - confrontation/opposition."
+              "explanation": "【解説】「対立」の正しい読み方は「たいりつ」です。「だいりつ」「たいりゅう」「だいりゅう」は誤りです。<br/>【英訳】The reading of 対立 is たいりつ - confrontation / opposition."
             },
             {
-              "id": 15008,
+              "id": 9,
               "questionText": "<u>みごと</u>なポーズで着地した。",
               "options": [
                 "身事",
@@ -11809,11 +11711,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「みごと」の正しい漢字は「見事」です。\n【英訳】The kanji for みごと is 見事 - splendid/magnificent."
+              "explanation": "【解説】「みごと」は漢字で「見事」と書きます。すばらしい様子を表します。<br/>【英訳】みごと (splendid / magnificent) is written as 見事."
             },
             {
-              "id": 15009,
+              "id": 10,
               "questionText": "<u>きょうどう</u>で、新しい仕事をはじめた。",
               "options": [
                 "強同",
@@ -11823,11 +11724,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「きょうどう」の正しい漢字は「共同」です。\n【英訳】The kanji for きょうどう is 共同 - joint/collaborative."
+              "explanation": "【解説】「きょうどう」は漢字で「共同」と書きます。同じ目的のために力を合わせることを表します。<br/>【英訳】きょうどう (joint / collaborative) is written as 共同."
             },
             {
-              "id": 15010,
+              "id": 11,
               "questionText": "初めて会った人に<u>めいし</u>をもらった。",
               "options": [
                 "名氏",
@@ -11837,11 +11737,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「めいし」の正しい漢字は「名刺」です。\n【英訳】The kanji for めいし is 名刺 - business card."
+              "explanation": "【解説】「めいし」は漢字で「名刺」と書きます。名前や所属などを印刷した紙片のことです。<br/>【英訳】めいし (business card) is written as 名刺."
             },
             {
-              "id": 15011,
+              "id": 12,
               "questionText": "あなたの行いは、だれかを<u>すくう</u>ことができるかもしれない。",
               "options": [
                 "補う",
@@ -11851,11 +11750,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「すくう」の正しい漢字は「救う」です。\n【英訳】The kanji for すくう is 救う - save/rescue."
+              "explanation": "【解説】「すくう」は漢字で「救う」と書きます。危険や困難から助け出すことを表します。<br/>【英訳】すくう (to rescue / save) is written as 救う."
             },
             {
-              "id": 15012,
+              "id": 13,
               "questionText": "クリスマスの<u>ていばん</u>の商品は、このケーキだ。",
               "options": [
                 "丁番",
@@ -11865,11 +11763,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「ていばん」の正しい漢字は「定番」です。\n【英訳】The kanji for ていばん is 定番 - standard/staple item."
+              "explanation": "【解説】「ていばん」は漢字で「定番」と書きます。流行に左右されない基本的な商品や決まりきった事柄を表します。<br/>【英訳】ていばん (standard / staple item) is written as 定番."
             },
             {
-              "id": 15013,
+              "id": 14,
               "questionText": "夜中に家の外で<u>あしおと</u>が聞こえた。",
               "options": [
                 "足声",
@@ -11879,11 +11776,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題2 ______ のことばを漢字で書くとき、最もよいものを1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「あしおと」の正しい漢字は「足音」です。\n【英訳】The kanji for あしおと is 足音 - footsteps."
+              "explanation": "【解説】「あしおと」は漢字で「足音」と書きます。歩くときに生じる音のことです。<br/>【英訳】あしおと (sound of footsteps) is written as 足音."
             },
             {
-              "id": 15014,
+              "id": 15,
               "questionText": "毎月たくさん雑誌を買うので、部屋に置く（　　）がない。",
               "options": [
                 "ウェイト",
@@ -11893,11 +11789,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】物を置くための場所や空間を「スペース」（space）と言います。\n【英訳】スペース - room/space to place books."
+              "explanation": "【解説】「スペース」は空間や場所を意味し、「部屋に置くスペースがない」が最も適切です。<br/>【英訳】スペース (space) - room / physical space."
             },
             {
-              "id": 15015,
+              "id": 16,
               "questionText": "私が動物を好きになったのは、両親の（　　）だ。",
               "options": [
                 "反響",
@@ -11907,11 +11802,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】他に働きかけて変化をもたらす力を「影響」と言います。\n【英訳】影響 - influence of parents."
+              "explanation": "【解説】「影響（えいきょう）」は他からの働きかけによって変化が生じることで、「両親の影響だ」が自然です。<br/>【英訳】影響 (influence) - effect / influence."
             },
             {
-              "id": 15016,
+              "id": 17,
               "questionText": "旅行者がけんかをしたことがA国とB国の（　　）問題になった。",
               "options": [
                 "海外",
@@ -11921,11 +11815,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】国と国との間の交渉や関係に関する問題を「外交問題」と言います。\n【英訳】外交 - diplomatic issue."
+              "explanation": "【解説】「外交（がいこう）」は国と国との交渉や関係のことで、「A国とB国の外交問題」が適切です。<br/>【英訳】外交 (diplomacy) - diplomatic issue."
             },
             {
-              "id": 15017,
+              "id": 18,
               "questionText": "外出するので、アクセサリーを（　　）。",
               "options": [
                 "はいた",
@@ -11935,11 +11828,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】時計やブローチなどの装飾品を身につける動詞は「つける」（つけた）です。\n【英訳】つける - put on accessories."
+              "explanation": "【解説】アクセサリーは身に着けるものなので「つける」を用います。過去形は「つけた」です。<br/>【英訳】アクセサリーをつける - to put on / wear accessories."
             },
             {
-              "id": 15018,
+              "id": 19,
               "questionText": "この生き物は、魚の（　　）だ。",
               "options": [
                 "一派",
@@ -11949,11 +11841,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】同じグループや種類の中の一つを「一種」と言います。\n【英訳】一種 - a type/kind of fish."
+              "explanation": "【解説】「一種（いっしゅ）」はあるグループや分類の一つの種類を表し、「魚の一種」が最も自然です。<br/>【英訳】一種 (a kind / species) - a type / species of fish."
             },
             {
-              "id": 15019,
+              "id": 20,
               "questionText": "一か月の生活（　　）はどのくらいですか。",
               "options": [
                 "金",
@@ -11963,11 +11854,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】生活にかかる費用を「生活費」と言います。\n【英訳】生活費 - living expenses."
+              "explanation": "【解説】生活にかかる費用を「生活費（せいかつひ）」と言います。<br/>【英訳】生活費 (living expenses) - cost of living."
             },
             {
-              "id": 15020,
+              "id": 21,
               "questionText": "彼女を（　　）して、この曲を作りました。",
               "options": [
                 "イコール",
@@ -11977,11 +11867,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】具体的な対象を心に思い描いて創作することを「イメージして」と言います。\n【英訳】イメージする - image/visualize her."
+              "explanation": "【解説】「イメージする」は心の中に姿や様子を思い浮かべることで、「彼女をイメージしてこの曲を作りました」が適切です。<br/>【英訳】イメージする (to imagine / picture) - to imagine / be inspired by."
             },
             {
-              "id": 15021,
+              "id": 22,
               "questionText": "彼は動物学者なので、動物に（　　）。",
               "options": [
                 "くわしい",
@@ -11991,11 +11880,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 0,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】知識が豊富でよく知っている様子を「詳しい」（くわしい）と言います。\n【英訳】くわしい - knowledgeable about animals."
+              "explanation": "【解説】「詳しい（くわしい）」は物事の事情や内容をよく知っていることで、「〜に詳しい」の形で使います。<br/>【英訳】詳しい (knowledgeable / well-informed) - to be familiar with / know well."
             },
             {
-              "id": 15022,
+              "id": 23,
               "questionText": "今日は休むと、中田さんに（　　）してください。",
               "options": [
                 "提案",
@@ -12005,11 +11893,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】言づてや用件を伝えることを「伝言する」と言います。\n【英訳】伝言 - pass a message."
+              "explanation": "【解説】「伝言（でんごん）」は言づて・メッセージを伝えることで、「中田さんに伝言してください」が自然です。<br/>【英訳】伝言 (message) - to pass a message."
             },
             {
-              "id": 15023,
+              "id": 24,
               "questionText": "休みには温泉に行って、何もしないで旅館で（　　）したい。",
               "options": [
                 "そろそろ",
@@ -12019,11 +11906,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】焦らずゆったりとくつろぐ様子を「のんびりしたい」と言います。\n【英訳】のんびり - relax leisurely."
+              "explanation": "【解説】「のんびり」は何もしないでゆったりとくつろぐ様子を表します。<br/>【英訳】のんびり (leisurely / carefree) - to relax leisurely."
             },
             {
-              "id": 15024,
+              "id": 25,
               "questionText": "エジプトのピラミッドは、とても（　　）だ。",
               "options": [
                 "多大",
@@ -12033,11 +11919,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題3 (　　) に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】桁外れに大きく雄大な様子を「巨大」と言います。\n【英訳】巨大 - huge/gigantic pyramid."
+              "explanation": "【解説】「巨大（きょだい）」は非常に大きい様子を表し、「ピラミッドは巨大だ」が適切です。<br/>【英訳】巨大 (gigantic / huge) - huge / enormous."
             },
             {
-              "id": 15025,
+              "id": 26,
               "questionText": "<u>マニュアル</u>を見ながら作業をする。",
               "options": [
                 "地図",
@@ -12047,11 +11932,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「マニュアル」は機械の操作方法や手順が書かれた「説明書」のことです。\n【英訳】マニュアル ＝ 説明書 - manual/instruction book."
+              "explanation": "【解説】「マニュアル」は作業手順などを書いた手引き書・「説明書」のことです。<br/>【英訳】マニュアル (manual) - instruction manual / guide book."
             },
             {
-              "id": 15026,
+              "id": 27,
               "questionText": "そこに<u>じっと</u>してください。",
               "options": [
                 "動いて",
@@ -12061,11 +11945,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「じっと」はその場から離れず「動かないで」いる様子です。\n【英訳】じっと ＝ 動かないで - stay still without moving."
+              "explanation": "【解説】「じっとする」は身動きせずにじっとしていること、つまり「動かないで」いることです。<br/>【英訳】じっとする (stay still) - stay still / do not move."
             },
             {
-              "id": 15027,
+              "id": 28,
               "questionText": "田中さんはとても<u>顔が広い</u>。",
               "options": [
                 "頭が大きい",
@@ -12075,11 +11958,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「顔が広い」は交友関係が広く「知り合いが多い」という意味の慣用句です。\n【英訳】顔が広い ＝ 知り合いが多い - well-connected."
+              "explanation": "【解説】「顔が広い」は多くの人と交際があって「知り合いが多い」ことを意味する慣用句です。<br/>【英訳】顔が広い (well-connected) - to have a wide circle of acquaintances."
             },
             {
-              "id": 15028,
+              "id": 29,
               "questionText": "<u>あわてて</u>出かける準備をした。",
               "options": [
                 "時間をかけて",
@@ -12089,25 +11971,23 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「あわてて」は落ち着きをなくして「急いで」準備することです。\n【英訳】あわてて ＝ 急いで - hurriedly/in a rush."
+              "explanation": "【解説】「あわてて」は落ち着きを失って急ぐ様子、「急いで」と同じ意味です。<br/>【英訳】あわてて (in a hurry / in haste) - in a hurry / hurriedly."
             },
             {
-              "id": 15029,
-              "questionText": "妻「料理の味はどうかな。」  \r\n    夫「<u>割合</u>おいしいよ。」",
+              "id": 30,
+              "questionText": "妻「料理の味はどうかな。」  \n夫「<u>割合</u>おいしいよ。」",
               "options": [
                 "思っていたよりも",
                 "すばらしく",
                 "今まででいちばん",
-                "少しは ---"
+                "少しは"
               ],
               "correctIndex": 0,
               "instruction": "問題4 ______ に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「割合」は予想や基準と比べて「思っていたよりも」という意味です。\n【英訳】割合 ＝ 思っていたよりも - comparatively/more than expected."
+              "explanation": "【解説】「割合（わりあい）」は予想や普通と比べて思っていた程度以上であることを示し、「思っていたよりも」に近いです。<br/>【英訳】割合 (comparatively / relatively) - more than expected / relatively."
             },
             {
-              "id": 15030,
+              "id": 31,
               "questionText": "<u>たまたま</u>",
               "options": [
                 "お正月は、ずっと家族と<u>たまたま</u>一緒にいた。",
@@ -12117,25 +11997,23 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「たまたま（偶々）」は思いがけず偶然に起きることで、「散歩していたらファンさんとたまたま会った」が自然です。\n【英訳】たまたま - happened to meet by chance."
+              "explanation": "【解説】「たまたま（偶然に）」の正しい使い方は「散歩をしていたら、ファンさんとたまたま会った」です。<br/>【英訳】たまたま (by chance / coincidentally) - unexpectedly ran into someone."
             },
             {
-              "id": 15031,
+              "id": 32,
               "questionText": "<u>補う</u>",
               "options": [
-                "やぶれたシャツを糸で<u>補ってください</u>。",
+                "やぶれたシャツを糸で<u>補って</u>ください。",
                 "サッカーの試合中けがをした足を、すぐに<u>補った</u>。",
                 "夫婦げんかをした後は、早く<u>補った</u>ほうがいい。",
-                "私の足りない部分を、中山さんが<u>補ってくれた</u>。"
+                "私の足りない部分を、中山さんが<u>補って</u>くれた。"
               ],
               "correctIndex": 3,
               "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「補う（おぎなう）」は不足しているところを満たすことで、「足りない部分を補ってくれた」が自然です。\n【英訳】補う - supplement/compensate."
+              "explanation": "【解説】「補う（足りない部分を満たす）」の正しい使い方は「私の足りない部分を、中山さんが補ってくれた」です。<br/>【英訳】補う (to supplement / make up for) - to compensate for / make up for."
             },
             {
-              "id": 15032,
+              "id": 33,
               "questionText": "<u>たば</u>",
               "options": [
                 "明日、机の<u>たば</u>を捨ててください。",
@@ -12145,11 +12023,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「たば（束）」は細長い物や紙をまとめたもので、「紙のたば」が自然です。\n【英訳】束 - bundle/stack of paper."
+              "explanation": "【解説】「たば（束）」は細長いものや紙などを一まとめにしたものを数える言葉で、「紙のたば」が正しい使い方です。<br/>【英訳】たば (bundle / stack) - bundle / stack of paper."
             },
             {
-              "id": 15033,
+              "id": 34,
               "questionText": "<u>都合</u>",
               "options": [
                 "今日は、<u>都合</u>がなくて一緒に遊びに行けません。",
@@ -12159,11 +12036,10 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「都合」はスケジュールや状況のよしあしのことで、「都合がよければ」が自然です。\n【英訳】都合 - if convenient."
+              "explanation": "【解説】「都合（事情や日時の都合）」の正しい使い方は「明日、都合がよければ、うちに食事に来てください」です。<br/>【英訳】都合 (convenience / circumstances) - if convenient / if schedule allows."
             },
             {
-              "id": 15034,
+              "id": 35,
               "questionText": "<u>きつい</u>",
               "options": [
                 "容器のふたを<u>きつく</u>閉めてください。",
@@ -12173,17 +12049,15 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 0,
               "instruction": "問題5 次のことばの使い方として最もよいものを、一つえらびなさい。",
-              "sectionType": "vocabulary-kanji",
-              "explanation": "【解説】「きつい」は隙間なくぴったり締まっていることで、「ふたをきつく閉めてください」が自然です。\n【英訳】きつく閉める - tighten the lid firmly."
+              "explanation": "【解説】「きつい（きつく）」は固く締まって緩みがない様子を表し、「容器のふたをきつく閉めてください」が正しい使い方です。<br/>【英訳】きつく (tightly) - to close / tighten firmly."
             }
           ]
         },
         "grammar-reading": {
-          "title": "Grammar & Reading",
-          "titleJa": "文法・読解",
+          "title": "文法 (Grammar)",
           "questions": [
             {
-              "id": 15035,
+              "id": 1,
               "questionText": "彼女と連絡が取れなくなってから、今日（　　）5日になります。",
               "options": [
                 "は",
@@ -12191,13 +12065,13 @@ export const practiceSetsBook = {
                 "も",
                 "が"
               ],
-              "correctIndex": 1,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "correctIndex": 0,
               "sectionType": "grammar-reading",
-              "explanation": "【解説】期間や数量の区切り・限度を表す「〜で」：「今日で5日になります」。\n【英訳】〜で - as of today, it makes 5 days."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】提示や限定の助詞「は」を用います。「彼女と連絡が取れなくなってから、今日（は）5日になります」。<br/>【英訳】〜は - topic/limitation marker (as of today, it is the 5th day)."
             },
             {
-              "id": 15036,
+              "id": 2,
               "questionText": "お金（　　）あれば、今よりもっといい生活ができるのに。",
               "options": [
                 "まで",
@@ -12206,12 +12080,12 @@ export const practiceSetsBook = {
                 "ほど"
               ],
               "correctIndex": 2,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】唯一の最低条件を表す「〜さえ〜ば」：「お金さえあれば」。\n【英訳】〜さえ〜ば - if only there is money."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】「〜さえ〜ば」で「それだけで十分条件を満たす」ことを表します。「お金さえあれば...」。<br/>【英訳】〜さえ〜ば - if only / as long as (if only I had money...)."
             },
             {
-              "id": 15037,
+              "id": 3,
               "questionText": "一度約束した（　　）、絶対に守ってください。",
               "options": [
                 "からでは",
@@ -12220,13 +12094,13 @@ export const practiceSetsBook = {
                 "からといって"
               ],
               "correctIndex": 1,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】決意や義務を導く「〜からには」：「一度約束したからには」。\n【英訳】〜からには - now that / since I promised."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】「〜からには」は「〜という事実がある以上、当然...する義務や意志がある」ことを表します。「一度約束したからには、絶対に守ってください」。<br/>【英訳】〜からには - now that / since (since you promised once, you must keep it)."
             },
             {
-              "id": 15038,
-              "questionText": "今井「今日のセミナー、なんだか出席者が少ないね。」  \r\n   山本「電車の事故（　　）、みんなが来るのが遅れているらしいよ。」",
+              "id": 4,
+              "questionText": "今井「今日のセミナー、なんだか出席者が少ないね。」  \n山本「電車の事故（　　）、みんなが来るのが遅れているらしいよ。」",
               "options": [
                 "ので",
                 "のわけで",
@@ -12234,12 +12108,12 @@ export const practiceSetsBook = {
                 "のせいで"
               ],
               "correctIndex": 3,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】悪い結果の原因・理由を表す「〜（の）せいで」：「事故のせいで」。\n【英訳】〜のせいで - due to the train accident."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】「〜のせいで」は望ましくない原因・理由を表します。「電車の事故のせいで、みんなが来るのが遅れているらしいよ」。<br/>【英訳】〜のせいで - because of / due to (blame for negative outcome)."
             },
             {
-              "id": 15039,
+              "id": 5,
               "questionText": "先週は、3日間（　　）大雪が降りました。",
               "options": [
                 "にまで",
@@ -12248,12 +12122,12 @@ export const practiceSetsBook = {
                 "にわたって"
               ],
               "correctIndex": 3,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】時間や空間の全範囲に及ぶことを表す「〜にわたって」：「3日間にわたって大雪が降った」。\n【英訳】〜にわたって - over a period of 3 days."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】「期間＋にわたって」で「その期間ずっと全体に及んで」を表します。「3日間にわたって大雪が降りました」。<br/>【英訳】〜にわたって - throughout / over a period of (over 3 days)."
             },
             {
-              "id": 15040,
+              "id": 6,
               "questionText": "2年前の旅行を（　　）、彼女と親しくなった。",
               "options": [
                 "最中に",
@@ -12262,12 +12136,12 @@ export const practiceSetsBook = {
                 "ついでに"
               ],
               "correctIndex": 2,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】ある出来事を機縁として新しい状態になる「〜をきっかけに」：「旅行をきっかけに親しくなった」。\n【英訳】〜をきっかけに - taking the trip as an opportunity."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】「〜をきっかけに」は「何かが始まる動機や契機」を表します。「2年前の旅行をきっかけに、彼女と親しくなった」。<br/>【英訳】〜をきっかけに - triggered by / as a result of (became close starting from the trip)."
             },
             {
-              "id": 15041,
+              "id": 7,
               "questionText": "なんでこんなに手がよごれているんだ。すぐに（　　）しろ。",
               "options": [
                 "きれいに",
@@ -12276,12 +12150,12 @@ export const practiceSetsBook = {
                 "きれいで"
               ],
               "correctIndex": 0,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】状態を変化させる表現「形容動詞語幹＋にする」：「きれいにしろ」。\n【英訳】きれいにしろ - make it clean right now!"
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】「な形容詞語幹＋にする」の命令表現で「きれいにしろ」となります。<br/>【英訳】〜にする (imperative) - make it clean."
             },
             {
-              "id": 15042,
+              "id": 8,
               "questionText": "テストの答えを聞かれても、（　　）わけがありません。",
               "options": [
                 "教えない",
@@ -12289,13 +12163,13 @@ export const practiceSetsBook = {
                 "教えて",
                 "教えた"
               ],
-              "correctIndex": 1,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "correctIndex": 0,
               "sectionType": "grammar-reading",
-              "explanation": "【解説】可能性を強く否定する「可能動詞＋わけがない」：「教えられるわけがありません」。\n【英訳】教えられるわけがない - there's no way I can tell you."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】「教えないわけがありません（当然教えるはずです）」という二重否定による強い肯定・推量を表します。<br/>【英訳】〜教えないわけがありません - cannot fail to tell / will definitely tell."
             },
             {
-              "id": 15043,
+              "id": 9,
               "questionText": "私が旅行で買ってきたおみやげを、社長に（　　）。",
               "options": [
                 "しました",
@@ -12304,13 +12178,13 @@ export const practiceSetsBook = {
                 "さしあげました"
               ],
               "correctIndex": 3,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】目上の人（社長）への謙譲授受表現「さしあげました」：「おみやげをさしあげました」。\n【英訳】さしあげる - humble form of give."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】目上の相手（社長）におみやげを渡す敬語（謙譲語）なので「さしあげました」が適切です。<br/>【英訳】さしあげる - humble form of to give (presented to the president)."
             },
             {
-              "id": 15044,
-              "questionText": "父「どうして泣いてるんだ？」  \r\n    娘「だって、お母さんが（　　）。」",
+              "id": 10,
+              "questionText": "父「どうして泣いてるんだ？」  \n娘「だって、お母さんが（　　）。」",
               "options": [
                 "いないんだっけ",
                 "いないんだもん",
@@ -12318,12 +12192,12 @@ export const practiceSetsBook = {
                 "いないんだそう"
               ],
               "correctIndex": 1,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】親しい間柄で不満や言い訳の理由を述べる終助詞「〜んだもん」：「いないんだもん」。\n【英訳】〜んだもん - because... expressing childlike pout."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】「〜んだもん」は理由や言い訳を感情を込めて訴えるときに使う話し言葉です。「お母さんがいないんだもん」。<br/>【英訳】〜んだもん - expression giving personal reason/excuse."
             },
             {
-              "id": 15045,
+              "id": 11,
               "questionText": "子どものころは、この川でよく（　　）。",
               "options": [
                 "泳いだものです",
@@ -12332,12 +12206,12 @@ export const practiceSetsBook = {
                 "泳ぎたいやらず"
               ],
               "correctIndex": 0,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】過去の懐かしい習慣を回想する「動詞た形＋ものだ」：「よく泳いだものです」。\n【英訳】〜たものだ - used to swim."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】「過去形＋ものです」で過去の習慣や思い出を懐かしく振り返る表現です。「よく泳いだものです」。<br/>【英訳】〜たものだ - used to (recalling past habitual actions)."
             },
             {
-              "id": 15046,
+              "id": 12,
               "questionText": "おかげさまで、とても楽しくこの仕事を（　　）。またよろしくお願いします。",
               "options": [
                 "していただきました",
@@ -12345,13 +12219,13 @@ export const practiceSetsBook = {
                 "なさっていただきました",
                 "させていだきました"
               ],
-              "correctIndex": 3,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "correctIndex": 0,
               "sectionType": "grammar-reading",
-              "explanation": "【解説】相手の許可を得て自分の行為を謙譲する「〜させていだきました」：「楽しく仕事をさせていただきました」。\n【英訳】〜させていただく - was graciously allowed to do."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】相手からの恩恵や配慮を受けたことを表す「〜していただく」を用います。「楽しくこの仕事をしていただきました」。<br/>【英訳】〜していただく - received the favor of doing this work."
             },
             {
-              "id": 15047,
+              "id": 13,
               "questionText": "情報は、新聞が伝えているから正しい（　　）、自分で正しいかどうか考えることが大切だ。",
               "options": [
                 "としたことでなく",
@@ -12360,13 +12234,13 @@ export const practiceSetsBook = {
                 "というもので"
               ],
               "correctIndex": 2,
-              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【解説】「必ずしも〜とは言えない」という部分否定「〜というものではなく」：「正しいというものではなく」。\n【英訳】〜というものではない - does not mean it is always correct."
+              "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
+              "explanation": "【解説】「〜というものではない」は「一概に〜とは言えない、必ずしも〜ではない」という部分否定です。「新聞が伝えているから正しいというものではなく...」。<br/>【英訳】〜というものではない - it does not mean that... / not necessarily."
             },
             {
-              "id": 15048,
-              "questionText": "連休に、海か山か__________ __________ ★ __________ 、みんなで海水浴に行った。",
+              "id": 14,
+              "questionText": "連休に、海か山か ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 、みんなで海水浴に行った。",
               "options": [
                 "あげく",
                 "どちらに",
@@ -12374,101 +12248,100 @@ export const practiceSetsBook = {
                 "行くか"
               ],
               "correctIndex": 2,
-              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【語順】海か山か [2どちらに] [4行くか] [★ 3なやんだ] [1あげく]、みんなで海水浴に行った\n【★ 正解】3「なやんだ」\n【英訳】Order: どちらに行くかなやんだあげく - after agonizing over which to go."
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【語順】連休に、海か山か [2どちらに] [4行くか] [★ 3なやんだ] [1あげく]、みんなで海水浴に行った。<br/>【★ 正解】3「なやんだ」<br/>【英訳】Order: どちらに行くかなやんだあげく - after agonizing over which to go."
             },
             {
-              "id": 15049,
-              "questionText": "きのうの夜、先生__________ __________ ★ __________ 、みんなでお酒を飲みました。",
+              "id": 15,
+              "questionText": "きのうの夜、先生 ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 、みんなでお酒を飲みました。",
               "options": [
                 "後で",
                 "が",
                 "お休みになった",
                 "その"
               ],
-              "correctIndex": 3,
-              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "correctIndex": 2,
               "sectionType": "grammar-reading",
-              "explanation": "【語順】先生 [2が] [3お休みになった] [★ 4その] [1後で]、みんなでお酒を飲みました\n【★ 正解】4「その」\n【英訳】Order: 先生がお休みになったその後で。"
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【語順】きのうの夜、先生 [2が] [4その] [★ 3お休みになった] [1後で]、みんなでお酒を飲みました。<br/>【★ 正解】3「お休みになった」<br/>【英訳】Order: 先生がそのお休みになった後で - after the teacher went to rest."
             },
             {
-              "id": 15050,
-              "questionText": "子どものころ、__________ __________ ★ __________ 、母にひどくしかられました。",
+              "id": 16,
+              "questionText": "子どものころ、＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 、母にひどくしかられました。",
               "options": [
                 "けんかでも",
                 "ものなら",
                 "しょう",
                 "友だちと"
               ],
-              "correctIndex": 2,
-              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "correctIndex": 3,
               "sectionType": "grammar-reading",
-              "explanation": "【語順】子どものころ、[4友だちと] [1けんかでも] [★ 3しよう] [2ものなら]、母にひどくしかられました\n【★ 正解】3「しよう」\n【英訳】Order: けんかでもしようものなら - if I dared to fight even once."
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【語順】子どものころ、[4友だちと] [1けんかでも] [★ 3しょう] [2ものなら]、母にひどくしかられました。<br/>【★ 正解】4「友だちと」<br/>【英訳】Order: 友だちとけんかでもしようものなら - if I were to fight with friends..."
             },
             {
-              "id": 15051,
-              "questionText": "あの人は、スポーツ選手の__________ __________ ★ __________ と思います。",
+              "id": 17,
+              "questionText": "あの人は、スポーツ選手の ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ と思います。",
               "options": [
                 "わりに",
                 "小さい",
                 "体が",
                 "ほうだ"
               ],
-              "correctIndex": 1,
-              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "correctIndex": 2,
               "sectionType": "grammar-reading",
-              "explanation": "【語順】あの人は、スポーツ選手の [1わりに] [3体が] [★ 2小さい] [4ほうだ] と思います\n【★ 正解】2「小さい」\n【英訳】Order: 選手のわりに体が小さいほうだ。"
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【語順】あの人は、スポーツ選手の [1わりに] [★ 3体が] [2小さい] [4ほうだ] と思います。<br/>【★ 正解】3「体が」<br/>【英訳】Order: わりに体が小さいほうだ - rather small build for an athlete."
             },
             {
-              "id": 15052,
-              "questionText": "昔__________ __________ ★ __________ 習慣はありません。",
+              "id": 18,
+              "questionText": "昔 ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 習慣はありません。",
               "options": [
                 "ともかく",
                 "なら",
                 "そんな",
                 "今は"
               ],
-              "correctIndex": 3,
-              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "correctIndex": 1,
               "sectionType": "grammar-reading",
-              "explanation": "【語順】昔 [2なら] [1ともかく] [★ 4今は] [3そんな] 習慣はありません\n【★ 正解】4「今は」\n【英訳】Order: 昔ならともかく今はそんな習慣はありません - in the past perhaps, but nowadays..."
+              "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【語順】昔 [★ 2なら] [1ともかく]、[4今は] [3そんな] 習慣はありません。<br/>【★ 正解】2「なら」<br/>【英訳】Order: 昔ならともかく今はそんな - In the past maybe, but nowadays no such..."
             },
             {
-              "id": 15053,
+              "id": 19,
               "questionText": "",
+              "passageText": "**美術館めぐりのすすめ**\n\nこの秋、A市の中心エリアでは、美術館めぐりのイベントを行っています。芸術に力を入れているA市には、3つのとても有名な美術館があります。このイベントは、県立美術館、市立美術館、山田太郎記念美術館の3つをまわり、それぞれの美術館に入場するときに、用紙にスタンプをもらうというものです。期間中はどの美術館でも入場料は、［　19　］500円です。3つの美術館は、駅から電車やバスを使えば10分以内でいける便利な場所にあります。2館以上スタンプを［　20-a　］、絵はがきやポスター、シールなどの景品の中から好きなものを1つ［　20-b　］。\n\nイベントの期間中、すべての美術館で、特別展覧会も開かれています。［　21　］展覧会もおすすめです。特に、山田太郎美術館では、いつもは公開されていない、日本の美術の歴史の中でも「名作」とされている山田太郎氏の絵画3枚を公開します。その他の美術館でも、［　22　］知っている有名な絵画がいくつも展示される予定です。\n\n美術や絵画にあまり関心のない方も、このような機会に美術館めぐりをしながら「芸術の秋」をゆっくりと味わってみては［　23　］。",
               "options": [
                 "それぞれ",
                 "だいたい",
                 "ちょうど",
                 "たった"
               ],
-              "correctIndex": 0,
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "correctIndex": 1,
               "sectionType": "grammar-reading",
-              "passageText": "**美術館めぐりのすすめ**\r\n\r\nこの秋、A市の中心エリアでは、美術館めぐりのイベントを行っています。芸術に力を入れているA市には、3つのとても有名な美術館があります。このイベントは、県立美術館、市立美術館、山田太郎記念美術館の3つをまわり、それぞれの美術館に入場するときに、用紙にスタンプをもらうというものです。期間中はどの美術館でも入場料は、［　19　］500円です。3つの美術館は、駅から電車やバスを使えば10分以内でいける便利な場所にあります。2館以上スタンプを［　20-a　］、絵はがきやポスター、シールなどの景品の中から好きなものを1つ［　20-b　］。\r\n\r\nイベントの期間中、すべての美術館で、特別展覧会も開かれています。［　21　］展覧会もおすすめです。特に、山田太郎美術館では、いつもは公開されていない、日本の美術の歴史の中でも「名作」とされている山田太郎氏の絵画3枚を公開します。その他の美術館でも、［　22　］知っている有名な絵画がいくつも展示される予定です。\r\n\r\n美術や絵画にあまり関心のない方も、このような機会に美術館めぐりをしながら「芸術の秋」をゆっくりと味わってみては［　23　］。",
-              "imageSrc": "/images/practice_sets/set_15_passage.jpg",
-              "explanation": "【解説】3つの美術館それぞれの入場料を述べる「入場料は［それぞれ］500円です」。\n【英訳】それぞれ - each 500 yen."
+              "instruction": "問題3 つぎの文章は、市役所で配られているパンフレットにのったものです。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【解説】入場料について「期間中はどの美術館でも入場料は、［だいたい］500円です」と大まかな金額を示しています。<br/>【英訳】だいたい - approximately / generally 500 yen."
             },
             {
-              "id": 15054,
+              "id": 20,
               "questionText": "",
+              "passageText": "**美術館めぐりのすすめ**\n\nこの秋、A市の中心エリアでは、美術館めぐりのイベントを行っています。芸術に力を入れているA市には、3つのとても有名な美術館があります。このイベントは、県立美術館、市立美術館、山田太郎記念美術館の3つをまわり、それぞれの美術館に入場するときに、用紙にスタンプをもらうというものです。期間中はどの美術館でも入場料は、［　19　］500円です。3つの美術館は、駅から電車やバスを使えば10分以内でいける便利な場所にあります。2館以上スタンプを［　20-a　］、絵はがきやポスター、シールなどの景品の中から好きなものを1つ［　20-b　］。\n\nイベントの期間中、すべての美術館で、特別展覧会も開かれています。［　21　］展覧会もおすすめです。特に、山田太郎美術館では、いつもは公開されていない、日本の美術の歴史の中でも「名作」とされている山田太郎氏の絵画3枚を公開します。その他の美術館でも、［　22　］知っている有名な絵画がいくつも展示される予定です。\n\n美術や絵画にあまり関心のない方も、このような機会に美術館めぐりをしながら「芸術の秋」をゆっくりと味わってみては［　23　］。",
               "options": [
                 "a. 集めると　/　b. もらえるようです",
                 "a. 集めると　/　b. もらえます",
                 "a. 集めるとき　/　b. もらいます",
                 "a. 集めるとき　/　b. もらうことができます"
               ],
-              "correctIndex": 1,
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "correctIndex": 0,
               "sectionType": "grammar-reading",
-              "passageText": "**美術館めぐりのすすめ**\r\n\r\nこの秋、A市の中心エリアでは、美術館めぐりのイベントを行っています。芸術に力を入れているA市には、3つのとても有名な美術館があります。このイベントは、県立美術館、市立美術館、山田太郎記念美術館の3つをまわり、それぞれの美術館に入場するときに、用紙にスタンプをもらうというものです。期間中はどの美術館でも入場料は、［　19　］500円です。3つの美術館は、駅から電車やバスを使えば10分以内でいける便利な場所にあります。2館以上スタンプを［　20-a　］、絵はがきやポスター、シールなどの景品の中から好きなものを1つ［　20-b　］。\r\n\r\nイベントの期間中、すべての美術館で、特別展覧会も開かれています。［　21　］展覧会もおすすめです。特に、山田太郎美術館では、いつもは公開されていない、日本の美術の歴史の中でも「名作」とされている山田太郎氏の絵画3枚を公開します。その他の美術館でも、［　22　］知っている有名な絵画がいくつも展示される予定です。\r\n\r\n美術や絵画にあまり関心のない方も、このような機会に美術館めぐりをしながら「芸術の秋」をゆっくりと味わってみては［　23　］。",
-              "imageSrc": "/images/practice_sets/set_15_passage.jpg",
-              "explanation": "【解説】条件と特典の獲得「2館以上スタンプを［集めると］、景品が［もらえます］」。\n【英訳】集めると / もらえます - if you collect, you will receive."
+              "instruction": "問題3 つぎの文章は、市役所で配られているパンフレットにのったものです。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【解説】スタンプを2館以上集めた場合の景品獲得について「集めると、...もらえるようです」と案内しています。<br/>【英訳】集めると...もらえるようです - If you collect them, it seems you can receive..."
             },
             {
-              "id": 15055,
+              "id": 21,
               "questionText": "",
+              "passageText": "**美術館めぐりのすすめ**\n\nこの秋、A市の中心エリアでは、美術館めぐりのイベントを行っています。芸術に力を入れているA市には、3つのとても有名な美術館があります。このイベントは、県立美術館、市立美術館、山田太郎記念美術館の3つをまわり、それぞれの美術館に入場するときに、用紙にスタンプをもらうというものです。期間中はどの美術館でも入場料は、［　19　］500円です。3つの美術館は、駅から電車やバスを使えば10分以内でいける便利な場所にあります。2館以上スタンプを［　20-a　］、絵はがきやポスター、シールなどの景品の中から好きなものを1つ［　20-b　］。\n\nイベントの期間中、すべての美術館で、特別展覧会も開かれています。［　21　］展覧会もおすすめです。特に、山田太郎美術館では、いつもは公開されていない、日本の美術の歴史の中でも「名作」とされている山田太郎氏の絵画3枚を公開します。その他の美術館でも、［　22　］知っている有名な絵画がいくつも展示される予定です。\n\n美術や絵画にあまり関心のない方も、このような機会に美術館めぐりをしながら「芸術の秋」をゆっくりと味わってみては［　23　］。",
               "options": [
                 "あの",
                 "ああ",
@@ -12476,15 +12349,14 @@ export const practiceSetsBook = {
                 "こう"
               ],
               "correctIndex": 2,
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "passageText": "**美術館めぐりのすすめ**\r\n\r\nこの秋、A市の中心エリアでは、美術館めぐりのイベントを行っています。芸術に力を入れているA市には、3つのとても有名な美術館があります。このイベントは、県立美術館、市立美術館、山田太郎記念美術館の3つをまわり、それぞれの美術館に入場するときに、用紙にスタンプをもらうというものです。期間中はどの美術館でも入場料は、［　19　］500円です。3つの美術館は、駅から電車やバスを使えば10分以内でいける便利な場所にあります。2館以上スタンプを［　20-a　］、絵はがきやポスター、シールなどの景品の中から好きなものを1つ［　20-b　］。\r\n\r\nイベントの期間中、すべての美術館で、特別展覧会も開かれています。［　21　］展覧会もおすすめです。特に、山田太郎美術館では、いつもは公開されていない、日本の美術の歴史の中でも「名作」とされている山田太郎氏の絵画3枚を公開します。その他の美術館でも、［　22　］知っている有名な絵画がいくつも展示される予定です。\r\n\r\n美術や絵画にあまり関心のない方も、このような機会に美術館めぐりをしながら「芸術の秋」をゆっくりと味わってみては［　23　］。",
-              "imageSrc": "/images/practice_sets/set_15_passage.jpg",
-              "explanation": "【解説】直前に述べた特別展覧会を指す指示詞「［この］展覧会もおすすめです」。\n【英訳】この - this exhibition."
+              "instruction": "問題3 つぎの文章は、市役所で配られているパンフレットにのったものです。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【解説】直前で述べた特別展覧会を指して「［この］展覧会もおすすめです」と指示語「この」で受けています。<br/>【英訳】この - this (referring to the mentioned special exhibitions)."
             },
             {
-              "id": 15056,
+              "id": 22,
               "questionText": "",
+              "passageText": "**美術館めぐりのすすめ**\n\nこの秋、A市の中心エリアでは、美術館めぐりのイベントを行っています。芸術に力を入れているA市には、3つのとても有名な美術館があります。このイベントは、県立美術館、市立美術館、山田太郎記念美術館の3つをまわり、それぞれの美術館に入場するときに、用紙にスタンプをもらうというものです。期間中はどの美術館でも入場料は、［　19　］500円です。3つの美術館は、駅から電車やバスを使えば10分以内でいける便利な場所にあります。2館以上スタンプを［　20-a　］、絵はがきやポスター、シールなどの景品の中から好きなものを1つ［　20-b　］。\n\nイベントの期間中、すべての美術館で、特別展覧会も開かれています。［　21　］展覧会もおすすめです。特に、山田太郎美術館では、いつもは公開されていない、日本の美術の歴史の中でも「名作」とされている山田太郎氏の絵画3枚を公開します。その他の美術館でも、［　22　］知っている有名な絵画がいくつも展示される予定です。\n\n美術や絵画にあまり関心のない方も、このような機会に美術館めぐりをしながら「芸術の秋」をゆっくりと味わってみては［　23　］。",
               "options": [
                 "だれかが",
                 "だれかは",
@@ -12492,15 +12364,14 @@ export const practiceSetsBook = {
                 "だれでも"
               ],
               "correctIndex": 3,
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "passageText": "**美術館めぐりのすすめ**\r\n\r\nこの秋、A市の中心エリアでは、美術館めぐりのイベントを行っています。芸術に力を入れているA市には、3つのとても有名な美術館があります。このイベントは、県立美術館、市立美術館、山田太郎記念美術館の3つをまわり、それぞれの美術館に入場するときに、用紙にスタンプをもらうというものです。期間中はどの美術館でも入場料は、［　19　］500円です。3つの美術館は、駅から電車やバスを使えば10分以内でいける便利な場所にあります。2館以上スタンプを［　20-a　］、絵はがきやポスター、シールなどの景品の中から好きなものを1つ［　20-b　］。\r\n\r\nイベントの期間中、すべての美術館で、特別展覧会も開かれています。［　21　］展覧会もおすすめです。特に、山田太郎美術館では、いつもは公開されていない、日本の美術の歴史の中でも「名作」とされている山田太郎氏の絵画3枚を公開します。その他の美術館でも、［　22　］知っている有名な絵画がいくつも展示される予定です。\r\n\r\n美術や絵画にあまり関心のない方も、このような機会に美術館めぐりをしながら「芸術の秋」をゆっくりと味わってみては［　23　］。",
-              "imageSrc": "/images/practice_sets/set_15_passage.jpg",
-              "explanation": "【解説】一般の誰もが広く知っている名作「［だれでも］知っている有名な絵画」。\n【英訳】だれでも - paintings that anyone knows."
+              "instruction": "問題3 つぎの文章は、市役所で配られているパンフレットにのったものです。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【解説】「［だれでも］知っている有名な絵画」で「誰もが知っている」という広範な知名度を表します。<br/>【英訳】だれでも - anyone / everyone."
             },
             {
-              "id": 15057,
+              "id": 23,
               "questionText": "",
+              "passageText": "**美術館めぐりのすすめ**\n\nこの秋、A市の中心エリアでは、美術館めぐりのイベントを行っています。芸術に力を入れているA市には、3つのとても有名な美術館があります。このイベントは、県立美術館、市立美術館、山田太郎記念美術館の3つをまわり、それぞれの美術館に入場するときに、用紙にスタンプをもらうというものです。期間中はどの美術館でも入場料は、［　19　］500円です。3つの美術館は、駅から電車やバスを使えば10分以内でいける便利な場所にあります。2館以上スタンプを［　20-a　］、絵はがきやポスター、シールなどの景品の中から好きなものを1つ［　20-b　］。\n\nイベントの期間中、すべての美術館で、特別展覧会も開かれています。［　21　］展覧会もおすすめです。特に、山田太郎美術館では、いつもは公開されていない、日本の美術の歴史の中でも「名作」とされている山田太郎氏の絵画3枚を公開します。その他の美術館でも、［　22　］知っている有名な絵画がいくつも展示される予定です。\n\n美術や絵画にあまり関心のない方も、このような機会に美術館めぐりをしながら「芸術の秋」をゆっくりと味わってみては［　23　］。",
               "options": [
                 "よかったですしょうか",
                 "よろしいでしょうか",
@@ -12508,11 +12379,9 @@ export const practiceSetsBook = {
                 "いかがでしょうか"
               ],
               "correctIndex": 3,
-              "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "passageText": "**美術館めぐりのすすめ**\r\n\r\nこの秋、A市の中心エリアでは、美術館めぐりのイベントを行っています。芸術に力を入れているA市には、3つのとても有名な美術館があります。このイベントは、県立美術館、市立美術館、山田太郎記念美術館の3つをまわり、それぞれの美術館に入場するときに、用紙にスタンプをもらうというものです。期間中はどの美術館でも入場料は、［　19　］500円です。3つの美術館は、駅から電車やバスを使えば10分以内でいける便利な場所にあります。2館以上スタンプを［　20-a　］、絵はがきやポスター、シールなどの景品の中から好きなものを1つ［　20-b　］。\r\n\r\nイベントの期間中、すべての美術館で、特別展覧会も開かれています。［　21　］展覧会もおすすめです。特に、山田太郎美術館では、いつもは公開されていない、日本の美術の歴史の中でも「名作」とされている山田太郎氏の絵画3枚を公開します。その他の美術館でも、［　22　］知っている有名な絵画がいくつも展示される予定です。\r\n\r\n美術や絵画にあまり関心のない方も、このような機会に美術館めぐりをしながら「芸術の秋」をゆっくりと味わってみては［　23　］。",
-              "imageSrc": "/images/practice_sets/set_15_passage.jpg",
-              "explanation": "【解説】丁寧な勧誘・提案の表現「味わってみては［いかがでしょうか］」。\n【英訳】いかがでしょうか - how about tasting / experiencing?"
+              "instruction": "問題3 つぎの文章は、市役所で配られているパンフレットにのったものです。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
+              "explanation": "【解説】読者に勧めを促す表現として「〜味わってみては［いかがでしょうか］」と丁寧に提案しています。<br/>【英訳】いかがでしょうか - How about / Would you like to...?"
             }
           ]
         }

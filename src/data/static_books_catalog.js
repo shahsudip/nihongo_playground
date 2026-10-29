@@ -1,6 +1,17 @@
 // src/data/static_books_catalog.js
 
 export const STATIC_BOOKS = [
+  ...(import.meta.env?.DEV ? [{
+    id: 'jlpt-n2-practice-sets',
+    title: 'Chokuzen Taisaku N2 (15 Sets)',
+    description: '15 mock tests with Japanese kanji, vocabulary, and grammar questions. Verified text unlocks each test.',
+    level: 'N2',
+    category: 'Chokuzen Taisaku',
+    totalChapters: 15,
+    totalQuestions: 810,
+    coverUrl: '/books/chokuzen_n2/cover.jpeg',
+    customRoute: '/n2-practice-sets',
+  }] : []),
   {
     id: 'pass-n3-within-20-days',
     title: 'Pass N3 Within 20 Days',

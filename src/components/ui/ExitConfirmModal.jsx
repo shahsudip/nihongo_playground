@@ -1,18 +1,29 @@
 import React from 'react';
+import { useTheme } from '../../context/ThemeContext';
 
 export const ExitConfirmModal = ({
   isOpen,
   onClose,
+  onCancel,
   onConfirm,
   answeredCount = 0,
   totalQuestions = 0,
   title = "Exit Quiz / Drill?",
-  theme = "dark"
+  theme: themeProp
 }) => {
+  const themeContext = useTheme();
+  const theme = themeProp || themeContext?.theme || 'dark';
+  const handleClose = onClose || onCancel;
+
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-fade-in">
+    <div 
+      className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-fade-in"
+      onClick={(e) => {
+        if (e.target === e.currentTarget && handleClose) handleClose();
+      }}
+    >
       <div 
         className="w-full max-w-md rounded-2xl p-6 shadow-2xl border transition-all animate-scale-up"
         style={{
@@ -42,7 +53,7 @@ export const ExitConfirmModal = ({
         <div className="flex items-center justify-end gap-3">
           <button
             type="button"
-            onClick={onClose}
+            onClick={handleClose}
             className="px-4 py-2.5 rounded-xl font-semibold text-sm transition-all border cursor-pointer hover:opacity-90"
             style={{
               backgroundColor: theme === 'light' || theme === 'sepia' ? '#ffffff' : '#1f2937',

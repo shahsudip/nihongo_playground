@@ -1,0 +1,1654 @@
+diff --git a/.gitignore b/.gitignore
+index 45ab358c..1de6536d 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -48,6 +48,8 @@ scripts/*
+ !scripts/pass_n3_within_20_days/**
+ !scripts/chokuzen_n3_set5/
+ !scripts/chokuzen_n3_set5/**
++!scripts/chokuzen_n2/
++!scripts/chokuzen_n2/**
+ !scripts/firebase_backup/
+ scripts/firebase_backup/*
+ !scripts/firebase_backup/export_books.cjs
+diff --git a/src/App.jsx b/src/App.jsx
+index aa8b5e4b..a2fa3524 100644
+--- a/src/App.jsx
++++ b/src/App.jsx
+@@ -63,6 +63,7 @@ const PracticeSetQuizPage = lazy(() => import('./components/PracticeSetQuizPage.
+ const N4PracticeSetsListPage = lazy(() => import('./components/N4PracticeSetsListPage.jsx'));
+ const N4PracticeSetDetailsPage = lazy(() => import('./components/N4PracticeSetDetailsPage.jsx'));
+ const N4PracticeSetQuizPage = lazy(() => import('./components/N4PracticeSetQuizPage.jsx'));
++const ChokuzenN2Book = lazy(() => import('./components/ChokuzenN2Book.jsx'));
+ 
+ const KanjiListPage = lazy(() => import('./components/KanjiListPage.jsx'));
+ 
+@@ -257,6 +258,10 @@ export default function App() {
+           />
+ 
+           {/* --- PRACTICE SETS ROUTES --- */}
++          <Route path="/n2-practice-sets" element={<ChokuzenN2Book />} />
++          <Route path="/n2-practice-sets/:setId" element={<ChokuzenN2Book />} />
++          <Route path="/n2-practice-sets/:setId/:sectionId" element={<ChokuzenN2Book />} />
++          <Route path="/books/jlpt-n2-practice-sets" element={<Navigate to="/n2-practice-sets" replace />} />
+           <Route
+             path="/practice-sets"
+             element={<ProtectedRoute><PracticeSetsListPage /></ProtectedRoute>}
+@@ -308,4 +313,4 @@ export default function App() {
+     </Router>
+     </ThemeProvider>
+   );
+-}
+\ No newline at end of file
++}
+diff --git a/src/components/BookListPage.jsx b/src/components/BookListPage.jsx
+index 83807d88..ef01eeb7 100644
+--- a/src/components/BookListPage.jsx
++++ b/src/components/BookListPage.jsx
+@@ -12,6 +12,7 @@ import {
+   selectPreferredAttempt,
+ } from '../utils/bookProgress.js';
+ import { STATIC_BOOKS } from '../data/static_books_catalog.js';
++import { readAttempts as readN2Attempts, storageKeyFor as n2StorageKeyFor } from '../utils/chokuzenN2Data.js';
+ 
+ import coverN1 from '../assets/shin_cover_n1.jpg';
+ import coverN2 from '../assets/shin_cover_n2.jpg';
+@@ -26,11 +27,21 @@ import tangoN2Cover from '../assets/tango_n2_cover.jpg';
+ import tangoN3Cover from '../assets/tango_n3_cover.jpg';
+ 
+ const N3_PRACTICE_BOOK_ID = 'jlpt-n3-practice-sets';
++const N2_PRACTICE_BOOK_ID = 'jlpt-n2-practice-sets';
+ const NIHONGO_NO_MORI_BOOK_ID = 'nihongo-no-mori-n3';
+ const NIHONGO_NO_MORI_TOTAL_QUESTIONS = 500;
+ const NIHONGO_NO_MORI_SECTION_COUNT = 19;
+ 
+ const QUESTION_PROGRESS_BOOKS = {
++  [N2_PRACTICE_BOOK_ID]: {
++    unitCount: 15,
++    totalQuestions: 810,
++    getUnitId: unitNumber => `set-${unitNumber}`,
++    getSectionRecords: (history, unitKey) => [
++      history[`${unitKey}-vocabulary-kanji`],
++      selectPreferredAttempt(history[`${unitKey}-grammar`], history[`${unitKey}-grammar-reading`]),
++    ],
++  },
+   'first-time-jlpt-n3-350-kanji': {
+     unitCount: 7,
+     totalQuestions: 280,
+@@ -162,6 +173,9 @@ const getNihongoNoMoriProgress = (history) => {
+ 
+ const loadLocalHistory = (currentUser = null) => {
+   const historyMap = {};
++  Object.entries(readN2Attempts(n2StorageKeyFor(currentUser?.uid))).forEach(([quizId, record]) => {
++    addHistoryRecord(historyMap, quizId, record);
++  });
+   try {
+     const storedHistory = JSON.parse(localStorage.getItem('quizHistory') || '[]');
+     const records = Array.isArray(storedHistory) ? storedHistory : Object.values(storedHistory || {});
+@@ -238,6 +252,7 @@ const BookListPage = () => {
+             if (data && (
+               data.type === 'book'
+               || data.bookId === N3_PRACTICE_BOOK_ID
++              || data.bookId === N2_PRACTICE_BOOK_ID
+               || data.quizId?.startsWith(N3_PRACTICE_BOOK_ID)
+             )) {
+               userHistory[data.quizId] = data;
+diff --git a/src/data/static_books_catalog.js b/src/data/static_books_catalog.js
+index 19257e7c..5a385e6d 100644
+--- a/src/data/static_books_catalog.js
++++ b/src/data/static_books_catalog.js
+@@ -1,6 +1,17 @@
+ // src/data/static_books_catalog.js
+ 
+ export const STATIC_BOOKS = [
++  ...(import.meta.env?.DEV ? [{
++    id: 'jlpt-n2-practice-sets',
++    title: 'Chokuzen Taisaku N2 (15 Sets)',
++    description: '15 mock tests with 810 kanji, vocabulary, and grammar questions, plus the complete source book.',
++    level: 'N2',
++    category: 'Chokuzen Taisaku',
++    totalChapters: 15,
++    totalQuestions: 810,
++    coverUrl: '/books/chokuzen_n2/cover.jpeg',
++    customRoute: '/n2-practice-sets',
++  }] : []),
+   {
+     id: 'pass-n3-within-20-days',
+     title: 'Pass N3 Within 20 Days',
+diff --git a/src/components/ChokuzenN2Book.jsx b/src/components/ChokuzenN2Book.jsx
+new file mode 100644
+--- /dev/null
++++ b/src/components/ChokuzenN2Book.jsx
+@@ -0,0 +1,346 @@
++import { createElement, useEffect, useMemo, useRef, useState } from 'react';
++import { Link, useLocation, useParams, useSearchParams } from 'react-router-dom';
++import { useAuth } from '../context/AuthContext.jsx';
++import { summarizeProgress } from '../utils/bookProgress.js';
++import {
++  BOOK_ROUTE, SECTIONS, assetUrl, attemptId, extractedText, isQuestionReady,
++  loadChokuzenN2Book, loadCloudAttempts, makeAttempt, mergeAttempts, readAttempts, saveCloudAttempt,
++  sectionFromRoute, sectionProgress, setProgress, sourcePages, storageKeyFor, validAnswers,
++} from '../utils/chokuzenN2Data.js';
++import '../assets/chokuzen_n2.css';
++
++const STATUS_LABELS = {
++  'not-started': 'Ready to begin',
++  'in-progress': 'In progress',
++  completed: 'Completed',
++  mastered: 'Mastered',
++};
++
++function Icon({ name, ...props }) {
++  const paths = {
++    book: 'M4 4h6a3 3 0 0 1 3 3v14a4 4 0 0 0-4-3H4z M20 4h-4a3 3 0 0 0-3 3v14a4 4 0 0 1 4-3h3z',
++    arrow: 'M5 12h14 M13 6l6 6-6 6',
++    check: 'M5 12l4 4L19 6',
++    grid: 'M4 4h6v6H4z M14 4h6v6h-6z M4 14h6v6H4z M14 14h6v6h-6z',
++  };
++  return <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}><path d={paths[name] || paths.book} /></svg>;
++}
++
++function ProgressBar({ progress, label }) {
++  return (
++    <div className="cn2-meter" role="progressbar" aria-label={label} aria-valuemin={0} aria-valuemax={100} aria-valuenow={progress.completionPercent}>
++      <span style={{ width: `${progress.completionPercent}%` }} />
++    </div>
++  );
++}
++
++function Status({ progress }) {
++  return <span className={`cn2-status cn2-status--${progress.status}`}>{STATUS_LABELS[progress.status]}</span>;
++}
++
++function TextBlock({ text }) {
++  return <div className="cn2-extracted" lang="ja">{extractedText(text).split(/\n\s*\n/).filter(Boolean).map((paragraph, index) => <p key={index}>{paragraph}</p>)}</div>;
++}
++
++function Explanation({ text, inline = false }) {
++  const formatted = useMemo(() => {
++    const allowed = new Set(['b', 'strong', 'u', 'br', 'ruby', 'rt', 'rp', 'em', 'p']);
++    const blocked = new Set(['script', 'style', 'iframe', 'object', 'embed', 'svg', 'math', 'template']);
++    const document = new DOMParser().parseFromString(extractedText(text), 'text/html');
++    const renderNode = (node, index) => {
++      if (node.nodeType === 3) return node.textContent;
++      if (node.nodeType !== 1) return null;
++      const tag = node.tagName.toLowerCase();
++      if (blocked.has(tag)) return null;
++      const children = Array.from(node.childNodes, renderNode);
++      if (!allowed.has(tag)) return children;
++      return tag === 'br' ? createElement(tag, { key: index }) : createElement(tag, { key: index }, ...children);
++    };
++    return Array.from(document.body.childNodes, renderNode);
++  }, [text]);
++  return createElement(inline ? 'span' : 'div', { className: 'cn2-explanation', lang: 'ja' }, formatted);
++}
++
++function QuestionScan({ path, label, verified }) {
++  const content = <figure className="cn2-scan-frame cn2-question-scan" tabIndex={0} aria-label={`${label}; scroll horizontally to read`}><figcaption>{label}<a className="cn2-text-link" href={assetUrl(path)} target="_blank" rel="noreferrer">Open full-resolution scan</a></figcaption><Scan key={path} path={path} alt={label} eager={!verified} /></figure>;
++  return verified ? <details className="cn2-ocr"><summary>Compare with the original print</summary>{content}</details> : content;
++}
++
++function OcrDetails({ text, label = 'Searchable extracted text' }) {
++  if (!extractedText(text).trim()) return null;
++  return (
++    <details className="cn2-ocr">
++      <summary>{label} <span>OCR / not authoritative</span></summary>
++      <p className="cn2-muted">OCR can misread characters and furigana. Always refer to the printed scan.</p>
++      <TextBlock text={text} />
++    </details>
++  );
++}
++
++function Scan({ path, alt, width, height, eager = false }) {
++  const [failed, setFailed] = useState(false);
++  const url = assetUrl(path);
++  if (!url || failed) return <p className="cn2-image-error" role="status">Scan unavailable. {url && <a href={url} target="_blank" rel="noreferrer">Try opening the original image</a>}</p>;
++  return <img className="cn2-scan" src={url} alt={alt} width={width} height={height} loading={eager ? 'eager' : 'lazy'} decoding="async" onError={() => setFailed(true)} />;
++}
++
++function Overview({ progress, groups }) {
++  return (
++    <section className="cn2-overview" aria-label="Practice progress">
++      <div className="cn2-overview-main">
++        <div className="cn2-row"><strong>Overall question progress</strong><strong className="cn2-accent">{progress.completionPercent}%</strong></div>
++        <ProgressBar progress={progress} label="Overall completion" />
++        <p className="cn2-muted">{progress.answered} / {progress.total} questions answered</p>
++      </div>
++      <div className="cn2-stat"><strong>{groups.filter(group => group.isCompleted).length} / {groups.length}</strong><span>Sections complete</span></div>
++      <div className="cn2-stat"><strong>{groups.filter(group => group.isMastered).length}</strong><span>Sections mastered</span></div>
++      <div className="cn2-stat"><strong>{progress.answered ? `${progress.accuracyPercent}%` : '--'}</strong><span>Practice accuracy</span></div>
++    </section>
++  );
++}
++
++function SectionRow({ section, progress }) {
++  return (
++    <div className={`cn2-section-row cn2-tone--${section.tone}`}>
++      <div className="cn2-row"><span>{section.title}</span><strong>{progress.completionPercent}%</strong></div>
++      <ProgressBar progress={progress} label={`${section.title} completion`} />
++      <small>{progress.answered} / {progress.total} answered{progress.answered > 0 && ` - ${progress.score} correct`}</small>
++    </div>
++  );
++}
++
++function SetList({ book, attempts }) {
++  return (
++    <>
++      <div className="cn2-section-heading"><div><p className="cn2-eyebrow">YOUR PRACTICE LIBRARY</p><h2>One set closer to confidence.</h2></div><span className="cn2-pill">{book.sets.length} practice sets</span></div>
++      <div className="cn2-set-grid">
++        {book.sets.map((set, index) => {
++          const progress = setProgress(set, attempts);
++          return (
++            <Link key={set.id} className={`cn2-set-card cn2-card--${progress.status}`} to={`${BOOK_ROUTE}/${set.id}`}>
++              <div className="cn2-row"><Status progress={progress} /><span className="cn2-set-number">{String(index + 1).padStart(2, '0')}</span></div>
++              <h3>{set.title}</h3>
++              <div className="cn2-section-rows">{SECTIONS.map(section => <SectionRow key={section.id} section={section} progress={sectionProgress(set.sections?.[section.id]?.questions || [], attempts[attemptId(set.id, section.id)])} />)}</div>
++              <div className="cn2-card-action"><span>{progress.isCompleted ? 'Review set' : progress.answered ? 'Continue practice' : 'Explore set'}</span><Icon name="arrow" /></div>
++            </Link>
++          );
++        })}
++      </div>
++      {book.sets.length === 0 && <div className="cn2-empty">Practice sets are being prepared. The original source reader is available above.</div>}
++    </>
++  );
++}
++
++function SetDetails({ set, attempts }) {
++  return (
++    <>
++      <div className="cn2-section-heading"><div><p className="cn2-eyebrow">CHOOSE YOUR FOCUS</p><h2>{set.title}</h2></div><Status progress={setProgress(set, attempts)} /></div>
++      <div className="cn2-section-grid">
++        {SECTIONS.map(section => {
++          const questions = set.sections?.[section.id]?.questions || [];
++          const progress = sectionProgress(questions, attempts[attemptId(set.id, section.id)]);
++          const readyCount = questions.filter(isQuestionReady).length;
++          return (
++            <Link key={section.id} to={`${BOOK_ROUTE}/${set.id}/${section.route}`} className={`cn2-section-card cn2-tone--${section.tone}`}>
++              <div className="cn2-row"><span className="cn2-section-icon"><Icon name={section.tone === 'blue' ? 'grid' : 'book'} /></span><Status progress={progress} /></div>
++              <p className="cn2-eyebrow">{section.label}</p><h3>{section.title}</h3>
++              <p className="cn2-muted">Original scans, four choices, focused review.</p>
++              <SectionRow section={section} progress={progress} />
++              {readyCount < questions.length && <p className="cn2-muted">{readyCount} / {questions.length} answer keys ready. Unverified questions are view-only.</p>}
++              <div className="cn2-card-action"><span>{progress.isCompleted ? 'Review answers' : progress.answered ? 'Resume section' : 'Open section'}</span><Icon name="arrow" /></div>
++            </Link>
++          );
++        })}
++      </div>
++      <aside className="cn2-study-note"><Icon name="book" /><div><strong>A little practice, a clearer understanding.</strong><p>Read the original scan first. Answers reveal explanations only after you choose. Mastery means every question answered with more than 90% correct.</p><p>Scores are raw practice accuracy, not an official JLPT score or pass prediction.</p></div></aside>
++    </>
++  );
++}
++
++function Reader({ book }) {
++  const [params, setParams] = useSearchParams();
++  const [query, setQuery] = useState('');
++  const [zoom, setZoom] = useState(100);
++  const pages = sourcePages(book);
++  const pageNumber = Math.max(1, Math.min(pages.length || 1, Number(params.get('page')) || 1));
++  const currentPage = pages[pageNumber - 1];
++  const pageText = extractedText(currentPage?.text || currentPage?.ocrText || currentPage?.ocr);
++  const normalizedQuery = query.trim().toLocaleLowerCase();
++  const matches = normalizedQuery ? pages.filter(page => extractedText(page.text || page.ocrText || page.ocr).toLocaleLowerCase().includes(normalizedQuery)) : [];
++  const hasOcr = pages.some(page => extractedText(page.text || page.ocrText || page.ocr).trim());
++  const goTo = target => {
++    const next = new URLSearchParams(params);
++    next.set('page', String(Math.max(1, Math.min(pages.length || 1, target))));
++    setParams(next);
++  };
++  const close = new URLSearchParams(params);
++  close.delete('reader');
++  close.delete('page');
++  return (
++    <section className="cn2-reader" aria-label="Original book source reader">
++      <div className="cn2-section-heading"><div><p className="cn2-eyebrow">THE ORIGINAL, IN FULL</p><h2>Source reader</h2><p className="cn2-muted">{pages.length} source pages. Page numbers below refer to the PDF, not printed numbering.</p></div><Link className="cn2-button cn2-button--quiet" to={{ search: close.toString() }}>Return to practice</Link></div>
++      <div className="cn2-reader-tools">
++        <form className="cn2-inline-form" key={pageNumber} onSubmit={event => { event.preventDefault(); const target = Number(new FormData(event.currentTarget).get('page')); if (Number.isInteger(target)) goTo(target); }}>
++          <label htmlFor="cn2-page">Source page</label><input id="cn2-page" name="page" type="number" min="1" max={pages.length || 1} defaultValue={pageNumber} required /><span>/ {pages.length}</span><button className="cn2-button cn2-button--quiet" type="submit">Go</button>
++        </form>
++        <div className="cn2-toolbar"><button className="cn2-button cn2-button--quiet" onClick={() => setZoom(value => Math.max(100, value - 25))} disabled={zoom <= 100} aria-label="Zoom out">-</button><output aria-live="polite">{zoom}%</output><button className="cn2-button cn2-button--quiet" onClick={() => setZoom(value => Math.min(250, value + 25))} disabled={zoom >= 250} aria-label="Zoom in">+</button></div>
++        {currentPage?.image && <a className="cn2-text-link" href={assetUrl(currentPage.image)} target="_blank" rel="noreferrer">Open full-resolution scan</a>}
++      </div>
++      <label className="cn2-search-label" htmlFor="cn2-source-search">Search source OCR <span className="cn2-muted">(imperfect extracted text)</span></label>
++      <input className="cn2-search" id="cn2-source-search" type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder={hasOcr ? 'Find a word or phrase in the book...' : 'Search becomes available when OCR is published'} disabled={!hasOcr} />
++      {normalizedQuery && <div className="cn2-search-results"><p role="status">{matches.length} matching pages</p><div>{matches.map(page => <button key={page.page} className="cn2-button cn2-button--quiet" aria-current={page.page === pageNumber ? 'page' : undefined} onClick={() => goTo(page.page)}>Page {page.page}</button>)}</div></div>}
++      <div className="cn2-reader-canvas" tabIndex={0} aria-label={`Source page ${pageNumber}; scroll horizontally when zoomed`}><div style={{ width: `${zoom}%` }}>{currentPage?.image ? <Scan key={currentPage.image} path={currentPage.image} alt={`Original book scan, source PDF page ${pageNumber}`} width={currentPage.width} height={currentPage.height} eager /> : <div className="cn2-empty">This source page is not available yet.</div>}</div></div>
++      <div className="cn2-reader-navigation"><button className="cn2-button cn2-button--quiet" disabled={pageNumber <= 1} onClick={() => goTo(pageNumber - 1)}>Previous page</button><span aria-live="polite">Source page {pageNumber} / {pages.length}</span><button className="cn2-button" disabled={pageNumber >= pages.length} onClick={() => goTo(pageNumber + 1)}>Next page <Icon name="arrow" /></button></div>
++      <OcrDetails key={pageNumber} text={pageText} label={`Extracted text for source page ${pageNumber}`} />
++    </section>
++  );
++}
++
++function Quiz({ set, section, record, onSave }) {
++  const questions = set.sections?.[section.id]?.questions || [];
++  const answers = validAnswers(questions, record?.answers);
++  const savedIdIndex = questions.findIndex(question => question.id === record?.currentQuestionId);
++  const currentIndex = savedIdIndex >= 0 ? savedIdIndex : Math.max(0, Math.min(questions.length - 1, Number(record?.currentIndex) || 0));
++  const question = questions[currentIndex];
++  const progress = sectionProgress(questions, record);
++  const selected = question ? answers[question.id] : undefined;
++  const isAnswered = Number.isInteger(selected);
++  const ready = isQuestionReady(question);
++  const textVerified = question?.verification?.ocrTextVerified === true;
++  const passageVerified = question?.verification?.passageTextVerified === true;
++  const heading = useRef(null);
++  const save = changes => onSave(makeAttempt(set, section, record, changes));
++  const goTo = index => {
++    save({ currentIndex: index });
++    heading.current?.focus({ preventScroll: true });
++    heading.current?.scrollIntoView({ behavior: 'auto', block: 'start' });
++  };
++  const reset = () => {
++    if (window.confirm('Reset this section? All saved answers and practice progress for this section will be cleared on this device.')) save({ answers: {}, currentIndex: 0 });
++  };
++  if (!question) return <div className="cn2-empty"><h2>This section is being prepared.</h2><Link className="cn2-text-link" to={`${BOOK_ROUTE}/${set.id}`}>Return to the set</Link></div>;
++  return (
++    <>
++      <div className="cn2-section-heading"><div><p className="cn2-eyebrow">{set.title}</p><h2>{section.title}</h2></div><button className="cn2-button cn2-button--quiet" onClick={reset}>Reset section</button></div>
++      <div className="cn2-quiz-layout">
++        <div className="cn2-question-column">
++          <article className="cn2-question-card" aria-labelledby="cn2-question-heading">
++            <div className="cn2-row"><h3 id="cn2-question-heading" ref={heading} tabIndex={-1}>Question {question.number ?? currentIndex + 1}</h3><span className="cn2-muted">{currentIndex + 1} / {questions.length}</span></div>
++            <div className="cn2-source-line"><span className="cn2-pill">{textVerified ? 'Japanese text' : 'Original printed scan'}</span><Link className="cn2-text-link" to={`?reader=1&page=${question.sourcePage || 1}`}>Source PDF p. {question.sourcePage || '--'}{question.printedPage ? ` / printed p. ${question.printedPage}` : ''}</Link></div>
++            {textVerified && <><div className="cn2-instruction"><Explanation text={question.instruction} /></div>{passageVerified && <div className="cn2-passage"><Explanation text={question.passage} /></div>}{question.questionText && <div className="cn2-stem"><Explanation text={question.questionText} /></div>}</>}
++            {!textVerified && <p className="cn2-muted">Underlining, furigana and the complete printed choices are preserved below.</p>}
++            {!textVerified && <p className="cn2-scan-hint">Swipe to read the full question, or open the full-resolution scan.</p>}
++            {question.passageImage && <QuestionScan path={question.passageImage} label="Original shared passage" verified={passageVerified} />}
++            <QuestionScan path={question.questionImage} label={`Original printed question ${question.number}`} verified={textVerified} />
++            {!textVerified && <OcrDetails key={question.id} text={[extractedText(question.instruction), extractedText(question.passage), extractedText(question.questionText)].filter(Boolean).join('\n\n')} />}
++            <fieldset className="cn2-choices" disabled={isAnswered || !ready}>
++              <legend>{textVerified ? 'Choose an answer' : 'Choose the printed option number'}</legend>
++              {!textVerified && <p className="cn2-muted">Compare with the full question scan. OCR readings and cropped choices can be imperfect.</p>}
++              {[0, 1, 2, 3].map(optionIndex => {
++                const isCorrect = isAnswered && optionIndex === question.correctIndex;
++                const isSelected = selected === optionIndex;
++                const optionImage = question.optionImages?.[optionIndex];
++                return (
++                  <div key={optionIndex} className="cn2-choice-item">
++                  <button type="button" className={`cn2-choice${isCorrect ? ' cn2-choice--correct' : ''}${isSelected && !isCorrect ? ' cn2-choice--incorrect' : ''}`} aria-label={`Choose printed option ${optionIndex + 1}`} aria-pressed={isSelected} onClick={() => { if (!isAnswered && ready) save({ answers: { ...answers, [question.id]: optionIndex }, currentIndex }); }}>
++                    <span className="cn2-choice-number">{optionIndex + 1}</span>
++                    <span className="cn2-choice-content">{textVerified ? <Explanation inline text={question.options[optionIndex]} /> : optionImage ? <Scan key={optionImage} path={optionImage} alt={`Printed option ${optionIndex + 1}; verify against the complete question scan`} eager /> : <><span>Printed option {optionIndex + 1}</span>{question.options?.[optionIndex] && <span className="cn2-choice-ocr" lang="ja">Extracted text (unverified): {question.options[optionIndex]}</span>}</>}</span>
++                    {isAnswered && (isCorrect || isSelected) && <span className="cn2-choice-result">{isCorrect ? 'Correct' : 'Your answer'}</span>}
++                  </button>
++                  {!textVerified && optionImage && <a className="cn2-text-link cn2-choice-reference" href={assetUrl(optionImage)} target="_blank" rel="noreferrer">Open option {optionIndex + 1} at full resolution</a>}
++                  </div>
++                );
++              })}
++            </fieldset>
++            {!ready && <p className="cn2-notice" role="status">This answer key is awaiting verification. You can study the original scan, but answering and scoring are disabled until it is verified.</p>}
++            {isAnswered && <section key={question.id} className={`cn2-feedback${selected === question.correctIndex ? ' cn2-feedback--correct' : ''}`} aria-live="polite"><h4>{selected === question.correctIndex ? 'Correct. Nicely done.' : `Correct answer: printed option ${question.correctIndex + 1}`}</h4><p>Your answer: {selected + 1}. The verified answer key uses printed option numbers.</p>{extractedText(question.explanation).trim() ? <Explanation text={question.explanation} /> : <p>A verified explanation is not available for this question. No explanation has been invented.</p>}{question.explanationImage && <details className="cn2-ocr"><summary>Printed answer reference</summary><figure className="cn2-scan-frame"><Scan key={question.explanationImage} path={question.explanationImage} alt={`Printed answer reference for question ${question.number}; may include other answers`} /></figure></details>}</section>}
++          </article>
++          <div className="cn2-reader-navigation"><button className="cn2-button cn2-button--quiet" disabled={currentIndex <= 0} onClick={() => goTo(currentIndex - 1)}>Previous</button><Link className="cn2-text-link" to={`${BOOK_ROUTE}/${set.id}`}>Save & return to set</Link><button className="cn2-button" disabled={currentIndex >= questions.length - 1} onClick={() => goTo(currentIndex + 1)}>Next <Icon name="arrow" /></button></div>
++          {progress.isCompleted && <section className="cn2-completion" aria-label="Section results"><Icon name="check" /><h3>{progress.isMastered ? 'Section mastered!' : 'Section complete'}</h3><p>{progress.score} / {progress.total} correct ({progress.accuracyPercent}% practice accuracy).</p><p>Review any answer using the question navigator, or reset this section for a fresh attempt.</p><Link className="cn2-button" to={`${BOOK_ROUTE}/${set.id}`}>Choose another section</Link></section>}
++        </div>
++        <aside className="cn2-quiz-sidebar"><div className="cn2-sidebar-card"><div className="cn2-row"><h3>Your practice</h3><Status progress={progress} /></div><SectionRow section={section} progress={progress} /><div className="cn2-raw-score"><strong>{progress.score}</strong><span>raw correct / {progress.answered} answered</span></div><p className="cn2-muted">{progress.answered ? `${progress.accuracyPercent}% practice accuracy` : 'Your first answer starts your progress.'}</p><h4>Question navigator</h4><div className="cn2-question-grid">{questions.map((item, index) => {
++          const answer = answers[item.id];
++          const state = Number.isInteger(answer) ? answer === item.correctIndex ? 'correct' : 'incorrect' : 'unanswered';
++          return <button key={item.id} className={`cn2-question-dot cn2-question-dot--${state}`} aria-current={index === currentIndex ? 'step' : undefined} aria-label={`Question ${item.number ?? index + 1}, ${state}${!isQuestionReady(item) ? ', key pending' : ''}`} onClick={() => goTo(index)}>{item.number ?? index + 1}</button>;
++        })}</div><p className="cn2-muted cn2-small">Green: correct. Red: review. Outline: unanswered.</p><p className="cn2-muted cn2-small">Progress saves on this device after every answer and navigation. Practice results are not official JLPT scores.</p></div></aside>
++      </div>
++    </>
++  );
++}
++
++function BookSession({ userId }) {
++  const { setId, sectionId } = useParams();
++  const location = useLocation();
++  const [params] = useSearchParams();
++  const storageKey = storageKeyFor(userId);
++  const [attempts, setAttempts] = useState(() => readAttempts(storageKey));
++  const attemptsRef = useRef(attempts);
++  const [book, setBook] = useState(null);
++  const [error, setError] = useState('');
++  const [notice, setNotice] = useState('');
++  const [cloudNotice, setCloudNotice] = useState('');
++  const cloudQueue = useRef(Promise.resolve());
++  const [retry, setRetry] = useState(0);
++  useEffect(() => {
++    let cancelled = false;
++    loadChokuzenN2Book().then(data => { if (!cancelled) setBook(data); }).catch(failure => { if (!cancelled) setError(failure.message); });
++    return () => { cancelled = true; };
++  }, [retry]);
++  useEffect(() => {
++    let cancelled = false;
++    loadCloudAttempts(userId).then(incoming => {
++      if (cancelled) return;
++      const merged = mergeAttempts(attemptsRef.current, incoming);
++      attemptsRef.current = merged;
++      setAttempts(merged);
++    }).catch(() => { if (!cancelled) setNotice('Cloud history could not be read. Your separate device progress is still available.'); });
++    const onStorage = event => {
++      if (event.key !== storageKey && event.key !== null) return;
++      const updated = mergeAttempts(attemptsRef.current, readAttempts(storageKey));
++      attemptsRef.current = updated;
++      setAttempts(updated);
++    };
++    window.addEventListener('storage', onStorage);
++    return () => { cancelled = true; window.removeEventListener('storage', onStorage); };
++  }, [storageKey, userId]);
++  const save = record => {
++    const updated = { ...mergeAttempts(attemptsRef.current, readAttempts(storageKey)), [record.quizId]: record };
++    attemptsRef.current = updated;
++    setAttempts(updated);
++    try {
++      window.localStorage.setItem(storageKey, JSON.stringify(updated));
++    } catch {
++      setNotice('Device storage is unavailable or full. Progress works in this tab but may not survive a reload.');
++    }
++    if (!import.meta.env.DEV && userId) {
++      cloudQueue.current = cloudQueue.current.catch(() => {}).then(() => saveCloudAttempt(userId, record)).then(() => {
++        setCloudNotice('');
++      }).catch(() => {
++        setCloudNotice('Cloud sync failed. Your progress is saved on this device. Answer or navigate again to retry.');
++      });
++    }
++  };
++  if (!book) return <main className="cn2-book"><section className="cn2-empty" aria-live="polite"><span className="cn2-level">N2</span><h1>{error ? 'The book is not ready yet' : 'Opening your practice book...'}</h1><p>{error || 'Loading original pages and practice sets.'}</p>{error && <button className="cn2-button" onClick={() => { setError(''); setRetry(value => value + 1); }}>Try again</button>}<Link className="cn2-text-link" to="/books">Back to books</Link></section></main>;
++  const set = book.sets.find(item => item.id === setId);
++  const section = sectionFromRoute(sectionId);
++  const groups = book.sets.flatMap(item => SECTIONS.map(definition => sectionProgress(item.sections?.[definition.id]?.questions || [], attempts[attemptId(item.id, definition.id)])));
++  const overall = summarizeProgress(groups);
++  const readerOpen = params.get('reader') === '1';
++  const readerLink = `${location.pathname}?reader=1&page=${set?.sourcePages?.[0] || 1}`;
++  const invalidRoute = (setId && !set) || (sectionId && !section);
++  return (
++    <main className="cn2-book">
++      <nav className="cn2-breadcrumb" aria-label="Breadcrumb"><Link to="/books">Books</Link><span aria-hidden="true">/</span><Link to={BOOK_ROUTE} aria-current={!setId ? 'page' : undefined}>Chokuzen Taisaku N2</Link>{set && <><span aria-hidden="true">/</span><Link to={`${BOOK_ROUTE}/${set.id}`} aria-current={!sectionId ? 'page' : undefined}>{set.title}</Link></>}{section && <><span aria-hidden="true">/</span><span aria-current="page">{section.title}</span></>}</nav>
++      {!sectionId && !readerOpen && <header className="cn2-hero"><div className="cn2-hero-copy"><p className="cn2-eyebrow">THE FINAL STRETCH / JLPT N2</p><h1>Small steps.<br />Exam-day confidence.</h1><p className="cn2-book-title" lang="ja">{book.title}</p><p className="cn2-muted">Original pages. Focused practice. A clearer path forward.</p><div className="cn2-hero-actions"><Link className="cn2-button" to={readerLink}><Icon name="book" />Read original book</Link><span className="cn2-pill">{book.sets.length} sets / {overall.total} questions</span></div></div><div className="cn2-cover"><Scan path={book.coverImage || book.cover || '/books/chokuzen_n2/cover.jpeg'} alt="Chokuzen Taisaku N2 book cover" eager /><span>CHOKUZEN TAISAKU <strong>N2</strong></span></div></header>}
++      <div className="cn2-session-line"><Icon name="check" /><p>{notice ? 'Progress kept in this tab' : 'Progress saved on this device'}</p>{sectionId && !readerOpen && <Link className="cn2-text-link" to={readerLink}>Source reader</Link>}</div>
++      {notice && <p className="cn2-notice" role="status">{notice}</p>}
++      {cloudNotice && <p className="cn2-notice" role="alert">{cloudNotice}</p>}
++      {readerOpen ? <Reader book={book} /> : invalidRoute ? <section className="cn2-empty"><h2>That set or section was not found.</h2><Link className="cn2-button" to={BOOK_ROUTE}>View all N2 sets</Link></section> : section && set ? <Quiz key={`${set.id}:${section.id}`} set={set} section={section} record={attempts[attemptId(set.id, section.id)]} onSave={save} /> : <><Overview progress={set ? setProgress(set, attempts) : overall} groups={set ? SECTIONS.map(definition => sectionProgress(set.sections?.[definition.id]?.questions || [], attempts[attemptId(set.id, definition.id)])) : groups} />{set ? <SetDetails set={set} attempts={attempts} /> : <SetList book={book} attempts={attempts} />}</>}
++    </main>
++  );
++}
++
++export default function ChokuzenN2Book() {
++  const { currentUser } = useAuth() || {};
++  return <BookSession key={currentUser?.uid || 'guest'} userId={currentUser?.uid || null} />;
++}
+diff --git a/src/utils/chokuzenN2Data.js b/src/utils/chokuzenN2Data.js
+new file mode 100644
+--- /dev/null
++++ b/src/utils/chokuzenN2Data.js
+@@ -0,0 +1,174 @@
++import { getQuestionGroupProgress, summarizeProgress } from './bookProgress.js';
++
++export const BOOK_ID = 'jlpt-n2-practice-sets';
++export const BOOK_ROUTE = '/n2-practice-sets';
++export const SECTIONS = [
++  { id: 'vocabulary-kanji', route: 'vocabulary-kanji', title: 'Vocabulary & Kanji', label: 'WORDS & CHARACTERS', tone: 'blue' },
++  { id: 'grammar-reading', route: 'grammar', title: 'Grammar', label: 'PATTERNS & CONTEXT', tone: 'green' },
++];
++
++export const sectionFromRoute = route => SECTIONS.find(section => section.route === route || section.id === route);
++
++export const attemptId = (setId, sectionId) => `${BOOK_ID}-${setId}-${sectionId}`;
++
++export const storageKeyFor = userId => `chokuzen-n2:${import.meta.env?.DEV ? 'dev' : 'production'}:v1:${userId || 'guest'}`;
++
++export const isQuestionReady = question => (
++  Boolean(question?.id)
++  && Array.isArray(question.options)
++  && question.options.length === 4
++  && Number.isInteger(question.correctIndex)
++  && question.correctIndex >= 0
++  && question.correctIndex < 4
++  && question.correctOption === question.options[question.correctIndex]
++  && question.verification?.answerKeyVerified === true
++);
++
++export function validAnswers(questions = [], answers = {}) {
++  return Object.fromEntries(questions
++    .filter(question => isQuestionReady(question)
++      && Number.isInteger(answers?.[question.id])
++      && answers[question.id] >= 0
++      && answers[question.id] < 4)
++    .map(question => [question.id, answers[question.id]]));
++}
++
++export function sectionProgress(questions = [], record) {
++  const answers = validAnswers(questions, record?.answers);
++  return getQuestionGroupProgress(questions, { scopedRecords: [{ answers }] });
++}
++
++export function setProgress(set, attempts) {
++  return summarizeProgress(SECTIONS.map(section => sectionProgress(
++    set.sections?.[section.id]?.questions || [],
++    attempts[attemptId(set.id, section.id)],
++  )));
++}
++
++export function makeAttempt(set, section, previous, changes = {}) {
++  const questions = set.sections?.[section.id]?.questions || [];
++  const answers = validAnswers(questions, changes.answers ?? previous?.answers);
++  const progress = sectionProgress(questions, { answers });
++  const index = Number(changes.currentIndex ?? previous?.currentIndex) || 0;
++  return {
++    quizId: attemptId(set.id, section.id),
++    bookId: BOOK_ID,
++    setId: set.id,
++    sectionId: section.id,
++    title: `Chokuzen Taisaku N2 - ${set.title} - ${section.title}`,
++    level: 'N2',
++    category: 'Chokuzen Taisaku',
++    type: 'practice',
++    answers,
++    currentIndex: Math.max(0, Math.min(questions.length - 1, Math.floor(index))),
++    currentQuestionId: questions[Math.max(0, Math.min(questions.length - 1, Math.floor(index)))]?.id || null,
++    score: progress.score,
++    rawCorrect: progress.score,
++    total: progress.total,
++    answered: progress.answered,
++    completionPercent: progress.completionPercent,
++    percentage: progress.accuracyPercent,
++    status: progress.status,
++    scoringMethod: 'raw-practice-accuracy',
++    timestamp: new Date().toISOString(),
++  };
++}
++
++export function mergeAttempts(current = {}, incoming = {}) {
++  const merged = { ...current };
++  Object.entries(incoming).forEach(([key, record]) => {
++    if (!record || typeof record !== 'object' || !key.startsWith(`${BOOK_ID}-`)) return;
++    const existingTime = Date.parse(merged[key]?.timestamp || '') || 0;
++    const incomingTime = Date.parse(record.timestamp || '') || 0;
++    if (!merged[key] || incomingTime > existingTime) merged[key] = record;
++  });
++  return merged;
++}
++
++export function readAttempts(storageKey) {
++  try {
++    const saved = JSON.parse(window.localStorage.getItem(storageKey) || '{}');
++    return saved && typeof saved === 'object' && !Array.isArray(saved) ? mergeAttempts({}, saved) : {};
++  } catch {
++    return {};
++  }
++}
++
++export function assetUrl(path) {
++  if (!path || typeof path !== 'string') return '';
++  if (/^https?:\/\//i.test(path)) return path;
++  if (path.startsWith('//') || /^[a-z][a-z\d+.-]*:/i.test(path)) return '';
++  const base = import.meta.env?.BASE_URL || '/';
++  if (base !== '/' && path.startsWith(base)) return path;
++  return `${base.replace(/\/$/, '')}/${path.replace(/^\/+/, '')}`;
++}
++
++export function extractedText(value) {
++  if (typeof value === 'string') return value;
++  return typeof value?.text === 'string' ? value.text : '';
++}
++
++export function sourcePages(book) {
++  const pages = Array.isArray(book.source?.pages) ? book.source.pages : [];
++  const count = Math.max(Number(book.source?.pageCount) || 0, ...pages.map(page => Number(page.page) || 0));
++  const pageMap = new Map(pages.map(page => [Number(page.page), page]));
++  return Array.from({ length: count }, (_, index) => ({ ...pageMap.get(index + 1), page: index + 1 }));
++}
++
++export async function loadChokuzenN2Book() {
++  let book;
++  if (import.meta.env.DEV) {
++    const localBooks = import.meta.glob('../data/chokuzen_n2/book.json');
++    const loader = localBooks['../data/chokuzen_n2/book.json'];
++    if (!loader) throw new Error('The local N2 book is still being prepared. Please retry when book.json is ready.');
++    book = (await loader()).default;
++  } else {
++    const [{ db }, { collection, doc, getDoc, getDocs }] = await Promise.all([
++      import('../firebaseConfig.js'),
++      import('firebase/firestore'),
++    ]);
++    const [metadata, sets] = await Promise.all([
++      getDoc(doc(db, 'books', BOOK_ID)),
++      getDocs(collection(db, 'books', BOOK_ID, 'sets')),
++    ]);
++    if (!metadata.exists()) throw new Error('This book has not been published to the library yet.');
++    book = { ...metadata.data(), sets: sets.docs.map(set => ({ ...set.data(), id: set.id })) };
++  }
++  if (!book || !Array.isArray(book.sets)) throw new Error('Book data is incomplete. Please try again later.');
++  return {
++    ...book,
++    id: BOOK_ID,
++    sets: [...book.sets].sort((left, right) => String(left.id).localeCompare(String(right.id), undefined, { numeric: true })),
++  };
++}
++
++export async function loadCloudAttempts(userId) {
++  if (import.meta.env.DEV || !userId) return {};
++  const [{ db }, { collection, getDocs }] = await Promise.all([
++    import('../firebaseConfig.js'),
++    import('firebase/firestore'),
++  ]);
++  const history = await getDocs(collection(db, 'users', userId, 'quizHistory'));
++  const attempts = {};
++  history.docs.forEach(snapshot => {
++    const record = snapshot.data();
++    const key = record.quizId || snapshot.id;
++    if (record.bookId === BOOK_ID && key.startsWith(`${BOOK_ID}-`)) {
++      const section = sectionFromRoute(record.sectionId);
++      attempts[section && record.setId ? attemptId(record.setId, section.id) : key] = record;
++    }
++  });
++  return attempts;
++}
++
++export async function saveCloudAttempt(userId, record) {
++  if (import.meta.env.DEV || !userId) return false;
++  const [{ db }, { doc, setDoc }] = await Promise.all([
++    import('../firebaseConfig.js'),
++    import('firebase/firestore'),
++  ]);
++  await setDoc(doc(db, 'users', userId, 'quizHistory', record.quizId), record, {
++    mergeFields: Object.keys(record),
++  });
++  return true;
++}
+diff --git a/src/assets/chokuzen_n2.css b/src/assets/chokuzen_n2.css
+new file mode 100644
+--- /dev/null
++++ b/src/assets/chokuzen_n2.css
+@@ -0,0 +1,223 @@
++.cn2-book {
++  --cn2-surface: var(--color-bg-card, #161b22);
++  --cn2-bg: var(--color-bg-primary, #0d1117);
++  --cn2-raised: var(--color-bg-tertiary, #21262d);
++  --cn2-text: var(--color-text-primary, #f0f6fc);
++  --cn2-muted: var(--color-text-secondary, #a6b5c3);
++  --cn2-border: var(--color-border, #303d48);
++  --cn2-accent: #10b981;
++  --cn2-tint: rgba(16, 185, 129, 0.1);
++  width: 100%;
++  max-width: 1440px;
++  margin: 0 auto;
++  padding: 112px 28px 72px;
++  color: var(--cn2-text);
++  line-height: 1.6;
++}
++
++.cn2-book *, .cn2-book *::before, .cn2-book *::after { box-sizing: border-box; }
++.cn2-book a { color: inherit; text-decoration: none; }
++.cn2-book button, .cn2-book input { font: inherit; }
++.cn2-book button { cursor: pointer; }
++.cn2-book button:disabled { cursor: not-allowed; }
++.cn2-book :is(a, button, input, summary, [tabindex]):focus-visible { outline: 3px solid var(--cn2-accent); outline-offset: 4px; }
++.cn2-book :is(h1, h2, h3, h4, p, figure) { margin: 0; }
++.cn2-book h2 { font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.25; letter-spacing: -0.035em; }
++.cn2-book h3 { font-size: 1.2rem; line-height: 1.4; }
++.cn2-book .cn2-muted { color: var(--cn2-muted); font-size: 0.88rem; }
++.cn2-book .cn2-small { font-size: 0.77rem; }
++.cn2-book .cn2-instruction { margin: 20px 0; color: var(--cn2-muted); font-size: 0.86rem; }
++.cn2-book .cn2-stem { margin: 24px 0; font-size: clamp(1.1rem, 2vw, 1.4rem); line-height: 2.1; overflow-wrap: anywhere; }
++.cn2-book .cn2-passage { margin: 24px 0; padding: 24px; border: 1px solid var(--cn2-border); border-radius: 12px; font-size: 1.05rem; line-height: 2.15; overflow-wrap: anywhere; }
++.cn2-book .cn2-stem u, .cn2-book .cn2-choice-content u { text-underline-offset: 5px; text-decoration-thickness: 2px; }
++.cn2-book .cn2-choice-content .cn2-explanation { font-size: 1.05rem; line-height: 1.9; overflow-wrap: anywhere; }
++.cn2-book ruby { ruby-position: over; }
++.cn2-book rt { font-size: 0.52em; font-weight: 400; }
++.cn2-book .cn2-accent { color: var(--cn2-accent); }
++.cn2-book .cn2-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
++.cn2-book .cn2-eyebrow { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.16em; color: var(--cn2-accent); margin-bottom: 9px; }
++.cn2-book .cn2-breadcrumb { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; color: var(--cn2-muted); font-size: 0.82rem; margin-bottom: 26px; }
++.cn2-book .cn2-breadcrumb a:hover, .cn2-book .cn2-text-link:hover { color: var(--cn2-accent); }
++.cn2-book .cn2-breadcrumb [aria-current="page"] { color: var(--cn2-text); }
++
++.cn2-book .cn2-hero { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 42px 52px; border: 1px solid var(--cn2-border); border-radius: 24px; background: radial-gradient(ellipse at 85% 30%, rgba(16, 185, 129, 0.15), transparent 65%), var(--cn2-surface); }
++.cn2-book .cn2-hero-copy { max-width: 720px; }
++.cn2-book .cn2-hero h1 { font-size: clamp(2.2rem, 4.3vw, 3.6rem); letter-spacing: -0.055em; font-weight: 800; line-height: 1.08; margin: 12px 0 20px; }
++.cn2-book .cn2-book-title { margin-bottom: 7px; overflow-wrap: anywhere; }
++.cn2-book .cn2-hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 15px; margin-top: 25px; }
++.cn2-book .cn2-cover { position: relative; flex: 0 0 164px; transform: rotate(4deg); margin-right: 15px; border-radius: 8px; box-shadow: 10px 18px 36px rgba(0, 0, 0, 0.25); overflow: hidden; border: 1px solid var(--cn2-border); background: var(--cn2-bg); }
++.cn2-book .cn2-cover .cn2-scan { width: 100%; }
++.cn2-book .cn2-cover > span { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px; color: var(--cn2-muted); font-size: 0.55rem; letter-spacing: 0.09em; }
++.cn2-book .cn2-cover strong { color: var(--cn2-accent); font-size: 1rem; }
++.cn2-book .cn2-button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 42px; padding: 10px 17px; border: 1px solid transparent; border-radius: 10px; color: #fff; background: #047857; font-size: 0.83rem; font-weight: 700; transition: background 160ms, transform 160ms, border-color 160ms; }
++.cn2-book .cn2-button:hover:not(:disabled) { background: #065f46; transform: translateY(-1px); }
++.cn2-book .cn2-button--quiet { background: var(--cn2-surface); border-color: var(--cn2-border); color: var(--cn2-text); }
++.cn2-book .cn2-button--quiet:hover:not(:disabled) { background: var(--cn2-raised); border-color: var(--cn2-accent); }
++.cn2-book .cn2-button:disabled { opacity: 0.45; }
++.cn2-book .cn2-text-link { color: var(--cn2-accent); font-size: 0.82rem; font-weight: 650; text-decoration: underline; text-underline-offset: 3px; }
++.cn2-book .cn2-pill { display: inline-flex; border: 1px solid var(--cn2-border); border-radius: 30px; padding: 5px 11px; font-size: 0.72rem; color: var(--cn2-muted); }
++.cn2-book .cn2-session-line { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 16px 0 26px; font-size: 0.73rem; color: var(--cn2-muted); }
++.cn2-book .cn2-session-line > span { font-weight: 800; letter-spacing: 0.08em; font-size: 0.58rem; padding: 4px 7px; border: 1px solid var(--cn2-border); border-radius: 5px; }
++
++.cn2-book .cn2-overview { display: grid; grid-template-columns: 2.5fr repeat(3, 1fr); align-items: center; gap: 24px; padding: 25px 28px; border: 1px solid var(--cn2-border); border-radius: 16px; background: var(--cn2-surface); margin-bottom: 40px; }
++.cn2-book .cn2-overview-main > .cn2-row { margin-bottom: 12px; font-size: 0.86rem; }
++.cn2-book .cn2-overview-main p { margin-top: 9px; font-size: 0.77rem; }
++.cn2-book .cn2-meter { height: 6px; background: var(--cn2-raised); border-radius: 99px; overflow: hidden; }
++.cn2-book .cn2-meter > span { display: block; height: 100%; border-radius: inherit; background: var(--cn2-accent); transition: width 240ms ease; }
++.cn2-book .cn2-stat { display: flex; flex-direction: column; gap: 4px; border-left: 1px solid var(--cn2-border); padding-left: 22px; }
++.cn2-book .cn2-stat strong { font-size: 1.65rem; line-height: 1.2; letter-spacing: -0.04em; }
++.cn2-book .cn2-stat span { color: var(--cn2-muted); font-size: 0.72rem; }
++.cn2-book .cn2-section-heading { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin: 28px 0 22px; }
++.cn2-book .cn2-set-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
++.cn2-book .cn2-set-card, .cn2-book .cn2-section-card { display: flex; flex-direction: column; min-width: 0; padding: 23px; background: var(--cn2-surface); border: 1px solid var(--cn2-border); border-radius: 16px; transition: transform 180ms, border-color 180ms, box-shadow 180ms; }
++.cn2-book :is(.cn2-set-card, .cn2-section-card):hover { transform: translateY(-4px); border-color: var(--cn2-accent); box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08); }
++.cn2-book .cn2-set-number { color: var(--cn2-muted); opacity: 0.5; font-weight: 800; font-size: 1.5rem; letter-spacing: -0.05em; }
++.cn2-book .cn2-set-card h3 { margin: 17px 0 5px; overflow-wrap: anywhere; }
++.cn2-book .cn2-status { display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--cn2-border); border-radius: 30px; padding: 4px 9px; font-size: 0.66rem; font-weight: 700; color: var(--cn2-muted); white-space: nowrap; }
++.cn2-book .cn2-status--in-progress { color: #b45309; background: rgba(245, 158, 11, 0.1); border-color: rgba(245, 158, 11, 0.4); }
++.cn2-book .cn2-status--completed { color: #2563eb; background: rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.4); }
++.cn2-book .cn2-status--mastered { color: #059669; background: var(--cn2-tint); border-color: rgba(16, 185, 129, 0.4); }
++.cn2-book .cn2-card--mastered { border-color: rgba(16, 185, 129, 0.5); }
++.cn2-book .cn2-section-rows { display: grid; gap: 17px; margin: 22px 0; }
++.cn2-book .cn2-section-row { --cn2-accent: #10b981; }
++.cn2-book .cn2-tone--blue { --cn2-accent: #3b82f6; --cn2-tint: rgba(59, 130, 246, 0.1); }
++.cn2-book .cn2-section-row .cn2-row { font-size: 0.77rem; margin-bottom: 7px; }
++.cn2-book .cn2-section-row .cn2-row strong { color: var(--cn2-accent); }
++.cn2-book .cn2-section-row small { display: block; margin-top: 6px; font-size: 0.68rem; color: var(--cn2-muted); }
++.cn2-book .cn2-card-action { display: flex; justify-content: space-between; align-items: center; gap: 10px; border-top: 1px solid var(--cn2-border); margin-top: auto; padding-top: 16px; color: var(--cn2-accent); font-size: 0.82rem; font-weight: 700; }
++.cn2-book .cn2-section-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
++.cn2-book .cn2-section-card { padding: 30px; gap: 14px; }
++.cn2-book .cn2-section-card .cn2-eyebrow { margin: 10px 0 -8px; }
++.cn2-book .cn2-section-card .cn2-section-row { margin: 10px 0; }
++.cn2-book .cn2-section-icon { display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; border-radius: 12px; background: var(--cn2-tint); color: var(--cn2-accent); }
++.cn2-book .cn2-study-note { display: flex; align-items: flex-start; gap: 16px; border: 1px solid var(--cn2-border); background: var(--cn2-surface); border-radius: 14px; padding: 24px; margin-top: 26px; }
++.cn2-book .cn2-study-note svg { color: var(--cn2-accent); flex-shrink: 0; margin-top: 4px; }
++.cn2-book .cn2-study-note p { color: var(--cn2-muted); font-size: 0.82rem; margin-top: 8px; }
++
++.cn2-book .cn2-quiz-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; align-items: start; gap: 24px; }
++.cn2-book .cn2-question-column { min-width: 0; }
++.cn2-book .cn2-question-card, .cn2-book .cn2-sidebar-card { background: var(--cn2-surface); border: 1px solid var(--cn2-border); border-radius: 16px; padding: 25px; }
++.cn2-book #cn2-question-heading { scroll-margin-top: 110px; }
++.cn2-book .cn2-source-line { display: flex; gap: 12px; justify-content: space-between; align-items: center; flex-wrap: wrap; margin: 16px 0 8px; }
++.cn2-book .cn2-scan-frame { overflow: hidden; border: 1px solid var(--cn2-border); border-radius: 10px; margin: 16px 0; background: #fff; }
++.cn2-book .cn2-scan { display: block; width: 100%; max-width: none; height: auto; object-fit: contain; }
++.cn2-book .cn2-scan-frame figcaption { background: var(--cn2-raised); color: var(--cn2-text); font-size: 0.75rem; font-weight: 650; padding: 9px 12px; }
++.cn2-book .cn2-question-scan { max-width: 100%; }
++.cn2-book .cn2-question-scan figcaption { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
++.cn2-book .cn2-scan-hint { display: none; }
++.cn2-book .cn2-image-error { padding: 18px; color: #374151; background: #f3f4f6; font-size: 0.8rem; }
++.cn2-book .cn2-image-error a { text-decoration: underline; }
++.cn2-book .cn2-ocr { margin: 18px 0; border: 1px solid var(--cn2-border); border-radius: 10px; background: var(--cn2-bg); padding: 13px 16px; }
++.cn2-book .cn2-ocr summary { cursor: pointer; font-size: 0.82rem; font-weight: 650; }
++.cn2-book .cn2-ocr summary span { color: var(--cn2-muted); font-weight: 400; font-size: 0.7rem; margin-left: 8px; }
++.cn2-book .cn2-ocr[open] > p { margin: 14px 0; }
++.cn2-book .cn2-extracted { font-size: 1rem; line-height: 2; line-break: strict; word-break: normal; overflow-wrap: anywhere; }
++.cn2-book .cn2-extracted p { white-space: pre-wrap; margin: 14px 0; }
++.cn2-book .cn2-choices { padding: 0; margin: 23px 0 0; border: 0; min-width: 0; }
++.cn2-book .cn2-choices legend { font-size: 0.98rem; font-weight: 750; margin-bottom: 5px; }
++.cn2-book .cn2-choices > p { margin-bottom: 14px; }
++.cn2-book .cn2-choice { display: flex; align-items: center; gap: 14px; text-align: left; min-height: 60px; width: 100%; margin: 10px 0; padding: 12px 15px; background: var(--cn2-bg); border: 1px solid var(--cn2-border); border-radius: 10px; color: var(--cn2-text); transition: border-color 160ms, background 160ms; }
++.cn2-book .cn2-choices:not(:disabled) .cn2-choice:hover { border-color: var(--cn2-accent); background: var(--cn2-tint); }
++.cn2-book .cn2-choice-number { display: inline-flex; justify-content: center; align-items: center; flex: 0 0 30px; height: 30px; border: 1px solid var(--cn2-border); border-radius: 8px; font-size: 0.85rem; font-weight: 750; }
++.cn2-book .cn2-choice-content { flex: 1; min-width: 0; }
++.cn2-book .cn2-choice-content .cn2-scan { width: auto; max-width: 100%; max-height: 140px; object-position: left; border-radius: 4px; }
++.cn2-book .cn2-choice-ocr { display: block; font-size: 0.85rem; white-space: pre-wrap; overflow-wrap: anywhere; color: var(--cn2-muted); margin-top: 5px; }
++.cn2-book .cn2-choice-result { font-size: 0.65rem; font-weight: 750; flex-shrink: 0; }
++.cn2-book .cn2-choice-item { min-width: 0; margin: 10px 0 15px; }
++.cn2-book .cn2-choice-reference { display: inline-block; font-size: 0.7rem; margin: 0 0 0 44px; }
++.cn2-book .cn2-choice--correct { border-color: #059669; background: rgba(16, 185, 129, 0.1); }
++.cn2-book .cn2-choice--incorrect { border-color: #e11d48; background: rgba(225, 29, 72, 0.08); }
++.cn2-book .cn2-choices:disabled .cn2-choice:not(.cn2-choice--correct):not(.cn2-choice--incorrect) { opacity: 0.72; }
++.cn2-book .cn2-feedback { margin-top: 22px; padding: 20px; background: rgba(245, 158, 11, 0.07); border: 1px solid rgba(245, 158, 11, 0.35); border-radius: 12px; }
++.cn2-book .cn2-feedback--correct { background: var(--cn2-tint); border-color: rgba(16, 185, 129, 0.4); }
++.cn2-book .cn2-feedback > p { margin-top: 9px; font-size: 0.85rem; color: var(--cn2-muted); }
++.cn2-book .cn2-explanation { margin-top: 16px; font-size: 1rem; line-height: 2; white-space: pre-wrap; line-break: strict; word-break: normal; overflow-wrap: anywhere; }
++.cn2-book .cn2-explanation p { margin: 10px 0; }
++.cn2-book .cn2-explanation rt { font-size: 0.6em; }
++.cn2-book .cn2-quiz-sidebar { position: sticky; top: 105px; min-width: 0; }
++.cn2-book .cn2-sidebar-card { padding: 21px; }
++.cn2-book .cn2-sidebar-card h3 { font-size: 0.98rem; }
++.cn2-book .cn2-sidebar-card .cn2-section-row { margin: 20px 0; }
++.cn2-book .cn2-raw-score { display: flex; align-items: baseline; gap: 10px; }
++.cn2-book .cn2-raw-score strong { font-size: 2.2rem; letter-spacing: -0.06em; }
++.cn2-book .cn2-raw-score span { color: var(--cn2-muted); font-size: 0.7rem; }
++.cn2-book .cn2-sidebar-card h4 { margin: 23px 0 12px; font-size: 0.8rem; }
++.cn2-book .cn2-question-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-bottom: 15px; }
++.cn2-book .cn2-question-dot { min-height: 38px; padding: 4px; border: 1px solid var(--cn2-border); border-radius: 7px; background: var(--cn2-bg); color: var(--cn2-text); font-size: 0.76rem; }
++.cn2-book .cn2-question-dot--correct { background: rgba(16, 185, 129, 0.15); border-color: #059669; }
++.cn2-book .cn2-question-dot--incorrect { background: rgba(225, 29, 72, 0.1); border-color: #e11d48; }
++.cn2-book .cn2-question-dot[aria-current="step"] { outline: 2px solid var(--cn2-accent); outline-offset: 2px; font-weight: 800; }
++.cn2-book .cn2-sidebar-card > .cn2-small { margin-top: 12px; }
++.cn2-book .cn2-completion { padding: 28px; margin-top: 24px; border: 1px solid rgba(16, 185, 129, 0.4); border-radius: 14px; background: var(--cn2-tint); text-align: center; }
++.cn2-book .cn2-completion > svg { color: var(--cn2-accent); margin: 0 auto 10px; }
++.cn2-book .cn2-completion p { color: var(--cn2-muted); margin: 10px 0; font-size: 0.85rem; }
++.cn2-book .cn2-completion .cn2-button { margin-top: 14px; }
++
++.cn2-book .cn2-reader-tools { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 16px; background: var(--cn2-surface); border: 1px solid var(--cn2-border); border-radius: 12px; }
++.cn2-book .cn2-inline-form, .cn2-book .cn2-toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 0.8rem; }
++.cn2-book input { min-height: 42px; color: var(--cn2-text); background: var(--cn2-bg); border: 1px solid var(--cn2-border); border-radius: 8px; padding: 9px 12px; }
++.cn2-book .cn2-inline-form input { width: 82px; }
++.cn2-book .cn2-search-label { display: block; margin: 20px 0 8px; font-size: 0.8rem; }
++.cn2-book .cn2-search { width: 100%; }
++.cn2-book .cn2-search-results { padding: 16px 0; font-size: 0.8rem; }
++.cn2-book .cn2-search-results > div { display: flex; flex-wrap: wrap; gap: 8px; max-height: 180px; overflow-y: auto; padding: 8px 3px; }
++.cn2-book .cn2-search-results [aria-current="page"] { border-color: var(--cn2-accent); }
++.cn2-book .cn2-reader-canvas { overflow-x: auto; background: var(--cn2-raised); border: 1px solid var(--cn2-border); border-radius: 12px; margin-top: 20px; padding: 16px; }
++.cn2-book .cn2-reader-canvas > div { margin: 0 auto; }
++.cn2-book .cn2-reader-canvas .cn2-scan { background: #fff; }
++.cn2-book .cn2-reader-navigation { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-top: 20px; font-size: 0.8rem; color: var(--cn2-muted); }
++.cn2-book .cn2-notice { padding: 15px 18px; border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 10px; background: rgba(245, 158, 11, 0.08); font-size: 0.82rem; margin: 16px 0; }
++.cn2-book .cn2-empty { display: flex; flex-direction: column; align-items: center; gap: 18px; text-align: center; padding: 60px 24px; border: 1px solid var(--cn2-border); border-radius: 18px; background: var(--cn2-surface); }
++.cn2-book .cn2-level { display: inline-grid; place-items: center; background: #047857; color: #fff; width: 58px; height: 58px; border-radius: 14px; font-size: 1.4rem; font-weight: 800; }
++
++[data-theme='dark'] .cn2-book .cn2-status--in-progress { color: #fbbf24; }
++[data-theme='dark'] .cn2-book .cn2-status--completed { color: #93c5fd; }
++[data-theme='dark'] .cn2-book .cn2-status--mastered { color: #34d399; }
++[data-theme='light'] .cn2-book { --cn2-accent: #047857; }
++[data-theme='light'] .cn2-book .cn2-tone--blue { --cn2-accent: #2563eb; }
++[data-theme='light'] .cn2-book .cn2-tone--green { --cn2-accent: #047857; }
++
++@media (max-width: 1100px) {
++  .cn2-book .cn2-set-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
++  .cn2-book .cn2-overview { grid-template-columns: repeat(3, 1fr); }
++  .cn2-book .cn2-overview-main { grid-column: 1 / -1; }
++  .cn2-book .cn2-stat { padding-left: 16px; }
++  .cn2-book .cn2-quiz-layout { grid-template-columns: minmax(0, 1fr) 260px; gap: 18px; }
++}
++
++@media (max-width: 820px) {
++  .cn2-book { padding: 98px 18px 50px; }
++  .cn2-book .cn2-hero { padding: 30px; gap: 25px; }
++  .cn2-book .cn2-cover { flex-basis: 125px; margin-right: 0; }
++  .cn2-book .cn2-quiz-layout { grid-template-columns: minmax(0, 1fr); }
++  .cn2-book .cn2-quiz-sidebar { position: static; }
++  .cn2-book .cn2-question-grid { grid-template-columns: repeat(8, minmax(0, 1fr)); }
++}
++
++@media (max-width: 560px) {
++  .cn2-book { padding-left: 14px; padding-right: 14px; }
++  .cn2-book .cn2-hero { padding: 26px 22px; gap: 18px; }
++  .cn2-book .cn2-hero h1 { font-size: 2rem; }
++  .cn2-book .cn2-cover { display: none; }
++  .cn2-book .cn2-set-grid, .cn2-book .cn2-section-grid { grid-template-columns: minmax(0, 1fr); }
++  .cn2-book .cn2-overview { padding: 20px 16px; gap: 18px 9px; }
++  .cn2-book .cn2-stat { padding-left: 8px; }
++  .cn2-book .cn2-stat strong { font-size: 1.25rem; }
++  .cn2-book .cn2-stat span { font-size: 0.62rem; }
++  .cn2-book .cn2-section-card, .cn2-book .cn2-question-card { padding: 20px 16px; }
++  .cn2-book .cn2-question-scan { overflow-x: auto; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; }
++  .cn2-book .cn2-question-scan > .cn2-scan { min-width: 700px; }
++  .cn2-book .cn2-scan-hint { display: block; margin-top: 12px; color: var(--cn2-accent); font-size: 0.76rem; }
++  .cn2-book .cn2-choice { gap: 10px; padding: 12px 10px; flex-wrap: wrap; }
++  .cn2-book .cn2-choice-result { margin-left: 40px; }
++  .cn2-book .cn2-reader-navigation { flex-wrap: wrap; gap: 12px; }
++  .cn2-book .cn2-reader-navigation > .cn2-text-link { order: 3; width: 100%; text-align: center; }
++  .cn2-book .cn2-reader-canvas { padding: 5px; }
++  .cn2-book .cn2-question-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
++  .cn2-book .cn2-ocr summary span { display: block; margin-left: 0; margin-top: 4px; }
++}
++
++@media (prefers-reduced-motion: reduce) {
++  .cn2-book *, .cn2-book *::before, .cn2-book *::after { transition: none !important; scroll-behavior: auto !important; }
++  .cn2-book :is(.cn2-set-card, .cn2-section-card, .cn2-button):hover { transform: none; }
++}
+diff --git a/scripts/chokuzen_n2/prepare_source.py b/scripts/chokuzen_n2/prepare_source.py
+new file mode 100644
+--- /dev/null
++++ b/scripts/chokuzen_n2/prepare_source.py
+@@ -0,0 +1,118 @@
++import argparse
++import asyncio
++import hashlib
++import json
++import re
++from pathlib import Path
++
++import fitz
++from PIL import Image
++from winrt.windows.globalization import Language
++from winrt.windows.graphics.imaging import BitmapPixelFormat, SoftwareBitmap
++from winrt.windows.media.ocr import OcrEngine
++from winrt.windows.storage.streams import Buffer
++
++
++ROOT = Path(__file__).resolve().parents[2]
++ASSETS = ROOT / 'public' / 'books' / 'chokuzen_n2' / 'pages'
++WORK = ROOT / 'tmp_inspect' / 'chokuzen_n2'
++DATA = ROOT / 'src' / 'data' / 'chokuzen_n2'
++
++
++def write_json(target, value):
++    target.parent.mkdir(parents=True, exist_ok=True)
++    target.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding='utf-8')
++
++
++def harvest_pages(document):
++    ASSETS.mkdir(parents=True, exist_ok=True)
++    pages = []
++    for index, page in enumerate(document):
++        image_name = re.search(rb'/(I\d+)\s+Do', page.read_contents())
++        if image_name is None:
++            raise ValueError(f'Page {index + 1} does not contain the expected scanned image.')
++        resource_name = image_name[1].decode('ascii')
++        reference = next(image for image in page.get_images(full=True) if image[7] == resource_name)
++        extracted = document.extract_image(reference[0])
++        target = ASSETS / f'page-{index + 1:03d}.{extracted["ext"]}'
++        if not target.exists():
++            target.write_bytes(extracted['image'])
++        pages.append({
++            'page': index + 1,
++            'image': f'/books/chokuzen_n2/pages/{target.name}',
++            'width': extracted['width'],
++            'height': extracted['height'],
++        })
++    return pages
++
++
++async def recognize_page(engine, source, page_number):
++    image = Image.open(source).convert('RGBA')
++    image = image.resize((image.width * 3, image.height * 3), Image.Resampling.LANCZOS)
++    pixels = image.tobytes('raw', 'BGRA')
++    buffer = Buffer(len(pixels))
++    buffer.length = len(pixels)
++    memoryview(buffer)[:] = pixels
++    bitmap = SoftwareBitmap(BitmapPixelFormat.BGRA8, image.width, image.height)
++    bitmap.copy_from_buffer(buffer)
++    result = await engine.recognize_async(bitmap)
++    lines = []
++    for line in result.lines:
++        words = []
++        for word in line.words:
++            rectangle = word.bounding_rect
++            words.append({
++                'text': word.text,
++                'x': round(rectangle.x / 3, 2),
++                'y': round(rectangle.y / 3, 2),
++                'width': round(rectangle.width / 3, 2),
++                'height': round(rectangle.height / 3, 2),
++            })
++        if words:
++            lines.append({
++                'text': ''.join(word['text'] for word in words),
++                'words': words,
++                'x': min(word['x'] for word in words),
++                'y': min(word['y'] for word in words),
++            })
++    lines.sort(key=lambda line: (round(line['y'] / 5), line['x']))
++    bitmap.close()
++    return {'page': page_number, 'engine': 'Windows Japanese OCR', 'lines': lines}
++
++
++async def main():
++    parser = argparse.ArgumentParser()
++    parser.add_argument('pdf', type=Path)
++    parser.add_argument('--assets-only', action='store_true')
++    arguments = parser.parse_args()
++    document = fitz.open(arguments.pdf)
++    if document.needs_pass and not document.authenticate('unojapano.com'):
++        raise ValueError('The PDF could not be opened with the supplied book password.')
++    pages = harvest_pages(document)
++    WORK.mkdir(parents=True, exist_ok=True)
++    DATA.mkdir(parents=True, exist_ok=True)
++    source = {
++        'fileName': arguments.pdf.name,
++        'sha256': hashlib.sha256(arguments.pdf.read_bytes()).hexdigest(),
++        'pageCount': len(pages),
++        'embeddedTextPages': sum(bool(page.get_text().strip()) for page in document),
++        'pages': pages,
++    }
++    write_json(DATA / 'source.json', source)
++    print(f'Harvested {len(pages)} original page images.', flush=True)
++    if arguments.assets_only:
++        return
++    engine = OcrEngine.try_create_from_language(Language('ja'))
++    if engine is None:
++        raise RuntimeError('Windows Japanese OCR is unavailable.')
++    for page in pages:
++        result_path = WORK / 'ocr' / f'page-{page["page"]:03d}.json'
++        if result_path.exists():
++            continue
++        result = await recognize_page(engine, ROOT / 'public' / page['image'].lstrip('/'), page['page'])
++        write_json(result_path, result)
++        print(f'OCR {page["page"]}/{len(pages)}: {len(result["lines"])} lines', flush=True)
++
++
++if __name__ == '__main__':
++    asyncio.run(main())
+diff --git a/scripts/chokuzen_n2/build_book.py b/scripts/chokuzen_n2/build_book.py
+new file mode 100644
+--- /dev/null
++++ b/scripts/chokuzen_n2/build_book.py
+@@ -0,0 +1,334 @@
++import json
++import re
++from pathlib import Path
++
++import cv2
++import numpy
++from PIL import Image
++
++
++ROOT = Path(__file__).resolve().parents[2]
++DATA = ROOT / 'src' / 'data' / 'chokuzen_n2'
++WORK = ROOT / 'tmp_inspect' / 'chokuzen_n2'
++ASSETS = ROOT / 'public' / 'books' / 'chokuzen_n2'
++QUESTIONS_PER_PAGE = [6, 9, 7, 7, 3, 9, 3, 5, 0, 5]
++PAGE_ORDER_CORRECTIONS = {17: 13, 18: 14, 15: 15, 16: 16, 118: 115, 117: 116}
++VISUAL_MARKER_ADDITIONS = {67: [(160, 812)], 78: [(69, 815)], 128: [(79, 805)]}
++VISUAL_PAGE_COUNTS = {81: 8, 82: 4, 101: 8, 102: 4}
++INSTRUCTIONS = {
++    1: '問題1　下線の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。',
++    2: '問題2　下線の言葉を漢字で書くとき、最もよいものを1・2・3・4から一つ選びなさい。',
++    3: '問題3　（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。',
++    4: '問題4　（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。',
++    5: '問題5　下線の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。',
++    6: '問題6　次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。',
++    7: '問題7　次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。',
++    8: '問題8　次の文の★に入る最もよいものを、1・2・3・4から一つ選びなさい。',
++    9: '問題9　次の文章を読んで、文中に入る最もよいものを、1・2・3・4から一つ選びなさい。',
++}
++
++
++def read_json(target):
++    return json.loads(target.read_text(encoding='utf-8'))
++
++
++def write_json(target, value):
++    target.parent.mkdir(parents=True, exist_ok=True)
++    target.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
++
++
++def source_image(page_number):
++    return ASSETS / 'pages' / f'page-{page_number:03d}.jpeg'
++
++
++def printed_to_pdf(printed_page):
++    return PAGE_ORDER_CORRECTIONS.get(printed_page, printed_page - 2)
++
++
++def find_markers(page_number, printed_page, offset):
++    image = cv2.imread(str(source_image(page_number)), cv2.IMREAD_GRAYSCALE)
++    _, binary = cv2.threshold(image, 150, 255, cv2.THRESH_BINARY_INV)
++    horizontal = cv2.morphologyEx(binary, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_RECT, (100, 1)))
++    binary = cv2.morphologyEx(cv2.subtract(binary, horizontal), cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_RECT, (2, 2)))
++    contours, _ = cv2.findContours(binary, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
++    candidates = []
++    minimum = 450 if offset == 0 else 210 if offset in [2, 3, 5, 7] else 150
++    for contour in contours:
++        xpos, ypos, width, height = cv2.boundingRect(contour)
++        correct_column = 40 < xpos < 100 if printed_page % 2 == 0 else 140 < xpos < 200
++        header = (offset == 0 and 920 < ypos < 1000) or (offset == 1 and 500 < ypos < 600) or (offset == 3 and 660 < ypos < 750)
++        if not correct_column or header:
++            continue
++        if 12 <= width <= 21 and 11 <= height <= 22 and 0.65 < width / height < 1.5 and minimum < ypos < 1120:
++            if cv2.contourArea(contour) / (width * height) > 0.58:
++                candidates.append((xpos, ypos))
++    best = []
++    for anchor, _ in candidates:
++        unique = []
++        for position in sorted(set((xpos, ypos) for xpos, ypos in candidates if abs(xpos - anchor) < 7), key=lambda item: item[1]):
++            if not unique or position[1] - unique[-1][1] > 15:
++                unique.append(position)
++        if len(unique) > len(best):
++            best = unique
++    best.extend(VISUAL_MARKER_ADDITIONS.get(page_number, []))
++    best.sort(key=lambda item: item[1])
++    expected = VISUAL_PAGE_COUNTS.get(page_number, QUESTIONS_PER_PAGE[offset])
++    if len(best) != expected:
++        raise ValueError(f'PDF page {page_number}: expected {expected} question markers, found {len(best)}.')
++    return best
++
++
++def question_group(number):
++    for maximum, group in [(5, 1), (10, 2), (15, 3), (22, 4), (27, 5), (32, 6), (44, 7), (49, 8), (54, 9)]:
++        if number <= maximum:
++            return group
++    raise ValueError(f'Invalid question number: {number}')
++
++
++def body_words(page_ocr, start_y, end_y):
++    return [word for line in page_ocr['lines'] for word in line['words'] if start_y <= word['y'] < end_y]
++
++
++def crop_image(image, box, target):
++    target.parent.mkdir(parents=True, exist_ok=True)
++    crop = image.crop(tuple(round(value) for value in box))
++    crop.save(target, quality=95, subsampling=0)
++    return '/books/chokuzen_n2/' + target.relative_to(ASSETS).as_posix()
++
++
++def clean_ink(image):
++    gray = cv2.cvtColor(numpy.array(image.convert('RGB')), cv2.COLOR_RGB2GRAY)
++    ink = (gray < 145).astype('uint8')
++    for kernel in [(100, 1), (1, 80)]:
++        ink = cv2.subtract(ink, cv2.morphologyEx(ink, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_RECT, kernel)))
++    return ink
++
++
++def number_rows(ink, left, top, bottom):
++    column = ink[top + 22:int(bottom), left + 17:left + 29].sum(axis=1) > 0
++    rows = []
++    start = None
++    for offset, active in enumerate(column):
++        if active and start is None:
++            start = offset
++        elif not active and start is not None:
++            if 7 <= offset - start <= 16:
++                rows.append(top + 22 + start)
++            start = None
++    return rows
++
++
++def extract_choices(image, ink, words, left, top, bottom, number, set_number):
++    base_x = left + 20
++    anchors = [word for word in words if word['text'] in ['1', '2', '3', '4'] and word['y'] > top + 21 and word['height'] >= 6]
++    modes = {'horizontal': [(0, 0), (150, 0), (302, 0), (454, 0)], 'two-row': [(0, 0), (302, 0), (0, 30.5), (302, 30.5)]}
++    if 28 <= number <= 32:
++        modes = {'vertical': [(0, 0), (0, 30.5), (0, 61), (0, 91.5)]}
++    best = None
++    for mode, positions in modes.items():
++        for word in anchors:
++            choice = int(word['text']) - 1
++            delta_x, delta_y = positions[choice]
++            if abs(word['x'] - base_x - delta_x) > 17:
++                continue
++            baseline = word['y'] - delta_y
++            hits = sum(any(
++                candidate['text'] == str(index + 1)
++                and abs(candidate['x'] - base_x - column) < 17
++                and abs(candidate['y'] - baseline - row) < 8
++                for candidate in anchors
++            ) for index, (column, row) in enumerate(positions))
++            score = (hits, -abs(baseline - top - 32))
++            if best is None or score > best[0]:
++                best = (score, mode, baseline, positions)
++    if best is None:
++        mode = 'vertical' if 28 <= number <= 32 else 'horizontal'
++        positions = modes.get(mode, next(iter(modes.values())))
++        baseline = top + 31
++        best = ((0, 0), mode, baseline, positions)
++    _, mode, baseline, positions = best
++    detected_rows = number_rows(ink, left, top, bottom)
++    if len(detected_rows) == 4:
++        mode = 'vertical'
++        baseline = detected_rows[0]
++        positions = [(0, ypos - baseline) for ypos in detected_rows]
++    elif best[0][0] < 2 and detected_rows:
++        baseline = detected_rows[0]
++        if len(detected_rows) == 2:
++            mode = 'two-row'
++            spacing = detected_rows[1] - detected_rows[0]
++            positions = [(0, 0), (302, 0), (0, spacing), (302, spacing)]
++    images = []
++    texts = []
++    for index, (column, row) in enumerate(positions):
++        option_left = base_x + column - 4
++        option_top = baseline + row - 11
++        option_width = 147 if mode == 'horizontal' else 298 if mode == 'two-row' else image.width - option_left - 40
++        following_rows = [next_row for _, next_row in positions if next_row > row]
++        option_bottom = min(bottom, baseline + min(following_rows) - 7) if following_rows else bottom
++        if mode == 'horizontal':
++            option_bottom = min(bottom, baseline + row + 25)
++        if option_bottom <= option_top:
++            raise ValueError(f'Invalid option crop for set {set_number}, question {number}, option {index + 1}.')
++        option_words = sorted((word for word in words if option_left + 16 < word['x'] < option_left + option_width and baseline + row - 5 <= word['y'] <= baseline + row + 16), key=lambda item: item['x'])
++        text = ''.join(word['text'] for word in option_words).strip()
++        texts.append(text or f'選択肢{index + 1}')
++        images.append(crop_image(image, (option_left, option_top, min(image.width - 25, option_left + option_width), option_bottom), ASSETS / 'options' / f'set-{set_number}-q-{number}-option-{index + 1}.jpeg'))
++    return texts, images, {'layout': mode, 'anchorsRecognized': best[0][0], 'numberRows': detected_rows, 'baseline': round(baseline, 2)}
++
++
++def main():
++    source = read_json(DATA / 'source.json')
++    answer_keys = {}
++    for target in ['answer_keys_1_8.json', 'answer_keys_9_15.json']:
++        if (DATA / target).exists():
++            answer_keys.update({item['id']: item for item in read_json(DATA / target)['sets']})
++    proofread_sets = {}
++    for target in sorted(DATA.glob('proofread_sets_*.json')):
++        for proofread_set in read_json(target)['sets']:
++            if proofread_set['id'] in proofread_sets:
++                raise ValueError(f'Duplicate proofreading overlay for {proofread_set["id"]}.')
++            proofread_sets[proofread_set['id']] = proofread_set
++    sets = []
++    layout = []
++    for set_number in range(1, 16):
++        set_id = f'set-{set_number}'
++        key = answer_keys.get(set_id)
++        proofread_set = proofread_sets.get(set_id, {})
++        proofread_questions = {question['number']: question for question in proofread_set.get('questions', [])}
++        questions = []
++        source_pages = []
++        passage_page = printed_to_pdf(8 + (set_number - 1) * 10 + 8)
++        passage_image = Image.open(source_image(passage_page))
++        passage_path = crop_image(passage_image, (45, 145, 835, 1050), ASSETS / 'passages' / f'{set_id}.jpeg')
++        passage_ocr = read_json(WORK / 'ocr' / f'page-{passage_page:03d}.json')
++        passage_text = '\n'.join(line['text'] for line in passage_ocr['lines'] if 245 < line['y'] < 1070)
++        for offset, expected in enumerate(QUESTIONS_PER_PAGE):
++            printed_page = 8 + (set_number - 1) * 10 + offset
++            page_number = printed_to_pdf(printed_page)
++            source_pages.append(page_number)
++            if expected == 0:
++                continue
++            markers = find_markers(page_number, printed_page, offset)
++            page_ocr = read_json(WORK / 'ocr' / f'page-{page_number:03d}.json')
++            image = Image.open(source_image(page_number))
++            ink = clean_ink(image)
++            layout.append({'set': set_number, 'page': page_number, 'printedPage': printed_page, 'markers': markers})
++            for rank, (left, top) in enumerate(markers):
++                number = len(questions) + 1
++                next_top = markers[rank + 1][1] - 19 if rank + 1 < len(markers) else 1125
++                if number in [5, 10, 27]:
++                    next_top = min(next_top, top + 99)
++                words = body_words(page_ocr, top - 14, next_top)
++                content_bottom = max((word['y'] + word['height'] for word in words), default=top + 70)
++                ink_rows = ink[top:int(next_top), left + 15:min(image.width - 30, left + 735)].sum(axis=1)
++                occupied_rows = ink_rows.nonzero()[0]
++                if len(occupied_rows):
++                    content_bottom = max(content_bottom, top + int(occupied_rows[-1]) + 1)
++                bottom = min(next_top, content_bottom + 14)
++                question_image = crop_image(image, (left - 10, top - 15, min(image.width - 30, left + 735), bottom), ASSETS / 'questions' / f'{set_id}-q-{number}.jpeg')
++                options, option_images, choice_detection = extract_choices(image, ink, words, left, top, bottom, number, set_number)
++                group = question_group(number)
++                question_lines = [line for line in page_ocr['lines'] if top - 12 < line['y'] < choice_detection['baseline'] - 7 and line['x'] >= left - 5]
++                question_text = '\n'.join(line['text'] for line in question_lines)
++                if group == 9:
++                    question_text = ''
++                correct_index = key['answers'][number - 1] - 1 if key else None
++                explanation = key.get('explanations', {}).get(str(number), '') if key else ''
++                if correct_index is not None:
++                    explanation = f'【正解】{correct_index + 1}（{options[correct_index]}）<br/>' + explanation
++                record = {
++                    'id': f'n2-{set_id}-q-{number}',
++                    'number': number,
++                    'questionText': question_text,
++                    'questionImage': question_image,
++                    'options': options,
++                    'optionImages': option_images,
++                    'correctIndex': correct_index,
++                    'correctOption': options[correct_index] if correct_index is not None else None,
++                    'sectionType': 'vocabulary-kanji' if number <= 32 else 'grammar-reading',
++                    'instruction': INSTRUCTIONS[group],
++                    'mondai': group,
++                    'sourcePage': page_number,
++                    'printedPage': printed_page,
++                    'sourceBounds': [left - 10, top - 15, min(image.width - 30, left + 735), round(bottom)],
++                    'explanation': explanation,
++                    'explanationPage': key['answerPage'] if key else None,
++                    'explanationImage': f'/books/chokuzen_n2/pages/page-{key["answerPage"]:03d}.jpeg' if key else None,
++                    'verification': {
++                        'sourceImagePreserved': True,
++                        'answerKeyVerified': bool(key and key.get('verified')),
++                        'ocrTextVerified': False,
++                        'optionImageVerified': False,
++                        'choiceDetection': choice_detection,
++                    },
++                }
++                if group == 8 and key:
++                    order = key.get('correctOrders', {}).get(str(number))
++                    if order:
++                        record['correctOrder'] = order
++                        record['starPosition'] = order.index(correct_index + 1) + 1
++                if group == 9:
++                    record['passageImage'] = passage_path
++                    record['passage'] = passage_text
++                    record['passageSourcePage'] = passage_page
++                proofread_question = proofread_questions.get(number)
++                if proofread_question and proofread_question.get('textVerified'):
++                    if len(proofread_question['options']) != 4:
++                        raise ValueError(f'{set_id} Q{number}: proofread options must contain exactly four items.')
++                    record['questionText'] = proofread_question['questionText']
++                    record['options'] = proofread_question['options']
++                    record['correctOption'] = record['options'][correct_index] if correct_index is not None else None
++                    record['verification']['ocrTextVerified'] = True
++                    if group == 9 and proofread_set.get('passageVerified'):
++                        record['passage'] = proofread_set['passage']
++                        record['verification']['passageTextVerified'] = True
++                if correct_index is not None:
++                    answer_label = f'【正解】{correct_index + 1}'
++                    if record['verification']['ocrTextVerified']:
++                        answer_label += f'（{record["correctOption"]}）'
++                    printed_explanation = key.get('explanations', {}).get(str(number), '')
++                    record['explanation'] = answer_label + (f'<br/>{printed_explanation}' if printed_explanation else '')
++                questions.append(record)
++        if len(questions) != 54:
++            raise ValueError(f'{set_id}: expected 54 questions, found {len(questions)}.')
++        sets.append({
++            'id': set_id,
++            'title': f'第{set_number}回 模擬テスト',
++            'description': f'第{set_number}回　文字・語彙・文法',
++            'sourcePages': source_pages,
++            'timeLimitMinutes': 45,
++            'sections': {
++                'vocabulary-kanji': {'title': 'Vocabulary and Kanji', 'titleJa': '文字・語彙', 'questions': questions[:32]},
++                'grammar-reading': {'title': 'Grammar', 'titleJa': '文法', 'questions': questions[32:]},
++            },
++        })
++    for page in source['pages']:
++        ocr = read_json(WORK / 'ocr' / f'page-{page["page"]:03d}.json')
++        page['text'] = '\n'.join(line['text'] for line in ocr['lines'])
++        page['textVerified'] = False
++    source['pageOrderCorrections'] = {str(key): value for key, value in PAGE_ORDER_CORRECTIONS.items()}
++    book = {
++        'id': 'jlpt-n2-practice-sets',
++        'title': '直前対策 日本語能力試験 N2 文字・語彙・文法',
++        'level': 'N2',
++        'category': 'Chokuzen Taisaku',
++        'totalQuestions': 810,
++        'totalChapters': 15,
++        'coverUrl': '/books/chokuzen_n2/cover.jpeg',
++        'contentMode': 'source-preserved-with-searchable-ocr',
++        'source': source,
++        'sets': sets,
++    }
++    cover = Image.open(source_image(211))
++    crop_image(cover, (165, 150, 720, 1090), ASSETS / 'cover.jpeg')
++    write_json(DATA / 'book.json', book)
++    write_json(WORK / 'layout.json', layout)
++    print(f'Created {len(sets)} tests, {sum(len(section["questions"]) for item in sets for section in item["sections"].values())} questions, and {len(source["pages"])} source pages.')
++    print(f'Answer keys available for {len(answer_keys)}/15 tests.')
++    verified_count = sum(question['verification']['ocrTextVerified'] for item in sets for section in item['sections'].values() for question in section['questions'])
++    print(f'Proofread Japanese text: {verified_count}/810 questions; other text remains draft OCR.')
++
++
++if __name__ == '__main__':
++    main()
+diff --git a/scripts/chokuzen_n2/verify_book.py b/scripts/chokuzen_n2/verify_book.py
+new file mode 100644
+--- /dev/null
++++ b/scripts/chokuzen_n2/verify_book.py
+@@ -0,0 +1,174 @@
++import argparse
++import json
++import re
++from html.parser import HTMLParser
++from pathlib import Path
++
++from PIL import Image
++
++
++ROOT = Path(__file__).resolve().parents[2]
++DATA = ROOT / 'src' / 'data' / 'chokuzen_n2'
++
++
++class MarkupValidator(HTMLParser):
++    def __init__(self):
++        super().__init__()
++        self.stack = []
++        self.errors = []
++
++    def handle_starttag(self, tag, attrs):
++        if tag in ['ruby', 'rt', 'u', 'b']:
++            self.stack.append(tag)
++
++    def handle_endtag(self, tag):
++        if tag in ['ruby', 'rt', 'u', 'b']:
++            if not self.stack or self.stack.pop() != tag:
++                self.errors.append(f'Unbalanced {tag} tag')
++
++
++def audit(book):
++    errors = []
++    summaries = []
++    all_ids = set()
++    question_count = 0
++    for test in book.get('sets', []):
++        test_errors = []
++        questions = [question for section in test['sections'].values() for question in section['questions']]
++        expected_numbers = list(range(1, 55))
++        if [question['number'] for question in questions] != expected_numbers:
++            test_errors.append('Question numbers must be 1 through 54 in order.')
++        if len(test['sections']['vocabulary-kanji']['questions']) != 32:
++            test_errors.append('Expected 32 vocabulary questions.')
++        if len(test['sections']['grammar-reading']['questions']) != 22:
++            test_errors.append('Expected 22 grammar questions.')
++        for question in questions:
++            label = f'{test["id"]} Q{question["number"]}'
++            if question['id'] in all_ids:
++                test_errors.append(f'{label}: duplicate question ID.')
++            all_ids.add(question['id'])
++            if len(question.get('options', [])) != 4 or any(not option for option in question['options']):
++                test_errors.append(f'{label}: exactly four nonempty options are required.')
++            if type(question.get('correctIndex')) is not int or not 0 <= question['correctIndex'] <= 3:
++                test_errors.append(f'{label}: invalid correctIndex.')
++            elif question.get('correctOption') != question['options'][question['correctIndex']]:
++                test_errors.append(f'{label}: correctOption does not match options[correctIndex].')
++            if not question.get('explanation'):
++                test_errors.append(f'{label}: missing answer/explanation.')
++            if not question.get('verification', {}).get('answerKeyVerified'):
++                test_errors.append(f'{label}: printed answer key has not been verified.')
++            if question.get('mondai') == 9:
++                if question.get('questionText') != '':
++                    test_errors.append(f'{label}: text-grammar questionText must be empty.')
++                if not question.get('passageImage') or not question.get('passageSourcePage'):
++                    test_errors.append(f'{label}: missing shared passage.')
++            if 'correctOrder' in question:
++                order = question['correctOrder']
++                if sorted(order) != [1, 2, 3, 4]:
++                    test_errors.append(f'{label}: invalid sentence order.')
++                elif order[question['starPosition'] - 1] != question['correctIndex'] + 1:
++                    test_errors.append(f'{label}: star position does not match the printed answer.')
++            for field in ['questionText', 'explanation', 'passage']:
++                validator = MarkupValidator()
++                validator.feed(question.get(field, ''))
++                if validator.stack or validator.errors:
++                    test_errors.append(f'{label}: invalid HTML in {field}.')
++            for index, option in enumerate(question['options']):
++                validator = MarkupValidator()
++                validator.feed(option)
++                if validator.stack or validator.errors:
++                    test_errors.append(f'{label}: invalid HTML in option {index + 1}.')
++            if question['verification'].get('ocrTextVerified') and question.get('mondai') == 8:
++                before_star = question['questionText'].split('★', 1)[0]
++                if '★' not in question['questionText'] or len(re.findall('＿＿＿', before_star)) + 1 != question['starPosition']:
++                    test_errors.append(f'{label}: transcribed star blank position is incorrect.')
++            paths = [question.get('questionImage'), question.get('explanationImage'), question.get('passageImage')]
++            option_images = question.get('optionImages', [])
++            if len(option_images) != 4:
++                test_errors.append(f'{label}: expected four source option images.')
++            for asset in paths + option_images:
++                if not asset:
++                    continue
++                target = ROOT / 'public' / asset.lstrip('/')
++                if not target.is_file():
++                    test_errors.append(f'{label}: missing asset {asset}.')
++                    continue
++                with Image.open(target) as image:
++                    if image.width < 30 or image.height < 18:
++                        test_errors.append(f'{label}: asset is too small: {asset}.')
++            if len(question.get('sourceBounds', [])) != 4:
++                test_errors.append(f'{label}: source crop provenance is missing.')
++        question_count += len(questions)
++        errors.extend(test_errors)
++        summaries.append({
++            'id': test['id'],
++            'questions': len(questions),
++            'vocabularyQuestions': len(test['sections']['vocabulary-kanji']['questions']),
++            'grammarQuestions': len(test['sections']['grammar-reading']['questions']),
++            'errors': test_errors,
++            'printedExplanations': sum(33 <= question['number'] <= 49 for question in questions),
++            'ocrTextPending': sum(not question.get('verification', {}).get('ocrTextVerified') for question in questions),
++            'optionImagesPending': sum(not question.get('verification', {}).get('optionImageVerified') for question in questions),
++        })
++    if len(book.get('sets', [])) != 15 or question_count != 810:
++        errors.append('Expected 15 tests and 810 questions.')
++    pages = book.get('source', {}).get('pages', [])
++    if len(pages) != 240 or [page['page'] for page in pages] != list(range(1, 241)):
++        errors.append('Expected 240 source pages in PDF order.')
++    for page in pages:
++        if not (ROOT / 'public' / page['image'].lstrip('/')).is_file():
++            errors.append(f'Missing source page {page["page"]}.')
++    return {'errors': errors, 'sets': summaries, 'questionCount': question_count, 'sourcePages': len(pages)}
++
++
++def write_checklists(report):
++    directory = ROOT / 'scripts' / 'chokuzen_n2' / 'checklists'
++    directory.mkdir(parents=True, exist_ok=True)
++    for summary in report['sets']:
++        passed = not summary['errors']
++        marker = 'x' if passed else ' '
++        content = [
++            f'# Chokuzen N2 {summary["id"]}',
++            '',
++            f'- [{marker}] 54 questions: 32 vocabulary and 22 grammar.',
++            f'- [{marker}] Exactly four options and matching zero-based correctIndex/correctOption.',
++            f'- [{marker}] Printed answer key checked against the source answer booklet.',
++            f'- [{marker}] Source images, choice images, and passage links exist.',
++            f'- [{marker}] Original underlines, brackets, furigana, and star blanks retained in scans.',
++            f'- [{marker}] Shared text-grammar passage linked to Q50-54; empty question stems retained.',
++            f'- [{marker}] Answer references and printed grammar explanations are attached.',
++            f'- [{marker}] Balanced ruby/underline/explanation HTML; stable unique question IDs.',
++            f'- [{"x" if summary["ocrTextPending"] == 0 else " "}] Every OCR stem and choice proofread character by character.',
++            '- [ ] Every individual option crop visually reviewed.',
++            '- [ ] This test manually reviewed in desktop and mobile UI.',
++            '',
++            'The scanned source is the authoritative reading view. Searchable OCR is a draft.',
++            'The source prints grammar explanations for Q33-49; the remaining questions have answer-key references.',
++            'Unchecked gates must stay unchecked until their evidence exists.',
++            '',
++        ]
++        (directory / f'{summary["id"]}.md').write_text('\n'.join(content), encoding='ascii')
++
++
++def main():
++    parser = argparse.ArgumentParser()
++    parser.add_argument('--checklists', action='store_true')
++    parser.add_argument('--require-proofread', action='store_true')
++    arguments = parser.parse_args()
++    book = json.loads((DATA / 'book.json').read_text(encoding='utf-8'))
++    report = audit(book)
++    if arguments.require_proofread and any(summary['ocrTextPending'] for summary in report['sets']):
++        report['errors'].append('Full digitization gate: OCR text still requires proofreading.')
++    if arguments.checklists:
++        write_checklists(report)
++    (ROOT / 'tmp_inspect' / 'chokuzen_n2' / 'audit.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
++    for summary in report['sets']:
++        print(f'{summary["id"]}: {summary["questions"]} questions, {len(summary["errors"])} structural errors, {summary["ocrTextPending"]} OCR records pending review')
++    print(f'Total: {report["questionCount"]} questions, {report["sourcePages"]} source pages, {len(report["errors"])} errors')
++    for error in report['errors'][:30]:
++        print(error)
++    raise SystemExit(1 if report['errors'] else 0)
++
++
++if __name__ == '__main__':
++    main()
+diff --git a/scripts/chokuzen_n2/verify_ui.mjs b/scripts/chokuzen_n2/verify_ui.mjs
+new file mode 100644
+--- /dev/null
++++ b/scripts/chokuzen_n2/verify_ui.mjs
+@@ -0,0 +1,133 @@
++import assert from 'node:assert/strict';
++import fs from 'node:fs';
++import path from 'node:path';
++import puppeteer from 'puppeteer';
++
++const baseUrl = 'http://127.0.0.1:5174/nihongo_playground/';
++const output = path.resolve('tmp_inspect/chokuzen_n2');
++fs.mkdirSync(output, { recursive: true });
++const browser = await puppeteer.launch({
++  executablePath: process.env.CHROME_PATH || 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
++  headless: true,
++  args: ['--no-sandbox', '--disable-gpu'],
++  userDataDir: path.join(output, 'browser-profile'),
++});
++const page = await browser.newPage();
++const errors = [];
++page.on('pageerror', error => errors.push(error.message));
++page.on('dialog', dialog => dialog.accept());
++const book = JSON.parse(fs.readFileSync('src/data/chokuzen_n2/book.json', 'utf8'));
++
++async function navigate(route) {
++  console.log(`Checking ${route}`);
++  await page.goto(`${baseUrl}#${route}`, { waitUntil: 'networkidle2', timeout: 60000 });
++  await page.waitForSelector('.cn2-book', { timeout: 30000 });
++}
++
++async function waitForImages() {
++  await page.waitForFunction(() => Array.from(document.querySelectorAll('.cn2-question-card img')).filter(image => image.offsetParent !== null && !image.closest('details:not([open])')).every(image => image.complete && image.naturalWidth > 0));
++}
++
++try {
++  await page.setViewport({ width: 1440, height: 1000 });
++  await navigate('/n2-practice-sets');
++  await page.waitForSelector('.cn2-set-card');
++  await page.evaluate(() => {
++    Object.keys(localStorage).filter(key => key.startsWith('chokuzen-n2:')).forEach(key => localStorage.removeItem(key));
++  });
++  await page.reload({ waitUntil: 'networkidle2' });
++  await page.waitForSelector('.cn2-set-card');
++  assert.equal(await page.$$eval('.cn2-set-card', cards => cards.length), 15);
++  await page.screenshot({ path: path.join(output, 'ui-overview.png'), fullPage: true });
++
++  for (const set of book.sets) {
++    for (const route of ['vocabulary-kanji', 'grammar']) {
++      await navigate(`/n2-practice-sets/${set.id}/${route}`);
++      await page.waitForSelector('.cn2-choice');
++      await waitForImages();
++      assert.equal(await page.$$eval('.cn2-choice', choices => choices.length), 4);
++      const expected = route === 'grammar' ? 33 : 1;
++      assert.match(await page.$eval('#cn2-question-heading', heading => heading.textContent), new RegExp(`Question ${expected}$`));
++      assert.equal(await page.$('.cn2-feedback'), null);
++    }
++  }
++
++  await navigate('/n2-practice-sets/set-1/vocabulary-kanji');
++  const firstQuestion = book.sets[0].sections['vocabulary-kanji'].questions[0];
++  await page.click(`[aria-label="Choose printed option ${firstQuestion.correctIndex + 1}"]`);
++  await page.waitForSelector('.cn2-feedback');
++  assert.equal(await page.$$eval('.cn2-choice--correct', choices => choices.length), 1);
++  await page.reload({ waitUntil: 'networkidle2' });
++  await page.waitForSelector('.cn2-feedback');
++  assert.equal(await page.$eval('.cn2-choice--correct', choice => choice.getAttribute('aria-pressed')), 'true');
++  await page.screenshot({ path: path.join(output, 'ui-answered-desktop.png'), fullPage: true });
++  await page.click('[aria-label^="Question 13,"]');
++  assert.equal(await page.$$eval('.cn2-stem ruby', ruby => ruby.length), 1);
++  await page.click('[aria-label^="Question 16,"]');
++  assert.equal(await page.$$eval('.cn2-choices ruby', ruby => ruby.length), 2);
++
++  await navigate('/n2-practice-sets/set-1/grammar');
++  await page.click('[aria-label^="Question 45,"]');
++  await waitForImages();
++  assert.match(await page.$eval('#cn2-question-heading', heading => heading.textContent), /Question 45/);
++  const starQuestion = book.sets[0].sections['grammar-reading'].questions.find(question => question.number === 45);
++  await page.click(`[aria-label="Choose printed option ${starQuestion.correctIndex + 1}"]`);
++  await page.waitForSelector('.cn2-feedback');
++  assert.doesNotMatch(await page.$eval('.cn2-feedback', feedback => feedback.innerText), /<br\s*\/?>|<b>|<u\s/);
++  await page.click('[aria-label^="Question 50,"]');
++  await waitForImages();
++  assert.equal(await page.$$eval('.cn2-question-card .cn2-question-scan', frames => frames.length), 2);
++  assert.equal(await page.$$eval('.cn2-passage', passages => passages.length), 1);
++  await page.screenshot({ path: path.join(output, 'ui-passage-desktop.png'), fullPage: true });
++
++  await page.setViewport({ width: 390, height: 844, isMobile: true, hasTouch: true });
++  await navigate('/n2-practice-sets/set-1/vocabulary-kanji');
++  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), true);
++  await page.screenshot({ path: path.join(output, 'ui-native-text-mobile.png'), fullPage: true });
++  await navigate('/n2-practice-sets/set-15/vocabulary-kanji');
++  await waitForImages();
++  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), true);
++  await page.screenshot({ path: path.join(output, 'ui-quiz-mobile.png'), fullPage: true });
++  await navigate('/n2-practice-sets');
++  await page.waitForSelector('.cn2-set-card');
++  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1), true);
++  await page.screenshot({ path: path.join(output, 'ui-overview-mobile.png'), fullPage: true });
++
++  await page.emulateMediaFeatures([{ name: 'prefers-color-scheme', value: 'dark' }]);
++  await page.evaluate(() => document.documentElement.classList.add('dark'));
++  await navigate('/n2-practice-sets/set-1/grammar');
++  await waitForImages();
++  await page.screenshot({ path: path.join(output, 'ui-quiz-dark-mobile.png'), fullPage: true });
++
++  await navigate('/n2-practice-sets?reader=1&page=240');
++  await page.waitForSelector('.cn2-reader');
++  assert.equal(await page.$$eval('.cn2-reader img', images => images.length), 1);
++  await page.screenshot({ path: path.join(output, 'ui-reader-mobile.png'), fullPage: true });
++
++  await page.evaluateOnNewDocument(() => { window.__MOCK_USER__ = { uid: 'n2-local-preview', displayName: 'Local Preview' }; });
++  await navigate('/n2-practice-sets');
++  await page.reload({ waitUntil: 'networkidle2' });
++  await page.waitForSelector('.cn2-set-card');
++  await page.evaluate(attempt => {
++    localStorage.setItem('chokuzen-n2:dev:v1:n2-local-preview', JSON.stringify({ [attempt.quizId]: attempt }));
++  }, {
++    quizId: 'jlpt-n2-practice-sets-set-1-vocabulary-kanji',
++    answers: Object.fromEntries(book.sets[0].sections['vocabulary-kanji'].questions.map(question => [question.id, question.correctIndex])),
++    total: 32,
++    answered: 32,
++    score: 32,
++    timestamp: new Date().toISOString(),
++  });
++  await page.goto(`${baseUrl}#/books`, { waitUntil: 'networkidle2', timeout: 60000 });
++  await page.waitForSelector('a.group\\/btn[href="#/n2-practice-sets"]');
++  const coverText = await page.$eval('a.group\\/btn[href="#/n2-practice-sets"]', link => link.parentElement.parentElement.innerText);
++  assert.match(coverText, /4%/);
++  assert.deepEqual(errors, []);
++  console.log('PASS: 15 tests, 30 section routes, four choices, saved answers, sentence ordering, shared passage, source reader, desktop and mobile layout.');
++} catch (error) {
++  console.error(JSON.stringify({ browserErrors: errors, url: page.url(), body: await page.$eval('body', body => body.innerText).catch(() => '') }));
++  await page.screenshot({ path: path.join(output, 'ui-failure.png'), fullPage: true }).catch(() => {});
++  throw error;
++} finally {
++  await browser.close();
++}

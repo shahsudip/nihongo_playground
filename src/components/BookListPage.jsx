@@ -12,6 +12,7 @@ import {
   selectPreferredAttempt,
 } from '../utils/bookProgress.js';
 import { STATIC_BOOKS } from '../data/static_books_catalog.js';
+import { readAttempts as readN2Attempts, storageKeyFor as n2StorageKeyFor } from '../utils/chokuzenN2Data.js';
 
 import coverN1 from '../assets/shin_cover_n1.jpg';
 import coverN2 from '../assets/shin_cover_n2.jpg';
@@ -26,11 +27,21 @@ import tangoN2Cover from '../assets/tango_n2_cover.jpg';
 import tangoN3Cover from '../assets/tango_n3_cover.jpg';
 
 const N3_PRACTICE_BOOK_ID = 'jlpt-n3-practice-sets';
+const N2_PRACTICE_BOOK_ID = 'jlpt-n2-practice-sets';
 const NIHONGO_NO_MORI_BOOK_ID = 'nihongo-no-mori-n3';
 const NIHONGO_NO_MORI_TOTAL_QUESTIONS = 500;
 const NIHONGO_NO_MORI_SECTION_COUNT = 19;
 
 const QUESTION_PROGRESS_BOOKS = {
+  [N2_PRACTICE_BOOK_ID]: {
+    unitCount: 15,
+    totalQuestions: 810,
+    getUnitId: unitNumber => `set-${unitNumber}`,
+    getSectionRecords: (history, unitKey) => [
+      history[`${unitKey}-vocabulary-kanji`],
+      selectPreferredAttempt(history[`${unitKey}-grammar`], history[`${unitKey}-grammar-reading`]),
+    ],
+  },
   'first-time-jlpt-n3-350-kanji': {
     unitCount: 7,
     totalQuestions: 280,
@@ -162,6 +173,9 @@ const getNihongoNoMoriProgress = (history) => {
 
 const loadLocalHistory = (currentUser = null) => {
   const historyMap = {};
+  Object.entries(readN2Attempts(n2StorageKeyFor(currentUser?.uid))).forEach(([quizId, record]) => {
+    addHistoryRecord(historyMap, quizId, record);
+  });
   try {
     const storedHistory = JSON.parse(localStorage.getItem('quizHistory') || '[]');
     const records = Array.isArray(storedHistory) ? storedHistory : Object.values(storedHistory || {});
@@ -238,6 +252,7 @@ const BookListPage = () => {
             if (data && (
               data.type === 'book'
               || data.bookId === N3_PRACTICE_BOOK_ID
+              || data.bookId === N2_PRACTICE_BOOK_ID
               || data.quizId?.startsWith(N3_PRACTICE_BOOK_ID)
             )) {
               userHistory[data.quizId] = data;

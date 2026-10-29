@@ -1,0 +1,554 @@
+{
+  "n2-set-1-q-1": {
+    "translation": "When she was a child, she was strictly taught manners and etiquette at home.",
+    "correctAnswerEnglish": "gyougi - manners or proper behavior",
+    "choices": [
+      {
+        "romaji": "kougi",
+        "reason": "This uses the on-yomi kou for 行 instead of gyou. The sound matches other words such as 講義 (lecture) and 抗議 (protest), not the reading of 行儀."
+      },
+      {
+        "romaji": "kouki",
+        "reason": "This uses kou for 行 and leaves 儀 unvoiced as ki. The sound matches other words such as 後期 (latter period) and 好機 (good opportunity)."
+      },
+      {
+        "romaji": "gyougi",
+        "reason": "行儀 is read gyougi and means manners or proper behavior. 行儀がいい means well-mannered; 行儀が悪い means ill-mannered; 行儀作法 means etiquette."
+      },
+      {
+        "romaji": "gyouki",
+        "reason": "The first kanji has the right reading gyou, but the second needs the voiced sound gi, not ki."
+      }
+    ]
+  },
+  "n2-set-1-q-2": {
+    "translation": "Winning the international competition changed the young musician's life in an instant.",
+    "correctAnswerEnglish": "isshun - an instant or a moment",
+    "choices": [
+      {"romaji": "ichishun", "reason": "一 can be read ichi elsewhere, but 一瞬 is pronounced isshun, with a doubled s sound."},
+      {"romaji": "itsushun", "reason": "This changes the first syllables and does not give the established reading of 一瞬."},
+      {"romaji": "ijjun", "reason": "This voices the second kanji as jun; 瞬 is read shun in 一瞬."},
+      {"romaji": "isshun", "reason": "This is the standard reading of 一瞬. 一瞬にして means in an instant or suddenly."}
+    ]
+  },
+  "n2-set-1-q-3": {
+    "translation": "Drawn in by the words 'only a few left,' I ended up buying something on a TV shopping program without thinking.",
+    "correctAnswerEnglish": "sasowarete - being lured or enticed",
+    "choices": [
+      {"romaji": "sasowarete", "reason": "誘われて is the passive form of 誘う (to invite or entice). The sales pitch tempted the speaker to buy."},
+      {"romaji": "osowarete", "reason": "This is the reading of 襲われて (being attacked), not 誘われて."},
+      {"romaji": "torawarete", "reason": "This can mean being captured or preoccupied, but it is not the reading of 誘われて."},
+      {"romaji": "utawarete", "reason": "This is associated with 歌われて (being sung), not the printed word 誘われて."}
+    ]
+  },
+  "n2-set-1-q-4": {
+    "translation": "It used to be a quiet town, but lately there have been many unsettling incidents.",
+    "correctAnswerEnglish": "bussou - unsafe, dangerous, or unsettling",
+    "choices": [
+      {"romaji": "buzzou", "reason": "The second syllable is voiced as zou, but 騒 is read sou in 物騒."},
+      {"romaji": "bussou", "reason": "物騒 is read bussou. 物騒な事件 refers to disturbing or dangerous incidents."},
+      {"romaji": "butsusou", "reason": "This omits the doubled s sound in the established reading bussou."},
+      {"romaji": "butsuzou", "reason": "This both omits the doubled s sound and voices sou as zou."}
+    ]
+  },
+  "n2-set-1-q-5": {
+    "translation": "One reason cited for the low death rate from influenza is the public's high level of hygiene knowledge.",
+    "correctAnswerEnglish": "eisei - hygiene or sanitation",
+    "choices": [
+      {"romaji": "eesei", "reason": "衛 is read ei, not ee, in 衛生."},
+      {"romaji": "eizei", "reason": "The second kanji 生 is read sei here, not zei."},
+      {"romaji": "eisei", "reason": "衛生 is read eisei and means hygiene or sanitation. 衛生知識 means knowledge of hygiene."},
+      {"romaji": "eezei", "reason": "This changes both ei to ee and sei to zei, so it is not the reading of 衛生."}
+    ]
+  },
+  "n2-set-1-q-6": {
+    "translation": "Products that are merely cheap have increasingly lost their appeal to consumers tired of frugal living.",
+    "correctAnswerEnglish": "akirarete - being grown tired of",
+    "choices": [
+      {"reason": "飯 means cooked rice or a meal; it does not write the verb akiru (to tire of)."},
+      {"romaji": "akirarete", "reason": "飽きる means to grow tired of something. 飽きられて is its passive form: the products are becoming tiresome to consumers."},
+      {"reason": "館 means a building or hall; it does not write the verb akiru."},
+      {"reason": "飲 means to drink; it does not write the verb akiru."}
+    ]
+  },
+  "n2-set-1-q-7": {
+    "translation": "The Tale of Genji is a representative work of classical Japanese literature.",
+    "correctAnswerEnglish": "koten / 古典 - classical literature or a classic",
+    "choices": [
+      {"reason": "展 means exhibition. 古展 is not the standard spelling of koten meaning a classic."},
+      {"reason": "箇 is a counter used in expressions such as 箇所. 箇典 is not the word for classical literature."},
+      {"romaji": "koten", "reason": "個展 is pronounced koten but means a solo exhibition, not classical literature. This is a same-sound kanji trap."},
+      {"romaji": "koten", "reason": "古典 means a classic or classical literature. 古典文学 is classical literature."}
+    ]
+  },
+  "n2-set-1-q-8": {
+    "translation": "Instead of only lamenting your shortcomings, you should develop your strengths.",
+    "correctAnswerEnglish": "nageite / 嘆いて - lamenting or grieving over",
+    "choices": [
+      {"reason": "難 means difficulty; 難いて is not the spelling of nageite (lamenting)."},
+      {"romaji": "nageite", "reason": "嘆いて is the te-form of 嘆く (to lament). The sentence contrasts dwelling on faults with developing strengths."},
+      {"reason": "喝 relates to shouting or scolding. 喝いて is not the spelling of nageite."},
+      {"reason": "漢 refers to China or a man in some compounds. 漢いて is not the spelling of nageite."}
+    ]
+  },
+  "n2-set-1-q-9": {
+    "translation": "In today's stressful world, the number of people suffering from depression is increasing sharply.",
+    "correctAnswerEnglish": "gekizou / 激増 - a sharp increase",
+    "choices": [
+      {"romaji": "gekizou", "reason": "激 means intense or sudden, and 増 means increase. 激増する means to increase rapidly."},
+      {"reason": "象 means image, phenomenon, or elephant; 激象 is not the compound for a sharp increase."},
+      {"reason": "劇 means drama or a play. The established compound for a sharp increase uses 激, not 劇."},
+      {"reason": "Neither 劇 nor 象 forms the established word 激増 here."}
+    ]
+  },
+  "n2-set-1-q-10": {
+    "translation": "Thanks to advanced technology, seawater has been turned into fresh water and made drinkable.",
+    "correctAnswerEnglish": "tansui / 淡水 - fresh water",
+    "choices": [
+      {"reason": "単 means single or simple. 単水 is not the word for fresh water."},
+      {"reason": "短 means short. 短水 is not the word for fresh water."},
+      {"romaji": "tansui", "reason": "淡水 means fresh water. 淡水化 is the process of making seawater fresh or drinkable."},
+      {"reason": "探 means to search. 探水 is not the word for fresh water."}
+    ]
+  },
+  "n2-set-1-q-11": {
+    "translation": "Writing characters by hand is said to improve your memory.",
+    "correctAnswerEnglish": "kiokuryoku / 記憶力 - memory ability",
+    "choices": [
+      {"reason": "質 means quality, but 記憶質 is not the natural compound for one's ability to remember."},
+      {"reason": "化 means change or transformation. 記憶化 does not fit the idea of memory ability here."},
+      {"romaji": "kiokuryoku", "reason": "力 means ability or power. 記憶力 is the standard word for memory capacity, which can 高まる (improve)."},
+      {"reason": "性 means nature or tendency. 記憶性 is not the standard word for memory ability in this sentence."}
+    ]
+  },
+  "n2-set-1-q-12": {
+    "translation": "This painting is a representative work of his.",
+    "correctAnswerEnglish": "daihyou-saku / 代表作 - a representative work",
+    "choices": [
+      {"reason": "品 means an item or product. For a painting as an artist's signature work, the standard compound is 代表作."},
+      {"romaji": "daihyou-saku", "reason": "作 means a created work. 代表作 is an artist's notable or representative work."},
+      {"reason": "物 means a thing. 代表物 is not the standard expression for an artist's representative work."},
+      {"reason": "者 means a person. 代表者 means a representative person, not a painting."}
+    ]
+  },
+  "n2-set-1-q-13": {
+    "translation": "This is a protected area for alpine plants.",
+    "correctAnswerEnglish": "hogo-ku / 保護区 - protected area or reserve",
+    "choices": [
+      {"romaji": "hogo-ku", "reason": "区 means district or zone. 保護区 is an area designated for protection, fitting alpine plants."},
+      {"reason": "場 means a place or site, but 保護場 is not the standard term for a protected area."},
+      {"reason": "所 means a place or facility. 保護所 would suggest a facility, not a protected natural zone."},
+      {"reason": "域 means region, but 保護域 is not the standard term used here; 保護区 is."}
+    ]
+  },
+  "n2-set-1-q-14": {
+    "translation": "The official professional baseball season is about to begin.",
+    "correctAnswerEnglish": "公式戦 (koushiki-sen) - an official match or game",
+    "choices": [
+      { "reason": "軍 means an army; 公式軍 is not the term for an official baseball game." },
+      { "reason": "陣 means a camp or formation; 公式陣 does not name a match." },
+      { "romaji": "koushiki-sen", "reason": "戦 means a contest or match. 公式戦 is a formally scheduled game, as opposed to an exhibition game." },
+      { "reason": "権 means a right or authority; 公式権 does not describe a baseball game." }
+    ]
+  },
+  "n2-set-1-q-15": {
+    "translation": "This medicine has the side effect of irritating the stomach.",
+    "correctAnswerEnglish": "副作用 (fukusayou) - a side effect",
+    "choices": [
+      { "reason": "悪 means bad or evil, but 悪作用 is not the standard medical term for a side effect." },
+      { "romaji": "fukusayou", "reason": "副 means secondary. 副作用 is an unintended effect in addition to a medicine's main effect." },
+      { "reason": "複 means multiple or complex; 複作用 is not the standard word for a medicine's side effect." },
+      { "reason": "反 means opposite or anti-. 反作用 means a reaction or counteraction, not the standard term for this medical side effect." }
+    ]
+  },
+  "n2-set-1-q-16": {
+    "translation": "People say history repeats itself, but things almost never repeat in exactly the same way.",
+    "correctAnswerEnglish": "滅多にない (metta ni nai) - almost never happens",
+    "choices": [
+      { "reason": "眼中 means in one's consideration. 眼中にない means to disregard something, not that it rarely happens." },
+      { "romaji": "metta ni nai", "reason": "滅多にない is the fixed expression for something that hardly ever occurs." },
+      { "reason": "まれ means rare, but まれにない is not the natural construction; まれにある would mean it occasionally happens." },
+      { "reason": "たま means occasionally in expressions such as たまに, but たまにない does not fit this sentence." }
+    ]
+  },
+  "n2-set-1-q-17": {
+    "translation": "If the washing machine breaks down this often, there is no choice but to replace it.",
+    "correctAnswerEnglish": "しばしば (shibashiba) - often, repeatedly",
+    "choices": [
+      { "reason": "それぞれ means each or respectively; it does not describe repeated breakdowns." },
+      { "romaji": "shibashiba", "reason": "しばしば means frequently. Repeated failures motivate replacing the machine." },
+      { "reason": "ぞくぞく means one after another, often for people or things arriving, and is not natural for one machine repeatedly breaking down." },
+      { "reason": "とうとう means finally or at last; it describes an eventual outcome rather than frequent failures." }
+    ]
+  },
+  "n2-set-1-q-18": {
+    "translation": "Many elderly people live alone in this area, and there are concerns about security.",
+    "correctAnswerEnglish": "セキュリティー (sekyuriti) - security or safety protection",
+    "choices": [
+      { "romaji": "sekyuriti", "reason": "セキュリティー refers to security or protective measures. セキュリティーに不安がある means there are security concerns." },
+      { "reason": "コンディション means condition or physical state, not protection from threats in this context." },
+      { "reason": "オペレーション means operation or management of a process; it does not naturally express these residents' security concerns." },
+      { "reason": "コンタクト means contact, such as communication or a contact lens, not security." }
+    ]
+  },
+  "n2-set-1-q-19": {
+    "translation": "My dream is to be active on a global stage.",
+    "correctAnswerEnglish": "舞台 (butai) - a stage or arena for activity",
+    "choices": [
+      { "reason": "信頼 means trust; グローバルな信頼で活躍 is not the expression for working internationally." },
+      { "reason": "資本 means capital or assets; it does not provide the figurative arena intended here." },
+      { "romaji": "butai", "reason": "舞台 literally means stage and figuratively means an arena. グローバルな舞台で活躍する means to succeed internationally." },
+      { "reason": "現実 means reality; グローバルな現実で活躍 is not the intended collocation." }
+    ]
+  },
+  "n2-set-1-q-20": {
+    "translation": "The way this house is built is unique to this region.",
+    "correctAnswerEnglish": "独特 (dokutoku) - distinctive or unique to",
+    "choices": [
+      { "romaji": "dokutoku", "reason": "独特 means distinctive. この地方独特のもの means something characteristic of this area." },
+      { "reason": "格別 means exceptional or especially, but 地方格別のもの is not the natural phrase for a local building style." },
+      { "reason": "特例 means an exception to a rule, not a distinctive regional style." },
+      { "reason": "特殊 means special or unusual, but この地方特殊のもの is not the standard collocation; 独特 specifically means unique to this place." }
+    ]
+  },
+  "n2-set-1-q-21": {
+    "translation": "While repairing the roof, we decided to install a solar power generation system.",
+    "correctAnswerEnglish": "修繕 (shuuzen) - repair or maintenance of a building",
+    "choices": [
+      { "reason": "調節 means adjustment, such as changing a level or setting; it does not mean repairing a roof." },
+      { "reason": "管理 means management or upkeep in a broad sense, not the specific repair implied by the work on the roof." },
+      { "reason": "修正 means correction of an error or revision of text or plans, not repairing physical damage to a roof." },
+      { "romaji": "shuuzen", "reason": "修繕 means to repair a damaged building or object. 屋根を修繕する is a natural collocation." }
+    ]
+  },
+  "n2-set-1-q-22": {
+    "translation": "I use clippings from newspaper cooking articles as a reference when planning meals.",
+    "correctAnswerEnglish": "切り抜き (kirinuki) - a clipping cut from a newspaper or magazine",
+    "choices": [
+      { "romaji": "kirinuki", "reason": "切り抜き is a clipping removed from a newspaper or magazine, which can be saved for reference." },
+      { "reason": "切り取り means cutting or tearing off a portion, but it does not specifically name a saved newspaper clipping here." },
+      { "reason": "書き取り means dictation or writing down what one hears, not an article cut out of a paper." },
+      { "reason": "選り抜き means a selection of the best items, not a physical newspaper clipping." }
+    ]
+  },
+  "n2-set-1-q-23": {
+    "translation": "This private railway connects with JR at the next station.",
+    "correctAnswerEnglish": "つながっている (tsunagatte iru) - is connected",
+    "choices": [
+      { "reason": "乗り換えになる refers to a transfer; it is related to rail travel but does not directly mean that the lines connect." },
+      { "reason": "交差している means crossing or intersecting; mere crossing does not imply a connecting service." },
+      { "reason": "一体化している means being integrated into one; the private line and JR remain separate systems." },
+      { "romaji": "tsunagatte iru", "reason": "連絡している means the lines link or connect at the station. つながっている is the matching paraphrase." }
+    ]
+  },
+  "n2-set-1-q-24": {
+    "translation": "The election prediction turned out to be wrong.",
+    "correctAnswerEnglish": "当たらなかった (ataranakatta) - did not turn out to be correct",
+    "choices": [
+      { "reason": "騒がれた means caused a stir or was talked about; it says nothing about whether the prediction was right." },
+      { "reason": "おかしかった means was strange or funny, not that the forecast failed." },
+      { "romaji": "ataranakatta", "reason": "予想が外れた means the prediction missed. 当たらなかった expresses the same result in the negative." },
+      { "reason": "難しかった means was difficult; a difficult prediction might still be correct." }
+    ]
+  },
+  "n2-set-1-q-25": {
+    "translation": "Even though I took a shortcut, it ended up taking more time instead.",
+    "correctAnswerEnglish": "逆に (gyaku ni) - conversely or instead",
+    "choices": [
+      { "reason": "非常に means very or extremely; it gives degree, not an unexpected reversal." },
+      { "reason": "改めて means anew or once again; it does not express a contrary outcome." },
+      { "romaji": "gyaku ni", "reason": "かえって means contrary to expectation. 逆に captures the reversal: a shortcut took longer." },
+      { "reason": "多少 means somewhat or to some extent, not the opposite of the expected result." }
+    ]
+  },
+  "n2-set-1-q-26": {
+    "translation": "To state my opinion plainly, I am opposed to that proposal.",
+    "correctAnswerEnglish": "率直に (socchoku ni) - frankly or candidly",
+    "choices": [
+      { "romaji": "socchoku ni", "reason": "はっきり means clearly or plainly here. 率直に means speaking frankly without hiding one's view." },
+      { "reason": "適当に means suitably or casually, sometimes carelessly; it does not mean expressing one's position clearly." },
+      { "reason": "簡単に means simply or briefly, but a brief opinion need not be candid or unambiguous." },
+      { "reason": "自由に means freely; it concerns permission, not clarity or frankness of speech." }
+    ]
+  },
+  "n2-set-1-q-27": {
+    "translation": "The supervisor came to work on a day off and covered for the subordinate's delayed work.",
+    "correctAnswerEnglish": "補った (oginatta) - made up for or compensated for a shortfall",
+    "choices": [
+      { "reason": "進めた means advanced the work; it does not specifically mean making up for someone else's shortfall." },
+      { "reason": "終わらせた means finished it; the sentence does not establish that all the work was completed." },
+      { "reason": "引き受けた means accepted responsibility for a task, but カバーした emphasizes filling the gap left by the subordinate." },
+      { "romaji": "oginatta", "reason": "カバーした means covered or compensated for the delayed work. 補った is the closest paraphrase." }
+    ]
+  },
+  "n2-set-1-q-28": {
+    "translation": "Choose the sentence that correctly uses tsuuyou, meaning to work or be accepted in a situation.",
+    "correctAnswerEnglish": "通用する (tsuuyou suru) - to be valid, work, or be accepted",
+    "choices": [
+      { "reason": "This says they plan to 'tsuuyou' a capable person for the job. 通用 cannot mean hire or employ; 採用する would fit." },
+      { "romaji": "tsuuyou shinai", "reason": "This says, 'Such a poor excuse won't work on me.' 言い訳が通用しない is a natural use of 通用する." },
+      { "reason": "This says the pay will not 'tsuuyou' for a dangerous job. The intended idea is insufficient pay, not whether an excuse or ability works." },
+      { "reason": "This says the book will 'tsuuyou' for your studies. 役に立つ, meaning be useful, would be natural instead." }
+    ]
+  },
+  "n2-set-1-q-29": {
+    "translation": "Choose the sentence that correctly uses arasuji, meaning the outline or plot of a story.",
+    "correctAnswerEnglish": "あらすじ (arasuji) - an outline or story synopsis",
+    "choices": [
+      { "reason": "This says, 'My paper is arasuji finished.' あらすじ is a noun for an outline, not an adverb meaning almost." },
+      { "reason": "This says the 'arasuji' of a management policy was decided at a meeting. 方針 or 概要 would be more natural for a policy." },
+      { "reason": "This says friends got into a fierce 'arasuji.' A quarrel or argument would be 争い or 口論, not a synopsis." },
+      { "romaji": "arasuji", "reason": "This says, 'Summarize the plot of this novel in no more than 400 characters.' あらすじ naturally names a novel's synopsis." }
+    ]
+  },
+  "n2-set-1-q-30": {
+    "translation": "Choose the sentence that correctly uses meiwaku, meaning trouble or inconvenience caused to others.",
+    "correctAnswerEnglish": "迷惑 (meiwaku) - nuisance or inconvenience to someone else",
+    "choices": [
+      { "reason": "This says everyone has one or two 'meiwaku memories.' A troublesome or unpleasant memory is not normally described as 迷惑な思い出." },
+      { "romaji": "meiwaku", "reason": "This says, 'Opening a newspaper on a crowded train inconveniences other passengers.' 他の客に迷惑だ is a natural use." },
+      { "reason": "This says the family's life is a 'good nuisance' on a low salary. 迷惑 does not describe the family's standard of living." },
+      { "reason": "This says the illness was already in a 'nuisance state.' 手遅れ or 深刻 would describe a late or serious condition, not 迷惑." }
+    ]
+  },
+  "n2-set-1-q-31": {
+    "translation": "Choose the sentence that correctly uses baibai, meaning the buying and selling of goods or property.",
+    "correctAnswerEnglish": "売買 (baibai) - buying and selling; a commercial transaction",
+    "choices": [
+      { "reason": "This says the store 'baibai-s' even on weekends. A store can 営業する, be open for business, but bare 売買する does not describe its opening days naturally." },
+      { "reason": "This says the product's 'baibai' is good and production cannot keep up. 売れ行き, sales performance, is the natural expression." },
+      { "reason": "This says the speaker decided to 'buy and sell' this plot of land because of circumstances. If only selling is meant, 売る is clearer; the printed answer uses an actual property transaction." },
+      { "romaji": "baibai", "reason": "This says, 'A qualification is required to buy and sell real estate.' 不動産を売買する naturally describes property transactions." }
+    ]
+  },
+  "n2-set-1-q-32": {
+    "translation": "Choose the sentence that correctly uses kahansuu, meaning more than half of a defined group.",
+    "correctAnswerEnglish": "過半数 (kahansuu) - a majority, more than half",
+    "choices": [
+      { "romaji": "kahansuu", "reason": "This says a new bill passed after gaining a majority of votes in favor. 過半数の賛成 is the standard expression." },
+      { "reason": "This says the number of earthquake victims was 'a majority' without specifying the group of which they were more than half." },
+      { "reason": "This says fans rushed to the small venue 'in a majority.' 過半数 is a proportion of a defined total, not an adverb for crowd size." },
+      { "reason": "This says evidence that he is guilty is 'a majority.' Evidence is not naturally counted as a majority in this construction." }
+    ]
+  },
+  "n2-set-1-q-33": {
+    "translation": "I decided to change jobs after thinking it through carefully, so I do not mind even if it fails.",
+    "correctAnswerEnglish": "よく考えた上で (yoku kangaeta ue de) - after careful consideration",
+    "choices": [
+      { "reason": "際に means at the time of doing something; it does not express deciding after considering the result." },
+      { "reason": "あげく means after a long process that ends unfavorably. The decision itself is not presented as that kind of bad outcome." },
+      { "romaji": "ue de", "reason": "Verb past form plus 上で means after doing something and taking it into account. The decision follows careful thought." },
+      { "reason": "ついでに means while doing something else or taking the opportunity to do another thing; the decision is not incidental." }
+    ]
+  },
+  "n2-set-1-q-34": {
+    "translation": "A tax increase would be difficult. But given the reality that the elderly population keeps growing, it cannot be helped.",
+    "correctAnswerEnglish": "現実からいって (genjitsu kara itte) - judging from that reality",
+    "choices": [
+      { "romaji": "kara itte", "reason": "からいって uses a fact as the basis for a judgment: given the growing elderly population, the increase seems unavoidable." },
+      { "reason": "だからといって means even so or that does not mean. It introduces a counterpoint, not the factual basis for 仕方がない here." },
+      { "reason": "だけあって means as one would expect given a notable quality. It does not mark this social reality as the reason for a judgment." },
+      { "reason": "といって means saying or even if one says; it does not express 'judging from the reality' in this sentence." }
+    ]
+  },
+  "n2-set-1-q-35": {
+    "translation": "The Thai food here has been made a little less spicy for Japanese customers.",
+    "correctAnswerEnglish": "日本人向けに (nihonjin-muke ni) - tailored for Japanese people",
+    "choices": [
+      { "reason": "的に forms an adverb such as 'typically' with some nouns; 日本人的に does not express a target audience for the recipe." },
+      { "reason": "用に suggests something for a concrete use, such as equipment or a designated room. Here the food is adapted to an audience." },
+      { "reason": "寄りに means closer to or leaning toward, not prepared for the tastes of a particular group." },
+      { "romaji": "muke ni", "reason": "向けに means aimed or tailored for a group. The restaurant has adjusted the spice level for Japanese diners." }
+    ]
+  },
+  "n2-set-1-q-36": {
+    "translation": "As far as I have seen, I do not think Yamada is such a bad person.",
+    "correctAnswerEnglish": "見たかぎりでは (mita kagiri de wa) - as far as I have seen",
+    "choices": [
+      { "reason": "ことでは does not form the expression 'as far as I have seen' after 見た." },
+      { "reason": "ものでは does not mark the limits of one's observation in this sentence." },
+      { "romaji": "kagiri de wa", "reason": "Past verb plus かぎりでは limits the judgment to what the speaker has observed." },
+      { "reason": "まででは is not the grammatical pattern used to state the bounds of what one has seen." }
+    ]
+  },
+  "n2-set-1-q-37": {
+    "translation": "If you say you could do it better yourself, then you should try doing it.",
+    "correctAnswerEnglish": "やってみることだ (yatte miru koto da) - you should try doing it",
+    "choices": [
+      { "reason": "わけだ explains a logical conclusion or reason; it does not express the pointed advice intended here." },
+      { "reason": "ものだ can state a general norm, but this speaker is directly challenging the listener to try it." },
+      { "romaji": "koto da", "reason": "Verb dictionary form plus ことだ gives advice. In this sentence the advice carries a mildly sarcastic challenge." },
+      { "reason": "はずだ means something is expected or should be the case; it does not tell the listener to take action." }
+    ]
+  },
+  "n2-set-1-q-38": {
+    "translation": "While more women continue working after marriage, more women also want to become full-time homemakers.",
+    "correctAnswerEnglish": "一方で (ippou de) - on the other hand; meanwhile",
+    "choices": [
+      { "reason": "反対で means being opposed or opposite, but 増える反対で is not the grammatical contrast pattern here." },
+      { "reason": "以外で means outside of or apart from, not a contrast between two concurrent trends." },
+      { "reason": "片面で is not the standard connective for presenting two sides of a situation." },
+      { "romaji": "ippou de", "reason": "一方で connects two contrasting facts: growth in women continuing work and growth in women preferring homemaking." }
+    ]
+  },
+  "n2-set-1-q-39": {
+    "translation": "I was so worried about the test results that I could not sleep until morning.",
+    "correctAnswerEnglish": "心配のあまり (shinpai no amari) - from excessive worry",
+    "choices": [
+      { "romaji": "no amari", "reason": "Noun plus のあまり expresses an excessive feeling that produces a result. Strong worry kept the speaker awake." },
+      { "reason": "のせいか means perhaps because of; it expresses uncertainty rather than the strong degree of worry emphasized here." },
+      { "reason": "のくせに means despite or even though, usually with criticism, and conflicts with the cause-and-result meaning." },
+      { "reason": "のおかげで credits a beneficial cause. Being unable to sleep is not a benefit." }
+    ]
+  },
+  "n2-set-1-q-40": {
+    "translation": "Because this fruit is very good for your health, it has long been called 'doctor-not-needed.'",
+    "correctAnswerEnglish": "ことから (koto kara) - because of the fact that",
+    "choices": [
+      { "romaji": "koto kara", "reason": "ことから connects a known fact to the reason for a name or conclusion: its health benefits explain the nickname." },
+      { "reason": "ことだから means given someone's known character or nature; it does not supply this factual reason for the fruit's name." },
+      { "reason": "ことに can introduce an evaluative remark, such as 驚いたことに, but not this cause for the nickname." },
+      { "reason": "ことなら means if it is about or if one is going to do something; it does not explain why the fruit is named this way." }
+    ]
+  },
+  "n2-set-1-q-41": {
+    "translation": "Although I know smoking is bad for my health, I just cannot quit.",
+    "correctAnswerEnglish": "知りつつも (shiri tsutsu mo) - although I know",
+    "choices": [
+      { "romaji": "shiri tsutsu mo", "reason": "Verb stem plus つつも expresses a contrast: knowing the harm but continuing to smoke." },
+      { "reason": "知らないものの means despite not knowing; it reverses the fact that the speaker knows smoking is harmful." },
+      { "reason": "知るからには means now that one knows, implying a responsibility, not this contrast with inability to quit." },
+      { "reason": "知らないくせに means despite not knowing, often with reproach; it contradicts the speaker's knowledge." }
+    ]
+  },
+  "n2-set-1-q-42": {
+    "translation": "If no one else here has a license, I have no choice but to drive, do I?",
+    "correctAnswerEnglish": "運転しないわけにはいかない (unten shinai wake ni wa ikanai) - cannot avoid driving",
+    "choices": [
+      { "reason": "するわけにはいかない means cannot do it; it would say the speaker is unable or not allowed to drive." },
+      { "romaji": "shinai wake ni wa ikanai", "reason": "The double negative means one cannot avoid doing something. The speaker feels obliged to drive." },
+      { "reason": "するべきでない means should not drive, the opposite of the intended necessity." },
+      { "reason": "してはいられない means cannot keep doing it; it does not express having to start driving." }
+    ]
+  },
+  "n2-set-1-q-43": {
+    "translation": "Even if you did not like the gift, you should at least write a thank-you letter to the person who gave it to you.",
+    "correctAnswerEnglish": "気に入らなかったにしても (ki ni iranakatta ni shite mo) - even if you did not like it",
+    "choices": [
+      { "romaji": "ni shite mo", "reason": "たとえ plus にしても expresses a concession: thanks are still expected even if the gift was unwelcome." },
+      { "reason": "としたら makes an ordinary hypothetical condition. With たとえ, the sentence requires the concessive 'even if' meaning." },
+      { "reason": "気に入ったとしても means even if you liked it, which does not make the intended contrast with the duty to thank someone." },
+      { "reason": "気に入ったとしたら means if you liked it; both the polarity and conditional meaning miss the concession." }
+    ]
+  },
+  "n2-set-1-q-44": {
+    "translation": "A: 'Unfortunately, Tanaka is out.' B: 'Then could you please tell Tanaka that Yamada from Company A called?'",
+    "correctAnswerEnglish": "お伝えいただけますか (otsutae itadakemasu ka) - could you please pass on the message?",
+    "choices": [
+      { "reason": "伝えていただきますか is not the natural polite request form; いただけますか asks whether the other person could do the favor." },
+      { "romaji": "otsutae itadakemasu ka", "reason": "お plus verb stem plus いただけますか politely asks the listener to convey the message." },
+      { "reason": "お伝えになれますか uses honorific language awkwardly here; it does not express the standard request for this favor." },
+      { "reason": "お伝えいたしましょうか means 'Shall I tell them?', offering the speaker's own action instead of asking the listener." }
+    ]
+  },
+  "n2-set-1-q-45": {
+    "translation": "If you think you can pass with that way of studying, go ahead and try it.",
+    "correctAnswerEnglish": "やれるものなら (yareru mono nara) - if you can really do it",
+    "choices": [
+      { "reason": "やれる means 'can do it' and follows できるか in the sentence order; it does not occupy the marked third blank." },
+      { "reason": "やって means 'try/do it' and connects to みればいいよ at the end, so it belongs in the fourth blank." },
+      { "reason": "できるか means 'whether you can pass' and starts the sequence after 合格." },
+      { "romaji": "yareru mono nara", "reason": "ものなら follows the potential form やれる to form a challenging conditional. The complete order is できるか, やれる, ものなら, やって." }
+    ]
+  },
+  "n2-set-1-q-46": {
+    "translation": "Japanese people tend to forget how fortunate they are to have free drinking water everywhere.",
+    "correctAnswerEnglish": "忘れがち (wasuregachi) - tend to forget",
+    "choices": [
+      { "reason": "がち is a suffix meaning 'tend to'; it completes 忘れがち at the end, so it is the fourth blank." },
+      { "reason": "飲める means 'can drink' and describes 水 at the start of the four-part phrase." },
+      { "romaji": "wasure", "reason": "忘れ is the verb stem meaning 'forget'; it pairs with がち to express a habitual tendency. It is the marked third blank." },
+      { "reason": "ありがたさを means 'the value or blessing of it' plus an object marker. It follows 飲める and precedes 忘れ." }
+    ]
+  },
+  "n2-set-1-q-47": {
+    "translation": "Going to the dentist does not necessarily become easy just because you become an adult.",
+    "correctAnswerEnglish": "というものではありません (to iu mono de wa arimasen) - it is not necessarily the case that",
+    "choices": [
+      { "reason": "なれば means 'if/when one becomes' and follows 大人に in the first blank." },
+      { "romaji": "to iu", "reason": "という joins 平気になる to ものではありません, which rejects a simplistic generalization. It occupies the marked third blank." },
+      { "reason": "ものでは completes the negative pattern というものではありません at the end, so it is the fourth blank." },
+      { "reason": "平気になる means 'become comfortable with it' and follows 大人になれば before という." }
+    ]
+  },
+  "n2-set-1-q-48": {
+    "translation": "Just because I forgot to lock the house, a burglar broke in.",
+    "correctAnswerEnglish": "かけるのを忘れたばかりに (kakeru no o wasureta bakari ni) - solely because I forgot to lock it",
+    "choices": [
+      { "romaji": "wasureta", "reason": "忘れた means 'forgot' and follows かけるのを. It is the marked second blank." },
+      { "reason": "に completes the causal pattern ばかりに immediately before the bad result, so it is the fourth blank." },
+      { "reason": "かけるのを nominalizes 'locking' as the thing forgotten; it starts the four-part sequence." },
+      { "reason": "ばかり means 'just/only' and combines with に to mark the unfortunate cause; it belongs after 忘れた." }
+    ]
+  },
+  "n2-set-1-q-49": {
+    "translation": "A: 'I no longer have a fever, and I have an exam, so I can go to school, right?' B: 'Since there is a risk of passing the illness to others, you had better stay home from school.'",
+    "correctAnswerEnglish": "うつすおそれがある以上は (utsusu osore ga aru ijou wa) - since there is a risk of spreading it",
+    "choices": [
+      { "reason": "ある follows おそれが to complete 'there is a risk'; it occupies the third blank, not the marked second." },
+      { "reason": "以上は means 'since that is the case' and introduces the obligation to stay home; it is the final blank." },
+      { "reason": "うつす means 'transmit' and follows 病気を人に at the start of the phrase." },
+      { "romaji": "osore ga", "reason": "おそれが means 'a risk of' and follows うつす. It occupies the marked second blank in the order うつす, おそれが, ある, 以上は." }
+    ]
+  },
+  "n2-set-1-q-50": {
+    "translation": "Not so long ago, most Japanese households used to have equipment for the game of go. Children learned the rules by watching older people play.",
+    "correctAnswerEnglish": "あったものだ (atta mono da) - used to have, recalling the past",
+    "choices": [
+      { "reason": "ことだ gives advice or states a point; it does not reminisce about a past custom." },
+      { "romaji": "mono da", "reason": "Past verb plus ものだ recalls what habitually happened in the past, matching the description of old households." },
+      { "reason": "ところだ marks a point in time, such as about to do or just did something; it does not describe a former custom." },
+      { "reason": "ようだ means it appears or seems so; the author is describing a remembered past habit, not guessing." }
+    ]
+  },
+  "n2-set-1-q-51": {
+    "translation": "As go's playing population fell and few children took it up, people involved in the game felt deep anxiety about its future in Japan.",
+    "correctAnswerEnglish": "強い不安を持っていた (tsuyoi fuan o motte ita) - had strong concerns",
+    "choices": [
+      { "reason": "大きな希望を持っていた means held great hope; it conflicts with the falling number of players." },
+      { "romaji": "tsuyoi fuan o motte ita", "reason": "The decline from roughly 12 million players to around 3 million, with few children, explains their strong anxiety." },
+      { "reason": "安心しかねなかった is not the natural expression here. The context explicitly requires anxiety about the future." },
+      { "reason": "少しの心配もなかった means had no worries at all, the opposite of the concern caused by the decline." }
+    ]
+  },
+  "n2-set-1-q-52": {
+    "translation": "A hit manga about go became the starting point for roughly a million children to take up the game.",
+    "correctAnswerEnglish": "きっかけ (kikkake) - trigger or starting point",
+    "choices": [
+      { "romaji": "kikkake", "reason": "このマンガをきっかけとして means 'using this manga as the occasion or catalyst.' It explains why children started playing." },
+      { "reason": "もと means base or origin, but このマンガをもとして is not the natural expression for a motivating event." },
+      { "reason": "事情 means circumstances; it does not name the trigger that made children begin playing go." },
+      { "reason": "原因 means cause, but このマンガを原因として is unnatural here and often suggests a problematic result." }
+    ]
+  },
+  "n2-set-1-q-53": {
+    "translation": "In fact, the number of people newly taking up go is already declining.",
+    "correctAnswerEnglish": "減りつつある (heri tsutsu aru) - is gradually decreasing",
+    "choices": [
+      { "romaji": "heri tsutsu aru", "reason": "Verb stem plus つつある expresses an ongoing change. It supports the warning that the manga boom may be temporary." },
+      { "reason": "減りそうもない means shows no sign of decreasing; that would contradict the author's warning about a fading boom." },
+      { "reason": "増えるかもしれない means might increase; the next sentence instead discusses preventing the boom from ending." },
+      { "reason": "増えざるを得ない means cannot help but increase; neither the context nor the author's concern supports an inevitable increase." }
+    ]
+  },
+  "n2-set-1-q-54": {
+    "translation": "People involved are trying many ideas because they do not want this opportunity to end as a temporary fad.",
+    "correctAnswerEnglish": "終わらせまい (owarasemai) - determined not to let it end",
+    "choices": [
+      { "reason": "終わらせたい means want to end it, opposite to the effort to sustain interest in go." },
+      { "reason": "終わらせよう means let us end it, again opposite to the ideas being proposed." },
+      { "romaji": "owarasemai", "reason": "The negative volitional まい expresses a firm intention not to let the opportunity end as a passing boom." },
+      { "reason": "終わりたくない means do not want to end, but the people are trying not to let the boom end; the causative 終わらせまい fits their active prevention." }
+    ]
+  }
+}
