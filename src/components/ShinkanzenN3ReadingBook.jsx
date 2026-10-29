@@ -10,6 +10,7 @@ const localChapterModules = import.meta.glob('../data/shinkanzen_reading/*.json'
 
 // Dynamically generate the chapter list from the eager-loaded JSON files
 const SHINKANZEN_N3_CHAPTERS = Object.keys(localChapterModules)
+  .filter(filePath => !filePath.endsWith('/book.json'))
   .map(filePath => {
     const data = localChapterModules[filePath].default || localChapterModules[filePath];
     const rawId = data.chapterId || data.id || filePath.split('/').pop().replace('.json', '');
@@ -157,6 +158,17 @@ const ShinkanzenN3ReadingBook = () => {
           setData(mod.default || mod);
           setLoading(false);
           return;
+        }
+
+        const bookKey = Object.keys(localChapterModules).find(k => k.endsWith('/book.json'));
+        if (bookKey && localChapterModules[bookKey]) {
+          const bookMod = localChapterModules[bookKey].default || localChapterModules[bookKey];
+          const found = (bookMod.chapters || []).find(c => (c.id || c.chapterId) === resolvedId);
+          if (found) {
+            setData(found);
+            setLoading(false);
+            return;
+          }
         }
 
         if (!chapter) {

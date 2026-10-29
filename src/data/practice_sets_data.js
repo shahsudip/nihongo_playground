@@ -10656,7 +10656,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【語順】明日は家族と [4食事をする] [1ことに] [★ 2なって] [3いる] ので\n【★ 正解】2「なって」\n【英訳】Order: 食事をすることになっているので - it's arranged that I eat with family."
+              "explanation": "【語順】明日は家族と [4食事をする] [1ことに] [★ 3なって] [2いる] ので\n【★ 正解】3「なって」\n【英訳】Order: 食事をすることになっているので - it's arranged that I eat with family."
             },
             {
               "id": 13052,
@@ -12250,7 +12250,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【語順】連休に、海か山か [2どちらに] [4行くか] [★ 3なやんだ] [1あげく]、みんなで海水浴に行った。<br/>【★ 正解】3「なやんだ」<br/>【英訳】Order: どちらに行くかなやんだあげく - after agonizing over which to go."
+              "explanation": "【語順】連休に、海か山か [2どちらに] [4行くか] [★ 3なやんだ] [1あげく]、みんなで海水浴に行った。\n【★ 正解】3「なやんだ」\n【英訳】After agonizing over whether to go to the sea or the mountains for the long weekend, we ended up all going to the beach to swim."
             },
             {
               "id": 15,
@@ -12264,7 +12264,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【語順】きのうの夜、先生 [2が] [4その] [★ 3お休みになった] [1後で]、みんなでお酒を飲みました。<br/>【★ 正解】3「お休みになった」<br/>【英訳】Order: 先生がそのお休みになった後で - after the teacher went to rest."
+              "explanation": "【語順】きのうの夜、先生 [2が] [4その] [★ 3お休みになった] [1後で]、みんなでお酒を飲みました。\n【★ 正解】3「お休みになった」\n【英訳】Last night, after the teacher went to bed, we all drank alcohol together."
             },
             {
               "id": 16,
@@ -12278,7 +12278,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【語順】子どものころ、[4友だちと] [1けんかでも] [★ 3しょう] [2ものなら]、母にひどくしかられました。<br/>【★ 正解】4「友だちと」<br/>【英訳】Order: 友だちとけんかでもしようものなら - if I were to fight with friends..."
+              "explanation": "【語順】子どものころ、[4友だちと] [1けんかでも] [★ 3しょう] [2ものなら]、母にひどくしかられました。\n【★ 正解】4「友だちと」\n【英訳】When I was a child, if I were to so much as get into a fight with my friends, I would be severely scolded by my mother."
             },
             {
               "id": 17,
@@ -12292,7 +12292,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【語順】あの人は、スポーツ選手の [1わりに] [★ 3体が] [2小さい] [4ほうだ] と思います。<br/>【★ 正解】3「体が」<br/>【英訳】Order: わりに体が小さいほうだ - rather small build for an athlete."
+              "explanation": "【語順】あの人は、スポーツ選手の [1わりに] [★ 3体が] [2小さい] [4ほうだ] と思います。\n【★ 正解】3「体が」\n【英訳】For an athlete, I think that person has a rather small build."
             },
             {
               "id": 18,
@@ -12306,7 +12306,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【語順】昔 [★ 2なら] [1ともかく]、[4今は] [3そんな] 習慣はありません。<br/>【★ 正解】2「なら」<br/>【英訳】Order: 昔ならともかく今はそんな - In the past maybe, but nowadays no such..."
+              "explanation": "【語順】昔 [★ 2なら] [1ともかく]、[4今は] [3そんな] 習慣はありません。\n【★ 正解】2「なら」\n【英訳】In the old days it might have been a different story, but nowadays there is no such custom."
             },
             {
               "id": 19,

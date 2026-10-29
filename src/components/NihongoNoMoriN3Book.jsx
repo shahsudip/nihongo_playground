@@ -10,6 +10,8 @@ import {
   selectPreferredAttempt,
   summarizeProgress,
 } from '../utils/bookProgress.js';
+import StarExplanationCard from './ui/StarExplanationCard.jsx';
+import { isStarQuestion } from '../utils/starQuestionExplainer.js';
 
 // Section & Chapter Definitions
 const BOOK_PARTS_TEMPLATE = [
@@ -1004,6 +1006,7 @@ export default function NihongoNoMoriN3Book() {
                               正解: <span className="text-emerald-600 dark:text-emerald-400 font-black">{q.correct_answer}</span>
                             </span>
                           </div>
+                          {isStarQuestion(q) && <StarExplanationCard question={q} className="mb-3" />}
                           <div className="text-slate-600 dark:text-slate-300 leading-relaxed whitespace-pre-line">
                             {renderHtml(q.explanation)}
                           </div>
@@ -1272,6 +1275,7 @@ export default function NihongoNoMoriN3Book() {
                     </div>
                   )}
 
+                  {isStarQuestion(q) && <StarExplanationCard question={q} />}
                   <div className="text-slate-600 dark:text-slate-300 leading-relaxed bg-slate-50 dark:bg-slate-800/50 p-2.5 rounded-xl border border-slate-200/50 dark:border-slate-700/50 grow">
                     {renderHtml(q.explanation)}
                   </div>

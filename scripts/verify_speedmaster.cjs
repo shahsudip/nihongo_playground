@@ -12,7 +12,7 @@ if (!fs.existsSync(dataDir)) {
     process.exit(1);
 }
 
-const files = fs.readdirSync(dataDir).filter(f => f.endsWith('.json')).sort();
+const files = fs.readdirSync(dataDir).filter(f => f.endsWith('.json') && f !== 'book.json').sort();
 const vietnameseCharRegex = /[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđĐ]/i;
 
 console.log(`======================================================`);

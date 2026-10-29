@@ -14,7 +14,7 @@ def verify_all_listening():
     errors = []
     warnings = []
     
-    files = sorted(glob.glob(os.path.join(DATA_DIR, "*.json")))
+    files = [f for f in sorted(glob.glob(os.path.join(DATA_DIR, "*.json"))) if not os.path.basename(f) == "book.json"]
     print(f"Found {len(files)} JSON files in {DATA_DIR}")
     
     for filepath in files:

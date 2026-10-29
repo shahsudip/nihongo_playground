@@ -75,3 +75,205 @@ public/images/practice_sets/
 # Zenkamoku data lives in Git now so Vite can bundle it dynamically
 
 
+
+# ---------------------------------------------------------------------------
+# Repo hygiene: raw extraction / working folders that the live site never uses
+# (kept on disk locally, never pushed)
+# ---------------------------------------------------------------------------
+/tango_n1_273_284/
+/n3_pages_temp/
+/n2_pages_temp/
+/15 practice sets to firebase/
+/nihongo power drill/
+/extracted_shinmon_n1/
+/extracted_shinmon_n4_n5/
+/extracted_grammar_n1/
+/Shin Mon Shared/
+/N4_Chokuzen_Taisaku_Processing/
+/N2 shin mon/
+/N3 shin mon/
+/.source-cache/
+/.vite/
+.vite/
+/database_scripts_archive/
+/archive/
+/scratch/
+/anki_decks/
+/fliphtml_to_pdf_converter/
+/scraper-jlptmatome/
+/tmp_inspect/
+tmp_inspect_media/
+scripts/tmp_inspect_media/
+scripts/firebase_backup/backups/
+
+# scraper-test: only what .github/workflows/scraper.yml runs is tracked
+/scraper-test/*
+!/scraper-test/index.js
+!/scraper-test/package.json
+!/scraper-test/package-lock.json
+!/scraper-test/.gitignore
+/scraper-test/node_modules/
+
+# Python / tooling caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.eslintcache
+*.tsbuildinfo
+
+# Credentials & secrets (never push)
+service-account*.json
+*serviceAccount*.json
+*-credentials.json
+.env
+.env.*
+!.env.example
+
+# Office / archive / raw media sources (large, not served by the site)
+*.docx
+*.xlsx
+*.zip
+*.apkg
+*.7z
+*.rar
+
+# Stray prototype / preview files in public/ (not referenced by the app)
+public/3d_avatar.html
+public/apkg_original_showcase.*
+public/emoji_animations.html
+public/lip_sync_emoji.html
+public/profile_score_map_preview.html
+public/robot.glb
+public/mondai_5*.png
+public/avatars/
+
+# Raw full-page book scans in public/ that no book JSON / component references
+public/shinkanzen_listening_pages/page_*.jpg
+public/somatome/*_scan_notice.png
+public/images/image[0-9]*.jpg
+public/images/image[0-9]*.png
+public/images/live_books_test.png
+public/images/q14_email.png
+public/images/q15_letter.png
+public/images/q27_passage.png
+
+# Raw Shinkanzen N3 page scans that no book JSON / component references (listed explicitly so
+# newly added, referenced scans are never silently ignored)
+public/shinkanzen_pages/mondai_53_flyer.png
+public/shinkanzen_pages/mondai_53_sushi.png
+public/shinkanzen_pages/mondai_54_floorplan.jpg
+public/shinkanzen_pages/mondai_54_floorplan.png
+public/shinkanzen_pages/mondai_54_floorplan_exact.png
+public/shinkanzen_pages/mondai_54_full_listing.png
+public/shinkanzen_pages/N3_page-0001.jpg
+public/shinkanzen_pages/N3_page-0018.jpg
+public/shinkanzen_pages/N3_page-0035.jpg
+public/shinkanzen_pages/N3_page-0036.jpg
+public/shinkanzen_pages/N3_page-0037.jpg
+public/shinkanzen_pages/N3_page-0038.jpg
+public/shinkanzen_pages/N3_page-0039.jpg
+public/shinkanzen_pages/N3_page-0040.jpg
+public/shinkanzen_pages/N3_page-0041.jpg
+public/shinkanzen_pages/N3_page-0042.jpg
+public/shinkanzen_pages/N3_page-0043.jpg
+public/shinkanzen_pages/N3_page-0044.jpg
+public/shinkanzen_pages/N3_page-0045.jpg
+public/shinkanzen_pages/N3_page-0046.jpg
+public/shinkanzen_pages/N3_page-0047.jpg
+public/shinkanzen_pages/N3_page-0048.jpg
+public/shinkanzen_pages/N3_page-0049.jpg
+public/shinkanzen_pages/N3_page-0050.jpg
+public/shinkanzen_pages/N3_page-0051.jpg
+public/shinkanzen_pages/N3_page-0052.jpg
+public/shinkanzen_pages/N3_page-0054.jpg
+public/shinkanzen_pages/N3_page-0056.jpg
+public/shinkanzen_pages/N3_page-0058.jpg
+public/shinkanzen_pages/N3_page-0060.jpg
+public/shinkanzen_pages/N3_page-0062.jpg
+public/shinkanzen_pages/N3_page-0064.jpg
+public/shinkanzen_pages/N3_page-0066.jpg
+public/shinkanzen_pages/N3_page-0067.jpg
+public/shinkanzen_pages/N3_page-0068.jpg
+public/shinkanzen_pages/N3_page-0069.jpg
+public/shinkanzen_pages/N3_page-0070.jpg
+public/shinkanzen_pages/N3_page-0071.jpg
+public/shinkanzen_pages/N3_page-0072.jpg
+public/shinkanzen_pages/N3_page-0074.jpg
+public/shinkanzen_pages/N3_page-0076.jpg
+public/shinkanzen_pages/N3_page-0077.jpg
+public/shinkanzen_pages/N3_page-0079.jpg
+public/shinkanzen_pages/N3_page-0081.jpg
+public/shinkanzen_pages/N3_page-0084.jpg
+public/shinkanzen_pages/N3_page-0086.jpg
+public/shinkanzen_pages/N3_page-0087.jpg
+public/shinkanzen_pages/N3_page-0089.jpg
+public/shinkanzen_pages/N3_page-0091.jpg
+public/shinkanzen_pages/N3_page-0092.jpg
+public/shinkanzen_pages/N3_page-0093.jpg
+public/shinkanzen_pages/N3_page-0094.jpg
+public/shinkanzen_pages/N3_page-0095.jpg
+public/shinkanzen_pages/N3_page-0097.jpg
+public/shinkanzen_pages/N3_page-0098.jpg
+public/shinkanzen_pages/N3_page-0099.jpg
+public/shinkanzen_pages/N3_page-0100.jpg
+public/shinkanzen_pages/N3_page-0101.jpg
+public/shinkanzen_pages/N3_page-0102.jpg
+public/shinkanzen_pages/N3_page-0103.jpg
+public/shinkanzen_pages/N3_page-0104.jpg
+public/shinkanzen_pages/N3_page-0105.jpg
+public/shinkanzen_pages/N3_page-0106.jpg
+public/shinkanzen_pages/N3_page-0107.jpg
+public/shinkanzen_pages/N3_page-0108.jpg
+public/shinkanzen_pages/N3_page-0109.jpg
+public/shinkanzen_pages/N3_page-0110.jpg
+public/shinkanzen_pages/N3_page-0111.jpg
+public/shinkanzen_pages/N3_page-0112.jpg
+public/shinkanzen_pages/N3_page-0113.jpg
+public/shinkanzen_pages/N3_page-0114.jpg
+public/shinkanzen_pages/N3_page-0115.jpg
+public/shinkanzen_pages/N3_page-0116.jpg
+public/shinkanzen_pages/N3_page-0117.jpg
+public/shinkanzen_pages/N3_page-0118.jpg
+public/shinkanzen_pages/N3_page-0119.jpg
+public/shinkanzen_pages/N3_page-0120.jpg
+public/shinkanzen_pages/N3_page-0121.jpg
+public/shinkanzen_pages/N3_page-0122.jpg
+public/shinkanzen_pages/N3_page-0123.jpg
+public/shinkanzen_pages/N3_page-0124.jpg
+public/shinkanzen_pages/N3_page-0125.jpg
+public/shinkanzen_pages/N3_page-0126.jpg
+public/shinkanzen_pages/N3_page-0127.jpg
+public/shinkanzen_pages/N3_page-0128.jpg
+public/shinkanzen_pages/N3_page-0129.jpg
+public/shinkanzen_pages/N3_page-0130.jpg
+public/shinkanzen_pages/N3_page-0131.jpg
+public/shinkanzen_pages/N3_page-0132.jpg
+public/shinkanzen_pages/N3_page-0133.jpg
+public/shinkanzen_pages/N3_page-0134.jpg
+public/shinkanzen_pages/N3_page-0135.jpg
+public/shinkanzen_pages/N3_page-0136.jpg
+public/shinkanzen_pages/N3_page-0137.jpg
+public/shinkanzen_pages/N3_page-0138.jpg
+public/shinkanzen_pages/N3_page-0139.jpg
+public/shinkanzen_pages/N3_page-0140.jpg
+public/shinkanzen_pages/N3_page-0141.jpg
+public/shinkanzen_pages/N3_page-0142.jpg
+public/shinkanzen_pages/N3_page-0143.jpg
+public/shinkanzen_pages/N3_page-0144.jpg
+public/shinkanzen_pages/N3_page-0145.jpg
+public/shinkanzen_pages/N3_page-0146.jpg
+public/shinkanzen_pages/N3_page-0147.jpg
+public/shinkanzen_pages/N3_page-0148.jpg
+public/shinkanzen_pages/N3_page-0149.jpg
+public/shinkanzen_pages/N3_page-0150.jpg
+public/shinkanzen_pages/N3_page-0151.jpg
+public/shinkanzen_pages/N3_page-0152.jpg
+public/shinkanzen_pages/N3_page-0153.jpg
+public/shinkanzen_pages/N3_page-0154.jpg
+public/shinkanzen_pages/N3_page-0155.jpg
+public/shinkanzen_pages/N3_page-0156.jpg
+public/shinkanzen_pages/N3_page-0157.jpg
+public/shinkanzen_pages/N3_page-0158.jpg
+public/shinkanzen_pages/N3_page-0159.jpg
+public/shinkanzen_pages/N3_page-0160.jpg
+public/shinkanzen_pages/N3_page-0161.jpg

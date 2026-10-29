@@ -39,7 +39,7 @@ export const getAllShinkanzenPassages = () => {
 
   // 2. Process all individual mondai files (mondai-14 to mondai-65)
   Object.keys(shinkanzenModules).forEach(key => {
-    if (key.endsWith('part-1.json')) return;
+    if (key.endsWith('part-1.json') || key.endsWith('book.json')) return;
     const data = shinkanzenModules[key].default || shinkanzenModules[key];
     const rawId = data.chapterId || data.id || key.split('/').pop().replace('.json', '');
     const mondaiNum = data.mondaiNumber || parseInt(rawId.replace(/\D/g, '')) || 14;

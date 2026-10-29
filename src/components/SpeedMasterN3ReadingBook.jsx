@@ -191,6 +191,17 @@ const SpeedMasterN3ReadingBook = () => {
         setLoading(false);
         return;
       }
+
+      const bookKey = Object.keys(localModules).find(k => k.endsWith('/book.json'));
+      if (bookKey && localModules[bookKey]) {
+        const bookMod = localModules[bookKey].default || localModules[bookKey];
+        const found = (bookMod.chapters || []).find(c => (c.id || c.chapterId) === chapterId);
+        if (found) {
+          setData(found);
+          setLoading(false);
+          return;
+        }
+      }
       setData(null);
       setError(`Content for "${chapterId}" is being prepared.`);
     } catch (err) {

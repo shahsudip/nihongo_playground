@@ -7,6 +7,7 @@ const RUNTIME_BOOK_IDS = new Set([
   'first-time-jlpt-n3-350-kanji',
   'pass-n3-within-20-days',
   'nihongo-no-mori-n3',
+  'kore-issatsu-n3',
 ]);
 
 let sourceRequest = null;

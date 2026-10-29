@@ -6,7 +6,9 @@ import { doc, setDoc } from 'firebase/firestore';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 import { Card } from './ui/Card.jsx';
 import { ExitConfirmModal } from './ui/ExitConfirmModal.jsx';
+import StarExplanationCard from './ui/StarExplanationCard.jsx';
 import { formatJlptRuby } from '../utils/jlptRubyParser.js';
+import { isStarQuestion } from '../utils/starQuestionExplainer.js';
 import { STATIC_BOOKS } from '../data/static_books_catalog.js';
 import {
   generateRandom20QuestionTest,
@@ -706,12 +708,16 @@ export default function LevelCheckPage() {
           </div>
 
           {/* Instant Explanation Box */}
-          {feedbackMode === 'Immediate' && isAnswered && currentQ.explanation && (
+          {feedbackMode === 'Immediate' && isAnswered && (currentQ.explanation || isStarQuestion(currentQ)) && (
             <div className="mt-6 p-4 sm:p-5 rounded-2xl bg-emerald-50/60 dark:bg-emerald-950/20 border border-emerald-200/80 dark:border-emerald-800/40 text-xs sm:text-sm leading-relaxed text-gray-800 dark:text-gray-200 animate-fade-in">
-              <div className="font-black text-emerald-700 dark:text-emerald-400 uppercase mb-1">
+              <div className="font-black text-emerald-700 dark:text-emerald-400 uppercase mb-2">
                 💡 Explanation • 解説
               </div>
-              <div dangerouslySetInnerHTML={{ __html: formatJlptRuby(currentQ.explanation) }} />
+              {isStarQuestion(currentQ) ? (
+                <StarExplanationCard question={currentQ} />
+              ) : (
+                <div dangerouslySetInnerHTML={{ __html: formatJlptRuby(currentQ.explanation) }} />
+              )}
             </div>
           )}
         </Card>
@@ -999,11 +1005,14 @@ export default function LevelCheckPage() {
                     </div>
                   </div>
 
-                  {q.explanation && (
-                    <div
-                      className="mt-2 pt-2 border-t border-gray-200/60 dark:border-white/10 text-xs text-gray-700 dark:text-gray-300 leading-relaxed"
-                      dangerouslySetInnerHTML={{ __html: formatJlptRuby(q.explanation) }}
-                    />
+                  {(q.explanation || isStarQuestion(q)) && (
+                    <div className="mt-2 pt-2 border-t border-gray-200/60 dark:border-white/10 text-xs text-gray-700 dark:text-gray-300 leading-relaxed">
+                      {isStarQuestion(q) ? (
+                        <StarExplanationCard question={q} />
+                      ) : (
+                        <div dangerouslySetInnerHTML={{ __html: formatJlptRuby(q.explanation) }} />
+                      )}
+                    </div>
                   )}
                 </div>
               );

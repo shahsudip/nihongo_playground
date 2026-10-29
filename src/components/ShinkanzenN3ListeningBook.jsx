@@ -15,6 +15,7 @@ import { SKILL_5_SECTION_NOTICES } from '../data/shinkanzen_listening/skill-5-no
 const localChapterModules = import.meta.glob('../data/shinkanzen_listening/*.json', { eager: true });
 
 export const SHINKANZEN_N3_LISTENING_CHAPTERS = Object.keys(localChapterModules)
+  .filter(filePath => !filePath.endsWith('/book.json'))
   .map(filePath => {
     const data = localChapterModules[filePath].default || localChapterModules[filePath];
     return {
@@ -1038,9 +1039,19 @@ const ShinkanzenN3ListeningBook = () => {
 
     try {
       const matchedKey = Object.keys(localChapterModules).find(k => k.endsWith(`/${chapterId}.json`));
+      let loadedData = null;
       if (matchedKey && localChapterModules[matchedKey]) {
         const mod = localChapterModules[matchedKey];
-        const loadedData = mod.default || mod;
+        loadedData = mod.default || mod;
+      } else {
+        const bookKey = Object.keys(localChapterModules).find(k => k.endsWith('/book.json'));
+        if (bookKey && localChapterModules[bookKey]) {
+          const bookMod = localChapterModules[bookKey].default || localChapterModules[bookKey];
+          loadedData = (bookMod.chapters || []).find(c => c.id === chapterId || c.chapterId === chapterId);
+        }
+      }
+
+      if (loadedData) {
         setData(loadedData);
 
         if (loadedData?.hotspots && loadedData.hotspots.length > 0) {

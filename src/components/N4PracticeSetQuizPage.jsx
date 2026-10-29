@@ -5,6 +5,8 @@ import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext.jsx';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 import { ExitConfirmModal } from './ui/ExitConfirmModal.jsx';
+import StarExplanationCard, { FormattedExplanationText } from './ui/StarExplanationCard.jsx';
+import { isStarQuestion } from '../utils/starQuestionExplainer.js';
 import '../assets/n4_practice_sets.css';
 
 const N4PracticeSetQuizPage = () => {
@@ -90,6 +92,7 @@ const N4PracticeSetQuizPage = () => {
         currentSet.sections[sec].questions.forEach(q => {
           qs.push({
             ...q,
+            key: `n4-${setId}-q${q.id}`,
             parentSection: sec,
             passage: q.passage || currentSet.sections[sec].passage || null
           });
@@ -97,7 +100,7 @@ const N4PracticeSetQuizPage = () => {
       }
     });
     return qs;
-  }, [currentSet, sectionsToShow]);
+  }, [currentSet, sectionsToShow, setId]);
 
   // Group questions by Mondai type for Section selector
   const questionGroups = useMemo(() => {
@@ -596,7 +599,7 @@ const N4PracticeSetQuizPage = () => {
                   optClass = 'selected';
                 }
 
-                const showInlineExplanation = showFeedback && isCorrect && currentQ.explanation;
+                const showInlineExplanation = showFeedback && isCorrect && currentQ.explanation && !isStarQuestion(currentQ);
 
                 return (
                   <button
@@ -621,15 +624,20 @@ const N4PracticeSetQuizPage = () => {
                     </div>
 
                     {showInlineExplanation && (
-                      <div 
-                        className="mt-2 pt-2 border-t text-xs leading-relaxed opacity-90 border-emerald-500/20 font-normal text-left"
-                        dangerouslySetInnerHTML={{ __html: currentQ.explanation }}
-                      />
+                      <div className="mt-2 pt-2 border-t text-xs leading-relaxed opacity-90 border-emerald-500/20 font-normal text-left">
+                        <FormattedExplanationText text={currentQ.explanation} />
+                      </div>
                     )}
                   </button>
                 );
               })}
             </div>
+
+            {feedbackMode === 'Immediate' && answers[currentIndex] !== undefined && isStarQuestion(currentQ) && (
+              <div className="mt-4 text-left">
+                <StarExplanationCard question={currentQ} />
+              </div>
+            )}
           </div>
 
           {/* Bottom Action Controls */}

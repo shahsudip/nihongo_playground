@@ -6,6 +6,7 @@ import { db } from '../firebaseConfig.js';
 import { collection, addDoc, doc, setDoc } from 'firebase/firestore';
 import { getShinkanzenSprintByDay } from '../utils/dailySprintGenerator.js';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
+import { FormattedExplanationText } from './ui/StarExplanationCard.jsx';
 import '../assets/daily_sprint.css';
 
 const DailySprintRunnerPage = () => {
@@ -376,8 +377,8 @@ const DailySprintRunnerPage = () => {
               <div className="space-y-1.5 text-xs text-[var(--color-text-secondary)]">
                 {currentPassage.footnotes.map((fn, fIdx) => (
                   <div key={fIdx} className="flex gap-2">
-                    <span dangerouslySetInnerHTML={{ __html: fn.term || `(${fIdx + 1})` }} />
-                    <span>: {fn.definition}</span>
+                    <span dangerouslySetInnerHTML={{ __html: fn.term || fn.word || `(${fIdx + 1})` }} />
+                    <span dangerouslySetInnerHTML={{ __html: `: ${fn.definition || fn.meaning || ''}` }} />
                   </div>
                 ))}
               </div>
@@ -484,9 +485,10 @@ const DailySprintRunnerPage = () => {
                   (Correct Answer: Option {currentQuestion.correct})
                 </span>
               </div>
-              <p className="text-xs text-[var(--color-text-secondary)] leading-relaxed m-0">
-                {currentQuestion.explanation}
-              </p>
+              <FormattedExplanationText
+                text={currentQuestion.explanation}
+                className="text-xs text-[var(--color-text-secondary)] leading-relaxed m-0"
+              />
             </div>
           )}
 

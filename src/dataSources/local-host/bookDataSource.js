@@ -31,13 +31,18 @@ const NIHONGO_NO_MORI_SECTION_LOADERS = [
 ];
 
 async function loadNihongoNoMoriBook() {
-  const [bookModule, ...sectionModules] = await Promise.all([
-    import('../../data/nihongo_no_mori_n3/book.json'),
-    ...NIHONGO_NO_MORI_SECTION_LOADERS.map(([, loader]) => loader()),
-  ]);
+  const bookModule = await import('../../data/nihongo_no_mori_n3/book.json');
+  const book = bookModule.default || bookModule;
+  if (Array.isArray(book.chapters) && book.chapters.length > 0) {
+    return book;
+  }
+
+  const sectionModules = await Promise.all(
+    NIHONGO_NO_MORI_SECTION_LOADERS.map(([, loader]) => loader())
+  );
 
   return {
-    ...(bookModule.default || bookModule),
+    ...book,
     chapters: NIHONGO_NO_MORI_SECTION_LOADERS.map(([id], index) => ({
       id,
       data: sectionModules[index].default || sectionModules[index],
@@ -47,14 +52,28 @@ async function loadNihongoNoMoriBook() {
 
 const LOCAL_BOOK_LOADERS = Object.freeze({
   'first-time-jlpt-n3-350-kanji': async () => {
+    const bookModule = await import('../../data/first_time_n3_350_kanji/book.json');
+    const book = bookModule.default || bookModule;
+    if (Array.isArray(book.chapters) && book.chapters.length > 0) {
+      return book;
+    }
     const module = await import('../../data/first_time_n3_350_kanji/index.js');
     return module.firstTimeN3KanjiBook || module.default;
   },
   'pass-n3-within-20-days': async () => {
+    const bookModule = await import('../../data/pass_n3_within_20_days/book.json');
+    const book = bookModule.default || bookModule;
+    if (Array.isArray(book.chapters) && book.chapters.length > 0) {
+      return book;
+    }
     const module = await import('../../data/pass_n3_within_20_days/index.js');
     return module.passN3Within20DaysBook || module.default;
   },
   'nihongo-no-mori-n3': loadNihongoNoMoriBook,
+  'kore-issatsu-n3': async () => {
+    const bookModule = await import('../../data/kore_issatsu_n3/book.json');
+    return bookModule.default || bookModule;
+  },
 });
 
 function joinUrl(baseUrl, relativePath) {

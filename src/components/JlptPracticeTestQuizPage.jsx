@@ -13,7 +13,9 @@ import { OptionButton } from './ui/OptionButton';
 import { ExitConfirmModal } from './ui/ExitConfirmModal';
 import { JlptOmrAnswerSheet } from './ui/JlptOmrAnswerSheet';
 import { JlptScoreCertificateModal } from './ui/JlptScoreCertificateModal';
+import StarExplanationCard from './ui/StarExplanationCard';
 import { formatJlptRuby } from '../utils/jlptRubyParser.js';
+import { isStarQuestion } from '../utils/starQuestionExplainer.js';
 
 // Official JLPT Mondai Instructions mapped to typeLabel / types
 const MONDAI_INSTRUCTIONS = {
@@ -1094,11 +1096,15 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
               </div>
 
               <div className="space-y-3 text-sm md:text-base leading-relaxed text-gray-700 dark:text-gray-300">
-                <div className="font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
-                  <span>✓</span>
-                  <span>Correct Option {currentQ.correct}:</span>
-                  <span dangerouslySetInnerHTML={{ __html: formatJlptRuby(currentQ.correctOption) }} />
-                </div>
+                {isStarQuestion(currentQ) ? (
+                  <StarExplanationCard question={currentQ} />
+                ) : (
+                  <div className="font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+                    <span>✓</span>
+                    <span>Correct Option {currentQ.correct}:</span>
+                    <span dangerouslySetInnerHTML={{ __html: formatJlptRuby(currentQ.correctOption) }} />
+                  </div>
+                )}
 
                 {/* Show reasons for each option */}
                 <div className="space-y-2 mt-2 pt-2 border-t border-emerald-500/10 text-xs md:text-sm">

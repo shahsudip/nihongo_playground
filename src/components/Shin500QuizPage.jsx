@@ -8,6 +8,8 @@ import { useTheme } from '../context/ThemeContext.jsx';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 import { STATIC_BOOKS } from '../data/static_books_catalog.js';
 import { ExitConfirmModal } from './ui/ExitConfirmModal.jsx';
+import StarExplanationCard, { FormattedExplanationText } from './ui/StarExplanationCard.jsx';
+import { isStarQuestion } from '../utils/starQuestionExplainer.js';
 import '../assets/shin500_drill.css';
 
 const Shin500QuizPage = ({ bookId: propBookId }) => {
@@ -728,6 +730,9 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
             </div>
 
             {/* Dedicated Explanation Card when answered */}
+            {currentAnswer && isStarQuestion(currentQ) && (
+              <StarExplanationCard question={currentQ} className="mt-4 mb-2" />
+            )}
             {currentAnswer && currentQ.explanation && (
               <div 
                 className="mt-4 mb-2 p-4.5 rounded-2xl border shadow-sm transition-all animate-fade-in text-left"
@@ -740,10 +745,9 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
                   <span className="text-base">💡</span>
                   <span>解説 • Explanation</span>
                 </div>
-                <div
+                <FormattedExplanationText
                   className="text-sm md:text-base leading-relaxed shin500-japanese-text font-medium"
-                  style={{ color: 'var(--shin-text-primary)' }}
-                  dangerouslySetInnerHTML={{ __html: currentQ.explanation }}
+                  text={currentQ.explanation}
                 />
               </div>
             )}

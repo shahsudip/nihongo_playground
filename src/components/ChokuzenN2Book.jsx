@@ -7,6 +7,8 @@ import {
   loadChokuzenN2Book, loadCloudAttempts, makeAttempt, mergeAttempts, readAttempts, saveCloudAttempt,
   sectionFromRoute, sectionProgress, setProgress, storageKeyFor, validAnswers,
 } from '../utils/chokuzenN2Data.js';
+import StarExplanationCard from './ui/StarExplanationCard.jsx';
+import { isStarQuestion } from '../utils/starQuestionExplainer.js';
 import '../assets/chokuzen_n2.css';
 
 const STATUS_LABELS = {
@@ -59,9 +61,22 @@ function Explanation({ text, inline = false }) {
 
 function StudyExplanation({ question }) {
   const study = question.studyExplanation;
-  if (!study) return <><p className="cn2-study-pending">English translation and option-by-option breakdown are pending review for this question.</p>{extractedText(question.explanation).trim() ? <Explanation text={question.explanation} /> : <p>A verified explanation is not available for this question.</p>}</>;
+  const starQuestion = isStarQuestion(question);
+  if (!study) {
+    return (
+      <>
+        {starQuestion ? (
+          <StarExplanationCard question={question} className="mb-3" />
+        ) : (
+          <p className="cn2-study-pending">English translation and option-by-option breakdown are pending review for this question.</p>
+        )}
+        {extractedText(question.explanation).trim() ? <Explanation text={question.explanation} /> : !starQuestion && <p>A verified explanation is not available for this question.</p>}
+      </>
+    );
+  }
   return (
     <div className="cn2-study-explanation" lang="en">
+      {starQuestion && <StarExplanationCard question={question} className="mb-4" />}
       <h5>Question in English</h5>
       <p>{study.translation}</p>
       <h5>Correct answer in English</h5>

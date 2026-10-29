@@ -191,7 +191,7 @@ function harvestZenkamokuForLevel(level) {
   const reading = [];
 
   // Randomly sample up to 20 chapter files per call for speed and variety
-  const keys = shuffleArray(Object.keys(modules)).slice(0, 22);
+  const keys = shuffleArray(Object.keys(modules).filter(k => !k.endsWith('/book.json'))).slice(0, 22);
 
   keys.forEach(key => {
     const data = modules[key]?.default || modules[key];
@@ -405,7 +405,7 @@ function harvestN3SpecialBooks() {
   });
 
   // B. Nihongo no Mori N3 (Kanji, Vocab, Grammar, Reading, Listening)
-  Object.keys(nihongoNoMoriModules).forEach(key => {
+  Object.keys(nihongoNoMoriModules).filter(k => !k.endsWith('/book.json')).forEach(key => {
     const data = nihongoNoMoriModules[key]?.default || nihongoNoMoriModules[key];
     if (!data) return;
     const fileName = key.split('/').pop();
@@ -548,7 +548,7 @@ function harvestN3SpecialBooks() {
   }
 
   // D. Speed Master N3 Reading (Short & Medium Passages)
-  shuffleArray(Object.keys(speedMasterReadingModules)).slice(0, 12).forEach(key => {
+  shuffleArray(Object.keys(speedMasterReadingModules).filter(k => !k.endsWith('/book.json'))).slice(0, 12).forEach(key => {
     const data = speedMasterReadingModules[key]?.default || speedMasterReadingModules[key];
     if (!data || !data.passageText || !Array.isArray(data.questions)) return;
     const q = data.questions[0];
@@ -573,7 +573,7 @@ function harvestN3SpecialBooks() {
   });
 
   // E. Shin Kanzen Master N3 Reading
-  shuffleArray(Object.keys(shinkanzenReadingModules)).slice(0, 12).forEach(key => {
+  shuffleArray(Object.keys(shinkanzenReadingModules).filter(k => !k.endsWith('/book.json'))).slice(0, 12).forEach(key => {
     const data = shinkanzenReadingModules[key]?.default || shinkanzenReadingModules[key];
     if (!data) return;
     if (Array.isArray(data.passages)) {
@@ -621,7 +621,7 @@ function harvestN3SpecialBooks() {
   });
 
   // F. Sou Matome N3 Reading
-  shuffleArray(Object.keys(somatomeReadingModules)).slice(0, 10).forEach(key => {
+  shuffleArray(Object.keys(somatomeReadingModules).filter(k => !k.endsWith('/book.json'))).slice(0, 10).forEach(key => {
     const data = somatomeReadingModules[key]?.default || somatomeReadingModules[key];
     if (!data) return;
     const chapId = key.split('/').pop().replace('.json', '');

@@ -10,7 +10,38 @@ import { Button } from './ui/Button';
 import { OptionButton } from './ui/OptionButton';
 import { ExitConfirmModal } from './ui/ExitConfirmModal';
 import { JlptScoreCertificateModal } from './ui/JlptScoreCertificateModal';
+import StarExplanationCard from './ui/StarExplanationCard';
 import { calculateJlptExamScore } from '../utils/jlptScoring.js';
+import { isStarQuestion, splitExplanationLines } from '../utils/starQuestionExplainer.js';
+import { practiceSetsBook } from '../data/practice_sets_data.js';
+
+const mergeWithLocalSet = (remoteSet, targetSetId) => {
+  const localSet = practiceSetsBook?.sets?.find((s) => s.id === targetSetId);
+  if (!remoteSet) return localSet || null;
+  if (!localSet) return remoteSet;
+
+  const mergedSections = { ...(remoteSet.sections || {}) };
+  for (const [secKey, localSec] of Object.entries(localSet.sections || {})) {
+    const remoteSec = mergedSections[secKey];
+    if (!remoteSec || !Array.isArray(remoteSec.questions)) {
+      mergedSections[secKey] = localSec;
+      continue;
+    }
+    const localQById = new Map((localSec.questions || []).map((q) => [String(q.id), q]));
+    mergedSections[secKey] = {
+      ...remoteSec,
+      questions: remoteSec.questions.map((rq, idx) => {
+        const lq = localQById.get(String(rq.id)) || localSec.questions?.[idx];
+        if (!lq) return rq;
+        return {
+          ...rq,
+          explanation: lq.explanation || rq.explanation || '',
+        };
+      }),
+    };
+  }
+  return { ...remoteSet, sections: mergedSections };
+};
 
 const CHOKUZEN_IRT_OPTIONS = Object.freeze({
   scoringModel: 'irt-3pl-eap-estimate',
@@ -89,10 +120,11 @@ const N3PracticeSetQuizPage = () => {
       try {
         const setRef = doc(db, 'books', 'jlpt-n3-practice-sets', 'sets', setId);
         const setSnap = await getDoc(setRef);
-        setCurrentSet(setSnap.exists() ? { ...setSnap.data(), id: setSnap.id } : null);
+        const remote = setSnap.exists() ? { ...setSnap.data(), id: setSnap.id } : null;
+        setCurrentSet(mergeWithLocalSet(remote, setId));
       } catch (err) {
         console.error("Error fetching practice set from Firebase:", err);
-        setCurrentSet(null);
+        setCurrentSet(mergeWithLocalSet(null, setId));
       } finally {
         setLoading(false);
       }
@@ -735,83 +767,93 @@ const N3PracticeSetQuizPage = () => {
       </div>
 
       {/* Dedicated Explanation Card when question is answered */}
-      {selectedIdx !== undefined && currentQ.explanation && (
+      {selectedIdx !== undefined && (currentQ.explanation || isStarQuestion(currentQ)) && (
         <div className="mt-5 p-4.5 rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] shadow-sm animate-fade-in text-left">
           <div className="flex items-center gap-2 mb-3 text-xs font-black uppercase tracking-wider text-emerald-500">
             <span className="text-base">💡</span>
             <span>解説 • Explanation</span>
           </div>
 
-          <div className="space-y-2.5 text-sm md:text-base leading-relaxed">
-            {(() => {
-              const parsedLines = [];
-              currentQ.explanation.split('\n').forEach(raw => {
-                const trimmed = raw.trim();
-                if (!trimmed) return;
-                // If line ends with an inline (English) translation
-                const match = trimmed.match(/^(.*?)(?:\s*[\(（]([A-Za-z][^()（）]{2,})[\)）]\s*)$/);
-                if (match && !trimmed.startsWith('【英訳】') && !trimmed.startsWith('【正解】')) {
-                  if (match[1].trim()) parsedLines.push(match[1].trim());
-                  parsedLines.push(`【英訳】${match[2].trim()}`);
-                } else {
-                  parsedLines.push(trimmed);
-                }
-              });
+          {isStarQuestion(currentQ) ? (
+            <StarExplanationCard question={currentQ} />
+          ) : (
+            <div className="space-y-2.5 text-sm md:text-base leading-relaxed">
+              {(() => {
+                const parsedLines = [];
+                splitExplanationLines(currentQ.explanation).forEach(trimmed => {
+                  if (!trimmed) return;
+                  // If line ends with an inline (English) translation
+                  const match = trimmed.match(/^(.*?)(?:\s*[（(]([A-Za-z][^()（）]{2,})[)）]\s*)$/);
+                  if (match && !trimmed.startsWith('【英訳】') && !trimmed.startsWith('【正解】')) {
+                    if (match[1].trim()) parsedLines.push(match[1].trim());
+                    parsedLines.push(`【英訳】${match[2].trim()}`);
+                  } else {
+                    parsedLines.push(trimmed);
+                  }
+                });
 
-              return parsedLines.map((line, lIdx) => {
-                // English Translation on its OWN NEW LINE
-                if (line.startsWith('【英訳】') || line.startsWith('【英語訳】') || line.startsWith('English:')) {
-                  const engText = line.replace(/^(?:【(?:英訳|英語訳)】|English:)\s*/, '');
-                  return (
-                    <div key={lIdx} className="pt-2">
-                      <div className="text-xs font-bold text-[var(--color-text-muted)] uppercase tracking-wider mb-1 flex items-center gap-1.5">
-                        <span>🌐</span>
-                        <span>English Translation</span>
+                return parsedLines.map((line, lIdx) => {
+                  // English Translation on its OWN NEW LINE
+                  if (line.startsWith('【英訳】') || line.startsWith('【英語訳】') || line.startsWith('English:')) {
+                    const engText = line.replace(/^(?:【(?:英訳|英語訳)】|English:)\s*/, '');
+                    return (
+                      <div key={lIdx} className="pt-2">
+                        <div className="text-xs font-bold text-[var(--color-text-muted)] uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                          <span>🌐</span>
+                          <span>English Translation</span>
+                        </div>
+                        <div
+                          className="text-[var(--color-text-secondary)] italic pl-3 border-l-2 border-emerald-500/60 bg-[var(--color-bg-tertiary,rgba(255,255,255,0.03))] py-2 px-3 rounded-r-lg"
+                          dangerouslySetInnerHTML={{ __html: engText }}
+                        />
                       </div>
-                      <div className="text-[var(--color-text-secondary)] italic pl-3 border-l-2 border-emerald-500/60 bg-[var(--color-bg-tertiary,rgba(255,255,255,0.03))] py-2 px-3 rounded-r-lg">
-                        {engText}
+                    );
+                  }
+
+                  // Correct Answer line
+                  if (line.startsWith('【正解】') || line.startsWith('【★ 正解】')) {
+                    return (
+                      <div key={lIdx} className="font-bold text-emerald-400 flex items-center gap-1.5">
+                        <span>✓</span>
+                        <span dangerouslySetInnerHTML={{ __html: line }} />
                       </div>
-                    </div>
-                  );
-                }
+                    );
+                  }
 
-                // Correct Answer line
-                if (line.startsWith('【正解】') || line.startsWith('【★ 正解】')) {
+                  // Meaning / Context line
+                  if (line.startsWith('【意味】') || line.startsWith('【文脈】') || line.startsWith('【文の並び替え】') || line.startsWith('【文の組み立て】')) {
+                    return (
+                      <div
+                        key={lIdx}
+                        className="font-medium text-[var(--color-text-primary)]"
+                        dangerouslySetInnerHTML={{ __html: line }}
+                      />
+                    );
+                  }
+
+                  // Word Order
+                  if (line.startsWith('【語順】') || line.startsWith('語順：')) {
+                    return (
+                      <div
+                        key={lIdx}
+                        className="font-semibold text-amber-400 bg-amber-500/10 px-3 py-2 rounded-lg border border-amber-500/20"
+                        dangerouslySetInnerHTML={{ __html: line }}
+                      />
+                    );
+                  }
+
+                  // Commentary / Notes
                   return (
-                    <div key={lIdx} className="font-bold text-emerald-400 flex items-center gap-1.5">
-                      <span>✓</span>
-                      <span>{line}</span>
-                    </div>
+                    <div
+                      key={lIdx}
+                      className="text-[var(--color-text-secondary)] leading-relaxed"
+                      dangerouslySetInnerHTML={{ __html: line }}
+                    />
                   );
-                }
-
-                // Meaning / Context line
-                if (line.startsWith('【意味】') || line.startsWith('【文脈】')) {
-                  return (
-                    <div key={lIdx} className="font-medium text-[var(--color-text-primary)]">
-                      {line}
-                    </div>
-                  );
-                }
-
-                // Word Order
-                if (line.startsWith('【語順】') || line.startsWith('語順：')) {
-                  return (
-                    <div key={lIdx} className="font-semibold text-amber-400 bg-amber-500/10 px-3 py-2 rounded-lg border border-amber-500/20">
-                      {line}
-                    </div>
-                  );
-                }
-
-                // Commentary / Notes
-                return (
-                  <div key={lIdx} className="text-[var(--color-text-secondary)] leading-relaxed">
-                    {line}
-                  </div>
-                );
-              });
-            })()}
-          </div>
+                });
+              })()}
+            </div>
+          )}
         </div>
       )}
 

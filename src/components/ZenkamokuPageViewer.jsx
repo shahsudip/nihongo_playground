@@ -7,6 +7,8 @@ import { db, functions, storage } from '../firebaseConfig.js';
 import { httpsCallable } from 'firebase/functions';
 import { getDownloadURL, ref } from 'firebase/storage';
 import { useAuth } from '../context/AuthContext';
+import StarExplanationCard, { FormattedExplanationText } from './ui/StarExplanationCard';
+import { isStarQuestion } from '../utils/starQuestionExplainer';
 
 export default function ZenkamokuPageViewer() {
   const { chapterId } = useParams();
@@ -264,7 +266,13 @@ export default function ZenkamokuPageViewer() {
             chapterData = (await import(`../data/zenkamoku_n3/${chapterId}.json`)).default;
           }
         } catch (e) {
-          console.warn('Local bundle load error, checking Firestore:', e);
+          try {
+            const folder = currentBookId.includes('n1') ? 'zenkamoku_n1' : currentBookId.includes('n2') ? 'zenkamoku_n2' : 'zenkamoku_n3';
+            const bookModule = (await import(`../data/${folder}/book.json`)).default;
+            chapterData = bookModule?.chapters?.find(c => (c.id || c.chapterId) === chapterId);
+          } catch (e2) {
+            console.warn('Local bundle load error, checking Firestore:', e);
+          }
         }
 
         // 2. Fallback to Firestore database
@@ -898,12 +906,17 @@ function QuestionBlock({ q, qIdx, onAnswer, savedOption, currentUser, videoKey }
                 </span>
               </div>
               <div className="text-gray-900 dark:text-gray-100 leading-relaxed font-medium text-sm md:text-base">
-                {q.explanation || q.kaisetsu ? (
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: q.explanation || q.kaisetsu,
-                    }}
-                  />
+                {isStarQuestion(q) ? (
+                  <div className="space-y-3">
+                    <StarExplanationCard question={q} />
+                    {(q.explanation || q.kaisetsu) && (
+                      <div className="pt-2 border-t border-slate-300/60 dark:border-slate-700/60 text-xs sm:text-sm opacity-90">
+                        <FormattedExplanationText text={q.explanation || q.kaisetsu} />
+                      </div>
+                    )}
+                  </div>
+                ) : q.explanation || q.kaisetsu ? (
+                  <FormattedExplanationText text={q.explanation || q.kaisetsu} />
                 ) : (
                   <span className="italic text-gray-500 text-sm">
                     No detailed explanation available for this question.

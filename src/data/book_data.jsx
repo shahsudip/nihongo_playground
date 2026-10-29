@@ -11,9 +11,12 @@ const passN3Within20DaysBook =
     chapters: [],
   };
 
+import koreIssatsuBook from './kore_issatsu_n3/book.json';
+
 export const sampleBooks = [
   passN3Within20DaysBook,
   firstTimeN3KanjiBook,
+  koreIssatsuBook,
   {
     id: 'zenkamoku-n1-best-workbook',
     title: '全科目攻略！JLPT日本語能力試験ベスト総合問題集N1',

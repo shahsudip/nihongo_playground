@@ -12,6 +12,8 @@ import { ProgressBar } from './ui/ProgressBar';
 import { OptionButton } from './ui/OptionButton';
 import { QuestionNavigator } from './ui/QuestionNavigator';
 import { ExitConfirmModal } from './ui/ExitConfirmModal';
+import StarExplanationCard, { FormattedExplanationText } from './ui/StarExplanationCard';
+import { isStarQuestion } from '../utils/starQuestionExplainer';
 import '../assets/first_time_n3_350_kanji.css';
 import '../assets/pass_n3_within_20_days.css';
 
@@ -177,7 +179,7 @@ const BookQuizTakerPage = () => {
             flattened.push({
               ...q,
               questionText: q.questionText || q.text || q.question || "",
-              id: `direct-${qIdx}`,
+              id: q.id || `direct-${qIdx}`,
               passageIndex: 0,
               passageText: "",
               passageLayout: "",
@@ -819,16 +821,20 @@ const BookQuizTakerPage = () => {
         )}
 
         {/* Dedicated Explanation Card when question is answered */}
-        {shouldShowFeedback && (currentQ.explanation || currentQ.commentary || currentQ.notes) && (
+        {shouldShowFeedback && (currentQ.explanation || currentQ.commentary || currentQ.notes || isStarQuestion(currentQ)) && (
           <div className={`mb-6 p-4.5 rounded-2xl bg-emerald-50/90 dark:bg-zinc-800/90 border-2 border-emerald-500/40 dark:border-purple-500/40 shadow-sm transition-all animate-fade-in ${isEnhancedDrillBook ? 'ft350-answer-note' : ''}`}>
             <div className="flex items-center gap-2 mb-2 text-xs font-black uppercase tracking-wider text-emerald-800 dark:text-purple-300">
               {!isEnhancedDrillBook && <span className="text-base" aria-hidden="true">i</span>}
               <span>{isEnhancedDrillBook ? 'Answer note' : 'Explanation'}</span>
             </div>
-            <div 
-              className="text-sm md:text-base leading-relaxed text-gray-900 dark:text-gray-100 japanese-text font-medium"
-              dangerouslySetInnerHTML={{ __html: currentQ.explanation || currentQ.commentary || currentQ.notes }}
-            />
+            {isStarQuestion(currentQ) ? (
+              <StarExplanationCard question={currentQ} />
+            ) : (
+              <FormattedExplanationText
+                text={currentQ.explanation || currentQ.commentary || currentQ.notes}
+                className="text-sm md:text-base leading-relaxed text-gray-900 dark:text-gray-100 japanese-text font-medium"
+              />
+            )}
           </div>
         )}
 

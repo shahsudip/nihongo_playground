@@ -182,7 +182,14 @@ const Footnotes = ({ items }) => {
   if (!isNonEmptyArray(items)) return null;
   return (
     <div className="mt-3 pt-2 border-t border-gray-300 dark:border-gray-700 text-xs text-gray-700 dark:text-gray-300 space-y-1">
-      {items.map((f, i) => <div key={i}>{renderHtml(f)}</div>)}
+      {items.map((f, i) => {
+        if (typeof f === 'object' && f !== null) {
+          const sym = f.symbol || f.term || f.word || '';
+          const txt = f.text || f.definition || f.meaning || '';
+          return <div key={i}>{sym ? `${sym} ` : ''}{renderHtml(txt)}</div>;
+        }
+        return <div key={i}>{renderHtml(f)}</div>;
+      })}
     </div>
   );
 };
@@ -535,6 +542,17 @@ const SomatomeN3Book = () => {
           return;
         }
 
+        const bookKey = Object.keys(localChapterModules).find(k => k.endsWith('/book.json'));
+        if (bookKey && localChapterModules[bookKey]) {
+          const bookMod = localChapterModules[bookKey].default || localChapterModules[bookKey];
+          const found = (bookMod.chapters || []).find(c => (c.id || c.chapterId) === chapterId);
+          if (found) {
+            setData(found);
+            setLoading(false);
+            return;
+          }
+        }
+
         // 2. Check fallback to defaultWeek1Day1
         if (chapterId === 'week1-day1' && defaultWeek1Day1) {
           setData(defaultWeek1Day1);
@@ -868,7 +886,7 @@ const SomatomeN3Book = () => {
                 )}
                 {['comic_note', 'note', 'business_rule', 'explanation'].map(k => (
                   data.learning_focus[k] && typeof data.learning_focus[k] === 'string' ? (
-                    <p key={k} className="mt-3 font-bold text-black whitespace-pre-line">★ {data.learning_focus[k]}</p>
+                    <p key={k} className="mt-3 font-bold text-black whitespace-pre-line">★ {renderHtml(data.learning_focus[k])}</p>
                   ) : null
                 ))}
                 {(data.learning_focus.time_limit || data.learning_focus.total_score) && (
