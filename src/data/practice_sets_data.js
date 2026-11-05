@@ -519,7 +519,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "【正解】3（いまにも）\n【意味】黒い雲が出ていて、今にも雨が降りそうです。\n【英訳】Dark clouds are out, and it looks like it's going to rain at any moment.\n【解説】「今にも〜そうだ」は、すぐにも何かが起こりそうな切迫した状態を表す文型です。"
+              "explanation": "The correct answer is **3 いまにも** (*ima ni mo*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n黒い雲が出ていて、（ **いまにも** ）雨が降りそうです。\n*Kuroi kumo ga dete ite, (**ima ni mo**) ame ga furisō desu.*\n* **Meaning:**\n*\"Dark clouds are gathering, and it looks like it will rain **at any moment / any second now**.\"*\n\n---\n\n### Grammar Explanation\n\n* **今にも〜そうだ (N3 Grammar):**\nPairs **今にも** (*\"at any instant\"*) with the conjectural auxiliary **〜そうだ** to describe an imminent state or event that appears ready to burst out immediately.\n*Context clue:* **黒い雲が出ていて** (*\"dark clouds are gathering\"*) provides visible evidence that rain is on the verge of pouring down (**雨が降りそうです**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 いまが (*ima ga*):**\nMeans *\"now is [the best time/chance]\"* (e.g., 今がチャンスだ = Now is the chance). It does not pair with *〜そうだ* to describe imminent weather.\n* **2 いまで (*ima de*):**\nMeans *\"with now / as of now\"*. It cannot adverbially modify a conjectural weather predicate.\n* **4 いまをも (*ima o mo*):**\nArchaic or ungrammatical phrasing; not a valid adverbial modifier for imminent weather conjecture."
             },
             {
               "id": 37,
@@ -533,7 +533,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "【正解】2（なんか）\n【意味】肉がきらいなら、魚なんかはどうですか。\n【英訳】If you dislike meat, how about something like fish?\n【解説】「〜なんか」は「〜など」「〜でも」と同様に例を軽く挙げるときに使います。"
+              "explanation": "The correct answer is **2 なんか** (*nanka*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n肉がきらいなら、魚（ **なんか** ）はどうですか。\n*Niku ga kirai nara, sakana (**nanka**) wa dō desu ka.*\n* **Meaning:**\n*\"If you dislike meat, how about **something like** fish?\"*\n\n---\n\n### Grammar Explanation\n\n* **〜なんか (N3 Grammar):**\nA colloquial particle used to lightly present an example, proposal, or alternative (*\"something like...\"* / *\"how about [for instance]...\"*).\n*Context clue:* After hearing someone dislikes meat (**肉がきらいなら**), fish is lightly proposed as an alternative using **魚なんかはどうですか**.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 ならでは (*nara de wa*):**\nMeans *\"distinctive of / uniquely possible only for...\"* (e.g., 京都ならではの風景 = Scenery unique to Kyoto). It does not casually suggest an alternative meal.\n* **3 にしろ (*ni shiro*):**\nMeans *\"even if / whether it be...\"* (e.g., 魚にしろ肉にしろ). It cannot stand alone as a suggestion followed by *はどうですか*.\n* **4 こそ (*koso*):**\nAn emphatic focus particle (*\"precisely / above all\"*). Saying \"precisely fish\" when proposing a casual meal option sounds overly forceful."
             },
             {
               "id": 38,
@@ -547,7 +547,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "【正解】2（たびに）\n【意味】私は、林さんに会うたびに、すてきな人だと思います。\n【英訳】Every time I meet Hayashi-san, I think she is a wonderful person.\n【解説】「動詞辞書形＋たびに」は「〜するときはいつも毎回」という意味を表します。"
+              "explanation": "The correct answer is **2 たびに** (*tabi ni*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n私は、林さんに会う（ **たびに** ）、すてきな人だと思います。\n*Watashi wa, Hayashi-san ni au (**tabi ni**), suteki na hito da to omoimasu.*\n* **Meaning:**\n*\"**Every time / Whenever** I meet Hayashi-san, I think she is a wonderful person.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞辞書形＋たびに (N3 Grammar):**\nAttaches to the dictionary form of a verb to indicate that every single time action A occurs, consequence or impression B repeatedly takes place (*\"every time...\"* / *\"whenever...\"*).\n*Context clue:* Each encounter with Hayashi-san (**会うたびに**) unfailingly sparks the exact same pleasant impression (**すてきな人だと思います**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 だけに (*dake ni*):**\nMeans *\"precisely because / as one might expect from\"*. It does not express recurring temporal occasions.\n* **3 ばかりに (*bakari ni*):**\nMeans *\"simply because of [something minor], a terrible misfortune happened\"*. Thinking someone is wonderful is a positive sentiment, not a disaster.\n* **4 ところに (*tokoro ni*):**\nMeans *\"just as / right at the moment when\"*. It does not describe an ongoing, repeatedly formed impression."
             },
             {
               "id": 39,
@@ -561,7 +561,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "【正解】4（後で）\n【意味】昼ごはんを食べた後で、おいしいコーヒーを飲みました。\n【英訳】After eating lunch, I drank delicious coffee.\n【解説】「動詞た形＋後で（あとで）」は、ある動作が完了したその後に次の動作を行うことを表します。"
+              "explanation": "The correct answer is **4 後で** (*ato de*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n昼ごはんを食べた（ **後で** ）、おいしいコーヒーを飲みました。\n*Hirugohan o tabeta (**ato de**), oishii kōhī o nomimashita.*\n* **Meaning:**\n*\"**After** eating lunch, I drank delicious coffee.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞た形＋後で (N3/N4 Grammar):**\nAttaches to the past tense (*〜た形*) of an action verb to establish a clear chronological sequence where action B follows the completion of action A (*\"after having done...\"*).\n*Context clue:* Finishing lunch (**食べた後で**) is the completed prerequisite activity before moving on to enjoy coffee (**コーヒーを飲みました**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 後しか (*ato shika*):**\n*〜しか* requires a negative predicate (〜しか…ない). It cannot affirmatively connect two completed past actions.\n* **2 後へと (*ato e to*):**\nAn ungrammatical particle combination that cannot establish chronological sequence between clauses.\n* **3 後を (*ato o*):**\nThe direct object particle *を* cannot grammatically connect a subordinate temporal clause to an independent predicate."
             },
             {
               "id": 40,
@@ -575,7 +575,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "【正解】3（もらった）\n【意味】給料をもらったばかりなのに、もうお金がない。\n【英訳】Even though I just received my salary, I already have no money.\n【解説】「動詞た形＋ばかりだ」は、ある動作をしてから時間がほとんど経っていないことを表します。"
+              "explanation": "The correct answer is **3 もらった** (*moratta*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n無駄づかいをしてしまい、給料を（ **もらった** ）ばかりなのに、もうお金がない。\n*Mudazukai o shite shimai, kyūryō o (**moratta**) bakari nanoni, mō okane ga nai.*\n* **Meaning:**\n*\"I spent wastefully, and **even though I just** received my salary, I already have no money left.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞た形＋ばかり (N3 Grammar):**\nAttaches strictly to the past tense (*〜た形*) of a verb to emphasize that very little time has elapsed since the action occurred (*\"just did / have only recently done\"*) .\n*Context clue:* The contrast marker **〜のに** (*\"even though\"*) highlights the reckless speed at which the newly received paycheck was squandered (**もうお金がない**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 もらう (*morau*):**\nDictionary form denotes present or future action; *ばかり* requires the past *た*-form to convey recent completion.\n* **2 もらって (*moratte*):**\n*て*-form does not attach to *ばかり* to mean \"just recently did\".\n* **4 もらえ (*morae*):**\nImperative verb stem; completely ungrammatical before *ばかり*."
             },
             {
               "id": 41,
@@ -589,7 +589,7 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "【正解】1（行くの）\n【意味】私は、友だちがだれもいないところへ行くのはいやです。\n【英訳】I hate going to a place where I don't have any friends.\n【解説】「動詞辞書形＋のはいやだ」で動詞を名詞化し、「〜するのは好まない、嫌だ」という意味を表します。"
+              "explanation": "The correct answer is **1 行くの** (*iku no*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n私は、友だちがだれもいないところへ（ **行くの** ）はいやです。\n*Watashi wa, tomodachi ga dare mo inai tokoro e (**iku no**) wa iya desu.*\n* **Meaning:**\n*\"I hate **going** to a place where I don't have any friends.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞辞書形＋のはいやだ (N3/N4 Grammar):**\nUses the nominalizer **の** to convert the verb phrase **行く** into a noun phrase, allowing it to act as the topic of personal preference or aversion (**はいやです**).\n*Context clue:* Stating personal reluctance or dislike toward an activity requires nominalizing the dictionary form (*行くのはいやだ*).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 行きの (*iki no*):**\nNoun *行き* (*iki*) refers to a destination direction (e.g., 東京行き = Tokyo-bound); it does not nominalize a verbal clause.\n* **3 行ったの (*itta no*):**\nPast tense would mean \"having already gone\", whereas the speaker is expressing a general aversion to future relocation.\n* **4 行こうの (*ikō no*):**\nVolitional form (*行こう*) cannot be nominalized with *の* followed by *はいやです*."
             },
             {
               "id": 42,
@@ -603,7 +603,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "【正解】2（下がる）\n【意味】私の息子は、勉強をしないので、テストの点数が下がる一方だ。\n【英訳】My son doesn't study, so his test scores just keep dropping.\n【解説】「動詞辞書形＋一方だ（いっぽうだ）」は、ある状態の変化が一方向へ進み続けていることを表します（多くは悪い方向）。"
+              "explanation": "The correct answer is **2 下がる** (*sagaru*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n私の息子は、勉強をしないので、テストの点数が（ **下がる** ）一方だ。\n*Watashi no musuko wa, benkyō o shinai node, tesuto no tensū ga (**sagaru**) ippō da.*\n* **Meaning:**\n*\"Because my son doesn't study, his test scores **just keep on / continually** dropping.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞辞書形＋一方だ (N3 Grammar):**\nAttaches to the dictionary form of a verb of change (*下がる*) to express that a situation is relentlessly accelerating or continuing in one direction, predominantly used for negative trends (*\"keeps on...\"* / *\"continues to worsen\"*).\n*Context clue:* The lack of study (**勉強をしないので**) fuels an unrelenting downward slide in examination grades.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 下がり (*sagari*):**\nThe *masu*-stem does not attach to *一方だ*; the grammar strictly demands the dictionary form (*下がる一方だ*).\n* **3 下がった (*sagatta*):**\nPast tense cannot attach to *一方だ* to describe an ongoing progressive trend.\n* **4 下がって (*sagatte*):**\nThe *て*-form cannot attach to *一方だ*."
             },
             {
               "id": 43,
@@ -617,7 +617,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "【正解】3（返す）\n【意味】人から借りたお金は、かならず返すべきだと思います。\n【英訳】I believe one should definitely return money borrowed from others.\n【解説】「動詞辞書形＋べきだ」は「〜するのが当然だ・しなければならない（社会的・道徳的義務）」を表します。"
+              "explanation": "The correct answer is **3 返す** (*kaesu*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n人から借りたお金は、かならず（ **返す** ）べきだと思います。\n*Hito kara karita okane wa, kanarazu (**kaesu**) beki da to omoimasu.*\n* **Meaning:**\n*\"I believe that money borrowed from others **should / ought to** be returned without fail.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞辞書形＋べきだ (N3 Grammar):**\nAttaches to the dictionary form of a verb (*返す*) to express a clear moral, ethical, or common-sense obligation (*\"should / ought to\"*).\n*Context clue:* **人から借りたお金** (*\"borrowed money\"*) naturally incurs a strict ethical duty of repayment reinforced by **かならず** (*\"without fail\"*).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 返し (*kaeshi*):**\nThe *masu*-stem does not attach to *べきだ*; standard verbs require the dictionary form.\n* **2 返さ (*kaisa*):**\nThe negative stem cannot connect directly to *べきだ*.\n* **4 返して (*kaeshite*):**\nThe *て*-form cannot connect to *べきだ*."
             },
             {
               "id": 44,
@@ -631,7 +631,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "【正解】2（上で）\n【意味】この仕事を終わらせた上で、次の仕事を始めよう。\n【英訳】Let's start the next task after finishing this one.\n【解説】「動詞た形＋上で」は「まず〜してから、それを前提として次の動作を行う」ことを表します。"
+              "explanation": "The correct answer is **2 上で** (*ue de*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nこの仕事を終わらせた（ **上で** ）、次の仕事を始めよう。\n*Kono shigoto o owaraseta (**ue de**), tsugi no shigoto o hajimeyō.*\n* **Meaning:**\n*\"Let's start the next task **after / upon** finishing this one.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞た形＋上で (N3 Grammar):**\nAttaches to the past tense (*〜た形*) of a verb to indicate that completing step A is a mandatory prerequisite before commencing step B (*\"upon doing A...\"* / *\"after completing A\"*).\n*Context clue:* Wrapping up the current task (**終わらせた上で**) is the foundational step before initiating the next project (**次の仕事を始めよう**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 上へ (*ue e*):**\nIndicates upward spatial movement; it cannot establish a chronological prerequisite between tasks.\n* **3 上はを (*ue wa o*):**\nAn impossible, broken particle collision in Japanese.\n* **4 上から (*ue kara*):**\nMeans *\"from above\"* physically or hierarchically; it cannot indicate task sequence."
             },
             {
               "id": 45,
@@ -645,7 +645,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "【正解】4（ございます）\n【意味】店員「この服は、フランスのものでございます。」\n【英訳】Clerk: This clothing is from France.\n【解説】「〜でございます」は「〜です」の丁重語（丁寧語）で、店員が客に対して丁寧に話すときの表現です。"
+              "explanation": "The correct answer is **4 ございます** (*gozaimasu*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n客「これは、どこの服ですか。」\n店員「この服は、フランスのもので（ **ございます** ）。」\n*Kyaku: \"Kore wa, doko no fuku desu ka.\"*\n*Ten'in: \"Kono fuku wa, Furansu no mono de (**gozaimasu**).\"*\n* **Meaning:**\n*\"Customer: 'Where is this clothing from?'*\n*Clerk: 'This clothing **is** from France.' \"*\n\n---\n\n### Grammar Explanation\n\n* **〜でございます (Keigo / N3 Grammar):**\nThe highest polite (*丁寧語*) form of *〜です / である*, standardly used by store clerks and customer service staff toward customers when identifying or presenting items.\n*Context clue:* The speaker is a store clerk (**店員**) addressing a customer (**客**), demanding professional business politeness.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 おります (*orimasu*):**\nThe humble form of *います*, used strictly for animate beings (people/animals). Inanimate clothing takes *ございます*.\n* **2 います (*imasu*):**\nUsed for animate living entities, not for describing inanimate garments.\n* **3 いらっしゃいます (*irasshaimasu*):**\nThe honorific form (Sonkeigo) describing a customer's actions or presence. A clerk does not use honorific language on their own inventory."
             },
             {
               "id": 46,
@@ -659,7 +659,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "【正解】4（うかがいました）\n【意味】田中さんが若いころアメリカに住んでいたとうかがいましたが、本当ですか。\n【英訳】I heard that you lived in America when you were young, is that true?\n【解説】「うかがう（伺う）」は「聞く」の謙譲語です。「〜とうかがいました（私が聞きました）」が正しい敬語です。"
+              "explanation": "The correct answer is **4 うかがいました** (*ukagaimashita*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n田中さんが若いころアメリカに住んでいたと（ **うかがいました** ）が、本当ですか。\n*Tanaka-san ga wakai koro Amerika ni sunde ita to (**ukagaimashita**) ga, hontō desu ka.*\n* **Meaning:**\n*\"I **heard** that you lived in America when you were young; is that true?\"*\n\n---\n\n### Grammar Explanation\n\n* **うかがう (Kenjōgo / N3 Grammar):**\nThe humble form (*謙譲語*) of *聞く* (*to hear/ask*), used when the speaker describes hearing information regarding a respected person or elder (*\"I was informed that...\"* / *\"I heard that...\"*).\n*Context clue:* The speaker is politely confirming hearsay regarding Tanaka-san's personal background (**住んでいたとうかがいましたが**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 お聞きしました (*okiki shimashita*):**\nWhile humble, *うかがいました* is the standard idiomatic humble expression tested on the JLPT for receiving information about an esteemed party.\n* **2 お聞きになりました (*okiki ni narimashita*):**\nHonorific form (Sonkeigo) attributing the hearing to the listener. The speaker did the hearing, which requires humble language.\n* **3 うかがわれました (*ukagawaremashita*):**\nAn incorrect passive-honorific fusion that cannot express humble self-action."
             },
             {
               "id": 47,
@@ -673,7 +673,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "【正解】3（会いに行ったのに）\n【意味】せっかく遠くまで会いに行ったのに、彼女に会えなかった。\n【英訳】Although I went all the way to see her, I couldn't meet her.\n【解説】「せっかく〜のに」は、努力や好機が無駄になって残念・不満に思う気持ちを表す逆接の表現です。"
+              "explanation": "The correct answer is **3 会いに行ったのに** (*ai ni itta noni*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nせっかく遠くまで（ **会いに行ったのに** ）、彼女に会えなかった。\n*Sekkaku tōku made (**ai ni itta noni**), kanojo ni aenakatta.*\n* **Meaning:**\n*\"**Even though I went all the way to see her**, I couldn't meet her.\"*\n\n---\n\n### Grammar Explanation\n\n* **せっかく〜のに (N3 Grammar):**\nCoupled with **せっかく** (*\"going to great lengths/trouble\"*), **〜のに** expresses profound disappointment and frustration that substantial time, distance, or effort ended in vain (*\"after going through the trouble of... and yet\"*).\n*Context clue:* Traveling a long distance (**遠くまで**) is significant effort that clashes sadly with being unable to meet her (**彼女に会えなかった**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 会いに行ったので (*ai ni itta node*):**\nA straightforward causal conjunction (\"because\"). Going to meet her was not the cause of failing to see her.\n* **2 会いに行ったから (*ai ni itta kara*):**\nCausal conjunction (\"because\"), which logically contradicts the outcome.\n* **4 会いに行ったため (*ai ni itta tame*):**\nFormal causal conjunction (\"due to\"), making no sense as a reason for an absent rendezvous."
             },
             {
               "id": 48,
@@ -687,7 +687,7 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "【正解】1（酒は飲まない）\n【意味】これからは決して酒は飲まないと誓った。\n【英訳】I swore that from now on I would never drink alcohol.\n【解説】「決して〜ない」は「絶対に〜しない」という強い否定・決意を表します。"
+              "explanation": "The correct answer is **1 酒は飲まない** (*sake wa nomanai*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n飲酒運転をして事故を起こしてしまい、これからは決して（ **酒は飲まない** ）と誓った。\n*Inshu unten o shite jiko o okoshite shimai, kore kara wa kesshite (**sake wa nomanai**) to chikatta.*\n* **Meaning:**\n*\"Having caused an accident by drunk driving, I swore that from now on I would **never drink alcohol**.\"*\n\n---\n\n### Grammar Explanation\n\n* **決して〜ない (N3 Grammar):**\nThe emphatic negative adverb **決して** (*\"never / under no circumstances\"*) pairs strictly with a negative volitional verb (*〜ない*) to express an unshakeable oath or resolution.\n*Context clue:* Taking an earnest vow (**誓った**) after a grave drunk-driving collision demands the absolute resolution **決して酒は飲まない**.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 酒を飲めない (*sake o nomenai*):**\nNegative potential (\"cannot drink alcohol\"), describing physical or biological inability rather than a moral resolution to abstain.\n* **3 酒を飲むこともあるだろう (*sake o nomu koto mo aru darō*):**\nSpeculative affirmative (\"there will probably also be times I drink\"), blatantly contradicting a solemn vow to quit.\n* **4 酒を飲むこともないだろう (*sake o nomu koto mo nai darō*):**\nDetached conjecture (\"I probably won't drink\"), which lacks the resolute personal commitment demanded by *決して…と誓った*."
             },
             {
               "id": 49,
@@ -773,7 +773,7 @@ export const practiceSetsBook = {
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "紙の手帳\r\nパソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。\r\n[19] 書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。\r\n[20] 、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が [21] 。女性向けの手帳は以前から売っているが、今年は種類がたくさんあるようだ。 [22-a] 、ピンクなど明るいきれいな色のものや、かわいいデザインのもの、自分の好きなペンを取り付けられるタイプ、手帳を止めるバンドやリボンが付いたもの [22-b] 、若い女性が好みそうなものがそろっている。\r\n私も仕事で手帳をよく使うので、このように選ぶ楽しみが増えたことはうれしい。だが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、 [23] 。どのような手帳がほしいか考えてから、売り場へ向かおうと思う。",
               "imageSrc": "/images/practice_sets/set_1_passage.jpg",
-              "explanation": "【正解】4（ある）\n【文脈】「[19] 書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。」\n【解説】特定の場所や店舗を不特定・例示として提示するときは連体詞「ある（特定の書店）」を用います。「こんな」「のような」は直前の指示がないので不自然です。\n【英訳】a certain (bookstore)"
+              "explanation": "The correct answer is **4 ある** (*aru*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n（ **ある** ）書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。\n*(**Aru**) shoten no techō uriba de wa, natsu no owari goro kara rainen-yō no techō o uri-hajimeta.*\n* **Meaning:**\n*\"At **a certain** bookstore's planner section, they began selling next year's planners around the end of summer.\"*\n\n---\n\n### Grammar Explanation\n\n* **連体詞「ある〜」 (N3 Grammar):**\nAttaches directly to a noun to introduce a specific yet unnamed or general entity (*\"a certain...\"* / *\"some...\"*).\n*Context clue:* The author is opening the essay by introducing a specific real-world bookstore as an illustrative setting (**ある書店の売り場では**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 あんな (*anna*):**\nDemonstrative determiner meaning *\"that kind of\"*, requiring previous shared context or pointing to something distant.\n* **2 あのような (*ano yō na*):**\nSimile requiring an explicit prior benchmark.\n* **3 あった (*atta*):**\nPast-tense verb; cannot act as an adnominal determiner introducing a single store location here."
             },
             {
               "id": 55,
@@ -789,7 +789,7 @@ export const practiceSetsBook = {
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "紙の手帳\r\nパソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。\r\n[19] 書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。\r\n[20] 、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が [21] 。女性向けの手帳は以前から売っているが、今年は種類がたくさんあるようだ。 [22-a] 、ピンクなど明るいきれいな色のものや、かわいいデザインのもの、自分の好きなペンを取り付けられるタイプ、手帳を止めるバンドやリボンが付いたもの [22-b] 、若い女性が好みそうなものがそろっている。\r\n私も仕事で手帳をよく使うので、このように選ぶ楽しみが増えたことはうれしい。だが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、 [23] 。どのような手帳がほしいか考えてから、売り場へ向かおうと思う。",
               "imageSrc": "/images/practice_sets/set_1_passage.jpg",
-              "explanation": "【正解】2（今までは）\n【文脈】「[20] 、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が...」\n【解説】後半の「最近は」と対比して過去の傾向を述べるため、「今までは」が適切です。\n【英訳】Until now"
+              "explanation": "The correct answer is **2 今までは** (*ima made wa*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n（ **今までは** ）、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が...\n*(**Ima made wa**), techō to iu to, kuroi hyōshi no shinpuru na mono ga ookatta ga, omise no hito ni kiite miru to, saikin wa, toku ni wakai josei-muke no shōhin ga...*\n* **Meaning:**\n*\"**Until now**, when speaking of planners, simple ones with black covers were common, but upon asking store staff, recently products aimed particularly at young women are...\"*\n\n---\n\n### Grammar Explanation\n\n* **今までは〜、最近は… (N3 Contrast):**\n**今までは** (*\"until now / previously\"*) sets up an established historical convention to contrast sharply against modern innovations introduced by **最近は** (*\"recently\"*).\n*Context clue:* Past simple black planners are contrasted directly with modern colorful trends.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 今からは (*ima kara wa*):**\nRefers to the future (\"from now on\"), contradicting the past description *多かった*.\n* **3 次からは (*tsugi kara wa*):**\nMeans *\"from next time onward\"*, irrelevant to broad consumer trends.\n* **4 次までは (*tsugi made wa*):**\nMeans *\"until next time\"*, nonsensical in this temporal contrast."
             },
             {
               "id": 56,
@@ -805,7 +805,7 @@ export const practiceSetsBook = {
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "紙の手帳\r\nパソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。\r\n[19] 書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。\r\n[20] 、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が [21] 。女性向けの手帳は以前から売っているが、今年は種類がたくさんあるようだ。 [22-a] 、ピンクなど明るいきれいな色のものや、かわいいデザインのもの、自分の好きなペンを取り付けられるタイプ、手帳を止めるバンドやリボンが付いたもの [22-b] 、若い女性が好みそうなものがそろっている。\r\n私も仕事で手帳をよく使うので、このように選ぶ楽しみが増えたことはうれしい。だが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、 [23] 。どのような手帳がほしいか考えてから、売り場へ向かおうと思う。",
               "imageSrc": "/images/practice_sets/set_1_passage.jpg",
-              "explanation": "【正解】2（増えているそうだ）\n【文脈】「お店の人に聞いてみると、最近は、特に若い女性向けの商品が [21] 。」\n【解説】店の人から聞いた伝聞（情報）を伝える文脈なので、伝聞の助動詞「〜そうだ」が続き、「増えているそうだ」が正解です。\n【英訳】they say it is increasing"
+              "explanation": "The correct answer is **2 増えているそうだ** (*fuete iru sō da*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nお店の人に聞いてみると、最近は、特に若い女性向けの商品が（ **増えているそうだ** ）。\n*Omise no hito ni kiite miru to, saikin wa, toku ni wakai josei-muke no shōhin ga (**fuete iru sō da**).*\n* **Meaning:**\n*\"Upon asking the store staff, **I heard that** products particularly aimed at young women are **increasing**.\"*\n\n---\n\n### Grammar Explanation\n\n* **伝聞の「〜そうだ」 (N3 Grammar):**\nAttaches to the dictionary or continuous form (*増えている*) to convey hearsay or information obtained from an authoritative source (*\"I heard that...\"* / *\"they say that...\"*).\n*Context clue:* The author explicitly inquired with the store clerk (**お店の人に聞いてみると**), directly introducing reported hearsay (**増えているそうだ**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 増えていそうだ (*fuete isō da*):**\nConjecture based on visual appearance (*様態*), but the author obtained factual knowledge directly from the clerk, demanding hearsay *伝聞*.\n* **3 増えてありそうだ (*fuete arisō da*):**\nIntransitive *増える* cannot form *〜てある* (which requires transitive verbs).\n* **4 増えてあるそうだ (*fuete aru sō da*):**\nIntransitive verbs cannot pair with *〜てある*."
             },
             {
               "id": 57,
@@ -821,7 +821,7 @@ export const practiceSetsBook = {
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "紙の手帳\r\nパソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。\r\n[19] 書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。\r\n[20] 、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が [21] 。女性向けの手帳は以前から売っているが、今年は種類がたくさんあるようだ。 [22-a] 、ピンクなど明るいきれいな色のものや、かわいいデザインのもの、自分の好きなペンを取り付けられるタイプ、手帳を止めるバンドやリボンが付いたもの [22-b] 、若い女性が好みそうなものがそろっている。\r\n私も仕事で手帳をよく使うので、このように選ぶ楽しみが増えたことはうれしい。だが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、 [23] 。どのような手帳がほしいか考えてから、売り場へ向かおうと思う。",
               "imageSrc": "/images/practice_sets/set_1_passage.jpg",
-              "explanation": "【正解】3\n【文脈】「[22-a] 、ピンクなど明るいきれいな色のものや、かわいいデザインのもの、自分の好きなペンを取り付けられるタイプ、手帳を止めるバンドやリボンが付いたもの [22-b] 、若い女性が好みそうなものがそろっている。」\n【解説】具体的な種類の例を列挙しているので、「たとえば〜など」の呼応が正解です。\n【英訳】a たとえば ／ b など / for example, ... etc."
+              "explanation": "The correct answer is **3 a たとえば ／ b など** (*a tatoeba / b nado*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n（ **たとえば** ）、ピンクなど明るいきれいな色のものや、かわいいデザインのもの…（ **など** ）、若い女性が好みそうなものがそろっている。\n*(**Tatoeba**), pinku nado akarui kirei na iro no mono ya, kawaii dezain no mono... (**nado**), wakai josei ga konomisō na mono ga sorotte iru.*\n* **Meaning:**\n*\"**For example**, items in bright pretty colors such as pink, cute designs... **and the like**, things young women would like are well-stocked.\"*\n\n---\n\n### Grammar Explanation\n\n* **たとえば〜など (N3 Correlative Pattern):**\nThe introductory adverb **たとえば** (*\"for example\"*) pairs with the listing particle **など** (*\"and so forth / etc.\"*) to enumerate representative items.\n*Context clue:* Specific color palettes and cute accessories are cited as representative examples of products young women prefer.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 a なぜなら ／ b だから (*nazenara / dakara*):**\nReason-consequence pairing, but the author is listing items, not proving causation.\n* **2 a ところが ／ b がないので (*tokoroga / ga nai node*):**\nContrast and absence, but the store has an abundant selection (*そろっている*).\n* **4 a たぶん ／ b であれば (*tabun / de areba*):**\nHypothetical conjecture, but these are real physical items visibly stocked on the shelves."
             },
             {
               "id": 58,
@@ -837,7 +837,7 @@ export const practiceSetsBook = {
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "紙の手帳\r\nパソコンや携帯電話などが広く使われるようになってから、自分の予定を管理するため、それらを手帳の代わりに使う人が多くなっている。それでも紙の手帳を買いたいという人も多いのではないだろうか。私もそうである。\r\n[19] 書店の手帳売り場では、夏の終わりごろから来年用の手帳を売りはじめた。\r\n[20] 、手帳というと、黒い表紙のシンプルなものが多かったが、お店の人に聞いてみると、最近は、特に若い女性向けの商品が [21] 。女性向けの手帳は以前から売っているが、今年は種類がたくさんあるようだ。 [22-a] 、ピンクなど明るいきれいな色のものや、かわいいデザインのもの、自分の好きなペンを取り付けられるタイプ、手帳を止めるバンドやリボンが付いたもの [22-b] 、若い女性が好みそうなものがそろっている。\r\n私も仕事で手帳をよく使うので、このように選ぶ楽しみが増えたことはうれしい。だが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、 [23] 。どのような手帳がほしいか考えてから、売り場へ向かおうと思う。",
               "imageSrc": "/images/practice_sets/set_1_passage.jpg",
-              "explanation": "【正解】3（すぐに決められなかった）\n【文脈】「だが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、 [23] 。どのような手帳がほしいか考えてから、売り場へ向かおうと思う。」\n【解説】種類が多すぎて選べなかった体験を述べているので、可能動詞の過去否定形「すぐに決められなかった」が適切です。\n【英訳】I couldn't decide right away"
+              "explanation": "The correct answer is **3 すぐに決められなかった** (*sugu ni kimerarenakatta*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nだが、売り場で選ぼうとしてみても、商品がいろいろたくさんあって、（ **すぐに決められなかった** ）。\n*Daga, uriba de erabō to shite mite mo, shōhin ga iroiro takusan atte, (**sugu ni kimerarenakatta**).*\n* **Meaning:**\n*\"However, even trying to choose at the counter, there were so many varied items that I **could not decide right away**.\"*\n\n---\n\n### Grammar Explanation\n\n* **可能動詞の過去否定形 (N3/N4 Grammar):**\nThe past potential negative of *決める* (*kimeru*) is **決められなかった** (*\"could not decide\"*), expressing personal inability to make a choice.\n*Context clue:* The vast array of options overwhelmed the buyer (**たくさんあって**), prompting them to leave the store and think it over at home.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 急に決めた (*kyū ni kimeta*):**\nAffirmative (\"suddenly decided\"), directly contradicting the author's dilemma and decision to reconsider at home.\n* **2 急に決まるだろう (*kyū ni kimaru darō*):**\nIntransitive future conjecture (\"will probably be decided suddenly\"), unsuited for a past personal experience.\n* **4 すぐに決められなかっただろう (*sugu ni kimerarenakatta darō*):**\nConjecture about a third party (\"they probably couldn't decide\"). The author lived through this dilemma personally."
             }
           ]
         }

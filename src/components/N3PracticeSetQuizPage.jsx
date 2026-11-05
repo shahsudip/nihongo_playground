@@ -11,6 +11,7 @@ import { OptionButton } from './ui/OptionButton';
 import { ExitConfirmModal } from './ui/ExitConfirmModal';
 import { JlptScoreCertificateModal } from './ui/JlptScoreCertificateModal';
 import StarExplanationCard from './ui/StarExplanationCard';
+import StructuredExplanationView from './ui/StructuredExplanationView';
 import { calculateJlptExamScore } from '../utils/jlptScoring.js';
 import { isStarQuestion, splitExplanationLines } from '../utils/starQuestionExplainer.js';
 import { practiceSetsBook } from '../data/practice_sets_data.js';
@@ -72,7 +73,7 @@ const N3PracticeSetQuizPage = () => {
   
   const [answers, setAnswers] = useState({});
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [feedbackMode, setFeedbackMode] = useState('Immediate');
+  const [_feedbackMode, _setFeedbackMode] = useState('Immediate');
   const [isFinished, setIsFinished] = useState(false);
   const [timerSeconds, setTimerSeconds] = useState(0);
   const [timerActive, setTimerActive] = useState(true);
@@ -160,7 +161,7 @@ const N3PracticeSetQuizPage = () => {
 
   const totalQuestions = questions.length;
   const answeredCount = Object.keys(answers).length;
-  const progressPercent = totalQuestions > 0 ? Math.round((answeredCount / totalQuestions) * 100) : 0;
+  const _progressPercent = totalQuestions > 0 ? Math.round((answeredCount / totalQuestions) * 100) : 0;
 
   // Response-pattern IRT practice estimate
   const scoreReport = useMemo(() => {
@@ -766,17 +767,31 @@ const N3PracticeSetQuizPage = () => {
         })}
       </div>
 
-      {/* Dedicated Explanation Card when question is answered */}
+      {/* Dedicated Explanation Card when question is answered (Expandable, Initially Closed) */}
       {selectedIdx !== undefined && (currentQ.explanation || isStarQuestion(currentQ)) && (
-        <div className="mt-5 p-4.5 rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] shadow-sm animate-fade-in text-left">
-          <div className="flex items-center gap-2 mb-3 text-xs font-black uppercase tracking-wider text-emerald-500">
-            <span className="text-base">💡</span>
-            <span>解説 • Explanation</span>
-          </div>
+        <details className="mt-5 rounded-2xl border border-emerald-500/30 bg-emerald-500/[0.04] dark:bg-emerald-950/20 overflow-hidden group select-none transition-all">
+          <summary className="flex items-center justify-between p-4 cursor-pointer font-bold text-sm text-emerald-800 dark:text-emerald-300 hover:bg-emerald-500/10 transition-colors">
+            <div className="flex items-center gap-2.5">
+              <span className="w-6 h-6 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs shadow-sm">💡</span>
+              <span>解説 • Explanation & Insights</span>
+              <span className="text-[11px] font-normal text-gray-500 dark:text-gray-400 font-mono">
+                (Click to expand)
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-mono font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-300">
+                正解：選択肢 {currentQ.correctIndex !== undefined ? currentQ.correctIndex + 1 : currentQ.correct}
+              </span>
+              <span className="text-xs text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+            </div>
+          </summary>
 
-          {isStarQuestion(currentQ) ? (
-            <StarExplanationCard question={currentQ} />
-          ) : (
+          <div className="p-4 sm:p-5 pt-3 border-t border-emerald-500/10 space-y-3 text-sm leading-relaxed text-gray-700 dark:text-gray-300 text-left select-text">
+            {isStarQuestion(currentQ) ? (
+              <StarExplanationCard question={currentQ} />
+            ) : currentQ.explanation && (currentQ.explanation.includes('###') || currentQ.explanation.startsWith('The correct answer is')) ? (
+              <StructuredExplanationView explanation={currentQ.explanation} />
+            ) : (
             <div className="space-y-2.5 text-sm md:text-base leading-relaxed">
               {(() => {
                 const parsedLines = [];
@@ -854,7 +869,8 @@ const N3PracticeSetQuizPage = () => {
               })()}
             </div>
           )}
-        </div>
+          </div>
+        </details>
       )}
 
       <div className="flex justify-between items-center pt-4 border-t border-[var(--color-border)] mt-8">
