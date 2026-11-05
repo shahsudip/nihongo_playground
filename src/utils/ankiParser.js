@@ -19,7 +19,7 @@ export function ankiFuriganaToRuby(text) {
   clean = clean.replace(/([一-龯々ヶ\u3040-\u309F\u30A0-\u30FF]+)[（(]([\u3040-\u309F\u30A0-\u30FF]+)[）)]/g, '<ruby>$1<rt>$2</rt></ruby>');
 
   // 2. Handle standard and extended Anki bracket notation:
-  clean = clean.replace(/([^\s\[\]<>()（）]+)\[([^\]]+)\]/g, '<ruby>$1<rt>$2</rt></ruby>');
+  clean = clean.replace(/([^\s[\]<>()（）]+)\[([^\]]+)\]/g, '<ruby>$1<rt>$2</rt></ruby>');
 
   return clean;
 }

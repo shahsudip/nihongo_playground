@@ -19,7 +19,7 @@ const ResultsPage = lazy(() => import('./components/result_screen.jsx'));
 const ProfilePage = lazy(() => import('./components/profile_screen.jsx'));
 const ExerciseGridPage = lazy(() => import('./components/exercise_grid_screen.jsx'));
 const StandardQuizPage = lazy(() => import('./components/standard_quiz_screen.jsx'));
-const ReadingQuizPage = lazy(() => import('./components/ReadingQUizPage.jsx'));
+const ReadingQuizPage = lazy(() => import('./components/ReadingQuizPage.jsx'));
 const VocabularyListPage = lazy(() => import('./components/VocabularyListPage.jsx'));
 const FlashcardViewer = lazy(() => import('./components/FlashcardViewer.jsx'));
 const GrammarStudyPage = lazy(() => import('./components/grammar_study_page.jsx'));

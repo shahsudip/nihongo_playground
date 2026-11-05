@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useSrsQuiz } from '../hooks/quiz_logic_hook.jsx';
 import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
@@ -214,7 +214,7 @@ const transformQuizContent = (rawContent = []) => {
 const QuizPage = () => {
   const { level, category, quizId } = useParams();
   const navigate = useNavigate();
-  const location = useLocation();
+
   const { currentUser, isAdmin } = useAuth();
   const isCustomQuiz = !!quizId;
 

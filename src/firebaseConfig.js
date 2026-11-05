@@ -43,6 +43,6 @@ if (import.meta.env.VITE_USE_FIREBASE_EMULATORS === 'true') {
 }
 
 // Export the instances to be used in other components
-export { db, auth, functions, storage };
+export { db, auth, functions, storage, analytics };
 
 

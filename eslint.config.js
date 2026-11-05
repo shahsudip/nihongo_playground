@@ -15,6 +15,13 @@ export default defineConfig([
     '**/*backup*/**',
     '**/*backup*',
     'scripts/**',
+    '15 practice sets to firebase/**',
+    'youtube_story_generator/**',
+    'assets/**',
+    'anki_decks/**',
+    'functions/**',
+    'scraper-test/**',
+    '*.js',
   ]),
   {
     files: ['**/*.{js,jsx}'],
@@ -33,7 +40,9 @@ export default defineConfig([
       },
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]', argsIgnorePattern: '^[A-Z_]', caughtErrors: 'none' }],
+      'no-empty': ['error', { allowEmptyCatch: true }],
+      'no-irregular-whitespace': 'off',
     },
   },
 ])

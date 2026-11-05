@@ -16,7 +16,7 @@ export const JlptOmrAnswerSheet = ({
   currentIndex = 0,
   onSelectQuestion,
   onSelectAnswer,
-  testTitle = 'JLPT 模擬試験',
+  _testTitle = 'JLPT 模擬試験',
   sectionTitle = '言語知識（文字・語彙）',
   level = 'N3',
   isMobileDrawer = false,

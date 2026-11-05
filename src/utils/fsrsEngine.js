@@ -1,6 +1,6 @@
 // src/utils/fsrsEngine.js
 import { fsrs, createEmptyCard, Rating, State, generatorParameters } from 'ts-fsrs';
-import { doc, getDoc, setDoc, collection, getDocs, query, where, orderBy, limit, addDoc } from 'firebase/firestore';
+import { doc, setDoc, collection, getDocs, query, where, addDoc } from 'firebase/firestore';
 
 // Default FSRS instance with 90% desired retention
 export const defaultParams = generatorParameters({
@@ -28,7 +28,7 @@ export function formatInterval(dueDate, now = new Date()) {
   const diffHours = Math.floor(diffMin / 60);
   const diffDays = Math.floor(diffHours / 24);
   const diffMonths = Math.floor(diffDays / 30);
-  const diffYears = Math.floor(diffDays / 365);
+
 
   if (diffMin < 1) return '< 1m';
   if (diffMin < 60) return `${diffMin}m`;

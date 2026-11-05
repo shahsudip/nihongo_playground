@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { quizData as staticQuizData } from '../data/quiz_data.jsx';
 import { useAuth } from '../context/AuthContext.jsx';
 import { db } from '../firebaseConfig.js';
-import { collection, onSnapshot, query } from 'firebase/firestore';
+import { collection, onSnapshot } from 'firebase/firestore';
 
 export const useQuizManager = () => {
   const { currentUser } = useAuth();
