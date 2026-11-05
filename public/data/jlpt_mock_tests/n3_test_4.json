@@ -2104,18 +2104,19 @@
           ],
           "correct": 3,
           "correctOption": "<ruby>理解<rt>りかい</rt></ruby>",
-          "explanations": [
-            "This marks 'lecture' as the subject of the verb phrase 理解できなくて.",
-            "This expresses inability (couldn't understand) and connects the cause to the result.",
-            "",
-            "なかなか means 'not easily' and modifies 理解できなくて."
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
             444,
             10,
             444
+          ],
+          "correctOrder": [
+            1,
+            4,
+            3,
+            2
           ]
         },
         {
@@ -2145,12 +2146,7 @@
           ],
           "correct": 2,
           "correctOption": "人気だ",
-          "explanations": [
-            "彼女は comes first here because it is the topic of the sentence.",
-            "",
-            "若い人に comes before 人気 here because it is marking the group of people she is popular among.",
-            "と言っても comes after 人気だ and means 'although you might say (she is popular)'."
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
@@ -2158,6 +2154,12 @@
             442,
             3,
             32
+          ],
+          "correctOrder": [
+            1,
+            3,
+            2,
+            4
           ]
         },
         {
@@ -2187,17 +2189,18 @@
           ],
           "correct": 4,
           "correctOption": "<ruby>良<rt>い</rt></ruby>いことも",
-          "explanations": [
-            "悪いこと pairs with ばかりでなく here, because advice is being given to not only think negative things.",
-            "考える (to think/consider), comes last and applies to both 悪いこと and 良いこと.",
-            "ばかりでなく comes after 悪いこと here to form 'not only negative things'.",
-            ""
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
             4,
             255
+          ],
+          "correctOrder": [
+            1,
+            3,
+            4,
+            2
           ]
         },
         {
@@ -2227,12 +2230,7 @@
           ],
           "correct": 2,
           "correctOption": "しない",
-          "explanations": [
-            "見ようと combines with しない to mean 'makes no attempt to see'.",
-            "",
-            "彼を is being modified by the preceding clause 現実を見ようとしない, and is the direct object of 見ると.",
-            "現実を combines with 見ようとしない to mean 'makes no attempt at seeing reality'."
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
@@ -2240,6 +2238,12 @@
             21,
             21,
             279
+          ],
+          "correctOrder": [
+            4,
+            1,
+            2,
+            3
           ]
         },
         {
@@ -2269,12 +2273,7 @@
           ],
           "correct": 3,
           "correctOption": "<ruby>働<rt>はたら</rt></ruby>かなくても",
-          "explanations": [
-            "いい comes after もし働いても働かなくても, giving the meaning 'it's fine either way'.",
-            "This is the first half of the grammar pattern ～ても～なくても which means 'whether~or not'.",
-            "",
-            "もし comes first, introducing a hypothetical scenario."
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
@@ -2282,6 +2281,12 @@
             171,
             493,
             494
+          ],
+          "correctOrder": [
+            4,
+            2,
+            3,
+            1
           ]
         },
         {

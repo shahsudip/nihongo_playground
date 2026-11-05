@@ -2088,12 +2088,7 @@
           ],
           "correct": 1,
           "correctOption": "<ruby>映画<rt>えいが</rt></ruby>は",
-          "explanations": [
-            "",
-            "ほど goes after あの映画 here and means 'to the extent of that movie'.",
-            "感動する modifies 映画 to mean 'moving movie'.",
-            "ない goes last here, giving the first clause the meaning 'there is no movie as moving as that one'."
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
@@ -2101,6 +2096,12 @@
             221,
             221,
             22
+          ],
+          "correctOrder": [
+            2,
+            3,
+            1,
+            4
           ]
         },
         {
@@ -2130,17 +2131,18 @@
           ],
           "correct": 1,
           "correctOption": "<ruby>痩<rt>や</rt></ruby>せる",
-          "explanations": [
-            "",
-            "食べるほど comes after 食べれば here as part of the grammar structure ～ば～ほど(the more (A), the more (B)).",
-            "食べれば comes before 食べるほど here as a part of the grammar structure ～ば～ほど (the more (A), the more (B)).",
-            "食べ物 comes last here and is modified by the phrase 食べれば食べるほど瘦せる, describing a food that makes you thinner the more you eat it."
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
             207,
             207
+          ],
+          "correctOrder": [
+            3,
+            2,
+            1,
+            4
           ]
         },
         {
@@ -2170,17 +2172,18 @@
           ],
           "correct": 4,
           "correctOption": "ホコリ",
-          "explanations": [
-            "部屋は comes after あなたの and marks あなたの部屋 as the topic of the sentence.",
-            "あなたの comes first here because it is describing whose room is covered in dust.",
-            "だらけ comes after ホコリ here and means 'covered in dust;.",
-            ""
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
             243,
             6
+          ],
+          "correctOrder": [
+            2,
+            1,
+            4,
+            3
           ]
         },
         {
@@ -2210,18 +2213,19 @@
           ],
           "correct": 1,
           "correctOption": "になれる",
-          "explanations": [
-            "とは限らない means 'not necessarily' and is used to qualify しあわせになれる as 'becoming happy isn't guaranteed'.",
-            "",
-            "This means 'even if', and sets up the contrast between お金がたくさんある and 幸せになれる限らない.幸せ comes before になれる to mean 'become happy'.",
-            ""
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
             132,
             278,
             174
+          ],
+          "correctOrder": [
+            4,
+            2,
+            1,
+            3
           ]
         },
         {
@@ -2251,18 +2255,19 @@
           ],
           "correct": 2,
           "correctOption": "言っていい",
-          "explanations": [
-            "にしても pairs with 冗談 here to mean 'even if it's a joke'.",
-            "",
-            "ことと has 2 functions here: こと nominalizes the preceding clause 冗談にしても言っていい. と means 'and', linking it to 言ってはいけないこと.",
-            "冗談 pairs with にしても here to mean 'even if it's a joke'."
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
             35,
             15,
             262
+          ],
+          "correctOrder": [
+            4,
+            1,
+            2,
+            3
           ]
         },
         {

@@ -2098,18 +2098,19 @@
           ],
           "correct": 3,
           "correctOption": "こそ",
-          "explanations": [
-            "したから comes before こそ to complete the phrase ～からこそ, which means 'precisely because'.",
-            "努力 comes before したからこそ, and is highlighted as the exact reason the exam was passed.",
-            "",
-            "試験に goes last to make the phrase 試験に合格"
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
             446,
             32,
             446
+          ],
+          "correctOrder": [
+            2,
+            1,
+            3,
+            4
           ]
         },
         {
@@ -2139,12 +2140,7 @@
           ],
           "correct": 3,
           "correctOption": "ならない",
-          "explanations": [
-            "暗く combines with ならない to form the phrase 'does not become dark'.",
-            "うちに means 'while', and marks a favorable conditions that may not last. In this case that condition is 外が暗くならない.",
-            "",
-            "外が Comes first to mark the subject 'outside', which is then described by 暗くならない."
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
@@ -2152,6 +2148,12 @@
             451,
             57,
             10
+          ],
+          "correctOrder": [
+            4,
+            1,
+            3,
+            2
           ]
         },
         {
@@ -2181,18 +2183,19 @@
           ],
           "correct": 2,
           "correctOption": "ために",
-          "explanations": [
-            "合格 takes the に particle and comes after テストに to form 'pass the test'.",
-            "",
-            "テストに is modified by 日本語の to mean 'Japanese test'.",
-            "毎日 means 'every day' and combines with 3時間ずつ'."
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
             205,
             32,
             22
+          ],
+          "correctOrder": [
+            3,
+            1,
+            2,
+            4
           ]
         },
         {
@@ -2222,17 +2225,18 @@
           ],
           "correct": 1,
           "correctOption": "トマト",
-          "explanations": [
-            "",
-            "くらい is being used to mark tomatoes as being 'about the only food' the speaker doesn't like.",
-            "苦手な comes before 食べ物 to make the phrase 'food I don't really like'.",
-            "食べ物 is modified by 苦手な to mean 'food I don't really like'. The は particle is marking it as the topic of the clause."
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
             234,
             3
+          ],
+          "correctOrder": [
+            3,
+            4,
+            1,
+            2
           ]
         },
         {
@@ -2262,12 +2266,7 @@
           ],
           "correct": 1,
           "correctOption": "そんなこと",
-          "explanations": [
-            "",
-            "The intended answer is 子ども[で][さえ][そんなこと][知っている]と言われてしまった.  Here, で must come in the first slot because the combination of [で][さえ] is the only option that fits naturally after こども.",
-            "The intended answer is 子ども[で][さえ][そんなこと][知っている]と言われてしまった. 知っている must go in the fourth position, because it is the only option that fits naturally before と言われてしまった.",
-            "The intended answer is 子ども[で][さえ][そんなこと][知っている]と言われてしまった.  Here, さえ must come in the second slot because the combination of [で][さえ] is the only option that fits naturally after こども."
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [
             838
@@ -2276,6 +2275,12 @@
             248,
             369,
             769
+          ],
+          "correctOrder": [
+            2,
+            4,
+            1,
+            3
           ]
         },
         {

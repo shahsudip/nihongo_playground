@@ -2107,12 +2107,7 @@
           ],
           "correct": 4,
           "correctOption": "ために",
-          "explanations": [
-            "大切な is modifying 会議, describing it as important.",
-            "飲みすぎた comes after お酒を to form 'drank too much', and attaches to ために to show the cause reason for being late.",
-            "お酒を functions as the object of 飲みすぎた, so it must precede it.",
-            ""
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
@@ -2120,6 +2115,12 @@
             28,
             21,
             76
+          ],
+          "correctOrder": [
+            3,
+            2,
+            4,
+            1
           ]
         },
         {
@@ -2149,12 +2150,7 @@
           ],
           "correct": 1,
           "correctOption": "いいか",
-          "explanations": [
-            "",
-            "誰に marks the person being asked, so it must come before 聞けば.",
-            "わからなくて comes after 誰に聞けばいいか to form the phrase 'didn't know who to ask'.",
-            "聞けば comes after 誰に, to form 'if (I) ask', and precedes いいか."
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
@@ -2162,6 +2158,12 @@
             774,
             32,
             195
+          ],
+          "correctOrder": [
+            2,
+            4,
+            1,
+            3
           ]
         },
         {
@@ -2191,12 +2193,7 @@
           ],
           "correct": 2,
           "correctOption": "練習している",
-          "explanations": [
-            "のように is used with 毎日 to form the phrase 'almost every day'.",
-            "",
-            "に違いない comes last here, forming the phrase 'there's no doubt they practice almost every day'.",
-            "毎日 pairs with のように here to form the phrase 'almost every day'."
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
@@ -2204,6 +2201,12 @@
             286,
             626,
             626
+          ],
+          "correctOrder": [
+            4,
+            1,
+            2,
+            3
           ]
         },
         {
@@ -2233,17 +2236,18 @@
           ],
           "correct": 3,
           "correctOption": "<ruby>恐<rt>おそ</rt></ruby>ろしい",
-          "explanations": [
-            "習慣 comes first and combines with というのは which means 'the thing known as a habit'.",
-            "This is a combination of もの, which marks the phrase 習慣というのは恐ろしい and で, which links the thought with the rest of the sentence.",
-            "",
-            "というのは comes after 習慣  and marks it as the topic for explanation. It signals that what comes next will define, describe, or comment on that noun."
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
             415,
             228
+          ],
+          "correctOrder": [
+            1,
+            4,
+            3,
+            2
           ]
         },
         {
@@ -2273,18 +2277,19 @@
           ],
           "correct": 4,
           "correctOption": "<ruby>服<rt>ふく</rt></ruby>を",
-          "explanations": [
-            "に合わせて comes after 季節, completing the phrase 'in accordance with the season'.",
-            "変えた comes before 方がいい here, forming the phrase 'you should change clothes'.",
-            "季節 comes first and combines with に合わせて to form, 'in accordance with the season.",
-            ""
-          ],
+          "explanations": [],
           "shuffled": true,
           "vocabIds": [],
           "grammarIds": [
             21,
             68,
             457
+          ],
+          "correctOrder": [
+            3,
+            1,
+            4,
+            2
           ]
         },
         {
