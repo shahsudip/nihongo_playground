@@ -14,8 +14,10 @@ import { ExitConfirmModal } from './ui/ExitConfirmModal';
 import { JlptOmrAnswerSheet } from './ui/JlptOmrAnswerSheet';
 import { JlptScoreCertificateModal } from './ui/JlptScoreCertificateModal';
 import StarExplanationCard from './ui/StarExplanationCard';
+import StructuredExplanationView from './ui/StructuredExplanationView';
 import { formatJlptRuby } from '../utils/jlptRubyParser.js';
 import { isStarQuestion } from '../utils/starQuestionExplainer.js';
+import { getCorrectAnswerExplanation } from '../utils/jlptExplanationHelper.js';
 
 // Official JLPT Mondai Instructions mapped to typeLabel / types
 const MONDAI_INSTRUCTIONS = {
@@ -179,27 +181,30 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
     return `jlpt_mock_${userPart}_${testId}_${sectionId || 'full'}`;
   }, [currentUser, testId, sectionId]);
 
-  // Restore saved progress
+  // Restore saved progress on storageKey change
   useEffect(() => {
-    if (totalQuestions === 0) return;
     try {
       const cached = localStorage.getItem(storageKey);
       if (cached) {
         const parsed = JSON.parse(cached);
         if (parsed?.answers && typeof parsed.answers === 'object') {
           setAnswers(parsed.answers);
-          if (typeof parsed.currentIndex === 'number' && parsed.currentIndex < totalQuestions) {
-            setCurrentIndex(parsed.currentIndex);
-          }
-          if (typeof parsed.timerSeconds === 'number') {
-            setTimerSeconds(parsed.timerSeconds);
-          }
+        }
+        if (typeof parsed.timerSeconds === 'number') {
+          setTimerSeconds(parsed.timerSeconds);
+        }
+        // Section-specific index restoration to prevent cross-section jumping
+        const activeSecId = currentSection?.id || selectedSectionId;
+        const savedSecIndex = parsed.currentIndexBySection?.[activeSecId];
+        if (typeof savedSecIndex === 'number' && savedSecIndex >= 0 && savedSecIndex < totalQuestions) {
+          setCurrentIndex(savedSecIndex);
         }
       }
     } catch (e) {
       console.warn('Could not restore cached answers:', e);
     }
-  }, [storageKey, totalQuestions]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [storageKey]);
 
   // Timer
   useEffect(() => {
@@ -347,11 +352,24 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
       timestamp: new Date().toISOString(),
     };
 
-    // Save locally
+    // Save locally with per-section index isolation
     try {
+      let existingCached = {};
+      try {
+        existingCached = JSON.parse(localStorage.getItem(storageKey) || '{}');
+      } catch (_) {}
+      const prevIndices = existingCached.currentIndexBySection || {};
+      const activeSecId = currentSection?.id || selectedSectionId || 'full';
+      const nextIndices = {
+        ...prevIndices,
+        [activeSecId]: targetIndex,
+      };
+
       localStorage.setItem(storageKey, JSON.stringify({
         answers: nextAnswers,
         currentIndex: targetIndex,
+        currentSectionId: activeSecId,
+        currentIndexBySection: nextIndices,
         timerSeconds,
       }));
     } catch (e) {
@@ -364,7 +382,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
     } else {
       await savePracticeTestRecord(currentUser, record);
     }
-  }, [testData, totalQuestions, activeQuestions, sectionId, timerSeconds, storageKey, currentUser, isPastExam, lvlUpper]);
+  }, [testData, totalQuestions, activeQuestions, sectionId, timerSeconds, storageKey, currentUser, isPastExam, lvlUpper, currentSection?.id, selectedSectionId]);
 
   const questionCardRef = useRef(null);
 
@@ -375,7 +393,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
     }
   }, []);
 
-  const handleSelectAnswerForQuestion = (qObj, qIdx, optionNumber) => {
+  const handleSelectAnswerForQuestion = useCallback((qObj, qIdx, optionNumber) => {
     if (!qObj) return;
     handleSelectQuestion(qIdx);
     if (answers[qObj.id] !== undefined) {
@@ -384,28 +402,46 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
     const nextAnswers = { ...answers, [qObj.id]: optionNumber };
     setAnswers(nextAnswers);
     persistAttempt(nextAnswers, qIdx, false);
-  };
+  }, [answers, handleSelectQuestion, persistAttempt]);
 
-  const handleOptionSelect = (optionNumber) => {
+  const handleOptionSelect = useCallback((optionNumber) => {
     handleSelectAnswerForQuestion(currentQ, currentIndex, optionNumber);
-  };
+  }, [currentQ, currentIndex, handleSelectAnswerForQuestion]);
 
-  const handleNext = () => {
+  const handleSwitchSection = useCallback((nextSecId) => {
+    if (!nextSecId || nextSecId === selectedSectionId) return;
+    setSelectedSectionId(nextSecId);
+
+    // Look up saved index for this specific section from cache or start at 0
+    let targetIndex = 0;
+    try {
+      const cached = JSON.parse(localStorage.getItem(storageKey) || '{}');
+      const savedSecIdx = cached.currentIndexBySection?.[nextSecId];
+      const targetSec = testData?.sections?.find(s => s.id === nextSecId);
+      const targetTotal = targetSec?.questions?.length || 0;
+      if (typeof savedSecIdx === 'number' && savedSecIdx >= 0 && savedSecIdx < targetTotal) {
+        targetIndex = savedSecIdx;
+      }
+    } catch (_) {}
+
+    setCurrentIndex(targetIndex);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [selectedSectionId, storageKey, testData]);
+
+  const handleNext = useCallback(() => {
     if (currentIndex < totalQuestions - 1) {
       const nextIdx = currentIndex + 1;
       setCurrentIndex(nextIdx);
       persistAttempt(answers, nextIdx, false);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (testData?.sections && currentSectionIndex < testData.sections.length - 1) {
-      // Advance to next exam section (e.g. Section 1 -> Section 2)
+      // Advance to next exam section
       const nextSec = testData.sections[currentSectionIndex + 1];
-      setSelectedSectionId(nextSec.id);
-      setCurrentIndex(0);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      handleSwitchSection(nextSec.id);
     }
-  };
+  }, [currentIndex, totalQuestions, testData, currentSectionIndex, answers, persistAttempt, handleSwitchSection]);
 
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     if (currentIndex > 0) {
       const prevIdx = currentIndex - 1;
       setCurrentIndex(prevIdx);
@@ -415,10 +451,29 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
       // Step back to previous exam section
       const prevSec = testData.sections[currentSectionIndex - 1];
       setSelectedSectionId(prevSec.id);
-      setCurrentIndex(prevSec.questions.length - 1);
+      setCurrentIndex(Math.max(0, (prevSec.questions?.length || 1) - 1));
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-  };
+  }, [currentIndex, testData, currentSectionIndex, answers, persistAttempt]);
+
+  // Keyboard navigation: 1-4 to answer, Left/Right for Prev/Next
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
+      if (['1', '2', '3', '4'].includes(e.key)) {
+        const optNum = parseInt(e.key, 10);
+        if (currentQ?.options && optNum <= currentQ.options.length) {
+          handleOptionSelect(optNum);
+        }
+      } else if (e.key === 'ArrowRight') {
+        handleNext();
+      } else if (e.key === 'ArrowLeft') {
+        handlePrev();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [currentQ, handleOptionSelect, handleNext, handlePrev]);
 
   const handleFinish = () => {
     setIsFinished(true);
@@ -706,7 +761,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
 
   const selectedAnswer = answers[currentQ.id];
   const isAnswered = selectedAnswer !== undefined;
-  const isCorrect = isAnswered && selectedAnswer === currentQ.correct;
+  const _isCorrect = isAnswered && selectedAnswer === currentQ.correct;
   const hasPassage = Boolean(currentQ.context);
   const hasImage = Boolean(currentQ.imageUrl);
   const hasAudio = Boolean(currentQ.audioUrl);
@@ -813,8 +868,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
                     key={sec.id}
                     type="button"
                     onClick={() => {
-                      setSelectedSectionId(sec.id);
-                      setCurrentIndex(0);
+                      handleSwitchSection(sec.id);
                     }}
                     className={`flex items-center gap-2 px-3.5 py-2.5 rounded-2xl text-xs font-bold transition-all border cursor-pointer select-none ${
                       isSecActive
@@ -1087,54 +1141,77 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
             })}
           </div>
 
-          {/* Dedicated Explanation Card when Answered */}
+          {/* Dedicated Expandable Explanation Section (Initially Closed) */}
           {isAnswered && (
-            <div className="mt-6 p-5 rounded-2xl border border-emerald-500/30 bg-emerald-500/[0.04] animate-fade-in text-left">
-              <div className="flex items-center gap-2 mb-3 text-xs font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
-                <span>💡</span>
-                <span>解説 • Explanation & Insights</span>
-              </div>
+            <details className="mt-6 rounded-2xl border border-emerald-500/30 bg-emerald-500/[0.04] overflow-hidden group select-none transition-all">
+              <summary className="flex items-center justify-between p-4 cursor-pointer font-bold text-sm text-emerald-800 dark:text-emerald-300 hover:bg-emerald-500/10 transition-colors">
+                <div className="flex items-center gap-2.5">
+                  <span className="w-6 h-6 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs shadow-sm">💡</span>
+                  <span>解説 • Explanation & Insights</span>
+                  <span className="text-[11px] font-normal text-gray-500 dark:text-gray-400 font-mono">
+                    (Click to expand)
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-mono font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-300">
+                    正解：選択肢 {currentQ.correct}
+                  </span>
+                  <span className="text-xs text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+                </div>
+              </summary>
 
-              <div className="space-y-3 text-sm md:text-base leading-relaxed text-gray-700 dark:text-gray-300">
+              <div className="p-4 sm:p-5 pt-3 border-t border-emerald-500/10 space-y-3 text-sm leading-relaxed text-gray-700 dark:text-gray-300 text-left select-text">
                 {isStarQuestion(currentQ) ? (
                   <StarExplanationCard question={currentQ} />
+                ) : currentQ.explanation ? (
+                  <StructuredExplanationView explanation={currentQ.explanation} />
                 ) : (
-                  <div className="font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
-                    <span>✓</span>
-                    <span>Correct Option {currentQ.correct}:</span>
-                    <span dangerouslySetInnerHTML={{ __html: formatJlptRuby(currentQ.correctOption) }} />
+                  <div className="p-3.5 rounded-xl bg-emerald-50/80 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60">
+                    <div className="font-bold text-emerald-800 dark:text-emerald-300 flex items-center gap-1.5 mb-1 text-sm">
+                      <span className="w-5 h-5 rounded-full bg-emerald-600 text-white text-xs flex items-center justify-center font-bold">✓</span>
+                      <span>正解：選択肢 {currentQ.correct}（{currentQ.options?.[currentQ.correct - 1]}）</span>
+                    </div>
+                    <p className="text-xs sm:text-sm text-gray-800 dark:text-gray-200 leading-relaxed font-sans mt-1">
+                      {getCorrectAnswerExplanation(currentQ)}
+                    </p>
                   </div>
                 )}
 
-                {/* Show reasons for each option */}
-                <div className="space-y-2 mt-2 pt-2 border-t border-emerald-500/10 text-xs md:text-sm">
-                  {currentQ.options.map((opt, k) => {
-                    const reason = currentQ.explanations?.[k];
-                    const isOptCorrect = k + 1 === currentQ.correct;
-                    return (
-                      <div key={k} className="p-2.5 rounded-xl bg-white/60 dark:bg-zinc-900/60 border border-gray-100 dark:border-white/5">
-                        <div className="flex items-center gap-1.5 font-bold mb-1">
-                          <span className={isOptCorrect ? 'text-emerald-600 dark:text-emerald-400' : 'text-gray-600 dark:text-gray-400'}>
-                            Option {k + 1})
-                          </span>
-                          <span className="font-normal" dangerouslySetInnerHTML={{ __html: formatJlptRuby(opt) }} />
-                        </div>
-                        {reason ? (
-                          <p
-                            className="text-gray-600 dark:text-gray-400 pl-4 border-l-2 border-emerald-500/40 italic"
-                            dangerouslySetInnerHTML={{ __html: formatJlptRuby(reason) }}
-                          />
-                        ) : (
-                          <p className="text-emerald-600 dark:text-emerald-400 pl-4 border-l-2 border-emerald-500 italic">
-                            {isOptCorrect ? 'Correct answer.' : ''}
-                          </p>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
+                {/* Distractor explanations if no full structured explanation was provided */}
+                {!isStarQuestion(currentQ) && !currentQ.explanation && currentQ.options && currentQ.options.length > 1 && (
+                  <details className="text-xs text-gray-600 dark:text-gray-400 pt-2 border-t border-emerald-500/10 cursor-pointer group/distractor">
+                    <summary className="font-bold text-emerald-700 dark:text-emerald-400 select-none flex items-center justify-between py-1 hover:underline">
+                      <span>🔍 他の選択肢の解説（なぜ他は間違い？）</span>
+                      <span className="text-[11px] text-gray-400 font-mono transition-transform group-open/distractor:rotate-180">▼</span>
+                    </summary>
+                    <div className="space-y-2 mt-2 pt-2 border-t border-gray-100 dark:border-white/5">
+                      {currentQ.options.map((opt, k) => {
+                        const isOptCorrect = k + 1 === currentQ.correct;
+                        if (isOptCorrect) return null;
+                        const reason = currentQ.explanations?.[k];
+                        return (
+                          <div key={k} className="p-2.5 rounded-xl bg-gray-50/70 dark:bg-white/[0.03] border border-gray-200/50 dark:border-white/5">
+                            <div className="font-semibold text-gray-800 dark:text-gray-200 mb-0.5">
+                              選択肢 {k + 1}）<span dangerouslySetInnerHTML={{ __html: formatJlptRuby(opt) }} />
+                            </div>
+                            {reason ? (
+                              <p
+                                className="text-gray-600 dark:text-gray-400 pl-3 border-l-2 border-emerald-500/40 italic leading-relaxed"
+                                dangerouslySetInnerHTML={{ __html: formatJlptRuby(reason) }}
+                              />
+                            ) : (
+                              <p className="text-gray-500 dark:text-gray-400 pl-3 border-l-2 border-gray-300 dark:border-zinc-700 italic">
+                                文脈・文法規則に合致しません。
+                              </p>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </details>
+                )}
               </div>
-            </div>
+            </details>
           )}
 
           {/* Footer Navigation: Previous / Next / Finish */}
@@ -1232,6 +1309,67 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
       </div>
     </div>
   )}
+
+      {/* Sticky Viewport Navigation Dock (Prev / Status / Next - Zero Scrolling Needed!) */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md border-t border-gray-200 dark:border-white/10 px-4 py-3 shadow-2xl transition-all">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
+          <Button
+            variant="outline"
+            onClick={handlePrev}
+            disabled={currentIndex === 0 && currentSectionIndex === 0}
+            className="cursor-pointer font-bold text-xs sm:text-sm px-3 sm:px-4"
+          >
+            &larr; Prev
+          </Button>
+
+          <div className="flex items-center gap-3">
+            <div className="text-center">
+              <div className="text-xs sm:text-sm font-black font-mono text-gray-900 dark:text-white">
+                問 {currentIndex + 1} <span className="text-gray-400 font-normal">/ {totalQuestions}</span>
+              </div>
+              <div className="hidden sm:block text-[11px] text-gray-400">
+                Keys: <span className="font-mono font-bold">[1]–[4]</span> to answer • <span className="font-mono font-bold">[→]</span> Next
+              </div>
+            </div>
+
+            {/* Mobile OMR launcher */}
+            <button
+              type="button"
+              onClick={() => setShowMobileSheet(true)}
+              className="lg:hidden flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-red-600 text-white font-bold text-xs shadow-md active:scale-95 transition-transform"
+            >
+              <span>📋</span>
+              <span>OMR ({answeredCount}/{totalQuestions})</span>
+            </button>
+          </div>
+
+          {currentIndex < totalQuestions - 1 ? (
+            <Button
+              variant="primary"
+              onClick={handleNext}
+              className="bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs sm:text-sm cursor-pointer shadow-md shadow-emerald-600/30 px-4 sm:px-6"
+            >
+              Next &rarr;
+            </Button>
+          ) : currentSectionIndex < (testData?.sections?.length || 1) - 1 ? (
+            <Button
+              variant="primary"
+              onClick={handleNext}
+              className="bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs sm:text-sm cursor-pointer shadow-md shadow-emerald-600/30 px-3 sm:px-5"
+            >
+              Next: 第{currentSectionIndex + 2}部 &rarr;
+            </Button>
+          ) : (
+            <Button
+              variant="primary"
+              onClick={handleFinish}
+              className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-black text-xs sm:text-sm cursor-pointer shadow-lg px-4 sm:px-6"
+            >
+              Finish Exam 🏁
+            </Button>
+          )}
+        </div>
+      </div>
 
       {/* Exit Modal */}
       <ExitConfirmModal
