@@ -723,8 +723,8 @@ const N3PracticeSetQuizPage = () => {
                 </span>
               </div>
 
-              <div className="flex items-center gap-2">
-                {selectedIdx !== undefined && (currentQ.explanation || isStarQuestion(currentQ)) && (
+              <div className="flex items-center gap-2.5">
+                {(currentQ.explanation || isStarQuestion(currentQ)) && (
                   <button
                     type="button"
                     onClick={() => setIsFlipped(true)}
@@ -764,7 +764,7 @@ const N3PracticeSetQuizPage = () => {
             })() }}></h2>
           </div>
 
-          <div className="space-y-3 mb-6">
+          <div className="space-y-3 mb-8">
             {currentQ.options.map((opt, optIdx) => {
               const instr = currentQ.instruction || '';
               const isMondai2 = instr.includes('問題2') && currentQ.sectionType === 'vocabulary-kanji';
@@ -788,20 +788,6 @@ const N3PracticeSetQuizPage = () => {
               );
             })}
           </div>
-
-          {/* Prominent Flip Prompt when answered */}
-          {selectedIdx !== undefined && (currentQ.explanation || isStarQuestion(currentQ)) && (
-            <div className="pt-2 pb-2">
-              <button
-                type="button"
-                onClick={() => setIsFlipped(true)}
-                className="w-full py-3 px-4 rounded-xl font-bold text-sm bg-gradient-to-r from-emerald-600/10 via-emerald-500/20 to-emerald-600/10 dark:from-emerald-950/40 dark:via-emerald-900/40 dark:to-emerald-950/40 border border-emerald-500/40 hover:border-emerald-500 text-emerald-800 dark:text-emerald-200 flex items-center justify-center gap-2 transition-all cursor-pointer shadow-sm hover:scale-[1.01]"
-              >
-                <span>💡 解説 • Explanation & Insights を見る</span>
-                <span className="text-base font-mono">🔄</span>
-              </button>
-            </div>
-          )}
 
           <div className="flex justify-between items-center pt-4 border-t border-[var(--color-border)] mt-8">
             <Button variant="outline" onClick={handlePrev} disabled={currentIndex === 0}>

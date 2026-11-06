@@ -1062,18 +1062,16 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
                     )}
                   </div>
 
-                  <div className="flex items-center gap-2">
-                    {isAnswered && (
-                      <button
-                        type="button"
-                        onClick={() => setIsFlipped(true)}
-                        className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5 transition-all cursor-pointer shadow-2xs hover:scale-105"
-                        title="解説を見る (Flip Card)"
-                      >
-                        <span>💡 解説を見る</span>
-                        <span className="text-sm font-mono">🔄</span>
-                      </button>
-                    )}
+                  <div className="flex items-center gap-2.5">
+                    <button
+                      type="button"
+                      onClick={() => setIsFlipped(true)}
+                      className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5 transition-all cursor-pointer shadow-2xs hover:scale-105"
+                      title="解説を見る (Flip Card)"
+                    >
+                      <span>💡 解説を見る</span>
+                      <span className="text-sm font-mono">🔄</span>
+                    </button>
                     <span className="text-xs text-gray-500 dark:text-gray-400">
                       {currentQ.options?.length || 4} Choices
                     </span>
@@ -1163,20 +1161,6 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
                   );
                 })}
               </div>
-
-              {/* Prominent Flip Prompt when answered */}
-              {isAnswered && (
-                <div className="pt-2 pb-2">
-                  <button
-                    type="button"
-                    onClick={() => setIsFlipped(true)}
-                    className="w-full py-3.5 px-4 rounded-2xl font-bold text-sm bg-gradient-to-r from-emerald-600/10 via-emerald-500/20 to-emerald-600/10 dark:from-emerald-950/40 dark:via-emerald-900/40 dark:to-emerald-950/40 border border-emerald-500/40 hover:border-emerald-500 text-emerald-800 dark:text-emerald-200 flex items-center justify-center gap-2 transition-all cursor-pointer shadow-sm hover:scale-[1.01]"
-                  >
-                    <span>💡 解説 • Explanation & Insights を見る</span>
-                    <span className="text-base font-mono">🔄</span>
-                  </button>
-                </div>
-              )}
 
               {/* Footer Navigation: Previous / Next / Finish */}
               <div className="flex justify-between items-center pt-6 border-t border-gray-100 dark:border-white/5 mt-8">
