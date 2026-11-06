@@ -73,6 +73,7 @@ const N3PracticeSetQuizPage = () => {
   
   const [answers, setAnswers] = useState({});
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isFlipped, setIsFlipped] = useState(false);
   const [_feedbackMode, _setFeedbackMode] = useState('Immediate');
   const [isFinished, setIsFinished] = useState(false);
   const [timerSeconds, setTimerSeconds] = useState(0);
@@ -132,6 +133,10 @@ const N3PracticeSetQuizPage = () => {
     };
     fetchBook();
   }, [setId]);
+
+  useEffect(() => {
+    setIsFlipped(false);
+  }, [currentIndex]);
 
   const sectionsToShow = useMemo(() => {
     if (sectionId === 'vocabulary-kanji') return ['vocabulary-kanji'];
@@ -703,192 +708,254 @@ const N3PracticeSetQuizPage = () => {
   const hasPassage = Boolean(currentQ.passageText || currentQ.imageSrc);
 
   const renderQuestionCard = () => (
-    <Card className="w-full scroll-mt-20">
-      <div className="mb-6">
-        <div className="flex items-center justify-between gap-2 mb-4 pb-3 border-b border-[var(--color-border)]">
-          <div className="flex items-center gap-2">
-            <span className="inline-flex items-center justify-center w-7 h-7 rounded-full text-white font-bold text-xs bg-emerald-600">
-              {currentIndex + 1}
-            </span>
-            <span className="text-xs font-bold px-2.5 py-1 rounded-md bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-[var(--color-text-secondary)]">
-              Question {currentIndex + 1} of {totalQuestions}
-            </span>
-          </div>
-          <span className="text-xs font-medium text-[var(--color-text-muted)]">
-            {currentQ.options?.length || 4} Choices
-          </span>
-        </div>
+    <div className="quiz-flip-perspective w-full scroll-mt-20">
+      <div className={`quiz-flip-card-inner ${isFlipped ? 'is-flipped' : ''}`}>
+        {/* FRONT FACE: Question & Options */}
+        <Card className={`w-full quiz-flip-face-front ${isFlipped ? 'absolute inset-0 pointer-events-none opacity-0 select-none' : 'relative'}`}>
+          <div className="mb-6">
+            <div className="flex items-center justify-between gap-2 mb-4 pb-3 border-b border-[var(--color-border)] flex-wrap">
+              <div className="flex items-center gap-2">
+                <span className="inline-flex items-center justify-center w-7 h-7 rounded-full text-white font-bold text-xs bg-emerald-600">
+                  {currentIndex + 1}
+                </span>
+                <span className="text-xs font-bold px-2.5 py-1 rounded-md bg-[var(--color-bg-secondary)] border border-[var(--color-border)] text-[var(--color-text-secondary)]">
+                  Question {currentIndex + 1} of {totalQuestions}
+                </span>
+              </div>
 
-        {currentQ.instruction && (
-          <p className="text-xs font-medium mb-4 text-[var(--color-text-muted)] japanese-text leading-relaxed">
-            {currentQ.instruction}
-          </p>
-        )}
-
-        <h2 className="text-xl md:text-2xl font-medium japanese-text leading-relaxed" dangerouslySetInnerHTML={{ __html: (() => {
-          let html = currentQ.questionText;
-          const instr = currentQ.instruction || '';
-          const isMondai1 = instr.includes('問題1') && currentQ.sectionType === 'vocabulary-kanji';
-          const isMondai2 = instr.includes('問題2') && currentQ.sectionType === 'vocabulary-kanji';
-          if (isMondai1) {
-            html = html
-              .replace(/<rp[^>]*>[\s\S]*?<\/rp>/gi, '')
-              .replace(/<rt[^>]*>[\s\S]*?<\/rt>/gi, '')
-              .replace(/<\/?ruby[^>]*>/gi, '');
-          } else if (isMondai2) {
-            html = html.replace(/<ruby[^>]*>[\s\S]*?<rt[^>]*>([\s\S]*?)<\/rt>[\s\S]*?<\/ruby>/gi, '$1');
-          }
-          return html.replace(/ (A「|B「|A：|B：|男：|女：|男の人：|女の人：|店員：|客：|Ａ「|Ｂ「|Ａ：|Ｂ：)/g, '<br />$1');
-        })() }}></h2>
-      </div>
-
-      <div className="space-y-3 mb-8">
-        {currentQ.options.map((opt, optIdx) => {
-          const instr = currentQ.instruction || '';
-          const isMondai2 = instr.includes('問題2') && currentQ.sectionType === 'vocabulary-kanji';
-          const displayOpt = isMondai2
-            ? opt
-                .replace(/<rp[^>]*>[\s\S]*?<\/rp>/gi, '')
-                .replace(/<rt[^>]*>[\s\S]*?<\/rt>/gi, '')
-                .replace(/<\/?ruby[^>]*>/gi, '')
-            : opt;
-          return (
-            <OptionButton 
-              key={optIdx}
-              text={displayOpt}
-              index={optIdx}
-              isSelected={selectedIdx === optIdx}
-              isCorrect={currentQ.correctIndex !== -1 ? currentQ.correctIndex === optIdx : null}
-              feedbackMode="Immediate"
-              onClick={() => handleOptionSelect(currentQ.id, optIdx)}
-              disabled={selectedIdx !== undefined}
-            />
-          );
-        })}
-      </div>
-
-      {/* Dedicated Explanation Card when question is answered (Expandable, Initially Closed) */}
-      {selectedIdx !== undefined && (currentQ.explanation || isStarQuestion(currentQ)) && (
-        <details className="mt-5 rounded-2xl border border-emerald-500/30 bg-emerald-500/[0.04] dark:bg-emerald-950/20 overflow-hidden group select-none transition-all">
-          <summary className="flex items-center justify-between p-4 cursor-pointer font-bold text-sm text-emerald-800 dark:text-emerald-300 hover:bg-emerald-500/10 transition-colors">
-            <div className="flex items-center gap-2.5">
-              <span className="w-6 h-6 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs shadow-sm">💡</span>
-              <span>解説 • Explanation & Insights</span>
-              <span className="text-[11px] font-normal text-gray-500 dark:text-gray-400 font-mono">
-                (Click to expand)
-              </span>
+              <div className="flex items-center gap-2">
+                {selectedIdx !== undefined && (currentQ.explanation || isStarQuestion(currentQ)) && (
+                  <button
+                    type="button"
+                    onClick={() => setIsFlipped(true)}
+                    className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5 transition-all cursor-pointer shadow-2xs hover:scale-105"
+                    title="解説を見る (Flip Card)"
+                  >
+                    <span>💡 解説を見る</span>
+                    <span className="text-sm font-mono">🔄</span>
+                  </button>
+                )}
+                <span className="text-xs font-medium text-[var(--color-text-muted)]">
+                  {currentQ.options?.length || 4} Choices
+                </span>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-mono font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-300">
+
+            {currentQ.instruction && (
+              <p className="text-xs font-medium mb-4 text-[var(--color-text-muted)] japanese-text leading-relaxed">
+                {currentQ.instruction}
+              </p>
+            )}
+
+            <h2 className="text-xl md:text-2xl font-medium japanese-text leading-relaxed" dangerouslySetInnerHTML={{ __html: (() => {
+              let html = currentQ.questionText;
+              const instr = currentQ.instruction || '';
+              const isMondai1 = instr.includes('問題1') && currentQ.sectionType === 'vocabulary-kanji';
+              const isMondai2 = instr.includes('問題2') && currentQ.sectionType === 'vocabulary-kanji';
+              if (isMondai1) {
+                html = html
+                  .replace(/<rp[^>]*>[\s\S]*?<\/rp>/gi, '')
+                  .replace(/<rt[^>]*>[\s\S]*?<\/rt>/gi, '')
+                  .replace(/<\/?ruby[^>]*>/gi, '');
+              } else if (isMondai2) {
+                html = html.replace(/<ruby[^>]*>[\s\S]*?<rt[^>]*>([\s\S]*?)<\/rt>[\s\S]*?<\/ruby>/gi, '$1');
+              }
+              return html.replace(/ (A「|B「|A：|B：|男：|女：|男の人：|女の人：|店員：|客：|Ａ「|Ｂ「|Ａ：|Ｂ：)/g, '<br />$1');
+            })() }}></h2>
+          </div>
+
+          <div className="space-y-3 mb-6">
+            {currentQ.options.map((opt, optIdx) => {
+              const instr = currentQ.instruction || '';
+              const isMondai2 = instr.includes('問題2') && currentQ.sectionType === 'vocabulary-kanji';
+              const displayOpt = isMondai2
+                ? opt
+                    .replace(/<rp[^>]*>[\s\S]*?<\/rp>/gi, '')
+                    .replace(/<rt[^>]*>[\s\S]*?<\/rt>/gi, '')
+                    .replace(/<\/?ruby[^>]*>/gi, '')
+                : opt;
+              return (
+                <OptionButton 
+                  key={optIdx}
+                  text={displayOpt}
+                  index={optIdx}
+                  isSelected={selectedIdx === optIdx}
+                  isCorrect={currentQ.correctIndex !== -1 ? currentQ.correctIndex === optIdx : null}
+                  feedbackMode="Immediate"
+                  onClick={() => handleOptionSelect(currentQ.id, optIdx)}
+                  disabled={selectedIdx !== undefined}
+                />
+              );
+            })}
+          </div>
+
+          {/* Prominent Flip Prompt when answered */}
+          {selectedIdx !== undefined && (currentQ.explanation || isStarQuestion(currentQ)) && (
+            <div className="pt-2 pb-2">
+              <button
+                type="button"
+                onClick={() => setIsFlipped(true)}
+                className="w-full py-3 px-4 rounded-xl font-bold text-sm bg-gradient-to-r from-emerald-600/10 via-emerald-500/20 to-emerald-600/10 dark:from-emerald-950/40 dark:via-emerald-900/40 dark:to-emerald-950/40 border border-emerald-500/40 hover:border-emerald-500 text-emerald-800 dark:text-emerald-200 flex items-center justify-center gap-2 transition-all cursor-pointer shadow-sm hover:scale-[1.01]"
+              >
+                <span>💡 解説 • Explanation & Insights を見る</span>
+                <span className="text-base font-mono">🔄</span>
+              </button>
+            </div>
+          )}
+
+          <div className="flex justify-between items-center pt-4 border-t border-[var(--color-border)] mt-8">
+            <Button variant="outline" onClick={handlePrev} disabled={currentIndex === 0}>
+              &larr; Previous
+            </Button>
+
+            {currentIndex < totalQuestions - 1 ? (
+              <Button variant="primary" onClick={handleNext}>
+                Next &rarr;
+              </Button>
+            ) : (
+              <Button variant="primary" onClick={handleFinish} className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold">
+                Finish Quiz 🏆
+              </Button>
+            )}
+          </div>
+        </Card>
+
+        {/* BACK FACE: Explanation side */}
+        <Card className={`w-full quiz-flip-face-back border-2 border-emerald-500/40 dark:border-emerald-500/30 bg-emerald-500/[0.03] dark:bg-emerald-950/20 ${!isFlipped ? 'absolute inset-0 pointer-events-none opacity-0 select-none' : 'relative'}`}>
+          <div className="flex items-center justify-between pb-3 mb-4 border-b border-emerald-500/20 flex-wrap gap-2">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs font-bold shadow-sm">💡</span>
+              <span className="font-extrabold text-sm md:text-base text-emerald-800 dark:text-emerald-300">
+                解説 • Explanation & Insights
+              </span>
+              <span className="text-xs font-mono font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 ml-1">
                 正解：選択肢 {currentQ.correctIndex !== undefined ? currentQ.correctIndex + 1 : currentQ.correct}
               </span>
-              <span className="text-xs text-gray-400 group-open:rotate-180 transition-transform">▼</span>
             </div>
-          </summary>
 
-          <div className="p-4 sm:p-5 pt-3 border-t border-emerald-500/10 space-y-3 text-sm leading-relaxed text-gray-700 dark:text-gray-300 text-left select-text">
+            <button
+              type="button"
+              onClick={() => setIsFlipped(false)}
+              className="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white dark:bg-zinc-800 border border-emerald-500/40 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 flex items-center gap-1.5 transition-all cursor-pointer shadow-sm hover:scale-105"
+            >
+              <span>↩️ 問題に戻る (Flip Back)</span>
+            </button>
+          </div>
+
+          <div className="space-y-4 text-left select-text py-2">
             {isStarQuestion(currentQ) ? (
               <StarExplanationCard question={currentQ} />
             ) : currentQ.explanation && (currentQ.explanation.includes('###') || currentQ.explanation.startsWith('The correct answer is')) ? (
               <StructuredExplanationView explanation={currentQ.explanation} />
             ) : (
-            <div className="space-y-2.5 text-sm md:text-base leading-relaxed">
-              {(() => {
-                const parsedLines = [];
-                splitExplanationLines(currentQ.explanation).forEach(trimmed => {
-                  if (!trimmed) return;
-                  // If line ends with an inline (English) translation
-                  const match = trimmed.match(/^(.*?)(?:\s*[（(]([A-Za-z][^()（）]{2,})[)）]\s*)$/);
-                  if (match && !trimmed.startsWith('【英訳】') && !trimmed.startsWith('【正解】')) {
-                    if (match[1].trim()) parsedLines.push(match[1].trim());
-                    parsedLines.push(`【英訳】${match[2].trim()}`);
-                  } else {
-                    parsedLines.push(trimmed);
-                  }
-                });
+              <div className="space-y-2.5 text-sm md:text-base leading-relaxed">
+                {(() => {
+                  const parsedLines = [];
+                  splitExplanationLines(currentQ.explanation).forEach(trimmed => {
+                    if (!trimmed) return;
+                    // If line ends with an inline (English) translation
+                    const match = trimmed.match(/^(.*?)(?:\s*[（(]([A-Za-z][^()（）]{2,})[)）]\s*)$/);
+                    if (match && !trimmed.startsWith('【英訳】') && !trimmed.startsWith('【正解】')) {
+                      if (match[1].trim()) parsedLines.push(match[1].trim());
+                      parsedLines.push(`【英訳】${match[2].trim()}`);
+                    } else {
+                      parsedLines.push(trimmed);
+                    }
+                  });
 
-                return parsedLines.map((line, lIdx) => {
-                  // English Translation on its OWN NEW LINE
-                  if (line.startsWith('【英訳】') || line.startsWith('【英語訳】') || line.startsWith('English:')) {
-                    const engText = line.replace(/^(?:【(?:英訳|英語訳)】|English:)\s*/, '');
-                    return (
-                      <div key={lIdx} className="pt-2">
-                        <div className="text-xs font-bold text-[var(--color-text-muted)] uppercase tracking-wider mb-1 flex items-center gap-1.5">
-                          <span>🌐</span>
-                          <span>English Translation</span>
+                  return parsedLines.map((line, lIdx) => {
+                    // English Translation on its OWN NEW LINE
+                    if (line.startsWith('【英訳】') || line.startsWith('【英語訳】') || line.startsWith('English:')) {
+                      const engText = line.replace(/^(?:【(?:英訳|英語訳)】|English:)\s*/, '');
+                      return (
+                        <div key={lIdx} className="pt-2">
+                          <div className="text-xs font-bold text-[var(--color-text-muted)] uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                            <span>🌐</span>
+                            <span>English Translation</span>
+                          </div>
+                          <div
+                            className="text-[var(--color-text-secondary)] italic pl-3 border-l-2 border-emerald-500/60 bg-[var(--color-bg-tertiary,rgba(255,255,255,0.03))] py-2 px-3 rounded-r-lg"
+                            dangerouslySetInnerHTML={{ __html: engText }}
+                          />
                         </div>
+                      );
+                    }
+
+                    // Correct Answer line
+                    if (line.startsWith('【正解】') || line.startsWith('【★ 正解】')) {
+                      return (
+                        <div key={lIdx} className="font-bold text-emerald-400 flex items-center gap-1.5">
+                          <span>✓</span>
+                          <span dangerouslySetInnerHTML={{ __html: line }} />
+                        </div>
+                      );
+                    }
+
+                    // Meaning / Context line
+                    if (line.startsWith('【意味】') || line.startsWith('【文脈】') || line.startsWith('【文の並び替え】') || line.startsWith('【文の組み立て】')) {
+                      return (
                         <div
-                          className="text-[var(--color-text-secondary)] italic pl-3 border-l-2 border-emerald-500/60 bg-[var(--color-bg-tertiary,rgba(255,255,255,0.03))] py-2 px-3 rounded-r-lg"
-                          dangerouslySetInnerHTML={{ __html: engText }}
+                          key={lIdx}
+                          className="font-medium text-[var(--color-text-primary)]"
+                          dangerouslySetInnerHTML={{ __html: line }}
                         />
-                      </div>
-                    );
-                  }
+                      );
+                    }
 
-                  // Correct Answer line
-                  if (line.startsWith('【正解】') || line.startsWith('【★ 正解】')) {
-                    return (
-                      <div key={lIdx} className="font-bold text-emerald-400 flex items-center gap-1.5">
-                        <span>✓</span>
-                        <span dangerouslySetInnerHTML={{ __html: line }} />
-                      </div>
-                    );
-                  }
+                    // Word Order
+                    if (line.startsWith('【語順】') || line.startsWith('語順：')) {
+                      return (
+                        <div
+                          key={lIdx}
+                          className="font-semibold text-amber-400 bg-amber-500/10 px-3 py-2 rounded-lg border border-amber-500/20"
+                          dangerouslySetInnerHTML={{ __html: line }}
+                        />
+                      );
+                    }
 
-                  // Meaning / Context line
-                  if (line.startsWith('【意味】') || line.startsWith('【文脈】') || line.startsWith('【文の並び替え】') || line.startsWith('【文の組み立て】')) {
-                    return (
-                      <div
-                        key={lIdx}
-                        className="font-medium text-[var(--color-text-primary)]"
-                        dangerouslySetInnerHTML={{ __html: line }}
-                      />
-                    );
-                  }
-
-                  // Word Order
-                  if (line.startsWith('【語順】') || line.startsWith('語順：')) {
+                    // Commentary / Notes
                     return (
                       <div
                         key={lIdx}
-                        className="font-semibold text-amber-400 bg-amber-500/10 px-3 py-2 rounded-lg border border-amber-500/20"
+                        className="text-[var(--color-text-secondary)] leading-relaxed"
                         dangerouslySetInnerHTML={{ __html: line }}
                       />
                     );
-                  }
-
-                  // Commentary / Notes
-                  return (
-                    <div
-                      key={lIdx}
-                      className="text-[var(--color-text-secondary)] leading-relaxed"
-                      dangerouslySetInnerHTML={{ __html: line }}
-                    />
-                  );
-                });
-              })()}
-            </div>
-          )}
+                  });
+                })()}
+              </div>
+            )}
           </div>
-        </details>
-      )}
 
-      <div className="flex justify-between items-center pt-4 border-t border-[var(--color-border)] mt-8">
-        <Button variant="outline" onClick={handlePrev} disabled={currentIndex === 0}>
-          &larr; Previous
-        </Button>
+          {/* Bottom Flip-Back Button + Navigation Footer */}
+          <div className="pt-4 mt-6 border-t border-emerald-500/20 flex flex-col gap-3">
+            <button
+              type="button"
+              onClick={() => setIsFlipped(false)}
+              className="w-full py-2.5 px-4 rounded-xl text-xs sm:text-sm font-bold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-800 dark:text-emerald-200 border border-emerald-500/30 flex items-center justify-center gap-2 transition-all cursor-pointer"
+            >
+              <span>↩️ 問題・選択肢に戻る (Flip Back to Question)</span>
+            </button>
 
-        {currentIndex < totalQuestions - 1 ? (
-          <Button variant="primary" onClick={handleNext}>
-            Next &rarr;
-          </Button>
-        ) : (
-          <Button variant="primary" onClick={handleFinish} className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold">
-            Finish Quiz 🏆
-          </Button>
-        )}
+            <div className="flex justify-between items-center pt-2">
+              <Button variant="outline" onClick={handlePrev} disabled={currentIndex === 0}>
+                &larr; Previous
+              </Button>
+
+              {currentIndex < totalQuestions - 1 ? (
+                <Button variant="primary" onClick={handleNext}>
+                  Next &rarr;
+                </Button>
+              ) : (
+                <Button variant="primary" onClick={handleFinish} className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold">
+                  Finish Quiz 🏆
+                </Button>
+              )}
+            </div>
+          </div>
+        </Card>
       </div>
-    </Card>
+    </div>
   );
 
   return (
