@@ -1,0 +1,228 @@
+/* =========================================================
+   JLPT EXAM HALL — AUTHENTIC TOKYO EXAMINATION STYLES
+   One Distinct Design Per Screen: Official Japanese Exam Hall
+   ========================================================= */
+
+/* 1. Exam Booklet Paper Texture */
+.jlpt-exam-booklet {
+  background: #fbf9f4;
+  color: #1a202c;
+  border: 1px solid #e2d9c8;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(60, 45, 20, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme='dark'] .jlpt-exam-booklet,
+html.dark .jlpt-exam-booklet {
+  background: #141a26;
+  color: #f1f5f9;
+  border-color: #273349;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* Booklet Left Staple Spine Rule */
+.jlpt-exam-booklet::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 6px;
+  background: linear-gradient(180deg, #d97706, #059669);
+  opacity: 0.85;
+}
+
+/* 2. Official Red Inkan / Hanko Seal Stamp */
+.jlpt-hanko-seal {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #dc2626;
+  color: #dc2626;
+  background: rgba(239, 68, 68, 0.04);
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  line-height: 1.1;
+  user-select: none;
+  box-shadow: 0 0 0 1px rgba(220, 38, 38, 0.15) inset;
+}
+
+.jlpt-hanko-seal-lg {
+  width: 72px;
+  height: 72px;
+  border: 3px solid #dc2626;
+  border-radius: 12px;
+  transform: rotate(-5deg);
+  font-size: 1.1rem;
+}
+
+/* 3. Official Voucher Badge (受験者情報) */
+.jlpt-voucher-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 8px 14px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+[data-theme='dark'] .jlpt-voucher-box,
+html.dark .jlpt-voucher-box {
+  background: #1e2638;
+  border-color: #2e3a52;
+}
+
+/* 4. Authentic OMR Sheet (解答用紙) */
+.jlpt-omr-container {
+  background: #fdfbf7;
+  border: 2px solid #cbd5e1;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+[data-theme='dark'] .jlpt-omr-container,
+html.dark .jlpt-omr-container {
+  background: #161e2e;
+  border-color: #2a374d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* OMR 5-Question Group Divider */
+.jlpt-omr-group-rule {
+  border-bottom: 2px solid #cbd5e1;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+}
+
+[data-theme='dark'] .jlpt-omr-group-rule,
+html.dark .jlpt-omr-group-rule {
+  border-bottom-color: #2a374d;
+}
+
+/* 5. Authentic Oval Bubble */
+.jlpt-bubble-btn {
+  width: 32px;
+  height: 22px;
+  border-radius: 999px;
+  border: 1.5px solid #64748b;
+  background: #ffffff;
+  color: #334155;
+  font-family: ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+  user-select: none;
+  cursor: pointer;
+}
+
+[data-theme='dark'] .jlpt-bubble-btn,
+html.dark .jlpt-bubble-btn {
+  background: #1e293b;
+  border-color: #475569;
+  color: #cbd5e1;
+}
+
+.jlpt-bubble-btn:hover:not(:disabled) {
+  border-color: #0f172a;
+  background: #f1f5f9;
+  transform: scale(1.06);
+}
+
+[data-theme='dark'] .jlpt-bubble-btn:hover:not(:disabled),
+html.dark .jlpt-bubble-btn:hover:not(:disabled) {
+  border-color: #e2e8f0;
+  background: #334155;
+}
+
+/* Filled Pencil State (Graphite simulation) */
+.jlpt-bubble-btn.is-pencil-filled {
+  background: #27272a;
+  border-color: #09090b;
+  color: #ffffff;
+  font-weight: 900;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Correct Selection */
+.jlpt-bubble-btn.is-correct {
+  background: #059669 !important;
+  border-color: #047857 !important;
+  color: #ffffff !important;
+  font-weight: 900;
+  box-shadow: 0 2px 6px rgba(5, 150, 105, 0.35);
+}
+
+/* Wrong Selection */
+.jlpt-bubble-btn.is-wrong {
+  background: #dc2626 !important;
+  border-color: #b91c1c !important;
+  color: #ffffff !important;
+  font-weight: 900;
+  box-shadow: 0 2px 6px rgba(220, 38, 38, 0.35);
+}
+
+/* Revealed Correct Key */
+.jlpt-bubble-btn.is-revealed {
+  border: 2px solid #059669 !important;
+  background: rgba(5, 150, 105, 0.15) !important;
+  color: #059669 !important;
+  font-weight: 900;
+}
+
+[data-theme='dark'] .jlpt-bubble-btn.is-revealed,
+html.dark .jlpt-bubble-btn.is-revealed {
+  color: #34d399 !important;
+  background: rgba(5, 150, 105, 0.25) !important;
+}
+
+/* 6. Realistic Option Choice Row */
+.jlpt-choice-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-radius: 16px;
+  border: 2px solid #e2e8f0;
+  background: #ffffff;
+  text-align: left;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+[data-theme='dark'] .jlpt-choice-item,
+html.dark .jlpt-choice-item {
+  background: #182234;
+  border-color: #27354d;
+}
+
+.jlpt-choice-item:hover:not(:disabled) {
+  border-color: #10b981;
+  background: #f8fafc;
+}
+
+[data-theme='dark'] .jlpt-choice-item:hover:not(:disabled),
+html.dark .jlpt-choice-item:hover:not(:disabled) {
+  background: #1f2c42;
+  border-color: #10b981;
+}
+
+.jlpt-choice-item.is-correct {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.08);
+}
+
+.jlpt-choice-item.is-wrong {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.08);
+}

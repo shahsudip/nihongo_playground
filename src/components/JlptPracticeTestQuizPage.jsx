@@ -5,6 +5,7 @@ import { getTestById, savePracticeTestRecord } from '../utils/jlpt_practice_test
 import { getPastExamById, savePastExamRecord } from '../utils/jlpt_past_exams_service.js';
 import { calculateJlptExamScore } from '../utils/jlptScoring.js';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
+import '../assets/jlpt_exam_hall.css';
 
 // Reusable UI
 import { Card } from './ui/Card';
@@ -786,9 +787,12 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
             &larr; Back to Practice Tests
           </button>
           <div className="flex items-center gap-2.5 flex-wrap">
-            <h1 className="text-xl md:text-2xl font-black text-gray-900 dark:text-white">
-              {testData.title}
-            </h1>
+            <div className="flex items-center gap-2 mb-1">
+              <div className="jlpt-hanko-seal text-[10px]"><span>実施</span><span>検印</span></div>
+              <h1 className="text-xl md:text-2xl font-black text-gray-900 dark:text-white">
+                {testData.title}
+              </h1>
+            </div>
             <span className="text-xs px-2.5 py-0.5 rounded-full font-black text-white bg-emerald-600">
               {lvlUpper}
             </span>
@@ -1028,7 +1032,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
           )}
 
           {hasPassage && (
-            <div className="p-4 sm:p-6 bg-gray-50 dark:bg-zinc-800/40 border border-gray-200/60 dark:border-white/5 rounded-2xl max-h-[550px] overflow-y-auto leading-loose text-base md:text-lg text-gray-800 dark:text-gray-200 font-sans">
+            <div className="p-5 sm:p-7 bg-[#fcfbf7] dark:bg-[#121927] border border-[#e5decb] dark:border-[#2a364d] rounded-2xl max-h-[550px] overflow-y-auto leading-loose text-base md:text-lg text-gray-800 dark:text-gray-200 font-sans shadow-inner">
               <div dangerouslySetInnerHTML={{ __html: formatJlptRuby(currentQ.context) }} />
             </div>
           )}
@@ -1041,7 +1045,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
           <div className={`quiz-flip-card-inner ${isFlipped ? 'is-flipped' : ''}`}>
             
             {/* FRONT FACE: Question & Options */}
-            <Card className={`w-full p-6 sm:p-8 shadow-sm border border-gray-200/80 dark:border-white/10 rounded-3xl mb-6 quiz-flip-face-front ${isFlipped ? 'absolute inset-0 pointer-events-none opacity-0 select-none' : 'relative'}`}>
+            <Card className={`w-full p-6 sm:p-8 shadow-md jlpt-exam-booklet rounded-3xl mb-6 quiz-flip-face-front ${isFlipped ? 'absolute inset-0 pointer-events-none opacity-0 select-none' : 'relative'}`}>
               {/* Question Header */}
               <div className="mb-6">
                 <div className="flex items-center justify-between gap-2 mb-3 pb-3 border-b border-gray-100 dark:border-white/5 flex-wrap">
@@ -1066,8 +1070,8 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
                       className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5 transition-all cursor-pointer shadow-2xs hover:scale-105"
                       title="解説を見る (Flip Card)"
                     >
-                      <span>💡 解説を見る</span>
-                      <span className="text-sm font-mono">🔄</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+                      <span>解説を見る (Flip Card)</span>
                     </button>
                     <span className="text-xs text-gray-500 dark:text-gray-400">
                       {currentQ.options?.length || 4} Choices
@@ -1104,18 +1108,17 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
                   const isSelected = selectedAnswer === optNum;
                   const isOptCorrect = optNum === currentQ.correct;
 
-                  let btnClass = "w-full flex items-center gap-3.5 px-5 py-4 rounded-2xl border-2 transition-all text-left cursor-pointer select-none ";
-
+                  let btnClass = "jlpt-choice-item ";
                   if (isAnswered) {
                     if (isOptCorrect) {
-                      btnClass += "border-emerald-500 bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 font-bold shadow-sm";
+                      btnClass += "is-correct text-emerald-800 dark:text-emerald-300 font-bold";
                     } else if (isSelected && !isOptCorrect) {
-                      btnClass += "border-rose-500 bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300 font-medium";
+                      btnClass += "is-wrong text-rose-800 dark:text-rose-300 font-medium";
                     } else {
-                      btnClass += "border-gray-200/80 dark:border-white/10 opacity-60 text-gray-600 dark:text-gray-400";
+                      btnClass += "opacity-50 text-gray-600 dark:text-gray-400";
                     }
-                  } else {
-                    btnClass += "border-gray-200/80 dark:border-white/10 hover:border-emerald-500/60 hover:bg-gray-50 dark:hover:bg-white/5 text-gray-800 dark:text-gray-200";
+                  } else if (isSelected) {
+                    btnClass += "border-zinc-800 dark:border-zinc-400 bg-zinc-50 dark:bg-zinc-800/60";
                   }
 
                   return (

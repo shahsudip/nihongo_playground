@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
+import '../../assets/jlpt_exam_hall.css';
 
 /**
  * JlptScoreCertificateModal
@@ -37,7 +38,7 @@ export const JlptScoreCertificateModal = ({
         {/* Certificate Header Banner */}
         <div className="text-center pb-5 mb-6 border-b-2 border-dashed border-gray-300 dark:border-zinc-700 relative">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 dark:bg-red-950/60 text-red-700 dark:text-red-400 font-mono text-xs font-black uppercase mb-2">
-            <span>🇯🇵</span>
+            <span className="jlpt-hanko-seal text-[9px] mr-0.5"><span>検印</span></span>
             <span>JLPT PRACTICE SCORE REPORT</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-gray-900 dark:text-white">
