@@ -41,6 +41,7 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
   const [showExitModal, setShowExitModal] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false);
 
   // Handle browser back button: trigger in-app UI exit modal instead of native dialog
   useEffect(() => {
@@ -424,6 +425,7 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
   };
 
   const handleNext = () => {
+    setIsFlipped(false);
     if (currentIndex < questions.length - 1) {
       const nextIdx = currentIndex + 1;
       setCurrentIndex(nextIdx);
@@ -435,6 +437,7 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
   };
 
   const handlePrev = () => {
+    setIsFlipped(false);
     if (currentIndex > 0) {
       const prevIdx = currentIndex - 1;
       setCurrentIndex(prevIdx);
@@ -630,7 +633,7 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
               <button
                 key={q.id}
                 type="button"
-                onClick={() => setCurrentIndex(idx)}
+                onClick={() => { setIsFlipped(false); setCurrentIndex(idx); }}
                 className={`shin-nav-pill ${statusClass.trim()}`}
                 title={`Question ${idx + 1}`}
               >
@@ -640,161 +643,243 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
           })}
         </div>
 
-        {/* Active Question Card */}
+        {/* Active Question Card with 3D Flip-Card Support */}
         {currentQ && (
-          <div className="shin-card p-6 md:p-8 mb-6 animate-fade-in">
-            
-            {/* Question Header & Category Chip */}
-            <div className="flex items-center justify-between gap-2 mb-4 pb-3 border-b" style={{ borderColor: 'var(--shin-border)' }}>
-              <div className="flex items-center gap-2">
-                <span className="inline-flex items-center justify-center w-7 h-7 rounded-full text-white font-bold text-xs bg-emerald-600">
-                  {currentIndex + 1}
-                </span>
-                <span className={`text-xs font-bold px-2.5 py-1 rounded-md flex items-center gap-1.5 ${
-                  currentCategory.type === 'moji' ? 'shin-badge-moji' :
-                  currentCategory.type === 'goi' ? 'shin-badge-goi' : 'shin-badge-bunpou'
-                }`}>
-                  <span>{currentCategory.icon}</span>
-                  <span>{currentCategory.label}</span>
-                </span>
-              </div>
+          <div className="quiz-flip-perspective w-full scroll-mt-20">
+            <div className={`quiz-flip-card-inner ${isFlipped ? 'is-flipped' : ''}`}>
+              {/* FRONT FACE: Question & Options */}
+              <div className={`shin-card p-6 md:p-8 mb-6 quiz-flip-face-front ${isFlipped ? 'absolute inset-0 pointer-events-none opacity-0 select-none' : 'relative'}`}>
+                {/* Question Header & Category Chip */}
+                <div className="flex items-center justify-between gap-2 mb-4 pb-3 border-b flex-wrap" style={{ borderColor: 'var(--shin-border)' }}>
+                  <div className="flex items-center gap-2">
+                    <span className="inline-flex items-center justify-center w-7 h-7 rounded-full text-white font-bold text-xs bg-emerald-600">
+                      {currentIndex + 1}
+                    </span>
+                    <span className={`text-xs font-bold px-2.5 py-1 rounded-md flex items-center gap-1.5 ${
+                      currentCategory.type === 'moji' ? 'shin-badge-moji' :
+                      currentCategory.type === 'goi' ? 'shin-badge-goi' : 'shin-badge-bunpou'
+                    }`}>
+                      <span>{currentCategory.icon}</span>
+                      <span>{currentCategory.label}</span>
+                    </span>
+                  </div>
 
-              <span className="text-xs font-medium" style={{ color: 'var(--shin-text-muted)' }}>
-                {currentQ.options?.length || 4} Choices
-              </span>
-            </div>
-
-            {/* Instruction if available */}
-            {currentQ.instruction && (
-              <p className="text-xs font-medium mb-3" style={{ color: 'var(--shin-text-muted)' }}>
-                {currentQ.instruction}
-              </p>
-            )}
-
-            {/* Question Text */}
-            <div className="mb-6">
-              <h2
-                className="text-xl md:text-2xl font-medium leading-relaxed shin500-japanese-text"
-                style={{ color: 'var(--shin-text-primary)' }}
-                dangerouslySetInnerHTML={{ __html: currentQ.questionText }}
-              />
-            </div>
-
-            {/* Options List / Grid */}
-            <div className={`gap-3 mb-4 ${currentQ.options?.length === 2 ? 'shin-dual-options-grid' : 'space-y-3'}`}>
-              {currentQ.options?.map((opt, optIdx) => {
-                const optText = typeof opt === 'object' ? opt.text : opt;
-                const isSelected = currentAnswer?.selectedIndex === optIdx;
-                const isCorrect = (optIdx === currentCorrectInfo.index || optText === currentCorrectInfo.text);
-                
-                let optionStateClass = '';
-                if (currentAnswer) {
-                  if (isCorrect) {
-                    optionStateClass = 'is-correct';
-                  } else if (isSelected && !currentAnswer.isCorrect) {
-                    optionStateClass = 'is-wrong';
-                  }
-                }
-
-                return (
-                  <button
-                    key={optIdx}
-                    type="button"
-                    onClick={() => handleSelectOption(optIdx, optText)}
-                    disabled={Boolean(currentAnswer)}
-                    className={`shin-option-btn ${optionStateClass}`}
-                  >
-                    <div className="flex items-center justify-between w-full">
-                      <div className="flex items-center gap-3 flex-1 min-w-0">
-                        <span className="shin-key-badge">{optIdx + 1}</span>
-                        <span
-                          className="shin500-japanese-text font-medium flex-1 text-left"
-                          dangerouslySetInnerHTML={{ __html: optText }}
-                        />
-                      </div>
-                      {currentAnswer && (
-                        <span className={`ml-2 text-[0.75rem] font-bold px-2 py-0.5 rounded flex items-center gap-1 shrink-0 ${
-                          isCorrect
-                            ? 'bg-emerald-600 text-white shadow-sm'
-                            : isSelected
-                            ? 'bg-rose-600 text-white shadow-sm'
-                            : 'opacity-0'
-                        }`}>
-                          {isCorrect ? '✓ 正解' : isSelected ? '✕ 不正解' : ''}
-                        </span>
-                      )}
-                    </div>
-                  </button>
-                );
-              })}
-            </div>
-
-            {/* Dedicated Explanation Card when answered */}
-            {currentAnswer && isStarQuestion(currentQ) && (
-              <StarExplanationCard question={currentQ} className="mt-4 mb-2" />
-            )}
-            {currentAnswer && currentQ.explanation && (
-              <div 
-                className="mt-4 mb-2 p-4.5 rounded-2xl border shadow-sm transition-all animate-fade-in text-left"
-                style={{ 
-                  backgroundColor: 'var(--shin-card-alt)', 
-                  borderColor: currentAnswer.isCorrect ? 'rgba(16, 185, 129, 0.4)' : 'rgba(239, 68, 68, 0.4)' 
-                }}
-              >
-                <div className="flex items-center gap-2 mb-2 text-xs font-black uppercase tracking-wider" style={{ color: currentAnswer.isCorrect ? '#059669' : '#dc2626' }}>
-                  <span className="text-base">💡</span>
-                  <span>解説 • Explanation</span>
+                  <div className="flex items-center gap-2.5">
+                    {(currentQ.explanation || isStarQuestion(currentQ)) && (
+                      <button
+                        type="button"
+                        onClick={() => setIsFlipped(true)}
+                        className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5 transition-all cursor-pointer shadow-2xs hover:scale-105"
+                        title="解説を見る (Flip Card)"
+                      >
+                        <span>💡 解説を見る</span>
+                        <span className="text-sm font-mono">🔄</span>
+                      </button>
+                    )}
+                    <span className="text-xs font-medium" style={{ color: 'var(--shin-text-muted)' }}>
+                      {currentQ.options?.length || 4} Choices
+                    </span>
+                  </div>
                 </div>
-                <FormattedExplanationText
-                  className="text-sm md:text-base leading-relaxed shin500-japanese-text font-medium"
-                  text={currentQ.explanation}
-                />
-              </div>
-            )}
 
-            {/* Bottom Actions */}
-            <div className="flex items-center justify-between pt-6 border-t mt-6 gap-3 flex-wrap" style={{ borderColor: 'var(--shin-border)' }}>
-              <button
-                type="button"
-                onClick={handlePrev}
-                disabled={currentIndex === 0}
-                className="px-4 py-2 rounded-xl text-sm font-semibold border disabled:opacity-40 disabled:pointer-events-none transition-all cursor-pointer"
-                style={{ borderColor: 'var(--shin-border)', backgroundColor: 'var(--shin-card-alt)', color: 'var(--shin-text-primary)' }}
-              >
-                &larr; Prev
-              </button>
-
-              <div className="flex items-center gap-3">
-                <button
-                  type="button"
-                  onClick={handleResetDrill}
-                  className="px-4 py-2 rounded-xl text-sm font-semibold border border-red-300 dark:border-red-900/60 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 transition-all flex items-center gap-1.5 cursor-pointer"
-                  title="Reset all answers and retake this drill from scratch"
-                >
-                  <span>🔄</span>
-                  <span>Reset Drill</span>
-                </button>
-
-                {currentIndex < questions.length - 1 ? (
-                  <button
-                    type="button"
-                    onClick={handleNext}
-                    className="px-6 py-2 rounded-xl text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition-all cursor-pointer"
-                  >
-                    Next &rarr;
-                  </button>
-                ) : (
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setIsFinished(true);
-                      saveProgress(answers, true, currentIndex);
-                    }}
-                    className="px-6 py-2 rounded-xl text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition-all cursor-pointer"
-                  >
-                    Finish Drill ✓
-                  </button>
+                {/* Instruction if available */}
+                {currentQ.instruction && (
+                  <p className="text-xs font-medium mb-3" style={{ color: 'var(--shin-text-muted)' }}>
+                    {currentQ.instruction}
+                  </p>
                 )}
+
+                {/* Question Text */}
+                <div className="mb-6">
+                  <h2
+                    className="text-xl md:text-2xl font-medium leading-relaxed shin500-japanese-text"
+                    style={{ color: 'var(--shin-text-primary)' }}
+                    dangerouslySetInnerHTML={{ __html: currentQ.questionText }}
+                  />
+                </div>
+
+                {/* Options List / Grid */}
+                <div className={`gap-3 mb-4 ${currentQ.options?.length === 2 ? 'shin-dual-options-grid' : 'space-y-3'}`}>
+                  {currentQ.options?.map((opt, optIdx) => {
+                    const optText = typeof opt === 'object' ? opt.text : opt;
+                    const isSelected = currentAnswer?.selectedIndex === optIdx;
+                    const isCorrect = (optIdx === currentCorrectInfo.index || optText === currentCorrectInfo.text);
+                    
+                    let optionStateClass = '';
+                    if (currentAnswer) {
+                      if (isCorrect) {
+                        optionStateClass = 'is-correct';
+                      } else if (isSelected && !currentAnswer.isCorrect) {
+                        optionStateClass = 'is-wrong';
+                      }
+                    }
+
+                    return (
+                      <button
+                        key={optIdx}
+                        type="button"
+                        onClick={() => handleSelectOption(optIdx, optText)}
+                        disabled={Boolean(currentAnswer)}
+                        className={`shin-option-btn ${optionStateClass}`}
+                      >
+                        <div className="flex items-center justify-between w-full">
+                          <div className="flex items-center gap-3 flex-1 min-w-0">
+                            <span className="shin-key-badge">{optIdx + 1}</span>
+                            <span
+                              className="shin500-japanese-text font-medium flex-1 text-left"
+                              dangerouslySetInnerHTML={{ __html: optText }}
+                            />
+                          </div>
+                          {currentAnswer && (
+                            <span className={`ml-2 text-[0.75rem] font-bold px-2 py-0.5 rounded flex items-center gap-1 shrink-0 ${
+                              isCorrect
+                                ? 'bg-emerald-600 text-white shadow-sm'
+                                : isSelected
+                                ? 'bg-rose-600 text-white shadow-sm'
+                                : 'opacity-0'
+                            }`}>
+                              {isCorrect ? '✓ 正解' : isSelected ? '✕ 不正解' : ''}
+                            </span>
+                          )}
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Dedicated Explanation Card when answered inline */}
+                {currentAnswer && isStarQuestion(currentQ) && (
+                  <StarExplanationCard question={currentQ} className="mt-4 mb-2" />
+                )}
+                {currentAnswer && currentQ.explanation && (
+                  <div 
+                    className="mt-4 mb-2 p-4.5 rounded-2xl border shadow-sm transition-all animate-fade-in text-left"
+                    style={{ 
+                      backgroundColor: 'var(--shin-card-alt)', 
+                      borderColor: currentAnswer.isCorrect ? 'rgba(16, 185, 129, 0.4)' : 'rgba(239, 68, 68, 0.4)' 
+                    }}
+                  >
+                    <div className="flex items-center gap-2 mb-2 text-xs font-black uppercase tracking-wider" style={{ color: currentAnswer.isCorrect ? '#059669' : '#dc2626' }}>
+                      <span className="text-base">💡</span>
+                      <span>解説 • Explanation</span>
+                    </div>
+                    <FormattedExplanationText
+                      className="text-sm md:text-base leading-relaxed shin500-japanese-text font-medium"
+                      text={currentQ.explanation}
+                    />
+                  </div>
+                )}
+
+                {/* Bottom Actions */}
+                <div className="flex items-center justify-between pt-6 border-t mt-6 gap-3 flex-wrap" style={{ borderColor: 'var(--shin-border)' }}>
+                  <button
+                    type="button"
+                    onClick={handlePrev}
+                    disabled={currentIndex === 0}
+                    className="px-4 py-2 rounded-xl text-sm font-semibold border disabled:opacity-40 disabled:pointer-events-none transition-all cursor-pointer"
+                    style={{ borderColor: 'var(--shin-border)', backgroundColor: 'var(--shin-card-alt)', color: 'var(--shin-text-primary)' }}
+                  >
+                    &larr; Prev
+                  </button>
+
+                  <div className="flex items-center gap-3">
+                    <button
+                      type="button"
+                      onClick={handleResetDrill}
+                      className="px-4 py-2 rounded-xl text-sm font-semibold border border-red-300 dark:border-red-900/60 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 transition-all flex items-center gap-1.5 cursor-pointer"
+                      title="Reset all answers and retake this drill from scratch"
+                    >
+                      <span>🔄</span>
+                      <span>Reset Drill</span>
+                    </button>
+
+                    {currentIndex < questions.length - 1 ? (
+                      <button
+                        type="button"
+                        onClick={handleNext}
+                        className="px-6 py-2 rounded-xl text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition-all cursor-pointer"
+                      >
+                        Next &rarr;
+                      </button>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={handleFinish}
+                        className="px-6 py-2 rounded-xl text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition-all cursor-pointer"
+                      >
+                        Finish Drill 🏁
+                      </button>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              {/* BACK FACE: Explanation side */}
+              <div className={`shin-card p-6 md:p-8 mb-6 quiz-flip-face-back border-2 border-emerald-500/40 dark:border-emerald-500/30 bg-emerald-500/[0.03] dark:bg-emerald-950/20 ${!isFlipped ? 'absolute inset-0 pointer-events-none opacity-0 select-none' : 'relative'}`}>
+                <div className="flex items-center justify-between pb-3 mb-4 border-b border-emerald-500/20 flex-wrap gap-2">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs font-bold shadow-sm">💡</span>
+                    <span className="font-extrabold text-sm md:text-base text-emerald-800 dark:text-emerald-300">
+                      解説 • Explanation & Insights
+                    </span>
+                    <span className="text-xs font-mono font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 ml-1">
+                      正解：{currentCorrectInfo.index !== null && currentCorrectInfo.index !== -1 ? `選択肢 ${currentCorrectInfo.index + 1}` : ''} {currentCorrectInfo.text ? `(${currentCorrectInfo.text})` : ''}
+                    </span>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={() => setIsFlipped(false)}
+                    className="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white dark:bg-zinc-800 border border-emerald-500/40 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 flex items-center gap-1.5 transition-all cursor-pointer shadow-sm hover:scale-105"
+                  >
+                    <span>↩️ 問題に戻る (Flip Back)</span>
+                  </button>
+                </div>
+
+                <div className="space-y-4 text-left">
+                  {isStarQuestion(currentQ) && (
+                    <StarExplanationCard question={currentQ} />
+                  )}
+                  {currentQ.explanation && (
+                    <div className="p-4 rounded-xl border border-emerald-500/20 bg-emerald-500/5 dark:bg-emerald-950/30 text-sm md:text-base leading-relaxed">
+                      <FormattedExplanationText text={currentQ.explanation} />
+                    </div>
+                  )}
+                </div>
+
+                <div className="flex justify-between items-center pt-4 border-t border-emerald-500/20 mt-6">
+                  <button
+                    type="button"
+                    onClick={() => setIsFlipped(false)}
+                    className="px-4 py-2 rounded-xl text-sm font-semibold border"
+                    style={{ borderColor: 'var(--shin-border)', backgroundColor: 'var(--shin-card-alt)', color: 'var(--shin-text-primary)' }}
+                  >
+                    ↩️ Back to Question
+                  </button>
+                  {currentIndex < questions.length - 1 ? (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsFlipped(false);
+                        handleNext();
+                      }}
+                      className="px-6 py-2 rounded-xl text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition-all cursor-pointer"
+                    >
+                      Next Question &rarr;
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsFlipped(false);
+                        handleFinish();
+                      }}
+                      className="px-6 py-2 rounded-xl text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition-all cursor-pointer"
+                    >
+                      Finish Drill 🏁
+                    </button>
+                  )}
+                </div>
               </div>
             </div>
           </div>

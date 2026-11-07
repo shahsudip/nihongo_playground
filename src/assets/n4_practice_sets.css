@@ -119,6 +119,35 @@ html.theme-sepia,
   --n4-modal-bg: #fcf9f2;
 }
 
+/* Utility Text & Theme Classes */
+.n4-text-main {
+  color: var(--n4-text-main);
+}
+.n4-text-sub {
+  color: var(--n4-text-sub);
+}
+.n4-text-muted {
+  color: var(--n4-text-muted);
+}
+.n4-text-primary {
+  color: var(--n4-primary);
+}
+.n4-badge-target {
+  background: rgba(16, 185, 129, 0.12);
+  color: var(--n4-primary);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+.n4-breakdown-card {
+  background: var(--n4-card-row-bg);
+  border: 1px solid var(--n4-card-row-border);
+  color: var(--n4-text-main);
+}
+.n4-full-exam-banner {
+  background: var(--n4-hero-bg);
+  border: 1.5px solid var(--n4-box-white-border);
+}
+
+
 /* Animations */
 @keyframes n4FloatGlow {
   0%, 100% {
@@ -200,7 +229,7 @@ html.theme-sepia,
   padding: 36px 32px;
   margin-bottom: 40px;
   backdrop-filter: blur(16px);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .n4-hero-ambient-glow {
@@ -342,7 +371,7 @@ html.theme-sepia,
   margin-bottom: 20px;
   font-size: 0.85rem;
   color: var(--n4-motivation-text);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .n4-motivation-bar .fire-icon {
@@ -364,7 +393,7 @@ html.theme-sepia,
   display: flex;
   align-items: center;
   gap: 14px;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .n4-stat-box:hover {
@@ -428,7 +457,7 @@ html.theme-sepia,
   border: 1.5px solid var(--n4-box-white-border);
   border-radius: 20px;
   padding: 22px;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -529,7 +558,7 @@ html.theme-sepia,
   font-size: 0.95rem;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
   box-shadow: 0 4px 14px var(--n4-primary-glow);
   text-decoration: none;
 }
@@ -599,7 +628,7 @@ html.theme-sepia,
   color: var(--n4-text-main);
   outline: none;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
   min-width: 0;
 }
 
@@ -634,7 +663,7 @@ html.theme-sepia,
   background: var(--n4-action-btn-sec-bg);
   color: var(--n4-action-btn-sec-text);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -727,7 +756,7 @@ html.theme-sepia,
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .n4-modal-close-btn:hover {
@@ -794,7 +823,7 @@ html.theme-sepia,
   font-weight: 700;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
   color: var(--n4-text-muted);
   background: transparent;
 }
@@ -920,7 +949,7 @@ html.theme-sepia,
   font-size: 1.02rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -945,7 +974,7 @@ html.theme-sepia,
   color: var(--n4-opt-num-color);
   border: 1px solid var(--n4-box-white-border);
   flex-shrink: 0;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 /* Option States */
@@ -1088,7 +1117,7 @@ html.theme-sepia,
   color: var(--n4-action-btn-sec-text);
   border: 1px solid var(--n4-action-btn-sec-border);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .n4-btn-secondary:hover:not(:disabled) {
@@ -1111,7 +1140,7 @@ html.theme-sepia,
   color: #ffffff;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
   box-shadow: 0 4px 14px var(--n4-primary-glow);
 }
 
@@ -1130,7 +1159,7 @@ html.theme-sepia,
   color: #ffffff;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
   box-shadow: 0 4px 14px var(--n4-emerald-glow);
 }
 

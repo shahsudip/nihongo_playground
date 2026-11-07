@@ -24,6 +24,7 @@ const N4PracticeSetQuizPage = () => {
   const [timerSeconds, setTimerSeconds] = useState(0);
   const [timerActive, setTimerActive] = useState(true);
   const [showExitModal, setShowExitModal] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false);
 
   // Handle browser back button: trigger in-app UI exit modal instead of native dialog
   useEffect(() => {
@@ -514,6 +515,7 @@ const N4PracticeSetQuizPage = () => {
               value={currentIndex}
               onChange={(e) => {
                 const idx = parseInt(e.target.value);
+                setIsFlipped(false);
                 setCurrentIndex(idx);
               }}
               className="n4-nav-select"
@@ -553,122 +555,217 @@ const N4PracticeSetQuizPage = () => {
           </div>
         )}
 
-        {/* Question Card Arena */}
-        <div className="n4-arena-box">
-          <div>
-            {/* Instruction Type Badge */}
-            {currentQ.instruction && (
-              <div className="n4-instruction-badge" style={{ color: 'var(--n4-text-main)' }}>
-                <span style={{ color: 'var(--n4-text-main)' }}>{currentQ.instruction}</span>
+        {/* Question Card Arena with Flip-Card Support */}
+        <div className="quiz-flip-perspective w-full scroll-mt-20">
+          <div className={`quiz-flip-card-inner ${isFlipped ? 'is-flipped' : ''}`}>
+            {/* FRONT FACE: Question & Options */}
+            <div className={`n4-arena-box quiz-flip-face-front ${isFlipped ? 'absolute inset-0 pointer-events-none opacity-0 select-none' : 'relative'}`}>
+              <div>
+                {/* Instruction Type Badge */}
+                {currentQ.instruction && (
+                  <div className="n4-instruction-badge n4-text-main">
+                    <span className="n4-text-main">{currentQ.instruction}</span>
+                  </div>
+                )}
+
+                <div className="flex items-center justify-between gap-4 mb-4">
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-extrabold uppercase tracking-wider n4-text-main">
+                      Question {currentIndex + 1}
+                    </span>
+                    <span className="text-xs font-mono n4-text-muted">ID: #{currentQ.id}</span>
+                  </div>
+
+                  {(currentQ.explanation || isStarQuestion(currentQ)) && (
+                    <button
+                      type="button"
+                      onClick={() => setIsFlipped(true)}
+                      className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5 transition-all cursor-pointer shadow-2xs hover:scale-105"
+                      title="解説を見る (Flip Card)"
+                    >
+                      <span>💡 解説を見る</span>
+                      <span className="text-sm font-mono">🔄</span>
+                    </button>
+                  )}
+                </div>
+
+                {/* Question Text */}
+                <div className={`n4-main-q-text ${fontSizeClass}`}>
+                  {currentQ.questionText?.includes('★') ? (
+                    renderStarQuestion(currentQ.questionText)
+                  ) : (
+                    <span dangerouslySetInnerHTML={{ __html: currentQ.questionText }} />
+                  )}
+                </div>
+
+                {/* Options Grid */}
+                <div className="n4-options-grid">
+                  {currentQ.options?.map((opt, optIdx) => {
+                    const isSelected = answers[currentIndex] === optIdx;
+                    const isCorrect = currentQ.correctIndex === optIdx;
+                    const showFeedback = feedbackMode === 'Immediate' && answers[currentIndex] !== undefined;
+
+                    let optClass = '';
+                    if (showFeedback) {
+                      if (isCorrect) {
+                        optClass = 'correct-feedback';
+                      } else if (isSelected) {
+                        optClass = 'wrong-feedback';
+                      } else {
+                        optClass = 'faded';
+                      }
+                    } else if (isSelected) {
+                      optClass = 'selected';
+                    }
+
+                    const showInlineExplanation = showFeedback && isCorrect && currentQ.explanation && !isStarQuestion(currentQ);
+
+                    return (
+                      <button
+                        key={optIdx}
+                        onClick={() => handleSelectOption(optIdx)}
+                        disabled={showFeedback}
+                        className={`n4-option-btn flex-col items-stretch text-left ${optClass}`}
+                      >
+                        <div className="flex items-center w-full">
+                          <span className="n4-opt-num">{optIdx + 1}</span>
+                          <span className="flex-grow" dangerouslySetInnerHTML={{ __html: opt }} />
+                          {showFeedback && isCorrect && (
+                            <span className="ml-2 text-xs font-bold px-2 py-0.5 rounded bg-emerald-600 text-white shadow-sm shrink-0">
+                              ✓ 正解
+                            </span>
+                          )}
+                          {showFeedback && isSelected && !isCorrect && (
+                            <span className="ml-2 text-xs font-bold px-2 py-0.5 rounded bg-rose-600 text-white shadow-sm shrink-0">
+                              ✕ 不正解
+                            </span>
+                          )}
+                        </div>
+
+                        {showInlineExplanation && (
+                          <div className="mt-2 pt-2 border-t text-xs leading-relaxed opacity-90 border-emerald-500/20 font-normal text-left">
+                            <FormattedExplanationText text={currentQ.explanation} />
+                          </div>
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {feedbackMode === 'Immediate' && answers[currentIndex] !== undefined && isStarQuestion(currentQ) && (
+                  <div className="mt-4 text-left">
+                    <StarExplanationCard question={currentQ} />
+                  </div>
+                )}
               </div>
-            )}
 
-            <div className="flex items-center justify-between gap-4 mb-4">
-              <span className="text-xs font-extrabold uppercase tracking-wider" style={{ color: 'var(--n4-text-main)' }}>
-                Question {currentIndex + 1}
-              </span>
-              <span className="text-xs font-mono" style={{ color: 'var(--n4-text-muted)' }}>ID: #{currentQ.id}</span>
-            </div>
+              {/* Bottom Action Controls */}
+              <div className="n4-action-bar">
+                <button
+                  onClick={() => {
+                    setIsFlipped(false);
+                    setCurrentIndex(Math.max(0, currentIndex - 1));
+                  }}
+                  disabled={currentIndex === 0}
+                  className="n4-btn-secondary"
+                >
+                  &larr; Previous
+                </button>
 
-            {/* Question Text */}
-            <div className={`n4-main-q-text ${fontSizeClass}`}>
-              {currentQ.questionText?.includes('★') ? (
-                renderStarQuestion(currentQ.questionText)
-              ) : (
-                <span dangerouslySetInnerHTML={{ __html: currentQ.questionText }} />
-              )}
-            </div>
+                <span className="text-xs font-mono hidden sm:inline n4-text-muted">
+                  Accuracy: {accuracyPercent}% ({correctCount}/{answeredCount})
+                </span>
 
-            {/* Options Grid */}
-            <div className="n4-options-grid">
-              {currentQ.options?.map((opt, optIdx) => {
-                const isSelected = answers[currentIndex] === optIdx;
-                const isCorrect = currentQ.correctIndex === optIdx;
-                const showFeedback = feedbackMode === 'Immediate' && answers[currentIndex] !== undefined;
-
-                let optClass = '';
-                if (showFeedback) {
-                  if (isCorrect) {
-                    optClass = 'correct-feedback';
-                  } else if (isSelected) {
-                    optClass = 'wrong-feedback';
-                  } else {
-                    optClass = 'faded';
-                  }
-                } else if (isSelected) {
-                  optClass = 'selected';
-                }
-
-                const showInlineExplanation = showFeedback && isCorrect && currentQ.explanation && !isStarQuestion(currentQ);
-
-                return (
+                {currentIndex < questions.length - 1 ? (
                   <button
-                    key={optIdx}
-                    onClick={() => handleSelectOption(optIdx)}
-                    disabled={showFeedback}
-                    className={`n4-option-btn flex-col items-stretch text-left ${optClass}`}
+                    onClick={() => {
+                      setIsFlipped(false);
+                      setCurrentIndex(currentIndex + 1);
+                    }}
+                    className="n4-btn-primary"
                   >
-                    <div className="flex items-center w-full">
-                      <span className="n4-opt-num">{optIdx + 1}</span>
-                      <span className="flex-grow" dangerouslySetInnerHTML={{ __html: opt }} />
-                      {showFeedback && isCorrect && (
-                        <span className="ml-2 text-xs font-bold px-2 py-0.5 rounded bg-emerald-600 text-white shadow-sm shrink-0">
-                          ✓ 正解
-                        </span>
-                      )}
-                      {showFeedback && isSelected && !isCorrect && (
-                        <span className="ml-2 text-xs font-bold px-2 py-0.5 rounded bg-rose-600 text-white shadow-sm shrink-0">
-                          ✕ 不正解
-                        </span>
-                      )}
-                    </div>
-
-                    {showInlineExplanation && (
-                      <div className="mt-2 pt-2 border-t text-xs leading-relaxed opacity-90 border-emerald-500/20 font-normal text-left">
-                        <FormattedExplanationText text={currentQ.explanation} />
-                      </div>
-                    )}
+                    Next &rarr;
                   </button>
-                );
-              })}
+                ) : (
+                  <button
+                    onClick={() => {
+                      setIsFlipped(false);
+                      setIsFinished(true);
+                    }}
+                    className="n4-btn-finish"
+                  >
+                    Finish Quiz 🏆
+                  </button>
+                )}
+              </div>
             </div>
 
-            {feedbackMode === 'Immediate' && answers[currentIndex] !== undefined && isStarQuestion(currentQ) && (
-              <div className="mt-4 text-left">
-                <StarExplanationCard question={currentQ} />
+            {/* BACK FACE: Explanation side */}
+            <div className={`n4-arena-box quiz-flip-face-back border-2 border-emerald-500/40 dark:border-emerald-500/30 bg-emerald-500/[0.03] dark:bg-emerald-950/20 ${!isFlipped ? 'absolute inset-0 pointer-events-none opacity-0 select-none' : 'relative'}`}>
+              <div className="flex items-center justify-between pb-3 mb-4 border-b border-emerald-500/20 flex-wrap gap-2">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs font-bold shadow-sm">💡</span>
+                  <span className="font-extrabold text-sm md:text-base text-emerald-800 dark:text-emerald-300">
+                    解説 • Explanation & Insights
+                  </span>
+                  <span className="text-xs font-mono font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 ml-1">
+                    正解：選択肢 {currentQ.correctIndex !== undefined ? currentQ.correctIndex + 1 : currentQ.correct}
+                  </span>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => setIsFlipped(false)}
+                  className="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white dark:bg-zinc-800 border border-emerald-500/40 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 flex items-center gap-1.5 transition-all cursor-pointer shadow-sm hover:scale-105"
+                >
+                  <span>↩️ 問題に戻る (Flip Back)</span>
+                </button>
               </div>
-            )}
-          </div>
 
-          {/* Bottom Action Controls */}
-          <div className="n4-action-bar">
-            <button
-              onClick={() => setCurrentIndex(Math.max(0, currentIndex - 1))}
-              disabled={currentIndex === 0}
-              className="n4-btn-secondary"
-            >
-              &larr; Previous
-            </button>
+              <div className="space-y-4 text-left">
+                {isStarQuestion(currentQ) && (
+                  <StarExplanationCard question={currentQ} />
+                )}
+                {currentQ.explanation && (
+                  <div className="p-4 rounded-xl border border-emerald-500/20 bg-emerald-500/5 dark:bg-emerald-950/30 text-sm md:text-base leading-relaxed">
+                    <FormattedExplanationText text={currentQ.explanation} />
+                  </div>
+                )}
+              </div>
 
-            <span className="text-xs font-mono hidden sm:inline" style={{ color: 'var(--n4-text-muted)' }}>
-              Accuracy: {accuracyPercent}% ({correctCount}/{answeredCount})
-            </span>
-
-            {currentIndex < questions.length - 1 ? (
-              <button
-                onClick={() => setCurrentIndex(currentIndex + 1)}
-                className="n4-btn-primary"
-              >
-                Next &rarr;
-              </button>
-            ) : (
-              <button
-                onClick={() => setIsFinished(true)}
-                className="n4-btn-finish"
-              >
-                Finish Quiz 🏆
-              </button>
-            )}
+              <div className="flex justify-between items-center pt-4 border-t border-emerald-500/20 mt-6">
+                <button
+                  type="button"
+                  onClick={() => setIsFlipped(false)}
+                  className="n4-btn-secondary text-xs"
+                >
+                  ↩️ Back to Question
+                </button>
+                {currentIndex < questions.length - 1 ? (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setIsFlipped(false);
+                      setCurrentIndex(currentIndex + 1);
+                    }}
+                    className="n4-btn-primary text-xs"
+                  >
+                    Next Question &rarr;
+                  </button>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setIsFlipped(false);
+                      setIsFinished(true);
+                    }}
+                    className="n4-btn-finish text-xs"
+                  >
+                    Finish Quiz 🏆
+                  </button>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>

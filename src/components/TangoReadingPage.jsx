@@ -76,6 +76,7 @@ export default function TangoReadingPage() {
 
   // Audio / TTS State
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
+  const [toastMessage, setToastMessage] = useState(null);
   const [speechRate] = useState(1.0);
 
   // Story & Flashcard Navigation
@@ -277,7 +278,7 @@ export default function TangoReadingPage() {
   // Native Web Speech API for TTS Audio
   const playJapaneseAudio = (text) => {
     if (!('speechSynthesis' in window)) {
-      alert("Text-to-speech is not supported on this browser.");
+      setToastMessage("Text-to-speech is not supported on this browser.");
       return;
     }
 

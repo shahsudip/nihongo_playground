@@ -599,14 +599,14 @@ const ProfileScreen = () => {
               <select
                 value={targetLevel}
                 onChange={(e) => handleTargetLevelChange(e.target.value)}
-                style={{ background: 'transparent', border: 'none', color: 'inherit', fontWeight: 800, cursor: 'pointer', outline: 'none' }}
+                className="bg-transparent border-none text-inherit font-extrabold cursor-pointer outline-none"
               >
-                <option value="N3" style={{ color: '#000' }}>JLPT N3</option>
-                <option value="N2" style={{ color: '#000' }}>JLPT N2</option>
-                <option value="N1" style={{ color: '#000' }}>JLPT N1</option>
-                <option value="N4" style={{ color: '#000' }}>JLPT N4</option>
-                <option value="N5" style={{ color: '#000' }}>JLPT N5</option>
-                <option value="All" style={{ color: '#000' }}>All Levels</option>
+                <option value="N3" className="bg-slate-800 text-white dark:bg-slate-900">JLPT N3</option>
+                <option value="N2" className="bg-slate-800 text-white dark:bg-slate-900">JLPT N2</option>
+                <option value="N1" className="bg-slate-800 text-white dark:bg-slate-900">JLPT N1</option>
+                <option value="N4" className="bg-slate-800 text-white dark:bg-slate-900">JLPT N4</option>
+                <option value="N5" className="bg-slate-800 text-white dark:bg-slate-900">JLPT N5</option>
+                <option value="All" className="bg-slate-800 text-white dark:bg-slate-900">All Levels</option>
               </select>
             </span>
             <button
@@ -621,7 +621,7 @@ const ProfileScreen = () => {
             <Link
               to="/check-level"
               className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-xs font-black shadow-sm hover:opacity-95 transition-all"
-              style={{ textDecoration: 'none' }}
+              
               title="Take a 20-question randomized JLPT level check across all sources"
             >
               <span>🎲</span>
@@ -647,7 +647,7 @@ const ProfileScreen = () => {
         </div>
         <div className="profile-hero-stats">
           <div className="profile-hero-stat-pill">
-            <div className="profile-stat-val" style={{ color: '#f59e0b' }}>🔥 {streak}</div>
+            <div className="profile-stat-val text-amber-500 font-extrabold">🔥 {streak}</div>
             <div className="profile-stat-lbl">Day Streak</div>
           </div>
           <div className="profile-hero-stat-pill">
@@ -710,7 +710,7 @@ const ProfileScreen = () => {
 
           <div className="profile-section-title">
             <span>{targetLevel === 'All' ? 'JLPT Level Mastery Matrix' : `${targetLevel} Mastery Breakdown`}</span>
-            <span style={{ fontSize: '0.85rem', color: 'var(--color-text-secondary, #94a3b8)' }}>
+            <span className="text-xs text-[var(--color-text-secondary)]">
               Real-time calculation from completed drills & quizzes
             </span>
           </div>

@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import Toast from './ui/Toast.jsx';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
 import logo from '../assets/logo_transparent.png';
@@ -41,6 +42,7 @@ const levelPills = [
 
 const LandingPage = () => {
   const { loginWithGoogle, currentUser } = useAuth();
+  const [toastMessage, setToastMessage] = useState(null);
   const navigate = useNavigate();
 
   // If already logged in, redirect to levels
@@ -55,7 +57,7 @@ const LandingPage = () => {
       await loginWithGoogle();
     } catch (error) {
       console.error('Failed to log in with Google', error);
-      alert('Failed to sign in. Please try again.');
+      setToastMessage('Sign-in cancelled or failed. Please try again.');
     }
   };
 
@@ -206,6 +208,7 @@ const LandingPage = () => {
           <p>© {new Date().getFullYear()} Nihongo Playground • Modern Japanese Learning Platform</p>
         </div>
       </footer>
+      <Toast message={toastMessage} type="error" onClose={() => setToastMessage(null)} />
     </div>
   );
 };

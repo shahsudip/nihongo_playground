@@ -64,12 +64,12 @@ const N4PracticeSetDetailsPage = () => {
       </nav>
 
       {/* Set Header Hero */}
-      <div className="n4-hero-shell" style={{ padding: '32px 28px', marginBottom: '32px' }}>
+      <div className="n4-hero-shell py-8 px-7 mb-8">
         <div className="n4-hero-ambient-glow" />
         <div className="flex flex-wrap items-center justify-between gap-4 mb-3">
           <div className="flex items-center gap-3">
             <span className="n4-pill-level">JLPT N4</span>
-            <h1 className="text-2xl sm:text-3xl font-black" style={{ color: 'var(--n4-text-main)' }}>
+            <h1 className="text-2xl sm:text-3xl font-black n4-text-main">
               第{setNum}回 模擬試験 ({currentSet.title})
             </h1>
           </div>
@@ -77,7 +77,7 @@ const N4PracticeSetDetailsPage = () => {
             {totalQ} Questions Total
           </span>
         </div>
-        <p className="text-sm max-w-3xl leading-relaxed" style={{ color: 'var(--n4-text-sub)' }}>
+        <p className="text-sm max-w-3xl leading-relaxed n4-text-sub">
           Select a targeted section below to practice specific question types, or take the full {totalQ}-question mock exam to test your overall endurance and time management.
         </p>
       </div>
@@ -89,48 +89,34 @@ const N4PracticeSetDetailsPage = () => {
           <div>
             <div className="flex justify-between items-center mb-4">
               <span className="text-3xl">🈸</span>
-              <span
-                className="text-xs font-bold px-3 py-1 rounded-full border"
-                style={{
-                  background: 'rgba(16, 185, 129, 0.12)',
-                  color: 'var(--n4-primary)',
-                  borderColor: 'rgba(16, 185, 129, 0.3)'
-                }}
-              >
+              <span className="text-xs font-bold px-3 py-1 rounded-full border n4-badge-target">
                 ⏱️ 30 Min Target
               </span>
             </div>
-            <h3 className="text-xl font-bold mb-2" style={{ color: 'var(--n4-text-main)' }}>言語知識（文字・語彙）</h3>
-            <p className="text-sm mb-4 leading-relaxed" style={{ color: 'var(--n4-text-sub)' }}>
+            <h3 className="text-xl font-bold mb-2 n4-text-main">言語知識（文字・語彙）</h3>
+            <p className="text-sm mb-4 leading-relaxed n4-text-sub">
               Covers 5 official question types: 漢字読み, 表記, 文脈規定, 言い換え類義, and 用法.
             </p>
-            <div
-              className="text-xs space-y-2 mb-6 p-4 rounded-xl border"
-              style={{
-                background: 'var(--n4-card-row-bg)',
-                borderColor: 'var(--n4-card-row-border)',
-                color: 'var(--n4-text-main)'
-              }}
-            >
+            <div className="text-xs space-y-2 mb-6 p-4 rounded-xl border n4-breakdown-card">
               <div className="flex items-center justify-between">
-                <span style={{ color: 'var(--n4-text-sub)' }}>• 問題1: 漢字の読み方</span>
-                <span className="font-extrabold" style={{ color: 'var(--n4-primary)' }}>9 問</span>
+                <span className="n4-text-sub">• 問題1: 漢字の読み方</span>
+                <span className="font-extrabold n4-text-primary">9 問</span>
               </div>
               <div className="flex items-center justify-between">
-                <span style={{ color: 'var(--n4-text-sub)' }}>• 問題2: 漢字の書き方 (表記)</span>
-                <span className="font-extrabold" style={{ color: 'var(--n4-primary)' }}>6 問</span>
+                <span className="n4-text-sub">• 問題2: 漢字の書き方 (表記)</span>
+                <span className="font-extrabold n4-text-primary">6 問</span>
               </div>
               <div className="flex items-center justify-between">
-                <span style={{ color: 'var(--n4-text-sub)' }}>• 問題3: 文脈規定</span>
-                <span className="font-extrabold" style={{ color: 'var(--n4-primary)' }}>9 問</span>
+                <span className="n4-text-sub">• 問題3: 文脈規定</span>
+                <span className="font-extrabold n4-text-primary">9 問</span>
               </div>
               <div className="flex items-center justify-between">
-                <span style={{ color: 'var(--n4-text-sub)' }}>• 問題4: 言い換え類義</span>
-                <span className="font-extrabold" style={{ color: 'var(--n4-primary)' }}>5 問</span>
+                <span className="n4-text-sub">• 問題4: 言い換え類義</span>
+                <span className="font-extrabold n4-text-primary">5 問</span>
               </div>
               <div className="flex items-center justify-between">
-                <span style={{ color: 'var(--n4-text-sub)' }}>• 問題5: 正しい言葉の用法</span>
-                <span className="font-extrabold" style={{ color: 'var(--n4-primary)' }}>5 問</span>
+                <span className="n4-text-sub">• 問題5: 正しい言葉の用法</span>
+                <span className="font-extrabold n4-text-primary">5 問</span>
               </div>
             </div>
           </div>
@@ -147,40 +133,26 @@ const N4PracticeSetDetailsPage = () => {
           <div>
             <div className="flex justify-between items-center mb-4">
               <span className="text-3xl">⛩️</span>
-              <span
-                className="text-xs font-bold px-3 py-1 rounded-full border"
-                style={{
-                  background: 'rgba(16, 185, 129, 0.12)',
-                  color: 'var(--n4-primary)',
-                  borderColor: 'rgba(16, 185, 129, 0.3)'
-                }}
-              >
+              <span className="text-xs font-bold px-3 py-1 rounded-full border n4-badge-target">
                 ⏱️ 35 Min Target
               </span>
             </div>
-            <h3 className="text-xl font-bold mb-2" style={{ color: 'var(--n4-text-main)' }}>文法・読解</h3>
-            <p className="text-sm mb-4 leading-relaxed" style={{ color: 'var(--n4-text-sub)' }}>
+            <h3 className="text-xl font-bold mb-2 n4-text-main">文法・読解</h3>
+            <p className="text-sm mb-4 leading-relaxed n4-text-sub">
               Covers 3 official grammar sections: 文法形式の判断, 文の組み立て ★整序, and 文章の文法 読解形式.
             </p>
-            <div
-              className="text-xs space-y-2 mb-6 p-4 rounded-xl border"
-              style={{
-                background: 'var(--n4-card-row-bg)',
-                borderColor: 'var(--n4-card-row-border)',
-                color: 'var(--n4-text-main)'
-              }}
-            >
+            <div className="text-xs space-y-2 mb-6 p-4 rounded-xl border n4-breakdown-card">
               <div className="flex items-center justify-between">
-                <span style={{ color: 'var(--n4-text-sub)' }}>• 問題1: 文法形式の判断</span>
-                <span className="font-extrabold" style={{ color: 'var(--n4-primary)' }}>15 問</span>
+                <span className="n4-text-sub">• 問題1: 文法形式の判断</span>
+                <span className="font-extrabold n4-text-primary">15 問</span>
               </div>
               <div className="flex items-center justify-between">
-                <span style={{ color: 'var(--n4-text-sub)' }}>• 問題2: 文の組み立て ★整序</span>
-                <span className="font-extrabold" style={{ color: 'var(--n4-primary)' }}>5 問</span>
+                <span className="n4-text-sub">• 問題2: 文の組み立て ★整序</span>
+                <span className="font-extrabold n4-text-primary">5 問</span>
               </div>
               <div className="flex items-center justify-between">
-                <span style={{ color: 'var(--n4-text-sub)' }}>• 問題3: 文章の文法 読解形式</span>
-                <span className="font-extrabold" style={{ color: 'var(--n4-primary)' }}>5 問</span>
+                <span className="n4-text-sub">• 問題3: 文章の文法 読解形式</span>
+                <span className="font-extrabold n4-text-primary">5 問</span>
               </div>
             </div>
           </div>
@@ -194,17 +166,11 @@ const N4PracticeSetDetailsPage = () => {
       </div>
 
       {/* Full Mock Test Option */}
-      <div
-        className="rounded-3xl p-8 text-center shadow-xl backdrop-blur-xl"
-        style={{
-          background: 'var(--n4-hero-bg)',
-          border: '1.5px solid var(--n4-box-white-border)'
-        }}
-      >
-        <h3 className="text-xl font-bold mb-2" style={{ color: 'var(--n4-text-main)' }}>
+      <div className="rounded-3xl p-8 text-center shadow-xl backdrop-blur-xl n4-full-exam-banner">
+        <h3 className="text-xl font-bold mb-2 n4-text-main">
           🏆 Full Mock Exam (完全模擬テスト)
         </h3>
-        <p className="text-sm max-w-xl mx-auto mb-6" style={{ color: 'var(--n4-text-sub)' }}>
+        <p className="text-sm max-w-xl mx-auto mb-6 n4-text-sub">
           Experience the real test environment with all {totalQ} questions back-to-back under standard JLPT timing conditions.
         </p>
         <Link

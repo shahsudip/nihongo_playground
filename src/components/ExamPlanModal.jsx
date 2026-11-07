@@ -42,7 +42,6 @@ const ExamPlanModal = ({ isOpen, onClose, book, completedCount = 0, history = {}
     return `/books/${book.id}`;
   };
 
-
   const handleStartToday = () => {
     onClose();
     navigate(getNextChapterRoute(), { state: { from: 'profile' } });
@@ -58,101 +57,46 @@ const ExamPlanModal = ({ isOpen, onClose, book, completedCount = 0, history = {}
   };
 
   return (
-    <div className="exam-plan-overlay" onClick={onClose} style={{
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
-      backgroundColor: 'rgba(15, 23, 42, 0.75)',
-      backdropFilter: 'blur(6px)',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      zIndex: 9999,
-      padding: '16px'
-    }}>
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/75 backdrop-blur-sm"
+      onClick={onClose}
+    >
       <div 
-        className="exam-plan-modal"
+        className="w-full max-w-lg bg-card text-card-foreground rounded-2xl border border-border shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
-        style={{
-          background: 'var(--color-bg-card, #1e293b)',
-          color: 'var(--color-text-primary, #f8fafc)',
-          borderRadius: '20px',
-          maxWidth: '560px',
-          width: '100%',
-          boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1)',
-          overflow: 'hidden',
-          animation: 'examModalIn 0.25s cubic-bezier(0.16, 1, 0.3, 1)'
-        }}
       >
         {/* Header */}
-        <div style={{
-          padding: '24px 24px 16px',
-          borderBottom: '1px solid var(--color-border, rgba(255, 255, 255, 0.1))',
-          display: 'flex',
-          alignItems: 'flex-start',
-          justifyContent: 'space-between',
-          gap: '16px'
-        }}>
+        <div className="p-5 sm:p-6 border-b border-border flex items-start justify-between gap-4">
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
-              <span style={{
-                background: 'linear-gradient(135deg, #10b981, #059669)',
-                color: '#fff',
-                fontSize: '0.72rem',
-                fontWeight: 800,
-                padding: '3px 8px',
-                borderRadius: '6px',
-                letterSpacing: '0.05em'
-              }}>
+            <div className="flex items-center gap-2 mb-1.5 flex-wrap">
+              <span className="text-[11px] font-extrabold px-2.5 py-0.5 rounded bg-emerald-600 text-white tracking-wider uppercase">
                 {book.level || 'JLPT'} EXAM MODE
               </span>
-              <span style={{
-                background: 'rgba(59, 130, 246, 0.15)',
-                color: '#60a5fa',
-                fontSize: '0.72rem',
-                fontWeight: 700,
-                padding: '3px 8px',
-                borderRadius: '6px'
-              }}>
+              <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-blue-500/15 text-blue-600 dark:text-blue-400 border border-blue-500/20">
                 {book.category || 'General'}
               </span>
             </div>
-            <h2 style={{ fontSize: '1.25rem', fontWeight: 800, margin: 0, lineHeight: 1.3 }}>
+            <h2 className="text-xl font-bold leading-tight">
               {book.title}
             </h2>
           </div>
           <button
             onClick={onClose}
             aria-label="Close"
-            style={{
-              background: 'rgba(255, 255, 255, 0.08)',
-              border: 'none',
-              borderRadius: '50%',
-              width: '32px',
-              height: '32px',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: 'var(--color-text-secondary, #94a3b8)',
-              fontSize: '1.1rem',
-              transition: 'all 0.15s ease'
-            }}
+            className="w-8 h-8 rounded-full flex items-center justify-center text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-100 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 transition-colors shrink-0"
           >
             ✕
           </button>
         </div>
 
         {/* Content Body */}
-        <div style={{ padding: '20px 24px', maxHeight: 'calc(85vh - 140px)', overflowY: 'auto' }}>
+        <div className="p-5 sm:p-6 max-h-[calc(85vh-140px)] overflow-y-auto space-y-5">
           {/* 1. Target Exam Selection */}
-          <div style={{ marginBottom: '20px' }}>
-            <label style={{ display: 'block', fontSize: '0.78rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--color-text-secondary, #94a3b8)', marginBottom: '8px' }}>
+          <div>
+            <label className="block text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
               🎯 Target JLPT Exam Session (Bi-Annual)
             </label>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '8px' }}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               {upcomingExams.map(exam => {
                 const isSelected = exam.id === activeExamId;
                 return (
@@ -160,26 +104,21 @@ const ExamPlanModal = ({ isOpen, onClose, book, completedCount = 0, history = {}
                     key={exam.id}
                     type="button"
                     onClick={() => setSelectedExamId(exam.id)}
-                    style={{
-                      padding: '10px 12px',
-                      borderRadius: '12px',
-                      border: isSelected ? '2px solid #10b981' : '1px solid var(--color-border, rgba(255, 255, 255, 0.1))',
-                      background: isSelected ? 'rgba(16, 185, 129, 0.15)' : 'rgba(255, 255, 255, 0.03)',
-                      color: isSelected ? '#10b981' : 'inherit',
-                      cursor: 'pointer',
-                      textAlign: 'left',
-                      transition: 'all 0.15s ease'
-                    }}
+                    className={`p-3 rounded-xl border text-left transition-colors cursor-pointer ${
+                      isSelected
+                        ? 'border-emerald-500 bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 shadow-xs'
+                        : 'border-border bg-slate-50/50 dark:bg-slate-900/40 hover:bg-slate-100 dark:hover:bg-slate-800/60'
+                    }`}
                   >
-                    <div style={{ fontWeight: 800, fontSize: '0.88rem' }}>{exam.name}</div>
-                    <div style={{ fontSize: '0.75rem', opacity: 0.8, marginTop: '2px' }}>
+                    <div className="font-extrabold text-sm">{exam.name}</div>
+                    <div className="text-xs text-muted-foreground mt-0.5">
                       {exam.formattedDate.split(',')[1] || exam.formattedDate}
                     </div>
-                    <div style={{ fontSize: '0.72rem', fontWeight: 700, marginTop: '4px', color: isSelected ? '#10b981' : '#38bdf8' }}>
+                    <div className={`text-xs font-bold mt-1.5 ${isSelected ? 'text-emerald-600 dark:text-emerald-400' : 'text-sky-600 dark:text-sky-400'}`}>
                       ⏳ {exam.daysLeft} days left
                     </div>
                     {exam.registrationWindow && (
-                      <div style={{ fontSize: '0.68rem', opacity: 0.75, marginTop: '2px' }}>
+                      <div className="text-[11px] text-muted-foreground mt-0.5">
                         📝 Reg: {exam.registrationWindow}
                       </div>
                     )}
@@ -190,143 +129,79 @@ const ExamPlanModal = ({ isOpen, onClose, book, completedCount = 0, history = {}
           </div>
 
           {/* 2. Key Metrics Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', marginBottom: '20px' }}>
-            <div style={{
-              background: 'rgba(255, 255, 255, 0.04)',
-              border: '1px solid var(--color-border, rgba(255, 255, 255, 0.08))',
-              borderRadius: '12px',
-              padding: '12px',
-              textAlign: 'center'
-            }}>
-              <div style={{ fontSize: '1.25rem', fontWeight: 800 }}>{plan.total}</div>
-              <div style={{ fontSize: '0.72rem', color: 'var(--color-text-secondary, #94a3b8)', marginTop: '2px' }}>Total Sets/Ch.</div>
+          <div className="grid grid-cols-3 gap-2.5">
+            <div className="p-3 rounded-xl border border-border bg-slate-50/50 dark:bg-slate-900/40 text-center">
+              <div className="text-xl font-black">{plan.total}</div>
+              <div className="text-[11px] text-muted-foreground mt-0.5 font-medium">Total Sets/Ch.</div>
             </div>
-            <div style={{
-              background: 'rgba(16, 185, 129, 0.08)',
-              border: '1px solid rgba(16, 185, 129, 0.2)',
-              borderRadius: '12px',
-              padding: '12px',
-              textAlign: 'center'
-            }}>
-              <div style={{ fontSize: '1.25rem', fontWeight: 800, color: '#10b981' }}>{plan.completed}</div>
-              <div style={{ fontSize: '0.72rem', color: '#10b981', marginTop: '2px' }}>Completed ({plan.percent}%)</div>
+            <div className="p-3 rounded-xl border border-emerald-500/25 bg-emerald-500/10 text-center">
+              <div className="text-xl font-black text-emerald-600 dark:text-emerald-400">{plan.completed}</div>
+              <div className="text-[11px] text-emerald-600 dark:text-emerald-400 mt-0.5 font-medium">Completed ({plan.percent}%)</div>
             </div>
-            <div style={{
-              background: 'rgba(245, 158, 11, 0.08)',
-              border: '1px solid rgba(245, 158, 11, 0.2)',
-              borderRadius: '12px',
-              padding: '12px',
-              textAlign: 'center'
-            }}>
-              <div style={{ fontSize: '1.25rem', fontWeight: 800, color: '#f59e0b' }}>{plan.remaining}</div>
-              <div style={{ fontSize: '0.72rem', color: '#f59e0b', marginTop: '2px' }}>Remaining</div>
+            <div className="p-3 rounded-xl border border-amber-500/25 bg-amber-500/10 text-center">
+              <div className="text-xl font-black text-amber-600 dark:text-amber-400">{plan.remaining}</div>
+              <div className="text-[11px] text-amber-600 dark:text-amber-400 mt-0.5 font-medium">Remaining</div>
             </div>
           </div>
 
           {/* 3. Daily Quota Goal Highlight Card */}
-          <div style={{
-            background: 'linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(59, 130, 246, 0.12) 100%)',
-            border: '1px solid rgba(16, 185, 129, 0.3)',
-            borderRadius: '14px',
-            padding: '16px 20px',
-            marginBottom: '20px'
-          }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
-              <span style={{ fontSize: '0.78rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.05em', color: '#10b981' }}>
+          <div className="p-4 sm:p-5 rounded-2xl border border-emerald-500/30 bg-emerald-500/10 dark:bg-emerald-950/25">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-xs font-black uppercase tracking-wider text-emerald-700 dark:text-emerald-400">
                 ⚡ Daily Target Requirement
               </span>
-              <span style={{
-                fontSize: '0.72rem',
-                fontWeight: 700,
-                padding: '2px 8px',
-                borderRadius: '6px',
-                backgroundColor: 'rgba(0, 0, 0, 0.25)',
-                color: plan.paceColor
-              }}>
+              <span
+                className="text-[11px] font-bold px-2 py-0.5 rounded bg-black/10 dark:bg-black/30"
+                style={{ color: plan.paceColor }}
+              >
                 {plan.paceLabel}
               </span>
             </div>
 
             {plan.remaining === 0 ? (
-              <div style={{ fontSize: '1rem', fontWeight: 700, color: '#10b981' }}>
+              <div className="text-base font-bold text-emerald-600 dark:text-emerald-400">
                 🎉 You have completed all content in this book! Ready for exam day.
               </div>
             ) : (
               <div>
-                <div style={{ fontSize: '1.35rem', fontWeight: 900, color: '#fff', marginBottom: '4px' }}>
-                  🎯 Finish <span style={{ color: '#10b981' }}>{plan.dailyQuota} {plan.dailyQuota === 1 ? 'Set / Chapter' : 'Sets / Chapters'}</span> daily
+                <div className="text-lg sm:text-xl font-black text-slate-900 dark:text-white mb-1">
+                  🎯 Finish <span className="text-emerald-600 dark:text-emerald-400">{plan.dailyQuota} {plan.dailyQuota === 1 ? 'Set / Chapter' : 'Sets / Chapters'}</span> daily
                 </div>
-                <p style={{ fontSize: '0.8rem', margin: 0, color: 'var(--color-text-secondary, #94a3b8)', lineHeight: 1.4 }}>
-                  At this pace ({plan.weeklyQuota} per week), you will comfortably complete all {plan.total} items before <strong style={{ color: '#fff' }}>{plan.selectedExam.formattedDate}</strong> ({plan.daysLeft} days remaining).
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  At this pace ({plan.weeklyQuota} per week), you will comfortably complete all {plan.total} items before <strong className="text-slate-900 dark:text-slate-100">{plan.selectedExam.formattedDate}</strong> ({plan.daysLeft} days remaining).
                 </p>
               </div>
             )}
           </div>
 
           {/* Progress Bar */}
-          <div style={{ marginBottom: '20px' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', marginBottom: '6px' }}>
-              <span style={{ color: 'var(--color-text-secondary, #94a3b8)' }}>Exam Readiness Progress</span>
-              <span style={{ fontWeight: 800, color: '#10b981' }}>{plan.percent}%</span>
+          <div>
+            <div className="flex justify-between text-xs mb-1.5 font-medium">
+              <span className="text-muted-foreground">Exam Readiness Progress</span>
+              <span className="font-extrabold text-emerald-600 dark:text-emerald-400">{plan.percent}%</span>
             </div>
-            <div style={{ height: '8px', background: 'rgba(255, 255, 255, 0.08)', borderRadius: '4px', overflow: 'hidden' }}>
-              <div style={{
-                height: '100%',
-                width: `${plan.percent}%`,
-                background: 'linear-gradient(90deg, #10b981, #3b82f6)',
-                borderRadius: '4px',
-                transition: 'width 0.4s ease'
-              }}></div>
+            <div className="h-2.5 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+              <div
+                className="h-full bg-emerald-500 rounded-full transition-[width] duration-300 ease-out"
+                style={{ width: `${plan.percent}%` }}
+              />
             </div>
           </div>
         </div>
 
         {/* Footer Actions */}
-        <div style={{
-          padding: '16px 24px',
-          borderTop: '1px solid var(--color-border, rgba(255, 255, 255, 0.1))',
-          display: 'flex',
-          gap: '10px',
-          background: 'rgba(0, 0, 0, 0.15)'
-        }}>
+        <div className="p-4 sm:px-6 border-t border-border flex gap-3 bg-slate-50/60 dark:bg-slate-900/60">
           <button
             type="button"
             onClick={handleViewAllChapters}
-            style={{
-              flex: 1,
-              padding: '10px 16px',
-              borderRadius: '10px',
-              border: '1px solid var(--color-border, rgba(255, 255, 255, 0.15))',
-              background: 'transparent',
-              color: 'inherit',
-              fontWeight: 700,
-              fontSize: '0.85rem',
-              cursor: 'pointer',
-              transition: 'all 0.15s ease'
-            }}
+            className="flex-1 py-2.5 px-4 rounded-xl border border-border bg-card text-card-foreground hover:bg-accent font-bold text-sm transition-colors cursor-pointer"
           >
             📚 View All
           </button>
           <button
             type="button"
             onClick={handleStartToday}
-            style={{
-              flex: 2,
-              padding: '10px 18px',
-              borderRadius: '10px',
-              border: 'none',
-              background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
-              color: '#fff',
-              fontWeight: 800,
-              fontSize: '0.88rem',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '6px',
-              boxShadow: '0 4px 14px rgba(16, 185, 129, 0.4)',
-              transition: 'all 0.15s ease'
-            }}
+            className="flex-[2] py-2.5 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm flex items-center justify-center gap-1.5 shadow-md shadow-emerald-500/20 transition-all cursor-pointer"
           >
             🚀 Start Today's Plan &rarr;
           </button>
