@@ -100,148 +100,188 @@ const loadCachedAttemptHistory = (currentUser = null) => {
       const storageKey = localStorage.key(index);
       if (!storageKey) continue;
 
-      const bookMatch = bookPrefixes.find(({ prefix }) => storageKey.startsWith(prefix));
-      if (bookMatch) {
-        const attemptId = storageKey.slice(bookMatch.prefix.length);
-        const cachedRecord = JSON.parse(localStorage.getItem(storageKey) || 'null');
-        addHistoryRecord(historyMap, `${bookMatch.bookId}-${attemptId}`, cachedRecord);
-        continue;
-      }
+      bookPrefixes.forEach(({ prefix, bookId }) => {
+        if (!storageKey.startsWith(prefix)) return;
+        const chapterId = storageKey.slice(prefix.length);
+        if (!chapterId) return;
 
-      const practicePrefix = practicePrefixes.find(prefix => storageKey.startsWith(prefix));
-      if (practicePrefix) {
-        const attemptId = storageKey.slice(practicePrefix.length);
-        const match = attemptId.match(/^(set-\d+)_(.+)$/);
-        if (!match) continue;
-        const [, setId, sectionId] = match;
-        const suffix = sectionId === 'full' ? '' : `-${sectionId}`;
-        const cachedRecord = JSON.parse(localStorage.getItem(storageKey) || 'null');
-        addHistoryRecord(historyMap, `${N3_PRACTICE_BOOK_ID}-${setId}${suffix}`, cachedRecord);
-      }
-    }
-
-    const nihongoNoMoriScoreKeys = [
-      'nihongo_no_mori_n3_scores_guest',
-      ...(currentUser ? [`nihongo_no_mori_n3_scores_${currentUser.uid}`] : []),
-    ];
-    nihongoNoMoriScoreKeys.forEach(storageKey => {
-      const savedScores = JSON.parse(localStorage.getItem(storageKey) || 'null');
-      Object.entries(savedScores || {}).forEach(([sectionId, record]) => {
-        addHistoryRecord(
-          historyMap,
-          `${NIHONGO_NO_MORI_BOOK_ID}-${sectionId}`,
-          record
-        );
+        try {
+          const parsed = JSON.parse(localStorage.getItem(storageKey));
+          addHistoryRecord(historyMap, `${bookId}-${chapterId}`, parsed);
+        } catch {
+          // ignore corrupted local entries
+        }
       });
-    });
-  } catch (error) {
-    console.warn('Could not read cached book attempts:', error.message);
+
+      practicePrefixes.forEach(prefix => {
+        if (!storageKey.startsWith(prefix)) return;
+        const remainingKey = storageKey.slice(prefix.length);
+        if (!remainingKey) return;
+
+        const separatorIndex = remainingKey.indexOf('_');
+        if (separatorIndex === -1) return;
+
+        const setId = remainingKey.slice(0, separatorIndex);
+        const sectionId = remainingKey.slice(separatorIndex + 1);
+        if (!setId || !sectionId) return;
+
+        try {
+          const parsed = JSON.parse(localStorage.getItem(storageKey));
+          addHistoryRecord(historyMap, `${setId}-${sectionId}`, parsed);
+        } catch {
+          // ignore corrupted local entries
+        }
+      });
+    }
+  } catch (storageError) {
+    console.warn('Could not inspect cached attempt history:', storageError.message);
   }
 
   return historyMap;
 };
 
+const loadLocalHistory = (currentUser = null) => {
+  const userKey = currentUser ? `userHistory_${currentUser.uid}` : null;
+  const guestKey = 'userHistory_guest';
+
+  const userSaved = userKey ? localStorage.getItem(userKey) : null;
+  const guestSaved = localStorage.getItem(guestKey);
+
+  const baseMap = userSaved
+    ? JSON.parse(userSaved)
+    : (guestSaved ? JSON.parse(guestSaved) : {});
+
+  return mergeHistoryMaps(baseMap, loadCachedAttemptHistory(currentUser));
+};
+
 const getNihongoNoMoriProgress = (history) => {
-  const sectionPrefix = `${NIHONGO_NO_MORI_BOOK_ID}-`;
-  const sectionRecords = new Map();
-
-  Object.entries(history).forEach(([quizId, record]) => {
-    if (!quizId.startsWith(sectionPrefix)) return;
-    const sectionId = quizId.slice(sectionPrefix.length);
-    sectionRecords.set(
-      sectionId,
-      selectPreferredAttempt(sectionRecords.get(sectionId), record)
-    );
-  });
-
-  let answeredQuestions = 0;
   let completedSections = 0;
-  sectionRecords.forEach(record => {
-    const total = Math.max(Number(record?.total || 0), 0);
-    const answered = Math.min(getAnsweredCount(record), total);
-    answeredQuestions += answered;
-    completedSections += Number(total > 0 && answered >= total);
-  });
+  let totalScore = 0;
+  let totalPossible = 0;
+
+  for (let chapterIndex = 1; chapterIndex <= 5; chapterIndex += 1) {
+    const chapterId = `chapter-${chapterIndex}`;
+    const chapterPrefix = `nihongo-no-mori-n3-${chapterId}-section-`;
+
+    Object.entries(history).forEach(([quizId, record]) => {
+      if (!quizId.startsWith(chapterPrefix)) return;
+      const answered = getAnsweredCount(record);
+      const targetQuestions = record?.total || 0;
+      if ((targetQuestions > 0 && answered >= targetQuestions) || record?.status === 'mastered') {
+        completedSections += 1;
+      }
+      totalScore += record?.score || 0;
+      totalPossible += targetQuestions;
+    });
+  }
+
+  const percent = NIHONGO_NO_MORI_SECTION_COUNT > 0
+    ? Math.min(100, Math.round((completedSections / NIHONGO_NO_MORI_SECTION_COUNT) * 100))
+    : 0;
 
   return {
     completed: completedSections,
     total: NIHONGO_NO_MORI_SECTION_COUNT,
-    percent: Math.round((Math.min(answeredQuestions, NIHONGO_NO_MORI_TOTAL_QUESTIONS) / NIHONGO_NO_MORI_TOTAL_QUESTIONS) * 100),
-    label: 'Progress',
+    percent,
+    score: totalScore,
+    possible: totalPossible,
+    label: `${completedSections}/${NIHONGO_NO_MORI_SECTION_COUNT} Sec`,
+    totalQuestions: NIHONGO_NO_MORI_TOTAL_QUESTIONS,
   };
-};
-
-const loadLocalHistory = (currentUser = null) => {
-  const historyMap = {};
-  Object.entries(readN2Attempts(n2StorageKeyFor(currentUser?.uid))).forEach(([quizId, record]) => {
-    addHistoryRecord(historyMap, quizId, record);
-  });
-  try {
-    const storedHistory = JSON.parse(localStorage.getItem('quizHistory') || '[]');
-    const records = Array.isArray(storedHistory) ? storedHistory : Object.values(storedHistory || {});
-    records.forEach(record => {
-      const quizId = record?.quizId || record?.id;
-      addHistoryRecord(historyMap, quizId, record);
-    });
-  } catch (error) {
-    console.warn('Could not read local book progress:', error.message);
-  }
-
-  return mergeHistoryMaps(historyMap, loadCachedAttemptHistory(currentUser));
 };
 
 const getQuestionBasedProgress = (book, history) => {
   const config = QUESTION_PROGRESS_BOOKS[book.id];
-  const unitCount = book.totalChapters || config.unitCount;
-  const totalQuestions = book.totalQuestions || config.totalQuestions;
-  const questionsPerUnit = totalQuestions / unitCount;
-  let answeredQuestions = 0;
-  let completedUnits = 0;
+  if (!config) return { completed: 0, total: 0, percent: 0 };
 
-  for (let unitNumber = 1; unitNumber <= unitCount; unitNumber += 1) {
-    const unitKey = `${book.id}-${config.getUnitId(unitNumber)}`;
-    const unitAnswered = getCombinedAttemptCount(
-      history[unitKey],
-      config.getSectionRecords(history, unitKey),
-      questionsPerUnit
-    );
+  if (book.id === N2_PRACTICE_BOOK_ID) {
+    const attempts = readN2Attempts();
+    let completedSets = 0;
+    let totalScore = 0;
+    let totalPossible = 0;
 
-    answeredQuestions += unitAnswered;
-    completedUnits += Number(unitAnswered >= questionsPerUnit);
+    for (let setNumber = 1; setNumber <= config.unitCount; setNumber += 1) {
+      const vocabRecord = attempts[n2StorageKeyFor(setNumber, 'vocabulary-kanji')];
+      const grammarRecord = attempts[n2StorageKeyFor(setNumber, 'grammar')];
+
+      const vocabDone = vocabRecord?.score !== undefined;
+      const grammarDone = grammarRecord?.score !== undefined;
+
+      if (vocabDone && grammarDone) {
+        completedSets += 1;
+      }
+
+      totalScore += (vocabRecord?.score || 0) + (grammarRecord?.score || 0);
+      totalPossible += (vocabRecord?.total || 0) + (grammarRecord?.total || 0);
+    }
+
+    const percent = config.totalQuestions > 0
+      ? Math.min(100, Math.round((totalPossible > 0 ? (totalScore / totalPossible) * 100 : 0)))
+      : 0;
+
+    return {
+      completed: completedSets,
+      total: config.unitCount,
+      percent,
+      label: `${completedSets}/${config.unitCount} Sets`,
+      totalQuestions: config.totalQuestions,
+    };
   }
 
+  let answeredQuestions = 0;
+  let masteredUnits = 0;
+
+  for (let unitNumber = 1; unitNumber <= config.unitCount; unitNumber += 1) {
+    const unitId = config.getUnitId(unitNumber);
+    const unitKey = `${book.id}-${unitId}`;
+    const sectionRecords = config.getSectionRecords(history, unitKey);
+
+    const unitAnswered = sectionRecords.reduce((total, record) => (
+      total + getAnsweredCount(record)
+    ), 0);
+    const unitAttempts = sectionRecords.reduce((total, record) => (
+      total + getCombinedAttemptCount(record)
+    ), 0);
+
+    answeredQuestions += unitAnswered;
+    if (unitAttempts > 0 || unitAnswered > 0) {
+      masteredUnits += 1;
+    }
+  }
+
+  const boundedAnswered = Math.min(config.totalQuestions, answeredQuestions);
+  const percent = config.totalQuestions > 0
+    ? Math.min(100, Math.round((boundedAnswered / config.totalQuestions) * 100))
+    : 0;
+
   return {
-    completed: completedUnits,
-    total: unitCount,
-    percent: totalQuestions > 0 ? Math.round((answeredQuestions / totalQuestions) * 100) : 0,
-    label: 'Progress',
+    completed: boundedAnswered,
+    total: config.totalQuestions,
+    percent,
+    label: `${boundedAnswered}/${config.totalQuestions} Qs`,
+    masteredUnits,
+    unitCount: config.unitCount,
   };
 };
 
 const BookListPage = () => {
   const { currentUser } = useAuth();
-  const books = STATIC_BOOKS;
-  const [history, setHistory] = useState(() => loadLocalHistory());
-  const loading = false;
-  const error = null;
-
+  const [books] = useState(STATIC_BOOKS);
+  const [loading] = useState(false);
+  const [error] = useState(null);
+  const [history, setHistory] = useState(() => loadLocalHistory(currentUser));
   const [activeLevel, setActiveLevel] = useState('All');
 
-
-  // Cover gradient mapping based on book level/index to look premium
   const gradients = [
-    'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)', // Deep Blue
-    'linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)', // Slate Gray
-    'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)', // Teal/Green
-    'linear-gradient(135deg, #3a1c71 0%, #d76d77 50%, #ffaf7b 100%)', // Purple/Sunset
-    'linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%)', // Red/Orange
-    'linear-gradient(135deg, #b8860b 0%, #c0392b 50%, #8b0000 100%)', // Gold/Crimson (N1)
+    'linear-gradient(135deg, #059669 0%, #10b981 100%)',
+    'linear-gradient(135deg, #0d9488 0%, #14b8a6 100%)',
+    'linear-gradient(135deg, #0284c7 0%, #38bdf8 100%)',
+    'linear-gradient(135deg, #4f46e5 0%, #818cf8 100%)',
   ];
 
   useEffect(() => {
     setHistory(loadLocalHistory(currentUser));
 
-    // 1. Fetch user history in background asynchronously without blocking UI
     if (currentUser) {
       const historyColRef = collection(db, 'users', currentUser.uid, 'quizHistory');
       getDocs(historyColRef)
@@ -272,8 +312,6 @@ const BookListPage = () => {
     }
   }, [currentUser]);
 
-
-
   const getBookProgress = (book) => {
     if (book.id === NIHONGO_NO_MORI_BOOK_ID) {
       return getNihongoNoMoriProgress(history);
@@ -285,7 +323,6 @@ const BookListPage = () => {
 
     let completedCount = 0;
     
-    // Count directly from the user history hash map
     Object.keys(history).forEach(key => {
       if (key.startsWith(`${book.id}-`)) {
         const item = history[key];
@@ -295,7 +332,6 @@ const BookListPage = () => {
       }
     });
 
-    // Also check local storage for unauthenticated / cached progress
     if (!currentUser) {
       const guestPrefix = `book_quiz_guest_${book.id}_`;
       try {
@@ -385,20 +421,20 @@ const BookListPage = () => {
   });
 
   return (
-    <div className="books-list-container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-      <div className="books-header text-center mb-10">
-        <div className="inline-block px-3.5 py-1 rounded-full bg-emerald-500/10 dark:bg-purple-500/10 border border-emerald-500/30 dark:border-purple-500/30 text-emerald-700 dark:text-purple-300 text-xs font-black uppercase mb-3 shadow-xs">
+    <div className="books-list-container max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-12 py-6 sm:py-8 md:py-12">
+      <div className="books-header text-center mb-8 sm:mb-10">
+        <div className="inline-block px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-800 dark:text-emerald-300 text-xs font-semibold mb-3">
           Authentic Book Collections & Practice Sets
         </div>
-        <h1 className="books-title text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 dark:text-white tracking-tight mb-3">
+        <h1 className="books-title text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tight mb-3">
           Japanese Book Collections
         </h1>
-        <p className="books-subtitle text-sm sm:text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto font-medium">
+        <p className="books-subtitle text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto font-normal">
           Chapter-based reading, listening, and grammar quizzes curated from standard textbooks, official-style mock sets, and drill series.
         </p>
       </div>
 
-      <div className="filter-pills-container flex justify-center items-center gap-2 flex-wrap mb-10">
+      <div className="filter-pills-container flex justify-center items-center gap-2 flex-wrap mb-8 sm:mb-10">
         {['All', 'N1', 'N2', 'N3', 'N4-N5'].map(level => (
           <button
             key={level}
@@ -412,7 +448,7 @@ const BookListPage = () => {
 
       {error && <div className="error-message">{error}</div>}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 sm:gap-7 2xl:gap-8">
         {filteredBooks.map((book, index) => {
           const progress = getBookProgress(book);
           const coverImg = getBookCover(book);
@@ -422,9 +458,9 @@ const BookListPage = () => {
           return (
             <div
               key={book.id}
-              className="group relative rounded-3xl overflow-hidden border border-gray-200/80 dark:border-white/10 bg-slate-900 shadow-lg hover:shadow-2xl hover:border-emerald-500/60 dark:hover:border-purple-500/50 transition-all duration-500 flex flex-col justify-between min-h-[460px] aspect-[3/4.2]"
+              className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-border bg-slate-900 shadow-md hover:shadow-xl hover:border-emerald-500/50 transition-all duration-300 flex flex-col justify-between min-h-[420px] sm:min-h-[460px] aspect-[3/4.2]"
             >
-              {/* 1. Full Image in Background (Extended & Visible) */}
+              {/* 1. Full Image in Background */}
               <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
                 {coverImg ? (
                   <img
@@ -432,56 +468,57 @@ const BookListPage = () => {
                     alt={displayName}
                     loading="lazy"
                     decoding="async"
-                    className="w-full h-full object-cover object-top filter brightness-[0.95] contrast-[1.05] transform group-hover:scale-105 group-hover:brightness-100 transition-all duration-700 ease-out"
+                    className="w-full h-full object-cover object-top filter brightness-[0.95] contrast-[1.05] transition-all duration-500 ease-out"
                   />
                 ) : (
                   <div className="w-full h-full" style={{ background: gradient }} />
                 )}
 
-                {/* Scrim: bottom ~35% dark for readability, top ~65% fully visible */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/85 via-35% to-transparent transition-colors duration-500" />
+                {/* Scrim: bottom ~40% dark for readability, top ~60% fully visible */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 via-40% to-transparent" />
               </div>
 
-              {/* 2. Top Bar: Level Badge at Top Right (Capsule Pill) with Mode-Adaptive Colors */}
+              {/* 2. Top Bar: Level Badge at Top Right */}
               <div className="relative z-10 p-4 sm:p-5 flex items-center justify-end">
-                <span className="px-3.5 py-0.5 rounded-full text-xs font-black uppercase tracking-wider leading-relaxed shadow-md backdrop-blur-md transition-all duration-300 bg-white/95 text-emerald-800 border-2 border-emerald-500/80 dark:bg-purple-950/95 dark:text-purple-200 dark:border-purple-400 dark:shadow-[0_0_12px_rgba(168,85,247,0.35)] group-hover:scale-105">
+                <span className="px-3 py-0.5 rounded-full text-xs font-bold bg-slate-900/90 text-emerald-400 border border-emerald-500/30 backdrop-blur-md shadow-xs">
                   {book.level}
                 </span>
               </div>
 
-              {/* 3. Bottom Card Content (Brought to front) */}
+              {/* 3. Bottom Card Content */}
               <div className="relative z-10 p-5 sm:p-6 flex flex-col justify-end">
-                {/* Book Name from cover: turns green in light mode, purple in dark mode on hover */}
-                <h2 className="text-xl sm:text-2xl font-black text-white leading-snug mb-3.5 drop-shadow-md group-hover:text-emerald-400 dark:group-hover:text-purple-300 transition-colors duration-300 line-clamp-2">
+                <h2 className="text-xl sm:text-2xl font-bold text-white leading-snug mb-3 drop-shadow-md group-hover:text-emerald-400 transition-colors line-clamp-2">
                   {displayName}
                 </h2>
 
-                {/* Simple % Progress Bar: Completed label with increased boldness and size, turns green/purple on hover */}
+                {/* Progress Bar */}
                 <div className="mb-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm sm:text-base font-black text-gray-200 group-hover:text-emerald-300 dark:group-hover:text-purple-300 transition-colors duration-300 tracking-wide">
+                  <div className="flex items-center justify-between mb-1.5">
+                    <span className="text-sm font-semibold text-slate-200">
                       {progress.label || 'Completed'}
                     </span>
-                    <span className="font-mono text-base sm:text-lg font-black text-emerald-400 dark:text-purple-400 group-hover:text-emerald-300 dark:group-hover:text-purple-300 group-hover:scale-105 transition-all duration-300">
+                    <span className="font-mono text-sm font-bold text-emerald-400">
                       {progress.percent}%
                     </span>
                   </div>
-                  <div className="w-full h-2.5 rounded-full bg-black/60 overflow-hidden p-[1px] border border-white/15 group-hover:border-emerald-500/50 dark:group-hover:border-purple-500/50 backdrop-blur-xs transition-colors duration-300">
+                  <div className="w-full h-2 rounded-full bg-slate-950/80 overflow-hidden border border-white/10">
                     <div
-                      className="h-full rounded-full bg-gradient-to-r from-emerald-500 via-teal-400 to-emerald-300 dark:from-purple-500 dark:via-indigo-400 dark:to-purple-300 group-hover:from-emerald-400 group-hover:via-emerald-300 group-hover:to-teal-200 dark:group-hover:from-purple-400 dark:group-hover:via-fuchsia-400 dark:group-hover:to-indigo-300 group-hover:shadow-[0_0_12px_rgba(52,211,153,0.7)] dark:group-hover:shadow-[0_0_12px_rgba(192,132,252,0.7)] transition-all duration-500"
+                      className="h-full rounded-full bg-emerald-500 transition-all duration-300"
                       style={{ width: `${progress.percent}%` }}
                     />
                   </div>
                 </div>
 
-                {/* Action Button (Brought directly to front: Emerald/Teal in light mode, Purple/Indigo gradient in dark mode) */}
+                {/* Action Button */}
                 <Link
                   to={book.customRoute || `/books/${book.id}`}
                   state={{ from: 'books' }}
-                  className="w-full py-3.5 px-5 rounded-2xl font-black text-sm text-white flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-purple-600 dark:to-indigo-600 hover:from-emerald-500 hover:to-teal-500 dark:hover:from-purple-500 dark:hover:to-indigo-500 active:scale-[0.98] shadow-lg shadow-emerald-950/50 dark:shadow-purple-950/50 hover:shadow-emerald-500/30 dark:hover:shadow-purple-500/30 transition-all duration-200 cursor-pointer group/btn"
+                  className="w-full py-3 px-5 rounded-xl font-bold text-sm text-white flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 shadow-md shadow-emerald-950/40 transition-colors cursor-pointer group/btn"
                 >
                   <span>{progress.percent > 0 ? 'Continue' : 'Start Reading'}</span>
-                  <span className="transform group-hover/btn:translate-x-1.5 transition-transform duration-200 font-bold">→</span>
+                  <svg className="w-4 h-4 shrink-0 transform group-hover/btn:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
                 </Link>
               </div>
             </div>

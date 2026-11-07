@@ -16,28 +16,28 @@ const categories = [
     id: 'kanji-list',
     title: 'Kanji List',
     japaneseTitle: '漢字リスト',
-    icon: '🈯',
+    kanjiChar: '漢',
     desc: 'Master Kanji characters, stroke orders, Onyomi, Kunyomi, and common compound words.',
   },
   {
     id: 'vocabulary-list',
     title: 'Vocabulary List',
     japaneseTitle: '語彙リスト',
-    icon: '📖',
+    kanjiChar: '語',
     desc: 'Expand your vocabulary with high-frequency JLPT word banks, definitions, and audio.',
   },
   {
     id: 'grammar-list',
     title: 'Grammar List',
     japaneseTitle: '文法リスト',
-    icon: '📜',
+    kanjiChar: '文',
     desc: 'Study sentence structures, formation rules, connection points, and example sentences.',
   },
   {
     id: 'practice-tests',
     title: 'Practice Tests',
     japaneseTitle: '模擬試験リスト',
-    icon: '📝',
+    kanjiChar: '試',
     desc: 'Full JLPT mock exams with Vocabulary, Grammar, Reading passages, and Listening audio.',
     badge: '5 Full Tests',
   },
@@ -45,7 +45,7 @@ const categories = [
     id: 'past-questions',
     title: 'Past Exam Papers',
     japaneseTitle: '過去問テスト',
-    icon: '🏛️',
+    kanjiChar: '歴',
     desc: 'Official real exam sessions organized by year with authentic 180-pt scaled scoring.',
     badge: 'Real Exams',
   },
@@ -65,48 +65,54 @@ const LevelSelectionPage = () => {
       <div className="flex items-center justify-between gap-2 mb-6 flex-wrap">
         <button 
           onClick={() => navigate('/levels')} 
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-gray-600 dark:text-gray-400 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-black/5 dark:hover:bg-white/5 transition-all cursor-pointer"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
         >
-          <span>←</span>
+          <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+          </svg>
           <span>Back to All Levels</span>
         </button>
 
         <Link
           to={`/check-level?level=${currentLvlUpper}`}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-xs font-black shadow-md hover:opacity-95 transition-all"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold shadow-xs transition-colors"
         >
-          <span>🎲</span>
-          <span>Check Your {currentLvlUpper} Level (20 Random Qs) →</span>
+          <span>Check {currentLvlUpper} Level (20 Questions)</span>
+          <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
         </Link>
       </div>
 
       <div className="text-center mb-10">
-        <div className="inline-block px-3.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200/60 dark:border-emerald-800/40 text-emerald-700 dark:text-emerald-300 text-xs font-black uppercase mb-3">
+        <div className="inline-block px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-800 dark:text-emerald-300 text-xs font-semibold mb-3">
           JLPT {currentLvlUpper} Study Tracks
         </div>
-        <h1 className="text-3xl md:text-5xl font-black text-gray-900 dark:text-white tracking-tight">
+        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tight">
           {currentLvlUpper} {currentLvlInfo?.subtitle ? `— ${currentLvlInfo.subtitle}` : ''}
         </h1>
-        <p className="text-sm text-gray-700 dark:text-gray-300 mt-2 max-w-xl mx-auto font-medium">
+        <p className="text-sm text-slate-600 dark:text-slate-300 mt-2 max-w-xl mx-auto font-normal">
           {currentLvlInfo?.desc || 'Select a section to begin your focused study session.'}
         </p>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 stagger-children">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
         {categories.map((cat) => (
           <Link
             key={cat.id}
             to={`/levels/${level}/${cat.id}`}
             className="block group"
           >
-            <div className="h-full bg-white dark:bg-zinc-900 border border-gray-200/80 dark:border-white/10 rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-xl hover:border-emerald-500/60 dark:hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between group-hover:-translate-y-1">
+            <div className="h-full bg-card border border-border rounded-2xl p-6 shadow-xs hover:border-emerald-500/50 transition-colors flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between mb-5">
-                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl shadow-sm bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-zinc-800 dark:to-zinc-800/60 border border-emerald-200/50 dark:border-white/5">
-                    {cat.icon}
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-emerald-500/10 border border-emerald-500/20">
+                    <span className="font-serif font-bold text-xl text-emerald-700 dark:text-emerald-400">
+                      {cat.kanjiChar}
+                    </span>
                   </div>
                   {cat.badge && (
-                    <span className="px-2.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/40 text-[11px] font-black">
+                    <span className="px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-800 dark:text-emerald-300 text-[11px] font-semibold">
                       {cat.badge}
                     </span>
                   )}
@@ -114,17 +120,19 @@ const LevelSelectionPage = () => {
                 <div className="text-xs font-bold text-emerald-700 dark:text-emerald-400 mb-1">
                   {cat.japaneseTitle}
                 </div>
-                <h2 className="text-xl font-black text-gray-900 dark:text-white group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors mb-2">
+                <h2 className="text-lg font-bold text-card-foreground group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors mb-2">
                   {cat.title}
                 </h2>
-                <p className="text-xs text-gray-600 dark:text-gray-300 leading-relaxed font-medium mb-6">
+                <p className="text-xs text-muted-foreground leading-relaxed font-normal mb-6">
                   {cat.desc}
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-gray-100 dark:border-white/5 flex items-center justify-between text-xs font-black text-emerald-600 dark:text-emerald-400">
+              <div className="pt-4 border-t border-border flex items-center justify-between text-xs font-bold text-emerald-600 dark:text-emerald-400">
                 <span>Start Learning</span>
-                <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                <svg className="w-3.5 h-3.5 shrink-0 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
               </div>
             </div>
           </Link>
@@ -135,68 +143,73 @@ const LevelSelectionPage = () => {
 
   // View 1: Select Level (N5, N4, N3, N2, N1)
   const renderLevelSelection = () => (
-    <div className="w-full max-w-5xl mx-auto px-4 pt-2 pb-6 animate-fade-in">
-      <div className="text-center mb-5 md:mb-6">
-        <div className="inline-block px-3.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200/60 dark:border-emerald-800/40 text-emerald-700 dark:text-emerald-300 text-xs font-black uppercase mb-2">
+    <div className="w-full max-w-5xl mx-auto px-4 pt-4 pb-8 animate-fade-in">
+      <div className="text-center mb-6">
+        <div className="inline-block px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-800 dark:text-emerald-300 text-xs font-semibold mb-2">
           JLPT Mastery Roadmap
         </div>
-        <h1 className="text-3xl md:text-5xl font-black text-gray-900 dark:text-white tracking-tight">
+        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white tracking-tight">
           Select a JLPT Level
         </h1>
-        <p className="text-sm text-gray-700 dark:text-gray-300 mt-1.5 max-w-lg mx-auto font-medium">
+        <p className="text-sm text-slate-600 dark:text-slate-300 mt-1.5 max-w-lg mx-auto font-normal">
           Choose your target level to explore Kanji, Vocabulary, and Grammar lists.
         </p>
       </div>
 
       {/* Omni-Source Check Your Level Call-to-Action Banner */}
-      <div className="mb-6 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 rounded-3xl p-5 sm:p-6 text-white shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="mb-6 bg-card border border-emerald-500/30 rounded-2xl p-5 sm:p-6 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="text-center sm:text-left">
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/20 text-[11px] font-black uppercase mb-1.5">
-            <span>🎲 New Feature • 20 Random Questions</span>
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-800 dark:text-emerald-300 text-xs font-semibold mb-1.5">
+            <span>Adaptive 20-Question Diagnostic</span>
           </div>
-          <h2 className="text-xl sm:text-2xl font-black">
+          <h2 className="text-xl sm:text-2xl font-bold text-card-foreground">
             Check Your Level (実力レベル診断)
           </h2>
-          <p className="text-xs sm:text-sm text-white/90 mt-1 max-w-xl font-medium">
+          <p className="text-xs sm:text-sm text-muted-foreground mt-1 max-w-xl font-normal">
             Every test randomly pulls 4 Kanji, 4 Vocab, 6 Grammar, 4 Reading, and 2 Listening Audio questions from all books, past exams, and static lists.
           </p>
         </div>
         <Link
           to="/check-level"
-          className="shrink-0 px-5 py-3 rounded-2xl bg-white text-emerald-700 font-black text-xs sm:text-sm shadow-md hover:scale-105 transition-transform"
+          className="shrink-0 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm shadow-xs transition-colors flex items-center gap-2"
         >
-          Start Level Check →
+          <span>Start Level Check</span>
+          <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
         </Link>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {levels.map((lvl) => {
           const info = levelMeta[lvl];
           return (
             <Link key={lvl} to={`/levels/${lvl}`} className="block group">
-              <div className="h-full bg-white dark:bg-zinc-900 border border-gray-200/80 dark:border-white/10 rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-xl hover:border-emerald-500/60 dark:hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between group-hover:-translate-y-1">
+              <div className="h-full bg-card border border-border rounded-2xl p-6 shadow-xs hover:border-emerald-500/50 transition-colors flex flex-col justify-between">
                 <div>
                   <div className="flex items-start justify-between mb-4">
-                    <span className="text-3xl sm:text-4xl font-black text-gray-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                    <span className="text-3xl sm:text-4xl font-extrabold text-card-foreground group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors font-mono">
                       {info.title}
                     </span>
-                    <span className="px-2.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/40 text-xs font-black">
+                    <span className="px-2.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-800 dark:text-emerald-300 text-xs font-semibold">
                       {info.badge}
                     </span>
                   </div>
 
-                  <h3 className="text-base font-black text-gray-800 dark:text-gray-200 mb-2">
+                  <h3 className="text-base font-bold text-card-foreground mb-2">
                     {info.subtitle}
                   </h3>
 
-                  <p className="text-xs text-gray-600 dark:text-gray-300 leading-relaxed font-medium mb-6">
+                  <p className="text-xs text-muted-foreground leading-relaxed font-normal mb-6">
                     {info.desc}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-gray-100 dark:border-white/5 flex items-center justify-between text-xs font-black text-emerald-600 dark:text-emerald-400">
+                <div className="pt-4 border-t border-border flex items-center justify-between text-xs font-bold text-emerald-600 dark:text-emerald-400">
                   <span>Enter {info.title}</span>
-                  <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                  <svg className="w-3.5 h-3.5 shrink-0 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
                 </div>
               </div>
             </Link>
@@ -207,7 +220,7 @@ const LevelSelectionPage = () => {
   );
 
   return (
-    <div className="min-h-screen bg-[var(--color-bg-primary)] text-[var(--color-text-primary)]">
+    <div className="min-h-screen bg-background text-foreground">
       {level ? renderCategorySelection() : renderLevelSelection()}
     </div>
   );

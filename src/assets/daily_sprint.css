@@ -110,7 +110,7 @@
 
 /* Stacked Workspace Container (Passage on Top, Question Underneath) */
 .sprint-workspace {
-  max-width: 920px;
+  max-width: 1120px;
   margin: 24px auto;
   padding: 0 20px;
   display: flex;

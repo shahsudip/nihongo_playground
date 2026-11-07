@@ -623,7 +623,7 @@
 .ps-quiz-container {
   min-height: 100vh;
   background: var(--background-dark);
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 /* Sticky header for quiz */

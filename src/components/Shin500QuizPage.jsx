@@ -672,8 +672,10 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
                         className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5 transition-all cursor-pointer shadow-2xs hover:scale-105"
                         title="解説を見る (Flip Card)"
                       >
-                        <span>💡 解説を見る</span>
-                        <span className="text-sm font-mono">🔄</span>
+                        <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3" />
+                        </svg>
+                        <span>解説を見る</span>
                       </button>
                     )}
                     <span className="text-xs font-medium" style={{ color: 'var(--shin-text-muted)' }}>
@@ -807,7 +809,7 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
                         onClick={handleFinish}
                         className="px-6 py-2 rounded-xl text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition-all cursor-pointer"
                       >
-                        Finish Drill 🏁
+                        Complete Drill
                       </button>
                     )}
                   </div>
@@ -832,7 +834,10 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
                     onClick={() => setIsFlipped(false)}
                     className="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white dark:bg-zinc-800 border border-emerald-500/40 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 flex items-center gap-1.5 transition-all cursor-pointer shadow-sm hover:scale-105"
                   >
-                    <span>↩️ 問題に戻る (Flip Back)</span>
+                    <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+                  </svg>
+                  <span>問題に戻る</span>
                   </button>
                 </div>
 
@@ -854,7 +859,7 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
                     className="px-4 py-2 rounded-xl text-sm font-semibold border"
                     style={{ borderColor: 'var(--shin-border)', backgroundColor: 'var(--shin-card-alt)', color: 'var(--shin-text-primary)' }}
                   >
-                    ↩️ Back to Question
+                    Back to Question
                   </button>
                   {currentIndex < questions.length - 1 ? (
                     <button

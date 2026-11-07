@@ -22,8 +22,8 @@ const MODE_CARDS = [
     title: 'All-Levels Placement Check',
     subtitle: '総合レベル診断（N5 → N1）',
     badge: 'Recommended',
-    icon: '🧭',
-    color: 'from-emerald-600 to-teal-600',
+    icon: '総',
+    color: 'bg-emerald-600',
     desc: 'Pulls 20 random questions across N5 through N1 from all textbooks, past exam papers, and static word banks to diagnose your true JLPT level.',
   },
   {
@@ -31,8 +31,8 @@ const MODE_CARDS = [
     title: 'JLPT N5 Check',
     subtitle: '初級前半・基礎診断',
     badge: 'Beginner',
-    icon: '🌱',
-    color: 'from-cyan-500 to-sky-600',
+    icon: 'N5',
+    color: 'bg-teal-600',
     desc: '20 randomized N5 questions (4 Kanji, 4 Vocab, 6 Grammar, 4 Reading, 2 Listening Audio) pulled from N5 past exams, mock tests & static lists.',
   },
   {
@@ -40,8 +40,8 @@ const MODE_CARDS = [
     title: 'JLPT N4 Check',
     subtitle: '初級後半・実力診断',
     badge: 'Elementary',
-    icon: '🌿',
-    color: 'from-amber-500 to-orange-600',
+    icon: 'N4',
+    color: 'bg-amber-600',
     desc: '20 randomized N4 questions pulled from Chokuzen Taisaku N4, Past Exam Papers, Mock Tests, and N4 Kanji/Vocab/Grammar lists.',
   },
   {
@@ -49,8 +49,8 @@ const MODE_CARDS = [
     title: 'JLPT N3 Check',
     subtitle: '中級・総合実力診断',
     badge: 'Intermediate',
-    icon: '🎋',
-    color: 'from-emerald-500 to-green-600',
+    icon: 'N3',
+    color: 'bg-emerald-600',
     desc: '20 randomized N3 questions pulled from Zenkamoku N3, Shin Kanzen, Speed Master, Sou Matome, Nihongo no Mori, Tango N3, Past Exams & Static Lists.',
   },
   {
@@ -58,8 +58,8 @@ const MODE_CARDS = [
     title: 'JLPT N2 Check',
     subtitle: '中上級・ビジネス実力診断',
     badge: 'Upper-Int',
-    icon: '🍁',
-    color: 'from-purple-600 to-indigo-600',
+    icon: 'N2',
+    color: 'bg-slate-700',
     desc: '20 randomized N2 questions pulled from Zenkamoku N2, Tango N2 2500, Official Past Exam Papers, Mock Tests & Static Lists.',
   },
   {
@@ -67,18 +67,18 @@ const MODE_CARDS = [
     title: 'JLPT N1 Check',
     subtitle: '上級・最高峰実力診断',
     badge: 'Advanced',
-    icon: '👑',
-    color: 'from-rose-600 to-pink-600',
+    icon: 'N1',
+    color: 'bg-rose-700',
     desc: '20 randomized N1 questions pulled from Zenkamoku N1, Tango N1 3000, Official Past Exam Papers, Mock Tests & Static Lists.',
   },
 ];
 
 const CATEGORY_STEP_PILLS = [
-  { key: 'kanji',     label: 'Q1–4 漢字',   icon: '🈁' },
-  { key: 'vocab',     label: 'Q5–8 語彙',   icon: '📖' },
-  { key: 'grammar',   label: 'Q9–14 文法',  icon: '⛩️' },
-  { key: 'reading',   label: 'Q15–18 読解', icon: '📜' },
-  { key: 'listening', label: 'Q19–20 聴解', icon: '🎧' },
+  { key: 'kanji',     label: 'Q1–4 漢字',   icon: '漢' },
+  { key: 'vocab',     label: 'Q5–8 語彙',   icon: '語' },
+  { key: 'grammar',   label: 'Q9–14 文法',  icon: '文' },
+  { key: 'reading',   label: 'Q15–18 読解', icon: '読' },
+  { key: 'listening', label: 'Q19–20 聴解', icon: '聴' },
 ];
 
 export default function LevelCheckPage() {
@@ -298,7 +298,7 @@ export default function LevelCheckPage() {
                     : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
                 }`}
               >
-                {m === 'Immediate' ? '⚡ Instant Answer' : '📝 At End'}
+                {m === 'Immediate' ? 'Instant Answer' : 'Review at End'}
               </button>
             ))}
           </div>
@@ -307,8 +307,7 @@ export default function LevelCheckPage() {
         {/* Hero Header */}
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200/60 dark:border-emerald-800/40 text-emerald-700 dark:text-emerald-300 text-xs font-black uppercase mb-3">
-            <span>🎲</span>
-            <span>Omni-Source Random Diagnostic • Fresh Every Time</span>
+            <span>Random Diagnostic Assessment</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-black text-gray-900 dark:text-white tracking-tight">
             Check Your JLPT Level
@@ -341,7 +340,7 @@ export default function LevelCheckPage() {
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${card.color} text-white flex items-center justify-center text-3xl shadow-md`}>
+                  <div className={`w-12 h-12 rounded-2xl ${card.color} text-white flex items-center justify-center text-xl font-black shadow-sm`}>
                     {card.icon}
                   </div>
                   <span className="px-2.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/40 text-xs font-black">
@@ -381,7 +380,7 @@ export default function LevelCheckPage() {
     const hasImage = Boolean(currentQ.imageUrl);
 
     return (
-      <div className="w-full max-w-5xl mx-auto px-4 py-6 animate-fade-in">
+      <div className="w-full max-w-6xl 2xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 animate-fade-in">
         <ExitConfirmModal
           isOpen={showExitModal}
           onCancel={() => setShowExitModal(false)}
@@ -412,7 +411,7 @@ export default function LevelCheckPage() {
 
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono font-bold text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-zinc-800 px-3 py-1.5 rounded-xl">
-                ⏱️ {formatTime(elapsedSeconds)}
+                {formatTime(elapsedSeconds)}
               </span>
               <button
                 type="button"
@@ -420,7 +419,7 @@ export default function LevelCheckPage() {
                 title="Re-shuffle a brand new random 20-question set"
                 className="px-3 py-1.5 rounded-xl text-xs font-bold bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100 transition-colors cursor-pointer"
               >
-                🎲 Reshuffle 20 Qs
+                Reshuffle
               </button>
             </div>
           </div>
@@ -505,7 +504,7 @@ export default function LevelCheckPage() {
                   onClick={toggleAudioPlay}
                   className="w-12 h-12 rounded-2xl bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white flex items-center justify-center text-xl shadow-lg shadow-emerald-600/30 transition-all cursor-pointer"
                 >
-                  {isPlaying ? '⏸️' : '▶️'}
+                  {isPlaying ? <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg> : <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>}
                 </button>
                 <div>
                   <span className="text-xs font-black uppercase tracking-wider text-emerald-700 dark:text-emerald-400 block">
@@ -552,7 +551,7 @@ export default function LevelCheckPage() {
                   onClick={() => setShowScript(s => !s)}
                   className="text-xs font-bold text-emerald-700 dark:text-emerald-400 hover:underline cursor-pointer"
                 >
-                  {showScript ? '🙈 Hide Audio Script' : '📜 Show Audio Script (スクリプト)'}
+                  {showScript ? 'Hide Audio Script' : 'Show Audio Script (スクリプト)'}
                 </button>
               </div>
             )}
@@ -571,7 +570,6 @@ export default function LevelCheckPage() {
           <Card className="w-full mb-6 p-5 sm:p-7 shadow-sm border border-gray-200/80 dark:border-white/10 rounded-3xl">
             <div className="flex items-center justify-between pb-3 mb-4 border-b border-gray-100 dark:border-white/5">
               <span className="text-xs font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
-                <span>📖</span>
                 <span>Passage / Context ({currentQ.level})</span>
               </span>
               <span className="text-xs text-gray-500 dark:text-gray-400 font-mono">
@@ -701,7 +699,7 @@ export default function LevelCheckPage() {
                   onClick={handleFinishAssessment}
                   className="px-6 py-2.5 rounded-xl text-xs font-black bg-gradient-to-r from-emerald-600 to-teal-600 hover:opacity-95 text-white shadow-md cursor-pointer"
                 >
-                  🎯 Finish & View Level Diagnosis ({answeredCount}/{questions.length})
+                  Finish & View Diagnosis ({answeredCount}/{questions.length})
                 </button>
               )}
             </div>
@@ -711,7 +709,7 @@ export default function LevelCheckPage() {
           {feedbackMode === 'Immediate' && isAnswered && (currentQ.explanation || isStarQuestion(currentQ)) && (
             <div className="mt-6 p-4 sm:p-5 rounded-2xl bg-emerald-50/60 dark:bg-emerald-950/20 border border-emerald-200/80 dark:border-emerald-800/40 text-xs sm:text-sm leading-relaxed text-gray-800 dark:text-gray-200 animate-fade-in">
               <div className="font-black text-emerald-700 dark:text-emerald-400 uppercase mb-2">
-                💡 Explanation • 解説
+                Explanation • 解説
               </div>
               {isStarQuestion(currentQ) ? (
                 <StarExplanationCard question={currentQ} />
@@ -751,7 +749,7 @@ export default function LevelCheckPage() {
     });
 
     return (
-      <div className="w-full max-w-5xl mx-auto px-4 py-8 animate-fade-in">
+      <div className="w-full max-w-6xl 2xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-in">
         {/* Top Action Bar */}
         <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
           <button
@@ -767,15 +765,14 @@ export default function LevelCheckPage() {
             onClick={() => handleStartAssessment(selectedMode)}
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl text-xs font-black bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-md hover:opacity-95 transition-all cursor-pointer"
           >
-            <span>🎲</span>
-            <span>Take New Random 20-Question Check</span>
+            <span>Take New 20-Question Check</span>
           </button>
         </div>
 
         {/* Main Diagnostic Certificate Card */}
         <Card className="p-6 sm:p-10 rounded-3xl border border-gray-200 dark:border-white/10 shadow-xl mb-8 text-center">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-300 text-xs font-black uppercase mb-4">
-            <span>🏆 Official Diagnostic Result</span>
+            <span>Diagnostic Assessment Result</span>
           </div>
 
           <div className="flex justify-center mb-4">
@@ -834,7 +831,7 @@ export default function LevelCheckPage() {
           {/* 5-Skill Breakdown Bars (Kanji, Vocab, Grammar, Reading, Listening) */}
           <div className="max-w-2xl mx-auto text-left mb-8">
             <h3 className="text-xs font-black uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3">
-              📊 Skill Breakdown (Kanji • Vocab • Grammar • Reading • Listening)
+              Skill Breakdown (Kanji · Vocab · Grammar · Reading · Listening)
             </h3>
             <div className="space-y-3">
               {report.categoryBreakdown.map(cat => (
@@ -868,13 +865,13 @@ export default function LevelCheckPage() {
               to={`/levels/${report.diagnosedLevel.toLowerCase()}`}
               className="px-6 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-black shadow-md transition-all"
             >
-              🚀 Go to JLPT {report.diagnosedLevel} Study Hub →
+              Go to JLPT {report.diagnosedLevel} Study Hub →
             </Link>
             <Link
               to="/books"
               className="px-5 py-3 rounded-2xl bg-gray-100 dark:bg-zinc-800 hover:bg-gray-200 text-gray-800 dark:text-gray-200 text-xs sm:text-sm font-bold transition-all"
             >
-              📚 Browse {report.diagnosedLevel} Textbooks
+              Browse {report.diagnosedLevel} Textbooks
             </Link>
           </div>
         </Card>
@@ -883,7 +880,7 @@ export default function LevelCheckPage() {
         {recommendedBooks.length > 0 && (
           <div className="mb-8">
             <h2 className="text-lg font-black text-gray-900 dark:text-white mb-3">
-              📚 Recommended {report.diagnosedLevel} Books & Drills
+              Recommended {report.diagnosedLevel} Books & Drills
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {recommendedBooks.map(b => (
@@ -913,7 +910,7 @@ export default function LevelCheckPage() {
         <Card className="p-6 sm:p-8 rounded-3xl border border-gray-200 dark:border-white/10">
           <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
             <h2 className="text-lg sm:text-xl font-black text-gray-900 dark:text-white">
-              🧐 Detailed 20-Question Review & Sources
+              20-Question Review & Sources
             </h2>
             <div className="flex items-center gap-1.5">
               {[

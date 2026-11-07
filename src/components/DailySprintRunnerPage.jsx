@@ -212,7 +212,7 @@ const DailySprintRunnerPage = () => {
               <div style={{ fontSize: '0.75rem', color: 'var(--color-text-secondary)', marginTop: '2px' }}>Time Taken</div>
             </div>
             <div style={{ background: 'rgba(245, 158, 11, 0.1)', borderRadius: '12px', padding: '14px 10px', border: '1px solid rgba(245, 158, 11, 0.3)' }}>
-              <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#f59e0b' }}>🔥 +1</div>
+              <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#f59e0b' }}>+1</div>
               <div style={{ fontSize: '0.75rem', color: '#f59e0b', marginTop: '2px' }}>Streak Awarded</div>
             </div>
           </div>
@@ -223,7 +223,7 @@ const DailySprintRunnerPage = () => {
               className="profile-btn profile-btn-secondary"
               style={{ flex: 1, padding: '12px 18px', justifyContent: 'center' }}
             >
-              📊 Profile &amp; Streak
+              Profile &amp; Streak
             </Link>
             {nextDayNumber <= 15 ? (
               <button
@@ -236,7 +236,7 @@ const DailySprintRunnerPage = () => {
                 className="profile-btn profile-btn-primary"
                 style={{ flex: 1.5, padding: '12px 18px', justifyContent: 'center', background: 'linear-gradient(135deg, #10b981, #059669)' }}
               >
-                🚀 Start Day {nextDayNumber} &rarr;
+                Start Day {nextDayNumber} &rarr;
               </button>
             ) : (
               <Link
@@ -244,7 +244,7 @@ const DailySprintRunnerPage = () => {
                 className="profile-btn profile-btn-primary"
                 style={{ flex: 1.5, padding: '12px 18px', justifyContent: 'center' }}
               >
-                🎓 Return to Book
+                Return to Book
               </Link>
             )}
           </div>
@@ -291,7 +291,7 @@ const DailySprintRunnerPage = () => {
         {/* Timer & Controls */}
         <div className="flex items-center gap-3">
           <div className={`sprint-timer-pill ${isTimerDanger ? 'sprint-timer-danger' : isTimerWarning ? 'sprint-timer-warning' : ''}`}>
-            <span>⏱️</span>
+            <span className="text-xs font-mono font-bold text-slate-400">TIME</span>
             <span>{formatTime(secondsLeft)}</span>
             <button
               type="button"
@@ -403,7 +403,7 @@ const DailySprintRunnerPage = () => {
           {/* Quick Jump Anchor to Question */}
           <div className="flex justify-end mt-6 pt-4 border-t border-[var(--color-border)]">
             <a href="#question-card" className="sprint-anchor-btn">
-              👇 Answer Question ({activeQuestionIndex + 1}/{currentQuestions.length || 1})
+              Answer Question ({activeQuestionIndex + 1}/{currentQuestions.length || 1})
             </a>
           </div>
         </div>
@@ -415,7 +415,7 @@ const DailySprintRunnerPage = () => {
               Passage {activePassageIndex + 1} of {sprint.passages.length} • Question {activeQuestionIndex + 1} of {currentQuestions.length || 1}
             </div>
             <a href="#passage-card" className="sprint-anchor-btn" style={{ padding: '4px 10px', fontSize: '0.75rem' }}>
-              👆 Review Passage Text
+              Review Passage Text
             </a>
           </div>
 

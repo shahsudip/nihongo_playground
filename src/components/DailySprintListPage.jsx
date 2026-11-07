@@ -67,7 +67,7 @@ const DailySprintListPage = () => {
 
   return (
     <div className="sprint-page-wrapper" style={{ padding: '30px 20px 80px' }}>
-      <div style={{ maxWidth: '960px', margin: '0 auto' }}>
+      <div style={{ maxWidth: '1160px', margin: '0 auto' }}>
         
         {/* Breadcrumbs */}
         <nav aria-label="Breadcrumb" className="mb-6">
@@ -101,15 +101,15 @@ const DailySprintListPage = () => {
               letterSpacing: '0.06em',
               textTransform: 'uppercase'
             }}>
-              {isTodayMastered ? '✓ TODAY’S MISSION COMPLETED' : `🎯 TODAY’S TARGET — DAY ${todaySprint.dayNumber} OF ${sprints.length}`}
+              {isTodayMastered ? '✓ TODAY’S MISSION COMPLETED' : `TODAY’S TARGET — DAY ${todaySprint.dayNumber} OF ${sprints.length}`}
             </span>
 
             <div className="flex items-center gap-2 text-xs font-bold text-slate-300">
               <span className="px-2.5 py-1 rounded-md bg-black/30 border border-white/10">
-                ⏱️ {todaySprint.allocatedMinutes} Mins Allocated
+                {todaySprint.allocatedMinutes} Mins Allocated
               </span>
               <span className="px-2.5 py-1 rounded-md bg-black/30 border border-white/10">
-                ❓ {todaySprint.totalQuestions} Questions
+                {todaySprint.totalQuestions} Questions
               </span>
             </div>
           </div>
@@ -124,7 +124,7 @@ const DailySprintListPage = () => {
           {/* Today's Included Passages Breakdown */}
           <div className="mb-6">
             <div className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">
-              📝 Passages To Conquer Today:
+              Passages To Conquer Today:
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {todaySprint.passages.map((p, pIdx) => {
@@ -166,7 +166,7 @@ const DailySprintListPage = () => {
           <div className="pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
             {isTodayMastered ? (
               <div className="flex items-center gap-3">
-                <div className="text-2xl">🎉</div>
+                <div className="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-sm">✓</div>
                 <div>
                   <div className="text-sm font-bold text-emerald-400">
                     Day {todaySprint.dayNumber} Mastered! ({todayHistory.score}/{todayHistory.total} Correct)
@@ -178,11 +178,11 @@ const DailySprintListPage = () => {
               </div>
             ) : isTodayAttempted ? (
               <div className="text-xs text-amber-400 font-bold">
-                ⚠️ Attempted ({todayHistory.score}/{todayHistory.total}) — Retake to achieve &ge;75% mastery.
+                Attempted ({todayHistory.score}/{todayHistory.total}) — Retake to achieve &ge;75% mastery.
               </div>
             ) : (
               <div className="text-xs text-[var(--color-text-secondary)]">
-                ⚡ Ready to begin. Timer starts when you launch.
+                Ready to begin. Timer starts when you launch.
               </div>
             )}
 
@@ -192,7 +192,7 @@ const DailySprintListPage = () => {
                   to={`/books/${bookId}/sprint/${todaySprint.dayNumber}`}
                   className="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/15 text-white font-bold text-sm transition"
                 >
-                  📝 Review
+                  Review
                 </Link>
               )}
 
@@ -200,7 +200,7 @@ const DailySprintListPage = () => {
                 to={`/books/${bookId}/sprint/${todaySprint.dayNumber}`}
                 className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-black text-sm shadow-xl hover:shadow-emerald-500/30 transition-all flex items-center gap-2 transform hover:-translate-y-0.5"
               >
-                {isTodayMastered ? '🔄 Practice Today’s Mission Again' : isTodayAttempted ? '🚀 Retake Today’s Mission' : '🚀 Start Today’s Mission (20 Min) →'}
+                {isTodayMastered ? 'Practice Today’s Mission Again' : isTodayAttempted ? 'Retake Today’s Mission' : 'Start Today’s Mission (20 Min) →'}
               </Link>
             </div>
           </div>
@@ -216,7 +216,7 @@ const DailySprintListPage = () => {
         }}>
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs font-bold uppercase tracking-wider text-[var(--color-text-secondary)]">
-              📅 15-Day Exam Streak Roadmap ({completedCount}/{sprints.length} Completed)
+              15-Day Exam Streak Roadmap ({completedCount}/{sprints.length} Completed)
             </span>
             <span className="text-xs font-extrabold text-emerald-400">
               {Math.round((completedCount / sprints.length) * 100)}%
@@ -246,7 +246,7 @@ const DailySprintListPage = () => {
                   <span style={{ fontSize: '0.68rem', opacity: 0.7 }}>DAY</span>
                   <span style={{ fontSize: '1.05rem', fontWeight: 900 }}>{s.dayNumber}</span>
                   <span style={{ fontSize: '0.65rem', marginTop: '2px' }}>
-                    {isDone ? '✓ Done' : isCurrent ? '🎯 Today' : '🔒'}
+                    {isDone ? '✓ Done' : isCurrent ? 'Today' : 'Locked'}
                   </span>
                 </Link>
               );
@@ -292,7 +292,7 @@ const DailySprintListPage = () => {
                         DAY {sprint.dayNumber}
                       </span>
                       <span style={{ fontSize: '0.7rem', color: 'var(--color-text-secondary)' }}>
-                        ⏱️ {sprint.allocatedMinutes}m
+                        {sprint.allocatedMinutes}m
                       </span>
                     </div>
                     <h4 style={{ fontSize: '0.95rem', fontWeight: 800, color: '#fff', marginBottom: '4px' }}>

@@ -539,7 +539,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
     const failReason = scoreReport?.failReason;
 
     return (
-      <div className="w-full max-w-5xl mx-auto px-4 py-8 animate-fade-in">
+      <div className="w-full max-w-6xl 2xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-in">
         {/* Certificate Modal */}
         <JlptScoreCertificateModal
           isOpen={showCertificateModal}
@@ -561,7 +561,6 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
             onClick={() => setShowCertificateModal(true)}
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-800 hover:bg-amber-100 transition-all cursor-pointer"
           >
-            <span>📜</span>
             <span>View Certificate (合否結果通知書)</span>
           </button>
         </div>
@@ -732,7 +731,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
               onClick={handleReset}
               className="border-red-300 dark:border-red-900/60 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 font-semibold cursor-pointer"
             >
-              🔄 Reset & Retake
+              Reset & Retake
             </Button>
             <Button
               variant="primary"
@@ -802,7 +801,6 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
         {/* Header Right Stats: Timer, Score, Review, Reset, Mobile Sheet Toggle */}
         <div className="flex items-center gap-2.5 flex-wrap">
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gray-100 dark:bg-zinc-800 text-xs font-mono font-bold text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-white/10">
-            <span>⏱️</span>
             <span>{formatTime(timerSeconds)}</span>
           </div>
 
@@ -817,7 +815,6 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
             onClick={() => setShowMobileSheet(true)}
             className="lg:hidden text-xs px-3 py-1.5 rounded-xl border border-red-500/40 text-red-600 dark:text-red-400 font-bold bg-red-50/60 dark:bg-red-950/30 hover:bg-red-100 dark:hover:bg-red-900/40 transition-colors cursor-pointer flex items-center gap-1"
           >
-            <span>📋</span>
             <span>解答用紙</span>
           </button>
 
@@ -836,7 +833,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
               onClick={handleFinish}
               className="text-xs px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black transition-all shadow-sm cursor-pointer"
             >
-              📝 Finish & Review
+              Finish & Review
             </button>
           )}
         </div>
@@ -936,11 +933,11 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
                 className="w-12 h-12 rounded-2xl bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white flex items-center justify-center text-xl shadow-lg shadow-emerald-600/30 transition-all cursor-pointer"
                 title={isPlaying ? 'Pause Audio' : 'Play Audio'}
               >
-                {isPlaying ? '⏸️' : '▶️'}
+                {isPlaying ? <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg> : <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>}
               </button>
               <div>
                 <span className="text-xs font-black uppercase tracking-wider text-emerald-700 dark:text-emerald-400 block">
-                  🎧 Listening Track
+                  Listening Track
                 </span>
                 <span className="text-xs text-gray-500 dark:text-gray-400 font-mono">
                   {formatTime(Math.floor(audioProgress))} / {formatTime(Math.floor(audioDuration))}
@@ -1195,7 +1192,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
                     onClick={handleFinish}
                     className="bg-emerald-600 hover:bg-emerald-500 text-white font-black cursor-pointer shadow-md"
                   >
-                    Finish Exam 🏆
+                    Finish Exam
                   </Button>
                 )}
               </div>
@@ -1205,7 +1202,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
             <Card className={`w-full p-6 sm:p-8 shadow-sm border-2 border-emerald-500/40 dark:border-emerald-500/30 bg-emerald-500/[0.03] dark:bg-emerald-950/20 rounded-3xl mb-6 quiz-flip-face-back ${!isFlipped ? 'absolute inset-0 pointer-events-none opacity-0 select-none' : 'relative'}`}>
               <div className="flex items-center justify-between pb-3 mb-4 border-b border-emerald-500/20 flex-wrap gap-2">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <span className="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs font-bold shadow-sm">💡</span>
+                  <span className="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs font-bold shadow-sm">解</span>
                   <span className="font-extrabold text-sm md:text-base text-emerald-800 dark:text-emerald-300">
                     解説 • Explanation & Insights
                   </span>
@@ -1219,7 +1216,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
                   onClick={() => setIsFlipped(false)}
                   className="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white dark:bg-zinc-800 border border-emerald-500/40 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 flex items-center gap-1.5 transition-all cursor-pointer shadow-sm hover:scale-105"
                 >
-                  <span>↩️ 問題に戻る (Flip Back)</span>
+                  <span>問題に戻る (Flip Back)</span>
                 </button>
               </div>
 
@@ -1282,7 +1279,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
                   onClick={() => setIsFlipped(false)}
                   className="w-full py-2.5 px-4 rounded-xl text-xs sm:text-sm font-bold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-800 dark:text-emerald-200 border border-emerald-500/30 flex items-center justify-center gap-2 transition-all cursor-pointer"
                 >
-                  <span>↩️ 問題・選択肢に戻る (Flip Back to Question)</span>
+                  <span>問題・選択肢に戻る (Flip Back to Question)</span>
                 </button>
 
                 <div className="flex justify-between items-center pt-2">

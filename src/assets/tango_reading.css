@@ -7,7 +7,7 @@
 .tango-page-container {
   font-family: 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
   min-height: 100vh;
-  padding-top: 85px;
+  padding-top: 16px;
   padding-bottom: 60px;
   transition: background-color 0.25s ease, color 0.25s ease;
   background-color: var(--tango-bg);

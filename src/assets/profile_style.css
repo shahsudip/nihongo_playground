@@ -1,9 +1,9 @@
 /* Profile & Score Map Styles */
 
 .profile-page-wrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 32px 20px 80px;
+  padding: 20px 20px 80px;
   font-family: 'Inter', 'Noto Sans JP', sans-serif;
   color: var(--color-text-primary, #f8fafc);
 }
@@ -26,14 +26,14 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #10b981, #3b82f6);
+  background: #059669;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2.2rem;
   font-weight: 800;
   color: white;
-  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
 }
 
 .profile-user-info h1 {
@@ -520,105 +520,115 @@
 }
 
 /* ========================================================= */
-/* === DARK MODE: PURPLE RADIANT THEME FOR PROFILE PAGE === */
+/* === DARK MODE: CALM SLATE & EMERALD BRAND THEME === */
 /* ========================================================= */
 
 html.dark .profile-avatar,
 html.theme-dark .profile-avatar,
 [data-theme='dark'] .profile-avatar {
-  background: linear-gradient(135deg, #9333ea, #6366f1);
-  box-shadow: 0 0 25px rgba(147, 51, 234, 0.45);
+  background: #059669;
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.3);
 }
 
 html.dark .profile-target-badge,
 html.theme-dark .profile-target-badge,
 [data-theme='dark'] .profile-target-badge {
-  background: rgba(147, 51, 234, 0.2);
-  color: #c084fc;
-  border-color: #a855f7;
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border-color: rgba(52, 211, 153, 0.4);
 }
 
 html.dark .profile-stat-val,
 html.theme-dark .profile-stat-val,
 [data-theme='dark'] .profile-stat-val {
-  color: #c084fc;
+  color: #34d399;
 }
 
 html.dark .profile-tab-btn.active,
 html.theme-dark .profile-tab-btn.active,
 [data-theme='dark'] .profile-tab-btn.active {
-  color: #c084fc;
-  background: rgba(147, 51, 234, 0.16);
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.12);
 }
 
 html.dark .profile-tab-btn.active::after,
 html.theme-dark .profile-tab-btn.active::after,
 [data-theme='dark'] .profile-tab-btn.active::after {
-  background: linear-gradient(90deg, #9333ea, #c084fc);
-  box-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
+  background: #10b981;
+  box-shadow: none;
 }
 
 html.dark .profile-book-card:hover,
 html.theme-dark .profile-book-card:hover,
 [data-theme='dark'] .profile-book-card:hover {
-  border-color: #a855f7;
-  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.25);
+  border-color: #10b981;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 html.dark .profile-btn-primary,
 html.theme-dark .profile-btn-primary,
 [data-theme='dark'] .profile-btn-primary {
-  background: linear-gradient(135deg, #9333ea 0%, #6366f1 100%);
+  background: #059669;
   color: #ffffff;
-  border-color: rgba(168, 85, 247, 0.4);
-  box-shadow: 0 4px 14px rgba(147, 51, 234, 0.35);
+  border-color: transparent;
+  box-shadow: none;
 }
 
 html.dark .profile-btn-primary:hover,
 html.theme-dark .profile-btn-primary:hover,
 [data-theme='dark'] .profile-btn-primary:hover {
-  background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
-  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.5);
+  background: #10b981;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
   transform: translateY(-1px);
 }
 
 html.dark .profile-plan-btn,
 html.theme-dark .profile-plan-btn,
 [data-theme='dark'] .profile-plan-btn {
-  background: rgba(147, 51, 234, 0.18);
-  border-color: rgba(168, 85, 247, 0.5);
-  color: #c084fc;
-}
-
-html.dark .profile-plan-btn:hover,
-html.theme-dark .profile-plan-btn:hover,
-[data-theme='dark'] .profile-plan-btn:hover {
-  background: rgba(147, 51, 234, 0.35);
-  border-color: #c084fc;
-  box-shadow: 0 0 14px rgba(168, 85, 247, 0.45);
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.35);
+  color: #34d399;
 }
 
 html.dark .profile-exam-toggle-btn.active,
 html.theme-dark .profile-exam-toggle-btn.active,
 [data-theme='dark'] .profile-exam-toggle-btn.active {
-  border-color: #a855f7;
-  background: rgba(147, 51, 234, 0.22);
-  color: #c084fc;
+  border-color: rgba(16, 185, 129, 0.5);
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
 }
 
 html.dark .profile-exam-toggle-btn.active .profile-exam-indicator,
 html.theme-dark .profile-exam-toggle-btn.active .profile-exam-indicator,
 [data-theme='dark'] .profile-exam-toggle-btn.active .profile-exam-indicator {
-  background: #c084fc;
-  box-shadow: 0 0 10px #c084fc;
+  background: #34d399;
+  box-shadow: 0 0 8px #10b981;
 }
 
 html.dark .profile-filter-pill.active,
 html.theme-dark .profile-filter-pill.active,
 [data-theme='dark'] .profile-filter-pill.active {
-  background: linear-gradient(135deg, #9333ea, #7c3aed);
+  background: #059669;
   color: #ffffff;
-  box-shadow: 0 2px 10px rgba(147, 51, 234, 0.45);
+  box-shadow: none;
 }
 
-
+@media (max-width: 640px) {
+  .profile-hero-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
+  .profile-hero-stat-pill {
+    min-width: unset;
+    width: 100%;
+    padding: 10px 12px;
+  }
+  .profile-user-info h1 {
+    justify-content: center;
+  }
+  .profile-level-matrix-grid {
+    grid-template-columns: 1fr;
+  }
+}

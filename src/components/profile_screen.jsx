@@ -92,7 +92,7 @@ const ProfileScreen = () => {
     const next = !isExamMode;
     setIsExamMode(next);
     localStorage.setItem('user_exam_mode', String(next));
-    showToast(`Exam Mode turned ${next ? 'ON 🎯' : 'OFF 💤'}`);
+    showToast(`Exam Mode turned ${next ? 'ON' : 'OFF'}`);
   };
 
   const handleOpenPlan = (book) => {
@@ -595,7 +595,7 @@ const ProfileScreen = () => {
           <h1>
             {currentUser?.displayName || currentUser?.email?.split('@')[0] || 'Learner'}
             <span className="profile-target-badge">
-              🎯 Target: 
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="inline-block mr-0.5"><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg> Target: 
               <select
                 value={targetLevel}
                 onChange={(e) => handleTargetLevelChange(e.target.value)}
@@ -615,7 +615,7 @@ const ProfileScreen = () => {
               className={`profile-exam-toggle-btn ${isExamMode ? 'active' : ''}`}
               title={isExamMode ? 'Exam Mode is ON - Click to switch to casual mode' : 'Exam Mode is OFF - Click to enable Exam Mode'}
             >
-              <span>{isExamMode ? '⚡ Exam Mode: ON' : '💤 Exam Mode: OFF'}</span>
+              <span>{isExamMode ? 'Exam Mode: ON' : 'Exam Mode: OFF'}</span>
               <span className="profile-exam-indicator"></span>
             </button>
             <Link
@@ -624,8 +624,8 @@ const ProfileScreen = () => {
               
               title="Take a 20-question randomized JLPT level check across all sources"
             >
-              <span>🎲</span>
-              <span>Check Your Level</span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              <span>Check Level</span>
             </Link>
           </h1>
           <p>
@@ -647,7 +647,7 @@ const ProfileScreen = () => {
         </div>
         <div className="profile-hero-stats">
           <div className="profile-hero-stat-pill">
-            <div className="profile-stat-val text-amber-500 font-extrabold">🔥 {streak}</div>
+            <div className="profile-stat-val text-amber-500 font-extrabold flex items-center justify-center gap-1"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-amber-500 inline-block"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg><span>{streak}</span></div>
             <div className="profile-stat-lbl">Day Streak</div>
           </div>
           <div className="profile-hero-stat-pill">
@@ -672,25 +672,25 @@ const ProfileScreen = () => {
           className={`profile-tab-btn ${activeTab === 'levels' ? 'active' : ''}`}
           onClick={() => setActiveTab('levels')}
         >
-          🗺️ {targetLevel === 'All' ? 'N1–N5 Level Score Map' : `${targetLevel} Score Map`}
+          {targetLevel === 'All' ? 'N1–N5 Level Score Map' : `${targetLevel} Score Map`}
         </button>
         <button
           className={`profile-tab-btn ${activeTab === 'books' ? 'active' : ''}`}
           onClick={() => setActiveTab('books')}
         >
-          📚 {targetLevel === 'All' ? 'Book Collections' : `${targetLevel} Books (${bookProgressMap.length})`}
+          {targetLevel === 'All' ? 'Book Collections' : `${targetLevel} Books (${bookProgressMap.length})`}
         </button>
         <button
           className={`profile-tab-btn ${activeTab === 'history' ? 'active' : ''}`}
           onClick={() => setActiveTab('history')}
         >
-          🕒 Recent Activity ({recentActivity.length})
+          Recent Activity ({recentActivity.length})
         </button>
         <button
           className={`profile-tab-btn ${activeTab === 'custom' ? 'active' : ''}`}
           onClick={() => setActiveTab('custom')}
         >
-          ✨ Custom Quizzes ({customQuizzes.length})
+          Custom Quizzes ({customQuizzes.length})
         </button>
       </div>
 
@@ -736,19 +736,19 @@ const ProfileScreen = () => {
                   </div>
                   <div className="profile-skill-rows">
                     <div className="profile-skill-row">
-                      <span>🈁 文字・Kanji</span>
+                      <span className="font-medium text-slate-700 dark:text-slate-300"><span className="font-bold">文字</span> · Kanji</span>
                       <span className="profile-skill-val">{data.kanji.total > 0 ? `${kanjiPercent}% (${data.kanji.correct}/${data.kanji.total})` : '—'}</span>
                     </div>
                     <div className="profile-skill-row">
-                      <span>📖 語彙・Vocab</span>
+                      <span className="font-medium text-slate-700 dark:text-slate-300"><span className="font-bold">語彙</span> · Vocab</span>
                       <span className="profile-skill-val">{data.vocab.total > 0 ? `${vocabPercent}% (${data.vocab.correct}/${data.vocab.total})` : '—'}</span>
                     </div>
                     <div className="profile-skill-row">
-                      <span>📐 文法・Grammar</span>
+                      <span className="font-medium text-slate-700 dark:text-slate-300"><span className="font-bold">文法</span> · Grammar</span>
                       <span className="profile-skill-val">{data.grammar.total > 0 ? `${grammarPercent}% (${data.grammar.correct}/${data.grammar.total})` : '—'}</span>
                     </div>
                     <div className="profile-skill-row">
-                      <span>📑 読解・Reading</span>
+                      <span className="font-medium text-slate-700 dark:text-slate-300"><span className="font-bold">読解</span> · Reading</span>
                       <span className="profile-skill-val">{data.reading.total > 0 ? `${readingPercent}% (${data.reading.correct}/${data.reading.total})` : '—'}</span>
                     </div>
                   </div>
@@ -765,7 +765,7 @@ const ProfileScreen = () => {
           <div className="profile-section-title">
             <span>{targetLevel === 'All' ? 'All Book Collections Progress' : `${targetLevel} Book Collections`}</span>
             <Link to="/books" className="profile-btn profile-btn-secondary" style={{ fontSize: '0.8rem' }}>
-              📚 View All Books Catalog &rarr;
+              View All Books &rarr;
             </Link>
           </div>
 
@@ -831,7 +831,7 @@ const ProfileScreen = () => {
       {activeTab === 'history' && (
         <div>
           <div className="profile-section-title" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
-            <span>🕒 Chronological Study Activity ({recentActivity.length})</span>
+            <span>Chronological Study Activity ({recentActivity.length})</span>
             <div style={{ display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' }}>
               <div style={{ display: 'flex', gap: '6px', background: 'var(--color-bg-primary, #0f172a)', padding: '4px', borderRadius: '8px', border: '1px solid var(--color-border, #334155)' }}>
                 {['All', 'N1', 'N2', 'N3', 'N4', 'N5'].map(lvl => (
@@ -850,7 +850,7 @@ const ProfileScreen = () => {
                   className="profile-btn profile-btn-danger"
                   style={{ fontSize: '0.78rem', padding: '6px 12px' }}
                 >
-                  🗑️ Clear All History
+                  Clear All History
                 </button>
               )}
             </div>
@@ -888,20 +888,20 @@ const ProfileScreen = () => {
                     const isMastered = isAllAttempted && score > 0 && pct >= 80 && item.status !== 'incomplete';
                     const isCompleted = isAllAttempted && item.status !== 'incomplete';
 
-                    let statusLabel = '⏳ Incomplete';
+                    let statusLabel = 'Incomplete';
                     let statusClass = 'badge-incomplete';
 
                     if (isMastered) {
-                      statusLabel = '🏆 Mastered';
+                      statusLabel = 'Mastered';
                       statusClass = 'badge-mastered';
                     } else if (isCompleted) {
-                      statusLabel = '📝 Completed';
+                      statusLabel = 'Completed';
                       statusClass = 'badge-completed';
                     } else if (item.status === 'incomplete' || answeredCount < total || score === 0) {
-                      statusLabel = '⏳ Incomplete';
+                      statusLabel = 'Incomplete';
                       statusClass = 'badge-incomplete';
                     } else {
-                      statusLabel = '💡 Review Needed';
+                      statusLabel = 'Review Needed';
                       statusClass = 'badge-review';
                     }
 

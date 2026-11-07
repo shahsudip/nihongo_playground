@@ -13,10 +13,10 @@ const LEVEL_META = {
 };
 
 const SECTION_ICONS = {
-  vocab: '📖',
-  grammar_reading: '📜',
-  vocab_grammar_reading: '📚',
-  listening: '🎧',
+  vocab: '語',
+  grammar_reading: '読',
+  vocab_grammar_reading: '総',
+  listening: '聴',
 };
 
 const SECTION_SHORT_NAMES = {
@@ -236,7 +236,7 @@ const JlptPracticeTestsListPage = () => {
   }
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8 animate-fade-in space-y-6">
+    <div className="w-full max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8 animate-fade-in space-y-6">
       
       {/* Breadcrumb Navigation */}
       <nav aria-label="Breadcrumb">
@@ -404,7 +404,6 @@ const JlptPracticeTestsListPage = () => {
                       {/* Status Badges */}
                       {isPassed && (
                         <span className="px-2.5 py-0.5 rounded-full text-xs font-black bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1 font-mono">
-                          <span>💮</span>
                           <span>PASSED • {summary.scaledScore || 95}/180</span>
                         </span>
                       )}
@@ -430,9 +429,9 @@ const JlptPracticeTestsListPage = () => {
                     </div>
 
                     <div className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400 mt-1">
-                      <span>⏱️ {test.totalMinutes || 90}m Limit</span>
+                      <span>{test.totalMinutes || 90}m Limit</span>
                       <span>•</span>
-                      <span>📝 {summary.totalQuestions} Questions</span>
+                      <span>{summary.totalQuestions} Questions</span>
                       {summary.scaledScore !== null && (
                         <>
                           <span>•</span>

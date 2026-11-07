@@ -694,7 +694,7 @@ const N4PracticeSetQuizPage = () => {
                     }}
                     className="n4-btn-finish"
                   >
-                    Finish Quiz 🏆
+                    Complete Quiz
                   </button>
                 )}
               </div>
@@ -718,7 +718,10 @@ const N4PracticeSetQuizPage = () => {
                   onClick={() => setIsFlipped(false)}
                   className="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white dark:bg-zinc-800 border border-emerald-500/40 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 flex items-center gap-1.5 transition-all cursor-pointer shadow-sm hover:scale-105"
                 >
-                  <span>↩️ 問題に戻る (Flip Back)</span>
+                  <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+                  </svg>
+                  <span>問題に戻る</span>
                 </button>
               </div>
 
@@ -739,7 +742,7 @@ const N4PracticeSetQuizPage = () => {
                   onClick={() => setIsFlipped(false)}
                   className="n4-btn-secondary text-xs"
                 >
-                  ↩️ Back to Question
+                  Back to Question
                 </button>
                 {currentIndex < questions.length - 1 ? (
                   <button

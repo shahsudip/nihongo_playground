@@ -10,7 +10,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 112px 28px 72px;
+  padding: 24px 28px 72px;
   color: var(--cn2-text);
   line-height: 1.6;
 }
@@ -226,7 +226,7 @@
 }
 
 @media (max-width: 820px) {
-  .cn2-book { padding: 98px 18px 50px; }
+  .cn2-book { padding: 20px 18px 50px; }
   .cn2-book .cn2-hero { padding: 30px; gap: 25px; }
   .cn2-book .cn2-cover { flex-basis: 125px; margin-right: 0; }
   .cn2-book .cn2-quiz-layout { grid-template-columns: minmax(0, 1fr); }

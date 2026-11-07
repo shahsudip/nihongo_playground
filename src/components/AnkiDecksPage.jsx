@@ -136,7 +136,7 @@ const AnkiDecksPage = () => {
 
   return (
     <div className="min-h-screen bg-[var(--color-bg-primary)] text-[var(--color-text-primary)] pt-2 pb-8 px-4 animate-fade-in">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl 2xl:max-w-[1536px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Header Banner */}
         <div className="mb-8">
           <h1 className="text-3xl md:text-5xl font-black tracking-tight text-gray-900 dark:text-white">
@@ -150,7 +150,7 @@ const AnkiDecksPage = () => {
         {/* ANKI DECKS & APKG OPENER */}
         <div className="animate-fade-in">
             {/* Upload Custom .apkg File Banner */}
-            <div className="bg-white/80 dark:bg-zinc-900/60 border-2 border-dashed border-emerald-400/60 dark:border-purple-500/40 rounded-3xl p-6 sm:p-8 mb-8 text-center relative overflow-hidden transition-all hover:border-emerald-500 dark:hover:border-purple-400 shadow-sm hover:shadow-md">
+            <div className="bg-white/80 dark:bg-zinc-900/60 border-2 border-dashed border-emerald-400/60 dark:border-emerald-500/30 rounded-3xl p-6 sm:p-8 mb-8 text-center relative overflow-hidden transition-all hover:border-emerald-500 dark:hover:border-emerald-500/60 shadow-sm hover:shadow-md">
               <input
                 type="file"
                 accept=".apkg,.zip"
@@ -166,7 +166,7 @@ const AnkiDecksPage = () => {
 
               {!isUploading ? (
                 <div>
-                  <div className="text-4xl mb-2">📥</div>
+                  <div className="w-12 h-12 mx-auto mb-2 rounded-2xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg></div>
                   <h3 className="text-lg font-black text-gray-900 dark:text-white mb-1">
                     Open Any Anki Package (.apkg)
                   </h3>
@@ -176,26 +176,26 @@ const AnkiDecksPage = () => {
 
                   <label
                     htmlFor="apkg-file-input"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-purple-600 dark:to-indigo-600 hover:opacity-95 text-white font-black text-xs rounded-xl shadow-md cursor-pointer transition-all active:scale-95"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 hover:opacity-95 text-white font-black text-xs rounded-xl shadow-md cursor-pointer transition-all active:scale-95"
                   >
-                    <span>📂</span> Choose .apkg File
+                    Choose .apkg File
                   </label>
 
                   {uploadError && (
                     <div className="mt-3 text-xs text-red-500 font-bold">
-                      ⚠️ {uploadError}
+                      {uploadError}
                     </div>
                   )}
                 </div>
               ) : (
                 <div className="py-4">
-                  <div className="text-3xl mb-2 animate-bounce">⚡</div>
-                  <h3 className="text-base font-black text-emerald-700 dark:text-purple-400 mb-2">
+                  <div className="w-10 h-10 mx-auto mb-2 rounded-full border-2 border-emerald-500 border-t-transparent animate-spin"></div>
+                  <h3 className="text-base font-black text-emerald-700 dark:text-emerald-400 mb-2">
                     {uploadProgress.status || 'Extracting Anki Deck...'}
                   </h3>
                   <div className="w-full max-w-md mx-auto h-2.5 bg-gray-100 dark:bg-zinc-800 rounded-full overflow-hidden shadow-inner">
                     <div
-                      className="h-full bg-gradient-to-r from-emerald-500 to-teal-600 dark:from-purple-500 dark:to-indigo-600 transition-all duration-300"
+                      className="h-full bg-gradient-to-r from-emerald-500 to-teal-500 transition-all duration-300"
                       style={{ width: `${uploadProgress.percent}%` }}
                     />
                   </div>
@@ -209,13 +209,13 @@ const AnkiDecksPage = () => {
             {/* Search and Filters Bar */}
             <div className="bg-white dark:bg-zinc-900 border border-gray-200/80 dark:border-white/10 rounded-2xl p-4 shadow-sm mb-8 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div className="relative w-full sm:w-80">
-                <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-sm">🔍</span>
+                <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span>
                 <input
                   type="text"
                   placeholder="Search decks (e.g. Core 10k, N3, Anime)..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-gray-200 dark:border-white/10 bg-gray-50/70 dark:bg-zinc-800 text-sm text-gray-900 dark:text-white placeholder-gray-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 dark:focus:ring-purple-500 transition-all"
+                  className="w-full pl-9 pr-4 py-2.5 rounded-xl border border-gray-200 dark:border-white/10 bg-gray-50/70 dark:bg-zinc-800 text-sm text-gray-900 dark:text-white placeholder-gray-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all"
                 />
               </div>
 
@@ -227,7 +227,7 @@ const AnkiDecksPage = () => {
                     onClick={() => setSelectedLevel(lvl)}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
                       selectedLevel === lvl
-                        ? 'bg-emerald-600 dark:bg-gradient-to-r dark:from-purple-600 dark:to-indigo-600 text-white shadow-sm'
+                        ? 'bg-emerald-600 text-white shadow-sm'
                         : 'bg-gray-100 dark:bg-zinc-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200/80 dark:hover:text-white'
                     }`}
                   >
@@ -238,7 +238,7 @@ const AnkiDecksPage = () => {
             </div>
 
             {/* Decks Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 mb-12">
               {filteredDecks.map((deck) => {
                 const studied = userDeckProgress[deck.id] || 0;
                 const percent = Math.min(100, Math.round((studied / deck.cardCount) * 100));
@@ -246,7 +246,7 @@ const AnkiDecksPage = () => {
                 return (
                   <div
                     key={deck.id}
-                    className="bg-white dark:bg-zinc-900 border border-gray-200/80 dark:border-white/10 rounded-3xl p-6 shadow-sm hover:shadow-xl hover:border-emerald-500/60 dark:hover:border-purple-500/50 transition-all duration-300 flex flex-col justify-between group"
+                    className="bg-white dark:bg-zinc-900 border border-gray-200/80 dark:border-white/10 rounded-3xl p-6 shadow-sm hover:shadow-xl hover:border-emerald-500/60 dark:hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between group"
                   >
                     <div>
                       {/* Top Bar */}
@@ -255,7 +255,7 @@ const AnkiDecksPage = () => {
                           {deck.icon}
                         </div>
                         <div className="flex flex-col items-end gap-1">
-                          <span className="px-2.5 py-0.5 rounded-full bg-emerald-50 dark:bg-purple-950/40 text-emerald-700 dark:text-purple-300 border border-emerald-200/60 dark:border-purple-800/40 text-xs font-black">
+                          <span className="px-2.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/40 text-xs font-black">
                             {deck.level}
                           </span>
                           {deck.layoutName && (
