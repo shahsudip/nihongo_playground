@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
+import { db } from '../firebaseConfig.js';
+import { doc, getDoc } from 'firebase/firestore';
 import { getTestById, savePracticeTestRecord } from '../utils/jlpt_practice_tests_service.js';
 import { getPastExamById, savePastExamRecord } from '../utils/jlpt_past_exams_service.js';
 import { calculateJlptExamScore } from '../utils/jlptScoring.js';
@@ -72,6 +74,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
 
   // Section state (defaults to sectionId from URL or the first section)
   const [selectedSectionId, setSelectedSectionId] = useState(sectionId || null);
+  const [attemptRestored, setAttemptRestored] = useState(false);
 
   // Quiz state
   const [answers, setAnswers] = useState({});
@@ -133,14 +136,14 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
     return () => { isMounted = false; };
   }, [testId, isPastExam, lvlUpper]);
 
-  // Sync selectedSectionId with testData or route param
+  // Sync selectedSectionId with testData or route param (defer fallback until attempt restoration finishes)
   useEffect(() => {
     if (sectionId) {
       setSelectedSectionId(sectionId);
-    } else if (testData?.sections?.length) {
+    } else if (testData?.sections?.length && attemptRestored) {
       setSelectedSectionId(prev => (prev && testData.sections.some(s => s.id === prev) ? prev : testData.sections[0].id));
     }
-  }, [sectionId, testData]);
+  }, [sectionId, testData, attemptRestored]);
 
   // Current active section object (e.g. 第1部: 言語知識（文字・語彙）)
   const currentSection = useMemo(() => {
@@ -190,30 +193,153 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
     return `jlpt_mock_${userPart}_${testId}_${sectionId || 'full'}`;
   }, [currentUser, testId, sectionId]);
 
-  // Restore saved progress on storageKey change
+  const unifiedStorageKey = useMemo(() => {
+    const userPart = currentUser?.uid ? currentUser.uid : 'guest';
+    return `jlpt_mock_${userPart}_${testId}`;
+  }, [currentUser, testId]);
+
+  // Multi-tier attempt restoration: LocalStorage (unified & route-specific), quizHistory, and Firestore
   useEffect(() => {
-    try {
-      const cached = localStorage.getItem(storageKey);
-      if (cached) {
-        const parsed = JSON.parse(cached);
-        if (parsed?.answers && typeof parsed.answers === 'object') {
-          setAnswers(parsed.answers);
+    if (!testData?.sections?.length || attemptRestored) return;
+
+    let isMounted = true;
+    const restoreAttempt = async () => {
+      let restoredAnswers = {};
+      let restoredTimer = 0;
+      let restoredSecId = null;
+      let restoredIndicesBySec = {};
+      let restoredIndex = 0;
+
+      const userPart = currentUser?.uid ? currentUser.uid : 'guest';
+      const possibleKeys = [
+        `jlpt_mock_${userPart}_${testId}`,
+        `jlpt_mock_${userPart}_${testId}_${sectionId || 'full'}`,
+        `jlpt_mock_${userPart}_${testId}_full`,
+        `jlpt_mock_guest_${testId}`,
+        `jlpt_mock_guest_${testId}_${sectionId || 'full'}`,
+        `jlpt_mock_guest_${testId}_full`,
+      ];
+
+      // 1. LocalStorage direct keys
+      for (const k of possibleKeys) {
+        try {
+          const cached = localStorage.getItem(k);
+          if (cached) {
+            const parsed = JSON.parse(cached);
+            if (parsed?.answers && typeof parsed.answers === 'object') {
+              if (Object.keys(parsed.answers).length >= Object.keys(restoredAnswers).length) {
+                restoredAnswers = { ...restoredAnswers, ...parsed.answers };
+                if (typeof parsed.timerSeconds === 'number' && parsed.timerSeconds > restoredTimer) {
+                  restoredTimer = parsed.timerSeconds;
+                }
+                if (parsed.currentSectionId) restoredSecId = parsed.currentSectionId;
+                if (parsed.currentIndexBySection && typeof parsed.currentIndexBySection === 'object') {
+                  restoredIndicesBySec = { ...restoredIndicesBySec, ...parsed.currentIndexBySection };
+                }
+                if (typeof parsed.currentIndex === 'number') restoredIndex = parsed.currentIndex;
+              }
+            }
+          }
+        } catch (_) {}
+      }
+
+      // 2. LocalStorage 'quizHistory'
+      try {
+        const localHistory = JSON.parse(localStorage.getItem('quizHistory') || '[]');
+        const prefix = isPastExam ? 'jlpt-past-' : 'jlpt-mock-';
+        const targetQid = `${prefix}${testData.id}`;
+        const match = Array.isArray(localHistory) && localHistory.find(h => (h.quizId || h.id || '').startsWith(targetQid));
+        if (match?.answers && Object.keys(match.answers).length >= Object.keys(restoredAnswers).length) {
+          restoredAnswers = { ...restoredAnswers, ...match.answers };
+          if (typeof match.timerSeconds === 'number' && match.timerSeconds > restoredTimer) {
+            restoredTimer = match.timerSeconds;
+          }
+          if (match.currentSectionId || match.sectionId) restoredSecId = match.currentSectionId || match.sectionId;
+          if (match.currentIndexBySection && typeof match.currentIndexBySection === 'object') {
+            restoredIndicesBySec = { ...restoredIndicesBySec, ...match.currentIndexBySection };
+          }
+          if (typeof match.currentIndex === 'number') restoredIndex = match.currentIndex;
         }
-        if (typeof parsed.timerSeconds === 'number') {
-          setTimerSeconds(parsed.timerSeconds);
-        }
-        // Section-specific index restoration to prevent cross-section jumping
-        const activeSecId = currentSection?.id || selectedSectionId;
-        const savedSecIndex = parsed.currentIndexBySection?.[activeSecId];
-        if (typeof savedSecIndex === 'number' && savedSecIndex >= 0 && savedSecIndex < totalQuestions) {
-          setCurrentIndex(savedSecIndex);
+      } catch (_) {}
+
+      // 3. Firestore if user is authenticated
+      if (currentUser?.uid) {
+        try {
+          const prefix = isPastExam ? 'jlpt-past-' : 'jlpt-mock-';
+          const targetQid = `${prefix}${testData.id}${sectionId ? `-${sectionId}` : ''}`;
+          const docRef = doc(db, 'users', currentUser.uid, 'quizHistory', targetQid);
+          const snap = await getDoc(docRef);
+          if (snap.exists()) {
+            const data = snap.data();
+            if (data?.answers && Object.keys(data.answers).length >= Object.keys(restoredAnswers).length) {
+              restoredAnswers = { ...restoredAnswers, ...data.answers };
+              if (typeof data.timerSeconds === 'number' && data.timerSeconds > restoredTimer) {
+                restoredTimer = data.timerSeconds;
+              }
+              if (data.currentSectionId || data.sectionId) restoredSecId = data.currentSectionId || data.sectionId;
+              if (data.currentIndexBySection && typeof data.currentIndexBySection === 'object') {
+                restoredIndicesBySec = { ...restoredIndicesBySec, ...data.currentIndexBySection };
+              }
+              if (typeof data.currentIndex === 'number') restoredIndex = data.currentIndex;
+            }
+          }
+        } catch (e) {
+          console.warn('[JlptPracticeTestQuizPage] Could not restore from Firestore:', e);
         }
       }
-    } catch (e) {
-      console.warn('Could not restore cached answers:', e);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [storageKey]);
+
+      if (!isMounted) return;
+
+      // Apply restored answers & timer
+      if (Object.keys(restoredAnswers).length > 0) {
+        setAnswers(restoredAnswers);
+      }
+      if (restoredTimer > 0) {
+        setTimerSeconds(restoredTimer);
+      }
+
+      // 4. Resolve Target Section
+      let targetSecId = sectionId;
+      if (!targetSecId) {
+        if (restoredSecId && testData.sections.some(s => s.id === restoredSecId)) {
+          targetSecId = restoredSecId;
+        } else {
+          // If no restored section ID, check which section has answers
+          const secWithAnswers = testData.sections.find(s =>
+            Array.isArray(s.questions) && s.questions.some(q => restoredAnswers[q.id] !== undefined)
+          );
+          targetSecId = secWithAnswers ? secWithAnswers.id : testData.sections[0].id;
+        }
+      }
+
+      if (targetSecId && targetSecId !== selectedSectionId) {
+        setSelectedSectionId(targetSecId);
+      }
+
+      // 5. Resolve Target Question Index with Smart Resumption
+      const targetSec = testData.sections.find(s => s.id === targetSecId) || testData.sections[0];
+      const targetSecQs = targetSec?.questions || [];
+      const hasAnyAnswerInTargetSec = targetSecQs.some(q => restoredAnswers[q.id] !== undefined);
+      const firstUnanswered = targetSecQs.findIndex(q => restoredAnswers[q.id] === undefined);
+      const savedSecIndex = restoredIndicesBySec[targetSec?.id];
+
+      if (hasAnyAnswerInTargetSec && firstUnanswered !== -1) {
+        // Smart resumption: Jump directly to the next unanswered question (e.g. Mondai 5 of Reading)
+        setCurrentIndex(firstUnanswered);
+      } else if (typeof savedSecIndex === 'number' && savedSecIndex >= 0 && savedSecIndex < targetSecQs.length) {
+        setCurrentIndex(savedSecIndex);
+      } else if (typeof restoredIndex === 'number' && restoredIndex >= 0 && restoredIndex < targetSecQs.length) {
+        setCurrentIndex(restoredIndex);
+      } else {
+        setCurrentIndex(0);
+      }
+
+      setAttemptRestored(true);
+    };
+
+    restoreAttempt();
+    return () => { isMounted = false; };
+  }, [testData, attemptRestored, currentUser, testId, sectionId, isPastExam, selectedSectionId]);
 
   // Timer
   useEffect(() => {
@@ -310,9 +436,9 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
     ? `Back to ${lvlUpper} Past Exams`
     : `Back to ${lvlUpper} Practice Tests`;
 
-  // Persist attempt
+  // Persist attempt (strictly guarded against uninitialized state overwrites)
   const persistAttempt = useCallback(async (nextAnswers, targetIndex, isFinal = false) => {
-    if (!testData || totalQuestions === 0) return;
+    if (!testData || totalQuestions === 0 || !attemptRestored) return;
     const ansCount = Object.keys(nextAnswers).length;
     let score = 0;
     Object.keys(nextAnswers).forEach((qId) => {
@@ -361,26 +487,32 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
       timestamp: new Date().toISOString(),
     };
 
-    // Save locally with per-section index isolation
+    // Save locally with per-section index isolation across both route-specific and unified keys
+    const activeSecId = currentSection?.id || selectedSectionId || 'full';
+    let nextIndices = { [activeSecId]: targetIndex };
     try {
       let existingCached = {};
       try {
         existingCached = JSON.parse(localStorage.getItem(storageKey) || '{}');
       } catch (_) {}
       const prevIndices = existingCached.currentIndexBySection || {};
-      const activeSecId = currentSection?.id || selectedSectionId || 'full';
-      const nextIndices = {
+      nextIndices = {
         ...prevIndices,
         [activeSecId]: targetIndex,
       };
 
-      localStorage.setItem(storageKey, JSON.stringify({
+      const payload = JSON.stringify({
         answers: nextAnswers,
         currentIndex: targetIndex,
         currentSectionId: activeSecId,
         currentIndexBySection: nextIndices,
         timerSeconds,
-      }));
+      });
+
+      localStorage.setItem(storageKey, payload);
+      if (unifiedStorageKey && unifiedStorageKey !== storageKey) {
+        localStorage.setItem(unifiedStorageKey, payload);
+      }
     } catch (e) {
       console.warn('LocalStorage save error:', e);
     }
@@ -391,7 +523,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
     } else {
       await savePracticeTestRecord(currentUser, record);
     }
-  }, [testData, totalQuestions, activeQuestions, sectionId, timerSeconds, storageKey, currentUser, isPastExam, lvlUpper, currentSection?.id, selectedSectionId]);
+  }, [testData, totalQuestions, activeQuestions, sectionId, timerSeconds, storageKey, unifiedStorageKey, attemptRestored, currentUser, isPastExam, lvlUpper, currentSection?.id, selectedSectionId]);
 
   const questionCardRef = useRef(null);
 
@@ -439,21 +571,27 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
     if (!nextSecId || nextSecId === selectedSectionId) return;
     setSelectedSectionId(nextSecId);
 
-    // Look up saved index for this specific section from cache or start at 0
+    // Look up saved index or first unanswered question for this specific section
     let targetIndex = 0;
     try {
+      const targetSec = testData?.sections?.find(s => s.id === nextSecId);
+      const targetSecQs = targetSec?.questions || [];
+      const hasAnyAnswer = targetSecQs.some(q => answers[q.id] !== undefined);
+      const firstUnanswered = targetSecQs.findIndex(q => answers[q.id] === undefined);
+
       const cached = JSON.parse(localStorage.getItem(storageKey) || '{}');
       const savedSecIdx = cached.currentIndexBySection?.[nextSecId];
-      const targetSec = testData?.sections?.find(s => s.id === nextSecId);
-      const targetTotal = targetSec?.questions?.length || 0;
-      if (typeof savedSecIdx === 'number' && savedSecIdx >= 0 && savedSecIdx < targetTotal) {
+
+      if (hasAnyAnswer && firstUnanswered !== -1) {
+        targetIndex = firstUnanswered;
+      } else if (typeof savedSecIdx === 'number' && savedSecIdx >= 0 && savedSecIdx < targetSecQs.length) {
         targetIndex = savedSecIdx;
       }
     } catch (_) {}
 
     setCurrentIndex(targetIndex);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [selectedSectionId, storageKey, testData]);
+  }, [selectedSectionId, storageKey, testData, answers]);
 
   const handleNext = useCallback(() => {
     if (currentIndex < totalQuestions - 1) {
@@ -518,6 +656,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
     setTimerActive(true);
     try {
       localStorage.removeItem(storageKey);
+      if (unifiedStorageKey) localStorage.removeItem(unifiedStorageKey);
     } catch (_) {}
   };
 
