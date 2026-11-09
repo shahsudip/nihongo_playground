@@ -159,15 +159,15 @@
             "ていとう",
             "ていどう"
           ],
-          "correct": 1,
-          "correctOption": "てきどう",
+          "correct": 2,
+          "correctOption": "てきとう",
           "explanations": [
-            "てきどう: Selected answer key index in this test file (standard reading is てきとう).",
-            "てきとう (tekitō): The authentic standard reading of 適当 (suitable / appropriate).",
+            "てきどう erroneously voices the syllable とう into どう; the authentic reading is てきとう.",
+            "てきとう (tekitō) is the authentic standard reading of 適当 (suitable / appropriate).",
             "ていとう (抵当) means 'mortgage / collateral'.",
             "ていどう (低度) means 'low degree'."
           ],
-          "explanation": "The correct answer is recorded as **1 てきどう** in the original exam key; however, in standard Japanese, the authentic reading is **2 てきとう** (*tekitō*).\n\n---\n### Vocabulary Breakdown\n* **Kanji**: 適当 (てきとう / *tekitō*) - suitable, appropriate, proper, fitting (or casually: perfunctory / careless).\n  * 適 (てき / *teki*) - suitable, fit.\n  * 当 (とう / *tō*) - hit, appropriate.\n* **Context**: 「<u>適当</u>なやり方を教えてください。」 (\"Please teach me an appropriate/suitable way of doing it.\")\n\n---\n### Note on Test Data & Distractors\n* **1. てきどう**: Recorded answer key index in this digital file (note: standard Japanese uses unvoiced とう).\n* **2. てきとう**: Standard native reading of 適当 (*tekitō*).\n* **3. ていとう**: 抵当 (ていとう / *teitō*) means \"mortgage / collateral\".\n* **4. ていどう**: 低度 (ていどう / *teidō*) means \"low degree\"."
+          "explanation": "The correct answer is **2 てきとう** (*tekitō*).\n\n---\n### Vocabulary Breakdown\n* **Kanji**: 適当 (てきとう / *tekitō*) - suitable, appropriate, proper, fitting (or casually: perfunctory / careless).\n  * 適 (てき / *teki*) - suitable, fit.\n  * 当 (とう / *tō*) - hit, appropriate. Note that 当 is read とう (unvoiced), never どう.\n* **Context**: 「<u>適当</u>なやり方を教えてください。」 (\"Please teach me an appropriate / suitable way of doing it.\")\n\n---\n### Why Other Options Don't Fit\n* **1. てきどう**: Incorrect voiced reading (どう). The on'yomi of 当 is unvoiced とう.\n* **2. てきとう**: The authentic, standard reading of 適当 (*tekitō*).\n* **3. ていとう**: 抵当 (ていとう / *teitō*) means \"mortgage / collateral\".\n* **4. ていどう**: 低度 (ていどう / *teidō*) means \"low degree\"."
         },
         {
           "id": "n3_past_2024_07_vocab_q8",
@@ -1381,15 +1381,15 @@
             "昼寝で寝すぎないためには、昼寝をする30分前にコーヒーを飲むといい。",
             "昼寝で、30分ぐらいで自然に起きるためには、昼寝の直前にコーヒーを飲むといい。"
           ],
-          "correct": 2,
-          "correctOption": "集中力が高くなるから、昼寝のあとで30分以内にコーヒーを飲むといい。",
+          "correct": 4,
+          "correctOption": "昼寝で、30分ぐらいで自然に起きるためには、昼寝の直前にコーヒーを飲むといい。",
           "explanations": [
-            "Contradicts the text, which actively encourages drinking coffee before a nap.",
-            "Recorded answer key in this dataset, highlighting the heightened concentration resulting from the technique.",
-            "Drinking 30 minutes before sleeping would prevent the person from falling asleep at all.",
-            "Aligns with the scientific text explanation of drinking coffee right before a 20-30 minute nap."
+            "Contradicts the passage, which explicitly advocates drinking coffee immediately before taking a nap.",
+            "The text instructs drinking coffee before napping (昼寝の前に), not after waking up.",
+            "Drinking 30 minutes before napping would make falling asleep difficult because caffeine kicks in after ~30 minutes.",
+            "Correct: Consuming coffee right before a nap causes caffeine to take effect ~30 minutes later, waking the sleeper naturally."
           ],
-          "explanation": "The correct answer is recorded as **2 集中力が高くなるから、昼寝のあとで30分以内にコーヒーを飲むといい。** in the official test file key.\n\n---\n### Core Question\n* **Inquiry**: 昼寝とコーヒーについて、この文章で何と述べられているか。 (\"What is stated in this passage regarding napping and coffee?\")\n\n---\n### Evidence & Text Justification\n* **Passage Evidence**:\n  > 「昼寝をすると起きたあとの集中力が上がるが、長く寝るのはよくない。そこで、飲むと目が覚めるというコーヒーの効果を利用するのだ。この効果は、飲んでから約30分後に出るので、昼寝の前に飲むと、30分ぐらいで自然に目が覚める。ぜひやってみてほしい。」\n* **Passage Logic**:\n  The text discusses the popular concept of a \"coffee nap\"—consuming coffee immediately prior to a short nap so that caffeine kicks in approximately 30 minutes later, waking the sleeper naturally before deep sleep sets in and enhancing afternoon focus.\n\n---\n### Why Other Options Don't Fit\n* **1. 昼寝の前には飲まないほうがいい**: Contradicts the text, which explicitly advocates drinking coffee before napping.\n* **2. 集中力が高くなるから、昼寝のあとで...**: Marked answer key index in this digitized dataset.\n* **3. 昼寝をする30分前にコーヒーを飲むといい**: Drinking 30 minutes before napping would cause caffeine to take effect while trying to fall asleep.\n* **4. 昼寝の直前にコーヒーを飲むといい**: Describes the exact physiological mechanism explained in the passage (caffeine takes ~30 mins to work)."
+          "explanation": "The correct answer is **4 昼寝で、30分ぐらいで自然に起きるためには、昼寝の直前にコーヒーを飲むといい。**\n\n---\n### Core Question\n* **Inquiry**: 昼寝とコーヒーについて、この文章で筆者は何と述べているか。 (\"What does the author state regarding napping and coffee?\")\n\n---\n### Evidence & Text Justification\n* **Passage Evidence**:\n  > 「昼寝をすると起きたあとの集中力が上がるが、長く寝るのはよくない。そこで、飲むと目が覚めるというコーヒーの効果を利用するのだ。<u>この効果は、飲んでから約30分後に出るので、昼寝の前に飲むと、30分ぐらいで自然に目が覚める</u>。ぜひやってみてほしい。」\n* **Analysis**:\n  The author explains the physiological mechanism of a \"coffee nap\": caffeine takes effect approximately 30 minutes after consumption. Drinking coffee right before taking a nap enables one to wake up naturally after about 30 minutes, preventing oversleeping and boosting post-nap concentration. Choice 4 precisely captures this mechanism.\n\n---\n### Why Other Options Don't Fit\n* **1. コーヒーを飲むと眠れなくなるから、昼寝の前には飲まないほうがいい。**: Contradicted by the text, which explicitly encourages drinking coffee before a short nap.\n* **2. 集中力が高くなるから、昼寝のあとで30分以内にコーヒーを飲むといい。**: The text instructs drinking coffee *before* the nap (昼寝の前に飲む), not within 30 minutes after waking up.\n* **3. 昼寝で寝すぎないためには、昼寝をする30分前にコーヒーを飲むといい。**: Drinking 30 minutes before napping would cause caffeine to take effect while trying to fall asleep, defeating the purpose.\n* **4. 昼寝で、30分ぐらいで自然に起きるためには、昼寝の直前にコーヒーを飲むといい。**: Direct match with the passage's evidence."
         },
         {
           "id": "n3_past_2024_07_grammar_reading_q27",
@@ -1450,15 +1450,15 @@
             "夜、ホウレンソウに光が当たるようにしたから。",
             "夜、ホウレンソウに光が当たらないようにしたから。"
           ],
-          "correct": 3,
-          "correctOption": "夜、ホウレンソウに光が当たるようにしたから。",
+          "correct": 4,
+          "correctOption": "夜、ホウレンソウに光が当たらないようにしたから。",
           "explanations": [
-            "The text did not adjust daytime light levels; the problem was nighttime illumination.",
-            "Shielding light during daytime is incorrect; vegetables need daytime light.",
-            "Designated answer index in this dataset recording.",
-            "Textual reality: Covering with cardboard prevented room light from hitting the spinach at night."
+            "Daytime lighting was not the issue; the plant died from artificial room lighting at night.",
+            "Shielding light during the day is harmful to vegetable growth.",
+            "Contradicts the text: the author discovered that light must NOT hit the spinach at night.",
+            "Correct: Covering the spinach with a cardboard box prevented indoor electric light from reaching it at night."
           ],
-          "explanation": "The correct answer is recorded as **3 夜、ホウレンソウに光が当たるようにしたから。** in the test key (with pedagogical note on text context: **4 夜、ホウレンソウに光が当たらないようにしたから。**).\n\n---\n### Core Question & Text Justification\n* **Inquiry**: ③<u>今度は元気に育ちました</u>とあるが、どうして元気に育ったのか。 (\"Why did the spinach grow healthily this time?\")\n* **Passage Evidence**:\n  > 「ホウレンソウは<u>夜になったら、光が当たってはいけない</u>ということがわかりました。私の場合は、部屋の電気の光がよくなかったようです。友達は、段ボール箱でホウレンソウにカバーをしているのだそうです。私も同じようにやってみたら、③今度は元気に育ちました。」\n* **Pedagogical Breakdown**:\n  The friend explained that spinach must NOT be exposed to light at night (夜になったら、光が当たってはいけない), and uses a cardboard box to shield it from indoor room lights. By copying this method (shielding light at night), the author succeeded.\n* *(Note: In this test key, Option 3 is the designated answer index)*.\n\n---\n### Why Other Options Don't Fit\n* **1. 昼、ホウレンソウにもっと光が当たるようにしたから**: The issue identified was not daytime sunlight, but nighttime room lighting.\n* **2. 昼、ホウレンソウにあまり光が当たらないようにしたから**: Daytime shade was not the solution.\n* **3. 夜、ホウレンソウに光が当たるようにしたから**: Recorded key in dataset.\n* **4. 夜、ホウレンソウに光が当たらないようにしたから**: Direct factual reflection of shielding the plant with a cardboard box at night."
+          "explanation": "The correct answer is **4 夜、ホウレンソウに光が当たらないようにしたから。**\n\n---\n### Core Question\n* **Inquiry**: ③<u>今度は元気に育ちました</u>とあるが、どうして元気に育ったのか。 (\"Why did the spinach grow healthily this time?\")\n\n---\n### Evidence & Text Justification\n* **Passage Evidence**:\n  > 「友達に電話をして聞いてみると、<u>ホウレンソウは夜になったら、光が当たってはいけない</u>ということがわかりました。私の場合は、部屋の電気の光がよくなかったようです。<u>友達は、段ボール箱でホウレンソウにカバーをしているのだそうです。私も同じようにやってみたら、③今度は元気に育ちました</u>。」\n* **Analysis**:\n  The author learned from their friend that spinach must NOT be exposed to light at night (夜になったら、光が当たってはいけない). The previous batch withered because the indoor electric lights shone on it at night. By copying the friend's method of covering the plant with a cardboard box at night (shielding it from light), the spinach grew healthily. Choice 4 is the authentic, factually correct choice.\n\n---\n### Why Other Options Don't Fit\n* **1. 昼、ホウレンソウにもっと光が当たるようにしたから。**: Daytime light was not the problem identified; the issue was nighttime indoor lighting.\n* **2. 昼、ホウレンソウにあまり光が当たらないようにしたから。**: Shading the plant during the day is incorrect; spinach needs daytime light.\n* **3. 夜、ホウレンソウに光が当たるようにしたから。**: The exact opposite of what the friend taught (光が当たってはいけない = light must NOT hit it).\n* **4. 夜、ホウレンソウに光が当たらないようにしたから。**: Direct match with covering the plant at night to shield it from room light."
         },
         {
           "id": "n3_past_2024_07_grammar_reading_q30",
