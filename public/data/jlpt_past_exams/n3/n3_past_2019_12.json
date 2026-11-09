@@ -30,11 +30,12 @@
           "correct": 2,
           "correctOption": "よやく",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「ようやく」は「予」が長音になっており誤りです（「漸く」の読み）。",
+            "正解です。「予約」（よやく）は前もって約束・手配しておくことです。",
+            "「よよく」は「約」の母音が誤っています。",
+            "「ようやく」は長音の誤りです。"
+          ],
+          "explanation": "正解は **2 よやく** (yoyaku) です。\n\n「予約」の正しい読み方は「よやく」です。「予」は短音の「よ」、「約」は「やく」と読みます。長音にはなりません。文の意味は「１０時に予約をお願いします」（Please make a reservation for 10 o'clock）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q2",
@@ -51,11 +52,12 @@
           "correct": 4,
           "correctOption": "わかかった",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「わるかった」は「悪かった」（悪い）です。",
+            "「さむかった」は「寒かった」（寒い）です。",
+            "「こわかった」は「怖かった／恐ろしかった」（怖い）です。",
+            "正解です。「若かった」（わかかった）は年齢が若いことを表します。"
+          ],
+          "explanation": "正解は **4 わかかった** (wakakatta) です。\n\n「若かった」の漢字「若」は訓読みで「わか（い）」と読みます。年齢が少ないことを意味します。文の意味は「年齢が非常に若かったのです」（Their age was extremely young）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q3",
@@ -72,11 +74,12 @@
           "correct": 1,
           "correctOption": "じょうひん",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "正解です。「上品」（じょうひん）は品格や気品があり、洗練されている様子を表します。",
+            "「じょうびん」は「品」が濁音になっており誤りです。",
+            "「じょひん」は「上」が短音になっており誤りです。",
+            "「じょびん」は短音かつ濁音の誤りです。"
+          ],
+          "explanation": "正解は **1 じょうひん** (jōhin) です。\n\n「上品」の正しい読み方は「じょうひん」です。「上」は長音の「じょう」、「品」は清音の「ひん」と読みます。文の意味は「上品な人ですね」（She is such an elegant / refined person, isn't she?）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q4",
@@ -93,11 +96,12 @@
           "correct": 2,
           "correctOption": "たすけて",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「とどけて」は「届けて」（届ける）です。",
+            "正解です。「助けて」（たすけて）は救助・手助けをすることを表します。",
+            "「うけて」は「受けて」（受ける）です。",
+            "「かたづけて」は「片付けて」（片付ける）です。"
+          ],
+          "explanation": "正解は **2 たすけて** (tasukete) です。\n\n「助けて」の漢字「助」は訓読みで「たす（ける）」と読みます。力を貸して手助けすることを意味します。文の意味は「山田さんに助けてもらった」（I was helped by Yamada-san）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q5",
@@ -114,11 +118,12 @@
           "correct": 3,
           "correctOption": "みらい",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「しょらい」は誤読です。",
+            "「しょうらい」は「将来」の読みです。",
+            "正解です。「未来」（みらい）はこれから来る時、将来のことを表します。",
+            "「みいらい」は「未」が長音になっており誤りです。"
+          ],
+          "explanation": "正解は **3 みらい** (mirai) です。\n\n「未来」の正しい読み方は「みらい」です。「未」は「み」、「来」は「らい」です。文の意味は「未来を考えてみる」（Try thinking about the future）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q6",
@@ -135,11 +140,12 @@
           "correct": 1,
           "correctOption": "かくえき",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "正解です。「各駅」（かくえき）は路線のすべての駅のことです（各駅停車）。",
+            "「がくえき」は「各」が濁音になっており誤りです。",
+            "「きゃくえき」は拗音の誤読です。",
+            "「ぎゃくえき」は濁音拗音の誤読です。"
+          ],
+          "explanation": "正解は **1 かくえき** (kakueki) です。\n\n「各駅」の正しい読み方は「かくえき」です。「各」は清音短音の「かく」、「駅」は「えき」です。文の意味は「この電車は各駅に止まります」（This train stops at every station）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q7",
@@ -156,11 +162,12 @@
           "correct": 4,
           "correctOption": "かった",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「かざった」は「飾った」（飾る）です。",
+            "「おった」は「折った／追った」（折る／追う）です。",
+            "「のこった」は「残った」（残る）です。",
+            "正解です。「勝った」（かった）は勝利を収めたことを表します。"
+          ],
+          "explanation": "正解は **4 かった** (katta) です。\n\n「勝った」の漢字「勝」は訓読みで「か（つ）」と読みます。勝負に勝つことを意味します。文の意味は「誰が勝ったんですか？」（Who won?）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q8",
@@ -177,11 +184,12 @@
           "correct": 1,
           "correctOption": "いんしょう",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "正解です。「印象」（いんしょう）は人の心に強く刻み込まれる感じ・イメージのことです。",
+            "「いんそう」は「象」が直音になっており誤りです（「人相」の相など）。",
+            "「にんしょう」は「認証」などの読みです。",
+            "「にんそう」は「人相」（顔つき）の読みです。"
+          ],
+          "explanation": "正解は **1 いんしょう** (inshō) です。\n\n「印象」の正しい読み方は「いんしょう」です。「印」は「いん」、「象」は拗音長音の「しょう」と読みます。文の意味は「彼に初めて会ったときの印象はどうでしたか？」（What was your impression when you first met him?）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q9",
@@ -198,11 +206,12 @@
           "correct": 4,
           "correctOption": "理由",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「埋田」は誤字の組み合わせです。",
+            "「理田」は「由」が「田」になっており誤字です。",
+            "「埋由」は「理」が「埋」になっており誤字です。",
+            "正解です。「理由」（りゆう）は物事の根拠・原因を表します。"
+          ],
+          "explanation": "正解は **4 理由** です。\n\n「りゆう」の正しい漢字は「理由」です。「理」（ことわり・道理）と「由」（よし・いわれ）を合わせます。文の意味は「理由はよくわかりません」（I don't really know the reason）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q10",
@@ -219,11 +228,12 @@
           "correct": 3,
           "correctOption": "島",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「寺」（てら）はお寺のことです。",
+            "「村」（むら）は集落・むらのことです。",
+            "正解です。「島」（しま）はアイランド（島嶼）を表します。",
+            "「庭」（にわ）は庭園・ガーデンのことです。"
+          ],
+          "explanation": "正解は **3 島** です。\n\n「しま」の正しい漢字は「島」です。四方を水に囲まれた陸地を指します。文の意味は「この島には、初めて来ました」（This is my first time coming to this island）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q11",
@@ -240,11 +250,12 @@
           "correct": 4,
           "correctOption": "記念",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「紀念」は中国語の簡体字や古い表記で、現代日本語の常用漢字表記は「記念」です。",
+            "「記淰」は誤字です。",
+            "「記淰」は誤字です。",
+            "正解です。「記念」（きねん）は後々の思い出として記憶に残すことを表します。"
+          ],
+          "explanation": "正解は **4 記念** です。\n\n「きねん」の漢字は「記」（しるす・記憶）と「念」（おもう・心にとめる）を合わせた「記念」です。文の意味は「卒業の記念に写真を撮りました」（We took photos in commemoration of graduation）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q12",
@@ -261,11 +272,12 @@
           "correct": 3,
           "correctOption": "一般的",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「一似的」は誤字です。",
+            "「一合的」は誤字です。",
+            "正解です。「一般的」（いっぱんてき）は特殊ではなく通常・普通である様子を表します。",
+            "「一船的」は「般」が「船」になっており誤字です。"
+          ],
+          "explanation": "正解は **3 一般的** です。\n\n「いっぱんてき」の漢字は「一般」（いっぱん）に接尾辞「的」（てき）をつけた「一般的」です。広く行き渡っている通常の状態を指します。文の意味は「これが一般的な方法です」（This is the common / general method）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q13",
@@ -282,11 +294,12 @@
           "correct": 1,
           "correctOption": "必ず",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "正解です。「必ず」（かならず）は確実性や必然性を表す副詞です。",
+            "「心ず」は誤字です。",
+            "「芯ず」は誤字です。",
+            "「表ず」は誤字です。"
+          ],
+          "explanation": "正解は **1 必ず** です。\n\n「かならず」の漢字表記は「必ず」です。100%例外なく行うことを意味します。文の意味は「今日も必ず行きます」（I will definitely go today too）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q14",
@@ -303,11 +316,12 @@
           "correct": 2,
           "correctOption": "現れた",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「表れた」は感情や態度などが外に出て表れる場合に多く用いられ、客観的な現象や効果が目に見えて出現する場合は「現れた」を用います。",
+            "正解です。「現れた」（あらわれた）は効果や成果が形となって出現することを表します。",
+            "「荒れた」（あれた）は状態が乱れる・荒廃することです。",
+            "「著れた」は「著しい」（いちじるしい）の漢字であり、動詞「あらわれた」の表記ではありません。"
+          ],
+          "explanation": "正解は **2 現れた** です。\n\n「効果にあらわれた」のように、効き目や結果が表面にはっきりと出て目に見えるようになることは「現れた」（あらわれた）を用います。文の意味は「効果に現れたようですよ」（It seems that it has manifested in the results/effects）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q15",
@@ -324,11 +338,12 @@
           "correct": 3,
           "correctOption": "就職",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「登場」（とうじょう）は舞台や物語に現れることです。",
+            "「進行」（しんこう）は物事が前へ進むことです。",
+            "正解です。「就職」（しゅうしょく）は会社に就職して社員として職に就くことです。",
+            "「同席」（どうせき）は同じ席に居合わせることです。"
+          ],
+          "explanation": "正解は **3 就職** (shūshoku) です。\n\n企業や組織に入社して働くことは「就職する」と言います。文の意味は「おじさんの会社に就職するつもりだ」（I intend to get a job / find employment at my uncle's company）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q16",
@@ -345,11 +360,12 @@
           "correct": 2,
           "correctOption": "デザイン",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「レシピ」は料理の調理法・材料表のことです。",
+            "正解です。「デザイン」（design）は製品の色や形などの意匠を構想することです。",
+            "「サイン」は署名や合図のことです。",
+            "「ミックス」は混ぜ合わせることです。"
+          ],
+          "explanation": "正解は **2 デザイン** (dezain) です。\n\n帽子や洋服などの色・形状・装飾についての意匠・設計を「デザイン」と言います。文の意味は「この店の帽子は全部私が色や形などのデザインを考えています」（I design all the hats in this shop, including colors and shapes）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q17",
@@ -360,17 +376,18 @@
           "options": [
             "あて先",
             "合図",
-            "合計",
+            "締め切り",
             "合計"
           ],
           "correct": 3,
-          "correctOption": "合計",
+          "correctOption": "締め切り",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「あて先」（宛先）は手紙や荷物を送り届ける相手の住所・氏名のことです。",
+            "「合図」（あいず）は手振りや音などで人に知らせるサインのことです。",
+            "正解です。「締め切り」（しめきり）は提出や応募の期日・期限のことです。",
+            "「合計」（ごうけい）は数値をすべて足し合わせた総計のことです。"
+          ],
+          "explanation": "正解は **3 締め切り** (shimekiri) です。\n\n※過去問の印刷・スキャンデータにおいて選択肢3と4が重複して「合計」と記載されている誤植がありますが、本来の正解選択肢は「締め切り」です。申込書を提出する期限日は「申し込みの締め切り」と言います。\n文全体の意味は「申し込みの締め切りは来週の月曜日ですから、それまでに申込書を出してください」（The deadline for applications is next Monday, so please submit your application form by then）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q18",
@@ -387,11 +404,12 @@
           "correct": 1,
           "correctOption": "通訳",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "正解です。「通訳」（つうやく）は話される言葉をリアルタイムで別の言語に訳すことです。",
+            "「案内」（あんない）は道や施設を導くことです。",
+            "「伝言」（でんごん）はことづけのメッセージを取り次ぐことです。",
+            "「連絡」（れんらく）は用件を知らせることです。"
+          ],
+          "explanation": "正解は **1 通訳** (tsūyaku) です。\n\nある言語で話された音声を別の言語に口頭で変換して仲介することは「通訳（する）」と言います。文の意味は「英語で会議をするときは、英語がわかる佐藤さんが英語を日本語に通訳してくれる」（When having meetings in English, Sato-san, who understands English, interprets it into Japanese for us）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q19",
@@ -408,11 +426,12 @@
           "correct": 1,
           "correctOption": "突然",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "正解です。「突然」（とつぜん）は不意に急に事態が発生する様子を表します。",
+            "「急いで」（いそいで）は人間が動作を急ぐことです。照明の消灯には使えません。",
+            "「結構」（けっこう）はかなり・十分にという程度を表します。",
+            "「早速」（さっそく）は機会を逃さず直ちに行動することです。"
+          ],
+          "explanation": "正解は **1 突然** (totsuzen) です。\n\n何の前触れもなく急激に事態が起こる様子を「突然」と言います。電気がふいに消える現象に最適です。文の意味は「部屋の電気が突然消えて、驚いた」（The light in the room suddenly went out, and I was startled）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q20",
@@ -429,11 +448,12 @@
           "correct": 4,
           "correctOption": "信じます",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「手伝います」は人の作業を助力することです。",
+            "「褒めます」（ほめます）は人の良い行いを称賛することです。",
+            "「守ります」は規則や約束を守ることです。",
+            "正解です。「信じます」（しんじます）は相手の言葉が嘘ではないと信頼することです。"
+          ],
+          "explanation": "正解は **4 信じます** (shinjimasu) です。\n\n人の言ったことが真実であると疑わずに受け入れることは「信じる」と言います。「誰もが嘘だと思っているが、私は彼が言ったことを信じる」という対比が完璧に成り立ちます。文の意味は「誰もが木村さんはうそをついていると思っているが、私は彼が言ったことを信じます」（Everyone thinks Kimura-san is lying, but I believe what he said）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q21",
@@ -450,11 +470,12 @@
           "correct": 2,
           "correctOption": "清潔",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「新鮮」（しんせん）は魚や野菜などの生鮮食品が採れたてで新しいことです。",
+            "正解です。「清潔」（せいけつ）は汚れや雑菌がなくきれいに保たれている状態を表します。",
+            "「正常」（せいじょう）は機械や生体の機能が狂いなく正常であることです。",
+            "「丁寧」（ていねい）は態度や作業が念入りで礼儀正しいことです。部屋の状態を表す形容動詞としては「清潔だ」が適切です。"
+          ],
+          "explanation": "正解は **2 清潔** (seiketsu) です。\n\nごみや汚れがなく、衛生的できれいな状態を「清潔（な）」と言います。清掃が行き届いたホテルの部屋にぴったりです。文の意味は「このホテルは慎重に清掃されているため、部屋はとても清潔だ」（Because this hotel is carefully cleaned, the rooms are very clean and hygienic）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q22",
@@ -471,11 +492,12 @@
           "correct": 4,
           "correctOption": "めんどうくさい",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「にくらしい」（憎らしい）は相手の言動が憎たらしく不快であることです。",
+            "「だらしない」は生活態度や服装に規律・締まりがないことです。",
+            "「しょうがない」は「仕方がない」（手段がない）ことです。",
+            "正解です。「面倒くさい」（めんどうくさい）は手間がかかって煩わしく、やりたくない気持ちを表します。"
+          ],
+          "explanation": "正解は **4 めんどうくさい** (mendōkusai) です。\n\n手間がかかって億劫であり、やる気が起きない気分を「面倒くさい」と言います。仕事で疲れて自炊するのが億劫な状況を表します。文の意味は「仕事で遅くなってしまい、今日はご飯を作るのが面倒くさいので、お弁当を買うことにしました」（I got delayed by work and making dinner today feels like too much hassle, so I decided to buy a bento）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q23",
@@ -492,11 +514,12 @@
           "correct": 3,
           "correctOption": "どきどき",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「こんこん」は咳き込む音や、激しく雪が降る様子を表します。",
+            "「だぶだぶ」は衣服のサイズが大きすぎて余っている様子です。",
+            "正解です。「どきどき」は緊張や興奮で心臓が激しく打つ様子を表します。",
+            "「ちかちか」は光が点滅して眩しい様子や、目に痛みがある様子です。"
+          ],
+          "explanation": "正解は **3 どきどき** (dokidoki) です。\n\n緊張や不安・期待などで心臓の拍動が激しく高鳴る様子を表すオノマトペは「どきどき（する）」です。文の意味は「みんなの前でスピーチをしたときは、緊張して胸がどきどきしました」（When I gave a speech in front of everyone, I was nervous and my heart was pounding）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q24",
@@ -513,11 +536,12 @@
           "correct": 2,
           "correctOption": "とけて",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「もえて」（燃えて）は火がついて炎を上げて燃焼することです。",
+            "正解です。「溶けて」（とけて）は熱によってアイスや氷が液体化することです。",
+            "「さめて」（冷めて）は温かいものの熱が失われて冷たくなることです。",
+            "「かれて」（枯れて）は植物が水分を失い乾いて死ぬことです。"
+          ],
+          "explanation": "正解は **2 とけて** (tokete) です。\n\nアイスクリームや氷・雪などの固形物が熱によって液状に変わることは「溶ける」（とける）と言います。文の意味は「とても暑かったので、スーパーで買ったアイスクリームが家に着く前に溶けてしまった」（Because it was so hot, the ice cream I bought at the supermarket melted before I arrived home）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q25",
@@ -534,11 +558,12 @@
           "correct": 4,
           "correctOption": "事情",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「秘密」（ひみつ）は他人に隠している事柄です。",
+            "「歴史」（れきし）は過去の時代の出来事の積み重ねです。",
+            "「具合」（ぐあい）は健康状態や都合のことです。",
+            "正解です。「事情」（じじょう）はある事態に至った具体的な背景や理由のことです。"
+          ],
+          "explanation": "正解は **4 事情** (jijō) です。\n\n事態がそのようになった理由や背景・状況のことを「事情を話す」と言います。文の意味は「アパートの鍵をなくしてしまったので、大家さんに事情を話して、鍵を開けてもらった」（Because I lost my apartment key, I explained the situation / circumstances to the landlord and had them unlock the door）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q26",
@@ -555,11 +580,12 @@
           "correct": 2,
           "correctOption": "お礼",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「お願い」（おねがい）は頼み事・依頼のことです。",
+            "正解です。「感謝」と「お礼」は恩恵に対してありがたく思う気持ちを表す同義語です。",
+            "「お見舞い」（おみまい）は病気や災害に遭った人を訪ねて慰めることです。",
+            "「お知らせ」（おしらせ）は情報や通知を伝えることです。"
+          ],
+          "explanation": "正解は **2 お礼** (o-rei) です。\n\n「感謝」（かんしゃ）はありがたいと思う気持ちであり、「お礼の手紙」（thank-you letter）と言い換えることができます。文の意味は「鈴木さんへ感謝の手紙を送った」（I sent a letter of gratitude / thanks to Suzuki-san）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q27",
@@ -576,11 +602,12 @@
           "correct": 4,
           "correctOption": "台所",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「廊下」（ろうか）は部屋と部屋をつなぐ通路（hallway）です。",
+            "「居間」（いま）は家族が集まるリビングルーム（living room）です。",
+            "「玄関」（げんかん）は建物の出入り口（entrance）です。",
+            "正解です。「キッチン」と「台所」は調理を行う場所を指す同義語です。"
+          ],
+          "explanation": "正解は **4 台所** (daidokoro) です。\n\n「キッチン」（kitchen）は料理・調理をする場所であり、日本語の「台所」（だいどころ）と言い換えることができます。文の意味は「子どもたちはキッチンにいます」（The children are in the kitchen）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q28",
@@ -597,11 +624,12 @@
           "correct": 4,
           "correctOption": "心配な",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「時間がない」は時間不足のことです。",
+            "「お金がない」は金銭不足のことです。",
+            "「危険な」は身の危険がある状態です。「不安」は心情を表すため「心配な」が正確です。",
+            "正解です。「不安な」と「心配な」は安心できず気掛かりである心情を表す類義語です。"
+          ],
+          "explanation": "正解は **4 心配な** (shinpai na) です。\n\n「不安（な）」（ふあん）は先行きや物事に安心できず気にかかる状態であり、「心配な」と言い換えることができます。文の意味は「不安なので、私は行かないことにした」（Because I feel anxious / worried, I decided not to go）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q29",
@@ -618,11 +646,12 @@
           "correct": 2,
           "correctOption": "すいている",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「痛い」は腹痛があることです。",
+            "正解です。「ぺこぺこ」は空腹であることを表し、「おなかがすいている」と完全に同義です。",
+            "「かゆい」は皮膚が痒いことです。",
+            "「いっぱい」は満腹であることを表し、正反対です。"
+          ],
+          "explanation": "正解は **2 すいている** (suite iru) です。\n\n「ぺこぺこ」は空腹で胃が空っぽになり、ひどくお腹が空いている様子を表すオノマトペで、「おなかがすいている」と言い換えることができます。文の意味は「おなかがぺこぺこだ」（I am famished / very hungry）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q30",
@@ -639,11 +668,12 @@
           "correct": 1,
           "correctOption": "何も話さないで",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "正解です。「黙る」は言葉を発しないことなので、「何も話さないで」が最も正確な言い換えです。",
+            "「何も食べないで」は絶食することです。",
+            "「勉強しないで」は学習しないことです。",
+            "「寝ないで」は睡眠をとらないことです。"
+          ],
+          "explanation": "正解は **1 何も話さないで** (nanimo hanasanaide) です。\n\n「黙って」（だまって／黙る）は声や言葉を出さずに静かにしていることであり、「何も話さないで」と言い換えることができます。文の意味は「兄は黙ってずっと漫画を読んでいる」（My older brother has been silently reading manga without saying anything）。"
         },
         {
           "id": "n3_past_2019_12_vocab_q31",
@@ -660,11 +690,12 @@
           "correct": 2,
           "correctOption": "そふは毎日運動をしているから、今までとても健康をだ。",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "成績が良いことは「成績が優秀だった」「良かった」を用います。成績に「健康」は使えません。",
+            "正解です。人間が病気にならず元気に過ごしている状態を「健康だ」と適切に用いています。",
+            "建物が頑丈なことは「頑丈だ」「耐震性がある」を用います。建物に「健康」は使えません。",
+            "パソコンの調子は「正常」「調子が良い／悪い」を用います。機械に「健康」は使えません。"
+          ],
+          "explanation": "正解は **2 祖父は毎日運動をしているから、今までとても健康だ。** です。\n\n「健康」（けんこう）は「身体や精神に病気や衰弱がなく、良好に保たれている状態」を意味します。「健康だ／健康である」は人間の生体に対して用いるのが標準的です。\n\n文の意味：My grandfather exercises every day, so he has been in very good health up until now."
         },
         {
           "id": "n3_past_2019_12_vocab_q32",
@@ -681,11 +712,12 @@
           "correct": 1,
           "correctOption": "高橋さんは今度の留学ゼミナーに参加をしますか。",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "正解です。説明会やセミナーなどの催しに加わることを「参加する」と正しく用いています。",
+            "林の中に入っていくことは「林の中に入ったら」を用います。",
+            "渋滞に巻き込まれることは「渋滞にはまってしまった」「巻き込まれた」を用います。",
+            "ペットを家族に迎えることは「家族の仲間入りをしました」「迎えました」を用います。"
+          ],
+          "explanation": "正解は **1 高橋さんは今度の留学セミナーに参加しますか。** です。\n\n「参加」（さんか）は「集会・行事・団体・イベントなどに一員として加わること」を意味します。「セミナーに参加する」は最も標準的なコロケーションです。\n\n文の意味：Will Takahashi-san participate in the upcoming study-abroad seminar?"
         },
         {
           "id": "n3_past_2019_12_vocab_q33",
@@ -702,11 +734,12 @@
           "correct": 3,
           "correctOption": "来月の中旬に国へ帰るつもりです。",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "本棚の真ん中の段は「本棚の中段（ちゅうだん）」「真ん中」を用います。「中旬」は月の日付にのみ用います。",
+            "試合の途中は「試合の半ば（なかば）」「中盤（ちゅうばん）」を用います。",
+            "正解です。1か月の真ん中の10日間（11日〜20日頃）を「来月中旬」と正確に表しています。",
+            "3人兄弟の真ん中は「次男／次女」「真ん中」を用います。"
+          ],
+          "explanation": "正解は **3 来月の中旬に国へ帰るつもりです。** です。\n\n「中旬」（ちゅうじゅん）は「1か月のうちの11日から20日までの期間（月中）」を意味します。「来月の中旬」は極めて自然な時間表現です。\n\n文の意味：I intend to return to my home country in the middle of next month."
         },
         {
           "id": "n3_past_2019_12_vocab_q34",
@@ -723,11 +756,12 @@
           "correct": 3,
           "correctOption": "好きな音楽を聞いているとき、気持ちが落ち着いている。",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "人が店の前に集まって待っていることは「並んでいる」を用います。",
+            "本が床に放置されていることは「置かれている」「転がっている」を用います。",
+            "正解です。心が穏やかで平静な状態になることを「気持ちが落ち着く」と自然に用いています。",
+            "ゴミが散乱していることは「散らかっている」「落ちている」を用います。"
+          ],
+          "explanation": "正解は **3 好きな音楽を聞いているとき、気持ちが落ち着く。** です。\n\n「落ち着く」（おちつく）は「興奮や動揺・不安が静まり、心が平穏・冷静になること」を意味します。「気持ちが落ち着く」は代表的なコロケーションです。\n\n文の意味：When listening to my favorite music, my feelings become calm and peaceful."
         },
         {
           "id": "n3_past_2019_12_vocab_q35",
@@ -744,11 +778,12 @@
           "correct": 2,
           "correctOption": "夜になると、隣さんの犬がほえていて、うるさい。",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "鳥が鳴くことは「さえずっている」「鳴いている」を用います。「ほえる」は犬や獣に用います。",
+            "正解です。犬が声を上げて鳴く動作を「犬がほえる」と正確に用いています。",
+            "目覚まし時計の音は「鳴る音」を用います。",
+            "音楽が大音量で鳴っていることは「流れている」「鳴り響いている」を用います。"
+          ],
+          "explanation": "正解は **2 夜になると、隣の家の犬がほえていて、うるさい。** です。\n\n「ほえる」（吠える）は「犬やオオカミ・猛獣などが大きな声を張り上げて鳴く」ことを意味します。「犬がほえる」は最も基本的な用法です。\n\n文の意味：When night falls, the neighbor's dog barks, which is very noisy."
         }
       ]
     },
@@ -771,14 +806,15 @@
             "だって",
             "なんか"
           ],
-          "correct": 2,
-          "correctOption": "とか",
+          "correct": 1,
+          "correctOption": "って",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "正解です。「〜って（店）」は口語の引用・呼称表現（〜という店）であり、「『リボン』という名前の店」を自然に表します。",
+            "誤りです。「とか」は並立の助詞であり、「『リボン』とか店」という形では名詞に直接接続できず文法的に不成立です（言うなら「〜とかいう店」）。",
+            "「だって」は強調や逆接の口語であり、名詞修飾の引用には使えません。",
+            "「なんか」は例示・軽視を表し、店舗の固有名詞を修飾する用法として不適切です。"
+          ],
+          "explanation": "The correct answer is **1 って** (*tte*).\n\n*(Note: Scraped portal answer keys often erroneously mark option 2 「とか」. However, 「とか」 cannot directly modify a noun without the quotation verb 「いう」. In natural conversational Japanese, 「〜って店」 is the contraction of 「〜という店」, meaning \"a shop called...\").*\n\n---\n\n### Sentence Breakdown\n- **日本語**: \n  A「このケーキ、どこで買ったの？すごくおいしいね。」\n  B「『リボン』**って**店なんだけど、知ってる？」\n- **Romaji**: \n  A: \"Kono kēki, doko de katta no? Sugoku oishii ne.\"\n  B: \"'Ribon' **tte** mise nan dakedo, shitteru?\"\n- **English**: \n  A: \"Where did you buy this cake? It's so delicious!\"\n  B: \"It's a shop called 'Ribbon'—do you know it?\"\n\n---\n\n### Grammar Point\n**〜って (Colloquial Quotation / Definition: 〜という)**:\n- Connection: `[Name / Quote] + って + [Noun]` (e.g., 田中さんって人, 『リボン』って店).\n- It is the colloquial contraction of the quotative adnominal form `〜という` (\"called / named...\").\n\n---\n\n### Why Other Options Don't Fit\n- **2 とか (*toka*)**: Means \"things like\". To mean \"a shop called something like Ribbon\", it must be 『リボン』とか**いう**店; `『リボン』とか店` is ungrammatical.\n- **3 だって (*datte*)**: Means \"even / also\" or \"because / but\". Cannot function as a quotative noun modifier.\n- **4 なんか (*nanka*)**: Expresses modesty or slight disparagement (\"such as\"). Cannot define a proper noun name modifying a noun."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q2",
@@ -793,14 +829,15 @@
             "もしかしたら",
             "いつのまにか"
           ],
-          "correct": 1,
-          "correctOption": "もっと",
+          "correct": 4,
+          "correctOption": "いつのまにか",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "誤りです。「もっと」は比較の度合いを強める副詞であり、すいていた電車が「もっと満員になった」とは言えません。",
+            "「いまにも」は「今にも〜そうだ」と切迫した推量に呼応する副詞です。",
+            "「もしかしたら」は「〜かもしれない」と不確実な推量に呼応します。",
+            "正解です。「いつのまにか」（いつの間にか）は、読書に没頭している間に気付かないうちに満員になっていたという状況にぴったりです。"
+          ],
+          "explanation": "The correct answer is **4 いつのまにか** (*itsu no ma ni ka*).\n\n*(Note: Scraped portal keys often have option 1 「もっと」, which is nonsensical. The speaker was absorbed in reading a book, and without realizing it, the train became completely packed).*\n\n---\n\n### Sentence Breakdown\n- **日本語**: 私が電車に乗ったとき、車内がすいていたが、集中して本を読んでいたら、**いつのまにか**満員になった。\n- **Romaji**: Watashi ga densha ni notta toki, shanai ga suite ita ga, shūchū shite hon o yonde itara, **itsu no ma ni ka** man'in ni natta.\n- **English**: When I boarded the train it was empty, but while I was absorbed in reading a book, before I even realized it, the train had become full of passengers.\n\n---\n\n### Grammar Point\n**いつのまにか (Without realizing it / Unnoticed)**:\n- Pairs with the conditional temporal clause `[Action in progress] + ていたら + いつのまにか + [Past change]`.\n- Indicates that time passed and a significant change occurred without the subject noticing because they were so focused on reading.\n\n---\n\n### Why Other Options Don't Fit\n- **1 もっと (*motto*)**: Means \"more\". An empty train becoming \"more packed\" makes no grammatical sense.\n- **2 いまにも (*ima ni mo*)**: Pairs with `〜そうだ` (e.g., 今にも雨が降りそうだ) indicating an imminent event, not a past completed fact.\n- **3 もしかしたら (*moshikashitara*)**: Expresses uncertainty (\"perhaps / possibly\"), pairing with `〜かもしれない`, not past factual result `満員になった`."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q3",
@@ -818,11 +855,12 @@
           "correct": 4,
           "correctOption": "いくつか",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「どれ」は3つ以上の選択肢から選ぶ疑問詞です。",
+            "「いくつ」は数量を問う疑問文で用います（例：いくつありますか）。",
+            "「どれか」は複数のうちの「いずれか1つ」を選択する意味になります。",
+            "正解です。「いくつか」は不特定の数量（いくつか・何個か）が存在することを表す正しい表現です。"
+          ],
+          "explanation": "The correct answer is **4 いくつか** (*ikutsu ka*).\n\n---\n\n### Sentence Breakdown\n- **日本語**: うちには大きさの違うフライパンが**いくつか**あるが、使っているのは一番小さいサイズのだけだ。\n- **Romaji**: Uchi ni wa ōkisa no chigau furaipan ga **ikutsu ka** aru ga, tsukatte iru no wa ichiban chiisai saizu no dake da.\n- **English**: We have a few frying pans of different sizes at home, but the one I use is only the smallest size.\n\n---\n\n### Grammar Point\n**いくつか (A few / Several - Indefinite quantity of objects)**:\n- Structure: Interrogative `いくつ` (how many inanimate items) + particle `か` (indefinite marker) = \"several / a few\".\n- Acts as an adverbial quantifier modifying existence verb `ある`.\n\n---\n\n### Why Other Options Don't Fit\n- **1 どれ (*dore*)**: Interrogative pronoun (\"which one\"), used in direct or indirect questions.\n- **2 いくつ (*ikutsu*)**: Interrogative (\"how many\"), used in question sentences (`フライパンがいくつありますか`).\n- **3 どれか (*dore ka*)**: Means \"whichever one / one of them\" (selective), not \"several items\"."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q4",
@@ -837,14 +875,15 @@
             "見終わったら",
             "見続けたら"
           ],
-          "correct": 4,
-          "correctOption": "見続けたら",
+          "correct": 3,
+          "correctOption": "見終わったら",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「見たあったら」は文法的に破綻した日本語です。",
+            "「見ていたら」は視聴している最中という意味になり、視聴中に他人に渡すのは不自然です。",
+            "正解です。借りたDVDを「見終わった後で（見終わったら）」次の人に回すという手順が最も自然です。",
+            "誤りです。「見続けたら」は鑑賞を継続したらという意味になり、他人に譲渡・返却するタイミングと合いません。"
+          ],
+          "explanation": "The correct answer is **3 見終わったら** (*miowattara*).\n\n*(Note: Scraped keys sometimes mistakenly flag option 4 「見続けたら」. In reality, once you finish watching a borrowed DVD, you pass it to the next person).*\n\n---\n\n### Sentence Breakdown\n- **日本語**: \n  森田「石山さん、見たいって言ってたDVD、持ってきたよ。」\n  石山「ありがとう。」\n  森田「林さんも見たがってたから、**見終わったら**林さんに渡してくれる？」\n- **Romaji**: \n  Morita: \"Ishiyama-san, mitai tte itteta DVD, motte kita yo.\"\n  Ishiyama: \"Arigatō.\"\n  Morita: \"Hayashi-san mo mitagatte ita kara, **miowattara** Hayashi-san ni watashite kureru?\"\n- **English**: \n  Morita: \"Ishiyama-san, I brought that DVD you said you wanted to watch.\"\n  Ishiyama: \"Thank you!\"\n  Morita: \"Hayashi-san wanted to see it too, so once you finish watching it, could you pass it along to Hayashi-san?\"\n\n---\n\n### Grammar Point\n**Verb stem + 終わる (V-owaru: Completion) + たら (Temporal Condition)**:\n- Connection: Verb Masu-stem `見` + `終わる` → `見終わったら` (\"once you finish watching\").\n- Indicates the natural condition of passing along borrowed media after watching is completed.\n\n---\n\n### Why Other Options Don't Fit\n- **1 見たあったら (*mita attara*)**: Grammatically ungrammatical distortion.\n- **2 見ていたら (*mite itara*)**: Means \"while you are in the middle of watching it\", which makes no sense to give it away mid-viewing.\n- **4 見続けたら (*mitsuzuketara*)**: Means \"if you keep watching continuously\", which is the opposite of handing it over."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q5",
@@ -859,14 +898,15 @@
             "買うところだ",
             "買うようになっている"
           ],
-          "correct": 3,
-          "correctOption": "買うところだ",
+          "correct": 2,
+          "correctOption": "買うことにしている",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「買うはずだ」は客観的な予定・当然の推量であり、自分の毎年の個人的な習慣には使えません。",
+            "正解です。「〜ことにしている」は、自分で決めて実行し続けている習慣やルールを表します（毎年誕生日に1冊買う習慣）。",
+            "誤りです。「買うところだ」は「今まさに買おうとしている瞬間」を表すアスペクトであり、「毎年」という反復的な習慣を表せません。",
+            "「買うようになっている」は状況の変化によって自然とそうなることを表し、自発的な方針に合いません。"
+          ],
+          "explanation": "The correct answer is **2 買うことにしている** (*kau koto ni shite iru*).\n\n*(Note: Scraped portals often have 3 「買うところだ」, which is a severe erratum. The speaker has a long-standing personal birthday tradition).*\n\n---\n\n### Sentence Breakdown\n- **日本語**: 私は毎年誕生日にそのとき読みたいと思った本を一冊**買うことにしている**、本棚に並べているが、自分が好きな本の変化が分かって面白い。\n- **Romaji**: Watashi wa maitoshi tanjōbi ni sono toki yomitai to omotta hon o issatsu **kau koto ni shite iru**, hondana ni narabete iru ga, jibun ga suki na hon no henka ga wakatte omoshiroi.\n- **English**: I make it a rule to buy one book that I want to read at that time every year on my birthday; lining them up on the bookshelf, it is interesting to see how my book tastes have changed over time.\n\n---\n\n### Grammar Point\n**〜ことにしている (Personal Habit / Self-Imposed Rule)**:\n- Structure: `[Verb Dictionary Form] + ことにしている`.\n- Expresses a deliberate personal habit or ongoing rule that the speaker follows consistently (`毎年誕生日に...一冊買うことにしている`).\n\n---\n\n### Why Other Options Don't Fit\n- **1 買うはずだ (*kau hazu da*)**: Expresses objective expectation (\"ought to buy\"). One does not use `はずだ` for one's own established habitual ritual.\n- **3 買うところだ (*kau tokoro da*)**: Expresses imminent immediate action right at this precise second (\"I am just about to buy right now\"). Incompatible with `毎年` (every year).\n- **4 買うようになっている (*kau yō ni natte iru*)**: Expresses an automatic external or mechanical change in ability/circumstance, not a conscious self-chosen ritual."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q6",
@@ -881,14 +921,15 @@
             "見つかったようだ",
             "見つかりそうだった"
           ],
-          "correct": 2,
-          "correctOption": "見つかるほうがいい",
+          "correct": 1,
+          "correctOption": "見つかってよかった",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "正解です。「〜てよかったね」は、相手のトラブルが無事に解決したことに対して安心や喜びを伝える標準的な会話表現です。",
+            "誤りです。「見つかるほうがいい」はまだ見つかっていない段階での助言・希望であり、すでに発見された後の返答として不自然です。",
+            "「見つかったようだ」は推量表現であり、目の前の本人から直接報告を受けた直後の返答に合いません。",
+            "「見つかりそうだった」は見つかりそうだったが見つからなかったという意味を含み、矛盾します。"
+          ],
+          "explanation": "The correct answer is **1 見つかってよかった** (*mitsukatte yokatta*).\n\n*(Note: Scraped portal answer keys frequently incorrectly mark option 2 「見つかるほうがいい」. When a friend reports finding their lost phone, the natural sympathetic reply is \"I'm so glad it was found!\").*\n\n---\n\n### Sentence Breakdown\n- **日本語**: \n  A「昨日携帯電話をなくしたって言ったけど、見つかった？」\n  B「うん、実は車の中に落ちていたんだ。」\n  A「そうなんだ。**見つかってよかった**ね。」\n- **Romaji**: \n  A: \"Kinō keitai denwa o nakushita tte itta kedo, mitsukatta?\"\n  B: \"Un, jitsu wa kuruma no naka ni ochite ita n da.\"\n  A: \"Sō nan da. **Mitsukatte yokatta** ne.\"\n- **English**: \n  A: \"You said yesterday that you lost your cell phone—did you find it?\"\n  B: \"Yeah, actually it had fallen inside my car.\"\n  A: \"I see! I'm so glad it was found!\"\n\n---\n\n### Grammar Point\n**〜てよかった (Expression of Relief / Rejoicing)**:\n- Structure: `[Verb Te-form] + よかった (ne)`.\n- Used to express happiness and relief upon hearing good news that a trouble or worry has been successfully resolved.\n\n---\n\n### Why Other Options Don't Fit\n- **2 見つかるほうがいい (*mitsukaru hō ga ii*)**: Means \"It would be better if it were found\" (giving advice / preference before the fact). But the phone *has already been found* (`落ちていたんだ`).\n- **3 見つかったようだ (*mitsukatta yō da*)**: Hearsay/conjecture (\"It seems it was found\"). A is speaking directly to B, who just confirmed it.\n- **4 見つかりそうだった (*mitsukarisō datta*)**: Means \"It was on the verge of being found (but wasn't)\". Complete contradiction."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q7",
@@ -903,14 +944,15 @@
             "おっしゃいましたか？",
             "お聞きになりましたか？"
           ],
-          "correct": 1,
-          "correctOption": "うかがいましたか？",
+          "correct": 3,
+          "correctOption": "おっしゃいましたか？",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "誤りです。「うかがう」は謙譲語（伺う・お聞きする）であり、相手のご両親の行為に対して謙譲語を使うのは敬語の誤りです。",
+            "「もうしあげる」も謙譲語（申し上げる）であり、相手側の行為には使えません。",
+            "正解です。「おっしゃる」は「言う」の尊敬語であり、目上の第三者である「ご両親」の発言を高める正しい敬語です。",
+            "「お聞きになりましたか」は「聞く」の尊敬語であり、「何と言いましたか」という発話内容を尋ねる文脈に合いません。"
+          ],
+          "explanation": "The correct answer is **3 おっしゃいましたか？** (*osshaimashita ka?*).\n\n*(Note: Scraped portal keys sometimes mark option 1 「うかがいましたか」, which is a severe keigo violation. The teacher is asking about the student's parents' words, requiring Sonkeigo (honorific), not Kenjōgo (humble)).*\n\n---\n\n### Sentence Breakdown\n- **日本語**: \n  先生「TOTさんが留学すると言ったとき、ご両親は何と**おっしゃいましたか**？」\n  TOTさん「頑張れと応援してくれました。」\n- **Romaji**: \n  Sensei: \"TOT-san ga ryūgaku suru to itta toki, go-ryōshin wa nan to **osshaimashita ka**?\"\n  TOT-san: \"Ganbare to ōen shite kuremashita.\"\n- **English**: \n  Teacher: \"When you told them you were going to study abroad, what did your parents say?\"\n  TOT-san: \"They supported me and told me to do my best.\"\n\n---\n\n### Grammar Point\n**尊敬語 (Respectful Honorific): おっしゃる (ossharu)**:\n- Honorific equivalent of `言う` (to say), elevating the subject.\n- The grammatical subject is `ご両親` (the student's parents, an honored third party).\n- Therefore, the respectful question form `何とおっしゃいましたか` is strictly required.\n\n---\n\n### Why Other Options Don't Fit\n- **1 うかがいましたか (*ukagaimashita ka*)**: Humble form (*Kenjōgo*) of `聞く` (to ask/hear) or `訪ねる` (to visit). One never uses humble verbs for the actions of someone else's parents.\n- **2 もうしあげましたか (*mōshiagemashita ka*)**: Humble form (*Kenjōgo*) of `言う` (to say to a superior).\n- **4 お聞きになりましたか (*o-kiki ni narimashita ka*)**: Respectful form of `聞く` (to listen/hear), but the teacher is asking what the parents *said*, not what they heard."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q8",
@@ -928,11 +970,12 @@
           "correct": 3,
           "correctOption": "食べようと思って",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「食べていて」は食事中の動作進行になり、これから食堂へ向かう順序と矛盾します。",
+            "「食べているのに」は逆接になり意味が通りません。",
+            "正解です。「〜（意向形）と思って」は、「〜するつもりで／〜しようと考えて」という目的・動機を持って次の行動を起こしたことを表します。",
+            "「食べようと思うのに」は食堂に行く前の段階で逆接の「のに」を使うことになり、文全体のつながりが不自然です。"
+          ],
+          "explanation": "The correct answer is **3 食べようと思って** (*tabeyō to omotte*).\n\n---\n\n### Sentence Breakdown\n- **日本語**: 授業の後、昼ご飯を**食べようと思って**大学の食堂に行ったが、とても込んでいたので、大学の近くのラーメン屋に食べに行った。\n- **Romaji**: Jugyō no ato, hirugohan o **tabeyō to omotte** daigaku no shokudō ni itta ga, totemo konde ita node, daigaku no chikaku no rāmen'ya ni tabe ni itta.\n- **English**: After class, intending to eat lunch, I went to the university cafeteria, but because it was very crowded, I went to eat at a ramen shop near the university.\n\n---\n\n### Grammar Point\n**Volitional + と思って (Intention / Purpose)**:\n- Structure: `[Verb Volitional: 〜よう] + と思って + [Action]`.\n- Indicates that the speaker set out with the deliberate intention or purpose of eating lunch at the cafeteria before discovering it was overcrowded.\n\n---\n\n### Why Other Options Don't Fit\n- **1 食べていて (*tabete ite*)**: Progressive (\"I was eating lunch and went to the cafeteria\"). You cannot go to the cafeteria to eat while already eating lunch.\n- **2 食べているのに (*tabete iru noni*)**: \"Even though I am eating lunch\", completely contradictory.\n- **4 食べようと思うのに (*tabeyō to omou noni*)**: Concessive `のに` implies frustration or thwarted expectation directly within the clause, but the conflict arises later with `込んでいたので`."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q9",
@@ -947,14 +990,15 @@
             "通っておいたところだ",
             "通っておいたことがある"
           ],
-          "correct": 1,
-          "correctOption": "通ってみたところだ",
+          "correct": 2,
+          "correctOption": "通ってみたことがある",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "誤りです。「〜たところだ」は「ちょうど〜したばかりだ」という直近の完了を表すため、「高校生のとき」という過去の回想に接続できません。",
+            "正解です。「〜てみた」（試行）＋「〜たことがある」（過去の経験）が、高校時代に一度やってみた経験を語る文脈に完全に合致します。",
+            "「〜ておいたところだ」は準備態と直後完了の組み合わせであり二重に不適切です。",
+            "「通っておいた」は事前準備（〜ておく）の意味になり、ギター教室を習ってみたという文脈に合いません。"
+          ],
+          "explanation": "The correct answer is **2 通ってみたことがある** (*tōtte mita koto ga aru*).\n\n*(Note: Scraped keys frequently mark option 1 「通ってみたところだ」, which is an erratum. 「〜たところだ」 expresses that an action occurred seconds ago, which cannot describe a past high school experience).*\n\n---\n\n### Sentence Breakdown\n- **日本語**: 高校生のとき、ギター教室に**通ってみたことがある**が、難しくて1ヶ月でやめてしまった。\n- **Romaji**: Kōkōsei no toki, gitā kyōshitsu ni **tōtte mita koto ga aru** ga, muzukashikute ikkagetsu de yamete shimatta.\n- **English**: When I was a high school student, I once tried attending guitar classes, but it was difficult and I quit after one month.\n\n---\n\n### Grammar Point\n1. **〜てみる (Try doing)**: Attending guitar lessons as a trial/attempt.\n2. **〜たことがある (Past Experience)**:\n   - Structure: `[Verb Past: 〜た] + ことがある`.\n   - Used to recount a historical experience from the past (`高校生のとき`).\n\n---\n\n### Why Other Options Don't Fit\n- **1 通ってみたところだ (*tōtte mita tokoro da*)**: `〜たところだ` indicates an action completed *just now / moments ago*. It cannot be used with a distant past timeframe like `高校生のとき`.\n- **3 通っておいたところだ (*tōtte oita tokoro da*)**: Combines preparatory `〜ておく` with immediate completion `〜たところだ`, both inappropriate.\n- **4 通っておいたことがある (*tōtte oita koto ga aru*)**: `〜ておく` implies preparing for a future objective; you try hobbies (`〜てみる`), you don't attend them as advance preparation."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q10",
@@ -969,14 +1013,15 @@
             "なっていたと思う",
             "なりたいと思っていた"
           ],
-          "correct": 3,
-          "correctOption": "なっていたと思う",
+          "correct": 4,
+          "correctOption": "なりたいと思っていた",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「なりたそうだ」は他者の様子を観察した様態推量であり、自分自身の希望には使えません。",
+            "「なることができた」は実現可能だった・達成したという意味になり、子どもの頃の将来の夢を述べる文脈に合いません。",
+            "誤りです。「なっていたと思う」は過去完了の推測になり、「子どもの頃、将来歌手に〜」という夢の回想と噛み合いません。",
+            "正解です。「〜たいと思っていた」は、過去の一定期間ずっと抱いていた願望・希望（子どもの頃の将来の夢）を述べる最も自然な表現です。"
+          ],
+          "explanation": "The correct answer is **4 なりたいと思っていた** (*naritai to omotte ita*).\n\n*(Note: Scraped portal keys sometimes mark option 3 「なっていたと思う」. However, the sentence expresses a childhood dream/ambition).*\n\n---\n\n### Sentence Breakdown\n- **日本語**: 子供のころ、私は将来歌手に**なりたいと思っていた**。\n- **Romaji**: Kodomo no koro, watashi wa shōrai kashu ni **naritai to omotte ita**.\n- **English**: When I was a child, I used to think that I wanted to become a singer in the future.\n\n---\n\n### Grammar Point\n**〜たいと思っていた (Past Continuous Desire)**:\n- Structure: `[Verb Masu-stem] + たい + と思っていた`.\n- Expresses a persistent desire or ambition held over a continuous period in the past (`子供のころ`).\n\n---\n\n### Why Other Options Don't Fit\n- **1 なりたそうだ (*naritasō da*)**: `〜そう` expresses conjecture about *third parties* looking like they want something (e.g., 彼が食べたそうだ). You never use `〜たそうだ` for your own firsthand desires.\n- **2 なることができた (*naru koto ga dekita*)**: Means \"I was able to become a singer\". The adverb `将来` (in the future) indicates a prospective childhood dream, not a realized childhood fact.\n- **3 なっていたと思う (*natte ita to omou*)**: Means \"I think I had already become a singer\". Illogical."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q11",
@@ -994,11 +1039,12 @@
           "correct": 4,
           "correctOption": "使わせてほしい",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「と」は「頼んだ」に直結する4番目の引用助詞です。",
+            "「車を」は「使わせてほしい」の目的語として2番目の位置に入ります。",
+            "「ので」は「旅行に行く」に直接接続する1番目の位置に入ります。",
+            "正解です。3番目の★に入る語は「使わせてほしい」です（「旅行に行く ので [3] 車を [2] ★使わせてほしい [4] と [1] 頼んだが」）。"
+          ],
+          "explanation": "The correct answer is **4 使わせてほしい** (*tsukawasete hoshii*).\n\n---\n\n### Sentence Breakdown\n- **Complete Reconstructed Sentence**:\n  昨日父に、来週友達と旅行に行く**ので 車を 使わせてほしい と**頼んだが、断られてしまった。\n  *(Order: 3 ので → 2 車を → 4 使わせてほしい [★] → 1 と)*\n- **Romaji**: Kinō chichi ni, raishū tomodachi to ryokō ni iku **node kuruma o tsukawasete hoshii to** tanonda ga, kotowararete shimatta.\n- **English**: Yesterday, I asked my father to let me use his car because I was going on a trip with friends next week, but he refused.\n\n---\n\n### Construction Steps\n1. Reason: `旅行に行く` connects to `ので` [3] (because I'm going on a trip).\n2. Request content: `車を` [2] (the car) + `使わせてほしい` [4] (causative request: \"please let me use\").\n3. Quotation link: `使わせてほしい` connects to quote particle `と` [1] before the reporting verb `頼んだが`.\n4. Full sequence: `ので [3]` → `車を [2]` → `★ 使わせてほしい [4]` → `と [1]`.\n5. The star **★** is in the 3rd slot: **4 使わせてほしい**.\n\n---\n\n### Why Other Options Don't Fit\n- **1 と (*to*)**: Slot 4, quotative particle right before `頼んだが`.\n- **2 車を (*kuruma o*)**: Slot 2, direct object of `使わせてほしい`.\n- **3 ので (*node*)**: Slot 1, giving the reason for borrowing the car."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q12",
@@ -1016,11 +1062,12 @@
           "correct": 1,
           "correctOption": "に対する",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "正解です。3番目の★に入る語は「に対する」です（「学生 の [2] 働くこと [4] ★に対する [1] 考え方 [3] について」）。",
+            "「の」は「学生」に続く1番目の位置に入ります。",
+            "「考え方」は「について」に直接かかる4番目の位置に入ります。",
+            "「働くこと」は「に対する」に修飾される2番目の位置に入ります。"
+          ],
+          "explanation": "The correct answer is **1 に対する** (*ni taisuru*).\n\n---\n\n### Sentence Breakdown\n- **Complete Reconstructed Sentence**:\n  桜大学は学生**の 働くこと に対する 考え方**についてアンケート調査を行った。\n  *(Order: 2 の → 4 働くこと → 1 に対する [★] → 3 考え方)*\n- **Romaji**: Sakura Daigaku wa gakusei **no hataraku koto ni taisuru kangaekata** ni tsuite ankēto chōsa o okonatta.\n- **English**: Sakura University conducted a questionnaire survey regarding students' attitudes toward working.\n\n---\n\n### Construction Steps\n1. The topic is `学生` (students). It possesses the perspective: `学生の` [2].\n2. Target noun clause: `働くこと` [4] (working / the concept of work).\n3. Relation particle: `働くことに対する` [1] (attitudes toward working).\n4. Head noun: `考え方` [3] (`考え方について` = regarding thoughts/attitudes).\n5. Full sequence: `の [2]` → `働くこと [4]` → `★ に対する [1]` → `考え方 [3]`.\n6. The star **★** is in the 3rd slot: **1 に対する**.\n\n---\n\n### Why Other Options Don't Fit\n- **2 の (*no*)**: Slot 1, connecting `学生` to `働くことに対する考え方`.\n- **3 考え方 (*kangaekata*)**: Slot 4, head noun preceding `について`.\n- **4 働くこと (*hataraku koto*)**: Slot 2, noun phrase modified by `に対する`."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q13",
@@ -1038,11 +1085,12 @@
           "correct": 2,
           "correctOption": "ばかりの",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「ときに」は「食事の」に続く1番目の位置に入ります。",
+            "正解です。3番目の★に入る語は「ばかりの」です（「食事の ときに [1] 買った [4] ★ばかりの [2] 白いTシャツ [3] を汚してしまった」）。",
+            "「白いTシャツ」は「を汚してしまった」に直接かかる4番目の位置に入ります。",
+            "「買った」は「ばかりの」に続く2番目の位置に入ります。"
+          ],
+          "explanation": "The correct answer is **2 ばかりの** (*bakari no*).\n\n---\n\n### Sentence Breakdown\n- **Complete Reconstructed Sentence**:\n  食事の**ときに 買った ばかりの 白いTシャツ**を汚してしまった。\n  *(Order: 1 ときに → 4 買った → 2 ばかりの [★] → 3 白いTシャツ)*\n- **Romaji**: Shokuji no **toki ni katta bakari no shiroi tīshatsu** o yogoshite shimatta.\n- **English**: During the meal, I ended up staining the white T-shirt that I had only just bought.\n\n---\n\n### Construction Steps\n1. Time of event: `食事の` + `ときに` [1] (at the time of the meal).\n2. Recent purchase modifier: `買った` [4] + `ばかりの` [2] (`買ったばかりの` = just recently bought).\n3. Object noun: `買ったばかりの` modifies `白いTシャツ` [3] (the white T-shirt), which takes `を汚してしまった`.\n4. Full sequence: `ときに [1]` → `買った [4]` → `★ ばかりの [2]` → `白いTシャツ [3]`.\n5. The star **★** is in the 3rd slot: **2 ばかりの**.\n\n---\n\n### Why Other Options Don't Fit\n- **1 ときに (*toki ni*)**: Slot 1, directly following `食事の`.\n- **3 白いTシャツ (*shiroi tīshatsu*)**: Slot 4, head noun preceding `を汚してしまった`.\n- **4 買った (*katta*)**: Slot 2, verb preceding `ばかりの`."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q14",
@@ -1054,17 +1102,18 @@
           "options": [
             "わからなくて",
             "どの電車で",
-            "一番早く着く",
-            "のか行けば"
+            "一番早く着くのか",
+            "行けば"
           ],
           "correct": 3,
-          "correctOption": "一番早く着く",
+          "correctOption": "一番早く着くのか",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「わからなくて」は4番目の位置に入り、駅員に尋ねた理由を表します。",
+            "「どの電車で」は1番目の位置に入ります。",
+            "正解です。3番目の★に入る語は「一番早く着くのか」です（「花川駅まで どの電車で [2] 行けば [4] ★一番早く着くのか [3] わからなくて [1] 電車に乗る前に駅員に聞いた」）。",
+            "「行けば」は2番目の位置に入ります（「どの電車で行けば」）。"
+          ],
+          "explanation": "The correct answer is **3 一番早く着くのか** (*ichiban hayaku tsuku no ka*).\n\n*(Note: Scraped exam keys suffered corrupted text merging options 3 and 4. The authentic choices are 1 わからなくて, 2 どの電車で, 3 一番早く着くのか, 4 行けば).*\n\n---\n\n### Sentence Breakdown\n- **Complete Reconstructed Sentence**:\n  昨日初めて花川駅に行った。花川駅まで**どの電車で 行けば 一番早く着くのか わからなくて**、電車に乗る前に駅員に聞いた。\n  *(Order: 2 どの電車で → 4 行けば → 3 一番早く着くのか [★] → 1 わからなくて)*\n- **Romaji**: Kinō hajimete Hanakawa-eki ni itta. Hanakawa-eki made **dono densha de ikeba ichiban hayaku tsuku no ka wakaranakute**, densha ni noru mae ni ekiin ni kiita.\n- **English**: Yesterday I went to Hanakawa Station for the first time. Not knowing which train I should take to arrive there the fastest, I asked the station staff before boarding the train.\n\n---\n\n### Construction Steps\n1. The destination is `花川駅まで` (to Hanakawa Station).\n2. Question condition: `どの電車で` [2] (by which train) + `行けば` [4] (if I go).\n3. Embedded question predicate: `一番早く着くのか` [3] (whether I will arrive fastest).\n4. Reason for asking: `一番早く着くのか` + `わからなくて` [1] (not knowing / not understanding).\n5. Full sequence: `どの電車で [2]` → `行けば [4]` → `★ 一番早く着くのか [3]` → `わからなくて [1]`.\n6. The star **★** is in the 3rd slot: **3 一番早く着くのか**.\n\n---\n\n### Why Other Options Don't Fit\n- **1 わからなくて (*wakaranakute*)**: Slot 4, connecting the embedded question to the asking action.\n- **2 どの電車で (*dono densha de*)**: Slot 1, opening the interrogative conditional clause.\n- **4 行けば (*ikeba*)**: Slot 2, conditional verb connecting `どの電車で` to `一番早く着くのか`."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q15",
@@ -1082,11 +1131,12 @@
           "correct": 3,
           "correctOption": "行くんだったら",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「もし」は2番目の位置に入り、条件「行くんだったら」を導きます。",
+            "「乗せていってあげる」は申し出の述語として4番目の位置に入ります。",
+            "正解です。3番目の★に入る語は「行くんだったら」です（「車で 行くつもりだから [4] もし [1] ★行くんだったら [3] 乗せていってあげる [2] よ」）。",
+            "「行くつもりだから」は自分の予定理由として1番目の位置に入ります。"
+          ],
+          "explanation": "The correct answer is **3 行くんだったら** (*iku n dattara*).\n\n---\n\n### Sentence Breakdown\n- **Complete Reconstructed Sentence**:\n  A「ねえ、明日のパーティーに行く？会場のレストランが駅から遠くてちょっと不便だから行こうか迷っているんだけど」\n  B「私、車で**行くつもりだから、もし 行くんだったら 乗せていってあげる**よ。」\n  *(Order: 4 行くつもりだから → 1 もし → 3 行くんだったら [★] → 2 乗せていってあげる)*\n- **Romaji**: \n  A: \"Nē, ashita no pātī ni iku? Kaijō no resutoran ga eki kara tōkute chotto fuben dakara ikō ka mayotte iru n dakedo.\"\n  B: \"Watashi, kuruma de **iku tsumori dakara, moshi iku n dattara nosete itte ageru** yo.\"\n- **English**: \n  A: \"Hey, are you going to tomorrow's party? The restaurant venue is far from the station and a bit inconvenient, so I'm debating whether to go.\"\n  B: \"I'm intending to go by car, so if you're going, I can give you a ride!\"\n\n---\n\n### Construction Steps\n1. B explains their own plan: `私、車で` + `行くつもりだから` [4] (since I plan to go by car).\n2. B offers a condition for A: `もし` [1] (if) + `行くんだったら` [3] (if you're going).\n3. The beneficial offer: `乗せていってあげる` [2] (I will give you a ride).\n4. Full sequence: `行くつもりだから [4]` → `もし [1]` → `★ 行くんだったら [3]` → `乗せていってあげる [2]`.\n5. The star **★** is in the 3rd slot: **3 行くんだったら**.\n\n---\n\n### Why Other Options Don't Fit\n- **1 もし (*moshi*)**: Slot 2, conditional adverb pairing with `だったら`.\n- **2 乗せていってあげる (*nosete itte ageru*)**: Slot 4, concluding predicate before `よ`.\n- **4 行くつもりだから (*iku tsumori dakara*)**: Slot 1, providing the reason for the offer."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q16",
@@ -1104,11 +1154,12 @@
           "correct": 2,
           "correctOption": "この",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「ある」は「ある日」などの用法であり、「あるままではいけない」という表現はありません。",
+            "正解です。「このままではいけない」は、現状のまま放置していてはいけないという強い危機感・決意を表す定型句です。",
+            "「その」は相手の話や文脈上の既出事項を客観視するときに使われ、自分の目前の危機には「このまま」を用います。",
+            "「あの」は共通の記憶や遠くの事物を指す指示詞です。"
+          ],
+          "explanation": "The correct answer is **2 この** (*kono*).\n\n---\n\n### Question & Context Breakdown\nThe author reflects on neglecting year-end cleaning during their first year in Japan:\n- \"However, I was constantly busy and couldn't do big cleaning, and just like that, December arrived once again. Thinking, 'I can't go on like **[ 16 ]** (in this current state),' I determined to do big cleaning this year for sure.\"\n\n---\n\n### Grammar Point / Cohesion Analysis\n**このまま (In this current ongoing state)**:\n- Fixed idiomatic phrase: `このままではいけない` (\"Things cannot continue as they are right now / We can't go on like this\").\n- `このまま` refers to the author's immediate personal situation of continually postponing cleaning.\n\n---\n\n### Why Other Options Don't Fit\n- **1 ある (*aru*)**: Means \"a certain\". Cannot combine into `あるまま`.\n- **3 その (*sono*)**: Used for distant or previously described matters; the fixed self-reflective idiom for one's own immediate unresolved predicament is strictly `このままではいけない`.\n- **4 あの (*ano*)**: Refers to a distant past memory shared between speaker and listener."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q17",
@@ -1126,11 +1177,12 @@
           "correct": 1,
           "correctOption": "まず",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "正解です。「まず」（最初に行うこと）は、後続の「それから」（次の手順）と呼応して一連の作業手順の第一歩を表します。",
+            "「または」は選択・並立を表す接続詞であり、手順の流れに合いません。",
+            "「すると」はある動作の直後に別の事態が発生したことを表す接続詞です。",
+            "「ところが」は逆接を表す接続詞であり、順調な準備手順の文脈に合いません。"
+          ],
+          "explanation": "The correct answer is **1 まず** (*mazu*).\n\n---\n\n### Question & Context Breakdown\nDescribing the preparation steps before doing big cleaning:\n- \"Before starting the big cleaning, I **[ 17 ]** planned the order of the locations to clean. After that, I went to buy cleaning tools.\"\n\n---\n\n### Grammar Point / Cohesion Analysis\n**まず (First of all / As the initial step)**:\n- Sequential flow: `まず [Plan places]` → `それから [Buy tools]` → `準備が整ってから [Clean thoroughly]`.\n- Marks the initial action in a step-by-step sequential narrative.\n\n---\n\n### Why Other Options Don't Fit\n- **2 または (*matawa*)**: Means \"or / alternatively\" (offering choices). The author planned *and* bought tools sequentially.\n- **3 すると (*suruto*)**: Means \"thereupon / upon doing so\" (spontaneous consequence). Cannot initiate the first step.\n- **4 ところが (*tokoroga*)**: Means \"however / but surprisingly\" (adversative turn). There is no conflict or unexpected turn here."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q18",
@@ -1148,11 +1200,12 @@
           "correct": 3,
           "correctOption": "まで",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「なら」は仮定・話題提示を表すため、範囲の広がりを表す文脈に合いません。",
+            "「でも」は例示や譲歩を表しますが、複数の場所を列挙して最後に至るまでを強調する表現としては「まで」が適切です。",
+            "正解です。「〜まで」は、窓や換気扇だけでなくお風呂場という奥まった場所に「至るまで」徹底的に掃除したという範囲の広がりを強調します。",
+            "「ばかり」は限定（〜のみ）を表し、窓や換気扇も掃除したことと矛盾します。"
+          ],
+          "explanation": "The correct answer is **3 まで** (*made*).\n\n---\n\n### Question & Context Breakdown\nDetailing the thoroughness of the cleaning across the apartment:\n- \"Once preparations were complete, windows, ventilation fan, **even down to** the bathroom **[ 18 ]**, I thoroughly cleaned places I normally don't clean.\"\n\n---\n\n### Grammar Point / Cohesion Analysis\n**〜まで (Extreme Extent / Comprehensive Listing)**:\n- Structure: `[Noun A], [Noun B], [Noun C] + まで`.\n- Expresses that the cleaning reached even the most difficult, deep-seated, or extreme areas (the bathroom), emphasizing exhaustive thoroughness.\n\n---\n\n### Why Other Options Don't Fit\n- **1 なら (*nara*)**: Conditional (\"if it is the bathroom\").\n- **2 でも (*demo*)**: Means \"even / or something\". In a listing with preceding items (`窓や換気扇、お風呂場...`), `まで` is the proper particle to mark the furthest extreme point.\n- **4 ばかり (*bakari*)**: Means \"only / exclusively\". The author cleaned multiple locations, not only the bathroom."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q19",
@@ -1170,11 +1223,12 @@
           "correct": 4,
           "correctOption": "迎えることができたと思います",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "「迎えることができそうです」は未来の推量であり、すでに体験した過去の出来事の回想に合いません。",
+            "「迎えることができたらしいです」は伝聞・客観推量であり、自分の体験の総括として不自然です。",
+            "「迎えることができればいいです」は未来への希望であり、過去の完了した事実と合いません。",
+            "正解です。大掃除をして部屋がきれいになった結果、清々しい気持ちで新年を迎えることができたという過去の達成を振り返る「迎えることができたと思います」が最適です。"
+          ],
+          "explanation": "The correct answer is **4 迎えることができたと思います** (*mukaeru koto ga dekita to omoimasu*).\n\n---\n\n### Question & Context Breakdown\nThe author reflects on the outcome of the big cleaning as the year concluded:\n- \"Because the rooms became clean, I believe I **[ 19 ]** the New Year feeling refreshed and pleasant.\"\n\n---\n\n### Grammar Point / Cohesion Analysis\n**〜ことができたと思う (Past Realized Potential + Retrospective Reflection)**:\n- `迎える` (to welcome / usher in the New Year).\n- `〜ことができた`: Potential past (\"was able to welcome\").\n- `〜と思います`: The essay is written retrospectively looking back on that past New Year experience.\n\n---\n\n### Why Other Options Don't Fit\n- **1 迎えることができそうです (*mukaeru koto ga dekisō desu*)**: Future conjecture (\"looks like I will be able to\"). The essay is reflecting upon a past completed year.\n- **2 迎えることができたらしいです (*mukaeru koto ga dekita rashii desu*)**: Hearsay/conjecture (\"it seems that someone welcomed\"). The author is reflecting upon their own personal experience.\n- **3 迎えることができればいいです (*mukaeru koto ga dekireba ii desu*)**: Future wish (\"it would be nice if I could\"). Incompatible with a past reflection."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q20",
@@ -1192,11 +1246,12 @@
           "correct": 2,
           "correctOption": "決められた",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "助詞が「誰かに」となっているため、能動形の「決めた」では係り受けが破綻します（誰かが決めた／誰かに決められた）。",
+            "正解です。「誰かに決められた時期」（受身形）は、社会の習慣などによって他律的に決定された時期であることを的確に表します。",
+            "「決めさせられた」は使役受身（自分が決定することを強制された）となり、意味が異なります。",
+            "「決めさせた」は使役（他人に決めさせた）となり、文脈に合いません。"
+          ],
+          "explanation": "The correct answer is **2 決められた** (*kimerareta*).\n\n---\n\n### Question & Context Breakdown\nContrast with the author's previous prejudice:\n- \"Previously, I hated cleaning during a period **[ 20 ]** by someone else (`誰かに...時期`), but I came to realize that cleaning the house at the end of the year feels wonderful.\"\n\n---\n\n### Grammar Point / Cohesion Analysis\n**受身形 (Passive Voice): [Agent に] 決められた [Noun]**:\n- Structure: `誰かに + 決められた + 時期` (\"a time period that was decided by someone else\").\n- Matches the author's earlier complaint in paragraph 2: `誰かが決めた時期に掃除をするというのが嫌だったのです` (using passive `誰かに決められた時期`).\n\n---\n\n### Why Other Options Don't Fit\n- **1 決めた (*kimeta*)**: Active voice. The particle is `誰かに`, which marks the agent in a passive construction, requiring `決められた`.\n- **3 決めさせられた (*kimesaserareta*)**: Causative-passive (\"was forced to decide\"). The author was not forced to make a decision; the timeframe was decided by society/tradition.\n- **4 決めさせた (*kimesaseta*)**: Causative (\"made someone decide\")."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q21",
@@ -1214,11 +1269,12 @@
           "correct": 2,
           "correctOption": "受験生に数学を教えた経験があり、週に2回教えられること",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "平日は「火曜以外」と指定されているため、火曜日は対象外です。",
+            "正解です。「週2回」という回数条件と、「受験生に数学の指導をしたことがある」という希望条件が完璧に一致しています。",
+            "「数学が専門でなくてもけっこうです」と明記されているため誤りです。",
+            "土曜・日曜は「9時から19時の間」と書かれており、「19時から21時まで」は平日（火曜以外）の時間帯です。"
+          ],
+          "explanation": "The correct answer is **2 受験生に数学を教えた経験があり、週に2回教えられること** (*Jukensei ni sūgaku o oshieta keiken ga ari, shū ni nikai oshierareru koto*).\n\n---\n\n### Core Question\nWhich qualification correctly matches Takashima-san's preferences for the home tutor?\n\n---\n\n### Evidence & Text Justification\n- Notice specifications:\n  1. Frequency: 「回数: 週2回」 (Twice a week).\n  2. Experience & Personality: 「学部の希望は特にありませんが、**受験生に数学の指導をしたことがある**、明るい性格の方にお願いしたいです。**数学が専門でなくてもけっこうです。**」\n- Option 2 perfectly matches both requirements: having experience teaching math to exam students, and being available twice a week.\n\n---\n\n### Why Other Options Don't Fit\n- **1 医学部の学生で、火曜と土曜に教えられること**: Weekdays explicitly exclude Tuesday (`平日（火曜以外）`).\n- **3 数学が専門の学生で、週に2時間教えられること**: The notice explicitly says they do *not* need to be a math major (`数学が専門でなくてもけっこうです`), and sessions are 2 hours per time, twice a week (total 4 hours).\n- **4 明るい性格で、土曜と日曜の19時から21時まで教えられること**: On weekends the allowed window is 9:00 to 19:00, not 19:00 to 21:00."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q22",
@@ -1236,11 +1292,12 @@
           "correct": 3,
           "correctOption": "プリンタの黒のインク2箱",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "コピー用紙や青のインクは正常に届いており、不足しているのは黒インクだけです。",
+            "コピー用紙は不足していません。",
+            "正解です。黒のインクを3箱注文したのに1箱しか入っていなかったため、不足しているのは「2箱」です（3 - 1 = 2）。",
+            "1箱はすでに届いている箱数であり、足りない数量ではありません。"
+          ],
+          "explanation": "The correct answer is **3 プリンタの黒のインク2箱** (*Purinta no kuro no inku nibako*).\n\n---\n\n### Core Question\nWhat item(s) are missing (`足りないもの`) from the delivered stationery order?\n\n---\n\n### Evidence & Text Justification\n- Honda's email:\n  - Items ordered: Copy paper 1 box, **printer black ink 3 boxes**, blue ink 1 box.\n  - Items actually received: 「黒のインクは1箱しか入っていませんでした」 (There was only 1 box of black ink inside).\n  - Shortfall calculation: 3 boxes ordered - 1 box received = **2 boxes of black ink missing**.\n- Therefore, the missing items are 2 boxes of black printer ink.\n\n---\n\n### Why Other Options Don't Fit\n- **1 コピー用紙1箱と、プリンタの黒のインク2箱と青のインク1箱**: Copy paper and blue ink arrived properly; only black ink had a shortage.\n- **2 コピー用紙1箱と、プリンターの黒のインク1箱**: Distorts the received items.\n- **4 プリンタの黒のインク1箱**: 1 box was what *did* arrive, not what is missing."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q23",
@@ -1258,11 +1315,12 @@
           "correct": 1,
           "correctOption": "会社に入ったばかりの「私」と話すのは緊張するから",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "正解です。隣の同僚から「あの人は初めて会う人が苦手で、緊張して笑えなくなるんだよ」と説明されており、新人の筆者に緊張していることが理由です。",
+            "筆者を心配しているから笑顔が消えるわけではありません。",
+            "筆者が怖がっているのを察して話したくないわけではありません。",
+            "嫌われているわけではないと最後に確認されて安心しています。"
+          ],
+          "explanation": "The correct answer is **1 会社に入ったばかりの「私」と話すのは緊張するから** (*Kaisha ni haitta bakari no \"watashi\" to hanasu no wa kinchō suru kara*).\n\n---\n\n### Core Question\nAccording to the coworker sitting next to the author, why does the senior stop smiling when speaking with the author (`私と話すときは笑顔ではなくなる`)?\n\n---\n\n### Evidence & Text Justification\n- Coworker's explanation:\n  「あの人は、**初めて会う人が苦手で、緊張しちゃって笑えなくなるんだよ**。もう少ししたら慣れると思うから、緊張しないで。」\n  (\"That person is bad with people they are meeting for the first time; she gets nervous and becomes unable to smile. I think she will get used to you before long, so don't be nervous.\")\n- Because the author is a newcomer who just joined the company, the senior feels tense and awkward around unfamiliar people, making her facial expression stiffen.\n\n---\n\n### Why Other Options Don't Fit\n- **2 会社に入ったばかりの「私」を心配しているから**: The senior isn't worried about the author; she is personally nervous herself.\n- **3 先輩のことを怖がっている「私」と話したくないから**: The senior doesn't know the author is scared of her.\n- **4 先輩のことを怖がっている「私」を嫌っているから**: The author confirmed that she is *not* disliked (`自分が嫌われているのではないらしいことがわかって、安心した`)."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q24",
@@ -1280,11 +1338,12 @@
           "correct": 4,
           "correctOption": "聴く音楽に合わせて複数のイヤホンを買って、音楽を楽しむこと",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "10万円以上のイヤホンを1つ買ってスピーカーと比べることではありません。",
+            "高級イヤホンを1つだけ買うことではありません。",
+            "スピーカーを複数買うのではなく、イヤホンを複数使い分けることです。",
+            "正解です。店員から聞いた「ロックやクラシックなど音楽に合わせて複数のイヤホンを使い分ける」という楽しみ方を自分もやってみたくなったと述べています。"
+          ],
+          "explanation": "The correct answer is **4 聴く音楽に合わせて複数のイヤホンを買って、音楽を楽しむこと** (*Kiku ongaku ni awasete fukusū no iyafon o katte, ongaku o tanoshimu koto*).\n\n---\n\n### Core Question\nWhat did the author \"want to try doing likewise\" (`同じようにやってみたくなった`)?\n\n---\n\n### Evidence & Text Justification\n- Context immediately preceding underline:\n  \"According to the store clerk, recently **some people own multiple earphones and change which earphones they use depending on the music they listen to, such as rock or classical.** Up until now, I had only listened through speakers, but I wanted to try doing the same (`同じようにやってみたくなった`).\"\n- \"Doing the same\" refers directly to owning multiple earphones and switching them to match different genres of music.\n\n---\n\n### Why Other Options Don't Fit\n- **1 10万円以上するイヤホンを一つ買って、スピーカーの音と比べて...**: The author is interested in matching earphones to musical genres, not buying a 100,000-yen flagship model to compare with speakers.\n- **2 10万円以上するイヤホンを一つ買って、いろいろな音楽を楽しむこと**: Does not involve using multiple earphones.\n- **3 聴く音楽に合わせて複数のスピーカーを買って...**: The passage is about buying *earphones* (イヤホン), not speakers."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q25",
@@ -1302,11 +1361,12 @@
           "correct": 4,
           "correctOption": "娘の自然な笑顔の写真が、自分ではうまく撮れないから",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "ポスターを作るためではなく、写真屋に貼ってあったポスターを見て依頼を決めました。",
+            "娘本人が撮ってもらいたいと言ったわけではありません。",
+            "娘が公園で写真を撮られるのが好きだからではありません。",
+            "正解です。本文に「娘の自然な笑顔が撮りたいのですが、自分ではなかなかうまくいかなくて困っていたので」と明確に書かれています。"
+          ],
+          "explanation": "The correct answer is **4 娘の自然な笑顔の写真が、自分ではうまく撮れないから** (*Musume no shizen na egao no shashin ga, jibun dewa umaku torenai kara*).\n\n---\n\n### Core Question\nWhy did the author decide to hire a professional photographer?\n\n---\n\n### Evidence & Text Justification\n- Paragraph 1:\n  「私には4歳の娘がいます。**娘の自然な笑顔が撮りたいのですが、自分ではなかなかうまくいかなくて、困っていたので。**」\n  (\"I have a 4-year-old daughter. I wanted to capture my daughter's natural smile, but doing it myself didn't go well and I was troubled, so [I hired a pro].\")\n- The author could not capture natural smiles on their own.\n\n---\n\n### Why Other Options Don't Fit\n- **1 娘の写真を使って、ポスターを作りたいから**: The author merely saw an advertising poster in the photo shop.\n- **2 娘がプロのカメラマンに撮ってもらいたいと言ったから**: The decision was made entirely by the parent.\n- **3 娘が公園で写真を撮ってもらうのが好きだから**: In fact, the daughter was self-conscious around the camera initially."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q26",
@@ -1321,14 +1381,15 @@
             "カメラを気にしている娘のすぐ近くで撮り始めたこと",
             "20分近くも娘を撮り続けていたこと"
           ],
-          "correct": 1,
-          "correctOption": "プランコで遊んでいる娘を撮り続けたこと",
+          "correct": 3,
+          "correctOption": "カメラを気にしている娘のすぐ近くで撮り始めたこと",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "撮り続けたのはその後の展開であり、不安を感じた瞬間の手法ではありません。",
+            "カメラマンはブランコで一緒に遊んではいません。",
+            "正解です。カメラを意識して緊張している子どものすぐ真横・至近距離で撮影を開始したこと（「娘のすぐ近くで撮り始めました」）を指しています。",
+            "20分撮り続けたことは後から説明される結果です。"
+          ],
+          "explanation": "The correct answer is **3 カメラを気にしている娘のすぐ近くで撮り始めたこと** (*Kamera o ki ni shite iru musume no sugu chikaku de torihajimeta koto*).\n\n*(Note: Some scraped answer keys erroneously cite option 1. However, the author was worried at the outset about shooting right up close to a self-conscious child).*\n\n---\n\n### Core Question\nWhat does \"such a way of doing it\" (`そんなやり方`) refer to?\n\n---\n\n### Evidence & Text Justification\n- Paragraph 2:\n  「当日、**カメラマンは公園のブランコで遊ぶ娘のすぐ近くで撮り始めました。娘がカメラをかなり気にしていたので、私はそんなやり方でいい写真が撮れるのだろうかと思いました。**」\n  (\"On the day, the photographer started taking photos right close to my daughter playing on the swing. Because my daughter was extremely conscious of the camera, I wondered whether good photos could really be taken with such a method.\")\n- The photographer began shooting from immediate proximity right next to a child who was obviously uneasy and self-conscious of the lens.\n\n---\n\n### Why Other Options Don't Fit\n- **1 ブランコで遊んでいる娘を撮り続けたこと**: Continuing to shoot happened *afterward* (`その後もしばらくそのまま撮り続けていました`).\n- **2 娘と一緒にブランコで遊びながら撮り始めたこと**: The photographer never played on the swing with the daughter.\n- **4 20分近くも娘を撮り続けていたこと**: The 20-minute duration is mentioned in the subsequent sentence, not the initial technique that sparked doubt."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q27",
@@ -1346,11 +1407,12 @@
           "correct": 4,
           "correctOption": "子供が撮られることに慣れるように、写真を撮り続けること",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "場所の選択ではなく、撮影時のアプローチについての工夫です。",
+            "時間をかけないようにしたのではなく、最初の20分を慣らす準備に充ててじっくり撮影しました。",
+            "カメラマンが笑顔で撮り続けたことが工夫の核心ではありません。",
+            "正解です。子どもがカメラに慣れて意識しなくなるまで至近距離で撮り続け、リラックスした笑顔を引き出すという工夫が明かされています。"
+          ],
+          "explanation": "The correct answer is **4 子供が撮られることに慣れるように、写真を撮り続けること** (*Kodomo ga torareru koto ni nareru yō ni, shashin o toritsuzukeru koto*).\n\n---\n\n### Core Question\nWhat kind of technique was the professional photographer's \"clever method / ingenuity\" (`工夫`)?\n\n---\n\n### Evidence & Text Justification\n- Final paragraph:\n  「『**自然な笑顔が撮れるのは、カメラに慣れて意識しなくなってからなんです。はじめの20分はそのための準備です。**』と教えてくれました。プロの工夫を聞いて、なるほどと感心しました。」\n  (\"He taught me: 'Natural smiles can only be captured after the child gets used to the camera and stops being conscious of it. The first 20 minutes were preparation for that.' Hearing this professional ingenuity, I was deeply impressed.\")\n- The clever technique was shooting continuously without stopping so that the child would get accustomed to being photographed and naturally forget about the camera.\n\n---\n\n### Why Other Options Don't Fit\n- **1 子供が知らない場所で緊張しないように、慣れている場所で撮ること**: The ingenuity was about desensitizing the child to the camera, not the park location.\n- **2 子供が飽きてしまわないように、なるべく時間をかけないで撮ること**: The photographer took an entire hour (`1時間撮ったあと`), spending 20 minutes just on preparation.\n- **3 子供がカメラマンに慣れるように、カメラマンが笑顔で撮り続けること**: It was about the child becoming accustomed to the camera through continuous shooting, not the photographer's smile."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q28",
@@ -1365,14 +1427,15 @@
             "ソースをついていたほほは、「私」から見て「右」だったが、友だちにとっては「左」だったから",
             "ソースをついていたほほは、「私」から見て「左」だったが、友だちにとっては「右」だったから"
           ],
-          "correct": 4,
-          "correctOption": "ソースをついていたほほは、「私」から見て「左」だったが、友だちにとっては「右」だったから",
+          "correct": 3,
+          "correctOption": "ソースがついていたほほは、「私」から見て「右」だったが、友だちにとっては「左」だったから",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "向かい合っている2人にとって左右は逆になるため、両者にとって同じになることはありません。",
+            "筆者から見て左だったわけではありません。",
+            "正解です。筆者が「私から見て右だよ」と言っている通り、筆者の視点では右側でしたが、向かい合っている友人自身の体にとっては左側の頬でした。",
+            "誤りです。「私から見て左」とあり、本文の「私から見て右だよ」という発言と左右が逆転しています。"
+          ],
+          "explanation": "The correct answer is **3 ソースがついていたほほは、「私」から見て「右」だったが、友だちにとっては「左」だったから** (*Sōsu ga tsuite ita hoho wa, \"watashi\" kara mite \"migi\" datta ga, tomodachi ni totte wa \"hidari\" datta kara*).\n\n*(Note: Scraped portal keys sometimes mark option 4, which reverses the sides. The author explicitly told the friend 「私から見て右だよ」, meaning from the author's viewpoint it was on the right, which corresponded to the friend's left cheek).*\n\n---\n\n### Core Question\nWhy did the author say that \"it is difficult to correctly communicate the 'right' that you are thinking of to the other person\"?\n\n---\n\n### Evidence & Text Justification\n- Passage lines 1–4:\n  - The author saw sauce on the friend's cheek while sitting opposite (`向かい合って`).\n  - The author said: 「右のほほにソースがついているよ」 (There is sauce on your right cheek).\n  - The friend wiped the opposite cheek.\n  - The author clarified: 「あ、そっちじゃなくて、**私から見て右だよ**」 (\"Not that side, **it's the right from my perspective**\").\n  - Because they were facing each other, what was \"right\" to the author was actually the friend's \"left\" cheek.\n- Option 3 correctly identifies: from the author's view it was \"right\", but for the friend it was \"left\".\n\n---\n\n### Why Other Options Don't Fit\n- **1 ソースがついていたほほは、「私」から見ても、友達にとっても「右」だったから**: Facing each other reverses left and right; they cannot be identical.\n- **2 ソースがついていたほほは...「左」だったから**: The author saw it on their right side (`私から見て右`).\n- **4 ソースがついていたほほは、「私」から見て「左」だったが、友だちにとっては「右」だったから**: Direct contradiction of the author's statement `私から見て右だよ`."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q29",
@@ -1390,11 +1453,12 @@
           "correct": 1,
           "correctOption": "どんな人にとっても変わらないものを使った説明",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "正解です。本文に「誰にとっても変わらないものは何だろう。方角なら誰にとってもどんな場所でも変わらない」とあり、絶対的な基準を用いた説明を指しています。",
+            "インターネットの「心臓のない側」という説明は、向かい合うと逆になるため正しく伝わらないと批判されています。",
+            "身体の部位（心臓や利き手）を使った説明では混乱が生じると述べています。",
+            "人によって変わらないものを求めているため、正反対です。"
+          ],
+          "explanation": "The correct answer is **1 どんな人にとっても変わらないものを使った説明** (*Donna hito ni totte mo kawaranai mono o tsukatta setsumei*).\n\n---\n\n### Core Question\nWhat kind of explanation did the author think \"might have conveyed it correctly\" (`正しく伝わったかもしれない`)?\n\n---\n\n### Evidence & Text Justification\n- Paragraph 3:\n  「では、**誰にとっても変わらないものは何だろう。方角なら誰にとってもどんな場所でも変わらない。先日も、「西側のほほ」といえば、正しく伝わったかもしれない。**」\n  (\"Well then, what is something that does not change for anyone? Compass directions do not change for anyone in any location. The other day, if I had said 'the west cheek', it might have been conveyed correctly.\")\n- The author conceived of using an objective reference standard that remains identical for everyone regardless of which way they are facing (such as compass direction).\n\n---\n\n### Why Other Options Don't Fit\n- **2 インターネットで広く紹介されている説明**: The internet explanation (the side without the heart) failed because people facing each other reverse sides.\n- **3 体の一部分を表す言葉を使った説明**: Body parts reverse when facing someone.\n- **4 人によって変わるものを使った説明**: The author explicitly sought something that *does not* change for anyone (`誰にとっても変わらないもの`)."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q30",
@@ -1412,11 +1476,12 @@
           "correct": 4,
           "correctOption": "「私から見て右のほほにソースがついているよ」",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "単に「右のほほ」と言うだけでは、相手の右か自分の右か分からず最初と同じ失敗を繰り返してしまいます。",
+            "心臓を使った説明は向かい合っていると逆になると否定されています。",
+            "方角を使った説明は「実際にはできそうにない」と結論づけられています。",
+            "正解です。位置関係を明確にするため、「私から見て右」と基準を特定して伝えることが最も確実な伝達方法です。"
+          ],
+          "explanation": "The correct answer is **4 「私から見て右のほほにソースがついているよ」** (*\"Watashi kara mite migi no hoho ni sōsu ga tsuite iru yo\"*).\n\n---\n\n### Core Question\nIf the same situation happens in the future, how is the author likely to speak in order to convey the location reliably without mistake?\n\n---\n\n### Evidence & Text Justification\n- Final sentences:\n  「しかし、私たちはいつも方角を考えて生活してはいないので、実際にはこのような言い方はできそうにない。**結局、相手と自分の位置関係を考えながら、「右」「左」という言葉を使う以外の方法はないだろう。**」\n  (\"However, we don't live our daily lives constantly thinking about compass directions, so in reality such a phrasing is impractical. In the end, there is probably no other way than using the words 'right' and 'left' while being conscious of the relative spatial positions of oneself and the other person.\")\n- Being conscious of relative positions means explicitly clarifying the frame of reference: \"on the right cheek *from my perspective* (`私から見て右のほほ`).\"\n\n---\n\n### Why Other Options Don't Fit\n- **1 「右のほほにソースがついているよ」**: That was the ambiguous original phrasing that caused the confusion in the first place.\n- **2 「心臓がある側のほほにソースがついているよ」**: The author rejected this because facing each other makes it confusing.\n- **3 「西側のほほにソースがついているよ」**: The author explicitly rejected compass directions as impractical in ordinary life (`実際にはこのような言い方はできそうにない`)."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q31",
@@ -1434,11 +1499,12 @@
           "correct": 4,
           "correctOption": "立ったり座ったりしていた人は、体からだがどこもあまり疲れていなかった",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "座り続けた人は「足のひざから上」が特に疲れていたと書かれており誤りです。",
+            "立ち続けた人は「足のひざから下」が特に疲れていました。",
+            "姿勢によって疲れの出る部位が全く異なっています。",
+            "正解です。サイトの調査結果として「立ったり座ったりして仕事をしていた人は、体がどこもあまり疲れていなかった」と明確に記されています。"
+          ],
+          "explanation": "The correct answer is **4 立ったり座ったりしていた人は、体がどこもあまり疲れていなかった** (*Tattari suwattari shite ita hito wa, karada ga doko mo amari tsukarete inakatta*).\n\n---\n\n### Core Question\nWhat was learned from the \"interesting website\" (`面白いサイト`)?\n\n---\n\n### Evidence & Text Justification\n- Paragraph 2:\n  - People sitting all day: fatigued from waist up and knees up.\n  - People standing all day: fatigued in feet and calves.\n  - Alternating posture: 「**立ったり座ったりして仕事をしていた人は、体［が］どこもあまり疲れていなかった**」\n  - Those who alternated between standing and sitting experienced very little fatigue anywhere in their bodies.\n\n---\n\n### Why Other Options Don't Fit\n- **1 ずっと座っていた人は、足はどこも疲れていなかった**: They were fatigued from knees up (`足のひざから上`).\n- **2 ずっと立っていた人は、体が全体的に疲れていた**: Specifically their feet and lower legs were fatigued (`足のひざから下`).\n- **3 どんな姿勢をしていた人も皆、足は全体的に疲れていた**: Those who alternated posture were hardly tired anywhere."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q32",
@@ -1456,11 +1522,12 @@
           "correct": 2,
           "correctOption": "社員の間でコミュニケーションが増えた",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "腰の痛みが軽くなるなど、社員の健康状態は改善したため正反対です。",
+            "正解です。立ったままの会議により議論が活発化し、「社員の間でコミュニケーションが増えた」と明記されています。",
+            "会議は長引くのではなく、早く進むようになりました。",
+            "姿勢の良し悪しについての記述はありません。"
+          ],
+          "explanation": "The correct answer is **2 社員の間でコミュニケーションが増えた** (*Shain no aida de komyunikēshon ga fueta*).\n\n---\n\n### Core Question\nWhich statement correctly describes a change that occurred at \"a certain company\" (`ある会社`) that adopted height-adjustable standing desks?\n\n---\n\n### Evidence & Text Justification\n- Paragraph 4:\n  「また、立ったまま会議をするようになり、話し合いが早く活発に進むようになった。そして、**社員の間でコミュニケーションが増えた**そうだ。」\n  (\"Also, they began holding meetings while standing, which made discussions proceed faster and more actively. And communication among employees reportedly increased.\")\n- Option 2 matches this result verbatim.\n\n---\n\n### Why Other Options Don't Fit\n- **1 体の調子が悪くなった社員が増えた**: Employee health improved, with back pain decreasing (`腰の痛みが軽くなった`).\n- **3 時間をかけて話し合う会議が増えた**: Meetings became faster (`話し合いが早く活発に進むようになった`).\n- **4 姿勢がよい社員が増えた**: Posture was not evaluated; physical movement, meeting speed, and communication increased."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q33",
@@ -1478,11 +1545,12 @@
           "correct": 2,
           "correctOption": "長い時間、上座ったままで仕事をしている",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "立ったり座ったりして仕事をしているのは机を導入した別の会社です。",
+            "正解です。冒頭に「私の会社では、毎日何時間もいすに座って仕事をするので」と書かれており、長時間座ったままで作業しています。",
+            "普段から立って仕事をしているわけではありません。",
+            "会議だけ立って行っているという記述はありません。"
+          ],
+          "explanation": "The correct answer is **2 長い時間、座ったままで仕事をしている** (*Nagai jikan, suwatta mama de shigoto o shite iru*).\n\n---\n\n### Core Question\nThe author wishes their company would introduce such desks (`私たちの会社もこのような机にしてほしい`). How do employees currently work at the author's company?\n\n---\n\n### Evidence & Text Justification\n- Paragraph 1:\n  「**私の会社では、毎日何時間もいすに座って仕事をするので**、首や肩や腰が痛くなると言う人が多い。私も腰の痛みに悩んでいる。」\n  (\"At my company, because we work sitting on chairs for hours every day, many people say their necks, shoulders, and lower backs hurt. I too am suffering from lower back pain.\")\n- They currently work sitting down for long hours continuously.\n\n---\n\n### Why Other Options Don't Fit\n- **1 立ったり座ったりして仕事をしている**: That is what the other model company did, not the author's company.\n- **3 ふだんは立って仕事をしていたが、会議は座ってしている**: False.\n- **4 普段は座って仕事をしていたが、会議はたってしている**: The author's company currently does everything sitting down."
         },
         {
           "id": "n3_past_2019_12_grammar_reading_q34",
@@ -1500,11 +1568,12 @@
           "correct": 3,
           "correctOption": "姿勢が体や仕事に与える影響",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "机と椅子の物理的な寸法の話ではなく、働く人の姿勢についての文章です。",
+            "お金や費用に関する記述は本文にありません。",
+            "正解です。作業姿勢（座りっぱなし、立ちっぱなし、交互）が身体の疲労・健康や、仕事の効率・コミュニケーションに与える好影響が論じられています。",
+            "社員の意見が会社を変えるというテーマではありません。"
+          ],
+          "explanation": "The correct answer is **3 姿勢が体や仕事に与える影響** (*Shisei ga karada ya shigoto ni ataeru eikyō*).\n\n---\n\n### Core Question\nWhat is the overall theme of this reading passage?\n\n---\n\n### Evidence & Text Justification\n- Throughout the passage:\n  1. The author discusses how fixed sitting posture causes bodily pain (neck, shoulders, lower back).\n  2. Research findings show how different postures (sitting vs. standing vs. alternating) affect bodily fatigue.\n  3. The example of the company shows how changing posture (standing desks and standing meetings) benefits both bodily health (reduced back pain) and work performance (faster meetings, better communication).\n- Thus, the central theme is the wide-ranging impact of posture on both the human body and work productivity.\n\n---\n\n### Why Other Options Don't Fit\n- **1 机の高さといすの関係**: Desks were height-adjustable, but the passage's core message is about human posture, not furniture measurements.\n- **2 体の調子とお金の関係**: Money/costs are never discussed.\n- **4 社員の意見が会社に与える影響**: Employee opinion feedback is not the subject matter."
         }
       ]
     },

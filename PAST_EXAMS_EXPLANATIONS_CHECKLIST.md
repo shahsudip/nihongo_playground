@@ -22,7 +22,7 @@
 | JLPT N3 Past Exam (2018年7月) | `n3/n3_past_2018_07.json` | `vocab + grammar_reading` | 74 | - [ ] Pending | ⏳ Unchecked |
 | JLPT N3 Past Exam (2018年12月) | `n3/n3_past_2018_12.json` | `vocab + grammar_reading` | 74 | - [ ] Pending | ⏳ Unchecked |
 | JLPT N3 Past Exam (2019年7月) | `n3/n3_past_2019_07.json` | `vocab + grammar_reading` | 74 | - [ ] Pending | ⏳ Unchecked |
-| JLPT N3 Past Exam (2019年12月) | `n3/n3_past_2019_12.json` | `vocab + grammar_reading` | 69 | - [ ] Pending | ⏳ Unchecked |
+| JLPT N3 Past Exam (2019年12月) | `n3/n3_past_2019_12.json` | `vocab + grammar_reading` | 69 | - [x] Complete | ✅ 0 Errors |
 | JLPT N3 Past Exam (2020年12月) | `n3/n3_past_2020_12.json` | `vocab + grammar_reading` | 73 | - [x] Complete | ✅ 0 Errors |
 | JLPT N3 Past Exam (2021年7月) | `n3/n3_past_2021_07.json` | `vocab + grammar_reading` | 73 | - [x] Complete | ✅ 0 Errors |
 | JLPT N3 Past Exam (2021年12月) | `n3/n3_past_2021_12.json` | `vocab + grammar_reading` | 73 | - [x] Complete | ✅ 0 Errors |
