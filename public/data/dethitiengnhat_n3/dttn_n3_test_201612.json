@@ -1,0 +1,5860 @@
+{
+  "id": "dttn_n3_test_201612",
+  "testId": "dttn_n3_test_201612",
+  "testNumber": "201612",
+  "categoryType": "past_exam",
+  "year": 2016,
+  "month": 12,
+  "level": "N3",
+  "title": "JLPT N3 Official Past Exam (2016/12)",
+  "japaneseTitle": "日本語能力試験 N3 2016年12月 過去問",
+  "shortName": "2016/12",
+  "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201612/1",
+  "totalQuestions": 92,
+  "totalMinutes": 140,
+  "totalDurationMinutes": 140,
+  "hasListening": true,
+  "hasAudio": true,
+  "officialScoreMax": 180,
+  "officialPassMark": 95,
+  "scrapedAt": "2026-11-09T08:02:19.325Z",
+  "sections": [
+    {
+      "id": "vocab",
+      "partId": 1,
+      "categoryId": "vocabulary-test",
+      "title": "言語知識（文字・語彙）",
+      "enTitle": "Letters and Vocabulary (文字語彙)",
+      "sourceUrl": "https://dethitiengnhat.com/jlpt/N3/201612/1",
+      "durationMinutes": 30,
+      "questionCount": 35,
+      "questions": [
+        {
+          "id": "dttn_n3_201612_vocab_q1",
+          "number": 1,
+          "position": 0,
+          "mondai": 1,
+          "mondaiTitle": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。",
+          "points": 1,
+          "stem": "会場には大勢の<u>観客</u>がいた。",
+          "stemWithNumber": "1. 会場には大勢の<u>観客</u>がいた。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (かんきゃく)",
+          "options": [
+            "けんぎゃく",
+            "かんぎゃく",
+            "けんきゃく",
+            "かんきゃく"
+          ],
+          "rawOptions": [
+            "1) けんぎゃく",
+            "2) かんぎゃく",
+            "3) けんきゃく",
+            "4) かんきゃく"
+          ],
+          "correct": 4,
+          "correctOption": "かんきゃく",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q2",
+          "number": 2,
+          "position": 1,
+          "mondai": 1,
+          "mondaiTitle": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。",
+          "points": 1,
+          "stem": "田村さんが<u>払って</u>くれました。",
+          "stemWithNumber": "2. 田村さんが<u>払って</u>くれました。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (はらって)",
+          "options": [
+            "くばって",
+            "はらって",
+            "かざって",
+            "ひろって"
+          ],
+          "rawOptions": [
+            "1) くばって",
+            "2) はらって",
+            "3) かざって",
+            "4) ひろって"
+          ],
+          "correct": 2,
+          "correctOption": "はらって",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q3",
+          "number": 3,
+          "position": 2,
+          "mondai": 1,
+          "mondaiTitle": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。",
+          "points": 1,
+          "stem": "ホテルには3時ごろ<u>到着</u>します。",
+          "stemWithNumber": "3. ホテルには3時ごろ<u>到着</u>します。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (とうちゃく)",
+          "options": [
+            "とうちゃく",
+            "とうつく",
+            "とちゃく",
+            "とつく"
+          ],
+          "rawOptions": [
+            "1) とうちゃく",
+            "2) とうつく",
+            "3) とちゃく",
+            "4) とつく"
+          ],
+          "correct": 1,
+          "correctOption": "とうちゃく",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q4",
+          "number": 4,
+          "position": 3,
+          "mondai": 1,
+          "mondaiTitle": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。",
+          "points": 1,
+          "stem": "山下さんが説明を<u>加えました</u>。",
+          "stemWithNumber": "4. 山下さんが説明を<u>加えました</u>。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (くわえました)",
+          "options": [
+            "つたえました",
+            "おえました",
+            "くわえました",
+            "かえました"
+          ],
+          "rawOptions": [
+            "1) つたえました",
+            "2) おえました",
+            "3) くわえました",
+            "4) かえました"
+          ],
+          "correct": 3,
+          "correctOption": "くわえました",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q5",
+          "number": 5,
+          "position": 4,
+          "mondai": 1,
+          "mondaiTitle": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。",
+          "points": 1,
+          "stem": "今から<u>訓練</u>を行います。",
+          "stemWithNumber": "5. 今から<u>訓練</u>を行います。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (くんれん)",
+          "options": [
+            "くんれい",
+            "くんれん",
+            "ぐんれい",
+            "ぐんれん"
+          ],
+          "rawOptions": [
+            "1) くんれい",
+            "2) くんれん",
+            "3) ぐんれい",
+            "4) ぐんれん"
+          ],
+          "correct": 2,
+          "correctOption": "くんれん",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q6",
+          "number": 6,
+          "position": 5,
+          "mondai": 1,
+          "mondaiTitle": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。",
+          "points": 1,
+          "stem": "この<u>豆</u>はスープに使うといいですよ。",
+          "stemWithNumber": "6. この<u>豆</u>はスープに使うといいですよ。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (まめ)",
+          "options": [
+            "こな",
+            "いも",
+            "かい",
+            "まめ"
+          ],
+          "rawOptions": [
+            "1) こな",
+            "2) いも",
+            "3) かい",
+            "4) まめ"
+          ],
+          "correct": 4,
+          "correctOption": "まめ",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q7",
+          "number": 7,
+          "position": 6,
+          "mondai": 1,
+          "mondaiTitle": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。",
+          "points": 1,
+          "stem": "社会には<u>共通</u>のルールがあります。",
+          "stemWithNumber": "7. 社会には<u>共通</u>のルールがあります。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (きょうつう)",
+          "options": [
+            "きょうつ",
+            "こうつう",
+            "きょうつう",
+            "こうつ"
+          ],
+          "rawOptions": [
+            "1) きょうつ",
+            "2) こうつう",
+            "3) きょうつう",
+            "4) こうつ"
+          ],
+          "correct": 3,
+          "correctOption": "きょうつう",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q8",
+          "number": 8,
+          "position": 7,
+          "mondai": 1,
+          "mondaiTitle": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。",
+          "points": 1,
+          "stem": "来年から<u>税金</u>が上がるそうだ。",
+          "stemWithNumber": "8. 来年から<u>税金</u>が上がるそうだ。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (ぜいきん)",
+          "options": [
+            "ぜいきん",
+            "ぜっきん",
+            "せいきん",
+            "せっきん"
+          ],
+          "rawOptions": [
+            "1) ぜいきん",
+            "2) ぜっきん",
+            "3) せいきん",
+            "4) せっきん"
+          ],
+          "correct": 1,
+          "correctOption": "ぜいきん",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q9",
+          "number": 9,
+          "position": 8,
+          "mondai": 2,
+          "mondaiTitle": "問題2 ___のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "しばらく、きれいな<u>なみ</u>を見ていた。",
+          "stemWithNumber": "9. しばらく、きれいな<u>なみ</u>を見ていた。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (波)",
+          "options": [
+            "池",
+            "湖",
+            "港",
+            "波"
+          ],
+          "rawOptions": [
+            "1) 池",
+            "2) 湖",
+            "3) 港",
+            "4) 波"
+          ],
+          "correct": 4,
+          "correctOption": "波",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q10",
+          "number": 10,
+          "position": 9,
+          "mondai": 2,
+          "mondaiTitle": "問題2 ___のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "もう少し<u>はやく</u>歩きましょう。",
+          "stemWithNumber": "10. もう少し<u>はやく</u>歩きましょう。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (速く)",
+          "options": [
+            "軽く",
+            "急く",
+            "速く",
+            "進く"
+          ],
+          "rawOptions": [
+            "1) 軽く",
+            "2) 急く",
+            "3) 速く",
+            "4) 進く"
+          ],
+          "correct": 3,
+          "correctOption": "速く",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q11",
+          "number": 11,
+          "position": 10,
+          "mondai": 2,
+          "mondaiTitle": "問題2 ___のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "わたしは今の生活に<u>まんぞく</u>している。",
+          "stemWithNumber": "11. わたしは今の生活に<u>まんぞく</u>している。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (満足)",
+          "options": [
+            "満続",
+            "万族",
+            "満足",
+            "万足"
+          ],
+          "rawOptions": [
+            "1) 満続",
+            "2) 万族",
+            "3) 満足",
+            "4) 万足"
+          ],
+          "correct": 3,
+          "correctOption": "満足",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q12",
+          "number": 12,
+          "position": 11,
+          "mondai": 2,
+          "mondaiTitle": "問題2 ___のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "父は腕を<u>くんで</u>何か考えていた。",
+          "stemWithNumber": "12. 父は腕を<u>くんで</u>何か考えていた。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (組んで)",
+          "options": [
+            "接んで",
+            "組んで",
+            "折んで",
+            "結んで"
+          ],
+          "rawOptions": [
+            "1) 接んで",
+            "2) 組んで",
+            "3) 折んで",
+            "4) 結んで"
+          ],
+          "correct": 2,
+          "correctOption": "組んで",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q13",
+          "number": 13,
+          "position": 12,
+          "mondai": 2,
+          "mondaiTitle": "問題2 ___のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "この国は主に米を<u>ゆしゅつ</u>している。",
+          "stemWithNumber": "13. この国は主に米を<u>ゆしゅつ</u>している。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (輸出)",
+          "options": [
+            "輸出",
+            "諭出",
+            "輪出",
+            "論出"
+          ],
+          "rawOptions": [
+            "1) 輸出",
+            "2) 諭出",
+            "3) 輪出",
+            "4) 論出"
+          ],
+          "correct": 1,
+          "correctOption": "輸出",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q14",
+          "number": 14,
+          "position": 13,
+          "mondai": 2,
+          "mondaiTitle": "問題2 ___のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "ちゃんが母親に抱かれて<u>ねむって</u>います。",
+          "stemWithNumber": "14. ちゃんが母親に抱かれて<u>ねむって</u>います。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (眠って)",
+          "options": [
+            "寝って",
+            "宿って",
+            "眼って",
+            "眠って"
+          ],
+          "rawOptions": [
+            "1) 寝って",
+            "2) 宿って",
+            "3) 眼って",
+            "4) 眠って"
+          ],
+          "correct": 4,
+          "correctOption": "眠って",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q15",
+          "number": 15,
+          "position": 14,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "この紙は、ぬれても破れにくいという( )があります。",
+          "stemWithNumber": "15. この紙は、ぬれても破れにくいという( )があります。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (特長)",
+          "options": [
+            "実力",
+            "特長",
+            "専門",
+            "主張"
+          ],
+          "rawOptions": [
+            "1) 実力",
+            "2) 特長",
+            "3) 専門",
+            "4) 主張"
+          ],
+          "correct": 2,
+          "correctOption": "特長",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q16",
+          "number": 16,
+          "position": 15,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "依さんには、おとなしい( )があるが、本当は活動的な人らしい。",
+          "stemWithNumber": "16. 依さんには、おとなしい( )があるが、本当は活動的な人らしい。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (イメージ)",
+          "options": [
+            "ヒント",
+            "タイル",
+            "アイディア",
+            "イメージ"
+          ],
+          "rawOptions": [
+            "1) ヒント",
+            "2) タイル",
+            "3) アイディア",
+            "4) イメージ"
+          ],
+          "correct": 4,
+          "correctOption": "イメージ",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q17",
+          "number": 17,
+          "position": 16,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "正月には親戚が集まって、みんなでテーブルを( ), 楽しく食事をした。",
+          "stemWithNumber": "17. 正月には親戚が集まって、みんなでテーブルを( ), 楽しく食事をした。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (囲み)",
+          "options": [
+            "囲み",
+            "通し",
+            "包み",
+            "越え"
+          ],
+          "rawOptions": [
+            "1) 囲み",
+            "2) 通し",
+            "3) 包み",
+            "4) 越え"
+          ],
+          "correct": 1,
+          "correctOption": "囲み",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q18",
+          "number": 18,
+          "position": 17,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "このレストランの料理はおいしくないので、店内はいつも( )た。",
+          "stemWithNumber": "18. このレストランの料理はおいしくないので、店内はいつも( )た。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (がらがら)",
+          "options": [
+            "ふらふら",
+            "ぐっすり",
+            "がらがら",
+            "うっかり"
+          ],
+          "rawOptions": [
+            "1) ふらふら",
+            "2) ぐっすり",
+            "3) がらがら",
+            "4) うっかり"
+          ],
+          "correct": 3,
+          "correctOption": "がらがら",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q19",
+          "number": 19,
+          "position": 18,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "高田さんが引っ越すという( )を聞いたが、本当かどうか気になる。",
+          "stemWithNumber": "19. 高田さんが引っ越すという( )を聞いたが、本当かどうか気になる。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (うわさ)",
+          "options": [
+            "うわさ",
+            "宣伝",
+            "うそ",
+            "冗談"
+          ],
+          "rawOptions": [
+            "1) うわさ",
+            "2) 宣伝",
+            "3) うそ",
+            "4) 冗談"
+          ],
+          "correct": 1,
+          "correctOption": "うわさ",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q20",
+          "number": 20,
+          "position": 19,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "父から借りた本をなくしてしまったので謝ったら、父はすぐに( )くれた。",
+          "stemWithNumber": "20. 父から借りた本をなくしてしまったので謝ったら、父はすぐに( )くれた。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (許して)",
+          "options": [
+            "従って",
+            "守って",
+            "許して",
+            "抑えて"
+          ],
+          "rawOptions": [
+            "1) 従って",
+            "2) 守って",
+            "3) 許して",
+            "4) 抑えて"
+          ],
+          "correct": 3,
+          "correctOption": "許して",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q21",
+          "number": 21,
+          "position": 20,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "パソコンの前でずっと同じ( )でいたので、体が痛くなった。",
+          "stemWithNumber": "21. パソコンの前でずっと同じ( )でいたので、体が痛くなった。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (姿勢)",
+          "options": [
+            "様子",
+            "姿勢",
+            "印象",
+            "閲隔"
+          ],
+          "rawOptions": [
+            "1) 様子",
+            "2) 姿勢",
+            "3) 印象",
+            "4) 閲隔"
+          ],
+          "correct": 2,
+          "correctOption": "姿勢",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q22",
+          "number": 22,
+          "position": 21,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "申込書に間違いがないか、よく( )から受付に出した。",
+          "stemWithNumber": "22. 申込書に間違いがないか、よく( )から受付に出した。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (たしかめて)",
+          "options": [
+            "くりかえして",
+            "気にして",
+            "見つめて",
+            "たしかめて"
+          ],
+          "rawOptions": [
+            "1) くりかえして",
+            "2) 気にして",
+            "3) 見つめて",
+            "4) たしかめて"
+          ],
+          "correct": 4,
+          "correctOption": "たしかめて",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q23",
+          "number": 23,
+          "position": 22,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "わたしのふるさとは( )が盛んで、米や野業をたくさん作っています。",
+          "stemWithNumber": "23. わたしのふるさとは( )が盛んで、米や野業をたくさん作っています。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (農業)",
+          "options": [
+            "自然",
+            "資源",
+            "作物",
+            "農業"
+          ],
+          "rawOptions": [
+            "1) 自然",
+            "2) 資源",
+            "3) 作物",
+            "4) 農業"
+          ],
+          "correct": 4,
+          "correctOption": "農業",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q24",
+          "number": 24,
+          "position": 23,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "水に浮いていた木の葉が、しばらくすると水の中に( )しまった。",
+          "stemWithNumber": "24. 水に浮いていた木の葉が、しばらくすると水の中に( )しまった。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (しずんで)",
+          "options": [
+            "しずんで",
+            "ころんで",
+            "たおれて",
+            "おぼれて"
+          ],
+          "rawOptions": [
+            "1) しずんで",
+            "2) ころんで",
+            "3) たおれて",
+            "4) おぼれて"
+          ],
+          "correct": 1,
+          "correctOption": "しずんで",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q25",
+          "number": 25,
+          "position": 24,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "この話は誰にも言わずに、ずっと( )にしていた。",
+          "stemWithNumber": "25.この話は誰にも言わずに、ずっと( )にしていた。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (内緒)",
+          "options": [
+            "裏側",
+            "内緒",
+            "後方",
+            "中身"
+          ],
+          "rawOptions": [
+            "1) 裏側",
+            "2) 内緒",
+            "3) 後方",
+            "4) 中身"
+          ],
+          "correct": 2,
+          "correctOption": "内緒",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q26",
+          "number": 26,
+          "position": 25,
+          "mondai": 4,
+          "mondaiTitle": "問題4___に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "水の表面が<u>かがやいて</u>います。",
+          "stemWithNumber": "26. 水の表面が<u>かがやいて</u>います。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (光って)",
+          "options": [
+            "止まって",
+            "揺れて",
+            "汚れて",
+            "光って"
+          ],
+          "rawOptions": [
+            "1) 止まって",
+            "2) 揺れて",
+            "3) 汚れて",
+            "4) 光って"
+          ],
+          "correct": 4,
+          "correctOption": "光って",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q27",
+          "number": 27,
+          "position": 26,
+          "mondai": 4,
+          "mondaiTitle": "問題4___に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "その知らせを聞いたとき、わたしはとても<u>がっかりした</u>。",
+          "stemWithNumber": "27. その知らせを聞いたとき、わたしはとても<u>がっかりした</u>。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (残念だと思った)",
+          "options": [
+            "残念だと思った",
+            "うれしかった",
+            "驚いた",
+            "安心した"
+          ],
+          "rawOptions": [
+            "1) 残念だと思った",
+            "2) うれしかった",
+            "3) 驚いた",
+            "4) 安心した"
+          ],
+          "correct": 1,
+          "correctOption": "残念だと思った",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q28",
+          "number": 28,
+          "position": 27,
+          "mondai": 4,
+          "mondaiTitle": "問題4___に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "留学生活に不安は<u>当然</u>ありました。",
+          "stemWithNumber": "28. 留学生活に不安は<u>当然</u>ありました。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (もちろん)",
+          "options": [
+            "いろいろ",
+            "少し",
+            "もちろん",
+            "いつも"
+          ],
+          "rawOptions": [
+            "1) いろいろ",
+            "2) 少し",
+            "3) もちろん",
+            "4) いつも"
+          ],
+          "correct": 3,
+          "correctOption": "もちろん",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q29",
+          "number": 29,
+          "position": 28,
+          "mondai": 4,
+          "mondaiTitle": "問題4___に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "パーティーの料理が<u>あまりました</u>。",
+          "stemWithNumber": "29. パーティーの料理が<u>あまりました</u>。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (多すぎて残りました。)",
+          "options": [
+            "多すぎて残りました。",
+            "少し足りませんでした",
+            "とてもおいしかったです",
+            "そんなにおいしくなかったです"
+          ],
+          "rawOptions": [
+            "1) 多すぎて残りました。",
+            "2) 少し足りませんでした",
+            "3) とてもおいしかったです",
+            "4) そんなにおいしくなかったです"
+          ],
+          "correct": 1,
+          "correctOption": "多すぎて残りました。",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q30",
+          "number": 30,
+          "position": 29,
+          "mondai": 4,
+          "mondaiTitle": "問題4___に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+          "points": 1,
+          "stem": "ここは<u>横断禁止</u>です。",
+          "stemWithNumber": "30. ここは<u>横断禁止</u>です。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (渡ってはいけません)",
+          "options": [
+            "座ってはいけません",
+            "走ってはいけません",
+            "渡ってはいけません",
+            "入ってはいけません"
+          ],
+          "rawOptions": [
+            "1) 座ってはいけません",
+            "2) 走ってはいけません",
+            "3) 渡ってはいけません",
+            "4) 入ってはいけません"
+          ],
+          "correct": 3,
+          "correctOption": "渡ってはいけません",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q31",
+          "number": 31,
+          "position": 30,
+          "mondai": 5,
+          "mondaiTitle": "問題5: 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "急",
+          "stemWithNumber": "31. 急",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (部屋から急に人が飛び出してきたので、ぶつかりそうになった。)",
+          "options": [
+            "この料理は電子レンジを使って急にできるので、とても簡単だ。",
+            "あと1) 0分で電車が出発してしまうので、急に駅に向かった。",
+            "部屋から急に人が飛び出してきたので、ぶつかりそうになった。",
+            "新しいゲームを買ったので、家に帰って急にやってみた。"
+          ],
+          "rawOptions": [
+            "1) この料理は電子レンジを使って急にできるので、とても簡単だ。",
+            "2) あと1) 0分で電車が出発してしまうので、急に駅に向かった。",
+            "3) 部屋から急に人が飛び出してきたので、ぶつかりそうになった。",
+            "4) 新しいゲームを買ったので、家に帰って急にやってみた。"
+          ],
+          "correct": 3,
+          "correctOption": "部屋から急に人が飛び出してきたので、ぶつかりそうになった。",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q32",
+          "number": 32,
+          "position": 31,
+          "mondai": 5,
+          "mondaiTitle": "問題5: 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "沸騰",
+          "stemWithNumber": "32. 沸騰",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (鍋のお湯が沸騰したら、とうふを入れて火を少し弱くしてください。)",
+          "options": [
+            "今日は朝からどんどん暑くなり、昼には気温が沸騰した。",
+            "鍋のお湯が沸騰したら、とうふを入れて火を少し弱くしてください。",
+            "昼ごろから具合が悪くなり、夕方熱が沸騰したので病院へ行った。",
+            "このストーブは沸騰するのが早いので、すぐに部屋が暖かくなる。"
+          ],
+          "rawOptions": [
+            "1) 今日は朝からどんどん暑くなり、昼には気温が沸騰した。",
+            "2) 鍋のお湯が沸騰したら、とうふを入れて火を少し弱くしてください。",
+            "3) 昼ごろから具合が悪くなり、夕方熱が沸騰したので病院へ行った。",
+            "4) このストーブは沸騰するのが早いので、すぐに部屋が暖かくなる。"
+          ],
+          "correct": 2,
+          "correctOption": "鍋のお湯が沸騰したら、とうふを入れて火を少し弱くしてください。",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q33",
+          "number": 33,
+          "position": 32,
+          "mondai": 5,
+          "mondaiTitle": "問題5: 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "まげる",
+          "stemWithNumber": "33. まげる",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (けがは良くなったが、腕を伸ばしたりまげたりすると、まだ少し痛む。)",
+          "options": [
+            "今朝は寒かったので、マフラーを首にまげて出かけた。",
+            "けがは良くなったが、腕を伸ばしたりまげたりすると、まだ少し痛む。",
+            "一つのパンを半分にまけて、二人で分けて食べた。",
+            "シャツをきちんとまげたら、たんすの引き出しにしまってください。"
+          ],
+          "rawOptions": [
+            "1) 今朝は寒かったので、マフラーを首にまげて出かけた。",
+            "2) けがは良くなったが、腕を伸ばしたりまげたりすると、まだ少し痛む。",
+            "3) 一つのパンを半分にまけて、二人で分けて食べた。",
+            "4) シャツをきちんとまげたら、たんすの引き出しにしまってください。"
+          ],
+          "correct": 2,
+          "correctOption": "けがは良くなったが、腕を伸ばしたりまげたりすると、まだ少し痛む。",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q34",
+          "number": 34,
+          "position": 33,
+          "mondai": 5,
+          "mondaiTitle": "問題5: 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "出張",
+          "stemWithNumber": "34. 出張",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (営業のため、来週一週間、課長とアメリカに出張します。)",
+          "options": [
+            "営業のため、来週一週間、課長とアメリカに出張します。",
+            "仕事を辞めたら、家族とゆっくり海外に出張したいと思う。",
+            "わたしは毎朝9時に会社に出張し、残業はしないで家に帰る。",
+            "あしたは子どもの運動会に出張するので、仕事を休みます。"
+          ],
+          "rawOptions": [
+            "1) 営業のため、来週一週間、課長とアメリカに出張します。",
+            "2) 仕事を辞めたら、家族とゆっくり海外に出張したいと思う。",
+            "3) わたしは毎朝9時に会社に出張し、残業はしないで家に帰る。",
+            "4) あしたは子どもの運動会に出張するので、仕事を休みます。"
+          ],
+          "correct": 1,
+          "correctOption": "営業のため、来週一週間、課長とアメリカに出張します。",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_vocab_q35",
+          "number": 35,
+          "position": 34,
+          "mondai": 5,
+          "mondaiTitle": "問題5: 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "慰める",
+          "stemWithNumber": "35. 慰める",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (仕事で失敗してしまったが、友人が慰めてくれたので元気が出た。)",
+          "options": [
+            "祖母は古い物でも捨てないで、長い間慰めて使っている。",
+            "試合を見ながら、優勝を願って一生懸命選手を慰めた。",
+            "仕事で失敗してしまったが、友人が慰めてくれたので元気が出た。",
+            "第が希望の大学に合格したので、家族で外食をして慰めた。"
+          ],
+          "rawOptions": [
+            "1) 祖母は古い物でも捨てないで、長い間慰めて使っている。",
+            "2) 試合を見ながら、優勝を願って一生懸命選手を慰めた。",
+            "3) 仕事で失敗してしまったが、友人が慰めてくれたので元気が出た。",
+            "4) 第が希望の大学に合格したので、家族で外食をして慰めた。"
+          ],
+          "correct": 3,
+          "correctOption": "仕事で失敗してしまったが、友人が慰めてくれたので元気が出た。",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        }
+      ],
+      "contentBlocks": [
+        {
+          "type": "section-header",
+          "text": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。"
+        },
+        {
+          "type": "question",
+          "questionNumber": 1,
+          "questionText": "1. 会場には大勢の観客がいた。",
+          "questionHtml": "1. 会場には大勢の<u>観客</u>がいた。",
+          "underlinedText": "観客",
+          "options": [
+            "1) けんぎゃく",
+            "2) かんぎゃく",
+            "3) けんきゃく",
+            "4) かんきゃく"
+          ],
+          "cleanOptions": [
+            "けんぎゃく",
+            "かんぎゃく",
+            "けんきゃく",
+            "かんきゃく"
+          ],
+          "points": 1,
+          "mondai": 1,
+          "mondaiTitle": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) かんきゃく"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 2,
+          "questionText": "2. 田村さんが払ってくれました。",
+          "questionHtml": "2. 田村さんが<u>払って</u>くれました。",
+          "underlinedText": "払って",
+          "options": [
+            "1) くばって",
+            "2) はらって",
+            "3) かざって",
+            "4) ひろって"
+          ],
+          "cleanOptions": [
+            "くばって",
+            "はらって",
+            "かざって",
+            "ひろって"
+          ],
+          "points": 1,
+          "mondai": 1,
+          "mondaiTitle": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) はらって"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 3,
+          "questionText": "3. ホテルには3時ごろ到着します。",
+          "questionHtml": "3. ホテルには3時ごろ<u>到着</u>します。",
+          "underlinedText": "到着",
+          "options": [
+            "1) とうちゃく",
+            "2) とうつく",
+            "3) とちゃく",
+            "4) とつく"
+          ],
+          "cleanOptions": [
+            "とうちゃく",
+            "とうつく",
+            "とちゃく",
+            "とつく"
+          ],
+          "points": 1,
+          "mondai": 1,
+          "mondaiTitle": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) とうちゃく"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 4,
+          "questionText": "4. 山下さんが説明を加えました。",
+          "questionHtml": "4. 山下さんが説明を<u>加えました</u>。",
+          "underlinedText": "加えました",
+          "options": [
+            "1) つたえました",
+            "2) おえました",
+            "3) くわえました",
+            "4) かえました"
+          ],
+          "cleanOptions": [
+            "つたえました",
+            "おえました",
+            "くわえました",
+            "かえました"
+          ],
+          "points": 1,
+          "mondai": 1,
+          "mondaiTitle": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) くわえました"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 5,
+          "questionText": "5. 今から訓練を行います。",
+          "questionHtml": "5. 今から<u>訓練</u>を行います。",
+          "underlinedText": "訓練",
+          "options": [
+            "1) くんれい",
+            "2) くんれん",
+            "3) ぐんれい",
+            "4) ぐんれん"
+          ],
+          "cleanOptions": [
+            "くんれい",
+            "くんれん",
+            "ぐんれい",
+            "ぐんれん"
+          ],
+          "points": 1,
+          "mondai": 1,
+          "mondaiTitle": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) くんれん"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 6,
+          "questionText": "6. この豆はスープに使うといいですよ。",
+          "questionHtml": "6. この<u>豆</u>はスープに使うといいですよ。",
+          "underlinedText": "豆",
+          "options": [
+            "1) こな",
+            "2) いも",
+            "3) かい",
+            "4) まめ"
+          ],
+          "cleanOptions": [
+            "こな",
+            "いも",
+            "かい",
+            "まめ"
+          ],
+          "points": 1,
+          "mondai": 1,
+          "mondaiTitle": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) まめ"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 7,
+          "questionText": "7. 社会には共通のルールがあります。",
+          "questionHtml": "7. 社会には<u>共通</u>のルールがあります。",
+          "underlinedText": "共通",
+          "options": [
+            "1) きょうつ",
+            "2) こうつう",
+            "3) きょうつう",
+            "4) こうつ"
+          ],
+          "cleanOptions": [
+            "きょうつ",
+            "こうつう",
+            "きょうつう",
+            "こうつ"
+          ],
+          "points": 1,
+          "mondai": 1,
+          "mondaiTitle": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) きょうつう"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 8,
+          "questionText": "8. 来年から税金が上がるそうだ。",
+          "questionHtml": "8. 来年から<u>税金</u>が上がるそうだ。",
+          "underlinedText": "税金",
+          "options": [
+            "1) ぜいきん",
+            "2) ぜっきん",
+            "3) せいきん",
+            "4) せっきん"
+          ],
+          "cleanOptions": [
+            "ぜいきん",
+            "ぜっきん",
+            "せいきん",
+            "せっきん"
+          ],
+          "points": 1,
+          "mondai": 1,
+          "mondaiTitle": "問題1___の言葉の読み方として最もよいものを、1・2・3・4 から一つ選びなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) ぜいきん"
+          }
+        },
+        {
+          "type": "section-header",
+          "text": "問題2 ___のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。"
+        },
+        {
+          "type": "question",
+          "questionNumber": 9,
+          "questionText": "9. しばらく、きれいななみを見ていた。",
+          "questionHtml": "9. しばらく、きれいな<u>なみ</u>を見ていた。",
+          "underlinedText": "なみ",
+          "options": [
+            "1) 池",
+            "2) 湖",
+            "3) 港",
+            "4) 波"
+          ],
+          "cleanOptions": [
+            "池",
+            "湖",
+            "港",
+            "波"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "問題2 ___のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) 波"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 10,
+          "questionText": "10. もう少しはやく歩きましょう。",
+          "questionHtml": "10. もう少し<u>はやく</u>歩きましょう。",
+          "underlinedText": "はやく",
+          "options": [
+            "1) 軽く",
+            "2) 急く",
+            "3) 速く",
+            "4) 進く"
+          ],
+          "cleanOptions": [
+            "軽く",
+            "急く",
+            "速く",
+            "進く"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "問題2 ___のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) 速く"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 11,
+          "questionText": "11. わたしは今の生活にまんぞくしている。",
+          "questionHtml": "11. わたしは今の生活に<u>まんぞく</u>している。",
+          "underlinedText": "まんぞく",
+          "options": [
+            "1) 満続",
+            "2) 万族",
+            "3) 満足",
+            "4) 万足"
+          ],
+          "cleanOptions": [
+            "満続",
+            "万族",
+            "満足",
+            "万足"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "問題2 ___のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) 満足"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 12,
+          "questionText": "12. 父は腕をくんで何か考えていた。",
+          "questionHtml": "12. 父は腕を<u>くんで</u>何か考えていた。",
+          "underlinedText": "くんで",
+          "options": [
+            "1) 接んで",
+            "2) 組んで",
+            "3) 折んで",
+            "4) 結んで"
+          ],
+          "cleanOptions": [
+            "接んで",
+            "組んで",
+            "折んで",
+            "結んで"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "問題2 ___のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) 組んで"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 13,
+          "questionText": "13. この国は主に米をゆしゅつしている。",
+          "questionHtml": "13. この国は主に米を<u>ゆしゅつ</u>している。",
+          "underlinedText": "ゆしゅつ",
+          "options": [
+            "1) 輸出",
+            "2) 諭出",
+            "3) 輪出",
+            "4) 論出"
+          ],
+          "cleanOptions": [
+            "輸出",
+            "諭出",
+            "輪出",
+            "論出"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "問題2 ___のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) 輸出"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 14,
+          "questionText": "14. ちゃんが母親に抱かれてねむっています。",
+          "questionHtml": "14. ちゃんが母親に抱かれて<u>ねむって</u>います。",
+          "underlinedText": "ねむって",
+          "options": [
+            "1) 寝って",
+            "2) 宿って",
+            "3) 眼って",
+            "4) 眠って"
+          ],
+          "cleanOptions": [
+            "寝って",
+            "宿って",
+            "眼って",
+            "眠って"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "問題2 ___のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) 眠って"
+          }
+        },
+        {
+          "type": "section-header",
+          "text": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。"
+        },
+        {
+          "type": "question",
+          "questionNumber": 15,
+          "questionText": "15. この紙は、ぬれても破れにくいという( )があります。",
+          "questionHtml": "15. この紙は、ぬれても破れにくいという( )があります。",
+          "underlinedText": null,
+          "options": [
+            "1) 実力",
+            "2) 特長",
+            "3) 専門",
+            "4) 主張"
+          ],
+          "cleanOptions": [
+            "実力",
+            "特長",
+            "専門",
+            "主張"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) 特長"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 16,
+          "questionText": "16. 依さんには、おとなしい( )があるが、本当は活動的な人らしい。",
+          "questionHtml": "16. 依さんには、おとなしい( )があるが、本当は活動的な人らしい。",
+          "underlinedText": null,
+          "options": [
+            "1) ヒント",
+            "2) タイル",
+            "3) アイディア",
+            "4) イメージ"
+          ],
+          "cleanOptions": [
+            "ヒント",
+            "タイル",
+            "アイディア",
+            "イメージ"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) イメージ"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 17,
+          "questionText": "17. 正月には親戚が集まって、みんなでテーブルを( ), 楽しく食事をした。",
+          "questionHtml": "17. 正月には親戚が集まって、みんなでテーブルを( ), 楽しく食事をした。",
+          "underlinedText": null,
+          "options": [
+            "1) 囲み",
+            "2) 通し",
+            "3) 包み",
+            "4) 越え"
+          ],
+          "cleanOptions": [
+            "囲み",
+            "通し",
+            "包み",
+            "越え"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) 囲み"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 18,
+          "questionText": "18. このレストランの料理はおいしくないので、店内はいつも( )た。",
+          "questionHtml": "18. このレストランの料理はおいしくないので、店内はいつも( )た。",
+          "underlinedText": null,
+          "options": [
+            "1) ふらふら",
+            "2) ぐっすり",
+            "3) がらがら",
+            "4) うっかり"
+          ],
+          "cleanOptions": [
+            "ふらふら",
+            "ぐっすり",
+            "がらがら",
+            "うっかり"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) がらがら"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 19,
+          "questionText": "19. 高田さんが引っ越すという( )を聞いたが、本当かどうか気になる。",
+          "questionHtml": "19. 高田さんが引っ越すという( )を聞いたが、本当かどうか気になる。",
+          "underlinedText": null,
+          "options": [
+            "1) うわさ",
+            "2) 宣伝",
+            "3) うそ",
+            "4) 冗談"
+          ],
+          "cleanOptions": [
+            "うわさ",
+            "宣伝",
+            "うそ",
+            "冗談"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) うわさ"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 20,
+          "questionText": "20. 父から借りた本をなくしてしまったので謝ったら、父はすぐに( )くれた。",
+          "questionHtml": "20. 父から借りた本をなくしてしまったので謝ったら、父はすぐに( )くれた。",
+          "underlinedText": null,
+          "options": [
+            "1) 従って",
+            "2) 守って",
+            "3) 許して",
+            "4) 抑えて"
+          ],
+          "cleanOptions": [
+            "従って",
+            "守って",
+            "許して",
+            "抑えて"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) 許して"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 21,
+          "questionText": "21. パソコンの前でずっと同じ( )でいたので、体が痛くなった。",
+          "questionHtml": "21. パソコンの前でずっと同じ( )でいたので、体が痛くなった。",
+          "underlinedText": null,
+          "options": [
+            "1) 様子",
+            "2) 姿勢",
+            "3) 印象",
+            "4) 閲隔"
+          ],
+          "cleanOptions": [
+            "様子",
+            "姿勢",
+            "印象",
+            "閲隔"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) 姿勢"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 22,
+          "questionText": "22. 申込書に間違いがないか、よく( )から受付に出した。",
+          "questionHtml": "22. 申込書に間違いがないか、よく( )から受付に出した。",
+          "underlinedText": null,
+          "options": [
+            "1) くりかえして",
+            "2) 気にして",
+            "3) 見つめて",
+            "4) たしかめて"
+          ],
+          "cleanOptions": [
+            "くりかえして",
+            "気にして",
+            "見つめて",
+            "たしかめて"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) たしかめて"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 23,
+          "questionText": "23. わたしのふるさとは( )が盛んで、米や野業をたくさん作っています。",
+          "questionHtml": "23. わたしのふるさとは( )が盛んで、米や野業をたくさん作っています。",
+          "underlinedText": null,
+          "options": [
+            "1) 自然",
+            "2) 資源",
+            "3) 作物",
+            "4) 農業"
+          ],
+          "cleanOptions": [
+            "自然",
+            "資源",
+            "作物",
+            "農業"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) 農業"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 24,
+          "questionText": "24. 水に浮いていた木の葉が、しばらくすると水の中に( )しまった。",
+          "questionHtml": "24. 水に浮いていた木の葉が、しばらくすると水の中に( )しまった。",
+          "underlinedText": null,
+          "options": [
+            "1) しずんで",
+            "2) ころんで",
+            "3) たおれて",
+            "4) おぼれて"
+          ],
+          "cleanOptions": [
+            "しずんで",
+            "ころんで",
+            "たおれて",
+            "おぼれて"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) しずんで"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 25,
+          "questionText": "25.この話は誰にも言わずに、ずっと( )にしていた。",
+          "questionHtml": "25.この話は誰にも言わずに、ずっと( )にしていた。",
+          "underlinedText": null,
+          "options": [
+            "1) 裏側",
+            "2) 内緒",
+            "3) 後方",
+            "4) 中身"
+          ],
+          "cleanOptions": [
+            "裏側",
+            "内緒",
+            "後方",
+            "中身"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "間題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) 内緒"
+          }
+        },
+        {
+          "type": "section-header",
+          "text": "問題4___に意味が最も近いものを、1・2・3・4から一つえらびなさい。"
+        },
+        {
+          "type": "question",
+          "questionNumber": 26,
+          "questionText": "26. 水の表面がかがやいています。",
+          "questionHtml": "26. 水の表面が<u>かがやいて</u>います。",
+          "underlinedText": "かがやいて",
+          "options": [
+            "1) 止まって",
+            "2) 揺れて",
+            "3) 汚れて",
+            "4) 光って"
+          ],
+          "cleanOptions": [
+            "止まって",
+            "揺れて",
+            "汚れて",
+            "光って"
+          ],
+          "points": 1,
+          "mondai": 4,
+          "mondaiTitle": "問題4___に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) 光って"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 27,
+          "questionText": "27. その知らせを聞いたとき、わたしはとてもがっかりした。",
+          "questionHtml": "27. その知らせを聞いたとき、わたしはとても<u>がっかりした</u>。",
+          "underlinedText": "がっかりした",
+          "options": [
+            "1) 残念だと思った",
+            "2) うれしかった",
+            "3) 驚いた",
+            "4) 安心した"
+          ],
+          "cleanOptions": [
+            "残念だと思った",
+            "うれしかった",
+            "驚いた",
+            "安心した"
+          ],
+          "points": 1,
+          "mondai": 4,
+          "mondaiTitle": "問題4___に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) 残念だと思った"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 28,
+          "questionText": "28. 留学生活に不安は当然ありました。",
+          "questionHtml": "28. 留学生活に不安は<u>当然</u>ありました。",
+          "underlinedText": "当然",
+          "options": [
+            "1) いろいろ",
+            "2) 少し",
+            "3) もちろん",
+            "4) いつも"
+          ],
+          "cleanOptions": [
+            "いろいろ",
+            "少し",
+            "もちろん",
+            "いつも"
+          ],
+          "points": 1,
+          "mondai": 4,
+          "mondaiTitle": "問題4___に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) もちろん"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 29,
+          "questionText": "29. パーティーの料理があまりました。",
+          "questionHtml": "29. パーティーの料理が<u>あまりました</u>。",
+          "underlinedText": "あまりました",
+          "options": [
+            "1) 多すぎて残りました。",
+            "2) 少し足りませんでした",
+            "3) とてもおいしかったです",
+            "4) そんなにおいしくなかったです"
+          ],
+          "cleanOptions": [
+            "多すぎて残りました。",
+            "少し足りませんでした",
+            "とてもおいしかったです",
+            "そんなにおいしくなかったです"
+          ],
+          "points": 1,
+          "mondai": 4,
+          "mondaiTitle": "問題4___に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) 多すぎて残りました。"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 30,
+          "questionText": "30. ここは横断禁止です。",
+          "questionHtml": "30. ここは<u>横断禁止</u>です。",
+          "underlinedText": "横断禁止",
+          "options": [
+            "1) 座ってはいけません",
+            "2) 走ってはいけません",
+            "3) 渡ってはいけません",
+            "4) 入ってはいけません"
+          ],
+          "cleanOptions": [
+            "座ってはいけません",
+            "走ってはいけません",
+            "渡ってはいけません",
+            "入ってはいけません"
+          ],
+          "points": 1,
+          "mondai": 4,
+          "mondaiTitle": "問題4___に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) 渡ってはいけません"
+          }
+        },
+        {
+          "type": "section-header",
+          "text": "問題5: 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。"
+        },
+        {
+          "type": "question",
+          "questionNumber": 31,
+          "questionText": "31. 急",
+          "questionHtml": "31. 急",
+          "underlinedText": null,
+          "options": [
+            "1) この料理は電子レンジを使って急にできるので、とても簡単だ。",
+            "2) あと1) 0分で電車が出発してしまうので、急に駅に向かった。",
+            "3) 部屋から急に人が飛び出してきたので、ぶつかりそうになった。",
+            "4) 新しいゲームを買ったので、家に帰って急にやってみた。"
+          ],
+          "cleanOptions": [
+            "この料理は電子レンジを使って急にできるので、とても簡単だ。",
+            "あと1) 0分で電車が出発してしまうので、急に駅に向かった。",
+            "部屋から急に人が飛び出してきたので、ぶつかりそうになった。",
+            "新しいゲームを買ったので、家に帰って急にやってみた。"
+          ],
+          "points": 1,
+          "mondai": 5,
+          "mondaiTitle": "問題5: 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) 部屋から急に人が飛び出してきたので、ぶつかりそうになった。"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 32,
+          "questionText": "32. 沸騰",
+          "questionHtml": "32. 沸騰",
+          "underlinedText": null,
+          "options": [
+            "1) 今日は朝からどんどん暑くなり、昼には気温が沸騰した。",
+            "2) 鍋のお湯が沸騰したら、とうふを入れて火を少し弱くしてください。",
+            "3) 昼ごろから具合が悪くなり、夕方熱が沸騰したので病院へ行った。",
+            "4) このストーブは沸騰するのが早いので、すぐに部屋が暖かくなる。"
+          ],
+          "cleanOptions": [
+            "今日は朝からどんどん暑くなり、昼には気温が沸騰した。",
+            "鍋のお湯が沸騰したら、とうふを入れて火を少し弱くしてください。",
+            "昼ごろから具合が悪くなり、夕方熱が沸騰したので病院へ行った。",
+            "このストーブは沸騰するのが早いので、すぐに部屋が暖かくなる。"
+          ],
+          "points": 1,
+          "mondai": 5,
+          "mondaiTitle": "問題5: 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) 鍋のお湯が沸騰したら、とうふを入れて火を少し弱くしてください。"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 33,
+          "questionText": "33. まげる",
+          "questionHtml": "33. まげる",
+          "underlinedText": null,
+          "options": [
+            "1) 今朝は寒かったので、マフラーを首にまげて出かけた。",
+            "2) けがは良くなったが、腕を伸ばしたりまげたりすると、まだ少し痛む。",
+            "3) 一つのパンを半分にまけて、二人で分けて食べた。",
+            "4) シャツをきちんとまげたら、たんすの引き出しにしまってください。"
+          ],
+          "cleanOptions": [
+            "今朝は寒かったので、マフラーを首にまげて出かけた。",
+            "けがは良くなったが、腕を伸ばしたりまげたりすると、まだ少し痛む。",
+            "一つのパンを半分にまけて、二人で分けて食べた。",
+            "シャツをきちんとまげたら、たんすの引き出しにしまってください。"
+          ],
+          "points": 1,
+          "mondai": 5,
+          "mondaiTitle": "問題5: 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) けがは良くなったが、腕を伸ばしたりまげたりすると、まだ少し痛む。"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 34,
+          "questionText": "34. 出張",
+          "questionHtml": "34. 出張",
+          "underlinedText": null,
+          "options": [
+            "1) 営業のため、来週一週間、課長とアメリカに出張します。",
+            "2) 仕事を辞めたら、家族とゆっくり海外に出張したいと思う。",
+            "3) わたしは毎朝9時に会社に出張し、残業はしないで家に帰る。",
+            "4) あしたは子どもの運動会に出張するので、仕事を休みます。"
+          ],
+          "cleanOptions": [
+            "営業のため、来週一週間、課長とアメリカに出張します。",
+            "仕事を辞めたら、家族とゆっくり海外に出張したいと思う。",
+            "わたしは毎朝9時に会社に出張し、残業はしないで家に帰る。",
+            "あしたは子どもの運動会に出張するので、仕事を休みます。"
+          ],
+          "points": 1,
+          "mondai": 5,
+          "mondaiTitle": "問題5: 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) 営業のため、来週一週間、課長とアメリカに出張します。"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 35,
+          "questionText": "35. 慰める",
+          "questionHtml": "35. 慰める",
+          "underlinedText": null,
+          "options": [
+            "1) 祖母は古い物でも捨てないで、長い間慰めて使っている。",
+            "2) 試合を見ながら、優勝を願って一生懸命選手を慰めた。",
+            "3) 仕事で失敗してしまったが、友人が慰めてくれたので元気が出た。",
+            "4) 第が希望の大学に合格したので、家族で外食をして慰めた。"
+          ],
+          "cleanOptions": [
+            "祖母は古い物でも捨てないで、長い間慰めて使っている。",
+            "試合を見ながら、優勝を願って一生懸命選手を慰めた。",
+            "仕事で失敗してしまったが、友人が慰めてくれたので元気が出た。",
+            "第が希望の大学に合格したので、家族で外食をして慰めた。"
+          ],
+          "points": 1,
+          "mondai": 5,
+          "mondaiTitle": "問題5: 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) 仕事で失敗してしまったが、友人が慰めてくれたので元気が出た。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "grammar_reading",
+      "partId": 3,
+      "categoryId": "grammar-test",
+      "title": "言語知識（文法）・読解",
+      "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+      "sourceUrl": "https://dethitiengnhat.com/jlpt/N3/201612/3",
+      "durationMinutes": 70,
+      "questionCount": 39,
+      "questions": [
+        {
+          "id": "dttn_n3_201612_grammar_reading_q1",
+          "number": 1,
+          "position": 0,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "彼は小説家 ( ) 有名になったが、普段は小さな病院で働く医者だ。",
+          "stemWithNumber": "36. 彼は小説家 ( ) 有名になったが、普段は小さな病院で働く医者だ。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (として)",
+          "options": [
+            "について",
+            "として",
+            "にしたがって",
+            "と比べて"
+          ],
+          "rawOptions": [
+            "1) について",
+            "2) として",
+            "3) にしたがって",
+            "4) と比べて"
+          ],
+          "correct": 2,
+          "correctOption": "として",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q2",
+          "number": 2,
+          "position": 1,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "先週、会社面接で「もし自分を色で表す ( ) 、何色ですか。」と聞かれ、オレンジ色と答えた。「元気」や「健康」のイメージがあるからだ。",
+          "stemWithNumber": "37. 先週、会社面接で「もし自分を色で表す ( ) 、何色ですか。」と聞かれ、オレンジ色と答えた。「元気」や「健康」のイメージがあるからだ。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (としたら)",
+          "options": [
+            "ことから",
+            "いう点で",
+            "ように",
+            "としたら"
+          ],
+          "rawOptions": [
+            "1) ことから",
+            "2) いう点で",
+            "3) ように",
+            "4) としたら"
+          ],
+          "correct": 4,
+          "correctOption": "としたら",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q3",
+          "number": 3,
+          "position": 2,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "昨日の夜、寝る前に ( ) ヨーグルトが食べたくなって、 夜中なのにコンビニに買いに行ってしまった。",
+          "stemWithNumber": "38. 昨日の夜、寝る前に ( ) ヨーグルトが食べたくなって、 夜中なのにコンビニに買いに行ってしまった。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (どうしても)",
+          "options": [
+            "どうか",
+            "せっかく",
+            "どうしても",
+            "きっと"
+          ],
+          "rawOptions": [
+            "1) どうか",
+            "2) せっかく",
+            "3) どうしても",
+            "4) きっと"
+          ],
+          "correct": 3,
+          "correctOption": "どうしても",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q4",
+          "number": 4,
+          "position": 3,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "このケーキは材料を混ぜて焼く ( ) から、誰でも失敗せずにおいしく作れる。",
+          "stemWithNumber": "39. このケーキは材料を混ぜて焼く ( ) から、誰でも失敗せずにおいしく作れる。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (だけだ)",
+          "options": [
+            "だけだ",
+            "ことだ",
+            "せいだ",
+            "ときだ"
+          ],
+          "rawOptions": [
+            "1) だけだ",
+            "2) ことだ",
+            "3) せいだ",
+            "4) ときだ"
+          ],
+          "correct": 1,
+          "correctOption": "だけだ",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q5",
+          "number": 5,
+          "position": 4,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "私の町では毎年8月最後の日曜日に夏祭りが ( ) 。",
+          "stemWithNumber": "40. 私の町では毎年8月最後の日曜日に夏祭りが ( ) 。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (行われます)",
+          "options": [
+            "行います",
+            "行わせます",
+            "行っています",
+            "行われます"
+          ],
+          "rawOptions": [
+            "1) 行います",
+            "2) 行わせます",
+            "3) 行っています",
+            "4) 行われます"
+          ],
+          "correct": 4,
+          "correctOption": "行われます",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q6",
+          "number": 6,
+          "position": 5,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "(靴屋で) 客: 「すみません。この靴のもう一つ大きいサイズはありますか。」 店員:「あ、はい、確認しますので、少々 ( )。」",
+          "stemWithNumber": "41. (靴屋で) 客: 「すみません。この靴のもう一つ大きいサイズはありますか。」 店員:「あ、はい、確認しますので、少々 ( )。」",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (お待ちください)",
+          "options": [
+            "お待ちしております",
+            "お待ちください",
+            "お待ちできます",
+            "お待ちしましょう"
+          ],
+          "rawOptions": [
+            "1) お待ちしております",
+            "2) お待ちください",
+            "3) お待ちできます",
+            "4) お待ちしましょう"
+          ],
+          "correct": 2,
+          "correctOption": "お待ちください",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q7",
+          "number": 7,
+          "position": 6,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "(電話で) X建設の社員:「はい、X建設営業部です。」 中田:「あ、私、ABC銀行の中田と( )が、山石さんをお願いします。」",
+          "stemWithNumber": "42. (電話で) X建設の社員:「はい、X建設営業部です。」 中田:「あ、私、ABC銀行の中田と( )が、山石さんをお願いします。」",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (申します)",
+          "options": [
+            "ございます",
+            "いたします",
+            "申します",
+            "申し上げ生す"
+          ],
+          "rawOptions": [
+            "1) ございます",
+            "2) いたします",
+            "3) 申します",
+            "4) 申し上げ生す"
+          ],
+          "correct": 3,
+          "correctOption": "申します",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q8",
+          "number": 8,
+          "position": 7,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "息子が通う高校では、お昼にパンや飲み物が買える場所もあるが、基本的には全員がお弁当を ( ) 。",
+          "stemWithNumber": "43. 息子が通う高校では、お昼にパンや飲み物が買える場所もあるが、基本的には全員がお弁当を ( ) 。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (持っていくことになっている)",
+          "options": [
+            "持っていったばかりだ",
+            "持っていくことになっている",
+            "持っていきたい",
+            "持っていくつ香りだ"
+          ],
+          "rawOptions": [
+            "1) 持っていったばかりだ",
+            "2) 持っていくことになっている",
+            "3) 持っていきたい",
+            "4) 持っていくつ香りだ"
+          ],
+          "correct": 2,
+          "correctOption": "持っていくことになっている",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q9",
+          "number": 9,
+          "position": 8,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "昼寝をするのは気持ちがいいが、夜 ( ) 困るので、いつも15分ぐらいで起きる。",
+          "stemWithNumber": "44. 昼寝をするのは気持ちがいいが、夜 ( ) 困るので、いつも15分ぐらいで起きる。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (寝られないと)",
+          "options": [
+            "寝なくて",
+            "寝られると思って",
+            "寝られないと",
+            "寝ると思うと"
+          ],
+          "rawOptions": [
+            "1) 寝なくて",
+            "2) 寝られると思って",
+            "3) 寝られないと",
+            "4) 寝ると思うと"
+          ],
+          "correct": 3,
+          "correctOption": "寝られないと",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q10",
+          "number": 10,
+          "position": 9,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "A市は、保育園の数が少なく、保育園を ( ) 利用できない人がいることが問題になっている。",
+          "stemWithNumber": "45. A市は、保育園の数が少なく、保育園を ( ) 利用できない人がいることが問題になっている。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (利用したくても)",
+          "options": [
+            "利用したくても",
+            "利用しそうになって",
+            "利用しているのに",
+            "利用できたら"
+          ],
+          "rawOptions": [
+            "1) 利用したくても",
+            "2) 利用しそうになって",
+            "3) 利用しているのに",
+            "4) 利用できたら"
+          ],
+          "correct": 1,
+          "correctOption": "利用したくても",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q11",
+          "number": 11,
+          "position": 10,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "妻:「ねえ、ちょっと買い物に行ってくるから、今夜行くレストランの予約をお願いできる?」 夫:「うん、わかった （ ） 。19時からで大丈夫?」 妻:「ええ、ありがとう。」",
+          "stemWithNumber": "46. 妻:「ねえ、ちょっと買い物に行ってくるから、今夜行くレストランの予約をお願いできる?」 夫:「うん、わかった （ ） 。19時からで大丈夫?」 妻:「ええ、ありがとう。」",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (予約しておくよ)",
+          "options": [
+            "予約してね",
+            "予約しておくよ",
+            "予約しようよ",
+            "予約してある"
+          ],
+          "rawOptions": [
+            "1) 予約してね",
+            "2) 予約しておくよ",
+            "3) 予約しようよ",
+            "4) 予約してある"
+          ],
+          "correct": 2,
+          "correctOption": "予約しておくよ",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q12",
+          "number": 12,
+          "position": 11,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "(畑で) 子:「ねえ、ごのトマト、もう食べられる?赤くなっているよ。」 父: 「うん。そろそろ （ ） ね。」",
+          "stemWithNumber": "47. (畑で) 子:「ねえ、ごのトマト、もう食べられる?赤くなっているよ。」 父: 「うん。そろそろ （ ） ね。」",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (食べてもよさそうだ)",
+          "options": [
+            "食べやすいそうだ",
+            "食べていそうだ",
+            "食べたがるそうだ",
+            "食べてもよさそうだ"
+          ],
+          "rawOptions": [
+            "1) 食べやすいそうだ",
+            "2) 食べていそうだ",
+            "3) 食べたがるそうだ",
+            "4) 食べてもよさそうだ"
+          ],
+          "correct": 4,
+          "correctOption": "食べてもよさそうだ",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q13",
+          "number": 13,
+          "position": 12,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "(改札で) 南: 「山下さん、来ませんね。携帯に電話をしても出ないし、どうしますか。」 中川:「これ以上待つと私たちも間に合わないから、先に （ ） 」。 南 「そうですね。行きますか。」",
+          "stemWithNumber": "48. (改札で) 南: 「山下さん、来ませんね。携帯に電話をしても出ないし、どうしますか。」 中川:「これ以上待つと私たちも間に合わないから、先に （ ） 」。 南 「そうですね。行きますか。」",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (行ってしまいましょうか)",
+          "options": [
+            "行ってしまいましょうか",
+            "行ってしまうのでしょう",
+            "行ってしまいましたか",
+            "行ってしまっていました"
+          ],
+          "rawOptions": [
+            "1) 行ってしまいましょうか",
+            "2) 行ってしまうのでしょう",
+            "3) 行ってしまいましたか",
+            "4) 行ってしまっていました"
+          ],
+          "correct": 1,
+          "correctOption": "行ってしまいましょうか",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q14",
+          "number": 14,
+          "position": 13,
+          "mondai": 7,
+          "mondaiTitle": "問題7: 次の文の _★_ に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "この写真の鳥はとても珍しくて、この鳥の ___ _★_ ___ ___ そうだ。",
+          "stemWithNumber": "49. この写真の鳥はとても珍しくて、この鳥の ___ _★_ ___ ___ そうだ。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (専門家でも)",
+          "options": [
+            "見る機会がない",
+            "専門家でも",
+            "なかなか",
+            "研究をしている"
+          ],
+          "rawOptions": [
+            "1) 見る機会がない",
+            "2) 専門家でも",
+            "3) なかなか",
+            "4) 研究をしている"
+          ],
+          "correct": 2,
+          "correctOption": "専門家でも",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q15",
+          "number": 15,
+          "position": 14,
+          "mondai": 7,
+          "mondaiTitle": "問題7: 次の文の _★_ に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "春から大学生になる娘には、 ___ ___ _★_ ___できない経験をいろいろしてほしい。",
+          "stemWithNumber": "50. 春から大学生になる娘には、 ___ ___ _★_ ___できない経験をいろいろしてほしい。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (大学時代)",
+          "options": [
+            "にも",
+            "にしか",
+            "勉強以外",
+            "大学時代"
+          ],
+          "rawOptions": [
+            "1) にも",
+            "2) にしか",
+            "3) 勉強以外",
+            "4) 大学時代"
+          ],
+          "correct": 4,
+          "correctOption": "大学時代",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q16",
+          "number": 16,
+          "position": 15,
+          "mondai": 7,
+          "mondaiTitle": "問題7: 次の文の _★_ に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "土曜日は買い物をしたり友人と食事をしたりし、日曜日は ___ ___ _★_ ___私の好きな週末の過ごし方だ。",
+          "stemWithNumber": "51. 土曜日は買い物をしたり友人と食事をしたりし、日曜日は ___ ___ _★_ ___私の好きな週末の過ごし方だ。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (という)",
+          "options": [
+            "のが",
+            "という",
+            "家で過ごす",
+            "どこにも出かけずに"
+          ],
+          "rawOptions": [
+            "1) のが",
+            "2) という",
+            "3) 家で過ごす",
+            "4) どこにも出かけずに"
+          ],
+          "correct": 2,
+          "correctOption": "という",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q17",
+          "number": 17,
+          "position": 16,
+          "mondai": 7,
+          "mondaiTitle": "問題7: 次の文の _★_ に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "(レスランで) 客: 「すみません 15分ぐらい前に案内をお願いして、しばらくここで待てって___ ___ _★_ ___ 。まだですか。」 店員:「大変申し訳ありません。」",
+          "stemWithNumber": "52. (レスランで) 客: 「すみません 15分ぐらい前に案内をお願いして、しばらくここで待てって___ ___ _★_ ___ 。まだですか。」 店員:「大変申し訳ありません。」",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (待っているんです)",
+          "options": [
+            "待っているんです",
+            "言われた",
+            "から",
+            "けど"
+          ],
+          "rawOptions": [
+            "1) 待っているんです",
+            "2) 言われた",
+            "3) から",
+            "4) けど"
+          ],
+          "correct": 1,
+          "correctOption": "待っているんです",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q18",
+          "number": 18,
+          "position": 17,
+          "mondai": 7,
+          "mondaiTitle": "問題7: 次の文の _★_ に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "歴史を___ ___ _★_ ___進学を決めた。",
+          "stemWithNumber": "53. 歴史を___ ___ _★_ ___進学を決めた。",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (と思うようになって)",
+          "options": [
+            "勉強すればするほど",
+            "歴史学科への",
+            "と思うようになって",
+            "もっと学びたい"
+          ],
+          "rawOptions": [
+            "1) 勉強すればするほど",
+            "2) 歴史学科への",
+            "3) と思うようになって",
+            "4) もっと学びたい"
+          ],
+          "correct": 3,
+          "correctOption": "と思うようになって",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q19",
+          "number": 19,
+          "position": 18,
+          "mondai": 8,
+          "mondaiTitle": "問題8: 次の文章を読んで、文章全体の内容を考えて、(1)から(5 )の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "【1】",
+          "stemWithNumber": "54. 【1】",
+          "context": "下の作文は、留学生が書いた作文です。<br><br>\n\n                      日本人の天気の話<br><br>\n\n                                                                                                          アルティカ　ミラ<br><br>\n\n   日本へ来て、多くの人が天気の話をすることに気がつきました。アパートの管理人さんは朝会うと、「おはよう。」の後に「今日は暑いね。」とか「いい天気だね。」と言います。あちこちで、多くの人があいさつに続けて天気の話をしているのを聞きました。【１】、私の国では天気の話をあまりしないので、なぜ天気の話をするのかわかりませんでした。私はしてもしなくてもいいと考え、自分からはしていませんでした。<br><br>\n   ところが、ある冬の寒い朝、日本人の友達に会ったとき、「おはよう。」の後で自然に「寒いね」と【２】。友達は「本当だね」と答え、その後、寒い冬に食べるとおいしい食べ物や冬の服の話になりました。天気の話が天気に関係した話に【３】、おもしろいと思いました。<br><br>\n   私の国は一年中暑いですが、日本は四季があって気温の変化が大きいし、天気もよく変わります。そのため、多くの人が天気に関心を【４】。<br><br>\n   最近は管理人さんともよく天気の話をするようになって、天気の話は誰とでもしやすいことに気づきました。【５】も天気の話をする人が多い理由の一つだと思います。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (けれども)",
+          "options": [
+            "そのうえ",
+            "つまり",
+            "けれども",
+            "すると"
+          ],
+          "rawOptions": [
+            "1) そのうえ",
+            "2) つまり",
+            "3) けれども",
+            "4) すると"
+          ],
+          "correct": 3,
+          "correctOption": "けれども",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q20",
+          "number": 20,
+          "position": 19,
+          "mondai": 8,
+          "mondaiTitle": "問題8: 次の文章を読んで、文章全体の内容を考えて、(1)から(5 )の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "【2】",
+          "stemWithNumber": "55. 【2】",
+          "context": "下の作文は、留学生が書いた作文です。<br><br>\n\n                      日本人の天気の話<br><br>\n\n                                                                                                          アルティカ　ミラ<br><br>\n\n   日本へ来て、多くの人が天気の話をすることに気がつきました。アパートの管理人さんは朝会うと、「おはよう。」の後に「今日は暑いね。」とか「いい天気だね。」と言います。あちこちで、多くの人があいさつに続けて天気の話をしているのを聞きました。【１】、私の国では天気の話をあまりしないので、なぜ天気の話をするのかわかりませんでした。私はしてもしなくてもいいと考え、自分からはしていませんでした。<br><br>\n   ところが、ある冬の寒い朝、日本人の友達に会ったとき、「おはよう。」の後で自然に「寒いね」と【２】。友達は「本当だね」と答え、その後、寒い冬に食べるとおいしい食べ物や冬の服の話になりました。天気の話が天気に関係した話に【３】、おもしろいと思いました。<br><br>\n   私の国は一年中暑いですが、日本は四季があって気温の変化が大きいし、天気もよく変わります。そのため、多くの人が天気に関心を【４】。<br><br>\n   最近は管理人さんともよく天気の話をするようになって、天気の話は誰とでもしやすいことに気づきました。【５】も天気の話をする人が多い理由の一つだと思います。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (言ってしまいました)",
+          "options": [
+            "言われていました",
+            "言ってもらいました",
+            "言わせてみました",
+            "言ってしまいました"
+          ],
+          "rawOptions": [
+            "1) 言われていました",
+            "2) 言ってもらいました",
+            "3) 言わせてみました",
+            "4) 言ってしまいました"
+          ],
+          "correct": 4,
+          "correctOption": "言ってしまいました",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q21",
+          "number": 21,
+          "position": 20,
+          "mondai": 8,
+          "mondaiTitle": "問題8: 次の文章を読んで、文章全体の内容を考えて、(1)から(5 )の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "【3】",
+          "stemWithNumber": "56. 【3】",
+          "context": "下の作文は、留学生が書いた作文です。<br><br>\n\n                      日本人の天気の話<br><br>\n\n                                                                                                          アルティカ　ミラ<br><br>\n\n   日本へ来て、多くの人が天気の話をすることに気がつきました。アパートの管理人さんは朝会うと、「おはよう。」の後に「今日は暑いね。」とか「いい天気だね。」と言います。あちこちで、多くの人があいさつに続けて天気の話をしているのを聞きました。【１】、私の国では天気の話をあまりしないので、なぜ天気の話をするのかわかりませんでした。私はしてもしなくてもいいと考え、自分からはしていませんでした。<br><br>\n   ところが、ある冬の寒い朝、日本人の友達に会ったとき、「おはよう。」の後で自然に「寒いね」と【２】。友達は「本当だね」と答え、その後、寒い冬に食べるとおいしい食べ物や冬の服の話になりました。天気の話が天気に関係した話に【３】、おもしろいと思いました。<br><br>\n   私の国は一年中暑いですが、日本は四季があって気温の変化が大きいし、天気もよく変わります。そのため、多くの人が天気に関心を【４】。<br><br>\n   最近は管理人さんともよく天気の話をするようになって、天気の話は誰とでもしやすいことに気づきました。【５】も天気の話をする人が多い理由の一つだと思います。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (広がって)",
+          "options": [
+            "広がって",
+            "広がるより",
+            "広がるように",
+            "広がったそうで"
+          ],
+          "rawOptions": [
+            "1) 広がって",
+            "2) 広がるより",
+            "3) 広がるように",
+            "4) 広がったそうで"
+          ],
+          "correct": 1,
+          "correctOption": "広がって",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q22",
+          "number": 22,
+          "position": 21,
+          "mondai": 8,
+          "mondaiTitle": "問題8: 次の文章を読んで、文章全体の内容を考えて、(1)から(5 )の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "【4】",
+          "stemWithNumber": "57. 【4】",
+          "context": "下の作文は、留学生が書いた作文です。<br><br>\n\n                      日本人の天気の話<br><br>\n\n                                                                                                          アルティカ　ミラ<br><br>\n\n   日本へ来て、多くの人が天気の話をすることに気がつきました。アパートの管理人さんは朝会うと、「おはよう。」の後に「今日は暑いね。」とか「いい天気だね。」と言います。あちこちで、多くの人があいさつに続けて天気の話をしているのを聞きました。【１】、私の国では天気の話をあまりしないので、なぜ天気の話をするのかわかりませんでした。私はしてもしなくてもいいと考え、自分からはしていませんでした。<br><br>\n   ところが、ある冬の寒い朝、日本人の友達に会ったとき、「おはよう。」の後で自然に「寒いね」と【２】。友達は「本当だね」と答え、その後、寒い冬に食べるとおいしい食べ物や冬の服の話になりました。天気の話が天気に関係した話に【３】、おもしろいと思いました。<br><br>\n   私の国は一年中暑いですが、日本は四季があって気温の変化が大きいし、天気もよく変わります。そのため、多くの人が天気に関心を【４】。<br><br>\n   最近は管理人さんともよく天気の話をするようになって、天気の話は誰とでもしやすいことに気づきました。【５】も天気の話をする人が多い理由の一つだと思います。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (持つのかもしれせん)",
+          "options": [
+            "持ったはずがありません",
+            "持ちたがりません",
+            "持つのかもしれせん",
+            "持とうとしません"
+          ],
+          "rawOptions": [
+            "1) 持ったはずがありません",
+            "2) 持ちたがりません",
+            "3) 持つのかもしれせん",
+            "4) 持とうとしません"
+          ],
+          "correct": 3,
+          "correctOption": "持つのかもしれせん",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q23",
+          "number": 23,
+          "position": 22,
+          "mondai": 8,
+          "mondaiTitle": "問題8: 次の文章を読んで、文章全体の内容を考えて、(1)から(5 )の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "【5】",
+          "stemWithNumber": "58. 【5】",
+          "context": "下の作文は、留学生が書いた作文です。<br><br>\n\n                      日本人の天気の話<br><br>\n\n                                                                                                          アルティカ　ミラ<br><br>\n\n   日本へ来て、多くの人が天気の話をすることに気がつきました。アパートの管理人さんは朝会うと、「おはよう。」の後に「今日は暑いね。」とか「いい天気だね。」と言います。あちこちで、多くの人があいさつに続けて天気の話をしているのを聞きました。【１】、私の国では天気の話をあまりしないので、なぜ天気の話をするのかわかりませんでした。私はしてもしなくてもいいと考え、自分からはしていませんでした。<br><br>\n   ところが、ある冬の寒い朝、日本人の友達に会ったとき、「おはよう。」の後で自然に「寒いね」と【２】。友達は「本当だね」と答え、その後、寒い冬に食べるとおいしい食べ物や冬の服の話になりました。天気の話が天気に関係した話に【３】、おもしろいと思いました。<br><br>\n   私の国は一年中暑いですが、日本は四季があって気温の変化が大きいし、天気もよく変わります。そのため、多くの人が天気に関心を【４】。<br><br>\n   最近は管理人さんともよく天気の話をするようになって、天気の話は誰とでもしやすいことに気づきました。【５】も天気の話をする人が多い理由の一つだと思います。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (これ)",
+          "options": [
+            "どれ",
+            "これ",
+            "あれら",
+            "それら"
+          ],
+          "rawOptions": [
+            "1) どれ",
+            "2) これ",
+            "3) あれら",
+            "4) それら"
+          ],
+          "correct": 2,
+          "correctOption": "これ",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q24",
+          "number": 24,
+          "position": 23,
+          "mondai": 9,
+          "mondaiTitle": "問題9: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "このメールからわかることは何か。",
+          "stemWithNumber": "59. このメールからわかることは何か。",
+          "context": "これは大学から学生に届いたメールである。<br><br>\nあて先：kinkyugoyana-daigaku.ac.jp<br><br>\n件名：大雪による休講のお知らせ<br><br>\n送信日時：2016年12月1日7:00<br><br>\n学生のみなさん<br><br>\n現在、大雪のため、多くの公共交通機関が止まっています。そのため、午前の授業は行われません。午後の授業は、10時じまでにを公共交通機関が動き始めれば、いつもの通り行います。授業を行うかどうか10時にメールでお知らせしますので、必ず確認してください。<br><br>なお、クラブ活動やサークル活動なども、午前中は中止してください。<br><br>大山大学　事務室",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (今日の午後の授業があるかどうどうか、10時に事務室からメールが届く。)",
+          "options": [
+            "今日の午前の授業は、10時から始まる。",
+            "午前も午後も、今日はクラブ活動を中止しなければならない。",
+            "今日の午後の授業があるかどうどうか、10時に事務室からメールが届く。",
+            "10時に事務室からメールが届いたら、今日の午後の授業はある。"
+          ],
+          "rawOptions": [
+            "1) 今日の午前の授業は、10時から始まる。",
+            "2) 午前も午後も、今日はクラブ活動を中止しなければならない。",
+            "3) 今日の午後の授業があるかどうどうか、10時に事務室からメールが届く。",
+            "4) 10時に事務室からメールが届いたら、今日の午後の授業はある。"
+          ],
+          "correct": 3,
+          "correctOption": "今日の午後の授業があるかどうどうか、10時に事務室からメールが届く。",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q25",
+          "number": 25,
+          "position": 24,
+          "mondai": 9,
+          "mondaiTitle": "問題9: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "携帯電話について、「私」はどのように考えているか。",
+          "stemWithNumber": "60. 携帯電話について、「私」はどのように考えているか。",
+          "context": "「携帯電話は持っていないんです。」私がそう言うと、たいていの人は驚く。「あったら便利ですよ。」と言われるが、それは私もよくわかっている。<br><br>\n   実は、私も以前、携帯電話を持っていた。しかし、いつどこにいても電話に出なければいけない気がして、それが嫌で持つのをやめてしまったのだ。すると、とても気持ちが楽になった。<br><br>\n   最近は料金が安いものもあるようだし、携帯電話がない生活には不便なこともある。それでも、私は今のままでいいと思っている。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (便利だと思うが、いつも電話を気にする生活は嫌なので、今は持つつもりはない。)",
+          "options": [
+            "便利だと言う人もいるが、自分はそう思わないので、今は持つつもりはない。",
+            "便利だと思うが、いつも電話を気にする生活は嫌なので、今は持つつもりはない。",
+            "持っていると便利だし、最近は料金が安くなったので、もう一度持つつもりだ。",
+            "持ちたくなかったが、ないと不便なので、もう一度持つつもりだ。"
+          ],
+          "rawOptions": [
+            "1) 便利だと言う人もいるが、自分はそう思わないので、今は持つつもりはない。",
+            "2) 便利だと思うが、いつも電話を気にする生活は嫌なので、今は持つつもりはない。",
+            "3) 持っていると便利だし、最近は料金が安くなったので、もう一度持つつもりだ。",
+            "4) 持ちたくなかったが、ないと不便なので、もう一度持つつもりだ。"
+          ],
+          "correct": 2,
+          "correctOption": "便利だと思うが、いつも電話を気にする生活は嫌なので、今は持つつもりはない。",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q26",
+          "number": 26,
+          "position": 25,
+          "mondai": 9,
+          "mondaiTitle": "問題9: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "今の販売機が作られることになったのは、どうしてか。",
+          "stemWithNumber": "61. 今の販売機が作られることになったのは、どうしてか。",
+          "context": "日本には飲み物の自動販売機がたくさんある。缶コーヒーやペットボトルのお茶などは、一台の販売機で温かい物か冷たい物かを選べるので、便利だ。しかし、最初のころの自動販売機は、冷たい物しか売ることができなかった。<br><br>\n   ある冬の日、高速道路の駐車場で、トラックの運転手たちが自動販売機で買ったジュースを飲んでいた。みんなとても寒そうだったので、それを見た飲料会社の社長が、冬には温かい物を飲んでほしいと考えた。それから10年近くかけて作られたのが、今の販売機なのだそうだ。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (温かい物も買える販売機があれば喜ばれるだろうと、飲料会社の社長が考えたから)",
+          "options": [
+            "冬に販売機で冷たい物を買って飲んだ飲料会社の社長が、客が気の毒だと感じたから",
+            "冷たい物が買える販売機があれば便利だろうと、飲料会社の社長が考えたから",
+            "温かい物が買える販売機が欲しいと、飲料会社の社長が運転手たちに言われたから",
+            "温かい物も買える販売機があれば喜ばれるだろうと、飲料会社の社長が考えたから"
+          ],
+          "rawOptions": [
+            "1) 冬に販売機で冷たい物を買って飲んだ飲料会社の社長が、客が気の毒だと感じたから",
+            "2) 冷たい物が買える販売機があれば便利だろうと、飲料会社の社長が考えたから",
+            "3) 温かい物が買える販売機が欲しいと、飲料会社の社長が運転手たちに言われたから",
+            "4) 温かい物も買える販売機があれば喜ばれるだろうと、飲料会社の社長が考えたから"
+          ],
+          "correct": 4,
+          "correctOption": "温かい物も買える販売機があれば喜ばれるだろうと、飲料会社の社長が考えたから",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q27",
+          "number": 27,
+          "position": 26,
+          "mondai": 9,
+          "mondaiTitle": "問題9: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "このメモを読んで、パクさんがしなければならないことは何か。",
+          "stemWithNumber": "62. このメモを読んで、パクさんがしなければならないことは何か。",
+          "context": "12月2日の朝、パクさんが出勤すると、机の上に黒田課長からのメモが置いてあった。\n<br><br>パクさん<br><br>\n先週の新製品の企業向け説明会の報告資料を見ました。内容はわかりやすくていいと思います。明日の午後、私が会議に出て、この資料を使って報告することになりました。参加企業のリストも欲しいので、準備しておいてください。<br><br>\n明日は、モリムラ工業に寄ってから出勤するので、会社に着くのは11時ごろになる予定です。それまでにお願いします。<br><br>\n12月1日（木）19:30<br><br>黒田",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (11時ごろまでに、説明会に参加した企業のリストを準備しておく。)",
+          "options": [
+            "11時ごろまでに、説明会に参加した企業のリストを準備しておく。",
+            "午後の会議までに、説明会の報告資料をわかりやすく書き直す。",
+            "午後の会議までに報告資料を直し、会議で説明会について報告する。",
+            "黒田課長がモリムラ工業に行くまでに、説明会の報告資料を完成させる。"
+          ],
+          "rawOptions": [
+            "1) 11時ごろまでに、説明会に参加した企業のリストを準備しておく。",
+            "2) 午後の会議までに、説明会の報告資料をわかりやすく書き直す。",
+            "3) 午後の会議までに報告資料を直し、会議で説明会について報告する。",
+            "4) 黒田課長がモリムラ工業に行くまでに、説明会の報告資料を完成させる。"
+          ],
+          "correct": 1,
+          "correctOption": "11時ごろまでに、説明会に参加した企業のリストを準備しておく。",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q28",
+          "number": 28,
+          "position": 27,
+          "mondai": 10,
+          "mondaiTitle": "問題10: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "①失敗とあるが、どのようなことか。",
+          "stemWithNumber": "63. ①失敗とあるが、どのようなことか。",
+          "context": "私は本が好きで、よく本を買うのですが、先日の①失敗をしてしまいました。家で買ったばかりの本を読んでいたら、前に読んだことがあるような気がしてきたのです。もしかしたら持っている本かもしれないと思って本棚を探してみたら、やっぱりありました。そして、その本を読んだことも思い出したのです。<br><br>\n   私はたまにこんな失敗をします。読んだことがある本なのに、買ったことも内容も忘れているのです。<br><br>\nそれが面白くない本だったときは、つまらない本のために二度もお金を払ったことが悔しくなります。でも、面白くて感動した本だったときには、悔しいだけではなく②自分が嫌になります。いいと思った本のことを忘れてしまった自分が情けないのです。<br><br>\n   これからも同じようなことをしてしまうかもしれません。でも、本を読むのは楽しいので、本屋通いはやめられそうもありません。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (前に読んだことを忘れて、同じ本をまた買ってしまったこと)",
+          "options": [
+            "買ったばかりの本を本棚に入れたまま、読むのを忘れてしまったこと",
+            "前に読んだことを忘れて、同じ本をまた買ってしまったこと",
+            "持っていない本なのに、本棚にあるはずだと思って探してしまったこと",
+            "初めて読む本なのに、前に読んだことがあると思ってしまったこと"
+          ],
+          "rawOptions": [
+            "1) 買ったばかりの本を本棚に入れたまま、読むのを忘れてしまったこと",
+            "2) 前に読んだことを忘れて、同じ本をまた買ってしまったこと",
+            "3) 持っていない本なのに、本棚にあるはずだと思って探してしまったこと",
+            "4) 初めて読む本なのに、前に読んだことがあると思ってしまったこと"
+          ],
+          "correct": 2,
+          "correctOption": "前に読んだことを忘れて、同じ本をまた買ってしまったこと",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q29",
+          "number": 29,
+          "position": 28,
+          "mondai": 10,
+          "mondaiTitle": "問題10: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "②自分が嫌になりますとあるが、それはなぜか。",
+          "stemWithNumber": "64. ②自分が嫌になりますとあるが、それはなぜか。",
+          "context": "私は本が好きで、よく本を買うのですが、先日の①失敗をしてしまいました。家で買ったばかりの本を読んでいたら、前に読んだことがあるような気がしてきたのです。もしかしたら持っている本かもしれないと思って本棚を探してみたら、やっぱりありました。そして、その本を読んだことも思い出したのです。<br><br>\n   私はたまにこんな失敗をします。読んだことがある本なのに、買ったことも内容も忘れているのです。<br><br>\nそれが面白くない本だったときは、つまらない本のために二度もお金を払ったことが悔しくなります。でも、面白くて感動した本だったときには、悔しいだけではなく②自分が嫌になります。いいと思った本のことを忘れてしまった自分が情けないのです。<br><br>\n   これからも同じようなことをしてしまうかもしれません。でも、本を読むのは楽しいので、本屋通いはやめられそうもありません。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (一度読んで面白いと思った本なのに、その本のことを覚えていなかったから)",
+          "options": [
+            "前に読んで面白いと思った本なのに、もう一度読んだら、つまらないと感じたから",
+            "前に読んでつまらないと思った本なのに、もう一度読んだら、面白いと感じたから",
+            "一度読んで面白いと思った本なのに、その本のことを覚えていなかったから",
+            "一度読んでつまらないと思った本なのに、二度もお金を払ってしまったから"
+          ],
+          "rawOptions": [
+            "1) 前に読んで面白いと思った本なのに、もう一度読んだら、つまらないと感じたから",
+            "2) 前に読んでつまらないと思った本なのに、もう一度読んだら、面白いと感じたから",
+            "3) 一度読んで面白いと思った本なのに、その本のことを覚えていなかったから",
+            "4) 一度読んでつまらないと思った本なのに、二度もお金を払ってしまったから"
+          ],
+          "correct": 3,
+          "correctOption": "一度読んで面白いと思った本なのに、その本のことを覚えていなかったから",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q30",
+          "number": 30,
+          "position": 29,
+          "mondai": 10,
+          "mondaiTitle": "問題10: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "本を買うことについて、「私」はどう思っているか。",
+          "stemWithNumber": "65. 本を買うことについて、「私」はどう思っているか。",
+          "context": "私は本が好きで、よく本を買うのですが、先日の①失敗をしてしまいました。家で買ったばかりの本を読んでいたら、前に読んだことがあるような気がしてきたのです。もしかしたら持っている本かもしれないと思って本棚を探してみたら、やっぱりありました。そして、その本を読んだことも思い出したのです。<br><br>\n   私はたまにこんな失敗をします。読んだことがある本なのに、買ったことも内容も忘れているのです。<br><br>\nそれが面白くない本だったときは、つまらない本のために二度もお金を払ったことが悔しくなります。でも、面白くて感動した本だったときには、悔しいだけではなく②自分が嫌になります。いいと思った本のことを忘れてしまった自分が情けないのです。<br><br>\n   これからも同じようなことをしてしまうかもしれません。でも、本を読むのは楽しいので、本屋通いはやめられそうもありません。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (失敗することもあるかもしれないが、これからも自分は本を買い続けるだろう)",
+          "options": [
+            "これからは失敗しないように、よく調べてから本を買うようになるだろう",
+            "同じ失敗を繰り返さないために、なるべく本屋に通わないようにするだろう",
+            "本を好きになるために、これからも失敗を気にせずに本屋通いをするだろう",
+            "失敗することもあるかもしれないが、これからも自分は本を買い続けるだろう"
+          ],
+          "rawOptions": [
+            "1) これからは失敗しないように、よく調べてから本を買うようになるだろう",
+            "2) 同じ失敗を繰り返さないために、なるべく本屋に通わないようにするだろう",
+            "3) 本を好きになるために、これからも失敗を気にせずに本屋通いをするだろう",
+            "4) 失敗することもあるかもしれないが、これからも自分は本を買い続けるだろう"
+          ],
+          "correct": 4,
+          "correctOption": "失敗することもあるかもしれないが、これからも自分は本を買い続けるだろう",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q31",
+          "number": 31,
+          "position": 30,
+          "mondai": 10,
+          "mondaiTitle": "問題10: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "それとあるが、何か。",
+          "stemWithNumber": "66. それとあるが、何か。",
+          "context": "突然の雨で、傘がなくて困ったり、慌てて傘を買ったのにすぐ晴れてしまった、とい う経験をした人は多いだろう。必要な時だけ傘が借りられたら、どんなに便利だろうか。<br><br>\n   実は、それが可能な町がある。この町は、「弁当を忘れても傘を忘れるな」という言葉があるように、とても雨が多い。そして、観光客の多い町でもある。傘がなくてもみんなが困らないように、最近、この町のあるグループが「貸し傘」活動を始めた。<br><br>\n   この傘は、観光客でも市民でも無料で自由に利用できる。現在、4500本以上がバス停やスーパー、公共の建物などの「貸し傘」用の傘立てに置いてあって、必要な時はそれを借りることができる。返すのは借りたのと同じ傘立てでなくてもいい。<br><br>\n   「貸し傘」を始めたグループでは、借りた傘は大切に使い、きちんと返してほしいと言っている。また、どこかに置いたままの「貸し傘」を見つけたら傘立てに戻すなどの協力もしてほしいと呼びかけている。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (使いたい時にだけ、傘を借りて使うこと)",
+          "options": [
+            "突然雨が降った時に、すぐに傘を買うこと",
+            "買っても使わなかった傘を、店に返すこと",
+            "使いたい時にだけ、傘を借りて使うこと",
+            "雨の日に、傘をささずに観光をすること"
+          ],
+          "rawOptions": [
+            "1) 突然雨が降った時に、すぐに傘を買うこと",
+            "2) 買っても使わなかった傘を、店に返すこと",
+            "3) 使いたい時にだけ、傘を借りて使うこと",
+            "4) 雨の日に、傘をささずに観光をすること"
+          ],
+          "correct": 3,
+          "correctOption": "使いたい時にだけ、傘を借りて使うこと",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q32",
+          "number": 32,
+          "position": 31,
+          "mondai": 10,
+          "mondaiTitle": "問題10: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "「貸し傘」についての説明で、合っているものはどれか。",
+          "stemWithNumber": "67. 「貸し傘」についての説明で、合っているものはどれか。",
+          "context": "突然の雨で、傘がなくて困ったり、慌てて傘を買ったのにすぐ晴れてしまった、とい う経験をした人は多いだろう。必要な時だけ傘が借りられたら、どんなに便利だろうか。<br><br>\n   実は、それが可能な町がある。この町は、「弁当を忘れても傘を忘れるな」という言葉があるように、とても雨が多い。そして、観光客の多い町でもある。傘がなくてもみんなが困らないように、最近、この町のあるグループが「貸し傘」活動を始めた。<br><br>\n   この傘は、観光客でも市民でも無料で自由に利用できる。現在、4500本以上がバス停やスーパー、公共の建物などの「貸し傘」用の傘立てに置いてあって、必要な時はそれを借りることができる。返すのは借りたのと同じ傘立てでなくてもいい。<br><br>\n   「貸し傘」を始めたグループでは、借りた傘は大切に使い、きちんと返してほしいと言っている。また、どこかに置いたままの「貸し傘」を見つけたら傘立てに戻すなどの協力もしてほしいと呼びかけている。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (利用した後は、「貸し傘」用の傘立てのどれかに返せばいい。)",
+          "options": [
+            "この町に来た観光客だけが利用できる。",
+            "「貸し傘」のグループのメンバーだけが利用できる。",
+            "観光客なら、利用した傘を記念に持ち帰ってもいい。",
+            "利用した後は、「貸し傘」用の傘立てのどれかに返せばいい。"
+          ],
+          "rawOptions": [
+            "1) この町に来た観光客だけが利用できる。",
+            "2) 「貸し傘」のグループのメンバーだけが利用できる。",
+            "3) 観光客なら、利用した傘を記念に持ち帰ってもいい。",
+            "4) 利用した後は、「貸し傘」用の傘立てのどれかに返せばいい。"
+          ],
+          "correct": 4,
+          "correctOption": "利用した後は、「貸し傘」用の傘立てのどれかに返せばいい。",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q33",
+          "number": 33,
+          "position": 32,
+          "mondai": 10,
+          "mondaiTitle": "問題10: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "「貸し傘」を始めたグループが、利用する人にしてほしいと言っていることは何か。",
+          "stemWithNumber": "68. 「貸し傘」を始めたグループが、利用する人にしてほしいと言っていることは何か。",
+          "context": "突然の雨で、傘がなくて困ったり、慌てて傘を買ったのにすぐ晴れてしまった、とい う経験をした人は多いだろう。必要な時だけ傘が借りられたら、どんなに便利だろうか。<br><br>\n   実は、それが可能な町がある。この町は、「弁当を忘れても傘を忘れるな」という言葉があるように、とても雨が多い。そして、観光客の多い町でもある。傘がなくてもみんなが困らないように、最近、この町のあるグループが「貸し傘」活動を始めた。<br><br>\n   この傘は、観光客でも市民でも無料で自由に利用できる。現在、4500本以上がバス停やスーパー、公共の建物などの「貸し傘」用の傘立てに置いてあって、必要な時はそれを借りることができる。返すのは借りたのと同じ傘立てでなくてもいい。<br><br>\n   「貸し傘」を始めたグループでは、借りた傘は大切に使い、きちんと返してほしいと言っている。また、どこかに置いたままの「貸し傘」を見つけたら傘立てに戻すなどの協力もしてほしいと呼びかけている。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (傘を大事に扱い、「貸し傘」の活動がうまくいくように協力してほしい。)",
+          "options": [
+            "傘を大事に扱い、「貸し傘」の活動がうまくいくように協力してほしい。",
+            "傘をどんどん借りて、「貸し傘」の利用者が増えるように協力してほしい。",
+            "「貸し傘」の傘が不足しないように、不要な傘を集めるのに協力してほしい。",
+            "「貸し傘」の傘が返しやすくなるように、傘立てを増やすことに協力してほしい。"
+          ],
+          "rawOptions": [
+            "1) 傘を大事に扱い、「貸し傘」の活動がうまくいくように協力してほしい。",
+            "2) 傘をどんどん借りて、「貸し傘」の利用者が増えるように協力してほしい。",
+            "3) 「貸し傘」の傘が不足しないように、不要な傘を集めるのに協力してほしい。",
+            "4) 「貸し傘」の傘が返しやすくなるように、傘立てを増やすことに協力してほしい。"
+          ],
+          "correct": 1,
+          "correctOption": "傘を大事に扱い、「貸し傘」の活動がうまくいくように協力してほしい。",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q34",
+          "number": 34,
+          "position": 33,
+          "mondai": 11,
+          "mondaiTitle": "問題11: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "このタクシー会社が調査をして、わかったことはどのようなことか。",
+          "stemWithNumber": "69. このタクシー会社が調査をして、わかったことはどのようなことか。",
+          "context": "先日、テレビであるタクシー会社の話が紹介されていた。<br><br>\n   タクシーの運転手は、利用者から「急いでください」と言われることが多いので、急ぐことがサービスになると思っている人が多い。それで、走り出してすぐにスピードを上げたり、前の車が遅いときは追い越したりしていた。ところが、その会社が利用者にアンケート調査を行ってみると、70％以上の人が「ゆっくり走ってほしいと思ったことがある」と答えたそうだ。<br><br>\n   「①驚きました。多くのお客様が希望しているサービスは、私たちが考えていたのとは反対のものだったんです。」と会杜の人は話していた。<br><br>\n   会社は、この結果から、必ずしも急ぐ必要がある人ばかりではないと気がついた。急ごうとすると、どうしても車が大きく揺れてしまうことがある。小さい子供を連れた人や車に酔いやすい人など、ゆっくり丁寧に運転してほしいと思う利用者もいるのだ。しかし、急いでくれている運転手に「急がなくてもいいから、丁寧に運転してください。」とは言いにくい人が多いのだろうと考えた。<br><br>\n   そこで、この会社では、利用者が座る席の前にボタンをつけ、利用者がそのボタンを押せば、いつもよりゆっくり丁寧に運転するというサービスを開始した。希望を言い出しにくい人でも、遠慮なく希望を運転手に伝えることがきる。<br><br>   このサービスを喜ぶ利用者は多く、会社のイメージも上がって予約が15％もアップしたそうだ。それに、丁寧に運転するとガソリンの消費量も減り、環境にも優しい、そう考えると、これは②素晴らしいアイディアなのではないだろうか。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (ゆっくり運転してもらいたいと思ったことがある利用者は多い。)",
+          "options": [
+            "急ぐことが利用者へのサービスになると思っている運転手が多い",
+            "スピードを急に上げたり、前の車を追い越したりする運転手が多い。",
+            "運転手は丁寧な運転をしてくれていると考えている利用者が多い。",
+            "ゆっくり運転してもらいたいと思ったことがある利用者は多い。"
+          ],
+          "rawOptions": [
+            "1) 急ぐことが利用者へのサービスになると思っている運転手が多い",
+            "2) スピードを急に上げたり、前の車を追い越したりする運転手が多い。",
+            "3) 運転手は丁寧な運転をしてくれていると考えている利用者が多い。",
+            "4) ゆっくり運転してもらいたいと思ったことがある利用者は多い。"
+          ],
+          "correct": 4,
+          "correctOption": "ゆっくり運転してもらいたいと思ったことがある利用者は多い。",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q35",
+          "number": 35,
+          "position": 34,
+          "mondai": 11,
+          "mondaiTitle": "問題11: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "①驚きましたとあるが、なぜ驚いたのか。",
+          "stemWithNumber": "70. ①驚きましたとあるが、なぜ驚いたのか。",
+          "context": "先日、テレビであるタクシー会社の話が紹介されていた。<br><br>\n   タクシーの運転手は、利用者から「急いでください」と言われることが多いので、急ぐことがサービスになると思っている人が多い。それで、走り出してすぐにスピードを上げたり、前の車が遅いときは追い越したりしていた。ところが、その会社が利用者にアンケート調査を行ってみると、70％以上の人が「ゆっくり走ってほしいと思ったことがある」と答えたそうだ。<br><br>\n   「①驚きました。多くのお客様が希望しているサービスは、私たちが考えていたのとは反対のものだったんです。」と会杜の人は話していた。<br><br>\n   会社は、この結果から、必ずしも急ぐ必要がある人ばかりではないと気がついた。急ごうとすると、どうしても車が大きく揺れてしまうことがある。小さい子供を連れた人や車に酔いやすい人など、ゆっくり丁寧に運転してほしいと思う利用者もいるのだ。しかし、急いでくれている運転手に「急がなくてもいいから、丁寧に運転してください。」とは言いにくい人が多いのだろうと考えた。<br><br>\n   そこで、この会社では、利用者が座る席の前にボタンをつけ、利用者がそのボタンを押せば、いつもよりゆっくり丁寧に運転するというサービスを開始した。希望を言い出しにくい人でも、遠慮なく希望を運転手に伝えることがきる。<br><br>   このサービスを喜ぶ利用者は多く、会社のイメージも上がって予約が15％もアップしたそうだ。それに、丁寧に運転するとガソリンの消費量も減り、環境にも優しい、そう考えると、これは②素晴らしいアイディアなのではないだろうか。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 4 (アンケートでわかった利用者の希望が、予想と違っていたから)",
+          "options": [
+            "アンケートで、満足している利用者が思った以上に多いことがわかったから",
+            "アンケートに答えてくれた利用者が、期待したよりずっと多かったから",
+            "アンケートを行っても、利用者の本当の希望はわからなかったから",
+            "アンケートでわかった利用者の希望が、予想と違っていたから"
+          ],
+          "rawOptions": [
+            "1) アンケートで、満足している利用者が思った以上に多いことがわかったから",
+            "2) アンケートに答えてくれた利用者が、期待したよりずっと多かったから",
+            "3) アンケートを行っても、利用者の本当の希望はわからなかったから",
+            "4) アンケートでわかった利用者の希望が、予想と違っていたから"
+          ],
+          "correct": 4,
+          "correctOption": "アンケートでわかった利用者の希望が、予想と違っていたから",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q36",
+          "number": 36,
+          "position": 35,
+          "mondai": 11,
+          "mondaiTitle": "問題11: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "このタクシー会社が、ボタンを使って利用者の希望を聞けるようにしたのはなぜか。",
+          "stemWithNumber": "71. このタクシー会社が、ボタンを使って利用者の希望を聞けるようにしたのはなぜか。",
+          "context": "先日、テレビであるタクシー会社の話が紹介されていた。<br><br>\n   タクシーの運転手は、利用者から「急いでください」と言われることが多いので、急ぐことがサービスになると思っている人が多い。それで、走り出してすぐにスピードを上げたり、前の車が遅いときは追い越したりしていた。ところが、その会社が利用者にアンケート調査を行ってみると、70％以上の人が「ゆっくり走ってほしいと思ったことがある」と答えたそうだ。<br><br>\n   「①驚きました。多くのお客様が希望しているサービスは、私たちが考えていたのとは反対のものだったんです。」と会杜の人は話していた。<br><br>\n   会社は、この結果から、必ずしも急ぐ必要がある人ばかりではないと気がついた。急ごうとすると、どうしても車が大きく揺れてしまうことがある。小さい子供を連れた人や車に酔いやすい人など、ゆっくり丁寧に運転してほしいと思う利用者もいるのだ。しかし、急いでくれている運転手に「急がなくてもいいから、丁寧に運転してください。」とは言いにくい人が多いのだろうと考えた。<br><br>\n   そこで、この会社では、利用者が座る席の前にボタンをつけ、利用者がそのボタンを押せば、いつもよりゆっくり丁寧に運転するというサービスを開始した。希望を言い出しにくい人でも、遠慮なく希望を運転手に伝えることがきる。<br><br>   このサービスを喜ぶ利用者は多く、会社のイメージも上がって予約が15％もアップしたそうだ。それに、丁寧に運転するとガソリンの消費量も減り、環境にも優しい、そう考えると、これは②素晴らしいアイディアなのではないだろうか。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 1 (運転手に直接希望を言いにくいと感じている利用者が多いようだから)",
+          "options": [
+            "運転手に直接希望を言いにくいと感じている利用者が多いようだから",
+            "運転中に利用者の声がよく聞こえない運転手が多いようだから ボタンをつけてほしいという希望を持つ利用者が多いようだから 利用者となるべく話をしたくないと考える運転手が多いようだから",
+            "",
+            ""
+          ],
+          "rawOptions": [
+            "1) 運転手に直接希望を言いにくいと感じている利用者が多いようだから",
+            "2) 運転中に利用者の声がよく聞こえない運転手が多いようだから ボタンをつけてほしいという希望を持つ利用者が多いようだから 利用者となるべく話をしたくないと考える運転手が多いようだから",
+            "3)",
+            "4)"
+          ],
+          "correct": 1,
+          "correctOption": "運転手に直接希望を言いにくいと感じている利用者が多いようだから",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q37",
+          "number": 37,
+          "position": 36,
+          "mondai": 11,
+          "mondaiTitle": "問題11: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "points": 1,
+          "stem": "②素晴らしいアイディアとあるが、この文章を書いた人は、なぜそのように言っているのか。",
+          "stemWithNumber": "72. ②素晴らしいアイディアとあるが、この文章を書いた人は、なぜそのように言っているのか。",
+          "context": "先日、テレビであるタクシー会社の話が紹介されていた。<br><br>\n   タクシーの運転手は、利用者から「急いでください」と言われることが多いので、急ぐことがサービスになると思っている人が多い。それで、走り出してすぐにスピードを上げたり、前の車が遅いときは追い越したりしていた。ところが、その会社が利用者にアンケート調査を行ってみると、70％以上の人が「ゆっくり走ってほしいと思ったことがある」と答えたそうだ。<br><br>\n   「①驚きました。多くのお客様が希望しているサービスは、私たちが考えていたのとは反対のものだったんです。」と会杜の人は話していた。<br><br>\n   会社は、この結果から、必ずしも急ぐ必要がある人ばかりではないと気がついた。急ごうとすると、どうしても車が大きく揺れてしまうことがある。小さい子供を連れた人や車に酔いやすい人など、ゆっくり丁寧に運転してほしいと思う利用者もいるのだ。しかし、急いでくれている運転手に「急がなくてもいいから、丁寧に運転してください。」とは言いにくい人が多いのだろうと考えた。<br><br>\n   そこで、この会社では、利用者が座る席の前にボタンをつけ、利用者がそのボタンを押せば、いつもよりゆっくり丁寧に運転するというサービスを開始した。希望を言い出しにくい人でも、遠慮なく希望を運転手に伝えることがきる。<br><br>   このサービスを喜ぶ利用者は多く、会社のイメージも上がって予約が15％もアップしたそうだ。それに、丁寧に運転するとガソリンの消費量も減り、環境にも優しい、そう考えると、これは②素晴らしいアイディアなのではないだろうか。",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 3 (利用者、会社の両方にいい点があり、環境にも優しいサービスだから)",
+          "options": [
+            "利用者は多少減ってしまうが、環境に優しいサービスだから",
+            "会社と利用者がいっしょに考えた、環境に優しいサービスだから",
+            "利用者、会社の両方にいい点があり、環境にも優しいサービスだから",
+            "会社の支出は増えるが、利用者や環境に優しいサービスだから"
+          ],
+          "rawOptions": [
+            "1) 利用者は多少減ってしまうが、環境に優しいサービスだから",
+            "2) 会社と利用者がいっしょに考えた、環境に優しいサービスだから",
+            "3) 利用者、会社の両方にいい点があり、環境にも優しいサービスだから",
+            "4) 会社の支出は増えるが、利用者や環境に優しいサービスだから"
+          ],
+          "correct": 3,
+          "correctOption": "利用者、会社の両方にいい点があり、環境にも優しいサービスだから",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q38",
+          "number": 38,
+          "position": 37,
+          "mondai": 12,
+          "mondaiTitle": "問題12: 下のページを見て、下の問いに対する答えとして最もよいものを、1・2・3・4から1つ選びなさい。",
+          "points": 1,
+          "stem": "今日は日曜日である。ソフィさんは14時に入園し、このポスターを見た。動物園が昼間に行っている案内や教室の中で、 今から参加できるものはどれか。",
+          "stemWithNumber": "73. 今日は日曜日である。ソフィさんは14時に入園し、このポスターを見た。動物園が昼間に行っている案内や教室の中で、 今から参加できるものはどれか。",
+          "context": "<div class=\"table_dokai\"><table><tbody><tr><td><center>A動物園案内</center><br>專門の係の説明を受けながら、動物園の中を歩きます。必要時間は約1時間です。<br>毎日3回<br>① 　10時半～　②14時半〜　③1 6時〜</td><td>\n<center>B動物教室</center><br>普段知ることのできない、動物たの生活について話す聞くことができます。<br><br>毎週日曜　13時半〜15時<br>（途中からでも加できます）</td></tr>\n<tr><td><center>C台所見学</center><br>動物たちのえさを準備しているところが見られます。必要時間は約45分～1時間です。<br><br>毎週土曜　14時半</td><td>\n<center>Ｄ川の生き物教室</center><br>川の生き物に実際に触ったりしながら、楽しく学べます。<br><br>毎週火曜・木曜　15時〜1 6時<br>毎週土曜　　　　13時〜14時<br>毎週日曜　　　　11時〜12時</td></tr>\n\n</tbody></table>\n<br>申し込む、参加料金　全て不要<br>集合場所A、C、D：正面口<br>B：資料館1階受付（途中参加の人も）\n</div><br>\n<div class=\"table_dokai\">\n<center><h4>夜の動物園</h4>昼とは違う、夜の動物たちの様子を見てください。</center><br>\n日時：8月2日、9日、16日、23日、30日<br>\n各日17時半〜21時（入園は19時半まで）<br><br>\n入園料：昼と同じ入園料がかかります。<br>\n昼の最後入園時間（16時半）までに入園された方は、17時の閉圍に一度回の外に出て、17時半に夜の動物園が開園後、もう一度入園料を支払って入園していただく必要があります。<br><br>入口：東口は17時で閉めますので、正面口からお入りください。<br><br>レストラン、売店　営業しています。</div>",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (AとB)",
+          "options": [
+            "Aだけ",
+            "AとB",
+            "AとBとC",
+            "BとD"
+          ],
+          "rawOptions": [
+            "1) Aだけ",
+            "2) AとB",
+            "3) AとBとC",
+            "4) BとD"
+          ],
+          "correct": 2,
+          "correctOption": "AとB",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_grammar_reading_q39",
+          "number": 39,
+          "position": 38,
+          "mondai": 12,
+          "mondaiTitle": "問題12: 下のページを見て、下の問いに対する答えとして最もよいものを、1・2・3・4から1つ選びなさい。",
+          "points": 1,
+          "stem": "カクさんは8月9日の昼に動物園に来て、園内でポスターを見て、その日の「夜の動物園」を見るために、カクさんがしなければならないことはどれか。",
+          "stemWithNumber": "74. カクさんは8月9日の昼に動物園に来て、園内でポスターを見て、その日の「夜の動物園」を見るために、カクさんがしなければならないことはどれか。",
+          "context": "<div class=\"table_dokai\"><table><tbody><tr><td><center>A動物園案内</center><br>專門の係の説明を受けながら、動物園の中を歩きます。必要時間は約1時間です。<br>毎日3回<br>① 　10時半～　②14時半〜　③1 6時〜</td><td>\n<center>B動物教室</center><br>普段知ることのできない、動物たの生活について話す聞くことができます。<br><br>毎週日曜　13時半〜15時<br>（途中からでも加できます）</td></tr>\n<tr><td><center>C台所見学</center><br>動物たちのえさを準備しているところが見られます。必要時間は約45分～1時間です。<br><br>毎週土曜　14時半</td><td>\n<center>Ｄ川の生き物教室</center><br>川の生き物に実際に触ったりしながら、楽しく学べます。<br><br>毎週火曜・木曜　15時〜1 6時<br>毎週土曜　　　　13時〜14時<br>毎週日曜　　　　11時〜12時</td></tr>\n\n</tbody></table>\n<br>申し込む、参加料金　全て不要<br>集合場所A、C、D：正面口<br>B：資料館1階受付（途中参加の人も）\n</div><br>\n<div class=\"table_dokai\">\n<center><h4>夜の動物園</h4>昼とは違う、夜の動物たちの様子を見てください。</center><br>\n日時：8月2日、9日、16日、23日、30日<br>\n各日17時半〜21時（入園は19時半まで）<br><br>\n入園料：昼と同じ入園料がかかります。<br>\n昼の最後入園時間（16時半）までに入園された方は、17時の閉圍に一度回の外に出て、17時半に夜の動物園が開園後、もう一度入園料を支払って入園していただく必要があります。<br><br>入口：東口は17時で閉めますので、正面口からお入りください。<br><br>レストラン、売店　営業しています。</div>",
+          "imageUrl": "",
+          "audioUrl": "",
+          "script": "",
+          "explanation": "正解: 2 (昼とは別に入園料を払って、もう一度入園する。)",
+          "options": [
+            "17時半までに、もう一度入園する。",
+            "昼とは別に入園料を払って、もう一度入園する。",
+            "東口から、もう一度入園する。",
+            "外で食事をすませてから、もう、一度入園する。"
+          ],
+          "rawOptions": [
+            "1) 17時半までに、もう一度入園する。",
+            "2) 昼とは別に入園料を払って、もう一度入園する。",
+            "3) 東口から、もう一度入園する。",
+            "4) 外で食事をすませてから、もう、一度入園する。"
+          ],
+          "correct": 2,
+          "correctOption": "昼とは別に入園料を払って、もう一度入園する。",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        }
+      ],
+      "contentBlocks": [
+        {
+          "type": "section-header",
+          "text": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。"
+        },
+        {
+          "type": "question",
+          "questionNumber": 1,
+          "questionText": "36. 彼は小説家 ( ) 有名になったが、普段は小さな病院で働く医者だ。",
+          "questionHtml": "36. 彼は小説家 ( ) 有名になったが、普段は小さな病院で働く医者だ。",
+          "underlinedText": null,
+          "options": [
+            "1) について",
+            "2) として",
+            "3) にしたがって",
+            "4) と比べて"
+          ],
+          "cleanOptions": [
+            "について",
+            "として",
+            "にしたがって",
+            "と比べて"
+          ],
+          "points": 1,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) として"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 2,
+          "questionText": "37. 先週、会社面接で「もし自分を色で表す ( ) 、何色ですか。」と聞かれ、オレンジ色と答えた。「元気」や「健康」のイメージがあるからだ。",
+          "questionHtml": "37. 先週、会社面接で「もし自分を色で表す ( ) 、何色ですか。」と聞かれ、オレンジ色と答えた。「元気」や「健康」のイメージがあるからだ。",
+          "underlinedText": null,
+          "options": [
+            "1) ことから",
+            "2) いう点で",
+            "3) ように",
+            "4) としたら"
+          ],
+          "cleanOptions": [
+            "ことから",
+            "いう点で",
+            "ように",
+            "としたら"
+          ],
+          "points": 1,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) としたら"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 3,
+          "questionText": "38. 昨日の夜、寝る前に ( ) ヨーグルトが食べたくなって、 夜中なのにコンビニに買いに行ってしまった。",
+          "questionHtml": "38. 昨日の夜、寝る前に ( ) ヨーグルトが食べたくなって、 夜中なのにコンビニに買いに行ってしまった。",
+          "underlinedText": null,
+          "options": [
+            "1) どうか",
+            "2) せっかく",
+            "3) どうしても",
+            "4) きっと"
+          ],
+          "cleanOptions": [
+            "どうか",
+            "せっかく",
+            "どうしても",
+            "きっと"
+          ],
+          "points": 1,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) どうしても"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 4,
+          "questionText": "39. このケーキは材料を混ぜて焼く ( ) から、誰でも失敗せずにおいしく作れる。",
+          "questionHtml": "39. このケーキは材料を混ぜて焼く ( ) から、誰でも失敗せずにおいしく作れる。",
+          "underlinedText": null,
+          "options": [
+            "1) だけだ",
+            "2) ことだ",
+            "3) せいだ",
+            "4) ときだ"
+          ],
+          "cleanOptions": [
+            "だけだ",
+            "ことだ",
+            "せいだ",
+            "ときだ"
+          ],
+          "points": 1,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) だけだ"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 5,
+          "questionText": "40. 私の町では毎年8月最後の日曜日に夏祭りが ( ) 。",
+          "questionHtml": "40. 私の町では毎年8月最後の日曜日に夏祭りが ( ) 。",
+          "underlinedText": null,
+          "options": [
+            "1) 行います",
+            "2) 行わせます",
+            "3) 行っています",
+            "4) 行われます"
+          ],
+          "cleanOptions": [
+            "行います",
+            "行わせます",
+            "行っています",
+            "行われます"
+          ],
+          "points": 1,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) 行われます"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 6,
+          "questionText": "41. (靴屋で) 客: 「すみません。この靴のもう一つ大きいサイズはありますか。」 店員:「あ、はい、確認しますので、少々 ( )。」",
+          "questionHtml": "41. (靴屋で) 客: 「すみません。この靴のもう一つ大きいサイズはありますか。」 店員:「あ、はい、確認しますので、少々 ( )。」",
+          "underlinedText": null,
+          "options": [
+            "1) お待ちしております",
+            "2) お待ちください",
+            "3) お待ちできます",
+            "4) お待ちしましょう"
+          ],
+          "cleanOptions": [
+            "お待ちしております",
+            "お待ちください",
+            "お待ちできます",
+            "お待ちしましょう"
+          ],
+          "points": 1,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) お待ちください"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 7,
+          "questionText": "42. (電話で) X建設の社員:「はい、X建設営業部です。」 中田:「あ、私、ABC銀行の中田と( )が、山石さんをお願いします。」",
+          "questionHtml": "42. (電話で) X建設の社員:「はい、X建設営業部です。」 中田:「あ、私、ABC銀行の中田と( )が、山石さんをお願いします。」",
+          "underlinedText": null,
+          "options": [
+            "1) ございます",
+            "2) いたします",
+            "3) 申します",
+            "4) 申し上げ生す"
+          ],
+          "cleanOptions": [
+            "ございます",
+            "いたします",
+            "申します",
+            "申し上げ生す"
+          ],
+          "points": 1,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) 申します"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 8,
+          "questionText": "43. 息子が通う高校では、お昼にパンや飲み物が買える場所もあるが、基本的には全員がお弁当を ( ) 。",
+          "questionHtml": "43. 息子が通う高校では、お昼にパンや飲み物が買える場所もあるが、基本的には全員がお弁当を ( ) 。",
+          "underlinedText": null,
+          "options": [
+            "1) 持っていったばかりだ",
+            "2) 持っていくことになっている",
+            "3) 持っていきたい",
+            "4) 持っていくつ香りだ"
+          ],
+          "cleanOptions": [
+            "持っていったばかりだ",
+            "持っていくことになっている",
+            "持っていきたい",
+            "持っていくつ香りだ"
+          ],
+          "points": 1,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) 持っていくことになっている"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 9,
+          "questionText": "44. 昼寝をするのは気持ちがいいが、夜 ( ) 困るので、いつも15分ぐらいで起きる。",
+          "questionHtml": "44. 昼寝をするのは気持ちがいいが、夜 ( ) 困るので、いつも15分ぐらいで起きる。",
+          "underlinedText": null,
+          "options": [
+            "1) 寝なくて",
+            "2) 寝られると思って",
+            "3) 寝られないと",
+            "4) 寝ると思うと"
+          ],
+          "cleanOptions": [
+            "寝なくて",
+            "寝られると思って",
+            "寝られないと",
+            "寝ると思うと"
+          ],
+          "points": 1,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) 寝られないと"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 10,
+          "questionText": "45. A市は、保育園の数が少なく、保育園を ( ) 利用できない人がいることが問題になっている。",
+          "questionHtml": "45. A市は、保育園の数が少なく、保育園を ( ) 利用できない人がいることが問題になっている。",
+          "underlinedText": null,
+          "options": [
+            "1) 利用したくても",
+            "2) 利用しそうになって",
+            "3) 利用しているのに",
+            "4) 利用できたら"
+          ],
+          "cleanOptions": [
+            "利用したくても",
+            "利用しそうになって",
+            "利用しているのに",
+            "利用できたら"
+          ],
+          "points": 1,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) 利用したくても"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 11,
+          "questionText": "46. 妻:「ねえ、ちょっと買い物に行ってくるから、今夜行くレストランの予約をお願いできる?」 夫:「うん、わかった （ ） 。19時からで大丈夫?」 妻:「ええ、ありがとう。」",
+          "questionHtml": "46. 妻:「ねえ、ちょっと買い物に行ってくるから、今夜行くレストランの予約をお願いできる?」 夫:「うん、わかった （ ） 。19時からで大丈夫?」 妻:「ええ、ありがとう。」",
+          "underlinedText": null,
+          "options": [
+            "1) 予約してね",
+            "2) 予約しておくよ",
+            "3) 予約しようよ",
+            "4) 予約してある"
+          ],
+          "cleanOptions": [
+            "予約してね",
+            "予約しておくよ",
+            "予約しようよ",
+            "予約してある"
+          ],
+          "points": 1,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) 予約しておくよ"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 12,
+          "questionText": "47. (畑で) 子:「ねえ、ごのトマト、もう食べられる?赤くなっているよ。」 父: 「うん。そろそろ （ ） ね。」",
+          "questionHtml": "47. (畑で) 子:「ねえ、ごのトマト、もう食べられる?赤くなっているよ。」 父: 「うん。そろそろ （ ） ね。」",
+          "underlinedText": null,
+          "options": [
+            "1) 食べやすいそうだ",
+            "2) 食べていそうだ",
+            "3) 食べたがるそうだ",
+            "4) 食べてもよさそうだ"
+          ],
+          "cleanOptions": [
+            "食べやすいそうだ",
+            "食べていそうだ",
+            "食べたがるそうだ",
+            "食べてもよさそうだ"
+          ],
+          "points": 1,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) 食べてもよさそうだ"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 13,
+          "questionText": "48. (改札で) 南: 「山下さん、来ませんね。携帯に電話をしても出ないし、どうしますか。」 中川:「これ以上待つと私たちも間に合わないから、先に （ ） 」。 南 「そうですね。行きますか。」",
+          "questionHtml": "48. (改札で) 南: 「山下さん、来ませんね。携帯に電話をしても出ないし、どうしますか。」 中川:「これ以上待つと私たちも間に合わないから、先に （ ） 」。 南 「そうですね。行きますか。」",
+          "underlinedText": null,
+          "options": [
+            "1) 行ってしまいましょうか",
+            "2) 行ってしまうのでしょう",
+            "3) 行ってしまいましたか",
+            "4) 行ってしまっていました"
+          ],
+          "cleanOptions": [
+            "行ってしまいましょうか",
+            "行ってしまうのでしょう",
+            "行ってしまいましたか",
+            "行ってしまっていました"
+          ],
+          "points": 1,
+          "mondai": 6,
+          "mondaiTitle": "問題6: 次の文の（ ）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) 行ってしまいましょうか"
+          }
+        },
+        {
+          "type": "section-header",
+          "text": "問題7: 次の文の _★_ に入る最もよいものを、1・2・3・4から一つ選びなさい。"
+        },
+        {
+          "type": "question",
+          "questionNumber": 14,
+          "questionText": "49. この写真の鳥はとても珍しくて、この鳥の ___ _★_ ___ ___ そうだ。",
+          "questionHtml": "49. この写真の鳥はとても珍しくて、この鳥の ___ _★_ ___ ___ そうだ。",
+          "underlinedText": null,
+          "options": [
+            "1) 見る機会がない",
+            "2) 専門家でも",
+            "3) なかなか",
+            "4) 研究をしている"
+          ],
+          "cleanOptions": [
+            "見る機会がない",
+            "専門家でも",
+            "なかなか",
+            "研究をしている"
+          ],
+          "points": 1,
+          "mondai": 7,
+          "mondaiTitle": "問題7: 次の文の _★_ に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) 専門家でも"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 15,
+          "questionText": "50. 春から大学生になる娘には、 ___ ___ _★_ ___できない経験をいろいろしてほしい。",
+          "questionHtml": "50. 春から大学生になる娘には、 ___ ___ _★_ ___できない経験をいろいろしてほしい。",
+          "underlinedText": null,
+          "options": [
+            "1) にも",
+            "2) にしか",
+            "3) 勉強以外",
+            "4) 大学時代"
+          ],
+          "cleanOptions": [
+            "にも",
+            "にしか",
+            "勉強以外",
+            "大学時代"
+          ],
+          "points": 1,
+          "mondai": 7,
+          "mondaiTitle": "問題7: 次の文の _★_ に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) 大学時代"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 16,
+          "questionText": "51. 土曜日は買い物をしたり友人と食事をしたりし、日曜日は ___ ___ _★_ ___私の好きな週末の過ごし方だ。",
+          "questionHtml": "51. 土曜日は買い物をしたり友人と食事をしたりし、日曜日は ___ ___ _★_ ___私の好きな週末の過ごし方だ。",
+          "underlinedText": null,
+          "options": [
+            "1) のが",
+            "2) という",
+            "3) 家で過ごす",
+            "4) どこにも出かけずに"
+          ],
+          "cleanOptions": [
+            "のが",
+            "という",
+            "家で過ごす",
+            "どこにも出かけずに"
+          ],
+          "points": 1,
+          "mondai": 7,
+          "mondaiTitle": "問題7: 次の文の _★_ に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) という"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 17,
+          "questionText": "52. (レスランで) 客: 「すみません 15分ぐらい前に案内をお願いして、しばらくここで待てって___ ___ _★_ ___ 。まだですか。」 店員:「大変申し訳ありません。」",
+          "questionHtml": "52. (レスランで) 客: 「すみません 15分ぐらい前に案内をお願いして、しばらくここで待てって___ ___ _★_ ___ 。まだですか。」 店員:「大変申し訳ありません。」",
+          "underlinedText": null,
+          "options": [
+            "1) 待っているんです",
+            "2) 言われた",
+            "3) から",
+            "4) けど"
+          ],
+          "cleanOptions": [
+            "待っているんです",
+            "言われた",
+            "から",
+            "けど"
+          ],
+          "points": 1,
+          "mondai": 7,
+          "mondaiTitle": "問題7: 次の文の _★_ に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) 待っているんです"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 18,
+          "questionText": "53. 歴史を___ ___ _★_ ___進学を決めた。",
+          "questionHtml": "53. 歴史を___ ___ _★_ ___進学を決めた。",
+          "underlinedText": null,
+          "options": [
+            "1) 勉強すればするほど",
+            "2) 歴史学科への",
+            "3) と思うようになって",
+            "4) もっと学びたい"
+          ],
+          "cleanOptions": [
+            "勉強すればするほど",
+            "歴史学科への",
+            "と思うようになって",
+            "もっと学びたい"
+          ],
+          "points": 1,
+          "mondai": 7,
+          "mondaiTitle": "問題7: 次の文の _★_ に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) と思うようになって"
+          }
+        },
+        {
+          "type": "section-header",
+          "text": "問題8: 次の文章を読んで、文章全体の内容を考えて、(1)から(5 )の中に入る最もよいものを、1・2・3・4から一つ選びなさい。"
+        },
+        {
+          "type": "passage",
+          "htmlContent": "下の作文は、留学生が書いた作文です。<br><br>\n\n                      日本人の天気の話<br><br>\n\n                                                                                                          アルティカ　ミラ<br><br>\n\n   日本へ来て、多くの人が天気の話をすることに気がつきました。アパートの管理人さんは朝会うと、「おはよう。」の後に「今日は暑いね。」とか「いい天気だね。」と言います。あちこちで、多くの人があいさつに続けて天気の話をしているのを聞きました。【１】、私の国では天気の話をあまりしないので、なぜ天気の話をするのかわかりませんでした。私はしてもしなくてもいいと考え、自分からはしていませんでした。<br><br>\n   ところが、ある冬の寒い朝、日本人の友達に会ったとき、「おはよう。」の後で自然に「寒いね」と【２】。友達は「本当だね」と答え、その後、寒い冬に食べるとおいしい食べ物や冬の服の話になりました。天気の話が天気に関係した話に【３】、おもしろいと思いました。<br><br>\n   私の国は一年中暑いですが、日本は四季があって気温の変化が大きいし、天気もよく変わります。そのため、多くの人が天気に関心を【４】。<br><br>\n   最近は管理人さんともよく天気の話をするようになって、天気の話は誰とでもしやすいことに気づきました。【５】も天気の話をする人が多い理由の一つだと思います。"
+        },
+        {
+          "type": "question",
+          "questionNumber": 19,
+          "questionText": "54. 【1】",
+          "questionHtml": "54. 【1】",
+          "underlinedText": null,
+          "options": [
+            "1) そのうえ",
+            "2) つまり",
+            "3) けれども",
+            "4) すると"
+          ],
+          "cleanOptions": [
+            "そのうえ",
+            "つまり",
+            "けれども",
+            "すると"
+          ],
+          "points": 1,
+          "mondai": 8,
+          "mondaiTitle": "問題8: 次の文章を読んで、文章全体の内容を考えて、(1)から(5 )の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) けれども"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 20,
+          "questionText": "55. 【2】",
+          "questionHtml": "55. 【2】",
+          "underlinedText": null,
+          "options": [
+            "1) 言われていました",
+            "2) 言ってもらいました",
+            "3) 言わせてみました",
+            "4) 言ってしまいました"
+          ],
+          "cleanOptions": [
+            "言われていました",
+            "言ってもらいました",
+            "言わせてみました",
+            "言ってしまいました"
+          ],
+          "points": 1,
+          "mondai": 8,
+          "mondaiTitle": "問題8: 次の文章を読んで、文章全体の内容を考えて、(1)から(5 )の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) 言ってしまいました"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 21,
+          "questionText": "56. 【3】",
+          "questionHtml": "56. 【3】",
+          "underlinedText": null,
+          "options": [
+            "1) 広がって",
+            "2) 広がるより",
+            "3) 広がるように",
+            "4) 広がったそうで"
+          ],
+          "cleanOptions": [
+            "広がって",
+            "広がるより",
+            "広がるように",
+            "広がったそうで"
+          ],
+          "points": 1,
+          "mondai": 8,
+          "mondaiTitle": "問題8: 次の文章を読んで、文章全体の内容を考えて、(1)から(5 )の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) 広がって"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 22,
+          "questionText": "57. 【4】",
+          "questionHtml": "57. 【4】",
+          "underlinedText": null,
+          "options": [
+            "1) 持ったはずがありません",
+            "2) 持ちたがりません",
+            "3) 持つのかもしれせん",
+            "4) 持とうとしません"
+          ],
+          "cleanOptions": [
+            "持ったはずがありません",
+            "持ちたがりません",
+            "持つのかもしれせん",
+            "持とうとしません"
+          ],
+          "points": 1,
+          "mondai": 8,
+          "mondaiTitle": "問題8: 次の文章を読んで、文章全体の内容を考えて、(1)から(5 )の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) 持つのかもしれせん"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 23,
+          "questionText": "58. 【5】",
+          "questionHtml": "58. 【5】",
+          "underlinedText": null,
+          "options": [
+            "1) どれ",
+            "2) これ",
+            "3) あれら",
+            "4) それら"
+          ],
+          "cleanOptions": [
+            "どれ",
+            "これ",
+            "あれら",
+            "それら"
+          ],
+          "points": 1,
+          "mondai": 8,
+          "mondaiTitle": "問題8: 次の文章を読んで、文章全体の内容を考えて、(1)から(5 )の中に入る最もよいものを、1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) これ"
+          }
+        },
+        {
+          "type": "section-header",
+          "text": "問題9: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。"
+        },
+        {
+          "type": "passage",
+          "htmlContent": "これは大学から学生に届いたメールである。<br><br>\nあて先：kinkyugoyana-daigaku.ac.jp<br><br>\n件名：大雪による休講のお知らせ<br><br>\n送信日時：2016年12月1日7:00<br><br>\n学生のみなさん<br><br>\n現在、大雪のため、多くの公共交通機関が止まっています。そのため、午前の授業は行われません。午後の授業は、10時じまでにを公共交通機関が動き始めれば、いつもの通り行います。授業を行うかどうか10時にメールでお知らせしますので、必ず確認してください。<br><br>なお、クラブ活動やサークル活動なども、午前中は中止してください。<br><br>大山大学　事務室"
+        },
+        {
+          "type": "question",
+          "questionNumber": 24,
+          "questionText": "59. このメールからわかることは何か。",
+          "questionHtml": "59. このメールからわかることは何か。",
+          "underlinedText": null,
+          "options": [
+            "1) 今日の午前の授業は、10時から始まる。",
+            "2) 午前も午後も、今日はクラブ活動を中止しなければならない。",
+            "3) 今日の午後の授業があるかどうどうか、10時に事務室からメールが届く。",
+            "4) 10時に事務室からメールが届いたら、今日の午後の授業はある。"
+          ],
+          "cleanOptions": [
+            "今日の午前の授業は、10時から始まる。",
+            "午前も午後も、今日はクラブ活動を中止しなければならない。",
+            "今日の午後の授業があるかどうどうか、10時に事務室からメールが届く。",
+            "10時に事務室からメールが届いたら、今日の午後の授業はある。"
+          ],
+          "points": 1,
+          "mondai": 9,
+          "mondaiTitle": "問題9: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) 今日の午後の授業があるかどうどうか、10時に事務室からメールが届く。"
+          }
+        },
+        {
+          "type": "passage",
+          "htmlContent": "「携帯電話は持っていないんです。」私がそう言うと、たいていの人は驚く。「あったら便利ですよ。」と言われるが、それは私もよくわかっている。<br><br>\n   実は、私も以前、携帯電話を持っていた。しかし、いつどこにいても電話に出なければいけない気がして、それが嫌で持つのをやめてしまったのだ。すると、とても気持ちが楽になった。<br><br>\n   最近は料金が安いものもあるようだし、携帯電話がない生活には不便なこともある。それでも、私は今のままでいいと思っている。"
+        },
+        {
+          "type": "question",
+          "questionNumber": 25,
+          "questionText": "60. 携帯電話について、「私」はどのように考えているか。",
+          "questionHtml": "60. 携帯電話について、「私」はどのように考えているか。",
+          "underlinedText": null,
+          "options": [
+            "1) 便利だと言う人もいるが、自分はそう思わないので、今は持つつもりはない。",
+            "2) 便利だと思うが、いつも電話を気にする生活は嫌なので、今は持つつもりはない。",
+            "3) 持っていると便利だし、最近は料金が安くなったので、もう一度持つつもりだ。",
+            "4) 持ちたくなかったが、ないと不便なので、もう一度持つつもりだ。"
+          ],
+          "cleanOptions": [
+            "便利だと言う人もいるが、自分はそう思わないので、今は持つつもりはない。",
+            "便利だと思うが、いつも電話を気にする生活は嫌なので、今は持つつもりはない。",
+            "持っていると便利だし、最近は料金が安くなったので、もう一度持つつもりだ。",
+            "持ちたくなかったが、ないと不便なので、もう一度持つつもりだ。"
+          ],
+          "points": 1,
+          "mondai": 9,
+          "mondaiTitle": "問題9: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) 便利だと思うが、いつも電話を気にする生活は嫌なので、今は持つつもりはない。"
+          }
+        },
+        {
+          "type": "passage",
+          "htmlContent": "日本には飲み物の自動販売機がたくさんある。缶コーヒーやペットボトルのお茶などは、一台の販売機で温かい物か冷たい物かを選べるので、便利だ。しかし、最初のころの自動販売機は、冷たい物しか売ることができなかった。<br><br>\n   ある冬の日、高速道路の駐車場で、トラックの運転手たちが自動販売機で買ったジュースを飲んでいた。みんなとても寒そうだったので、それを見た飲料会社の社長が、冬には温かい物を飲んでほしいと考えた。それから10年近くかけて作られたのが、今の販売機なのだそうだ。"
+        },
+        {
+          "type": "question",
+          "questionNumber": 26,
+          "questionText": "61. 今の販売機が作られることになったのは、どうしてか。",
+          "questionHtml": "61. 今の販売機が作られることになったのは、どうしてか。",
+          "underlinedText": null,
+          "options": [
+            "1) 冬に販売機で冷たい物を買って飲んだ飲料会社の社長が、客が気の毒だと感じたから",
+            "2) 冷たい物が買える販売機があれば便利だろうと、飲料会社の社長が考えたから",
+            "3) 温かい物が買える販売機が欲しいと、飲料会社の社長が運転手たちに言われたから",
+            "4) 温かい物も買える販売機があれば喜ばれるだろうと、飲料会社の社長が考えたから"
+          ],
+          "cleanOptions": [
+            "冬に販売機で冷たい物を買って飲んだ飲料会社の社長が、客が気の毒だと感じたから",
+            "冷たい物が買える販売機があれば便利だろうと、飲料会社の社長が考えたから",
+            "温かい物が買える販売機が欲しいと、飲料会社の社長が運転手たちに言われたから",
+            "温かい物も買える販売機があれば喜ばれるだろうと、飲料会社の社長が考えたから"
+          ],
+          "points": 1,
+          "mondai": 9,
+          "mondaiTitle": "問題9: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) 温かい物も買える販売機があれば喜ばれるだろうと、飲料会社の社長が考えたから"
+          }
+        },
+        {
+          "type": "passage",
+          "htmlContent": "12月2日の朝、パクさんが出勤すると、机の上に黒田課長からのメモが置いてあった。\n<br><br>パクさん<br><br>\n先週の新製品の企業向け説明会の報告資料を見ました。内容はわかりやすくていいと思います。明日の午後、私が会議に出て、この資料を使って報告することになりました。参加企業のリストも欲しいので、準備しておいてください。<br><br>\n明日は、モリムラ工業に寄ってから出勤するので、会社に着くのは11時ごろになる予定です。それまでにお願いします。<br><br>\n12月1日（木）19:30<br><br>黒田"
+        },
+        {
+          "type": "question",
+          "questionNumber": 27,
+          "questionText": "62. このメモを読んで、パクさんがしなければならないことは何か。",
+          "questionHtml": "62. このメモを読んで、パクさんがしなければならないことは何か。",
+          "underlinedText": null,
+          "options": [
+            "1) 11時ごろまでに、説明会に参加した企業のリストを準備しておく。",
+            "2) 午後の会議までに、説明会の報告資料をわかりやすく書き直す。",
+            "3) 午後の会議までに報告資料を直し、会議で説明会について報告する。",
+            "4) 黒田課長がモリムラ工業に行くまでに、説明会の報告資料を完成させる。"
+          ],
+          "cleanOptions": [
+            "11時ごろまでに、説明会に参加した企業のリストを準備しておく。",
+            "午後の会議までに、説明会の報告資料をわかりやすく書き直す。",
+            "午後の会議までに報告資料を直し、会議で説明会について報告する。",
+            "黒田課長がモリムラ工業に行くまでに、説明会の報告資料を完成させる。"
+          ],
+          "points": 1,
+          "mondai": 9,
+          "mondaiTitle": "問題9: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) 11時ごろまでに、説明会に参加した企業のリストを準備しておく。"
+          }
+        },
+        {
+          "type": "section-header",
+          "text": "問題10: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。"
+        },
+        {
+          "type": "passage",
+          "htmlContent": "私は本が好きで、よく本を買うのですが、先日の①失敗をしてしまいました。家で買ったばかりの本を読んでいたら、前に読んだことがあるような気がしてきたのです。もしかしたら持っている本かもしれないと思って本棚を探してみたら、やっぱりありました。そして、その本を読んだことも思い出したのです。<br><br>\n   私はたまにこんな失敗をします。読んだことがある本なのに、買ったことも内容も忘れているのです。<br><br>\nそれが面白くない本だったときは、つまらない本のために二度もお金を払ったことが悔しくなります。でも、面白くて感動した本だったときには、悔しいだけではなく②自分が嫌になります。いいと思った本のことを忘れてしまった自分が情けないのです。<br><br>\n   これからも同じようなことをしてしまうかもしれません。でも、本を読むのは楽しいので、本屋通いはやめられそうもありません。"
+        },
+        {
+          "type": "question",
+          "questionNumber": 28,
+          "questionText": "63. ①失敗とあるが、どのようなことか。",
+          "questionHtml": "63. ①失敗とあるが、どのようなことか。",
+          "underlinedText": null,
+          "options": [
+            "1) 買ったばかりの本を本棚に入れたまま、読むのを忘れてしまったこと",
+            "2) 前に読んだことを忘れて、同じ本をまた買ってしまったこと",
+            "3) 持っていない本なのに、本棚にあるはずだと思って探してしまったこと",
+            "4) 初めて読む本なのに、前に読んだことがあると思ってしまったこと"
+          ],
+          "cleanOptions": [
+            "買ったばかりの本を本棚に入れたまま、読むのを忘れてしまったこと",
+            "前に読んだことを忘れて、同じ本をまた買ってしまったこと",
+            "持っていない本なのに、本棚にあるはずだと思って探してしまったこと",
+            "初めて読む本なのに、前に読んだことがあると思ってしまったこと"
+          ],
+          "points": 1,
+          "mondai": 10,
+          "mondaiTitle": "問題10: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) 前に読んだことを忘れて、同じ本をまた買ってしまったこと"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 29,
+          "questionText": "64. ②自分が嫌になりますとあるが、それはなぜか。",
+          "questionHtml": "64. ②自分が嫌になりますとあるが、それはなぜか。",
+          "underlinedText": null,
+          "options": [
+            "1) 前に読んで面白いと思った本なのに、もう一度読んだら、つまらないと感じたから",
+            "2) 前に読んでつまらないと思った本なのに、もう一度読んだら、面白いと感じたから",
+            "3) 一度読んで面白いと思った本なのに、その本のことを覚えていなかったから",
+            "4) 一度読んでつまらないと思った本なのに、二度もお金を払ってしまったから"
+          ],
+          "cleanOptions": [
+            "前に読んで面白いと思った本なのに、もう一度読んだら、つまらないと感じたから",
+            "前に読んでつまらないと思った本なのに、もう一度読んだら、面白いと感じたから",
+            "一度読んで面白いと思った本なのに、その本のことを覚えていなかったから",
+            "一度読んでつまらないと思った本なのに、二度もお金を払ってしまったから"
+          ],
+          "points": 1,
+          "mondai": 10,
+          "mondaiTitle": "問題10: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) 一度読んで面白いと思った本なのに、その本のことを覚えていなかったから"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 30,
+          "questionText": "65. 本を買うことについて、「私」はどう思っているか。",
+          "questionHtml": "65. 本を買うことについて、「私」はどう思っているか。",
+          "underlinedText": null,
+          "options": [
+            "1) これからは失敗しないように、よく調べてから本を買うようになるだろう",
+            "2) 同じ失敗を繰り返さないために、なるべく本屋に通わないようにするだろう",
+            "3) 本を好きになるために、これからも失敗を気にせずに本屋通いをするだろう",
+            "4) 失敗することもあるかもしれないが、これからも自分は本を買い続けるだろう"
+          ],
+          "cleanOptions": [
+            "これからは失敗しないように、よく調べてから本を買うようになるだろう",
+            "同じ失敗を繰り返さないために、なるべく本屋に通わないようにするだろう",
+            "本を好きになるために、これからも失敗を気にせずに本屋通いをするだろう",
+            "失敗することもあるかもしれないが、これからも自分は本を買い続けるだろう"
+          ],
+          "points": 1,
+          "mondai": 10,
+          "mondaiTitle": "問題10: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) 失敗することもあるかもしれないが、これからも自分は本を買い続けるだろう"
+          }
+        },
+        {
+          "type": "passage",
+          "htmlContent": "突然の雨で、傘がなくて困ったり、慌てて傘を買ったのにすぐ晴れてしまった、とい う経験をした人は多いだろう。必要な時だけ傘が借りられたら、どんなに便利だろうか。<br><br>\n   実は、それが可能な町がある。この町は、「弁当を忘れても傘を忘れるな」という言葉があるように、とても雨が多い。そして、観光客の多い町でもある。傘がなくてもみんなが困らないように、最近、この町のあるグループが「貸し傘」活動を始めた。<br><br>\n   この傘は、観光客でも市民でも無料で自由に利用できる。現在、4500本以上がバス停やスーパー、公共の建物などの「貸し傘」用の傘立てに置いてあって、必要な時はそれを借りることができる。返すのは借りたのと同じ傘立てでなくてもいい。<br><br>\n   「貸し傘」を始めたグループでは、借りた傘は大切に使い、きちんと返してほしいと言っている。また、どこかに置いたままの「貸し傘」を見つけたら傘立てに戻すなどの協力もしてほしいと呼びかけている。"
+        },
+        {
+          "type": "question",
+          "questionNumber": 31,
+          "questionText": "66. それとあるが、何か。",
+          "questionHtml": "66. それとあるが、何か。",
+          "underlinedText": null,
+          "options": [
+            "1) 突然雨が降った時に、すぐに傘を買うこと",
+            "2) 買っても使わなかった傘を、店に返すこと",
+            "3) 使いたい時にだけ、傘を借りて使うこと",
+            "4) 雨の日に、傘をささずに観光をすること"
+          ],
+          "cleanOptions": [
+            "突然雨が降った時に、すぐに傘を買うこと",
+            "買っても使わなかった傘を、店に返すこと",
+            "使いたい時にだけ、傘を借りて使うこと",
+            "雨の日に、傘をささずに観光をすること"
+          ],
+          "points": 1,
+          "mondai": 10,
+          "mondaiTitle": "問題10: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) 使いたい時にだけ、傘を借りて使うこと"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 32,
+          "questionText": "67. 「貸し傘」についての説明で、合っているものはどれか。",
+          "questionHtml": "67. 「貸し傘」についての説明で、合っているものはどれか。",
+          "underlinedText": null,
+          "options": [
+            "1) この町に来た観光客だけが利用できる。",
+            "2) 「貸し傘」のグループのメンバーだけが利用できる。",
+            "3) 観光客なら、利用した傘を記念に持ち帰ってもいい。",
+            "4) 利用した後は、「貸し傘」用の傘立てのどれかに返せばいい。"
+          ],
+          "cleanOptions": [
+            "この町に来た観光客だけが利用できる。",
+            "「貸し傘」のグループのメンバーだけが利用できる。",
+            "観光客なら、利用した傘を記念に持ち帰ってもいい。",
+            "利用した後は、「貸し傘」用の傘立てのどれかに返せばいい。"
+          ],
+          "points": 1,
+          "mondai": 10,
+          "mondaiTitle": "問題10: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) 利用した後は、「貸し傘」用の傘立てのどれかに返せばいい。"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 33,
+          "questionText": "68. 「貸し傘」を始めたグループが、利用する人にしてほしいと言っていることは何か。",
+          "questionHtml": "68. 「貸し傘」を始めたグループが、利用する人にしてほしいと言っていることは何か。",
+          "underlinedText": null,
+          "options": [
+            "1) 傘を大事に扱い、「貸し傘」の活動がうまくいくように協力してほしい。",
+            "2) 傘をどんどん借りて、「貸し傘」の利用者が増えるように協力してほしい。",
+            "3) 「貸し傘」の傘が不足しないように、不要な傘を集めるのに協力してほしい。",
+            "4) 「貸し傘」の傘が返しやすくなるように、傘立てを増やすことに協力してほしい。"
+          ],
+          "cleanOptions": [
+            "傘を大事に扱い、「貸し傘」の活動がうまくいくように協力してほしい。",
+            "傘をどんどん借りて、「貸し傘」の利用者が増えるように協力してほしい。",
+            "「貸し傘」の傘が不足しないように、不要な傘を集めるのに協力してほしい。",
+            "「貸し傘」の傘が返しやすくなるように、傘立てを増やすことに協力してほしい。"
+          ],
+          "points": 1,
+          "mondai": 10,
+          "mondaiTitle": "問題10: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) 傘を大事に扱い、「貸し傘」の活動がうまくいくように協力してほしい。"
+          }
+        },
+        {
+          "type": "section-header",
+          "text": "問題11: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。"
+        },
+        {
+          "type": "passage",
+          "htmlContent": "先日、テレビであるタクシー会社の話が紹介されていた。<br><br>\n   タクシーの運転手は、利用者から「急いでください」と言われることが多いので、急ぐことがサービスになると思っている人が多い。それで、走り出してすぐにスピードを上げたり、前の車が遅いときは追い越したりしていた。ところが、その会社が利用者にアンケート調査を行ってみると、70％以上の人が「ゆっくり走ってほしいと思ったことがある」と答えたそうだ。<br><br>\n   「①驚きました。多くのお客様が希望しているサービスは、私たちが考えていたのとは反対のものだったんです。」と会杜の人は話していた。<br><br>\n   会社は、この結果から、必ずしも急ぐ必要がある人ばかりではないと気がついた。急ごうとすると、どうしても車が大きく揺れてしまうことがある。小さい子供を連れた人や車に酔いやすい人など、ゆっくり丁寧に運転してほしいと思う利用者もいるのだ。しかし、急いでくれている運転手に「急がなくてもいいから、丁寧に運転してください。」とは言いにくい人が多いのだろうと考えた。<br><br>\n   そこで、この会社では、利用者が座る席の前にボタンをつけ、利用者がそのボタンを押せば、いつもよりゆっくり丁寧に運転するというサービスを開始した。希望を言い出しにくい人でも、遠慮なく希望を運転手に伝えることがきる。<br><br>   このサービスを喜ぶ利用者は多く、会社のイメージも上がって予約が15％もアップしたそうだ。それに、丁寧に運転するとガソリンの消費量も減り、環境にも優しい、そう考えると、これは②素晴らしいアイディアなのではないだろうか。"
+        },
+        {
+          "type": "question",
+          "questionNumber": 34,
+          "questionText": "69. このタクシー会社が調査をして、わかったことはどのようなことか。",
+          "questionHtml": "69. このタクシー会社が調査をして、わかったことはどのようなことか。",
+          "underlinedText": null,
+          "options": [
+            "1) 急ぐことが利用者へのサービスになると思っている運転手が多い",
+            "2) スピードを急に上げたり、前の車を追い越したりする運転手が多い。",
+            "3) 運転手は丁寧な運転をしてくれていると考えている利用者が多い。",
+            "4) ゆっくり運転してもらいたいと思ったことがある利用者は多い。"
+          ],
+          "cleanOptions": [
+            "急ぐことが利用者へのサービスになると思っている運転手が多い",
+            "スピードを急に上げたり、前の車を追い越したりする運転手が多い。",
+            "運転手は丁寧な運転をしてくれていると考えている利用者が多い。",
+            "ゆっくり運転してもらいたいと思ったことがある利用者は多い。"
+          ],
+          "points": 1,
+          "mondai": 11,
+          "mondaiTitle": "問題11: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) ゆっくり運転してもらいたいと思ったことがある利用者は多い。"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 35,
+          "questionText": "70. ①驚きましたとあるが、なぜ驚いたのか。",
+          "questionHtml": "70. ①驚きましたとあるが、なぜ驚いたのか。",
+          "underlinedText": null,
+          "options": [
+            "1) アンケートで、満足している利用者が思った以上に多いことがわかったから",
+            "2) アンケートに答えてくれた利用者が、期待したよりずっと多かったから",
+            "3) アンケートを行っても、利用者の本当の希望はわからなかったから",
+            "4) アンケートでわかった利用者の希望が、予想と違っていたから"
+          ],
+          "cleanOptions": [
+            "アンケートで、満足している利用者が思った以上に多いことがわかったから",
+            "アンケートに答えてくれた利用者が、期待したよりずっと多かったから",
+            "アンケートを行っても、利用者の本当の希望はわからなかったから",
+            "アンケートでわかった利用者の希望が、予想と違っていたから"
+          ],
+          "points": 1,
+          "mondai": 11,
+          "mondaiTitle": "問題11: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) アンケートでわかった利用者の希望が、予想と違っていたから"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 36,
+          "questionText": "71. このタクシー会社が、ボタンを使って利用者の希望を聞けるようにしたのはなぜか。",
+          "questionHtml": "71. このタクシー会社が、ボタンを使って利用者の希望を聞けるようにしたのはなぜか。",
+          "underlinedText": null,
+          "options": [
+            "1) 運転手に直接希望を言いにくいと感じている利用者が多いようだから",
+            "2) 運転中に利用者の声がよく聞こえない運転手が多いようだから ボタンをつけてほしいという希望を持つ利用者が多いようだから 利用者となるべく話をしたくないと考える運転手が多いようだから",
+            "3)",
+            "4)"
+          ],
+          "cleanOptions": [
+            "運転手に直接希望を言いにくいと感じている利用者が多いようだから",
+            "運転中に利用者の声がよく聞こえない運転手が多いようだから ボタンをつけてほしいという希望を持つ利用者が多いようだから 利用者となるべく話をしたくないと考える運転手が多いようだから",
+            "",
+            ""
+          ],
+          "points": 1,
+          "mondai": 11,
+          "mondaiTitle": "問題11: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) 運転手に直接希望を言いにくいと感じている利用者が多いようだから"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 37,
+          "questionText": "72. ②素晴らしいアイディアとあるが、この文章を書いた人は、なぜそのように言っているのか。",
+          "questionHtml": "72. ②素晴らしいアイディアとあるが、この文章を書いた人は、なぜそのように言っているのか。",
+          "underlinedText": null,
+          "options": [
+            "1) 利用者は多少減ってしまうが、環境に優しいサービスだから",
+            "2) 会社と利用者がいっしょに考えた、環境に優しいサービスだから",
+            "3) 利用者、会社の両方にいい点があり、環境にも優しいサービスだから",
+            "4) 会社の支出は増えるが、利用者や環境に優しいサービスだから"
+          ],
+          "cleanOptions": [
+            "利用者は多少減ってしまうが、環境に優しいサービスだから",
+            "会社と利用者がいっしょに考えた、環境に優しいサービスだから",
+            "利用者、会社の両方にいい点があり、環境にも優しいサービスだから",
+            "会社の支出は増えるが、利用者や環境に優しいサービスだから"
+          ],
+          "points": 1,
+          "mondai": 11,
+          "mondaiTitle": "問題11: 次の文章を読んで、後の問いに対する答えとして最もよいものを1・2・3・4から一つ選びなさい。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) 利用者、会社の両方にいい点があり、環境にも優しいサービスだから"
+          }
+        },
+        {
+          "type": "section-header",
+          "text": "問題12: 下のページを見て、下の問いに対する答えとして最もよいものを、1・2・3・4から1つ選びなさい。"
+        },
+        {
+          "type": "passage",
+          "htmlContent": "大原物園をもっと楽しむために\n\n                                                      昼のイベント\n\nいろいろなイベントに参加して、動物のことをもっとよく知ってください。"
+        },
+        {
+          "type": "passage",
+          "htmlContent": "<div class=\"table_dokai\"><table><tbody><tr><td><center>A動物園案内</center><br>專門の係の説明を受けながら、動物園の中を歩きます。必要時間は約1時間です。<br>毎日3回<br>① 　10時半～　②14時半〜　③1 6時〜</td><td>\n<center>B動物教室</center><br>普段知ることのできない、動物たの生活について話す聞くことができます。<br><br>毎週日曜　13時半〜15時<br>（途中からでも加できます）</td></tr>\n<tr><td><center>C台所見学</center><br>動物たちのえさを準備しているところが見られます。必要時間は約45分～1時間です。<br><br>毎週土曜　14時半</td><td>\n<center>Ｄ川の生き物教室</center><br>川の生き物に実際に触ったりしながら、楽しく学べます。<br><br>毎週火曜・木曜　15時〜1 6時<br>毎週土曜　　　　13時〜14時<br>毎週日曜　　　　11時〜12時</td></tr>\n\n</tbody></table>\n<br>申し込む、参加料金　全て不要<br>集合場所A、C、D：正面口<br>B：資料館1階受付（途中参加の人も）\n</div><br>\n<div class=\"table_dokai\">\n<center><h4>夜の動物園</h4>昼とは違う、夜の動物たちの様子を見てください。</center><br>\n日時：8月2日、9日、16日、23日、30日<br>\n各日17時半〜21時（入園は19時半まで）<br><br>\n入園料：昼と同じ入園料がかかります。<br>\n昼の最後入園時間（16時半）までに入園された方は、17時の閉圍に一度回の外に出て、17時半に夜の動物園が開園後、もう一度入園料を支払って入園していただく必要があります。<br><br>入口：東口は17時で閉めますので、正面口からお入りください。<br><br>レストラン、売店　営業しています。</div>"
+        },
+        {
+          "type": "question",
+          "questionNumber": 38,
+          "questionText": "73. 今日は日曜日である。ソフィさんは14時に入園し、このポスターを見た。動物園が昼間に行っている案内や教室の中で、 今から参加できるものはどれか。",
+          "questionHtml": "73. 今日は日曜日である。ソフィさんは14時に入園し、このポスターを見た。動物園が昼間に行っている案内や教室の中で、 今から参加できるものはどれか。",
+          "underlinedText": null,
+          "options": [
+            "1) Aだけ",
+            "2) AとB",
+            "3) AとBとC",
+            "4) BとD"
+          ],
+          "cleanOptions": [
+            "Aだけ",
+            "AとB",
+            "AとBとC",
+            "BとD"
+          ],
+          "points": 1,
+          "mondai": 12,
+          "mondaiTitle": "問題12: 下のページを見て、下の問いに対する答えとして最もよいものを、1・2・3・4から1つ選びなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) AとB"
+          }
+        },
+        {
+          "type": "question",
+          "questionNumber": 39,
+          "questionText": "74. カクさんは8月9日の昼に動物園に来て、園内でポスターを見て、その日の「夜の動物園」を見るために、カクさんがしなければならないことはどれか。",
+          "questionHtml": "74. カクさんは8月9日の昼に動物園に来て、園内でポスターを見て、その日の「夜の動物園」を見るために、カクさんがしなければならないことはどれか。",
+          "underlinedText": null,
+          "options": [
+            "1) 17時半までに、もう一度入園する。",
+            "2) 昼とは別に入園料を払って、もう一度入園する。",
+            "3) 東口から、もう一度入園する。",
+            "4) 外で食事をすませてから、もう、一度入園する。"
+          ],
+          "cleanOptions": [
+            "17時半までに、もう一度入園する。",
+            "昼とは別に入園料を払って、もう一度入園する。",
+            "東口から、もう一度入園する。",
+            "外で食事をすませてから、もう、一度入園する。"
+          ],
+          "points": 1,
+          "mondai": 12,
+          "mondaiTitle": "問題12: 下のページを見て、下の問いに対する答えとして最もよいものを、1・2・3・4から1つ選びなさい。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) 昼とは別に入園料を払って、もう一度入園する。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "partId": 4,
+      "categoryId": "listening-test",
+      "title": "聴解",
+      "enTitle": "Listening (聴解)",
+      "sourceUrl": "https://dethitiengnhat.com/jlpt/N3/201612/4",
+      "durationMinutes": 40,
+      "questionCount": 18,
+      "questions": [
+        {
+          "id": "dttn_n3_201612_listening_q1",
+          "number": 1,
+          "position": 0,
+          "mondai": 1,
+          "mondaiTitle": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "1番",
+          "stemWithNumber": "1番",
+          "context": "",
+          "imageUrl": "https://dethitiengnhat.com/image/201612n35.png",
+          "audioUrl": "https://drive.google.com/file/d/1outKmYCTQw23X0wBAf2cYLYHHNhdzA5Z/preview",
+          "script": "",
+          "explanation": "正解: 2 (アエ)",
+          "options": [
+            "アウ",
+            "アエ",
+            "イウ",
+            "イエ"
+          ],
+          "rawOptions": [
+            "1) アウ",
+            "2) アエ",
+            "3) イウ",
+            "4) イエ"
+          ],
+          "correct": 2,
+          "correctOption": "アエ",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q2",
+          "number": 2,
+          "position": 1,
+          "mondai": 1,
+          "mondaiTitle": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "2番",
+          "stemWithNumber": "2番",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "https://drive.google.com/file/d/1outKmYCTQw23X0wBAf2cYLYHHNhdzA5Z/preview",
+          "script": "",
+          "explanation": "正解: 3 (金曜日)",
+          "options": [
+            "水曜日",
+            "木曜日",
+            "金曜日",
+            "土曜日"
+          ],
+          "rawOptions": [
+            "1) 水曜日",
+            "2) 木曜日",
+            "3) 金曜日",
+            "4) 土曜日"
+          ],
+          "correct": 3,
+          "correctOption": "金曜日",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q3",
+          "number": 3,
+          "position": 2,
+          "mondai": 1,
+          "mondaiTitle": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "3番",
+          "stemWithNumber": "3番",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "https://drive.google.com/file/d/1outKmYCTQw23X0wBAf2cYLYHHNhdzA5Z/preview",
+          "script": "",
+          "explanation": "正解: 1 (さんかしゃをかくにんする)",
+          "options": [
+            "さんかしゃをかくにんする",
+            "店に電話する",
+            "メールをかくにんする",
+            "ないようを決める"
+          ],
+          "rawOptions": [
+            "1) さんかしゃをかくにんする",
+            "2) 店に電話する",
+            "3) メールをかくにんする",
+            "4) ないようを決める"
+          ],
+          "correct": 1,
+          "correctOption": "さんかしゃをかくにんする",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q4",
+          "number": 4,
+          "position": 3,
+          "mondai": 1,
+          "mondaiTitle": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "4番",
+          "stemWithNumber": "4番",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "https://drive.google.com/file/d/1outKmYCTQw23X0wBAf2cYLYHHNhdzA5Z/preview",
+          "script": "",
+          "explanation": "正解: 2 (テストをうける)",
+          "options": [
+            "セミナーにもうしこむ",
+            "テストをうける",
+            "けいじばんを見る",
+            "さんかひをふりこむ"
+          ],
+          "rawOptions": [
+            "1) セミナーにもうしこむ",
+            "2) テストをうける",
+            "3) けいじばんを見る",
+            "4) さんかひをふりこむ"
+          ],
+          "correct": 2,
+          "correctOption": "テストをうける",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q5",
+          "number": 5,
+          "position": 4,
+          "mondai": 1,
+          "mondaiTitle": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "5番",
+          "stemWithNumber": "5番",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "https://drive.google.com/file/d/1outKmYCTQw23X0wBAf2cYLYHHNhdzA5Z/preview",
+          "script": "",
+          "explanation": "正解: 1 (ちょうさけっかを入力する)",
+          "options": [
+            "ちょうさけっかを入力する",
+            "サンプルをしてんに送る",
+            "かいぎのじゅんびをする",
+            "大野さんに仕事をたのむ"
+          ],
+          "rawOptions": [
+            "1) ちょうさけっかを入力する",
+            "2) サンプルをしてんに送る",
+            "3) かいぎのじゅんびをする",
+            "4) 大野さんに仕事をたのむ"
+          ],
+          "correct": 1,
+          "correctOption": "ちょうさけっかを入力する",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q6",
+          "number": 6,
+          "position": 5,
+          "mondai": 1,
+          "mondaiTitle": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "6番",
+          "stemWithNumber": "6番",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "https://drive.google.com/file/d/1outKmYCTQw23X0wBAf2cYLYHHNhdzA5Z/preview",
+          "script": "",
+          "explanation": "正解: 2 (DＶD を買(か)う)",
+          "options": [
+            "たいそう教室にもうしこむ",
+            "DＶD を買(か)う",
+            "びょういんに行(い)く",
+            "スポーツクラブに行く"
+          ],
+          "rawOptions": [
+            "1) たいそう教室にもうしこむ",
+            "2) DＶD を買(か)う",
+            "3) びょういんに行(い)く",
+            "4) スポーツクラブに行く"
+          ],
+          "correct": 2,
+          "correctOption": "DＶD を買(か)う",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q7",
+          "number": 7,
+          "position": 6,
+          "mondai": 2,
+          "mondaiTitle": "問題2: この問題では、まず質問を聞いてください。そのあと、問題用紙の選択肢を読んでください。読む時間があります。それから、話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "1番",
+          "stemWithNumber": "1番",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "https://drive.google.com/file/d/13LzgJRNEUxCKWWw1BcYNkSSn_vhqZ8uY/preview",
+          "script": "",
+          "explanation": "正解: 2 (今すぐ買うひつようがなくなったから)",
+          "options": [
+            "気に入ったのがなかったから",
+            "今すぐ買うひつようがなくなったから",
+            "ねだんが高(たか)かったから",
+            "おっとといっしょにえらびたかったから"
+          ],
+          "rawOptions": [
+            "1) 気に入ったのがなかったから",
+            "2) 今すぐ買うひつようがなくなったから",
+            "3) ねだんが高(たか)かったから",
+            "4) おっとといっしょにえらびたかったから"
+          ],
+          "correct": 2,
+          "correctOption": "今すぐ買うひつようがなくなったから",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q8",
+          "number": 8,
+          "position": 7,
+          "mondai": 2,
+          "mondaiTitle": "問題2: この問題では、まず質問を聞いてください。そのあと、問題用紙の選択肢を読んでください。読む時間があります。それから、話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "2番",
+          "stemWithNumber": "2番",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "https://drive.google.com/file/d/13LzgJRNEUxCKWWw1BcYNkSSn_vhqZ8uY/preview",
+          "script": "",
+          "explanation": "正解: 4 (りゅうがくするため)",
+          "options": [
+            "年をとってからの生活のため",
+            "家を買うため",
+            "海外旅行をするため",
+            "りゅうがくするため"
+          ],
+          "rawOptions": [
+            "1) 年をとってからの生活のため",
+            "2) 家を買うため",
+            "3) 海外旅行をするため",
+            "4) りゅうがくするため"
+          ],
+          "correct": 4,
+          "correctOption": "りゅうがくするため",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q9",
+          "number": 9,
+          "position": 8,
+          "mondai": 2,
+          "mondaiTitle": "問題2: この問題では、まず質問を聞いてください。そのあと、問題用紙の選択肢を読んでください。読む時間があります。それから、話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "3番",
+          "stemWithNumber": "3番",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "https://drive.google.com/file/d/13LzgJRNEUxCKWWw1BcYNkSSn_vhqZ8uY/preview",
+          "script": "",
+          "explanation": "正解: 1 (ペットをびょういんにつれて行くから)",
+          "options": [
+            "ペットをびょういんにつれて行くから",
+            "母がけがをしたから",
+            "アルバイトに行くから",
+            "クラブの話し合いがあるから"
+          ],
+          "rawOptions": [
+            "1) ペットをびょういんにつれて行くから",
+            "2) 母がけがをしたから",
+            "3) アルバイトに行くから",
+            "4) クラブの話し合いがあるから"
+          ],
+          "correct": 1,
+          "correctOption": "ペットをびょういんにつれて行くから",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q10",
+          "number": 10,
+          "position": 9,
+          "mondai": 2,
+          "mondaiTitle": "問題2: この問題では、まず質問を聞いてください。そのあと、問題用紙の選択肢を読んでください。読む時間があります。それから、話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "4番",
+          "stemWithNumber": "4番",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "https://drive.google.com/file/d/13LzgJRNEUxCKWWw1BcYNkSSn_vhqZ8uY/preview",
+          "script": "",
+          "explanation": "正解: 1 (サラさんの友人に教えてもらう)",
+          "options": [
+            "サラさんの友人に教えてもらう",
+            "テレビを見て自分で勉強する",
+            "インターネットでレッスンをうける",
+            "外国語の学校に通う"
+          ],
+          "rawOptions": [
+            "1) サラさんの友人に教えてもらう",
+            "2) テレビを見て自分で勉強する",
+            "3) インターネットでレッスンをうける",
+            "4) 外国語の学校に通う"
+          ],
+          "correct": 1,
+          "correctOption": "サラさんの友人に教えてもらう",
+          "explanations": [
+            "正解: 1",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q11",
+          "number": 11,
+          "position": 10,
+          "mondai": 2,
+          "mondaiTitle": "問題2: この問題では、まず質問を聞いてください。そのあと、問題用紙の選択肢を読んでください。読む時間があります。それから、話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "5番",
+          "stemWithNumber": "5番",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "https://drive.google.com/file/d/13LzgJRNEUxCKWWw1BcYNkSSn_vhqZ8uY/preview",
+          "script": "",
+          "explanation": "正解: 3 (こんでいてもせきを空けないきゃくがいる)",
+          "options": [
+            "朝食のメニューが売れていない",
+            "近所の人があまり来てくれない",
+            "こんでいてもせきを空けないきゃくがいる",
+            "ことばづかいがよくない店員がいる"
+          ],
+          "rawOptions": [
+            "1) 朝食のメニューが売れていない",
+            "2) 近所の人があまり来てくれない",
+            "3) こんでいてもせきを空けないきゃくがいる",
+            "4) ことばづかいがよくない店員がいる"
+          ],
+          "correct": 3,
+          "correctOption": "こんでいてもせきを空けないきゃくがいる",
+          "explanations": [
+            "",
+            "",
+            "正解: 3",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q12",
+          "number": 12,
+          "position": 11,
+          "mondai": 2,
+          "mondaiTitle": "問題2: この問題では、まず質問を聞いてください。そのあと、問題用紙の選択肢を読んでください。読む時間があります。それから、話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "6番",
+          "stemWithNumber": "6番",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "https://drive.google.com/file/d/13LzgJRNEUxCKWWw1BcYNkSSn_vhqZ8uY/preview",
+          "script": "",
+          "explanation": "正解: 4 (はっぴょうのながれをかえる)",
+          "options": [
+            "せんぱいにしりょうを見せる",
+            "ちょうさをしなおす",
+            "しりょうにグラフをくわえる",
+            "はっぴょうのながれをかえる"
+          ],
+          "rawOptions": [
+            "1) せんぱいにしりょうを見せる",
+            "2) ちょうさをしなおす",
+            "3) しりょうにグラフをくわえる",
+            "4) はっぴょうのながれをかえる"
+          ],
+          "correct": 4,
+          "correctOption": "はっぴょうのながれをかえる",
+          "explanations": [
+            "",
+            "",
+            "",
+            "正解: 4"
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q16",
+          "number": 16,
+          "position": 12,
+          "mondai": 4,
+          "mondaiTitle": "問題4: この問題では、絵を 見ながら 質問を 聞いて ください。やじるし（→）の 人は 何と 言いますか。1から3の 中から、いちばん いいものを ひとつ 選んで ください。",
+          "points": 1,
+          "stem": "1番",
+          "stemWithNumber": "1番",
+          "context": "",
+          "imageUrl": "https://dethitiengnhat.com/image/201612n31.png",
+          "audioUrl": "https://drive.google.com/file/d/1jdXM-tLxU257Gqy4zLXE4svCVpFGgygT/preview",
+          "script": "Reference: 観光の案内をしています。建物を見てもらいたいです。何と言いますか。 1. こちらでお目にかかります。 2.こちらをご覧ください。 3.お見せくださいますか。",
+          "explanation": "Reference: 観光の案内をしています。建物を見てもらいたいです。何と言いますか。 1. こちらでお目にかかります。 2.こちらをご覧ください。 3.お見せくださいますか。",
+          "options": [
+            "1. こちらでお目にかかります。 2.こちらをご覧ください。 3.お見せくださいますか。",
+            "",
+            "",
+            ""
+          ],
+          "rawOptions": [
+            "1. こちらでお目にかかります。 2.こちらをご覧ください。 3.お見せくださいますか。",
+            "2)",
+            "3)",
+            "4)"
+          ],
+          "correct": 1,
+          "correctOption": "1. こちらでお目にかかります。 2.こちらをご覧ください。 3.お見せくださいますか。",
+          "explanations": [
+            "Reference: 観光の案内をしています。建物を見てもらいたいです。何と言いますか。 1. こちらでお目にかかります。 2.こちらをご覧ください。 3.お見せくださいますか。",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q20",
+          "number": 20,
+          "position": 13,
+          "mondai": 5,
+          "mondaiTitle": "問題5: この問題では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "1番",
+          "stemWithNumber": "1番",
+          "context": "",
+          "imageUrl": "https://dethitiengnhat.com/image/201612n34.png",
+          "audioUrl": "https://drive.google.com/file/d/1x2PiF6qrYIgxzZqbCM0l-EYCu6p4RLFN/preview",
+          "script": "Reference: 女:ねえ、ちょっと木村さんに用があるんだけど、見なかった? 1. じゃあ、いっしょに見よう。 2. 特に用はないんだけど。 3. さあ、ほかの人に聞いてみて。",
+          "explanation": "Reference: 女:ねえ、ちょっと木村さんに用があるんだけど、見なかった? 1. じゃあ、いっしょに見よう。 2. 特に用はないんだけど。 3. さあ、ほかの人に聞いてみて。",
+          "options": [
+            "1. じゃあ、いっしょに見よう。 2. 特に用はないんだけど。 3. さあ、ほかの人に聞いてみて。",
+            "",
+            "",
+            ""
+          ],
+          "rawOptions": [
+            "1. じゃあ、いっしょに見よう。 2. 特に用はないんだけど。 3. さあ、ほかの人に聞いてみて。",
+            "2)",
+            "3)",
+            "4)"
+          ],
+          "correct": 1,
+          "correctOption": "1. じゃあ、いっしょに見よう。 2. 特に用はないんだけど。 3. さあ、ほかの人に聞いてみて。",
+          "explanations": [
+            "Reference: 女:ねえ、ちょっと木村さんに用があるんだけど、見なかった? 1. じゃあ、いっしょに見よう。 2. 特に用はないんだけど。 3. さあ、ほかの人に聞いてみて。",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q23",
+          "number": 23,
+          "position": 14,
+          "mondai": 5,
+          "mondaiTitle": "問題5: この問題では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "4番",
+          "stemWithNumber": "4番",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "https://drive.google.com/file/d/1x2PiF6qrYIgxzZqbCM0l-EYCu6p4RLFN/preview",
+          "script": "Reference: 男:李さん、あのう、李さんの研究でお聞きしたいことがあるんですが。 1. あ、はい、どんなことでしょうか。 2. ああ、聞いたことがあります。 3.いえ、質問はありませんが。",
+          "explanation": "Reference: 男:李さん、あのう、李さんの研究でお聞きしたいことがあるんですが。 1. あ、はい、どんなことでしょうか。 2. ああ、聞いたことがあります。 3.いえ、質問はありませんが。",
+          "options": [
+            "1. あ、はい、どんなことでしょうか。 2. ああ、聞いたことがあります。 3.いえ、質問はありませんが。",
+            "",
+            "",
+            ""
+          ],
+          "rawOptions": [
+            "1. あ、はい、どんなことでしょうか。 2. ああ、聞いたことがあります。 3.いえ、質問はありませんが。",
+            "2)",
+            "3)",
+            "4)"
+          ],
+          "correct": 1,
+          "correctOption": "1. あ、はい、どんなことでしょうか。 2. ああ、聞いたことがあります。 3.いえ、質問はありませんが。",
+          "explanations": [
+            "Reference: 男:李さん、あのう、李さんの研究でお聞きしたいことがあるんですが。 1. あ、はい、どんなことでしょうか。 2. ああ、聞いたことがあります。 3.いえ、質問はありませんが。",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q24",
+          "number": 24,
+          "position": 15,
+          "mondai": 5,
+          "mondaiTitle": "問題5: この問題では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "5番",
+          "stemWithNumber": "5番",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "https://drive.google.com/file/d/1x2PiF6qrYIgxzZqbCM0l-EYCu6p4RLFN/preview",
+          "script": "Reference: 男:友達に赤ちゃんが生まれたんだけど、どんなものをあげたらいいと思う? 1.うん、それがいいと思うよ。 2.プレゼントをあげたらどう? 3. 何でも喜んでくれるんじゃない?",
+          "explanation": "Reference: 男:友達に赤ちゃんが生まれたんだけど、どんなものをあげたらいいと思う? 1.うん、それがいいと思うよ。 2.プレゼントをあげたらどう? 3. 何でも喜んでくれるんじゃない?",
+          "options": [
+            "3. 何でも喜んでくれるんじゃない?",
+            "",
+            "",
+            ""
+          ],
+          "rawOptions": [
+            "3. 何でも喜んでくれるんじゃない?",
+            "2)",
+            "3)",
+            "4)"
+          ],
+          "correct": 1,
+          "correctOption": "3. 何でも喜んでくれるんじゃない?",
+          "explanations": [
+            "Reference: 男:友達に赤ちゃんが生まれたんだけど、どんなものをあげたらいいと思う? 1.うん、それがいいと思うよ。 2.プレゼントをあげたらどう? 3. 何でも喜んでくれるんじゃない?",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q27",
+          "number": 27,
+          "position": 16,
+          "mondai": 5,
+          "mondaiTitle": "問題5: この問題では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "8番",
+          "stemWithNumber": "8番",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "https://drive.google.com/file/d/1x2PiF6qrYIgxzZqbCM0l-EYCu6p4RLFN/preview",
+          "script": "Reference: 女:寒いね。今夜は雪が降ってもおかしくないね。 1. 降ったらおかしい? 2. これは降るだろうね。 3. 寒いけど、降らないんだね。",
+          "explanation": "Reference: 女:寒いね。今夜は雪が降ってもおかしくないね。 1. 降ったらおかしい? 2. これは降るだろうね。 3. 寒いけど、降らないんだね。",
+          "options": [
+            "1. 降ったらおかしい? 2. これは降るだろうね。 3. 寒いけど、降らないんだね。",
+            "",
+            "",
+            ""
+          ],
+          "rawOptions": [
+            "1. 降ったらおかしい? 2. これは降るだろうね。 3. 寒いけど、降らないんだね。",
+            "2)",
+            "3)",
+            "4)"
+          ],
+          "correct": 1,
+          "correctOption": "1. 降ったらおかしい? 2. これは降るだろうね。 3. 寒いけど、降らないんだね。",
+          "explanations": [
+            "Reference: 女:寒いね。今夜は雪が降ってもおかしくないね。 1. 降ったらおかしい? 2. これは降るだろうね。 3. 寒いけど、降らないんだね。",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "dttn_n3_201612_listening_q28",
+          "number": 28,
+          "position": 17,
+          "mondai": 5,
+          "mondaiTitle": "問題5: この問題では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選らんでください。",
+          "points": 1,
+          "stem": "9番",
+          "stemWithNumber": "9番",
+          "context": "",
+          "imageUrl": "",
+          "audioUrl": "https://drive.google.com/file/d/1x2PiF6qrYIgxzZqbCM0l-EYCu6p4RLFN/preview",
+          "script": "",
+          "explanation": "正解: 2 ()",
+          "options": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "rawOptions": [
+            "1)",
+            "2)",
+            "3)",
+            "4)"
+          ],
+          "correct": 2,
+          "correctOption": "",
+          "explanations": [
+            "",
+            "正解: 2",
+            "",
+            ""
+          ]
+        }
+      ],
+      "contentBlocks": [
+        {
+          "type": "section-header",
+          "text": "言語知識（聴解）"
+        },
+        {
+          "type": "section-header",
+          "text": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。"
+        },
+        {
+          "type": "audio",
+          "src": "https://drive.google.com/file/d/1outKmYCTQw23X0wBAf2cYLYHHNhdzA5Z/preview"
+        },
+        {
+          "type": "image",
+          "src": "https://dethitiengnhat.com/image/201612n35.png"
+        },
+        {
+          "type": "question",
+          "questionNumber": 1,
+          "questionText": "1番",
+          "questionHtml": "1番",
+          "underlinedText": null,
+          "options": [
+            "1) アウ",
+            "2) アエ",
+            "3) イウ",
+            "4) イエ"
+          ],
+          "cleanOptions": [
+            "アウ",
+            "アエ",
+            "イウ",
+            "イエ"
+          ],
+          "points": 1,
+          "mondai": 1,
+          "mondaiTitle": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) アエ"
+          },
+          "imageUrl": "https://dethitiengnhat.com/image/201612n35.png",
+          "audioUrl": "https://drive.google.com/file/d/1outKmYCTQw23X0wBAf2cYLYHHNhdzA5Z/preview"
+        },
+        {
+          "type": "question",
+          "questionNumber": 2,
+          "questionText": "2番",
+          "questionHtml": "2番",
+          "underlinedText": null,
+          "options": [
+            "1) 水曜日",
+            "2) 木曜日",
+            "3) 金曜日",
+            "4) 土曜日"
+          ],
+          "cleanOptions": [
+            "水曜日",
+            "木曜日",
+            "金曜日",
+            "土曜日"
+          ],
+          "points": 1,
+          "mondai": 1,
+          "mondaiTitle": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) 金曜日"
+          },
+          "audioUrl": "https://drive.google.com/file/d/1outKmYCTQw23X0wBAf2cYLYHHNhdzA5Z/preview"
+        },
+        {
+          "type": "question",
+          "questionNumber": 3,
+          "questionText": "3番",
+          "questionHtml": "3番",
+          "underlinedText": null,
+          "options": [
+            "1) さんかしゃをかくにんする",
+            "2) 店に電話する",
+            "3) メールをかくにんする",
+            "4) ないようを決める"
+          ],
+          "cleanOptions": [
+            "さんかしゃをかくにんする",
+            "店に電話する",
+            "メールをかくにんする",
+            "ないようを決める"
+          ],
+          "points": 1,
+          "mondai": 1,
+          "mondaiTitle": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) さんかしゃをかくにんする"
+          },
+          "audioUrl": "https://drive.google.com/file/d/1outKmYCTQw23X0wBAf2cYLYHHNhdzA5Z/preview"
+        },
+        {
+          "type": "question",
+          "questionNumber": 4,
+          "questionText": "4番",
+          "questionHtml": "4番",
+          "underlinedText": null,
+          "options": [
+            "1) セミナーにもうしこむ",
+            "2) テストをうける",
+            "3) けいじばんを見る",
+            "4) さんかひをふりこむ"
+          ],
+          "cleanOptions": [
+            "セミナーにもうしこむ",
+            "テストをうける",
+            "けいじばんを見る",
+            "さんかひをふりこむ"
+          ],
+          "points": 1,
+          "mondai": 1,
+          "mondaiTitle": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) テストをうける"
+          },
+          "audioUrl": "https://drive.google.com/file/d/1outKmYCTQw23X0wBAf2cYLYHHNhdzA5Z/preview"
+        },
+        {
+          "type": "question",
+          "questionNumber": 5,
+          "questionText": "5番",
+          "questionHtml": "5番",
+          "underlinedText": null,
+          "options": [
+            "1) ちょうさけっかを入力する",
+            "2) サンプルをしてんに送る",
+            "3) かいぎのじゅんびをする",
+            "4) 大野さんに仕事をたのむ"
+          ],
+          "cleanOptions": [
+            "ちょうさけっかを入力する",
+            "サンプルをしてんに送る",
+            "かいぎのじゅんびをする",
+            "大野さんに仕事をたのむ"
+          ],
+          "points": 1,
+          "mondai": 1,
+          "mondaiTitle": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) ちょうさけっかを入力する"
+          },
+          "audioUrl": "https://drive.google.com/file/d/1outKmYCTQw23X0wBAf2cYLYHHNhdzA5Z/preview"
+        },
+        {
+          "type": "question",
+          "questionNumber": 6,
+          "questionText": "6番",
+          "questionHtml": "6番",
+          "underlinedText": null,
+          "options": [
+            "1) たいそう教室にもうしこむ",
+            "2) DＶD を買(か)う",
+            "3) びょういんに行(い)く",
+            "4) スポーツクラブに行く"
+          ],
+          "cleanOptions": [
+            "たいそう教室にもうしこむ",
+            "DＶD を買(か)う",
+            "びょういんに行(い)く",
+            "スポーツクラブに行く"
+          ],
+          "points": 1,
+          "mondai": 1,
+          "mondaiTitle": "問題1: この問題では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) DＶD を買(か)う"
+          },
+          "audioUrl": "https://drive.google.com/file/d/1outKmYCTQw23X0wBAf2cYLYHHNhdzA5Z/preview"
+        },
+        {
+          "type": "section-header",
+          "text": "問題2: この問題では、まず質問を聞いてください。そのあと、問題用紙の選択肢を読んでください。読む時間があります。それから、話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。"
+        },
+        {
+          "type": "audio",
+          "src": "https://drive.google.com/file/d/13LzgJRNEUxCKWWw1BcYNkSSn_vhqZ8uY/preview"
+        },
+        {
+          "type": "question",
+          "questionNumber": 7,
+          "questionText": "1番",
+          "questionHtml": "1番",
+          "underlinedText": null,
+          "options": [
+            "1) 気に入ったのがなかったから",
+            "2) 今すぐ買うひつようがなくなったから",
+            "3) ねだんが高(たか)かったから",
+            "4) おっとといっしょにえらびたかったから"
+          ],
+          "cleanOptions": [
+            "気に入ったのがなかったから",
+            "今すぐ買うひつようがなくなったから",
+            "ねだんが高(たか)かったから",
+            "おっとといっしょにえらびたかったから"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "問題2: この問題では、まず質問を聞いてください。そのあと、問題用紙の選択肢を読んでください。読む時間があります。それから、話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 1,
+            "text": "2) 今すぐ買うひつようがなくなったから"
+          },
+          "audioUrl": "https://drive.google.com/file/d/13LzgJRNEUxCKWWw1BcYNkSSn_vhqZ8uY/preview"
+        },
+        {
+          "type": "question",
+          "questionNumber": 8,
+          "questionText": "2番",
+          "questionHtml": "2番",
+          "underlinedText": null,
+          "options": [
+            "1) 年をとってからの生活のため",
+            "2) 家を買うため",
+            "3) 海外旅行をするため",
+            "4) りゅうがくするため"
+          ],
+          "cleanOptions": [
+            "年をとってからの生活のため",
+            "家を買うため",
+            "海外旅行をするため",
+            "りゅうがくするため"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "問題2: この問題では、まず質問を聞いてください。そのあと、問題用紙の選択肢を読んでください。読む時間があります。それから、話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) りゅうがくするため"
+          },
+          "audioUrl": "https://drive.google.com/file/d/13LzgJRNEUxCKWWw1BcYNkSSn_vhqZ8uY/preview"
+        },
+        {
+          "type": "question",
+          "questionNumber": 9,
+          "questionText": "3番",
+          "questionHtml": "3番",
+          "underlinedText": null,
+          "options": [
+            "1) ペットをびょういんにつれて行くから",
+            "2) 母がけがをしたから",
+            "3) アルバイトに行くから",
+            "4) クラブの話し合いがあるから"
+          ],
+          "cleanOptions": [
+            "ペットをびょういんにつれて行くから",
+            "母がけがをしたから",
+            "アルバイトに行くから",
+            "クラブの話し合いがあるから"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "問題2: この問題では、まず質問を聞いてください。そのあと、問題用紙の選択肢を読んでください。読む時間があります。それから、話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) ペットをびょういんにつれて行くから"
+          },
+          "audioUrl": "https://drive.google.com/file/d/13LzgJRNEUxCKWWw1BcYNkSSn_vhqZ8uY/preview"
+        },
+        {
+          "type": "question",
+          "questionNumber": 10,
+          "questionText": "4番",
+          "questionHtml": "4番",
+          "underlinedText": null,
+          "options": [
+            "1) サラさんの友人に教えてもらう",
+            "2) テレビを見て自分で勉強する",
+            "3) インターネットでレッスンをうける",
+            "4) 外国語の学校に通う"
+          ],
+          "cleanOptions": [
+            "サラさんの友人に教えてもらう",
+            "テレビを見て自分で勉強する",
+            "インターネットでレッスンをうける",
+            "外国語の学校に通う"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "問題2: この問題では、まず質問を聞いてください。そのあと、問題用紙の選択肢を読んでください。読む時間があります。それから、話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 0,
+            "text": "1) サラさんの友人に教えてもらう"
+          },
+          "audioUrl": "https://drive.google.com/file/d/13LzgJRNEUxCKWWw1BcYNkSSn_vhqZ8uY/preview"
+        },
+        {
+          "type": "question",
+          "questionNumber": 11,
+          "questionText": "5番",
+          "questionHtml": "5番",
+          "underlinedText": null,
+          "options": [
+            "1) 朝食のメニューが売れていない",
+            "2) 近所の人があまり来てくれない",
+            "3) こんでいてもせきを空けないきゃくがいる",
+            "4) ことばづかいがよくない店員がいる"
+          ],
+          "cleanOptions": [
+            "朝食のメニューが売れていない",
+            "近所の人があまり来てくれない",
+            "こんでいてもせきを空けないきゃくがいる",
+            "ことばづかいがよくない店員がいる"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "問題2: この問題では、まず質問を聞いてください。そのあと、問題用紙の選択肢を読んでください。読む時間があります。それから、話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 2,
+            "text": "3) こんでいてもせきを空けないきゃくがいる"
+          },
+          "audioUrl": "https://drive.google.com/file/d/13LzgJRNEUxCKWWw1BcYNkSSn_vhqZ8uY/preview"
+        },
+        {
+          "type": "question",
+          "questionNumber": 12,
+          "questionText": "6番",
+          "questionHtml": "6番",
+          "underlinedText": null,
+          "options": [
+            "1) せんぱいにしりょうを見せる",
+            "2) ちょうさをしなおす",
+            "3) しりょうにグラフをくわえる",
+            "4) はっぴょうのながれをかえる"
+          ],
+          "cleanOptions": [
+            "せんぱいにしりょうを見せる",
+            "ちょうさをしなおす",
+            "しりょうにグラフをくわえる",
+            "はっぴょうのながれをかえる"
+          ],
+          "points": 1,
+          "mondai": 2,
+          "mondaiTitle": "問題2: この問題では、まず質問を聞いてください。そのあと、問題用紙の選択肢を読んでください。読む時間があります。それから、話を聞いて、問題用紙の1から4の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 3,
+            "text": "4) はっぴょうのながれをかえる"
+          },
+          "audioUrl": "https://drive.google.com/file/d/13LzgJRNEUxCKWWw1BcYNkSSn_vhqZ8uY/preview"
+        },
+        {
+          "type": "section-header",
+          "text": "問題3: この問題では、問題用紙に何も印刷されていません。この問題は、全体としてどんな内容かを聞く問題です。話の前に質問はありません。まず話を聞いてください。それから、質問と選択肢を聞いて、1から4の中から、最もよいものを一つ選らんでください。"
+        },
+        {
+          "type": "audio",
+          "src": "https://drive.google.com/file/d/1hSqgKlKjPXDfoIQIYeC3TevYd_jXVdIJ/preview"
+        },
+        {
+          "type": "section-header",
+          "text": "問題4: この問題では、絵を 見ながら 質問を 聞いて ください。やじるし（→）の 人は 何と 言いますか。1から3の 中から、いちばん いいものを ひとつ 選んで ください。"
+        },
+        {
+          "type": "audio",
+          "src": "https://drive.google.com/file/d/1jdXM-tLxU257Gqy4zLXE4svCVpFGgygT/preview"
+        },
+        {
+          "type": "image",
+          "src": "https://dethitiengnhat.com/image/201612n31.png"
+        },
+        {
+          "type": "question",
+          "questionNumber": 16,
+          "questionText": "1番",
+          "questionHtml": "1番",
+          "underlinedText": null,
+          "options": [
+            "1. こちらでお目にかかります。 2.こちらをご覧ください。 3.お見せくださいますか。",
+            "2)",
+            "3)",
+            "4)"
+          ],
+          "cleanOptions": [
+            "1. こちらでお目にかかります。 2.こちらをご覧ください。 3.お見せくださいますか。",
+            "",
+            "",
+            ""
+          ],
+          "points": 1,
+          "mondai": 4,
+          "mondaiTitle": "問題4: この問題では、絵を 見ながら 質問を 聞いて ください。やじるし（→）の 人は 何と 言いますか。1から3の 中から、いちばん いいものを ひとつ 選んで ください。",
+          "correctOption": {
+            "index": 0,
+            "text": "1. こちらでお目にかかります。 2.こちらをご覧ください。 3.お見せくださいますか。"
+          },
+          "transcript": "Reference: 観光の案内をしています。建物を見てもらいたいです。何と言いますか。 1. こちらでお目にかかります。 2.こちらをご覧ください。 3.お見せくださいますか。",
+          "explanationHtml": "Reference: 観光の案内をしています。建物を見てもらいたいです。何と言いますか。 1. こちらでお目にかかります。 2.こちらをご覧ください。 3.お見せくださいますか。",
+          "imageUrl": "https://dethitiengnhat.com/image/201612n31.png",
+          "audioUrl": "https://drive.google.com/file/d/1jdXM-tLxU257Gqy4zLXE4svCVpFGgygT/preview"
+        },
+        {
+          "type": "image",
+          "src": "https://dethitiengnhat.com/image/201612n32.png"
+        },
+        {
+          "type": "image",
+          "src": "https://dethitiengnhat.com/image/201612n33.png"
+        },
+        {
+          "type": "image",
+          "src": "https://dethitiengnhat.com/image/201612n34.png"
+        },
+        {
+          "type": "section-header",
+          "text": "問題5: この問題では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選らんでください。"
+        },
+        {
+          "type": "audio",
+          "src": "https://drive.google.com/file/d/1x2PiF6qrYIgxzZqbCM0l-EYCu6p4RLFN/preview"
+        },
+        {
+          "type": "question",
+          "questionNumber": 20,
+          "questionText": "1番",
+          "questionHtml": "1番",
+          "underlinedText": null,
+          "options": [
+            "1. じゃあ、いっしょに見よう。 2. 特に用はないんだけど。 3. さあ、ほかの人に聞いてみて。",
+            "2)",
+            "3)",
+            "4)"
+          ],
+          "cleanOptions": [
+            "1. じゃあ、いっしょに見よう。 2. 特に用はないんだけど。 3. さあ、ほかの人に聞いてみて。",
+            "",
+            "",
+            ""
+          ],
+          "points": 1,
+          "mondai": 5,
+          "mondaiTitle": "問題5: この問題では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 0,
+            "text": "1. じゃあ、いっしょに見よう。 2. 特に用はないんだけど。 3. さあ、ほかの人に聞いてみて。"
+          },
+          "transcript": "Reference: 女:ねえ、ちょっと木村さんに用があるんだけど、見なかった? 1. じゃあ、いっしょに見よう。 2. 特に用はないんだけど。 3. さあ、ほかの人に聞いてみて。",
+          "explanationHtml": "Reference: 女:ねえ、ちょっと木村さんに用があるんだけど、見なかった? 1. じゃあ、いっしょに見よう。 2. 特に用はないんだけど。 3. さあ、ほかの人に聞いてみて。",
+          "imageUrl": "https://dethitiengnhat.com/image/201612n34.png",
+          "audioUrl": "https://drive.google.com/file/d/1x2PiF6qrYIgxzZqbCM0l-EYCu6p4RLFN/preview"
+        },
+        {
+          "type": "question",
+          "questionNumber": 23,
+          "questionText": "4番",
+          "questionHtml": "4番",
+          "underlinedText": null,
+          "options": [
+            "1. あ、はい、どんなことでしょうか。 2. ああ、聞いたことがあります。 3.いえ、質問はありませんが。",
+            "2)",
+            "3)",
+            "4)"
+          ],
+          "cleanOptions": [
+            "1. あ、はい、どんなことでしょうか。 2. ああ、聞いたことがあります。 3.いえ、質問はありませんが。",
+            "",
+            "",
+            ""
+          ],
+          "points": 1,
+          "mondai": 5,
+          "mondaiTitle": "問題5: この問題では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 0,
+            "text": "1. あ、はい、どんなことでしょうか。 2. ああ、聞いたことがあります。 3.いえ、質問はありませんが。"
+          },
+          "transcript": "Reference: 男:李さん、あのう、李さんの研究でお聞きしたいことがあるんですが。 1. あ、はい、どんなことでしょうか。 2. ああ、聞いたことがあります。 3.いえ、質問はありませんが。",
+          "explanationHtml": "Reference: 男:李さん、あのう、李さんの研究でお聞きしたいことがあるんですが。 1. あ、はい、どんなことでしょうか。 2. ああ、聞いたことがあります。 3.いえ、質問はありませんが。",
+          "audioUrl": "https://drive.google.com/file/d/1x2PiF6qrYIgxzZqbCM0l-EYCu6p4RLFN/preview"
+        },
+        {
+          "type": "question",
+          "questionNumber": 24,
+          "questionText": "5番",
+          "questionHtml": "5番",
+          "underlinedText": null,
+          "options": [
+            "3. 何でも喜んでくれるんじゃない?",
+            "2)",
+            "3)",
+            "4)"
+          ],
+          "cleanOptions": [
+            "3. 何でも喜んでくれるんじゃない?",
+            "",
+            "",
+            ""
+          ],
+          "points": 1,
+          "mondai": 5,
+          "mondaiTitle": "問題5: この問題では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 0,
+            "text": "3. 何でも喜んでくれるんじゃない?"
+          },
+          "transcript": "Reference: 男:友達に赤ちゃんが生まれたんだけど、どんなものをあげたらいいと思う? 1.うん、それがいいと思うよ。 2.プレゼントをあげたらどう? 3. 何でも喜んでくれるんじゃない?",
+          "explanationHtml": "Reference: 男:友達に赤ちゃんが生まれたんだけど、どんなものをあげたらいいと思う? 1.うん、それがいいと思うよ。 2.プレゼントをあげたらどう? 3. 何でも喜んでくれるんじゃない?",
+          "audioUrl": "https://drive.google.com/file/d/1x2PiF6qrYIgxzZqbCM0l-EYCu6p4RLFN/preview"
+        },
+        {
+          "type": "question",
+          "questionNumber": 27,
+          "questionText": "8番",
+          "questionHtml": "8番",
+          "underlinedText": null,
+          "options": [
+            "1. 降ったらおかしい? 2. これは降るだろうね。 3. 寒いけど、降らないんだね。",
+            "2)",
+            "3)",
+            "4)"
+          ],
+          "cleanOptions": [
+            "1. 降ったらおかしい? 2. これは降るだろうね。 3. 寒いけど、降らないんだね。",
+            "",
+            "",
+            ""
+          ],
+          "points": 1,
+          "mondai": 5,
+          "mondaiTitle": "問題5: この問題では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 0,
+            "text": "1. 降ったらおかしい? 2. これは降るだろうね。 3. 寒いけど、降らないんだね。"
+          },
+          "transcript": "Reference: 女:寒いね。今夜は雪が降ってもおかしくないね。 1. 降ったらおかしい? 2. これは降るだろうね。 3. 寒いけど、降らないんだね。",
+          "explanationHtml": "Reference: 女:寒いね。今夜は雪が降ってもおかしくないね。 1. 降ったらおかしい? 2. これは降るだろうね。 3. 寒いけど、降らないんだね。",
+          "audioUrl": "https://drive.google.com/file/d/1x2PiF6qrYIgxzZqbCM0l-EYCu6p4RLFN/preview"
+        },
+        {
+          "type": "question",
+          "questionNumber": 28,
+          "questionText": "9番",
+          "questionHtml": "9番",
+          "underlinedText": null,
+          "options": [
+            "1)",
+            "2)",
+            "3)",
+            "4)"
+          ],
+          "cleanOptions": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "points": 1,
+          "mondai": 5,
+          "mondaiTitle": "問題5: この問題では、問題用紙に何も印刷されていません。まず文を聞いてください。それから、それに対する返事を聞いて、1から3の中から、最もよいものを一つ選らんでください。",
+          "correctOption": {
+            "index": 1,
+            "text": "2)"
+          },
+          "audioUrl": "https://drive.google.com/file/d/1x2PiF6qrYIgxzZqbCM0l-EYCu6p4RLFN/preview"
+        }
+      ]
+    }
+  ]
+}

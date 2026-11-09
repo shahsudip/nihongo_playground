@@ -57,8 +57,8 @@ export async function getDethiN3Index() {
  */
 export async function getDethiN3Test(testNumberOrId) {
   const numMatch = String(testNumberOrId).match(/(\d+)$/);
-  const testNumber = numMatch ? Number(numMatch[1]) : Number(testNumberOrId);
-  const testId = `dttn_n3_test_${testNumber}`;
+  const testCode = numMatch ? numMatch[1] : String(testNumberOrId);
+  const testId = `dttn_n3_test_${testCode}`;
 
   const baseUrl = import.meta.env.BASE_URL || '/';
   const cleanBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
@@ -83,7 +83,7 @@ export async function getDethiN3Test(testNumberOrId) {
     }
   } catch (_) {}
 
-  // 3. Legacy Firestore `practice-test/n3/{categoryId}/N3-${testNumber}-${partId}`
+  // 3. Legacy Firestore `practice-test/n3/{categoryId}/N3-${testCode}-${partId}`
   try {
     const partConfigs = [
       { partId: 1, key: 'vocab', categoryId: 'vocabulary-test', title: '言語知識（文字・語彙）' },
@@ -92,7 +92,7 @@ export async function getDethiN3Test(testNumberOrId) {
     ];
     const sections = [];
     for (const p of partConfigs) {
-      const pRef = doc(db, LEGACY_COLLECTION, 'n3', p.categoryId, `N3-${testNumber}-${p.partId}`);
+      const pRef = doc(db, LEGACY_COLLECTION, 'n3', p.categoryId, `N3-${testCode}-${p.partId}`);
       const pSnap = await withTimeout(getDoc(pRef), 1500);
       if (pSnap?.exists && pSnap.exists()) {
         const pData = pSnap.data();
@@ -110,9 +110,9 @@ export async function getDethiN3Test(testNumberOrId) {
       return {
         id: testId,
         testId,
-        testNumber,
+        testNumber: testCode,
         level: 'N3',
-        title: `JLPT N3 Practice Test #${testNumber}`,
+        title: `JLPT N3 Practice Test #${testCode}`,
         sections,
       };
     }
