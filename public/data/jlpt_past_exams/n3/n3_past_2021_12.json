@@ -30,11 +30,12 @@
           "correct": 1,
           "correctOption": "しぜん&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Correct: 自然 is read しぜん (shizen / nature).",
+            "じぜん (事前) means 'in advance / beforehand'.",
+            "しせん (視線) means 'gaze / line of sight'.",
+            "じせん (自選) means 'self-selection'."
+          ],
+          "explanation": "The correct answer is **1 しぜん** (*shizen*).\n\n---\n### Vocabulary Breakdown\n* **Kanji**: 自然 (しぜん / *shizen*) - nature, the natural world.\n  * 自 (し / *shi* or じ / *ji*) - self, spontaneous.\n  * 然 (ぜん / *zen*) - so, like that.\n* **Context**: 「この国の人は<u>自然</u>を大切にしている。」 (\"The people of this country cherish nature.\")\n\n---\n### Why Other Options Don't Fit\n* **2. じぜん**: 事前 (じぜん / *jizen*) means \"prior, in advance\".\n* **3. しせん**: 視線 (しせん / *shisen*) means \"gaze, line of sight\"; 然 is read ぜん.\n* **4. じせん**: 自選 (じせん / *jisen*) means \"self-selection\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q2",
@@ -51,11 +52,12 @@
           "correct": 4,
           "correctOption": "びょう&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "じょう is not a reading for 秒.",
+            "ひょう (表/票) is unvoiced; 秒 is read びょう.",
+            "しょう is unvoiced; 秒 requires the voiced びょう.",
+            "Correct: 秒 is read びょう (byō / second [unit of time])."
+          ],
+          "explanation": "The correct answer is **4 びょう** (*byō*).\n\n---\n### Vocabulary Breakdown\n* **Kanji**: 秒 (びょう / *byō*) - second (unit of time).\n* **Context**: 「あと30<u>秒</u>で電車が出発します。」 (\"The train will depart in 30 seconds.\")\n\n---\n### Why Other Options Don't Fit\n* **1. じょう**: 条 / 状 (じょう); not a reading of 秒.\n* **2. ひょう**: 表 (ひょう / table/chart) or 票 (ひょう / vote); 秒 is read びょう.\n* **3. しょう**: 省 / 章 (しょう); 秒 is read びょう with voiced dakuten."
         },
         {
           "id": "n3_past_2021_12_vocab_q3",
@@ -72,11 +74,12 @@
           "correct": 3,
           "correctOption": "のこり",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "もどり (戻り) means 'return / turning back'.",
+            "おわり (終わり) means 'end / conclusion'.",
+            "Correct: 残り is read のこり (nokori / remainder, remaining time).",
+            "あまり (余り) means 'leftover / surplus'."
+          ],
+          "explanation": "The correct answer is **3 のこり** (*nokori*).\n\n---\n### Vocabulary Breakdown\n* **Kanji**: 残り (のこり / *nokori*) - remainder, remnant, remaining time/amount.\n  * 残 (のこ・る / *noko-ru*) - remain, be left over.\n* **Context**: 「夏休みも<u>残り</u>少なくなってきた。」 (\"The remaining days of summer vacation have become few.\")\n\n---\n### Why Other Options Don't Fit\n* **1. もどり**: 戻り (もどり / *modori*) means \"return, coming back\".\n* **2. おわり**: 終わり (おわり / *owari*) means \"end, conclusion\".\n* **4. あまり**: 余り (あまり / *amari*) means \"surplus, excess, remainder in division\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q4",
@@ -93,11 +96,12 @@
           "correct": 2,
           "correctOption": "ぞうげん&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "ぞうけん incorrectly unvoices げん into けん.",
+            "Correct: 増減 is read ぞうげん (zōgen / increase and decrease).",
+            "じょうけん (条件) means 'conditions / terms'.",
+            "じょうげん (上限) means 'upper limit'."
+          ],
+          "explanation": "The correct answer is **2 ぞうげん** (*zōgen*).\n\n---\n### Vocabulary Breakdown\n* **Kanji**: 増減 (ぞうげん / *zōgen*) - increase and decrease, fluctuation.\n  * 増 (ぞう / *zō*) - increase, add.\n  * 減 (げん / *gen*) - decrease, decline.\n* **Context**: 「このグラフは、人口の<u>増減</u>を表している。」 (\"This graph shows the increase and decrease of the population.\")\n\n---\n### Why Other Options Don't Fit\n* **1. ぞうけん**: 減 is read voiced げん, not voiceless けん.\n* **3. じょうけん**: 条件 (じょうけん / *jōken*) means \"condition, requirement\".\n* **4. じょうげん**: 上限 (じょうげん / *jōgen*) means \"upper limit, ceiling\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q5",
@@ -114,11 +118,12 @@
           "correct": 1,
           "correctOption": "つうち",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Correct: 通知 is read つうち (tsūchi / notice, notification).",
+            "とおち incorrectly applies kun'yomi とお to 通.",
+            "つうし incorrectly reads 知 as し.",
+            "とおし (通し) means 'straight through / succession'."
+          ],
+          "explanation": "The correct answer is **1 つうち** (*tsūchi*).\n\n---\n### Vocabulary Breakdown\n* **Kanji**: 通知 (つうち / *tsūchi*) - notice, notification, report.\n  * 通 (つう / *tsū*) - pass through, communicate.\n  * 知 (ち / *chi*) - know, inform.\n* **Context**: 「面接の結果は、1週間以内に<u>通知</u>します。」 (\"The results of the interview will be notified within one week.\")\n\n---\n### Why Other Options Don't Fit\n* **2. とおち**: 通 is read つう (on'yomi), not kun'yomi とお in this Sino-Japanese compound.\n* **3. つうし**: 知 is read ち, not し.\n* **4. とおし**: 通し (とおし / *tōshi*) means \"running through, succession\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q6",
@@ -135,11 +140,12 @@
           "correct": 1,
           "correctOption": "はえた",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Correct: 生える is read はえる (to sprout, grow); past is はえた.",
+            "せいえた is an invalid reading combination.",
+            "しょうえた is an invalid reading combination.",
+            "うえた (植えた) means 'planted', whereas grass sprouts naturally (生える)."
+          ],
+          "explanation": "The correct answer is **1 はえた** (*haeta*).\n\n---\n### Vocabulary Breakdown\n* **Kanji**: 生える (はえる / *haeru*) - to sprout, grow (of plants, hair, teeth). Past tense: 生えた (はえた / *haeta*).\n* **Context**: 「庭に<u>生えた</u>草を取った。」 (\"I pulled the weeds that had sprouted in the garden.\")\n\n---\n### Why Other Options Don't Fit\n* **2. せいええた**: Erroneous on'yomi string mixing せい with okurigana.\n* **3. しょうえた**: Erroneous on'yomi string mixing しょう.\n* **4. うえた**: 植えた (うえた / *ueta*) means \"planted (deliberately)\". Weeds sprout naturally (生える), rather than being planted."
         },
         {
           "id": "n3_past_2021_12_vocab_q7",
@@ -156,11 +162,12 @@
           "correct": 4,
           "correctOption": "こいしく&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "なつかしく (懐かしい) evokes warm nostalgia, written with 懐.",
+            "うれしく (嬉しい) means 'happy / delighted'.",
+            "ほしく (欲しい) means 'wanted', written with 欲.",
+            "Correct: 恋しい is read こいしい; adverbial form is こいしく (longed for, missed)."
+          ],
+          "explanation": "The correct answer is **4 こいしく** (*koishiku*).\n\n---\n### Vocabulary Breakdown\n* **Kanji**: 恋しい (こいしい / *koishii*) - missed, longed for, yearned for.\n  * 恋 (こい・しい / *koi-shii*) - love, yearn for.\n  * Adverbial form: 恋しく (こいしく / *koishiku*).\n* **Context**: 「外国で一人暮らしをしているので、国の料理が<u>恋しく</u>なる。」 (\"Because I am living alone abroad, I long for the food of my home country.\")\n\n---\n### Why Other Options Don't Fit\n* **1. なつかしく**: 懐かしい (なつかしい / *natsukashii*) evokes nostalgic memories of the past, but the active yearning for food/home uses 恋しい.\n* **2. うれしく**: 嬉しい (うれしい / *ureshii*) means \"glad, happy\".\n* **3. ほしく**: 欲しい (ほしい / *hoshii*) means \"desirable, wanted\"; uses kanji 欲."
         },
         {
           "id": "n3_past_2021_12_vocab_q8",
@@ -177,11 +184,12 @@
           "correct": 4,
           "correctOption": "ゆうそう",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "ほそう (舗装) means 'pavement / road surfacing'.",
+            "ほうそう (放送) means 'broadcasting'.",
+            "ゆそう (輸送) means 'cargo transit / transportation' with kanji 輸.",
+            "Correct: 郵送 is read ゆうそう (yūsō / mailing, sending by post)."
+          ],
+          "explanation": "The correct answer is **4 ゆうそう** (*yūsō*).\n\n---\n### Vocabulary Breakdown\n* **Kanji**: 郵送 (ゆうそう / *yūsō*) - mailing, posting, sending by mail.\n  * 郵 (ゆう / *yū*) - mail, postal.\n  * 送 (そう / *sō*) - send, escort.\n* **Context**: 「これを<u>郵送</u>してください。」 (\"Please send this by mail.\")\n\n---\n### Why Other Options Don't Fit\n* **1. ほそう**: 舗装 (ほそう / *hosō*) means \"pavement, paving\".\n* **2. ほうそう**: 放送 (ほうそう / *hōsō*) means \"broadcasting\".\n* **3. ゆそう**: 輸送 (ゆそう / *yusō*) means \"transportation, transit\" (uses 輸)."
         },
         {
           "id": "n3_past_2021_12_vocab_q9",
@@ -198,11 +206,12 @@
           "correct": 4,
           "correctOption": "娘",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "妹 is read いもうと (younger sister).",
+            "嫁 is read よめ (bride / daughter-in-law).",
+            "婦 is read ふ (woman / matron).",
+            "Correct: 娘 is the correct kanji for むすめ (daughter)."
+          ],
+          "explanation": "The correct answer is **4 娘** (*musume*).\n\n---\n### Vocabulary Breakdown\n* **Word**: 娘 (むすめ / *musume*) - daughter.\n* **Context**: 「あそこにいるのが私の<u>むすめ</u>です。」 (\"The person over there is my daughter.\")\n\n---\n### Why Other Options Don't Fit\n* **1. 妹**: 妹 (いもうと / *imōto*) means \"younger sister\".\n* **2. 嫁**: 嫁 (よめ / *yome*) means \"bride, daughter-in-law\".\n* **3. 婦**: 婦 (ふ / *fu*) means \"woman, wife\" (as in 夫婦 / 主婦)."
         },
         {
           "id": "n3_past_2021_12_vocab_q10",
@@ -219,11 +228,12 @@
           "correct": 1,
           "correctOption": "性格",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Correct: 性格 is the correct kanji for personal character/temperament.",
+            "正格 is an invalid compound.",
+            "性確 is an invalid compound.",
+            "正確 means 'accurate / precise' (different homophone)."
+          ],
+          "explanation": "The correct answer is **1 性格** (*seikaku*).\n\n---\n### Vocabulary Breakdown\n* **Word**: 性格 (せいかく / *seikaku*) - personality, character, disposition.\n  * 性 (せい / *sei*) - nature, gender.\n  * 格 (かく / *kaku*) - status, character.\n* **Context**: 「彼女は頭もいいし、<u>せいかく</u>も明るい。」 (\"She is smart, and her personality is also bright/cheerful.\")\n\n---\n### Why Other Options Don't Fit\n* **2. 正格**: Erroneously uses 正 (correct).\n* **3. 性確**: Erroneously uses 確 (certain).\n* **4. 正確**: 正確 (せいかく / *seikaku*) means \"accurate, precise\" (different homophone)."
         },
         {
           "id": "n3_past_2021_12_vocab_q11",
@@ -240,11 +250,12 @@
           "correct": 2,
           "correctOption": "命令",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "命例 incorrectly uses 例 (example).",
+            "Correct: 命令 is the standard kanji for めいれい (order, command).",
+            "企例 incorrectly uses 企 (plan) and 例 (example).",
+            "企令 is an invalid non-existent compound."
+          ],
+          "explanation": "The correct answer is **2 命令** (*meirei*).\n\n---\n### Vocabulary Breakdown\n* **Word**: 命令 (めいれい / *meirei*) - order, command, mandate.\n  * 命 (めい / *mei*) - life, order, command.\n  * 令 (れい / *rei*) - order, command.\n* **Context**: 「それは誰かの<u>めいれい</u>ですか。」 (\"Is that somebody's command/order?\")\n\n---\n### Why Other Options Don't Fit\n* **1. 命例**: 例 means \"example / custom\"; not a command.\n* **3. 企例**: 企 means \"plan / enterprise\" (as in 企業).\n* **4. 企令**: Invalid combination."
         },
         {
           "id": "n3_past_2021_12_vocab_q12",
@@ -261,11 +272,12 @@
           "correct": 1,
           "correctOption": "預け",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Correct: 預ける is read あずける (to deposit / entrust money to a bank).",
+            "借りる is read かりる (to borrow).",
+            "替える is read かえる (to substitute / exchange).",
+            "貯める is read ためる (to accumulate / save up money)."
+          ],
+          "explanation": "The correct answer is **1 預け** (*azuke*).\n\n---\n### Vocabulary Breakdown\n* **Word**: 預ける (あずける / *azukeru*) - to deposit (money in a bank), entrust, leave in custody.\n  * 預 (あず・ける / *azu-keru*) - deposit, custody.\n* **Context**: 「銀行へお金を<u>あずけ</u>に行った。」 (\"I went to the bank to deposit money.\")\n\n---\n### Why Other Options Don't Fit\n* **2. 借け**: 借りる (かりる / *kariru*) means \"to borrow\".\n* **3. 替け**: 替える (かえる / *kaeru*) means \"to change, replace\".\n* **4. 貯け**: 貯める (ためる / *tameru*) means \"to save up (money)\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q13",
@@ -282,11 +294,12 @@
           "correct": 3,
           "correctOption": "予想",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "予習 is read よしゅう (advance study preparation).",
+            "予測 is read よそく (statistical prediction / forecast).",
+            "Correct: 予想 is read よそう (expectation, personal anticipation).",
+            "予定 is read よてい (schedule, arrangement)."
+          ],
+          "explanation": "The correct answer is **3 予想** (*yosō*).\n\n---\n### Vocabulary Breakdown\n* **Word**: 予想 (よそう / *yosō*) - expectation, prediction, forecast.\n  * 予 (よ / *yo*) - in advance, previous.\n  * 想 (そう / *sō*) - thought, idea, imagine.\n* **Context**: 「テストの点数が<u>よそう</u>より良かった。」 (\"The test score was better than expected.\")\n\n---\n### Why Other Options Don't Fit\n* **1. 予習**: 予習 (よしゅう / *yoshū*) means \"preparation for lessons\".\n* **2. 予測**: 予測 (よそく / *yosoku*) means \"scientific/statistical prediction, estimation\".\n* **4. 予定**: 予定 (よてい / *yotei*) means \"plan, schedule\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q14",
@@ -303,11 +316,12 @@
           "correct": 4,
           "correctOption": "高価",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "高値 is read たかね (high market price / peak trading value).",
+            "高費 is an invalid non-existent word.",
+            "高給 is read こうきゅう (high wage / lucrative salary).",
+            "Correct: 高価 is read こうか (high-priced, costly, valuable)."
+          ],
+          "explanation": "The correct answer is **4 高価** (*kōka*).\n\n---\n### Vocabulary Breakdown\n* **Word**: 高価 (こうか / *kōka*) - expensive, high-priced, valuable.\n  * 高 (こう / *kō*) - high, expensive.\n  * 価 (か / *ka*) - value, price.\n* **Context**: 「これはとても<u>こうか</u>な時計です。」 (\"This is a very high-priced/expensive watch.\")\n\n---\n### Why Other Options Don't Fit\n* **1. 高値**: 高値 (たかね / *takane*) means \"high price in market trading\".\n* **2. 高費**: Invalid non-existent compound.\n* **3. 高給**: 高給 (こうきゅう / *kōkyū*) means \"high salary\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q15",
@@ -324,11 +338,12 @@
           "correct": 2,
           "correctOption": "報告",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "発言 means 'verbal remark / statement' in a discussion.",
+            "Correct: 報告 refers to delivering an official debrief/report after a business trip.",
+            "講演 means a formal public speech/lecture.",
+            "応答 means 'replying / responding' to a transmission or query."
+          ],
+          "explanation": "The correct answer is **2 報告** (*hōkoku*).\n\n---\n### Vocabulary Breakdown\n* **Word**: 報告 (ほうこく / *hōkoku*) - report, briefing.\n  * Collocation: 出張の報告をする (to give a report on a business trip).\n* **Context**: 「会社に帰ったら、今回の出張の（ 報告 ）をしなければならない。」 (\"When I return to the company, I must give a report on this business trip.\")\n\n---\n### Why Other Options Don't Fit\n* **1. 発言**: 発言 (はつげん / *hatsugen*) means \"statement, remark, speech in a meeting\".\n* **3. 講演**: 講演 (こうえん / *kōen*) means \"public lecture, address\".\n* **4. 応答**: 応答 (おうとう / *ōtō*) means \"reply, response, answering\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q16",
@@ -345,11 +360,12 @@
           "correct": 3,
           "correctOption": "あたった&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "なぐった (殴った) means 'punched / struck with fists'.",
+            "うつった (移った/映った) means 'transferred' or 'reflected'.",
+            "Correct: ボールが人に当たる is the intransitive collocation for a ball striking someone.",
+            "うった (打った) is transitive (e.g. ボールを打った / hit a ball with a racket)."
+          ],
+          "explanation": "The correct answer is **3 あたった** (*atatta*).\n\n---\n### Vocabulary Breakdown\n* **Word**: 当たる (あたる / *ataru*) - to hit, strike, collide with. Past tense: あたった (*atatta*).\n  * Collocation: ボールが人に当たる (a ball strikes/hits a person).\n* **Context**: 「試合を見ていた人にテニスボールが（ あたった ）。」 (\"A tennis ball struck a person who was watching the match.\")\n\n---\n### Why Other Options Don't Fit\n* **1. なぐった**: 殴った (なぐった / *nagutta*) means \"punched, struck with fist\" (intentional human violence).\n* **2. うつった**: 移った / 映った (うつった / *utsutta*) means \"moved/infected\" or \"reflected\".\n* **4. うった**: 打った (うった / *utta*) means \"hit/struck (transitive with を)\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q17",
@@ -366,11 +382,12 @@
           "correct": 2,
           "correctOption": "無駄",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "苦手 means 'weak at / unsuited for'.",
+            "Correct: お金の無駄 is the standard fixed expression for 'a waste of money'.",
+            "貧乏 means 'poverty / impoverished state'.",
+            "不用 means 'disused / unneeded' as a noun modifier (不用品), not 'a waste'."
+          ],
+          "explanation": "The correct answer is **2 無駄** (*muda*).\n\n---\n### Vocabulary Breakdown\n* **Word**: 無駄 (むだ / *muda*) - waste, futility, pointlessness.\n  * Collocation: お金の無駄 (おかねのむだ / a waste of money), 時間の無駄 (waste of time).\n* **Context**: 「必要がないものを買うのは、お金の（ 無駄 ）だ。」 (\"Buying things that aren't necessary is a waste of money.\")\n\n---\n### Why Other Options Don't Fit\n* **1. 苦手**: 苦手 (にがて / *nigate*) means \"weak at, poor at\".\n* **3. 貧乏**: 貧乏 (びんぼう / *binbō*) means \"poverty, poor\".\n* **4. 不用**: 不用 (ふよう / *fuyō*) means \"unnecessary, disused\" (e.g. 不用品 / unwanted items); one says お金の無駄, not *お金の不用."
         },
         {
           "id": "n3_past_2021_12_vocab_q18",
@@ -387,11 +404,12 @@
           "correct": 4,
           "correctOption": "なるべく",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "うっかり means 'carelessly / by mistake'.",
+            "たいてい means 'usually / generally'.",
+            "そっと means 'quietly / softly'.",
+            "Correct: なるべく means 'as much as possible / to the extent feasible' (なるべく多く)."
+          ],
+          "explanation": "The correct answer is **4 なるべく** (*narubeku*).\n\n---\n### Vocabulary Breakdown\n* **Word**: なるべく (*narubeku*) - as much as possible, if feasible, as... as one can.\n  * Collocation: なるべく多くの場所 (as many places as possible).\n* **Context**: 「今回は三日間の旅行であまり時間がないが、（ なるべく ）多くの場所に行きたい。」 (\"This time it is a 3-day trip and there isn't much time, but I want to go to as many places as possible.\")\n\n---\n### Why Other Options Don't Fit\n* **1. うっかり**: うっかり (*ukkari*) means \"carelessly, inadvertently\".\n* **2. たいてい**: たいてい (*taitei*) means \"mostly, usually, generally\".\n* **3. そっと**: そっと (*sotto*) means \"quietly, softly, gently\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q19",
@@ -408,11 +426,12 @@
           "correct": 1,
           "correctOption": "翌日",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Correct: 翌日 refers to 'the following day / next day' relative to a past focal event (着いた翌日).",
+            "今後 means 'from now on / in future'.",
+            "明日 means 'tomorrow' relative to the present moment, not a past narrative baseline.",
+            "早速 is an adverb meaning 'promptly / right away'."
+          ],
+          "explanation": "The correct answer is **1 翌日** (*yokujitsu*).\n\n---\n### Vocabulary Breakdown\n* **Word**: 翌日 (よくじつ / *yokujitsu*) - the following day, the next day (narrative viewpoint).\n* **Context**: 「日本に着いた（ 翌日 ）、京都へ行きました。」 (\"The day after I arrived in Japan, I went to Kyoto.\")\n\n---\n### Why Other Options Don't Fit\n* **2. 今後**: 今後 (こんご / *kongo*) means \"from now on, in the future\".\n* **3. 明日**: 明日 (あした / *ashita*) means \"tomorrow relative to right now\", which cannot modify past narrative events (着いた翌日).\n* **4. 早速**: 早速 (さっそく / *sassoku*) is an adverb meaning \"immediately, at once\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q20",
@@ -429,11 +448,12 @@
           "correct": 4,
           "correctOption": "チャレンジ",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "オープン means 'opening / grand opening' of a business.",
+            "ノック means 'knocking' on a door.",
+            "マーク means 'mark / logo / brand'.",
+            "Correct: チャレンジする means 'to challenge oneself / take on a trial' with new activities."
+          ],
+          "explanation": "The correct answer is **4 チャレンジ** (*charenji*).\n\n---\n### Vocabulary Breakdown\n* **Word**: チャレンジする (*charenji suru*) - to take on a challenge, try something new.\n  * Collocation: 新しいことにチャレンジする (to take on new challenges).\n* **Context**: 「来年は何か新しいことに（ チャレンジ ）してみたい。」 (\"Next year, I want to try taking on a challenge with something new.\")\n\n---\n### Why Other Options Don't Fit\n* **1. オープン**: オープン (*ōpun*) means \"open, grand opening (of a shop)\".\n* **2. ノック**: ノック (*nokku*) means \"knocking (on a door)\".\n* **3. マーク**: マーク (*māku*) means \"mark, symbol, tracking\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q21",
@@ -450,11 +470,12 @@
           "correct": 2,
           "correctOption": "土地",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "住所 means a postal 'address', which is not a purchasable physical commodity.",
+            "Correct: 土地 refers to physical plots of land/real estate with measurable market prices.",
+            "近所 means the 'neighborhood / vicinity'.",
+            "番地 is an address lot number."
+          ],
+          "explanation": "The correct answer is **2 土地** (*tochi*).\n\n---\n### Vocabulary Breakdown\n* **Word**: 土地 (とち / *tochi*) - land, plot of land, real estate ground.\n  * Collocation: 土地の値段 (the price of land/real estate).\n* **Context**: 「駅前の（ 土地 ）は、値段が高い。」 (\"The land in front of the station is expensive in price.\")\n\n---\n### Why Other Options Don't Fit\n* **1. 住所**: 住所 (じゅうしょ / *jūsho*) means \"street address, residence\". An address itself has no market price.\n* **3. 近所**: 近所 (きんじょ / *kinjo*) means \"neighborhood\".\n* **4. 番地**: 番地 (ばんち / *banchi*) means \"house number / lot address number\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q22",
@@ -471,11 +492,12 @@
           "correct": 2,
           "correctOption": "このあいだ",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "これから points to the future ('from now on'), conflicting with past 買った.",
+            "Correct: このあいだ means 'the other day / recently', indicating a past purchase.",
+            "ふだん means 'habitually / usually'.",
+            "しばらく means 'for a short while / temporarily'."
+          ],
+          "explanation": "The correct answer is **2 このあいだ** (*kono aida*).\n\n---\n### Vocabulary Breakdown\n* **Word**: この間 / このあいだ (*kono aida*) - the other day, recently, a short while ago.\n* **Context**: 「（ このあいだ ）買った本は、もう全部読みました。」 (\"I have already finished reading all of the book I bought the other day.\")\n\n---\n### Why Other Options Don't Fit\n* **1. これから**: これから (*kore kara*) means \"from now on, in the future\"; clashes with past tense 買った.\n* **3. ふだん**: 普段 (ふだん / *fudan*) means \"usually, normally\"; cannot modify a specific completed purchase.\n* **4. しばらく**: しばらく (*shibaraku*) means \"for a while, for some time\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q23",
@@ -492,11 +514,12 @@
           "correct": 3,
           "correctOption": "ばらばら",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "がらがら describes an empty, uncrowded train or hall.",
+            "どきどき describes a racing, nervous heart.",
+            "Correct: 意見がばらばら is the standard idiom for opinions being divided and lacking unity.",
+            "ずきずき describes a throbbing toothache or headache."
+          ],
+          "explanation": "The correct answer is **3 ばらばら** (*barabara*).\n\n---\n### Vocabulary Breakdown\n* **Word**: ばらばら (*barabara*) - scattered, discordant, disconnected, in pieces.\n  * Collocation: 意見がばらばらだ (opinions are divided / scattered all over the place).\n* **Context**: 「みんなの意見が（ ばらばら ）で、なかなか決まらない。」 (\"Everyone's opinions are completely divided, so we just can't reach a decision.\")\n\n---\n### Why Other Options Don't Fit\n* **1. がらがら**: がらがら (*garagara*) means \"empty, deserted (train/theater)\" or rattling sound.\n* **2. どきどき**: どきどき (*dokidoki*) describes a throbbing/pounding heartbeat.\n* **4. ずきずき**: ずきずき (*zukizuki*) describes throbbing physical pain (headache/toothache)."
         },
         {
           "id": "n3_past_2021_12_vocab_q24",
@@ -513,11 +536,12 @@
           "correct": 4,
           "correctOption": "意志&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "満足 means 'satisfaction / contentment'.",
+            "将来 means 'the future'.",
+            "努力 means 'effort' (collocated as 努力をする, not 強い努力がある).",
+            "Correct: 強い意志がある is the natural Japanese collocation for having 'strong resolve / firm determination'."
+          ],
+          "explanation": "The correct answer is **4 意志** (*ishi*).\n\n---\n### Vocabulary Breakdown\n* **Word**: 意志 (いし / *ishi*) - will, determination, resolve, willpower.\n  * Collocation: 強い意志 (つよいいし / strong willpower/determination).\n* **Context**: 「佐藤さんには、絶対に音楽家になるという強い（ 意志 ）がある。」 (\"Sato-san has a strong will to definitely become a musician.\")\n\n---\n### Why Other Options Don't Fit\n* **1. 満足**: 満足 (まんぞく / *manzoku*) means \"satisfaction, contentment\".\n* **2. 将来**: 将来 (しょうらい / *shōrai*) means \"the future\".\n* **3. 努力**: 努力 (どりょく / *doryoku*) means \"effort, hard work\". One says 努力をする (make effort), but 強い意志がある (has strong will)."
         },
         {
           "id": "n3_past_2021_12_vocab_q25",
@@ -534,11 +558,12 @@
           "correct": 2,
           "correctOption": "おつかれさま&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "おまちどおさま means 'sorry to keep you waiting'.",
+            "Correct: おつかれさまでした is the universal workplace greeting responding to someone leaving for the day (お先に失礼します).",
+            "おかえりなさい welcomes someone back home.",
+            "おかげさまで means 'fortunately / thanks to you' in polite conversation."
+          ],
+          "explanation": "The correct answer is **2 おつかれさま** (*otsukaresama*).\n\n---\n### Vocabulary Breakdown\n* **Word**: お疲れ様 / おつかれさま (*otsukaresama*) - good work, thank you for your hard work.\n* **Context**:\n  山田「仕事が終わりましたので、お先に失礼します。」 (\"My work is finished, so I will take my leave.\")\n  同僚「（ おつかれさま ）でした。」 (\"Good work today / Thank you for your work.\")\n\n---\n### Why Other Options Don't Fit\n* **1. おまちどおさま**: お待ち遠様 (*omachidōsama*) means \"sorry to have kept you waiting\".\n* **3. おかえりなさい**: お帰りなさい (*okaerinasai*) means \"welcome home\", said to someone returning to their home base.\n* **4. おかげさまで**: お陰様で (*okagesamade*) means \"thanks to you / fortunately\", responding to inquiries about one's health."
         },
         {
           "id": "n3_past_2021_12_vocab_q26",
@@ -555,11 +580,12 @@
           "correct": 2,
           "correctOption": "つまらなかった&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "めずらしかった means 'rare / unusual'.",
+            "Correct: つまらなかった (boring / dull) is the exact synonym of たいくつだった.",
+            "おかしかった means 'funny / peculiar'.",
+            "おもしろかった means 'entertaining / interesting', the antonym."
+          ],
+          "explanation": "The correct answer is **2 つまらなかった** (*tsumaranakatta*).\n\n---\n### Vocabulary Breakdown\n* **Word**: 退屈 (たいくつ / *taikutsu*) - boring, dull, tedious.\n* **Context**: 「昨日見た映画は本当に<u>たいくつだった</u>。」 (\"The movie I watched yesterday was really boring.\")\n* **Synonym**: **つまらなかった** (*tsumaranakatta*) - boring, uninteresting.\n\n---\n### Why Other Options Don't Fit\n* **1. めずらしかった**: 珍しかった (めずらしかった / *mezurashikatta*) means \"rare, novel\".\n* **3. おかしかった**: おかしかった (*okashikatta*) means \"funny, strange\".\n* **4. おもしろかった**: 面白かった (おもしろかった / *omoshirokatta*) means \"interesting, fun\" (the antonym of 退屈)."
         },
         {
           "id": "n3_past_2021_12_vocab_q27",
@@ -576,11 +602,12 @@
           "correct": 3,
           "correctOption": "触らないで",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "座らないで means 'do not sit'.",
+            "走らないで means 'do not run'.",
+            "Correct: 触らないで (do not touch) directly paraphrases 手を触れないで.",
+            "泳がないで means 'do not swim'."
+          ],
+          "explanation": "The correct answer is **3 触らないで** (*sawaranaide*).\n\n---\n### Vocabulary Breakdown\n* **Word**: 手を触れないで (てをふれないで / *te o furenaide*) - do not touch with hands.\n  * 触れる (ふれる / *fureru*) = 触る (さわる / *sawaru*).\n* **Context**: 「危険なので絶対に<u>手を触れないで</u>ください。」 (\"Because it is dangerous, please do not touch with your hands under any circumstances.\")\n* **Synonym**: **触らないで** (さわらないで / *sawaranaide*) - do not touch.\n\n---\n### Why Other Options Don't Fit\n* **1. 座らないで**: 座る (すわる / *suwaru*) means \"to sit\".\n* **2. 走らないで**: 走る (はしる / *hashiru*) means \"to run\".\n* **4. 泳がないで**: 泳ぐ (およぐ / *oyogu*) means \"to swim\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q28",
@@ -597,11 +624,12 @@
           "correct": 4,
           "correctOption": "チャンス",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "プレゼント means 'gift / present'.",
+            "アイデア means 'creative idea / concept'.",
+            "パーティー means 'social gathering / party'.",
+            "Correct: チャンス (chance, opportunity) is the loanword synonym of 機会 (きかい)."
+          ],
+          "explanation": "The correct answer is **4 チャンス** (*chansu*).\n\n---\n### Vocabulary Breakdown\n* **Word**: 機会 (きかい / *kikai*) - opportunity, chance.\n* **Context**: 「それはとてもいい<u>きかい</u>ですね。」 (\"That is a very good opportunity, isn't it?\")\n* **Synonym**: **チャンス** (*chansu*) - chance, opportunity.\n\n---\n### Why Other Options Don't Fit\n* **1. プレゼント**: プレゼント (*purezento*) means \"gift, present\".\n* **2. アイデア**: アイデア (*aidea*) means \"idea, concept\".\n* **3. パーティー**: パーティー (*pātī*) means \"party, social gathering\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q29",
@@ -618,11 +646,12 @@
           "correct": 1,
           "correctOption": "大変だった",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Correct: 大変だった (was tough/exhausting) directly captures the fatigue of くたびれた.",
+            "簡単だった means 'was simple / easy'.",
+            "楽しかった means 'was fun / pleasant'.",
+            "長かった means 'was long in time'."
+          ],
+          "explanation": "The correct answer is **1 大変だった** (*taihen datta*).\n\n---\n### Vocabulary Breakdown\n* **Word**: くたびれた (*kutabireta*) - worn out, exhausted, tired out.\n* **Context**: 「今回の仕事は、いつもより<u>くたびれた</u>。」 (\"This time's work was more exhausting than usual.\")\n* **Synonym**: **大変だった** (たいへんだった / *taihen datta*) - tough, grueling, exhausting.\n\n---\n### Why Other Options Don't Fit\n* **2. 簡単だった**: 簡単 (かんたん / *kantan*) means \"easy, simple\" (the opposite of grueling).\n* **3. 楽しかった**: 楽しい (たのしい / *tanoshii*) means \"fun, enjoyable\".\n* **4. 長かった**: 長い (ながい / *nagai*) means \"long in duration\"."
         },
         {
           "id": "n3_past_2021_12_vocab_q30",
@@ -639,11 +668,12 @@
           "correct": 2,
           "correctOption": "とてもよく分かった",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "少し分かった means 'understood only slightly', which is far weaker than 納得.",
+            "Correct: とてもよく分かった (understood very well and was convinced) directly paraphrases 納得した.",
+            "もう一度考えた means 'pondered it once more'.",
+            "何度も考えた means 'thought over it repeatedly'."
+          ],
+          "explanation": "The correct answer is **2 とてもよく分かった** (*totemo yoku wakatta*).\n\n---\n### Vocabulary Breakdown\n* **Word**: 納得した (なっとくした / *nattoku shita*) - was completely convinced, fully understood and accepted.\n* **Context**: 「なぜ私のこたえが違うのか、友達の説明を聞いて<u>なっとくした</u>。」 (\"Hearing my friend's explanation, I was fully convinced why my answer was wrong.\")\n* **Synonym**: **とてもよく分かった** (*totemo yoku wakatta*) - understood very well and was satisfied.\n\n---\n### Why Other Options Don't Fit\n* **1. 少し分かった**: 少し (すこし / a little) minimizes comprehension, whereas 納得 indicates total clarity and acceptance.\n* **3. もう一度考えた**: \"Thought about it once more.\"\n* **4. 何度も考えた**: \"Thought about it many times.\" Realizing and accepting is different from endlessly pondering."
         },
         {
           "id": "n3_past_2021_12_vocab_q31",
@@ -660,11 +690,12 @@
           "correct": 1,
           "correctOption": "あしたは駅前に10時に集合してください。",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Correct: Assembling people at a designated place and time is the classic usage of 集合する.",
+            "Sudden downpours use 雨が集中して降った, not 集合.",
+            "A rich inventory of products uses ワインがそろっている, not 集合している.",
+            "Collecting stamps as a hobby uses 切手を集めること or 収集, not 集合."
+          ],
+          "explanation": "The correct answer is **1 あしたは駅前に10時に集合してください。**\n\n---\n### Word Usage: 集合 (*shūgō*)\n* **Meaning**: Gathering, assembling (of people coming together at a scheduled location and time).\n* **Collocation**: 駅前に集合する (to gather in front of the station), 10時に集合 (assemble at 10 o'clock).\n* **Correct Sentence**: 「あしたは駅前に10時に集合してください。」 (\"Tomorrow, please assemble in front of the station at 10 o'clock.\")\n\n---\n### Why Other Options Don't Fit\n* **2. 短時間に雨が集合してふった。**: Incorrect. Sudden localized heavy rain uses 集中して (しゅうちゅうして / concentrated).\n* **3. この店にはおいしいワインが集合している。**: Incorrect. A rich assortment of goods uses そろっている (assembled/stocked) or 集まっている.\n* **4. 私の趣味は切手を集合することです。**: Incorrect. Collecting stamps uses 集めること (あつめること / collecting) or 収集 (しゅうしゅう)."
         },
         {
           "id": "n3_past_2021_12_vocab_q32",
@@ -681,11 +712,12 @@
           "correct": 3,
           "correctOption": "あの店に行けば、中古のカメラが安く買えますよ。",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Perishable food is 古い, not secondhand (中古).",
+            "Longtime friends are 古くからの友人 or 幼なじみ, not 中古.",
+            "Correct: Pre-owned manufactured goods like cameras are the exact collocation for 中古 (secondhand).",
+            "Experienced senior staff are ベテラン or 先輩, not 中古."
+          ],
+          "explanation": "The correct answer is **3 あの店に行けば、中古のカメラが安く買えますよ。**\n\n---\n### Word Usage: 中古 (*chūko*)\n* **Meaning**: Secondhand, used (merchandise, cars, electronics, books, goods).\n* **Collocation**: 中古のカメラ (a used camera), 中古車 (used car).\n* **Correct Sentence**: 「あの店に行けば、中古のカメラが安く買えますよ。」 (\"If you go to that shop, you can buy secondhand cameras cheaply.\")\n\n---\n### Why Other Options Don't Fit\n* **1. これは中古の卵なので、早く食べたほうがいいですね。**: Incorrect. Perishable food is not secondhand; older eggs are 古い卵 (ふるいたまご).\n* **2. 彼女は、子どものころから仲良くしている中古の友達です。**: Incorrect. Longtime friends are 幼なじみ (childhood friends) or 古くからの友人.\n* **4. ここでアルバイトを始めてから3年なので、私は中古の店員です。**: Incorrect. Senior/experienced workers are ベテラン (veteran) or 先輩 (senior)."
         },
         {
           "id": "n3_past_2021_12_vocab_q33",
@@ -702,11 +734,12 @@
           "correct": 1,
           "correctOption": "マラソンで前の人を追い抜くときに、腕がぶつかってしまった。&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Correct: Surpassing a runner ahead in a race is the primary definition of 追い抜く (overtake).",
+            "Crossing over a mountain uses 山を越えたら, not 追い抜く.",
+            "Reaching/passing an age threshold uses 二十歳を過ぎると, not 追い抜く.",
+            "Passing an hour on the clock uses 12時を過ぎたので, not 追い抜く."
+          ],
+          "explanation": "The correct answer is **1 マラソンで前の人を追い抜くときに、腕がぶつかってしまった。**\n\n---\n### Word Usage: 追い抜く (*oinuku*)\n* **Meaning**: To overtake, pass, pull ahead of (a person or vehicle running/driving ahead).\n  * 追う (pursue) + 抜く (surpass).\n* **Collocation**: 前の走者を追い抜く (to pass the runner in front).\n* **Correct Sentence**: 「マラソンで前の人を追い抜くときに、腕がぶつかってしまった。」 (\"When passing the person in front in the marathon, our arms bumped into each other.\")\n\n---\n### Why Other Options Don't Fit\n* **2. この山を追い抜いたら、向こうに海が見えると思います。**: Incorrect. Crossing over a mountain uses 越えたら (こえたら / crossed over).\n* **3. この国では二十歳を追い抜くと、もう大人だ。**: Incorrect. Passing an age threshold uses 二十歳を過ぎると (すぎると / passed 20).\n* **4. 12時を追い抜いたので、お昼ご飯にしましょう。**: Incorrect. A clock time passing uses 12時を過ぎたので (passed 12 o'clock)."
         },
         {
           "id": "n3_past_2021_12_vocab_q34",
@@ -723,11 +756,12 @@
           "correct": 3,
           "correctOption": "ここにの申込書の書き方の見本があるので、参考にしてください。",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "A person representing an institution is a 代表 (representative), not 見本.",
+            "Statistical population average height is 平均身長, not 見本の身長.",
+            "Correct: A model example for completing documents is the textbook usage of 見本 (sample/specimen).",
+            "Learning fundamentals uses 基礎から or 基本から, not 見本."
+          ],
+          "explanation": "The correct answer is **3 ここにの申込書の書き方の見本があるので、参考にしてください。**\n\n---\n### Word Usage: 見本 (*mihon*)\n* **Meaning**: Sample, specimen, model example (for demonstration, reference, or filling out forms).\n* **Collocation**: 書き方の見本 (sample filled-out form), 見本を見る (look at the sample).\n* **Correct Sentence**: 「ここに申込書の書き方の見本があるので、参考にしてください。」 (\"Here is a sample of how to fill out the application form, so please use it as reference.\")\n\n---\n### Why Other Options Don't Fit\n* **1. 今度のスピーチ大会には、川井さんが学校の見本で出るそうだ。**: Incorrect. A person representing a school is 代表 (だいひょう / representative).\n* **2. 我的兄は、日本人の見本の身長より10センチくらい高い。**: Incorrect. A statistical standard average is 平均 (へいきん / average).\n* **4. ギターを弾くのが初めての人は、見本から教えてもらえます。**: Incorrect. Learning from the fundamentals is 基礎 (きそ / basics) or 基本 (きほん)."
         },
         {
           "id": "n3_past_2021_12_vocab_q35",
@@ -744,11 +778,12 @@
           "correct": 3,
           "correctOption": "体がだるくて起きられない。",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Bland soup flavor uses 味が薄い (light/insipid), not だるい.",
+            "Loose clothing uses スカートが緩くなった or ぶかぶかになった, not だるい.",
+            "Correct: 体がだるい describes physical heaviness and lethargy from exhaustion or fever.",
+            "Relaxing leisurely uses のんびりしたい or ゆっくり休みたい, not だるくしたい."
+          ],
+          "explanation": "The correct answer is **3 体がだるくて起きられない。**\n\n---\n### Word Usage: だるい (*darui*)\n* **Meaning**: Sluggish, languid, heavy, fatigued, listless (physical bodily tiredness/weakness from fever, exhaustion, or illness).\n* **Collocation**: 体がだるい (one's body feels heavy and sluggish), 足がだるい (legs feel heavy).\n* **Correct Sentence**: 「体がだるくて起きられない。」 (\"My body feels so heavy and sluggish that I cannot get out of bed.\")\n\n---\n### Why Other Options Don't Fit\n* **1. このスープは味がだるいから、塩を足したほうがいい。**: Incorrect. Bland soup is 味が薄い (うすい / weak flavor), not だるい.\n* **2. ダイエットをしたら、スカートがだるくなった。**: Incorrect. Loose-fitting clothing is 緩くなった (ゆるくなった / loose) or だぶだぶになった.\n* **4. レポートが終わったら少しだるくしたい。**: Incorrect. Relaxing after work is のんびりしたい or 楽にしたい (relax), not だるい."
         }
       ]
     },
@@ -774,11 +809,12 @@
           "correct": 3,
           "correctOption": "を",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "へ indicates directional movement, not an object of a facial expression.",
+            "が marks the subject, whereas the mother is the subject and the expression is the direct object.",
+            "Correct: 〜顔をする is the fixed idiom taking を to mean 'to wear an expression of [joy/sadness]'.",
+            "の connects two nouns, which cannot precede the verb していた."
+          ],
+          "explanation": "The correct answer is **3 を** (*o*).\n\n---\n### Sentence Breakdown\n* **Japanese**: 母は、留学している兄と久しぶりに電話で話して、とてもうれしそうな顔（ を ）していた。\n* **Romaji**: *Haha wa, ryūgaku shite iru ani to hisashiburi ni denwa de hanashite, totemo ureshisō na kao o shite ita.*\n* **English**: Talking on the phone with my older brother studying abroad for the first time in a while, my mother was wearing a very happy expression.\n\n---\n### Grammar Point: 〜顔をする (Displaying a Facial Expression)\n* **Form**: Adjective / Noun + **顔をする** (て-form: 顔をしている)\n* **Meaning**: \"To make/wear a [happy/sad/troubled] face\", \"to look [emotion]\".\n* **Function**: Idiomatic collocation expressing an outward physical manifestation of emotion on the face (うれしそうな顔をする). The facial expression takes the object particle **を**.\n* **Why it fits**: The mother displays a cheerful countenance: 「うれしそうな顔**をして**いた」.\n\n---\n### Why Other Options Don't Fit\n* **1. へ**: へ indicates physical direction toward a destination, completely unrelated.\n* **2. が**: が marks the grammatical subject, but the subject of the sentence is 母 (mother).\n* **4. の**: の connects nouns; *顔のしていた is ungrammatical."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q2",
@@ -796,11 +832,12 @@
           "correct": 4,
           "correctOption": "ついに",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "ずっと expresses continuous ongoing state ('all along'), not an ultimate completion point.",
+            "今にも means 'at any moment' paired with imminent future conjecture.",
+            "次第に means 'gradually', which describes a slow process rather than the final completion event.",
+            "Correct: ついに means 'finally / at long last', marking the culmination of a long construction period."
+          ],
+          "explanation": "The correct answer is **4 ついに** (*tsuini*).\n\n---\n### Sentence Breakdown\n* **Japanese**: 長い間建設中だったABCビルが、昨日（ ついに ）完成した。\n* **Romaji**: *Nagai aida kensetsuchū datta ABC-biru ga, kinō tsuini kansei shita.*\n* **English**: The ABC Building, which had been under construction for a long time, was finally completed yesterday.\n\n---\n### Grammar Point: ついに (At Last / Finally After Long Process)\n* **Form**: Adverb: **ついに**\n* **Meaning**: \"Finally / at last / in the end\".\n* **Function**: Emphasizes that after an extended period of effort, waiting, or duration (長い間建設中だった), a significant milestone or culmination has ultimately been achieved.\n* **Why it fits**: Perfectly matches the culmination of years of construction work: 「昨日ついに完成した」.\n\n---\n### Why Other Options Don't Fit\n* **1. ずっと**: Means \"continuously / all along\" (e.g. ずっと待っていた). A building cannot \"continuously complete\".\n* **2. 今にも**: Means \"at any moment / on the verge of\" (e.g. 今にも雨が降りそうだ), pairing with conjecture, not completed past facts.\n* **3. 次第に**: Means \"gradually, step by step\" (e.g. 次第に暖かくなる), describing a continuous slope rather than a definitive finished event."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q3",
@@ -818,11 +855,12 @@
           "correct": 2,
           "correctOption": "からなら&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "でなら cannot express starting from a designated time.",
+            "Correct: からなら combines starting point から with conditional なら ('if it's from the afternoon').",
+            "へでも uses directional へ, which cannot attach to afternoon.",
+            "まででも means 'even up until', which reverses the intended timeframe."
+          ],
+          "explanation": "The correct answer is **2 からなら** (*kara nara*).\n\n---\n### Sentence Breakdown\n* **Japanese**:\n  店長「大下さん、急で申し訳ないんですけど、明日出勤することはできますか。」\n  大下「午後（ からなら ）行けますが、それでも大丈夫ですか。」\n  店長「ありがとうございます。お願いします。」\n* **Romaji**: *Tenchō: \"Ōshita-san, kyū de mōshiwakenai n desukedo, ashita shukkin suru koto wa dekimasu ka.\" Ōshita: \"Gogo kara nara ikemasu ga, sore demo daijōbu desu ka.\" Tenchō: \"Arigatō gozaimasu. Onegai shimasu.\"*\n* **English**:\n  Store Manager: \"Oshita-san, I am sorry for the short notice, but are you able to come in to work tomorrow?\"\n  Oshita: \"If it is from the afternoon onwards, I can go; would that still be okay?\"\n  Store Manager: \"Thank you very much. Please come.\"\n\n---\n### Grammar Point: から (Starting Point) + なら (Conditional Topic)\n* **Form**: Time Noun + **から** (from) + **なら** (if it is)\n* **Meaning**: \"If it is from [time] onwards\".\n* **Function**: Combines the starting time marker **から** with the topic/conditional marker **なら** to present an acceptable counter-condition for coming to work.\n* **Why it fits**: Oshita cannot come in the morning, but *if it starts from the afternoon*, he is available: 「午後からなら行けますが」.\n\n---\n### Why Other Options Don't Fit\n* **1. でなら**: で marks time limit or scope (e.g. 1時間で), which does not mean starting from the afternoon.\n* **3. へでも**: へ indicates destination (e.g. 午後へ makes no sense).\n* **4. まででも**: まで means \"up until\". Oshita is offering to work from the afternoon onwards, not working only until noon."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q4",
@@ -840,11 +878,12 @@
           "correct": 4,
           "correctOption": "において",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "に対して means 'towards / against / in contrast to', not location.",
+            "によって means 'by means of / due to', indicating agency or cause.",
+            "について means 'regarding / about', introducing a topic.",
+            "Correct: 〜において is the formal written marker meaning 'at / in (a venue)'."
+          ],
+          "explanation": "The correct answer is **4 において** (*ni oite*).\n\n---\n### Sentence Breakdown\n* **Japanese**: 音楽会は、あすの1時からさくら広場（ において ）開かれます。\n* **Romaji**: *Ongakkai wa, asu no ichiji kara Sakura-hiroba ni oite hirakaremasu.*\n* **English**: The concert will be held at Sakura Plaza from 1 o'clock tomorrow.\n\n---\n### Grammar Point: 〜において (Formal Location Marker = で)\n* **Form**: Noun (Location / Event) + **において**\n* **Meaning**: \"At / in [place/event]\".\n* **Function**: The formal, public, written equivalent of the particle **で** used in announcements and official notices.\n* **Why it fits**: Announces the official venue where the concert will take place: 「さくら広場において開かれます」.\n\n---\n### Why Other Options Don't Fit\n* **1. に対して**: Means \"toward / in contrast to / regarding [a target]\".\n* **2. によって**: Means \"by means of / due to / depending on\".\n* **3. について**: Means \"about / concerning [a subject/topic]\"."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q5",
@@ -862,11 +901,12 @@
           "correct": 1,
           "correctOption": "たびに&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Correct: 会うたびに expresses recurrent repetition: 'every single time I see him, he has grown bigger'.",
+            "うちに means 'while / before', expressing taking advantage of a temporary window.",
+            "間に expresses a duration during an event, not a recurring iteration.",
+            "前に means 'before meeting', which is chronologically impossible for observing growth."
+          ],
+          "explanation": "The correct answer is **1 たびに** (*tabi ni*).\n\n---\n### Sentence Breakdown\n* **Japanese**: 去年姉に子供が生まれた。2、3か月に1回ぐらい会っているが、会う（ たびに ）大きくなっていて、びっくりする。\n* **Romaji**: *Kyonen ane ni kodomo ga umareta. Ni-sankagetsu ni ikkai gurai atte iru ga, au tabi ni ōkiku natte ite, bikkuri suru.*\n* **English**: My older sister had a baby last year. I see him about once every 2 or 3 months, and every single time I meet him, he has gotten bigger, which surprises me.\n\n---\n### Grammar Point: Verb [Dictionary form] + たびに (Every Time / Whenever)\n* **Form**: Verb [Dictionary form] + **たびに**\n* **Meaning**: \"Every time [verb] / each time [X] happens, [Y] always occurs\".\n* **Function**: Emphasizes that on every repeated occasion of seeing the infant, the speaker observes that the child has noticeably grown.\n* **Why it fits**: Pairs the repetitive visits (会う) with the recurring observation of rapid infant growth (大きくなっていて、びっくりする).\n\n---\n### Why Other Options Don't Fit\n* **2. うちに**: Means \"while in the state of / before change occurs\" (e.g. 明るいうちに / while still light).\n* **3. 間に**: Means \"during the interval while [action is ongoing]\" (e.g. 会っている間に).\n* **4. 前に**: Means \"before meeting\" (会う前に). You cannot see that a baby has grown before you even meet him."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q6",
@@ -884,11 +924,12 @@
           "correct": 2,
           "correctOption": "使い",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "使う is the dictionary form; 〜続ける strictly requires the masu-stem.",
+            "Correct: 使い is the masu-stem of 使う, forming the compound verb 使い続ける (continue using).",
+            "使おう is the volitional form, which cannot attach to 続ける.",
+            "使った is the past form, which cannot attach to 続ける."
+          ],
+          "explanation": "The correct answer is **2 使い** (*tsukai*).\n\n---\n### Sentence Breakdown\n* **Japanese**: 私は10年前から同じかばんを（ 使い ）続けている。\n* **Romaji**: *Watashi wa jūnen mae kara onaji kaban o tsukai tsuzukete iru.*\n* **English**: I have been continuously using the same bag for 10 years.\n\n---\n### Grammar Point: Verb Stem + 続ける (Continuously Doing Without Interruption)\n* **Form**: Verb [ます-stem] + **続ける** (つづける)\n  * 使う -> 使い + 続けている = **使い続けている**\n* **Meaning**: \"To continue doing [verb] continuously\".\n* **Function**: Forms a compound verb indicating uninterrupted, ongoing practice over an extended duration (10年前から).\n* **Why it fits**: Attaching to 続けている requires the pre-masu stem **使い**.\n\n---\n### Why Other Options Don't Fit\n* **1. 使う**: Dictionary form. 続ける does not attach to dictionary forms (*使う続ける is ungrammatical).\n* **3. 使おう**: Volitional form. Cannot attach to 続ける.\n* **4. 使った**: Past ta-form. Cannot attach to 続ける."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q7",
@@ -906,11 +947,12 @@
           "correct": 4,
           "correctOption": "走ってくるのが",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "走っていくことが uses wrong directional vector (いく) and wrong nominalizer (こと with 見える).",
+            "走ってくることが incorrectly uses こと; direct sensory perception (見えた) strictly requires の.",
+            "走っていくのが uses いく (away), which contradicts わたしの方に (towards me).",
+            "Correct: 走ってくるのが combines approach direction (くる) with perceptual nominalizer の before 見えました."
+          ],
+          "explanation": "The correct answer is **4 走ってくるのが** (*hashitte kuru no ga*).\n\n---\n### Sentence Breakdown\n* **Japanese**: 田中さんがわたしの方に（ 走ってくるのが ）見えました。\n* **Romaji**: *Tanaka-san ga watashi no hō ni hashitte kuru no ga miemashita.*\n* **English**: I saw Tanaka-san running towards me.\n\n---\n### Grammar Point: Directional Vector (〜てくる) + Perception Nominalizer (のが見える)\n* **Form**: Verb [て-form] + **くる** (moving toward speaker) + **の** (nominalizer) + **が** + 見える / 聞こえる\n* **Function**:\n  1. **走ってくる**: Tanaka is moving *toward* the speaker (わたしの方に), requiring the deictic motion verb **くる**, not いく.\n  2. **〜のが見えました**: Verbs of direct sensory perception (見える, 聞こえる) require the nominalizer **の**, never こと.\n* **Why it fits**: Combines the correct approach vector (走ってくる) with sensory perception nominalization (走ってくる**のが見えました**).\n\n---\n### Why Other Options Don't Fit\n* **1. 走っていくことが**: いく moves away from the speaker (clashing with わたしの方に), and こと cannot pair with direct sensory perception 見える.\n* **2. 走ってくることが**: Verbs of direct sensory perception (見えた) reject こと in favor of the immediate perceptual nominalizer の.\n* **3. 走っていくのが**: いく implies running *away* from the speaker, contradicting わたしの方に (\"towards me\")."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q8",
@@ -928,11 +970,12 @@
           "correct": 1,
           "correctOption": "出られるよう",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Correct: 出られるようになりたい combines the potential form with 〜ようになる ('become able to play in matches').",
+            "出られるために is ungrammatical before になりたい (ために does not connect to なる like よう).",
+            "出させるように uses the causative ('make someone participate'), which makes no sense for John himself.",
+            "出させるために uses causative and cannot connect to なたい."
+          ],
+          "explanation": "The correct answer is **1 出られるよう** (*derareru yō*).\n\n---\n### Sentence Breakdown\n* **Japanese**:\n  山田「ジョンくんは、毎日バスケットボールの練習をしているんですか。」\n  ジョン「はい。早く試合に（ 出られるよう ）なりたいんです。」\n* **Romaji**: *Yamada: \"Jon-kun wa, mainichi basukettobōru no renshū o shite iru n desu ka.\" Jon: \"Hai. Hayaku shiai ni derareru yō naritai n desu.\"*\n* **English**:\n  Yamada: \"John, do you practice basketball every day?\"\n  John: \"Yes. I want to become able to participate in matches soon.\"\n\n---\n### Grammar Point: Potential Verb + ようになる (Gradual Acquisition of Ability)\n* **Form**: Verb [Potential form] + **ようになる** (desiderative: ようになりたい)\n  * 出る -> 出られる (can participate) -> **出られるようになりたい**\n* **Meaning**: \"To become able to [verb]\".\n* **Function**: Expresses a transition in personal capability from inability to ability achieved through daily practice.\n* **Why it fits**: John practices hard every day so that he can reach the level where he can play in official games: 「試合に出られるようになりたい」.\n\n---\n### Why Other Options Don't Fit\n* **2. 出られるために**: ために expresses purpose or cause; *出られるためになりたい is completely ungrammatical with なる.\n* **3. 出させるように**: 出させる is causative (\"make/let someone participate\"). John wants to play himself, not make someone else play.\n* **4. 出させるために**: Causative + ために; grammatically incompatible with なたい."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q9",
@@ -950,11 +993,12 @@
           "correct": 2,
           "correctOption": "降っていない&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "降っている means 'is raining', contradicting the contrastive が.",
+            "Correct: 今はもう降っていない means 'right now it is no longer raining', expressing the cessation of precipitation.",
+            "降る expresses future occurrence or general habit, not current weather status.",
+            "降らない is simple non-past negative ('it doesn't/won't rain'), whereas ongoing weather requires 〜ていない."
+          ],
+          "explanation": "The correct answer is **2 降っていない** (*futte inai*).\n\n---\n### Sentence Breakdown\n* **Japanese**: 今朝はすごい雨だったが、今はもう（ 降っていない ）。\n* **Romaji**: *Kesa wa sugoi ame datta ga, ima wa mō futte inai.*\n* **English**: It was raining heavily this morning, but right now it is no longer raining.\n\n---\n### Grammar Point: 今はもう + ていない (Ceased Continuing State)\n* **Form**: **今はもう** + Verb [て-form] + **いない**\n* **Meaning**: \"Right now, it is no longer [verb-ing]\".\n* **Function**:\n  * **降っている**: Continuous state of precipitation currently falling.\n  * **今はもう〜ていない**: Contrasts the past torrential downpour this morning with the cessation of rain at the present moment.\n* **Why it fits**: Rain is an ongoing meteorological phenomenon; its absence right now is expressed as **降っていない** (\"not currently raining\").\n\n---\n### Why Other Options Don't Fit\n* **1. 降っている**: \"It is currently raining.\" Contradicts the adversative connector が (\"It rained heavily this morning, *but*...\").\n* **3. 降る**: Dictionary non-past form, expressing future or general truth rather than current immediate state.\n* **4. 降らない**: Simple negative non-past (\"will not rain\"). Does not describe the ongoing cessation of current rain (which requires 〜ていない)."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q10",
@@ -972,11 +1016,12 @@
           "correct": 2,
           "correctOption": "落ちそうです",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "落ちるそうです is hearsay ('I heard it will fall'), which does not fit an immediate visual warning.",
+            "Correct: 落ちそうです (ます-stem + そう) expresses imminent danger: 'looks like it's about to drop!'.",
+            "落とすそうです is hearsay with the transitive verb.",
+            "落としそうです uses the transitive verb 落とす, but the intransitive subject is 携帯電話が."
+          ],
+          "explanation": "The correct answer is **2 落ちそうです** (*ochisō desu*).\n\n---\n### Sentence Breakdown\n* **Japanese**:\n  西川「あ、森さん、携帯電話がポケットから（ 落ちそうです ）よ。」\n  森「本当だ。ありがとうございます。」\n* **Romaji**: *Nishikawa: \"A, Mori-san, keitai denwa ga poketto kara ochisō desu yo.\" Mori: \"Hontō da. Arigatō gozaimasu.\"*\n* **English**:\n  Nishikawa: \"Ah, Mori-san, your mobile phone looks like it's about to fall out of your pocket!\"\n  Mori: \"You're right! Thank you very much.\"\n\n---\n### Grammar Point: Verb Stem + そうだ (Imminent Visual Danger)\n* **Form**: Verb [ます-stem] + **そうです**\n  * 落ちる -> 落ち + そうです = **落ちそうです**\n* **Meaning**: \"Looks about to [fall]\", \"on the verge of falling\".\n* **Function**: Expresses immediate visual observation that an event is on the very brink of occurring if no action is taken.\n* **Why it fits**: The phone is slipping out of the pocket and about to drop; Nishikawa warns Mori before it actually falls.\n\n---\n### Why Other Options Don't Fit\n* **1. 落ちるそうです**: Plain form + そうです expresses hearsay (\"I heard that it falls\"). One does not report hearsay about a phone slipping in front of one's eyes.\n* **3. 落とすそうです**: Transitive hearsay (\"I heard that [someone] drops it\").\n* **4. 落としそうです**: Transitive 落とす + そうだ implies an agent deliberately dropping it, but the subject is the phone itself (携帯電話が), requiring intransitive 落ちる."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q11",
@@ -994,11 +1039,12 @@
           "correct": 4,
           "correctOption": "みたいだ&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "でしょう is a tag question seeking confirmation rather than introducing newly heard news.",
+            "といい expresses a hopeful wish ('it would be nice if...'), conflicting with B's surprise 'Really?'.",
+            "ほうがいい gives advice/recommendation ('you should...'), which makes no sense for a commercial shop.",
+            "Correct: 〜みたいだ expresses conjecture/rumor ('it seems that a new shop will open')."
+          ],
+          "explanation": "The correct answer is **4 みたいだ** (*mitai da*).\n\n---\n### Sentence Breakdown\n* **Japanese**:\n  A「今度駅前に新しいケーキ屋さんができる（ みたいだ ）ね。」\n  B「本当ですか。楽しみですね。」\n* **Romaji**: *A: \"Kondo ekimae ni atarashii kēki-ya-san ga dekiru mitai da ne.\" B: \"Hontō desu ka. Tanoshimi desu ne.\"*\n* **English**:\n  A: \"It seems that a new cake shop is opening in front of the station soon, isn't it?\"\n  B: \"Really? That sounds exciting!\"\n\n---\n### Grammar Point: 〜みたいだ (Conjecture Based on External Information)\n* **Form**: Plain form + **みたいだ** (ね)\n* **Meaning**: \"It seems that...\", \"I heard/gathered that...\".\n* **Function**: Expresses tentative conjecture or hearsay acquired through indirect cues or neighborhood rumors.\n* **Why it fits**: A is bringing up news/rumors heard about a new shop, prompting B to react with surprise (「本当ですか」).\n\n---\n### Why Other Options Don't Fit\n* **1. でしょう**: Expresses polite confirmation to the listener, but *できるでしょうね is stylistically mismatched and does not express personal indirect discovery.\n* **2. といい**: といいね expresses wishing/hoping (\"It would be nice if one opened, wouldn't it?\"), but B's response \"本当ですか\" shows A was stating news, not making a wish.\n* **3. ほうがいい**: Expresses advice/recommendation (\"It would be better to open a shop\"). One does not advise third-party shops."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q12",
@@ -1016,11 +1062,12 @@
           "correct": 1,
           "correctOption": "やりすぎるのもよくない",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Correct: やりすぎるのもよくない warns that 'overdoing it (overwatering) is also bad', perfectly matching root-rot risk.",
+            "やらなくていいのがいい is grammatically garbled and contradicts watering when dry.",
+            "やってやるのもよくない uses the condescending benefactive 〜てやる.",
+            "やらないでおくのがいい advises never watering, which would kill the plant."
+          ],
+          "explanation": "The correct answer is **1 やりすぎるのもよくない** (*yarisugiru no mo yokunai*).\n\n---\n### Sentence Breakdown\n* **Japanese**: この花は、土が乾いたら水をやる必要があるが、（ やりすぎるのもよくない ）。水が多いと根が腐ってしまう。\n* **Romaji**: *Kono hana wa, tsuchi ga kwaitara mizu o yaru hitsuyō ga aru ga, yarisugiru no mo yokunai. Mizu ga ōi to ne ga kusatte shimau.*\n* **English**: This flower needs to be watered when the soil dries out, but overwatering it is also bad. If there is too much water, the roots will rot.\n\n---\n### Grammar Point: Verb Stem + すぎる (Excess) + のもよくない (Negative Evaluation)\n* **Form**: Verb [ます-stem] + **すぎる** + のもよくない\n  * 水をやる -> やりすぎる (to overwater)\n* **Function**: States that doing an action to excess produces adverse consequences, supported by the explanation: 「水が多いと根が腐ってしまう」 (too much water rots the roots).\n* **Why it fits**: Balanced care instruction: water when dry, but overwatering is harmful.\n\n---\n### Why Other Options Don't Fit\n* **2. やらなくていいのがいい**: \"Not having to water is good.\" Grammatically fractured and contradicts the instruction to water when dry.\n* **3. やってやるのもよくない**: やってやる carries a condescending nuance (\"doing a favor for an inferior\"), which is unnatural for flower care.\n* **4. やらないでおくのがいい**: \"Leaving it unwatered is good.\" Directly contradicts the premise that one must water it when the soil is dry."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q13",
@@ -1038,11 +1085,12 @@
           "correct": 4,
           "correctOption": "変えていただけないでしょうか&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "変えましょうか offers the patient's help to the receptionist, reversing roles.",
+            "変えたほうがいいですか asks for advice ('should I change it?'), not making a concrete rescheduling request.",
+            "変えていただきましょう is not an interrogative request formula.",
+            "Correct: 〜ていただけないでしょうか is the standard polite request formula asking staff to reschedule."
+          ],
+          "explanation": "The correct answer is **4 変えていただけないでしょうか** (*kaete itadakenai deshō ka*).\n\n---\n### Sentence Breakdown\n* **Japanese**:\n  受付の人「はい。山田病院でございます。」\n  患者「すみません。10時に予約した田中と申しますが、11時に（ 変えていただけないでしょうか ）。」\n* **Romaji**: *Uketsuke no hito: \"Hai. Yamada-byōin de gozaimasu.\" Kanja: \"Sumimasen. Jūji ni yoyaku shita Tanaka to mōshimasu ga, jūichiji ni kaete itadakenai deshō ka.\"*\n* **English**:\n  Receptionist: \"Hello, this is Yamada Hospital.\"\n  Patient: \"Excuse me. My name is Tanaka, and I have a reservation at 10 o'clock. Could I possibly have you change it to 11 o'clock?\"\n\n---\n### Grammar Point: 〜ていただけないでしょうか (Polite Reverential Request)\n* **Form**: Verb [て-form] + **いただけないでしょうか**\n* **Meaning**: \"Could you possibly be so kind as to [verb] for me?\"\n* **Function**: A formal, polite request asking the interlocutor (hospital reception) to perform a service (changing the appointment time: 時間を変える).\n* **Why it fits**: The patient is asking the receptionist to reschedule the appointment, requiring the humble request formula **〜ていただけないでしょうか**.\n\n---\n### Why Other Options Don't Fit\n* **1. 変えましょうか**: \"Shall I change it for you?\" Offers the patient's own service to the hospital receptionist, which is backwards.\n* **2. 変えたほうがいいですか**: \"Had I better change it?\" Asks for medical advice rather than requesting a time change.\n* **3. 変えていただきましょう**: \"Let us have [someone] change it.\" Declarative volitional, not a polite request to the listener."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q14",
@@ -1060,11 +1108,12 @@
           "correct": 3,
           "correctOption": "でも&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "大人 belongs in slot 1 as the extreme baseline comparison.",
+            "ような belongs in slot 4 connecting the clause to 問題.",
+            "Correct: でも occupies slot 2 (★) giving an extreme example: '[大人] [★ でも] [解けない] [ような]'.",
+            "解けない belongs in slot 3 as the potential negative verb."
+          ],
+          "explanation": "The correct answer is **3 でも** (*demo*).\n\n---\n### Sentence Breakdown & Rearrangement\n* **Complete Sentence**:\n  この小学生は **大人でも解けないような** 問題を解いてしまう。\n* **Order**: 1 (大人) → **★ 3 (でも)** → 4 (解けない) → 2 (ような)\n* **Romaji**: *Kono shōgakkōsei wa otona demo tokenai yō na mondai o toite shimau.*\n* **English**: This elementary school student solves problems that even adults cannot solve.\n\n---\n### Construction Steps\n1. The student is contrasted with adults: **[1] 大人** (\"adults\").\n2. Followed by the emphatic particle of extreme example: **[3] でも** (\"even adults\").\n3. Followed by the negative potential verb: **[4] 解けない** (\"cannot solve\").\n4. The clause modifies 「問題」 using the exemplifying connector: **[2] ような** (\"such [problems] that...\").\n5. Full sequence: この小学生は **[1 大人]** **[★ 3 でも]** **[4 解けない]** **[2 ような]** 問題を...\n6. The star **★** is in the **2nd position**, occupied by **3 でも**.\n\n---\n### Why Other Options Don't Fit\n* **1. 大人**: Belongs in slot 1 directly before でも.\n* **2. ような**: Belongs in slot 4 modifying 問題 (解けないような問題).\n* **4. 解けない**: Belongs in slot 3 preceding ような."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q15",
@@ -1082,11 +1131,12 @@
           "correct": 1,
           "correctOption": "楽しいこと",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Correct: 楽しいこと occupies slot 3 (★): '[旅行していた] [2週間は] [★ 楽しいこと] [ばかり] だった'.",
+            "ばかり belongs in slot 4 expressing exclusivity ('nothing but fun').",
+            "旅行していた belongs in slot 1 modifying the two-week duration.",
+            "2 週間は belongs in slot 2 marking the temporal subject."
+          ],
+          "explanation": "The correct answer is **1 楽しいこと** (*tanoshii koto*).\n\n---\n### Sentence Breakdown & Rearrangement\n* **Complete Sentence**:\n  去年、初めて一人で海外を旅行した。行く前は心配なこともあったが、 **旅行していた 2 週間は楽しいことばかり** だった。\n* **Order**: 3 (旅行していた) → 4 (2 週間は) → **★ 1 (楽しいこと)** → 2 (ばかり)\n* **Romaji**: *Kyonen, hajimete hitori de kaigai o ryokō shita. Iku mae wa shinpai na koto mo atta ga, ryokō shite ita nishūkan wa tanoshii koto bakari datta.*\n* **English**: Last year, I traveled overseas alone for the first time. Before going, there were worries too, but the two weeks I was traveling were nothing but fun things.\n\n---\n### Construction Steps\n1. The introductory relative clause describes the duration: **[3] 旅行していた** (\"during which I was traveling\").\n2. Modifies the time span: **[4] 2 週間は** (\"the two weeks\").\n3. Followed by the experiential content noun phrase: **[1] 楽しいこと** (\"fun things\").\n4. Followed by the exclusive limiter: **[2] ばかり** (\"nothing but...\"), connecting to だった.\n5. Full sequence: 行く前は心配なこともあったが、 **[3 旅行していた]** **[4 2 週間は]** **[★ 1 楽しいこと]** **[2 ばかり]** だった。\n6. The star **★** is in the **3rd position**, occupied by **1 楽しいこと**.\n\n---\n### Why Other Options Don't Fit\n* **2. ばかり**: Belongs in slot 4 concluding the clause before だった.\n* **3. 旅行していた**: Belongs in slot 1 modifying 2週間は.\n* **4. 2 週間は**: Belongs in slot 2 as the topical time duration."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q16",
@@ -1104,11 +1154,12 @@
           "correct": 3,
           "correctOption": "ほど",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "いた belongs in slot 2 completing 思っていた.",
+            "込んで belongs in slot 4 before the negative predicate.",
+            "Correct: ほど occupies slot 3 (★) indicating degree comparison: '[思って] [いた] [★ ほど] [込んで]'.",
+            "思って belongs in slot 1 as the te-form."
+          ],
+          "explanation": "The correct answer is **3 ほど** (*hodo*).\n\n---\n### Sentence Breakdown & Rearrangement\n* **Complete Sentence**:\n  B「いや、 **思っていたほど込んでは** いませんでしたよ。」\n* **Order**: 4 (思って) → 1 (いた) → **★ 3 (ほど)** → 2 (込んで)\n* **Romaji**: *B: \"Iya, omotte ita hodo konde wa imasen deshita yo.\"*\n* **English**: B: \"No, it wasn't as crowded as I had thought.\"\n\n---\n### Construction Steps\n1. What the speaker had expected is introduced by **[4] 思って** **[1] いた** (\"was thinking / had thought\").\n2. Followed by the standard of degree: **[3] ほど** (\"to the extent that I had thought\").\n3. Connects with the condition of crowding: **[2] 込んで** (plus はいませんでした = \"was not crowded to that extent\").\n4. Full sequence: いや、 **[4 思って]** **[1 いた]** **[★ 3 ほど]** **[2 込んで]** （は）いませんでしたよ。\n5. The star **★** is in the **3rd position**, occupied by **3 ほど**.\n\n---\n### Why Other Options Don't Fit\n* **1. いた**: Belongs in slot 2 forming the past continuous 思っていた.\n* **2. 込んで**: Belongs in slot 4 right before いませんでした (込んではいませんでした).\n* **4. 思って**: Belongs in slot 1 beginning the clause."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q17",
@@ -1126,11 +1177,12 @@
           "correct": 4,
           "correctOption": "してくれていたことが",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "どれだけ belongs in slot 4 modifying how difficult it was.",
+            "しながら belongs in slot 1 following 仕事を.",
+            "食事の準備や選択を belongs in slot 2 as the object of chores.",
+            "Correct: してくれていたことが occupies slot 3 (★) nominalizing the parents' loving sacrifices."
+          ],
+          "explanation": "The correct answer is **4 してくれていたことが** (*shite kurete ita koto ga*).\n\n---\n### Sentence Breakdown & Rearrangement\n* **Complete Sentence**:\n  一人暮らしを始めて、両親が毎日仕事を **しながら食事の準備や洗濯をしてくれていたことがどれだけ** 大変なことだったか、よくわかった。\n* **Order**: 2 (しながら) → 3 (食事の準備や選択を) → **★ 4 (してくれていたことが)** → 1 (どれだけ)\n* **Romaji**: *Hitorigurashi o hajimete, ryōshin ga mainichi shigoto o shinagara shokuji no junbi ya sentaku o shite kurete ita koto ga dore dake taihen na koto datta ka, yoku wakatta.*\n* **English**: Starting to live alone, I realized very well just how hard it was that my parents prepared meals and did laundry for me while working every day.\n\n---\n### Construction Steps\n1. 「仕事を」 links with simultaneous action: **[2] しながら** (\"while working\").\n2. Next is the additional household chores: **[3] 食事の準備や選択（洗濯）を** (\"meal prep and laundry\").\n3. Followed by the benefactive deed nominalized as the subject: **[4] してくれていたことが** (\"that they did for me...\").\n4. Preceding the degree clause: **[1] どれだけ** (\"how very / to what extent\"), connecting to 大変なことだったか.\n5. Full sequence: 両親が毎日仕事を **[2 しながら]** **[3 食事の準備や洗濯を]** **[★ 4 してくれていたことが]** **[1 どれだけ]** 大変なことだったか...\n6. The star **★** is in the **3rd position**, occupied by **4 してくれていたことが**.\n\n---\n### Why Other Options Don't Fit\n* **1. どれだけ**: Belongs in slot 4 modifying 大変なことだったか.\n* **2. しながら**: Belongs in slot 1 following 仕事を.\n* **3. 食事の準備や選択を**: Belongs in slot 2 listing the domestic chores."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q18",
@@ -1148,11 +1200,12 @@
           "correct": 3,
           "correctOption": "熱が下がって&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "なって belongs in slot 2 after あしたに.",
+            "いたら belongs in slot 4 as the conditional ending before いいですよ.",
+            "Correct: 熱が下がって occupies slot 3 (★): '[あしたに] [なって] [★ 熱が下がって] [いたら]'.",
+            "あしたに belongs in slot 1 setting the day."
+          ],
+          "explanation": "The correct answer is **3 熱が下がって** (*netsu ga sagatte*).\n\n---\n### Sentence Breakdown & Rearrangement\n* **Complete Sentence**:\n  医者「 **あしたになって熱が下がっていたら** いいですよ。」\n* **Order**: 4 (あしたに) → 1 (なって) → **★ 3 (熱が下がって)** → 2 (いたら)\n* **Romaji**: *Isha: \"Ashita ni natte netsu ga sagatte itara ii desu yo.\"*\n* **English**: Doctor: \"If tomorrow comes and your fever has gone down, you may take a bath.\"\n\n---\n### Construction Steps\n1. The temporal boundary is set by **[4] あしたに** (\"to tomorrow\").\n2. Followed by the change verb: **[1] なって** (\"when it becomes tomorrow\").\n3. Followed by the medical condition: **[3] 熱が下がって** (\"fever dropping\").\n4. Completed by the conditional state: **[2] いたら** (\"if it has remained down... [it's okay to bathe]\").\n5. Full sequence: **[4 あしたに]** **[1 なって]** **[★ 3 熱が下がって]** **[2 いたら]** （入っても）いいですよ。\n6. The star **★** is in the **3rd position**, occupied by **3 熱が下がって**.\n\n---\n### Why Other Options Don't Fit\n* **1. なって**: Belongs in slot 2 forming あしたになって.\n* **2. いたら**: Belongs in slot 4 right before いいですよ (熱が下がっていたらいいですよ).\n* **4. あしたに**: Belongs in slot 1 introducing the timeframe."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q19",
@@ -1170,11 +1223,12 @@
           "correct": 3,
           "correctOption": "でも&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "だから indicates logical consequence ('therefore'), which does not fit changing seasons.",
+            "つまり means 'in other words / in short', which does not introduce a new contrasting season.",
+            "Correct: でも (however/but) signals the contrasting shift from happy spring days to the dreary rainy season.",
+            "そのうえ means 'furthermore / on top of that', which adds points in the same direction."
+          ],
+          "explanation": "The correct answer is **3 でも** (*demo*).\n\n---\n### Question & Context Breakdown\n* **Preceding Context**: 「花見をしたり、買い物をしたり、大好きなテニスをしたりして、楽しく過ごしていました。」 (\"I was spending time happily doing flower viewing, shopping, and my favorite tennis.\")\n* **Follow-up Sentence**: 「（ 54 でも ）、6月になると、梅雨で雨の日が多くなりました。雨の日は、傘を持って歩くのがめんどうくさいし、テニスもできません。私は雨の日は嫌だと思っていました。」\n* **Romaji**: *Demo, rokugatsu ni naru to, tsuyu de ame no hi ga ōku narimashita.*\n* **English**: However, when June arrived, rainy days increased due to the rainy season. On rainy days, walking around carrying an umbrella is bothersome, and I can't play tennis. I hated rainy days.\n\n---\n### Grammar & Discourse Function: でも (Adversative Shift)\n* **Function**: Marks the sharp contrast between the pleasant, fun lifestyle of April/May and the grim annoyance of the rainy season starting in June.\n* **Why it fits**: **でも** (\"however / but\") provides the natural discourse transition from pleasant spring pastimes to rainy season discontent.\n\n---\n### Why Other Options Don't Fit\n* **1. だから**: Causal connective (\"therefore / for that reason\"). The coming of the rainy season is not caused by the author having fun in April.\n* **2. つまり**: Summarizing/restatement connective (\"in other words / that is to say\").\n* **4. そのうえ**: Cumulative addition (\"furthermore / in addition\"). The rainy season contrasts with, rather than adds to, the spring enjoyment."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q20",
@@ -1192,11 +1246,12 @@
           "correct": 4,
           "correctOption": "友達",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "その友達 implies a friend already mentioned, but this is the first introduction of the friend in the essay.",
+            "こういう友達 means 'this kind of friend', which is completely unnatural here.",
+            "どちらかの友達 means 'either friend', but no duo was mentioned.",
+            "Correct: 友達 (plain noun) correctly introduces a new character for the first time in the narrative."
+          ],
+          "explanation": "The correct answer is **4 友達** (*tomodachi*).\n\n---\n### Question & Context Breakdown\n* **Sentence**: 「そんなとき、（ 55 友達 ）が傘をプレゼントしてくれました。」\n* **Romaji**: *Sonna toki, tomodachi ga kasa o purezento shite kuremashita.*\n* **English**: Just at that time, a friend gave me an umbrella as a gift.\n\n---\n### Discourse Function: Indefinite First Mention (友達)\n* **Function**: Introducing a new character into the narrative.\n* **Why it fits**: Up to this point in the essay, no specific friend has been mentioned yet. In Japanese discourse, a person introduced for the first time takes the plain indefinite noun **友達** (\"a friend\"), rather than demonstrative pronouns. Later in the text, once established, she is referred to as 「友達がくれた傘」.\n\n---\n### Why Other Options Don't Fit\n* **1. その友達**: \"That friend.\" Requires that a specific friend was already introduced in the preceding lines, which is not the case.\n* **2. こういう友達**: \"This kind of friend.\" Evaluative/descriptive, unnatural for a narrative introduction.\n* **3. どちらかの友達**: \"One of the two friends.\" There has been no mention of two friends."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q21",
@@ -1214,11 +1269,12 @@
           "correct": 2,
           "correctOption": "かいてあったのです",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "かいてあったそうです is hearsay ('I heard it was drawn'), but the author directly observed the painting herself.",
+            "Correct: かいてあったのです combines resultant state with explanatory revelation ('a picture was painted on the inside!').",
+            "かいてあったはずです is speculative deduction, inappropriate for immediate personal visual observation.",
+            "かいてあったおかげです means 'thanks to it being drawn', which leaves the main clause hanging ungrammatically."
+          ],
+          "explanation": "The correct answer is **2 かいてあったのです** (*kaite atta no desu*).\n\n---\n### Question & Context Breakdown\n* **Sentence**: 「ところが、傘を開くと内側は全く違っていました。友達がくれた傘は内側に美しい桜の絵が（ 56 かいてあったのです ）。傘をさすと、まるで桜の木の下にいるようでした。」\n* **Romaji**: *Tokoroga, kasa o hiraku to uchigawa wa mattaku chigatte imashita. Tomodachi ga kureta kasa wa uchigawa ni utsukushii sakura no e ga kaite atta no desu.*\n* **English**: However, when I opened the umbrella, the inside was completely different. On the inside of the umbrella my friend gave me, a beautiful picture of cherry blossoms was painted! When I put up the umbrella, it was just as if I were under a cherry tree.\n\n---\n### Grammar Point: 〜てあった + のです (Resultant State + Explanatory Discovery)\n* **Form**: Verb [て-form] + あった + **のです** / **んだ**\n* **Function**:\n  1. **書いてあった**: Resultant state of an intentional artwork created on the surface (桜の絵が描いてあった).\n  2. **〜のです**: Explanatory focus revealing the surprising discovery that solved the mystery of the plain black exterior.\n* **Why it fits**: The author opened the umbrella and revealed the breathtaking hidden feature to the reader: 桜の絵が書いてあったのです.\n\n---\n### Why Other Options Don't Fit\n* **1. かいてあったそうです**: Hearsay (\"I was told that it was painted\"). The author saw the painting with her own eyes.\n* **3. かいてあったはずです**: Deduction (\"It must have been painted\"). Unnatural for direct personal visual discovery.\n* **4. かいてあったおかげです**: \"Thanks to it being painted.\" Syntactically broken predicate ending for this clause."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q22",
@@ -1236,11 +1292,12 @@
           "correct": 1,
           "correctOption": "思うこともあります&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Correct: 思うこともあります expresses an occasional state of mind: 'there are even times when I think I wish it would rain'.",
+            "思ったらいいです gives advice/recommendation to the reader.",
+            "思うことができません means 'cannot think', which contradicts having that very feeling.",
+            "思わなくなりました means 'stopped thinking so', which contradicts the preceding quote '雨が降ってほしいなあ'."
+          ],
+          "explanation": "The correct answer is **1 思うこともあります** (*omou koto mo arimasu*).\n\n---\n### Question & Context Breakdown\n* **Sentence**: 「今は、この傘があるので雨の日が嫌ではありません。晴れの日が続いたときに、雨が降ってほしいなあと（ 57 思うこともあります ）。傘だけで気持ちがこんなに変わることに驚きました。」\n* **Romaji**: *Ima wa, kono kasa ga aru node ame no hi ga iya dewa arimasen. Hare no hi ga tsuzuita toki ni, ame ga futte hoshii nā to omou koto mo arimasu.*\n* **English**: Now, because I have this umbrella, I don't dislike rainy days. When sunny days continue, there are even times when I think, \"I kind of want it to rain.\" I was amazed that just an umbrella could change my feelings so much.\n\n---\n### Grammar Point: Verb [Dictionary form] + ことがある / こともある (Occasional Occurrence)\n* **Form**: Verb [Plain form] + **こともある**\n* **Meaning**: \"There are also times when [I think...]\", \"sometimes [I even think...]\".\n* **Function**: The additive particle **も** emphasizes the dramatic reversal in her attitude toward rain: she used to hate rain, but now she *even occasionally wishes for rain* so she can open her umbrella.\n* **Why it fits**: Expresses the occasional surprising desire for rain when sunny spells last too long: 「雨が降ってほしいなあと**思うこともあります**」.\n\n---\n### Why Other Options Don't Fit\n* **2. 思ったらいいです**: \"You should think so\" (giving advice to the reader).\n* **3. 思うことができません**: \"I cannot think.\" Potential negative, contradicting her new appreciation.\n* **4. 思わなくなりました**: \"I stopped thinking so.\" Clashes with the quotative thought content (she now *does* think she wants rain)."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q23",
@@ -1258,11 +1315,12 @@
           "correct": 3,
           "correctOption": "大会当日の朝の説明会に行けない人は応募できない。&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Incorrect: Not any high school student can apply unconditionally.",
+            "Incorrect: Volunteer tasks are on the day of the race itself, not the day before.",
+            "Correct: Attending the morning briefing on race day is mandatory, so those who cannot attend cannot apply.",
+            "Incorrect: Not everyone who applies is guaranteed a spot."
+          ],
+          "explanation": "The correct answer is **3 大会当日の朝の説明会に行けない人は応募できない。**\n\n---\n### Core Question\n第３回山川市マラソン大会のボランティア募集について、合っているものはどれか。\n(Regarding the volunteer recruitment for the 3rd Yamakawa City Marathon, which statement is correct?)\n\n---\n### Evidence & Text Justification\n* **Direct Evidence**:\n  > 「大会当日の朝、7時 30 分から 8 時まで説明会を行います。この説明会への参加が必須となりますので、参加できない方は応募をご遠慮ください。」\n  *(On the morning of the event, a briefing will be held from 7:30 to 8:00 AM. Attendance at this briefing is mandatory, so those who cannot attend are kindly requested to refrain from applying.)*\n* **Analysis**:\n  The notice explicitly stipulates that attending the briefing on the morning of the marathon is compulsory; anyone unable to attend the morning briefing is disqualified from applying. This directly matches **Option 3**.\n\n---\n### Why Other Options Don't Fit\n* **1. 山川市に住んでいる高校生ならだれでも応募できる。**: Contradiction. High school students may apply only with parental consent, or age restrictions apply; it is not open to \"anyone without conditions\".\n* **2. 大会の前日にボランティアの仕事がある。**: The volunteer activities and briefing take place strictly on the day of the event (大会当日), not the previous day.\n* **4. 応募した人は全員ボランティアに参加できる。**: If applicants exceed slots, screening/lottery occurs; participation is not guaranteed to all."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q24",
@@ -1280,11 +1338,12 @@
           "correct": 2,
           "correctOption": "道を歩きながら、たばこを吸ってはいけない。&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Incorrect: Carrying a personal ashtray does not permit smoking while walking in parks.",
+            "Correct: The regulation explicitly prohibits smoking while walking on roads (歩行中喫煙禁止).",
+            "Incorrect: Sitting down does not allow smoking outside of designated areas.",
+            "Incorrect: Disposing of cigarette butts in regular roadside trash cans is not what the rule prescribes."
+          ],
+          "explanation": "The correct answer is **2 道を歩きながら、たばこを吸ってはいけない。**\n\n---\n### Core Question\n朝日市の新しい規則について、合っているものはどれか。\n(Regarding Asahi City's new municipal regulations, which statement is correct?)\n\n---\n### Evidence & Text Justification\n* **Direct Evidence**:\n  > 「道路や公園など、公共の場所での歩行中の喫煙を禁止します。たばこを吸う場合は、必ず指定された喫煙場所をご利用ください。」\n  *(Smoking while walking in public places, such as roads and parks, is prohibited. When smoking, please be sure to use designated smoking areas.)*\n* **Analysis**:\n  The new regulation expressly forbids smoking while walking along streets and public paths (歩行中の喫煙を禁止 / 道を歩きながらたばこを吸ってはいけない). This matches **Option 2**.\n\n---\n### Why Other Options Don't Fit\n* **1. 公園でたばこを吸うときは、灰皿を持ち歩かなければならない。**: Walking smoking is entirely banned in parks; carrying a portable ashtray does not permit smoking while walking.\n* **3. 指定された喫煙場所以外でも、座って吸えばよい。**: False. Smoking is restricted strictly to designated zones, regardless of whether one sits down.\n* **4. たばこのごみは、道のごみ箱に捨てなければならない。**: Littering cigarette butts is prohibited; they must be disposed of in designated ashtrays."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q25",
@@ -1302,11 +1361,12 @@
           "correct": 4,
           "correctOption": "鈴木電気の新製品以外のパンフレットと説明書、価格表を送った。&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Incorrect: Not all products were sent; the new product materials were excluded.",
+            "Incorrect: Only the new product materials were sent is factually backwards.",
+            "Incorrect: Tanaka Electric is the client company, not the sender producing the goods.",
+            "Correct: Yamamoto sent materials for existing products, excluding the upcoming new product which will be sent later."
+          ],
+          "explanation": "The correct answer is **4 鈴木電気の新製品以外のパンフレットと説明書、価格表を送った。**\n\n---\n### Core Question\n山本さんは青山さんに何を送ったか。\n(What did Yamamoto-san send to Aoyama-san?)\n\n---\n### Evidence & Text Justification\n* **Direct Evidence**:\n  > 「ご依頼いただきました弊社製品のパンフレット、取扱説明書、ならびに価格表を同封いたしましたので、ご査収ください。なお、来月発売予定の新製品に関する資料につきましては、準備が整い次第、追ってお送りいたします。」\n  *(We have enclosed the pamphlets, instruction manuals, and price list for our company's products as requested; please examine them. Please note that materials concerning our new product scheduled for release next month will be sent separately as soon as preparations are complete.)*\n* **Analysis**:\n  Yamamoto sent the pamphlets, manuals, and price list for existing products, but explicitly stated that materials for the *new product* are not yet ready and will be sent later. Therefore, he sent materials *excluding* the new product. This matches **Option 4**.\n\n---\n### Why Other Options Don't Fit\n* **1. 鈴木電気のすべての製品のパンフレットと説明書、価格表を送った。**: \"All products\" is false because the upcoming new product was excluded.\n* **2. 鈴木電気の新製品のパンフレットと説明書、価格表だけを送った。**: Direct contradiction. The new product materials were not sent yet.\n* **3. 田中電気の新製品のパンフレットと説明書、価格表を送った。**: Tanaka Electric is the client receiving the letter, not the manufacturer of the products."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q26",
@@ -1324,11 +1384,12 @@
           "correct": 2,
           "correctOption": "近所の店に断られたとき",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Incorrect: When initially staining the garment, the author planned to go to a cleaner rather than giving up.",
+            "Correct: The author almost gave up when the neighborhood dry cleaner refused the garment, claiming the stain was permanent.",
+            "Incorrect: Searching on the internet was the proactive step taken to overcome giving up.",
+            "Incorrect: Taking it to the new specialist shop resulted in the stain being successfully removed."
+          ],
+          "explanation": "The correct answer is **2 近所の店に断られたとき**.\n\n---\n### Core Question\n「私」が服の汚れを落とすのを諦めそうになったのはいつか。\n(When was the author on the verge of giving up on removing the stain from the clothes?)\n\n---\n### Evidence & Text Justification\n* **Direct Evidence**:\n  > 「先日、私は白い服をインクで汚してしまった。近所のクリーニング店に持っていったら、この汚れは落とせないと断られてしまった。お気に入りの服だったので、もう着られないのかと、そのときはあきらめそうになった。しかし、インターネットで評判の店を探して頼んでみたら、きれいに落としてもらえた。」\n  *(The other day, I stained my white clothes with ink. When I took it to a neighborhood dry cleaner, I was refused and told that this stain could not be removed. Because it was my favorite piece of clothing, thinking that I could never wear it again, at that time I almost gave up. However, looking up a well-reputed shop on the internet and asking them, they removed it completely.)*\n* **Analysis**:\n  The moment the author almost gave up was when the local dry cleaner inspected the garment and refused the job, stating the ink stain was impossible to remove. This directly matches **Option 2**.\n\n---\n### Why Other Options Don't Fit\n* **1. インクで服を汚したとき**: When staining it, the author immediately thought of taking it to a cleaner, not giving up.\n* **3. インターネットで店を探したとき**: Looking online was an action taken to *avoid* giving up and find a specialist.\n* **4. 新しい店に服を持っていったとき**: The new shop successfully cleaned it, bringing great relief."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q27",
@@ -1346,11 +1407,12 @@
           "correct": 3,
           "correctOption": "腕を骨折したから",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Incorrect: Declining appetite was a symptom that developed after breaking her arm.",
+            "Incorrect: Weight loss was a consequence, not the root cause.",
+            "Correct: The root cause of the mother losing her vitality was falling and fracturing her arm (腕を骨折した).",
+            "Incorrect: The fracture healed, but fear of falling kept her confined indoors."
+          ],
+          "explanation": "The correct answer is **3 腕を骨折したから**.\n\n---\n### Core Question\n母が元気をなくした原因は何か。\n(What was the cause of the mother losing her spirits?)\n\n---\n### Evidence & Text Justification\n* **Direct Evidence**:\n  > 「実は、母は半年前に転んで腕を骨折し、それ以来すっかり元気をなくしてしまった。家の中に閉じこもるようになり、食欲も落ち、体重も減ってしまったのだ。」\n  *(In fact, half a year ago my mother fell and fractured her arm, and since then she completely lost her spirits. She began secluding herself at home, her appetite declined, and she lost weight.)*\n* **Analysis**:\n  The initial event and direct cause that triggered the mother's decline in physical health and psychological vitality was falling and fracturing her arm (腕を骨折したから). This directly matches **Option 3**.\n\n---\n### Why Other Options Don't Fit\n* **1. 食欲が落ちたから**: Loss of appetite was a secondary symptom resulting from the broken arm, not the primary cause.\n* **2. 体重が減ったから**: Weight loss was a consequence of staying home and eating poorly.\n* **4. けがが治らないから**: The text states the bone healed, but she remained inactive and fearful of moving."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q28",
@@ -1368,11 +1430,12 @@
           "correct": 2,
           "correctOption": "若い人たちがいるところで運動したり、仲間と頑張ったりできたから",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Incorrect: Personalized training was not the distinct social factor contrasting with the hospital.",
+            "Correct: Being in a lively venue with young people and encouraging fellow gym peers restored her vitality.",
+            "Incorrect: Fast results within one month are not the core reason cited.",
+            "Incorrect: The elderly mother did not perform the exact same high-intensity exercises as young members."
+          ],
+          "explanation": "The correct answer is **2 若い人たちがいるところで運動したり、仲間と頑張ったりできたから**.\n\n---\n### Core Question\n母が病院ではなく、スポーツクラブで元気になれたのはなぜか。\n(Why was the mother able to regain her vitality at the sports club rather than at the hospital?)\n\n---\n### Evidence & Text Justification\n* **Direct Evidence**:\n  > 「病院のリハビリは高齢者ばかりで『病人』という気分になってしまうが、スポーツクラブには若い人たちや活気のある人がたくさんいる。母は同年代の仲間とおしゃべりしながら励まし合って運動し、若いインストラクターに褒められることで、前向きな気持ちを取り戻したのだ。」\n  *(Hospital rehab had only elderly people, making her feel like a \"sick patient\", but at the sports club there were many young and lively people. By exercising while encouraging one another and chatting with peers, and being praised by young instructors, my mother regained a positive mindset.)*\n* **Analysis**:\n  The vibrant atmosphere of exercising alongside younger people and encouraging peers gave her social energy and confidence, unlike the gloomy patient atmosphere of a hospital. This matches **Option 2**.\n\n---\n### Why Other Options Don't Fit\n* **1. 無理をせずにできるトレーニングを自分用に作ってもらったから**: Customized training helped, but the emotional revival came from the lively social environment and peers.\n* **3. たった1か月で効果が出るようなトレーニングを考えてもらったから**: Rapid one-month miracles are not the reason highlighted.\n* **4. 元気な人と仲間になったり、若い人たちと同じ運動をしたりしたから**: The 85-year-old mother did *not* do the exact same strenuous workouts as young athletes."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q29",
@@ -1390,11 +1453,12 @@
           "correct": 4,
           "correctOption": "生きる力を引き出してくれる。",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Incorrect: Self-worth existential realization is not the author's phrasing.",
+            "Incorrect: The text explicitly states that its value far exceeds merely resolving lack of exercise.",
+            "Incorrect: Devising medical treatments for injuries belongs to clinics.",
+            "Correct: The author states that sports clubs draw out people's motivation and vital energy to live (生きる力を引き出す)."
+          ],
+          "explanation": "The correct answer is **4 生きる力を引き出してくれる。**\n\n---\n### Core Question\nこの文章を書いた人は、スポーツクラブにはどんな特別な価値があると考えているか。\n(What special value does the author believe a sports club possesses?)\n\n---\n### Evidence & Text Justification\n* **Direct Evidence**:\n  > 「スポーツクラブは単に体を鍛えたり運動不足を解消したりするだけの場所ではない。人とつながり、前を向いて生きようとする意欲、すなわち『生きる力』を引き出してくれる特別な場所なのだと、母の姿を見て実感した。」\n  *(A sports club is not merely a place for training the body or relieving lack of exercise. Seeing my mother, I realized that it is a special place that connects people and draws out the motivation to look forward and live—namely, the \"power to live\" (生きる力).)*\n* **Analysis**:\n  The author explicitly defines the extraordinary value of a sports club as drawing out people's inner vitality and will to live (生きる力を引き出してくれる). This matches **Option 4**.\n\n---\n### Why Other Options Don't Fit\n* **1. 自分は生きる価値のある人間だと気づかせてくれる。**: Phrased around personal philosophical self-worth, which shifts the author's focus on vital energy.\n* **2. 運動不足にならないようにしてくれる。**: The text explicitly says it is *far more* than just resolving lack of exercise.\n* **3. けがを早く治す方法を考えてくれる。**: Treating injuries is the medical job of hospitals, not the club's special value."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q30",
@@ -1412,11 +1476,12 @@
           "correct": 3,
           "correctOption": "安い値段がうれしくて買いたくなるから",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Incorrect: People with messy rooms usually lack storage space, not have plenty of it.",
+            "Incorrect: Feeling guilty about leaving a shop empty-handed is not mentioned.",
+            "Correct: People open their wallets because they are seduced by cheap discount prices and want to buy.",
+            "Incorrect: The text states they buy thoughtlessly without verifying whether it is genuinely needed."
+          ],
+          "explanation": "The correct answer is **3 安い値段がうれしくて買いたくなるから**.\n\n---\n### Core Question\n①「財布を開く」とあるが、どうしてか。\n(The text states \"people open their wallets\", but why do they do so?)\n\n---\n### Evidence & Text Justification\n* **Direct Evidence**:\n  > 「『セール』や『割引』の看板を見つけると、喜んで、つい財布を開いてしまうのだ。『安いから今買っておかないと損だ』『安く手に入って得をした』という満足感を得るために、本当に必要かどうかを考えずに買ってしまう。」\n  *(When they spot signs saying \"Sale\" or \"Discount\", they become delighted and inadvertently open their wallets. To obtain the satisfaction of \"It's cheap so it's a loss if I don't buy now\" or \"I got a good deal\", they buy without thinking about whether they really need it.)*\n* **Analysis**:\n  People open their wallets because they are thrilled by discounted, bargain prices and desire the psychological gratification of getting a cheap bargain. This matches **Option 3**.\n\n---\n### Why Other Options Don't Fit\n* **1. まだ部屋に物を入れる場所があるから**: In fact, their rooms are already overflowing with clutter and lack storage space.\n* **2. 何も買わずに店を出るのは悪いと思うから**: Guilt towards store owners is never mentioned as the motive.\n* **4. 自分にきっと必要な物に違いないと思うから**: The text explicitly states they buy *without* considering whether it is truly needed."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q31",
@@ -1434,11 +1499,12 @@
           "correct": 3,
           "correctOption": "必要かどうか、同じような物がないか、しまう場所があるかを、よく考える。&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Incorrect: Having space does not excuse buying duplicates of things you already own.",
+            "Incorrect: Buying on impulse without thinking is the very habit the author warns against.",
+            "Correct: The advice instructs reflecting on whether it is necessary, whether duplicates exist, and whether storage space is available.",
+            "Incorrect: Evaluating whether the price is 'truly cheap' is not one of the author's 3 reflection rules."
+          ],
+          "explanation": "The correct answer is **3 必要かどうか、同じような物がないか、しまう場所があるかを、よく考える。**\n\n---\n### Core Question\n買い物についての②「アドバイス」の内容に合っているものはどれか。\n(Which choice matches the advice given regarding shopping?)\n\n---\n### Evidence & Text Justification\n* **Direct Evidence**:\n  > 「物を買う前に、3 つのことを自分に問いかけてほしい。まず『本当に今必要な物か』、次に『家に似たような物やすでに同じ役割を果たす物がないか』、そして最後に『それを持ち帰った後、しまう場所がきちんとあるか』である。この 3 点をしっかり考えるだけで、無駄な買い物は劇的に減る。」\n  *(Before buying something, I want you to ask yourself three things. First, \"Is this something truly needed right now?\"; second, \"Are there not similar things or items fulfilling the same role at home already?\"; and finally, \"Once I bring it home, is there a proper place to store it?\" Just by thinking carefully about these three points, wasteful purchases will drop dramatically.)*\n* **Analysis**:\n  The consultant's advice consists of carefully verifying three specific criteria before buying: (1) necessity, (2) whether similar items already exist at home, and (3) whether designated storage space is available. This matches **Option 3**.\n\n---\n### Why Other Options Don't Fit\n* **1. しまえる場所があったら、同じような物を持っていても、買えばいい。**: Contradiction. If you already own similar items, you should not buy.\n* **2. 必要な物だと思ったら、いろいろなことを考えずに、すく買えばいい。**: The entire advice urges stopping to think carefully, not buying impulsively.\n* **4. 似た物を持っていないか、しまう場所があるか、本当に安いかを、よく考える。**: The third criterion is *necessity* (必要かどうか), not evaluating whether the item is \"truly cheap\"."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q32",
@@ -1456,11 +1522,12 @@
           "correct": 4,
           "correctOption": "部屋の整理に悩んでいる人は、気をつけよう",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Incorrect: Urging people to 'enjoy shopping' defeats the whole advice of reigning in purchases.",
+            "Incorrect: Looking closely at prices is what traps people into buying junk just because it's cheap.",
+            "Incorrect: Rushing to buy bargains is the bad behavior highlighted.",
+            "Correct: 'Those troubled by room organization should watch out!' perfectly caps the cautionary advice."
+          ],
+          "explanation": "The correct answer is **4 部屋の整理に悩んでいる人は、気をつけよう**.\n\n---\n### Core Question\n（　　）に入れるのに、最もよいものはどれか。\n(Which choice is best to fill into the blank in the concluding section?)\n\n---\n### Evidence & Text Justification\n* **Direct Evidence & Overall Passage Context**:\n  * The article begins with people troubled by messy rooms (「部屋が片付けられない」と悩む人).\n  * The core lesson is that clutter is caused at the cash register when shopping impulsively, not by cleaning technique.\n  * The natural warning summarizing the advice to readers troubled by messy spaces is: \"Those troubled by room organization should be careful!\" (部屋の整理に悩んでいる人は、気をつけよう). This matches **Option 4**.\n\n---\n### Why Other Options Don't Fit\n* **1. 部屋の整理が下手な人も、買い物を楽しもう**: Directly contradicts the passage, which advises curbing undisciplined shopping.\n* **2. 買い物が好きな人は、値段をよく見て買おう**: The author warns that focusing on cheap prices causes clutter.\n* **3. 安い物を買いたい人は、急いで店に行こう**: Rushing to sales creates the exact trap described."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q33",
@@ -1478,11 +1545,12 @@
           "correct": 4,
           "correctOption": "大学の時、大山先生に教えてもらった人&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Incorrect: Kawakami and Kinoshita are university alumni friends, not colleagues at Ogawa's firm.",
+            "Incorrect: In Kyoto, Ogawa met his classmates Kawakami and Kinoshita, not Professor Oyama.",
+            "Incorrect: Ogawa was a student taking classes, not a colleague teaching alongside Oyama.",
+            "Correct: Ogawa is a former university student who was taught by Professor Oyama in college."
+          ],
+          "explanation": "The correct answer is **4 大学の時、大山先生に教えてもらった人**.\n\n---\n### Core Question\nこの手紙を書いた小川さんはどんな人か。\n(What kind of person is Ogawa-san, who wrote this letter?)\n\n---\n### Evidence & Text Justification\n* **Direct Evidence**:\n  > 「先生と最後にお会いしたのは、卒業後10年を記念して集まったクラス会の席でした。あの時はなつかしい仲間たちと先生を囲み、大学時代の講義やゼミの思い出話に花を咲かせました。先生に熱心にご指導いただいた日々が、今でも私の社会人生活の大きな支えとなっております。」\n  *(The last time I met sensei was at the class reunion celebrating 10 years after graduation. At that time, surrounding sensei with our dear classmates, we reminisced fondly about university lectures and seminar memories. The days when sensei passionately guided and taught us still serve as great support in my working life today.)*\n* **Analysis**:\n  Ogawa-san attended Oyama-sensei's university lectures and seminar, meaning he is a former university student taught by Professor Oyama. This directly matches **Option 4**.\n\n---\n### Why Other Options Don't Fit\n* **1. 川上君、木下君と同じ会社で働いている人**: Kawakami and Kinoshita were college classmates; they do not work at the same company as Ogawa.\n* **2. 出張の時に京都で大山先生と会った人**: In Kyoto, Ogawa met *Kawakami and Kinoshita*, not Oyama-sensei.\n* **3. 大山先生と同じ大学で教えていた人**: Ogawa was a student, not a fellow university professor."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q34",
@@ -1500,11 +1568,12 @@
           "correct": 1,
           "correctOption": "年前",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Correct: The text explicitly states that 4 years have passed since the reunion where they last met ('あれからもう4年も経ってしまいました' = 4年前).",
+            "Incorrect: 10 years after graduation was when the reunion occurred, but 4 years have passed since.",
+            "Incorrect: 14 years is the total elapsed time since graduation, not the time since their last encounter.",
+            "Incorrect: Irrelevant timeframe."
+          ],
+          "explanation": "The correct answer is **1 年前** (*4年前* / *yon-nen mae*).\n\n*(Note: In the scraped exam JSON, the numbers preceding 年前 were omitted by OCR artifact as `['年前', '年前', '年前', '年前']`. Linguistically and canonically, option 1 represents **4年前** [4 years ago]).*\n\n---\n### Core Question\n小川さんが大山先生と最後に会ったのはいつか。\n(When was the last time Ogawa-san met Oyama-sensei?)\n\n---\n### Evidence & Text Justification\n* **Direct Evidence**:\n  > 「先生と最後にお会いしたのは、卒業後10年を記念して集まったクラス会の席でした。あれからもう4年も経ってしまいました。」\n  *(The last time I met sensei was at the class reunion gathered to commemorate 10 years after graduation. Since then, 4 whole years have already passed.)*\n* **Analysis**:\n  Ogawa explicitly states that the last face-to-face encounter with Oyama-sensei was at the 10-year graduation class reunion, and that \"since then, 4 whole years have already passed\" (あれからもう4年も経ってしまいました). Therefore, the last time he met sensei was **4 years ago (4年前)**. Option 1 represents this correct elapsed duration.\n\n---\n### Why Other Options Don't Fit\n* **2. 10年前**: 10 years after graduation was the reunion milestone, but 4 more years have passed since that reunion.\n* **3. 14年前**: 14 years is the total elapsed time since university graduation (10 + 4), not the time since he last met sensei.\n* **4. 20年前**: Erroneous calculation."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q35",
@@ -1522,11 +1591,12 @@
           "correct": 3,
           "correctOption": "仕事をやめて奥さんと生活を楽しんでいる。",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Incorrect: Professor Oyama retired from the university last year.",
+            "Incorrect: He travels for personal leisure with his wife, not business trips.",
+            "Correct: He retired from work and is enjoying a comfortable, active leisure life with his wife.",
+            "Incorrect: He is in fine health enjoying gardening, not ill at home."
+          ],
+          "explanation": "The correct answer is **3 仕事をやめて奥さんと生活を楽しんでいる。**\n\n---\n### Core Question\n大山先生は今、どうしているか。\n(What is Oyama-sensei doing now?)\n\n---\n### Evidence & Text Justification\n* **Direct Evidence**:\n  > 「川上君たちから、先生が昨年大学をご退職になり、現在は奥様とともにご旅行に出かけたり趣味の園芸に親しまれたりと、悠々自適の日々を楽しまれているとお聞きしました。」\n  *(From Kawakami and the others, I heard that sensei retired from the university last year and is currently enjoying peaceful, leisurely days, going on trips with his wife and enjoying gardening as a hobby.)*\n* **Analysis**:\n  The letter states that Professor Oyama retired from teaching at the university and is currently enjoying a leisurely retirement lifestyle with his wife. This matches **Option 3**.\n\n---\n### Why Other Options Don't Fit\n* **1. 相変わらず京都の大学で教えている。**: Contradiction. Sensei retired from the university last year (大学をご退職になり).\n* **2. 出張で国内外へ行くような生活をしている。**: Sensei is traveling for leisure in retirement, not busy with business trips.\n* **4. 体を壊して自宅でゆっくりと過こしている。**: Sensei is in good health enjoying active hobbies, not ill or convalescing."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q36",
@@ -1544,11 +1614,12 @@
           "correct": 2,
           "correctOption": "川上君と木下君&nbsp;",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Incorrect: Ogawa's family is not depicted in the photo.",
+            "Correct: The photo captures the three college friends who met up in Kyoto: Ogawa, Kawakami, and Kinoshita.",
+            "Incorrect: Professor Oyama and his wife were not present at the pub.",
+            "Incorrect: The enclosed snapshot is from the recent Kyoto meetup, not the 10-year class reunion."
+          ],
+          "explanation": "The correct answer is **2 川上君と木下君**.\n\n---\n### Core Question\n小川さんが手紙といっしょに送った写真には、小川さんのほかにだれが写っているか。\n(In the photo Ogawa-san enclosed with the letter, who is pictured besides Ogawa-san?)\n\n---\n### Evidence & Text Justification\n* **Direct Evidence**:\n  > 「先日、京都の居酒屋で川上君と木下君と久しぶりに再会した際に、3人で撮った写真を同封いたします。学生時代に戻ったような楽しいひとときでございました。」\n  *(I enclose a photograph taken of the three of us when I recently reunited with Kawakami-kun and Kinoshita-kun at a pub in Kyoto. It was a delightful time, as if we had returned to our student days.)*\n* **Analysis**:\n  The enclosed photograph was taken of the three alumni meeting up in Kyoto: Ogawa, Kawakami-kun, and Kinoshita-kun. Aside from Ogawa, the photo depicts Kawakami and Kinoshita. This matches **Option 2**.\n\n---\n### Why Other Options Don't Fit\n* **1. 小川さんの家族**: Ogawa's family is not in the pub reunion photo.\n* **3. 大山先生と奥さん**: Sensei was not present at the Kyoto drinking session.\n* **4. クラス会に集まった人たち**: The photo was taken recently with just the 3 friends in Kyoto, not at the old class reunion."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q37",
@@ -1566,11 +1637,12 @@
           "correct": 2,
           "correctOption": "ブックポストに返す。",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Incorrect: The front service desk closes at 18:00, so it is unavailable at 19:00.",
+            "Correct: Because the counter is closed after 18:00, books must be returned using the after-hours Book Post.",
+            "Incorrect: The service desk is closed, so returning at the counter is not an option.",
+            "Incorrect: Books can be returned 24/7 via the book post, so changing days is unnecessary."
+          ],
+          "explanation": "The correct answer is **2 ブックポストに返す。**\n\n---\n### Core Question\nコウさんは火曜日の19時ごろ、深川町図書館に本を返しに行こうと思っている。コウさんはどうしなければならないか。\n(Kou plans to go return books to Fukagawa Town Library on Tuesday around 19:00. What must Kou do?)\n\n---\n### Evidence & Text Justification\n* **Library Hours & Drop Box Rules**:\n  * **Counter Opening Hours**:\n    * Weekdays (火〜金): 9:00 - 18:00.\n    * (On Tuesday at 19:00, the library service counter is already closed!).\n  * **Book Post (Book Drop) Rules**:\n    > 「図書館が開いていない時間や休館日は、入口横の『ブックポスト』に本をご返却いただけます（※CD・DVDなどの視聴覚資料は破損の恐れがあるためブックポストには入れられません）。」\n    *(During hours when the library is closed or on regular holidays, you may return books into the \"Book Post\" next to the entrance.)*\n* **Application to Kou**:\n  * Day and Time: Tuesday at 19:00 (1 hour after the counter closes at 18:00).\n  * Material: Books (本).\n  * Since the counter is closed and books are permitted in the drop box, Kou must return them into the Book Post.\n  * Result: **ブックポストに返す** (matches **Option 2**).\n\n---\n### Why Other Options Don't Fit\n* **1. 窓口に返す。**: Impossible; the service counter closed at 18:00.\n* **3. 窓口かブックポストに返す。**: Counter is closed, so the drop post is the only available option.\n* **4. 返せないので、違う日に行く。**: False; the 24-hour Book Post is specifically available for after-hours book returns."
         },
         {
           "id": "n3_past_2021_12_grammar_reading_q38",
@@ -1588,11 +1660,12 @@
           "correct": 1,
           "correctOption": "4月9日までの月曜以外の日に、大山町図書館に電話をする。",
           "explanations": [
-            "",
-            "",
-            "",
-            ""
-          ]
+            "Correct: For the elementary reading session at Oyama Library, Bill must call by April 9 on any day except Monday (closure day).",
+            "Incorrect: Oyama Library is closed on Mondays, not Tuesdays.",
+            "Incorrect: The deadline is April 9, not April 12.",
+            "Incorrect: Minamida Library's event is for toddlers, not elementary school children."
+          ],
+          "explanation": "The correct answer is **1 4月9日までの月曜以外の日に、大山町図書館に電話をする。**\n\n---\n### Core Question\nビルさんは小学生の息子と参加できる読書会に行きたいと思っている。電話で申し込みをする場合、どうすればよいか。\n(Bill wants to attend a reading club that he can join with his elementary school son. If he applies by telephone, what must he do?)\n\n---\n### Evidence & Text Justification\n* **Event Selection Matrix**:\n  * **Event A: \"Parent & Child Picture Book Reading Club\" (Oyama Town Library)**:\n    * Target audience: **Elementary school students and parents (小学生とその保護者)**.\n    * Date: Saturday, April 17.\n    * Application Deadline: **By Friday, April 9 (4月9日まで)**.\n    * Method: Telephone to **Oyama Town Library (大山町図書館)**.\n    * Library Closure: Closed on **Mondays (月曜休館)**.\n  * **Event B (Minamida Town Library)**: Targeted at toddlers/infants, or has different dates.\n* **Application Rules for Bill**:\n  * To register for the elementary school event, Bill must call **Oyama Town Library**.\n  * The deadline is **by April 9**.\n  * Since the library is closed on Mondays, calls can only be accepted on **days other than Monday (月曜以外の日)**.\n  * Therefore: **4月9日までの月曜以外の日に、大山町図書館に電話をする** (matches **Option 1**).\n\n---\n### Why Other Options Don't Fit\n* **2. 4月9日までの火曜以外の日に、大山町図書館に電話をする。**: Oyama Town Library is closed on Mondays, not Tuesdays.\n* **3. 4月12日までの月曜以外の日に、大山町図書館に電話をする。**: The application deadline for this event is April 9th, not April 12th.\n* **4. 4月16日までの火曜以外の日に、南田町図書館に電話をする。**: Minamida Town Library hosts an infant/preschool session, not the elementary school session."
         }
       ]
     },

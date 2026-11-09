@@ -49,6 +49,15 @@ const categories = [
     desc: 'Official real exam sessions organized by year with authentic 180-pt scaled scoring.',
     badge: 'Real Exams',
   },
+  {
+    id: 'dethitiengnhat',
+    title: 'Dethitiengnhat N3 Tests',
+    japaneseTitle: '実戦模擬試験 (18回)',
+    kanjiChar: '模',
+    desc: 'All 18 scraped N3 mock tests (Vocabulary, Grammar/Reading, Listening) in a simple Hallmark exam sheet.',
+    badge: '18 Full Sets',
+    onlyLevel: 'n3',
+  },
 ];
 
 const LevelSelectionPage = () => {
@@ -96,8 +105,10 @@ const LevelSelectionPage = () => {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
-        {categories.map((cat) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+        {categories
+          .filter((cat) => !cat.onlyLevel || cat.onlyLevel === level?.toLowerCase())
+          .map((cat) => (
           <Link
             key={cat.id}
             to={`/levels/${level}/${cat.id}`}

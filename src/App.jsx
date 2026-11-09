@@ -73,6 +73,7 @@ const JlptPracticeTestQuizPage = lazy(() => import('./components/JlptPracticeTes
 
 // JLPT Past Exam Papers (Real Questions from recent years)
 const JlptPastQuestionsListPage = lazy(() => import('./components/JlptPastQuestionsListPage.jsx'));
+const DethiTiengNhatN3Page = lazy(() => import('./components/DethiTiengNhatN3Page.jsx'));
 
 // Omni-Source 20-Question Level Check
 const LevelCheckPage = lazy(() => import('./components/LevelCheckPage.jsx'));
@@ -104,6 +105,10 @@ export default function App() {
             <Route path="/levels/:level/past-questions" element={<ProtectedRoute><JlptPastQuestionsListPage /></ProtectedRoute>} />
             <Route path="/levels/:level/past-questions/:testId" element={<ProtectedRoute><JlptPracticeTestQuizPage isPastExam={true} /></ProtectedRoute>} />
             <Route path="/levels/:level/past-questions/:testId/:sectionId" element={<ProtectedRoute><JlptPracticeTestQuizPage isPastExam={true} /></ProtectedRoute>} />
+            <Route path="/dethitiengnhat/n3" element={<DethiTiengNhatN3Page />} />
+            <Route path="/dethitiengnhat/n3/:testNumber/:partId" element={<DethiTiengNhatN3Page />} />
+            <Route path="/levels/:level/dethitiengnhat" element={<DethiTiengNhatN3Page />} />
+            <Route path="/levels/:level/dethitiengnhat/:testNumber/:partId" element={<DethiTiengNhatN3Page />} />
             <Route path="/levels/:level/new-vocab-list" element={<ProtectedRoute><VocabularyListPage /></ProtectedRoute>} />
             <Route path="/levels/:level/new-grammar-list" element={<ProtectedRoute><GrammarListPage /></ProtectedRoute>} />
             <Route path="/levels/:level/kanji-details/:id" element={<ProtectedRoute><KanjiDetailsPage /></ProtectedRoute>} />

@@ -246,7 +246,7 @@ const JlptPastQuestionsListPage = () => {
                     </span>
                     <div>
                       <span className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider block">
-                        {exam.year}年 • {exam.month === 12 ? 'December' : 'July'} Session
+                        {exam.shortName?.startsWith('DTTN') ? `${exam.year}年 • Mock Set #${exam.month}` : `${exam.year}年 • ${exam.month === 12 ? 'December' : 'July'} Session`}
                       </span>
                       <h2 className="text-lg font-black text-gray-900 dark:text-white">
                         {exam.sessionName || `${exam.year}年${exam.month}月`}
