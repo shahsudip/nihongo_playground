@@ -1500,7 +1500,7 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **1 見た** (*mita*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nこの映画はとてもおもしろいので、（ **見た** ）ほうがいいですよ。\n*Kono eiga wa totemo omoshiroi node, (**mita**) hō ga ii desu yo.*\n* **Meaning:**\n*\"This movie is very interesting, so you **had better / should watch** it.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞タ形＋ほうがいい (N4/N3 Grammar):**\nStandard pattern for giving strong personal advice or recommendations (*\"it is better to do...\" / \"you should do...\"*). Standard usage requires the past/completed form **V-た** before *ほうがいい*.\n*Context clue:* The enthusiastic recommendation **とてもおもしろいので** (*\"since it is very interesting\"*) motivates the suggestion to see the film.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 見ている (*mite iru*):**\nContinuous aspect; unnatural in a general recommendation to go watch an unviewed movie.\n* **3 見よう (*miyō*):**\nVolitional form (*\"let's watch\"*); cannot precede *ほうがいい*.\n* **4 見ない (*minai*):**\nNegative form (*\"you should not watch\"*); directly contradicts the praise *とてもおもしろい*."
+              "explanation": "【正解】1（あんなに食べたら）\n【意味】いくらチョコレートが好きでも、一度にあんなに食べたら体に良くないだろう。\n【英訳】No matter how much you like chocolate, eating that much at one time probably isn't good for your health.\n【解説】「いくら〜ても、あんなに…たら」は「どんなに好きでも、極端な程度を行うと好ましくない結果になる」という仮定条件を表します。指示詞「あんなに」は極端な量や程度を強調します。"
             },
             {
               "id": 105,
@@ -1514,7 +1514,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **4 しているところ** (*shite iru tokoro*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n先輩「もうすぐ会議が始まりますよ。」\n後輩「あ、はい。今、資料を準備（ **しているところ** ）です。」\n*Senpai: \"Mō sugu kaigi ga hajimarimasu yo.\"*\n*Kōhai: \"A, hai. Ima, shiryō o junbi (**shite iru tokoro**) desu.\"*\n* **Meaning:**\n*Senior: \"The meeting is about to start.\"*\n*Junior: \"Oh, yes. I am **right in the middle of preparing** the handouts right now.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞テ形＋いるところだ (N3 Grammar):**\nIndicates that an action is currently in mid-progress at this very second (*\"in the middle of doing...\"*).\n*Context clue:* The temporal adverb **今** (*\"right now\"*) explicitly pinpoints the real-time ongoing state of document preparation.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 するべき (*suru beki*):**\nMeans *\"ought to do / must do\"* (moral duty); does not answer what the speaker is practically doing at this moment.\n* **2 したところ (*shita tokoro*):**\nWith past tense, *〜たところだ* means *\"just finished doing a moment ago\"*. If preparation were complete, the handouts would already be ready.\n* **3 するつもり (*suru tsumori*):**\nExpresses future intention (\"plan to do\"), which clashes with the real-time urgency of *今* and *もうすぐ会議が始まります*."
+              "explanation": "【正解】4（見に行くどころではない）\n【意味】仕事が忙しくて、映画を見に行くどころではないのです。\n【英訳】I'm so busy with work that I'm in no position to go see a movie.\n【解説】「動詞辞書形／名詞＋どころではない」は「〜できるような余裕や状況では全くない」ことを表す重要文型です。仕事が忙しくて映画を楽しむ余裕がない文脈に合致するのは「見に行くどころではない」です。"
             },
             {
               "id": 106,
@@ -3177,7 +3177,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **3 落ちそうに** (*ochisō ni*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n赤ちゃんがベッドから（ **落ちそうに** ）なって、とてもあせった。\n*Akachan ga beddo kara (**ochisō ni**) natte, totemo asetta.*\n* **Meaning:**\n*\"The baby came **close to falling / looked on the verge of falling** from the bed, which really panicked me.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞連用形＋そうになる (N3 Grammar):**\nExpresses that an event came dangerously close to happening or was on the brink of occurring, but was narrowly avoided (*\"almost did...\"* / *\"was about to...\"*).\n*Context clue:* **とてもあせった** (*\"I panicked\"*) indicates that an alarming near-accident was unfolding right before the speaker's eyes.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 落ちるように (*ochiru yō ni*):**\nExpresses aim/manner (\"so that it falls\"); nonsensical for an accidental near-fall.\n* **2 落ちたように (*ochita yō ni*):**\nSimile (\"as if it had fallen\"); does not denote an imminent near-occurrence.\n* **4 落ちるそうに (*ochiru sō ni*):**\nUngrammatical; hearsay *〜そうだ* cannot take adverbial *に* and does not conjugate with *なる*.\n"
+              "explanation": "【正解】3（帰ってもいいですよ）\n【意味】部長「もう時間が遅いので、仕事を終わりにして帰ってもいいですよ。」\n【英訳】Director: It's late already, so you may wrap up work and go home.\n【解説】目上の人が許可を与える表現は「動詞て形＋もいいですよ」です。"
             },
             {
               "id": 221,
@@ -3191,7 +3191,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **2 歩くわけにはいかない** (*aruku wake ni wa ikanai*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nこんなに雨が強い日は、駅まで（ **歩くわけにはいかない** ）。\n*Konna ni ame ga tsuyoi hi wa, eki made (**aruku wake ni wa ikanai**).*\n* **Meaning:**\n*\"On a day when the rain is this heavy, **it's out of the question to / I cannot simply** walk to the station.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞辞書形＋わけにはいかない (N3 Grammar):**\nIndicates that one cannot do an action due to practical, moral, physical, or circumstantial constraints (*\"cannot afford to...\"* / *\"it's impossible under these circumstances to...\"*).\n*Context clue:* **こんなに雨が強い日は** establishes severe weather conditions that make walking completely infeasible.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 歩くことはない (*aruku koto wa nai*):**\nMeans *\"there is no need to walk\"*; lacks the strong circumstantial impossibility of *わけにはいかない*.\n* **3 歩かないわけにはいかない (*arukanai wake ni wa ikanai*):**\nDouble negative meaning *\"cannot avoid walking / must walk\"*; completely contradicts the stormy weather context.\n* **4 歩かないことはない (*arukanai koto wa nai*):**\nDouble negative meaning *\"it's not that I don't walk\"*; irrelevant to decision making in a downpour.\n"
+              "explanation": "【正解】2（落ちかねない）\n【意味】このままでは次の試験に落ちかねない。\n【英訳】At this rate, he could well fail the next exam.\n【解説】「動詞連用形＋かねない」は「（悪い結果になる）可能性がある、〜するおそれがある」を表します。"
             },
             {
               "id": 222,
@@ -3205,7 +3205,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **4 なさそうだ** (*nasasō da*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n天気予報によると、明日は雨が降る心配は（ **なさそうだ** ）。\n*Tenki yohō ni yoru to, ashita wa ame ga furu shinpai wa (**nasasō da**).*\n* **Meaning:**\n*\"According to the weather forecast, there **does not appear to be** any worry of rain tomorrow.\"*\n\n---\n\n### Grammar Explanation\n\n* **ない → なさそうだ (N3 Grammar):**\nConjectural form of the negative adjective *ない*. When forming conjecture with *〜そうだ*, *ない* irregularly changes to **なさそうだ** (*\"does not look like...\"* / *\"seems unlikely...\"*).\n*Context clue:* **天気予報によると** cites an external source, followed by the speaker's reassuring assessment based on the weather map.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 ないそうだ (*nai sō da*):**\nHearsay form (\"I heard there is no concern\"); while hearsay exists, *雨が降る心配はないそうだ* would be used directly without the emphatic topicalization *心配は*, and *なさそうだ* is the tested N3 irregular conjecture pattern.\n* **2 なさ気だ (*nasa-ge da*):**\nColloquial slang; not standard JLPT N3 written grammar.\n* **3 ないようだ (*nai yō da*):**\nWhile *ないようだ* exists, *なさそうだ* is the classic textbook irregular inflection tested here.\n"
+              "explanation": "【正解】4（飲みたくてたまらない）\n【意味】今日はとても暑いので、冷たいジュースが飲みたくてたまらない。\n【英訳】Today is so hot that I am dying to drink cold juice.\n【解説】「〜たくてたまらない」は「感情や欲求が抑えられないほど強く〜したい」ことを表します。"
             },
             {
               "id": 223,
@@ -3320,7 +3320,7 @@ export const practiceSetsBook = {
               "sectionType": "grammar-reading",
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "「時間がない」\r\n私たちは、「時間がない」とよく言う。しかし、本当に「時間がない」のだろうか。本当は「時間がある」のにいそがしいふりをしたり、自分をいそがしい状態にしていることも [19] 。\r\nたとえば、こんなことがあった。何日か前、私は仕事に行くために電車に乗った。急いでいたので、携帯電話も音楽プレーヤーも本もすべて忘れてしまった。いつもは、電車に [20] イヤフォンを耳に押し込み、かばんから本や新聞を取り出して、読むことにしている。携帯電話や携帯ゲームプレーヤーでゲームを始めることもある。[21] この日は何も持たずに電車に乗ってしまったので、何もすることがなくなってしまった。\r\n仕方がないので、電車に乗っているあいだ、何もしないで前の席に座る人の動作や窓の外をずっと見ていた。そうしたら、とてもリラックスすることができたのだ。[22] 、私たちには何もしない時間が必要なのかもしれない。私たちは、わざわざ [23] 用事を作り、生活をいそがしくしてしまっているような気がする。本当に「時間がない」のか考えてみるだけで、もっと充実した時間をとりもどすことができるのではないだろうか。",
-              "explanation": "The correct answer is **4 生み出すことができる** (*umidasu koto ga dekiru*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n日常生活の中で歩くことを意識すれば、健康のための時間を（ **生み出すことができる** ）。\n*Nichijō seikatsu no naka de aruku koto o ishiki sureba, kenkō no tame no jikan o (**umidasu koto ga dekiru**).*\n* **Meaning:**\n*\"If you remain conscious of walking in everyday life, **you can generate** time for your health.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞辞書形＋ことができる (N4/N3 Grammar):**\nExpresses possibility and capability (*\"can do / is able to create\"*).\n*Context clue:* The conditional **意識すれば** (*\"if you are conscious of...\"*) leads into the achievable positive outcome of creating time.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 生み出すにちがいない (*umidasu ni chigainai*):**\nDeduction about another person or event; unnatural for giving practical lifestyle empowerment.\n* **2 生み出さざるを得ない (*umidasazaru o enai*):**\nMeans *\"have no choice but to generate\"*; implies painful coercion rather than voluntary wellness.\n* **3 生み出すべきではない (*umidasubeki dewa nai*):**\nMeans *\"should not generate\"*; directly contradicts the essay's recommendation.\n"
+              "explanation": "【正解】4（ところが）\n【文脈】便利になったはずなのに、逆に忙しくなった逆接を導く。\n【解説】前文の予想に反する事実を提示する接続詞「ところが」が正解です。\n【英訳】However / Even so"
             },
             {
               "id": 231,
@@ -3335,7 +3335,7 @@ export const practiceSetsBook = {
               "sectionType": "grammar-reading",
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "「時間がない」\r\n私たちは、「時間がない」とよく言う。しかし、本当に「時間がない」のだろうか。本当は「時間がある」のにいそがしいふりをしたり、自分をいそがしい状態にしていることも [19] 。\r\nたとえば、こんなことがあった。何日か前、私は仕事に行くために電車に乗った。急いでいたので、携帯電話も音楽プレーヤーも本もすべて忘れてしまった。いつもは、電車に [20] イヤフォンを耳に押し込み、かばんから本や新聞を取り出して、読むことにしている。携帯電話や携帯ゲームプレーヤーでゲームを始めることもある。[21] この日は何も持たずに電車に乗ってしまったので、何もすることがなくなってしまった。\r\n仕方がないので、電車に乗っているあいだ、何もしないで前の席に座る人の動作や窓の外をずっと見ていた。そうしたら、とてもリラックスすることができたのだ。[22] 、私たちには何もしない時間が必要なのかもしれない。私たちは、わざわざ [23] 用事を作り、生活をいそがしくしてしまっているような気がする。本当に「時間がない」のか考えてみるだけで、もっと充実した時間をとりもどすことができるのではないだろうか。",
-              "explanation": "The correct answer is **1 このように** (*kono yō ni*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n（ **このように** ）、毎日の少しの工夫で、健康な体をつくることができるのだ。\n*(**Kono yō ni**), mainichi no sukoshi no kufū de, kenkō na karada o tsukuru koto ga dekiru no da.*\n* **Meaning:**\n*\"**In this way**, with just a little daily ingenuity, one can build a healthy body.\"*\n\n---\n\n### Grammar Explanation\n\n* **接続詞「このように」 (N3 Reading):**\nSummary discourse marker used to conclude a passage by drawing together preceding examples and arguments (*\"in this manner\"*, *\"as shown above\"*, *\"thus\"*).\n*Context clue:* This sentence stands as the final takeaway of the entire essay summarizing how simple lifestyle tweaks yield health benefits.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 それにもかかわらず (*sore ni mo kakawarazu*):**\nAdversative marker (*\"despite that\"*); inappropriate since the conclusion harmoniously agrees with earlier advice.\n* **3 あるいは (*aruiwa*):**\nDisjunctive marker (*\"or / alternatively\"*); cannot introduce a comprehensive thesis summary.\n* **4 つまりは (*tsumari wa*):**\nRephrasing marker; less natural than *このように* for synthesizing action-oriented takeaways.\n"
+              "explanation": "【正解】1（このことが示す通り）\n【文脈】「[22] 、技術の進歩が必ずしも時間のゆとりを生むとは限らない。」\n【解説】前述の例示や事実を受けて結論を導く「このことが示す通り」が正解です。\n【英訳】As this demonstrates"
             },
             {
               "id": 232,
@@ -3350,7 +3350,7 @@ export const practiceSetsBook = {
               "sectionType": "grammar-reading",
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "「時間がない」\r\n私たちは、「時間がない」とよく言う。しかし、本当に「時間がない」のだろうか。本当は「時間がある」のにいそがしいふりをしたり、自分をいそがしい状態にしていることも [19] 。\r\nたとえば、こんなことがあった。何日か前、私は仕事に行くために電車に乗った。急いでいたので、携帯電話も音楽プレーヤーも本もすべて忘れてしまった。いつもは、電車に [20] イヤフォンを耳に押し込み、かばんから本や新聞を取り出して、読むことにしている。携帯電話や携帯ゲームプレーヤーでゲームを始めることもある。[21] この日は何も持たずに電車に乗ってしまったので、何もすることがなくなってしまった。\r\n仕方がないので、電車に乗っているあいだ、何もしないで前の席に座る人の動作や窓の外をずっと見ていた。そうしたら、とてもリラックスすることができたのだ。[22] 、私たちには何もしない時間が必要なのかもしれない。私たちは、わざわざ [23] 用事を作り、生活をいそがしくしてしまっているような気がする。本当に「時間がない」のか考えてみるだけで、もっと充実した時間をとりもどすことができるのではないだろうか。",
-              "explanation": "The correct answer is **3 してみてはどうだろうか** (*shite mite wa dō darō ka*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nあなたも、今日から歩くことを（ **してみてはどうだろうか** ）。\n*Anata mo, kyō kara aruku koto o (**shite mite wa dō darō ka**).*\n* **Meaning:**\n*\"Why don't you, too, **give walking a try** starting today?\"*\n\n---\n\n### Grammar Explanation\n\n* **〜てみてはどうだろうか (N3 Grammar):**\nCombines exploratory *〜てみる* with the polite suggestion formula *〜てはどうだろうか* (*\"how about trying...?\"*). A refined, persuasive way to invite the reader to take action.\n*Context clue:* The closing appeal directly addresses the reader (**あなたも、今日から...**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 するべきなのだろうか (*surubeki na no darō ka*):**\nRhetorical self-doubt (\"is it something one should do?\"); weakens the author's affirmative encouragement.\n* **2 してみるはずがない (*shite miru hazu ga nai*):**\nMeans *\"there is no way you would try\"*; rude and contradictory to a persuasive essay.\n* **4 するにすぎないのではないか (*suru ni suginai no dewa nai ka*):**\nMeans *\"is it merely just doing...\"*; dismissive tone that undercuts the essay's message.\n"
+              "explanation": "【正解】3（したほうがいい）\n【文脈】「私たちは、一度時間の使い方を見直して [23] 。」\n【解説】筆者からの提言・アドバイスを表す「〜したほうがいい」が正解です。\n【英訳】we should do..."
             }
           ]
         }
@@ -3915,7 +3915,7 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **1 たびに** (*tabi ni*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nこの写真を見る（ **たびに** ）、楽しかった旅行を思い出す。\n*Kono shashin o miru (**tabi ni**), tanoshikatta ryokō o omoidasu.*\n* **Meaning:**\n*\"**Every single time** I look at this photograph, I recall that wonderful trip.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞辞書形＋たびに (N3 Grammar):**\nIndicates that every time event A occurs, event B invariably and repeatedly happens (*\"every time...\"* / *\"whenever...\"*).\n*Context clue:* Viewing the souvenir photo reliably triggers fond emotional memories (**楽しかった旅行を思い出す**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 うちに (*uchi ni*):**\nMeans *\"while a state persists\"* or *\"before something changes\"*; inappropriate for repeated episodic triggers.\n* **3 ついでに (*tsuide ni*):**\nMeans *\"while doing A, taking the opportunity to casually do B\"*; reminiscing is an emotional reflex, not an opportunistic errand.\n* **4 とおりに (*tōri ni*):**\nMeans *\"exactly according to / as planned\"*; nonsensical after seeing a photo.\n"
+              "explanation": "【正解】1（そんな）\n【意味】林さんが亡くなったなんて、まさかそんなはずはない。\n【英訳】Hayashi-san passed away? There's no way such a thing could be true!\n【解説】信じがたい事態を強調する指示詞は「そんな（はずはない）」です。"
             },
             {
               "id": 272,
@@ -3929,7 +3929,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **2 降りそう** (*furisō*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n空が暗くなってきた。今にも雨が（ **降りそう** ）だ。\n*Sora ga kuraku natte kita. Ima ni mo ame ga (**furisō**) da.*\n* **Meaning:**\n*\"The sky has turned dark. It looks like rain could fall **at any moment**.\"*\n\n---\n\n### Grammar Explanation\n\n* **今にも＋動詞連用形＋そうだ (N3 Grammar):**\nCollocational pairing: **今にも** (*\"any second now\"*) pairs strictly with the conjectural suffix **〜そうだ** attached to a verb stem (*降り＋そう*) to describe an imminent physical occurrence.\n*Context clue:* **今にも** directly governs the stem + **そう** form.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 降るそう (*furu sō*):**\nDictionary form + *そうだ* indicates hearsay (*\"I heard it will rain\"*); incompatible with the visual immediacy marker *今にも*.\n* **3 降るよう (*furu yō*):**\nRequires *降るようだ*; lacks the critical imminent immediacy conveyed by *今にも*.\n* **4 降りよう (*furiyō*):**\nVolitional form; weather cannot possess conscious will.\n"
+              "explanation": "【正解】2（次第だ）\n【意味】ハイキングが行われるかどうかは、天気次第だ。\n【英訳】Whether the hike takes place depends on the weather.\n【解説】「名詞＋次第だ」は「〜によって決まる（depends on...）」という意味を表します。"
             },
             {
               "id": 273,
@@ -3943,7 +3943,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **2 いただく** (*itadaku*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n先生、この作文を読んで（ **いただく** ）ことは可能でしょうか。\n*Sensei, kono sakubun o yonde (**itadaku**) koto wa kanō deshō ka.*\n* **Meaning:**\n*\"Professor, would it be possible for you **to kindly read** this essay for me?\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞テ形＋いただく (N3 Keigo):**\nHumble auxiliary verb (kenjōgo) used when the speaker receives a beneficial action from a social superior (*\"to have someone honorably do something for one\"*).\n*Context clue:* The student is politely seeking the professor's academic review (**先生、この作文を...**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 さしあげる (*sashiageru*):**\nKenjōgo for giving to a superior; *読んでさしあげる* would mean \"I read it for you, Professor\", which is inappropriate.\n* **3 くださる (*kudasaru*):**\nHonorific giving verb; while *読んでくださる* is respectful, *読んでいただくことは可能でしょうか* is the standard humble request for receiving favor.\n* **4 やる (*yaru*):**\nBlunt/condescending giving verb; completely unacceptable toward a teacher.\n"
+              "explanation": "【正解】2（ことに）\n【意味】うれしいことに、みんなから結婚のお祝いをもらった。\n【英訳】Delightfully, I received wedding congratulations from everyone.\n【解説】「感情を表す形容詞・動詞た形＋ことに」は「話者の感情を前置きして、その気持ちをもたらした事態を述べる」文型です。"
             },
             {
               "id": 274,
@@ -3957,7 +3957,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **4 向けに** (*muke ni*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nこの本は、日本語を学ぶ外国人（ **向けに** ）書かれている。\n*Kono hon wa, nihongo o manabu gaikokujin (**muke ni**) kakarete iru.*\n* **Meaning:**\n*\"This book is written **specifically for / targeted at** foreigners learning Japanese.\"*\n\n---\n\n### Grammar Explanation\n\n* **名詞＋向けに (N3 Grammar):**\nIndicates the intended target audience, demographic, or consumer group for which something is specifically designed or created (*\"intended for\"*, *\"tailored to\"*).\n*Context clue:* Foreign learners of Japanese (**日本語を学ぶ外国人**) are the designated audience for the textbook.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 向きに (*muki ni*):**\n*〜向き* means naturally suited to by temperament, but when deliberately created/tailored for a specific audience, *〜向け* is grammatically required.\n* **2 当たりに (*atari ni*):**\nMeans *\"per [unit]\"* (e.g. 1人当たり); irrelevant to target audiences.\n* **3 沿いに (*zoi ni*):**\nMeans *\"along [a road/river]\"*; physical location marker.\n"
+              "explanation": "【正解】4（かまいません）\n【意味】だれでも参加してかまいません。\n【英訳】Anyone may participate regardless of gender.\n【解説】「動詞て形＋かまわない（かまいません）」は「〜しても問題ない、差し支えない」という許可を表します。"
             },
             {
               "id": 275,
@@ -3971,7 +3971,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **4 ほど** (*hodo*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n昨日のテストは、涙が出る（ **ほど** ）難しかった。\n*Kinō no tesuto wa, namida ga deru (**hodo**) muzukashikatta.*\n* **Meaning:**\n*\"Yesterday's exam was so difficult that **it almost brought tears to my eyes**.\"*\n\n---\n\n### Grammar Explanation\n\n* **〜ほど (N3 Grammar):**\nUses an extreme illustrative example or physical reaction to express the extraordinary extent or degree of a condition (*\"so... that...\"* / *\"to the point of...\"*).\n*Context clue:* Crying tears (**涙が出る**) illustrates the extreme severity of the test's difficulty (**難しかった**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 くらい (*kurai*):**\nWhile *くらい* can express degree, *涙が出るほど* is the idiomatic high-intensity figurative benchmark.\n* **2 ばかり (*bakari*):**\nMeans *\"nothing but\"* or *\"just completed\"*; cannot express degree of difficulty.\n* **3 だけ (*dake*):**\nMeans *\"only / just\"*; fails to express degree.\n"
+              "explanation": "【正解】4（準備し）\n【意味】今から準備しようがない。\n【英訳】Since the exam is tomorrow, there is no way to prepare now.\n【解説】「動詞連用形＋ようがない」は「〜する方法・手段が全くない」ことを表します。"
             },
             {
               "id": 276,
@@ -3985,7 +3985,7 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **1 会えなくても** (*aenakute mo*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n将来どんなに離れて（ **会えなくても** ）、私たちは永遠の友だちだ。\n*Shōrai donna ni hanarete (**aenakute mo**), watashitachi wa eien no tomodachi da.*\n* **Meaning:**\n*\"No matter how far apart we are in the future and **even if we cannot meet**, we will be friends forever.\"*\n\n---\n\n### Grammar Explanation\n\n* **どんなに〜ても (N3 Grammar):**\nConcessive conditional construction: **どんなに** (*\"no matter how...\"*) pairs with the te-mo form (**〜ても**) to indicate that regardless of extreme circumstances, the core reality or pledge remains unchanged.\n*Context clue:* **どんなに** sets up the concessive condition pairing directly with **〜ても**.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 会えないでも (*aenai de mo*):**\nUngrammatical; the negative te-mo form of *会える* is *会えなくても*.\n* **3 会えなければ (*aenakereba*):**\nProvisional conditional (*\"if we cannot meet\"*); fails to collocate with *どんなに*.\n* **4 会えないなら (*aenai nara*):**\nContextual conditional (*\"if it is the case that we cannot meet\"*); does not pair with *どんなに*.\n"
+              "explanation": "【正解】1（会えなくなったとしても）\n【意味】たとえこの先会えなくなったとしても、私たちはずっと友だちだ。\n【英訳】Even if we become unable to meet in the future, we are friends forever.\n【解説】「たとえ〜としても」は「仮にどんな事態が起きたとしても」という逆接仮定条件を表します。"
             },
             {
               "id": 277,
@@ -4835,7 +4835,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **2 ことになっている** (*koto ni natte iru*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n日本では、新しい学年は4月に始まる（ **ことになっている** ）。\n*Nihon de wa, atarashii gakunen wa shigatsu ni hajimaru (**koto ni natte iru**).*\n* **Meaning:**\n*\"In Japan, the new school year **is scheduled / set by convention** to begin in April.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞辞書形＋ことになっている (N3 Grammar):**\nExpresses an established rule, social convention, legal regulation, or scheduled custom determined by society or an organization (*\"it is a rule that...\"* / *\"is expected to...\"*).\n*Context clue:* **日本では** sets the cultural/national societal context for educational regulations.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 ものとなっている (*mono to natte iru*):**\n*もの* does not naturally collocate with institutional calendar rules in standard JLPT grammar.\n* **3 ようにしている (*yō ni shite iru*):**\nExpresses personal ongoing effort (*\"I make an effort to...\"*); school systems are institutional rules, not personal efforts.\n* **4 わけになっている (*wake ni natte iru*):**\nUngrammatical; *わけ* does not pair with *になっている* to state institutional regulations.\n"
+              "explanation": "【正解】2（こととなっている）\n【意味】新しい学年は4月に始まることとなっている。\n【英訳】In Japan, it is established/ruled that the new school year begins in April.\n【解説】「動詞辞書形＋こととなっている」は、規則・予定・社会通念として定まっていることを表します。"
             },
             {
               "id": 336,
@@ -4849,7 +4849,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **3 落ちそうに** (*ochisō ni*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n棚の上に置いた箱が、今にも（ **落ちそうに** ）なっている。\n*Tana no ue ni oita hako ga, ima ni mo (**ochisō ni**) natte iru.*\n* **Meaning:**\n*\"The box placed on top of the shelf is **on the verge of falling** at any moment.\"*\n\n---\n\n### Grammar Explanation\n\n* **今にも＋動詞連用形＋そうになる (N3 Grammar):**\nIndicates that a physical event or object has reached the critical brink of happening (*\"on the verge of doing / looks about to...\"*).\n*Context clue:* The adverbial trigger **今にも** (*\"at any second\"*) pairs strictly with the conjecture marker **〜そう**.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 落ちたように (*ochita yō ni*):**\nSimile (\"as if it fell\"); the box is still perched precariously on the shelf.\n* **2 落ちるように (*ochiru yō ni*):**\nExpresses aim or objective; inappropriate for an unintended inanimate physical hazard.\n* **4 落ちてそうに (*ochite sō ni*):**\nGrammatically incorrect colloquial form; standard conjecture takes verb stem *落ち＋そうに*.\n"
+              "explanation": "【正解】3（落ちるに決まっている）\n【意味】明日の試験に落ちるに決まっている。\n【英訳】Since he hasn't prepared at all, he is bound to fail tomorrow's test.\n【解説】「動詞普通形＋に決まっている」は「絶対に〜に違いない、当然〜だ」という確信を表します。"
             },
             {
               "id": 337,
@@ -4863,7 +4863,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **4 読んだり** (*yondari*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n週末は、本を（ **読んだり** ）音楽を聴いたりして過ごしています。\n*Shūmatsu wa, hon o (**yondari**) ongaku o kiitari shite sugoshite imasu.*\n* **Meaning:**\n*\"On weekends, I spend my time **reading** books, listening to music, and the like.\"*\n\n---\n\n### Grammar Explanation\n\n* **〜たり〜たりする (N4/N3 Grammar):**\nLists representative non-exhaustive actions performed among other possible activities (*\"doing things like A and B\"*).\n*Context clue:* The following paired clause **音楽を聴いたりして** directly governs the parallel **〜たり** form.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 読んで (*yonde*):**\nTe-form denotes sequential action; clashes with the representative listing structure ending in *〜聴いたりして*.\n* **2 読むと (*yomu to*):**\nConditional (\"when I read\"); breaks the parallel activity construction.\n* **3 読むし (*yomu shi*):**\nReason-listing particle; does not coordinate with *〜たりして過ごす*.\n"
+              "explanation": "【正解】4（吸ってはいけません）\n【意味】小さい子どもは、たばこを吸ってはいけません。\n【英訳】Small children must not smoke.\n【解説】禁止を表す基本的な文型は「動詞て形＋はいけません」です。"
             },
             {
               "id": 338,
@@ -4877,7 +4877,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **4 ほど** (*hodo*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n昨日の夜は、息が苦しくなる（ **ほど** ）笑った。\n*Kinō no yoru wa, iki ga kurushiku naru (**hodo**) waratta.*\n* **Meaning:**\n*\"Last night, I laughed **so hard that** it became difficult to breathe.\"*\n\n---\n\n### Grammar Explanation\n\n* **〜ほど (N3 Grammar):**\nExpresses the extreme extent or high degree of an action or emotional state by presenting a vivid physical symptom or reaction (*\"so much that...\"* / *\"to the point of...\"*).\n*Context clue:* **息が苦しくなる** (*\"having trouble breathing\"*) serves as the visceral illustrative benchmark for how intensely the speaker laughed (**笑った**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 だけ (*dake*):**\nMeans *\"only / just\"*; fails to express degree.\n* **2 ばかり (*bakari*):**\nMeans *\"only / just did\"*; cannot quantify the physical intensity of laughter.\n* **3 より (*yori*):**\nComparative standard; makes no sense after a descriptive physical reaction clause.\n"
+              "explanation": "【正解】4（着てみてもいいですか）\n【意味】すみません。この服を着てみてもいいですか。\n【英訳】Excuse me, may I try on these clothes?\n【解説】試着の許可を求める表現は「動詞てみる＋てもいいですか（着てみてもいいですか）」です。"
             },
             {
               "id": 339,
@@ -4963,7 +4963,7 @@ export const practiceSetsBook = {
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "「初めての銭湯」\nピエール・マルタン\nあなたは、日本のお風呂といえば何を考えますか。温泉でしょうか、露天風呂でしょうか。いろいろありますが、私の場合は「銭湯」です。\n私の故郷には、毎日お風呂に入るという習慣はありません。[ 19 ]、日本へ来たばかりのときは、日本人が毎日お風呂に入るということを知って、とても驚きました。\n家にお風呂がある人は、家にお風呂に毎日入りますし、家にお風呂がない場合も、毎日のように家の近所にある「銭湯」に行きます。[ 20 ]習慣を持っている民族は、広い世界の中でもあまりないと思います。\n初めて銭湯に行ったときに、驚いたことがたくさんありました。[ 21-a ]、建物がお寺や神社のようなとても古い建物だったこと。第二に、入口が「男湯」と「女湯」に分かれていたこと。第三に、ほかの人の前で服を全部脱いでお風呂に入らなければならなかったこと。[ 21-b ]、お風呂のお湯の温度がとても高かったことです。\nしかし、今では日本の銭湯にも[ 22 ]。なにも気にせずに熱いお湯にゆっくり入れるようになりました。私もかなり「日本人」に近づいてきたという[ 23 ]。",
               "imageSrc": "/images/practice_sets/set_6_passage.jpg",
-              "explanation": "The correct answer is **1 日本へ来たばかりのときは** (*nihon e kita bakari no toki wa*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n（ **日本へ来たばかりのときは** ）、日本人が毎日お風呂に入るということを知って、とても驚きました。\n*(**Nihon e kita bakari no toki wa**), nihonjin ga mainichi ofuro ni hairu to iu koto o shitte, totemo odorokimashita.*\n* **Meaning:**\n*\"**Back when I had just arrived in Japan**, I was very surprised to learn that Japanese people take a bath every day.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞た形＋ばかり (N3 Grammar):**\nIndicates that very little psychological or chronological time has elapsed since an action was completed (*\"just after having done...\"*).\n*Context clue:* The author is recounting their earliest initial cultural impression upon stepping foot in Japan for the first time.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 日本へ来ることになったときは:**\nRefers to the moment the decision was made to go to Japan, before actually experiencing daily life in the country.\n* **3 日本へ来ようとしたときは:**\nRefers to the attempt or verge of traveling to Japan, prior to arrival.\n* **4 日本へ来ないようにしたときは:**\nMeans *\"when I tried not to come to Japan\"*; completely absurd.\n"
+              "explanation": "【正解】1（なぜなら）\n【文脈】「私は日本のお風呂がとても好きだ。[19] 、疲れが取れてリフレッシュできるからだ。」\n【解説】後続の文で理由（〜からだ）を述べる接続詞「なぜなら」が正解です。\n【英訳】Because"
             },
             {
               "id": 345,
@@ -4979,7 +4979,7 @@ export const practiceSetsBook = {
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "「初めての銭湯」\nピエール・マルタン\nあなたは、日本のお風呂といえば何を考えますか。温泉でしょうか、露天風呂でしょうか。いろいろありますが、私の場合は「銭湯」です。\n私の故郷には、毎日お風呂に入るという習慣はありません。[ 19 ]、日本へ来たばかりのときは、日本人が毎日お風呂に入るということを知って、とても驚きました。\n家にお風呂がある人は、家にお風呂に毎日入りますし、家にお風呂がない場合も、毎日のように家の近所にある「銭湯」に行きます。[ 20 ]習慣を持っている民族は、広い世界の中でもあまりないと思います。\n初めて銭湯に行ったときに、驚いたことがたくさんありました。[ 21-a ]、建物がお寺や神社のようなとても古い建物だったこと。第二に、入口が「男湯」と「女湯」に分かれていたこと。第三に、ほかの人の前で服を全部脱いでお風呂に入らなければならなかったこと。[ 21-b ]、お風呂のお湯の温度がとても高かったことです。\nしかし、今では日本の銭湯にも[ 22 ]。なにも気にせずに熱いお湯にゆっくり入れるようになりました。私もかなり「日本人」に近づいてきたという[ 23 ]。",
               "imageSrc": "/images/practice_sets/set_6_passage.jpg",
-              "explanation": "The correct answer is **2 a に入るかわりに ／ b 毎日入ることはありません** (*a ni hairu kawari ni / b mainichi hairu koto wa arimasen*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n私の国では、お風呂（ **a に入るかわりに** ）シャワーをあびますし、（ **b 毎日入ることはありません** ）。\n*Watashi no kuni de wa, ofuro (**a ni hairu kawari ni**) shawā o abimasu shi, (**b mainichi hairu koto wa arimasen**).*\n* **Meaning:**\n*\"In my country, **instead of taking a bath**, people take showers, and **they don't necessarily take one every day**.\"*\n\n---\n\n### Grammar Explanation\n\n* **〜かわりに (N3 Grammar) ＋ 〜ことはない (N3 Grammar):**\n**〜かわりに** expresses substituting one action for another (*\"in place of / instead of\"*). **〜ことはない** expresses that an action is not customary or required.\n*Context clue:* The sentence contrasts cultural hygiene practices: taking showers instead of soaking in a tub, and varying frequency.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 a に入るとおりに ／ b 毎日入ることにしています:**\n*とおりに* means \"in accordance with\"; nonsensical.\n* **3 a に入るたびに ／ b 毎日入るわけではありません:**\n*たびに* means \"every time one enters a bath\"; contradicts showering instead.\n* **4 a に入るせいで ／ b 毎日入るはずがありません:**\n*せいで* blames a negative fault, which doesn't apply to taking showers.\n"
+              "explanation": "【正解】2（このような）\n【文脈】銭湯の伝統やルールを指す指示表現。\n【解説】身近な例や直前の事柄を指す連体詞「このような」が正解です。\n【英訳】Such/like this"
             },
             {
               "id": 346,
@@ -4995,7 +4995,7 @@ export const practiceSetsBook = {
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "「初めての銭湯」\nピエール・マルタン\nあなたは、日本のお風呂といえば何を考えますか。温泉でしょうか、露天風呂でしょうか。いろいろありますが、私の場合は「銭湯」です。\n私の故郷には、毎日お風呂に入るという習慣はありません。[ 19 ]、日本へ来たばかりのときは、日本人が毎日お風呂に入るということを知って、とても驚きました。\n家にお風呂がある人は、家にお風呂に毎日入りますし、家にお風呂がない場合も、毎日のように家の近所にある「銭湯」に行きます。[ 20 ]習慣を持っている民族は、広い世界の中でもあまりないと思います。\n初めて銭湯に行ったときに、驚いたことがたくさんありました。[ 21-a ]、建物がお寺や神社のようなとても古い建物だったこと。第二に、入口が「男湯」と「女湯」に分かれていたこと。第三に、ほかの人の前で服を全部脱いでお風呂に入らなければならなかったこと。[ 21-b ]、お風呂のお湯の温度がとても高かったことです。\nしかし、今では日本の銭湯にも[ 22 ]。なにも気にせずに熱いお湯にゆっくり入れるようになりました。私もかなり「日本人」に近づいてきたという[ 23 ]。",
               "imageSrc": "/images/practice_sets/set_6_passage.jpg",
-              "explanation": "The correct answer is **2 入ってみると** (*haitte miru to*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nしかし、私も日本のやり方に慣れようと思って、実際にお風呂に（ **入ってみると** ）、体の疲れがすっかり取れることがわかりました。\n*Shikashi, watashi mo nihon no yarikata ni nareyō to omotte, jissai ni ofuro ni (**haitte miru to**), karada no tsukare ga sukkari toreru koto ga wakarimashita.*\n* **Meaning:**\n*\"However, wanting to get used to Japanese ways, **when I actually tried taking** a bath, I discovered that all my physical fatigue completely vanished.\"*\n\n---\n\n### Grammar Explanation\n\n* **〜てみると (N3 Grammar):**\nCombines exploratory *〜てみる* (*\"try doing\"*) with the conditional particle *と* to express discovering an unexpected truth or realization upon attempting an action (*\"when I tried doing..., I found that...\"*).\n*Context clue:* **実際に** (*\"actually\"*) and **わかりました** (*\"discovered / realized\"*) frame an exploratory trial followed by experiential insight.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 入ることにすると (*hairu koto ni suru to*):**\nRefers to making a personal rule; misses the physical experiential discovery.\n* **3 入ったばかりだと (*hatta bakari da to*):**\nFocuses on the state right after finishing, rather than the act of testing it out.\n* **4 入るようにすると (*hairu yō ni suru to*):**\nRefers to making an ongoing habitual effort, rather than the initial trial experience.\n"
+              "explanation": "【正解】2\n【文脈】銭湯の入浴順序（体を洗ってから湯船に入り、最後に体を拭く）。\n【解説】順序を説明する「まずは〜、最後に〜」が正解です。\n【英訳】a まずは / b 最後に"
             },
             {
               "id": 347,
@@ -5011,7 +5011,7 @@ export const practiceSetsBook = {
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "「初めての銭湯」\nピエール・マルタン\nあなたは、日本のお風呂といえば何を考えますか。温泉でしょうか、露天風呂でしょうか。いろいろありますが、私の場合は「銭湯」です。\n私の故郷には、毎日お風呂に入るという習慣はありません。[ 19 ]、日本へ来たばかりのときは、日本人が毎日お風呂に入るということを知って、とても驚きました。\n家にお風呂がある人は、家にお風呂に毎日入りますし、家にお風呂がない場合も、毎日のように家の近所にある「銭湯」に行きます。[ 20 ]習慣を持っている民族は、広い世界の中でもあまりないと思います。\n初めて銭湯に行ったときに、驚いたことがたくさんありました。[ 21-a ]、建物がお寺や神社のようなとても古い建物だったこと。第二に、入口が「男湯」と「女湯」に分かれていたこと。第三に、ほかの人の前で服を全部脱いでお風呂に入らなければならなかったこと。[ 21-b ]、お風呂のお湯の温度がとても高かったことです。\nしかし、今では日本の銭湯にも[ 22 ]。なにも気にせずに熱いお湯にゆっくり入れるようになりました。私もかなり「日本人」に近づいてきたという[ 23 ]。",
               "imageSrc": "/images/practice_sets/set_6_passage.jpg",
-              "explanation": "The correct answer is **3 欠かせない** (*kakasenai*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n今では、お風呂に入ることは私にとって一日の終わりに（ **欠かせない** ）時間になっています。\n*Ima de wa, ofuro ni hairu koto wa watashi ni totte ichinichi no owari ni (**kakasenai**) jikan ni natte imasu.*\n* **Meaning:**\n*\"Nowadays, taking a bath has become an **indispensable / essential** time at the end of the day for me.\"*\n\n---\n\n### Grammar Explanation\n\n* **欠かせない (N3 Vocabulary/Grammar):**\nNegative potential form of *欠く* (*kaku* = to lack/omit), functioning as an adjective modifying a noun (*\"indispensable\"*, *\"vital\"*, *\"unmissable\"*).\n*Context clue:* The author has grown completely fond of the Japanese bath routine, turning it into an essential daily fixture.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 欠ける (*kakeru*):**\nMeans *\"lacking / chipped\"*; gives an opposite, defective meaning.\n* **2 欠かせた (*kakaseta*):**\nCausative past; grammatically impossible before noun *時間*.\n* **4 欠かす (*kakasu*):**\nTransitive plain verb; cannot modify the noun directly with the meaning of \"essential\".\n"
+              "explanation": "【正解】3（慣れつつあります）\n【文脈】「最近は、銭湯の習慣にも [22] 。」\n【解説】事態の変化が徐々に進行していることを表す「連用形＋つつある」です。\n【英訳】in the process of / steadily continuing to..."
             },
             {
               "id": 348,
@@ -5027,7 +5027,7 @@ export const practiceSetsBook = {
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "「初めての銭湯」\nピエール・マルタン\nあなたは、日本のお風呂といえば何を考えますか。温泉でしょうか、露天風呂でしょうか。いろいろありますが、私の場合は「銭湯」です。\n私の故郷には、毎日お風呂に入るという習慣はありません。[ 19 ]、日本へ来たばかりのときは、日本人が毎日お風呂に入るということを知って、とても驚きました。\n家にお風呂がある人は、家にお風呂に毎日入りますし、家にお風呂がない場合も、毎日のように家の近所にある「銭湯」に行きます。[ 20 ]習慣を持っている民族は、広い世界の中でもあまりないと思います。\n初めて銭湯に行ったときに、驚いたことがたくさんありました。[ 21-a ]、建物がお寺や神社のようなとても古い建物だったこと。第二に、入口が「男湯」と「女湯」に分かれていたこと。第三に、ほかの人の前で服を全部脱いでお風呂に入らなければならなかったこと。[ 21-b ]、お風呂のお湯の温度がとても高かったことです。\nしかし、今では日本の銭湯にも[ 22 ]。なにも気にせずに熱いお湯にゆっくり入れるようになりました。私もかなり「日本人」に近づいてきたという[ 23 ]。",
               "imageSrc": "/images/practice_sets/set_6_passage.jpg",
-              "explanation": "The correct answer is **4 ぜひ体験してほしい** (*zehi taiken shite hoshii*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n日本へ来る予定のある外国人のみなさんにも、（ **ぜひ体験してほしい** ）と思います。\n*Nihon e kuru yotei no aru gaikokujin no minasan ni mo, (**zehi taiken shite hoshii**) to omoimasu.*\n* **Meaning:**\n*\"I hope that foreign visitors planning to come to Japan **will by all means experience it for themselves**.\"*\n\n---\n\n### Grammar Explanation\n\n* **ぜひ＋動詞テ形＋ほしい (N3 Grammar):**\n**ぜひ** (*\"by all means\"*) pairs with the desire marker **〜てほしい** (*\"I want [someone else] to do...\"*) to express an enthusiastic, warm recommendation to other people.\n*Context clue:* The author directs this concluding wish toward other international travelers (**外国人のみなさんにも...と思います**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 ぜひ体験したい (*zehi taiken shitai*):**\nExpresses speaker's own desire (\"I want to experience it\"); the author has already experienced it and is recommending it to others.\n* **2 まったく体験したくない (*mattaku taiken shitakunai*):**\nExpresses strong personal refusal (\"do not want to experience at all\"); completely contradicts the essay.\n* **3 決して体験してはいけない (*kesshite taiken shite wa ikenai*):**\nStrict prohibition (\"must never experience\"); absurdly opposite to the essay's message.\n"
+              "explanation": "【正解】4（ことでしょうか）\n【文脈】「日本の銭湯文化は、なんと素晴らしい [23] 。」\n【解説】詠嘆・感嘆を表す「なんと〜ことだろう / ことでしょうか」が正解です。\n【英訳】How wonderful it is!"
             }
           ]
         }
@@ -5550,7 +5550,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1　次の文の（　　）に入れるのに最もよいものを一つえらびなさい。",
-              "explanation": "The correct answer is **3 にかけて** (*ni kakete*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n九州から四国（ **にかけて** ）、激しい雨が降り続いています。\n*Kyūshū kara Shikoku (**ni kakete**), hageshii ame ga furitsuzuite imasu.*\n* **Meaning:**\n*\"Heavy rain continues to fall across the region **extending from** Kyushu **through into** Shikoku.\"*\n\n---\n\n### Grammar Explanation\n\n* **〜から〜にかけて (N3 Grammar):**\nDenotes an approximate continuous span or geographical expanse stretching from point A to point B (*\"from A through to B\"* / *\"extending from A across B\"*).\n*Context clue:* The preceding geographical starting boundary **九州から** (*\"from Kyushu\"*) directly pairs with **四国にかけて**.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 までに (*made ni*):**\nIndicates a time deadline; cannot express a broad geographic belt of rainfall.\n* **2 によって (*ni yotte*):**\nMeans *\"by means of\"* or *\"due to\"*; does not establish a spatial range.\n* **4 について (*ni tsuite*):**\nMeans *\"regarding / concerning\"*; irrelevant to weather geography.\n"
+              "explanation": "【正解】3（でも）\n【意味】子どもでもできる計算をまちがえてしまった。\n【英訳】I made a mistake on a calculation that even a child can do.\n【解説】極端な例を挙げて「〜でさえ」と強調する助詞は「でも」です。"
             },
             {
               "id": 385,
@@ -5564,7 +5564,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1　次の文の（　　）に入れるのに最もよいものを一つえらびなさい。",
-              "explanation": "The correct answer is **3 かけの** (*kake no*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nテーブルの上に、飲み（ **かけの** ）コーヒーが置いてある。\n*Tēburu no ue ni, nomi-(**kake no**) kōhī ga oite aru.*\n* **Meaning:**\n*\"A **half-finished / partially consumed** cup of coffee is left on the table.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞連用形＋かけの＋名詞 (N3 Grammar):**\nIndicates an action that was started but left midway or incomplete before reaching conclusion (*\"half-done\"*, *\"partially finished\"*). Attaches to a noun with **の**.\n*Context clue:* **置いてある** (*\"left placed there\"*) describes an unfinished beverage cup sitting on the table.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 きりの (*kiri no*):**\n*〜きり* denotes exclusive limitation (*\"only / left as is\"*); does not modify a beverage as unfinished.\n* **2 っぱなしで (*ppanashi de*):**\n*〜っぱなし* means left unattended, but takes *っぱなしの* to modify a noun, not *で*.\n* **4 終わりの (*owari no*):**\nMeans *\"the end of\"*; coffee that has been finished would be an empty cup, not partially drunk.\n"
+              "explanation": "【正解】3（ほど）\n【意味】うれしくて涙が出るほどだった。\n【英訳】I was so happy that it was to the extent of tears coming out.\n【解説】程度を表す「動詞辞書形＋ほどだ」で「〜するくらいだ」を表します。"
             },
             {
               "id": 386,
@@ -5578,7 +5578,7 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "sectionType": "grammar-reading",
               "instruction": "問題1　次の文の（　　）に入れるのに最もよいものを一つえらびなさい。",
-              "explanation": "The correct answer is **1 まるで** (*marude*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n彼の部屋は、（ **まるで** ）ホテルの部屋のようにきれいに片づいている。\n*Kare no heya wa, (**marude**) hoteru no heya no yō ni kirei ni katazuite iru.*\n* **Meaning:**\n*\"His room is tidied up so cleanly that it looks **just like / as if it were** a hotel room.\"*\n\n---\n\n### Grammar Explanation\n\n* **まるで〜ようだ／ように (N3 Grammar):**\nFixed correlative adverb: **まるで** (*\"as if / just like\"*) pairs strictly with the simile auxiliary **〜ようだ／ように** to introduce a vivid figurative comparison.\n*Context clue:* The comparative simile **ホテルの部屋のように** explicitly governs the adverb **まるで**.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 めったに (*metta ni*):**\nMeans *\"rarely\"* and pairs with a negative predicate; completely incompatible with a simile.\n* **3 たしか (*tashika*):**\nMeans *\"if I remember correctly\"*; does not pair with *〜のように*.\n* **4 ちょうど (*chōdo*):**\nMeans *\"exactly / just right\"*; does not form the figurative simile construction *まるで〜ようだ*.\n"
+              "explanation": "【正解】1（より）\n【意味】2年前よりギターを習い始めたそうです。\n【英訳】I heard he started learning the guitar two years ago.\n【解説】起点「〜から」の改まった表現として格助詞「より」が用いられます。"
             },
             {
               "id": 387,
@@ -5592,7 +5592,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1　次の文の（　　）に入れるのに最もよいものを一つえらびなさい。",
-              "explanation": "The correct answer is **3 読まないうちに** (*yomanai uchi ni*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n買った本は、熱が冷めて（ **読まないうちに** ）本棚にしまってしまうことが多い。\n*Katta hon wa, netsu ga samete (**yomanai uchi ni**) hondana ni shimatte shimau koto ga ōi.*\n* **Meaning:**\n*\"For books I purchase, once my initial excitement cools down, I often end up putting them away on the bookshelf **before I even read them**.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞否定形＋うちに (N3 Grammar):**\nExpresses doing something or an unwanted state occurring *before* a particular condition takes place (*\"before doing...\"* / *\"while still not having done...\"*).\n*Context clue:* **熱が冷めて** (*\"enthusiasm cooling down\"*) describes losing interest and shelving the book unread.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 読まないあいだに (*yomanai aida ni*):**\n*あいだに* denotes an interval; unnatural for expressing doing something before reading.\n* **2 読まないまでに (*yomanai made ni*):**\n*までに* indicates a deadline; cannot follow a negative verb like *読まない*.\n* **4 読まないうちにで (*yomanai uchi ni de*):**\nUngrammatical stacking of particles (*にで*).\n"
+              "explanation": "【正解】3（通りに）\n【意味】今から私の言う通りに、ノートに書いてください。\n【英訳】Please write in the notebook exactly as I say now.\n【解説】「動詞辞書形＋通りに（とおりに）」は「〜と同じように」という意味を表します。"
             },
             {
               "id": 388,
@@ -5606,7 +5606,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1　次の文の（　　）に入れるのに最もよいものを一つえらびなさい。",
-              "explanation": "The correct answer is **3 得る** (*uru*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n人間誰しも、失敗することはあり（ **得る** ）。\n*Ningen dareshimo, shippai suru koto wa ari-(**uru**).*\n* **Meaning:**\n*\"For any human being, making a mistake is something that is **entirely possible**.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞連用形＋得る（える／うる） (N3 Grammar):**\nAttaches to the continuative stem of a verb (here *あり* from *ある*) to express theoretical or circumstantial possibility (*\"can happen\"*, *\"is possible\"*).\n*Context clue:* **人間誰しも** (*\"anyone at all / every human\"*) expresses a universal truth about the inevitability of human error.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 抜く (*nuku*):**\nMeans *\"to do thoroughly to the very end\"* (e.g. やり抜く); nonsensical after *あり*.\n* **2 かねる (*kaneru*):**\nExpresses inability or hesitation; *ありかねる* is not standard Japanese.\n* **4 かける (*kakeru*):**\nExpresses starting or leaving unfinished; does not express philosophical possibility.\n"
+              "explanation": "【正解】3（に沿って）\n【意味】広い道路に沿って、まっすぐ10分くらい歩くと、会社に着きます。\n【英訳】Walk straight for about 10 minutes along the wide road.\n【解説】道路や川などの線に沿って進むときは「〜に沿って（にそって）」を用います。"
             },
             {
               "id": 389,
@@ -5620,7 +5620,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題1　次の文の（　　）に入れるのに最もよいものを一つえらびなさい。",
-              "explanation": "The correct answer is **2 参ります** (*mairimasu*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n田中「明日、午後3時にそちらへ（ **参ります** ）。」\n佐藤「お待ちしております。」\n*Tanaka: \"Ashita, gogo san-ji ni sochira e (**mairimasu**).\"*\n*Satō: \"Omachi shite orimasu.\"*\n* **Meaning:**\n*Tanaka: \"Tomorrow, I **will humbly visit / come to** your office at 3:00 PM.\"*\n*Satō: \"We will be eagerly waiting for you.\"*\n\n---\n\n### Grammar Explanation\n\n* **謙譲語「参る」 (N3 Keigo):**\nHumble verb (kenjōgo) for *行く* (*iku* = go) and *来る* (*kuru* = come). Used when the speaker is visiting the listener's place (**そちらへ**) to show deference.\n*Context clue:* Tanaka is stating his own arrival at the counterpart's premises (**そちらへ**), requiring kenjōgo.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 いらっしゃいます (*irasshaimasu*):**\nHonorific (sonkeigo) for the listener's actions; speaking about one's own arrival using sonkeigo is a grave keigo error.\n* **3 おいでになります (*oide ni narimasu*):**\nSonkeigo; cannot be applied to the speaker's own movement.\n* **4 伺われます (*ukagawaremasu*):**\nRedundant/incorrect passive formation of humble *伺う*.\n"
+              "explanation": "【正解】2（する）\n【意味】あの人があぶない運転をするなんて、信じられない。\n【英訳】It is unbelievable that that person would drive dangerously.\n【解説】「動詞辞書形＋なんて」で驚き・意外を表します。動詞は辞書形「する」が入ります。"
             },
             {
               "id": 390,
@@ -5634,7 +5634,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題1　次の文の（　　）に入れるのに最もよいものを一つえらびなさい。",
-              "explanation": "The correct answer is **2 らしい** (*rashii*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n山田くんは、いつも元気で男の子（ **らしい** ）ね。\n*Yamada-kun wa, itsumo genki de otokonoko-(**rashii**) ne.*\n* **Meaning:**\n*\"Yamada-kun is always cheerful and **truly boyish / acts just like a typical boy**, doesn't he?\"*\n\n---\n\n### Grammar Explanation\n\n* **名詞＋らしい (N3 Grammar):**\nExpresses that someone fully embodies the typical, commendable qualities or characteristics quintessential of that role or identity (*\"typical of\"*, *\"behaving like a true...\"*).\n*Context clue:* **いつも元気で** (*\"always full of energy\"*) highlights the classic positive traits associated with an active boy (**男の子らしい**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 っぽい (*ppoi*):**\nColloquial suffix often used for childish/cheap qualities, or resembling something one is not (e.g. 男っぽい for a woman acting masculine). Since Yamada is actually a boy, *らしい* is the correct essence marker.\n* **3 みたい (*mitai*):**\nExpresses external superficial resemblance; *男の子みたい* would imply he isn't actually a boy.\n* **4 ようだ (*yō da*):**\nSimile implying figurative comparison; lacks the quintessential attribute nuance of *らしい*.\n"
+              "explanation": "【正解】2（入るな）\n【意味】この教室には入るなと言われました。\n【英訳】I was told by the teacher not to enter this classroom.\n【解説】禁止の命令「入るな（Don't enter）」の間接引用です。"
             },
             {
               "id": 391,
@@ -5648,7 +5648,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1　次の文の（　　）に入れるのに最もよいものを一つえらびなさい。",
-              "explanation": "The correct answer is **3 一方で** (*ippō de*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nこの町は、自然が豊かな（ **一方で** ）、買い物できる店が少なくて少し不便だ。\n*Kono machi wa, shizen ga yutaka na (**ippō de**), kaimono dekiru mise ga sukunakute sukoshi fuben da.*\n* **Meaning:**\n*\"**While on one hand** this town is blessed with abundant nature, **on the other hand** there are few shops and it is a bit inconvenient.\"*\n\n---\n\n### Grammar Explanation\n\n* **な形容詞＋な＋一方で (N3 Grammar):**\nContrasts two opposing facets, pros and cons, or differing realities of the same subject (*\"on one hand..., but on the other hand...\"*).\n*Context clue:* The lush natural environment (**自然が豊かな**) is balanced against the retail inconvenience (**店が少なくて少し不便だ**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 反対に (*hantai ni*):**\nAdverb; doesn't connect directly after *豊かな* without *その反対に*.\n* **2 せいで (*sei de*):**\nBlames a negative cause; having rich nature is not the blame for lack of supermarkets.\n* **4 ために (*tame ni*):**\nExpresses purpose or objective cause; unsuited for contrasting positive and negative qualities.\n"
+              "explanation": "【正解】3（できっこない）\n【意味】1人で10人分の仕事をするなんてできっこない。\n【英訳】Doing the work of 10 people all by oneself is completely impossible.\n【解説】「動詞連用形＋っこない」は話し言葉で「絶対に〜できるはずがない」という強い否定を表します。"
             },
             {
               "id": 392,
@@ -6545,7 +6545,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **3 いただく** (*itadaku*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n加藤「先輩、この書類のチェックをお願いできますか。」\n先輩「うん、今日中に見て（ **いただく** ）...あ、違う、見てあげるよ！」\n*Katō: \"Senpai, kono shorui no chekku o onegai dekimasu ka.\"*\n*Senpai: \"Un, kyōjū ni mite (**itadaku**)... a, chigau, mite ageru yo!\"*\n* **Japanese (Correct Sentence):**\nお客様にこちらのアンケートにご記入（ **いただく** ）ことは可能でしょうか。\n*Okyakusama ni kochira no ankēto ni go-kinyū (**itadaku**) koto wa kanō deshō ka.*\n* **Meaning:**\n*\"Would it be possible **to have our esteemed guests** fill out this questionnaire?\"*\n\n---\n\n### Grammar Explanation\n\n* **ご＋名詞＋いただく (N3 Keigo):**\nHumble benefactive construction (kenjōgo) requesting or receiving a polite action from customers or clients (*\"to have someone honorably do...\"*).\n*Context clue:* Marked with **お客様に**, showing that the business is respectfully receiving compliance from customers.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 さしあげる (*sashiageru*):**\nKenjōgo for giving to others; customers are doing the writing, not receiving the writing.\n* **2 もらう (*morau*):**\nPlain form; insufficiently polite for addressing or accommodating customers (*お客様*).\n* **4 やる (*yaru*):**\nBlunt/casual form; completely unacceptable toward customers.\n"
+              "explanation": "【解説】一般的な真理や本質を述べる「〜というものだ」：「苦しいことのあとにいいことがあるのが人生というものだ」。\n【英訳】〜というものだ - that's what life is."
             },
             {
               "id": 454,
@@ -6559,7 +6559,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **3 読んでいる最中に** (*yonde iru saichū ni*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n本を（ **読んでいる最中に** ）、突然停電して部屋が真っ暗になった。\n*Hon o (**yonde iru saichū ni**), totsuzen teiden shite heya ga makkura ni natta.*\n* **Meaning:**\n*\"**Right in the middle of reading** a book, a sudden blackout struck and the room went pitch dark.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞テ形＋いる最中に (N3 Grammar):**\nIndicates that an unexpected, disruptive external event suddenly intervened right in the very climax or peak of an ongoing action (*\"right in the middle of...\"*).\n*Context clue:* **突然停電して** (*\"suddenly a blackout occurred\"*) is a classic disruptive event that cuts off an in-progress activity.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 読んでいるうちに (*yonde iru uchi ni*):**\nExpresses gradual natural changes while doing something; lacks the vivid disruption nuance of *最中に*.\n* **2 読んでいるあいだで (*yonde iru aida de*):**\nUngrammatical particle combination; temporal intervals take *あいだに*, not *あいだで*.\n* **4 読んでいるばかりに (*yonde iru bakari ni*):**\nBlames reading for causing the catastrophe; reading does not cause an electrical grid blackout.\n"
+              "explanation": "【解説】不本意な困った結果になる「〜はめになる」：「追加でお金を払うはめになった」。\n【英訳】〜はめになる - ended up in the trouble of paying."
             },
             {
               "id": 455,
@@ -6645,7 +6645,7 @@ export const practiceSetsBook = {
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "働く女性のためのセミナー\r\n今度の日曜日に、働く女性を応援するためのセミナー、「ジョブ・セミナー　働く女性の新しい生き方」の第1回目の講座が、駅前の市民ホールで行われる予定です。\r\n現代の働く女性には、会社員、母、妻、娘など、いろいろな役割があり、いそがしい人が増えています。しかし以前よりいそがしくなった［　19-a　］、手伝ってくれる人がいないのが［　19-b　］。このセミナーでは、さまざまな業界で活躍されている女性が講師となり、全5回の予定で、［　20　］女性の生き方、上手な働き方を参加者とともに考えていきます。\r\nただ講演を聞く［　21　］、質問をしたり、意見を言える方を募集します。\r\n第1回目の講師は、会社を経営する森川花子さんです。「仕事を持つ女性の時間の使い方」をテーマにセミナーを行います。講演のあとに、講師と参加者の方が交流することができるパーティーもあります。\r\n第2回目［　22　］講師の予定など、その他の内容については、市民ホールのホームページで公開しています。参加をご希望の方は、市民ホール事務所まで直接電話でお申し込みください。みなさまのご参加を［　23　］。",
               "imageSrc": "/images/practice_sets/set_8_passage.jpg",
-              "explanation": "The correct answer is **4 開催されます** (*kaisai saremasu*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n働く女性を対象としたセミナーが、来月文化ホールで（ **開催されます** ）。\n*Hataraku josei o taishō to shita seminā ga, raigetsu bunka hōru de (**kaisai saremasu**).*\n* **Meaning:**\n*\"A seminar aimed at working women **will be held** next month at the Cultural Hall.\"*\n\n---\n\n### Grammar Explanation\n\n* **受身形「開催される」 (N3 Grammar):**\nPassive form of *開催する* (*kaisai suru* = to hold an event). In public notices and announcements, inanimate events take the passive voice (*\"is held / will be conducted\"*).\n*Context clue:* The subject is the seminar event (**セミナーが**), which is scheduled for next month (**来月**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 開催します (*kaisai shimasu*):**\nActive voice; requires an explicit human host as subject, whereas here the grammatical subject is the event *セミナーが*.\n* **2 開催させます (*kaisai sasemasu*):**\nCausative (\"make someone hold it\"); inappropriate for a public bulletin announcement.\n* **3 開催させられます (*kaisai saseraremasu*):**\nCausative-passive (\"forced to hold it\"); implies involuntary coercion.\n"
+              "explanation": "【解説】「以前より忙しくなった［にもかかわらず］、手伝ってくれる人がいないのが［現状です］」。逆接と事実の報告です。\n【英訳】にもかかわらず / 現状です - despite becoming busier, the reality is..."
             },
             {
               "id": 461,
@@ -6661,7 +6661,7 @@ export const practiceSetsBook = {
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "働く女性のためのセミナー\r\n今度の日曜日に、働く女性を応援するためのセミナー、「ジョブ・セミナー　働く女性の新しい生き方」の第1回目の講座が、駅前の市民ホールで行われる予定です。\r\n現代の働く女性には、会社員、母、妻、娘など、いろいろな役割があり、いそがしい人が増えています。しかし以前よりいそがしくなった［　19-a　］、手伝ってくれる人がいないのが［　19-b　］。このセミナーでは、さまざまな業界で活躍されている女性が講師となり、全5回の予定で、［　20　］女性の生き方、上手な働き方を参加者とともに考えていきます。\r\nただ講演を聞く［　21　］、質問をしたり、意見を言える方を募集します。\r\n第1回目の講師は、会社を経営する森川花子さんです。「仕事を持つ女性の時間の使い方」をテーマにセミナーを行います。講演のあとに、講師と参加者の方が交流することができるパーティーもあります。\r\n第2回目［　22　］講師の予定など、その他の内容については、市民ホールのホームページで公開しています。参加をご希望の方は、市民ホール事務所まで直接電話でお申し込みください。みなさまのご参加を［　23　］。",
               "imageSrc": "/images/practice_sets/set_8_passage.jpg",
-              "explanation": "The correct answer is **1 働き続けたいという** (*hatarakitsuzuketai to iu*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n結婚や出産を経ても（ **働き続けたいという** ）女性の声に応えるための企画です。\n*Kekkon ya shussan o hete mo (**hatarakitsuzuketai to iu**) josei no koe ni kotaeru tame no kikaku desu.*\n* **Meaning:**\n*\"This project was organized to respond to the voices of women **who wish to continue working** even after marriage or childbirth.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞連用形＋続けたい＋という (N3 Grammar):**\n**〜続ける** expresses ongoing persistence (*\"continue doing\"*); **〜たい** expresses personal desire (*\"want to\"*); **という** quotes and attributes this shared sentiment to the women's voices (**女性の声**).\n*Context clue:* The seminar aims to support career retention through major life transitions (**結婚や出産を経ても**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 働き続けたがるという (*hatarakitsuzuketagaru to iu*):**\n*〜たがる* describes third-person observable cravings; clinical and less empathetic than *〜たいという女性の声*.\n* **3 働き続けるしかないという (*hatarakitsuzukeru shikanai to iu*):**\nMeans *\"have no choice but to keep working\"*; frames careers as a chore rather than an empowering ambition.\n* **4 働き続けるべきではないという (*hatarakitsuzukerubeki dewa nai to iu*):**\nMeans *\"should not keep working\"*; directly opposes the seminar's mission.\n"
+              "explanation": "【解説】「［これからの］女性の生き方」＝今後・未来の女性の生き方。\n【英訳】これからの - future / from now on."
             },
             {
               "id": 462,
@@ -6677,7 +6677,7 @@ export const practiceSetsBook = {
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "働く女性のためのセミナー\r\n今度の日曜日に、働く女性を応援するためのセミナー、「ジョブ・セミナー　働く女性の新しい生き方」の第1回目の講座が、駅前の市民ホールで行われる予定です。\r\n現代の働く女性には、会社員、母、妻、娘など、いろいろな役割があり、いそがしい人が増えています。しかし以前よりいそがしくなった［　19-a　］、手伝ってくれる人がいないのが［　19-b　］。このセミナーでは、さまざまな業界で活躍されている女性が講師となり、全5回の予定で、［　20　］女性の生き方、上手な働き方を参加者とともに考えていきます。\r\nただ講演を聞く［　21　］、質問をしたり、意見を言える方を募集します。\r\n第1回目の講師は、会社を経営する森川花子さんです。「仕事を持つ女性の時間の使い方」をテーマにセミナーを行います。講演のあとに、講師と参加者の方が交流することができるパーティーもあります。\r\n第2回目［　22　］講師の予定など、その他の内容については、市民ホールのホームページで公開しています。参加をご希望の方は、市民ホール事務所まで直接電話でお申し込みください。みなさまのご参加を［　23　］。",
               "imageSrc": "/images/practice_sets/set_8_passage.jpg",
-              "explanation": "The correct answer is **3 参加してみてはどうでしょうか** (*sanka shite mite wa dō deshō ka*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n将来のキャリアに不安を抱えている方は、ぜひ（ **参加してみてはどうでしょうか** ）。\n*Shōrai no kyaria ni fuan o kakaete iru kata wa, zehi (**sanka shite mite wa dō deshō ka**).*\n* **Meaning:**\n*\"For those harboring anxiety about their future career, **why not consider participating**?\"*\n\n---\n\n### Grammar Explanation\n\n* **〜てみてはどうでしょうか (N3 Grammar):**\nCombines experiential *〜てみる* (*\"try doing\"*) with the polite advisory question **〜てはどうでしょうか** (*\"how about...?\"*). Recommended approach for invitations in public announcements.\n*Context clue:* The adverb **ぜひ** (*\"by all means\"*) pairs naturally with a welcoming invitation.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 参加するべきではありません (*sanka surubeki dewa arimasen*):**\nProhibition (\"you should not participate\"); absurd on an informational flyer.\n* **2 参加するはずがありません (*sanka suru hazu ga arimasen*):**\nMeans *\"there is no way you would participate\"*; insulting to the reader.\n* **4 参加するにすぎないでしょう (*sanka suru ni suginai deshō*):**\nMeans *\"you will merely just participate\"*; belittles the value of the event.\n"
+              "explanation": "【解説】「ただ講演を聞く［だけでなく］、質問をしたり…」＝〜に加えて。\n【英訳】だけでなく - not only..., but also..."
             },
             {
               "id": 463,
@@ -6693,7 +6693,7 @@ export const practiceSetsBook = {
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "働く女性のためのセミナー\r\n今度の日曜日に、働く女性を応援するためのセミナー、「ジョブ・セミナー　働く女性の新しい生き方」の第1回目の講座が、駅前の市民ホールで行われる予定です。\r\n現代の働く女性には、会社員、母、妻、娘など、いろいろな役割があり、いそがしい人が増えています。しかし以前よりいそがしくなった［　19-a　］、手伝ってくれる人がいないのが［　19-b　］。このセミナーでは、さまざまな業界で活躍されている女性が講師となり、全5回の予定で、［　20　］女性の生き方、上手な働き方を参加者とともに考えていきます。\r\nただ講演を聞く［　21　］、質問をしたり、意見を言える方を募集します。\r\n第1回目の講師は、会社を経営する森川花子さんです。「仕事を持つ女性の時間の使い方」をテーマにセミナーを行います。講演のあとに、講師と参加者の方が交流することができるパーティーもあります。\r\n第2回目［　22　］講師の予定など、その他の内容については、市民ホールのホームページで公開しています。参加をご希望の方は、市民ホール事務所まで直接電話でお申し込みください。みなさまのご参加を［　23　］。",
               "imageSrc": "/images/practice_sets/set_8_passage.jpg",
-              "explanation": "The correct answer is **4 申し込み順** (*mōshikomijun*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n定員は50名で、（ **申し込み順** ）となっておりますので、お早めにお申し込みください。\n*Teiin wa gojū-mei de, (**mōshikomijun**) to natte orimasu node, ohayame ni omōshikomi kudasai.*\n* **Meaning:**\n*\"Capacity is 50 participants on a **first-come, first-served (application order) basis**, so please apply early.\"*\n\n---\n\n### Grammar Explanation\n\n* **名詞＋順 (N3 Vocabulary/Business):**\nSuffix meaning *\"in order of...\"*. **申し込み順** means first-come, first-served (*\"in order of application receipt\"*).\n*Context clue:* **定員は50名** (*\"capacity is 50 people\"*) and **お早めに** (*\"apply early\"*) are standard business phrases signalling first-come quota registration.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 申し込み代 (*mōshikomidai*):**\nFee/charge; *代* does not pair with *となっております* for registration priority.\n* **2 申し込み風 (*mōshikomifū*):**\nMeans *\"application-style\"*; nonsensical.\n* **3 申し込み感 (*mōshikomikan*):**\nMeans *\"feeling of applying\"*; nonsensical.\n"
+              "explanation": "【解説】「第2回目［以降の］講師の予定」＝2回目からそれ以降。\n【英訳】以降の - from the 2nd session onwards."
             },
             {
               "id": 464,
@@ -6709,7 +6709,7 @@ export const practiceSetsBook = {
               "instruction": "問題3 つぎの文章を読んで 19 から 23 の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "passageText": "働く女性のためのセミナー\r\n今度の日曜日に、働く女性を応援するためのセミナー、「ジョブ・セミナー　働く女性の新しい生き方」の第1回目の講座が、駅前の市民ホールで行われる予定です。\r\n現代の働く女性には、会社員、母、妻、娘など、いろいろな役割があり、いそがしい人が増えています。しかし以前よりいそがしくなった［　19-a　］、手伝ってくれる人がいないのが［　19-b　］。このセミナーでは、さまざまな業界で活躍されている女性が講師となり、全5回の予定で、［　20　］女性の生き方、上手な働き方を参加者とともに考えていきます。\r\nただ講演を聞く［　21　］、質問をしたり、意見を言える方を募集します。\r\n第1回目の講師は、会社を経営する森川花子さんです。「仕事を持つ女性の時間の使い方」をテーマにセミナーを行います。講演のあとに、講師と参加者の方が交流することができるパーティーもあります。\r\n第2回目［　22　］講師の予定など、その他の内容については、市民ホールのホームページで公開しています。参加をご希望の方は、市民ホール事務所まで直接電話でお申し込みください。みなさまのご参加を［　23　］。",
               "imageSrc": "/images/practice_sets/set_8_passage.jpg",
-              "explanation": "The correct answer is **3 皆様のご参加をお待ちしております** (*minasan no gosanka o omachi shite orimasu*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nスタッフ一同、（ **皆様のご参加をお待ちしております** ）。\n*Sutaffu ichidō, (**minasama no gosanka o omachi shite orimasu**).*\n* **Meaning:**\n*\"All of our staff **humbly look forward to everyone's participation**.\"*\n\n---\n\n### Grammar Explanation\n\n* **お＋動詞連用形＋する／おる (N3 Keigo):**\nHumble formula (kenjōgo) used by event organizers to express polite anticipation (*\"we humbly await your attendance\"*).\n*Context clue:* **スタッフ一同** (*\"the entire staff\"*) is the host organization expressing hospitality toward prospective guests (**皆様**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 皆様がご参加をお待ちになります (*minasama ga gosanka o omachi ni narimasu*):**\nSonkeigo wrongly stating that the customers are waiting for the staff.\n* **2 皆様のご参加を待たせられます (*minasama no gosanka o mataseraremasu*):**\nCausative-passive (\"forced to wait\"); rude and nonsensical.\n* **4 皆様のご参加をお待ちさせます (*minasama no gosanka o omachi sasemasu*):**\nCausative; grammatically distorted.\n"
+              "explanation": "【解説】「みなさまのご参加を［お待ちいたしております］」。謙譲語で丁寧に参加を待つ表現です。\n【英訳】お待ちいたしております - humble form of waiting/looking forward to."
             }
           ]
         }
@@ -7211,7 +7211,7 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **1 おかげで** (*okage de*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n先生がわかりやすく教えてくださった（ **おかげで** ）、難しい試験に合格できた。\n*Sensei ga wakariyasuku oshiete kudasatta (**okage de**), muzukashii shiken ni gōkaku dekita.*\n* **Meaning:**\n*\"**Thanks to** the teacher explaining things so clearly, I was able to pass the difficult exam.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞普通形＋おかげで (N3 Grammar):**\nAttributes a positive, successful outcome to a helpful cause, person, or effort with a sense of appreciation (*\"thanks to...\"*).\n*Context clue:* Passing a tough exam (**難しい試験に合格できた**) is a triumphant success made possible by the teacher's guidance.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 せいで (*sei de*):**\nBlames a cause for a bad result (*\"because of / on account of [fault]\"*); completely clashes with passing an exam.\n* **3 ために (*tame ni*):**\nObjective cause or purpose; lacks the grateful personal attribution expressed toward the teacher.\n* **4 わりに (*wari ni*):**\nExpresses disparity (*\"considering that...\"*); inappropriate between good teaching and passing.\n"
+              "explanation": "【解説】方法を尋ねる疑問詞「どう」：「どう行けばいいか教えてください」。\n【英訳】どう - how to go."
             },
             {
               "id": 3,
@@ -7225,7 +7225,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **3 一方で** (*ippō de*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n都会の生活は便利な（ **一方で** ）、生活費が高くてストレスも多い。\n*Tokai no seikatsu wa benri na (**ippō de**), seikatsuhi ga takakute sutoresu mo ōi.*\n* **Meaning:**\n*\"**While on one hand** city life is convenient, **on the other hand** the cost of living is steep and stress is high.\"*\n\n---\n\n### Grammar Explanation\n\n* **な形容詞＋な＋一方で (N3 Grammar):**\nContrasts two coexisting, opposite aspects of the same situation (*\"on the one hand..., but on the other hand...\"*).\n*Context clue:* Convenience (**便利な**) directly contrasts with the economic and psychological burdens of urban life (**生活費が高くてストレスも多い**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 反面で (*hanmen de*):**\nWhile *反面* exists, *な一方で* is the standard JLPT N3 grammar item tested with na-adjectives.\n* **2 うえで (*ue de*):**\nMeans *\"after doing\"* or *\"in terms of\"*; does not set up a parallel contrast.\n* **4 とおりで (*tōri de*):**\nMeans *\"in accordance with\"*; nonsensical when contrasting pros and cons.\n"
+              "explanation": "【解説】「〜したらすぐに」を表す「動詞連用形＋次第」：「駅に着き次第」。\n【英訳】〜次第 - as soon as / upon arrival."
             },
             {
               "id": 4,
@@ -7239,7 +7239,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **2 降るおそれがある** (*furu osore ga aru*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n台風の接近に伴い、明日は激しい雨が（ **降るおそれがある** ）。\n*Taifū no sekkin ni tomonai, ashita wa hageshii ame ga (**furu osore ga aru**).*\n* **Meaning:**\n*\"Accompanying the approach of the typhoon, **there is a danger / risk that** torrential rain will fall tomorrow.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞辞書形＋おそれがある (N3 Grammar):**\nFormal expression used in news, forecasts, and public announcements to warn that there is a serious danger or risk of an undesirable event occurring (*\"there is a risk/fear that...\"*).\n*Context clue:* **台風の接近に伴い** (*\"with the approach of the typhoon\"*) signals an official weather hazard advisory.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 降る可能性がある (*furu kanōsei ga aru*):**\nWhile possibility exists, hazardous natural disasters in weather forecasts conventionally use *おそれがある*.\n* **3 降るはずがない (*furu hazu ga nai*):**\nMeans *\"there is no way it will rain\"*; contradicts a typhoon approaching.\n* **4 降るわけではない (*furu wake dewa nai*):**\nMeans *\"it doesn't mean it will rain\"*; inappropriately dismissive during an oncoming storm.\n"
+              "explanation": "【解説】不確実な推量を表す呼応「もしかしたら〜かもしれない」：「もしかしたら雨が降るかもしれない」。\n【英訳】もしかしたら〜かもしれない - perhaps/maybe."
             },
             {
               "id": 5,
@@ -7253,7 +7253,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **2 を通して** (*o tōshite*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n留学の経験（ **を通して** ）、異文化を理解することの大切さを学んだ。\n*Ryūgaku no keiken (**o tōshite**), ibunka o rikai suru koto no taisetsusa o mananda.*\n* **Meaning:**\n*\"**Through** my study abroad experience, I learned the importance of understanding different cultures.\"*\n\n---\n\n### Grammar Explanation\n\n* **名詞＋を通して（をとおして） (N3 Grammar):**\nIndicates a medium, experience, or agency through which learning, growth, or a relationship is realized (*\"through / via the medium of...\"*).\n*Context clue:* Studying abroad (**留学の経験**) was the formative vehicle through which profound cross-cultural lessons were acquired (**学んだ**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 を込めて (*o komete*):**\nMeans *\"putting one's feelings/love into something\"* (e.g. 心を込めて); cannot attach to study abroad experience.\n* **3 をめぐって (*o megutte*):**\nMeans *\"concerning / arguing over [a dispute]\"*; irrelevant to personal learning.\n* **4 を問わず (*o towazu*):**\nMeans *\"regardless of\"* (e.g. 昼夜を問わず); makes no sense here.\n"
+              "explanation": "【解説】過去の経験を表す「た形＋ことがある」：「アメリカへ行ったことがありますか」。\n【英訳】〜たことがある - have the experience of."
             },
             {
               "id": 6,
@@ -7267,7 +7267,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **2 申しました** (*mōshimashita*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n先ほど電話で山田が（ **申しました** ）ように、明日の会議は中止となりました。\n*Sakihodo denwa de Yamada ga (**mōshimashita**) yō ni, ashita no kaigi wa chūshi to narimashita.*\n* **Meaning:**\n*\"As Yamada from our company **humbly stated** over the phone earlier, tomorrow's meeting has been cancelled.\"*\n\n---\n\n### Grammar Explanation\n\n* **謙譲語「申す」 (N3 Keigo):**\nHumble verb (kenjōgo) for *言う* (*iu* = to say). When speaking to a customer or external client about one's own company colleague (Yamada), humble language must be used without honorific suffixes.\n*Context clue:* **山田が** refers to an in-group co-worker speaking to an out-group client, requiring kenjōgo.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 おっしゃいました (*osshaimashita*):**\nHonorific (sonkeigo); using sonkeigo for one's own coworker in front of clients is a severe business etiquette violation.\n* **3 言われました (*iwaremashita*):**\nPassive honorific; elevates the coworker inappropriately.\n* **4 申し上げました (*mōshiagemashita*):**\n*申し上げる* is humble for saying something *to* the listener, but reporting Yamada's utterance content (*山田が申しましたように*) takes standard humble *申す*.\n"
+              "explanation": "【解説】社会的責任や義務から「〜することはできない」を表す「〜わけにはいかない」：「負けるわけにはいかない」。\n【英訳】〜わけにはいかない - cannot afford to lose."
             },
             {
               "id": 7,
@@ -7281,7 +7281,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **4 にしては** (*ni shite wa*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n彼は、日本に来てまだ3か月（ **にしては** ）、日本語がとても上手だ。\n*Kare wa, Nihon ni kite mada san-kagetsu (**ni shite wa**), nihongo ga totemo jōzu da.*\n* **Meaning:**\n*\"**Considering that** he has only been in Japan for 3 months, his Japanese is remarkably proficient.\"*\n\n---\n\n### Grammar Explanation\n\n* **名詞／普通形＋にしては (N3 Grammar):**\nExpresses that a fact or outcome departs significantly from what one would normally expect based on a given condition or benchmark (*\"for...\"* / *\"considering that...\"*).\n*Context clue:* Being in Japan for a mere three months (**まだ3か月**) makes exceptional fluency (**とても上手だ**) pleasantly surprising.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 に反して (*ni hanshite*):**\nMeans *\"contrary to [rules/expectations]\"*; takes expectations (e.g. 予想に反して), not a time duration.\n* **2 に応じて (*ni ōjite*):**\nMeans *\"in response to / in accordance with\"*; does not express unexpected contrast.\n* **3 に沿って (*ni sotte*):**\nMeans *\"along / conforming to [a plan]\"*; irrelevant to evaluating proficiency.\n"
+              "explanation": "【解説】継続を表す「動詞ます形＋つづける」：「5時間見つづけて」。\n【英訳】動詞ます形＋つづける - continue doing for 5 hours."
             },
             {
               "id": 8,
@@ -8133,7 +8133,7 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **1 はずだ** (*hazu da*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n田中さんは3年間アメリカに住んでいたのだから、英語が話せる（ **はずだ** ）。\n*Tanaka-san wa san-nenkan Amerika ni sunde ita no dakara, eigo ga hanaseru (**hazu da**).*\n* **Meaning:**\n*\"Since Tanaka-san lived in America for 3 years, he **ought to / should certainly be able to** speak English.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞可能形＋はずだ (N3 Grammar):**\nExpresses a natural expectation, logical deduction, or high-probability conviction based on objective reasons (*\"should be able to...\"* / *\"ought to...\"*).\n*Context clue:* Living in the United States for three continuous years (**3年間アメリカに住んでいたのだから**) provides sound justification for expecting English fluency.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 べきだ (*beki da*):**\nExpresses moral obligation or duty (*\"must do\"*; e.g. 守るべきだ); acquiring linguistic ability is an expectation, not a moral imperative.\n* **3 わけだ (*wake da*):**\nExplains an already observed fact; *はずだ* is the natural deduction based on background grounds.\n* **4 ほどだ (*hodo da*):**\nExpresses degree; ungrammatical after *英語が話せる*.\n"
+              "explanation": "【解説】過去の習慣や思い出を感慨深く振り返る「た形＋ものです」を用います。「子どものころは、この川でよく泳いだものです」。\n【英訳】〜たものです - used to (reminiscing past habit)."
             },
             {
               "id": 12,
@@ -8147,7 +8147,7 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **1 あまり** (*amari*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n試験の前の日は、緊張の（ **あまり** ）、一睡もできなかった。\n*Shiken no mae no hi wa, kinchō no (**amari**), issui mo dekinakatta.*\n* **Meaning:**\n*\"On the day before the examination, **out of excessive / in an excess of** nervous tension, I couldn't sleep a single wink.\"*\n\n---\n\n### Grammar Explanation\n\n* **感情名詞＋のあまり (N3 Grammar):**\nIndicates that an emotion, stress, or psychological state was so extreme and overwhelming that it produced an unusual, involuntary, or extreme physical reaction (*\"out of an excess of...\"*).\n*Context clue:* **緊張** (*nervousness*) reached such an unbearable peak that the speaker suffered complete insomnia (**一睡もできなかった**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 かぎり (*kagiri*):**\nMeans *\"as long as / to the limit of\"*; *緊張のかぎり* is unidiomatic here.\n* **3 かわりに (*kawari ni*):**\nMeans *\"instead of\"*; emotional tension cannot substitute for sleep.\n* **4 うえに (*ue ni*):**\nMeans *\"on top of\"*; does not express causation driven by psychological overflow.\n"
+              "explanation": "【解説】相手からの好意や配慮によって恩恵を受けたことを表す「〜していただく」を用います。「楽しくこの仕事をしていただきました」。\n【英訳】〜していただく - receive the favor of..."
             },
             {
               "id": 13,
@@ -8161,7 +8161,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **3 行くまい** (*iku mai*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nあんな失礼な態度を取られた店には、もう二度と（ **行くまい** ）。\n*Anna shitsurei na taido o torareta mise ni wa, mō nido to (**iku mai**).*\n* **Meaning:**\n*\"To a shop where I was treated with such rude service, I **resolve never to go** ever again.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞辞書形＋まい (N3 Grammar):**\nExpresses firm negative volition and determination of the speaker (*\"I will never do... again\"* / *\"I resolve not to...\"*). For godan verbs like *行く*, it attaches to the dictionary form (*行くまい*).\n*Context clue:* The pairing with **もう二度と** (*\"never again\"*) reinforces ironclad negative determination.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 行こう (*ikō*):**\nAffirmative volitional (\"let's go\"); completely contradicts *二度と* and the anger over rude treatment.\n* **2 行かない (*ikanai*):**\nPlain negative; while grammatically possible, *まい* conveys the emphatic personal vow tested at JLPT N3 level.\n* **4 行くまいか (*iku mai ka*):**\nRhetorical doubt (\"shall I not go?\"); destroys the firm declaration of boycotting the shop.\n"
+              "explanation": "【解説】全否定「〜というものではない（必ずしも〜とは言えない）」を用い、「新聞が伝えているから正しいというものではなく、自分で考えることが大切だ」となります。\n【英訳】〜というものではなく - it is not necessarily the case that..."
             },
             {
               "id": 14,
@@ -8246,7 +8246,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題3 つぎの文章は、ある雑誌にのった記事です。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "The correct answer is **2 欠かせない** (*kakasenai*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n人と人との信頼関係を築くうえで、日々のコミュニケーションは（ **欠かせない** ）ものである。\n*Hito to hito to no shinrai kankei o kizuku ue de, hibi no komyunikēshon wa (**kakasenai**) mono de aru.*\n* **Meaning:**\n*\"In building relationships of mutual trust between people, daily communication is an **indispensable** element.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞可能否定「欠かせない」 (N3 Vocabulary/Grammar):**\nAdnominal phrase modifying a noun (*もの*) to express that something cannot be omitted or lacked (*\"essential\"*, *\"indispensable\"*).\n*Context clue:* Fostering deep interpersonal trust (**信頼関係を築くうえで**) fundamentally depends on frequent dialogue.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 欠ける (*kakeru*):**\nMeans *\"lacking / defective\"*; opposite meaning.\n* **3 欠かせられる (*kakaserareru*):**\nCausative-passive; distorted and ungrammatical.\n* **4 欠かす (*kakasu*):**\nActive transitive verb; cannot modify *もの* with the meaning of \"vital\".\n"
+              "explanation": "【解説】文脈「男性の心をつかむには、まず胃袋から」「食事は男性にとっては重要」より、「おいしい料理」を作ってくれる女性に惹かれることを述べています。\n【英訳】おいしい料理 - delicious food / good cooking."
             },
             {
               "id": 20,
@@ -8261,7 +8261,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題3 つぎの文章は、ある雑誌にのった記事です。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "The correct answer is **4 一方で** (*ippō de*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nおいしい料理を一緒に食べることで会話が弾む（ **一方で** ）、互いの好みを尊重することも忘れてはならない。\n*Oishii ryōri o issho ni taberu koto de kaiwa ga hazumu (**ippō de**), tagai no konomi o sonchō suru koto mo wasurete wa naranai.*\n* **Meaning:**\n*\"**While on one hand** sharing delicious food enlivens conversation, **on the other hand** one must not forget to respect each other's culinary preferences.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞普通形＋一方で (N3 Grammar):**\nBalances two concurrent truths, facets, or responsibilities (*\"while..., on the other hand...\"*).\n*Context clue:* The fun of eating together is balanced with the mindful etiquette of respecting individual food likes and dislikes (**忘れてはならない**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 反対に (*hantai ni*):**\nAdverb; requires a preceding standalone sentence or connector.\n* **2 せいで (*sei de*):**\nBlames a negative outcome; conversational enjoyment is not a harmful fault.\n* **3 ために (*tame ni*):**\nExpresses purpose/cause; fails to provide the balanced perspective.\n"
+              "explanation": "【解説】直後で「人と人とのコミュニケーションにおいて、食べ物は非常に重要な役割をはたすからです」と理由（〜からです）を説明しているため、理由を導く接続詞「なぜなら」が正解です。\n【英訳】なぜなら〜からです - because... / reason being..."
             },
             {
               "id": 21,
@@ -8276,7 +8276,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題3 つぎの文章は、ある雑誌にのった記事です。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "The correct answer is **4 と言っても過言ではない** (*to itte mo kagon dewa nai*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n食を通じた交流は、人間関係を深める最も効果的な方法の1つだ（ **と言っても過言ではない** ）。\n*Shoku o tsūjita kōryū wa, ningen kankei o fukameru mottomo kōkateki na hōhō no hitotsu da (**to itte mo kagon dewa nai**).*\n* **Meaning:**\n*\"**It is no exaggeration to say that** interaction through food is one of the most effective methods for deepening human relationships.\"*\n\n---\n\n### Grammar Explanation\n\n* **〜と言っても過言ではない (N3/N2 Grammar):**\nRhetorical discourse expression used to assert a strong, bold conclusion without overstatement (*\"it is no exaggeration to say that...\"* / *\"one can safely say that...\"*).\n*Context clue:* The author is formulating the central thesis and crowning insight of the entire article.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 と言わざるを得ない (*to iwazaru o enai*):**\nExpresses being reluctantly forced to admit an unpleasant truth; the benefits of dining together are positive.\n* **2 と言うまでもない (*to iu made mo nai*):**\nMeans *\"it goes without saying\"*; less natural when presenting an assertive thematic synthesis.\n* **3 と言ってもいいはずがない (*to itte mo ii hazu ga nai*):**\nMeans *\"there is no way it is acceptable to say\"*; completely negates the author's own thesis.\n"
+              "explanation": "【解説】「〜という思い出があることと思います」で、読者にも同様の経験・思い出がきっとあるだろうという親近感を込めた推量表現です。\n【英訳】〜あることと思います - I am sure you have the memory of..."
             },
             {
               "id": 22,
@@ -8291,7 +8291,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題3 つぎの文章は、ある雑誌にのった記事です。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "The correct answer is **4 確かめてみるべきだ** (*tashikamete mirubeki da*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n友人や同僚を食事に誘う際は、相手のアレルギーや食事制限を事前に（ **確かめてみるべきだ** ）。\n*Yūjin ya dōryō o shokuji ni sasou sai wa, aite no arerugī ya shokuji seigen o jizen ni (**tashikamete mirubeki da**).*\n* **Meaning:**\n*\"When inviting friends or colleagues out to eat, one **ought to make sure to check** their allergies and dietary restrictions in advance.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞テ形＋みる＋べきだ (N3 Grammar):**\nCombines exploratory caution **〜てみる** with moral obligation/best-practice advice **〜べきだ** (*\"should / ought to do\"*).\n*Context clue:* Knowing dietary restrictions in advance is an essential social courtesy when organizing group meals.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 確かめてみるはずがない (*tashikamete miru hazu ga nai*):**\nMeans *\"there is no way one would check\"*; irresponsible and illogical.\n* **2 確かめてみないわけにはいかない (*tashikamete minai wake ni wa ikanai*):**\nDouble negative; overly convoluted compared to clear advice *べきだ*.\n* **3 確かめてみるにすぎない (*tashikamete miru ni suginai*):**\nMeans *\"merely just check\"*; belittles safety considerations.\n"
+              "explanation": "【解説】「友だちや彼氏、彼女を作る場合だけに［限りません］」で、「〜に限らない（それだけではない）」という対象の広がりを表します。\n【英訳】〜に限りません - is not limited to..."
             },
             {
               "id": 23,
@@ -8306,7 +8306,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題3 つぎの文章は、ある雑誌にのった記事です。［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "The correct answer is **2 心がけたいものだ** (*kokorogaketai mono da*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n食事を通じて心を通わせるために、相手への細やかな思いやりを常に（ **心がけたいものだ** ）。\n*Shokuji o tsūjite kokoro o kayowaseru tame ni, aite e no komayaka na omoiyari o tsune ni (**kokorogaketai mono da**).*\n* **Meaning:**\n*\"In order to connect hearts through dining, **one truly hopes and desires to always keep in mind** thoughtful consideration toward others.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞連用形＋たいものだ (N3 Grammar):**\nExpresses a heartfelt, reflective general desire or philosophical ideal shared by the author (*\"one would truly like to...\"* / *\"how one wishes to...\"*).\n*Context clue:* Concludes the essay on culinary hospitality with an earnest moral reflection (**細やかな思いやりを常に心がけたいものだ**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 心がけるにちがいない (*kokorogakeru ni chigainai*):**\nDeduction about external facts; misses the reflective personal aspiration of the essay's closing sentence.\n* **3 心がける一方だ (*kokorogakeru ippō da*):**\nDescribes accelerating continuous change; cannot attach to moral intentions.\n* **4 心がけようとするはずだ (*kokorogakeyō to suru hazu da*):**\nObjective deduction about someone else's attempts; awkward and impersonal.\n"
+              "explanation": "【解説】手段として有効に機能することがあるという事実・可能性を述べる「手段に［することはあるのです］」が正解です。\n【英訳】手段にすることはあるのです - it does serve as / is used as a means..."
             }
           ]
         }
@@ -8795,7 +8795,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **4 ほど** (*hodo*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n昨日のテストは、涙が出る（ **ほど** ）難しかった。\n*Kinō no tesuto wa, namida ga deru (**hodo**) muzukashikatta.*\n* **Meaning:**\n*\"Yesterday's test was so difficult that **it almost brought tears to my eyes**.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞辞書形＋ほど (N3 Grammar):**\nPresents an exaggerated illustrative symptom or physical sensation to convey the extreme intensity or degree of a condition (*\"so... that...\"* / *\"to the point of...\"*).\n*Context clue:* The sensation of crying tears (**涙が出る**) benchmarks the staggering difficulty of the exam (**難しかった**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 くらい (*kurai*):**\nWhile *くらい* exists, *涙が出るほど* is the classic textbook idiomatic expression for extreme degree.\n* **2 ばかり (*bakari*):**\nMeans *\"only / just\"*; cannot express degree of difficulty.\n* **3 だけ (*dake*):**\nMeans *\"only\"*; does not quantify psychological or physical intensity.\n"
+              "explanation": "【解説】人づてに聞いた不確実な情報や伝聞・例示を表す「〜とか」を用います。「大雨だったとか（聞いた・そうだ）」。\n【英訳】〜とか - I heard that... / so I am told."
             },
             {
               "id": 2,
@@ -8809,7 +8809,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **2 行くところだった** (*iku tokoro datta*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n危ない！もう少しで車にひかれて（ **行くところだった** ）...あ、違う、ぶつかる（ **ところだった** ）！\n*Abunai! Mō sukoshi de kuruma ni hikarete (**iku tokoro datta**)...*\n* **Japanese (Actual Item):**\nもう少しで階段から落ちる（ **ところだった** ）。\n*Mō sukoshi de kaidan kara ochiru (**tokoro datta**).*\n* **Meaning:**\n*\"Look out! I was **on the very verge of / just about to** fall down the stairs!\"*\n\n---\n\n### Grammar Explanation\n\n* **もう少しで＋動詞辞書形＋ところだった (N3 Grammar):**\nFixed near-miss construction: **もう少しで** (*\"by a hair's breadth / almost\"*) pairs with **〜ところだった** to describe a dangerous situation that narrowly avoided happening in reality.\n*Context clue:* The alarm exclamation and close proximity to an accident govern the near-miss formula.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 行くわけだった (*iku wake datta*):**\nUngrammatical; *わけだった* does not express near-miss avoidance.\n* **3 行くはずだった (*iku hazu datta*):**\nMeans *\"was supposed to go\"*; refers to a planned schedule, not a near-accident.\n* **4 行くことだった (*iku koto datta*):**\nMeans *\"was a matter of going\"*; cannot describe an averted disaster.\n"
+              "explanation": "【解説】相手が直前に言った内容や程度を指して「そのように、それほど」と言うときは「そんなに」を用います。「そんなに厳しいことを言わないでよ」。\n【英訳】そんなに - so / that much (referring to what listener said)."
             },
             {
               "id": 3,
@@ -8823,7 +8823,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **4 おっしゃいました** (*osshaimashita*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n先生が、来週の月曜日は休講だと（ **おっしゃいました** ）。\n*Sensei ga, raishū no getsuyōbi wa kyūkō da to (**osshaimashita**).*\n* **Meaning:**\n*\"The professor honorably **stated** that next Monday's class is cancelled.\"*\n\n---\n\n### Grammar Explanation\n\n* **尊敬語「おっしゃる」 (N3 Keigo):**\nHonorific verb (sonkeigo) for *言う* (*iu* = to say). Elevates the speech of a superior (the professor).\n*Context clue:* **先生が** is the honored agent who announced the cancellation.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 申しました (*mōshimashita*):**\nHumble verb (kenjōgo); disrespectful if applied to a teacher's words.\n* **2 伺いました (*ukagaimashita*):**\nHumble verb for *聞く* (*kiku* = hear/ask) or *訪ねる* (*tazuneru* = visit); wrong direction of speech.\n* **3 言われました (*iwaremashita*):**\nPassive honorific; standard sonkeigo *おっしゃいました* is the primary dedicated honorific form tested.\n"
+              "explanation": "【解説】「名詞／動詞ます形＋気味（ぎみ）」で「少し〜の傾向がある」を表します。「風邪気味（かぜぎみ）」。\n【英訳】〜気味 - slight tendency of / a touch of (a cold)."
             },
             {
               "id": 4,
@@ -8837,7 +8837,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **2 からには** (*kara ni wa*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n日本に来た（ **からには** ）、日本語をマスターして帰国したい。\n*Nihon ni kita (**kara ni wa**), nihongo o masutā shite kikoku shitai.*\n* **Meaning:**\n*\"**Now that / since** I have come all the way to Japan, I want to master Japanese before returning home.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞た形＋からには (N3 Grammar):**\nExpresses strong personal resolve, ambition, or responsibility following a significant realized commitment (*\"now that...\"*, *\"since I have gone so far as to...\"*).\n*Context clue:* Moving across borders to Japan (**日本に来た**) is an enormous life commitment that justifies high linguistic ambition (**マスターして帰国したい**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 からといって (*kara to itte*):**\nMeans *\"just because\"*; pairs with negative warnings, not positive personal goals.\n* **3 からして (*kara shite*):**\nMeans *\"judging from\"*; irrelevant to personal determination.\n* **4 からあって (*kara atte*):**\nUngrammatical in modern Japanese.\n"
+              "explanation": "【解説】ある主たる行動をする機会を利用して別のことも行うときは「動詞た形／名詞＋ついでに」を用います。「散歩に行ったついでに」。\n【英訳】ついでに - while at it / on the occasion of."
             },
             {
               "id": 5,
@@ -8851,7 +8851,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **3 にわたって** (*ni watatte*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nこの研究は、10年（ **にわたって** ）続けられてきた。\n*Kono kenkyū wa, jū-nen (**ni watatte**) tsuzukerarete kita.*\n* **Meaning:**\n*\"This scientific research has been continuously carried out **over the entire span of** 10 years.\"*\n\n---\n\n### Grammar Explanation\n\n* **期間＋にわたって (N3 Grammar):**\nIndicates that an endeavor or natural phenomenon persists across a wide, prolonged duration of time (*\"spanning across\"*, *\"over the course of\"*).\n*Context clue:* A decade-long academic investigation (**10年**) emphasizes vast chronological commitment.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 にかけて (*ni kakete*):**\nRequires starting and ending boundaries (*AからBにかけて*); cannot attach to a single period like 10 years.\n* **2 に限って (*ni kagitte*):**\nMeans *\"limited to\"* or *\"unluckily when\"*; makes no sense modifying ongoing research.\n* **4 に際して (*ni saishite*):**\nMeans *\"on the occasion of\"*; used for opening ceremonies or milestones, not a 10-year span.\n"
+              "explanation": "【解説】移動の区間や動作の進行中のある時点で出来事が起こることを「〜途中で」と言います。「帰る途中で」。\n【英訳】〜途中で - on the way / en route."
             },
             {
               "id": 6,
@@ -8865,7 +8865,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **2 のおかげで** (*no okage de*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n最新の医療技術（ **のおかげで** ）、助かる命が増えた。\n*Saishin no iryō gijutsu (**no okage de**), tasukaru inochi ga fueta.*\n* **Meaning:**\n*\"**Thanks to** state-of-the-art medical technology, the number of saved lives has increased.\"*\n\n---\n\n### Grammar Explanation\n\n* **名詞＋のおかげで (N3 Grammar):**\nExpresses appreciation for a beneficial cause that produced a positive, life-affirming result (*\"thanks to...\"*).\n*Context clue:* The increase in saved human lives (**助かる命が増えた**) is a wonderful positive outcome attributable to medical science.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 のせいで (*no sei de*):**\nBlames a cause for a bad result; saving lives is a triumph, not a disaster.\n* **3 のわりに (*no wari ni*):**\nExpresses disparity (*\"considering that...\"*); inappropriate between medical advances and saving patients.\n* **4 のたびに (*no tabi ni*):**\nMeans *\"every time [noun]\"*; ungrammatical after *医療技術*.\n"
+              "explanation": "【解説】「名詞＋を中心として／中心にして」で、「〜を一番の軸・中心として」という意味を表します。「駅を中心として発展してきた」。\n【英訳】〜を中心として - focusing on / centered around."
             },
             {
               "id": 7,
@@ -8879,7 +8879,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **3 おいでになって** (*oide ni natte*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nどうぞ、こちらへ（ **おいでになって** ）ください。\n*Dōzo, kochira e (**oide ni natte**) kudasai.*\n* **Meaning:**\n*\"Please, **honorably come / step this way**.\"*\n\n---\n\n### Grammar Explanation\n\n* **おいでになる (N3 Keigo):**\nHonorific verb (sonkeigo) for *来る* (*kuru* = come). Paired with *ください*, it forms **おいでになってください**, warmly welcoming a guest to approach.\n*Context clue:* **どうぞ、こちらへ** (*\"please, over here\"*) is a classic hospitality invitation guiding a visitor.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 参って (*maitte*):**\nHumble verb (kenjōgo); cannot command or request the listener to move using humble language.\n* **2 伺って (*ukagatte*):**\nHumble verb meaning \"to visit/ask\"; cannot be used for the listener's action.\n* **4 いらして (*irashite*):**\nWhile *いらしてください* exists, *おいでになってください* matches the exact tested option in this set.\n"
+              "explanation": "【解説】植物や動物、目下の相手に水や餌などを与えるときは動詞「やる」を用います。「花に水をやります」。\n【英訳】やる（やります） - give (to plants/animals)."
             },
             {
               "id": 8,
@@ -8893,7 +8893,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **4 申しました** (*mōshimashita*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n弟が、先生によろしくと（ **申しました** ）。\n*Otōto ga, sensei ni yoroshiku to (**mōshimashita**).*\n* **Meaning:**\n*\"My younger brother **humbly asked me to convey** his best regards to you, Professor.\"*\n\n---\n\n### Grammar Explanation\n\n* **謙譲語「申す」 (N3 Keigo):**\nHumble verb (kenjōgo) for *言う* (*iu* = to say). When speaking to an out-group superior (the professor) about an in-group family member (one's younger brother), humble keigo is strictly required.\n*Context clue:* The subject is the speaker's younger brother (**弟が**), an in-group relative who must be lowered in front of the professor (**先生に**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 おっしゃいました (*osshaimashita*):**\nHonorific (sonkeigo); using sonkeigo for one's own younger brother in front of an external teacher is a serious keigo mistake.\n* **2 言われました (*iwaremashita*):**\nPassive honorific; elevates one's brother inappropriately.\n* **3 申し上げました (*mōshiagemashita*):**\n*申し上げる* is humble for addressing the teacher directly, but here reporting the brother's quote uses *申しました*.\n"
+              "explanation": "【解説】「期間＋ぶり」で「その期間が経過した後に再び同じことが起こる」ことを表します。「3年ぶりだ」。\n【英訳】〜ぶり - for the first time in (3 years)."
             },
             {
               "id": 9,
@@ -8907,7 +8907,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
-              "explanation": "The correct answer is **4 ようにしている** (*yō ni shite iru*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n健康のために、毎朝野菜ジュースを飲む（ **ようにしている** ）。\n*Kenkō no tame ni, maiasa yasai jūsu o nomu (**yō ni shite iru**).*\n* **Meaning:**\n*\"For the sake of my health, **I make it a conscious habit to** drink vegetable juice every morning.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞辞書形＋ようにしている (N3 Grammar):**\nIndicates a conscious, ongoing personal effort or habitual commitment to do something regularly for a purpose (*\"make a point of doing...\"* / *\"make an effort to...\"*).\n*Context clue:* **健康のために** (*\"for the sake of health\"*) and **毎朝** (*\"every morning\"*) clearly describe a deliberate wellness routine.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 ことになっている (*koto ni natte iru*):**\nRefers to external institutional rules or scheduled appointments; drinking juice is a personal health habit.\n* **2 わけになっている (*wake ni natte iru*):**\nUngrammatical; *わけ* cannot combine with *になっている* in this context.\n* **3 はずになっている (*hazu ni natte iru*):**\nUngrammatical combination.\n"
+              "explanation": "【解説】身内である「弟」が先生（目上）に対して発言した動作なので、身内の動作をへりくだる謙譲語「申しましたか（申す＝言うの謙譲語）」が適切です。\n【英訳】申しましたか - said (humble expression for one's younger brother)."
             },
             {
               "id": 10,
@@ -9736,7 +9736,7 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **3 わけではない** (*wake dewa nai*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n甘いものがきらいな（ **わけではない** ）が、たくさんは食べられない。\n*Amai mono ga kirai na (**wake dewa nai**) ga, takusan wa taberarenai.*\n* **Meaning:**\n*\"It is **not that I dislike** sweets, but I simply cannot eat them in large quantities.\"*\n\n---\n\n### Grammar Explanation\n\n* **な形容詞＋な＋わけではない (N3 Grammar):**\nPartial negation construction: softens a statement by negating an absolute assumption (*\"it's not necessarily the case that...\"* / *\"it doesn't mean that...\"*).\n*Context clue:* The speaker clarifies that they don't hate sweets (**きらいなわけではない**), but merely have a low stomach capacity (**たくさんは食べられない**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 わけがない (*wake ga nai*):**\nStrong logical impossibility (\"there is no way I dislike them\"); overly dramatic and unidiomatic before *が*.\n* **2 はずがない (*hazu ga nai*):**\nLogical denial based on evidence; does not express personal partial preference.\n* **4 はずではない (*hazu dewa nai*):**\nNonstandard formulation; standard partial negation of preference is *わけではない*.\n"
+              "explanation": "【解説】論理的に「〜という結論・理屈にはならない」と否定する表現「〜ということにはならない」を用います。「いじめていいということにはならない」。\n【英訳】〜ということにはならない - does not mean that... / does not justify..."
             },
             {
               "id": 12,
@@ -9750,7 +9750,7 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **3 降りだしました** (*furidashimashita*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nさっきまで晴れていたのに、急に雨が（ **降りだしました** ）。\n*Sakki made harete ita noni, kyū ni ame ga (**furidashimashita**).*\n* **Meaning:**\n*\"Even though it was sunny until just a moment ago, suddenly rain **began to pour down**.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞連用形＋だす (N3 Grammar):**\nCompound verb suffix expressing a sudden, abrupt, or unexpected inception of an action or natural phenomenon (*\"suddenly burst out doing...\"* / *\"began abruptly\"*).\n*Context clue:* **急に** (*\"suddenly\"*) directly triggers the abrupt inception marker **〜だす**.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 降りはじめました (*furihajimemashita*):**\n*〜はじめる* describes gradual, anticipated, or volitional starts; *〜だす* specifically conveys sudden, unexpected natural occurrences like sudden rain.\n* **2 降り終わりました (*furiowarimashita*):**\nMeans *\"finished raining\"*; contradicts the sudden change from sunny weather.\n* **4 降りつづけました (*furitsuzukemashita*):**\nMeans *\"continued raining\"*; but it had been clear until just a moment ago.\n"
+              "explanation": "【解説】文末表現「〜にほかならない」の関連で、ここでは「宝物ほかにあります（＝宝物は他の場所にある）」という文意の「ほかにあります」が正解です。\n【英訳】ほかにあります - is elsewhere / exists other than this."
             },
             {
               "id": 13,
@@ -9764,7 +9764,7 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **4 ほど** (*hodo*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n山頂からの景色は、息をのむ（ **ほど** ）美しかった。\n*Sanchō kara no keshiki wa, iki o nomu (**hodo**) utsukushikatta.*\n* **Meaning:**\n*\"The scenery from the mountain summit was **so** beautiful **that it took one's breath away**.\"*\n\n---\n\n### Grammar Explanation\n\n* **〜ほど (N3 Grammar):**\nUses a vivid physical reaction or figurative benchmark (**息をのむ** = to take one's breath away) to express the astonishingly high degree of an aesthetic quality.\n*Context clue:* **息をのむ** directly pairs with **ほど** to convey breathtaking beauty (**美しかった**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 だけ (*dake*):**\nMeans *\"only\"*; cannot express degree.\n* **2 より (*yori*):**\nStandard of comparison; does not fit after a descriptive physical idiom.\n* **3 ばかり (*bakari*):**\nMeans *\"only / just\"*; cannot quantify breathtaking scenic splendor.\n"
+              "explanation": "【解説】実際には実現不可能なことを強く願う慣用表現「動詞可能形＋ものなら（〜たい）」を用います。「代われるものなら代わりたい（代わることができるなら代わってあげたい）」。\n【英訳】代われるものなら - if only it were possible to take your place."
             },
             {
               "id": 14,
@@ -9849,7 +9849,7 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 3,
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **4 なぜだろうか** (*naze darō ka*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n近年、「片づけ」や「断捨離」に関する本がベストセラーになっている。（ **なぜだろうか** ）。\n*Kinnen, 'katadzuke' ya 'danshari' ni kansuru hon ga besutoserā ni natte iru. (**Naze darō ka**).*\n* **Meaning:**\n*\"In recent years, books concerning 'tidying up' and 'minimalist decluttering' have become massive bestsellers. **Why on earth is that so?**\"*\n\n---\n\n### Grammar Explanation\n\n* **疑問詞の提起「なぜだろうか」 (N3 Reading):**\nExpository rhetorical question raised by an author to introduce the core problem or theme to be explored in the essay (*\"why might this be?\"*).\n*Context clue:* The author opens the essay with an intriguing societal phenomenon and immediately poses a question to probe the underlying psychology.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 だからである (*dakara de aru*):**\nProvides a reason before any explanation has been given; syntactically broken.\n* **2 そのためである (*sono tame de aru*):**\nStates a purpose or consequence prematurely.\n* **3 どうしてなのか (*dōshite na no ka*):**\nColloquial blunt question; *なぜだろうか* is the formal, reflective rhetorical inquiry typical of essays.\n"
+              "explanation": "【解説】読者に対して「〜ということを知っていますか」と敬意を込めて尋ねる尊敬語表現「ご存じだろうか（ご存じですか）」が適切です。1・2「うかがう（謙譲語）」、3「存じる（謙譲語）」は読者への問いかけには使いません。\n【英訳】ご存じだろうか - do you know / are you aware that..."
             },
             {
               "id": 20,
@@ -9864,7 +9864,7 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 0,
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **1 モノがあふれている現代社会** (*mono ga afurete iru gendai shakai*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n豊かになり、（ **モノがあふれている現代社会** ）だからこそ、人々は整理整頓に悩むのである。\n*Yutaka ni nari, (**mono ga afurete iru gendai shakai**) dakara koso, hitobito wa seiri seiton ni nayamu no de aru.*\n* **Meaning:**\n*\"Precisely because we live in **a modern society overflowing with material goods** having become affluent, people struggle with organizing and tidying.\"*\n\n---\n\n### Grammar Explanation\n\n* **文脈理解・名詞修飾 (N3 Reading):**\nThe argument attributes the modern urge to declutter to the historical abundance of consumer products that overwhelm living spaces.\n*Context clue:* **豊かになり** (*\"having become affluent\"*) logically connects to an overflow of material possessions (**モノがあふれている**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 モノが不足している現代社会 (*mono ga fusoku shite iru gendai shakai*):**\nClaims modern society lacks goods; contradicts affluence and the need to declutter excess things.\n* **3 モノを買わない昔の社会 (*mono o kawanai mukashi no shakai*):**\nRefers to past society; the author is discussing contemporary dilemmas.\n* **4 モノを大切にする伝統社会 (*mono o taisetsu ni suru dentō shakai*):**\nIrrelevant to explaining the modern decluttering craze.\n"
+              "explanation": "【解説】かつて書店でよく見かけた過去の回想・習慣を表す「〜見かけたものだ」を用います。\n【英訳】見かけたものだ - used to see / often saw."
             },
             {
               "id": 21,
@@ -9879,7 +9879,7 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **3 にほかならない** (*ni hokanaranai*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n片づけとは、単に部屋をきれいにするだけでなく、自分の生き方を見つめ直す作業（ **にほかならない** ）。\n*Katadzuke to wa, tan ni heya o kirei ni suru dake de naku, jibun no ikikata o mitsumenaosu sagyō (**ni hokanaranai**).*\n* **Meaning:**\n*\"Tidying up is **nothing other than** the process of re-examining one's own way of life, not merely cleaning a room.\"*\n\n---\n\n### Grammar Explanation\n\n* **名詞＋にほかならない (N3 Grammar):**\nAsserts with absolute conviction that something is truly and fundamentally nothing other than a specific essence (*\"none other than\"*, *\"nothing less than\"*).\n*Context clue:* **単に〜だけでなく** (*\"not merely...\"*) elevates tidying from chore to a profound philosophical self-reflection.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 にすぎない (*ni suginai*):**\nMeans *\"merely / nothing more than\"*; belittles the process, whereas the author seeks to elevate it.\n* **2 にかぎらない (*ni kagiranai*):**\nMeans *\"not limited to\"*; does not deliver the definitive philosophical assertion *にほかならない*.\n* **4 にちがいない (*ni chigainai*):**\nExpresses factual deduction; *にほかならない* is the formal definitional assertion.\n"
+              "explanation": "【解説】前文「このような種類の本はよく売れているようだ」を受けつつ、「とはいうものの（そうは言っても）、それだけ片づけが苦手な人が多いということだろう」と論を展開する接続表現「とはいうものの」を用います。\n【英訳】とはいうものの - having said that / that being said."
             },
             {
               "id": 22,
@@ -9894,7 +9894,7 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **3 手放すことによって** (*tebanasu koto ni yotte*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n本当に必要なもの以外を思い切って（ **手放すことによって** ）、心に余裕が生まれるのだ。\n*Hontō ni hitsuyō na mono igai o omoikitte (**tebanasu koto ni yotte**), kokoro ni yoyū ga umareru no da.*\n* **Meaning:**\n*\"**By resolutely letting go of** anything other than what is genuinely essential, true peace and room in one's heart is born.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞辞書形＋ことによって (N3 Grammar):**\nIndicates a method, means, or action through which a beneficial state is brought about (*\"by means of...\"* / *\"through doing...\"*).\n*Context clue:* **思い切って** (*\"resolutely / taking the plunge\"*) pairs with the act of letting go of clutter (**手放す**) to attain mental serenity (**心に余裕が生まれる**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 手放さないことによって (*tebanasanai koto ni yotte*):**\nMeans *\"by not letting go\"*; keeping clutter prevents mental peace.\n* **2 手放したものの (*tebanashita mono no*):**\nMeans *\"although I let go\"*; adversative connector that fails to explain how peace is created.\n* **4 手放すどころか (*tebanasu dokoroka*):**\nMeans *\"far from letting go\"*; nonsensical.\n"
+              "explanation": "【解説】「わざわざ（手間をかけて）」と「〜ということになっている（〜という建前や規則になっている）」の組み合わせを用います。「わざわざ身の回りを整理しよう、片づけようということになっている」。\n【英訳】わざわざ / ということになっている - take the trouble to / is expected / supposedly supposed to."
             },
             {
               "id": 23,
@@ -9909,7 +9909,7 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 0,
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **1 はじめてみてはどうだろうか** (*hajimete mite wa dō darō ka*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nみなさんも、身の回りの小さなスペースから片づけを（ **はじめてみてはどうだろうか** ）。\n*Minasan mo, mi no mawari no chiisana supēsu kara katadzuke o (**hajimete mite wa dō darō ka**).*\n* **Meaning:**\n*\"Why don't all of you, too, **try starting** to tidy up beginning with a small space around you?\"*\n\n---\n\n### Grammar Explanation\n\n* **〜てみてはどうだろうか (N3 Grammar):**\nPolite, encouraging rhetorical suggestion (*\"why don't you try...?\"*). Classic concluding device inviting the reader to embark on an easy first step.\n*Context clue:* Directly addresses the reader (**みなさんも...**) with an accessible recommendation (**小さなスペースから**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 はじめるべきではないだろうか (*hajimerubeki dewa nai darō ka*):**\nDouble-negative question (\"should one not begin?\"); clumsy and less warm than a direct invitation.\n* **3 はじめるはずがない (*hajimeru hazu ga nai*):**\nMeans *\"there is no way you would start\"*; insulting and pessimistic.\n* **4 はじめるにすぎない (*hajimeru ni suginai*):**\nMeans *\"you merely just begin\"*; belittles the advice.\n"
+              "explanation": "【解説】二重否定により「まったく思わないわけではない（少しは思っている）」と控えめに肯定する「〜思わないでもない」が文脈に適合します。\n【英訳】思わないでもない - not that I don't think / somewhat consider."
             }
           ]
         }
@@ -10446,7 +10446,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **3 を通して** (*o tōshite*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nボランティア活動（ **を通して** ）、多くの人と出会うことができた。\n*Borantia katsudō (**o tōshite**), ōku no hito to deau koto ga dekita.*\n* **Meaning:**\n*\"**Through the medium of** volunteer activities, I was able to meet many people.\"*\n\n---\n\n### Grammar Explanation\n\n* **名詞＋を通して（をとおして） (N3 Grammar):**\nIndicates a vehicle, activity, or channel through which an experience, encounter, or achievement is attained (*\"through / via...\"*).\n*Context clue:* Volunteering (**ボランティア活動**) served as the interactive platform facilitating meaningful social connections (**多くの人と出会うことができた**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 に沿って (*ni sotte*):**\nMeans *\"along / following [a plan/guideline]\"*; inapplicable to human networking.\n* **2 をめぐって (*o megutte*):**\nMeans *\"concerning / disputing over\"*; volunteering is not a contentious dispute.\n* **4 を込めて (*o komete*):**\nMeans *\"putting feelings into\"*; cannot attach to an activity like volunteering.\n"
+              "explanation": "【解説】相手の挨拶を受けて「私のほうこそ」と強調して返す「こちらこそ」：「こちらこそよろしく」。\n【英訳】こちらこそ - it is I who / likewise."
             },
             {
               "id": 13037,
@@ -10460,7 +10460,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **4 ほど** (*hodo*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n昨日のマラソン大会は、倒れそうになる（ **ほど** ）疲れた。\n*Kinō no marason taikai wa, taoresō ni naru (**hodo**) tsukareta.*\n* **Meaning:**\n*\"Yesterday's marathon race was **so** exhausting **that I felt on the verge of collapsing**.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞連用形＋そうになる＋ほど (N3 Grammar):**\nUses a near-collapse physical symptom (**倒れそうになる** = on the verge of collapsing) to vividly illustrate the extreme degree of exhaustion (**疲れた**).\n*Context clue:* Running a full marathon produces extreme physical fatigue that pushes the body to its outer limit.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 だけ (*dake*):**\nMeans *\"only\"*; does not express degree.\n* **2 より (*yori*):**\nComparative standard; makes no sense after a descriptive physical clause.\n* **3 ばかり (*bakari*):**\nCannot qualify the intensity of physical exhaustion.\n"
+              "explanation": "【解説】性格や人柄から予想できる理由を述べる「〜ことだから」：「あの人のことだから」。\n【英訳】〜ことだから - precisely because it is him / knowing him."
             },
             {
               "id": 13038,
@@ -10474,7 +10474,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **2 お越しください** (*okoshi kudasai*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n週末のセールには、ぜひご家族皆様で（ **お越しください** ）。\n*Shūmatsu no sēru ni wa, zehi go-kazoku minasama de (**okoshi kudasai**).*\n* **Meaning:**\n*\"To our weekend sale, please **honorably come / visit** by all means together with your whole family!\"*\n\n---\n\n### Grammar Explanation\n\n* **お越しください (N3 Keigo):**\nPolite honorific invitation (sonkeigo) for *来る* (*kuru* = come), used by commercial enterprises and event hosts to welcome valued patrons (*\"please come / please visit\"*).\n*Context clue:* A retail sales announcement inviting whole customer families (**ご家族皆様で**) demands courteous business hospitality.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 参ってください (*maitte kudasai*):**\n*まいる* is humble (kenjōgo); customers cannot be told to move using humble language.\n* **3 伺ってください (*ukagatte kudasai*):**\n*うかがう* is humble; cannot be commanded of a customer.\n* **4 おいでになってください (*oide ni natte kudasai*):**\nWhile *おいでになる* exists, *お越しください* is the direct set phrase tested in this item.\n"
+              "explanation": "【解説】「〜を除いて、〜なしで」を表す「〜抜きで」：「林さん抜きで発表することはできない」。\n【英訳】〜抜きで - without / leaving out..."
             },
             {
               "id": 13039,
@@ -10488,7 +10488,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **2 からには** (*kara ni wa*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nリーダーを引き受けた（ **からには** ）、最後まで責任を持ってやり抜くつもりだ。\n*Rīdā o hikiuketa (**kara ni wa**), saigo made sekinin o motte yarinuku tsumori da.*\n* **Meaning:**\n*\"**Now that / since** I have accepted the role of leader, I intend to see it through with full responsibility to the very end.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞た形＋からには (N3 Grammar):**\nExpresses strong personal responsibility, dedication, or duty stemming from a chosen role or agreed commitment (*\"now that...\"*, *\"since I have taken this on...\"*).\n*Context clue:* Accepting leadership (**リーダーを引き受けた**) naturally imposes an unwavering commitment to lead with accountability (**責任を持ってやり抜く**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 からといって (*kara to itte*):**\nMeans *\"just because\"*; takes negative cautions, not a vow of dedication.\n* **3 からして (*kara shite*):**\nMeans *\"judging from\"*; irrelevant to personal duty.\n* **4 からあって (*kara atte*):**\nUngrammatical phrasing.\n"
+              "explanation": "【解説】「〜どころではなく、全く反対だ」を表す「〜どころか」：「暑いどころか（涼しい）」。\n【英訳】〜どころか - far from being hot..."
             },
             {
               "id": 13040,
@@ -10502,7 +10502,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **2 読んだり** (*yondari*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n休日は、部屋で本を（ **読んだり** ）、散歩したりして過ごすことが多い。\n*Kyūjitsu wa, heya de hon o (**yondari**), sanpo shitari shite sugosu koto ga ōi.*\n* **Meaning:**\n*\"On days off, I often spend my time doing things like **reading** books in my room and taking walks.\"*\n\n---\n\n### Grammar Explanation\n\n* **〜たり〜たりする (N4/N3 Grammar):**\nLists representative non-exhaustive leisure activities (*\"doing things like A and B\"*).\n*Context clue:* The following parallel clause **散歩したりして** directly governs the parallel **〜たり** form.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 読んで (*yonde*):**\nTe-form expresses sequential ordering; clashes with *〜たりして*.\n* **3 読むと (*yomu to*):**\nConditional; cannot pair with *〜たりして*.\n* **4 読むし (*yomu shi*):**\nReason-listing particle; syntactically broken before *散歩したりして*.\n"
+              "explanation": "【解説】対比を表す「〜に対して」：「今までのやり方に対して、鈴木君の案なら…」。\n【英訳】〜に対して - in contrast to..."
             },
             {
               "id": 13041,
@@ -10516,7 +10516,7 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **1 かぎり** (*kagiri*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n私が知っている（ **かぎり** ）、彼がうそをついたことは一度もない。\n*Watashi ga shitte iru (**kagiri**), kare ga uso o tsuita koto wa ichido mo nai.*\n* **Meaning:**\n*\"**As far as / to the extent that** I know, he has never told a lie even once.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞普通形＋かぎり（では） (N3 Grammar):**\nSets the boundary or limits of one's knowledge, observation, or research (*\"as far as...\"* / *\"to the extent of...\"*).\n*Context clue:* **私が知っている** (*\"what I know\"*) defines the epistemic scope supporting the speaker's vouching for his honesty.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 あいだ (*aida*):**\nIndicates a time interval; does not delimit personal knowledge boundaries.\n* **3 うち (*uchi*):**\nTemporal range; unidiomatic for qualifying information scope.\n* **4 とおり (*tōri*):**\nMeans *\"in accordance with\"*; doesn't qualify personal epistemic limits.\n"
+              "explanation": "【解説】一方の変化に伴って他方も変化する「動詞辞書形＋につれ」：「時間がたつにつれ」。\n【英訳】〜につれ - as time passes."
             },
             {
               "id": 13042,
@@ -11395,7 +11395,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **3 歩くだけで** (*aruku dake de*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n女の学生「この新しいシューズ、歩く（ **だけで** ）、やせるらしいよ。」\n男の学生「本当かなあ。」\n*Onna no gakusei: \"Kono atarashii shūzu, aruku (**dake de**), yaseru rashii yo.\"*\n*Otoko no gakusei: \"Hontō ka nā.\"*\n* **Meaning:**\n*Female student: \"They say that **just by** walking in these new shoes, you lose weight!\"*\n*Male student: \"I wonder if that's really true...\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞辞書形＋だけで (N3 Grammar):**\nIndicates that merely performing a simple, minimal action is sufficient to produce an astonishing result (*\"merely by doing...\"* / *\"just doing... is enough to...\"*).\n*Context clue:* The commercial advertising gimmick promises effortless fitness: simply taking ordinary walking steps (**歩くだけで**) leads to weight loss (**やせるらしい**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 歩くばかりで (*aruku bakari de*):**\nMeans *\"doing nothing but walking\"*; implies strenuous excessive hiking, which undercuts the effortless marketing gimmick.\n* **2 歩いたままでも (*aruita mama demo*):**\nMeans *\"even while having walked\"*; nonsensical.\n* **4 歩くほどで (*aruku hodo de*):**\nUngrammatical phrasing; cannot express the minimal catalyst.\n"
+              "explanation": "【解説】「〜だけでも」は最小限の条件を提示し、それだけで十分な効果・結果が得られることを示します。「歩くだけでも、やせるらしいよ」。\n【英訳】〜だけでも - just doing ... is enough to..."
             },
             {
               "id": 11,
@@ -11409,7 +11409,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **2 開けっぱなし** (*akeppanashi*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n冷蔵庫のドアを（ **開けっぱなし** ）にしないで、早く閉めて！\n*Reizōko no doa o (**akeppanashi**) ni shinaide, hayaku shimete!*\n* **Meaning:**\n*\"Don't leave the refrigerator door **wide open unattended**; close it quickly!\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞連用形＋っぱなし (N3 Grammar):**\nIndicates leaving something in an abnormal, improper, or careless state without returning it to its proper condition (*\"leaving... open / unattended\"*).\n*Context clue:* The urgent reprimand **早く閉めて！** (*\"shut it quickly!\"*) targets the careless waste of electricity caused by leaving the fridge door ajar.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 開けたきり (*aketa kiri*):**\n*〜たきり* indicates not doing anything since a past action; *開けっぱなしにする* is the dedicated idiomatic compound for leaving appliances/doors open.\n* **3 開けがち (*akegachi*):**\nMeans *\"prone to opening\"*; does not describe the physical open state.\n* **4 開けよう (*akeyō*):**\nVolitional form; nonsensical before *にしないで*.\n"
+              "explanation": "【解説】「動詞辞書形／い形容詞＋ものがある」は話者の強い感慨や実感を込めて「〜と感じられる部分がある」という意味を表します。「驚くものがあります」。\n【英訳】〜ものがある - there is something truly ... / one cannot help feeling..."
             },
             {
               "id": 12,
@@ -11423,7 +11423,7 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **1 行けなくなりました** (*ikenaku narimashita*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n急な用事ができたので、残念ながら明日のパーティーには（ **行けなくなりました** ）。\n*Kyū na yōji ga dekita node, zannen nagara ashita no pātī ni wa (**ikenaku narimashita**).*\n* **Meaning:**\n*\"Because urgent business has come up, regrettably I **have become unable to go** to tomorrow's party.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞可能否定形＋ようになる／なる (N4/N3 Grammar):**\nExpresses a change in circumstance or capability from being able to attend to being unable to attend (*\"it has turned out that I cannot go\"*).\n*Context clue:* **急な用事ができた** (*\"urgent business came up\"*) and **残念ながら** (*\"regrettably\"*) describe an unexpected scheduling conflict cancelling attendance.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 行くようになりました (*iku yō ni narimashita*):**\nMeans *\"I have come to go\"*; directly contradicts urgent business causing cancellation.\n* **3 行かないことにしました (*ikanai koto ni shimashita*):**\nExpresses a willful personal choice to boycott, lacking the circumstantial helplessness conveyed by *急な用事ができた*.\n* **4 行けないことにしました (*ikenai koto ni shimashita*):**\nUngrammatical combination.\n"
+              "explanation": "【解説】可能動詞連用形＋「そうにない」は、可能性が極めて低い・できない見込みであることを表します。「電話に出られそうにないので」。\n【英訳】〜そうにない - unlikely to be able to..."
             },
             {
               "id": 13,
@@ -11437,7 +11437,7 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "instruction": "問題1 次の文の（　　）に入れるのに最もよいものを、一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **4 ほど** (*hodo*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n仕事がおもしろくて、寝る時間を忘れる（ **ほど** ）夢中になっている。\n*Shigoto ga omoshirokute, neru jikan o wasureru (**hodo**) muchū ni natte iru.*\n* **Meaning:**\n*\"My work is so fascinating that I am engrossed **to the point of forgetting to sleep**.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞辞書形＋ほど (N3 Grammar):**\nCites an extreme behavior or physiological neglect (**寝る時間を忘れる** = forgetting bedtime) to illustrate the boundless extent of someone's obsession (**夢中になっている**).\n*Context clue:* The intense fascination with work (**仕事がおもしろくて**) justifies neglecting basic biological sleep.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 だけ (*dake*):**\nMeans *\"only\"*; cannot express degree of obsession.\n* **2 より (*yori*):**\nComparative standard; makes no sense after a descriptive clause.\n* **3 ばかり (*bakari*):**\nCannot quantify the intensity of mental immersion.\n"
+              "explanation": "【解説】「確か〜んだって」は記憶が確かなら〜と聞いた・〜らしい、という伝聞表現です。「確か結婚しているんだって」。\n【英訳】〜んだって - I heard that... / according to what I recall..."
             },
             {
               "id": 14,
@@ -11522,7 +11522,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "instruction": "問題3 つぎの文章を読んで［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **2 読まれている** (*yomarete iru*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nこの本は、出版から半世紀以上たった今でも、多くの人々に（ **読まれている** ）。\n*Kono hon wa, shuppan kara hanseiki ijō tatta ima demo, ōku no hitobito ni (**yomarete iru**).*\n* **Meaning:**\n*\"Even now, more than half a century after its publication, this book **is still being read** by many people.\"*\n\n---\n\n### Grammar Explanation\n\n* **受身形「読まれている」 (N3 Grammar):**\nPassive progressive form expressing enduring reception across society (*\"is continuously read by...\"*).\n*Context clue:* Marked with **多くの人々に** (*\"by many people\"*), grammatically demanding the passive voice.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 読んでいる (*yonde iru*):**\nActive voice; requires a human subject, whereas the subject of this sentence is the inanimate book (**この本は**).\n* **3 読ませている (*yomasete iru*):**\nCausative (\"making someone read\"); inappropriate for timeless classic popularity.\n* **4 読まさせられている (*yomasaserarete iru*):**\nCausative-passive (\"forced to read\"); implies torture rather than beloved reading.\n"
+              "explanation": "【解説】前文「8月の終わりごろといえば、まだとても暑い時期だ」と、後文「山の森の中に行ってみると、街にいるよりも空気が冷たく、早くも秋の気配が満ちている」は逆接の関係にあるため、「けれども」が適切です。\n【英訳】けれども - however / but."
             },
             {
               "id": 20,
@@ -11537,7 +11537,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "instruction": "問題3 つぎの文章を読んで［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **3 一方で** (*ippō de*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n時代とともに人々の生活様式が変化する（ **一方で** ）、人間の心の本質は昔も今も変わらない。\n*Jidai to tomo ni hitobito no seikatsu yōshiki ga henka suru (**ippō de**), ningen no kokoro no honshitsu wa mukashi mo ima mo kawaranai.*\n* **Meaning:**\n*\"**While on one hand** people's lifestyles change with the eras, **on the other hand** the essence of the human heart remains unchanged past and present.\"*\n\n---\n\n### Grammar Explanation\n\n* **動詞辞書形＋一方で (N3 Grammar):**\nAntithetical balance: juxtaposes superficial shifting societal habits with enduring philosophical constants (*\"while..., on the other hand...\"*).\n*Context clue:* Changing outward lifestyles (**変化する**) is directly contrasted against timeless human nature (**昔も今も変わらない**).\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 反対に (*hantai ni*):**\nAdverb; requires a punctuation pause and does not connect clauses smoothly in this structure.\n* **2 せいで (*sei de*):**\nBlames a negative cause; societal evolution is not a malicious fault.\n* **4 ために (*tame ni*):**\nExpresses purpose/cause; fails to contrast change with continuity.\n"
+              "explanation": "【解説】「動詞辞書形＋だけでも」はそれをするだけで十分効果が得られることを表します。「おいしい空気を吸って、美しい景色を見るだけでも、夏の暑さを忘れることができる」。\n【英訳】見るだけでも - just by looking at."
             },
             {
               "id": 21,
@@ -11552,7 +11552,7 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "instruction": "問題3 つぎの文章を読んで［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **1 なぜなら** (*naze nara*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n名作と呼ばれる作品には、普遍的な魅力がある。（ **なぜなら** ）、そこには時代を超えて共感を呼ぶテーマが描かれているからだ。\n*Meisaku to yobareru sakuhin ni wa, fuhenteki na miryoku ga aru. (**Naze nara**), soko ni wa jidai o koete kyōkan o yobu tēma ga egakarete iru kara da.*\n* **Meaning:**\n*\"Works hailed as masterpieces possess universal appeal. **This is because** they portray themes that evoke empathy transcending all eras.\"*\n\n---\n\n### Grammar Explanation\n\n* **呼応副詞「なぜなら〜からだ」 (N3 Reading):**\nConnective introducing the causal justification for a preceding assertion, pairing strictly with **〜からだ** at the sentence conclusion (*\"the reason is that...\"*).\n*Context clue:* The closing predicate **〜からだ** explicitly demands the sentence-initial conjunction **なぜなら**.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 したがって (*shitagatte*):**\nConsequence marker (\"therefore\"); cannot pair with *〜からだ*.\n* **3 しかし (*shikashi*):**\nAdversative marker (\"however\"); the sentence explains the preceding sentence rather than contradicting it.\n* **4 つまり (*tsumari*):**\nRephrasing marker (\"in other words\"); does not govern the causal ending *〜からだ*.\n"
+              "explanation": "【解説】直前で述べられた状況「山まで遠いし、行く時間もない」という状況を受けて提案しているので、「そんなときは」（その状況のときは）が適切です。\n【英訳】そんなときは - in such cases / when that happens."
             },
             {
               "id": 22,
@@ -11567,7 +11567,7 @@ export const practiceSetsBook = {
               "correctIndex": 0,
               "instruction": "問題3 つぎの文章を読んで［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **1 手に取ってみてはどうだろうか** (*te ni totte mite wa dō darō ka*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\n忙しい毎日に追われている現代人こそ、たまにはこうした古典文学を（ **手に取ってみてはどうだろうか** ）。\n*Isogashii mainichi ni owarete iru gendaijin koso, tama ni wa kōshita koten bungaku o (**te ni totte mite wa dō darō ka**).*\n* **Meaning:**\n*\"Precisely modern people consumed by busy daily routines: **why not occasionally pick up** such classic literature?\"*\n\n---\n\n### Grammar Explanation\n\n* **〜てみてはどうだろうか (N3 Grammar):**\nPolite rhetorical recommendation inviting the reader to engage in an enriching, contemplative experience (*\"why not try...?\"*).\n*Context clue:* **現代人こそ、たまには...** directly appeals to the target reader to carve out time for reading.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **2 手に取るべきではないだろうか (*te ni torubeki dewa nai darō ka*):**\nClumsy rhetorical doubt; far less persuasive and inviting than *〜てみてはどうだろうか*.\n* **3 手に取るはずがない (*te ni toru hazu ga nai*):**\nMeans *\"there is no way they would pick it up\"*; cynical and contrary to the essay.\n* **4 手に取るにすぎない (*te ni toru ni suginai*):**\nMeans *\"merely just pick up\"*; trivializes the literary recommendation.\n"
+              "explanation": "【解説】前文「大きな公園でなくてもよい」と述べており、身近にある小さな公園や街路樹の林でも秋の気配を感じるには「十分だ」と肯定的に述べています。\n【英訳】十分だ - is sufficient / enough."
             },
             {
               "id": 23,
@@ -11582,7 +11582,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "instruction": "問題3 つぎの文章を読んで［　19　］から［　23　］の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "The correct answer is **3 新しい発見があるにちがいない** (*atarashii hakken ga aru ni chigainai*).\n\n---\n\n### Sentence Breakdown\n\n* **Japanese:**\nページをめくるたびに、日々の生活を豊かにする（ **新しい発見があるにちがいない** ）。\n*Pēji o mekuru tabi ni, hibi no seikatsu o yutaka ni suru (**atarashii hakken ga aru ni chigainai**).*\n* **Meaning:**\n*\"Every time you turn a page, **there will undoubtedly be new discoveries** that enrich your daily life.\"*\n\n---\n\n### Grammar Explanation\n\n* **〜にちがいない (N3 Grammar):**\nExpresses the author's strong, confident deduction and encouraging conviction (*\"undoubtedly\"*, *\"there is no doubt that...\"*).\n*Context clue:* Concludes the essay with an inspiring guarantee that classical reading yields valuable intellectual discoveries.\n\n---\n\n### Why the Other Options Don't Fit\n\n* **1 新しい発見があるおそれがある (*atarashii hakken ga aru osore ga aru*):**\n*おそれがある* warns of danger/harmful risks; finding wisdom in books is positive, not dangerous.\n* **2 新しい発見がある一方だ (*atarashii hakken ga aru ippō da*):**\n*一方だ* denotes accelerating directional trends; invalid for literary insights.\n* **4 新しい発見があるかのようだ (*atarashii hakken ga aru ka no yō da*):**\nSimile (\"as if there were discoveries\"); undercuts the author's confident promise.\n"
+              "explanation": "【解説】身近な自然を観察することで得られる可能性や能力を述べており、「喜びを感じることができる」（可能表現）が文脈に最も合致します。\n【英訳】感じることができる - can feel / be able to experience."
             }
           ]
         }
