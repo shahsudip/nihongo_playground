@@ -31,7 +31,7 @@
 | JLPT N3 Past Exam (2023年7月) | `n3/n3_past_2023_07.json` | `vocab + grammar_reading` | 73 | - [ ] Pending | ⏳ Unchecked |
 | JLPT N3 Past Exam (2023年12月) | `n3/n3_past_2023_12.json` | `vocab + grammar_reading` | 73 | - [ ] Pending | ⏳ Unchecked |
 | JLPT N3 Past Exam (2024年7月) | `n3/n3_past_2024_07.json` | `vocab + grammar_reading` | 73 | - [x] Complete | ✅ 0 Errors |
-| JLPT N3 Past Exam (2024年12月) | `n3/n3_past_2024_12.json` | `vocab + grammar_reading` | 73 | - [ ] Pending | ⏳ Unchecked |
+| JLPT N3 Past Exam (2024年12月) | `n3/n3_past_2024_12.json` | `vocab + grammar_reading` | 73 | - [x] Complete | ✅ 0 Errors |
 
 ## 🔹 N2 Past Exams
 
