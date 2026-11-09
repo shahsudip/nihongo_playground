@@ -19,7 +19,7 @@
 
 | Exam Session | JSON File | Target Sections | Target Qs | Explanations Status | Audit Verification |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| JLPT N3 Past Exam (2018年7月) | `n3/n3_past_2018_07.json` | `vocab + grammar_reading` | 74 | - [ ] Pending | ⏳ Unchecked |
+| JLPT N3 Past Exam (2018年7月) | `n3/n3_past_2018_07.json` | `vocab + grammar_reading` | 74 | - [x] Complete | ✅ 0 Errors |
 | JLPT N3 Past Exam (2018年12月) | `n3/n3_past_2018_12.json` | `vocab + grammar_reading` | 74 | - [x] Complete | ✅ 0 Errors |
 | JLPT N3 Past Exam (2019年7月) | `n3/n3_past_2019_07.json` | `vocab + grammar_reading` | 74 | - [x] Complete | ✅ 0 Errors |
 | JLPT N3 Past Exam (2019年12月) | `n3/n3_past_2019_12.json` | `vocab + grammar_reading` | 69 | - [x] Complete | ✅ 0 Errors |
