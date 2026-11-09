@@ -143,6 +143,24 @@ const N3PracticeSetQuizPage = () => {
     setCardMinHeight(0);
   }, [currentIndex]);
 
+  const handleFlipToExplanation = useCallback(() => {
+    if (frontCardRef.current) {
+      const h = frontCardRef.current.offsetHeight;
+      if (h > 0) setCardMinHeight(h);
+    }
+    setIsFlipped(true);
+    if (cardContainerRef.current) {
+      cardContainerRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }, []);
+
+  const handleFlipBack = useCallback(() => {
+    setIsFlipped(false);
+    if (cardContainerRef.current) {
+      cardContainerRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }, []);
+
   const sectionsToShow = useMemo(() => {
     if (sectionId === 'vocabulary-kanji') return ['vocabulary-kanji'];
     if (sectionId === 'grammar') return ['grammar-reading'];
@@ -711,24 +729,6 @@ const N3PracticeSetQuizPage = () => {
   const currentQ = questions[currentIndex];
   const selectedIdx = answers[currentQ.id];
   const hasPassage = Boolean(currentQ.passageText || currentQ.imageSrc);
-
-  const handleFlipToExplanation = useCallback(() => {
-    if (frontCardRef.current) {
-      const h = frontCardRef.current.offsetHeight;
-      if (h > 0) setCardMinHeight(h);
-    }
-    setIsFlipped(true);
-    if (cardContainerRef.current) {
-      cardContainerRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
-  }, []);
-
-  const handleFlipBack = useCallback(() => {
-    setIsFlipped(false);
-    if (cardContainerRef.current) {
-      cardContainerRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
-  }, []);
 
   const renderQuestionCard = () => (
     <div 
