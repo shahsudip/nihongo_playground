@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { db } from '../firebaseConfig.js';
 import { doc, getDoc, setDoc, deleteDoc } from 'firebase/firestore';
@@ -74,6 +74,10 @@ const N3PracticeSetQuizPage = () => {
   const [answers, setAnswers] = useState({});
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [cardMinHeight, setCardMinHeight] = useState(0);
+  const [isNavigatorOpen, setIsNavigatorOpen] = useState(true);
+  const cardContainerRef = useRef(null);
+  const frontCardRef = useRef(null);
   const [_feedbackMode, _setFeedbackMode] = useState('Immediate');
   const [isFinished, setIsFinished] = useState(false);
   const [timerSeconds, setTimerSeconds] = useState(0);
@@ -136,6 +140,7 @@ const N3PracticeSetQuizPage = () => {
 
   useEffect(() => {
     setIsFlipped(false);
+    setCardMinHeight(0);
   }, [currentIndex]);
 
   const sectionsToShow = useMemo(() => {
@@ -707,11 +712,36 @@ const N3PracticeSetQuizPage = () => {
   const selectedIdx = answers[currentQ.id];
   const hasPassage = Boolean(currentQ.passageText || currentQ.imageSrc);
 
+  const handleFlipToExplanation = useCallback(() => {
+    if (frontCardRef.current) {
+      const h = frontCardRef.current.offsetHeight;
+      if (h > 0) setCardMinHeight(h);
+    }
+    setIsFlipped(true);
+    if (cardContainerRef.current) {
+      cardContainerRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }, []);
+
+  const handleFlipBack = useCallback(() => {
+    setIsFlipped(false);
+    if (cardContainerRef.current) {
+      cardContainerRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }, []);
+
   const renderQuestionCard = () => (
-    <div className="quiz-flip-perspective w-full scroll-mt-20">
+    <div 
+      ref={cardContainerRef}
+      className="quiz-flip-perspective w-full scroll-mt-20"
+      style={cardMinHeight > 0 ? { minHeight: `${cardMinHeight}px` } : undefined}
+    >
       <div className={`quiz-flip-card-inner ${isFlipped ? 'is-flipped' : ''}`}>
         {/* FRONT FACE: Question & Options */}
-        <Card className={`w-full quiz-flip-face-front ${isFlipped ? 'absolute inset-0 pointer-events-none opacity-0 select-none' : 'relative'}`}>
+        <Card 
+          ref={frontCardRef}
+          className={`w-full quiz-flip-face-front ${isFlipped ? 'absolute inset-0 pointer-events-none opacity-0 select-none' : 'relative'}`}
+        >
           <div className="mb-6">
             <div className="flex items-center justify-between gap-2 mb-4 pb-3 border-b border-[var(--color-border)] flex-wrap">
               <div className="flex items-center gap-2">
@@ -727,7 +757,7 @@ const N3PracticeSetQuizPage = () => {
                 {(currentQ.explanation || isStarQuestion(currentQ)) && (
                   <button
                     type="button"
-                    onClick={() => setIsFlipped(true)}
+                    onClick={handleFlipToExplanation}
                     className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5 transition-all cursor-pointer shadow-2xs hover:scale-105"
                     title="解説を見る (Flip Card)"
                   >
@@ -821,7 +851,7 @@ const N3PracticeSetQuizPage = () => {
 
             <button
               type="button"
-              onClick={() => setIsFlipped(false)}
+              onClick={handleFlipBack}
               className="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white dark:bg-zinc-800 border border-emerald-500/40 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 flex items-center gap-1.5 transition-all cursor-pointer shadow-sm hover:scale-105"
             >
               <span>↩️ 問題に戻る (Flip Back)</span>
@@ -917,7 +947,7 @@ const N3PracticeSetQuizPage = () => {
           <div className="pt-4 mt-6 border-t border-emerald-500/20 flex flex-col gap-3">
             <button
               type="button"
-              onClick={() => setIsFlipped(false)}
+              onClick={handleFlipBack}
               className="w-full py-2.5 px-4 rounded-xl text-xs sm:text-sm font-bold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-800 dark:text-emerald-200 border border-emerald-500/30 flex items-center justify-center gap-2 transition-all cursor-pointer"
             >
               <span>↩️ 問題・選択肢に戻る (Flip Back to Question)</span>
@@ -1017,7 +1047,7 @@ const N3PracticeSetQuizPage = () => {
 
       {/* Question Navigator Box - No scrolling, wrapped tiles */}
       <div className="w-full mb-6 p-4 sm:p-5 rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] shadow-sm">
-        <div className="flex items-center justify-between flex-wrap gap-3 mb-3.5 pb-2.5 border-b border-[var(--color-border)]">
+        <div className={`flex items-center justify-between flex-wrap gap-3 ${isNavigatorOpen ? 'mb-3.5 pb-2.5 border-b border-[var(--color-border)]' : ''}`}>
           <div className="flex items-center gap-2">
             <span className="text-base">🗂️</span>
             <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[var(--color-text-secondary)]">
@@ -1028,59 +1058,74 @@ const N3PracticeSetQuizPage = () => {
             </span>
           </div>
 
-          {/* Color Status Legend */}
-          <div className="flex items-center gap-3 text-xs text-[var(--color-text-muted)] flex-wrap">
-            <span className="inline-flex items-center gap-1.5">
-              <span className="w-2.5 h-2.5 rounded-sm bg-emerald-600 inline-block shadow-sm"></span>
-              <span>Correct</span>
-            </span>
-            <span className="inline-flex items-center gap-1.5">
-              <span className="w-2.5 h-2.5 rounded-sm bg-rose-600 inline-block shadow-sm"></span>
-              <span>Incorrect</span>
-            </span>
-            <span className="inline-flex items-center gap-1.5">
-              <span className="w-2.5 h-2.5 rounded-sm bg-[var(--color-bg-tertiary)] border border-[var(--color-border)] inline-block"></span>
-              <span>Unanswered</span>
-            </span>
-            <span className="inline-flex items-center gap-1.5">
-              <span className="w-2.5 h-2.5 rounded-sm ring-2 ring-emerald-500 inline-block"></span>
-              <span>Current</span>
-            </span>
+          <div className="flex items-center gap-3">
+            {/* Color Status Legend */}
+            <div className="hidden sm:flex items-center gap-3 text-xs text-[var(--color-text-muted)] flex-wrap">
+              <span className="inline-flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-sm bg-emerald-600 inline-block shadow-sm"></span>
+                <span>Correct</span>
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-sm bg-rose-600 inline-block shadow-sm"></span>
+                <span>Incorrect</span>
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-sm bg-[var(--color-bg-tertiary)] border border-[var(--color-border)] inline-block"></span>
+                <span>Unanswered</span>
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-sm ring-2 ring-emerald-500 inline-block"></span>
+                <span>Current</span>
+              </span>
+            </div>
+
+            {/* Collapse/Expand Toggle Button */}
+            <button
+              type="button"
+              onClick={() => setIsNavigatorOpen(prev => !prev)}
+              className="px-2.5 py-1 text-xs font-semibold rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-primary)] hover:bg-[var(--color-bg-tertiary)] transition-colors text-[var(--color-text-secondary)] cursor-pointer flex items-center gap-1.5 shadow-2xs"
+              title={isNavigatorOpen ? 'Collapse question list' : 'Expand question list'}
+            >
+              <span>{isNavigatorOpen ? '▲' : '▼'}</span>
+              <span>{isNavigatorOpen ? '閉じる (Collapse)' : '開く (Expand)'}</span>
+            </button>
           </div>
         </div>
 
-        {/* Wrapped Grid of Questions - Zero horizontal scrolling */}
-        <div className="flex flex-wrap gap-2 sm:gap-2.5">
-          {questions.map((q, idx) => {
-            const isAnswered = answers[q.id] !== undefined;
-            const isCorrect = isAnswered && answers[q.id] === q.correctIndex;
-            const isCurrent = idx === currentIndex;
+        {/* Wrapped Grid of Questions - Shown when navigator is expanded */}
+        {isNavigatorOpen && (
+          <div className="flex flex-wrap gap-2 sm:gap-2.5">
+            {questions.map((q, idx) => {
+              const isAnswered = answers[q.id] !== undefined;
+              const isCorrect = isAnswered && answers[q.id] === q.correctIndex;
+              const isCurrent = idx === currentIndex;
 
-            let btnClass = "w-9 h-9 sm:w-10 sm:h-10 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center border cursor-pointer select-none ";
-            if (isCurrent) {
-              btnClass += "ring-2 ring-emerald-500 ring-offset-2 ring-offset-[var(--color-bg-primary)] scale-105 z-10 font-extrabold shadow-md ";
-            }
-            if (isAnswered) {
-              btnClass += isCorrect 
-                ? "bg-emerald-600 text-white border-emerald-500 hover:bg-emerald-500 shadow-sm " 
-                : "bg-rose-600 text-white border-rose-500 hover:bg-rose-500 shadow-sm ";
-            } else {
-              btnClass += "bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] border-[var(--color-border)] hover:bg-[var(--color-border)] hover:text-[var(--color-text-primary)] ";
-            }
+              let btnClass = "w-9 h-9 sm:w-10 sm:h-10 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center border cursor-pointer select-none ";
+              if (isCurrent) {
+                btnClass += "ring-2 ring-emerald-500 ring-offset-2 ring-offset-[var(--color-bg-primary)] scale-105 z-10 font-extrabold shadow-md ";
+              }
+              if (isAnswered) {
+                btnClass += isCorrect 
+                  ? "bg-emerald-600 text-white border-emerald-500 hover:bg-emerald-500 shadow-sm " 
+                  : "bg-rose-600 text-white border-rose-500 hover:bg-rose-500 shadow-sm ";
+              } else {
+                btnClass += "bg-[var(--color-bg-tertiary)] text-[var(--color-text-secondary)] border-[var(--color-border)] hover:bg-[var(--color-border)] hover:text-[var(--color-text-primary)] ";
+              }
 
-            return (
-              <button
-                key={q.id}
-                type="button"
-                onClick={() => setCurrentIndex(idx)}
-                className={btnClass}
-                title={`Question ${idx + 1}${isAnswered ? (isCorrect ? ' (Correct)' : ' (Incorrect)') : ' (Unanswered)'}`}
-              >
-                {idx + 1}
-              </button>
-            );
-          })}
-        </div>
+              return (
+                <button
+                  key={q.id}
+                  type="button"
+                  onClick={() => setCurrentIndex(idx)}
+                  className={btnClass}
+                  title={`Question ${idx + 1}${isAnswered ? (isCorrect ? ' (Correct)' : ' (Incorrect)') : ' (Unanswered)'}`}
+                >
+                  {idx + 1}
+                </button>
+              );
+            })}
+          </div>
+        )}
       </div>
 
       {/* Passage Reference Box if question has passage or image */}

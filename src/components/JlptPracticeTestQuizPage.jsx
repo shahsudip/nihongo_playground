@@ -77,6 +77,8 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
   const [answers, setAnswers] = useState({});
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [cardMinHeight, setCardMinHeight] = useState(0);
+  const frontCardRef = useRef(null);
   const [isFinished, setIsFinished] = useState(false);
   const [timerSeconds, setTimerSeconds] = useState(0);
   const [timerActive, setTimerActive] = useState(true);
@@ -157,6 +159,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
 
   useEffect(() => {
     setIsFlipped(false);
+    setCardMinHeight(0);
   }, [currentIndex, currentSectionIndex]);
 
   // Active questions: ONLY questions for this section (e.g. 1 to 36 for vocab)
@@ -394,6 +397,24 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
 
   const handleSelectQuestion = useCallback((idx) => {
     setCurrentIndex(idx);
+    if (questionCardRef.current) {
+      questionCardRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }, []);
+
+  const handleFlipToExplanation = useCallback(() => {
+    if (frontCardRef.current) {
+      const h = frontCardRef.current.offsetHeight;
+      if (h > 0) setCardMinHeight(h);
+    }
+    setIsFlipped(true);
+    if (questionCardRef.current) {
+      questionCardRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }, []);
+
+  const handleFlipBack = useCallback(() => {
+    setIsFlipped(false);
     if (questionCardRef.current) {
       questionCardRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
@@ -1041,11 +1062,11 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
 
       {/* MAIN QUESTION CARD */}
       <div ref={questionCardRef} className="w-full">
-        <div className="quiz-flip-perspective w-full">
+        <div className="quiz-flip-perspective w-full" style={cardMinHeight > 0 ? { minHeight: `${cardMinHeight}px` } : undefined}>
           <div className={`quiz-flip-card-inner ${isFlipped ? 'is-flipped' : ''}`}>
             
             {/* FRONT FACE: Question & Options */}
-            <Card className={`w-full p-6 sm:p-8 shadow-md jlpt-exam-booklet rounded-3xl mb-6 quiz-flip-face-front ${isFlipped ? 'absolute inset-0 pointer-events-none opacity-0 select-none' : 'relative'}`}>
+            <Card ref={frontCardRef} className={`w-full p-6 sm:p-8 shadow-md jlpt-exam-booklet rounded-3xl mb-6 quiz-flip-face-front ${isFlipped ? 'absolute inset-0 pointer-events-none opacity-0 select-none' : 'relative'}`}>
               {/* Question Header */}
               <div className="mb-6">
                 <div className="flex items-center justify-between gap-2 mb-3 pb-3 border-b border-gray-100 dark:border-white/5 flex-wrap">
@@ -1066,7 +1087,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
                   <div className="flex items-center gap-2.5">
                     <button
                       type="button"
-                      onClick={() => setIsFlipped(true)}
+                      onClick={handleFlipToExplanation}
                       className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1.5 transition-all cursor-pointer shadow-2xs hover:scale-105"
                       title="解説を見る (Flip Card)"
                     >
@@ -1216,7 +1237,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
 
                 <button
                   type="button"
-                  onClick={() => setIsFlipped(false)}
+                  onClick={handleFlipBack}
                   className="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white dark:bg-zinc-800 border border-emerald-500/40 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 flex items-center gap-1.5 transition-all cursor-pointer shadow-sm hover:scale-105"
                 >
                   <span>問題に戻る (Flip Back)</span>
@@ -1279,7 +1300,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
               <div className="pt-4 mt-6 border-t border-emerald-500/20 flex flex-col gap-3">
                 <button
                   type="button"
-                  onClick={() => setIsFlipped(false)}
+                  onClick={handleFlipBack}
                   className="w-full py-2.5 px-4 rounded-xl text-xs sm:text-sm font-bold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-800 dark:text-emerald-200 border border-emerald-500/30 flex items-center justify-center gap-2 transition-all cursor-pointer"
                 >
                   <span>問題・選択肢に戻る (Flip Back to Question)</span>
