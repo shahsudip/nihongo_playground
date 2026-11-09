@@ -1082,15 +1082,15 @@
             "行っているところだからです",
             "行っているところなんです"
           ],
-          "correct": 1,
-          "correctOption": "行くところだからです",
+          "correct": 2,
+          "correctOption": "行くところなんです",
           "explanations": [
-            "行くところだからです is the recorded key in this dataset, stating imminent departure as the reason for being busy.",
-            "行くところなんです is the natural conversational equivalent using explanatory んだ.",
-            "行っているところ indicates currently being at the bank, contradicting これから (about to head out).",
-            "行っているところなんです conflicts temporally with これから."
+            "「〜だからです」 is overly blunt and unnatural when declining a conversational request like 「ちょっといいですか」. Spoken Japanese uses explanatory 「〜んです」.",
+            "「辞書形＋ところなんです」 is the correct, natural expression: Verb dictionary form + ところ indicates being on the verge of departure (imminent action matching これから), combined with explanatory ん to politely give the reason for being unable to speak now.",
+            "「行っているところだからです」 uses 〜ているところ, which implies already being at the bank, contradicting 「これから」 (about to leave now). Also だからです is unnatural in speech.",
+            "「行っているところなんです」 conflicts with 「これから」 (about to depart)."
           ],
-          "explanation": "The correct answer is **1 行くところだからです** (or recorded key **2 行くところなんです** / *iku tokoro nan desu*).\n\n---\n### Sentence Breakdown\n* **Japanese**: 南「中山さん、今、ちょっといいですか。」<br>中山「あ、これからABC銀行に**行くところなんです**。戻ってからでもいいですか。」\n* **Romaji**: Minami: \"Nakayama-san, ima, chotto ii desu ka.\"<br>Nakayama: \"A, kore kara ABC ginkō ni **iku tokoro nan desu**. Modotte kara demo ii desu ka.\"\n* **English**: Minami: \"Nakayama, do you have a moment right now?\"<br>Nakayama: \"Ah, I am just about to go to ABC Bank right now. Would it be alright after I get back?\"\n\n---\n### Grammar Point\n* **Imminent Action**: Verb (辞書形) + **ところだ** (*~ tokoro da*).\n* **Collocation**: これから + Verb (辞書形) + ところです (\"just about to do ~ right now\").\n* **Explanatory の/ん**: 〜ところなんです softens the explanation when politely declining an immediate conversation.\n* *(Note: In this dataset, option 1 is recorded as the key)*.\n\n---\n### Why Other Options Don't Fit\n* **1. 行くところだからです**: Designated answer key in the original file, giving the reason (から) for being unable to talk now.\n* **2. 行くところなんです**: Standard conversational explanatory idiom for declining immediate interruption.\n* **3. 行っているところだからです**: 〜ているところ means currently in the middle of being there, which contradicts これから (from now).\n* **4. 行っているところなんです**: Conflicts with これから (about to leave)."
+          "explanation": "The correct answer is **2 行くところなんです** (*iku tokoro nan desu*).\n\n---\n### Sentence Breakdown\n* **Japanese**: 南「中山さん、今、ちょっといいですか。」<br>中山「あ、これからABC銀行に**行くところなんです**。戻ってきてからでもいいですか。」\n* **Romaji**: Minami: \"Nakayama-san, ima, chotto ii desu ka.\"<br>Nakayama: \"A, kore kara ABC ginkō ni **iku tokoro nan desu**. Modotte kite kara demo ii desu ka.\"\n* **English**: Minami: \"Nakayama, do you have a moment right now?\"<br>Nakayama: \"Ah, I'm just about to head to ABC Bank right now. Would it be okay after I get back?\"\n\n---\n### Grammar Point\n* **Imminent Action**: Verb (辞書形) + **ところだ** (*~ tokoro da*) = \"just about to do ~ right now\".\n* **Collocation with これから**: 「これから＋辞書形＋ところ」 expresses an action on the verge of taking place.\n* **Explanatory の/ん**: 「〜ところなんです」 is the natural conversational phrasing when politely explaining why one cannot attend to someone right away.\n\n---\n### Why Other Options Don't Fit\n* **1. 行くところだからです**: Overly blunt and stiff in spoken dialogue where explanatory ん is required.\n* **2. 行くところなんです**: Correct. Conveys imminent action alongside polite conversational explanation.\n* **3. 行っているところだからです**: 〜ているところ contradicts これから (from now / about to go).\n* **4. 行っているところなんです**: Conveys being currently at the destination, which contradicts これから."
         },
         {
           "id": "n3_past_2024_12_grammar_reading_q14",
