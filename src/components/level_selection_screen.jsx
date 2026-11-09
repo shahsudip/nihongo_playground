@@ -52,10 +52,10 @@ const categories = [
   {
     id: 'dethitiengnhat',
     title: 'Dethitiengnhat N3 Tests',
-    japaneseTitle: '実戦模擬試験 (18回)',
+    japaneseTitle: '実戦模試・過去問 (47回)',
     kanjiChar: '模',
-    desc: 'All 18 scraped N3 mock tests (Vocabulary, Grammar/Reading, Listening) in a simple Hallmark exam sheet.',
-    badge: '18 Full Sets',
+    desc: 'All 47 N3 sets (18 Mock Tests + 29 Official 2010–2025 Past Exams) in a simple Hallmark exam sheet.',
+    badge: '47 Full Sets',
     onlyLevel: 'n3',
   },
 ];

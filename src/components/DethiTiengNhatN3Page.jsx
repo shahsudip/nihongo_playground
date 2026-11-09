@@ -15,31 +15,41 @@ const PART_CATEGORIES = [
     partId: 1,
     key: 'vocab',
     categoryTitle: 'Letters and Vocabulary (文字語彙)',
-    cellPrefix: 'Letters and Vocabulary Test N3 Test Number',
+    cellPrefix: 'Letters and Vocabulary Test N3',
     shortLabel: 'Part 1: 文字・語彙',
   },
   {
     partId: 3,
     key: 'grammar_reading',
     categoryTitle: 'Grammar (文法), Reading Comprehension (読解)',
-    cellPrefix: 'Grammar Level N3 Test Number',
+    cellPrefix: 'Grammar & Reading Test N3',
     shortLabel: 'Part 3: 文法・読解',
   },
   {
     partId: 4,
     key: 'listening',
     categoryTitle: 'Listening (聴解)',
-    cellPrefix: 'Listening (聴解) Test N3 Test Number',
+    cellPrefix: 'Listening (聴解) Test N3',
     shortLabel: 'Part 4: 聴解',
   },
 ];
+
+function formatTestLabel(testItem) {
+  const code = String(testItem?.testNumber || '');
+  if (/^20\d{4}$/.test(code)) {
+    const y = code.slice(0, 4);
+    const m = code.slice(4, 6);
+    return `${y}/${m} Official Exam (${y}年${Number(m)}月)`;
+  }
+  return `Test Number ${code}`;
+}
 
 function speakJapanese(text) {
   if (!window.speechSynthesis) return;
   window.speechSynthesis.cancel();
   const cleanText = String(text || '')
     .replace(/<[^>]+>/g, '')
-    .replace(/^\d+\.\s*/, '')
+    .replace(/^\d+[\.\)]\s*/, '')
     .trim();
   if (!cleanText) return;
   const utter = new SpeechSynthesisUtterance(cleanText);
@@ -56,6 +66,7 @@ const DethiTiengNhatN3Page = () => {
   const [indexData, setIndexData] = useState(null);
   const [history, setHistory] = useState({});
   const [loadingIndex, setLoadingIndex] = useState(true);
+  const [filterMode, setFilterMode] = useState('ALL'); // 'ALL' | 'MOCK' | 'PAST'
 
   const [activeTestData, setActiveTestData] = useState(null);
   const [loadingTest, setLoadingTest] = useState(false);
@@ -63,7 +74,7 @@ const DethiTiengNhatN3Page = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [openScripts, setOpenScripts] = useState({});
 
-  const activeTestNum = paramTestNum ? Number(paramTestNum) : null;
+  const activeTestCode = paramTestNum ? String(paramTestNum) : null;
   const activePartId = paramPartId ? Number(paramPartId) : 1;
 
   // Load index & history
@@ -92,7 +103,7 @@ const DethiTiengNhatN3Page = () => {
 
   // Load individual test when a testNumber is selected in URL
   useEffect(() => {
-    if (!activeTestNum) {
+    if (!activeTestCode) {
       setActiveTestData(null);
       return;
     }
@@ -103,7 +114,7 @@ const DethiTiengNhatN3Page = () => {
       setIsChecked(false);
       setOpenScripts({});
       try {
-        const data = await getDethiN3Test(activeTestNum);
+        const data = await getDethiN3Test(activeTestCode);
         if (mounted) {
           setActiveTestData(data);
         }
@@ -115,12 +126,27 @@ const DethiTiengNhatN3Page = () => {
     return () => {
       mounted = false;
     };
-  }, [activeTestNum, activePartId]);
+  }, [activeTestCode, activePartId]);
 
   const tests = useMemo(() => indexData?.tests || [], [indexData]);
 
+  const filteredTests = useMemo(() => {
+    if (filterMode === 'MOCK') {
+      return tests.filter(t => t.categoryType !== 'past_exam' && !/^20\d{4}$/.test(String(t.testNumber)));
+    }
+    if (filterMode === 'PAST') {
+      return tests.filter(t => t.categoryType === 'past_exam' || /^20\d{4}$/.test(String(t.testNumber)));
+    }
+    return tests;
+  }, [tests, filterMode]);
+
   const totalQuestionsAcrossAll = useMemo(
     () => tests.reduce((acc, t) => acc + (t.totalQuestions || 0), 0),
+    [tests]
+  );
+
+  const totalSectionPapers = useMemo(
+    () => tests.reduce((acc, t) => acc + (t.sections?.length || 0), 0),
     [tests]
   );
 
@@ -173,13 +199,13 @@ const DethiTiengNhatN3Page = () => {
 
   const handleCheckResult = async () => {
     setIsChecked(true);
-    if (!activeTestNum || !currentSection) return;
+    if (!activeTestCode || !currentSection) return;
 
-    const qid = `dttn-n3-${activeTestNum}-${currentSection.partId}`;
+    const qid = `dttn-n3-${activeTestCode}-${currentSection.partId}`;
     const record = {
       id: qid,
       quizId: qid,
-      testNumber: activeTestNum,
+      testNumber: activeTestCode,
       partId: currentSection.partId,
       sectionKey: currentSection.id,
       score: scoreSummary.correctCount,
@@ -206,7 +232,7 @@ const DethiTiengNhatN3Page = () => {
         <div className="dttn-hallmark-container" style={{ paddingTop: '4rem', textAlign: 'center' }}>
           <LoadingSpinner />
           <p style={{ marginTop: '1rem', color: 'var(--dttn-text-muted)' }}>
-            Loading JLPT N3 Mock Tests...
+            Loading JLPT N3 Tests...
           </p>
         </div>
       </div>
@@ -219,7 +245,7 @@ const DethiTiengNhatN3Page = () => {
         {/* Top Bar */}
         <header className="dttn-top-bar">
           <div className="dttn-brand-group">
-            {activeTestNum ? (
+            {activeTestCode ? (
               <button
                 type="button"
                 onClick={() => navigate('/dethitiengnhat/n3')}
@@ -244,14 +270,14 @@ const DethiTiengNhatN3Page = () => {
           </div>
         </header>
 
-        {/* VIEW 1: Directory of all 18 N3 Tests grouped into 3 classic sections */}
-        {!activeTestNum && (
+        {/* VIEW 1: Directory of all 47 N3 Tests (18 Mock + 29 Official Past) */}
+        {!activeTestCode && (
           <>
             <section className="dttn-hero">
               <div>
-                <h1 className="dttn-hero-title">JLPT N3 Practice Tests</h1>
+                <h1 className="dttn-hero-title">JLPT N3 Practice & Past Tests</h1>
                 <p className="dttn-hero-subtitle">
-                  Eighteen complete N3 mock exams with instant grading, audio tracks, and reading passages.
+                  Forty-seven complete N3 exam sets (18 mock tests and 29 official 2010–2025 sessions) with audio and reading passages.
                 </p>
                 <div className="dttn-hero-actions">
                   <button
@@ -259,14 +285,14 @@ const DethiTiengNhatN3Page = () => {
                     onClick={() => navigate('/dethitiengnhat/n3/32/1')}
                     className="dttn-primary-btn"
                   >
-                    Start Test Number 32
+                    Start Mock Test 32
                   </button>
                   <button
                     type="button"
-                    onClick={() => navigate('/dethitiengnhat/n3/1/1')}
+                    onClick={() => navigate('/dethitiengnhat/n3/202507/1')}
                     className="dttn-secondary-btn"
                   >
-                    Open Test Number 1
+                    Open 2025/07 Past Exam
                   </button>
                 </div>
               </div>
@@ -274,7 +300,7 @@ const DethiTiengNhatN3Page = () => {
               {/* Signature Card */}
               <div className="dttn-signature-card">
                 <div className="dttn-signature-header">
-                  <span>dethitiengnhat.com N3 Archive</span>
+                  <span>dethitiengnhat.com Complete N3 Archive</span>
                   <span>Synced to DB & JSON</span>
                 </div>
                 <div className="dttn-signature-stats">
@@ -283,7 +309,7 @@ const DethiTiengNhatN3Page = () => {
                     <div className="dttn-stat-label">N3 test sets</div>
                   </div>
                   <div className="dttn-stat-box">
-                    <div className="dttn-stat-value">53</div>
+                    <div className="dttn-stat-value">{totalSectionPapers}</div>
                     <div className="dttn-stat-label">Section papers</div>
                   </div>
                   <div className="dttn-stat-box">
@@ -294,9 +320,34 @@ const DethiTiengNhatN3Page = () => {
               </div>
             </section>
 
+            {/* Filter Bar: All 47 Sets vs 18 Mock Sets vs 29 Historical Sessions */}
+            <div style={{ marginTop: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+              <button
+                type="button"
+                onClick={() => setFilterMode('ALL')}
+                className={`dttn-part-tab ${filterMode === 'ALL' ? 'is-active' : ''}`}
+              >
+                All N3 Tests ({tests.length})
+              </button>
+              <button
+                type="button"
+                onClick={() => setFilterMode('MOCK')}
+                className={`dttn-part-tab ${filterMode === 'MOCK' ? 'is-active' : ''}`}
+              >
+                Mock Tests #1–#32 (18)
+              </button>
+              <button
+                type="button"
+                onClick={() => setFilterMode('PAST')}
+                className={`dttn-part-tab ${filterMode === 'PAST' ? 'is-active' : ''}`}
+              >
+                Official Past Exams 2010–2025 (29)
+              </button>
+            </div>
+
             {/* 3 Classic Sections matching dethitiengnhat.com/en/jlpt/N3 */}
             {PART_CATEGORIES.map(cat => {
-              const availableTests = tests.filter(t =>
+              const availableTests = filteredTests.filter(t =>
                 (t.sections || []).some(s => Number(s.partId) === cat.partId && s.questionCount > 0)
               );
 
@@ -321,7 +372,7 @@ const DethiTiengNhatN3Page = () => {
                           className={`dttn-cell-card ${isDone ? 'is-completed' : ''}`}
                         >
                           <div className="dttn-cell-title">
-                            {cat.cellPrefix} {t.testNumber}
+                            {cat.cellPrefix} — {formatTestLabel(t)}
                           </div>
                           <div className="dttn-cell-meta">
                             <span>{secInfo?.questionCount || 0} questions</span>
@@ -344,13 +395,13 @@ const DethiTiengNhatN3Page = () => {
         )}
 
         {/* VIEW 2: Classic Inline Exam Sheet (Test Number + Part Switcher + Check Result) */}
-        {activeTestNum && (
+        {activeTestCode && (
           <div className="dttn-exam-wrapper">
             {loadingTest || !activeTestData ? (
               <div style={{ padding: '4rem 0', textAlign: 'center' }}>
                 <LoadingSpinner />
                 <p style={{ marginTop: '1rem', color: 'var(--dttn-text-muted)' }}>
-                  Loading JLPT N3 Test #{activeTestNum}...
+                  Loading JLPT N3 Test {activeTestCode}...
                 </p>
               </div>
             ) : (
@@ -358,27 +409,27 @@ const DethiTiengNhatN3Page = () => {
                 <div style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem' }}>
                   <div>
                     <h1 style={{ fontSize: '1.5rem', fontWeight: 700, margin: 0 }}>
-                      JLPT Mock Test N3 — Test #{activeTestNum}
+                      {activeTestData.title || `JLPT N3 — ${formatTestLabel(activeTestData)}`}
                     </h1>
                     <p style={{ fontSize: '0.9rem', color: 'var(--dttn-text-muted)', margin: '0.25rem 0 0 0' }}>
                       {currentSection?.enTitle || currentSection?.title} ({currentSection?.questionCount || 0} questions)
                     </p>
                   </div>
 
-                  {/* Quick Test Number Selector */}
+                  {/* Quick Test Selector */}
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <label htmlFor="dttn-test-select" style={{ fontSize: '0.875rem', color: 'var(--dttn-text-muted)' }}>
                       Switch test:
                     </label>
                     <select
                       id="dttn-test-select"
-                      value={activeTestNum}
+                      value={activeTestCode}
                       onChange={e => navigate(`/dethitiengnhat/n3/${e.target.value}/${activePartId}`)}
                       className="dttn-back-link"
                     >
                       {tests.map(t => (
                         <option key={t.testNumber} value={t.testNumber}>
-                          Test Number {t.testNumber}
+                          {formatTestLabel(t)}
                         </option>
                       ))}
                     </select>
@@ -399,7 +450,7 @@ const DethiTiengNhatN3Page = () => {
                           <button
                             key={part.partId}
                             type="button"
-                            onClick={() => navigate(`/dethitiengnhat/n3/${activeTestNum}/${part.partId}`)}
+                            onClick={() => navigate(`/dethitiengnhat/n3/${activeTestCode}/${part.partId}`)}
                             className={`dttn-part-tab ${isActive ? 'is-active' : ''}`}
                           >
                             {part.shortLabel}
@@ -534,7 +585,7 @@ const DethiTiengNhatN3Page = () => {
                                   >
                                     <input
                                       type="radio"
-                                      name={`dttn_${activeTestNum}_${currentSection.partId}_${qNum}`}
+                                      name={`dttn_${activeTestCode}_${currentSection.partId}_${qNum}`}
                                       checked={isSelected}
                                       onChange={() => handleSelectOption(qKey, optIdx)}
                                       disabled={isChecked}

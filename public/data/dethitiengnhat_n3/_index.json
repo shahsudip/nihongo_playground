@@ -1,13 +1,16 @@
 {
   "level": "N3",
   "source": "https://dethitiengnhat.com/en/jlpt/N3",
-  "updatedAt": "2026-11-09T07:44:37.335Z",
-  "totalTests": 18,
+  "updatedAt": "2026-11-09T08:02:51.319Z",
+  "totalTests": 47,
+  "mockTestsCount": 18,
+  "pastExamsCount": 29,
   "tests": [
     {
       "id": "dttn_n3_test_32",
       "testId": "dttn_n3_test_32",
-      "testNumber": 32,
+      "testNumber": "32",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #32",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第32回",
@@ -16,8 +19,6 @@
       "totalQuestions": 101,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -25,7 +26,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/32/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -35,7 +35,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/32/3",
           "durationMinutes": 70,
           "questionCount": 38
         },
@@ -45,7 +44,6 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/32/4",
           "durationMinutes": 40,
           "questionCount": 28
         }
@@ -54,7 +52,8 @@
     {
       "id": "dttn_n3_test_31",
       "testId": "dttn_n3_test_31",
-      "testNumber": 31,
+      "testNumber": "31",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #31",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第31回",
@@ -63,8 +62,6 @@
       "totalQuestions": 101,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -72,7 +69,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/31/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -82,7 +78,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/31/3",
           "durationMinutes": 70,
           "questionCount": 38
         },
@@ -92,7 +87,6 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/31/4",
           "durationMinutes": 40,
           "questionCount": 28
         }
@@ -101,7 +95,8 @@
     {
       "id": "dttn_n3_test_30",
       "testId": "dttn_n3_test_30",
-      "testNumber": 30,
+      "testNumber": "30",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #30",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第30回",
@@ -110,8 +105,6 @@
       "totalQuestions": 102,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -119,7 +112,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/30/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -129,7 +121,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/30/3",
           "durationMinutes": 70,
           "questionCount": 39
         },
@@ -139,7 +130,6 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/30/4",
           "durationMinutes": 40,
           "questionCount": 28
         }
@@ -148,7 +138,8 @@
     {
       "id": "dttn_n3_test_29",
       "testId": "dttn_n3_test_29",
-      "testNumber": 29,
+      "testNumber": "29",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #29",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第29回",
@@ -157,8 +148,6 @@
       "totalQuestions": 101,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -166,7 +155,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/29/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -176,7 +164,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/29/3",
           "durationMinutes": 70,
           "questionCount": 38
         },
@@ -186,7 +173,6 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/29/4",
           "durationMinutes": 40,
           "questionCount": 28
         }
@@ -195,7 +181,8 @@
     {
       "id": "dttn_n3_test_28",
       "testId": "dttn_n3_test_28",
-      "testNumber": 28,
+      "testNumber": "28",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #28",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第28回",
@@ -204,8 +191,6 @@
       "totalQuestions": 101,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -213,7 +198,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/28/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -223,7 +207,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/28/3",
           "durationMinutes": 70,
           "questionCount": 38
         },
@@ -233,7 +216,6 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/28/4",
           "durationMinutes": 40,
           "questionCount": 28
         }
@@ -242,7 +224,8 @@
     {
       "id": "dttn_n3_test_27",
       "testId": "dttn_n3_test_27",
-      "testNumber": 27,
+      "testNumber": "27",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #27",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第27回",
@@ -251,8 +234,6 @@
       "totalQuestions": 101,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -260,7 +241,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/27/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -270,7 +250,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/27/3",
           "durationMinutes": 70,
           "questionCount": 38
         },
@@ -280,7 +259,6 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/27/4",
           "durationMinutes": 40,
           "questionCount": 28
         }
@@ -289,7 +267,8 @@
     {
       "id": "dttn_n3_test_26",
       "testId": "dttn_n3_test_26",
-      "testNumber": 26,
+      "testNumber": "26",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #26",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第26回",
@@ -298,8 +277,6 @@
       "totalQuestions": 73,
       "totalMinutes": 100,
       "hasListening": false,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -307,7 +284,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/26/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -317,7 +293,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/26/3",
           "durationMinutes": 70,
           "questionCount": 38
         }
@@ -326,7 +301,8 @@
     {
       "id": "dttn_n3_test_11",
       "testId": "dttn_n3_test_11",
-      "testNumber": 11,
+      "testNumber": "11",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #11",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第11回",
@@ -335,8 +311,6 @@
       "totalQuestions": 101,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -344,7 +318,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/11/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -354,7 +327,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/11/3",
           "durationMinutes": 70,
           "questionCount": 38
         },
@@ -364,7 +336,6 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/11/4",
           "durationMinutes": 40,
           "questionCount": 28
         }
@@ -373,7 +344,8 @@
     {
       "id": "dttn_n3_test_10",
       "testId": "dttn_n3_test_10",
-      "testNumber": 10,
+      "testNumber": "10",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #10",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第10回",
@@ -382,8 +354,6 @@
       "totalQuestions": 101,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -391,7 +361,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/10/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -401,7 +370,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/10/3",
           "durationMinutes": 70,
           "questionCount": 38
         },
@@ -411,7 +379,6 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/10/4",
           "durationMinutes": 40,
           "questionCount": 28
         }
@@ -420,7 +387,8 @@
     {
       "id": "dttn_n3_test_9",
       "testId": "dttn_n3_test_9",
-      "testNumber": 9,
+      "testNumber": "9",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #9",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第9回",
@@ -429,8 +397,6 @@
       "totalQuestions": 101,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -438,7 +404,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/9/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -448,7 +413,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/9/3",
           "durationMinutes": 70,
           "questionCount": 38
         },
@@ -458,7 +422,6 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/9/4",
           "durationMinutes": 40,
           "questionCount": 28
         }
@@ -467,7 +430,8 @@
     {
       "id": "dttn_n3_test_8",
       "testId": "dttn_n3_test_8",
-      "testNumber": 8,
+      "testNumber": "8",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #8",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第8回",
@@ -476,8 +440,6 @@
       "totalQuestions": 101,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -485,7 +447,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/8/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -495,7 +456,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/8/3",
           "durationMinutes": 70,
           "questionCount": 38
         },
@@ -505,7 +465,6 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/8/4",
           "durationMinutes": 40,
           "questionCount": 28
         }
@@ -514,7 +473,8 @@
     {
       "id": "dttn_n3_test_7",
       "testId": "dttn_n3_test_7",
-      "testNumber": 7,
+      "testNumber": "7",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #7",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第7回",
@@ -523,8 +483,6 @@
       "totalQuestions": 101,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -532,7 +490,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/7/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -542,7 +499,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/7/3",
           "durationMinutes": 70,
           "questionCount": 38
         },
@@ -552,7 +508,6 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/7/4",
           "durationMinutes": 40,
           "questionCount": 28
         }
@@ -561,7 +516,8 @@
     {
       "id": "dttn_n3_test_6",
       "testId": "dttn_n3_test_6",
-      "testNumber": 6,
+      "testNumber": "6",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #6",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第6回",
@@ -570,8 +526,6 @@
       "totalQuestions": 101,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -579,7 +533,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/6/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -589,7 +542,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/6/3",
           "durationMinutes": 70,
           "questionCount": 38
         },
@@ -599,7 +551,6 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/6/4",
           "durationMinutes": 40,
           "questionCount": 28
         }
@@ -608,7 +559,8 @@
     {
       "id": "dttn_n3_test_5",
       "testId": "dttn_n3_test_5",
-      "testNumber": 5,
+      "testNumber": "5",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #5",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第5回",
@@ -617,8 +569,6 @@
       "totalQuestions": 102,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -626,7 +576,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/5/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -636,7 +585,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/5/3",
           "durationMinutes": 70,
           "questionCount": 39
         },
@@ -646,7 +594,6 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/5/4",
           "durationMinutes": 40,
           "questionCount": 28
         }
@@ -655,7 +602,8 @@
     {
       "id": "dttn_n3_test_4",
       "testId": "dttn_n3_test_4",
-      "testNumber": 4,
+      "testNumber": "4",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #4",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第4回",
@@ -664,8 +612,6 @@
       "totalQuestions": 101,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -673,7 +619,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/4/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -683,7 +628,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/4/3",
           "durationMinutes": 70,
           "questionCount": 38
         },
@@ -693,7 +637,6 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/4/4",
           "durationMinutes": 40,
           "questionCount": 28
         }
@@ -702,7 +645,8 @@
     {
       "id": "dttn_n3_test_3",
       "testId": "dttn_n3_test_3",
-      "testNumber": 3,
+      "testNumber": "3",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #3",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第3回",
@@ -711,8 +655,6 @@
       "totalQuestions": 102,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -720,7 +662,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/3/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -730,7 +671,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/3/3",
           "durationMinutes": 70,
           "questionCount": 39
         },
@@ -740,7 +680,6 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/3/4",
           "durationMinutes": 40,
           "questionCount": 28
         }
@@ -749,7 +688,8 @@
     {
       "id": "dttn_n3_test_2",
       "testId": "dttn_n3_test_2",
-      "testNumber": 2,
+      "testNumber": "2",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #2",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第2回",
@@ -758,8 +698,6 @@
       "totalQuestions": 101,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -767,7 +705,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/2/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -777,7 +714,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/2/3",
           "durationMinutes": 70,
           "questionCount": 38
         },
@@ -787,7 +723,6 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/2/4",
           "durationMinutes": 40,
           "questionCount": 28
         }
@@ -796,7 +731,8 @@
     {
       "id": "dttn_n3_test_1",
       "testId": "dttn_n3_test_1",
-      "testNumber": 1,
+      "testNumber": "1",
+      "categoryType": "mock_test",
       "level": "N3",
       "title": "JLPT N3 Practice Test #1",
       "japaneseTitle": "日本語能力試験 N3 模擬試験 第1回",
@@ -805,8 +741,6 @@
       "totalQuestions": 103,
       "totalMinutes": 140,
       "hasListening": true,
-      "officialScoreMax": 180,
-      "officialPassMark": 95,
       "sections": [
         {
           "id": "vocab",
@@ -814,7 +748,6 @@
           "categoryId": "vocabulary-test",
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/1/1",
           "durationMinutes": 30,
           "questionCount": 35
         },
@@ -824,7 +757,6 @@
           "categoryId": "grammar-test",
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/1/3",
           "durationMinutes": 70,
           "questionCount": 40
         },
@@ -834,7 +766,1302 @@
           "categoryId": "listening-test",
           "title": "聴解",
           "enTitle": "Listening (聴解)",
-          "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/1/4",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_202507",
+      "testId": "dttn_n3_test_202507",
+      "testNumber": "202507",
+      "categoryType": "past_exam",
+      "year": 2025,
+      "month": 7,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2025/07)",
+      "japaneseTitle": "日本語能力試験 N3 2025年7月 過去問",
+      "shortName": "2025/07",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/202507/1",
+      "totalQuestions": 101,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 38
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_202412",
+      "testId": "dttn_n3_test_202412",
+      "testNumber": "202412",
+      "categoryType": "past_exam",
+      "year": 2024,
+      "month": 12,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2024/12)",
+      "japaneseTitle": "日本語能力試験 N3 2024年12月 過去問",
+      "shortName": "2024/12",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/202412/1",
+      "totalQuestions": 101,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 38
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_202407",
+      "testId": "dttn_n3_test_202407",
+      "testNumber": "202407",
+      "categoryType": "past_exam",
+      "year": 2024,
+      "month": 7,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2024/07)",
+      "japaneseTitle": "日本語能力試験 N3 2024年7月 過去問",
+      "shortName": "2024/07",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/202407/1",
+      "totalQuestions": 101,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 38
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_202312",
+      "testId": "dttn_n3_test_202312",
+      "testNumber": "202312",
+      "categoryType": "past_exam",
+      "year": 2023,
+      "month": 12,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2023/12)",
+      "japaneseTitle": "日本語能力試験 N3 2023年12月 過去問",
+      "shortName": "2023/12",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/202312/1",
+      "totalQuestions": 101,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 38
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_202307",
+      "testId": "dttn_n3_test_202307",
+      "testNumber": "202307",
+      "categoryType": "past_exam",
+      "year": 2023,
+      "month": 7,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2023/07)",
+      "japaneseTitle": "日本語能力試験 N3 2023年7月 過去問",
+      "shortName": "2023/07",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/202307/1",
+      "totalQuestions": 101,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 38
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_202212",
+      "testId": "dttn_n3_test_202212",
+      "testNumber": "202212",
+      "categoryType": "past_exam",
+      "year": 2022,
+      "month": 12,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2022/12)",
+      "japaneseTitle": "日本語能力試験 N3 2022年12月 過去問",
+      "shortName": "2022/12",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/202212/1",
+      "totalQuestions": 99,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 36
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_202207",
+      "testId": "dttn_n3_test_202207",
+      "testNumber": "202207",
+      "categoryType": "past_exam",
+      "year": 2022,
+      "month": 7,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2022/07)",
+      "japaneseTitle": "日本語能力試験 N3 2022年7月 過去問",
+      "shortName": "2022/07",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/202207/1",
+      "totalQuestions": 100,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 34
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 38
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_202112",
+      "testId": "dttn_n3_test_202112",
+      "testNumber": "202112",
+      "categoryType": "past_exam",
+      "year": 2021,
+      "month": 12,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2021/12)",
+      "japaneseTitle": "日本語能力試験 N3 2021年12月 過去問",
+      "shortName": "2021/12",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/202112/1",
+      "totalQuestions": 101,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 38
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_202107",
+      "testId": "dttn_n3_test_202107",
+      "testNumber": "202107",
+      "categoryType": "past_exam",
+      "year": 2021,
+      "month": 7,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2021/07)",
+      "japaneseTitle": "日本語能力試験 N3 2021年7月 過去問",
+      "shortName": "2021/07",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/202107/1",
+      "totalQuestions": 101,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 38
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_202012",
+      "testId": "dttn_n3_test_202012",
+      "testNumber": "202012",
+      "categoryType": "past_exam",
+      "year": 2020,
+      "month": 12,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2020/12)",
+      "japaneseTitle": "日本語能力試験 N3 2020年12月 過去問",
+      "shortName": "2020/12",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/202012/1",
+      "totalQuestions": 101,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 38
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201912",
+      "testId": "dttn_n3_test_201912",
+      "testNumber": "201912",
+      "categoryType": "past_exam",
+      "year": 2019,
+      "month": 12,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2019/12)",
+      "japaneseTitle": "日本語能力試験 N3 2019年12月 過去問",
+      "shortName": "2019/12",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201912/1",
+      "totalQuestions": 101,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 27
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201907",
+      "testId": "dttn_n3_test_201907",
+      "testNumber": "201907",
+      "categoryType": "past_exam",
+      "year": 2019,
+      "month": 7,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2019/07)",
+      "japaneseTitle": "日本語能力試験 N3 2019年7月 過去問",
+      "shortName": "2019/07",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201907/1",
+      "totalQuestions": 102,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201812",
+      "testId": "dttn_n3_test_201812",
+      "testNumber": "201812",
+      "categoryType": "past_exam",
+      "year": 2018,
+      "month": 12,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2018/12)",
+      "japaneseTitle": "日本語能力試験 N3 2018年12月 過去問",
+      "shortName": "2018/12",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201812/1",
+      "totalQuestions": 101,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 27
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201807",
+      "testId": "dttn_n3_test_201807",
+      "testNumber": "201807",
+      "categoryType": "past_exam",
+      "year": 2018,
+      "month": 7,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2018/07)",
+      "japaneseTitle": "日本語能力試験 N3 2018年7月 過去問",
+      "shortName": "2018/07",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201807/1",
+      "totalQuestions": 102,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201712",
+      "testId": "dttn_n3_test_201712",
+      "testNumber": "201712",
+      "categoryType": "past_exam",
+      "year": 2017,
+      "month": 12,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2017/12)",
+      "japaneseTitle": "日本語能力試験 N3 2017年12月 過去問",
+      "shortName": "2017/12",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201712/1",
+      "totalQuestions": 94,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 20
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201707",
+      "testId": "dttn_n3_test_201707",
+      "testNumber": "201707",
+      "categoryType": "past_exam",
+      "year": 2017,
+      "month": 7,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2017/07)",
+      "japaneseTitle": "日本語能力試験 N3 2017年7月 過去問",
+      "shortName": "2017/07",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201707/1",
+      "totalQuestions": 92,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 18
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201612",
+      "testId": "dttn_n3_test_201612",
+      "testNumber": "201612",
+      "categoryType": "past_exam",
+      "year": 2016,
+      "month": 12,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2016/12)",
+      "japaneseTitle": "日本語能力試験 N3 2016年12月 過去問",
+      "shortName": "2016/12",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201612/1",
+      "totalQuestions": 92,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 18
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201607",
+      "testId": "dttn_n3_test_201607",
+      "testNumber": "201607",
+      "categoryType": "past_exam",
+      "year": 2016,
+      "month": 7,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2016/07)",
+      "japaneseTitle": "日本語能力試験 N3 2016年7月 過去問",
+      "shortName": "2016/07",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201607/1",
+      "totalQuestions": 95,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 21
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201512",
+      "testId": "dttn_n3_test_201512",
+      "testNumber": "201512",
+      "categoryType": "past_exam",
+      "year": 2015,
+      "month": 12,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2015/12)",
+      "japaneseTitle": "日本語能力試験 N3 2015年12月 過去問",
+      "shortName": "2015/12",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201512/1",
+      "totalQuestions": 94,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 20
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201507",
+      "testId": "dttn_n3_test_201507",
+      "testNumber": "201507",
+      "categoryType": "past_exam",
+      "year": 2015,
+      "month": 7,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2015/07)",
+      "japaneseTitle": "日本語能力試験 N3 2015年7月 過去問",
+      "shortName": "2015/07",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201507/1",
+      "totalQuestions": 74,
+      "totalMinutes": 100,
+      "hasListening": false,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201412",
+      "testId": "dttn_n3_test_201412",
+      "testNumber": "201412",
+      "categoryType": "past_exam",
+      "year": 2014,
+      "month": 12,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2014/12)",
+      "japaneseTitle": "日本語能力試験 N3 2014年12月 過去問",
+      "shortName": "2014/12",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201412/1",
+      "totalQuestions": 93,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 19
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201407",
+      "testId": "dttn_n3_test_201407",
+      "testNumber": "201407",
+      "categoryType": "past_exam",
+      "year": 2014,
+      "month": 7,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2014/07)",
+      "japaneseTitle": "日本語能力試験 N3 2014年7月 過去問",
+      "shortName": "2014/07",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201407/1",
+      "totalQuestions": 93,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 19
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201312",
+      "testId": "dttn_n3_test_201312",
+      "testNumber": "201312",
+      "categoryType": "past_exam",
+      "year": 2013,
+      "month": 12,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2013/12)",
+      "japaneseTitle": "日本語能力試験 N3 2013年12月 過去問",
+      "shortName": "2013/12",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201312/1",
+      "totalQuestions": 102,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201307",
+      "testId": "dttn_n3_test_201307",
+      "testNumber": "201307",
+      "categoryType": "past_exam",
+      "year": 2013,
+      "month": 7,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2013/07)",
+      "japaneseTitle": "日本語能力試験 N3 2013年7月 過去問",
+      "shortName": "2013/07",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201307/1",
+      "totalQuestions": 102,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201212",
+      "testId": "dttn_n3_test_201212",
+      "testNumber": "201212",
+      "categoryType": "past_exam",
+      "year": 2012,
+      "month": 12,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2012/12)",
+      "japaneseTitle": "日本語能力試験 N3 2012年12月 過去問",
+      "shortName": "2012/12",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201212/1",
+      "totalQuestions": 100,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 37
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201207",
+      "testId": "dttn_n3_test_201207",
+      "testNumber": "201207",
+      "categoryType": "past_exam",
+      "year": 2012,
+      "month": 7,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2012/07)",
+      "japaneseTitle": "日本語能力試験 N3 2012年7月 過去問",
+      "shortName": "2012/07",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201207/1",
+      "totalQuestions": 102,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 28
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201112",
+      "testId": "dttn_n3_test_201112",
+      "testNumber": "201112",
+      "categoryType": "past_exam",
+      "year": 2011,
+      "month": 12,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2011/12)",
+      "japaneseTitle": "日本語能力試験 N3 2011年12月 過去問",
+      "shortName": "2011/12",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201112/1",
+      "totalQuestions": 101,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 27
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201107",
+      "testId": "dttn_n3_test_201107",
+      "testNumber": "201107",
+      "categoryType": "past_exam",
+      "year": 2011,
+      "month": 7,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2011/07)",
+      "japaneseTitle": "日本語能力試験 N3 2011年7月 過去問",
+      "shortName": "2011/07",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201107/1",
+      "totalQuestions": 101,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
+          "durationMinutes": 40,
+          "questionCount": 27
+        }
+      ]
+    },
+    {
+      "id": "dttn_n3_test_201007",
+      "testId": "dttn_n3_test_201007",
+      "testNumber": "201007",
+      "categoryType": "past_exam",
+      "year": 2010,
+      "month": 7,
+      "level": "N3",
+      "title": "JLPT N3 Official Past Exam (2010/07)",
+      "japaneseTitle": "日本語能力試験 N3 2010年7月 過去問",
+      "shortName": "2010/07",
+      "sourceUrl": "https://dethitiengnhat.com/en/jlpt/N3/201007/1",
+      "totalQuestions": 102,
+      "totalMinutes": 140,
+      "hasListening": true,
+      "sections": [
+        {
+          "id": "vocab",
+          "partId": 1,
+          "categoryId": "vocabulary-test",
+          "title": "言語知識（文字・語彙）",
+          "enTitle": "Letters and Vocabulary (文字語彙)",
+          "durationMinutes": 30,
+          "questionCount": 35
+        },
+        {
+          "id": "grammar_reading",
+          "partId": 3,
+          "categoryId": "grammar-test",
+          "title": "言語知識（文法）・読解",
+          "enTitle": "Grammar (文法), Reading Comprehension (読解)",
+          "durationMinutes": 70,
+          "questionCount": 39
+        },
+        {
+          "id": "listening",
+          "partId": 4,
+          "categoryId": "listening-test",
+          "title": "聴解",
+          "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
           "questionCount": 28
         }
