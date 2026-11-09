@@ -61,6 +61,7 @@ const DethiTiengNhatN3Page = () => {
   const [loadingTest, setLoadingTest] = useState(false);
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [isChecked, setIsChecked] = useState(false);
+  const [openScripts, setOpenScripts] = useState({});
 
   const activeTestNum = paramTestNum ? Number(paramTestNum) : null;
   const activePartId = paramPartId ? Number(paramPartId) : 1;
@@ -100,6 +101,7 @@ const DethiTiengNhatN3Page = () => {
       setLoadingTest(true);
       setSelectedAnswers({});
       setIsChecked(false);
+      setOpenScripts({});
       try {
         const data = await getDethiN3Test(activeTestNum);
         if (mounted) {
@@ -543,13 +545,34 @@ const DethiTiengNhatN3Page = () => {
                               })}
                             </div>
 
-                            {isChecked && (block.explanationHtml || block.transcript) && (
-                              <div
-                                className="dttn-gt-box"
-                                dangerouslySetInnerHTML={{
-                                  __html: block.explanationHtml || block.transcript,
-                                }}
-                              />
+                            {(block.explanationHtml || block.transcript) && (
+                              <div style={{ marginTop: '0.75rem' }}>
+                                {!isChecked && (
+                                  <button
+                                    type="button"
+                                    onClick={() =>
+                                      setOpenScripts(prev => ({
+                                        ...prev,
+                                        [qKey]: !prev[qKey],
+                                      }))
+                                    }
+                                    className="dttn-tts-btn"
+                                  >
+                                    {openScripts[qKey]
+                                      ? 'Hide Script / Reference'
+                                      : 'Show Script / Reference'}
+                                  </button>
+                                )}
+
+                                {(isChecked || openScripts[qKey]) && (
+                                  <div
+                                    className="dttn-gt-box"
+                                    dangerouslySetInnerHTML={{
+                                      __html: block.explanationHtml || block.transcript,
+                                    }}
+                                  />
+                                )}
+                              </div>
                             )}
                           </div>
                         );
