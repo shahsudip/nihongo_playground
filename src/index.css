@@ -406,6 +406,16 @@
   -webkit-backface-visibility: hidden;
 }
 
+.quiz-flip-card-inner.is-flipped .quiz-flip-face-front,
+.quiz-flip-card-inner:not(.is-flipped) .quiz-flip-face-back {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
 .quiz-flip-face-back {
   transform: rotateY(180deg);
 }
