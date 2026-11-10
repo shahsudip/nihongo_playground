@@ -6,7 +6,7 @@
 
 | Level | Total Exams | Target Questions (Moji/Goi/Kanji/Grammar/Reading) | Status | Audit Gate |
 | :--- | :--- | :--- | :--- | :--- |
-| **N3** | 13 | 947 | 🔄 In Progress | Pending Audit |
+| **N3** | 17 | 1,241 | ✅ Complete | ✅ 0 Errors |
 | **N2** | 13 | 932 | ⏳ Queued | Pending Audit |
 | **N1** | 12 | 815 | ⏳ Queued | Pending Audit |
 | **N4** | 6 | 420 | ⏳ Queued | Pending Audit |
@@ -19,6 +19,8 @@
 
 | Exam Session | JSON File | Target Sections | Target Qs | Explanations Status | Audit Verification |
 | :--- | :--- | :--- | :--- | :--- | :--- |
+| JLPT N3 Past Exam (2017年7月) | `n3/n3_past_2017_07.json` | `vocab + grammar_reading` | 74 | - [x] Complete | ✅ 0 Errors |
+| JLPT N3 Past Exam (2017年12月) | `n3/n3_past_2017_12.json` | `vocab + grammar_reading` | 74 | - [x] Complete | ✅ 0 Errors |
 | JLPT N3 Past Exam (2018年7月) | `n3/n3_past_2018_07.json` | `vocab + grammar_reading` | 74 | - [x] Complete | ✅ 0 Errors |
 | JLPT N3 Past Exam (2018年12月) | `n3/n3_past_2018_12.json` | `vocab + grammar_reading` | 74 | - [x] Complete | ✅ 0 Errors |
 | JLPT N3 Past Exam (2019年7月) | `n3/n3_past_2019_07.json` | `vocab + grammar_reading` | 74 | - [x] Complete | ✅ 0 Errors |
@@ -32,6 +34,8 @@
 | JLPT N3 Past Exam (2023年12月) | `n3/n3_past_2023_12.json` | `vocab + grammar_reading` | 73 | - [x] Complete | ✅ 0 Errors |
 | JLPT N3 Past Exam (2024年7月) | `n3/n3_past_2024_07.json` | `vocab + grammar_reading` | 73 | - [x] Complete | ✅ 0 Errors |
 | JLPT N3 Past Exam (2024年12月) | `n3/n3_past_2024_12.json` | `vocab + grammar_reading` | 73 | - [x] Complete | ✅ 0 Errors |
+| JLPT N3 Past Exam (2025年7月) | `n3/n3_past_2025_07.json` | `vocab + grammar_reading` | 73 | - [x] Complete | ✅ 0 Errors |
+| JLPT N3 Past Exam (2025年12月) | `n3/n3_past_2025_12.json` | `vocab + grammar_reading` | 73 | - [x] Complete | ✅ 0 Errors |
 
 ## 🔹 N2 Past Exams
 

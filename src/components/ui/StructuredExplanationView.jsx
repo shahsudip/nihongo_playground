@@ -70,8 +70,8 @@ export default function StructuredExplanationView({ explanation }) {
             )}
             <div className="space-y-2 leading-relaxed pl-1 sm:pl-2">
               {sec.lines.map((l, lIdx) => {
-                if (l.startsWith('* ')) {
-                  const content = l.replace('* ', '');
+                if (l.startsWith('* ') || l.startsWith('- ')) {
+                  const content = l.slice(2);
                   return (
                     <div
                       key={lIdx}
