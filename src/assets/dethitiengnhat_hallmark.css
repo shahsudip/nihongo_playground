@@ -29,6 +29,7 @@
   --dttn-border-correct: #10b981;
   --dttn-border-wrong: #ef4444;
   --dttn-border-reference: #f59e0b;
+  --dttn-bg-player-raw: #282a2c;
 
   --dttn-btn-primary: #1d4ed8;
   --dttn-btn-primary-hover: #1e40af;
@@ -484,9 +485,61 @@ body {
 /* Audio Player Box */
 .dttn-audio-box {
   margin: 0.85rem 1.25rem;
-  border-radius: var(--dttn-radius-sm);
+  border-radius: var(--dttn-radius-md);
   overflow: hidden;
-  border: 1px solid var(--dttn-border-subtle);
+  border: 1px solid var(--dttn-border-strong);
+  background-color: var(--dttn-bg-mondai);
+}
+
+.dttn-audio-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.55rem 1rem;
+  border-bottom: 1px solid var(--dttn-border-subtle);
+  font-family: var(--dttn-font-jp);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--dttn-text-main);
+}
+
+.dttn-audio-hint {
+  font-family: var(--dttn-font-sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--dttn-text-muted);
+}
+
+.dttn-audio-crop {
+  position: relative;
+  height: 112px;
+  overflow: hidden;
+  background-color: var(--dttn-bg-player-raw);
+  filter: invert(1) hue-rotate(180deg) brightness(1.06) contrast(0.92);
+}
+
+.dark .dttn-audio-crop {
+  filter: none;
+}
+
+.dttn-audio-iframe {
+  width: 100%;
+  height: 190px;
+  border: none;
+  display: block;
+  margin-top: -8px;
+}
+
+.dttn-audio-popout-shield {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 68px;
+  height: 48px;
+  background-color: var(--dttn-bg-player-raw);
+  z-index: 10;
+  pointer-events: auto;
 }
 
 /* Question Row (.question_list + answers) */

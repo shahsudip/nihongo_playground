@@ -172,7 +172,7 @@ const DethiTiengNhatN3Page = () => {
     );
   }, [activeTestData, activePartId]);
 
-  const isInstantMode = currentSection?.partId === 1 || currentSection?.partId === 3;
+  const isInstantMode = Boolean(currentSection);
 
   // Calculate score in real time (for instant feedback and check result)
   const scoreSummary = useMemo(() => {
@@ -641,14 +641,23 @@ const DethiTiengNhatN3Page = () => {
                       if (block.type === 'audio' && block.src) {
                         return (
                           <div key={`aud_${bIdx}`} className="dttn-audio-box">
-                            <iframe
-                              src={block.src}
-                              width="100%"
-                              height="110"
-                              allow="autoplay"
-                              title={`Listening Audio ${bIdx}`}
-                              style={{ border: 'none', display: 'block' }}
-                            />
+                            <div className="dttn-audio-bar">
+                              <span>聴解音声トラック (Listening Audio)</span>
+                              <span className="dttn-audio-hint">Press Play below to start audio</span>
+                            </div>
+                            <div className="dttn-audio-crop">
+                              <iframe
+                                src={block.src}
+                                allow="autoplay"
+                                sandbox="allow-scripts allow-same-origin"
+                                title={`Listening Audio ${bIdx}`}
+                                className="dttn-audio-iframe"
+                              />
+                              <div
+                                className="dttn-audio-popout-shield"
+                                aria-hidden="true"
+                              />
+                            </div>
                           </div>
                         );
                       }
@@ -740,7 +749,7 @@ const DethiTiengNhatN3Page = () => {
                             {/* Explanation / Reference Box */}
                             {((isInstantMode && userChoice !== undefined) || isChecked || openScripts[qKey] || block.explanationHtml || block.transcript) && (
                               <div style={{ marginTop: '0.75rem' }}>
-                                {!isInstantMode && !isChecked && (
+                                {(block.explanationHtml || block.transcript) && !(isInstantMode && userChoice !== undefined) && !isChecked && (
                                   <button
                                     type="button"
                                     onClick={() =>

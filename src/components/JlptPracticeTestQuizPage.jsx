@@ -930,6 +930,10 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
   const hasPassage = Boolean(currentQ.context);
   const hasImage = Boolean(currentQ.imageUrl);
   const hasAudio = Boolean(currentQ.audioUrl);
+  const isGDriveEmbed = Boolean(
+    hasAudio &&
+    (currentQ.audioUrl.includes('drive.google.com') || currentQ.audioUrl.includes('/preview'))
+  );
 
   return (
     <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8 animate-fade-in relative">
@@ -1081,63 +1085,91 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
       {/* AUDIO PLAYER (for Listening Questions) */}
       {hasAudio && (
         <Card className="w-full mb-6 p-5 sm:p-6 shadow-sm border border-emerald-500/30 bg-gradient-to-br from-emerald-500/5 via-teal-500/5 to-cyan-500/5 rounded-3xl">
-          <audio
-            ref={audioRef}
-            src={currentQ.audioUrl}
-            onTimeUpdate={handleAudioTimeUpdate}
-            onEnded={() => setIsPlaying(false)}
-            preload="auto"
-          />
-
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
-            <div className="flex items-center gap-3">
-              <button
-                type="button"
-                onClick={handleAudioPlayPause}
-                className="w-12 h-12 rounded-2xl bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white flex items-center justify-center text-xl shadow-lg shadow-emerald-600/30 transition-all cursor-pointer"
-                title={isPlaying ? 'Pause Audio' : 'Play Audio'}
-              >
-                {isPlaying ? <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg> : <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>}
-              </button>
-              <div>
-                <span className="text-xs font-black uppercase tracking-wider text-emerald-700 dark:text-emerald-400 block">
-                  Listening Track
+          {isGDriveEmbed ? (
+            <div className="w-full">
+              <div className="flex items-center justify-between gap-3 mb-3">
+                <span className="text-xs font-black uppercase tracking-wider text-emerald-700 dark:text-emerald-400">
+                  Listening Track (聴解音声)
                 </span>
-                <span className="text-xs text-gray-500 dark:text-gray-400 font-mono">
-                  {formatTime(Math.floor(audioProgress))} / {formatTime(Math.floor(audioDuration))}
+                <span className="text-xs text-gray-500 dark:text-gray-400">
+                  Press Play below to start audio
                 </span>
               </div>
+              <div className="relative h-[112px] overflow-hidden rounded-2xl border border-emerald-500/30 bg-[#282a2c] [filter:invert(1)_hue-rotate(180deg)_brightness(1.06)_contrast(0.92)] dark:[filter:none]">
+                <iframe
+                  src={currentQ.audioUrl}
+                  allow="autoplay"
+                  sandbox="allow-scripts allow-same-origin"
+                  title={`Listening Track Q${currentQ.number}`}
+                  className="w-full h-[190px] border-0 block -mt-2"
+                />
+                <div
+                  className="absolute top-0 right-0 w-[68px] h-[48px] bg-[#282a2c] z-10 pointer-events-auto"
+                  aria-hidden="true"
+                />
+              </div>
             </div>
+          ) : (
+            <>
+              <audio
+                ref={audioRef}
+                src={currentQ.audioUrl}
+                onTimeUpdate={handleAudioTimeUpdate}
+                onEnded={() => setIsPlaying(false)}
+                preload="auto"
+              />
 
-            {/* Playback speed selector */}
-            <div className="flex items-center gap-1.5 self-start sm:self-center">
-              <span className="text-[11px] font-bold text-gray-500 dark:text-gray-400 mr-1">Speed:</span>
-              {[0.8, 1.0, 1.2].map((rate) => (
-                <button
-                  key={rate}
-                  type="button"
-                  onClick={() => changeSpeed(rate)}
-                  className={`text-xs px-2.5 py-1 rounded-lg font-bold border transition-colors cursor-pointer ${
-                    playbackRate === rate
-                      ? 'bg-emerald-600 text-white border-emerald-600'
-                      : 'bg-white dark:bg-zinc-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-white/10 hover:border-emerald-500/40'
-                  }`}
-                >
-                  {rate}x
-                </button>
-              ))}
-            </div>
-          </div>
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+                <div className="flex items-center gap-3">
+                  <button
+                    type="button"
+                    onClick={handleAudioPlayPause}
+                    className="w-12 h-12 rounded-2xl bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white flex items-center justify-center text-xl shadow-lg shadow-emerald-600/30 transition-all cursor-pointer"
+                    title={isPlaying ? 'Pause Audio' : 'Play Audio'}
+                  >
+                    {isPlaying ? <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg> : <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>}
+                  </button>
+                  <div>
+                    <span className="text-xs font-black uppercase tracking-wider text-emerald-700 dark:text-emerald-400 block">
+                      Listening Track
+                    </span>
+                    <span className="text-xs text-gray-500 dark:text-gray-400 font-mono">
+                      {formatTime(Math.floor(audioProgress))} / {formatTime(Math.floor(audioDuration))}
+                    </span>
+                  </div>
+                </div>
 
-          {/* Seek Bar */}
-          <input
-            type="range"
-            min={0}
-            max={audioDuration || 100}
-            value={audioProgress}
-            onChange={handleAudioSeek}
-            className="w-full accent-emerald-600 cursor-pointer h-1.5 bg-gray-200 dark:bg-zinc-700 rounded-lg"
-          />
+                {/* Playback speed selector */}
+                <div className="flex items-center gap-1.5 self-start sm:self-center">
+                  <span className="text-[11px] font-bold text-gray-500 dark:text-gray-400 mr-1">Speed:</span>
+                  {[0.8, 1.0, 1.2].map((rate) => (
+                    <button
+                      key={rate}
+                      type="button"
+                      onClick={() => changeSpeed(rate)}
+                      className={`text-xs px-2.5 py-1 rounded-lg font-bold border transition-colors cursor-pointer ${
+                        playbackRate === rate
+                          ? 'bg-emerald-600 text-white border-emerald-600'
+                          : 'bg-white dark:bg-zinc-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-white/10 hover:border-emerald-500/40'
+                      }`}
+                    >
+                      {rate}x
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Seek Bar */}
+              <input
+                type="range"
+                min={0}
+                max={audioDuration || 100}
+                value={audioProgress}
+                onChange={handleAudioSeek}
+                className="w-full accent-emerald-600 cursor-pointer h-1.5 bg-gray-200 dark:bg-zinc-700 rounded-lg"
+              />
+            </>
+          )}
 
           {/* Transcript Toggle button */}
           {currentQ.script && (
