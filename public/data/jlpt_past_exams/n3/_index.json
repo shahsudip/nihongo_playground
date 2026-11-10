@@ -413,6 +413,70 @@
       "testId": "n3_past_2018_07"
     },
     {
+      "id": "n3_past_2017_12",
+      "testId": "n3_past_2017_12",
+      "level": "N3",
+      "year": 2017,
+      "month": 12,
+      "sessionName": "2017年12月",
+      "title": "JLPT N3 Past Exam (2017年12月)",
+      "japaneseTitle": "日本語能力試験 N3 2017年12月 過去問",
+      "totalQuestions": 94,
+      "totalMinutes": 140,
+      "sections": [
+        {
+          "id": "vocab",
+          "title": "言語知識（文字・語彙）",
+          "questionCount": 35,
+          "durationMinutes": 30
+        },
+        {
+          "id": "grammar_reading",
+          "title": "言語知識（文法）・読解",
+          "questionCount": 39,
+          "durationMinutes": 70
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "questionCount": 20,
+          "durationMinutes": 40
+        }
+      ]
+    },
+    {
+      "id": "n3_past_2017_07",
+      "testId": "n3_past_2017_07",
+      "level": "N3",
+      "year": 2017,
+      "month": 7,
+      "sessionName": "2017年7月",
+      "title": "JLPT N3 Past Exam (2017年7月)",
+      "japaneseTitle": "日本語能力試験 N3 2017年7月 過去問",
+      "totalQuestions": 92,
+      "totalMinutes": 140,
+      "sections": [
+        {
+          "id": "vocab",
+          "title": "言語知識（文字・語彙）",
+          "questionCount": 35,
+          "durationMinutes": 30
+        },
+        {
+          "id": "grammar_reading",
+          "title": "言語知識（文法）・読解",
+          "questionCount": 39,
+          "durationMinutes": 70
+        },
+        {
+          "id": "listening",
+          "title": "聴解",
+          "questionCount": 18,
+          "durationMinutes": 40
+        }
+      ]
+    },
+    {
       "id": "n3_dttn_test_32",
       "testId": "n3_dttn_test_32",
       "level": "N3",
