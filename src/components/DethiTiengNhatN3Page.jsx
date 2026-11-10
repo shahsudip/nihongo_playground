@@ -122,13 +122,6 @@ const DethiTiengNhatN3Page = () => {
           const savedRecord = history[qid];
           if (savedRecord?.selectedAnswers && Object.keys(savedRecord.selectedAnswers).length > 0) {
             setSelectedAnswers(savedRecord.selectedAnswers);
-            if (activePartId === 1 || activePartId === 3) {
-              const opened = {};
-              Object.keys(savedRecord.selectedAnswers).forEach(k => {
-                opened[k] = true;
-              });
-              setOpenScripts(opened);
-            }
           }
         }
       } finally {
@@ -218,9 +211,6 @@ const DethiTiengNhatN3Page = () => {
       setSelectedAnswers(newAnswers);
 
       if (isInstantMode) {
-        // Automatically reveal explanation for answered item
-        setOpenScripts(prev => ({ ...prev, [qKey]: true }));
-
         // Automatically persist score and attempt state
         if (activeTestCode && currentSection) {
           const questions = currentSection.questions || [];
@@ -746,27 +736,29 @@ const DethiTiengNhatN3Page = () => {
                               })}
                             </div>
 
-                            {/* Explanation / Reference Box */}
-                            {((isInstantMode && userChoice !== undefined) || isChecked || openScripts[qKey] || block.explanationHtml || block.transcript) && (
+                            {/* Collapsible Explanation / Reference Box (always closed until user expands) */}
+                            {((isInstantMode && userChoice !== undefined) || isChecked || block.explanationHtml || block.transcript) && (
                               <div style={{ marginTop: '0.75rem' }}>
-                                {(block.explanationHtml || block.transcript) && !(isInstantMode && userChoice !== undefined) && !isChecked && (
-                                  <button
-                                    type="button"
-                                    onClick={() =>
-                                      setOpenScripts(prev => ({
-                                        ...prev,
-                                        [qKey]: !prev[qKey],
-                                      }))
-                                    }
-                                    className="dttn-tts-btn"
-                                  >
-                                    {openScripts[qKey]
-                                      ? 'Hide Script / Reference'
-                                      : 'Show Script / Reference'}
-                                  </button>
-                                )}
+                                <button
+                                  type="button"
+                                  onClick={() =>
+                                    setOpenScripts(prev => ({
+                                      ...prev,
+                                      [qKey]: !prev[qKey],
+                                    }))
+                                  }
+                                  className="dttn-tts-btn"
+                                >
+                                  {openScripts[qKey]
+                                    ? currentSection.partId === 4
+                                      ? '▲ Hide Script / Explanation'
+                                      : '▲ Hide Explanation'
+                                    : currentSection.partId === 4
+                                      ? '▼ Show Script / Explanation'
+                                      : '▼ Show Explanation'}
+                                </button>
 
-                                {((isInstantMode && userChoice !== undefined) || isChecked || openScripts[qKey]) && (
+                                {openScripts[qKey] && (
                                   <div
                                     className="dttn-gt-box"
                                     dangerouslySetInnerHTML={{
