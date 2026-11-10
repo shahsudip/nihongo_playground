@@ -58,6 +58,75 @@ function speakJapanese(text) {
   window.speechSynthesis.speak(utter);
 }
 
+/**
+ * Extract pre-enriched English sentence translation from explanationHtml / explanation if available
+ */
+function extractPrecomputedEnglish(block, questionObj) {
+  const html = String(block?.explanationHtml || '');
+  const htmlMatch = html.match(/【(?:文脈・和訳|意味\s*\/\s*和訳|英文訳|英訳)】<\/strong>:\s*([^<]+)/i);
+  if (htmlMatch && htmlMatch[1]) {
+    return htmlMatch[1].trim();
+  }
+  const md = String(questionObj?.explanation || '');
+  const mdMatch = md.match(/\*\*(?:Context|Context\s*\/\s*English|English)\*\*:\s*([^\n]+)/i);
+  if (mdMatch && mdMatch[1]) {
+    return mdMatch[1].trim();
+  }
+  return '';
+}
+
+/**
+ * Build a clean full Japanese sentence with the correct option filled in for blank/kanji questions
+ */
+function buildCompleteJapaneseSentence(block) {
+  const rawStem = String(block?.questionText || block?.questionHtml || '')
+    .replace(/<[^>]+>/g, '')
+    .replace(/^\d+[\.\)]\s*/, '')
+    .trim();
+  const correctOpt = String(
+    block?.cleanOptions?.[block?.correctOption?.index ?? 0] ||
+    block?.correctOption?.text ||
+    ''
+  )
+    .replace(/^\d+[\.\)]\s*/, '')
+    .trim();
+
+  // If stem is just a single word (e.g. Usage Mondai 5 where options are full sentences), translate the correct option sentence
+  if (rawStem.length <= 10 && correctOpt.length > 12) {
+    return correctOpt;
+  }
+
+  // If stem has a blank ( ) or （　）, fill the correct option into the blank for a complete sentence
+  if (/[（(]\s*[）)]/.test(rawStem) && correctOpt) {
+    return rawStem.replace(/[（(]\s*[）)]/, correctOpt);
+  }
+
+  return rawStem;
+}
+
+const translationMemoryCache = {};
+
+async function fetchEnglishSentenceTranslation(jpText) {
+  const clean = String(jpText || '').trim();
+  if (!clean) return '';
+  if (translationMemoryCache[clean]) return translationMemoryCache[clean];
+
+  try {
+    const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=ja&tl=en&dt=t&q=${encodeURIComponent(clean)}`;
+    const res = await fetch(url);
+    if (!res.ok) return '';
+    const data = await res.json();
+    if (Array.isArray(data?.[0])) {
+      const translated = data[0].map(part => part?.[0] || '').join('').trim();
+      if (translated) {
+        translationMemoryCache[clean] = translated;
+        return translated;
+      }
+    }
+  } catch (_) {}
+  return '';
+}
+
 const DethiTiengNhatN3Page = () => {
   const { testNumber: paramTestNum, partId: paramPartId } = useParams();
   const navigate = useNavigate();
@@ -73,6 +142,7 @@ const DethiTiengNhatN3Page = () => {
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [isChecked, setIsChecked] = useState(false);
   const [openScripts, setOpenScripts] = useState({});
+  const [enTranslations, setEnTranslations] = useState({});
 
   const activeTestCode = paramTestNum ? String(paramTestNum) : null;
   const activePartId = paramPartId ? Number(paramPartId) : 1;
@@ -113,6 +183,7 @@ const DethiTiengNhatN3Page = () => {
       setSelectedAnswers({});
       setIsChecked(false);
       setOpenScripts({});
+      setEnTranslations({});
       try {
         const data = await getDethiN3Test(activeTestCode);
         if (mounted) {
@@ -164,6 +235,41 @@ const DethiTiengNhatN3Page = () => {
       null
     );
   }, [activeTestData, activePartId]);
+
+  // Populate English translations for any answered questions (either pre-enriched or fetched live)
+  useEffect(() => {
+    if (!currentSection) return;
+    let mounted = true;
+    const blocks = currentSection.contentBlocks || [];
+    const questions = currentSection.questions || [];
+
+    Object.keys(selectedAnswers).forEach(qKey => {
+      if (enTranslations[qKey]) return;
+      const qNum = Number(qKey.replace('q_', ''));
+      const block = blocks.find(b => b.type === 'question' && Number(b.questionNumber) === qNum);
+      const qObj = questions.find(q => Number(q.number) === qNum);
+      if (!block) return;
+
+      const precomputed = extractPrecomputedEnglish(block, qObj);
+      if (precomputed) {
+        setEnTranslations(prev => (prev[qKey] ? prev : { ...prev, [qKey]: precomputed }));
+        return;
+      }
+
+      const jpSentence = buildCompleteJapaneseSentence(block);
+      if (jpSentence && !/^\d+番$/.test(jpSentence)) {
+        fetchEnglishSentenceTranslation(jpSentence).then(enText => {
+          if (mounted && enText) {
+            setEnTranslations(prev => (prev[qKey] ? prev : { ...prev, [qKey]: enText }));
+          }
+        });
+      }
+    });
+
+    return () => {
+      mounted = false;
+    };
+  }, [currentSection, selectedAnswers, enTranslations]);
 
   const isInstantMode = Boolean(currentSection);
 
@@ -288,6 +394,7 @@ const DethiTiengNhatN3Page = () => {
     setSelectedAnswers({});
     setIsChecked(false);
     setOpenScripts({});
+    setEnTranslations({});
 
     if (activeTestCode && currentSection) {
       const qid = `dttn-n3-${activeTestCode}-${currentSection.partId}`;
@@ -736,6 +843,14 @@ const DethiTiengNhatN3Page = () => {
                               })}
                             </div>
 
+                            {/* Full English Sentence Translation (automatically shown after selecting an option) */}
+                            {((isInstantMode && userChoice !== undefined) || isChecked) && enTranslations[qKey] && (
+                              <div className="dttn-en-translation-bar">
+                                <span className="dttn-en-translation-label">EN:</span>
+                                <span>{enTranslations[qKey]}</span>
+                              </div>
+                            )}
+
                             {/* Collapsible Explanation / Reference Box (always closed until user expands) */}
                             {((isInstantMode && userChoice !== undefined) || isChecked || block.explanationHtml || block.transcript) && (
                               <div style={{ marginTop: '0.75rem' }}>
@@ -769,6 +884,7 @@ const DethiTiengNhatN3Page = () => {
                                            <div style="font-weight:700;color:var(--dttn-text-correct,#059669);">
                                              ✓ 正解: ${options[correctIdx] || block.correctOption?.text || `Option ${correctIdx + 1}`}
                                            </div>
+                                           ${enTranslations[qKey] ? `<div style="margin-top:2px;"><strong>【英文訳 / English】</strong>: ${enTranslations[qKey]}</div>` : ''}
                                            <div style="font-size:0.875rem;color:var(--dttn-text-muted,#4b5563);">
                                              The correct answer is Option ${correctIdx + 1}.
                                            </div>

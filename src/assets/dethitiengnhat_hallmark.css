@@ -639,6 +639,25 @@ body {
   color: var(--dttn-text-wrong);
 }
 
+/* English Sentence Translation Line (shown immediately after option select) */
+.dttn-en-translation-bar {
+  margin-top: 0.65rem;
+  padding: 0.55rem 0.85rem;
+  border-radius: var(--dttn-radius-sm);
+  border-left: 3px solid var(--dttn-border-mondai);
+  background-color: var(--dttn-bg-mondai);
+  color: var(--dttn-text-main);
+  font-family: var(--dttn-font-sans);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.dttn-en-translation-label {
+  font-weight: 700;
+  color: var(--dttn-text-accent);
+  margin-right: 0.4rem;
+}
+
 /* Reference / Transcript Box (#GT equivalent) */
 .dttn-gt-box {
   margin-top: 0.85rem;
