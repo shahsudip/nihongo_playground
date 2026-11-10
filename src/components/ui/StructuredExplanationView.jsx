@@ -51,10 +51,14 @@ export default function StructuredExplanationView({ explanation }) {
           return (
             <div
               key={secIdx}
-              className="p-3.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60 font-medium leading-relaxed"
+              className="p-3.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60 font-medium leading-relaxed space-y-1.5"
             >
               {sec.lines.map((l, lIdx) => (
-                <div key={lIdx} dangerouslySetInnerHTML={{ __html: parseInlineMarkdown(l) }} />
+                <div
+                  key={lIdx}
+                  className={lIdx > 0 ? 'text-xs sm:text-sm text-emerald-900 dark:text-emerald-200 pt-1 border-t border-emerald-500/15' : ''}
+                  dangerouslySetInnerHTML={{ __html: parseInlineMarkdown(l) }}
+                />
               ))}
             </div>
           );
