@@ -117,6 +117,19 @@ const DethiTiengNhatN3Page = () => {
         const data = await getDethiN3Test(activeTestCode);
         if (mounted) {
           setActiveTestData(data);
+          // Restore saved attempt history if available
+          const qid = `dttn-n3-${activeTestCode}-${activePartId}`;
+          const savedRecord = history[qid];
+          if (savedRecord?.selectedAnswers && Object.keys(savedRecord.selectedAnswers).length > 0) {
+            setSelectedAnswers(savedRecord.selectedAnswers);
+            if (activePartId === 1 || activePartId === 3) {
+              const opened = {};
+              Object.keys(savedRecord.selectedAnswers).forEach(k => {
+                opened[k] = true;
+              });
+              setOpenScripts(opened);
+            }
+          }
         }
       } finally {
         if (mounted) setLoadingTest(false);
@@ -126,7 +139,7 @@ const DethiTiengNhatN3Page = () => {
     return () => {
       mounted = false;
     };
-  }, [activeTestCode, activePartId]);
+  }, [activeTestCode, activePartId, history]);
 
   const tests = useMemo(() => indexData?.tests || [], [indexData]);
 
@@ -159,33 +172,28 @@ const DethiTiengNhatN3Page = () => {
     );
   }, [activeTestData, activePartId]);
 
-  const handleSelectOption = useCallback(
-    (qKey, optIndex) => {
-      if (isChecked) return;
-      setSelectedAnswers(prev => ({
-        ...prev,
-        [qKey]: optIndex,
-      }));
-    },
-    [isChecked]
-  );
+  const isInstantMode = currentSection?.partId === 1 || currentSection?.partId === 3;
 
-  // Calculate score when Saiten() / Check result is clicked
+  // Calculate score in real time (for instant feedback and check result)
   const scoreSummary = useMemo(() => {
-    if (!currentSection) return { earnedPoints: 0, maxPoints: 0, correctCount: 0, totalCount: 0 };
+    if (!currentSection) return { earnedPoints: 0, maxPoints: 0, correctCount: 0, totalCount: 0, answeredCount: 0 };
     const questions = currentSection.questions || [];
     let earnedPoints = 0;
     let maxPoints = 0;
     let correctCount = 0;
+    let answeredCount = 0;
 
     questions.forEach(q => {
       const qKey = `q_${q.number}`;
       const pts = Number(q.points) || 1;
       maxPoints += pts;
       const chosenIdx = selectedAnswers[qKey];
-      if (chosenIdx !== undefined && chosenIdx === q.correct - 1) {
-        earnedPoints += pts;
-        correctCount += 1;
+      if (chosenIdx !== undefined) {
+        answeredCount += 1;
+        if (chosenIdx === q.correct - 1) {
+          earnedPoints += pts;
+          correctCount += 1;
+        }
       }
     });
 
@@ -194,8 +202,71 @@ const DethiTiengNhatN3Page = () => {
       maxPoints,
       correctCount,
       totalCount: questions.length,
+      answeredCount,
     };
   }, [currentSection, selectedAnswers]);
+
+  const handleSelectOption = useCallback(
+    (qKey, optIndex) => {
+      if (isChecked && !isInstantMode) return;
+      if (isInstantMode && selectedAnswers[qKey] !== undefined) return;
+
+      const newAnswers = {
+        ...selectedAnswers,
+        [qKey]: optIndex,
+      };
+      setSelectedAnswers(newAnswers);
+
+      if (isInstantMode) {
+        // Automatically reveal explanation for answered item
+        setOpenScripts(prev => ({ ...prev, [qKey]: true }));
+
+        // Automatically persist score and attempt state
+        if (activeTestCode && currentSection) {
+          const questions = currentSection.questions || [];
+          let earnedPoints = 0;
+          let maxPoints = 0;
+          let correctCount = 0;
+          let answeredCount = 0;
+
+          questions.forEach(q => {
+            const key = `q_${q.number}`;
+            const pts = Number(q.points) || 1;
+            maxPoints += pts;
+            const chosenIdx = newAnswers[key];
+            if (chosenIdx !== undefined) {
+              answeredCount += 1;
+              if (chosenIdx === q.correct - 1) {
+                earnedPoints += pts;
+                correctCount += 1;
+              }
+            }
+          });
+
+          const qid = `dttn-n3-${activeTestCode}-${currentSection.partId}`;
+          const record = {
+            id: qid,
+            quizId: qid,
+            testNumber: activeTestCode,
+            partId: currentSection.partId,
+            sectionKey: currentSection.id,
+            score: correctCount,
+            total: questions.length,
+            answeredCount,
+            earnedPoints,
+            maxPoints,
+            selectedAnswers: newAnswers,
+            status: answeredCount === questions.length ? 'completed' : 'in_progress',
+            updatedAt: new Date().toISOString(),
+          };
+
+          setHistory(prev => ({ ...prev, [qid]: record }));
+          saveDethiN3Record(currentUser, record);
+        }
+      }
+    },
+    [isChecked, isInstantMode, selectedAnswers, activeTestCode, currentSection, currentUser]
+  );
 
   const handleCheckResult = async () => {
     setIsChecked(true);
@@ -210,8 +281,10 @@ const DethiTiengNhatN3Page = () => {
       sectionKey: currentSection.id,
       score: scoreSummary.correctCount,
       total: scoreSummary.totalCount,
+      answeredCount: scoreSummary.answeredCount,
       earnedPoints: scoreSummary.earnedPoints,
       maxPoints: scoreSummary.maxPoints,
+      selectedAnswers,
       status: 'completed',
       completedAt: new Date().toISOString(),
     };
@@ -221,9 +294,31 @@ const DethiTiengNhatN3Page = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleResetSheet = () => {
+  const handleResetSheet = async () => {
     setSelectedAnswers({});
     setIsChecked(false);
+    setOpenScripts({});
+
+    if (activeTestCode && currentSection) {
+      const qid = `dttn-n3-${activeTestCode}-${currentSection.partId}`;
+      const record = {
+        id: qid,
+        quizId: qid,
+        testNumber: activeTestCode,
+        partId: currentSection.partId,
+        sectionKey: currentSection.id,
+        score: 0,
+        total: currentSection.questions?.length || 0,
+        answeredCount: 0,
+        earnedPoints: 0,
+        maxPoints: scoreSummary.maxPoints,
+        selectedAnswers: {},
+        status: 'reset',
+        updatedAt: new Date().toISOString(),
+      };
+      setHistory(prev => ({ ...prev, [qid]: record }));
+      await saveDethiN3Record(currentUser, record);
+    }
   };
 
   if (loadingIndex) {
@@ -459,29 +554,69 @@ const DethiTiengNhatN3Page = () => {
                       })}
                     </div>
 
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                      {isChecked && (
-                        <button
-                          type="button"
-                          onClick={handleResetSheet}
-                          className="dttn-secondary-btn"
-                          style={{ padding: '0.45rem 0.9rem', fontSize: '0.875rem' }}
-                        >
-                          Retry Section
-                        </button>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', flexWrap: 'wrap' }}>
+                      {isInstantMode ? (
+                        <>
+                          <div
+                            className="dttn-instant-score-badge"
+                            style={{
+                              padding: '0.45rem 0.9rem',
+                              borderRadius: '8px',
+                              fontSize: '0.875rem',
+                              fontWeight: 600,
+                              backgroundColor: 'var(--dttn-bg-correct, #ecfdf5)',
+                              color: 'var(--dttn-text-correct, #065f46)',
+                              border: '1px solid var(--dttn-border-correct, #10b981)',
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '0.45rem',
+                            }}
+                          >
+                            <span>
+                              Score: {scoreSummary.correctCount} / {scoreSummary.answeredCount} Correct ({scoreSummary.earnedPoints} pts)
+                            </span>
+                            <span style={{ opacity: 0.5 }}>•</span>
+                            <span>
+                              Progress: {scoreSummary.answeredCount} / {scoreSummary.totalCount}
+                            </span>
+                          </div>
+                          {scoreSummary.answeredCount > 0 && (
+                            <button
+                              type="button"
+                              onClick={handleResetSheet}
+                              className="dttn-secondary-btn"
+                              style={{ padding: '0.45rem 0.9rem', fontSize: '0.875rem' }}
+                            >
+                              Reset Section
+                            </button>
+                          )}
+                        </>
+                      ) : (
+                        <>
+                          {isChecked && (
+                            <button
+                              type="button"
+                              onClick={handleResetSheet}
+                              className="dttn-secondary-btn"
+                              style={{ padding: '0.45rem 0.9rem', fontSize: '0.875rem' }}
+                            >
+                              Retry Section
+                            </button>
+                          )}
+                          <button
+                            type="button"
+                            onClick={handleCheckResult}
+                            className="dttn-check-btn"
+                          >
+                            Check result
+                          </button>
+                        </>
                       )}
-                      <button
-                        type="button"
-                        onClick={handleCheckResult}
-                        className="dttn-check-btn"
-                      >
-                        Check result
-                      </button>
                     </div>
                   </div>
 
-                  {/* Score Banner when Checked */}
-                  {isChecked && (
+                  {/* Score Banner when Checked (for non-instant listening mode) */}
+                  {!isInstantMode && isChecked && (
                     <div className="dttn-score-banner">
                       <div className="dttn-score-headline">
                         Result: {scoreSummary.correctCount} / {scoreSummary.totalCount} Correct ({scoreSummary.earnedPoints} / {scoreSummary.maxPoints} pts)
@@ -571,7 +706,13 @@ const DethiTiengNhatN3Page = () => {
                                 const isRight = optIdx === correctIdx;
 
                                 let stateClass = '';
-                                if (isChecked) {
+                                if (isInstantMode && userChoice !== undefined) {
+                                  if (isRight) {
+                                    stateClass = 'is-correct-answer';
+                                  } else if (isSelected) {
+                                    stateClass = 'is-wrong-selected';
+                                  }
+                                } else if (isChecked) {
                                   if (isRight) stateClass = 'is-correct-answer';
                                   else if (isSelected && !isRight) stateClass = 'is-wrong-selected';
                                 } else if (isSelected) {
@@ -588,7 +729,7 @@ const DethiTiengNhatN3Page = () => {
                                       name={`dttn_${activeTestCode}_${currentSection.partId}_${qNum}`}
                                       checked={isSelected}
                                       onChange={() => handleSelectOption(qKey, optIdx)}
-                                      disabled={isChecked}
+                                      disabled={isInstantMode ? userChoice !== undefined : isChecked}
                                     />
                                     <span>{optText}</span>
                                   </label>
@@ -596,9 +737,10 @@ const DethiTiengNhatN3Page = () => {
                               })}
                             </div>
 
-                            {(block.explanationHtml || block.transcript) && (
+                            {/* Explanation / Reference Box */}
+                            {((isInstantMode && userChoice !== undefined) || isChecked || openScripts[qKey] || block.explanationHtml || block.transcript) && (
                               <div style={{ marginTop: '0.75rem' }}>
-                                {!isChecked && (
+                                {!isInstantMode && !isChecked && (
                                   <button
                                     type="button"
                                     onClick={() =>
@@ -615,11 +757,21 @@ const DethiTiengNhatN3Page = () => {
                                   </button>
                                 )}
 
-                                {(isChecked || openScripts[qKey]) && (
+                                {((isInstantMode && userChoice !== undefined) || isChecked || openScripts[qKey]) && (
                                   <div
                                     className="dttn-gt-box"
                                     dangerouslySetInnerHTML={{
-                                      __html: block.explanationHtml || block.transcript,
+                                      __html:
+                                        block.explanationHtml ||
+                                        block.transcript ||
+                                        `<div style="display:flex;flex-direction:column;gap:0.35rem;">
+                                           <div style="font-weight:700;color:var(--dttn-text-correct,#059669);">
+                                             ✓ 正解: ${options[correctIdx] || block.correctOption?.text || `Option ${correctIdx + 1}`}
+                                           </div>
+                                           <div style="font-size:0.875rem;color:var(--dttn-text-muted,#4b5563);">
+                                             The correct answer is Option ${correctIdx + 1}.
+                                           </div>
+                                         </div>`,
                                     }}
                                   />
                                 )}
@@ -642,13 +794,25 @@ const DethiTiengNhatN3Page = () => {
                     >
                       Back to Top
                     </button>
-                    <button
-                      type="button"
-                      onClick={handleCheckResult}
-                      className="dttn-check-btn"
-                    >
-                      Check result
-                    </button>
+                    {isInstantMode ? (
+                      scoreSummary.answeredCount > 0 && (
+                        <button
+                          type="button"
+                          onClick={handleResetSheet}
+                          className="dttn-secondary-btn"
+                        >
+                          Reset Section
+                        </button>
+                      )
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={handleCheckResult}
+                        className="dttn-check-btn"
+                      >
+                        Check result
+                      </button>
+                    )}
                   </div>
                 </div>
               </>
