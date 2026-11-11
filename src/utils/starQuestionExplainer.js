@@ -180,7 +180,7 @@ function detectStarSlotInStem(stem = '', curated = null) {
   }
   const s = String(stem)
     .replace(/<u[^>]*>\s*★\s*<\/u>/gi, ' __STAR__ ')
-    .replace(/[＿_]+\s*★\s*[＿_]+/g, ' __STAR__ ')
+    .replace(/[＿_]+★[＿_]+/g, ' __STAR__ ')
     .replace(/★/g, ' __STAR__ ');
 
   // Match sequence of blank tokens and __STAR__

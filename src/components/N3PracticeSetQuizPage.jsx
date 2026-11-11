@@ -36,6 +36,9 @@ const mergeWithLocalSet = (remoteSet, targetSetId) => {
         if (!lq) return rq;
         return {
           ...rq,
+          questionText: lq.questionText !== undefined ? lq.questionText : rq.questionText,
+          options: lq.options || rq.options,
+          passageText: lq.passageText !== undefined ? lq.passageText : rq.passageText,
           correctIndex: lq.correctIndex !== undefined ? lq.correctIndex : rq.correctIndex,
           explanation: lq.explanation || rq.explanation || '',
         };

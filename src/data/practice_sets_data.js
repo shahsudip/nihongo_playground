@@ -4902,10 +4902,10 @@ export const practiceSetsBook = {
                 "決まった",
                 "申し上げて"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
               "sectionType": "grammar-reading",
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【正解】4（申し上げて）\n【文の組み立て】「会議で 決まった(3) ことを(1) ★申し上げて(4) おけば(2) よろしいでしょうか」\n【意味】では、部長には会議で決まったことを申し上げておけばよろしいでしょうか。\n【英訳】Then, would it be fine if I report to the director what was decided at the meeting?\n【解説】★に入る3番目の言葉は「申し上げて」です。「申し上げておく（報告しておく）」。"
+              "explanation": "【正解】1（ことを）\n【文の組み立て】「会議で 決まった(3) ★ことを(1) 申し上げて(4) おけば(2) よろしいでしょうか」\n【意味】では、部長には会議で決まったことを申し上げておけばよろしいでしょうか。\n【英訳】Well then, would it be alright if I inform the department manager of what was decided at the meeting?\n【解説】★に入る2番目の言葉は「ことを」です。「決まったことを申し上げておけばよろしいでしょうか（報告しておけばよいか）」。"
             },
             {
               "id": 341,
@@ -8193,7 +8193,7 @@ export const practiceSetsBook = {
             },
             {
               "id": 16,
-              "questionText": "子どものころ、＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 、母にひどくしかられました。",
+              "questionText": "子どものころ、<u>　★　</u> ＿＿＿＿ ＿＿＿＿ ＿＿＿＿ 、母にひどくしかられました。",
               "options": [
                 "けんかでも",
                 "ものなら",
@@ -8203,11 +8203,11 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【語順】子どものころ、[4友だちと] [1けんかでも] [★ 3しょう] [2ものなら]、母にひどくしかられました。\n【★ 正解】4「友だちと」\n【英訳】Order: 友だちとけんかでもしようものなら - if I were to get into a fight with friends..."
+              "explanation": "【語順】子どものころ、[★ 4友だちと] [1けんかでも] [3しょう] [2ものなら]、母にひどくしかられました。\n【★ 正解】4「友だちと」\n【英訳】When I was a child, if I were to so much as get into a fight with my friends, I would be severely scolded by my mother."
             },
             {
               "id": 17,
-              "questionText": "あの人は、スポーツ選手の ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ と思います。",
+              "questionText": "あの人は、スポーツ選手の ＿＿＿＿ <u>　★　</u> ＿＿＿＿ ＿＿＿＿ と思います。",
               "options": [
                 "わりに",
                 "小さい",
@@ -8217,11 +8217,11 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "sectionType": "grammar-reading",
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【語順】あの人は、スポーツ選手の [1わりに] [★ 3体が] [2小さい] [4ほうだ] と思います。\n【★ 正解】3「体が」\n【英訳】Order: スポーツ選手のわりに体が小さいほうだ - for an athlete, having a rather small physique."
+              "explanation": "【語順】あの人は、スポーツ選手の [1わりに] [★ 3体が] [2小さい] [4ほうだ] と思います。\n【★ 正解】3「体が」\n【英訳】For an athlete, I think that person has a rather small build."
             },
             {
               "id": 18,
-              "questionText": "昔 ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 習慣はありません。",
+              "questionText": "昔 <u>　★　</u> ＿＿＿＿ ＿＿＿＿ ＿＿＿＿ 習慣はありません。",
               "options": [
                 "ともかく",
                 "なら",
@@ -8231,7 +8231,7 @@ export const practiceSetsBook = {
               "correctIndex": 1,
               "sectionType": "grammar-reading",
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【語順】昔 [★ 2なら] [1ともかく]、[4今は] [3そんな] 習慣はありません。\n【★ 正解】2「なら」\n【英訳】Order: 昔ならともかく、今はそんな習慣はありません - In the old days maybe, but nowadays there is no such custom."
+              "explanation": "【語順】昔 [★ 2なら] [1ともかく]、[4今は] [3そんな] 習慣はありません。\n【★ 正解】2「なら」\n【英訳】In the old days it might have been a different story, but nowadays there is no such custom."
             },
             {
               "id": 19,
@@ -9769,7 +9769,7 @@ export const practiceSetsBook = {
             {
               "id": 14,
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "questionText": "みなさまの ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 思います。",
+              "questionText": "みなさまの ＿＿＿＿ ＿＿＿＿ ＿＿＿＿ <u>　★　</u> 思います。",
               "options": [
                 "一生けん命",
                 "こたえて",
@@ -9778,12 +9778,12 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "sectionType": "grammar-reading",
-              "explanation": "【語順】みなさまの [4期待に] [2こたえて] [★ 3がんばろうと] [1一生けん命] 思います。\n【★ 正解】3「がんばろうと」\n【英訳】Order: 期待にこたえて一生けん命がんばろうと - I intend to do my best to live up to your expectations."
+              "explanation": "【語順】みなさまの [4期待に] [2こたえて] [1一生けん命] [★ 3がんばろうと] 思います。\n【★ 正解】3「がんばろうと」\n【英訳】I intend to do my very best in order to live up to everyone's expectations."
             },
             {
               "id": 15,
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "questionText": "お茶しか用意していませんが、先生がもし ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 、注文します。",
+              "questionText": "お茶しか用意していませんが、先生がもし <u>　★　</u> ＿＿＿＿ ＿＿＿＿ ＿＿＿＿ 、注文します。",
               "options": [
                 "でしたら",
                 "めしあがりたい",
@@ -9792,12 +9792,12 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 2,
               "sectionType": "grammar-reading",
-              "explanation": "【語順】先生がもし [2めしあがりたい] [4の] [★ 3お酒を] [1でしたら]、注文します。\n【★ 正解】3「お酒を」\n【英訳】Order: お酒をめしあがりたいのでしたら - if you would like to have alcohol."
+              "explanation": "【語順】先生がもし [★ 3お酒を] [2めしあがりたい] [4の] [1でしたら]、注文します。\n【★ 正解】3「お酒を」\n【英訳】I have only prepared tea, but if the teacher would like to have some alcohol, I will order it."
             },
             {
               "id": 16,
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "questionText": "加藤「では、当日は、私もミーティングに参加していいですか。」\n三上「そのことなんですが、担当者に ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 言えないんですよ。」",
+              "questionText": "加藤「では、当日は、私もミーティングに参加していいですか。」\n三上「そのことなんですが、担当者に <u>　★　</u> ＿＿＿＿ ＿＿＿＿ ＿＿＿＿ 言えないんですよ。」",
               "options": [
                 "からで",
                 "確かめて",
@@ -9806,7 +9806,7 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "sectionType": "grammar-reading",
-              "explanation": "【語順】担当者に [★ 2確かめて] [1からで] [3ないと] [4なんとも] 言えないんですよ。\n【★ 正解】2「確かめて」\n【英訳】Order: 担当者に確かめてからでないとなんとも言えない - I cannot say anything until I check with the person in charge."
+              "explanation": "【語順】担当者に [★ 2確かめて] [1からで] [3ないと] [4なんとも] 言えないんですよ。\n【★ 正解】2「確かめて」\n【英訳】About that, I cannot say anything for sure until after I check with the person in charge."
             },
             {
               "id": 17,
@@ -9825,7 +9825,7 @@ export const practiceSetsBook = {
             {
               "id": 18,
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "questionText": "私が今、読んでいる本は、＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 書かれている。",
+              "questionText": "私が今、読んでいる本は、＿＿＿＿ <u>　★　</u> ＿＿＿＿ ＿＿＿＿ 書かれている。",
               "options": [
                 "ある事件を",
                 "有名な",
@@ -9834,7 +9834,7 @@ export const practiceSetsBook = {
               ],
               "correctIndex": 1,
               "sectionType": "grammar-reading",
-              "explanation": "【語順】私が今、読んでいる本は、[3歴史上] [★ 2有名な] [1ある事件を] [4もとに] 書かれている。\n【★ 正解】2「有名な」\n【英訳】Order: 歴史上有名なある事件をもとに - based on a famous historical event."
+              "explanation": "【語順】私が今、読んでいる本は、[3歴史上] [★ 2有名な] [1ある事件を] [4もとに] 書かれている。\n【★ 正解】2「有名な」\n【英訳】The book I am currently reading is written based on a famous historical event."
             },
             {
               "id": 19,
@@ -11497,7 +11497,7 @@ export const practiceSetsBook = {
             },
             {
               "id": 18,
-              "questionText": "ひさしぶりに東京へ遊びに行った ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 買ってきた。",
+              "questionText": "ひさしぶりに東京へ遊びに行＿＿＿＿ ＿＿＿＿ ＿＿＿＿ <u>　★　</u> 買ってきた。",
               "options": [
                 "ほしかった",
                 "行った",
@@ -11507,7 +11507,7 @@ export const practiceSetsBook = {
               "correctIndex": 2,
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
               "sectionType": "grammar-reading",
-              "explanation": "【語順】ひさしぶりに東京へ遊びに行った [4ついでに] [1ほしかった] [★ 3服を] [2(買ってきた)]（遊びに行ったついでにほしかった服を買ってきた）。\n【★ 正解】3「服を」\n【英訳】Order: 遊びに行ったついでにほしかった服を買ってきた - While visiting Tokyo for fun, I bought the clothes I had wanted."
+              "explanation": "【語順】ひさしぶりに東京へ遊びに行[2行った] [4ついでに] [1ほしかった] [★ 3服を] 買ってきた。\n【★ 正解】3「服を」\n【英訳】While visiting Tokyo for fun for the first time in a long while, I took the opportunity to buy the clothes I had wanted."
             },
             {
               "id": 19,
@@ -12268,7 +12268,7 @@ export const practiceSetsBook = {
             },
             {
               "id": 16,
-              "questionText": "子どものころ、＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 、母にひどくしかられました。",
+              "questionText": "子どものころ、<u>　★　</u> ＿＿＿＿ ＿＿＿＿ ＿＿＿＿ 、母にひどくしかられました。",
               "options": [
                 "けんかでも",
                 "ものなら",
@@ -12278,11 +12278,11 @@ export const practiceSetsBook = {
               "correctIndex": 3,
               "sectionType": "grammar-reading",
               "instruction": "問題2 次の文の ______★______ に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-              "explanation": "【語順】子どものころ、[4友だちと] [1けんかでも] [★ 3しょう] [2ものなら]、母にひどくしかられました。\n【★ 正解】4「友だちと」\n【英訳】When I was a child, if I were to so much as get into a fight with my friends, I would be severely scolded by my mother."
+              "explanation": "【語順】子どものころ、[★ 4友だちと] [1けんかでも] [3しょう] [2ものなら]、母にひどくしかられました。\n【★ 正解】4「友だちと」\n【英訳】When I was a child, if I were to so much as get into a fight with my friends, I would be severely scolded by my mother."
             },
             {
               "id": 17,
-              "questionText": "あの人は、スポーツ選手の ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ と思います。",
+              "questionText": "あの人は、スポーツ選手の ＿＿＿＿ <u>　★　</u> ＿＿＿＿ ＿＿＿＿ と思います。",
               "options": [
                 "わりに",
                 "小さい",
@@ -12296,7 +12296,7 @@ export const practiceSetsBook = {
             },
             {
               "id": 18,
-              "questionText": "昔 ＿＿＿＿ ＿＿＿＿ <u>　★　</u> ＿＿＿＿ 習慣はありません。",
+              "questionText": "昔 <u>　★　</u> ＿＿＿＿ ＿＿＿＿ ＿＿＿＿ 習慣はありません。",
               "options": [
                 "ともかく",
                 "なら",
