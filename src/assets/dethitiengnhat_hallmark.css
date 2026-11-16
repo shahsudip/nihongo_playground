@@ -580,6 +580,20 @@ body {
   cursor: pointer;
 }
 
+.dttn-question-pts-tag {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.18rem 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid var(--dttn-border-subtle);
+  background-color: var(--dttn-bg-Subtle);
+  color: var(--dttn-text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
 .dttn-question-img {
   max-width: 340px;
   height: auto;

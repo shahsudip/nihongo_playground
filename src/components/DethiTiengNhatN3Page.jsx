@@ -59,16 +59,19 @@ function speakJapanese(text) {
 }
 
 /**
- * Extract pre-enriched English sentence translation from explanationHtml / explanation if available
+ * Extract pre-enriched English sentence translation from block / questionObj / explanation if available
  */
 function extractPrecomputedEnglish(block, questionObj) {
+  if (block?.englishSentence) return block.englishSentence.trim();
+  if (questionObj?.englishSentence) return questionObj.englishSentence.trim();
+
   const html = String(block?.explanationHtml || '');
-  const htmlMatch = html.match(/【(?:文脈・和訳|意味\s*\/\s*和訳|英文訳|英訳)】<\/strong>:\s*([^<]+)/i);
+  const htmlMatch = html.match(/【(?:文脈・和訳|意味\s*\/\s*和訳|英文訳|英訳|English)】<\/strong>:\s*([^<]+)/i);
   if (htmlMatch && htmlMatch[1]) {
     return htmlMatch[1].trim();
   }
-  const md = String(questionObj?.explanation || '');
-  const mdMatch = md.match(/\*\*(?:Context|Context\s*\/\s*English|English)\*\*:\s*([^\n]+)/i);
+  const md = String(questionObj?.explanation || block?.explanation || '');
+  const mdMatch = md.match(/(?:-\s*\*\*English\*\*:\s*|\*\*(?:Context|Context\s*\/\s*English|English)\*\*:\s*)([^\n]+)/i);
   if (mdMatch && mdMatch[1]) {
     return mdMatch[1].trim();
   }
@@ -76,10 +79,14 @@ function extractPrecomputedEnglish(block, questionObj) {
 }
 
 /**
- * Build a clean full Japanese sentence with the correct option filled in for blank/kanji questions
+ * Build a clean full Japanese sentence with the correct option filled in for blank/kanji questions.
+ * Handles:
+ * - Mondai 2 (Kanji writing): replaces underlined hiragana with the correct Kanji option.
+ * - Mondai 3 & Grammar (Contextual blanks): fills blanks ( ) / （　） / ___ with the correct option.
+ * - Mondai 5 (Usage): translates the full sentence option instead of single-word stem.
  */
 function buildCompleteJapaneseSentence(block) {
-  const rawStem = String(block?.questionText || block?.questionHtml || '')
+  let rawStem = String(block?.questionText || block?.questionHtml || '')
     .replace(/<[^>]+>/g, '')
     .replace(/^\d+[\.\)]\s*/, '')
     .trim();
@@ -92,16 +99,47 @@ function buildCompleteJapaneseSentence(block) {
     .trim();
 
   // If stem is just a single word (e.g. Usage Mondai 5 where options are full sentences), translate the correct option sentence
-  if (rawStem.length <= 10 && correctOpt.length > 12) {
+  if (rawStem.length <= 12 && correctOpt.length > 12) {
     return correctOpt;
   }
 
-  // If stem has a blank ( ) or （　）, fill the correct option into the blank for a complete sentence
-  if (/[（(]\s*[）)]/.test(rawStem) && correctOpt) {
-    return rawStem.replace(/[（(]\s*[）)]/, correctOpt);
+  // If question has underlined hiragana (e.g. Mondai 2 Kanji Writing where hiragana needs to be replaced by correct Kanji option)
+  const uMatch = String(block?.questionHtml || '').match(/<u>([^<]+)<\/u>/);
+  const cleanUnderlined = String(block?.underlinedText || (uMatch ? uMatch[1] : ''))
+    .replace(/<[^>]+>/g, '')
+    .trim();
+  const isKana = /^[\u3040-\u309F\u30A0-\u30FF\s]+$/.test(cleanUnderlined);
+  const hasKanji = /[\u4E00-\u9FAF]/.test(correctOpt);
+  if (cleanUnderlined && isKana && hasKanji && rawStem.includes(cleanUnderlined)) {
+    rawStem = rawStem.replace(cleanUnderlined, correctOpt);
+  }
+
+  // If stem has a blank ( ) or （　） or ___ or ＿＿, fill the correct option into the blank for a complete sentence
+  if (/([（(]\s*[）)]|[_＿]{2,})/.test(rawStem) && correctOpt) {
+    rawStem = rawStem.replace(/([（(]\s*[）)]|[_＿]{2,})/, correctOpt);
   }
 
   return rawStem;
+}
+
+/**
+ * Calculate or safely derive 60-point scaled score from any attempt record without deleting user data.
+ * Even for older records that only had raw score (e.g. 30/35), converts it to the 60-point scale (~51/60).
+ */
+function getRecordScaledScore(record, totalQuestionsCount = 0) {
+  if (!record) return null;
+  if (typeof record.scaledScore === 'number' && record.scaledScore >= 0) {
+    return record.scaledScore;
+  }
+  if (record.maxPoints === 60 && typeof record.earnedPoints === 'number') {
+    return Math.round(record.earnedPoints);
+  }
+  const score = Number(record.score) || 0;
+  const total = Number(record.total) || totalQuestionsCount;
+  if (total > 0) {
+    return Math.round((score / total) * 60);
+  }
+  return 0;
 }
 
 const translationMemoryCache = {};
@@ -273,9 +311,9 @@ const DethiTiengNhatN3Page = () => {
 
   const isInstantMode = Boolean(currentSection);
 
-  // Calculate score in real time (for instant feedback and check result)
+  // Calculate score in real time on the authentic 60-point scale (with difficulty-weighted points per question)
   const scoreSummary = useMemo(() => {
-    if (!currentSection) return { earnedPoints: 0, maxPoints: 0, correctCount: 0, totalCount: 0, answeredCount: 0 };
+    if (!currentSection) return { earnedPoints: 0, scaledScore: 0, maxPoints: 60, correctCount: 0, totalCount: 0, answeredCount: 0, isPassed: false };
     const questions = currentSection.questions || [];
     let earnedPoints = 0;
     let maxPoints = 0;
@@ -296,12 +334,18 @@ const DethiTiengNhatN3Page = () => {
       }
     });
 
+    const roundedEarned = Math.round(earnedPoints * 10) / 10;
+    const scaledScore = Math.min(60, Math.round(earnedPoints));
+    const isPassed = scaledScore >= 19;
+
     return {
-      earnedPoints,
-      maxPoints,
+      earnedPoints: roundedEarned,
+      scaledScore,
+      maxPoints: 60,
       correctCount,
       totalCount: questions.length,
       answeredCount,
+      isPassed,
     };
   }, [currentSection, selectedAnswers]);
 
@@ -317,18 +361,16 @@ const DethiTiengNhatN3Page = () => {
       setSelectedAnswers(newAnswers);
 
       if (isInstantMode) {
-        // Automatically persist score and attempt state
+        // Automatically persist score and attempt state without deleting existing records
         if (activeTestCode && currentSection) {
           const questions = currentSection.questions || [];
           let earnedPoints = 0;
-          let maxPoints = 0;
           let correctCount = 0;
           let answeredCount = 0;
 
           questions.forEach(q => {
             const key = `q_${q.number}`;
             const pts = Number(q.points) || 1;
-            maxPoints += pts;
             const chosenIdx = newAnswers[key];
             if (chosenIdx !== undefined) {
               answeredCount += 1;
@@ -340,6 +382,10 @@ const DethiTiengNhatN3Page = () => {
           });
 
           const qid = `dttn-n3-${activeTestCode}-${currentSection.partId}`;
+          const roundedEarned = Math.round(earnedPoints * 10) / 10;
+          const scaledScore = Math.min(60, Math.round(earnedPoints));
+          const isPassed = scaledScore >= 19;
+
           const record = {
             id: qid,
             quizId: qid,
@@ -349,8 +395,10 @@ const DethiTiengNhatN3Page = () => {
             score: correctCount,
             total: questions.length,
             answeredCount,
-            earnedPoints,
-            maxPoints,
+            earnedPoints: roundedEarned,
+            maxPoints: 60,
+            scaledScore,
+            isPassed,
             selectedAnswers: newAnswers,
             status: answeredCount === questions.length ? 'completed' : 'in_progress',
             updatedAt: new Date().toISOString(),
@@ -379,7 +427,9 @@ const DethiTiengNhatN3Page = () => {
       total: scoreSummary.totalCount,
       answeredCount: scoreSummary.answeredCount,
       earnedPoints: scoreSummary.earnedPoints,
-      maxPoints: scoreSummary.maxPoints,
+      maxPoints: 60,
+      scaledScore: scoreSummary.scaledScore,
+      isPassed: scoreSummary.isPassed,
       selectedAnswers,
       status: 'completed',
       completedAt: new Date().toISOString(),
@@ -408,7 +458,9 @@ const DethiTiengNhatN3Page = () => {
         total: currentSection.questions?.length || 0,
         answeredCount: 0,
         earnedPoints: 0,
-        maxPoints: scoreSummary.maxPoints,
+        maxPoints: 60,
+        scaledScore: 0,
+        isPassed: false,
         selectedAnswers: {},
         status: 'reset',
         updatedAt: new Date().toISOString(),
@@ -570,7 +622,9 @@ const DethiTiengNhatN3Page = () => {
                             <span>{secInfo?.questionCount || 0} questions</span>
                             {isDone ? (
                               <span>
-                                Score: {rec.score}/{rec.total}
+                                Score: <strong style={{ color: getRecordScaledScore(rec, secInfo?.questionCount) >= 19 ? 'var(--dttn-text-correct, #059669)' : '#dc2626' }}>
+                                  {getRecordScaledScore(rec, secInfo?.questionCount)} / 60 点
+                                </strong> ({rec.score}/{rec.total})
                               </span>
                             ) : (
                               <span>{secInfo?.durationMinutes || 30} min</span>
@@ -667,15 +721,27 @@ const DethiTiengNhatN3Page = () => {
                               display: 'inline-flex',
                               alignItems: 'center',
                               gap: '0.45rem',
+                              flexWrap: 'wrap',
                             }}
                           >
-                            <span>
-                              Score: {scoreSummary.correctCount} / {scoreSummary.answeredCount} Correct ({scoreSummary.earnedPoints} pts)
+                            <span style={{ fontWeight: 700 }}>
+                              Score: {scoreSummary.scaledScore} / 60 点
                             </span>
-                            <span style={{ opacity: 0.5 }}>•</span>
+                            <span style={{ opacity: 0.85, fontSize: '0.825rem' }}>
+                              ({scoreSummary.correctCount} / {scoreSummary.totalCount} correct)
+                            </span>
+                            <span style={{ opacity: 0.4 }}>•</span>
                             <span>
                               Progress: {scoreSummary.answeredCount} / {scoreSummary.totalCount}
                             </span>
+                            {scoreSummary.answeredCount > 0 && (
+                              <>
+                                <span style={{ opacity: 0.4 }}>•</span>
+                                <span style={{ fontSize: '0.8rem', fontWeight: 700, color: scoreSummary.isPassed ? 'var(--dttn-text-correct, #065f46)' : '#b91c1c' }}>
+                                  {scoreSummary.isPassed ? '✓ Passed (≥19/60)' : 'Pass: ≥19/60'}
+                                </span>
+                              </>
+                            )}
                           </div>
                           {scoreSummary.answeredCount > 0 && (
                             <button
@@ -716,10 +782,18 @@ const DethiTiengNhatN3Page = () => {
                   {!isInstantMode && isChecked && (
                     <div className="dttn-score-banner">
                       <div className="dttn-score-headline">
-                        Result: {scoreSummary.correctCount} / {scoreSummary.totalCount} Correct ({scoreSummary.earnedPoints} / {scoreSummary.maxPoints} pts)
+                        Result: {scoreSummary.scaledScore} / 60 点 ({scoreSummary.correctCount} / {scoreSummary.totalCount} Correct • {scoreSummary.earnedPoints} pts)
                       </div>
                       <div className="dttn-score-detail">
-                        Correct answers are highlighted in green and reference scripts are shown below each item.
+                        {scoreSummary.isPassed ? (
+                          <span style={{ color: 'var(--dttn-text-correct, #059669)', fontWeight: 600 }}>
+                            ✓ Section Passed (met official JLPT sectional pass mark of ≥ 19 / 60 点)
+                          </span>
+                        ) : (
+                          <span style={{ color: '#dc2626', fontWeight: 600 }}>
+                            ⚠ Below sectional pass mark (requires ≥ 19 / 60 点 in official JLPT)
+                          </span>
+                        )}
                       </div>
                     </div>
                   )}
@@ -785,16 +859,26 @@ const DethiTiengNhatN3Page = () => {
                                   __html: block.questionHtml || block.questionText || `${qNum}番`,
                                 }}
                               />
-                              {currentSection.partId !== 4 && (
-                                <button
-                                  type="button"
-                                  onClick={() => speakJapanese(block.questionText)}
-                                  className="dttn-tts-btn"
-                                  title="Read in Japanese"
-                                >
-                                  Read in Japanese
-                                </button>
-                              )}
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', flexShrink: 0 }}>
+                                {block.points && (
+                                  <span
+                                    className="dttn-question-pts-tag"
+                                    title={`This question is worth ${block.points} points on the 60-point scale based on JLPT difficulty`}
+                                  >
+                                    {block.points} pt
+                                  </span>
+                                )}
+                                {currentSection.partId !== 4 && (
+                                  <button
+                                    type="button"
+                                    onClick={() => speakJapanese(block.questionText)}
+                                    className="dttn-tts-btn"
+                                    title="Read in Japanese"
+                                  >
+                                    Read in Japanese
+                                  </button>
+                                )}
+                              </div>
                             </div>
 
                             {block.imageUrl && (

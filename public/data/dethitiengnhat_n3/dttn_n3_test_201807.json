@@ -35,7 +35,7 @@
           "position": 0,
           "mondai": 1,
           "mondaiTitle": "問題1__のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.2,
           "stem": "<u>塩</u>は台所にありました。",
           "stemWithNumber": "1. <u>塩</u>は台所にありました。",
           "context": "",
@@ -62,7 +62,8 @@
             "",
             "正解: 3",
             ""
-          ]
+          ],
+          "englishSentence": "The salt was in the kitchen."
         },
         {
           "id": "dttn_n3_201807_vocab_q2",
@@ -70,7 +71,7 @@
           "position": 1,
           "mondai": 1,
           "mondaiTitle": "問題1__のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.2,
           "stem": "彼は犬に<u>命令</u>した。",
           "stemWithNumber": "2. 彼は犬に<u>命令</u>した。",
           "context": "",
@@ -97,7 +98,8 @@
             "",
             "",
             "正解: 4"
-          ]
+          ],
+          "englishSentence": "He gave an order / commanded his dog."
         },
         {
           "id": "dttn_n3_201807_vocab_q3",
@@ -105,7 +107,7 @@
           "position": 2,
           "mondai": 1,
           "mondaiTitle": "問題1__のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.2,
           "stem": "手紙には<u>恋しい</u>人を思う気持ちが書かれていた。",
           "stemWithNumber": "3. 手紙には<u>恋しい</u>人を思う気持ちが書かれていた。",
           "context": "",
@@ -132,7 +134,8 @@
             "",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "In the letter, feelings of longing for a beloved / missed person were written."
         },
         {
           "id": "dttn_n3_201807_vocab_q4",
@@ -140,7 +143,7 @@
           "position": 3,
           "mondai": 1,
           "mondaiTitle": "問題1__のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.2,
           "stem": "<u>機械が</u>故障した。",
           "stemWithNumber": "4. <u>機械が</u>故障した。",
           "context": "",
@@ -167,7 +170,8 @@
             "正解: 2",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "The machine broke down / malfunctioned."
         },
         {
           "id": "dttn_n3_201807_vocab_q5",
@@ -175,7 +179,7 @@
           "position": 4,
           "mondai": 1,
           "mondaiTitle": "問題1__のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.2,
           "stem": "今月は<u>休日が</u>多かった。",
           "stemWithNumber": "5. 今月は<u>休日が</u>多かった。",
           "context": "",
@@ -202,7 +206,8 @@
             "正解: 2",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "There were many days off / holidays this month."
         },
         {
           "id": "dttn_n3_201807_vocab_q6",
@@ -210,7 +215,7 @@
           "position": 5,
           "mondai": 1,
           "mondaiTitle": "問題1__のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.2,
           "stem": "この<u>部分</u>をよく見てください。",
           "stemWithNumber": "6. この<u>部分</u>をよく見てください。",
           "context": "",
@@ -237,7 +242,8 @@
             "",
             "正解: 3",
             ""
-          ]
+          ],
+          "englishSentence": "Please look closely at this portion / part."
         },
         {
           "id": "dttn_n3_201807_vocab_q7",
@@ -245,7 +251,7 @@
           "position": 6,
           "mondai": 1,
           "mondaiTitle": "問題1__のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.2,
           "stem": "池田さんは木村さんを<u>疑って</u>いるようだ。",
           "stemWithNumber": "7. 池田さんは木村さんを<u>疑って</u>いるようだ。",
           "context": "",
@@ -272,7 +278,8 @@
             "",
             "",
             "正解: 4"
-          ]
+          ],
+          "englishSentence": "It seems Mr. Ikeda suspects / doubts Mr. Kimura."
         },
         {
           "id": "dttn_n3_201807_vocab_q8",
@@ -280,7 +287,7 @@
           "position": 7,
           "mondai": 1,
           "mondaiTitle": "問題1__のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.2,
           "stem": "中島さんは数学が<u>得意</u>らしい。",
           "stemWithNumber": "8. 中島さんは数学が<u>得意</u>らしい。",
           "context": "",
@@ -307,7 +314,8 @@
             "",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "It seems Mr. Nakajima is good at mathematics."
         },
         {
           "id": "dttn_n3_201807_vocab_q9",
@@ -315,7 +323,7 @@
           "position": 8,
           "mondai": 2,
           "mondaiTitle": "問題2_のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.2,
           "stem": "毎日パソコンを使うので、目の<u>つかれ</u>が取れません。",
           "stemWithNumber": "9. 毎日パソコンを使うので、目の<u>つかれ</u>が取れません。",
           "context": "",
@@ -342,7 +350,8 @@
             "",
             "正解: 3",
             ""
-          ]
+          ],
+          "englishSentence": "Because I use a computer every day, I can't shake off eye fatigue / tiredness."
         },
         {
           "id": "dttn_n3_201807_vocab_q10",
@@ -350,7 +359,7 @@
           "position": 9,
           "mondai": 2,
           "mondaiTitle": "問題2_のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.2,
           "stem": "そんなに<u>なかないで</u>ください。",
           "stemWithNumber": "10. そんなに<u>なかないで</u>ください。",
           "context": "",
@@ -377,7 +386,8 @@
             "",
             "",
             "正解: 4"
-          ]
+          ],
+          "englishSentence": "Please do not cry like that."
         },
         {
           "id": "dttn_n3_201807_vocab_q11",
@@ -385,7 +395,7 @@
           "position": 10,
           "mondai": 2,
           "mondaiTitle": "問題2_のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.2,
           "stem": "この小説はストーリーが<u>ふくざつだ</u>。",
           "stemWithNumber": "11. この小説はストーリーが<u>ふくざつだ</u>。",
           "context": "",
@@ -412,7 +422,8 @@
             "",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "The storyline of this novel is complicated / complex."
         },
         {
           "id": "dttn_n3_201807_vocab_q12",
@@ -420,7 +431,7 @@
           "position": 11,
           "mondai": 2,
           "mondaiTitle": "問題2_のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.2,
           "stem": "飛んできたボールが背中に<u>あたった</u>。",
           "stemWithNumber": "12. 飛んできたボールが背中に<u>あたった</u>。",
           "context": "",
@@ -447,7 +458,8 @@
             "",
             "正解: 3",
             ""
-          ]
+          ],
+          "englishSentence": "The flying ball hit my back."
         },
         {
           "id": "dttn_n3_201807_vocab_q13",
@@ -455,7 +467,7 @@
           "position": 12,
           "mondai": 2,
           "mondaiTitle": "問題2_のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.2,
           "stem": "この交差点は<u>うせつ</u>できません。",
           "stemWithNumber": "13. この交差点は<u>うせつ</u>できません。",
           "context": "",
@@ -482,7 +494,8 @@
             "正解: 2",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "You cannot make a right turn at this intersection."
         },
         {
           "id": "dttn_n3_201807_vocab_q14",
@@ -490,7 +503,7 @@
           "position": 13,
           "mondai": 2,
           "mondaiTitle": "問題2_のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.2,
           "stem": "最近、父は仕事が忙しいらしく、<u>きたく</u>が遅い日が多い。",
           "stemWithNumber": "14. 最近、父は仕事が忙しいらしく、<u>きたく</u>が遅い日が多い。",
           "context": "",
@@ -517,7 +530,8 @@
             "",
             "",
             "正解: 4"
-          ]
+          ],
+          "englishSentence": "Lately, my father has been busy with work, and there are many days when his return home is late."
         },
         {
           "id": "dttn_n3_201807_vocab_q15",
@@ -525,7 +539,7 @@
           "position": 14,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.5,
           "stem": "風や太陽の( )を利用して電気を作ることができる。",
           "stemWithNumber": "15. 風や太陽の( )を利用して電気を作ることができる。",
           "context": "",
@@ -552,7 +566,8 @@
             "",
             "",
             "正解: 4"
-          ]
+          ],
+          "englishSentence": "Electricity can be generated using wind and solar energy."
         },
         {
           "id": "dttn_n3_201807_vocab_q16",
@@ -560,7 +575,7 @@
           "position": 15,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.5,
           "stem": "20 年後、私たちはどんな生活をしているか( )してみた。",
           "stemWithNumber": "16. 20 年後、私たちはどんな生活をしているか( )してみた。",
           "context": "",
@@ -587,7 +602,8 @@
             "",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "I tried imagining what kind of life we will be living 20 years from now."
         },
         {
           "id": "dttn_n3_201807_vocab_q17",
@@ -595,7 +611,7 @@
           "position": 16,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.5,
           "stem": "友人と駅で ( )から、一緒に食事に行くことにした。",
           "stemWithNumber": "17. 友人と駅で ( )から、一緒に食事に行くことにした。",
           "context": "",
@@ -622,7 +638,8 @@
             "",
             "正解: 3",
             ""
-          ]
+          ],
+          "englishSentence": "After meeting up with my friend at the station, we decided to go have a meal together."
         },
         {
           "id": "dttn_n3_201807_vocab_q18",
@@ -630,7 +647,7 @@
           "position": 17,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.5,
           "stem": "講演会の会場はあまり大きくないので、参加できる人数は 50人までという( )がある。",
           "stemWithNumber": "18. 講演会の会場はあまり大きくないので、参加できる人数は 50人までという( )がある。",
           "context": "",
@@ -657,7 +674,8 @@
             "",
             "正解: 3",
             ""
-          ]
+          ],
+          "englishSentence": "Because the lecture venue is not very large, there is a restriction limiting participants to a maximum of 50 people."
         },
         {
           "id": "dttn_n3_201807_vocab_q19",
@@ -665,7 +683,7 @@
           "position": 18,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.5,
           "stem": "森さんはおとなしい人だと思っていたが、( ) 積極的でよく話す。",
           "stemWithNumber": "19. 森さんはおとなしい人だと思っていたが、( ) 積極的でよく話す。",
           "context": "",
@@ -692,7 +710,8 @@
             "",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "I had thought Mr. Mori was a quiet person, but unexpectedly / surprisingly, he is proactive and talks a lot."
         },
         {
           "id": "dttn_n3_201807_vocab_q20",
@@ -700,7 +719,7 @@
           "position": 19,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.5,
           "stem": "リーさんは大きなスーパーを三つも( )しているらしい。",
           "stemWithNumber": "20. リーさんは大きなスーパーを三つも( )しているらしい。",
           "context": "",
@@ -727,7 +746,8 @@
             "正解: 2",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "It seems Mr. Li manages / runs as many as three large supermarkets."
         },
         {
           "id": "dttn_n3_201807_vocab_q21",
@@ -735,7 +755,7 @@
           "position": 20,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.5,
           "stem": "最近太ったから、ズボンが ( )なった。",
           "stemWithNumber": "21. 最近太ったから、ズボンが ( )なった。",
           "context": "",
@@ -762,7 +782,8 @@
             "",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "Because I've gained weight recently, my trousers have become tight."
         },
         {
           "id": "dttn_n3_201807_vocab_q22",
@@ -770,7 +791,7 @@
           "position": 21,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.5,
           "stem": "大雨で、川の水が( )になっているから、近くに行かないほうがいい。",
           "stemWithNumber": "22. 大雨で、川の水が( )になっているから、近くに行かないほうがいい。",
           "context": "",
@@ -797,7 +818,8 @@
             "",
             "",
             "正解: 4"
-          ]
+          ],
+          "englishSentence": "Due to the heavy rain, the river water looks like it's about to overflow, so you shouldn't go near it."
         },
         {
           "id": "dttn_n3_201807_vocab_q23",
@@ -805,7 +827,7 @@
           "position": 22,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.5,
           "stem": "この牛乳は、バターやチーズを作るための( )として使われる。",
           "stemWithNumber": "23. この牛乳は、バターやチーズを作るための( )として使われる。",
           "context": "",
@@ -832,7 +854,8 @@
             "正解: 2",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "This milk is used as the raw material / ingredient for making butter and cheese."
         },
         {
           "id": "dttn_n3_201807_vocab_q24",
@@ -840,7 +863,7 @@
           "position": 23,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.5,
           "stem": "子どもが迷子にならないように、子どもの手を( )握った。",
           "stemWithNumber": "24. 子どもが迷子にならないように、子どもの手を( )握った。",
           "context": "",
@@ -867,7 +890,8 @@
             "正解: 2",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "So that the child wouldn't get lost, I held the child's hand tightly / firmly."
         },
         {
           "id": "dttn_n3_201807_vocab_q25",
@@ -875,7 +899,7 @@
           "position": 24,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.5,
           "stem": "このジュースは新鮮なオレンジを( )作ったので、とてもおいしい。",
           "stemWithNumber": "25. このジュースは新鮮なオレンジを( )作ったので、とてもおいしい。",
           "context": "",
@@ -902,7 +926,8 @@
             "",
             "正解: 3",
             ""
-          ]
+          ],
+          "englishSentence": "This juice is very delicious because it was made by squeezing fresh oranges."
         },
         {
           "id": "dttn_n3_201807_vocab_q26",
@@ -910,7 +935,7 @@
           "position": 25,
           "mondai": 4,
           "mondaiTitle": "問題4に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 2.1,
           "stem": "旅行中は<u>団体</u>で移動した。",
           "stemWithNumber": "26. 旅行中は<u>団体</u>で移動した。",
           "context": "",
@@ -937,7 +962,8 @@
             "正解: 2",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "During the trip, we moved around as a group / party."
         },
         {
           "id": "dttn_n3_201807_vocab_q27",
@@ -945,7 +971,7 @@
           "position": 26,
           "mondai": 4,
           "mondaiTitle": "問題4に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 2.1,
           "stem": "ここでは<u>しゃべらないで</u>ください。",
           "stemWithNumber": "27. ここでは<u>しゃべらないで</u>ください。",
           "context": "",
@@ -972,7 +998,8 @@
             "",
             "",
             "正解: 4"
-          ]
+          ],
+          "englishSentence": "Please do not talk / chat here."
         },
         {
           "id": "dttn_n3_201807_vocab_q28",
@@ -980,7 +1007,7 @@
           "position": 27,
           "mondai": 4,
           "mondaiTitle": "問題4に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 2.1,
           "stem": "今日は<u>退屈だった</u>。",
           "stemWithNumber": "28. 今日は<u>退屈だった</u>。",
           "context": "",
@@ -1007,7 +1034,8 @@
             "正解: 2",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "Today was boring / dull."
         },
         {
           "id": "dttn_n3_201807_vocab_q29",
@@ -1015,7 +1043,7 @@
           "position": 28,
           "mondai": 4,
           "mondaiTitle": "問題4に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 2.1,
           "stem": "このレストランは、<u>多少</u>うるさいが、料理はおいしい。",
           "stemWithNumber": "29. このレストランは、<u>多少</u>うるさいが、料理はおいしい。",
           "context": "",
@@ -1042,7 +1070,8 @@
             "",
             "正解: 3",
             ""
-          ]
+          ],
+          "englishSentence": "This restaurant is a bit noisy, but the food is delicious."
         },
         {
           "id": "dttn_n3_201807_vocab_q30",
@@ -1050,7 +1079,7 @@
           "position": 29,
           "mondai": 4,
           "mondaiTitle": "問題4に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 2.1,
           "stem": "子どもたちがこちらに<u>駆けてきた</u>。",
           "stemWithNumber": "30. 子どもたちがこちらに<u>駆けてきた</u>。",
           "context": "",
@@ -1077,7 +1106,8 @@
             "",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "The children came running toward me."
         },
         {
           "id": "dttn_n3_201807_vocab_q31",
@@ -1085,7 +1115,7 @@
           "position": 30,
           "mondai": 5,
           "mondaiTitle": "問題 5 つぎのことばの使い方として最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 3.3,
           "stem": "<u>距離</u>",
           "stemWithNumber": "31. <u>距離</u>",
           "context": "",
@@ -1112,7 +1142,8 @@
             "",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "I looked up how many kilometers the distance from Tokyo to Kyoto is."
         },
         {
           "id": "dttn_n3_201807_vocab_q32",
@@ -1120,7 +1151,7 @@
           "position": 31,
           "mondai": 5,
           "mondaiTitle": "問題 5 つぎのことばの使い方として最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 3.3,
           "stem": "<u>活動</u>",
           "stemWithNumber": "32. <u>活動</u>",
           "context": "",
@@ -1147,7 +1178,8 @@
             "",
             "正解: 3",
             ""
-          ]
+          ],
+          "englishSentence": "I participated in an activity / initiative introducing the cultures of various countries to children."
         },
         {
           "id": "dttn_n3_201807_vocab_q33",
@@ -1155,7 +1187,7 @@
           "position": 32,
           "mondai": 5,
           "mondaiTitle": "問題 5 つぎのことばの使い方として最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 3.3,
           "stem": "<u>盛ん</u>",
           "stemWithNumber": "33. <u>盛ん</u>",
           "context": "",
@@ -1182,7 +1214,8 @@
             "",
             "",
             "正解: 4"
-          ]
+          ],
+          "englishSentence": "Sports flourish / are very popular at my school, and everyone plays various sports."
         },
         {
           "id": "dttn_n3_201807_vocab_q34",
@@ -1190,7 +1223,7 @@
           "position": 33,
           "mondai": 5,
           "mondaiTitle": "問題 5 つぎのことばの使い方として最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 3.3,
           "stem": "<u>区別</u>",
           "stemWithNumber": "34. <u>区別</u>",
           "context": "",
@@ -1217,7 +1250,8 @@
             "正解: 2",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "It is difficult to distinguish words with very similar meanings and memorize them."
         },
         {
           "id": "dttn_n3_201807_vocab_q35",
@@ -1225,7 +1259,7 @@
           "position": 34,
           "mondai": 5,
           "mondaiTitle": "問題 5 つぎのことばの使い方として最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 3,
           "stem": "<u>追いつく</u>",
           "stemWithNumber": "35. <u>追いつく</u>",
           "context": "",
@@ -1252,7 +1286,8 @@
             "",
             "",
             "正解: 4"
-          ]
+          ],
+          "englishSentence": "I left the house after my older sister, but I caught up with her near the station."
         }
       ],
       "contentBlocks": [
@@ -1278,13 +1313,14 @@
             "しお",
             "こめ"
           ],
-          "points": 1,
+          "points": 1.2,
           "mondai": 1,
           "mondaiTitle": "問題1__のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 2,
             "text": "3) しお"
-          }
+          },
+          "englishSentence": "The salt was in the kitchen."
         },
         {
           "type": "question",
@@ -1304,13 +1340,14 @@
             "めれい",
             "めいれい"
           ],
-          "points": 1,
+          "points": 1.2,
           "mondai": 1,
           "mondaiTitle": "問題1__のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 3,
             "text": "4) めいれい"
-          }
+          },
+          "englishSentence": "He gave an order / commanded his dog."
         },
         {
           "type": "question",
@@ -1330,13 +1367,14 @@
             "なつかしい",
             "やさしい"
           ],
-          "points": 1,
+          "points": 1.2,
           "mondai": 1,
           "mondaiTitle": "問題1__のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 0,
             "text": "1) こいしい。"
-          }
+          },
+          "englishSentence": "In the letter, feelings of longing for a beloved / missed person were written."
         },
         {
           "type": "question",
@@ -1356,13 +1394,14 @@
             "きけい",
             "ぎけい"
           ],
-          "points": 1,
+          "points": 1.2,
           "mondai": 1,
           "mondaiTitle": "問題1__のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 1,
             "text": "2) きかい"
-          }
+          },
+          "englishSentence": "The machine broke down / malfunctioned."
         },
         {
           "type": "question",
@@ -1382,13 +1421,14 @@
             "きゅうにち",
             "しゅくにち"
           ],
-          "points": 1,
+          "points": 1.2,
           "mondai": 1,
           "mondaiTitle": "問題1__のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 1,
             "text": "2) きゅうじつ"
-          }
+          },
+          "englishSentence": "There were many days off / holidays this month."
         },
         {
           "type": "question",
@@ -1408,13 +1448,14 @@
             "ぶぶん",
             "ぶうふん"
           ],
-          "points": 1,
+          "points": 1.2,
           "mondai": 1,
           "mondaiTitle": "問題1__のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 2,
             "text": "3) ぶぶん"
-          }
+          },
+          "englishSentence": "Please look closely at this portion / part."
         },
         {
           "type": "question",
@@ -1434,13 +1475,14 @@
             "きらって",
             "うたがって"
           ],
-          "points": 1,
+          "points": 1.2,
           "mondai": 1,
           "mondaiTitle": "問題1__のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 3,
             "text": "4) うたがって"
-          }
+          },
+          "englishSentence": "It seems Mr. Ikeda suspects / doubts Mr. Kimura."
         },
         {
           "type": "question",
@@ -1460,13 +1502,14 @@
             "どくい",
             "どうい"
           ],
-          "points": 1,
+          "points": 1.2,
           "mondai": 1,
           "mondaiTitle": "問題1__のことばの読み方として最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 0,
             "text": "1) とくい"
-          }
+          },
+          "englishSentence": "It seems Mr. Nakajima is good at mathematics."
         },
         {
           "type": "section-header",
@@ -1490,13 +1533,14 @@
             "疲れ",
             "痛れ"
           ],
-          "points": 1,
+          "points": 1.2,
           "mondai": 2,
           "mondaiTitle": "問題2_のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 2,
             "text": "3) 疲れ"
-          }
+          },
+          "englishSentence": "Because I use a computer every day, I can't shake off eye fatigue / tiredness."
         },
         {
           "type": "question",
@@ -1516,13 +1560,14 @@
             "冷かないで",
             "泣かないで"
           ],
-          "points": 1,
+          "points": 1.2,
           "mondai": 2,
           "mondaiTitle": "問題2_のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 3,
             "text": "4) 泣かないで"
-          }
+          },
+          "englishSentence": "Please do not cry like that."
         },
         {
           "type": "question",
@@ -1542,13 +1587,14 @@
             "複稚",
             "復稚"
           ],
-          "points": 1,
+          "points": 1.2,
           "mondai": 2,
           "mondaiTitle": "問題2_のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 0,
             "text": "1) 複雑"
-          }
+          },
+          "englishSentence": "The storyline of this novel is complicated / complex."
         },
         {
           "type": "question",
@@ -1568,13 +1614,14 @@
             "当たった",
             "向たった"
           ],
-          "points": 1,
+          "points": 1.2,
           "mondai": 2,
           "mondaiTitle": "問題2_のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 2,
             "text": "3) 当たった"
-          }
+          },
+          "englishSentence": "The flying ball hit my back."
         },
         {
           "type": "question",
@@ -1594,13 +1641,14 @@
             "右曲",
             "左曲"
           ],
-          "points": 1,
+          "points": 1.2,
           "mondai": 2,
           "mondaiTitle": "問題2_のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 1,
             "text": "2) 右折"
-          }
+          },
+          "englishSentence": "You cannot make a right turn at this intersection."
         },
         {
           "type": "question",
@@ -1620,13 +1668,14 @@
             "帰室",
             "帰宅"
           ],
-          "points": 1,
+          "points": 1.2,
           "mondai": 2,
           "mondaiTitle": "問題2_のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 3,
             "text": "4) 帰宅"
-          }
+          },
+          "englishSentence": "Lately, my father has been busy with work, and there are many days when his return home is late."
         },
         {
           "type": "section-header",
@@ -1650,13 +1699,14 @@
             "ヒント",
             "エネルギー"
           ],
-          "points": 1,
+          "points": 1.5,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 3,
             "text": "4) エネルギー"
-          }
+          },
+          "englishSentence": "Electricity can be generated using wind and solar energy."
         },
         {
           "type": "question",
@@ -1676,13 +1726,14 @@
             "期待",
             "確認"
           ],
-          "points": 1,
+          "points": 1.5,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 0,
             "text": "1) 想像"
-          }
+          },
+          "englishSentence": "I tried imagining what kind of life we will be living 20 years from now."
         },
         {
           "type": "question",
@@ -1702,13 +1753,14 @@
             ". 待ち合わせて",
             ".付き合って"
           ],
-          "points": 1,
+          "points": 1.5,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 2,
             "text": "3) . 待ち合わせて"
-          }
+          },
+          "englishSentence": "After meeting up with my friend at the station, we decided to go have a meal together."
         },
         {
           "type": "question",
@@ -1728,13 +1780,14 @@
             "制限",
             "順番"
           ],
-          "points": 1,
+          "points": 1.5,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 2,
             "text": "3) 制限"
-          }
+          },
+          "englishSentence": "Because the lecture venue is not very large, there is a restriction limiting participants to a maximum of 50 people."
         },
         {
           "type": "question",
@@ -1754,13 +1807,14 @@
             "絶対に",
             "無理に"
           ],
-          "points": 1,
+          "points": 1.5,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 0,
             "text": "1) 意外に"
-          }
+          },
+          "englishSentence": "I had thought Mr. Mori was a quiet person, but unexpectedly / surprisingly, he is proactive and talks a lot."
         },
         {
           "type": "question",
@@ -1780,13 +1834,14 @@
             "会計",
             "貿易"
           ],
-          "points": 1,
+          "points": 1.5,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 1,
             "text": "2) 経営"
-          }
+          },
+          "englishSentence": "It seems Mr. Li manages / runs as many as three large supermarkets."
         },
         {
           "type": "question",
@@ -1806,13 +1861,14 @@
             "ぬるく",
             "まぶしく"
           ],
-          "points": 1,
+          "points": 1.5,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 0,
             "text": "1) きつく"
-          }
+          },
+          "englishSentence": "Because I've gained weight recently, my trousers have become tight."
         },
         {
           "type": "question",
@@ -1832,13 +1888,14 @@
             "逃げそう",
             "あふれそう"
           ],
-          "points": 1,
+          "points": 1.5,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 3,
             "text": "4) あふれそう"
-          }
+          },
+          "englishSentence": "Due to the heavy rain, the river water looks like it's about to overflow, so you shouldn't go near it."
         },
         {
           "type": "question",
@@ -1858,13 +1915,14 @@
             "栄養",
             "基礎"
           ],
-          "points": 1,
+          "points": 1.5,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 1,
             "text": "2) 原料"
-          }
+          },
+          "englishSentence": "This milk is used as the raw material / ingredient for making butter and cheese."
         },
         {
           "type": "question",
@@ -1884,13 +1942,14 @@
             "ぐっすり",
             "そっくり"
           ],
-          "points": 1,
+          "points": 1.5,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 1,
             "text": "2) しっかり"
-          }
+          },
+          "englishSentence": "So that the child wouldn't get lost, I held the child's hand tightly / firmly."
         },
         {
           "type": "question",
@@ -1910,13 +1969,14 @@
             "しぼって",
             "おして"
           ],
-          "points": 1,
+          "points": 1.5,
           "mondai": 3,
           "mondaiTitle": "問題3 ( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 2,
             "text": "3) しぼって"
-          }
+          },
+          "englishSentence": "This juice is very delicious because it was made by squeezing fresh oranges."
         },
         {
           "type": "section-header",
@@ -1940,13 +2000,14 @@
             "歩いて",
             "タクシーで"
           ],
-          "points": 1,
+          "points": 2.1,
           "mondai": 4,
           "mondaiTitle": "問題4に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 1,
             "text": "2) グループで"
-          }
+          },
+          "englishSentence": "During the trip, we moved around as a group / party."
         },
         {
           "type": "question",
@@ -1966,13 +2027,14 @@
             "遊ばないで",
             "話さないで"
           ],
-          "points": 1,
+          "points": 2.1,
           "mondai": 4,
           "mondaiTitle": "問題4に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 3,
             "text": "4) 話さないで"
-          }
+          },
+          "englishSentence": "Please do not talk / chat here."
         },
         {
           "type": "question",
@@ -1992,13 +2054,14 @@
             "忙しかった",
             "静かだった"
           ],
-          "points": 1,
+          "points": 2.1,
           "mondai": 4,
           "mondaiTitle": "問題4に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 1,
             "text": "2) つまらなかった"
-          }
+          },
+          "englishSentence": "Today was boring / dull."
         },
         {
           "type": "question",
@@ -2018,13 +2081,14 @@
             "ちょっと",
             "ときどき"
           ],
-          "points": 1,
+          "points": 2.1,
           "mondai": 4,
           "mondaiTitle": "問題4に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 2,
             "text": "3) ちょっと"
-          }
+          },
+          "englishSentence": "This restaurant is a bit noisy, but the food is delicious."
         },
         {
           "type": "question",
@@ -2044,13 +2108,14 @@
             "入ってきた",
             "集まってきた"
           ],
-          "points": 1,
+          "points": 2.1,
           "mondai": 4,
           "mondaiTitle": "問題4に意味が最も近いものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 0,
             "text": "1) 走ってきた"
-          }
+          },
+          "englishSentence": "The children came running toward me."
         },
         {
           "type": "section-header",
@@ -2074,13 +2139,14 @@
             "オリンピックは4年に1回の距離で開かれる。",
             "私と弟は5歳の距離があるので、弟はまだ中学生だ。"
           ],
-          "points": 1,
+          "points": 3.3,
           "mondai": 5,
           "mondaiTitle": "問題 5 つぎのことばの使い方として最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 0,
             "text": "1) 東京から京都までの距離は何キロメートルか調べてみた。"
-          }
+          },
+          "englishSentence": "I looked up how many kilometers the distance from Tokyo to Kyoto is."
         },
         {
           "type": "question",
@@ -2100,13 +2166,14 @@
             "いろいろな国の文化を子どもたちに紹介する活動に参加した。",
             "走る前に足や腰の活動をすると、けがをしにくいそうだ。"
           ],
-          "points": 1,
+          "points": 3.3,
           "mondai": 5,
           "mondaiTitle": "問題 5 つぎのことばの使い方として最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 2,
             "text": "3) いろいろな国の文化を子どもたちに紹介する活動に参加した。"
-          }
+          },
+          "englishSentence": "I participated in an activity / initiative introducing the cultures of various countries to children."
         },
         {
           "type": "question",
@@ -2126,13 +2193,14 @@
             "弟は写真をとるのが盛んで、いつもカメラを持っている。",
             "私の学校はスポーツが盛んで、みんないろいろなスポーツをしている。"
           ],
-          "points": 1,
+          "points": 3.3,
           "mondai": 5,
           "mondaiTitle": "問題 5 つぎのことばの使い方として最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 3,
             "text": "4) 私の学校はスポーツが盛んで、みんないろいろなスポーツをしている。"
-          }
+          },
+          "englishSentence": "Sports flourish / are very popular at my school, and everyone plays various sports."
         },
         {
           "type": "question",
@@ -2152,13 +2220,14 @@
             "石川さんにはずっと会っていないから、今会っても区別できないかもしれない。",
             "私の国は、2本の大きな川でほかの国と区別されています。"
           ],
-          "points": 1,
+          "points": 3.3,
           "mondai": 5,
           "mondaiTitle": "問題 5 つぎのことばの使い方として最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 1,
             "text": "2) 意味のよく似ていることばを区別して覚えるのは難しい。"
-          }
+          },
+          "englishSentence": "It is difficult to distinguish words with very similar meanings and memorize them."
         },
         {
           "type": "question",
@@ -2178,15 +2247,18 @@
             "5時間以上登って、ついに山の最も高い所に追いついた。",
             "妹より後に家を出たが、駅の近くで追いついた。"
           ],
-          "points": 1,
+          "points": 3,
           "mondai": 5,
           "mondaiTitle": "問題 5 つぎのことばの使い方として最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 3,
             "text": "4) 妹より後に家を出たが、駅の近くで追いついた。"
-          }
+          },
+          "englishSentence": "I left the house after my older sister, but I caught up with her near the station."
         }
-      ]
+      ],
+      "maxPoints": 60,
+      "minPassPoints": 19
     },
     {
       "id": "grammar_reading",
@@ -2204,7 +2276,7 @@
           "position": 0,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 0.9,
           "stem": "今年は夏休みに国へ帰りません。日本で夏休み( )過ごすのは今年が初めてです。",
           "stemWithNumber": "1. 今年は夏休みに国へ帰りません。日本で夏休み( )過ごすのは今年が初めてです。",
           "context": "",
@@ -2231,7 +2303,8 @@
             "",
             "",
             "正解: 4"
-          ]
+          ],
+          "englishSentence": "I am not returning to my home country this summer vacation. Spending summer vacation in Japan is a first for me this year."
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q2",
@@ -2239,7 +2312,7 @@
           "position": 1,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 0.9,
           "stem": "この美術館では、10年前から外国人旅行者 ( ) チケットの割引サービスを行っている。",
           "stemWithNumber": "2. この美術館では、10年前から外国人旅行者 ( ) チケットの割引サービスを行っている。",
           "context": "",
@@ -2266,7 +2339,8 @@
             "",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "At this art museum, they have been offering a ticket discount service for / toward foreign tourists for the past 10 years."
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q3",
@@ -2274,7 +2348,7 @@
           "position": 2,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 0.9,
           "stem": "今朝( ) 早起きをしてお弁当を作ったのに、持ってくるのを忘れてしまった。",
           "stemWithNumber": "3. 今朝( ) 早起きをしてお弁当を作ったのに、持ってくるのを忘れてしまった。",
           "context": "",
@@ -2301,7 +2375,8 @@
             "正解: 2",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "Even though I specially went through the trouble of waking up early this morning to make a boxed lunch, I forgot to bring it with me!"
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q4",
@@ -2309,7 +2384,7 @@
           "position": 3,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 0.9,
           "stem": "健康でいるためには、食事に( )、運動もしたほうがいいことはわかっているが、忙しくてなかなか運動する時間 がとれない。",
           "stemWithNumber": "4. 健康でいるためには、食事に( )、運動もしたほうがいいことはわかっているが、忙しくてなかなか運動する時間 がとれない。",
           "context": "",
@@ -2336,7 +2411,8 @@
             "",
             "",
             "正解: 4"
-          ]
+          ],
+          "englishSentence": "In order to stay healthy, I understand that not only paying attention to one's diet, but also exercising is advisable, but I am busy and can hardly find time to exercise."
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q5",
@@ -2344,7 +2420,7 @@
           "position": 4,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 0.9,
           "stem": "A: 「ねえ、最近、娘がピアノを習いたいと言ってるから、( )と思ってるんだけど、4歳じゃまだ早いと思う?」 B: 「ううん、別に早くないと思うよ。習わせてみたらいいんじゃない?」",
           "stemWithNumber": "5. A: 「ねえ、最近、娘がピアノを習いたいと言ってるから、( )と思ってるんだけど、4歳じゃまだ早いと思う?」 B: 「ううん、別に早くないと思うよ。習わせてみたらいいんじゃない?」",
           "context": "",
@@ -2371,7 +2447,8 @@
             "正解: 2",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "- A: \"Hey, recently my daughter has been saying she wants to learn piano, so I'm thinking of letting her learn / having her take lessons, but do you think 4 years old is still too young?\""
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q6",
@@ -2379,7 +2456,7 @@
           "position": 5,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 0.9,
           "stem": "自分の会社をつくったと言うとよく驚かれるが、会社をつくることは必ずしも( )。",
           "stemWithNumber": "6. 自分の会社をつくったと言うとよく驚かれるが、会社をつくることは必ずしも( )。",
           "context": "",
@@ -2406,7 +2483,8 @@
             "",
             "正解: 3",
             ""
-          ]
+          ],
+          "englishSentence": "When I say that I founded my own company, people are often surprised, but creating a company is not necessarily a difficult thing."
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q7",
@@ -2414,7 +2492,7 @@
           "position": 6,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 0.9,
           "stem": "(レストランで) 客:「ランチセットを一つお願いします。」 店員:「AセットとBセットのどちらに( )か。」 客:「あ、Aセットをお願いします。」",
           "stemWithNumber": "7. (レストランで) 客:「ランチセットを一つお願いします。」 店員:「AセットとBセットのどちらに( )か。」 客:「あ、Aセットをお願いします。」",
           "context": "",
@@ -2441,7 +2519,8 @@
             "",
             "正解: 3",
             ""
-          ]
+          ],
+          "englishSentence": "- Customer: \"One lunch set, please.\""
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q8",
@@ -2449,7 +2528,7 @@
           "position": 7,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 0.9,
           "stem": "(会社で) 田中: 「すみません、森さん。私、先週のセミナー、出張で出られなかったので、資料を( )。」 森: 「あ、いいですよ。これです。どうぞ。」",
           "stemWithNumber": "8. (会社で) 田中: 「すみません、森さん。私、先週のセミナー、出張で出られなかったので、資料を( )。」 森: 「あ、いいですよ。これです。どうぞ。」",
           "context": "",
@@ -2476,7 +2555,8 @@
             "正解: 2",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "(At the office) Tanaka: \"Excuse me, Mori. Since I was away on a business trip and couldn't attend last week's seminar, could you please allow me to photocopy the materials?\" - Mori: \"Oh, sure! Here they are, go ahead.\""
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q9",
@@ -2484,7 +2564,7 @@
           "position": 8,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 0.9,
           "stem": "A: 「ねえ、『星の物語』って読んだことある?」 B: 「うん、3巻 ( ) 読んだよ。最新の4巻はまだ読んでないんだけど。」",
           "stemWithNumber": "9. A: 「ねえ、『星の物語』って読んだことある?」 B: 「うん、3巻 ( ) 読んだよ。最新の4巻はまだ読んでないんだけど。」",
           "context": "",
@@ -2511,7 +2591,8 @@
             "",
             "正解: 3",
             ""
-          ]
+          ],
+          "englishSentence": "- A: \"Hey, have you ever read 'Tale of the Stars'?\""
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q10",
@@ -2519,7 +2600,7 @@
           "position": 9,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 0.9,
           "stem": "駅前にできた喫茶店はコーヒーが 20 種類以上あるそうだ。友達に( )と誘われたので、今度一緒に行くことにした。",
           "stemWithNumber": "10. 駅前にできた喫茶店はコーヒーが 20 種類以上あるそうだ。友達に( )と誘われたので、今度一緒に行くことにした。",
           "context": "",
@@ -2546,7 +2627,8 @@
             "",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "I heard the cafe opened in front of the station has over 20 types of coffee. My friend invited me, saying \"Why don't we try going?\", so I decided to go together next time."
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q11",
@@ -2554,7 +2636,7 @@
           "position": 10,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 0.9,
           "stem": "今日の夕方、聞きたいとこがあって営業部の南さんのところに行ったが、もう いなかった。",
           "stemWithNumber": "11.今日の夕方、聞きたいとこがあって営業部の南さんのところに行ったが、もう いなかった。",
           "context": "",
@@ -2581,7 +2663,8 @@
             "",
             "",
             "正解: 4"
-          ]
+          ],
+          "englishSentence": "This evening, having something I wanted to ask, I went to Minami's desk in the sales department, but she had already gone home and was not there."
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q12",
@@ -2589,7 +2672,7 @@
           "position": 11,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 0.9,
           "stem": "(公園で) 山下:「この木は本当に大きいですね。」 林:「そうですね。ここまで( ) 20年ぐらいかかったそうですよ。」",
           "stemWithNumber": "12. (公園で) 山下:「この木は本当に大きいですね。」 林:「そうですね。ここまで( ) 20年ぐらいかかったそうですよ。」",
           "context": "",
@@ -2616,7 +2699,8 @@
             "",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "(In the park) Yamashita: \"This tree is really huge, isn't it?\" - Mori: \"Indeed. I hear that it took about 20 years for it to grow this large.\""
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q13",
@@ -2624,7 +2708,7 @@
           "position": 12,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 0.9,
           "stem": "医者:「この薬を、3日間、1日3回飲んでください。」 患者:「わかりました。痛みがないときも、( )。」 医者:「はい。必ず飲んでください。」",
           "stemWithNumber": "13. 医者:「この薬を、3日間、1日3回飲んでください。」 患者:「わかりました。痛みがないときも、( )。」 医者:「はい。必ず飲んでください。」",
           "context": "",
@@ -2651,7 +2735,8 @@
             "正解: 2",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "- Doctor: \"Please take this medicine 3 times a day for 3 days.\""
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q14",
@@ -2686,7 +2771,8 @@
             "",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "What is most important in life to me is the happiness of my family."
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q15",
@@ -2721,7 +2807,8 @@
             "",
             "",
             "正解: 4"
-          ]
+          ],
+          "englishSentence": "I have loved this movie for a long time, and although I have watched it many times up until now, no matter how many times I watch it, I am moved to tears."
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q16",
@@ -2756,7 +2843,8 @@
             "",
             "正解: 3",
             ""
-          ]
+          ],
+          "englishSentence": "The new house is close to the station and convenient, but because the windows are on the main street side, the sound of cars comes in and I sometimes feel it is noisy."
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q17",
@@ -2791,7 +2879,8 @@
             "正解: 2",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "Hayashi's wife is very good at cooking, and her Salisbury steak is apparently especially delicious. Hayashi often says there is nothing as delicious as the hamburgers his wife makes."
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q18",
@@ -2826,7 +2915,8 @@
             "正解: 2",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "Every time I dine at this restaurant, I remember the time I came here on our first date with my wife."
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q19",
@@ -2834,7 +2924,7 @@
           "position": 18,
           "mondai": 3,
           "mondaiTitle": "問題3 つぎの文章を読んで、文章全体の内容を考えて、(19)から(23)の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.3,
           "stem": "【19】",
           "stemWithNumber": "【19】",
           "context": "以下は、留学生の作文である。<br>\nハーバート マーテイン 私は箸を使うのが苦手でした。大好きなラーメンもフォークで食べていました。でも、日本のラーメン屋には箸 【19】 ない ことが多く、食べるのが大変でした。<br><br>\n日本に来で2か月ぐらいたったころ、箸の専門店を見つけました。店に入ると、長さや太さ、材料や色の違う箸が何百種 類もありました。その数に驚いていたら、店の人に、「どれでも自由に持ってみてください。」と言われました。【20】い くつか実際に持ってみました。その中に持ちやすい等がありました。<br><br>\nそれまで、箸を使うのはめんどうくさいと思っていましたが、そのときは、「これで練習したら、箸が上手に使えるよう になるかもしれない」と思いました。私はその箸を買って帰りました。 それから毎日、家でその箸を【21】 。<br> 1か月ぐらいたって慣れたところ、ラーメンを食べに行きました。すると、【22】 著も楽に使えるようになっていました。<br><br>\n私はずっと、箸をうまく使うことはあきらめていました。うまく使えるようになったのは、専門店で買った【23】 今は 前よりもラーメン屋に行くのが楽しみになりました。",
@@ -2861,7 +2951,8 @@
             "正解: 2",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "I used to be bad at using chopsticks. I even ate my beloved ramen with a fork. However, in Japanese ramen shops, there were often only chopsticks and nothing else, so eating was very difficult."
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q20",
@@ -2869,7 +2960,7 @@
           "position": 19,
           "mondai": 3,
           "mondaiTitle": "問題3 つぎの文章を読んで、文章全体の内容を考えて、(19)から(23)の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.3,
           "stem": "【20】",
           "stemWithNumber": "【20】",
           "context": "以下は、留学生の作文である。<br>\nハーバート マーテイン 私は箸を使うのが苦手でした。大好きなラーメンもフォークで食べていました。でも、日本のラーメン屋には箸 【19】 ない ことが多く、食べるのが大変でした。<br><br>\n日本に来で2か月ぐらいたったころ、箸の専門店を見つけました。店に入ると、長さや太さ、材料や色の違う箸が何百種 類もありました。その数に驚いていたら、店の人に、「どれでも自由に持ってみてください。」と言われました。【20】い くつか実際に持ってみました。その中に持ちやすい等がありました。<br><br>\nそれまで、箸を使うのはめんどうくさいと思っていましたが、そのときは、「これで練習したら、箸が上手に使えるよう になるかもしれない」と思いました。私はその箸を買って帰りました。 それから毎日、家でその箸を【21】 。<br> 1か月ぐらいたって慣れたところ、ラーメンを食べに行きました。すると、【22】 著も楽に使えるようになっていました。<br><br>\n私はずっと、箸をうまく使うことはあきらめていました。うまく使えるようになったのは、専門店で買った【23】 今は 前よりもラーメン屋に行くのが楽しみになりました。",
@@ -2896,7 +2987,8 @@
             "",
             "",
             "正解: 4"
-          ]
+          ],
+          "englishSentence": "However, in Japanese ramen shops there are often only chopsticks, so eating was tough. Therefore / so, I went to a specialty chopstick shop and bought practice chopsticks..."
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q21",
@@ -2904,7 +2996,7 @@
           "position": 20,
           "mondai": 3,
           "mondaiTitle": "問題3 つぎの文章を読んで、文章全体の内容を考えて、(19)から(23)の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.3,
           "stem": "【21】",
           "stemWithNumber": "【21】",
           "context": "以下は、留学生の作文である。<br>\nハーバート マーテイン 私は箸を使うのが苦手でした。大好きなラーメンもフォークで食べていました。でも、日本のラーメン屋には箸 【19】 ない ことが多く、食べるのが大変でした。<br><br>\n日本に来で2か月ぐらいたったころ、箸の専門店を見つけました。店に入ると、長さや太さ、材料や色の違う箸が何百種 類もありました。その数に驚いていたら、店の人に、「どれでも自由に持ってみてください。」と言われました。【20】い くつか実際に持ってみました。その中に持ちやすい等がありました。<br><br>\nそれまで、箸を使うのはめんどうくさいと思っていましたが、そのときは、「これで練習したら、箸が上手に使えるよう になるかもしれない」と思いました。私はその箸を買って帰りました。 それから毎日、家でその箸を【21】 。<br> 1か月ぐらいたって慣れたところ、ラーメンを食べに行きました。すると、【22】 著も楽に使えるようになっていました。<br><br>\n私はずっと、箸をうまく使うことはあきらめていました。うまく使えるようになったのは、専門店で買った【23】 今は 前よりもラーメン屋に行くのが楽しみになりました。",
@@ -2931,7 +3023,8 @@
             "",
             "",
             ""
-          ]
+          ],
+          "englishSentence": "I went to a chopstick specialty store, bought training chopsticks, and made a conscious effort to use them every day at home."
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q22",
@@ -2939,7 +3032,7 @@
           "position": 21,
           "mondai": 3,
           "mondaiTitle": "問題3 つぎの文章を読んで、文章全体の内容を考えて、(19)から(23)の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.3,
           "stem": "【22】",
           "stemWithNumber": "【22】",
           "context": "以下は、留学生の作文である。<br>\nハーバート マーテイン 私は箸を使うのが苦手でした。大好きなラーメンもフォークで食べていました。でも、日本のラーメン屋には箸 【19】 ない ことが多く、食べるのが大変でした。<br><br>\n日本に来で2か月ぐらいたったころ、箸の専門店を見つけました。店に入ると、長さや太さ、材料や色の違う箸が何百種 類もありました。その数に驚いていたら、店の人に、「どれでも自由に持ってみてください。」と言われました。【20】い くつか実際に持ってみました。その中に持ちやすい等がありました。<br><br>\nそれまで、箸を使うのはめんどうくさいと思っていましたが、そのときは、「これで練習したら、箸が上手に使えるよう になるかもしれない」と思いました。私はその箸を買って帰りました。 それから毎日、家でその箸を【21】 。<br> 1か月ぐらいたって慣れたところ、ラーメンを食べに行きました。すると、【22】 著も楽に使えるようになっていました。<br><br>\n私はずっと、箸をうまく使うことはあきらめていました。うまく使えるようになったのは、専門店で買った【23】 今は 前よりもラーメン屋に行くのが楽しみになりました。",
@@ -2966,7 +3059,8 @@
             "",
             "",
             "正解: 4"
-          ]
+          ],
+          "englishSentence": "I made a point of using them every day at home. Now, I have become able to eat skillfully even with the chopsticks at ramen shops."
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q23",
@@ -2974,7 +3068,7 @@
           "position": 22,
           "mondai": 3,
           "mondaiTitle": "問題3 つぎの文章を読んで、文章全体の内容を考えて、(19)から(23)の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
-          "points": 1,
+          "points": 1.3,
           "stem": "【23】",
           "stemWithNumber": "【23】",
           "context": "以下は、留学生の作文である。<br>\nハーバート マーテイン 私は箸を使うのが苦手でした。大好きなラーメンもフォークで食べていました。でも、日本のラーメン屋には箸 【19】 ない ことが多く、食べるのが大変でした。<br><br>\n日本に来で2か月ぐらいたったころ、箸の専門店を見つけました。店に入ると、長さや太さ、材料や色の違う箸が何百種 類もありました。その数に驚いていたら、店の人に、「どれでも自由に持ってみてください。」と言われました。【20】い くつか実際に持ってみました。その中に持ちやすい等がありました。<br><br>\nそれまで、箸を使うのはめんどうくさいと思っていましたが、そのときは、「これで練習したら、箸が上手に使えるよう になるかもしれない」と思いました。私はその箸を買って帰りました。 それから毎日、家でその箸を【21】 。<br> 1か月ぐらいたって慣れたところ、ラーメンを食べに行きました。すると、【22】 著も楽に使えるようになっていました。<br><br>\n私はずっと、箸をうまく使うことはあきらめていました。うまく使えるようになったのは、専門店で買った【23】 今は 前よりもラーメン屋に行くのが楽しみになりました。",
@@ -3001,7 +3095,8 @@
             "",
             "正解: 3",
             ""
-          ]
+          ],
+          "englishSentence": "Now, I can eat skillfully even with ramen shop chopsticks. This is thanks to the chopsticks that I practiced with every day."
         },
         {
           "id": "dttn_n3_201807_grammar_reading_q24",
@@ -3009,7 +3104,7 @@
           "position": 23,
           "mondai": 4,
           "mondaiTitle": "問題4 つぎの(1)から(4)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいもの を一つえらびなさい。",
-          "points": 1,
+          "points": 1.9,
           "stem": "カレンさんが田中先生に最も聞きたいことは何か。",
           "stemWithNumber": "24. カレンさんが田中先生に最も聞きたいことは何か。",
           "context": "(1). これはカレンさんが田中先生に書いた手紙である。<br>\n田中先生 こぶさたしております。お元気ですか。 帰国してから、もう半年が過ぎましたが、日本語クラスで勉強していたころのことを、いつもなつかしく思い出しています。<br><br>\n7月から大学が休みになるので、2週間くらい、姉と日本を旅行します。京都や広島を回る予定ですが、13 日から 15 日の 間は東京にいます。東京にいる間に大学に伺って、ぜひ先生にお目にかかりたいと思っています。もしご都合のいい日がありましたら、メールでお返事をいただけないでしょうか。\n<br><br>よろしくお願いいたします。<br><br>\n4月10日<br>\nカレン・コルベイ<br>\nKaren_beil@xxmail.com",
@@ -3044,7 +3139,7 @@
           "position": 24,
           "mondai": 4,
           "mondaiTitle": "問題4 つぎの(1)から(4)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいもの を一つえらびなさい。",
-          "points": 1,
+          "points": 1.9,
           "stem": "「私」は、自分の家が片付いていない状態になるのは、なぜだと考えているか。",
           "stemWithNumber": "25. 「私」は、自分の家が片付いていない状態になるのは、なぜだと考えているか。",
           "context": "(2). <br>私にとって、部屋が片付いていないことほどストレスのたまることはない。でも、夫も子供も「片付けられない人」 で、服は脱いだまま、おもちゃは出したままで全く平気だ。文句を言うと、入れる場所が少なすぎるとか、すぐ使うからとか、いろいろなことを言う。片付けは片付けが得意な人がやればいいと言われた時は、本当に嫌になった。使い終わったら、それをあった所に戻すだけでいいのに、なぜこんな簡単なこどができないのだろう。",
@@ -3079,7 +3174,7 @@
           "position": 25,
           "mondai": 4,
           "mondaiTitle": "問題4 つぎの(1)から(4)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいもの を一つえらびなさい。",
-          "points": 1,
+          "points": 1.9,
           "stem": "この文章を書いた人は、どのように暗証番号を決めるのがよいと言っているか。",
           "stemWithNumber": "26. この文章を書いた人は、どのように暗証番号を決めるのがよいと言っているか。",
           "context": "(3). <br>キャッシュカードなどを作る時に必要な暗証番号を決めるのは意外に難しい。電話番号などの自分に関係のある数 字を使えば忘れにくいが、他人に知られる危険がある。でも、自分に関係のない数字や、不規則に並んだ数字にすると忘れ やすい。では、自分に関係のある数字に単純な数字を足すのはどうだろうか。例えば、誕生日の数字「1025」に「1111」を 足した「2136」を暗証番号にするのだ。これなら、他人にはわかりにくく、自分には思い出しやすくてよいだろう。",
@@ -3114,7 +3209,7 @@
           "position": 26,
           "mondai": 4,
           "mondaiTitle": "問題4 つぎの(1)から(4)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいもの を一つえらびなさい。",
-          "points": 1,
+          "points": 1.9,
           "stem": "野村課長がこのメールで伝えたいこととして、合っているのはどれか。",
           "stemWithNumber": "27. 野村課長がこのメールで伝えたいこととして、合っているのはどれか。",
           "context": "(4). <br>これは野村課長が、同じ会社の内田さんに書いたメールである。<br>\n内田さん。<br><br>\n今、池原駅に向かう電車の中にいます。信号故障の影響で、電車が止まってしまいました。車内アナウンスによると、動 きだすまで 30 分くらいかかるそうです。<br><br>\nオオタ工業を訪問する前に、駅前の喫茶店で最終確認をする約束でしたが、その時間はなさそうです。私は駅から直接向 かうので、先にオオタ工業に行って、入口前で待っていてください。もし時間があれば、そこで簡単に最終確認をしましょう。<br><br>\n訪問する時間に間に合わない場合は、また連絡します。<br><br>\nよろしくお願いします。<br>\n野村",
@@ -3149,7 +3244,7 @@
           "position": 27,
           "mondai": 5,
           "mondaiTitle": "問題5つぎの(1)と(2)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一 つえらびなさい。",
-          "points": 1,
+          "points": 2.4,
           "stem": "28 . 「私」が手帳を選ぶときに最も大切だと感じているのは何か。",
           "stemWithNumber": "28 . 「私」が手帳を選ぶときに最も大切だと感じているのは何か。",
           "context": "(1).<br>秋になり、文房具屋に来年の手帳が並ぶようになった。一般的に、手帳を選ぶ場合に重要なのは、書きやすさ、見やすさだろう。大きさも大切な点だ。だが、私がいちばん大切にしているのは、表紙だ。絵や柄で選ぶ人もいるが、私は色で選ぶ。<br><br>\nいつも手帳を持ち歩く私は、手帳の色に影響を受けていると感じることがある。予定を書いたり、友達と会う場所を確認 したりするため、一日に何度もかばんから取り出すが、そのたびに表紙の色が目に入るからだ。それで、この数年は元気が出るように派手な表紙のものを選んできた。今使っているのも、明るいオレンジ色だ。考えてみると、手帳は家族や親友より、一緒にいる時間も長いのだ。\n<br><br>でも、<u>今年は手帳選びに時間がかかっている</u>。30歳になり、もっと落ち着いた気持ちで仕事をしたいと思うようになって きたのだ。そうは言っても、ストレスのたまる仕事なので、やはりこのまま元気の出る赤や黄か、気分の落ち着く黒や茶か、 なかなか決められないでいる。",
@@ -3184,7 +3279,7 @@
           "position": 28,
           "mondai": 5,
           "mondaiTitle": "問題5つぎの(1)と(2)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一 つえらびなさい。",
-          "points": 1,
+          "points": 2.4,
           "stem": "「私」にとって、手帳はどのよなものか。",
           "stemWithNumber": "29. 「私」にとって、手帳はどのよなものか。",
           "context": "(1).<br>秋になり、文房具屋に来年の手帳が並ぶようになった。一般的に、手帳を選ぶ場合に重要なのは、書きやすさ、見やすさだろう。大きさも大切な点だ。だが、私がいちばん大切にしているのは、表紙だ。絵や柄で選ぶ人もいるが、私は色で選ぶ。<br><br>\nいつも手帳を持ち歩く私は、手帳の色に影響を受けていると感じることがある。予定を書いたり、友達と会う場所を確認 したりするため、一日に何度もかばんから取り出すが、そのたびに表紙の色が目に入るからだ。それで、この数年は元気が出るように派手な表紙のものを選んできた。今使っているのも、明るいオレンジ色だ。考えてみると、手帳は家族や親友より、一緒にいる時間も長いのだ。\n<br><br>でも、<u>今年は手帳選びに時間がかかっている</u>。30歳になり、もっと落ち着いた気持ちで仕事をしたいと思うようになって きたのだ。そうは言っても、ストレスのたまる仕事なので、やはりこのまま元気の出る赤や黄か、気分の落ち着く黒や茶か、 なかなか決められないでいる。",
@@ -3219,7 +3314,7 @@
           "position": 29,
           "mondai": 5,
           "mondaiTitle": "問題5つぎの(1)と(2)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一 つえらびなさい。",
-          "points": 1,
+          "points": 2.4,
           "stem": "今年は手帳選びに時間がかかっているのはなせか。",
           "stemWithNumber": "30. 今年は手帳選びに時間がかかっているのはなせか。",
           "context": "(1).<br>秋になり、文房具屋に来年の手帳が並ぶようになった。一般的に、手帳を選ぶ場合に重要なのは、書きやすさ、見やすさだろう。大きさも大切な点だ。だが、私がいちばん大切にしているのは、表紙だ。絵や柄で選ぶ人もいるが、私は色で選ぶ。<br><br>\nいつも手帳を持ち歩く私は、手帳の色に影響を受けていると感じることがある。予定を書いたり、友達と会う場所を確認 したりするため、一日に何度もかばんから取り出すが、そのたびに表紙の色が目に入るからだ。それで、この数年は元気が出るように派手な表紙のものを選んできた。今使っているのも、明るいオレンジ色だ。考えてみると、手帳は家族や親友より、一緒にいる時間も長いのだ。\n<br><br>でも、<u>今年は手帳選びに時間がかかっている</u>。30歳になり、もっと落ち着いた気持ちで仕事をしたいと思うようになって きたのだ。そうは言っても、ストレスのたまる仕事なので、やはりこのまま元気の出る赤や黄か、気分の落ち着く黒や茶か、 なかなか決められないでいる。",
@@ -3254,7 +3349,7 @@
           "position": 30,
           "mondai": 5,
           "mondaiTitle": "問題5つぎの(1)と(2)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一 つえらびなさい。",
-          "points": 1,
+          "points": 2.4,
           "stem": "娘が①【お母さん、青。】と言ったのは、なぜか。",
           "stemWithNumber": "31. 娘が①【お母さん、青。】と言ったのは、なぜか。",
           "context": "(2). 「負けないで。君は一人じゃない。」 <br><br>今朝、車で駅に向かっている時、赤信号で止まっていると、ラジオから懐かしい曲が流れてきました。ずっと聞いていな かった曲です。隣に座る高校生の娘に「これ、お母さんの若いころの応援歌だったのよ。」と言ってしばらく開いていると、 涙が出そうになって困りました。①【お母さん、青。】という娘の声で、慌ててアクセルを踏んだのですが、娘に笑われて しまいました。\n<br><br>20代の初め、会社に勤め始めてすぐのころの私は、毎日失敗ばかりして泣いていました。よくしかられ、人間関係にも悩 んでいました。そんな時、いつも②<u>この曲</u>を聞いていたのです。「負けないで。君は一人じゃない。」という言葉に慰めら れ、この曲を聞くと、頑張ろうという気持ちになりました。\n<br><br>あれからもう20年です。泣きたくなるような苦しいことも、いつのまにかなくなりました。③<u>今はきっと幸せなのだと</u>思います。今日、本当に久しぶりにこの曲を聞いたのですから。",
@@ -3289,7 +3384,7 @@
           "position": 31,
           "mondai": 5,
           "mondaiTitle": "問題5つぎの(1)と(2)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一 つえらびなさい。",
-          "points": 1,
+          "points": 2.4,
           "stem": "「私」にとって、<u>②この曲</u>はどんな曲か。",
           "stemWithNumber": "32. 「私」にとって、<u>②この曲</u>はどんな曲か。",
           "context": "(2). 「負けないで。君は一人じゃない。」 <br><br>今朝、車で駅に向かっている時、赤信号で止まっていると、ラジオから懐かしい曲が流れてきました。ずっと聞いていな かった曲です。隣に座る高校生の娘に「これ、お母さんの若いころの応援歌だったのよ。」と言ってしばらく開いていると、 涙が出そうになって困りました。①【お母さん、青。】という娘の声で、慌ててアクセルを踏んだのですが、娘に笑われて しまいました。\n<br><br>20代の初め、会社に勤め始めてすぐのころの私は、毎日失敗ばかりして泣いていました。よくしかられ、人間関係にも悩 んでいました。そんな時、いつも②<u>この曲</u>を聞いていたのです。「負けないで。君は一人じゃない。」という言葉に慰めら れ、この曲を聞くと、頑張ろうという気持ちになりました。\n<br><br>あれからもう20年です。泣きたくなるような苦しいことも、いつのまにかなくなりました。③<u>今はきっと幸せなのだと</u>思います。今日、本当に久しぶりにこの曲を聞いたのですから。",
@@ -3324,7 +3419,7 @@
           "position": 32,
           "mondai": 5,
           "mondaiTitle": "問題5つぎの(1)と(2)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一 つえらびなさい。",
-          "points": 1,
+          "points": 2.4,
           "stem": "<u>③今はきっと幸せなのだ</u>とあるが、なぜそう思うのか。",
           "stemWithNumber": "33. <u>③今はきっと幸せなのだ</u>とあるが、なぜそう思うのか。",
           "context": "(2). 「負けないで。君は一人じゃない。」 <br><br>今朝、車で駅に向かっている時、赤信号で止まっていると、ラジオから懐かしい曲が流れてきました。ずっと聞いていな かった曲です。隣に座る高校生の娘に「これ、お母さんの若いころの応援歌だったのよ。」と言ってしばらく開いていると、 涙が出そうになって困りました。①【お母さん、青。】という娘の声で、慌ててアクセルを踏んだのですが、娘に笑われて しまいました。\n<br><br>20代の初め、会社に勤め始めてすぐのころの私は、毎日失敗ばかりして泣いていました。よくしかられ、人間関係にも悩 んでいました。そんな時、いつも②<u>この曲</u>を聞いていたのです。「負けないで。君は一人じゃない。」という言葉に慰めら れ、この曲を聞くと、頑張ろうという気持ちになりました。\n<br><br>あれからもう20年です。泣きたくなるような苦しいことも、いつのまにかなくなりました。③<u>今はきっと幸せなのだと</u>思います。今日、本当に久しぶりにこの曲を聞いたのですから。",
@@ -3359,7 +3454,7 @@
           "position": 33,
           "mondai": 6,
           "mondaiTitle": "問題6 つぎの文章を読んで、質問に答えなさい。答えは、1.2.3.4 から最もよいものを一つえらびなさい。",
-          "points": 1,
+          "points": 2.6,
           "stem": "34 . 川村さんは、どうして「みんなの庭」に参加したのか。",
           "stemWithNumber": "34 . 川村さんは、どうして「みんなの庭」に参加したのか。",
           "context": "川村さんは都会のマンショシに住んでいる。野菜や花を育てることが好きなのだが、マンションのベランダでは十分に楽しむことができない。広い庭のある家で、野菜や花を育てることが、川村さんの長い間の夢だった。\n<br><br>川村さんは、今、広い「庭」で野菜や花を育てている。近くに「みんなの庭」ができたのだ。「みんなの庭」は、市の土地を市民が借りて、共同の「庭」を作っていくものである。利用する人たちが話し合って、みんなで野菜や花を育てて楽しむ。\n<br><br>【みんなの庭】で野菜や花を作るようになって、川村さんは友達がたくさんできたそうだ。それまでは、近所の人にあいさつはしても、なかなか友達になるのは難しかった。しかし、<u>①「みんなの庭」では違う</u>。同じようにこの庭を利用して野 菜や花を作っている人に、「きれいに咲きましたね。」とか「りっぱなトマトになりましたね。」と話しかけたりする。また、普段あまり付き合うことがない人とお茶を飲んだり、おしゃべりをしたりすることも、ここなら自然にできるそうだ。 都会では少なくなった近所の人との交流の機会が生まれているのだ。\n<br><br>川村さんたちは、「みんなの庭」で近所の人と付き合っているうちに、子ともの教育や町の安全など、生活のこともいろいろ話すようになった。このような付き合いが続いていけば、将来は、自分たちの町をもっと住みやすくしていこうという 話し合いができるようになるかもしれない。川村さんは、「みんなの庭」で汗を流しながら、②<u>そう感じている</u>。",
@@ -3394,7 +3489,7 @@
           "position": 34,
           "mondai": 6,
           "mondaiTitle": "問題6 つぎの文章を読んで、質問に答えなさい。答えは、1.2.3.4 から最もよいものを一つえらびなさい。",
-          "points": 1,
+          "points": 2.6,
           "stem": "みんなの庭」はどのようなものか。",
           "stemWithNumber": "35. みんなの庭」はどのようなものか。",
           "context": "川村さんは都会のマンショシに住んでいる。野菜や花を育てることが好きなのだが、マンションのベランダでは十分に楽しむことができない。広い庭のある家で、野菜や花を育てることが、川村さんの長い間の夢だった。\n<br><br>川村さんは、今、広い「庭」で野菜や花を育てている。近くに「みんなの庭」ができたのだ。「みんなの庭」は、市の土地を市民が借りて、共同の「庭」を作っていくものである。利用する人たちが話し合って、みんなで野菜や花を育てて楽しむ。\n<br><br>【みんなの庭】で野菜や花を作るようになって、川村さんは友達がたくさんできたそうだ。それまでは、近所の人にあいさつはしても、なかなか友達になるのは難しかった。しかし、<u>①「みんなの庭」では違う</u>。同じようにこの庭を利用して野 菜や花を作っている人に、「きれいに咲きましたね。」とか「りっぱなトマトになりましたね。」と話しかけたりする。また、普段あまり付き合うことがない人とお茶を飲んだり、おしゃべりをしたりすることも、ここなら自然にできるそうだ。 都会では少なくなった近所の人との交流の機会が生まれているのだ。\n<br><br>川村さんたちは、「みんなの庭」で近所の人と付き合っているうちに、子ともの教育や町の安全など、生活のこともいろいろ話すようになった。このような付き合いが続いていけば、将来は、自分たちの町をもっと住みやすくしていこうという 話し合いができるようになるかもしれない。川村さんは、「みんなの庭」で汗を流しながら、②<u>そう感じている</u>。",
@@ -3429,7 +3524,7 @@
           "position": 35,
           "mondai": 6,
           "mondaiTitle": "問題6 つぎの文章を読んで、質問に答えなさい。答えは、1.2.3.4 から最もよいものを一つえらびなさい。",
-          "points": 1,
+          "points": 2.6,
           "stem": "① 「みんなの庭」では違うとあるが、どんな点が違うのか。",
           "stemWithNumber": "36. ① 「みんなの庭」では違うとあるが、どんな点が違うのか。",
           "context": "川村さんは都会のマンショシに住んでいる。野菜や花を育てることが好きなのだが、マンションのベランダでは十分に楽しむことができない。広い庭のある家で、野菜や花を育てることが、川村さんの長い間の夢だった。\n<br><br>川村さんは、今、広い「庭」で野菜や花を育てている。近くに「みんなの庭」ができたのだ。「みんなの庭」は、市の土地を市民が借りて、共同の「庭」を作っていくものである。利用する人たちが話し合って、みんなで野菜や花を育てて楽しむ。\n<br><br>【みんなの庭】で野菜や花を作るようになって、川村さんは友達がたくさんできたそうだ。それまでは、近所の人にあいさつはしても、なかなか友達になるのは難しかった。しかし、<u>①「みんなの庭」では違う</u>。同じようにこの庭を利用して野 菜や花を作っている人に、「きれいに咲きましたね。」とか「りっぱなトマトになりましたね。」と話しかけたりする。また、普段あまり付き合うことがない人とお茶を飲んだり、おしゃべりをしたりすることも、ここなら自然にできるそうだ。 都会では少なくなった近所の人との交流の機会が生まれているのだ。\n<br><br>川村さんたちは、「みんなの庭」で近所の人と付き合っているうちに、子ともの教育や町の安全など、生活のこともいろいろ話すようになった。このような付き合いが続いていけば、将来は、自分たちの町をもっと住みやすくしていこうという 話し合いができるようになるかもしれない。川村さんは、「みんなの庭」で汗を流しながら、②<u>そう感じている</u>。",
@@ -3464,7 +3559,7 @@
           "position": 36,
           "mondai": 6,
           "mondaiTitle": "問題6 つぎの文章を読んで、質問に答えなさい。答えは、1.2.3.4 から最もよいものを一つえらびなさい。",
-          "points": 1,
+          "points": 2.6,
           "stem": "②そう感じているとあるが、とのように感じているのか。",
           "stemWithNumber": "37. ②そう感じているとあるが、とのように感じているのか。",
           "context": "川村さんは都会のマンショシに住んでいる。野菜や花を育てることが好きなのだが、マンションのベランダでは十分に楽しむことができない。広い庭のある家で、野菜や花を育てることが、川村さんの長い間の夢だった。\n<br><br>川村さんは、今、広い「庭」で野菜や花を育てている。近くに「みんなの庭」ができたのだ。「みんなの庭」は、市の土地を市民が借りて、共同の「庭」を作っていくものである。利用する人たちが話し合って、みんなで野菜や花を育てて楽しむ。\n<br><br>【みんなの庭】で野菜や花を作るようになって、川村さんは友達がたくさんできたそうだ。それまでは、近所の人にあいさつはしても、なかなか友達になるのは難しかった。しかし、<u>①「みんなの庭」では違う</u>。同じようにこの庭を利用して野 菜や花を作っている人に、「きれいに咲きましたね。」とか「りっぱなトマトになりましたね。」と話しかけたりする。また、普段あまり付き合うことがない人とお茶を飲んだり、おしゃべりをしたりすることも、ここなら自然にできるそうだ。 都会では少なくなった近所の人との交流の機会が生まれているのだ。\n<br><br>川村さんたちは、「みんなの庭」で近所の人と付き合っているうちに、子ともの教育や町の安全など、生活のこともいろいろ話すようになった。このような付き合いが続いていけば、将来は、自分たちの町をもっと住みやすくしていこうという 話し合いができるようになるかもしれない。川村さんは、「みんなの庭」で汗を流しながら、②<u>そう感じている</u>。",
@@ -3499,7 +3594,7 @@
           "position": 37,
           "mondai": 7,
           "mondaiTitle": "問題7右のページの A と B は、クリーニング店にはってある二つのお知らせである。これを読んで、下の質 問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
-          "points": 1,
+          "points": 2.3,
           "stem": "ロアンさんは、はらクリーニングの会員で、4月3日(火)にセーターとコートを1枚ずつクリーニングに出したい と思っている。ロアンさんは、いくら支払わなければならないか。",
           "stemWithNumber": "38. ロアンさんは、はらクリーニングの会員で、4月3日(火)にセーターとコートを1枚ずつクリーニングに出したい と思っている。ロアンさんは、いくら支払わなければならないか。",
           "context": "",
@@ -3534,7 +3629,7 @@
           "position": 38,
           "mondai": 7,
           "mondaiTitle": "問題7右のページの A と B は、クリーニング店にはってある二つのお知らせである。これを読んで、下の質 問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
-          "points": 1,
+          "points": 2.1,
           "stem": "39 . はらクリーニングの訪問サービスを利用したいと考えている人が、気をつけなければならないことはどれか。",
           "stemWithNumber": "39 . はらクリーニングの訪問サービスを利用したいと考えている人が、気をつけなければならないことはどれか。",
           "context": "",
@@ -3587,13 +3682,14 @@
             "へ",
             "を"
           ],
-          "points": 1,
+          "points": 0.9,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 3,
             "text": "4) を"
-          }
+          },
+          "englishSentence": "I am not returning to my home country this summer vacation. Spending summer vacation in Japan is a first for me this year."
         },
         {
           "type": "question",
@@ -3613,13 +3709,14 @@
             "のことで",
             "のほかに"
           ],
-          "points": 1,
+          "points": 0.9,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 0,
             "text": "1) に対して"
-          }
+          },
+          "englishSentence": "At this art museum, they have been offering a ticket discount service for / toward foreign tourists for the past 10 years."
         },
         {
           "type": "question",
@@ -3639,13 +3736,14 @@
             "けっして",
             "まったく"
           ],
-          "points": 1,
+          "points": 0.9,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 1,
             "text": "2) せっかく"
-          }
+          },
+          "englishSentence": "Even though I specially went through the trouble of waking up early this morning to make a boxed lunch, I forgot to bring it with me!"
         },
         {
           "type": "question",
@@ -3665,13 +3763,14 @@
             "気をつけるのだから",
             "気をつけるだけではなく"
           ],
-          "points": 1,
+          "points": 0.9,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 3,
             "text": "4) 気をつけるだけではなく"
-          }
+          },
+          "englishSentence": "In order to stay healthy, I understand that not only paying attention to one's diet, but also exercising is advisable, but I am busy and can hardly find time to exercise."
         },
         {
           "type": "question",
@@ -3691,13 +3790,14 @@
             "習わせているのだ",
             "習わせるつもりだ"
           ],
-          "points": 1,
+          "points": 0.9,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 1,
             "text": "2) 習わせようか"
-          }
+          },
+          "englishSentence": "- A: \"Hey, recently my daughter has been saying she wants to learn piano, so I'm thinking of letting her learn / having her take lessons, but do you think 4 years old is still too young?\""
         },
         {
           "type": "question",
@@ -3717,13 +3817,14 @@
             "難しいことではない",
             "難しいかもしれない"
           ],
-          "points": 1,
+          "points": 0.9,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 2,
             "text": "3) 難しいことではない"
-          }
+          },
+          "englishSentence": "When I say that I founded my own company, people are often surprised, but creating a company is not necessarily a difficult thing."
         },
         {
           "type": "question",
@@ -3743,13 +3844,14 @@
             "なさいます",
             "ございます"
           ],
-          "points": 1,
+          "points": 0.9,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 2,
             "text": "3) なさいます"
-          }
+          },
+          "englishSentence": "- Customer: \"One lunch set, please.\""
         },
         {
           "type": "question",
@@ -3769,13 +3871,14 @@
             "コピーしたらいかがですか",
             "コピーするのではないでしょうか"
           ],
-          "points": 1,
+          "points": 0.9,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 1,
             "text": "2) コピーさせていただけませんか"
-          }
+          },
+          "englishSentence": "(At the office) Tanaka: \"Excuse me, Mori. Since I was away on a business trip and couldn't attend last week's seminar, could you please allow me to photocopy the materials?\" - Mori: \"Oh, sure! Here they are, go ahead.\""
         },
         {
           "type": "question",
@@ -3795,13 +3898,14 @@
             "までなら",
             "からでも"
           ],
-          "points": 1,
+          "points": 0.9,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 2,
             "text": "3) までなら"
-          }
+          },
+          "englishSentence": "- A: \"Hey, have you ever read 'Tale of the Stars'?\""
         },
         {
           "type": "question",
@@ -3821,13 +3925,14 @@
             ".行っただろう",
             "行ってみて"
           ],
-          "points": 1,
+          "points": 0.9,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 0,
             "text": "1) 行ってみないか"
-          }
+          },
+          "englishSentence": "I heard the cafe opened in front of the station has over 20 types of coffee. My friend invited me, saying \"Why don't we try going?\", so I decided to go together next time."
         },
         {
           "type": "question",
@@ -3847,13 +3952,14 @@
             "帰ってきたまま",
             "帰 ってしまっていて"
           ],
-          "points": 1,
+          "points": 0.9,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 3,
             "text": "4) 帰 ってしまっていて"
-          }
+          },
+          "englishSentence": "This evening, having something I wanted to ask, I went to Minami's desk in the sales department, but she had already gone home and was not there."
         },
         {
           "type": "question",
@@ -3873,13 +3979,14 @@
             "大きくできて",
             "大きいほうがよければ"
           ],
-          "points": 1,
+          "points": 0.9,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 0,
             "text": "1) 大きくなるのに"
-          }
+          },
+          "englishSentence": "(In the park) Yamashita: \"This tree is really huge, isn't it?\" - Mori: \"Indeed. I hear that it took about 20 years for it to grow this large.\""
         },
         {
           "type": "question",
@@ -3899,13 +4006,14 @@
             "飲まなくてもしかたないですね",
             "飲まなければいいんでしょうか"
           ],
-          "points": 1,
+          "points": 0.9,
           "mondai": 1,
           "mondaiTitle": "問題1つぎの文の( )に入れるのに最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 1,
             "text": "2) 飲まないといけないでしょうか"
-          }
+          },
+          "englishSentence": "- Doctor: \"Please take this medicine 3 times a day for 3 days.\""
         },
         {
           "type": "section-header",
@@ -3935,7 +4043,8 @@
           "correctOption": {
             "index": 0,
             "text": "1) で"
-          }
+          },
+          "englishSentence": "What is most important in life to me is the happiness of my family."
         },
         {
           "type": "question",
@@ -3961,7 +4070,8 @@
           "correctOption": {
             "index": 3,
             "text": "4) 何度"
-          }
+          },
+          "englishSentence": "I have loved this movie for a long time, and although I have watched it many times up until now, no matter how many times I watch it, I am moved to tears."
         },
         {
           "type": "question",
@@ -3987,7 +4097,8 @@
           "correctOption": {
             "index": 2,
             "text": "3) せいで"
-          }
+          },
+          "englishSentence": "The new house is close to the station and convenient, but because the windows are on the main street side, the sound of cars comes in and I sometimes feel it is noisy."
         },
         {
           "type": "question",
@@ -4013,7 +4124,8 @@
           "correctOption": {
             "index": 1,
             "text": "2) ほど"
-          }
+          },
+          "englishSentence": "Hayashi's wife is very good at cooking, and her Salisbury steak is apparently especially delicious. Hayashi often says there is nothing as delicious as the hamburgers his wife makes."
         },
         {
           "type": "question",
@@ -4039,7 +4151,8 @@
           "correctOption": {
             "index": 1,
             "text": "2) 妻との初めてのデートで"
-          }
+          },
+          "englishSentence": "Every time I dine at this restaurant, I remember the time I came here on our first date with my wife."
         },
         {
           "type": "section-header",
@@ -4067,13 +4180,14 @@
             "でも",
             "まで"
           ],
-          "points": 1,
+          "points": 1.3,
           "mondai": 3,
           "mondaiTitle": "問題3 つぎの文章を読んで、文章全体の内容を考えて、(19)から(23)の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 1,
             "text": "2) しか"
-          }
+          },
+          "englishSentence": "I used to be bad at using chopsticks. I even ate my beloved ramen with a fork. However, in Japanese ramen shops, there were often only chopsticks and nothing else, so eating was very difficult."
         },
         {
           "type": "question",
@@ -4093,13 +4207,14 @@
             "ところが",
             "そこで"
           ],
-          "points": 1,
+          "points": 1.3,
           "mondai": 3,
           "mondaiTitle": "問題3 つぎの文章を読んで、文章全体の内容を考えて、(19)から(23)の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 3,
             "text": "4) そこで"
-          }
+          },
+          "englishSentence": "However, in Japanese ramen shops there are often only chopsticks, so eating was tough. Therefore / so, I went to a specialty chopstick shop and bought practice chopsticks..."
         },
         {
           "type": "question",
@@ -4119,13 +4234,14 @@
             "使うようになっています",
             "使ってほしかったです"
           ],
-          "points": 1,
+          "points": 1.3,
           "mondai": 3,
           "mondaiTitle": "問題3 つぎの文章を読んで、文章全体の内容を考えて、(19)から(23)の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 0,
             "text": "1) 使うようにしました"
-          }
+          },
+          "englishSentence": "I went to a chopstick specialty store, bought training chopsticks, and made a conscious effort to use them every day at home."
         },
         {
           "type": "question",
@@ -4145,13 +4261,14 @@
             "箸の専門店の",
             "ラーメン屋の"
           ],
-          "points": 1,
+          "points": 1.3,
           "mondai": 3,
           "mondaiTitle": "問題3 つぎの文章を読んで、文章全体の内容を考えて、(19)から(23)の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 3,
             "text": "4) ラーメン屋の"
-          }
+          },
+          "englishSentence": "I made a point of using them every day at home. Now, I have become able to eat skillfully even with the chopsticks at ramen shops."
         },
         {
           "type": "question",
@@ -4171,13 +4288,14 @@
             "箸のおかげです。",
             "箸だったはずです。"
           ],
-          "points": 1,
+          "points": 1.3,
           "mondai": 3,
           "mondaiTitle": "問題3 つぎの文章を読んで、文章全体の内容を考えて、(19)から(23)の中に入る最もよいものを、1・2・3・4から一つえらびなさい。",
           "correctOption": {
             "index": 2,
             "text": "3) 箸のおかげです。"
-          }
+          },
+          "englishSentence": "Now, I can eat skillfully even with ramen shop chopsticks. This is thanks to the chopsticks that I practiced with every day."
         },
         {
           "type": "section-header",
@@ -4205,7 +4323,7 @@
             "7月13日から 15日の間で、田中先生と会える日があるかどうか",
             "7月に田中先生に会うためには、いつ東京に行けばいいか"
           ],
-          "points": 1,
+          "points": 1.9,
           "mondai": 4,
           "mondaiTitle": "問題4 つぎの(1)から(4)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいもの を一つえらびなさい。",
           "correctOption": {
@@ -4235,7 +4353,7 @@
             "「私」が、あまり部屋の片付けをしようとしないから",
             "夫と子供が、物を使った後で初めにあった場所に戻さないから"
           ],
-          "points": 1,
+          "points": 1.9,
           "mondai": 4,
           "mondaiTitle": "問題4 つぎの(1)から(4)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいもの を一つえらびなさい。",
           "correctOption": {
@@ -4265,7 +4383,7 @@
             "自分に関係のない数字や不規則に並んだ数字にする。",
             "分に関係のある数字に不規則に並んだ数字を足す。"
           ],
-          "points": 1,
+          "points": 1.9,
           "mondai": 4,
           "mondaiTitle": "問題4 つぎの(1)から(4)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいもの を一つえらびなさい。",
           "correctOption": {
@@ -4295,7 +4413,7 @@
             "時間がないので、最終確認をせずにオオタ工業を訪問することにしたこと",
             "オオタ工業を訪問する前の最終確認ができないときは、もう一度連絡すること"
           ],
-          "points": 1,
+          "points": 1.9,
           "mondai": 4,
           "mondaiTitle": "問題4 つぎの(1)から(4)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいもの を一つえらびなさい。",
           "correctOption": {
@@ -4329,7 +4447,7 @@
             "表紙の絵や柄",
             "表紙の色"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 5,
           "mondaiTitle": "問題5つぎの(1)と(2)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一 つえらびなさい。",
           "correctOption": {
@@ -4355,7 +4473,7 @@
             "いつも身近にあって、自分にきちんとした生活をさせてくれるもの",
             "いつも身近にあって、自分の生き方を示してくれるもの"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 5,
           "mondaiTitle": "問題5つぎの(1)と(2)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一 つえらびなさい。",
           "correctOption": {
@@ -4381,7 +4499,7 @@
             "ストレスに対する姿勢が少し変わってきたから",
             "色に対する感覚が少し変わってきたから"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 5,
           "mondaiTitle": "問題5つぎの(1)と(2)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一 つえらびなさい。",
           "correctOption": {
@@ -4411,7 +4529,7 @@
             "涙が出そうになったことを「私」に知られたくなかったから",
             "信号が変わったことに「私」が気づいていなかったから"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 5,
           "mondaiTitle": "問題5つぎの(1)と(2)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一 つえらびなさい。",
           "correctOption": {
@@ -4437,7 +4555,7 @@
             "若いころの自分を思い出したい時に聞く大切な曲",
             "若いころの悩んでいた自分に聞かせたい曲"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 5,
           "mondaiTitle": "問題5つぎの(1)と(2)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一 つえらびなさい。",
           "correctOption": {
@@ -4463,7 +4581,7 @@
             "今でも苦しいことがあるが、「応援歌」を聞くと頑張れるから",
             "今でも泣きたくなるようなことはあるが、応援してくれる家族がいるから"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 5,
           "mondaiTitle": "問題5つぎの(1)と(2)の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一 つえらびなさい。",
           "correctOption": {
@@ -4497,7 +4615,7 @@
             "「みんなの庭」を借りるのが夢だったから",
             "近所の人と友達になりたかったから"
           ],
-          "points": 1,
+          "points": 2.6,
           "mondai": 6,
           "mondaiTitle": "問題6 つぎの文章を読んで、質問に答えなさい。答えは、1.2.3.4 から最もよいものを一つえらびなさい。",
           "correctOption": {
@@ -4523,7 +4641,7 @@
             "市から借りた土地で、使う人が話し合って一緒に野菜や花を育てていく庭",
             "市から借りた土地で、市が立てた計画に従って一人ずつ野菜や花を育てる"
           ],
-          "points": 1,
+          "points": 2.6,
           "mondai": 6,
           "mondaiTitle": "問題6 つぎの文章を読んで、質問に答えなさい。答えは、1.2.3.4 から最もよいものを一つえらびなさい。",
           "correctOption": {
@@ -4549,7 +4667,7 @@
             "近所の人とあいさつができる点",
             "いろいろな人と友達になれる点"
           ],
-          "points": 1,
+          "points": 2.6,
           "mondai": 6,
           "mondaiTitle": "問題6 つぎの文章を読んで、質問に答えなさい。答えは、1.2.3.4 から最もよいものを一つえらびなさい。",
           "correctOption": {
@@ -4575,7 +4693,7 @@
             "町をもっとよくするための話し合いもできるようになるかもしれない。",
             "「みんなの庭」をもっとよくすることができるようになるかもしれない。"
           ],
-          "points": 1,
+          "points": 2.6,
           "mondai": 6,
           "mondaiTitle": "問題6 つぎの文章を読んで、質問に答えなさい。答えは、1.2.3.4 から最もよいものを一つえらびなさい。",
           "correctOption": {
@@ -4605,7 +4723,7 @@
             "セーター240円とコート 780円と会費300円",
             "セーター 400 円とコート 1300 円と会費 300円"
           ],
-          "points": 1,
+          "points": 2.3,
           "mondai": 7,
           "mondaiTitle": "問題7右のページの A と B は、クリーニング店にはってある二つのお知らせである。これを読んで、下の質 問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
           "correctOption": {
@@ -4631,7 +4749,7 @@
             "土曜日と日曜日は、届けてもらえないこと",
             "届けてもらう日は、指定できないこと"
           ],
-          "points": 1,
+          "points": 2.1,
           "mondai": 7,
           "mondaiTitle": "問題7右のページの A と B は、クリーニング店にはってある二つのお知らせである。これを読んで、下の質 問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
           "correctOption": {
@@ -4643,7 +4761,9 @@
           "type": "passage",
           "htmlContent": "A<br>\n<center><h4>はらクリーニング特別セール</h4><br>\n3月24日(土)~4月10日(火)<br><br> セール期間中、会員の方はクリーニング料金が基本料金の40%割引になります!</center>\n<br><br>料金の例<br>\n<table><tbody><tr><td></td><td>基本料金</td><td>40%割引後の料金</td></tr>\n<tr><td>ブラウス</td><td>180円</td><td>108円</td></tr>\n<tr><td>セーター</td><td>400円</td><td>240円</td></tr>\n<tr><td>ズボン</td><td>480円</td><td>288円</td></tr>\n<tr><td>スーツ</td><td>1100円</td><td>660円</td></tr>\n<tr><td>コート</td><td>1300円</td><td>780円</td></tr> \n</tbody></table><br><br>・会員ではない方でも、店で申し込めば、すぐに会員になっていただけます。 お申し込みには、会費 300 円が必要です。 \n<br><br>会員になると、いつでも5%割引の会員料金になります。(特別セール期間以外)\n<br><br>営業日・時間 月曜日~土曜日 10:00~18:00 休み 日曜・祝日\n<br><br>電話 077-133-4646 住所 山上区緑町 3-1\n<br><br>B<br>\n<center><h4>訪問サービスを始めました</h4></center><br><br>\nはらクリーニングの店員が、お客様のご自宅を訪問してお洋服をお預かりし、クリーニング後に、ご自宅までお届けするサービスです。<br><br>\n申し込み:\t営業時間内に、お電話でお申し込みください。 翌日以降、お客様が指定された日の訪問時間内に、ご自宅まで\n取りに伺います。<br><br>\nお届け日: 　　お預かりした日の約1週間後から、ご自宅へのお届けができます。お申し込みのときに、営業日の中からお届け\nの日と時間をご指定ください。<br><br>\n訪問時間:　　　営業日の午後6時から午後 10 時の間で、自由に選べます。<br><br>\nご自宅の住所によっては、お引き受けできないこともございます。詳しいことは、店員にご確認ください。<br>\nはらクリーニング"
         }
-      ]
+      ],
+      "maxPoints": 60,
+      "minPassPoints": 19
     },
     {
       "id": "listening",
@@ -4661,7 +4781,7 @@
           "position": 0,
           "mondai": 1,
           "mondaiTitle": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
-          "points": 1,
+          "points": 2.4,
           "stem": "1番",
           "stemWithNumber": "1番",
           "context": "",
@@ -4696,7 +4816,7 @@
           "position": 1,
           "mondai": 1,
           "mondaiTitle": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
-          "points": 1,
+          "points": 2.4,
           "stem": "2番",
           "stemWithNumber": "2番",
           "context": "",
@@ -4731,7 +4851,7 @@
           "position": 2,
           "mondai": 1,
           "mondaiTitle": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
-          "points": 1,
+          "points": 2.4,
           "stem": "3番",
           "stemWithNumber": "3番",
           "context": "",
@@ -4766,7 +4886,7 @@
           "position": 3,
           "mondai": 1,
           "mondaiTitle": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
-          "points": 1,
+          "points": 2.4,
           "stem": "4番",
           "stemWithNumber": "4番",
           "context": "",
@@ -4801,7 +4921,7 @@
           "position": 4,
           "mondai": 1,
           "mondaiTitle": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
-          "points": 1,
+          "points": 2.4,
           "stem": "5番",
           "stemWithNumber": "5番",
           "context": "",
@@ -4836,7 +4956,7 @@
           "position": 5,
           "mondai": 1,
           "mondaiTitle": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
-          "points": 1,
+          "points": 2.4,
           "stem": "6番",
           "stemWithNumber": "6番",
           "context": "",
@@ -4871,7 +4991,7 @@
           "position": 6,
           "mondai": 2,
           "mondaiTitle": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 2.4,
           "stem": "1番",
           "stemWithNumber": "1番",
           "context": "",
@@ -4906,7 +5026,7 @@
           "position": 7,
           "mondai": 2,
           "mondaiTitle": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 2.4,
           "stem": "2番",
           "stemWithNumber": "2番",
           "context": "",
@@ -4941,7 +5061,7 @@
           "position": 8,
           "mondai": 2,
           "mondaiTitle": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 2.4,
           "stem": "3番",
           "stemWithNumber": "3番",
           "context": "",
@@ -4976,7 +5096,7 @@
           "position": 9,
           "mondai": 2,
           "mondaiTitle": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 2.4,
           "stem": "4番",
           "stemWithNumber": "4番",
           "context": "",
@@ -5011,7 +5131,7 @@
           "position": 10,
           "mondai": 2,
           "mondaiTitle": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 2.4,
           "stem": "5番",
           "stemWithNumber": "5番",
           "context": "",
@@ -5046,7 +5166,7 @@
           "position": 11,
           "mondai": 2,
           "mondaiTitle": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 2.4,
           "stem": "6番",
           "stemWithNumber": "6番",
           "context": "",
@@ -5081,7 +5201,7 @@
           "position": 12,
           "mondai": 3,
           "mondaiTitle": "-メモー",
-          "points": 1,
+          "points": 2.7,
           "stem": "1番",
           "stemWithNumber": "1番",
           "context": "",
@@ -5116,7 +5236,7 @@
           "position": 13,
           "mondai": 3,
           "mondaiTitle": "-メモー",
-          "points": 1,
+          "points": 2.7,
           "stem": "2番",
           "stemWithNumber": "2番",
           "context": "",
@@ -5151,7 +5271,7 @@
           "position": 14,
           "mondai": 3,
           "mondaiTitle": "-メモー",
-          "points": 1,
+          "points": 2.7,
           "stem": "3番",
           "stemWithNumber": "3番",
           "context": "",
@@ -5186,7 +5306,7 @@
           "position": 15,
           "mondai": 4,
           "mondaiTitle": "問題4 では、えを見ながら質問を聞いてください。やじるし(→)の人は何と言いますか。1から3の中か ら、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 1.5,
           "stem": "1番",
           "stemWithNumber": "1番",
           "context": "",
@@ -5221,7 +5341,7 @@
           "position": 16,
           "mondai": 4,
           "mondaiTitle": "問題4 では、えを見ながら質問を聞いてください。やじるし(→)の人は何と言いますか。1から3の中か ら、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 1.5,
           "stem": "2番",
           "stemWithNumber": "2番",
           "context": "",
@@ -5256,7 +5376,7 @@
           "position": 17,
           "mondai": 4,
           "mondaiTitle": "問題4 では、えを見ながら質問を聞いてください。やじるし(→)の人は何と言いますか。1から3の中か ら、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 1.5,
           "stem": "3番",
           "stemWithNumber": "3番",
           "context": "",
@@ -5291,7 +5411,7 @@
           "position": 18,
           "mondai": 4,
           "mondaiTitle": "問題4 では、えを見ながら質問を聞いてください。やじるし(→)の人は何と言いますか。1から3の中か ら、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 1.5,
           "stem": "4番",
           "stemWithNumber": "4番",
           "context": "",
@@ -5326,7 +5446,7 @@
           "position": 19,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 1.9,
           "stem": "1番",
           "stemWithNumber": "1番",
           "context": "",
@@ -5361,7 +5481,7 @@
           "position": 20,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 1.9,
           "stem": "2番",
           "stemWithNumber": "2番",
           "context": "",
@@ -5396,7 +5516,7 @@
           "position": 21,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 1.9,
           "stem": "3番",
           "stemWithNumber": "3番",
           "context": "",
@@ -5431,7 +5551,7 @@
           "position": 22,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 1.9,
           "stem": "4番",
           "stemWithNumber": "4番",
           "context": "",
@@ -5466,7 +5586,7 @@
           "position": 23,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 1.9,
           "stem": "5番",
           "stemWithNumber": "5番",
           "context": "",
@@ -5501,7 +5621,7 @@
           "position": 24,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 1.9,
           "stem": "6番",
           "stemWithNumber": "6番",
           "context": "",
@@ -5536,7 +5656,7 @@
           "position": 25,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 1.9,
           "stem": "7番",
           "stemWithNumber": "7番",
           "context": "",
@@ -5571,7 +5691,7 @@
           "position": 26,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 1.9,
           "stem": "8番",
           "stemWithNumber": "8番",
           "context": "",
@@ -5606,7 +5726,7 @@
           "position": 27,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
-          "points": 1,
+          "points": 1.9,
           "stem": "9番",
           "stemWithNumber": "9番",
           "context": "",
@@ -5663,7 +5783,7 @@
             "かばん一つとしょるい",
             "しょるい"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 1,
           "mondaiTitle": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
           "correctOption": {
@@ -5690,7 +5810,7 @@
             "ポスターにのせる写真をえらぶ",
             "ポスターをいんさつする"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 1,
           "mondaiTitle": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
           "correctOption": {
@@ -5717,7 +5837,7 @@
             "正月のふくをりょうしんに送ってもらう",
             "正月のふくの写真を用意する"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 1,
           "mondaiTitle": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
           "correctOption": {
@@ -5744,7 +5864,7 @@
             "しょうひんせつめい",
             "してんのれんらくさき"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 1,
           "mondaiTitle": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
           "correctOption": {
@@ -5771,7 +5891,7 @@
             "わりびきけんをくばる",
             "メニューをくばる"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 1,
           "mondaiTitle": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
           "correctOption": {
@@ -5798,7 +5918,7 @@
             "ぶちょうにれんらくする",
             "飲み物を買う"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 1,
           "mondaiTitle": "問題1では、まず質問を聞いてください。それから話を聞いて、問題用紙の1から4の中から、最もよいも のを一つえらんでください。",
           "correctOption": {
@@ -5833,7 +5953,7 @@
             "インターネットのサイトで知り合った",
             "スキー教室で知り合った"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 2,
           "mondaiTitle": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -5860,7 +5980,7 @@
             "ながいきょりを泳ぎたいから",
             "友だちを作りたいから"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 2,
           "mondaiTitle": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -5887,7 +6007,7 @@
             "けんさつかん",
             "医者"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 2,
           "mondaiTitle": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -5914,7 +6034,7 @@
             "会社の人と夕飯を食べに行くから",
             "買い物をして帰るから"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 2,
           "mondaiTitle": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -5941,7 +6061,7 @@
             "好きな歌手のCD",
             "自分への手紙"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 2,
           "mondaiTitle": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -5968,7 +6088,7 @@
             "国のことばを教え合う",
             "日本語の歌を歌う"
           ],
-          "points": 1,
+          "points": 2.4,
           "mondai": 2,
           "mondaiTitle": "問題2では、まず質問を聞いてください。そのあと、問題用紙を見てください。読む時間があります。それ から話を聞いて、問題用紙の1から4の中から、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -6007,7 +6127,7 @@
             "",
             ""
           ],
-          "points": 1,
+          "points": 2.7,
           "mondai": 3,
           "mondaiTitle": "-メモー",
           "correctOption": {
@@ -6036,7 +6156,7 @@
             "",
             ""
           ],
-          "points": 1,
+          "points": 2.7,
           "mondai": 3,
           "mondaiTitle": "-メモー",
           "correctOption": {
@@ -6065,7 +6185,7 @@
             "",
             ""
           ],
-          "points": 1,
+          "points": 2.7,
           "mondai": 3,
           "mondaiTitle": "-メモー",
           "correctOption": {
@@ -6106,7 +6226,7 @@
             "",
             ""
           ],
-          "points": 1,
+          "points": 1.5,
           "mondai": 4,
           "mondaiTitle": "問題4 では、えを見ながら質問を聞いてください。やじるし(→)の人は何と言いますか。1から3の中か ら、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -6140,7 +6260,7 @@
             "",
             ""
           ],
-          "points": 1,
+          "points": 1.5,
           "mondai": 4,
           "mondaiTitle": "問題4 では、えを見ながら質問を聞いてください。やじるし(→)の人は何と言いますか。1から3の中か ら、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -6174,7 +6294,7 @@
             "",
             ""
           ],
-          "points": 1,
+          "points": 1.5,
           "mondai": 4,
           "mondaiTitle": "問題4 では、えを見ながら質問を聞いてください。やじるし(→)の人は何と言いますか。1から3の中か ら、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -6208,7 +6328,7 @@
             "",
             ""
           ],
-          "points": 1,
+          "points": 1.5,
           "mondai": 4,
           "mondaiTitle": "問題4 では、えを見ながら質問を聞いてください。やじるし(→)の人は何と言いますか。1から3の中か ら、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -6246,7 +6366,7 @@
             "",
             ""
           ],
-          "points": 1,
+          "points": 1.9,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -6275,7 +6395,7 @@
             "",
             ""
           ],
-          "points": 1,
+          "points": 1.9,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -6304,7 +6424,7 @@
             "",
             ""
           ],
-          "points": 1,
+          "points": 1.9,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -6333,7 +6453,7 @@
             "",
             ""
           ],
-          "points": 1,
+          "points": 1.9,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -6362,7 +6482,7 @@
             "",
             ""
           ],
-          "points": 1,
+          "points": 1.9,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -6391,7 +6511,7 @@
             "",
             ""
           ],
-          "points": 1,
+          "points": 1.9,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -6420,7 +6540,7 @@
             "",
             ""
           ],
-          "points": 1,
+          "points": 1.9,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -6449,7 +6569,7 @@
             "",
             ""
           ],
-          "points": 1,
+          "points": 1.9,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -6478,7 +6598,7 @@
             "",
             ""
           ],
-          "points": 1,
+          "points": 1.9,
           "mondai": 5,
           "mondaiTitle": "問題5では、問題用紙に何もいんさつされていません。まず話を聞いてください。それから、そのへんじを聞いて質問とせんたくしを聞いて、 1から3の中か ら、最もよいものを一つえらんでください。",
           "correctOption": {
@@ -6487,7 +6607,9 @@
           },
           "audioUrl": "https://drive.google.com/file/d/1keDsdjL2C82wNHWWARp61H2Qxia_IkZx/preview"
         }
-      ]
+      ],
+      "maxPoints": 60,
+      "minPassPoints": 19
     }
   ]
 }

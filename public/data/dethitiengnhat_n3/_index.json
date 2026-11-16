@@ -27,7 +27,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -36,7 +38,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -45,9 +49,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_31",
@@ -70,7 +78,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -79,7 +89,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -88,9 +100,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_30",
@@ -113,7 +129,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -122,7 +140,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -131,9 +151,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_29",
@@ -156,7 +180,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -165,7 +191,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -174,9 +202,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_28",
@@ -199,7 +231,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -208,7 +242,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -217,9 +253,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_27",
@@ -242,7 +282,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -251,7 +293,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -260,9 +304,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_26",
@@ -285,7 +333,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -294,9 +344,13 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_11",
@@ -319,7 +373,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -328,7 +384,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -337,9 +395,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_10",
@@ -362,7 +424,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -371,7 +435,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -380,9 +446,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_9",
@@ -405,7 +475,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -414,7 +486,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -423,9 +497,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_8",
@@ -448,7 +526,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -457,7 +537,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -466,9 +548,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_7",
@@ -491,7 +577,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -500,7 +588,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -509,9 +599,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_6",
@@ -534,7 +628,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -543,7 +639,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -552,9 +650,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_5",
@@ -577,7 +679,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -586,7 +690,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -595,9 +701,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_4",
@@ -620,7 +730,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -629,7 +741,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -638,9 +752,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_3",
@@ -663,7 +781,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -672,7 +792,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -681,9 +803,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_2",
@@ -706,7 +832,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -715,7 +843,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -724,9 +854,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_1",
@@ -749,7 +883,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -758,7 +894,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 40
+          "questionCount": 40,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -767,9 +905,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_202507",
@@ -794,7 +936,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -803,7 +947,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -812,9 +958,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_202412",
@@ -839,7 +989,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -848,7 +1000,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -857,9 +1011,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_202407",
@@ -884,7 +1042,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -893,7 +1053,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -902,9 +1064,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_202312",
@@ -929,7 +1095,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -938,7 +1106,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -947,9 +1117,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_202307",
@@ -974,7 +1148,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -983,7 +1159,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -992,9 +1170,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_202212",
@@ -1019,7 +1201,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1028,7 +1212,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 36
+          "questionCount": 36,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1037,9 +1223,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_202207",
@@ -1064,7 +1254,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 34
+          "questionCount": 34,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1073,7 +1265,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1082,9 +1276,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_202112",
@@ -1109,7 +1307,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1118,7 +1318,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1127,9 +1329,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_202107",
@@ -1154,7 +1360,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1163,7 +1371,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1172,9 +1382,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_202012",
@@ -1199,7 +1413,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1208,7 +1424,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 38
+          "questionCount": 38,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1217,9 +1435,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201912",
@@ -1244,7 +1466,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1253,7 +1477,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1262,9 +1488,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 27
+          "questionCount": 27,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201907",
@@ -1289,7 +1519,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1298,7 +1530,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1307,9 +1541,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201812",
@@ -1334,7 +1572,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1343,7 +1583,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1352,9 +1594,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 27
+          "questionCount": 27,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201807",
@@ -1379,7 +1625,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1388,7 +1636,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1397,9 +1647,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201712",
@@ -1424,7 +1678,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1433,7 +1689,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1442,9 +1700,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 20
+          "questionCount": 20,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201707",
@@ -1469,7 +1731,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1478,7 +1742,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1487,9 +1753,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 18
+          "questionCount": 18,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201612",
@@ -1514,7 +1784,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1523,7 +1795,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1532,9 +1806,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 18
+          "questionCount": 18,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201607",
@@ -1559,7 +1837,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1568,7 +1848,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1577,9 +1859,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 21
+          "questionCount": 21,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201512",
@@ -1604,7 +1890,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1613,7 +1901,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1622,9 +1912,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 20
+          "questionCount": 20,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201507",
@@ -1649,7 +1943,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1658,9 +1954,13 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201412",
@@ -1685,7 +1985,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1694,7 +1996,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1703,9 +2007,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 19
+          "questionCount": 19,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201407",
@@ -1730,7 +2038,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1739,7 +2049,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1748,9 +2060,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 19
+          "questionCount": 19,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201312",
@@ -1775,7 +2091,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1784,7 +2102,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1793,9 +2113,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201307",
@@ -1820,7 +2144,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1829,7 +2155,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1838,9 +2166,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201212",
@@ -1865,7 +2197,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1874,7 +2208,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 37
+          "questionCount": 37,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1883,9 +2219,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201207",
@@ -1910,7 +2250,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1919,7 +2261,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1928,9 +2272,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201112",
@@ -1955,7 +2303,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -1964,7 +2314,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -1973,9 +2325,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 27
+          "questionCount": 27,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201107",
@@ -2000,7 +2356,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -2009,7 +2367,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -2018,9 +2378,13 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 27
+          "questionCount": 27,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     },
     {
       "id": "dttn_n3_test_201007",
@@ -2045,7 +2409,9 @@
           "title": "言語知識（文字・語彙）",
           "enTitle": "Letters and Vocabulary (文字語彙)",
           "durationMinutes": 30,
-          "questionCount": 35
+          "questionCount": 35,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "grammar_reading",
@@ -2054,7 +2420,9 @@
           "title": "言語知識（文法）・読解",
           "enTitle": "Grammar (文法), Reading Comprehension (読解)",
           "durationMinutes": 70,
-          "questionCount": 39
+          "questionCount": 39,
+          "maxPoints": 60,
+          "minPassPoints": 19
         },
         {
           "id": "listening",
@@ -2063,9 +2431,15 @@
           "title": "聴解",
           "enTitle": "Listening (聴解)",
           "durationMinutes": 40,
-          "questionCount": 28
+          "questionCount": 28,
+          "maxPoints": 60,
+          "minPassPoints": 19
         }
-      ]
+      ],
+      "officialScoreMax": 180,
+      "officialPassMark": 95
     }
-  ]
+  ],
+  "officialScoreMax": 180,
+  "officialPassMark": 95
 }
