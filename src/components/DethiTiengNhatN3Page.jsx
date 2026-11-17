@@ -8,6 +8,7 @@ import {
   saveDethiN3Record,
 } from '../utils/dethitiengnhat_n3_service.js';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
+import { ResetConfirmModal } from './ui/ResetConfirmModal.jsx';
 import '../assets/dethitiengnhat_hallmark.css';
 
 const PART_CATEGORIES = [
@@ -181,6 +182,7 @@ const DethiTiengNhatN3Page = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [openScripts, setOpenScripts] = useState({});
   const [enTranslations, setEnTranslations] = useState({});
+  const [showResetModal, setShowResetModal] = useState(false);
 
   const activeTestCode = paramTestNum ? String(paramTestNum) : null;
   const activePartId = paramPartId ? Number(paramPartId) : 1;
@@ -746,7 +748,7 @@ const DethiTiengNhatN3Page = () => {
                           {scoreSummary.answeredCount > 0 && (
                             <button
                               type="button"
-                              onClick={handleResetSheet}
+                              onClick={() => setShowResetModal(true)}
                               className="dttn-secondary-btn"
                               style={{ padding: '0.45rem 0.9rem', fontSize: '0.875rem' }}
                             >
@@ -759,7 +761,7 @@ const DethiTiengNhatN3Page = () => {
                           {isChecked && (
                             <button
                               type="button"
-                              onClick={handleResetSheet}
+                              onClick={() => setShowResetModal(true)}
                               className="dttn-secondary-btn"
                               style={{ padding: '0.45rem 0.9rem', fontSize: '0.875rem' }}
                             >
@@ -999,7 +1001,7 @@ const DethiTiengNhatN3Page = () => {
                       scoreSummary.answeredCount > 0 && (
                         <button
                           type="button"
-                          onClick={handleResetSheet}
+                          onClick={() => setShowResetModal(true)}
                           className="dttn-secondary-btn"
                         >
                           Reset Section
@@ -1021,6 +1023,17 @@ const DethiTiengNhatN3Page = () => {
           </div>
         )}
       </div>
+
+      <ResetConfirmModal
+        isOpen={showResetModal}
+        onClose={() => setShowResetModal(false)}
+        onConfirm={handleResetSheet}
+        answeredCount={scoreSummary.answeredCount}
+        totalQuestions={scoreSummary.totalCount}
+        title="Reset Exam Section?"
+        japaneseSubtitle="このセクションの回答をリセットしますか？"
+        message="All your selected answers and score for this section will be cleared so you can retake every question from scratch."
+      />
     </div>
   );
 };

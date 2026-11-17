@@ -14,6 +14,7 @@ import { Card } from './ui/Card';
 import { Button } from './ui/Button';
 import { OptionButton } from './ui/OptionButton';
 import { ExitConfirmModal } from './ui/ExitConfirmModal';
+import { ResetConfirmModal } from './ui/ResetConfirmModal';
 import { JlptOmrAnswerSheet } from './ui/JlptOmrAnswerSheet';
 import { JlptScoreCertificateModal } from './ui/JlptScoreCertificateModal';
 import StarExplanationCard from './ui/StarExplanationCard';
@@ -86,6 +87,7 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
   const [timerSeconds, setTimerSeconds] = useState(0);
   const [timerActive, setTimerActive] = useState(true);
   const [showExitModal, setShowExitModal] = useState(false);
+  const [showResetModal, setShowResetModal] = useState(false);
   const [showMobileSheet, setShowMobileSheet] = useState(false);
   const [showCertificateModal, setShowCertificateModal] = useState(false);
 
@@ -648,7 +650,10 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
   };
 
   const handleReset = () => {
-    if (!window.confirm("Are you sure you want to reset this exam? All answers will be cleared so you can take it fresh.")) return;
+    setShowResetModal(true);
+  };
+
+  const handleConfirmReset = () => {
     setAnswers({});
     setCurrentIndex(0);
     setIsFinished(false);
@@ -1645,6 +1650,18 @@ const JlptPracticeTestQuizPage = ({ isPastExam: propIsPastExam }) => {
           setShowExitModal(false);
           navigate(`/levels/${lvlKey}/practice-tests`);
         }}
+        answeredCount={answeredCount}
+        totalQuestions={totalQuestions}
+      />
+
+      {/* Reset Modal (UI-based dialogue instead of native browser popup) */}
+      <ResetConfirmModal
+        isOpen={showResetModal}
+        onClose={() => setShowResetModal(false)}
+        onConfirm={handleConfirmReset}
+        title={isPastExam ? "Reset Past Exam & Clear Answers?" : "Reset Practice Test & Clear Answers?"}
+        japaneseSubtitle="回答履歴をリセットして最初からやり直しますか？"
+        message="All your answers and current score for this exam will be cleared so you can retake every question fresh."
         answeredCount={answeredCount}
         totalQuestions={totalQuestions}
       />

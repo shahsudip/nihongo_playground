@@ -12,6 +12,7 @@ import {
 } from '../utils/bookProgress.js';
 import StarExplanationCard from './ui/StarExplanationCard.jsx';
 import { isStarQuestion } from '../utils/starQuestionExplainer.js';
+import { ResetConfirmModal } from './ui/ResetConfirmModal.jsx';
 
 // Section & Chapter Definitions
 const BOOK_PARTS_TEMPLATE = [
@@ -118,6 +119,7 @@ export default function NihongoNoMoriN3Book() {
   const [bookParts, setBookParts] = useState([]);
   const [contentLoading, setContentLoading] = useState(true);
   const [contentError, setContentError] = useState(null);
+  const [resetTargetSecId, setResetTargetSecId] = useState(null);
 
   useEffect(() => {
     let isMounted = true;
@@ -358,8 +360,12 @@ export default function NihongoNoMoriN3Book() {
     }
   };
 
-  const handleResetSection = async (sectionId = activeSectionId) => {
-    if (!window.confirm("このセクションの回答履歴をリセットして最初からやり直しますか？")) return;
+  const handleResetSection = (sectionId = activeSectionId) => {
+    setResetTargetSecId(sectionId);
+  };
+
+  const confirmResetSection = async () => {
+    const sectionId = resetTargetSecId;
     if (sectionId) {
       if (sectionId === activeSectionId) setUserAnswers({});
       const ansKey = currentUser
@@ -389,6 +395,7 @@ export default function NihongoNoMoriN3Book() {
         }
       }
     }
+    setResetTargetSecId(null);
   };
 
   const renderHtml = (html) => {
@@ -1297,6 +1304,14 @@ export default function NihongoNoMoriN3Book() {
           </div>
         </div>
       )}
+      <ResetConfirmModal
+        isOpen={Boolean(resetTargetSecId)}
+        onClose={() => setResetTargetSecId(null)}
+        onConfirm={confirmResetSection}
+        title="Reset Section Answers?"
+        japaneseSubtitle="このセクションの回答履歴をリセットしますか？"
+        message="All saved answers and practice progress for this section will be cleared."
+      />
     </div>
   );
 }

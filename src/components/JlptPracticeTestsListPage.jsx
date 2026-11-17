@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
 import { getTestsForLevel, getPracticeTestHistory } from '../utils/jlpt_practice_tests_service.js';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
+import { ResetConfirmModal } from './ui/ResetConfirmModal.jsx';
 
 const LEVEL_META = {
   n5: { title: 'N5', name: 'Beginner', badge: 'Introductory' },
@@ -141,6 +142,7 @@ const JlptPracticeTestsListPage = () => {
   const [history, setHistory] = useState({});
   const [loading, setLoading] = useState(true);
   const [activeFilter, setActiveFilter] = useState('all'); // 'all' | 'in_progress' | 'completed' | 'unattempted'
+  const [resetTargetTestId, setResetTargetTestId] = useState(null);
 
   const lvlKey = (level || 'n3').toLowerCase();
   const lvlUpper = lvlKey.toUpperCase();
@@ -211,8 +213,12 @@ const JlptPracticeTestsListPage = () => {
   const handleResetTest = (testId, e) => {
     e.preventDefault();
     e.stopPropagation();
-    if (!window.confirm(`Reset mock exam ${testId}? All cached local answers will be cleared.`)) return;
+    setResetTargetTestId(testId);
+  };
 
+  const handleConfirmResetTest = () => {
+    if (!resetTargetTestId) return;
+    const testId = resetTargetTestId;
     const userPart = currentUser?.uid ? currentUser.uid : 'guest';
     try {
       localStorage.removeItem(`jlpt_mock_${userPart}_${testId}_full`);
@@ -222,6 +228,7 @@ const JlptPracticeTestsListPage = () => {
     } catch (_) {}
 
     loadData();
+    setResetTargetTestId(null);
   };
 
   if (loading) {
@@ -557,6 +564,15 @@ const JlptPracticeTestsListPage = () => {
           );
         })}
       </div>
+
+      <ResetConfirmModal
+        isOpen={Boolean(resetTargetTestId)}
+        onClose={() => setResetTargetTestId(null)}
+        onConfirm={handleConfirmResetTest}
+        title="Reset Mock Exam?"
+        japaneseSubtitle="模擬試験の回答をリセットしますか？"
+        message={`All cached local answers and saved progress for ${resetTargetTestId || 'this exam'} will be cleared.`}
+      />
     </div>
   );
 };

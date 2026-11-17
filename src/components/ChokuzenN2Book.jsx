@@ -32,6 +32,14 @@ function ProgressBar({ progress, label }) {
   return (
     <div className="cn2-meter" role="progressbar" aria-label={label} aria-valuemin={0} aria-valuemax={100} aria-valuenow={progress.completionPercent}>
       <span style={{ width: `${progress.completionPercent}%` }} />
+      <ResetConfirmModal
+        isOpen={showResetModal}
+        onClose={() => setShowResetModal(false)}
+        onConfirm={() => save({ answers: {}, currentIndex: 0 })}
+        title="Reset Section Answers?"
+        japaneseSubtitle="このセクションの回答履歴をリセットしますか？"
+        message="All saved answers and practice progress for this section will be cleared on this device."
+      />
     </div>
   );
 }
@@ -203,7 +211,7 @@ function Quiz({ set, section, record, onSave }) {
     }
   };
   const reset = () => {
-    if (window.confirm('Reset this section? All saved answers and practice progress for this section will be cleared on this device.')) save({ answers: {}, currentIndex: 0 });
+    setShowResetModal(true);
   };
   if (!question) return <div className="cn2-empty"><h2>This section is being prepared.</h2><Link className="cn2-text-link" to={`${BOOK_ROUTE}/${set.id}`}>Return to the set</Link></div>;
   return (

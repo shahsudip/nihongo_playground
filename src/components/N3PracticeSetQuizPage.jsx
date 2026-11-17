@@ -9,6 +9,7 @@ import { Card } from './ui/Card';
 import { Button } from './ui/Button';
 import { OptionButton } from './ui/OptionButton';
 import { ExitConfirmModal } from './ui/ExitConfirmModal';
+import { ResetConfirmModal } from './ui/ResetConfirmModal';
 import { JlptScoreCertificateModal } from './ui/JlptScoreCertificateModal';
 import StarExplanationCard from './ui/StarExplanationCard';
 import StructuredExplanationView from './ui/StructuredExplanationView';
@@ -87,6 +88,7 @@ const N3PracticeSetQuizPage = () => {
   const [timerSeconds, setTimerSeconds] = useState(0);
   const [timerActive, setTimerActive] = useState(true);
   const [showExitModal, setShowExitModal] = useState(false);
+  const [showResetModal, setShowResetModal] = useState(false);
   const [showCertificateModal, setShowCertificateModal] = useState(false);
 
   const [currentSet, setCurrentSet] = useState(null);
@@ -411,8 +413,10 @@ const N3PracticeSetQuizPage = () => {
   };
 
   const handleReset = () => {
-    if (!window.confirm("Are you sure you want to reset this drill? All your answers will be cleared so you can retake every question from scratch.")) return;
-    
+    setShowResetModal(true);
+  };
+
+  const handleConfirmReset = () => {
     setAnswers({});
     setCurrentIndex(0);
     setIsFinished(false);
@@ -1177,6 +1181,18 @@ const N3PracticeSetQuizPage = () => {
         isOpen={showExitModal}
         onClose={() => setShowExitModal(false)}
         onConfirm={handleConfirmExit}
+        answeredCount={Object.keys(answers).length}
+        totalQuestions={totalQuestions}
+      />
+
+      {/* Reset Confirmation Modal */}
+      <ResetConfirmModal
+        isOpen={showResetModal}
+        onClose={() => setShowResetModal(false)}
+        onConfirm={handleConfirmReset}
+        title="Reset Practice Drill?"
+        japaneseSubtitle="この練習ドリルの回答をリセットしますか？"
+        message="All your answers and score for this drill will be cleared so you can retake every question from scratch."
         answeredCount={Object.keys(answers).length}
         totalQuestions={totalQuestions}
       />

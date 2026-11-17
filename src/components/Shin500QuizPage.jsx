@@ -8,6 +8,7 @@ import { useTheme } from '../context/ThemeContext.jsx';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 import { STATIC_BOOKS } from '../data/static_books_catalog.js';
 import { ExitConfirmModal } from './ui/ExitConfirmModal.jsx';
+import { ResetConfirmModal } from './ui/ResetConfirmModal.jsx';
 import StarExplanationCard, { FormattedExplanationText } from './ui/StarExplanationCard.jsx';
 import { isStarQuestion } from '../utils/starQuestionExplainer.js';
 import '../assets/shin500_drill.css';
@@ -41,6 +42,7 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
   const [showExitModal, setShowExitModal] = useState(false);
+  const [showResetModal, setShowResetModal] = useState(false);
   const [isFlipped, setIsFlipped] = useState(false);
 
   // Handle browser back button: trigger in-app UI exit modal instead of native dialog
@@ -352,11 +354,11 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
     };
   }, [saveProgress, answers, currentIndex]);
 
-  const handleResetDrill = async () => {
-    if (!window.confirm("Are you sure you want to reset this drill? All your answers will be cleared so you can retake every question from scratch.")) {
-      return;
-    }
+  const handleResetDrill = () => {
+    setShowResetModal(true);
+  };
 
+  const handleConfirmResetDrill = async () => {
     setAnswers({});
     setCurrentIndex(0);
     setIsFinished(false);
@@ -896,6 +898,19 @@ const Shin500QuizPage = ({ bookId: propBookId }) => {
         isOpen={showExitModal}
         onClose={() => setShowExitModal(false)}
         onConfirm={handleConfirmExit}
+        answeredCount={answeredCount}
+        totalQuestions={questions.length}
+        theme={theme}
+      />
+
+      {/* Reset Confirmation Modal */}
+      <ResetConfirmModal
+        isOpen={showResetModal}
+        onClose={() => setShowResetModal(false)}
+        onConfirm={handleConfirmResetDrill}
+        title="Reset 500 Mon Drill?"
+        japaneseSubtitle="このドリルの回答をリセットしますか？"
+        message="All your answers and progress for this week/day will be cleared so you can retake every question fresh."
         answeredCount={answeredCount}
         totalQuestions={questions.length}
         theme={theme}

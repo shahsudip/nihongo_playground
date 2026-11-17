@@ -12,6 +12,7 @@ import { ProgressBar } from './ui/ProgressBar';
 import { OptionButton } from './ui/OptionButton';
 import { QuestionNavigator } from './ui/QuestionNavigator';
 import { ExitConfirmModal } from './ui/ExitConfirmModal';
+import { ResetConfirmModal } from './ui/ResetConfirmModal';
 import StarExplanationCard, { FormattedExplanationText } from './ui/StarExplanationCard';
 import { isStarQuestion } from '../utils/starQuestionExplainer';
 import '../assets/first_time_n3_350_kanji.css';
@@ -44,6 +45,7 @@ const BookQuizTakerPage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [feedbackMode, setFeedbackMode] = useState('Immediate'); // 'Immediate' or 'At End'
   const [showExitModal, setShowExitModal] = useState(false);
+  const [showResetModal, setShowResetModal] = useState(false);
   const [showFurigana, setShowFurigana] = useState(true);
   const [examSubmitted, setExamSubmitted] = useState(false);
   const [showMobileNavigator, setShowMobileNavigator] = useState(false);
@@ -418,11 +420,11 @@ const BookQuizTakerPage = () => {
     navigate(`/books/${bookId}`);
   };
 
-  const handleResetQuiz = async () => {
-    if (!window.confirm("Are you sure you want to reset this quiz? All your answers will be cleared so you can retake every question from scratch.")) {
-      return;
-    }
+  const handleResetQuiz = () => {
+    setShowResetModal(true);
+  };
 
+  const handleConfirmResetQuiz = async () => {
     setAnswers({});
     setCurrentIndex(0);
     latestAttemptRef.current = { answers: {}, currentIndex: 0 };
@@ -911,6 +913,18 @@ const BookQuizTakerPage = () => {
         isOpen={showExitModal}
         onClose={() => setShowExitModal(false)}
         onConfirm={handleConfirmExit}
+        answeredCount={answeredCount}
+        totalQuestions={totalQuestions}
+      />
+
+      {/* Reset Confirmation Modal */}
+      <ResetConfirmModal
+        isOpen={showResetModal}
+        onClose={() => setShowResetModal(false)}
+        onConfirm={handleConfirmResetQuiz}
+        title="Reset Quiz & Clear Answers?"
+        japaneseSubtitle="このクイズの回答をリセットしますか？"
+        message="All your answers and current progress will be cleared so you can retake every question from scratch."
         answeredCount={answeredCount}
         totalQuestions={totalQuestions}
       />

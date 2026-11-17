@@ -9,6 +9,7 @@ import { getDownloadURL, ref } from 'firebase/storage';
 import { useAuth } from '../context/AuthContext';
 import StarExplanationCard, { FormattedExplanationText } from './ui/StarExplanationCard';
 import { isStarQuestion } from '../utils/starQuestionExplainer';
+import { ResetConfirmModal } from './ui/ResetConfirmModal';
 
 export default function ZenkamokuPageViewer() {
   const { chapterId } = useParams();
@@ -23,6 +24,7 @@ export default function ZenkamokuPageViewer() {
   // Persistent answers state
   const [savedAnswers, setSavedAnswers] = useState({});
   const [attemptDate, setAttemptDate] = useState(null);
+  const [showResetModal, setShowResetModal] = useState(false);
 
   // Derive current bookId
   const location = useLocation();
@@ -189,9 +191,11 @@ export default function ZenkamokuPageViewer() {
     });
   };
 
-  const resetChapter = async () => {
-    if (!window.confirm('Are you sure you want to reset your progress? This will clear your score and answers so you can retake every question from scratch.')) return;
-    
+  const resetChapter = () => {
+    setShowResetModal(true);
+  };
+
+  const confirmResetChapter = async () => {
     setSavedAnswers({});
     const nowIso = new Date().toISOString();
     setAttemptDate(new Date(nowIso));
@@ -927,6 +931,17 @@ function QuestionBlock({ q, qIdx, onAnswer, savedOption, currentUser, videoKey }
           )}
         </div>
       )})()}
+
+      <ResetConfirmModal
+        isOpen={showResetModal}
+        onClose={() => setShowResetModal(false)}
+        onConfirm={confirmResetChapter}
+        title="Reset Chapter Progress?"
+        japaneseSubtitle="このチャプターの進捗をリセットしますか？"
+        message="This will clear your score and answers so you can retake every question from scratch."
+        answeredCount={Object.keys(savedAnswers).length}
+        totalQuestions={chapter?.sections?.reduce((acc, s) => acc + (s.questions?.length || 0), 0) || null}
+      />
     </div>
   );
 }
