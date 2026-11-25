@@ -127,12 +127,10 @@ function pickBalancedRandom(pool = [], count = 1, seenIds = new Set()) {
   const workingPool = unseen.length >= count ? unseen : pool;
 
   // Group by sourceLabel so we pick from diverse sources (e.g. Past Exam + Zenkamoku + Static List + Tango)
-  const bySource = {};
-  workingPool.forEach(item => {
-    const src = item.sourceType || item.sourceLabel || 'general';
-    if (!bySource[src]) bySource[src] = [];
-    bySource[src].push(item);
-  });
+  const bySource = Object.groupBy(
+    workingPool,
+    (item) => item.sourceType || item.sourceLabel || 'general',
+  );
 
   const sourceKeys = shuffleArray(Object.keys(bySource));
   sourceKeys.forEach(k => {

@@ -7,11 +7,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700;900&display=swap" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
     <title>Nihongo Playground</title>
     <script>
       (function() {
         try {
-          var saved = localStorage.getItem('app_theme') || localStorage.getItem('shin500_theme') || 'light';
+          var saved = localStorage.getItem('app_theme') || localStorage.getItem('shin500_theme');
+          var schemeMeta = document.querySelector('meta[name="color-scheme"]');
+          if (schemeMeta) {
+            schemeMeta.content = saved === 'dark' ? 'dark' : saved === 'light' ? 'light' : 'light dark';
+          }
           var theme = saved === 'dark' ? 'dark' : 'light';
           document.documentElement.setAttribute('data-theme', theme);
           if (theme === 'dark') {

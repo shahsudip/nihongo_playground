@@ -140,7 +140,7 @@ export async function loadChokuzenN2Book() {
   return {
     ...book,
     id: BOOK_ID,
-    sets: [...book.sets].sort((left, right) => String(left.id).localeCompare(String(right.id), undefined, { numeric: true })),
+    sets: book.sets.toSorted((left, right) => String(left.id).localeCompare(String(right.id), undefined, { numeric: true })),
   };
 }
 

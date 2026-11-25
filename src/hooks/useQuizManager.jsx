@@ -44,7 +44,7 @@ export const useQuizManager = () => {
 
   // This hook processes and unifies all data whenever the Firestore data changes.
   const allQuizzes = useMemo(() => {
-    const sortedHistory = [...history].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+    const sortedHistory = history.toSorted((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
     const deduplicatedHistory = [];
     const seenQuizIds = new Set();
     for (const item of sortedHistory) {

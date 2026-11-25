@@ -60,7 +60,7 @@ const getDayProgress = (chapter, chapterId, history) => {
 
 const PassN3Within20DaysChapterList = ({ book, chapters = [], history = {} }) => {
   const days = useMemo(() => {
-    const orderedChapters = [...chapters].sort((left, right) => (
+    const orderedChapters = chapters.toSorted((left, right) => (
       getDayNumber(left, 0) - getDayNumber(right, 0)
     ));
 

@@ -9,6 +9,7 @@ import {
 } from '../utils/dethitiengnhat_n3_service.js';
 import LoadingSpinner from '../utils/loading_spinner.jsx';
 import { ResetConfirmModal } from './ui/ResetConfirmModal.jsx';
+import { SafeHtml } from './ui/SafeHtml.jsx';
 import '../assets/dethitiengnhat_hallmark.css';
 
 const PART_CATEGORIES = [
@@ -837,10 +838,10 @@ const DethiTiengNhatN3Page = () => {
 
                       if (block.type === 'passage' && block.htmlContent) {
                         return (
-                          <div
+                          <SafeHtml
                             key={`pas_${bIdx}`}
                             className="dttn-passage-box"
-                            dangerouslySetInnerHTML={{ __html: block.htmlContent }}
+                            html={block.htmlContent}
                           />
                         );
                       }
@@ -855,11 +856,9 @@ const DethiTiengNhatN3Page = () => {
                         return (
                           <div key={`q_${bIdx}_${qNum}`} className="dttn-question-item">
                             <div className="dttn-question-header">
-                              <div
+                              <SafeHtml
                                 className="dttn-question-stem"
-                                dangerouslySetInnerHTML={{
-                                  __html: block.questionHtml || block.questionText || `${qNum}番`,
-                                }}
+                                html={block.questionHtml || block.questionText || `${qNum}番`}
                               />
                               <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', flexShrink: 0 }}>
                                 {block.points && (
@@ -960,22 +959,21 @@ const DethiTiengNhatN3Page = () => {
                                 </button>
 
                                 {openScripts[qKey] && (
-                                  <div
+                                  <SafeHtml
                                     className="dttn-gt-box"
-                                    dangerouslySetInnerHTML={{
-                                      __html:
-                                        block.explanationHtml ||
-                                        block.transcript ||
-                                        `<div style="display:flex;flex-direction:column;gap:0.35rem;">
-                                           <div style="font-weight:700;color:var(--dttn-text-correct,#059669);">
-                                             ✓ 正解: ${options[correctIdx] || block.correctOption?.text || `Option ${correctIdx + 1}`}
-                                           </div>
-                                           ${enTranslations[qKey] ? `<div style="margin-top:2px;"><strong>【英文訳 / English】</strong>: ${enTranslations[qKey]}</div>` : ''}
-                                           <div style="font-size:0.875rem;color:var(--dttn-text-muted,#4b5563);">
-                                             The correct answer is Option ${correctIdx + 1}.
-                                           </div>
-                                         </div>`,
-                                    }}
+                                    html={
+                                      block.explanationHtml ||
+                                      block.transcript ||
+                                      `<div style="display:flex;flex-direction:column;gap:0.35rem;">
+                                         <div style="font-weight:700;color:var(--dttn-text-correct,#059669);">
+                                           ✓ 正解: ${options[correctIdx] || block.correctOption?.text || `Option ${correctIdx + 1}`}
+                                         </div>
+                                         ${enTranslations[qKey] ? `<div style="margin-top:2px;"><strong>【英文訳 / English】</strong>: ${enTranslations[qKey]}</div>` : ''}
+                                         <div style="font-size:0.875rem;color:var(--dttn-text-muted,#4b5563);">
+                                           The correct answer is Option ${correctIdx + 1}.
+                                         </div>
+                                       </div>`
+                                    }
                                   />
                                 )}
                               </div>

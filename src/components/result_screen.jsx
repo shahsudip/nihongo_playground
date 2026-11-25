@@ -10,7 +10,7 @@ const ProfilePage = () => {
     const savedHistory = JSON.parse(localStorage.getItem('quizHistory')) || [];
     
     // --- FIX 1: Create a copy of the array before sorting ---
-    const sortedHistory = [...savedHistory].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+    const sortedHistory = savedHistory.toSorted((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
     
     setHistory(sortedHistory);
   }, []);

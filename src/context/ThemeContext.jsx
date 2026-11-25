@@ -23,6 +23,10 @@ export const ThemeProvider = ({ children }) => {
   const applyThemeToDOM = (t) => {
     const root = document.documentElement;
     root.setAttribute('data-theme', t);
+    const schemeMeta = document.querySelector('meta[name="color-scheme"]');
+    if (schemeMeta) {
+      schemeMeta.content = t === 'dark' ? 'dark' : 'light';
+    }
     if (t === 'dark') {
       root.classList.add('dark', 'theme-dark');
       root.classList.remove('theme-light', 'theme-sepia');
@@ -49,6 +53,17 @@ export const ThemeProvider = ({ children }) => {
     }
     applyThemeToDOM(theme);
   }, [theme]);
+
+  useEffect(() => {
+    const handleStorage = (event) => {
+      if (event.key === 'app_theme' || event.key === 'shin500_theme') {
+        const next = event.newValue === 'dark' ? 'dark' : 'light';
+        setThemeState(next);
+      }
+    };
+    window.addEventListener('storage', handleStorage);
+    return () => window.removeEventListener('storage', handleStorage);
+  }, []);
 
   const toggleTheme = () => {
     setThemeState((prev) => (prev === 'dark' ? 'light' : 'dark'));

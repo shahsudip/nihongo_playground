@@ -176,7 +176,7 @@ export function toBookMetadata(book, bookId) {
 }
 
 export function sortById(items) {
-  return [...items].sort((left, right) => (
+  return items.toSorted((left, right) => (
     String(left.id).localeCompare(String(right.id), 'en', {
       numeric: true,
       sensitivity: 'base',

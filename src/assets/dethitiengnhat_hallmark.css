@@ -548,6 +548,17 @@ body {
   border-bottom: 1px solid var(--dttn-border-subtle);
 }
 
+/* Defer rendering strictly for below-the-fold exam items & directory cards (modern-web-guidance) */
+.dttn-question-item:nth-child(n + 5) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto none auto 220px;
+}
+
+.dttn-cell-card:nth-child(n + 9) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto none auto 96px;
+}
+
 .dttn-question-header {
   display: flex;
   align-items: flex-start;

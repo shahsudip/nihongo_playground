@@ -48,7 +48,7 @@ const getChapterProgress = (chapter, chapterId, history) => {
 
 const FirstTimeN3KanjiChapterList = ({ book, chapters = [], history = {} }) => {
   const chapterCards = useMemo(() => {
-    const orderedChapters = [...chapters].sort((left, right) => {
+    const orderedChapters = chapters.toSorted((left, right) => {
       const leftNumber = left.chapterNumber || Number.parseInt(left.id?.match(/\d+/)?.[0], 10) || 0;
       const rightNumber = right.chapterNumber || Number.parseInt(right.id?.match(/\d+/)?.[0], 10) || 0;
       return leftNumber - rightNumber;
